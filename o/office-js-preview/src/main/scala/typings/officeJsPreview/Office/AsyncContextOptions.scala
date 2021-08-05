@@ -17,19 +17,15 @@ trait AsyncContextOptions extends StObject {
 }
 object AsyncContextOptions {
   
-  @scala.inline
-  def apply(): AsyncContextOptions = {
+  inline def apply(): AsyncContextOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AsyncContextOptions]
   }
   
-  @scala.inline
-  implicit class AsyncContextOptionsMutableBuilder[Self <: AsyncContextOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AsyncContextOptions](x: Self) {
     
-    @scala.inline
-    def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
+    inline def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
+    inline def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
   }
 }

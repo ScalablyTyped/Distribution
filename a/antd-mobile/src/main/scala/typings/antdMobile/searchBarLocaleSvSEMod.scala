@@ -15,7 +15,6 @@ object searchBarLocaleSvSEMod {
     @JSImport("antd-mobile/lib/search-bar/locale/sv_SE", "default.cancelText")
     @js.native
     def cancelText: String = js.native
-    @scala.inline
-    def cancelText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cancelText")(x.asInstanceOf[js.Any])
+    inline def cancelText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cancelText")(x.asInstanceOf[js.Any])
   }
 }

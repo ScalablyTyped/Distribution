@@ -25,12 +25,10 @@ object XYPlot {
   @JSImport("plottable", "XYPlot._X_KEY")
   @js.native
   def _X_KEY: String = js.native
-  @scala.inline
-  def _X_KEY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_X_KEY")(x.asInstanceOf[js.Any])
+  inline def _X_KEY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_X_KEY")(x.asInstanceOf[js.Any])
   
   @JSImport("plottable", "XYPlot._Y_KEY")
   @js.native
   def _Y_KEY: String = js.native
-  @scala.inline
-  def _Y_KEY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Y_KEY")(x.asInstanceOf[js.Any])
+  inline def _Y_KEY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Y_KEY")(x.asInstanceOf[js.Any])
 }

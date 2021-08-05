@@ -13,19 +13,15 @@ trait UserDefinedFunction
 }
 object UserDefinedFunction {
   
-  @scala.inline
-  def apply(id: String): UserDefinedFunction = {
+  inline def apply(id: String): UserDefinedFunction = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserDefinedFunction]
   }
   
-  @scala.inline
-  implicit class UserDefinedFunctionMutableBuilder[Self <: UserDefinedFunction] (val x: Self) extends AnyVal {
+  extension [Self <: UserDefinedFunction](x: Self) {
     
-    @scala.inline
-    def setUserDefinedFunctionType(value: UserDefinedFunctionType): Self = StObject.set(x, "userDefinedFunctionType", value.asInstanceOf[js.Any])
+    inline def setUserDefinedFunctionType(value: UserDefinedFunctionType): Self = StObject.set(x, "userDefinedFunctionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserDefinedFunctionTypeUndefined: Self = StObject.set(x, "userDefinedFunctionType", js.undefined)
+    inline def setUserDefinedFunctionTypeUndefined: Self = StObject.set(x, "userDefinedFunctionType", js.undefined)
   }
 }

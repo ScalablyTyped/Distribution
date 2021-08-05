@@ -35,8 +35,7 @@ trait GoogleAuthProviderInstance
 }
 object GoogleAuthProviderInstance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addScope: String => AuthProvider,
     providerId: String,
     setCustomParameters: js.Object => AuthProvider
@@ -45,13 +44,10 @@ object GoogleAuthProviderInstance {
     __obj.asInstanceOf[GoogleAuthProviderInstance]
   }
   
-  @scala.inline
-  implicit class GoogleAuthProviderInstanceMutableBuilder[Self <: GoogleAuthProviderInstance] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAuthProviderInstance](x: Self) {
     
-    @scala.inline
-    def setAddScope(value: String => AuthProvider): Self = StObject.set(x, "addScope", js.Any.fromFunction1(value))
+    inline def setAddScope(value: String => AuthProvider): Self = StObject.set(x, "addScope", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetCustomParameters(value: js.Object => AuthProvider): Self = StObject.set(x, "setCustomParameters", js.Any.fromFunction1(value))
+    inline def setSetCustomParameters(value: js.Object => AuthProvider): Self = StObject.set(x, "setCustomParameters", js.Any.fromFunction1(value))
   }
 }

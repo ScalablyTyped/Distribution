@@ -21,8 +21,7 @@ trait SjclModes extends StObject {
 }
 object SjclModes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cbc: SjclCBCMode,
     ccm: SjclCCMMode,
     ctr: SjclCTRMode,
@@ -34,25 +33,18 @@ object SjclModes {
     __obj.asInstanceOf[SjclModes]
   }
   
-  @scala.inline
-  implicit class SjclModesMutableBuilder[Self <: SjclModes] (val x: Self) extends AnyVal {
+  extension [Self <: SjclModes](x: Self) {
     
-    @scala.inline
-    def setCbc(value: SjclCBCMode): Self = StObject.set(x, "cbc", value.asInstanceOf[js.Any])
+    inline def setCbc(value: SjclCBCMode): Self = StObject.set(x, "cbc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCcm(value: SjclCCMMode): Self = StObject.set(x, "ccm", value.asInstanceOf[js.Any])
+    inline def setCcm(value: SjclCCMMode): Self = StObject.set(x, "ccm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCtr(value: SjclCTRMode): Self = StObject.set(x, "ctr", value.asInstanceOf[js.Any])
+    inline def setCtr(value: SjclCTRMode): Self = StObject.set(x, "ctr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcm(value: SjclGCMMode): Self = StObject.set(x, "gcm", value.asInstanceOf[js.Any])
+    inline def setGcm(value: SjclGCMMode): Self = StObject.set(x, "gcm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOcb2(value: SjclOCB2Mode): Self = StObject.set(x, "ocb2", value.asInstanceOf[js.Any])
+    inline def setOcb2(value: SjclOCB2Mode): Self = StObject.set(x, "ocb2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOcb2progressive(value: SjclOCB2ProgressiveMode): Self = StObject.set(x, "ocb2progressive", value.asInstanceOf[js.Any])
+    inline def setOcb2progressive(value: SjclOCB2ProgressiveMode): Self = StObject.set(x, "ocb2progressive", value.asInstanceOf[js.Any])
   }
 }

@@ -22,20 +22,16 @@ object dropDownArrowMod extends Shortcut {
   }
   object DropDownArrowProps {
     
-    @scala.inline
-    def apply(): DropDownArrowProps = {
+    inline def apply(): DropDownArrowProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DropDownArrowProps]
     }
     
-    @scala.inline
-    implicit class DropDownArrowPropsMutableBuilder[Self <: DropDownArrowProps] (val x: Self) extends AnyVal {
+    extension [Self <: DropDownArrowProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

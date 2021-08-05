@@ -44,31 +44,23 @@ trait SchemaQuota extends StObject {
 }
 object SchemaQuota {
   
-  @scala.inline
-  def apply(): SchemaQuota = {
+  inline def apply(): SchemaQuota = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaQuota]
   }
   
-  @scala.inline
-  implicit class SchemaQuotaMutableBuilder[Self <: SchemaQuota] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaQuota](x: Self) {
     
-    @scala.inline
-    def setLimits(value: js.Array[SchemaQuotaLimit]): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
+    inline def setLimits(value: js.Array[SchemaQuotaLimit]): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
+    inline def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
     
-    @scala.inline
-    def setLimitsVarargs(value: SchemaQuotaLimit*): Self = StObject.set(x, "limits", js.Array(value :_*))
+    inline def setLimitsVarargs(value: SchemaQuotaLimit*): Self = StObject.set(x, "limits", js.Array(value :_*))
     
-    @scala.inline
-    def setMetricRules(value: js.Array[SchemaMetricRule]): Self = StObject.set(x, "metricRules", value.asInstanceOf[js.Any])
+    inline def setMetricRules(value: js.Array[SchemaMetricRule]): Self = StObject.set(x, "metricRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricRulesUndefined: Self = StObject.set(x, "metricRules", js.undefined)
+    inline def setMetricRulesUndefined: Self = StObject.set(x, "metricRules", js.undefined)
     
-    @scala.inline
-    def setMetricRulesVarargs(value: SchemaMetricRule*): Self = StObject.set(x, "metricRules", js.Array(value :_*))
+    inline def setMetricRulesVarargs(value: SchemaMetricRule*): Self = StObject.set(x, "metricRules", js.Array(value :_*))
   }
 }

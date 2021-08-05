@@ -27,31 +27,23 @@ trait UpdateTextStyleRequest extends StObject {
 }
 object UpdateTextStyleRequest {
   
-  @scala.inline
-  def apply(): UpdateTextStyleRequest = {
+  inline def apply(): UpdateTextStyleRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateTextStyleRequest]
   }
   
-  @scala.inline
-  implicit class UpdateTextStyleRequestMutableBuilder[Self <: UpdateTextStyleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateTextStyleRequest](x: Self) {
     
-    @scala.inline
-    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    @scala.inline
-    def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+    inline def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+    inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
   }
 }

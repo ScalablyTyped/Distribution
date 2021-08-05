@@ -12,19 +12,15 @@ trait WeakValidationMapTileFoot extends StObject {
 }
 object WeakValidationMapTileFoot {
   
-  @scala.inline
-  def apply(): WeakValidationMapTileFoot = {
+  inline def apply(): WeakValidationMapTileFoot = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WeakValidationMapTileFoot]
   }
   
-  @scala.inline
-  implicit class WeakValidationMapTileFootMutableBuilder[Self <: WeakValidationMapTileFoot] (val x: Self) extends AnyVal {
+  extension [Self <: WeakValidationMapTileFoot](x: Self) {
     
-    @scala.inline
-    def setClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: Validator[js.UndefOr[Null | String]]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
   }
 }

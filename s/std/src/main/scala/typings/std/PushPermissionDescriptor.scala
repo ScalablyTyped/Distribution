@@ -16,22 +16,17 @@ trait PushPermissionDescriptor
 }
 object PushPermissionDescriptor {
   
-  @scala.inline
-  def apply(): PushPermissionDescriptor = {
+  inline def apply(): PushPermissionDescriptor = {
     val __obj = js.Dynamic.literal(name = "push")
     __obj.asInstanceOf[PushPermissionDescriptor]
   }
   
-  @scala.inline
-  implicit class PushPermissionDescriptorMutableBuilder[Self <: PushPermissionDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: PushPermissionDescriptor](x: Self) {
     
-    @scala.inline
-    def setName(value: push): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: push): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserVisibleOnly(value: scala.Boolean): Self = StObject.set(x, "userVisibleOnly", value.asInstanceOf[js.Any])
+    inline def setUserVisibleOnly(value: scala.Boolean): Self = StObject.set(x, "userVisibleOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserVisibleOnlyUndefined: Self = StObject.set(x, "userVisibleOnly", js.undefined)
+    inline def setUserVisibleOnlyUndefined: Self = StObject.set(x, "userVisibleOnly", js.undefined)
   }
 }

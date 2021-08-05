@@ -14,25 +14,19 @@ trait GoogleCloudVisionV1p2beta1WebDetectionWebImage extends StObject {
 }
 object GoogleCloudVisionV1p2beta1WebDetectionWebImage {
   
-  @scala.inline
-  def apply(): GoogleCloudVisionV1p2beta1WebDetectionWebImage = {
+  inline def apply(): GoogleCloudVisionV1p2beta1WebDetectionWebImage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVisionV1p2beta1WebDetectionWebImage]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVisionV1p2beta1WebDetectionWebImageMutableBuilder[Self <: GoogleCloudVisionV1p2beta1WebDetectionWebImage] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVisionV1p2beta1WebDetectionWebImage](x: Self) {
     
-    @scala.inline
-    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
+    inline def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

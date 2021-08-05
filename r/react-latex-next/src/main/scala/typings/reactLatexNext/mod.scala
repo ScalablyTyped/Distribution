@@ -21,7 +21,6 @@ object mod {
     @JSImport("react-latex-next/dist", "default.defaultProps")
     @js.native
     def defaultProps: PartialLatexProps = js.native
-    @scala.inline
-    def defaultProps_=(x: PartialLatexProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PartialLatexProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

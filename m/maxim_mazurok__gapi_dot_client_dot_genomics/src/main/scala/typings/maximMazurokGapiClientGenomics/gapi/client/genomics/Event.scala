@@ -22,35 +22,27 @@ trait Event extends StObject {
 }
 object Event {
   
-  @scala.inline
-  def apply(): Event = {
+  inline def apply(): Event = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Event]
   }
   
-  @scala.inline
-  implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+  extension [Self <: Event](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDetails(
+    inline def setDetails(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.Event & TopLevel[js.Any]
     ): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
   }
 }

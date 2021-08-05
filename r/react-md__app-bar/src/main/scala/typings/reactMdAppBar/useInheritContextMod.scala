@@ -19,13 +19,10 @@ object useInheritContextMod {
   @js.native
   val ParentContext: Context[Boolean] = js.native
   
-  @scala.inline
-  def useInheritContext(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useInheritContext")().asInstanceOf[Boolean]
-  @scala.inline
-  def useInheritContext(inheritColor: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useInheritContext")(inheritColor.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def useInheritContext(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useInheritContext")().asInstanceOf[Boolean]
+  inline def useInheritContext(inheritColor: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useInheritContext")(inheritColor.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def useParentContext(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useParentContext")().asInstanceOf[Boolean]
+  inline def useParentContext(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useParentContext")().asInstanceOf[Boolean]
   
   trait AppBarColorInherit extends StObject {
     
@@ -38,20 +35,16 @@ object useInheritContextMod {
   }
   object AppBarColorInherit {
     
-    @scala.inline
-    def apply(): AppBarColorInherit = {
+    inline def apply(): AppBarColorInherit = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AppBarColorInherit]
     }
     
-    @scala.inline
-    implicit class AppBarColorInheritMutableBuilder[Self <: AppBarColorInherit] (val x: Self) extends AnyVal {
+    extension [Self <: AppBarColorInherit](x: Self) {
       
-      @scala.inline
-      def setInheritColor(value: Boolean): Self = StObject.set(x, "inheritColor", value.asInstanceOf[js.Any])
+      inline def setInheritColor(value: Boolean): Self = StObject.set(x, "inheritColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInheritColorUndefined: Self = StObject.set(x, "inheritColor", js.undefined)
+      inline def setInheritColorUndefined: Self = StObject.set(x, "inheritColor", js.undefined)
     }
   }
 }

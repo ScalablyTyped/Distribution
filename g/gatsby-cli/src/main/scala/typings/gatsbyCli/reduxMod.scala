@@ -13,22 +13,16 @@ object reduxMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def dispatch(action: Thunk): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def dispatch(action: ActionsUnion): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def dispatch(action: Thunk): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def dispatch(action: ActionsUnion): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def getStore(): Store[CombinedStatelogsIGatsbyC, ActionsUnion] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStore")().asInstanceOf[Store[CombinedStatelogsIGatsbyC, ActionsUnion]]
+  inline def getStore(): Store[CombinedStatelogsIGatsbyC, ActionsUnion] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStore")().asInstanceOf[Store[CombinedStatelogsIGatsbyC, ActionsUnion]]
   
-  @scala.inline
-  def onLogAction(fn: ActionLogListener): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("onLogAction")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+  inline def onLogAction(fn: ActionLogListener): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("onLogAction")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
   
-  @scala.inline
-  def onStoreSwap(fn: StoreListener): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onStoreSwap")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def onStoreSwap(fn: StoreListener): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onStoreSwap")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setStore(s: GatsbyCLIStore): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setStore")(s.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setStore(s: GatsbyCLIStore): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setStore")(s.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type ActionLogListener = js.Function1[/* action */ ActionsUnion, js.Any]
   

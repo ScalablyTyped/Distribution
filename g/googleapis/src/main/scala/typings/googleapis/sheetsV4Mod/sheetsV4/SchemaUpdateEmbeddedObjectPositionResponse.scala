@@ -16,19 +16,15 @@ trait SchemaUpdateEmbeddedObjectPositionResponse extends StObject {
 }
 object SchemaUpdateEmbeddedObjectPositionResponse {
   
-  @scala.inline
-  def apply(): SchemaUpdateEmbeddedObjectPositionResponse = {
+  inline def apply(): SchemaUpdateEmbeddedObjectPositionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUpdateEmbeddedObjectPositionResponse]
   }
   
-  @scala.inline
-  implicit class SchemaUpdateEmbeddedObjectPositionResponseMutableBuilder[Self <: SchemaUpdateEmbeddedObjectPositionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUpdateEmbeddedObjectPositionResponse](x: Self) {
     
-    @scala.inline
-    def setPosition(value: SchemaEmbeddedObjectPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: SchemaEmbeddedObjectPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

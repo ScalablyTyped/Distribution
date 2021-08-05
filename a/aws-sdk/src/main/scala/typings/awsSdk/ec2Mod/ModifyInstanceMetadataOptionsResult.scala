@@ -18,25 +18,19 @@ trait ModifyInstanceMetadataOptionsResult extends StObject {
 }
 object ModifyInstanceMetadataOptionsResult {
   
-  @scala.inline
-  def apply(): ModifyInstanceMetadataOptionsResult = {
+  inline def apply(): ModifyInstanceMetadataOptionsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyInstanceMetadataOptionsResult]
   }
   
-  @scala.inline
-  implicit class ModifyInstanceMetadataOptionsResultMutableBuilder[Self <: ModifyInstanceMetadataOptionsResult] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyInstanceMetadataOptionsResult](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
-    @scala.inline
-    def setInstanceMetadataOptions(value: InstanceMetadataOptionsResponse): Self = StObject.set(x, "InstanceMetadataOptions", value.asInstanceOf[js.Any])
+    inline def setInstanceMetadataOptions(value: InstanceMetadataOptionsResponse): Self = StObject.set(x, "InstanceMetadataOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceMetadataOptionsUndefined: Self = StObject.set(x, "InstanceMetadataOptions", js.undefined)
+    inline def setInstanceMetadataOptionsUndefined: Self = StObject.set(x, "InstanceMetadataOptions", js.undefined)
   }
 }

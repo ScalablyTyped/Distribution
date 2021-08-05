@@ -8,21 +8,17 @@ object readdirpStrings {
   
   @js.native
   sealed trait all extends StObject
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
   sealed trait directories extends StObject
-  @scala.inline
-  def directories: directories = "directories".asInstanceOf[directories]
+  inline def directories: directories = "directories".asInstanceOf[directories]
   
   @js.native
   sealed trait files extends StObject
-  @scala.inline
-  def files: files = "files".asInstanceOf[files]
+  inline def files: files = "files".asInstanceOf[files]
   
   @js.native
   sealed trait files_directories extends StObject
-  @scala.inline
-  def files_directories: files_directories = "files_directories".asInstanceOf[files_directories]
+  inline def files_directories: files_directories = "files_directories".asInstanceOf[files_directories]
 }

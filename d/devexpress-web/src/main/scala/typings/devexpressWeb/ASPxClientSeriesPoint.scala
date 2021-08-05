@@ -48,8 +48,7 @@ trait ASPxClientSeriesPoint
 }
 object ASPxClientSeriesPoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     argument: js.Any,
     chart: ASPxClientWebChart,
     color: String,
@@ -63,31 +62,22 @@ object ASPxClientSeriesPoint {
     __obj.asInstanceOf[ASPxClientSeriesPoint]
   }
   
-  @scala.inline
-  implicit class ASPxClientSeriesPointMutableBuilder[Self <: ASPxClientSeriesPoint] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientSeriesPoint](x: Self) {
     
-    @scala.inline
-    def setArgument(value: js.Any): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+    inline def setArgument(value: js.Any): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentValue(value: Double): Self = StObject.set(x, "percentValue", value.asInstanceOf[js.Any])
+    inline def setPercentValue(value: Double): Self = StObject.set(x, "percentValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeries(value: ASPxClientSeries): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    inline def setSeries(value: ASPxClientSeries): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolTipHint(value: String): Self = StObject.set(x, "toolTipHint", value.asInstanceOf[js.Any])
+    inline def setToolTipHint(value: String): Self = StObject.set(x, "toolTipHint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolTipText(value: String): Self = StObject.set(x, "toolTipText", value.asInstanceOf[js.Any])
+    inline def setToolTipText(value: String): Self = StObject.set(x, "toolTipText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

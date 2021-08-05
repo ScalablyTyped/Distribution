@@ -14,25 +14,19 @@ trait UpgradeInsight extends StObject {
 }
 object UpgradeInsight {
   
-  @scala.inline
-  def apply(): UpgradeInsight = {
+  inline def apply(): UpgradeInsight = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpgradeInsight]
   }
   
-  @scala.inline
-  implicit class UpgradeInsightMutableBuilder[Self <: UpgradeInsight] (val x: Self) extends AnyVal {
+  extension [Self <: UpgradeInsight](x: Self) {
     
-    @scala.inline
-    def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+    inline def setPackageName(value: String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
+    inline def setPackageNameUndefined: Self = StObject.set(x, "packageName", js.undefined)
     
-    @scala.inline
-    def setUpgradeToVersion(value: String): Self = StObject.set(x, "upgradeToVersion", value.asInstanceOf[js.Any])
+    inline def setUpgradeToVersion(value: String): Self = StObject.set(x, "upgradeToVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpgradeToVersionUndefined: Self = StObject.set(x, "upgradeToVersion", js.undefined)
+    inline def setUpgradeToVersionUndefined: Self = StObject.set(x, "upgradeToVersion", js.undefined)
   }
 }

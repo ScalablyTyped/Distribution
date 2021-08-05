@@ -22,26 +22,20 @@ object postingVideoOptionsMod {
   }
   object PostingStoryVideoOptions {
     
-    @scala.inline
-    def apply(coverImage: Buffer, video: Buffer): PostingStoryVideoOptions = {
+    inline def apply(coverImage: Buffer, video: Buffer): PostingStoryVideoOptions = {
       val __obj = js.Dynamic.literal(coverImage = coverImage.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any])
       __obj.asInstanceOf[PostingStoryVideoOptions]
     }
     
-    @scala.inline
-    implicit class PostingStoryVideoOptionsMutableBuilder[Self <: PostingStoryVideoOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PostingStoryVideoOptions](x: Self) {
       
-      @scala.inline
-      def setCoverImage(value: Buffer): Self = StObject.set(x, "coverImage", value.asInstanceOf[js.Any])
+      inline def setCoverImage(value: Buffer): Self = StObject.set(x, "coverImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranscodeDelay(value: Double): Self = StObject.set(x, "transcodeDelay", value.asInstanceOf[js.Any])
+      inline def setTranscodeDelay(value: Double): Self = StObject.set(x, "transcodeDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranscodeDelayUndefined: Self = StObject.set(x, "transcodeDelay", js.undefined)
+      inline def setTranscodeDelayUndefined: Self = StObject.set(x, "transcodeDelay", js.undefined)
       
-      @scala.inline
-      def setVideo(value: Buffer): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+      inline def setVideo(value: Buffer): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     }
   }
   
@@ -61,44 +55,32 @@ object postingVideoOptionsMod {
   }
   object PostingVideoOptions {
     
-    @scala.inline
-    def apply(coverImage: Buffer, video: Buffer): PostingVideoOptions = {
+    inline def apply(coverImage: Buffer, video: Buffer): PostingVideoOptions = {
       val __obj = js.Dynamic.literal(coverImage = coverImage.asInstanceOf[js.Any], video = video.asInstanceOf[js.Any])
       __obj.asInstanceOf[PostingVideoOptions]
     }
     
-    @scala.inline
-    implicit class PostingVideoOptionsMutableBuilder[Self <: PostingVideoOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PostingVideoOptions](x: Self) {
       
-      @scala.inline
-      def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+      inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+      inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
       
-      @scala.inline
-      def setCoverImage(value: Buffer): Self = StObject.set(x, "coverImage", value.asInstanceOf[js.Any])
+      inline def setCoverImage(value: Buffer): Self = StObject.set(x, "coverImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: PostingLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: PostingLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      @scala.inline
-      def setTranscodeDelay(value: Double): Self = StObject.set(x, "transcodeDelay", value.asInstanceOf[js.Any])
+      inline def setTranscodeDelay(value: Double): Self = StObject.set(x, "transcodeDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTranscodeDelayUndefined: Self = StObject.set(x, "transcodeDelay", js.undefined)
+      inline def setTranscodeDelayUndefined: Self = StObject.set(x, "transcodeDelay", js.undefined)
       
-      @scala.inline
-      def setUsertags(value: PostingUsertags): Self = StObject.set(x, "usertags", value.asInstanceOf[js.Any])
+      inline def setUsertags(value: PostingUsertags): Self = StObject.set(x, "usertags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsertagsUndefined: Self = StObject.set(x, "usertags", js.undefined)
+      inline def setUsertagsUndefined: Self = StObject.set(x, "usertags", js.undefined)
       
-      @scala.inline
-      def setVideo(value: Buffer): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+      inline def setVideo(value: Buffer): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     }
   }
 }

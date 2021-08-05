@@ -15,19 +15,15 @@ trait StatSuccessCallbackResult extends StObject {
 }
 object StatSuccessCallbackResult {
   
-  @scala.inline
-  def apply(errMsg: String, stats: Stats | IAnyObject): StatSuccessCallbackResult = {
+  inline def apply(errMsg: String, stats: Stats | IAnyObject): StatSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class StatSuccessCallbackResultMutableBuilder[Self <: StatSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: StatSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStats(value: Stats | IAnyObject): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+    inline def setStats(value: Stats | IAnyObject): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
   }
 }

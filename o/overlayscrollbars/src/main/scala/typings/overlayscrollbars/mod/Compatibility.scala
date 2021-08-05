@@ -41,8 +41,7 @@ trait Compatibility extends StObject {
 }
 object Compatibility {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bind: (js.Function1[/* repeated */ js.Any, js.Any], js.Any, /* repeated */ js.Any) => js.Any,
     cAF: () => js.Function1[/* requestID */ Double, Unit],
     inA: (js.Any, js.Array[js.Any]) => Double,
@@ -64,52 +63,36 @@ object Compatibility {
     __obj.asInstanceOf[Compatibility]
   }
   
-  @scala.inline
-  implicit class CompatibilityMutableBuilder[Self <: Compatibility] (val x: Self) extends AnyVal {
+  extension [Self <: Compatibility](x: Self) {
     
-    @scala.inline
-    def setBind(value: (js.Function1[/* repeated */ js.Any, js.Any], js.Any, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "bind", js.Any.fromFunction3(value))
+    inline def setBind(value: (js.Function1[/* repeated */ js.Any, js.Any], js.Any, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "bind", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCAF(value: () => js.Function1[/* requestID */ Double, Unit]): Self = StObject.set(x, "cAF", js.Any.fromFunction0(value))
+    inline def setCAF(value: () => js.Function1[/* requestID */ Double, Unit]): Self = StObject.set(x, "cAF", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInA(value: (js.Any, js.Array[js.Any]) => Double): Self = StObject.set(x, "inA", js.Any.fromFunction2(value))
+    inline def setInA(value: (js.Any, js.Array[js.Any]) => Double): Self = StObject.set(x, "inA", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setIsA(value: js.Any => Boolean): Self = StObject.set(x, "isA", js.Any.fromFunction1(value))
+    inline def setIsA(value: js.Any => Boolean): Self = StObject.set(x, "isA", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMBtn(value: MouseEvent => Double): Self = StObject.set(x, "mBtn", js.Any.fromFunction1(value))
+    inline def setMBtn(value: MouseEvent => Double): Self = StObject.set(x, "mBtn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMO(value: () => js.Any): Self = StObject.set(x, "mO", js.Any.fromFunction0(value))
+    inline def setMO(value: () => js.Any): Self = StObject.set(x, "mO", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNow(value: () => Double): Self = StObject.set(x, "now", js.Any.fromFunction0(value))
+    inline def setNow(value: () => Double): Self = StObject.set(x, "now", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPage(value: MouseEvent => XNumber): Self = StObject.set(x, "page", js.Any.fromFunction1(value))
+    inline def setPage(value: MouseEvent => XNumber): Self = StObject.set(x, "page", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPrvD(value: Event => Unit): Self = StObject.set(x, "prvD", js.Any.fromFunction1(value))
+    inline def setPrvD(value: Event => Unit): Self = StObject.set(x, "prvD", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRAF(value: () => js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, js.Any], Double]): Self = StObject.set(x, "rAF", js.Any.fromFunction0(value))
+    inline def setRAF(value: () => js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, js.Any], Double]): Self = StObject.set(x, "rAF", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRO(value: () => js.Any): Self = StObject.set(x, "rO", js.Any.fromFunction0(value))
+    inline def setRO(value: () => js.Any): Self = StObject.set(x, "rO", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStpP(value: Event => Unit): Self = StObject.set(x, "stpP", js.Any.fromFunction1(value))
+    inline def setStpP(value: Event => Unit): Self = StObject.set(x, "stpP", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setType(value: js.Any => String): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
+    inline def setType(value: js.Any => String): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWH(value: () => Double): Self = StObject.set(x, "wH", js.Any.fromFunction0(value))
+    inline def setWH(value: () => Double): Self = StObject.set(x, "wH", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWW(value: () => Double): Self = StObject.set(x, "wW", js.Any.fromFunction0(value))
+    inline def setWW(value: () => Double): Self = StObject.set(x, "wW", js.Any.fromFunction0(value))
   }
 }

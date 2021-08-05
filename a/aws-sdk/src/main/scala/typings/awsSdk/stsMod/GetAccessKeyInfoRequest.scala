@@ -13,16 +13,13 @@ trait GetAccessKeyInfoRequest extends StObject {
 }
 object GetAccessKeyInfoRequest {
   
-  @scala.inline
-  def apply(AccessKeyId: accessKeyIdType): GetAccessKeyInfoRequest = {
+  inline def apply(AccessKeyId: accessKeyIdType): GetAccessKeyInfoRequest = {
     val __obj = js.Dynamic.literal(AccessKeyId = AccessKeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAccessKeyInfoRequest]
   }
   
-  @scala.inline
-  implicit class GetAccessKeyInfoRequestMutableBuilder[Self <: GetAccessKeyInfoRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetAccessKeyInfoRequest](x: Self) {
     
-    @scala.inline
-    def setAccessKeyId(value: accessKeyIdType): Self = StObject.set(x, "AccessKeyId", value.asInstanceOf[js.Any])
+    inline def setAccessKeyId(value: accessKeyIdType): Self = StObject.set(x, "AccessKeyId", value.asInstanceOf[js.Any])
   }
 }

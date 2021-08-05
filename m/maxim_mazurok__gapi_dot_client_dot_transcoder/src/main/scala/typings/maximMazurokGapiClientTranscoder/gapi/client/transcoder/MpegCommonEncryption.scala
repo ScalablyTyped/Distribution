@@ -14,25 +14,19 @@ trait MpegCommonEncryption extends StObject {
 }
 object MpegCommonEncryption {
   
-  @scala.inline
-  def apply(): MpegCommonEncryption = {
+  inline def apply(): MpegCommonEncryption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MpegCommonEncryption]
   }
   
-  @scala.inline
-  implicit class MpegCommonEncryptionMutableBuilder[Self <: MpegCommonEncryption] (val x: Self) extends AnyVal {
+  extension [Self <: MpegCommonEncryption](x: Self) {
     
-    @scala.inline
-    def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
+    inline def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
     
-    @scala.inline
-    def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+    inline def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
+    inline def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
   }
 }

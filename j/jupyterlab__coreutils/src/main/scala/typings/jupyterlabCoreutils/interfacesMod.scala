@@ -25,23 +25,18 @@ object interfacesMod {
   }
   object IChangedArgs {
     
-    @scala.inline
-    def apply[T, OldT, U /* <: String */](name: U, newValue: T, oldValue: OldT): IChangedArgs[T, OldT, U] = {
+    inline def apply[T, OldT, U /* <: String */](name: U, newValue: T, oldValue: OldT): IChangedArgs[T, OldT, U] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], newValue = newValue.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[IChangedArgs[T, OldT, U]]
     }
     
-    @scala.inline
-    implicit class IChangedArgsMutableBuilder[Self <: IChangedArgs[?, ?, ?], T, OldT, U /* <: String */] (val x: Self & (IChangedArgs[T, OldT, U])) extends AnyVal {
+    extension [Self <: IChangedArgs[?, ?, ?], T, OldT, U /* <: String */](x: Self & (IChangedArgs[T, OldT, U])) {
       
-      @scala.inline
-      def setName(value: U): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: U): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewValue(value: T): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+      inline def setNewValue(value: T): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldValue(value: OldT): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+      inline def setOldValue(value: OldT): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     }
   }
 }

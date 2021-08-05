@@ -20,8 +20,7 @@ trait TypeoffinalScriptSig extends StObject {
 }
 object TypeoffinalScriptSig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canAdd: (js.Any, js.Any) => Boolean,
     check: js.Any => /* is bip174.bip174/src/lib/interfaces.FinalScriptSig */ Boolean,
     decode: KeyValue => FinalScriptSig,
@@ -32,22 +31,16 @@ object TypeoffinalScriptSig {
     __obj.asInstanceOf[TypeoffinalScriptSig]
   }
   
-  @scala.inline
-  implicit class TypeoffinalScriptSigMutableBuilder[Self <: TypeoffinalScriptSig] (val x: Self) extends AnyVal {
+  extension [Self <: TypeoffinalScriptSig](x: Self) {
     
-    @scala.inline
-    def setCanAdd(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "canAdd", js.Any.fromFunction2(value))
+    inline def setCanAdd(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "canAdd", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCheck(value: js.Any => /* is bip174.bip174/src/lib/interfaces.FinalScriptSig */ Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
+    inline def setCheck(value: js.Any => /* is bip174.bip174/src/lib/interfaces.FinalScriptSig */ Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDecode(value: KeyValue => FinalScriptSig): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
+    inline def setDecode(value: KeyValue => FinalScriptSig): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEncode(value: FinalScriptSig => KeyValue): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+    inline def setEncode(value: FinalScriptSig => KeyValue): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExpected(value: /* "Buffer" */ String): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
+    inline def setExpected(value: /* "Buffer" */ String): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
   }
 }

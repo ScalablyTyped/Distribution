@@ -12,19 +12,15 @@ trait LineColumn extends StObject {
 }
 object LineColumn {
   
-  @scala.inline
-  def apply(column: Double, line: Double): LineColumn = {
+  inline def apply(column: Double, line: Double): LineColumn = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineColumn]
   }
   
-  @scala.inline
-  implicit class LineColumnMutableBuilder[Self <: LineColumn] (val x: Self) extends AnyVal {
+  extension [Self <: LineColumn](x: Self) {
     
-    @scala.inline
-    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
   }
 }

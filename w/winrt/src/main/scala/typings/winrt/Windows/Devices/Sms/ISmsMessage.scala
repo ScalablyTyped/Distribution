@@ -12,19 +12,15 @@ trait ISmsMessage extends StObject {
 }
 object ISmsMessage {
   
-  @scala.inline
-  def apply(id: Double, messageClass: SmsMessageClass): ISmsMessage = {
+  inline def apply(id: Double, messageClass: SmsMessageClass): ISmsMessage = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], messageClass = messageClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISmsMessage]
   }
   
-  @scala.inline
-  implicit class ISmsMessageMutableBuilder[Self <: ISmsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ISmsMessage](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageClass(value: SmsMessageClass): Self = StObject.set(x, "messageClass", value.asInstanceOf[js.Any])
+    inline def setMessageClass(value: SmsMessageClass): Self = StObject.set(x, "messageClass", value.asInstanceOf[js.Any])
   }
 }

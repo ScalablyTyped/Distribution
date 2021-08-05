@@ -17,16 +17,13 @@ trait SwitchTabArgs
 }
 object SwitchTabArgs {
   
-  @scala.inline
-  def apply(url: String): SwitchTabArgs = {
+  inline def apply(url: String): SwitchTabArgs = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwitchTabArgs]
   }
   
-  @scala.inline
-  implicit class SwitchTabArgsMutableBuilder[Self <: SwitchTabArgs] (val x: Self) extends AnyVal {
+  extension [Self <: SwitchTabArgs](x: Self) {
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

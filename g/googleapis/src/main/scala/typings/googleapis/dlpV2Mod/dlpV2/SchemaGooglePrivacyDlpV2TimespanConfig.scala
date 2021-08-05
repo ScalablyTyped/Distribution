@@ -42,37 +42,27 @@ trait SchemaGooglePrivacyDlpV2TimespanConfig extends StObject {
 }
 object SchemaGooglePrivacyDlpV2TimespanConfig {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2TimespanConfig = {
+  inline def apply(): SchemaGooglePrivacyDlpV2TimespanConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2TimespanConfig]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2TimespanConfigMutableBuilder[Self <: SchemaGooglePrivacyDlpV2TimespanConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2TimespanConfig](x: Self) {
     
-    @scala.inline
-    def setEnableAutoPopulationOfTimespanConfig(value: Boolean): Self = StObject.set(x, "enableAutoPopulationOfTimespanConfig", value.asInstanceOf[js.Any])
+    inline def setEnableAutoPopulationOfTimespanConfig(value: Boolean): Self = StObject.set(x, "enableAutoPopulationOfTimespanConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableAutoPopulationOfTimespanConfigUndefined: Self = StObject.set(x, "enableAutoPopulationOfTimespanConfig", js.undefined)
+    inline def setEnableAutoPopulationOfTimespanConfigUndefined: Self = StObject.set(x, "enableAutoPopulationOfTimespanConfig", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setTimestampField(value: SchemaGooglePrivacyDlpV2FieldId): Self = StObject.set(x, "timestampField", value.asInstanceOf[js.Any])
+    inline def setTimestampField(value: SchemaGooglePrivacyDlpV2FieldId): Self = StObject.set(x, "timestampField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampFieldUndefined: Self = StObject.set(x, "timestampField", js.undefined)
+    inline def setTimestampFieldUndefined: Self = StObject.set(x, "timestampField", js.undefined)
   }
 }

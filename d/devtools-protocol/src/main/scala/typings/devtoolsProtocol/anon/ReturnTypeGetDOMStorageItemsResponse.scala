@@ -14,22 +14,17 @@ trait ReturnTypeGetDOMStorageItemsResponse extends StObject {
 }
 object ReturnTypeGetDOMStorageItemsResponse {
   
-  @scala.inline
-  def apply(paramsType: js.Array[GetDOMStorageItemsRequest], returnType: GetDOMStorageItemsResponse): ReturnTypeGetDOMStorageItemsResponse = {
+  inline def apply(paramsType: js.Array[GetDOMStorageItemsRequest], returnType: GetDOMStorageItemsResponse): ReturnTypeGetDOMStorageItemsResponse = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnTypeGetDOMStorageItemsResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeGetDOMStorageItemsResponseMutableBuilder[Self <: ReturnTypeGetDOMStorageItemsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeGetDOMStorageItemsResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[GetDOMStorageItemsRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[GetDOMStorageItemsRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: GetDOMStorageItemsRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: GetDOMStorageItemsRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: GetDOMStorageItemsResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: GetDOMStorageItemsResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

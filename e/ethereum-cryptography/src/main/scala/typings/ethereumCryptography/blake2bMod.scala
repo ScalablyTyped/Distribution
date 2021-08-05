@@ -11,8 +11,6 @@ object blake2bMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def blake2b(input: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("blake2b")(input.asInstanceOf[js.Any]).asInstanceOf[Buffer]
-  @scala.inline
-  def blake2b(input: Buffer, outputLength: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("blake2b")(input.asInstanceOf[js.Any], outputLength.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def blake2b(input: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("blake2b")(input.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def blake2b(input: Buffer, outputLength: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("blake2b")(input.asInstanceOf[js.Any], outputLength.asInstanceOf[js.Any])).asInstanceOf[Buffer]
 }

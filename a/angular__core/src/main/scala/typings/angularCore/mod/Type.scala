@@ -13,6 +13,5 @@ trait Type[T]
      with Instantiable1[/* args (repeated) */ js.Any, T]
 object Type {
   
-  @scala.inline
-  def apply: FunctionConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("Type").asInstanceOf[FunctionConstructor]
+  inline def apply: FunctionConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("Type").asInstanceOf[FunctionConstructor]
 }

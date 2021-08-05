@@ -23,28 +23,21 @@ trait GetSavingsPlansUtilizationRequest extends StObject {
 }
 object GetSavingsPlansUtilizationRequest {
   
-  @scala.inline
-  def apply(TimePeriod: DateInterval): GetSavingsPlansUtilizationRequest = {
+  inline def apply(TimePeriod: DateInterval): GetSavingsPlansUtilizationRequest = {
     val __obj = js.Dynamic.literal(TimePeriod = TimePeriod.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSavingsPlansUtilizationRequest]
   }
   
-  @scala.inline
-  implicit class GetSavingsPlansUtilizationRequestMutableBuilder[Self <: GetSavingsPlansUtilizationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetSavingsPlansUtilizationRequest](x: Self) {
     
-    @scala.inline
-    def setFilter(value: Expression): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: Expression): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "Filter", js.undefined)
     
-    @scala.inline
-    def setGranularity(value: Granularity): Self = StObject.set(x, "Granularity", value.asInstanceOf[js.Any])
+    inline def setGranularity(value: Granularity): Self = StObject.set(x, "Granularity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGranularityUndefined: Self = StObject.set(x, "Granularity", js.undefined)
+    inline def setGranularityUndefined: Self = StObject.set(x, "Granularity", js.undefined)
     
-    @scala.inline
-    def setTimePeriod(value: DateInterval): Self = StObject.set(x, "TimePeriod", value.asInstanceOf[js.Any])
+    inline def setTimePeriod(value: DateInterval): Self = StObject.set(x, "TimePeriod", value.asInstanceOf[js.Any])
   }
 }

@@ -33,26 +33,19 @@ object filterMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def listContains(filters: js.Any, name: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listContains")(filters.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def listContains(filters: js.Any, name: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listContains")(filters.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def listLength(fl: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("listLength")(fl.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def listLength(fl: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("listLength")(fl.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @scala.inline
-    def listNew(repo: Repository, mode: Double, options: Double): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("listNew")(repo.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    inline def listNew(repo: Repository, mode: Double, options: Double): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("listNew")(repo.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
-    @scala.inline
-    def listStreamBlob(filters: js.Any, blob: Blob, target: WriteStream): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listStreamBlob")(filters.asInstanceOf[js.Any], blob.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def listStreamBlob(filters: js.Any, blob: Blob, target: WriteStream): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listStreamBlob")(filters.asInstanceOf[js.Any], blob.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def listStreamData(filters: js.Any, data: Buf, target: WriteStream): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listStreamData")(filters.asInstanceOf[js.Any], data.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def listStreamData(filters: js.Any, data: Buf, target: WriteStream): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listStreamData")(filters.asInstanceOf[js.Any], data.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def listStreamFile(filters: js.Any, repo: Repository, path: String, target: WriteStream): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listStreamFile")(filters.asInstanceOf[js.Any], repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def listStreamFile(filters: js.Any, repo: Repository, path: String, target: WriteStream): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listStreamFile")(filters.asInstanceOf[js.Any], repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def unregister(name: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def unregister(name: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitNumbers.`0`
@@ -61,11 +54,9 @@ object filterMod {
     trait FLAG extends StObject
     object FLAG {
       
-      @scala.inline
-      def ALLOW_UNSAFE: `1` = 1.asInstanceOf[`1`]
+      inline def ALLOW_UNSAFE: `1` = 1.asInstanceOf[`1`]
       
-      @scala.inline
-      def DEFAULT: `0` = 0.asInstanceOf[`0`]
+      inline def DEFAULT: `0` = 0.asInstanceOf[`0`]
     }
     
     /* Rewritten from type alias, can be one of: 
@@ -75,17 +66,13 @@ object filterMod {
     trait MODE extends StObject
     object MODE {
       
-      @scala.inline
-      def CLEAN: `1` = 1.asInstanceOf[`1`]
+      inline def CLEAN: `1` = 1.asInstanceOf[`1`]
       
-      @scala.inline
-      def SMUDGE: `0` = 0.asInstanceOf[`0`]
+      inline def SMUDGE: `0` = 0.asInstanceOf[`0`]
       
-      @scala.inline
-      def TO_ODB: `1` = 1.asInstanceOf[`1`]
+      inline def TO_ODB: `1` = 1.asInstanceOf[`1`]
       
-      @scala.inline
-      def TO_WORKTREE: `0` = 0.asInstanceOf[`0`]
+      inline def TO_WORKTREE: `0` = 0.asInstanceOf[`0`]
     }
   }
 }

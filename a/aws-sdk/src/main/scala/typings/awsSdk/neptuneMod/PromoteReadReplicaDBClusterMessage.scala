@@ -13,16 +13,13 @@ trait PromoteReadReplicaDBClusterMessage extends StObject {
 }
 object PromoteReadReplicaDBClusterMessage {
   
-  @scala.inline
-  def apply(DBClusterIdentifier: String): PromoteReadReplicaDBClusterMessage = {
+  inline def apply(DBClusterIdentifier: String): PromoteReadReplicaDBClusterMessage = {
     val __obj = js.Dynamic.literal(DBClusterIdentifier = DBClusterIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[PromoteReadReplicaDBClusterMessage]
   }
   
-  @scala.inline
-  implicit class PromoteReadReplicaDBClusterMessageMutableBuilder[Self <: PromoteReadReplicaDBClusterMessage] (val x: Self) extends AnyVal {
+  extension [Self <: PromoteReadReplicaDBClusterMessage](x: Self) {
     
-    @scala.inline
-    def setDBClusterIdentifier(value: String): Self = StObject.set(x, "DBClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setDBClusterIdentifier(value: String): Self = StObject.set(x, "DBClusterIdentifier", value.asInstanceOf[js.Any])
   }
 }

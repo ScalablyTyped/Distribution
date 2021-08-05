@@ -21,8 +21,7 @@ trait ActionResponseBuilder extends StObject {
 }
 object ActionResponseBuilder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     build: () => ActionResponse,
     setNavigation: Navigation => ActionResponseBuilder,
     setNotification: Notification => ActionResponseBuilder,
@@ -33,22 +32,16 @@ object ActionResponseBuilder {
     __obj.asInstanceOf[ActionResponseBuilder]
   }
   
-  @scala.inline
-  implicit class ActionResponseBuilderMutableBuilder[Self <: ActionResponseBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: ActionResponseBuilder](x: Self) {
     
-    @scala.inline
-    def setBuild(value: () => ActionResponse): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
+    inline def setBuild(value: () => ActionResponse): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetNavigation(value: Navigation => ActionResponseBuilder): Self = StObject.set(x, "setNavigation", js.Any.fromFunction1(value))
+    inline def setSetNavigation(value: Navigation => ActionResponseBuilder): Self = StObject.set(x, "setNavigation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetNotification(value: Notification => ActionResponseBuilder): Self = StObject.set(x, "setNotification", js.Any.fromFunction1(value))
+    inline def setSetNotification(value: Notification => ActionResponseBuilder): Self = StObject.set(x, "setNotification", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOpenLink(value: OpenLink => ActionResponseBuilder): Self = StObject.set(x, "setOpenLink", js.Any.fromFunction1(value))
+    inline def setSetOpenLink(value: OpenLink => ActionResponseBuilder): Self = StObject.set(x, "setOpenLink", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetStateChanged(value: Boolean => ActionResponseBuilder): Self = StObject.set(x, "setStateChanged", js.Any.fromFunction1(value))
+    inline def setSetStateChanged(value: Boolean => ActionResponseBuilder): Self = StObject.set(x, "setStateChanged", js.Any.fromFunction1(value))
   }
 }

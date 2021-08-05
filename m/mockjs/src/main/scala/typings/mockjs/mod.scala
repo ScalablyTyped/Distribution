@@ -19,38 +19,32 @@ object mod {
   @JSImport("mockjs", "Random")
   @js.native
   def Random: MockjsRandom = js.native
-  @scala.inline
-  def Random_=(x: MockjsRandom): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Random")(x.asInstanceOf[js.Any])
+  inline def Random_=(x: MockjsRandom): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Random")(x.asInstanceOf[js.Any])
   
   @JSImport("mockjs", "mock")
   @js.native
   def mock: MockjsMock = js.native
-  @scala.inline
-  def mock_=(x: MockjsMock): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mock")(x.asInstanceOf[js.Any])
+  inline def mock_=(x: MockjsMock): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mock")(x.asInstanceOf[js.Any])
   
   @JSImport("mockjs", "setup")
   @js.native
   def setup: MockjsSetup = js.native
-  @scala.inline
-  def setup_=(x: MockjsSetup): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("setup")(x.asInstanceOf[js.Any])
+  inline def setup_=(x: MockjsSetup): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("setup")(x.asInstanceOf[js.Any])
   
   @JSImport("mockjs", "toJSONSchema")
   @js.native
   def toJSONSchema: MockjsToJSONSchema = js.native
-  @scala.inline
-  def toJSONSchema_=(x: MockjsToJSONSchema): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toJSONSchema")(x.asInstanceOf[js.Any])
+  inline def toJSONSchema_=(x: MockjsToJSONSchema): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toJSONSchema")(x.asInstanceOf[js.Any])
   
   @JSImport("mockjs", "valid")
   @js.native
   def valid: MockjsValid = js.native
-  @scala.inline
-  def valid_=(x: MockjsValid): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("valid")(x.asInstanceOf[js.Any])
+  inline def valid_=(x: MockjsValid): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("valid")(x.asInstanceOf[js.Any])
   
   @JSImport("mockjs", "version")
   @js.native
   def version: Double = js.native
-  @scala.inline
-  def version_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+  inline def version_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   
   type B = Boolean
   
@@ -83,8 +77,7 @@ object mod {
   }
   object Mockjs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Random: MockjsRandom,
       mock: MockjsMock,
       setup: /* settings */ MockjsSetupSettings => Unit,
@@ -96,26 +89,19 @@ object mod {
       __obj.asInstanceOf[Mockjs]
     }
     
-    @scala.inline
-    implicit class MockjsMutableBuilder[Self <: Mockjs] (val x: Self) extends AnyVal {
+    extension [Self <: Mockjs](x: Self) {
       
-      @scala.inline
-      def setMock(value: MockjsMock): Self = StObject.set(x, "mock", value.asInstanceOf[js.Any])
+      inline def setMock(value: MockjsMock): Self = StObject.set(x, "mock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRandom(value: MockjsRandom): Self = StObject.set(x, "Random", value.asInstanceOf[js.Any])
+      inline def setRandom(value: MockjsRandom): Self = StObject.set(x, "Random", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetup(value: /* settings */ MockjsSetupSettings => Unit): Self = StObject.set(x, "setup", js.Any.fromFunction1(value))
+      inline def setSetup(value: /* settings */ MockjsSetupSettings => Unit): Self = StObject.set(x, "setup", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToJSONSchema(value: /* template */ js.Any => MockjsToJSONSchemaRs): Self = StObject.set(x, "toJSONSchema", js.Any.fromFunction1(value))
+      inline def setToJSONSchema(value: /* template */ js.Any => MockjsToJSONSchemaRs): Self = StObject.set(x, "toJSONSchema", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValid(value: (/* template */ js.Any, /* data */ js.Any) => js.Array[MockjsValidRsItem]): Self = StObject.set(x, "valid", js.Any.fromFunction2(value))
+      inline def setValid(value: (/* template */ js.Any, /* data */ js.Any) => js.Array[MockjsValidRsItem]): Self = StObject.set(x, "valid", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -273,29 +259,22 @@ object mod {
   }
   object MockjsRandomColor {
     
-    @scala.inline
-    def apply(color: () => S, hex: () => S, hsl: () => S, rgb: () => S, rgba: () => S): MockjsRandomColor = {
+    inline def apply(color: () => S, hex: () => S, hsl: () => S, rgb: () => S, rgba: () => S): MockjsRandomColor = {
       val __obj = js.Dynamic.literal(color = js.Any.fromFunction0(color), hex = js.Any.fromFunction0(hex), hsl = js.Any.fromFunction0(hsl), rgb = js.Any.fromFunction0(rgb), rgba = js.Any.fromFunction0(rgba))
       __obj.asInstanceOf[MockjsRandomColor]
     }
     
-    @scala.inline
-    implicit class MockjsRandomColorMutableBuilder[Self <: MockjsRandomColor] (val x: Self) extends AnyVal {
+    extension [Self <: MockjsRandomColor](x: Self) {
       
-      @scala.inline
-      def setColor(value: () => S): Self = StObject.set(x, "color", js.Any.fromFunction0(value))
+      inline def setColor(value: () => S): Self = StObject.set(x, "color", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHex(value: () => S): Self = StObject.set(x, "hex", js.Any.fromFunction0(value))
+      inline def setHex(value: () => S): Self = StObject.set(x, "hex", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHsl(value: () => S): Self = StObject.set(x, "hsl", js.Any.fromFunction0(value))
+      inline def setHsl(value: () => S): Self = StObject.set(x, "hsl", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRgb(value: () => S): Self = StObject.set(x, "rgb", js.Any.fromFunction0(value))
+      inline def setRgb(value: () => S): Self = StObject.set(x, "rgb", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRgba(value: () => S): Self = StObject.set(x, "rgba", js.Any.fromFunction0(value))
+      inline def setRgba(value: () => S): Self = StObject.set(x, "rgba", js.Any.fromFunction0(value))
     }
   }
   
@@ -345,8 +324,7 @@ object mod {
   }
   object MockjsRandomHelper {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       capitalize: S => S,
       lower: S => S,
       pick: js.Array[js.Any] => js.Any,
@@ -357,23 +335,17 @@ object mod {
       __obj.asInstanceOf[MockjsRandomHelper]
     }
     
-    @scala.inline
-    implicit class MockjsRandomHelperMutableBuilder[Self <: MockjsRandomHelper] (val x: Self) extends AnyVal {
+    extension [Self <: MockjsRandomHelper](x: Self) {
       
-      @scala.inline
-      def setCapitalize(value: S => S): Self = StObject.set(x, "capitalize", js.Any.fromFunction1(value))
+      inline def setCapitalize(value: S => S): Self = StObject.set(x, "capitalize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLower(value: S => S): Self = StObject.set(x, "lower", js.Any.fromFunction1(value))
+      inline def setLower(value: S => S): Self = StObject.set(x, "lower", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPick(value: js.Array[js.Any] => js.Any): Self = StObject.set(x, "pick", js.Any.fromFunction1(value))
+      inline def setPick(value: js.Array[js.Any] => js.Any): Self = StObject.set(x, "pick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShuffle(value: js.Array[js.Any] => js.Array[js.Any]): Self = StObject.set(x, "shuffle", js.Any.fromFunction1(value))
+      inline def setShuffle(value: js.Array[js.Any] => js.Array[js.Any]): Self = StObject.set(x, "shuffle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpper(value: S => S): Self = StObject.set(x, "upper", js.Any.fromFunction1(value))
+      inline def setUpper(value: S => S): Self = StObject.set(x, "upper", js.Any.fromFunction1(value))
     }
   }
   
@@ -576,20 +548,16 @@ object mod {
   }
   object MockjsSetupSettings {
     
-    @scala.inline
-    def apply(): MockjsSetupSettings = {
+    inline def apply(): MockjsSetupSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MockjsSetupSettings]
     }
     
-    @scala.inline
-    implicit class MockjsSetupSettingsMutableBuilder[Self <: MockjsSetupSettings] (val x: Self) extends AnyVal {
+    extension [Self <: MockjsSetupSettings](x: Self) {
       
-      @scala.inline
-      def setTimeout(value: Double | S): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double | S): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -615,54 +583,39 @@ object mod {
   }
   object MockjsToJSONSchemaRs {
     
-    @scala.inline
-    def apply(path: js.Array[S], rule: js.Object, template: js.Any, `type`: S): MockjsToJSONSchemaRs = {
+    inline def apply(path: js.Array[S], rule: js.Object, template: js.Any, `type`: S): MockjsToJSONSchemaRs = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], rule = rule.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MockjsToJSONSchemaRs]
     }
     
-    @scala.inline
-    implicit class MockjsToJSONSchemaRsMutableBuilder[Self <: MockjsToJSONSchemaRs] (val x: Self) extends AnyVal {
+    extension [Self <: MockjsToJSONSchemaRs](x: Self) {
       
-      @scala.inline
-      def setItems(value: js.Array[MockjsToJSONSchemaRs]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[MockjsToJSONSchemaRs]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setItemsVarargs(value: MockjsToJSONSchemaRs*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: MockjsToJSONSchemaRs*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: S): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: S): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPath(value: js.Array[S]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: js.Array[S]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathVarargs(value: S*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: S*): Self = StObject.set(x, "path", js.Array(value :_*))
       
-      @scala.inline
-      def setProperties(value: js.Array[MockjsToJSONSchemaRs]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: js.Array[MockjsToJSONSchemaRs]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+      inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
-      @scala.inline
-      def setPropertiesVarargs(value: MockjsToJSONSchemaRs*): Self = StObject.set(x, "properties", js.Array(value :_*))
+      inline def setPropertiesVarargs(value: MockjsToJSONSchemaRs*): Self = StObject.set(x, "properties", js.Array(value :_*))
       
-      @scala.inline
-      def setRule(value: js.Object): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+      inline def setRule(value: js.Object): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplate(value: js.Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: js.Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: S): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: S): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -686,36 +639,27 @@ object mod {
   }
   object MockjsValidRsItem {
     
-    @scala.inline
-    def apply(action: S, actual: S, expected: S, message: S, path: js.Array[S], `type`: S): MockjsValidRsItem = {
+    inline def apply(action: S, actual: S, expected: S, message: S, path: js.Array[S], `type`: S): MockjsValidRsItem = {
       val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], actual = actual.asInstanceOf[js.Any], expected = expected.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MockjsValidRsItem]
     }
     
-    @scala.inline
-    implicit class MockjsValidRsItemMutableBuilder[Self <: MockjsValidRsItem] (val x: Self) extends AnyVal {
+    extension [Self <: MockjsValidRsItem](x: Self) {
       
-      @scala.inline
-      def setAction(value: S): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: S): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActual(value: S): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
+      inline def setActual(value: S): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpected(value: S): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
+      inline def setExpected(value: S): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: S): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: S): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: js.Array[S]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: js.Array[S]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathVarargs(value: S*): Self = StObject.set(x, "path", js.Array(value :_*))
+      inline def setPathVarargs(value: S*): Self = StObject.set(x, "path", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: S): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: S): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -735,26 +679,19 @@ object mod {
   trait RandomDateUtilString extends StObject
   object RandomDateUtilString {
     
-    @scala.inline
-    def day: typings.mockjs.mockjsStrings.day = "day".asInstanceOf[typings.mockjs.mockjsStrings.day]
+    inline def day: typings.mockjs.mockjsStrings.day = "day".asInstanceOf[typings.mockjs.mockjsStrings.day]
     
-    @scala.inline
-    def hour: typings.mockjs.mockjsStrings.hour = "hour".asInstanceOf[typings.mockjs.mockjsStrings.hour]
+    inline def hour: typings.mockjs.mockjsStrings.hour = "hour".asInstanceOf[typings.mockjs.mockjsStrings.hour]
     
-    @scala.inline
-    def minute: typings.mockjs.mockjsStrings.minute = "minute".asInstanceOf[typings.mockjs.mockjsStrings.minute]
+    inline def minute: typings.mockjs.mockjsStrings.minute = "minute".asInstanceOf[typings.mockjs.mockjsStrings.minute]
     
-    @scala.inline
-    def month: typings.mockjs.mockjsStrings.month = "month".asInstanceOf[typings.mockjs.mockjsStrings.month]
+    inline def month: typings.mockjs.mockjsStrings.month = "month".asInstanceOf[typings.mockjs.mockjsStrings.month]
     
-    @scala.inline
-    def second: typings.mockjs.mockjsStrings.second = "second".asInstanceOf[typings.mockjs.mockjsStrings.second]
+    inline def second: typings.mockjs.mockjsStrings.second = "second".asInstanceOf[typings.mockjs.mockjsStrings.second]
     
-    @scala.inline
-    def week: typings.mockjs.mockjsStrings.week = "week".asInstanceOf[typings.mockjs.mockjsStrings.week]
+    inline def week: typings.mockjs.mockjsStrings.week = "week".asInstanceOf[typings.mockjs.mockjsStrings.week]
     
-    @scala.inline
-    def year: typings.mockjs.mockjsStrings.year = "year".asInstanceOf[typings.mockjs.mockjsStrings.year]
+    inline def year: typings.mockjs.mockjsStrings.year = "year".asInstanceOf[typings.mockjs.mockjsStrings.year]
   }
   
   // Mockjs.Random - Image
@@ -767,14 +704,11 @@ object mod {
   trait RandomImageFormatString extends StObject
   object RandomImageFormatString {
     
-    @scala.inline
-    def gif: typings.mockjs.mockjsStrings.gif = "gif".asInstanceOf[typings.mockjs.mockjsStrings.gif]
+    inline def gif: typings.mockjs.mockjsStrings.gif = "gif".asInstanceOf[typings.mockjs.mockjsStrings.gif]
     
-    @scala.inline
-    def jpg: typings.mockjs.mockjsStrings.jpg = "jpg".asInstanceOf[typings.mockjs.mockjsStrings.jpg]
+    inline def jpg: typings.mockjs.mockjsStrings.jpg = "jpg".asInstanceOf[typings.mockjs.mockjsStrings.jpg]
     
-    @scala.inline
-    def png: typings.mockjs.mockjsStrings.png = "png".asInstanceOf[typings.mockjs.mockjsStrings.png]
+    inline def png: typings.mockjs.mockjsStrings.png = "png".asInstanceOf[typings.mockjs.mockjsStrings.png]
   }
   
   // Mockjs.Random - Web
@@ -797,44 +731,31 @@ object mod {
   trait RandomWebProtocal extends StObject
   object RandomWebProtocal {
     
-    @scala.inline
-    def cid: typings.mockjs.mockjsStrings.cid = "cid".asInstanceOf[typings.mockjs.mockjsStrings.cid]
+    inline def cid: typings.mockjs.mockjsStrings.cid = "cid".asInstanceOf[typings.mockjs.mockjsStrings.cid]
     
-    @scala.inline
-    def ftp: typings.mockjs.mockjsStrings.ftp = "ftp".asInstanceOf[typings.mockjs.mockjsStrings.ftp]
+    inline def ftp: typings.mockjs.mockjsStrings.ftp = "ftp".asInstanceOf[typings.mockjs.mockjsStrings.ftp]
     
-    @scala.inline
-    def gopher: typings.mockjs.mockjsStrings.gopher = "gopher".asInstanceOf[typings.mockjs.mockjsStrings.gopher]
+    inline def gopher: typings.mockjs.mockjsStrings.gopher = "gopher".asInstanceOf[typings.mockjs.mockjsStrings.gopher]
     
-    @scala.inline
-    def http: typings.mockjs.mockjsStrings.http = "http".asInstanceOf[typings.mockjs.mockjsStrings.http]
+    inline def http: typings.mockjs.mockjsStrings.http = "http".asInstanceOf[typings.mockjs.mockjsStrings.http]
     
-    @scala.inline
-    def mailto: typings.mockjs.mockjsStrings.mailto = "mailto".asInstanceOf[typings.mockjs.mockjsStrings.mailto]
+    inline def mailto: typings.mockjs.mockjsStrings.mailto = "mailto".asInstanceOf[typings.mockjs.mockjsStrings.mailto]
     
-    @scala.inline
-    def mid: typings.mockjs.mockjsStrings.mid = "mid".asInstanceOf[typings.mockjs.mockjsStrings.mid]
+    inline def mid: typings.mockjs.mockjsStrings.mid = "mid".asInstanceOf[typings.mockjs.mockjsStrings.mid]
     
-    @scala.inline
-    def news: typings.mockjs.mockjsStrings.news = "news".asInstanceOf[typings.mockjs.mockjsStrings.news]
+    inline def news: typings.mockjs.mockjsStrings.news = "news".asInstanceOf[typings.mockjs.mockjsStrings.news]
     
-    @scala.inline
-    def nntp: typings.mockjs.mockjsStrings.nntp = "nntp".asInstanceOf[typings.mockjs.mockjsStrings.nntp]
+    inline def nntp: typings.mockjs.mockjsStrings.nntp = "nntp".asInstanceOf[typings.mockjs.mockjsStrings.nntp]
     
-    @scala.inline
-    def prospero: typings.mockjs.mockjsStrings.prospero = "prospero".asInstanceOf[typings.mockjs.mockjsStrings.prospero]
+    inline def prospero: typings.mockjs.mockjsStrings.prospero = "prospero".asInstanceOf[typings.mockjs.mockjsStrings.prospero]
     
-    @scala.inline
-    def rlogin: typings.mockjs.mockjsStrings.rlogin = "rlogin".asInstanceOf[typings.mockjs.mockjsStrings.rlogin]
+    inline def rlogin: typings.mockjs.mockjsStrings.rlogin = "rlogin".asInstanceOf[typings.mockjs.mockjsStrings.rlogin]
     
-    @scala.inline
-    def telnet: typings.mockjs.mockjsStrings.telnet = "telnet".asInstanceOf[typings.mockjs.mockjsStrings.telnet]
+    inline def telnet: typings.mockjs.mockjsStrings.telnet = "telnet".asInstanceOf[typings.mockjs.mockjsStrings.telnet]
     
-    @scala.inline
-    def tn3270: typings.mockjs.mockjsStrings.tn3270 = "tn3270".asInstanceOf[typings.mockjs.mockjsStrings.tn3270]
+    inline def tn3270: typings.mockjs.mockjsStrings.tn3270 = "tn3270".asInstanceOf[typings.mockjs.mockjsStrings.tn3270]
     
-    @scala.inline
-    def wais: typings.mockjs.mockjsStrings.wais = "wais".asInstanceOf[typings.mockjs.mockjsStrings.wais]
+    inline def wais: typings.mockjs.mockjsStrings.wais = "wais".asInstanceOf[typings.mockjs.mockjsStrings.wais]
   }
   
   type S = String

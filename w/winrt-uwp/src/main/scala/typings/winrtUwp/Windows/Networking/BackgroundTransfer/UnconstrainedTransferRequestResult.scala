@@ -12,16 +12,13 @@ trait UnconstrainedTransferRequestResult extends StObject {
 }
 object UnconstrainedTransferRequestResult {
   
-  @scala.inline
-  def apply(isUnconstrained: Boolean): UnconstrainedTransferRequestResult = {
+  inline def apply(isUnconstrained: Boolean): UnconstrainedTransferRequestResult = {
     val __obj = js.Dynamic.literal(isUnconstrained = isUnconstrained.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnconstrainedTransferRequestResult]
   }
   
-  @scala.inline
-  implicit class UnconstrainedTransferRequestResultMutableBuilder[Self <: UnconstrainedTransferRequestResult] (val x: Self) extends AnyVal {
+  extension [Self <: UnconstrainedTransferRequestResult](x: Self) {
     
-    @scala.inline
-    def setIsUnconstrained(value: Boolean): Self = StObject.set(x, "isUnconstrained", value.asInstanceOf[js.Any])
+    inline def setIsUnconstrained(value: Boolean): Self = StObject.set(x, "isUnconstrained", value.asInstanceOf[js.Any])
   }
 }

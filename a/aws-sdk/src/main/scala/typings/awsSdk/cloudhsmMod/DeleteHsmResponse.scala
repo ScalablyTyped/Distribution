@@ -13,16 +13,13 @@ trait DeleteHsmResponse extends StObject {
 }
 object DeleteHsmResponse {
   
-  @scala.inline
-  def apply(Status: String): DeleteHsmResponse = {
+  inline def apply(Status: String): DeleteHsmResponse = {
     val __obj = js.Dynamic.literal(Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteHsmResponse]
   }
   
-  @scala.inline
-  implicit class DeleteHsmResponseMutableBuilder[Self <: DeleteHsmResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteHsmResponse](x: Self) {
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

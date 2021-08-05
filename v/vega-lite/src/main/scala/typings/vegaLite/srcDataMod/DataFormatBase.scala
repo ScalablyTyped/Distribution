@@ -31,28 +31,21 @@ trait DataFormatBase extends StObject {
 }
 object DataFormatBase {
   
-  @scala.inline
-  def apply(): DataFormatBase = {
+  inline def apply(): DataFormatBase = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataFormatBase]
   }
   
-  @scala.inline
-  implicit class DataFormatBaseMutableBuilder[Self <: DataFormatBase] (val x: Self) extends AnyVal {
+  extension [Self <: DataFormatBase](x: Self) {
     
-    @scala.inline
-    def setParse(value: Parse): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+    inline def setParse(value: Parse): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParseNull: Self = StObject.set(x, "parse", null)
+    inline def setParseNull: Self = StObject.set(x, "parse", null)
     
-    @scala.inline
-    def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
+    inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
     
-    @scala.inline
-    def setType(value: csv | tsv | dsv | json | topojson): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: csv | tsv | dsv | json | topojson): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -35,8 +35,7 @@ trait XChainable
 }
 object XChainable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Predecessor: XChainable,
     Successor: XChainable,
     acquire: () => Unit,
@@ -51,25 +50,18 @@ object XChainable {
     __obj.asInstanceOf[XChainable]
   }
   
-  @scala.inline
-  implicit class XChainableMutableBuilder[Self <: XChainable] (val x: Self) extends AnyVal {
+  extension [Self <: XChainable](x: Self) {
     
-    @scala.inline
-    def setGetPredecessor(value: () => XChainable): Self = StObject.set(x, "getPredecessor", js.Any.fromFunction0(value))
+    inline def setGetPredecessor(value: () => XChainable): Self = StObject.set(x, "getPredecessor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSuccessor(value: () => XChainable): Self = StObject.set(x, "getSuccessor", js.Any.fromFunction0(value))
+    inline def setGetSuccessor(value: () => XChainable): Self = StObject.set(x, "getSuccessor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsChainable(value: XChainable => Boolean): Self = StObject.set(x, "isChainable", js.Any.fromFunction1(value))
+    inline def setIsChainable(value: XChainable => Boolean): Self = StObject.set(x, "isChainable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPredecessor(value: XChainable): Self = StObject.set(x, "Predecessor", value.asInstanceOf[js.Any])
+    inline def setPredecessor(value: XChainable): Self = StObject.set(x, "Predecessor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetSuccessor(value: XChainable => Unit): Self = StObject.set(x, "setSuccessor", js.Any.fromFunction1(value))
+    inline def setSetSuccessor(value: XChainable => Unit): Self = StObject.set(x, "setSuccessor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessor(value: XChainable): Self = StObject.set(x, "Successor", value.asInstanceOf[js.Any])
+    inline def setSuccessor(value: XChainable): Self = StObject.set(x, "Successor", value.asInstanceOf[js.Any])
   }
 }

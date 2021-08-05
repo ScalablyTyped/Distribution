@@ -33,38 +33,28 @@ object easing {
   }
   object IAbstract {
     
-    @scala.inline
-    def apply(): IAbstract = {
+    inline def apply(): IAbstract = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IAbstract]
     }
     
-    @scala.inline
-    implicit class IAbstractMutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
+    extension [Self <: IAbstract](x: Self) {
       
-      @scala.inline
-      def setGetStartTime(value: () => Double): Self = StObject.set(x, "getStartTime", js.Any.fromFunction0(value))
+      inline def setGetStartTime(value: () => Double): Self = StObject.set(x, "getStartTime", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStartTimeUndefined: Self = StObject.set(x, "getStartTime", js.undefined)
+      inline def setGetStartTimeUndefined: Self = StObject.set(x, "getStartTime", js.undefined)
       
-      @scala.inline
-      def setGetStartValue(value: () => Double): Self = StObject.set(x, "getStartValue", js.Any.fromFunction0(value))
+      inline def setGetStartValue(value: () => Double): Self = StObject.set(x, "getStartValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStartValueUndefined: Self = StObject.set(x, "getStartValue", js.undefined)
+      inline def setGetStartValueUndefined: Self = StObject.set(x, "getStartValue", js.undefined)
       
-      @scala.inline
-      def setSetStartTime(value: /* startTime */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setStartTime", js.Any.fromFunction1(value))
+      inline def setSetStartTime(value: /* startTime */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setStartTime", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetStartTimeUndefined: Self = StObject.set(x, "setStartTime", js.undefined)
+      inline def setSetStartTimeUndefined: Self = StObject.set(x, "setStartTime", js.undefined)
       
-      @scala.inline
-      def setSetStartValue(value: /* startValue */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setStartValue", js.Any.fromFunction1(value))
+      inline def setSetStartValue(value: /* startValue */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setStartValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetStartValueUndefined: Self = StObject.set(x, "setStartValue", js.undefined)
+      inline def setSetStartValueUndefined: Self = StObject.set(x, "setStartValue", js.undefined)
     }
   }
   
@@ -104,50 +94,36 @@ object easing {
   }
   object IBounce {
     
-    @scala.inline
-    def apply(): IBounce = {
+    inline def apply(): IBounce = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IBounce]
     }
     
-    @scala.inline
-    implicit class IBounceMutableBuilder[Self <: IBounce] (val x: Self) extends AnyVal {
+    extension [Self <: IBounce](x: Self) {
       
-      @scala.inline
-      def setGetAcceleration(value: () => Double): Self = StObject.set(x, "getAcceleration", js.Any.fromFunction0(value))
+      inline def setGetAcceleration(value: () => Double): Self = StObject.set(x, "getAcceleration", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAccelerationUndefined: Self = StObject.set(x, "getAcceleration", js.undefined)
+      inline def setGetAccelerationUndefined: Self = StObject.set(x, "getAcceleration", js.undefined)
       
-      @scala.inline
-      def setGetSpringTension(value: () => Double): Self = StObject.set(x, "getSpringTension", js.Any.fromFunction0(value))
+      inline def setGetSpringTension(value: () => Double): Self = StObject.set(x, "getSpringTension", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSpringTensionUndefined: Self = StObject.set(x, "getSpringTension", js.undefined)
+      inline def setGetSpringTensionUndefined: Self = StObject.set(x, "getSpringTension", js.undefined)
       
-      @scala.inline
-      def setGetStartVelocity(value: () => Double): Self = StObject.set(x, "getStartVelocity", js.Any.fromFunction0(value))
+      inline def setGetStartVelocity(value: () => Double): Self = StObject.set(x, "getStartVelocity", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStartVelocityUndefined: Self = StObject.set(x, "getStartVelocity", js.undefined)
+      inline def setGetStartVelocityUndefined: Self = StObject.set(x, "getStartVelocity", js.undefined)
       
-      @scala.inline
-      def setSetAcceleration(value: /* acceleration */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setAcceleration", js.Any.fromFunction1(value))
+      inline def setSetAcceleration(value: /* acceleration */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setAcceleration", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetAccelerationUndefined: Self = StObject.set(x, "setAcceleration", js.undefined)
+      inline def setSetAccelerationUndefined: Self = StObject.set(x, "setAcceleration", js.undefined)
       
-      @scala.inline
-      def setSetSpringTension(value: /* springTension */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setSpringTension", js.Any.fromFunction1(value))
+      inline def setSetSpringTension(value: /* springTension */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setSpringTension", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetSpringTensionUndefined: Self = StObject.set(x, "setSpringTension", js.undefined)
+      inline def setSetSpringTensionUndefined: Self = StObject.set(x, "setSpringTension", js.undefined)
       
-      @scala.inline
-      def setSetStartVelocity(value: /* startVelocity */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setStartVelocity", js.Any.fromFunction1(value))
+      inline def setSetStartVelocity(value: /* startVelocity */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setStartVelocity", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetStartVelocityUndefined: Self = StObject.set(x, "setStartVelocity", js.undefined)
+      inline def setSetStartVelocityUndefined: Self = StObject.set(x, "setStartVelocity", js.undefined)
     }
   }
   
@@ -229,110 +205,76 @@ object easing {
   }
   object IBoundMomentum {
     
-    @scala.inline
-    def apply(): IBoundMomentum = {
+    inline def apply(): IBoundMomentum = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IBoundMomentum]
     }
     
-    @scala.inline
-    implicit class IBoundMomentumMutableBuilder[Self <: IBoundMomentum] (val x: Self) extends AnyVal {
+    extension [Self <: IBoundMomentum](x: Self) {
       
-      @scala.inline
-      def setBounce(value: js.Any): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
+      inline def setBounce(value: js.Any): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBounceUndefined: Self = StObject.set(x, "bounce", js.undefined)
+      inline def setBounceUndefined: Self = StObject.set(x, "bounce", js.undefined)
       
-      @scala.inline
-      def setGetBounce(value: () => js.Any): Self = StObject.set(x, "getBounce", js.Any.fromFunction0(value))
+      inline def setGetBounce(value: () => js.Any): Self = StObject.set(x, "getBounce", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetBounceUndefined: Self = StObject.set(x, "getBounce", js.undefined)
+      inline def setGetBounceUndefined: Self = StObject.set(x, "getBounce", js.undefined)
       
-      @scala.inline
-      def setGetMaxMomentumValue(value: () => Double): Self = StObject.set(x, "getMaxMomentumValue", js.Any.fromFunction0(value))
+      inline def setGetMaxMomentumValue(value: () => Double): Self = StObject.set(x, "getMaxMomentumValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMaxMomentumValueUndefined: Self = StObject.set(x, "getMaxMomentumValue", js.undefined)
+      inline def setGetMaxMomentumValueUndefined: Self = StObject.set(x, "getMaxMomentumValue", js.undefined)
       
-      @scala.inline
-      def setGetMinMomentumValue(value: () => Double): Self = StObject.set(x, "getMinMomentumValue", js.Any.fromFunction0(value))
+      inline def setGetMinMomentumValue(value: () => Double): Self = StObject.set(x, "getMinMomentumValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMinMomentumValueUndefined: Self = StObject.set(x, "getMinMomentumValue", js.undefined)
+      inline def setGetMinMomentumValueUndefined: Self = StObject.set(x, "getMinMomentumValue", js.undefined)
       
-      @scala.inline
-      def setGetMinVelocity(value: () => Double): Self = StObject.set(x, "getMinVelocity", js.Any.fromFunction0(value))
+      inline def setGetMinVelocity(value: () => Double): Self = StObject.set(x, "getMinVelocity", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMinVelocityUndefined: Self = StObject.set(x, "getMinVelocity", js.undefined)
+      inline def setGetMinVelocityUndefined: Self = StObject.set(x, "getMinVelocity", js.undefined)
       
-      @scala.inline
-      def setGetMomentum(value: () => js.Any): Self = StObject.set(x, "getMomentum", js.Any.fromFunction0(value))
+      inline def setGetMomentum(value: () => js.Any): Self = StObject.set(x, "getMomentum", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMomentumUndefined: Self = StObject.set(x, "getMomentum", js.undefined)
+      inline def setGetMomentumUndefined: Self = StObject.set(x, "getMomentum", js.undefined)
       
-      @scala.inline
-      def setGetStartVelocity(value: () => Double): Self = StObject.set(x, "getStartVelocity", js.Any.fromFunction0(value))
+      inline def setGetStartVelocity(value: () => Double): Self = StObject.set(x, "getStartVelocity", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStartVelocityUndefined: Self = StObject.set(x, "getStartVelocity", js.undefined)
+      inline def setGetStartVelocityUndefined: Self = StObject.set(x, "getStartVelocity", js.undefined)
       
-      @scala.inline
-      def setMinVelocity(value: Double): Self = StObject.set(x, "minVelocity", value.asInstanceOf[js.Any])
+      inline def setMinVelocity(value: Double): Self = StObject.set(x, "minVelocity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinVelocityUndefined: Self = StObject.set(x, "minVelocity", js.undefined)
+      inline def setMinVelocityUndefined: Self = StObject.set(x, "minVelocity", js.undefined)
       
-      @scala.inline
-      def setMomentum(value: js.Any): Self = StObject.set(x, "momentum", value.asInstanceOf[js.Any])
+      inline def setMomentum(value: js.Any): Self = StObject.set(x, "momentum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMomentumUndefined: Self = StObject.set(x, "momentum", js.undefined)
+      inline def setMomentumUndefined: Self = StObject.set(x, "momentum", js.undefined)
       
-      @scala.inline
-      def setSetBounce(value: /* bounce */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setBounce", js.Any.fromFunction1(value))
+      inline def setSetBounce(value: /* bounce */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setBounce", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetBounceUndefined: Self = StObject.set(x, "setBounce", js.undefined)
+      inline def setSetBounceUndefined: Self = StObject.set(x, "setBounce", js.undefined)
       
-      @scala.inline
-      def setSetMaxMomentumValue(value: /* maxMomentumValue */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMaxMomentumValue", js.Any.fromFunction1(value))
+      inline def setSetMaxMomentumValue(value: /* maxMomentumValue */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMaxMomentumValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMaxMomentumValueUndefined: Self = StObject.set(x, "setMaxMomentumValue", js.undefined)
+      inline def setSetMaxMomentumValueUndefined: Self = StObject.set(x, "setMaxMomentumValue", js.undefined)
       
-      @scala.inline
-      def setSetMinMomentumValue(value: /* minMomentumValue */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMinMomentumValue", js.Any.fromFunction1(value))
+      inline def setSetMinMomentumValue(value: /* minMomentumValue */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMinMomentumValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMinMomentumValueUndefined: Self = StObject.set(x, "setMinMomentumValue", js.undefined)
+      inline def setSetMinMomentumValueUndefined: Self = StObject.set(x, "setMinMomentumValue", js.undefined)
       
-      @scala.inline
-      def setSetMinVelocity(value: /* minVelocity */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMinVelocity", js.Any.fromFunction1(value))
+      inline def setSetMinVelocity(value: /* minVelocity */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setMinVelocity", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMinVelocityUndefined: Self = StObject.set(x, "setMinVelocity", js.undefined)
+      inline def setSetMinVelocityUndefined: Self = StObject.set(x, "setMinVelocity", js.undefined)
       
-      @scala.inline
-      def setSetMomentum(value: /* momentum */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMomentum", js.Any.fromFunction1(value))
+      inline def setSetMomentum(value: /* momentum */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setMomentum", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetMomentumUndefined: Self = StObject.set(x, "setMomentum", js.undefined)
+      inline def setSetMomentumUndefined: Self = StObject.set(x, "setMomentum", js.undefined)
       
-      @scala.inline
-      def setSetStartVelocity(value: /* startVelocity */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setStartVelocity", js.Any.fromFunction1(value))
+      inline def setSetStartVelocity(value: /* startVelocity */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setStartVelocity", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetStartVelocityUndefined: Self = StObject.set(x, "setStartVelocity", js.undefined)
+      inline def setSetStartVelocityUndefined: Self = StObject.set(x, "setStartVelocity", js.undefined)
       
-      @scala.inline
-      def setStartVelocity(value: Double): Self = StObject.set(x, "startVelocity", value.asInstanceOf[js.Any])
+      inline def setStartVelocity(value: Double): Self = StObject.set(x, "startVelocity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartVelocityUndefined: Self = StObject.set(x, "startVelocity", js.undefined)
+      inline def setStartVelocityUndefined: Self = StObject.set(x, "startVelocity", js.undefined)
     }
   }
   
@@ -352,26 +294,20 @@ object easing {
   }
   object IEaseIn {
     
-    @scala.inline
-    def apply(): IEaseIn = {
+    inline def apply(): IEaseIn = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IEaseIn]
     }
     
-    @scala.inline
-    implicit class IEaseInMutableBuilder[Self <: IEaseIn] (val x: Self) extends AnyVal {
+    extension [Self <: IEaseIn](x: Self) {
       
-      @scala.inline
-      def setGetExponent(value: () => Double): Self = StObject.set(x, "getExponent", js.Any.fromFunction0(value))
+      inline def setGetExponent(value: () => Double): Self = StObject.set(x, "getExponent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetExponentUndefined: Self = StObject.set(x, "getExponent", js.undefined)
+      inline def setGetExponentUndefined: Self = StObject.set(x, "getExponent", js.undefined)
       
-      @scala.inline
-      def setSetExponent(value: /* exponent */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setExponent", js.Any.fromFunction1(value))
+      inline def setSetExponent(value: /* exponent */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setExponent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetExponentUndefined: Self = StObject.set(x, "setExponent", js.undefined)
+      inline def setSetExponentUndefined: Self = StObject.set(x, "setExponent", js.undefined)
     }
   }
   
@@ -391,26 +327,20 @@ object easing {
   }
   object IEaseOut {
     
-    @scala.inline
-    def apply(): IEaseOut = {
+    inline def apply(): IEaseOut = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IEaseOut]
     }
     
-    @scala.inline
-    implicit class IEaseOutMutableBuilder[Self <: IEaseOut] (val x: Self) extends AnyVal {
+    extension [Self <: IEaseOut](x: Self) {
       
-      @scala.inline
-      def setGetExponent(value: () => Double): Self = StObject.set(x, "getExponent", js.Any.fromFunction0(value))
+      inline def setGetExponent(value: () => Double): Self = StObject.set(x, "getExponent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetExponentUndefined: Self = StObject.set(x, "getExponent", js.undefined)
+      inline def setGetExponentUndefined: Self = StObject.set(x, "getExponent", js.undefined)
       
-      @scala.inline
-      def setSetExponent(value: /* exponent */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setExponent", js.Any.fromFunction1(value))
+      inline def setSetExponent(value: /* exponent */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setExponent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetExponentUndefined: Self = StObject.set(x, "setExponent", js.undefined)
+      inline def setSetExponentUndefined: Self = StObject.set(x, "setExponent", js.undefined)
     }
   }
   
@@ -440,38 +370,28 @@ object easing {
   }
   object ILinear {
     
-    @scala.inline
-    def apply(): ILinear = {
+    inline def apply(): ILinear = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ILinear]
     }
     
-    @scala.inline
-    implicit class ILinearMutableBuilder[Self <: ILinear] (val x: Self) extends AnyVal {
+    extension [Self <: ILinear](x: Self) {
       
-      @scala.inline
-      def setGetDuration(value: () => Double): Self = StObject.set(x, "getDuration", js.Any.fromFunction0(value))
+      inline def setGetDuration(value: () => Double): Self = StObject.set(x, "getDuration", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDurationUndefined: Self = StObject.set(x, "getDuration", js.undefined)
+      inline def setGetDurationUndefined: Self = StObject.set(x, "getDuration", js.undefined)
       
-      @scala.inline
-      def setGetEndValue(value: () => Double): Self = StObject.set(x, "getEndValue", js.Any.fromFunction0(value))
+      inline def setGetEndValue(value: () => Double): Self = StObject.set(x, "getEndValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetEndValueUndefined: Self = StObject.set(x, "getEndValue", js.undefined)
+      inline def setGetEndValueUndefined: Self = StObject.set(x, "getEndValue", js.undefined)
       
-      @scala.inline
-      def setSetDuration(value: /* duration */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setDuration", js.Any.fromFunction1(value))
+      inline def setSetDuration(value: /* duration */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setDuration", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetDurationUndefined: Self = StObject.set(x, "setDuration", js.undefined)
+      inline def setSetDurationUndefined: Self = StObject.set(x, "setDuration", js.undefined)
       
-      @scala.inline
-      def setSetEndValue(value: /* endValue */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setEndValue", js.Any.fromFunction1(value))
+      inline def setSetEndValue(value: /* endValue */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setEndValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetEndValueUndefined: Self = StObject.set(x, "setEndValue", js.undefined)
+      inline def setSetEndValueUndefined: Self = StObject.set(x, "setEndValue", js.undefined)
     }
   }
   
@@ -511,50 +431,36 @@ object easing {
   }
   object IMomentum {
     
-    @scala.inline
-    def apply(): IMomentum = {
+    inline def apply(): IMomentum = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IMomentum]
     }
     
-    @scala.inline
-    implicit class IMomentumMutableBuilder[Self <: IMomentum] (val x: Self) extends AnyVal {
+    extension [Self <: IMomentum](x: Self) {
       
-      @scala.inline
-      def setGetAcceleration(value: () => Double): Self = StObject.set(x, "getAcceleration", js.Any.fromFunction0(value))
+      inline def setGetAcceleration(value: () => Double): Self = StObject.set(x, "getAcceleration", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAccelerationUndefined: Self = StObject.set(x, "getAcceleration", js.undefined)
+      inline def setGetAccelerationUndefined: Self = StObject.set(x, "getAcceleration", js.undefined)
       
-      @scala.inline
-      def setGetFriction(value: () => Double): Self = StObject.set(x, "getFriction", js.Any.fromFunction0(value))
+      inline def setGetFriction(value: () => Double): Self = StObject.set(x, "getFriction", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFrictionUndefined: Self = StObject.set(x, "getFriction", js.undefined)
+      inline def setGetFrictionUndefined: Self = StObject.set(x, "getFriction", js.undefined)
       
-      @scala.inline
-      def setGetStartVelocity(value: () => Double): Self = StObject.set(x, "getStartVelocity", js.Any.fromFunction0(value))
+      inline def setGetStartVelocity(value: () => Double): Self = StObject.set(x, "getStartVelocity", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStartVelocityUndefined: Self = StObject.set(x, "getStartVelocity", js.undefined)
+      inline def setGetStartVelocityUndefined: Self = StObject.set(x, "getStartVelocity", js.undefined)
       
-      @scala.inline
-      def setSetAcceleration(value: /* acceleration */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setAcceleration", js.Any.fromFunction1(value))
+      inline def setSetAcceleration(value: /* acceleration */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setAcceleration", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetAccelerationUndefined: Self = StObject.set(x, "setAcceleration", js.undefined)
+      inline def setSetAccelerationUndefined: Self = StObject.set(x, "setAcceleration", js.undefined)
       
-      @scala.inline
-      def setSetFriction(value: /* friction */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setFriction", js.Any.fromFunction1(value))
+      inline def setSetFriction(value: /* friction */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setFriction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetFrictionUndefined: Self = StObject.set(x, "setFriction", js.undefined)
+      inline def setSetFrictionUndefined: Self = StObject.set(x, "setFriction", js.undefined)
       
-      @scala.inline
-      def setSetStartVelocity(value: /* startVelocity */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setStartVelocity", js.Any.fromFunction1(value))
+      inline def setSetStartVelocity(value: /* startVelocity */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setStartVelocity", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetStartVelocityUndefined: Self = StObject.set(x, "setStartVelocity", js.undefined)
+      inline def setSetStartVelocityUndefined: Self = StObject.set(x, "setStartVelocity", js.undefined)
     }
   }
 }

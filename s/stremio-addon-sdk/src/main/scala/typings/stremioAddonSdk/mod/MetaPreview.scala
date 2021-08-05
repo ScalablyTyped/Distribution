@@ -74,53 +74,38 @@ trait MetaPreview extends StObject {
 }
 object MetaPreview {
   
-  @scala.inline
-  def apply(id: String, name: String, `type`: ContentType): MetaPreview = {
+  inline def apply(id: String, name: String, `type`: ContentType): MetaPreview = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MetaPreview]
   }
   
-  @scala.inline
-  implicit class MetaPreviewMutableBuilder[Self <: MetaPreview] (val x: Self) extends AnyVal {
+  extension [Self <: MetaPreview](x: Self) {
     
-    @scala.inline
-    def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogo(value: String): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
+    inline def setLogo(value: String): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
+    inline def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoster(value: String): Self = StObject.set(x, "poster", value.asInstanceOf[js.Any])
+    inline def setPoster(value: String): Self = StObject.set(x, "poster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosterShape(value: square | regular | landscape): Self = StObject.set(x, "posterShape", value.asInstanceOf[js.Any])
+    inline def setPosterShape(value: square | regular | landscape): Self = StObject.set(x, "posterShape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosterShapeUndefined: Self = StObject.set(x, "posterShape", js.undefined)
+    inline def setPosterShapeUndefined: Self = StObject.set(x, "posterShape", js.undefined)
     
-    @scala.inline
-    def setPosterUndefined: Self = StObject.set(x, "poster", js.undefined)
+    inline def setPosterUndefined: Self = StObject.set(x, "poster", js.undefined)
     
-    @scala.inline
-    def setType(value: ContentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ContentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

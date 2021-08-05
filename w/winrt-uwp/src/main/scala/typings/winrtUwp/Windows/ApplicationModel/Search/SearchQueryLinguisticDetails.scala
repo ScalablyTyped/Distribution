@@ -19,8 +19,7 @@ trait SearchQueryLinguisticDetails extends StObject {
 }
 object SearchQueryLinguisticDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     queryTextAlternatives: IVectorView[String],
     queryTextCompositionLength: Double,
     queryTextCompositionStart: Double
@@ -29,16 +28,12 @@ object SearchQueryLinguisticDetails {
     __obj.asInstanceOf[SearchQueryLinguisticDetails]
   }
   
-  @scala.inline
-  implicit class SearchQueryLinguisticDetailsMutableBuilder[Self <: SearchQueryLinguisticDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SearchQueryLinguisticDetails](x: Self) {
     
-    @scala.inline
-    def setQueryTextAlternatives(value: IVectorView[String]): Self = StObject.set(x, "queryTextAlternatives", value.asInstanceOf[js.Any])
+    inline def setQueryTextAlternatives(value: IVectorView[String]): Self = StObject.set(x, "queryTextAlternatives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryTextCompositionLength(value: Double): Self = StObject.set(x, "queryTextCompositionLength", value.asInstanceOf[js.Any])
+    inline def setQueryTextCompositionLength(value: Double): Self = StObject.set(x, "queryTextCompositionLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryTextCompositionStart(value: Double): Self = StObject.set(x, "queryTextCompositionStart", value.asInstanceOf[js.Any])
+    inline def setQueryTextCompositionStart(value: Double): Self = StObject.set(x, "queryTextCompositionStart", value.asInstanceOf[js.Any])
   }
 }

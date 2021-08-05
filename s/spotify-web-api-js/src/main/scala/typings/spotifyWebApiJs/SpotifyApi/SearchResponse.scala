@@ -32,49 +32,35 @@ trait SearchResponse extends StObject {
 }
 object SearchResponse {
   
-  @scala.inline
-  def apply(): SearchResponse = {
+  inline def apply(): SearchResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchResponse]
   }
   
-  @scala.inline
-  implicit class SearchResponseMutableBuilder[Self <: SearchResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SearchResponse](x: Self) {
     
-    @scala.inline
-    def setAlbums(value: PagingObject[AlbumObjectSimplified]): Self = StObject.set(x, "albums", value.asInstanceOf[js.Any])
+    inline def setAlbums(value: PagingObject[AlbumObjectSimplified]): Self = StObject.set(x, "albums", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlbumsUndefined: Self = StObject.set(x, "albums", js.undefined)
+    inline def setAlbumsUndefined: Self = StObject.set(x, "albums", js.undefined)
     
-    @scala.inline
-    def setArtists(value: PagingObject[ArtistObjectFull]): Self = StObject.set(x, "artists", value.asInstanceOf[js.Any])
+    inline def setArtists(value: PagingObject[ArtistObjectFull]): Self = StObject.set(x, "artists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtistsUndefined: Self = StObject.set(x, "artists", js.undefined)
+    inline def setArtistsUndefined: Self = StObject.set(x, "artists", js.undefined)
     
-    @scala.inline
-    def setEpisodes(value: PagingObject[EpisodeObjectSimplified]): Self = StObject.set(x, "episodes", value.asInstanceOf[js.Any])
+    inline def setEpisodes(value: PagingObject[EpisodeObjectSimplified]): Self = StObject.set(x, "episodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEpisodesUndefined: Self = StObject.set(x, "episodes", js.undefined)
+    inline def setEpisodesUndefined: Self = StObject.set(x, "episodes", js.undefined)
     
-    @scala.inline
-    def setPlaylists(value: PagingObject[PlaylistObjectSimplified]): Self = StObject.set(x, "playlists", value.asInstanceOf[js.Any])
+    inline def setPlaylists(value: PagingObject[PlaylistObjectSimplified]): Self = StObject.set(x, "playlists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaylistsUndefined: Self = StObject.set(x, "playlists", js.undefined)
+    inline def setPlaylistsUndefined: Self = StObject.set(x, "playlists", js.undefined)
     
-    @scala.inline
-    def setShows(value: PagingObject[ShowObjectSimplified]): Self = StObject.set(x, "shows", value.asInstanceOf[js.Any])
+    inline def setShows(value: PagingObject[ShowObjectSimplified]): Self = StObject.set(x, "shows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowsUndefined: Self = StObject.set(x, "shows", js.undefined)
+    inline def setShowsUndefined: Self = StObject.set(x, "shows", js.undefined)
     
-    @scala.inline
-    def setTracks(value: PagingObject[TrackObjectFull]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
+    inline def setTracks(value: PagingObject[TrackObjectFull]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTracksUndefined: Self = StObject.set(x, "tracks", js.undefined)
+    inline def setTracksUndefined: Self = StObject.set(x, "tracks", js.undefined)
   }
 }

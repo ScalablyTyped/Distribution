@@ -19,11 +19,9 @@ object useOnPreventRemoveMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasGetStateEmitterBeforeRemoveListeners: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasGetStateEmitterBeforeRemoveListeners.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(hasGetStateEmitterBeforeRemoveListeners: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasGetStateEmitterBeforeRemoveListeners.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def shouldPreventRemove(
+  inline def shouldPreventRemove(
     emitter: NavigationEventEmitter[EventMapCore[js.Any]],
     beforeRemoveListeners: Record[String, js.UndefOr[ChildBeforeRemoveListener]],
     currentRoutes: js.Array[`10`],
@@ -41,8 +39,7 @@ object useOnPreventRemoveMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       beforeRemoveListeners: Record[String, js.UndefOr[ChildBeforeRemoveListener]],
       emitter: NavigationEventEmitter[EventMapCore[js.Any]],
       getState: () => NavigationState[ParamListBase]
@@ -51,17 +48,13 @@ object useOnPreventRemoveMod {
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBeforeRemoveListeners(value: Record[String, js.UndefOr[ChildBeforeRemoveListener]]): Self = StObject.set(x, "beforeRemoveListeners", value.asInstanceOf[js.Any])
+      inline def setBeforeRemoveListeners(value: Record[String, js.UndefOr[ChildBeforeRemoveListener]]): Self = StObject.set(x, "beforeRemoveListeners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmitter(value: NavigationEventEmitter[EventMapCore[js.Any]]): Self = StObject.set(x, "emitter", value.asInstanceOf[js.Any])
+      inline def setEmitter(value: NavigationEventEmitter[EventMapCore[js.Any]]): Self = StObject.set(x, "emitter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetState(value: () => NavigationState[ParamListBase]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+      inline def setGetState(value: () => NavigationState[ParamListBase]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
     }
   }
 }

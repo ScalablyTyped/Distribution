@@ -54,50 +54,36 @@ object mod {
   }
   object UserOptionsType {
     
-    @scala.inline
-    def apply(): UserOptionsType = {
+    inline def apply(): UserOptionsType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UserOptionsType]
     }
     
-    @scala.inline
-    implicit class UserOptionsTypeMutableBuilder[Self <: UserOptionsType] (val x: Self) extends AnyVal {
+    extension [Self <: UserOptionsType](x: Self) {
       
-      @scala.inline
-      def setAtomicReplace(value: Boolean): Self = StObject.set(x, "atomicReplace", value.asInstanceOf[js.Any])
+      inline def setAtomicReplace(value: Boolean): Self = StObject.set(x, "atomicReplace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAtomicReplaceUndefined: Self = StObject.set(x, "atomicReplace", js.undefined)
+      inline def setAtomicReplaceUndefined: Self = StObject.set(x, "atomicReplace", js.undefined)
       
-      @scala.inline
-      def setExitOnErrors(value: Boolean): Self = StObject.set(x, "exitOnErrors", value.asInstanceOf[js.Any])
+      inline def setExitOnErrors(value: Boolean): Self = StObject.set(x, "exitOnErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExitOnErrorsUndefined: Self = StObject.set(x, "exitOnErrors", js.undefined)
+      inline def setExitOnErrorsUndefined: Self = StObject.set(x, "exitOnErrors", js.undefined)
       
-      @scala.inline
-      def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+      inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
+      inline def setForceUndefined: Self = StObject.set(x, "force", js.undefined)
       
-      @scala.inline
-      def setLog(value: Boolean): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: Boolean): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+      inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
       
-      @scala.inline
-      def setTest(value: RegExp): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+      inline def setTest(value: RegExp): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
+      inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
       
-      @scala.inline
-      def setUseHashIndex(value: Boolean): Self = StObject.set(x, "useHashIndex", value.asInstanceOf[js.Any])
+      inline def setUseHashIndex(value: Boolean): Self = StObject.set(x, "useHashIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseHashIndexUndefined: Self = StObject.set(x, "useHashIndex", js.undefined)
+      inline def setUseHashIndexUndefined: Self = StObject.set(x, "useHashIndex", js.undefined)
     }
   }
   

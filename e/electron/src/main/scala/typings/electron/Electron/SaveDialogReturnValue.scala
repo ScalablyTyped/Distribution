@@ -27,28 +27,21 @@ trait SaveDialogReturnValue extends StObject {
 }
 object SaveDialogReturnValue {
   
-  @scala.inline
-  def apply(canceled: Boolean): SaveDialogReturnValue = {
+  inline def apply(canceled: Boolean): SaveDialogReturnValue = {
     val __obj = js.Dynamic.literal(canceled = canceled.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaveDialogReturnValue]
   }
   
-  @scala.inline
-  implicit class SaveDialogReturnValueMutableBuilder[Self <: SaveDialogReturnValue] (val x: Self) extends AnyVal {
+  extension [Self <: SaveDialogReturnValue](x: Self) {
     
-    @scala.inline
-    def setBookmark(value: String): Self = StObject.set(x, "bookmark", value.asInstanceOf[js.Any])
+    inline def setBookmark(value: String): Self = StObject.set(x, "bookmark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBookmarkUndefined: Self = StObject.set(x, "bookmark", js.undefined)
+    inline def setBookmarkUndefined: Self = StObject.set(x, "bookmark", js.undefined)
     
-    @scala.inline
-    def setCanceled(value: Boolean): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
+    inline def setCanceled(value: Boolean): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
+    inline def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
   }
 }

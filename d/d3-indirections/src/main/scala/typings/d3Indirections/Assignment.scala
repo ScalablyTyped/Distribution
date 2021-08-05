@@ -16,14 +16,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Assignment extends StObject
 object Assignment {
   
-  @scala.inline
-  def ListAssignment(resourceIndex: Double, uid: String): typings.d3Indirections.ListAssignment = {
+  inline def ListAssignment(resourceIndex: Double, uid: String): typings.d3Indirections.ListAssignment = {
     val __obj = js.Dynamic.literal(resourceIndex = resourceIndex.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.d3Indirections.ListAssignment]
   }
   
-  @scala.inline
-  def ManualAssignment(resourceUid: String, uid: String): typings.d3Indirections.ManualAssignment = {
+  inline def ManualAssignment(resourceUid: String, uid: String): typings.d3Indirections.ManualAssignment = {
     val __obj = js.Dynamic.literal(resourceUid = resourceUid.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.d3Indirections.ManualAssignment]
   }

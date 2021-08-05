@@ -18,20 +18,16 @@ object google {
     }
     object DocsUploadView {
       
-      @scala.inline
-      def apply(setIncludeFolders: Boolean => DocsUploadView, setParent: String => DocsUploadView): DocsUploadView = {
+      inline def apply(setIncludeFolders: Boolean => DocsUploadView, setParent: String => DocsUploadView): DocsUploadView = {
         val __obj = js.Dynamic.literal(setIncludeFolders = js.Any.fromFunction1(setIncludeFolders), setParent = js.Any.fromFunction1(setParent))
         __obj.asInstanceOf[DocsUploadView]
       }
       
-      @scala.inline
-      implicit class DocsUploadViewMutableBuilder[Self <: DocsUploadView] (val x: Self) extends AnyVal {
+      extension [Self <: DocsUploadView](x: Self) {
         
-        @scala.inline
-        def setSetIncludeFolders(value: Boolean => DocsUploadView): Self = StObject.set(x, "setIncludeFolders", js.Any.fromFunction1(value))
+        inline def setSetIncludeFolders(value: Boolean => DocsUploadView): Self = StObject.set(x, "setIncludeFolders", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetParent(value: String => DocsUploadView): Self = StObject.set(x, "setParent", js.Any.fromFunction1(value))
+        inline def setSetParent(value: String => DocsUploadView): Self = StObject.set(x, "setParent", js.Any.fromFunction1(value))
       }
     }
     
@@ -78,8 +74,7 @@ object google {
     }
     object Picker {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         dispose: () => Unit,
         isVisible: () => Boolean,
         setCallback: js.Function => Picker,
@@ -90,23 +85,17 @@ object google {
         __obj.asInstanceOf[Picker]
       }
       
-      @scala.inline
-      implicit class PickerMutableBuilder[Self <: Picker] (val x: Self) extends AnyVal {
+      extension [Self <: Picker](x: Self) {
         
-        @scala.inline
-        def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+        inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
+        inline def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setSetCallback(value: js.Function => Picker): Self = StObject.set(x, "setCallback", js.Any.fromFunction1(value))
+        inline def setSetCallback(value: js.Function => Picker): Self = StObject.set(x, "setCallback", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetRelayUrl(value: String => Picker): Self = StObject.set(x, "setRelayUrl", js.Any.fromFunction1(value))
+        inline def setSetRelayUrl(value: String => Picker): Self = StObject.set(x, "setRelayUrl", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetVisible(value: Boolean => Picker): Self = StObject.set(x, "setVisible", js.Any.fromFunction1(value))
+        inline def setSetVisible(value: Boolean => Picker): Self = StObject.set(x, "setVisible", js.Any.fromFunction1(value))
       }
     }
     
@@ -183,8 +172,7 @@ object google {
     }
     object PickerBuilder {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         addView: js.Any => PickerBuilder,
         addViewGroup: js.Any => PickerBuilder,
         build: () => Picker,
@@ -213,77 +201,53 @@ object google {
         __obj.asInstanceOf[PickerBuilder]
       }
       
-      @scala.inline
-      implicit class PickerBuilderMutableBuilder[Self <: PickerBuilder] (val x: Self) extends AnyVal {
+      extension [Self <: PickerBuilder](x: Self) {
         
-        @scala.inline
-        def setAddView(value: js.Any => PickerBuilder): Self = StObject.set(x, "addView", js.Any.fromFunction1(value))
+        inline def setAddView(value: js.Any => PickerBuilder): Self = StObject.set(x, "addView", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setAddViewGroup(value: js.Any => PickerBuilder): Self = StObject.set(x, "addViewGroup", js.Any.fromFunction1(value))
+        inline def setAddViewGroup(value: js.Any => PickerBuilder): Self = StObject.set(x, "addViewGroup", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setBuild(value: () => Picker): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
+        inline def setBuild(value: () => Picker): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setDisableFeature(value: String => PickerBuilder): Self = StObject.set(x, "disableFeature", js.Any.fromFunction1(value))
+        inline def setDisableFeature(value: String => PickerBuilder): Self = StObject.set(x, "disableFeature", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setEnableFeature(value: String => PickerBuilder): Self = StObject.set(x, "enableFeature", js.Any.fromFunction1(value))
+        inline def setEnableFeature(value: String => PickerBuilder): Self = StObject.set(x, "enableFeature", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setGetRelayUrl(value: () => String): Self = StObject.set(x, "getRelayUrl", js.Any.fromFunction0(value))
+        inline def setGetRelayUrl(value: () => String): Self = StObject.set(x, "getRelayUrl", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
+        inline def setGetTitle(value: () => String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setHideTitleBar(value: () => PickerBuilder): Self = StObject.set(x, "hideTitleBar", js.Any.fromFunction0(value))
+        inline def setHideTitleBar(value: () => PickerBuilder): Self = StObject.set(x, "hideTitleBar", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setIsFeatureEnabled(value: String => Boolean): Self = StObject.set(x, "isFeatureEnabled", js.Any.fromFunction1(value))
+        inline def setIsFeatureEnabled(value: String => Boolean): Self = StObject.set(x, "isFeatureEnabled", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetAppId(value: String => PickerBuilder): Self = StObject.set(x, "setAppId", js.Any.fromFunction1(value))
+        inline def setSetAppId(value: String => PickerBuilder): Self = StObject.set(x, "setAppId", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetCallback(value: js.Function => PickerBuilder): Self = StObject.set(x, "setCallback", js.Any.fromFunction1(value))
+        inline def setSetCallback(value: js.Function => PickerBuilder): Self = StObject.set(x, "setCallback", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetDeveloperKey(value: String => PickerBuilder): Self = StObject.set(x, "setDeveloperKey", js.Any.fromFunction1(value))
+        inline def setSetDeveloperKey(value: String => PickerBuilder): Self = StObject.set(x, "setDeveloperKey", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetDocument(value: String => PickerBuilder): Self = StObject.set(x, "setDocument", js.Any.fromFunction1(value))
+        inline def setSetDocument(value: String => PickerBuilder): Self = StObject.set(x, "setDocument", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetLocale(value: String => PickerBuilder): Self = StObject.set(x, "setLocale", js.Any.fromFunction1(value))
+        inline def setSetLocale(value: String => PickerBuilder): Self = StObject.set(x, "setLocale", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetMaxItems(value: Double => PickerBuilder): Self = StObject.set(x, "setMaxItems", js.Any.fromFunction1(value))
+        inline def setSetMaxItems(value: Double => PickerBuilder): Self = StObject.set(x, "setMaxItems", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetOAuthToken(value: String => PickerBuilder): Self = StObject.set(x, "setOAuthToken", js.Any.fromFunction1(value))
+        inline def setSetOAuthToken(value: String => PickerBuilder): Self = StObject.set(x, "setOAuthToken", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetOrigin(value: String => PickerBuilder): Self = StObject.set(x, "setOrigin", js.Any.fromFunction1(value))
+        inline def setSetOrigin(value: String => PickerBuilder): Self = StObject.set(x, "setOrigin", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetRelayUrl(value: String => PickerBuilder): Self = StObject.set(x, "setRelayUrl", js.Any.fromFunction1(value))
+        inline def setSetRelayUrl(value: String => PickerBuilder): Self = StObject.set(x, "setRelayUrl", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetSelectableMimeTypes(value: String => PickerBuilder): Self = StObject.set(x, "setSelectableMimeTypes", js.Any.fromFunction1(value))
+        inline def setSetSelectableMimeTypes(value: String => PickerBuilder): Self = StObject.set(x, "setSelectableMimeTypes", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetSize(value: (Double, Double) => PickerBuilder): Self = StObject.set(x, "setSize", js.Any.fromFunction2(value))
+        inline def setSetSize(value: (Double, Double) => PickerBuilder): Self = StObject.set(x, "setSize", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setSetTitle(value: String => PickerBuilder): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
+        inline def setSetTitle(value: String => PickerBuilder): Self = StObject.set(x, "setTitle", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetUploadToAlbumId(value: String => PickerBuilder): Self = StObject.set(x, "setUploadToAlbumId", js.Any.fromFunction1(value))
+        inline def setSetUploadToAlbumId(value: String => PickerBuilder): Self = StObject.set(x, "setUploadToAlbumId", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setToUri(value: () => String): Self = StObject.set(x, "toUri", js.Any.fromFunction0(value))
+        inline def setToUri(value: () => String): Self = StObject.set(x, "toUri", js.Any.fromFunction0(value))
       }
     }
   }

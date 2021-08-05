@@ -152,8 +152,7 @@ trait XWizard
 }
 object XWizard {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CurrentPage: XWizardPage,
     DialogWindow: XWindow,
     HelpURL: String,
@@ -177,46 +176,32 @@ object XWizard {
     __obj.asInstanceOf[XWizard]
   }
   
-  @scala.inline
-  implicit class XWizardMutableBuilder[Self <: XWizard] (val x: Self) extends AnyVal {
+  extension [Self <: XWizard](x: Self) {
     
-    @scala.inline
-    def setActivatePath(value: (Double, Boolean) => Unit): Self = StObject.set(x, "activatePath", js.Any.fromFunction2(value))
+    inline def setActivatePath(value: (Double, Boolean) => Unit): Self = StObject.set(x, "activatePath", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAdvanceTo(value: Double => Boolean): Self = StObject.set(x, "advanceTo", js.Any.fromFunction1(value))
+    inline def setAdvanceTo(value: Double => Boolean): Self = StObject.set(x, "advanceTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCurrentPage(value: XWizardPage): Self = StObject.set(x, "CurrentPage", value.asInstanceOf[js.Any])
+    inline def setCurrentPage(value: XWizardPage): Self = StObject.set(x, "CurrentPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialogWindow(value: XWindow): Self = StObject.set(x, "DialogWindow", value.asInstanceOf[js.Any])
+    inline def setDialogWindow(value: XWindow): Self = StObject.set(x, "DialogWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableButton(value: (Double, Boolean) => Unit): Self = StObject.set(x, "enableButton", js.Any.fromFunction2(value))
+    inline def setEnableButton(value: (Double, Boolean) => Unit): Self = StObject.set(x, "enableButton", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEnablePage(value: (Double, Boolean) => Unit): Self = StObject.set(x, "enablePage", js.Any.fromFunction2(value))
+    inline def setEnablePage(value: (Double, Boolean) => Unit): Self = StObject.set(x, "enablePage", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetCurrentPage(value: () => XWizardPage): Self = StObject.set(x, "getCurrentPage", js.Any.fromFunction0(value))
+    inline def setGetCurrentPage(value: () => XWizardPage): Self = StObject.set(x, "getCurrentPage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGoBackTo(value: Double => Boolean): Self = StObject.set(x, "goBackTo", js.Any.fromFunction1(value))
+    inline def setGoBackTo(value: Double => Boolean): Self = StObject.set(x, "goBackTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHelpURL(value: String): Self = StObject.set(x, "HelpURL", value.asInstanceOf[js.Any])
+    inline def setHelpURL(value: String): Self = StObject.set(x, "HelpURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetDefaultButton(value: Double => Unit): Self = StObject.set(x, "setDefaultButton", js.Any.fromFunction1(value))
+    inline def setSetDefaultButton(value: Double => Unit): Self = StObject.set(x, "setDefaultButton", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTravelNext(value: () => Boolean): Self = StObject.set(x, "travelNext", js.Any.fromFunction0(value))
+    inline def setTravelNext(value: () => Boolean): Self = StObject.set(x, "travelNext", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTravelPrevious(value: () => Boolean): Self = StObject.set(x, "travelPrevious", js.Any.fromFunction0(value))
+    inline def setTravelPrevious(value: () => Boolean): Self = StObject.set(x, "travelPrevious", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUpdateTravelUI(value: () => Unit): Self = StObject.set(x, "updateTravelUI", js.Any.fromFunction0(value))
+    inline def setUpdateTravelUI(value: () => Unit): Self = StObject.set(x, "updateTravelUI", js.Any.fromFunction0(value))
   }
 }

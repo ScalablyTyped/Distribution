@@ -23,31 +23,23 @@ trait GetSAMLProviderResponse extends StObject {
 }
 object GetSAMLProviderResponse {
   
-  @scala.inline
-  def apply(): GetSAMLProviderResponse = {
+  inline def apply(): GetSAMLProviderResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSAMLProviderResponse]
   }
   
-  @scala.inline
-  implicit class GetSAMLProviderResponseMutableBuilder[Self <: GetSAMLProviderResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetSAMLProviderResponse](x: Self) {
     
-    @scala.inline
-    def setCreateDate(value: dateType): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: dateType): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
+    inline def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
-    @scala.inline
-    def setSAMLMetadataDocument(value: SAMLMetadataDocumentType): Self = StObject.set(x, "SAMLMetadataDocument", value.asInstanceOf[js.Any])
+    inline def setSAMLMetadataDocument(value: SAMLMetadataDocumentType): Self = StObject.set(x, "SAMLMetadataDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSAMLMetadataDocumentUndefined: Self = StObject.set(x, "SAMLMetadataDocument", js.undefined)
+    inline def setSAMLMetadataDocumentUndefined: Self = StObject.set(x, "SAMLMetadataDocument", js.undefined)
     
-    @scala.inline
-    def setValidUntil(value: dateType): Self = StObject.set(x, "ValidUntil", value.asInstanceOf[js.Any])
+    inline def setValidUntil(value: dateType): Self = StObject.set(x, "ValidUntil", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidUntilUndefined: Self = StObject.set(x, "ValidUntil", js.undefined)
+    inline def setValidUntilUndefined: Self = StObject.set(x, "ValidUntil", js.undefined)
   }
 }

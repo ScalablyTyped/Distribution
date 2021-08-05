@@ -18,8 +18,7 @@ trait ParametersActionsListRunnerApplicationsForRepoEndpoint extends StObject {
 }
 object ParametersActionsListRunnerApplicationsForRepoEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ActionsListRunnerApplicationsForRepoEndpoint,
     request: ActionsListRunnerApplicationsForRepoRequestOptions,
     response: OctokitResponse[ActionsListRunnerApplicationsForRepoResponseData]
@@ -28,16 +27,12 @@ object ParametersActionsListRunnerApplicationsForRepoEndpoint {
     __obj.asInstanceOf[ParametersActionsListRunnerApplicationsForRepoEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersActionsListRunnerApplicationsForRepoEndpointMutableBuilder[Self <: ParametersActionsListRunnerApplicationsForRepoEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersActionsListRunnerApplicationsForRepoEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ActionsListRunnerApplicationsForRepoEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ActionsListRunnerApplicationsForRepoEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ActionsListRunnerApplicationsForRepoRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ActionsListRunnerApplicationsForRepoRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ActionsListRunnerApplicationsForRepoResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ActionsListRunnerApplicationsForRepoResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

@@ -13,8 +13,7 @@ object useScrollToTopMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(ref: RefObject[ScrollableWrapper]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ref.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(ref: RefObject[ScrollableWrapper]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ref.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   // tslint:disable-next-line strict-export-declare-modifiers interface-over-type-literal
   trait ScrollOptions extends StObject {
@@ -25,26 +24,20 @@ object useScrollToTopMod {
   }
   object ScrollOptions {
     
-    @scala.inline
-    def apply(): ScrollOptions = {
+    inline def apply(): ScrollOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ScrollOptions]
     }
     
-    @scala.inline
-    implicit class ScrollOptionsMutableBuilder[Self <: ScrollOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollOptions](x: Self) {
       
-      @scala.inline
-      def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
+      inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
+      inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
   
@@ -60,26 +53,22 @@ object useScrollToTopMod {
        with ScrollableWrapper
   object ScrollableView {
     
-    @scala.inline
-    def ScrollResponderScrollTo(scrollResponderScrollTo: ScrollOptions => Unit): typings.tuyaPanelKit.anon.ScrollResponderScrollTo = {
+    inline def ScrollResponderScrollTo(scrollResponderScrollTo: ScrollOptions => Unit): typings.tuyaPanelKit.anon.ScrollResponderScrollTo = {
       val __obj = js.Dynamic.literal(scrollResponderScrollTo = js.Any.fromFunction1(scrollResponderScrollTo))
       __obj.asInstanceOf[typings.tuyaPanelKit.anon.ScrollResponderScrollTo]
     }
     
-    @scala.inline
-    def ScrollTo(scrollTo: ScrollOptions => Unit): typings.tuyaPanelKit.anon.ScrollTo = {
+    inline def ScrollTo(scrollTo: ScrollOptions => Unit): typings.tuyaPanelKit.anon.ScrollTo = {
       val __obj = js.Dynamic.literal(scrollTo = js.Any.fromFunction1(scrollTo))
       __obj.asInstanceOf[typings.tuyaPanelKit.anon.ScrollTo]
     }
     
-    @scala.inline
-    def ScrollToOffset(scrollToOffset: Animated => Unit): typings.tuyaPanelKit.anon.ScrollToOffset = {
+    inline def ScrollToOffset(scrollToOffset: Animated => Unit): typings.tuyaPanelKit.anon.ScrollToOffset = {
       val __obj = js.Dynamic.literal(scrollToOffset = js.Any.fromFunction1(scrollToOffset))
       __obj.asInstanceOf[typings.tuyaPanelKit.anon.ScrollToOffset]
     }
     
-    @scala.inline
-    def ScrollToTop(scrollToTop: () => Unit): typings.tuyaPanelKit.anon.ScrollToTop = {
+    inline def ScrollToTop(scrollToTop: () => Unit): typings.tuyaPanelKit.anon.ScrollToTop = {
       val __obj = js.Dynamic.literal(scrollToTop = js.Any.fromFunction0(scrollToTop))
       __obj.asInstanceOf[typings.tuyaPanelKit.anon.ScrollToTop]
     }
@@ -94,38 +83,32 @@ object useScrollToTopMod {
   trait ScrollableWrapper extends StObject
   object ScrollableWrapper {
     
-    @scala.inline
-    def GetNode(getNode: () => ScrollableView): typings.tuyaPanelKit.anon.GetNode = {
+    inline def GetNode(getNode: () => ScrollableView): typings.tuyaPanelKit.anon.GetNode = {
       val __obj = js.Dynamic.literal(getNode = js.Any.fromFunction0(getNode))
       __obj.asInstanceOf[typings.tuyaPanelKit.anon.GetNode]
     }
     
-    @scala.inline
-    def GetScrollResponder(getScrollResponder: () => ReactNode): typings.tuyaPanelKit.anon.GetScrollResponder = {
+    inline def GetScrollResponder(getScrollResponder: () => ReactNode): typings.tuyaPanelKit.anon.GetScrollResponder = {
       val __obj = js.Dynamic.literal(getScrollResponder = js.Any.fromFunction0(getScrollResponder))
       __obj.asInstanceOf[typings.tuyaPanelKit.anon.GetScrollResponder]
     }
     
-    @scala.inline
-    def ScrollResponderScrollTo(scrollResponderScrollTo: ScrollOptions => Unit): typings.tuyaPanelKit.anon.ScrollResponderScrollTo = {
+    inline def ScrollResponderScrollTo(scrollResponderScrollTo: ScrollOptions => Unit): typings.tuyaPanelKit.anon.ScrollResponderScrollTo = {
       val __obj = js.Dynamic.literal(scrollResponderScrollTo = js.Any.fromFunction1(scrollResponderScrollTo))
       __obj.asInstanceOf[typings.tuyaPanelKit.anon.ScrollResponderScrollTo]
     }
     
-    @scala.inline
-    def ScrollTo(scrollTo: ScrollOptions => Unit): typings.tuyaPanelKit.anon.ScrollTo = {
+    inline def ScrollTo(scrollTo: ScrollOptions => Unit): typings.tuyaPanelKit.anon.ScrollTo = {
       val __obj = js.Dynamic.literal(scrollTo = js.Any.fromFunction1(scrollTo))
       __obj.asInstanceOf[typings.tuyaPanelKit.anon.ScrollTo]
     }
     
-    @scala.inline
-    def ScrollToOffset(scrollToOffset: Animated => Unit): typings.tuyaPanelKit.anon.ScrollToOffset = {
+    inline def ScrollToOffset(scrollToOffset: Animated => Unit): typings.tuyaPanelKit.anon.ScrollToOffset = {
       val __obj = js.Dynamic.literal(scrollToOffset = js.Any.fromFunction1(scrollToOffset))
       __obj.asInstanceOf[typings.tuyaPanelKit.anon.ScrollToOffset]
     }
     
-    @scala.inline
-    def ScrollToTop(scrollToTop: () => Unit): typings.tuyaPanelKit.anon.ScrollToTop = {
+    inline def ScrollToTop(scrollToTop: () => Unit): typings.tuyaPanelKit.anon.ScrollToTop = {
       val __obj = js.Dynamic.literal(scrollToTop = js.Any.fromFunction0(scrollToTop))
       __obj.asInstanceOf[typings.tuyaPanelKit.anon.ScrollToTop]
     }

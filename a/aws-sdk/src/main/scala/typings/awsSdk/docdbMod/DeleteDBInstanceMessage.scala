@@ -13,16 +13,13 @@ trait DeleteDBInstanceMessage extends StObject {
 }
 object DeleteDBInstanceMessage {
   
-  @scala.inline
-  def apply(DBInstanceIdentifier: String): DeleteDBInstanceMessage = {
+  inline def apply(DBInstanceIdentifier: String): DeleteDBInstanceMessage = {
     val __obj = js.Dynamic.literal(DBInstanceIdentifier = DBInstanceIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDBInstanceMessage]
   }
   
-  @scala.inline
-  implicit class DeleteDBInstanceMessageMutableBuilder[Self <: DeleteDBInstanceMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDBInstanceMessage](x: Self) {
     
-    @scala.inline
-    def setDBInstanceIdentifier(value: String): Self = StObject.set(x, "DBInstanceIdentifier", value.asInstanceOf[js.Any])
+    inline def setDBInstanceIdentifier(value: String): Self = StObject.set(x, "DBInstanceIdentifier", value.asInstanceOf[js.Any])
   }
 }

@@ -43,8 +43,7 @@ trait Exists extends StObject {
 }
 object Exists {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     children: () => typings.std.Element,
     click: () => Unit,
     element: () => js.Any,
@@ -67,58 +66,40 @@ object Exists {
     __obj.asInstanceOf[Exists]
   }
   
-  @scala.inline
-  implicit class ExistsMutableBuilder[Self <: Exists] (val x: Self) extends AnyVal {
+  extension [Self <: Exists](x: Self) {
     
-    @scala.inline
-    def setChildren(value: () => typings.std.Element): Self = StObject.set(x, "children", js.Any.fromFunction0(value))
+    inline def setChildren(value: () => typings.std.Element): Self = StObject.set(x, "children", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClick(value: () => Unit): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
+    inline def setClick(value: () => Unit): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setElement(value: () => js.Any): Self = StObject.set(x, "element", js.Any.fromFunction0(value))
+    inline def setElement(value: () => js.Any): Self = StObject.set(x, "element", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExists(value: () => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
+    inline def setExists(value: () => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFocus(value: () => js.Any): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+    inline def setFocus(value: () => js.Any): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasErrorState(value: () => Boolean): Self = StObject.set(x, "hasErrorState", js.Any.fromFunction0(value))
+    inline def setHasErrorState(value: () => Boolean): Self = StObject.set(x, "hasErrorState", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasFocusState(value: () => Boolean): Self = StObject.set(x, "hasFocusState", js.Any.fromFunction0(value))
+    inline def setHasFocusState(value: () => Boolean): Self = StObject.set(x, "hasFocusState", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasReadOnlyState(value: () => Boolean): Self = StObject.set(x, "hasReadOnlyState", js.Any.fromFunction0(value))
+    inline def setHasReadOnlyState(value: () => Boolean): Self = StObject.set(x, "hasReadOnlyState", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInput(value: () => HTMLInputElement): Self = StObject.set(x, "input", js.Any.fromFunction0(value))
+    inline def setInput(value: () => HTMLInputElement): Self = StObject.set(x, "input", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsChecked(value: () => Boolean): Self = StObject.set(x, "isChecked", js.Any.fromFunction0(value))
+    inline def setIsChecked(value: () => Boolean): Self = StObject.set(x, "isChecked", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsDisabled(value: () => Boolean): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
+    inline def setIsDisabled(value: () => Boolean): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsIndeterminate(value: () => Boolean): Self = StObject.set(x, "isIndeterminate", js.Any.fromFunction0(value))
+    inline def setIsIndeterminate(value: () => Boolean): Self = StObject.set(x, "isIndeterminate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setKeyDown(value: String => js.Any): Self = StObject.set(x, "keyDown", js.Any.fromFunction1(value))
+    inline def setKeyDown(value: String => js.Any): Self = StObject.set(x, "keyDown", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMouseDown(value: () => js.Any): Self = StObject.set(x, "mouseDown", js.Any.fromFunction0(value))
+    inline def setMouseDown(value: () => js.Any): Self = StObject.set(x, "mouseDown", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMouseEnter(value: () => js.Any): Self = StObject.set(x, "mouseEnter", js.Any.fromFunction0(value))
+    inline def setMouseEnter(value: () => js.Any): Self = StObject.set(x, "mouseEnter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMouseLeave(value: () => js.Any): Self = StObject.set(x, "mouseLeave", js.Any.fromFunction0(value))
+    inline def setMouseLeave(value: () => js.Any): Self = StObject.set(x, "mouseLeave", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTickmark(value: () => typings.std.Element): Self = StObject.set(x, "tickmark", js.Any.fromFunction0(value))
+    inline def setTickmark(value: () => typings.std.Element): Self = StObject.set(x, "tickmark", js.Any.fromFunction0(value))
   }
 }

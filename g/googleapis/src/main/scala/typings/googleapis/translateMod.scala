@@ -36,8 +36,7 @@ object translateMod {
     @JSImport("googleapis/build/src/apis/translate", "VERSIONS.v2")
     @js.native
     def v2: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Translate] = js.native
-    @scala.inline
-    def v2_=(
+    inline def v2_=(
       x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Translate]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v2")(x.asInstanceOf[js.Any])
   }
@@ -75,8 +74,7 @@ object translateMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -120,9 +118,7 @@ object translateMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def translate(options: Options): Translate = ^.asInstanceOf[js.Dynamic].applyDynamic("translate")(options.asInstanceOf[js.Any]).asInstanceOf[Translate]
+  inline def translate(options: Options): Translate = ^.asInstanceOf[js.Dynamic].applyDynamic("translate")(options.asInstanceOf[js.Any]).asInstanceOf[Translate]
   
-  @scala.inline
-  def translate_v2(version: v2): Translate = ^.asInstanceOf[js.Dynamic].applyDynamic("translate")(version.asInstanceOf[js.Any]).asInstanceOf[Translate]
+  inline def translate_v2(version: v2): Translate = ^.asInstanceOf[js.Dynamic].applyDynamic("translate")(version.asInstanceOf[js.Any]).asInstanceOf[Translate]
 }

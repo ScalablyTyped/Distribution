@@ -12,22 +12,17 @@ trait GridType extends StObject {
 }
 object GridType {
   
-  @scala.inline
-  def apply(gridType: String): GridType = {
+  inline def apply(gridType: String): GridType = {
     val __obj = js.Dynamic.literal(gridType = gridType.asInstanceOf[js.Any], receivedInitialDate = null)
     __obj.asInstanceOf[GridType]
   }
   
-  @scala.inline
-  implicit class GridTypeMutableBuilder[Self <: GridType] (val x: Self) extends AnyVal {
+  extension [Self <: GridType](x: Self) {
     
-    @scala.inline
-    def setGridType(value: String): Self = StObject.set(x, "gridType", value.asInstanceOf[js.Any])
+    inline def setGridType(value: String): Self = StObject.set(x, "gridType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceivedInitialDate(value: typings.std.Date): Self = StObject.set(x, "receivedInitialDate", value.asInstanceOf[js.Any])
+    inline def setReceivedInitialDate(value: typings.std.Date): Self = StObject.set(x, "receivedInitialDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceivedInitialDateNull: Self = StObject.set(x, "receivedInitialDate", null)
+    inline def setReceivedInitialDateNull: Self = StObject.set(x, "receivedInitialDate", null)
   }
 }

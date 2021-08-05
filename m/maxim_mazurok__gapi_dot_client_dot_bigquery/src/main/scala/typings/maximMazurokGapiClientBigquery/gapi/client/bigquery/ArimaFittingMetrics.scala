@@ -17,31 +17,23 @@ trait ArimaFittingMetrics extends StObject {
 }
 object ArimaFittingMetrics {
   
-  @scala.inline
-  def apply(): ArimaFittingMetrics = {
+  inline def apply(): ArimaFittingMetrics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ArimaFittingMetrics]
   }
   
-  @scala.inline
-  implicit class ArimaFittingMetricsMutableBuilder[Self <: ArimaFittingMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: ArimaFittingMetrics](x: Self) {
     
-    @scala.inline
-    def setAic(value: Double): Self = StObject.set(x, "aic", value.asInstanceOf[js.Any])
+    inline def setAic(value: Double): Self = StObject.set(x, "aic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAicUndefined: Self = StObject.set(x, "aic", js.undefined)
+    inline def setAicUndefined: Self = StObject.set(x, "aic", js.undefined)
     
-    @scala.inline
-    def setLogLikelihood(value: Double): Self = StObject.set(x, "logLikelihood", value.asInstanceOf[js.Any])
+    inline def setLogLikelihood(value: Double): Self = StObject.set(x, "logLikelihood", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogLikelihoodUndefined: Self = StObject.set(x, "logLikelihood", js.undefined)
+    inline def setLogLikelihoodUndefined: Self = StObject.set(x, "logLikelihood", js.undefined)
     
-    @scala.inline
-    def setVariance(value: Double): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
+    inline def setVariance(value: Double): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVarianceUndefined: Self = StObject.set(x, "variance", js.undefined)
+    inline def setVarianceUndefined: Self = StObject.set(x, "variance", js.undefined)
   }
 }

@@ -67,8 +67,7 @@ trait IZoomableView[T] extends StObject {
 }
 object IZoomableView {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     beginZoom: () => Unit,
     configureForZoom: (Boolean, Boolean, js.Function, Double) => Unit,
     endZoom: Boolean => Unit,
@@ -82,31 +81,22 @@ object IZoomableView {
     __obj.asInstanceOf[IZoomableView[T]]
   }
   
-  @scala.inline
-  implicit class IZoomableViewMutableBuilder[Self <: IZoomableView[?], T] (val x: Self & IZoomableView[T]) extends AnyVal {
+  extension [Self <: IZoomableView[?], T](x: Self & IZoomableView[T]) {
     
-    @scala.inline
-    def setBeginZoom(value: () => Unit): Self = StObject.set(x, "beginZoom", js.Any.fromFunction0(value))
+    inline def setBeginZoom(value: () => Unit): Self = StObject.set(x, "beginZoom", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setConfigureForZoom(value: (Boolean, Boolean, js.Function, Double) => Unit): Self = StObject.set(x, "configureForZoom", js.Any.fromFunction4(value))
+    inline def setConfigureForZoom(value: (Boolean, Boolean, js.Function, Double) => Unit): Self = StObject.set(x, "configureForZoom", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEndZoom(value: Boolean => Unit): Self = StObject.set(x, "endZoom", js.Any.fromFunction1(value))
+    inline def setEndZoom(value: Boolean => Unit): Self = StObject.set(x, "endZoom", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCurrentItem(value: () => Promise[Item[T]]): Self = StObject.set(x, "getCurrentItem", js.Any.fromFunction0(value))
+    inline def setGetCurrentItem(value: () => Promise[Item[T]]): Self = StObject.set(x, "getCurrentItem", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPanAxis(value: () => String): Self = StObject.set(x, "getPanAxis", js.Any.fromFunction0(value))
+    inline def setGetPanAxis(value: () => String): Self = StObject.set(x, "getPanAxis", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHandlePointer(value: String => Unit): Self = StObject.set(x, "handlePointer", js.Any.fromFunction1(value))
+    inline def setHandlePointer(value: String => Unit): Self = StObject.set(x, "handlePointer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPositionItem(value: (T, IPosition) => Unit): Self = StObject.set(x, "positionItem", js.Any.fromFunction2(value))
+    inline def setPositionItem(value: (T, IPosition) => Unit): Self = StObject.set(x, "positionItem", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetCurrentItem(value: (Double, Double) => Unit): Self = StObject.set(x, "setCurrentItem", js.Any.fromFunction2(value))
+    inline def setSetCurrentItem(value: (Double, Double) => Unit): Self = StObject.set(x, "setCurrentItem", js.Any.fromFunction2(value))
   }
 }

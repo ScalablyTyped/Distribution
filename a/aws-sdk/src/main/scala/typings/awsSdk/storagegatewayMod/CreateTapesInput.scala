@@ -58,8 +58,7 @@ trait CreateTapesInput extends StObject {
 }
 object CreateTapesInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ClientToken: ClientToken,
     GatewayARN: GatewayARN,
     NumTapesToCreate: NumTapesToCreate,
@@ -70,55 +69,38 @@ object CreateTapesInput {
     __obj.asInstanceOf[CreateTapesInput]
   }
   
-  @scala.inline
-  implicit class CreateTapesInputMutableBuilder[Self <: CreateTapesInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTapesInput](x: Self) {
     
-    @scala.inline
-    def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKMSEncrypted(value: Boolean): Self = StObject.set(x, "KMSEncrypted", value.asInstanceOf[js.Any])
+    inline def setKMSEncrypted(value: Boolean): Self = StObject.set(x, "KMSEncrypted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKMSEncryptedUndefined: Self = StObject.set(x, "KMSEncrypted", js.undefined)
+    inline def setKMSEncryptedUndefined: Self = StObject.set(x, "KMSEncrypted", js.undefined)
     
-    @scala.inline
-    def setKMSKey(value: KMSKey): Self = StObject.set(x, "KMSKey", value.asInstanceOf[js.Any])
+    inline def setKMSKey(value: KMSKey): Self = StObject.set(x, "KMSKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKMSKeyUndefined: Self = StObject.set(x, "KMSKey", js.undefined)
+    inline def setKMSKeyUndefined: Self = StObject.set(x, "KMSKey", js.undefined)
     
-    @scala.inline
-    def setNumTapesToCreate(value: NumTapesToCreate): Self = StObject.set(x, "NumTapesToCreate", value.asInstanceOf[js.Any])
+    inline def setNumTapesToCreate(value: NumTapesToCreate): Self = StObject.set(x, "NumTapesToCreate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolId(value: PoolId): Self = StObject.set(x, "PoolId", value.asInstanceOf[js.Any])
+    inline def setPoolId(value: PoolId): Self = StObject.set(x, "PoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolIdUndefined: Self = StObject.set(x, "PoolId", js.undefined)
+    inline def setPoolIdUndefined: Self = StObject.set(x, "PoolId", js.undefined)
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTapeBarcodePrefix(value: TapeBarcodePrefix): Self = StObject.set(x, "TapeBarcodePrefix", value.asInstanceOf[js.Any])
+    inline def setTapeBarcodePrefix(value: TapeBarcodePrefix): Self = StObject.set(x, "TapeBarcodePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTapeSizeInBytes(value: TapeSize): Self = StObject.set(x, "TapeSizeInBytes", value.asInstanceOf[js.Any])
+    inline def setTapeSizeInBytes(value: TapeSize): Self = StObject.set(x, "TapeSizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorm(value: scala.Boolean): Self = StObject.set(x, "Worm", value.asInstanceOf[js.Any])
+    inline def setWorm(value: scala.Boolean): Self = StObject.set(x, "Worm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWormUndefined: Self = StObject.set(x, "Worm", js.undefined)
+    inline def setWormUndefined: Self = StObject.set(x, "Worm", js.undefined)
   }
 }

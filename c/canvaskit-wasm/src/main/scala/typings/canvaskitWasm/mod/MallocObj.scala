@@ -33,8 +33,7 @@ trait MallocObj extends StObject {
 }
 object MallocObj {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     byteOffset: Double,
     length: Double,
     subarray: (Double, Double) => TypedArray,
@@ -44,19 +43,14 @@ object MallocObj {
     __obj.asInstanceOf[MallocObj]
   }
   
-  @scala.inline
-  implicit class MallocObjMutableBuilder[Self <: MallocObj] (val x: Self) extends AnyVal {
+  extension [Self <: MallocObj](x: Self) {
     
-    @scala.inline
-    def setByteOffset(value: Double): Self = StObject.set(x, "byteOffset", value.asInstanceOf[js.Any])
+    inline def setByteOffset(value: Double): Self = StObject.set(x, "byteOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubarray(value: (Double, Double) => TypedArray): Self = StObject.set(x, "subarray", js.Any.fromFunction2(value))
+    inline def setSubarray(value: (Double, Double) => TypedArray): Self = StObject.set(x, "subarray", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setToTypedArray(value: () => TypedArray): Self = StObject.set(x, "toTypedArray", js.Any.fromFunction0(value))
+    inline def setToTypedArray(value: () => TypedArray): Self = StObject.set(x, "toTypedArray", js.Any.fromFunction0(value))
   }
 }

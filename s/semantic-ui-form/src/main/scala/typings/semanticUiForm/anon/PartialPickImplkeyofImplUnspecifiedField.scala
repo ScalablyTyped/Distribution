@@ -13,25 +13,19 @@ trait PartialPickImplkeyofImplUnspecifiedField extends StObject {
 }
 object PartialPickImplkeyofImplUnspecifiedField {
   
-  @scala.inline
-  def apply(): PartialPickImplkeyofImplUnspecifiedField = {
+  inline def apply(): PartialPickImplkeyofImplUnspecifiedField = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPickImplkeyofImplUnspecifiedField]
   }
   
-  @scala.inline
-  implicit class PartialPickImplkeyofImplUnspecifiedFieldMutableBuilder[Self <: PartialPickImplkeyofImplUnspecifiedField] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPickImplkeyofImplUnspecifiedField](x: Self) {
     
-    @scala.inline
-    def setUnspecifiedField(value: String): Self = StObject.set(x, "unspecifiedField", value.asInstanceOf[js.Any])
+    inline def setUnspecifiedField(value: String): Self = StObject.set(x, "unspecifiedField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnspecifiedFieldUndefined: Self = StObject.set(x, "unspecifiedField", js.undefined)
+    inline def setUnspecifiedFieldUndefined: Self = StObject.set(x, "unspecifiedField", js.undefined)
     
-    @scala.inline
-    def setUnspecifiedRule(value: String): Self = StObject.set(x, "unspecifiedRule", value.asInstanceOf[js.Any])
+    inline def setUnspecifiedRule(value: String): Self = StObject.set(x, "unspecifiedRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnspecifiedRuleUndefined: Self = StObject.set(x, "unspecifiedRule", js.undefined)
+    inline def setUnspecifiedRuleUndefined: Self = StObject.set(x, "unspecifiedRule", js.undefined)
   }
 }

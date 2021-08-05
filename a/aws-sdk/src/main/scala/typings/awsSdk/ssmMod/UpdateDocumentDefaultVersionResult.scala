@@ -13,19 +13,15 @@ trait UpdateDocumentDefaultVersionResult extends StObject {
 }
 object UpdateDocumentDefaultVersionResult {
   
-  @scala.inline
-  def apply(): UpdateDocumentDefaultVersionResult = {
+  inline def apply(): UpdateDocumentDefaultVersionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateDocumentDefaultVersionResult]
   }
   
-  @scala.inline
-  implicit class UpdateDocumentDefaultVersionResultMutableBuilder[Self <: UpdateDocumentDefaultVersionResult] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDocumentDefaultVersionResult](x: Self) {
     
-    @scala.inline
-    def setDescription(value: DocumentDefaultVersionDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: DocumentDefaultVersionDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
   }
 }

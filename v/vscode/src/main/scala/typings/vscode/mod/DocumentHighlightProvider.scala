@@ -20,18 +20,15 @@ trait DocumentHighlightProvider extends StObject {
 }
 object DocumentHighlightProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     provideDocumentHighlights: (TextDocument, Position, CancellationToken) => ProviderResult[js.Array[DocumentHighlight]]
   ): DocumentHighlightProvider = {
     val __obj = js.Dynamic.literal(provideDocumentHighlights = js.Any.fromFunction3(provideDocumentHighlights))
     __obj.asInstanceOf[DocumentHighlightProvider]
   }
   
-  @scala.inline
-  implicit class DocumentHighlightProviderMutableBuilder[Self <: DocumentHighlightProvider] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentHighlightProvider](x: Self) {
     
-    @scala.inline
-    def setProvideDocumentHighlights(value: (TextDocument, Position, CancellationToken) => ProviderResult[js.Array[DocumentHighlight]]): Self = StObject.set(x, "provideDocumentHighlights", js.Any.fromFunction3(value))
+    inline def setProvideDocumentHighlights(value: (TextDocument, Position, CancellationToken) => ProviderResult[js.Array[DocumentHighlight]]): Self = StObject.set(x, "provideDocumentHighlights", js.Any.fromFunction3(value))
   }
 }

@@ -23,22 +23,17 @@ trait DescribeActivityOutput extends StObject {
 }
 object DescribeActivityOutput {
   
-  @scala.inline
-  def apply(activityArn: Arn, creationDate: Timestamp, name: Name): DescribeActivityOutput = {
+  inline def apply(activityArn: Arn, creationDate: Timestamp, name: Name): DescribeActivityOutput = {
     val __obj = js.Dynamic.literal(activityArn = activityArn.asInstanceOf[js.Any], creationDate = creationDate.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeActivityOutput]
   }
   
-  @scala.inline
-  implicit class DescribeActivityOutputMutableBuilder[Self <: DescribeActivityOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeActivityOutput](x: Self) {
     
-    @scala.inline
-    def setActivityArn(value: Arn): Self = StObject.set(x, "activityArn", value.asInstanceOf[js.Any])
+    inline def setActivityArn(value: Arn): Self = StObject.set(x, "activityArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDate(value: Timestamp): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: Timestamp): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

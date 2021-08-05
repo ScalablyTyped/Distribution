@@ -14,22 +14,17 @@ trait ITransportStateListener extends StObject {
 }
 object ITransportStateListener {
   
-  @scala.inline
-  def apply(onClose: () => Unit, onError: String => Unit, onOpen: () => Unit): ITransportStateListener = {
+  inline def apply(onClose: () => Unit, onError: String => Unit, onOpen: () => Unit): ITransportStateListener = {
     val __obj = js.Dynamic.literal(onClose = js.Any.fromFunction0(onClose), onError = js.Any.fromFunction1(onError), onOpen = js.Any.fromFunction0(onOpen))
     __obj.asInstanceOf[ITransportStateListener]
   }
   
-  @scala.inline
-  implicit class ITransportStateListenerMutableBuilder[Self <: ITransportStateListener] (val x: Self) extends AnyVal {
+  extension [Self <: ITransportStateListener](x: Self) {
     
-    @scala.inline
-    def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+    inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnError(value: String => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    inline def setOnError(value: String => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnOpen(value: () => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction0(value))
+    inline def setOnOpen(value: () => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction0(value))
   }
 }

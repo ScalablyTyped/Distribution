@@ -47,8 +47,7 @@ trait Request extends StObject {
 }
 object Request {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bodySize: Double,
     cookies: js.Array[Cookie],
     headers: js.Array[Header],
@@ -62,52 +61,36 @@ object Request {
     __obj.asInstanceOf[Request]
   }
   
-  @scala.inline
-  implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+  extension [Self <: Request](x: Self) {
     
-    @scala.inline
-    def setBodySize(value: Double): Self = StObject.set(x, "bodySize", value.asInstanceOf[js.Any])
+    inline def setBodySize(value: Double): Self = StObject.set(x, "bodySize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
-    @scala.inline
-    def setCookies(value: js.Array[Cookie]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+    inline def setCookies(value: js.Array[Cookie]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCookiesVarargs(value: Cookie*): Self = StObject.set(x, "cookies", js.Array(value :_*))
+    inline def setCookiesVarargs(value: Cookie*): Self = StObject.set(x, "cookies", js.Array(value :_*))
     
-    @scala.inline
-    def setHeaders(value: js.Array[Header]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Array[Header]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersSize(value: Double): Self = StObject.set(x, "headersSize", value.asInstanceOf[js.Any])
+    inline def setHeadersSize(value: Double): Self = StObject.set(x, "headersSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersVarargs(value: Header*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: Header*): Self = StObject.set(x, "headers", js.Array(value :_*))
     
-    @scala.inline
-    def setHttpVersion(value: String): Self = StObject.set(x, "httpVersion", value.asInstanceOf[js.Any])
+    inline def setHttpVersion(value: String): Self = StObject.set(x, "httpVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostData(value: PostData): Self = StObject.set(x, "postData", value.asInstanceOf[js.Any])
+    inline def setPostData(value: PostData): Self = StObject.set(x, "postData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostDataUndefined: Self = StObject.set(x, "postData", js.undefined)
+    inline def setPostDataUndefined: Self = StObject.set(x, "postData", js.undefined)
     
-    @scala.inline
-    def setQueryString(value: js.Array[QueryString]): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
+    inline def setQueryString(value: js.Array[QueryString]): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryStringVarargs(value: QueryString*): Self = StObject.set(x, "queryString", js.Array(value :_*))
+    inline def setQueryStringVarargs(value: QueryString*): Self = StObject.set(x, "queryString", js.Array(value :_*))
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

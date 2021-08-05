@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ɵDepFlags extends StObject
 object ɵDepFlags {
   
-  @scala.inline
-  def None: `0` = 0.asInstanceOf[`0`]
+  inline def None: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def Optional: `2` = 2.asInstanceOf[`2`]
+  inline def Optional: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def Self: `4` = 4.asInstanceOf[`4`]
+  inline def Self: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def SkipSelf: `1` = 1.asInstanceOf[`1`]
+  inline def SkipSelf: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def Value: `8` = 8.asInstanceOf[`8`]
+  inline def Value: `8` = 8.asInstanceOf[`8`]
 }

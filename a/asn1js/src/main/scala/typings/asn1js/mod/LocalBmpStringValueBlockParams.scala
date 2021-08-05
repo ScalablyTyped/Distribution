@@ -9,8 +9,7 @@ trait LocalBmpStringValueBlockParams
      with LocalHexBlockParams
 object LocalBmpStringValueBlockParams {
   
-  @scala.inline
-  def apply(): LocalBmpStringValueBlockParams = {
+  inline def apply(): LocalBmpStringValueBlockParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocalBmpStringValueBlockParams]
   }

@@ -26,20 +26,16 @@ object typesDescribeStreamConsumerOutputMod {
   }
   object DescribeStreamConsumerOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, ConsumerDescription: UnmarshalledConsumerDescription): DescribeStreamConsumerOutput = {
+    inline def apply($metadata: ResponseMetadata, ConsumerDescription: UnmarshalledConsumerDescription): DescribeStreamConsumerOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], ConsumerDescription = ConsumerDescription.asInstanceOf[js.Any])
       __obj.asInstanceOf[DescribeStreamConsumerOutput]
     }
     
-    @scala.inline
-    implicit class DescribeStreamConsumerOutputMutableBuilder[Self <: DescribeStreamConsumerOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DescribeStreamConsumerOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumerDescription(value: UnmarshalledConsumerDescription): Self = StObject.set(x, "ConsumerDescription", value.asInstanceOf[js.Any])
+      inline def setConsumerDescription(value: UnmarshalledConsumerDescription): Self = StObject.set(x, "ConsumerDescription", value.asInstanceOf[js.Any])
     }
   }
 }

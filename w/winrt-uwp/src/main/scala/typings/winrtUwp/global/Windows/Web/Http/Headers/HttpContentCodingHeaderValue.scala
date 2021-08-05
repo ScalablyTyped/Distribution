@@ -33,14 +33,12 @@ object HttpContentCodingHeaderValue {
     * @return An HttpContentCodingHeaderValue instance.
     */
   /* static member */
-  @scala.inline
-  def parse(input: String): typings.winrtUwp.Windows.Web.Http.Headers.HttpContentCodingHeaderValue = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Web.Http.Headers.HttpContentCodingHeaderValue]
+  inline def parse(input: String): typings.winrtUwp.Windows.Web.Http.Headers.HttpContentCodingHeaderValue = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Web.Http.Headers.HttpContentCodingHeaderValue]
   
   /**
     * Determines whether a string is valid HttpContentCodingHeaderValue information.
     * @param input The string to validate.
     */
   /* static member */
-  @scala.inline
-  def tryParse(input: String): ContentCodingHeaderValue = ^.asInstanceOf[js.Dynamic].applyDynamic("tryParse")(input.asInstanceOf[js.Any]).asInstanceOf[ContentCodingHeaderValue]
+  inline def tryParse(input: String): ContentCodingHeaderValue = ^.asInstanceOf[js.Dynamic].applyDynamic("tryParse")(input.asInstanceOf[js.Any]).asInstanceOf[ContentCodingHeaderValue]
 }

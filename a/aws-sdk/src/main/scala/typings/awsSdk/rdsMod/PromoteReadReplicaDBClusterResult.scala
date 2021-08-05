@@ -10,19 +10,15 @@ trait PromoteReadReplicaDBClusterResult extends StObject {
 }
 object PromoteReadReplicaDBClusterResult {
   
-  @scala.inline
-  def apply(): PromoteReadReplicaDBClusterResult = {
+  inline def apply(): PromoteReadReplicaDBClusterResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PromoteReadReplicaDBClusterResult]
   }
   
-  @scala.inline
-  implicit class PromoteReadReplicaDBClusterResultMutableBuilder[Self <: PromoteReadReplicaDBClusterResult] (val x: Self) extends AnyVal {
+  extension [Self <: PromoteReadReplicaDBClusterResult](x: Self) {
     
-    @scala.inline
-    def setDBCluster(value: DBCluster): Self = StObject.set(x, "DBCluster", value.asInstanceOf[js.Any])
+    inline def setDBCluster(value: DBCluster): Self = StObject.set(x, "DBCluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBClusterUndefined: Self = StObject.set(x, "DBCluster", js.undefined)
+    inline def setDBClusterUndefined: Self = StObject.set(x, "DBCluster", js.undefined)
   }
 }

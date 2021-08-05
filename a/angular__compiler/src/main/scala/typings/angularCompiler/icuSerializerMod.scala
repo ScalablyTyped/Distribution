@@ -11,6 +11,5 @@ object icuSerializerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def serializeIcuNode(icu: Icu): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeIcuNode")(icu.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def serializeIcuNode(icu: Icu): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeIcuNode")(icu.asInstanceOf[js.Any]).asInstanceOf[String]
 }

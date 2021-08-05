@@ -23,28 +23,21 @@ trait ListUsersResponse extends StObject {
 }
 object ListUsersResponse {
   
-  @scala.inline
-  def apply(ServerId: ServerId, Users: ListedUsers): ListUsersResponse = {
+  inline def apply(ServerId: ServerId, Users: ListedUsers): ListUsersResponse = {
     val __obj = js.Dynamic.literal(ServerId = ServerId.asInstanceOf[js.Any], Users = Users.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListUsersResponse]
   }
   
-  @scala.inline
-  implicit class ListUsersResponseMutableBuilder[Self <: ListUsersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListUsersResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setServerId(value: ServerId): Self = StObject.set(x, "ServerId", value.asInstanceOf[js.Any])
+    inline def setServerId(value: ServerId): Self = StObject.set(x, "ServerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsers(value: ListedUsers): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: ListedUsers): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsersVarargs(value: ListedUser*): Self = StObject.set(x, "Users", js.Array(value :_*))
+    inline def setUsersVarargs(value: ListedUser*): Self = StObject.set(x, "Users", js.Array(value :_*))
   }
 }

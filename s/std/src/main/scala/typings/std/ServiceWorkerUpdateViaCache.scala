@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ServiceWorkerUpdateViaCache extends StObject
 object ServiceWorkerUpdateViaCache {
   
-  @scala.inline
-  def all: typings.std.stdStrings.all = "all".asInstanceOf[typings.std.stdStrings.all]
+  inline def all: typings.std.stdStrings.all = "all".asInstanceOf[typings.std.stdStrings.all]
   
-  @scala.inline
-  def imports: typings.std.stdStrings.imports = "imports".asInstanceOf[typings.std.stdStrings.imports]
+  inline def imports: typings.std.stdStrings.imports = "imports".asInstanceOf[typings.std.stdStrings.imports]
   
-  @scala.inline
-  def none: typings.std.stdStrings.none = "none".asInstanceOf[typings.std.stdStrings.none]
+  inline def none: typings.std.stdStrings.none = "none".asInstanceOf[typings.std.stdStrings.none]
 }

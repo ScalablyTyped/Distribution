@@ -60,8 +60,7 @@ object mod extends Shortcut {
   }
   object I18n {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _underscore: (/* id */ String, /* tplStrs */ js.UndefOr[Record[String, String | Double]]) => String,
       availableLanguages: String => js.Array[String],
       catalog: (String, String) => MessageCatalog,
@@ -73,23 +72,17 @@ object mod extends Shortcut {
       __obj.asInstanceOf[I18n]
     }
     
-    @scala.inline
-    implicit class I18nMutableBuilder[Self <: I18n] (val x: Self) extends AnyVal {
+    extension [Self <: I18n](x: Self) {
       
-      @scala.inline
-      def setAvailableLanguages(value: String => js.Array[String]): Self = StObject.set(x, "availableLanguages", js.Any.fromFunction1(value))
+      inline def setAvailableLanguages(value: String => js.Array[String]): Self = StObject.set(x, "availableLanguages", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCatalog(value: (String, String) => MessageCatalog): Self = StObject.set(x, "catalog", js.Any.fromFunction2(value))
+      inline def setCatalog(value: (String, String) => MessageCatalog): Self = StObject.set(x, "catalog", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRegisterMessageCatalog(value: (String, String, String) => js.Promise[Unit]): Self = StObject.set(x, "registerMessageCatalog", js.Any.fromFunction3(value))
+      inline def setRegisterMessageCatalog(value: (String, String, String) => js.Promise[Unit]): Self = StObject.set(x, "registerMessageCatalog", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRegisterMessageCatalogs(value: js.Array[MessageCatalog] => js.Promise[js.Array[js.Object]]): Self = StObject.set(x, "registerMessageCatalogs", js.Any.fromFunction1(value))
+      inline def setRegisterMessageCatalogs(value: js.Array[MessageCatalog] => js.Promise[js.Array[js.Object]]): Self = StObject.set(x, "registerMessageCatalogs", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_underscore(value: (/* id */ String, /* tplStrs */ js.UndefOr[Record[String, String | Double]]) => String): Self = StObject.set(x, "_", js.Any.fromFunction2(value))
+      inline def set_underscore(value: (/* id */ String, /* tplStrs */ js.UndefOr[Record[String, String | Double]]) => String): Self = StObject.set(x, "_", js.Any.fromFunction2(value))
     }
   }
   
@@ -205,41 +198,30 @@ object mod extends Shortcut {
   }
   object LogMessageObject {
     
-    @scala.inline
-    def apply(level: Double): LogMessageObject = {
+    inline def apply(level: Double): LogMessageObject = {
       val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
       __obj.asInstanceOf[LogMessageObject]
     }
     
-    @scala.inline
-    implicit class LogMessageObjectMutableBuilder[Self <: LogMessageObject] (val x: Self) extends AnyVal {
+    extension [Self <: LogMessageObject](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsg(value: LogMessage): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+      inline def setMsg(value: LogMessage): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgUndefined: Self = StObject.set(x, "msg", js.undefined)
+      inline def setMsgUndefined: Self = StObject.set(x, "msg", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -253,23 +235,18 @@ object mod extends Shortcut {
   }
   object MessageCatalog {
     
-    @scala.inline
-    def apply(dir: String, file: String, namespace: String): MessageCatalog = {
+    inline def apply(dir: String, file: String, namespace: String): MessageCatalog = {
       val __obj = js.Dynamic.literal(dir = dir.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], namespace = namespace.asInstanceOf[js.Any])
       __obj.asInstanceOf[MessageCatalog]
     }
     
-    @scala.inline
-    implicit class MessageCatalogMutableBuilder[Self <: MessageCatalog] (val x: Self) extends AnyVal {
+    extension [Self <: MessageCatalog](x: Self) {
       
-      @scala.inline
-      def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     }
   }
   
@@ -504,8 +481,7 @@ object mod extends Shortcut {
   }
   object UtilModule {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       i18n: I18n,
       init: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify runtime.LocalSettings */ js.Any => Unit,
       log: Log,
@@ -515,22 +491,17 @@ object mod extends Shortcut {
       __obj.asInstanceOf[UtilModule]
     }
     
-    @scala.inline
-    implicit class UtilModuleMutableBuilder[Self <: UtilModule] (val x: Self) extends AnyVal {
+    extension [Self <: UtilModule](x: Self) {
       
-      @scala.inline
-      def setI18n(value: I18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
+      inline def setI18n(value: I18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInit(
+      inline def setInit(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify runtime.LocalSettings */ js.Any => Unit
       ): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLog(value: Log): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: Log): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUtil(value: Util): Self = StObject.set(x, "util", value.asInstanceOf[js.Any])
+      inline def setUtil(value: Util): Self = StObject.set(x, "util", value.asInstanceOf[js.Any])
     }
   }
   

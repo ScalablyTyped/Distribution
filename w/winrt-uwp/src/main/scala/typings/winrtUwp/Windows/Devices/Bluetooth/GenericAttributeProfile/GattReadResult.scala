@@ -16,19 +16,15 @@ trait GattReadResult extends StObject {
 }
 object GattReadResult {
   
-  @scala.inline
-  def apply(status: GattCommunicationStatus, value: IBuffer): GattReadResult = {
+  inline def apply(status: GattCommunicationStatus, value: IBuffer): GattReadResult = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[GattReadResult]
   }
   
-  @scala.inline
-  implicit class GattReadResultMutableBuilder[Self <: GattReadResult] (val x: Self) extends AnyVal {
+  extension [Self <: GattReadResult](x: Self) {
     
-    @scala.inline
-    def setStatus(value: GattCommunicationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: GattCommunicationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: IBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: IBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

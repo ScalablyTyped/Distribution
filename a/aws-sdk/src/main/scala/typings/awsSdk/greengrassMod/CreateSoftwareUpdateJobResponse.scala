@@ -23,31 +23,23 @@ trait CreateSoftwareUpdateJobResponse extends StObject {
 }
 object CreateSoftwareUpdateJobResponse {
   
-  @scala.inline
-  def apply(): CreateSoftwareUpdateJobResponse = {
+  inline def apply(): CreateSoftwareUpdateJobResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateSoftwareUpdateJobResponse]
   }
   
-  @scala.inline
-  implicit class CreateSoftwareUpdateJobResponseMutableBuilder[Self <: CreateSoftwareUpdateJobResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSoftwareUpdateJobResponse](x: Self) {
     
-    @scala.inline
-    def setIotJobArn(value: string): Self = StObject.set(x, "IotJobArn", value.asInstanceOf[js.Any])
+    inline def setIotJobArn(value: string): Self = StObject.set(x, "IotJobArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIotJobArnUndefined: Self = StObject.set(x, "IotJobArn", js.undefined)
+    inline def setIotJobArnUndefined: Self = StObject.set(x, "IotJobArn", js.undefined)
     
-    @scala.inline
-    def setIotJobId(value: string): Self = StObject.set(x, "IotJobId", value.asInstanceOf[js.Any])
+    inline def setIotJobId(value: string): Self = StObject.set(x, "IotJobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIotJobIdUndefined: Self = StObject.set(x, "IotJobId", js.undefined)
+    inline def setIotJobIdUndefined: Self = StObject.set(x, "IotJobId", js.undefined)
     
-    @scala.inline
-    def setPlatformSoftwareVersion(value: string): Self = StObject.set(x, "PlatformSoftwareVersion", value.asInstanceOf[js.Any])
+    inline def setPlatformSoftwareVersion(value: string): Self = StObject.set(x, "PlatformSoftwareVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformSoftwareVersionUndefined: Self = StObject.set(x, "PlatformSoftwareVersion", js.undefined)
+    inline def setPlatformSoftwareVersionUndefined: Self = StObject.set(x, "PlatformSoftwareVersion", js.undefined)
   }
 }

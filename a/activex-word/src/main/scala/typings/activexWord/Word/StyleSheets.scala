@@ -23,13 +23,12 @@ trait StyleSheets extends StObject {
   
   val Parent: js.Any
   
-  @JSName("Word.StyleSheets_typekey")
+  /* private */ @JSName("Word.StyleSheets_typekey")
   var WordDotStyleSheets_typekey: StyleSheets
 }
 object StyleSheets {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: (String, WdStyleSheetLinkType, String, WdStyleSheetPrecedence) => StyleSheet,
     Application: Application,
     Count: Double,
@@ -43,28 +42,20 @@ object StyleSheets {
     __obj.asInstanceOf[StyleSheets]
   }
   
-  @scala.inline
-  implicit class StyleSheetsMutableBuilder[Self <: StyleSheets] (val x: Self) extends AnyVal {
+  extension [Self <: StyleSheets](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (String, WdStyleSheetLinkType, String, WdStyleSheetPrecedence) => StyleSheet): Self = StObject.set(x, "Add", js.Any.fromFunction4(value))
+    inline def setAdd(value: (String, WdStyleSheetLinkType, String, WdStyleSheetPrecedence) => StyleSheet): Self = StObject.set(x, "Add", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any => StyleSheet): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => StyleSheet): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotStyleSheets_typekey(value: StyleSheets): Self = StObject.set(x, "Word.StyleSheets_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotStyleSheets_typekey(value: StyleSheets): Self = StObject.set(x, "Word.StyleSheets_typekey", value.asInstanceOf[js.Any])
   }
 }

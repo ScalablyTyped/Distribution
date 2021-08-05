@@ -44,8 +44,7 @@ object PartEncoding {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): PartEncoding = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[PartEncoding]
+  inline def create(model: IModel): PartEncoding = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[PartEncoding]
   
   /**
     * Creates and returns a new PartEncoding instance in the SDK and on the server.
@@ -53,8 +52,7 @@ object PartEncoding {
     * of the parent OperationInfo element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInOperationInfoUnderRequestBodyPartEncodings(container: OperationInfo): PartEncoding = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOperationInfoUnderRequestBodyPartEncodings")(container.asInstanceOf[js.Any]).asInstanceOf[PartEncoding]
+  inline def createInOperationInfoUnderRequestBodyPartEncodings(container: OperationInfo): PartEncoding = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOperationInfoUnderRequestBodyPartEncodings")(container.asInstanceOf[js.Any]).asInstanceOf[PartEncoding]
   
   /**
     * Creates and returns a new PartEncoding instance in the SDK and on the server.
@@ -62,20 +60,17 @@ object PartEncoding {
     * of the parent OperationInfo element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInOperationInfoUnderRequestHeaderPartEncoding(container: OperationInfo): PartEncoding = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOperationInfoUnderRequestHeaderPartEncoding")(container.asInstanceOf[js.Any]).asInstanceOf[PartEncoding]
+  inline def createInOperationInfoUnderRequestHeaderPartEncoding(container: OperationInfo): PartEncoding = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOperationInfoUnderRequestHeaderPartEncoding")(container.asInstanceOf[js.Any]).asInstanceOf[PartEncoding]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.PartEncoding.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/webservices", "webservices.PartEncoding.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

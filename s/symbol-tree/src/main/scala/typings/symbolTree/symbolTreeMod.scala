@@ -60,20 +60,16 @@ object symbolTreeMod {
   }
   object IteratorOptions {
     
-    @scala.inline
-    def apply(): IteratorOptions = {
+    inline def apply(): IteratorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IteratorOptions]
     }
     
-    @scala.inline
-    implicit class IteratorOptionsMutableBuilder[Self <: IteratorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IteratorOptions](x: Self) {
       
-      @scala.inline
-      def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+      inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
+      inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
     }
   }
   
@@ -97,29 +93,22 @@ object symbolTreeMod {
   }
   object SiblingOptions {
     
-    @scala.inline
-    def apply[T /* <: js.Object */](): SiblingOptions[T] = {
+    inline def apply[T /* <: js.Object */](): SiblingOptions[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SiblingOptions[T]]
     }
     
-    @scala.inline
-    implicit class SiblingOptionsMutableBuilder[Self <: SiblingOptions[?], T /* <: js.Object */] (val x: Self & SiblingOptions[T]) extends AnyVal {
+    extension [Self <: SiblingOptions[?], T /* <: js.Object */](x: Self & SiblingOptions[T]) {
       
-      @scala.inline
-      def setRoot(value: T): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: T): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setSkipChildren(value: Boolean): Self = StObject.set(x, "skipChildren", value.asInstanceOf[js.Any])
+      inline def setSkipChildren(value: Boolean): Self = StObject.set(x, "skipChildren", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipChildrenUndefined: Self = StObject.set(x, "skipChildren", js.undefined)
+      inline def setSkipChildrenUndefined: Self = StObject.set(x, "skipChildren", js.undefined)
     }
   }
   
@@ -405,35 +394,26 @@ object symbolTreeMod {
   }
   object ToArrayOptions {
     
-    @scala.inline
-    def apply[T /* <: js.Object */](): ToArrayOptions[T] = {
+    inline def apply[T /* <: js.Object */](): ToArrayOptions[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ToArrayOptions[T]]
     }
     
-    @scala.inline
-    implicit class ToArrayOptionsMutableBuilder[Self <: ToArrayOptions[?], T /* <: js.Object */] (val x: Self & ToArrayOptions[T]) extends AnyVal {
+    extension [Self <: ToArrayOptions[?], T /* <: js.Object */](x: Self & ToArrayOptions[T]) {
       
-      @scala.inline
-      def setArray(value: js.Array[T]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+      inline def setArray(value: js.Array[T]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
+      inline def setArrayUndefined: Self = StObject.set(x, "array", js.undefined)
       
-      @scala.inline
-      def setArrayVarargs(value: T*): Self = StObject.set(x, "array", js.Array(value :_*))
+      inline def setArrayVarargs(value: T*): Self = StObject.set(x, "array", js.Array(value :_*))
       
-      @scala.inline
-      def setFilter(value: /* object */ T => js.Any): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: /* object */ T => js.Any): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setThisArg(value: js.Any): Self = StObject.set(x, "thisArg", value.asInstanceOf[js.Any])
+      inline def setThisArg(value: js.Any): Self = StObject.set(x, "thisArg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThisArgUndefined: Self = StObject.set(x, "thisArg", js.undefined)
+      inline def setThisArgUndefined: Self = StObject.set(x, "thisArg", js.undefined)
     }
   }
 }

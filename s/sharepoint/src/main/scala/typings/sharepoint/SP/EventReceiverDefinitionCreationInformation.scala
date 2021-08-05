@@ -38,8 +38,7 @@ trait EventReceiverDefinitionCreationInformation
 }
 object EventReceiverDefinitionCreationInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -64,49 +63,34 @@ object EventReceiverDefinitionCreationInformation {
     __obj.asInstanceOf[EventReceiverDefinitionCreationInformation]
   }
   
-  @scala.inline
-  implicit class EventReceiverDefinitionCreationInformationMutableBuilder[Self <: EventReceiverDefinitionCreationInformation] (val x: Self) extends AnyVal {
+  extension [Self <: EventReceiverDefinitionCreationInformation](x: Self) {
     
-    @scala.inline
-    def setGet_eventType(value: () => EventReceiverType): Self = StObject.set(x, "get_eventType", js.Any.fromFunction0(value))
+    inline def setGet_eventType(value: () => EventReceiverType): Self = StObject.set(x, "get_eventType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_receiverAssembly(value: () => String): Self = StObject.set(x, "get_receiverAssembly", js.Any.fromFunction0(value))
+    inline def setGet_receiverAssembly(value: () => String): Self = StObject.set(x, "get_receiverAssembly", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_receiverClass(value: () => String): Self = StObject.set(x, "get_receiverClass", js.Any.fromFunction0(value))
+    inline def setGet_receiverClass(value: () => String): Self = StObject.set(x, "get_receiverClass", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_receiverName(value: () => String): Self = StObject.set(x, "get_receiverName", js.Any.fromFunction0(value))
+    inline def setGet_receiverName(value: () => String): Self = StObject.set(x, "get_receiverName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_receiverUrl(value: () => String): Self = StObject.set(x, "get_receiverUrl", js.Any.fromFunction0(value))
+    inline def setGet_receiverUrl(value: () => String): Self = StObject.set(x, "get_receiverUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_sequenceNumber(value: () => Double): Self = StObject.set(x, "get_sequenceNumber", js.Any.fromFunction0(value))
+    inline def setGet_sequenceNumber(value: () => Double): Self = StObject.set(x, "get_sequenceNumber", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_synchronization(value: () => EventReceiverSynchronization): Self = StObject.set(x, "get_synchronization", js.Any.fromFunction0(value))
+    inline def setGet_synchronization(value: () => EventReceiverSynchronization): Self = StObject.set(x, "get_synchronization", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_eventType(value: EventReceiverType => Unit): Self = StObject.set(x, "set_eventType", js.Any.fromFunction1(value))
+    inline def setSet_eventType(value: EventReceiverType => Unit): Self = StObject.set(x, "set_eventType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_receiverAssembly(value: String => Unit): Self = StObject.set(x, "set_receiverAssembly", js.Any.fromFunction1(value))
+    inline def setSet_receiverAssembly(value: String => Unit): Self = StObject.set(x, "set_receiverAssembly", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_receiverClass(value: String => Unit): Self = StObject.set(x, "set_receiverClass", js.Any.fromFunction1(value))
+    inline def setSet_receiverClass(value: String => Unit): Self = StObject.set(x, "set_receiverClass", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_receiverName(value: String => Unit): Self = StObject.set(x, "set_receiverName", js.Any.fromFunction1(value))
+    inline def setSet_receiverName(value: String => Unit): Self = StObject.set(x, "set_receiverName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_receiverUrl(value: String => Unit): Self = StObject.set(x, "set_receiverUrl", js.Any.fromFunction1(value))
+    inline def setSet_receiverUrl(value: String => Unit): Self = StObject.set(x, "set_receiverUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_sequenceNumber(value: Double => Unit): Self = StObject.set(x, "set_sequenceNumber", js.Any.fromFunction1(value))
+    inline def setSet_sequenceNumber(value: Double => Unit): Self = StObject.set(x, "set_sequenceNumber", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_synchronization(value: EventReceiverSynchronization => Unit): Self = StObject.set(x, "set_synchronization", js.Any.fromFunction1(value))
+    inline def setSet_synchronization(value: EventReceiverSynchronization => Unit): Self = StObject.set(x, "set_synchronization", js.Any.fromFunction1(value))
   }
 }

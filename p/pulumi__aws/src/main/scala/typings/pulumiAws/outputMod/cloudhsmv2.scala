@@ -20,8 +20,7 @@ object cloudhsmv2 {
   }
   object ClusterClusterCertificate {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       awsHardwareCertificate: String,
       clusterCertificate: String,
       clusterCsr: String,
@@ -32,23 +31,17 @@ object cloudhsmv2 {
       __obj.asInstanceOf[ClusterClusterCertificate]
     }
     
-    @scala.inline
-    implicit class ClusterClusterCertificateMutableBuilder[Self <: ClusterClusterCertificate] (val x: Self) extends AnyVal {
+    extension [Self <: ClusterClusterCertificate](x: Self) {
       
-      @scala.inline
-      def setAwsHardwareCertificate(value: String): Self = StObject.set(x, "awsHardwareCertificate", value.asInstanceOf[js.Any])
+      inline def setAwsHardwareCertificate(value: String): Self = StObject.set(x, "awsHardwareCertificate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterCertificate(value: String): Self = StObject.set(x, "clusterCertificate", value.asInstanceOf[js.Any])
+      inline def setClusterCertificate(value: String): Self = StObject.set(x, "clusterCertificate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterCsr(value: String): Self = StObject.set(x, "clusterCsr", value.asInstanceOf[js.Any])
+      inline def setClusterCsr(value: String): Self = StObject.set(x, "clusterCsr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHsmCertificate(value: String): Self = StObject.set(x, "hsmCertificate", value.asInstanceOf[js.Any])
+      inline def setHsmCertificate(value: String): Self = StObject.set(x, "hsmCertificate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManufacturerHardwareCertificate(value: String): Self = StObject.set(x, "manufacturerHardwareCertificate", value.asInstanceOf[js.Any])
+      inline def setManufacturerHardwareCertificate(value: String): Self = StObject.set(x, "manufacturerHardwareCertificate", value.asInstanceOf[js.Any])
     }
   }
   
@@ -66,8 +59,7 @@ object cloudhsmv2 {
   }
   object GetClusterClusterCertificates {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       awsHardwareCertificate: String,
       clusterCertificate: String,
       clusterCsr: String,
@@ -78,23 +70,17 @@ object cloudhsmv2 {
       __obj.asInstanceOf[GetClusterClusterCertificates]
     }
     
-    @scala.inline
-    implicit class GetClusterClusterCertificatesMutableBuilder[Self <: GetClusterClusterCertificates] (val x: Self) extends AnyVal {
+    extension [Self <: GetClusterClusterCertificates](x: Self) {
       
-      @scala.inline
-      def setAwsHardwareCertificate(value: String): Self = StObject.set(x, "awsHardwareCertificate", value.asInstanceOf[js.Any])
+      inline def setAwsHardwareCertificate(value: String): Self = StObject.set(x, "awsHardwareCertificate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterCertificate(value: String): Self = StObject.set(x, "clusterCertificate", value.asInstanceOf[js.Any])
+      inline def setClusterCertificate(value: String): Self = StObject.set(x, "clusterCertificate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClusterCsr(value: String): Self = StObject.set(x, "clusterCsr", value.asInstanceOf[js.Any])
+      inline def setClusterCsr(value: String): Self = StObject.set(x, "clusterCsr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHsmCertificate(value: String): Self = StObject.set(x, "hsmCertificate", value.asInstanceOf[js.Any])
+      inline def setHsmCertificate(value: String): Self = StObject.set(x, "hsmCertificate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManufacturerHardwareCertificate(value: String): Self = StObject.set(x, "manufacturerHardwareCertificate", value.asInstanceOf[js.Any])
+      inline def setManufacturerHardwareCertificate(value: String): Self = StObject.set(x, "manufacturerHardwareCertificate", value.asInstanceOf[js.Any])
     }
   }
 }

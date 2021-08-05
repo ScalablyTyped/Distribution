@@ -12,25 +12,19 @@ trait DialogflowV1MessageBasicCardButton extends StObject {
 }
 object DialogflowV1MessageBasicCardButton {
   
-  @scala.inline
-  def apply(): DialogflowV1MessageBasicCardButton = {
+  inline def apply(): DialogflowV1MessageBasicCardButton = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DialogflowV1MessageBasicCardButton]
   }
   
-  @scala.inline
-  implicit class DialogflowV1MessageBasicCardButtonMutableBuilder[Self <: DialogflowV1MessageBasicCardButton] (val x: Self) extends AnyVal {
+  extension [Self <: DialogflowV1MessageBasicCardButton](x: Self) {
     
-    @scala.inline
-    def setOpenUrlAction(value: DialogflowV1MessageBasicCardButtonAction): Self = StObject.set(x, "openUrlAction", value.asInstanceOf[js.Any])
+    inline def setOpenUrlAction(value: DialogflowV1MessageBasicCardButtonAction): Self = StObject.set(x, "openUrlAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenUrlActionUndefined: Self = StObject.set(x, "openUrlAction", js.undefined)
+    inline def setOpenUrlActionUndefined: Self = StObject.set(x, "openUrlAction", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

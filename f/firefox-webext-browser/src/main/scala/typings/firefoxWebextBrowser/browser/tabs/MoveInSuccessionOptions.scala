@@ -16,25 +16,19 @@ trait MoveInSuccessionOptions extends StObject {
 }
 object MoveInSuccessionOptions {
   
-  @scala.inline
-  def apply(): MoveInSuccessionOptions = {
+  inline def apply(): MoveInSuccessionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MoveInSuccessionOptions]
   }
   
-  @scala.inline
-  implicit class MoveInSuccessionOptionsMutableBuilder[Self <: MoveInSuccessionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MoveInSuccessionOptions](x: Self) {
     
-    @scala.inline
-    def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
+    inline def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
+    inline def setAppendUndefined: Self = StObject.set(x, "append", js.undefined)
     
-    @scala.inline
-    def setInsert(value: Boolean): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
+    inline def setInsert(value: Boolean): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
+    inline def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
   }
 }

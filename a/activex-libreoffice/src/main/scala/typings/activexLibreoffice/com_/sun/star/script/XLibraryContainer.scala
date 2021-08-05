@@ -35,8 +35,7 @@ trait XLibraryContainer
 }
 object XLibraryContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementNames: SafeArray[String],
     ElementType: `type`,
     acquire: () => Unit,
@@ -57,22 +56,16 @@ object XLibraryContainer {
     __obj.asInstanceOf[XLibraryContainer]
   }
   
-  @scala.inline
-  implicit class XLibraryContainerMutableBuilder[Self <: XLibraryContainer] (val x: Self) extends AnyVal {
+  extension [Self <: XLibraryContainer](x: Self) {
     
-    @scala.inline
-    def setCreateLibrary(value: String => XNameContainer): Self = StObject.set(x, "createLibrary", js.Any.fromFunction1(value))
+    inline def setCreateLibrary(value: String => XNameContainer): Self = StObject.set(x, "createLibrary", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCreateLibraryLink(value: (String, String, Boolean) => XNameAccess): Self = StObject.set(x, "createLibraryLink", js.Any.fromFunction3(value))
+    inline def setCreateLibraryLink(value: (String, String, Boolean) => XNameAccess): Self = StObject.set(x, "createLibraryLink", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setIsLibraryLoaded(value: String => Boolean): Self = StObject.set(x, "isLibraryLoaded", js.Any.fromFunction1(value))
+    inline def setIsLibraryLoaded(value: String => Boolean): Self = StObject.set(x, "isLibraryLoaded", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLoadLibrary(value: String => Unit): Self = StObject.set(x, "loadLibrary", js.Any.fromFunction1(value))
+    inline def setLoadLibrary(value: String => Unit): Self = StObject.set(x, "loadLibrary", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveLibrary(value: String => Unit): Self = StObject.set(x, "removeLibrary", js.Any.fromFunction1(value))
+    inline def setRemoveLibrary(value: String => Unit): Self = StObject.set(x, "removeLibrary", js.Any.fromFunction1(value))
   }
 }

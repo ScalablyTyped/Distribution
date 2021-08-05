@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.MenuBar")
 @js.native
-class MenuBar protected ()
+/* private */ class MenuBar ()
   extends StObject
      with typings.activexExcel.Excel.MenuBar {
   
@@ -30,7 +30,7 @@ class MenuBar protected ()
   /* CompleteClass */
   override def Delete(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.MenuBar_typekey")
   var ExcelDotMenuBar_typekey: typings.activexExcel.Excel.MenuBar = js.native
   

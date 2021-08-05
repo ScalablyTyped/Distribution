@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Slicer")
 @js.native
-class Slicer protected ()
+/* private */ class Slicer ()
   extends StObject
      with typings.activexExcel.Excel.Slicer {
   
@@ -41,7 +41,7 @@ class Slicer protected ()
   /* CompleteClass */
   var DisplayHeader: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.Slicer_typekey")
   var ExcelDotSlicer_typekey: typings.activexExcel.Excel.Slicer = js.native
   

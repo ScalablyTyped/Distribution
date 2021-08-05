@@ -23,40 +23,29 @@ trait TrainLanguageModelParams extends StObject {
 }
 object TrainLanguageModelParams {
   
-  @scala.inline
-  def apply(customization_id: String): TrainLanguageModelParams = {
+  inline def apply(customization_id: String): TrainLanguageModelParams = {
     val __obj = js.Dynamic.literal(customization_id = customization_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrainLanguageModelParams]
   }
   
-  @scala.inline
-  implicit class TrainLanguageModelParamsMutableBuilder[Self <: TrainLanguageModelParams] (val x: Self) extends AnyVal {
+  extension [Self <: TrainLanguageModelParams](x: Self) {
     
-    @scala.inline
-    def setCustomization_id(value: String): Self = StObject.set(x, "customization_id", value.asInstanceOf[js.Any])
+    inline def setCustomization_id(value: String): Self = StObject.set(x, "customization_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomization_weight(value: Double): Self = StObject.set(x, "customization_weight", value.asInstanceOf[js.Any])
+    inline def setCustomization_weight(value: Double): Self = StObject.set(x, "customization_weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomization_weightUndefined: Self = StObject.set(x, "customization_weight", js.undefined)
+    inline def setCustomization_weightUndefined: Self = StObject.set(x, "customization_weight", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
     
-    @scala.inline
-    def setWord_type_to_add(value: WordTypeToAdd | String): Self = StObject.set(x, "word_type_to_add", value.asInstanceOf[js.Any])
+    inline def setWord_type_to_add(value: WordTypeToAdd | String): Self = StObject.set(x, "word_type_to_add", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWord_type_to_addUndefined: Self = StObject.set(x, "word_type_to_add", js.undefined)
+    inline def setWord_type_to_addUndefined: Self = StObject.set(x, "word_type_to_add", js.undefined)
   }
 }

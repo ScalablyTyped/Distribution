@@ -15,28 +15,21 @@ trait DialogStackedActionsProps extends StObject {
 }
 object DialogStackedActionsProps {
   
-  @scala.inline
-  def apply(actions: js.Array[String], onActionPress: String => Unit): DialogStackedActionsProps = {
+  inline def apply(actions: js.Array[String], onActionPress: String => Unit): DialogStackedActionsProps = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], onActionPress = js.Any.fromFunction1(onActionPress))
     __obj.asInstanceOf[DialogStackedActionsProps]
   }
   
-  @scala.inline
-  implicit class DialogStackedActionsPropsMutableBuilder[Self <: DialogStackedActionsProps] (val x: Self) extends AnyVal {
+  extension [Self <: DialogStackedActionsProps](x: Self) {
     
-    @scala.inline
-    def setActions(value: js.Array[String]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[String]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: String*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
-    @scala.inline
-    def setOnActionPress(value: String => Unit): Self = StObject.set(x, "onActionPress", js.Any.fromFunction1(value))
+    inline def setOnActionPress(value: String => Unit): Self = StObject.set(x, "onActionPress", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStyle(value: StackedActionsContainer): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: StackedActionsContainer): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

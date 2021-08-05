@@ -21,25 +21,19 @@ trait SchemaRegionInstanceGroupsListInstancesRequest extends StObject {
 }
 object SchemaRegionInstanceGroupsListInstancesRequest {
   
-  @scala.inline
-  def apply(): SchemaRegionInstanceGroupsListInstancesRequest = {
+  inline def apply(): SchemaRegionInstanceGroupsListInstancesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRegionInstanceGroupsListInstancesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaRegionInstanceGroupsListInstancesRequestMutableBuilder[Self <: SchemaRegionInstanceGroupsListInstancesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRegionInstanceGroupsListInstancesRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceState(value: String): Self = StObject.set(x, "instanceState", value.asInstanceOf[js.Any])
+    inline def setInstanceState(value: String): Self = StObject.set(x, "instanceState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceStateUndefined: Self = StObject.set(x, "instanceState", js.undefined)
+    inline def setInstanceStateUndefined: Self = StObject.set(x, "instanceState", js.undefined)
     
-    @scala.inline
-    def setPortName(value: String): Self = StObject.set(x, "portName", value.asInstanceOf[js.Any])
+    inline def setPortName(value: String): Self = StObject.set(x, "portName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortNameUndefined: Self = StObject.set(x, "portName", js.undefined)
+    inline def setPortNameUndefined: Self = StObject.set(x, "portName", js.undefined)
   }
 }

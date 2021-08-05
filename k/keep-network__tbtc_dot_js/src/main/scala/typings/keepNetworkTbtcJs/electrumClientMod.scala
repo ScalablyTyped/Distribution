@@ -97,8 +97,7 @@ object electrumClientMod {
   }
   object Client {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       broadcastTransaction: String => String,
       close: () => js.Promise[Unit],
       connect: () => js.Promise[Unit],
@@ -119,53 +118,37 @@ object electrumClientMod {
       __obj.asInstanceOf[Client]
     }
     
-    @scala.inline
-    implicit class ClientMutableBuilder[Self <: Client] (val x: Self) extends AnyVal {
+    extension [Self <: Client](x: Self) {
       
-      @scala.inline
-      def setBroadcastTransaction(value: String => String): Self = StObject.set(x, "broadcastTransaction", js.Any.fromFunction1(value))
+      inline def setBroadcastTransaction(value: String => String): Self = StObject.set(x, "broadcastTransaction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setConnect(value: () => js.Promise[Unit]): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
+      inline def setConnect(value: () => js.Promise[Unit]): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setElectrumClient(value: js.Any): Self = StObject.set(x, "electrumClient", value.asInstanceOf[js.Any])
+      inline def setElectrumClient(value: js.Any): Self = StObject.set(x, "electrumClient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFindOutputForAddress(value: (String, String) => Double): Self = StObject.set(x, "findOutputForAddress", js.Any.fromFunction2(value))
+      inline def setFindOutputForAddress(value: (String, String) => Double): Self = StObject.set(x, "findOutputForAddress", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetBalanceOfScript(value: String => js.Any): Self = StObject.set(x, "getBalanceOfScript", js.Any.fromFunction1(value))
+      inline def setGetBalanceOfScript(value: String => js.Any): Self = StObject.set(x, "getBalanceOfScript", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetHeadersChain(value: (Double, Double) => String): Self = StObject.set(x, "getHeadersChain", js.Any.fromFunction2(value))
+      inline def setGetHeadersChain(value: (Double, Double) => String): Self = StObject.set(x, "getHeadersChain", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetMerkleProof(value: (String, Double) => String): Self = StObject.set(x, "getMerkleProof", js.Any.fromFunction2(value))
+      inline def setGetMerkleProof(value: (String, Double) => String): Self = StObject.set(x, "getMerkleProof", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetMerkleRoot(value: Double => String): Self = StObject.set(x, "getMerkleRoot", js.Any.fromFunction1(value))
+      inline def setGetMerkleRoot(value: Double => String): Self = StObject.set(x, "getMerkleRoot", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetTransaction(value: String => js.Any): Self = StObject.set(x, "getTransaction", js.Any.fromFunction1(value))
+      inline def setGetTransaction(value: String => js.Any): Self = StObject.set(x, "getTransaction", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetTransactionsForScript(value: String => js.Any): Self = StObject.set(x, "getTransactionsForScript", js.Any.fromFunction1(value))
+      inline def setGetTransactionsForScript(value: String => js.Any): Self = StObject.set(x, "getTransactionsForScript", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetUnspentToScript(value: String => js.Any): Self = StObject.set(x, "getUnspentToScript", js.Any.fromFunction1(value))
+      inline def setGetUnspentToScript(value: String => js.Any): Self = StObject.set(x, "getUnspentToScript", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLatestBlockHeight(value: () => Double): Self = StObject.set(x, "latestBlockHeight", js.Any.fromFunction0(value))
+      inline def setLatestBlockHeight(value: () => Double): Self = StObject.set(x, "latestBlockHeight", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnNewBlock(value: js.Function1[/* block */ js.Any, Unit] => js.Any): Self = StObject.set(x, "onNewBlock", js.Any.fromFunction1(value))
+      inline def setOnNewBlock(value: js.Function1[/* block */ js.Any, Unit] => js.Any): Self = StObject.set(x, "onNewBlock", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTransactionToScript(value: (String, js.Function1[/* state */ js.Any, Unit]) => js.Any): Self = StObject.set(x, "onTransactionToScript", js.Any.fromFunction2(value))
+      inline def setOnTransactionToScript(value: (String, js.Function1[/* state */ js.Any, Unit]) => js.Any): Self = StObject.set(x, "onTransactionToScript", js.Any.fromFunction2(value))
     }
   }
   
@@ -181,29 +164,22 @@ object electrumClientMod {
   }
   object Config {
     
-    @scala.inline
-    def apply(port: Double, protocol: ssl | tls | ws | wss, server: String): Config = {
+    inline def apply(port: Double, protocol: ssl | tls | ws | wss, server: String): Config = {
       val __obj = js.Dynamic.literal(port = port.asInstanceOf[js.Any], protocol = protocol.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any])
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocol(value: ssl | tls | ws | wss): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: ssl | tls | ws | wss): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+      inline def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     }
   }
 }

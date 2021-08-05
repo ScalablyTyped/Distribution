@@ -18,19 +18,15 @@ trait ChangePasswordRequest extends StObject {
 }
 object ChangePasswordRequest {
   
-  @scala.inline
-  def apply(NewPassword: passwordType, OldPassword: passwordType): ChangePasswordRequest = {
+  inline def apply(NewPassword: passwordType, OldPassword: passwordType): ChangePasswordRequest = {
     val __obj = js.Dynamic.literal(NewPassword = NewPassword.asInstanceOf[js.Any], OldPassword = OldPassword.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangePasswordRequest]
   }
   
-  @scala.inline
-  implicit class ChangePasswordRequestMutableBuilder[Self <: ChangePasswordRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ChangePasswordRequest](x: Self) {
     
-    @scala.inline
-    def setNewPassword(value: passwordType): Self = StObject.set(x, "NewPassword", value.asInstanceOf[js.Any])
+    inline def setNewPassword(value: passwordType): Self = StObject.set(x, "NewPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldPassword(value: passwordType): Self = StObject.set(x, "OldPassword", value.asInstanceOf[js.Any])
+    inline def setOldPassword(value: passwordType): Self = StObject.set(x, "OldPassword", value.asInstanceOf[js.Any])
   }
 }

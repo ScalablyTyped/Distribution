@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XREye extends StObject
 object XREye {
   
-  @scala.inline
-  def left: typings.three.threeStrings.left = "left".asInstanceOf[typings.three.threeStrings.left]
+  inline def left: typings.three.threeStrings.left = "left".asInstanceOf[typings.three.threeStrings.left]
   
-  @scala.inline
-  def none: typings.three.threeStrings.none = "none".asInstanceOf[typings.three.threeStrings.none]
+  inline def none: typings.three.threeStrings.none = "none".asInstanceOf[typings.three.threeStrings.none]
   
-  @scala.inline
-  def right: typings.three.threeStrings.right = "right".asInstanceOf[typings.three.threeStrings.right]
+  inline def right: typings.three.threeStrings.right = "right".asInstanceOf[typings.three.threeStrings.right]
 }

@@ -15,16 +15,13 @@ trait CalloutProps extends StObject {
 }
 object CalloutProps {
   
-  @scala.inline
-  def apply(calloutProps: DirectionalHint): CalloutProps = {
+  inline def apply(calloutProps: DirectionalHint): CalloutProps = {
     val __obj = js.Dynamic.literal(calloutProps = calloutProps.asInstanceOf[js.Any])
     __obj.asInstanceOf[CalloutProps]
   }
   
-  @scala.inline
-  implicit class CalloutPropsMutableBuilder[Self <: CalloutProps] (val x: Self) extends AnyVal {
+  extension [Self <: CalloutProps](x: Self) {
     
-    @scala.inline
-    def setCalloutProps(value: DirectionalHint): Self = StObject.set(x, "calloutProps", value.asInstanceOf[js.Any])
+    inline def setCalloutProps(value: DirectionalHint): Self = StObject.set(x, "calloutProps", value.asInstanceOf[js.Any])
   }
 }

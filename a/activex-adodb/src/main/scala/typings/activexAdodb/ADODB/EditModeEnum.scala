@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EditModeEnum extends StObject
 object EditModeEnum {
   
-  @scala.inline
-  def adEditAdd: `2` = 2.asInstanceOf[`2`]
+  inline def adEditAdd: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def adEditDelete: `4` = 4.asInstanceOf[`4`]
+  inline def adEditDelete: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def adEditInProgress: `1` = 1.asInstanceOf[`1`]
+  inline def adEditInProgress: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def adEditNone: `0` = 0.asInstanceOf[`0`]
+  inline def adEditNone: `0` = 0.asInstanceOf[`0`]
 }

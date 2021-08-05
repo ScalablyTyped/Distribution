@@ -19,26 +19,20 @@ trait AssemblyCall
 }
 object AssemblyCall {
   
-  @scala.inline
-  def apply(arguments: js.Array[AssemblyExpression], functionName: String): AssemblyCall = {
+  inline def apply(arguments: js.Array[AssemblyExpression], functionName: String): AssemblyCall = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], functionName = functionName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("AssemblyCall")
     __obj.asInstanceOf[AssemblyCall]
   }
   
-  @scala.inline
-  implicit class AssemblyCallMutableBuilder[Self <: AssemblyCall] (val x: Self) extends AnyVal {
+  extension [Self <: AssemblyCall](x: Self) {
     
-    @scala.inline
-    def setArguments(value: js.Array[AssemblyExpression]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: js.Array[AssemblyExpression]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgumentsVarargs(value: AssemblyExpression*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: AssemblyExpression*): Self = StObject.set(x, "arguments", js.Array(value :_*))
     
-    @scala.inline
-    def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
+    inline def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyCall): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyCall): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

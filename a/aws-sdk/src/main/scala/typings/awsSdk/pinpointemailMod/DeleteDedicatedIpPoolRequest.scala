@@ -13,16 +13,13 @@ trait DeleteDedicatedIpPoolRequest extends StObject {
 }
 object DeleteDedicatedIpPoolRequest {
   
-  @scala.inline
-  def apply(PoolName: PoolName): DeleteDedicatedIpPoolRequest = {
+  inline def apply(PoolName: PoolName): DeleteDedicatedIpPoolRequest = {
     val __obj = js.Dynamic.literal(PoolName = PoolName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDedicatedIpPoolRequest]
   }
   
-  @scala.inline
-  implicit class DeleteDedicatedIpPoolRequestMutableBuilder[Self <: DeleteDedicatedIpPoolRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDedicatedIpPoolRequest](x: Self) {
     
-    @scala.inline
-    def setPoolName(value: PoolName): Self = StObject.set(x, "PoolName", value.asInstanceOf[js.Any])
+    inline def setPoolName(value: PoolName): Self = StObject.set(x, "PoolName", value.asInstanceOf[js.Any])
   }
 }

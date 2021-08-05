@@ -58,64 +58,45 @@ trait Budget extends StObject {
 }
 object Budget {
   
-  @scala.inline
-  def apply(BudgetName: BudgetName, BudgetType: BudgetType, TimeUnit: TimeUnit): Budget = {
+  inline def apply(BudgetName: BudgetName, BudgetType: BudgetType, TimeUnit: TimeUnit): Budget = {
     val __obj = js.Dynamic.literal(BudgetName = BudgetName.asInstanceOf[js.Any], BudgetType = BudgetType.asInstanceOf[js.Any], TimeUnit = TimeUnit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Budget]
   }
   
-  @scala.inline
-  implicit class BudgetMutableBuilder[Self <: Budget] (val x: Self) extends AnyVal {
+  extension [Self <: Budget](x: Self) {
     
-    @scala.inline
-    def setBudgetLimit(value: Spend): Self = StObject.set(x, "BudgetLimit", value.asInstanceOf[js.Any])
+    inline def setBudgetLimit(value: Spend): Self = StObject.set(x, "BudgetLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBudgetLimitUndefined: Self = StObject.set(x, "BudgetLimit", js.undefined)
+    inline def setBudgetLimitUndefined: Self = StObject.set(x, "BudgetLimit", js.undefined)
     
-    @scala.inline
-    def setBudgetName(value: BudgetName): Self = StObject.set(x, "BudgetName", value.asInstanceOf[js.Any])
+    inline def setBudgetName(value: BudgetName): Self = StObject.set(x, "BudgetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBudgetType(value: BudgetType): Self = StObject.set(x, "BudgetType", value.asInstanceOf[js.Any])
+    inline def setBudgetType(value: BudgetType): Self = StObject.set(x, "BudgetType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalculatedSpend(value: CalculatedSpend): Self = StObject.set(x, "CalculatedSpend", value.asInstanceOf[js.Any])
+    inline def setCalculatedSpend(value: CalculatedSpend): Self = StObject.set(x, "CalculatedSpend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalculatedSpendUndefined: Self = StObject.set(x, "CalculatedSpend", js.undefined)
+    inline def setCalculatedSpendUndefined: Self = StObject.set(x, "CalculatedSpend", js.undefined)
     
-    @scala.inline
-    def setCostFilters(value: CostFilters): Self = StObject.set(x, "CostFilters", value.asInstanceOf[js.Any])
+    inline def setCostFilters(value: CostFilters): Self = StObject.set(x, "CostFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCostFiltersUndefined: Self = StObject.set(x, "CostFilters", js.undefined)
+    inline def setCostFiltersUndefined: Self = StObject.set(x, "CostFilters", js.undefined)
     
-    @scala.inline
-    def setCostTypes(value: CostTypes): Self = StObject.set(x, "CostTypes", value.asInstanceOf[js.Any])
+    inline def setCostTypes(value: CostTypes): Self = StObject.set(x, "CostTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCostTypesUndefined: Self = StObject.set(x, "CostTypes", js.undefined)
+    inline def setCostTypesUndefined: Self = StObject.set(x, "CostTypes", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedTime(value: GenericTimestamp): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: GenericTimestamp): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
+    inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
     
-    @scala.inline
-    def setPlannedBudgetLimits(value: PlannedBudgetLimits): Self = StObject.set(x, "PlannedBudgetLimits", value.asInstanceOf[js.Any])
+    inline def setPlannedBudgetLimits(value: PlannedBudgetLimits): Self = StObject.set(x, "PlannedBudgetLimits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlannedBudgetLimitsUndefined: Self = StObject.set(x, "PlannedBudgetLimits", js.undefined)
+    inline def setPlannedBudgetLimitsUndefined: Self = StObject.set(x, "PlannedBudgetLimits", js.undefined)
     
-    @scala.inline
-    def setTimePeriod(value: TimePeriod): Self = StObject.set(x, "TimePeriod", value.asInstanceOf[js.Any])
+    inline def setTimePeriod(value: TimePeriod): Self = StObject.set(x, "TimePeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimePeriodUndefined: Self = StObject.set(x, "TimePeriod", js.undefined)
+    inline def setTimePeriodUndefined: Self = StObject.set(x, "TimePeriod", js.undefined)
     
-    @scala.inline
-    def setTimeUnit(value: TimeUnit): Self = StObject.set(x, "TimeUnit", value.asInstanceOf[js.Any])
+    inline def setTimeUnit(value: TimeUnit): Self = StObject.set(x, "TimeUnit", value.asInstanceOf[js.Any])
   }
 }

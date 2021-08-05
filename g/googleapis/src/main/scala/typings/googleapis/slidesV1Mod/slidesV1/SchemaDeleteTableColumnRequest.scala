@@ -24,25 +24,19 @@ trait SchemaDeleteTableColumnRequest extends StObject {
 }
 object SchemaDeleteTableColumnRequest {
   
-  @scala.inline
-  def apply(): SchemaDeleteTableColumnRequest = {
+  inline def apply(): SchemaDeleteTableColumnRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDeleteTableColumnRequest]
   }
   
-  @scala.inline
-  implicit class SchemaDeleteTableColumnRequestMutableBuilder[Self <: SchemaDeleteTableColumnRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDeleteTableColumnRequest](x: Self) {
     
-    @scala.inline
-    def setCellLocation(value: SchemaTableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
+    inline def setCellLocation(value: SchemaTableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellLocationUndefined: Self = StObject.set(x, "cellLocation", js.undefined)
+    inline def setCellLocationUndefined: Self = StObject.set(x, "cellLocation", js.undefined)
     
-    @scala.inline
-    def setTableObjectId(value: String): Self = StObject.set(x, "tableObjectId", value.asInstanceOf[js.Any])
+    inline def setTableObjectId(value: String): Self = StObject.set(x, "tableObjectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableObjectIdUndefined: Self = StObject.set(x, "tableObjectId", js.undefined)
+    inline def setTableObjectIdUndefined: Self = StObject.set(x, "tableObjectId", js.undefined)
   }
 }

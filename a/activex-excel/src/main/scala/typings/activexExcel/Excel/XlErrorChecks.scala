@@ -27,30 +27,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlErrorChecks extends StObject
 object XlErrorChecks {
   
-  @scala.inline
-  def xlEmptyCellReferences: `7` = 7.asInstanceOf[`7`]
+  inline def xlEmptyCellReferences: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def xlEvaluateToError: `1` = 1.asInstanceOf[`1`]
+  inline def xlEvaluateToError: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlInconsistentFormula: `4` = 4.asInstanceOf[`4`]
+  inline def xlInconsistentFormula: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def xlInconsistentListFormula: `9` = 9.asInstanceOf[`9`]
+  inline def xlInconsistentListFormula: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def xlListDataValidation: `8` = 8.asInstanceOf[`8`]
+  inline def xlListDataValidation: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def xlNumberAsText: `3` = 3.asInstanceOf[`3`]
+  inline def xlNumberAsText: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def xlOmittedCells: `5` = 5.asInstanceOf[`5`]
+  inline def xlOmittedCells: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def xlTextDate: `2` = 2.asInstanceOf[`2`]
+  inline def xlTextDate: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlUnlockedFormulaCells: `6` = 6.asInstanceOf[`6`]
+  inline def xlUnlockedFormulaCells: `6` = 6.asInstanceOf[`6`]
 }

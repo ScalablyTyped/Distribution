@@ -13,19 +13,16 @@ trait Log
 }
 object Log {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     log: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object
   ): Log = {
     val __obj = js.Dynamic.literal(log = log.asInstanceOf[js.Any])
     __obj.asInstanceOf[Log]
   }
   
-  @scala.inline
-  implicit class LogMutableBuilder[Self <: Log] (val x: Self) extends AnyVal {
+  extension [Self <: Log](x: Self) {
     
-    @scala.inline
-    def setLog(
+    inline def setLog(
       value: /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias json-logic-js.json-logic-js.RulesLogic */ js.Object
     ): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
   }

@@ -23,25 +23,19 @@ trait IContainer
 }
 object IContainer {
   
-  @scala.inline
-  def apply(): IContainer = {
+  inline def apply(): IContainer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IContainer]
   }
   
-  @scala.inline
-  implicit class IContainerMutableBuilder[Self <: IContainer] (val x: Self) extends AnyVal {
+  extension [Self <: IContainer](x: Self) {
     
-    @scala.inline
-    def setAnchorSize(value: js.Any): Self = StObject.set(x, "anchorSize", value.asInstanceOf[js.Any])
+    inline def setAnchorSize(value: js.Any): Self = StObject.set(x, "anchorSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorSizeUndefined: Self = StObject.set(x, "anchorSize", js.undefined)
+    inline def setAnchorSizeUndefined: Self = StObject.set(x, "anchorSize", js.undefined)
     
-    @scala.inline
-    def setGetChildByElement(value: (/* el */ js.UndefOr[js.Any], /* deep */ js.UndefOr[Boolean]) => IComponent): Self = StObject.set(x, "getChildByElement", js.Any.fromFunction2(value))
+    inline def setGetChildByElement(value: (/* el */ js.UndefOr[js.Any], /* deep */ js.UndefOr[Boolean]) => IComponent): Self = StObject.set(x, "getChildByElement", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetChildByElementUndefined: Self = StObject.set(x, "getChildByElement", js.undefined)
+    inline def setGetChildByElementUndefined: Self = StObject.set(x, "getChildByElement", js.undefined)
   }
 }

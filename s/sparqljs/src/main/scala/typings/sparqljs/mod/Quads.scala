@@ -11,15 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Quads extends StObject
 object Quads {
   
-  @scala.inline
-  def BgpPattern(triples: js.Array[Triple]): typings.sparqljs.mod.BgpPattern = {
+  inline def BgpPattern(triples: js.Array[Triple]): typings.sparqljs.mod.BgpPattern = {
     val __obj = js.Dynamic.literal(triples = triples.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("bgp")
     __obj.asInstanceOf[typings.sparqljs.mod.BgpPattern]
   }
   
-  @scala.inline
-  def GraphQuads(name: IriTerm, triples: js.Array[Triple]): typings.sparqljs.mod.GraphQuads = {
+  inline def GraphQuads(name: IriTerm, triples: js.Array[Triple]): typings.sparqljs.mod.GraphQuads = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], triples = triples.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("graph")
     __obj.asInstanceOf[typings.sparqljs.mod.GraphQuads]

@@ -29,7 +29,7 @@ object global {
     
     @JSGlobal("VBIDE.AddIn")
     @js.native
-    class AddIn protected ()
+    /* private */ class AddIn ()
       extends StObject
          with typings.activexVbide.VBIDE.AddIn {
       
@@ -57,18 +57,18 @@ object global {
       /* CompleteClass */
       override val VBE: typings.activexVbide.VBIDE.VBE = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("VBIDE.AddIn_typekey")
       var VBIDEDotAddIn_typekey: typings.activexVbide.VBIDE.AddIn = js.native
     }
     
     @JSGlobal("VBIDE.Application")
     @js.native
-    class Application protected ()
+    /* private */ class Application ()
       extends StObject
          with typings.activexVbide.VBIDE.Application {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("VBIDE.Application_typekey")
       var VBIDEDotApplication_typekey: typings.activexVbide.VBIDE.Application = js.native
       
@@ -78,13 +78,13 @@ object global {
     
     @JSGlobal("VBIDE.CodeModule")
     @js.native
-    class CodeModule protected ()
+    /* private */ class CodeModule ()
       extends StObject
          with typings.activexVbide.VBIDE.CodeModule
     
     @JSGlobal("VBIDE.CodePane")
     @js.native
-    class CodePane protected ()
+    /* private */ class CodePane ()
       extends StObject
          with typings.activexVbide.VBIDE.CodePane {
       
@@ -118,7 +118,7 @@ object global {
       /* CompleteClass */
       override val VBE: typings.activexVbide.VBIDE.VBE = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("VBIDE.CodePane_typekey")
       var VBIDEDotCodePane_typekey: typings.activexVbide.VBIDE.CodePane = js.native
       
@@ -128,18 +128,18 @@ object global {
     
     @JSGlobal("VBIDE.CommandBarEvents")
     @js.native
-    class CommandBarEvents protected ()
+    /* private */ class CommandBarEvents ()
       extends StObject
          with typings.activexVbide.VBIDE.CommandBarEvents {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("VBIDE.CommandBarEvents_typekey")
       var VBIDEDotCommandBarEvents_typekey: typings.activexVbide.VBIDE.CommandBarEvents = js.native
     }
     
     @JSGlobal("VBIDE.Component")
     @js.native
-    class Component protected ()
+    /* private */ class Component ()
       extends StObject
          with typings.activexVbide.VBIDE.Component {
       
@@ -158,14 +158,14 @@ object global {
       @JSName("Parent")
       override val Parent_Original: Components = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("VBIDE.Component_typekey")
       var VBIDEDotComponent_typekey: typings.activexVbide.VBIDE.Component = js.native
     }
     
     @JSGlobal("VBIDE.Events")
     @js.native
-    class Events protected ()
+    /* private */ class Events ()
       extends StObject
          with typings.activexVbide.VBIDE.Events {
       
@@ -175,14 +175,14 @@ object global {
       /* CompleteClass */
       override def ReferencesEvents(VBProject: typings.activexVbide.VBIDE.VBProject): typings.activexVbide.VBIDE.ReferencesEvents = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("VBIDE.Events_typekey")
       var VBIDEDotEvents_typekey: typings.activexVbide.VBIDE.Events = js.native
     }
     
     @JSGlobal("VBIDE.ProjectTemplate")
     @js.native
-    class ProjectTemplate protected ()
+    /* private */ class ProjectTemplate ()
       extends StObject
          with typings.activexVbide.VBIDE.ProjectTemplate {
       
@@ -192,20 +192,20 @@ object global {
       /* CompleteClass */
       override val Parent: typings.activexVbide.VBIDE.Application = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("VBIDE.ProjectTemplate_typekey")
       var VBIDEDotProjectTemplate_typekey: typings.activexVbide.VBIDE.ProjectTemplate = js.native
     }
     
     @JSGlobal("VBIDE.Property")
     @js.native
-    class Property protected ()
+    /* private */ class Property ()
       extends StObject
          with typings.activexVbide.VBIDE.Property
     
     @JSGlobal("VBIDE.Reference")
     @js.native
-    class Reference protected ()
+    /* private */ class Reference ()
       extends StObject
          with typings.activexVbide.VBIDE.Reference {
       
@@ -245,25 +245,25 @@ object global {
       /* CompleteClass */
       override val VBE: typings.activexVbide.VBIDE.VBE = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("VBIDE.Reference_typekey")
       var VBIDEDotReference_typekey: typings.activexVbide.VBIDE.Reference = js.native
     }
     
     @JSGlobal("VBIDE.ReferencesEvents")
     @js.native
-    class ReferencesEvents protected ()
+    /* private */ class ReferencesEvents ()
       extends StObject
          with typings.activexVbide.VBIDE.ReferencesEvents {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("VBIDE.ReferencesEvents_typekey")
       var VBIDEDotReferencesEvents_typekey: typings.activexVbide.VBIDE.ReferencesEvents = js.native
     }
     
     @JSGlobal("VBIDE.VBComponent")
     @js.native
-    class VBComponent protected ()
+    /* private */ class VBComponent ()
       extends StObject
          with typings.activexVbide.VBIDE.VBComponent {
       
@@ -312,14 +312,14 @@ object global {
       /* CompleteClass */
       override val VBE: typings.activexVbide.VBIDE.VBE = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("VBIDE.VBComponent_typekey")
       var VBIDEDotVBComponent_typekey: typings.activexVbide.VBIDE.VBComponent = js.native
     }
     
     @JSGlobal("VBIDE.VBE")
     @js.native
-    class VBE protected ()
+    /* private */ class VBE ()
       extends StObject
          with typings.activexVbide.VBIDE.VBE {
       
@@ -361,7 +361,7 @@ object global {
       /* CompleteClass */
       override val SelectedVBComponent: typings.activexVbide.VBIDE.VBComponent = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("VBIDE.VBE_typekey")
       var VBIDEDotVBE_typekey: typings.activexVbide.VBIDE.VBE = js.native
       
@@ -383,7 +383,7 @@ object global {
     
     @JSGlobal("VBIDE.VBProject")
     @js.native
-    class VBProject protected ()
+    /* private */ class VBProject ()
       extends StObject
          with typings.activexVbide.VBIDE.VBProject {
       
@@ -450,14 +450,14 @@ object global {
       /* CompleteClass */
       override val VBE: typings.activexVbide.VBIDE.VBE = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("VBIDE.VBProject_typekey")
       var VBIDEDotVBProject_typekey: typings.activexVbide.VBIDE.VBProject = js.native
     }
     
     @JSGlobal("VBIDE.Window")
     @js.native
-    class Window protected ()
+    /* private */ class Window ()
       extends StObject
          with typings.activexVbide.VBIDE.Window {
       
@@ -503,7 +503,7 @@ object global {
       /* CompleteClass */
       override val VBE: typings.activexVbide.VBIDE.VBE = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("VBIDE.Window_typekey")
       var VBIDEDotWindow_typekey: typings.activexVbide.VBIDE.Window = js.native
       

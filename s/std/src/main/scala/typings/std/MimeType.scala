@@ -29,8 +29,7 @@ trait MimeType extends StObject {
 }
 object MimeType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     description: java.lang.String,
     enabledPlugin: Plugin,
     suffixes: java.lang.String,
@@ -41,19 +40,14 @@ object MimeType {
     __obj.asInstanceOf[MimeType]
   }
   
-  @scala.inline
-  implicit class MimeTypeMutableBuilder[Self <: MimeType] (val x: Self) extends AnyVal {
+  extension [Self <: MimeType](x: Self) {
     
-    @scala.inline
-    def setDescription(value: java.lang.String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: java.lang.String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledPlugin(value: Plugin): Self = StObject.set(x, "enabledPlugin", value.asInstanceOf[js.Any])
+    inline def setEnabledPlugin(value: Plugin): Self = StObject.set(x, "enabledPlugin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuffixes(value: java.lang.String): Self = StObject.set(x, "suffixes", value.asInstanceOf[js.Any])
+    inline def setSuffixes(value: java.lang.String): Self = StObject.set(x, "suffixes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: java.lang.String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: java.lang.String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

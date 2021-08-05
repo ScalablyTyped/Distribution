@@ -10,19 +10,15 @@ trait ScrollOptions extends StObject {
 }
 object ScrollOptions {
   
-  @scala.inline
-  def apply(): ScrollOptions = {
+  inline def apply(): ScrollOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScrollOptions]
   }
   
-  @scala.inline
-  implicit class ScrollOptionsMutableBuilder[Self <: ScrollOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ScrollOptions](x: Self) {
     
-    @scala.inline
-    def setBehavior(value: ScrollBehavior): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
+    inline def setBehavior(value: ScrollBehavior): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
+    inline def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
   }
 }

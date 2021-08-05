@@ -18,22 +18,17 @@ trait PerformSearchRequest extends StObject {
 }
 object PerformSearchRequest {
   
-  @scala.inline
-  def apply(query: String): PerformSearchRequest = {
+  inline def apply(query: String): PerformSearchRequest = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[PerformSearchRequest]
   }
   
-  @scala.inline
-  implicit class PerformSearchRequestMutableBuilder[Self <: PerformSearchRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PerformSearchRequest](x: Self) {
     
-    @scala.inline
-    def setIncludeUserAgentShadowDOM(value: Boolean): Self = StObject.set(x, "includeUserAgentShadowDOM", value.asInstanceOf[js.Any])
+    inline def setIncludeUserAgentShadowDOM(value: Boolean): Self = StObject.set(x, "includeUserAgentShadowDOM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUserAgentShadowDOMUndefined: Self = StObject.set(x, "includeUserAgentShadowDOM", js.undefined)
+    inline def setIncludeUserAgentShadowDOMUndefined: Self = StObject.set(x, "includeUserAgentShadowDOM", js.undefined)
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

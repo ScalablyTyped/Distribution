@@ -13,16 +13,13 @@ trait NativeEventSubscription extends StObject {
 }
 object NativeEventSubscription {
   
-  @scala.inline
-  def apply(remove: () => Unit): NativeEventSubscription = {
+  inline def apply(remove: () => Unit): NativeEventSubscription = {
     val __obj = js.Dynamic.literal(remove = js.Any.fromFunction0(remove))
     __obj.asInstanceOf[NativeEventSubscription]
   }
   
-  @scala.inline
-  implicit class NativeEventSubscriptionMutableBuilder[Self <: NativeEventSubscription] (val x: Self) extends AnyVal {
+  extension [Self <: NativeEventSubscription](x: Self) {
     
-    @scala.inline
-    def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+    inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
   }
 }

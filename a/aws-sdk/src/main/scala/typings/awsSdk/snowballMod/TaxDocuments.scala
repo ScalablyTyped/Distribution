@@ -10,19 +10,15 @@ trait TaxDocuments extends StObject {
 }
 object TaxDocuments {
   
-  @scala.inline
-  def apply(): TaxDocuments = {
+  inline def apply(): TaxDocuments = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TaxDocuments]
   }
   
-  @scala.inline
-  implicit class TaxDocumentsMutableBuilder[Self <: TaxDocuments] (val x: Self) extends AnyVal {
+  extension [Self <: TaxDocuments](x: Self) {
     
-    @scala.inline
-    def setIND(value: INDTaxDocuments): Self = StObject.set(x, "IND", value.asInstanceOf[js.Any])
+    inline def setIND(value: INDTaxDocuments): Self = StObject.set(x, "IND", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setINDUndefined: Self = StObject.set(x, "IND", js.undefined)
+    inline def setINDUndefined: Self = StObject.set(x, "IND", js.undefined)
   }
 }

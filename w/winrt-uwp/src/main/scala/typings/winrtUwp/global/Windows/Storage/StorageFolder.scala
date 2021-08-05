@@ -23,6 +23,5 @@ object StorageFolder {
     * @return When this method completes successfully, it returns a StorageFolder that represents the specified folder.
     */
   /* static member */
-  @scala.inline
-  def getFolderFromPathAsync(path: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Storage.StorageFolder] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFolderFromPathAsync")(path.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Storage.StorageFolder]]
+  inline def getFolderFromPathAsync(path: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Storage.StorageFolder] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFolderFromPathAsync")(path.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Storage.StorageFolder]]
 }

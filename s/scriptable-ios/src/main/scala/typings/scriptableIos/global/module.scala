@@ -41,8 +41,7 @@ object module {
   @JSGlobal("module.exports")
   @js.native
   def exports: js.Any = js.native
-  @scala.inline
-  def exports_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exports")(x.asInstanceOf[js.Any])
+  inline def exports_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exports")(x.asInstanceOf[js.Any])
   
   /**
     * _Path to file containing the module._
@@ -53,6 +52,5 @@ object module {
   @JSGlobal("module.filename")
   @js.native
   def filename: String = js.native
-  @scala.inline
-  def filename_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("filename")(x.asInstanceOf[js.Any])
+  inline def filename_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("filename")(x.asInstanceOf[js.Any])
 }

@@ -12,25 +12,19 @@ trait TopicalExploreFeedResponseTwoByTwoItem extends StObject {
 }
 object TopicalExploreFeedResponseTwoByTwoItem {
   
-  @scala.inline
-  def apply(): TopicalExploreFeedResponseTwoByTwoItem = {
+  inline def apply(): TopicalExploreFeedResponseTwoByTwoItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TopicalExploreFeedResponseTwoByTwoItem]
   }
   
-  @scala.inline
-  implicit class TopicalExploreFeedResponseTwoByTwoItemMutableBuilder[Self <: TopicalExploreFeedResponseTwoByTwoItem] (val x: Self) extends AnyVal {
+  extension [Self <: TopicalExploreFeedResponseTwoByTwoItem](x: Self) {
     
-    @scala.inline
-    def setChannel(value: TopicalExploreFeedResponseChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: TopicalExploreFeedResponseChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+    inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
     
-    @scala.inline
-    def setIgtv(value: TopicalExploreFeedResponseIgtv): Self = StObject.set(x, "igtv", value.asInstanceOf[js.Any])
+    inline def setIgtv(value: TopicalExploreFeedResponseIgtv): Self = StObject.set(x, "igtv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgtvUndefined: Self = StObject.set(x, "igtv", js.undefined)
+    inline def setIgtvUndefined: Self = StObject.set(x, "igtv", js.undefined)
   }
 }

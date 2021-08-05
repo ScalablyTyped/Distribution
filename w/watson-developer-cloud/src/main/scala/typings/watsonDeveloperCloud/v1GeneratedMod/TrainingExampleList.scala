@@ -12,22 +12,17 @@ trait TrainingExampleList extends StObject {
 }
 object TrainingExampleList {
   
-  @scala.inline
-  def apply(): TrainingExampleList = {
+  inline def apply(): TrainingExampleList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrainingExampleList]
   }
   
-  @scala.inline
-  implicit class TrainingExampleListMutableBuilder[Self <: TrainingExampleList] (val x: Self) extends AnyVal {
+  extension [Self <: TrainingExampleList](x: Self) {
     
-    @scala.inline
-    def setExamples(value: js.Array[TrainingExample]): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
+    inline def setExamples(value: js.Array[TrainingExample]): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExamplesUndefined: Self = StObject.set(x, "examples", js.undefined)
+    inline def setExamplesUndefined: Self = StObject.set(x, "examples", js.undefined)
     
-    @scala.inline
-    def setExamplesVarargs(value: TrainingExample*): Self = StObject.set(x, "examples", js.Array(value :_*))
+    inline def setExamplesVarargs(value: TrainingExample*): Self = StObject.set(x, "examples", js.Array(value :_*))
   }
 }

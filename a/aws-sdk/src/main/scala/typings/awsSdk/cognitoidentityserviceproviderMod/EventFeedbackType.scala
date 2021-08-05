@@ -23,25 +23,19 @@ trait EventFeedbackType extends StObject {
 }
 object EventFeedbackType {
   
-  @scala.inline
-  def apply(FeedbackValue: FeedbackValueType, Provider: StringType): EventFeedbackType = {
+  inline def apply(FeedbackValue: FeedbackValueType, Provider: StringType): EventFeedbackType = {
     val __obj = js.Dynamic.literal(FeedbackValue = FeedbackValue.asInstanceOf[js.Any], Provider = Provider.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventFeedbackType]
   }
   
-  @scala.inline
-  implicit class EventFeedbackTypeMutableBuilder[Self <: EventFeedbackType] (val x: Self) extends AnyVal {
+  extension [Self <: EventFeedbackType](x: Self) {
     
-    @scala.inline
-    def setFeedbackDate(value: DateType): Self = StObject.set(x, "FeedbackDate", value.asInstanceOf[js.Any])
+    inline def setFeedbackDate(value: DateType): Self = StObject.set(x, "FeedbackDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeedbackDateUndefined: Self = StObject.set(x, "FeedbackDate", js.undefined)
+    inline def setFeedbackDateUndefined: Self = StObject.set(x, "FeedbackDate", js.undefined)
     
-    @scala.inline
-    def setFeedbackValue(value: FeedbackValueType): Self = StObject.set(x, "FeedbackValue", value.asInstanceOf[js.Any])
+    inline def setFeedbackValue(value: FeedbackValueType): Self = StObject.set(x, "FeedbackValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvider(value: StringType): Self = StObject.set(x, "Provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: StringType): Self = StObject.set(x, "Provider", value.asInstanceOf[js.Any])
   }
 }

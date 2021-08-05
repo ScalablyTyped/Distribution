@@ -15,20 +15,16 @@ trait ConfigCustomizationDefinition
 }
 object ConfigCustomizationDefinition {
   
-  @scala.inline
-  def apply(configuration: ConfigurationDefinition): ConfigCustomizationDefinition = {
+  inline def apply(configuration: ConfigurationDefinition): ConfigCustomizationDefinition = {
     val __obj = js.Dynamic.literal(configuration = configuration.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Configuration")
     __obj.asInstanceOf[ConfigCustomizationDefinition]
   }
   
-  @scala.inline
-  implicit class ConfigCustomizationDefinitionMutableBuilder[Self <: ConfigCustomizationDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigCustomizationDefinition](x: Self) {
     
-    @scala.inline
-    def setConfiguration(value: ConfigurationDefinition): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: ConfigurationDefinition): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Configuration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Configuration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

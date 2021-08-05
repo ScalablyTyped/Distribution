@@ -31,44 +31,32 @@ object optGroupMod extends Shortcut {
   }
   object OptGroupProps {
     
-    @scala.inline
-    def apply(): OptGroupProps = {
+    inline def apply(): OptGroupProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptGroupProps]
     }
     
-    @scala.inline
-    implicit class OptGroupPropsMutableBuilder[Self <: OptGroupProps] (val x: Self) extends AnyVal {
+    extension [Self <: OptGroupProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   

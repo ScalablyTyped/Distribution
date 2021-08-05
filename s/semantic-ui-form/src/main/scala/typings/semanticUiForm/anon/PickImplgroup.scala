@@ -11,16 +11,13 @@ trait PickImplgroup extends StObject {
 }
 object PickImplgroup {
   
-  @scala.inline
-  def apply(group: String): PickImplgroup = {
+  inline def apply(group: String): PickImplgroup = {
     val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplgroup]
   }
   
-  @scala.inline
-  implicit class PickImplgroupMutableBuilder[Self <: PickImplgroup] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplgroup](x: Self) {
     
-    @scala.inline
-    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
   }
 }

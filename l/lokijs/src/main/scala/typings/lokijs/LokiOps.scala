@@ -114,8 +114,7 @@ trait LokiOps extends StObject {
 }
 object LokiOps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $aeq: (js.Any, js.Any) => Boolean,
     $and: (js.Any, js.Any) => Boolean,
     $between: (js.Any, js.Any) => Boolean,
@@ -154,106 +153,72 @@ object LokiOps {
     __obj.asInstanceOf[LokiOps]
   }
   
-  @scala.inline
-  implicit class LokiOpsMutableBuilder[Self <: LokiOps] (val x: Self) extends AnyVal {
+  extension [Self <: LokiOps](x: Self) {
     
-    @scala.inline
-    def set$aeq(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$aeq", js.Any.fromFunction2(value))
+    inline def set$aeq(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$aeq", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$and(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$and", js.Any.fromFunction2(value))
+    inline def set$and(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$and", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$between(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$between", js.Any.fromFunction2(value))
+    inline def set$between(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$between", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$contains(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$contains", js.Any.fromFunction2(value))
+    inline def set$contains(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$contains", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$containsAny(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$containsAny", js.Any.fromFunction2(value))
+    inline def set$containsAny(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$containsAny", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$containsNone(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$containsNone", js.Any.fromFunction2(value))
+    inline def set$containsNone(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$containsNone", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$containsString(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$containsString", js.Any.fromFunction2(value))
+    inline def set$containsString(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$containsString", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$definedin(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$definedin", js.Any.fromFunction2(value))
+    inline def set$definedin(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$definedin", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$dteq(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$dteq", js.Any.fromFunction2(value))
+    inline def set$dteq(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$dteq", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$eq(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$eq", js.Any.fromFunction2(value))
+    inline def set$eq(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$eq", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$finite(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$finite", js.Any.fromFunction2(value))
+    inline def set$finite(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$finite", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$gt(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$gt", js.Any.fromFunction2(value))
+    inline def set$gt(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$gt", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$gte(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$gte", js.Any.fromFunction2(value))
+    inline def set$gte(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$gte", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$in(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$in", js.Any.fromFunction2(value))
+    inline def set$in(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$in", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$jbetween(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$jbetween", js.Any.fromFunction2(value))
+    inline def set$jbetween(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$jbetween", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$jgt(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$jgt", js.Any.fromFunction2(value))
+    inline def set$jgt(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$jgt", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$jgte(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$jgte", js.Any.fromFunction2(value))
+    inline def set$jgte(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$jgte", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$jlt(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$jlt", js.Any.fromFunction2(value))
+    inline def set$jlt(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$jlt", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$jlte(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$jlte", js.Any.fromFunction2(value))
+    inline def set$jlte(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$jlte", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$keyin(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$keyin", js.Any.fromFunction2(value))
+    inline def set$keyin(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$keyin", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$len(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$len", js.Any.fromFunction2(value))
+    inline def set$len(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$len", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$lt(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$lt", js.Any.fromFunction2(value))
+    inline def set$lt(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$lt", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$lte(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$lte", js.Any.fromFunction2(value))
+    inline def set$lte(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$lte", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$ne(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$ne", js.Any.fromFunction2(value))
+    inline def set$ne(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$ne", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$nin(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$nin", js.Any.fromFunction2(value))
+    inline def set$nin(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$nin", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$nkeyin(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$nkeyin", js.Any.fromFunction2(value))
+    inline def set$nkeyin(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$nkeyin", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$not(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$not", js.Any.fromFunction2(value))
+    inline def set$not(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$not", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$or(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$or", js.Any.fromFunction2(value))
+    inline def set$or(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$or", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$regex(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$regex", js.Any.fromFunction2(value))
+    inline def set$regex(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$regex", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$size(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$size", js.Any.fromFunction2(value))
+    inline def set$size(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$size", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$type(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$type", js.Any.fromFunction2(value))
+    inline def set$type(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$type", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$undefinedin(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$undefinedin", js.Any.fromFunction2(value))
+    inline def set$undefinedin(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$undefinedin", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set$where(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$where", js.Any.fromFunction2(value))
+    inline def set$where(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "$where", js.Any.fromFunction2(value))
   }
 }

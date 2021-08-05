@@ -18,8 +18,7 @@ trait AnimatedImagesControl
      with XAnimation
 object AnimatedImagesControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleContext: XAccessibleContext,
     Context: XInterface,
     Graphics: XGraphics,

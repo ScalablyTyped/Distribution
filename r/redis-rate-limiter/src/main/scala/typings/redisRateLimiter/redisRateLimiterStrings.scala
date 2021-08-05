@@ -8,6 +8,5 @@ object redisRateLimiterStrings {
   
   @js.native
   sealed trait ip extends StObject
-  @scala.inline
-  def ip: ip = "ip".asInstanceOf[ip]
+  inline def ip: ip = "ip".asInstanceOf[ip]
 }

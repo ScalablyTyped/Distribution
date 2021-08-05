@@ -24,49 +24,35 @@ trait Option
 }
 object Option {
   
-  @scala.inline
-  def apply(): Option = {
+  inline def apply(): Option = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Option]
   }
   
-  @scala.inline
-  implicit class OptionMutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
+  extension [Self <: Option](x: Self) {
     
-    @scala.inline
-    def setClearableValue(value: Boolean): Self = StObject.set(x, "clearableValue", value.asInstanceOf[js.Any])
+    inline def setClearableValue(value: Boolean): Self = StObject.set(x, "clearableValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearableValueUndefined: Self = StObject.set(x, "clearableValue", js.undefined)
+    inline def setClearableValueUndefined: Self = StObject.set(x, "clearableValue", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIsCreatable(value: Boolean): Self = StObject.set(x, "isCreatable", value.asInstanceOf[js.Any])
+    inline def setIsCreatable(value: Boolean): Self = StObject.set(x, "isCreatable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCreatableUndefined: Self = StObject.set(x, "isCreatable", js.undefined)
+    inline def setIsCreatableUndefined: Self = StObject.set(x, "isCreatable", js.undefined)
     
-    @scala.inline
-    def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def set__optgroup(value: String): Self = StObject.set(x, "__optgroup", value.asInstanceOf[js.Any])
+    inline def set__optgroup(value: String): Self = StObject.set(x, "__optgroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__optgroupUndefined: Self = StObject.set(x, "__optgroup", js.undefined)
+    inline def set__optgroupUndefined: Self = StObject.set(x, "__optgroup", js.undefined)
   }
 }

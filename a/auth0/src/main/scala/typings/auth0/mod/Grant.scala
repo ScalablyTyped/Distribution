@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Grant extends StObject
 object Grant {
   
-  @scala.inline
-  def authorization_code: typings.auth0.auth0Strings.authorization_code = "authorization_code".asInstanceOf[typings.auth0.auth0Strings.authorization_code]
+  inline def authorization_code: typings.auth0.auth0Strings.authorization_code = "authorization_code".asInstanceOf[typings.auth0.auth0Strings.authorization_code]
   
-  @scala.inline
-  def client_credentials: typings.auth0.auth0Strings.client_credentials = "client_credentials".asInstanceOf[typings.auth0.auth0Strings.client_credentials]
+  inline def client_credentials: typings.auth0.auth0Strings.client_credentials = "client_credentials".asInstanceOf[typings.auth0.auth0Strings.client_credentials]
   
-  @scala.inline
-  def `implicit`: typings.auth0.auth0Strings.`implicit` = "implicit".asInstanceOf[typings.auth0.auth0Strings.`implicit`]
+  inline def `implicit`: typings.auth0.auth0Strings.`implicit` = "implicit".asInstanceOf[typings.auth0.auth0Strings.`implicit`]
   
-  @scala.inline
-  def password: typings.auth0.auth0Strings.password = "password".asInstanceOf[typings.auth0.auth0Strings.password]
+  inline def password: typings.auth0.auth0Strings.password = "password".asInstanceOf[typings.auth0.auth0Strings.password]
   
-  @scala.inline
-  def refresh_token: typings.auth0.auth0Strings.refresh_token = "refresh_token".asInstanceOf[typings.auth0.auth0Strings.refresh_token]
+  inline def refresh_token: typings.auth0.auth0Strings.refresh_token = "refresh_token".asInstanceOf[typings.auth0.auth0Strings.refresh_token]
 }

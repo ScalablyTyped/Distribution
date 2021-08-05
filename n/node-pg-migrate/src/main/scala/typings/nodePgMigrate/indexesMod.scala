@@ -13,9 +13,7 @@ object indexesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createIndex(mOptions: MigrationOptions): CreateIndex = ^.asInstanceOf[js.Dynamic].applyDynamic("createIndex")(mOptions.asInstanceOf[js.Any]).asInstanceOf[CreateIndex]
+  inline def createIndex(mOptions: MigrationOptions): CreateIndex = ^.asInstanceOf[js.Dynamic].applyDynamic("createIndex")(mOptions.asInstanceOf[js.Any]).asInstanceOf[CreateIndex]
   
-  @scala.inline
-  def dropIndex(mOptions: MigrationOptions): DropIndex = ^.asInstanceOf[js.Dynamic].applyDynamic("dropIndex")(mOptions.asInstanceOf[js.Any]).asInstanceOf[DropIndex]
+  inline def dropIndex(mOptions: MigrationOptions): DropIndex = ^.asInstanceOf[js.Dynamic].applyDynamic("dropIndex")(mOptions.asInstanceOf[js.Any]).asInstanceOf[DropIndex]
 }

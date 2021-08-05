@@ -17,37 +17,27 @@ trait Shape extends StObject {
 }
 object Shape {
   
-  @scala.inline
-  def apply(): Shape = {
+  inline def apply(): Shape = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Shape]
   }
   
-  @scala.inline
-  implicit class ShapeMutableBuilder[Self <: Shape] (val x: Self) extends AnyVal {
+  extension [Self <: Shape](x: Self) {
     
-    @scala.inline
-    def setColor(value: ColorType): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: ColorType): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setShape(value: String): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: String): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+    inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
     
-    @scala.inline
-    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

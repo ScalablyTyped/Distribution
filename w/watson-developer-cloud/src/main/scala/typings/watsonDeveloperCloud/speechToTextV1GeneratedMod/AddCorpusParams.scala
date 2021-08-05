@@ -28,40 +28,29 @@ trait AddCorpusParams extends StObject {
 }
 object AddCorpusParams {
   
-  @scala.inline
-  def apply(corpus_file: ReadableStream | FileObject | Buffer, corpus_name: String, customization_id: String): AddCorpusParams = {
+  inline def apply(corpus_file: ReadableStream | FileObject | Buffer, corpus_name: String, customization_id: String): AddCorpusParams = {
     val __obj = js.Dynamic.literal(corpus_file = corpus_file.asInstanceOf[js.Any], corpus_name = corpus_name.asInstanceOf[js.Any], customization_id = customization_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddCorpusParams]
   }
   
-  @scala.inline
-  implicit class AddCorpusParamsMutableBuilder[Self <: AddCorpusParams] (val x: Self) extends AnyVal {
+  extension [Self <: AddCorpusParams](x: Self) {
     
-    @scala.inline
-    def setAllow_overwrite(value: Boolean): Self = StObject.set(x, "allow_overwrite", value.asInstanceOf[js.Any])
+    inline def setAllow_overwrite(value: Boolean): Self = StObject.set(x, "allow_overwrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllow_overwriteUndefined: Self = StObject.set(x, "allow_overwrite", js.undefined)
+    inline def setAllow_overwriteUndefined: Self = StObject.set(x, "allow_overwrite", js.undefined)
     
-    @scala.inline
-    def setCorpus_file(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "corpus_file", value.asInstanceOf[js.Any])
+    inline def setCorpus_file(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "corpus_file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorpus_name(value: String): Self = StObject.set(x, "corpus_name", value.asInstanceOf[js.Any])
+    inline def setCorpus_name(value: String): Self = StObject.set(x, "corpus_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomization_id(value: String): Self = StObject.set(x, "customization_id", value.asInstanceOf[js.Any])
+    inline def setCustomization_id(value: String): Self = StObject.set(x, "customization_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
   }
 }

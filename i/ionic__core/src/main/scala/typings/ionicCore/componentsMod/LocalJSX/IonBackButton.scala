@@ -56,67 +56,47 @@ trait IonBackButton extends StObject {
 }
 object IonBackButton {
   
-  @scala.inline
-  def apply(): IonBackButton = {
+  inline def apply(): IonBackButton = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IonBackButton]
   }
   
-  @scala.inline
-  implicit class IonBackButtonMutableBuilder[Self <: IonBackButton] (val x: Self) extends AnyVal {
+  extension [Self <: IonBackButton](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setDefaultHref(value: String): Self = StObject.set(x, "defaultHref", value.asInstanceOf[js.Any])
+    inline def setDefaultHref(value: String): Self = StObject.set(x, "defaultHref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultHrefUndefined: Self = StObject.set(x, "defaultHref", js.undefined)
+    inline def setDefaultHrefUndefined: Self = StObject.set(x, "defaultHref", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconNull: Self = StObject.set(x, "icon", null)
+    inline def setIconNull: Self = StObject.set(x, "icon", null)
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setRouterAnimation(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "routerAnimation", js.Any.fromFunction2(value))
+    inline def setRouterAnimation(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "routerAnimation", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRouterAnimationUndefined: Self = StObject.set(x, "routerAnimation", js.undefined)
+    inline def setRouterAnimationUndefined: Self = StObject.set(x, "routerAnimation", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextNull: Self = StObject.set(x, "text", null)
+    inline def setTextNull: Self = StObject.set(x, "text", null)
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setType(value: submit | reset | button): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: submit | reset | button): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

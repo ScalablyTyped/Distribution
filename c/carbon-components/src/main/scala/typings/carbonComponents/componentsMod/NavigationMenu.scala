@@ -22,12 +22,10 @@ object NavigationMenu {
   @JSImport("carbon-components/globals/js/components", "NavigationMenu.NAVIGATE")
   @js.native
   def NAVIGATE: BACKWARD = js.native
-  @scala.inline
-  def NAVIGATE_=(x: BACKWARD): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAVIGATE")(x.asInstanceOf[js.Any])
+  inline def NAVIGATE_=(x: BACKWARD): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAVIGATE")(x.asInstanceOf[js.Any])
   
   @JSImport("carbon-components/globals/js/components", "NavigationMenu.components")
   @js.native
   def components: WeakMap[js.Object, js.Any] = js.native
-  @scala.inline
-  def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+  inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
 }

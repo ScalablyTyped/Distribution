@@ -18,25 +18,19 @@ trait CreateByteMatchSetResponse extends StObject {
 }
 object CreateByteMatchSetResponse {
   
-  @scala.inline
-  def apply(): CreateByteMatchSetResponse = {
+  inline def apply(): CreateByteMatchSetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateByteMatchSetResponse]
   }
   
-  @scala.inline
-  implicit class CreateByteMatchSetResponseMutableBuilder[Self <: CreateByteMatchSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateByteMatchSetResponse](x: Self) {
     
-    @scala.inline
-    def setByteMatchSet(value: ByteMatchSet): Self = StObject.set(x, "ByteMatchSet", value.asInstanceOf[js.Any])
+    inline def setByteMatchSet(value: ByteMatchSet): Self = StObject.set(x, "ByteMatchSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByteMatchSetUndefined: Self = StObject.set(x, "ByteMatchSet", js.undefined)
+    inline def setByteMatchSetUndefined: Self = StObject.set(x, "ByteMatchSet", js.undefined)
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
+    inline def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
   }
 }

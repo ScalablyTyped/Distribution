@@ -19,25 +19,25 @@ object popupPopupMod {
     @JSName("UNSAFE_componentWillMount")
     def UNSAFE_componentWillMount_MPopup(): Unit = js.native
     
-    var _async: js.Any = js.native
+    /* private */ var _async: js.Any = js.native
     
-    var _containsFocus: js.Any = js.native
+    /* private */ var _containsFocus: js.Any = js.native
     
-    var _disposables: js.Any = js.native
+    /* private */ var _disposables: js.Any = js.native
     
-    var _getScrollBar: js.Any = js.native
+    /* private */ var _getScrollBar: js.Any = js.native
     
-    var _onBlur: js.Any = js.native
+    /* private */ var _onBlur: js.Any = js.native
     
-    var _onFocus: js.Any = js.native
+    /* private */ var _onFocus: js.Any = js.native
     
-    var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: js.Any = js.native
     
-    var _originalFocusedElement: js.Any = js.native
+    /* private */ var _originalFocusedElement: js.Any = js.native
     
     var _root: RefObject[HTMLDivElement] = js.native
     
-    var _updateScrollBarAsync: js.Any = js.native
+    /* private */ var _updateScrollBarAsync: js.Any = js.native
     
     @JSName("componentDidMount")
     def componentDidMount_MPopup(): Unit = js.native
@@ -58,8 +58,7 @@ object popupPopupMod {
     @JSImport("office-ui-fabric-react/lib/components/Popup/Popup", "Popup.defaultProps")
     @js.native
     def defaultProps: IPopupProps = js.native
-    @scala.inline
-    def defaultProps_=(x: IPopupProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: IPopupProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait IPopupState extends StObject {
@@ -68,20 +67,16 @@ object popupPopupMod {
   }
   object IPopupState {
     
-    @scala.inline
-    def apply(): IPopupState = {
+    inline def apply(): IPopupState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IPopupState]
     }
     
-    @scala.inline
-    implicit class IPopupStateMutableBuilder[Self <: IPopupState] (val x: Self) extends AnyVal {
+    extension [Self <: IPopupState](x: Self) {
       
-      @scala.inline
-      def setNeedsVerticalScrollBar(value: Boolean): Self = StObject.set(x, "needsVerticalScrollBar", value.asInstanceOf[js.Any])
+      inline def setNeedsVerticalScrollBar(value: Boolean): Self = StObject.set(x, "needsVerticalScrollBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeedsVerticalScrollBarUndefined: Self = StObject.set(x, "needsVerticalScrollBar", js.undefined)
+      inline def setNeedsVerticalScrollBarUndefined: Self = StObject.set(x, "needsVerticalScrollBar", js.undefined)
     }
   }
 }

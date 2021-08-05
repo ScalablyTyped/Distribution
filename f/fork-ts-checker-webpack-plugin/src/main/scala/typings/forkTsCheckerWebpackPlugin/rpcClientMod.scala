@@ -14,8 +14,7 @@ object rpcClientMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createRpcClient(port: RpcMessagePort): RpcClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createRpcClient")(port.asInstanceOf[js.Any]).asInstanceOf[RpcClient]
+  inline def createRpcClient(port: RpcMessagePort): RpcClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createRpcClient")(port.asInstanceOf[js.Any]).asInstanceOf[RpcClient]
   
   trait RpcClient extends StObject {
     
@@ -29,8 +28,7 @@ object rpcClientMod {
   }
   object RpcClient {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       connect: () => js.Promise[Unit],
       disconnect: () => js.Promise[Unit],
       dispatchCall: (js.Any, RpcProcedurePayload[js.Any]) => js.Promise[RpcProcedureResult[js.Any]],
@@ -40,20 +38,15 @@ object rpcClientMod {
       __obj.asInstanceOf[RpcClient]
     }
     
-    @scala.inline
-    implicit class RpcClientMutableBuilder[Self <: RpcClient] (val x: Self) extends AnyVal {
+    extension [Self <: RpcClient](x: Self) {
       
-      @scala.inline
-      def setConnect(value: () => js.Promise[Unit]): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
+      inline def setConnect(value: () => js.Promise[Unit]): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisconnect(value: () => js.Promise[Unit]): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
+      inline def setDisconnect(value: () => js.Promise[Unit]): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDispatchCall(value: (js.Any, RpcProcedurePayload[js.Any]) => js.Promise[RpcProcedureResult[js.Any]]): Self = StObject.set(x, "dispatchCall", js.Any.fromFunction2(value))
+      inline def setDispatchCall(value: (js.Any, RpcProcedurePayload[js.Any]) => js.Promise[RpcProcedureResult[js.Any]]): Self = StObject.set(x, "dispatchCall", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIsConnected(value: () => Boolean): Self = StObject.set(x, "isConnected", js.Any.fromFunction0(value))
+      inline def setIsConnected(value: () => Boolean): Self = StObject.set(x, "isConnected", js.Any.fromFunction0(value))
     }
   }
 }

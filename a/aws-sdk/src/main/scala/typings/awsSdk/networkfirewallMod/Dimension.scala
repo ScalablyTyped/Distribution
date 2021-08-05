@@ -13,16 +13,13 @@ trait Dimension extends StObject {
 }
 object Dimension {
   
-  @scala.inline
-  def apply(Value: DimensionValue): Dimension = {
+  inline def apply(Value: DimensionValue): Dimension = {
     val __obj = js.Dynamic.literal(Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dimension]
   }
   
-  @scala.inline
-  implicit class DimensionMutableBuilder[Self <: Dimension] (val x: Self) extends AnyVal {
+  extension [Self <: Dimension](x: Self) {
     
-    @scala.inline
-    def setValue(value: DimensionValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: DimensionValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

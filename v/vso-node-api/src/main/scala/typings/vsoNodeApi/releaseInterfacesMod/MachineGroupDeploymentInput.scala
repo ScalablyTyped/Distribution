@@ -17,8 +17,7 @@ trait MachineGroupDeploymentInput
 }
 object MachineGroupDeploymentInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     artifactsDownloadInput: ArtifactsDownloadInput,
     condition: String,
     demands: js.Array[js.Any],
@@ -36,19 +35,14 @@ object MachineGroupDeploymentInput {
     __obj.asInstanceOf[MachineGroupDeploymentInput]
   }
   
-  @scala.inline
-  implicit class MachineGroupDeploymentInputMutableBuilder[Self <: MachineGroupDeploymentInput] (val x: Self) extends AnyVal {
+  extension [Self <: MachineGroupDeploymentInput](x: Self) {
     
-    @scala.inline
-    def setDeploymentHealthOption(value: String): Self = StObject.set(x, "deploymentHealthOption", value.asInstanceOf[js.Any])
+    inline def setDeploymentHealthOption(value: String): Self = StObject.set(x, "deploymentHealthOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthPercent(value: Double): Self = StObject.set(x, "healthPercent", value.asInstanceOf[js.Any])
+    inline def setHealthPercent(value: Double): Self = StObject.set(x, "healthPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

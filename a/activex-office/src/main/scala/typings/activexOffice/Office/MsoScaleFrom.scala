@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoScaleFrom extends StObject
 object MsoScaleFrom {
   
-  @scala.inline
-  def msoScaleFromBottomRight: `2` = 2.asInstanceOf[`2`]
+  inline def msoScaleFromBottomRight: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoScaleFromMiddle: `1` = 1.asInstanceOf[`1`]
+  inline def msoScaleFromMiddle: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoScaleFromTopLeft: `0` = 0.asInstanceOf[`0`]
+  inline def msoScaleFromTopLeft: `0` = 0.asInstanceOf[`0`]
 }

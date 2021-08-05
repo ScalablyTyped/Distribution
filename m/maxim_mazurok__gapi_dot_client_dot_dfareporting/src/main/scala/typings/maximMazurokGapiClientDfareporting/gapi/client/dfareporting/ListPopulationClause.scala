@@ -11,22 +11,17 @@ trait ListPopulationClause extends StObject {
 }
 object ListPopulationClause {
   
-  @scala.inline
-  def apply(): ListPopulationClause = {
+  inline def apply(): ListPopulationClause = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPopulationClause]
   }
   
-  @scala.inline
-  implicit class ListPopulationClauseMutableBuilder[Self <: ListPopulationClause] (val x: Self) extends AnyVal {
+  extension [Self <: ListPopulationClause](x: Self) {
     
-    @scala.inline
-    def setTerms(value: js.Array[ListPopulationTerm]): Self = StObject.set(x, "terms", value.asInstanceOf[js.Any])
+    inline def setTerms(value: js.Array[ListPopulationTerm]): Self = StObject.set(x, "terms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTermsUndefined: Self = StObject.set(x, "terms", js.undefined)
+    inline def setTermsUndefined: Self = StObject.set(x, "terms", js.undefined)
     
-    @scala.inline
-    def setTermsVarargs(value: ListPopulationTerm*): Self = StObject.set(x, "terms", js.Array(value :_*))
+    inline def setTermsVarargs(value: ListPopulationTerm*): Self = StObject.set(x, "terms", js.Array(value :_*))
   }
 }

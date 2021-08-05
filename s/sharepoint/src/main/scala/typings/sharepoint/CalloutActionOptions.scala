@@ -30,8 +30,7 @@ trait CalloutActionOptions extends StObject {
 }
 object CalloutActionOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     disabledTooltip: String,
     isEnabledCallback: CalloutAction => Boolean,
     isVisibleCallback: CalloutAction => Boolean,
@@ -44,31 +43,22 @@ object CalloutActionOptions {
     __obj.asInstanceOf[CalloutActionOptions]
   }
   
-  @scala.inline
-  implicit class CalloutActionOptionsMutableBuilder[Self <: CalloutActionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CalloutActionOptions](x: Self) {
     
-    @scala.inline
-    def setDisabledTooltip(value: String): Self = StObject.set(x, "disabledTooltip", value.asInstanceOf[js.Any])
+    inline def setDisabledTooltip(value: String): Self = StObject.set(x, "disabledTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEnabledCallback(value: CalloutAction => Boolean): Self = StObject.set(x, "isEnabledCallback", js.Any.fromFunction1(value))
+    inline def setIsEnabledCallback(value: CalloutAction => Boolean): Self = StObject.set(x, "isEnabledCallback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsVisibleCallback(value: CalloutAction => Boolean): Self = StObject.set(x, "isVisibleCallback", js.Any.fromFunction1(value))
+    inline def setIsVisibleCallback(value: CalloutAction => Boolean): Self = StObject.set(x, "isVisibleCallback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMenuEntries(value: js.Array[CalloutActionMenuEntry]): Self = StObject.set(x, "menuEntries", value.asInstanceOf[js.Any])
+    inline def setMenuEntries(value: js.Array[CalloutActionMenuEntry]): Self = StObject.set(x, "menuEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuEntriesVarargs(value: CalloutActionMenuEntry*): Self = StObject.set(x, "menuEntries", js.Array(value :_*))
+    inline def setMenuEntriesVarargs(value: CalloutActionMenuEntry*): Self = StObject.set(x, "menuEntries", js.Array(value :_*))
     
-    @scala.inline
-    def setOnClickCallback(value: (Event, CalloutAction) => js.Any): Self = StObject.set(x, "onClickCallback", js.Any.fromFunction2(value))
+    inline def setOnClickCallback(value: (Event, CalloutAction) => js.Any): Self = StObject.set(x, "onClickCallback", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
   }
 }

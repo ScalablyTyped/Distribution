@@ -43,8 +43,7 @@ object global {
       val ^ : js.Any = js.native
       
       /* static member */
-      @scala.inline
-      def fromElement(id: String, dockManager: typings.dockSpawn.dockspawn.DockManager): typings.dockSpawn.dockspawn.Dialog = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(id.asInstanceOf[js.Any], dockManager.asInstanceOf[js.Any])).asInstanceOf[typings.dockSpawn.dockspawn.Dialog]
+      inline def fromElement(id: String, dockManager: typings.dockSpawn.dockspawn.DockManager): typings.dockSpawn.dockspawn.Dialog = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(id.asInstanceOf[js.Any], dockManager.asInstanceOf[js.Any])).asInstanceOf[typings.dockSpawn.dockspawn.Dialog]
     }
     
     /**

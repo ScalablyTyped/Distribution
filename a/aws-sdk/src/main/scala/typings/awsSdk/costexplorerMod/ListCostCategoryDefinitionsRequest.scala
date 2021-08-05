@@ -23,31 +23,23 @@ trait ListCostCategoryDefinitionsRequest extends StObject {
 }
 object ListCostCategoryDefinitionsRequest {
   
-  @scala.inline
-  def apply(): ListCostCategoryDefinitionsRequest = {
+  inline def apply(): ListCostCategoryDefinitionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListCostCategoryDefinitionsRequest]
   }
   
-  @scala.inline
-  implicit class ListCostCategoryDefinitionsRequestMutableBuilder[Self <: ListCostCategoryDefinitionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListCostCategoryDefinitionsRequest](x: Self) {
     
-    @scala.inline
-    def setEffectiveOn(value: ZonedDateTime): Self = StObject.set(x, "EffectiveOn", value.asInstanceOf[js.Any])
+    inline def setEffectiveOn(value: ZonedDateTime): Self = StObject.set(x, "EffectiveOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectiveOnUndefined: Self = StObject.set(x, "EffectiveOn", js.undefined)
+    inline def setEffectiveOnUndefined: Self = StObject.set(x, "EffectiveOn", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: CostCategoryMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: CostCategoryMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextPageToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextPageToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

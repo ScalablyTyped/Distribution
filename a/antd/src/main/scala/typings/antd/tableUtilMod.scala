@@ -14,14 +14,10 @@ object tableUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getColumnKey[RecordType](column: ColumnType[RecordType], defaultKey: String): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("getColumnKey")(column.asInstanceOf[js.Any], defaultKey.asInstanceOf[js.Any])).asInstanceOf[Key]
+  inline def getColumnKey[RecordType](column: ColumnType[RecordType], defaultKey: String): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("getColumnKey")(column.asInstanceOf[js.Any], defaultKey.asInstanceOf[js.Any])).asInstanceOf[Key]
   
-  @scala.inline
-  def getColumnPos(index: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getColumnPos")(index.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def getColumnPos(index: Double, pos: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getColumnPos")(index.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getColumnPos(index: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getColumnPos")(index.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getColumnPos(index: Double, pos: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getColumnPos")(index.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def renderColumnTitle[RecordType](title: ColumnTitle[RecordType], props: ColumnTitleProps[RecordType]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("renderColumnTitle")(title.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def renderColumnTitle[RecordType](title: ColumnTitle[RecordType], props: ColumnTitleProps[RecordType]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("renderColumnTitle")(title.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

@@ -12,19 +12,15 @@ trait ExportParams extends StObject {
 }
 object ExportParams {
   
-  @scala.inline
-  def apply(FromTS: Double, ToTS: Double): ExportParams = {
+  inline def apply(FromTS: Double, ToTS: Double): ExportParams = {
     val __obj = js.Dynamic.literal(FromTS = FromTS.asInstanceOf[js.Any], ToTS = ToTS.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportParams]
   }
   
-  @scala.inline
-  implicit class ExportParamsMutableBuilder[Self <: ExportParams] (val x: Self) extends AnyVal {
+  extension [Self <: ExportParams](x: Self) {
     
-    @scala.inline
-    def setFromTS(value: Double): Self = StObject.set(x, "FromTS", value.asInstanceOf[js.Any])
+    inline def setFromTS(value: Double): Self = StObject.set(x, "FromTS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToTS(value: Double): Self = StObject.set(x, "ToTS", value.asInstanceOf[js.Any])
+    inline def setToTS(value: Double): Self = StObject.set(x, "ToTS", value.asInstanceOf[js.Any])
   }
 }

@@ -23,28 +23,21 @@ trait AutoScalingGroupProvider extends StObject {
 }
 object AutoScalingGroupProvider {
   
-  @scala.inline
-  def apply(autoScalingGroupArn: String): AutoScalingGroupProvider = {
+  inline def apply(autoScalingGroupArn: String): AutoScalingGroupProvider = {
     val __obj = js.Dynamic.literal(autoScalingGroupArn = autoScalingGroupArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoScalingGroupProvider]
   }
   
-  @scala.inline
-  implicit class AutoScalingGroupProviderMutableBuilder[Self <: AutoScalingGroupProvider] (val x: Self) extends AnyVal {
+  extension [Self <: AutoScalingGroupProvider](x: Self) {
     
-    @scala.inline
-    def setAutoScalingGroupArn(value: String): Self = StObject.set(x, "autoScalingGroupArn", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupArn(value: String): Self = StObject.set(x, "autoScalingGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedScaling(value: ManagedScaling): Self = StObject.set(x, "managedScaling", value.asInstanceOf[js.Any])
+    inline def setManagedScaling(value: ManagedScaling): Self = StObject.set(x, "managedScaling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedScalingUndefined: Self = StObject.set(x, "managedScaling", js.undefined)
+    inline def setManagedScalingUndefined: Self = StObject.set(x, "managedScaling", js.undefined)
     
-    @scala.inline
-    def setManagedTerminationProtection(value: ManagedTerminationProtection): Self = StObject.set(x, "managedTerminationProtection", value.asInstanceOf[js.Any])
+    inline def setManagedTerminationProtection(value: ManagedTerminationProtection): Self = StObject.set(x, "managedTerminationProtection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedTerminationProtectionUndefined: Self = StObject.set(x, "managedTerminationProtection", js.undefined)
+    inline def setManagedTerminationProtectionUndefined: Self = StObject.set(x, "managedTerminationProtection", js.undefined)
   }
 }

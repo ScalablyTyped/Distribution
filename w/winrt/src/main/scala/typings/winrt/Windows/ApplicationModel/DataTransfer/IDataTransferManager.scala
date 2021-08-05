@@ -12,19 +12,15 @@ trait IDataTransferManager extends StObject {
 }
 object IDataTransferManager {
   
-  @scala.inline
-  def apply(ondatarequested: js.Any, ontargetapplicationchosen: js.Any): IDataTransferManager = {
+  inline def apply(ondatarequested: js.Any, ontargetapplicationchosen: js.Any): IDataTransferManager = {
     val __obj = js.Dynamic.literal(ondatarequested = ondatarequested.asInstanceOf[js.Any], ontargetapplicationchosen = ontargetapplicationchosen.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDataTransferManager]
   }
   
-  @scala.inline
-  implicit class IDataTransferManagerMutableBuilder[Self <: IDataTransferManager] (val x: Self) extends AnyVal {
+  extension [Self <: IDataTransferManager](x: Self) {
     
-    @scala.inline
-    def setOndatarequested(value: js.Any): Self = StObject.set(x, "ondatarequested", value.asInstanceOf[js.Any])
+    inline def setOndatarequested(value: js.Any): Self = StObject.set(x, "ondatarequested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOntargetapplicationchosen(value: js.Any): Self = StObject.set(x, "ontargetapplicationchosen", value.asInstanceOf[js.Any])
+    inline def setOntargetapplicationchosen(value: js.Any): Self = StObject.set(x, "ontargetapplicationchosen", value.asInstanceOf[js.Any])
   }
 }

@@ -7,12 +7,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Boolean = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Boolean]
-  @scala.inline
-  def apply(year: Double): Boolean = ^.asInstanceOf[js.Dynamic].apply(year.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def apply(year: Date): Boolean = ^.asInstanceOf[js.Dynamic].apply(year.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def apply(): Boolean = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Boolean]
+  inline def apply(year: Double): Boolean = ^.asInstanceOf[js.Dynamic].apply(year.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def apply(year: Date): Boolean = ^.asInstanceOf[js.Dynamic].apply(year.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("leap-year", JSImport.Namespace)
   @js.native

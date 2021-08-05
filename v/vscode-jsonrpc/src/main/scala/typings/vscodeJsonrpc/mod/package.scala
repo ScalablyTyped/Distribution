@@ -5,95 +5,77 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def NullLogger: typings.vscodeJsonrpc.mod.Logger = typings.vscodeJsonrpc.mod.^.asInstanceOf[js.Dynamic].selectDynamic("NullLogger").asInstanceOf[typings.vscodeJsonrpc.mod.Logger]
+inline def NullLogger: typings.vscodeJsonrpc.mod.Logger = typings.vscodeJsonrpc.mod.^.asInstanceOf[js.Dynamic].selectDynamic("NullLogger").asInstanceOf[typings.vscodeJsonrpc.mod.Logger]
 
-@scala.inline
-def createClientPipeTransport(pipeName: java.lang.String): js.Promise[typings.vscodeJsonrpc.pipeSupportMod.PipeTransport] = typings.vscodeJsonrpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createClientPipeTransport")(pipeName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.vscodeJsonrpc.pipeSupportMod.PipeTransport]]
-@scala.inline
-def createClientPipeTransport(pipeName: java.lang.String, encoding: typings.node.BufferEncoding): js.Promise[typings.vscodeJsonrpc.pipeSupportMod.PipeTransport] = (typings.vscodeJsonrpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createClientPipeTransport")(pipeName.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.vscodeJsonrpc.pipeSupportMod.PipeTransport]]
+inline def createClientPipeTransport(pipeName: java.lang.String): js.Promise[typings.vscodeJsonrpc.pipeSupportMod.PipeTransport] = typings.vscodeJsonrpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createClientPipeTransport")(pipeName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.vscodeJsonrpc.pipeSupportMod.PipeTransport]]
+inline def createClientPipeTransport(pipeName: java.lang.String, encoding: typings.node.BufferEncoding): js.Promise[typings.vscodeJsonrpc.pipeSupportMod.PipeTransport] = (typings.vscodeJsonrpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createClientPipeTransport")(pipeName.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.vscodeJsonrpc.pipeSupportMod.PipeTransport]]
 
-@scala.inline
-def createClientSocketTransport(port: scala.Double): js.Promise[typings.vscodeJsonrpc.socketSupportMod.SocketTransport] = typings.vscodeJsonrpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createClientSocketTransport")(port.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.vscodeJsonrpc.socketSupportMod.SocketTransport]]
-@scala.inline
-def createClientSocketTransport(port: scala.Double, encoding: typings.node.BufferEncoding): js.Promise[typings.vscodeJsonrpc.socketSupportMod.SocketTransport] = (typings.vscodeJsonrpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createClientSocketTransport")(port.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.vscodeJsonrpc.socketSupportMod.SocketTransport]]
+inline def createClientSocketTransport(port: scala.Double): js.Promise[typings.vscodeJsonrpc.socketSupportMod.SocketTransport] = typings.vscodeJsonrpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createClientSocketTransport")(port.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.vscodeJsonrpc.socketSupportMod.SocketTransport]]
+inline def createClientSocketTransport(port: scala.Double, encoding: typings.node.BufferEncoding): js.Promise[typings.vscodeJsonrpc.socketSupportMod.SocketTransport] = (typings.vscodeJsonrpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createClientSocketTransport")(port.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.vscodeJsonrpc.socketSupportMod.SocketTransport]]
 
-@scala.inline
-def createMessageConnection(inputStream: typings.node.NodeJS.ReadableStream, outputStream: typings.node.NodeJS.WritableStream): typings.vscodeJsonrpc.mod.MessageConnection = (typings.vscodeJsonrpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createMessageConnection")(inputStream.asInstanceOf[js.Any], outputStream.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeJsonrpc.mod.MessageConnection]
-@scala.inline
-def createMessageConnection(
+inline def createMessageConnection(inputStream: typings.node.NodeJS.ReadableStream, outputStream: typings.node.NodeJS.WritableStream): typings.vscodeJsonrpc.mod.MessageConnection = (typings.vscodeJsonrpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createMessageConnection")(inputStream.asInstanceOf[js.Any], outputStream.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeJsonrpc.mod.MessageConnection]
+inline def createMessageConnection(
   inputStream: typings.node.NodeJS.ReadableStream,
   outputStream: typings.node.NodeJS.WritableStream,
   logger: scala.Unit,
   strategy: typings.vscodeJsonrpc.mod.ConnectionStrategy
 ): typings.vscodeJsonrpc.mod.MessageConnection = (typings.vscodeJsonrpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createMessageConnection")(inputStream.asInstanceOf[js.Any], outputStream.asInstanceOf[js.Any], logger.asInstanceOf[js.Any], strategy.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeJsonrpc.mod.MessageConnection]
-@scala.inline
-def createMessageConnection(
+inline def createMessageConnection(
   inputStream: typings.node.NodeJS.ReadableStream,
   outputStream: typings.node.NodeJS.WritableStream,
   logger: typings.vscodeJsonrpc.mod.Logger
 ): typings.vscodeJsonrpc.mod.MessageConnection = (typings.vscodeJsonrpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createMessageConnection")(inputStream.asInstanceOf[js.Any], outputStream.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeJsonrpc.mod.MessageConnection]
-@scala.inline
-def createMessageConnection(
+inline def createMessageConnection(
   inputStream: typings.node.NodeJS.ReadableStream,
   outputStream: typings.node.NodeJS.WritableStream,
   logger: typings.vscodeJsonrpc.mod.Logger,
   strategy: typings.vscodeJsonrpc.mod.ConnectionStrategy
 ): typings.vscodeJsonrpc.mod.MessageConnection = (typings.vscodeJsonrpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createMessageConnection")(inputStream.asInstanceOf[js.Any], outputStream.asInstanceOf[js.Any], logger.asInstanceOf[js.Any], strategy.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeJsonrpc.mod.MessageConnection]
-@scala.inline
-def createMessageConnection(
+inline def createMessageConnection(
   reader: typings.vscodeJsonrpc.messageReaderMod.MessageReader,
   writer: typings.vscodeJsonrpc.messageWriterMod.MessageWriter
 ): typings.vscodeJsonrpc.mod.MessageConnection = (typings.vscodeJsonrpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createMessageConnection")(reader.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeJsonrpc.mod.MessageConnection]
-@scala.inline
-def createMessageConnection(
+inline def createMessageConnection(
   reader: typings.vscodeJsonrpc.messageReaderMod.MessageReader,
   writer: typings.vscodeJsonrpc.messageWriterMod.MessageWriter,
   logger: scala.Unit,
   strategy: typings.vscodeJsonrpc.mod.ConnectionStrategy
 ): typings.vscodeJsonrpc.mod.MessageConnection = (typings.vscodeJsonrpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createMessageConnection")(reader.asInstanceOf[js.Any], writer.asInstanceOf[js.Any], logger.asInstanceOf[js.Any], strategy.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeJsonrpc.mod.MessageConnection]
-@scala.inline
-def createMessageConnection(
+inline def createMessageConnection(
   reader: typings.vscodeJsonrpc.messageReaderMod.MessageReader,
   writer: typings.vscodeJsonrpc.messageWriterMod.MessageWriter,
   logger: typings.vscodeJsonrpc.mod.Logger
 ): typings.vscodeJsonrpc.mod.MessageConnection = (typings.vscodeJsonrpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createMessageConnection")(reader.asInstanceOf[js.Any], writer.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeJsonrpc.mod.MessageConnection]
-@scala.inline
-def createMessageConnection(
+inline def createMessageConnection(
   reader: typings.vscodeJsonrpc.messageReaderMod.MessageReader,
   writer: typings.vscodeJsonrpc.messageWriterMod.MessageWriter,
   logger: typings.vscodeJsonrpc.mod.Logger,
   strategy: typings.vscodeJsonrpc.mod.ConnectionStrategy
 ): typings.vscodeJsonrpc.mod.MessageConnection = (typings.vscodeJsonrpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createMessageConnection")(reader.asInstanceOf[js.Any], writer.asInstanceOf[js.Any], logger.asInstanceOf[js.Any], strategy.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeJsonrpc.mod.MessageConnection]
 
-@scala.inline
-def createServerPipeTransport(pipeName: java.lang.String): js.Tuple2[
+inline def createServerPipeTransport(pipeName: java.lang.String): js.Tuple2[
 typings.vscodeJsonrpc.messageReaderMod.MessageReader, 
 typings.vscodeJsonrpc.messageWriterMod.MessageWriter] = typings.vscodeJsonrpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createServerPipeTransport")(pipeName.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[
 typings.vscodeJsonrpc.messageReaderMod.MessageReader, 
 typings.vscodeJsonrpc.messageWriterMod.MessageWriter]]
-@scala.inline
-def createServerPipeTransport(pipeName: java.lang.String, encoding: typings.node.BufferEncoding): js.Tuple2[
+inline def createServerPipeTransport(pipeName: java.lang.String, encoding: typings.node.BufferEncoding): js.Tuple2[
 typings.vscodeJsonrpc.messageReaderMod.MessageReader, 
 typings.vscodeJsonrpc.messageWriterMod.MessageWriter] = (typings.vscodeJsonrpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createServerPipeTransport")(pipeName.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[
 typings.vscodeJsonrpc.messageReaderMod.MessageReader, 
 typings.vscodeJsonrpc.messageWriterMod.MessageWriter]]
 
-@scala.inline
-def createServerSocketTransport(port: scala.Double): js.Tuple2[
+inline def createServerSocketTransport(port: scala.Double): js.Tuple2[
 typings.vscodeJsonrpc.messageReaderMod.MessageReader, 
 typings.vscodeJsonrpc.messageWriterMod.MessageWriter] = typings.vscodeJsonrpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createServerSocketTransport")(port.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[
 typings.vscodeJsonrpc.messageReaderMod.MessageReader, 
 typings.vscodeJsonrpc.messageWriterMod.MessageWriter]]
-@scala.inline
-def createServerSocketTransport(port: scala.Double, encoding: typings.node.BufferEncoding): js.Tuple2[
+inline def createServerSocketTransport(port: scala.Double, encoding: typings.node.BufferEncoding): js.Tuple2[
 typings.vscodeJsonrpc.messageReaderMod.MessageReader, 
 typings.vscodeJsonrpc.messageWriterMod.MessageWriter] = (typings.vscodeJsonrpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createServerSocketTransport")(port.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[
 typings.vscodeJsonrpc.messageReaderMod.MessageReader, 
 typings.vscodeJsonrpc.messageWriterMod.MessageWriter]]
 
-@scala.inline
-def generateRandomPipeName(): java.lang.String = typings.vscodeJsonrpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("generateRandomPipeName")().asInstanceOf[java.lang.String]
+inline def generateRandomPipeName(): java.lang.String = typings.vscodeJsonrpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("generateRandomPipeName")().asInstanceOf[java.lang.String]
 
 type GenericNotificationHandler = js.Function1[/* repeated */ js.Any, scala.Unit]
 

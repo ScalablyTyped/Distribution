@@ -18,6 +18,5 @@ object PssAlgorithmParams {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def FromAlgorithm(algorithm: RsaPSSSignParams): typings.xmldsigjs.rsaKeyMod.PssAlgorithmParams = ^.asInstanceOf[js.Dynamic].applyDynamic("FromAlgorithm")(algorithm.asInstanceOf[js.Any]).asInstanceOf[typings.xmldsigjs.rsaKeyMod.PssAlgorithmParams]
+  inline def FromAlgorithm(algorithm: RsaPSSSignParams): typings.xmldsigjs.rsaKeyMod.PssAlgorithmParams = ^.asInstanceOf[js.Dynamic].applyDynamic("FromAlgorithm")(algorithm.asInstanceOf[js.Any]).asInstanceOf[typings.xmldsigjs.rsaKeyMod.PssAlgorithmParams]
 }

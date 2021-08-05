@@ -25,23 +25,18 @@ object typesDeleteRepositoryOutputMod {
   }
   object DeleteRepositoryOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): DeleteRepositoryOutput = {
+    inline def apply($metadata: ResponseMetadata): DeleteRepositoryOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteRepositoryOutput]
     }
     
-    @scala.inline
-    implicit class DeleteRepositoryOutputMutableBuilder[Self <: DeleteRepositoryOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteRepositoryOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepositoryId(value: String): Self = StObject.set(x, "repositoryId", value.asInstanceOf[js.Any])
+      inline def setRepositoryId(value: String): Self = StObject.set(x, "repositoryId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepositoryIdUndefined: Self = StObject.set(x, "repositoryId", js.undefined)
+      inline def setRepositoryIdUndefined: Self = StObject.set(x, "repositoryId", js.undefined)
     }
   }
 }

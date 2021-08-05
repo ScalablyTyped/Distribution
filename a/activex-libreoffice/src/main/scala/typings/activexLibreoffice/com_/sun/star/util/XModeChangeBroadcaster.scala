@@ -37,8 +37,7 @@ trait XModeChangeBroadcaster
 }
 object XModeChangeBroadcaster {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addModeChangeApproveListener: XModeChangeApproveListener => Unit,
     addModeChangeListener: XModeChangeListener => Unit,
@@ -51,19 +50,14 @@ object XModeChangeBroadcaster {
     __obj.asInstanceOf[XModeChangeBroadcaster]
   }
   
-  @scala.inline
-  implicit class XModeChangeBroadcasterMutableBuilder[Self <: XModeChangeBroadcaster] (val x: Self) extends AnyVal {
+  extension [Self <: XModeChangeBroadcaster](x: Self) {
     
-    @scala.inline
-    def setAddModeChangeApproveListener(value: XModeChangeApproveListener => Unit): Self = StObject.set(x, "addModeChangeApproveListener", js.Any.fromFunction1(value))
+    inline def setAddModeChangeApproveListener(value: XModeChangeApproveListener => Unit): Self = StObject.set(x, "addModeChangeApproveListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddModeChangeListener(value: XModeChangeListener => Unit): Self = StObject.set(x, "addModeChangeListener", js.Any.fromFunction1(value))
+    inline def setAddModeChangeListener(value: XModeChangeListener => Unit): Self = StObject.set(x, "addModeChangeListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveModeChangeApproveListener(value: XModeChangeApproveListener => Unit): Self = StObject.set(x, "removeModeChangeApproveListener", js.Any.fromFunction1(value))
+    inline def setRemoveModeChangeApproveListener(value: XModeChangeApproveListener => Unit): Self = StObject.set(x, "removeModeChangeApproveListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveModeChangeListener(value: XModeChangeListener => Unit): Self = StObject.set(x, "removeModeChangeListener", js.Any.fromFunction1(value))
+    inline def setRemoveModeChangeListener(value: XModeChangeListener => Unit): Self = StObject.set(x, "removeModeChangeListener", js.Any.fromFunction1(value))
   }
 }

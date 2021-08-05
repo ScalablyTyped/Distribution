@@ -17,34 +17,25 @@ trait ProcessingError extends StObject {
 }
 object ProcessingError {
   
-  @scala.inline
-  def apply(): ProcessingError = {
+  inline def apply(): ProcessingError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProcessingError]
   }
   
-  @scala.inline
-  implicit class ProcessingErrorMutableBuilder[Self <: ProcessingError] (val x: Self) extends AnyVal {
+  extension [Self <: ProcessingError](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
-    @scala.inline
-    def setFieldViolations(value: js.Array[FieldViolation]): Self = StObject.set(x, "fieldViolations", value.asInstanceOf[js.Any])
+    inline def setFieldViolations(value: js.Array[FieldViolation]): Self = StObject.set(x, "fieldViolations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldViolationsUndefined: Self = StObject.set(x, "fieldViolations", js.undefined)
+    inline def setFieldViolationsUndefined: Self = StObject.set(x, "fieldViolations", js.undefined)
     
-    @scala.inline
-    def setFieldViolationsVarargs(value: FieldViolation*): Self = StObject.set(x, "fieldViolations", js.Array(value :_*))
+    inline def setFieldViolationsVarargs(value: FieldViolation*): Self = StObject.set(x, "fieldViolations", js.Array(value :_*))
   }
 }

@@ -10,16 +10,13 @@ trait MediaStreamTrackAudioSourceOptions extends StObject {
 }
 object MediaStreamTrackAudioSourceOptions {
   
-  @scala.inline
-  def apply(mediaStreamTrack: MediaStreamTrack): MediaStreamTrackAudioSourceOptions = {
+  inline def apply(mediaStreamTrack: MediaStreamTrack): MediaStreamTrackAudioSourceOptions = {
     val __obj = js.Dynamic.literal(mediaStreamTrack = mediaStreamTrack.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaStreamTrackAudioSourceOptions]
   }
   
-  @scala.inline
-  implicit class MediaStreamTrackAudioSourceOptionsMutableBuilder[Self <: MediaStreamTrackAudioSourceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MediaStreamTrackAudioSourceOptions](x: Self) {
     
-    @scala.inline
-    def setMediaStreamTrack(value: MediaStreamTrack): Self = StObject.set(x, "mediaStreamTrack", value.asInstanceOf[js.Any])
+    inline def setMediaStreamTrack(value: MediaStreamTrack): Self = StObject.set(x, "mediaStreamTrack", value.asInstanceOf[js.Any])
   }
 }

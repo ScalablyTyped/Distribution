@@ -21,22 +21,17 @@ trait TimecodeConfig extends StObject {
 }
 object TimecodeConfig {
   
-  @scala.inline
-  def apply(Source: TimecodeConfigSource): TimecodeConfig = {
+  inline def apply(Source: TimecodeConfigSource): TimecodeConfig = {
     val __obj = js.Dynamic.literal(Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimecodeConfig]
   }
   
-  @scala.inline
-  implicit class TimecodeConfigMutableBuilder[Self <: TimecodeConfig] (val x: Self) extends AnyVal {
+  extension [Self <: TimecodeConfig](x: Self) {
     
-    @scala.inline
-    def setSource(value: TimecodeConfigSource): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+    inline def setSource(value: TimecodeConfigSource): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncThreshold(value: integerMin1Max1000000): Self = StObject.set(x, "SyncThreshold", value.asInstanceOf[js.Any])
+    inline def setSyncThreshold(value: integerMin1Max1000000): Self = StObject.set(x, "SyncThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncThresholdUndefined: Self = StObject.set(x, "SyncThreshold", js.undefined)
+    inline def setSyncThresholdUndefined: Self = StObject.set(x, "SyncThreshold", js.undefined)
   }
 }

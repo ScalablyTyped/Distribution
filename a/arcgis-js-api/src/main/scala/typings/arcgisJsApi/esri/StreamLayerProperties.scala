@@ -178,157 +178,107 @@ trait StreamLayerProperties
 }
 object StreamLayerProperties {
   
-  @scala.inline
-  def apply(): StreamLayerProperties = {
+  inline def apply(): StreamLayerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StreamLayerProperties]
   }
   
-  @scala.inline
-  implicit class StreamLayerPropertiesMutableBuilder[Self <: StreamLayerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: StreamLayerProperties](x: Self) {
     
-    @scala.inline
-    def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+    inline def setCopyright(value: String): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
+    inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
-    @scala.inline
-    def setDefinitionExpression(value: String): Self = StObject.set(x, "definitionExpression", value.asInstanceOf[js.Any])
+    inline def setDefinitionExpression(value: String): Self = StObject.set(x, "definitionExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinitionExpressionUndefined: Self = StObject.set(x, "definitionExpression", js.undefined)
+    inline def setDefinitionExpressionUndefined: Self = StObject.set(x, "definitionExpression", js.undefined)
     
-    @scala.inline
-    def setDisplayField(value: String): Self = StObject.set(x, "displayField", value.asInstanceOf[js.Any])
+    inline def setDisplayField(value: String): Self = StObject.set(x, "displayField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayFieldUndefined: Self = StObject.set(x, "displayField", js.undefined)
+    inline def setDisplayFieldUndefined: Self = StObject.set(x, "displayField", js.undefined)
     
-    @scala.inline
-    def setElevationInfo(value: StreamLayerElevationInfo): Self = StObject.set(x, "elevationInfo", value.asInstanceOf[js.Any])
+    inline def setElevationInfo(value: StreamLayerElevationInfo): Self = StObject.set(x, "elevationInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElevationInfoUndefined: Self = StObject.set(x, "elevationInfo", js.undefined)
+    inline def setElevationInfoUndefined: Self = StObject.set(x, "elevationInfo", js.undefined)
     
-    @scala.inline
-    def setFeatureReduction(value: FeatureReductionSelectionProperties): Self = StObject.set(x, "featureReduction", value.asInstanceOf[js.Any])
+    inline def setFeatureReduction(value: FeatureReductionSelectionProperties): Self = StObject.set(x, "featureReduction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureReductionUndefined: Self = StObject.set(x, "featureReduction", js.undefined)
+    inline def setFeatureReductionUndefined: Self = StObject.set(x, "featureReduction", js.undefined)
     
-    @scala.inline
-    def setFields(value: js.Array[FieldProperties]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[FieldProperties]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: FieldProperties*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: FieldProperties*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setGeometryDefinition(value: ExtentProperties): Self = StObject.set(x, "geometryDefinition", value.asInstanceOf[js.Any])
+    inline def setGeometryDefinition(value: ExtentProperties): Self = StObject.set(x, "geometryDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometryDefinitionUndefined: Self = StObject.set(x, "geometryDefinition", js.undefined)
+    inline def setGeometryDefinitionUndefined: Self = StObject.set(x, "geometryDefinition", js.undefined)
     
-    @scala.inline
-    def setGeometryType(value: point | polygon | polyline | multipoint): Self = StObject.set(x, "geometryType", value.asInstanceOf[js.Any])
+    inline def setGeometryType(value: point | polygon | polyline | multipoint): Self = StObject.set(x, "geometryType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometryTypeUndefined: Self = StObject.set(x, "geometryType", js.undefined)
+    inline def setGeometryTypeUndefined: Self = StObject.set(x, "geometryType", js.undefined)
     
-    @scala.inline
-    def setLabelingInfo(value: js.Array[LabelClassProperties]): Self = StObject.set(x, "labelingInfo", value.asInstanceOf[js.Any])
+    inline def setLabelingInfo(value: js.Array[LabelClassProperties]): Self = StObject.set(x, "labelingInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelingInfoUndefined: Self = StObject.set(x, "labelingInfo", js.undefined)
+    inline def setLabelingInfoUndefined: Self = StObject.set(x, "labelingInfo", js.undefined)
     
-    @scala.inline
-    def setLabelingInfoVarargs(value: LabelClassProperties*): Self = StObject.set(x, "labelingInfo", js.Array(value :_*))
+    inline def setLabelingInfoVarargs(value: LabelClassProperties*): Self = StObject.set(x, "labelingInfo", js.Array(value :_*))
     
-    @scala.inline
-    def setLabelsVisible(value: Boolean): Self = StObject.set(x, "labelsVisible", value.asInstanceOf[js.Any])
+    inline def setLabelsVisible(value: Boolean): Self = StObject.set(x, "labelsVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsVisibleUndefined: Self = StObject.set(x, "labelsVisible", js.undefined)
+    inline def setLabelsVisibleUndefined: Self = StObject.set(x, "labelsVisible", js.undefined)
     
-    @scala.inline
-    def setLegendEnabled(value: Boolean): Self = StObject.set(x, "legendEnabled", value.asInstanceOf[js.Any])
+    inline def setLegendEnabled(value: Boolean): Self = StObject.set(x, "legendEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendEnabledUndefined: Self = StObject.set(x, "legendEnabled", js.undefined)
+    inline def setLegendEnabledUndefined: Self = StObject.set(x, "legendEnabled", js.undefined)
     
-    @scala.inline
-    def setMaxReconnectionAttempts(value: Double): Self = StObject.set(x, "maxReconnectionAttempts", value.asInstanceOf[js.Any])
+    inline def setMaxReconnectionAttempts(value: Double): Self = StObject.set(x, "maxReconnectionAttempts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxReconnectionAttemptsUndefined: Self = StObject.set(x, "maxReconnectionAttempts", js.undefined)
+    inline def setMaxReconnectionAttemptsUndefined: Self = StObject.set(x, "maxReconnectionAttempts", js.undefined)
     
-    @scala.inline
-    def setMaxReconnectionInterval(value: Double): Self = StObject.set(x, "maxReconnectionInterval", value.asInstanceOf[js.Any])
+    inline def setMaxReconnectionInterval(value: Double): Self = StObject.set(x, "maxReconnectionInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxReconnectionIntervalUndefined: Self = StObject.set(x, "maxReconnectionInterval", js.undefined)
+    inline def setMaxReconnectionIntervalUndefined: Self = StObject.set(x, "maxReconnectionInterval", js.undefined)
     
-    @scala.inline
-    def setObjectIdField(value: String): Self = StObject.set(x, "objectIdField", value.asInstanceOf[js.Any])
+    inline def setObjectIdField(value: String): Self = StObject.set(x, "objectIdField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdFieldUndefined: Self = StObject.set(x, "objectIdField", js.undefined)
+    inline def setObjectIdFieldUndefined: Self = StObject.set(x, "objectIdField", js.undefined)
     
-    @scala.inline
-    def setPopupEnabled(value: Boolean): Self = StObject.set(x, "popupEnabled", value.asInstanceOf[js.Any])
+    inline def setPopupEnabled(value: Boolean): Self = StObject.set(x, "popupEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopupEnabledUndefined: Self = StObject.set(x, "popupEnabled", js.undefined)
+    inline def setPopupEnabledUndefined: Self = StObject.set(x, "popupEnabled", js.undefined)
     
-    @scala.inline
-    def setPopupTemplate(value: PopupTemplateProperties): Self = StObject.set(x, "popupTemplate", value.asInstanceOf[js.Any])
+    inline def setPopupTemplate(value: PopupTemplateProperties): Self = StObject.set(x, "popupTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopupTemplateUndefined: Self = StObject.set(x, "popupTemplate", js.undefined)
+    inline def setPopupTemplateUndefined: Self = StObject.set(x, "popupTemplate", js.undefined)
     
-    @scala.inline
-    def setPurgeOptions(value: StreamLayerPurgeOptions): Self = StObject.set(x, "purgeOptions", value.asInstanceOf[js.Any])
+    inline def setPurgeOptions(value: StreamLayerPurgeOptions): Self = StObject.set(x, "purgeOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPurgeOptionsUndefined: Self = StObject.set(x, "purgeOptions", js.undefined)
+    inline def setPurgeOptionsUndefined: Self = StObject.set(x, "purgeOptions", js.undefined)
     
-    @scala.inline
-    def setRenderer(value: RendererProperties): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+    inline def setRenderer(value: RendererProperties): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+    inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
     
-    @scala.inline
-    def setScreenSizePerspectiveEnabled(value: Boolean): Self = StObject.set(x, "screenSizePerspectiveEnabled", value.asInstanceOf[js.Any])
+    inline def setScreenSizePerspectiveEnabled(value: Boolean): Self = StObject.set(x, "screenSizePerspectiveEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenSizePerspectiveEnabledUndefined: Self = StObject.set(x, "screenSizePerspectiveEnabled", js.undefined)
+    inline def setScreenSizePerspectiveEnabledUndefined: Self = StObject.set(x, "screenSizePerspectiveEnabled", js.undefined)
     
-    @scala.inline
-    def setSourceJSON(value: js.Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
+    inline def setSourceJSON(value: js.Any): Self = StObject.set(x, "sourceJSON", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceJSONUndefined: Self = StObject.set(x, "sourceJSON", js.undefined)
+    inline def setSourceJSONUndefined: Self = StObject.set(x, "sourceJSON", js.undefined)
     
-    @scala.inline
-    def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
+    inline def setSpatialReference(value: SpatialReferenceProperties): Self = StObject.set(x, "spatialReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
+    inline def setSpatialReferenceUndefined: Self = StObject.set(x, "spatialReference", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setWebSocketUrl(value: String): Self = StObject.set(x, "webSocketUrl", value.asInstanceOf[js.Any])
+    inline def setWebSocketUrl(value: String): Self = StObject.set(x, "webSocketUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebSocketUrlUndefined: Self = StObject.set(x, "webSocketUrl", js.undefined)
+    inline def setWebSocketUrlUndefined: Self = StObject.set(x, "webSocketUrl", js.undefined)
   }
 }

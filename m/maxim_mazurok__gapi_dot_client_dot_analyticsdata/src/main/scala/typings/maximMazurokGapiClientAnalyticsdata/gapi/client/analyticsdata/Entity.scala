@@ -11,19 +11,15 @@ trait Entity extends StObject {
 }
 object Entity {
   
-  @scala.inline
-  def apply(): Entity = {
+  inline def apply(): Entity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Entity]
   }
   
-  @scala.inline
-  implicit class EntityMutableBuilder[Self <: Entity] (val x: Self) extends AnyVal {
+  extension [Self <: Entity](x: Self) {
     
-    @scala.inline
-    def setPropertyId(value: String): Self = StObject.set(x, "propertyId", value.asInstanceOf[js.Any])
+    inline def setPropertyId(value: String): Self = StObject.set(x, "propertyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyIdUndefined: Self = StObject.set(x, "propertyId", js.undefined)
+    inline def setPropertyIdUndefined: Self = StObject.set(x, "propertyId", js.undefined)
   }
 }

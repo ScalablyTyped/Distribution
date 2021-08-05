@@ -42,49 +42,35 @@ trait TrafficTarget extends StObject {
 }
 object TrafficTarget {
   
-  @scala.inline
-  def apply(): TrafficTarget = {
+  inline def apply(): TrafficTarget = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrafficTarget]
   }
   
-  @scala.inline
-  implicit class TrafficTargetMutableBuilder[Self <: TrafficTarget] (val x: Self) extends AnyVal {
+  extension [Self <: TrafficTarget](x: Self) {
     
-    @scala.inline
-    def setConfigurationName(value: String): Self = StObject.set(x, "configurationName", value.asInstanceOf[js.Any])
+    inline def setConfigurationName(value: String): Self = StObject.set(x, "configurationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationNameUndefined: Self = StObject.set(x, "configurationName", js.undefined)
+    inline def setConfigurationNameUndefined: Self = StObject.set(x, "configurationName", js.undefined)
     
-    @scala.inline
-    def setLatestRevision(value: Boolean): Self = StObject.set(x, "latestRevision", value.asInstanceOf[js.Any])
+    inline def setLatestRevision(value: Boolean): Self = StObject.set(x, "latestRevision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatestRevisionUndefined: Self = StObject.set(x, "latestRevision", js.undefined)
+    inline def setLatestRevisionUndefined: Self = StObject.set(x, "latestRevision", js.undefined)
     
-    @scala.inline
-    def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+    inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
+    inline def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
     
-    @scala.inline
-    def setRevisionName(value: String): Self = StObject.set(x, "revisionName", value.asInstanceOf[js.Any])
+    inline def setRevisionName(value: String): Self = StObject.set(x, "revisionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionNameUndefined: Self = StObject.set(x, "revisionName", js.undefined)
+    inline def setRevisionNameUndefined: Self = StObject.set(x, "revisionName", js.undefined)
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

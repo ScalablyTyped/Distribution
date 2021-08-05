@@ -18,8 +18,7 @@ trait BaseComment extends StObject {
 }
 object BaseComment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     end: Double,
     loc: SourceLocation,
     start: Double,
@@ -31,24 +30,18 @@ object BaseComment {
     __obj.asInstanceOf[BaseComment]
   }
   
-  @scala.inline
-  implicit class BaseCommentMutableBuilder[Self <: BaseComment] (val x: Self) extends AnyVal {
+  extension [Self <: BaseComment](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoc(value: SourceLocation): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
+    inline def setLoc(value: SourceLocation): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(
+    inline def setType(
       value: typings.babelTypes.babelTypesStrings.CommentBlock | typings.babelTypes.babelTypesStrings.CommentLine
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

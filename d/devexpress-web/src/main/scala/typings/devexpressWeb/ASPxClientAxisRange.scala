@@ -38,8 +38,7 @@ trait ASPxClientAxisRange
 }
 object ASPxClientAxisRange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     axis: ASPxClientAxisBase,
     chart: ASPxClientWebChart,
     maxValue: js.Any,
@@ -51,22 +50,16 @@ object ASPxClientAxisRange {
     __obj.asInstanceOf[ASPxClientAxisRange]
   }
   
-  @scala.inline
-  implicit class ASPxClientAxisRangeMutableBuilder[Self <: ASPxClientAxisRange] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientAxisRange](x: Self) {
     
-    @scala.inline
-    def setAxis(value: ASPxClientAxisBase): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: ASPxClientAxisBase): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxValue(value: js.Any): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: js.Any): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxValueInternal(value: Double): Self = StObject.set(x, "maxValueInternal", value.asInstanceOf[js.Any])
+    inline def setMaxValueInternal(value: Double): Self = StObject.set(x, "maxValueInternal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValue(value: js.Any): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: js.Any): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValueInternal(value: Double): Self = StObject.set(x, "minValueInternal", value.asInstanceOf[js.Any])
+    inline def setMinValueInternal(value: Double): Self = StObject.set(x, "minValueInternal", value.asInstanceOf[js.Any])
   }
 }

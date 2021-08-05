@@ -24,19 +24,15 @@ trait AreaPathProps
 }
 object AreaPathProps {
   
-  @scala.inline
-  def apply(d: String, fillMode: nonzero | evenodd): AreaPathProps = {
+  inline def apply(d: String, fillMode: nonzero | evenodd): AreaPathProps = {
     val __obj = js.Dynamic.literal(d = d.asInstanceOf[js.Any], fillMode = fillMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[AreaPathProps]
   }
   
-  @scala.inline
-  implicit class AreaPathPropsMutableBuilder[Self <: AreaPathProps] (val x: Self) extends AnyVal {
+  extension [Self <: AreaPathProps](x: Self) {
     
-    @scala.inline
-    def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+    inline def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillMode(value: nonzero | evenodd): Self = StObject.set(x, "fillMode", value.asInstanceOf[js.Any])
+    inline def setFillMode(value: nonzero | evenodd): Self = StObject.set(x, "fillMode", value.asInstanceOf[js.Any])
   }
 }

@@ -12,6 +12,5 @@ object pivotStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(props: IPivotStyleProps): IPivotStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IPivotStyles]
+  inline def getStyles(props: IPivotStyleProps): IPivotStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IPivotStyles]
 }

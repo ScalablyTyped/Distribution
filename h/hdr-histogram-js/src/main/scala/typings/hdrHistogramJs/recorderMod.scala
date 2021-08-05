@@ -53,8 +53,7 @@ object recorderMod {
     @JSImport("hdr-histogram-js/Recorder", "default.idGenerator")
     @js.native
     def idGenerator: Double = js.native
-    @scala.inline
-    def idGenerator_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("idGenerator")(x.asInstanceOf[js.Any])
+    inline def idGenerator_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("idGenerator")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -73,9 +72,9 @@ object recorderMod {
   @js.native
   trait Recorder extends StObject {
     
-    var activeHistogram: js.Any = js.native
+    /* private */ var activeHistogram: js.Any = js.native
     
-    var clock: js.Any = js.native
+    /* private */ var clock: js.Any = js.native
     
     /**
       * Get an interval histogram, which will include a stable, consistent view of all value counts
@@ -118,15 +117,15 @@ object recorderMod {
       */
     def getIntervalHistogramInto(targetHistogram: AbstractHistogram): Unit = js.native
     
-    var histogramConstr: js.Any = js.native
+    /* private */ var histogramConstr: js.Any = js.native
     
-    var inactiveHistogram: js.Any = js.native
+    /* private */ var inactiveHistogram: js.Any = js.native
     
-    var numberOfSignificantValueDigits: js.Any = js.native
+    /* private */ var numberOfSignificantValueDigits: js.Any = js.native
     
-    var packed: js.Any = js.native
+    /* private */ var packed: js.Any = js.native
     
-    var performIntervalSample: js.Any = js.native
+    /* private */ var performIntervalSample: js.Any = js.native
     
     /**
       * Record a value in the histogram

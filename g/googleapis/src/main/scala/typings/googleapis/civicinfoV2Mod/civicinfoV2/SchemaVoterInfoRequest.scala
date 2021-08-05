@@ -15,25 +15,19 @@ trait SchemaVoterInfoRequest extends StObject {
 }
 object SchemaVoterInfoRequest {
   
-  @scala.inline
-  def apply(): SchemaVoterInfoRequest = {
+  inline def apply(): SchemaVoterInfoRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVoterInfoRequest]
   }
   
-  @scala.inline
-  implicit class SchemaVoterInfoRequestMutableBuilder[Self <: SchemaVoterInfoRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaVoterInfoRequest](x: Self) {
     
-    @scala.inline
-    def setContextParams(value: SchemaContextParams): Self = StObject.set(x, "contextParams", value.asInstanceOf[js.Any])
+    inline def setContextParams(value: SchemaContextParams): Self = StObject.set(x, "contextParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextParamsUndefined: Self = StObject.set(x, "contextParams", js.undefined)
+    inline def setContextParamsUndefined: Self = StObject.set(x, "contextParams", js.undefined)
     
-    @scala.inline
-    def setVoterInfoSegmentResult(value: SchemaVoterInfoSegmentResult): Self = StObject.set(x, "voterInfoSegmentResult", value.asInstanceOf[js.Any])
+    inline def setVoterInfoSegmentResult(value: SchemaVoterInfoSegmentResult): Self = StObject.set(x, "voterInfoSegmentResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoterInfoSegmentResultUndefined: Self = StObject.set(x, "voterInfoSegmentResult", js.undefined)
+    inline def setVoterInfoSegmentResultUndefined: Self = StObject.set(x, "voterInfoSegmentResult", js.undefined)
   }
 }

@@ -28,34 +28,25 @@ trait GetEffectivePermissionsForPathRequest extends StObject {
 }
 object GetEffectivePermissionsForPathRequest {
   
-  @scala.inline
-  def apply(ResourceArn: ResourceArnString): GetEffectivePermissionsForPathRequest = {
+  inline def apply(ResourceArn: ResourceArnString): GetEffectivePermissionsForPathRequest = {
     val __obj = js.Dynamic.literal(ResourceArn = ResourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetEffectivePermissionsForPathRequest]
   }
   
-  @scala.inline
-  implicit class GetEffectivePermissionsForPathRequestMutableBuilder[Self <: GetEffectivePermissionsForPathRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetEffectivePermissionsForPathRequest](x: Self) {
     
-    @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
+    inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
+    inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setResourceArn(value: ResourceArnString): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: ResourceArnString): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
   }
 }

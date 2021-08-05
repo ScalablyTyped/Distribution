@@ -47,8 +47,7 @@ object anon {
   }
   object TypeofPg {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Client: Instantiable1[/* config */ js.UndefOr[String | ClientConfig], Client],
       ClientBase: Instantiable1[/* config */ js.UndefOr[String | ClientConfig], ClientBase],
       Connection: Instantiable1[/* config */ js.UndefOr[ConnectionConfig], Connection],
@@ -67,35 +66,25 @@ object anon {
       __obj.asInstanceOf[TypeofPg]
     }
     
-    @scala.inline
-    implicit class TypeofPgMutableBuilder[Self <: TypeofPg] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofPg](x: Self) {
       
-      @scala.inline
-      def setClient(value: Instantiable1[/* config */ js.UndefOr[String | ClientConfig], Client]): Self = StObject.set(x, "Client", value.asInstanceOf[js.Any])
+      inline def setClient(value: Instantiable1[/* config */ js.UndefOr[String | ClientConfig], Client]): Self = StObject.set(x, "Client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientBase(value: Instantiable1[/* config */ js.UndefOr[String | ClientConfig], ClientBase]): Self = StObject.set(x, "ClientBase", value.asInstanceOf[js.Any])
+      inline def setClientBase(value: Instantiable1[/* config */ js.UndefOr[String | ClientConfig], ClientBase]): Self = StObject.set(x, "ClientBase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnection(value: Instantiable1[/* config */ js.UndefOr[ConnectionConfig], Connection]): Self = StObject.set(x, "Connection", value.asInstanceOf[js.Any])
+      inline def setConnection(value: Instantiable1[/* config */ js.UndefOr[ConnectionConfig], Connection]): Self = StObject.set(x, "Connection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaults(value: Defaults_ & ClientConfig): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
+      inline def setDefaults(value: Defaults_ & ClientConfig): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvents(value: Instantiable0[Events]): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: Instantiable0[Events]): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNative(value: /* import warning: importer.ImportType#apply Failed type conversion: typeof Pg */ js.Any): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
+      inline def setNative(value: /* import warning: importer.ImportType#apply Failed type conversion: typeof Pg */ js.Any): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNativeNull: Self = StObject.set(x, "native", null)
+      inline def setNativeNull: Self = StObject.set(x, "native", null)
       
-      @scala.inline
-      def setPool(value: Instantiable1[/* config */ js.UndefOr[PoolConfig], Pool]): Self = StObject.set(x, "Pool", value.asInstanceOf[js.Any])
+      inline def setPool(value: Instantiable1[/* config */ js.UndefOr[PoolConfig], Pool]): Self = StObject.set(x, "Pool", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuery(
+      inline def setQuery(
         value: Instantiable2[
               /* queryTextOrConfig */ js.UndefOr[
                 String | (QueryConfig[/* import warning: RewrittenClass.unapply cls was tparam I */ js.Any])

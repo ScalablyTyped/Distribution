@@ -32,8 +32,7 @@ trait HierarchyDataReadAccess
      with XComponent
 object HierarchyDataReadAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementNames: SafeArray[String],
     ElementType: `type`,
     acquire: () => Unit,

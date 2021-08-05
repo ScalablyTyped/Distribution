@@ -14,23 +14,18 @@ trait IdentifierSqlTokenType
 }
 object IdentifierSqlTokenType {
   
-  @scala.inline
-  def apply(names: js.Array[String], `type`: js.Symbol): IdentifierSqlTokenType = {
+  inline def apply(names: js.Array[String], `type`: js.Symbol): IdentifierSqlTokenType = {
     val __obj = js.Dynamic.literal(names = names.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentifierSqlTokenType]
   }
   
-  @scala.inline
-  implicit class IdentifierSqlTokenTypeMutableBuilder[Self <: IdentifierSqlTokenType] (val x: Self) extends AnyVal {
+  extension [Self <: IdentifierSqlTokenType](x: Self) {
     
-    @scala.inline
-    def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+    inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: js.Symbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: js.Symbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

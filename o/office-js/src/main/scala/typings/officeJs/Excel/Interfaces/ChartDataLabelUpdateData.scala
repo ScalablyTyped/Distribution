@@ -182,129 +182,89 @@ trait ChartDataLabelUpdateData extends StObject {
 }
 object ChartDataLabelUpdateData {
   
-  @scala.inline
-  def apply(): ChartDataLabelUpdateData = {
+  inline def apply(): ChartDataLabelUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartDataLabelUpdateData]
   }
   
-  @scala.inline
-  implicit class ChartDataLabelUpdateDataMutableBuilder[Self <: ChartDataLabelUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: ChartDataLabelUpdateData](x: Self) {
     
-    @scala.inline
-    def setAutoText(value: Boolean): Self = StObject.set(x, "autoText", value.asInstanceOf[js.Any])
+    inline def setAutoText(value: Boolean): Self = StObject.set(x, "autoText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoTextUndefined: Self = StObject.set(x, "autoText", js.undefined)
+    inline def setAutoTextUndefined: Self = StObject.set(x, "autoText", js.undefined)
     
-    @scala.inline
-    def setFormat(value: ChartDataLabelFormatUpdateData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: ChartDataLabelFormatUpdateData): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setFormula(value: String): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
+    inline def setFormula(value: String): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
+    inline def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
     
-    @scala.inline
-    def setHorizontalAlignment(value: ChartTextHorizontalAlignment | Center | Left | Right | Justify | Distributed): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
+    inline def setHorizontalAlignment(value: ChartTextHorizontalAlignment | Center | Left | Right | Justify | Distributed): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
+    inline def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    @scala.inline
-    def setLinkNumberFormat(value: Boolean): Self = StObject.set(x, "linkNumberFormat", value.asInstanceOf[js.Any])
+    inline def setLinkNumberFormat(value: Boolean): Self = StObject.set(x, "linkNumberFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkNumberFormatUndefined: Self = StObject.set(x, "linkNumberFormat", js.undefined)
+    inline def setLinkNumberFormatUndefined: Self = StObject.set(x, "linkNumberFormat", js.undefined)
     
-    @scala.inline
-    def setNumberFormat(value: String): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
+    inline def setNumberFormat(value: String): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
+    inline def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
     
-    @scala.inline
-    def setPosition(
+    inline def setPosition(
       value: ChartDataLabelPosition | Invalid | None | Center | InsideEnd | InsideBase | OutsideEnd | Left | Right | Top | Bottom | BestFit | Callout
     ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+    inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+    inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
     
-    @scala.inline
-    def setShowBubbleSize(value: Boolean): Self = StObject.set(x, "showBubbleSize", value.asInstanceOf[js.Any])
+    inline def setShowBubbleSize(value: Boolean): Self = StObject.set(x, "showBubbleSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowBubbleSizeUndefined: Self = StObject.set(x, "showBubbleSize", js.undefined)
+    inline def setShowBubbleSizeUndefined: Self = StObject.set(x, "showBubbleSize", js.undefined)
     
-    @scala.inline
-    def setShowCategoryName(value: Boolean): Self = StObject.set(x, "showCategoryName", value.asInstanceOf[js.Any])
+    inline def setShowCategoryName(value: Boolean): Self = StObject.set(x, "showCategoryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowCategoryNameUndefined: Self = StObject.set(x, "showCategoryName", js.undefined)
+    inline def setShowCategoryNameUndefined: Self = StObject.set(x, "showCategoryName", js.undefined)
     
-    @scala.inline
-    def setShowLegendKey(value: Boolean): Self = StObject.set(x, "showLegendKey", value.asInstanceOf[js.Any])
+    inline def setShowLegendKey(value: Boolean): Self = StObject.set(x, "showLegendKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowLegendKeyUndefined: Self = StObject.set(x, "showLegendKey", js.undefined)
+    inline def setShowLegendKeyUndefined: Self = StObject.set(x, "showLegendKey", js.undefined)
     
-    @scala.inline
-    def setShowPercentage(value: Boolean): Self = StObject.set(x, "showPercentage", value.asInstanceOf[js.Any])
+    inline def setShowPercentage(value: Boolean): Self = StObject.set(x, "showPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowPercentageUndefined: Self = StObject.set(x, "showPercentage", js.undefined)
+    inline def setShowPercentageUndefined: Self = StObject.set(x, "showPercentage", js.undefined)
     
-    @scala.inline
-    def setShowSeriesName(value: Boolean): Self = StObject.set(x, "showSeriesName", value.asInstanceOf[js.Any])
+    inline def setShowSeriesName(value: Boolean): Self = StObject.set(x, "showSeriesName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowSeriesNameUndefined: Self = StObject.set(x, "showSeriesName", js.undefined)
+    inline def setShowSeriesNameUndefined: Self = StObject.set(x, "showSeriesName", js.undefined)
     
-    @scala.inline
-    def setShowValue(value: Boolean): Self = StObject.set(x, "showValue", value.asInstanceOf[js.Any])
+    inline def setShowValue(value: Boolean): Self = StObject.set(x, "showValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowValueUndefined: Self = StObject.set(x, "showValue", js.undefined)
+    inline def setShowValueUndefined: Self = StObject.set(x, "showValue", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextOrientation(value: Double): Self = StObject.set(x, "textOrientation", value.asInstanceOf[js.Any])
+    inline def setTextOrientation(value: Double): Self = StObject.set(x, "textOrientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextOrientationUndefined: Self = StObject.set(x, "textOrientation", js.undefined)
+    inline def setTextOrientationUndefined: Self = StObject.set(x, "textOrientation", js.undefined)
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
-    @scala.inline
-    def setVerticalAlignment(value: ChartTextVerticalAlignment | Center | Bottom | Top | Justify | Distributed): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
+    inline def setVerticalAlignment(value: ChartTextVerticalAlignment | Center | Bottom | Top | Justify | Distributed): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
+    inline def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
   }
 }

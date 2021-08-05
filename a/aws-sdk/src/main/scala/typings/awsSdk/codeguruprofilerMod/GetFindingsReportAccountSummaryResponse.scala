@@ -18,25 +18,19 @@ trait GetFindingsReportAccountSummaryResponse extends StObject {
 }
 object GetFindingsReportAccountSummaryResponse {
   
-  @scala.inline
-  def apply(reportSummaries: FindingsReportSummaries): GetFindingsReportAccountSummaryResponse = {
+  inline def apply(reportSummaries: FindingsReportSummaries): GetFindingsReportAccountSummaryResponse = {
     val __obj = js.Dynamic.literal(reportSummaries = reportSummaries.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFindingsReportAccountSummaryResponse]
   }
   
-  @scala.inline
-  implicit class GetFindingsReportAccountSummaryResponseMutableBuilder[Self <: GetFindingsReportAccountSummaryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetFindingsReportAccountSummaryResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setReportSummaries(value: FindingsReportSummaries): Self = StObject.set(x, "reportSummaries", value.asInstanceOf[js.Any])
+    inline def setReportSummaries(value: FindingsReportSummaries): Self = StObject.set(x, "reportSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportSummariesVarargs(value: FindingsReportSummary*): Self = StObject.set(x, "reportSummaries", js.Array(value :_*))
+    inline def setReportSummariesVarargs(value: FindingsReportSummary*): Self = StObject.set(x, "reportSummaries", js.Array(value :_*))
   }
 }

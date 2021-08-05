@@ -28,8 +28,7 @@ trait AccessiblePageHeaderFooterAreasView
      with XAccessibleEventBroadcaster
 object AccessiblePageHeaderFooterAreasView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleChildCount: Double,
     AccessibleDescription: String,
     AccessibleIndexInParent: Double,

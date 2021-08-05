@@ -29,37 +29,27 @@ trait ProjectBillingInfo extends StObject {
 }
 object ProjectBillingInfo {
   
-  @scala.inline
-  def apply(): ProjectBillingInfo = {
+  inline def apply(): ProjectBillingInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProjectBillingInfo]
   }
   
-  @scala.inline
-  implicit class ProjectBillingInfoMutableBuilder[Self <: ProjectBillingInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectBillingInfo](x: Self) {
     
-    @scala.inline
-    def setBillingAccountName(value: String): Self = StObject.set(x, "billingAccountName", value.asInstanceOf[js.Any])
+    inline def setBillingAccountName(value: String): Self = StObject.set(x, "billingAccountName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingAccountNameUndefined: Self = StObject.set(x, "billingAccountName", js.undefined)
+    inline def setBillingAccountNameUndefined: Self = StObject.set(x, "billingAccountName", js.undefined)
     
-    @scala.inline
-    def setBillingEnabled(value: Boolean): Self = StObject.set(x, "billingEnabled", value.asInstanceOf[js.Any])
+    inline def setBillingEnabled(value: Boolean): Self = StObject.set(x, "billingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingEnabledUndefined: Self = StObject.set(x, "billingEnabled", js.undefined)
+    inline def setBillingEnabledUndefined: Self = StObject.set(x, "billingEnabled", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
   }
 }

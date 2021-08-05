@@ -13,19 +13,15 @@ trait AwsRdsDbSubnetGroupSubnetAvailabilityZone extends StObject {
 }
 object AwsRdsDbSubnetGroupSubnetAvailabilityZone {
   
-  @scala.inline
-  def apply(): AwsRdsDbSubnetGroupSubnetAvailabilityZone = {
+  inline def apply(): AwsRdsDbSubnetGroupSubnetAvailabilityZone = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsRdsDbSubnetGroupSubnetAvailabilityZone]
   }
   
-  @scala.inline
-  implicit class AwsRdsDbSubnetGroupSubnetAvailabilityZoneMutableBuilder[Self <: AwsRdsDbSubnetGroupSubnetAvailabilityZone] (val x: Self) extends AnyVal {
+  extension [Self <: AwsRdsDbSubnetGroupSubnetAvailabilityZone](x: Self) {
     
-    @scala.inline
-    def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

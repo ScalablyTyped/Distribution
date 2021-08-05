@@ -26,20 +26,16 @@ object typesGetApnsChannelOutputMod {
   }
   object GetApnsChannelOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, APNSChannelResponse: UnmarshalledAPNSChannelResponse): GetApnsChannelOutput = {
+    inline def apply($metadata: ResponseMetadata, APNSChannelResponse: UnmarshalledAPNSChannelResponse): GetApnsChannelOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], APNSChannelResponse = APNSChannelResponse.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetApnsChannelOutput]
     }
     
-    @scala.inline
-    implicit class GetApnsChannelOutputMutableBuilder[Self <: GetApnsChannelOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetApnsChannelOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAPNSChannelResponse(value: UnmarshalledAPNSChannelResponse): Self = StObject.set(x, "APNSChannelResponse", value.asInstanceOf[js.Any])
+      inline def setAPNSChannelResponse(value: UnmarshalledAPNSChannelResponse): Self = StObject.set(x, "APNSChannelResponse", value.asInstanceOf[js.Any])
     }
   }
 }

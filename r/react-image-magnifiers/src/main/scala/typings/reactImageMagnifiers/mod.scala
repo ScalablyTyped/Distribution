@@ -30,14 +30,12 @@ object mod {
     @JSImport("react-image-magnifiers", "MOUSE_ACTIVATION.CLICK")
     @js.native
     def CLICK: MouseActivation = js.native
-    @scala.inline
-    def CLICK_=(x: MouseActivation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLICK")(x.asInstanceOf[js.Any])
+    inline def CLICK_=(x: MouseActivation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLICK")(x.asInstanceOf[js.Any])
     
     @JSImport("react-image-magnifiers", "MOUSE_ACTIVATION.DOUBLE_CLICK")
     @js.native
     def DOUBLE_CLICK: MouseActivation = js.native
-    @scala.inline
-    def DOUBLE_CLICK_=(x: MouseActivation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOUBLE_CLICK")(x.asInstanceOf[js.Any])
+    inline def DOUBLE_CLICK_=(x: MouseActivation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOUBLE_CLICK")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-image-magnifiers", "Magnifier")
@@ -73,20 +71,17 @@ object mod {
     @JSImport("react-image-magnifiers", "TOUCH_ACTIVATION.DOUBLE_TAP")
     @js.native
     def DOUBLE_TAP: TouchActivation = js.native
-    @scala.inline
-    def DOUBLE_TAP_=(x: TouchActivation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOUBLE_TAP")(x.asInstanceOf[js.Any])
+    inline def DOUBLE_TAP_=(x: TouchActivation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOUBLE_TAP")(x.asInstanceOf[js.Any])
     
     @JSImport("react-image-magnifiers", "TOUCH_ACTIVATION.LONG_TOUCH")
     @js.native
     def LONG_TOUCH: TouchActivation = js.native
-    @scala.inline
-    def LONG_TOUCH_=(x: TouchActivation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LONG_TOUCH")(x.asInstanceOf[js.Any])
+    inline def LONG_TOUCH_=(x: TouchActivation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LONG_TOUCH")(x.asInstanceOf[js.Any])
     
     @JSImport("react-image-magnifiers", "TOUCH_ACTIVATION.TAP")
     @js.native
     def TAP: TouchActivation = js.native
-    @scala.inline
-    def TAP_=(x: TouchActivation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TAP")(x.asInstanceOf[js.Any])
+    inline def TAP_=(x: TouchActivation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TAP")(x.asInstanceOf[js.Any])
   }
   
   trait CommonProps extends StObject {
@@ -115,77 +110,54 @@ object mod {
   }
   object CommonProps {
     
-    @scala.inline
-    def apply(imageSrc: String): CommonProps = {
+    inline def apply(imageSrc: String): CommonProps = {
       val __obj = js.Dynamic.literal(imageSrc = imageSrc.asInstanceOf[js.Any])
       __obj.asInstanceOf[CommonProps]
     }
     
-    @scala.inline
-    implicit class CommonPropsMutableBuilder[Self <: CommonProps] (val x: Self) extends AnyVal {
+    extension [Self <: CommonProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCursorStyle(value: String): Self = StObject.set(x, "cursorStyle", value.asInstanceOf[js.Any])
+      inline def setCursorStyle(value: String): Self = StObject.set(x, "cursorStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCursorStyleUndefined: Self = StObject.set(x, "cursorStyle", js.undefined)
+      inline def setCursorStyleUndefined: Self = StObject.set(x, "cursorStyle", js.undefined)
       
-      @scala.inline
-      def setImageAlt(value: String): Self = StObject.set(x, "imageAlt", value.asInstanceOf[js.Any])
+      inline def setImageAlt(value: String): Self = StObject.set(x, "imageAlt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageAltUndefined: Self = StObject.set(x, "imageAlt", js.undefined)
+      inline def setImageAltUndefined: Self = StObject.set(x, "imageAlt", js.undefined)
       
-      @scala.inline
-      def setImageSrc(value: String): Self = StObject.set(x, "imageSrc", value.asInstanceOf[js.Any])
+      inline def setImageSrc(value: String): Self = StObject.set(x, "imageSrc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLargeImageSrc(value: String): Self = StObject.set(x, "largeImageSrc", value.asInstanceOf[js.Any])
+      inline def setLargeImageSrc(value: String): Self = StObject.set(x, "largeImageSrc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLargeImageSrcUndefined: Self = StObject.set(x, "largeImageSrc", js.undefined)
+      inline def setLargeImageSrcUndefined: Self = StObject.set(x, "largeImageSrc", js.undefined)
       
-      @scala.inline
-      def setOnImageLoad(value: /* ev */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onImageLoad", js.Any.fromFunction1(value))
+      inline def setOnImageLoad(value: /* ev */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onImageLoad", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnImageLoadUndefined: Self = StObject.set(x, "onImageLoad", js.undefined)
+      inline def setOnImageLoadUndefined: Self = StObject.set(x, "onImageLoad", js.undefined)
       
-      @scala.inline
-      def setOnLargeImageLoad(value: /* ev */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onLargeImageLoad", js.Any.fromFunction1(value))
+      inline def setOnLargeImageLoad(value: /* ev */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onLargeImageLoad", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLargeImageLoadUndefined: Self = StObject.set(x, "onLargeImageLoad", js.undefined)
+      inline def setOnLargeImageLoadUndefined: Self = StObject.set(x, "onLargeImageLoad", js.undefined)
       
-      @scala.inline
-      def setOnZoomEnd(value: () => Unit): Self = StObject.set(x, "onZoomEnd", js.Any.fromFunction0(value))
+      inline def setOnZoomEnd(value: () => Unit): Self = StObject.set(x, "onZoomEnd", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnZoomEndUndefined: Self = StObject.set(x, "onZoomEnd", js.undefined)
+      inline def setOnZoomEndUndefined: Self = StObject.set(x, "onZoomEnd", js.undefined)
       
-      @scala.inline
-      def setOnZoomStart(value: () => Unit): Self = StObject.set(x, "onZoomStart", js.Any.fromFunction0(value))
+      inline def setOnZoomStart(value: () => Unit): Self = StObject.set(x, "onZoomStart", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnZoomStartUndefined: Self = StObject.set(x, "onZoomStart", js.undefined)
+      inline def setOnZoomStartUndefined: Self = StObject.set(x, "onZoomStart", js.undefined)
       
-      @scala.inline
-      def setRenderOverlay(value: /* state */ Boolean => ReactNode): Self = StObject.set(x, "renderOverlay", js.Any.fromFunction1(value))
+      inline def setRenderOverlay(value: /* state */ Boolean => ReactNode): Self = StObject.set(x, "renderOverlay", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderOverlayUndefined: Self = StObject.set(x, "renderOverlay", js.undefined)
+      inline def setRenderOverlayUndefined: Self = StObject.set(x, "renderOverlay", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -211,62 +183,44 @@ object mod {
   }
   object GlassMagnifierProps {
     
-    @scala.inline
-    def apply(imageSrc: String): GlassMagnifierProps = {
+    inline def apply(imageSrc: String): GlassMagnifierProps = {
       val __obj = js.Dynamic.literal(imageSrc = imageSrc.asInstanceOf[js.Any])
       __obj.asInstanceOf[GlassMagnifierProps]
     }
     
-    @scala.inline
-    implicit class GlassMagnifierPropsMutableBuilder[Self <: GlassMagnifierProps] (val x: Self) extends AnyVal {
+    extension [Self <: GlassMagnifierProps](x: Self) {
       
-      @scala.inline
-      def setAllowOverflow(value: Boolean): Self = StObject.set(x, "allowOverflow", value.asInstanceOf[js.Any])
+      inline def setAllowOverflow(value: Boolean): Self = StObject.set(x, "allowOverflow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowOverflowUndefined: Self = StObject.set(x, "allowOverflow", js.undefined)
+      inline def setAllowOverflowUndefined: Self = StObject.set(x, "allowOverflow", js.undefined)
       
-      @scala.inline
-      def setMagnifierBackgroundColor(value: String): Self = StObject.set(x, "magnifierBackgroundColor", value.asInstanceOf[js.Any])
+      inline def setMagnifierBackgroundColor(value: String): Self = StObject.set(x, "magnifierBackgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagnifierBackgroundColorUndefined: Self = StObject.set(x, "magnifierBackgroundColor", js.undefined)
+      inline def setMagnifierBackgroundColorUndefined: Self = StObject.set(x, "magnifierBackgroundColor", js.undefined)
       
-      @scala.inline
-      def setMagnifierBorderColor(value: String): Self = StObject.set(x, "magnifierBorderColor", value.asInstanceOf[js.Any])
+      inline def setMagnifierBorderColor(value: String): Self = StObject.set(x, "magnifierBorderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagnifierBorderColorUndefined: Self = StObject.set(x, "magnifierBorderColor", js.undefined)
+      inline def setMagnifierBorderColorUndefined: Self = StObject.set(x, "magnifierBorderColor", js.undefined)
       
-      @scala.inline
-      def setMagnifierBorderSize(value: Double): Self = StObject.set(x, "magnifierBorderSize", value.asInstanceOf[js.Any])
+      inline def setMagnifierBorderSize(value: Double): Self = StObject.set(x, "magnifierBorderSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagnifierBorderSizeUndefined: Self = StObject.set(x, "magnifierBorderSize", js.undefined)
+      inline def setMagnifierBorderSizeUndefined: Self = StObject.set(x, "magnifierBorderSize", js.undefined)
       
-      @scala.inline
-      def setMagnifierOffsetX(value: Double): Self = StObject.set(x, "magnifierOffsetX", value.asInstanceOf[js.Any])
+      inline def setMagnifierOffsetX(value: Double): Self = StObject.set(x, "magnifierOffsetX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagnifierOffsetXUndefined: Self = StObject.set(x, "magnifierOffsetX", js.undefined)
+      inline def setMagnifierOffsetXUndefined: Self = StObject.set(x, "magnifierOffsetX", js.undefined)
       
-      @scala.inline
-      def setMagnifierOffsetY(value: Double): Self = StObject.set(x, "magnifierOffsetY", value.asInstanceOf[js.Any])
+      inline def setMagnifierOffsetY(value: Double): Self = StObject.set(x, "magnifierOffsetY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagnifierOffsetYUndefined: Self = StObject.set(x, "magnifierOffsetY", js.undefined)
+      inline def setMagnifierOffsetYUndefined: Self = StObject.set(x, "magnifierOffsetY", js.undefined)
       
-      @scala.inline
-      def setMagnifierSize(value: String | Double): Self = StObject.set(x, "magnifierSize", value.asInstanceOf[js.Any])
+      inline def setMagnifierSize(value: String | Double): Self = StObject.set(x, "magnifierSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMagnifierSizeUndefined: Self = StObject.set(x, "magnifierSize", js.undefined)
+      inline def setMagnifierSizeUndefined: Self = StObject.set(x, "magnifierSize", js.undefined)
       
-      @scala.inline
-      def setSquare(value: Boolean): Self = StObject.set(x, "square", value.asInstanceOf[js.Any])
+      inline def setSquare(value: Boolean): Self = StObject.set(x, "square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSquareUndefined: Self = StObject.set(x, "square", js.undefined)
+      inline def setSquareUndefined: Self = StObject.set(x, "square", js.undefined)
     }
   }
   
@@ -282,38 +236,28 @@ object mod {
   }
   object MagnifierContainerProps {
     
-    @scala.inline
-    def apply(): MagnifierContainerProps = {
+    inline def apply(): MagnifierContainerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MagnifierContainerProps]
     }
     
-    @scala.inline
-    implicit class MagnifierContainerPropsMutableBuilder[Self <: MagnifierContainerProps] (val x: Self) extends AnyVal {
+    extension [Self <: MagnifierContainerProps](x: Self) {
       
-      @scala.inline
-      def setAutoInPlace(value: Boolean): Self = StObject.set(x, "autoInPlace", value.asInstanceOf[js.Any])
+      inline def setAutoInPlace(value: Boolean): Self = StObject.set(x, "autoInPlace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoInPlaceUndefined: Self = StObject.set(x, "autoInPlace", js.undefined)
+      inline def setAutoInPlaceUndefined: Self = StObject.set(x, "autoInPlace", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setInPlaceMinBreakpoint(value: Double): Self = StObject.set(x, "inPlaceMinBreakpoint", value.asInstanceOf[js.Any])
+      inline def setInPlaceMinBreakpoint(value: Double): Self = StObject.set(x, "inPlaceMinBreakpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInPlaceMinBreakpointUndefined: Self = StObject.set(x, "inPlaceMinBreakpoint", js.undefined)
+      inline def setInPlaceMinBreakpointUndefined: Self = StObject.set(x, "inPlaceMinBreakpoint", js.undefined)
       
-      @scala.inline
-      def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -357,119 +301,82 @@ object mod {
   }
   object MagnifierPreviewProps {
     
-    @scala.inline
-    def apply(imageSrc: String): MagnifierPreviewProps = {
+    inline def apply(imageSrc: String): MagnifierPreviewProps = {
       val __obj = js.Dynamic.literal(imageSrc = imageSrc.asInstanceOf[js.Any])
       __obj.asInstanceOf[MagnifierPreviewProps]
     }
     
-    @scala.inline
-    implicit class MagnifierPreviewPropsMutableBuilder[Self <: MagnifierPreviewProps] (val x: Self) extends AnyVal {
+    extension [Self <: MagnifierPreviewProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCursorStyle(value: String): Self = StObject.set(x, "cursorStyle", value.asInstanceOf[js.Any])
+      inline def setCursorStyle(value: String): Self = StObject.set(x, "cursorStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCursorStyleUndefined: Self = StObject.set(x, "cursorStyle", js.undefined)
+      inline def setCursorStyleUndefined: Self = StObject.set(x, "cursorStyle", js.undefined)
       
-      @scala.inline
-      def setImageAlt(value: String): Self = StObject.set(x, "imageAlt", value.asInstanceOf[js.Any])
+      inline def setImageAlt(value: String): Self = StObject.set(x, "imageAlt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageAltUndefined: Self = StObject.set(x, "imageAlt", js.undefined)
+      inline def setImageAltUndefined: Self = StObject.set(x, "imageAlt", js.undefined)
       
-      @scala.inline
-      def setImageSrc(value: String): Self = StObject.set(x, "imageSrc", value.asInstanceOf[js.Any])
+      inline def setImageSrc(value: String): Self = StObject.set(x, "imageSrc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLargeImageSrc(value: String): Self = StObject.set(x, "largeImageSrc", value.asInstanceOf[js.Any])
+      inline def setLargeImageSrc(value: String): Self = StObject.set(x, "largeImageSrc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLargeImageSrcUndefined: Self = StObject.set(x, "largeImageSrc", js.undefined)
+      inline def setLargeImageSrcUndefined: Self = StObject.set(x, "largeImageSrc", js.undefined)
       
-      @scala.inline
-      def setOnImageLoad(value: /* ev */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onImageLoad", js.Any.fromFunction1(value))
+      inline def setOnImageLoad(value: /* ev */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onImageLoad", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnImageLoadUndefined: Self = StObject.set(x, "onImageLoad", js.undefined)
+      inline def setOnImageLoadUndefined: Self = StObject.set(x, "onImageLoad", js.undefined)
       
-      @scala.inline
-      def setOnLargeImageLoad(value: /* ev */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onLargeImageLoad", js.Any.fromFunction1(value))
+      inline def setOnLargeImageLoad(value: /* ev */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onLargeImageLoad", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLargeImageLoadUndefined: Self = StObject.set(x, "onLargeImageLoad", js.undefined)
+      inline def setOnLargeImageLoadUndefined: Self = StObject.set(x, "onLargeImageLoad", js.undefined)
       
-      @scala.inline
-      def setOnZoomEnd(value: () => Unit): Self = StObject.set(x, "onZoomEnd", js.Any.fromFunction0(value))
+      inline def setOnZoomEnd(value: () => Unit): Self = StObject.set(x, "onZoomEnd", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnZoomEndUndefined: Self = StObject.set(x, "onZoomEnd", js.undefined)
+      inline def setOnZoomEndUndefined: Self = StObject.set(x, "onZoomEnd", js.undefined)
       
-      @scala.inline
-      def setOnZoomStart(value: () => Unit): Self = StObject.set(x, "onZoomStart", js.Any.fromFunction0(value))
+      inline def setOnZoomStart(value: () => Unit): Self = StObject.set(x, "onZoomStart", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnZoomStartUndefined: Self = StObject.set(x, "onZoomStart", js.undefined)
+      inline def setOnZoomStartUndefined: Self = StObject.set(x, "onZoomStart", js.undefined)
       
-      @scala.inline
-      def setOverlayBackgroundColor(value: Double): Self = StObject.set(x, "overlayBackgroundColor", value.asInstanceOf[js.Any])
+      inline def setOverlayBackgroundColor(value: Double): Self = StObject.set(x, "overlayBackgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayBackgroundColorUndefined: Self = StObject.set(x, "overlayBackgroundColor", js.undefined)
+      inline def setOverlayBackgroundColorUndefined: Self = StObject.set(x, "overlayBackgroundColor", js.undefined)
       
-      @scala.inline
-      def setOverlayBoxColor(value: Double): Self = StObject.set(x, "overlayBoxColor", value.asInstanceOf[js.Any])
+      inline def setOverlayBoxColor(value: Double): Self = StObject.set(x, "overlayBoxColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayBoxColorUndefined: Self = StObject.set(x, "overlayBoxColor", js.undefined)
+      inline def setOverlayBoxColorUndefined: Self = StObject.set(x, "overlayBoxColor", js.undefined)
       
-      @scala.inline
-      def setOverlayBoxImage(value: Double): Self = StObject.set(x, "overlayBoxImage", value.asInstanceOf[js.Any])
+      inline def setOverlayBoxImage(value: Double): Self = StObject.set(x, "overlayBoxImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayBoxImageSize(value: Double): Self = StObject.set(x, "overlayBoxImageSize", value.asInstanceOf[js.Any])
+      inline def setOverlayBoxImageSize(value: Double): Self = StObject.set(x, "overlayBoxImageSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayBoxImageSizeUndefined: Self = StObject.set(x, "overlayBoxImageSize", js.undefined)
+      inline def setOverlayBoxImageSizeUndefined: Self = StObject.set(x, "overlayBoxImageSize", js.undefined)
       
-      @scala.inline
-      def setOverlayBoxImageUndefined: Self = StObject.set(x, "overlayBoxImage", js.undefined)
+      inline def setOverlayBoxImageUndefined: Self = StObject.set(x, "overlayBoxImage", js.undefined)
       
-      @scala.inline
-      def setOverlayBoxOpacity(value: Double): Self = StObject.set(x, "overlayBoxOpacity", value.asInstanceOf[js.Any])
+      inline def setOverlayBoxOpacity(value: Double): Self = StObject.set(x, "overlayBoxOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayBoxOpacityUndefined: Self = StObject.set(x, "overlayBoxOpacity", js.undefined)
+      inline def setOverlayBoxOpacityUndefined: Self = StObject.set(x, "overlayBoxOpacity", js.undefined)
       
-      @scala.inline
-      def setOverlayOpacity(value: Double): Self = StObject.set(x, "overlayOpacity", value.asInstanceOf[js.Any])
+      inline def setOverlayOpacity(value: Double): Self = StObject.set(x, "overlayOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayOpacityUndefined: Self = StObject.set(x, "overlayOpacity", js.undefined)
+      inline def setOverlayOpacityUndefined: Self = StObject.set(x, "overlayOpacity", js.undefined)
       
-      @scala.inline
-      def setRenderOverlay(value: /* state */ Boolean => ReactNode): Self = StObject.set(x, "renderOverlay", js.Any.fromFunction1(value))
+      inline def setRenderOverlay(value: /* state */ Boolean => ReactNode): Self = StObject.set(x, "renderOverlay", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderOverlayUndefined: Self = StObject.set(x, "renderOverlay", js.undefined)
+      inline def setRenderOverlayUndefined: Self = StObject.set(x, "renderOverlay", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTransitionSpeed(value: Double): Self = StObject.set(x, "transitionSpeed", value.asInstanceOf[js.Any])
+      inline def setTransitionSpeed(value: Double): Self = StObject.set(x, "transitionSpeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionSpeedUndefined: Self = StObject.set(x, "transitionSpeed", js.undefined)
+      inline def setTransitionSpeedUndefined: Self = StObject.set(x, "transitionSpeed", js.undefined)
     }
   }
   
@@ -489,44 +396,32 @@ object mod {
   }
   object MagnifierProps {
     
-    @scala.inline
-    def apply(imageSrc: String): MagnifierProps = {
+    inline def apply(imageSrc: String): MagnifierProps = {
       val __obj = js.Dynamic.literal(imageSrc = imageSrc.asInstanceOf[js.Any])
       __obj.asInstanceOf[MagnifierProps]
     }
     
-    @scala.inline
-    implicit class MagnifierPropsMutableBuilder[Self <: MagnifierProps] (val x: Self) extends AnyVal {
+    extension [Self <: MagnifierProps](x: Self) {
       
-      @scala.inline
-      def setCursorStyleActive(value: String): Self = StObject.set(x, "cursorStyleActive", value.asInstanceOf[js.Any])
+      inline def setCursorStyleActive(value: String): Self = StObject.set(x, "cursorStyleActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCursorStyleActiveUndefined: Self = StObject.set(x, "cursorStyleActive", js.undefined)
+      inline def setCursorStyleActiveUndefined: Self = StObject.set(x, "cursorStyleActive", js.undefined)
       
-      @scala.inline
-      def setDragToMove(value: Boolean): Self = StObject.set(x, "dragToMove", value.asInstanceOf[js.Any])
+      inline def setDragToMove(value: Boolean): Self = StObject.set(x, "dragToMove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragToMoveUndefined: Self = StObject.set(x, "dragToMove", js.undefined)
+      inline def setDragToMoveUndefined: Self = StObject.set(x, "dragToMove", js.undefined)
       
-      @scala.inline
-      def setInteractionSettings(value: ClickMoveLimit): Self = StObject.set(x, "interactionSettings", value.asInstanceOf[js.Any])
+      inline def setInteractionSettings(value: ClickMoveLimit): Self = StObject.set(x, "interactionSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInteractionSettingsUndefined: Self = StObject.set(x, "interactionSettings", js.undefined)
+      inline def setInteractionSettingsUndefined: Self = StObject.set(x, "interactionSettings", js.undefined)
       
-      @scala.inline
-      def setMouseActivation(value: MouseActivation): Self = StObject.set(x, "mouseActivation", value.asInstanceOf[js.Any])
+      inline def setMouseActivation(value: MouseActivation): Self = StObject.set(x, "mouseActivation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMouseActivationUndefined: Self = StObject.set(x, "mouseActivation", js.undefined)
+      inline def setMouseActivationUndefined: Self = StObject.set(x, "mouseActivation", js.undefined)
       
-      @scala.inline
-      def setTouchActivation(value: TouchActivation): Self = StObject.set(x, "touchActivation", value.asInstanceOf[js.Any])
+      inline def setTouchActivation(value: TouchActivation): Self = StObject.set(x, "touchActivation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchActivationUndefined: Self = StObject.set(x, "touchActivation", js.undefined)
+      inline def setTouchActivationUndefined: Self = StObject.set(x, "touchActivation", js.undefined)
     }
   }
   
@@ -546,47 +441,34 @@ object mod {
   }
   object MagnifierZoomProps {
     
-    @scala.inline
-    def apply(imageSrc: String): MagnifierZoomProps = {
+    inline def apply(imageSrc: String): MagnifierZoomProps = {
       val __obj = js.Dynamic.literal(imageSrc = imageSrc.asInstanceOf[js.Any])
       __obj.asInstanceOf[MagnifierZoomProps]
     }
     
-    @scala.inline
-    implicit class MagnifierZoomPropsMutableBuilder[Self <: MagnifierZoomProps] (val x: Self) extends AnyVal {
+    extension [Self <: MagnifierZoomProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setImageAlt(value: String): Self = StObject.set(x, "imageAlt", value.asInstanceOf[js.Any])
+      inline def setImageAlt(value: String): Self = StObject.set(x, "imageAlt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageAltUndefined: Self = StObject.set(x, "imageAlt", js.undefined)
+      inline def setImageAltUndefined: Self = StObject.set(x, "imageAlt", js.undefined)
       
-      @scala.inline
-      def setImageSrc(value: String): Self = StObject.set(x, "imageSrc", value.asInstanceOf[js.Any])
+      inline def setImageSrc(value: String): Self = StObject.set(x, "imageSrc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnImageLoad(value: /* ev */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onImageLoad", js.Any.fromFunction1(value))
+      inline def setOnImageLoad(value: /* ev */ SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onImageLoad", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnImageLoadUndefined: Self = StObject.set(x, "onImageLoad", js.undefined)
+      inline def setOnImageLoadUndefined: Self = StObject.set(x, "onImageLoad", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTransitionSpeed(value: Double): Self = StObject.set(x, "transitionSpeed", value.asInstanceOf[js.Any])
+      inline def setTransitionSpeed(value: Double): Self = StObject.set(x, "transitionSpeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionSpeedUndefined: Self = StObject.set(x, "transitionSpeed", js.undefined)
+      inline def setTransitionSpeedUndefined: Self = StObject.set(x, "transitionSpeed", js.undefined)
     }
   }
   
@@ -597,11 +479,9 @@ object mod {
   trait MouseActivation extends StObject
   object MouseActivation {
     
-    @scala.inline
-    def click: typings.reactImageMagnifiers.reactImageMagnifiersStrings.click = "click".asInstanceOf[typings.reactImageMagnifiers.reactImageMagnifiersStrings.click]
+    inline def click: typings.reactImageMagnifiers.reactImageMagnifiersStrings.click = "click".asInstanceOf[typings.reactImageMagnifiers.reactImageMagnifiersStrings.click]
     
-    @scala.inline
-    def doubleClick: typings.reactImageMagnifiers.reactImageMagnifiersStrings.doubleClick = "doubleClick".asInstanceOf[typings.reactImageMagnifiers.reactImageMagnifiersStrings.doubleClick]
+    inline def doubleClick: typings.reactImageMagnifiers.reactImageMagnifiersStrings.doubleClick = "doubleClick".asInstanceOf[typings.reactImageMagnifiers.reactImageMagnifiersStrings.doubleClick]
   }
   
   trait PictureInPictureMagnifierProps
@@ -636,92 +516,64 @@ object mod {
   }
   object PictureInPictureMagnifierProps {
     
-    @scala.inline
-    def apply(imageSrc: String): PictureInPictureMagnifierProps = {
+    inline def apply(imageSrc: String): PictureInPictureMagnifierProps = {
       val __obj = js.Dynamic.literal(imageSrc = imageSrc.asInstanceOf[js.Any])
       __obj.asInstanceOf[PictureInPictureMagnifierProps]
     }
     
-    @scala.inline
-    implicit class PictureInPictureMagnifierPropsMutableBuilder[Self <: PictureInPictureMagnifierProps] (val x: Self) extends AnyVal {
+    extension [Self <: PictureInPictureMagnifierProps](x: Self) {
       
-      @scala.inline
-      def setCursorStyleActive(value: String): Self = StObject.set(x, "cursorStyleActive", value.asInstanceOf[js.Any])
+      inline def setCursorStyleActive(value: String): Self = StObject.set(x, "cursorStyleActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCursorStyleActiveUndefined: Self = StObject.set(x, "cursorStyleActive", js.undefined)
+      inline def setCursorStyleActiveUndefined: Self = StObject.set(x, "cursorStyleActive", js.undefined)
       
-      @scala.inline
-      def setPreviewHorizontalPos(value: left | right): Self = StObject.set(x, "previewHorizontalPos", value.asInstanceOf[js.Any])
+      inline def setPreviewHorizontalPos(value: left | right): Self = StObject.set(x, "previewHorizontalPos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewHorizontalPosUndefined: Self = StObject.set(x, "previewHorizontalPos", js.undefined)
+      inline def setPreviewHorizontalPosUndefined: Self = StObject.set(x, "previewHorizontalPos", js.undefined)
       
-      @scala.inline
-      def setPreviewOpacity(value: Double): Self = StObject.set(x, "previewOpacity", value.asInstanceOf[js.Any])
+      inline def setPreviewOpacity(value: Double): Self = StObject.set(x, "previewOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewOpacityUndefined: Self = StObject.set(x, "previewOpacity", js.undefined)
+      inline def setPreviewOpacityUndefined: Self = StObject.set(x, "previewOpacity", js.undefined)
       
-      @scala.inline
-      def setPreviewOverlayBackgroundColor(value: String): Self = StObject.set(x, "previewOverlayBackgroundColor", value.asInstanceOf[js.Any])
+      inline def setPreviewOverlayBackgroundColor(value: String): Self = StObject.set(x, "previewOverlayBackgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewOverlayBackgroundColorUndefined: Self = StObject.set(x, "previewOverlayBackgroundColor", js.undefined)
+      inline def setPreviewOverlayBackgroundColorUndefined: Self = StObject.set(x, "previewOverlayBackgroundColor", js.undefined)
       
-      @scala.inline
-      def setPreviewOverlayBoxColor(value: String): Self = StObject.set(x, "previewOverlayBoxColor", value.asInstanceOf[js.Any])
+      inline def setPreviewOverlayBoxColor(value: String): Self = StObject.set(x, "previewOverlayBoxColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewOverlayBoxColorUndefined: Self = StObject.set(x, "previewOverlayBoxColor", js.undefined)
+      inline def setPreviewOverlayBoxColorUndefined: Self = StObject.set(x, "previewOverlayBoxColor", js.undefined)
       
-      @scala.inline
-      def setPreviewOverlayBoxImage(value: String): Self = StObject.set(x, "previewOverlayBoxImage", value.asInstanceOf[js.Any])
+      inline def setPreviewOverlayBoxImage(value: String): Self = StObject.set(x, "previewOverlayBoxImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewOverlayBoxImageSize(value: String): Self = StObject.set(x, "previewOverlayBoxImageSize", value.asInstanceOf[js.Any])
+      inline def setPreviewOverlayBoxImageSize(value: String): Self = StObject.set(x, "previewOverlayBoxImageSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewOverlayBoxImageSizeUndefined: Self = StObject.set(x, "previewOverlayBoxImageSize", js.undefined)
+      inline def setPreviewOverlayBoxImageSizeUndefined: Self = StObject.set(x, "previewOverlayBoxImageSize", js.undefined)
       
-      @scala.inline
-      def setPreviewOverlayBoxImageUndefined: Self = StObject.set(x, "previewOverlayBoxImage", js.undefined)
+      inline def setPreviewOverlayBoxImageUndefined: Self = StObject.set(x, "previewOverlayBoxImage", js.undefined)
       
-      @scala.inline
-      def setPreviewOverlayBoxOpacity(value: Double): Self = StObject.set(x, "previewOverlayBoxOpacity", value.asInstanceOf[js.Any])
+      inline def setPreviewOverlayBoxOpacity(value: Double): Self = StObject.set(x, "previewOverlayBoxOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewOverlayBoxOpacityUndefined: Self = StObject.set(x, "previewOverlayBoxOpacity", js.undefined)
+      inline def setPreviewOverlayBoxOpacityUndefined: Self = StObject.set(x, "previewOverlayBoxOpacity", js.undefined)
       
-      @scala.inline
-      def setPreviewOverlayOpacity(value: Double): Self = StObject.set(x, "previewOverlayOpacity", value.asInstanceOf[js.Any])
+      inline def setPreviewOverlayOpacity(value: Double): Self = StObject.set(x, "previewOverlayOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewOverlayOpacityUndefined: Self = StObject.set(x, "previewOverlayOpacity", js.undefined)
+      inline def setPreviewOverlayOpacityUndefined: Self = StObject.set(x, "previewOverlayOpacity", js.undefined)
       
-      @scala.inline
-      def setPreviewSizePercentage(value: Double): Self = StObject.set(x, "previewSizePercentage", value.asInstanceOf[js.Any])
+      inline def setPreviewSizePercentage(value: Double): Self = StObject.set(x, "previewSizePercentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewSizePercentageUndefined: Self = StObject.set(x, "previewSizePercentage", js.undefined)
+      inline def setPreviewSizePercentageUndefined: Self = StObject.set(x, "previewSizePercentage", js.undefined)
       
-      @scala.inline
-      def setPreviewVerticalPos(value: top | bottom): Self = StObject.set(x, "previewVerticalPos", value.asInstanceOf[js.Any])
+      inline def setPreviewVerticalPos(value: top | bottom): Self = StObject.set(x, "previewVerticalPos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewVerticalPosUndefined: Self = StObject.set(x, "previewVerticalPos", js.undefined)
+      inline def setPreviewVerticalPosUndefined: Self = StObject.set(x, "previewVerticalPos", js.undefined)
       
-      @scala.inline
-      def setShadow(value: Boolean): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
+      inline def setShadow(value: Boolean): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShadowColor(value: String): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
+      inline def setShadowColor(value: String): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShadowColorUndefined: Self = StObject.set(x, "shadowColor", js.undefined)
+      inline def setShadowColorUndefined: Self = StObject.set(x, "shadowColor", js.undefined)
       
-      @scala.inline
-      def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
+      inline def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
     }
   }
   
@@ -769,128 +621,88 @@ object mod {
   }
   object SideBySideMagnifierProps {
     
-    @scala.inline
-    def apply(imageSrc: String): SideBySideMagnifierProps = {
+    inline def apply(imageSrc: String): SideBySideMagnifierProps = {
       val __obj = js.Dynamic.literal(imageSrc = imageSrc.asInstanceOf[js.Any])
       __obj.asInstanceOf[SideBySideMagnifierProps]
     }
     
-    @scala.inline
-    implicit class SideBySideMagnifierPropsMutableBuilder[Self <: SideBySideMagnifierProps] (val x: Self) extends AnyVal {
+    extension [Self <: SideBySideMagnifierProps](x: Self) {
       
-      @scala.inline
-      def setAlwaysInPlace(value: Boolean): Self = StObject.set(x, "alwaysInPlace", value.asInstanceOf[js.Any])
+      inline def setAlwaysInPlace(value: Boolean): Self = StObject.set(x, "alwaysInPlace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlwaysInPlaceUndefined: Self = StObject.set(x, "alwaysInPlace", js.undefined)
+      inline def setAlwaysInPlaceUndefined: Self = StObject.set(x, "alwaysInPlace", js.undefined)
       
-      @scala.inline
-      def setFillAlignTop(value: Boolean): Self = StObject.set(x, "fillAlignTop", value.asInstanceOf[js.Any])
+      inline def setFillAlignTop(value: Boolean): Self = StObject.set(x, "fillAlignTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillAlignTopUndefined: Self = StObject.set(x, "fillAlignTop", js.undefined)
+      inline def setFillAlignTopUndefined: Self = StObject.set(x, "fillAlignTop", js.undefined)
       
-      @scala.inline
-      def setFillAvailableSpace(value: Boolean): Self = StObject.set(x, "fillAvailableSpace", value.asInstanceOf[js.Any])
+      inline def setFillAvailableSpace(value: Boolean): Self = StObject.set(x, "fillAvailableSpace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillAvailableSpaceUndefined: Self = StObject.set(x, "fillAvailableSpace", js.undefined)
+      inline def setFillAvailableSpaceUndefined: Self = StObject.set(x, "fillAvailableSpace", js.undefined)
       
-      @scala.inline
-      def setFillGapBottom(value: Double): Self = StObject.set(x, "fillGapBottom", value.asInstanceOf[js.Any])
+      inline def setFillGapBottom(value: Double): Self = StObject.set(x, "fillGapBottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillGapBottomUndefined: Self = StObject.set(x, "fillGapBottom", js.undefined)
+      inline def setFillGapBottomUndefined: Self = StObject.set(x, "fillGapBottom", js.undefined)
       
-      @scala.inline
-      def setFillGapLeft(value: Double): Self = StObject.set(x, "fillGapLeft", value.asInstanceOf[js.Any])
+      inline def setFillGapLeft(value: Double): Self = StObject.set(x, "fillGapLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillGapLeftUndefined: Self = StObject.set(x, "fillGapLeft", js.undefined)
+      inline def setFillGapLeftUndefined: Self = StObject.set(x, "fillGapLeft", js.undefined)
       
-      @scala.inline
-      def setFillGapRight(value: Double): Self = StObject.set(x, "fillGapRight", value.asInstanceOf[js.Any])
+      inline def setFillGapRight(value: Double): Self = StObject.set(x, "fillGapRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillGapRightUndefined: Self = StObject.set(x, "fillGapRight", js.undefined)
+      inline def setFillGapRightUndefined: Self = StObject.set(x, "fillGapRight", js.undefined)
       
-      @scala.inline
-      def setFillGapTop(value: Double): Self = StObject.set(x, "fillGapTop", value.asInstanceOf[js.Any])
+      inline def setFillGapTop(value: Double): Self = StObject.set(x, "fillGapTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillGapTopUndefined: Self = StObject.set(x, "fillGapTop", js.undefined)
+      inline def setFillGapTopUndefined: Self = StObject.set(x, "fillGapTop", js.undefined)
       
-      @scala.inline
-      def setInPlaceMinBreakpoint(value: Double): Self = StObject.set(x, "inPlaceMinBreakpoint", value.asInstanceOf[js.Any])
+      inline def setInPlaceMinBreakpoint(value: Double): Self = StObject.set(x, "inPlaceMinBreakpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInPlaceMinBreakpointUndefined: Self = StObject.set(x, "inPlaceMinBreakpoint", js.undefined)
+      inline def setInPlaceMinBreakpointUndefined: Self = StObject.set(x, "inPlaceMinBreakpoint", js.undefined)
       
-      @scala.inline
-      def setOverlayBackgroundColor(value: String): Self = StObject.set(x, "overlayBackgroundColor", value.asInstanceOf[js.Any])
+      inline def setOverlayBackgroundColor(value: String): Self = StObject.set(x, "overlayBackgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayBackgroundColorUndefined: Self = StObject.set(x, "overlayBackgroundColor", js.undefined)
+      inline def setOverlayBackgroundColorUndefined: Self = StObject.set(x, "overlayBackgroundColor", js.undefined)
       
-      @scala.inline
-      def setOverlayBoxColor(value: String): Self = StObject.set(x, "overlayBoxColor", value.asInstanceOf[js.Any])
+      inline def setOverlayBoxColor(value: String): Self = StObject.set(x, "overlayBoxColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayBoxColorUndefined: Self = StObject.set(x, "overlayBoxColor", js.undefined)
+      inline def setOverlayBoxColorUndefined: Self = StObject.set(x, "overlayBoxColor", js.undefined)
       
-      @scala.inline
-      def setOverlayBoxImage(value: String): Self = StObject.set(x, "overlayBoxImage", value.asInstanceOf[js.Any])
+      inline def setOverlayBoxImage(value: String): Self = StObject.set(x, "overlayBoxImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayBoxImageSize(value: String): Self = StObject.set(x, "overlayBoxImageSize", value.asInstanceOf[js.Any])
+      inline def setOverlayBoxImageSize(value: String): Self = StObject.set(x, "overlayBoxImageSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayBoxImageSizeUndefined: Self = StObject.set(x, "overlayBoxImageSize", js.undefined)
+      inline def setOverlayBoxImageSizeUndefined: Self = StObject.set(x, "overlayBoxImageSize", js.undefined)
       
-      @scala.inline
-      def setOverlayBoxImageUndefined: Self = StObject.set(x, "overlayBoxImage", js.undefined)
+      inline def setOverlayBoxImageUndefined: Self = StObject.set(x, "overlayBoxImage", js.undefined)
       
-      @scala.inline
-      def setOverlayBoxOpacity(value: Double): Self = StObject.set(x, "overlayBoxOpacity", value.asInstanceOf[js.Any])
+      inline def setOverlayBoxOpacity(value: Double): Self = StObject.set(x, "overlayBoxOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayBoxOpacityUndefined: Self = StObject.set(x, "overlayBoxOpacity", js.undefined)
+      inline def setOverlayBoxOpacityUndefined: Self = StObject.set(x, "overlayBoxOpacity", js.undefined)
       
-      @scala.inline
-      def setOverlayOpacity(value: Double): Self = StObject.set(x, "overlayOpacity", value.asInstanceOf[js.Any])
+      inline def setOverlayOpacity(value: Double): Self = StObject.set(x, "overlayOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayOpacityUndefined: Self = StObject.set(x, "overlayOpacity", js.undefined)
+      inline def setOverlayOpacityUndefined: Self = StObject.set(x, "overlayOpacity", js.undefined)
       
-      @scala.inline
-      def setSwitchSides(value: Boolean): Self = StObject.set(x, "switchSides", value.asInstanceOf[js.Any])
+      inline def setSwitchSides(value: Boolean): Self = StObject.set(x, "switchSides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwitchSidesUndefined: Self = StObject.set(x, "switchSides", js.undefined)
+      inline def setSwitchSidesUndefined: Self = StObject.set(x, "switchSides", js.undefined)
       
-      @scala.inline
-      def setTransitionSpeed(value: Double): Self = StObject.set(x, "transitionSpeed", value.asInstanceOf[js.Any])
+      inline def setTransitionSpeed(value: Double): Self = StObject.set(x, "transitionSpeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionSpeedInPlace(value: Double): Self = StObject.set(x, "transitionSpeedInPlace", value.asInstanceOf[js.Any])
+      inline def setTransitionSpeedInPlace(value: Double): Self = StObject.set(x, "transitionSpeedInPlace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionSpeedInPlaceUndefined: Self = StObject.set(x, "transitionSpeedInPlace", js.undefined)
+      inline def setTransitionSpeedInPlaceUndefined: Self = StObject.set(x, "transitionSpeedInPlace", js.undefined)
       
-      @scala.inline
-      def setTransitionSpeedUndefined: Self = StObject.set(x, "transitionSpeed", js.undefined)
+      inline def setTransitionSpeedUndefined: Self = StObject.set(x, "transitionSpeed", js.undefined)
       
-      @scala.inline
-      def setZoomContainerBorder(value: String): Self = StObject.set(x, "zoomContainerBorder", value.asInstanceOf[js.Any])
+      inline def setZoomContainerBorder(value: String): Self = StObject.set(x, "zoomContainerBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomContainerBorderUndefined: Self = StObject.set(x, "zoomContainerBorder", js.undefined)
+      inline def setZoomContainerBorderUndefined: Self = StObject.set(x, "zoomContainerBorder", js.undefined)
       
-      @scala.inline
-      def setZoomContainerBoxShadow(value: String): Self = StObject.set(x, "zoomContainerBoxShadow", value.asInstanceOf[js.Any])
+      inline def setZoomContainerBoxShadow(value: String): Self = StObject.set(x, "zoomContainerBoxShadow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomContainerBoxShadowUndefined: Self = StObject.set(x, "zoomContainerBoxShadow", js.undefined)
+      inline def setZoomContainerBoxShadowUndefined: Self = StObject.set(x, "zoomContainerBoxShadow", js.undefined)
     }
   }
   
@@ -902,13 +714,10 @@ object mod {
   trait TouchActivation extends StObject
   object TouchActivation {
     
-    @scala.inline
-    def doubleTap: typings.reactImageMagnifiers.reactImageMagnifiersStrings.doubleTap = "doubleTap".asInstanceOf[typings.reactImageMagnifiers.reactImageMagnifiersStrings.doubleTap]
+    inline def doubleTap: typings.reactImageMagnifiers.reactImageMagnifiersStrings.doubleTap = "doubleTap".asInstanceOf[typings.reactImageMagnifiers.reactImageMagnifiersStrings.doubleTap]
     
-    @scala.inline
-    def longTouch: typings.reactImageMagnifiers.reactImageMagnifiersStrings.longTouch = "longTouch".asInstanceOf[typings.reactImageMagnifiers.reactImageMagnifiersStrings.longTouch]
+    inline def longTouch: typings.reactImageMagnifiers.reactImageMagnifiersStrings.longTouch = "longTouch".asInstanceOf[typings.reactImageMagnifiers.reactImageMagnifiersStrings.longTouch]
     
-    @scala.inline
-    def tap: typings.reactImageMagnifiers.reactImageMagnifiersStrings.tap = "tap".asInstanceOf[typings.reactImageMagnifiers.reactImageMagnifiersStrings.tap]
+    inline def tap: typings.reactImageMagnifiers.reactImageMagnifiersStrings.tap = "tap".asInstanceOf[typings.reactImageMagnifiers.reactImageMagnifiersStrings.tap]
   }
 }

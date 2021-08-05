@@ -36,8 +36,7 @@ trait IgtvChannelFeedResponseCaption extends StObject {
 }
 object IgtvChannelFeedResponseCaption {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bit_flags: Double,
     content_type: String,
     created_at: Double,
@@ -58,49 +57,34 @@ object IgtvChannelFeedResponseCaption {
     __obj.asInstanceOf[IgtvChannelFeedResponseCaption]
   }
   
-  @scala.inline
-  implicit class IgtvChannelFeedResponseCaptionMutableBuilder[Self <: IgtvChannelFeedResponseCaption] (val x: Self) extends AnyVal {
+  extension [Self <: IgtvChannelFeedResponseCaption](x: Self) {
     
-    @scala.inline
-    def setBit_flags(value: Double): Self = StObject.set(x, "bit_flags", value.asInstanceOf[js.Any])
+    inline def setBit_flags(value: Double): Self = StObject.set(x, "bit_flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
+    inline def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreated_at(value: Double): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+    inline def setCreated_at(value: Double): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreated_at_utc(value: Double): Self = StObject.set(x, "created_at_utc", value.asInstanceOf[js.Any])
+    inline def setCreated_at_utc(value: Double): Self = StObject.set(x, "created_at_utc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDid_report_as_spam(value: Boolean): Self = StObject.set(x, "did_report_as_spam", value.asInstanceOf[js.Any])
+    inline def setDid_report_as_spam(value: Boolean): Self = StObject.set(x, "did_report_as_spam", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHas_translation(value: Boolean): Self = StObject.set(x, "has_translation", value.asInstanceOf[js.Any])
+    inline def setHas_translation(value: Boolean): Self = StObject.set(x, "has_translation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedia_id(value: String): Self = StObject.set(x, "media_id", value.asInstanceOf[js.Any])
+    inline def setMedia_id(value: String): Self = StObject.set(x, "media_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+    inline def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShare_enabled(value: Boolean): Self = StObject.set(x, "share_enabled", value.asInstanceOf[js.Any])
+    inline def setShare_enabled(value: Boolean): Self = StObject.set(x, "share_enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: IgtvChannelFeedResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: IgtvChannelFeedResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser_id(value: Double): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
+    inline def setUser_id(value: Double): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
   }
 }

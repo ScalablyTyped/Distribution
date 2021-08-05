@@ -47,8 +47,7 @@ trait XDocumentEventBroadcaster extends StObject {
 }
 object XDocumentEventBroadcaster {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addDocumentEventListener: XDocumentEventListener => Unit,
     notifyDocumentEvent: (String, XController2, js.Any) => Unit,
     removeDocumentEventListener: XDocumentEventListener => Unit
@@ -57,16 +56,12 @@ object XDocumentEventBroadcaster {
     __obj.asInstanceOf[XDocumentEventBroadcaster]
   }
   
-  @scala.inline
-  implicit class XDocumentEventBroadcasterMutableBuilder[Self <: XDocumentEventBroadcaster] (val x: Self) extends AnyVal {
+  extension [Self <: XDocumentEventBroadcaster](x: Self) {
     
-    @scala.inline
-    def setAddDocumentEventListener(value: XDocumentEventListener => Unit): Self = StObject.set(x, "addDocumentEventListener", js.Any.fromFunction1(value))
+    inline def setAddDocumentEventListener(value: XDocumentEventListener => Unit): Self = StObject.set(x, "addDocumentEventListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNotifyDocumentEvent(value: (String, XController2, js.Any) => Unit): Self = StObject.set(x, "notifyDocumentEvent", js.Any.fromFunction3(value))
+    inline def setNotifyDocumentEvent(value: (String, XController2, js.Any) => Unit): Self = StObject.set(x, "notifyDocumentEvent", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRemoveDocumentEventListener(value: XDocumentEventListener => Unit): Self = StObject.set(x, "removeDocumentEventListener", js.Any.fromFunction1(value))
+    inline def setRemoveDocumentEventListener(value: XDocumentEventListener => Unit): Self = StObject.set(x, "removeDocumentEventListener", js.Any.fromFunction1(value))
   }
 }

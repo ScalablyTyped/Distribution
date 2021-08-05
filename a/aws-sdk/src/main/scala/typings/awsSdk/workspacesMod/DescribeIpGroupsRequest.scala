@@ -23,34 +23,25 @@ trait DescribeIpGroupsRequest extends StObject {
 }
 object DescribeIpGroupsRequest {
   
-  @scala.inline
-  def apply(): DescribeIpGroupsRequest = {
+  inline def apply(): DescribeIpGroupsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeIpGroupsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeIpGroupsRequestMutableBuilder[Self <: DescribeIpGroupsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeIpGroupsRequest](x: Self) {
     
-    @scala.inline
-    def setGroupIds(value: IpGroupIdList): Self = StObject.set(x, "GroupIds", value.asInstanceOf[js.Any])
+    inline def setGroupIds(value: IpGroupIdList): Self = StObject.set(x, "GroupIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupIdsUndefined: Self = StObject.set(x, "GroupIds", js.undefined)
+    inline def setGroupIdsUndefined: Self = StObject.set(x, "GroupIds", js.undefined)
     
-    @scala.inline
-    def setGroupIdsVarargs(value: IpGroupId*): Self = StObject.set(x, "GroupIds", js.Array(value :_*))
+    inline def setGroupIdsVarargs(value: IpGroupId*): Self = StObject.set(x, "GroupIds", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: Limit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Limit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

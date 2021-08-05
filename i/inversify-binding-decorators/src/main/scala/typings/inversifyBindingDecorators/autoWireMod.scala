@@ -11,6 +11,5 @@ object autoWireMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(container: Container, modules: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(container.asInstanceOf[js.Any], modules.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def default(container: Container, modules: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(container.asInstanceOf[js.Any], modules.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -82,8 +82,7 @@ object event {
   }
   object EventModule {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addListener: (String, js.Function) => EventModule,
       emit: (String, /* repeated */ js.Any) => js.Any,
       listeners: String => js.Array[js.Function],
@@ -102,47 +101,33 @@ object event {
       __obj.asInstanceOf[EventModule]
     }
     
-    @scala.inline
-    implicit class EventModuleMutableBuilder[Self <: EventModule] (val x: Self) extends AnyVal {
+    extension [Self <: EventModule](x: Self) {
       
-      @scala.inline
-      def setAddListener(value: (String, js.Function) => EventModule): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
+      inline def setAddListener(value: (String, js.Function) => EventModule): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEmit(value: (String, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      inline def setEmit(value: (String, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setListeners(value: String => js.Array[js.Function]): Self = StObject.set(x, "listeners", js.Any.fromFunction1(value))
+      inline def setListeners(value: String => js.Array[js.Function]): Self = StObject.set(x, "listeners", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setListenersAny(value: () => js.Array[js.Function]): Self = StObject.set(x, "listenersAny", js.Any.fromFunction0(value))
+      inline def setListenersAny(value: () => js.Array[js.Function]): Self = StObject.set(x, "listenersAny", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMany(value: (String, Double, js.Function) => EventModule): Self = StObject.set(x, "many", js.Any.fromFunction3(value))
+      inline def setMany(value: (String, Double, js.Function) => EventModule): Self = StObject.set(x, "many", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOff(value: (String, js.Function) => EventModule): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
+      inline def setOff(value: (String, js.Function) => EventModule): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOffAny(value: js.Function => EventModule): Self = StObject.set(x, "offAny", js.Any.fromFunction1(value))
+      inline def setOffAny(value: js.Function => EventModule): Self = StObject.set(x, "offAny", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOn(value: (String, js.Function) => EventModule): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (String, js.Function) => EventModule): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnAny(value: js.Function => EventModule): Self = StObject.set(x, "onAny", js.Any.fromFunction1(value))
+      inline def setOnAny(value: js.Function => EventModule): Self = StObject.set(x, "onAny", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnce(value: (String, js.Function) => EventModule): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
+      inline def setOnce(value: (String, js.Function) => EventModule): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRemoveAllListeners(value: String => EventModule): Self = StObject.set(x, "removeAllListeners", js.Any.fromFunction1(value))
+      inline def setRemoveAllListeners(value: String => EventModule): Self = StObject.set(x, "removeAllListeners", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveListener(value: (String, js.Function) => EventModule): Self = StObject.set(x, "removeListener", js.Any.fromFunction2(value))
+      inline def setRemoveListener(value: (String, js.Function) => EventModule): Self = StObject.set(x, "removeListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetMaxListener(value: Double => Unit): Self = StObject.set(x, "setMaxListener", js.Any.fromFunction1(value))
+      inline def setSetMaxListener(value: Double => Unit): Self = StObject.set(x, "setMaxListener", js.Any.fromFunction1(value))
     }
   }
 }

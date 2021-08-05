@@ -22,20 +22,16 @@ object badgeMod extends Shortcut {
   }
   object BadgeProps {
     
-    @scala.inline
-    def apply(): BadgeProps = {
+    inline def apply(): BadgeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BadgeProps]
     }
     
-    @scala.inline
-    implicit class BadgePropsMutableBuilder[Self <: BadgeProps] (val x: Self) extends AnyVal {
+    extension [Self <: BadgeProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

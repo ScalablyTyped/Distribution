@@ -18,28 +18,21 @@ trait GetResourceConfigHistoryResponse extends StObject {
 }
 object GetResourceConfigHistoryResponse {
   
-  @scala.inline
-  def apply(): GetResourceConfigHistoryResponse = {
+  inline def apply(): GetResourceConfigHistoryResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetResourceConfigHistoryResponse]
   }
   
-  @scala.inline
-  implicit class GetResourceConfigHistoryResponseMutableBuilder[Self <: GetResourceConfigHistoryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetResourceConfigHistoryResponse](x: Self) {
     
-    @scala.inline
-    def setConfigurationItems(value: ConfigurationItemList): Self = StObject.set(x, "configurationItems", value.asInstanceOf[js.Any])
+    inline def setConfigurationItems(value: ConfigurationItemList): Self = StObject.set(x, "configurationItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationItemsUndefined: Self = StObject.set(x, "configurationItems", js.undefined)
+    inline def setConfigurationItemsUndefined: Self = StObject.set(x, "configurationItems", js.undefined)
     
-    @scala.inline
-    def setConfigurationItemsVarargs(value: ConfigurationItem*): Self = StObject.set(x, "configurationItems", js.Array(value :_*))
+    inline def setConfigurationItemsVarargs(value: ConfigurationItem*): Self = StObject.set(x, "configurationItems", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

@@ -11,19 +11,15 @@ trait SourceSpan extends StObject {
 }
 object SourceSpan {
   
-  @scala.inline
-  def apply(): SourceSpan = {
+  inline def apply(): SourceSpan = {
     val __obj = js.Dynamic.literal(sourceSpan = null)
     __obj.asInstanceOf[SourceSpan]
   }
   
-  @scala.inline
-  implicit class SourceSpanMutableBuilder[Self <: SourceSpan] (val x: Self) extends AnyVal {
+  extension [Self <: SourceSpan](x: Self) {
     
-    @scala.inline
-    def setSourceSpan(value: ParseSourceSpan): Self = StObject.set(x, "sourceSpan", value.asInstanceOf[js.Any])
+    inline def setSourceSpan(value: ParseSourceSpan): Self = StObject.set(x, "sourceSpan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceSpanNull: Self = StObject.set(x, "sourceSpan", null)
+    inline def setSourceSpanNull: Self = StObject.set(x, "sourceSpan", null)
   }
 }

@@ -31,8 +31,7 @@ trait ChapterNumberingRule
 }
 object ChapterNumberingRule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Alignment: HorizontalAlignment,
     BulletFontName: String,
     BulletId: Double,
@@ -52,10 +51,8 @@ object ChapterNumberingRule {
     __obj.asInstanceOf[ChapterNumberingRule]
   }
   
-  @scala.inline
-  implicit class ChapterNumberingRuleMutableBuilder[Self <: ChapterNumberingRule] (val x: Self) extends AnyVal {
+  extension [Self <: ChapterNumberingRule](x: Self) {
     
-    @scala.inline
-    def setHeadingStyleName(value: String): Self = StObject.set(x, "HeadingStyleName", value.asInstanceOf[js.Any])
+    inline def setHeadingStyleName(value: String): Self = StObject.set(x, "HeadingStyleName", value.asInstanceOf[js.Any])
   }
 }

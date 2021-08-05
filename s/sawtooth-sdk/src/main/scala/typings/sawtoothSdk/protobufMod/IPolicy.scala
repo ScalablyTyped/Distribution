@@ -15,34 +15,25 @@ trait IPolicy extends StObject {
 }
 object IPolicy {
   
-  @scala.inline
-  def apply(): IPolicy = {
+  inline def apply(): IPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPolicy]
   }
   
-  @scala.inline
-  implicit class IPolicyMutableBuilder[Self <: IPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: IPolicy](x: Self) {
     
-    @scala.inline
-    def setEntries(value: js.Array[IEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: js.Array[IEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesNull: Self = StObject.set(x, "entries", null)
+    inline def setEntriesNull: Self = StObject.set(x, "entries", null)
     
-    @scala.inline
-    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
+    inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    @scala.inline
-    def setEntriesVarargs(value: IEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: IEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

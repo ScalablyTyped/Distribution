@@ -25,22 +25,17 @@ trait ChoosePhoneContactOptions
 }
 object ChoosePhoneContactOptions {
   
-  @scala.inline
-  def apply(success: Mobile => Unit): ChoosePhoneContactOptions = {
+  inline def apply(success: Mobile => Unit): ChoosePhoneContactOptions = {
     val __obj = js.Dynamic.literal(success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[ChoosePhoneContactOptions]
   }
   
-  @scala.inline
-  implicit class ChoosePhoneContactOptionsMutableBuilder[Self <: ChoosePhoneContactOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChoosePhoneContactOptions](x: Self) {
     
-    @scala.inline
-    def setFail(value: /* error */ `10` | `11` => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
+    inline def setFail(value: /* error */ `10` | `11` => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: Mobile => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: Mobile => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

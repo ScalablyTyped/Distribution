@@ -20,49 +20,35 @@ trait DataTableColumnDescription extends StObject {
 }
 object DataTableColumnDescription {
   
-  @scala.inline
-  def apply(): DataTableColumnDescription = {
+  inline def apply(): DataTableColumnDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataTableColumnDescription]
   }
   
-  @scala.inline
-  implicit class DataTableColumnDescriptionMutableBuilder[Self <: DataTableColumnDescription] (val x: Self) extends AnyVal {
+  extension [Self <: DataTableColumnDescription](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setP(value: js.Any): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+    inline def setP(value: js.Any): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPUndefined: Self = StObject.set(x, "p", js.undefined)
+    inline def setPUndefined: Self = StObject.set(x, "p", js.undefined)
     
-    @scala.inline
-    def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+    inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
-    @scala.inline
-    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

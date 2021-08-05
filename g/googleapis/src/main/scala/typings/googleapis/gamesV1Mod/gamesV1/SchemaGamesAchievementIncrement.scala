@@ -28,31 +28,23 @@ trait SchemaGamesAchievementIncrement extends StObject {
 }
 object SchemaGamesAchievementIncrement {
   
-  @scala.inline
-  def apply(): SchemaGamesAchievementIncrement = {
+  inline def apply(): SchemaGamesAchievementIncrement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGamesAchievementIncrement]
   }
   
-  @scala.inline
-  implicit class SchemaGamesAchievementIncrementMutableBuilder[Self <: SchemaGamesAchievementIncrement] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGamesAchievementIncrement](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
     
-    @scala.inline
-    def setSteps(value: Double): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+    inline def setSteps(value: Double): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
+    inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
   }
 }

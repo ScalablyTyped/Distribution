@@ -15,25 +15,19 @@ trait VerticalAlignProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] ex
 }
 object VerticalAlignProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): VerticalAlignProps[ThemeType, TVal] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): VerticalAlignProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VerticalAlignProps[ThemeType, TVal]]
   }
   
-  @scala.inline
-  implicit class VerticalAlignPropsMutableBuilder[Self <: VerticalAlignProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (VerticalAlignProps[ThemeType, TVal])) extends AnyVal {
+  extension [Self <: VerticalAlignProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (VerticalAlignProps[ThemeType, TVal])) {
     
-    @scala.inline
-    def setVerticalAlign(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+    inline def setVerticalAlign(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalAlignNull: Self = StObject.set(x, "verticalAlign", null)
+    inline def setVerticalAlignNull: Self = StObject.set(x, "verticalAlign", null)
     
-    @scala.inline
-    def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
+    inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
     
-    @scala.inline
-    def setVerticalAlignVarargs(value: (TVal | Null)*): Self = StObject.set(x, "verticalAlign", js.Array(value :_*))
+    inline def setVerticalAlignVarargs(value: (TVal | Null)*): Self = StObject.set(x, "verticalAlign", js.Array(value :_*))
   }
 }

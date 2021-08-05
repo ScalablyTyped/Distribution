@@ -178,7 +178,7 @@ trait Shell extends StObject {
   /** Displays the **Date and Time Properties** dialog box. */
   def SetTime(): Unit = js.native
   
-  @JSName("Shell32.Shell_typekey")
+  /* private */ @JSName("Shell32.Shell_typekey")
   var Shell32DotShell_typekey: Shell = js.native
   
   /**

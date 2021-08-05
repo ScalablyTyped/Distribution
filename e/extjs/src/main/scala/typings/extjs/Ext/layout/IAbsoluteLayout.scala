@@ -20,25 +20,19 @@ trait IAbsoluteLayout
 }
 object IAbsoluteLayout {
   
-  @scala.inline
-  def apply(): IAbsoluteLayout = {
+  inline def apply(): IAbsoluteLayout = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IAbsoluteLayout]
   }
   
-  @scala.inline
-  implicit class IAbsoluteLayoutMutableBuilder[Self <: IAbsoluteLayout] (val x: Self) extends AnyVal {
+  extension [Self <: IAbsoluteLayout](x: Self) {
     
-    @scala.inline
-    def setIgnoreOnContentChange(value: Boolean): Self = StObject.set(x, "ignoreOnContentChange", value.asInstanceOf[js.Any])
+    inline def setIgnoreOnContentChange(value: Boolean): Self = StObject.set(x, "ignoreOnContentChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreOnContentChangeUndefined: Self = StObject.set(x, "ignoreOnContentChange", js.undefined)
+    inline def setIgnoreOnContentChangeUndefined: Self = StObject.set(x, "ignoreOnContentChange", js.undefined)
     
-    @scala.inline
-    def setOnContentChange(value: () => Boolean): Self = StObject.set(x, "onContentChange", js.Any.fromFunction0(value))
+    inline def setOnContentChange(value: () => Boolean): Self = StObject.set(x, "onContentChange", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnContentChangeUndefined: Self = StObject.set(x, "onContentChange", js.undefined)
+    inline def setOnContentChangeUndefined: Self = StObject.set(x, "onContentChange", js.undefined)
   }
 }

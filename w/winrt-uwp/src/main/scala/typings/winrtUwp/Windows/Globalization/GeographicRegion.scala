@@ -31,8 +31,7 @@ trait GeographicRegion extends StObject {
 }
 object GeographicRegion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     code: String,
     codeThreeDigit: String,
     codeThreeLetter: String,
@@ -45,28 +44,20 @@ object GeographicRegion {
     __obj.asInstanceOf[GeographicRegion]
   }
   
-  @scala.inline
-  implicit class GeographicRegionMutableBuilder[Self <: GeographicRegion] (val x: Self) extends AnyVal {
+  extension [Self <: GeographicRegion](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeThreeDigit(value: String): Self = StObject.set(x, "codeThreeDigit", value.asInstanceOf[js.Any])
+    inline def setCodeThreeDigit(value: String): Self = StObject.set(x, "codeThreeDigit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeThreeLetter(value: String): Self = StObject.set(x, "codeThreeLetter", value.asInstanceOf[js.Any])
+    inline def setCodeThreeLetter(value: String): Self = StObject.set(x, "codeThreeLetter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeTwoLetter(value: String): Self = StObject.set(x, "codeTwoLetter", value.asInstanceOf[js.Any])
+    inline def setCodeTwoLetter(value: String): Self = StObject.set(x, "codeTwoLetter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrenciesInUse(value: IVectorView[String]): Self = StObject.set(x, "currenciesInUse", value.asInstanceOf[js.Any])
+    inline def setCurrenciesInUse(value: IVectorView[String]): Self = StObject.set(x, "currenciesInUse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNativeName(value: String): Self = StObject.set(x, "nativeName", value.asInstanceOf[js.Any])
+    inline def setNativeName(value: String): Self = StObject.set(x, "nativeName", value.asInstanceOf[js.Any])
   }
 }

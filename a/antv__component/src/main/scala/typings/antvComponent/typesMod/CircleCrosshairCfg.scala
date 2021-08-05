@@ -36,25 +36,19 @@ trait CircleCrosshairCfg
 }
 object CircleCrosshairCfg {
   
-  @scala.inline
-  def apply(center: Point, container: IGroup, endAngle: Double, radius: Double, startAngle: Double): CircleCrosshairCfg = {
+  inline def apply(center: Point, container: IGroup, endAngle: Double, radius: Double, startAngle: Double): CircleCrosshairCfg = {
     val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], container = container.asInstanceOf[js.Any], endAngle = endAngle.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any])
     __obj.asInstanceOf[CircleCrosshairCfg]
   }
   
-  @scala.inline
-  implicit class CircleCrosshairCfgMutableBuilder[Self <: CircleCrosshairCfg] (val x: Self) extends AnyVal {
+  extension [Self <: CircleCrosshairCfg](x: Self) {
     
-    @scala.inline
-    def setCenter(value: Point): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: Point): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
+    inline def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
+    inline def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
   }
 }

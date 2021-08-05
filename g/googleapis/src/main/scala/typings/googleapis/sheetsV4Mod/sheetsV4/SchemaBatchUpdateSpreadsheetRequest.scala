@@ -37,43 +37,31 @@ trait SchemaBatchUpdateSpreadsheetRequest extends StObject {
 }
 object SchemaBatchUpdateSpreadsheetRequest {
   
-  @scala.inline
-  def apply(): SchemaBatchUpdateSpreadsheetRequest = {
+  inline def apply(): SchemaBatchUpdateSpreadsheetRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBatchUpdateSpreadsheetRequest]
   }
   
-  @scala.inline
-  implicit class SchemaBatchUpdateSpreadsheetRequestMutableBuilder[Self <: SchemaBatchUpdateSpreadsheetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBatchUpdateSpreadsheetRequest](x: Self) {
     
-    @scala.inline
-    def setIncludeSpreadsheetInResponse(value: Boolean): Self = StObject.set(x, "includeSpreadsheetInResponse", value.asInstanceOf[js.Any])
+    inline def setIncludeSpreadsheetInResponse(value: Boolean): Self = StObject.set(x, "includeSpreadsheetInResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeSpreadsheetInResponseUndefined: Self = StObject.set(x, "includeSpreadsheetInResponse", js.undefined)
+    inline def setIncludeSpreadsheetInResponseUndefined: Self = StObject.set(x, "includeSpreadsheetInResponse", js.undefined)
     
-    @scala.inline
-    def setRequests(value: js.Array[SchemaRequest]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
+    inline def setRequests(value: js.Array[SchemaRequest]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
+    inline def setRequestsUndefined: Self = StObject.set(x, "requests", js.undefined)
     
-    @scala.inline
-    def setRequestsVarargs(value: SchemaRequest*): Self = StObject.set(x, "requests", js.Array(value :_*))
+    inline def setRequestsVarargs(value: SchemaRequest*): Self = StObject.set(x, "requests", js.Array(value :_*))
     
-    @scala.inline
-    def setResponseIncludeGridData(value: Boolean): Self = StObject.set(x, "responseIncludeGridData", value.asInstanceOf[js.Any])
+    inline def setResponseIncludeGridData(value: Boolean): Self = StObject.set(x, "responseIncludeGridData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseIncludeGridDataUndefined: Self = StObject.set(x, "responseIncludeGridData", js.undefined)
+    inline def setResponseIncludeGridDataUndefined: Self = StObject.set(x, "responseIncludeGridData", js.undefined)
     
-    @scala.inline
-    def setResponseRanges(value: js.Array[String]): Self = StObject.set(x, "responseRanges", value.asInstanceOf[js.Any])
+    inline def setResponseRanges(value: js.Array[String]): Self = StObject.set(x, "responseRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseRangesUndefined: Self = StObject.set(x, "responseRanges", js.undefined)
+    inline def setResponseRangesUndefined: Self = StObject.set(x, "responseRanges", js.undefined)
     
-    @scala.inline
-    def setResponseRangesVarargs(value: String*): Self = StObject.set(x, "responseRanges", js.Array(value :_*))
+    inline def setResponseRangesVarargs(value: String*): Self = StObject.set(x, "responseRanges", js.Array(value :_*))
   }
 }

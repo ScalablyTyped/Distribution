@@ -26,8 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object OptionalCallExpression_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName_],
     callee: Expression,
     optional: Boolean
@@ -37,34 +36,24 @@ object OptionalCallExpression_ {
     __obj.asInstanceOf[OptionalCallExpression_]
   }
   
-  @scala.inline
-  implicit class OptionalCallExpression_MutableBuilder[Self <: OptionalCallExpression_] (val x: Self) extends AnyVal {
+  extension [Self <: OptionalCallExpression_](x: Self) {
     
-    @scala.inline
-    def setArguments(value: js.Array[Expression | SpreadElement_ | JSXNamespacedName_]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: js.Array[Expression | SpreadElement_ | JSXNamespacedName_]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgumentsVarargs(value: (Expression | SpreadElement_ | JSXNamespacedName_)*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: (Expression | SpreadElement_ | JSXNamespacedName_)*): Self = StObject.set(x, "arguments", js.Array(value :_*))
     
-    @scala.inline
-    def setCallee(value: Expression): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
+    inline def setCallee(value: Expression): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: OptionalCallExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: OptionalCallExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeArguments(value: TypeParameterInstantiation_): Self = StObject.set(x, "typeArguments", value.asInstanceOf[js.Any])
+    inline def setTypeArguments(value: TypeParameterInstantiation_): Self = StObject.set(x, "typeArguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeArgumentsNull: Self = StObject.set(x, "typeArguments", null)
+    inline def setTypeArgumentsNull: Self = StObject.set(x, "typeArguments", null)
     
-    @scala.inline
-    def setTypeParameters(value: TSTypeParameterInstantiation_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
+    inline def setTypeParameters(value: TSTypeParameterInstantiation_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeParametersNull: Self = StObject.set(x, "typeParameters", null)
+    inline def setTypeParametersNull: Self = StObject.set(x, "typeParameters", null)
   }
 }

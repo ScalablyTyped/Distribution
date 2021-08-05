@@ -13,19 +13,15 @@ trait ArrowFormatOptions extends StObject {
 }
 object ArrowFormatOptions {
   
-  @scala.inline
-  def apply(): ArrowFormatOptions = {
+  inline def apply(): ArrowFormatOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ArrowFormatOptions]
   }
   
-  @scala.inline
-  implicit class ArrowFormatOptionsMutableBuilder[Self <: ArrowFormatOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ArrowFormatOptions](x: Self) {
     
-    @scala.inline
-    def setBase(value: Double): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: Double): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+    inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
   }
 }

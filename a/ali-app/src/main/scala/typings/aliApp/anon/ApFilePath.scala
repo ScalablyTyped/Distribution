@@ -17,22 +17,17 @@ trait ApFilePath extends StObject {
 }
 object ApFilePath {
   
-  @scala.inline
-  def apply(apFilePath: String, createTime: Double, size: Double): ApFilePath = {
+  inline def apply(apFilePath: String, createTime: Double, size: Double): ApFilePath = {
     val __obj = js.Dynamic.literal(apFilePath = apFilePath.asInstanceOf[js.Any], createTime = createTime.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApFilePath]
   }
   
-  @scala.inline
-  implicit class ApFilePathMutableBuilder[Self <: ApFilePath] (val x: Self) extends AnyVal {
+  extension [Self <: ApFilePath](x: Self) {
     
-    @scala.inline
-    def setApFilePath(value: String): Self = StObject.set(x, "apFilePath", value.asInstanceOf[js.Any])
+    inline def setApFilePath(value: String): Self = StObject.set(x, "apFilePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTime(value: Double): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: Double): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

@@ -49,55 +49,39 @@ trait TimeOptions
 }
 object TimeOptions {
   
-  @scala.inline
-  def apply(): TimeOptions = {
+  inline def apply(): TimeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimeOptions]
   }
   
-  @scala.inline
-  implicit class TimeOptionsMutableBuilder[Self <: TimeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TimeOptions](x: Self) {
     
-    @scala.inline
-    def setDisable(value: js.Array[js.Any]): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
+    inline def setDisable(value: js.Array[js.Any]): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
+    inline def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
     
-    @scala.inline
-    def setDisableVarargs(value: js.Any*): Self = StObject.set(x, "disable", js.Array(value :_*))
+    inline def setDisableVarargs(value: js.Any*): Self = StObject.set(x, "disable", js.Array(value :_*))
     
-    @scala.inline
-    def setFormatLabel(value: String | (js.Function1[/* time */ TimeItem, String])): Self = StObject.set(x, "formatLabel", value.asInstanceOf[js.Any])
+    inline def setFormatLabel(value: String | (js.Function1[/* time */ TimeItem, String])): Self = StObject.set(x, "formatLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatLabelFunction1(value: /* time */ TimeItem => String): Self = StObject.set(x, "formatLabel", js.Any.fromFunction1(value))
+    inline def setFormatLabelFunction1(value: /* time */ TimeItem => String): Self = StObject.set(x, "formatLabel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFormatLabelUndefined: Self = StObject.set(x, "formatLabel", js.undefined)
+    inline def setFormatLabelUndefined: Self = StObject.set(x, "formatLabel", js.undefined)
     
-    @scala.inline
-    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
-    @scala.inline
-    def setKlass(value: TimeKlassOptions): Self = StObject.set(x, "klass", value.asInstanceOf[js.Any])
+    inline def setKlass(value: TimeKlassOptions): Self = StObject.set(x, "klass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKlassUndefined: Self = StObject.set(x, "klass", js.undefined)
+    inline def setKlassUndefined: Self = StObject.set(x, "klass", js.undefined)
     
-    @scala.inline
-    def setMax(value: MinOrMaxTimeOption): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: MinOrMaxTimeOption): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: MinOrMaxTimeOption): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: MinOrMaxTimeOption): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
   }
 }

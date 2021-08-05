@@ -18,22 +18,17 @@ trait DetectTextRequest extends StObject {
 }
 object DetectTextRequest {
   
-  @scala.inline
-  def apply(Image: Image): DetectTextRequest = {
+  inline def apply(Image: Image): DetectTextRequest = {
     val __obj = js.Dynamic.literal(Image = Image.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectTextRequest]
   }
   
-  @scala.inline
-  implicit class DetectTextRequestMutableBuilder[Self <: DetectTextRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DetectTextRequest](x: Self) {
     
-    @scala.inline
-    def setFilters(value: DetectTextFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: DetectTextFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setImage(value: Image): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
+    inline def setImage(value: Image): Self = StObject.set(x, "Image", value.asInstanceOf[js.Any])
   }
 }

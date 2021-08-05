@@ -10,22 +10,17 @@ trait TargetingValueDemogGenderCriteria extends StObject {
 }
 object TargetingValueDemogGenderCriteria {
   
-  @scala.inline
-  def apply(): TargetingValueDemogGenderCriteria = {
+  inline def apply(): TargetingValueDemogGenderCriteria = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TargetingValueDemogGenderCriteria]
   }
   
-  @scala.inline
-  implicit class TargetingValueDemogGenderCriteriaMutableBuilder[Self <: TargetingValueDemogGenderCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: TargetingValueDemogGenderCriteria](x: Self) {
     
-    @scala.inline
-    def setDemogGenderCriteriaIds(value: js.Array[String]): Self = StObject.set(x, "demogGenderCriteriaIds", value.asInstanceOf[js.Any])
+    inline def setDemogGenderCriteriaIds(value: js.Array[String]): Self = StObject.set(x, "demogGenderCriteriaIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDemogGenderCriteriaIdsUndefined: Self = StObject.set(x, "demogGenderCriteriaIds", js.undefined)
+    inline def setDemogGenderCriteriaIdsUndefined: Self = StObject.set(x, "demogGenderCriteriaIds", js.undefined)
     
-    @scala.inline
-    def setDemogGenderCriteriaIdsVarargs(value: String*): Self = StObject.set(x, "demogGenderCriteriaIds", js.Array(value :_*))
+    inline def setDemogGenderCriteriaIdsVarargs(value: String*): Self = StObject.set(x, "demogGenderCriteriaIds", js.Array(value :_*))
   }
 }

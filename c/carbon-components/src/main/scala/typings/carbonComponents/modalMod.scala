@@ -45,8 +45,7 @@ object modalMod {
     @JSImport("carbon-components/components/modal/modal", "default.components")
     @js.native
     def components: WeakMap[js.Object, js.Any] = js.native
-    @scala.inline
-    def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
+    inline def components_=(x: WeakMap[js.Object, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("components")(x.asInstanceOf[js.Any])
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -68,8 +67,7 @@ object modalMod {
   }
   object Modal {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _changeState: (js.Any, js.Any, js.Any) => Unit,
       _handleFocusin: js.Any => Unit,
       _handleFocusinListener: js.Any,
@@ -82,29 +80,21 @@ object modalMod {
       __obj.asInstanceOf[Modal]
     }
     
-    @scala.inline
-    implicit class ModalMutableBuilder[Self <: Modal] (val x: Self) extends AnyVal {
+    extension [Self <: Modal](x: Self) {
       
-      @scala.inline
-      def setCreatedByLauncher(value: js.Any => Unit): Self = StObject.set(x, "createdByLauncher", js.Any.fromFunction1(value))
+      inline def setCreatedByLauncher(value: js.Any => Unit): Self = StObject.set(x, "createdByLauncher", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShouldStateBeChanged(value: js.Any => js.Any): Self = StObject.set(x, "shouldStateBeChanged", js.Any.fromFunction1(value))
+      inline def setShouldStateBeChanged(value: js.Any => js.Any): Self = StObject.set(x, "shouldStateBeChanged", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_changeState(value: (js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "_changeState", js.Any.fromFunction3(value))
+      inline def set_changeState(value: (js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "_changeState", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def set_handleFocusin(value: js.Any => Unit): Self = StObject.set(x, "_handleFocusin", js.Any.fromFunction1(value))
+      inline def set_handleFocusin(value: js.Any => Unit): Self = StObject.set(x, "_handleFocusin", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_handleFocusinListener(value: js.Any): Self = StObject.set(x, "_handleFocusinListener", value.asInstanceOf[js.Any])
+      inline def set_handleFocusinListener(value: js.Any): Self = StObject.set(x, "_handleFocusinListener", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_handleKeydownListener(value: js.Any): Self = StObject.set(x, "_handleKeydownListener", value.asInstanceOf[js.Any])
+      inline def set_handleKeydownListener(value: js.Any): Self = StObject.set(x, "_handleKeydownListener", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_hookCloseActions(value: () => Unit): Self = StObject.set(x, "_hookCloseActions", js.Any.fromFunction0(value))
+      inline def set_hookCloseActions(value: () => Unit): Self = StObject.set(x, "_hookCloseActions", js.Any.fromFunction0(value))
     }
   }
 }

@@ -29,20 +29,15 @@ object errorsMod {
     @js.native
     val ^ : RequestErrorConstructor = js.native
     
-    @scala.inline
-    implicit class RequestErrorMutableBuilder[Self <: RequestError] (val x: Self) extends AnyVal {
+    extension [Self <: RequestError](x: Self) {
       
-      @scala.inline
-      def setCause(value: js.Any): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+      inline def setCause(value: js.Any): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: IncomingMessage): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: IncomingMessage): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
   }
   
@@ -91,20 +86,15 @@ object errorsMod {
     @js.native
     val ^ : StatusCodeErrorConstructor = js.native
     
-    @scala.inline
-    implicit class StatusCodeErrorMutableBuilder[Self <: StatusCodeError] (val x: Self) extends AnyVal {
+    extension [Self <: StatusCodeError](x: Self) {
       
-      @scala.inline
-      def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: IncomingMessage): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: IncomingMessage): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -153,20 +143,15 @@ object errorsMod {
     @js.native
     val ^ : TransformErrorConstructor = js.native
     
-    @scala.inline
-    implicit class TransformErrorMutableBuilder[Self <: TransformError] (val x: Self) extends AnyVal {
+    extension [Self <: TransformError](x: Self) {
       
-      @scala.inline
-      def setCause(value: js.Any): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+      inline def setCause(value: js.Any): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: IncomingMessage): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: IncomingMessage): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
   }
   

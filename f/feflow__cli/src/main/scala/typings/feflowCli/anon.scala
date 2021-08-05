@@ -13,21 +13,17 @@ object anon {
   }
   object _empty {
     
-    @scala.inline
-    def apply(_underscore: js.Array[Double | String]): _empty = {
+    inline def apply(_underscore: js.Array[Double | String]): _empty = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("_")(_underscore.asInstanceOf[js.Any])
       __obj.asInstanceOf[_empty]
     }
     
-    @scala.inline
-    implicit class _emptyMutableBuilder[Self <: _empty] (val x: Self) extends AnyVal {
+    extension [Self <: _empty](x: Self) {
       
-      @scala.inline
-      def set_underscore(value: js.Array[Double | String]): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
+      inline def set_underscore(value: js.Array[Double | String]): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_underscoreVarargs(value: (Double | String)*): Self = StObject.set(x, "_", js.Array(value :_*))
+      inline def set_underscoreVarargs(value: (Double | String)*): Self = StObject.set(x, "_", js.Array(value :_*))
     }
   }
 }

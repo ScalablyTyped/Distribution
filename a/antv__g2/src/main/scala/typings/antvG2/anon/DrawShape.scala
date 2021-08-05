@@ -14,28 +14,21 @@ trait DrawShape extends StObject {
 }
 object DrawShape {
   
-  @scala.inline
-  def apply(drawShape: js.Any): DrawShape = {
+  inline def apply(drawShape: js.Any): DrawShape = {
     val __obj = js.Dynamic.literal(drawShape = drawShape.asInstanceOf[js.Any])
     __obj.asInstanceOf[DrawShape]
   }
   
-  @scala.inline
-  implicit class DrawShapeMutableBuilder[Self <: DrawShape] (val x: Self) extends AnyVal {
+  extension [Self <: DrawShape](x: Self) {
     
-    @scala.inline
-    def setDrawShape(value: js.Any): Self = StObject.set(x, "drawShape", value.asInstanceOf[js.Any])
+    inline def setDrawShape(value: js.Any): Self = StObject.set(x, "drawShape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetMarkerCfg(value: js.Any): Self = StObject.set(x, "getMarkerCfg", value.asInstanceOf[js.Any])
+    inline def setGetMarkerCfg(value: js.Any): Self = StObject.set(x, "getMarkerCfg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetMarkerCfgUndefined: Self = StObject.set(x, "getMarkerCfg", js.undefined)
+    inline def setGetMarkerCfgUndefined: Self = StObject.set(x, "getMarkerCfg", js.undefined)
     
-    @scala.inline
-    def setGetPoints(value: js.Any): Self = StObject.set(x, "getPoints", value.asInstanceOf[js.Any])
+    inline def setGetPoints(value: js.Any): Self = StObject.set(x, "getPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetPointsUndefined: Self = StObject.set(x, "getPoints", js.undefined)
+    inline def setGetPointsUndefined: Self = StObject.set(x, "getPoints", js.undefined)
   }
 }

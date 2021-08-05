@@ -112,8 +112,7 @@ trait XDataPilotDescriptor
 }
 object XDataPilotDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ColumnFields: XIndexAccess,
     DataFields: XIndexAccess,
     DataPilotFields: XIndexAccess,
@@ -145,67 +144,46 @@ object XDataPilotDescriptor {
     __obj.asInstanceOf[XDataPilotDescriptor]
   }
   
-  @scala.inline
-  implicit class XDataPilotDescriptorMutableBuilder[Self <: XDataPilotDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: XDataPilotDescriptor](x: Self) {
     
-    @scala.inline
-    def setColumnFields(value: XIndexAccess): Self = StObject.set(x, "ColumnFields", value.asInstanceOf[js.Any])
+    inline def setColumnFields(value: XIndexAccess): Self = StObject.set(x, "ColumnFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataFields(value: XIndexAccess): Self = StObject.set(x, "DataFields", value.asInstanceOf[js.Any])
+    inline def setDataFields(value: XIndexAccess): Self = StObject.set(x, "DataFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataPilotFields(value: XIndexAccess): Self = StObject.set(x, "DataPilotFields", value.asInstanceOf[js.Any])
+    inline def setDataPilotFields(value: XIndexAccess): Self = StObject.set(x, "DataPilotFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterDescriptor(value: XSheetFilterDescriptor): Self = StObject.set(x, "FilterDescriptor", value.asInstanceOf[js.Any])
+    inline def setFilterDescriptor(value: XSheetFilterDescriptor): Self = StObject.set(x, "FilterDescriptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetColumnFields(value: () => XIndexAccess): Self = StObject.set(x, "getColumnFields", js.Any.fromFunction0(value))
+    inline def setGetColumnFields(value: () => XIndexAccess): Self = StObject.set(x, "getColumnFields", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDataFields(value: () => XIndexAccess): Self = StObject.set(x, "getDataFields", js.Any.fromFunction0(value))
+    inline def setGetDataFields(value: () => XIndexAccess): Self = StObject.set(x, "getDataFields", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDataPilotFields(value: () => XIndexAccess): Self = StObject.set(x, "getDataPilotFields", js.Any.fromFunction0(value))
+    inline def setGetDataPilotFields(value: () => XIndexAccess): Self = StObject.set(x, "getDataPilotFields", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFilterDescriptor(value: () => XSheetFilterDescriptor): Self = StObject.set(x, "getFilterDescriptor", js.Any.fromFunction0(value))
+    inline def setGetFilterDescriptor(value: () => XSheetFilterDescriptor): Self = StObject.set(x, "getFilterDescriptor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHiddenFields(value: () => XIndexAccess): Self = StObject.set(x, "getHiddenFields", js.Any.fromFunction0(value))
+    inline def setGetHiddenFields(value: () => XIndexAccess): Self = StObject.set(x, "getHiddenFields", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPageFields(value: () => XIndexAccess): Self = StObject.set(x, "getPageFields", js.Any.fromFunction0(value))
+    inline def setGetPageFields(value: () => XIndexAccess): Self = StObject.set(x, "getPageFields", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRowFields(value: () => XIndexAccess): Self = StObject.set(x, "getRowFields", js.Any.fromFunction0(value))
+    inline def setGetRowFields(value: () => XIndexAccess): Self = StObject.set(x, "getRowFields", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSourceRange(value: () => CellRangeAddress): Self = StObject.set(x, "getSourceRange", js.Any.fromFunction0(value))
+    inline def setGetSourceRange(value: () => CellRangeAddress): Self = StObject.set(x, "getSourceRange", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTag(value: () => String): Self = StObject.set(x, "getTag", js.Any.fromFunction0(value))
+    inline def setGetTag(value: () => String): Self = StObject.set(x, "getTag", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHiddenFields(value: XIndexAccess): Self = StObject.set(x, "HiddenFields", value.asInstanceOf[js.Any])
+    inline def setHiddenFields(value: XIndexAccess): Self = StObject.set(x, "HiddenFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageFields(value: XIndexAccess): Self = StObject.set(x, "PageFields", value.asInstanceOf[js.Any])
+    inline def setPageFields(value: XIndexAccess): Self = StObject.set(x, "PageFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowFields(value: XIndexAccess): Self = StObject.set(x, "RowFields", value.asInstanceOf[js.Any])
+    inline def setRowFields(value: XIndexAccess): Self = StObject.set(x, "RowFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetSourceRange(value: CellRangeAddress => Unit): Self = StObject.set(x, "setSourceRange", js.Any.fromFunction1(value))
+    inline def setSetSourceRange(value: CellRangeAddress => Unit): Self = StObject.set(x, "setSourceRange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTag(value: String => Unit): Self = StObject.set(x, "setTag", js.Any.fromFunction1(value))
+    inline def setSetTag(value: String => Unit): Self = StObject.set(x, "setTag", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSourceRange(value: CellRangeAddress): Self = StObject.set(x, "SourceRange", value.asInstanceOf[js.Any])
+    inline def setSourceRange(value: CellRangeAddress): Self = StObject.set(x, "SourceRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
   }
 }

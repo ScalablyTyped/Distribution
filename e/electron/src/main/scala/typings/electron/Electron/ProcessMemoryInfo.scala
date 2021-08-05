@@ -28,23 +28,18 @@ trait ProcessMemoryInfo extends StObject {
 }
 object ProcessMemoryInfo {
   
-  @scala.inline
-  def apply(`private`: Double, residentSet: Double, shared: Double): ProcessMemoryInfo = {
+  inline def apply(`private`: Double, residentSet: Double, shared: Double): ProcessMemoryInfo = {
     val __obj = js.Dynamic.literal(residentSet = residentSet.asInstanceOf[js.Any], shared = shared.asInstanceOf[js.Any])
     __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProcessMemoryInfo]
   }
   
-  @scala.inline
-  implicit class ProcessMemoryInfoMutableBuilder[Self <: ProcessMemoryInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ProcessMemoryInfo](x: Self) {
     
-    @scala.inline
-    def setPrivate(value: Double): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
+    inline def setPrivate(value: Double): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResidentSet(value: Double): Self = StObject.set(x, "residentSet", value.asInstanceOf[js.Any])
+    inline def setResidentSet(value: Double): Self = StObject.set(x, "residentSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShared(value: Double): Self = StObject.set(x, "shared", value.asInstanceOf[js.Any])
+    inline def setShared(value: Double): Self = StObject.set(x, "shared", value.asInstanceOf[js.Any])
   }
 }

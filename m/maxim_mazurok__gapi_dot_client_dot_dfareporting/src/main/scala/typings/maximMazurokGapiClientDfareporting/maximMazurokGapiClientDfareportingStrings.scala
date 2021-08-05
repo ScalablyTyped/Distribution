@@ -8,11 +8,9 @@ object maximMazurokGapiClientDfareportingStrings {
   
   @js.native
   sealed trait dfareporting extends StObject
-  @scala.inline
-  def dfareporting: dfareporting = "dfareporting".asInstanceOf[dfareporting]
+  inline def dfareporting: dfareporting = "dfareporting".asInstanceOf[dfareporting]
   
   @js.native
   sealed trait v3Dot4 extends StObject
-  @scala.inline
-  def v3Dot4: v3Dot4 = "v3.4".asInstanceOf[v3Dot4]
+  inline def v3Dot4: v3Dot4 = "v3.4".asInstanceOf[v3Dot4]
 }

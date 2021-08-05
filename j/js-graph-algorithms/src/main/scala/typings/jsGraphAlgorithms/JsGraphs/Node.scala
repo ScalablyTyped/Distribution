@@ -10,19 +10,15 @@ trait Node extends StObject {
 }
 object Node {
   
-  @scala.inline
-  def apply(): Node = {
+  inline def apply(): Node = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Node]
   }
   
-  @scala.inline
-  implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
+  extension [Self <: Node](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }
 }

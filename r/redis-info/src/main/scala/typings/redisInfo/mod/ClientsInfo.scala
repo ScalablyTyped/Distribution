@@ -16,8 +16,7 @@ trait ClientsInfo extends StObject {
 }
 object ClientsInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     blocked_clients: String,
     client_biggest_input_buf: String,
     client_longest_output_list: String,
@@ -27,19 +26,14 @@ object ClientsInfo {
     __obj.asInstanceOf[ClientsInfo]
   }
   
-  @scala.inline
-  implicit class ClientsInfoMutableBuilder[Self <: ClientsInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ClientsInfo](x: Self) {
     
-    @scala.inline
-    def setBlocked_clients(value: String): Self = StObject.set(x, "blocked_clients", value.asInstanceOf[js.Any])
+    inline def setBlocked_clients(value: String): Self = StObject.set(x, "blocked_clients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClient_biggest_input_buf(value: String): Self = StObject.set(x, "client_biggest_input_buf", value.asInstanceOf[js.Any])
+    inline def setClient_biggest_input_buf(value: String): Self = StObject.set(x, "client_biggest_input_buf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClient_longest_output_list(value: String): Self = StObject.set(x, "client_longest_output_list", value.asInstanceOf[js.Any])
+    inline def setClient_longest_output_list(value: String): Self = StObject.set(x, "client_longest_output_list", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnected_clients(value: String): Self = StObject.set(x, "connected_clients", value.asInstanceOf[js.Any])
+    inline def setConnected_clients(value: String): Self = StObject.set(x, "connected_clients", value.asInstanceOf[js.Any])
   }
 }

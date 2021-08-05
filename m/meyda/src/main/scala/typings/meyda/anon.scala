@@ -15,26 +15,20 @@ object anon {
   }
   object Imag {
     
-    @scala.inline
-    def apply(imag: js.Array[Double], real: js.Array[Double]): Imag = {
+    inline def apply(imag: js.Array[Double], real: js.Array[Double]): Imag = {
       val __obj = js.Dynamic.literal(imag = imag.asInstanceOf[js.Any], real = real.asInstanceOf[js.Any])
       __obj.asInstanceOf[Imag]
     }
     
-    @scala.inline
-    implicit class ImagMutableBuilder[Self <: Imag] (val x: Self) extends AnyVal {
+    extension [Self <: Imag](x: Self) {
       
-      @scala.inline
-      def setImag(value: js.Array[Double]): Self = StObject.set(x, "imag", value.asInstanceOf[js.Any])
+      inline def setImag(value: js.Array[Double]): Self = StObject.set(x, "imag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImagVarargs(value: Double*): Self = StObject.set(x, "imag", js.Array(value :_*))
+      inline def setImagVarargs(value: Double*): Self = StObject.set(x, "imag", js.Array(value :_*))
       
-      @scala.inline
-      def setReal(value: js.Array[Double]): Self = StObject.set(x, "real", value.asInstanceOf[js.Any])
+      inline def setReal(value: js.Array[Double]): Self = StObject.set(x, "real", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRealVarargs(value: Double*): Self = StObject.set(x, "real", js.Array(value :_*))
+      inline def setRealVarargs(value: Double*): Self = StObject.set(x, "real", js.Array(value :_*))
     }
   }
   
@@ -81,137 +75,94 @@ object anon {
   }
   object PartialMeydaFeaturesObjec {
     
-    @scala.inline
-    def apply(): PartialMeydaFeaturesObjec = {
+    inline def apply(): PartialMeydaFeaturesObjec = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialMeydaFeaturesObjec]
     }
     
-    @scala.inline
-    implicit class PartialMeydaFeaturesObjecMutableBuilder[Self <: PartialMeydaFeaturesObjec] (val x: Self) extends AnyVal {
+    extension [Self <: PartialMeydaFeaturesObjec](x: Self) {
       
-      @scala.inline
-      def setAmplitudeSpectrum(value: Float32Array): Self = StObject.set(x, "amplitudeSpectrum", value.asInstanceOf[js.Any])
+      inline def setAmplitudeSpectrum(value: Float32Array): Self = StObject.set(x, "amplitudeSpectrum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmplitudeSpectrumUndefined: Self = StObject.set(x, "amplitudeSpectrum", js.undefined)
+      inline def setAmplitudeSpectrumUndefined: Self = StObject.set(x, "amplitudeSpectrum", js.undefined)
       
-      @scala.inline
-      def setBuffer(value: js.Array[Double]): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: js.Array[Double]): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
+      inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
       
-      @scala.inline
-      def setBufferVarargs(value: Double*): Self = StObject.set(x, "buffer", js.Array(value :_*))
+      inline def setBufferVarargs(value: Double*): Self = StObject.set(x, "buffer", js.Array(value :_*))
       
-      @scala.inline
-      def setChroma(value: js.Array[Double]): Self = StObject.set(x, "chroma", value.asInstanceOf[js.Any])
+      inline def setChroma(value: js.Array[Double]): Self = StObject.set(x, "chroma", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChromaUndefined: Self = StObject.set(x, "chroma", js.undefined)
+      inline def setChromaUndefined: Self = StObject.set(x, "chroma", js.undefined)
       
-      @scala.inline
-      def setChromaVarargs(value: Double*): Self = StObject.set(x, "chroma", js.Array(value :_*))
+      inline def setChromaVarargs(value: Double*): Self = StObject.set(x, "chroma", js.Array(value :_*))
       
-      @scala.inline
-      def setComplexSpectrum(value: Imag): Self = StObject.set(x, "complexSpectrum", value.asInstanceOf[js.Any])
+      inline def setComplexSpectrum(value: Imag): Self = StObject.set(x, "complexSpectrum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComplexSpectrumUndefined: Self = StObject.set(x, "complexSpectrum", js.undefined)
+      inline def setComplexSpectrumUndefined: Self = StObject.set(x, "complexSpectrum", js.undefined)
       
-      @scala.inline
-      def setEnergy(value: Double): Self = StObject.set(x, "energy", value.asInstanceOf[js.Any])
+      inline def setEnergy(value: Double): Self = StObject.set(x, "energy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnergyUndefined: Self = StObject.set(x, "energy", js.undefined)
+      inline def setEnergyUndefined: Self = StObject.set(x, "energy", js.undefined)
       
-      @scala.inline
-      def setLoudness(value: Specific): Self = StObject.set(x, "loudness", value.asInstanceOf[js.Any])
+      inline def setLoudness(value: Specific): Self = StObject.set(x, "loudness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoudnessUndefined: Self = StObject.set(x, "loudness", js.undefined)
+      inline def setLoudnessUndefined: Self = StObject.set(x, "loudness", js.undefined)
       
-      @scala.inline
-      def setMfcc(value: js.Array[Double]): Self = StObject.set(x, "mfcc", value.asInstanceOf[js.Any])
+      inline def setMfcc(value: js.Array[Double]): Self = StObject.set(x, "mfcc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMfccUndefined: Self = StObject.set(x, "mfcc", js.undefined)
+      inline def setMfccUndefined: Self = StObject.set(x, "mfcc", js.undefined)
       
-      @scala.inline
-      def setMfccVarargs(value: Double*): Self = StObject.set(x, "mfcc", js.Array(value :_*))
+      inline def setMfccVarargs(value: Double*): Self = StObject.set(x, "mfcc", js.Array(value :_*))
       
-      @scala.inline
-      def setPerceptualSharpness(value: Double): Self = StObject.set(x, "perceptualSharpness", value.asInstanceOf[js.Any])
+      inline def setPerceptualSharpness(value: Double): Self = StObject.set(x, "perceptualSharpness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPerceptualSharpnessUndefined: Self = StObject.set(x, "perceptualSharpness", js.undefined)
+      inline def setPerceptualSharpnessUndefined: Self = StObject.set(x, "perceptualSharpness", js.undefined)
       
-      @scala.inline
-      def setPerceptualSpread(value: Double): Self = StObject.set(x, "perceptualSpread", value.asInstanceOf[js.Any])
+      inline def setPerceptualSpread(value: Double): Self = StObject.set(x, "perceptualSpread", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPerceptualSpreadUndefined: Self = StObject.set(x, "perceptualSpread", js.undefined)
+      inline def setPerceptualSpreadUndefined: Self = StObject.set(x, "perceptualSpread", js.undefined)
       
-      @scala.inline
-      def setPowerSpectrum(value: Float32Array): Self = StObject.set(x, "powerSpectrum", value.asInstanceOf[js.Any])
+      inline def setPowerSpectrum(value: Float32Array): Self = StObject.set(x, "powerSpectrum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPowerSpectrumUndefined: Self = StObject.set(x, "powerSpectrum", js.undefined)
+      inline def setPowerSpectrumUndefined: Self = StObject.set(x, "powerSpectrum", js.undefined)
       
-      @scala.inline
-      def setRms(value: Double): Self = StObject.set(x, "rms", value.asInstanceOf[js.Any])
+      inline def setRms(value: Double): Self = StObject.set(x, "rms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRmsUndefined: Self = StObject.set(x, "rms", js.undefined)
+      inline def setRmsUndefined: Self = StObject.set(x, "rms", js.undefined)
       
-      @scala.inline
-      def setSpectralCentroid(value: Double): Self = StObject.set(x, "spectralCentroid", value.asInstanceOf[js.Any])
+      inline def setSpectralCentroid(value: Double): Self = StObject.set(x, "spectralCentroid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpectralCentroidUndefined: Self = StObject.set(x, "spectralCentroid", js.undefined)
+      inline def setSpectralCentroidUndefined: Self = StObject.set(x, "spectralCentroid", js.undefined)
       
-      @scala.inline
-      def setSpectralFlatness(value: Double): Self = StObject.set(x, "spectralFlatness", value.asInstanceOf[js.Any])
+      inline def setSpectralFlatness(value: Double): Self = StObject.set(x, "spectralFlatness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpectralFlatnessUndefined: Self = StObject.set(x, "spectralFlatness", js.undefined)
+      inline def setSpectralFlatnessUndefined: Self = StObject.set(x, "spectralFlatness", js.undefined)
       
-      @scala.inline
-      def setSpectralKurtosis(value: Double): Self = StObject.set(x, "spectralKurtosis", value.asInstanceOf[js.Any])
+      inline def setSpectralKurtosis(value: Double): Self = StObject.set(x, "spectralKurtosis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpectralKurtosisUndefined: Self = StObject.set(x, "spectralKurtosis", js.undefined)
+      inline def setSpectralKurtosisUndefined: Self = StObject.set(x, "spectralKurtosis", js.undefined)
       
-      @scala.inline
-      def setSpectralRolloff(value: Double): Self = StObject.set(x, "spectralRolloff", value.asInstanceOf[js.Any])
+      inline def setSpectralRolloff(value: Double): Self = StObject.set(x, "spectralRolloff", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpectralRolloffUndefined: Self = StObject.set(x, "spectralRolloff", js.undefined)
+      inline def setSpectralRolloffUndefined: Self = StObject.set(x, "spectralRolloff", js.undefined)
       
-      @scala.inline
-      def setSpectralSkewness(value: Double): Self = StObject.set(x, "spectralSkewness", value.asInstanceOf[js.Any])
+      inline def setSpectralSkewness(value: Double): Self = StObject.set(x, "spectralSkewness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpectralSkewnessUndefined: Self = StObject.set(x, "spectralSkewness", js.undefined)
+      inline def setSpectralSkewnessUndefined: Self = StObject.set(x, "spectralSkewness", js.undefined)
       
-      @scala.inline
-      def setSpectralSlope(value: Double): Self = StObject.set(x, "spectralSlope", value.asInstanceOf[js.Any])
+      inline def setSpectralSlope(value: Double): Self = StObject.set(x, "spectralSlope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpectralSlopeUndefined: Self = StObject.set(x, "spectralSlope", js.undefined)
+      inline def setSpectralSlopeUndefined: Self = StObject.set(x, "spectralSlope", js.undefined)
       
-      @scala.inline
-      def setSpectralSpread(value: Double): Self = StObject.set(x, "spectralSpread", value.asInstanceOf[js.Any])
+      inline def setSpectralSpread(value: Double): Self = StObject.set(x, "spectralSpread", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpectralSpreadUndefined: Self = StObject.set(x, "spectralSpread", js.undefined)
+      inline def setSpectralSpreadUndefined: Self = StObject.set(x, "spectralSpread", js.undefined)
       
-      @scala.inline
-      def setZcr(value: Double): Self = StObject.set(x, "zcr", value.asInstanceOf[js.Any])
+      inline def setZcr(value: Double): Self = StObject.set(x, "zcr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZcrUndefined: Self = StObject.set(x, "zcr", js.undefined)
+      inline def setZcrUndefined: Self = StObject.set(x, "zcr", js.undefined)
     }
   }
   
@@ -223,20 +174,16 @@ object anon {
   }
   object Specific {
     
-    @scala.inline
-    def apply(specific: Float32Array, total: Double): Specific = {
+    inline def apply(specific: Float32Array, total: Double): Specific = {
       val __obj = js.Dynamic.literal(specific = specific.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[Specific]
     }
     
-    @scala.inline
-    implicit class SpecificMutableBuilder[Self <: Specific] (val x: Self) extends AnyVal {
+    extension [Self <: Specific](x: Self) {
       
-      @scala.inline
-      def setSpecific(value: Float32Array): Self = StObject.set(x, "specific", value.asInstanceOf[js.Any])
+      inline def setSpecific(value: Float32Array): Self = StObject.set(x, "specific", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
   }
 }

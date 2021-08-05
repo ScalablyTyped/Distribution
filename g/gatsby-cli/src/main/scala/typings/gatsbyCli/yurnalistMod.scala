@@ -10,6 +10,5 @@ object yurnalistMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def initializeYurnalistLogger(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeYurnalistLogger")().asInstanceOf[Unit]
+  inline def initializeYurnalistLogger(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeYurnalistLogger")().asInstanceOf[Unit]
 }

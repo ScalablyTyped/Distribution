@@ -19,33 +19,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TextDecorationStyleProperty extends StObject
 object TextDecorationStyleProperty {
   
-  @scala.inline
-  def `-moz-initial`: typings.preact.preactStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.preact.preactStrings.`-moz-initial`]
+  inline def `-moz-initial`: typings.preact.preactStrings.`-moz-initial` = "-moz-initial".asInstanceOf[typings.preact.preactStrings.`-moz-initial`]
   
-  @scala.inline
-  def dashed: typings.preact.preactStrings.dashed = "dashed".asInstanceOf[typings.preact.preactStrings.dashed]
+  inline def dashed: typings.preact.preactStrings.dashed = "dashed".asInstanceOf[typings.preact.preactStrings.dashed]
   
-  @scala.inline
-  def dotted: typings.preact.preactStrings.dotted = "dotted".asInstanceOf[typings.preact.preactStrings.dotted]
+  inline def dotted: typings.preact.preactStrings.dotted = "dotted".asInstanceOf[typings.preact.preactStrings.dotted]
   
-  @scala.inline
-  def double: typings.preact.preactStrings.double = "double".asInstanceOf[typings.preact.preactStrings.double]
+  inline def double: typings.preact.preactStrings.double = "double".asInstanceOf[typings.preact.preactStrings.double]
   
-  @scala.inline
-  def inherit: typings.preact.preactStrings.inherit = "inherit".asInstanceOf[typings.preact.preactStrings.inherit]
+  inline def inherit: typings.preact.preactStrings.inherit = "inherit".asInstanceOf[typings.preact.preactStrings.inherit]
   
-  @scala.inline
-  def initial: typings.preact.preactStrings.initial = "initial".asInstanceOf[typings.preact.preactStrings.initial]
+  inline def initial: typings.preact.preactStrings.initial = "initial".asInstanceOf[typings.preact.preactStrings.initial]
   
-  @scala.inline
-  def revert: typings.preact.preactStrings.revert = "revert".asInstanceOf[typings.preact.preactStrings.revert]
+  inline def revert: typings.preact.preactStrings.revert = "revert".asInstanceOf[typings.preact.preactStrings.revert]
   
-  @scala.inline
-  def solid: typings.preact.preactStrings.solid = "solid".asInstanceOf[typings.preact.preactStrings.solid]
+  inline def solid: typings.preact.preactStrings.solid = "solid".asInstanceOf[typings.preact.preactStrings.solid]
   
-  @scala.inline
-  def unset: typings.preact.preactStrings.unset = "unset".asInstanceOf[typings.preact.preactStrings.unset]
+  inline def unset: typings.preact.preactStrings.unset = "unset".asInstanceOf[typings.preact.preactStrings.unset]
   
-  @scala.inline
-  def wavy: typings.preact.preactStrings.wavy = "wavy".asInstanceOf[typings.preact.preactStrings.wavy]
+  inline def wavy: typings.preact.preactStrings.wavy = "wavy".asInstanceOf[typings.preact.preactStrings.wavy]
 }

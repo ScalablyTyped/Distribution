@@ -16,7 +16,7 @@ trait Links extends StObject {
   
   def Item(Index: js.Any): Link
   
-  @JSName("Outlook.Links_typekey")
+  /* private */ @JSName("Outlook.Links_typekey")
   var OutlookDotLinks_typekey: Links
   
   val Parent: js.Any
@@ -27,8 +27,7 @@ trait Links extends StObject {
 }
 object Links {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: js.Any => Link,
     Application: Application,
     Class: OlObjectClass,
@@ -44,34 +43,24 @@ object Links {
     __obj.asInstanceOf[Links]
   }
   
-  @scala.inline
-  implicit class LinksMutableBuilder[Self <: Links] (val x: Self) extends AnyVal {
+  extension [Self <: Links](x: Self) {
     
-    @scala.inline
-    def setAdd(value: js.Any => Link): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
+    inline def setAdd(value: js.Any => Link): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any => Link): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => Link): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOutlookDotLinks_typekey(value: Links): Self = StObject.set(x, "Outlook.Links_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotLinks_typekey(value: Links): Self = StObject.set(x, "Outlook.Links_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemove(value: js.Any => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: js.Any => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }
 }

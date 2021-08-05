@@ -10,16 +10,13 @@ trait LastNameOptions extends StObject {
 }
 object LastNameOptions {
   
-  @scala.inline
-  def apply(nationality: LastNameNationalities): LastNameOptions = {
+  inline def apply(nationality: LastNameNationalities): LastNameOptions = {
     val __obj = js.Dynamic.literal(nationality = nationality.asInstanceOf[js.Any])
     __obj.asInstanceOf[LastNameOptions]
   }
   
-  @scala.inline
-  implicit class LastNameOptionsMutableBuilder[Self <: LastNameOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LastNameOptions](x: Self) {
     
-    @scala.inline
-    def setNationality(value: LastNameNationalities): Self = StObject.set(x, "nationality", value.asInstanceOf[js.Any])
+    inline def setNationality(value: LastNameNationalities): Self = StObject.set(x, "nationality", value.asInstanceOf[js.Any])
   }
 }

@@ -21,38 +21,28 @@ object anon {
   }
   object Children {
     
-    @scala.inline
-    def apply[Module](): Children[Module] = {
+    inline def apply[Module](): Children[Module] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Children[Module]]
     }
     
-    @scala.inline
-    implicit class ChildrenMutableBuilder[Self <: Children[?], Module] (val x: Self & Children[Module]) extends AnyVal {
+    extension [Self <: Children[?], Module](x: Self & Children[Module]) {
       
-      @scala.inline
-      def setChildren(value: /* module */ Module => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: /* module */ Module => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setFallback(value: Element): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      inline def setFallback(value: Element): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
-      @scala.inline
-      def setRef(value: Ref[Module]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: Ref[Module]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefFunction1(value: /* instance */ Module | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      inline def setRefFunction1(value: /* instance */ Module | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRefNull: Self = StObject.set(x, "ref", null)
+      inline def setRefNull: Self = StObject.set(x, "ref", null)
       
-      @scala.inline
-      def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     }
   }
   
@@ -62,20 +52,16 @@ object anon {
   }
   object Fallback {
     
-    @scala.inline
-    def apply(): Fallback = {
+    inline def apply(): Fallback = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Fallback]
     }
     
-    @scala.inline
-    implicit class FallbackMutableBuilder[Self <: Fallback] (val x: Self) extends AnyVal {
+    extension [Self <: Fallback](x: Self) {
       
-      @scala.inline
-      def setFallback(value: Element): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      inline def setFallback(value: Element): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
     }
   }
   

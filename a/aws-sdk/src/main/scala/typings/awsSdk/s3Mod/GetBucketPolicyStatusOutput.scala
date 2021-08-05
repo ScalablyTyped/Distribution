@@ -13,19 +13,15 @@ trait GetBucketPolicyStatusOutput extends StObject {
 }
 object GetBucketPolicyStatusOutput {
   
-  @scala.inline
-  def apply(): GetBucketPolicyStatusOutput = {
+  inline def apply(): GetBucketPolicyStatusOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBucketPolicyStatusOutput]
   }
   
-  @scala.inline
-  implicit class GetBucketPolicyStatusOutputMutableBuilder[Self <: GetBucketPolicyStatusOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetBucketPolicyStatusOutput](x: Self) {
     
-    @scala.inline
-    def setPolicyStatus(value: PolicyStatus): Self = StObject.set(x, "PolicyStatus", value.asInstanceOf[js.Any])
+    inline def setPolicyStatus(value: PolicyStatus): Self = StObject.set(x, "PolicyStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyStatusUndefined: Self = StObject.set(x, "PolicyStatus", js.undefined)
+    inline def setPolicyStatusUndefined: Self = StObject.set(x, "PolicyStatus", js.undefined)
   }
 }

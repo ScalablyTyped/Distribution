@@ -23,16 +23,13 @@ trait OpenClusterOptions extends StObject {
 }
 object OpenClusterOptions {
   
-  @scala.inline
-  def apply(releaseFunction: (Position, StringDictionary[Position]) => StringDictionary[Position]): OpenClusterOptions = {
+  inline def apply(releaseFunction: (Position, StringDictionary[Position]) => StringDictionary[Position]): OpenClusterOptions = {
     val __obj = js.Dynamic.literal(releaseFunction = js.Any.fromFunction2(releaseFunction))
     __obj.asInstanceOf[OpenClusterOptions]
   }
   
-  @scala.inline
-  implicit class OpenClusterOptionsMutableBuilder[Self <: OpenClusterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OpenClusterOptions](x: Self) {
     
-    @scala.inline
-    def setReleaseFunction(value: (Position, StringDictionary[Position]) => StringDictionary[Position]): Self = StObject.set(x, "releaseFunction", js.Any.fromFunction2(value))
+    inline def setReleaseFunction(value: (Position, StringDictionary[Position]) => StringDictionary[Position]): Self = StObject.set(x, "releaseFunction", js.Any.fromFunction2(value))
   }
 }

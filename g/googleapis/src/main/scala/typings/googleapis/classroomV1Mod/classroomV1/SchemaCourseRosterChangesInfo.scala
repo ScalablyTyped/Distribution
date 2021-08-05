@@ -16,19 +16,15 @@ trait SchemaCourseRosterChangesInfo extends StObject {
 }
 object SchemaCourseRosterChangesInfo {
   
-  @scala.inline
-  def apply(): SchemaCourseRosterChangesInfo = {
+  inline def apply(): SchemaCourseRosterChangesInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCourseRosterChangesInfo]
   }
   
-  @scala.inline
-  implicit class SchemaCourseRosterChangesInfoMutableBuilder[Self <: SchemaCourseRosterChangesInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCourseRosterChangesInfo](x: Self) {
     
-    @scala.inline
-    def setCourseId(value: String): Self = StObject.set(x, "courseId", value.asInstanceOf[js.Any])
+    inline def setCourseId(value: String): Self = StObject.set(x, "courseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCourseIdUndefined: Self = StObject.set(x, "courseId", js.undefined)
+    inline def setCourseIdUndefined: Self = StObject.set(x, "courseId", js.undefined)
   }
 }

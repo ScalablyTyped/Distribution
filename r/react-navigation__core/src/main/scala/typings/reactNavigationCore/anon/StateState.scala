@@ -12,16 +12,13 @@ trait StateState[State /* <: NavigationState[ParamListBase] */] extends StObject
 }
 object StateState {
   
-  @scala.inline
-  def apply[State /* <: NavigationState[ParamListBase] */](state: State): StateState[State] = {
+  inline def apply[State /* <: NavigationState[ParamListBase] */](state: State): StateState[State] = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateState[State]]
   }
   
-  @scala.inline
-  implicit class StateStateMutableBuilder[Self <: StateState[?], State /* <: NavigationState[ParamListBase] */] (val x: Self & StateState[State]) extends AnyVal {
+  extension [Self <: StateState[?], State /* <: NavigationState[ParamListBase] */](x: Self & StateState[State]) {
     
-    @scala.inline
-    def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

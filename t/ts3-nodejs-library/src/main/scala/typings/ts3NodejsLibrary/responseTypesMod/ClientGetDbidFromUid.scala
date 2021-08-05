@@ -15,19 +15,15 @@ trait ClientGetDbidFromUid
 }
 object ClientGetDbidFromUid {
   
-  @scala.inline
-  def apply(cldbid: String, cluid: String): ClientGetDbidFromUid = {
+  inline def apply(cldbid: String, cluid: String): ClientGetDbidFromUid = {
     val __obj = js.Dynamic.literal(cldbid = cldbid.asInstanceOf[js.Any], cluid = cluid.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientGetDbidFromUid]
   }
   
-  @scala.inline
-  implicit class ClientGetDbidFromUidMutableBuilder[Self <: ClientGetDbidFromUid] (val x: Self) extends AnyVal {
+  extension [Self <: ClientGetDbidFromUid](x: Self) {
     
-    @scala.inline
-    def setCldbid(value: String): Self = StObject.set(x, "cldbid", value.asInstanceOf[js.Any])
+    inline def setCldbid(value: String): Self = StObject.set(x, "cldbid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCluid(value: String): Self = StObject.set(x, "cluid", value.asInstanceOf[js.Any])
+    inline def setCluid(value: String): Self = StObject.set(x, "cluid", value.asInstanceOf[js.Any])
   }
 }

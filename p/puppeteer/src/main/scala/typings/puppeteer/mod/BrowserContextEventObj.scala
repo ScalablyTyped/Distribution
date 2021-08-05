@@ -17,22 +17,17 @@ trait BrowserContextEventObj extends StObject {
 }
 object BrowserContextEventObj {
   
-  @scala.inline
-  def apply(targetchanged: Target, targetcreated: Target, targetdestroyed: Target): BrowserContextEventObj = {
+  inline def apply(targetchanged: Target, targetcreated: Target, targetdestroyed: Target): BrowserContextEventObj = {
     val __obj = js.Dynamic.literal(targetchanged = targetchanged.asInstanceOf[js.Any], targetcreated = targetcreated.asInstanceOf[js.Any], targetdestroyed = targetdestroyed.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrowserContextEventObj]
   }
   
-  @scala.inline
-  implicit class BrowserContextEventObjMutableBuilder[Self <: BrowserContextEventObj] (val x: Self) extends AnyVal {
+  extension [Self <: BrowserContextEventObj](x: Self) {
     
-    @scala.inline
-    def setTargetchanged(value: Target): Self = StObject.set(x, "targetchanged", value.asInstanceOf[js.Any])
+    inline def setTargetchanged(value: Target): Self = StObject.set(x, "targetchanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetcreated(value: Target): Self = StObject.set(x, "targetcreated", value.asInstanceOf[js.Any])
+    inline def setTargetcreated(value: Target): Self = StObject.set(x, "targetcreated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetdestroyed(value: Target): Self = StObject.set(x, "targetdestroyed", value.asInstanceOf[js.Any])
+    inline def setTargetdestroyed(value: Target): Self = StObject.set(x, "targetdestroyed", value.asInstanceOf[js.Any])
   }
 }

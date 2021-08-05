@@ -17,20 +17,16 @@ object typesMod {
   }
   object ErrorCallbackEvent {
     
-    @scala.inline
-    def apply(err: Error, req: default): ErrorCallbackEvent = {
+    inline def apply(err: Error, req: default): ErrorCallbackEvent = {
       val __obj = js.Dynamic.literal(err = err.asInstanceOf[js.Any], req = req.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorCallbackEvent]
     }
     
-    @scala.inline
-    implicit class ErrorCallbackEventMutableBuilder[Self <: ErrorCallbackEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorCallbackEvent](x: Self) {
       
-      @scala.inline
-      def setErr(value: Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+      inline def setErr(value: Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReq(value: default): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+      inline def setReq(value: default): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
     }
   }
   
@@ -56,38 +52,28 @@ object typesMod {
   }
   object MockObject {
     
-    @scala.inline
-    def apply(): MockObject = {
+    inline def apply(): MockObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MockObject]
     }
     
-    @scala.inline
-    implicit class MockObjectMutableBuilder[Self <: MockObject] (val x: Self) extends AnyVal {
+    extension [Self <: MockObject](x: Self) {
       
-      @scala.inline
-      def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: MockHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: MockHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+      inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     }
   }
 }

@@ -25,8 +25,7 @@ trait RemoteSystemApp extends StObject {
 }
 object RemoteSystemApp {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Attributes: IMapView[String, String],
     displayName: String,
     id: String,
@@ -37,22 +36,16 @@ object RemoteSystemApp {
     __obj.asInstanceOf[RemoteSystemApp]
   }
   
-  @scala.inline
-  implicit class RemoteSystemAppMutableBuilder[Self <: RemoteSystemApp] (val x: Self) extends AnyVal {
+  extension [Self <: RemoteSystemApp](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: IMapView[String, String]): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: IMapView[String, String]): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAvailableByProximity(value: Boolean): Self = StObject.set(x, "isAvailableByProximity", value.asInstanceOf[js.Any])
+    inline def setIsAvailableByProximity(value: Boolean): Self = StObject.set(x, "isAvailableByProximity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAvailableBySpatialProximity(value: Boolean): Self = StObject.set(x, "isAvailableBySpatialProximity", value.asInstanceOf[js.Any])
+    inline def setIsAvailableBySpatialProximity(value: Boolean): Self = StObject.set(x, "isAvailableBySpatialProximity", value.asInstanceOf[js.Any])
   }
 }

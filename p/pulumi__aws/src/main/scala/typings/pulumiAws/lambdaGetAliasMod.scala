@@ -11,10 +11,8 @@ object lambdaGetAliasMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getAlias(args: GetAliasArgs): js.Promise[GetAliasResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAlias")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetAliasResult]]
-  @scala.inline
-  def getAlias(args: GetAliasArgs, opts: InvokeOptions): js.Promise[GetAliasResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAlias")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAliasResult]]
+  inline def getAlias(args: GetAliasArgs): js.Promise[GetAliasResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAlias")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetAliasResult]]
+  inline def getAlias(args: GetAliasArgs, opts: InvokeOptions): js.Promise[GetAliasResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAlias")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAliasResult]]
   
   trait GetAliasArgs extends StObject {
     
@@ -30,20 +28,16 @@ object lambdaGetAliasMod {
   }
   object GetAliasArgs {
     
-    @scala.inline
-    def apply(functionName: String, name: String): GetAliasArgs = {
+    inline def apply(functionName: String, name: String): GetAliasArgs = {
       val __obj = js.Dynamic.literal(functionName = functionName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetAliasArgs]
     }
     
-    @scala.inline
-    implicit class GetAliasArgsMutableBuilder[Self <: GetAliasArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetAliasArgs](x: Self) {
       
-      @scala.inline
-      def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
+      inline def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -80,8 +74,7 @@ object lambdaGetAliasMod {
   }
   object GetAliasResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       description: String,
       functionName: String,
@@ -94,29 +87,21 @@ object lambdaGetAliasMod {
       __obj.asInstanceOf[GetAliasResult]
     }
     
-    @scala.inline
-    implicit class GetAliasResultMutableBuilder[Self <: GetAliasResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetAliasResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
+      inline def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionVersion(value: String): Self = StObject.set(x, "functionVersion", value.asInstanceOf[js.Any])
+      inline def setFunctionVersion(value: String): Self = StObject.set(x, "functionVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvokeArn(value: String): Self = StObject.set(x, "invokeArn", value.asInstanceOf[js.Any])
+      inline def setInvokeArn(value: String): Self = StObject.set(x, "invokeArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

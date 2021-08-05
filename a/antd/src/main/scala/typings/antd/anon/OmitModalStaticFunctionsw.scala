@@ -21,8 +21,7 @@ trait OmitModalStaticFunctionsw extends StObject {
 }
 object OmitModalStaticFunctionsw {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     confirm: /* props */ ModalFuncProps => Destroy,
     error: /* props */ ModalFuncProps => Destroy,
     info: /* props */ ModalFuncProps => Destroy,
@@ -33,22 +32,16 @@ object OmitModalStaticFunctionsw {
     __obj.asInstanceOf[OmitModalStaticFunctionsw]
   }
   
-  @scala.inline
-  implicit class OmitModalStaticFunctionswMutableBuilder[Self <: OmitModalStaticFunctionsw] (val x: Self) extends AnyVal {
+  extension [Self <: OmitModalStaticFunctionsw](x: Self) {
     
-    @scala.inline
-    def setConfirm(value: /* props */ ModalFuncProps => Destroy): Self = StObject.set(x, "confirm", js.Any.fromFunction1(value))
+    inline def setConfirm(value: /* props */ ModalFuncProps => Destroy): Self = StObject.set(x, "confirm", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setError(value: /* props */ ModalFuncProps => Destroy): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: /* props */ ModalFuncProps => Destroy): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInfo(value: /* props */ ModalFuncProps => Destroy): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
+    inline def setInfo(value: /* props */ ModalFuncProps => Destroy): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccess(value: /* props */ ModalFuncProps => Destroy): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* props */ ModalFuncProps => Destroy): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWarning(value: /* props */ ModalFuncProps => Destroy): Self = StObject.set(x, "warning", js.Any.fromFunction1(value))
+    inline def setWarning(value: /* props */ ModalFuncProps => Destroy): Self = StObject.set(x, "warning", js.Any.fromFunction1(value))
   }
 }

@@ -18,22 +18,17 @@ trait GetLocationConfig
 }
 object GetLocationConfig {
   
-  @scala.inline
-  def apply(success: Location => Unit): GetLocationConfig = {
+  inline def apply(success: Location => Unit): GetLocationConfig = {
     val __obj = js.Dynamic.literal(success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[GetLocationConfig]
   }
   
-  @scala.inline
-  implicit class GetLocationConfigMutableBuilder[Self <: GetLocationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GetLocationConfig](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: Location => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: Location => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

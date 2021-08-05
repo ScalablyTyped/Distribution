@@ -20,25 +20,19 @@ trait RevokeCertificateRequest extends StObject {
 }
 object RevokeCertificateRequest {
   
-  @scala.inline
-  def apply(): RevokeCertificateRequest = {
+  inline def apply(): RevokeCertificateRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RevokeCertificateRequest]
   }
   
-  @scala.inline
-  implicit class RevokeCertificateRequestMutableBuilder[Self <: RevokeCertificateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RevokeCertificateRequest](x: Self) {
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

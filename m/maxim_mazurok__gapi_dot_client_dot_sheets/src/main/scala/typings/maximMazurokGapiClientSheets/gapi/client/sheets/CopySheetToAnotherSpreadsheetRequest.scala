@@ -11,19 +11,15 @@ trait CopySheetToAnotherSpreadsheetRequest extends StObject {
 }
 object CopySheetToAnotherSpreadsheetRequest {
   
-  @scala.inline
-  def apply(): CopySheetToAnotherSpreadsheetRequest = {
+  inline def apply(): CopySheetToAnotherSpreadsheetRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CopySheetToAnotherSpreadsheetRequest]
   }
   
-  @scala.inline
-  implicit class CopySheetToAnotherSpreadsheetRequestMutableBuilder[Self <: CopySheetToAnotherSpreadsheetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CopySheetToAnotherSpreadsheetRequest](x: Self) {
     
-    @scala.inline
-    def setDestinationSpreadsheetId(value: String): Self = StObject.set(x, "destinationSpreadsheetId", value.asInstanceOf[js.Any])
+    inline def setDestinationSpreadsheetId(value: String): Self = StObject.set(x, "destinationSpreadsheetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationSpreadsheetIdUndefined: Self = StObject.set(x, "destinationSpreadsheetId", js.undefined)
+    inline def setDestinationSpreadsheetIdUndefined: Self = StObject.set(x, "destinationSpreadsheetId", js.undefined)
   }
 }

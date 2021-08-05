@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Encoding extends StObject
 object Encoding {
   
-  @scala.inline
-  def raw: raw_ = "raw".asInstanceOf[raw_]
+  inline def raw: raw_ = "raw".asInstanceOf[raw_]
   
-  @scala.inline
-  def utf8: typings.nodeForge.nodeForgeStrings.utf8 = "utf8".asInstanceOf[typings.nodeForge.nodeForgeStrings.utf8]
+  inline def utf8: typings.nodeForge.nodeForgeStrings.utf8 = "utf8".asInstanceOf[typings.nodeForge.nodeForgeStrings.utf8]
 }

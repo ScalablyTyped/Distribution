@@ -28,46 +28,33 @@ trait UploadPartOpts
 }
 object UploadPartOpts {
   
-  @scala.inline
-  def apply(data: Buffer, partNumber: Double, uploadAuthToken: String, uploadUrl: String): UploadPartOpts = {
+  inline def apply(data: Buffer, partNumber: Double, uploadAuthToken: String, uploadUrl: String): UploadPartOpts = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], partNumber = partNumber.asInstanceOf[js.Any], uploadAuthToken = uploadAuthToken.asInstanceOf[js.Any], uploadUrl = uploadUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadPartOpts]
   }
   
-  @scala.inline
-  implicit class UploadPartOptsMutableBuilder[Self <: UploadPartOpts] (val x: Self) extends AnyVal {
+  extension [Self <: UploadPartOpts](x: Self) {
     
-    @scala.inline
-    def setContentLength(value: Double): Self = StObject.set(x, "contentLength", value.asInstanceOf[js.Any])
+    inline def setContentLength(value: Double): Self = StObject.set(x, "contentLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentLengthUndefined: Self = StObject.set(x, "contentLength", js.undefined)
+    inline def setContentLengthUndefined: Self = StObject.set(x, "contentLength", js.undefined)
     
-    @scala.inline
-    def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+    inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     
-    @scala.inline
-    def setOnUploadProgress(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onUploadProgress", js.Any.fromFunction1(value))
+    inline def setOnUploadProgress(value: /* event */ js.Any => Unit): Self = StObject.set(x, "onUploadProgress", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnUploadProgressNull: Self = StObject.set(x, "onUploadProgress", null)
+    inline def setOnUploadProgressNull: Self = StObject.set(x, "onUploadProgress", null)
     
-    @scala.inline
-    def setOnUploadProgressUndefined: Self = StObject.set(x, "onUploadProgress", js.undefined)
+    inline def setOnUploadProgressUndefined: Self = StObject.set(x, "onUploadProgress", js.undefined)
     
-    @scala.inline
-    def setPartNumber(value: Double): Self = StObject.set(x, "partNumber", value.asInstanceOf[js.Any])
+    inline def setPartNumber(value: Double): Self = StObject.set(x, "partNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadAuthToken(value: String): Self = StObject.set(x, "uploadAuthToken", value.asInstanceOf[js.Any])
+    inline def setUploadAuthToken(value: String): Self = StObject.set(x, "uploadAuthToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadUrl(value: String): Self = StObject.set(x, "uploadUrl", value.asInstanceOf[js.Any])
+    inline def setUploadUrl(value: String): Self = StObject.set(x, "uploadUrl", value.asInstanceOf[js.Any])
   }
 }

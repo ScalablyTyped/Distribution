@@ -20,8 +20,7 @@ trait ValidationOptions extends StObject {
 }
 object ValidationOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     setAsDefault: () => ValidationOptions,
     `using`: ValidationOptionsConfiguration => ValidationOptions,
     validateOnAttach: Boolean,
@@ -34,25 +33,18 @@ object ValidationOptions {
     __obj.asInstanceOf[ValidationOptions]
   }
   
-  @scala.inline
-  implicit class ValidationOptionsMutableBuilder[Self <: ValidationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ValidationOptions](x: Self) {
     
-    @scala.inline
-    def setSetAsDefault(value: () => ValidationOptions): Self = StObject.set(x, "setAsDefault", js.Any.fromFunction0(value))
+    inline def setSetAsDefault(value: () => ValidationOptions): Self = StObject.set(x, "setAsDefault", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUsing(value: ValidationOptionsConfiguration => ValidationOptions): Self = StObject.set(x, "using", js.Any.fromFunction1(value))
+    inline def setUsing(value: ValidationOptionsConfiguration => ValidationOptions): Self = StObject.set(x, "using", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValidateOnAttach(value: Boolean): Self = StObject.set(x, "validateOnAttach", value.asInstanceOf[js.Any])
+    inline def setValidateOnAttach(value: Boolean): Self = StObject.set(x, "validateOnAttach", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateOnPropertyChange(value: Boolean): Self = StObject.set(x, "validateOnPropertyChange", value.asInstanceOf[js.Any])
+    inline def setValidateOnPropertyChange(value: Boolean): Self = StObject.set(x, "validateOnPropertyChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateOnQuery(value: Boolean): Self = StObject.set(x, "validateOnQuery", value.asInstanceOf[js.Any])
+    inline def setValidateOnQuery(value: Boolean): Self = StObject.set(x, "validateOnQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateOnSave(value: Boolean): Self = StObject.set(x, "validateOnSave", value.asInstanceOf[js.Any])
+    inline def setValidateOnSave(value: Boolean): Self = StObject.set(x, "validateOnSave", value.asInstanceOf[js.Any])
   }
 }

@@ -22,8 +22,7 @@ trait HistoryManager extends StObject {
 }
 object HistoryManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clearProjects: () => Unit,
     getProjects: () => js.Array[ProjectHistory],
     onDidChangeProjects: js.Function1[/* args */ Reloaded, Unit] => Disposable
@@ -32,16 +31,12 @@ object HistoryManager {
     __obj.asInstanceOf[HistoryManager]
   }
   
-  @scala.inline
-  implicit class HistoryManagerMutableBuilder[Self <: HistoryManager] (val x: Self) extends AnyVal {
+  extension [Self <: HistoryManager](x: Self) {
     
-    @scala.inline
-    def setClearProjects(value: () => Unit): Self = StObject.set(x, "clearProjects", js.Any.fromFunction0(value))
+    inline def setClearProjects(value: () => Unit): Self = StObject.set(x, "clearProjects", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetProjects(value: () => js.Array[ProjectHistory]): Self = StObject.set(x, "getProjects", js.Any.fromFunction0(value))
+    inline def setGetProjects(value: () => js.Array[ProjectHistory]): Self = StObject.set(x, "getProjects", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnDidChangeProjects(value: js.Function1[/* args */ Reloaded, Unit] => Disposable): Self = StObject.set(x, "onDidChangeProjects", js.Any.fromFunction1(value))
+    inline def setOnDidChangeProjects(value: js.Function1[/* args */ Reloaded, Unit] => Disposable): Self = StObject.set(x, "onDidChangeProjects", js.Any.fromFunction1(value))
   }
 }

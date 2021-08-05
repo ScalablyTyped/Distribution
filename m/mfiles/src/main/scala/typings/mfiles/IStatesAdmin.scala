@@ -16,8 +16,7 @@ trait IStatesAdmin extends StObject {
 }
 object IStatesAdmin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: (Double, IStateAdmin) => Unit,
     Count: Double,
     Item: Double => IStateAdmin,
@@ -27,19 +26,14 @@ object IStatesAdmin {
     __obj.asInstanceOf[IStatesAdmin]
   }
   
-  @scala.inline
-  implicit class IStatesAdminMutableBuilder[Self <: IStatesAdmin] (val x: Self) extends AnyVal {
+  extension [Self <: IStatesAdmin](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (Double, IStateAdmin) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (Double, IStateAdmin) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => IStateAdmin): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => IStateAdmin): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemove(value: Double => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: Double => Unit): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
   }
 }

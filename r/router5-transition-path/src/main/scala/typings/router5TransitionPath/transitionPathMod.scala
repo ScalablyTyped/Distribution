@@ -12,13 +12,10 @@ object transitionPathMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(toState: State): TransitionPath = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(toState.asInstanceOf[js.Any]).asInstanceOf[TransitionPath]
-  @scala.inline
-  def default(toState: State, fromState: State): TransitionPath = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(toState.asInstanceOf[js.Any], fromState.asInstanceOf[js.Any])).asInstanceOf[TransitionPath]
+  inline def default(toState: State): TransitionPath = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(toState.asInstanceOf[js.Any]).asInstanceOf[TransitionPath]
+  inline def default(toState: State, fromState: State): TransitionPath = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(toState.asInstanceOf[js.Any], fromState.asInstanceOf[js.Any])).asInstanceOf[TransitionPath]
   
-  @scala.inline
-  def nameToIDs(name: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("nameToIDs")(name.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def nameToIDs(name: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("nameToIDs")(name.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   type SegementParams = StringDictionary[String]
   
@@ -34,29 +31,22 @@ object transitionPathMod {
   }
   object State {
     
-    @scala.inline
-    def apply(name: String): State = {
+    inline def apply(name: String): State = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setMeta(value: Options): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: Options): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
+      inline def setMetaUndefined: Self = StObject.set(x, "meta", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     }
   }
   
@@ -70,29 +60,22 @@ object transitionPathMod {
   }
   object TransitionPath {
     
-    @scala.inline
-    def apply(intersection: String, toActivate: js.Array[String], toDeactivate: js.Array[String]): TransitionPath = {
+    inline def apply(intersection: String, toActivate: js.Array[String], toDeactivate: js.Array[String]): TransitionPath = {
       val __obj = js.Dynamic.literal(intersection = intersection.asInstanceOf[js.Any], toActivate = toActivate.asInstanceOf[js.Any], toDeactivate = toDeactivate.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransitionPath]
     }
     
-    @scala.inline
-    implicit class TransitionPathMutableBuilder[Self <: TransitionPath] (val x: Self) extends AnyVal {
+    extension [Self <: TransitionPath](x: Self) {
       
-      @scala.inline
-      def setIntersection(value: String): Self = StObject.set(x, "intersection", value.asInstanceOf[js.Any])
+      inline def setIntersection(value: String): Self = StObject.set(x, "intersection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToActivate(value: js.Array[String]): Self = StObject.set(x, "toActivate", value.asInstanceOf[js.Any])
+      inline def setToActivate(value: js.Array[String]): Self = StObject.set(x, "toActivate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToActivateVarargs(value: String*): Self = StObject.set(x, "toActivate", js.Array(value :_*))
+      inline def setToActivateVarargs(value: String*): Self = StObject.set(x, "toActivate", js.Array(value :_*))
       
-      @scala.inline
-      def setToDeactivate(value: js.Array[String]): Self = StObject.set(x, "toDeactivate", value.asInstanceOf[js.Any])
+      inline def setToDeactivate(value: js.Array[String]): Self = StObject.set(x, "toDeactivate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToDeactivateVarargs(value: String*): Self = StObject.set(x, "toDeactivate", js.Array(value :_*))
+      inline def setToDeactivateVarargs(value: String*): Self = StObject.set(x, "toDeactivate", js.Array(value :_*))
     }
   }
 }

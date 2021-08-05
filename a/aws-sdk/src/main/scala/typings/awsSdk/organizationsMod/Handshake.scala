@@ -48,67 +48,47 @@ trait Handshake extends StObject {
 }
 object Handshake {
   
-  @scala.inline
-  def apply(): Handshake = {
+  inline def apply(): Handshake = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Handshake]
   }
   
-  @scala.inline
-  implicit class HandshakeMutableBuilder[Self <: Handshake] (val x: Self) extends AnyVal {
+  extension [Self <: Handshake](x: Self) {
     
-    @scala.inline
-    def setAction(value: ActionType): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: ActionType): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
     
-    @scala.inline
-    def setArn(value: HandshakeArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: HandshakeArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setExpirationTimestamp(value: Timestamp): Self = StObject.set(x, "ExpirationTimestamp", value.asInstanceOf[js.Any])
+    inline def setExpirationTimestamp(value: Timestamp): Self = StObject.set(x, "ExpirationTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationTimestampUndefined: Self = StObject.set(x, "ExpirationTimestamp", js.undefined)
+    inline def setExpirationTimestampUndefined: Self = StObject.set(x, "ExpirationTimestamp", js.undefined)
     
-    @scala.inline
-    def setId(value: HandshakeId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: HandshakeId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setParties(value: HandshakeParties): Self = StObject.set(x, "Parties", value.asInstanceOf[js.Any])
+    inline def setParties(value: HandshakeParties): Self = StObject.set(x, "Parties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartiesUndefined: Self = StObject.set(x, "Parties", js.undefined)
+    inline def setPartiesUndefined: Self = StObject.set(x, "Parties", js.undefined)
     
-    @scala.inline
-    def setPartiesVarargs(value: HandshakeParty*): Self = StObject.set(x, "Parties", js.Array(value :_*))
+    inline def setPartiesVarargs(value: HandshakeParty*): Self = StObject.set(x, "Parties", js.Array(value :_*))
     
-    @scala.inline
-    def setRequestedTimestamp(value: Timestamp): Self = StObject.set(x, "RequestedTimestamp", value.asInstanceOf[js.Any])
+    inline def setRequestedTimestamp(value: Timestamp): Self = StObject.set(x, "RequestedTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedTimestampUndefined: Self = StObject.set(x, "RequestedTimestamp", js.undefined)
+    inline def setRequestedTimestampUndefined: Self = StObject.set(x, "RequestedTimestamp", js.undefined)
     
-    @scala.inline
-    def setResources(value: HandshakeResources): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: HandshakeResources): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesUndefined: Self = StObject.set(x, "Resources", js.undefined)
+    inline def setResourcesUndefined: Self = StObject.set(x, "Resources", js.undefined)
     
-    @scala.inline
-    def setResourcesVarargs(value: HandshakeResource*): Self = StObject.set(x, "Resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: HandshakeResource*): Self = StObject.set(x, "Resources", js.Array(value :_*))
     
-    @scala.inline
-    def setState(value: HandshakeState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: HandshakeState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

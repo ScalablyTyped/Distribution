@@ -23,31 +23,23 @@ trait GetCredentialReportResponse extends StObject {
 }
 object GetCredentialReportResponse {
   
-  @scala.inline
-  def apply(): GetCredentialReportResponse = {
+  inline def apply(): GetCredentialReportResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetCredentialReportResponse]
   }
   
-  @scala.inline
-  implicit class GetCredentialReportResponseMutableBuilder[Self <: GetCredentialReportResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetCredentialReportResponse](x: Self) {
     
-    @scala.inline
-    def setContent(value: ReportContentType): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    inline def setContent(value: ReportContentType): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
     
-    @scala.inline
-    def setGeneratedTime(value: dateType): Self = StObject.set(x, "GeneratedTime", value.asInstanceOf[js.Any])
+    inline def setGeneratedTime(value: dateType): Self = StObject.set(x, "GeneratedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeneratedTimeUndefined: Self = StObject.set(x, "GeneratedTime", js.undefined)
+    inline def setGeneratedTimeUndefined: Self = StObject.set(x, "GeneratedTime", js.undefined)
     
-    @scala.inline
-    def setReportFormat(value: ReportFormatType): Self = StObject.set(x, "ReportFormat", value.asInstanceOf[js.Any])
+    inline def setReportFormat(value: ReportFormatType): Self = StObject.set(x, "ReportFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportFormatUndefined: Self = StObject.set(x, "ReportFormat", js.undefined)
+    inline def setReportFormatUndefined: Self = StObject.set(x, "ReportFormat", js.undefined)
   }
 }

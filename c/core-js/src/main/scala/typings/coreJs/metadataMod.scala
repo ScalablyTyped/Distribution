@@ -51,8 +51,7 @@ object metadataMod {
     * ```
     */
   /* was `typeof core.Reflect.metadata` */
-  @scala.inline
-  def apply(metadataKey: js.Any, metadataValue: js.Any): FnCall = (^.asInstanceOf[js.Dynamic].apply(metadataKey.asInstanceOf[js.Any], metadataValue.asInstanceOf[js.Any])).asInstanceOf[FnCall]
+  inline def apply(metadataKey: js.Any, metadataValue: js.Any): FnCall = (^.asInstanceOf[js.Dynamic].apply(metadataKey.asInstanceOf[js.Any], metadataValue.asInstanceOf[js.Any])).asInstanceOf[FnCall]
   
   @JSImport("core-js/library/fn/reflect/es7/metadata'", JSImport.Namespace)
   @js.native

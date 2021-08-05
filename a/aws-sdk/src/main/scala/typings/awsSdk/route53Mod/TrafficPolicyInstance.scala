@@ -53,8 +53,7 @@ trait TrafficPolicyInstance extends StObject {
 }
 object TrafficPolicyInstance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     HostedZoneId: ResourceId,
     Id: TrafficPolicyInstanceId,
     Message: Message,
@@ -69,34 +68,24 @@ object TrafficPolicyInstance {
     __obj.asInstanceOf[TrafficPolicyInstance]
   }
   
-  @scala.inline
-  implicit class TrafficPolicyInstanceMutableBuilder[Self <: TrafficPolicyInstance] (val x: Self) extends AnyVal {
+  extension [Self <: TrafficPolicyInstance](x: Self) {
     
-    @scala.inline
-    def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
+    inline def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: TrafficPolicyInstanceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: TrafficPolicyInstanceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: Message): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Message): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: DNSName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: DNSName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: TrafficPolicyInstanceState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: TrafficPolicyInstanceState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTTL(value: TTL): Self = StObject.set(x, "TTL", value.asInstanceOf[js.Any])
+    inline def setTTL(value: TTL): Self = StObject.set(x, "TTL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficPolicyId(value: TrafficPolicyId): Self = StObject.set(x, "TrafficPolicyId", value.asInstanceOf[js.Any])
+    inline def setTrafficPolicyId(value: TrafficPolicyId): Self = StObject.set(x, "TrafficPolicyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficPolicyType(value: RRType): Self = StObject.set(x, "TrafficPolicyType", value.asInstanceOf[js.Any])
+    inline def setTrafficPolicyType(value: RRType): Self = StObject.set(x, "TrafficPolicyType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficPolicyVersion(value: TrafficPolicyVersion): Self = StObject.set(x, "TrafficPolicyVersion", value.asInstanceOf[js.Any])
+    inline def setTrafficPolicyVersion(value: TrafficPolicyVersion): Self = StObject.set(x, "TrafficPolicyVersion", value.asInstanceOf[js.Any])
   }
 }

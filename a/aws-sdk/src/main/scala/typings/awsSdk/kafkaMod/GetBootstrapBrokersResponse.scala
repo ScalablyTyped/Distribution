@@ -29,31 +29,23 @@ trait GetBootstrapBrokersResponse extends StObject {
 }
 object GetBootstrapBrokersResponse {
   
-  @scala.inline
-  def apply(): GetBootstrapBrokersResponse = {
+  inline def apply(): GetBootstrapBrokersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBootstrapBrokersResponse]
   }
   
-  @scala.inline
-  implicit class GetBootstrapBrokersResponseMutableBuilder[Self <: GetBootstrapBrokersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetBootstrapBrokersResponse](x: Self) {
     
-    @scala.inline
-    def setBootstrapBrokerString(value: string): Self = StObject.set(x, "BootstrapBrokerString", value.asInstanceOf[js.Any])
+    inline def setBootstrapBrokerString(value: string): Self = StObject.set(x, "BootstrapBrokerString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBootstrapBrokerStringSaslScram(value: string): Self = StObject.set(x, "BootstrapBrokerStringSaslScram", value.asInstanceOf[js.Any])
+    inline def setBootstrapBrokerStringSaslScram(value: string): Self = StObject.set(x, "BootstrapBrokerStringSaslScram", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBootstrapBrokerStringSaslScramUndefined: Self = StObject.set(x, "BootstrapBrokerStringSaslScram", js.undefined)
+    inline def setBootstrapBrokerStringSaslScramUndefined: Self = StObject.set(x, "BootstrapBrokerStringSaslScram", js.undefined)
     
-    @scala.inline
-    def setBootstrapBrokerStringTls(value: string): Self = StObject.set(x, "BootstrapBrokerStringTls", value.asInstanceOf[js.Any])
+    inline def setBootstrapBrokerStringTls(value: string): Self = StObject.set(x, "BootstrapBrokerStringTls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBootstrapBrokerStringTlsUndefined: Self = StObject.set(x, "BootstrapBrokerStringTls", js.undefined)
+    inline def setBootstrapBrokerStringTlsUndefined: Self = StObject.set(x, "BootstrapBrokerStringTls", js.undefined)
     
-    @scala.inline
-    def setBootstrapBrokerStringUndefined: Self = StObject.set(x, "BootstrapBrokerString", js.undefined)
+    inline def setBootstrapBrokerStringUndefined: Self = StObject.set(x, "BootstrapBrokerString", js.undefined)
   }
 }

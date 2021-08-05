@@ -15,16 +15,13 @@ trait JSONSupport extends StObject {
 }
 object JSONSupport {
   
-  @scala.inline
-  def apply(toJSON: () => js.Any): JSONSupport = {
+  inline def apply(toJSON: () => js.Any): JSONSupport = {
     val __obj = js.Dynamic.literal(toJSON = js.Any.fromFunction0(toJSON))
     __obj.asInstanceOf[JSONSupport]
   }
   
-  @scala.inline
-  implicit class JSONSupportMutableBuilder[Self <: JSONSupport] (val x: Self) extends AnyVal {
+  extension [Self <: JSONSupport](x: Self) {
     
-    @scala.inline
-    def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

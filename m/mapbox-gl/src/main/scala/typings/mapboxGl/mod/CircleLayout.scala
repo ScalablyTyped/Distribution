@@ -13,19 +13,15 @@ trait CircleLayout
 }
 object CircleLayout {
   
-  @scala.inline
-  def apply(): CircleLayout = {
+  inline def apply(): CircleLayout = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CircleLayout]
   }
   
-  @scala.inline
-  implicit class CircleLayoutMutableBuilder[Self <: CircleLayout] (val x: Self) extends AnyVal {
+  extension [Self <: CircleLayout](x: Self) {
     
-    @scala.inline
-    def `setCircle-sort-key`(value: Double | Expression): Self = StObject.set(x, "circle-sort-key", value.asInstanceOf[js.Any])
+    inline def `setCircle-sort-key`(value: Double | Expression): Self = StObject.set(x, "circle-sort-key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setCircle-sort-keyUndefined`: Self = StObject.set(x, "circle-sort-key", js.undefined)
+    inline def `setCircle-sort-keyUndefined`: Self = StObject.set(x, "circle-sort-key", js.undefined)
   }
 }

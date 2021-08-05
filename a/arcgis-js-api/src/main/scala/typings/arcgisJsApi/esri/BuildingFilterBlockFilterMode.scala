@@ -29,8 +29,7 @@ trait BuildingFilterBlockFilterMode
 }
 object BuildingFilterBlockFilterMode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -39,19 +38,14 @@ object BuildingFilterBlockFilterMode {
     __obj.asInstanceOf[BuildingFilterBlockFilterMode]
   }
   
-  @scala.inline
-  implicit class BuildingFilterBlockFilterModeMutableBuilder[Self <: BuildingFilterBlockFilterMode] (val x: Self) extends AnyVal {
+  extension [Self <: BuildingFilterBlockFilterMode](x: Self) {
     
-    @scala.inline
-    def setEdges(value: SolidEdges3D | SketchEdges3D): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
+    inline def setEdges(value: SolidEdges3D | SketchEdges3D): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgesUndefined: Self = StObject.set(x, "edges", js.undefined)
+    inline def setEdgesUndefined: Self = StObject.set(x, "edges", js.undefined)
     
-    @scala.inline
-    def setType(value: solid | `wire-frame` | `x-ray`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: solid | `wire-frame` | `x-ray`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

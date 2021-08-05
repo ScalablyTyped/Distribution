@@ -18,16 +18,13 @@ trait ASPxClientRichEditKeyUpEventArgs
 }
 object ASPxClientRichEditKeyUpEventArgs {
   
-  @scala.inline
-  def apply(htmlEvent: js.Any): ASPxClientRichEditKeyUpEventArgs = {
+  inline def apply(htmlEvent: js.Any): ASPxClientRichEditKeyUpEventArgs = {
     val __obj = js.Dynamic.literal(htmlEvent = htmlEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientRichEditKeyUpEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientRichEditKeyUpEventArgsMutableBuilder[Self <: ASPxClientRichEditKeyUpEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientRichEditKeyUpEventArgs](x: Self) {
     
-    @scala.inline
-    def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    inline def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
   }
 }

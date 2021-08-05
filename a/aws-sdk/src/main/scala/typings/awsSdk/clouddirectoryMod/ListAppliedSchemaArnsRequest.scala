@@ -28,34 +28,25 @@ trait ListAppliedSchemaArnsRequest extends StObject {
 }
 object ListAppliedSchemaArnsRequest {
   
-  @scala.inline
-  def apply(DirectoryArn: Arn): ListAppliedSchemaArnsRequest = {
+  inline def apply(DirectoryArn: Arn): ListAppliedSchemaArnsRequest = {
     val __obj = js.Dynamic.literal(DirectoryArn = DirectoryArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAppliedSchemaArnsRequest]
   }
   
-  @scala.inline
-  implicit class ListAppliedSchemaArnsRequestMutableBuilder[Self <: ListAppliedSchemaArnsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListAppliedSchemaArnsRequest](x: Self) {
     
-    @scala.inline
-    def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
+    inline def setDirectoryArn(value: Arn): Self = StObject.set(x, "DirectoryArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: NumberResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: NumberResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSchemaArn(value: Arn): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
+    inline def setSchemaArn(value: Arn): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaArnUndefined: Self = StObject.set(x, "SchemaArn", js.undefined)
+    inline def setSchemaArnUndefined: Self = StObject.set(x, "SchemaArn", js.undefined)
   }
 }

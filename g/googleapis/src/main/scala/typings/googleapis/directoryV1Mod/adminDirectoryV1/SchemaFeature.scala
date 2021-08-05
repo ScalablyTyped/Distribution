@@ -26,31 +26,23 @@ trait SchemaFeature extends StObject {
 }
 object SchemaFeature {
   
-  @scala.inline
-  def apply(): SchemaFeature = {
+  inline def apply(): SchemaFeature = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFeature]
   }
   
-  @scala.inline
-  implicit class SchemaFeatureMutableBuilder[Self <: SchemaFeature] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFeature](x: Self) {
     
-    @scala.inline
-    def setEtags(value: String): Self = StObject.set(x, "etags", value.asInstanceOf[js.Any])
+    inline def setEtags(value: String): Self = StObject.set(x, "etags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagsUndefined: Self = StObject.set(x, "etags", js.undefined)
+    inline def setEtagsUndefined: Self = StObject.set(x, "etags", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

@@ -23,25 +23,19 @@ trait StepConfig extends StObject {
 }
 object StepConfig {
   
-  @scala.inline
-  def apply(HadoopJarStep: HadoopJarStepConfig, Name: XmlStringMaxLen256): StepConfig = {
+  inline def apply(HadoopJarStep: HadoopJarStepConfig, Name: XmlStringMaxLen256): StepConfig = {
     val __obj = js.Dynamic.literal(HadoopJarStep = HadoopJarStep.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[StepConfig]
   }
   
-  @scala.inline
-  implicit class StepConfigMutableBuilder[Self <: StepConfig] (val x: Self) extends AnyVal {
+  extension [Self <: StepConfig](x: Self) {
     
-    @scala.inline
-    def setActionOnFailure(value: ActionOnFailure): Self = StObject.set(x, "ActionOnFailure", value.asInstanceOf[js.Any])
+    inline def setActionOnFailure(value: ActionOnFailure): Self = StObject.set(x, "ActionOnFailure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionOnFailureUndefined: Self = StObject.set(x, "ActionOnFailure", js.undefined)
+    inline def setActionOnFailureUndefined: Self = StObject.set(x, "ActionOnFailure", js.undefined)
     
-    @scala.inline
-    def setHadoopJarStep(value: HadoopJarStepConfig): Self = StObject.set(x, "HadoopJarStep", value.asInstanceOf[js.Any])
+    inline def setHadoopJarStep(value: HadoopJarStepConfig): Self = StObject.set(x, "HadoopJarStep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: XmlStringMaxLen256): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: XmlStringMaxLen256): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

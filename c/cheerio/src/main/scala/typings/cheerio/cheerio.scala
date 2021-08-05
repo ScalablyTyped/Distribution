@@ -293,80 +293,56 @@ object cheerio {
   }
   object CheerioParserOptions {
     
-    @scala.inline
-    def apply(): CheerioParserOptions = {
+    inline def apply(): CheerioParserOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CheerioParserOptions]
     }
     
-    @scala.inline
-    implicit class CheerioParserOptionsMutableBuilder[Self <: CheerioParserOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CheerioParserOptions](x: Self) {
       
-      @scala.inline
-      def setDecodeEntities(value: Boolean): Self = StObject.set(x, "decodeEntities", value.asInstanceOf[js.Any])
+      inline def setDecodeEntities(value: Boolean): Self = StObject.set(x, "decodeEntities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecodeEntitiesUndefined: Self = StObject.set(x, "decodeEntities", js.undefined)
+      inline def setDecodeEntitiesUndefined: Self = StObject.set(x, "decodeEntities", js.undefined)
       
-      @scala.inline
-      def setIgnoreWhitespace(value: Boolean): Self = StObject.set(x, "ignoreWhitespace", value.asInstanceOf[js.Any])
+      inline def setIgnoreWhitespace(value: Boolean): Self = StObject.set(x, "ignoreWhitespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreWhitespaceUndefined: Self = StObject.set(x, "ignoreWhitespace", js.undefined)
+      inline def setIgnoreWhitespaceUndefined: Self = StObject.set(x, "ignoreWhitespace", js.undefined)
       
-      @scala.inline
-      def setLowerCaseAttributeNames(value: Boolean): Self = StObject.set(x, "lowerCaseAttributeNames", value.asInstanceOf[js.Any])
+      inline def setLowerCaseAttributeNames(value: Boolean): Self = StObject.set(x, "lowerCaseAttributeNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLowerCaseAttributeNamesUndefined: Self = StObject.set(x, "lowerCaseAttributeNames", js.undefined)
+      inline def setLowerCaseAttributeNamesUndefined: Self = StObject.set(x, "lowerCaseAttributeNames", js.undefined)
       
-      @scala.inline
-      def setLowerCaseTags(value: Boolean): Self = StObject.set(x, "lowerCaseTags", value.asInstanceOf[js.Any])
+      inline def setLowerCaseTags(value: Boolean): Self = StObject.set(x, "lowerCaseTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLowerCaseTagsUndefined: Self = StObject.set(x, "lowerCaseTags", js.undefined)
+      inline def setLowerCaseTagsUndefined: Self = StObject.set(x, "lowerCaseTags", js.undefined)
       
-      @scala.inline
-      def setNormalizeWhitespace(value: Boolean): Self = StObject.set(x, "normalizeWhitespace", value.asInstanceOf[js.Any])
+      inline def setNormalizeWhitespace(value: Boolean): Self = StObject.set(x, "normalizeWhitespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalizeWhitespaceUndefined: Self = StObject.set(x, "normalizeWhitespace", js.undefined)
+      inline def setNormalizeWhitespaceUndefined: Self = StObject.set(x, "normalizeWhitespace", js.undefined)
       
-      @scala.inline
-      def setRecognizeCDATA(value: Boolean): Self = StObject.set(x, "recognizeCDATA", value.asInstanceOf[js.Any])
+      inline def setRecognizeCDATA(value: Boolean): Self = StObject.set(x, "recognizeCDATA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecognizeCDATAUndefined: Self = StObject.set(x, "recognizeCDATA", js.undefined)
+      inline def setRecognizeCDATAUndefined: Self = StObject.set(x, "recognizeCDATA", js.undefined)
       
-      @scala.inline
-      def setRecognizeSelfClosing(value: Boolean): Self = StObject.set(x, "recognizeSelfClosing", value.asInstanceOf[js.Any])
+      inline def setRecognizeSelfClosing(value: Boolean): Self = StObject.set(x, "recognizeSelfClosing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecognizeSelfClosingUndefined: Self = StObject.set(x, "recognizeSelfClosing", js.undefined)
+      inline def setRecognizeSelfClosingUndefined: Self = StObject.set(x, "recognizeSelfClosing", js.undefined)
       
-      @scala.inline
-      def setWithEndIndices(value: Boolean): Self = StObject.set(x, "withEndIndices", value.asInstanceOf[js.Any])
+      inline def setWithEndIndices(value: Boolean): Self = StObject.set(x, "withEndIndices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithEndIndicesUndefined: Self = StObject.set(x, "withEndIndices", js.undefined)
+      inline def setWithEndIndicesUndefined: Self = StObject.set(x, "withEndIndices", js.undefined)
       
-      @scala.inline
-      def setWithStartIndices(value: Boolean): Self = StObject.set(x, "withStartIndices", value.asInstanceOf[js.Any])
+      inline def setWithStartIndices(value: Boolean): Self = StObject.set(x, "withStartIndices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithStartIndicesUndefined: Self = StObject.set(x, "withStartIndices", js.undefined)
+      inline def setWithStartIndicesUndefined: Self = StObject.set(x, "withStartIndices", js.undefined)
       
-      @scala.inline
-      def setXmlMode(value: Boolean): Self = StObject.set(x, "xmlMode", value.asInstanceOf[js.Any])
+      inline def setXmlMode(value: Boolean): Self = StObject.set(x, "xmlMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXmlModeUndefined: Self = StObject.set(x, "xmlMode", js.undefined)
+      inline def setXmlModeUndefined: Self = StObject.set(x, "xmlMode", js.undefined)
       
-      @scala.inline
-      def set_useHtmlParser2(value: Boolean): Self = StObject.set(x, "_useHtmlParser2", value.asInstanceOf[js.Any])
+      inline def set_useHtmlParser2(value: Boolean): Self = StObject.set(x, "_useHtmlParser2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_useHtmlParser2Undefined: Self = StObject.set(x, "_useHtmlParser2", js.undefined)
+      inline def set_useHtmlParser2Undefined: Self = StObject.set(x, "_useHtmlParser2", js.undefined)
     }
   }
   
@@ -410,8 +386,7 @@ object cheerio {
   }
   object Element {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attribs: StringDictionary[String],
       childNodes: js.Array[Element],
       children: js.Array[Element],
@@ -433,71 +408,49 @@ object cheerio {
       __obj.asInstanceOf[Element]
     }
     
-    @scala.inline
-    implicit class ElementMutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
+    extension [Self <: Element](x: Self) {
       
-      @scala.inline
-      def setAttribs(value: StringDictionary[String]): Self = StObject.set(x, "attribs", value.asInstanceOf[js.Any])
+      inline def setAttribs(value: StringDictionary[String]): Self = StObject.set(x, "attribs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildNodes(value: js.Array[Element]): Self = StObject.set(x, "childNodes", value.asInstanceOf[js.Any])
+      inline def setChildNodes(value: js.Array[Element]): Self = StObject.set(x, "childNodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildNodesVarargs(value: Element*): Self = StObject.set(x, "childNodes", js.Array(value :_*))
+      inline def setChildNodesVarargs(value: Element*): Self = StObject.set(x, "childNodes", js.Array(value :_*))
       
-      @scala.inline
-      def setChildren(value: js.Array[Element]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[Element]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: Element*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setFirstChild(value: Element): Self = StObject.set(x, "firstChild", value.asInstanceOf[js.Any])
+      inline def setFirstChild(value: Element): Self = StObject.set(x, "firstChild", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastChild(value: Element): Self = StObject.set(x, "lastChild", value.asInstanceOf[js.Any])
+      inline def setLastChild(value: Element): Self = StObject.set(x, "lastChild", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNext(value: Element): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      inline def setNext(value: Element): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextSibling(value: Element): Self = StObject.set(x, "nextSibling", value.asInstanceOf[js.Any])
+      inline def setNextSibling(value: Element): Self = StObject.set(x, "nextSibling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeValue(value: String): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
+      inline def setNodeValue(value: String): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: Element): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: Element): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentNode(value: Element): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
+      inline def setParentNode(value: Element): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrev(value: Element): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+      inline def setPrev(value: Element): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousSibling(value: Element): Self = StObject.set(x, "previousSibling", value.asInstanceOf[js.Any])
+      inline def setPreviousSibling(value: Element): Self = StObject.set(x, "previousSibling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+      inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
+      inline def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
       
-      @scala.inline
-      def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+      inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

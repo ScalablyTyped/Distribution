@@ -14,16 +14,13 @@ trait `1` extends StObject {
 }
 object `1` {
   
-  @scala.inline
-  def apply(align: left | right | center | SignalRef): `1` = {
+  inline def apply(align: left | right | center | SignalRef): `1` = {
     val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any])
     __obj.asInstanceOf[`1`]
   }
   
-  @scala.inline
-  implicit class `1MutableBuilder`[Self <: `1`] (val x: Self) extends AnyVal {
+  extension [Self <: `1`](x: Self) {
     
-    @scala.inline
-    def setAlign(value: left | right | center | SignalRef): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: left | right | center | SignalRef): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
   }
 }

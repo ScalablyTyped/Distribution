@@ -36,50 +36,36 @@ object tooltipMod {
   }
   object TooltipProps {
     
-    @scala.inline
-    def apply(text: String): TooltipProps = {
+    inline def apply(text: String): TooltipProps = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[TooltipProps]
     }
     
-    @scala.inline
-    implicit class TooltipPropsMutableBuilder[Self <: TooltipProps] (val x: Self) extends AnyVal {
+    extension [Self <: TooltipProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[ReactNode] | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[ReactNode] | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setMultiline(value: Boolean): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
+      inline def setMultiline(value: Boolean): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
+      inline def setMultilineUndefined: Self = StObject.set(x, "multiline", js.undefined)
       
-      @scala.inline
-      def setPlacement(value: top | right | bottom | left): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: top | right | bottom | left): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTheme(value: BaseFontSizeColors): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: BaseFontSizeColors): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     }
   }
 }

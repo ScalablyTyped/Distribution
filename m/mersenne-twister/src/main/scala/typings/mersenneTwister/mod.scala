@@ -100,8 +100,7 @@ object mod {
   }
   object MersenneTwister {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       init_seed: Double => Unit,
       random: () => Double,
       random_excl: () => Double,
@@ -114,29 +113,21 @@ object mod {
       __obj.asInstanceOf[MersenneTwister]
     }
     
-    @scala.inline
-    implicit class MersenneTwisterMutableBuilder[Self <: MersenneTwister] (val x: Self) extends AnyVal {
+    extension [Self <: MersenneTwister](x: Self) {
       
-      @scala.inline
-      def setInit_seed(value: Double => Unit): Self = StObject.set(x, "init_seed", js.Any.fromFunction1(value))
+      inline def setInit_seed(value: Double => Unit): Self = StObject.set(x, "init_seed", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRandom(value: () => Double): Self = StObject.set(x, "random", js.Any.fromFunction0(value))
+      inline def setRandom(value: () => Double): Self = StObject.set(x, "random", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRandom_excl(value: () => Double): Self = StObject.set(x, "random_excl", js.Any.fromFunction0(value))
+      inline def setRandom_excl(value: () => Double): Self = StObject.set(x, "random_excl", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRandom_incl(value: () => Double): Self = StObject.set(x, "random_incl", js.Any.fromFunction0(value))
+      inline def setRandom_incl(value: () => Double): Self = StObject.set(x, "random_incl", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRandom_int(value: () => Double): Self = StObject.set(x, "random_int", js.Any.fromFunction0(value))
+      inline def setRandom_int(value: () => Double): Self = StObject.set(x, "random_int", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRandom_int31(value: () => Double): Self = StObject.set(x, "random_int31", js.Any.fromFunction0(value))
+      inline def setRandom_int31(value: () => Double): Self = StObject.set(x, "random_int31", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRandom_long(value: () => Double): Self = StObject.set(x, "random_long", js.Any.fromFunction0(value))
+      inline def setRandom_long(value: () => Double): Self = StObject.set(x, "random_long", js.Any.fromFunction0(value))
     }
   }
 }

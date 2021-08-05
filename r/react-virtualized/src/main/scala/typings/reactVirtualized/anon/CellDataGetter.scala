@@ -48,8 +48,7 @@ trait CellDataGetter extends StObject {
 }
 object CellDataGetter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `aria-label`: Requireable[String],
     cellDataGetter: Requireable[TableCellDataGetter],
     cellRenderer: Requireable[TableCellRenderer],
@@ -73,58 +72,40 @@ object CellDataGetter {
     __obj.asInstanceOf[CellDataGetter]
   }
   
-  @scala.inline
-  implicit class CellDataGetterMutableBuilder[Self <: CellDataGetter] (val x: Self) extends AnyVal {
+  extension [Self <: CellDataGetter](x: Self) {
     
-    @scala.inline
-    def `setAria-label`(value: Requireable[String]): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
+    inline def `setAria-label`(value: Requireable[String]): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellDataGetter(value: Requireable[TableCellDataGetter]): Self = StObject.set(x, "cellDataGetter", value.asInstanceOf[js.Any])
+    inline def setCellDataGetter(value: Requireable[TableCellDataGetter]): Self = StObject.set(x, "cellDataGetter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellRenderer(value: Requireable[TableCellRenderer]): Self = StObject.set(x, "cellRenderer", value.asInstanceOf[js.Any])
+    inline def setCellRenderer(value: Requireable[TableCellRenderer]): Self = StObject.set(x, "cellRenderer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassName(value: Requireable[String]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: Requireable[String]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnData(value: Requireable[js.Object]): Self = StObject.set(x, "columnData", value.asInstanceOf[js.Any])
+    inline def setColumnData(value: Requireable[js.Object]): Self = StObject.set(x, "columnData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataKey(value: Validator[String]): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])
+    inline def setDataKey(value: Validator[String]): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableSort(value: Requireable[Boolean]): Self = StObject.set(x, "disableSort", value.asInstanceOf[js.Any])
+    inline def setDisableSort(value: Requireable[Boolean]): Self = StObject.set(x, "disableSort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlexGrow(value: Requireable[Double]): Self = StObject.set(x, "flexGrow", value.asInstanceOf[js.Any])
+    inline def setFlexGrow(value: Requireable[Double]): Self = StObject.set(x, "flexGrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlexShrink(value: Requireable[Double]): Self = StObject.set(x, "flexShrink", value.asInstanceOf[js.Any])
+    inline def setFlexShrink(value: Requireable[Double]): Self = StObject.set(x, "flexShrink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderClassName(value: Requireable[String]): Self = StObject.set(x, "headerClassName", value.asInstanceOf[js.Any])
+    inline def setHeaderClassName(value: Requireable[String]): Self = StObject.set(x, "headerClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderRenderer(value: Validator[TableHeaderRowRenderer]): Self = StObject.set(x, "headerRenderer", value.asInstanceOf[js.Any])
+    inline def setHeaderRenderer(value: Validator[TableHeaderRowRenderer]): Self = StObject.set(x, "headerRenderer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Requireable[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Requireable[String]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: Requireable[String]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: Requireable[String]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWidth(value: Requireable[Double]): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+    inline def setMaxWidth(value: Requireable[Double]): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinWidth(value: Requireable[Double]): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+    inline def setMinWidth(value: Requireable[Double]): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: Requireable[CSSProperties]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Requireable[CSSProperties]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Validator[Double]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Validator[Double]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

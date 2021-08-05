@@ -13,20 +13,17 @@ object Settings {
   @JSImport("luxon", "Settings.defaultLocale")
   @js.native
   def defaultLocale: String = js.native
-  @scala.inline
-  def defaultLocale_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultLocale")(x.asInstanceOf[js.Any])
+  inline def defaultLocale_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultLocale")(x.asInstanceOf[js.Any])
   
   @JSImport("luxon", "Settings.defaultNumberingSystem")
   @js.native
   def defaultNumberingSystem: String = js.native
-  @scala.inline
-  def defaultNumberingSystem_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultNumberingSystem")(x.asInstanceOf[js.Any])
+  inline def defaultNumberingSystem_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultNumberingSystem")(x.asInstanceOf[js.Any])
   
   @JSImport("luxon", "Settings.defaultOutputCalendar")
   @js.native
   def defaultOutputCalendar: String = js.native
-  @scala.inline
-  def defaultOutputCalendar_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOutputCalendar")(x.asInstanceOf[js.Any])
+  inline def defaultOutputCalendar_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultOutputCalendar")(x.asInstanceOf[js.Any])
   
   @JSImport("luxon", "Settings.defaultZone")
   @js.native
@@ -35,18 +32,14 @@ object Settings {
   @JSImport("luxon", "Settings.defaultZoneName")
   @js.native
   def defaultZoneName: String = js.native
-  @scala.inline
-  def defaultZoneName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultZoneName")(x.asInstanceOf[js.Any])
+  inline def defaultZoneName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultZoneName")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def now(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Double]
+  inline def now(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[Double]
   
-  @scala.inline
-  def resetCaches(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetCaches")().asInstanceOf[Unit]
+  inline def resetCaches(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetCaches")().asInstanceOf[Unit]
   
   @JSImport("luxon", "Settings.throwOnInvalid")
   @js.native
   def throwOnInvalid: Boolean = js.native
-  @scala.inline
-  def throwOnInvalid_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("throwOnInvalid")(x.asInstanceOf[js.Any])
+  inline def throwOnInvalid_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("throwOnInvalid")(x.asInstanceOf[js.Any])
 }

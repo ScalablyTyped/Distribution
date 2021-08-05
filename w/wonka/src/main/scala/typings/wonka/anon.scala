@@ -13,17 +13,14 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(): `0` = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal(tag = 1)
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setTag(value: `1`): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: `1`): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     }
   }
   
@@ -33,17 +30,14 @@ object anon {
   }
   object Tag {
     
-    @scala.inline
-    def apply(): Tag = {
+    inline def apply(): Tag = {
       val __obj = js.Dynamic.literal(tag = 0)
       __obj.asInstanceOf[Tag]
     }
     
-    @scala.inline
-    implicit class TagMutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
+    extension [Self <: Tag](x: Self) {
       
-      @scala.inline
-      def setTag(value: typings.wonka.wonkaNumbers.`0`): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: typings.wonka.wonkaNumbers.`0`): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     }
   }
 }

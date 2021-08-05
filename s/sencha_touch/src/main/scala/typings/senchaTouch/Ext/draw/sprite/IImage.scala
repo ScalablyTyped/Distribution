@@ -13,19 +13,15 @@ trait IImage
 }
 object IImage {
   
-  @scala.inline
-  def apply(): IImage = {
+  inline def apply(): IImage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IImage]
   }
   
-  @scala.inline
-  implicit class IImageMutableBuilder[Self <: IImage] (val x: Self) extends AnyVal {
+  extension [Self <: IImage](x: Self) {
     
-    @scala.inline
-    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+    inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
   }
 }

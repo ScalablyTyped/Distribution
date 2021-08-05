@@ -67,8 +67,7 @@ trait XDockableWindow
 }
 object XDockableWindow {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addDockableWindowListener: XDockableWindowListener => Unit,
     enableDocking: Boolean => Unit,
@@ -87,37 +86,26 @@ object XDockableWindow {
     __obj.asInstanceOf[XDockableWindow]
   }
   
-  @scala.inline
-  implicit class XDockableWindowMutableBuilder[Self <: XDockableWindow] (val x: Self) extends AnyVal {
+  extension [Self <: XDockableWindow](x: Self) {
     
-    @scala.inline
-    def setAddDockableWindowListener(value: XDockableWindowListener => Unit): Self = StObject.set(x, "addDockableWindowListener", js.Any.fromFunction1(value))
+    inline def setAddDockableWindowListener(value: XDockableWindowListener => Unit): Self = StObject.set(x, "addDockableWindowListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEnableDocking(value: Boolean => Unit): Self = StObject.set(x, "enableDocking", js.Any.fromFunction1(value))
+    inline def setEnableDocking(value: Boolean => Unit): Self = StObject.set(x, "enableDocking", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsFloating(value: () => Boolean): Self = StObject.set(x, "isFloating", js.Any.fromFunction0(value))
+    inline def setIsFloating(value: () => Boolean): Self = StObject.set(x, "isFloating", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsInPopupMode(value: () => Boolean): Self = StObject.set(x, "isInPopupMode", js.Any.fromFunction0(value))
+    inline def setIsInPopupMode(value: () => Boolean): Self = StObject.set(x, "isInPopupMode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsLocked(value: () => Boolean): Self = StObject.set(x, "isLocked", js.Any.fromFunction0(value))
+    inline def setIsLocked(value: () => Boolean): Self = StObject.set(x, "isLocked", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLock(value: () => Unit): Self = StObject.set(x, "lock", js.Any.fromFunction0(value))
+    inline def setLock(value: () => Unit): Self = StObject.set(x, "lock", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveDockableWindowListener(value: XDockableWindowListener => Unit): Self = StObject.set(x, "removeDockableWindowListener", js.Any.fromFunction1(value))
+    inline def setRemoveDockableWindowListener(value: XDockableWindowListener => Unit): Self = StObject.set(x, "removeDockableWindowListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFloatingMode(value: Boolean => Unit): Self = StObject.set(x, "setFloatingMode", js.Any.fromFunction1(value))
+    inline def setSetFloatingMode(value: Boolean => Unit): Self = StObject.set(x, "setFloatingMode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStartPopupMode(value: Rectangle => Unit): Self = StObject.set(x, "startPopupMode", js.Any.fromFunction1(value))
+    inline def setStartPopupMode(value: Rectangle => Unit): Self = StObject.set(x, "startPopupMode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnlock(value: () => Unit): Self = StObject.set(x, "unlock", js.Any.fromFunction0(value))
+    inline def setUnlock(value: () => Unit): Self = StObject.set(x, "unlock", js.Any.fromFunction0(value))
   }
 }

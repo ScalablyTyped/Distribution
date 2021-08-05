@@ -50,8 +50,7 @@ trait VideoFrame extends StObject {
 }
 object VideoFrame {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: () => Unit,
     copyToAsync: VideoFrame => IPromiseWithIAsyncAction,
     direct3DSurface: IDirect3DSurface,
@@ -69,40 +68,28 @@ object VideoFrame {
     __obj.asInstanceOf[VideoFrame]
   }
   
-  @scala.inline
-  implicit class VideoFrameMutableBuilder[Self <: VideoFrame] (val x: Self) extends AnyVal {
+  extension [Self <: VideoFrame](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCopyToAsync(value: VideoFrame => IPromiseWithIAsyncAction): Self = StObject.set(x, "copyToAsync", js.Any.fromFunction1(value))
+    inline def setCopyToAsync(value: VideoFrame => IPromiseWithIAsyncAction): Self = StObject.set(x, "copyToAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDirect3DSurface(value: IDirect3DSurface): Self = StObject.set(x, "direct3DSurface", value.asInstanceOf[js.Any])
+    inline def setDirect3DSurface(value: IDirect3DSurface): Self = StObject.set(x, "direct3DSurface", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendedProperties(value: IPropertySet): Self = StObject.set(x, "extendedProperties", value.asInstanceOf[js.Any])
+    inline def setExtendedProperties(value: IPropertySet): Self = StObject.set(x, "extendedProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDiscontinuous(value: Boolean): Self = StObject.set(x, "isDiscontinuous", value.asInstanceOf[js.Any])
+    inline def setIsDiscontinuous(value: Boolean): Self = StObject.set(x, "isDiscontinuous", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsReadOnly(value: Boolean): Self = StObject.set(x, "isReadOnly", value.asInstanceOf[js.Any])
+    inline def setIsReadOnly(value: Boolean): Self = StObject.set(x, "isReadOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeTime(value: Double): Self = StObject.set(x, "relativeTime", value.asInstanceOf[js.Any])
+    inline def setRelativeTime(value: Double): Self = StObject.set(x, "relativeTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoftwareBitmap(value: SoftwareBitmap): Self = StObject.set(x, "softwareBitmap", value.asInstanceOf[js.Any])
+    inline def setSoftwareBitmap(value: SoftwareBitmap): Self = StObject.set(x, "softwareBitmap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemRelativeTime(value: Double): Self = StObject.set(x, "systemRelativeTime", value.asInstanceOf[js.Any])
+    inline def setSystemRelativeTime(value: Double): Self = StObject.set(x, "systemRelativeTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

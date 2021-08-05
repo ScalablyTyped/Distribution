@@ -10,8 +10,7 @@ trait SmsBinaryMessage
      with ISmsBinaryMessage
 object SmsBinaryMessage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     format: SmsDataFormat,
     getData: () => Uint8Array,
     id: Double,

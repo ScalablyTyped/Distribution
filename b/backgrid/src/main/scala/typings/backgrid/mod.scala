@@ -223,8 +223,7 @@ object mod {
   }
   object ColumnAttr {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cell: String,
       editable: Boolean,
       formater: String,
@@ -238,32 +237,23 @@ object mod {
       __obj.asInstanceOf[ColumnAttr]
     }
     
-    @scala.inline
-    implicit class ColumnAttrMutableBuilder[Self <: ColumnAttr] (val x: Self) extends AnyVal {
+    extension [Self <: ColumnAttr](x: Self) {
       
-      @scala.inline
-      def setCell(value: String): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+      inline def setCell(value: String): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+      inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormater(value: String): Self = StObject.set(x, "formater", value.asInstanceOf[js.Any])
+      inline def setFormater(value: String): Self = StObject.set(x, "formater", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderCell(value: String): Self = StObject.set(x, "headerCell", value.asInstanceOf[js.Any])
+      inline def setHeaderCell(value: String): Self = StObject.set(x, "headerCell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderable(value: Boolean): Self = StObject.set(x, "renderable", value.asInstanceOf[js.Any])
+      inline def setRenderable(value: Boolean): Self = StObject.set(x, "renderable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortable(value: Boolean): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
+      inline def setSortable(value: Boolean): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
     }
   }
   
@@ -283,47 +273,34 @@ object mod {
   }
   object GridOptions {
     
-    @scala.inline
-    def apply(collection: Collection[Model[js.Any, ModelSetOptions, js.Object]], columns: js.Array[Column]): GridOptions = {
+    inline def apply(collection: Collection[Model[js.Any, ModelSetOptions, js.Object]], columns: js.Array[Column]): GridOptions = {
       val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any], columns = columns.asInstanceOf[js.Any])
       __obj.asInstanceOf[GridOptions]
     }
     
-    @scala.inline
-    implicit class GridOptionsMutableBuilder[Self <: GridOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GridOptions](x: Self) {
       
-      @scala.inline
-      def setBody(value: Body): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Body): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setCollection(value: Collection[Model[js.Any, ModelSetOptions, js.Object]]): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+      inline def setCollection(value: Collection[Model[js.Any, ModelSetOptions, js.Object]]): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumns(value: js.Array[Column]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: js.Array[Column]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsVarargs(value: Column*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: Column*): Self = StObject.set(x, "columns", js.Array(value :_*))
       
-      @scala.inline
-      def setFooter(value: Footer): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      inline def setFooter(value: Footer): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+      inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
       
-      @scala.inline
-      def setHeader(value: Header): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: Header): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
       
-      @scala.inline
-      def setRow(value: Row): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: Row): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+      inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
     }
   }
 }

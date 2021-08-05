@@ -20,29 +20,22 @@ trait Contains
 }
 object Contains {
   
-  @scala.inline
-  def apply(`type`: AutoSizeType): Contains = {
+  inline def apply(`type`: AutoSizeType): Contains = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Contains]
   }
   
-  @scala.inline
-  implicit class ContainsMutableBuilder[Self <: Contains] (val x: Self) extends AnyVal {
+  extension [Self <: Contains](x: Self) {
     
-    @scala.inline
-    def setContains(value: content | padding): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
+    inline def setContains(value: content | padding): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
+    inline def setContainsUndefined: Self = StObject.set(x, "contains", js.undefined)
     
-    @scala.inline
-    def setResize(value: Boolean): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
+    inline def setResize(value: Boolean): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+    inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
     
-    @scala.inline
-    def setType(value: AutoSizeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: AutoSizeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

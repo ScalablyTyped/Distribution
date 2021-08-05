@@ -19,8 +19,7 @@ object pointerMod {
     def this(opt_options: Options) = this()
   }
   
-  @scala.inline
-  def centroid(pointerEvents: js.Array[PointerEvent]): Pixel = ^.asInstanceOf[js.Dynamic].applyDynamic("centroid")(pointerEvents.asInstanceOf[js.Any]).asInstanceOf[Pixel]
+  inline def centroid(pointerEvents: js.Array[PointerEvent]): Pixel = ^.asInstanceOf[js.Dynamic].applyDynamic("centroid")(pointerEvents.asInstanceOf[js.Any]).asInstanceOf[Pixel]
   
   trait Options extends StObject {
     
@@ -38,50 +37,36 @@ object pointerMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setHandleDownEvent(value: /* p0 */ typings.ol.mapBrowserEventMod.default[UIEvent] => Boolean): Self = StObject.set(x, "handleDownEvent", js.Any.fromFunction1(value))
+      inline def setHandleDownEvent(value: /* p0 */ typings.ol.mapBrowserEventMod.default[UIEvent] => Boolean): Self = StObject.set(x, "handleDownEvent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHandleDownEventUndefined: Self = StObject.set(x, "handleDownEvent", js.undefined)
+      inline def setHandleDownEventUndefined: Self = StObject.set(x, "handleDownEvent", js.undefined)
       
-      @scala.inline
-      def setHandleDragEvent(value: /* p0 */ typings.ol.mapBrowserEventMod.default[UIEvent] => Unit): Self = StObject.set(x, "handleDragEvent", js.Any.fromFunction1(value))
+      inline def setHandleDragEvent(value: /* p0 */ typings.ol.mapBrowserEventMod.default[UIEvent] => Unit): Self = StObject.set(x, "handleDragEvent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHandleDragEventUndefined: Self = StObject.set(x, "handleDragEvent", js.undefined)
+      inline def setHandleDragEventUndefined: Self = StObject.set(x, "handleDragEvent", js.undefined)
       
-      @scala.inline
-      def setHandleEvent(value: /* p0 */ typings.ol.mapBrowserEventMod.default[UIEvent] => Boolean): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
+      inline def setHandleEvent(value: /* p0 */ typings.ol.mapBrowserEventMod.default[UIEvent] => Boolean): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHandleEventUndefined: Self = StObject.set(x, "handleEvent", js.undefined)
+      inline def setHandleEventUndefined: Self = StObject.set(x, "handleEvent", js.undefined)
       
-      @scala.inline
-      def setHandleMoveEvent(value: /* p0 */ typings.ol.mapBrowserEventMod.default[UIEvent] => Unit): Self = StObject.set(x, "handleMoveEvent", js.Any.fromFunction1(value))
+      inline def setHandleMoveEvent(value: /* p0 */ typings.ol.mapBrowserEventMod.default[UIEvent] => Unit): Self = StObject.set(x, "handleMoveEvent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHandleMoveEventUndefined: Self = StObject.set(x, "handleMoveEvent", js.undefined)
+      inline def setHandleMoveEventUndefined: Self = StObject.set(x, "handleMoveEvent", js.undefined)
       
-      @scala.inline
-      def setHandleUpEvent(value: /* p0 */ typings.ol.mapBrowserEventMod.default[UIEvent] => Boolean): Self = StObject.set(x, "handleUpEvent", js.Any.fromFunction1(value))
+      inline def setHandleUpEvent(value: /* p0 */ typings.ol.mapBrowserEventMod.default[UIEvent] => Boolean): Self = StObject.set(x, "handleUpEvent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHandleUpEventUndefined: Self = StObject.set(x, "handleUpEvent", js.undefined)
+      inline def setHandleUpEventUndefined: Self = StObject.set(x, "handleUpEvent", js.undefined)
       
-      @scala.inline
-      def setStopDown(value: /* p0 */ Boolean => Boolean): Self = StObject.set(x, "stopDown", js.Any.fromFunction1(value))
+      inline def setStopDown(value: /* p0 */ Boolean => Boolean): Self = StObject.set(x, "stopDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStopDownUndefined: Self = StObject.set(x, "stopDown", js.undefined)
+      inline def setStopDownUndefined: Self = StObject.set(x, "stopDown", js.undefined)
     }
   }
   
@@ -115,7 +100,7 @@ object pointerMod {
       */
     /* protected */ def handleUpEvent(mapBrowserEvent: typings.ol.mapBrowserEventMod.default[UIEvent]): Boolean = js.native
     
-    var handlingDownUpSequence: Boolean = js.native
+    /* protected */ var handlingDownUpSequence: Boolean = js.native
     
     /**
       * This function is used to determine if "down" events should be propagated
@@ -123,6 +108,6 @@ object pointerMod {
       */
     def stopDown(handled: Boolean): Boolean = js.native
     
-    var targetPointers: js.Array[PointerEvent] = js.native
+    /* protected */ var targetPointers: js.Array[PointerEvent] = js.native
   }
 }

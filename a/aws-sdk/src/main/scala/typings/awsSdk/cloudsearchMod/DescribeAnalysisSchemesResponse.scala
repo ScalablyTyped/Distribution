@@ -13,19 +13,15 @@ trait DescribeAnalysisSchemesResponse extends StObject {
 }
 object DescribeAnalysisSchemesResponse {
   
-  @scala.inline
-  def apply(AnalysisSchemes: AnalysisSchemeStatusList): DescribeAnalysisSchemesResponse = {
+  inline def apply(AnalysisSchemes: AnalysisSchemeStatusList): DescribeAnalysisSchemesResponse = {
     val __obj = js.Dynamic.literal(AnalysisSchemes = AnalysisSchemes.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAnalysisSchemesResponse]
   }
   
-  @scala.inline
-  implicit class DescribeAnalysisSchemesResponseMutableBuilder[Self <: DescribeAnalysisSchemesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAnalysisSchemesResponse](x: Self) {
     
-    @scala.inline
-    def setAnalysisSchemes(value: AnalysisSchemeStatusList): Self = StObject.set(x, "AnalysisSchemes", value.asInstanceOf[js.Any])
+    inline def setAnalysisSchemes(value: AnalysisSchemeStatusList): Self = StObject.set(x, "AnalysisSchemes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalysisSchemesVarargs(value: AnalysisSchemeStatus*): Self = StObject.set(x, "AnalysisSchemes", js.Array(value :_*))
+    inline def setAnalysisSchemesVarargs(value: AnalysisSchemeStatus*): Self = StObject.set(x, "AnalysisSchemes", js.Array(value :_*))
   }
 }

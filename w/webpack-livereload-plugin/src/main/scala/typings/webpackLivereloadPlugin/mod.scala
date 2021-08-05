@@ -92,62 +92,44 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAppendScriptTag(value: Boolean): Self = StObject.set(x, "appendScriptTag", value.asInstanceOf[js.Any])
+      inline def setAppendScriptTag(value: Boolean): Self = StObject.set(x, "appendScriptTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppendScriptTagUndefined: Self = StObject.set(x, "appendScriptTag", js.undefined)
+      inline def setAppendScriptTagUndefined: Self = StObject.set(x, "appendScriptTag", js.undefined)
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+      inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
       
-      @scala.inline
-      def setIgnore(value: RegExp | js.Array[RegExp]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: RegExp | js.Array[RegExp]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreNull: Self = StObject.set(x, "ignore", null)
+      inline def setIgnoreNull: Self = StObject.set(x, "ignore", null)
       
-      @scala.inline
-      def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      @scala.inline
-      def setIgnoreVarargs(value: RegExp*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: RegExp*): Self = StObject.set(x, "ignore", js.Array(value :_*))
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+      inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
       
-      @scala.inline
-      def setUseSourceHash(value: Boolean): Self = StObject.set(x, "useSourceHash", value.asInstanceOf[js.Any])
+      inline def setUseSourceHash(value: Boolean): Self = StObject.set(x, "useSourceHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseSourceHashUndefined: Self = StObject.set(x, "useSourceHash", js.undefined)
+      inline def setUseSourceHashUndefined: Self = StObject.set(x, "useSourceHash", js.undefined)
     }
   }
 }

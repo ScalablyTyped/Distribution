@@ -42,62 +42,43 @@ object badgeSelectItemMod {
   trait BadgeSelectItemSkin extends StObject
   object BadgeSelectItemSkin {
     
-    @scala.inline
-    def backgroundSecondary: typings.wixStyleReact.wixStyleReactStrings.backgroundSecondary = "backgroundSecondary".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.backgroundSecondary]
+    inline def backgroundSecondary: typings.wixStyleReact.wixStyleReactStrings.backgroundSecondary = "backgroundSecondary".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.backgroundSecondary]
     
-    @scala.inline
-    def danger: typings.wixStyleReact.wixStyleReactStrings.danger = "danger".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.danger]
+    inline def danger: typings.wixStyleReact.wixStyleReactStrings.danger = "danger".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.danger]
     
-    @scala.inline
-    def dangerMutedHover: typings.wixStyleReact.wixStyleReactStrings.dangerMutedHover = "dangerMutedHover".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.dangerMutedHover]
+    inline def dangerMutedHover: typings.wixStyleReact.wixStyleReactStrings.dangerMutedHover = "dangerMutedHover".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.dangerMutedHover]
     
-    @scala.inline
-    def general: typings.wixStyleReact.wixStyleReactStrings.general = "general".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.general]
+    inline def general: typings.wixStyleReact.wixStyleReactStrings.general = "general".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.general]
     
-    @scala.inline
-    def mainMutedHover: typings.wixStyleReact.wixStyleReactStrings.mainMutedHover = "mainMutedHover".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.mainMutedHover]
+    inline def mainMutedHover: typings.wixStyleReact.wixStyleReactStrings.mainMutedHover = "mainMutedHover".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.mainMutedHover]
     
-    @scala.inline
-    def neutral: typings.wixStyleReact.wixStyleReactStrings.neutral = "neutral".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.neutral]
+    inline def neutral: typings.wixStyleReact.wixStyleReactStrings.neutral = "neutral".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.neutral]
     
-    @scala.inline
-    def neutralDanger: typings.wixStyleReact.wixStyleReactStrings.neutralDanger = "neutralDanger".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.neutralDanger]
+    inline def neutralDanger: typings.wixStyleReact.wixStyleReactStrings.neutralDanger = "neutralDanger".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.neutralDanger]
     
-    @scala.inline
-    def neutralLight: typings.wixStyleReact.wixStyleReactStrings.neutralLight = "neutralLight".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.neutralLight]
+    inline def neutralLight: typings.wixStyleReact.wixStyleReactStrings.neutralLight = "neutralLight".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.neutralLight]
     
-    @scala.inline
-    def neutralStandard: typings.wixStyleReact.wixStyleReactStrings.neutralStandard = "neutralStandard".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.neutralStandard]
+    inline def neutralStandard: typings.wixStyleReact.wixStyleReactStrings.neutralStandard = "neutralStandard".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.neutralStandard]
     
-    @scala.inline
-    def neutralSuccess: typings.wixStyleReact.wixStyleReactStrings.neutralSuccess = "neutralSuccess".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.neutralSuccess]
+    inline def neutralSuccess: typings.wixStyleReact.wixStyleReactStrings.neutralSuccess = "neutralSuccess".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.neutralSuccess]
     
-    @scala.inline
-    def premium: typings.wixStyleReact.wixStyleReactStrings.premium = "premium".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.premium]
+    inline def premium: typings.wixStyleReact.wixStyleReactStrings.premium = "premium".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.premium]
     
-    @scala.inline
-    def primaryLightText: typings.wixStyleReact.wixStyleReactStrings.primaryLightText = "primaryLightText".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.primaryLightText]
+    inline def primaryLightText: typings.wixStyleReact.wixStyleReactStrings.primaryLightText = "primaryLightText".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.primaryLightText]
     
-    @scala.inline
-    def secondaryText: typings.wixStyleReact.wixStyleReactStrings.secondaryText = "secondaryText".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.secondaryText]
+    inline def secondaryText: typings.wixStyleReact.wixStyleReactStrings.secondaryText = "secondaryText".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.secondaryText]
     
-    @scala.inline
-    def standard: typings.wixStyleReact.wixStyleReactStrings.standard = "standard".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.standard]
+    inline def standard: typings.wixStyleReact.wixStyleReactStrings.standard = "standard".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.standard]
     
-    @scala.inline
-    def success: typings.wixStyleReact.wixStyleReactStrings.success = "success".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.success]
+    inline def success: typings.wixStyleReact.wixStyleReactStrings.success = "success".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.success]
     
-    @scala.inline
-    def successMutedHover: typings.wixStyleReact.wixStyleReactStrings.successMutedHover = "successMutedHover".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.successMutedHover]
+    inline def successMutedHover: typings.wixStyleReact.wixStyleReactStrings.successMutedHover = "successMutedHover".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.successMutedHover]
     
-    @scala.inline
-    def urgent: typings.wixStyleReact.wixStyleReactStrings.urgent = "urgent".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.urgent]
+    inline def urgent: typings.wixStyleReact.wixStyleReactStrings.urgent = "urgent".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.urgent]
     
-    @scala.inline
-    def warning: typings.wixStyleReact.wixStyleReactStrings.warning = "warning".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.warning]
+    inline def warning: typings.wixStyleReact.wixStyleReactStrings.warning = "warning".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.warning]
     
-    @scala.inline
-    def warningLight: typings.wixStyleReact.wixStyleReactStrings.warningLight = "warningLight".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.warningLight]
+    inline def warningLight: typings.wixStyleReact.wixStyleReactStrings.warningLight = "warningLight".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.warningLight]
   }
   
   trait BadgeSelectOption extends StObject {
@@ -124,68 +105,48 @@ object badgeSelectItemMod {
   }
   object BadgeSelectOption {
     
-    @scala.inline
-    def apply(id: String, skin: BadgeSkin): BadgeSelectOption = {
+    inline def apply(id: String, skin: BadgeSkin): BadgeSelectOption = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], skin = skin.asInstanceOf[js.Any])
       __obj.asInstanceOf[BadgeSelectOption]
     }
     
-    @scala.inline
-    implicit class BadgeSelectOptionMutableBuilder[Self <: BadgeSelectOption] (val x: Self) extends AnyVal {
+    extension [Self <: BadgeSelectOption](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setEllipsis(value: Boolean): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
+      inline def setEllipsis(value: Boolean): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
+      inline def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
       
-      @scala.inline
-      def setHighlighted(value: Boolean): Self = StObject.set(x, "highlighted", value.asInstanceOf[js.Any])
+      inline def setHighlighted(value: Boolean): Self = StObject.set(x, "highlighted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightedUndefined: Self = StObject.set(x, "highlighted", js.undefined)
+      inline def setHighlightedUndefined: Self = StObject.set(x, "highlighted", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+      inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
       
-      @scala.inline
-      def setSkin(value: BadgeSkin): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
+      inline def setSkin(value: BadgeSkin): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+      inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+      inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
       
-      @scala.inline
-      def setText(value: ReactNode): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: ReactNode): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
 }

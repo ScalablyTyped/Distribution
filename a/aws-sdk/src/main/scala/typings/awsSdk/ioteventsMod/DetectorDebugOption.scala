@@ -18,22 +18,17 @@ trait DetectorDebugOption extends StObject {
 }
 object DetectorDebugOption {
   
-  @scala.inline
-  def apply(detectorModelName: DetectorModelName): DetectorDebugOption = {
+  inline def apply(detectorModelName: DetectorModelName): DetectorDebugOption = {
     val __obj = js.Dynamic.literal(detectorModelName = detectorModelName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectorDebugOption]
   }
   
-  @scala.inline
-  implicit class DetectorDebugOptionMutableBuilder[Self <: DetectorDebugOption] (val x: Self) extends AnyVal {
+  extension [Self <: DetectorDebugOption](x: Self) {
     
-    @scala.inline
-    def setDetectorModelName(value: DetectorModelName): Self = StObject.set(x, "detectorModelName", value.asInstanceOf[js.Any])
+    inline def setDetectorModelName(value: DetectorModelName): Self = StObject.set(x, "detectorModelName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyValue(value: KeyValue): Self = StObject.set(x, "keyValue", value.asInstanceOf[js.Any])
+    inline def setKeyValue(value: KeyValue): Self = StObject.set(x, "keyValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyValueUndefined: Self = StObject.set(x, "keyValue", js.undefined)
+    inline def setKeyValueUndefined: Self = StObject.set(x, "keyValue", js.undefined)
   }
 }

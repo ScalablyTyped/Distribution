@@ -30,79 +30,55 @@ trait CameraOptions extends StObject {
 }
 object CameraOptions {
   
-  @scala.inline
-  def apply(): CameraOptions = {
+  inline def apply(): CameraOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CameraOptions]
   }
   
-  @scala.inline
-  implicit class CameraOptionsMutableBuilder[Self <: CameraOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CameraOptions](x: Self) {
     
-    @scala.inline
-    def setAllowEdit(value: Boolean): Self = StObject.set(x, "allowEdit", value.asInstanceOf[js.Any])
+    inline def setAllowEdit(value: Boolean): Self = StObject.set(x, "allowEdit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowEditUndefined: Self = StObject.set(x, "allowEdit", js.undefined)
+    inline def setAllowEditUndefined: Self = StObject.set(x, "allowEdit", js.undefined)
     
-    @scala.inline
-    def setCorrectOrientation(value: Boolean): Self = StObject.set(x, "correctOrientation", value.asInstanceOf[js.Any])
+    inline def setCorrectOrientation(value: Boolean): Self = StObject.set(x, "correctOrientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorrectOrientationUndefined: Self = StObject.set(x, "correctOrientation", js.undefined)
+    inline def setCorrectOrientationUndefined: Self = StObject.set(x, "correctOrientation", js.undefined)
     
-    @scala.inline
-    def setDestinationType(value: Double): Self = StObject.set(x, "destinationType", value.asInstanceOf[js.Any])
+    inline def setDestinationType(value: Double): Self = StObject.set(x, "destinationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationTypeUndefined: Self = StObject.set(x, "destinationType", js.undefined)
+    inline def setDestinationTypeUndefined: Self = StObject.set(x, "destinationType", js.undefined)
     
-    @scala.inline
-    def setEncodingType(value: Double): Self = StObject.set(x, "encodingType", value.asInstanceOf[js.Any])
+    inline def setEncodingType(value: Double): Self = StObject.set(x, "encodingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingTypeUndefined: Self = StObject.set(x, "encodingType", js.undefined)
+    inline def setEncodingTypeUndefined: Self = StObject.set(x, "encodingType", js.undefined)
     
-    @scala.inline
-    def setMediaType(value: Double): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: Double): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
+    inline def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
     
-    @scala.inline
-    def setPopoverOptions(value: CameraPopoverOptions): Self = StObject.set(x, "popoverOptions", value.asInstanceOf[js.Any])
+    inline def setPopoverOptions(value: CameraPopoverOptions): Self = StObject.set(x, "popoverOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopoverOptionsUndefined: Self = StObject.set(x, "popoverOptions", js.undefined)
+    inline def setPopoverOptionsUndefined: Self = StObject.set(x, "popoverOptions", js.undefined)
     
-    @scala.inline
-    def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+    inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
     
-    @scala.inline
-    def setSaveToPhotoAlbum(value: Boolean): Self = StObject.set(x, "saveToPhotoAlbum", value.asInstanceOf[js.Any])
+    inline def setSaveToPhotoAlbum(value: Boolean): Self = StObject.set(x, "saveToPhotoAlbum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaveToPhotoAlbumUndefined: Self = StObject.set(x, "saveToPhotoAlbum", js.undefined)
+    inline def setSaveToPhotoAlbumUndefined: Self = StObject.set(x, "saveToPhotoAlbum", js.undefined)
     
-    @scala.inline
-    def setSourceType(value: Double): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
+    inline def setSourceType(value: Double): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
+    inline def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
     
-    @scala.inline
-    def setTargetHeight(value: Double): Self = StObject.set(x, "targetHeight", value.asInstanceOf[js.Any])
+    inline def setTargetHeight(value: Double): Self = StObject.set(x, "targetHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetHeightUndefined: Self = StObject.set(x, "targetHeight", js.undefined)
+    inline def setTargetHeightUndefined: Self = StObject.set(x, "targetHeight", js.undefined)
     
-    @scala.inline
-    def setTargetWidth(value: Double): Self = StObject.set(x, "targetWidth", value.asInstanceOf[js.Any])
+    inline def setTargetWidth(value: Double): Self = StObject.set(x, "targetWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetWidthUndefined: Self = StObject.set(x, "targetWidth", js.undefined)
+    inline def setTargetWidthUndefined: Self = StObject.set(x, "targetWidth", js.undefined)
   }
 }

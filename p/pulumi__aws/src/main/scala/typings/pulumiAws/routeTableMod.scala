@@ -66,21 +66,16 @@ object routeTableMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): RouteTable = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RouteTable]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RouteTable = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RouteTable]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: RouteTableState): RouteTable = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RouteTable]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: RouteTableState, opts: CustomResourceOptions): RouteTable = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RouteTable]
+    inline def get(name: String, id: Input[ID]): RouteTable = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RouteTable]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RouteTable = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RouteTable]
+    inline def get(name: String, id: Input[ID], state: RouteTableState): RouteTable = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RouteTable]
+    inline def get(name: String, id: Input[ID], state: RouteTableState, opts: CustomResourceOptions): RouteTable = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RouteTable]
     
     /**
       * Returns true if the given object is an instance of RouteTable.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/routeTable.RouteTable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2transitgateway/routeTable.RouteTable */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2transitgateway/routeTable.RouteTable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2transitgateway/routeTable.RouteTable */ Boolean]
   }
   
   trait RouteTableArgs extends StObject {
@@ -97,23 +92,18 @@ object routeTableMod {
   }
   object RouteTableArgs {
     
-    @scala.inline
-    def apply(transitGatewayId: Input[String]): RouteTableArgs = {
+    inline def apply(transitGatewayId: Input[String]): RouteTableArgs = {
       val __obj = js.Dynamic.literal(transitGatewayId = transitGatewayId.asInstanceOf[js.Any])
       __obj.asInstanceOf[RouteTableArgs]
     }
     
-    @scala.inline
-    implicit class RouteTableArgsMutableBuilder[Self <: RouteTableArgs] (val x: Self) extends AnyVal {
+    extension [Self <: RouteTableArgs](x: Self) {
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTransitGatewayId(value: Input[String]): Self = StObject.set(x, "transitGatewayId", value.asInstanceOf[js.Any])
+      inline def setTransitGatewayId(value: Input[String]): Self = StObject.set(x, "transitGatewayId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -146,44 +136,32 @@ object routeTableMod {
   }
   object RouteTableState {
     
-    @scala.inline
-    def apply(): RouteTableState = {
+    inline def apply(): RouteTableState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RouteTableState]
     }
     
-    @scala.inline
-    implicit class RouteTableStateMutableBuilder[Self <: RouteTableState] (val x: Self) extends AnyVal {
+    extension [Self <: RouteTableState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setDefaultAssociationRouteTable(value: Input[Boolean]): Self = StObject.set(x, "defaultAssociationRouteTable", value.asInstanceOf[js.Any])
+      inline def setDefaultAssociationRouteTable(value: Input[Boolean]): Self = StObject.set(x, "defaultAssociationRouteTable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultAssociationRouteTableUndefined: Self = StObject.set(x, "defaultAssociationRouteTable", js.undefined)
+      inline def setDefaultAssociationRouteTableUndefined: Self = StObject.set(x, "defaultAssociationRouteTable", js.undefined)
       
-      @scala.inline
-      def setDefaultPropagationRouteTable(value: Input[Boolean]): Self = StObject.set(x, "defaultPropagationRouteTable", value.asInstanceOf[js.Any])
+      inline def setDefaultPropagationRouteTable(value: Input[Boolean]): Self = StObject.set(x, "defaultPropagationRouteTable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultPropagationRouteTableUndefined: Self = StObject.set(x, "defaultPropagationRouteTable", js.undefined)
+      inline def setDefaultPropagationRouteTableUndefined: Self = StObject.set(x, "defaultPropagationRouteTable", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTransitGatewayId(value: Input[String]): Self = StObject.set(x, "transitGatewayId", value.asInstanceOf[js.Any])
+      inline def setTransitGatewayId(value: Input[String]): Self = StObject.set(x, "transitGatewayId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitGatewayIdUndefined: Self = StObject.set(x, "transitGatewayId", js.undefined)
+      inline def setTransitGatewayIdUndefined: Self = StObject.set(x, "transitGatewayId", js.undefined)
     }
   }
 }

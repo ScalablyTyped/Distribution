@@ -36,61 +36,43 @@ trait BaseOptions extends StObject {
 }
 object BaseOptions {
   
-  @scala.inline
-  def apply(): BaseOptions = {
+  inline def apply(): BaseOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BaseOptions]
   }
   
-  @scala.inline
-  implicit class BaseOptionsMutableBuilder[Self <: BaseOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BaseOptions](x: Self) {
     
-    @scala.inline
-    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
-    @scala.inline
-    def setGl(value: String): Self = StObject.set(x, "gl", value.asInstanceOf[js.Any])
+    inline def setGl(value: String): Self = StObject.set(x, "gl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlUndefined: Self = StObject.set(x, "gl", js.undefined)
+    inline def setGlUndefined: Self = StObject.set(x, "gl", js.undefined)
     
-    @scala.inline
-    def setHl(value: String): Self = StObject.set(x, "hl", value.asInstanceOf[js.Any])
+    inline def setHl(value: String): Self = StObject.set(x, "hl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHlUndefined: Self = StObject.set(x, "hl", js.undefined)
+    inline def setHlUndefined: Self = StObject.set(x, "hl", js.undefined)
     
-    @scala.inline
-    def setPageEnd(value: Double): Self = StObject.set(x, "pageEnd", value.asInstanceOf[js.Any])
+    inline def setPageEnd(value: Double): Self = StObject.set(x, "pageEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageEndUndefined: Self = StObject.set(x, "pageEnd", js.undefined)
+    inline def setPageEndUndefined: Self = StObject.set(x, "pageEnd", js.undefined)
     
-    @scala.inline
-    def setPageStart(value: Double): Self = StObject.set(x, "pageStart", value.asInstanceOf[js.Any])
+    inline def setPageStart(value: Double): Self = StObject.set(x, "pageStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageStartUndefined: Self = StObject.set(x, "pageStart", js.undefined)
+    inline def setPageStartUndefined: Self = StObject.set(x, "pageStart", js.undefined)
     
-    @scala.inline
-    def setPages(value: Double): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+    inline def setPages(value: Double): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
+    inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
     
-    @scala.inline
-    def setSp(value: String): Self = StObject.set(x, "sp", value.asInstanceOf[js.Any])
+    inline def setSp(value: String): Self = StObject.set(x, "sp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpUndefined: Self = StObject.set(x, "sp", js.undefined)
+    inline def setSpUndefined: Self = StObject.set(x, "sp", js.undefined)
     
-    @scala.inline
-    def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+    inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
+    inline def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
   }
 }

@@ -12,17 +12,14 @@ object anon {
   }
   object Data {
     
-    @scala.inline
-    def apply(data: Height): Data = {
+    inline def apply(data: Height): Data = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data]
     }
     
-    @scala.inline
-    implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+    extension [Self <: Data](x: Self) {
       
-      @scala.inline
-      def setData(value: Height): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Height): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
   }
   
@@ -38,38 +35,28 @@ object anon {
   }
   object Height {
     
-    @scala.inline
-    def apply(): Height = {
+    inline def apply(): Height = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Height]
     }
     
-    @scala.inline
-    implicit class HeightMutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
+    extension [Self <: Height](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setIs_silhouette(value: Boolean): Self = StObject.set(x, "is_silhouette", value.asInstanceOf[js.Any])
+      inline def setIs_silhouette(value: Boolean): Self = StObject.set(x, "is_silhouette", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_silhouetteUndefined: Self = StObject.set(x, "is_silhouette", js.undefined)
+      inline def setIs_silhouetteUndefined: Self = StObject.set(x, "is_silhouette", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

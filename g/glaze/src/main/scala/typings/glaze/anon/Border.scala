@@ -26,8 +26,7 @@ trait Border extends StObject {
 }
 object Border {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     borderWidth: `2`,
     duration: `1000ms`,
     fontSize: `05`,
@@ -42,34 +41,24 @@ object Border {
     __obj.asInstanceOf[Border]
   }
   
-  @scala.inline
-  implicit class BorderMutableBuilder[Self <: Border] (val x: Self) extends AnyVal {
+  extension [Self <: Border](x: Self) {
     
-    @scala.inline
-    def setBorderWidth(value: `2`): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
+    inline def setBorderWidth(value: `2`): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: `1000ms`): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: `1000ms`): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSize(value: `05`): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: `05`): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLetterSpacing(value: Normal): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
+    inline def setLetterSpacing(value: Normal): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineHeight(value: Base): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+    inline def setLineHeight(value: Base): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadius(value: Full): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Full): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadow(value: Inner): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
+    inline def setShadow(value: Inner): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: `1`): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: `1`): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacing(value: `0`): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+    inline def setSpacing(value: `0`): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
   }
 }

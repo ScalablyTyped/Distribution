@@ -106,6 +106,5 @@ object Enum {
     * @returns Created enum
     * @throws {TypeError} If arguments are invalid
     */
-  @scala.inline
-  def fromJSON(name: String, json: IEnum): typings.apolloProtobufjs.mod.Enum = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[typings.apolloProtobufjs.mod.Enum]
+  inline def fromJSON(name: String, json: IEnum): typings.apolloProtobufjs.mod.Enum = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[typings.apolloProtobufjs.mod.Enum]
 }

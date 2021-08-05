@@ -34,55 +34,39 @@ trait IImg
 }
 object IImg {
   
-  @scala.inline
-  def apply(): IImg = {
+  inline def apply(): IImg = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IImg]
   }
   
-  @scala.inline
-  implicit class IImgMutableBuilder[Self <: IImg] (val x: Self) extends AnyVal {
+  extension [Self <: IImg](x: Self) {
     
-    @scala.inline
-    def setAlt(value: java.lang.String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+    inline def setAlt(value: java.lang.String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+    inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
-    @scala.inline
-    def setGlyph(value: js.Any): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
+    inline def setGlyph(value: js.Any): Self = StObject.set(x, "glyph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlyphUndefined: Self = StObject.set(x, "glyph", js.undefined)
+    inline def setGlyphUndefined: Self = StObject.set(x, "glyph", js.undefined)
     
-    @scala.inline
-    def setImgCls(value: java.lang.String): Self = StObject.set(x, "imgCls", value.asInstanceOf[js.Any])
+    inline def setImgCls(value: java.lang.String): Self = StObject.set(x, "imgCls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImgClsUndefined: Self = StObject.set(x, "imgCls", js.undefined)
+    inline def setImgClsUndefined: Self = StObject.set(x, "imgCls", js.undefined)
     
-    @scala.inline
-    def setOnRender(value: () => Unit): Self = StObject.set(x, "onRender", js.Any.fromFunction0(value))
+    inline def setOnRender(value: () => Unit): Self = StObject.set(x, "onRender", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnRenderUndefined: Self = StObject.set(x, "onRender", js.undefined)
+    inline def setOnRenderUndefined: Self = StObject.set(x, "onRender", js.undefined)
     
-    @scala.inline
-    def setSetSrc(value: /* src */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setSrc", js.Any.fromFunction1(value))
+    inline def setSetSrc(value: /* src */ js.UndefOr[java.lang.String] => Unit): Self = StObject.set(x, "setSrc", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSrcUndefined: Self = StObject.set(x, "setSrc", js.undefined)
+    inline def setSetSrcUndefined: Self = StObject.set(x, "setSrc", js.undefined)
     
-    @scala.inline
-    def setSrc(value: java.lang.String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: java.lang.String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+    inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
     
-    @scala.inline
-    def setTitle(value: java.lang.String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: java.lang.String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

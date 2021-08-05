@@ -55,8 +55,7 @@ trait Set extends StObject {
 }
 object Set {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: js.Any => js.Any,
     AddArray: js.Array[js.Any] => Set,
     Clear: () => Set,
@@ -77,52 +76,36 @@ object Set {
     __obj.asInstanceOf[Set]
   }
   
-  @scala.inline
-  implicit class SetMutableBuilder[Self <: Set] (val x: Self) extends AnyVal {
+  extension [Self <: Set](x: Self) {
     
-    @scala.inline
-    def setAdd(value: js.Any => js.Any): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
+    inline def setAdd(value: js.Any => js.Any): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddArray(value: js.Array[js.Any] => Set): Self = StObject.set(x, "AddArray", js.Any.fromFunction1(value))
+    inline def setAddArray(value: js.Array[js.Any] => Set): Self = StObject.set(x, "AddArray", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClear(value: () => Set): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Set): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClone(value: () => Set): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => Set): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setContains(value: js.Any => Boolean): Self = StObject.set(x, "Contains", js.Any.fromFunction1(value))
+    inline def setContains(value: js.Any => Boolean): Self = StObject.set(x, "Contains", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDifference(value: Set => Set): Self = StObject.set(x, "Difference", js.Any.fromFunction1(value))
+    inline def setDifference(value: Set => Set): Self = StObject.set(x, "Difference", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFirst(value: () => js.Any): Self = StObject.set(x, "First", js.Any.fromFunction0(value))
+    inline def setFirst(value: () => js.Any): Self = StObject.set(x, "First", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCollection(value: () => js.Any): Self = StObject.set(x, "GetCollection", js.Any.fromFunction0(value))
+    inline def setGetCollection(value: () => js.Any): Self = StObject.set(x, "GetCollection", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIntersection(value: Set => Set): Self = StObject.set(x, "Intersection", js.Any.fromFunction1(value))
+    inline def setIntersection(value: Set => Set): Self = StObject.set(x, "Intersection", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "IsEmpty", js.Any.fromFunction0(value))
+    inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "IsEmpty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemove(value: js.Any => js.Any): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: js.Any => js.Any): Self = StObject.set(x, "Remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSymmetricDifference(value: Set => Set): Self = StObject.set(x, "SymmetricDifference", js.Any.fromFunction1(value))
+    inline def setSymmetricDifference(value: Set => Set): Self = StObject.set(x, "SymmetricDifference", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToArray(value: () => js.Array[js.Any]): Self = StObject.set(x, "ToArray", js.Any.fromFunction0(value))
+    inline def setToArray(value: () => js.Array[js.Any]): Self = StObject.set(x, "ToArray", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUnion(value: Set => Set): Self = StObject.set(x, "Union", js.Any.fromFunction1(value))
+    inline def setUnion(value: Set => Set): Self = StObject.set(x, "Union", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnionWith(value: Set => Set): Self = StObject.set(x, "UnionWith", js.Any.fromFunction1(value))
+    inline def setUnionWith(value: Set => Set): Self = StObject.set(x, "UnionWith", js.Any.fromFunction1(value))
   }
 }

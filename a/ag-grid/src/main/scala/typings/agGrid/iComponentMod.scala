@@ -14,17 +14,14 @@ object iComponentMod {
   }
   object IAfterGuiAttachedParams {
     
-    @scala.inline
-    def apply(hidePopup: () => Unit): IAfterGuiAttachedParams = {
+    inline def apply(hidePopup: () => Unit): IAfterGuiAttachedParams = {
       val __obj = js.Dynamic.literal(hidePopup = js.Any.fromFunction0(hidePopup))
       __obj.asInstanceOf[IAfterGuiAttachedParams]
     }
     
-    @scala.inline
-    implicit class IAfterGuiAttachedParamsMutableBuilder[Self <: IAfterGuiAttachedParams] (val x: Self) extends AnyVal {
+    extension [Self <: IAfterGuiAttachedParams](x: Self) {
       
-      @scala.inline
-      def setHidePopup(value: () => Unit): Self = StObject.set(x, "hidePopup", js.Any.fromFunction0(value))
+      inline def setHidePopup(value: () => Unit): Self = StObject.set(x, "hidePopup", js.Any.fromFunction0(value))
     }
   }
   
@@ -51,35 +48,26 @@ object iComponentMod {
   }
   object IComponent {
     
-    @scala.inline
-    def apply[T](getGui: () => HTMLElement): IComponent[T] = {
+    inline def apply[T](getGui: () => HTMLElement): IComponent[T] = {
       val __obj = js.Dynamic.literal(getGui = js.Any.fromFunction0(getGui))
       __obj.asInstanceOf[IComponent[T]]
     }
     
-    @scala.inline
-    implicit class IComponentMutableBuilder[Self <: IComponent[?], T] (val x: Self & IComponent[T]) extends AnyVal {
+    extension [Self <: IComponent[?], T](x: Self & IComponent[T]) {
       
-      @scala.inline
-      def setAfterGuiAttached(value: /* params */ js.UndefOr[IAfterGuiAttachedParams] => Unit): Self = StObject.set(x, "afterGuiAttached", js.Any.fromFunction1(value))
+      inline def setAfterGuiAttached(value: /* params */ js.UndefOr[IAfterGuiAttachedParams] => Unit): Self = StObject.set(x, "afterGuiAttached", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAfterGuiAttachedUndefined: Self = StObject.set(x, "afterGuiAttached", js.undefined)
+      inline def setAfterGuiAttachedUndefined: Self = StObject.set(x, "afterGuiAttached", js.undefined)
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+      inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
-      @scala.inline
-      def setGetGui(value: () => HTMLElement): Self = StObject.set(x, "getGui", js.Any.fromFunction0(value))
+      inline def setGetGui(value: () => HTMLElement): Self = StObject.set(x, "getGui", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInit(value: /* params */ T => Promise[Unit] | Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+      inline def setInit(value: /* params */ T => Promise[Unit] | Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+      inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     }
   }
 }

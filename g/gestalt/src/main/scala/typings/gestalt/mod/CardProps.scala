@@ -20,43 +20,31 @@ trait CardProps extends StObject {
 }
 object CardProps {
   
-  @scala.inline
-  def apply(): CardProps = {
+  inline def apply(): CardProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CardProps]
   }
   
-  @scala.inline
-  implicit class CardPropsMutableBuilder[Self <: CardProps] (val x: Self) extends AnyVal {
+  extension [Self <: CardProps](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setImage(value: ReactNode): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: ReactNode): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    @scala.inline
-    def setOnMouseEnter(value: /* args */ EventSyntheticEvent => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
+    inline def setOnMouseEnter(value: /* args */ EventSyntheticEvent => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
+    inline def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
     
-    @scala.inline
-    def setOnMouseLeave(value: /* args */ EventSyntheticEvent => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+    inline def setOnMouseLeave(value: /* args */ EventSyntheticEvent => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
+    inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
   }
 }

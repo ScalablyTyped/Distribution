@@ -12,7 +12,7 @@ trait SparkColor extends StObject {
   
   val Creator: XlCreator
   
-  @JSName("Excel.SparkColor_typekey")
+  /* private */ @JSName("Excel.SparkColor_typekey")
   var ExcelDotSparkColor_typekey: SparkColor
   
   val Parent: js.Any
@@ -21,8 +21,7 @@ trait SparkColor extends StObject {
 }
 object SparkColor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Color: FormatColor,
     Creator: XlCreator,
@@ -35,25 +34,18 @@ object SparkColor {
     __obj.asInstanceOf[SparkColor]
   }
   
-  @scala.inline
-  implicit class SparkColorMutableBuilder[Self <: SparkColor] (val x: Self) extends AnyVal {
+  extension [Self <: SparkColor](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: FormatColor): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
+    inline def setColor(value: FormatColor): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotSparkColor_typekey(value: SparkColor): Self = StObject.set(x, "Excel.SparkColor_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotSparkColor_typekey(value: SparkColor): Self = StObject.set(x, "Excel.SparkColor_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
   }
 }

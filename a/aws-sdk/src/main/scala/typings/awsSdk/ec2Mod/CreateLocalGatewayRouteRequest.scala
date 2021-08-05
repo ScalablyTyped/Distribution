@@ -28,8 +28,7 @@ trait CreateLocalGatewayRouteRequest extends StObject {
 }
 object CreateLocalGatewayRouteRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DestinationCidrBlock: String,
     LocalGatewayRouteTableId: LocalGatewayRoutetableId,
     LocalGatewayVirtualInterfaceGroupId: LocalGatewayVirtualInterfaceGroupId
@@ -38,22 +37,16 @@ object CreateLocalGatewayRouteRequest {
     __obj.asInstanceOf[CreateLocalGatewayRouteRequest]
   }
   
-  @scala.inline
-  implicit class CreateLocalGatewayRouteRequestMutableBuilder[Self <: CreateLocalGatewayRouteRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateLocalGatewayRouteRequest](x: Self) {
     
-    @scala.inline
-    def setDestinationCidrBlock(value: String): Self = StObject.set(x, "DestinationCidrBlock", value.asInstanceOf[js.Any])
+    inline def setDestinationCidrBlock(value: String): Self = StObject.set(x, "DestinationCidrBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setLocalGatewayRouteTableId(value: LocalGatewayRoutetableId): Self = StObject.set(x, "LocalGatewayRouteTableId", value.asInstanceOf[js.Any])
+    inline def setLocalGatewayRouteTableId(value: LocalGatewayRoutetableId): Self = StObject.set(x, "LocalGatewayRouteTableId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalGatewayVirtualInterfaceGroupId(value: LocalGatewayVirtualInterfaceGroupId): Self = StObject.set(x, "LocalGatewayVirtualInterfaceGroupId", value.asInstanceOf[js.Any])
+    inline def setLocalGatewayVirtualInterfaceGroupId(value: LocalGatewayVirtualInterfaceGroupId): Self = StObject.set(x, "LocalGatewayVirtualInterfaceGroupId", value.asInstanceOf[js.Any])
   }
 }

@@ -23,19 +23,15 @@ trait ASPxClientXYDiagramPane
 }
 object ASPxClientXYDiagramPane {
   
-  @scala.inline
-  def apply(chart: ASPxClientWebChart, diagram: ASPxClientXYDiagram, name: String, title: ASPxClientPaneTitle): ASPxClientXYDiagramPane = {
+  inline def apply(chart: ASPxClientWebChart, diagram: ASPxClientXYDiagram, name: String, title: ASPxClientPaneTitle): ASPxClientXYDiagramPane = {
     val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any], diagram = diagram.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientXYDiagramPane]
   }
   
-  @scala.inline
-  implicit class ASPxClientXYDiagramPaneMutableBuilder[Self <: ASPxClientXYDiagramPane] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientXYDiagramPane](x: Self) {
     
-    @scala.inline
-    def setDiagram(value: ASPxClientXYDiagram): Self = StObject.set(x, "diagram", value.asInstanceOf[js.Any])
+    inline def setDiagram(value: ASPxClientXYDiagram): Self = StObject.set(x, "diagram", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: ASPxClientPaneTitle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: ASPxClientPaneTitle): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

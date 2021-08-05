@@ -13,19 +13,15 @@ trait IDeviceInformationUpdate extends StObject {
 }
 object IDeviceInformationUpdate {
   
-  @scala.inline
-  def apply(id: String, properties: IMapView[String, js.Any]): IDeviceInformationUpdate = {
+  inline def apply(id: String, properties: IMapView[String, js.Any]): IDeviceInformationUpdate = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDeviceInformationUpdate]
   }
   
-  @scala.inline
-  implicit class IDeviceInformationUpdateMutableBuilder[Self <: IDeviceInformationUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: IDeviceInformationUpdate](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: IMapView[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: IMapView[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
   }
 }

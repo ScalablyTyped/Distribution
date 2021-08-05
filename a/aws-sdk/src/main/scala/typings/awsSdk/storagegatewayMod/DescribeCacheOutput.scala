@@ -40,58 +40,41 @@ trait DescribeCacheOutput extends StObject {
 }
 object DescribeCacheOutput {
   
-  @scala.inline
-  def apply(): DescribeCacheOutput = {
+  inline def apply(): DescribeCacheOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeCacheOutput]
   }
   
-  @scala.inline
-  implicit class DescribeCacheOutputMutableBuilder[Self <: DescribeCacheOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCacheOutput](x: Self) {
     
-    @scala.inline
-    def setCacheAllocatedInBytes(value: long): Self = StObject.set(x, "CacheAllocatedInBytes", value.asInstanceOf[js.Any])
+    inline def setCacheAllocatedInBytes(value: long): Self = StObject.set(x, "CacheAllocatedInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheAllocatedInBytesUndefined: Self = StObject.set(x, "CacheAllocatedInBytes", js.undefined)
+    inline def setCacheAllocatedInBytesUndefined: Self = StObject.set(x, "CacheAllocatedInBytes", js.undefined)
     
-    @scala.inline
-    def setCacheDirtyPercentage(value: double): Self = StObject.set(x, "CacheDirtyPercentage", value.asInstanceOf[js.Any])
+    inline def setCacheDirtyPercentage(value: double): Self = StObject.set(x, "CacheDirtyPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheDirtyPercentageUndefined: Self = StObject.set(x, "CacheDirtyPercentage", js.undefined)
+    inline def setCacheDirtyPercentageUndefined: Self = StObject.set(x, "CacheDirtyPercentage", js.undefined)
     
-    @scala.inline
-    def setCacheHitPercentage(value: double): Self = StObject.set(x, "CacheHitPercentage", value.asInstanceOf[js.Any])
+    inline def setCacheHitPercentage(value: double): Self = StObject.set(x, "CacheHitPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheHitPercentageUndefined: Self = StObject.set(x, "CacheHitPercentage", js.undefined)
+    inline def setCacheHitPercentageUndefined: Self = StObject.set(x, "CacheHitPercentage", js.undefined)
     
-    @scala.inline
-    def setCacheMissPercentage(value: double): Self = StObject.set(x, "CacheMissPercentage", value.asInstanceOf[js.Any])
+    inline def setCacheMissPercentage(value: double): Self = StObject.set(x, "CacheMissPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheMissPercentageUndefined: Self = StObject.set(x, "CacheMissPercentage", js.undefined)
+    inline def setCacheMissPercentageUndefined: Self = StObject.set(x, "CacheMissPercentage", js.undefined)
     
-    @scala.inline
-    def setCacheUsedPercentage(value: double): Self = StObject.set(x, "CacheUsedPercentage", value.asInstanceOf[js.Any])
+    inline def setCacheUsedPercentage(value: double): Self = StObject.set(x, "CacheUsedPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheUsedPercentageUndefined: Self = StObject.set(x, "CacheUsedPercentage", js.undefined)
+    inline def setCacheUsedPercentageUndefined: Self = StObject.set(x, "CacheUsedPercentage", js.undefined)
     
-    @scala.inline
-    def setDiskIds(value: DiskIds): Self = StObject.set(x, "DiskIds", value.asInstanceOf[js.Any])
+    inline def setDiskIds(value: DiskIds): Self = StObject.set(x, "DiskIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskIdsUndefined: Self = StObject.set(x, "DiskIds", js.undefined)
+    inline def setDiskIdsUndefined: Self = StObject.set(x, "DiskIds", js.undefined)
     
-    @scala.inline
-    def setDiskIdsVarargs(value: DiskId*): Self = StObject.set(x, "DiskIds", js.Array(value :_*))
+    inline def setDiskIdsVarargs(value: DiskId*): Self = StObject.set(x, "DiskIds", js.Array(value :_*))
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
+    inline def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
   }
 }

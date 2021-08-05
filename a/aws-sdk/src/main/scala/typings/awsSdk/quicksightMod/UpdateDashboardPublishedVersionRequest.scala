@@ -23,22 +23,17 @@ trait UpdateDashboardPublishedVersionRequest extends StObject {
 }
 object UpdateDashboardPublishedVersionRequest {
   
-  @scala.inline
-  def apply(AwsAccountId: AwsAccountId, DashboardId: RestrictiveResourceId, VersionNumber: VersionNumber): UpdateDashboardPublishedVersionRequest = {
+  inline def apply(AwsAccountId: AwsAccountId, DashboardId: RestrictiveResourceId, VersionNumber: VersionNumber): UpdateDashboardPublishedVersionRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], DashboardId = DashboardId.asInstanceOf[js.Any], VersionNumber = VersionNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDashboardPublishedVersionRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDashboardPublishedVersionRequestMutableBuilder[Self <: UpdateDashboardPublishedVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDashboardPublishedVersionRequest](x: Self) {
     
-    @scala.inline
-    def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
+    inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashboardId(value: RestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
+    inline def setDashboardId(value: RestrictiveResourceId): Self = StObject.set(x, "DashboardId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionNumber(value: VersionNumber): Self = StObject.set(x, "VersionNumber", value.asInstanceOf[js.Any])
+    inline def setVersionNumber(value: VersionNumber): Self = StObject.set(x, "VersionNumber", value.asInstanceOf[js.Any])
   }
 }

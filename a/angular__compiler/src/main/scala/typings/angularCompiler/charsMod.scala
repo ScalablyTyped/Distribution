@@ -226,23 +226,17 @@ object charsMod {
   @js.native
   val f: /* 102 */ Double = js.native
   
-  @scala.inline
-  def isAsciiHexDigit(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAsciiHexDigit")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isAsciiHexDigit(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAsciiHexDigit")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isAsciiLetter(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAsciiLetter")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isAsciiLetter(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAsciiLetter")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isDigit(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDigit")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isDigit(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDigit")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isNewLine(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNewLine")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isNewLine(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNewLine")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isOctalDigit(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOctalDigit")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isOctalDigit(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOctalDigit")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isWhitespace(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWhitespace")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isWhitespace(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWhitespace")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("@angular/compiler/src/chars", "$n")
   @js.native

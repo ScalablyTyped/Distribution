@@ -10,16 +10,13 @@ trait JQueryStatic extends StObject {
 }
 object JQueryStatic {
   
-  @scala.inline
-  def apply(watermark: Watermark): JQueryStatic = {
+  inline def apply(watermark: Watermark): JQueryStatic = {
     val __obj = js.Dynamic.literal(watermark = watermark.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  @scala.inline
-  implicit class JQueryStaticMutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryStatic](x: Self) {
     
-    @scala.inline
-    def setWatermark(value: Watermark): Self = StObject.set(x, "watermark", value.asInstanceOf[js.Any])
+    inline def setWatermark(value: Watermark): Self = StObject.set(x, "watermark", value.asInstanceOf[js.Any])
   }
 }

@@ -19,22 +19,17 @@ trait MagneticStripeReaderTrackData extends StObject {
 }
 object MagneticStripeReaderTrackData {
   
-  @scala.inline
-  def apply(data: IBuffer, discretionaryData: IBuffer, encryptedData: IBuffer): MagneticStripeReaderTrackData = {
+  inline def apply(data: IBuffer, discretionaryData: IBuffer, encryptedData: IBuffer): MagneticStripeReaderTrackData = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], discretionaryData = discretionaryData.asInstanceOf[js.Any], encryptedData = encryptedData.asInstanceOf[js.Any])
     __obj.asInstanceOf[MagneticStripeReaderTrackData]
   }
   
-  @scala.inline
-  implicit class MagneticStripeReaderTrackDataMutableBuilder[Self <: MagneticStripeReaderTrackData] (val x: Self) extends AnyVal {
+  extension [Self <: MagneticStripeReaderTrackData](x: Self) {
     
-    @scala.inline
-    def setData(value: IBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: IBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscretionaryData(value: IBuffer): Self = StObject.set(x, "discretionaryData", value.asInstanceOf[js.Any])
+    inline def setDiscretionaryData(value: IBuffer): Self = StObject.set(x, "discretionaryData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptedData(value: IBuffer): Self = StObject.set(x, "encryptedData", value.asInstanceOf[js.Any])
+    inline def setEncryptedData(value: IBuffer): Self = StObject.set(x, "encryptedData", value.asInstanceOf[js.Any])
   }
 }

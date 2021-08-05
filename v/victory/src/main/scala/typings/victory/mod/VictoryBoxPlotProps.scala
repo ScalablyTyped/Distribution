@@ -290,187 +290,127 @@ trait VictoryBoxPlotProps
 }
 object VictoryBoxPlotProps {
   
-  @scala.inline
-  def apply(): VictoryBoxPlotProps = {
+  inline def apply(): VictoryBoxPlotProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VictoryBoxPlotProps]
   }
   
-  @scala.inline
-  implicit class VictoryBoxPlotPropsMutableBuilder[Self <: VictoryBoxPlotProps] (val x: Self) extends AnyVal {
+  extension [Self <: VictoryBoxPlotProps](x: Self) {
     
-    @scala.inline
-    def setBoxWidth(value: Double): Self = StObject.set(x, "boxWidth", value.asInstanceOf[js.Any])
+    inline def setBoxWidth(value: Double): Self = StObject.set(x, "boxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoxWidthUndefined: Self = StObject.set(x, "boxWidth", js.undefined)
+    inline def setBoxWidthUndefined: Self = StObject.set(x, "boxWidth", js.undefined)
     
-    @scala.inline
-    def setDomainPadding(value: DomainPaddingPropType): Self = StObject.set(x, "domainPadding", value.asInstanceOf[js.Any])
+    inline def setDomainPadding(value: DomainPaddingPropType): Self = StObject.set(x, "domainPadding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainPaddingUndefined: Self = StObject.set(x, "domainPadding", js.undefined)
+    inline def setDomainPaddingUndefined: Self = StObject.set(x, "domainPadding", js.undefined)
     
-    @scala.inline
-    def setEventKey(value: StringOrNumberOrCallback): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
+    inline def setEventKey(value: StringOrNumberOrCallback): Self = StObject.set(x, "eventKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventKeyFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "eventKey", js.Any.fromFunction1(value))
+    inline def setEventKeyFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "eventKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEventKeyUndefined: Self = StObject.set(x, "eventKey", js.undefined)
+    inline def setEventKeyUndefined: Self = StObject.set(x, "eventKey", js.undefined)
     
-    @scala.inline
-    def setEvents(value: js.Array[EventPropTypeInterface[String, StringOrNumberOrCallback]]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: js.Array[EventPropTypeInterface[String, StringOrNumberOrCallback]]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    @scala.inline
-    def setEventsVarargs(value: (EventPropTypeInterface[String, StringOrNumberOrCallback])*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: (EventPropTypeInterface[String, StringOrNumberOrCallback])*): Self = StObject.set(x, "events", js.Array(value :_*))
     
-    @scala.inline
-    def setLabelOrientation(value: top | bottom | left | right): Self = StObject.set(x, "labelOrientation", value.asInstanceOf[js.Any])
+    inline def setLabelOrientation(value: top | bottom | left | right): Self = StObject.set(x, "labelOrientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelOrientationUndefined: Self = StObject.set(x, "labelOrientation", js.undefined)
+    inline def setLabelOrientationUndefined: Self = StObject.set(x, "labelOrientation", js.undefined)
     
-    @scala.inline
-    def setLabels(value: Boolean): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: Boolean): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setMax(value: StringOrNumberOrCallback | js.Array[String]): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: StringOrNumberOrCallback | js.Array[String]): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxComponent(value: ReactElement): Self = StObject.set(x, "maxComponent", value.asInstanceOf[js.Any])
+    inline def setMaxComponent(value: ReactElement): Self = StObject.set(x, "maxComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxComponentUndefined: Self = StObject.set(x, "maxComponent", js.undefined)
+    inline def setMaxComponentUndefined: Self = StObject.set(x, "maxComponent", js.undefined)
     
-    @scala.inline
-    def setMaxFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "max", js.Any.fromFunction1(value))
+    inline def setMaxFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "max", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMaxLabelComponent(value: ReactElement): Self = StObject.set(x, "maxLabelComponent", value.asInstanceOf[js.Any])
+    inline def setMaxLabelComponent(value: ReactElement): Self = StObject.set(x, "maxLabelComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLabelComponentUndefined: Self = StObject.set(x, "maxLabelComponent", js.undefined)
+    inline def setMaxLabelComponentUndefined: Self = StObject.set(x, "maxLabelComponent", js.undefined)
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMaxVarargs(value: String*): Self = StObject.set(x, "max", js.Array(value :_*))
+    inline def setMaxVarargs(value: String*): Self = StObject.set(x, "max", js.Array(value :_*))
     
-    @scala.inline
-    def setMedian(value: StringOrNumberOrCallback | js.Array[String]): Self = StObject.set(x, "median", value.asInstanceOf[js.Any])
+    inline def setMedian(value: StringOrNumberOrCallback | js.Array[String]): Self = StObject.set(x, "median", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedianComponent(value: ReactElement): Self = StObject.set(x, "medianComponent", value.asInstanceOf[js.Any])
+    inline def setMedianComponent(value: ReactElement): Self = StObject.set(x, "medianComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedianComponentUndefined: Self = StObject.set(x, "medianComponent", js.undefined)
+    inline def setMedianComponentUndefined: Self = StObject.set(x, "medianComponent", js.undefined)
     
-    @scala.inline
-    def setMedianFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "median", js.Any.fromFunction1(value))
+    inline def setMedianFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "median", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMedianLabelComponent(value: ReactElement): Self = StObject.set(x, "medianLabelComponent", value.asInstanceOf[js.Any])
+    inline def setMedianLabelComponent(value: ReactElement): Self = StObject.set(x, "medianLabelComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedianLabelComponentUndefined: Self = StObject.set(x, "medianLabelComponent", js.undefined)
+    inline def setMedianLabelComponentUndefined: Self = StObject.set(x, "medianLabelComponent", js.undefined)
     
-    @scala.inline
-    def setMedianUndefined: Self = StObject.set(x, "median", js.undefined)
+    inline def setMedianUndefined: Self = StObject.set(x, "median", js.undefined)
     
-    @scala.inline
-    def setMedianVarargs(value: String*): Self = StObject.set(x, "median", js.Array(value :_*))
+    inline def setMedianVarargs(value: String*): Self = StObject.set(x, "median", js.Array(value :_*))
     
-    @scala.inline
-    def setMin(value: StringOrNumberOrCallback | js.Array[String]): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: StringOrNumberOrCallback | js.Array[String]): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinComponent(value: ReactElement): Self = StObject.set(x, "minComponent", value.asInstanceOf[js.Any])
+    inline def setMinComponent(value: ReactElement): Self = StObject.set(x, "minComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinComponentUndefined: Self = StObject.set(x, "minComponent", js.undefined)
+    inline def setMinComponentUndefined: Self = StObject.set(x, "minComponent", js.undefined)
     
-    @scala.inline
-    def setMinFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "min", js.Any.fromFunction1(value))
+    inline def setMinFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "min", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMinLabelComponent(value: ReactElement): Self = StObject.set(x, "minLabelComponent", value.asInstanceOf[js.Any])
+    inline def setMinLabelComponent(value: ReactElement): Self = StObject.set(x, "minLabelComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinLabelComponentUndefined: Self = StObject.set(x, "minLabelComponent", js.undefined)
+    inline def setMinLabelComponentUndefined: Self = StObject.set(x, "minLabelComponent", js.undefined)
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setMinVarargs(value: String*): Self = StObject.set(x, "min", js.Array(value :_*))
+    inline def setMinVarargs(value: String*): Self = StObject.set(x, "min", js.Array(value :_*))
     
-    @scala.inline
-    def setQ1(value: StringOrNumberOrCallback | js.Array[String]): Self = StObject.set(x, "q1", value.asInstanceOf[js.Any])
+    inline def setQ1(value: StringOrNumberOrCallback | js.Array[String]): Self = StObject.set(x, "q1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQ1Component(value: ReactElement): Self = StObject.set(x, "q1Component", value.asInstanceOf[js.Any])
+    inline def setQ1Component(value: ReactElement): Self = StObject.set(x, "q1Component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQ1ComponentUndefined: Self = StObject.set(x, "q1Component", js.undefined)
+    inline def setQ1ComponentUndefined: Self = StObject.set(x, "q1Component", js.undefined)
     
-    @scala.inline
-    def setQ1Function1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "q1", js.Any.fromFunction1(value))
+    inline def setQ1Function1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "q1", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setQ1LabelComponent(value: ReactElement): Self = StObject.set(x, "q1LabelComponent", value.asInstanceOf[js.Any])
+    inline def setQ1LabelComponent(value: ReactElement): Self = StObject.set(x, "q1LabelComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQ1LabelComponentUndefined: Self = StObject.set(x, "q1LabelComponent", js.undefined)
+    inline def setQ1LabelComponentUndefined: Self = StObject.set(x, "q1LabelComponent", js.undefined)
     
-    @scala.inline
-    def setQ1Undefined: Self = StObject.set(x, "q1", js.undefined)
+    inline def setQ1Undefined: Self = StObject.set(x, "q1", js.undefined)
     
-    @scala.inline
-    def setQ1Varargs(value: String*): Self = StObject.set(x, "q1", js.Array(value :_*))
+    inline def setQ1Varargs(value: String*): Self = StObject.set(x, "q1", js.Array(value :_*))
     
-    @scala.inline
-    def setQ3(value: StringOrNumberOrCallback | js.Array[String]): Self = StObject.set(x, "q3", value.asInstanceOf[js.Any])
+    inline def setQ3(value: StringOrNumberOrCallback | js.Array[String]): Self = StObject.set(x, "q3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQ3Component(value: ReactElement): Self = StObject.set(x, "q3Component", value.asInstanceOf[js.Any])
+    inline def setQ3Component(value: ReactElement): Self = StObject.set(x, "q3Component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQ3ComponentUndefined: Self = StObject.set(x, "q3Component", js.undefined)
+    inline def setQ3ComponentUndefined: Self = StObject.set(x, "q3Component", js.undefined)
     
-    @scala.inline
-    def setQ3Function1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "q3", js.Any.fromFunction1(value))
+    inline def setQ3Function1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "q3", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setQ3LabelComponent(value: ReactElement): Self = StObject.set(x, "q3LabelComponent", value.asInstanceOf[js.Any])
+    inline def setQ3LabelComponent(value: ReactElement): Self = StObject.set(x, "q3LabelComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQ3LabelComponentUndefined: Self = StObject.set(x, "q3LabelComponent", js.undefined)
+    inline def setQ3LabelComponentUndefined: Self = StObject.set(x, "q3LabelComponent", js.undefined)
     
-    @scala.inline
-    def setQ3Undefined: Self = StObject.set(x, "q3", js.undefined)
+    inline def setQ3Undefined: Self = StObject.set(x, "q3", js.undefined)
     
-    @scala.inline
-    def setQ3Varargs(value: String*): Self = StObject.set(x, "q3", js.Array(value :_*))
+    inline def setQ3Varargs(value: String*): Self = StObject.set(x, "q3", js.Array(value :_*))
     
-    @scala.inline
-    def setStyle(value: VictoryBoxPlotStyleInterface): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: VictoryBoxPlotStyleInterface): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setWhiskerWidth(value: Double): Self = StObject.set(x, "whiskerWidth", value.asInstanceOf[js.Any])
+    inline def setWhiskerWidth(value: Double): Self = StObject.set(x, "whiskerWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhiskerWidthUndefined: Self = StObject.set(x, "whiskerWidth", js.undefined)
+    inline def setWhiskerWidthUndefined: Self = StObject.set(x, "whiskerWidth", js.undefined)
   }
 }

@@ -33,39 +33,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoBalloonErrorType extends StObject
 object MsoBalloonErrorType {
   
-  @scala.inline
-  def msoBalloonErrorBadCharacter: `8` = 8.asInstanceOf[`8`]
+  inline def msoBalloonErrorBadCharacter: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def msoBalloonErrorBadPictureRef: `4` = 4.asInstanceOf[`4`]
+  inline def msoBalloonErrorBadPictureRef: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoBalloonErrorBadReference: `5` = 5.asInstanceOf[`5`]
+  inline def msoBalloonErrorBadReference: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def msoBalloonErrorButtonModeless: `7` = 7.asInstanceOf[`7`]
+  inline def msoBalloonErrorButtonModeless: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def msoBalloonErrorButtonlessModal: `6` = 6.asInstanceOf[`6`]
+  inline def msoBalloonErrorButtonlessModal: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def msoBalloonErrorCOMFailure: `9` = 9.asInstanceOf[`9`]
+  inline def msoBalloonErrorCOMFailure: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def msoBalloonErrorCharNotTopmostForModal: `10` = 10.asInstanceOf[`10`]
+  inline def msoBalloonErrorCharNotTopmostForModal: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def msoBalloonErrorNone: `0` = 0.asInstanceOf[`0`]
+  inline def msoBalloonErrorNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def msoBalloonErrorOther: `1` = 1.asInstanceOf[`1`]
+  inline def msoBalloonErrorOther: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoBalloonErrorOutOfMemory: `3` = 3.asInstanceOf[`3`]
+  inline def msoBalloonErrorOutOfMemory: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoBalloonErrorTooBig: `2` = 2.asInstanceOf[`2`]
+  inline def msoBalloonErrorTooBig: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoBalloonErrorTooManyControls: `11` = 11.asInstanceOf[`11`]
+  inline def msoBalloonErrorTooManyControls: `11` = 11.asInstanceOf[`11`]
 }

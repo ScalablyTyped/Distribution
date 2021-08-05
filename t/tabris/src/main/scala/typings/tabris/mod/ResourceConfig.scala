@@ -12,25 +12,19 @@ trait ResourceConfig extends StObject {
 }
 object ResourceConfig {
   
-  @scala.inline
-  def apply(): ResourceConfig = {
+  inline def apply(): ResourceConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceConfig]
   }
   
-  @scala.inline
-  implicit class ResourceConfigMutableBuilder[Self <: ResourceConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceConfig](x: Self) {
     
-    @scala.inline
-    def setFallbackLanguage(value: String): Self = StObject.set(x, "fallbackLanguage", value.asInstanceOf[js.Any])
+    inline def setFallbackLanguage(value: String): Self = StObject.set(x, "fallbackLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFallbackLanguageUndefined: Self = StObject.set(x, "fallbackLanguage", js.undefined)
+    inline def setFallbackLanguageUndefined: Self = StObject.set(x, "fallbackLanguage", js.undefined)
     
-    @scala.inline
-    def setScaleFactor(value: ScaleFactor): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
+    inline def setScaleFactor(value: ScaleFactor): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleFactorUndefined: Self = StObject.set(x, "scaleFactor", js.undefined)
+    inline def setScaleFactorUndefined: Self = StObject.set(x, "scaleFactor", js.undefined)
   }
 }

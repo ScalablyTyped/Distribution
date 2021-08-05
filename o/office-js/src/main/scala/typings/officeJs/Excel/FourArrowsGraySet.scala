@@ -19,25 +19,19 @@ trait FourArrowsGraySet
 }
 object FourArrowsGraySet {
   
-  @scala.inline
-  def apply(grayDownArrow: Icon, grayDownInclineArrow: Icon, grayUpArrow: Icon, grayUpInclineArrow: Icon): FourArrowsGraySet = {
+  inline def apply(grayDownArrow: Icon, grayDownInclineArrow: Icon, grayUpArrow: Icon, grayUpInclineArrow: Icon): FourArrowsGraySet = {
     val __obj = js.Dynamic.literal(grayDownArrow = grayDownArrow.asInstanceOf[js.Any], grayDownInclineArrow = grayDownInclineArrow.asInstanceOf[js.Any], grayUpArrow = grayUpArrow.asInstanceOf[js.Any], grayUpInclineArrow = grayUpInclineArrow.asInstanceOf[js.Any])
     __obj.asInstanceOf[FourArrowsGraySet]
   }
   
-  @scala.inline
-  implicit class FourArrowsGraySetMutableBuilder[Self <: FourArrowsGraySet] (val x: Self) extends AnyVal {
+  extension [Self <: FourArrowsGraySet](x: Self) {
     
-    @scala.inline
-    def setGrayDownArrow(value: Icon): Self = StObject.set(x, "grayDownArrow", value.asInstanceOf[js.Any])
+    inline def setGrayDownArrow(value: Icon): Self = StObject.set(x, "grayDownArrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrayDownInclineArrow(value: Icon): Self = StObject.set(x, "grayDownInclineArrow", value.asInstanceOf[js.Any])
+    inline def setGrayDownInclineArrow(value: Icon): Self = StObject.set(x, "grayDownInclineArrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrayUpArrow(value: Icon): Self = StObject.set(x, "grayUpArrow", value.asInstanceOf[js.Any])
+    inline def setGrayUpArrow(value: Icon): Self = StObject.set(x, "grayUpArrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrayUpInclineArrow(value: Icon): Self = StObject.set(x, "grayUpInclineArrow", value.asInstanceOf[js.Any])
+    inline def setGrayUpInclineArrow(value: Icon): Self = StObject.set(x, "grayUpInclineArrow", value.asInstanceOf[js.Any])
   }
 }

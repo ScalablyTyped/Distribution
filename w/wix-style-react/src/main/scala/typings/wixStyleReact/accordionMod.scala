@@ -31,47 +31,34 @@ object accordionMod {
   }
   object AccordionProps {
     
-    @scala.inline
-    def apply(): AccordionProps = {
+    inline def apply(): AccordionProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AccordionProps]
     }
     
-    @scala.inline
-    implicit class AccordionPropsMutableBuilder[Self <: AccordionProps] (val x: Self) extends AnyVal {
+    extension [Self <: AccordionProps](x: Self) {
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setHideShadow(value: Boolean): Self = StObject.set(x, "hideShadow", value.asInstanceOf[js.Any])
+      inline def setHideShadow(value: Boolean): Self = StObject.set(x, "hideShadow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideShadowUndefined: Self = StObject.set(x, "hideShadow", js.undefined)
+      inline def setHideShadowUndefined: Self = StObject.set(x, "hideShadow", js.undefined)
       
-      @scala.inline
-      def setItems(value: js.Array[AccordionItemProps]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[AccordionItemProps]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setItemsVarargs(value: AccordionItemProps*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: AccordionItemProps*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+      inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+      inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
       
-      @scala.inline
-      def setSkin(value: light | standard): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
+      inline def setSkin(value: light | standard): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
+      inline def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
     }
   }
 }

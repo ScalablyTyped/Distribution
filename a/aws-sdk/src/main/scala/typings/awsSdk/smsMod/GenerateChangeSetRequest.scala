@@ -18,25 +18,19 @@ trait GenerateChangeSetRequest extends StObject {
 }
 object GenerateChangeSetRequest {
   
-  @scala.inline
-  def apply(): GenerateChangeSetRequest = {
+  inline def apply(): GenerateChangeSetRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GenerateChangeSetRequest]
   }
   
-  @scala.inline
-  implicit class GenerateChangeSetRequestMutableBuilder[Self <: GenerateChangeSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GenerateChangeSetRequest](x: Self) {
     
-    @scala.inline
-    def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
+    inline def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
     
-    @scala.inline
-    def setChangesetFormat(value: OutputFormat): Self = StObject.set(x, "changesetFormat", value.asInstanceOf[js.Any])
+    inline def setChangesetFormat(value: OutputFormat): Self = StObject.set(x, "changesetFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangesetFormatUndefined: Self = StObject.set(x, "changesetFormat", js.undefined)
+    inline def setChangesetFormatUndefined: Self = StObject.set(x, "changesetFormat", js.undefined)
   }
 }

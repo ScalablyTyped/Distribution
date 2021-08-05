@@ -17,42 +17,28 @@ object mod {
   @js.native
   val HOSTS: CColonSlashWindowsSlashSystem32SlashdriversSlashetcSlashhosts | SlashetcSlashhosts = js.native
   
-  @scala.inline
-  def get(preserveFormatting: Boolean): Unit | Lines = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(preserveFormatting.asInstanceOf[js.Any]).asInstanceOf[Unit | Lines]
-  @scala.inline
-  def get(preserveFormatting: Boolean, cb: GetCallback): Unit | Lines = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(preserveFormatting.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit | Lines]
+  inline def get(preserveFormatting: Boolean): Unit | Lines = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(preserveFormatting.asInstanceOf[js.Any]).asInstanceOf[Unit | Lines]
+  inline def get(preserveFormatting: Boolean, cb: GetCallback): Unit | Lines = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(preserveFormatting.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit | Lines]
   
-  @scala.inline
-  def getFile(filePath: String, preserveFormatting: Boolean): Unit | Lines = (^.asInstanceOf[js.Dynamic].applyDynamic("getFile")(filePath.asInstanceOf[js.Any], preserveFormatting.asInstanceOf[js.Any])).asInstanceOf[Unit | Lines]
-  @scala.inline
-  def getFile(filePath: String, preserveFormatting: Boolean, cb: GetCallback): Unit | Lines = (^.asInstanceOf[js.Dynamic].applyDynamic("getFile")(filePath.asInstanceOf[js.Any], preserveFormatting.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit | Lines]
+  inline def getFile(filePath: String, preserveFormatting: Boolean): Unit | Lines = (^.asInstanceOf[js.Dynamic].applyDynamic("getFile")(filePath.asInstanceOf[js.Any], preserveFormatting.asInstanceOf[js.Any])).asInstanceOf[Unit | Lines]
+  inline def getFile(filePath: String, preserveFormatting: Boolean, cb: GetCallback): Unit | Lines = (^.asInstanceOf[js.Dynamic].applyDynamic("getFile")(filePath.asInstanceOf[js.Any], preserveFormatting.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit | Lines]
   
-  @scala.inline
-  def getFile_Lines(filePath: String, preserveFormatting: Boolean): Lines = (^.asInstanceOf[js.Dynamic].applyDynamic("getFile")(filePath.asInstanceOf[js.Any], preserveFormatting.asInstanceOf[js.Any])).asInstanceOf[Lines]
+  inline def getFile_Lines(filePath: String, preserveFormatting: Boolean): Lines = (^.asInstanceOf[js.Dynamic].applyDynamic("getFile")(filePath.asInstanceOf[js.Any], preserveFormatting.asInstanceOf[js.Any])).asInstanceOf[Lines]
   
-  @scala.inline
-  def getFile_Unit(filePath: String, preserveFormatting: Boolean, cb: GetCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getFile")(filePath.asInstanceOf[js.Any], preserveFormatting.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getFile_Unit(filePath: String, preserveFormatting: Boolean, cb: GetCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getFile")(filePath.asInstanceOf[js.Any], preserveFormatting.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def get_Lines(preserveFormatting: Boolean): Lines = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(preserveFormatting.asInstanceOf[js.Any]).asInstanceOf[Lines]
+  inline def get_Lines(preserveFormatting: Boolean): Lines = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(preserveFormatting.asInstanceOf[js.Any]).asInstanceOf[Lines]
   
-  @scala.inline
-  def get_Unit(preserveFormatting: Boolean, cb: GetCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(preserveFormatting.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def get_Unit(preserveFormatting: Boolean, cb: GetCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(preserveFormatting.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def remove(ip: String, host: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(ip.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def remove(ip: String, host: String, cb: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(ip.asInstanceOf[js.Any], host.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def remove(ip: String, host: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(ip.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def remove(ip: String, host: String, cb: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(ip.asInstanceOf[js.Any], host.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def set(ip: String, host: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(ip.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def set(ip: String, host: String, cb: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(ip.asInstanceOf[js.Any], host.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def set(ip: String, host: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(ip.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def set(ip: String, host: String, cb: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(ip.asInstanceOf[js.Any], host.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def writeFile(lines: js.Array[Line], preserveFormatting: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(lines.asInstanceOf[js.Any], preserveFormatting.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def writeFile(lines: js.Array[Line], preserveFormatting: Boolean, cb: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(lines.asInstanceOf[js.Any], preserveFormatting.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def writeFile(lines: js.Array[Line], preserveFormatting: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(lines.asInstanceOf[js.Any], preserveFormatting.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def writeFile(lines: js.Array[Line], preserveFormatting: Boolean, cb: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(lines.asInstanceOf[js.Any], preserveFormatting.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type Callback = js.Function1[/* error */ Error | Null, Unit]
   

@@ -12,19 +12,15 @@ trait Base64Parser extends StObject {
 }
 object Base64Parser {
   
-  @scala.inline
-  def apply(decorator: js.Any, parse: js.Any => js.Any): Base64Parser = {
+  inline def apply(decorator: js.Any, parse: js.Any => js.Any): Base64Parser = {
     val __obj = js.Dynamic.literal(decorator = decorator.asInstanceOf[js.Any], parse = js.Any.fromFunction1(parse))
     __obj.asInstanceOf[Base64Parser]
   }
   
-  @scala.inline
-  implicit class Base64ParserMutableBuilder[Self <: Base64Parser] (val x: Self) extends AnyVal {
+  extension [Self <: Base64Parser](x: Self) {
     
-    @scala.inline
-    def setDecorator(value: js.Any): Self = StObject.set(x, "decorator", value.asInstanceOf[js.Any])
+    inline def setDecorator(value: js.Any): Self = StObject.set(x, "decorator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParse(value: js.Any => js.Any): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+    inline def setParse(value: js.Any => js.Any): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
   }
 }

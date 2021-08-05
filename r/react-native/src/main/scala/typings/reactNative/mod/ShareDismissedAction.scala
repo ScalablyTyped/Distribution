@@ -13,16 +13,13 @@ trait ShareDismissedAction
 }
 object ShareDismissedAction {
   
-  @scala.inline
-  def apply(): ShareDismissedAction = {
+  inline def apply(): ShareDismissedAction = {
     val __obj = js.Dynamic.literal(action = "dismissedAction")
     __obj.asInstanceOf[ShareDismissedAction]
   }
   
-  @scala.inline
-  implicit class ShareDismissedActionMutableBuilder[Self <: ShareDismissedAction] (val x: Self) extends AnyVal {
+  extension [Self <: ShareDismissedAction](x: Self) {
     
-    @scala.inline
-    def setAction(value: dismissedAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: dismissedAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
   }
 }

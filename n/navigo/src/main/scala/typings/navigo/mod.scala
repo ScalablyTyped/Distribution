@@ -47,28 +47,22 @@ object mod {
   }
   object GenericHooks {
     
-    @scala.inline
-    def apply(): GenericHooks = {
+    inline def apply(): GenericHooks = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GenericHooks]
     }
     
-    @scala.inline
-    implicit class GenericHooksMutableBuilder[Self <: GenericHooks] (val x: Self) extends AnyVal {
+    extension [Self <: GenericHooks](x: Self) {
       
-      @scala.inline
-      def setAfter(value: /* params */ js.UndefOr[Params] => Unit): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
+      inline def setAfter(value: /* params */ js.UndefOr[Params] => Unit): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+      inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
       
-      @scala.inline
-      def setBefore(
+      inline def setBefore(
         value: (/* done */ js.Function1[/* suppress */ js.UndefOr[Boolean], Unit], /* params */ js.UndefOr[Params]) => Unit
       ): Self = StObject.set(x, "before", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+      inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     }
   }
   
@@ -140,40 +134,30 @@ object mod {
   }
   object NavigoHooks {
     
-    @scala.inline
-    def apply(): NavigoHooks = {
+    inline def apply(): NavigoHooks = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NavigoHooks]
     }
     
-    @scala.inline
-    implicit class NavigoHooksMutableBuilder[Self <: NavigoHooks] (val x: Self) extends AnyVal {
+    extension [Self <: NavigoHooks](x: Self) {
       
-      @scala.inline
-      def setAfter(value: /* params */ js.UndefOr[Params] => Unit): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
+      inline def setAfter(value: /* params */ js.UndefOr[Params] => Unit): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+      inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
       
-      @scala.inline
-      def setAlready(value: /* params */ js.UndefOr[Params] => Unit): Self = StObject.set(x, "already", js.Any.fromFunction1(value))
+      inline def setAlready(value: /* params */ js.UndefOr[Params] => Unit): Self = StObject.set(x, "already", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAlreadyUndefined: Self = StObject.set(x, "already", js.undefined)
+      inline def setAlreadyUndefined: Self = StObject.set(x, "already", js.undefined)
       
-      @scala.inline
-      def setBefore(
+      inline def setBefore(
         value: (/* done */ js.Function1[/* suppress */ js.UndefOr[Boolean], Unit], /* params */ js.UndefOr[Params]) => Unit
       ): Self = StObject.set(x, "before", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+      inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
       
-      @scala.inline
-      def setLeave(value: /* params */ js.UndefOr[Params] => Unit): Self = StObject.set(x, "leave", js.Any.fromFunction1(value))
+      inline def setLeave(value: /* params */ js.UndefOr[Params] => Unit): Self = StObject.set(x, "leave", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLeaveUndefined: Self = StObject.set(x, "leave", js.undefined)
+      inline def setLeaveUndefined: Self = StObject.set(x, "leave", js.undefined)
     }
   }
   

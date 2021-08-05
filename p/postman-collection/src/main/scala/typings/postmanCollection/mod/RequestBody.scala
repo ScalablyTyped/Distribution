@@ -37,6 +37,5 @@ object RequestBody {
   @JSImport("postman-collection", "RequestBody.MODES")
   @js.native
   def MODES: File = js.native
-  @scala.inline
-  def MODES_=(x: File): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODES")(x.asInstanceOf[js.Any])
+  inline def MODES_=(x: File): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODES")(x.asInstanceOf[js.Any])
 }

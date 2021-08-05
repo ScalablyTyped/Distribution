@@ -19,19 +19,16 @@ object schedulerMod {
     @JSImport("baconjs/types/scheduler", "default.scheduler")
     @js.native
     def scheduler: Scheduler = js.native
-    @scala.inline
-    def scheduler_=(x: Scheduler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scheduler")(x.asInstanceOf[js.Any])
+    inline def scheduler_=(x: Scheduler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scheduler")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("baconjs/types/scheduler", "defaultScheduler")
   @js.native
   val defaultScheduler: Scheduler = js.native
   
-  @scala.inline
-  def getScheduler(): Scheduler = ^.asInstanceOf[js.Dynamic].applyDynamic("getScheduler")().asInstanceOf[Scheduler]
+  inline def getScheduler(): Scheduler = ^.asInstanceOf[js.Dynamic].applyDynamic("getScheduler")().asInstanceOf[Scheduler]
   
-  @scala.inline
-  def setScheduler(newScheduler: Scheduler): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setScheduler")(newScheduler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setScheduler(newScheduler: Scheduler): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setScheduler")(newScheduler.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait Scheduler extends StObject {
     
@@ -47,8 +44,7 @@ object schedulerMod {
   }
   object Scheduler {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clearInterval: Double => js.Any,
       clearTimeout: Double => js.Any,
       now: () => Double,
@@ -59,23 +55,17 @@ object schedulerMod {
       __obj.asInstanceOf[Scheduler]
     }
     
-    @scala.inline
-    implicit class SchedulerMutableBuilder[Self <: Scheduler] (val x: Self) extends AnyVal {
+    extension [Self <: Scheduler](x: Self) {
       
-      @scala.inline
-      def setClearInterval(value: Double => js.Any): Self = StObject.set(x, "clearInterval", js.Any.fromFunction1(value))
+      inline def setClearInterval(value: Double => js.Any): Self = StObject.set(x, "clearInterval", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClearTimeout(value: Double => js.Any): Self = StObject.set(x, "clearTimeout", js.Any.fromFunction1(value))
+      inline def setClearTimeout(value: Double => js.Any): Self = StObject.set(x, "clearTimeout", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNow(value: () => Double): Self = StObject.set(x, "now", js.Any.fromFunction0(value))
+      inline def setNow(value: () => Double): Self = StObject.set(x, "now", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetInterval(value: (js.Function, Double) => Double): Self = StObject.set(x, "setInterval", js.Any.fromFunction2(value))
+      inline def setSetInterval(value: (js.Function, Double) => Double): Self = StObject.set(x, "setInterval", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetTimeout(value: (js.Function, Double) => Double): Self = StObject.set(x, "setTimeout", js.Any.fromFunction2(value))
+      inline def setSetTimeout(value: (js.Function, Double) => Double): Self = StObject.set(x, "setTimeout", js.Any.fromFunction2(value))
     }
   }
 }

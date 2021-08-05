@@ -38,49 +38,35 @@ trait WorkspaceCreationProperties extends StObject {
 }
 object WorkspaceCreationProperties {
   
-  @scala.inline
-  def apply(): WorkspaceCreationProperties = {
+  inline def apply(): WorkspaceCreationProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkspaceCreationProperties]
   }
   
-  @scala.inline
-  implicit class WorkspaceCreationPropertiesMutableBuilder[Self <: WorkspaceCreationProperties] (val x: Self) extends AnyVal {
+  extension [Self <: WorkspaceCreationProperties](x: Self) {
     
-    @scala.inline
-    def setCustomSecurityGroupId(value: SecurityGroupId): Self = StObject.set(x, "CustomSecurityGroupId", value.asInstanceOf[js.Any])
+    inline def setCustomSecurityGroupId(value: SecurityGroupId): Self = StObject.set(x, "CustomSecurityGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomSecurityGroupIdUndefined: Self = StObject.set(x, "CustomSecurityGroupId", js.undefined)
+    inline def setCustomSecurityGroupIdUndefined: Self = StObject.set(x, "CustomSecurityGroupId", js.undefined)
     
-    @scala.inline
-    def setDefaultOu(value: DefaultOu): Self = StObject.set(x, "DefaultOu", value.asInstanceOf[js.Any])
+    inline def setDefaultOu(value: DefaultOu): Self = StObject.set(x, "DefaultOu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultOuUndefined: Self = StObject.set(x, "DefaultOu", js.undefined)
+    inline def setDefaultOuUndefined: Self = StObject.set(x, "DefaultOu", js.undefined)
     
-    @scala.inline
-    def setEnableInternetAccess(value: BooleanObject): Self = StObject.set(x, "EnableInternetAccess", value.asInstanceOf[js.Any])
+    inline def setEnableInternetAccess(value: BooleanObject): Self = StObject.set(x, "EnableInternetAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableInternetAccessUndefined: Self = StObject.set(x, "EnableInternetAccess", js.undefined)
+    inline def setEnableInternetAccessUndefined: Self = StObject.set(x, "EnableInternetAccess", js.undefined)
     
-    @scala.inline
-    def setEnableMaintenanceMode(value: BooleanObject): Self = StObject.set(x, "EnableMaintenanceMode", value.asInstanceOf[js.Any])
+    inline def setEnableMaintenanceMode(value: BooleanObject): Self = StObject.set(x, "EnableMaintenanceMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableMaintenanceModeUndefined: Self = StObject.set(x, "EnableMaintenanceMode", js.undefined)
+    inline def setEnableMaintenanceModeUndefined: Self = StObject.set(x, "EnableMaintenanceMode", js.undefined)
     
-    @scala.inline
-    def setEnableWorkDocs(value: BooleanObject): Self = StObject.set(x, "EnableWorkDocs", value.asInstanceOf[js.Any])
+    inline def setEnableWorkDocs(value: BooleanObject): Self = StObject.set(x, "EnableWorkDocs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableWorkDocsUndefined: Self = StObject.set(x, "EnableWorkDocs", js.undefined)
+    inline def setEnableWorkDocsUndefined: Self = StObject.set(x, "EnableWorkDocs", js.undefined)
     
-    @scala.inline
-    def setUserEnabledAsLocalAdministrator(value: BooleanObject): Self = StObject.set(x, "UserEnabledAsLocalAdministrator", value.asInstanceOf[js.Any])
+    inline def setUserEnabledAsLocalAdministrator(value: BooleanObject): Self = StObject.set(x, "UserEnabledAsLocalAdministrator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserEnabledAsLocalAdministratorUndefined: Self = StObject.set(x, "UserEnabledAsLocalAdministrator", js.undefined)
+    inline def setUserEnabledAsLocalAdministratorUndefined: Self = StObject.set(x, "UserEnabledAsLocalAdministrator", js.undefined)
   }
 }

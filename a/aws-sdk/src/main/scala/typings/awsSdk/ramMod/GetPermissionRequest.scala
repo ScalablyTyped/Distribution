@@ -18,22 +18,17 @@ trait GetPermissionRequest extends StObject {
 }
 object GetPermissionRequest {
   
-  @scala.inline
-  def apply(permissionArn: String): GetPermissionRequest = {
+  inline def apply(permissionArn: String): GetPermissionRequest = {
     val __obj = js.Dynamic.literal(permissionArn = permissionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPermissionRequest]
   }
   
-  @scala.inline
-  implicit class GetPermissionRequestMutableBuilder[Self <: GetPermissionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetPermissionRequest](x: Self) {
     
-    @scala.inline
-    def setPermissionArn(value: String): Self = StObject.set(x, "permissionArn", value.asInstanceOf[js.Any])
+    inline def setPermissionArn(value: String): Self = StObject.set(x, "permissionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionVersion(value: Integer): Self = StObject.set(x, "permissionVersion", value.asInstanceOf[js.Any])
+    inline def setPermissionVersion(value: Integer): Self = StObject.set(x, "permissionVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionVersionUndefined: Self = StObject.set(x, "permissionVersion", js.undefined)
+    inline def setPermissionVersionUndefined: Self = StObject.set(x, "permissionVersion", js.undefined)
   }
 }

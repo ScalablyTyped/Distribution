@@ -22,23 +22,17 @@ object hostedFieldsMod {
   trait HostedFieldEventType extends StObject
   object HostedFieldEventType {
     
-    @scala.inline
-    def blur: typings.braintreeWeb.braintreeWebStrings.blur = "blur".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.blur]
+    inline def blur: typings.braintreeWeb.braintreeWebStrings.blur = "blur".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.blur]
     
-    @scala.inline
-    def cardTypeChange: typings.braintreeWeb.braintreeWebStrings.cardTypeChange = "cardTypeChange".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.cardTypeChange]
+    inline def cardTypeChange: typings.braintreeWeb.braintreeWebStrings.cardTypeChange = "cardTypeChange".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.cardTypeChange]
     
-    @scala.inline
-    def empty: typings.braintreeWeb.braintreeWebStrings.empty = "empty".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.empty]
+    inline def empty: typings.braintreeWeb.braintreeWebStrings.empty = "empty".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.empty]
     
-    @scala.inline
-    def focus: typings.braintreeWeb.braintreeWebStrings.focus = "focus".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.focus]
+    inline def focus: typings.braintreeWeb.braintreeWebStrings.focus = "focus".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.focus]
     
-    @scala.inline
-    def notEmpty: typings.braintreeWeb.braintreeWebStrings.notEmpty = "notEmpty".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.notEmpty]
+    inline def notEmpty: typings.braintreeWeb.braintreeWebStrings.notEmpty = "notEmpty".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.notEmpty]
     
-    @scala.inline
-    def validityChange: typings.braintreeWeb.braintreeWebStrings.validityChange = "validityChange".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.validityChange]
+    inline def validityChange: typings.braintreeWeb.braintreeWebStrings.validityChange = "validityChange".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.validityChange]
   }
   
   trait HostedFieldFieldOptions extends StObject {
@@ -57,44 +51,32 @@ object hostedFieldsMod {
   }
   object HostedFieldFieldOptions {
     
-    @scala.inline
-    def apply(cvv: HostedFieldsField, number: HostedFieldsField): HostedFieldFieldOptions = {
+    inline def apply(cvv: HostedFieldsField, number: HostedFieldsField): HostedFieldFieldOptions = {
       val __obj = js.Dynamic.literal(cvv = cvv.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
       __obj.asInstanceOf[HostedFieldFieldOptions]
     }
     
-    @scala.inline
-    implicit class HostedFieldFieldOptionsMutableBuilder[Self <: HostedFieldFieldOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HostedFieldFieldOptions](x: Self) {
       
-      @scala.inline
-      def setCvv(value: HostedFieldsField): Self = StObject.set(x, "cvv", value.asInstanceOf[js.Any])
+      inline def setCvv(value: HostedFieldsField): Self = StObject.set(x, "cvv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpirationDate(value: HostedFieldsField): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+      inline def setExpirationDate(value: HostedFieldsField): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpirationDateUndefined: Self = StObject.set(x, "expirationDate", js.undefined)
+      inline def setExpirationDateUndefined: Self = StObject.set(x, "expirationDate", js.undefined)
       
-      @scala.inline
-      def setExpirationMonth(value: HostedFieldsField): Self = StObject.set(x, "expirationMonth", value.asInstanceOf[js.Any])
+      inline def setExpirationMonth(value: HostedFieldsField): Self = StObject.set(x, "expirationMonth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpirationMonthUndefined: Self = StObject.set(x, "expirationMonth", js.undefined)
+      inline def setExpirationMonthUndefined: Self = StObject.set(x, "expirationMonth", js.undefined)
       
-      @scala.inline
-      def setExpirationYear(value: HostedFieldsField): Self = StObject.set(x, "expirationYear", value.asInstanceOf[js.Any])
+      inline def setExpirationYear(value: HostedFieldsField): Self = StObject.set(x, "expirationYear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpirationYearUndefined: Self = StObject.set(x, "expirationYear", js.undefined)
+      inline def setExpirationYearUndefined: Self = StObject.set(x, "expirationYear", js.undefined)
       
-      @scala.inline
-      def setNumber(value: HostedFieldsField): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: HostedFieldsField): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostalCode(value: HostedFieldsField): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
+      inline def setPostalCode(value: HostedFieldsField): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostalCodeUndefined: Self = StObject.set(x, "postalCode", js.undefined)
+      inline def setPostalCodeUndefined: Self = StObject.set(x, "postalCode", js.undefined)
     }
   }
   
@@ -319,8 +301,7 @@ object hostedFieldsMod {
   }
   object HostedFieldsAccountDetails {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bin: String,
       cardType: String,
       expirationMonth: String,
@@ -332,26 +313,19 @@ object hostedFieldsMod {
       __obj.asInstanceOf[HostedFieldsAccountDetails]
     }
     
-    @scala.inline
-    implicit class HostedFieldsAccountDetailsMutableBuilder[Self <: HostedFieldsAccountDetails] (val x: Self) extends AnyVal {
+    extension [Self <: HostedFieldsAccountDetails](x: Self) {
       
-      @scala.inline
-      def setBin(value: String): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
+      inline def setBin(value: String): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardType(value: String): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
+      inline def setCardType(value: String): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpirationMonth(value: String): Self = StObject.set(x, "expirationMonth", value.asInstanceOf[js.Any])
+      inline def setExpirationMonth(value: String): Self = StObject.set(x, "expirationMonth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpirationYear(value: String): Self = StObject.set(x, "expirationYear", value.asInstanceOf[js.Any])
+      inline def setExpirationYear(value: String): Self = StObject.set(x, "expirationYear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastFour(value: String): Self = StObject.set(x, "lastFour", value.asInstanceOf[js.Any])
+      inline def setLastFour(value: String): Self = StObject.set(x, "lastFour", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastTwo(value: String): Self = StObject.set(x, "lastTwo", value.asInstanceOf[js.Any])
+      inline def setLastTwo(value: String): Self = StObject.set(x, "lastTwo", value.asInstanceOf[js.Any])
     }
   }
   
@@ -363,20 +337,16 @@ object hostedFieldsMod {
   }
   object HostedFieldsCardCode {
     
-    @scala.inline
-    def apply(name: String, size: Double): HostedFieldsCardCode = {
+    inline def apply(name: String, size: Double): HostedFieldsCardCode = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[HostedFieldsCardCode]
     }
     
-    @scala.inline
-    implicit class HostedFieldsCardCodeMutableBuilder[Self <: HostedFieldsCardCode] (val x: Self) extends AnyVal {
+    extension [Self <: HostedFieldsCardCode](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
   
@@ -406,77 +376,54 @@ object hostedFieldsMod {
   }
   object HostedFieldsField {
     
-    @scala.inline
-    def apply(selector: String): HostedFieldsField = {
+    inline def apply(selector: String): HostedFieldsField = {
       val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any])
       __obj.asInstanceOf[HostedFieldsField]
     }
     
-    @scala.inline
-    implicit class HostedFieldsFieldMutableBuilder[Self <: HostedFieldsField] (val x: Self) extends AnyVal {
+    extension [Self <: HostedFieldsField](x: Self) {
       
-      @scala.inline
-      def setFormatInput(value: Boolean): Self = StObject.set(x, "formatInput", value.asInstanceOf[js.Any])
+      inline def setFormatInput(value: Boolean): Self = StObject.set(x, "formatInput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatInputUndefined: Self = StObject.set(x, "formatInput", js.undefined)
+      inline def setFormatInputUndefined: Self = StObject.set(x, "formatInput", js.undefined)
       
-      @scala.inline
-      def setMaskInput(value: Boolean | HostedFieldsFieldMaskInput): Self = StObject.set(x, "maskInput", value.asInstanceOf[js.Any])
+      inline def setMaskInput(value: Boolean | HostedFieldsFieldMaskInput): Self = StObject.set(x, "maskInput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskInputUndefined: Self = StObject.set(x, "maskInput", js.undefined)
+      inline def setMaskInputUndefined: Self = StObject.set(x, "maskInput", js.undefined)
       
-      @scala.inline
-      def setMaxCardLength(value: Double): Self = StObject.set(x, "maxCardLength", value.asInstanceOf[js.Any])
+      inline def setMaxCardLength(value: Double): Self = StObject.set(x, "maxCardLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxCardLengthUndefined: Self = StObject.set(x, "maxCardLength", js.undefined)
+      inline def setMaxCardLengthUndefined: Self = StObject.set(x, "maxCardLength", js.undefined)
       
-      @scala.inline
-      def setMaxlength(value: Double): Self = StObject.set(x, "maxlength", value.asInstanceOf[js.Any])
+      inline def setMaxlength(value: Double): Self = StObject.set(x, "maxlength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxlengthUndefined: Self = StObject.set(x, "maxlength", js.undefined)
+      inline def setMaxlengthUndefined: Self = StObject.set(x, "maxlength", js.undefined)
       
-      @scala.inline
-      def setMinlength(value: Double): Self = StObject.set(x, "minlength", value.asInstanceOf[js.Any])
+      inline def setMinlength(value: Double): Self = StObject.set(x, "minlength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinlengthUndefined: Self = StObject.set(x, "minlength", js.undefined)
+      inline def setMinlengthUndefined: Self = StObject.set(x, "minlength", js.undefined)
       
-      @scala.inline
-      def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setPrefill(value: String): Self = StObject.set(x, "prefill", value.asInstanceOf[js.Any])
+      inline def setPrefill(value: String): Self = StObject.set(x, "prefill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefillUndefined: Self = StObject.set(x, "prefill", js.undefined)
+      inline def setPrefillUndefined: Self = StObject.set(x, "prefill", js.undefined)
       
-      @scala.inline
-      def setRejectUnsupportedCards(value: Boolean): Self = StObject.set(x, "rejectUnsupportedCards", value.asInstanceOf[js.Any])
+      inline def setRejectUnsupportedCards(value: Boolean): Self = StObject.set(x, "rejectUnsupportedCards", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRejectUnsupportedCardsUndefined: Self = StObject.set(x, "rejectUnsupportedCards", js.undefined)
+      inline def setRejectUnsupportedCardsUndefined: Self = StObject.set(x, "rejectUnsupportedCards", js.undefined)
       
-      @scala.inline
-      def setSelect(value: Boolean | Options): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+      inline def setSelect(value: Boolean | Options): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+      inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
       
-      @scala.inline
-      def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -497,8 +444,7 @@ object hostedFieldsMod {
   }
   object HostedFieldsFieldDataFields {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cvv: HostedFieldsHostedFieldsFieldData,
       expirationDate: HostedFieldsHostedFieldsFieldData,
       expirationMonth: HostedFieldsHostedFieldsFieldData,
@@ -510,26 +456,19 @@ object hostedFieldsMod {
       __obj.asInstanceOf[HostedFieldsFieldDataFields]
     }
     
-    @scala.inline
-    implicit class HostedFieldsFieldDataFieldsMutableBuilder[Self <: HostedFieldsFieldDataFields] (val x: Self) extends AnyVal {
+    extension [Self <: HostedFieldsFieldDataFields](x: Self) {
       
-      @scala.inline
-      def setCvv(value: HostedFieldsHostedFieldsFieldData): Self = StObject.set(x, "cvv", value.asInstanceOf[js.Any])
+      inline def setCvv(value: HostedFieldsHostedFieldsFieldData): Self = StObject.set(x, "cvv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpirationDate(value: HostedFieldsHostedFieldsFieldData): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
+      inline def setExpirationDate(value: HostedFieldsHostedFieldsFieldData): Self = StObject.set(x, "expirationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpirationMonth(value: HostedFieldsHostedFieldsFieldData): Self = StObject.set(x, "expirationMonth", value.asInstanceOf[js.Any])
+      inline def setExpirationMonth(value: HostedFieldsHostedFieldsFieldData): Self = StObject.set(x, "expirationMonth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpirationYear(value: HostedFieldsHostedFieldsFieldData): Self = StObject.set(x, "expirationYear", value.asInstanceOf[js.Any])
+      inline def setExpirationYear(value: HostedFieldsHostedFieldsFieldData): Self = StObject.set(x, "expirationYear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumber(value: HostedFieldsHostedFieldsFieldData): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: HostedFieldsHostedFieldsFieldData): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostalCode(value: HostedFieldsHostedFieldsFieldData): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
+      inline def setPostalCode(value: HostedFieldsHostedFieldsFieldData): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -548,26 +487,20 @@ object hostedFieldsMod {
   }
   object HostedFieldsFieldMaskInput {
     
-    @scala.inline
-    def apply(): HostedFieldsFieldMaskInput = {
+    inline def apply(): HostedFieldsFieldMaskInput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HostedFieldsFieldMaskInput]
     }
     
-    @scala.inline
-    implicit class HostedFieldsFieldMaskInputMutableBuilder[Self <: HostedFieldsFieldMaskInput] (val x: Self) extends AnyVal {
+    extension [Self <: HostedFieldsFieldMaskInput](x: Self) {
       
-      @scala.inline
-      def setCharacter(value: String): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
+      inline def setCharacter(value: String): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharacterUndefined: Self = StObject.set(x, "character", js.undefined)
+      inline def setCharacterUndefined: Self = StObject.set(x, "character", js.undefined)
       
-      @scala.inline
-      def setShowLastFour(value: Boolean): Self = StObject.set(x, "showLastFour", value.asInstanceOf[js.Any])
+      inline def setShowLastFour(value: Boolean): Self = StObject.set(x, "showLastFour", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowLastFourUndefined: Self = StObject.set(x, "showLastFour", js.undefined)
+      inline def setShowLastFourUndefined: Self = StObject.set(x, "showLastFour", js.undefined)
     }
   }
   
@@ -581,24 +514,19 @@ object hostedFieldsMod {
   }
   object HostedFieldsHostedFieldsCard {
     
-    @scala.inline
-    def apply(code: HostedFieldsCardCode, niceType: String, `type`: String): HostedFieldsHostedFieldsCard = {
+    inline def apply(code: HostedFieldsCardCode, niceType: String, `type`: String): HostedFieldsHostedFieldsCard = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], niceType = niceType.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[HostedFieldsHostedFieldsCard]
     }
     
-    @scala.inline
-    implicit class HostedFieldsHostedFieldsCardMutableBuilder[Self <: HostedFieldsHostedFieldsCard] (val x: Self) extends AnyVal {
+    extension [Self <: HostedFieldsHostedFieldsCard](x: Self) {
       
-      @scala.inline
-      def setCode(value: HostedFieldsCardCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: HostedFieldsCardCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNiceType(value: String): Self = StObject.set(x, "niceType", value.asInstanceOf[js.Any])
+      inline def setNiceType(value: String): Self = StObject.set(x, "niceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -616,8 +544,7 @@ object hostedFieldsMod {
   }
   object HostedFieldsHostedFieldsFieldData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       container: HTMLElement,
       isEmpty: Boolean,
       isFocused: Boolean,
@@ -628,23 +555,17 @@ object hostedFieldsMod {
       __obj.asInstanceOf[HostedFieldsHostedFieldsFieldData]
     }
     
-    @scala.inline
-    implicit class HostedFieldsHostedFieldsFieldDataMutableBuilder[Self <: HostedFieldsHostedFieldsFieldData] (val x: Self) extends AnyVal {
+    extension [Self <: HostedFieldsHostedFieldsFieldData](x: Self) {
       
-      @scala.inline
-      def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEmpty(value: Boolean): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
+      inline def setIsEmpty(value: Boolean): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
+      inline def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPotentiallyValid(value: Boolean): Self = StObject.set(x, "isPotentiallyValid", value.asInstanceOf[js.Any])
+      inline def setIsPotentiallyValid(value: Boolean): Self = StObject.set(x, "isPotentiallyValid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+      inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -659,23 +580,17 @@ object hostedFieldsMod {
   trait HostedFieldsHostedFieldsFieldName extends StObject
   object HostedFieldsHostedFieldsFieldName {
     
-    @scala.inline
-    def cvv: typings.braintreeWeb.braintreeWebStrings.cvv = "cvv".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.cvv]
+    inline def cvv: typings.braintreeWeb.braintreeWebStrings.cvv = "cvv".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.cvv]
     
-    @scala.inline
-    def expirationDate: typings.braintreeWeb.braintreeWebStrings.expirationDate = "expirationDate".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.expirationDate]
+    inline def expirationDate: typings.braintreeWeb.braintreeWebStrings.expirationDate = "expirationDate".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.expirationDate]
     
-    @scala.inline
-    def expirationMonth: typings.braintreeWeb.braintreeWebStrings.expirationMonth = "expirationMonth".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.expirationMonth]
+    inline def expirationMonth: typings.braintreeWeb.braintreeWebStrings.expirationMonth = "expirationMonth".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.expirationMonth]
     
-    @scala.inline
-    def expirationYear: typings.braintreeWeb.braintreeWebStrings.expirationYear = "expirationYear".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.expirationYear]
+    inline def expirationYear: typings.braintreeWeb.braintreeWebStrings.expirationYear = "expirationYear".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.expirationYear]
     
-    @scala.inline
-    def number: typings.braintreeWeb.braintreeWebStrings.number = "number".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.number]
+    inline def number: typings.braintreeWeb.braintreeWebStrings.number = "number".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.number]
     
-    @scala.inline
-    def postalCode: typings.braintreeWeb.braintreeWebStrings.postalCode = "postalCode".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.postalCode]
+    inline def postalCode: typings.braintreeWeb.braintreeWebStrings.postalCode = "postalCode".asInstanceOf[typings.braintreeWeb.braintreeWebStrings.postalCode]
   }
   
   trait HostedFieldsStateObject extends StObject {
@@ -688,8 +603,7 @@ object hostedFieldsMod {
   }
   object HostedFieldsStateObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cards: js.Array[HostedFieldsHostedFieldsCard],
       emittedBy: HostedFieldsHostedFieldsFieldName,
       fields: HostedFieldsFieldDataFields
@@ -698,20 +612,15 @@ object hostedFieldsMod {
       __obj.asInstanceOf[HostedFieldsStateObject]
     }
     
-    @scala.inline
-    implicit class HostedFieldsStateObjectMutableBuilder[Self <: HostedFieldsStateObject] (val x: Self) extends AnyVal {
+    extension [Self <: HostedFieldsStateObject](x: Self) {
       
-      @scala.inline
-      def setCards(value: js.Array[HostedFieldsHostedFieldsCard]): Self = StObject.set(x, "cards", value.asInstanceOf[js.Any])
+      inline def setCards(value: js.Array[HostedFieldsHostedFieldsCard]): Self = StObject.set(x, "cards", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardsVarargs(value: HostedFieldsHostedFieldsCard*): Self = StObject.set(x, "cards", js.Array(value :_*))
+      inline def setCardsVarargs(value: HostedFieldsHostedFieldsCard*): Self = StObject.set(x, "cards", js.Array(value :_*))
       
-      @scala.inline
-      def setEmittedBy(value: HostedFieldsHostedFieldsFieldName): Self = StObject.set(x, "emittedBy", value.asInstanceOf[js.Any])
+      inline def setEmittedBy(value: HostedFieldsHostedFieldsFieldName): Self = StObject.set(x, "emittedBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFields(value: HostedFieldsFieldDataFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: HostedFieldsFieldDataFields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     }
   }
   
@@ -727,27 +636,21 @@ object hostedFieldsMod {
   }
   object HostedFieldsTokenizePayload {
     
-    @scala.inline
-    def apply(description: String, details: HostedFieldsAccountDetails, nonce: String, `type`: String): HostedFieldsTokenizePayload = {
+    inline def apply(description: String, details: HostedFieldsAccountDetails, nonce: String, `type`: String): HostedFieldsTokenizePayload = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[HostedFieldsTokenizePayload]
     }
     
-    @scala.inline
-    implicit class HostedFieldsTokenizePayloadMutableBuilder[Self <: HostedFieldsTokenizePayload] (val x: Self) extends AnyVal {
+    extension [Self <: HostedFieldsTokenizePayload](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetails(value: HostedFieldsAccountDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: HostedFieldsAccountDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

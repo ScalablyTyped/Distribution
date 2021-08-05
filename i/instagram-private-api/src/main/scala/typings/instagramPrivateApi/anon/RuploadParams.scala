@@ -14,22 +14,17 @@ trait RuploadParams extends StObject {
 }
 object RuploadParams {
   
-  @scala.inline
-  def apply(name: js.Any, ruploadParams: js.Any, waterfallId: js.Any): RuploadParams = {
+  inline def apply(name: js.Any, ruploadParams: js.Any, waterfallId: js.Any): RuploadParams = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], ruploadParams = ruploadParams.asInstanceOf[js.Any], waterfallId = waterfallId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuploadParams]
   }
   
-  @scala.inline
-  implicit class RuploadParamsMutableBuilder[Self <: RuploadParams] (val x: Self) extends AnyVal {
+  extension [Self <: RuploadParams](x: Self) {
     
-    @scala.inline
-    def setName(value: js.Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: js.Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuploadParams(value: js.Any): Self = StObject.set(x, "ruploadParams", value.asInstanceOf[js.Any])
+    inline def setRuploadParams(value: js.Any): Self = StObject.set(x, "ruploadParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaterfallId(value: js.Any): Self = StObject.set(x, "waterfallId", value.asInstanceOf[js.Any])
+    inline def setWaterfallId(value: js.Any): Self = StObject.set(x, "waterfallId", value.asInstanceOf[js.Any])
   }
 }

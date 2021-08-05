@@ -12,16 +12,13 @@ trait ICheckboxCellActionEventArgs
 }
 object ICheckboxCellActionEventArgs {
   
-  @scala.inline
-  def apply(checked: Boolean, column: Double, columnName: Double, row: Double): ICheckboxCellActionEventArgs = {
+  inline def apply(checked: Boolean, column: Double, columnName: Double, row: Double): ICheckboxCellActionEventArgs = {
     val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], column = column.asInstanceOf[js.Any], columnName = columnName.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICheckboxCellActionEventArgs]
   }
   
-  @scala.inline
-  implicit class ICheckboxCellActionEventArgsMutableBuilder[Self <: ICheckboxCellActionEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ICheckboxCellActionEventArgs](x: Self) {
     
-    @scala.inline
-    def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+    inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
   }
 }

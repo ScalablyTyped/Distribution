@@ -33,8 +33,7 @@ trait XSheetCellRange
 }
 object XSheetCellRange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Spreadsheet: XSpreadsheet,
     acquire: () => Unit,
     getCellByPosition: (Double, Double) => XCell,
@@ -48,13 +47,10 @@ object XSheetCellRange {
     __obj.asInstanceOf[XSheetCellRange]
   }
   
-  @scala.inline
-  implicit class XSheetCellRangeMutableBuilder[Self <: XSheetCellRange] (val x: Self) extends AnyVal {
+  extension [Self <: XSheetCellRange](x: Self) {
     
-    @scala.inline
-    def setGetSpreadsheet(value: () => XSpreadsheet): Self = StObject.set(x, "getSpreadsheet", js.Any.fromFunction0(value))
+    inline def setGetSpreadsheet(value: () => XSpreadsheet): Self = StObject.set(x, "getSpreadsheet", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSpreadsheet(value: XSpreadsheet): Self = StObject.set(x, "Spreadsheet", value.asInstanceOf[js.Any])
+    inline def setSpreadsheet(value: XSpreadsheet): Self = StObject.set(x, "Spreadsheet", value.asInstanceOf[js.Any])
   }
 }

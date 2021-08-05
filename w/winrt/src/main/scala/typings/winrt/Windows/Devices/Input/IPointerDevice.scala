@@ -22,8 +22,7 @@ trait IPointerDevice extends StObject {
 }
 object IPointerDevice {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isIntegrated: Boolean,
     maxContacts: Double,
     physicalDeviceRect: Rect,
@@ -35,25 +34,18 @@ object IPointerDevice {
     __obj.asInstanceOf[IPointerDevice]
   }
   
-  @scala.inline
-  implicit class IPointerDeviceMutableBuilder[Self <: IPointerDevice] (val x: Self) extends AnyVal {
+  extension [Self <: IPointerDevice](x: Self) {
     
-    @scala.inline
-    def setIsIntegrated(value: Boolean): Self = StObject.set(x, "isIntegrated", value.asInstanceOf[js.Any])
+    inline def setIsIntegrated(value: Boolean): Self = StObject.set(x, "isIntegrated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxContacts(value: Double): Self = StObject.set(x, "maxContacts", value.asInstanceOf[js.Any])
+    inline def setMaxContacts(value: Double): Self = StObject.set(x, "maxContacts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhysicalDeviceRect(value: Rect): Self = StObject.set(x, "physicalDeviceRect", value.asInstanceOf[js.Any])
+    inline def setPhysicalDeviceRect(value: Rect): Self = StObject.set(x, "physicalDeviceRect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointerDeviceType(value: PointerDeviceType): Self = StObject.set(x, "pointerDeviceType", value.asInstanceOf[js.Any])
+    inline def setPointerDeviceType(value: PointerDeviceType): Self = StObject.set(x, "pointerDeviceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenRect(value: Rect): Self = StObject.set(x, "screenRect", value.asInstanceOf[js.Any])
+    inline def setScreenRect(value: Rect): Self = StObject.set(x, "screenRect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedUsages(value: IVectorView[PointerDeviceUsage]): Self = StObject.set(x, "supportedUsages", value.asInstanceOf[js.Any])
+    inline def setSupportedUsages(value: IVectorView[PointerDeviceUsage]): Self = StObject.set(x, "supportedUsages", value.asInstanceOf[js.Any])
   }
 }

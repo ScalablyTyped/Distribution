@@ -9,8 +9,7 @@ trait IScatter
      with ICartesian
 object IScatter {
   
-  @scala.inline
-  def apply(): IScatter = {
+  inline def apply(): IScatter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IScatter]
   }

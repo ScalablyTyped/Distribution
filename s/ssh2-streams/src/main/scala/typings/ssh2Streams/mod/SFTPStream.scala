@@ -802,8 +802,7 @@ object SFTPStream {
     *
     * Returns `null` if conversion failed.
     */
-  @scala.inline
-  def flagsToString(flagsMask: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("flagsToString")(flagsMask.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def flagsToString(flagsMask: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("flagsToString")(flagsMask.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Converts string flags (e.g. `'r'`, `'a+'`, etc.) to the appropriate
@@ -811,6 +810,5 @@ object SFTPStream {
     *
     * Returns `null` if conversion failed.
     */
-  @scala.inline
-  def stringToFlags(flagsStr: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToFlags")(flagsStr.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def stringToFlags(flagsStr: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToFlags")(flagsStr.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

@@ -12,25 +12,19 @@ trait Prov extends StObject {
 }
 object Prov {
   
-  @scala.inline
-  def apply(): Prov = {
+  inline def apply(): Prov = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Prov]
   }
   
-  @scala.inline
-  implicit class ProvMutableBuilder[Self <: Prov] (val x: Self) extends AnyVal {
+  extension [Self <: Prov](x: Self) {
     
-    @scala.inline
-    def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
+    inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgUndefined: Self = StObject.set(x, "alg", js.undefined)
+    inline def setAlgUndefined: Self = StObject.set(x, "alg", js.undefined)
     
-    @scala.inline
-    def setProv(value: String): Self = StObject.set(x, "prov", value.asInstanceOf[js.Any])
+    inline def setProv(value: String): Self = StObject.set(x, "prov", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvUndefined: Self = StObject.set(x, "prov", js.undefined)
+    inline def setProvUndefined: Self = StObject.set(x, "prov", js.undefined)
   }
 }

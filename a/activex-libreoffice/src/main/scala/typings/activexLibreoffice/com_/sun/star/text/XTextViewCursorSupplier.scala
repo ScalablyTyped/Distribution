@@ -24,8 +24,7 @@ trait XTextViewCursorSupplier
 }
 object XTextViewCursorSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ViewCursor: XTextViewCursor,
     acquire: () => Unit,
     getViewCursor: () => XTextViewCursor,
@@ -36,13 +35,10 @@ object XTextViewCursorSupplier {
     __obj.asInstanceOf[XTextViewCursorSupplier]
   }
   
-  @scala.inline
-  implicit class XTextViewCursorSupplierMutableBuilder[Self <: XTextViewCursorSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XTextViewCursorSupplier](x: Self) {
     
-    @scala.inline
-    def setGetViewCursor(value: () => XTextViewCursor): Self = StObject.set(x, "getViewCursor", js.Any.fromFunction0(value))
+    inline def setGetViewCursor(value: () => XTextViewCursor): Self = StObject.set(x, "getViewCursor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setViewCursor(value: XTextViewCursor): Self = StObject.set(x, "ViewCursor", value.asInstanceOf[js.Any])
+    inline def setViewCursor(value: XTextViewCursor): Self = StObject.set(x, "ViewCursor", value.asInstanceOf[js.Any])
   }
 }

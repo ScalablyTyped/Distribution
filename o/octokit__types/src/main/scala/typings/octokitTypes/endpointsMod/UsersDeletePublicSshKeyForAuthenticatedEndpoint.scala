@@ -10,16 +10,13 @@ trait UsersDeletePublicSshKeyForAuthenticatedEndpoint extends StObject {
 }
 object UsersDeletePublicSshKeyForAuthenticatedEndpoint {
   
-  @scala.inline
-  def apply(key_id: Double): UsersDeletePublicSshKeyForAuthenticatedEndpoint = {
+  inline def apply(key_id: Double): UsersDeletePublicSshKeyForAuthenticatedEndpoint = {
     val __obj = js.Dynamic.literal(key_id = key_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsersDeletePublicSshKeyForAuthenticatedEndpoint]
   }
   
-  @scala.inline
-  implicit class UsersDeletePublicSshKeyForAuthenticatedEndpointMutableBuilder[Self <: UsersDeletePublicSshKeyForAuthenticatedEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: UsersDeletePublicSshKeyForAuthenticatedEndpoint](x: Self) {
     
-    @scala.inline
-    def setKey_id(value: Double): Self = StObject.set(x, "key_id", value.asInstanceOf[js.Any])
+    inline def setKey_id(value: Double): Self = StObject.set(x, "key_id", value.asInstanceOf[js.Any])
   }
 }

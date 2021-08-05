@@ -10,14 +10,11 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getSearch(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSearch")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getSearch(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSearch")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def isSerialisable(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSerialisable")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isSerialisable(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSerialisable")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def parseName(name: String): IParsedName = ^.asInstanceOf[js.Dynamic].applyDynamic("parseName")(name.asInstanceOf[js.Any]).asInstanceOf[IParsedName]
+  inline def parseName(name: String): IParsedName = ^.asInstanceOf[js.Dynamic].applyDynamic("parseName")(name.asInstanceOf[js.Any]).asInstanceOf[IParsedName]
   
   trait IParsedName extends StObject {
     
@@ -27,20 +24,16 @@ object utilsMod {
   }
   object IParsedName {
     
-    @scala.inline
-    def apply(hasBrackets: Boolean, name: String): IParsedName = {
+    inline def apply(hasBrackets: Boolean, name: String): IParsedName = {
       val __obj = js.Dynamic.literal(hasBrackets = hasBrackets.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[IParsedName]
     }
     
-    @scala.inline
-    implicit class IParsedNameMutableBuilder[Self <: IParsedName] (val x: Self) extends AnyVal {
+    extension [Self <: IParsedName](x: Self) {
       
-      @scala.inline
-      def setHasBrackets(value: Boolean): Self = StObject.set(x, "hasBrackets", value.asInstanceOf[js.Any])
+      inline def setHasBrackets(value: Boolean): Self = StObject.set(x, "hasBrackets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

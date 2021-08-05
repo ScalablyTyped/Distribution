@@ -12,19 +12,15 @@ trait Created extends StObject {
 }
 object Created {
   
-  @scala.inline
-  def apply(created: scala.Double, pendingUpload: scala.Double): Created = {
+  inline def apply(created: scala.Double, pendingUpload: scala.Double): Created = {
     val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], pendingUpload = pendingUpload.asInstanceOf[js.Any])
     __obj.asInstanceOf[Created]
   }
   
-  @scala.inline
-  implicit class CreatedMutableBuilder[Self <: Created] (val x: Self) extends AnyVal {
+  extension [Self <: Created](x: Self) {
     
-    @scala.inline
-    def setCreated(value: scala.Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: scala.Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingUpload(value: scala.Double): Self = StObject.set(x, "pendingUpload", value.asInstanceOf[js.Any])
+    inline def setPendingUpload(value: scala.Double): Self = StObject.set(x, "pendingUpload", value.asInstanceOf[js.Any])
   }
 }

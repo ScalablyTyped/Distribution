@@ -15,13 +15,13 @@ object localWorkspaceMod {
   
   @JSImport("@pulumi/pulumi/x/automation/localWorkspace", "LocalWorkspace")
   @js.native
-  class LocalWorkspace protected ()
+  /* private */ class LocalWorkspace ()
     extends StObject
        with Workspace {
     
-    var ready: js.Any = js.native
+    /* private */ var ready: js.Any = js.native
     
-    var runPulumiCmd: js.Any = js.native
+    /* private */ var runPulumiCmd: js.Any = js.native
   }
   /* static members */
   object LocalWorkspace {
@@ -36,8 +36,7 @@ object localWorkspaceMod {
       *
       * @param opts Options used to configure the Workspace
       */
-    @scala.inline
-    def create(opts: LocalWorkspaceOptions): js.Promise[LocalWorkspace] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LocalWorkspace]]
+    inline def create(opts: LocalWorkspaceOptions): js.Promise[LocalWorkspace] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[LocalWorkspace]]
     
     /**
       * Creates or selects an existing Stack with a LocalWorkspace utilizing the specified inline Pulumi CLI program.
@@ -48,10 +47,8 @@ object localWorkspaceMod {
       * @param args A set of arguments to intialize a Stack with and inline `PulumiFn` program that runs in process.
       * @param opts Additional customizations to be applied to the Workspace.
       */
-    @scala.inline
-    def createOrSelectStack(args: InlineProgramArgs): js.Promise[Stack] = ^.asInstanceOf[js.Dynamic].applyDynamic("createOrSelectStack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Stack]]
-    @scala.inline
-    def createOrSelectStack(args: InlineProgramArgs, opts: LocalWorkspaceOptions): js.Promise[Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("createOrSelectStack")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Stack]]
+    inline def createOrSelectStack(args: InlineProgramArgs): js.Promise[Stack] = ^.asInstanceOf[js.Dynamic].applyDynamic("createOrSelectStack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Stack]]
+    inline def createOrSelectStack(args: InlineProgramArgs, opts: LocalWorkspaceOptions): js.Promise[Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("createOrSelectStack")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Stack]]
     /**
       * Creates or selects an existing Stack with a LocalWorkspace utilizing the specified inline (in process) Pulumi CLI program.
       * This program is fully debuggable and runs in process. If no Project option is specified, default project settings
@@ -61,10 +58,8 @@ object localWorkspaceMod {
       * @param args A set of arguments to intialize a Stack with a pre-configured Pulumi CLI program that already exists on disk.
       * @param opts Additional customizations to be applied to the Workspace.
       */
-    @scala.inline
-    def createOrSelectStack(args: LocalProgramArgs): js.Promise[Stack] = ^.asInstanceOf[js.Dynamic].applyDynamic("createOrSelectStack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Stack]]
-    @scala.inline
-    def createOrSelectStack(args: LocalProgramArgs, opts: LocalWorkspaceOptions): js.Promise[Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("createOrSelectStack")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Stack]]
+    inline def createOrSelectStack(args: LocalProgramArgs): js.Promise[Stack] = ^.asInstanceOf[js.Dynamic].applyDynamic("createOrSelectStack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Stack]]
+    inline def createOrSelectStack(args: LocalProgramArgs, opts: LocalWorkspaceOptions): js.Promise[Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("createOrSelectStack")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Stack]]
     
     /**
       * Creates a Stack with a LocalWorkspace utilizing the specified inline (in process) Pulumi program.
@@ -75,10 +70,8 @@ object localWorkspaceMod {
       * @param args A set of arguments to intialize a Stack with and inline `PulumiFn` program that runs in process.
       * @param opts Additional customizations to be applied to the Workspace.
       */
-    @scala.inline
-    def createStack(args: InlineProgramArgs): js.Promise[Stack] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Stack]]
-    @scala.inline
-    def createStack(args: InlineProgramArgs, opts: LocalWorkspaceOptions): js.Promise[Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("createStack")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Stack]]
+    inline def createStack(args: InlineProgramArgs): js.Promise[Stack] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Stack]]
+    inline def createStack(args: InlineProgramArgs, opts: LocalWorkspaceOptions): js.Promise[Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("createStack")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Stack]]
     /**
       * Creates a Stack with a LocalWorkspace utilizing the local Pulumi CLI program from the specified workDir.
       * This is a way to create drivers on top of pre-existing Pulumi programs. This Workspace will pick up
@@ -87,22 +80,18 @@ object localWorkspaceMod {
       * @param args A set of arguments to intialize a Stack with a pre-configured Pulumi CLI program that already exists on disk.
       * @param opts Additional customizations to be applied to the Workspace.
       */
-    @scala.inline
-    def createStack(args: LocalProgramArgs): js.Promise[Stack] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Stack]]
-    @scala.inline
-    def createStack(args: LocalProgramArgs, opts: LocalWorkspaceOptions): js.Promise[Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("createStack")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Stack]]
+    inline def createStack(args: LocalProgramArgs): js.Promise[Stack] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Stack]]
+    inline def createStack(args: LocalProgramArgs, opts: LocalWorkspaceOptions): js.Promise[Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("createStack")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Stack]]
     
     @JSImport("@pulumi/pulumi/x/automation/localWorkspace", "LocalWorkspace.inlineSourceStackHelper")
     @js.native
     def inlineSourceStackHelper: js.Any = js.native
-    @scala.inline
-    def inlineSourceStackHelper_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inlineSourceStackHelper")(x.asInstanceOf[js.Any])
+    inline def inlineSourceStackHelper_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inlineSourceStackHelper")(x.asInstanceOf[js.Any])
     
     @JSImport("@pulumi/pulumi/x/automation/localWorkspace", "LocalWorkspace.localSourceStackHelper")
     @js.native
     def localSourceStackHelper: js.Any = js.native
-    @scala.inline
-    def localSourceStackHelper_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("localSourceStackHelper")(x.asInstanceOf[js.Any])
+    inline def localSourceStackHelper_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("localSourceStackHelper")(x.asInstanceOf[js.Any])
     
     /**
       * Selects an existing Stack with a LocalWorkspace utilizing the specified inline (in process) Pulumi program.
@@ -113,10 +102,8 @@ object localWorkspaceMod {
       * @param args A set of arguments to intialize a Stack with and inline `PulumiFn` program that runs in process.
       * @param opts Additional customizations to be applied to the Workspace.
       */
-    @scala.inline
-    def selectStack(args: InlineProgramArgs): js.Promise[Stack] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectStack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Stack]]
-    @scala.inline
-    def selectStack(args: InlineProgramArgs, opts: LocalWorkspaceOptions): js.Promise[Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("selectStack")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Stack]]
+    inline def selectStack(args: InlineProgramArgs): js.Promise[Stack] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectStack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Stack]]
+    inline def selectStack(args: InlineProgramArgs, opts: LocalWorkspaceOptions): js.Promise[Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("selectStack")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Stack]]
     /**
       * Selects a Stack with a LocalWorkspace utilizing the local Pulumi CLI program from the specified workDir.
       * This is a way to create drivers on top of pre-existing Pulumi programs. This Workspace will pick up
@@ -125,10 +112,8 @@ object localWorkspaceMod {
       * @param args A set of arguments to intialize a Stack with a pre-configured Pulumi CLI program that already exists on disk.
       * @param opts Additional customizations to be applied to the Workspace.
       */
-    @scala.inline
-    def selectStack(args: LocalProgramArgs): js.Promise[Stack] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectStack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Stack]]
-    @scala.inline
-    def selectStack(args: LocalProgramArgs, opts: LocalWorkspaceOptions): js.Promise[Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("selectStack")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Stack]]
+    inline def selectStack(args: LocalProgramArgs): js.Promise[Stack] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectStack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Stack]]
+    inline def selectStack(args: LocalProgramArgs, opts: LocalWorkspaceOptions): js.Promise[Stack] = (^.asInstanceOf[js.Dynamic].applyDynamic("selectStack")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Stack]]
   }
   
   trait InlineProgramArgs extends StObject {
@@ -155,23 +140,18 @@ object localWorkspaceMod {
   }
   object InlineProgramArgs {
     
-    @scala.inline
-    def apply(program: () => js.Promise[(Record[String, js.Any]) | Unit], projectName: String, stackName: String): InlineProgramArgs = {
+    inline def apply(program: () => js.Promise[(Record[String, js.Any]) | Unit], projectName: String, stackName: String): InlineProgramArgs = {
       val __obj = js.Dynamic.literal(program = js.Any.fromFunction0(program), projectName = projectName.asInstanceOf[js.Any], stackName = stackName.asInstanceOf[js.Any])
       __obj.asInstanceOf[InlineProgramArgs]
     }
     
-    @scala.inline
-    implicit class InlineProgramArgsMutableBuilder[Self <: InlineProgramArgs] (val x: Self) extends AnyVal {
+    extension [Self <: InlineProgramArgs](x: Self) {
       
-      @scala.inline
-      def setProgram(value: () => js.Promise[(Record[String, js.Any]) | Unit]): Self = StObject.set(x, "program", js.Any.fromFunction0(value))
+      inline def setProgram(value: () => js.Promise[(Record[String, js.Any]) | Unit]): Self = StObject.set(x, "program", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setProjectName(value: String): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
+      inline def setProjectName(value: String): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackName(value: String): Self = StObject.set(x, "stackName", value.asInstanceOf[js.Any])
+      inline def setStackName(value: String): Self = StObject.set(x, "stackName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -183,20 +163,16 @@ object localWorkspaceMod {
   }
   object LocalProgramArgs {
     
-    @scala.inline
-    def apply(stackName: String, workDir: String): LocalProgramArgs = {
+    inline def apply(stackName: String, workDir: String): LocalProgramArgs = {
       val __obj = js.Dynamic.literal(stackName = stackName.asInstanceOf[js.Any], workDir = workDir.asInstanceOf[js.Any])
       __obj.asInstanceOf[LocalProgramArgs]
     }
     
-    @scala.inline
-    implicit class LocalProgramArgsMutableBuilder[Self <: LocalProgramArgs] (val x: Self) extends AnyVal {
+    extension [Self <: LocalProgramArgs](x: Self) {
       
-      @scala.inline
-      def setStackName(value: String): Self = StObject.set(x, "stackName", value.asInstanceOf[js.Any])
+      inline def setStackName(value: String): Self = StObject.set(x, "stackName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkDir(value: String): Self = StObject.set(x, "workDir", value.asInstanceOf[js.Any])
+      inline def setWorkDir(value: String): Self = StObject.set(x, "workDir", value.asInstanceOf[js.Any])
     }
   }
   
@@ -241,56 +217,40 @@ object localWorkspaceMod {
   }
   object LocalWorkspaceOptions {
     
-    @scala.inline
-    def apply(): LocalWorkspaceOptions = {
+    inline def apply(): LocalWorkspaceOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LocalWorkspaceOptions]
     }
     
-    @scala.inline
-    implicit class LocalWorkspaceOptionsMutableBuilder[Self <: LocalWorkspaceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LocalWorkspaceOptions](x: Self) {
       
-      @scala.inline
-      def setEnvVars(value: StringDictionary[String]): Self = StObject.set(x, "envVars", value.asInstanceOf[js.Any])
+      inline def setEnvVars(value: StringDictionary[String]): Self = StObject.set(x, "envVars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvVarsUndefined: Self = StObject.set(x, "envVars", js.undefined)
+      inline def setEnvVarsUndefined: Self = StObject.set(x, "envVars", js.undefined)
       
-      @scala.inline
-      def setProgram(value: () => js.Promise[(Record[String, js.Any]) | Unit]): Self = StObject.set(x, "program", js.Any.fromFunction0(value))
+      inline def setProgram(value: () => js.Promise[(Record[String, js.Any]) | Unit]): Self = StObject.set(x, "program", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setProgramUndefined: Self = StObject.set(x, "program", js.undefined)
+      inline def setProgramUndefined: Self = StObject.set(x, "program", js.undefined)
       
-      @scala.inline
-      def setProjectSettings(value: ProjectSettings): Self = StObject.set(x, "projectSettings", value.asInstanceOf[js.Any])
+      inline def setProjectSettings(value: ProjectSettings): Self = StObject.set(x, "projectSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectSettingsUndefined: Self = StObject.set(x, "projectSettings", js.undefined)
+      inline def setProjectSettingsUndefined: Self = StObject.set(x, "projectSettings", js.undefined)
       
-      @scala.inline
-      def setPulumiHome(value: String): Self = StObject.set(x, "pulumiHome", value.asInstanceOf[js.Any])
+      inline def setPulumiHome(value: String): Self = StObject.set(x, "pulumiHome", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPulumiHomeUndefined: Self = StObject.set(x, "pulumiHome", js.undefined)
+      inline def setPulumiHomeUndefined: Self = StObject.set(x, "pulumiHome", js.undefined)
       
-      @scala.inline
-      def setSecretsProvider(value: String): Self = StObject.set(x, "secretsProvider", value.asInstanceOf[js.Any])
+      inline def setSecretsProvider(value: String): Self = StObject.set(x, "secretsProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretsProviderUndefined: Self = StObject.set(x, "secretsProvider", js.undefined)
+      inline def setSecretsProviderUndefined: Self = StObject.set(x, "secretsProvider", js.undefined)
       
-      @scala.inline
-      def setStackSettings(value: StringDictionary[StackSettings]): Self = StObject.set(x, "stackSettings", value.asInstanceOf[js.Any])
+      inline def setStackSettings(value: StringDictionary[StackSettings]): Self = StObject.set(x, "stackSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackSettingsUndefined: Self = StObject.set(x, "stackSettings", js.undefined)
+      inline def setStackSettingsUndefined: Self = StObject.set(x, "stackSettings", js.undefined)
       
-      @scala.inline
-      def setWorkDir(value: String): Self = StObject.set(x, "workDir", value.asInstanceOf[js.Any])
+      inline def setWorkDir(value: String): Self = StObject.set(x, "workDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkDirUndefined: Self = StObject.set(x, "workDir", js.undefined)
+      inline def setWorkDirUndefined: Self = StObject.set(x, "workDir", js.undefined)
     }
   }
 }

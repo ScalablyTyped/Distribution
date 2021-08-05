@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait htmlSelectExFlag extends StObject
 object htmlSelectExFlag {
   
-  @scala.inline
-  def htmlSelectExFlagHideSelectionInDesign: `1` = 1.asInstanceOf[`1`]
+  inline def htmlSelectExFlagHideSelectionInDesign: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def htmlSelectExFlagNone: `0` = 0.asInstanceOf[`0`]
+  inline def htmlSelectExFlagNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def htmlSelectExFlag_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def htmlSelectExFlag_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

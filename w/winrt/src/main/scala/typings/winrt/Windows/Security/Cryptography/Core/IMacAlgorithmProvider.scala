@@ -15,22 +15,17 @@ trait IMacAlgorithmProvider extends StObject {
 }
 object IMacAlgorithmProvider {
   
-  @scala.inline
-  def apply(algorithmName: String, createKey: IBuffer => CryptographicKey, macLength: Double): IMacAlgorithmProvider = {
+  inline def apply(algorithmName: String, createKey: IBuffer => CryptographicKey, macLength: Double): IMacAlgorithmProvider = {
     val __obj = js.Dynamic.literal(algorithmName = algorithmName.asInstanceOf[js.Any], createKey = js.Any.fromFunction1(createKey), macLength = macLength.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMacAlgorithmProvider]
   }
   
-  @scala.inline
-  implicit class IMacAlgorithmProviderMutableBuilder[Self <: IMacAlgorithmProvider] (val x: Self) extends AnyVal {
+  extension [Self <: IMacAlgorithmProvider](x: Self) {
     
-    @scala.inline
-    def setAlgorithmName(value: String): Self = StObject.set(x, "algorithmName", value.asInstanceOf[js.Any])
+    inline def setAlgorithmName(value: String): Self = StObject.set(x, "algorithmName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateKey(value: IBuffer => CryptographicKey): Self = StObject.set(x, "createKey", js.Any.fromFunction1(value))
+    inline def setCreateKey(value: IBuffer => CryptographicKey): Self = StObject.set(x, "createKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMacLength(value: Double): Self = StObject.set(x, "macLength", value.asInstanceOf[js.Any])
+    inline def setMacLength(value: Double): Self = StObject.set(x, "macLength", value.asInstanceOf[js.Any])
   }
 }

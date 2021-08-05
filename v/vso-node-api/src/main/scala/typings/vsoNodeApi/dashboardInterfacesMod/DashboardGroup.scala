@@ -27,8 +27,7 @@ trait DashboardGroup extends StObject {
 }
 object DashboardGroup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     dashboardEntries: js.Array[DashboardGroupEntry],
     permission: GroupMemberPermission,
@@ -39,25 +38,18 @@ object DashboardGroup {
     __obj.asInstanceOf[DashboardGroup]
   }
   
-  @scala.inline
-  implicit class DashboardGroupMutableBuilder[Self <: DashboardGroup] (val x: Self) extends AnyVal {
+  extension [Self <: DashboardGroup](x: Self) {
     
-    @scala.inline
-    def setDashboardEntries(value: js.Array[DashboardGroupEntry]): Self = StObject.set(x, "dashboardEntries", value.asInstanceOf[js.Any])
+    inline def setDashboardEntries(value: js.Array[DashboardGroupEntry]): Self = StObject.set(x, "dashboardEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashboardEntriesVarargs(value: DashboardGroupEntry*): Self = StObject.set(x, "dashboardEntries", js.Array(value :_*))
+    inline def setDashboardEntriesVarargs(value: DashboardGroupEntry*): Self = StObject.set(x, "dashboardEntries", js.Array(value :_*))
     
-    @scala.inline
-    def setPermission(value: GroupMemberPermission): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
+    inline def setPermission(value: GroupMemberPermission): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeamDashboardPermission(value: TeamDashboardPermission): Self = StObject.set(x, "teamDashboardPermission", value.asInstanceOf[js.Any])
+    inline def setTeamDashboardPermission(value: TeamDashboardPermission): Self = StObject.set(x, "teamDashboardPermission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

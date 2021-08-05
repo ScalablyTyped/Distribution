@@ -31,43 +31,31 @@ trait BitbucketEnv
 }
 object BitbucketEnv {
   
-  @scala.inline
-  def apply(branch: String, build: String, buildUrl: String, commit: String, root: String, slug: String): BitbucketEnv = {
+  inline def apply(branch: String, build: String, buildUrl: String, commit: String, root: String, slug: String): BitbucketEnv = {
     val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = true, name = "Bitbucket Pipelines", root = root.asInstanceOf[js.Any], service = "bitbucket", slug = slug.asInstanceOf[js.Any])
     __obj.asInstanceOf[BitbucketEnv]
   }
   
-  @scala.inline
-  implicit class BitbucketEnvMutableBuilder[Self <: BitbucketEnv] (val x: Self) extends AnyVal {
+  extension [Self <: BitbucketEnv](x: Self) {
     
-    @scala.inline
-    def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+    inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuild(value: String): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
+    inline def setBuild(value: String): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildUrl(value: String): Self = StObject.set(x, "buildUrl", value.asInstanceOf[js.Any])
+    inline def setBuildUrl(value: String): Self = StObject.set(x, "buildUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommit(value: String): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+    inline def setCommit(value: String): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: `Bitbucket Pipelines`): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: `Bitbucket Pipelines`): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setService(value: bitbucket): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: bitbucket): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
+    inline def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

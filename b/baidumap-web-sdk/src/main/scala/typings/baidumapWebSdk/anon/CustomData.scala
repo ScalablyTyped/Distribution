@@ -10,16 +10,13 @@ trait CustomData extends StObject {
 }
 object CustomData {
   
-  @scala.inline
-  def apply(customData: js.Any): CustomData = {
+  inline def apply(customData: js.Any): CustomData = {
     val __obj = js.Dynamic.literal(customData = customData.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomData]
   }
   
-  @scala.inline
-  implicit class CustomDataMutableBuilder[Self <: CustomData] (val x: Self) extends AnyVal {
+  extension [Self <: CustomData](x: Self) {
     
-    @scala.inline
-    def setCustomData(value: js.Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+    inline def setCustomData(value: js.Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
   }
 }

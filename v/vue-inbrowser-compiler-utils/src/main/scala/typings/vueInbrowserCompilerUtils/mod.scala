@@ -14,24 +14,17 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def adaptCreateElement(h: CreateElementFunction): CreateElementFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("adaptCreateElement")(h.asInstanceOf[js.Any]).asInstanceOf[CreateElementFunction]
+  inline def adaptCreateElement(h: CreateElementFunction): CreateElementFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("adaptCreateElement")(h.asInstanceOf[js.Any]).asInstanceOf[CreateElementFunction]
   
-  @scala.inline
-  def addScopedStyle(css: String, suffix: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addScopedStyle")(css.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addScopedStyle(css: String, suffix: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addScopedStyle")(css.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cleanName(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanName")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def cleanName(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanName")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def concatenate(src: StringDictionary[js.Any], otherObj: StringDictionary[js.Any]*): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatenate")(src.asInstanceOf[js.Any], otherObj.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def concatenate(src: StringDictionary[js.Any], otherObj: StringDictionary[js.Any]*): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("concatenate")(src.asInstanceOf[js.Any], otherObj.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
-  @scala.inline
-  def getDefaultExample(doc: ComponentDoc): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultExample")(doc.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getDefaultExample(doc: ComponentDoc): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultExample")(doc.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def isCodeVueSfc(code: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCodeVueSfc")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isCodeVueSfc(code: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCodeVueSfc")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def parseComponent(code: String): VsgSFCDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("parseComponent")(code.asInstanceOf[js.Any]).asInstanceOf[VsgSFCDescriptor]
+  inline def parseComponent(code: String): VsgSFCDescriptor = ^.asInstanceOf[js.Dynamic].applyDynamic("parseComponent")(code.asInstanceOf[js.Any]).asInstanceOf[VsgSFCDescriptor]
 }

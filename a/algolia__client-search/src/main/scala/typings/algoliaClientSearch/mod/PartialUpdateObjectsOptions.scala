@@ -13,19 +13,15 @@ trait PartialUpdateObjectsOptions extends StObject {
 }
 object PartialUpdateObjectsOptions {
   
-  @scala.inline
-  def apply(): PartialUpdateObjectsOptions = {
+  inline def apply(): PartialUpdateObjectsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialUpdateObjectsOptions]
   }
   
-  @scala.inline
-  implicit class PartialUpdateObjectsOptionsMutableBuilder[Self <: PartialUpdateObjectsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartialUpdateObjectsOptions](x: Self) {
     
-    @scala.inline
-    def setCreateIfNotExists(value: Boolean): Self = StObject.set(x, "createIfNotExists", value.asInstanceOf[js.Any])
+    inline def setCreateIfNotExists(value: Boolean): Self = StObject.set(x, "createIfNotExists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateIfNotExistsUndefined: Self = StObject.set(x, "createIfNotExists", js.undefined)
+    inline def setCreateIfNotExistsUndefined: Self = StObject.set(x, "createIfNotExists", js.undefined)
   }
 }

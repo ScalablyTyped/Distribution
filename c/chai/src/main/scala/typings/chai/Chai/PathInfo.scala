@@ -16,28 +16,21 @@ trait PathInfo extends StObject {
 }
 object PathInfo {
   
-  @scala.inline
-  def apply(exists: Boolean, name: String, parent: js.Object): PathInfo = {
+  inline def apply(exists: Boolean, name: String, parent: js.Object): PathInfo = {
     val __obj = js.Dynamic.literal(exists = exists.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathInfo]
   }
   
-  @scala.inline
-  implicit class PathInfoMutableBuilder[Self <: PathInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PathInfo](x: Self) {
     
-    @scala.inline
-    def setExists(value: Boolean): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
+    inline def setExists(value: Boolean): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Object): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Object): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

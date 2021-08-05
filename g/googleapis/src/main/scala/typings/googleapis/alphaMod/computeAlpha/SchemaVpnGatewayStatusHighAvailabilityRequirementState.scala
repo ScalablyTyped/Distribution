@@ -26,25 +26,19 @@ trait SchemaVpnGatewayStatusHighAvailabilityRequirementState extends StObject {
 }
 object SchemaVpnGatewayStatusHighAvailabilityRequirementState {
   
-  @scala.inline
-  def apply(): SchemaVpnGatewayStatusHighAvailabilityRequirementState = {
+  inline def apply(): SchemaVpnGatewayStatusHighAvailabilityRequirementState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVpnGatewayStatusHighAvailabilityRequirementState]
   }
   
-  @scala.inline
-  implicit class SchemaVpnGatewayStatusHighAvailabilityRequirementStateMutableBuilder[Self <: SchemaVpnGatewayStatusHighAvailabilityRequirementState] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaVpnGatewayStatusHighAvailabilityRequirementState](x: Self) {
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setUnsatisfiedReason(value: String): Self = StObject.set(x, "unsatisfiedReason", value.asInstanceOf[js.Any])
+    inline def setUnsatisfiedReason(value: String): Self = StObject.set(x, "unsatisfiedReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnsatisfiedReasonUndefined: Self = StObject.set(x, "unsatisfiedReason", js.undefined)
+    inline def setUnsatisfiedReasonUndefined: Self = StObject.set(x, "unsatisfiedReason", js.undefined)
   }
 }

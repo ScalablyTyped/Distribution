@@ -27,26 +27,20 @@ object listBoxMenuItemMod extends Shortcut {
   }
   object ListBoxMenuItemProps {
     
-    @scala.inline
-    def apply(): ListBoxMenuItemProps = {
+    inline def apply(): ListBoxMenuItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListBoxMenuItemProps]
     }
     
-    @scala.inline
-    implicit class ListBoxMenuItemPropsMutableBuilder[Self <: ListBoxMenuItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: ListBoxMenuItemProps](x: Self) {
       
-      @scala.inline
-      def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+      inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
+      inline def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
       
-      @scala.inline
-      def setIsHighlighted(value: Boolean): Self = StObject.set(x, "isHighlighted", value.asInstanceOf[js.Any])
+      inline def setIsHighlighted(value: Boolean): Self = StObject.set(x, "isHighlighted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHighlightedUndefined: Self = StObject.set(x, "isHighlighted", js.undefined)
+      inline def setIsHighlightedUndefined: Self = StObject.set(x, "isHighlighted", js.undefined)
     }
   }
   

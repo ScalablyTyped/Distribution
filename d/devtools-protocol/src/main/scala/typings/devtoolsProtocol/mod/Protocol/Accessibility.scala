@@ -64,77 +64,54 @@ object Accessibility {
   }
   object AXNode {
     
-    @scala.inline
-    def apply(ignored: Boolean, nodeId: AXNodeId): AXNode = {
+    inline def apply(ignored: Boolean, nodeId: AXNodeId): AXNode = {
       val __obj = js.Dynamic.literal(ignored = ignored.asInstanceOf[js.Any], nodeId = nodeId.asInstanceOf[js.Any])
       __obj.asInstanceOf[AXNode]
     }
     
-    @scala.inline
-    implicit class AXNodeMutableBuilder[Self <: AXNode] (val x: Self) extends AnyVal {
+    extension [Self <: AXNode](x: Self) {
       
-      @scala.inline
-      def setBackendDOMNodeId(value: BackendNodeId): Self = StObject.set(x, "backendDOMNodeId", value.asInstanceOf[js.Any])
+      inline def setBackendDOMNodeId(value: BackendNodeId): Self = StObject.set(x, "backendDOMNodeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackendDOMNodeIdUndefined: Self = StObject.set(x, "backendDOMNodeId", js.undefined)
+      inline def setBackendDOMNodeIdUndefined: Self = StObject.set(x, "backendDOMNodeId", js.undefined)
       
-      @scala.inline
-      def setChildIds(value: js.Array[AXNodeId]): Self = StObject.set(x, "childIds", value.asInstanceOf[js.Any])
+      inline def setChildIds(value: js.Array[AXNodeId]): Self = StObject.set(x, "childIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildIdsUndefined: Self = StObject.set(x, "childIds", js.undefined)
+      inline def setChildIdsUndefined: Self = StObject.set(x, "childIds", js.undefined)
       
-      @scala.inline
-      def setChildIdsVarargs(value: AXNodeId*): Self = StObject.set(x, "childIds", js.Array(value :_*))
+      inline def setChildIdsVarargs(value: AXNodeId*): Self = StObject.set(x, "childIds", js.Array(value :_*))
       
-      @scala.inline
-      def setDescription(value: AXValue): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: AXValue): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setIgnored(value: Boolean): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
+      inline def setIgnored(value: Boolean): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoredReasons(value: js.Array[AXProperty]): Self = StObject.set(x, "ignoredReasons", value.asInstanceOf[js.Any])
+      inline def setIgnoredReasons(value: js.Array[AXProperty]): Self = StObject.set(x, "ignoredReasons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoredReasonsUndefined: Self = StObject.set(x, "ignoredReasons", js.undefined)
+      inline def setIgnoredReasonsUndefined: Self = StObject.set(x, "ignoredReasons", js.undefined)
       
-      @scala.inline
-      def setIgnoredReasonsVarargs(value: AXProperty*): Self = StObject.set(x, "ignoredReasons", js.Array(value :_*))
+      inline def setIgnoredReasonsVarargs(value: AXProperty*): Self = StObject.set(x, "ignoredReasons", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: AXValue): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: AXValue): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNodeId(value: AXNodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+      inline def setNodeId(value: AXNodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperties(value: js.Array[AXProperty]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: js.Array[AXProperty]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+      inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
-      @scala.inline
-      def setPropertiesVarargs(value: AXProperty*): Self = StObject.set(x, "properties", js.Array(value :_*))
+      inline def setPropertiesVarargs(value: AXProperty*): Self = StObject.set(x, "properties", js.Array(value :_*))
       
-      @scala.inline
-      def setRole(value: AXValue): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: AXValue): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
-      @scala.inline
-      def setValue(value: AXValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: AXValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -154,20 +131,16 @@ object Accessibility {
   }
   object AXProperty {
     
-    @scala.inline
-    def apply(name: AXPropertyName, value: AXValue): AXProperty = {
+    inline def apply(name: AXPropertyName, value: AXValue): AXProperty = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[AXProperty]
     }
     
-    @scala.inline
-    implicit class AXPropertyMutableBuilder[Self <: AXProperty] (val x: Self) extends AnyVal {
+    extension [Self <: AXProperty](x: Self) {
       
-      @scala.inline
-      def setName(value: AXPropertyName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: AXPropertyName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: AXValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: AXValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -215,122 +188,83 @@ object Accessibility {
   trait AXPropertyName extends StObject
   object AXPropertyName {
     
-    @scala.inline
-    def activedescendant: typings.devtoolsProtocol.devtoolsProtocolStrings.activedescendant = "activedescendant".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.activedescendant]
+    inline def activedescendant: typings.devtoolsProtocol.devtoolsProtocolStrings.activedescendant = "activedescendant".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.activedescendant]
     
-    @scala.inline
-    def atomic: typings.devtoolsProtocol.devtoolsProtocolStrings.atomic = "atomic".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.atomic]
+    inline def atomic: typings.devtoolsProtocol.devtoolsProtocolStrings.atomic = "atomic".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.atomic]
     
-    @scala.inline
-    def autocomplete: typings.devtoolsProtocol.devtoolsProtocolStrings.autocomplete = "autocomplete".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.autocomplete]
+    inline def autocomplete: typings.devtoolsProtocol.devtoolsProtocolStrings.autocomplete = "autocomplete".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.autocomplete]
     
-    @scala.inline
-    def busy: typings.devtoolsProtocol.devtoolsProtocolStrings.busy = "busy".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.busy]
+    inline def busy: typings.devtoolsProtocol.devtoolsProtocolStrings.busy = "busy".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.busy]
     
-    @scala.inline
-    def checked: typings.devtoolsProtocol.devtoolsProtocolStrings.checked = "checked".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.checked]
+    inline def checked: typings.devtoolsProtocol.devtoolsProtocolStrings.checked = "checked".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.checked]
     
-    @scala.inline
-    def controls: typings.devtoolsProtocol.devtoolsProtocolStrings.controls = "controls".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.controls]
+    inline def controls: typings.devtoolsProtocol.devtoolsProtocolStrings.controls = "controls".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.controls]
     
-    @scala.inline
-    def describedby: typings.devtoolsProtocol.devtoolsProtocolStrings.describedby = "describedby".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.describedby]
+    inline def describedby: typings.devtoolsProtocol.devtoolsProtocolStrings.describedby = "describedby".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.describedby]
     
-    @scala.inline
-    def details: typings.devtoolsProtocol.devtoolsProtocolStrings.details = "details".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.details]
+    inline def details: typings.devtoolsProtocol.devtoolsProtocolStrings.details = "details".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.details]
     
-    @scala.inline
-    def disabled: typings.devtoolsProtocol.devtoolsProtocolStrings.disabled = "disabled".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.disabled]
+    inline def disabled: typings.devtoolsProtocol.devtoolsProtocolStrings.disabled = "disabled".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.disabled]
     
-    @scala.inline
-    def editable: typings.devtoolsProtocol.devtoolsProtocolStrings.editable = "editable".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.editable]
+    inline def editable: typings.devtoolsProtocol.devtoolsProtocolStrings.editable = "editable".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.editable]
     
-    @scala.inline
-    def errormessage: typings.devtoolsProtocol.devtoolsProtocolStrings.errormessage = "errormessage".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.errormessage]
+    inline def errormessage: typings.devtoolsProtocol.devtoolsProtocolStrings.errormessage = "errormessage".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.errormessage]
     
-    @scala.inline
-    def expanded: typings.devtoolsProtocol.devtoolsProtocolStrings.expanded = "expanded".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.expanded]
+    inline def expanded: typings.devtoolsProtocol.devtoolsProtocolStrings.expanded = "expanded".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.expanded]
     
-    @scala.inline
-    def flowto: typings.devtoolsProtocol.devtoolsProtocolStrings.flowto = "flowto".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.flowto]
+    inline def flowto: typings.devtoolsProtocol.devtoolsProtocolStrings.flowto = "flowto".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.flowto]
     
-    @scala.inline
-    def focusable: typings.devtoolsProtocol.devtoolsProtocolStrings.focusable = "focusable".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.focusable]
+    inline def focusable: typings.devtoolsProtocol.devtoolsProtocolStrings.focusable = "focusable".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.focusable]
     
-    @scala.inline
-    def focused: typings.devtoolsProtocol.devtoolsProtocolStrings.focused = "focused".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.focused]
+    inline def focused: typings.devtoolsProtocol.devtoolsProtocolStrings.focused = "focused".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.focused]
     
-    @scala.inline
-    def hasPopup: typings.devtoolsProtocol.devtoolsProtocolStrings.hasPopup = "hasPopup".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.hasPopup]
+    inline def hasPopup: typings.devtoolsProtocol.devtoolsProtocolStrings.hasPopup = "hasPopup".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.hasPopup]
     
-    @scala.inline
-    def hidden: typings.devtoolsProtocol.devtoolsProtocolStrings.hidden = "hidden".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.hidden]
+    inline def hidden: typings.devtoolsProtocol.devtoolsProtocolStrings.hidden = "hidden".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.hidden]
     
-    @scala.inline
-    def hiddenRoot: typings.devtoolsProtocol.devtoolsProtocolStrings.hiddenRoot = "hiddenRoot".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.hiddenRoot]
+    inline def hiddenRoot: typings.devtoolsProtocol.devtoolsProtocolStrings.hiddenRoot = "hiddenRoot".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.hiddenRoot]
     
-    @scala.inline
-    def invalid: typings.devtoolsProtocol.devtoolsProtocolStrings.invalid = "invalid".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.invalid]
+    inline def invalid: typings.devtoolsProtocol.devtoolsProtocolStrings.invalid = "invalid".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.invalid]
     
-    @scala.inline
-    def keyshortcuts: typings.devtoolsProtocol.devtoolsProtocolStrings.keyshortcuts = "keyshortcuts".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.keyshortcuts]
+    inline def keyshortcuts: typings.devtoolsProtocol.devtoolsProtocolStrings.keyshortcuts = "keyshortcuts".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.keyshortcuts]
     
-    @scala.inline
-    def labelledby: typings.devtoolsProtocol.devtoolsProtocolStrings.labelledby = "labelledby".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.labelledby]
+    inline def labelledby: typings.devtoolsProtocol.devtoolsProtocolStrings.labelledby = "labelledby".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.labelledby]
     
-    @scala.inline
-    def level: typings.devtoolsProtocol.devtoolsProtocolStrings.level = "level".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.level]
+    inline def level: typings.devtoolsProtocol.devtoolsProtocolStrings.level = "level".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.level]
     
-    @scala.inline
-    def live: typings.devtoolsProtocol.devtoolsProtocolStrings.live = "live".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.live]
+    inline def live: typings.devtoolsProtocol.devtoolsProtocolStrings.live = "live".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.live]
     
-    @scala.inline
-    def modal: typings.devtoolsProtocol.devtoolsProtocolStrings.modal = "modal".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.modal]
+    inline def modal: typings.devtoolsProtocol.devtoolsProtocolStrings.modal = "modal".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.modal]
     
-    @scala.inline
-    def multiline: typings.devtoolsProtocol.devtoolsProtocolStrings.multiline = "multiline".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.multiline]
+    inline def multiline: typings.devtoolsProtocol.devtoolsProtocolStrings.multiline = "multiline".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.multiline]
     
-    @scala.inline
-    def multiselectable: typings.devtoolsProtocol.devtoolsProtocolStrings.multiselectable = "multiselectable".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.multiselectable]
+    inline def multiselectable: typings.devtoolsProtocol.devtoolsProtocolStrings.multiselectable = "multiselectable".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.multiselectable]
     
-    @scala.inline
-    def orientation: typings.devtoolsProtocol.devtoolsProtocolStrings.orientation = "orientation".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.orientation]
+    inline def orientation: typings.devtoolsProtocol.devtoolsProtocolStrings.orientation = "orientation".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.orientation]
     
-    @scala.inline
-    def owns: typings.devtoolsProtocol.devtoolsProtocolStrings.owns = "owns".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.owns]
+    inline def owns: typings.devtoolsProtocol.devtoolsProtocolStrings.owns = "owns".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.owns]
     
-    @scala.inline
-    def pressed: typings.devtoolsProtocol.devtoolsProtocolStrings.pressed = "pressed".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.pressed]
+    inline def pressed: typings.devtoolsProtocol.devtoolsProtocolStrings.pressed = "pressed".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.pressed]
     
-    @scala.inline
-    def readonly: typings.devtoolsProtocol.devtoolsProtocolStrings.readonly = "readonly".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.readonly]
+    inline def readonly: typings.devtoolsProtocol.devtoolsProtocolStrings.readonly = "readonly".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.readonly]
     
-    @scala.inline
-    def relevant: typings.devtoolsProtocol.devtoolsProtocolStrings.relevant = "relevant".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.relevant]
+    inline def relevant: typings.devtoolsProtocol.devtoolsProtocolStrings.relevant = "relevant".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.relevant]
     
-    @scala.inline
-    def required: typings.devtoolsProtocol.devtoolsProtocolStrings.required = "required".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.required]
+    inline def required: typings.devtoolsProtocol.devtoolsProtocolStrings.required = "required".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.required]
     
-    @scala.inline
-    def roledescription: typings.devtoolsProtocol.devtoolsProtocolStrings.roledescription = "roledescription".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.roledescription]
+    inline def roledescription: typings.devtoolsProtocol.devtoolsProtocolStrings.roledescription = "roledescription".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.roledescription]
     
-    @scala.inline
-    def root: typings.devtoolsProtocol.devtoolsProtocolStrings.root = "root".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.root]
+    inline def root: typings.devtoolsProtocol.devtoolsProtocolStrings.root = "root".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.root]
     
-    @scala.inline
-    def selected: typings.devtoolsProtocol.devtoolsProtocolStrings.selected = "selected".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.selected]
+    inline def selected: typings.devtoolsProtocol.devtoolsProtocolStrings.selected = "selected".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.selected]
     
-    @scala.inline
-    def settable: typings.devtoolsProtocol.devtoolsProtocolStrings.settable = "settable".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.settable]
+    inline def settable: typings.devtoolsProtocol.devtoolsProtocolStrings.settable = "settable".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.settable]
     
-    @scala.inline
-    def valuemax: typings.devtoolsProtocol.devtoolsProtocolStrings.valuemax = "valuemax".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.valuemax]
+    inline def valuemax: typings.devtoolsProtocol.devtoolsProtocolStrings.valuemax = "valuemax".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.valuemax]
     
-    @scala.inline
-    def valuemin: typings.devtoolsProtocol.devtoolsProtocolStrings.valuemin = "valuemin".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.valuemin]
+    inline def valuemin: typings.devtoolsProtocol.devtoolsProtocolStrings.valuemin = "valuemin".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.valuemin]
     
-    @scala.inline
-    def valuetext: typings.devtoolsProtocol.devtoolsProtocolStrings.valuetext = "valuetext".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.valuetext]
+    inline def valuetext: typings.devtoolsProtocol.devtoolsProtocolStrings.valuetext = "valuetext".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.valuetext]
   }
   
   trait AXRelatedNode extends StObject {
@@ -352,29 +286,22 @@ object Accessibility {
   }
   object AXRelatedNode {
     
-    @scala.inline
-    def apply(backendDOMNodeId: BackendNodeId): AXRelatedNode = {
+    inline def apply(backendDOMNodeId: BackendNodeId): AXRelatedNode = {
       val __obj = js.Dynamic.literal(backendDOMNodeId = backendDOMNodeId.asInstanceOf[js.Any])
       __obj.asInstanceOf[AXRelatedNode]
     }
     
-    @scala.inline
-    implicit class AXRelatedNodeMutableBuilder[Self <: AXRelatedNode] (val x: Self) extends AnyVal {
+    extension [Self <: AXRelatedNode](x: Self) {
       
-      @scala.inline
-      def setBackendDOMNodeId(value: BackendNodeId): Self = StObject.set(x, "backendDOMNodeId", value.asInstanceOf[js.Any])
+      inline def setBackendDOMNodeId(value: BackendNodeId): Self = StObject.set(x, "backendDOMNodeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdref(value: String): Self = StObject.set(x, "idref", value.asInstanceOf[js.Any])
+      inline def setIdref(value: String): Self = StObject.set(x, "idref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdrefUndefined: Self = StObject.set(x, "idref", js.undefined)
+      inline def setIdrefUndefined: Self = StObject.set(x, "idref", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
   
@@ -402,42 +329,31 @@ object Accessibility {
   }
   object AXValue {
     
-    @scala.inline
-    def apply(`type`: AXValueType): AXValue = {
+    inline def apply(`type`: AXValueType): AXValue = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[AXValue]
     }
     
-    @scala.inline
-    implicit class AXValueMutableBuilder[Self <: AXValue] (val x: Self) extends AnyVal {
+    extension [Self <: AXValue](x: Self) {
       
-      @scala.inline
-      def setRelatedNodes(value: js.Array[AXRelatedNode]): Self = StObject.set(x, "relatedNodes", value.asInstanceOf[js.Any])
+      inline def setRelatedNodes(value: js.Array[AXRelatedNode]): Self = StObject.set(x, "relatedNodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelatedNodesUndefined: Self = StObject.set(x, "relatedNodes", js.undefined)
+      inline def setRelatedNodesUndefined: Self = StObject.set(x, "relatedNodes", js.undefined)
       
-      @scala.inline
-      def setRelatedNodesVarargs(value: AXRelatedNode*): Self = StObject.set(x, "relatedNodes", js.Array(value :_*))
+      inline def setRelatedNodesVarargs(value: AXRelatedNode*): Self = StObject.set(x, "relatedNodes", js.Array(value :_*))
       
-      @scala.inline
-      def setSources(value: js.Array[AXValueSource]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+      inline def setSources(value: js.Array[AXValueSource]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
+      inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
       
-      @scala.inline
-      def setSourcesVarargs(value: AXValueSource*): Self = StObject.set(x, "sources", js.Array(value :_*))
+      inline def setSourcesVarargs(value: AXValueSource*): Self = StObject.set(x, "sources", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: AXValueType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: AXValueType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -454,29 +370,21 @@ object Accessibility {
   trait AXValueNativeSourceType extends StObject
   object AXValueNativeSourceType {
     
-    @scala.inline
-    def figcaption: typings.devtoolsProtocol.devtoolsProtocolStrings.figcaption = "figcaption".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.figcaption]
+    inline def figcaption: typings.devtoolsProtocol.devtoolsProtocolStrings.figcaption = "figcaption".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.figcaption]
     
-    @scala.inline
-    def label: typings.devtoolsProtocol.devtoolsProtocolStrings.label = "label".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.label]
+    inline def label: typings.devtoolsProtocol.devtoolsProtocolStrings.label = "label".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.label]
     
-    @scala.inline
-    def labelfor: typings.devtoolsProtocol.devtoolsProtocolStrings.labelfor = "labelfor".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.labelfor]
+    inline def labelfor: typings.devtoolsProtocol.devtoolsProtocolStrings.labelfor = "labelfor".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.labelfor]
     
-    @scala.inline
-    def labelwrapped: typings.devtoolsProtocol.devtoolsProtocolStrings.labelwrapped = "labelwrapped".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.labelwrapped]
+    inline def labelwrapped: typings.devtoolsProtocol.devtoolsProtocolStrings.labelwrapped = "labelwrapped".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.labelwrapped]
     
-    @scala.inline
-    def legend: typings.devtoolsProtocol.devtoolsProtocolStrings.legend = "legend".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.legend]
+    inline def legend: typings.devtoolsProtocol.devtoolsProtocolStrings.legend = "legend".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.legend]
     
-    @scala.inline
-    def other: other_ = "other".asInstanceOf[other_]
+    inline def other: other_ = "other".asInstanceOf[other_]
     
-    @scala.inline
-    def tablecaption: typings.devtoolsProtocol.devtoolsProtocolStrings.tablecaption = "tablecaption".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.tablecaption]
+    inline def tablecaption: typings.devtoolsProtocol.devtoolsProtocolStrings.tablecaption = "tablecaption".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.tablecaption]
     
-    @scala.inline
-    def title: typings.devtoolsProtocol.devtoolsProtocolStrings.title = "title".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.title]
+    inline def title: typings.devtoolsProtocol.devtoolsProtocolStrings.title = "title".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.title]
   }
   
   trait AXValueSource extends StObject {
@@ -528,66 +436,47 @@ object Accessibility {
   }
   object AXValueSource {
     
-    @scala.inline
-    def apply(`type`: AXValueSourceType): AXValueSource = {
+    inline def apply(`type`: AXValueSourceType): AXValueSource = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[AXValueSource]
     }
     
-    @scala.inline
-    implicit class AXValueSourceMutableBuilder[Self <: AXValueSource] (val x: Self) extends AnyVal {
+    extension [Self <: AXValueSource](x: Self) {
       
-      @scala.inline
-      def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+      inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
+      inline def setAttributeUndefined: Self = StObject.set(x, "attribute", js.undefined)
       
-      @scala.inline
-      def setAttributeValue(value: AXValue): Self = StObject.set(x, "attributeValue", value.asInstanceOf[js.Any])
+      inline def setAttributeValue(value: AXValue): Self = StObject.set(x, "attributeValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeValueUndefined: Self = StObject.set(x, "attributeValue", js.undefined)
+      inline def setAttributeValueUndefined: Self = StObject.set(x, "attributeValue", js.undefined)
       
-      @scala.inline
-      def setInvalid(value: Boolean): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
+      inline def setInvalid(value: Boolean): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidReason(value: String): Self = StObject.set(x, "invalidReason", value.asInstanceOf[js.Any])
+      inline def setInvalidReason(value: String): Self = StObject.set(x, "invalidReason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidReasonUndefined: Self = StObject.set(x, "invalidReason", js.undefined)
+      inline def setInvalidReasonUndefined: Self = StObject.set(x, "invalidReason", js.undefined)
       
-      @scala.inline
-      def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
+      inline def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
       
-      @scala.inline
-      def setNativeSource(value: AXValueNativeSourceType): Self = StObject.set(x, "nativeSource", value.asInstanceOf[js.Any])
+      inline def setNativeSource(value: AXValueNativeSourceType): Self = StObject.set(x, "nativeSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNativeSourceUndefined: Self = StObject.set(x, "nativeSource", js.undefined)
+      inline def setNativeSourceUndefined: Self = StObject.set(x, "nativeSource", js.undefined)
       
-      @scala.inline
-      def setNativeSourceValue(value: AXValue): Self = StObject.set(x, "nativeSourceValue", value.asInstanceOf[js.Any])
+      inline def setNativeSourceValue(value: AXValue): Self = StObject.set(x, "nativeSourceValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNativeSourceValueUndefined: Self = StObject.set(x, "nativeSourceValue", js.undefined)
+      inline def setNativeSourceValueUndefined: Self = StObject.set(x, "nativeSourceValue", js.undefined)
       
-      @scala.inline
-      def setSuperseded(value: Boolean): Self = StObject.set(x, "superseded", value.asInstanceOf[js.Any])
+      inline def setSuperseded(value: Boolean): Self = StObject.set(x, "superseded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupersededUndefined: Self = StObject.set(x, "superseded", js.undefined)
+      inline def setSupersededUndefined: Self = StObject.set(x, "superseded", js.undefined)
       
-      @scala.inline
-      def setType(value: AXValueSourceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: AXValueSourceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: AXValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: AXValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -602,23 +491,17 @@ object Accessibility {
   trait AXValueSourceType extends StObject
   object AXValueSourceType {
     
-    @scala.inline
-    def attribute: typings.devtoolsProtocol.devtoolsProtocolStrings.attribute = "attribute".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.attribute]
+    inline def attribute: typings.devtoolsProtocol.devtoolsProtocolStrings.attribute = "attribute".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.attribute]
     
-    @scala.inline
-    def contents: typings.devtoolsProtocol.devtoolsProtocolStrings.contents = "contents".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.contents]
+    inline def contents: typings.devtoolsProtocol.devtoolsProtocolStrings.contents = "contents".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.contents]
     
-    @scala.inline
-    def `implicit`: typings.devtoolsProtocol.devtoolsProtocolStrings.`implicit` = "implicit".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`implicit`]
+    inline def `implicit`: typings.devtoolsProtocol.devtoolsProtocolStrings.`implicit` = "implicit".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.`implicit`]
     
-    @scala.inline
-    def placeholder: typings.devtoolsProtocol.devtoolsProtocolStrings.placeholder = "placeholder".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.placeholder]
+    inline def placeholder: typings.devtoolsProtocol.devtoolsProtocolStrings.placeholder = "placeholder".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.placeholder]
     
-    @scala.inline
-    def relatedElement: typings.devtoolsProtocol.devtoolsProtocolStrings.relatedElement = "relatedElement".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.relatedElement]
+    inline def relatedElement: typings.devtoolsProtocol.devtoolsProtocolStrings.relatedElement = "relatedElement".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.relatedElement]
     
-    @scala.inline
-    def style: typings.devtoolsProtocol.devtoolsProtocolStrings.style = "style".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.style]
+    inline def style: typings.devtoolsProtocol.devtoolsProtocolStrings.style = "style".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.style]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -643,56 +526,39 @@ object Accessibility {
   trait AXValueType extends StObject
   object AXValueType {
     
-    @scala.inline
-    def boolean: typings.devtoolsProtocol.devtoolsProtocolStrings.boolean = "boolean".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.boolean]
+    inline def boolean: typings.devtoolsProtocol.devtoolsProtocolStrings.boolean = "boolean".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.boolean]
     
-    @scala.inline
-    def booleanOrUndefined: typings.devtoolsProtocol.devtoolsProtocolStrings.booleanOrUndefined = "booleanOrUndefined".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.booleanOrUndefined]
+    inline def booleanOrUndefined: typings.devtoolsProtocol.devtoolsProtocolStrings.booleanOrUndefined = "booleanOrUndefined".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.booleanOrUndefined]
     
-    @scala.inline
-    def computedString: typings.devtoolsProtocol.devtoolsProtocolStrings.computedString = "computedString".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.computedString]
+    inline def computedString: typings.devtoolsProtocol.devtoolsProtocolStrings.computedString = "computedString".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.computedString]
     
-    @scala.inline
-    def domRelation: typings.devtoolsProtocol.devtoolsProtocolStrings.domRelation = "domRelation".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.domRelation]
+    inline def domRelation: typings.devtoolsProtocol.devtoolsProtocolStrings.domRelation = "domRelation".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.domRelation]
     
-    @scala.inline
-    def idref: typings.devtoolsProtocol.devtoolsProtocolStrings.idref = "idref".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.idref]
+    inline def idref: typings.devtoolsProtocol.devtoolsProtocolStrings.idref = "idref".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.idref]
     
-    @scala.inline
-    def idrefList: typings.devtoolsProtocol.devtoolsProtocolStrings.idrefList = "idrefList".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.idrefList]
+    inline def idrefList: typings.devtoolsProtocol.devtoolsProtocolStrings.idrefList = "idrefList".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.idrefList]
     
-    @scala.inline
-    def integer: typings.devtoolsProtocol.devtoolsProtocolStrings.integer = "integer".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.integer]
+    inline def integer: typings.devtoolsProtocol.devtoolsProtocolStrings.integer = "integer".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.integer]
     
-    @scala.inline
-    def internalRole: typings.devtoolsProtocol.devtoolsProtocolStrings.internalRole = "internalRole".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.internalRole]
+    inline def internalRole: typings.devtoolsProtocol.devtoolsProtocolStrings.internalRole = "internalRole".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.internalRole]
     
-    @scala.inline
-    def node: typings.devtoolsProtocol.devtoolsProtocolStrings.node = "node".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.node]
+    inline def node: typings.devtoolsProtocol.devtoolsProtocolStrings.node = "node".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.node]
     
-    @scala.inline
-    def nodeList: typings.devtoolsProtocol.devtoolsProtocolStrings.nodeList = "nodeList".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.nodeList]
+    inline def nodeList: typings.devtoolsProtocol.devtoolsProtocolStrings.nodeList = "nodeList".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.nodeList]
     
-    @scala.inline
-    def number: typings.devtoolsProtocol.devtoolsProtocolStrings.number = "number".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.number]
+    inline def number: typings.devtoolsProtocol.devtoolsProtocolStrings.number = "number".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.number]
     
-    @scala.inline
-    def role: typings.devtoolsProtocol.devtoolsProtocolStrings.role = "role".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.role]
+    inline def role: typings.devtoolsProtocol.devtoolsProtocolStrings.role = "role".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.role]
     
-    @scala.inline
-    def string: typings.devtoolsProtocol.devtoolsProtocolStrings.string = "string".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.string]
+    inline def string: typings.devtoolsProtocol.devtoolsProtocolStrings.string = "string".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.string]
     
-    @scala.inline
-    def token: typings.devtoolsProtocol.devtoolsProtocolStrings.token = "token".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.token]
+    inline def token: typings.devtoolsProtocol.devtoolsProtocolStrings.token = "token".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.token]
     
-    @scala.inline
-    def tokenList: typings.devtoolsProtocol.devtoolsProtocolStrings.tokenList = "tokenList".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.tokenList]
+    inline def tokenList: typings.devtoolsProtocol.devtoolsProtocolStrings.tokenList = "tokenList".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.tokenList]
     
-    @scala.inline
-    def tristate: typings.devtoolsProtocol.devtoolsProtocolStrings.tristate = "tristate".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.tristate]
+    inline def tristate: typings.devtoolsProtocol.devtoolsProtocolStrings.tristate = "tristate".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.tristate]
     
-    @scala.inline
-    def valueUndefined: typings.devtoolsProtocol.devtoolsProtocolStrings.valueUndefined = "valueUndefined".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.valueUndefined]
+    inline def valueUndefined: typings.devtoolsProtocol.devtoolsProtocolStrings.valueUndefined = "valueUndefined".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.valueUndefined]
   }
   
   trait GetFullAXTreeResponse extends StObject {
@@ -701,20 +567,16 @@ object Accessibility {
   }
   object GetFullAXTreeResponse {
     
-    @scala.inline
-    def apply(nodes: js.Array[AXNode]): GetFullAXTreeResponse = {
+    inline def apply(nodes: js.Array[AXNode]): GetFullAXTreeResponse = {
       val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetFullAXTreeResponse]
     }
     
-    @scala.inline
-    implicit class GetFullAXTreeResponseMutableBuilder[Self <: GetFullAXTreeResponse] (val x: Self) extends AnyVal {
+    extension [Self <: GetFullAXTreeResponse](x: Self) {
       
-      @scala.inline
-      def setNodes(value: js.Array[AXNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: js.Array[AXNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodesVarargs(value: AXNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: AXNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     }
   }
   
@@ -742,38 +604,28 @@ object Accessibility {
   }
   object GetPartialAXTreeRequest {
     
-    @scala.inline
-    def apply(): GetPartialAXTreeRequest = {
+    inline def apply(): GetPartialAXTreeRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetPartialAXTreeRequest]
     }
     
-    @scala.inline
-    implicit class GetPartialAXTreeRequestMutableBuilder[Self <: GetPartialAXTreeRequest] (val x: Self) extends AnyVal {
+    extension [Self <: GetPartialAXTreeRequest](x: Self) {
       
-      @scala.inline
-      def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
+      inline def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackendNodeIdUndefined: Self = StObject.set(x, "backendNodeId", js.undefined)
+      inline def setBackendNodeIdUndefined: Self = StObject.set(x, "backendNodeId", js.undefined)
       
-      @scala.inline
-      def setFetchRelatives(value: Boolean): Self = StObject.set(x, "fetchRelatives", value.asInstanceOf[js.Any])
+      inline def setFetchRelatives(value: Boolean): Self = StObject.set(x, "fetchRelatives", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchRelativesUndefined: Self = StObject.set(x, "fetchRelatives", js.undefined)
+      inline def setFetchRelativesUndefined: Self = StObject.set(x, "fetchRelatives", js.undefined)
       
-      @scala.inline
-      def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+      inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
+      inline def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
       
-      @scala.inline
-      def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+      inline def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+      inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     }
   }
   
@@ -787,20 +639,16 @@ object Accessibility {
   }
   object GetPartialAXTreeResponse {
     
-    @scala.inline
-    def apply(nodes: js.Array[AXNode]): GetPartialAXTreeResponse = {
+    inline def apply(nodes: js.Array[AXNode]): GetPartialAXTreeResponse = {
       val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetPartialAXTreeResponse]
     }
     
-    @scala.inline
-    implicit class GetPartialAXTreeResponseMutableBuilder[Self <: GetPartialAXTreeResponse] (val x: Self) extends AnyVal {
+    extension [Self <: GetPartialAXTreeResponse](x: Self) {
       
-      @scala.inline
-      def setNodes(value: js.Array[AXNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: js.Array[AXNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodesVarargs(value: AXNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: AXNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     }
   }
   
@@ -833,44 +681,32 @@ object Accessibility {
   }
   object QueryAXTreeRequest {
     
-    @scala.inline
-    def apply(): QueryAXTreeRequest = {
+    inline def apply(): QueryAXTreeRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[QueryAXTreeRequest]
     }
     
-    @scala.inline
-    implicit class QueryAXTreeRequestMutableBuilder[Self <: QueryAXTreeRequest] (val x: Self) extends AnyVal {
+    extension [Self <: QueryAXTreeRequest](x: Self) {
       
-      @scala.inline
-      def setAccessibleName(value: String): Self = StObject.set(x, "accessibleName", value.asInstanceOf[js.Any])
+      inline def setAccessibleName(value: String): Self = StObject.set(x, "accessibleName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessibleNameUndefined: Self = StObject.set(x, "accessibleName", js.undefined)
+      inline def setAccessibleNameUndefined: Self = StObject.set(x, "accessibleName", js.undefined)
       
-      @scala.inline
-      def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
+      inline def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackendNodeIdUndefined: Self = StObject.set(x, "backendNodeId", js.undefined)
+      inline def setBackendNodeIdUndefined: Self = StObject.set(x, "backendNodeId", js.undefined)
       
-      @scala.inline
-      def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+      inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
+      inline def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
       
-      @scala.inline
-      def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+      inline def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+      inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
       
-      @scala.inline
-      def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     }
   }
   
@@ -884,20 +720,16 @@ object Accessibility {
   }
   object QueryAXTreeResponse {
     
-    @scala.inline
-    def apply(nodes: js.Array[AXNode]): QueryAXTreeResponse = {
+    inline def apply(nodes: js.Array[AXNode]): QueryAXTreeResponse = {
       val __obj = js.Dynamic.literal(nodes = nodes.asInstanceOf[js.Any])
       __obj.asInstanceOf[QueryAXTreeResponse]
     }
     
-    @scala.inline
-    implicit class QueryAXTreeResponseMutableBuilder[Self <: QueryAXTreeResponse] (val x: Self) extends AnyVal {
+    extension [Self <: QueryAXTreeResponse](x: Self) {
       
-      @scala.inline
-      def setNodes(value: js.Array[AXNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: js.Array[AXNode]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodesVarargs(value: AXNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: AXNode*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     }
   }
 }

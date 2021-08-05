@@ -82,8 +82,7 @@ trait keyinPermissionPermission extends StObject {
 }
 object keyinPermissionPermission {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     androidDotpermissionDotACCESS_COARSE_LOCATION: PermissionStatus,
     androidDotpermissionDotACCESS_FINE_LOCATION: PermissionStatus,
     androidDotpermissionDotBODY_SENSORS: PermissionStatus,
@@ -137,79 +136,54 @@ object keyinPermissionPermission {
     __obj.asInstanceOf[keyinPermissionPermission]
   }
   
-  @scala.inline
-  implicit class keyinPermissionPermissionMutableBuilder[Self <: keyinPermissionPermission] (val x: Self) extends AnyVal {
+  extension [Self <: keyinPermissionPermission](x: Self) {
     
-    @scala.inline
-    def setAndroidDotpermissionDotACCESS_COARSE_LOCATION(value: PermissionStatus): Self = StObject.set(x, "android.permission.ACCESS_COARSE_LOCATION", value.asInstanceOf[js.Any])
+    inline def setAndroidDotpermissionDotACCESS_COARSE_LOCATION(value: PermissionStatus): Self = StObject.set(x, "android.permission.ACCESS_COARSE_LOCATION", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidDotpermissionDotACCESS_FINE_LOCATION(value: PermissionStatus): Self = StObject.set(x, "android.permission.ACCESS_FINE_LOCATION", value.asInstanceOf[js.Any])
+    inline def setAndroidDotpermissionDotACCESS_FINE_LOCATION(value: PermissionStatus): Self = StObject.set(x, "android.permission.ACCESS_FINE_LOCATION", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidDotpermissionDotBODY_SENSORS(value: PermissionStatus): Self = StObject.set(x, "android.permission.BODY_SENSORS", value.asInstanceOf[js.Any])
+    inline def setAndroidDotpermissionDotBODY_SENSORS(value: PermissionStatus): Self = StObject.set(x, "android.permission.BODY_SENSORS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidDotpermissionDotCALL_PHONE(value: PermissionStatus): Self = StObject.set(x, "android.permission.CALL_PHONE", value.asInstanceOf[js.Any])
+    inline def setAndroidDotpermissionDotCALL_PHONE(value: PermissionStatus): Self = StObject.set(x, "android.permission.CALL_PHONE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidDotpermissionDotCAMERA(value: PermissionStatus): Self = StObject.set(x, "android.permission.CAMERA", value.asInstanceOf[js.Any])
+    inline def setAndroidDotpermissionDotCAMERA(value: PermissionStatus): Self = StObject.set(x, "android.permission.CAMERA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidDotpermissionDotGET_ACCOUNTS(value: PermissionStatus): Self = StObject.set(x, "android.permission.GET_ACCOUNTS", value.asInstanceOf[js.Any])
+    inline def setAndroidDotpermissionDotGET_ACCOUNTS(value: PermissionStatus): Self = StObject.set(x, "android.permission.GET_ACCOUNTS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidDotpermissionDotPROCESS_OUTGOING_CALLS(value: PermissionStatus): Self = StObject.set(x, "android.permission.PROCESS_OUTGOING_CALLS", value.asInstanceOf[js.Any])
+    inline def setAndroidDotpermissionDotPROCESS_OUTGOING_CALLS(value: PermissionStatus): Self = StObject.set(x, "android.permission.PROCESS_OUTGOING_CALLS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidDotpermissionDotREAD_CALENDAR(value: PermissionStatus): Self = StObject.set(x, "android.permission.READ_CALENDAR", value.asInstanceOf[js.Any])
+    inline def setAndroidDotpermissionDotREAD_CALENDAR(value: PermissionStatus): Self = StObject.set(x, "android.permission.READ_CALENDAR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidDotpermissionDotREAD_CALL_LOG(value: PermissionStatus): Self = StObject.set(x, "android.permission.READ_CALL_LOG", value.asInstanceOf[js.Any])
+    inline def setAndroidDotpermissionDotREAD_CALL_LOG(value: PermissionStatus): Self = StObject.set(x, "android.permission.READ_CALL_LOG", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidDotpermissionDotREAD_CONTACTS(value: PermissionStatus): Self = StObject.set(x, "android.permission.READ_CONTACTS", value.asInstanceOf[js.Any])
+    inline def setAndroidDotpermissionDotREAD_CONTACTS(value: PermissionStatus): Self = StObject.set(x, "android.permission.READ_CONTACTS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidDotpermissionDotREAD_EXTERNAL_STORAGE(value: PermissionStatus): Self = StObject.set(x, "android.permission.READ_EXTERNAL_STORAGE", value.asInstanceOf[js.Any])
+    inline def setAndroidDotpermissionDotREAD_EXTERNAL_STORAGE(value: PermissionStatus): Self = StObject.set(x, "android.permission.READ_EXTERNAL_STORAGE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidDotpermissionDotREAD_PHONE_STATE(value: PermissionStatus): Self = StObject.set(x, "android.permission.READ_PHONE_STATE", value.asInstanceOf[js.Any])
+    inline def setAndroidDotpermissionDotREAD_PHONE_STATE(value: PermissionStatus): Self = StObject.set(x, "android.permission.READ_PHONE_STATE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidDotpermissionDotREAD_SMS(value: PermissionStatus): Self = StObject.set(x, "android.permission.READ_SMS", value.asInstanceOf[js.Any])
+    inline def setAndroidDotpermissionDotREAD_SMS(value: PermissionStatus): Self = StObject.set(x, "android.permission.READ_SMS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidDotpermissionDotRECEIVE_MMS(value: PermissionStatus): Self = StObject.set(x, "android.permission.RECEIVE_MMS", value.asInstanceOf[js.Any])
+    inline def setAndroidDotpermissionDotRECEIVE_MMS(value: PermissionStatus): Self = StObject.set(x, "android.permission.RECEIVE_MMS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidDotpermissionDotRECEIVE_SMS(value: PermissionStatus): Self = StObject.set(x, "android.permission.RECEIVE_SMS", value.asInstanceOf[js.Any])
+    inline def setAndroidDotpermissionDotRECEIVE_SMS(value: PermissionStatus): Self = StObject.set(x, "android.permission.RECEIVE_SMS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidDotpermissionDotRECEIVE_WAP_PUSH(value: PermissionStatus): Self = StObject.set(x, "android.permission.RECEIVE_WAP_PUSH", value.asInstanceOf[js.Any])
+    inline def setAndroidDotpermissionDotRECEIVE_WAP_PUSH(value: PermissionStatus): Self = StObject.set(x, "android.permission.RECEIVE_WAP_PUSH", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidDotpermissionDotRECORD_AUDIO(value: PermissionStatus): Self = StObject.set(x, "android.permission.RECORD_AUDIO", value.asInstanceOf[js.Any])
+    inline def setAndroidDotpermissionDotRECORD_AUDIO(value: PermissionStatus): Self = StObject.set(x, "android.permission.RECORD_AUDIO", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidDotpermissionDotSEND_SMS(value: PermissionStatus): Self = StObject.set(x, "android.permission.SEND_SMS", value.asInstanceOf[js.Any])
+    inline def setAndroidDotpermissionDotSEND_SMS(value: PermissionStatus): Self = StObject.set(x, "android.permission.SEND_SMS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidDotpermissionDotUSE_SIP(value: PermissionStatus): Self = StObject.set(x, "android.permission.USE_SIP", value.asInstanceOf[js.Any])
+    inline def setAndroidDotpermissionDotUSE_SIP(value: PermissionStatus): Self = StObject.set(x, "android.permission.USE_SIP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidDotpermissionDotWRITE_CALENDAR(value: PermissionStatus): Self = StObject.set(x, "android.permission.WRITE_CALENDAR", value.asInstanceOf[js.Any])
+    inline def setAndroidDotpermissionDotWRITE_CALENDAR(value: PermissionStatus): Self = StObject.set(x, "android.permission.WRITE_CALENDAR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidDotpermissionDotWRITE_CALL_LOG(value: PermissionStatus): Self = StObject.set(x, "android.permission.WRITE_CALL_LOG", value.asInstanceOf[js.Any])
+    inline def setAndroidDotpermissionDotWRITE_CALL_LOG(value: PermissionStatus): Self = StObject.set(x, "android.permission.WRITE_CALL_LOG", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidDotpermissionDotWRITE_CONTACTS(value: PermissionStatus): Self = StObject.set(x, "android.permission.WRITE_CONTACTS", value.asInstanceOf[js.Any])
+    inline def setAndroidDotpermissionDotWRITE_CONTACTS(value: PermissionStatus): Self = StObject.set(x, "android.permission.WRITE_CONTACTS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidDotpermissionDotWRITE_EXTERNAL_STORAGE(value: PermissionStatus): Self = StObject.set(x, "android.permission.WRITE_EXTERNAL_STORAGE", value.asInstanceOf[js.Any])
+    inline def setAndroidDotpermissionDotWRITE_EXTERNAL_STORAGE(value: PermissionStatus): Self = StObject.set(x, "android.permission.WRITE_EXTERNAL_STORAGE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComDotandroidDotvoicemailDotpermissionDotADD_VOICEMAIL(value: PermissionStatus): Self = StObject.set(x, "com.android.voicemail.permission.ADD_VOICEMAIL", value.asInstanceOf[js.Any])
+    inline def setComDotandroidDotvoicemailDotpermissionDotADD_VOICEMAIL(value: PermissionStatus): Self = StObject.set(x, "com.android.voicemail.permission.ADD_VOICEMAIL", value.asInstanceOf[js.Any])
   }
 }

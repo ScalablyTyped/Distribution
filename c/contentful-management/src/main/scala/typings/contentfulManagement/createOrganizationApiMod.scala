@@ -13,8 +13,7 @@ object createOrganizationApiMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasHttp: Http): CreateAppDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasHttp.asInstanceOf[js.Any]).asInstanceOf[CreateAppDefinition]
+  inline def default(hasHttp: Http): CreateAppDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasHttp.asInstanceOf[js.Any]).asInstanceOf[CreateAppDefinition]
   
   type ContentfulOrganizationAPI = ReturnType[js.Function1[/* hasHttp */ Http, CreateAppDefinition]]
 }

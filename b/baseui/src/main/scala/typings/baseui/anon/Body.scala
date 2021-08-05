@@ -14,31 +14,23 @@ trait Body extends StObject {
 }
 object Body {
   
-  @scala.inline
-  def apply(): Body = {
+  inline def apply(): Body = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Body]
   }
   
-  @scala.inline
-  implicit class BodyMutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
+  extension [Self <: Body](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+    inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+    inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

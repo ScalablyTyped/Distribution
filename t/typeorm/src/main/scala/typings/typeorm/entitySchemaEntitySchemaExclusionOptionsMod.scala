@@ -20,23 +20,18 @@ object entitySchemaEntitySchemaExclusionOptionsMod {
   }
   object EntitySchemaExclusionOptions {
     
-    @scala.inline
-    def apply(expression: String): EntitySchemaExclusionOptions = {
+    inline def apply(expression: String): EntitySchemaExclusionOptions = {
       val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
       __obj.asInstanceOf[EntitySchemaExclusionOptions]
     }
     
-    @scala.inline
-    implicit class EntitySchemaExclusionOptionsMutableBuilder[Self <: EntitySchemaExclusionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: EntitySchemaExclusionOptions](x: Self) {
       
-      @scala.inline
-      def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+      inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
 }

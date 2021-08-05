@@ -18,9 +18,7 @@ object Renderer {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getDefaultTheme(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultTheme")().asInstanceOf[String]
+  inline def getDefaultTheme(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultTheme")().asInstanceOf[String]
   
-  @scala.inline
-  def getThemeDirectory(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeDirectory")().asInstanceOf[String]
+  inline def getThemeDirectory(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getThemeDirectory")().asInstanceOf[String]
 }

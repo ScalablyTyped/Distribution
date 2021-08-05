@@ -20,8 +20,7 @@ trait ScriptingCompleteResult extends StObject {
 }
 object ScriptingCompleteResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canceled: Boolean,
     errorDetails: String,
     errorMessage: String,
@@ -33,25 +32,18 @@ object ScriptingCompleteResult {
     __obj.asInstanceOf[ScriptingCompleteResult]
   }
   
-  @scala.inline
-  implicit class ScriptingCompleteResultMutableBuilder[Self <: ScriptingCompleteResult] (val x: Self) extends AnyVal {
+  extension [Self <: ScriptingCompleteResult](x: Self) {
     
-    @scala.inline
-    def setCanceled(value: Boolean): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
+    inline def setCanceled(value: Boolean): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorDetails(value: String): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
+    inline def setErrorDetails(value: String): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasError(value: Boolean): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
+    inline def setHasError(value: Boolean): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }
 }

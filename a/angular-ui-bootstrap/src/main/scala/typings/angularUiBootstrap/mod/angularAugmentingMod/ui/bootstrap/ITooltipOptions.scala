@@ -57,55 +57,39 @@ trait ITooltipOptions extends StObject {
 }
 object ITooltipOptions {
   
-  @scala.inline
-  def apply(): ITooltipOptions = {
+  inline def apply(): ITooltipOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITooltipOptions]
   }
   
-  @scala.inline
-  implicit class ITooltipOptionsMutableBuilder[Self <: ITooltipOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ITooltipOptions](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    @scala.inline
-    def setAppendToBody(value: Boolean): Self = StObject.set(x, "appendToBody", value.asInstanceOf[js.Any])
+    inline def setAppendToBody(value: Boolean): Self = StObject.set(x, "appendToBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppendToBodyUndefined: Self = StObject.set(x, "appendToBody", js.undefined)
+    inline def setAppendToBodyUndefined: Self = StObject.set(x, "appendToBody", js.undefined)
     
-    @scala.inline
-    def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+    inline def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+    inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
     
-    @scala.inline
-    def setPopupCloseDelay(value: Double): Self = StObject.set(x, "popupCloseDelay", value.asInstanceOf[js.Any])
+    inline def setPopupCloseDelay(value: Double): Self = StObject.set(x, "popupCloseDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopupCloseDelayUndefined: Self = StObject.set(x, "popupCloseDelay", js.undefined)
+    inline def setPopupCloseDelayUndefined: Self = StObject.set(x, "popupCloseDelay", js.undefined)
     
-    @scala.inline
-    def setPopupDelay(value: Double): Self = StObject.set(x, "popupDelay", value.asInstanceOf[js.Any])
+    inline def setPopupDelay(value: Double): Self = StObject.set(x, "popupDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopupDelayUndefined: Self = StObject.set(x, "popupDelay", js.undefined)
+    inline def setPopupDelayUndefined: Self = StObject.set(x, "popupDelay", js.undefined)
     
-    @scala.inline
-    def setTrigger(value: String): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+    inline def setTrigger(value: String): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
+    inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
     
-    @scala.inline
-    def setUseContentExp(value: Boolean): Self = StObject.set(x, "useContentExp", value.asInstanceOf[js.Any])
+    inline def setUseContentExp(value: Boolean): Self = StObject.set(x, "useContentExp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseContentExpUndefined: Self = StObject.set(x, "useContentExp", js.undefined)
+    inline def setUseContentExpUndefined: Self = StObject.set(x, "useContentExp", js.undefined)
   }
 }

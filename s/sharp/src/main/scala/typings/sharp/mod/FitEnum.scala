@@ -23,28 +23,21 @@ trait FitEnum extends StObject {
 }
 object FitEnum {
   
-  @scala.inline
-  def apply(): FitEnum = {
+  inline def apply(): FitEnum = {
     val __obj = js.Dynamic.literal(contain = "contain", cover = "cover", fill = "fill", inside = "inside", outside = "outside")
     __obj.asInstanceOf[FitEnum]
   }
   
-  @scala.inline
-  implicit class FitEnumMutableBuilder[Self <: FitEnum] (val x: Self) extends AnyVal {
+  extension [Self <: FitEnum](x: Self) {
     
-    @scala.inline
-    def setContain(value: contain): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
+    inline def setContain(value: contain): Self = StObject.set(x, "contain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCover(value: cover): Self = StObject.set(x, "cover", value.asInstanceOf[js.Any])
+    inline def setCover(value: cover): Self = StObject.set(x, "cover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFill(value: fill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: fill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInside(value: inside): Self = StObject.set(x, "inside", value.asInstanceOf[js.Any])
+    inline def setInside(value: inside): Self = StObject.set(x, "inside", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutside(value: outside): Self = StObject.set(x, "outside", value.asInstanceOf[js.Any])
+    inline def setOutside(value: outside): Self = StObject.set(x, "outside", value.asInstanceOf[js.Any])
   }
 }

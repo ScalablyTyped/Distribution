@@ -59,8 +59,7 @@ trait SubTotalDescriptor
 }
 object SubTotalDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BindFormatsToContent: Boolean,
     Count: Double,
     ElementType: `type`,
@@ -94,31 +93,22 @@ object SubTotalDescriptor {
     __obj.asInstanceOf[SubTotalDescriptor]
   }
   
-  @scala.inline
-  implicit class SubTotalDescriptorMutableBuilder[Self <: SubTotalDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: SubTotalDescriptor](x: Self) {
     
-    @scala.inline
-    def setBindFormatsToContent(value: Boolean): Self = StObject.set(x, "BindFormatsToContent", value.asInstanceOf[js.Any])
+    inline def setBindFormatsToContent(value: Boolean): Self = StObject.set(x, "BindFormatsToContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableSort(value: Boolean): Self = StObject.set(x, "EnableSort", value.asInstanceOf[js.Any])
+    inline def setEnableSort(value: Boolean): Self = StObject.set(x, "EnableSort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableUserSortList(value: Boolean): Self = StObject.set(x, "EnableUserSortList", value.asInstanceOf[js.Any])
+    inline def setEnableUserSortList(value: Boolean): Self = StObject.set(x, "EnableUserSortList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertPageBreaks(value: Boolean): Self = StObject.set(x, "InsertPageBreaks", value.asInstanceOf[js.Any])
+    inline def setInsertPageBreaks(value: Boolean): Self = StObject.set(x, "InsertPageBreaks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCaseSensitive(value: Boolean): Self = StObject.set(x, "IsCaseSensitive", value.asInstanceOf[js.Any])
+    inline def setIsCaseSensitive(value: Boolean): Self = StObject.set(x, "IsCaseSensitive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFieldCount(value: Double): Self = StObject.set(x, "MaxFieldCount", value.asInstanceOf[js.Any])
+    inline def setMaxFieldCount(value: Double): Self = StObject.set(x, "MaxFieldCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortAscending(value: Boolean): Self = StObject.set(x, "SortAscending", value.asInstanceOf[js.Any])
+    inline def setSortAscending(value: Boolean): Self = StObject.set(x, "SortAscending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserSortListIndex(value: Double): Self = StObject.set(x, "UserSortListIndex", value.asInstanceOf[js.Any])
+    inline def setUserSortListIndex(value: Double): Self = StObject.set(x, "UserSortListIndex", value.asInstanceOf[js.Any])
   }
 }

@@ -42,85 +42,59 @@ trait FileName extends StObject {
 }
 object FileName {
   
-  @scala.inline
-  def apply(): FileName = {
+  inline def apply(): FileName = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileName]
   }
   
-  @scala.inline
-  implicit class FileNameMutableBuilder[Self <: FileName] (val x: Self) extends AnyVal {
+  extension [Self <: FileName](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
-    @scala.inline
-    def setFormat(value: GIF | JPEG | PDF | PNG | SVG): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: GIF | JPEG | PDF | PNG | SVG): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setGridLayout(value: Boolean): Self = StObject.set(x, "gridLayout", value.asInstanceOf[js.Any])
+    inline def setGridLayout(value: Boolean): Self = StObject.set(x, "gridLayout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridLayoutUndefined: Self = StObject.set(x, "gridLayout", js.undefined)
+    inline def setGridLayoutUndefined: Self = StObject.set(x, "gridLayout", js.undefined)
     
-    @scala.inline
-    def setHorizontalAlignment(value: center | left | right): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
+    inline def setHorizontalAlignment(value: center | left | right): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
+    inline def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
     
-    @scala.inline
-    def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    @scala.inline
-    def setOnExported(value: js.Function): Self = StObject.set(x, "onExported", value.asInstanceOf[js.Any])
+    inline def setOnExported(value: js.Function): Self = StObject.set(x, "onExported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnExportedUndefined: Self = StObject.set(x, "onExported", js.undefined)
+    inline def setOnExportedUndefined: Self = StObject.set(x, "onExported", js.undefined)
     
-    @scala.inline
-    def setOnExporting(value: js.Function): Self = StObject.set(x, "onExporting", value.asInstanceOf[js.Any])
+    inline def setOnExporting(value: js.Function): Self = StObject.set(x, "onExporting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnExportingUndefined: Self = StObject.set(x, "onExporting", js.undefined)
+    inline def setOnExportingUndefined: Self = StObject.set(x, "onExporting", js.undefined)
     
-    @scala.inline
-    def setOnFileSaving(value: js.Function): Self = StObject.set(x, "onFileSaving", value.asInstanceOf[js.Any])
+    inline def setOnFileSaving(value: js.Function): Self = StObject.set(x, "onFileSaving", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnFileSavingUndefined: Self = StObject.set(x, "onFileSaving", js.undefined)
+    inline def setOnFileSavingUndefined: Self = StObject.set(x, "onFileSaving", js.undefined)
     
-    @scala.inline
-    def setProxyUrl(value: String): Self = StObject.set(x, "proxyUrl", value.asInstanceOf[js.Any])
+    inline def setProxyUrl(value: String): Self = StObject.set(x, "proxyUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProxyUrlUndefined: Self = StObject.set(x, "proxyUrl", js.undefined)
+    inline def setProxyUrlUndefined: Self = StObject.set(x, "proxyUrl", js.undefined)
     
-    @scala.inline
-    def setSvgToCanvas(value: js.Function): Self = StObject.set(x, "svgToCanvas", value.asInstanceOf[js.Any])
+    inline def setSvgToCanvas(value: js.Function): Self = StObject.set(x, "svgToCanvas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvgToCanvasUndefined: Self = StObject.set(x, "svgToCanvas", js.undefined)
+    inline def setSvgToCanvasUndefined: Self = StObject.set(x, "svgToCanvas", js.undefined)
     
-    @scala.inline
-    def setVerticalAlignment(value: bottom | center | top): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
+    inline def setVerticalAlignment(value: bottom | center | top): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
+    inline def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
   }
 }

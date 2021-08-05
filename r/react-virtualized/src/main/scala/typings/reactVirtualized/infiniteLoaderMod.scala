@@ -30,13 +30,11 @@ object infiniteLoaderMod {
     @JSImport("react-virtualized/dist/commonjs/InfiniteLoader", "InfiniteLoader.defaultProps")
     @js.native
     def defaultProps: MinimumBatchSize = js.native
-    @scala.inline
-    def defaultProps_=(x: MinimumBatchSize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: MinimumBatchSize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("react-virtualized/dist/commonjs/InfiniteLoader", "InfiniteLoader.propTypes")
     @js.native
     def propTypes: IsRowLoaded = js.native
-    @scala.inline
-    def propTypes_=(x: IsRowLoaded): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: IsRowLoaded): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
 }

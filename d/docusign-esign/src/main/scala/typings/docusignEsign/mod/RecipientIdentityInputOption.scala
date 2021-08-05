@@ -14,34 +14,25 @@ trait RecipientIdentityInputOption extends StObject {
 }
 object RecipientIdentityInputOption {
   
-  @scala.inline
-  def apply(): RecipientIdentityInputOption = {
+  inline def apply(): RecipientIdentityInputOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecipientIdentityInputOption]
   }
   
-  @scala.inline
-  implicit class RecipientIdentityInputOptionMutableBuilder[Self <: RecipientIdentityInputOption] (val x: Self) extends AnyVal {
+  extension [Self <: RecipientIdentityInputOption](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPhoneNumberList(value: js.Array[RecipientIdentityPhoneNumber]): Self = StObject.set(x, "phoneNumberList", value.asInstanceOf[js.Any])
+    inline def setPhoneNumberList(value: js.Array[RecipientIdentityPhoneNumber]): Self = StObject.set(x, "phoneNumberList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNumberListUndefined: Self = StObject.set(x, "phoneNumberList", js.undefined)
+    inline def setPhoneNumberListUndefined: Self = StObject.set(x, "phoneNumberList", js.undefined)
     
-    @scala.inline
-    def setPhoneNumberListVarargs(value: RecipientIdentityPhoneNumber*): Self = StObject.set(x, "phoneNumberList", js.Array(value :_*))
+    inline def setPhoneNumberListVarargs(value: RecipientIdentityPhoneNumber*): Self = StObject.set(x, "phoneNumberList", js.Array(value :_*))
     
-    @scala.inline
-    def setValueType(value: String): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
+    inline def setValueType(value: String): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueTypeUndefined: Self = StObject.set(x, "valueType", js.undefined)
+    inline def setValueTypeUndefined: Self = StObject.set(x, "valueType", js.undefined)
   }
 }

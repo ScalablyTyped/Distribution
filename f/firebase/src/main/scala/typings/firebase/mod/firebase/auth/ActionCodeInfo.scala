@@ -57,20 +57,16 @@ trait ActionCodeInfo extends StObject {
 }
 object ActionCodeInfo {
   
-  @scala.inline
-  def apply(data: Email, operation: String): ActionCodeInfo = {
+  inline def apply(data: Email, operation: String): ActionCodeInfo = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionCodeInfo]
   }
   
-  @scala.inline
-  implicit class ActionCodeInfoMutableBuilder[Self <: ActionCodeInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ActionCodeInfo](x: Self) {
     
-    @scala.inline
-    def setData(value: Email): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Email): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
   }
   
   type Operation = String

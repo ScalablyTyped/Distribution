@@ -82,85 +82,59 @@ trait MessageBoxOptions extends StObject {
 }
 object MessageBoxOptions {
   
-  @scala.inline
-  def apply(message: String): MessageBoxOptions = {
+  inline def apply(message: String): MessageBoxOptions = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageBoxOptions]
   }
   
-  @scala.inline
-  implicit class MessageBoxOptionsMutableBuilder[Self <: MessageBoxOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MessageBoxOptions](x: Self) {
     
-    @scala.inline
-    def setButtons(value: js.Array[String]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: js.Array[String]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+    inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    @scala.inline
-    def setButtonsVarargs(value: String*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: String*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
-    @scala.inline
-    def setCancelId(value: Double): Self = StObject.set(x, "cancelId", value.asInstanceOf[js.Any])
+    inline def setCancelId(value: Double): Self = StObject.set(x, "cancelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelIdUndefined: Self = StObject.set(x, "cancelId", js.undefined)
+    inline def setCancelIdUndefined: Self = StObject.set(x, "cancelId", js.undefined)
     
-    @scala.inline
-    def setCheckboxChecked(value: Boolean): Self = StObject.set(x, "checkboxChecked", value.asInstanceOf[js.Any])
+    inline def setCheckboxChecked(value: Boolean): Self = StObject.set(x, "checkboxChecked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckboxCheckedUndefined: Self = StObject.set(x, "checkboxChecked", js.undefined)
+    inline def setCheckboxCheckedUndefined: Self = StObject.set(x, "checkboxChecked", js.undefined)
     
-    @scala.inline
-    def setCheckboxLabel(value: String): Self = StObject.set(x, "checkboxLabel", value.asInstanceOf[js.Any])
+    inline def setCheckboxLabel(value: String): Self = StObject.set(x, "checkboxLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckboxLabelUndefined: Self = StObject.set(x, "checkboxLabel", js.undefined)
+    inline def setCheckboxLabelUndefined: Self = StObject.set(x, "checkboxLabel", js.undefined)
     
-    @scala.inline
-    def setDefaultId(value: Double): Self = StObject.set(x, "defaultId", value.asInstanceOf[js.Any])
+    inline def setDefaultId(value: Double): Self = StObject.set(x, "defaultId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultIdUndefined: Self = StObject.set(x, "defaultId", js.undefined)
+    inline def setDefaultIdUndefined: Self = StObject.set(x, "defaultId", js.undefined)
     
-    @scala.inline
-    def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+    inline def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
+    inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
     
-    @scala.inline
-    def setIcon(value: NativeImage_): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: NativeImage_): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoLink(value: Boolean): Self = StObject.set(x, "noLink", value.asInstanceOf[js.Any])
+    inline def setNoLink(value: Boolean): Self = StObject.set(x, "noLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoLinkUndefined: Self = StObject.set(x, "noLink", js.undefined)
+    inline def setNoLinkUndefined: Self = StObject.set(x, "noLink", js.undefined)
     
-    @scala.inline
-    def setNormalizeAccessKeys(value: Boolean): Self = StObject.set(x, "normalizeAccessKeys", value.asInstanceOf[js.Any])
+    inline def setNormalizeAccessKeys(value: Boolean): Self = StObject.set(x, "normalizeAccessKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizeAccessKeysUndefined: Self = StObject.set(x, "normalizeAccessKeys", js.undefined)
+    inline def setNormalizeAccessKeysUndefined: Self = StObject.set(x, "normalizeAccessKeys", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

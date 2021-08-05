@@ -17,16 +17,13 @@ trait UiCanGetVisibleElement extends StObject {
 }
 object UiCanGetVisibleElement {
   
-  @scala.inline
-  def apply(getVisible: () => Boolean): UiCanGetVisibleElement = {
+  inline def apply(getVisible: () => Boolean): UiCanGetVisibleElement = {
     val __obj = js.Dynamic.literal(getVisible = js.Any.fromFunction0(getVisible))
     __obj.asInstanceOf[UiCanGetVisibleElement]
   }
   
-  @scala.inline
-  implicit class UiCanGetVisibleElementMutableBuilder[Self <: UiCanGetVisibleElement] (val x: Self) extends AnyVal {
+  extension [Self <: UiCanGetVisibleElement](x: Self) {
     
-    @scala.inline
-    def setGetVisible(value: () => Boolean): Self = StObject.set(x, "getVisible", js.Any.fromFunction0(value))
+    inline def setGetVisible(value: () => Boolean): Self = StObject.set(x, "getVisible", js.Any.fromFunction0(value))
   }
 }

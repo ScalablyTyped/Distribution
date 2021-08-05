@@ -41,8 +41,7 @@ trait CRLEntry
 }
 object CRLEntry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getEncodedHex: () => String,
     getFreshValueHex: () => String,
     getLengthHexFromValue: () => String,
@@ -59,13 +58,10 @@ object CRLEntry {
     __obj.asInstanceOf[CRLEntry]
   }
   
-  @scala.inline
-  implicit class CRLEntryMutableBuilder[Self <: CRLEntry] (val x: Self) extends AnyVal {
+  extension [Self <: CRLEntry](x: Self) {
     
-    @scala.inline
-    def setSetCertSerial(value: IntegerParam => Unit): Self = StObject.set(x, "setCertSerial", js.Any.fromFunction1(value))
+    inline def setSetCertSerial(value: IntegerParam => Unit): Self = StObject.set(x, "setCertSerial", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRevocationDate(value: StringParam => Unit): Self = StObject.set(x, "setRevocationDate", js.Any.fromFunction1(value))
+    inline def setSetRevocationDate(value: StringParam => Unit): Self = StObject.set(x, "setRevocationDate", js.Any.fromFunction1(value))
   }
 }

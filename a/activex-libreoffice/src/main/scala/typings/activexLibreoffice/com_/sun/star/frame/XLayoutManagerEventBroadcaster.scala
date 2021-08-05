@@ -29,8 +29,7 @@ trait XLayoutManagerEventBroadcaster
 }
 object XLayoutManagerEventBroadcaster {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addLayoutManagerEventListener: XLayoutManagerListener => Unit,
     queryInterface: `type` => js.Any,
@@ -41,13 +40,10 @@ object XLayoutManagerEventBroadcaster {
     __obj.asInstanceOf[XLayoutManagerEventBroadcaster]
   }
   
-  @scala.inline
-  implicit class XLayoutManagerEventBroadcasterMutableBuilder[Self <: XLayoutManagerEventBroadcaster] (val x: Self) extends AnyVal {
+  extension [Self <: XLayoutManagerEventBroadcaster](x: Self) {
     
-    @scala.inline
-    def setAddLayoutManagerEventListener(value: XLayoutManagerListener => Unit): Self = StObject.set(x, "addLayoutManagerEventListener", js.Any.fromFunction1(value))
+    inline def setAddLayoutManagerEventListener(value: XLayoutManagerListener => Unit): Self = StObject.set(x, "addLayoutManagerEventListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveLayoutManagerEventListener(value: XLayoutManagerListener => Unit): Self = StObject.set(x, "removeLayoutManagerEventListener", js.Any.fromFunction1(value))
+    inline def setRemoveLayoutManagerEventListener(value: XLayoutManagerListener => Unit): Self = StObject.set(x, "removeLayoutManagerEventListener", js.Any.fromFunction1(value))
   }
 }

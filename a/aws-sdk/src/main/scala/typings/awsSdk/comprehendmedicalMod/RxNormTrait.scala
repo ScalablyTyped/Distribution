@@ -18,25 +18,19 @@ trait RxNormTrait extends StObject {
 }
 object RxNormTrait {
   
-  @scala.inline
-  def apply(): RxNormTrait = {
+  inline def apply(): RxNormTrait = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RxNormTrait]
   }
   
-  @scala.inline
-  implicit class RxNormTraitMutableBuilder[Self <: RxNormTrait] (val x: Self) extends AnyVal {
+  extension [Self <: RxNormTrait](x: Self) {
     
-    @scala.inline
-    def setName(value: RxNormTraitName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: RxNormTraitName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setScore(value: Float): Self = StObject.set(x, "Score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Float): Self = StObject.set(x, "Score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreUndefined: Self = StObject.set(x, "Score", js.undefined)
+    inline def setScoreUndefined: Self = StObject.set(x, "Score", js.undefined)
   }
 }

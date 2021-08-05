@@ -16,7 +16,7 @@ object validatorMod {
       * Performs validation of the given object based on decorators or validation schema.
       * Common method for `validateOrReject` and `validate` methods.
       */
-    var coreValidate: js.Any = js.native
+    /* private */ var coreValidate: js.Any = js.native
     
     /**
       * Performs validation of the given object based on decorators used in given object class.

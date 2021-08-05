@@ -23,26 +23,20 @@ trait ArtifactStore extends StObject {
 }
 object ArtifactStore {
   
-  @scala.inline
-  def apply(location: ArtifactStoreLocation, `type`: ArtifactStoreType): ArtifactStore = {
+  inline def apply(location: ArtifactStoreLocation, `type`: ArtifactStoreType): ArtifactStore = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArtifactStore]
   }
   
-  @scala.inline
-  implicit class ArtifactStoreMutableBuilder[Self <: ArtifactStore] (val x: Self) extends AnyVal {
+  extension [Self <: ArtifactStore](x: Self) {
     
-    @scala.inline
-    def setEncryptionKey(value: EncryptionKey): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
+    inline def setEncryptionKey(value: EncryptionKey): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionKeyUndefined: Self = StObject.set(x, "encryptionKey", js.undefined)
+    inline def setEncryptionKeyUndefined: Self = StObject.set(x, "encryptionKey", js.undefined)
     
-    @scala.inline
-    def setLocation(value: ArtifactStoreLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: ArtifactStoreLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ArtifactStoreType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ArtifactStoreType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -10,6 +10,5 @@ object ɵangularPackagesCoreCoreBt {
   /**
     * Marks that the current type is `Injector`
     */
-  @scala.inline
-  def Injector: `-1` = -1.asInstanceOf[`-1`]
+  inline def Injector: `-1` = -1.asInstanceOf[`-1`]
 }

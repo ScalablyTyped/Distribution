@@ -45,16 +45,13 @@ trait CodeNumber extends StObject {
 }
 object CodeNumber {
   
-  @scala.inline
-  def apply(code: Double): CodeNumber = {
+  inline def apply(code: Double): CodeNumber = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeNumber]
   }
   
-  @scala.inline
-  implicit class CodeNumberMutableBuilder[Self <: CodeNumber] (val x: Self) extends AnyVal {
+  extension [Self <: CodeNumber](x: Self) {
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
   }
 }

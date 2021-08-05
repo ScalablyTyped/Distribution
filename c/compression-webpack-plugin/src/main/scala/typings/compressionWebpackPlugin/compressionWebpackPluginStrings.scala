@@ -11,27 +11,23 @@ object compressionWebpackPluginStrings {
   sealed trait brotliCompress
     extends StObject
        with ZlibAlgorithm
-  @scala.inline
-  def brotliCompress: brotliCompress = "brotliCompress".asInstanceOf[brotliCompress]
+  inline def brotliCompress: brotliCompress = "brotliCompress".asInstanceOf[brotliCompress]
   
   @js.native
   sealed trait deflate
     extends StObject
        with ZlibAlgorithm
-  @scala.inline
-  def deflate: deflate = "deflate".asInstanceOf[deflate]
+  inline def deflate: deflate = "deflate".asInstanceOf[deflate]
   
   @js.native
   sealed trait deflateRaw
     extends StObject
        with ZlibAlgorithm
-  @scala.inline
-  def deflateRaw: deflateRaw = "deflateRaw".asInstanceOf[deflateRaw]
+  inline def deflateRaw: deflateRaw = "deflateRaw".asInstanceOf[deflateRaw]
   
   @js.native
   sealed trait gzip
     extends StObject
        with ZlibAlgorithm
-  @scala.inline
-  def gzip: gzip = "gzip".asInstanceOf[gzip]
+  inline def gzip: gzip = "gzip".asInstanceOf[gzip]
 }

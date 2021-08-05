@@ -20,23 +20,18 @@ trait YieldExpression_
 }
 object YieldExpression_ {
   
-  @scala.inline
-  def apply(argument: Expression, delegate: Boolean, end: Double, loc: SourceLocation, start: Double): YieldExpression_ = {
+  inline def apply(argument: Expression, delegate: Boolean, end: Double, loc: SourceLocation, start: Double): YieldExpression_ = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], delegate = delegate.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("YieldExpression")
     __obj.asInstanceOf[YieldExpression_]
   }
   
-  @scala.inline
-  implicit class YieldExpression_MutableBuilder[Self <: YieldExpression_] (val x: Self) extends AnyVal {
+  extension [Self <: YieldExpression_](x: Self) {
     
-    @scala.inline
-    def setArgument(value: Expression): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+    inline def setArgument(value: Expression): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelegate(value: Boolean): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
+    inline def setDelegate(value: Boolean): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: YieldExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: YieldExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

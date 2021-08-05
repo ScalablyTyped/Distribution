@@ -15,8 +15,7 @@ trait XContainerApproveBroadcaster extends StObject {
 }
 object XContainerApproveBroadcaster {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addContainerApproveListener: XContainerApproveListener => Unit,
     removeContainerApproveListener: XContainerApproveListener => Unit
   ): XContainerApproveBroadcaster = {
@@ -24,13 +23,10 @@ object XContainerApproveBroadcaster {
     __obj.asInstanceOf[XContainerApproveBroadcaster]
   }
   
-  @scala.inline
-  implicit class XContainerApproveBroadcasterMutableBuilder[Self <: XContainerApproveBroadcaster] (val x: Self) extends AnyVal {
+  extension [Self <: XContainerApproveBroadcaster](x: Self) {
     
-    @scala.inline
-    def setAddContainerApproveListener(value: XContainerApproveListener => Unit): Self = StObject.set(x, "addContainerApproveListener", js.Any.fromFunction1(value))
+    inline def setAddContainerApproveListener(value: XContainerApproveListener => Unit): Self = StObject.set(x, "addContainerApproveListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveContainerApproveListener(value: XContainerApproveListener => Unit): Self = StObject.set(x, "removeContainerApproveListener", js.Any.fromFunction1(value))
+    inline def setRemoveContainerApproveListener(value: XContainerApproveListener => Unit): Self = StObject.set(x, "removeContainerApproveListener", js.Any.fromFunction1(value))
   }
 }

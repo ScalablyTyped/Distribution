@@ -13,19 +13,15 @@ trait DescribeContinuousBackupsOutput extends StObject {
 }
 object DescribeContinuousBackupsOutput {
   
-  @scala.inline
-  def apply(): DescribeContinuousBackupsOutput = {
+  inline def apply(): DescribeContinuousBackupsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeContinuousBackupsOutput]
   }
   
-  @scala.inline
-  implicit class DescribeContinuousBackupsOutputMutableBuilder[Self <: DescribeContinuousBackupsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeContinuousBackupsOutput](x: Self) {
     
-    @scala.inline
-    def setContinuousBackupsDescription(value: ContinuousBackupsDescription): Self = StObject.set(x, "ContinuousBackupsDescription", value.asInstanceOf[js.Any])
+    inline def setContinuousBackupsDescription(value: ContinuousBackupsDescription): Self = StObject.set(x, "ContinuousBackupsDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinuousBackupsDescriptionUndefined: Self = StObject.set(x, "ContinuousBackupsDescription", js.undefined)
+    inline def setContinuousBackupsDescriptionUndefined: Self = StObject.set(x, "ContinuousBackupsDescription", js.undefined)
   }
 }

@@ -15,28 +15,19 @@ object xmlManipulationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def mergeXmlElements(current: Element, expected: ExpectedElement): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeXmlElements")(current.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Element]
+  inline def mergeXmlElements(current: Element, expected: ExpectedElement): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeXmlElements")(current.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Element]
   
-  @scala.inline
-  def readXmlFile(filePath: String): js.Promise[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("readXmlFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Element]]
-  @scala.inline
-  def readXmlFile(filePath: String, fallbackContent: String): js.Promise[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("readXmlFile")(filePath.asInstanceOf[js.Any], fallbackContent.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Element]]
-  @scala.inline
-  def readXmlFile(filePath: String, fallbackContent: Element): js.Promise[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("readXmlFile")(filePath.asInstanceOf[js.Any], fallbackContent.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Element]]
+  inline def readXmlFile(filePath: String): js.Promise[Element] = ^.asInstanceOf[js.Dynamic].applyDynamic("readXmlFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Element]]
+  inline def readXmlFile(filePath: String, fallbackContent: String): js.Promise[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("readXmlFile")(filePath.asInstanceOf[js.Any], fallbackContent.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Element]]
+  inline def readXmlFile(filePath: String, fallbackContent: Element): js.Promise[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("readXmlFile")(filePath.asInstanceOf[js.Any], fallbackContent.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Element]]
   
-  @scala.inline
-  def writeXmlFile(filePath: String, xml: Element): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeXmlFile")(filePath.asInstanceOf[js.Any], xml.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def writeXmlFile(filePath: String, xml: Element): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeXmlFile")(filePath.asInstanceOf[js.Any], xml.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def writeXmlFileOrRemoveFileUponNoResources(filePath: String, element: Element): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeXmlFileOrRemoveFileUponNoResources")(filePath.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def writeXmlFileOrRemoveFileUponNoResources(filePath: String, element: Element, hasDisregardComments: DisregardComments): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeXmlFileOrRemoveFileUponNoResources")(filePath.asInstanceOf[js.Any], element.asInstanceOf[js.Any], hasDisregardComments.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def writeXmlFileOrRemoveFileUponNoResources(filePath: String, element: Element): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeXmlFileOrRemoveFileUponNoResources")(filePath.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def writeXmlFileOrRemoveFileUponNoResources(filePath: String, element: Element, hasDisregardComments: DisregardComments): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeXmlFileOrRemoveFileUponNoResources")(filePath.asInstanceOf[js.Any], element.asInstanceOf[js.Any], hasDisregardComments.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def xmlElementsEqual(a: Element, b: Element): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlElementsEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def xmlElementsEqual(a: Element, b: Element, hasDisregardComments: DisregardComments): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlElementsEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], hasDisregardComments.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def xmlElementsEqual(a: Element, b: Element): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlElementsEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def xmlElementsEqual(a: Element, b: Element, hasDisregardComments: DisregardComments): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("xmlElementsEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], hasDisregardComments.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   trait ExpectedCommentType
     extends StObject
@@ -46,17 +37,14 @@ object xmlManipulationMod {
   }
   object ExpectedCommentType {
     
-    @scala.inline
-    def apply(comment: String): ExpectedCommentType = {
+    inline def apply(comment: String): ExpectedCommentType = {
       val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExpectedCommentType]
     }
     
-    @scala.inline
-    implicit class ExpectedCommentTypeMutableBuilder[Self <: ExpectedCommentType] (val x: Self) extends AnyVal {
+    extension [Self <: ExpectedCommentType](x: Self) {
       
-      @scala.inline
-      def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     }
   }
   
@@ -69,26 +57,22 @@ object xmlManipulationMod {
   trait ExpectedElement extends StObject
   object ExpectedElement {
     
-    @scala.inline
-    def ExpectedCommentType(comment: String): typings.expoConfigureSplashScreen.xmlManipulationMod.ExpectedCommentType = {
+    inline def ExpectedCommentType(comment: String): typings.expoConfigureSplashScreen.xmlManipulationMod.ExpectedCommentType = {
       val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.expoConfigureSplashScreen.xmlManipulationMod.ExpectedCommentType]
     }
     
-    @scala.inline
-    def ExpectedElementType(name: String): typings.expoConfigureSplashScreen.xmlManipulationMod.ExpectedElementType = {
+    inline def ExpectedElementType(name: String): typings.expoConfigureSplashScreen.xmlManipulationMod.ExpectedElementType = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.expoConfigureSplashScreen.xmlManipulationMod.ExpectedElementType]
     }
     
-    @scala.inline
-    def ExpectedElementsType(elements: ExpectedElements): typings.expoConfigureSplashScreen.xmlManipulationMod.ExpectedElementsType = {
+    inline def ExpectedElementsType(elements: ExpectedElements): typings.expoConfigureSplashScreen.xmlManipulationMod.ExpectedElementsType = {
       val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.expoConfigureSplashScreen.xmlManipulationMod.ExpectedElementsType]
     }
     
-    @scala.inline
-    def ExpectedTextType(text: String | Double | Boolean): typings.expoConfigureSplashScreen.xmlManipulationMod.ExpectedTextType = {
+    inline def ExpectedTextType(text: String | Double | Boolean): typings.expoConfigureSplashScreen.xmlManipulationMod.ExpectedTextType = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.expoConfigureSplashScreen.xmlManipulationMod.ExpectedTextType]
     }
@@ -108,32 +92,24 @@ object xmlManipulationMod {
   }
   object ExpectedElementType {
     
-    @scala.inline
-    def apply(name: String): ExpectedElementType = {
+    inline def apply(name: String): ExpectedElementType = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExpectedElementType]
     }
     
-    @scala.inline
-    implicit class ExpectedElementTypeMutableBuilder[Self <: ExpectedElementType] (val x: Self) extends AnyVal {
+    extension [Self <: ExpectedElementType](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: ExpectedElementAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: ExpectedElementAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setElements(value: ExpectedElements): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+      inline def setElements(value: ExpectedElements): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
+      inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
       
-      @scala.inline
-      def setElementsVarargs(value: WithExplicitIndex[WithDeletionFlag[ExpectedElement]]*): Self = StObject.set(x, "elements", js.Array(value :_*))
+      inline def setElementsVarargs(value: WithExplicitIndex[WithDeletionFlag[ExpectedElement]]*): Self = StObject.set(x, "elements", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -147,20 +123,16 @@ object xmlManipulationMod {
   }
   object ExpectedElementsType {
     
-    @scala.inline
-    def apply(elements: ExpectedElements): ExpectedElementsType = {
+    inline def apply(elements: ExpectedElements): ExpectedElementsType = {
       val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExpectedElementsType]
     }
     
-    @scala.inline
-    implicit class ExpectedElementsTypeMutableBuilder[Self <: ExpectedElementsType] (val x: Self) extends AnyVal {
+    extension [Self <: ExpectedElementsType](x: Self) {
       
-      @scala.inline
-      def setElements(value: ExpectedElements): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+      inline def setElements(value: ExpectedElements): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementsVarargs(value: WithExplicitIndex[WithDeletionFlag[ExpectedElement]]*): Self = StObject.set(x, "elements", js.Array(value :_*))
+      inline def setElementsVarargs(value: WithExplicitIndex[WithDeletionFlag[ExpectedElement]]*): Self = StObject.set(x, "elements", js.Array(value :_*))
     }
   }
   
@@ -172,17 +144,14 @@ object xmlManipulationMod {
   }
   object ExpectedTextType {
     
-    @scala.inline
-    def apply(text: String | Double | Boolean): ExpectedTextType = {
+    inline def apply(text: String | Double | Boolean): ExpectedTextType = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExpectedTextType]
     }
     
-    @scala.inline
-    implicit class ExpectedTextTypeMutableBuilder[Self <: ExpectedTextType] (val x: Self) extends AnyVal {
+    extension [Self <: ExpectedTextType](x: Self) {
       
-      @scala.inline
-      def setText(value: String | Double | Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String | Double | Boolean): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -192,17 +161,14 @@ object xmlManipulationMod {
   }
   object ExplicitNewValue {
     
-    @scala.inline
-    def apply[T](newValue: T): ExplicitNewValue[T] = {
+    inline def apply[T](newValue: T): ExplicitNewValue[T] = {
       val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExplicitNewValue[T]]
     }
     
-    @scala.inline
-    implicit class ExplicitNewValueMutableBuilder[Self <: ExplicitNewValue[?], T] (val x: Self & ExplicitNewValue[T]) extends AnyVal {
+    extension [Self <: ExplicitNewValue[?], T](x: Self & ExplicitNewValue[T]) {
       
-      @scala.inline
-      def setNewValue(value: T): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+      inline def setNewValue(value: T): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     }
   }
   

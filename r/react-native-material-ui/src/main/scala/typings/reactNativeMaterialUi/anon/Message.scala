@@ -13,31 +13,23 @@ trait Message extends StObject {
 }
 object Message {
   
-  @scala.inline
-  def apply(): Message = {
+  inline def apply(): Message = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Message]
   }
   
-  @scala.inline
-  implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+  extension [Self <: Message](x: Self) {
     
-    @scala.inline
-    def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerNull: Self = StObject.set(x, "container", null)
+    inline def setContainerNull: Self = StObject.set(x, "container", null)
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setMessage(value: ViewStyle): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: ViewStyle): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageNull: Self = StObject.set(x, "message", null)
+    inline def setMessageNull: Self = StObject.set(x, "message", null)
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

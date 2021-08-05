@@ -10,16 +10,13 @@ trait EnumValuesInvalidPath extends StObject {
 }
 object EnumValuesInvalidPath {
   
-  @scala.inline
-  def apply(enumValues: InvalidPath): EnumValuesInvalidPath = {
+  inline def apply(enumValues: InvalidPath): EnumValuesInvalidPath = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesInvalidPath]
   }
   
-  @scala.inline
-  implicit class EnumValuesInvalidPathMutableBuilder[Self <: EnumValuesInvalidPath] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesInvalidPath](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: InvalidPath): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: InvalidPath): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

@@ -16,19 +16,15 @@ trait PriorityLevelConfigurationStatus extends StObject {
 }
 object PriorityLevelConfigurationStatus {
   
-  @scala.inline
-  def apply(conditions: js.Array[PriorityLevelConfigurationCondition]): PriorityLevelConfigurationStatus = {
+  inline def apply(conditions: js.Array[PriorityLevelConfigurationCondition]): PriorityLevelConfigurationStatus = {
     val __obj = js.Dynamic.literal(conditions = conditions.asInstanceOf[js.Any])
     __obj.asInstanceOf[PriorityLevelConfigurationStatus]
   }
   
-  @scala.inline
-  implicit class PriorityLevelConfigurationStatusMutableBuilder[Self <: PriorityLevelConfigurationStatus] (val x: Self) extends AnyVal {
+  extension [Self <: PriorityLevelConfigurationStatus](x: Self) {
     
-    @scala.inline
-    def setConditions(value: js.Array[PriorityLevelConfigurationCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
+    inline def setConditions(value: js.Array[PriorityLevelConfigurationCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionsVarargs(value: PriorityLevelConfigurationCondition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
+    inline def setConditionsVarargs(value: PriorityLevelConfigurationCondition*): Self = StObject.set(x, "conditions", js.Array(value :_*))
   }
 }

@@ -13,16 +13,13 @@ trait Dns
 }
 object Dns {
   
-  @scala.inline
-  def apply(dns: String): Dns = {
+  inline def apply(dns: String): Dns = {
     val __obj = js.Dynamic.literal(dns = dns.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dns]
   }
   
-  @scala.inline
-  implicit class DnsMutableBuilder[Self <: Dns] (val x: Self) extends AnyVal {
+  extension [Self <: Dns](x: Self) {
     
-    @scala.inline
-    def setDns(value: String): Self = StObject.set(x, "dns", value.asInstanceOf[js.Any])
+    inline def setDns(value: String): Self = StObject.set(x, "dns", value.asInstanceOf[js.Any])
   }
 }

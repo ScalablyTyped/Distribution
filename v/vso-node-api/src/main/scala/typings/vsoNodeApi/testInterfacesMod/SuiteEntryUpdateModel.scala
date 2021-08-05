@@ -23,22 +23,17 @@ trait SuiteEntryUpdateModel extends StObject {
 }
 object SuiteEntryUpdateModel {
   
-  @scala.inline
-  def apply(childSuiteId: Double, sequenceNumber: Double, testCaseId: Double): SuiteEntryUpdateModel = {
+  inline def apply(childSuiteId: Double, sequenceNumber: Double, testCaseId: Double): SuiteEntryUpdateModel = {
     val __obj = js.Dynamic.literal(childSuiteId = childSuiteId.asInstanceOf[js.Any], sequenceNumber = sequenceNumber.asInstanceOf[js.Any], testCaseId = testCaseId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuiteEntryUpdateModel]
   }
   
-  @scala.inline
-  implicit class SuiteEntryUpdateModelMutableBuilder[Self <: SuiteEntryUpdateModel] (val x: Self) extends AnyVal {
+  extension [Self <: SuiteEntryUpdateModel](x: Self) {
     
-    @scala.inline
-    def setChildSuiteId(value: Double): Self = StObject.set(x, "childSuiteId", value.asInstanceOf[js.Any])
+    inline def setChildSuiteId(value: Double): Self = StObject.set(x, "childSuiteId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSequenceNumber(value: Double): Self = StObject.set(x, "sequenceNumber", value.asInstanceOf[js.Any])
+    inline def setSequenceNumber(value: Double): Self = StObject.set(x, "sequenceNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestCaseId(value: Double): Self = StObject.set(x, "testCaseId", value.asInstanceOf[js.Any])
+    inline def setTestCaseId(value: Double): Self = StObject.set(x, "testCaseId", value.asInstanceOf[js.Any])
   }
 }

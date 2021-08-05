@@ -35,8 +35,7 @@ trait BaseType[T /* <: Context */]
 }
 object BaseType {
   
-  @scala.inline
-  def apply[T /* <: Context */](
+  inline def apply[T /* <: Context */](
     _links: Record[String, js.Array[Dictk]],
     capabilities: Createposts,
     description: String,
@@ -53,40 +52,28 @@ object BaseType {
     __obj.asInstanceOf[BaseType[T]]
   }
   
-  @scala.inline
-  implicit class BaseTypeMutableBuilder[Self <: BaseType[?], T /* <: Context */] (val x: Self & BaseType[T]) extends AnyVal {
+  extension [Self <: BaseType[?], T /* <: Context */](x: Self & BaseType[T]) {
     
-    @scala.inline
-    def setCapabilities(value: Createposts): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+    inline def setCapabilities(value: Createposts): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHierarchical(value: Boolean): Self = StObject.set(x, "hierarchical", value.asInstanceOf[js.Any])
+    inline def setHierarchical(value: Boolean): Self = StObject.set(x, "hierarchical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabels(value: Addnew): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: Addnew): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRest_base(value: String): Self = StObject.set(x, "rest_base", value.asInstanceOf[js.Any])
+    inline def setRest_base(value: String): Self = StObject.set(x, "rest_base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
+    inline def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupports(value: Author): Self = StObject.set(x, "supports", value.asInstanceOf[js.Any])
+    inline def setSupports(value: Author): Self = StObject.set(x, "supports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaxonomies(value: js.Array[TaxonomyKind]): Self = StObject.set(x, "taxonomies", value.asInstanceOf[js.Any])
+    inline def setTaxonomies(value: js.Array[TaxonomyKind]): Self = StObject.set(x, "taxonomies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaxonomiesVarargs(value: TaxonomyKind*): Self = StObject.set(x, "taxonomies", js.Array(value :_*))
+    inline def setTaxonomiesVarargs(value: TaxonomyKind*): Self = StObject.set(x, "taxonomies", js.Array(value :_*))
     
-    @scala.inline
-    def setViewable(value: Boolean): Self = StObject.set(x, "viewable", value.asInstanceOf[js.Any])
+    inline def setViewable(value: Boolean): Self = StObject.set(x, "viewable", value.asInstanceOf[js.Any])
   }
 }

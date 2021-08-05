@@ -10,8 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with NodeAPISettings
 object NodeAPISettingsWithData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     available: () => Boolean,
     delete: String => js.Promise[Unit],
     disableNodeSettings: js.Array[String] => Unit,

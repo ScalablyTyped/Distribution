@@ -56,70 +56,49 @@ trait SchemaParallelInstruction extends StObject {
 }
 object SchemaParallelInstruction {
   
-  @scala.inline
-  def apply(): SchemaParallelInstruction = {
+  inline def apply(): SchemaParallelInstruction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaParallelInstruction]
   }
   
-  @scala.inline
-  implicit class SchemaParallelInstructionMutableBuilder[Self <: SchemaParallelInstruction] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaParallelInstruction](x: Self) {
     
-    @scala.inline
-    def setFlatten(value: SchemaFlattenInstruction): Self = StObject.set(x, "flatten", value.asInstanceOf[js.Any])
+    inline def setFlatten(value: SchemaFlattenInstruction): Self = StObject.set(x, "flatten", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlattenUndefined: Self = StObject.set(x, "flatten", js.undefined)
+    inline def setFlattenUndefined: Self = StObject.set(x, "flatten", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOriginalName(value: String): Self = StObject.set(x, "originalName", value.asInstanceOf[js.Any])
+    inline def setOriginalName(value: String): Self = StObject.set(x, "originalName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalNameUndefined: Self = StObject.set(x, "originalName", js.undefined)
+    inline def setOriginalNameUndefined: Self = StObject.set(x, "originalName", js.undefined)
     
-    @scala.inline
-    def setOutputs(value: js.Array[SchemaInstructionOutput]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+    inline def setOutputs(value: js.Array[SchemaInstructionOutput]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
+    inline def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
     
-    @scala.inline
-    def setOutputsVarargs(value: SchemaInstructionOutput*): Self = StObject.set(x, "outputs", js.Array(value :_*))
+    inline def setOutputsVarargs(value: SchemaInstructionOutput*): Self = StObject.set(x, "outputs", js.Array(value :_*))
     
-    @scala.inline
-    def setParDo(value: SchemaParDoInstruction): Self = StObject.set(x, "parDo", value.asInstanceOf[js.Any])
+    inline def setParDo(value: SchemaParDoInstruction): Self = StObject.set(x, "parDo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParDoUndefined: Self = StObject.set(x, "parDo", js.undefined)
+    inline def setParDoUndefined: Self = StObject.set(x, "parDo", js.undefined)
     
-    @scala.inline
-    def setPartialGroupByKey(value: SchemaPartialGroupByKeyInstruction): Self = StObject.set(x, "partialGroupByKey", value.asInstanceOf[js.Any])
+    inline def setPartialGroupByKey(value: SchemaPartialGroupByKeyInstruction): Self = StObject.set(x, "partialGroupByKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartialGroupByKeyUndefined: Self = StObject.set(x, "partialGroupByKey", js.undefined)
+    inline def setPartialGroupByKeyUndefined: Self = StObject.set(x, "partialGroupByKey", js.undefined)
     
-    @scala.inline
-    def setRead(value: SchemaReadInstruction): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+    inline def setRead(value: SchemaReadInstruction): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+    inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
     
-    @scala.inline
-    def setSystemName(value: String): Self = StObject.set(x, "systemName", value.asInstanceOf[js.Any])
+    inline def setSystemName(value: String): Self = StObject.set(x, "systemName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemNameUndefined: Self = StObject.set(x, "systemName", js.undefined)
+    inline def setSystemNameUndefined: Self = StObject.set(x, "systemName", js.undefined)
     
-    @scala.inline
-    def setWrite(value: SchemaWriteInstruction): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
+    inline def setWrite(value: SchemaWriteInstruction): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
+    inline def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait HierarchyLevelUpdate extends StObject {
 }
 object HierarchyLevelUpdate {
   
-  @scala.inline
-  def apply(Name: HierarchyLevelName): HierarchyLevelUpdate = {
+  inline def apply(Name: HierarchyLevelName): HierarchyLevelUpdate = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[HierarchyLevelUpdate]
   }
   
-  @scala.inline
-  implicit class HierarchyLevelUpdateMutableBuilder[Self <: HierarchyLevelUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: HierarchyLevelUpdate](x: Self) {
     
-    @scala.inline
-    def setName(value: HierarchyLevelName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: HierarchyLevelName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

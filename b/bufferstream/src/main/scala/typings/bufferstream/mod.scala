@@ -23,8 +23,7 @@ object mod {
     @JSImport("bufferstream", "fn.warn")
     @js.native
     def warn: Boolean = js.native
-    @scala.inline
-    def warn_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warn")(x.asInstanceOf[js.Any])
+    inline def warn_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warn")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -110,44 +109,32 @@ object mod {
   }
   object Opts {
     
-    @scala.inline
-    def apply(): Opts = {
+    inline def apply(): Opts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Opts]
     }
     
-    @scala.inline
-    implicit class OptsMutableBuilder[Self <: Opts] (val x: Self) extends AnyVal {
+    extension [Self <: Opts](x: Self) {
       
-      @scala.inline
-      def setBlocking(value: Boolean): Self = StObject.set(x, "blocking", value.asInstanceOf[js.Any])
+      inline def setBlocking(value: Boolean): Self = StObject.set(x, "blocking", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockingUndefined: Self = StObject.set(x, "blocking", js.undefined)
+      inline def setBlockingUndefined: Self = StObject.set(x, "blocking", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: js.Any): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSplit(value: js.Any): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
+      inline def setSplit(value: js.Any): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
+      inline def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
     }
   }
 }

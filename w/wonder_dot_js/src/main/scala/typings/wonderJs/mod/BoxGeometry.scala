@@ -15,6 +15,5 @@ object BoxGeometry {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(): typings.wonderJs.boxGeometryMod.BoxGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.boxGeometryMod.BoxGeometry]
+  inline def create(): typings.wonderJs.boxGeometryMod.BoxGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.boxGeometryMod.BoxGeometry]
 }

@@ -12,9 +12,9 @@ class GridLayer_ () extends Layer {
   
   /* protected */ def _tileCoordsToKey(coords: Coords): String = js.native
   
-  var _tileZoom: js.UndefOr[Double] = js.native
+  /* protected */ var _tileZoom: js.UndefOr[Double] = js.native
   
-  var _tiles: InternalTiles = js.native
+  /* protected */ var _tiles: InternalTiles = js.native
   
   def bringToBack(): this.type = js.native
   

@@ -33,37 +33,27 @@ trait SampledHTTPRequest extends StObject {
 }
 object SampledHTTPRequest {
   
-  @scala.inline
-  def apply(Request: HTTPRequest, Weight: SampleWeight): SampledHTTPRequest = {
+  inline def apply(Request: HTTPRequest, Weight: SampleWeight): SampledHTTPRequest = {
     val __obj = js.Dynamic.literal(Request = Request.asInstanceOf[js.Any], Weight = Weight.asInstanceOf[js.Any])
     __obj.asInstanceOf[SampledHTTPRequest]
   }
   
-  @scala.inline
-  implicit class SampledHTTPRequestMutableBuilder[Self <: SampledHTTPRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SampledHTTPRequest](x: Self) {
     
-    @scala.inline
-    def setAction(value: Action): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: Action): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "Action", js.undefined)
     
-    @scala.inline
-    def setRequest(value: HTTPRequest): Self = StObject.set(x, "Request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: HTTPRequest): Self = StObject.set(x, "Request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleWithinRuleGroup(value: ResourceId): Self = StObject.set(x, "RuleWithinRuleGroup", value.asInstanceOf[js.Any])
+    inline def setRuleWithinRuleGroup(value: ResourceId): Self = StObject.set(x, "RuleWithinRuleGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleWithinRuleGroupUndefined: Self = StObject.set(x, "RuleWithinRuleGroup", js.undefined)
+    inline def setRuleWithinRuleGroupUndefined: Self = StObject.set(x, "RuleWithinRuleGroup", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
     
-    @scala.inline
-    def setWeight(value: SampleWeight): Self = StObject.set(x, "Weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: SampleWeight): Self = StObject.set(x, "Weight", value.asInstanceOf[js.Any])
   }
 }

@@ -26,8 +26,7 @@ trait ReelsMediaFeedResponseSliderSticker extends StObject {
 }
 object ReelsMediaFeedResponseSliderSticker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     background_color: String,
     emoji: String,
     question: String,
@@ -41,37 +40,26 @@ object ReelsMediaFeedResponseSliderSticker {
     __obj.asInstanceOf[ReelsMediaFeedResponseSliderSticker]
   }
   
-  @scala.inline
-  implicit class ReelsMediaFeedResponseSliderStickerMutableBuilder[Self <: ReelsMediaFeedResponseSliderSticker] (val x: Self) extends AnyVal {
+  extension [Self <: ReelsMediaFeedResponseSliderSticker](x: Self) {
     
-    @scala.inline
-    def setBackground_color(value: String): Self = StObject.set(x, "background_color", value.asInstanceOf[js.Any])
+    inline def setBackground_color(value: String): Self = StObject.set(x, "background_color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmoji(value: String): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
+    inline def setEmoji(value: String): Self = StObject.set(x, "emoji", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuestion(value: String): Self = StObject.set(x, "question", value.asInstanceOf[js.Any])
+    inline def setQuestion(value: String): Self = StObject.set(x, "question", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlider_id(value: Double): Self = StObject.set(x, "slider_id", value.asInstanceOf[js.Any])
+    inline def setSlider_id(value: Double): Self = StObject.set(x, "slider_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlider_vote_average(value: Null): Self = StObject.set(x, "slider_vote_average", value.asInstanceOf[js.Any])
+    inline def setSlider_vote_average(value: Null): Self = StObject.set(x, "slider_vote_average", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlider_vote_count(value: Double): Self = StObject.set(x, "slider_vote_count", value.asInstanceOf[js.Any])
+    inline def setSlider_vote_count(value: Double): Self = StObject.set(x, "slider_vote_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText_color(value: String): Self = StObject.set(x, "text_color", value.asInstanceOf[js.Any])
+    inline def setText_color(value: String): Self = StObject.set(x, "text_color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewer_can_vote(value: Boolean): Self = StObject.set(x, "viewer_can_vote", value.asInstanceOf[js.Any])
+    inline def setViewer_can_vote(value: Boolean): Self = StObject.set(x, "viewer_can_vote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewer_vote(value: Double): Self = StObject.set(x, "viewer_vote", value.asInstanceOf[js.Any])
+    inline def setViewer_vote(value: Double): Self = StObject.set(x, "viewer_vote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewer_voteUndefined: Self = StObject.set(x, "viewer_vote", js.undefined)
+    inline def setViewer_voteUndefined: Self = StObject.set(x, "viewer_vote", js.undefined)
   }
 }

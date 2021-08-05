@@ -24,20 +24,16 @@ object globalizeSettingsMod {
   }
   object GlobalizeSettings {
     
-    @scala.inline
-    def apply(Globalize: Globalize, lang: String): GlobalizeSettings = {
+    inline def apply(Globalize: Globalize, lang: String): GlobalizeSettings = {
       val __obj = js.Dynamic.literal(Globalize = Globalize.asInstanceOf[js.Any], lang = lang.asInstanceOf[js.Any])
       __obj.asInstanceOf[GlobalizeSettings]
     }
     
-    @scala.inline
-    implicit class GlobalizeSettingsMutableBuilder[Self <: GlobalizeSettings] (val x: Self) extends AnyVal {
+    extension [Self <: GlobalizeSettings](x: Self) {
       
-      @scala.inline
-      def setGlobalize(value: Globalize): Self = StObject.set(x, "Globalize", value.asInstanceOf[js.Any])
+      inline def setGlobalize(value: Globalize): Self = StObject.set(x, "Globalize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+      inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     }
   }
 }

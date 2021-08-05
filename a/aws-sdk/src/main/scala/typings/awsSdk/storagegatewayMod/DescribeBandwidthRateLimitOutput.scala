@@ -20,31 +20,23 @@ trait DescribeBandwidthRateLimitOutput extends StObject {
 }
 object DescribeBandwidthRateLimitOutput {
   
-  @scala.inline
-  def apply(): DescribeBandwidthRateLimitOutput = {
+  inline def apply(): DescribeBandwidthRateLimitOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeBandwidthRateLimitOutput]
   }
   
-  @scala.inline
-  implicit class DescribeBandwidthRateLimitOutputMutableBuilder[Self <: DescribeBandwidthRateLimitOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeBandwidthRateLimitOutput](x: Self) {
     
-    @scala.inline
-    def setAverageDownloadRateLimitInBitsPerSec(value: BandwidthDownloadRateLimit): Self = StObject.set(x, "AverageDownloadRateLimitInBitsPerSec", value.asInstanceOf[js.Any])
+    inline def setAverageDownloadRateLimitInBitsPerSec(value: BandwidthDownloadRateLimit): Self = StObject.set(x, "AverageDownloadRateLimitInBitsPerSec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAverageDownloadRateLimitInBitsPerSecUndefined: Self = StObject.set(x, "AverageDownloadRateLimitInBitsPerSec", js.undefined)
+    inline def setAverageDownloadRateLimitInBitsPerSecUndefined: Self = StObject.set(x, "AverageDownloadRateLimitInBitsPerSec", js.undefined)
     
-    @scala.inline
-    def setAverageUploadRateLimitInBitsPerSec(value: BandwidthUploadRateLimit): Self = StObject.set(x, "AverageUploadRateLimitInBitsPerSec", value.asInstanceOf[js.Any])
+    inline def setAverageUploadRateLimitInBitsPerSec(value: BandwidthUploadRateLimit): Self = StObject.set(x, "AverageUploadRateLimitInBitsPerSec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAverageUploadRateLimitInBitsPerSecUndefined: Self = StObject.set(x, "AverageUploadRateLimitInBitsPerSec", js.undefined)
+    inline def setAverageUploadRateLimitInBitsPerSecUndefined: Self = StObject.set(x, "AverageUploadRateLimitInBitsPerSec", js.undefined)
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
+    inline def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
   }
 }

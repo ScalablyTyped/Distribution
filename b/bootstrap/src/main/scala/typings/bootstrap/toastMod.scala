@@ -55,8 +55,7 @@ object toastMod {
       * with a DOM element
       */
     /* static member */
-    @scala.inline
-    def getInstance(element: Element): Toast = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[Toast]
+    inline def getInstance(element: Element): Toast = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[Toast]
   }
   
   trait Toast extends StObject {
@@ -75,8 +74,7 @@ object toastMod {
   }
   object Toast {
     
-    @scala.inline
-    def apply(dispose: () => Unit, refresh: () => Unit): Toast = {
+    inline def apply(dispose: () => Unit, refresh: () => Unit): Toast = {
       val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), refresh = js.Any.fromFunction0(refresh))
       __obj.asInstanceOf[Toast]
     }
@@ -147,34 +145,26 @@ object toastMod {
     }
     object Options {
       
-      @scala.inline
-      def apply(animation: Boolean, autohide: Boolean, delay: Double): Options = {
+      inline def apply(animation: Boolean, autohide: Boolean, delay: Double): Options = {
         val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any], autohide = autohide.asInstanceOf[js.Any], delay = delay.asInstanceOf[js.Any])
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+        inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAutohide(value: Boolean): Self = StObject.set(x, "autohide", value.asInstanceOf[js.Any])
+        inline def setAutohide(value: Boolean): Self = StObject.set(x, "autohide", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+        inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       }
     }
     
-    @scala.inline
-    implicit class ToastMutableBuilder[Self <: Toast] (val x: Self) extends AnyVal {
+    extension [Self <: Toast](x: Self) {
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
+      inline def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
     }
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "is-secret"
-version := "1.2-dt-20200712Z-b983f2"
+version := "1.2-dt-20200712Z-0bfb66"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

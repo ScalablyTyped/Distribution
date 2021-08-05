@@ -13,22 +13,17 @@ trait UpdateColumnStatisticsForTableResponse extends StObject {
 }
 object UpdateColumnStatisticsForTableResponse {
   
-  @scala.inline
-  def apply(): UpdateColumnStatisticsForTableResponse = {
+  inline def apply(): UpdateColumnStatisticsForTableResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateColumnStatisticsForTableResponse]
   }
   
-  @scala.inline
-  implicit class UpdateColumnStatisticsForTableResponseMutableBuilder[Self <: UpdateColumnStatisticsForTableResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateColumnStatisticsForTableResponse](x: Self) {
     
-    @scala.inline
-    def setErrors(value: ColumnStatisticsErrors): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: ColumnStatisticsErrors): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
     
-    @scala.inline
-    def setErrorsVarargs(value: ColumnStatisticsError*): Self = StObject.set(x, "Errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: ColumnStatisticsError*): Self = StObject.set(x, "Errors", js.Array(value :_*))
   }
 }

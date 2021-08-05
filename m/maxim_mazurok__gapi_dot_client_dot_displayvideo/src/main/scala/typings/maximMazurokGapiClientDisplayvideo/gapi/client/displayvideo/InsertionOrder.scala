@@ -57,100 +57,69 @@ trait InsertionOrder extends StObject {
 }
 object InsertionOrder {
   
-  @scala.inline
-  def apply(): InsertionOrder = {
+  inline def apply(): InsertionOrder = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InsertionOrder]
   }
   
-  @scala.inline
-  implicit class InsertionOrderMutableBuilder[Self <: InsertionOrder] (val x: Self) extends AnyVal {
+  extension [Self <: InsertionOrder](x: Self) {
     
-    @scala.inline
-    def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
+    inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
+    inline def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
     
-    @scala.inline
-    def setBidStrategy(value: BiddingStrategy): Self = StObject.set(x, "bidStrategy", value.asInstanceOf[js.Any])
+    inline def setBidStrategy(value: BiddingStrategy): Self = StObject.set(x, "bidStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBidStrategyUndefined: Self = StObject.set(x, "bidStrategy", js.undefined)
+    inline def setBidStrategyUndefined: Self = StObject.set(x, "bidStrategy", js.undefined)
     
-    @scala.inline
-    def setBudget(value: InsertionOrderBudget): Self = StObject.set(x, "budget", value.asInstanceOf[js.Any])
+    inline def setBudget(value: InsertionOrderBudget): Self = StObject.set(x, "budget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBudgetUndefined: Self = StObject.set(x, "budget", js.undefined)
+    inline def setBudgetUndefined: Self = StObject.set(x, "budget", js.undefined)
     
-    @scala.inline
-    def setCampaignId(value: String): Self = StObject.set(x, "campaignId", value.asInstanceOf[js.Any])
+    inline def setCampaignId(value: String): Self = StObject.set(x, "campaignId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCampaignIdUndefined: Self = StObject.set(x, "campaignId", js.undefined)
+    inline def setCampaignIdUndefined: Self = StObject.set(x, "campaignId", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setEntityStatus(value: String): Self = StObject.set(x, "entityStatus", value.asInstanceOf[js.Any])
+    inline def setEntityStatus(value: String): Self = StObject.set(x, "entityStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityStatusUndefined: Self = StObject.set(x, "entityStatus", js.undefined)
+    inline def setEntityStatusUndefined: Self = StObject.set(x, "entityStatus", js.undefined)
     
-    @scala.inline
-    def setFrequencyCap(value: FrequencyCap): Self = StObject.set(x, "frequencyCap", value.asInstanceOf[js.Any])
+    inline def setFrequencyCap(value: FrequencyCap): Self = StObject.set(x, "frequencyCap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrequencyCapUndefined: Self = StObject.set(x, "frequencyCap", js.undefined)
+    inline def setFrequencyCapUndefined: Self = StObject.set(x, "frequencyCap", js.undefined)
     
-    @scala.inline
-    def setInsertionOrderId(value: String): Self = StObject.set(x, "insertionOrderId", value.asInstanceOf[js.Any])
+    inline def setInsertionOrderId(value: String): Self = StObject.set(x, "insertionOrderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertionOrderIdUndefined: Self = StObject.set(x, "insertionOrderId", js.undefined)
+    inline def setInsertionOrderIdUndefined: Self = StObject.set(x, "insertionOrderId", js.undefined)
     
-    @scala.inline
-    def setIntegrationDetails(value: IntegrationDetails): Self = StObject.set(x, "integrationDetails", value.asInstanceOf[js.Any])
+    inline def setIntegrationDetails(value: IntegrationDetails): Self = StObject.set(x, "integrationDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntegrationDetailsUndefined: Self = StObject.set(x, "integrationDetails", js.undefined)
+    inline def setIntegrationDetailsUndefined: Self = StObject.set(x, "integrationDetails", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPacing(value: Pacing): Self = StObject.set(x, "pacing", value.asInstanceOf[js.Any])
+    inline def setPacing(value: Pacing): Self = StObject.set(x, "pacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPacingUndefined: Self = StObject.set(x, "pacing", js.undefined)
+    inline def setPacingUndefined: Self = StObject.set(x, "pacing", js.undefined)
     
-    @scala.inline
-    def setPartnerCosts(value: js.Array[PartnerCost]): Self = StObject.set(x, "partnerCosts", value.asInstanceOf[js.Any])
+    inline def setPartnerCosts(value: js.Array[PartnerCost]): Self = StObject.set(x, "partnerCosts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartnerCostsUndefined: Self = StObject.set(x, "partnerCosts", js.undefined)
+    inline def setPartnerCostsUndefined: Self = StObject.set(x, "partnerCosts", js.undefined)
     
-    @scala.inline
-    def setPartnerCostsVarargs(value: PartnerCost*): Self = StObject.set(x, "partnerCosts", js.Array(value :_*))
+    inline def setPartnerCostsVarargs(value: PartnerCost*): Self = StObject.set(x, "partnerCosts", js.Array(value :_*))
     
-    @scala.inline
-    def setPerformanceGoal(value: PerformanceGoal): Self = StObject.set(x, "performanceGoal", value.asInstanceOf[js.Any])
+    inline def setPerformanceGoal(value: PerformanceGoal): Self = StObject.set(x, "performanceGoal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerformanceGoalUndefined: Self = StObject.set(x, "performanceGoal", js.undefined)
+    inline def setPerformanceGoalUndefined: Self = StObject.set(x, "performanceGoal", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

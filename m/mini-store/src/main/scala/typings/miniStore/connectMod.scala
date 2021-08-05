@@ -13,24 +13,21 @@ object connectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def connect[TStateProps, TOwnProps, State](): js.Function1[
+  inline def connect[TStateProps, TOwnProps, State](): js.Function1[
     /* WrappedComponent */ js.Any, 
     ConnectedComponent[js.Any, TStateProps & StoreProp[State], TOwnProps]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")().asInstanceOf[js.Function1[
     /* WrappedComponent */ js.Any, 
     ConnectedComponent[js.Any, TStateProps & StoreProp[State], TOwnProps]
   ]]
-  @scala.inline
-  def connect[TStateProps, TOwnProps, State](mapStateToProps: js.Function2[/* state */ State, /* ownProps */ TOwnProps, TStateProps]): js.Function1[
+  inline def connect[TStateProps, TOwnProps, State](mapStateToProps: js.Function2[/* state */ State, /* ownProps */ TOwnProps, TStateProps]): js.Function1[
     /* WrappedComponent */ js.Any, 
     ConnectedComponent[js.Any, TStateProps & StoreProp[State], TOwnProps]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(mapStateToProps.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* WrappedComponent */ js.Any, 
     ConnectedComponent[js.Any, TStateProps & StoreProp[State], TOwnProps]
   ]]
-  @scala.inline
-  def connect[TStateProps, TOwnProps, State](
+  inline def connect[TStateProps, TOwnProps, State](
     mapStateToProps: js.Function2[/* state */ State, /* ownProps */ TOwnProps, TStateProps],
     options: ConnectOptions
   ): js.Function1[
@@ -40,8 +37,7 @@ object connectMod {
     /* WrappedComponent */ js.Any, 
     ConnectedComponent[js.Any, TStateProps & StoreProp[State], TOwnProps]
   ]]
-  @scala.inline
-  def connect[TStateProps, TOwnProps, State](mapStateToProps: Unit, options: ConnectOptions): js.Function1[
+  inline def connect[TStateProps, TOwnProps, State](mapStateToProps: Unit, options: ConnectOptions): js.Function1[
     /* WrappedComponent */ js.Any, 
     ConnectedComponent[js.Any, TStateProps & StoreProp[State], TOwnProps]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(mapStateToProps.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
@@ -60,20 +56,16 @@ object connectMod {
   }
   object ConnectOptions {
     
-    @scala.inline
-    def apply(): ConnectOptions = {
+    inline def apply(): ConnectOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConnectOptions]
     }
     
-    @scala.inline
-    implicit class ConnectOptionsMutableBuilder[Self <: ConnectOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectOptions](x: Self) {
       
-      @scala.inline
-      def setForwardRef(value: Boolean): Self = StObject.set(x, "forwardRef", value.asInstanceOf[js.Any])
+      inline def setForwardRef(value: Boolean): Self = StObject.set(x, "forwardRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForwardRefUndefined: Self = StObject.set(x, "forwardRef", js.undefined)
+      inline def setForwardRefUndefined: Self = StObject.set(x, "forwardRef", js.undefined)
     }
   }
   
@@ -83,23 +75,18 @@ object connectMod {
   }
   object ConnectProps {
     
-    @scala.inline
-    def apply(): ConnectProps = {
+    inline def apply(): ConnectProps = {
       val __obj = js.Dynamic.literal(miniStoreForwardedRef = null)
       __obj.asInstanceOf[ConnectProps]
     }
     
-    @scala.inline
-    implicit class ConnectPropsMutableBuilder[Self <: ConnectProps] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectProps](x: Self) {
       
-      @scala.inline
-      def setMiniStoreForwardedRef(value: Ref[js.Any]): Self = StObject.set(x, "miniStoreForwardedRef", value.asInstanceOf[js.Any])
+      inline def setMiniStoreForwardedRef(value: Ref[js.Any]): Self = StObject.set(x, "miniStoreForwardedRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMiniStoreForwardedRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "miniStoreForwardedRef", js.Any.fromFunction1(value))
+      inline def setMiniStoreForwardedRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "miniStoreForwardedRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMiniStoreForwardedRefNull: Self = StObject.set(x, "miniStoreForwardedRef", null)
+      inline def setMiniStoreForwardedRefNull: Self = StObject.set(x, "miniStoreForwardedRef", null)
     }
   }
   
@@ -113,23 +100,18 @@ object connectMod {
   }
   object ConnectedState {
     
-    @scala.inline
-    def apply[TStateProps, Store, TOwnProps](props: TOwnProps, store: Store, subscribed: TStateProps): ConnectedState[TStateProps, Store, TOwnProps] = {
+    inline def apply[TStateProps, Store, TOwnProps](props: TOwnProps, store: Store, subscribed: TStateProps): ConnectedState[TStateProps, Store, TOwnProps] = {
       val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any], subscribed = subscribed.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConnectedState[TStateProps, Store, TOwnProps]]
     }
     
-    @scala.inline
-    implicit class ConnectedStateMutableBuilder[Self <: ConnectedState[?, ?, ?], TStateProps, Store, TOwnProps] (val x: Self & (ConnectedState[TStateProps, Store, TOwnProps])) extends AnyVal {
+    extension [Self <: ConnectedState[?, ?, ?], TStateProps, Store, TOwnProps](x: Self & (ConnectedState[TStateProps, Store, TOwnProps])) {
       
-      @scala.inline
-      def setProps(value: TOwnProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: TOwnProps): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStore(value: Store): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: Store): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscribed(value: TStateProps): Self = StObject.set(x, "subscribed", value.asInstanceOf[js.Any])
+      inline def setSubscribed(value: TStateProps): Self = StObject.set(x, "subscribed", value.asInstanceOf[js.Any])
     }
   }
 }

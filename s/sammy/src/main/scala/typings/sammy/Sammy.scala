@@ -238,17 +238,14 @@ object Sammy {
   }
   object Form {
     
-    @scala.inline
-    def apply(formFor: (String, js.Any, js.Function) => FormBuilder): Form = {
+    inline def apply(formFor: (String, js.Any, js.Function) => FormBuilder): Form = {
       val __obj = js.Dynamic.literal(formFor = js.Any.fromFunction3(formFor))
       __obj.asInstanceOf[Form]
     }
     
-    @scala.inline
-    implicit class FormMutableBuilder[Self <: Form] (val x: Self) extends AnyVal {
+    extension [Self <: Form](x: Self) {
       
-      @scala.inline
-      def setFormFor(value: (String, js.Any, js.Function) => FormBuilder): Self = StObject.set(x, "formFor", js.Any.fromFunction3(value))
+      inline def setFormFor(value: (String, js.Any, js.Function) => FormBuilder): Self = StObject.set(x, "formFor", js.Any.fromFunction3(value))
     }
   }
   
@@ -457,62 +454,44 @@ object Sammy {
   }
   object StoreOptions {
     
-    @scala.inline
-    def apply(): StoreOptions = {
+    inline def apply(): StoreOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StoreOptions]
     }
     
-    @scala.inline
-    implicit class StoreOptionsMutableBuilder[Self <: StoreOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StoreOptions](x: Self) {
       
-      @scala.inline
-      def setCookie(value: js.Any): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+      inline def setCookie(value: js.Any): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
+      inline def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+      inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
       
-      @scala.inline
-      def setLocal(value: js.Any): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+      inline def setLocal(value: js.Any): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
+      inline def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
       
-      @scala.inline
-      def setMemory(value: js.Any): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
+      inline def setMemory(value: js.Any): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
+      inline def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setSession(value: js.Any): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+      inline def setSession(value: js.Any): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
+      inline def setSessionUndefined: Self = StObject.set(x, "session", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

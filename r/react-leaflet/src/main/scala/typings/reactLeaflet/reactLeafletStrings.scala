@@ -8,6 +8,5 @@ object reactLeafletStrings {
   
   @js.native
   sealed trait leaflet extends StObject
-  @scala.inline
-  def leaflet: leaflet = "leaflet".asInstanceOf[leaflet]
+  inline def leaflet: leaflet = "leaflet".asInstanceOf[leaflet]
 }

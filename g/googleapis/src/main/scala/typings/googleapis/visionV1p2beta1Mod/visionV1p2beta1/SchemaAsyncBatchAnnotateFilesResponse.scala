@@ -17,22 +17,17 @@ trait SchemaAsyncBatchAnnotateFilesResponse extends StObject {
 }
 object SchemaAsyncBatchAnnotateFilesResponse {
   
-  @scala.inline
-  def apply(): SchemaAsyncBatchAnnotateFilesResponse = {
+  inline def apply(): SchemaAsyncBatchAnnotateFilesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAsyncBatchAnnotateFilesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaAsyncBatchAnnotateFilesResponseMutableBuilder[Self <: SchemaAsyncBatchAnnotateFilesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAsyncBatchAnnotateFilesResponse](x: Self) {
     
-    @scala.inline
-    def setResponses(value: js.Array[SchemaAsyncAnnotateFileResponse]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: js.Array[SchemaAsyncAnnotateFileResponse]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
+    inline def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
     
-    @scala.inline
-    def setResponsesVarargs(value: SchemaAsyncAnnotateFileResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
+    inline def setResponsesVarargs(value: SchemaAsyncAnnotateFileResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
   }
 }

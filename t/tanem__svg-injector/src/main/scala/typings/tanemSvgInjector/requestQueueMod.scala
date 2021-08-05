@@ -11,12 +11,9 @@ object requestQueueMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
+  inline def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
   
-  @scala.inline
-  def processRequestQueue(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("processRequestQueue")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def processRequestQueue(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("processRequestQueue")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def queueRequest(url: String, callback: Errback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("queueRequest")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def queueRequest(url: String, callback: Errback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("queueRequest")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

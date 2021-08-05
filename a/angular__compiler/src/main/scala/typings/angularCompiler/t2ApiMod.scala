@@ -132,8 +132,7 @@ object t2ApiMod {
   }
   object DirectiveMeta {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       inputs: InputOutputPropertySet,
       isComponent: Boolean,
       name: String,
@@ -143,35 +142,25 @@ object t2ApiMod {
       __obj.asInstanceOf[DirectiveMeta]
     }
     
-    @scala.inline
-    implicit class DirectiveMetaMutableBuilder[Self <: DirectiveMeta] (val x: Self) extends AnyVal {
+    extension [Self <: DirectiveMeta](x: Self) {
       
-      @scala.inline
-      def setExportAs(value: js.Array[String]): Self = StObject.set(x, "exportAs", value.asInstanceOf[js.Any])
+      inline def setExportAs(value: js.Array[String]): Self = StObject.set(x, "exportAs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportAsNull: Self = StObject.set(x, "exportAs", null)
+      inline def setExportAsNull: Self = StObject.set(x, "exportAs", null)
       
-      @scala.inline
-      def setExportAsVarargs(value: String*): Self = StObject.set(x, "exportAs", js.Array(value :_*))
+      inline def setExportAsVarargs(value: String*): Self = StObject.set(x, "exportAs", js.Array(value :_*))
       
-      @scala.inline
-      def setInputs(value: InputOutputPropertySet): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+      inline def setInputs(value: InputOutputPropertySet): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsComponent(value: Boolean): Self = StObject.set(x, "isComponent", value.asInstanceOf[js.Any])
+      inline def setIsComponent(value: Boolean): Self = StObject.set(x, "isComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputs(value: InputOutputPropertySet): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+      inline def setOutputs(value: InputOutputPropertySet): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorNull: Self = StObject.set(x, "selector", null)
+      inline def setSelectorNull: Self = StObject.set(x, "selector", null)
     }
   }
   
@@ -181,17 +170,14 @@ object t2ApiMod {
   }
   object InputOutputPropertySet {
     
-    @scala.inline
-    def apply(hasBindingPropertyName: String => Boolean): InputOutputPropertySet = {
+    inline def apply(hasBindingPropertyName: String => Boolean): InputOutputPropertySet = {
       val __obj = js.Dynamic.literal(hasBindingPropertyName = js.Any.fromFunction1(hasBindingPropertyName))
       __obj.asInstanceOf[InputOutputPropertySet]
     }
     
-    @scala.inline
-    implicit class InputOutputPropertySetMutableBuilder[Self <: InputOutputPropertySet] (val x: Self) extends AnyVal {
+    extension [Self <: InputOutputPropertySet](x: Self) {
       
-      @scala.inline
-      def setHasBindingPropertyName(value: String => Boolean): Self = StObject.set(x, "hasBindingPropertyName", js.Any.fromFunction1(value))
+      inline def setHasBindingPropertyName(value: String => Boolean): Self = StObject.set(x, "hasBindingPropertyName", js.Any.fromFunction1(value))
     }
   }
   
@@ -201,23 +187,18 @@ object t2ApiMod {
   }
   object Target {
     
-    @scala.inline
-    def apply(): Target = {
+    inline def apply(): Target = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Target]
     }
     
-    @scala.inline
-    implicit class TargetMutableBuilder[Self <: Target] (val x: Self) extends AnyVal {
+    extension [Self <: Target](x: Self) {
       
-      @scala.inline
-      def setTemplate(value: js.Array[Node]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: js.Array[Node]): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+      inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
       
-      @scala.inline
-      def setTemplateVarargs(value: Node*): Self = StObject.set(x, "template", js.Array(value :_*))
+      inline def setTemplateVarargs(value: Node*): Self = StObject.set(x, "template", js.Array(value :_*))
     }
   }
   
@@ -227,17 +208,14 @@ object t2ApiMod {
   }
   object TargetBinder {
     
-    @scala.inline
-    def apply[D /* <: DirectiveMeta */](bind: Target => BoundTarget[D]): TargetBinder[D] = {
+    inline def apply[D /* <: DirectiveMeta */](bind: Target => BoundTarget[D]): TargetBinder[D] = {
       val __obj = js.Dynamic.literal(bind = js.Any.fromFunction1(bind))
       __obj.asInstanceOf[TargetBinder[D]]
     }
     
-    @scala.inline
-    implicit class TargetBinderMutableBuilder[Self <: TargetBinder[?], D /* <: DirectiveMeta */] (val x: Self & TargetBinder[D]) extends AnyVal {
+    extension [Self <: TargetBinder[?], D /* <: DirectiveMeta */](x: Self & TargetBinder[D]) {
       
-      @scala.inline
-      def setBind(value: Target => BoundTarget[D]): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
+      inline def setBind(value: Target => BoundTarget[D]): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
     }
   }
 }

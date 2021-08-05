@@ -23,31 +23,23 @@ trait VideoSelector extends StObject {
 }
 object VideoSelector {
   
-  @scala.inline
-  def apply(): VideoSelector = {
+  inline def apply(): VideoSelector = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoSelector]
   }
   
-  @scala.inline
-  implicit class VideoSelectorMutableBuilder[Self <: VideoSelector] (val x: Self) extends AnyVal {
+  extension [Self <: VideoSelector](x: Self) {
     
-    @scala.inline
-    def setColorSpace(value: VideoSelectorColorSpace): Self = StObject.set(x, "ColorSpace", value.asInstanceOf[js.Any])
+    inline def setColorSpace(value: VideoSelectorColorSpace): Self = StObject.set(x, "ColorSpace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorSpaceUndefined: Self = StObject.set(x, "ColorSpace", js.undefined)
+    inline def setColorSpaceUndefined: Self = StObject.set(x, "ColorSpace", js.undefined)
     
-    @scala.inline
-    def setColorSpaceUsage(value: VideoSelectorColorSpaceUsage): Self = StObject.set(x, "ColorSpaceUsage", value.asInstanceOf[js.Any])
+    inline def setColorSpaceUsage(value: VideoSelectorColorSpaceUsage): Self = StObject.set(x, "ColorSpaceUsage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorSpaceUsageUndefined: Self = StObject.set(x, "ColorSpaceUsage", js.undefined)
+    inline def setColorSpaceUsageUndefined: Self = StObject.set(x, "ColorSpaceUsage", js.undefined)
     
-    @scala.inline
-    def setSelectorSettings(value: VideoSelectorSettings): Self = StObject.set(x, "SelectorSettings", value.asInstanceOf[js.Any])
+    inline def setSelectorSettings(value: VideoSelectorSettings): Self = StObject.set(x, "SelectorSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorSettingsUndefined: Self = StObject.set(x, "SelectorSettings", js.undefined)
+    inline def setSelectorSettingsUndefined: Self = StObject.set(x, "SelectorSettings", js.undefined)
   }
 }

@@ -15,19 +15,15 @@ trait ConcurrentOptions extends StObject {
 }
 object ConcurrentOptions {
   
-  @scala.inline
-  def apply(): ConcurrentOptions = {
+  inline def apply(): ConcurrentOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConcurrentOptions]
   }
   
-  @scala.inline
-  implicit class ConcurrentOptionsMutableBuilder[Self <: ConcurrentOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ConcurrentOptions](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait ValueAccessor extends StObject {
 }
 object ValueAccessor {
   
-  @scala.inline
-  def apply(valueAccessor: RechartsFunction): ValueAccessor = {
+  inline def apply(valueAccessor: RechartsFunction): ValueAccessor = {
     val __obj = js.Dynamic.literal(valueAccessor = valueAccessor.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueAccessor]
   }
   
-  @scala.inline
-  implicit class ValueAccessorMutableBuilder[Self <: ValueAccessor] (val x: Self) extends AnyVal {
+  extension [Self <: ValueAccessor](x: Self) {
     
-    @scala.inline
-    def setValueAccessor(value: RechartsFunction): Self = StObject.set(x, "valueAccessor", value.asInstanceOf[js.Any])
+    inline def setValueAccessor(value: RechartsFunction): Self = StObject.set(x, "valueAccessor", value.asInstanceOf[js.Any])
   }
 }

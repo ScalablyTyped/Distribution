@@ -13,16 +13,13 @@ trait ParticipantDetails extends StObject {
 }
 object ParticipantDetails {
   
-  @scala.inline
-  def apply(DisplayName: DisplayName): ParticipantDetails = {
+  inline def apply(DisplayName: DisplayName): ParticipantDetails = {
     val __obj = js.Dynamic.literal(DisplayName = DisplayName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParticipantDetails]
   }
   
-  @scala.inline
-  implicit class ParticipantDetailsMutableBuilder[Self <: ParticipantDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ParticipantDetails](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: DisplayName): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: DisplayName): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
   }
 }

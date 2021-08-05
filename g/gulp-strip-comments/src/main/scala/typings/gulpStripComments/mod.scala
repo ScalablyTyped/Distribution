@@ -48,41 +48,30 @@ object mod extends Shortcut {
     }
     object StripOptions {
       
-      @scala.inline
-      def apply(): StripOptions = {
+      inline def apply(): StripOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[StripOptions]
       }
       
-      @scala.inline
-      implicit class StripOptionsMutableBuilder[Self <: StripOptions] (val x: Self) extends AnyVal {
+      extension [Self <: StripOptions](x: Self) {
         
-        @scala.inline
-        def setIgnore(value: RegExp | js.Array[RegExp]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+        inline def setIgnore(value: RegExp | js.Array[RegExp]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+        inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
         
-        @scala.inline
-        def setIgnoreVarargs(value: RegExp*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+        inline def setIgnoreVarargs(value: RegExp*): Self = StObject.set(x, "ignore", js.Array(value :_*))
         
-        @scala.inline
-        def setSafe(value: Boolean): Self = StObject.set(x, "safe", value.asInstanceOf[js.Any])
+        inline def setSafe(value: Boolean): Self = StObject.set(x, "safe", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSafeUndefined: Self = StObject.set(x, "safe", js.undefined)
+        inline def setSafeUndefined: Self = StObject.set(x, "safe", js.undefined)
         
-        @scala.inline
-        def setSpace(value: Boolean): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+        inline def setSpace(value: Boolean): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
+        inline def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
         
-        @scala.inline
-        def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
+        inline def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
+        inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
       }
     }
   }

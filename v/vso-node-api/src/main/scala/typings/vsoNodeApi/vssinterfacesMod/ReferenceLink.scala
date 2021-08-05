@@ -10,16 +10,13 @@ trait ReferenceLink extends StObject {
 }
 object ReferenceLink {
   
-  @scala.inline
-  def apply(href: String): ReferenceLink = {
+  inline def apply(href: String): ReferenceLink = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReferenceLink]
   }
   
-  @scala.inline
-  implicit class ReferenceLinkMutableBuilder[Self <: ReferenceLink] (val x: Self) extends AnyVal {
+  extension [Self <: ReferenceLink](x: Self) {
     
-    @scala.inline
-    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
   }
 }

@@ -56,8 +56,7 @@ object BinaryRequestHandling {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): BinaryRequestHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[BinaryRequestHandling]
+  inline def create(model: IModel): BinaryRequestHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[BinaryRequestHandling]
   
   /**
     * Creates and returns a new BinaryRequestHandling instance in the SDK and on the server.
@@ -68,8 +67,7 @@ object BinaryRequestHandling {
     *  6.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInRestCallActionUnderRequestHandling(container: RestCallAction): BinaryRequestHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestCallActionUnderRequestHandling")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryRequestHandling]
+  inline def createInRestCallActionUnderRequestHandling(container: RestCallAction): BinaryRequestHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestCallActionUnderRequestHandling")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryRequestHandling]
   
   /**
     * Creates and returns a new BinaryRequestHandling instance in the SDK and on the server.
@@ -80,8 +78,7 @@ object BinaryRequestHandling {
     *  6.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWebServiceCallActionUnderRequestBodyHandling(container: WebServiceCallAction): BinaryRequestHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderRequestBodyHandling")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryRequestHandling]
+  inline def createInWebServiceCallActionUnderRequestBodyHandling(container: WebServiceCallAction): BinaryRequestHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderRequestBodyHandling")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryRequestHandling]
   
   /**
     * Creates and returns a new BinaryRequestHandling instance in the SDK and on the server.
@@ -92,20 +89,17 @@ object BinaryRequestHandling {
     *  6.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWebServiceCallActionUnderRequestHeaderHandling(container: WebServiceCallAction): BinaryRequestHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderRequestHeaderHandling")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryRequestHandling]
+  inline def createInWebServiceCallActionUnderRequestHeaderHandling(container: WebServiceCallAction): BinaryRequestHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderRequestHeaderHandling")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryRequestHandling]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.BinaryRequestHandling.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.BinaryRequestHandling.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

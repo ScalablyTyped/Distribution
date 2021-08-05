@@ -10,19 +10,15 @@ trait DeletionFlag extends StObject {
 }
 object DeletionFlag {
   
-  @scala.inline
-  def apply(): DeletionFlag = {
+  inline def apply(): DeletionFlag = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeletionFlag]
   }
   
-  @scala.inline
-  implicit class DeletionFlagMutableBuilder[Self <: DeletionFlag] (val x: Self) extends AnyVal {
+  extension [Self <: DeletionFlag](x: Self) {
     
-    @scala.inline
-    def setDeletionFlag(value: Boolean): Self = StObject.set(x, "deletionFlag", value.asInstanceOf[js.Any])
+    inline def setDeletionFlag(value: Boolean): Self = StObject.set(x, "deletionFlag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletionFlagUndefined: Self = StObject.set(x, "deletionFlag", js.undefined)
+    inline def setDeletionFlagUndefined: Self = StObject.set(x, "deletionFlag", js.undefined)
   }
 }

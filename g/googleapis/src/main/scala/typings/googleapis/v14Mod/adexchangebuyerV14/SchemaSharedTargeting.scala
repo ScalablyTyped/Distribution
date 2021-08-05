@@ -25,37 +25,27 @@ trait SchemaSharedTargeting extends StObject {
 }
 object SchemaSharedTargeting {
   
-  @scala.inline
-  def apply(): SchemaSharedTargeting = {
+  inline def apply(): SchemaSharedTargeting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSharedTargeting]
   }
   
-  @scala.inline
-  implicit class SchemaSharedTargetingMutableBuilder[Self <: SchemaSharedTargeting] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSharedTargeting](x: Self) {
     
-    @scala.inline
-    def setExclusions(value: js.Array[SchemaTargetingValue]): Self = StObject.set(x, "exclusions", value.asInstanceOf[js.Any])
+    inline def setExclusions(value: js.Array[SchemaTargetingValue]): Self = StObject.set(x, "exclusions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusionsUndefined: Self = StObject.set(x, "exclusions", js.undefined)
+    inline def setExclusionsUndefined: Self = StObject.set(x, "exclusions", js.undefined)
     
-    @scala.inline
-    def setExclusionsVarargs(value: SchemaTargetingValue*): Self = StObject.set(x, "exclusions", js.Array(value :_*))
+    inline def setExclusionsVarargs(value: SchemaTargetingValue*): Self = StObject.set(x, "exclusions", js.Array(value :_*))
     
-    @scala.inline
-    def setInclusions(value: js.Array[SchemaTargetingValue]): Self = StObject.set(x, "inclusions", value.asInstanceOf[js.Any])
+    inline def setInclusions(value: js.Array[SchemaTargetingValue]): Self = StObject.set(x, "inclusions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInclusionsUndefined: Self = StObject.set(x, "inclusions", js.undefined)
+    inline def setInclusionsUndefined: Self = StObject.set(x, "inclusions", js.undefined)
     
-    @scala.inline
-    def setInclusionsVarargs(value: SchemaTargetingValue*): Self = StObject.set(x, "inclusions", js.Array(value :_*))
+    inline def setInclusionsVarargs(value: SchemaTargetingValue*): Self = StObject.set(x, "inclusions", js.Array(value :_*))
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
   }
 }

@@ -51,14 +51,12 @@ object notifications {
     @JSGlobal("chrome.notifications.PermissionLevel.DENIED")
     @js.native
     def DENIED: denied_ = js.native
-    @scala.inline
-    def DENIED_=(x: denied_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DENIED")(x.asInstanceOf[js.Any])
+    inline def DENIED_=(x: denied_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DENIED")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.notifications.PermissionLevel.GRANTED")
     @js.native
     def GRANTED: granted_ = js.native
-    @scala.inline
-    def GRANTED_=(x: granted_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GRANTED")(x.asInstanceOf[js.Any])
+    inline def GRANTED_=(x: granted_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GRANTED")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -77,26 +75,22 @@ object notifications {
     @JSGlobal("chrome.notifications.TemplateType.BASIC")
     @js.native
     def BASIC: basic_ = js.native
-    @scala.inline
-    def BASIC_=(x: basic_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BASIC")(x.asInstanceOf[js.Any])
+    inline def BASIC_=(x: basic_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BASIC")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.notifications.TemplateType.IMAGE")
     @js.native
     def IMAGE: image_ = js.native
-    @scala.inline
-    def IMAGE_=(x: image_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IMAGE")(x.asInstanceOf[js.Any])
+    inline def IMAGE_=(x: image_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IMAGE")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.notifications.TemplateType.LIST")
     @js.native
     def LIST: list_ = js.native
-    @scala.inline
-    def LIST_=(x: list_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIST")(x.asInstanceOf[js.Any])
+    inline def LIST_=(x: list_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIST")(x.asInstanceOf[js.Any])
     
     @JSGlobal("chrome.notifications.TemplateType.PROGRESS")
     @js.native
     def PROGRESS: progress_ = js.native
-    @scala.inline
-    def PROGRESS_=(x: progress_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROGRESS")(x.asInstanceOf[js.Any])
+    inline def PROGRESS_=(x: progress_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROGRESS")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -104,10 +98,8 @@ object notifications {
     * @param notificationId The id of the notification to be cleared. This is returned by notifications.create method.
     * @param callback Called to indicate whether a matching notification existed.
     */
-  @scala.inline
-  def clear(notificationId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(notificationId.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def clear(notificationId: String, callback: js.Function1[/* wasCleared */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clear")(notificationId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def clear(notificationId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(notificationId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clear(notificationId: String, callback: js.Function1[/* wasCleared */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clear")(notificationId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Creates and displays a notification.
@@ -119,10 +111,8 @@ object notifications {
     * @param options Contents of the notification.
     * @param [callback] Returns the notification id (either supplied or generated) that represents the created notification.
     */
-  @scala.inline
-  def create(notificationId: String, options: NotificationOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(notificationId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def create(
+  inline def create(notificationId: String, options: NotificationOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(notificationId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def create(
     notificationId: String,
     options: NotificationOptions,
     callback: js.Function1[/* notificationId */ String, Unit]
@@ -133,10 +123,8 @@ object notifications {
     * @param options Contents of the notification.
     * @param [callback] Returns the notification id (either supplied or generated) that represents the created notification.
     */
-  @scala.inline
-  def create(options: NotificationOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def create(options: NotificationOptions, callback: js.Function1[/* notificationId */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def create(options: NotificationOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def create(options: NotificationOptions, callback: js.Function1[/* notificationId */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Retrieves all the active notifications.
@@ -148,8 +136,7 @@ object notifications {
     *  console.log('Active notifications:', Object.keys(result));
     * });
     */
-  @scala.inline
-  def getAll_true(callback: js.Function1[/* notifications */ StringDictionary[`true`], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getAll_true(callback: js.Function1[/* notifications */ StringDictionary[`true`], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Retrieves whether the user has enabled notifications from this app .
@@ -157,8 +144,7 @@ object notifications {
     * @param callback Returns the current permission level.
     * @see enum PermissionLevel
     */
-  @scala.inline
-  def getPermissionLevel(
+  inline def getPermissionLevel(
     callback: js.Function1[
       /* level */ ToStringLiteral[
         DENIED, 
@@ -211,10 +197,8 @@ object notifications {
     * @param options Contents of the notification to update to.
     * @param [callback] Called to indicate whether a matching notification existed.
     */
-  @scala.inline
-  def update(notificationId: String, options: PartialNotificationOption): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(notificationId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def update(
+  inline def update(notificationId: String, options: PartialNotificationOption): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(notificationId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def update(
     notificationId: String,
     options: PartialNotificationOption,
     callback: js.Function1[/* wasUpdated */ Boolean, Unit]

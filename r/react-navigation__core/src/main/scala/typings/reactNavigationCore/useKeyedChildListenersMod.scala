@@ -11,6 +11,5 @@ object useKeyedChildListenersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): KeyedListeners = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[KeyedListeners]
+  inline def default(): KeyedListeners = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[KeyedListeners]
 }

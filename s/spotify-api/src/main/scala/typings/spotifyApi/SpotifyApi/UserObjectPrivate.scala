@@ -22,8 +22,7 @@ trait UserObjectPrivate
 }
 object UserObjectPrivate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     birthdate: String,
     country: String,
     email: String,
@@ -38,19 +37,14 @@ object UserObjectPrivate {
     __obj.asInstanceOf[UserObjectPrivate]
   }
   
-  @scala.inline
-  implicit class UserObjectPrivateMutableBuilder[Self <: UserObjectPrivate] (val x: Self) extends AnyVal {
+  extension [Self <: UserObjectPrivate](x: Self) {
     
-    @scala.inline
-    def setBirthdate(value: String): Self = StObject.set(x, "birthdate", value.asInstanceOf[js.Any])
+    inline def setBirthdate(value: String): Self = StObject.set(x, "birthdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+    inline def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
   }
 }

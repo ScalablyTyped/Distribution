@@ -14,7 +14,7 @@ trait BootstrapFormLayoutItem extends StObject {
   
   def getVisible(): Boolean
   
-  val instance: js.Any
+  /* protected */ val instance: js.Any
   
   val name: String
   
@@ -26,8 +26,7 @@ trait BootstrapFormLayoutItem extends StObject {
 }
 object BootstrapFormLayoutItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCaption: () => String,
     getItemByName: String => BootstrapFormLayoutItem | Null,
     getVisible: () => Boolean,
@@ -40,40 +39,28 @@ object BootstrapFormLayoutItem {
     __obj.asInstanceOf[BootstrapFormLayoutItem]
   }
   
-  @scala.inline
-  implicit class BootstrapFormLayoutItemMutableBuilder[Self <: BootstrapFormLayoutItem] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapFormLayoutItem](x: Self) {
     
-    @scala.inline
-    def setFormLayout(value: BootstrapFormLayout): Self = StObject.set(x, "formLayout", value.asInstanceOf[js.Any])
+    inline def setFormLayout(value: BootstrapFormLayout): Self = StObject.set(x, "formLayout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormLayoutNull: Self = StObject.set(x, "formLayout", null)
+    inline def setFormLayoutNull: Self = StObject.set(x, "formLayout", null)
     
-    @scala.inline
-    def setGetCaption(value: () => String): Self = StObject.set(x, "getCaption", js.Any.fromFunction0(value))
+    inline def setGetCaption(value: () => String): Self = StObject.set(x, "getCaption", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetItemByName(value: String => BootstrapFormLayoutItem | Null): Self = StObject.set(x, "getItemByName", js.Any.fromFunction1(value))
+    inline def setGetItemByName(value: String => BootstrapFormLayoutItem | Null): Self = StObject.set(x, "getItemByName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetVisible(value: () => Boolean): Self = StObject.set(x, "getVisible", js.Any.fromFunction0(value))
+    inline def setGetVisible(value: () => Boolean): Self = StObject.set(x, "getVisible", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: BootstrapFormLayoutItem): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: BootstrapFormLayoutItem): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNull: Self = StObject.set(x, "parent", null)
+    inline def setParentNull: Self = StObject.set(x, "parent", null)
     
-    @scala.inline
-    def setSetCaption(value: String => Unit): Self = StObject.set(x, "setCaption", js.Any.fromFunction1(value))
+    inline def setSetCaption(value: String => Unit): Self = StObject.set(x, "setCaption", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetVisible(value: Boolean => Unit): Self = StObject.set(x, "setVisible", js.Any.fromFunction1(value))
+    inline def setSetVisible(value: Boolean => Unit): Self = StObject.set(x, "setVisible", js.Any.fromFunction1(value))
   }
 }

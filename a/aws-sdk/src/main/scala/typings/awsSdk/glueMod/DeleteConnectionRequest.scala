@@ -18,22 +18,17 @@ trait DeleteConnectionRequest extends StObject {
 }
 object DeleteConnectionRequest {
   
-  @scala.inline
-  def apply(ConnectionName: NameString): DeleteConnectionRequest = {
+  inline def apply(ConnectionName: NameString): DeleteConnectionRequest = {
     val __obj = js.Dynamic.literal(ConnectionName = ConnectionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteConnectionRequest]
   }
   
-  @scala.inline
-  implicit class DeleteConnectionRequestMutableBuilder[Self <: DeleteConnectionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteConnectionRequest](x: Self) {
     
-    @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
+    inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
+    inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
-    @scala.inline
-    def setConnectionName(value: NameString): Self = StObject.set(x, "ConnectionName", value.asInstanceOf[js.Any])
+    inline def setConnectionName(value: NameString): Self = StObject.set(x, "ConnectionName", value.asInstanceOf[js.Any])
   }
 }

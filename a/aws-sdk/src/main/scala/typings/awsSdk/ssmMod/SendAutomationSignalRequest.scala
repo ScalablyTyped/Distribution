@@ -23,25 +23,19 @@ trait SendAutomationSignalRequest extends StObject {
 }
 object SendAutomationSignalRequest {
   
-  @scala.inline
-  def apply(AutomationExecutionId: AutomationExecutionId, SignalType: SignalType): SendAutomationSignalRequest = {
+  inline def apply(AutomationExecutionId: AutomationExecutionId, SignalType: SignalType): SendAutomationSignalRequest = {
     val __obj = js.Dynamic.literal(AutomationExecutionId = AutomationExecutionId.asInstanceOf[js.Any], SignalType = SignalType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendAutomationSignalRequest]
   }
   
-  @scala.inline
-  implicit class SendAutomationSignalRequestMutableBuilder[Self <: SendAutomationSignalRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SendAutomationSignalRequest](x: Self) {
     
-    @scala.inline
-    def setAutomationExecutionId(value: AutomationExecutionId): Self = StObject.set(x, "AutomationExecutionId", value.asInstanceOf[js.Any])
+    inline def setAutomationExecutionId(value: AutomationExecutionId): Self = StObject.set(x, "AutomationExecutionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayload(value: AutomationParameterMap): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: AutomationParameterMap): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "Payload", js.undefined)
     
-    @scala.inline
-    def setSignalType(value: SignalType): Self = StObject.set(x, "SignalType", value.asInstanceOf[js.Any])
+    inline def setSignalType(value: SignalType): Self = StObject.set(x, "SignalType", value.asInstanceOf[js.Any])
   }
 }

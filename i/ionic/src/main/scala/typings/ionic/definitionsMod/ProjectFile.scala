@@ -12,14 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProjectFile extends StObject
 object ProjectFile {
   
-  @scala.inline
-  def IMultiProjectConfig(projects: StringDictionary[js.UndefOr[IProjectConfig]]): typings.ionic.definitionsMod.IMultiProjectConfig = {
+  inline def IMultiProjectConfig(projects: StringDictionary[js.UndefOr[IProjectConfig]]): typings.ionic.definitionsMod.IMultiProjectConfig = {
     val __obj = js.Dynamic.literal(projects = projects.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.ionic.definitionsMod.IMultiProjectConfig]
   }
   
-  @scala.inline
-  def IProjectConfig(integrations: ProjectIntegrations, name: String): typings.ionic.definitionsMod.IProjectConfig = {
+  inline def IProjectConfig(integrations: ProjectIntegrations, name: String): typings.ionic.definitionsMod.IProjectConfig = {
     val __obj = js.Dynamic.literal(integrations = integrations.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.ionic.definitionsMod.IProjectConfig]
   }

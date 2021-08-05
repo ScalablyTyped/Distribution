@@ -11,19 +11,15 @@ trait InventorySourceGroupAssignedTargetingOptionDetails extends StObject {
 }
 object InventorySourceGroupAssignedTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): InventorySourceGroupAssignedTargetingOptionDetails = {
+  inline def apply(): InventorySourceGroupAssignedTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InventorySourceGroupAssignedTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class InventorySourceGroupAssignedTargetingOptionDetailsMutableBuilder[Self <: InventorySourceGroupAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: InventorySourceGroupAssignedTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setInventorySourceGroupId(value: String): Self = StObject.set(x, "inventorySourceGroupId", value.asInstanceOf[js.Any])
+    inline def setInventorySourceGroupId(value: String): Self = StObject.set(x, "inventorySourceGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInventorySourceGroupIdUndefined: Self = StObject.set(x, "inventorySourceGroupId", js.undefined)
+    inline def setInventorySourceGroupIdUndefined: Self = StObject.set(x, "inventorySourceGroupId", js.undefined)
   }
 }

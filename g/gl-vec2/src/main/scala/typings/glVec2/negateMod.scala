@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object negateMod {
   
-  @scala.inline
-  def apply(out: js.Array[Double], a: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].apply(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def apply(out: js.Array[Double], a: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].apply(out.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
   @JSImport("gl-vec2/negate", JSImport.Namespace)
   @js.native

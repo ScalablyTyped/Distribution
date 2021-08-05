@@ -43,56 +43,40 @@ object stylesProviderStylesProviderMod extends Shortcut {
   }
   object StylesOptions {
     
-    @scala.inline
-    def apply(): StylesOptions = {
+    inline def apply(): StylesOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StylesOptions]
     }
     
-    @scala.inline
-    implicit class StylesOptionsMutableBuilder[Self <: StylesOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StylesOptions](x: Self) {
       
-      @scala.inline
-      def setDisableGeneration(value: Boolean): Self = StObject.set(x, "disableGeneration", value.asInstanceOf[js.Any])
+      inline def setDisableGeneration(value: Boolean): Self = StObject.set(x, "disableGeneration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableGenerationUndefined: Self = StObject.set(x, "disableGeneration", js.undefined)
+      inline def setDisableGenerationUndefined: Self = StObject.set(x, "disableGeneration", js.undefined)
       
-      @scala.inline
-      def setGenerateClassName(value: (/* rule */ Rule, /* sheet */ js.UndefOr[StyleSheet[String]]) => String): Self = StObject.set(x, "generateClassName", js.Any.fromFunction2(value))
+      inline def setGenerateClassName(value: (/* rule */ Rule, /* sheet */ js.UndefOr[StyleSheet[String]]) => String): Self = StObject.set(x, "generateClassName", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGenerateClassNameUndefined: Self = StObject.set(x, "generateClassName", js.undefined)
+      inline def setGenerateClassNameUndefined: Self = StObject.set(x, "generateClassName", js.undefined)
       
-      @scala.inline
-      def setInjectFirst(value: Boolean): Self = StObject.set(x, "injectFirst", value.asInstanceOf[js.Any])
+      inline def setInjectFirst(value: Boolean): Self = StObject.set(x, "injectFirst", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInjectFirstUndefined: Self = StObject.set(x, "injectFirst", js.undefined)
+      inline def setInjectFirstUndefined: Self = StObject.set(x, "injectFirst", js.undefined)
       
-      @scala.inline
-      def setJss(value: Jss): Self = StObject.set(x, "jss", value.asInstanceOf[js.Any])
+      inline def setJss(value: Jss): Self = StObject.set(x, "jss", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJssUndefined: Self = StObject.set(x, "jss", js.undefined)
+      inline def setJssUndefined: Self = StObject.set(x, "jss", js.undefined)
       
-      @scala.inline
-      def setSheetsCache(value: js.Object): Self = StObject.set(x, "sheetsCache", value.asInstanceOf[js.Any])
+      inline def setSheetsCache(value: js.Object): Self = StObject.set(x, "sheetsCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSheetsCacheUndefined: Self = StObject.set(x, "sheetsCache", js.undefined)
+      inline def setSheetsCacheUndefined: Self = StObject.set(x, "sheetsCache", js.undefined)
       
-      @scala.inline
-      def setSheetsManager(value: js.Object): Self = StObject.set(x, "sheetsManager", value.asInstanceOf[js.Any])
+      inline def setSheetsManager(value: js.Object): Self = StObject.set(x, "sheetsManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSheetsManagerUndefined: Self = StObject.set(x, "sheetsManager", js.undefined)
+      inline def setSheetsManagerUndefined: Self = StObject.set(x, "sheetsManager", js.undefined)
       
-      @scala.inline
-      def setSheetsRegistry(value: js.Object): Self = StObject.set(x, "sheetsRegistry", value.asInstanceOf[js.Any])
+      inline def setSheetsRegistry(value: js.Object): Self = StObject.set(x, "sheetsRegistry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSheetsRegistryUndefined: Self = StObject.set(x, "sheetsRegistry", js.undefined)
+      inline def setSheetsRegistryUndefined: Self = StObject.set(x, "sheetsRegistry", js.undefined)
     }
   }
   
@@ -104,20 +88,16 @@ object stylesProviderStylesProviderMod extends Shortcut {
   }
   object StylesProviderProps {
     
-    @scala.inline
-    def apply(): StylesProviderProps = {
+    inline def apply(): StylesProviderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StylesProviderProps]
     }
     
-    @scala.inline
-    implicit class StylesProviderPropsMutableBuilder[Self <: StylesProviderProps] (val x: Self) extends AnyVal {
+    extension [Self <: StylesProviderProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
   

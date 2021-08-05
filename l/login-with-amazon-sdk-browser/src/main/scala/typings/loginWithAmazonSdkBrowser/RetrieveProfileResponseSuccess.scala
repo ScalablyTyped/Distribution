@@ -25,19 +25,15 @@ trait RetrieveProfileResponseSuccess
 }
 object RetrieveProfileResponseSuccess {
   
-  @scala.inline
-  def apply(profile: UserProfile): RetrieveProfileResponseSuccess = {
+  inline def apply(profile: UserProfile): RetrieveProfileResponseSuccess = {
     val __obj = js.Dynamic.literal(profile = profile.asInstanceOf[js.Any], success = true)
     __obj.asInstanceOf[RetrieveProfileResponseSuccess]
   }
   
-  @scala.inline
-  implicit class RetrieveProfileResponseSuccessMutableBuilder[Self <: RetrieveProfileResponseSuccess] (val x: Self) extends AnyVal {
+  extension [Self <: RetrieveProfileResponseSuccess](x: Self) {
     
-    @scala.inline
-    def setProfile(value: UserProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: UserProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: `true`): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: `true`): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }
 }

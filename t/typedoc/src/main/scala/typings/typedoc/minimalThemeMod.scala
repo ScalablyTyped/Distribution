@@ -15,7 +15,7 @@ object minimalThemeMod {
   class MinimalTheme protected () extends DefaultTheme {
     def this(renderer: Renderer, basePath: String) = this()
     
-    var onRendererBeginPage: js.Any = js.native
+    /* private */ var onRendererBeginPage: js.Any = js.native
   }
   /* static members */
   object MinimalTheme {
@@ -24,7 +24,6 @@ object minimalThemeMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def buildToc(model: DeclarationReflection, parent: NavigationItem): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("buildToc")(model.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def buildToc(model: DeclarationReflection, parent: NavigationItem): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("buildToc")(model.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

@@ -8,21 +8,17 @@ object tiffToPngStrings {
   
   @js.native
   sealed trait A3 extends StObject
-  @scala.inline
-  def A3: A3 = "A3".asInstanceOf[A3]
+  inline def A3: A3 = "A3".asInstanceOf[A3]
   
   @js.native
   sealed trait A4 extends StObject
-  @scala.inline
-  def A4: A4 = "A4".asInstanceOf[A4]
+  inline def A4: A4 = "A4".asInstanceOf[A4]
   
   @js.native
   sealed trait jpg extends StObject
-  @scala.inline
-  def jpg: jpg = "jpg".asInstanceOf[jpg]
+  inline def jpg: jpg = "jpg".asInstanceOf[jpg]
   
   @js.native
   sealed trait png extends StObject
-  @scala.inline
-  def png: png = "png".asInstanceOf[png]
+  inline def png: png = "png".asInstanceOf[png]
 }

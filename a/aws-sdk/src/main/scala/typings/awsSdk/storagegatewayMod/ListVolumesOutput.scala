@@ -20,34 +20,25 @@ trait ListVolumesOutput extends StObject {
 }
 object ListVolumesOutput {
   
-  @scala.inline
-  def apply(): ListVolumesOutput = {
+  inline def apply(): ListVolumesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListVolumesOutput]
   }
   
-  @scala.inline
-  implicit class ListVolumesOutputMutableBuilder[Self <: ListVolumesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListVolumesOutput](x: Self) {
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
+    inline def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
     
-    @scala.inline
-    def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: Marker): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setVolumeInfos(value: VolumeInfos): Self = StObject.set(x, "VolumeInfos", value.asInstanceOf[js.Any])
+    inline def setVolumeInfos(value: VolumeInfos): Self = StObject.set(x, "VolumeInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeInfosUndefined: Self = StObject.set(x, "VolumeInfos", js.undefined)
+    inline def setVolumeInfosUndefined: Self = StObject.set(x, "VolumeInfos", js.undefined)
     
-    @scala.inline
-    def setVolumeInfosVarargs(value: VolumeInfo*): Self = StObject.set(x, "VolumeInfos", js.Array(value :_*))
+    inline def setVolumeInfosVarargs(value: VolumeInfo*): Self = StObject.set(x, "VolumeInfos", js.Array(value :_*))
   }
 }

@@ -18,28 +18,21 @@ trait GetUserDefinedFunctionsResponse extends StObject {
 }
 object GetUserDefinedFunctionsResponse {
   
-  @scala.inline
-  def apply(): GetUserDefinedFunctionsResponse = {
+  inline def apply(): GetUserDefinedFunctionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetUserDefinedFunctionsResponse]
   }
   
-  @scala.inline
-  implicit class GetUserDefinedFunctionsResponseMutableBuilder[Self <: GetUserDefinedFunctionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetUserDefinedFunctionsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setUserDefinedFunctions(value: UserDefinedFunctionList): Self = StObject.set(x, "UserDefinedFunctions", value.asInstanceOf[js.Any])
+    inline def setUserDefinedFunctions(value: UserDefinedFunctionList): Self = StObject.set(x, "UserDefinedFunctions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserDefinedFunctionsUndefined: Self = StObject.set(x, "UserDefinedFunctions", js.undefined)
+    inline def setUserDefinedFunctionsUndefined: Self = StObject.set(x, "UserDefinedFunctions", js.undefined)
     
-    @scala.inline
-    def setUserDefinedFunctionsVarargs(value: UserDefinedFunction*): Self = StObject.set(x, "UserDefinedFunctions", js.Array(value :_*))
+    inline def setUserDefinedFunctionsVarargs(value: UserDefinedFunction*): Self = StObject.set(x, "UserDefinedFunctions", js.Array(value :_*))
   }
 }

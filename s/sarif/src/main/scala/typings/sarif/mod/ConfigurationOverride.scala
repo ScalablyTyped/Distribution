@@ -23,25 +23,19 @@ trait ConfigurationOverride extends StObject {
 }
 object ConfigurationOverride {
   
-  @scala.inline
-  def apply(configuration: ReportingConfiguration, descriptor: ReportingDescriptorReference): ConfigurationOverride = {
+  inline def apply(configuration: ReportingConfiguration, descriptor: ReportingDescriptorReference): ConfigurationOverride = {
     val __obj = js.Dynamic.literal(configuration = configuration.asInstanceOf[js.Any], descriptor = descriptor.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigurationOverride]
   }
   
-  @scala.inline
-  implicit class ConfigurationOverrideMutableBuilder[Self <: ConfigurationOverride] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigurationOverride](x: Self) {
     
-    @scala.inline
-    def setConfiguration(value: ReportingConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: ReportingConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptor(value: ReportingDescriptorReference): Self = StObject.set(x, "descriptor", value.asInstanceOf[js.Any])
+    inline def setDescriptor(value: ReportingDescriptorReference): Self = StObject.set(x, "descriptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }
 }

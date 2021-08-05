@@ -18,22 +18,17 @@ trait FileProtectionInfo extends StObject {
 }
 object FileProtectionInfo {
   
-  @scala.inline
-  def apply(identity: String, isRoamable: Boolean, status: FileProtectionStatus): FileProtectionInfo = {
+  inline def apply(identity: String, isRoamable: Boolean, status: FileProtectionStatus): FileProtectionInfo = {
     val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], isRoamable = isRoamable.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileProtectionInfo]
   }
   
-  @scala.inline
-  implicit class FileProtectionInfoMutableBuilder[Self <: FileProtectionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: FileProtectionInfo](x: Self) {
     
-    @scala.inline
-    def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+    inline def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRoamable(value: Boolean): Self = StObject.set(x, "isRoamable", value.asInstanceOf[js.Any])
+    inline def setIsRoamable(value: Boolean): Self = StObject.set(x, "isRoamable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: FileProtectionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: FileProtectionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

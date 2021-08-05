@@ -34,35 +34,26 @@ object typesGetObjectAclOutputMod {
   }
   object GetObjectAclOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): GetObjectAclOutput = {
+    inline def apply($metadata: ResponseMetadata): GetObjectAclOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetObjectAclOutput]
     }
     
-    @scala.inline
-    implicit class GetObjectAclOutputMutableBuilder[Self <: GetObjectAclOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetObjectAclOutput](x: Self) {
       
-      @scala.inline
-      def setGrants(value: js.Array[UnmarshalledGrant]): Self = StObject.set(x, "Grants", value.asInstanceOf[js.Any])
+      inline def setGrants(value: js.Array[UnmarshalledGrant]): Self = StObject.set(x, "Grants", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrantsUndefined: Self = StObject.set(x, "Grants", js.undefined)
+      inline def setGrantsUndefined: Self = StObject.set(x, "Grants", js.undefined)
       
-      @scala.inline
-      def setGrantsVarargs(value: UnmarshalledGrant*): Self = StObject.set(x, "Grants", js.Array(value :_*))
+      inline def setGrantsVarargs(value: UnmarshalledGrant*): Self = StObject.set(x, "Grants", js.Array(value :_*))
       
-      @scala.inline
-      def setOwner(value: UnmarshalledOwner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
+      inline def setOwner(value: UnmarshalledOwner): Self = StObject.set(x, "Owner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
+      inline def setOwnerUndefined: Self = StObject.set(x, "Owner", js.undefined)
       
-      @scala.inline
-      def setRequestCharged(value: requester_ | String): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
+      inline def setRequestCharged(value: requester_ | String): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestChargedUndefined: Self = StObject.set(x, "RequestCharged", js.undefined)
+      inline def setRequestChargedUndefined: Self = StObject.set(x, "RequestCharged", js.undefined)
     }
   }
 }

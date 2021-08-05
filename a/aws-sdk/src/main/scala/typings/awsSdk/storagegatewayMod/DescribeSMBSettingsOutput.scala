@@ -35,49 +35,35 @@ trait DescribeSMBSettingsOutput extends StObject {
 }
 object DescribeSMBSettingsOutput {
   
-  @scala.inline
-  def apply(): DescribeSMBSettingsOutput = {
+  inline def apply(): DescribeSMBSettingsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeSMBSettingsOutput]
   }
   
-  @scala.inline
-  implicit class DescribeSMBSettingsOutputMutableBuilder[Self <: DescribeSMBSettingsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSMBSettingsOutput](x: Self) {
     
-    @scala.inline
-    def setActiveDirectoryStatus(value: ActiveDirectoryStatus): Self = StObject.set(x, "ActiveDirectoryStatus", value.asInstanceOf[js.Any])
+    inline def setActiveDirectoryStatus(value: ActiveDirectoryStatus): Self = StObject.set(x, "ActiveDirectoryStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveDirectoryStatusUndefined: Self = StObject.set(x, "ActiveDirectoryStatus", js.undefined)
+    inline def setActiveDirectoryStatusUndefined: Self = StObject.set(x, "ActiveDirectoryStatus", js.undefined)
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
+    inline def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
     
-    @scala.inline
-    def setFileSharesVisible(value: Boolean): Self = StObject.set(x, "FileSharesVisible", value.asInstanceOf[js.Any])
+    inline def setFileSharesVisible(value: Boolean): Self = StObject.set(x, "FileSharesVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSharesVisibleUndefined: Self = StObject.set(x, "FileSharesVisible", js.undefined)
+    inline def setFileSharesVisibleUndefined: Self = StObject.set(x, "FileSharesVisible", js.undefined)
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
+    inline def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
     
-    @scala.inline
-    def setSMBGuestPasswordSet(value: Boolean): Self = StObject.set(x, "SMBGuestPasswordSet", value.asInstanceOf[js.Any])
+    inline def setSMBGuestPasswordSet(value: Boolean): Self = StObject.set(x, "SMBGuestPasswordSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSMBGuestPasswordSetUndefined: Self = StObject.set(x, "SMBGuestPasswordSet", js.undefined)
+    inline def setSMBGuestPasswordSetUndefined: Self = StObject.set(x, "SMBGuestPasswordSet", js.undefined)
     
-    @scala.inline
-    def setSMBSecurityStrategy(value: SMBSecurityStrategy): Self = StObject.set(x, "SMBSecurityStrategy", value.asInstanceOf[js.Any])
+    inline def setSMBSecurityStrategy(value: SMBSecurityStrategy): Self = StObject.set(x, "SMBSecurityStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSMBSecurityStrategyUndefined: Self = StObject.set(x, "SMBSecurityStrategy", js.undefined)
+    inline def setSMBSecurityStrategyUndefined: Self = StObject.set(x, "SMBSecurityStrategy", js.undefined)
   }
 }

@@ -14,22 +14,17 @@ trait KnockoutComputedContext extends StObject {
 }
 object KnockoutComputedContext {
   
-  @scala.inline
-  def apply(getDependenciesCount: () => Double, isInitial: () => Boolean, isSleeping: Boolean): KnockoutComputedContext = {
+  inline def apply(getDependenciesCount: () => Double, isInitial: () => Boolean, isSleeping: Boolean): KnockoutComputedContext = {
     val __obj = js.Dynamic.literal(getDependenciesCount = js.Any.fromFunction0(getDependenciesCount), isInitial = js.Any.fromFunction0(isInitial), isSleeping = isSleeping.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnockoutComputedContext]
   }
   
-  @scala.inline
-  implicit class KnockoutComputedContextMutableBuilder[Self <: KnockoutComputedContext] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutComputedContext](x: Self) {
     
-    @scala.inline
-    def setGetDependenciesCount(value: () => Double): Self = StObject.set(x, "getDependenciesCount", js.Any.fromFunction0(value))
+    inline def setGetDependenciesCount(value: () => Double): Self = StObject.set(x, "getDependenciesCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsInitial(value: () => Boolean): Self = StObject.set(x, "isInitial", js.Any.fromFunction0(value))
+    inline def setIsInitial(value: () => Boolean): Self = StObject.set(x, "isInitial", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsSleeping(value: Boolean): Self = StObject.set(x, "isSleeping", value.asInstanceOf[js.Any])
+    inline def setIsSleeping(value: Boolean): Self = StObject.set(x, "isSleeping", value.asInstanceOf[js.Any])
   }
 }

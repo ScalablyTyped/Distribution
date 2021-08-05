@@ -25,18 +25,11 @@ object functionsMod {
     var name: String = js.native
   }
   
-  @scala.inline
-  def literal(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def literal(value: js.BigInt): js.BigInt = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[js.BigInt]
-  @scala.inline
-  def literal(value: js.Symbol): js.Symbol = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[js.Symbol]
-  @scala.inline
-  def literal(value: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def literal(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def literal(value: Null): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[Null]
-  @scala.inline
-  def literal(value: Unit): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def literal(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def literal(value: js.BigInt): js.BigInt = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[js.BigInt]
+  inline def literal(value: js.Symbol): js.Symbol = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[js.Symbol]
+  inline def literal(value: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def literal(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def literal(value: Null): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[Null]
+  inline def literal(value: Unit): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -10,19 +10,15 @@ trait ILockConstraintOptions extends StObject {
 }
 object ILockConstraintOptions {
   
-  @scala.inline
-  def apply(): ILockConstraintOptions = {
+  inline def apply(): ILockConstraintOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ILockConstraintOptions]
   }
   
-  @scala.inline
-  implicit class ILockConstraintOptionsMutableBuilder[Self <: ILockConstraintOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ILockConstraintOptions](x: Self) {
     
-    @scala.inline
-    def setMaxForce(value: Double): Self = StObject.set(x, "maxForce", value.asInstanceOf[js.Any])
+    inline def setMaxForce(value: Double): Self = StObject.set(x, "maxForce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxForceUndefined: Self = StObject.set(x, "maxForce", js.undefined)
+    inline def setMaxForceUndefined: Self = StObject.set(x, "maxForce", js.undefined)
   }
 }

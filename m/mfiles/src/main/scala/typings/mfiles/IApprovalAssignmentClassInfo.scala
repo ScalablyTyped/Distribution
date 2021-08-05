@@ -16,8 +16,7 @@ trait IApprovalAssignmentClassInfo extends StObject {
 }
 object IApprovalAssignmentClassInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AnyAssigneeApproves: Boolean,
     Clone: () => IApprovalAssignmentClassInfo,
     SignatureForApproval: ISignatureSettings,
@@ -27,19 +26,14 @@ object IApprovalAssignmentClassInfo {
     __obj.asInstanceOf[IApprovalAssignmentClassInfo]
   }
   
-  @scala.inline
-  implicit class IApprovalAssignmentClassInfoMutableBuilder[Self <: IApprovalAssignmentClassInfo] (val x: Self) extends AnyVal {
+  extension [Self <: IApprovalAssignmentClassInfo](x: Self) {
     
-    @scala.inline
-    def setAnyAssigneeApproves(value: Boolean): Self = StObject.set(x, "AnyAssigneeApproves", value.asInstanceOf[js.Any])
+    inline def setAnyAssigneeApproves(value: Boolean): Self = StObject.set(x, "AnyAssigneeApproves", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClone(value: () => IApprovalAssignmentClassInfo): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IApprovalAssignmentClassInfo): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSignatureForApproval(value: ISignatureSettings): Self = StObject.set(x, "SignatureForApproval", value.asInstanceOf[js.Any])
+    inline def setSignatureForApproval(value: ISignatureSettings): Self = StObject.set(x, "SignatureForApproval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureForRejection(value: ISignatureSettings): Self = StObject.set(x, "SignatureForRejection", value.asInstanceOf[js.Any])
+    inline def setSignatureForRejection(value: ISignatureSettings): Self = StObject.set(x, "SignatureForRejection", value.asInstanceOf[js.Any])
   }
 }

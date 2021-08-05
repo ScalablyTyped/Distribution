@@ -18,16 +18,13 @@ trait Remove[TTarget, TData]
 }
 object Remove {
   
-  @scala.inline
-  def apply[TTarget, TData](remove: HandleObject[TTarget, TData] => Unit): Remove[TTarget, TData] = {
+  inline def apply[TTarget, TData](remove: HandleObject[TTarget, TData] => Unit): Remove[TTarget, TData] = {
     val __obj = js.Dynamic.literal(remove = js.Any.fromFunction1(remove))
     __obj.asInstanceOf[Remove[TTarget, TData]]
   }
   
-  @scala.inline
-  implicit class RemoveMutableBuilder[Self <: Remove[?, ?], TTarget, TData] (val x: Self & (Remove[TTarget, TData])) extends AnyVal {
+  extension [Self <: Remove[?, ?], TTarget, TData](x: Self & (Remove[TTarget, TData])) {
     
-    @scala.inline
-    def setRemove(value: HandleObject[TTarget, TData] => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: HandleObject[TTarget, TData] => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
   }
 }

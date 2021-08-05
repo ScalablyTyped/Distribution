@@ -44,55 +44,39 @@ trait IgPivotGridDataSourceOptionsXmlaOptionsMdxSettings
 }
 object IgPivotGridDataSourceOptionsXmlaOptionsMdxSettings {
   
-  @scala.inline
-  def apply(): IgPivotGridDataSourceOptionsXmlaOptionsMdxSettings = {
+  inline def apply(): IgPivotGridDataSourceOptionsXmlaOptionsMdxSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgPivotGridDataSourceOptionsXmlaOptionsMdxSettings]
   }
   
-  @scala.inline
-  implicit class IgPivotGridDataSourceOptionsXmlaOptionsMdxSettingsMutableBuilder[Self <: IgPivotGridDataSourceOptionsXmlaOptionsMdxSettings] (val x: Self) extends AnyVal {
+  extension [Self <: IgPivotGridDataSourceOptionsXmlaOptionsMdxSettings](x: Self) {
     
-    @scala.inline
-    def setAddCalculatedMembersOnColumns(value: Boolean): Self = StObject.set(x, "addCalculatedMembersOnColumns", value.asInstanceOf[js.Any])
+    inline def setAddCalculatedMembersOnColumns(value: Boolean): Self = StObject.set(x, "addCalculatedMembersOnColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddCalculatedMembersOnColumnsUndefined: Self = StObject.set(x, "addCalculatedMembersOnColumns", js.undefined)
+    inline def setAddCalculatedMembersOnColumnsUndefined: Self = StObject.set(x, "addCalculatedMembersOnColumns", js.undefined)
     
-    @scala.inline
-    def setAddCalculatedMembersOnRows(value: Boolean): Self = StObject.set(x, "addCalculatedMembersOnRows", value.asInstanceOf[js.Any])
+    inline def setAddCalculatedMembersOnRows(value: Boolean): Self = StObject.set(x, "addCalculatedMembersOnRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddCalculatedMembersOnRowsUndefined: Self = StObject.set(x, "addCalculatedMembersOnRows", js.undefined)
+    inline def setAddCalculatedMembersOnRowsUndefined: Self = StObject.set(x, "addCalculatedMembersOnRows", js.undefined)
     
-    @scala.inline
-    def setDimensionPropertiesOnColumns(value: js.Array[js.Any]): Self = StObject.set(x, "dimensionPropertiesOnColumns", value.asInstanceOf[js.Any])
+    inline def setDimensionPropertiesOnColumns(value: js.Array[js.Any]): Self = StObject.set(x, "dimensionPropertiesOnColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionPropertiesOnColumnsUndefined: Self = StObject.set(x, "dimensionPropertiesOnColumns", js.undefined)
+    inline def setDimensionPropertiesOnColumnsUndefined: Self = StObject.set(x, "dimensionPropertiesOnColumns", js.undefined)
     
-    @scala.inline
-    def setDimensionPropertiesOnColumnsVarargs(value: js.Any*): Self = StObject.set(x, "dimensionPropertiesOnColumns", js.Array(value :_*))
+    inline def setDimensionPropertiesOnColumnsVarargs(value: js.Any*): Self = StObject.set(x, "dimensionPropertiesOnColumns", js.Array(value :_*))
     
-    @scala.inline
-    def setDimensionPropertiesOnRows(value: js.Array[js.Any]): Self = StObject.set(x, "dimensionPropertiesOnRows", value.asInstanceOf[js.Any])
+    inline def setDimensionPropertiesOnRows(value: js.Array[js.Any]): Self = StObject.set(x, "dimensionPropertiesOnRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionPropertiesOnRowsUndefined: Self = StObject.set(x, "dimensionPropertiesOnRows", js.undefined)
+    inline def setDimensionPropertiesOnRowsUndefined: Self = StObject.set(x, "dimensionPropertiesOnRows", js.undefined)
     
-    @scala.inline
-    def setDimensionPropertiesOnRowsVarargs(value: js.Any*): Self = StObject.set(x, "dimensionPropertiesOnRows", js.Array(value :_*))
+    inline def setDimensionPropertiesOnRowsVarargs(value: js.Any*): Self = StObject.set(x, "dimensionPropertiesOnRows", js.Array(value :_*))
     
-    @scala.inline
-    def setNonEmptyOnColumns(value: Boolean): Self = StObject.set(x, "nonEmptyOnColumns", value.asInstanceOf[js.Any])
+    inline def setNonEmptyOnColumns(value: Boolean): Self = StObject.set(x, "nonEmptyOnColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonEmptyOnColumnsUndefined: Self = StObject.set(x, "nonEmptyOnColumns", js.undefined)
+    inline def setNonEmptyOnColumnsUndefined: Self = StObject.set(x, "nonEmptyOnColumns", js.undefined)
     
-    @scala.inline
-    def setNonEmptyOnRows(value: Boolean): Self = StObject.set(x, "nonEmptyOnRows", value.asInstanceOf[js.Any])
+    inline def setNonEmptyOnRows(value: Boolean): Self = StObject.set(x, "nonEmptyOnRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonEmptyOnRowsUndefined: Self = StObject.set(x, "nonEmptyOnRows", js.undefined)
+    inline def setNonEmptyOnRowsUndefined: Self = StObject.set(x, "nonEmptyOnRows", js.undefined)
   }
 }

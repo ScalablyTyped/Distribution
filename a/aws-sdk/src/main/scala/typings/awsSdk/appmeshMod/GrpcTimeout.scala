@@ -18,25 +18,19 @@ trait GrpcTimeout extends StObject {
 }
 object GrpcTimeout {
   
-  @scala.inline
-  def apply(): GrpcTimeout = {
+  inline def apply(): GrpcTimeout = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GrpcTimeout]
   }
   
-  @scala.inline
-  implicit class GrpcTimeoutMutableBuilder[Self <: GrpcTimeout] (val x: Self) extends AnyVal {
+  extension [Self <: GrpcTimeout](x: Self) {
     
-    @scala.inline
-    def setIdle(value: Duration): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
+    inline def setIdle(value: Duration): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdleUndefined: Self = StObject.set(x, "idle", js.undefined)
+    inline def setIdleUndefined: Self = StObject.set(x, "idle", js.undefined)
     
-    @scala.inline
-    def setPerRequest(value: Duration): Self = StObject.set(x, "perRequest", value.asInstanceOf[js.Any])
+    inline def setPerRequest(value: Duration): Self = StObject.set(x, "perRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerRequestUndefined: Self = StObject.set(x, "perRequest", js.undefined)
+    inline def setPerRequestUndefined: Self = StObject.set(x, "perRequest", js.undefined)
   }
 }

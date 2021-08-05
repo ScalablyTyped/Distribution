@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdOMathVertAlignType extends StObject
 object WdOMathVertAlignType {
   
-  @scala.inline
-  def wdOMathVertAlignBottom: `2` = 2.asInstanceOf[`2`]
+  inline def wdOMathVertAlignBottom: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdOMathVertAlignCenter: `0` = 0.asInstanceOf[`0`]
+  inline def wdOMathVertAlignCenter: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdOMathVertAlignTop: `1` = 1.asInstanceOf[`1`]
+  inline def wdOMathVertAlignTop: `1` = 1.asInstanceOf[`1`]
 }

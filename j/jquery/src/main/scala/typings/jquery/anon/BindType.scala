@@ -17,16 +17,13 @@ trait BindType
 }
 object BindType {
   
-  @scala.inline
-  def apply(bindType: String): BindType = {
+  inline def apply(bindType: String): BindType = {
     val __obj = js.Dynamic.literal(bindType = bindType.asInstanceOf[js.Any])
     __obj.asInstanceOf[BindType]
   }
   
-  @scala.inline
-  implicit class BindTypeMutableBuilder[Self <: BindType] (val x: Self) extends AnyVal {
+  extension [Self <: BindType](x: Self) {
     
-    @scala.inline
-    def setBindType(value: String): Self = StObject.set(x, "bindType", value.asInstanceOf[js.Any])
+    inline def setBindType(value: String): Self = StObject.set(x, "bindType", value.asInstanceOf[js.Any])
   }
 }

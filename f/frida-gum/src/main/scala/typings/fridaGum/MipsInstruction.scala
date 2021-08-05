@@ -25,8 +25,7 @@ trait MipsInstruction
 }
 object MipsInstruction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     address: NativePointer,
     groups: js.Array[String],
     mnemonic: String,
@@ -41,25 +40,18 @@ object MipsInstruction {
     __obj.asInstanceOf[MipsInstruction]
   }
   
-  @scala.inline
-  implicit class MipsInstructionMutableBuilder[Self <: MipsInstruction] (val x: Self) extends AnyVal {
+  extension [Self <: MipsInstruction](x: Self) {
     
-    @scala.inline
-    def setOperands(value: js.Array[MipsOperand]): Self = StObject.set(x, "operands", value.asInstanceOf[js.Any])
+    inline def setOperands(value: js.Array[MipsOperand]): Self = StObject.set(x, "operands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperandsVarargs(value: MipsOperand*): Self = StObject.set(x, "operands", js.Array(value :_*))
+    inline def setOperandsVarargs(value: MipsOperand*): Self = StObject.set(x, "operands", js.Array(value :_*))
     
-    @scala.inline
-    def setRegsRead(value: js.Array[MipsRegister]): Self = StObject.set(x, "regsRead", value.asInstanceOf[js.Any])
+    inline def setRegsRead(value: js.Array[MipsRegister]): Self = StObject.set(x, "regsRead", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegsReadVarargs(value: MipsRegister*): Self = StObject.set(x, "regsRead", js.Array(value :_*))
+    inline def setRegsReadVarargs(value: MipsRegister*): Self = StObject.set(x, "regsRead", js.Array(value :_*))
     
-    @scala.inline
-    def setRegsWritten(value: js.Array[MipsRegister]): Self = StObject.set(x, "regsWritten", value.asInstanceOf[js.Any])
+    inline def setRegsWritten(value: js.Array[MipsRegister]): Self = StObject.set(x, "regsWritten", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegsWrittenVarargs(value: MipsRegister*): Self = StObject.set(x, "regsWritten", js.Array(value :_*))
+    inline def setRegsWrittenVarargs(value: MipsRegister*): Self = StObject.set(x, "regsWritten", js.Array(value :_*))
   }
 }

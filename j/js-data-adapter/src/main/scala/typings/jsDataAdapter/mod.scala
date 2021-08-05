@@ -147,14 +147,10 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def extend(): TypeofAdapter = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")().asInstanceOf[TypeofAdapter]
-    @scala.inline
-    def extend(instanceProps: Unit, classProps: IDict): TypeofAdapter = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(instanceProps.asInstanceOf[js.Any], classProps.asInstanceOf[js.Any])).asInstanceOf[TypeofAdapter]
-    @scala.inline
-    def extend(instanceProps: IDict): TypeofAdapter = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(instanceProps.asInstanceOf[js.Any]).asInstanceOf[TypeofAdapter]
-    @scala.inline
-    def extend(instanceProps: IDict, classProps: IDict): TypeofAdapter = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(instanceProps.asInstanceOf[js.Any], classProps.asInstanceOf[js.Any])).asInstanceOf[TypeofAdapter]
+    inline def extend(): TypeofAdapter = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")().asInstanceOf[TypeofAdapter]
+    inline def extend(instanceProps: Unit, classProps: IDict): TypeofAdapter = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(instanceProps.asInstanceOf[js.Any], classProps.asInstanceOf[js.Any])).asInstanceOf[TypeofAdapter]
+    inline def extend(instanceProps: IDict): TypeofAdapter = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(instanceProps.asInstanceOf[js.Any]).asInstanceOf[TypeofAdapter]
+    inline def extend(instanceProps: IDict, classProps: IDict): TypeofAdapter = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(instanceProps.asInstanceOf[js.Any], classProps.asInstanceOf[js.Any])).asInstanceOf[TypeofAdapter]
   }
   
   @JSImport("js-data-adapter", "Response")
@@ -168,14 +164,11 @@ object mod {
     var op: String = js.native
   }
   
-  @scala.inline
-  def noop(args: js.Any*): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def noop(args: js.Any*): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
-  @scala.inline
-  def noop2(args: js.Any*): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("noop2")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def noop2(args: js.Any*): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("noop2")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
-  @scala.inline
-  def unique(array: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("unique")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def unique(array: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("unique")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
   trait IAdapterOpts
     extends StObject
@@ -187,26 +180,20 @@ object mod {
   }
   object IAdapterOpts {
     
-    @scala.inline
-    def apply(): IAdapterOpts = {
+    inline def apply(): IAdapterOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IAdapterOpts]
     }
     
-    @scala.inline
-    implicit class IAdapterOptsMutableBuilder[Self <: IAdapterOpts] (val x: Self) extends AnyVal {
+    extension [Self <: IAdapterOpts](x: Self) {
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+      inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     }
   }
   

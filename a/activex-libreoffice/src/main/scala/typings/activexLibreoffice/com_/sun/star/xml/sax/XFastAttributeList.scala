@@ -74,8 +74,7 @@ trait XFastAttributeList
 }
 object XFastAttributeList {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FastAttributes: SafeArray[FastAttribute],
     UnknownAttributes: SafeArray[Attribute],
     acquire: () => Unit,
@@ -93,34 +92,24 @@ object XFastAttributeList {
     __obj.asInstanceOf[XFastAttributeList]
   }
   
-  @scala.inline
-  implicit class XFastAttributeListMutableBuilder[Self <: XFastAttributeList] (val x: Self) extends AnyVal {
+  extension [Self <: XFastAttributeList](x: Self) {
     
-    @scala.inline
-    def setFastAttributes(value: SafeArray[FastAttribute]): Self = StObject.set(x, "FastAttributes", value.asInstanceOf[js.Any])
+    inline def setFastAttributes(value: SafeArray[FastAttribute]): Self = StObject.set(x, "FastAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetFastAttributes(value: () => SafeArray[FastAttribute]): Self = StObject.set(x, "getFastAttributes", js.Any.fromFunction0(value))
+    inline def setGetFastAttributes(value: () => SafeArray[FastAttribute]): Self = StObject.set(x, "getFastAttributes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOptionalValue(value: Double => String): Self = StObject.set(x, "getOptionalValue", js.Any.fromFunction1(value))
+    inline def setGetOptionalValue(value: Double => String): Self = StObject.set(x, "getOptionalValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetOptionalValueToken(value: (Double, Double) => Double): Self = StObject.set(x, "getOptionalValueToken", js.Any.fromFunction2(value))
+    inline def setGetOptionalValueToken(value: (Double, Double) => Double): Self = StObject.set(x, "getOptionalValueToken", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetUnknownAttributes(value: () => SafeArray[Attribute]): Self = StObject.set(x, "getUnknownAttributes", js.Any.fromFunction0(value))
+    inline def setGetUnknownAttributes(value: () => SafeArray[Attribute]): Self = StObject.set(x, "getUnknownAttributes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValue(value: Double => String): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
+    inline def setGetValue(value: Double => String): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetValueToken(value: Double => Double): Self = StObject.set(x, "getValueToken", js.Any.fromFunction1(value))
+    inline def setGetValueToken(value: Double => Double): Self = StObject.set(x, "getValueToken", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHasAttribute(value: Double => Boolean): Self = StObject.set(x, "hasAttribute", js.Any.fromFunction1(value))
+    inline def setHasAttribute(value: Double => Boolean): Self = StObject.set(x, "hasAttribute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnknownAttributes(value: SafeArray[Attribute]): Self = StObject.set(x, "UnknownAttributes", value.asInstanceOf[js.Any])
+    inline def setUnknownAttributes(value: SafeArray[Attribute]): Self = StObject.set(x, "UnknownAttributes", value.asInstanceOf[js.Any])
   }
 }

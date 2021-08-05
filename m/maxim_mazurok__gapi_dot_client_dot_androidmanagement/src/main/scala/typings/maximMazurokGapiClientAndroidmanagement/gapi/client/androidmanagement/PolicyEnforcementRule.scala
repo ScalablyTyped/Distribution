@@ -20,31 +20,23 @@ trait PolicyEnforcementRule extends StObject {
 }
 object PolicyEnforcementRule {
   
-  @scala.inline
-  def apply(): PolicyEnforcementRule = {
+  inline def apply(): PolicyEnforcementRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PolicyEnforcementRule]
   }
   
-  @scala.inline
-  implicit class PolicyEnforcementRuleMutableBuilder[Self <: PolicyEnforcementRule] (val x: Self) extends AnyVal {
+  extension [Self <: PolicyEnforcementRule](x: Self) {
     
-    @scala.inline
-    def setBlockAction(value: BlockAction): Self = StObject.set(x, "blockAction", value.asInstanceOf[js.Any])
+    inline def setBlockAction(value: BlockAction): Self = StObject.set(x, "blockAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockActionUndefined: Self = StObject.set(x, "blockAction", js.undefined)
+    inline def setBlockActionUndefined: Self = StObject.set(x, "blockAction", js.undefined)
     
-    @scala.inline
-    def setSettingName(value: String): Self = StObject.set(x, "settingName", value.asInstanceOf[js.Any])
+    inline def setSettingName(value: String): Self = StObject.set(x, "settingName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingNameUndefined: Self = StObject.set(x, "settingName", js.undefined)
+    inline def setSettingNameUndefined: Self = StObject.set(x, "settingName", js.undefined)
     
-    @scala.inline
-    def setWipeAction(value: WipeAction): Self = StObject.set(x, "wipeAction", value.asInstanceOf[js.Any])
+    inline def setWipeAction(value: WipeAction): Self = StObject.set(x, "wipeAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWipeActionUndefined: Self = StObject.set(x, "wipeAction", js.undefined)
+    inline def setWipeActionUndefined: Self = StObject.set(x, "wipeAction", js.undefined)
   }
 }

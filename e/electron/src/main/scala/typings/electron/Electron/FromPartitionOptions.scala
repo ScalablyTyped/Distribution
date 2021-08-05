@@ -13,16 +13,13 @@ trait FromPartitionOptions extends StObject {
 }
 object FromPartitionOptions {
   
-  @scala.inline
-  def apply(cache: Boolean): FromPartitionOptions = {
+  inline def apply(cache: Boolean): FromPartitionOptions = {
     val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any])
     __obj.asInstanceOf[FromPartitionOptions]
   }
   
-  @scala.inline
-  implicit class FromPartitionOptionsMutableBuilder[Self <: FromPartitionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FromPartitionOptions](x: Self) {
     
-    @scala.inline
-    def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
   }
 }

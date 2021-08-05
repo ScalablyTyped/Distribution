@@ -13,19 +13,15 @@ trait ChooseInvoiceSuccessCallbackResult extends StObject {
 }
 object ChooseInvoiceSuccessCallbackResult {
   
-  @scala.inline
-  def apply(errMsg: String, invoiceInfo: String): ChooseInvoiceSuccessCallbackResult = {
+  inline def apply(errMsg: String, invoiceInfo: String): ChooseInvoiceSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], invoiceInfo = invoiceInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChooseInvoiceSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class ChooseInvoiceSuccessCallbackResultMutableBuilder[Self <: ChooseInvoiceSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: ChooseInvoiceSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvoiceInfo(value: String): Self = StObject.set(x, "invoiceInfo", value.asInstanceOf[js.Any])
+    inline def setInvoiceInfo(value: String): Self = StObject.set(x, "invoiceInfo", value.asInstanceOf[js.Any])
   }
 }

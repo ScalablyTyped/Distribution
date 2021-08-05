@@ -11,7 +11,7 @@ trait SkeletonJson extends StObject {
   
   def getValue(map: js.Any, prop: String, defaultValue: js.Any): js.Any = js.native
   
-  var linkedMeshes: js.Any = js.native
+  /* private */ var linkedMeshes: js.Any = js.native
   
   def readAnimation(map: js.Any, name: String, skeletonData: SkeletonData): Unit = js.native
   

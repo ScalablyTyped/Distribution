@@ -27,8 +27,7 @@ trait Bibliography
 }
 object Bibliography {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     BackColor: Color,
     BackGraphicFilter: String,
@@ -75,13 +74,10 @@ object Bibliography {
     __obj.asInstanceOf[Bibliography]
   }
   
-  @scala.inline
-  implicit class BibliographyMutableBuilder[Self <: Bibliography] (val x: Self) extends AnyVal {
+  extension [Self <: Bibliography](x: Self) {
     
-    @scala.inline
-    def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: Locale): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortAlgorithm(value: String): Self = StObject.set(x, "SortAlgorithm", value.asInstanceOf[js.Any])
+    inline def setSortAlgorithm(value: String): Self = StObject.set(x, "SortAlgorithm", value.asInstanceOf[js.Any])
   }
 }

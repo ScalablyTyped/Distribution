@@ -13,14 +13,12 @@ object expressValidatorBooleans {
   sealed trait `false`
     extends StObject
        with Optional
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
+  inline def `false`: `false` = false.asInstanceOf[`false`]
   
   @js.native
   sealed trait `true`
     extends StObject
        with SanitizerSchemaOptions[js.Any]
        with ValidatorSchemaOptions[js.Any]
-  @scala.inline
-  def `true`: `true` = true.asInstanceOf[`true`]
+  inline def `true`: `true` = true.asInstanceOf[`true`]
 }

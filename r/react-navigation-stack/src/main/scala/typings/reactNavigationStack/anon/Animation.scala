@@ -16,19 +16,15 @@ trait Animation
 }
 object Animation {
   
-  @scala.inline
-  def apply(config: OmitSpringAnimationConfig): Animation = {
+  inline def apply(config: OmitSpringAnimationConfig): Animation = {
     val __obj = js.Dynamic.literal(animation = "spring", config = config.asInstanceOf[js.Any])
     __obj.asInstanceOf[Animation]
   }
   
-  @scala.inline
-  implicit class AnimationMutableBuilder[Self <: Animation] (val x: Self) extends AnyVal {
+  extension [Self <: Animation](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: spring): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: spring): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfig(value: OmitSpringAnimationConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: OmitSpringAnimationConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
   }
 }

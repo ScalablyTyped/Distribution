@@ -15,20 +15,16 @@ trait IntegerHeaderValue
 }
 object IntegerHeaderValue {
   
-  @scala.inline
-  def apply(value: Double): IntegerHeaderValue = {
+  inline def apply(value: Double): IntegerHeaderValue = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("integer")
     __obj.asInstanceOf[IntegerHeaderValue]
   }
   
-  @scala.inline
-  implicit class IntegerHeaderValueMutableBuilder[Self <: IntegerHeaderValue] (val x: Self) extends AnyVal {
+  extension [Self <: IntegerHeaderValue](x: Self) {
     
-    @scala.inline
-    def setType(value: integer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: integer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

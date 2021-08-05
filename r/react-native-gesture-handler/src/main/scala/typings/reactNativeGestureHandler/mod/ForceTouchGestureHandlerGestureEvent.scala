@@ -13,16 +13,13 @@ trait ForceTouchGestureHandlerGestureEvent
 }
 object ForceTouchGestureHandlerGestureEvent {
   
-  @scala.inline
-  def apply(nativeEvent: GestureHandlerGestureEventNativeEvent & ForceTouchGestureHandlerEventExtra): ForceTouchGestureHandlerGestureEvent = {
+  inline def apply(nativeEvent: GestureHandlerGestureEventNativeEvent & ForceTouchGestureHandlerEventExtra): ForceTouchGestureHandlerGestureEvent = {
     val __obj = js.Dynamic.literal(nativeEvent = nativeEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ForceTouchGestureHandlerGestureEvent]
   }
   
-  @scala.inline
-  implicit class ForceTouchGestureHandlerGestureEventMutableBuilder[Self <: ForceTouchGestureHandlerGestureEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ForceTouchGestureHandlerGestureEvent](x: Self) {
     
-    @scala.inline
-    def setNativeEvent(value: GestureHandlerGestureEventNativeEvent & ForceTouchGestureHandlerEventExtra): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
+    inline def setNativeEvent(value: GestureHandlerGestureEventNativeEvent & ForceTouchGestureHandlerEventExtra): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
   }
 }

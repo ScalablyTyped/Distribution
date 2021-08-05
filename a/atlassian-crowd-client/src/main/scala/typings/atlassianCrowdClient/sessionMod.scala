@@ -31,8 +31,7 @@ object sessionMod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def fromCrowd(obj: SessionObj): Session = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCrowd")(obj.asInstanceOf[js.Any]).asInstanceOf[Session]
+  inline def fromCrowd(obj: SessionObj): Session = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCrowd")(obj.asInstanceOf[js.Any]).asInstanceOf[Session]
   
   trait Session extends StObject {
     
@@ -46,26 +45,20 @@ object sessionMod {
   }
   object Session {
     
-    @scala.inline
-    def apply(createdAt: Date, expiresAt: Date, toCrowd: () => SessionObj, token: String): Session = {
+    inline def apply(createdAt: Date, expiresAt: Date, toCrowd: () => SessionObj, token: String): Session = {
       val __obj = js.Dynamic.literal(createdAt = createdAt.asInstanceOf[js.Any], expiresAt = expiresAt.asInstanceOf[js.Any], toCrowd = js.Any.fromFunction0(toCrowd), token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[Session]
     }
     
-    @scala.inline
-    implicit class SessionMutableBuilder[Self <: Session] (val x: Self) extends AnyVal {
+    extension [Self <: Session](x: Self) {
       
-      @scala.inline
-      def setCreatedAt(value: Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+      inline def setCreatedAt(value: Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiresAt(value: Date): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
+      inline def setExpiresAt(value: Date): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToCrowd(value: () => SessionObj): Self = StObject.set(x, "toCrowd", js.Any.fromFunction0(value))
+      inline def setToCrowd(value: () => SessionObj): Self = StObject.set(x, "toCrowd", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
   }
   
@@ -79,25 +72,20 @@ object sessionMod {
   }
   object SessionObj {
     
-    @scala.inline
-    def apply(`created-date`: Double, `expiry-date`: Double, token: String): SessionObj = {
+    inline def apply(`created-date`: Double, `expiry-date`: Double, token: String): SessionObj = {
       val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
       __obj.updateDynamic("created-date")(`created-date`.asInstanceOf[js.Any])
       __obj.updateDynamic("expiry-date")(`expiry-date`.asInstanceOf[js.Any])
       __obj.asInstanceOf[SessionObj]
     }
     
-    @scala.inline
-    implicit class SessionObjMutableBuilder[Self <: SessionObj] (val x: Self) extends AnyVal {
+    extension [Self <: SessionObj](x: Self) {
       
-      @scala.inline
-      def `setCreated-date`(value: Double): Self = StObject.set(x, "created-date", value.asInstanceOf[js.Any])
+      inline def `setCreated-date`(value: Double): Self = StObject.set(x, "created-date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setExpiry-date`(value: Double): Self = StObject.set(x, "expiry-date", value.asInstanceOf[js.Any])
+      inline def `setExpiry-date`(value: Double): Self = StObject.set(x, "expiry-date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
   }
 }

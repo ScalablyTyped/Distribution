@@ -16,8 +16,7 @@ trait RTCRtpReceiver extends StObject {
 }
 object RTCRtpReceiver {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getContributingSources: () => js.Array[RTCRtpContributingSource],
     getParameters: () => RTCRtpParameters
   ): RTCRtpReceiver = {
@@ -25,13 +24,10 @@ object RTCRtpReceiver {
     __obj.asInstanceOf[RTCRtpReceiver]
   }
   
-  @scala.inline
-  implicit class RTCRtpReceiverMutableBuilder[Self <: RTCRtpReceiver] (val x: Self) extends AnyVal {
+  extension [Self <: RTCRtpReceiver](x: Self) {
     
-    @scala.inline
-    def setGetContributingSources(value: () => js.Array[RTCRtpContributingSource]): Self = StObject.set(x, "getContributingSources", js.Any.fromFunction0(value))
+    inline def setGetContributingSources(value: () => js.Array[RTCRtpContributingSource]): Self = StObject.set(x, "getContributingSources", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetParameters(value: () => RTCRtpParameters): Self = StObject.set(x, "getParameters", js.Any.fromFunction0(value))
+    inline def setGetParameters(value: () => RTCRtpParameters): Self = StObject.set(x, "getParameters", js.Any.fromFunction0(value))
   }
 }

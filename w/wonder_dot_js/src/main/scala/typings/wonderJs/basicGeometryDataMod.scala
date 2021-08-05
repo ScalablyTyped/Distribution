@@ -20,7 +20,6 @@ object basicGeometryDataMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(geometry: Geometry): BasicGeometryData = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(geometry.asInstanceOf[js.Any]).asInstanceOf[BasicGeometryData]
+    inline def create(geometry: Geometry): BasicGeometryData = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(geometry.asInstanceOf[js.Any]).asInstanceOf[BasicGeometryData]
   }
 }

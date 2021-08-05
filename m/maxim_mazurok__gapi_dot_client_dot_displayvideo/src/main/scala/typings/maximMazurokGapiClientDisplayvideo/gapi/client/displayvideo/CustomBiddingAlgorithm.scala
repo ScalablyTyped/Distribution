@@ -29,55 +29,39 @@ trait CustomBiddingAlgorithm extends StObject {
 }
 object CustomBiddingAlgorithm {
   
-  @scala.inline
-  def apply(): CustomBiddingAlgorithm = {
+  inline def apply(): CustomBiddingAlgorithm = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomBiddingAlgorithm]
   }
   
-  @scala.inline
-  implicit class CustomBiddingAlgorithmMutableBuilder[Self <: CustomBiddingAlgorithm] (val x: Self) extends AnyVal {
+  extension [Self <: CustomBiddingAlgorithm](x: Self) {
     
-    @scala.inline
-    def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
+    inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
+    inline def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
     
-    @scala.inline
-    def setCustomBiddingAlgorithmId(value: String): Self = StObject.set(x, "customBiddingAlgorithmId", value.asInstanceOf[js.Any])
+    inline def setCustomBiddingAlgorithmId(value: String): Self = StObject.set(x, "customBiddingAlgorithmId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomBiddingAlgorithmIdUndefined: Self = StObject.set(x, "customBiddingAlgorithmId", js.undefined)
+    inline def setCustomBiddingAlgorithmIdUndefined: Self = StObject.set(x, "customBiddingAlgorithmId", js.undefined)
     
-    @scala.inline
-    def setCustomBiddingAlgorithmType(value: String): Self = StObject.set(x, "customBiddingAlgorithmType", value.asInstanceOf[js.Any])
+    inline def setCustomBiddingAlgorithmType(value: String): Self = StObject.set(x, "customBiddingAlgorithmType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomBiddingAlgorithmTypeUndefined: Self = StObject.set(x, "customBiddingAlgorithmType", js.undefined)
+    inline def setCustomBiddingAlgorithmTypeUndefined: Self = StObject.set(x, "customBiddingAlgorithmType", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setEntityStatus(value: String): Self = StObject.set(x, "entityStatus", value.asInstanceOf[js.Any])
+    inline def setEntityStatus(value: String): Self = StObject.set(x, "entityStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityStatusUndefined: Self = StObject.set(x, "entityStatus", js.undefined)
+    inline def setEntityStatusUndefined: Self = StObject.set(x, "entityStatus", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
+    inline def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartnerIdUndefined: Self = StObject.set(x, "partnerId", js.undefined)
+    inline def setPartnerIdUndefined: Self = StObject.set(x, "partnerId", js.undefined)
   }
 }

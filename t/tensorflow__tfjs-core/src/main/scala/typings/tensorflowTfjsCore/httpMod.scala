@@ -27,9 +27,9 @@ object httpMod {
     
     val DEFAULT_METHOD: /* "POST" */ String = js.native
     
-    val fetch: js.Any = js.native
+    /* private */ val fetch: js.Any = js.native
     
-    var loadWeights: js.Any = js.native
+    /* private */ var loadWeights: js.Any = js.native
     
     /**
       * Load model artifacts via HTTP request(s).
@@ -42,18 +42,18 @@ object httpMod {
     @JSName("load")
     def load_MHTTPRequest(): js.Promise[ModelArtifacts] = js.native
     
-    val onProgress: js.Any = js.native
+    /* private */ val onProgress: js.Any = js.native
     
-    val path: String = js.native
+    /* protected */ val path: String = js.native
     
-    val requestInit: RequestInit = js.native
+    /* protected */ val requestInit: RequestInit = js.native
     
     @JSName("save")
     def save_MHTTPRequest(modelArtifacts: ModelArtifacts): js.Promise[SaveResult] = js.native
     
-    val weightPathPrefix: js.Any = js.native
+    /* private */ val weightPathPrefix: js.Any = js.native
     
-    val weightUrlConverter: js.Any = js.native
+    /* private */ val weightUrlConverter: js.Any = js.native
   }
   /* static members */
   object HTTPRequest {
@@ -63,23 +63,17 @@ object httpMod {
     val URL_SCHEME_REGEX: RegExp = js.native
   }
   
-  @scala.inline
-  def browserHTTPRequest(path: String): IOHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("browserHTTPRequest")(path.asInstanceOf[js.Any]).asInstanceOf[IOHandler]
-  @scala.inline
-  def browserHTTPRequest(path: String, loadOptions: LoadOptions): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("browserHTTPRequest")(path.asInstanceOf[js.Any], loadOptions.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
+  inline def browserHTTPRequest(path: String): IOHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("browserHTTPRequest")(path.asInstanceOf[js.Any]).asInstanceOf[IOHandler]
+  inline def browserHTTPRequest(path: String, loadOptions: LoadOptions): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("browserHTTPRequest")(path.asInstanceOf[js.Any], loadOptions.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
   
-  @scala.inline
-  def http(path: String): IOHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("http")(path.asInstanceOf[js.Any]).asInstanceOf[IOHandler]
-  @scala.inline
-  def http(path: String, loadOptions: LoadOptions): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("http")(path.asInstanceOf[js.Any], loadOptions.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
+  inline def http(path: String): IOHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("http")(path.asInstanceOf[js.Any]).asInstanceOf[IOHandler]
+  inline def http(path: String, loadOptions: LoadOptions): IOHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("http")(path.asInstanceOf[js.Any], loadOptions.asInstanceOf[js.Any])).asInstanceOf[IOHandler]
   
   @JSImport("@tensorflow/tfjs-core/dist/io/http", "httpRouter")
   @js.native
   val httpRouter: IORouter = js.native
   
-  @scala.inline
-  def isHTTPScheme(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHTTPScheme")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isHTTPScheme(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHTTPScheme")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def parseUrl(url: String): js.Tuple2[String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseUrl")(url.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[String, String]]
+  inline def parseUrl(url: String): js.Tuple2[String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseUrl")(url.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[String, String]]
 }

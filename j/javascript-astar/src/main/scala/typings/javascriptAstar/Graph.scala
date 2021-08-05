@@ -10,19 +10,15 @@ trait Graph extends StObject {
 }
 object Graph {
   
-  @scala.inline
-  def apply(grid: js.Array[js.Array[GridNode]]): Graph = {
+  inline def apply(grid: js.Array[js.Array[GridNode]]): Graph = {
     val __obj = js.Dynamic.literal(grid = grid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Graph]
   }
   
-  @scala.inline
-  implicit class GraphMutableBuilder[Self <: Graph] (val x: Self) extends AnyVal {
+  extension [Self <: Graph](x: Self) {
     
-    @scala.inline
-    def setGrid(value: js.Array[js.Array[GridNode]]): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+    inline def setGrid(value: js.Array[js.Array[GridNode]]): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridVarargs(value: js.Array[GridNode]*): Self = StObject.set(x, "grid", js.Array(value :_*))
+    inline def setGridVarargs(value: js.Array[GridNode]*): Self = StObject.set(x, "grid", js.Array(value :_*))
   }
 }

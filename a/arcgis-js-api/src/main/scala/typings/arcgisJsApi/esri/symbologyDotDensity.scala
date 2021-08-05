@@ -41,8 +41,7 @@ trait symbologyDotDensity extends StObject {
 }
 object symbologyDotDensity {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cloneScheme: DotDensityScheme => DotDensityScheme,
     getSchemeByName: dotDensityGetSchemeByNameParams => DotDensityScheme,
     getSchemes: dotDensityGetSchemesParams => DotDensitySchemes,
@@ -52,19 +51,14 @@ object symbologyDotDensity {
     __obj.asInstanceOf[symbologyDotDensity]
   }
   
-  @scala.inline
-  implicit class symbologyDotDensityMutableBuilder[Self <: symbologyDotDensity] (val x: Self) extends AnyVal {
+  extension [Self <: symbologyDotDensity](x: Self) {
     
-    @scala.inline
-    def setCloneScheme(value: DotDensityScheme => DotDensityScheme): Self = StObject.set(x, "cloneScheme", js.Any.fromFunction1(value))
+    inline def setCloneScheme(value: DotDensityScheme => DotDensityScheme): Self = StObject.set(x, "cloneScheme", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSchemeByName(value: dotDensityGetSchemeByNameParams => DotDensityScheme): Self = StObject.set(x, "getSchemeByName", js.Any.fromFunction1(value))
+    inline def setGetSchemeByName(value: dotDensityGetSchemeByNameParams => DotDensityScheme): Self = StObject.set(x, "getSchemeByName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSchemes(value: dotDensityGetSchemesParams => DotDensitySchemes): Self = StObject.set(x, "getSchemes", js.Any.fromFunction1(value))
+    inline def setGetSchemes(value: dotDensityGetSchemesParams => DotDensitySchemes): Self = StObject.set(x, "getSchemes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSchemesByTag(value: dotDensityGetSchemesByTagParams => js.Array[DotDensityScheme]): Self = StObject.set(x, "getSchemesByTag", js.Any.fromFunction1(value))
+    inline def setGetSchemesByTag(value: dotDensityGetSchemesByTagParams => js.Array[DotDensityScheme]): Self = StObject.set(x, "getSchemesByTag", js.Any.fromFunction1(value))
   }
 }

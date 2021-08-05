@@ -24,8 +24,7 @@ trait XCustomPresentationSupplier
 }
 object XCustomPresentationSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CustomPresentations: XNameContainer,
     acquire: () => Unit,
     getCustomPresentations: () => XNameContainer,
@@ -36,13 +35,10 @@ object XCustomPresentationSupplier {
     __obj.asInstanceOf[XCustomPresentationSupplier]
   }
   
-  @scala.inline
-  implicit class XCustomPresentationSupplierMutableBuilder[Self <: XCustomPresentationSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XCustomPresentationSupplier](x: Self) {
     
-    @scala.inline
-    def setCustomPresentations(value: XNameContainer): Self = StObject.set(x, "CustomPresentations", value.asInstanceOf[js.Any])
+    inline def setCustomPresentations(value: XNameContainer): Self = StObject.set(x, "CustomPresentations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCustomPresentations(value: () => XNameContainer): Self = StObject.set(x, "getCustomPresentations", js.Any.fromFunction0(value))
+    inline def setGetCustomPresentations(value: () => XNameContainer): Self = StObject.set(x, "getCustomPresentations", js.Any.fromFunction0(value))
   }
 }

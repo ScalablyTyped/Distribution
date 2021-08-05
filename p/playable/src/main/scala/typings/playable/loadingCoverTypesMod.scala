@@ -21,8 +21,7 @@ object loadingCoverTypesMod {
   }
   object ILoadingCover {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destroy: () => Unit,
       getElement: () => HTMLElement,
       hide: () => Unit,
@@ -33,23 +32,17 @@ object loadingCoverTypesMod {
       __obj.asInstanceOf[ILoadingCover]
     }
     
-    @scala.inline
-    implicit class ILoadingCoverMutableBuilder[Self <: ILoadingCover] (val x: Self) extends AnyVal {
+    extension [Self <: ILoadingCover](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+      inline def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetLoadingCover(value: String => Unit): Self = StObject.set(x, "setLoadingCover", js.Any.fromFunction1(value))
+      inline def setSetLoadingCover(value: String => Unit): Self = StObject.set(x, "setLoadingCover", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     }
   }
   
@@ -63,23 +56,18 @@ object loadingCoverTypesMod {
   }
   object ILoadingCoverViewStyles {
     
-    @scala.inline
-    def apply(hidden: String, loadingCover: String, loadingCoverImage: String): ILoadingCoverViewStyles = {
+    inline def apply(hidden: String, loadingCover: String, loadingCoverImage: String): ILoadingCoverViewStyles = {
       val __obj = js.Dynamic.literal(hidden = hidden.asInstanceOf[js.Any], loadingCover = loadingCover.asInstanceOf[js.Any], loadingCoverImage = loadingCoverImage.asInstanceOf[js.Any])
       __obj.asInstanceOf[ILoadingCoverViewStyles]
     }
     
-    @scala.inline
-    implicit class ILoadingCoverViewStylesMutableBuilder[Self <: ILoadingCoverViewStyles] (val x: Self) extends AnyVal {
+    extension [Self <: ILoadingCoverViewStyles](x: Self) {
       
-      @scala.inline
-      def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingCover(value: String): Self = StObject.set(x, "loadingCover", value.asInstanceOf[js.Any])
+      inline def setLoadingCover(value: String): Self = StObject.set(x, "loadingCover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingCoverImage(value: String): Self = StObject.set(x, "loadingCoverImage", value.asInstanceOf[js.Any])
+      inline def setLoadingCoverImage(value: String): Self = StObject.set(x, "loadingCoverImage", value.asInstanceOf[js.Any])
     }
   }
 }

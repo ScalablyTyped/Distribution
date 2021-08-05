@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoContactCardAddressType extends StObject
 object MsoContactCardAddressType {
   
-  @scala.inline
-  def msoContactCardAddressTypeIM: `3` = 3.asInstanceOf[`3`]
+  inline def msoContactCardAddressTypeIM: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def msoContactCardAddressTypeOutlook: `1` = 1.asInstanceOf[`1`]
+  inline def msoContactCardAddressTypeOutlook: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoContactCardAddressTypeSMTP: `2` = 2.asInstanceOf[`2`]
+  inline def msoContactCardAddressTypeSMTP: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoContactCardAddressTypeUnknown: `0` = 0.asInstanceOf[`0`]
+  inline def msoContactCardAddressTypeUnknown: `0` = 0.asInstanceOf[`0`]
 }

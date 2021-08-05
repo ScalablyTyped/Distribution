@@ -18,19 +18,15 @@ trait UpdateCommentInput extends StObject {
 }
 object UpdateCommentInput {
   
-  @scala.inline
-  def apply(commentId: CommentId, content: Content): UpdateCommentInput = {
+  inline def apply(commentId: CommentId, content: Content): UpdateCommentInput = {
     val __obj = js.Dynamic.literal(commentId = commentId.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateCommentInput]
   }
   
-  @scala.inline
-  implicit class UpdateCommentInputMutableBuilder[Self <: UpdateCommentInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateCommentInput](x: Self) {
     
-    @scala.inline
-    def setCommentId(value: CommentId): Self = StObject.set(x, "commentId", value.asInstanceOf[js.Any])
+    inline def setCommentId(value: CommentId): Self = StObject.set(x, "commentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent(value: Content): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Content): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }
 }

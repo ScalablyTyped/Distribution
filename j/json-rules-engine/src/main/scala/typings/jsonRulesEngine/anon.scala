@@ -12,17 +12,14 @@ object anon {
   }
   object Fact {
     
-    @scala.inline
-    def apply(fact: String): Fact = {
+    inline def apply(fact: String): Fact = {
       val __obj = js.Dynamic.literal(fact = fact.asInstanceOf[js.Any])
       __obj.asInstanceOf[Fact]
     }
     
-    @scala.inline
-    implicit class FactMutableBuilder[Self <: Fact] (val x: Self) extends AnyVal {
+    extension [Self <: Fact](x: Self) {
       
-      @scala.inline
-      def setFact(value: String): Self = StObject.set(x, "fact", value.asInstanceOf[js.Any])
+      inline def setFact(value: String): Self = StObject.set(x, "fact", value.asInstanceOf[js.Any])
     }
   }
 }

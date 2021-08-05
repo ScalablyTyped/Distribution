@@ -15,8 +15,7 @@ trait ActiveTabIndex extends StObject {
 }
 object ActiveTabIndex {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activeTabIndex: Double,
     event: typings.react.mod.SyntheticEvent[MouseEvent[Element, NativeMouseEvent], typings.std.Event]
   ): ActiveTabIndex = {
@@ -24,13 +23,10 @@ object ActiveTabIndex {
     __obj.asInstanceOf[ActiveTabIndex]
   }
   
-  @scala.inline
-  implicit class ActiveTabIndexMutableBuilder[Self <: ActiveTabIndex] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveTabIndex](x: Self) {
     
-    @scala.inline
-    def setActiveTabIndex(value: Double): Self = StObject.set(x, "activeTabIndex", value.asInstanceOf[js.Any])
+    inline def setActiveTabIndex(value: Double): Self = StObject.set(x, "activeTabIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent(value: typings.react.mod.SyntheticEvent[MouseEvent[Element, NativeMouseEvent], typings.std.Event]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: typings.react.mod.SyntheticEvent[MouseEvent[Element, NativeMouseEvent], typings.std.Event]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
   }
 }

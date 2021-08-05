@@ -14,13 +14,12 @@ trait Reviewer extends StObject {
   
   var Visible: Boolean
   
-  @JSName("Word.Reviewer_typekey")
+  /* private */ @JSName("Word.Reviewer_typekey")
   var WordDotReviewer_typekey: Reviewer
 }
 object Reviewer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     Parent: js.Any,
@@ -32,22 +31,16 @@ object Reviewer {
     __obj.asInstanceOf[Reviewer]
   }
   
-  @scala.inline
-  implicit class ReviewerMutableBuilder[Self <: Reviewer] (val x: Self) extends AnyVal {
+  extension [Self <: Reviewer](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotReviewer_typekey(value: Reviewer): Self = StObject.set(x, "Word.Reviewer_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotReviewer_typekey(value: Reviewer): Self = StObject.set(x, "Word.Reviewer_typekey", value.asInstanceOf[js.Any])
   }
 }

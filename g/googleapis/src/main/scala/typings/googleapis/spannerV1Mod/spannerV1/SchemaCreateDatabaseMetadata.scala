@@ -16,19 +16,15 @@ trait SchemaCreateDatabaseMetadata extends StObject {
 }
 object SchemaCreateDatabaseMetadata {
   
-  @scala.inline
-  def apply(): SchemaCreateDatabaseMetadata = {
+  inline def apply(): SchemaCreateDatabaseMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCreateDatabaseMetadata]
   }
   
-  @scala.inline
-  implicit class SchemaCreateDatabaseMetadataMutableBuilder[Self <: SchemaCreateDatabaseMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCreateDatabaseMetadata](x: Self) {
     
-    @scala.inline
-    def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+    inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
+    inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
   }
 }

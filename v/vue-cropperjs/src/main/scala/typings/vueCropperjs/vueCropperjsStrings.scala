@@ -9,42 +9,35 @@ object vueCropperjsStrings {
   
   @js.native
   sealed trait _empty extends StObject
-  @scala.inline
-  def _empty: _empty = "".asInstanceOf[_empty]
+  inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
   sealed trait crop
     extends StObject
        with DragMode
-  @scala.inline
-  def crop: crop = "crop".asInstanceOf[crop]
+  inline def crop: crop = "crop".asInstanceOf[crop]
   
   @js.native
   sealed trait high extends StObject
-  @scala.inline
-  def high: high = "high".asInstanceOf[high]
+  inline def high: high = "high".asInstanceOf[high]
   
   @js.native
   sealed trait low extends StObject
-  @scala.inline
-  def low: low = "low".asInstanceOf[low]
+  inline def low: low = "low".asInstanceOf[low]
   
   @js.native
   sealed trait medium extends StObject
-  @scala.inline
-  def medium: medium = "medium".asInstanceOf[medium]
+  inline def medium: medium = "medium".asInstanceOf[medium]
   
   @js.native
   sealed trait move
     extends StObject
        with DragMode
-  @scala.inline
-  def move: move = "move".asInstanceOf[move]
+  inline def move: move = "move".asInstanceOf[move]
   
   @js.native
   sealed trait none
     extends StObject
        with DragMode
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
 }

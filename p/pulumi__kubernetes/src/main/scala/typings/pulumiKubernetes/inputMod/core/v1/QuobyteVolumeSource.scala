@@ -42,43 +42,31 @@ trait QuobyteVolumeSource extends StObject {
 }
 object QuobyteVolumeSource {
   
-  @scala.inline
-  def apply(registry: Input[String], volume: Input[String]): QuobyteVolumeSource = {
+  inline def apply(registry: Input[String], volume: Input[String]): QuobyteVolumeSource = {
     val __obj = js.Dynamic.literal(registry = registry.asInstanceOf[js.Any], volume = volume.asInstanceOf[js.Any])
     __obj.asInstanceOf[QuobyteVolumeSource]
   }
   
-  @scala.inline
-  implicit class QuobyteVolumeSourceMutableBuilder[Self <: QuobyteVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: QuobyteVolumeSource](x: Self) {
     
-    @scala.inline
-    def setGroup(value: Input[String]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: Input[String]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    @scala.inline
-    def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Input[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
-    @scala.inline
-    def setRegistry(value: Input[String]): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
+    inline def setRegistry(value: Input[String]): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTenant(value: Input[String]): Self = StObject.set(x, "tenant", value.asInstanceOf[js.Any])
+    inline def setTenant(value: Input[String]): Self = StObject.set(x, "tenant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTenantUndefined: Self = StObject.set(x, "tenant", js.undefined)
+    inline def setTenantUndefined: Self = StObject.set(x, "tenant", js.undefined)
     
-    @scala.inline
-    def setUser(value: Input[String]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: Input[String]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     
-    @scala.inline
-    def setVolume(value: Input[String]): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+    inline def setVolume(value: Input[String]): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
   }
 }

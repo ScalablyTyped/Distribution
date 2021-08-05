@@ -68,8 +68,7 @@ trait FirehoseDeliveryStreamRedshiftConfiguration extends StObject {
 }
 object FirehoseDeliveryStreamRedshiftConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cloudwatchLoggingOptions: FirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptions,
     clusterJdbcurl: String,
     dataTableName: String,
@@ -81,61 +80,42 @@ object FirehoseDeliveryStreamRedshiftConfiguration {
     __obj.asInstanceOf[FirehoseDeliveryStreamRedshiftConfiguration]
   }
   
-  @scala.inline
-  implicit class FirehoseDeliveryStreamRedshiftConfigurationMutableBuilder[Self <: FirehoseDeliveryStreamRedshiftConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: FirehoseDeliveryStreamRedshiftConfiguration](x: Self) {
     
-    @scala.inline
-    def setCloudwatchLoggingOptions(value: FirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptions): Self = StObject.set(x, "cloudwatchLoggingOptions", value.asInstanceOf[js.Any])
+    inline def setCloudwatchLoggingOptions(value: FirehoseDeliveryStreamRedshiftConfigurationCloudwatchLoggingOptions): Self = StObject.set(x, "cloudwatchLoggingOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterJdbcurl(value: String): Self = StObject.set(x, "clusterJdbcurl", value.asInstanceOf[js.Any])
+    inline def setClusterJdbcurl(value: String): Self = StObject.set(x, "clusterJdbcurl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyOptions(value: String): Self = StObject.set(x, "copyOptions", value.asInstanceOf[js.Any])
+    inline def setCopyOptions(value: String): Self = StObject.set(x, "copyOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyOptionsUndefined: Self = StObject.set(x, "copyOptions", js.undefined)
+    inline def setCopyOptionsUndefined: Self = StObject.set(x, "copyOptions", js.undefined)
     
-    @scala.inline
-    def setDataTableColumns(value: String): Self = StObject.set(x, "dataTableColumns", value.asInstanceOf[js.Any])
+    inline def setDataTableColumns(value: String): Self = StObject.set(x, "dataTableColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTableColumnsUndefined: Self = StObject.set(x, "dataTableColumns", js.undefined)
+    inline def setDataTableColumnsUndefined: Self = StObject.set(x, "dataTableColumns", js.undefined)
     
-    @scala.inline
-    def setDataTableName(value: String): Self = StObject.set(x, "dataTableName", value.asInstanceOf[js.Any])
+    inline def setDataTableName(value: String): Self = StObject.set(x, "dataTableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingConfiguration(value: FirehoseDeliveryStreamRedshiftConfigurationProcessingConfiguration): Self = StObject.set(x, "processingConfiguration", value.asInstanceOf[js.Any])
+    inline def setProcessingConfiguration(value: FirehoseDeliveryStreamRedshiftConfigurationProcessingConfiguration): Self = StObject.set(x, "processingConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingConfigurationUndefined: Self = StObject.set(x, "processingConfiguration", js.undefined)
+    inline def setProcessingConfigurationUndefined: Self = StObject.set(x, "processingConfiguration", js.undefined)
     
-    @scala.inline
-    def setRetryDuration(value: Double): Self = StObject.set(x, "retryDuration", value.asInstanceOf[js.Any])
+    inline def setRetryDuration(value: Double): Self = StObject.set(x, "retryDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryDurationUndefined: Self = StObject.set(x, "retryDuration", js.undefined)
+    inline def setRetryDurationUndefined: Self = StObject.set(x, "retryDuration", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BackupConfiguration(value: FirehoseDeliveryStreamRedshiftConfigurationS3BackupConfiguration): Self = StObject.set(x, "s3BackupConfiguration", value.asInstanceOf[js.Any])
+    inline def setS3BackupConfiguration(value: FirehoseDeliveryStreamRedshiftConfigurationS3BackupConfiguration): Self = StObject.set(x, "s3BackupConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BackupConfigurationUndefined: Self = StObject.set(x, "s3BackupConfiguration", js.undefined)
+    inline def setS3BackupConfigurationUndefined: Self = StObject.set(x, "s3BackupConfiguration", js.undefined)
     
-    @scala.inline
-    def setS3BackupMode(value: String): Self = StObject.set(x, "s3BackupMode", value.asInstanceOf[js.Any])
+    inline def setS3BackupMode(value: String): Self = StObject.set(x, "s3BackupMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BackupModeUndefined: Self = StObject.set(x, "s3BackupMode", js.undefined)
+    inline def setS3BackupModeUndefined: Self = StObject.set(x, "s3BackupMode", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

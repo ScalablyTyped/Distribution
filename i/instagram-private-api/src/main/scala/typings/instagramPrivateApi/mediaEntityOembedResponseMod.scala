@@ -40,8 +40,7 @@ object mediaEntityOembedResponseMod {
   }
   object MediaEntityOembedResponse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       author_id: Double,
       author_name: String,
       author_url: String,
@@ -63,53 +62,37 @@ object mediaEntityOembedResponseMod {
       __obj.asInstanceOf[MediaEntityOembedResponse]
     }
     
-    @scala.inline
-    implicit class MediaEntityOembedResponseMutableBuilder[Self <: MediaEntityOembedResponse] (val x: Self) extends AnyVal {
+    extension [Self <: MediaEntityOembedResponse](x: Self) {
       
-      @scala.inline
-      def setAuthor_id(value: Double): Self = StObject.set(x, "author_id", value.asInstanceOf[js.Any])
+      inline def setAuthor_id(value: Double): Self = StObject.set(x, "author_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthor_name(value: String): Self = StObject.set(x, "author_name", value.asInstanceOf[js.Any])
+      inline def setAuthor_name(value: String): Self = StObject.set(x, "author_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthor_url(value: String): Self = StObject.set(x, "author_url", value.asInstanceOf[js.Any])
+      inline def setAuthor_url(value: String): Self = StObject.set(x, "author_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Null): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Null): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMedia_id(value: String): Self = StObject.set(x, "media_id", value.asInstanceOf[js.Any])
+      inline def setMedia_id(value: String): Self = StObject.set(x, "media_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvider_name(value: String): Self = StObject.set(x, "provider_name", value.asInstanceOf[js.Any])
+      inline def setProvider_name(value: String): Self = StObject.set(x, "provider_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvider_url(value: String): Self = StObject.set(x, "provider_url", value.asInstanceOf[js.Any])
+      inline def setProvider_url(value: String): Self = StObject.set(x, "provider_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnail_height(value: Double): Self = StObject.set(x, "thumbnail_height", value.asInstanceOf[js.Any])
+      inline def setThumbnail_height(value: Double): Self = StObject.set(x, "thumbnail_height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnail_url(value: String): Self = StObject.set(x, "thumbnail_url", value.asInstanceOf[js.Any])
+      inline def setThumbnail_url(value: String): Self = StObject.set(x, "thumbnail_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnail_width(value: Double): Self = StObject.set(x, "thumbnail_width", value.asInstanceOf[js.Any])
+      inline def setThumbnail_width(value: Double): Self = StObject.set(x, "thumbnail_width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

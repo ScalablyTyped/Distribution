@@ -13,82 +13,82 @@ object lambdaModelMod {
     extends StObject
        with LambdaModel {
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _anyMethod: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _basePath: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _bodyProperty: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _callbackProperty: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _config: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _contextProperty: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _eventContextProperty: js.Any = js.native
     
     /**
       * Lambda Properties
       */
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _eventProperty: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _handlerMethod: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _headersProperty: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _httpVerbs: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _instance: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _methodProperty: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _name: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _pathParams: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _pathParamsProperty: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _paths: js.Any = js.native
     
     /**
       * API Properties
       */
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _postConstructorMethod: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _preLambdaCallbackMethod: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _preLambdaTimeoutMethod: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _preLambdaTimeoutTime: js.Any = js.native
     
     /**
       * Api Gateway Properties
       */
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _queryParamsProperty: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _stageVariablesProperty: js.Any = js.native
     
     /* CompleteClass */
@@ -163,60 +163,60 @@ object lambdaModelMod {
   
   trait LambdaModel extends StObject {
     
-    var _anyMethod: js.Any
+    /* private */ var _anyMethod: js.Any
     
-    var _basePath: js.Any
+    /* private */ var _basePath: js.Any
     
-    var _bodyProperty: js.Any
+    /* private */ var _bodyProperty: js.Any
     
-    var _callbackProperty: js.Any
+    /* private */ var _callbackProperty: js.Any
     
-    var _config: js.Any
+    /* private */ var _config: js.Any
     
-    var _contextProperty: js.Any
+    /* private */ var _contextProperty: js.Any
     
-    var _eventContextProperty: js.Any
+    /* private */ var _eventContextProperty: js.Any
     
     /**
       * Lambda Properties
       */
-    var _eventProperty: js.Any
+    /* private */ var _eventProperty: js.Any
     
-    var _handlerMethod: js.Any
+    /* private */ var _handlerMethod: js.Any
     
-    var _headersProperty: js.Any
+    /* private */ var _headersProperty: js.Any
     
-    var _httpVerbs: js.Any
+    /* private */ var _httpVerbs: js.Any
     
-    var _instance: js.Any
+    /* private */ var _instance: js.Any
     
-    var _methodProperty: js.Any
+    /* private */ var _methodProperty: js.Any
     
-    var _name: js.Any
+    /* private */ var _name: js.Any
     
-    var _pathParams: js.Any
+    /* private */ var _pathParams: js.Any
     
-    var _pathParamsProperty: js.Any
+    /* private */ var _pathParamsProperty: js.Any
     
-    var _paths: js.Any
+    /* private */ var _paths: js.Any
     
     /**
       * API Properties
       */
-    var _postConstructorMethod: js.Any
+    /* private */ var _postConstructorMethod: js.Any
     
-    var _preLambdaCallbackMethod: js.Any
+    /* private */ var _preLambdaCallbackMethod: js.Any
     
-    var _preLambdaTimeoutMethod: js.Any
+    /* private */ var _preLambdaTimeoutMethod: js.Any
     
-    var _preLambdaTimeoutTime: js.Any
+    /* private */ var _preLambdaTimeoutTime: js.Any
     
     /**
       * Api Gateway Properties
       */
-    var _queryParamsProperty: js.Any
+    /* private */ var _queryParamsProperty: js.Any
     
-    var _stageVariablesProperty: js.Any
+    /* private */ var _stageVariablesProperty: js.Any
     
     var anyMethod: js.Any
     
@@ -266,8 +266,7 @@ object lambdaModelMod {
   }
   object LambdaModel {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _anyMethod: js.Any,
       _basePath: js.Any,
       _bodyProperty: js.Any,
@@ -319,155 +318,105 @@ object lambdaModelMod {
       __obj.asInstanceOf[LambdaModel]
     }
     
-    @scala.inline
-    implicit class LambdaModelMutableBuilder[Self <: LambdaModel] (val x: Self) extends AnyVal {
+    extension [Self <: LambdaModel](x: Self) {
       
-      @scala.inline
-      def setAnyMethod(value: js.Any): Self = StObject.set(x, "anyMethod", value.asInstanceOf[js.Any])
+      inline def setAnyMethod(value: js.Any): Self = StObject.set(x, "anyMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
+      inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyProperty(value: js.Any): Self = StObject.set(x, "bodyProperty", value.asInstanceOf[js.Any])
+      inline def setBodyProperty(value: js.Any): Self = StObject.set(x, "bodyProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallbackProperty(value: js.Any): Self = StObject.set(x, "callbackProperty", value.asInstanceOf[js.Any])
+      inline def setCallbackProperty(value: js.Any): Self = StObject.set(x, "callbackProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfig(value: LambdaConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: LambdaConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextProperty(value: js.Any): Self = StObject.set(x, "contextProperty", value.asInstanceOf[js.Any])
+      inline def setContextProperty(value: js.Any): Self = StObject.set(x, "contextProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventContextProperty(value: js.Any): Self = StObject.set(x, "eventContextProperty", value.asInstanceOf[js.Any])
+      inline def setEventContextProperty(value: js.Any): Self = StObject.set(x, "eventContextProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventProperty(value: js.Any): Self = StObject.set(x, "eventProperty", value.asInstanceOf[js.Any])
+      inline def setEventProperty(value: js.Any): Self = StObject.set(x, "eventProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandlerMethod(value: js.Any): Self = StObject.set(x, "handlerMethod", value.asInstanceOf[js.Any])
+      inline def setHandlerMethod(value: js.Any): Self = StObject.set(x, "handlerMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersProperty(value: js.Any): Self = StObject.set(x, "headersProperty", value.asInstanceOf[js.Any])
+      inline def setHeadersProperty(value: js.Any): Self = StObject.set(x, "headersProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpVerbs(value: js.Array[typings.lambdaPhi.httpVerbModelMod.default]): Self = StObject.set(x, "httpVerbs", value.asInstanceOf[js.Any])
+      inline def setHttpVerbs(value: js.Array[typings.lambdaPhi.httpVerbModelMod.default]): Self = StObject.set(x, "httpVerbs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpVerbsVarargs(value: typings.lambdaPhi.httpVerbModelMod.default*): Self = StObject.set(x, "httpVerbs", js.Array(value :_*))
+      inline def setHttpVerbsVarargs(value: typings.lambdaPhi.httpVerbModelMod.default*): Self = StObject.set(x, "httpVerbs", js.Array(value :_*))
       
-      @scala.inline
-      def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+      inline def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodProperty(value: js.Any): Self = StObject.set(x, "methodProperty", value.asInstanceOf[js.Any])
+      inline def setMethodProperty(value: js.Any): Self = StObject.set(x, "methodProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: js.Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: js.Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathParams(value: js.Array[typings.lambdaPhi.pathParamModelMod.default]): Self = StObject.set(x, "pathParams", value.asInstanceOf[js.Any])
+      inline def setPathParams(value: js.Array[typings.lambdaPhi.pathParamModelMod.default]): Self = StObject.set(x, "pathParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathParamsProperty(value: js.Any): Self = StObject.set(x, "pathParamsProperty", value.asInstanceOf[js.Any])
+      inline def setPathParamsProperty(value: js.Any): Self = StObject.set(x, "pathParamsProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathParamsVarargs(value: typings.lambdaPhi.pathParamModelMod.default*): Self = StObject.set(x, "pathParams", js.Array(value :_*))
+      inline def setPathParamsVarargs(value: typings.lambdaPhi.pathParamModelMod.default*): Self = StObject.set(x, "pathParams", js.Array(value :_*))
       
-      @scala.inline
-      def setPaths(value: js.Array[typings.lambdaPhi.pathModelMod.default]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+      inline def setPaths(value: js.Array[typings.lambdaPhi.pathModelMod.default]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathsVarargs(value: typings.lambdaPhi.pathModelMod.default*): Self = StObject.set(x, "paths", js.Array(value :_*))
+      inline def setPathsVarargs(value: typings.lambdaPhi.pathModelMod.default*): Self = StObject.set(x, "paths", js.Array(value :_*))
       
-      @scala.inline
-      def setPostConstructorMethod(value: js.Any): Self = StObject.set(x, "postConstructorMethod", value.asInstanceOf[js.Any])
+      inline def setPostConstructorMethod(value: js.Any): Self = StObject.set(x, "postConstructorMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreLambdaCallbackMethod(value: String): Self = StObject.set(x, "preLambdaCallbackMethod", value.asInstanceOf[js.Any])
+      inline def setPreLambdaCallbackMethod(value: String): Self = StObject.set(x, "preLambdaCallbackMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreLambdaTimeoutMethod(value: String): Self = StObject.set(x, "preLambdaTimeoutMethod", value.asInstanceOf[js.Any])
+      inline def setPreLambdaTimeoutMethod(value: String): Self = StObject.set(x, "preLambdaTimeoutMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreLambdaTimeoutTime(value: Double): Self = StObject.set(x, "preLambdaTimeoutTime", value.asInstanceOf[js.Any])
+      inline def setPreLambdaTimeoutTime(value: Double): Self = StObject.set(x, "preLambdaTimeoutTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryParamsProperty(value: js.Any): Self = StObject.set(x, "queryParamsProperty", value.asInstanceOf[js.Any])
+      inline def setQueryParamsProperty(value: js.Any): Self = StObject.set(x, "queryParamsProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStageVariablesProperty(value: js.Any): Self = StObject.set(x, "stageVariablesProperty", value.asInstanceOf[js.Any])
+      inline def setStageVariablesProperty(value: js.Any): Self = StObject.set(x, "stageVariablesProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_anyMethod(value: js.Any): Self = StObject.set(x, "_anyMethod", value.asInstanceOf[js.Any])
+      inline def set_anyMethod(value: js.Any): Self = StObject.set(x, "_anyMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_basePath(value: js.Any): Self = StObject.set(x, "_basePath", value.asInstanceOf[js.Any])
+      inline def set_basePath(value: js.Any): Self = StObject.set(x, "_basePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_bodyProperty(value: js.Any): Self = StObject.set(x, "_bodyProperty", value.asInstanceOf[js.Any])
+      inline def set_bodyProperty(value: js.Any): Self = StObject.set(x, "_bodyProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_callbackProperty(value: js.Any): Self = StObject.set(x, "_callbackProperty", value.asInstanceOf[js.Any])
+      inline def set_callbackProperty(value: js.Any): Self = StObject.set(x, "_callbackProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_config(value: js.Any): Self = StObject.set(x, "_config", value.asInstanceOf[js.Any])
+      inline def set_config(value: js.Any): Self = StObject.set(x, "_config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_contextProperty(value: js.Any): Self = StObject.set(x, "_contextProperty", value.asInstanceOf[js.Any])
+      inline def set_contextProperty(value: js.Any): Self = StObject.set(x, "_contextProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_eventContextProperty(value: js.Any): Self = StObject.set(x, "_eventContextProperty", value.asInstanceOf[js.Any])
+      inline def set_eventContextProperty(value: js.Any): Self = StObject.set(x, "_eventContextProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_eventProperty(value: js.Any): Self = StObject.set(x, "_eventProperty", value.asInstanceOf[js.Any])
+      inline def set_eventProperty(value: js.Any): Self = StObject.set(x, "_eventProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_handlerMethod(value: js.Any): Self = StObject.set(x, "_handlerMethod", value.asInstanceOf[js.Any])
+      inline def set_handlerMethod(value: js.Any): Self = StObject.set(x, "_handlerMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_headersProperty(value: js.Any): Self = StObject.set(x, "_headersProperty", value.asInstanceOf[js.Any])
+      inline def set_headersProperty(value: js.Any): Self = StObject.set(x, "_headersProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_httpVerbs(value: js.Any): Self = StObject.set(x, "_httpVerbs", value.asInstanceOf[js.Any])
+      inline def set_httpVerbs(value: js.Any): Self = StObject.set(x, "_httpVerbs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_instance(value: js.Any): Self = StObject.set(x, "_instance", value.asInstanceOf[js.Any])
+      inline def set_instance(value: js.Any): Self = StObject.set(x, "_instance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_methodProperty(value: js.Any): Self = StObject.set(x, "_methodProperty", value.asInstanceOf[js.Any])
+      inline def set_methodProperty(value: js.Any): Self = StObject.set(x, "_methodProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_name(value: js.Any): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
+      inline def set_name(value: js.Any): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_pathParams(value: js.Any): Self = StObject.set(x, "_pathParams", value.asInstanceOf[js.Any])
+      inline def set_pathParams(value: js.Any): Self = StObject.set(x, "_pathParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_pathParamsProperty(value: js.Any): Self = StObject.set(x, "_pathParamsProperty", value.asInstanceOf[js.Any])
+      inline def set_pathParamsProperty(value: js.Any): Self = StObject.set(x, "_pathParamsProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_paths(value: js.Any): Self = StObject.set(x, "_paths", value.asInstanceOf[js.Any])
+      inline def set_paths(value: js.Any): Self = StObject.set(x, "_paths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_postConstructorMethod(value: js.Any): Self = StObject.set(x, "_postConstructorMethod", value.asInstanceOf[js.Any])
+      inline def set_postConstructorMethod(value: js.Any): Self = StObject.set(x, "_postConstructorMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_preLambdaCallbackMethod(value: js.Any): Self = StObject.set(x, "_preLambdaCallbackMethod", value.asInstanceOf[js.Any])
+      inline def set_preLambdaCallbackMethod(value: js.Any): Self = StObject.set(x, "_preLambdaCallbackMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_preLambdaTimeoutMethod(value: js.Any): Self = StObject.set(x, "_preLambdaTimeoutMethod", value.asInstanceOf[js.Any])
+      inline def set_preLambdaTimeoutMethod(value: js.Any): Self = StObject.set(x, "_preLambdaTimeoutMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_preLambdaTimeoutTime(value: js.Any): Self = StObject.set(x, "_preLambdaTimeoutTime", value.asInstanceOf[js.Any])
+      inline def set_preLambdaTimeoutTime(value: js.Any): Self = StObject.set(x, "_preLambdaTimeoutTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_queryParamsProperty(value: js.Any): Self = StObject.set(x, "_queryParamsProperty", value.asInstanceOf[js.Any])
+      inline def set_queryParamsProperty(value: js.Any): Self = StObject.set(x, "_queryParamsProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_stageVariablesProperty(value: js.Any): Self = StObject.set(x, "_stageVariablesProperty", value.asInstanceOf[js.Any])
+      inline def set_stageVariablesProperty(value: js.Any): Self = StObject.set(x, "_stageVariablesProperty", value.asInstanceOf[js.Any])
     }
   }
 }

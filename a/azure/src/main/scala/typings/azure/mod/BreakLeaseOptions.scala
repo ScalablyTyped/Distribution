@@ -12,19 +12,15 @@ trait BreakLeaseOptions
 }
 object BreakLeaseOptions {
   
-  @scala.inline
-  def apply(): BreakLeaseOptions = {
+  inline def apply(): BreakLeaseOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BreakLeaseOptions]
   }
   
-  @scala.inline
-  implicit class BreakLeaseOptionsMutableBuilder[Self <: BreakLeaseOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BreakLeaseOptions](x: Self) {
     
-    @scala.inline
-    def setLeaseBreakPeriod(value: Double): Self = StObject.set(x, "leaseBreakPeriod", value.asInstanceOf[js.Any])
+    inline def setLeaseBreakPeriod(value: Double): Self = StObject.set(x, "leaseBreakPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeaseBreakPeriodUndefined: Self = StObject.set(x, "leaseBreakPeriod", js.undefined)
+    inline def setLeaseBreakPeriodUndefined: Self = StObject.set(x, "leaseBreakPeriod", js.undefined)
   }
 }

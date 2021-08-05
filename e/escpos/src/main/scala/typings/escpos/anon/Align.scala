@@ -17,22 +17,17 @@ trait Align extends StObject {
 }
 object Align {
   
-  @scala.inline
-  def apply(align: LEFT | CENTER | RIGHT, text: String, width: Double): Align = {
+  inline def apply(align: LEFT | CENTER | RIGHT, text: String, width: Double): Align = {
     val __obj = js.Dynamic.literal(align = align.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Align]
   }
   
-  @scala.inline
-  implicit class AlignMutableBuilder[Self <: Align] (val x: Self) extends AnyVal {
+  extension [Self <: Align](x: Self) {
     
-    @scala.inline
-    def setAlign(value: LEFT | CENTER | RIGHT): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: LEFT | CENTER | RIGHT): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

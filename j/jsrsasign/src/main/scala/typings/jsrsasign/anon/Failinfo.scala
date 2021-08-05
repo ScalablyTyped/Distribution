@@ -17,28 +17,21 @@ trait Failinfo extends StObject {
 }
 object Failinfo {
   
-  @scala.inline
-  def apply(status: NameParam): Failinfo = {
+  inline def apply(status: NameParam): Failinfo = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Failinfo]
   }
   
-  @scala.inline
-  implicit class FailinfoMutableBuilder[Self <: Failinfo] (val x: Self) extends AnyVal {
+  extension [Self <: Failinfo](x: Self) {
     
-    @scala.inline
-    def setFailinfo(value: NameParam | IntegerParam): Self = StObject.set(x, "failinfo", value.asInstanceOf[js.Any])
+    inline def setFailinfo(value: NameParam | IntegerParam): Self = StObject.set(x, "failinfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailinfoUndefined: Self = StObject.set(x, "failinfo", js.undefined)
+    inline def setFailinfoUndefined: Self = StObject.set(x, "failinfo", js.undefined)
     
-    @scala.inline
-    def setStatstr(value: ArrayParam[String]): Self = StObject.set(x, "statstr", value.asInstanceOf[js.Any])
+    inline def setStatstr(value: ArrayParam[String]): Self = StObject.set(x, "statstr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatstrUndefined: Self = StObject.set(x, "statstr", js.undefined)
+    inline def setStatstrUndefined: Self = StObject.set(x, "statstr", js.undefined)
     
-    @scala.inline
-    def setStatus(value: NameParam): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: NameParam): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

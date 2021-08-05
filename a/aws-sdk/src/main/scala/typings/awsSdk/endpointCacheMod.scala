@@ -14,7 +14,7 @@ object endpointCacheMod {
   class EndpointCache () extends StObject {
     def this(maxSize: Double) = this()
     
-    var cache: js.Any = js.native
+    /* private */ var cache: js.Any = js.native
     
     def empty(): Unit = js.native
     
@@ -23,7 +23,7 @@ object endpointCacheMod {
     
     val maxSize: Double = js.native
     
-    var populateValue: js.Any = js.native
+    /* private */ var populateValue: js.Any = js.native
     
     def put(key: String, value: DiscoveredEndpoints): Unit = js.native
     def put(key: EndpointIdentifier, value: DiscoveredEndpoints): Unit = js.native
@@ -40,8 +40,7 @@ object endpointCacheMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getKeyString(key: EndpointIdentifier): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getKeyString")(key.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getKeyString(key: EndpointIdentifier): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getKeyString")(key.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   type DiscoveredEndpoints = js.Array[CachePeriodInMinutes]
@@ -60,38 +59,28 @@ object endpointCacheMod {
   }
   object EndpointIdentifier {
     
-    @scala.inline
-    def apply(): EndpointIdentifier = {
+    inline def apply(): EndpointIdentifier = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EndpointIdentifier]
     }
     
-    @scala.inline
-    implicit class EndpointIdentifierMutableBuilder[Self <: EndpointIdentifier] (val x: Self) extends AnyVal {
+    extension [Self <: EndpointIdentifier](x: Self) {
       
-      @scala.inline
-      def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
+      inline def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessKeyIdUndefined: Self = StObject.set(x, "accessKeyId", js.undefined)
+      inline def setAccessKeyIdUndefined: Self = StObject.set(x, "accessKeyId", js.undefined)
       
-      @scala.inline
-      def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+      inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+      inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+      inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
       
-      @scala.inline
-      def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
+      inline def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceIdUndefined: Self = StObject.set(x, "serviceId", js.undefined)
+      inline def setServiceIdUndefined: Self = StObject.set(x, "serviceId", js.undefined)
     }
   }
   

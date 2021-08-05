@@ -16,16 +16,13 @@ trait Custom
 }
 object Custom {
   
-  @scala.inline
-  def apply(s3: CloudFrontS3Origin): Custom = {
+  inline def apply(s3: CloudFrontS3Origin): Custom = {
     val __obj = js.Dynamic.literal(s3 = s3.asInstanceOf[js.Any])
     __obj.asInstanceOf[Custom]
   }
   
-  @scala.inline
-  implicit class CustomMutableBuilder[Self <: Custom] (val x: Self) extends AnyVal {
+  extension [Self <: Custom](x: Self) {
     
-    @scala.inline
-    def setS3(value: CloudFrontS3Origin): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
+    inline def setS3(value: CloudFrontS3Origin): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
   }
 }

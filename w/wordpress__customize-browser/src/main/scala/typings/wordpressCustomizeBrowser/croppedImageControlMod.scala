@@ -63,8 +63,7 @@ object croppedImageControlMod {
   }
   object ImageSelectOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       handles: Boolean,
       imageHeight: Double,
       imageWidth: Double,
@@ -80,68 +79,47 @@ object croppedImageControlMod {
       __obj.asInstanceOf[ImageSelectOptions]
     }
     
-    @scala.inline
-    implicit class ImageSelectOptionsMutableBuilder[Self <: ImageSelectOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ImageSelectOptions](x: Self) {
       
-      @scala.inline
-      def setAspectRatio(value: String): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
+      inline def setAspectRatio(value: String): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
+      inline def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
       
-      @scala.inline
-      def setHandles(value: Boolean): Self = StObject.set(x, "handles", value.asInstanceOf[js.Any])
+      inline def setHandles(value: Boolean): Self = StObject.set(x, "handles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageHeight(value: Double): Self = StObject.set(x, "imageHeight", value.asInstanceOf[js.Any])
+      inline def setImageHeight(value: Double): Self = StObject.set(x, "imageHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageWidth(value: Double): Self = StObject.set(x, "imageWidth", value.asInstanceOf[js.Any])
+      inline def setImageWidth(value: Double): Self = StObject.set(x, "imageWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstance(value: Boolean): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+      inline def setInstance(value: Boolean): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeys(value: Boolean): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+      inline def setKeys(value: Boolean): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+      inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
       
-      @scala.inline
-      def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+      inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      @scala.inline
-      def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+      inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
+      inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
       
-      @scala.inline
-      def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+      inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+      inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
-      @scala.inline
-      def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
+      inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
+      inline def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX2(value: Double): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
+      inline def setX2(value: Double): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
+      inline def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY2(value: Double): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
+      inline def setY2(value: Double): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
     }
   }
 }

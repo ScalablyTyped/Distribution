@@ -19,8 +19,7 @@ trait NavigationDescriptor[Params, Options, NavigationScreenPropType] extends St
 }
 object NavigationDescriptor {
   
-  @scala.inline
-  def apply[Params, Options, NavigationScreenPropType](
+  inline def apply[Params, Options, NavigationScreenPropType](
     getComponent: () => ComponentType[js.Object],
     key: String,
     navigation: NavigationScreenPropType,
@@ -31,22 +30,16 @@ object NavigationDescriptor {
     __obj.asInstanceOf[NavigationDescriptor[Params, Options, NavigationScreenPropType]]
   }
   
-  @scala.inline
-  implicit class NavigationDescriptorMutableBuilder[Self <: NavigationDescriptor[?, ?, ?], Params, Options, NavigationScreenPropType] (val x: Self & (NavigationDescriptor[Params, Options, NavigationScreenPropType])) extends AnyVal {
+  extension [Self <: NavigationDescriptor[?, ?, ?], Params, Options, NavigationScreenPropType](x: Self & (NavigationDescriptor[Params, Options, NavigationScreenPropType])) {
     
-    @scala.inline
-    def setGetComponent(value: () => ComponentType[js.Object]): Self = StObject.set(x, "getComponent", js.Any.fromFunction0(value))
+    inline def setGetComponent(value: () => ComponentType[js.Object]): Self = StObject.set(x, "getComponent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigation(value: NavigationScreenPropType): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+    inline def setNavigation(value: NavigationScreenPropType): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: NavigationLeafRoute[Params] | NavigationStateRoute[Params]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: NavigationLeafRoute[Params] | NavigationStateRoute[Params]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

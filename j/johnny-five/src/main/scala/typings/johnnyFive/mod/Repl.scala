@@ -10,16 +10,13 @@ trait Repl extends StObject {
 }
 object Repl {
   
-  @scala.inline
-  def apply(inject: js.Any => Unit): Repl = {
+  inline def apply(inject: js.Any => Unit): Repl = {
     val __obj = js.Dynamic.literal(inject = js.Any.fromFunction1(inject))
     __obj.asInstanceOf[Repl]
   }
   
-  @scala.inline
-  implicit class ReplMutableBuilder[Self <: Repl] (val x: Self) extends AnyVal {
+  extension [Self <: Repl](x: Self) {
     
-    @scala.inline
-    def setInject(value: js.Any => Unit): Self = StObject.set(x, "inject", js.Any.fromFunction1(value))
+    inline def setInject(value: js.Any => Unit): Self = StObject.set(x, "inject", js.Any.fromFunction1(value))
   }
 }

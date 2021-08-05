@@ -11,10 +11,8 @@ object getEncryptionByDefaultMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getEncryptionByDefault(): js.Promise[GetEncryptionByDefaultResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEncryptionByDefault")().asInstanceOf[js.Promise[GetEncryptionByDefaultResult]]
-  @scala.inline
-  def getEncryptionByDefault(opts: InvokeOptions): js.Promise[GetEncryptionByDefaultResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEncryptionByDefault")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetEncryptionByDefaultResult]]
+  inline def getEncryptionByDefault(): js.Promise[GetEncryptionByDefaultResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEncryptionByDefault")().asInstanceOf[js.Promise[GetEncryptionByDefaultResult]]
+  inline def getEncryptionByDefault(opts: InvokeOptions): js.Promise[GetEncryptionByDefaultResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEncryptionByDefault")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetEncryptionByDefaultResult]]
   
   trait GetEncryptionByDefaultResult extends StObject {
     
@@ -30,20 +28,16 @@ object getEncryptionByDefaultMod {
   }
   object GetEncryptionByDefaultResult {
     
-    @scala.inline
-    def apply(enabled: Boolean, id: String): GetEncryptionByDefaultResult = {
+    inline def apply(enabled: Boolean, id: String): GetEncryptionByDefaultResult = {
       val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetEncryptionByDefaultResult]
     }
     
-    @scala.inline
-    implicit class GetEncryptionByDefaultResultMutableBuilder[Self <: GetEncryptionByDefaultResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetEncryptionByDefaultResult](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
 }

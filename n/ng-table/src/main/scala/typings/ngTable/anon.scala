@@ -14,20 +14,16 @@ object anon {
   }
   object Columns {
     
-    @scala.inline
-    def apply(columns: String, tableParams: String): Columns = {
+    inline def apply(columns: String, tableParams: String): Columns = {
       val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], tableParams = tableParams.asInstanceOf[js.Any])
       __obj.asInstanceOf[Columns]
     }
     
-    @scala.inline
-    implicit class ColumnsMutableBuilder[Self <: Columns] (val x: Self) extends AnyVal {
+    extension [Self <: Columns](x: Self) {
       
-      @scala.inline
-      def setColumns(value: String): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: String): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableParams(value: String): Self = StObject.set(x, "tableParams", value.asInstanceOf[js.Any])
+      inline def setTableParams(value: String): Self = StObject.set(x, "tableParams", value.asInstanceOf[js.Any])
     }
   }
   
@@ -47,8 +43,7 @@ object anon {
   }
   object Controller {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       controller: String,
       controllerAs: String,
       replace: Boolean,
@@ -60,26 +55,19 @@ object anon {
       __obj.asInstanceOf[Controller]
     }
     
-    @scala.inline
-    implicit class ControllerMutableBuilder[Self <: Controller] (val x: Self) extends AnyVal {
+    extension [Self <: Controller](x: Self) {
       
-      @scala.inline
-      def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+      inline def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControllerAs(value: String): Self = StObject.set(x, "controllerAs", value.asInstanceOf[js.Any])
+      inline def setControllerAs(value: String): Self = StObject.set(x, "controllerAs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+      inline def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestrict(value: String): Self = StObject.set(x, "restrict", value.asInstanceOf[js.Any])
+      inline def setRestrict(value: String): Self = StObject.set(x, "restrict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScope(value: Boolean): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: Boolean): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateUrl(value: js.Any): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
+      inline def setTemplateUrl(value: js.Any): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
     }
   }
   
@@ -89,17 +77,14 @@ object anon {
   }
   object Disabled {
     
-    @scala.inline
-    def apply(disabled: Boolean): Disabled = {
+    inline def apply(disabled: Boolean): Disabled = {
       val __obj = js.Dynamic.literal(disabled = disabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[Disabled]
     }
     
-    @scala.inline
-    implicit class DisabledMutableBuilder[Self <: Disabled] (val x: Self) extends AnyVal {
+    extension [Self <: Disabled](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     }
   }
   
@@ -111,20 +96,16 @@ object anon {
   }
   object Header {
     
-    @scala.inline
-    def apply(header: String, pagination: String): Header = {
+    inline def apply(header: String, pagination: String): Header = {
       val __obj = js.Dynamic.literal(header = header.asInstanceOf[js.Any], pagination = pagination.asInstanceOf[js.Any])
       __obj.asInstanceOf[Header]
     }
     
-    @scala.inline
-    implicit class HeaderMutableBuilder[Self <: Header] (val x: Self) extends AnyVal {
+    extension [Self <: Header](x: Self) {
       
-      @scala.inline
-      def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPagination(value: String): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
+      inline def setPagination(value: String): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
     }
   }
   
@@ -134,17 +115,14 @@ object anon {
   }
   object Show {
     
-    @scala.inline
-    def apply(show: Boolean): Show = {
+    inline def apply(show: Boolean): Show = {
       val __obj = js.Dynamic.literal(show = show.asInstanceOf[js.Any])
       __obj.asInstanceOf[Show]
     }
     
-    @scala.inline
-    implicit class ShowMutableBuilder[Self <: Show] (val x: Self) extends AnyVal {
+    extension [Self <: Show](x: Self) {
       
-      @scala.inline
-      def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+      inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     }
   }
 }

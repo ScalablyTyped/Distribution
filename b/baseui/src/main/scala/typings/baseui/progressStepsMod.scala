@@ -101,78 +101,60 @@ object progressStepsMod {
   }
   object NumberedStepOverrides {
     
-    @scala.inline
-    def apply(): NumberedStepOverrides = {
+    inline def apply(): NumberedStepOverrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NumberedStepOverrides]
     }
     
-    @scala.inline
-    implicit class NumberedStepOverridesMutableBuilder[Self <: NumberedStepOverrides] (val x: Self) extends AnyVal {
+    extension [Self <: NumberedStepOverrides](x: Self) {
       
-      @scala.inline
-      def setContent(
+      inline def setContent(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
       
-      @scala.inline
-      def setDescription(
+      inline def setDescription(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
       
-      @scala.inline
-      def setIcon(
+      inline def setIcon(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconContainer(
+      inline def setIconContainer(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "IconContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconContainerUndefined: Self = StObject.set(x, "IconContainer", js.undefined)
+      inline def setIconContainerUndefined: Self = StObject.set(x, "IconContainer", js.undefined)
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "Icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "Icon", js.undefined)
       
-      @scala.inline
-      def setInnerIcon(
+      inline def setInnerIcon(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "InnerIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerIconUndefined: Self = StObject.set(x, "InnerIcon", js.undefined)
+      inline def setInnerIconUndefined: Self = StObject.set(x, "InnerIcon", js.undefined)
       
-      @scala.inline
-      def setRoot(
+      inline def setRoot(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
       
-      @scala.inline
-      def setTail(
+      inline def setTail(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Tail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTailUndefined: Self = StObject.set(x, "Tail", js.undefined)
+      inline def setTailUndefined: Self = StObject.set(x, "Tail", js.undefined)
       
-      @scala.inline
-      def setTitle(
+      inline def setTitle(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "Title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "Title", js.undefined)
     }
   }
   
@@ -194,56 +176,40 @@ object progressStepsMod {
   }
   object NumberedStepProps {
     
-    @scala.inline
-    def apply(): NumberedStepProps = {
+    inline def apply(): NumberedStepProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NumberedStepProps]
     }
     
-    @scala.inline
-    implicit class NumberedStepPropsMutableBuilder[Self <: NumberedStepProps] (val x: Self) extends AnyVal {
+    extension [Self <: NumberedStepProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+      inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
+      inline def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
       
-      @scala.inline
-      def setIsCompleted(value: Boolean): Self = StObject.set(x, "isCompleted", value.asInstanceOf[js.Any])
+      inline def setIsCompleted(value: Boolean): Self = StObject.set(x, "isCompleted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCompletedUndefined: Self = StObject.set(x, "isCompleted", js.undefined)
+      inline def setIsCompletedUndefined: Self = StObject.set(x, "isCompleted", js.undefined)
       
-      @scala.inline
-      def setIsLast(value: Boolean): Self = StObject.set(x, "isLast", value.asInstanceOf[js.Any])
+      inline def setIsLast(value: Boolean): Self = StObject.set(x, "isLast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLastUndefined: Self = StObject.set(x, "isLast", js.undefined)
+      inline def setIsLastUndefined: Self = StObject.set(x, "isLast", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: NumberedStepOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: NumberedStepOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setStep(value: ReactNode): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: ReactNode): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -255,22 +221,18 @@ object progressStepsMod {
   }
   object ProgressStepsOverrides {
     
-    @scala.inline
-    def apply(): ProgressStepsOverrides = {
+    inline def apply(): ProgressStepsOverrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProgressStepsOverrides]
     }
     
-    @scala.inline
-    implicit class ProgressStepsOverridesMutableBuilder[Self <: ProgressStepsOverrides] (val x: Self) extends AnyVal {
+    extension [Self <: ProgressStepsOverrides](x: Self) {
       
-      @scala.inline
-      def setRoot(
+      inline def setRoot(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
     }
   }
   
@@ -284,32 +246,24 @@ object progressStepsMod {
   }
   object ProgressStepsProps {
     
-    @scala.inline
-    def apply(): ProgressStepsProps = {
+    inline def apply(): ProgressStepsProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProgressStepsProps]
     }
     
-    @scala.inline
-    implicit class ProgressStepsPropsMutableBuilder[Self <: ProgressStepsProps] (val x: Self) extends AnyVal {
+    extension [Self <: ProgressStepsProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
+      inline def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: ProgressStepsOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: ProgressStepsOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     }
   }
   
@@ -349,78 +303,60 @@ object progressStepsMod {
   }
   object StepOverrides {
     
-    @scala.inline
-    def apply(): StepOverrides = {
+    inline def apply(): StepOverrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StepOverrides]
     }
     
-    @scala.inline
-    implicit class StepOverridesMutableBuilder[Self <: StepOverrides] (val x: Self) extends AnyVal {
+    extension [Self <: StepOverrides](x: Self) {
       
-      @scala.inline
-      def setContent(
+      inline def setContent(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
       
-      @scala.inline
-      def setDescription(
+      inline def setDescription(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
       
-      @scala.inline
-      def setIcon(
+      inline def setIcon(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconContainer(
+      inline def setIconContainer(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "IconContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconContainerUndefined: Self = StObject.set(x, "IconContainer", js.undefined)
+      inline def setIconContainerUndefined: Self = StObject.set(x, "IconContainer", js.undefined)
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "Icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "Icon", js.undefined)
       
-      @scala.inline
-      def setInnerIcon(
+      inline def setInnerIcon(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "InnerIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerIconUndefined: Self = StObject.set(x, "InnerIcon", js.undefined)
+      inline def setInnerIconUndefined: Self = StObject.set(x, "InnerIcon", js.undefined)
       
-      @scala.inline
-      def setRoot(
+      inline def setRoot(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
       
-      @scala.inline
-      def setTail(
+      inline def setTail(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Tail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTailUndefined: Self = StObject.set(x, "Tail", js.undefined)
+      inline def setTailUndefined: Self = StObject.set(x, "Tail", js.undefined)
       
-      @scala.inline
-      def setTitle(
+      inline def setTitle(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
       ): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "Title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "Title", js.undefined)
     }
   }
   
@@ -440,50 +376,36 @@ object progressStepsMod {
   }
   object StepProps {
     
-    @scala.inline
-    def apply(): StepProps = {
+    inline def apply(): StepProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StepProps]
     }
     
-    @scala.inline
-    implicit class StepPropsMutableBuilder[Self <: StepProps] (val x: Self) extends AnyVal {
+    extension [Self <: StepProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+      inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
+      inline def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
       
-      @scala.inline
-      def setIsCompleted(value: Boolean): Self = StObject.set(x, "isCompleted", value.asInstanceOf[js.Any])
+      inline def setIsCompleted(value: Boolean): Self = StObject.set(x, "isCompleted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCompletedUndefined: Self = StObject.set(x, "isCompleted", js.undefined)
+      inline def setIsCompletedUndefined: Self = StObject.set(x, "isCompleted", js.undefined)
       
-      @scala.inline
-      def setIsLast(value: Boolean): Self = StObject.set(x, "isLast", value.asInstanceOf[js.Any])
+      inline def setIsLast(value: Boolean): Self = StObject.set(x, "isLast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLastUndefined: Self = StObject.set(x, "isLast", js.undefined)
+      inline def setIsLastUndefined: Self = StObject.set(x, "isLast", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: StepOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: StepOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -500,32 +422,24 @@ object progressStepsMod {
   }
   object StyleProps {
     
-    @scala.inline
-    def apply(): StyleProps = {
+    inline def apply(): StyleProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StyleProps]
     }
     
-    @scala.inline
-    implicit class StylePropsMutableBuilder[Self <: StyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: StyleProps](x: Self) {
       
-      @scala.inline
-      def set$disabled(value: Boolean): Self = StObject.set(x, "$disabled", value.asInstanceOf[js.Any])
+      inline def set$disabled(value: Boolean): Self = StObject.set(x, "$disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$disabledUndefined: Self = StObject.set(x, "$disabled", js.undefined)
+      inline def set$disabledUndefined: Self = StObject.set(x, "$disabled", js.undefined)
       
-      @scala.inline
-      def set$isActive(value: Boolean): Self = StObject.set(x, "$isActive", value.asInstanceOf[js.Any])
+      inline def set$isActive(value: Boolean): Self = StObject.set(x, "$isActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$isActiveUndefined: Self = StObject.set(x, "$isActive", js.undefined)
+      inline def set$isActiveUndefined: Self = StObject.set(x, "$isActive", js.undefined)
       
-      @scala.inline
-      def set$isCompleted(value: Boolean): Self = StObject.set(x, "$isCompleted", value.asInstanceOf[js.Any])
+      inline def set$isCompleted(value: Boolean): Self = StObject.set(x, "$isCompleted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$isCompletedUndefined: Self = StObject.set(x, "$isCompleted", js.undefined)
+      inline def set$isCompletedUndefined: Self = StObject.set(x, "$isCompleted", js.undefined)
     }
   }
 }

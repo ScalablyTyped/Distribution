@@ -11,10 +11,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createInterval[T](): IntervalConstructor[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createInterval")().asInstanceOf[IntervalConstructor[T]]
-  @scala.inline
-  def createInterval[T](compareValues: js.Function2[/* a */ T, /* b */ T, Double]): IntervalConstructor[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createInterval")(compareValues.asInstanceOf[js.Any]).asInstanceOf[IntervalConstructor[T]]
+  inline def createInterval[T](): IntervalConstructor[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createInterval")().asInstanceOf[IntervalConstructor[T]]
+  inline def createInterval[T](compareValues: js.Function2[/* a */ T, /* b */ T, Double]): IntervalConstructor[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createInterval")(compareValues.asInstanceOf[js.Any]).asInstanceOf[IntervalConstructor[T]]
   
   trait Endpoint[T] extends StObject {
     
@@ -26,23 +24,18 @@ object mod {
   }
   object Endpoint {
     
-    @scala.inline
-    def apply[T](finite: Boolean, inclusive: Boolean, value: T): Endpoint[T] = {
+    inline def apply[T](finite: Boolean, inclusive: Boolean, value: T): Endpoint[T] = {
       val __obj = js.Dynamic.literal(finite = finite.asInstanceOf[js.Any], inclusive = inclusive.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Endpoint[T]]
     }
     
-    @scala.inline
-    implicit class EndpointMutableBuilder[Self <: Endpoint[?], T] (val x: Self & Endpoint[T]) extends AnyVal {
+    extension [Self <: Endpoint[?], T](x: Self & Endpoint[T]) {
       
-      @scala.inline
-      def setFinite(value: Boolean): Self = StObject.set(x, "finite", value.asInstanceOf[js.Any])
+      inline def setFinite(value: Boolean): Self = StObject.set(x, "finite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInclusive(value: Boolean): Self = StObject.set(x, "inclusive", value.asInstanceOf[js.Any])
+      inline def setInclusive(value: Boolean): Self = StObject.set(x, "inclusive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -78,8 +71,7 @@ object mod {
   }
   object Interval {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       constructor: IntervalConstructor[Double],
       contains: T => Boolean,
       contiguousWith: Interval[T] => Boolean,
@@ -99,50 +91,35 @@ object mod {
       __obj.asInstanceOf[Interval[T]]
     }
     
-    @scala.inline
-    implicit class IntervalMutableBuilder[Self <: Interval[?], T] (val x: Self & Interval[T]) extends AnyVal {
+    extension [Self <: Interval[?], T](x: Self & Interval[T]) {
       
-      @scala.inline
-      def setConstructor(value: IntervalConstructor[Double]): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
+      inline def setConstructor(value: IntervalConstructor[Double]): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContains(value: T => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+      inline def setContains(value: T => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setContiguousWith(value: Interval[T] => Boolean): Self = StObject.set(x, "contiguousWith", js.Any.fromFunction1(value))
+      inline def setContiguousWith(value: Interval[T] => Boolean): Self = StObject.set(x, "contiguousWith", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEmpty(value: Boolean): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+      inline def setEmpty(value: Boolean): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEqualTo(value: Interval[T] => Boolean): Self = StObject.set(x, "equalTo", js.Any.fromFunction1(value))
+      inline def setEqualTo(value: Interval[T] => Boolean): Self = StObject.set(x, "equalTo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFrom(value: Endpoint[T]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: Endpoint[T]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromComparator(value: (Endpoint[T], Endpoint[T]) => Double): Self = StObject.set(x, "fromComparator", js.Any.fromFunction2(value))
+      inline def setFromComparator(value: (Endpoint[T], Endpoint[T]) => Double): Self = StObject.set(x, "fromComparator", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHull(value: Interval[T] => Interval[T]): Self = StObject.set(x, "hull", js.Any.fromFunction1(value))
+      inline def setHull(value: Interval[T] => Interval[T]): Self = StObject.set(x, "hull", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIntersection(value: Interval[T] => Boolean): Self = StObject.set(x, "intersection", js.Any.fromFunction1(value))
+      inline def setIntersection(value: Interval[T] => Boolean): Self = StObject.set(x, "intersection", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
+      inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSubsetOf(value: Interval[T] => Boolean): Self = StObject.set(x, "isSubsetOf", js.Any.fromFunction1(value))
+      inline def setIsSubsetOf(value: Interval[T] => Boolean): Self = StObject.set(x, "isSubsetOf", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTo(value: Endpoint[T]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: Endpoint[T]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToComparator(value: (Endpoint[T], Endpoint[T]) => Double): Self = StObject.set(x, "toComparator", js.Any.fromFunction2(value))
+      inline def setToComparator(value: (Endpoint[T], Endpoint[T]) => Double): Self = StObject.set(x, "toComparator", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUnify(value: Interval[T] => Interval[T]): Self = StObject.set(x, "unify", js.Any.fromFunction1(value))
+      inline def setUnify(value: Interval[T] => Interval[T]): Self = StObject.set(x, "unify", js.Any.fromFunction1(value))
     }
   }
   

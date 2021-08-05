@@ -92,10 +92,8 @@ object mod {
     def siphon(pipe: Fitting): Pipe = js.native
   }
   
-  @scala.inline
-  def create(pipesDefs: PipeDefMap): Bagpipes = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(pipesDefs.asInstanceOf[js.Any]).asInstanceOf[Bagpipes]
-  @scala.inline
-  def create(pipesDefs: PipeDefMap, conf: Config): Bagpipes = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(pipesDefs.asInstanceOf[js.Any], conf.asInstanceOf[js.Any])).asInstanceOf[Bagpipes]
+  inline def create(pipesDefs: PipeDefMap): Bagpipes = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(pipesDefs.asInstanceOf[js.Any]).asInstanceOf[Bagpipes]
+  inline def create(pipesDefs: PipeDefMap, conf: Config): Bagpipes = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(pipesDefs.asInstanceOf[js.Any], conf.asInstanceOf[js.Any])).asInstanceOf[Bagpipes]
   
   /* Rewritten from type alias, can be one of: 
     - typings.bagpipes.bagpipesStrings.hoist
@@ -104,11 +102,9 @@ object mod {
   trait Affinity extends StObject
   object Affinity {
     
-    @scala.inline
-    def hoist: typings.bagpipes.bagpipesStrings.hoist = "hoist".asInstanceOf[typings.bagpipes.bagpipesStrings.hoist]
+    inline def hoist: typings.bagpipes.bagpipesStrings.hoist = "hoist".asInstanceOf[typings.bagpipes.bagpipesStrings.hoist]
     
-    @scala.inline
-    def sink: typings.bagpipes.bagpipesStrings.sink = "sink".asInstanceOf[typings.bagpipes.bagpipesStrings.sink]
+    inline def sink: typings.bagpipes.bagpipesStrings.sink = "sink".asInstanceOf[typings.bagpipes.bagpipesStrings.sink]
   }
   
   trait Config
@@ -123,41 +119,30 @@ object mod {
   }
   object Config {
     
-    @scala.inline
-    def apply(): Config = {
+    inline def apply(): Config = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setConnectMiddlewareDirs(value: js.Array[String]): Self = StObject.set(x, "connectMiddlewareDirs", value.asInstanceOf[js.Any])
+      inline def setConnectMiddlewareDirs(value: js.Array[String]): Self = StObject.set(x, "connectMiddlewareDirs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectMiddlewareDirsUndefined: Self = StObject.set(x, "connectMiddlewareDirs", js.undefined)
+      inline def setConnectMiddlewareDirsUndefined: Self = StObject.set(x, "connectMiddlewareDirs", js.undefined)
       
-      @scala.inline
-      def setConnectMiddlewareDirsVarargs(value: String*): Self = StObject.set(x, "connectMiddlewareDirs", js.Array(value :_*))
+      inline def setConnectMiddlewareDirsVarargs(value: String*): Self = StObject.set(x, "connectMiddlewareDirs", js.Array(value :_*))
       
-      @scala.inline
-      def setUserFittingsDirs(value: js.Array[String]): Self = StObject.set(x, "userFittingsDirs", value.asInstanceOf[js.Any])
+      inline def setUserFittingsDirs(value: js.Array[String]): Self = StObject.set(x, "userFittingsDirs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserFittingsDirsUndefined: Self = StObject.set(x, "userFittingsDirs", js.undefined)
+      inline def setUserFittingsDirsUndefined: Self = StObject.set(x, "userFittingsDirs", js.undefined)
       
-      @scala.inline
-      def setUserFittingsDirsVarargs(value: String*): Self = StObject.set(x, "userFittingsDirs", js.Array(value :_*))
+      inline def setUserFittingsDirsVarargs(value: String*): Self = StObject.set(x, "userFittingsDirs", js.Array(value :_*))
       
-      @scala.inline
-      def setUserViewsDirs(value: js.Array[String]): Self = StObject.set(x, "userViewsDirs", value.asInstanceOf[js.Any])
+      inline def setUserViewsDirs(value: js.Array[String]): Self = StObject.set(x, "userViewsDirs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserViewsDirsUndefined: Self = StObject.set(x, "userViewsDirs", js.undefined)
+      inline def setUserViewsDirsUndefined: Self = StObject.set(x, "userViewsDirs", js.undefined)
       
-      @scala.inline
-      def setUserViewsDirsVarargs(value: String*): Self = StObject.set(x, "userViewsDirs", js.Array(value :_*))
+      inline def setUserViewsDirsVarargs(value: String*): Self = StObject.set(x, "userViewsDirs", js.Array(value :_*))
     }
   }
   
@@ -182,20 +167,16 @@ object mod {
   }
   object FittingContext {
     
-    @scala.inline
-    def apply(input: js.Any, output: js.Any): FittingContext = {
+    inline def apply(input: js.Any, output: js.Any): FittingContext = {
       val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any])
       __obj.asInstanceOf[FittingContext]
     }
     
-    @scala.inline
-    implicit class FittingContextMutableBuilder[Self <: FittingContext] (val x: Self) extends AnyVal {
+    extension [Self <: FittingContext](x: Self) {
       
-      @scala.inline
-      def setInput(value: js.Any): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: js.Any): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutput(value: js.Any): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: js.Any): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     }
   }
   
@@ -227,44 +208,32 @@ object mod {
   }
   object FittingDef {
     
-    @scala.inline
-    def apply(): FittingDef = {
+    inline def apply(): FittingDef = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FittingDef]
     }
     
-    @scala.inline
-    implicit class FittingDefMutableBuilder[Self <: FittingDef] (val x: Self) extends AnyVal {
+    extension [Self <: FittingDef](x: Self) {
       
-      @scala.inline
-      def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setInput(value: js.Any): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: js.Any): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+      inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOutput(value: js.Any): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: js.Any): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+      inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
       
-      @scala.inline
-      def setType(value: FittingType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: FittingType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -293,17 +262,14 @@ object mod {
   }
   object PipeworksOptions {
     
-    @scala.inline
-    def apply(affinity: Affinity): PipeworksOptions = {
+    inline def apply(affinity: Affinity): PipeworksOptions = {
       val __obj = js.Dynamic.literal(affinity = affinity.asInstanceOf[js.Any])
       __obj.asInstanceOf[PipeworksOptions]
     }
     
-    @scala.inline
-    implicit class PipeworksOptionsMutableBuilder[Self <: PipeworksOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PipeworksOptions](x: Self) {
       
-      @scala.inline
-      def setAffinity(value: Affinity): Self = StObject.set(x, "affinity", value.asInstanceOf[js.Any])
+      inline def setAffinity(value: Affinity): Self = StObject.set(x, "affinity", value.asInstanceOf[js.Any])
     }
   }
   

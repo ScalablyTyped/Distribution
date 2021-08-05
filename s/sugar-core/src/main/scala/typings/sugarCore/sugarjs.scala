@@ -346,65 +346,46 @@ object sugarjs {
   }
   object ExtendOptions {
     
-    @scala.inline
-    def apply(): ExtendOptions = {
+    inline def apply(): ExtendOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExtendOptions]
     }
     
-    @scala.inline
-    implicit class ExtendOptionsMutableBuilder[Self <: ExtendOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ExtendOptions](x: Self) {
       
-      @scala.inline
-      def setEnhance(value: Boolean): Self = StObject.set(x, "enhance", value.asInstanceOf[js.Any])
+      inline def setEnhance(value: Boolean): Self = StObject.set(x, "enhance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnhanceArray(value: Boolean): Self = StObject.set(x, "enhanceArray", value.asInstanceOf[js.Any])
+      inline def setEnhanceArray(value: Boolean): Self = StObject.set(x, "enhanceArray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnhanceArrayUndefined: Self = StObject.set(x, "enhanceArray", js.undefined)
+      inline def setEnhanceArrayUndefined: Self = StObject.set(x, "enhanceArray", js.undefined)
       
-      @scala.inline
-      def setEnhanceString(value: Boolean): Self = StObject.set(x, "enhanceString", value.asInstanceOf[js.Any])
+      inline def setEnhanceString(value: Boolean): Self = StObject.set(x, "enhanceString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnhanceStringUndefined: Self = StObject.set(x, "enhanceString", js.undefined)
+      inline def setEnhanceStringUndefined: Self = StObject.set(x, "enhanceString", js.undefined)
       
-      @scala.inline
-      def setEnhanceUndefined: Self = StObject.set(x, "enhance", js.undefined)
+      inline def setEnhanceUndefined: Self = StObject.set(x, "enhance", js.undefined)
       
-      @scala.inline
-      def setExcept(value: js.Array[String | NativeConstructor]): Self = StObject.set(x, "except", value.asInstanceOf[js.Any])
+      inline def setExcept(value: js.Array[String | NativeConstructor]): Self = StObject.set(x, "except", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExceptUndefined: Self = StObject.set(x, "except", js.undefined)
+      inline def setExceptUndefined: Self = StObject.set(x, "except", js.undefined)
       
-      @scala.inline
-      def setExceptVarargs(value: (String | NativeConstructor)*): Self = StObject.set(x, "except", js.Array(value :_*))
+      inline def setExceptVarargs(value: (String | NativeConstructor)*): Self = StObject.set(x, "except", js.Array(value :_*))
       
-      @scala.inline
-      def setMethods(value: js.Array[String]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      inline def setMethods(value: js.Array[String]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
+      inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
       
-      @scala.inline
-      def setMethodsVarargs(value: String*): Self = StObject.set(x, "methods", js.Array(value :_*))
+      inline def setMethodsVarargs(value: String*): Self = StObject.set(x, "methods", js.Array(value :_*))
       
-      @scala.inline
-      def setNamespaces(value: js.Array[NativeConstructor]): Self = StObject.set(x, "namespaces", value.asInstanceOf[js.Any])
+      inline def setNamespaces(value: js.Array[NativeConstructor]): Self = StObject.set(x, "namespaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespacesUndefined: Self = StObject.set(x, "namespaces", js.undefined)
+      inline def setNamespacesUndefined: Self = StObject.set(x, "namespaces", js.undefined)
       
-      @scala.inline
-      def setNamespacesVarargs(value: NativeConstructor*): Self = StObject.set(x, "namespaces", js.Array(value :_*))
+      inline def setNamespacesVarargs(value: NativeConstructor*): Self = StObject.set(x, "namespaces", js.Array(value :_*))
       
-      @scala.inline
-      def setObjectPrototype(value: Boolean): Self = StObject.set(x, "objectPrototype", value.asInstanceOf[js.Any])
+      inline def setObjectPrototype(value: Boolean): Self = StObject.set(x, "objectPrototype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectPrototypeUndefined: Self = StObject.set(x, "objectPrototype", js.undefined)
+      inline def setObjectPrototypeUndefined: Self = StObject.set(x, "objectPrototype", js.undefined)
     }
   }
   
@@ -474,17 +455,14 @@ object sugarjs {
     }
     object ChainableBase {
       
-      @scala.inline
-      def apply[RawValue](raw: RawValue): ChainableBase[RawValue] = {
+      inline def apply[RawValue](raw: RawValue): ChainableBase[RawValue] = {
         val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
         __obj.asInstanceOf[ChainableBase[RawValue]]
       }
       
-      @scala.inline
-      implicit class ChainableBaseMutableBuilder[Self <: ChainableBase[?], RawValue] (val x: Self & ChainableBase[RawValue]) extends AnyVal {
+      extension [Self <: ChainableBase[?], RawValue](x: Self & ChainableBase[RawValue]) {
         
-        @scala.inline
-        def setRaw(value: RawValue): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+        inline def setRaw(value: RawValue): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -497,8 +475,7 @@ object sugarjs {
          with ChainableBase[RawValue]
     object Chainable {
       
-      @scala.inline
-      def apply[RawValue](
+      inline def apply[RawValue](
         exec: String => SugarDefaultChainable[RegExpExecArray | Null],
         raw: RawValue,
         test: String => SugarDefaultChainable[Boolean]
@@ -518,8 +495,7 @@ object sugarjs {
     }
     object ChainableBase {
       
-      @scala.inline
-      def apply[RawValue](
+      inline def apply[RawValue](
         exec: String => SugarDefaultChainable[RegExpExecArray | Null],
         raw: RawValue,
         test: String => SugarDefaultChainable[Boolean]
@@ -528,17 +504,13 @@ object sugarjs {
         __obj.asInstanceOf[ChainableBase[RawValue]]
       }
       
-      @scala.inline
-      implicit class ChainableBaseMutableBuilder[Self <: ChainableBase[?], RawValue] (val x: Self & ChainableBase[RawValue]) extends AnyVal {
+      extension [Self <: ChainableBase[?], RawValue](x: Self & ChainableBase[RawValue]) {
         
-        @scala.inline
-        def setExec(value: String => SugarDefaultChainable[RegExpExecArray | Null]): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
+        inline def setExec(value: String => SugarDefaultChainable[RegExpExecArray | Null]): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setRaw(value: RawValue): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+        inline def setRaw(value: RawValue): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTest(value: String => SugarDefaultChainable[Boolean]): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
+        inline def setTest(value: String => SugarDefaultChainable[Boolean]): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
       }
     }
   }

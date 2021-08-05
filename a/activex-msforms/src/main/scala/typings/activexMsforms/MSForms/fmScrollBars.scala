@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait fmScrollBars extends StObject
 object fmScrollBars {
   
-  @scala.inline
-  def fmScrollBarsBoth: `3` = 3.asInstanceOf[`3`]
+  inline def fmScrollBarsBoth: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def fmScrollBarsHorizontal: `1` = 1.asInstanceOf[`1`]
+  inline def fmScrollBarsHorizontal: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def fmScrollBarsNone: `0` = 0.asInstanceOf[`0`]
+  inline def fmScrollBarsNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def fmScrollBarsVertical: `2` = 2.asInstanceOf[`2`]
+  inline def fmScrollBarsVertical: `2` = 2.asInstanceOf[`2`]
 }

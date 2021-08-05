@@ -11,6 +11,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def pbkdf2(password: BytesLike, salt: BytesLike, iterations: Double, keylen: Double, hashAlgorithm: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keylen.asInstanceOf[js.Any], hashAlgorithm.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def pbkdf2(password: BytesLike, salt: BytesLike, iterations: Double, keylen: Double, hashAlgorithm: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pbkdf2")(password.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], iterations.asInstanceOf[js.Any], keylen.asInstanceOf[js.Any], hashAlgorithm.asInstanceOf[js.Any])).asInstanceOf[String]
 }

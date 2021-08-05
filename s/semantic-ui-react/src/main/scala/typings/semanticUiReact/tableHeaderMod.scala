@@ -34,44 +34,32 @@ object tableHeaderMod extends Shortcut {
   }
   object StrictTableHeaderProps {
     
-    @scala.inline
-    def apply(): StrictTableHeaderProps = {
+    inline def apply(): StrictTableHeaderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictTableHeaderProps]
     }
     
-    @scala.inline
-    implicit class StrictTableHeaderPropsMutableBuilder[Self <: StrictTableHeaderProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictTableHeaderProps](x: Self) {
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setContent(value: SemanticShorthandContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: SemanticShorthandContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setFullWidth(value: Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
+      inline def setFullWidth(value: Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
+      inline def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
     }
   }
   
@@ -81,8 +69,7 @@ object tableHeaderMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object TableHeaderProps {
     
-    @scala.inline
-    def apply(): TableHeaderProps = {
+    inline def apply(): TableHeaderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TableHeaderProps]
     }

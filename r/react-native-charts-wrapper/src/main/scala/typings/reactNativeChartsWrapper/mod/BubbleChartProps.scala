@@ -12,19 +12,15 @@ trait BubbleChartProps
 }
 object BubbleChartProps {
   
-  @scala.inline
-  def apply(): BubbleChartProps = {
+  inline def apply(): BubbleChartProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BubbleChartProps]
   }
   
-  @scala.inline
-  implicit class BubbleChartPropsMutableBuilder[Self <: BubbleChartProps] (val x: Self) extends AnyVal {
+  extension [Self <: BubbleChartProps](x: Self) {
     
-    @scala.inline
-    def setData(value: BubbleData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: BubbleData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

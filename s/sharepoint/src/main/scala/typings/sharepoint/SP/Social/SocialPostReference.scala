@@ -26,8 +26,7 @@ trait SocialPostReference
 }
 object SocialPostReference {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -42,19 +41,14 @@ object SocialPostReference {
     __obj.asInstanceOf[SocialPostReference]
   }
   
-  @scala.inline
-  implicit class SocialPostReferenceMutableBuilder[Self <: SocialPostReference] (val x: Self) extends AnyVal {
+  extension [Self <: SocialPostReference](x: Self) {
     
-    @scala.inline
-    def setGet_digest(value: () => SocialThread): Self = StObject.set(x, "get_digest", js.Any.fromFunction0(value))
+    inline def setGet_digest(value: () => SocialThread): Self = StObject.set(x, "get_digest", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_post(value: () => SocialPost): Self = StObject.set(x, "get_post", js.Any.fromFunction0(value))
+    inline def setGet_post(value: () => SocialPost): Self = StObject.set(x, "get_post", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_threadId(value: () => String): Self = StObject.set(x, "get_threadId", js.Any.fromFunction0(value))
+    inline def setGet_threadId(value: () => String): Self = StObject.set(x, "get_threadId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_threadOwnerIndex(value: () => Double): Self = StObject.set(x, "get_threadOwnerIndex", js.Any.fromFunction0(value))
+    inline def setGet_threadOwnerIndex(value: () => Double): Self = StObject.set(x, "get_threadOwnerIndex", js.Any.fromFunction0(value))
   }
 }

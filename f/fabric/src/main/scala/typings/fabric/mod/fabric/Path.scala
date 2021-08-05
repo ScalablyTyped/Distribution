@@ -34,8 +34,7 @@ object Path {
   @JSImport("fabric", "fabric.Path.ATTRIBUTE_NAMES")
   @js.native
   def ATTRIBUTE_NAMES: js.Array[String] = js.native
-  @scala.inline
-  def ATTRIBUTE_NAMES_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ATTRIBUTE_NAMES")(x.asInstanceOf[js.Any])
+  inline def ATTRIBUTE_NAMES_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ATTRIBUTE_NAMES")(x.asInstanceOf[js.Any])
   
   /**
     * Creates an instance of fabric.Path from an SVG <path> element
@@ -43,15 +42,12 @@ object Path {
     * @param callback Callback to invoke when an fabric.Path instance is created
     * @param [options] Options object
     */
-  @scala.inline
-  def fromElement(element: SVGElement, callback: js.Function): typings.fabric.fabricImplMod.Path = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Path]
-  @scala.inline
-  def fromElement(element: SVGElement, callback: js.Function, options: IPathOptions): typings.fabric.fabricImplMod.Path = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Path]
+  inline def fromElement(element: SVGElement, callback: js.Function): typings.fabric.fabricImplMod.Path = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Path]
+  inline def fromElement(element: SVGElement, callback: js.Function, options: IPathOptions): typings.fabric.fabricImplMod.Path = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Path]
   
   /**
     * Creates an instance of fabric.Path from an object
     * @param callback Callback to invoke when an fabric.Path instance is created
     */
-  @scala.inline
-  def fromObject(`object`: js.Any, callback: js.Function): typings.fabric.fabricImplMod.Path = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Path]
+  inline def fromObject(`object`: js.Any, callback: js.Function): typings.fabric.fabricImplMod.Path = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Path]
 }

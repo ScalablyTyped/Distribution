@@ -27,8 +27,7 @@ object Meteor {
   }
   object Connection {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clientAddress: String,
       close: js.Function,
       httpHeaders: js.Object,
@@ -39,23 +38,17 @@ object Meteor {
       __obj.asInstanceOf[Connection]
     }
     
-    @scala.inline
-    implicit class ConnectionMutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
+    extension [Self <: Connection](x: Self) {
       
-      @scala.inline
-      def setClientAddress(value: String): Self = StObject.set(x, "clientAddress", value.asInstanceOf[js.Any])
+      inline def setClientAddress(value: String): Self = StObject.set(x, "clientAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClose(value: js.Function): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+      inline def setClose(value: js.Function): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpHeaders(value: js.Object): Self = StObject.set(x, "httpHeaders", value.asInstanceOf[js.Any])
+      inline def setHttpHeaders(value: js.Object): Self = StObject.set(x, "httpHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClose(value: js.Function): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
+      inline def setOnClose(value: js.Function): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
     }
   }
   
@@ -69,29 +62,22 @@ object Meteor {
   }
   object Error {
     
-    @scala.inline
-    def apply(error: String | Double): Error = {
+    inline def apply(error: String | Double): Error = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[Error]
     }
     
-    @scala.inline
-    implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+    extension [Self <: Error](x: Self) {
       
-      @scala.inline
-      def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+      inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
       
-      @scala.inline
-      def setError(value: String | Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String | Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+      inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     }
   }
   
@@ -133,8 +119,7 @@ object Meteor {
   }
   object Event {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       currentTarget: HTMLElement,
       isDefaultPrevented: () => Boolean,
       isImmediatePropagationStopped: () => Boolean,
@@ -151,38 +136,27 @@ object Meteor {
       __obj.asInstanceOf[Event]
     }
     
-    @scala.inline
-    implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+    extension [Self <: Event](x: Self) {
       
-      @scala.inline
-      def setCurrentTarget(value: HTMLElement): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+      inline def setCurrentTarget(value: HTMLElement): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
+      inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsImmediatePropagationStopped(value: () => Boolean): Self = StObject.set(x, "isImmediatePropagationStopped", js.Any.fromFunction0(value))
+      inline def setIsImmediatePropagationStopped(value: () => Boolean): Self = StObject.set(x, "isImmediatePropagationStopped", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsPropagationStopped(value: () => Boolean): Self = StObject.set(x, "isPropagationStopped", js.Any.fromFunction0(value))
+      inline def setIsPropagationStopped(value: () => Boolean): Self = StObject.set(x, "isPropagationStopped", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+      inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStopImmediatePropagation(value: () => Unit): Self = StObject.set(x, "stopImmediatePropagation", js.Any.fromFunction0(value))
+      inline def setStopImmediatePropagation(value: () => Unit): Self = StObject.set(x, "stopImmediatePropagation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
+      inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhich(value: Double): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
+      inline def setWhich(value: Double): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
     }
   }
   
@@ -204,17 +178,14 @@ object Meteor {
   }
   object LiveQueryHandle {
     
-    @scala.inline
-    def apply(stop: () => Unit): LiveQueryHandle = {
+    inline def apply(stop: () => Unit): LiveQueryHandle = {
       val __obj = js.Dynamic.literal(stop = js.Any.fromFunction0(stop))
       __obj.asInstanceOf[LiveQueryHandle]
     }
     
-    @scala.inline
-    implicit class LiveQueryHandleMutableBuilder[Self <: LiveQueryHandle] (val x: Self) extends AnyVal {
+    extension [Self <: LiveQueryHandle](x: Self) {
       
-      @scala.inline
-      def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     }
   }
   
@@ -230,8 +201,7 @@ object Meteor {
   }
   object LocalStorage {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _data: js.Any,
       getItem: js.Any => js.Any,
       removeItem: js.Any => Unit,
@@ -241,20 +211,15 @@ object Meteor {
       __obj.asInstanceOf[LocalStorage]
     }
     
-    @scala.inline
-    implicit class LocalStorageMutableBuilder[Self <: LocalStorage] (val x: Self) extends AnyVal {
+    extension [Self <: LocalStorage](x: Self) {
       
-      @scala.inline
-      def setGetItem(value: js.Any => js.Any): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
+      inline def setGetItem(value: js.Any => js.Any): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveItem(value: js.Any => Unit): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
+      inline def setRemoveItem(value: js.Any => Unit): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetItem(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "setItem", js.Any.fromFunction2(value))
+      inline def setSetItem(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "setItem", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set_data(value: js.Any): Self = StObject.set(x, "_data", value.asInstanceOf[js.Any])
+      inline def set_data(value: js.Any): Self = StObject.set(x, "_data", value.asInstanceOf[js.Any])
     }
   }
   
@@ -277,59 +242,42 @@ object Meteor {
   }
   object LoginWithExternalServiceOptions {
     
-    @scala.inline
-    def apply(): LoginWithExternalServiceOptions = {
+    inline def apply(): LoginWithExternalServiceOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoginWithExternalServiceOptions]
     }
     
-    @scala.inline
-    implicit class LoginWithExternalServiceOptionsMutableBuilder[Self <: LoginWithExternalServiceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LoginWithExternalServiceOptions](x: Self) {
       
-      @scala.inline
-      def setForceApprovalPrompt(value: Boolean): Self = StObject.set(x, "forceApprovalPrompt", value.asInstanceOf[js.Any])
+      inline def setForceApprovalPrompt(value: Boolean): Self = StObject.set(x, "forceApprovalPrompt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceApprovalPromptUndefined: Self = StObject.set(x, "forceApprovalPrompt", js.undefined)
+      inline def setForceApprovalPromptUndefined: Self = StObject.set(x, "forceApprovalPrompt", js.undefined)
       
-      @scala.inline
-      def setLoginHint(value: String): Self = StObject.set(x, "loginHint", value.asInstanceOf[js.Any])
+      inline def setLoginHint(value: String): Self = StObject.set(x, "loginHint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoginHintUndefined: Self = StObject.set(x, "loginHint", js.undefined)
+      inline def setLoginHintUndefined: Self = StObject.set(x, "loginHint", js.undefined)
       
-      @scala.inline
-      def setLoginStyle(value: String): Self = StObject.set(x, "loginStyle", value.asInstanceOf[js.Any])
+      inline def setLoginStyle(value: String): Self = StObject.set(x, "loginStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoginStyleUndefined: Self = StObject.set(x, "loginStyle", js.undefined)
+      inline def setLoginStyleUndefined: Self = StObject.set(x, "loginStyle", js.undefined)
       
-      @scala.inline
-      def setLoginUrlParameters(value: js.Object): Self = StObject.set(x, "loginUrlParameters", value.asInstanceOf[js.Any])
+      inline def setLoginUrlParameters(value: js.Object): Self = StObject.set(x, "loginUrlParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoginUrlParametersUndefined: Self = StObject.set(x, "loginUrlParameters", js.undefined)
+      inline def setLoginUrlParametersUndefined: Self = StObject.set(x, "loginUrlParameters", js.undefined)
       
-      @scala.inline
-      def setRedirectUrl(value: String): Self = StObject.set(x, "redirectUrl", value.asInstanceOf[js.Any])
+      inline def setRedirectUrl(value: String): Self = StObject.set(x, "redirectUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectUrlUndefined: Self = StObject.set(x, "redirectUrl", js.undefined)
+      inline def setRedirectUrlUndefined: Self = StObject.set(x, "redirectUrl", js.undefined)
       
-      @scala.inline
-      def setRequestOfflineToken(value: Boolean): Self = StObject.set(x, "requestOfflineToken", value.asInstanceOf[js.Any])
+      inline def setRequestOfflineToken(value: Boolean): Self = StObject.set(x, "requestOfflineToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestOfflineTokenUndefined: Self = StObject.set(x, "requestOfflineToken", js.undefined)
+      inline def setRequestOfflineTokenUndefined: Self = StObject.set(x, "requestOfflineToken", js.undefined)
       
-      @scala.inline
-      def setRequestPermissions(value: js.Array[String]): Self = StObject.set(x, "requestPermissions", value.asInstanceOf[js.Any])
+      inline def setRequestPermissions(value: js.Array[String]): Self = StObject.set(x, "requestPermissions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestPermissionsUndefined: Self = StObject.set(x, "requestPermissions", js.undefined)
+      inline def setRequestPermissionsUndefined: Self = StObject.set(x, "requestPermissions", js.undefined)
       
-      @scala.inline
-      def setRequestPermissionsVarargs(value: String*): Self = StObject.set(x, "requestPermissions", js.Array(value :_*))
+      inline def setRequestPermissionsVarargs(value: String*): Self = StObject.set(x, "requestPermissions", js.Array(value :_*))
     }
   }
   
@@ -343,17 +291,14 @@ object Meteor {
   }
   object Settings {
     
-    @scala.inline
-    def apply(public: StringDictionary[js.Any]): Settings = {
+    inline def apply(public: StringDictionary[js.Any]): Settings = {
       val __obj = js.Dynamic.literal(public = public.asInstanceOf[js.Any])
       __obj.asInstanceOf[Settings]
     }
     
-    @scala.inline
-    implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
+    extension [Self <: Settings](x: Self) {
       
-      @scala.inline
-      def setPublic(value: StringDictionary[js.Any]): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+      inline def setPublic(value: StringDictionary[js.Any]): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
     }
   }
   
@@ -367,20 +312,16 @@ object Meteor {
   }
   object SubscriptionHandle {
     
-    @scala.inline
-    def apply(ready: () => Boolean, stop: () => Unit): SubscriptionHandle = {
+    inline def apply(ready: () => Boolean, stop: () => Unit): SubscriptionHandle = {
       val __obj = js.Dynamic.literal(ready = js.Any.fromFunction0(ready), stop = js.Any.fromFunction0(stop))
       __obj.asInstanceOf[SubscriptionHandle]
     }
     
-    @scala.inline
-    implicit class SubscriptionHandleMutableBuilder[Self <: SubscriptionHandle] (val x: Self) extends AnyVal {
+    extension [Self <: SubscriptionHandle](x: Self) {
       
-      @scala.inline
-      def setReady(value: () => Boolean): Self = StObject.set(x, "ready", js.Any.fromFunction0(value))
+      inline def setReady(value: () => Boolean): Self = StObject.set(x, "ready", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     }
   }
   
@@ -400,53 +341,38 @@ object Meteor {
   }
   object User {
     
-    @scala.inline
-    def apply(): User = {
+    inline def apply(): User = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[User]
     }
     
-    @scala.inline
-    implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
+    extension [Self <: User](x: Self) {
       
-      @scala.inline
-      def setCreatedAt(value: Double): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+      inline def setCreatedAt(value: Double): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
+      inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
       
-      @scala.inline
-      def setEmails(value: js.Array[UserEmail]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
+      inline def setEmails(value: js.Array[UserEmail]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailsUndefined: Self = StObject.set(x, "emails", js.undefined)
+      inline def setEmailsUndefined: Self = StObject.set(x, "emails", js.undefined)
       
-      @scala.inline
-      def setEmailsVarargs(value: UserEmail*): Self = StObject.set(x, "emails", js.Array(value :_*))
+      inline def setEmailsVarargs(value: UserEmail*): Self = StObject.set(x, "emails", js.Array(value :_*))
       
-      @scala.inline
-      def setProfile(value: js.Any): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+      inline def setProfile(value: js.Any): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
+      inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
       
-      @scala.inline
-      def setServices(value: js.Any): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+      inline def setServices(value: js.Any): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
+      inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
       
-      @scala.inline
-      def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+      inline def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_idUndefined: Self = StObject.set(x, "_id", js.undefined)
+      inline def set_idUndefined: Self = StObject.set(x, "_id", js.undefined)
     }
   }
   
@@ -460,20 +386,16 @@ object Meteor {
   }
   object UserEmail {
     
-    @scala.inline
-    def apply(address: String, verified: Boolean): UserEmail = {
+    inline def apply(address: String, verified: Boolean): UserEmail = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], verified = verified.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserEmail]
     }
     
-    @scala.inline
-    implicit class UserEmailMutableBuilder[Self <: UserEmail] (val x: Self) extends AnyVal {
+    extension [Self <: UserEmail](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerified(value: Boolean): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
+      inline def setVerified(value: Boolean): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
     }
   }
 }

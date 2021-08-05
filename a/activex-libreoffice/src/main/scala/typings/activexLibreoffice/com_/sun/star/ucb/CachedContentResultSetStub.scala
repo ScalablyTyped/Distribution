@@ -30,8 +30,7 @@ trait CachedContentResultSetStub
      with XFetchProviderForContentAccess
 object CachedContentResultSetStub {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CursorName: String,
     CursorTravelMode: Double,
     FetchDirection: Double,

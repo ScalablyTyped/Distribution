@@ -12,16 +12,13 @@ trait ActivitySensorReadingChangeReport extends StObject {
 }
 object ActivitySensorReadingChangeReport {
   
-  @scala.inline
-  def apply(reading: ActivitySensorReading): ActivitySensorReadingChangeReport = {
+  inline def apply(reading: ActivitySensorReading): ActivitySensorReadingChangeReport = {
     val __obj = js.Dynamic.literal(reading = reading.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivitySensorReadingChangeReport]
   }
   
-  @scala.inline
-  implicit class ActivitySensorReadingChangeReportMutableBuilder[Self <: ActivitySensorReadingChangeReport] (val x: Self) extends AnyVal {
+  extension [Self <: ActivitySensorReadingChangeReport](x: Self) {
     
-    @scala.inline
-    def setReading(value: ActivitySensorReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
+    inline def setReading(value: ActivitySensorReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
   }
 }

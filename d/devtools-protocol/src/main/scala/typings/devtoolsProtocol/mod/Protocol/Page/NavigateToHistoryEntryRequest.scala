@@ -14,16 +14,13 @@ trait NavigateToHistoryEntryRequest extends StObject {
 }
 object NavigateToHistoryEntryRequest {
   
-  @scala.inline
-  def apply(entryId: integer): NavigateToHistoryEntryRequest = {
+  inline def apply(entryId: integer): NavigateToHistoryEntryRequest = {
     val __obj = js.Dynamic.literal(entryId = entryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[NavigateToHistoryEntryRequest]
   }
   
-  @scala.inline
-  implicit class NavigateToHistoryEntryRequestMutableBuilder[Self <: NavigateToHistoryEntryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: NavigateToHistoryEntryRequest](x: Self) {
     
-    @scala.inline
-    def setEntryId(value: integer): Self = StObject.set(x, "entryId", value.asInstanceOf[js.Any])
+    inline def setEntryId(value: integer): Self = StObject.set(x, "entryId", value.asInstanceOf[js.Any])
   }
 }

@@ -35,8 +35,7 @@ trait XBroadcaster
 }
 object XBroadcaster {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     lockBroadcasts: () => Unit,
     queryInterface: `type` => js.Any,
@@ -47,13 +46,10 @@ object XBroadcaster {
     __obj.asInstanceOf[XBroadcaster]
   }
   
-  @scala.inline
-  implicit class XBroadcasterMutableBuilder[Self <: XBroadcaster] (val x: Self) extends AnyVal {
+  extension [Self <: XBroadcaster](x: Self) {
     
-    @scala.inline
-    def setLockBroadcasts(value: () => Unit): Self = StObject.set(x, "lockBroadcasts", js.Any.fromFunction0(value))
+    inline def setLockBroadcasts(value: () => Unit): Self = StObject.set(x, "lockBroadcasts", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUnlockBroadcasts(value: () => Unit): Self = StObject.set(x, "unlockBroadcasts", js.Any.fromFunction0(value))
+    inline def setUnlockBroadcasts(value: () => Unit): Self = StObject.set(x, "unlockBroadcasts", js.Any.fromFunction0(value))
   }
 }

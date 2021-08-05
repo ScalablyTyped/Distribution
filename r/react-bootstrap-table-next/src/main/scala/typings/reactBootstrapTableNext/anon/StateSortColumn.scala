@@ -10,16 +10,13 @@ trait StateSortColumn[T /* <: js.Object */] extends StObject {
 }
 object StateSortColumn {
   
-  @scala.inline
-  def apply[T /* <: js.Object */](state: SortColumn[T]): StateSortColumn[T] = {
+  inline def apply[T /* <: js.Object */](state: SortColumn[T]): StateSortColumn[T] = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateSortColumn[T]]
   }
   
-  @scala.inline
-  implicit class StateSortColumnMutableBuilder[Self <: StateSortColumn[?], T /* <: js.Object */] (val x: Self & StateSortColumn[T]) extends AnyVal {
+  extension [Self <: StateSortColumn[?], T /* <: js.Object */](x: Self & StateSortColumn[T]) {
     
-    @scala.inline
-    def setState(value: SortColumn[T]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: SortColumn[T]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

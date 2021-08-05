@@ -12,8 +12,7 @@ object injectWrapperMethodMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def injectWrapperMethod(
+  inline def injectWrapperMethod(
     wrapper: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]],
     methodName: String,
     fn: js.Function0[Unit]

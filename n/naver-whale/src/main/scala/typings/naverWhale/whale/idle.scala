@@ -23,14 +23,11 @@ object idle {
   trait IdleState extends StObject
   object IdleState {
     
-    @scala.inline
-    def active: typings.naverWhale.naverWhaleStrings.active = "active".asInstanceOf[typings.naverWhale.naverWhaleStrings.active]
+    inline def active: typings.naverWhale.naverWhaleStrings.active = "active".asInstanceOf[typings.naverWhale.naverWhaleStrings.active]
     
-    @scala.inline
-    def idle: typings.naverWhale.naverWhaleStrings.idle = "idle".asInstanceOf[typings.naverWhale.naverWhaleStrings.idle]
+    inline def idle: typings.naverWhale.naverWhaleStrings.idle = "idle".asInstanceOf[typings.naverWhale.naverWhaleStrings.idle]
     
-    @scala.inline
-    def locked: typings.naverWhale.naverWhaleStrings.locked = "locked".asInstanceOf[typings.naverWhale.naverWhaleStrings.locked]
+    inline def locked: typings.naverWhale.naverWhaleStrings.locked = "locked".asInstanceOf[typings.naverWhale.naverWhaleStrings.locked]
   }
   
   type IdleStateChangedEvent = Event[js.Function1[/* newState */ typings.chrome.chrome.idle.IdleState, Unit]]

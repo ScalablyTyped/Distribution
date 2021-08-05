@@ -10,19 +10,15 @@ trait ThemedComponentProps extends StObject {
 }
 object ThemedComponentProps {
   
-  @scala.inline
-  def apply(): ThemedComponentProps = {
+  inline def apply(): ThemedComponentProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThemedComponentProps]
   }
   
-  @scala.inline
-  implicit class ThemedComponentPropsMutableBuilder[Self <: ThemedComponentProps] (val x: Self) extends AnyVal {
+  extension [Self <: ThemedComponentProps](x: Self) {
     
-    @scala.inline
-    def setTheme(value: InspectorTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: InspectorTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

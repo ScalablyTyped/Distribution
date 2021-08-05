@@ -28,24 +28,20 @@ object GRAPHICS_CURVES {
   @JSImport("pixi.js", "GRAPHICS_CURVES.adaptive")
   @js.native
   def adaptive: Boolean = js.native
-  @scala.inline
-  def adaptive_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("adaptive")(x.asInstanceOf[js.Any])
+  inline def adaptive_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("adaptive")(x.asInstanceOf[js.Any])
   
   @JSImport("pixi.js", "GRAPHICS_CURVES.maxLength")
   @js.native
   def maxLength: Double = js.native
-  @scala.inline
-  def maxLength_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxLength")(x.asInstanceOf[js.Any])
+  inline def maxLength_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxLength")(x.asInstanceOf[js.Any])
   
   @JSImport("pixi.js", "GRAPHICS_CURVES.maxSegments")
   @js.native
   def maxSegments: Double = js.native
-  @scala.inline
-  def maxSegments_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxSegments")(x.asInstanceOf[js.Any])
+  inline def maxSegments_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxSegments")(x.asInstanceOf[js.Any])
   
   @JSImport("pixi.js", "GRAPHICS_CURVES.minSegments")
   @js.native
   def minSegments: Double = js.native
-  @scala.inline
-  def minSegments_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minSegments")(x.asInstanceOf[js.Any])
+  inline def minSegments_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minSegments")(x.asInstanceOf[js.Any])
 }

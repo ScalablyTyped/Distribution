@@ -18,8 +18,7 @@ object codepipelineCloudwatchMod {
   trait CodePipelineCloudWatchEvent extends StObject
   object CodePipelineCloudWatchEvent {
     
-    @scala.inline
-    def CodePipelineCloudWatchActionEvent(
+    inline def CodePipelineCloudWatchActionEvent(
       account: String,
       detail: Executionid,
       id: String,
@@ -33,8 +32,7 @@ object codepipelineCloudwatchMod {
       __obj.asInstanceOf[typings.awsLambda.codepipelineCloudwatchActionMod.CodePipelineCloudWatchActionEvent]
     }
     
-    @scala.inline
-    def CodePipelineCloudWatchPipelineEvent(
+    inline def CodePipelineCloudWatchPipelineEvent(
       account: String,
       detail: Pipeline,
       id: String,
@@ -48,8 +46,7 @@ object codepipelineCloudwatchMod {
       __obj.asInstanceOf[typings.awsLambda.codepipelineCloudwatchPipelineMod.CodePipelineCloudWatchPipelineEvent]
     }
     
-    @scala.inline
-    def CodePipelineCloudWatchStageEvent(
+    inline def CodePipelineCloudWatchStageEvent(
       account: String,
       detail: Stage,
       id: String,

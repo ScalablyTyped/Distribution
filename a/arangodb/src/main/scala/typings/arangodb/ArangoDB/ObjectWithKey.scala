@@ -14,16 +14,13 @@ trait ObjectWithKey
 }
 object ObjectWithKey {
   
-  @scala.inline
-  def apply(_key: String): ObjectWithKey = {
+  inline def apply(_key: String): ObjectWithKey = {
     val __obj = js.Dynamic.literal(_key = _key.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectWithKey]
   }
   
-  @scala.inline
-  implicit class ObjectWithKeyMutableBuilder[Self <: ObjectWithKey] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectWithKey](x: Self) {
     
-    @scala.inline
-    def set_key(value: String): Self = StObject.set(x, "_key", value.asInstanceOf[js.Any])
+    inline def set_key(value: String): Self = StObject.set(x, "_key", value.asInstanceOf[js.Any])
   }
 }

@@ -30,68 +30,48 @@ object configMod {
   }
   object Config {
     
-    @scala.inline
-    def apply(): Config = {
+    inline def apply(): Config = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setAssumeUpToDate(value: Boolean): Self = StObject.set(x, "assumeUpToDate", value.asInstanceOf[js.Any])
+      inline def setAssumeUpToDate(value: Boolean): Self = StObject.set(x, "assumeUpToDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssumeUpToDateUndefined: Self = StObject.set(x, "assumeUpToDate", js.undefined)
+      inline def setAssumeUpToDateUndefined: Self = StObject.set(x, "assumeUpToDate", js.undefined)
       
-      @scala.inline
-      def setAutoKeyEnabled(value: Boolean): Self = StObject.set(x, "autoKeyEnabled", value.asInstanceOf[js.Any])
+      inline def setAutoKeyEnabled(value: Boolean): Self = StObject.set(x, "autoKeyEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoKeyEnabledUndefined: Self = StObject.set(x, "autoKeyEnabled", js.undefined)
+      inline def setAutoKeyEnabledUndefined: Self = StObject.set(x, "autoKeyEnabled", js.undefined)
       
-      @scala.inline
-      def setCheckUpToDate(value: Boolean): Self = StObject.set(x, "checkUpToDate", value.asInstanceOf[js.Any])
+      inline def setCheckUpToDate(value: Boolean): Self = StObject.set(x, "checkUpToDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckUpToDateUndefined: Self = StObject.set(x, "checkUpToDate", js.undefined)
+      inline def setCheckUpToDateUndefined: Self = StObject.set(x, "checkUpToDate", js.undefined)
       
-      @scala.inline
-      def setEscapeAtTags(value: Boolean): Self = StObject.set(x, "escapeAtTags", value.asInstanceOf[js.Any])
+      inline def setEscapeAtTags(value: Boolean): Self = StObject.set(x, "escapeAtTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeAtTagsUndefined: Self = StObject.set(x, "escapeAtTags", js.undefined)
+      inline def setEscapeAtTagsUndefined: Self = StObject.set(x, "escapeAtTags", js.undefined)
       
-      @scala.inline
-      def setIgnoreUnrecognizedTags(value: Boolean): Self = StObject.set(x, "ignoreUnrecognizedTags", value.asInstanceOf[js.Any])
+      inline def setIgnoreUnrecognizedTags(value: Boolean): Self = StObject.set(x, "ignoreUnrecognizedTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUnrecognizedTagsUndefined: Self = StObject.set(x, "ignoreUnrecognizedTags", js.undefined)
+      inline def setIgnoreUnrecognizedTagsUndefined: Self = StObject.set(x, "ignoreUnrecognizedTags", js.undefined)
       
-      @scala.inline
-      def setOutput(value: vdom | html): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: vdom | html): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+      inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
       
-      @scala.inline
-      def setPreserveWhitespace(value: Boolean): Self = StObject.set(x, "preserveWhitespace", value.asInstanceOf[js.Any])
+      inline def setPreserveWhitespace(value: Boolean): Self = StObject.set(x, "preserveWhitespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveWhitespaceUndefined: Self = StObject.set(x, "preserveWhitespace", js.undefined)
+      inline def setPreserveWhitespaceUndefined: Self = StObject.set(x, "preserveWhitespace", js.undefined)
       
-      @scala.inline
-      def setWriteToDisk(value: Boolean): Self = StObject.set(x, "writeToDisk", value.asInstanceOf[js.Any])
+      inline def setWriteToDisk(value: Boolean): Self = StObject.set(x, "writeToDisk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteToDiskUndefined: Self = StObject.set(x, "writeToDisk", js.undefined)
+      inline def setWriteToDiskUndefined: Self = StObject.set(x, "writeToDisk", js.undefined)
       
-      @scala.inline
-      def setWriteVersionComment(value: Boolean): Self = StObject.set(x, "writeVersionComment", value.asInstanceOf[js.Any])
+      inline def setWriteVersionComment(value: Boolean): Self = StObject.set(x, "writeVersionComment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteVersionCommentUndefined: Self = StObject.set(x, "writeVersionComment", js.undefined)
+      inline def setWriteVersionCommentUndefined: Self = StObject.set(x, "writeVersionComment", js.undefined)
     }
   }
 }

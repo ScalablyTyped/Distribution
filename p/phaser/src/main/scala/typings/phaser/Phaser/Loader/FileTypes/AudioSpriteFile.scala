@@ -26,8 +26,7 @@ trait AudioSpriteFile
 }
 object AudioSpriteFile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addToCache: () => Unit,
     addToMultiFile: File => MultiFile,
     baseURL: String,
@@ -50,10 +49,8 @@ object AudioSpriteFile {
     __obj.asInstanceOf[AudioSpriteFile]
   }
   
-  @scala.inline
-  implicit class AudioSpriteFileMutableBuilder[Self <: AudioSpriteFile] (val x: Self) extends AnyVal {
+  extension [Self <: AudioSpriteFile](x: Self) {
     
-    @scala.inline
-    def setAddToCache(value: () => Unit): Self = StObject.set(x, "addToCache", js.Any.fromFunction0(value))
+    inline def setAddToCache(value: () => Unit): Self = StObject.set(x, "addToCache", js.Any.fromFunction0(value))
   }
 }

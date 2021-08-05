@@ -13,19 +13,15 @@ trait FolderPages extends StObject {
 }
 object FolderPages {
   
-  @scala.inline
-  def apply(Folder: typings.activexOutlook.Outlook.Folder, Pages: PropertyPages): FolderPages = {
+  inline def apply(Folder: typings.activexOutlook.Outlook.Folder, Pages: PropertyPages): FolderPages = {
     val __obj = js.Dynamic.literal(Folder = Folder.asInstanceOf[js.Any], Pages = Pages.asInstanceOf[js.Any])
     __obj.asInstanceOf[FolderPages]
   }
   
-  @scala.inline
-  implicit class FolderPagesMutableBuilder[Self <: FolderPages] (val x: Self) extends AnyVal {
+  extension [Self <: FolderPages](x: Self) {
     
-    @scala.inline
-    def setFolder(value: typings.activexOutlook.Outlook.Folder): Self = StObject.set(x, "Folder", value.asInstanceOf[js.Any])
+    inline def setFolder(value: typings.activexOutlook.Outlook.Folder): Self = StObject.set(x, "Folder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPages(value: PropertyPages): Self = StObject.set(x, "Pages", value.asInstanceOf[js.Any])
+    inline def setPages(value: PropertyPages): Self = StObject.set(x, "Pages", value.asInstanceOf[js.Any])
   }
 }

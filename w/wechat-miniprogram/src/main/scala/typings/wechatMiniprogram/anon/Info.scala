@@ -30,19 +30,16 @@ trait Info extends StObject {
 }
 object Info {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     info: videoBitrate | audioBitrate | videoFPS | videoGOP | netSpeed | netJitter | videoWidth | videoHeight
   ): Info = {
     val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any])
     __obj.asInstanceOf[Info]
   }
   
-  @scala.inline
-  implicit class InfoMutableBuilder[Self <: Info] (val x: Self) extends AnyVal {
+  extension [Self <: Info](x: Self) {
     
-    @scala.inline
-    def setInfo(
+    inline def setInfo(
       value: videoBitrate | audioBitrate | videoFPS | videoGOP | netSpeed | netJitter | videoWidth | videoHeight
     ): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
   }

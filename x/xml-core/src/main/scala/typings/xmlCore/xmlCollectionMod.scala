@@ -69,7 +69,7 @@ object xmlCollectionMod {
     /* CompleteClass */
     override def Sort(cb: js.Function2[I, I, Double]): ICollection[I] = js.native
     
-    var items: js.Array[I] = js.native
+    /* protected */ var items: js.Array[I] = js.native
   }
   /* static members */
   object XmlCollection {
@@ -81,7 +81,6 @@ object xmlCollectionMod {
     @JSImport("xml-core/dist/types/xml_collection", "XmlCollection.parser")
     @js.native
     def parser: js.Any = js.native
-    @scala.inline
-    def parser_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parser")(x.asInstanceOf[js.Any])
+    inline def parser_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parser")(x.asInstanceOf[js.Any])
   }
 }

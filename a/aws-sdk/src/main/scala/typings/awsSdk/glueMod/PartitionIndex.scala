@@ -18,22 +18,17 @@ trait PartitionIndex extends StObject {
 }
 object PartitionIndex {
   
-  @scala.inline
-  def apply(IndexName: NameString, Keys: KeyList): PartitionIndex = {
+  inline def apply(IndexName: NameString, Keys: KeyList): PartitionIndex = {
     val __obj = js.Dynamic.literal(IndexName = IndexName.asInstanceOf[js.Any], Keys = Keys.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartitionIndex]
   }
   
-  @scala.inline
-  implicit class PartitionIndexMutableBuilder[Self <: PartitionIndex] (val x: Self) extends AnyVal {
+  extension [Self <: PartitionIndex](x: Self) {
     
-    @scala.inline
-    def setIndexName(value: NameString): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+    inline def setIndexName(value: NameString): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeys(value: KeyList): Self = StObject.set(x, "Keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: KeyList): Self = StObject.set(x, "Keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysVarargs(value: NameString*): Self = StObject.set(x, "Keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: NameString*): Self = StObject.set(x, "Keys", js.Array(value :_*))
   }
 }

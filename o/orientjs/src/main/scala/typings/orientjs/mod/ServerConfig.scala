@@ -20,49 +20,35 @@ trait ServerConfig extends StObject {
 }
 object ServerConfig {
   
-  @scala.inline
-  def apply(host: String): ServerConfig = {
+  inline def apply(host: String): ServerConfig = {
     val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerConfig]
   }
   
-  @scala.inline
-  implicit class ServerConfigMutableBuilder[Self <: ServerConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ServerConfig](x: Self) {
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
-    @scala.inline
-    def setServers(value: js.Array[ServerConfig]): Self = StObject.set(x, "servers", value.asInstanceOf[js.Any])
+    inline def setServers(value: js.Array[ServerConfig]): Self = StObject.set(x, "servers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServersUndefined: Self = StObject.set(x, "servers", js.undefined)
+    inline def setServersUndefined: Self = StObject.set(x, "servers", js.undefined)
     
-    @scala.inline
-    def setServersVarargs(value: ServerConfig*): Self = StObject.set(x, "servers", js.Array(value :_*))
+    inline def setServersVarargs(value: ServerConfig*): Self = StObject.set(x, "servers", js.Array(value :_*))
     
-    @scala.inline
-    def setUseToken(value: Boolean): Self = StObject.set(x, "useToken", value.asInstanceOf[js.Any])
+    inline def setUseToken(value: Boolean): Self = StObject.set(x, "useToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseTokenUndefined: Self = StObject.set(x, "useToken", js.undefined)
+    inline def setUseTokenUndefined: Self = StObject.set(x, "useToken", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

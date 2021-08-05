@@ -23,22 +23,16 @@ object EffectCommands {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def CUSTOM: `0` = 0.asInstanceOf[`0`]
+    inline def CUSTOM: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def PLAY: `2` = 2.asInstanceOf[`2`]
+    inline def PLAY: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def STOP: `4` = 4.asInstanceOf[`4`]
+    inline def STOP: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def STOPAUDIO: `5` = 5.asInstanceOf[`5`]
+    inline def STOPAUDIO: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def TOGGLEPAUSE: `3` = 3.asInstanceOf[`3`]
+    inline def TOGGLEPAUSE: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def VERB: `1` = 1.asInstanceOf[`1`]
+    inline def VERB: `1` = 1.asInstanceOf[`1`]
   }
 }

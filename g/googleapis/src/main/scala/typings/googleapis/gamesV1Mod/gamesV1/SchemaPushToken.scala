@@ -35,37 +35,27 @@ trait SchemaPushToken extends StObject {
 }
 object SchemaPushToken {
   
-  @scala.inline
-  def apply(): SchemaPushToken = {
+  inline def apply(): SchemaPushToken = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPushToken]
   }
   
-  @scala.inline
-  implicit class SchemaPushTokenMutableBuilder[Self <: SchemaPushToken] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPushToken](x: Self) {
     
-    @scala.inline
-    def setClientRevision(value: String): Self = StObject.set(x, "clientRevision", value.asInstanceOf[js.Any])
+    inline def setClientRevision(value: String): Self = StObject.set(x, "clientRevision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRevisionUndefined: Self = StObject.set(x, "clientRevision", js.undefined)
+    inline def setClientRevisionUndefined: Self = StObject.set(x, "clientRevision", js.undefined)
     
-    @scala.inline
-    def setId(value: SchemaPushTokenId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: SchemaPushTokenId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
   }
 }

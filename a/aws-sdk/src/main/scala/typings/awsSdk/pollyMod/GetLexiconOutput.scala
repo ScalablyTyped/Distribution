@@ -18,25 +18,19 @@ trait GetLexiconOutput extends StObject {
 }
 object GetLexiconOutput {
   
-  @scala.inline
-  def apply(): GetLexiconOutput = {
+  inline def apply(): GetLexiconOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetLexiconOutput]
   }
   
-  @scala.inline
-  implicit class GetLexiconOutputMutableBuilder[Self <: GetLexiconOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetLexiconOutput](x: Self) {
     
-    @scala.inline
-    def setLexicon(value: Lexicon): Self = StObject.set(x, "Lexicon", value.asInstanceOf[js.Any])
+    inline def setLexicon(value: Lexicon): Self = StObject.set(x, "Lexicon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLexiconAttributes(value: LexiconAttributes): Self = StObject.set(x, "LexiconAttributes", value.asInstanceOf[js.Any])
+    inline def setLexiconAttributes(value: LexiconAttributes): Self = StObject.set(x, "LexiconAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLexiconAttributesUndefined: Self = StObject.set(x, "LexiconAttributes", js.undefined)
+    inline def setLexiconAttributesUndefined: Self = StObject.set(x, "LexiconAttributes", js.undefined)
     
-    @scala.inline
-    def setLexiconUndefined: Self = StObject.set(x, "Lexicon", js.undefined)
+    inline def setLexiconUndefined: Self = StObject.set(x, "Lexicon", js.undefined)
   }
 }

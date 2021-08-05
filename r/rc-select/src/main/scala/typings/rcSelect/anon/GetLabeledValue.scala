@@ -22,8 +22,7 @@ trait GetLabeledValue[FOT /* <: FlattenOptionsType[js.Array[js.Object]] */] exte
 }
 object GetLabeledValue {
   
-  @scala.inline
-  def apply[FOT /* <: FlattenOptionsType[js.Array[js.Object]] */](
+  inline def apply[FOT /* <: FlattenOptionsType[js.Array[js.Object]] */](
     getLabeledValue: (/* value */ RawValueType, /* config */ LabelInValue[FOT]) => LabelValueType,
     labelInValue: Boolean,
     optionLabelProp: String,
@@ -34,25 +33,18 @@ object GetLabeledValue {
     __obj.asInstanceOf[GetLabeledValue[FOT]]
   }
   
-  @scala.inline
-  implicit class GetLabeledValueMutableBuilder[Self <: GetLabeledValue[?], FOT /* <: FlattenOptionsType[js.Array[js.Object]] */] (val x: Self & GetLabeledValue[FOT]) extends AnyVal {
+  extension [Self <: GetLabeledValue[?], FOT /* <: FlattenOptionsType[js.Array[js.Object]] */](x: Self & GetLabeledValue[FOT]) {
     
-    @scala.inline
-    def setGetLabeledValue(value: (/* value */ RawValueType, /* config */ LabelInValue[FOT]) => LabelValueType): Self = StObject.set(x, "getLabeledValue", js.Any.fromFunction2(value))
+    inline def setGetLabeledValue(value: (/* value */ RawValueType, /* config */ LabelInValue[FOT]) => LabelValueType): Self = StObject.set(x, "getLabeledValue", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLabelInValue(value: Boolean): Self = StObject.set(x, "labelInValue", value.asInstanceOf[js.Any])
+    inline def setLabelInValue(value: Boolean): Self = StObject.set(x, "labelInValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionLabelProp(value: String): Self = StObject.set(x, "optionLabelProp", value.asInstanceOf[js.Any])
+    inline def setOptionLabelProp(value: String): Self = StObject.set(x, "optionLabelProp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: FOT): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: FOT): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevValue(value: DefaultValueType): Self = StObject.set(x, "prevValue", value.asInstanceOf[js.Any])
+    inline def setPrevValue(value: DefaultValueType): Self = StObject.set(x, "prevValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevValueVarargs(value: (LabelValueType | RawValueType)*): Self = StObject.set(x, "prevValue", js.Array(value :_*))
+    inline def setPrevValueVarargs(value: (LabelValueType | RawValueType)*): Self = StObject.set(x, "prevValue", js.Array(value :_*))
   }
 }

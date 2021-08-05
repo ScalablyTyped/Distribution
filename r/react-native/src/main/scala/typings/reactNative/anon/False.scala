@@ -13,21 +13,17 @@ trait False extends StObject {
 }
 object False {
   
-  @scala.inline
-  def apply(`false`: ColorValue, `true`: ColorValue): False = {
+  inline def apply(`false`: ColorValue, `true`: ColorValue): False = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("false")(`false`.asInstanceOf[js.Any])
     __obj.updateDynamic("true")(`true`.asInstanceOf[js.Any])
     __obj.asInstanceOf[False]
   }
   
-  @scala.inline
-  implicit class FalseMutableBuilder[Self <: False] (val x: Self) extends AnyVal {
+  extension [Self <: False](x: Self) {
     
-    @scala.inline
-    def setFalse(value: ColorValue): Self = StObject.set(x, "false", value.asInstanceOf[js.Any])
+    inline def setFalse(value: ColorValue): Self = StObject.set(x, "false", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrue(value: ColorValue): Self = StObject.set(x, "true", value.asInstanceOf[js.Any])
+    inline def setTrue(value: ColorValue): Self = StObject.set(x, "true", value.asInstanceOf[js.Any])
   }
 }

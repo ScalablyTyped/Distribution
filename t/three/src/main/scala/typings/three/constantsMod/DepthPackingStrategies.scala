@@ -9,6 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 sealed trait DepthPackingStrategies extends StObject
 object DepthPackingStrategies {
   
-  @scala.inline
-  def apply(value: scala.Nothing): js.UndefOr[DepthPackingStrategies & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("DepthPackingStrategies")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[DepthPackingStrategies & scala.Nothing]]
+  inline def apply(value: scala.Nothing): js.UndefOr[DepthPackingStrategies & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("DepthPackingStrategies")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[DepthPackingStrategies & scala.Nothing]]
 }

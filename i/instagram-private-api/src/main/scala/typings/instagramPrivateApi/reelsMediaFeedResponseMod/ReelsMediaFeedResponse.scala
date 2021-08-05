@@ -30,8 +30,7 @@ trait ReelsMediaFeedResponse extends StObject {
 }
 object ReelsMediaFeedResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     can_reply: Boolean,
     can_reshare: Boolean,
     expiring_at: Double,
@@ -48,43 +47,30 @@ object ReelsMediaFeedResponse {
     __obj.asInstanceOf[ReelsMediaFeedResponse]
   }
   
-  @scala.inline
-  implicit class ReelsMediaFeedResponseMutableBuilder[Self <: ReelsMediaFeedResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReelsMediaFeedResponse](x: Self) {
     
-    @scala.inline
-    def setCan_reply(value: Boolean): Self = StObject.set(x, "can_reply", value.asInstanceOf[js.Any])
+    inline def setCan_reply(value: Boolean): Self = StObject.set(x, "can_reply", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCan_reshare(value: Boolean): Self = StObject.set(x, "can_reshare", value.asInstanceOf[js.Any])
+    inline def setCan_reshare(value: Boolean): Self = StObject.set(x, "can_reshare", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiring_at(value: Double): Self = StObject.set(x, "expiring_at", value.asInstanceOf[js.Any])
+    inline def setExpiring_at(value: Double): Self = StObject.set(x, "expiring_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: js.Array[ReelsMediaFeedResponseItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[ReelsMediaFeedResponseItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: ReelsMediaFeedResponseItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ReelsMediaFeedResponseItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setLatest_reel_media(value: Double): Self = StObject.set(x, "latest_reel_media", value.asInstanceOf[js.Any])
+    inline def setLatest_reel_media(value: Double): Self = StObject.set(x, "latest_reel_media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedia_count(value: Double): Self = StObject.set(x, "media_count", value.asInstanceOf[js.Any])
+    inline def setMedia_count(value: Double): Self = StObject.set(x, "media_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefetch_count(value: Double): Self = StObject.set(x, "prefetch_count", value.asInstanceOf[js.Any])
+    inline def setPrefetch_count(value: Double): Self = StObject.set(x, "prefetch_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReel_type(value: String): Self = StObject.set(x, "reel_type", value.asInstanceOf[js.Any])
+    inline def setReel_type(value: String): Self = StObject.set(x, "reel_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeen(value: Double): Self = StObject.set(x, "seen", value.asInstanceOf[js.Any])
+    inline def setSeen(value: Double): Self = StObject.set(x, "seen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: ReelsMediaFeedResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: ReelsMediaFeedResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

@@ -8,26 +8,21 @@ object cborStrings {
   
   @js.native
   sealed trait cbor extends StObject
-  @scala.inline
-  def cbor: cbor = "cbor".asInstanceOf[cbor]
+  inline def cbor: cbor = "cbor".asInstanceOf[cbor]
   
   @js.native
   sealed trait float extends StObject
-  @scala.inline
-  def float: float = "float".asInstanceOf[float]
+  inline def float: float = "float".asInstanceOf[float]
   
   @js.native
   sealed trait int extends StObject
-  @scala.inline
-  def int: int = "int".asInstanceOf[int]
+  inline def int: int = "int".asInstanceOf[int]
   
   @js.native
   sealed trait number extends StObject
-  @scala.inline
-  def number: number = "number".asInstanceOf[number]
+  inline def number: number = "number".asInstanceOf[number]
   
   @js.native
   sealed trait string extends StObject
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
+  inline def string: string = "string".asInstanceOf[string]
 }

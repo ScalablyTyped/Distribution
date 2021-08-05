@@ -18,26 +18,20 @@ object ValidatorOptions {
   }
   object IsDateOptions {
     
-    @scala.inline
-    def apply(): IsDateOptions = {
+    inline def apply(): IsDateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IsDateOptions]
     }
     
-    @scala.inline
-    implicit class IsDateOptionsMutableBuilder[Self <: IsDateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IsDateOptions](x: Self) {
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
   
@@ -51,26 +45,20 @@ object ValidatorOptions {
   }
   object IsNumberOptions {
     
-    @scala.inline
-    def apply(): IsNumberOptions = {
+    inline def apply(): IsNumberOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IsNumberOptions]
     }
     
-    @scala.inline
-    implicit class IsNumberOptionsMutableBuilder[Self <: IsNumberOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IsNumberOptions](x: Self) {
       
-      @scala.inline
-      def setMax(value: Number): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Number): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMin(value: Number): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Number): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     }
   }
   
@@ -84,26 +72,20 @@ object ValidatorOptions {
   }
   object IsStringOptions {
     
-    @scala.inline
-    def apply(): IsStringOptions = {
+    inline def apply(): IsStringOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IsStringOptions]
     }
     
-    @scala.inline
-    implicit class IsStringOptionsMutableBuilder[Self <: IsStringOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IsStringOptions](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+      inline def setRegex(value: RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
+      inline def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
     }
   }
   
@@ -115,20 +97,17 @@ object ValidatorOptions {
   trait Options extends StObject
   object Options {
     
-    @scala.inline
-    def IsDateOptions(): typings.nodeValidator.ValidatorOptions.IsDateOptions = {
+    inline def IsDateOptions(): typings.nodeValidator.ValidatorOptions.IsDateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.nodeValidator.ValidatorOptions.IsDateOptions]
     }
     
-    @scala.inline
-    def IsNumberOptions(): typings.nodeValidator.ValidatorOptions.IsNumberOptions = {
+    inline def IsNumberOptions(): typings.nodeValidator.ValidatorOptions.IsNumberOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.nodeValidator.ValidatorOptions.IsNumberOptions]
     }
     
-    @scala.inline
-    def IsStringOptions(): typings.nodeValidator.ValidatorOptions.IsStringOptions = {
+    inline def IsStringOptions(): typings.nodeValidator.ValidatorOptions.IsStringOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.nodeValidator.ValidatorOptions.IsStringOptions]
     }

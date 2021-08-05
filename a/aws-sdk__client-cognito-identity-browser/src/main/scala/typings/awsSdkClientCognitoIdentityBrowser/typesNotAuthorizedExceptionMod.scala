@@ -48,17 +48,14 @@ object typesNotAuthorizedExceptionMod {
   }
   object NotAuthorizedException {
     
-    @scala.inline
-    def apply(): NotAuthorizedException = {
+    inline def apply(): NotAuthorizedException = {
       val __obj = js.Dynamic.literal(name = "NotAuthorizedException")
       __obj.asInstanceOf[NotAuthorizedException]
     }
     
-    @scala.inline
-    implicit class NotAuthorizedExceptionMutableBuilder[Self <: NotAuthorizedException] (val x: Self) extends AnyVal {
+    extension [Self <: NotAuthorizedException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.NotAuthorizedException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -73,20 +70,16 @@ object typesNotAuthorizedExceptionMod {
   }
   object NotAuthorizedExceptionDetails {
     
-    @scala.inline
-    def apply(): NotAuthorizedExceptionDetails = {
+    inline def apply(): NotAuthorizedExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NotAuthorizedExceptionDetails]
     }
     
-    @scala.inline
-    implicit class NotAuthorizedExceptionDetailsMutableBuilder[Self <: NotAuthorizedExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: NotAuthorizedExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

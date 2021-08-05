@@ -13,6 +13,5 @@ object isIPRangeMod {
   /**
     * Check if the string is an IP Range (version 4 only).
     */
-  @scala.inline
-  def default(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def default(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

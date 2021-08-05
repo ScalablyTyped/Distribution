@@ -37,8 +37,7 @@ trait XDataPilotResults
 }
 object XDataPilotResults {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Results: SafeArray[SafeArray[DataResult]],
     acquire: () => Unit,
     getFilteredResults: SeqEquiv[DataPilotFieldFilter] => SafeArray[Double],
@@ -50,16 +49,12 @@ object XDataPilotResults {
     __obj.asInstanceOf[XDataPilotResults]
   }
   
-  @scala.inline
-  implicit class XDataPilotResultsMutableBuilder[Self <: XDataPilotResults] (val x: Self) extends AnyVal {
+  extension [Self <: XDataPilotResults](x: Self) {
     
-    @scala.inline
-    def setGetFilteredResults(value: SeqEquiv[DataPilotFieldFilter] => SafeArray[Double]): Self = StObject.set(x, "getFilteredResults", js.Any.fromFunction1(value))
+    inline def setGetFilteredResults(value: SeqEquiv[DataPilotFieldFilter] => SafeArray[Double]): Self = StObject.set(x, "getFilteredResults", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetResults(value: () => SafeArray[SafeArray[DataResult]]): Self = StObject.set(x, "getResults", js.Any.fromFunction0(value))
+    inline def setGetResults(value: () => SafeArray[SafeArray[DataResult]]): Self = StObject.set(x, "getResults", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResults(value: SafeArray[SafeArray[DataResult]]): Self = StObject.set(x, "Results", value.asInstanceOf[js.Any])
+    inline def setResults(value: SafeArray[SafeArray[DataResult]]): Self = StObject.set(x, "Results", value.asInstanceOf[js.Any])
   }
 }

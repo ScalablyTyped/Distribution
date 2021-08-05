@@ -10,16 +10,13 @@ trait OptionsGroupedimports extends StObject {
 }
 object OptionsGroupedimports {
   
-  @scala.inline
-  def apply(options: Groupedimports): OptionsGroupedimports = {
+  inline def apply(options: Groupedimports): OptionsGroupedimports = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptionsGroupedimports]
   }
   
-  @scala.inline
-  implicit class OptionsGroupedimportsMutableBuilder[Self <: OptionsGroupedimports] (val x: Self) extends AnyVal {
+  extension [Self <: OptionsGroupedimports](x: Self) {
     
-    @scala.inline
-    def setOptions(value: Groupedimports): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Groupedimports): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

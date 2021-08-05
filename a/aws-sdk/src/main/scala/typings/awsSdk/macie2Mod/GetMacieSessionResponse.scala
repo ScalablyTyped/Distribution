@@ -33,43 +33,31 @@ trait GetMacieSessionResponse extends StObject {
 }
 object GetMacieSessionResponse {
   
-  @scala.inline
-  def apply(): GetMacieSessionResponse = {
+  inline def apply(): GetMacieSessionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetMacieSessionResponse]
   }
   
-  @scala.inline
-  implicit class GetMacieSessionResponseMutableBuilder[Self <: GetMacieSessionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetMacieSessionResponse](x: Self) {
     
-    @scala.inline
-    def setCreatedAt(value: timestampIso8601): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: timestampIso8601): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
-    @scala.inline
-    def setFindingPublishingFrequency(value: FindingPublishingFrequency): Self = StObject.set(x, "findingPublishingFrequency", value.asInstanceOf[js.Any])
+    inline def setFindingPublishingFrequency(value: FindingPublishingFrequency): Self = StObject.set(x, "findingPublishingFrequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingPublishingFrequencyUndefined: Self = StObject.set(x, "findingPublishingFrequency", js.undefined)
+    inline def setFindingPublishingFrequencyUndefined: Self = StObject.set(x, "findingPublishingFrequency", js.undefined)
     
-    @scala.inline
-    def setServiceRole(value: string): Self = StObject.set(x, "serviceRole", value.asInstanceOf[js.Any])
+    inline def setServiceRole(value: string): Self = StObject.set(x, "serviceRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceRoleUndefined: Self = StObject.set(x, "serviceRole", js.undefined)
+    inline def setServiceRoleUndefined: Self = StObject.set(x, "serviceRole", js.undefined)
     
-    @scala.inline
-    def setStatus(value: MacieStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: MacieStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setUpdatedAt(value: timestampIso8601): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: timestampIso8601): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedAtUndefined: Self = StObject.set(x, "updatedAt", js.undefined)
+    inline def setUpdatedAtUndefined: Self = StObject.set(x, "updatedAt", js.undefined)
   }
 }

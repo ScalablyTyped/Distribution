@@ -22,28 +22,21 @@ trait HostAlias extends StObject {
 }
 object HostAlias {
   
-  @scala.inline
-  def apply(): HostAlias = {
+  inline def apply(): HostAlias = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HostAlias]
   }
   
-  @scala.inline
-  implicit class HostAliasMutableBuilder[Self <: HostAlias] (val x: Self) extends AnyVal {
+  extension [Self <: HostAlias](x: Self) {
     
-    @scala.inline
-    def setHostnames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "hostnames", value.asInstanceOf[js.Any])
+    inline def setHostnames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "hostnames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostnamesUndefined: Self = StObject.set(x, "hostnames", js.undefined)
+    inline def setHostnamesUndefined: Self = StObject.set(x, "hostnames", js.undefined)
     
-    @scala.inline
-    def setHostnamesVarargs(value: Input[String]*): Self = StObject.set(x, "hostnames", js.Array(value :_*))
+    inline def setHostnamesVarargs(value: Input[String]*): Self = StObject.set(x, "hostnames", js.Array(value :_*))
     
-    @scala.inline
-    def setIp(value: Input[String]): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+    inline def setIp(value: Input[String]): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
+    inline def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
   }
 }

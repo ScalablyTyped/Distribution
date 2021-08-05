@@ -16,37 +16,27 @@ trait CallerType extends StObject {
 }
 object CallerType {
   
-  @scala.inline
-  def apply(): CallerType = {
+  inline def apply(): CallerType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CallerType]
   }
   
-  @scala.inline
-  implicit class CallerTypeMutableBuilder[Self <: CallerType] (val x: Self) extends AnyVal {
+  extension [Self <: CallerType](x: Self) {
     
-    @scala.inline
-    def setCallerType(value: String): Self = StObject.set(x, "callerType", value.asInstanceOf[js.Any])
+    inline def setCallerType(value: String): Self = StObject.set(x, "callerType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallerTypeUndefined: Self = StObject.set(x, "callerType", js.undefined)
+    inline def setCallerTypeUndefined: Self = StObject.set(x, "callerType", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
+    inline def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
+    inline def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
   }
 }

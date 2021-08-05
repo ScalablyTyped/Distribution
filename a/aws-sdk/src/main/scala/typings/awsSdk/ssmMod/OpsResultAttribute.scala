@@ -13,16 +13,13 @@ trait OpsResultAttribute extends StObject {
 }
 object OpsResultAttribute {
   
-  @scala.inline
-  def apply(TypeName: OpsDataTypeName): OpsResultAttribute = {
+  inline def apply(TypeName: OpsDataTypeName): OpsResultAttribute = {
     val __obj = js.Dynamic.literal(TypeName = TypeName.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpsResultAttribute]
   }
   
-  @scala.inline
-  implicit class OpsResultAttributeMutableBuilder[Self <: OpsResultAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: OpsResultAttribute](x: Self) {
     
-    @scala.inline
-    def setTypeName(value: OpsDataTypeName): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
+    inline def setTypeName(value: OpsDataTypeName): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
   }
 }

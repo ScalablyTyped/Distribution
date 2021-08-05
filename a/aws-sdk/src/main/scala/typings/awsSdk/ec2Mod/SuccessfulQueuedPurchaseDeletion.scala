@@ -13,19 +13,15 @@ trait SuccessfulQueuedPurchaseDeletion extends StObject {
 }
 object SuccessfulQueuedPurchaseDeletion {
   
-  @scala.inline
-  def apply(): SuccessfulQueuedPurchaseDeletion = {
+  inline def apply(): SuccessfulQueuedPurchaseDeletion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SuccessfulQueuedPurchaseDeletion]
   }
   
-  @scala.inline
-  implicit class SuccessfulQueuedPurchaseDeletionMutableBuilder[Self <: SuccessfulQueuedPurchaseDeletion] (val x: Self) extends AnyVal {
+  extension [Self <: SuccessfulQueuedPurchaseDeletion](x: Self) {
     
-    @scala.inline
-    def setReservedInstancesId(value: String): Self = StObject.set(x, "ReservedInstancesId", value.asInstanceOf[js.Any])
+    inline def setReservedInstancesId(value: String): Self = StObject.set(x, "ReservedInstancesId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedInstancesIdUndefined: Self = StObject.set(x, "ReservedInstancesId", js.undefined)
+    inline def setReservedInstancesIdUndefined: Self = StObject.set(x, "ReservedInstancesId", js.undefined)
   }
 }

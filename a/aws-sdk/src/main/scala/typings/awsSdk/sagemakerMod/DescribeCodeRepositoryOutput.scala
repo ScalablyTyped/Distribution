@@ -33,8 +33,7 @@ trait DescribeCodeRepositoryOutput extends StObject {
 }
 object DescribeCodeRepositoryOutput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CodeRepositoryArn: CodeRepositoryArn,
     CodeRepositoryName: EntityName,
     CreationTime: CreationTime,
@@ -44,25 +43,18 @@ object DescribeCodeRepositoryOutput {
     __obj.asInstanceOf[DescribeCodeRepositoryOutput]
   }
   
-  @scala.inline
-  implicit class DescribeCodeRepositoryOutputMutableBuilder[Self <: DescribeCodeRepositoryOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCodeRepositoryOutput](x: Self) {
     
-    @scala.inline
-    def setCodeRepositoryArn(value: CodeRepositoryArn): Self = StObject.set(x, "CodeRepositoryArn", value.asInstanceOf[js.Any])
+    inline def setCodeRepositoryArn(value: CodeRepositoryArn): Self = StObject.set(x, "CodeRepositoryArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeRepositoryName(value: EntityName): Self = StObject.set(x, "CodeRepositoryName", value.asInstanceOf[js.Any])
+    inline def setCodeRepositoryName(value: EntityName): Self = StObject.set(x, "CodeRepositoryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGitConfig(value: GitConfig): Self = StObject.set(x, "GitConfig", value.asInstanceOf[js.Any])
+    inline def setGitConfig(value: GitConfig): Self = StObject.set(x, "GitConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGitConfigUndefined: Self = StObject.set(x, "GitConfig", js.undefined)
+    inline def setGitConfigUndefined: Self = StObject.set(x, "GitConfig", js.undefined)
     
-    @scala.inline
-    def setLastModifiedTime(value: LastModifiedTime): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: LastModifiedTime): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
   }
 }

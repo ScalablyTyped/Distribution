@@ -10,16 +10,13 @@ trait CreateableIndexBuilder extends StObject {
 }
 object CreateableIndexBuilder {
   
-  @scala.inline
-  def apply(withOptions: MappedDict[String] => CreateableIndexBuilder): CreateableIndexBuilder = {
+  inline def apply(withOptions: MappedDict[String] => CreateableIndexBuilder): CreateableIndexBuilder = {
     val __obj = js.Dynamic.literal(withOptions = js.Any.fromFunction1(withOptions))
     __obj.asInstanceOf[CreateableIndexBuilder]
   }
   
-  @scala.inline
-  implicit class CreateableIndexBuilderMutableBuilder[Self <: CreateableIndexBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: CreateableIndexBuilder](x: Self) {
     
-    @scala.inline
-    def setWithOptions(value: MappedDict[String] => CreateableIndexBuilder): Self = StObject.set(x, "withOptions", js.Any.fromFunction1(value))
+    inline def setWithOptions(value: MappedDict[String] => CreateableIndexBuilder): Self = StObject.set(x, "withOptions", js.Any.fromFunction1(value))
   }
 }

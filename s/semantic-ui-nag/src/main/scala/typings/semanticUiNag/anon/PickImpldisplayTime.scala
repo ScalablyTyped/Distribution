@@ -11,16 +11,13 @@ trait PickImpldisplayTime extends StObject {
 }
 object PickImpldisplayTime {
   
-  @scala.inline
-  def apply(displayTime: Double): PickImpldisplayTime = {
+  inline def apply(displayTime: Double): PickImpldisplayTime = {
     val __obj = js.Dynamic.literal(displayTime = displayTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldisplayTime]
   }
   
-  @scala.inline
-  implicit class PickImpldisplayTimeMutableBuilder[Self <: PickImpldisplayTime] (val x: Self) extends AnyVal {
+  extension [Self <: PickImpldisplayTime](x: Self) {
     
-    @scala.inline
-    def setDisplayTime(value: Double): Self = StObject.set(x, "displayTime", value.asInstanceOf[js.Any])
+    inline def setDisplayTime(value: Double): Self = StObject.set(x, "displayTime", value.asInstanceOf[js.Any])
   }
 }

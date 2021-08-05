@@ -18,28 +18,21 @@ trait Maintain extends StObject {
 }
 object Maintain {
   
-  @scala.inline
-  def apply(admin: Boolean, maintain: Boolean, pull: Boolean, push: Boolean, triage: Boolean): Maintain = {
+  inline def apply(admin: Boolean, maintain: Boolean, pull: Boolean, push: Boolean, triage: Boolean): Maintain = {
     val __obj = js.Dynamic.literal(admin = admin.asInstanceOf[js.Any], maintain = maintain.asInstanceOf[js.Any], pull = pull.asInstanceOf[js.Any], push = push.asInstanceOf[js.Any], triage = triage.asInstanceOf[js.Any])
     __obj.asInstanceOf[Maintain]
   }
   
-  @scala.inline
-  implicit class MaintainMutableBuilder[Self <: Maintain] (val x: Self) extends AnyVal {
+  extension [Self <: Maintain](x: Self) {
     
-    @scala.inline
-    def setAdmin(value: Boolean): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
+    inline def setAdmin(value: Boolean): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaintain(value: Boolean): Self = StObject.set(x, "maintain", value.asInstanceOf[js.Any])
+    inline def setMaintain(value: Boolean): Self = StObject.set(x, "maintain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPull(value: Boolean): Self = StObject.set(x, "pull", value.asInstanceOf[js.Any])
+    inline def setPull(value: Boolean): Self = StObject.set(x, "pull", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPush(value: Boolean): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
+    inline def setPush(value: Boolean): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriage(value: Boolean): Self = StObject.set(x, "triage", value.asInstanceOf[js.Any])
+    inline def setTriage(value: Boolean): Self = StObject.set(x, "triage", value.asInstanceOf[js.Any])
   }
 }

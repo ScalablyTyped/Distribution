@@ -18,28 +18,21 @@ trait DescribeGlobalNetworksResponse extends StObject {
 }
 object DescribeGlobalNetworksResponse {
   
-  @scala.inline
-  def apply(): DescribeGlobalNetworksResponse = {
+  inline def apply(): DescribeGlobalNetworksResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeGlobalNetworksResponse]
   }
   
-  @scala.inline
-  implicit class DescribeGlobalNetworksResponseMutableBuilder[Self <: DescribeGlobalNetworksResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeGlobalNetworksResponse](x: Self) {
     
-    @scala.inline
-    def setGlobalNetworks(value: GlobalNetworkList): Self = StObject.set(x, "GlobalNetworks", value.asInstanceOf[js.Any])
+    inline def setGlobalNetworks(value: GlobalNetworkList): Self = StObject.set(x, "GlobalNetworks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalNetworksUndefined: Self = StObject.set(x, "GlobalNetworks", js.undefined)
+    inline def setGlobalNetworksUndefined: Self = StObject.set(x, "GlobalNetworks", js.undefined)
     
-    @scala.inline
-    def setGlobalNetworksVarargs(value: GlobalNetwork*): Self = StObject.set(x, "GlobalNetworks", js.Array(value :_*))
+    inline def setGlobalNetworksVarargs(value: GlobalNetwork*): Self = StObject.set(x, "GlobalNetworks", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

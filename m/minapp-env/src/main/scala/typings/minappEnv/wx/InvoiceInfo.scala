@@ -18,22 +18,17 @@ trait InvoiceInfo extends StObject {
 }
 object InvoiceInfo {
   
-  @scala.inline
-  def apply(cardId: String, encryptCode: String, publisherAppId: String): InvoiceInfo = {
+  inline def apply(cardId: String, encryptCode: String, publisherAppId: String): InvoiceInfo = {
     val __obj = js.Dynamic.literal(cardId = cardId.asInstanceOf[js.Any], encryptCode = encryptCode.asInstanceOf[js.Any], publisherAppId = publisherAppId.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvoiceInfo]
   }
   
-  @scala.inline
-  implicit class InvoiceInfoMutableBuilder[Self <: InvoiceInfo] (val x: Self) extends AnyVal {
+  extension [Self <: InvoiceInfo](x: Self) {
     
-    @scala.inline
-    def setCardId(value: String): Self = StObject.set(x, "cardId", value.asInstanceOf[js.Any])
+    inline def setCardId(value: String): Self = StObject.set(x, "cardId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptCode(value: String): Self = StObject.set(x, "encryptCode", value.asInstanceOf[js.Any])
+    inline def setEncryptCode(value: String): Self = StObject.set(x, "encryptCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisherAppId(value: String): Self = StObject.set(x, "publisherAppId", value.asInstanceOf[js.Any])
+    inline def setPublisherAppId(value: String): Self = StObject.set(x, "publisherAppId", value.asInstanceOf[js.Any])
   }
 }

@@ -10,19 +10,15 @@ trait FileSystemRemoveOptions extends StObject {
 }
 object FileSystemRemoveOptions {
   
-  @scala.inline
-  def apply(): FileSystemRemoveOptions = {
+  inline def apply(): FileSystemRemoveOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileSystemRemoveOptions]
   }
   
-  @scala.inline
-  implicit class FileSystemRemoveOptionsMutableBuilder[Self <: FileSystemRemoveOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FileSystemRemoveOptions](x: Self) {
     
-    @scala.inline
-    def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
+    inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
   }
 }

@@ -32,31 +32,23 @@ trait SchemaTransactionSelector extends StObject {
 }
 object SchemaTransactionSelector {
   
-  @scala.inline
-  def apply(): SchemaTransactionSelector = {
+  inline def apply(): SchemaTransactionSelector = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTransactionSelector]
   }
   
-  @scala.inline
-  implicit class SchemaTransactionSelectorMutableBuilder[Self <: SchemaTransactionSelector] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTransactionSelector](x: Self) {
     
-    @scala.inline
-    def setBegin(value: SchemaTransactionOptions): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
+    inline def setBegin(value: SchemaTransactionOptions): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeginUndefined: Self = StObject.set(x, "begin", js.undefined)
+    inline def setBeginUndefined: Self = StObject.set(x, "begin", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setSingleUse(value: SchemaTransactionOptions): Self = StObject.set(x, "singleUse", value.asInstanceOf[js.Any])
+    inline def setSingleUse(value: SchemaTransactionOptions): Self = StObject.set(x, "singleUse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleUseUndefined: Self = StObject.set(x, "singleUse", js.undefined)
+    inline def setSingleUseUndefined: Self = StObject.set(x, "singleUse", js.undefined)
   }
 }

@@ -23,8 +23,7 @@ trait NumericField
 }
 object NumericField {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     absolutePosition: X,
     addClass: String => Unit,
     contextMenu: PopupWindow,
@@ -57,22 +56,16 @@ object NumericField {
     __obj.asInstanceOf[NumericField]
   }
   
-  @scala.inline
-  implicit class NumericFieldMutableBuilder[Self <: NumericField] (val x: Self) extends AnyVal {
+  extension [Self <: NumericField](x: Self) {
     
-    @scala.inline
-    def setDecimalDigits(value: Double): Self = StObject.set(x, "decimalDigits", value.asInstanceOf[js.Any])
+    inline def setDecimalDigits(value: Double): Self = StObject.set(x, "decimalDigits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecimalSymbol(value: String): Self = StObject.set(x, "decimalSymbol", value.asInstanceOf[js.Any])
+    inline def setDecimalSymbol(value: String): Self = StObject.set(x, "decimalSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
   }
 }

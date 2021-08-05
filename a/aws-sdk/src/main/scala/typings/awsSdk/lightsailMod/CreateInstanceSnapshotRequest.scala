@@ -23,28 +23,21 @@ trait CreateInstanceSnapshotRequest extends StObject {
 }
 object CreateInstanceSnapshotRequest {
   
-  @scala.inline
-  def apply(instanceName: ResourceName, instanceSnapshotName: ResourceName): CreateInstanceSnapshotRequest = {
+  inline def apply(instanceName: ResourceName, instanceSnapshotName: ResourceName): CreateInstanceSnapshotRequest = {
     val __obj = js.Dynamic.literal(instanceName = instanceName.asInstanceOf[js.Any], instanceSnapshotName = instanceSnapshotName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateInstanceSnapshotRequest]
   }
   
-  @scala.inline
-  implicit class CreateInstanceSnapshotRequestMutableBuilder[Self <: CreateInstanceSnapshotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateInstanceSnapshotRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceName(value: ResourceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
+    inline def setInstanceName(value: ResourceName): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceSnapshotName(value: ResourceName): Self = StObject.set(x, "instanceSnapshotName", value.asInstanceOf[js.Any])
+    inline def setInstanceSnapshotName(value: ResourceName): Self = StObject.set(x, "instanceSnapshotName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

@@ -12,6 +12,5 @@ object addEventListenerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(target: HTMLElement, eventType: String, callback: js.Any): Remove = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Remove]
+  inline def default(target: HTMLElement, eventType: String, callback: js.Any): Remove = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(target.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Remove]
 }

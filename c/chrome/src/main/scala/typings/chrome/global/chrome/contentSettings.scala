@@ -34,78 +34,65 @@ object contentSettings {
   @JSGlobal("chrome.contentSettings.automaticDownloads")
   @js.native
   def automaticDownloads: MultipleAutomaticDownloadsContentSetting = js.native
-  @scala.inline
-  def automaticDownloads_=(x: MultipleAutomaticDownloadsContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("automaticDownloads")(x.asInstanceOf[js.Any])
+  inline def automaticDownloads_=(x: MultipleAutomaticDownloadsContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("automaticDownloads")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.contentSettings.camera")
   @js.native
   def camera: CameraContentSetting = js.native
-  @scala.inline
-  def camera_=(x: CameraContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("camera")(x.asInstanceOf[js.Any])
+  inline def camera_=(x: CameraContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("camera")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.contentSettings.cookies")
   @js.native
   def cookies: CookieContentSetting = js.native
-  @scala.inline
-  def cookies_=(x: CookieContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookies")(x.asInstanceOf[js.Any])
+  inline def cookies_=(x: CookieContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cookies")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.contentSettings.fullscreen")
   @js.native
   def fullscreen: FullscreenContentSetting = js.native
-  @scala.inline
-  def fullscreen_=(x: FullscreenContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fullscreen")(x.asInstanceOf[js.Any])
+  inline def fullscreen_=(x: FullscreenContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fullscreen")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.contentSettings.images")
   @js.native
   def images: ImagesContentSetting = js.native
-  @scala.inline
-  def images_=(x: ImagesContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("images")(x.asInstanceOf[js.Any])
+  inline def images_=(x: ImagesContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("images")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.contentSettings.javascript")
   @js.native
   def javascript: JavascriptContentSetting = js.native
-  @scala.inline
-  def javascript_=(x: JavascriptContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("javascript")(x.asInstanceOf[js.Any])
+  inline def javascript_=(x: JavascriptContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("javascript")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.contentSettings.location")
   @js.native
   def location: LocationContentSetting = js.native
-  @scala.inline
-  def location_=(x: LocationContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("location")(x.asInstanceOf[js.Any])
+  inline def location_=(x: LocationContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("location")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.contentSettings.microphone")
   @js.native
   def microphone: MicrophoneContentSetting = js.native
-  @scala.inline
-  def microphone_=(x: MicrophoneContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("microphone")(x.asInstanceOf[js.Any])
+  inline def microphone_=(x: MicrophoneContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("microphone")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.contentSettings.mouselock")
   @js.native
   def mouselock: MouselockContentSetting = js.native
-  @scala.inline
-  def mouselock_=(x: MouselockContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mouselock")(x.asInstanceOf[js.Any])
+  inline def mouselock_=(x: MouselockContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mouselock")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.contentSettings.notifications")
   @js.native
   def notifications: NotificationsContentSetting = js.native
-  @scala.inline
-  def notifications_=(x: NotificationsContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("notifications")(x.asInstanceOf[js.Any])
+  inline def notifications_=(x: NotificationsContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("notifications")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.contentSettings.plugins")
   @js.native
   def plugins: PluginsContentSetting = js.native
-  @scala.inline
-  def plugins_=(x: PluginsContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("plugins")(x.asInstanceOf[js.Any])
+  inline def plugins_=(x: PluginsContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("plugins")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.contentSettings.popups")
   @js.native
   def popups: PopupsContentSetting = js.native
-  @scala.inline
-  def popups_=(x: PopupsContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("popups")(x.asInstanceOf[js.Any])
+  inline def popups_=(x: PopupsContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("popups")(x.asInstanceOf[js.Any])
   
   @JSGlobal("chrome.contentSettings.unsandboxedPlugins")
   @js.native
   def unsandboxedPlugins: PpapiBrokerContentSetting = js.native
-  @scala.inline
-  def unsandboxedPlugins_=(x: PpapiBrokerContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unsandboxedPlugins")(x.asInstanceOf[js.Any])
+  inline def unsandboxedPlugins_=(x: PpapiBrokerContentSetting): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unsandboxedPlugins")(x.asInstanceOf[js.Any])
 }

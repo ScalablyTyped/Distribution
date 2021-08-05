@@ -36,78 +36,53 @@ object srcTestkitMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addressInputTestkitFactory(testkitArgs: TestkitArgs): Blur = ^.asInstanceOf[js.Dynamic].applyDynamic("addressInputTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[Blur]
+  inline def addressInputTestkitFactory(testkitArgs: TestkitArgs): Blur = ^.asInstanceOf[js.Dynamic].applyDynamic("addressInputTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[Blur]
   
-  @scala.inline
-  def autocompleteTestkitFactory(testkitArgs: TestkitArgs): Click = ^.asInstanceOf[js.Dynamic].applyDynamic("autocompleteTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[Click]
+  inline def autocompleteTestkitFactory(testkitArgs: TestkitArgs): Click = ^.asInstanceOf[js.Dynamic].applyDynamic("autocompleteTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[Click]
   
-  @scala.inline
-  def buttonNextTestkitFactory(testkitArgs: TestkitArgs): ButtonNextDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("buttonNextTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[ButtonNextDriver]
+  inline def buttonNextTestkitFactory(testkitArgs: TestkitArgs): ButtonNextDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("buttonNextTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[ButtonNextDriver]
   
-  @scala.inline
-  def buttonTestkitFactory(testkitArgs: TestkitArgs): ButtonDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("buttonTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[ButtonDriver]
+  inline def buttonTestkitFactory(testkitArgs: TestkitArgs): ButtonDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("buttonTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[ButtonDriver]
   
-  @scala.inline
-  def checkboxTestkitFactory(testkitArgs: TestkitArgs): Exists = ^.asInstanceOf[js.Dynamic].applyDynamic("checkboxTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[Exists]
+  inline def checkboxTestkitFactory(testkitArgs: TestkitArgs): Exists = ^.asInstanceOf[js.Dynamic].applyDynamic("checkboxTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[Exists]
   
-  @scala.inline
-  def circularProgressBarTestkitFactory(testkitArgs: TestkitArgs): CircularProgressBarDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("circularProgressBarTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[CircularProgressBarDriver]
+  inline def circularProgressBarTestkitFactory(testkitArgs: TestkitArgs): CircularProgressBarDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("circularProgressBarTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[CircularProgressBarDriver]
   
-  @scala.inline
-  def circularProgressBarUniTestkitFactory(testkitArgs: TestkitArgs): CircularProgressBarUniDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("circularProgressBarUniTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[CircularProgressBarUniDriver]
+  inline def circularProgressBarUniTestkitFactory(testkitArgs: TestkitArgs): CircularProgressBarUniDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("circularProgressBarUniTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[CircularProgressBarUniDriver]
   
-  @scala.inline
-  def dividerTestkitFactory(testkitArgs: TestkitArgs): IsVertical = ^.asInstanceOf[js.Dynamic].applyDynamic("dividerTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[IsVertical]
+  inline def dividerTestkitFactory(testkitArgs: TestkitArgs): IsVertical = ^.asInstanceOf[js.Dynamic].applyDynamic("dividerTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[IsVertical]
   
-  @scala.inline
-  def horizontalMenuTestkitFactory(testkitArgs: TestkitArgs): ClickMenuItem = ^.asInstanceOf[js.Dynamic].applyDynamic("horizontalMenuTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[ClickMenuItem]
+  inline def horizontalMenuTestkitFactory(testkitArgs: TestkitArgs): ClickMenuItem = ^.asInstanceOf[js.Dynamic].applyDynamic("horizontalMenuTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[ClickMenuItem]
   
-  @scala.inline
-  def inputTestkitFactory(testkitArgs: TestkitArgs): Focus = ^.asInstanceOf[js.Dynamic].applyDynamic("inputTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[Focus]
+  inline def inputTestkitFactory(testkitArgs: TestkitArgs): Focus = ^.asInstanceOf[js.Dynamic].applyDynamic("inputTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[Focus]
   
-  @scala.inline
-  def labelTestkitFactory(testkitArgs: TestkitArgs): GetForAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("labelTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[GetForAttribute]
+  inline def labelTestkitFactory(testkitArgs: TestkitArgs): GetForAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("labelTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[GetForAttribute]
   
-  @scala.inline
-  def labelWithOptionsTestkitFactory(testkitArgs: TestkitArgs): CheckboxDriverAt = ^.asInstanceOf[js.Dynamic].applyDynamic("labelWithOptionsTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[CheckboxDriverAt]
+  inline def labelWithOptionsTestkitFactory(testkitArgs: TestkitArgs): CheckboxDriverAt = ^.asInstanceOf[js.Dynamic].applyDynamic("labelWithOptionsTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[CheckboxDriverAt]
   
-  @scala.inline
-  def linearProgressBarTestkitFactory(testkitArgs: TestkitArgs): LinearProgressBarDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("linearProgressBarTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[LinearProgressBarDriver]
+  inline def linearProgressBarTestkitFactory(testkitArgs: TestkitArgs): LinearProgressBarDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("linearProgressBarTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[LinearProgressBarDriver]
   
-  @scala.inline
-  def linearProgressBarUniTestkitFactory(testkitArgs: TestkitArgs): LinearProgressBarUniDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("linearProgressBarUniTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[LinearProgressBarUniDriver]
+  inline def linearProgressBarUniTestkitFactory(testkitArgs: TestkitArgs): LinearProgressBarUniDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("linearProgressBarUniTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[LinearProgressBarUniDriver]
   
-  @scala.inline
-  def paginationTestkitFactory(testkitArgs: TestkitArgs): ChangeInput = ^.asInstanceOf[js.Dynamic].applyDynamic("paginationTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[ChangeInput]
+  inline def paginationTestkitFactory(testkitArgs: TestkitArgs): ChangeInput = ^.asInstanceOf[js.Dynamic].applyDynamic("paginationTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[ChangeInput]
   
-  @scala.inline
-  def popoverTestkitFactory(testkitArgs: TestkitArgs): GetArrowElement = ^.asInstanceOf[js.Dynamic].applyDynamic("popoverTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[GetArrowElement]
+  inline def popoverTestkitFactory(testkitArgs: TestkitArgs): GetArrowElement = ^.asInstanceOf[js.Dynamic].applyDynamic("popoverTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[GetArrowElement]
   
-  @scala.inline
-  def radioButtonTestkitFactory(testkitArgs: TestkitArgs): IconExists = ^.asInstanceOf[js.Dynamic].applyDynamic("radioButtonTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[IconExists]
+  inline def radioButtonTestkitFactory(testkitArgs: TestkitArgs): IconExists = ^.asInstanceOf[js.Dynamic].applyDynamic("radioButtonTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[IconExists]
   
-  @scala.inline
-  def signatureInputTestkitFactory(testkitArgs: TestkitArgs): SignatureInputDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("signatureInputTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[SignatureInputDriver]
+  inline def signatureInputTestkitFactory(testkitArgs: TestkitArgs): SignatureInputDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("signatureInputTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[SignatureInputDriver]
   
-  @scala.inline
-  def sliderTestkitFactory(testkitArgs: TestkitArgs): AriaLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("sliderTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[AriaLabel]
+  inline def sliderTestkitFactory(testkitArgs: TestkitArgs): AriaLabel = ^.asInstanceOf[js.Dynamic].applyDynamic("sliderTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[AriaLabel]
   
-  @scala.inline
-  def stylableBadgeTestkitFactory(testkitArgs: TestkitArgs): BadgeDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("stylableBadgeTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[BadgeDriver]
+  inline def stylableBadgeTestkitFactory(testkitArgs: TestkitArgs): BadgeDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("stylableBadgeTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[BadgeDriver]
   
-  @scala.inline
-  def thumbnailTestkitFactory(testkitArgs: TestkitArgs): ThumbnailDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("thumbnailTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[ThumbnailDriver]
+  inline def thumbnailTestkitFactory(testkitArgs: TestkitArgs): ThumbnailDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("thumbnailTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[ThumbnailDriver]
   
-  @scala.inline
-  def timePickerTestkitFactory(testkitArgs: TestkitArgs): ClickTickerDown = ^.asInstanceOf[js.Dynamic].applyDynamic("timePickerTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[ClickTickerDown]
+  inline def timePickerTestkitFactory(testkitArgs: TestkitArgs): ClickTickerDown = ^.asInstanceOf[js.Dynamic].applyDynamic("timePickerTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[ClickTickerDown]
   
-  @scala.inline
-  def toggleSwitchTestkitFactory(testkitArgs: TestkitArgs): GetId = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleSwitchTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[GetId]
+  inline def toggleSwitchTestkitFactory(testkitArgs: TestkitArgs): GetId = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleSwitchTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[GetId]
   
-  @scala.inline
-  def toggleSwitchUniTestkitFactory(testkitArgs: TestkitArgs): ToggleSwitchUniDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleSwitchUniTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[ToggleSwitchUniDriver]
+  inline def toggleSwitchUniTestkitFactory(testkitArgs: TestkitArgs): ToggleSwitchUniDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleSwitchUniTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[ToggleSwitchUniDriver]
   
-  @scala.inline
-  def tooltipTestkitFactory(testkitArgs: TestkitArgs): GetElementId = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltipTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[GetElementId]
+  inline def tooltipTestkitFactory(testkitArgs: TestkitArgs): GetElementId = ^.asInstanceOf[js.Dynamic].applyDynamic("tooltipTestkitFactory")(testkitArgs.asInstanceOf[js.Any]).asInstanceOf[GetElementId]
 }

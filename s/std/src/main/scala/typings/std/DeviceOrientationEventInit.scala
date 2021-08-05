@@ -18,46 +18,33 @@ trait DeviceOrientationEventInit
 }
 object DeviceOrientationEventInit {
   
-  @scala.inline
-  def apply(): DeviceOrientationEventInit = {
+  inline def apply(): DeviceOrientationEventInit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceOrientationEventInit]
   }
   
-  @scala.inline
-  implicit class DeviceOrientationEventInitMutableBuilder[Self <: DeviceOrientationEventInit] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceOrientationEventInit](x: Self) {
     
-    @scala.inline
-    def setAbsolute(value: scala.Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
+    inline def setAbsolute(value: scala.Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbsoluteUndefined: Self = StObject.set(x, "absolute", js.undefined)
+    inline def setAbsoluteUndefined: Self = StObject.set(x, "absolute", js.undefined)
     
-    @scala.inline
-    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphaNull: Self = StObject.set(x, "alpha", null)
+    inline def setAlphaNull: Self = StObject.set(x, "alpha", null)
     
-    @scala.inline
-    def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+    inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
-    @scala.inline
-    def setBeta(value: Double): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
+    inline def setBeta(value: Double): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBetaNull: Self = StObject.set(x, "beta", null)
+    inline def setBetaNull: Self = StObject.set(x, "beta", null)
     
-    @scala.inline
-    def setBetaUndefined: Self = StObject.set(x, "beta", js.undefined)
+    inline def setBetaUndefined: Self = StObject.set(x, "beta", js.undefined)
     
-    @scala.inline
-    def setGamma(value: Double): Self = StObject.set(x, "gamma", value.asInstanceOf[js.Any])
+    inline def setGamma(value: Double): Self = StObject.set(x, "gamma", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGammaNull: Self = StObject.set(x, "gamma", null)
+    inline def setGammaNull: Self = StObject.set(x, "gamma", null)
     
-    @scala.inline
-    def setGammaUndefined: Self = StObject.set(x, "gamma", js.undefined)
+    inline def setGammaUndefined: Self = StObject.set(x, "gamma", js.undefined)
   }
 }

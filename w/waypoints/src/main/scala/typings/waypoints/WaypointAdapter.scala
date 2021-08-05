@@ -27,8 +27,7 @@ trait WaypointAdapter extends StObject {
 }
 object WaypointAdapter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     innerHeight: () => Double,
     innerWidth: () => Double,
     off: String => Unit,
@@ -43,34 +42,24 @@ object WaypointAdapter {
     __obj.asInstanceOf[WaypointAdapter]
   }
   
-  @scala.inline
-  implicit class WaypointAdapterMutableBuilder[Self <: WaypointAdapter] (val x: Self) extends AnyVal {
+  extension [Self <: WaypointAdapter](x: Self) {
     
-    @scala.inline
-    def setInnerHeight(value: () => Double): Self = StObject.set(x, "innerHeight", js.Any.fromFunction0(value))
+    inline def setInnerHeight(value: () => Double): Self = StObject.set(x, "innerHeight", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInnerWidth(value: () => Double): Self = StObject.set(x, "innerWidth", js.Any.fromFunction0(value))
+    inline def setInnerWidth(value: () => Double): Self = StObject.set(x, "innerWidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOff(value: String => Unit): Self = StObject.set(x, "off", js.Any.fromFunction1(value))
+    inline def setOff(value: String => Unit): Self = StObject.set(x, "off", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOffset(value: () => Left): Self = StObject.set(x, "offset", js.Any.fromFunction0(value))
+    inline def setOffset(value: () => Left): Self = StObject.set(x, "offset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOn(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+    inline def setOn(value: (String, js.Function0[Unit]) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOuterHeight(value: Boolean => Double): Self = StObject.set(x, "outerHeight", js.Any.fromFunction1(value))
+    inline def setOuterHeight(value: Boolean => Double): Self = StObject.set(x, "outerHeight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOuterWidth(value: Boolean => Double): Self = StObject.set(x, "outerWidth", js.Any.fromFunction1(value))
+    inline def setOuterWidth(value: Boolean => Double): Self = StObject.set(x, "outerWidth", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScrollLeft(value: () => Double): Self = StObject.set(x, "scrollLeft", js.Any.fromFunction0(value))
+    inline def setScrollLeft(value: () => Double): Self = StObject.set(x, "scrollLeft", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setScrollTop(value: () => Double): Self = StObject.set(x, "scrollTop", js.Any.fromFunction0(value))
+    inline def setScrollTop(value: () => Double): Self = StObject.set(x, "scrollTop", js.Any.fromFunction0(value))
   }
 }

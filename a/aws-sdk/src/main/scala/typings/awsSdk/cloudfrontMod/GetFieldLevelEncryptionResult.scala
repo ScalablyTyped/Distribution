@@ -18,25 +18,19 @@ trait GetFieldLevelEncryptionResult extends StObject {
 }
 object GetFieldLevelEncryptionResult {
   
-  @scala.inline
-  def apply(): GetFieldLevelEncryptionResult = {
+  inline def apply(): GetFieldLevelEncryptionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetFieldLevelEncryptionResult]
   }
   
-  @scala.inline
-  implicit class GetFieldLevelEncryptionResultMutableBuilder[Self <: GetFieldLevelEncryptionResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetFieldLevelEncryptionResult](x: Self) {
     
-    @scala.inline
-    def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
+    inline def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
+    inline def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
     
-    @scala.inline
-    def setFieldLevelEncryption(value: FieldLevelEncryption): Self = StObject.set(x, "FieldLevelEncryption", value.asInstanceOf[js.Any])
+    inline def setFieldLevelEncryption(value: FieldLevelEncryption): Self = StObject.set(x, "FieldLevelEncryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldLevelEncryptionUndefined: Self = StObject.set(x, "FieldLevelEncryption", js.undefined)
+    inline def setFieldLevelEncryptionUndefined: Self = StObject.set(x, "FieldLevelEncryption", js.undefined)
   }
 }

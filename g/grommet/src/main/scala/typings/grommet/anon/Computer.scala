@@ -14,31 +14,23 @@ trait Computer extends StObject {
 }
 object Computer {
   
-  @scala.inline
-  def apply(): Computer = {
+  inline def apply(): Computer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Computer]
   }
   
-  @scala.inline
-  implicit class ComputerMutableBuilder[Self <: Computer] (val x: Self) extends AnyVal {
+  extension [Self <: Computer](x: Self) {
     
-    @scala.inline
-    def setComputer(value: String): Self = StObject.set(x, "computer", value.asInstanceOf[js.Any])
+    inline def setComputer(value: String): Self = StObject.set(x, "computer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputerUndefined: Self = StObject.set(x, "computer", js.undefined)
+    inline def setComputerUndefined: Self = StObject.set(x, "computer", js.undefined)
     
-    @scala.inline
-    def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+    inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
+    inline def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
     
-    @scala.inline
-    def setTablet(value: String): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
+    inline def setTablet(value: String): Self = StObject.set(x, "tablet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabletUndefined: Self = StObject.set(x, "tablet", js.undefined)
+    inline def setTabletUndefined: Self = StObject.set(x, "tablet", js.undefined)
   }
 }

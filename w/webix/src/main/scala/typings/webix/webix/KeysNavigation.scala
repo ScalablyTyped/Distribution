@@ -10,16 +10,13 @@ trait KeysNavigation extends StObject {
 }
 object KeysNavigation {
   
-  @scala.inline
-  def apply(moveSelection: String => Unit): KeysNavigation = {
+  inline def apply(moveSelection: String => Unit): KeysNavigation = {
     val __obj = js.Dynamic.literal(moveSelection = js.Any.fromFunction1(moveSelection))
     __obj.asInstanceOf[KeysNavigation]
   }
   
-  @scala.inline
-  implicit class KeysNavigationMutableBuilder[Self <: KeysNavigation] (val x: Self) extends AnyVal {
+  extension [Self <: KeysNavigation](x: Self) {
     
-    @scala.inline
-    def setMoveSelection(value: String => Unit): Self = StObject.set(x, "moveSelection", js.Any.fromFunction1(value))
+    inline def setMoveSelection(value: String => Unit): Self = StObject.set(x, "moveSelection", js.Any.fromFunction1(value))
   }
 }

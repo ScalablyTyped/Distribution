@@ -20,8 +20,7 @@ trait ValidationMessageBasicLocationObject extends StObject {
 }
 object ValidationMessageBasicLocationObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     extract: String,
     firstColumn: Double,
     hiliteLength: Double,
@@ -33,25 +32,18 @@ object ValidationMessageBasicLocationObject {
     __obj.asInstanceOf[ValidationMessageBasicLocationObject]
   }
   
-  @scala.inline
-  implicit class ValidationMessageBasicLocationObjectMutableBuilder[Self <: ValidationMessageBasicLocationObject] (val x: Self) extends AnyVal {
+  extension [Self <: ValidationMessageBasicLocationObject](x: Self) {
     
-    @scala.inline
-    def setExtract(value: String): Self = StObject.set(x, "extract", value.asInstanceOf[js.Any])
+    inline def setExtract(value: String): Self = StObject.set(x, "extract", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstColumn(value: Double): Self = StObject.set(x, "firstColumn", value.asInstanceOf[js.Any])
+    inline def setFirstColumn(value: Double): Self = StObject.set(x, "firstColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiliteLength(value: Double): Self = StObject.set(x, "hiliteLength", value.asInstanceOf[js.Any])
+    inline def setHiliteLength(value: Double): Self = StObject.set(x, "hiliteLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiliteStart(value: Double): Self = StObject.set(x, "hiliteStart", value.asInstanceOf[js.Any])
+    inline def setHiliteStart(value: Double): Self = StObject.set(x, "hiliteStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastColumn(value: Double): Self = StObject.set(x, "lastColumn", value.asInstanceOf[js.Any])
+    inline def setLastColumn(value: Double): Self = StObject.set(x, "lastColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastLine(value: Double): Self = StObject.set(x, "lastLine", value.asInstanceOf[js.Any])
+    inline def setLastLine(value: Double): Self = StObject.set(x, "lastLine", value.asInstanceOf[js.Any])
   }
 }

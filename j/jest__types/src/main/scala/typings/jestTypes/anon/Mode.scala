@@ -31,8 +31,7 @@ trait Mode
 }
 object Mode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     asyncError: typings.std.Error,
     fn: /* done */ js.UndefOr[DoneFn] => js.UndefOr[(js.Promise[js.UndefOr[Unit | js.Any]]) | Unit],
     testName: TestName
@@ -41,31 +40,22 @@ object Mode {
     __obj.asInstanceOf[Mode]
   }
   
-  @scala.inline
-  implicit class ModeMutableBuilder[Self <: Mode] (val x: Self) extends AnyVal {
+  extension [Self <: Mode](x: Self) {
     
-    @scala.inline
-    def setAsyncError(value: typings.std.Error): Self = StObject.set(x, "asyncError", value.asInstanceOf[js.Any])
+    inline def setAsyncError(value: typings.std.Error): Self = StObject.set(x, "asyncError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFn(value: /* done */ js.UndefOr[DoneFn] => js.UndefOr[(js.Promise[js.UndefOr[Unit | js.Any]]) | Unit]): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
+    inline def setFn(value: /* done */ js.UndefOr[DoneFn] => js.UndefOr[(js.Promise[js.UndefOr[Unit | js.Any]]) | Unit]): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMode(value: TestMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: TestMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setName(value: add_test): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: add_test): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestName(value: TestName): Self = StObject.set(x, "testName", value.asInstanceOf[js.Any])
+    inline def setTestName(value: TestName): Self = StObject.set(x, "testName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

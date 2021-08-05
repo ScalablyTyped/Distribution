@@ -10,18 +10,17 @@ trait ConnectedComponents extends StObject {
   
   def componentId(v: Double): Double
   
-  var count: js.Any
+  /* private */ var count: js.Any
   
   def dfs(G: Graph, v: Double): Unit
   
-  var id: js.Any
+  /* private */ var id: js.Any
   
-  var marked: js.Any
+  /* private */ var marked: js.Any
 }
 object ConnectedComponents {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     componentCount: () => Double,
     componentId: Double => Double,
     count: js.Any,
@@ -33,25 +32,18 @@ object ConnectedComponents {
     __obj.asInstanceOf[ConnectedComponents]
   }
   
-  @scala.inline
-  implicit class ConnectedComponentsMutableBuilder[Self <: ConnectedComponents] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectedComponents](x: Self) {
     
-    @scala.inline
-    def setComponentCount(value: () => Double): Self = StObject.set(x, "componentCount", js.Any.fromFunction0(value))
+    inline def setComponentCount(value: () => Double): Self = StObject.set(x, "componentCount", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setComponentId(value: Double => Double): Self = StObject.set(x, "componentId", js.Any.fromFunction1(value))
+    inline def setComponentId(value: Double => Double): Self = StObject.set(x, "componentId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCount(value: js.Any): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: js.Any): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDfs(value: (Graph, Double) => Unit): Self = StObject.set(x, "dfs", js.Any.fromFunction2(value))
+    inline def setDfs(value: (Graph, Double) => Unit): Self = StObject.set(x, "dfs", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarked(value: js.Any): Self = StObject.set(x, "marked", value.asInstanceOf[js.Any])
+    inline def setMarked(value: js.Any): Self = StObject.set(x, "marked", value.asInstanceOf[js.Any])
   }
 }

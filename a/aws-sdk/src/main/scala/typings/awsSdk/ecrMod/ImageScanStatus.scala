@@ -18,25 +18,19 @@ trait ImageScanStatus extends StObject {
 }
 object ImageScanStatus {
   
-  @scala.inline
-  def apply(): ImageScanStatus = {
+  inline def apply(): ImageScanStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageScanStatus]
   }
   
-  @scala.inline
-  implicit class ImageScanStatusMutableBuilder[Self <: ImageScanStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ImageScanStatus](x: Self) {
     
-    @scala.inline
-    def setDescription(value: ScanStatusDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: ScanStatusDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ScanStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ScanStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

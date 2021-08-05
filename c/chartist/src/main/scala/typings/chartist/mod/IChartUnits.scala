@@ -26,8 +26,7 @@ trait IChartUnits extends StObject {
 }
 object IChartUnits {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dir: vertical | horizontal,
     len: height | width,
     pos: x | y,
@@ -39,25 +38,18 @@ object IChartUnits {
     __obj.asInstanceOf[IChartUnits]
   }
   
-  @scala.inline
-  implicit class IChartUnitsMutableBuilder[Self <: IChartUnits] (val x: Self) extends AnyVal {
+  extension [Self <: IChartUnits](x: Self) {
     
-    @scala.inline
-    def setDir(value: vertical | horizontal): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+    inline def setDir(value: vertical | horizontal): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLen(value: height | width): Self = StObject.set(x, "len", value.asInstanceOf[js.Any])
+    inline def setLen(value: height | width): Self = StObject.set(x, "len", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPos(value: typings.chartist.chartistStrings.x | y): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+    inline def setPos(value: typings.chartist.chartistStrings.x | y): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRectEnd(value: String): Self = StObject.set(x, "rectEnd", value.asInstanceOf[js.Any])
+    inline def setRectEnd(value: String): Self = StObject.set(x, "rectEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRectOffset(value: String): Self = StObject.set(x, "rectOffset", value.asInstanceOf[js.Any])
+    inline def setRectOffset(value: String): Self = StObject.set(x, "rectOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRectStart(value: String): Self = StObject.set(x, "rectStart", value.asInstanceOf[js.Any])
+    inline def setRectStart(value: String): Self = StObject.set(x, "rectStart", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait SpotCapacityRebalance extends StObject {
 }
 object SpotCapacityRebalance {
   
-  @scala.inline
-  def apply(): SpotCapacityRebalance = {
+  inline def apply(): SpotCapacityRebalance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpotCapacityRebalance]
   }
   
-  @scala.inline
-  implicit class SpotCapacityRebalanceMutableBuilder[Self <: SpotCapacityRebalance] (val x: Self) extends AnyVal {
+  extension [Self <: SpotCapacityRebalance](x: Self) {
     
-    @scala.inline
-    def setReplacementStrategy(value: ReplacementStrategy): Self = StObject.set(x, "ReplacementStrategy", value.asInstanceOf[js.Any])
+    inline def setReplacementStrategy(value: ReplacementStrategy): Self = StObject.set(x, "ReplacementStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplacementStrategyUndefined: Self = StObject.set(x, "ReplacementStrategy", js.undefined)
+    inline def setReplacementStrategyUndefined: Self = StObject.set(x, "ReplacementStrategy", js.undefined)
   }
 }

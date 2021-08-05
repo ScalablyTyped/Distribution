@@ -8,6 +8,5 @@ object amazonConnectStreamsStrings {
   
   @js.native
   sealed trait AgentChannelConcurrencyMap extends StObject
-  @scala.inline
-  def AgentChannelConcurrencyMap: AgentChannelConcurrencyMap = "AgentChannelConcurrencyMap".asInstanceOf[AgentChannelConcurrencyMap]
+  inline def AgentChannelConcurrencyMap: AgentChannelConcurrencyMap = "AgentChannelConcurrencyMap".asInstanceOf[AgentChannelConcurrencyMap]
 }

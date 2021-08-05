@@ -38,37 +38,27 @@ trait AttributionProperties
 }
 object AttributionProperties {
   
-  @scala.inline
-  def apply(): AttributionProperties = {
+  inline def apply(): AttributionProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttributionProperties]
   }
   
-  @scala.inline
-  implicit class AttributionPropertiesMutableBuilder[Self <: AttributionProperties] (val x: Self) extends AnyVal {
+  extension [Self <: AttributionProperties](x: Self) {
     
-    @scala.inline
-    def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+    inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+    inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
     
-    @scala.inline
-    def setItemDelimiter(value: String): Self = StObject.set(x, "itemDelimiter", value.asInstanceOf[js.Any])
+    inline def setItemDelimiter(value: String): Self = StObject.set(x, "itemDelimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemDelimiterUndefined: Self = StObject.set(x, "itemDelimiter", js.undefined)
+    inline def setItemDelimiterUndefined: Self = StObject.set(x, "itemDelimiter", js.undefined)
     
-    @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModel(value: AttributionViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
+    inline def setViewModel(value: AttributionViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
+    inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

@@ -18,31 +18,23 @@ trait TopicalExploreFeedResponseInItem extends StObject {
 }
 object TopicalExploreFeedResponseInItem {
   
-  @scala.inline
-  def apply(position: js.Array[Double | String]): TopicalExploreFeedResponseInItem = {
+  inline def apply(position: js.Array[Double | String]): TopicalExploreFeedResponseInItem = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopicalExploreFeedResponseInItem]
   }
   
-  @scala.inline
-  implicit class TopicalExploreFeedResponseInItemMutableBuilder[Self <: TopicalExploreFeedResponseInItem] (val x: Self) extends AnyVal {
+  extension [Self <: TopicalExploreFeedResponseInItem](x: Self) {
     
-    @scala.inline
-    def setPosition(value: js.Array[Double | String]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: js.Array[Double | String]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionVarargs(value: (Double | String)*): Self = StObject.set(x, "position", js.Array(value :_*))
+    inline def setPositionVarargs(value: (Double | String)*): Self = StObject.set(x, "position", js.Array(value :_*))
     
-    @scala.inline
-    def setProduct(value: TopicalExploreFeedResponseProduct): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+    inline def setProduct(value: TopicalExploreFeedResponseProduct): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
+    inline def setProductUndefined: Self = StObject.set(x, "product", js.undefined)
     
-    @scala.inline
-    def setUser(value: TopicalExploreFeedResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: TopicalExploreFeedResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

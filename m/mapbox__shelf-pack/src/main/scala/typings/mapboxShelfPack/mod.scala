@@ -46,20 +46,16 @@ object mod {
   }
   object CreateOption {
     
-    @scala.inline
-    def apply(): CreateOption = {
+    inline def apply(): CreateOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateOption]
     }
     
-    @scala.inline
-    implicit class CreateOptionMutableBuilder[Self <: CreateOption] (val x: Self) extends AnyVal {
+    extension [Self <: CreateOption](x: Self) {
       
-      @scala.inline
-      def setAutoResize(value: Boolean): Self = StObject.set(x, "autoResize", value.asInstanceOf[js.Any])
+      inline def setAutoResize(value: Boolean): Self = StObject.set(x, "autoResize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoResizeUndefined: Self = StObject.set(x, "autoResize", js.undefined)
+      inline def setAutoResizeUndefined: Self = StObject.set(x, "autoResize", js.undefined)
     }
   }
   
@@ -72,20 +68,16 @@ object mod {
   }
   object PackOption {
     
-    @scala.inline
-    def apply(): PackOption = {
+    inline def apply(): PackOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PackOption]
     }
     
-    @scala.inline
-    implicit class PackOptionMutableBuilder[Self <: PackOption] (val x: Self) extends AnyVal {
+    extension [Self <: PackOption](x: Self) {
       
-      @scala.inline
-      def setInPlace(value: Boolean): Self = StObject.set(x, "inPlace", value.asInstanceOf[js.Any])
+      inline def setInPlace(value: Boolean): Self = StObject.set(x, "inPlace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInPlaceUndefined: Self = StObject.set(x, "inPlace", js.undefined)
+      inline def setInPlaceUndefined: Self = StObject.set(x, "inPlace", js.undefined)
     }
   }
   
@@ -95,20 +87,16 @@ object mod {
   }
   object Request {
     
-    @scala.inline
-    def apply(): Request = {
+    inline def apply(): Request = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Request]
     }
     
-    @scala.inline
-    implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+    extension [Self <: Request](x: Self) {
       
-      @scala.inline
-      def setId(value: ID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: ID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     }
   }
   
@@ -122,20 +110,16 @@ object mod {
   }
   object RequestLong {
     
-    @scala.inline
-    def apply(height: Double, width: Double): RequestLong = {
+    inline def apply(height: Double, width: Double): RequestLong = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequestLong]
     }
     
-    @scala.inline
-    implicit class RequestLongMutableBuilder[Self <: RequestLong] (val x: Self) extends AnyVal {
+    extension [Self <: RequestLong](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -149,20 +133,16 @@ object mod {
   }
   object RequestShort {
     
-    @scala.inline
-    def apply(h: Double, w: Double): RequestShort = {
+    inline def apply(h: Double, w: Double): RequestShort = {
       val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequestShort]
     }
     
-    @scala.inline
-    implicit class RequestShortMutableBuilder[Self <: RequestShort] (val x: Self) extends AnyVal {
+    extension [Self <: RequestShort](x: Self) {
       
-      @scala.inline
-      def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+      inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+      inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     }
   }
   

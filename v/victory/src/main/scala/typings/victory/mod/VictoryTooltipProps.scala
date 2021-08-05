@@ -177,214 +177,145 @@ trait VictoryTooltipProps extends StObject {
 }
 object VictoryTooltipProps {
   
-  @scala.inline
-  def apply(): VictoryTooltipProps = {
+  inline def apply(): VictoryTooltipProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VictoryTooltipProps]
   }
   
-  @scala.inline
-  implicit class VictoryTooltipPropsMutableBuilder[Self <: VictoryTooltipProps] (val x: Self) extends AnyVal {
+  extension [Self <: VictoryTooltipProps](x: Self) {
     
-    @scala.inline
-    def setActivateData(value: Boolean): Self = StObject.set(x, "activateData", value.asInstanceOf[js.Any])
+    inline def setActivateData(value: Boolean): Self = StObject.set(x, "activateData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivateDataUndefined: Self = StObject.set(x, "activateData", js.undefined)
+    inline def setActivateDataUndefined: Self = StObject.set(x, "activateData", js.undefined)
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    @scala.inline
-    def setAngle(value: String | Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: String | Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+    inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
-    @scala.inline
-    def setCornerRadius(value: NumberOrCallback): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
+    inline def setCornerRadius(value: NumberOrCallback): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCornerRadiusFunction1(value: /* args */ CallbackArgs => Double): Self = StObject.set(x, "cornerRadius", js.Any.fromFunction1(value))
+    inline def setCornerRadiusFunction1(value: /* args */ CallbackArgs => Double): Self = StObject.set(x, "cornerRadius", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCornerRadiusUndefined: Self = StObject.set(x, "cornerRadius", js.undefined)
+    inline def setCornerRadiusUndefined: Self = StObject.set(x, "cornerRadius", js.undefined)
     
-    @scala.inline
-    def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setDatum(value: js.Object): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
+    inline def setDatum(value: js.Object): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatumUndefined: Self = StObject.set(x, "datum", js.undefined)
+    inline def setDatumUndefined: Self = StObject.set(x, "datum", js.undefined)
     
-    @scala.inline
-    def setDx(value: StringOrNumberOrCallback): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
+    inline def setDx(value: StringOrNumberOrCallback): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDxFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "dx", js.Any.fromFunction1(value))
+    inline def setDxFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "dx", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDxUndefined: Self = StObject.set(x, "dx", js.undefined)
+    inline def setDxUndefined: Self = StObject.set(x, "dx", js.undefined)
     
-    @scala.inline
-    def setDy(value: StringOrNumberOrCallback): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
+    inline def setDy(value: StringOrNumberOrCallback): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDyFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "dy", js.Any.fromFunction1(value))
+    inline def setDyFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "dy", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
+    inline def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
     
-    @scala.inline
-    def setEvents(value: js.Object): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: js.Object): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    @scala.inline
-    def setFlyoutComponent(value: ReactElement): Self = StObject.set(x, "flyoutComponent", value.asInstanceOf[js.Any])
+    inline def setFlyoutComponent(value: ReactElement): Self = StObject.set(x, "flyoutComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlyoutComponentUndefined: Self = StObject.set(x, "flyoutComponent", js.undefined)
+    inline def setFlyoutComponentUndefined: Self = StObject.set(x, "flyoutComponent", js.undefined)
     
-    @scala.inline
-    def setFlyoutHeight(value: NumberOrCallback): Self = StObject.set(x, "flyoutHeight", value.asInstanceOf[js.Any])
+    inline def setFlyoutHeight(value: NumberOrCallback): Self = StObject.set(x, "flyoutHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlyoutHeightFunction1(value: /* args */ CallbackArgs => Double): Self = StObject.set(x, "flyoutHeight", js.Any.fromFunction1(value))
+    inline def setFlyoutHeightFunction1(value: /* args */ CallbackArgs => Double): Self = StObject.set(x, "flyoutHeight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFlyoutHeightUndefined: Self = StObject.set(x, "flyoutHeight", js.undefined)
+    inline def setFlyoutHeightUndefined: Self = StObject.set(x, "flyoutHeight", js.undefined)
     
-    @scala.inline
-    def setFlyoutStyle(value: VictoryStyleObject): Self = StObject.set(x, "flyoutStyle", value.asInstanceOf[js.Any])
+    inline def setFlyoutStyle(value: VictoryStyleObject): Self = StObject.set(x, "flyoutStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlyoutStyleUndefined: Self = StObject.set(x, "flyoutStyle", js.undefined)
+    inline def setFlyoutStyleUndefined: Self = StObject.set(x, "flyoutStyle", js.undefined)
     
-    @scala.inline
-    def setFlyoutWidth(value: NumberOrCallback): Self = StObject.set(x, "flyoutWidth", value.asInstanceOf[js.Any])
+    inline def setFlyoutWidth(value: NumberOrCallback): Self = StObject.set(x, "flyoutWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlyoutWidthFunction1(value: /* args */ CallbackArgs => Double): Self = StObject.set(x, "flyoutWidth", js.Any.fromFunction1(value))
+    inline def setFlyoutWidthFunction1(value: /* args */ CallbackArgs => Double): Self = StObject.set(x, "flyoutWidth", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFlyoutWidthUndefined: Self = StObject.set(x, "flyoutWidth", js.undefined)
+    inline def setFlyoutWidthUndefined: Self = StObject.set(x, "flyoutWidth", js.undefined)
     
-    @scala.inline
-    def setGroupComponent(value: ReactElement): Self = StObject.set(x, "groupComponent", value.asInstanceOf[js.Any])
+    inline def setGroupComponent(value: ReactElement): Self = StObject.set(x, "groupComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupComponentUndefined: Self = StObject.set(x, "groupComponent", js.undefined)
+    inline def setGroupComponentUndefined: Self = StObject.set(x, "groupComponent", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+    inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
+    inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
     
-    @scala.inline
-    def setIndex(value: Double | String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double | String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setLabelComponent(value: ReactElement): Self = StObject.set(x, "labelComponent", value.asInstanceOf[js.Any])
+    inline def setLabelComponent(value: ReactElement): Self = StObject.set(x, "labelComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelComponentUndefined: Self = StObject.set(x, "labelComponent", js.undefined)
+    inline def setLabelComponentUndefined: Self = StObject.set(x, "labelComponent", js.undefined)
     
-    @scala.inline
-    def setOrientation(value: OrientationTypes | VictoryNumberCallback): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: OrientationTypes | VictoryNumberCallback): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationFunction1(value: /* args */ CallbackArgs => Double): Self = StObject.set(x, "orientation", js.Any.fromFunction1(value))
+    inline def setOrientationFunction1(value: /* args */ CallbackArgs => Double): Self = StObject.set(x, "orientation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    @scala.inline
-    def setPointerLength(value: NumberOrCallback): Self = StObject.set(x, "pointerLength", value.asInstanceOf[js.Any])
+    inline def setPointerLength(value: NumberOrCallback): Self = StObject.set(x, "pointerLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointerLengthFunction1(value: /* args */ CallbackArgs => Double): Self = StObject.set(x, "pointerLength", js.Any.fromFunction1(value))
+    inline def setPointerLengthFunction1(value: /* args */ CallbackArgs => Double): Self = StObject.set(x, "pointerLength", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPointerLengthUndefined: Self = StObject.set(x, "pointerLength", js.undefined)
+    inline def setPointerLengthUndefined: Self = StObject.set(x, "pointerLength", js.undefined)
     
-    @scala.inline
-    def setPointerWidth(value: NumberOrCallback): Self = StObject.set(x, "pointerWidth", value.asInstanceOf[js.Any])
+    inline def setPointerWidth(value: NumberOrCallback): Self = StObject.set(x, "pointerWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointerWidthFunction1(value: /* args */ CallbackArgs => Double): Self = StObject.set(x, "pointerWidth", js.Any.fromFunction1(value))
+    inline def setPointerWidthFunction1(value: /* args */ CallbackArgs => Double): Self = StObject.set(x, "pointerWidth", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPointerWidthUndefined: Self = StObject.set(x, "pointerWidth", js.undefined)
+    inline def setPointerWidthUndefined: Self = StObject.set(x, "pointerWidth", js.undefined)
     
-    @scala.inline
-    def setRenderInPortal(value: Boolean): Self = StObject.set(x, "renderInPortal", value.asInstanceOf[js.Any])
+    inline def setRenderInPortal(value: Boolean): Self = StObject.set(x, "renderInPortal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderInPortalUndefined: Self = StObject.set(x, "renderInPortal", js.undefined)
+    inline def setRenderInPortalUndefined: Self = StObject.set(x, "renderInPortal", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setText(value: StringOrNumberOrCallback | (js.Array[Double | String])): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: StringOrNumberOrCallback | (js.Array[Double | String])): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
+    inline def setTextFunction1(value: /* args */ CallbackArgs => String | Double): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setTextVarargs(value: (Double | String)*): Self = StObject.set(x, "text", js.Array(value :_*))
+    inline def setTextVarargs(value: (Double | String)*): Self = StObject.set(x, "text", js.Array(value :_*))
     
-    @scala.inline
-    def setTheme(value: VictoryThemeDefinition): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: VictoryThemeDefinition): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

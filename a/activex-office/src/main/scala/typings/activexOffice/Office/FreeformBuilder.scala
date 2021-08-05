@@ -154,7 +154,7 @@ trait FreeformBuilder extends StObject {
   
   val Creator: Double = js.native
   
-  @JSName("Office.FreeformBuilder_typekey")
+  /* private */ @JSName("Office.FreeformBuilder_typekey")
   var OfficeDotFreeformBuilder_typekey: FreeformBuilder = js.native
   
   val Parent: js.Any = js.native

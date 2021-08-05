@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ManagedAppPinCharacterSet extends StObject
 object ManagedAppPinCharacterSet {
   
-  @scala.inline
-  def alphanumericAndSymbol: typings.microsoftGraph.microsoftGraphStrings.alphanumericAndSymbol = "alphanumericAndSymbol".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.alphanumericAndSymbol]
+  inline def alphanumericAndSymbol: typings.microsoftGraph.microsoftGraphStrings.alphanumericAndSymbol = "alphanumericAndSymbol".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.alphanumericAndSymbol]
   
-  @scala.inline
-  def numeric: typings.microsoftGraph.microsoftGraphStrings.numeric = "numeric".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.numeric]
+  inline def numeric: typings.microsoftGraph.microsoftGraphStrings.numeric = "numeric".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.numeric]
 }

@@ -97,8 +97,7 @@ object StaveNote {
   @JSGlobal("Vex.Flow.StaveNote.DEBUG")
   @js.native
   def DEBUG: Boolean = js.native
-  @scala.inline
-  def DEBUG_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEBUG")(x.asInstanceOf[js.Any])
+  inline def DEBUG_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEBUG")(x.asInstanceOf[js.Any])
   
   @JSGlobal("Vex.Flow.StaveNote.STEM_DOWN")
   @js.native
@@ -109,14 +108,11 @@ object StaveNote {
   val STEM_UP: Double = js.native
   
   /* static member */
-  @scala.inline
-  def format(notes: js.Array[typings.vexflow.Vex.Flow.StaveNote], state: Leftshift): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(notes.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def format(notes: js.Array[typings.vexflow.Vex.Flow.StaveNote], state: Leftshift): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(notes.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @scala.inline
-  def formatByY(notes: js.Array[typings.vexflow.Vex.Flow.StaveNote], state: Leftshift): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("formatByY")(notes.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def formatByY(notes: js.Array[typings.vexflow.Vex.Flow.StaveNote], state: Leftshift): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("formatByY")(notes.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @scala.inline
-  def postFormat(notes: js.Array[typings.vexflow.Vex.Flow.StaveNote]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("postFormat")(notes.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def postFormat(notes: js.Array[typings.vexflow.Vex.Flow.StaveNote]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("postFormat")(notes.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

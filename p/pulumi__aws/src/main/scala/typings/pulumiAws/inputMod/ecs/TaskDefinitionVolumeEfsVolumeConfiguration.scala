@@ -34,40 +34,29 @@ trait TaskDefinitionVolumeEfsVolumeConfiguration extends StObject {
 }
 object TaskDefinitionVolumeEfsVolumeConfiguration {
   
-  @scala.inline
-  def apply(fileSystemId: Input[String]): TaskDefinitionVolumeEfsVolumeConfiguration = {
+  inline def apply(fileSystemId: Input[String]): TaskDefinitionVolumeEfsVolumeConfiguration = {
     val __obj = js.Dynamic.literal(fileSystemId = fileSystemId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskDefinitionVolumeEfsVolumeConfiguration]
   }
   
-  @scala.inline
-  implicit class TaskDefinitionVolumeEfsVolumeConfigurationMutableBuilder[Self <: TaskDefinitionVolumeEfsVolumeConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: TaskDefinitionVolumeEfsVolumeConfiguration](x: Self) {
     
-    @scala.inline
-    def setAuthorizationConfig(value: Input[TaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig]): Self = StObject.set(x, "authorizationConfig", value.asInstanceOf[js.Any])
+    inline def setAuthorizationConfig(value: Input[TaskDefinitionVolumeEfsVolumeConfigurationAuthorizationConfig]): Self = StObject.set(x, "authorizationConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizationConfigUndefined: Self = StObject.set(x, "authorizationConfig", js.undefined)
+    inline def setAuthorizationConfigUndefined: Self = StObject.set(x, "authorizationConfig", js.undefined)
     
-    @scala.inline
-    def setFileSystemId(value: Input[String]): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
+    inline def setFileSystemId(value: Input[String]): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootDirectory(value: Input[String]): Self = StObject.set(x, "rootDirectory", value.asInstanceOf[js.Any])
+    inline def setRootDirectory(value: Input[String]): Self = StObject.set(x, "rootDirectory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootDirectoryUndefined: Self = StObject.set(x, "rootDirectory", js.undefined)
+    inline def setRootDirectoryUndefined: Self = StObject.set(x, "rootDirectory", js.undefined)
     
-    @scala.inline
-    def setTransitEncryption(value: Input[String]): Self = StObject.set(x, "transitEncryption", value.asInstanceOf[js.Any])
+    inline def setTransitEncryption(value: Input[String]): Self = StObject.set(x, "transitEncryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitEncryptionPort(value: Input[Double]): Self = StObject.set(x, "transitEncryptionPort", value.asInstanceOf[js.Any])
+    inline def setTransitEncryptionPort(value: Input[Double]): Self = StObject.set(x, "transitEncryptionPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitEncryptionPortUndefined: Self = StObject.set(x, "transitEncryptionPort", js.undefined)
+    inline def setTransitEncryptionPortUndefined: Self = StObject.set(x, "transitEncryptionPort", js.undefined)
     
-    @scala.inline
-    def setTransitEncryptionUndefined: Self = StObject.set(x, "transitEncryption", js.undefined)
+    inline def setTransitEncryptionUndefined: Self = StObject.set(x, "transitEncryption", js.undefined)
   }
 }

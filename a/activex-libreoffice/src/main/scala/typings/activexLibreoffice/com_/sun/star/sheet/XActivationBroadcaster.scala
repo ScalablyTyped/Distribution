@@ -31,8 +31,7 @@ trait XActivationBroadcaster
 }
 object XActivationBroadcaster {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addActivationEventListener: XActivationEventListener => Unit,
     queryInterface: `type` => js.Any,
@@ -43,13 +42,10 @@ object XActivationBroadcaster {
     __obj.asInstanceOf[XActivationBroadcaster]
   }
   
-  @scala.inline
-  implicit class XActivationBroadcasterMutableBuilder[Self <: XActivationBroadcaster] (val x: Self) extends AnyVal {
+  extension [Self <: XActivationBroadcaster](x: Self) {
     
-    @scala.inline
-    def setAddActivationEventListener(value: XActivationEventListener => Unit): Self = StObject.set(x, "addActivationEventListener", js.Any.fromFunction1(value))
+    inline def setAddActivationEventListener(value: XActivationEventListener => Unit): Self = StObject.set(x, "addActivationEventListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveActivationEventListener(value: XActivationEventListener => Unit): Self = StObject.set(x, "removeActivationEventListener", js.Any.fromFunction1(value))
+    inline def setRemoveActivationEventListener(value: XActivationEventListener => Unit): Self = StObject.set(x, "removeActivationEventListener", js.Any.fromFunction1(value))
   }
 }

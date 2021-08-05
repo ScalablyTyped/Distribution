@@ -12,22 +12,17 @@ trait IsInline extends StObject {
 }
 object IsInline {
   
-  @scala.inline
-  def apply(isInline: Boolean): IsInline = {
+  inline def apply(isInline: Boolean): IsInline = {
     val __obj = js.Dynamic.literal(isInline = isInline.asInstanceOf[js.Any], templateUrl = null)
     __obj.asInstanceOf[IsInline]
   }
   
-  @scala.inline
-  implicit class IsInlineMutableBuilder[Self <: IsInline] (val x: Self) extends AnyVal {
+  extension [Self <: IsInline](x: Self) {
     
-    @scala.inline
-    def setIsInline(value: Boolean): Self = StObject.set(x, "isInline", value.asInstanceOf[js.Any])
+    inline def setIsInline(value: Boolean): Self = StObject.set(x, "isInline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
+    inline def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUrlNull: Self = StObject.set(x, "templateUrl", null)
+    inline def setTemplateUrlNull: Self = StObject.set(x, "templateUrl", null)
   }
 }

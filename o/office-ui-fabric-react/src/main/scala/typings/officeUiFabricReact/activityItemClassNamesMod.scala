@@ -12,8 +12,7 @@ object activityItemClassNamesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getClassNames(
+  inline def getClassNames(
     styles: IActivityItemStyles,
     className: String,
     activityPersonas: js.Array[IPersonaProps],
@@ -42,68 +41,48 @@ object activityItemClassNamesMod {
   }
   object IActivityItemClassNames {
     
-    @scala.inline
-    def apply(): IActivityItemClassNames = {
+    inline def apply(): IActivityItemClassNames = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IActivityItemClassNames]
     }
     
-    @scala.inline
-    implicit class IActivityItemClassNamesMutableBuilder[Self <: IActivityItemClassNames] (val x: Self) extends AnyVal {
+    extension [Self <: IActivityItemClassNames](x: Self) {
       
-      @scala.inline
-      def setActivityContent(value: String): Self = StObject.set(x, "activityContent", value.asInstanceOf[js.Any])
+      inline def setActivityContent(value: String): Self = StObject.set(x, "activityContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivityContentUndefined: Self = StObject.set(x, "activityContent", js.undefined)
+      inline def setActivityContentUndefined: Self = StObject.set(x, "activityContent", js.undefined)
       
-      @scala.inline
-      def setActivityPersona(value: String): Self = StObject.set(x, "activityPersona", value.asInstanceOf[js.Any])
+      inline def setActivityPersona(value: String): Self = StObject.set(x, "activityPersona", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivityPersonaUndefined: Self = StObject.set(x, "activityPersona", js.undefined)
+      inline def setActivityPersonaUndefined: Self = StObject.set(x, "activityPersona", js.undefined)
       
-      @scala.inline
-      def setActivityText(value: String): Self = StObject.set(x, "activityText", value.asInstanceOf[js.Any])
+      inline def setActivityText(value: String): Self = StObject.set(x, "activityText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivityTextUndefined: Self = StObject.set(x, "activityText", js.undefined)
+      inline def setActivityTextUndefined: Self = StObject.set(x, "activityText", js.undefined)
       
-      @scala.inline
-      def setActivityTypeIcon(value: String): Self = StObject.set(x, "activityTypeIcon", value.asInstanceOf[js.Any])
+      inline def setActivityTypeIcon(value: String): Self = StObject.set(x, "activityTypeIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActivityTypeIconUndefined: Self = StObject.set(x, "activityTypeIcon", js.undefined)
+      inline def setActivityTypeIconUndefined: Self = StObject.set(x, "activityTypeIcon", js.undefined)
       
-      @scala.inline
-      def setCommentText(value: String): Self = StObject.set(x, "commentText", value.asInstanceOf[js.Any])
+      inline def setCommentText(value: String): Self = StObject.set(x, "commentText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentTextUndefined: Self = StObject.set(x, "commentText", js.undefined)
+      inline def setCommentTextUndefined: Self = StObject.set(x, "commentText", js.undefined)
       
-      @scala.inline
-      def setPersonaContainer(value: String): Self = StObject.set(x, "personaContainer", value.asInstanceOf[js.Any])
+      inline def setPersonaContainer(value: String): Self = StObject.set(x, "personaContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersonaContainerUndefined: Self = StObject.set(x, "personaContainer", js.undefined)
+      inline def setPersonaContainerUndefined: Self = StObject.set(x, "personaContainer", js.undefined)
       
-      @scala.inline
-      def setPulsingBeacon(value: String): Self = StObject.set(x, "pulsingBeacon", value.asInstanceOf[js.Any])
+      inline def setPulsingBeacon(value: String): Self = StObject.set(x, "pulsingBeacon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPulsingBeaconUndefined: Self = StObject.set(x, "pulsingBeacon", js.undefined)
+      inline def setPulsingBeaconUndefined: Self = StObject.set(x, "pulsingBeacon", js.undefined)
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setTimeStamp(value: String): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+      inline def setTimeStamp(value: String): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeStampUndefined: Self = StObject.set(x, "timeStamp", js.undefined)
+      inline def setTimeStampUndefined: Self = StObject.set(x, "timeStamp", js.undefined)
     }
   }
 }

@@ -23,16 +23,13 @@ trait CommandFailedException
 }
 object CommandFailedException {
   
-  @scala.inline
-  def apply(Context: XInterface, Message: String, Reason: js.Any): CommandFailedException = {
+  inline def apply(Context: XInterface, Message: String, Reason: js.Any): CommandFailedException = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], Reason = Reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommandFailedException]
   }
   
-  @scala.inline
-  implicit class CommandFailedExceptionMutableBuilder[Self <: CommandFailedException] (val x: Self) extends AnyVal {
+  extension [Self <: CommandFailedException](x: Self) {
     
-    @scala.inline
-    def setReason(value: js.Any): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: js.Any): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
   }
 }

@@ -19,16 +19,13 @@ trait Component[Attrs, State /* <: Lifecycle[Attrs, State] */]
 }
 object Component {
   
-  @scala.inline
-  def apply[Attrs, State /* <: Lifecycle[Attrs, State] */](view: Vnode[Attrs, State] => Children | Null | Unit): Component[Attrs, State] = {
+  inline def apply[Attrs, State /* <: Lifecycle[Attrs, State] */](view: Vnode[Attrs, State] => Children | Null | Unit): Component[Attrs, State] = {
     val __obj = js.Dynamic.literal(view = js.Any.fromFunction1(view))
     __obj.asInstanceOf[Component[Attrs, State]]
   }
   
-  @scala.inline
-  implicit class ComponentMutableBuilder[Self <: Component[?, ?], Attrs, State /* <: Lifecycle[Attrs, State] */] (val x: Self & (Component[Attrs, State])) extends AnyVal {
+  extension [Self <: Component[?, ?], Attrs, State /* <: Lifecycle[Attrs, State] */](x: Self & (Component[Attrs, State])) {
     
-    @scala.inline
-    def setView(value: Vnode[Attrs, State] => Children | Null | Unit): Self = StObject.set(x, "view", js.Any.fromFunction1(value))
+    inline def setView(value: Vnode[Attrs, State] => Children | Null | Unit): Self = StObject.set(x, "view", js.Any.fromFunction1(value))
   }
 }

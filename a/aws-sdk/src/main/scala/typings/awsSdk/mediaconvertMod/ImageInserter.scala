@@ -13,22 +13,17 @@ trait ImageInserter extends StObject {
 }
 object ImageInserter {
   
-  @scala.inline
-  def apply(): ImageInserter = {
+  inline def apply(): ImageInserter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageInserter]
   }
   
-  @scala.inline
-  implicit class ImageInserterMutableBuilder[Self <: ImageInserter] (val x: Self) extends AnyVal {
+  extension [Self <: ImageInserter](x: Self) {
     
-    @scala.inline
-    def setInsertableImages(value: listOfInsertableImage): Self = StObject.set(x, "InsertableImages", value.asInstanceOf[js.Any])
+    inline def setInsertableImages(value: listOfInsertableImage): Self = StObject.set(x, "InsertableImages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertableImagesUndefined: Self = StObject.set(x, "InsertableImages", js.undefined)
+    inline def setInsertableImagesUndefined: Self = StObject.set(x, "InsertableImages", js.undefined)
     
-    @scala.inline
-    def setInsertableImagesVarargs(value: InsertableImage*): Self = StObject.set(x, "InsertableImages", js.Array(value :_*))
+    inline def setInsertableImagesVarargs(value: InsertableImage*): Self = StObject.set(x, "InsertableImages", js.Array(value :_*))
   }
 }

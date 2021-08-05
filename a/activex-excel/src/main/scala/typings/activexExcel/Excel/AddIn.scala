@@ -16,7 +16,7 @@ trait AddIn extends StObject {
   
   val Creator: XlCreator
   
-  @JSName("Excel.AddIn_typekey")
+  /* private */ @JSName("Excel.AddIn_typekey")
   var ExcelDotAddIn_typekey: AddIn
   
   val FullName: String
@@ -41,8 +41,7 @@ trait AddIn extends StObject {
 }
 object AddIn {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Author: String,
     CLSID: String,
@@ -65,55 +64,38 @@ object AddIn {
     __obj.asInstanceOf[AddIn]
   }
   
-  @scala.inline
-  implicit class AddInMutableBuilder[Self <: AddIn] (val x: Self) extends AnyVal {
+  extension [Self <: AddIn](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCLSID(value: String): Self = StObject.set(x, "CLSID", value.asInstanceOf[js.Any])
+    inline def setCLSID(value: String): Self = StObject.set(x, "CLSID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComments(value: String): Self = StObject.set(x, "Comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: String): Self = StObject.set(x, "Comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotAddIn_typekey(value: AddIn): Self = StObject.set(x, "Excel.AddIn_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotAddIn_typekey(value: AddIn): Self = StObject.set(x, "Excel.AddIn_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullName(value: String): Self = StObject.set(x, "FullName", value.asInstanceOf[js.Any])
+    inline def setFullName(value: String): Self = StObject.set(x, "FullName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstalled(value: Boolean): Self = StObject.set(x, "Installed", value.asInstanceOf[js.Any])
+    inline def setInstalled(value: Boolean): Self = StObject.set(x, "Installed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsOpen(value: Boolean): Self = StObject.set(x, "IsOpen", value.asInstanceOf[js.Any])
+    inline def setIsOpen(value: Boolean): Self = StObject.set(x, "IsOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeywords(value: String): Self = StObject.set(x, "Keywords", value.asInstanceOf[js.Any])
+    inline def setKeywords(value: String): Self = StObject.set(x, "Keywords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgID(value: String): Self = StObject.set(x, "progID", value.asInstanceOf[js.Any])
+    inline def setProgID(value: String): Self = StObject.set(x, "progID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
   }
 }

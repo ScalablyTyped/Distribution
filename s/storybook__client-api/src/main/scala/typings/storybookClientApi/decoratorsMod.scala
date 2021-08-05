@@ -13,9 +13,7 @@ object decoratorsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def decorateStory(storyFn: StoryFn[js.Any], decorator: DecoratorFunction[js.Any]): js.Function1[/* context */ js.UndefOr[StoryContext], js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("decorateStory")(storyFn.asInstanceOf[js.Any], decorator.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* context */ js.UndefOr[StoryContext], js.Any]]
+  inline def decorateStory(storyFn: StoryFn[js.Any], decorator: DecoratorFunction[js.Any]): js.Function1[/* context */ js.UndefOr[StoryContext], js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("decorateStory")(storyFn.asInstanceOf[js.Any], decorator.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* context */ js.UndefOr[StoryContext], js.Any]]
   
-  @scala.inline
-  def defaultDecorateStory(storyFn: StoryFn[js.Any], decorators: js.Array[DecoratorFunction[js.Any]]): js.Function1[/* context */ js.UndefOr[StoryContext], js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultDecorateStory")(storyFn.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* context */ js.UndefOr[StoryContext], js.Any]]
+  inline def defaultDecorateStory(storyFn: StoryFn[js.Any], decorators: js.Array[DecoratorFunction[js.Any]]): js.Function1[/* context */ js.UndefOr[StoryContext], js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultDecorateStory")(storyFn.asInstanceOf[js.Any], decorators.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* context */ js.UndefOr[StoryContext], js.Any]]
 }

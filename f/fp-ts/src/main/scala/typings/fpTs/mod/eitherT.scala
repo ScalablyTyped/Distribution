@@ -16,10 +16,7 @@ object eitherT {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getEitherM[M](M: Monad[M]): EitherM[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEitherM")(M.asInstanceOf[js.Any]).asInstanceOf[EitherM[M]]
-  @scala.inline
-  def getEitherM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](M: Monad1[M]): EitherM1[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEitherM")(M.asInstanceOf[js.Any]).asInstanceOf[EitherM1[M]]
-  @scala.inline
-  def getEitherM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](M: Monad2[M]): EitherM2[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEitherM")(M.asInstanceOf[js.Any]).asInstanceOf[EitherM2[M]]
+  inline def getEitherM[M](M: Monad[M]): EitherM[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEitherM")(M.asInstanceOf[js.Any]).asInstanceOf[EitherM[M]]
+  inline def getEitherM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](M: Monad1[M]): EitherM1[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEitherM")(M.asInstanceOf[js.Any]).asInstanceOf[EitherM1[M]]
+  inline def getEitherM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](M: Monad2[M]): EitherM2[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEitherM")(M.asInstanceOf[js.Any]).asInstanceOf[EitherM2[M]]
 }

@@ -17,31 +17,23 @@ trait VectorSegment extends StObject {
 }
 object VectorSegment {
   
-  @scala.inline
-  def apply(end: Double, start: Double): VectorSegment = {
+  inline def apply(end: Double, start: Double): VectorSegment = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[VectorSegment]
   }
   
-  @scala.inline
-  implicit class VectorSegmentMutableBuilder[Self <: VectorSegment] (val x: Self) extends AnyVal {
+  extension [Self <: VectorSegment](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTangentEnd(value: Vector): Self = StObject.set(x, "tangentEnd", value.asInstanceOf[js.Any])
+    inline def setTangentEnd(value: Vector): Self = StObject.set(x, "tangentEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTangentEndUndefined: Self = StObject.set(x, "tangentEnd", js.undefined)
+    inline def setTangentEndUndefined: Self = StObject.set(x, "tangentEnd", js.undefined)
     
-    @scala.inline
-    def setTangentStart(value: Vector): Self = StObject.set(x, "tangentStart", value.asInstanceOf[js.Any])
+    inline def setTangentStart(value: Vector): Self = StObject.set(x, "tangentStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTangentStartUndefined: Self = StObject.set(x, "tangentStart", js.undefined)
+    inline def setTangentStartUndefined: Self = StObject.set(x, "tangentStart", js.undefined)
   }
 }

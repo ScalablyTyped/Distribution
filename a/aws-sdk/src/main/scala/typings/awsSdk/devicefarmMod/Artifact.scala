@@ -33,43 +33,31 @@ trait Artifact extends StObject {
 }
 object Artifact {
   
-  @scala.inline
-  def apply(): Artifact = {
+  inline def apply(): Artifact = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Artifact]
   }
   
-  @scala.inline
-  implicit class ArtifactMutableBuilder[Self <: Artifact] (val x: Self) extends AnyVal {
+  extension [Self <: Artifact](x: Self) {
     
-    @scala.inline
-    def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
+    inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setType(value: ArtifactType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ArtifactType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUrl(value: URL): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: URL): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

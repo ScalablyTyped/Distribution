@@ -25,26 +25,20 @@ object providerMod {
   }
   object ProviderProps {
     
-    @scala.inline
-    def apply(): ProviderProps = {
+    inline def apply(): ProviderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProviderProps]
     }
     
-    @scala.inline
-    implicit class ProviderPropsMutableBuilder[Self <: ProviderProps] (val x: Self) extends AnyVal {
+    extension [Self <: ProviderProps](x: Self) {
       
-      @scala.inline
-      def setLocale(value: PartialLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: PartialLocale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setTheme(value: PartialTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: PartialTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
 }

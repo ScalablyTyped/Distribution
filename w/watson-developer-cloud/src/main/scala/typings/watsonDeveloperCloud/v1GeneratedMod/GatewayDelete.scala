@@ -15,25 +15,19 @@ trait GatewayDelete extends StObject {
 }
 object GatewayDelete {
   
-  @scala.inline
-  def apply(): GatewayDelete = {
+  inline def apply(): GatewayDelete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GatewayDelete]
   }
   
-  @scala.inline
-  implicit class GatewayDeleteMutableBuilder[Self <: GatewayDelete] (val x: Self) extends AnyVal {
+  extension [Self <: GatewayDelete](x: Self) {
     
-    @scala.inline
-    def setGateway_id(value: String): Self = StObject.set(x, "gateway_id", value.asInstanceOf[js.Any])
+    inline def setGateway_id(value: String): Self = StObject.set(x, "gateway_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGateway_idUndefined: Self = StObject.set(x, "gateway_id", js.undefined)
+    inline def setGateway_idUndefined: Self = StObject.set(x, "gateway_id", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

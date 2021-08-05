@@ -16,13 +16,12 @@ trait ListParagraphs extends StObject {
   
   val Parent: js.Any
   
-  @JSName("Word.ListParagraphs_typekey")
+  /* private */ @JSName("Word.ListParagraphs_typekey")
   var WordDotListParagraphs_typekey: ListParagraphs
 }
 object ListParagraphs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Count: Double,
     Creator: Double,
@@ -35,25 +34,18 @@ object ListParagraphs {
     __obj.asInstanceOf[ListParagraphs]
   }
   
-  @scala.inline
-  implicit class ListParagraphsMutableBuilder[Self <: ListParagraphs] (val x: Self) extends AnyVal {
+  extension [Self <: ListParagraphs](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => Paragraph): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => Paragraph): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotListParagraphs_typekey(value: ListParagraphs): Self = StObject.set(x, "Word.ListParagraphs_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotListParagraphs_typekey(value: ListParagraphs): Self = StObject.set(x, "Word.ListParagraphs_typekey", value.asInstanceOf[js.Any])
   }
 }

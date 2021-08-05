@@ -20,43 +20,31 @@ trait SourceHTMLAttributes[T]
 }
 object SourceHTMLAttributes {
   
-  @scala.inline
-  def apply[T](): SourceHTMLAttributes[T] = {
+  inline def apply[T](): SourceHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceHTMLAttributes[T]]
   }
   
-  @scala.inline
-  implicit class SourceHTMLAttributesMutableBuilder[Self <: SourceHTMLAttributes[?], T] (val x: Self & SourceHTMLAttributes[T]) extends AnyVal {
+  extension [Self <: SourceHTMLAttributes[?], T](x: Self & SourceHTMLAttributes[T]) {
     
-    @scala.inline
-    def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: String): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
+    inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     
-    @scala.inline
-    def setSizes(value: String): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
+    inline def setSizes(value: String): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
+    inline def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
     
-    @scala.inline
-    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcSet(value: String): Self = StObject.set(x, "srcSet", value.asInstanceOf[js.Any])
+    inline def setSrcSet(value: String): Self = StObject.set(x, "srcSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcSetUndefined: Self = StObject.set(x, "srcSet", js.undefined)
+    inline def setSrcSetUndefined: Self = StObject.set(x, "srcSet", js.undefined)
     
-    @scala.inline
-    def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+    inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

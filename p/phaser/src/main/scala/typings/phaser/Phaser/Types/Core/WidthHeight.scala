@@ -19,25 +19,19 @@ trait WidthHeight extends StObject {
 }
 object WidthHeight {
   
-  @scala.inline
-  def apply(): WidthHeight = {
+  inline def apply(): WidthHeight = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WidthHeight]
   }
   
-  @scala.inline
-  implicit class WidthHeightMutableBuilder[Self <: WidthHeight] (val x: Self) extends AnyVal {
+  extension [Self <: WidthHeight](x: Self) {
     
-    @scala.inline
-    def setHeight(value: integer): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: integer): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setWidth(value: integer): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: integer): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

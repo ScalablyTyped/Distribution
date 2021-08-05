@@ -36,40 +36,29 @@ trait SchemaManagedConfiguration extends StObject {
 }
 object SchemaManagedConfiguration {
   
-  @scala.inline
-  def apply(): SchemaManagedConfiguration = {
+  inline def apply(): SchemaManagedConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaManagedConfiguration]
   }
   
-  @scala.inline
-  implicit class SchemaManagedConfigurationMutableBuilder[Self <: SchemaManagedConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaManagedConfiguration](x: Self) {
     
-    @scala.inline
-    def setConfigurationVariables(value: SchemaConfigurationVariables): Self = StObject.set(x, "configurationVariables", value.asInstanceOf[js.Any])
+    inline def setConfigurationVariables(value: SchemaConfigurationVariables): Self = StObject.set(x, "configurationVariables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationVariablesUndefined: Self = StObject.set(x, "configurationVariables", js.undefined)
+    inline def setConfigurationVariablesUndefined: Self = StObject.set(x, "configurationVariables", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setManagedProperty(value: js.Array[SchemaManagedProperty]): Self = StObject.set(x, "managedProperty", value.asInstanceOf[js.Any])
+    inline def setManagedProperty(value: js.Array[SchemaManagedProperty]): Self = StObject.set(x, "managedProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedPropertyUndefined: Self = StObject.set(x, "managedProperty", js.undefined)
+    inline def setManagedPropertyUndefined: Self = StObject.set(x, "managedProperty", js.undefined)
     
-    @scala.inline
-    def setManagedPropertyVarargs(value: SchemaManagedProperty*): Self = StObject.set(x, "managedProperty", js.Array(value :_*))
+    inline def setManagedPropertyVarargs(value: SchemaManagedProperty*): Self = StObject.set(x, "managedProperty", js.Array(value :_*))
     
-    @scala.inline
-    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+    inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
   }
 }

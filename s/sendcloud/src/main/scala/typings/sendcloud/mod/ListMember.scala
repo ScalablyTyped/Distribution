@@ -22,8 +22,7 @@ trait ListMember extends StObject {
 }
 object ListMember {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addListMember: (String, String, String, ListMemberAddOptions) => js.Promise[ListMemberAddResposne],
     addToOtherList: (String, String) => js.Promise[js.Array[ListMemberAddResposne]],
     apiKey: String,
@@ -36,28 +35,20 @@ object ListMember {
     __obj.asInstanceOf[ListMember]
   }
   
-  @scala.inline
-  implicit class ListMemberMutableBuilder[Self <: ListMember] (val x: Self) extends AnyVal {
+  extension [Self <: ListMember](x: Self) {
     
-    @scala.inline
-    def setAddListMember(value: (String, String, String, ListMemberAddOptions) => js.Promise[ListMemberAddResposne]): Self = StObject.set(x, "addListMember", js.Any.fromFunction4(value))
+    inline def setAddListMember(value: (String, String, String, ListMemberAddOptions) => js.Promise[ListMemberAddResposne]): Self = StObject.set(x, "addListMember", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setAddToOtherList(value: (String, String) => js.Promise[js.Array[ListMemberAddResposne]]): Self = StObject.set(x, "addToOtherList", js.Any.fromFunction2(value))
+    inline def setAddToOtherList(value: (String, String) => js.Promise[js.Array[ListMemberAddResposne]]): Self = StObject.set(x, "addToOtherList", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+    inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiUser(value: String): Self = StObject.set(x, "apiUser", value.asInstanceOf[js.Any])
+    inline def setApiUser(value: String): Self = StObject.set(x, "apiUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteListMember(value: (String, String) => js.Promise[ListMemberDeleteResposne]): Self = StObject.set(x, "deleteListMember", js.Any.fromFunction2(value))
+    inline def setDeleteListMember(value: (String, String) => js.Promise[ListMemberDeleteResposne]): Self = StObject.set(x, "deleteListMember", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetData(value: (String, js.Object) => js.Promise[js.Object]): Self = StObject.set(x, "getData", js.Any.fromFunction2(value))
+    inline def setGetData(value: (String, js.Object) => js.Promise[js.Object]): Self = StObject.set(x, "getData", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetListMember(value: (String, ListMemberListOptions) => js.Promise[ListMemberListResponse]): Self = StObject.set(x, "getListMember", js.Any.fromFunction2(value))
+    inline def setGetListMember(value: (String, ListMemberListOptions) => js.Promise[ListMemberListResponse]): Self = StObject.set(x, "getListMember", js.Any.fromFunction2(value))
   }
 }

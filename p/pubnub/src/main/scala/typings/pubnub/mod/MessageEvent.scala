@@ -28,8 +28,7 @@ trait MessageEvent extends StObject {
 }
 object MessageEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     actualChannel: String,
     channel: String,
     message: js.Any,
@@ -42,28 +41,20 @@ object MessageEvent {
     __obj.asInstanceOf[MessageEvent]
   }
   
-  @scala.inline
-  implicit class MessageEventMutableBuilder[Self <: MessageEvent] (val x: Self) extends AnyVal {
+  extension [Self <: MessageEvent](x: Self) {
     
-    @scala.inline
-    def setActualChannel(value: String): Self = StObject.set(x, "actualChannel", value.asInstanceOf[js.Any])
+    inline def setActualChannel(value: String): Self = StObject.set(x, "actualChannel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
+    inline def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscribedChannel(value: String): Self = StObject.set(x, "subscribedChannel", value.asInstanceOf[js.Any])
+    inline def setSubscribedChannel(value: String): Self = StObject.set(x, "subscribedChannel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+    inline def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimetoken(value: String): Self = StObject.set(x, "timetoken", value.asInstanceOf[js.Any])
+    inline def setTimetoken(value: String): Self = StObject.set(x, "timetoken", value.asInstanceOf[js.Any])
   }
 }

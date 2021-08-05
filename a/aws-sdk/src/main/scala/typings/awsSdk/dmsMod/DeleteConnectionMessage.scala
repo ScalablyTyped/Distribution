@@ -18,19 +18,15 @@ trait DeleteConnectionMessage extends StObject {
 }
 object DeleteConnectionMessage {
   
-  @scala.inline
-  def apply(EndpointArn: String, ReplicationInstanceArn: String): DeleteConnectionMessage = {
+  inline def apply(EndpointArn: String, ReplicationInstanceArn: String): DeleteConnectionMessage = {
     val __obj = js.Dynamic.literal(EndpointArn = EndpointArn.asInstanceOf[js.Any], ReplicationInstanceArn = ReplicationInstanceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteConnectionMessage]
   }
   
-  @scala.inline
-  implicit class DeleteConnectionMessageMutableBuilder[Self <: DeleteConnectionMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteConnectionMessage](x: Self) {
     
-    @scala.inline
-    def setEndpointArn(value: String): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
+    inline def setEndpointArn(value: String): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationInstanceArn(value: String): Self = StObject.set(x, "ReplicationInstanceArn", value.asInstanceOf[js.Any])
+    inline def setReplicationInstanceArn(value: String): Self = StObject.set(x, "ReplicationInstanceArn", value.asInstanceOf[js.Any])
   }
 }

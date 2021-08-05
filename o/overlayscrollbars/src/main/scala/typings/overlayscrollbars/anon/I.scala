@@ -12,19 +12,15 @@ trait I extends StObject {
 }
 object I {
   
-  @scala.inline
-  def apply(i: Boolean, n: Boolean): I = {
+  inline def apply(i: Boolean, n: Boolean): I = {
     val __obj = js.Dynamic.literal(i = i.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any])
     __obj.asInstanceOf[I]
   }
   
-  @scala.inline
-  implicit class IMutableBuilder[Self <: I] (val x: Self) extends AnyVal {
+  extension [Self <: I](x: Self) {
     
-    @scala.inline
-    def setI(value: Boolean): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
+    inline def setI(value: Boolean): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setN(value: Boolean): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+    inline def setN(value: Boolean): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
   }
 }

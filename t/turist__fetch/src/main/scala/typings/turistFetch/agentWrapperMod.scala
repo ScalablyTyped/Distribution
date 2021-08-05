@@ -17,7 +17,7 @@ object agentWrapperMod {
     /* CompleteClass */
     override def getAgent(url: String): typings.node.httpMod.Agent = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var `private`: js.Any = js.native
   }
   
@@ -25,25 +25,21 @@ object agentWrapperMod {
     
     def getAgent(url: String): typings.node.httpMod.Agent
     
-    var `private`: js.Any
+    /* private */ var `private`: js.Any
   }
   object Agent {
     
-    @scala.inline
-    def apply(getAgent: String => typings.node.httpMod.Agent, `private`: js.Any): Agent = {
+    inline def apply(getAgent: String => typings.node.httpMod.Agent, `private`: js.Any): Agent = {
       val __obj = js.Dynamic.literal(getAgent = js.Any.fromFunction1(getAgent))
       __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Agent]
     }
     
-    @scala.inline
-    implicit class AgentMutableBuilder[Self <: Agent] (val x: Self) extends AnyVal {
+    extension [Self <: Agent](x: Self) {
       
-      @scala.inline
-      def setGetAgent(value: String => typings.node.httpMod.Agent): Self = StObject.set(x, "getAgent", js.Any.fromFunction1(value))
+      inline def setGetAgent(value: String => typings.node.httpMod.Agent): Self = StObject.set(x, "getAgent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPrivate(value: js.Any): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
+      inline def setPrivate(value: js.Any): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
     }
   }
 }

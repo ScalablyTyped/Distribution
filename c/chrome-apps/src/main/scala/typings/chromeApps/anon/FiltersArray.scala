@@ -16,19 +16,15 @@ trait FiltersArray extends StObject {
 }
 object FiltersArray {
   
-  @scala.inline
-  def apply(filters: js.Array[DeviceFilterStrict]): FiltersArray = {
+  inline def apply(filters: js.Array[DeviceFilterStrict]): FiltersArray = {
     val __obj = js.Dynamic.literal(filters = filters.asInstanceOf[js.Any])
     __obj.asInstanceOf[FiltersArray]
   }
   
-  @scala.inline
-  implicit class FiltersArrayMutableBuilder[Self <: FiltersArray] (val x: Self) extends AnyVal {
+  extension [Self <: FiltersArray](x: Self) {
     
-    @scala.inline
-    def setFilters(value: js.Array[DeviceFilterStrict]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: js.Array[DeviceFilterStrict]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersVarargs(value: DeviceFilterStrict*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: DeviceFilterStrict*): Self = StObject.set(x, "filters", js.Array(value :_*))
   }
 }

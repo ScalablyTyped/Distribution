@@ -23,8 +23,7 @@ trait ChangeTableBordersAndShadingCommand extends StObject {
 }
 object ChangeTableBordersAndShadingCommand {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     execute: (TableBordersSettings, Boolean) => Boolean,
     getState: () => CommandState[TableBordersSettings]
   ): ChangeTableBordersAndShadingCommand = {
@@ -32,13 +31,10 @@ object ChangeTableBordersAndShadingCommand {
     __obj.asInstanceOf[ChangeTableBordersAndShadingCommand]
   }
   
-  @scala.inline
-  implicit class ChangeTableBordersAndShadingCommandMutableBuilder[Self <: ChangeTableBordersAndShadingCommand] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeTableBordersAndShadingCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: (TableBordersSettings, Boolean) => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction2(value))
+    inline def setExecute(value: (TableBordersSettings, Boolean) => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetState(value: () => CommandState[TableBordersSettings]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => CommandState[TableBordersSettings]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
   }
 }

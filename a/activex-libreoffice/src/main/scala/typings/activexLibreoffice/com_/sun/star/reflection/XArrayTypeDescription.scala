@@ -53,8 +53,7 @@ trait XArrayTypeDescription
 }
 object XArrayTypeDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Dimensions: SafeArray[Double],
     Name: String,
     NumberOfDimensions: Double,
@@ -73,25 +72,18 @@ object XArrayTypeDescription {
     __obj.asInstanceOf[XArrayTypeDescription]
   }
   
-  @scala.inline
-  implicit class XArrayTypeDescriptionMutableBuilder[Self <: XArrayTypeDescription] (val x: Self) extends AnyVal {
+  extension [Self <: XArrayTypeDescription](x: Self) {
     
-    @scala.inline
-    def setDimensions(value: SafeArray[Double]): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: SafeArray[Double]): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDimensions(value: () => SafeArray[Double]): Self = StObject.set(x, "getDimensions", js.Any.fromFunction0(value))
+    inline def setGetDimensions(value: () => SafeArray[Double]): Self = StObject.set(x, "getDimensions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNumberOfDimensions(value: () => Double): Self = StObject.set(x, "getNumberOfDimensions", js.Any.fromFunction0(value))
+    inline def setGetNumberOfDimensions(value: () => Double): Self = StObject.set(x, "getNumberOfDimensions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetType(value: () => XTypeDescription): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+    inline def setGetType(value: () => XTypeDescription): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNumberOfDimensions(value: Double): Self = StObject.set(x, "NumberOfDimensions", value.asInstanceOf[js.Any])
+    inline def setNumberOfDimensions(value: Double): Self = StObject.set(x, "NumberOfDimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: XTypeDescription): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: XTypeDescription): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

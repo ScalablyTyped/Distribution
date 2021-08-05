@@ -23,25 +23,19 @@ trait PasteOptions extends StObject {
 }
 object PasteOptions {
   
-  @scala.inline
-  def apply(): PasteOptions = {
+  inline def apply(): PasteOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PasteOptions]
   }
   
-  @scala.inline
-  implicit class PasteOptionsMutableBuilder[Self <: PasteOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PasteOptions](x: Self) {
     
-    @scala.inline
-    def setDefaultName(value: String): Self = StObject.set(x, "defaultName", value.asInstanceOf[js.Any])
+    inline def setDefaultName(value: String): Self = StObject.set(x, "defaultName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultNameUndefined: Self = StObject.set(x, "defaultName", js.undefined)
+    inline def setDefaultNameUndefined: Self = StObject.set(x, "defaultName", js.undefined)
     
-    @scala.inline
-    def setTargetElement(value: HTMLElement): Self = StObject.set(x, "targetElement", value.asInstanceOf[js.Any])
+    inline def setTargetElement(value: HTMLElement): Self = StObject.set(x, "targetElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetElementUndefined: Self = StObject.set(x, "targetElement", js.undefined)
+    inline def setTargetElementUndefined: Self = StObject.set(x, "targetElement", js.undefined)
   }
 }

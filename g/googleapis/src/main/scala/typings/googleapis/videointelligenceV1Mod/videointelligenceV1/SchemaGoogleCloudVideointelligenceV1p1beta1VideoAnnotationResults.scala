@@ -67,94 +67,65 @@ trait SchemaGoogleCloudVideointelligenceV1p1beta1VideoAnnotationResults extends 
 }
 object SchemaGoogleCloudVideointelligenceV1p1beta1VideoAnnotationResults {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudVideointelligenceV1p1beta1VideoAnnotationResults = {
+  inline def apply(): SchemaGoogleCloudVideointelligenceV1p1beta1VideoAnnotationResults = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudVideointelligenceV1p1beta1VideoAnnotationResults]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudVideointelligenceV1p1beta1VideoAnnotationResultsMutableBuilder[Self <: SchemaGoogleCloudVideointelligenceV1p1beta1VideoAnnotationResults] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudVideointelligenceV1p1beta1VideoAnnotationResults](x: Self) {
     
-    @scala.inline
-    def setError(value: SchemaGoogleRpcStatus): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: SchemaGoogleRpcStatus): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setExplicitAnnotation(value: SchemaGoogleCloudVideointelligenceV1p1beta1ExplicitContentAnnotation): Self = StObject.set(x, "explicitAnnotation", value.asInstanceOf[js.Any])
+    inline def setExplicitAnnotation(value: SchemaGoogleCloudVideointelligenceV1p1beta1ExplicitContentAnnotation): Self = StObject.set(x, "explicitAnnotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExplicitAnnotationUndefined: Self = StObject.set(x, "explicitAnnotation", js.undefined)
+    inline def setExplicitAnnotationUndefined: Self = StObject.set(x, "explicitAnnotation", js.undefined)
     
-    @scala.inline
-    def setFrameLabelAnnotations(value: js.Array[SchemaGoogleCloudVideointelligenceV1p1beta1LabelAnnotation]): Self = StObject.set(x, "frameLabelAnnotations", value.asInstanceOf[js.Any])
+    inline def setFrameLabelAnnotations(value: js.Array[SchemaGoogleCloudVideointelligenceV1p1beta1LabelAnnotation]): Self = StObject.set(x, "frameLabelAnnotations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameLabelAnnotationsUndefined: Self = StObject.set(x, "frameLabelAnnotations", js.undefined)
+    inline def setFrameLabelAnnotationsUndefined: Self = StObject.set(x, "frameLabelAnnotations", js.undefined)
     
-    @scala.inline
-    def setFrameLabelAnnotationsVarargs(value: SchemaGoogleCloudVideointelligenceV1p1beta1LabelAnnotation*): Self = StObject.set(x, "frameLabelAnnotations", js.Array(value :_*))
+    inline def setFrameLabelAnnotationsVarargs(value: SchemaGoogleCloudVideointelligenceV1p1beta1LabelAnnotation*): Self = StObject.set(x, "frameLabelAnnotations", js.Array(value :_*))
     
-    @scala.inline
-    def setInputUri(value: String): Self = StObject.set(x, "inputUri", value.asInstanceOf[js.Any])
+    inline def setInputUri(value: String): Self = StObject.set(x, "inputUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUriUndefined: Self = StObject.set(x, "inputUri", js.undefined)
+    inline def setInputUriUndefined: Self = StObject.set(x, "inputUri", js.undefined)
     
-    @scala.inline
-    def setObjectAnnotations(value: js.Array[SchemaGoogleCloudVideointelligenceV1p1beta1ObjectTrackingAnnotation]): Self = StObject.set(x, "objectAnnotations", value.asInstanceOf[js.Any])
+    inline def setObjectAnnotations(value: js.Array[SchemaGoogleCloudVideointelligenceV1p1beta1ObjectTrackingAnnotation]): Self = StObject.set(x, "objectAnnotations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectAnnotationsUndefined: Self = StObject.set(x, "objectAnnotations", js.undefined)
+    inline def setObjectAnnotationsUndefined: Self = StObject.set(x, "objectAnnotations", js.undefined)
     
-    @scala.inline
-    def setObjectAnnotationsVarargs(value: SchemaGoogleCloudVideointelligenceV1p1beta1ObjectTrackingAnnotation*): Self = StObject.set(x, "objectAnnotations", js.Array(value :_*))
+    inline def setObjectAnnotationsVarargs(value: SchemaGoogleCloudVideointelligenceV1p1beta1ObjectTrackingAnnotation*): Self = StObject.set(x, "objectAnnotations", js.Array(value :_*))
     
-    @scala.inline
-    def setSegmentLabelAnnotations(value: js.Array[SchemaGoogleCloudVideointelligenceV1p1beta1LabelAnnotation]): Self = StObject.set(x, "segmentLabelAnnotations", value.asInstanceOf[js.Any])
+    inline def setSegmentLabelAnnotations(value: js.Array[SchemaGoogleCloudVideointelligenceV1p1beta1LabelAnnotation]): Self = StObject.set(x, "segmentLabelAnnotations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentLabelAnnotationsUndefined: Self = StObject.set(x, "segmentLabelAnnotations", js.undefined)
+    inline def setSegmentLabelAnnotationsUndefined: Self = StObject.set(x, "segmentLabelAnnotations", js.undefined)
     
-    @scala.inline
-    def setSegmentLabelAnnotationsVarargs(value: SchemaGoogleCloudVideointelligenceV1p1beta1LabelAnnotation*): Self = StObject.set(x, "segmentLabelAnnotations", js.Array(value :_*))
+    inline def setSegmentLabelAnnotationsVarargs(value: SchemaGoogleCloudVideointelligenceV1p1beta1LabelAnnotation*): Self = StObject.set(x, "segmentLabelAnnotations", js.Array(value :_*))
     
-    @scala.inline
-    def setShotAnnotations(value: js.Array[SchemaGoogleCloudVideointelligenceV1p1beta1VideoSegment]): Self = StObject.set(x, "shotAnnotations", value.asInstanceOf[js.Any])
+    inline def setShotAnnotations(value: js.Array[SchemaGoogleCloudVideointelligenceV1p1beta1VideoSegment]): Self = StObject.set(x, "shotAnnotations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShotAnnotationsUndefined: Self = StObject.set(x, "shotAnnotations", js.undefined)
+    inline def setShotAnnotationsUndefined: Self = StObject.set(x, "shotAnnotations", js.undefined)
     
-    @scala.inline
-    def setShotAnnotationsVarargs(value: SchemaGoogleCloudVideointelligenceV1p1beta1VideoSegment*): Self = StObject.set(x, "shotAnnotations", js.Array(value :_*))
+    inline def setShotAnnotationsVarargs(value: SchemaGoogleCloudVideointelligenceV1p1beta1VideoSegment*): Self = StObject.set(x, "shotAnnotations", js.Array(value :_*))
     
-    @scala.inline
-    def setShotLabelAnnotations(value: js.Array[SchemaGoogleCloudVideointelligenceV1p1beta1LabelAnnotation]): Self = StObject.set(x, "shotLabelAnnotations", value.asInstanceOf[js.Any])
+    inline def setShotLabelAnnotations(value: js.Array[SchemaGoogleCloudVideointelligenceV1p1beta1LabelAnnotation]): Self = StObject.set(x, "shotLabelAnnotations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShotLabelAnnotationsUndefined: Self = StObject.set(x, "shotLabelAnnotations", js.undefined)
+    inline def setShotLabelAnnotationsUndefined: Self = StObject.set(x, "shotLabelAnnotations", js.undefined)
     
-    @scala.inline
-    def setShotLabelAnnotationsVarargs(value: SchemaGoogleCloudVideointelligenceV1p1beta1LabelAnnotation*): Self = StObject.set(x, "shotLabelAnnotations", js.Array(value :_*))
+    inline def setShotLabelAnnotationsVarargs(value: SchemaGoogleCloudVideointelligenceV1p1beta1LabelAnnotation*): Self = StObject.set(x, "shotLabelAnnotations", js.Array(value :_*))
     
-    @scala.inline
-    def setSpeechTranscriptions(value: js.Array[SchemaGoogleCloudVideointelligenceV1p1beta1SpeechTranscription]): Self = StObject.set(x, "speechTranscriptions", value.asInstanceOf[js.Any])
+    inline def setSpeechTranscriptions(value: js.Array[SchemaGoogleCloudVideointelligenceV1p1beta1SpeechTranscription]): Self = StObject.set(x, "speechTranscriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeechTranscriptionsUndefined: Self = StObject.set(x, "speechTranscriptions", js.undefined)
+    inline def setSpeechTranscriptionsUndefined: Self = StObject.set(x, "speechTranscriptions", js.undefined)
     
-    @scala.inline
-    def setSpeechTranscriptionsVarargs(value: SchemaGoogleCloudVideointelligenceV1p1beta1SpeechTranscription*): Self = StObject.set(x, "speechTranscriptions", js.Array(value :_*))
+    inline def setSpeechTranscriptionsVarargs(value: SchemaGoogleCloudVideointelligenceV1p1beta1SpeechTranscription*): Self = StObject.set(x, "speechTranscriptions", js.Array(value :_*))
     
-    @scala.inline
-    def setTextAnnotations(value: js.Array[SchemaGoogleCloudVideointelligenceV1p1beta1TextAnnotation]): Self = StObject.set(x, "textAnnotations", value.asInstanceOf[js.Any])
+    inline def setTextAnnotations(value: js.Array[SchemaGoogleCloudVideointelligenceV1p1beta1TextAnnotation]): Self = StObject.set(x, "textAnnotations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextAnnotationsUndefined: Self = StObject.set(x, "textAnnotations", js.undefined)
+    inline def setTextAnnotationsUndefined: Self = StObject.set(x, "textAnnotations", js.undefined)
     
-    @scala.inline
-    def setTextAnnotationsVarargs(value: SchemaGoogleCloudVideointelligenceV1p1beta1TextAnnotation*): Self = StObject.set(x, "textAnnotations", js.Array(value :_*))
+    inline def setTextAnnotationsVarargs(value: SchemaGoogleCloudVideointelligenceV1p1beta1TextAnnotation*): Self = StObject.set(x, "textAnnotations", js.Array(value :_*))
   }
 }

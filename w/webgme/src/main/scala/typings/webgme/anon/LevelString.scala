@@ -10,16 +10,13 @@ trait LevelString extends StObject {
 }
 object LevelString {
   
-  @scala.inline
-  def apply(level: String): LevelString = {
+  inline def apply(level: String): LevelString = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
     __obj.asInstanceOf[LevelString]
   }
   
-  @scala.inline
-  implicit class LevelStringMutableBuilder[Self <: LevelString] (val x: Self) extends AnyVal {
+  extension [Self <: LevelString](x: Self) {
     
-    @scala.inline
-    def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
   }
 }

@@ -20,25 +20,19 @@ trait GoogleActionsV2OrdersOrderOptions extends StObject {
 }
 object GoogleActionsV2OrdersOrderOptions {
   
-  @scala.inline
-  def apply(): GoogleActionsV2OrdersOrderOptions = {
+  inline def apply(): GoogleActionsV2OrdersOrderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2OrdersOrderOptions]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2OrdersOrderOptionsMutableBuilder[Self <: GoogleActionsV2OrdersOrderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2OrdersOrderOptions](x: Self) {
     
-    @scala.inline
-    def setCustomerInfoOptions(value: GoogleActionsV2OrdersCustomerInfoOptions): Self = StObject.set(x, "customerInfoOptions", value.asInstanceOf[js.Any])
+    inline def setCustomerInfoOptions(value: GoogleActionsV2OrdersCustomerInfoOptions): Self = StObject.set(x, "customerInfoOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerInfoOptionsUndefined: Self = StObject.set(x, "customerInfoOptions", js.undefined)
+    inline def setCustomerInfoOptionsUndefined: Self = StObject.set(x, "customerInfoOptions", js.undefined)
     
-    @scala.inline
-    def setRequestDeliveryAddress(value: Boolean): Self = StObject.set(x, "requestDeliveryAddress", value.asInstanceOf[js.Any])
+    inline def setRequestDeliveryAddress(value: Boolean): Self = StObject.set(x, "requestDeliveryAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestDeliveryAddressUndefined: Self = StObject.set(x, "requestDeliveryAddress", js.undefined)
+    inline def setRequestDeliveryAddressUndefined: Self = StObject.set(x, "requestDeliveryAddress", js.undefined)
   }
 }

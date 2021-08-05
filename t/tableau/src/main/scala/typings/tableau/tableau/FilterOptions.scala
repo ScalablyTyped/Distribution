@@ -17,16 +17,13 @@ trait FilterOptions extends StObject {
 }
 object FilterOptions {
   
-  @scala.inline
-  def apply(isExcludeMode: Boolean): FilterOptions = {
+  inline def apply(isExcludeMode: Boolean): FilterOptions = {
     val __obj = js.Dynamic.literal(isExcludeMode = isExcludeMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterOptions]
   }
   
-  @scala.inline
-  implicit class FilterOptionsMutableBuilder[Self <: FilterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FilterOptions](x: Self) {
     
-    @scala.inline
-    def setIsExcludeMode(value: Boolean): Self = StObject.set(x, "isExcludeMode", value.asInstanceOf[js.Any])
+    inline def setIsExcludeMode(value: Boolean): Self = StObject.set(x, "isExcludeMode", value.asInstanceOf[js.Any])
   }
 }

@@ -162,8 +162,7 @@ trait UnoControlDateFieldModel
 }
 object UnoControlDateFieldModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BackgroundColor: Color,
     Border: Double,
     BorderColor: Double,
@@ -231,97 +230,66 @@ object UnoControlDateFieldModel {
     __obj.asInstanceOf[UnoControlDateFieldModel]
   }
   
-  @scala.inline
-  implicit class UnoControlDateFieldModelMutableBuilder[Self <: UnoControlDateFieldModel] (val x: Self) extends AnyVal {
+  extension [Self <: UnoControlDateFieldModel](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: Color): Self = StObject.set(x, "BackgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: Color): Self = StObject.set(x, "BackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorder(value: Double): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: Double): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderColor(value: Double): Self = StObject.set(x, "BorderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: Double): Self = StObject.set(x, "BorderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDate(value: Date): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Date): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateFormat(value: Double): Self = StObject.set(x, "DateFormat", value.asInstanceOf[js.Any])
+    inline def setDateFormat(value: Double): Self = StObject.set(x, "DateFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateMax(value: Date): Self = StObject.set(x, "DateMax", value.asInstanceOf[js.Any])
+    inline def setDateMax(value: Date): Self = StObject.set(x, "DateMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateMin(value: Date): Self = StObject.set(x, "DateMin", value.asInstanceOf[js.Any])
+    inline def setDateMin(value: Date): Self = StObject.set(x, "DateMin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateShowCentury(value: Boolean): Self = StObject.set(x, "DateShowCentury", value.asInstanceOf[js.Any])
+    inline def setDateShowCentury(value: Boolean): Self = StObject.set(x, "DateShowCentury", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropdown(value: Boolean): Self = StObject.set(x, "Dropdown", value.asInstanceOf[js.Any])
+    inline def setDropdown(value: Boolean): Self = StObject.set(x, "Dropdown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontDescriptor(value: FontDescriptor): Self = StObject.set(x, "FontDescriptor", value.asInstanceOf[js.Any])
+    inline def setFontDescriptor(value: FontDescriptor): Self = StObject.set(x, "FontDescriptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontEmphasisMark(value: Double): Self = StObject.set(x, "FontEmphasisMark", value.asInstanceOf[js.Any])
+    inline def setFontEmphasisMark(value: Double): Self = StObject.set(x, "FontEmphasisMark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontRelief(value: Double): Self = StObject.set(x, "FontRelief", value.asInstanceOf[js.Any])
+    inline def setFontRelief(value: Double): Self = StObject.set(x, "FontRelief", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
+    inline def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHelpText(value: String): Self = StObject.set(x, "HelpText", value.asInstanceOf[js.Any])
+    inline def setHelpText(value: String): Self = StObject.set(x, "HelpText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpURL(value: String): Self = StObject.set(x, "HelpURL", value.asInstanceOf[js.Any])
+    inline def setHelpURL(value: String): Self = StObject.set(x, "HelpURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideInactiveSelection(value: Boolean): Self = StObject.set(x, "HideInactiveSelection", value.asInstanceOf[js.Any])
+    inline def setHideInactiveSelection(value: Boolean): Self = StObject.set(x, "HideInactiveSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseWheelBehavior(value: Double): Self = StObject.set(x, "MouseWheelBehavior", value.asInstanceOf[js.Any])
+    inline def setMouseWheelBehavior(value: Double): Self = StObject.set(x, "MouseWheelBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintable(value: Boolean): Self = StObject.set(x, "Printable", value.asInstanceOf[js.Any])
+    inline def setPrintable(value: Boolean): Self = StObject.set(x, "Printable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "ReadOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "ReadOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeat(value: Boolean): Self = StObject.set(x, "Repeat", value.asInstanceOf[js.Any])
+    inline def setRepeat(value: Boolean): Self = StObject.set(x, "Repeat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatDelay(value: Double): Self = StObject.set(x, "RepeatDelay", value.asInstanceOf[js.Any])
+    inline def setRepeatDelay(value: Double): Self = StObject.set(x, "RepeatDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpin(value: Boolean): Self = StObject.set(x, "Spin", value.asInstanceOf[js.Any])
+    inline def setSpin(value: Boolean): Self = StObject.set(x, "Spin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrictFormat(value: Boolean): Self = StObject.set(x, "StrictFormat", value.asInstanceOf[js.Any])
+    inline def setStrictFormat(value: Boolean): Self = StObject.set(x, "StrictFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabstop(value: Boolean): Self = StObject.set(x, "Tabstop", value.asInstanceOf[js.Any])
+    inline def setTabstop(value: Boolean): Self = StObject.set(x, "Tabstop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextColor(value: Color): Self = StObject.set(x, "TextColor", value.asInstanceOf[js.Any])
+    inline def setTextColor(value: Color): Self = StObject.set(x, "TextColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextLineColor(value: Color): Self = StObject.set(x, "TextLineColor", value.asInstanceOf[js.Any])
+    inline def setTextLineColor(value: Color): Self = StObject.set(x, "TextLineColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalAlign(value: VerticalAlignment): Self = StObject.set(x, "VerticalAlign", value.asInstanceOf[js.Any])
+    inline def setVerticalAlign(value: VerticalAlignment): Self = StObject.set(x, "VerticalAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWritingMode(value: Double): Self = StObject.set(x, "WritingMode", value.asInstanceOf[js.Any])
+    inline def setWritingMode(value: Double): Self = StObject.set(x, "WritingMode", value.asInstanceOf[js.Any])
   }
 }

@@ -15,19 +15,15 @@ trait KeyCredentialRetrievalResult extends StObject {
 }
 object KeyCredentialRetrievalResult {
   
-  @scala.inline
-  def apply(credential: KeyCredential, status: KeyCredentialStatus): KeyCredentialRetrievalResult = {
+  inline def apply(credential: KeyCredential, status: KeyCredentialStatus): KeyCredentialRetrievalResult = {
     val __obj = js.Dynamic.literal(credential = credential.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyCredentialRetrievalResult]
   }
   
-  @scala.inline
-  implicit class KeyCredentialRetrievalResultMutableBuilder[Self <: KeyCredentialRetrievalResult] (val x: Self) extends AnyVal {
+  extension [Self <: KeyCredentialRetrievalResult](x: Self) {
     
-    @scala.inline
-    def setCredential(value: KeyCredential): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
+    inline def setCredential(value: KeyCredential): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: KeyCredentialStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: KeyCredentialStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

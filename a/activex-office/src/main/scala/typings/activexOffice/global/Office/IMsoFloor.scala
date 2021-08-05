@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.IMsoFloor")
 @js.native
-class IMsoFloor protected ()
+/* private */ class IMsoFloor ()
   extends StObject
      with typings.activexOffice.Office.IMsoFloor {
   
@@ -34,7 +34,7 @@ class IMsoFloor protected ()
   /* CompleteClass */
   override val Name: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.IMsoFloor_typekey")
   var OfficeDotIMsoFloor_typekey: typings.activexOffice.Office.IMsoFloor = js.native
   

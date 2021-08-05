@@ -19,17 +19,15 @@ object direntMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def build(link: Link): Dirent = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(link.asInstanceOf[js.Any]).asInstanceOf[Dirent]
-    @scala.inline
-    def build(link: Link, encoding: TEncodingExtended): Dirent = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(link.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Dirent]
+    inline def build(link: Link): Dirent = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(link.asInstanceOf[js.Any]).asInstanceOf[Dirent]
+    inline def build(link: Link, encoding: TEncodingExtended): Dirent = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(link.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Dirent]
   }
   
   @JSImport("memfs/lib/Dirent", "Dirent")
   @js.native
   class Dirent () extends StObject {
     
-    var _checkModeProperty: js.Any = js.native
+    /* private */ var _checkModeProperty: js.Any = js.native
     
     def isBlockDevice(): Boolean = js.native
     
@@ -45,7 +43,7 @@ object direntMod {
     
     def isSymbolicLink(): Boolean = js.native
     
-    var mode: js.Any = js.native
+    /* private */ var mode: js.Any = js.native
     
     var name: TDataOut = js.native
   }
@@ -56,9 +54,7 @@ object direntMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def build(link: Link): Dirent = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(link.asInstanceOf[js.Any]).asInstanceOf[Dirent]
-    @scala.inline
-    def build(link: Link, encoding: TEncodingExtended): Dirent = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(link.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Dirent]
+    inline def build(link: Link): Dirent = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(link.asInstanceOf[js.Any]).asInstanceOf[Dirent]
+    inline def build(link: Link, encoding: TEncodingExtended): Dirent = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(link.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Dirent]
   }
 }

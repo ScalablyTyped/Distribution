@@ -12,19 +12,15 @@ trait ReadBookmark extends StObject {
 }
 object ReadBookmark {
   
-  @scala.inline
-  def apply(title: String, url: String): ReadBookmark = {
+  inline def apply(title: String, url: String): ReadBookmark = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadBookmark]
   }
   
-  @scala.inline
-  implicit class ReadBookmarkMutableBuilder[Self <: ReadBookmark] (val x: Self) extends AnyVal {
+  extension [Self <: ReadBookmark](x: Self) {
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -18,13 +18,12 @@ trait HeadingStyle extends StObject {
   
   var Style: js.Any
   
-  @JSName("Word.HeadingStyle_typekey")
+  /* private */ @JSName("Word.HeadingStyle_typekey")
   var WordDotHeadingStyle_typekey: HeadingStyle
 }
 object HeadingStyle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     Delete: () => Unit,
@@ -38,28 +37,20 @@ object HeadingStyle {
     __obj.asInstanceOf[HeadingStyle]
   }
   
-  @scala.inline
-  implicit class HeadingStyleMutableBuilder[Self <: HeadingStyle] (val x: Self) extends AnyVal {
+  extension [Self <: HeadingStyle](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "Level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "Level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: js.Any): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: js.Any): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotHeadingStyle_typekey(value: HeadingStyle): Self = StObject.set(x, "Word.HeadingStyle_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotHeadingStyle_typekey(value: HeadingStyle): Self = StObject.set(x, "Word.HeadingStyle_typekey", value.asInstanceOf[js.Any])
   }
 }

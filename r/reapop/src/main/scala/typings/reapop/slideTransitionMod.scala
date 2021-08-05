@@ -14,8 +14,7 @@ object slideTransitionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(props: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default(props: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait Props
     extends StObject
@@ -29,29 +28,22 @@ object slideTransitionMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(notification: Notification): Props = {
+    inline def apply(notification: Notification): Props = {
       val __obj = js.Dynamic.literal(notification = notification.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setNotification(value: Notification): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+      inline def setNotification(value: Notification): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     }
   }
 }

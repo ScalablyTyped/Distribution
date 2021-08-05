@@ -9,6 +9,5 @@ object global {
   @JSGlobal("gtag")
   @js.native
   def gtag: typings.gtagJs.Gtag.Gtag = js.native
-  @scala.inline
-  def gtag_=(x: typings.gtagJs.Gtag.Gtag): Unit = js.Dynamic.global.updateDynamic("gtag")(x.asInstanceOf[js.Any])
+  inline def gtag_=(x: typings.gtagJs.Gtag.Gtag): Unit = js.Dynamic.global.updateDynamic("gtag")(x.asInstanceOf[js.Any])
 }

@@ -11,8 +11,6 @@ object clearFixMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Styles]
-  @scala.inline
-  def default(parent: String): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  inline def default(): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Styles]
+  inline def default(parent: String): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any]).asInstanceOf[Styles]
 }

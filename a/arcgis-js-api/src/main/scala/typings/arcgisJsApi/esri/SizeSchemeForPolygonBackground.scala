@@ -26,8 +26,7 @@ trait SizeSchemeForPolygonBackground
 }
 object SizeSchemeForPolygonBackground {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     color: Color_,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -38,13 +37,10 @@ object SizeSchemeForPolygonBackground {
     __obj.asInstanceOf[SizeSchemeForPolygonBackground]
   }
   
-  @scala.inline
-  implicit class SizeSchemeForPolygonBackgroundMutableBuilder[Self <: SizeSchemeForPolygonBackground] (val x: Self) extends AnyVal {
+  extension [Self <: SizeSchemeForPolygonBackground](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutline(value: SizeSchemeForPolygonBackgroundOutline): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
+    inline def setOutline(value: SizeSchemeForPolygonBackgroundOutline): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
   }
 }

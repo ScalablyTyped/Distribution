@@ -19,26 +19,20 @@ object anon {
   }
   object East {
     
-    @scala.inline
-    def apply(east: JQuery | Boolean, north: JQuery | Boolean, south: JQuery | Boolean, west: JQuery | Boolean): East = {
+    inline def apply(east: JQuery | Boolean, north: JQuery | Boolean, south: JQuery | Boolean, west: JQuery | Boolean): East = {
       val __obj = js.Dynamic.literal(east = east.asInstanceOf[js.Any], north = north.asInstanceOf[js.Any], south = south.asInstanceOf[js.Any], west = west.asInstanceOf[js.Any])
       __obj.asInstanceOf[East]
     }
     
-    @scala.inline
-    implicit class EastMutableBuilder[Self <: East] (val x: Self) extends AnyVal {
+    extension [Self <: East](x: Self) {
       
-      @scala.inline
-      def setEast(value: JQuery | Boolean): Self = StObject.set(x, "east", value.asInstanceOf[js.Any])
+      inline def setEast(value: JQuery | Boolean): Self = StObject.set(x, "east", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNorth(value: JQuery | Boolean): Self = StObject.set(x, "north", value.asInstanceOf[js.Any])
+      inline def setNorth(value: JQuery | Boolean): Self = StObject.set(x, "north", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSouth(value: JQuery | Boolean): Self = StObject.set(x, "south", value.asInstanceOf[js.Any])
+      inline def setSouth(value: JQuery | Boolean): Self = StObject.set(x, "south", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWest(value: JQuery | Boolean): Self = StObject.set(x, "west", value.asInstanceOf[js.Any])
+      inline def setWest(value: JQuery | Boolean): Self = StObject.set(x, "west", value.asInstanceOf[js.Any])
     }
   }
   
@@ -54,26 +48,20 @@ object anon {
   }
   object North {
     
-    @scala.inline
-    def apply(east: PaneState, north: PaneState, south: PaneState, west: PaneState): North = {
+    inline def apply(east: PaneState, north: PaneState, south: PaneState, west: PaneState): North = {
       val __obj = js.Dynamic.literal(east = east.asInstanceOf[js.Any], north = north.asInstanceOf[js.Any], south = south.asInstanceOf[js.Any], west = west.asInstanceOf[js.Any])
       __obj.asInstanceOf[North]
     }
     
-    @scala.inline
-    implicit class NorthMutableBuilder[Self <: North] (val x: Self) extends AnyVal {
+    extension [Self <: North](x: Self) {
       
-      @scala.inline
-      def setEast(value: PaneState): Self = StObject.set(x, "east", value.asInstanceOf[js.Any])
+      inline def setEast(value: PaneState): Self = StObject.set(x, "east", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNorth(value: PaneState): Self = StObject.set(x, "north", value.asInstanceOf[js.Any])
+      inline def setNorth(value: PaneState): Self = StObject.set(x, "north", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSouth(value: PaneState): Self = StObject.set(x, "south", value.asInstanceOf[js.Any])
+      inline def setSouth(value: PaneState): Self = StObject.set(x, "south", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWest(value: PaneState): Self = StObject.set(x, "west", value.asInstanceOf[js.Any])
+      inline def setWest(value: PaneState): Self = StObject.set(x, "west", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -33,55 +33,39 @@ trait Anchor extends StObject {
 }
 object Anchor {
   
-  @scala.inline
-  def apply(fromTarget: String | js.Object, toTarget: String | js.Object): Anchor = {
+  inline def apply(fromTarget: String | js.Object, toTarget: String | js.Object): Anchor = {
     val __obj = js.Dynamic.literal(fromTarget = fromTarget.asInstanceOf[js.Any], toTarget = toTarget.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anchor]
   }
   
-  @scala.inline
-  implicit class AnchorMutableBuilder[Self <: Anchor] (val x: Self) extends AnyVal {
+  extension [Self <: Anchor](x: Self) {
     
-    @scala.inline
-    def setAnchor(value: DiagramConnectionAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+    inline def setAnchor(value: DiagramConnectionAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+    inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
-    @scala.inline
-    def setColor(value: ColorType): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: ColorType): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setFromTarget(value: String | js.Object): Self = StObject.set(x, "fromTarget", value.asInstanceOf[js.Any])
+    inline def setFromTarget(value: String | js.Object): Self = StObject.set(x, "fromTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setOffset(value: xsmall | small | medium | large | String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: xsmall | small | medium | large | String): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setThickness(value: hair | xxsmall | xsmall | small | medium | large | String): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
+    inline def setThickness(value: hair | xxsmall | xsmall | small | medium | large | String): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThicknessUndefined: Self = StObject.set(x, "thickness", js.undefined)
+    inline def setThicknessUndefined: Self = StObject.set(x, "thickness", js.undefined)
     
-    @scala.inline
-    def setToTarget(value: String | js.Object): Self = StObject.set(x, "toTarget", value.asInstanceOf[js.Any])
+    inline def setToTarget(value: String | js.Object): Self = StObject.set(x, "toTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: DiagramConnectionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: DiagramConnectionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

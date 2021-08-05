@@ -11,22 +11,17 @@ trait ManagedConfigurationsForUserListResponse extends StObject {
 }
 object ManagedConfigurationsForUserListResponse {
   
-  @scala.inline
-  def apply(): ManagedConfigurationsForUserListResponse = {
+  inline def apply(): ManagedConfigurationsForUserListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManagedConfigurationsForUserListResponse]
   }
   
-  @scala.inline
-  implicit class ManagedConfigurationsForUserListResponseMutableBuilder[Self <: ManagedConfigurationsForUserListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ManagedConfigurationsForUserListResponse](x: Self) {
     
-    @scala.inline
-    def setManagedConfigurationForUser(value: js.Array[ManagedConfiguration]): Self = StObject.set(x, "managedConfigurationForUser", value.asInstanceOf[js.Any])
+    inline def setManagedConfigurationForUser(value: js.Array[ManagedConfiguration]): Self = StObject.set(x, "managedConfigurationForUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedConfigurationForUserUndefined: Self = StObject.set(x, "managedConfigurationForUser", js.undefined)
+    inline def setManagedConfigurationForUserUndefined: Self = StObject.set(x, "managedConfigurationForUser", js.undefined)
     
-    @scala.inline
-    def setManagedConfigurationForUserVarargs(value: ManagedConfiguration*): Self = StObject.set(x, "managedConfigurationForUser", js.Array(value :_*))
+    inline def setManagedConfigurationForUserVarargs(value: ManagedConfiguration*): Self = StObject.set(x, "managedConfigurationForUser", js.Array(value :_*))
   }
 }

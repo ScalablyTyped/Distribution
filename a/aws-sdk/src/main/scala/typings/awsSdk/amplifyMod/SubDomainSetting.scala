@@ -18,19 +18,15 @@ trait SubDomainSetting extends StObject {
 }
 object SubDomainSetting {
   
-  @scala.inline
-  def apply(branchName: BranchName, prefix: DomainPrefix): SubDomainSetting = {
+  inline def apply(branchName: BranchName, prefix: DomainPrefix): SubDomainSetting = {
     val __obj = js.Dynamic.literal(branchName = branchName.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubDomainSetting]
   }
   
-  @scala.inline
-  implicit class SubDomainSettingMutableBuilder[Self <: SubDomainSetting] (val x: Self) extends AnyVal {
+  extension [Self <: SubDomainSetting](x: Self) {
     
-    @scala.inline
-    def setBranchName(value: BranchName): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
+    inline def setBranchName(value: BranchName): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefix(value: DomainPrefix): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: DomainPrefix): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
   }
 }

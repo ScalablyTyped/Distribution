@@ -35,8 +35,7 @@ trait CachedContentResultSet
      with ContentResultSet
 object CachedContentResultSet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CursorName: String,
     CursorTravelMode: Double,
     FetchDirection: Double,

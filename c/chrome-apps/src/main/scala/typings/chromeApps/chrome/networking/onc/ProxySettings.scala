@@ -20,34 +20,25 @@ trait ProxySettings[M, S, SL] extends StObject {
 }
 object ProxySettings {
   
-  @scala.inline
-  def apply[M, S, SL](Type: ProxySettingsType | ManagedType[ProxySettingsType]): ProxySettings[M, S, SL] = {
+  inline def apply[M, S, SL](Type: ProxySettingsType | ManagedType[ProxySettingsType]): ProxySettings[M, S, SL] = {
     val __obj = js.Dynamic.literal(Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProxySettings[M, S, SL]]
   }
   
-  @scala.inline
-  implicit class ProxySettingsMutableBuilder[Self <: ProxySettings[?, ?, ?], M, S, SL] (val x: Self & (ProxySettings[M, S, SL])) extends AnyVal {
+  extension [Self <: ProxySettings[?, ?, ?], M, S, SL](x: Self & (ProxySettings[M, S, SL])) {
     
-    @scala.inline
-    def setExcludeDomains(value: SL): Self = StObject.set(x, "ExcludeDomains", value.asInstanceOf[js.Any])
+    inline def setExcludeDomains(value: SL): Self = StObject.set(x, "ExcludeDomains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeDomainsUndefined: Self = StObject.set(x, "ExcludeDomains", js.undefined)
+    inline def setExcludeDomainsUndefined: Self = StObject.set(x, "ExcludeDomains", js.undefined)
     
-    @scala.inline
-    def setManual(value: ManualProxySettings[M, ProxyLocation | ManagedProxyLocation]): Self = StObject.set(x, "Manual", value.asInstanceOf[js.Any])
+    inline def setManual(value: ManualProxySettings[M, ProxyLocation | ManagedProxyLocation]): Self = StObject.set(x, "Manual", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManualUndefined: Self = StObject.set(x, "Manual", js.undefined)
+    inline def setManualUndefined: Self = StObject.set(x, "Manual", js.undefined)
     
-    @scala.inline
-    def setPAC(value: S): Self = StObject.set(x, "PAC", value.asInstanceOf[js.Any])
+    inline def setPAC(value: S): Self = StObject.set(x, "PAC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPACUndefined: Self = StObject.set(x, "PAC", js.undefined)
+    inline def setPACUndefined: Self = StObject.set(x, "PAC", js.undefined)
     
-    @scala.inline
-    def setType(value: ProxySettingsType | ManagedType[ProxySettingsType]): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: ProxySettingsType | ManagedType[ProxySettingsType]): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

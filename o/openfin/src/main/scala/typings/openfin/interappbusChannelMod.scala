@@ -24,14 +24,14 @@ object interappbusChannelMod {
     
     /* protected */ def checkForPreviousClientConnection(channelId: String): Unit = js.native
     
-    var clientMap: js.Any = js.native
+    /* private */ var clientMap: js.Any = js.native
     
     def connect(channelName: String): js.Promise[ChannelClient] = js.native
     def connect(channelName: String, options: ConnectOptions): js.Promise[ChannelClient] = js.native
     
     def create(channelName: String): js.Promise[ChannelProvider] = js.native
     
-    var endpointIdMap: js.Any = js.native
+    /* private */ var endpointIdMap: js.Any = js.native
     
     def getAllChannels(): js.Promise[js.Array[ProviderIdentity]] = js.native
     
@@ -41,11 +41,11 @@ object interappbusChannelMod {
     
     def onmessage(msg: ChannelMessage): Boolean = js.native
     
-    var processChannelConnection: js.Any = js.native
+    /* private */ var processChannelConnection: js.Any = js.native
     
-    var processChannelMessage: js.Any = js.native
+    /* private */ var processChannelMessage: js.Any = js.native
     
-    var providerMap: js.Any = js.native
+    /* private */ var providerMap: js.Any = js.native
     
     /* protected */ def removeChannelFromClientMaps(channelId: String, endpointId: String): Unit = js.native
     
@@ -66,8 +66,7 @@ object interappbusChannelMod {
   }
   object ChannelMessage {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ackToSender: js.Any,
       action: String,
       connectAction: Boolean,
@@ -79,20 +78,15 @@ object interappbusChannelMod {
       __obj.asInstanceOf[ChannelMessage]
     }
     
-    @scala.inline
-    implicit class ChannelMessageMutableBuilder[Self <: ChannelMessage] (val x: Self) extends AnyVal {
+    extension [Self <: ChannelMessage](x: Self) {
       
-      @scala.inline
-      def setAckToSender(value: js.Any): Self = StObject.set(x, "ackToSender", value.asInstanceOf[js.Any])
+      inline def setAckToSender(value: js.Any): Self = StObject.set(x, "ackToSender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectAction(value: Boolean): Self = StObject.set(x, "connectAction", value.asInstanceOf[js.Any])
+      inline def setConnectAction(value: Boolean): Self = StObject.set(x, "connectAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProviderIdentity(value: ProviderIdentity): Self = StObject.set(x, "providerIdentity", value.asInstanceOf[js.Any])
+      inline def setProviderIdentity(value: ProviderIdentity): Self = StObject.set(x, "providerIdentity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSenderIdentity(value: Identity): Self = StObject.set(x, "senderIdentity", value.asInstanceOf[js.Any])
+      inline def setSenderIdentity(value: Identity): Self = StObject.set(x, "senderIdentity", value.asInstanceOf[js.Any])
     }
   }
   
@@ -102,17 +96,14 @@ object interappbusChannelMod {
   }
   object ChannelPayload {
     
-    @scala.inline
-    def apply(payload: Payload): ChannelPayload = {
+    inline def apply(payload: Payload): ChannelPayload = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChannelPayload]
     }
     
-    @scala.inline
-    implicit class ChannelPayloadMutableBuilder[Self <: ChannelPayload] (val x: Self) extends AnyVal {
+    extension [Self <: ChannelPayload](x: Self) {
       
-      @scala.inline
-      def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     }
   }
   
@@ -125,26 +116,20 @@ object interappbusChannelMod {
   }
   object ConnectOptions {
     
-    @scala.inline
-    def apply(): ConnectOptions = {
+    inline def apply(): ConnectOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConnectOptions]
     }
     
-    @scala.inline
-    implicit class ConnectOptionsMutableBuilder[Self <: ConnectOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectOptions](x: Self) {
       
-      @scala.inline
-      def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+      inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
       
-      @scala.inline
-      def setWait_(value: Boolean): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
+      inline def setWait_(value: Boolean): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
+      inline def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
     }
   }
 }

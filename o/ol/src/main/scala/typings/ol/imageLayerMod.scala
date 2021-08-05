@@ -21,6 +21,6 @@ object imageLayerMod {
     
     def getImage(): HTMLCanvasElement | HTMLImageElement | HTMLVideoElement = js.native
     
-    var image_ : typings.ol.imageBaseMod.default = js.native
+    /* protected */ var image_ : typings.ol.imageBaseMod.default = js.native
   }
 }

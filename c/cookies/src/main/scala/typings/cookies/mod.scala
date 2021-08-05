@@ -124,8 +124,7 @@ object mod extends Shortcut {
   }
   object Cookie {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       domain: String,
       expires: Date,
       httpOnly: Boolean,
@@ -143,41 +142,29 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Cookie]
     }
     
-    @scala.inline
-    implicit class CookieMutableBuilder[Self <: Cookie] (val x: Self) extends AnyVal {
+    extension [Self <: Cookie](x: Self) {
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpOnly(value: Boolean): Self = StObject.set(x, "httpOnly", value.asInstanceOf[js.Any])
+      inline def setHttpOnly(value: Boolean): Self = StObject.set(x, "httpOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+      inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSameSite(value: Boolean): Self = StObject.set(x, "sameSite", value.asInstanceOf[js.Any])
+      inline def setSameSite(value: Boolean): Self = StObject.set(x, "sameSite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+      inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToHeader(value: () => String): Self = StObject.set(x, "toHeader", js.Any.fromFunction0(value))
+      inline def setToHeader(value: () => String): Self = StObject.set(x, "toHeader", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -256,17 +243,14 @@ object mod extends Shortcut {
   }
   object GetOption {
     
-    @scala.inline
-    def apply(signed: Boolean): GetOption = {
+    inline def apply(signed: Boolean): GetOption = {
       val __obj = js.Dynamic.literal(signed = signed.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetOption]
     }
     
-    @scala.inline
-    implicit class GetOptionMutableBuilder[Self <: GetOption] (val x: Self) extends AnyVal {
+    extension [Self <: GetOption](x: Self) {
       
-      @scala.inline
-      def setSigned(value: Boolean): Self = StObject.set(x, "signed", value.asInstanceOf[js.Any])
+      inline def setSigned(value: Boolean): Self = StObject.set(x, "signed", value.asInstanceOf[js.Any])
     }
   }
   
@@ -288,29 +272,22 @@ object mod extends Shortcut {
   }
   object Option {
     
-    @scala.inline
-    def apply(): Option = {
+    inline def apply(): Option = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Option]
     }
     
-    @scala.inline
-    implicit class OptionMutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
+    extension [Self <: Option](x: Self) {
       
-      @scala.inline
-      def setKeys(value: js.Array[String] | Keygrip): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+      inline def setKeys(value: js.Array[String] | Keygrip): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+      inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
       
-      @scala.inline
-      def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+      inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
       
-      @scala.inline
-      def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+      inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
+      inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
     }
   }
   
@@ -380,74 +357,52 @@ object mod extends Shortcut {
   }
   object SetOption {
     
-    @scala.inline
-    def apply(): SetOption = {
+    inline def apply(): SetOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SetOption]
     }
     
-    @scala.inline
-    implicit class SetOptionMutableBuilder[Self <: SetOption] (val x: Self) extends AnyVal {
+    extension [Self <: SetOption](x: Self) {
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      @scala.inline
-      def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+      inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
       
-      @scala.inline
-      def setHttpOnly(value: Boolean): Self = StObject.set(x, "httpOnly", value.asInstanceOf[js.Any])
+      inline def setHttpOnly(value: Boolean): Self = StObject.set(x, "httpOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpOnlyUndefined: Self = StObject.set(x, "httpOnly", js.undefined)
+      inline def setHttpOnlyUndefined: Self = StObject.set(x, "httpOnly", js.undefined)
       
-      @scala.inline
-      def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
-      @scala.inline
-      def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+      inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
+      inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setSameSite(value: strict | lax | none | Boolean): Self = StObject.set(x, "sameSite", value.asInstanceOf[js.Any])
+      inline def setSameSite(value: strict | lax | none | Boolean): Self = StObject.set(x, "sameSite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSameSiteUndefined: Self = StObject.set(x, "sameSite", js.undefined)
+      inline def setSameSiteUndefined: Self = StObject.set(x, "sameSite", js.undefined)
       
-      @scala.inline
-      def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+      inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecureProxy(value: Boolean): Self = StObject.set(x, "secureProxy", value.asInstanceOf[js.Any])
+      inline def setSecureProxy(value: Boolean): Self = StObject.set(x, "secureProxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecureProxyUndefined: Self = StObject.set(x, "secureProxy", js.undefined)
+      inline def setSecureProxyUndefined: Self = StObject.set(x, "secureProxy", js.undefined)
       
-      @scala.inline
-      def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
+      inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
       
-      @scala.inline
-      def setSigned(value: Boolean): Self = StObject.set(x, "signed", value.asInstanceOf[js.Any])
+      inline def setSigned(value: Boolean): Self = StObject.set(x, "signed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignedUndefined: Self = StObject.set(x, "signed", js.undefined)
+      inline def setSignedUndefined: Self = StObject.set(x, "signed", js.undefined)
     }
   }
   

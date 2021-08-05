@@ -178,8 +178,7 @@ object UI {
       * @return The specified Behavior object, if found; otherwise, null.
       */
     /* static member */
-    @scala.inline
-    def getBehaviorByName(element: HTMLElement, name: String): typings.microsoftAjax.Sys.UI.Behavior = (^.asInstanceOf[js.Dynamic].applyDynamic("getBehaviorByName")(element.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.microsoftAjax.Sys.UI.Behavior]
+    inline def getBehaviorByName(element: HTMLElement, name: String): typings.microsoftAjax.Sys.UI.Behavior = (^.asInstanceOf[js.Dynamic].applyDynamic("getBehaviorByName")(element.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.microsoftAjax.Sys.UI.Behavior]
     
     /**
       * Gets the Sys.UI.Behavior objects that are associated with the specified HTML Document Object Model (DOM) element. This member is static and can be invoked without creating an instance of the class.
@@ -188,16 +187,14 @@ object UI {
       * @return An array of references to Behavior objects, or null if no references exist.
       */
     /* static member */
-    @scala.inline
-    def getBehaviors(element: DomElement): js.Array[typings.microsoftAjax.Sys.UI.Behavior] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBehaviors")(element.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.microsoftAjax.Sys.UI.Behavior]]
+    inline def getBehaviors(element: DomElement): js.Array[typings.microsoftAjax.Sys.UI.Behavior] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBehaviors")(element.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.microsoftAjax.Sys.UI.Behavior]]
     
     /**
       * Gets an array of Sys.UI.Behavior objects that are of the specified type from the specified HTML Document Object Model (DOM) element. This method is static and can be invoked without creating an instance of the class.
       * @return An array of all Behavior objects of the specified type that are associated with the specified DOM element, if found; otherwise, an empty array.
       */
     /* static member */
-    @scala.inline
-    def getBehaviorsByType(element: HTMLElement, `type`: typings.microsoftAjax.Sys.UI.Behavior): js.Array[typings.microsoftAjax.Sys.UI.Behavior] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBehaviorsByType")(element.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.microsoftAjax.Sys.UI.Behavior]]
+    inline def getBehaviorsByType(element: HTMLElement, `type`: typings.microsoftAjax.Sys.UI.Behavior): js.Array[typings.microsoftAjax.Sys.UI.Behavior] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBehaviorsByType")(element.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.microsoftAjax.Sys.UI.Behavior]]
   }
   
   /**
@@ -451,8 +448,7 @@ object UI {
   @JSGlobal("Sys.UI.DomElement")
   @js.native
   def DomElement: typings.microsoftAjax.Sys.UI.DomElement = js.native
-  @scala.inline
-  def DomElement_=(x: DomElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DomElement")(x.asInstanceOf[js.Any])
+  inline def DomElement_=(x: DomElement): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DomElement")(x.asInstanceOf[js.Any])
   
   /**
     * Provides cross-browser access to DOM event properties and helper APIs that are used to attach handlers to DOM element events.
@@ -618,14 +614,12 @@ object UI {
       *          (Optional) A boolean value that determines whether the handler should be removed automatically when the element is disposed.
       */
     /* static member */
-    @scala.inline
-    def addHandler(
+    inline def addHandler(
       element: HTMLElement,
       eventName: String,
       handler: js.Function1[/* e */ typings.microsoftAjax.Sys.UI.DomEvent, Unit]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addHandler")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def addHandler(
+    inline def addHandler(
       element: HTMLElement,
       eventName: String,
       handler: js.Function1[/* e */ typings.microsoftAjax.Sys.UI.DomEvent, Unit],
@@ -654,26 +648,22 @@ object UI {
       *
       */
     /* static member */
-    @scala.inline
-    def addHandlers(
+    inline def addHandlers(
       element: HTMLElement,
       events: StringDictionary[js.Function1[/* e */ typings.microsoftAjax.Sys.UI.DomEvent, Unit]]
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addHandlers")(element.asInstanceOf[js.Any], events.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def addHandlers(
+    inline def addHandlers(
       element: HTMLElement,
       events: StringDictionary[js.Function1[/* e */ typings.microsoftAjax.Sys.UI.DomEvent, Unit]],
       handlerOwner: js.Any
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addHandlers")(element.asInstanceOf[js.Any], events.asInstanceOf[js.Any], handlerOwner.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def addHandlers(
+    inline def addHandlers(
       element: HTMLElement,
       events: StringDictionary[js.Function1[/* e */ typings.microsoftAjax.Sys.UI.DomEvent, Unit]],
       handlerOwner: js.Any,
       autoRemove: Boolean
     ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addHandlers")(element.asInstanceOf[js.Any], events.asInstanceOf[js.Any], handlerOwner.asInstanceOf[js.Any], autoRemove.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def addHandlers(
+    inline def addHandlers(
       element: HTMLElement,
       events: StringDictionary[js.Function1[/* e */ typings.microsoftAjax.Sys.UI.DomEvent, Unit]],
       handlerOwner: Unit,
@@ -689,8 +679,7 @@ object UI {
       *          The element that exposes the events.
       */
     /* static member */
-    @scala.inline
-    def clearHandlers(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearHandlers")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def clearHandlers(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearHandlers")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Removes a DOM event handler from the DOM element that exposes the event. This member is static and can be invoked without creating an instance of the class.
@@ -703,8 +692,7 @@ object UI {
       *          The event handler to remove.
       */
     /* static member */
-    @scala.inline
-    def removeHandler(
+    inline def removeHandler(
       element: HTMLElement,
       eventName: String,
       handler: js.Function1[/* e */ typings.microsoftAjax.Sys.UI.DomEvent, Unit]

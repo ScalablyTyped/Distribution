@@ -57,20 +57,16 @@ object Portable {
   }
   object IServiceDeviceStatics {
     
-    @scala.inline
-    def apply(getDeviceSelector: ServiceDeviceType => String, getDeviceSelectorFromServiceId: String => String): IServiceDeviceStatics = {
+    inline def apply(getDeviceSelector: ServiceDeviceType => String, getDeviceSelectorFromServiceId: String => String): IServiceDeviceStatics = {
       val __obj = js.Dynamic.literal(getDeviceSelector = js.Any.fromFunction1(getDeviceSelector), getDeviceSelectorFromServiceId = js.Any.fromFunction1(getDeviceSelectorFromServiceId))
       __obj.asInstanceOf[IServiceDeviceStatics]
     }
     
-    @scala.inline
-    implicit class IServiceDeviceStaticsMutableBuilder[Self <: IServiceDeviceStatics] (val x: Self) extends AnyVal {
+    extension [Self <: IServiceDeviceStatics](x: Self) {
       
-      @scala.inline
-      def setGetDeviceSelector(value: ServiceDeviceType => String): Self = StObject.set(x, "getDeviceSelector", js.Any.fromFunction1(value))
+      inline def setGetDeviceSelector(value: ServiceDeviceType => String): Self = StObject.set(x, "getDeviceSelector", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetDeviceSelectorFromServiceId(value: String => String): Self = StObject.set(x, "getDeviceSelectorFromServiceId", js.Any.fromFunction1(value))
+      inline def setGetDeviceSelectorFromServiceId(value: String => String): Self = StObject.set(x, "getDeviceSelectorFromServiceId", js.Any.fromFunction1(value))
     }
   }
   
@@ -82,20 +78,16 @@ object Portable {
   }
   object IStorageDeviceStatics {
     
-    @scala.inline
-    def apply(fromId: String => StorageFolder, getDeviceSelector: () => String): IStorageDeviceStatics = {
+    inline def apply(fromId: String => StorageFolder, getDeviceSelector: () => String): IStorageDeviceStatics = {
       val __obj = js.Dynamic.literal(fromId = js.Any.fromFunction1(fromId), getDeviceSelector = js.Any.fromFunction0(getDeviceSelector))
       __obj.asInstanceOf[IStorageDeviceStatics]
     }
     
-    @scala.inline
-    implicit class IStorageDeviceStaticsMutableBuilder[Self <: IStorageDeviceStatics] (val x: Self) extends AnyVal {
+    extension [Self <: IStorageDeviceStatics](x: Self) {
       
-      @scala.inline
-      def setFromId(value: String => StorageFolder): Self = StObject.set(x, "fromId", js.Any.fromFunction1(value))
+      inline def setFromId(value: String => StorageFolder): Self = StObject.set(x, "fromId", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetDeviceSelector(value: () => String): Self = StObject.set(x, "getDeviceSelector", js.Any.fromFunction0(value))
+      inline def setGetDeviceSelector(value: () => String): Self = StObject.set(x, "getDeviceSelector", js.Any.fromFunction0(value))
     }
   }
   

@@ -15,26 +15,20 @@ trait SummonerSpellListDto extends StObject {
 }
 object SummonerSpellListDto {
   
-  @scala.inline
-  def apply(data: js.Array[StringDictionary[SummonerSpellDto]], `type`: String, version: String): SummonerSpellListDto = {
+  inline def apply(data: js.Array[StringDictionary[SummonerSpellDto]], `type`: String, version: String): SummonerSpellListDto = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SummonerSpellListDto]
   }
   
-  @scala.inline
-  implicit class SummonerSpellListDtoMutableBuilder[Self <: SummonerSpellListDto] (val x: Self) extends AnyVal {
+  extension [Self <: SummonerSpellListDto](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Array[StringDictionary[SummonerSpellDto]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[StringDictionary[SummonerSpellDto]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: StringDictionary[SummonerSpellDto]*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: StringDictionary[SummonerSpellDto]*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

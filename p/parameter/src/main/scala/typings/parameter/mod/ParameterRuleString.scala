@@ -36,53 +36,38 @@ trait ParameterRuleString
 }
 object ParameterRuleString {
   
-  @scala.inline
-  def apply(`type`: string | stringQuestionmark): ParameterRuleString = {
+  inline def apply(`type`: string | stringQuestionmark): ParameterRuleString = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParameterRuleString]
   }
   
-  @scala.inline
-  implicit class ParameterRuleStringMutableBuilder[Self <: ParameterRuleString] (val x: Self) extends AnyVal {
+  extension [Self <: ParameterRuleString](x: Self) {
     
-    @scala.inline
-    def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
+    inline def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowEmptyUndefined: Self = StObject.set(x, "allowEmpty", js.undefined)
+    inline def setAllowEmptyUndefined: Self = StObject.set(x, "allowEmpty", js.undefined)
     
-    @scala.inline
-    def setEmpty(value: Boolean): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+    inline def setEmpty(value: Boolean): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
+    inline def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
     
-    @scala.inline
-    def setFormat(value: RegExp): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: RegExp): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
+    inline def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
+    inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
     
-    @scala.inline
-    def setType(value: string | stringQuestionmark): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: string | stringQuestionmark): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

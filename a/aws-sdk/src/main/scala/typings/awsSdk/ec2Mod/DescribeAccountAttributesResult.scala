@@ -13,22 +13,17 @@ trait DescribeAccountAttributesResult extends StObject {
 }
 object DescribeAccountAttributesResult {
   
-  @scala.inline
-  def apply(): DescribeAccountAttributesResult = {
+  inline def apply(): DescribeAccountAttributesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAccountAttributesResult]
   }
   
-  @scala.inline
-  implicit class DescribeAccountAttributesResultMutableBuilder[Self <: DescribeAccountAttributesResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAccountAttributesResult](x: Self) {
     
-    @scala.inline
-    def setAccountAttributes(value: AccountAttributeList): Self = StObject.set(x, "AccountAttributes", value.asInstanceOf[js.Any])
+    inline def setAccountAttributes(value: AccountAttributeList): Self = StObject.set(x, "AccountAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountAttributesUndefined: Self = StObject.set(x, "AccountAttributes", js.undefined)
+    inline def setAccountAttributesUndefined: Self = StObject.set(x, "AccountAttributes", js.undefined)
     
-    @scala.inline
-    def setAccountAttributesVarargs(value: AccountAttribute*): Self = StObject.set(x, "AccountAttributes", js.Array(value :_*))
+    inline def setAccountAttributesVarargs(value: AccountAttribute*): Self = StObject.set(x, "AccountAttributes", js.Array(value :_*))
   }
 }

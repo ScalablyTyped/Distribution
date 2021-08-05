@@ -23,25 +23,19 @@ trait UpdateGeoMatchSetRequest extends StObject {
 }
 object UpdateGeoMatchSetRequest {
   
-  @scala.inline
-  def apply(ChangeToken: ChangeToken, GeoMatchSetId: ResourceId, Updates: GeoMatchSetUpdates): UpdateGeoMatchSetRequest = {
+  inline def apply(ChangeToken: ChangeToken, GeoMatchSetId: ResourceId, Updates: GeoMatchSetUpdates): UpdateGeoMatchSetRequest = {
     val __obj = js.Dynamic.literal(ChangeToken = ChangeToken.asInstanceOf[js.Any], GeoMatchSetId = GeoMatchSetId.asInstanceOf[js.Any], Updates = Updates.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateGeoMatchSetRequest]
   }
   
-  @scala.inline
-  implicit class UpdateGeoMatchSetRequestMutableBuilder[Self <: UpdateGeoMatchSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateGeoMatchSetRequest](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeoMatchSetId(value: ResourceId): Self = StObject.set(x, "GeoMatchSetId", value.asInstanceOf[js.Any])
+    inline def setGeoMatchSetId(value: ResourceId): Self = StObject.set(x, "GeoMatchSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdates(value: GeoMatchSetUpdates): Self = StObject.set(x, "Updates", value.asInstanceOf[js.Any])
+    inline def setUpdates(value: GeoMatchSetUpdates): Self = StObject.set(x, "Updates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatesVarargs(value: GeoMatchSetUpdate*): Self = StObject.set(x, "Updates", js.Array(value :_*))
+    inline def setUpdatesVarargs(value: GeoMatchSetUpdate*): Self = StObject.set(x, "Updates", js.Array(value :_*))
   }
 }

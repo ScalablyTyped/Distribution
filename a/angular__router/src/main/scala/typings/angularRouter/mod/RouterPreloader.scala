@@ -22,9 +22,9 @@ class RouterPreloader protected ()
     preloadingStrategy: PreloadingStrategy
   ) = this()
   
-  var injector: js.Any = js.native
+  /* private */ var injector: js.Any = js.native
   
-  var loader: js.Any = js.native
+  /* private */ var loader: js.Any = js.native
   
   /**
     * A callback method that performs custom clean-up, invoked immediately
@@ -35,15 +35,15 @@ class RouterPreloader protected ()
   
   def preload(): Observable_[js.Any] = js.native
   
-  var preloadConfig: js.Any = js.native
+  /* private */ var preloadConfig: js.Any = js.native
   
-  var preloadingStrategy: js.Any = js.native
+  /* private */ var preloadingStrategy: js.Any = js.native
   
-  var processRoutes: js.Any = js.native
+  /* private */ var processRoutes: js.Any = js.native
   
-  var router: js.Any = js.native
+  /* private */ var router: js.Any = js.native
   
   def setUpPreloading(): Unit = js.native
   
-  var subscription: js.Any = js.native
+  /* private */ var subscription: js.Any = js.native
 }

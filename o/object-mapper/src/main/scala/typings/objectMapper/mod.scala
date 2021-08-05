@@ -10,8 +10,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def merge(srcObject: js.Object, mapObject: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(srcObject.asInstanceOf[js.Any], mapObject.asInstanceOf[js.Any])).asInstanceOf[js.Object]
-  @scala.inline
-  def merge[T](srcObject: js.Object, destinationObject: T, mapObject: js.Object): T = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(srcObject.asInstanceOf[js.Any], destinationObject.asInstanceOf[js.Any], mapObject.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def merge(srcObject: js.Object, mapObject: js.Object): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(srcObject.asInstanceOf[js.Any], mapObject.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def merge[T](srcObject: js.Object, destinationObject: T, mapObject: js.Object): T = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(srcObject.asInstanceOf[js.Any], destinationObject.asInstanceOf[js.Any], mapObject.asInstanceOf[js.Any])).asInstanceOf[T]
 }

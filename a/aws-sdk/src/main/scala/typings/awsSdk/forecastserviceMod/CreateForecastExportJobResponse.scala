@@ -13,19 +13,15 @@ trait CreateForecastExportJobResponse extends StObject {
 }
 object CreateForecastExportJobResponse {
   
-  @scala.inline
-  def apply(): CreateForecastExportJobResponse = {
+  inline def apply(): CreateForecastExportJobResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateForecastExportJobResponse]
   }
   
-  @scala.inline
-  implicit class CreateForecastExportJobResponseMutableBuilder[Self <: CreateForecastExportJobResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateForecastExportJobResponse](x: Self) {
     
-    @scala.inline
-    def setForecastExportJobArn(value: Arn): Self = StObject.set(x, "ForecastExportJobArn", value.asInstanceOf[js.Any])
+    inline def setForecastExportJobArn(value: Arn): Self = StObject.set(x, "ForecastExportJobArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForecastExportJobArnUndefined: Self = StObject.set(x, "ForecastExportJobArn", js.undefined)
+    inline def setForecastExportJobArnUndefined: Self = StObject.set(x, "ForecastExportJobArn", js.undefined)
   }
 }

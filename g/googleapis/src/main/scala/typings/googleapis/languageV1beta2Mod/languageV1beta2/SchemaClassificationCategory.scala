@@ -23,25 +23,19 @@ trait SchemaClassificationCategory extends StObject {
 }
 object SchemaClassificationCategory {
   
-  @scala.inline
-  def apply(): SchemaClassificationCategory = {
+  inline def apply(): SchemaClassificationCategory = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaClassificationCategory]
   }
   
-  @scala.inline
-  implicit class SchemaClassificationCategoryMutableBuilder[Self <: SchemaClassificationCategory] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaClassificationCategory](x: Self) {
     
-    @scala.inline
-    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

@@ -25,8 +25,7 @@ trait EscapeCharacterSet
 }
 object EscapeCharacterSet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     end: Double,
     kind: digit | space | word,
     negate: Boolean,
@@ -39,19 +38,14 @@ object EscapeCharacterSet {
     __obj.asInstanceOf[EscapeCharacterSet]
   }
   
-  @scala.inline
-  implicit class EscapeCharacterSetMutableBuilder[Self <: EscapeCharacterSet] (val x: Self) extends AnyVal {
+  extension [Self <: EscapeCharacterSet](x: Self) {
     
-    @scala.inline
-    def setKind(value: digit | space | word): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: digit | space | word): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegate(value: Boolean): Self = StObject.set(x, "negate", value.asInstanceOf[js.Any])
+    inline def setNegate(value: Boolean): Self = StObject.set(x, "negate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: Alternative | Quantifier | CharacterClass): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Alternative | Quantifier | CharacterClass): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.regexpp.regexppStrings.CharacterSet): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.regexpp.regexppStrings.CharacterSet): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

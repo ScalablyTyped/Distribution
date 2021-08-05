@@ -12,19 +12,15 @@ trait Async extends StObject {
 }
 object Async {
   
-  @scala.inline
-  def apply(async: Boolean, bridge: Boolean): Async = {
+  inline def apply(async: Boolean, bridge: Boolean): Async = {
     val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], bridge = bridge.asInstanceOf[js.Any])
     __obj.asInstanceOf[Async]
   }
   
-  @scala.inline
-  implicit class AsyncMutableBuilder[Self <: Async] (val x: Self) extends AnyVal {
+  extension [Self <: Async](x: Self) {
     
-    @scala.inline
-    def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+    inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBridge(value: Boolean): Self = StObject.set(x, "bridge", value.asInstanceOf[js.Any])
+    inline def setBridge(value: Boolean): Self = StObject.set(x, "bridge", value.asInstanceOf[js.Any])
   }
 }

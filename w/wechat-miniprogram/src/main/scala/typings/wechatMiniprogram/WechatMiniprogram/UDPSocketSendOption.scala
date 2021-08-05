@@ -24,34 +24,25 @@ trait UDPSocketSendOption extends StObject {
 }
 object UDPSocketSendOption {
   
-  @scala.inline
-  def apply(address: String, message: String | ArrayBuffer, port: Double): UDPSocketSendOption = {
+  inline def apply(address: String, message: String | ArrayBuffer, port: Double): UDPSocketSendOption = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
     __obj.asInstanceOf[UDPSocketSendOption]
   }
   
-  @scala.inline
-  implicit class UDPSocketSendOptionMutableBuilder[Self <: UDPSocketSendOption] (val x: Self) extends AnyVal {
+  extension [Self <: UDPSocketSendOption](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String | ArrayBuffer): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String | ArrayBuffer): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
   }
 }

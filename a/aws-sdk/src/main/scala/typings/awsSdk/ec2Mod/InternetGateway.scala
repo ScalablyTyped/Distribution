@@ -28,43 +28,31 @@ trait InternetGateway extends StObject {
 }
 object InternetGateway {
   
-  @scala.inline
-  def apply(): InternetGateway = {
+  inline def apply(): InternetGateway = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InternetGateway]
   }
   
-  @scala.inline
-  implicit class InternetGatewayMutableBuilder[Self <: InternetGateway] (val x: Self) extends AnyVal {
+  extension [Self <: InternetGateway](x: Self) {
     
-    @scala.inline
-    def setAttachments(value: InternetGatewayAttachmentList): Self = StObject.set(x, "Attachments", value.asInstanceOf[js.Any])
+    inline def setAttachments(value: InternetGatewayAttachmentList): Self = StObject.set(x, "Attachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentsUndefined: Self = StObject.set(x, "Attachments", js.undefined)
+    inline def setAttachmentsUndefined: Self = StObject.set(x, "Attachments", js.undefined)
     
-    @scala.inline
-    def setAttachmentsVarargs(value: InternetGatewayAttachment*): Self = StObject.set(x, "Attachments", js.Array(value :_*))
+    inline def setAttachmentsVarargs(value: InternetGatewayAttachment*): Self = StObject.set(x, "Attachments", js.Array(value :_*))
     
-    @scala.inline
-    def setInternetGatewayId(value: String): Self = StObject.set(x, "InternetGatewayId", value.asInstanceOf[js.Any])
+    inline def setInternetGatewayId(value: String): Self = StObject.set(x, "InternetGatewayId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternetGatewayIdUndefined: Self = StObject.set(x, "InternetGatewayId", js.undefined)
+    inline def setInternetGatewayIdUndefined: Self = StObject.set(x, "InternetGatewayId", js.undefined)
     
-    @scala.inline
-    def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
+    inline def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
+    inline def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

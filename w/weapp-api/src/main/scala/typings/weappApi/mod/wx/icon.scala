@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait icon extends StObject
 object icon {
   
-  @scala.inline
-  def loading: typings.weappApi.weappApiStrings.loading = "loading".asInstanceOf[typings.weappApi.weappApiStrings.loading]
+  inline def loading: typings.weappApi.weappApiStrings.loading = "loading".asInstanceOf[typings.weappApi.weappApiStrings.loading]
   
-  @scala.inline
-  def none: typings.weappApi.weappApiStrings.none = "none".asInstanceOf[typings.weappApi.weappApiStrings.none]
+  inline def none: typings.weappApi.weappApiStrings.none = "none".asInstanceOf[typings.weappApi.weappApiStrings.none]
   
-  @scala.inline
-  def success: typings.weappApi.weappApiStrings.success = "success".asInstanceOf[typings.weappApi.weappApiStrings.success]
+  inline def success: typings.weappApi.weappApiStrings.success = "success".asInstanceOf[typings.weappApi.weappApiStrings.success]
 }

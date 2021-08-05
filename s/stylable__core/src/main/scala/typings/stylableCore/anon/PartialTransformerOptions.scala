@@ -31,65 +31,47 @@ trait PartialTransformerOptions extends StObject {
 }
 object PartialTransformerOptions {
   
-  @scala.inline
-  def apply(): PartialTransformerOptions = {
+  inline def apply(): PartialTransformerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialTransformerOptions]
   }
   
-  @scala.inline
-  implicit class PartialTransformerOptionsMutableBuilder[Self <: PartialTransformerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartialTransformerOptions](x: Self) {
     
-    @scala.inline
-    def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+    inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+    inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
     
-    @scala.inline
-    def setDiagnostics(value: Diagnostics): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
+    inline def setDiagnostics(value: Diagnostics): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
+    inline def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
     
-    @scala.inline
-    def setFileProcessor(value: FileProcessor[StylableMeta]): Self = StObject.set(x, "fileProcessor", value.asInstanceOf[js.Any])
+    inline def setFileProcessor(value: FileProcessor[StylableMeta]): Self = StObject.set(x, "fileProcessor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileProcessorUndefined: Self = StObject.set(x, "fileProcessor", js.undefined)
+    inline def setFileProcessorUndefined: Self = StObject.set(x, "fileProcessor", js.undefined)
     
-    @scala.inline
-    def setKeepValues(value: Boolean): Self = StObject.set(x, "keepValues", value.asInstanceOf[js.Any])
+    inline def setKeepValues(value: Boolean): Self = StObject.set(x, "keepValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepValuesUndefined: Self = StObject.set(x, "keepValues", js.undefined)
+    inline def setKeepValuesUndefined: Self = StObject.set(x, "keepValues", js.undefined)
     
-    @scala.inline
-    def setMode(value: EnvMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: EnvMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setPostProcessor(
+    inline def setPostProcessor(
       value: (/* stylableResults */ StylableResults, /* transformer */ StylableTransformer) => StylableResults & js.Object
     ): Self = StObject.set(x, "postProcessor", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPostProcessorUndefined: Self = StObject.set(x, "postProcessor", js.undefined)
+    inline def setPostProcessorUndefined: Self = StObject.set(x, "postProcessor", js.undefined)
     
-    @scala.inline
-    def setReplaceValueHook(
+    inline def setReplaceValueHook(
       value: (/* value */ String, /* name */ String | Args, /* isLocal */ Boolean, /* passedThrough */ js.Array[String]) => String
     ): Self = StObject.set(x, "replaceValueHook", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setReplaceValueHookUndefined: Self = StObject.set(x, "replaceValueHook", js.undefined)
+    inline def setReplaceValueHookUndefined: Self = StObject.set(x, "replaceValueHook", js.undefined)
     
-    @scala.inline
-    def setRequireModule(value: /* modulePath */ String => js.Any): Self = StObject.set(x, "requireModule", js.Any.fromFunction1(value))
+    inline def setRequireModule(value: /* modulePath */ String => js.Any): Self = StObject.set(x, "requireModule", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRequireModuleUndefined: Self = StObject.set(x, "requireModule", js.undefined)
+    inline def setRequireModuleUndefined: Self = StObject.set(x, "requireModule", js.undefined)
   }
 }

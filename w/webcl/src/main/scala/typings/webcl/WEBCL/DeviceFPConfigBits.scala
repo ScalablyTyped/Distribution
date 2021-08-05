@@ -24,24 +24,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeviceFPConfigBits extends StObject
 object DeviceFPConfigBits {
   
-  @scala.inline
-  def FP_DENORM: `0x1` = 0x1.asInstanceOf[`0x1`]
+  inline def FP_DENORM: `0x1` = 0x1.asInstanceOf[`0x1`]
   
-  @scala.inline
-  def FP_FMA: `0x20` = 0x20.asInstanceOf[`0x20`]
+  inline def FP_FMA: `0x20` = 0x20.asInstanceOf[`0x20`]
   
-  @scala.inline
-  def FP_INF_NAN: `0x2` = 0x2.asInstanceOf[`0x2`]
+  inline def FP_INF_NAN: `0x2` = 0x2.asInstanceOf[`0x2`]
   
-  @scala.inline
-  def FP_ROUND_TO_INF: `0x10` = 0x10.asInstanceOf[`0x10`]
+  inline def FP_ROUND_TO_INF: `0x10` = 0x10.asInstanceOf[`0x10`]
   
-  @scala.inline
-  def FP_ROUND_TO_NEAREST: `0x4` = 0x4.asInstanceOf[`0x4`]
+  inline def FP_ROUND_TO_NEAREST: `0x4` = 0x4.asInstanceOf[`0x4`]
   
-  @scala.inline
-  def FP_ROUND_TO_ZERO: `0x8` = 0x8.asInstanceOf[`0x8`]
+  inline def FP_ROUND_TO_ZERO: `0x8` = 0x8.asInstanceOf[`0x8`]
   
-  @scala.inline
-  def FP_SOFT_FLOAT: `0x40` = 0x40.asInstanceOf[`0x40`]
+  inline def FP_SOFT_FLOAT: `0x40` = 0x40.asInstanceOf[`0x40`]
 }

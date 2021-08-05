@@ -11,22 +11,17 @@ trait QueryAuditableServicesResponse extends StObject {
 }
 object QueryAuditableServicesResponse {
   
-  @scala.inline
-  def apply(): QueryAuditableServicesResponse = {
+  inline def apply(): QueryAuditableServicesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryAuditableServicesResponse]
   }
   
-  @scala.inline
-  implicit class QueryAuditableServicesResponseMutableBuilder[Self <: QueryAuditableServicesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: QueryAuditableServicesResponse](x: Self) {
     
-    @scala.inline
-    def setServices(value: js.Array[AuditableService]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+    inline def setServices(value: js.Array[AuditableService]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
+    inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     
-    @scala.inline
-    def setServicesVarargs(value: AuditableService*): Self = StObject.set(x, "services", js.Array(value :_*))
+    inline def setServicesVarargs(value: AuditableService*): Self = StObject.set(x, "services", js.Array(value :_*))
   }
 }

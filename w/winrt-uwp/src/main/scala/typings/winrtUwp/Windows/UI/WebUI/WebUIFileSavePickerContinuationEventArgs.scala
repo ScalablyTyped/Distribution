@@ -32,8 +32,7 @@ trait WebUIFileSavePickerContinuationEventArgs extends StObject {
 }
 object WebUIFileSavePickerContinuationEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activatedOperation: ActivatedOperation,
     continuationData: ValueSet,
     file: StorageFile,
@@ -45,25 +44,18 @@ object WebUIFileSavePickerContinuationEventArgs {
     __obj.asInstanceOf[WebUIFileSavePickerContinuationEventArgs]
   }
   
-  @scala.inline
-  implicit class WebUIFileSavePickerContinuationEventArgsMutableBuilder[Self <: WebUIFileSavePickerContinuationEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: WebUIFileSavePickerContinuationEventArgs](x: Self) {
     
-    @scala.inline
-    def setActivatedOperation(value: ActivatedOperation): Self = StObject.set(x, "activatedOperation", value.asInstanceOf[js.Any])
+    inline def setActivatedOperation(value: ActivatedOperation): Self = StObject.set(x, "activatedOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinuationData(value: ValueSet): Self = StObject.set(x, "continuationData", value.asInstanceOf[js.Any])
+    inline def setContinuationData(value: ValueSet): Self = StObject.set(x, "continuationData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFile(value: StorageFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: StorageFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
+    inline def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
+    inline def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
   }
 }

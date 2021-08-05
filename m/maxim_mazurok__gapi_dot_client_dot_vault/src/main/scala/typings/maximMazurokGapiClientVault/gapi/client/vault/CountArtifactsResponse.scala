@@ -17,31 +17,23 @@ trait CountArtifactsResponse extends StObject {
 }
 object CountArtifactsResponse {
   
-  @scala.inline
-  def apply(): CountArtifactsResponse = {
+  inline def apply(): CountArtifactsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CountArtifactsResponse]
   }
   
-  @scala.inline
-  implicit class CountArtifactsResponseMutableBuilder[Self <: CountArtifactsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CountArtifactsResponse](x: Self) {
     
-    @scala.inline
-    def setGroupsCountResult(value: GroupsCountResult): Self = StObject.set(x, "groupsCountResult", value.asInstanceOf[js.Any])
+    inline def setGroupsCountResult(value: GroupsCountResult): Self = StObject.set(x, "groupsCountResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsCountResultUndefined: Self = StObject.set(x, "groupsCountResult", js.undefined)
+    inline def setGroupsCountResultUndefined: Self = StObject.set(x, "groupsCountResult", js.undefined)
     
-    @scala.inline
-    def setMailCountResult(value: MailCountResult): Self = StObject.set(x, "mailCountResult", value.asInstanceOf[js.Any])
+    inline def setMailCountResult(value: MailCountResult): Self = StObject.set(x, "mailCountResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMailCountResultUndefined: Self = StObject.set(x, "mailCountResult", js.undefined)
+    inline def setMailCountResultUndefined: Self = StObject.set(x, "mailCountResult", js.undefined)
     
-    @scala.inline
-    def setTotalCount(value: String): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
+    inline def setTotalCount(value: String): Self = StObject.set(x, "totalCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
+    inline def setTotalCountUndefined: Self = StObject.set(x, "totalCount", js.undefined)
   }
 }

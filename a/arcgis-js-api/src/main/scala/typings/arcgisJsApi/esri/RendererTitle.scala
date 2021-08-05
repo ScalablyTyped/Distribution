@@ -40,8 +40,7 @@ trait RendererTitle
 }
 object RendererTitle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     field: String,
     hasOwnProperty: PropertyKey => Boolean,
@@ -53,22 +52,16 @@ object RendererTitle {
     __obj.asInstanceOf[RendererTitle]
   }
   
-  @scala.inline
-  implicit class RendererTitleMutableBuilder[Self <: RendererTitle] (val x: Self) extends AnyVal {
+  extension [Self <: RendererTitle](x: Self) {
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormByPct(value: Boolean): Self = StObject.set(x, "normByPct", value.asInstanceOf[js.Any])
+    inline def setNormByPct(value: Boolean): Self = StObject.set(x, "normByPct", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormField(value: String): Self = StObject.set(x, "normField", value.asInstanceOf[js.Any])
+    inline def setNormField(value: String): Self = StObject.set(x, "normField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

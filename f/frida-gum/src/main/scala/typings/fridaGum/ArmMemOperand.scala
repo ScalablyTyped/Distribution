@@ -17,20 +17,16 @@ trait ArmMemOperand
 }
 object ArmMemOperand {
   
-  @scala.inline
-  def apply(subtracted: Boolean, value: Disp): ArmMemOperand = {
+  inline def apply(subtracted: Boolean, value: Disp): ArmMemOperand = {
     val __obj = js.Dynamic.literal(subtracted = subtracted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("mem")
     __obj.asInstanceOf[ArmMemOperand]
   }
   
-  @scala.inline
-  implicit class ArmMemOperandMutableBuilder[Self <: ArmMemOperand] (val x: Self) extends AnyVal {
+  extension [Self <: ArmMemOperand](x: Self) {
     
-    @scala.inline
-    def setType(value: mem): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: mem): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Disp): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Disp): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

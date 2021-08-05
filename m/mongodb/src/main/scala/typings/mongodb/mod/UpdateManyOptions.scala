@@ -14,28 +14,21 @@ trait UpdateManyOptions
 }
 object UpdateManyOptions {
   
-  @scala.inline
-  def apply(): UpdateManyOptions = {
+  inline def apply(): UpdateManyOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateManyOptions]
   }
   
-  @scala.inline
-  implicit class UpdateManyOptionsMutableBuilder[Self <: UpdateManyOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateManyOptions](x: Self) {
     
-    @scala.inline
-    def setArrayFilters(value: js.Array[js.Object]): Self = StObject.set(x, "arrayFilters", value.asInstanceOf[js.Any])
+    inline def setArrayFilters(value: js.Array[js.Object]): Self = StObject.set(x, "arrayFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrayFiltersUndefined: Self = StObject.set(x, "arrayFilters", js.undefined)
+    inline def setArrayFiltersUndefined: Self = StObject.set(x, "arrayFilters", js.undefined)
     
-    @scala.inline
-    def setArrayFiltersVarargs(value: js.Object*): Self = StObject.set(x, "arrayFilters", js.Array(value :_*))
+    inline def setArrayFiltersVarargs(value: js.Object*): Self = StObject.set(x, "arrayFilters", js.Array(value :_*))
     
-    @scala.inline
-    def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
+    inline def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
+    inline def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
   }
 }

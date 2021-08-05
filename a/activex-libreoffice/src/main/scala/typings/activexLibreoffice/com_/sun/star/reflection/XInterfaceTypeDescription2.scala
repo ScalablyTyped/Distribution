@@ -44,8 +44,7 @@ trait XInterfaceTypeDescription2
 }
 object XInterfaceTypeDescription2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BaseType: XTypeDescription,
     BaseTypes: SafeArray[XTypeDescription],
     Members: SafeArray[XInterfaceMemberTypeDescription],
@@ -68,19 +67,14 @@ object XInterfaceTypeDescription2 {
     __obj.asInstanceOf[XInterfaceTypeDescription2]
   }
   
-  @scala.inline
-  implicit class XInterfaceTypeDescription2MutableBuilder[Self <: XInterfaceTypeDescription2] (val x: Self) extends AnyVal {
+  extension [Self <: XInterfaceTypeDescription2](x: Self) {
     
-    @scala.inline
-    def setBaseTypes(value: SafeArray[XTypeDescription]): Self = StObject.set(x, "BaseTypes", value.asInstanceOf[js.Any])
+    inline def setBaseTypes(value: SafeArray[XTypeDescription]): Self = StObject.set(x, "BaseTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetBaseTypes(value: () => SafeArray[XTypeDescription]): Self = StObject.set(x, "getBaseTypes", js.Any.fromFunction0(value))
+    inline def setGetBaseTypes(value: () => SafeArray[XTypeDescription]): Self = StObject.set(x, "getBaseTypes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOptionalBaseTypes(value: () => SafeArray[XTypeDescription]): Self = StObject.set(x, "getOptionalBaseTypes", js.Any.fromFunction0(value))
+    inline def setGetOptionalBaseTypes(value: () => SafeArray[XTypeDescription]): Self = StObject.set(x, "getOptionalBaseTypes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOptionalBaseTypes(value: SafeArray[XTypeDescription]): Self = StObject.set(x, "OptionalBaseTypes", value.asInstanceOf[js.Any])
+    inline def setOptionalBaseTypes(value: SafeArray[XTypeDescription]): Self = StObject.set(x, "OptionalBaseTypes", value.asInstanceOf[js.Any])
   }
 }

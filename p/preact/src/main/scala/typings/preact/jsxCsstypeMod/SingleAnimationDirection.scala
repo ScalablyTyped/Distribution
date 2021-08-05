@@ -16,15 +16,11 @@ trait SingleAnimationDirection
      with _SingleAnimation
 object SingleAnimationDirection {
   
-  @scala.inline
-  def alternate: typings.preact.preactStrings.alternate = "alternate".asInstanceOf[typings.preact.preactStrings.alternate]
+  inline def alternate: typings.preact.preactStrings.alternate = "alternate".asInstanceOf[typings.preact.preactStrings.alternate]
   
-  @scala.inline
-  def `alternate-reverse`: typings.preact.preactStrings.`alternate-reverse` = "alternate-reverse".asInstanceOf[typings.preact.preactStrings.`alternate-reverse`]
+  inline def `alternate-reverse`: typings.preact.preactStrings.`alternate-reverse` = "alternate-reverse".asInstanceOf[typings.preact.preactStrings.`alternate-reverse`]
   
-  @scala.inline
-  def normal: typings.preact.preactStrings.normal = "normal".asInstanceOf[typings.preact.preactStrings.normal]
+  inline def normal: typings.preact.preactStrings.normal = "normal".asInstanceOf[typings.preact.preactStrings.normal]
   
-  @scala.inline
-  def reverse: typings.preact.preactStrings.reverse = "reverse".asInstanceOf[typings.preact.preactStrings.reverse]
+  inline def reverse: typings.preact.preactStrings.reverse = "reverse".asInstanceOf[typings.preact.preactStrings.reverse]
 }

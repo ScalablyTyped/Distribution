@@ -18,26 +18,20 @@ trait ArrayTypeName
 }
 object ArrayTypeName {
   
-  @scala.inline
-  def apply(baseTypeName: TypeName): ArrayTypeName = {
+  inline def apply(baseTypeName: TypeName): ArrayTypeName = {
     val __obj = js.Dynamic.literal(baseTypeName = baseTypeName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ArrayTypeName")
     __obj.asInstanceOf[ArrayTypeName]
   }
   
-  @scala.inline
-  implicit class ArrayTypeNameMutableBuilder[Self <: ArrayTypeName] (val x: Self) extends AnyVal {
+  extension [Self <: ArrayTypeName](x: Self) {
     
-    @scala.inline
-    def setBaseTypeName(value: TypeName): Self = StObject.set(x, "baseTypeName", value.asInstanceOf[js.Any])
+    inline def setBaseTypeName(value: TypeName): Self = StObject.set(x, "baseTypeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: Expression): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Expression): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.ArrayTypeName): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.ArrayTypeName): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

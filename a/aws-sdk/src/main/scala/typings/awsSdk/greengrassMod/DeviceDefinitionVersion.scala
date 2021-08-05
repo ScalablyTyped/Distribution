@@ -13,22 +13,17 @@ trait DeviceDefinitionVersion extends StObject {
 }
 object DeviceDefinitionVersion {
   
-  @scala.inline
-  def apply(): DeviceDefinitionVersion = {
+  inline def apply(): DeviceDefinitionVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceDefinitionVersion]
   }
   
-  @scala.inline
-  implicit class DeviceDefinitionVersionMutableBuilder[Self <: DeviceDefinitionVersion] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceDefinitionVersion](x: Self) {
     
-    @scala.inline
-    def setDevices(value: listOfDevice): Self = StObject.set(x, "Devices", value.asInstanceOf[js.Any])
+    inline def setDevices(value: listOfDevice): Self = StObject.set(x, "Devices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevicesUndefined: Self = StObject.set(x, "Devices", js.undefined)
+    inline def setDevicesUndefined: Self = StObject.set(x, "Devices", js.undefined)
     
-    @scala.inline
-    def setDevicesVarargs(value: Device*): Self = StObject.set(x, "Devices", js.Array(value :_*))
+    inline def setDevicesVarargs(value: Device*): Self = StObject.set(x, "Devices", js.Array(value :_*))
   }
 }

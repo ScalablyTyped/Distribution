@@ -19,22 +19,17 @@ trait ILineTokens extends StObject {
 }
 object ILineTokens {
   
-  @scala.inline
-  def apply(endState: IState, tokens: js.Array[IToken]): ILineTokens = {
+  inline def apply(endState: IState, tokens: js.Array[IToken]): ILineTokens = {
     val __obj = js.Dynamic.literal(endState = endState.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILineTokens]
   }
   
-  @scala.inline
-  implicit class ILineTokensMutableBuilder[Self <: ILineTokens] (val x: Self) extends AnyVal {
+  extension [Self <: ILineTokens](x: Self) {
     
-    @scala.inline
-    def setEndState(value: IState): Self = StObject.set(x, "endState", value.asInstanceOf[js.Any])
+    inline def setEndState(value: IState): Self = StObject.set(x, "endState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokens(value: js.Array[IToken]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+    inline def setTokens(value: js.Array[IToken]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokensVarargs(value: IToken*): Self = StObject.set(x, "tokens", js.Array(value :_*))
+    inline def setTokensVarargs(value: IToken*): Self = StObject.set(x, "tokens", js.Array(value :_*))
   }
 }

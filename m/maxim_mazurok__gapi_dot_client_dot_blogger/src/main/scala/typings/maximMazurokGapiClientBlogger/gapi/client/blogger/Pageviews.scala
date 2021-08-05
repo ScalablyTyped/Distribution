@@ -18,34 +18,25 @@ trait Pageviews extends StObject {
 }
 object Pageviews {
   
-  @scala.inline
-  def apply(): Pageviews = {
+  inline def apply(): Pageviews = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Pageviews]
   }
   
-  @scala.inline
-  implicit class PageviewsMutableBuilder[Self <: Pageviews] (val x: Self) extends AnyVal {
+  extension [Self <: Pageviews](x: Self) {
     
-    @scala.inline
-    def setBlogId(value: String): Self = StObject.set(x, "blogId", value.asInstanceOf[js.Any])
+    inline def setBlogId(value: String): Self = StObject.set(x, "blogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlogIdUndefined: Self = StObject.set(x, "blogId", js.undefined)
+    inline def setBlogIdUndefined: Self = StObject.set(x, "blogId", js.undefined)
     
-    @scala.inline
-    def setCounts(value: js.Array[Count]): Self = StObject.set(x, "counts", value.asInstanceOf[js.Any])
+    inline def setCounts(value: js.Array[Count]): Self = StObject.set(x, "counts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountsUndefined: Self = StObject.set(x, "counts", js.undefined)
+    inline def setCountsUndefined: Self = StObject.set(x, "counts", js.undefined)
     
-    @scala.inline
-    def setCountsVarargs(value: Count*): Self = StObject.set(x, "counts", js.Array(value :_*))
+    inline def setCountsVarargs(value: Count*): Self = StObject.set(x, "counts", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

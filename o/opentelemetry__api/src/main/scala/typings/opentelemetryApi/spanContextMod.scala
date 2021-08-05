@@ -62,35 +62,26 @@ object spanContextMod {
   }
   object SpanContext {
     
-    @scala.inline
-    def apply(spanId: String, traceFlags: TraceFlags, traceId: String): SpanContext = {
+    inline def apply(spanId: String, traceFlags: TraceFlags, traceId: String): SpanContext = {
       val __obj = js.Dynamic.literal(spanId = spanId.asInstanceOf[js.Any], traceFlags = traceFlags.asInstanceOf[js.Any], traceId = traceId.asInstanceOf[js.Any])
       __obj.asInstanceOf[SpanContext]
     }
     
-    @scala.inline
-    implicit class SpanContextMutableBuilder[Self <: SpanContext] (val x: Self) extends AnyVal {
+    extension [Self <: SpanContext](x: Self) {
       
-      @scala.inline
-      def setIsRemote(value: Boolean): Self = StObject.set(x, "isRemote", value.asInstanceOf[js.Any])
+      inline def setIsRemote(value: Boolean): Self = StObject.set(x, "isRemote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRemoteUndefined: Self = StObject.set(x, "isRemote", js.undefined)
+      inline def setIsRemoteUndefined: Self = StObject.set(x, "isRemote", js.undefined)
       
-      @scala.inline
-      def setSpanId(value: String): Self = StObject.set(x, "spanId", value.asInstanceOf[js.Any])
+      inline def setSpanId(value: String): Self = StObject.set(x, "spanId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraceFlags(value: TraceFlags): Self = StObject.set(x, "traceFlags", value.asInstanceOf[js.Any])
+      inline def setTraceFlags(value: TraceFlags): Self = StObject.set(x, "traceFlags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraceId(value: String): Self = StObject.set(x, "traceId", value.asInstanceOf[js.Any])
+      inline def setTraceId(value: String): Self = StObject.set(x, "traceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraceState(value: TraceState): Self = StObject.set(x, "traceState", value.asInstanceOf[js.Any])
+      inline def setTraceState(value: TraceState): Self = StObject.set(x, "traceState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraceStateUndefined: Self = StObject.set(x, "traceState", js.undefined)
+      inline def setTraceStateUndefined: Self = StObject.set(x, "traceState", js.undefined)
     }
   }
 }

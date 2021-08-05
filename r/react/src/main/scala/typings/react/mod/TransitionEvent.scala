@@ -17,8 +17,7 @@ trait TransitionEvent[T]
 }
 object TransitionEvent {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     bubbles: Boolean,
     cancelable: Boolean,
     currentTarget: EventTarget & T,
@@ -43,16 +42,12 @@ object TransitionEvent {
     __obj.asInstanceOf[TransitionEvent[T]]
   }
   
-  @scala.inline
-  implicit class TransitionEventMutableBuilder[Self <: TransitionEvent[?], T] (val x: Self & TransitionEvent[T]) extends AnyVal {
+  extension [Self <: TransitionEvent[?], T](x: Self & TransitionEvent[T]) {
     
-    @scala.inline
-    def setElapsedTime(value: Double): Self = StObject.set(x, "elapsedTime", value.asInstanceOf[js.Any])
+    inline def setElapsedTime(value: Double): Self = StObject.set(x, "elapsedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
+    inline def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPseudoElement(value: String): Self = StObject.set(x, "pseudoElement", value.asInstanceOf[js.Any])
+    inline def setPseudoElement(value: String): Self = StObject.set(x, "pseudoElement", value.asInstanceOf[js.Any])
   }
 }

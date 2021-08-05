@@ -10,22 +10,17 @@ trait GetConfigurationSetEventDestinationsResponse extends StObject {
 }
 object GetConfigurationSetEventDestinationsResponse {
   
-  @scala.inline
-  def apply(): GetConfigurationSetEventDestinationsResponse = {
+  inline def apply(): GetConfigurationSetEventDestinationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetConfigurationSetEventDestinationsResponse]
   }
   
-  @scala.inline
-  implicit class GetConfigurationSetEventDestinationsResponseMutableBuilder[Self <: GetConfigurationSetEventDestinationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetConfigurationSetEventDestinationsResponse](x: Self) {
     
-    @scala.inline
-    def setEventDestinations(value: EventDestinations): Self = StObject.set(x, "EventDestinations", value.asInstanceOf[js.Any])
+    inline def setEventDestinations(value: EventDestinations): Self = StObject.set(x, "EventDestinations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventDestinationsUndefined: Self = StObject.set(x, "EventDestinations", js.undefined)
+    inline def setEventDestinationsUndefined: Self = StObject.set(x, "EventDestinations", js.undefined)
     
-    @scala.inline
-    def setEventDestinationsVarargs(value: EventDestination*): Self = StObject.set(x, "EventDestinations", js.Array(value :_*))
+    inline def setEventDestinationsVarargs(value: EventDestination*): Self = StObject.set(x, "EventDestinations", js.Array(value :_*))
   }
 }

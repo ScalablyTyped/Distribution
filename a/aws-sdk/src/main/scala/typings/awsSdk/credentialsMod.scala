@@ -100,8 +100,7 @@ object credentialsMod {
     @JSImport("aws-sdk/lib/credentials", "Credentials.expiryWindow")
     @js.native
     def expiryWindow: Double = js.native
-    @scala.inline
-    def expiryWindow_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expiryWindow")(x.asInstanceOf[js.Any])
+    inline def expiryWindow_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expiryWindow")(x.asInstanceOf[js.Any])
   }
   
   trait CredentialsOptions extends StObject {
@@ -123,26 +122,20 @@ object credentialsMod {
   }
   object CredentialsOptions {
     
-    @scala.inline
-    def apply(accessKeyId: String, secretAccessKey: String): CredentialsOptions = {
+    inline def apply(accessKeyId: String, secretAccessKey: String): CredentialsOptions = {
       val __obj = js.Dynamic.literal(accessKeyId = accessKeyId.asInstanceOf[js.Any], secretAccessKey = secretAccessKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[CredentialsOptions]
     }
     
-    @scala.inline
-    implicit class CredentialsOptionsMutableBuilder[Self <: CredentialsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CredentialsOptions](x: Self) {
       
-      @scala.inline
-      def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
+      inline def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretAccessKey(value: String): Self = StObject.set(x, "secretAccessKey", value.asInstanceOf[js.Any])
+      inline def setSecretAccessKey(value: String): Self = StObject.set(x, "secretAccessKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionToken(value: String): Self = StObject.set(x, "sessionToken", value.asInstanceOf[js.Any])
+      inline def setSessionToken(value: String): Self = StObject.set(x, "sessionToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionTokenUndefined: Self = StObject.set(x, "sessionToken", js.undefined)
+      inline def setSessionTokenUndefined: Self = StObject.set(x, "sessionToken", js.undefined)
     }
   }
 }

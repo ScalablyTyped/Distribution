@@ -11,17 +11,14 @@ trait Recordelement606611e4a52e extends StObject {
 }
 object Recordelement606611e4a52e {
   
-  @scala.inline
-  def apply(`element-6066-11e4-a52e-4f735466cecf`: String): Recordelement606611e4a52e = {
+  inline def apply(`element-6066-11e4-a52e-4f735466cecf`: String): Recordelement606611e4a52e = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("element-6066-11e4-a52e-4f735466cecf")(`element-6066-11e4-a52e-4f735466cecf`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Recordelement606611e4a52e]
   }
   
-  @scala.inline
-  implicit class Recordelement606611e4a52eMutableBuilder[Self <: Recordelement606611e4a52e] (val x: Self) extends AnyVal {
+  extension [Self <: Recordelement606611e4a52e](x: Self) {
     
-    @scala.inline
-    def `setElement-6066-11e4-a52e-4f735466cecf`(value: String): Self = StObject.set(x, "element-6066-11e4-a52e-4f735466cecf", value.asInstanceOf[js.Any])
+    inline def `setElement-6066-11e4-a52e-4f735466cecf`(value: String): Self = StObject.set(x, "element-6066-11e4-a52e-4f735466cecf", value.asInstanceOf[js.Any])
   }
 }

@@ -57,8 +57,7 @@ trait BuildReference extends StObject {
 }
 object BuildReference {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     buildNumber: String,
     deleted: Boolean,
@@ -74,37 +73,26 @@ object BuildReference {
     __obj.asInstanceOf[BuildReference]
   }
   
-  @scala.inline
-  implicit class BuildReferenceMutableBuilder[Self <: BuildReference] (val x: Self) extends AnyVal {
+  extension [Self <: BuildReference](x: Self) {
     
-    @scala.inline
-    def setBuildNumber(value: String): Self = StObject.set(x, "buildNumber", value.asInstanceOf[js.Any])
+    inline def setBuildNumber(value: String): Self = StObject.set(x, "buildNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+    inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinishTime(value: Date): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
+    inline def setFinishTime(value: Date): Self = StObject.set(x, "finishTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueTime(value: Date): Self = StObject.set(x, "queueTime", value.asInstanceOf[js.Any])
+    inline def setQueueTime(value: Date): Self = StObject.set(x, "queueTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedFor(value: IdentityRef): Self = StObject.set(x, "requestedFor", value.asInstanceOf[js.Any])
+    inline def setRequestedFor(value: IdentityRef): Self = StObject.set(x, "requestedFor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: BuildResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: BuildResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: BuildStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: BuildStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

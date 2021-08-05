@@ -13,19 +13,15 @@ trait StockToolsGuiDefinitionsMeasureMeasureXYOptions extends StObject {
 }
 object StockToolsGuiDefinitionsMeasureMeasureXYOptions {
   
-  @scala.inline
-  def apply(): StockToolsGuiDefinitionsMeasureMeasureXYOptions = {
+  inline def apply(): StockToolsGuiDefinitionsMeasureMeasureXYOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StockToolsGuiDefinitionsMeasureMeasureXYOptions]
   }
   
-  @scala.inline
-  implicit class StockToolsGuiDefinitionsMeasureMeasureXYOptionsMutableBuilder[Self <: StockToolsGuiDefinitionsMeasureMeasureXYOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StockToolsGuiDefinitionsMeasureMeasureXYOptions](x: Self) {
     
-    @scala.inline
-    def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+    inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
   }
 }

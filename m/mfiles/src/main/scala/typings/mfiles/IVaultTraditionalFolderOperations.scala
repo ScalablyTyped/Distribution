@@ -10,16 +10,13 @@ trait IVaultTraditionalFolderOperations extends StObject {
 }
 object IVaultTraditionalFolderOperations {
   
-  @scala.inline
-  def apply(GetTraditionalFolderContents: Double => ITraditionalFolderContents): IVaultTraditionalFolderOperations = {
+  inline def apply(GetTraditionalFolderContents: Double => ITraditionalFolderContents): IVaultTraditionalFolderOperations = {
     val __obj = js.Dynamic.literal(GetTraditionalFolderContents = js.Any.fromFunction1(GetTraditionalFolderContents))
     __obj.asInstanceOf[IVaultTraditionalFolderOperations]
   }
   
-  @scala.inline
-  implicit class IVaultTraditionalFolderOperationsMutableBuilder[Self <: IVaultTraditionalFolderOperations] (val x: Self) extends AnyVal {
+  extension [Self <: IVaultTraditionalFolderOperations](x: Self) {
     
-    @scala.inline
-    def setGetTraditionalFolderContents(value: Double => ITraditionalFolderContents): Self = StObject.set(x, "GetTraditionalFolderContents", js.Any.fromFunction1(value))
+    inline def setGetTraditionalFolderContents(value: Double => ITraditionalFolderContents): Self = StObject.set(x, "GetTraditionalFolderContents", js.Any.fromFunction1(value))
   }
 }

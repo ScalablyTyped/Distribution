@@ -17,28 +17,21 @@ trait TreeNodeTreePathlowerSibl extends StObject {
 }
 object TreeNodeTreePathlowerSibl {
   
-  @scala.inline
-  def apply(lowerSiblingsCounts: js.Array[Double], node: TreeItem, path: NumberOrStringArray): TreeNodeTreePathlowerSibl = {
+  inline def apply(lowerSiblingsCounts: js.Array[Double], node: TreeItem, path: NumberOrStringArray): TreeNodeTreePathlowerSibl = {
     val __obj = js.Dynamic.literal(lowerSiblingsCounts = lowerSiblingsCounts.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeNodeTreePathlowerSibl]
   }
   
-  @scala.inline
-  implicit class TreeNodeTreePathlowerSiblMutableBuilder[Self <: TreeNodeTreePathlowerSibl] (val x: Self) extends AnyVal {
+  extension [Self <: TreeNodeTreePathlowerSibl](x: Self) {
     
-    @scala.inline
-    def setLowerSiblingsCounts(value: js.Array[Double]): Self = StObject.set(x, "lowerSiblingsCounts", value.asInstanceOf[js.Any])
+    inline def setLowerSiblingsCounts(value: js.Array[Double]): Self = StObject.set(x, "lowerSiblingsCounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowerSiblingsCountsVarargs(value: Double*): Self = StObject.set(x, "lowerSiblingsCounts", js.Array(value :_*))
+    inline def setLowerSiblingsCountsVarargs(value: Double*): Self = StObject.set(x, "lowerSiblingsCounts", js.Array(value :_*))
     
-    @scala.inline
-    def setNode(value: TreeItem): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: TreeItem): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: NumberOrStringArray): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: NumberOrStringArray): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathVarargs(value: (String | Double)*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: (String | Double)*): Self = StObject.set(x, "path", js.Array(value :_*))
   }
 }

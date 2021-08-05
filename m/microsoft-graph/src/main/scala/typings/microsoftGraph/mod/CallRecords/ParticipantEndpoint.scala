@@ -18,31 +18,23 @@ trait ParticipantEndpoint
 }
 object ParticipantEndpoint {
   
-  @scala.inline
-  def apply(): ParticipantEndpoint = {
+  inline def apply(): ParticipantEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParticipantEndpoint]
   }
   
-  @scala.inline
-  implicit class ParticipantEndpointMutableBuilder[Self <: ParticipantEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParticipantEndpoint](x: Self) {
     
-    @scala.inline
-    def setFeedback(value: NullableOption[UserFeedback]): Self = StObject.set(x, "feedback", value.asInstanceOf[js.Any])
+    inline def setFeedback(value: NullableOption[UserFeedback]): Self = StObject.set(x, "feedback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeedbackNull: Self = StObject.set(x, "feedback", null)
+    inline def setFeedbackNull: Self = StObject.set(x, "feedback", null)
     
-    @scala.inline
-    def setFeedbackUndefined: Self = StObject.set(x, "feedback", js.undefined)
+    inline def setFeedbackUndefined: Self = StObject.set(x, "feedback", js.undefined)
     
-    @scala.inline
-    def setIdentity(value: NullableOption[IdentitySet]): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+    inline def setIdentity(value: NullableOption[IdentitySet]): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityNull: Self = StObject.set(x, "identity", null)
+    inline def setIdentityNull: Self = StObject.set(x, "identity", null)
     
-    @scala.inline
-    def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
+    inline def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
   }
 }

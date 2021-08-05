@@ -5,22 +5,17 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def default[Buckets](appID: java.lang.String, token: java.lang.String): typings.simperium.mod.Client[Buckets] = (typings.simperium.mod.^.asInstanceOf[js.Dynamic].applyDynamic("default")(appID.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[typings.simperium.mod.Client[Buckets]]
-@scala.inline
-def default[Buckets](
+inline def default[Buckets](appID: java.lang.String, token: java.lang.String): typings.simperium.mod.Client[Buckets] = (typings.simperium.mod.^.asInstanceOf[js.Dynamic].applyDynamic("default")(appID.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[typings.simperium.mod.Client[Buckets]]
+inline def default[Buckets](
   appID: java.lang.String,
   token: java.lang.String,
   clientConfig: typings.std.Partial[typings.simperium.mod.ClientConfig[Buckets]]
 ): typings.simperium.mod.Client[Buckets] = (typings.simperium.mod.^.asInstanceOf[js.Dynamic].applyDynamic("default")(appID.asInstanceOf[js.Any], token.asInstanceOf[js.Any], clientConfig.asInstanceOf[js.Any])).asInstanceOf[typings.simperium.mod.Client[Buckets]]
 
-@scala.inline
-def Auth(appId: java.lang.String, apiKey: java.lang.String): typings.simperium.anon.Authorize = (typings.simperium.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Auth")(appId.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[typings.simperium.anon.Authorize]
+inline def Auth(appId: java.lang.String, apiKey: java.lang.String): typings.simperium.anon.Authorize = (typings.simperium.mod.^.asInstanceOf[js.Dynamic].applyDynamic("Auth")(appId.asInstanceOf[js.Any], apiKey.asInstanceOf[js.Any])).asInstanceOf[typings.simperium.anon.Authorize]
 
-@scala.inline
-def createClient[Buckets](appID: java.lang.String, token: java.lang.String): typings.simperium.mod.Client[Buckets] = (typings.simperium.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(appID.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[typings.simperium.mod.Client[Buckets]]
-@scala.inline
-def createClient[Buckets](
+inline def createClient[Buckets](appID: java.lang.String, token: java.lang.String): typings.simperium.mod.Client[Buckets] = (typings.simperium.mod.^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(appID.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[typings.simperium.mod.Client[Buckets]]
+inline def createClient[Buckets](
   appID: java.lang.String,
   token: java.lang.String,
   clientConfig: typings.std.Partial[typings.simperium.mod.ClientConfig[Buckets]]

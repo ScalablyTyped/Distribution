@@ -33,29 +33,22 @@ object typesGetItemOutputMod {
   }
   object GetItemOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): GetItemOutput = {
+    inline def apply($metadata: ResponseMetadata): GetItemOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetItemOutput]
     }
     
-    @scala.inline
-    implicit class GetItemOutputMutableBuilder[Self <: GetItemOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetItemOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumedCapacity(value: UnmarshalledConsumedCapacity): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
+      inline def setConsumedCapacity(value: UnmarshalledConsumedCapacity): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
+      inline def setConsumedCapacityUndefined: Self = StObject.set(x, "ConsumedCapacity", js.undefined)
       
-      @scala.inline
-      def setItem(value: StringDictionary[UnmarshalledAttributeValue]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
+      inline def setItem(value: StringDictionary[UnmarshalledAttributeValue]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
+      inline def setItemUndefined: Self = StObject.set(x, "Item", js.undefined)
     }
   }
 }

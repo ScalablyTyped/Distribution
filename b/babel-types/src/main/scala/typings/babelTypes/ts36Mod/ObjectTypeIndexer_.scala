@@ -22,8 +22,7 @@ trait ObjectTypeIndexer_
 }
 object ObjectTypeIndexer_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     end: Double,
     id: Expression,
     key: FlowTypeAnnotation,
@@ -36,19 +35,14 @@ object ObjectTypeIndexer_ {
     __obj.asInstanceOf[ObjectTypeIndexer_]
   }
   
-  @scala.inline
-  implicit class ObjectTypeIndexer_MutableBuilder[Self <: ObjectTypeIndexer_] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectTypeIndexer_](x: Self) {
     
-    @scala.inline
-    def setId(value: Expression): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Expression): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: FlowTypeAnnotation): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: FlowTypeAnnotation): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ObjectTypeIndexer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ObjectTypeIndexer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: FlowTypeAnnotation): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: FlowTypeAnnotation): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

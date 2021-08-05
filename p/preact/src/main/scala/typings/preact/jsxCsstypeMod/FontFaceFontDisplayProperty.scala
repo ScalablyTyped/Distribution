@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FontFaceFontDisplayProperty extends StObject
 object FontFaceFontDisplayProperty {
   
-  @scala.inline
-  def auto: typings.preact.preactStrings.auto = "auto".asInstanceOf[typings.preact.preactStrings.auto]
+  inline def auto: typings.preact.preactStrings.auto = "auto".asInstanceOf[typings.preact.preactStrings.auto]
   
-  @scala.inline
-  def block: typings.preact.preactStrings.block = "block".asInstanceOf[typings.preact.preactStrings.block]
+  inline def block: typings.preact.preactStrings.block = "block".asInstanceOf[typings.preact.preactStrings.block]
   
-  @scala.inline
-  def fallback: typings.preact.preactStrings.fallback = "fallback".asInstanceOf[typings.preact.preactStrings.fallback]
+  inline def fallback: typings.preact.preactStrings.fallback = "fallback".asInstanceOf[typings.preact.preactStrings.fallback]
   
-  @scala.inline
-  def optional: typings.preact.preactStrings.optional = "optional".asInstanceOf[typings.preact.preactStrings.optional]
+  inline def optional: typings.preact.preactStrings.optional = "optional".asInstanceOf[typings.preact.preactStrings.optional]
   
-  @scala.inline
-  def swap: typings.preact.preactStrings.swap = "swap".asInstanceOf[typings.preact.preactStrings.swap]
+  inline def swap: typings.preact.preactStrings.swap = "swap".asInstanceOf[typings.preact.preactStrings.swap]
 }

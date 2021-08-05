@@ -43,71 +43,59 @@ object Display {
     @JSGlobal("Windows.Graphics.Display.DisplayProperties.autoRotationPreferences")
     @js.native
     def autoRotationPreferences: DisplayOrientations = js.native
-    @scala.inline
-    def autoRotationPreferences_=(x: DisplayOrientations): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("autoRotationPreferences")(x.asInstanceOf[js.Any])
+    inline def autoRotationPreferences_=(x: DisplayOrientations): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("autoRotationPreferences")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Graphics.Display.DisplayProperties.currentOrientation")
     @js.native
     def currentOrientation: DisplayOrientations = js.native
-    @scala.inline
-    def currentOrientation_=(x: DisplayOrientations): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("currentOrientation")(x.asInstanceOf[js.Any])
+    inline def currentOrientation_=(x: DisplayOrientations): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("currentOrientation")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def getColorProfileAsync(): IAsyncOperation[IRandomAccessStream] = ^.asInstanceOf[js.Dynamic].applyDynamic("getColorProfileAsync")().asInstanceOf[IAsyncOperation[IRandomAccessStream]]
+    inline def getColorProfileAsync(): IAsyncOperation[IRandomAccessStream] = ^.asInstanceOf[js.Dynamic].applyDynamic("getColorProfileAsync")().asInstanceOf[IAsyncOperation[IRandomAccessStream]]
     
     @JSGlobal("Windows.Graphics.Display.DisplayProperties.logicalDpi")
     @js.native
     def logicalDpi: Double = js.native
-    @scala.inline
-    def logicalDpi_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("logicalDpi")(x.asInstanceOf[js.Any])
+    inline def logicalDpi_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("logicalDpi")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Graphics.Display.DisplayProperties.nativeOrientation")
     @js.native
     def nativeOrientation: DisplayOrientations = js.native
-    @scala.inline
-    def nativeOrientation_=(x: DisplayOrientations): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nativeOrientation")(x.asInstanceOf[js.Any])
+    inline def nativeOrientation_=(x: DisplayOrientations): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nativeOrientation")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Graphics.Display.DisplayProperties.oncolorprofilechanged")
     @js.native
     def oncolorprofilechanged: js.Any = js.native
-    @scala.inline
-    def oncolorprofilechanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("oncolorprofilechanged")(x.asInstanceOf[js.Any])
+    inline def oncolorprofilechanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("oncolorprofilechanged")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Graphics.Display.DisplayProperties.ondisplaycontentsinvalidated")
     @js.native
     def ondisplaycontentsinvalidated: js.Any = js.native
-    @scala.inline
-    def ondisplaycontentsinvalidated_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ondisplaycontentsinvalidated")(x.asInstanceOf[js.Any])
+    inline def ondisplaycontentsinvalidated_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ondisplaycontentsinvalidated")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Graphics.Display.DisplayProperties.onlogicaldpichanged")
     @js.native
     def onlogicaldpichanged: js.Any = js.native
-    @scala.inline
-    def onlogicaldpichanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onlogicaldpichanged")(x.asInstanceOf[js.Any])
+    inline def onlogicaldpichanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onlogicaldpichanged")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Graphics.Display.DisplayProperties.onorientationchanged")
     @js.native
     def onorientationchanged: js.Any = js.native
-    @scala.inline
-    def onorientationchanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onorientationchanged")(x.asInstanceOf[js.Any])
+    inline def onorientationchanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onorientationchanged")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Graphics.Display.DisplayProperties.onstereoenabledchanged")
     @js.native
     def onstereoenabledchanged: js.Any = js.native
-    @scala.inline
-    def onstereoenabledchanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onstereoenabledchanged")(x.asInstanceOf[js.Any])
+    inline def onstereoenabledchanged_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onstereoenabledchanged")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Graphics.Display.DisplayProperties.resolutionScale")
     @js.native
     def resolutionScale: ResolutionScale = js.native
-    @scala.inline
-    def resolutionScale_=(x: ResolutionScale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("resolutionScale")(x.asInstanceOf[js.Any])
+    inline def resolutionScale_=(x: ResolutionScale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("resolutionScale")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Graphics.Display.DisplayProperties.stereoEnabled")
     @js.native
     def stereoEnabled: Boolean = js.native
-    @scala.inline
-    def stereoEnabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stereoEnabled")(x.asInstanceOf[js.Any])
+    inline def stereoEnabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stereoEnabled")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.Graphics.Display.ResolutionScale")

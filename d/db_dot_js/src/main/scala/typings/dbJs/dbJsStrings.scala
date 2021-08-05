@@ -8,16 +8,13 @@ object dbJsStrings {
   
   @js.native
   sealed trait abort extends StObject
-  @scala.inline
-  def abort: abort = "abort".asInstanceOf[abort]
+  inline def abort: abort = "abort".asInstanceOf[abort]
   
   @js.native
   sealed trait error extends StObject
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait versionchange extends StObject
-  @scala.inline
-  def versionchange: versionchange = "versionchange".asInstanceOf[versionchange]
+  inline def versionchange: versionchange = "versionchange".asInstanceOf[versionchange]
 }

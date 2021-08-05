@@ -15,8 +15,7 @@ trait XComponentEnumerationAccess
 }
 object XComponentEnumerationAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementType: `type`,
     acquire: () => Unit,
     createComponentEnumeration: () => XComponentEnumeration,
@@ -30,10 +29,8 @@ object XComponentEnumerationAccess {
     __obj.asInstanceOf[XComponentEnumerationAccess]
   }
   
-  @scala.inline
-  implicit class XComponentEnumerationAccessMutableBuilder[Self <: XComponentEnumerationAccess] (val x: Self) extends AnyVal {
+  extension [Self <: XComponentEnumerationAccess](x: Self) {
     
-    @scala.inline
-    def setCreateComponentEnumeration(value: () => XComponentEnumeration): Self = StObject.set(x, "createComponentEnumeration", js.Any.fromFunction0(value))
+    inline def setCreateComponentEnumeration(value: () => XComponentEnumeration): Self = StObject.set(x, "createComponentEnumeration", js.Any.fromFunction0(value))
   }
 }

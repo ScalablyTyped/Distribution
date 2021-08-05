@@ -10,19 +10,15 @@ trait TableListTablesView extends StObject {
 }
 object TableListTablesView {
   
-  @scala.inline
-  def apply(): TableListTablesView = {
+  inline def apply(): TableListTablesView = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableListTablesView]
   }
   
-  @scala.inline
-  implicit class TableListTablesViewMutableBuilder[Self <: TableListTablesView] (val x: Self) extends AnyVal {
+  extension [Self <: TableListTablesView](x: Self) {
     
-    @scala.inline
-    def setUseLegacySql(value: Boolean): Self = StObject.set(x, "useLegacySql", value.asInstanceOf[js.Any])
+    inline def setUseLegacySql(value: Boolean): Self = StObject.set(x, "useLegacySql", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseLegacySqlUndefined: Self = StObject.set(x, "useLegacySql", js.undefined)
+    inline def setUseLegacySqlUndefined: Self = StObject.set(x, "useLegacySql", js.undefined)
   }
 }

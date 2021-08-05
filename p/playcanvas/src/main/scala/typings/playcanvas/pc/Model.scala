@@ -59,8 +59,7 @@ trait Model extends StObject {
 }
 object Model {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroy: () => Unit,
     generateWireframe: () => Unit,
     graph: GraphNode,
@@ -72,34 +71,24 @@ object Model {
     __obj.asInstanceOf[Model]
   }
   
-  @scala.inline
-  implicit class ModelMutableBuilder[Self <: Model] (val x: Self) extends AnyVal {
+  extension [Self <: Model](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGenerateWireframe(value: () => Unit): Self = StObject.set(x, "generateWireframe", js.Any.fromFunction0(value))
+    inline def setGenerateWireframe(value: () => Unit): Self = StObject.set(x, "generateWireframe", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGraph(value: GraphNode): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
+    inline def setGraph(value: GraphNode): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeshInstances(value: js.Array[MeshInstance]): Self = StObject.set(x, "meshInstances", value.asInstanceOf[js.Any])
+    inline def setMeshInstances(value: js.Array[MeshInstance]): Self = StObject.set(x, "meshInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeshInstancesVarargs(value: MeshInstance*): Self = StObject.set(x, "meshInstances", js.Array(value :_*))
+    inline def setMeshInstancesVarargs(value: MeshInstance*): Self = StObject.set(x, "meshInstances", js.Array(value :_*))
     
-    @scala.inline
-    def setMorphInstances(value: js.Array[MorphInstance]): Self = StObject.set(x, "morphInstances", value.asInstanceOf[js.Any])
+    inline def setMorphInstances(value: js.Array[MorphInstance]): Self = StObject.set(x, "morphInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMorphInstancesVarargs(value: MorphInstance*): Self = StObject.set(x, "morphInstances", js.Array(value :_*))
+    inline def setMorphInstancesVarargs(value: MorphInstance*): Self = StObject.set(x, "morphInstances", js.Array(value :_*))
     
-    @scala.inline
-    def setSkinInstances(value: js.Array[SkinInstance]): Self = StObject.set(x, "skinInstances", value.asInstanceOf[js.Any])
+    inline def setSkinInstances(value: js.Array[SkinInstance]): Self = StObject.set(x, "skinInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkinInstancesVarargs(value: SkinInstance*): Self = StObject.set(x, "skinInstances", js.Array(value :_*))
+    inline def setSkinInstancesVarargs(value: SkinInstance*): Self = StObject.set(x, "skinInstances", js.Array(value :_*))
   }
 }

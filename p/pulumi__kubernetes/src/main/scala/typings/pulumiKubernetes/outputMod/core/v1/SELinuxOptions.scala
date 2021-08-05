@@ -31,26 +31,20 @@ trait SELinuxOptions extends StObject {
 }
 object SELinuxOptions {
   
-  @scala.inline
-  def apply(level: String, role: String, `type`: String, user: String): SELinuxOptions = {
+  inline def apply(level: String, role: String, `type`: String, user: String): SELinuxOptions = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SELinuxOptions]
   }
   
-  @scala.inline
-  implicit class SELinuxOptionsMutableBuilder[Self <: SELinuxOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SELinuxOptions](x: Self) {
     
-    @scala.inline
-    def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

@@ -37,8 +37,7 @@ object mod {
   @js.native
   val configOptions: js.Array[ConfigKey] = js.native
   
-  @scala.inline
-  def createForm[FormValues, InitialFormValues](config: Config[FormValues, Partial[FormValues]]): FormApi[FormValues, InitialFormValues] = ^.asInstanceOf[js.Dynamic].applyDynamic("createForm")(config.asInstanceOf[js.Any]).asInstanceOf[FormApi[FormValues, InitialFormValues]]
+  inline def createForm[FormValues, InitialFormValues](config: Config[FormValues, Partial[FormValues]]): FormApi[FormValues, InitialFormValues] = ^.asInstanceOf[js.Dynamic].applyDynamic("createForm")(config.asInstanceOf[js.Any]).asInstanceOf[FormApi[FormValues, InitialFormValues]]
   
   @JSImport("final-form", "fieldSubscriptionItems")
   @js.native
@@ -48,11 +47,9 @@ object mod {
   @js.native
   val formSubscriptionItems: js.Array[String] = js.native
   
-  @scala.inline
-  def getIn(state: js.Object, complexKey: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getIn")(state.asInstanceOf[js.Any], complexKey.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getIn(state: js.Object, complexKey: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getIn")(state.asInstanceOf[js.Any], complexKey.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def setIn(state: js.Object, key: String, value: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("setIn")(state.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  inline def setIn(state: js.Object, key: String, value: js.Any): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("setIn")(state.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
   @JSImport("final-form", "version")
   @js.native
@@ -139,71 +136,50 @@ object mod {
   }
   object FieldConfig {
     
-    @scala.inline
-    def apply[FieldValue](): FieldConfig[FieldValue] = {
+    inline def apply[FieldValue](): FieldConfig[FieldValue] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FieldConfig[FieldValue]]
     }
     
-    @scala.inline
-    implicit class FieldConfigMutableBuilder[Self <: FieldConfig[?], FieldValue] (val x: Self & FieldConfig[FieldValue]) extends AnyVal {
+    extension [Self <: FieldConfig[?], FieldValue](x: Self & FieldConfig[FieldValue]) {
       
-      @scala.inline
-      def setAfterSubmit(value: () => Unit): Self = StObject.set(x, "afterSubmit", js.Any.fromFunction0(value))
+      inline def setAfterSubmit(value: () => Unit): Self = StObject.set(x, "afterSubmit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAfterSubmitUndefined: Self = StObject.set(x, "afterSubmit", js.undefined)
+      inline def setAfterSubmitUndefined: Self = StObject.set(x, "afterSubmit", js.undefined)
       
-      @scala.inline
-      def setBeforeSubmit(value: () => Unit | `false`): Self = StObject.set(x, "beforeSubmit", js.Any.fromFunction0(value))
+      inline def setBeforeSubmit(value: () => Unit | `false`): Self = StObject.set(x, "beforeSubmit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setBeforeSubmitUndefined: Self = StObject.set(x, "beforeSubmit", js.undefined)
+      inline def setBeforeSubmitUndefined: Self = StObject.set(x, "beforeSubmit", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setGetValidator(value: () => js.UndefOr[FieldValidator[FieldValue]]): Self = StObject.set(x, "getValidator", js.Any.fromFunction0(value))
+      inline def setGetValidator(value: () => js.UndefOr[FieldValidator[FieldValue]]): Self = StObject.set(x, "getValidator", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValidatorUndefined: Self = StObject.set(x, "getValidator", js.undefined)
+      inline def setGetValidatorUndefined: Self = StObject.set(x, "getValidator", js.undefined)
       
-      @scala.inline
-      def setInitialValue(value: js.Any): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
+      inline def setInitialValue(value: js.Any): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialValueUndefined: Self = StObject.set(x, "initialValue", js.undefined)
+      inline def setInitialValueUndefined: Self = StObject.set(x, "initialValue", js.undefined)
       
-      @scala.inline
-      def setIsEqual(value: (/* a */ js.Any, /* b */ js.Any) => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction2(value))
+      inline def setIsEqual(value: (/* a */ js.Any, /* b */ js.Any) => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIsEqualUndefined: Self = StObject.set(x, "isEqual", js.undefined)
+      inline def setIsEqualUndefined: Self = StObject.set(x, "isEqual", js.undefined)
       
-      @scala.inline
-      def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+      inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
       
-      @scala.inline
-      def setValidateFields(value: js.Array[String]): Self = StObject.set(x, "validateFields", value.asInstanceOf[js.Any])
+      inline def setValidateFields(value: js.Array[String]): Self = StObject.set(x, "validateFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateFieldsUndefined: Self = StObject.set(x, "validateFields", js.undefined)
+      inline def setValidateFieldsUndefined: Self = StObject.set(x, "validateFields", js.undefined)
       
-      @scala.inline
-      def setValidateFieldsVarargs(value: String*): Self = StObject.set(x, "validateFields", js.Array(value :_*))
+      inline def setValidateFieldsVarargs(value: String*): Self = StObject.set(x, "validateFields", js.Array(value :_*))
     }
   }
   
@@ -306,134 +282,92 @@ object mod {
   }
   object FieldSubscription {
     
-    @scala.inline
-    def apply(): FieldSubscription = {
+    inline def apply(): FieldSubscription = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FieldSubscription]
     }
     
-    @scala.inline
-    implicit class FieldSubscriptionMutableBuilder[Self <: FieldSubscription] (val x: Self) extends AnyVal {
+    extension [Self <: FieldSubscription](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setData(value: Boolean): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Boolean): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
+      inline def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirtySinceLastSubmit(value: Boolean): Self = StObject.set(x, "dirtySinceLastSubmit", value.asInstanceOf[js.Any])
+      inline def setDirtySinceLastSubmit(value: Boolean): Self = StObject.set(x, "dirtySinceLastSubmit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirtySinceLastSubmitUndefined: Self = StObject.set(x, "dirtySinceLastSubmit", js.undefined)
+      inline def setDirtySinceLastSubmitUndefined: Self = StObject.set(x, "dirtySinceLastSubmit", js.undefined)
       
-      @scala.inline
-      def setDirtyUndefined: Self = StObject.set(x, "dirty", js.undefined)
+      inline def setDirtyUndefined: Self = StObject.set(x, "dirty", js.undefined)
       
-      @scala.inline
-      def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setInitial(value: Boolean): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
+      inline def setInitial(value: Boolean): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
+      inline def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
       
-      @scala.inline
-      def setInvalid(value: Boolean): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
+      inline def setInvalid(value: Boolean): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
+      inline def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
       
-      @scala.inline
-      def setLength(value: Boolean): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Boolean): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
       
-      @scala.inline
-      def setModified(value: Boolean): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
+      inline def setModified(value: Boolean): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifiedSinceLastSubmit(value: `false`): Self = StObject.set(x, "modifiedSinceLastSubmit", value.asInstanceOf[js.Any])
+      inline def setModifiedSinceLastSubmit(value: `false`): Self = StObject.set(x, "modifiedSinceLastSubmit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifiedSinceLastSubmitUndefined: Self = StObject.set(x, "modifiedSinceLastSubmit", js.undefined)
+      inline def setModifiedSinceLastSubmitUndefined: Self = StObject.set(x, "modifiedSinceLastSubmit", js.undefined)
       
-      @scala.inline
-      def setModifiedUndefined: Self = StObject.set(x, "modified", js.undefined)
+      inline def setModifiedUndefined: Self = StObject.set(x, "modified", js.undefined)
       
-      @scala.inline
-      def setPristine(value: Boolean): Self = StObject.set(x, "pristine", value.asInstanceOf[js.Any])
+      inline def setPristine(value: Boolean): Self = StObject.set(x, "pristine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPristineUndefined: Self = StObject.set(x, "pristine", js.undefined)
+      inline def setPristineUndefined: Self = StObject.set(x, "pristine", js.undefined)
       
-      @scala.inline
-      def setSubmitError(value: Boolean): Self = StObject.set(x, "submitError", value.asInstanceOf[js.Any])
+      inline def setSubmitError(value: Boolean): Self = StObject.set(x, "submitError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmitErrorUndefined: Self = StObject.set(x, "submitError", js.undefined)
+      inline def setSubmitErrorUndefined: Self = StObject.set(x, "submitError", js.undefined)
       
-      @scala.inline
-      def setSubmitFailed(value: Boolean): Self = StObject.set(x, "submitFailed", value.asInstanceOf[js.Any])
+      inline def setSubmitFailed(value: Boolean): Self = StObject.set(x, "submitFailed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmitFailedUndefined: Self = StObject.set(x, "submitFailed", js.undefined)
+      inline def setSubmitFailedUndefined: Self = StObject.set(x, "submitFailed", js.undefined)
       
-      @scala.inline
-      def setSubmitSucceeded(value: Boolean): Self = StObject.set(x, "submitSucceeded", value.asInstanceOf[js.Any])
+      inline def setSubmitSucceeded(value: Boolean): Self = StObject.set(x, "submitSucceeded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmitSucceededUndefined: Self = StObject.set(x, "submitSucceeded", js.undefined)
+      inline def setSubmitSucceededUndefined: Self = StObject.set(x, "submitSucceeded", js.undefined)
       
-      @scala.inline
-      def setSubmitting(value: Boolean): Self = StObject.set(x, "submitting", value.asInstanceOf[js.Any])
+      inline def setSubmitting(value: Boolean): Self = StObject.set(x, "submitting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmittingUndefined: Self = StObject.set(x, "submitting", js.undefined)
+      inline def setSubmittingUndefined: Self = StObject.set(x, "submitting", js.undefined)
       
-      @scala.inline
-      def setTouched(value: Boolean): Self = StObject.set(x, "touched", value.asInstanceOf[js.Any])
+      inline def setTouched(value: Boolean): Self = StObject.set(x, "touched", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchedUndefined: Self = StObject.set(x, "touched", js.undefined)
+      inline def setTouchedUndefined: Self = StObject.set(x, "touched", js.undefined)
       
-      @scala.inline
-      def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
+      inline def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
       
-      @scala.inline
-      def setValidating(value: Boolean): Self = StObject.set(x, "validating", value.asInstanceOf[js.Any])
+      inline def setValidating(value: Boolean): Self = StObject.set(x, "validating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidatingUndefined: Self = StObject.set(x, "validating", js.undefined)
+      inline def setValidatingUndefined: Self = StObject.set(x, "validating", js.undefined)
       
-      @scala.inline
-      def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setVisited(value: Boolean): Self = StObject.set(x, "visited", value.asInstanceOf[js.Any])
+      inline def setVisited(value: Boolean): Self = StObject.set(x, "visited", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitedUndefined: Self = StObject.set(x, "visited", js.undefined)
+      inline def setVisitedUndefined: Self = StObject.set(x, "visited", js.undefined)
     }
   }
   
@@ -600,8 +534,7 @@ object mod {
   }
   object FormState {
     
-    @scala.inline
-    def apply[FormValues, InitialFormValues](
+    inline def apply[FormValues, InitialFormValues](
       dirty: Boolean,
       dirtyFields: StringDictionary[Boolean],
       dirtyFieldsSinceLastSubmit: StringDictionary[Boolean],
@@ -627,92 +560,63 @@ object mod {
       __obj.asInstanceOf[FormState[FormValues, InitialFormValues]]
     }
     
-    @scala.inline
-    implicit class FormStateMutableBuilder[Self <: FormState[?, ?], FormValues, InitialFormValues] (val x: Self & (FormState[FormValues, InitialFormValues])) extends AnyVal {
+    extension [Self <: FormState[?, ?], FormValues, InitialFormValues](x: Self & (FormState[FormValues, InitialFormValues])) {
       
-      @scala.inline
-      def setActive(value: /* keyof FormValues */ String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: /* keyof FormValues */ String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
+      inline def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirtyFields(value: StringDictionary[Boolean]): Self = StObject.set(x, "dirtyFields", value.asInstanceOf[js.Any])
+      inline def setDirtyFields(value: StringDictionary[Boolean]): Self = StObject.set(x, "dirtyFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirtyFieldsSinceLastSubmit(value: StringDictionary[Boolean]): Self = StObject.set(x, "dirtyFieldsSinceLastSubmit", value.asInstanceOf[js.Any])
+      inline def setDirtyFieldsSinceLastSubmit(value: StringDictionary[Boolean]): Self = StObject.set(x, "dirtyFieldsSinceLastSubmit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirtySinceLastSubmit(value: Boolean): Self = StObject.set(x, "dirtySinceLastSubmit", value.asInstanceOf[js.Any])
+      inline def setDirtySinceLastSubmit(value: Boolean): Self = StObject.set(x, "dirtySinceLastSubmit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrors(value: ValidationErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: ValidationErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasSubmitErrors(value: Boolean): Self = StObject.set(x, "hasSubmitErrors", value.asInstanceOf[js.Any])
+      inline def setHasSubmitErrors(value: Boolean): Self = StObject.set(x, "hasSubmitErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasValidationErrors(value: Boolean): Self = StObject.set(x, "hasValidationErrors", value.asInstanceOf[js.Any])
+      inline def setHasValidationErrors(value: Boolean): Self = StObject.set(x, "hasValidationErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialValues(value: InitialFormValues): Self = StObject.set(x, "initialValues", value.asInstanceOf[js.Any])
+      inline def setInitialValues(value: InitialFormValues): Self = StObject.set(x, "initialValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalid(value: Boolean): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
+      inline def setInvalid(value: Boolean): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModified(value: StringDictionary[Boolean]): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
+      inline def setModified(value: StringDictionary[Boolean]): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifiedSinceLastSubmit(value: Boolean): Self = StObject.set(x, "modifiedSinceLastSubmit", value.asInstanceOf[js.Any])
+      inline def setModifiedSinceLastSubmit(value: Boolean): Self = StObject.set(x, "modifiedSinceLastSubmit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifiedUndefined: Self = StObject.set(x, "modified", js.undefined)
+      inline def setModifiedUndefined: Self = StObject.set(x, "modified", js.undefined)
       
-      @scala.inline
-      def setPristine(value: Boolean): Self = StObject.set(x, "pristine", value.asInstanceOf[js.Any])
+      inline def setPristine(value: Boolean): Self = StObject.set(x, "pristine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmitError(value: js.Any): Self = StObject.set(x, "submitError", value.asInstanceOf[js.Any])
+      inline def setSubmitError(value: js.Any): Self = StObject.set(x, "submitError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmitErrors(value: SubmissionErrors): Self = StObject.set(x, "submitErrors", value.asInstanceOf[js.Any])
+      inline def setSubmitErrors(value: SubmissionErrors): Self = StObject.set(x, "submitErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmitFailed(value: Boolean): Self = StObject.set(x, "submitFailed", value.asInstanceOf[js.Any])
+      inline def setSubmitFailed(value: Boolean): Self = StObject.set(x, "submitFailed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmitSucceeded(value: Boolean): Self = StObject.set(x, "submitSucceeded", value.asInstanceOf[js.Any])
+      inline def setSubmitSucceeded(value: Boolean): Self = StObject.set(x, "submitSucceeded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmitting(value: Boolean): Self = StObject.set(x, "submitting", value.asInstanceOf[js.Any])
+      inline def setSubmitting(value: Boolean): Self = StObject.set(x, "submitting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouched(value: StringDictionary[Boolean]): Self = StObject.set(x, "touched", value.asInstanceOf[js.Any])
+      inline def setTouched(value: StringDictionary[Boolean]): Self = StObject.set(x, "touched", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchedUndefined: Self = StObject.set(x, "touched", js.undefined)
+      inline def setTouchedUndefined: Self = StObject.set(x, "touched", js.undefined)
       
-      @scala.inline
-      def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidating(value: Boolean): Self = StObject.set(x, "validating", value.asInstanceOf[js.Any])
+      inline def setValidating(value: Boolean): Self = StObject.set(x, "validating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: FormValues): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: FormValues): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisited(value: StringDictionary[Boolean]): Self = StObject.set(x, "visited", value.asInstanceOf[js.Any])
+      inline def setVisited(value: StringDictionary[Boolean]): Self = StObject.set(x, "visited", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitedUndefined: Self = StObject.set(x, "visited", js.undefined)
+      inline def setVisitedUndefined: Self = StObject.set(x, "visited", js.undefined)
     }
   }
   
@@ -770,158 +674,108 @@ object mod {
   }
   object FormSubscription {
     
-    @scala.inline
-    def apply(): FormSubscription = {
+    inline def apply(): FormSubscription = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FormSubscription]
     }
     
-    @scala.inline
-    implicit class FormSubscriptionMutableBuilder[Self <: FormSubscription] (val x: Self) extends AnyVal {
+    extension [Self <: FormSubscription](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
+      inline def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirtyFields(value: Boolean): Self = StObject.set(x, "dirtyFields", value.asInstanceOf[js.Any])
+      inline def setDirtyFields(value: Boolean): Self = StObject.set(x, "dirtyFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirtyFieldsSinceLastSubmit(value: Boolean): Self = StObject.set(x, "dirtyFieldsSinceLastSubmit", value.asInstanceOf[js.Any])
+      inline def setDirtyFieldsSinceLastSubmit(value: Boolean): Self = StObject.set(x, "dirtyFieldsSinceLastSubmit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirtyFieldsSinceLastSubmitUndefined: Self = StObject.set(x, "dirtyFieldsSinceLastSubmit", js.undefined)
+      inline def setDirtyFieldsSinceLastSubmitUndefined: Self = StObject.set(x, "dirtyFieldsSinceLastSubmit", js.undefined)
       
-      @scala.inline
-      def setDirtyFieldsUndefined: Self = StObject.set(x, "dirtyFields", js.undefined)
+      inline def setDirtyFieldsUndefined: Self = StObject.set(x, "dirtyFields", js.undefined)
       
-      @scala.inline
-      def setDirtySinceLastSubmit(value: Boolean): Self = StObject.set(x, "dirtySinceLastSubmit", value.asInstanceOf[js.Any])
+      inline def setDirtySinceLastSubmit(value: Boolean): Self = StObject.set(x, "dirtySinceLastSubmit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirtySinceLastSubmitUndefined: Self = StObject.set(x, "dirtySinceLastSubmit", js.undefined)
+      inline def setDirtySinceLastSubmitUndefined: Self = StObject.set(x, "dirtySinceLastSubmit", js.undefined)
       
-      @scala.inline
-      def setDirtyUndefined: Self = StObject.set(x, "dirty", js.undefined)
+      inline def setDirtyUndefined: Self = StObject.set(x, "dirty", js.undefined)
       
-      @scala.inline
-      def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setErrors(value: Boolean): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: Boolean): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+      inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
       
-      @scala.inline
-      def setHasSubmitErrors(value: Boolean): Self = StObject.set(x, "hasSubmitErrors", value.asInstanceOf[js.Any])
+      inline def setHasSubmitErrors(value: Boolean): Self = StObject.set(x, "hasSubmitErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasSubmitErrorsUndefined: Self = StObject.set(x, "hasSubmitErrors", js.undefined)
+      inline def setHasSubmitErrorsUndefined: Self = StObject.set(x, "hasSubmitErrors", js.undefined)
       
-      @scala.inline
-      def setHasValidationErrors(value: Boolean): Self = StObject.set(x, "hasValidationErrors", value.asInstanceOf[js.Any])
+      inline def setHasValidationErrors(value: Boolean): Self = StObject.set(x, "hasValidationErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasValidationErrorsUndefined: Self = StObject.set(x, "hasValidationErrors", js.undefined)
+      inline def setHasValidationErrorsUndefined: Self = StObject.set(x, "hasValidationErrors", js.undefined)
       
-      @scala.inline
-      def setInitialValues(value: Boolean): Self = StObject.set(x, "initialValues", value.asInstanceOf[js.Any])
+      inline def setInitialValues(value: Boolean): Self = StObject.set(x, "initialValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialValuesUndefined: Self = StObject.set(x, "initialValues", js.undefined)
+      inline def setInitialValuesUndefined: Self = StObject.set(x, "initialValues", js.undefined)
       
-      @scala.inline
-      def setInvalid(value: Boolean): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
+      inline def setInvalid(value: Boolean): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
+      inline def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
       
-      @scala.inline
-      def setModified(value: Boolean): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
+      inline def setModified(value: Boolean): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifiedSinceLastSubmit(value: Boolean): Self = StObject.set(x, "modifiedSinceLastSubmit", value.asInstanceOf[js.Any])
+      inline def setModifiedSinceLastSubmit(value: Boolean): Self = StObject.set(x, "modifiedSinceLastSubmit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifiedSinceLastSubmitUndefined: Self = StObject.set(x, "modifiedSinceLastSubmit", js.undefined)
+      inline def setModifiedSinceLastSubmitUndefined: Self = StObject.set(x, "modifiedSinceLastSubmit", js.undefined)
       
-      @scala.inline
-      def setModifiedUndefined: Self = StObject.set(x, "modified", js.undefined)
+      inline def setModifiedUndefined: Self = StObject.set(x, "modified", js.undefined)
       
-      @scala.inline
-      def setPristine(value: Boolean): Self = StObject.set(x, "pristine", value.asInstanceOf[js.Any])
+      inline def setPristine(value: Boolean): Self = StObject.set(x, "pristine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPristineUndefined: Self = StObject.set(x, "pristine", js.undefined)
+      inline def setPristineUndefined: Self = StObject.set(x, "pristine", js.undefined)
       
-      @scala.inline
-      def setSubmitError(value: Boolean): Self = StObject.set(x, "submitError", value.asInstanceOf[js.Any])
+      inline def setSubmitError(value: Boolean): Self = StObject.set(x, "submitError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmitErrorUndefined: Self = StObject.set(x, "submitError", js.undefined)
+      inline def setSubmitErrorUndefined: Self = StObject.set(x, "submitError", js.undefined)
       
-      @scala.inline
-      def setSubmitErrors(value: Boolean): Self = StObject.set(x, "submitErrors", value.asInstanceOf[js.Any])
+      inline def setSubmitErrors(value: Boolean): Self = StObject.set(x, "submitErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmitErrorsUndefined: Self = StObject.set(x, "submitErrors", js.undefined)
+      inline def setSubmitErrorsUndefined: Self = StObject.set(x, "submitErrors", js.undefined)
       
-      @scala.inline
-      def setSubmitFailed(value: Boolean): Self = StObject.set(x, "submitFailed", value.asInstanceOf[js.Any])
+      inline def setSubmitFailed(value: Boolean): Self = StObject.set(x, "submitFailed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmitFailedUndefined: Self = StObject.set(x, "submitFailed", js.undefined)
+      inline def setSubmitFailedUndefined: Self = StObject.set(x, "submitFailed", js.undefined)
       
-      @scala.inline
-      def setSubmitSucceeded(value: Boolean): Self = StObject.set(x, "submitSucceeded", value.asInstanceOf[js.Any])
+      inline def setSubmitSucceeded(value: Boolean): Self = StObject.set(x, "submitSucceeded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmitSucceededUndefined: Self = StObject.set(x, "submitSucceeded", js.undefined)
+      inline def setSubmitSucceededUndefined: Self = StObject.set(x, "submitSucceeded", js.undefined)
       
-      @scala.inline
-      def setSubmitting(value: Boolean): Self = StObject.set(x, "submitting", value.asInstanceOf[js.Any])
+      inline def setSubmitting(value: Boolean): Self = StObject.set(x, "submitting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmittingUndefined: Self = StObject.set(x, "submitting", js.undefined)
+      inline def setSubmittingUndefined: Self = StObject.set(x, "submitting", js.undefined)
       
-      @scala.inline
-      def setTouched(value: Boolean): Self = StObject.set(x, "touched", value.asInstanceOf[js.Any])
+      inline def setTouched(value: Boolean): Self = StObject.set(x, "touched", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchedUndefined: Self = StObject.set(x, "touched", js.undefined)
+      inline def setTouchedUndefined: Self = StObject.set(x, "touched", js.undefined)
       
-      @scala.inline
-      def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
+      inline def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
       
-      @scala.inline
-      def setValidating(value: Boolean): Self = StObject.set(x, "validating", value.asInstanceOf[js.Any])
+      inline def setValidating(value: Boolean): Self = StObject.set(x, "validating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidatingUndefined: Self = StObject.set(x, "validating", js.undefined)
+      inline def setValidatingUndefined: Self = StObject.set(x, "validating", js.undefined)
       
-      @scala.inline
-      def setValues(value: Boolean): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: Boolean): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+      inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      @scala.inline
-      def setVisited(value: Boolean): Self = StObject.set(x, "visited", value.asInstanceOf[js.Any])
+      inline def setVisited(value: Boolean): Self = StObject.set(x, "visited", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisitedUndefined: Self = StObject.set(x, "visited", js.undefined)
+      inline def setVisitedUndefined: Self = StObject.set(x, "visited", js.undefined)
     }
   }
   
@@ -969,8 +823,7 @@ object mod {
   }
   object InternalFieldState {
     
-    @scala.inline
-    def apply[FieldValue](
+    inline def apply[FieldValue](
       active: Boolean,
       blur: () => Unit,
       change: js.Any => Unit,
@@ -990,71 +843,49 @@ object mod {
       __obj.asInstanceOf[InternalFieldState[FieldValue]]
     }
     
-    @scala.inline
-    implicit class InternalFieldStateMutableBuilder[Self <: InternalFieldState[?], FieldValue] (val x: Self & InternalFieldState[FieldValue]) extends AnyVal {
+    extension [Self <: InternalFieldState[?], FieldValue](x: Self & InternalFieldState[FieldValue]) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
+      inline def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setChange(value: js.Any => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+      inline def setChange(value: js.Any => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setData(value: AnyObject): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: AnyObject): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+      inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsEqual(value: (/* a */ js.Any, /* b */ js.Any) => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction2(value))
+      inline def setIsEqual(value: (/* a */ js.Any, /* b */ js.Any) => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLastFieldState(value: FieldState[FieldValue]): Self = StObject.set(x, "lastFieldState", value.asInstanceOf[js.Any])
+      inline def setLastFieldState(value: FieldState[FieldValue]): Self = StObject.set(x, "lastFieldState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastFieldStateUndefined: Self = StObject.set(x, "lastFieldState", js.undefined)
+      inline def setLastFieldStateUndefined: Self = StObject.set(x, "lastFieldState", js.undefined)
       
-      @scala.inline
-      def setLength(value: js.Any): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: js.Any): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
       
-      @scala.inline
-      def setModified(value: Boolean): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
+      inline def setModified(value: Boolean): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifiedSinceLastSubmit(value: Boolean): Self = StObject.set(x, "modifiedSinceLastSubmit", value.asInstanceOf[js.Any])
+      inline def setModifiedSinceLastSubmit(value: Boolean): Self = StObject.set(x, "modifiedSinceLastSubmit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouched(value: Boolean): Self = StObject.set(x, "touched", value.asInstanceOf[js.Any])
+      inline def setTouched(value: Boolean): Self = StObject.set(x, "touched", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateFields(value: js.Array[String]): Self = StObject.set(x, "validateFields", value.asInstanceOf[js.Any])
+      inline def setValidateFields(value: js.Array[String]): Self = StObject.set(x, "validateFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateFieldsUndefined: Self = StObject.set(x, "validateFields", js.undefined)
+      inline def setValidateFieldsUndefined: Self = StObject.set(x, "validateFields", js.undefined)
       
-      @scala.inline
-      def setValidateFieldsVarargs(value: String*): Self = StObject.set(x, "validateFields", js.Array(value :_*))
+      inline def setValidateFieldsVarargs(value: String*): Self = StObject.set(x, "validateFields", js.Array(value :_*))
       
-      @scala.inline
-      def setValidating(value: Boolean): Self = StObject.set(x, "validating", value.asInstanceOf[js.Any])
+      inline def setValidating(value: Boolean): Self = StObject.set(x, "validating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidators(value: NumberDictionary[GetFieldValidator[FieldValue]]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
+      inline def setValidators(value: NumberDictionary[GetFieldValidator[FieldValue]]): Self = StObject.set(x, "validators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisited(value: Boolean): Self = StObject.set(x, "visited", value.asInstanceOf[js.Any])
+      inline def setVisited(value: Boolean): Self = StObject.set(x, "visited", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1094,8 +925,7 @@ object mod {
   }
   object InternalFormState {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dirtySinceLastSubmit: Boolean,
       errors: ValidationErrors,
       modifiedSinceLastSubmit: Boolean,
@@ -1111,74 +941,51 @@ object mod {
       __obj.asInstanceOf[InternalFormState]
     }
     
-    @scala.inline
-    implicit class InternalFormStateMutableBuilder[Self <: InternalFormState] (val x: Self) extends AnyVal {
+    extension [Self <: InternalFormState](x: Self) {
       
-      @scala.inline
-      def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setDirtySinceLastSubmit(value: Boolean): Self = StObject.set(x, "dirtySinceLastSubmit", value.asInstanceOf[js.Any])
+      inline def setDirtySinceLastSubmit(value: Boolean): Self = StObject.set(x, "dirtySinceLastSubmit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setErrors(value: ValidationErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: ValidationErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialValues(value: js.Object): Self = StObject.set(x, "initialValues", value.asInstanceOf[js.Any])
+      inline def setInitialValues(value: js.Object): Self = StObject.set(x, "initialValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialValuesUndefined: Self = StObject.set(x, "initialValues", js.undefined)
+      inline def setInitialValuesUndefined: Self = StObject.set(x, "initialValues", js.undefined)
       
-      @scala.inline
-      def setLastSubmittedValues(value: js.Object): Self = StObject.set(x, "lastSubmittedValues", value.asInstanceOf[js.Any])
+      inline def setLastSubmittedValues(value: js.Object): Self = StObject.set(x, "lastSubmittedValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastSubmittedValuesUndefined: Self = StObject.set(x, "lastSubmittedValues", js.undefined)
+      inline def setLastSubmittedValuesUndefined: Self = StObject.set(x, "lastSubmittedValues", js.undefined)
       
-      @scala.inline
-      def setModifiedSinceLastSubmit(value: Boolean): Self = StObject.set(x, "modifiedSinceLastSubmit", value.asInstanceOf[js.Any])
+      inline def setModifiedSinceLastSubmit(value: Boolean): Self = StObject.set(x, "modifiedSinceLastSubmit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPristine(value: Boolean): Self = StObject.set(x, "pristine", value.asInstanceOf[js.Any])
+      inline def setPristine(value: Boolean): Self = StObject.set(x, "pristine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmitError(value: js.Any): Self = StObject.set(x, "submitError", value.asInstanceOf[js.Any])
+      inline def setSubmitError(value: js.Any): Self = StObject.set(x, "submitError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmitErrorUndefined: Self = StObject.set(x, "submitError", js.undefined)
+      inline def setSubmitErrorUndefined: Self = StObject.set(x, "submitError", js.undefined)
       
-      @scala.inline
-      def setSubmitErrors(value: js.Object): Self = StObject.set(x, "submitErrors", value.asInstanceOf[js.Any])
+      inline def setSubmitErrors(value: js.Object): Self = StObject.set(x, "submitErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmitErrorsUndefined: Self = StObject.set(x, "submitErrors", js.undefined)
+      inline def setSubmitErrorsUndefined: Self = StObject.set(x, "submitErrors", js.undefined)
       
-      @scala.inline
-      def setSubmitFailed(value: Boolean): Self = StObject.set(x, "submitFailed", value.asInstanceOf[js.Any])
+      inline def setSubmitFailed(value: Boolean): Self = StObject.set(x, "submitFailed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmitSucceeded(value: Boolean): Self = StObject.set(x, "submitSucceeded", value.asInstanceOf[js.Any])
+      inline def setSubmitSucceeded(value: Boolean): Self = StObject.set(x, "submitSucceeded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubmitting(value: Boolean): Self = StObject.set(x, "submitting", value.asInstanceOf[js.Any])
+      inline def setSubmitting(value: Boolean): Self = StObject.set(x, "submitting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidating(value: Double): Self = StObject.set(x, "validating", value.asInstanceOf[js.Any])
+      inline def setValidating(value: Double): Self = StObject.set(x, "validating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: js.Object): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Object): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1196,8 +1003,7 @@ object mod {
   }
   object MutableState {
     
-    @scala.inline
-    def apply[FormValues, InitialFormValues](
+    inline def apply[FormValues, InitialFormValues](
       fieldSubscribers: StringDictionary[Subscribers[FieldState[js.Any]]],
       fields: StringDictionary[InternalFieldState[js.Any]],
       formState: InternalFormState
@@ -1206,23 +1012,17 @@ object mod {
       __obj.asInstanceOf[MutableState[FormValues, InitialFormValues]]
     }
     
-    @scala.inline
-    implicit class MutableStateMutableBuilder[Self <: MutableState[?, ?], FormValues, InitialFormValues] (val x: Self & (MutableState[FormValues, InitialFormValues])) extends AnyVal {
+    extension [Self <: MutableState[?, ?], FormValues, InitialFormValues](x: Self & (MutableState[FormValues, InitialFormValues])) {
       
-      @scala.inline
-      def setFieldSubscribers(value: StringDictionary[Subscribers[FieldState[js.Any]]]): Self = StObject.set(x, "fieldSubscribers", value.asInstanceOf[js.Any])
+      inline def setFieldSubscribers(value: StringDictionary[Subscribers[FieldState[js.Any]]]): Self = StObject.set(x, "fieldSubscribers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFields(value: StringDictionary[InternalFieldState[js.Any]]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: StringDictionary[InternalFieldState[js.Any]]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormState(value: InternalFormState): Self = StObject.set(x, "formState", value.asInstanceOf[js.Any])
+      inline def setFormState(value: InternalFormState): Self = StObject.set(x, "formState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastFormState(value: FormState[FormValues, InitialFormValues]): Self = StObject.set(x, "lastFormState", value.asInstanceOf[js.Any])
+      inline def setLastFormState(value: FormState[FormValues, InitialFormValues]): Self = StObject.set(x, "lastFormState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastFormStateUndefined: Self = StObject.set(x, "lastFormState", js.undefined)
+      inline def setLastFormStateUndefined: Self = StObject.set(x, "lastFormState", js.undefined)
     }
   }
   
@@ -1268,20 +1068,16 @@ object mod {
   }
   object Subscribers {
     
-    @scala.inline
-    def apply[T /* <: js.Object */](entries: NumberDictionary[Notified[T]], index: Double): Subscribers[T] = {
+    inline def apply[T /* <: js.Object */](entries: NumberDictionary[Notified[T]], index: Double): Subscribers[T] = {
       val __obj = js.Dynamic.literal(entries = entries.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
       __obj.asInstanceOf[Subscribers[T]]
     }
     
-    @scala.inline
-    implicit class SubscribersMutableBuilder[Self <: Subscribers[?], T /* <: js.Object */] (val x: Self & Subscribers[T]) extends AnyVal {
+    extension [Self <: Subscribers[?], T /* <: js.Object */](x: Self & Subscribers[T]) {
       
-      @scala.inline
-      def setEntries(value: NumberDictionary[Notified[T]]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+      inline def setEntries(value: NumberDictionary[Notified[T]]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1317,8 +1113,7 @@ object mod {
   }
   object Tools {
     
-    @scala.inline
-    def apply[FormValues, InitialFormValues](
+    inline def apply[FormValues, InitialFormValues](
       changeValue: (/* state */ MutableState[FormValues, InitialFormValues], /* name */ String, /* mutate */ js.Function1[/* value */ js.Any, js.Any]) => Unit,
       getIn: (/* state */ js.Object, /* complexKey */ String) => js.Any,
       renameField: (/* state */ MutableState[FormValues, InitialFormValues], /* from */ String, /* to */ String) => Unit,
@@ -1330,30 +1125,23 @@ object mod {
       __obj.asInstanceOf[Tools[FormValues, InitialFormValues]]
     }
     
-    @scala.inline
-    implicit class ToolsMutableBuilder[Self <: Tools[?, ?], FormValues, InitialFormValues] (val x: Self & (Tools[FormValues, InitialFormValues])) extends AnyVal {
+    extension [Self <: Tools[?, ?], FormValues, InitialFormValues](x: Self & (Tools[FormValues, InitialFormValues])) {
       
-      @scala.inline
-      def setChangeValue(
+      inline def setChangeValue(
         value: (/* state */ MutableState[FormValues, InitialFormValues], /* name */ String, /* mutate */ js.Function1[/* value */ js.Any, js.Any]) => Unit
       ): Self = StObject.set(x, "changeValue", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetIn(value: (/* state */ js.Object, /* complexKey */ String) => js.Any): Self = StObject.set(x, "getIn", js.Any.fromFunction2(value))
+      inline def setGetIn(value: (/* state */ js.Object, /* complexKey */ String) => js.Any): Self = StObject.set(x, "getIn", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRenameField(
+      inline def setRenameField(
         value: (/* state */ MutableState[FormValues, InitialFormValues], /* from */ String, /* to */ String) => Unit
       ): Self = StObject.set(x, "renameField", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setResetFieldState(value: String => Unit): Self = StObject.set(x, "resetFieldState", js.Any.fromFunction1(value))
+      inline def setResetFieldState(value: String => Unit): Self = StObject.set(x, "resetFieldState", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetIn(value: (/* state */ js.Object, /* key */ String, /* value */ js.Any) => js.Object): Self = StObject.set(x, "setIn", js.Any.fromFunction3(value))
+      inline def setSetIn(value: (/* state */ js.Object, /* key */ String, /* value */ js.Any) => js.Object): Self = StObject.set(x, "setIn", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setShallowEqual(value: (/* a */ js.Any, /* b */ js.Any) => Boolean): Self = StObject.set(x, "shallowEqual", js.Any.fromFunction2(value))
+      inline def setShallowEqual(value: (/* a */ js.Any, /* b */ js.Any) => Boolean): Self = StObject.set(x, "shallowEqual", js.Any.fromFunction2(value))
     }
   }
   

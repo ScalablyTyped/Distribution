@@ -13,19 +13,15 @@ trait Builder extends StObject {
 }
 object Builder {
   
-  @scala.inline
-  def apply(): Builder = {
+  inline def apply(): Builder = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Builder]
   }
   
-  @scala.inline
-  implicit class BuilderMutableBuilder[Self <: Builder] (val x: Self) extends AnyVal {
+  extension [Self <: Builder](x: Self) {
     
-    @scala.inline
-    def setARN(value: ARN): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
+    inline def setARN(value: ARN): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
+    inline def setARNUndefined: Self = StObject.set(x, "ARN", js.undefined)
   }
 }

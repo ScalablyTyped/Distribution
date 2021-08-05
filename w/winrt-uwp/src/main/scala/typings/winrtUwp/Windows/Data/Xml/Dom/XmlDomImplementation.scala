@@ -17,16 +17,13 @@ trait XmlDomImplementation extends StObject {
 }
 object XmlDomImplementation {
   
-  @scala.inline
-  def apply(hasFeature: (String, js.Any) => Boolean): XmlDomImplementation = {
+  inline def apply(hasFeature: (String, js.Any) => Boolean): XmlDomImplementation = {
     val __obj = js.Dynamic.literal(hasFeature = js.Any.fromFunction2(hasFeature))
     __obj.asInstanceOf[XmlDomImplementation]
   }
   
-  @scala.inline
-  implicit class XmlDomImplementationMutableBuilder[Self <: XmlDomImplementation] (val x: Self) extends AnyVal {
+  extension [Self <: XmlDomImplementation](x: Self) {
     
-    @scala.inline
-    def setHasFeature(value: (String, js.Any) => Boolean): Self = StObject.set(x, "hasFeature", js.Any.fromFunction2(value))
+    inline def setHasFeature(value: (String, js.Any) => Boolean): Self = StObject.set(x, "hasFeature", js.Any.fromFunction2(value))
   }
 }

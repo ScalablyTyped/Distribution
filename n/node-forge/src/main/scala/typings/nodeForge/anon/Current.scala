@@ -13,22 +13,17 @@ trait Current extends StObject {
 }
 object Current {
   
-  @scala.inline
-  def apply(current: ConnectionState): Current = {
+  inline def apply(current: ConnectionState): Current = {
     val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], pending = null)
     __obj.asInstanceOf[Current]
   }
   
-  @scala.inline
-  implicit class CurrentMutableBuilder[Self <: Current] (val x: Self) extends AnyVal {
+  extension [Self <: Current](x: Self) {
     
-    @scala.inline
-    def setCurrent(value: ConnectionState): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    inline def setCurrent(value: ConnectionState): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPending(value: ConnectionState): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+    inline def setPending(value: ConnectionState): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingNull: Self = StObject.set(x, "pending", null)
+    inline def setPendingNull: Self = StObject.set(x, "pending", null)
   }
 }

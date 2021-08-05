@@ -18,8 +18,7 @@ trait XErrorQuery
 }
 object XErrorQuery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     hasError: () => Boolean,
     queryInterface: `type` => js.Any,
@@ -29,10 +28,8 @@ object XErrorQuery {
     __obj.asInstanceOf[XErrorQuery]
   }
   
-  @scala.inline
-  implicit class XErrorQueryMutableBuilder[Self <: XErrorQuery] (val x: Self) extends AnyVal {
+  extension [Self <: XErrorQuery](x: Self) {
     
-    @scala.inline
-    def setHasError(value: () => Boolean): Self = StObject.set(x, "hasError", js.Any.fromFunction0(value))
+    inline def setHasError(value: () => Boolean): Self = StObject.set(x, "hasError", js.Any.fromFunction0(value))
   }
 }

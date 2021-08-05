@@ -9,8 +9,7 @@ trait DataRequestedEventArgs
      with IDataRequestedEventArgs
 object DataRequestedEventArgs {
   
-  @scala.inline
-  def apply(request: DataRequest): DataRequestedEventArgs = {
+  inline def apply(request: DataRequest): DataRequestedEventArgs = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataRequestedEventArgs]
   }

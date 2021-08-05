@@ -17,31 +17,23 @@ trait KeyOperationAttestation extends StObject {
 }
 object KeyOperationAttestation {
   
-  @scala.inline
-  def apply(): KeyOperationAttestation = {
+  inline def apply(): KeyOperationAttestation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KeyOperationAttestation]
   }
   
-  @scala.inline
-  implicit class KeyOperationAttestationMutableBuilder[Self <: KeyOperationAttestation] (val x: Self) extends AnyVal {
+  extension [Self <: KeyOperationAttestation](x: Self) {
     
-    @scala.inline
-    def setCertChains(value: CertificateChains): Self = StObject.set(x, "certChains", value.asInstanceOf[js.Any])
+    inline def setCertChains(value: CertificateChains): Self = StObject.set(x, "certChains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertChainsUndefined: Self = StObject.set(x, "certChains", js.undefined)
+    inline def setCertChainsUndefined: Self = StObject.set(x, "certChains", js.undefined)
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
   }
 }

@@ -40,8 +40,7 @@ trait Responder[D, M] extends StObject {
 }
 object Responder {
   
-  @scala.inline
-  def apply[D, M](
+  inline def apply[D, M](
     fireAndForget: Payload[D, M] => Unit,
     metadataPush: Payload[D, M] => Single[Unit],
     requestChannel: Flowable[Payload[D, M]] => Flowable[Payload[D, M]],
@@ -52,22 +51,16 @@ object Responder {
     __obj.asInstanceOf[Responder[D, M]]
   }
   
-  @scala.inline
-  implicit class ResponderMutableBuilder[Self <: Responder[?, ?], D, M] (val x: Self & (Responder[D, M])) extends AnyVal {
+  extension [Self <: Responder[?, ?], D, M](x: Self & (Responder[D, M])) {
     
-    @scala.inline
-    def setFireAndForget(value: Payload[D, M] => Unit): Self = StObject.set(x, "fireAndForget", js.Any.fromFunction1(value))
+    inline def setFireAndForget(value: Payload[D, M] => Unit): Self = StObject.set(x, "fireAndForget", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMetadataPush(value: Payload[D, M] => Single[Unit]): Self = StObject.set(x, "metadataPush", js.Any.fromFunction1(value))
+    inline def setMetadataPush(value: Payload[D, M] => Single[Unit]): Self = StObject.set(x, "metadataPush", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRequestChannel(value: Flowable[Payload[D, M]] => Flowable[Payload[D, M]]): Self = StObject.set(x, "requestChannel", js.Any.fromFunction1(value))
+    inline def setRequestChannel(value: Flowable[Payload[D, M]] => Flowable[Payload[D, M]]): Self = StObject.set(x, "requestChannel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRequestResponse(value: Payload[D, M] => Single[Payload[D, M]]): Self = StObject.set(x, "requestResponse", js.Any.fromFunction1(value))
+    inline def setRequestResponse(value: Payload[D, M] => Single[Payload[D, M]]): Self = StObject.set(x, "requestResponse", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRequestStream(value: Payload[D, M] => Flowable[Payload[D, M]]): Self = StObject.set(x, "requestStream", js.Any.fromFunction1(value))
+    inline def setRequestStream(value: Payload[D, M] => Flowable[Payload[D, M]]): Self = StObject.set(x, "requestStream", js.Any.fromFunction1(value))
   }
 }

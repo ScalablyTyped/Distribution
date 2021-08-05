@@ -18,8 +18,7 @@ trait XInteractionAuthFallback
 }
 object XInteractionAuthFallback {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -30,10 +29,8 @@ object XInteractionAuthFallback {
     __obj.asInstanceOf[XInteractionAuthFallback]
   }
   
-  @scala.inline
-  implicit class XInteractionAuthFallbackMutableBuilder[Self <: XInteractionAuthFallback] (val x: Self) extends AnyVal {
+  extension [Self <: XInteractionAuthFallback](x: Self) {
     
-    @scala.inline
-    def setSetCode(value: String => Unit): Self = StObject.set(x, "setCode", js.Any.fromFunction1(value))
+    inline def setSetCode(value: String => Unit): Self = StObject.set(x, "setCode", js.Any.fromFunction1(value))
   }
 }

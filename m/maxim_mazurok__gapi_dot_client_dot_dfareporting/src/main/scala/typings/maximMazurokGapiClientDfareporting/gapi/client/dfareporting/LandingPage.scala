@@ -29,58 +29,41 @@ trait LandingPage extends StObject {
 }
 object LandingPage {
   
-  @scala.inline
-  def apply(): LandingPage = {
+  inline def apply(): LandingPage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LandingPage]
   }
   
-  @scala.inline
-  implicit class LandingPageMutableBuilder[Self <: LandingPage] (val x: Self) extends AnyVal {
+  extension [Self <: LandingPage](x: Self) {
     
-    @scala.inline
-    def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
+    inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
+    inline def setAdvertiserIdUndefined: Self = StObject.set(x, "advertiserId", js.undefined)
     
-    @scala.inline
-    def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
+    inline def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArchivedUndefined: Self = StObject.set(x, "archived", js.undefined)
+    inline def setArchivedUndefined: Self = StObject.set(x, "archived", js.undefined)
     
-    @scala.inline
-    def setDeepLinks(value: js.Array[DeepLink]): Self = StObject.set(x, "deepLinks", value.asInstanceOf[js.Any])
+    inline def setDeepLinks(value: js.Array[DeepLink]): Self = StObject.set(x, "deepLinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeepLinksUndefined: Self = StObject.set(x, "deepLinks", js.undefined)
+    inline def setDeepLinksUndefined: Self = StObject.set(x, "deepLinks", js.undefined)
     
-    @scala.inline
-    def setDeepLinksVarargs(value: DeepLink*): Self = StObject.set(x, "deepLinks", js.Array(value :_*))
+    inline def setDeepLinksVarargs(value: DeepLink*): Self = StObject.set(x, "deepLinks", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

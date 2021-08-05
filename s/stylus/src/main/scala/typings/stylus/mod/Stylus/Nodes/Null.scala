@@ -13,8 +13,7 @@ trait Null
 }
 object Null {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     coerce: Node => Node,
     column: Double,
     eval: () => Node,
@@ -34,10 +33,8 @@ object Null {
     __obj.asInstanceOf[Null]
   }
   
-  @scala.inline
-  implicit class NullMutableBuilder[Self <: Null] (val x: Self) extends AnyVal {
+  extension [Self <: Null](x: Self) {
     
-    @scala.inline
-    def setIsNull(value: scala.Boolean): Self = StObject.set(x, "isNull", value.asInstanceOf[js.Any])
+    inline def setIsNull(value: scala.Boolean): Self = StObject.set(x, "isNull", value.asInstanceOf[js.Any])
   }
 }

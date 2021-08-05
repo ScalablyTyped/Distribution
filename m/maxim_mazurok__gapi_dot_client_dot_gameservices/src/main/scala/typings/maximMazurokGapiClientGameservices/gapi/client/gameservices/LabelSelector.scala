@@ -16,23 +16,19 @@ trait LabelSelector extends StObject {
 }
 object LabelSelector {
   
-  @scala.inline
-  def apply(): LabelSelector = {
+  inline def apply(): LabelSelector = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LabelSelector]
   }
   
-  @scala.inline
-  implicit class LabelSelectorMutableBuilder[Self <: LabelSelector] (val x: Self) extends AnyVal {
+  extension [Self <: LabelSelector](x: Self) {
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientGameservices.maximMazurokGapiClientGameservicesStrings.LabelSelector & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
   }
 }

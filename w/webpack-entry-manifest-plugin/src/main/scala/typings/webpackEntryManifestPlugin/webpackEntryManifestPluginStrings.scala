@@ -8,6 +8,5 @@ object webpackEntryManifestPluginStrings {
   
   @js.native
   sealed trait WebpackEntryManifestPlugin extends StObject
-  @scala.inline
-  def WebpackEntryManifestPlugin: WebpackEntryManifestPlugin = "WebpackEntryManifestPlugin".asInstanceOf[WebpackEntryManifestPlugin]
+  inline def WebpackEntryManifestPlugin: WebpackEntryManifestPlugin = "WebpackEntryManifestPlugin".asInstanceOf[WebpackEntryManifestPlugin]
 }

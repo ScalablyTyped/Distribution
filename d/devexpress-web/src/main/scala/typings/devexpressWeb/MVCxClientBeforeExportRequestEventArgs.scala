@@ -18,16 +18,13 @@ trait MVCxClientBeforeExportRequestEventArgs
 }
 object MVCxClientBeforeExportRequestEventArgs {
   
-  @scala.inline
-  def apply(customArgs: js.Any): MVCxClientBeforeExportRequestEventArgs = {
+  inline def apply(customArgs: js.Any): MVCxClientBeforeExportRequestEventArgs = {
     val __obj = js.Dynamic.literal(customArgs = customArgs.asInstanceOf[js.Any])
     __obj.asInstanceOf[MVCxClientBeforeExportRequestEventArgs]
   }
   
-  @scala.inline
-  implicit class MVCxClientBeforeExportRequestEventArgsMutableBuilder[Self <: MVCxClientBeforeExportRequestEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: MVCxClientBeforeExportRequestEventArgs](x: Self) {
     
-    @scala.inline
-    def setCustomArgs(value: js.Any): Self = StObject.set(x, "customArgs", value.asInstanceOf[js.Any])
+    inline def setCustomArgs(value: js.Any): Self = StObject.set(x, "customArgs", value.asInstanceOf[js.Any])
   }
 }

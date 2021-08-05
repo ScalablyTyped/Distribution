@@ -16,23 +16,18 @@ trait ClassBody_
 }
 object ClassBody_ {
   
-  @scala.inline
-  def apply(body: js.Array[ClassMethod_ | ClassProperty_], end: Double, loc: SourceLocation, start: Double): ClassBody_ = {
+  inline def apply(body: js.Array[ClassMethod_ | ClassProperty_], end: Double, loc: SourceLocation, start: Double): ClassBody_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ClassBody")
     __obj.asInstanceOf[ClassBody_]
   }
   
-  @scala.inline
-  implicit class ClassBody_MutableBuilder[Self <: ClassBody_] (val x: Self) extends AnyVal {
+  extension [Self <: ClassBody_](x: Self) {
     
-    @scala.inline
-    def setBody(value: js.Array[ClassMethod_ | ClassProperty_]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: js.Array[ClassMethod_ | ClassProperty_]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyVarargs(value: (ClassMethod_ | ClassProperty_)*): Self = StObject.set(x, "body", js.Array(value :_*))
+    inline def setBodyVarargs(value: (ClassMethod_ | ClassProperty_)*): Self = StObject.set(x, "body", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: ClassBody): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ClassBody): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

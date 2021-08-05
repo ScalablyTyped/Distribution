@@ -14,25 +14,19 @@ trait UnexpectedExitStatusEvent extends StObject {
 }
 object UnexpectedExitStatusEvent {
   
-  @scala.inline
-  def apply(): UnexpectedExitStatusEvent = {
+  inline def apply(): UnexpectedExitStatusEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UnexpectedExitStatusEvent]
   }
   
-  @scala.inline
-  implicit class UnexpectedExitStatusEventMutableBuilder[Self <: UnexpectedExitStatusEvent] (val x: Self) extends AnyVal {
+  extension [Self <: UnexpectedExitStatusEvent](x: Self) {
     
-    @scala.inline
-    def setActionId(value: Double): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
+    inline def setActionId(value: Double): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionIdUndefined: Self = StObject.set(x, "actionId", js.undefined)
+    inline def setActionIdUndefined: Self = StObject.set(x, "actionId", js.undefined)
     
-    @scala.inline
-    def setExitStatus(value: Double): Self = StObject.set(x, "exitStatus", value.asInstanceOf[js.Any])
+    inline def setExitStatus(value: Double): Self = StObject.set(x, "exitStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExitStatusUndefined: Self = StObject.set(x, "exitStatus", js.undefined)
+    inline def setExitStatusUndefined: Self = StObject.set(x, "exitStatus", js.undefined)
   }
 }

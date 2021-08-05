@@ -12,22 +12,17 @@ trait GetLaunchTemplateInstanceMarketOption extends StObject {
 }
 object GetLaunchTemplateInstanceMarketOption {
   
-  @scala.inline
-  def apply(marketType: String, spotOptions: js.Array[GetLaunchTemplateInstanceMarketOptionSpotOption]): GetLaunchTemplateInstanceMarketOption = {
+  inline def apply(marketType: String, spotOptions: js.Array[GetLaunchTemplateInstanceMarketOptionSpotOption]): GetLaunchTemplateInstanceMarketOption = {
     val __obj = js.Dynamic.literal(marketType = marketType.asInstanceOf[js.Any], spotOptions = spotOptions.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetLaunchTemplateInstanceMarketOption]
   }
   
-  @scala.inline
-  implicit class GetLaunchTemplateInstanceMarketOptionMutableBuilder[Self <: GetLaunchTemplateInstanceMarketOption] (val x: Self) extends AnyVal {
+  extension [Self <: GetLaunchTemplateInstanceMarketOption](x: Self) {
     
-    @scala.inline
-    def setMarketType(value: String): Self = StObject.set(x, "marketType", value.asInstanceOf[js.Any])
+    inline def setMarketType(value: String): Self = StObject.set(x, "marketType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpotOptions(value: js.Array[GetLaunchTemplateInstanceMarketOptionSpotOption]): Self = StObject.set(x, "spotOptions", value.asInstanceOf[js.Any])
+    inline def setSpotOptions(value: js.Array[GetLaunchTemplateInstanceMarketOptionSpotOption]): Self = StObject.set(x, "spotOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpotOptionsVarargs(value: GetLaunchTemplateInstanceMarketOptionSpotOption*): Self = StObject.set(x, "spotOptions", js.Array(value :_*))
+    inline def setSpotOptionsVarargs(value: GetLaunchTemplateInstanceMarketOptionSpotOption*): Self = StObject.set(x, "spotOptions", js.Array(value :_*))
   }
 }

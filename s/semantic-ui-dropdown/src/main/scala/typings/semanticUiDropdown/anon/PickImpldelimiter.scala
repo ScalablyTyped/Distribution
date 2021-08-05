@@ -12,16 +12,13 @@ trait PickImpldelimiter extends StObject {
 }
 object PickImpldelimiter {
   
-  @scala.inline
-  def apply(delimiter: Double | `false`): PickImpldelimiter = {
+  inline def apply(delimiter: Double | `false`): PickImpldelimiter = {
     val __obj = js.Dynamic.literal(delimiter = delimiter.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldelimiter]
   }
   
-  @scala.inline
-  implicit class PickImpldelimiterMutableBuilder[Self <: PickImpldelimiter] (val x: Self) extends AnyVal {
+  extension [Self <: PickImpldelimiter](x: Self) {
     
-    @scala.inline
-    def setDelimiter(value: Double | `false`): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+    inline def setDelimiter(value: Double | `false`): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
   }
 }

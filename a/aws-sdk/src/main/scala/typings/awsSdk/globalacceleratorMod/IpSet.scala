@@ -18,28 +18,21 @@ trait IpSet extends StObject {
 }
 object IpSet {
   
-  @scala.inline
-  def apply(): IpSet = {
+  inline def apply(): IpSet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IpSet]
   }
   
-  @scala.inline
-  implicit class IpSetMutableBuilder[Self <: IpSet] (val x: Self) extends AnyVal {
+  extension [Self <: IpSet](x: Self) {
     
-    @scala.inline
-    def setIpAddresses(value: IpAddresses): Self = StObject.set(x, "IpAddresses", value.asInstanceOf[js.Any])
+    inline def setIpAddresses(value: IpAddresses): Self = StObject.set(x, "IpAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddressesUndefined: Self = StObject.set(x, "IpAddresses", js.undefined)
+    inline def setIpAddressesUndefined: Self = StObject.set(x, "IpAddresses", js.undefined)
     
-    @scala.inline
-    def setIpAddressesVarargs(value: IpAddress*): Self = StObject.set(x, "IpAddresses", js.Array(value :_*))
+    inline def setIpAddressesVarargs(value: IpAddress*): Self = StObject.set(x, "IpAddresses", js.Array(value :_*))
     
-    @scala.inline
-    def setIpFamily(value: GenericString): Self = StObject.set(x, "IpFamily", value.asInstanceOf[js.Any])
+    inline def setIpFamily(value: GenericString): Self = StObject.set(x, "IpFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpFamilyUndefined: Self = StObject.set(x, "IpFamily", js.undefined)
+    inline def setIpFamilyUndefined: Self = StObject.set(x, "IpFamily", js.undefined)
   }
 }

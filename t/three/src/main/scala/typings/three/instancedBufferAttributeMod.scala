@@ -15,14 +15,11 @@ object instancedBufferAttributeMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def computeTangents(geometry: BufferGeometry): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("computeTangents")(geometry.asInstanceOf[js.Any]).asInstanceOf[Null]
+    inline def computeTangents(geometry: BufferGeometry): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("computeTangents")(geometry.asInstanceOf[js.Any]).asInstanceOf[Null]
     
-    @scala.inline
-    def mergeBufferAttributes(attributes: js.Array[BufferAttribute]): BufferAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeBufferAttributes")(attributes.asInstanceOf[js.Any]).asInstanceOf[BufferAttribute]
+    inline def mergeBufferAttributes(attributes: js.Array[BufferAttribute]): BufferAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeBufferAttributes")(attributes.asInstanceOf[js.Any]).asInstanceOf[BufferAttribute]
     
-    @scala.inline
-    def mergeBufferGeometries(geometries: js.Array[BufferGeometry]): BufferGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeBufferGeometries")(geometries.asInstanceOf[js.Any]).asInstanceOf[BufferGeometry]
+    inline def mergeBufferGeometries(geometries: js.Array[BufferGeometry]): BufferGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeBufferGeometries")(geometries.asInstanceOf[js.Any]).asInstanceOf[BufferGeometry]
   }
   
   object GeometryUtils {
@@ -31,13 +28,10 @@ object instancedBufferAttributeMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def center(geometry: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("center")(geometry.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def center(geometry: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("center")(geometry.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def merge(geometry1: js.Any, geometry2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(geometry1.asInstanceOf[js.Any], geometry2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def merge(geometry1: js.Any, geometry2: js.Any, materialIndexOffset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(geometry1.asInstanceOf[js.Any], geometry2.asInstanceOf[js.Any], materialIndexOffset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def merge(geometry1: js.Any, geometry2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(geometry1.asInstanceOf[js.Any], geometry2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def merge(geometry1: js.Any, geometry2: js.Any, materialIndexOffset: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(geometry1.asInstanceOf[js.Any], geometry2.asInstanceOf[js.Any], materialIndexOffset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   @JSImport("three/src/core/InstancedBufferAttribute", "InstancedBufferAttribute")

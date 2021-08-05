@@ -14,25 +14,19 @@ trait GoogleCloudVisionV1p4beta1FaceRecognitionResult extends StObject {
 }
 object GoogleCloudVisionV1p4beta1FaceRecognitionResult {
   
-  @scala.inline
-  def apply(): GoogleCloudVisionV1p4beta1FaceRecognitionResult = {
+  inline def apply(): GoogleCloudVisionV1p4beta1FaceRecognitionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVisionV1p4beta1FaceRecognitionResult]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVisionV1p4beta1FaceRecognitionResultMutableBuilder[Self <: GoogleCloudVisionV1p4beta1FaceRecognitionResult] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVisionV1p4beta1FaceRecognitionResult](x: Self) {
     
-    @scala.inline
-    def setCelebrity(value: GoogleCloudVisionV1p4beta1Celebrity): Self = StObject.set(x, "celebrity", value.asInstanceOf[js.Any])
+    inline def setCelebrity(value: GoogleCloudVisionV1p4beta1Celebrity): Self = StObject.set(x, "celebrity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCelebrityUndefined: Self = StObject.set(x, "celebrity", js.undefined)
+    inline def setCelebrityUndefined: Self = StObject.set(x, "celebrity", js.undefined)
     
-    @scala.inline
-    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
   }
 }

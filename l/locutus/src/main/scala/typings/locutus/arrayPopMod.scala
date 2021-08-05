@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object arrayPopMod {
   
-  @scala.inline
-  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  @scala.inline
-  def apply(inputArr: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(inputArr.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  inline def apply(inputArr: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(inputArr.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("locutus/php/array/array_pop", JSImport.Namespace)
   @js.native

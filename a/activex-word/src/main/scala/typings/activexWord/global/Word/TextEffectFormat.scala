@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.TextEffectFormat")
 @js.native
-class TextEffectFormat protected ()
+/* private */ class TextEffectFormat ()
   extends StObject
      with typings.activexWord.Word.TextEffectFormat {
   
@@ -62,7 +62,7 @@ class TextEffectFormat protected ()
   /* CompleteClass */
   var Tracking: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.TextEffectFormat_typekey")
   var WordDotTextEffectFormat_typekey: typings.activexWord.Word.TextEffectFormat = js.native
 }

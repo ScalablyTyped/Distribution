@@ -20,37 +20,27 @@ trait CalendarUrl extends StObject {
 }
 object CalendarUrl {
   
-  @scala.inline
-  def apply(): CalendarUrl = {
+  inline def apply(): CalendarUrl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CalendarUrl]
   }
   
-  @scala.inline
-  implicit class CalendarUrlMutableBuilder[Self <: CalendarUrl] (val x: Self) extends AnyVal {
+  extension [Self <: CalendarUrl](x: Self) {
     
-    @scala.inline
-    def setFormattedType(value: String): Self = StObject.set(x, "formattedType", value.asInstanceOf[js.Any])
+    inline def setFormattedType(value: String): Self = StObject.set(x, "formattedType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattedTypeUndefined: Self = StObject.set(x, "formattedType", js.undefined)
+    inline def setFormattedTypeUndefined: Self = StObject.set(x, "formattedType", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: FieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: FieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

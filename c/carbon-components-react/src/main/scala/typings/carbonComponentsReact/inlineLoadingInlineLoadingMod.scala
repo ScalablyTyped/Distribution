@@ -36,50 +36,36 @@ object inlineLoadingInlineLoadingMod extends Shortcut {
   }
   object InlineLoadingProps {
     
-    @scala.inline
-    def apply(): InlineLoadingProps = {
+    inline def apply(): InlineLoadingProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InlineLoadingProps]
     }
     
-    @scala.inline
-    implicit class InlineLoadingPropsMutableBuilder[Self <: InlineLoadingProps] (val x: Self) extends AnyVal {
+    extension [Self <: InlineLoadingProps](x: Self) {
       
-      @scala.inline
-      def setDescription(value: ReactNode): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: ReactNode): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setIconDescription(value: String): Self = StObject.set(x, "iconDescription", value.asInstanceOf[js.Any])
+      inline def setIconDescription(value: String): Self = StObject.set(x, "iconDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconDescriptionUndefined: Self = StObject.set(x, "iconDescription", js.undefined)
+      inline def setIconDescriptionUndefined: Self = StObject.set(x, "iconDescription", js.undefined)
       
-      @scala.inline
-      def setOnSuccess(value: () => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction0(value))
+      inline def setOnSuccess(value: () => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
+      inline def setOnSuccessUndefined: Self = StObject.set(x, "onSuccess", js.undefined)
       
-      @scala.inline
-      def setStatus(value: InlineLoadingStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: InlineLoadingStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccessDelay(value: Double): Self = StObject.set(x, "successDelay", value.asInstanceOf[js.Any])
+      inline def setSuccessDelay(value: Double): Self = StObject.set(x, "successDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccessDelayUndefined: Self = StObject.set(x, "successDelay", js.undefined)
+      inline def setSuccessDelayUndefined: Self = StObject.set(x, "successDelay", js.undefined)
       
-      @scala.inline
-      def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+      inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     }
   }
   
@@ -92,17 +78,13 @@ object inlineLoadingInlineLoadingMod extends Shortcut {
   trait InlineLoadingStatus extends StObject
   object InlineLoadingStatus {
     
-    @scala.inline
-    def active: typings.carbonComponentsReact.carbonComponentsReactStrings.active = "active".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.active]
+    inline def active: typings.carbonComponentsReact.carbonComponentsReactStrings.active = "active".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.active]
     
-    @scala.inline
-    def error: typings.carbonComponentsReact.carbonComponentsReactStrings.error = "error".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.error]
+    inline def error: typings.carbonComponentsReact.carbonComponentsReactStrings.error = "error".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.error]
     
-    @scala.inline
-    def finished: typings.carbonComponentsReact.carbonComponentsReactStrings.finished = "finished".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.finished]
+    inline def finished: typings.carbonComponentsReact.carbonComponentsReactStrings.finished = "finished".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.finished]
     
-    @scala.inline
-    def inactive: typings.carbonComponentsReact.carbonComponentsReactStrings.inactive = "inactive".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.inactive]
+    inline def inactive: typings.carbonComponentsReact.carbonComponentsReactStrings.inactive = "inactive".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.inactive]
   }
   
   type _To = FC[InlineLoadingProps]

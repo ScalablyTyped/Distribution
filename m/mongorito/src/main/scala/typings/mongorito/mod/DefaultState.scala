@@ -12,22 +12,17 @@ trait DefaultState extends StObject {
 }
 object DefaultState {
   
-  @scala.inline
-  def apply(fields: js.Object, unset: js.Array[String]): DefaultState = {
+  inline def apply(fields: js.Object, unset: js.Array[String]): DefaultState = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], unset = unset.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultState]
   }
   
-  @scala.inline
-  implicit class DefaultStateMutableBuilder[Self <: DefaultState] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultState](x: Self) {
     
-    @scala.inline
-    def setFields(value: js.Object): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Object): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnset(value: js.Array[String]): Self = StObject.set(x, "unset", value.asInstanceOf[js.Any])
+    inline def setUnset(value: js.Array[String]): Self = StObject.set(x, "unset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnsetVarargs(value: String*): Self = StObject.set(x, "unset", js.Array(value :_*))
+    inline def setUnsetVarargs(value: String*): Self = StObject.set(x, "unset", js.Array(value :_*))
   }
 }

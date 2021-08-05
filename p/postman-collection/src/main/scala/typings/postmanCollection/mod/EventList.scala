@@ -20,6 +20,5 @@ object EventList {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isEventList(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEventList")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isEventList(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEventList")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

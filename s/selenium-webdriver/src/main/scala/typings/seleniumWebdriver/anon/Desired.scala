@@ -16,25 +16,19 @@ trait Desired
 }
 object Desired {
   
-  @scala.inline
-  def apply(): Desired = {
+  inline def apply(): Desired = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Desired]
   }
   
-  @scala.inline
-  implicit class DesiredMutableBuilder[Self <: Desired] (val x: Self) extends AnyVal {
+  extension [Self <: Desired](x: Self) {
     
-    @scala.inline
-    def setDesired(value: Capabilities): Self = StObject.set(x, "desired", value.asInstanceOf[js.Any])
+    inline def setDesired(value: Capabilities): Self = StObject.set(x, "desired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredUndefined: Self = StObject.set(x, "desired", js.undefined)
+    inline def setDesiredUndefined: Self = StObject.set(x, "desired", js.undefined)
     
-    @scala.inline
-    def setRequired(value: Capabilities): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: Capabilities): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+    inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
   }
 }

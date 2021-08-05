@@ -8,11 +8,9 @@ object jssStrings {
   
   @js.native
   sealed trait Exclamationmarkimportant extends StObject
-  @scala.inline
-  def Exclamationmarkimportant: Exclamationmarkimportant = "!important".asInstanceOf[Exclamationmarkimportant]
+  inline def Exclamationmarkimportant: Exclamationmarkimportant = "!important".asInstanceOf[Exclamationmarkimportant]
   
   @js.native
   sealed trait JssStyle extends StObject
-  @scala.inline
-  def JssStyle: JssStyle = "JssStyle".asInstanceOf[JssStyle]
+  inline def JssStyle: JssStyle = "JssStyle".asInstanceOf[JssStyle]
 }

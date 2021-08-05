@@ -15,22 +15,17 @@ trait RemoveStorageOptions
 }
 object RemoveStorageOptions {
   
-  @scala.inline
-  def apply(key: String): RemoveStorageOptions = {
+  inline def apply(key: String): RemoveStorageOptions = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveStorageOptions]
   }
   
-  @scala.inline
-  implicit class RemoveStorageOptionsMutableBuilder[Self <: RemoveStorageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveStorageOptions](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: /* res */ DataResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ DataResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

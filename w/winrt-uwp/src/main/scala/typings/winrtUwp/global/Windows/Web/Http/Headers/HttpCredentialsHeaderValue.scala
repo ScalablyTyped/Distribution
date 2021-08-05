@@ -48,14 +48,12 @@ object HttpCredentialsHeaderValue {
     * @return An HttpCredentialsHeaderValue instance.
     */
   /* static member */
-  @scala.inline
-  def parse(input: String): typings.winrtUwp.Windows.Web.Http.Headers.HttpCredentialsHeaderValue = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Web.Http.Headers.HttpCredentialsHeaderValue]
+  inline def parse(input: String): typings.winrtUwp.Windows.Web.Http.Headers.HttpCredentialsHeaderValue = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Web.Http.Headers.HttpCredentialsHeaderValue]
   
   /**
     * Determines whether a string is valid HttpCredentialsHeaderValue information.
     * @param input The string to validate.
     */
   /* static member */
-  @scala.inline
-  def tryParse(input: String): CredentialsHeaderValue = ^.asInstanceOf[js.Dynamic].applyDynamic("tryParse")(input.asInstanceOf[js.Any]).asInstanceOf[CredentialsHeaderValue]
+  inline def tryParse(input: String): CredentialsHeaderValue = ^.asInstanceOf[js.Dynamic].applyDynamic("tryParse")(input.asInstanceOf[js.Any]).asInstanceOf[CredentialsHeaderValue]
 }

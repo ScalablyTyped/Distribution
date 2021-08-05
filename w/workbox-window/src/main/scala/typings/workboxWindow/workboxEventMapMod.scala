@@ -32,8 +32,7 @@ object workboxEventMapMod {
   }
   object WorkboxEventMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       activated: WorkboxUpdatableEvent,
       controlling: WorkboxEvent,
       externalactivated: WorkboxExtendableEvent,
@@ -48,35 +47,25 @@ object workboxEventMapMod {
       __obj.asInstanceOf[WorkboxEventMap]
     }
     
-    @scala.inline
-    implicit class WorkboxEventMapMutableBuilder[Self <: WorkboxEventMap] (val x: Self) extends AnyVal {
+    extension [Self <: WorkboxEventMap](x: Self) {
       
-      @scala.inline
-      def setActivated(value: WorkboxUpdatableEvent): Self = StObject.set(x, "activated", value.asInstanceOf[js.Any])
+      inline def setActivated(value: WorkboxUpdatableEvent): Self = StObject.set(x, "activated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControlling(value: WorkboxEvent): Self = StObject.set(x, "controlling", value.asInstanceOf[js.Any])
+      inline def setControlling(value: WorkboxEvent): Self = StObject.set(x, "controlling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternalactivated(value: WorkboxExtendableEvent): Self = StObject.set(x, "externalactivated", value.asInstanceOf[js.Any])
+      inline def setExternalactivated(value: WorkboxExtendableEvent): Self = StObject.set(x, "externalactivated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternalinstalled(value: WorkboxExtendableEvent): Self = StObject.set(x, "externalinstalled", value.asInstanceOf[js.Any])
+      inline def setExternalinstalled(value: WorkboxExtendableEvent): Self = StObject.set(x, "externalinstalled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternalwaiting(value: WorkboxExtendableEvent): Self = StObject.set(x, "externalwaiting", value.asInstanceOf[js.Any])
+      inline def setExternalwaiting(value: WorkboxExtendableEvent): Self = StObject.set(x, "externalwaiting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstalled(value: WorkboxUpdatableEvent): Self = StObject.set(x, "installed", value.asInstanceOf[js.Any])
+      inline def setInstalled(value: WorkboxUpdatableEvent): Self = StObject.set(x, "installed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: WorkboxMessageEvent): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: WorkboxMessageEvent): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedundant(value: WorkboxEvent): Self = StObject.set(x, "redundant", value.asInstanceOf[js.Any])
+      inline def setRedundant(value: WorkboxEvent): Self = StObject.set(x, "redundant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaiting(value: WorkboxWaitingEvent): Self = StObject.set(x, "waiting", value.asInstanceOf[js.Any])
+      inline def setWaiting(value: WorkboxWaitingEvent): Self = StObject.set(x, "waiting", value.asInstanceOf[js.Any])
     }
   }
   
@@ -88,18 +77,15 @@ object workboxEventMapMod {
   }
   object WorkboxExtendableEvent {
     
-    @scala.inline
-    def apply(originalEvent: Event, sw: ServiceWorker, target: Workbox, `type`: String): WorkboxExtendableEvent = {
+    inline def apply(originalEvent: Event, sw: ServiceWorker, target: Workbox, `type`: String): WorkboxExtendableEvent = {
       val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], sw = sw.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[WorkboxExtendableEvent]
     }
     
-    @scala.inline
-    implicit class WorkboxExtendableEventMutableBuilder[Self <: WorkboxExtendableEvent] (val x: Self) extends AnyVal {
+    extension [Self <: WorkboxExtendableEvent](x: Self) {
       
-      @scala.inline
-      def setSw(value: ServiceWorker): Self = StObject.set(x, "sw", value.asInstanceOf[js.Any])
+      inline def setSw(value: ServiceWorker): Self = StObject.set(x, "sw", value.asInstanceOf[js.Any])
     }
   }
   
@@ -111,18 +97,15 @@ object workboxEventMapMod {
   }
   object WorkboxMessageEvent {
     
-    @scala.inline
-    def apply(data: js.Any, originalEvent: Event, target: Workbox, `type`: String): WorkboxMessageEvent = {
+    inline def apply(data: js.Any, originalEvent: Event, target: Workbox, `type`: String): WorkboxMessageEvent = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], originalEvent = originalEvent.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[WorkboxMessageEvent]
     }
     
-    @scala.inline
-    implicit class WorkboxMessageEventMutableBuilder[Self <: WorkboxMessageEvent] (val x: Self) extends AnyVal {
+    extension [Self <: WorkboxMessageEvent](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
   }
   
@@ -134,21 +117,17 @@ object workboxEventMapMod {
   }
   object WorkboxUpdatableEvent {
     
-    @scala.inline
-    def apply(originalEvent: Event, sw: ServiceWorker, target: Workbox, `type`: String): WorkboxUpdatableEvent = {
+    inline def apply(originalEvent: Event, sw: ServiceWorker, target: Workbox, `type`: String): WorkboxUpdatableEvent = {
       val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], sw = sw.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[WorkboxUpdatableEvent]
     }
     
-    @scala.inline
-    implicit class WorkboxUpdatableEventMutableBuilder[Self <: WorkboxUpdatableEvent] (val x: Self) extends AnyVal {
+    extension [Self <: WorkboxUpdatableEvent](x: Self) {
       
-      @scala.inline
-      def setIsUpdate(value: Boolean): Self = StObject.set(x, "isUpdate", value.asInstanceOf[js.Any])
+      inline def setIsUpdate(value: Boolean): Self = StObject.set(x, "isUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsUpdateUndefined: Self = StObject.set(x, "isUpdate", js.undefined)
+      inline def setIsUpdateUndefined: Self = StObject.set(x, "isUpdate", js.undefined)
     }
   }
   
@@ -160,21 +139,17 @@ object workboxEventMapMod {
   }
   object WorkboxWaitingEvent {
     
-    @scala.inline
-    def apply(originalEvent: Event, sw: ServiceWorker, target: Workbox, `type`: String): WorkboxWaitingEvent = {
+    inline def apply(originalEvent: Event, sw: ServiceWorker, target: Workbox, `type`: String): WorkboxWaitingEvent = {
       val __obj = js.Dynamic.literal(originalEvent = originalEvent.asInstanceOf[js.Any], sw = sw.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[WorkboxWaitingEvent]
     }
     
-    @scala.inline
-    implicit class WorkboxWaitingEventMutableBuilder[Self <: WorkboxWaitingEvent] (val x: Self) extends AnyVal {
+    extension [Self <: WorkboxWaitingEvent](x: Self) {
       
-      @scala.inline
-      def setWasWaitingBeforeRegister(value: Boolean): Self = StObject.set(x, "wasWaitingBeforeRegister", value.asInstanceOf[js.Any])
+      inline def setWasWaitingBeforeRegister(value: Boolean): Self = StObject.set(x, "wasWaitingBeforeRegister", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWasWaitingBeforeRegisterUndefined: Self = StObject.set(x, "wasWaitingBeforeRegister", js.undefined)
+      inline def setWasWaitingBeforeRegisterUndefined: Self = StObject.set(x, "wasWaitingBeforeRegister", js.undefined)
     }
   }
 }

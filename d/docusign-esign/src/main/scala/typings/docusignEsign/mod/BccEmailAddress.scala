@@ -24,25 +24,19 @@ trait BccEmailAddress extends StObject {
 }
 object BccEmailAddress {
   
-  @scala.inline
-  def apply(): BccEmailAddress = {
+  inline def apply(): BccEmailAddress = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BccEmailAddress]
   }
   
-  @scala.inline
-  implicit class BccEmailAddressMutableBuilder[Self <: BccEmailAddress] (val x: Self) extends AnyVal {
+  extension [Self <: BccEmailAddress](x: Self) {
     
-    @scala.inline
-    def setBccEmailAddressId(value: String): Self = StObject.set(x, "bccEmailAddressId", value.asInstanceOf[js.Any])
+    inline def setBccEmailAddressId(value: String): Self = StObject.set(x, "bccEmailAddressId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBccEmailAddressIdUndefined: Self = StObject.set(x, "bccEmailAddressId", js.undefined)
+    inline def setBccEmailAddressIdUndefined: Self = StObject.set(x, "bccEmailAddressId", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
   }
 }

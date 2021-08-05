@@ -12,76 +12,65 @@ object senecaStrings {
   sealed trait all
     extends StObject
        with LogSpec
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
   sealed trait any
     extends StObject
        with LogSpec
-  @scala.inline
-  def any: any = "any".asInstanceOf[any]
+  inline def any: any = "any".asInstanceOf[any]
   
   @js.native
   sealed trait debugPlussign
     extends StObject
        with LogLevel
-  @scala.inline
-  def debugPlussign: debugPlussign = "debug+".asInstanceOf[debugPlussign]
+  inline def debugPlussign: debugPlussign = "debug+".asInstanceOf[debugPlussign]
   
   @js.native
   sealed trait infoPlussign
     extends StObject
        with LogLevel
-  @scala.inline
-  def infoPlussign: infoPlussign = "info+".asInstanceOf[infoPlussign]
+  inline def infoPlussign: infoPlussign = "info+".asInstanceOf[infoPlussign]
   
   @js.native
   sealed trait none
     extends StObject
        with LogLevel
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait print
     extends StObject
        with LogSpec
-  @scala.inline
-  def print: print = "print".asInstanceOf[print]
+  inline def print: print = "print".asInstanceOf[print]
   
   @js.native
   sealed trait quiet
     extends StObject
        with LogSpec
-  @scala.inline
-  def quiet: quiet = "quiet".asInstanceOf[quiet]
+  inline def quiet: quiet = "quiet".asInstanceOf[quiet]
   
   @js.native
   sealed trait silent
     extends StObject
        with LogSpec
-  @scala.inline
-  def silent: silent = "silent".asInstanceOf[silent]
+  inline def silent: silent = "silent".asInstanceOf[silent]
   
   @js.native
   sealed trait standard
     extends StObject
        with LogSpec
-  @scala.inline
-  def standard: standard = "standard".asInstanceOf[standard]
+  inline def standard: standard = "standard".asInstanceOf[standard]
   
   @js.native
   sealed trait test
     extends StObject
        with LogSpec
-  @scala.inline
-  def test: test = "test".asInstanceOf[test]
+  inline def test: test = "test".asInstanceOf[test]
   
   @js.native
   sealed trait warnPlussign
     extends StObject
        with LogLevel
-  @scala.inline
-  def warnPlussign: warnPlussign = "warn+".asInstanceOf[warnPlussign]
+  inline def warnPlussign: warnPlussign = "warn+".asInstanceOf[warnPlussign]
 }

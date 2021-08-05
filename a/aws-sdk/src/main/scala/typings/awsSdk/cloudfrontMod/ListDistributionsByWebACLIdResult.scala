@@ -13,19 +13,15 @@ trait ListDistributionsByWebACLIdResult extends StObject {
 }
 object ListDistributionsByWebACLIdResult {
   
-  @scala.inline
-  def apply(): ListDistributionsByWebACLIdResult = {
+  inline def apply(): ListDistributionsByWebACLIdResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDistributionsByWebACLIdResult]
   }
   
-  @scala.inline
-  implicit class ListDistributionsByWebACLIdResultMutableBuilder[Self <: ListDistributionsByWebACLIdResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListDistributionsByWebACLIdResult](x: Self) {
     
-    @scala.inline
-    def setDistributionList(value: DistributionList): Self = StObject.set(x, "DistributionList", value.asInstanceOf[js.Any])
+    inline def setDistributionList(value: DistributionList): Self = StObject.set(x, "DistributionList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributionListUndefined: Self = StObject.set(x, "DistributionList", js.undefined)
+    inline def setDistributionListUndefined: Self = StObject.set(x, "DistributionList", js.undefined)
   }
 }

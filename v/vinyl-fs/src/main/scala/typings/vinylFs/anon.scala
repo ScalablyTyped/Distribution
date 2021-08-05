@@ -25,32 +25,24 @@ object anon {
   }
   object Cwd {
     
-    @scala.inline
-    def apply(): Cwd = {
+    inline def apply(): Cwd = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Cwd]
     }
     
-    @scala.inline
-    implicit class CwdMutableBuilder[Self <: Cwd] (val x: Self) extends AnyVal {
+    extension [Self <: Cwd](x: Self) {
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setDirMode(value: Double): Self = StObject.set(x, "dirMode", value.asInstanceOf[js.Any])
+      inline def setDirMode(value: Double): Self = StObject.set(x, "dirMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirModeUndefined: Self = StObject.set(x, "dirMode", js.undefined)
+      inline def setDirModeUndefined: Self = StObject.set(x, "dirMode", js.undefined)
       
-      @scala.inline
-      def setMode(value: Double | String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Double | String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     }
   }
   
@@ -70,26 +62,20 @@ object anon {
   }
   object DirMode {
     
-    @scala.inline
-    def apply(): DirMode = {
+    inline def apply(): DirMode = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DirMode]
     }
     
-    @scala.inline
-    implicit class DirModeMutableBuilder[Self <: DirMode] (val x: Self) extends AnyVal {
+    extension [Self <: DirMode](x: Self) {
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setDirMode(value: Double): Self = StObject.set(x, "dirMode", value.asInstanceOf[js.Any])
+      inline def setDirMode(value: Double): Self = StObject.set(x, "dirMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirModeUndefined: Self = StObject.set(x, "dirMode", js.undefined)
+      inline def setDirModeUndefined: Self = StObject.set(x, "dirMode", js.undefined)
     }
   }
 }

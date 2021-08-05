@@ -49,11 +49,9 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def addNotification(options: ReactNotificationOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("addNotification")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def addNotification(options: ReactNotificationOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("addNotification")(options.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def removeNotification(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeNotification")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def removeNotification(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeNotification")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   trait DismissOptions extends StObject {
@@ -74,56 +72,40 @@ object mod {
   }
   object DismissOptions {
     
-    @scala.inline
-    def apply(): DismissOptions = {
+    inline def apply(): DismissOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DismissOptions]
     }
     
-    @scala.inline
-    implicit class DismissOptionsMutableBuilder[Self <: DismissOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DismissOptions](x: Self) {
       
-      @scala.inline
-      def setClick(value: Boolean): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
+      inline def setClick(value: Boolean): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
+      inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setOnScreen(value: Boolean): Self = StObject.set(x, "onScreen", value.asInstanceOf[js.Any])
+      inline def setOnScreen(value: Boolean): Self = StObject.set(x, "onScreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnScreenUndefined: Self = StObject.set(x, "onScreen", js.undefined)
+      inline def setOnScreenUndefined: Self = StObject.set(x, "onScreen", js.undefined)
       
-      @scala.inline
-      def setPauseOnHover(value: Boolean): Self = StObject.set(x, "pauseOnHover", value.asInstanceOf[js.Any])
+      inline def setPauseOnHover(value: Boolean): Self = StObject.set(x, "pauseOnHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPauseOnHoverUndefined: Self = StObject.set(x, "pauseOnHover", js.undefined)
+      inline def setPauseOnHoverUndefined: Self = StObject.set(x, "pauseOnHover", js.undefined)
       
-      @scala.inline
-      def setShowIcon(value: Boolean): Self = StObject.set(x, "showIcon", value.asInstanceOf[js.Any])
+      inline def setShowIcon(value: Boolean): Self = StObject.set(x, "showIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowIconUndefined: Self = StObject.set(x, "showIcon", js.undefined)
+      inline def setShowIconUndefined: Self = StObject.set(x, "showIcon", js.undefined)
       
-      @scala.inline
-      def setTouch(value: Boolean): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
+      inline def setTouch(value: Boolean): Self = StObject.set(x, "touch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchUndefined: Self = StObject.set(x, "touch", js.undefined)
+      inline def setTouchUndefined: Self = StObject.set(x, "touch", js.undefined)
       
-      @scala.inline
-      def setWaitForAnimation(value: Boolean): Self = StObject.set(x, "waitForAnimation", value.asInstanceOf[js.Any])
+      inline def setWaitForAnimation(value: Boolean): Self = StObject.set(x, "waitForAnimation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWaitForAnimationUndefined: Self = StObject.set(x, "waitForAnimation", js.undefined)
+      inline def setWaitForAnimationUndefined: Self = StObject.set(x, "waitForAnimation", js.undefined)
     }
   }
   
@@ -167,119 +149,84 @@ object mod {
   }
   object ReactNotificationOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       container: `top-left` | `top-right` | `top-center` | center | `bottom-left` | `bottom-right` | `bottom-center`
     ): ReactNotificationOptions = {
       val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactNotificationOptions]
     }
     
-    @scala.inline
-    implicit class ReactNotificationOptionsMutableBuilder[Self <: ReactNotificationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReactNotificationOptions](x: Self) {
       
-      @scala.inline
-      def setAnimationIn(value: js.Array[String]): Self = StObject.set(x, "animationIn", value.asInstanceOf[js.Any])
+      inline def setAnimationIn(value: js.Array[String]): Self = StObject.set(x, "animationIn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationInUndefined: Self = StObject.set(x, "animationIn", js.undefined)
+      inline def setAnimationInUndefined: Self = StObject.set(x, "animationIn", js.undefined)
       
-      @scala.inline
-      def setAnimationInVarargs(value: String*): Self = StObject.set(x, "animationIn", js.Array(value :_*))
+      inline def setAnimationInVarargs(value: String*): Self = StObject.set(x, "animationIn", js.Array(value :_*))
       
-      @scala.inline
-      def setAnimationOut(value: js.Array[String]): Self = StObject.set(x, "animationOut", value.asInstanceOf[js.Any])
+      inline def setAnimationOut(value: js.Array[String]): Self = StObject.set(x, "animationOut", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationOutUndefined: Self = StObject.set(x, "animationOut", js.undefined)
+      inline def setAnimationOutUndefined: Self = StObject.set(x, "animationOut", js.undefined)
       
-      @scala.inline
-      def setAnimationOutVarargs(value: String*): Self = StObject.set(x, "animationOut", js.Array(value :_*))
+      inline def setAnimationOutVarargs(value: String*): Self = StObject.set(x, "animationOut", js.Array(value :_*))
       
-      @scala.inline
-      def setContainer(
+      inline def setContainer(
         value: `top-left` | `top-right` | `top-center` | center | `bottom-left` | `bottom-right` | `bottom-center`
       ): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent(value: (ComponentClass[js.Object, ComponentState]) | FunctionComponent[js.Object] | ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: (ComponentClass[js.Object, ComponentState]) | FunctionComponent[js.Object] | ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setDismiss(value: DismissOptions): Self = StObject.set(x, "dismiss", value.asInstanceOf[js.Any])
+      inline def setDismiss(value: DismissOptions): Self = StObject.set(x, "dismiss", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDismissUndefined: Self = StObject.set(x, "dismiss", js.undefined)
+      inline def setDismissUndefined: Self = StObject.set(x, "dismiss", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setInsert(value: top | bottom): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
+      inline def setInsert(value: top | bottom): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
+      inline def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String | ReactNode | FunctionComponent[js.Object]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String | ReactNode | FunctionComponent[js.Object]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setOnRemoval(value: (/* id */ String, /* removedBy */ js.Any) => Unit): Self = StObject.set(x, "onRemoval", js.Any.fromFunction2(value))
+      inline def setOnRemoval(value: (/* id */ String, /* removedBy */ js.Any) => Unit): Self = StObject.set(x, "onRemoval", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRemovalUndefined: Self = StObject.set(x, "onRemoval", js.undefined)
+      inline def setOnRemovalUndefined: Self = StObject.set(x, "onRemoval", js.undefined)
       
-      @scala.inline
-      def setSlidingEnter(value: TransitionOptions): Self = StObject.set(x, "slidingEnter", value.asInstanceOf[js.Any])
+      inline def setSlidingEnter(value: TransitionOptions): Self = StObject.set(x, "slidingEnter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlidingEnterUndefined: Self = StObject.set(x, "slidingEnter", js.undefined)
+      inline def setSlidingEnterUndefined: Self = StObject.set(x, "slidingEnter", js.undefined)
       
-      @scala.inline
-      def setSlidingExit(value: TransitionOptions): Self = StObject.set(x, "slidingExit", value.asInstanceOf[js.Any])
+      inline def setSlidingExit(value: TransitionOptions): Self = StObject.set(x, "slidingExit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlidingExitUndefined: Self = StObject.set(x, "slidingExit", js.undefined)
+      inline def setSlidingExitUndefined: Self = StObject.set(x, "slidingExit", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String | ReactNode | FunctionComponent[js.Object]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String | ReactNode | FunctionComponent[js.Object]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setTouchRevert(value: TransitionOptions): Self = StObject.set(x, "touchRevert", value.asInstanceOf[js.Any])
+      inline def setTouchRevert(value: TransitionOptions): Self = StObject.set(x, "touchRevert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchRevertUndefined: Self = StObject.set(x, "touchRevert", js.undefined)
+      inline def setTouchRevertUndefined: Self = StObject.set(x, "touchRevert", js.undefined)
       
-      @scala.inline
-      def setTouchSlidingExit(value: TransitionOptions): Self = StObject.set(x, "touchSlidingExit", value.asInstanceOf[js.Any])
+      inline def setTouchSlidingExit(value: TransitionOptions): Self = StObject.set(x, "touchSlidingExit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchSlidingExitUndefined: Self = StObject.set(x, "touchSlidingExit", js.undefined)
+      inline def setTouchSlidingExitUndefined: Self = StObject.set(x, "touchSlidingExit", js.undefined)
       
-      @scala.inline
-      def setType(
+      inline def setType(
         value: success | danger | info | typings.reactNotificationsComponent.reactNotificationsComponentStrings.default | warning
       ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -297,47 +244,34 @@ object mod {
   }
   object ReactNotificationProps {
     
-    @scala.inline
-    def apply(): ReactNotificationProps = {
+    inline def apply(): ReactNotificationProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReactNotificationProps]
     }
     
-    @scala.inline
-    implicit class ReactNotificationPropsMutableBuilder[Self <: ReactNotificationProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReactNotificationProps](x: Self) {
       
-      @scala.inline
-      def setBreakpoint(value: Double): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
+      inline def setBreakpoint(value: Double): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBreakpointUndefined: Self = StObject.set(x, "breakpoint", js.undefined)
+      inline def setBreakpointUndefined: Self = StObject.set(x, "breakpoint", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
+      inline def setIsMobile(value: Boolean): Self = StObject.set(x, "isMobile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMobileUndefined: Self = StObject.set(x, "isMobile", js.undefined)
+      inline def setIsMobileUndefined: Self = StObject.set(x, "isMobile", js.undefined)
       
-      @scala.inline
-      def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+      inline def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+      inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
       
-      @scala.inline
-      def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+      inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
     }
   }
   
@@ -353,32 +287,24 @@ object mod {
   }
   object TransitionOptions {
     
-    @scala.inline
-    def apply(): TransitionOptions = {
+    inline def apply(): TransitionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransitionOptions]
     }
     
-    @scala.inline
-    implicit class TransitionOptionsMutableBuilder[Self <: TransitionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TransitionOptions](x: Self) {
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setTimingFunction(value: ease | linear | `ease-in` | `ease-out` | `ease-in-out` | `step-start` | `step-end`): Self = StObject.set(x, "timingFunction", value.asInstanceOf[js.Any])
+      inline def setTimingFunction(value: ease | linear | `ease-in` | `ease-out` | `ease-in-out` | `step-start` | `step-end`): Self = StObject.set(x, "timingFunction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimingFunctionUndefined: Self = StObject.set(x, "timingFunction", js.undefined)
+      inline def setTimingFunctionUndefined: Self = StObject.set(x, "timingFunction", js.undefined)
     }
   }
 }

@@ -22,19 +22,15 @@ trait RowChangeEvent
 }
 object RowChangeEvent {
   
-  @scala.inline
-  def apply(Action: Double, Rows: Double, Source: XInterface): RowChangeEvent = {
+  inline def apply(Action: Double, Rows: Double, Source: XInterface): RowChangeEvent = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], Rows = Rows.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowChangeEvent]
   }
   
-  @scala.inline
-  implicit class RowChangeEventMutableBuilder[Self <: RowChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: RowChangeEvent](x: Self) {
     
-    @scala.inline
-    def setAction(value: Double): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: Double): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRows(value: Double): Self = StObject.set(x, "Rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: Double): Self = StObject.set(x, "Rows", value.asInstanceOf[js.Any])
   }
 }

@@ -12,25 +12,19 @@ trait SelectionOptions extends StObject {
 }
 object SelectionOptions {
   
-  @scala.inline
-  def apply(): SelectionOptions = {
+  inline def apply(): SelectionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SelectionOptions]
   }
   
-  @scala.inline
-  implicit class SelectionOptionsMutableBuilder[Self <: SelectionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SelectionOptions](x: Self) {
     
-    @scala.inline
-    def setHighlightEdges(value: Boolean): Self = StObject.set(x, "highlightEdges", value.asInstanceOf[js.Any])
+    inline def setHighlightEdges(value: Boolean): Self = StObject.set(x, "highlightEdges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightEdgesUndefined: Self = StObject.set(x, "highlightEdges", js.undefined)
+    inline def setHighlightEdgesUndefined: Self = StObject.set(x, "highlightEdges", js.undefined)
     
-    @scala.inline
-    def setUnselectAll(value: Boolean): Self = StObject.set(x, "unselectAll", value.asInstanceOf[js.Any])
+    inline def setUnselectAll(value: Boolean): Self = StObject.set(x, "unselectAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnselectAllUndefined: Self = StObject.set(x, "unselectAll", js.undefined)
+    inline def setUnselectAllUndefined: Self = StObject.set(x, "unselectAll", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait DescribeRuntimeVersionsRequest extends StObject {
 }
 object DescribeRuntimeVersionsRequest {
   
-  @scala.inline
-  def apply(): DescribeRuntimeVersionsRequest = {
+  inline def apply(): DescribeRuntimeVersionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeRuntimeVersionsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeRuntimeVersionsRequestMutableBuilder[Self <: DescribeRuntimeVersionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRuntimeVersionsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxSize100): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxSize100): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

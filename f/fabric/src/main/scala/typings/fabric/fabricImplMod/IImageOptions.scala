@@ -57,58 +57,41 @@ trait IImageOptions
 }
 object IImageOptions {
   
-  @scala.inline
-  def apply(): IImageOptions = {
+  inline def apply(): IImageOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IImageOptions]
   }
   
-  @scala.inline
-  implicit class IImageOptionsMutableBuilder[Self <: IImageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IImageOptions](x: Self) {
     
-    @scala.inline
-    def setCacheKey(value: String): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
+    inline def setCacheKey(value: String): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheKeyUndefined: Self = StObject.set(x, "cacheKey", js.undefined)
+    inline def setCacheKeyUndefined: Self = StObject.set(x, "cacheKey", js.undefined)
     
-    @scala.inline
-    def setCropX(value: Double): Self = StObject.set(x, "cropX", value.asInstanceOf[js.Any])
+    inline def setCropX(value: Double): Self = StObject.set(x, "cropX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCropXUndefined: Self = StObject.set(x, "cropX", js.undefined)
+    inline def setCropXUndefined: Self = StObject.set(x, "cropX", js.undefined)
     
-    @scala.inline
-    def setCropY(value: Double): Self = StObject.set(x, "cropY", value.asInstanceOf[js.Any])
+    inline def setCropY(value: Double): Self = StObject.set(x, "cropY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCropYUndefined: Self = StObject.set(x, "cropY", js.undefined)
+    inline def setCropYUndefined: Self = StObject.set(x, "cropY", js.undefined)
     
-    @scala.inline
-    def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+    inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
+    inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
-    @scala.inline
-    def setFilters(value: js.Array[IBaseFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: js.Array[IBaseFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: IBaseFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: IBaseFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
-    @scala.inline
-    def setMinimumScaleTrigger(value: Double): Self = StObject.set(x, "minimumScaleTrigger", value.asInstanceOf[js.Any])
+    inline def setMinimumScaleTrigger(value: Double): Self = StObject.set(x, "minimumScaleTrigger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumScaleTriggerUndefined: Self = StObject.set(x, "minimumScaleTrigger", js.undefined)
+    inline def setMinimumScaleTriggerUndefined: Self = StObject.set(x, "minimumScaleTrigger", js.undefined)
     
-    @scala.inline
-    def setSrcFromAttribute(value: Boolean): Self = StObject.set(x, "srcFromAttribute", value.asInstanceOf[js.Any])
+    inline def setSrcFromAttribute(value: Boolean): Self = StObject.set(x, "srcFromAttribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcFromAttributeUndefined: Self = StObject.set(x, "srcFromAttribute", js.undefined)
+    inline def setSrcFromAttributeUndefined: Self = StObject.set(x, "srcFromAttribute", js.undefined)
   }
 }

@@ -102,99 +102,83 @@ object scaleMod {
     @JSImport("vega-lite/build/src/scale", "SCALE_CATEGORY_INDEX.band")
     @js.native
     def band: ScaleType | numeric | `ordinal-position` | discretizing = js.native
-    @scala.inline
-    def band_=(x: ScaleType | numeric | `ordinal-position` | discretizing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("band")(x.asInstanceOf[js.Any])
+    inline def band_=(x: ScaleType | numeric | `ordinal-position` | discretizing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("band")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/scale", "SCALE_CATEGORY_INDEX.bin-ordinal")
     @js.native
     def binOrdinal: ScaleType | numeric | `ordinal-position` | discretizing = js.native
     
-    @scala.inline
-    def binOrdinal_=(x: ScaleType | numeric | `ordinal-position` | discretizing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bin-ordinal")(x.asInstanceOf[js.Any])
+    inline def binOrdinal_=(x: ScaleType | numeric | `ordinal-position` | discretizing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bin-ordinal")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/scale", "SCALE_CATEGORY_INDEX.identity")
     @js.native
     def identity: ScaleType | numeric | `ordinal-position` | discretizing = js.native
-    @scala.inline
-    def identity_=(x: ScaleType | numeric | `ordinal-position` | discretizing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("identity")(x.asInstanceOf[js.Any])
+    inline def identity_=(x: ScaleType | numeric | `ordinal-position` | discretizing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("identity")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/scale", "SCALE_CATEGORY_INDEX.linear")
     @js.native
     def linear: ScaleType | numeric | `ordinal-position` | discretizing = js.native
-    @scala.inline
-    def linear_=(x: ScaleType | numeric | `ordinal-position` | discretizing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("linear")(x.asInstanceOf[js.Any])
+    inline def linear_=(x: ScaleType | numeric | `ordinal-position` | discretizing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("linear")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/scale", "SCALE_CATEGORY_INDEX.log")
     @js.native
     def log: ScaleType | numeric | `ordinal-position` | discretizing = js.native
-    @scala.inline
-    def log_=(x: ScaleType | numeric | `ordinal-position` | discretizing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("log")(x.asInstanceOf[js.Any])
+    inline def log_=(x: ScaleType | numeric | `ordinal-position` | discretizing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("log")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/scale", "SCALE_CATEGORY_INDEX.ordinal")
     @js.native
     def ordinal: ScaleType | numeric | `ordinal-position` | discretizing = js.native
-    @scala.inline
-    def ordinal_=(x: ScaleType | numeric | `ordinal-position` | discretizing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ordinal")(x.asInstanceOf[js.Any])
+    inline def ordinal_=(x: ScaleType | numeric | `ordinal-position` | discretizing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ordinal")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/scale", "SCALE_CATEGORY_INDEX.point")
     @js.native
     def point: ScaleType | numeric | `ordinal-position` | discretizing = js.native
-    @scala.inline
-    def point_=(x: ScaleType | numeric | `ordinal-position` | discretizing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("point")(x.asInstanceOf[js.Any])
+    inline def point_=(x: ScaleType | numeric | `ordinal-position` | discretizing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("point")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/scale", "SCALE_CATEGORY_INDEX.pow")
     @js.native
     def pow: ScaleType | numeric | `ordinal-position` | discretizing = js.native
-    @scala.inline
-    def pow_=(x: ScaleType | numeric | `ordinal-position` | discretizing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pow")(x.asInstanceOf[js.Any])
+    inline def pow_=(x: ScaleType | numeric | `ordinal-position` | discretizing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pow")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/scale", "SCALE_CATEGORY_INDEX.quantile")
     @js.native
     def quantile: ScaleType | numeric | `ordinal-position` | discretizing = js.native
-    @scala.inline
-    def quantile_=(x: ScaleType | numeric | `ordinal-position` | discretizing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("quantile")(x.asInstanceOf[js.Any])
+    inline def quantile_=(x: ScaleType | numeric | `ordinal-position` | discretizing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("quantile")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/scale", "SCALE_CATEGORY_INDEX.quantize")
     @js.native
     def quantize: ScaleType | numeric | `ordinal-position` | discretizing = js.native
-    @scala.inline
-    def quantize_=(x: ScaleType | numeric | `ordinal-position` | discretizing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("quantize")(x.asInstanceOf[js.Any])
+    inline def quantize_=(x: ScaleType | numeric | `ordinal-position` | discretizing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("quantize")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/scale", "SCALE_CATEGORY_INDEX.sequential")
     @js.native
     def sequential: ScaleType | numeric | `ordinal-position` | discretizing = js.native
-    @scala.inline
-    def sequential_=(x: ScaleType | numeric | `ordinal-position` | discretizing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sequential")(x.asInstanceOf[js.Any])
+    inline def sequential_=(x: ScaleType | numeric | `ordinal-position` | discretizing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sequential")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/scale", "SCALE_CATEGORY_INDEX.sqrt")
     @js.native
     def sqrt: ScaleType | numeric | `ordinal-position` | discretizing = js.native
-    @scala.inline
-    def sqrt_=(x: ScaleType | numeric | `ordinal-position` | discretizing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sqrt")(x.asInstanceOf[js.Any])
+    inline def sqrt_=(x: ScaleType | numeric | `ordinal-position` | discretizing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sqrt")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/scale", "SCALE_CATEGORY_INDEX.symlog")
     @js.native
     def symlog: ScaleType | numeric | `ordinal-position` | discretizing = js.native
-    @scala.inline
-    def symlog_=(x: ScaleType | numeric | `ordinal-position` | discretizing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("symlog")(x.asInstanceOf[js.Any])
+    inline def symlog_=(x: ScaleType | numeric | `ordinal-position` | discretizing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("symlog")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/scale", "SCALE_CATEGORY_INDEX.threshold")
     @js.native
     def threshold: ScaleType | numeric | `ordinal-position` | discretizing = js.native
-    @scala.inline
-    def threshold_=(x: ScaleType | numeric | `ordinal-position` | discretizing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("threshold")(x.asInstanceOf[js.Any])
+    inline def threshold_=(x: ScaleType | numeric | `ordinal-position` | discretizing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("threshold")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/scale", "SCALE_CATEGORY_INDEX.time")
     @js.native
     def time: ScaleType | numeric | `ordinal-position` | discretizing = js.native
-    @scala.inline
-    def time_=(x: ScaleType | numeric | `ordinal-position` | discretizing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("time")(x.asInstanceOf[js.Any])
+    inline def time_=(x: ScaleType | numeric | `ordinal-position` | discretizing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("time")(x.asInstanceOf[js.Any])
     
     @JSImport("vega-lite/build/src/scale", "SCALE_CATEGORY_INDEX.utc")
     @js.native
     def utc: ScaleType | numeric | `ordinal-position` | discretizing = js.native
-    @scala.inline
-    def utc_=(x: ScaleType | numeric | `ordinal-position` | discretizing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("utc")(x.asInstanceOf[js.Any])
+    inline def utc_=(x: ScaleType | numeric | `ordinal-position` | discretizing): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("utc")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("vega-lite/build/src/scale", "SCALE_PROPERTIES")
@@ -298,56 +282,41 @@ object scaleMod {
   @js.native
   val TIME_SCALE_TYPES: js.Array[ScaleType] = js.native
   
-  @scala.inline
-  def channelScalePropertyIncompatability(
+  inline def channelScalePropertyIncompatability(
     channel: Channel,
     propName: /* keyof vega-lite.vega-lite/build/src/scale.Scale<vega-lite.vega-lite/build/src/expr.ExprRef | vega-typings.vega-typings/types/spec/signal.SignalRef> */ `type` | domain | domainMid | domainMax | domainMin | reverse | range | rangeMax | rangeMin | scheme | align | bins | round | padding | paddingInner | paddingOuter | clamp | nice | base | exponent | constant | zero | interpolate
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("channelScalePropertyIncompatability")(channel.asInstanceOf[js.Any], propName.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def channelSupportScaleType(channel: Channel, scaleType: ScaleType): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("channelSupportScaleType")(channel.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def channelSupportScaleType(channel: Channel, scaleType: ScaleType): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("channelSupportScaleType")(channel.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("vega-lite/build/src/scale", "defaultScaleConfig")
   @js.native
   val defaultScaleConfig: ScaleConfig[SignalRef] = js.native
   
-  @scala.inline
-  def hasContinuousDomain(`type`: ScaleType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasContinuousDomain")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def hasContinuousDomain(`type`: ScaleType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasContinuousDomain")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def hasDiscreteDomain(`type`: ScaleType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasDiscreteDomain")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def hasDiscreteDomain(`type`: ScaleType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasDiscreteDomain")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isContinuousToContinuous(`type`: ScaleType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isContinuousToContinuous")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isContinuousToContinuous(`type`: ScaleType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isContinuousToContinuous")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isContinuousToDiscrete(`type`: ScaleType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isContinuousToDiscrete")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isContinuousToDiscrete(`type`: ScaleType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isContinuousToDiscrete")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isDomainUnionWith(domain: Domain): /* is vega-lite.vega-lite/build/src/scale.DomainUnionWith */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDomainUnionWith")(domain.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/scale.DomainUnionWith */ Boolean]
+  inline def isDomainUnionWith(domain: Domain): /* is vega-lite.vega-lite/build/src/scale.DomainUnionWith */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDomainUnionWith")(domain.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/scale.DomainUnionWith */ Boolean]
   
-  @scala.inline
-  def isExtendedScheme(scheme: Scheme): /* is vega-lite.vega-lite/build/src/scale.SchemeParams */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExtendedScheme")(scheme.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/scale.SchemeParams */ Boolean]
-  @scala.inline
-  def isExtendedScheme(scheme: SignalRef): /* is vega-lite.vega-lite/build/src/scale.SchemeParams */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExtendedScheme")(scheme.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/scale.SchemeParams */ Boolean]
+  inline def isExtendedScheme(scheme: Scheme): /* is vega-lite.vega-lite/build/src/scale.SchemeParams */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExtendedScheme")(scheme.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/scale.SchemeParams */ Boolean]
+  inline def isExtendedScheme(scheme: SignalRef): /* is vega-lite.vega-lite/build/src/scale.SchemeParams */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExtendedScheme")(scheme.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/scale.SchemeParams */ Boolean]
   
-  @scala.inline
-  def isQuantitative(`type`: ScaleType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isQuantitative")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isQuantitative(`type`: ScaleType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isQuantitative")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isSelectionDomain(domain: Domain): /* is vega-lite.vega-lite/build/src/selection.SelectionExtent */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSelectionDomain")(domain.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/selection.SelectionExtent */ Boolean]
+  inline def isSelectionDomain(domain: Domain): /* is vega-lite.vega-lite/build/src/selection.SelectionExtent */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSelectionDomain")(domain.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/selection.SelectionExtent */ Boolean]
   
-  @scala.inline
-  def scaleCompatible(scaleType1: ScaleType, scaleType2: ScaleType): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleCompatible")(scaleType1.asInstanceOf[js.Any], scaleType2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def scaleCompatible(scaleType1: ScaleType, scaleType2: ScaleType): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleCompatible")(scaleType1.asInstanceOf[js.Any], scaleType2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def scaleTypePrecedence(scaleType: ScaleType): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleTypePrecedence")(scaleType.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def scaleTypePrecedence(scaleType: ScaleType): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("scaleTypePrecedence")(scaleType.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def scaleTypeSupportDataType(specifiedType: ScaleType, fieldDefType: Type): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleTypeSupportDataType")(specifiedType.asInstanceOf[js.Any], fieldDefType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def scaleTypeSupportDataType(specifiedType: ScaleType, fieldDefType: Type): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleTypeSupportDataType")(specifiedType.asInstanceOf[js.Any], fieldDefType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def scaleTypeSupportProperty(
+  inline def scaleTypeSupportProperty(
     scaleType: ScaleType,
     propName: /* keyof vega-lite.vega-lite/build/src/scale.Scale<vega-lite.vega-lite/build/src/expr.ExprRef | vega-typings.vega-typings/types/spec/signal.SignalRef> */ `type` | domain | domainMid | domainMax | domainMin | reverse | range | rangeMax | rangeMin | scheme | align | bins | round | padding | paddingInner | paddingOuter | clamp | nice | base | exponent | constant | zero | interpolate
   ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleTypeSupportProperty")(scaleType.asInstanceOf[js.Any], propName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -383,20 +352,16 @@ object scaleMod {
   }
   object DomainUnionWith {
     
-    @scala.inline
-    def apply(unionWith: js.Array[Boolean | DateTime | Double | String]): DomainUnionWith = {
+    inline def apply(unionWith: js.Array[Boolean | DateTime | Double | String]): DomainUnionWith = {
       val __obj = js.Dynamic.literal(unionWith = unionWith.asInstanceOf[js.Any])
       __obj.asInstanceOf[DomainUnionWith]
     }
     
-    @scala.inline
-    implicit class DomainUnionWithMutableBuilder[Self <: DomainUnionWith] (val x: Self) extends AnyVal {
+    extension [Self <: DomainUnionWith](x: Self) {
       
-      @scala.inline
-      def setUnionWith(value: js.Array[Boolean | DateTime | Double | String]): Self = StObject.set(x, "unionWith", value.asInstanceOf[js.Any])
+      inline def setUnionWith(value: js.Array[Boolean | DateTime | Double | String]): Self = StObject.set(x, "unionWith", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnionWithVarargs(value: (Boolean | DateTime | Double | String)*): Self = StObject.set(x, "unionWith", js.Array(value :_*))
+      inline def setUnionWithVarargs(value: (Boolean | DateTime | Double | String)*): Self = StObject.set(x, "unionWith", js.Array(value :_*))
     }
   }
   
@@ -609,163 +574,112 @@ object scaleMod {
   }
   object Scale {
     
-    @scala.inline
-    def apply[ES /* <: ExprRef | SignalRef */](): Scale[ES] = {
+    inline def apply[ES /* <: ExprRef | SignalRef */](): Scale[ES] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Scale[ES]]
     }
     
-    @scala.inline
-    implicit class ScaleMutableBuilder[Self <: Scale[?], ES /* <: ExprRef | SignalRef */] (val x: Self & Scale[ES]) extends AnyVal {
+    extension [Self <: Scale[?], ES /* <: ExprRef | SignalRef */](x: Self & Scale[ES]) {
       
-      @scala.inline
-      def setAlign(value: Double | ES): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: Double | ES): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setBase(value: Double | ES): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: Double | ES): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+      inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      @scala.inline
-      def setBins(value: ScaleBins): Self = StObject.set(x, "bins", value.asInstanceOf[js.Any])
+      inline def setBins(value: ScaleBins): Self = StObject.set(x, "bins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinsUndefined: Self = StObject.set(x, "bins", js.undefined)
+      inline def setBinsUndefined: Self = StObject.set(x, "bins", js.undefined)
       
-      @scala.inline
-      def setBinsVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "bins", js.Array(value :_*))
+      inline def setBinsVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "bins", js.Array(value :_*))
       
-      @scala.inline
-      def setClamp(value: Boolean | ES): Self = StObject.set(x, "clamp", value.asInstanceOf[js.Any])
+      inline def setClamp(value: Boolean | ES): Self = StObject.set(x, "clamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClampUndefined: Self = StObject.set(x, "clamp", js.undefined)
+      inline def setClampUndefined: Self = StObject.set(x, "clamp", js.undefined)
       
-      @scala.inline
-      def setConstant(value: Double | ES): Self = StObject.set(x, "constant", value.asInstanceOf[js.Any])
+      inline def setConstant(value: Double | ES): Self = StObject.set(x, "constant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstantUndefined: Self = StObject.set(x, "constant", js.undefined)
+      inline def setConstantUndefined: Self = StObject.set(x, "constant", js.undefined)
       
-      @scala.inline
-      def setDomain(
+      inline def setDomain(
         value: (js.Array[Null | String | Double | Boolean | DateTime | ES]) | unaggregated | SelectionExtent | DomainUnionWith | ES
       ): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainMax(value: Double | DateTime | ES): Self = StObject.set(x, "domainMax", value.asInstanceOf[js.Any])
+      inline def setDomainMax(value: Double | DateTime | ES): Self = StObject.set(x, "domainMax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainMaxUndefined: Self = StObject.set(x, "domainMax", js.undefined)
+      inline def setDomainMaxUndefined: Self = StObject.set(x, "domainMax", js.undefined)
       
-      @scala.inline
-      def setDomainMid(value: Double | ES): Self = StObject.set(x, "domainMid", value.asInstanceOf[js.Any])
+      inline def setDomainMid(value: Double | ES): Self = StObject.set(x, "domainMid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainMidUndefined: Self = StObject.set(x, "domainMid", js.undefined)
+      inline def setDomainMidUndefined: Self = StObject.set(x, "domainMid", js.undefined)
       
-      @scala.inline
-      def setDomainMin(value: Double | DateTime | ES): Self = StObject.set(x, "domainMin", value.asInstanceOf[js.Any])
+      inline def setDomainMin(value: Double | DateTime | ES): Self = StObject.set(x, "domainMin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainMinUndefined: Self = StObject.set(x, "domainMin", js.undefined)
+      inline def setDomainMinUndefined: Self = StObject.set(x, "domainMin", js.undefined)
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      @scala.inline
-      def setDomainVarargs(value: (Null | String | Double | Boolean | DateTime | ES)*): Self = StObject.set(x, "domain", js.Array(value :_*))
+      inline def setDomainVarargs(value: (Null | String | Double | Boolean | DateTime | ES)*): Self = StObject.set(x, "domain", js.Array(value :_*))
       
-      @scala.inline
-      def setExponent(value: Double | ES): Self = StObject.set(x, "exponent", value.asInstanceOf[js.Any])
+      inline def setExponent(value: Double | ES): Self = StObject.set(x, "exponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExponentUndefined: Self = StObject.set(x, "exponent", js.undefined)
+      inline def setExponentUndefined: Self = StObject.set(x, "exponent", js.undefined)
       
-      @scala.inline
-      def setInterpolate(value: ScaleInterpolateEnum | ES | ScaleInterpolateParams): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
+      inline def setInterpolate(value: ScaleInterpolateEnum | ES | ScaleInterpolateParams): Self = StObject.set(x, "interpolate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterpolateUndefined: Self = StObject.set(x, "interpolate", js.undefined)
+      inline def setInterpolateUndefined: Self = StObject.set(x, "interpolate", js.undefined)
       
-      @scala.inline
-      def setNice(value: Boolean | Double | TimeInterval | TimeIntervalStep | ES): Self = StObject.set(x, "nice", value.asInstanceOf[js.Any])
+      inline def setNice(value: Boolean | Double | TimeInterval | TimeIntervalStep | ES): Self = StObject.set(x, "nice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNiceUndefined: Self = StObject.set(x, "nice", js.undefined)
+      inline def setNiceUndefined: Self = StObject.set(x, "nice", js.undefined)
       
-      @scala.inline
-      def setPadding(value: Double | ES): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: Double | ES): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingInner(value: Double | ES): Self = StObject.set(x, "paddingInner", value.asInstanceOf[js.Any])
+      inline def setPaddingInner(value: Double | ES): Self = StObject.set(x, "paddingInner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingInnerUndefined: Self = StObject.set(x, "paddingInner", js.undefined)
+      inline def setPaddingInnerUndefined: Self = StObject.set(x, "paddingInner", js.undefined)
       
-      @scala.inline
-      def setPaddingOuter(value: Double | ES): Self = StObject.set(x, "paddingOuter", value.asInstanceOf[js.Any])
+      inline def setPaddingOuter(value: Double | ES): Self = StObject.set(x, "paddingOuter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingOuterUndefined: Self = StObject.set(x, "paddingOuter", js.undefined)
+      inline def setPaddingOuterUndefined: Self = StObject.set(x, "paddingOuter", js.undefined)
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      @scala.inline
-      def setRange(value: RangeEnum | (js.Array[Double | String | js.Array[Double] | ES]) | FieldString): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: RangeEnum | (js.Array[Double | String | js.Array[Double] | ES]) | FieldString): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeMax(value: Double | String | ES): Self = StObject.set(x, "rangeMax", value.asInstanceOf[js.Any])
+      inline def setRangeMax(value: Double | String | ES): Self = StObject.set(x, "rangeMax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeMaxUndefined: Self = StObject.set(x, "rangeMax", js.undefined)
+      inline def setRangeMaxUndefined: Self = StObject.set(x, "rangeMax", js.undefined)
       
-      @scala.inline
-      def setRangeMin(value: Double | String | ES): Self = StObject.set(x, "rangeMin", value.asInstanceOf[js.Any])
+      inline def setRangeMin(value: Double | String | ES): Self = StObject.set(x, "rangeMin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeMinUndefined: Self = StObject.set(x, "rangeMin", js.undefined)
+      inline def setRangeMinUndefined: Self = StObject.set(x, "rangeMin", js.undefined)
       
-      @scala.inline
-      def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+      inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
       
-      @scala.inline
-      def setRangeVarargs(value: (Double | String | js.Array[Double] | ES)*): Self = StObject.set(x, "range", js.Array(value :_*))
+      inline def setRangeVarargs(value: (Double | String | js.Array[Double] | ES)*): Self = StObject.set(x, "range", js.Array(value :_*))
       
-      @scala.inline
-      def setReverse(value: Boolean | ES): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+      inline def setReverse(value: Boolean | ES): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
+      inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
       
-      @scala.inline
-      def setRound(value: Boolean | ES): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
+      inline def setRound(value: Boolean | ES): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
+      inline def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
       
-      @scala.inline
-      def setScheme(value: String | SchemeParams | ES): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+      inline def setScheme(value: String | SchemeParams | ES): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
+      inline def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
       
-      @scala.inline
-      def setType(value: ScaleType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ScaleType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setZero(value: Boolean | ES): Self = StObject.set(x, "zero", value.asInstanceOf[js.Any])
+      inline def setZero(value: Boolean | ES): Self = StObject.set(x, "zero", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZeroUndefined: Self = StObject.set(x, "zero", js.undefined)
+      inline def setZeroUndefined: Self = StObject.set(x, "zero", js.undefined)
     }
   }
   
@@ -968,146 +882,100 @@ object scaleMod {
   }
   object ScaleConfig {
     
-    @scala.inline
-    def apply[ES /* <: ExprRef | SignalRef */](): ScaleConfig[ES] = {
+    inline def apply[ES /* <: ExprRef | SignalRef */](): ScaleConfig[ES] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ScaleConfig[ES]]
     }
     
-    @scala.inline
-    implicit class ScaleConfigMutableBuilder[Self <: ScaleConfig[?], ES /* <: ExprRef | SignalRef */] (val x: Self & ScaleConfig[ES]) extends AnyVal {
+    extension [Self <: ScaleConfig[?], ES /* <: ExprRef | SignalRef */](x: Self & ScaleConfig[ES]) {
       
-      @scala.inline
-      def setBandPaddingInner(value: Double | ES): Self = StObject.set(x, "bandPaddingInner", value.asInstanceOf[js.Any])
+      inline def setBandPaddingInner(value: Double | ES): Self = StObject.set(x, "bandPaddingInner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBandPaddingInnerUndefined: Self = StObject.set(x, "bandPaddingInner", js.undefined)
+      inline def setBandPaddingInnerUndefined: Self = StObject.set(x, "bandPaddingInner", js.undefined)
       
-      @scala.inline
-      def setBandPaddingOuter(value: Double | ES): Self = StObject.set(x, "bandPaddingOuter", value.asInstanceOf[js.Any])
+      inline def setBandPaddingOuter(value: Double | ES): Self = StObject.set(x, "bandPaddingOuter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBandPaddingOuterUndefined: Self = StObject.set(x, "bandPaddingOuter", js.undefined)
+      inline def setBandPaddingOuterUndefined: Self = StObject.set(x, "bandPaddingOuter", js.undefined)
       
-      @scala.inline
-      def setBarBandPaddingInner(value: Double | ES): Self = StObject.set(x, "barBandPaddingInner", value.asInstanceOf[js.Any])
+      inline def setBarBandPaddingInner(value: Double | ES): Self = StObject.set(x, "barBandPaddingInner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarBandPaddingInnerUndefined: Self = StObject.set(x, "barBandPaddingInner", js.undefined)
+      inline def setBarBandPaddingInnerUndefined: Self = StObject.set(x, "barBandPaddingInner", js.undefined)
       
-      @scala.inline
-      def setClamp(value: Boolean | ES): Self = StObject.set(x, "clamp", value.asInstanceOf[js.Any])
+      inline def setClamp(value: Boolean | ES): Self = StObject.set(x, "clamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClampUndefined: Self = StObject.set(x, "clamp", js.undefined)
+      inline def setClampUndefined: Self = StObject.set(x, "clamp", js.undefined)
       
-      @scala.inline
-      def setContinuousPadding(value: Double | ES): Self = StObject.set(x, "continuousPadding", value.asInstanceOf[js.Any])
+      inline def setContinuousPadding(value: Double | ES): Self = StObject.set(x, "continuousPadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContinuousPaddingUndefined: Self = StObject.set(x, "continuousPadding", js.undefined)
+      inline def setContinuousPaddingUndefined: Self = StObject.set(x, "continuousPadding", js.undefined)
       
-      @scala.inline
-      def setMaxBandSize(value: Double): Self = StObject.set(x, "maxBandSize", value.asInstanceOf[js.Any])
+      inline def setMaxBandSize(value: Double): Self = StObject.set(x, "maxBandSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxBandSizeUndefined: Self = StObject.set(x, "maxBandSize", js.undefined)
+      inline def setMaxBandSizeUndefined: Self = StObject.set(x, "maxBandSize", js.undefined)
       
-      @scala.inline
-      def setMaxFontSize(value: Double): Self = StObject.set(x, "maxFontSize", value.asInstanceOf[js.Any])
+      inline def setMaxFontSize(value: Double): Self = StObject.set(x, "maxFontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxFontSizeUndefined: Self = StObject.set(x, "maxFontSize", js.undefined)
+      inline def setMaxFontSizeUndefined: Self = StObject.set(x, "maxFontSize", js.undefined)
       
-      @scala.inline
-      def setMaxOpacity(value: Double): Self = StObject.set(x, "maxOpacity", value.asInstanceOf[js.Any])
+      inline def setMaxOpacity(value: Double): Self = StObject.set(x, "maxOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxOpacityUndefined: Self = StObject.set(x, "maxOpacity", js.undefined)
+      inline def setMaxOpacityUndefined: Self = StObject.set(x, "maxOpacity", js.undefined)
       
-      @scala.inline
-      def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+      inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
+      inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
       
-      @scala.inline
-      def setMaxStrokeWidth(value: Double): Self = StObject.set(x, "maxStrokeWidth", value.asInstanceOf[js.Any])
+      inline def setMaxStrokeWidth(value: Double): Self = StObject.set(x, "maxStrokeWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxStrokeWidthUndefined: Self = StObject.set(x, "maxStrokeWidth", js.undefined)
+      inline def setMaxStrokeWidthUndefined: Self = StObject.set(x, "maxStrokeWidth", js.undefined)
       
-      @scala.inline
-      def setMinBandSize(value: Double): Self = StObject.set(x, "minBandSize", value.asInstanceOf[js.Any])
+      inline def setMinBandSize(value: Double): Self = StObject.set(x, "minBandSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinBandSizeUndefined: Self = StObject.set(x, "minBandSize", js.undefined)
+      inline def setMinBandSizeUndefined: Self = StObject.set(x, "minBandSize", js.undefined)
       
-      @scala.inline
-      def setMinFontSize(value: Double): Self = StObject.set(x, "minFontSize", value.asInstanceOf[js.Any])
+      inline def setMinFontSize(value: Double): Self = StObject.set(x, "minFontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinFontSizeUndefined: Self = StObject.set(x, "minFontSize", js.undefined)
+      inline def setMinFontSizeUndefined: Self = StObject.set(x, "minFontSize", js.undefined)
       
-      @scala.inline
-      def setMinOpacity(value: Double): Self = StObject.set(x, "minOpacity", value.asInstanceOf[js.Any])
+      inline def setMinOpacity(value: Double): Self = StObject.set(x, "minOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinOpacityUndefined: Self = StObject.set(x, "minOpacity", js.undefined)
+      inline def setMinOpacityUndefined: Self = StObject.set(x, "minOpacity", js.undefined)
       
-      @scala.inline
-      def setMinSize(value: Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
+      inline def setMinSize(value: Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
+      inline def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
       
-      @scala.inline
-      def setMinStrokeWidth(value: Double): Self = StObject.set(x, "minStrokeWidth", value.asInstanceOf[js.Any])
+      inline def setMinStrokeWidth(value: Double): Self = StObject.set(x, "minStrokeWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinStrokeWidthUndefined: Self = StObject.set(x, "minStrokeWidth", js.undefined)
+      inline def setMinStrokeWidthUndefined: Self = StObject.set(x, "minStrokeWidth", js.undefined)
       
-      @scala.inline
-      def setPointPadding(value: Double | ES): Self = StObject.set(x, "pointPadding", value.asInstanceOf[js.Any])
+      inline def setPointPadding(value: Double | ES): Self = StObject.set(x, "pointPadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointPaddingUndefined: Self = StObject.set(x, "pointPadding", js.undefined)
+      inline def setPointPaddingUndefined: Self = StObject.set(x, "pointPadding", js.undefined)
       
-      @scala.inline
-      def setQuantileCount(value: Double): Self = StObject.set(x, "quantileCount", value.asInstanceOf[js.Any])
+      inline def setQuantileCount(value: Double): Self = StObject.set(x, "quantileCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuantileCountUndefined: Self = StObject.set(x, "quantileCount", js.undefined)
+      inline def setQuantileCountUndefined: Self = StObject.set(x, "quantileCount", js.undefined)
       
-      @scala.inline
-      def setQuantizeCount(value: Double): Self = StObject.set(x, "quantizeCount", value.asInstanceOf[js.Any])
+      inline def setQuantizeCount(value: Double): Self = StObject.set(x, "quantizeCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuantizeCountUndefined: Self = StObject.set(x, "quantizeCount", js.undefined)
+      inline def setQuantizeCountUndefined: Self = StObject.set(x, "quantizeCount", js.undefined)
       
-      @scala.inline
-      def setRectBandPaddingInner(value: Double | ES): Self = StObject.set(x, "rectBandPaddingInner", value.asInstanceOf[js.Any])
+      inline def setRectBandPaddingInner(value: Double | ES): Self = StObject.set(x, "rectBandPaddingInner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRectBandPaddingInnerUndefined: Self = StObject.set(x, "rectBandPaddingInner", js.undefined)
+      inline def setRectBandPaddingInnerUndefined: Self = StObject.set(x, "rectBandPaddingInner", js.undefined)
       
-      @scala.inline
-      def setRound(value: Boolean | ES): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
+      inline def setRound(value: Boolean | ES): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
+      inline def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
       
-      @scala.inline
-      def setUseUnaggregatedDomain(value: Boolean): Self = StObject.set(x, "useUnaggregatedDomain", value.asInstanceOf[js.Any])
+      inline def setUseUnaggregatedDomain(value: Boolean): Self = StObject.set(x, "useUnaggregatedDomain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseUnaggregatedDomainUndefined: Self = StObject.set(x, "useUnaggregatedDomain", js.undefined)
+      inline def setUseUnaggregatedDomainUndefined: Self = StObject.set(x, "useUnaggregatedDomain", js.undefined)
       
-      @scala.inline
-      def setXReverse(value: Boolean | ES): Self = StObject.set(x, "xReverse", value.asInstanceOf[js.Any])
+      inline def setXReverse(value: Boolean | ES): Self = StObject.set(x, "xReverse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXReverseUndefined: Self = StObject.set(x, "xReverse", js.undefined)
+      inline def setXReverseUndefined: Self = StObject.set(x, "xReverse", js.undefined)
     }
   }
   
@@ -1134,32 +1002,24 @@ object scaleMod {
   }
   object SchemeParams {
     
-    @scala.inline
-    def apply(name: String | SignalRef): SchemeParams = {
+    inline def apply(name: String | SignalRef): SchemeParams = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[SchemeParams]
     }
     
-    @scala.inline
-    implicit class SchemeParamsMutableBuilder[Self <: SchemeParams] (val x: Self) extends AnyVal {
+    extension [Self <: SchemeParams](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double | SignalRef): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double | SignalRef): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      @scala.inline
-      def setExtent(value: (js.Array[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+      inline def setExtent(value: (js.Array[Double | SignalRef]) | SignalRef): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
+      inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
       
-      @scala.inline
-      def setExtentVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "extent", js.Array(value :_*))
+      inline def setExtentVarargs(value: (Double | SignalRef)*): Self = StObject.set(x, "extent", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String | SignalRef): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String | SignalRef): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

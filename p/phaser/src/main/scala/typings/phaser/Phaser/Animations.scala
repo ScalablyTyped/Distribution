@@ -322,8 +322,7 @@ object Animations {
   }
   object AnimationFrame {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destroy: () => Unit,
       duration: Double,
       frame: Frame,
@@ -341,44 +340,31 @@ object Animations {
       __obj.asInstanceOf[AnimationFrame]
     }
     
-    @scala.inline
-    implicit class AnimationFrameMutableBuilder[Self <: AnimationFrame] (val x: Self) extends AnyVal {
+    extension [Self <: AnimationFrame](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrame(value: Frame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+      inline def setFrame(value: Frame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: integer): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: integer): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFirst(value: Boolean): Self = StObject.set(x, "isFirst", value.asInstanceOf[js.Any])
+      inline def setIsFirst(value: Boolean): Self = StObject.set(x, "isFirst", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLast(value: Boolean): Self = StObject.set(x, "isLast", value.asInstanceOf[js.Any])
+      inline def setIsLast(value: Boolean): Self = StObject.set(x, "isLast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextFrame(value: AnimationFrame): Self = StObject.set(x, "nextFrame", value.asInstanceOf[js.Any])
+      inline def setNextFrame(value: AnimationFrame): Self = StObject.set(x, "nextFrame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevFrame(value: AnimationFrame): Self = StObject.set(x, "prevFrame", value.asInstanceOf[js.Any])
+      inline def setPrevFrame(value: AnimationFrame): Self = StObject.set(x, "prevFrame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+      inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextureFrame(value: String | integer): Self = StObject.set(x, "textureFrame", value.asInstanceOf[js.Any])
+      inline def setTextureFrame(value: String | integer): Self = StObject.set(x, "textureFrame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextureKey(value: String): Self = StObject.set(x, "textureKey", value.asInstanceOf[js.Any])
+      inline def setTextureKey(value: String): Self = StObject.set(x, "textureKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToJSON(value: () => JSONAnimationFrame): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => JSONAnimationFrame): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     }
   }
   
@@ -408,7 +394,7 @@ object Animations {
       * 
       * This map should be modified with the {@link #add} and {@link #create} methods of the Animation Manager.
       */
-    var anims: Map[String, Animation] = js.native
+    /* protected */ var anims: Map[String, Animation] = js.native
     
     /**
       * Registers event listeners after the Game boots.
@@ -454,7 +440,7 @@ object Animations {
     /**
       * A reference to the Phaser.Game instance.
       */
-    var game: Game = js.native
+    /* protected */ var game: Game = js.native
     
     /**
       * Generate an array of {@link Phaser.Types.Animations.AnimationFrame} objects from a texture key and configuration object.
@@ -578,7 +564,7 @@ object Animations {
     /**
       * A reference to the Texture Manager.
       */
-    var textureManager: TextureManager = js.native
+    /* protected */ var textureManager: TextureManager = js.native
     
     /**
       * Returns the Animation data as JavaScript object based on the given key.

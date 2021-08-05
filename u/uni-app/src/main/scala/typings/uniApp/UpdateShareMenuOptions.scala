@@ -28,37 +28,27 @@ trait UpdateShareMenuOptions extends StObject {
 }
 object UpdateShareMenuOptions {
   
-  @scala.inline
-  def apply(): UpdateShareMenuOptions = {
+  inline def apply(): UpdateShareMenuOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateShareMenuOptions]
   }
   
-  @scala.inline
-  implicit class UpdateShareMenuOptionsMutableBuilder[Self <: UpdateShareMenuOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateShareMenuOptions](x: Self) {
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    @scala.inline
-    def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
+    inline def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
+    inline def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    @scala.inline
-    def setWithShareTicket(value: Boolean): Self = StObject.set(x, "withShareTicket", value.asInstanceOf[js.Any])
+    inline def setWithShareTicket(value: Boolean): Self = StObject.set(x, "withShareTicket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithShareTicketUndefined: Self = StObject.set(x, "withShareTicket", js.undefined)
+    inline def setWithShareTicketUndefined: Self = StObject.set(x, "withShareTicket", js.undefined)
   }
 }

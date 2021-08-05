@@ -25,25 +25,18 @@ object KeyUsage {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def CRL_SIGN: `2` = 2.asInstanceOf[`2`]
+    inline def CRL_SIGN: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def DATA_ENCIPHERMENT: `16` = 16.asInstanceOf[`16`]
+    inline def DATA_ENCIPHERMENT: `16` = 16.asInstanceOf[`16`]
     
-    @scala.inline
-    def DIGITAL_SIGNATURE: `128` = 128.asInstanceOf[`128`]
+    inline def DIGITAL_SIGNATURE: `128` = 128.asInstanceOf[`128`]
     
-    @scala.inline
-    def KEY_AGREEMENT: `8` = 8.asInstanceOf[`8`]
+    inline def KEY_AGREEMENT: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def KEY_CERT_SIGN: `4` = 4.asInstanceOf[`4`]
+    inline def KEY_CERT_SIGN: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def KEY_ENCIPHERMENT: `32` = 32.asInstanceOf[`32`]
+    inline def KEY_ENCIPHERMENT: `32` = 32.asInstanceOf[`32`]
     
-    @scala.inline
-    def NON_REPUDIATION: `64` = 64.asInstanceOf[`64`]
+    inline def NON_REPUDIATION: `64` = 64.asInstanceOf[`64`]
   }
 }

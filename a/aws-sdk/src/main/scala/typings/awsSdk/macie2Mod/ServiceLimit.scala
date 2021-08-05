@@ -23,31 +23,23 @@ trait ServiceLimit extends StObject {
 }
 object ServiceLimit {
   
-  @scala.inline
-  def apply(): ServiceLimit = {
+  inline def apply(): ServiceLimit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServiceLimit]
   }
   
-  @scala.inline
-  implicit class ServiceLimitMutableBuilder[Self <: ServiceLimit] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceLimit](x: Self) {
     
-    @scala.inline
-    def setIsServiceLimited(value: boolean): Self = StObject.set(x, "isServiceLimited", value.asInstanceOf[js.Any])
+    inline def setIsServiceLimited(value: boolean): Self = StObject.set(x, "isServiceLimited", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsServiceLimitedUndefined: Self = StObject.set(x, "isServiceLimited", js.undefined)
+    inline def setIsServiceLimitedUndefined: Self = StObject.set(x, "isServiceLimited", js.undefined)
     
-    @scala.inline
-    def setUnit(value: Unit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: Unit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
-    @scala.inline
-    def setValue(value: long): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: long): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

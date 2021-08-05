@@ -13,398 +13,341 @@ object detectBrowserStrings {
   sealed trait `Amazon OS`
     extends StObject
        with OperatingSystem
-  @scala.inline
-  def `Amazon OS`: `Amazon OS` = ("Amazon OS").asInstanceOf[`Amazon OS`]
+  inline def `Amazon OS`: `Amazon OS` = ("Amazon OS").asInstanceOf[`Amazon OS`]
   
   @js.native
   sealed trait `Android OS`
     extends StObject
        with OperatingSystem
-  @scala.inline
-  def `Android OS`: `Android OS` = ("Android OS").asInstanceOf[`Android OS`]
+  inline def `Android OS`: `Android OS` = ("Android OS").asInstanceOf[`Android OS`]
   
   @js.native
   sealed trait BeOS
     extends StObject
        with OperatingSystem
-  @scala.inline
-  def BeOS: BeOS = "BeOS".asInstanceOf[BeOS]
+  inline def BeOS: BeOS = "BeOS".asInstanceOf[BeOS]
   
   @js.native
   sealed trait `BlackBerry OS`
     extends StObject
        with OperatingSystem
-  @scala.inline
-  def `BlackBerry OS`: `BlackBerry OS` = ("BlackBerry OS").asInstanceOf[`BlackBerry OS`]
+  inline def `BlackBerry OS`: `BlackBerry OS` = ("BlackBerry OS").asInstanceOf[`BlackBerry OS`]
   
   @js.native
   sealed trait `Chrome OS`
     extends StObject
        with OperatingSystem
-  @scala.inline
-  def `Chrome OS`: `Chrome OS` = ("Chrome OS").asInstanceOf[`Chrome OS`]
+  inline def `Chrome OS`: `Chrome OS` = ("Chrome OS").asInstanceOf[`Chrome OS`]
   
   @js.native
   sealed trait Linux
     extends StObject
        with OperatingSystem
-  @scala.inline
-  def Linux: Linux = "Linux".asInstanceOf[Linux]
+  inline def Linux: Linux = "Linux".asInstanceOf[Linux]
   
   @js.native
   sealed trait `Mac OS`
     extends StObject
        with OperatingSystem
-  @scala.inline
-  def `Mac OS`: `Mac OS` = ("Mac OS").asInstanceOf[`Mac OS`]
+  inline def `Mac OS`: `Mac OS` = ("Mac OS").asInstanceOf[`Mac OS`]
   
   @js.native
   sealed trait OSSlash2
     extends StObject
        with OperatingSystem
-  @scala.inline
-  def OSSlash2: OSSlash2 = "OS/2".asInstanceOf[OSSlash2]
+  inline def OSSlash2: OSSlash2 = "OS/2".asInstanceOf[OSSlash2]
   
   @js.native
   sealed trait `Open BSD`
     extends StObject
        with OperatingSystem
-  @scala.inline
-  def `Open BSD`: `Open BSD` = ("Open BSD").asInstanceOf[`Open BSD`]
+  inline def `Open BSD`: `Open BSD` = ("Open BSD").asInstanceOf[`Open BSD`]
   
   @js.native
   sealed trait QNX
     extends StObject
        with OperatingSystem
-  @scala.inline
-  def QNX: QNX = "QNX".asInstanceOf[QNX]
+  inline def QNX: QNX = "QNX".asInstanceOf[QNX]
   
   @js.native
   sealed trait `Sun OS`
     extends StObject
        with OperatingSystem
-  @scala.inline
-  def `Sun OS`: `Sun OS` = ("Sun OS").asInstanceOf[`Sun OS`]
+  inline def `Sun OS`: `Sun OS` = ("Sun OS").asInstanceOf[`Sun OS`]
   
   @js.native
   sealed trait `Windows 10`
     extends StObject
        with OperatingSystem
-  @scala.inline
-  def `Windows 10`: `Windows 10` = ("Windows 10").asInstanceOf[`Windows 10`]
+  inline def `Windows 10`: `Windows 10` = ("Windows 10").asInstanceOf[`Windows 10`]
   
   @js.native
   sealed trait `Windows 2000`
     extends StObject
        with OperatingSystem
-  @scala.inline
-  def `Windows 2000`: `Windows 2000` = ("Windows 2000").asInstanceOf[`Windows 2000`]
+  inline def `Windows 2000`: `Windows 2000` = ("Windows 2000").asInstanceOf[`Windows 2000`]
   
   @js.native
   sealed trait `Windows 3Dot11`
     extends StObject
        with OperatingSystem
-  @scala.inline
-  def `Windows 3Dot11`: `Windows 3Dot11` = ("Windows 3.11").asInstanceOf[`Windows 3Dot11`]
+  inline def `Windows 3Dot11`: `Windows 3Dot11` = ("Windows 3.11").asInstanceOf[`Windows 3Dot11`]
   
   @js.native
   sealed trait `Windows 7`
     extends StObject
        with OperatingSystem
-  @scala.inline
-  def `Windows 7`: `Windows 7` = ("Windows 7").asInstanceOf[`Windows 7`]
+  inline def `Windows 7`: `Windows 7` = ("Windows 7").asInstanceOf[`Windows 7`]
   
   @js.native
   sealed trait `Windows 8`
     extends StObject
        with OperatingSystem
-  @scala.inline
-  def `Windows 8`: `Windows 8` = ("Windows 8").asInstanceOf[`Windows 8`]
+  inline def `Windows 8`: `Windows 8` = ("Windows 8").asInstanceOf[`Windows 8`]
   
   @js.native
   sealed trait `Windows 8Dot1`
     extends StObject
        with OperatingSystem
-  @scala.inline
-  def `Windows 8Dot1`: `Windows 8Dot1` = ("Windows 8.1").asInstanceOf[`Windows 8Dot1`]
+  inline def `Windows 8Dot1`: `Windows 8Dot1` = ("Windows 8.1").asInstanceOf[`Windows 8Dot1`]
   
   @js.native
   sealed trait `Windows 95`
     extends StObject
        with OperatingSystem
-  @scala.inline
-  def `Windows 95`: `Windows 95` = ("Windows 95").asInstanceOf[`Windows 95`]
+  inline def `Windows 95`: `Windows 95` = ("Windows 95").asInstanceOf[`Windows 95`]
   
   @js.native
   sealed trait `Windows 98`
     extends StObject
        with OperatingSystem
-  @scala.inline
-  def `Windows 98`: `Windows 98` = ("Windows 98").asInstanceOf[`Windows 98`]
+  inline def `Windows 98`: `Windows 98` = ("Windows 98").asInstanceOf[`Windows 98`]
   
   @js.native
   sealed trait `Windows ME`
     extends StObject
        with OperatingSystem
-  @scala.inline
-  def `Windows ME`: `Windows ME` = ("Windows ME").asInstanceOf[`Windows ME`]
+  inline def `Windows ME`: `Windows ME` = ("Windows ME").asInstanceOf[`Windows ME`]
   
   @js.native
   sealed trait `Windows Mobile`
     extends StObject
        with OperatingSystem
-  @scala.inline
-  def `Windows Mobile`: `Windows Mobile` = ("Windows Mobile").asInstanceOf[`Windows Mobile`]
+  inline def `Windows Mobile`: `Windows Mobile` = ("Windows Mobile").asInstanceOf[`Windows Mobile`]
   
   @js.native
   sealed trait `Windows Server 2003`
     extends StObject
        with OperatingSystem
-  @scala.inline
-  def `Windows Server 2003`: `Windows Server 2003` = ("Windows Server 2003").asInstanceOf[`Windows Server 2003`]
+  inline def `Windows Server 2003`: `Windows Server 2003` = ("Windows Server 2003").asInstanceOf[`Windows Server 2003`]
   
   @js.native
   sealed trait `Windows Vista`
     extends StObject
        with OperatingSystem
-  @scala.inline
-  def `Windows Vista`: `Windows Vista` = ("Windows Vista").asInstanceOf[`Windows Vista`]
+  inline def `Windows Vista`: `Windows Vista` = ("Windows Vista").asInstanceOf[`Windows Vista`]
   
   @js.native
   sealed trait `Windows XP`
     extends StObject
        with OperatingSystem
-  @scala.inline
-  def `Windows XP`: `Windows XP` = ("Windows XP").asInstanceOf[`Windows XP`]
+  inline def `Windows XP`: `Windows XP` = ("Windows XP").asInstanceOf[`Windows XP`]
   
   @js.native
   sealed trait android
     extends StObject
        with Browser
-  @scala.inline
-  def android: android = "android".asInstanceOf[android]
+  inline def android: android = "android".asInstanceOf[android]
   
   @js.native
   sealed trait aol
     extends StObject
        with Browser
-  @scala.inline
-  def aol: aol = "aol".asInstanceOf[aol]
+  inline def aol: aol = "aol".asInstanceOf[aol]
   
   @js.native
   sealed trait bb10
     extends StObject
        with Browser
-  @scala.inline
-  def bb10: bb10 = "bb10".asInstanceOf[bb10]
+  inline def bb10: bb10 = "bb10".asInstanceOf[bb10]
   
   @js.native
   sealed trait beaker
     extends StObject
        with Browser
-  @scala.inline
-  def beaker: beaker = "beaker".asInstanceOf[beaker]
+  inline def beaker: beaker = "beaker".asInstanceOf[beaker]
   
   @js.native
   sealed trait bot
     extends StObject
        with DetectedInfoType
-  @scala.inline
-  def bot: bot = "bot".asInstanceOf[bot]
+  inline def bot: bot = "bot".asInstanceOf[bot]
   
   @js.native
   sealed trait `bot-device`
     extends StObject
        with DetectedInfoType
-  @scala.inline
-  def `bot-device`: `bot-device` = "bot-device".asInstanceOf[`bot-device`]
+  inline def `bot-device`: `bot-device` = "bot-device".asInstanceOf[`bot-device`]
   
   @js.native
   sealed trait browser
     extends StObject
        with DetectedInfoType
-  @scala.inline
-  def browser: browser = "browser".asInstanceOf[browser]
+  inline def browser: browser = "browser".asInstanceOf[browser]
   
   @js.native
   sealed trait chrome
     extends StObject
        with Browser
-  @scala.inline
-  def chrome: chrome = "chrome".asInstanceOf[chrome]
+  inline def chrome: chrome = "chrome".asInstanceOf[chrome]
   
   @js.native
   sealed trait `chromium-webview`
     extends StObject
        with Browser
-  @scala.inline
-  def `chromium-webview`: `chromium-webview` = "chromium-webview".asInstanceOf[`chromium-webview`]
+  inline def `chromium-webview`: `chromium-webview` = "chromium-webview".asInstanceOf[`chromium-webview`]
   
   @js.native
   sealed trait crios
     extends StObject
        with Browser
-  @scala.inline
-  def crios: crios = "crios".asInstanceOf[crios]
+  inline def crios: crios = "crios".asInstanceOf[crios]
   
   @js.native
   sealed trait edge
     extends StObject
        with Browser
-  @scala.inline
-  def edge: edge = "edge".asInstanceOf[edge]
+  inline def edge: edge = "edge".asInstanceOf[edge]
   
   @js.native
   sealed trait `edge-chromium`
     extends StObject
        with Browser
-  @scala.inline
-  def `edge-chromium`: `edge-chromium` = "edge-chromium".asInstanceOf[`edge-chromium`]
+  inline def `edge-chromium`: `edge-chromium` = "edge-chromium".asInstanceOf[`edge-chromium`]
   
   @js.native
   sealed trait `edge-ios`
     extends StObject
        with Browser
-  @scala.inline
-  def `edge-ios`: `edge-ios` = "edge-ios".asInstanceOf[`edge-ios`]
+  inline def `edge-ios`: `edge-ios` = "edge-ios".asInstanceOf[`edge-ios`]
   
   @js.native
   sealed trait facebook
     extends StObject
        with Browser
-  @scala.inline
-  def facebook: facebook = "facebook".asInstanceOf[facebook]
+  inline def facebook: facebook = "facebook".asInstanceOf[facebook]
   
   @js.native
   sealed trait firefox
     extends StObject
        with Browser
-  @scala.inline
-  def firefox: firefox = "firefox".asInstanceOf[firefox]
+  inline def firefox: firefox = "firefox".asInstanceOf[firefox]
   
   @js.native
   sealed trait fxios
     extends StObject
        with Browser
-  @scala.inline
-  def fxios: fxios = "fxios".asInstanceOf[fxios]
+  inline def fxios: fxios = "fxios".asInstanceOf[fxios]
   
   @js.native
   sealed trait iOS
     extends StObject
        with OperatingSystem
-  @scala.inline
-  def iOS: iOS = "iOS".asInstanceOf[iOS]
+  inline def iOS: iOS = "iOS".asInstanceOf[iOS]
   
   @js.native
   sealed trait ie
     extends StObject
        with Browser
-  @scala.inline
-  def ie: ie = "ie".asInstanceOf[ie]
+  inline def ie: ie = "ie".asInstanceOf[ie]
   
   @js.native
   sealed trait instagram
     extends StObject
        with Browser
-  @scala.inline
-  def instagram: instagram = "instagram".asInstanceOf[instagram]
+  inline def instagram: instagram = "instagram".asInstanceOf[instagram]
   
   @js.native
   sealed trait `ios-webview`
     extends StObject
        with Browser
-  @scala.inline
-  def `ios-webview`: `ios-webview` = "ios-webview".asInstanceOf[`ios-webview`]
+  inline def `ios-webview`: `ios-webview` = "ios-webview".asInstanceOf[`ios-webview`]
   
   @js.native
   sealed trait ios_
     extends StObject
        with Browser
-  @scala.inline
-  def ios_ : ios_ = "ios".asInstanceOf[ios_]
+  inline def ios_ : ios_ = "ios".asInstanceOf[ios_]
   
   @js.native
   sealed trait kakaotalk
     extends StObject
        with Browser
-  @scala.inline
-  def kakaotalk: kakaotalk = "kakaotalk".asInstanceOf[kakaotalk]
+  inline def kakaotalk: kakaotalk = "kakaotalk".asInstanceOf[kakaotalk]
   
   @js.native
   sealed trait miui
     extends StObject
        with Browser
-  @scala.inline
-  def miui: miui = "miui".asInstanceOf[miui]
+  inline def miui: miui = "miui".asInstanceOf[miui]
   
   @js.native
   sealed trait node
     extends StObject
        with DetectedInfoType
-  @scala.inline
-  def node: node = "node".asInstanceOf[node]
+  inline def node: node = "node".asInstanceOf[node]
   
   @js.native
   sealed trait opera
     extends StObject
        with Browser
-  @scala.inline
-  def opera: opera = "opera".asInstanceOf[opera]
+  inline def opera: opera = "opera".asInstanceOf[opera]
   
   @js.native
   sealed trait `opera-mini`
     extends StObject
        with Browser
-  @scala.inline
-  def `opera-mini`: `opera-mini` = "opera-mini".asInstanceOf[`opera-mini`]
+  inline def `opera-mini`: `opera-mini` = "opera-mini".asInstanceOf[`opera-mini`]
   
   @js.native
   sealed trait phantomjs
     extends StObject
        with Browser
-  @scala.inline
-  def phantomjs: phantomjs = "phantomjs".asInstanceOf[phantomjs]
+  inline def phantomjs: phantomjs = "phantomjs".asInstanceOf[phantomjs]
   
   @js.native
   sealed trait `react-native`
     extends StObject
        with DetectedInfoType
-  @scala.inline
-  def `react-native`: `react-native` = "react-native".asInstanceOf[`react-native`]
+  inline def `react-native`: `react-native` = "react-native".asInstanceOf[`react-native`]
   
   @js.native
   sealed trait safari
     extends StObject
        with Browser
-  @scala.inline
-  def safari: safari = "safari".asInstanceOf[safari]
+  inline def safari: safari = "safari".asInstanceOf[safari]
   
   @js.native
   sealed trait samsung
     extends StObject
        with Browser
-  @scala.inline
-  def samsung: samsung = "samsung".asInstanceOf[samsung]
+  inline def samsung: samsung = "samsung".asInstanceOf[samsung]
   
   @js.native
   sealed trait searchbot
     extends StObject
        with Browser
-  @scala.inline
-  def searchbot: searchbot = "searchbot".asInstanceOf[searchbot]
+  inline def searchbot: searchbot = "searchbot".asInstanceOf[searchbot]
   
   @js.native
   sealed trait silk
     extends StObject
        with Browser
-  @scala.inline
-  def silk: silk = "silk".asInstanceOf[silk]
+  inline def silk: silk = "silk".asInstanceOf[silk]
   
   @js.native
   sealed trait yandexbrowser
     extends StObject
        with Browser
-  @scala.inline
-  def yandexbrowser: yandexbrowser = "yandexbrowser".asInstanceOf[yandexbrowser]
+  inline def yandexbrowser: yandexbrowser = "yandexbrowser".asInstanceOf[yandexbrowser]
 }

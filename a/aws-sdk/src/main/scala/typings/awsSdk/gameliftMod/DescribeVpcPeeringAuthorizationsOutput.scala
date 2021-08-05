@@ -13,22 +13,17 @@ trait DescribeVpcPeeringAuthorizationsOutput extends StObject {
 }
 object DescribeVpcPeeringAuthorizationsOutput {
   
-  @scala.inline
-  def apply(): DescribeVpcPeeringAuthorizationsOutput = {
+  inline def apply(): DescribeVpcPeeringAuthorizationsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeVpcPeeringAuthorizationsOutput]
   }
   
-  @scala.inline
-  implicit class DescribeVpcPeeringAuthorizationsOutputMutableBuilder[Self <: DescribeVpcPeeringAuthorizationsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeVpcPeeringAuthorizationsOutput](x: Self) {
     
-    @scala.inline
-    def setVpcPeeringAuthorizations(value: VpcPeeringAuthorizationList): Self = StObject.set(x, "VpcPeeringAuthorizations", value.asInstanceOf[js.Any])
+    inline def setVpcPeeringAuthorizations(value: VpcPeeringAuthorizationList): Self = StObject.set(x, "VpcPeeringAuthorizations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcPeeringAuthorizationsUndefined: Self = StObject.set(x, "VpcPeeringAuthorizations", js.undefined)
+    inline def setVpcPeeringAuthorizationsUndefined: Self = StObject.set(x, "VpcPeeringAuthorizations", js.undefined)
     
-    @scala.inline
-    def setVpcPeeringAuthorizationsVarargs(value: VpcPeeringAuthorization*): Self = StObject.set(x, "VpcPeeringAuthorizations", js.Array(value :_*))
+    inline def setVpcPeeringAuthorizationsVarargs(value: VpcPeeringAuthorization*): Self = StObject.set(x, "VpcPeeringAuthorizations", js.Array(value :_*))
   }
 }

@@ -18,19 +18,15 @@ trait MemoryBuffer extends StObject {
 }
 object MemoryBuffer {
   
-  @scala.inline
-  def apply(close: () => Unit, createReference: () => IMemoryBufferReference): MemoryBuffer = {
+  inline def apply(close: () => Unit, createReference: () => IMemoryBufferReference): MemoryBuffer = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), createReference = js.Any.fromFunction0(createReference))
     __obj.asInstanceOf[MemoryBuffer]
   }
   
-  @scala.inline
-  implicit class MemoryBufferMutableBuilder[Self <: MemoryBuffer] (val x: Self) extends AnyVal {
+  extension [Self <: MemoryBuffer](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateReference(value: () => IMemoryBufferReference): Self = StObject.set(x, "createReference", js.Any.fromFunction0(value))
+    inline def setCreateReference(value: () => IMemoryBufferReference): Self = StObject.set(x, "createReference", js.Any.fromFunction0(value))
   }
 }

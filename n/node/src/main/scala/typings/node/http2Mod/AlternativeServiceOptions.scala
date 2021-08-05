@@ -11,16 +11,13 @@ trait AlternativeServiceOptions extends StObject {
 }
 object AlternativeServiceOptions {
   
-  @scala.inline
-  def apply(origin: Double | String | URL_): AlternativeServiceOptions = {
+  inline def apply(origin: Double | String | URL_): AlternativeServiceOptions = {
     val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlternativeServiceOptions]
   }
   
-  @scala.inline
-  implicit class AlternativeServiceOptionsMutableBuilder[Self <: AlternativeServiceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AlternativeServiceOptions](x: Self) {
     
-    @scala.inline
-    def setOrigin(value: Double | String | URL_): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: Double | String | URL_): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
   }
 }

@@ -75,8 +75,7 @@ object PageRequest {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def doGet(
+  inline def doGet(
     url: String,
     expectedContentType: String,
     succeededHandler: js.Function2[
@@ -92,8 +91,7 @@ object PageRequest {
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("doGet")(url.asInstanceOf[js.Any], expectedContentType.asInstanceOf[js.Any], succeededHandler.asInstanceOf[js.Any], failedHandler.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @scala.inline
-  def doPost(
+  inline def doPost(
     url: String,
     body: String,
     expectedContentType: String,

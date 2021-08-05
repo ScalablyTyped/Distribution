@@ -81,109 +81,74 @@ object AccessibleStateType {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ACTIVE: `1` = 1.asInstanceOf[`1`]
+    inline def ACTIVE: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def ARMED: `2` = 2.asInstanceOf[`2`]
+    inline def ARMED: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def BUSY: `3` = 3.asInstanceOf[`3`]
+    inline def BUSY: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def CHECKED: `4` = 4.asInstanceOf[`4`]
+    inline def CHECKED: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def COLLAPSE: `34` = 34.asInstanceOf[`34`]
+    inline def COLLAPSE: `34` = 34.asInstanceOf[`34`]
     
-    @scala.inline
-    def DEFAULT: `32` = 32.asInstanceOf[`32`]
+    inline def DEFAULT: `32` = 32.asInstanceOf[`32`]
     
-    @scala.inline
-    def DEFUNC: `5` = 5.asInstanceOf[`5`]
+    inline def DEFUNC: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def EDITABLE: `6` = 6.asInstanceOf[`6`]
+    inline def EDITABLE: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def ENABLED: `7` = 7.asInstanceOf[`7`]
+    inline def ENABLED: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def EXPANDABLE: `8` = 8.asInstanceOf[`8`]
+    inline def EXPANDABLE: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def EXPANDED: `9` = 9.asInstanceOf[`9`]
+    inline def EXPANDED: `9` = 9.asInstanceOf[`9`]
     
-    @scala.inline
-    def FOCUSABLE: `10` = 10.asInstanceOf[`10`]
+    inline def FOCUSABLE: `10` = 10.asInstanceOf[`10`]
     
-    @scala.inline
-    def FOCUSED: `11` = 11.asInstanceOf[`11`]
+    inline def FOCUSED: `11` = 11.asInstanceOf[`11`]
     
-    @scala.inline
-    def HORIZONTAL: `12` = 12.asInstanceOf[`12`]
+    inline def HORIZONTAL: `12` = 12.asInstanceOf[`12`]
     
-    @scala.inline
-    def ICONIFIED: `13` = 13.asInstanceOf[`13`]
+    inline def ICONIFIED: `13` = 13.asInstanceOf[`13`]
     
-    @scala.inline
-    def INDETERMINATE: `14` = 14.asInstanceOf[`14`]
+    inline def INDETERMINATE: `14` = 14.asInstanceOf[`14`]
     
-    @scala.inline
-    def INVALID: `0` = 0.asInstanceOf[`0`]
+    inline def INVALID: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def MANAGES_DESCENDANTS: `15` = 15.asInstanceOf[`15`]
+    inline def MANAGES_DESCENDANTS: `15` = 15.asInstanceOf[`15`]
     
-    @scala.inline
-    def MODAL: `16` = 16.asInstanceOf[`16`]
+    inline def MODAL: `16` = 16.asInstanceOf[`16`]
     
-    @scala.inline
-    def MOVEABLE: `31` = 31.asInstanceOf[`31`]
+    inline def MOVEABLE: `31` = 31.asInstanceOf[`31`]
     
-    @scala.inline
-    def MULTI_LINE: `17` = 17.asInstanceOf[`17`]
+    inline def MULTI_LINE: `17` = 17.asInstanceOf[`17`]
     
-    @scala.inline
-    def MULTI_SELECTABLE: `18` = 18.asInstanceOf[`18`]
+    inline def MULTI_SELECTABLE: `18` = 18.asInstanceOf[`18`]
     
-    @scala.inline
-    def OFFSCREEN: `33` = 33.asInstanceOf[`33`]
+    inline def OFFSCREEN: `33` = 33.asInstanceOf[`33`]
     
-    @scala.inline
-    def OPAQUE: `19` = 19.asInstanceOf[`19`]
+    inline def OPAQUE: `19` = 19.asInstanceOf[`19`]
     
-    @scala.inline
-    def PRESSED: `20` = 20.asInstanceOf[`20`]
+    inline def PRESSED: `20` = 20.asInstanceOf[`20`]
     
-    @scala.inline
-    def RESIZABLE: `21` = 21.asInstanceOf[`21`]
+    inline def RESIZABLE: `21` = 21.asInstanceOf[`21`]
     
-    @scala.inline
-    def SELECTABLE: `22` = 22.asInstanceOf[`22`]
+    inline def SELECTABLE: `22` = 22.asInstanceOf[`22`]
     
-    @scala.inline
-    def SELECTED: `23` = 23.asInstanceOf[`23`]
+    inline def SELECTED: `23` = 23.asInstanceOf[`23`]
     
-    @scala.inline
-    def SENSITIVE: `24` = 24.asInstanceOf[`24`]
+    inline def SENSITIVE: `24` = 24.asInstanceOf[`24`]
     
-    @scala.inline
-    def SHOWING: `25` = 25.asInstanceOf[`25`]
+    inline def SHOWING: `25` = 25.asInstanceOf[`25`]
     
-    @scala.inline
-    def SINGLE_LINE: `26` = 26.asInstanceOf[`26`]
+    inline def SINGLE_LINE: `26` = 26.asInstanceOf[`26`]
     
-    @scala.inline
-    def STALE: `27` = 27.asInstanceOf[`27`]
+    inline def STALE: `27` = 27.asInstanceOf[`27`]
     
-    @scala.inline
-    def TRANSIENT: `28` = 28.asInstanceOf[`28`]
+    inline def TRANSIENT: `28` = 28.asInstanceOf[`28`]
     
-    @scala.inline
-    def VERTICAL: `29` = 29.asInstanceOf[`29`]
+    inline def VERTICAL: `29` = 29.asInstanceOf[`29`]
     
-    @scala.inline
-    def VISIBLE: `30` = 30.asInstanceOf[`30`]
+    inline def VISIBLE: `30` = 30.asInstanceOf[`30`]
   }
 }

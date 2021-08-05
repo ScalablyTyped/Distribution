@@ -24,10 +24,8 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def convertBase64ToFile(base64: String): File = ^.asInstanceOf[js.Dynamic].applyDynamic("convertBase64ToFile")(base64.asInstanceOf[js.Any]).asInstanceOf[File]
-  @scala.inline
-  def convertBase64ToFile(base64: String, mime: String): File = (^.asInstanceOf[js.Dynamic].applyDynamic("convertBase64ToFile")(base64.asInstanceOf[js.Any], mime.asInstanceOf[js.Any])).asInstanceOf[File]
+  inline def convertBase64ToFile(base64: String): File = ^.asInstanceOf[js.Dynamic].applyDynamic("convertBase64ToFile")(base64.asInstanceOf[js.Any]).asInstanceOf[File]
+  inline def convertBase64ToFile(base64: String, mime: String): File = (^.asInstanceOf[js.Dynamic].applyDynamic("convertBase64ToFile")(base64.asInstanceOf[js.Any], mime.asInstanceOf[js.Any])).asInstanceOf[File]
   
   trait Compress extends StObject {
     
@@ -37,8 +35,7 @@ object mod {
   }
   object Compress {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attach: (String, CompressOptions) => js.Promise[js.Array[CompressResult]],
       compress: (js.Array[File], CompressOptions) => js.Promise[js.Array[CompressResult]]
     ): Compress = {
@@ -46,14 +43,11 @@ object mod {
       __obj.asInstanceOf[Compress]
     }
     
-    @scala.inline
-    implicit class CompressMutableBuilder[Self <: Compress] (val x: Self) extends AnyVal {
+    extension [Self <: Compress](x: Self) {
       
-      @scala.inline
-      def setAttach(value: (String, CompressOptions) => js.Promise[js.Array[CompressResult]]): Self = StObject.set(x, "attach", js.Any.fromFunction2(value))
+      inline def setAttach(value: (String, CompressOptions) => js.Promise[js.Array[CompressResult]]): Self = StObject.set(x, "attach", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCompress(value: (js.Array[File], CompressOptions) => js.Promise[js.Array[CompressResult]]): Self = StObject.set(x, "compress", js.Any.fromFunction2(value))
+      inline def setCompress(value: (js.Array[File], CompressOptions) => js.Promise[js.Array[CompressResult]]): Self = StObject.set(x, "compress", js.Any.fromFunction2(value))
     }
   }
   
@@ -71,44 +65,32 @@ object mod {
   }
   object CompressOptions {
     
-    @scala.inline
-    def apply(): CompressOptions = {
+    inline def apply(): CompressOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CompressOptions]
     }
     
-    @scala.inline
-    implicit class CompressOptionsMutableBuilder[Self <: CompressOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CompressOptions](x: Self) {
       
-      @scala.inline
-      def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+      inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
       
-      @scala.inline
-      def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+      inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
       
-      @scala.inline
-      def setResize(value: Boolean): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
+      inline def setResize(value: Boolean): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+      inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -144,8 +126,7 @@ object mod {
   }
   object CompressResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alt: String,
       data: String,
       elapsedTimeInSeconds: Double,
@@ -165,50 +146,35 @@ object mod {
       __obj.asInstanceOf[CompressResult]
     }
     
-    @scala.inline
-    implicit class CompressResultMutableBuilder[Self <: CompressResult] (val x: Self) extends AnyVal {
+    extension [Self <: CompressResult](x: Self) {
       
-      @scala.inline
-      def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+      inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElapsedTimeInSeconds(value: Double): Self = StObject.set(x, "elapsedTimeInSeconds", value.asInstanceOf[js.Any])
+      inline def setElapsedTimeInSeconds(value: Double): Self = StObject.set(x, "elapsedTimeInSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndHeightInPx(value: Double): Self = StObject.set(x, "endHeightInPx", value.asInstanceOf[js.Any])
+      inline def setEndHeightInPx(value: Double): Self = StObject.set(x, "endHeightInPx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndSizeInMb(value: Double): Self = StObject.set(x, "endSizeInMb", value.asInstanceOf[js.Any])
+      inline def setEndSizeInMb(value: Double): Self = StObject.set(x, "endSizeInMb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndWidthInPx(value: Double): Self = StObject.set(x, "endWidthInPx", value.asInstanceOf[js.Any])
+      inline def setEndWidthInPx(value: Double): Self = StObject.set(x, "endWidthInPx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+      inline def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialHeightInPx(value: Double): Self = StObject.set(x, "initialHeightInPx", value.asInstanceOf[js.Any])
+      inline def setInitialHeightInPx(value: Double): Self = StObject.set(x, "initialHeightInPx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialSizeInMb(value: Double): Self = StObject.set(x, "initialSizeInMb", value.asInstanceOf[js.Any])
+      inline def setInitialSizeInMb(value: Double): Self = StObject.set(x, "initialSizeInMb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialWidthInPx(value: Double): Self = StObject.set(x, "initialWidthInPx", value.asInstanceOf[js.Any])
+      inline def setInitialWidthInPx(value: Double): Self = StObject.set(x, "initialWidthInPx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
+      inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeReducedInPercent(value: Double): Self = StObject.set(x, "sizeReducedInPercent", value.asInstanceOf[js.Any])
+      inline def setSizeReducedInPercent(value: Double): Self = StObject.set(x, "sizeReducedInPercent", value.asInstanceOf[js.Any])
     }
   }
 }

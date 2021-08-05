@@ -17,18 +17,18 @@ trait GLTexture
   def bind(): Unit = js.native
   def bind(unit: Double): Unit = js.native
   
-  var boundUnit: js.Any = js.native
+  /* private */ var boundUnit: js.Any = js.native
   
-  var context: js.Any = js.native
+  /* private */ var context: js.Any = js.native
   
   /* InferMemberOverrides */
   override def dispose(): Unit = js.native
   
-  var texture: js.Any = js.native
+  /* private */ var texture: js.Any = js.native
   
   def unbind(): Unit = js.native
   
   def update(useMipMaps: Boolean): Unit = js.native
   
-  var useMipMaps: js.Any = js.native
+  /* private */ var useMipMaps: js.Any = js.native
 }

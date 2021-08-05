@@ -14,8 +14,7 @@ trait AfterSaveRequest
 }
 object AfterSaveRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     context: js.Object,
     headers: js.Any,
     ip: String,
@@ -28,10 +27,8 @@ object AfterSaveRequest {
     __obj.asInstanceOf[AfterSaveRequest]
   }
   
-  @scala.inline
-  implicit class AfterSaveRequestMutableBuilder[Self <: AfterSaveRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AfterSaveRequest](x: Self) {
     
-    @scala.inline
-    def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
   }
 }

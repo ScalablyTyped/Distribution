@@ -16,19 +16,15 @@ trait RecordChecked
 }
 object RecordChecked {
   
-  @scala.inline
-  def apply(bChecked: Boolean, recordKeySet: Set): RecordChecked = {
+  inline def apply(bChecked: Boolean, recordKeySet: Set): RecordChecked = {
     val __obj = js.Dynamic.literal(bChecked = bChecked.asInstanceOf[js.Any], recordKeySet = recordKeySet.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecordChecked]
   }
   
-  @scala.inline
-  implicit class RecordCheckedMutableBuilder[Self <: RecordChecked] (val x: Self) extends AnyVal {
+  extension [Self <: RecordChecked](x: Self) {
     
-    @scala.inline
-    def setBChecked(value: Boolean): Self = StObject.set(x, "bChecked", value.asInstanceOf[js.Any])
+    inline def setBChecked(value: Boolean): Self = StObject.set(x, "bChecked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordKeySet(value: Set): Self = StObject.set(x, "recordKeySet", value.asInstanceOf[js.Any])
+    inline def setRecordKeySet(value: Set): Self = StObject.set(x, "recordKeySet", value.asInstanceOf[js.Any])
   }
 }

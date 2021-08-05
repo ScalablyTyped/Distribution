@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait fmBackStyle extends StObject
 object fmBackStyle {
   
-  @scala.inline
-  def fmBackStyleOpaque: `1` = 1.asInstanceOf[`1`]
+  inline def fmBackStyleOpaque: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def fmBackStyleTransparent: `0` = 0.asInstanceOf[`0`]
+  inline def fmBackStyleTransparent: `0` = 0.asInstanceOf[`0`]
 }

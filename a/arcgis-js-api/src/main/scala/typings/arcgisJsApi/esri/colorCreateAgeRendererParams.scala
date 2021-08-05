@@ -163,8 +163,7 @@ trait colorCreateAgeRendererParams
 }
 object colorCreateAgeRendererParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     endTime: Date | String | Double,
     hasOwnProperty: PropertyKey => Boolean,
@@ -177,109 +176,74 @@ object colorCreateAgeRendererParams {
     __obj.asInstanceOf[colorCreateAgeRendererParams]
   }
   
-  @scala.inline
-  implicit class colorCreateAgeRendererParamsMutableBuilder[Self <: colorCreateAgeRendererParams] (val x: Self) extends AnyVal {
+  extension [Self <: colorCreateAgeRendererParams](x: Self) {
     
-    @scala.inline
-    def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
+    inline def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
+    inline def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
     
-    @scala.inline
-    def setColorMixMode(value: String): Self = StObject.set(x, "colorMixMode", value.asInstanceOf[js.Any])
+    inline def setColorMixMode(value: String): Self = StObject.set(x, "colorMixMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorMixModeUndefined: Self = StObject.set(x, "colorMixMode", js.undefined)
+    inline def setColorMixModeUndefined: Self = StObject.set(x, "colorMixMode", js.undefined)
     
-    @scala.inline
-    def setColorScheme(value: ColorScheme): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
+    inline def setColorScheme(value: ColorScheme): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorSchemeUndefined: Self = StObject.set(x, "colorScheme", js.undefined)
+    inline def setColorSchemeUndefined: Self = StObject.set(x, "colorScheme", js.undefined)
     
-    @scala.inline
-    def setDefaultSymbolEnabled(value: Boolean): Self = StObject.set(x, "defaultSymbolEnabled", value.asInstanceOf[js.Any])
+    inline def setDefaultSymbolEnabled(value: Boolean): Self = StObject.set(x, "defaultSymbolEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultSymbolEnabledUndefined: Self = StObject.set(x, "defaultSymbolEnabled", js.undefined)
+    inline def setDefaultSymbolEnabledUndefined: Self = StObject.set(x, "defaultSymbolEnabled", js.undefined)
     
-    @scala.inline
-    def setEdgesType(value: solid | none): Self = StObject.set(x, "edgesType", value.asInstanceOf[js.Any])
+    inline def setEdgesType(value: solid | none): Self = StObject.set(x, "edgesType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgesTypeUndefined: Self = StObject.set(x, "edgesType", js.undefined)
+    inline def setEdgesTypeUndefined: Self = StObject.set(x, "edgesType", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: Date | String | Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Date | String | Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendOptions(value: colorCreateAgeRendererParamsLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
+    inline def setLegendOptions(value: colorCreateAgeRendererParamsLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendOptionsUndefined: Self = StObject.set(x, "legendOptions", js.undefined)
+    inline def setLegendOptionsUndefined: Self = StObject.set(x, "legendOptions", js.undefined)
     
-    @scala.inline
-    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+    inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
-    @scala.inline
-    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
+    inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
     
-    @scala.inline
-    def setOutlineOptimizationEnabled(value: Boolean): Self = StObject.set(x, "outlineOptimizationEnabled", value.asInstanceOf[js.Any])
+    inline def setOutlineOptimizationEnabled(value: Boolean): Self = StObject.set(x, "outlineOptimizationEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlineOptimizationEnabledUndefined: Self = StObject.set(x, "outlineOptimizationEnabled", js.undefined)
+    inline def setOutlineOptimizationEnabledUndefined: Self = StObject.set(x, "outlineOptimizationEnabled", js.undefined)
     
-    @scala.inline
-    def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
-    @scala.inline
-    def setSizeOptimizationEnabled(value: Boolean): Self = StObject.set(x, "sizeOptimizationEnabled", value.asInstanceOf[js.Any])
+    inline def setSizeOptimizationEnabled(value: Boolean): Self = StObject.set(x, "sizeOptimizationEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeOptimizationEnabledUndefined: Self = StObject.set(x, "sizeOptimizationEnabled", js.undefined)
+    inline def setSizeOptimizationEnabledUndefined: Self = StObject.set(x, "sizeOptimizationEnabled", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: Date | String | Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Date | String | Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatistics(value: SummaryStatisticsResult): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
+    inline def setStatistics(value: SummaryStatisticsResult): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
+    inline def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
     
-    @scala.inline
-    def setSymbolType(value: `2d` | `3d-flat` | `3d-volumetric` | `3d-volumetric-uniform`): Self = StObject.set(x, "symbolType", value.asInstanceOf[js.Any])
+    inline def setSymbolType(value: `2d` | `3d-flat` | `3d-volumetric` | `3d-volumetric-uniform`): Self = StObject.set(x, "symbolType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolTypeUndefined: Self = StObject.set(x, "symbolType", js.undefined)
+    inline def setSymbolTypeUndefined: Self = StObject.set(x, "symbolType", js.undefined)
     
-    @scala.inline
-    def setTheme(value: `high-to-low` | `above-and-below` | `centered-on` | extremes): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: `high-to-low` | `above-and-below` | `centered-on` | extremes): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
-    @scala.inline
-    def setUnit(value: years | months | days | hours | minutes | seconds): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: years | months | days | hours | minutes | seconds): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
-    @scala.inline
-    def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

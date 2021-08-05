@@ -38,8 +38,7 @@ trait SetupFrame
 }
 object SetupFrame {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dataMimeType: String,
     flags: Double,
     keepAlive: Double,
@@ -53,58 +52,40 @@ object SetupFrame {
     __obj.asInstanceOf[SetupFrame]
   }
   
-  @scala.inline
-  implicit class SetupFrameMutableBuilder[Self <: SetupFrame] (val x: Self) extends AnyVal {
+  extension [Self <: SetupFrame](x: Self) {
     
-    @scala.inline
-    def setData(value: Encodable): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Encodable): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataMimeType(value: String): Self = StObject.set(x, "dataMimeType", value.asInstanceOf[js.Any])
+    inline def setDataMimeType(value: String): Self = StObject.set(x, "dataMimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepAlive(value: Double): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
+    inline def setKeepAlive(value: Double): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    @scala.inline
-    def setLifetime(value: Double): Self = StObject.set(x, "lifetime", value.asInstanceOf[js.Any])
+    inline def setLifetime(value: Double): Self = StObject.set(x, "lifetime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMajorVersion(value: Double): Self = StObject.set(x, "majorVersion", value.asInstanceOf[js.Any])
+    inline def setMajorVersion(value: Double): Self = StObject.set(x, "majorVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: Encodable): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: Encodable): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataMimeType(value: String): Self = StObject.set(x, "metadataMimeType", value.asInstanceOf[js.Any])
+    inline def setMetadataMimeType(value: String): Self = StObject.set(x, "metadataMimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setMinorVersion(value: Double): Self = StObject.set(x, "minorVersion", value.asInstanceOf[js.Any])
+    inline def setMinorVersion(value: Double): Self = StObject.set(x, "minorVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResumeToken(value: Encodable): Self = StObject.set(x, "resumeToken", value.asInstanceOf[js.Any])
+    inline def setResumeToken(value: Encodable): Self = StObject.set(x, "resumeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResumeTokenUndefined: Self = StObject.set(x, "resumeToken", js.undefined)
+    inline def setResumeTokenUndefined: Self = StObject.set(x, "resumeToken", js.undefined)
     
-    @scala.inline
-    def setStreamId(value: `0`): Self = StObject.set(x, "streamId", value.asInstanceOf[js.Any])
+    inline def setStreamId(value: `0`): Self = StObject.set(x, "streamId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `0x01`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `0x01`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

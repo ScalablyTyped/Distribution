@@ -12,6 +12,5 @@ object winLaunchMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(config: ConfigWithRuntime, manifestLocation: String, namedPipeName: String): js.Promise[ChildProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any], manifestLocation.asInstanceOf[js.Any], namedPipeName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ChildProcess]]
+  inline def default(config: ConfigWithRuntime, manifestLocation: String, namedPipeName: String): js.Promise[ChildProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any], manifestLocation.asInstanceOf[js.Any], namedPipeName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ChildProcess]]
 }

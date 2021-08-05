@@ -18,20 +18,16 @@ object tabsPropsTypeMod {
   }
   object TabsProps {
     
-    @scala.inline
-    def apply(tabs: js.Array[TabData]): TabsProps = {
+    inline def apply(tabs: js.Array[TabData]): TabsProps = {
       val __obj = js.Dynamic.literal(tabs = tabs.asInstanceOf[js.Any])
       __obj.asInstanceOf[TabsProps]
     }
     
-    @scala.inline
-    implicit class TabsPropsMutableBuilder[Self <: TabsProps] (val x: Self) extends AnyVal {
+    extension [Self <: TabsProps](x: Self) {
       
-      @scala.inline
-      def setRenderTab(value: /* tab */ TabData => ReactNode): Self = StObject.set(x, "renderTab", js.Any.fromFunction1(value))
+      inline def setRenderTab(value: /* tab */ TabData => ReactNode): Self = StObject.set(x, "renderTab", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderTabUndefined: Self = StObject.set(x, "renderTab", js.undefined)
+      inline def setRenderTabUndefined: Self = StObject.set(x, "renderTab", js.undefined)
     }
   }
 }

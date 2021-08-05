@@ -23,31 +23,23 @@ trait LayersListItem extends StObject {
 }
 object LayersListItem {
   
-  @scala.inline
-  def apply(): LayersListItem = {
+  inline def apply(): LayersListItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LayersListItem]
   }
   
-  @scala.inline
-  implicit class LayersListItemMutableBuilder[Self <: LayersListItem] (val x: Self) extends AnyVal {
+  extension [Self <: LayersListItem](x: Self) {
     
-    @scala.inline
-    def setLatestMatchingVersion(value: LayerVersionsListItem): Self = StObject.set(x, "LatestMatchingVersion", value.asInstanceOf[js.Any])
+    inline def setLatestMatchingVersion(value: LayerVersionsListItem): Self = StObject.set(x, "LatestMatchingVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatestMatchingVersionUndefined: Self = StObject.set(x, "LatestMatchingVersion", js.undefined)
+    inline def setLatestMatchingVersionUndefined: Self = StObject.set(x, "LatestMatchingVersion", js.undefined)
     
-    @scala.inline
-    def setLayerArn(value: LayerArn): Self = StObject.set(x, "LayerArn", value.asInstanceOf[js.Any])
+    inline def setLayerArn(value: LayerArn): Self = StObject.set(x, "LayerArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerArnUndefined: Self = StObject.set(x, "LayerArn", js.undefined)
+    inline def setLayerArnUndefined: Self = StObject.set(x, "LayerArn", js.undefined)
     
-    @scala.inline
-    def setLayerName(value: LayerName): Self = StObject.set(x, "LayerName", value.asInstanceOf[js.Any])
+    inline def setLayerName(value: LayerName): Self = StObject.set(x, "LayerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerNameUndefined: Self = StObject.set(x, "LayerName", js.undefined)
+    inline def setLayerNameUndefined: Self = StObject.set(x, "LayerName", js.undefined)
   }
 }

@@ -15,31 +15,23 @@ trait ObjClassOptions extends StObject {
 }
 object ObjClassOptions {
   
-  @scala.inline
-  def apply(attributes: Record[String, Attribute | AttributeWithOptions]): ObjClassOptions = {
+  inline def apply(attributes: Record[String, Attribute | AttributeWithOptions]): ObjClassOptions = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjClassOptions]
   }
   
-  @scala.inline
-  implicit class ObjClassOptionsMutableBuilder[Self <: ObjClassOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ObjClassOptions](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: Record[String, Attribute | AttributeWithOptions]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Record[String, Attribute | AttributeWithOptions]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtend(value: ObjClass): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    inline def setExtend(value: ObjClass): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
+    inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    @scala.inline
-    def setExtractTextAttributes(value: js.Array[String]): Self = StObject.set(x, "extractTextAttributes", value.asInstanceOf[js.Any])
+    inline def setExtractTextAttributes(value: js.Array[String]): Self = StObject.set(x, "extractTextAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtractTextAttributesUndefined: Self = StObject.set(x, "extractTextAttributes", js.undefined)
+    inline def setExtractTextAttributesUndefined: Self = StObject.set(x, "extractTextAttributes", js.undefined)
     
-    @scala.inline
-    def setExtractTextAttributesVarargs(value: String*): Self = StObject.set(x, "extractTextAttributes", js.Array(value :_*))
+    inline def setExtractTextAttributesVarargs(value: String*): Self = StObject.set(x, "extractTextAttributes", js.Array(value :_*))
   }
 }

@@ -13,15 +13,13 @@ object mod {
     * @param obj object to be merged to the output result
     * @returns object representing your user agent
     */
-  @scala.inline
-  def apply(_ua: String): UserAgent = ^.asInstanceOf[js.Dynamic].apply(_ua.asInstanceOf[js.Any]).asInstanceOf[UserAgent]
+  inline def apply(_ua: String): UserAgent = ^.asInstanceOf[js.Dynamic].apply(_ua.asInstanceOf[js.Any]).asInstanceOf[UserAgent]
   /**
     * Returns an object representing the user agent including data such as browser, device and platform
     * @param _ua the raw user agent string to be converted
     * @returns object representing your user agent
     */
-  @scala.inline
-  def apply[T /* <: js.Object */](_ua: String, obj: T): UserAgent & T = (^.asInstanceOf[js.Dynamic].apply(_ua.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[UserAgent & T]
+  inline def apply[T /* <: js.Object */](_ua: String, obj: T): UserAgent & T = (^.asInstanceOf[js.Dynamic].apply(_ua.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[UserAgent & T]
   
   @JSImport("vigour-ua", JSImport.Namespace)
   @js.native
@@ -39,23 +37,18 @@ object mod {
   }
   object UserAgent {
     
-    @scala.inline
-    def apply(browser: String, prefix: String, version: Double): UserAgent = {
+    inline def apply(browser: String, prefix: String, version: Double): UserAgent = {
       val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserAgent]
     }
     
-    @scala.inline
-    implicit class UserAgentMutableBuilder[Self <: UserAgent] (val x: Self) extends AnyVal {
+    extension [Self <: UserAgent](x: Self) {
       
-      @scala.inline
-      def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+      inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

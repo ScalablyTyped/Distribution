@@ -29,26 +29,20 @@ trait DefinitionQuery
 }
 object DefinitionQuery {
   
-  @scala.inline
-  def apply(end: Double | Position, file: String): DefinitionQuery = {
+  inline def apply(end: Double | Position, file: String): DefinitionQuery = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("definition")
     __obj.asInstanceOf[DefinitionQuery]
   }
   
-  @scala.inline
-  implicit class DefinitionQueryMutableBuilder[Self <: DefinitionQuery] (val x: Self) extends AnyVal {
+  extension [Self <: DefinitionQuery](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Double | Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Double | Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double | Position): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double | Position): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    @scala.inline
-    def setType(value: definition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: definition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -48,61 +48,43 @@ trait BarFormatOptions extends StObject {
 }
 object BarFormatOptions {
   
-  @scala.inline
-  def apply(): BarFormatOptions = {
+  inline def apply(): BarFormatOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BarFormatOptions]
   }
   
-  @scala.inline
-  implicit class BarFormatOptionsMutableBuilder[Self <: BarFormatOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BarFormatOptions](x: Self) {
     
-    @scala.inline
-    def setBase(value: Double): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: Double): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+    inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
     
-    @scala.inline
-    def setColorNegative(value: String): Self = StObject.set(x, "colorNegative", value.asInstanceOf[js.Any])
+    inline def setColorNegative(value: String): Self = StObject.set(x, "colorNegative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorNegativeUndefined: Self = StObject.set(x, "colorNegative", js.undefined)
+    inline def setColorNegativeUndefined: Self = StObject.set(x, "colorNegative", js.undefined)
     
-    @scala.inline
-    def setColorPositive(value: String): Self = StObject.set(x, "colorPositive", value.asInstanceOf[js.Any])
+    inline def setColorPositive(value: String): Self = StObject.set(x, "colorPositive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorPositiveUndefined: Self = StObject.set(x, "colorPositive", js.undefined)
+    inline def setColorPositiveUndefined: Self = StObject.set(x, "colorPositive", js.undefined)
     
-    @scala.inline
-    def setDrawZeroLine(value: Boolean): Self = StObject.set(x, "drawZeroLine", value.asInstanceOf[js.Any])
+    inline def setDrawZeroLine(value: Boolean): Self = StObject.set(x, "drawZeroLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawZeroLineUndefined: Self = StObject.set(x, "drawZeroLine", js.undefined)
+    inline def setDrawZeroLineUndefined: Self = StObject.set(x, "drawZeroLine", js.undefined)
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setShowValue(value: Boolean): Self = StObject.set(x, "showValue", value.asInstanceOf[js.Any])
+    inline def setShowValue(value: Boolean): Self = StObject.set(x, "showValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowValueUndefined: Self = StObject.set(x, "showValue", js.undefined)
+    inline def setShowValueUndefined: Self = StObject.set(x, "showValue", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

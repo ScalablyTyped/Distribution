@@ -18,26 +18,20 @@ object anon {
   }
   object Counter {
     
-    @scala.inline
-    def apply(counter: Double, currentTestName: String, defaultIdentifier: String, testPath: String): Counter = {
+    inline def apply(counter: Double, currentTestName: String, defaultIdentifier: String, testPath: String): Counter = {
       val __obj = js.Dynamic.literal(counter = counter.asInstanceOf[js.Any], currentTestName = currentTestName.asInstanceOf[js.Any], defaultIdentifier = defaultIdentifier.asInstanceOf[js.Any], testPath = testPath.asInstanceOf[js.Any])
       __obj.asInstanceOf[Counter]
     }
     
-    @scala.inline
-    implicit class CounterMutableBuilder[Self <: Counter] (val x: Self) extends AnyVal {
+    extension [Self <: Counter](x: Self) {
       
-      @scala.inline
-      def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
+      inline def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentTestName(value: String): Self = StObject.set(x, "currentTestName", value.asInstanceOf[js.Any])
+      inline def setCurrentTestName(value: String): Self = StObject.set(x, "currentTestName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultIdentifier(value: String): Self = StObject.set(x, "defaultIdentifier", value.asInstanceOf[js.Any])
+      inline def setDefaultIdentifier(value: String): Self = StObject.set(x, "defaultIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestPath(value: String): Self = StObject.set(x, "testPath", value.asInstanceOf[js.Any])
+      inline def setTestPath(value: String): Self = StObject.set(x, "testPath", value.asInstanceOf[js.Any])
     }
   }
   
@@ -53,26 +47,20 @@ object anon {
   }
   object Height {
     
-    @scala.inline
-    def apply(height: Double, width: Double, x: Double, y: Double): Height = {
+    inline def apply(height: Double, width: Double, x: Double, y: Double): Height = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[Height]
     }
     
-    @scala.inline
-    implicit class HeightMutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
+    extension [Self <: Height](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -84,26 +72,20 @@ object anon {
   }
   object IncludeAA {
     
-    @scala.inline
-    def apply(): IncludeAA = {
+    inline def apply(): IncludeAA = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IncludeAA]
     }
     
-    @scala.inline
-    implicit class IncludeAAMutableBuilder[Self <: IncludeAA] (val x: Self) extends AnyVal {
+    extension [Self <: IncludeAA](x: Self) {
       
-      @scala.inline
-      def setIncludeAA(value: Boolean): Self = StObject.set(x, "includeAA", value.asInstanceOf[js.Any])
+      inline def setIncludeAA(value: Boolean): Self = StObject.set(x, "includeAA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeAAUndefined: Self = StObject.set(x, "includeAA", js.undefined)
+      inline def setIncludeAAUndefined: Self = StObject.set(x, "includeAA", js.undefined)
       
-      @scala.inline
-      def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+      inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
     }
   }
 }

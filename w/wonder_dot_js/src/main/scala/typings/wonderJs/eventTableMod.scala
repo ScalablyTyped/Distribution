@@ -18,7 +18,6 @@ object eventTableMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getEventType(eventName: EEventName): EEventType = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventType")(eventName.asInstanceOf[js.Any]).asInstanceOf[EEventType]
+    inline def getEventType(eventName: EEventName): EEventType = ^.asInstanceOf[js.Dynamic].applyDynamic("getEventType")(eventName.asInstanceOf[js.Any]).asInstanceOf[EEventType]
   }
 }

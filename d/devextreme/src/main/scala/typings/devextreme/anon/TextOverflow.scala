@@ -17,31 +17,23 @@ trait TextOverflow extends StObject {
 }
 object TextOverflow {
   
-  @scala.inline
-  def apply(): TextOverflow = {
+  inline def apply(): TextOverflow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextOverflow]
   }
   
-  @scala.inline
-  implicit class TextOverflowMutableBuilder[Self <: TextOverflow] (val x: Self) extends AnyVal {
+  extension [Self <: TextOverflow](x: Self) {
     
-    @scala.inline
-    def setFont(value: typings.devextreme.mod.DevExpress.viz.Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: typings.devextreme.mod.DevExpress.viz.Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    @scala.inline
-    def setTextOverflow(value: ellipsis | hide | none): Self = StObject.set(x, "textOverflow", value.asInstanceOf[js.Any])
+    inline def setTextOverflow(value: ellipsis | hide | none): Self = StObject.set(x, "textOverflow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextOverflowUndefined: Self = StObject.set(x, "textOverflow", js.undefined)
+    inline def setTextOverflowUndefined: Self = StObject.set(x, "textOverflow", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

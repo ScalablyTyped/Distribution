@@ -10,16 +10,13 @@ trait IJsonErrorStatics extends StObject {
 }
 object IJsonErrorStatics {
   
-  @scala.inline
-  def apply(getStatus: Double => JsonErrorStatus): IJsonErrorStatics = {
+  inline def apply(getStatus: Double => JsonErrorStatus): IJsonErrorStatics = {
     val __obj = js.Dynamic.literal(getStatus = js.Any.fromFunction1(getStatus))
     __obj.asInstanceOf[IJsonErrorStatics]
   }
   
-  @scala.inline
-  implicit class IJsonErrorStaticsMutableBuilder[Self <: IJsonErrorStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IJsonErrorStatics](x: Self) {
     
-    @scala.inline
-    def setGetStatus(value: Double => JsonErrorStatus): Self = StObject.set(x, "getStatus", js.Any.fromFunction1(value))
+    inline def setGetStatus(value: Double => JsonErrorStatus): Self = StObject.set(x, "getStatus", js.Any.fromFunction1(value))
   }
 }

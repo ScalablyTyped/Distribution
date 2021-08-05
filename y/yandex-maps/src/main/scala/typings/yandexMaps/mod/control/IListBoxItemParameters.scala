@@ -17,31 +17,23 @@ trait IListBoxItemParameters extends StObject {
 }
 object IListBoxItemParameters {
   
-  @scala.inline
-  def apply(): IListBoxItemParameters = {
+  inline def apply(): IListBoxItemParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IListBoxItemParameters]
   }
   
-  @scala.inline
-  implicit class IListBoxItemParametersMutableBuilder[Self <: IListBoxItemParameters] (val x: Self) extends AnyVal {
+  extension [Self <: IListBoxItemParameters](x: Self) {
     
-    @scala.inline
-    def setData(value: `0`): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: `0`): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setOptions(value: Layout): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Layout): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setState(value: Selected): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: Selected): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

@@ -24,8 +24,7 @@ object iconComponentMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def attachTo(root: Element): MDCSelectIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCSelectIcon]
+    inline def attachTo(root: Element): MDCSelectIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCSelectIcon]
   }
   
   type MDCSelectIconFactory = js.Function2[

@@ -21,13 +21,11 @@ object Pager {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.Pager = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.Pager]
+  inline def extend(proto: js.Object): typings.kendoUi.kendo.ui.Pager = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.Pager]
   
   /* static member */
   @JSGlobal("kendo.ui.Pager.fn")
   @js.native
   def fn: typings.kendoUi.kendo.ui.Pager = js.native
-  @scala.inline
-  def fn_=(x: typings.kendoUi.kendo.ui.Pager): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  inline def fn_=(x: typings.kendoUi.kendo.ui.Pager): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

@@ -25,25 +25,19 @@ trait CreateRequest
 }
 object CreateRequest {
   
-  @scala.inline
-  def apply(): CreateRequest = {
+  inline def apply(): CreateRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateRequest]
   }
   
-  @scala.inline
-  implicit class CreateRequestMutableBuilder[Self <: CreateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateRequest](x: Self) {
     
-    @scala.inline
-    def setMultiFactor(value: MultiFactorCreateSettings): Self = StObject.set(x, "multiFactor", value.asInstanceOf[js.Any])
+    inline def setMultiFactor(value: MultiFactorCreateSettings): Self = StObject.set(x, "multiFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiFactorUndefined: Self = StObject.set(x, "multiFactor", js.undefined)
+    inline def setMultiFactorUndefined: Self = StObject.set(x, "multiFactor", js.undefined)
     
-    @scala.inline
-    def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+    inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
+    inline def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
   }
 }

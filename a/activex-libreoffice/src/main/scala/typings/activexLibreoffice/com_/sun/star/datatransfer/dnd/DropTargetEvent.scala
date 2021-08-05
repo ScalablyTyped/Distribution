@@ -20,16 +20,13 @@ trait DropTargetEvent
 }
 object DropTargetEvent {
   
-  @scala.inline
-  def apply(Dummy: Double, Source: XInterface): DropTargetEvent = {
+  inline def apply(Dummy: Double, Source: XInterface): DropTargetEvent = {
     val __obj = js.Dynamic.literal(Dummy = Dummy.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropTargetEvent]
   }
   
-  @scala.inline
-  implicit class DropTargetEventMutableBuilder[Self <: DropTargetEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DropTargetEvent](x: Self) {
     
-    @scala.inline
-    def setDummy(value: Double): Self = StObject.set(x, "Dummy", value.asInstanceOf[js.Any])
+    inline def setDummy(value: Double): Self = StObject.set(x, "Dummy", value.asInstanceOf[js.Any])
   }
 }

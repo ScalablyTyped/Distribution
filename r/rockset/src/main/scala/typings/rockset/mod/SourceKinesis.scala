@@ -14,22 +14,17 @@ trait SourceKinesis extends StObject {
 }
 object SourceKinesis {
   
-  @scala.inline
-  def apply(stream_name: String): SourceKinesis = {
+  inline def apply(stream_name: String): SourceKinesis = {
     val __obj = js.Dynamic.literal(stream_name = stream_name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceKinesis]
   }
   
-  @scala.inline
-  implicit class SourceKinesisMutableBuilder[Self <: SourceKinesis] (val x: Self) extends AnyVal {
+  extension [Self <: SourceKinesis](x: Self) {
     
-    @scala.inline
-    def setAws_region(value: String): Self = StObject.set(x, "aws_region", value.asInstanceOf[js.Any])
+    inline def setAws_region(value: String): Self = StObject.set(x, "aws_region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAws_regionUndefined: Self = StObject.set(x, "aws_region", js.undefined)
+    inline def setAws_regionUndefined: Self = StObject.set(x, "aws_region", js.undefined)
     
-    @scala.inline
-    def setStream_name(value: String): Self = StObject.set(x, "stream_name", value.asInstanceOf[js.Any])
+    inline def setStream_name(value: String): Self = StObject.set(x, "stream_name", value.asInstanceOf[js.Any])
   }
 }

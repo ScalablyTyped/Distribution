@@ -28,8 +28,7 @@ trait ImageData extends StObject {
 }
 object ImageData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bottom: Double,
     left: Double,
     originHeight: Double,
@@ -44,34 +43,24 @@ object ImageData {
     __obj.asInstanceOf[ImageData]
   }
   
-  @scala.inline
-  implicit class ImageDataMutableBuilder[Self <: ImageData] (val x: Self) extends AnyVal {
+  extension [Self <: ImageData](x: Self) {
     
-    @scala.inline
-    def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginHeight(value: Double): Self = StObject.set(x, "originHeight", value.asInstanceOf[js.Any])
+    inline def setOriginHeight(value: Double): Self = StObject.set(x, "originHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginWidth(value: Double): Self = StObject.set(x, "originWidth", value.asInstanceOf[js.Any])
+    inline def setOriginWidth(value: Double): Self = StObject.set(x, "originWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleHeight(value: Double): Self = StObject.set(x, "scaleHeight", value.asInstanceOf[js.Any])
+    inline def setScaleHeight(value: Double): Self = StObject.set(x, "scaleHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleWidth(value: Double): Self = StObject.set(x, "scaleWidth", value.asInstanceOf[js.Any])
+    inline def setScaleWidth(value: Double): Self = StObject.set(x, "scaleWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaled(value: Boolean): Self = StObject.set(x, "scaled", value.asInstanceOf[js.Any])
+    inline def setScaled(value: Boolean): Self = StObject.set(x, "scaled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
   }
 }

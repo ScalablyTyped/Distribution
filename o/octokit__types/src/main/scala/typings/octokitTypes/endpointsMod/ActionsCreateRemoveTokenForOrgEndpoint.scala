@@ -11,17 +11,14 @@ trait ActionsCreateRemoveTokenForOrgEndpoint extends StObject {
 }
 object ActionsCreateRemoveTokenForOrgEndpoint {
   
-  @scala.inline
-  def apply(org_ : String): ActionsCreateRemoveTokenForOrgEndpoint = {
+  inline def apply(org_ : String): ActionsCreateRemoveTokenForOrgEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionsCreateRemoveTokenForOrgEndpoint]
   }
   
-  @scala.inline
-  implicit class ActionsCreateRemoveTokenForOrgEndpointMutableBuilder[Self <: ActionsCreateRemoveTokenForOrgEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ActionsCreateRemoveTokenForOrgEndpoint](x: Self) {
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
   }
 }

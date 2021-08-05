@@ -29,22 +29,17 @@ trait ContainerEvent
 }
 object ContainerEvent {
   
-  @scala.inline
-  def apply(Accessor: js.Any, Element: js.Any, ReplacedElement: js.Any, Source: XInterface): ContainerEvent = {
+  inline def apply(Accessor: js.Any, Element: js.Any, ReplacedElement: js.Any, Source: XInterface): ContainerEvent = {
     val __obj = js.Dynamic.literal(Accessor = Accessor.asInstanceOf[js.Any], Element = Element.asInstanceOf[js.Any], ReplacedElement = ReplacedElement.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContainerEvent]
   }
   
-  @scala.inline
-  implicit class ContainerEventMutableBuilder[Self <: ContainerEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerEvent](x: Self) {
     
-    @scala.inline
-    def setAccessor(value: js.Any): Self = StObject.set(x, "Accessor", value.asInstanceOf[js.Any])
+    inline def setAccessor(value: js.Any): Self = StObject.set(x, "Accessor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElement(value: js.Any): Self = StObject.set(x, "Element", value.asInstanceOf[js.Any])
+    inline def setElement(value: js.Any): Self = StObject.set(x, "Element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplacedElement(value: js.Any): Self = StObject.set(x, "ReplacedElement", value.asInstanceOf[js.Any])
+    inline def setReplacedElement(value: js.Any): Self = StObject.set(x, "ReplacedElement", value.asInstanceOf[js.Any])
   }
 }

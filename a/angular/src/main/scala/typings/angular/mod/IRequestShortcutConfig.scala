@@ -42,43 +42,31 @@ trait IRequestShortcutConfig
 }
 object IRequestShortcutConfig {
   
-  @scala.inline
-  def apply(): IRequestShortcutConfig = {
+  inline def apply(): IRequestShortcutConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IRequestShortcutConfig]
   }
   
-  @scala.inline
-  implicit class IRequestShortcutConfigMutableBuilder[Self <: IRequestShortcutConfig] (val x: Self) extends AnyVal {
+  extension [Self <: IRequestShortcutConfig](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setJsonpCallbackParam(value: String): Self = StObject.set(x, "jsonpCallbackParam", value.asInstanceOf[js.Any])
+    inline def setJsonpCallbackParam(value: String): Self = StObject.set(x, "jsonpCallbackParam", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonpCallbackParamUndefined: Self = StObject.set(x, "jsonpCallbackParam", js.undefined)
+    inline def setJsonpCallbackParamUndefined: Self = StObject.set(x, "jsonpCallbackParam", js.undefined)
     
-    @scala.inline
-    def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    @scala.inline
-    def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+    inline def setResponseType(value: String): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
+    inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double | IPromise[js.Any]): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double | IPromise[js.Any]): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

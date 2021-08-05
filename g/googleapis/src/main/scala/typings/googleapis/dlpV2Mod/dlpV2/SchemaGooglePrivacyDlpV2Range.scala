@@ -21,25 +21,19 @@ trait SchemaGooglePrivacyDlpV2Range extends StObject {
 }
 object SchemaGooglePrivacyDlpV2Range {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2Range = {
+  inline def apply(): SchemaGooglePrivacyDlpV2Range = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2Range]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2RangeMutableBuilder[Self <: SchemaGooglePrivacyDlpV2Range] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2Range](x: Self) {
     
-    @scala.inline
-    def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

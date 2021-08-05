@@ -34,8 +34,7 @@ trait ReactionsCreateForTeamDiscussionCommentInOrgEndpoint
 }
 object ReactionsCreateForTeamDiscussionCommentInOrgEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     comment_number: Double,
     content: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes,
     discussion_number: Double,
@@ -48,22 +47,16 @@ object ReactionsCreateForTeamDiscussionCommentInOrgEndpoint {
     __obj.asInstanceOf[ReactionsCreateForTeamDiscussionCommentInOrgEndpoint]
   }
   
-  @scala.inline
-  implicit class ReactionsCreateForTeamDiscussionCommentInOrgEndpointMutableBuilder[Self <: ReactionsCreateForTeamDiscussionCommentInOrgEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReactionsCreateForTeamDiscussionCommentInOrgEndpoint](x: Self) {
     
-    @scala.inline
-    def setComment_number(value: Double): Self = StObject.set(x, "comment_number", value.asInstanceOf[js.Any])
+    inline def setComment_number(value: Double): Self = StObject.set(x, "comment_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent(value: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscussion_number(value: Double): Self = StObject.set(x, "discussion_number", value.asInstanceOf[js.Any])
+    inline def setDiscussion_number(value: Double): Self = StObject.set(x, "discussion_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeam_slug(value: String): Self = StObject.set(x, "team_slug", value.asInstanceOf[js.Any])
+    inline def setTeam_slug(value: String): Self = StObject.set(x, "team_slug", value.asInstanceOf[js.Any])
   }
 }

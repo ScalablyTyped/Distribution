@@ -18,19 +18,15 @@ trait SchemaDeleteParagraphBulletsRequest extends StObject {
 }
 object SchemaDeleteParagraphBulletsRequest {
   
-  @scala.inline
-  def apply(): SchemaDeleteParagraphBulletsRequest = {
+  inline def apply(): SchemaDeleteParagraphBulletsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDeleteParagraphBulletsRequest]
   }
   
-  @scala.inline
-  implicit class SchemaDeleteParagraphBulletsRequestMutableBuilder[Self <: SchemaDeleteParagraphBulletsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDeleteParagraphBulletsRequest](x: Self) {
     
-    @scala.inline
-    def setRange(value: SchemaRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: SchemaRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

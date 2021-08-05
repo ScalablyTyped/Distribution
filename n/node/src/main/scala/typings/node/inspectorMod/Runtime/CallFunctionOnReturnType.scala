@@ -18,22 +18,17 @@ trait CallFunctionOnReturnType extends StObject {
 }
 object CallFunctionOnReturnType {
   
-  @scala.inline
-  def apply(result: RemoteObject): CallFunctionOnReturnType = {
+  inline def apply(result: RemoteObject): CallFunctionOnReturnType = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[CallFunctionOnReturnType]
   }
   
-  @scala.inline
-  implicit class CallFunctionOnReturnTypeMutableBuilder[Self <: CallFunctionOnReturnType] (val x: Self) extends AnyVal {
+  extension [Self <: CallFunctionOnReturnType](x: Self) {
     
-    @scala.inline
-    def setExceptionDetails(value: ExceptionDetails): Self = StObject.set(x, "exceptionDetails", value.asInstanceOf[js.Any])
+    inline def setExceptionDetails(value: ExceptionDetails): Self = StObject.set(x, "exceptionDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExceptionDetailsUndefined: Self = StObject.set(x, "exceptionDetails", js.undefined)
+    inline def setExceptionDetailsUndefined: Self = StObject.set(x, "exceptionDetails", js.undefined)
     
-    @scala.inline
-    def setResult(value: RemoteObject): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: RemoteObject): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

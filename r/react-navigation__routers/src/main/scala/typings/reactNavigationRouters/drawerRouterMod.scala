@@ -26,8 +26,7 @@ object drawerRouterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasOpenByDefaultRest: DrawerRouterOptions): Router[DrawerNavigationState[ParamListBase], DrawerActionType | CommonNavigationAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasOpenByDefaultRest.asInstanceOf[js.Any]).asInstanceOf[Router[DrawerNavigationState[ParamListBase], DrawerActionType | CommonNavigationAction]]
+  inline def default(hasOpenByDefaultRest: DrawerRouterOptions): Router[DrawerNavigationState[ParamListBase], DrawerActionType | CommonNavigationAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasOpenByDefaultRest.asInstanceOf[js.Any]).asInstanceOf[Router[DrawerNavigationState[ParamListBase], DrawerActionType | CommonNavigationAction]]
   
   object DrawerActions {
     
@@ -35,19 +34,14 @@ object drawerRouterMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def closeDrawer(): DrawerActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("closeDrawer")().asInstanceOf[DrawerActionType]
+    inline def closeDrawer(): DrawerActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("closeDrawer")().asInstanceOf[DrawerActionType]
     
-    @scala.inline
-    def jumpTo(name: String): TabActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("jumpTo")(name.asInstanceOf[js.Any]).asInstanceOf[TabActionType]
-    @scala.inline
-    def jumpTo(name: String, params: js.Object): TabActionType = (^.asInstanceOf[js.Dynamic].applyDynamic("jumpTo")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TabActionType]
+    inline def jumpTo(name: String): TabActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("jumpTo")(name.asInstanceOf[js.Any]).asInstanceOf[TabActionType]
+    inline def jumpTo(name: String, params: js.Object): TabActionType = (^.asInstanceOf[js.Dynamic].applyDynamic("jumpTo")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TabActionType]
     
-    @scala.inline
-    def openDrawer(): DrawerActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("openDrawer")().asInstanceOf[DrawerActionType]
+    inline def openDrawer(): DrawerActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("openDrawer")().asInstanceOf[DrawerActionType]
     
-    @scala.inline
-    def toggleDrawer(): DrawerActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleDrawer")().asInstanceOf[DrawerActionType]
+    inline def toggleDrawer(): DrawerActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleDrawer")().asInstanceOf[DrawerActionType]
   }
   
   trait DrawerActionHelpers[ParamList /* <: ParamListBase */]
@@ -71,8 +65,7 @@ object drawerRouterMod {
   }
   object DrawerActionHelpers {
     
-    @scala.inline
-    def apply[ParamList /* <: ParamListBase */](
+    inline def apply[ParamList /* <: ParamListBase */](
       closeDrawer: () => Unit,
       jumpTo: (js.Tuple2[
           js.Any, 
@@ -85,17 +78,13 @@ object drawerRouterMod {
       __obj.asInstanceOf[DrawerActionHelpers[ParamList]]
     }
     
-    @scala.inline
-    implicit class DrawerActionHelpersMutableBuilder[Self <: DrawerActionHelpers[?], ParamList /* <: ParamListBase */] (val x: Self & DrawerActionHelpers[ParamList]) extends AnyVal {
+    extension [Self <: DrawerActionHelpers[?], ParamList /* <: ParamListBase */](x: Self & DrawerActionHelpers[ParamList]) {
       
-      @scala.inline
-      def setCloseDrawer(value: () => Unit): Self = StObject.set(x, "closeDrawer", js.Any.fromFunction0(value))
+      inline def setCloseDrawer(value: () => Unit): Self = StObject.set(x, "closeDrawer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOpenDrawer(value: () => Unit): Self = StObject.set(x, "openDrawer", js.Any.fromFunction0(value))
+      inline def setOpenDrawer(value: () => Unit): Self = StObject.set(x, "openDrawer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToggleDrawer(value: () => Unit): Self = StObject.set(x, "toggleDrawer", js.Any.fromFunction0(value))
+      inline def setToggleDrawer(value: () => Unit): Self = StObject.set(x, "toggleDrawer", js.Any.fromFunction0(value))
     }
   }
   
@@ -106,15 +95,13 @@ object drawerRouterMod {
   trait DrawerActionType extends StObject
   object DrawerActionType {
     
-    @scala.inline
-    def SourceTarget(`type`: OPEN_DRAWER | CLOSE_DRAWER | TOGGLE_DRAWER): typings.reactNavigationRouters.anon.SourceTarget = {
+    inline def SourceTarget(`type`: OPEN_DRAWER | CLOSE_DRAWER | TOGGLE_DRAWER): typings.reactNavigationRouters.anon.SourceTarget = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.reactNavigationRouters.anon.SourceTarget]
     }
     
-    @scala.inline
-    def TabActionType(payload: NameParams): typings.reactNavigationRouters.tabRouterMod.TabActionType = {
+    inline def TabActionType(payload: NameParams): typings.reactNavigationRouters.tabRouterMod.TabActionType = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("JUMP_TO")
       __obj.asInstanceOf[typings.reactNavigationRouters.tabRouterMod.TabActionType]
@@ -146,8 +133,7 @@ object drawerRouterMod {
   }
   object DrawerNavigationState {
     
-    @scala.inline
-    def apply[ParamList /* <: ParamListBase */](
+    inline def apply[ParamList /* <: ParamListBase */](
       history: js.Array[KeyType | `0`],
       index: Double,
       key: String,
@@ -159,38 +145,27 @@ object drawerRouterMod {
       __obj.asInstanceOf[DrawerNavigationState[ParamList]]
     }
     
-    @scala.inline
-    implicit class DrawerNavigationStateMutableBuilder[Self <: DrawerNavigationState[?], ParamList /* <: ParamListBase */] (val x: Self & DrawerNavigationState[ParamList]) extends AnyVal {
+    extension [Self <: DrawerNavigationState[?], ParamList /* <: ParamListBase */](x: Self & DrawerNavigationState[ParamList]) {
       
-      @scala.inline
-      def setHistory(value: js.Array[KeyType | `0`]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: js.Array[KeyType | `0`]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHistoryVarargs(value: (KeyType | `0`)*): Self = StObject.set(x, "history", js.Array(value :_*))
+      inline def setHistoryVarargs(value: (KeyType | `0`)*): Self = StObject.set(x, "history", js.Array(value :_*))
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouteNames(value: js.Array[Extract[/* keyof ParamList */ String, String]]): Self = StObject.set(x, "routeNames", value.asInstanceOf[js.Any])
+      inline def setRouteNames(value: js.Array[Extract[/* keyof ParamList */ String, String]]): Self = StObject.set(x, "routeNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouteNamesVarargs(value: (Extract[/* keyof ParamList */ String, String])*): Self = StObject.set(x, "routeNames", js.Array(value :_*))
+      inline def setRouteNamesVarargs(value: (Extract[/* keyof ParamList */ String, String])*): Self = StObject.set(x, "routeNames", js.Array(value :_*))
       
-      @scala.inline
-      def setRoutes(value: js.Array[NavigationRoute[ParamList, /* keyof ParamList */ String]]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+      inline def setRoutes(value: js.Array[NavigationRoute[ParamList, /* keyof ParamList */ String]]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutesVarargs(value: (NavigationRoute[ParamList, /* keyof ParamList */ String])*): Self = StObject.set(x, "routes", js.Array(value :_*))
+      inline def setRoutesVarargs(value: (NavigationRoute[ParamList, /* keyof ParamList */ String])*): Self = StObject.set(x, "routes", js.Array(value :_*))
       
-      @scala.inline
-      def setStale(value: `false`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
+      inline def setStale(value: `false`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: drawer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: drawer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -202,20 +177,16 @@ object drawerRouterMod {
   }
   object DrawerRouterOptions {
     
-    @scala.inline
-    def apply(): DrawerRouterOptions = {
+    inline def apply(): DrawerRouterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DrawerRouterOptions]
     }
     
-    @scala.inline
-    implicit class DrawerRouterOptionsMutableBuilder[Self <: DrawerRouterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DrawerRouterOptions](x: Self) {
       
-      @scala.inline
-      def setOpenByDefault(value: Boolean): Self = StObject.set(x, "openByDefault", value.asInstanceOf[js.Any])
+      inline def setOpenByDefault(value: Boolean): Self = StObject.set(x, "openByDefault", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenByDefaultUndefined: Self = StObject.set(x, "openByDefault", js.undefined)
+      inline def setOpenByDefaultUndefined: Self = StObject.set(x, "openByDefault", js.undefined)
     }
   }
 }

@@ -35,8 +35,7 @@ trait screen extends StObject {
 }
 object screen {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bounds: Height,
     id: Double,
     isBuiltIn: Boolean,
@@ -49,28 +48,20 @@ object screen {
     __obj.asInstanceOf[screen]
   }
   
-  @scala.inline
-  implicit class screenMutableBuilder[Self <: screen] (val x: Self) extends AnyVal {
+  extension [Self <: screen](x: Self) {
     
-    @scala.inline
-    def setBounds(value: Height): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: Height): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBuiltIn(value: Boolean): Self = StObject.set(x, "isBuiltIn", value.asInstanceOf[js.Any])
+    inline def setIsBuiltIn(value: Boolean): Self = StObject.set(x, "isBuiltIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
+    inline def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchSupport(value: Double): Self = StObject.set(x, "touchSupport", value.asInstanceOf[js.Any])
+    inline def setTouchSupport(value: Double): Self = StObject.set(x, "touchSupport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWork_area(value: Height): Self = StObject.set(x, "work_area", value.asInstanceOf[js.Any])
+    inline def setWork_area(value: Height): Self = StObject.set(x, "work_area", value.asInstanceOf[js.Any])
   }
 }

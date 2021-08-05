@@ -13,22 +13,17 @@ trait PutEvaluationsResponse extends StObject {
 }
 object PutEvaluationsResponse {
   
-  @scala.inline
-  def apply(): PutEvaluationsResponse = {
+  inline def apply(): PutEvaluationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutEvaluationsResponse]
   }
   
-  @scala.inline
-  implicit class PutEvaluationsResponseMutableBuilder[Self <: PutEvaluationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PutEvaluationsResponse](x: Self) {
     
-    @scala.inline
-    def setFailedEvaluations(value: Evaluations): Self = StObject.set(x, "FailedEvaluations", value.asInstanceOf[js.Any])
+    inline def setFailedEvaluations(value: Evaluations): Self = StObject.set(x, "FailedEvaluations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedEvaluationsUndefined: Self = StObject.set(x, "FailedEvaluations", js.undefined)
+    inline def setFailedEvaluationsUndefined: Self = StObject.set(x, "FailedEvaluations", js.undefined)
     
-    @scala.inline
-    def setFailedEvaluationsVarargs(value: Evaluation*): Self = StObject.set(x, "FailedEvaluations", js.Array(value :_*))
+    inline def setFailedEvaluationsVarargs(value: Evaluation*): Self = StObject.set(x, "FailedEvaluations", js.Array(value :_*))
   }
 }

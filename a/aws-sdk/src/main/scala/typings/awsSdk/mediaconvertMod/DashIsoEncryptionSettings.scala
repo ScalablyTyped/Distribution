@@ -18,25 +18,19 @@ trait DashIsoEncryptionSettings extends StObject {
 }
 object DashIsoEncryptionSettings {
   
-  @scala.inline
-  def apply(): DashIsoEncryptionSettings = {
+  inline def apply(): DashIsoEncryptionSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DashIsoEncryptionSettings]
   }
   
-  @scala.inline
-  implicit class DashIsoEncryptionSettingsMutableBuilder[Self <: DashIsoEncryptionSettings] (val x: Self) extends AnyVal {
+  extension [Self <: DashIsoEncryptionSettings](x: Self) {
     
-    @scala.inline
-    def setPlaybackDeviceCompatibility(value: DashIsoPlaybackDeviceCompatibility): Self = StObject.set(x, "PlaybackDeviceCompatibility", value.asInstanceOf[js.Any])
+    inline def setPlaybackDeviceCompatibility(value: DashIsoPlaybackDeviceCompatibility): Self = StObject.set(x, "PlaybackDeviceCompatibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaybackDeviceCompatibilityUndefined: Self = StObject.set(x, "PlaybackDeviceCompatibility", js.undefined)
+    inline def setPlaybackDeviceCompatibilityUndefined: Self = StObject.set(x, "PlaybackDeviceCompatibility", js.undefined)
     
-    @scala.inline
-    def setSpekeKeyProvider(value: SpekeKeyProvider): Self = StObject.set(x, "SpekeKeyProvider", value.asInstanceOf[js.Any])
+    inline def setSpekeKeyProvider(value: SpekeKeyProvider): Self = StObject.set(x, "SpekeKeyProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpekeKeyProviderUndefined: Self = StObject.set(x, "SpekeKeyProvider", js.undefined)
+    inline def setSpekeKeyProviderUndefined: Self = StObject.set(x, "SpekeKeyProvider", js.undefined)
   }
 }

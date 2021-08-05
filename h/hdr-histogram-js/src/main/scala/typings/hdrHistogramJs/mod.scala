@@ -45,16 +45,14 @@ object mod {
     @JSImport("hdr-histogram-js", "AbstractHistogram.decodeFromByteBuffer")
     @js.native
     def decodeFromByteBuffer: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof doDecodeFromByteBuffer */ js.Any = js.native
-    @scala.inline
-    def decodeFromByteBuffer_=(
+    inline def decodeFromByteBuffer_=(
       x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof doDecodeFromByteBuffer */ js.Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decodeFromByteBuffer")(x.asInstanceOf[js.Any])
     
     @JSImport("hdr-histogram-js", "AbstractHistogram.decodeFromCompressedByteBuffer")
     @js.native
     def decodeFromCompressedByteBuffer: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof doDecodeFromCompressedByteBuffer */ js.Any = js.native
-    @scala.inline
-    def decodeFromCompressedByteBuffer_=(
+    inline def decodeFromCompressedByteBuffer_=(
       x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof doDecodeFromCompressedByteBuffer */ js.Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decodeFromCompressedByteBuffer")(x.asInstanceOf[js.Any])
   }
@@ -71,10 +69,8 @@ object mod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def allocate(): typings.hdrHistogramJs.byteBufferMod.ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("allocate")().asInstanceOf[typings.hdrHistogramJs.byteBufferMod.ByteBuffer]
-    @scala.inline
-    def allocate(size: Double): typings.hdrHistogramJs.byteBufferMod.ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("allocate")(size.asInstanceOf[js.Any]).asInstanceOf[typings.hdrHistogramJs.byteBufferMod.ByteBuffer]
+    inline def allocate(): typings.hdrHistogramJs.byteBufferMod.ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("allocate")().asInstanceOf[typings.hdrHistogramJs.byteBufferMod.ByteBuffer]
+    inline def allocate(size: Double): typings.hdrHistogramJs.byteBufferMod.ByteBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("allocate")(size.asInstanceOf[js.Any]).asInstanceOf[typings.hdrHistogramJs.byteBufferMod.ByteBuffer]
   }
   
   @JSImport("hdr-histogram-js", "Float64Histogram")
@@ -107,16 +103,14 @@ object mod {
     @JSImport("hdr-histogram-js", "Histogram.decodeFromByteBuffer")
     @js.native
     def decodeFromByteBuffer: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof doDecodeFromByteBuffer */ js.Any = js.native
-    @scala.inline
-    def decodeFromByteBuffer_=(
+    inline def decodeFromByteBuffer_=(
       x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof doDecodeFromByteBuffer */ js.Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decodeFromByteBuffer")(x.asInstanceOf[js.Any])
     
     @JSImport("hdr-histogram-js", "Histogram.decodeFromCompressedByteBuffer")
     @js.native
     def decodeFromCompressedByteBuffer: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof doDecodeFromCompressedByteBuffer */ js.Any = js.native
-    @scala.inline
-    def decodeFromCompressedByteBuffer_=(
+    inline def decodeFromCompressedByteBuffer_=(
       x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof doDecodeFromCompressedByteBuffer */ js.Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decodeFromCompressedByteBuffer")(x.asInstanceOf[js.Any])
   }
@@ -294,8 +288,7 @@ object mod {
     @JSImport("hdr-histogram-js", "Recorder.idGenerator")
     @js.native
     def idGenerator: Double = js.native
-    @scala.inline
-    def idGenerator_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("idGenerator")(x.asInstanceOf[js.Any])
+    inline def idGenerator_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("idGenerator")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("hdr-histogram-js", "SparseArrayHistogram")
@@ -309,19 +302,13 @@ object mod {
     ) = this()
   }
   
-  @scala.inline
-  def build(): typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram = ^.asInstanceOf[js.Dynamic].applyDynamic("build")().asInstanceOf[typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram]
-  @scala.inline
-  def build(request: BuildRequest): typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(request.asInstanceOf[js.Any]).asInstanceOf[typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram]
+  inline def build(): typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram = ^.asInstanceOf[js.Dynamic].applyDynamic("build")().asInstanceOf[typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram]
+  inline def build(request: BuildRequest): typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(request.asInstanceOf[js.Any]).asInstanceOf[typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram]
   
-  @scala.inline
-  def decodeFromCompressedBase64(base64String: String): typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeFromCompressedBase64")(base64String.asInstanceOf[js.Any]).asInstanceOf[typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram]
-  @scala.inline
-  def decodeFromCompressedBase64(base64String: String, histogramConstr: Unit, minBarForHighestTrackableValue: Double): typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeFromCompressedBase64")(base64String.asInstanceOf[js.Any], histogramConstr.asInstanceOf[js.Any], minBarForHighestTrackableValue.asInstanceOf[js.Any])).asInstanceOf[typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram]
-  @scala.inline
-  def decodeFromCompressedBase64(base64String: String, histogramConstr: HistogramConstructor): typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeFromCompressedBase64")(base64String.asInstanceOf[js.Any], histogramConstr.asInstanceOf[js.Any])).asInstanceOf[typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram]
-  @scala.inline
-  def decodeFromCompressedBase64(
+  inline def decodeFromCompressedBase64(base64String: String): typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeFromCompressedBase64")(base64String.asInstanceOf[js.Any]).asInstanceOf[typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram]
+  inline def decodeFromCompressedBase64(base64String: String, histogramConstr: Unit, minBarForHighestTrackableValue: Double): typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeFromCompressedBase64")(base64String.asInstanceOf[js.Any], histogramConstr.asInstanceOf[js.Any], minBarForHighestTrackableValue.asInstanceOf[js.Any])).asInstanceOf[typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram]
+  inline def decodeFromCompressedBase64(base64String: String, histogramConstr: HistogramConstructor): typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeFromCompressedBase64")(base64String.asInstanceOf[js.Any], histogramConstr.asInstanceOf[js.Any])).asInstanceOf[typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram]
+  inline def decodeFromCompressedBase64(
     base64String: String,
     histogramConstr: HistogramConstructor,
     minBarForHighestTrackableValue: Double
@@ -331,13 +318,10 @@ object mod {
   @js.native
   val defaultRequest: BuildRequest = js.native
   
-  @scala.inline
-  def encodeIntoBase64String(histogram: typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeIntoBase64String")(histogram.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def encodeIntoBase64String(histogram: typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram, compressionLevel: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeIntoBase64String")(histogram.asInstanceOf[js.Any], compressionLevel.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def encodeIntoBase64String(histogram: typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeIntoBase64String")(histogram.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def encodeIntoBase64String(histogram: typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram, compressionLevel: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeIntoBase64String")(histogram.asInstanceOf[js.Any], compressionLevel.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def listTags(content: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("listTags")(content.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def listTags(content: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("listTags")(content.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   trait BuildRequest extends StObject {
     
@@ -379,44 +363,32 @@ object mod {
   }
   object BuildRequest {
     
-    @scala.inline
-    def apply(): BuildRequest = {
+    inline def apply(): BuildRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BuildRequest]
     }
     
-    @scala.inline
-    implicit class BuildRequestMutableBuilder[Self <: BuildRequest] (val x: Self) extends AnyVal {
+    extension [Self <: BuildRequest](x: Self) {
       
-      @scala.inline
-      def setAutoResize(value: Boolean): Self = StObject.set(x, "autoResize", value.asInstanceOf[js.Any])
+      inline def setAutoResize(value: Boolean): Self = StObject.set(x, "autoResize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoResizeUndefined: Self = StObject.set(x, "autoResize", js.undefined)
+      inline def setAutoResizeUndefined: Self = StObject.set(x, "autoResize", js.undefined)
       
-      @scala.inline
-      def setBitBucketSize(value: `8` | `16` | `32` | `64` | packed | sparse_array): Self = StObject.set(x, "bitBucketSize", value.asInstanceOf[js.Any])
+      inline def setBitBucketSize(value: `8` | `16` | `32` | `64` | packed | sparse_array): Self = StObject.set(x, "bitBucketSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBitBucketSizeUndefined: Self = StObject.set(x, "bitBucketSize", js.undefined)
+      inline def setBitBucketSizeUndefined: Self = StObject.set(x, "bitBucketSize", js.undefined)
       
-      @scala.inline
-      def setHighestTrackableValue(value: Double): Self = StObject.set(x, "highestTrackableValue", value.asInstanceOf[js.Any])
+      inline def setHighestTrackableValue(value: Double): Self = StObject.set(x, "highestTrackableValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighestTrackableValueUndefined: Self = StObject.set(x, "highestTrackableValue", js.undefined)
+      inline def setHighestTrackableValueUndefined: Self = StObject.set(x, "highestTrackableValue", js.undefined)
       
-      @scala.inline
-      def setLowestDiscernibleValue(value: Double): Self = StObject.set(x, "lowestDiscernibleValue", value.asInstanceOf[js.Any])
+      inline def setLowestDiscernibleValue(value: Double): Self = StObject.set(x, "lowestDiscernibleValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLowestDiscernibleValueUndefined: Self = StObject.set(x, "lowestDiscernibleValue", js.undefined)
+      inline def setLowestDiscernibleValueUndefined: Self = StObject.set(x, "lowestDiscernibleValue", js.undefined)
       
-      @scala.inline
-      def setNumberOfSignificantValueDigits(value: `1` | `2` | `3` | `4` | `5`): Self = StObject.set(x, "numberOfSignificantValueDigits", value.asInstanceOf[js.Any])
+      inline def setNumberOfSignificantValueDigits(value: `1` | `2` | `3` | `4` | `5`): Self = StObject.set(x, "numberOfSignificantValueDigits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberOfSignificantValueDigitsUndefined: Self = StObject.set(x, "numberOfSignificantValueDigits", js.undefined)
+      inline def setNumberOfSignificantValueDigitsUndefined: Self = StObject.set(x, "numberOfSignificantValueDigits", js.undefined)
     }
   }
 }

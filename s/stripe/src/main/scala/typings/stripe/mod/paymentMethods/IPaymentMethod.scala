@@ -13,16 +13,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait IPaymentMethod extends StObject
 object IPaymentMethod {
   
-  @scala.inline
-  def ICardPaymentMethod(card: Checks, created: Double, id: String, livemode: Boolean, metadata: IMetadata): typings.stripe.mod.paymentMethods.ICardPaymentMethod = {
+  inline def ICardPaymentMethod(card: Checks, created: Double, id: String, livemode: Boolean, metadata: IMetadata): typings.stripe.mod.paymentMethods.ICardPaymentMethod = {
     val __obj = js.Dynamic.literal(card = card.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], billing_details = null, customer = null)
     __obj.updateDynamic("object")("payment_method")
     __obj.updateDynamic("type")("card")
     __obj.asInstanceOf[typings.stripe.mod.paymentMethods.ICardPaymentMethod]
   }
   
-  @scala.inline
-  def ICardPresentPaymentMethod(created: Double, id: String, livemode: Boolean, metadata: IMetadata): typings.stripe.mod.paymentMethods.ICardPresentPaymentMethod = {
+  inline def ICardPresentPaymentMethod(created: Double, id: String, livemode: Boolean, metadata: IMetadata): typings.stripe.mod.paymentMethods.ICardPresentPaymentMethod = {
     val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], billing_details = null, customer = null)
     __obj.updateDynamic("object")("payment_method")
     __obj.updateDynamic("type")("card_present")

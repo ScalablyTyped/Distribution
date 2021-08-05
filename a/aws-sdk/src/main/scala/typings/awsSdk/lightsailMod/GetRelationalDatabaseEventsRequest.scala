@@ -23,28 +23,21 @@ trait GetRelationalDatabaseEventsRequest extends StObject {
 }
 object GetRelationalDatabaseEventsRequest {
   
-  @scala.inline
-  def apply(relationalDatabaseName: ResourceName): GetRelationalDatabaseEventsRequest = {
+  inline def apply(relationalDatabaseName: ResourceName): GetRelationalDatabaseEventsRequest = {
     val __obj = js.Dynamic.literal(relationalDatabaseName = relationalDatabaseName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRelationalDatabaseEventsRequest]
   }
   
-  @scala.inline
-  implicit class GetRelationalDatabaseEventsRequestMutableBuilder[Self <: GetRelationalDatabaseEventsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetRelationalDatabaseEventsRequest](x: Self) {
     
-    @scala.inline
-    def setDurationInMinutes(value: integer): Self = StObject.set(x, "durationInMinutes", value.asInstanceOf[js.Any])
+    inline def setDurationInMinutes(value: integer): Self = StObject.set(x, "durationInMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationInMinutesUndefined: Self = StObject.set(x, "durationInMinutes", js.undefined)
+    inline def setDurationInMinutesUndefined: Self = StObject.set(x, "durationInMinutes", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseName", value.asInstanceOf[js.Any])
+    inline def setRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseName", value.asInstanceOf[js.Any])
   }
 }

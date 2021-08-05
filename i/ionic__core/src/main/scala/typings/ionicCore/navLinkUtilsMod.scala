@@ -15,148 +15,125 @@ object navLinkUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def navLink(el: HTMLElement, routerDirection: RouterDirection): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("navLink")(el.asInstanceOf[js.Any], routerDirection.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def navLink(el: HTMLElement, routerDirection: RouterDirection, component: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("navLink")(el.asInstanceOf[js.Any], routerDirection.asInstanceOf[js.Any], component.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def navLink(
+  inline def navLink(el: HTMLElement, routerDirection: RouterDirection): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("navLink")(el.asInstanceOf[js.Any], routerDirection.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  inline def navLink(el: HTMLElement, routerDirection: RouterDirection, component: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("navLink")(el.asInstanceOf[js.Any], routerDirection.asInstanceOf[js.Any], component.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  inline def navLink(
     el: HTMLElement,
     routerDirection: RouterDirection,
     component: String,
     componentProps: Unit,
     routerAnimation: AnimationBuilder
   ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("navLink")(el.asInstanceOf[js.Any], routerDirection.asInstanceOf[js.Any], component.asInstanceOf[js.Any], componentProps.asInstanceOf[js.Any], routerAnimation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def navLink(
+  inline def navLink(
     el: HTMLElement,
     routerDirection: RouterDirection,
     component: String,
     componentProps: ComponentProps[Null]
   ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("navLink")(el.asInstanceOf[js.Any], routerDirection.asInstanceOf[js.Any], component.asInstanceOf[js.Any], componentProps.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def navLink(
+  inline def navLink(
     el: HTMLElement,
     routerDirection: RouterDirection,
     component: String,
     componentProps: ComponentProps[Null],
     routerAnimation: AnimationBuilder
   ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("navLink")(el.asInstanceOf[js.Any], routerDirection.asInstanceOf[js.Any], component.asInstanceOf[js.Any], componentProps.asInstanceOf[js.Any], routerAnimation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def navLink(el: HTMLElement, routerDirection: RouterDirection, component: js.Function): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("navLink")(el.asInstanceOf[js.Any], routerDirection.asInstanceOf[js.Any], component.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def navLink(
+  inline def navLink(el: HTMLElement, routerDirection: RouterDirection, component: js.Function): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("navLink")(el.asInstanceOf[js.Any], routerDirection.asInstanceOf[js.Any], component.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  inline def navLink(
     el: HTMLElement,
     routerDirection: RouterDirection,
     component: js.Function,
     componentProps: Unit,
     routerAnimation: AnimationBuilder
   ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("navLink")(el.asInstanceOf[js.Any], routerDirection.asInstanceOf[js.Any], component.asInstanceOf[js.Any], componentProps.asInstanceOf[js.Any], routerAnimation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def navLink(
+  inline def navLink(
     el: HTMLElement,
     routerDirection: RouterDirection,
     component: js.Function,
     componentProps: ComponentProps[Null]
   ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("navLink")(el.asInstanceOf[js.Any], routerDirection.asInstanceOf[js.Any], component.asInstanceOf[js.Any], componentProps.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def navLink(
+  inline def navLink(
     el: HTMLElement,
     routerDirection: RouterDirection,
     component: js.Function,
     componentProps: ComponentProps[Null],
     routerAnimation: AnimationBuilder
   ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("navLink")(el.asInstanceOf[js.Any], routerDirection.asInstanceOf[js.Any], component.asInstanceOf[js.Any], componentProps.asInstanceOf[js.Any], routerAnimation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def navLink(
+  inline def navLink(
     el: HTMLElement,
     routerDirection: RouterDirection,
     component: Null,
     componentProps: Unit,
     routerAnimation: AnimationBuilder
   ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("navLink")(el.asInstanceOf[js.Any], routerDirection.asInstanceOf[js.Any], component.asInstanceOf[js.Any], componentProps.asInstanceOf[js.Any], routerAnimation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def navLink(
+  inline def navLink(
     el: HTMLElement,
     routerDirection: RouterDirection,
     component: Null,
     componentProps: ComponentProps[Null]
   ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("navLink")(el.asInstanceOf[js.Any], routerDirection.asInstanceOf[js.Any], component.asInstanceOf[js.Any], componentProps.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def navLink(
+  inline def navLink(
     el: HTMLElement,
     routerDirection: RouterDirection,
     component: Null,
     componentProps: ComponentProps[Null],
     routerAnimation: AnimationBuilder
   ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("navLink")(el.asInstanceOf[js.Any], routerDirection.asInstanceOf[js.Any], component.asInstanceOf[js.Any], componentProps.asInstanceOf[js.Any], routerAnimation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def navLink(
+  inline def navLink(
     el: HTMLElement,
     routerDirection: RouterDirection,
     component: Unit,
     componentProps: Unit,
     routerAnimation: AnimationBuilder
   ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("navLink")(el.asInstanceOf[js.Any], routerDirection.asInstanceOf[js.Any], component.asInstanceOf[js.Any], componentProps.asInstanceOf[js.Any], routerAnimation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def navLink(
+  inline def navLink(
     el: HTMLElement,
     routerDirection: RouterDirection,
     component: Unit,
     componentProps: ComponentProps[Null]
   ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("navLink")(el.asInstanceOf[js.Any], routerDirection.asInstanceOf[js.Any], component.asInstanceOf[js.Any], componentProps.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def navLink(
+  inline def navLink(
     el: HTMLElement,
     routerDirection: RouterDirection,
     component: Unit,
     componentProps: ComponentProps[Null],
     routerAnimation: AnimationBuilder
   ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("navLink")(el.asInstanceOf[js.Any], routerDirection.asInstanceOf[js.Any], component.asInstanceOf[js.Any], componentProps.asInstanceOf[js.Any], routerAnimation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def navLink(el: HTMLElement, routerDirection: RouterDirection, component: ViewController): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("navLink")(el.asInstanceOf[js.Any], routerDirection.asInstanceOf[js.Any], component.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def navLink(
+  inline def navLink(el: HTMLElement, routerDirection: RouterDirection, component: ViewController): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("navLink")(el.asInstanceOf[js.Any], routerDirection.asInstanceOf[js.Any], component.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  inline def navLink(
     el: HTMLElement,
     routerDirection: RouterDirection,
     component: ViewController,
     componentProps: Unit,
     routerAnimation: AnimationBuilder
   ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("navLink")(el.asInstanceOf[js.Any], routerDirection.asInstanceOf[js.Any], component.asInstanceOf[js.Any], componentProps.asInstanceOf[js.Any], routerAnimation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def navLink(
+  inline def navLink(
     el: HTMLElement,
     routerDirection: RouterDirection,
     component: ViewController,
     componentProps: ComponentProps[Null]
   ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("navLink")(el.asInstanceOf[js.Any], routerDirection.asInstanceOf[js.Any], component.asInstanceOf[js.Any], componentProps.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def navLink(
+  inline def navLink(
     el: HTMLElement,
     routerDirection: RouterDirection,
     component: ViewController,
     componentProps: ComponentProps[Null],
     routerAnimation: AnimationBuilder
   ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("navLink")(el.asInstanceOf[js.Any], routerDirection.asInstanceOf[js.Any], component.asInstanceOf[js.Any], componentProps.asInstanceOf[js.Any], routerAnimation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def navLink(el: HTMLElement, routerDirection: RouterDirection, component: HTMLElement): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("navLink")(el.asInstanceOf[js.Any], routerDirection.asInstanceOf[js.Any], component.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def navLink(
+  inline def navLink(el: HTMLElement, routerDirection: RouterDirection, component: HTMLElement): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("navLink")(el.asInstanceOf[js.Any], routerDirection.asInstanceOf[js.Any], component.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  inline def navLink(
     el: HTMLElement,
     routerDirection: RouterDirection,
     component: HTMLElement,
     componentProps: Unit,
     routerAnimation: AnimationBuilder
   ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("navLink")(el.asInstanceOf[js.Any], routerDirection.asInstanceOf[js.Any], component.asInstanceOf[js.Any], componentProps.asInstanceOf[js.Any], routerAnimation.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def navLink(
+  inline def navLink(
     el: HTMLElement,
     routerDirection: RouterDirection,
     component: HTMLElement,
     componentProps: ComponentProps[Null]
   ): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("navLink")(el.asInstanceOf[js.Any], routerDirection.asInstanceOf[js.Any], component.asInstanceOf[js.Any], componentProps.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
-  @scala.inline
-  def navLink(
+  inline def navLink(
     el: HTMLElement,
     routerDirection: RouterDirection,
     component: HTMLElement,

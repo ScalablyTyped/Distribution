@@ -21,28 +21,21 @@ trait SchemaResellernotifyGetwatchdetailsResponse extends StObject {
 }
 object SchemaResellernotifyGetwatchdetailsResponse {
   
-  @scala.inline
-  def apply(): SchemaResellernotifyGetwatchdetailsResponse = {
+  inline def apply(): SchemaResellernotifyGetwatchdetailsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaResellernotifyGetwatchdetailsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaResellernotifyGetwatchdetailsResponseMutableBuilder[Self <: SchemaResellernotifyGetwatchdetailsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaResellernotifyGetwatchdetailsResponse](x: Self) {
     
-    @scala.inline
-    def setServiceAccountEmailAddresses(value: js.Array[String]): Self = StObject.set(x, "serviceAccountEmailAddresses", value.asInstanceOf[js.Any])
+    inline def setServiceAccountEmailAddresses(value: js.Array[String]): Self = StObject.set(x, "serviceAccountEmailAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccountEmailAddressesUndefined: Self = StObject.set(x, "serviceAccountEmailAddresses", js.undefined)
+    inline def setServiceAccountEmailAddressesUndefined: Self = StObject.set(x, "serviceAccountEmailAddresses", js.undefined)
     
-    @scala.inline
-    def setServiceAccountEmailAddressesVarargs(value: String*): Self = StObject.set(x, "serviceAccountEmailAddresses", js.Array(value :_*))
+    inline def setServiceAccountEmailAddressesVarargs(value: String*): Self = StObject.set(x, "serviceAccountEmailAddresses", js.Array(value :_*))
     
-    @scala.inline
-    def setTopicName(value: String): Self = StObject.set(x, "topicName", value.asInstanceOf[js.Any])
+    inline def setTopicName(value: String): Self = StObject.set(x, "topicName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicNameUndefined: Self = StObject.set(x, "topicName", js.undefined)
+    inline def setTopicNameUndefined: Self = StObject.set(x, "topicName", js.undefined)
   }
 }

@@ -13,8 +13,7 @@ object uniqueMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def unique(args: AttrsUniqueAttrs): js.Array[TensorInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("unique")(args.asInstanceOf[js.Any]).asInstanceOf[js.Array[TensorInfo]]
+  inline def unique(args: AttrsUniqueAttrs): js.Array[TensorInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("unique")(args.asInstanceOf[js.Any]).asInstanceOf[js.Array[TensorInfo]]
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/Unique", "uniqueConfig")
   @js.native

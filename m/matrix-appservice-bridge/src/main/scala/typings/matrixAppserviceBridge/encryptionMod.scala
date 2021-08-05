@@ -35,24 +35,24 @@ object encryptionMod {
       getIntent: js.Function1[/* userId */ String, Intent]
     ) = this()
     
-    var asBot: js.Any = js.native
+    /* private */ var asBot: js.Any = js.native
     
     /**
       * Stop syncing clients used for encryption
       */
     def close(): Unit = js.native
     
-    var eventsPendingAS: js.Any = js.native
+    /* private */ var eventsPendingAS: js.Any = js.native
     
-    var eventsPendingSync: js.Any = js.native
+    /* private */ var eventsPendingSync: js.Any = js.native
     
-    var getIntent: js.Any = js.native
+    /* private */ var getIntent: js.Any = js.native
     
-    var handleEvent: js.Any = js.native
+    /* private */ var handleEvent: js.Any = js.native
     
-    var handledEvents: js.Any = js.native
+    /* private */ var handledEvents: js.Any = js.native
     
-    var membership: js.Any = js.native
+    /* private */ var membership: js.Any = js.native
     
     /**
       * Called when the bridge gets an event through an appservice transaction.
@@ -61,21 +61,21 @@ object encryptionMod {
       */
     def onASEvent(event: WeakEvent): js.Promise[Boolean] = js.native
     
-    var onEphemeralEvent: js.Any = js.native
+    /* private */ var onEphemeralEvent: js.Any = js.native
     
-    var onEvent: js.Any = js.native
+    /* private */ var onEvent: js.Any = js.native
     
-    var onPresence: js.Any = js.native
+    /* private */ var onPresence: js.Any = js.native
     
-    var onReceipt: js.Any = js.native
+    /* private */ var onReceipt: js.Any = js.native
     
-    var onSyncEvent: js.Any = js.native
+    /* private */ var onSyncEvent: js.Any = js.native
     
-    var onTyping: js.Any = js.native
+    /* private */ var onTyping: js.Any = js.native
     
-    var presenceCleanupInterval: js.Any = js.native
+    /* private */ var presenceCleanupInterval: js.Any = js.native
     
-    var receivedPresence: js.Any = js.native
+    /* private */ var receivedPresence: js.Any = js.native
     
     def shouldAvoidCull(intent: Intent): Boolean = js.native
     
@@ -85,9 +85,9 @@ object encryptionMod {
       */
     def startSyncingUser(userId: String): js.Promise[Unit] = js.native
     
-    var syncingClients: js.Any = js.native
+    /* private */ var syncingClients: js.Any = js.native
     
-    var userForRoom: js.Any = js.native
+    /* private */ var userForRoom: js.Any = js.native
   }
   /* static members */
   object EncryptedEventBroker {
@@ -96,8 +96,7 @@ object encryptionMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def supportsLoginFlow(loginFlows: Flows): js.UndefOr[TypeString] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsLoginFlow")(loginFlows.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[TypeString]]
+    inline def supportsLoginFlow(loginFlows: Flows): js.UndefOr[TypeString] = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsLoginFlow")(loginFlows.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[TypeString]]
   }
   
   trait ClientEncryptionSession extends StObject {
@@ -110,23 +109,18 @@ object encryptionMod {
   }
   object ClientEncryptionSession {
     
-    @scala.inline
-    def apply(accessToken: String, deviceId: String, userId: String): ClientEncryptionSession = {
+    inline def apply(accessToken: String, deviceId: String, userId: String): ClientEncryptionSession = {
       val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any], deviceId = deviceId.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientEncryptionSession]
     }
     
-    @scala.inline
-    implicit class ClientEncryptionSessionMutableBuilder[Self <: ClientEncryptionSession] (val x: Self) extends AnyVal {
+    extension [Self <: ClientEncryptionSession](x: Self) {
       
-      @scala.inline
-      def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+      inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+      inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+      inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -138,8 +132,7 @@ object encryptionMod {
   }
   object ClientEncryptionStore {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getStoredSession: String => js.Promise[ClientEncryptionSession | Null],
       setStoredSession: ClientEncryptionSession => js.Promise[Unit]
     ): ClientEncryptionStore = {
@@ -147,14 +140,11 @@ object encryptionMod {
       __obj.asInstanceOf[ClientEncryptionStore]
     }
     
-    @scala.inline
-    implicit class ClientEncryptionStoreMutableBuilder[Self <: ClientEncryptionStore] (val x: Self) extends AnyVal {
+    extension [Self <: ClientEncryptionStore](x: Self) {
       
-      @scala.inline
-      def setGetStoredSession(value: String => js.Promise[ClientEncryptionSession | Null]): Self = StObject.set(x, "getStoredSession", js.Any.fromFunction1(value))
+      inline def setGetStoredSession(value: String => js.Promise[ClientEncryptionSession | Null]): Self = StObject.set(x, "getStoredSession", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetStoredSession(value: ClientEncryptionSession => js.Promise[Unit]): Self = StObject.set(x, "setStoredSession", js.Any.fromFunction1(value))
+      inline def setSetStoredSession(value: ClientEncryptionSession => js.Promise[Unit]): Self = StObject.set(x, "setStoredSession", js.Any.fromFunction1(value))
     }
   }
 }

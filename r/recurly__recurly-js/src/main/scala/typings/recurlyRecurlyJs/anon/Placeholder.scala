@@ -18,25 +18,19 @@ trait Placeholder extends StObject {
 }
 object Placeholder {
   
-  @scala.inline
-  def apply(): Placeholder = {
+  inline def apply(): Placeholder = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Placeholder]
   }
   
-  @scala.inline
-  implicit class PlaceholderMutableBuilder[Self <: Placeholder] (val x: Self) extends AnyVal {
+  extension [Self <: Placeholder](x: Self) {
     
-    @scala.inline
-    def setInvalid(value: CommonElementStyle): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
+    inline def setInvalid(value: CommonElementStyle): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
+    inline def setInvalidUndefined: Self = StObject.set(x, "invalid", js.undefined)
     
-    @scala.inline
-    def setPlaceholder(value: Content): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: Content): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
   }
 }

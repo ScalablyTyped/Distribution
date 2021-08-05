@@ -27,8 +27,7 @@ trait XSystemDependentWindowPeer
 }
 object XSystemDependentWindowPeer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getWindowHandle: (SeqEquiv[Double], Double) => js.Any,
     queryInterface: `type` => js.Any,
@@ -38,10 +37,8 @@ object XSystemDependentWindowPeer {
     __obj.asInstanceOf[XSystemDependentWindowPeer]
   }
   
-  @scala.inline
-  implicit class XSystemDependentWindowPeerMutableBuilder[Self <: XSystemDependentWindowPeer] (val x: Self) extends AnyVal {
+  extension [Self <: XSystemDependentWindowPeer](x: Self) {
     
-    @scala.inline
-    def setGetWindowHandle(value: (SeqEquiv[Double], Double) => js.Any): Self = StObject.set(x, "getWindowHandle", js.Any.fromFunction2(value))
+    inline def setGetWindowHandle(value: (SeqEquiv[Double], Double) => js.Any): Self = StObject.set(x, "getWindowHandle", js.Any.fromFunction2(value))
   }
 }

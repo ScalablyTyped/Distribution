@@ -11,8 +11,7 @@ object useSelectTriggerControlMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     elements: js.Array[js.UndefOr[HTMLElement]],
     open: Boolean,
     triggerOpen: js.Function1[/* open */ Boolean, Unit]

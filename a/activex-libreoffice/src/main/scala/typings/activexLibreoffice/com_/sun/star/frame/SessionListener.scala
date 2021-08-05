@@ -18,8 +18,7 @@ trait SessionListener
 }
 object SessionListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     approveInteraction: Boolean => Unit,
     createWithOnQuitFlag: Boolean => Unit,
@@ -35,10 +34,8 @@ object SessionListener {
     __obj.asInstanceOf[SessionListener]
   }
   
-  @scala.inline
-  implicit class SessionListenerMutableBuilder[Self <: SessionListener] (val x: Self) extends AnyVal {
+  extension [Self <: SessionListener](x: Self) {
     
-    @scala.inline
-    def setCreateWithOnQuitFlag(value: Boolean => Unit): Self = StObject.set(x, "createWithOnQuitFlag", js.Any.fromFunction1(value))
+    inline def setCreateWithOnQuitFlag(value: Boolean => Unit): Self = StObject.set(x, "createWithOnQuitFlag", js.Any.fromFunction1(value))
   }
 }

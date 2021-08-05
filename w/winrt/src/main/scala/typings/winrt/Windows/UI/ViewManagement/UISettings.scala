@@ -11,8 +11,7 @@ trait UISettings
      with IUISettings
 object UISettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     animationsEnabled: Boolean,
     caretBlinkRate: Double,
     caretBrowsingEnabled: Boolean,

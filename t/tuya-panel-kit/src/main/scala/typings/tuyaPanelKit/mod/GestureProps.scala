@@ -23,31 +23,23 @@ trait GestureProps
 }
 object GestureProps {
   
-  @scala.inline
-  def apply(): GestureProps = {
+  inline def apply(): GestureProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GestureProps]
   }
   
-  @scala.inline
-  implicit class GesturePropsMutableBuilder[Self <: GestureProps] (val x: Self) extends AnyVal {
+  extension [Self <: GestureProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setPointerEvents(value: `box-none` | none_ | `box-only` | auto): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
+    inline def setPointerEvents(value: `box-none` | none_ | `box-only` | auto): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
+    inline def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
   }
 }

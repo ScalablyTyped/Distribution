@@ -47,8 +47,7 @@ trait ConditionalText
 }
 object ConditionalText {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
     AnchorTypes: SafeArray[TextContentAnchorType],
@@ -82,22 +81,16 @@ object ConditionalText {
     __obj.asInstanceOf[ConditionalText]
   }
   
-  @scala.inline
-  implicit class ConditionalTextMutableBuilder[Self <: ConditionalText] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalText](x: Self) {
     
-    @scala.inline
-    def setCondition(value: String): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: String): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
+    inline def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFalseContent(value: String): Self = StObject.set(x, "FalseContent", value.asInstanceOf[js.Any])
+    inline def setFalseContent(value: String): Self = StObject.set(x, "FalseContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsConditionTrue(value: Boolean): Self = StObject.set(x, "IsConditionTrue", value.asInstanceOf[js.Any])
+    inline def setIsConditionTrue(value: Boolean): Self = StObject.set(x, "IsConditionTrue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrueContent(value: String): Self = StObject.set(x, "TrueContent", value.asInstanceOf[js.Any])
+    inline def setTrueContent(value: String): Self = StObject.set(x, "TrueContent", value.asInstanceOf[js.Any])
   }
 }

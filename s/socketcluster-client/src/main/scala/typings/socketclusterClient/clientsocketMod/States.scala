@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait States extends StObject
 object States {
   
-  @scala.inline
-  def closed: typings.socketclusterClient.socketclusterClientStrings.closed = "closed".asInstanceOf[typings.socketclusterClient.socketclusterClientStrings.closed]
+  inline def closed: typings.socketclusterClient.socketclusterClientStrings.closed = "closed".asInstanceOf[typings.socketclusterClient.socketclusterClientStrings.closed]
   
-  @scala.inline
-  def connecting: typings.socketclusterClient.socketclusterClientStrings.connecting = "connecting".asInstanceOf[typings.socketclusterClient.socketclusterClientStrings.connecting]
+  inline def connecting: typings.socketclusterClient.socketclusterClientStrings.connecting = "connecting".asInstanceOf[typings.socketclusterClient.socketclusterClientStrings.connecting]
   
-  @scala.inline
-  def open: typings.socketclusterClient.socketclusterClientStrings.open = "open".asInstanceOf[typings.socketclusterClient.socketclusterClientStrings.open]
+  inline def open: typings.socketclusterClient.socketclusterClientStrings.open = "open".asInstanceOf[typings.socketclusterClient.socketclusterClientStrings.open]
 }

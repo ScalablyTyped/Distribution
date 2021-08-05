@@ -43,46 +43,33 @@ trait SchemaBlock extends StObject {
 }
 object SchemaBlock {
   
-  @scala.inline
-  def apply(): SchemaBlock = {
+  inline def apply(): SchemaBlock = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBlock]
   }
   
-  @scala.inline
-  implicit class SchemaBlockMutableBuilder[Self <: SchemaBlock] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBlock](x: Self) {
     
-    @scala.inline
-    def setBlockType(value: String): Self = StObject.set(x, "blockType", value.asInstanceOf[js.Any])
+    inline def setBlockType(value: String): Self = StObject.set(x, "blockType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockTypeUndefined: Self = StObject.set(x, "blockType", js.undefined)
+    inline def setBlockTypeUndefined: Self = StObject.set(x, "blockType", js.undefined)
     
-    @scala.inline
-    def setBoundingBox(value: SchemaBoundingPoly): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
+    inline def setBoundingBox(value: SchemaBoundingPoly): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundingBoxUndefined: Self = StObject.set(x, "boundingBox", js.undefined)
+    inline def setBoundingBoxUndefined: Self = StObject.set(x, "boundingBox", js.undefined)
     
-    @scala.inline
-    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
-    @scala.inline
-    def setParagraphs(value: js.Array[SchemaParagraph]): Self = StObject.set(x, "paragraphs", value.asInstanceOf[js.Any])
+    inline def setParagraphs(value: js.Array[SchemaParagraph]): Self = StObject.set(x, "paragraphs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParagraphsUndefined: Self = StObject.set(x, "paragraphs", js.undefined)
+    inline def setParagraphsUndefined: Self = StObject.set(x, "paragraphs", js.undefined)
     
-    @scala.inline
-    def setParagraphsVarargs(value: SchemaParagraph*): Self = StObject.set(x, "paragraphs", js.Array(value :_*))
+    inline def setParagraphsVarargs(value: SchemaParagraph*): Self = StObject.set(x, "paragraphs", js.Array(value :_*))
     
-    @scala.inline
-    def setProperty(value: SchemaTextProperty): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: SchemaTextProperty): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+    inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait KeyValueDifferFactory extends StObject {
 }
 object KeyValueDifferFactory {
   
-  @scala.inline
-  def apply(create: () => KeyValueDiffer[js.Any, js.Any], supports: js.Any => Boolean): KeyValueDifferFactory = {
+  inline def apply(create: () => KeyValueDiffer[js.Any, js.Any], supports: js.Any => Boolean): KeyValueDifferFactory = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction0(create), supports = js.Any.fromFunction1(supports))
     __obj.asInstanceOf[KeyValueDifferFactory]
   }
   
-  @scala.inline
-  implicit class KeyValueDifferFactoryMutableBuilder[Self <: KeyValueDifferFactory] (val x: Self) extends AnyVal {
+  extension [Self <: KeyValueDifferFactory](x: Self) {
     
-    @scala.inline
-    def setCreate(value: () => KeyValueDiffer[js.Any, js.Any]): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
+    inline def setCreate(value: () => KeyValueDiffer[js.Any, js.Any]): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSupports(value: js.Any => Boolean): Self = StObject.set(x, "supports", js.Any.fromFunction1(value))
+    inline def setSupports(value: js.Any => Boolean): Self = StObject.set(x, "supports", js.Any.fromFunction1(value))
   }
 }

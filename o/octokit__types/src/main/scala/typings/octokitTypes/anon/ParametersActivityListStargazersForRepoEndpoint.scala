@@ -21,8 +21,7 @@ trait ParametersActivityListStargazersForRepoEndpoint extends StObject {
 }
 object ParametersActivityListStargazersForRepoEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ActivityListStargazersForRepoEndpoint,
     request: ActivityListStargazersForRepoRequestOptions,
     response: OctokitResponse[
@@ -33,17 +32,13 @@ object ParametersActivityListStargazersForRepoEndpoint {
     __obj.asInstanceOf[ParametersActivityListStargazersForRepoEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersActivityListStargazersForRepoEndpointMutableBuilder[Self <: ParametersActivityListStargazersForRepoEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersActivityListStargazersForRepoEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ActivityListStargazersForRepoEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ActivityListStargazersForRepoEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ActivityListStargazersForRepoRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ActivityListStargazersForRepoRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(
+    inline def setResponse(
       value: OctokitResponse[
           ActivityListStargazersForRepoResponseData | ActivityListStargazersForRepoResponse200Data
         ]

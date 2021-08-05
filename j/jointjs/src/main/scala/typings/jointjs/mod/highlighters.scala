@@ -20,20 +20,17 @@ object highlighters {
   @JSImport("jointjs", "highlighters.addClass")
   @js.native
   def addClass: GenericHighlighter[typings.jointjs.jointjsStrings.addClass] = js.native
-  @scala.inline
-  def addClass_=(x: GenericHighlighter[addClass]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addClass")(x.asInstanceOf[js.Any])
+  inline def addClass_=(x: GenericHighlighter[addClass]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addClass")(x.asInstanceOf[js.Any])
   
   @JSImport("jointjs", "highlighters.opacity")
   @js.native
   def opacity: GenericHighlighter[typings.jointjs.jointjsStrings.opacity] = js.native
-  @scala.inline
-  def opacity_=(x: GenericHighlighter[opacity]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("opacity")(x.asInstanceOf[js.Any])
+  inline def opacity_=(x: GenericHighlighter[opacity]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("opacity")(x.asInstanceOf[js.Any])
   
   @JSImport("jointjs", "highlighters.stroke")
   @js.native
   def stroke: GenericHighlighter[typings.jointjs.jointjsStrings.stroke] = js.native
-  @scala.inline
-  def stroke_=(x: GenericHighlighter[stroke]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stroke")(x.asInstanceOf[js.Any])
+  inline def stroke_=(x: GenericHighlighter[stroke]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stroke")(x.asInstanceOf[js.Any])
   
   trait AddClassHighlighterArguments extends StObject {
     
@@ -41,20 +38,16 @@ object highlighters {
   }
   object AddClassHighlighterArguments {
     
-    @scala.inline
-    def apply(): AddClassHighlighterArguments = {
+    inline def apply(): AddClassHighlighterArguments = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AddClassHighlighterArguments]
     }
     
-    @scala.inline
-    implicit class AddClassHighlighterArgumentsMutableBuilder[Self <: AddClassHighlighterArguments] (val x: Self) extends AnyVal {
+    extension [Self <: AddClassHighlighterArguments](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     }
   }
   
@@ -78,23 +71,18 @@ object highlighters {
   }
   object GenericHighlighterJSON {
     
-    @scala.inline
-    def apply[K /* <: HighlighterType */](name: K): GenericHighlighterJSON[K] = {
+    inline def apply[K /* <: HighlighterType */](name: K): GenericHighlighterJSON[K] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenericHighlighterJSON[K]]
     }
     
-    @scala.inline
-    implicit class GenericHighlighterJSONMutableBuilder[Self <: GenericHighlighterJSON[?], K /* <: HighlighterType */] (val x: Self & GenericHighlighterJSON[K]) extends AnyVal {
+    extension [Self <: GenericHighlighterJSON[?], K /* <: HighlighterType */](x: Self & GenericHighlighterJSON[K]) {
       
-      @scala.inline
-      def setName(value: K): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: K): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: GenericHighlighterArguments[K]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: GenericHighlighterArguments[K]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     }
   }
   
@@ -111,20 +99,15 @@ object highlighters {
   trait HighlighterArguments extends StObject
   object HighlighterArguments {
     
-    @scala.inline
-    def attrs: typings.jointjs.jointjsStrings.attrs = "attrs".asInstanceOf[typings.jointjs.jointjsStrings.attrs]
+    inline def attrs: typings.jointjs.jointjsStrings.attrs = "attrs".asInstanceOf[typings.jointjs.jointjsStrings.attrs]
     
-    @scala.inline
-    def className: typings.jointjs.jointjsStrings.className = "className".asInstanceOf[typings.jointjs.jointjsStrings.className]
+    inline def className: typings.jointjs.jointjsStrings.className = "className".asInstanceOf[typings.jointjs.jointjsStrings.className]
     
-    @scala.inline
-    def padding: typings.jointjs.jointjsStrings.padding = "padding".asInstanceOf[typings.jointjs.jointjsStrings.padding]
+    inline def padding: typings.jointjs.jointjsStrings.padding = "padding".asInstanceOf[typings.jointjs.jointjsStrings.padding]
     
-    @scala.inline
-    def rx: typings.jointjs.jointjsStrings.rx = "rx".asInstanceOf[typings.jointjs.jointjsStrings.rx]
+    inline def rx: typings.jointjs.jointjsStrings.rx = "rx".asInstanceOf[typings.jointjs.jointjsStrings.rx]
     
-    @scala.inline
-    def ry: typings.jointjs.jointjsStrings.ry = "ry".asInstanceOf[typings.jointjs.jointjsStrings.ry]
+    inline def ry: typings.jointjs.jointjsStrings.ry = "ry".asInstanceOf[typings.jointjs.jointjsStrings.ry]
   }
   
   trait HighlighterArgumentsMap
@@ -139,8 +122,7 @@ object highlighters {
   }
   object HighlighterArgumentsMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addClass: AddClassHighlighterArguments,
       opacity: OpacityHighlighterArguments,
       stroke: StrokeHighlighterArguments
@@ -149,17 +131,13 @@ object highlighters {
       __obj.asInstanceOf[HighlighterArgumentsMap]
     }
     
-    @scala.inline
-    implicit class HighlighterArgumentsMapMutableBuilder[Self <: HighlighterArgumentsMap] (val x: Self) extends AnyVal {
+    extension [Self <: HighlighterArgumentsMap](x: Self) {
       
-      @scala.inline
-      def setAddClass(value: AddClassHighlighterArguments): Self = StObject.set(x, "addClass", value.asInstanceOf[js.Any])
+      inline def setAddClass(value: AddClassHighlighterArguments): Self = StObject.set(x, "addClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacity(value: OpacityHighlighterArguments): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: OpacityHighlighterArguments): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStroke(value: StrokeHighlighterArguments): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+      inline def setStroke(value: StrokeHighlighterArguments): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     }
   }
   
@@ -186,38 +164,28 @@ object highlighters {
   }
   object StrokeHighlighterArguments {
     
-    @scala.inline
-    def apply(): StrokeHighlighterArguments = {
+    inline def apply(): StrokeHighlighterArguments = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrokeHighlighterArguments]
     }
     
-    @scala.inline
-    implicit class StrokeHighlighterArgumentsMutableBuilder[Self <: StrokeHighlighterArguments] (val x: Self) extends AnyVal {
+    extension [Self <: StrokeHighlighterArguments](x: Self) {
       
-      @scala.inline
-      def setAttrs(value: NativeSVGAttributes): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      inline def setAttrs(value: NativeSVGAttributes): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
+      inline def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
       
-      @scala.inline
-      def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      @scala.inline
-      def setRx(value: Double): Self = StObject.set(x, "rx", value.asInstanceOf[js.Any])
+      inline def setRx(value: Double): Self = StObject.set(x, "rx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRxUndefined: Self = StObject.set(x, "rx", js.undefined)
+      inline def setRxUndefined: Self = StObject.set(x, "rx", js.undefined)
       
-      @scala.inline
-      def setRy(value: Double): Self = StObject.set(x, "ry", value.asInstanceOf[js.Any])
+      inline def setRy(value: Double): Self = StObject.set(x, "ry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRyUndefined: Self = StObject.set(x, "ry", js.undefined)
+      inline def setRyUndefined: Self = StObject.set(x, "ry", js.undefined)
     }
   }
 }

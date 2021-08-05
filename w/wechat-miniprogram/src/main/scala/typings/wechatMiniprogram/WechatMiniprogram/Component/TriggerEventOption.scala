@@ -26,31 +26,23 @@ trait TriggerEventOption extends StObject {
 }
 object TriggerEventOption {
   
-  @scala.inline
-  def apply(): TriggerEventOption = {
+  inline def apply(): TriggerEventOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TriggerEventOption]
   }
   
-  @scala.inline
-  implicit class TriggerEventOptionMutableBuilder[Self <: TriggerEventOption] (val x: Self) extends AnyVal {
+  extension [Self <: TriggerEventOption](x: Self) {
     
-    @scala.inline
-    def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
+    inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBubblesUndefined: Self = StObject.set(x, "bubbles", js.undefined)
+    inline def setBubblesUndefined: Self = StObject.set(x, "bubbles", js.undefined)
     
-    @scala.inline
-    def setCapturePhase(value: Boolean): Self = StObject.set(x, "capturePhase", value.asInstanceOf[js.Any])
+    inline def setCapturePhase(value: Boolean): Self = StObject.set(x, "capturePhase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapturePhaseUndefined: Self = StObject.set(x, "capturePhase", js.undefined)
+    inline def setCapturePhaseUndefined: Self = StObject.set(x, "capturePhase", js.undefined)
     
-    @scala.inline
-    def setComposed(value: Boolean): Self = StObject.set(x, "composed", value.asInstanceOf[js.Any])
+    inline def setComposed(value: Boolean): Self = StObject.set(x, "composed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComposedUndefined: Self = StObject.set(x, "composed", js.undefined)
+    inline def setComposedUndefined: Self = StObject.set(x, "composed", js.undefined)
   }
 }

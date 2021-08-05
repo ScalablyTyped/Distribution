@@ -18,34 +18,25 @@ trait ILockData extends StObject {
 }
 object ILockData {
   
-  @scala.inline
-  def apply(lockType: LockType, requestedBy: String, timestamp: Double): ILockData = {
+  inline def apply(lockType: LockType, requestedBy: String, timestamp: Double): ILockData = {
     val __obj = js.Dynamic.literal(lockType = lockType.asInstanceOf[js.Any], requestedBy = requestedBy.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILockData]
   }
   
-  @scala.inline
-  implicit class ILockDataMutableBuilder[Self <: ILockData] (val x: Self) extends AnyVal {
+  extension [Self <: ILockData](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setLockId(value: String): Self = StObject.set(x, "lockId", value.asInstanceOf[js.Any])
+    inline def setLockId(value: String): Self = StObject.set(x, "lockId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockIdUndefined: Self = StObject.set(x, "lockId", js.undefined)
+    inline def setLockIdUndefined: Self = StObject.set(x, "lockId", js.undefined)
     
-    @scala.inline
-    def setLockType(value: LockType): Self = StObject.set(x, "lockType", value.asInstanceOf[js.Any])
+    inline def setLockType(value: LockType): Self = StObject.set(x, "lockType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedBy(value: String): Self = StObject.set(x, "requestedBy", value.asInstanceOf[js.Any])
+    inline def setRequestedBy(value: String): Self = StObject.set(x, "requestedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

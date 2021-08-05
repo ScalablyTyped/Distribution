@@ -18,19 +18,15 @@ trait PerceptionInfraredFrameArrivedEventArgs extends StObject {
 }
 object PerceptionInfraredFrameArrivedEventArgs {
   
-  @scala.inline
-  def apply(relativeTime: Double, tryOpenFrame: () => PerceptionInfraredFrame): PerceptionInfraredFrameArrivedEventArgs = {
+  inline def apply(relativeTime: Double, tryOpenFrame: () => PerceptionInfraredFrame): PerceptionInfraredFrameArrivedEventArgs = {
     val __obj = js.Dynamic.literal(relativeTime = relativeTime.asInstanceOf[js.Any], tryOpenFrame = js.Any.fromFunction0(tryOpenFrame))
     __obj.asInstanceOf[PerceptionInfraredFrameArrivedEventArgs]
   }
   
-  @scala.inline
-  implicit class PerceptionInfraredFrameArrivedEventArgsMutableBuilder[Self <: PerceptionInfraredFrameArrivedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: PerceptionInfraredFrameArrivedEventArgs](x: Self) {
     
-    @scala.inline
-    def setRelativeTime(value: Double): Self = StObject.set(x, "relativeTime", value.asInstanceOf[js.Any])
+    inline def setRelativeTime(value: Double): Self = StObject.set(x, "relativeTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTryOpenFrame(value: () => PerceptionInfraredFrame): Self = StObject.set(x, "tryOpenFrame", js.Any.fromFunction0(value))
+    inline def setTryOpenFrame(value: () => PerceptionInfraredFrame): Self = StObject.set(x, "tryOpenFrame", js.Any.fromFunction0(value))
   }
 }

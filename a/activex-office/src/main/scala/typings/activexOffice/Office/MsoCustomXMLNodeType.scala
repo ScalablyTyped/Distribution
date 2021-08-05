@@ -23,24 +23,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoCustomXMLNodeType extends StObject
 object MsoCustomXMLNodeType {
   
-  @scala.inline
-  def msoCustomXMLNodeAttribute: `2` = 2.asInstanceOf[`2`]
+  inline def msoCustomXMLNodeAttribute: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoCustomXMLNodeCData: `4` = 4.asInstanceOf[`4`]
+  inline def msoCustomXMLNodeCData: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def msoCustomXMLNodeComment: `8` = 8.asInstanceOf[`8`]
+  inline def msoCustomXMLNodeComment: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def msoCustomXMLNodeDocument: `9` = 9.asInstanceOf[`9`]
+  inline def msoCustomXMLNodeDocument: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def msoCustomXMLNodeElement: `1` = 1.asInstanceOf[`1`]
+  inline def msoCustomXMLNodeElement: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoCustomXMLNodeProcessingInstruction: `7` = 7.asInstanceOf[`7`]
+  inline def msoCustomXMLNodeProcessingInstruction: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def msoCustomXMLNodeText: `3` = 3.asInstanceOf[`3`]
+  inline def msoCustomXMLNodeText: `3` = 3.asInstanceOf[`3`]
 }

@@ -13,19 +13,15 @@ trait CreateDirectoryConfigResult extends StObject {
 }
 object CreateDirectoryConfigResult {
   
-  @scala.inline
-  def apply(): CreateDirectoryConfigResult = {
+  inline def apply(): CreateDirectoryConfigResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateDirectoryConfigResult]
   }
   
-  @scala.inline
-  implicit class CreateDirectoryConfigResultMutableBuilder[Self <: CreateDirectoryConfigResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDirectoryConfigResult](x: Self) {
     
-    @scala.inline
-    def setDirectoryConfig(value: DirectoryConfig): Self = StObject.set(x, "DirectoryConfig", value.asInstanceOf[js.Any])
+    inline def setDirectoryConfig(value: DirectoryConfig): Self = StObject.set(x, "DirectoryConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryConfigUndefined: Self = StObject.set(x, "DirectoryConfig", js.undefined)
+    inline def setDirectoryConfigUndefined: Self = StObject.set(x, "DirectoryConfig", js.undefined)
   }
 }

@@ -16,23 +16,18 @@ trait DeclarationListPlain
 }
 object DeclarationListPlain {
   
-  @scala.inline
-  def apply(children: js.Array[CssNodePlain]): DeclarationListPlain = {
+  inline def apply(children: js.Array[CssNodePlain]): DeclarationListPlain = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("DeclarationList")
     __obj.asInstanceOf[DeclarationListPlain]
   }
   
-  @scala.inline
-  implicit class DeclarationListPlainMutableBuilder[Self <: DeclarationListPlain] (val x: Self) extends AnyVal {
+  extension [Self <: DeclarationListPlain](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[CssNodePlain]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[CssNodePlain]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: CssNodePlain*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: CssNodePlain*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: typings.cssTree.cssTreeStrings.DeclarationList): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.cssTree.cssTreeStrings.DeclarationList): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

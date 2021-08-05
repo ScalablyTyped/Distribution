@@ -10,13 +10,9 @@ object getIdMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")().asInstanceOf[String]
-  @scala.inline
-  def getId(prefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")(prefix.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")().asInstanceOf[String]
+  inline def getId(prefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")(prefix.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def resetIds(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetIds")().asInstanceOf[Unit]
-  @scala.inline
-  def resetIds(counter: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetIds")(counter.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def resetIds(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetIds")().asInstanceOf[Unit]
+  inline def resetIds(counter: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetIds")(counter.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

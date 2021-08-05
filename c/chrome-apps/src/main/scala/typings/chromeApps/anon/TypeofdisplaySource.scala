@@ -72,8 +72,7 @@ trait TypeofdisplaySource extends StObject {
 }
 object TypeofdisplaySource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AuthenticationMethod: PBC,
     ErrorType: CAPABILITIESNEGOTIATIONERROR,
     SinkState: CONNECTED,
@@ -89,37 +88,26 @@ object TypeofdisplaySource {
     __obj.asInstanceOf[TypeofdisplaySource]
   }
   
-  @scala.inline
-  implicit class TypeofdisplaySourceMutableBuilder[Self <: TypeofdisplaySource] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofdisplaySource](x: Self) {
     
-    @scala.inline
-    def setAuthenticationMethod(value: PBC): Self = StObject.set(x, "AuthenticationMethod", value.asInstanceOf[js.Any])
+    inline def setAuthenticationMethod(value: PBC): Self = StObject.set(x, "AuthenticationMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorType(value: CAPABILITIESNEGOTIATIONERROR): Self = StObject.set(x, "ErrorType", value.asInstanceOf[js.Any])
+    inline def setErrorType(value: CAPABILITIESNEGOTIATIONERROR): Self = StObject.set(x, "ErrorType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAvailableSinks(value: js.Function): Self = StObject.set(x, "getAvailableSinks", value.asInstanceOf[js.Any])
+    inline def setGetAvailableSinks(value: js.Function): Self = StObject.set(x, "getAvailableSinks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnSessionErrorOccured(value: Event[js.Any]): Self = StObject.set(x, "onSessionErrorOccured", value.asInstanceOf[js.Any])
+    inline def setOnSessionErrorOccured(value: Event[js.Any]): Self = StObject.set(x, "onSessionErrorOccured", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnSessionTerminated(value: Event[js.Any]): Self = StObject.set(x, "onSessionTerminated", value.asInstanceOf[js.Any])
+    inline def setOnSessionTerminated(value: Event[js.Any]): Self = StObject.set(x, "onSessionTerminated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnSinksUpdated(value: Event[js.Any]): Self = StObject.set(x, "onSinksUpdated", value.asInstanceOf[js.Any])
+    inline def setOnSinksUpdated(value: Event[js.Any]): Self = StObject.set(x, "onSinksUpdated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestAuthentication(value: js.Function): Self = StObject.set(x, "requestAuthentication", value.asInstanceOf[js.Any])
+    inline def setRequestAuthentication(value: js.Function): Self = StObject.set(x, "requestAuthentication", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSinkState(value: CONNECTED): Self = StObject.set(x, "SinkState", value.asInstanceOf[js.Any])
+    inline def setSinkState(value: CONNECTED): Self = StObject.set(x, "SinkState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartSession(value: js.Function): Self = StObject.set(x, "startSession", value.asInstanceOf[js.Any])
+    inline def setStartSession(value: js.Function): Self = StObject.set(x, "startSession", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerminateSession(value: js.Function): Self = StObject.set(x, "terminateSession", value.asInstanceOf[js.Any])
+    inline def setTerminateSession(value: js.Function): Self = StObject.set(x, "terminateSession", value.asInstanceOf[js.Any])
   }
 }

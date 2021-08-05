@@ -82,8 +82,7 @@ trait Base extends StObject {
 }
 object Base {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     borderRadius: String,
     boxShadowActionable: String,
     boxShadowColorActionable: String,
@@ -126,118 +125,80 @@ object Base {
     __obj.asInstanceOf[Base]
   }
   
-  @scala.inline
-  implicit class BaseMutableBuilder[Self <: Base] (val x: Self) extends AnyVal {
+  extension [Self <: Base](x: Self) {
     
-    @scala.inline
-    def setBorderRadius(value: String): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+    inline def setBorderRadius(value: String): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoxShadowActionable(value: String): Self = StObject.set(x, "boxShadowActionable", value.asInstanceOf[js.Any])
+    inline def setBoxShadowActionable(value: String): Self = StObject.set(x, "boxShadowActionable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoxShadowColorActionable(value: String): Self = StObject.set(x, "boxShadowColorActionable", value.asInstanceOf[js.Any])
+    inline def setBoxShadowColorActionable(value: String): Self = StObject.set(x, "boxShadowColorActionable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoxShadowColorElevated(value: String): Self = StObject.set(x, "boxShadowColorElevated", value.asInstanceOf[js.Any])
+    inline def setBoxShadowColorElevated(value: String): Self = StObject.set(x, "boxShadowColorElevated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoxShadowColorModal(value: String): Self = StObject.set(x, "boxShadowColorModal", value.asInstanceOf[js.Any])
+    inline def setBoxShadowColorModal(value: String): Self = StObject.set(x, "boxShadowColorModal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoxShadowColorStatic(value: String): Self = StObject.set(x, "boxShadowColorStatic", value.asInstanceOf[js.Any])
+    inline def setBoxShadowColorStatic(value: String): Self = StObject.set(x, "boxShadowColorStatic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoxShadowElevated(value: String): Self = StObject.set(x, "boxShadowElevated", value.asInstanceOf[js.Any])
+    inline def setBoxShadowElevated(value: String): Self = StObject.set(x, "boxShadowElevated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoxShadowModal(value: String): Self = StObject.set(x, "boxShadowModal", value.asInstanceOf[js.Any])
+    inline def setBoxShadowModal(value: String): Self = StObject.set(x, "boxShadowModal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoxShadowStatic(value: String): Self = StObject.set(x, "boxShadowStatic", value.asInstanceOf[js.Any])
+    inline def setBoxShadowStatic(value: String): Self = StObject.set(x, "boxShadowStatic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationFast(value: String): Self = StObject.set(x, "durationFast", value.asInstanceOf[js.Any])
+    inline def setDurationFast(value: String): Self = StObject.set(x, "durationFast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationNormal(value: String): Self = StObject.set(x, "durationNormal", value.asInstanceOf[js.Any])
+    inline def setDurationNormal(value: String): Self = StObject.set(x, "durationNormal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationSlow(value: String): Self = StObject.set(x, "durationSlow", value.asInstanceOf[js.Any])
+    inline def setDurationSlow(value: String): Self = StObject.set(x, "durationSlow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+    inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSizeLg(value: String): Self = StObject.set(x, "fontSizeLg", value.asInstanceOf[js.Any])
+    inline def setFontSizeLg(value: String): Self = StObject.set(x, "fontSizeLg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSizeMd(value: String): Self = StObject.set(x, "fontSizeMd", value.asInstanceOf[js.Any])
+    inline def setFontSizeMd(value: String): Self = StObject.set(x, "fontSizeMd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSizeSm(value: String): Self = StObject.set(x, "fontSizeSm", value.asInstanceOf[js.Any])
+    inline def setFontSizeSm(value: String): Self = StObject.set(x, "fontSizeSm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontWeightBold(value: String): Self = StObject.set(x, "fontWeightBold", value.asInstanceOf[js.Any])
+    inline def setFontWeightBold(value: String): Self = StObject.set(x, "fontWeightBold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontWeightMedium(value: String): Self = StObject.set(x, "fontWeightMedium", value.asInstanceOf[js.Any])
+    inline def setFontWeightMedium(value: String): Self = StObject.set(x, "fontWeightMedium", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontWeightNormal(value: String): Self = StObject.set(x, "fontWeightNormal", value.asInstanceOf[js.Any])
+    inline def setFontWeightNormal(value: String): Self = StObject.set(x, "fontWeightNormal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineHeight(value: String): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+    inline def setLineHeight(value: String): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityLarge(value: String): Self = StObject.set(x, "opacityLarge", value.asInstanceOf[js.Any])
+    inline def setOpacityLarge(value: String): Self = StObject.set(x, "opacityLarge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityMedium(value: String): Self = StObject.set(x, "opacityMedium", value.asInstanceOf[js.Any])
+    inline def setOpacityMedium(value: String): Self = StObject.set(x, "opacityMedium", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacitySmall(value: String): Self = StObject.set(x, "opacitySmall", value.asInstanceOf[js.Any])
+    inline def setOpacitySmall(value: String): Self = StObject.set(x, "opacitySmall", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize2xl(value: String): Self = StObject.set(x, "size2xl", value.asInstanceOf[js.Any])
+    inline def setSize2xl(value: String): Self = StObject.set(x, "size2xl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeLg(value: String): Self = StObject.set(x, "sizeLg", value.asInstanceOf[js.Any])
+    inline def setSizeLg(value: String): Self = StObject.set(x, "sizeLg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeMd(value: String): Self = StObject.set(x, "sizeMd", value.asInstanceOf[js.Any])
+    inline def setSizeMd(value: String): Self = StObject.set(x, "sizeMd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeSm(value: String): Self = StObject.set(x, "sizeSm", value.asInstanceOf[js.Any])
+    inline def setSizeSm(value: String): Self = StObject.set(x, "sizeSm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeXl(value: String): Self = StObject.set(x, "sizeXl", value.asInstanceOf[js.Any])
+    inline def setSizeXl(value: String): Self = StObject.set(x, "sizeXl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpace2xl(value: String): Self = StObject.set(x, "space2xl", value.asInstanceOf[js.Any])
+    inline def setSpace2xl(value: String): Self = StObject.set(x, "space2xl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpace2xs(value: String): Self = StObject.set(x, "space2xs", value.asInstanceOf[js.Any])
+    inline def setSpace2xs(value: String): Self = StObject.set(x, "space2xs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpace3xl(value: String): Self = StObject.set(x, "space3xl", value.asInstanceOf[js.Any])
+    inline def setSpace3xl(value: String): Self = StObject.set(x, "space3xl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpaceLg(value: String): Self = StObject.set(x, "spaceLg", value.asInstanceOf[js.Any])
+    inline def setSpaceLg(value: String): Self = StObject.set(x, "spaceLg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpaceMd(value: String): Self = StObject.set(x, "spaceMd", value.asInstanceOf[js.Any])
+    inline def setSpaceMd(value: String): Self = StObject.set(x, "spaceMd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpaceSm(value: String): Self = StObject.set(x, "spaceSm", value.asInstanceOf[js.Any])
+    inline def setSpaceSm(value: String): Self = StObject.set(x, "spaceSm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpaceXl(value: String): Self = StObject.set(x, "spaceXl", value.asInstanceOf[js.Any])
+    inline def setSpaceXl(value: String): Self = StObject.set(x, "spaceXl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpaceXs(value: String): Self = StObject.set(x, "spaceXs", value.asInstanceOf[js.Any])
+    inline def setSpaceXs(value: String): Self = StObject.set(x, "spaceXs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitionDefault(value: String): Self = StObject.set(x, "transitionDefault", value.asInstanceOf[js.Any])
+    inline def setTransitionDefault(value: String): Self = StObject.set(x, "transitionDefault", value.asInstanceOf[js.Any])
   }
 }

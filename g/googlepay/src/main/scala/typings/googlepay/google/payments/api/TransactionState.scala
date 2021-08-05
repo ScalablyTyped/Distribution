@@ -26,9 +26,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TransactionState extends StObject
 object TransactionState {
   
-  @scala.inline
-  def ERROR: typings.googlepay.googlepayStrings.ERROR = "ERROR".asInstanceOf[typings.googlepay.googlepayStrings.ERROR]
+  inline def ERROR: typings.googlepay.googlepayStrings.ERROR = "ERROR".asInstanceOf[typings.googlepay.googlepayStrings.ERROR]
   
-  @scala.inline
-  def SUCCESS: typings.googlepay.googlepayStrings.SUCCESS = "SUCCESS".asInstanceOf[typings.googlepay.googlepayStrings.SUCCESS]
+  inline def SUCCESS: typings.googlepay.googlepayStrings.SUCCESS = "SUCCESS".asInstanceOf[typings.googlepay.googlepayStrings.SUCCESS]
 }

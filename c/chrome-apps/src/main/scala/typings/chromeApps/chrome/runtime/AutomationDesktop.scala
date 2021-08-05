@@ -15,22 +15,17 @@ trait AutomationDesktop
 }
 object AutomationDesktop {
   
-  @scala.inline
-  def apply(): AutomationDesktop = {
+  inline def apply(): AutomationDesktop = {
     val __obj = js.Dynamic.literal(desktop = true)
     __obj.asInstanceOf[AutomationDesktop]
   }
   
-  @scala.inline
-  implicit class AutomationDesktopMutableBuilder[Self <: AutomationDesktop] (val x: Self) extends AnyVal {
+  extension [Self <: AutomationDesktop](x: Self) {
     
-    @scala.inline
-    def setDesktop(value: `true`): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
+    inline def setDesktop(value: `true`): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInteract(value: `true`): Self = StObject.set(x, "interact", value.asInstanceOf[js.Any])
+    inline def setInteract(value: `true`): Self = StObject.set(x, "interact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInteractUndefined: Self = StObject.set(x, "interact", js.undefined)
+    inline def setInteractUndefined: Self = StObject.set(x, "interact", js.undefined)
   }
 }

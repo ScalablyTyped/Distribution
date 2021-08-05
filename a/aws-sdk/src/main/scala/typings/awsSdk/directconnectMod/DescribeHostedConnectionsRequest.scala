@@ -13,16 +13,13 @@ trait DescribeHostedConnectionsRequest extends StObject {
 }
 object DescribeHostedConnectionsRequest {
   
-  @scala.inline
-  def apply(connectionId: ConnectionId): DescribeHostedConnectionsRequest = {
+  inline def apply(connectionId: ConnectionId): DescribeHostedConnectionsRequest = {
     val __obj = js.Dynamic.literal(connectionId = connectionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeHostedConnectionsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeHostedConnectionsRequestMutableBuilder[Self <: DescribeHostedConnectionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeHostedConnectionsRequest](x: Self) {
     
-    @scala.inline
-    def setConnectionId(value: ConnectionId): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
+    inline def setConnectionId(value: ConnectionId): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
   }
 }

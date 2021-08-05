@@ -26,22 +26,17 @@ trait CustomResourceSubresourceScale extends StObject {
 }
 object CustomResourceSubresourceScale {
   
-  @scala.inline
-  def apply(labelSelectorPath: String, specReplicasPath: String, statusReplicasPath: String): CustomResourceSubresourceScale = {
+  inline def apply(labelSelectorPath: String, specReplicasPath: String, statusReplicasPath: String): CustomResourceSubresourceScale = {
     val __obj = js.Dynamic.literal(labelSelectorPath = labelSelectorPath.asInstanceOf[js.Any], specReplicasPath = specReplicasPath.asInstanceOf[js.Any], statusReplicasPath = statusReplicasPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomResourceSubresourceScale]
   }
   
-  @scala.inline
-  implicit class CustomResourceSubresourceScaleMutableBuilder[Self <: CustomResourceSubresourceScale] (val x: Self) extends AnyVal {
+  extension [Self <: CustomResourceSubresourceScale](x: Self) {
     
-    @scala.inline
-    def setLabelSelectorPath(value: String): Self = StObject.set(x, "labelSelectorPath", value.asInstanceOf[js.Any])
+    inline def setLabelSelectorPath(value: String): Self = StObject.set(x, "labelSelectorPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecReplicasPath(value: String): Self = StObject.set(x, "specReplicasPath", value.asInstanceOf[js.Any])
+    inline def setSpecReplicasPath(value: String): Self = StObject.set(x, "specReplicasPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusReplicasPath(value: String): Self = StObject.set(x, "statusReplicasPath", value.asInstanceOf[js.Any])
+    inline def setStatusReplicasPath(value: String): Self = StObject.set(x, "statusReplicasPath", value.asInstanceOf[js.Any])
   }
 }

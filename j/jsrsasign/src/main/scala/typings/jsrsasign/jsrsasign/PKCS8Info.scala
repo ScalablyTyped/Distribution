@@ -23,8 +23,7 @@ trait PKCS8Info extends StObject {
 }
 object PKCS8Info {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ciphertext: String,
     encryptionSchemeAlg: String,
     encryptionSchemeIV: String,
@@ -35,22 +34,16 @@ object PKCS8Info {
     __obj.asInstanceOf[PKCS8Info]
   }
   
-  @scala.inline
-  implicit class PKCS8InfoMutableBuilder[Self <: PKCS8Info] (val x: Self) extends AnyVal {
+  extension [Self <: PKCS8Info](x: Self) {
     
-    @scala.inline
-    def setCiphertext(value: String): Self = StObject.set(x, "ciphertext", value.asInstanceOf[js.Any])
+    inline def setCiphertext(value: String): Self = StObject.set(x, "ciphertext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionSchemeAlg(value: String): Self = StObject.set(x, "encryptionSchemeAlg", value.asInstanceOf[js.Any])
+    inline def setEncryptionSchemeAlg(value: String): Self = StObject.set(x, "encryptionSchemeAlg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionSchemeIV(value: String): Self = StObject.set(x, "encryptionSchemeIV", value.asInstanceOf[js.Any])
+    inline def setEncryptionSchemeIV(value: String): Self = StObject.set(x, "encryptionSchemeIV", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPbkdf2Salt(value: String): Self = StObject.set(x, "pbkdf2Salt", value.asInstanceOf[js.Any])
+    inline def setPbkdf2Salt(value: String): Self = StObject.set(x, "pbkdf2Salt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPkbdf2Iter(value: String): Self = StObject.set(x, "pkbdf2Iter", value.asInstanceOf[js.Any])
+    inline def setPkbdf2Iter(value: String): Self = StObject.set(x, "pkbdf2Iter", value.asInstanceOf[js.Any])
   }
 }

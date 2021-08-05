@@ -27,28 +27,21 @@ trait FeedURLOptions extends StObject {
 }
 object FeedURLOptions {
   
-  @scala.inline
-  def apply(url: String): FeedURLOptions = {
+  inline def apply(url: String): FeedURLOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[FeedURLOptions]
   }
   
-  @scala.inline
-  implicit class FeedURLOptionsMutableBuilder[Self <: FeedURLOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FeedURLOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setServerType(value: json | default): Self = StObject.set(x, "serverType", value.asInstanceOf[js.Any])
+    inline def setServerType(value: json | default): Self = StObject.set(x, "serverType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerTypeUndefined: Self = StObject.set(x, "serverType", js.undefined)
+    inline def setServerTypeUndefined: Self = StObject.set(x, "serverType", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

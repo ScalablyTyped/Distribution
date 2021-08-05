@@ -11,19 +11,15 @@ trait GoogleCloudDialogflowCxV3WebhookRequestFulfillmentInfo extends StObject {
 }
 object GoogleCloudDialogflowCxV3WebhookRequestFulfillmentInfo {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowCxV3WebhookRequestFulfillmentInfo = {
+  inline def apply(): GoogleCloudDialogflowCxV3WebhookRequestFulfillmentInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3WebhookRequestFulfillmentInfo]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowCxV3WebhookRequestFulfillmentInfoMutableBuilder[Self <: GoogleCloudDialogflowCxV3WebhookRequestFulfillmentInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowCxV3WebhookRequestFulfillmentInfo](x: Self) {
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

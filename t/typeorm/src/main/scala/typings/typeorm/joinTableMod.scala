@@ -13,10 +13,7 @@ object joinTableMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def JoinTable(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("JoinTable")().asInstanceOf[PropertyDecorator]
-  @scala.inline
-  def JoinTable(options: JoinTableMultipleColumnsOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("JoinTable")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
-  @scala.inline
-  def JoinTable(options: JoinTableOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("JoinTable")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  inline def JoinTable(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("JoinTable")().asInstanceOf[PropertyDecorator]
+  inline def JoinTable(options: JoinTableMultipleColumnsOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("JoinTable")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  inline def JoinTable(options: JoinTableOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("JoinTable")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
 }

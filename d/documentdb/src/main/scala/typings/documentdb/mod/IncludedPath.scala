@@ -13,22 +13,17 @@ trait IncludedPath extends StObject {
 }
 object IncludedPath {
   
-  @scala.inline
-  def apply(Indexes: js.Array[Index], Path: String): IncludedPath = {
+  inline def apply(Indexes: js.Array[Index], Path: String): IncludedPath = {
     val __obj = js.Dynamic.literal(Indexes = Indexes.asInstanceOf[js.Any], Path = Path.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncludedPath]
   }
   
-  @scala.inline
-  implicit class IncludedPathMutableBuilder[Self <: IncludedPath] (val x: Self) extends AnyVal {
+  extension [Self <: IncludedPath](x: Self) {
     
-    @scala.inline
-    def setIndexes(value: js.Array[Index]): Self = StObject.set(x, "Indexes", value.asInstanceOf[js.Any])
+    inline def setIndexes(value: js.Array[Index]): Self = StObject.set(x, "Indexes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexesVarargs(value: Index*): Self = StObject.set(x, "Indexes", js.Array(value :_*))
+    inline def setIndexesVarargs(value: Index*): Self = StObject.set(x, "Indexes", js.Array(value :_*))
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
   }
 }

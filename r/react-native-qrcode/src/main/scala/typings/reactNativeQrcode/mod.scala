@@ -26,38 +26,28 @@ object mod {
   }
   object QRCodeProperties {
     
-    @scala.inline
-    def apply(): QRCodeProperties = {
+    inline def apply(): QRCodeProperties = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[QRCodeProperties]
     }
     
-    @scala.inline
-    implicit class QRCodePropertiesMutableBuilder[Self <: QRCodeProperties] (val x: Self) extends AnyVal {
+    extension [Self <: QRCodeProperties](x: Self) {
       
-      @scala.inline
-      def setBgColor(value: String): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
+      inline def setBgColor(value: String): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgColorUndefined: Self = StObject.set(x, "bgColor", js.undefined)
+      inline def setBgColorUndefined: Self = StObject.set(x, "bgColor", js.undefined)
       
-      @scala.inline
-      def setFgColor(value: String): Self = StObject.set(x, "fgColor", value.asInstanceOf[js.Any])
+      inline def setFgColor(value: String): Self = StObject.set(x, "fgColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFgColorUndefined: Self = StObject.set(x, "fgColor", js.undefined)
+      inline def setFgColorUndefined: Self = StObject.set(x, "fgColor", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

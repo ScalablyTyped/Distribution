@@ -91,89 +91,62 @@ object sessionMod {
   }
   object SessionContext {
     
-    @scala.inline
-    def apply(): SessionContext = {
+    inline def apply(): SessionContext = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SessionContext]
     }
     
-    @scala.inline
-    implicit class SessionContextMutableBuilder[Self <: SessionContext] (val x: Self) extends AnyVal {
+    extension [Self <: SessionContext](x: Self) {
       
-      @scala.inline
-      def setDid(value: String): Self = StObject.set(x, "did", value.asInstanceOf[js.Any])
+      inline def setDid(value: String): Self = StObject.set(x, "did", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDidUndefined: Self = StObject.set(x, "did", js.undefined)
+      inline def setDidUndefined: Self = StObject.set(x, "did", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+      inline def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+      inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
       
-      @scala.inline
-      def setErrors(value: Double): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: Double): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+      inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
       
-      @scala.inline
-      def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+      inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
+      inline def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
       
-      @scala.inline
-      def setRelease(value: String): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
+      inline def setRelease(value: String): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReleaseUndefined: Self = StObject.set(x, "release", js.undefined)
+      inline def setReleaseUndefined: Self = StObject.set(x, "release", js.undefined)
       
-      @scala.inline
-      def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
+      inline def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSidUndefined: Self = StObject.set(x, "sid", js.undefined)
+      inline def setSidUndefined: Self = StObject.set(x, "sid", js.undefined)
       
-      @scala.inline
-      def setStarted(value: Double): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
+      inline def setStarted(value: Double): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartedUndefined: Self = StObject.set(x, "started", js.undefined)
+      inline def setStartedUndefined: Self = StObject.set(x, "started", js.undefined)
       
-      @scala.inline
-      def setStatus(value: SessionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: SessionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+      inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
       
-      @scala.inline
-      def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+      inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
+      inline def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
       
-      @scala.inline
-      def setUserNull: Self = StObject.set(x, "user", null)
+      inline def setUserNull: Self = StObject.set(x, "user", null)
       
-      @scala.inline
-      def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+      inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     }
   }
 }

@@ -13,8 +13,7 @@ object notificationIconMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(props: Props): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+  inline def default(props: Props): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
   trait Props extends StObject {
     
@@ -24,23 +23,18 @@ object notificationIconMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(notification: Notification): Props = {
+    inline def apply(notification: Notification): Props = {
       val __obj = js.Dynamic.literal(notification = notification.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setNotification(value: Notification): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+      inline def setNotification(value: Notification): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
 }

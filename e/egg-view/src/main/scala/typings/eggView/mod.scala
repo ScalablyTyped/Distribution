@@ -14,17 +14,14 @@ object mod {
   }
   object Application {
     
-    @scala.inline
-    def apply(view: ViewManager): Application = {
+    inline def apply(view: ViewManager): Application = {
       val __obj = js.Dynamic.literal(view = view.asInstanceOf[js.Any])
       __obj.asInstanceOf[Application]
     }
     
-    @scala.inline
-    implicit class ApplicationMutableBuilder[Self <: Application] (val x: Self) extends AnyVal {
+    extension [Self <: Application](x: Self) {
       
-      @scala.inline
-      def setView(value: ViewManager): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      inline def setView(value: ViewManager): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     }
   }
   
@@ -45,17 +42,14 @@ object mod {
   }
   object EggAppConfig {
     
-    @scala.inline
-    def apply(view: Cache): EggAppConfig = {
+    inline def apply(view: Cache): EggAppConfig = {
       val __obj = js.Dynamic.literal(view = view.asInstanceOf[js.Any])
       __obj.asInstanceOf[EggAppConfig]
     }
     
-    @scala.inline
-    implicit class EggAppConfigMutableBuilder[Self <: EggAppConfig] (val x: Self) extends AnyVal {
+    extension [Self <: EggAppConfig](x: Self) {
       
-      @scala.inline
-      def setView(value: Cache): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      inline def setView(value: Cache): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     }
   }
 }

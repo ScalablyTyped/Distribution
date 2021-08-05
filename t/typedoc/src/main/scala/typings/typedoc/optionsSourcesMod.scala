@@ -11,9 +11,7 @@ object optionsSourcesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addTSOptions(container: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addTSOptions")(container.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addTSOptions(container: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addTSOptions")(container.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def addTypeDocOptions(options: typings.typedoc.optionsMod.Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addTypeDocOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addTypeDocOptions(options: typings.typedoc.optionsMod.Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addTypeDocOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

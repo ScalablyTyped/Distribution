@@ -15,20 +15,16 @@ trait ContactState extends StObject {
 }
 object ContactState {
   
-  @scala.inline
-  def apply(timestamp: Date, `type`: ContactStateType): ContactState = {
+  inline def apply(timestamp: Date, `type`: ContactStateType): ContactState = {
     val __obj = js.Dynamic.literal(timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContactState]
   }
   
-  @scala.inline
-  implicit class ContactStateMutableBuilder[Self <: ContactState] (val x: Self) extends AnyVal {
+  extension [Self <: ContactState](x: Self) {
     
-    @scala.inline
-    def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ContactStateType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ContactStateType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

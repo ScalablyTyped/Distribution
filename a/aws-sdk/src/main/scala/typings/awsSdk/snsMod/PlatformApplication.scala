@@ -18,25 +18,19 @@ trait PlatformApplication extends StObject {
 }
 object PlatformApplication {
   
-  @scala.inline
-  def apply(): PlatformApplication = {
+  inline def apply(): PlatformApplication = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlatformApplication]
   }
   
-  @scala.inline
-  implicit class PlatformApplicationMutableBuilder[Self <: PlatformApplication] (val x: Self) extends AnyVal {
+  extension [Self <: PlatformApplication](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: MapStringToString): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: MapStringToString): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
-    @scala.inline
-    def setPlatformApplicationArn(value: String): Self = StObject.set(x, "PlatformApplicationArn", value.asInstanceOf[js.Any])
+    inline def setPlatformApplicationArn(value: String): Self = StObject.set(x, "PlatformApplicationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformApplicationArnUndefined: Self = StObject.set(x, "PlatformApplicationArn", js.undefined)
+    inline def setPlatformApplicationArnUndefined: Self = StObject.set(x, "PlatformApplicationArn", js.undefined)
   }
 }

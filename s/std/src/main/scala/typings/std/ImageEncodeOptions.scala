@@ -12,25 +12,19 @@ trait ImageEncodeOptions extends StObject {
 }
 object ImageEncodeOptions {
   
-  @scala.inline
-  def apply(): ImageEncodeOptions = {
+  inline def apply(): ImageEncodeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageEncodeOptions]
   }
   
-  @scala.inline
-  implicit class ImageEncodeOptionsMutableBuilder[Self <: ImageEncodeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ImageEncodeOptions](x: Self) {
     
-    @scala.inline
-    def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+    inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
     
-    @scala.inline
-    def setType(value: java.lang.String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: java.lang.String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

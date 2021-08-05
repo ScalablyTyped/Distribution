@@ -18,43 +18,31 @@ trait EffectOptions extends StObject {
 }
 object EffectOptions {
   
-  @scala.inline
-  def apply(): EffectOptions = {
+  inline def apply(): EffectOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EffectOptions]
   }
   
-  @scala.inline
-  implicit class EffectOptionsMutableBuilder[Self <: EffectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EffectOptions](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+    inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     
-    @scala.inline
-    def setEndValue(value: Double): Self = StObject.set(x, "endValue", value.asInstanceOf[js.Any])
+    inline def setEndValue(value: Double): Self = StObject.set(x, "endValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndValueUndefined: Self = StObject.set(x, "endValue", js.undefined)
+    inline def setEndValueUndefined: Self = StObject.set(x, "endValue", js.undefined)
     
-    @scala.inline
-    def setStartValue(value: Double): Self = StObject.set(x, "startValue", value.asInstanceOf[js.Any])
+    inline def setStartValue(value: Double): Self = StObject.set(x, "startValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartValueUndefined: Self = StObject.set(x, "startValue", js.undefined)
+    inline def setStartValueUndefined: Self = StObject.set(x, "startValue", js.undefined)
     
-    @scala.inline
-    def setWhen(value: String): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
+    inline def setWhen(value: String): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
+    inline def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
   }
 }

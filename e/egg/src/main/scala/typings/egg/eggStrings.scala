@@ -9,67 +9,55 @@ object eggStrings {
   
   @js.native
   sealed trait `ALLOW-FROM` extends StObject
-  @scala.inline
-  def `ALLOW-FROM`: `ALLOW-FROM` = "ALLOW-FROM".asInstanceOf[`ALLOW-FROM`]
+  inline def `ALLOW-FROM`: `ALLOW-FROM` = "ALLOW-FROM".asInstanceOf[`ALLOW-FROM`]
   
   @js.native
   sealed trait DENY extends StObject
-  @scala.inline
-  def DENY: DENY = "DENY".asInstanceOf[DENY]
+  inline def DENY: DENY = "DENY".asInstanceOf[DENY]
   
   @js.native
   sealed trait PowerPartial extends StObject
-  @scala.inline
-  def PowerPartial: PowerPartial = "PowerPartial".asInstanceOf[PowerPartial]
+  inline def PowerPartial: PowerPartial = "PowerPartial".asInstanceOf[PowerPartial]
   
   @js.native
   sealed trait SAMEORIGIN extends StObject
-  @scala.inline
-  def SAMEORIGIN: SAMEORIGIN = "SAMEORIGIN".asInstanceOf[SAMEORIGIN]
+  inline def SAMEORIGIN: SAMEORIGIN = "SAMEORIGIN".asInstanceOf[SAMEORIGIN]
   
   @js.native
   sealed trait app extends StObject
-  @scala.inline
-  def app: app = "app".asInstanceOf[app]
+  inline def app: app = "app".asInstanceOf[app]
   
   @js.native
   sealed trait ctx extends StObject
-  @scala.inline
-  def ctx: ctx = "ctx".asInstanceOf[ctx]
+  inline def ctx: ctx = "ctx".asInstanceOf[ctx]
   
   @js.native
   sealed trait duplicate extends StObject
-  @scala.inline
-  def duplicate: duplicate = "duplicate".asInstanceOf[duplicate]
+  inline def duplicate: duplicate = "duplicate".asInstanceOf[duplicate]
   
   @js.native
   sealed trait ignore extends StObject
-  @scala.inline
-  def ignore: ignore = "ignore".asInstanceOf[ignore]
+  inline def ignore: ignore = "ignore".asInstanceOf[ignore]
   
   @js.native
   sealed trait local
     extends StObject
        with _EggEnvType
-  @scala.inline
-  def local: local = "local".asInstanceOf[local]
+  inline def local: local = "local".asInstanceOf[local]
   
   @js.native
   sealed trait prod
     extends StObject
        with _EggEnvType
-  @scala.inline
-  def prod: prod = "prod".asInstanceOf[prod]
+  inline def prod: prod = "prod".asInstanceOf[prod]
   
   @js.native
   sealed trait redirect extends StObject
-  @scala.inline
-  def redirect: redirect = "redirect".asInstanceOf[redirect]
+  inline def redirect: redirect = "redirect".asInstanceOf[redirect]
   
   @js.native
   sealed trait unittest
     extends StObject
        with _EggEnvType
-  @scala.inline
-  def unittest: unittest = "unittest".asInstanceOf[unittest]
+  inline def unittest: unittest = "unittest".asInstanceOf[unittest]
 }

@@ -18,25 +18,19 @@ trait WeightedQuantileLoss extends StObject {
 }
 object WeightedQuantileLoss {
   
-  @scala.inline
-  def apply(): WeightedQuantileLoss = {
+  inline def apply(): WeightedQuantileLoss = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WeightedQuantileLoss]
   }
   
-  @scala.inline
-  implicit class WeightedQuantileLossMutableBuilder[Self <: WeightedQuantileLoss] (val x: Self) extends AnyVal {
+  extension [Self <: WeightedQuantileLoss](x: Self) {
     
-    @scala.inline
-    def setLossValue(value: Double): Self = StObject.set(x, "LossValue", value.asInstanceOf[js.Any])
+    inline def setLossValue(value: Double): Self = StObject.set(x, "LossValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLossValueUndefined: Self = StObject.set(x, "LossValue", js.undefined)
+    inline def setLossValueUndefined: Self = StObject.set(x, "LossValue", js.undefined)
     
-    @scala.inline
-    def setQuantile(value: Double): Self = StObject.set(x, "Quantile", value.asInstanceOf[js.Any])
+    inline def setQuantile(value: Double): Self = StObject.set(x, "Quantile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantileUndefined: Self = StObject.set(x, "Quantile", js.undefined)
+    inline def setQuantileUndefined: Self = StObject.set(x, "Quantile", js.undefined)
   }
 }

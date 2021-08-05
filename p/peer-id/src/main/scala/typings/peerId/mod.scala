@@ -31,86 +31,69 @@ object mod {
     * Create a new PeerId.
     * @param opts Options.
     */
-  @scala.inline
-  def create(): js.Promise[PeerId] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Promise[PeerId]]
-  @scala.inline
-  def create(opts: CreateOptions): js.Promise[PeerId] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PeerId]]
+  inline def create(): js.Promise[PeerId] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Promise[PeerId]]
+  inline def create(opts: CreateOptions): js.Promise[PeerId] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PeerId]]
   
   /**
     * Create PeerId from base58-encoded string.
     * @param str The base58-encoded string.
     */
-  @scala.inline
-  def createFromB58String(str: String): PeerId = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromB58String")(str.asInstanceOf[js.Any]).asInstanceOf[PeerId]
+  inline def createFromB58String(str: String): PeerId = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromB58String")(str.asInstanceOf[js.Any]).asInstanceOf[PeerId]
   
   /**
     * Create PeerId from raw bytes.
     * @param buf The raw bytes.
     */
-  @scala.inline
-  def createFromBytes(buf: Uint8Array): PeerId = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromBytes")(buf.asInstanceOf[js.Any]).asInstanceOf[PeerId]
+  inline def createFromBytes(buf: Uint8Array): PeerId = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromBytes")(buf.asInstanceOf[js.Any]).asInstanceOf[PeerId]
   
-  @scala.inline
-  def createFromCID(cid: String): PeerId = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromCID")(cid.asInstanceOf[js.Any]).asInstanceOf[PeerId]
-  @scala.inline
-  def createFromCID(cid: js.Object): PeerId = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromCID")(cid.asInstanceOf[js.Any]).asInstanceOf[PeerId]
+  inline def createFromCID(cid: String): PeerId = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromCID")(cid.asInstanceOf[js.Any]).asInstanceOf[PeerId]
+  inline def createFromCID(cid: js.Object): PeerId = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromCID")(cid.asInstanceOf[js.Any]).asInstanceOf[PeerId]
   /**
     * Create PeerId from CID.
     * @param cid The CID.
     */
-  @scala.inline
-  def createFromCID(cid: typings.cids.mod.^): PeerId = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromCID")(cid.asInstanceOf[js.Any]).asInstanceOf[PeerId]
-  @scala.inline
-  def createFromCID(cid: Uint8Array): PeerId = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromCID")(cid.asInstanceOf[js.Any]).asInstanceOf[PeerId]
+  inline def createFromCID(cid: typings.cids.mod.^): PeerId = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromCID")(cid.asInstanceOf[js.Any]).asInstanceOf[PeerId]
+  inline def createFromCID(cid: Uint8Array): PeerId = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromCID")(cid.asInstanceOf[js.Any]).asInstanceOf[PeerId]
   
   /**
     * Create PeerId from hex string.
     * @param str The input hex string.
     */
-  @scala.inline
-  def createFromHexString(str: String): PeerId = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromHexString")(str.asInstanceOf[js.Any]).asInstanceOf[PeerId]
+  inline def createFromHexString(str: String): PeerId = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromHexString")(str.asInstanceOf[js.Any]).asInstanceOf[PeerId]
   
   /**
     * Create PeerId from PeerId JSON formatted object.
     * @see {@link PeerId#toJSON}
     * @param json PeerId in JSON format.
     */
-  @scala.inline
-  def createFromJSON(json: JSONPeerId): js.Promise[PeerId] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PeerId]]
+  inline def createFromJSON(json: JSONPeerId): js.Promise[PeerId] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PeerId]]
   
-  @scala.inline
-  def createFromPrivKey(key: String): js.Promise[PeerId] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromPrivKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PeerId]]
+  inline def createFromPrivKey(key: String): js.Promise[PeerId] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromPrivKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PeerId]]
   /**
     * Create PeerId from private key.
     * @param key Private key, as Uint8Array or base64-encoded string.
     */
-  @scala.inline
-  def createFromPrivKey(key: Uint8Array): js.Promise[PeerId] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromPrivKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PeerId]]
+  inline def createFromPrivKey(key: Uint8Array): js.Promise[PeerId] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromPrivKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PeerId]]
   
-  @scala.inline
-  def createFromProtobuf(buf: String): js.Promise[PeerId] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromProtobuf")(buf.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PeerId]]
+  inline def createFromProtobuf(buf: String): js.Promise[PeerId] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromProtobuf")(buf.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PeerId]]
   /**
     * Create PeerId from Protobuf bytes.
     * @param buf Protobuf bytes, as Uint8Array or hex-encoded string.
     */
-  @scala.inline
-  def createFromProtobuf(buf: Uint8Array): js.Promise[PeerId] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromProtobuf")(buf.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PeerId]]
+  inline def createFromProtobuf(buf: Uint8Array): js.Promise[PeerId] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromProtobuf")(buf.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PeerId]]
   
-  @scala.inline
-  def createFromPubKey(key: String): js.Promise[PeerId] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromPubKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PeerId]]
+  inline def createFromPubKey(key: String): js.Promise[PeerId] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromPubKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PeerId]]
   /**
     * Create PeerId from public key.
     * @param key Public key, as Uint8Array or base64-encoded string.
     */
-  @scala.inline
-  def createFromPubKey(key: Uint8Array): js.Promise[PeerId] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromPubKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PeerId]]
+  inline def createFromPubKey(key: Uint8Array): js.Promise[PeerId] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromPubKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PeerId]]
   
   /**
     * Checks if a value is an instance of PeerId.
     * @param id The value to check.
     */
-  @scala.inline
-  def isPeerId(id: js.Any): /* is peer-id.peer-id.PeerId */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPeerId")(id.asInstanceOf[js.Any]).asInstanceOf[/* is peer-id.peer-id.PeerId */ Boolean]
+  inline def isPeerId(id: js.Any): /* is peer-id.peer-id.PeerId */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPeerId")(id.asInstanceOf[js.Any]).asInstanceOf[/* is peer-id.peer-id.PeerId */ Boolean]
   
   /**
     * Options for PeerId creation.
@@ -129,26 +112,20 @@ object mod {
   }
   object CreateOptions {
     
-    @scala.inline
-    def apply(): CreateOptions = {
+    inline def apply(): CreateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateOptions]
     }
     
-    @scala.inline
-    implicit class CreateOptionsMutableBuilder[Self <: CreateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CreateOptions](x: Self) {
       
-      @scala.inline
-      def setBits(value: Double): Self = StObject.set(x, "bits", value.asInstanceOf[js.Any])
+      inline def setBits(value: Double): Self = StObject.set(x, "bits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBitsUndefined: Self = StObject.set(x, "bits", js.undefined)
+      inline def setBitsUndefined: Self = StObject.set(x, "bits", js.undefined)
       
-      @scala.inline
-      def setKeyType(value: KeyType): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
+      inline def setKeyType(value: KeyType): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyTypeUndefined: Self = StObject.set(x, "keyType", js.undefined)
+      inline def setKeyTypeUndefined: Self = StObject.set(x, "keyType", js.undefined)
     }
   }
   
@@ -174,29 +151,22 @@ object mod {
   }
   object JSONPeerId {
     
-    @scala.inline
-    def apply(id: String): JSONPeerId = {
+    inline def apply(id: String): JSONPeerId = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[JSONPeerId]
     }
     
-    @scala.inline
-    implicit class JSONPeerIdMutableBuilder[Self <: JSONPeerId] (val x: Self) extends AnyVal {
+    extension [Self <: JSONPeerId](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivKey(value: String): Self = StObject.set(x, "privKey", value.asInstanceOf[js.Any])
+      inline def setPrivKey(value: String): Self = StObject.set(x, "privKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivKeyUndefined: Self = StObject.set(x, "privKey", js.undefined)
+      inline def setPrivKeyUndefined: Self = StObject.set(x, "privKey", js.undefined)
       
-      @scala.inline
-      def setPubKey(value: String): Self = StObject.set(x, "pubKey", value.asInstanceOf[js.Any])
+      inline def setPubKey(value: String): Self = StObject.set(x, "pubKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPubKeyUndefined: Self = StObject.set(x, "pubKey", js.undefined)
+      inline def setPubKeyUndefined: Self = StObject.set(x, "pubKey", js.undefined)
     }
   }
   

@@ -45,49 +45,35 @@ trait ParamsResourceLayersVolumeannotationsGet
 }
 object ParamsResourceLayersVolumeannotationsGet {
   
-  @scala.inline
-  def apply(): ParamsResourceLayersVolumeannotationsGet = {
+  inline def apply(): ParamsResourceLayersVolumeannotationsGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceLayersVolumeannotationsGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceLayersVolumeannotationsGetMutableBuilder[Self <: ParamsResourceLayersVolumeannotationsGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceLayersVolumeannotationsGet](x: Self) {
     
-    @scala.inline
-    def setAnnotationId(value: String): Self = StObject.set(x, "annotationId", value.asInstanceOf[js.Any])
+    inline def setAnnotationId(value: String): Self = StObject.set(x, "annotationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationIdUndefined: Self = StObject.set(x, "annotationId", js.undefined)
+    inline def setAnnotationIdUndefined: Self = StObject.set(x, "annotationId", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setLayerId(value: String): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
+    inline def setLayerId(value: String): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerIdUndefined: Self = StObject.set(x, "layerId", js.undefined)
+    inline def setLayerIdUndefined: Self = StObject.set(x, "layerId", js.undefined)
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setVolumeId(value: String): Self = StObject.set(x, "volumeId", value.asInstanceOf[js.Any])
+    inline def setVolumeId(value: String): Self = StObject.set(x, "volumeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeIdUndefined: Self = StObject.set(x, "volumeId", js.undefined)
+    inline def setVolumeIdUndefined: Self = StObject.set(x, "volumeId", js.undefined)
   }
 }

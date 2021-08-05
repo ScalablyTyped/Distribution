@@ -21,13 +21,13 @@ object autofillAutofillMod {
     @JSName("UNSAFE_componentWillReceiveProps")
     def UNSAFE_componentWillReceiveProps_MAutofill(nextProps: IAutofillProps): Unit = js.native
     
-    var _async: js.Any = js.native
+    /* private */ var _async: js.Any = js.native
     
-    var _autoFillEnabled: js.Any = js.native
+    /* private */ var _autoFillEnabled: js.Any = js.native
     
-    var _doesTextStartWith: js.Any = js.native
+    /* private */ var _doesTextStartWith: js.Any = js.native
     
-    var _getCurrentInputValue: js.Any = js.native
+    /* private */ var _getCurrentInputValue: js.Any = js.native
     
     /**
       * Returns a string that should be used as the display value.
@@ -36,27 +36,27 @@ object autofillAutofillMod {
       * @param inputValue - the value that the input currently has.
       * @param suggestedDisplayValue - the possible full value
       */
-    var _getDisplayValue: js.Any = js.native
+    /* private */ var _getDisplayValue: js.Any = js.native
     
-    var _inputElement: js.Any = js.native
+    /* private */ var _inputElement: js.Any = js.native
     
-    var _isComposing: js.Any = js.native
+    /* private */ var _isComposing: js.Any = js.native
     
-    var _notifyInputChange: js.Any = js.native
+    /* private */ var _notifyInputChange: js.Any = js.native
     
-    var _onChanged: js.Any = js.native
+    /* private */ var _onChanged: js.Any = js.native
     
-    var _onClick: js.Any = js.native
+    /* private */ var _onClick: js.Any = js.native
     
-    var _onCompositionEnd: js.Any = js.native
+    /* private */ var _onCompositionEnd: js.Any = js.native
     
-    var _onCompositionStart: js.Any = js.native
+    /* private */ var _onCompositionStart: js.Any = js.native
     
-    var _onCompositionUpdate: js.Any = js.native
+    /* private */ var _onCompositionUpdate: js.Any = js.native
     
-    var _onInputChanged: js.Any = js.native
+    /* private */ var _onInputChanged: js.Any = js.native
     
-    var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: js.Any = js.native
     
     /**
       * Attempts to enable autofill. Whether or not autofill is enabled depends on the input value,
@@ -69,15 +69,15 @@ object autofillAutofillMod {
       * @param isComposing - if true then the text is actively being composed and it has not completed.
       * @param isComposed - if the text is a composed text value.
       */
-    var _tryEnableAutofill: js.Any = js.native
+    /* private */ var _tryEnableAutofill: js.Any = js.native
     
     /**
       * Updates the current input value as well as getting a new display value.
       * @param newValue - The new value from the input
       */
-    var _updateValue: js.Any = js.native
+    /* private */ var _updateValue: js.Any = js.native
     
-    var _value: js.Any = js.native
+    /* private */ var _value: js.Any = js.native
     
     /**
       * Clear all text in the input. Sets value to '';
@@ -146,8 +146,7 @@ object autofillAutofillMod {
     @JSImport("office-ui-fabric-react/lib/components/Autofill/Autofill", "Autofill.defaultProps")
     @js.native
     def defaultProps: EnableAutofillOnKeyPress = js.native
-    @scala.inline
-    def defaultProps_=(x: EnableAutofillOnKeyPress): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: EnableAutofillOnKeyPress): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("office-ui-fabric-react/lib/components/Autofill/Autofill", "BaseAutoFill")
@@ -162,20 +161,16 @@ object autofillAutofillMod {
   }
   object IAutofillState {
     
-    @scala.inline
-    def apply(): IAutofillState = {
+    inline def apply(): IAutofillState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IAutofillState]
     }
     
-    @scala.inline
-    implicit class IAutofillStateMutableBuilder[Self <: IAutofillState] (val x: Self) extends AnyVal {
+    extension [Self <: IAutofillState](x: Self) {
       
-      @scala.inline
-      def setDisplayValue(value: String): Self = StObject.set(x, "displayValue", value.asInstanceOf[js.Any])
+      inline def setDisplayValue(value: String): Self = StObject.set(x, "displayValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayValueUndefined: Self = StObject.set(x, "displayValue", js.undefined)
+      inline def setDisplayValueUndefined: Self = StObject.set(x, "displayValue", js.undefined)
     }
   }
 }

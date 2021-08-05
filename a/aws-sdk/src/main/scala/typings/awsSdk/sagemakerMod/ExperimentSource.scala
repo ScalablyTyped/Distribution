@@ -18,22 +18,17 @@ trait ExperimentSource extends StObject {
 }
 object ExperimentSource {
   
-  @scala.inline
-  def apply(SourceArn: ExperimentSourceArn): ExperimentSource = {
+  inline def apply(SourceArn: ExperimentSourceArn): ExperimentSource = {
     val __obj = js.Dynamic.literal(SourceArn = SourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExperimentSource]
   }
   
-  @scala.inline
-  implicit class ExperimentSourceMutableBuilder[Self <: ExperimentSource] (val x: Self) extends AnyVal {
+  extension [Self <: ExperimentSource](x: Self) {
     
-    @scala.inline
-    def setSourceArn(value: ExperimentSourceArn): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
+    inline def setSourceArn(value: ExperimentSourceArn): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceType(value: SourceType): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
+    inline def setSourceType(value: SourceType): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceTypeUndefined: Self = StObject.set(x, "SourceType", js.undefined)
+    inline def setSourceTypeUndefined: Self = StObject.set(x, "SourceType", js.undefined)
   }
 }

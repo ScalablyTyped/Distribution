@@ -53,43 +53,31 @@ trait SchemaInstanceGroupManagerUpdatePolicy extends StObject {
 }
 object SchemaInstanceGroupManagerUpdatePolicy {
   
-  @scala.inline
-  def apply(): SchemaInstanceGroupManagerUpdatePolicy = {
+  inline def apply(): SchemaInstanceGroupManagerUpdatePolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInstanceGroupManagerUpdatePolicy]
   }
   
-  @scala.inline
-  implicit class SchemaInstanceGroupManagerUpdatePolicyMutableBuilder[Self <: SchemaInstanceGroupManagerUpdatePolicy] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInstanceGroupManagerUpdatePolicy](x: Self) {
     
-    @scala.inline
-    def setMaxSurge(value: SchemaFixedOrPercent): Self = StObject.set(x, "maxSurge", value.asInstanceOf[js.Any])
+    inline def setMaxSurge(value: SchemaFixedOrPercent): Self = StObject.set(x, "maxSurge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSurgeUndefined: Self = StObject.set(x, "maxSurge", js.undefined)
+    inline def setMaxSurgeUndefined: Self = StObject.set(x, "maxSurge", js.undefined)
     
-    @scala.inline
-    def setMaxUnavailable(value: SchemaFixedOrPercent): Self = StObject.set(x, "maxUnavailable", value.asInstanceOf[js.Any])
+    inline def setMaxUnavailable(value: SchemaFixedOrPercent): Self = StObject.set(x, "maxUnavailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUnavailableUndefined: Self = StObject.set(x, "maxUnavailable", js.undefined)
+    inline def setMaxUnavailableUndefined: Self = StObject.set(x, "maxUnavailable", js.undefined)
     
-    @scala.inline
-    def setMinReadySec(value: Double): Self = StObject.set(x, "minReadySec", value.asInstanceOf[js.Any])
+    inline def setMinReadySec(value: Double): Self = StObject.set(x, "minReadySec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinReadySecUndefined: Self = StObject.set(x, "minReadySec", js.undefined)
+    inline def setMinReadySecUndefined: Self = StObject.set(x, "minReadySec", js.undefined)
     
-    @scala.inline
-    def setMinimalAction(value: String): Self = StObject.set(x, "minimalAction", value.asInstanceOf[js.Any])
+    inline def setMinimalAction(value: String): Self = StObject.set(x, "minimalAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimalActionUndefined: Self = StObject.set(x, "minimalAction", js.undefined)
+    inline def setMinimalActionUndefined: Self = StObject.set(x, "minimalAction", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

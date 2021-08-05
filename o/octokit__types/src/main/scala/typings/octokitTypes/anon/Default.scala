@@ -22,8 +22,7 @@ trait Default extends StObject {
 }
 object Default {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     default: Boolean,
     id: Double,
     inherited: Boolean,
@@ -36,28 +35,20 @@ object Default {
     __obj.asInstanceOf[Default]
   }
   
-  @scala.inline
-  implicit class DefaultMutableBuilder[Self <: Default] (val x: Self) extends AnyVal {
+  extension [Self <: Default](x: Self) {
     
-    @scala.inline
-    def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInherited(value: Boolean): Self = StObject.set(x, "inherited", value.asInstanceOf[js.Any])
+    inline def setInherited(value: Boolean): Self = StObject.set(x, "inherited", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunners_url(value: String): Self = StObject.set(x, "runners_url", value.asInstanceOf[js.Any])
+    inline def setRunners_url(value: String): Self = StObject.set(x, "runners_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelected_repositories_url(value: String): Self = StObject.set(x, "selected_repositories_url", value.asInstanceOf[js.Any])
+    inline def setSelected_repositories_url(value: String): Self = StObject.set(x, "selected_repositories_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
   }
 }

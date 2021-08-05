@@ -28,31 +28,23 @@ trait SpotProvisioningSpecification extends StObject {
 }
 object SpotProvisioningSpecification {
   
-  @scala.inline
-  def apply(TimeoutAction: SpotProvisioningTimeoutAction, TimeoutDurationMinutes: WholeNumber): SpotProvisioningSpecification = {
+  inline def apply(TimeoutAction: SpotProvisioningTimeoutAction, TimeoutDurationMinutes: WholeNumber): SpotProvisioningSpecification = {
     val __obj = js.Dynamic.literal(TimeoutAction = TimeoutAction.asInstanceOf[js.Any], TimeoutDurationMinutes = TimeoutDurationMinutes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpotProvisioningSpecification]
   }
   
-  @scala.inline
-  implicit class SpotProvisioningSpecificationMutableBuilder[Self <: SpotProvisioningSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: SpotProvisioningSpecification](x: Self) {
     
-    @scala.inline
-    def setAllocationStrategy(value: SpotProvisioningAllocationStrategy): Self = StObject.set(x, "AllocationStrategy", value.asInstanceOf[js.Any])
+    inline def setAllocationStrategy(value: SpotProvisioningAllocationStrategy): Self = StObject.set(x, "AllocationStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllocationStrategyUndefined: Self = StObject.set(x, "AllocationStrategy", js.undefined)
+    inline def setAllocationStrategyUndefined: Self = StObject.set(x, "AllocationStrategy", js.undefined)
     
-    @scala.inline
-    def setBlockDurationMinutes(value: WholeNumber): Self = StObject.set(x, "BlockDurationMinutes", value.asInstanceOf[js.Any])
+    inline def setBlockDurationMinutes(value: WholeNumber): Self = StObject.set(x, "BlockDurationMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockDurationMinutesUndefined: Self = StObject.set(x, "BlockDurationMinutes", js.undefined)
+    inline def setBlockDurationMinutesUndefined: Self = StObject.set(x, "BlockDurationMinutes", js.undefined)
     
-    @scala.inline
-    def setTimeoutAction(value: SpotProvisioningTimeoutAction): Self = StObject.set(x, "TimeoutAction", value.asInstanceOf[js.Any])
+    inline def setTimeoutAction(value: SpotProvisioningTimeoutAction): Self = StObject.set(x, "TimeoutAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutDurationMinutes(value: WholeNumber): Self = StObject.set(x, "TimeoutDurationMinutes", value.asInstanceOf[js.Any])
+    inline def setTimeoutDurationMinutes(value: WholeNumber): Self = StObject.set(x, "TimeoutDurationMinutes", value.asInstanceOf[js.Any])
   }
 }

@@ -16,7 +16,6 @@ object variableNameTableMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getVariableName(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getVariableName")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getVariableName(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getVariableName")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

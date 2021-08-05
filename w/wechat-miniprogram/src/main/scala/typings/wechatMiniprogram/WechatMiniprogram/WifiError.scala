@@ -46,19 +46,15 @@ trait WifiError extends StObject {
 }
 object WifiError {
   
-  @scala.inline
-  def apply(errCode: Double, errMsg: String): WifiError = {
+  inline def apply(errCode: Double, errMsg: String): WifiError = {
     val __obj = js.Dynamic.literal(errCode = errCode.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[WifiError]
   }
   
-  @scala.inline
-  implicit class WifiErrorMutableBuilder[Self <: WifiError] (val x: Self) extends AnyVal {
+  extension [Self <: WifiError](x: Self) {
     
-    @scala.inline
-    def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
+    inline def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

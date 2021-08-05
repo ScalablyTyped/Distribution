@@ -49,17 +49,14 @@ object blameMod {
       * @param path - to the file to get the blame of
       * @param [options] - Options for the blame
       */
-    @scala.inline
-    def file(repo: Repository, path: String): js.Promise[Blame] = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Blame]]
-    @scala.inline
-    def file(repo: Repository, path: String, options: BlameOptions): js.Promise[Blame] = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Blame]]
+    inline def file(repo: Repository, path: String): js.Promise[Blame] = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Blame]]
+    inline def file(repo: Repository, path: String, options: BlameOptions): js.Promise[Blame] = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Blame]]
     
     /**
       * @param opts - The git_blame_options struct to initialize
       * @param version - Version of struct; pass GIT_BLAME_OPTIONS_VERSION
       */
-    @scala.inline
-    def initOptions(opts: BlameOptions, version: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("initOptions")(opts.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def initOptions(opts: BlameOptions, version: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("initOptions")(opts.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitNumbers.`0`
@@ -72,23 +69,17 @@ object blameMod {
     trait FLAG extends StObject
     object FLAG {
       
-      @scala.inline
-      def FIRST_PARENT: `16` = 16.asInstanceOf[`16`]
+      inline def FIRST_PARENT: `16` = 16.asInstanceOf[`16`]
       
-      @scala.inline
-      def NORMAL: `0` = 0.asInstanceOf[`0`]
+      inline def NORMAL: `0` = 0.asInstanceOf[`0`]
       
-      @scala.inline
-      def TRACK_COPIES_ANY_COMMIT_COPIES: `8` = 8.asInstanceOf[`8`]
+      inline def TRACK_COPIES_ANY_COMMIT_COPIES: `8` = 8.asInstanceOf[`8`]
       
-      @scala.inline
-      def TRACK_COPIES_SAME_COMMIT_COPIES: `4` = 4.asInstanceOf[`4`]
+      inline def TRACK_COPIES_SAME_COMMIT_COPIES: `4` = 4.asInstanceOf[`4`]
       
-      @scala.inline
-      def TRACK_COPIES_SAME_COMMIT_MOVES: `2` = 2.asInstanceOf[`2`]
+      inline def TRACK_COPIES_SAME_COMMIT_MOVES: `2` = 2.asInstanceOf[`2`]
       
-      @scala.inline
-      def TRACK_COPIES_SAME_FILE: `1` = 1.asInstanceOf[`1`]
+      inline def TRACK_COPIES_SAME_FILE: `1` = 1.asInstanceOf[`1`]
     }
   }
 }

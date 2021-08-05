@@ -33,40 +33,29 @@ trait StartQueryExecutionInput extends StObject {
 }
 object StartQueryExecutionInput {
   
-  @scala.inline
-  def apply(QueryString: QueryString): StartQueryExecutionInput = {
+  inline def apply(QueryString: QueryString): StartQueryExecutionInput = {
     val __obj = js.Dynamic.literal(QueryString = QueryString.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartQueryExecutionInput]
   }
   
-  @scala.inline
-  implicit class StartQueryExecutionInputMutableBuilder[Self <: StartQueryExecutionInput] (val x: Self) extends AnyVal {
+  extension [Self <: StartQueryExecutionInput](x: Self) {
     
-    @scala.inline
-    def setClientRequestToken(value: IdempotencyToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: IdempotencyToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
+    inline def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
     
-    @scala.inline
-    def setQueryExecutionContext(value: QueryExecutionContext): Self = StObject.set(x, "QueryExecutionContext", value.asInstanceOf[js.Any])
+    inline def setQueryExecutionContext(value: QueryExecutionContext): Self = StObject.set(x, "QueryExecutionContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryExecutionContextUndefined: Self = StObject.set(x, "QueryExecutionContext", js.undefined)
+    inline def setQueryExecutionContextUndefined: Self = StObject.set(x, "QueryExecutionContext", js.undefined)
     
-    @scala.inline
-    def setQueryString(value: QueryString): Self = StObject.set(x, "QueryString", value.asInstanceOf[js.Any])
+    inline def setQueryString(value: QueryString): Self = StObject.set(x, "QueryString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultConfiguration(value: ResultConfiguration): Self = StObject.set(x, "ResultConfiguration", value.asInstanceOf[js.Any])
+    inline def setResultConfiguration(value: ResultConfiguration): Self = StObject.set(x, "ResultConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultConfigurationUndefined: Self = StObject.set(x, "ResultConfiguration", js.undefined)
+    inline def setResultConfigurationUndefined: Self = StObject.set(x, "ResultConfiguration", js.undefined)
     
-    @scala.inline
-    def setWorkGroup(value: WorkGroupName): Self = StObject.set(x, "WorkGroup", value.asInstanceOf[js.Any])
+    inline def setWorkGroup(value: WorkGroupName): Self = StObject.set(x, "WorkGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkGroupUndefined: Self = StObject.set(x, "WorkGroup", js.undefined)
+    inline def setWorkGroupUndefined: Self = StObject.set(x, "WorkGroup", js.undefined)
   }
 }

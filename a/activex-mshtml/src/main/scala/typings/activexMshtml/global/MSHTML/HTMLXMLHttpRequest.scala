@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLXMLHttpRequest")
 @js.native
-class HTMLXMLHttpRequest protected ()
+/* private */ class HTMLXMLHttpRequest ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLXMLHttpRequest

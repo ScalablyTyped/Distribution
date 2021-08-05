@@ -57,88 +57,61 @@ trait GoogleCloudMlV1PredictionInput extends StObject {
 }
 object GoogleCloudMlV1PredictionInput {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1PredictionInput = {
+  inline def apply(): GoogleCloudMlV1PredictionInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1PredictionInput]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1PredictionInputMutableBuilder[Self <: GoogleCloudMlV1PredictionInput] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1PredictionInput](x: Self) {
     
-    @scala.inline
-    def setBatchSize(value: String): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+    inline def setBatchSize(value: String): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
+    inline def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
     
-    @scala.inline
-    def setDataFormat(value: String): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
+    inline def setDataFormat(value: String): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataFormatUndefined: Self = StObject.set(x, "dataFormat", js.undefined)
+    inline def setDataFormatUndefined: Self = StObject.set(x, "dataFormat", js.undefined)
     
-    @scala.inline
-    def setInputPaths(value: js.Array[String]): Self = StObject.set(x, "inputPaths", value.asInstanceOf[js.Any])
+    inline def setInputPaths(value: js.Array[String]): Self = StObject.set(x, "inputPaths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputPathsUndefined: Self = StObject.set(x, "inputPaths", js.undefined)
+    inline def setInputPathsUndefined: Self = StObject.set(x, "inputPaths", js.undefined)
     
-    @scala.inline
-    def setInputPathsVarargs(value: String*): Self = StObject.set(x, "inputPaths", js.Array(value :_*))
+    inline def setInputPathsVarargs(value: String*): Self = StObject.set(x, "inputPaths", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxWorkerCount(value: String): Self = StObject.set(x, "maxWorkerCount", value.asInstanceOf[js.Any])
+    inline def setMaxWorkerCount(value: String): Self = StObject.set(x, "maxWorkerCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWorkerCountUndefined: Self = StObject.set(x, "maxWorkerCount", js.undefined)
+    inline def setMaxWorkerCountUndefined: Self = StObject.set(x, "maxWorkerCount", js.undefined)
     
-    @scala.inline
-    def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
+    inline def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelNameUndefined: Self = StObject.set(x, "modelName", js.undefined)
+    inline def setModelNameUndefined: Self = StObject.set(x, "modelName", js.undefined)
     
-    @scala.inline
-    def setOutputDataFormat(value: String): Self = StObject.set(x, "outputDataFormat", value.asInstanceOf[js.Any])
+    inline def setOutputDataFormat(value: String): Self = StObject.set(x, "outputDataFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputDataFormatUndefined: Self = StObject.set(x, "outputDataFormat", js.undefined)
+    inline def setOutputDataFormatUndefined: Self = StObject.set(x, "outputDataFormat", js.undefined)
     
-    @scala.inline
-    def setOutputPath(value: String): Self = StObject.set(x, "outputPath", value.asInstanceOf[js.Any])
+    inline def setOutputPath(value: String): Self = StObject.set(x, "outputPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputPathUndefined: Self = StObject.set(x, "outputPath", js.undefined)
+    inline def setOutputPathUndefined: Self = StObject.set(x, "outputPath", js.undefined)
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
-    @scala.inline
-    def setRuntimeVersion(value: String): Self = StObject.set(x, "runtimeVersion", value.asInstanceOf[js.Any])
+    inline def setRuntimeVersion(value: String): Self = StObject.set(x, "runtimeVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuntimeVersionUndefined: Self = StObject.set(x, "runtimeVersion", js.undefined)
+    inline def setRuntimeVersionUndefined: Self = StObject.set(x, "runtimeVersion", js.undefined)
     
-    @scala.inline
-    def setSignatureName(value: String): Self = StObject.set(x, "signatureName", value.asInstanceOf[js.Any])
+    inline def setSignatureName(value: String): Self = StObject.set(x, "signatureName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureNameUndefined: Self = StObject.set(x, "signatureName", js.undefined)
+    inline def setSignatureNameUndefined: Self = StObject.set(x, "signatureName", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
     
-    @scala.inline
-    def setVersionName(value: String): Self = StObject.set(x, "versionName", value.asInstanceOf[js.Any])
+    inline def setVersionName(value: String): Self = StObject.set(x, "versionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionNameUndefined: Self = StObject.set(x, "versionName", js.undefined)
+    inline def setVersionNameUndefined: Self = StObject.set(x, "versionName", js.undefined)
   }
 }

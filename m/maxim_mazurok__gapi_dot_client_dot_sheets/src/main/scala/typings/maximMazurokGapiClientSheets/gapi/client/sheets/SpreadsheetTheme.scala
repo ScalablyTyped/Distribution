@@ -14,28 +14,21 @@ trait SpreadsheetTheme extends StObject {
 }
 object SpreadsheetTheme {
   
-  @scala.inline
-  def apply(): SpreadsheetTheme = {
+  inline def apply(): SpreadsheetTheme = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpreadsheetTheme]
   }
   
-  @scala.inline
-  implicit class SpreadsheetThemeMutableBuilder[Self <: SpreadsheetTheme] (val x: Self) extends AnyVal {
+  extension [Self <: SpreadsheetTheme](x: Self) {
     
-    @scala.inline
-    def setPrimaryFontFamily(value: String): Self = StObject.set(x, "primaryFontFamily", value.asInstanceOf[js.Any])
+    inline def setPrimaryFontFamily(value: String): Self = StObject.set(x, "primaryFontFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryFontFamilyUndefined: Self = StObject.set(x, "primaryFontFamily", js.undefined)
+    inline def setPrimaryFontFamilyUndefined: Self = StObject.set(x, "primaryFontFamily", js.undefined)
     
-    @scala.inline
-    def setThemeColors(value: js.Array[ThemeColorPair]): Self = StObject.set(x, "themeColors", value.asInstanceOf[js.Any])
+    inline def setThemeColors(value: js.Array[ThemeColorPair]): Self = StObject.set(x, "themeColors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeColorsUndefined: Self = StObject.set(x, "themeColors", js.undefined)
+    inline def setThemeColorsUndefined: Self = StObject.set(x, "themeColors", js.undefined)
     
-    @scala.inline
-    def setThemeColorsVarargs(value: ThemeColorPair*): Self = StObject.set(x, "themeColors", js.Array(value :_*))
+    inline def setThemeColorsVarargs(value: ThemeColorPair*): Self = StObject.set(x, "themeColors", js.Array(value :_*))
   }
 }

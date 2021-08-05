@@ -61,21 +61,16 @@ object s3bucketAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): S3BucketAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[S3BucketAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): S3BucketAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[S3BucketAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: S3BucketAssociationState): S3BucketAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[S3BucketAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: S3BucketAssociationState, opts: CustomResourceOptions): S3BucketAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[S3BucketAssociation]
+    inline def get(name: String, id: Input[ID]): S3BucketAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[S3BucketAssociation]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): S3BucketAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[S3BucketAssociation]
+    inline def get(name: String, id: Input[ID], state: S3BucketAssociationState): S3BucketAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[S3BucketAssociation]
+    inline def get(name: String, id: Input[ID], state: S3BucketAssociationState, opts: CustomResourceOptions): S3BucketAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[S3BucketAssociation]
     
     /**
       * Returns true if the given object is an instance of S3BucketAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/macie/s3bucketAssociation.S3BucketAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/macie/s3bucketAssociation.S3BucketAssociation */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/macie/s3bucketAssociation.S3BucketAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/macie/s3bucketAssociation.S3BucketAssociation */ Boolean]
   }
   
   trait S3BucketAssociationArgs extends StObject {
@@ -102,35 +97,26 @@ object s3bucketAssociationMod {
   }
   object S3BucketAssociationArgs {
     
-    @scala.inline
-    def apply(bucketName: Input[String]): S3BucketAssociationArgs = {
+    inline def apply(bucketName: Input[String]): S3BucketAssociationArgs = {
       val __obj = js.Dynamic.literal(bucketName = bucketName.asInstanceOf[js.Any])
       __obj.asInstanceOf[S3BucketAssociationArgs]
     }
     
-    @scala.inline
-    implicit class S3BucketAssociationArgsMutableBuilder[Self <: S3BucketAssociationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: S3BucketAssociationArgs](x: Self) {
       
-      @scala.inline
-      def setBucketName(value: Input[String]): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
+      inline def setBucketName(value: Input[String]): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassificationType(value: Input[typings.pulumiAws.inputMod.macie.S3BucketAssociationClassificationType]): Self = StObject.set(x, "classificationType", value.asInstanceOf[js.Any])
+      inline def setClassificationType(value: Input[typings.pulumiAws.inputMod.macie.S3BucketAssociationClassificationType]): Self = StObject.set(x, "classificationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassificationTypeUndefined: Self = StObject.set(x, "classificationType", js.undefined)
+      inline def setClassificationTypeUndefined: Self = StObject.set(x, "classificationType", js.undefined)
       
-      @scala.inline
-      def setMemberAccountId(value: Input[String]): Self = StObject.set(x, "memberAccountId", value.asInstanceOf[js.Any])
+      inline def setMemberAccountId(value: Input[String]): Self = StObject.set(x, "memberAccountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemberAccountIdUndefined: Self = StObject.set(x, "memberAccountId", js.undefined)
+      inline def setMemberAccountIdUndefined: Self = StObject.set(x, "memberAccountId", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: Input[String]): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: Input[String]): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     }
   }
   
@@ -158,38 +144,28 @@ object s3bucketAssociationMod {
   }
   object S3BucketAssociationState {
     
-    @scala.inline
-    def apply(): S3BucketAssociationState = {
+    inline def apply(): S3BucketAssociationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[S3BucketAssociationState]
     }
     
-    @scala.inline
-    implicit class S3BucketAssociationStateMutableBuilder[Self <: S3BucketAssociationState] (val x: Self) extends AnyVal {
+    extension [Self <: S3BucketAssociationState](x: Self) {
       
-      @scala.inline
-      def setBucketName(value: Input[String]): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
+      inline def setBucketName(value: Input[String]): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucketNameUndefined: Self = StObject.set(x, "bucketName", js.undefined)
+      inline def setBucketNameUndefined: Self = StObject.set(x, "bucketName", js.undefined)
       
-      @scala.inline
-      def setClassificationType(value: Input[typings.pulumiAws.inputMod.macie.S3BucketAssociationClassificationType]): Self = StObject.set(x, "classificationType", value.asInstanceOf[js.Any])
+      inline def setClassificationType(value: Input[typings.pulumiAws.inputMod.macie.S3BucketAssociationClassificationType]): Self = StObject.set(x, "classificationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassificationTypeUndefined: Self = StObject.set(x, "classificationType", js.undefined)
+      inline def setClassificationTypeUndefined: Self = StObject.set(x, "classificationType", js.undefined)
       
-      @scala.inline
-      def setMemberAccountId(value: Input[String]): Self = StObject.set(x, "memberAccountId", value.asInstanceOf[js.Any])
+      inline def setMemberAccountId(value: Input[String]): Self = StObject.set(x, "memberAccountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemberAccountIdUndefined: Self = StObject.set(x, "memberAccountId", js.undefined)
+      inline def setMemberAccountIdUndefined: Self = StObject.set(x, "memberAccountId", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: Input[String]): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: Input[String]): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     }
   }
 }

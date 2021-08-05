@@ -78,8 +78,7 @@ trait TabularDataProviderArguments extends StObject {
 }
 object TabularDataProviderArguments {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CellRangeRepresentation: String,
     DataRowSource: ChartDataRowSource,
     FirstCellAsLabel: Boolean,
@@ -91,25 +90,18 @@ object TabularDataProviderArguments {
     __obj.asInstanceOf[TabularDataProviderArguments]
   }
   
-  @scala.inline
-  implicit class TabularDataProviderArgumentsMutableBuilder[Self <: TabularDataProviderArguments] (val x: Self) extends AnyVal {
+  extension [Self <: TabularDataProviderArguments](x: Self) {
     
-    @scala.inline
-    def setCellRangeRepresentation(value: String): Self = StObject.set(x, "CellRangeRepresentation", value.asInstanceOf[js.Any])
+    inline def setCellRangeRepresentation(value: String): Self = StObject.set(x, "CellRangeRepresentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataRowSource(value: ChartDataRowSource): Self = StObject.set(x, "DataRowSource", value.asInstanceOf[js.Any])
+    inline def setDataRowSource(value: ChartDataRowSource): Self = StObject.set(x, "DataRowSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstCellAsLabel(value: Boolean): Self = StObject.set(x, "FirstCellAsLabel", value.asInstanceOf[js.Any])
+    inline def setFirstCellAsLabel(value: Boolean): Self = StObject.set(x, "FirstCellAsLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasCategories(value: Boolean): Self = StObject.set(x, "HasCategories", value.asInstanceOf[js.Any])
+    inline def setHasCategories(value: Boolean): Self = StObject.set(x, "HasCategories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSequenceMapping(value: SafeArray[Double]): Self = StObject.set(x, "SequenceMapping", value.asInstanceOf[js.Any])
+    inline def setSequenceMapping(value: SafeArray[Double]): Self = StObject.set(x, "SequenceMapping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableNumberList(value: String): Self = StObject.set(x, "TableNumberList", value.asInstanceOf[js.Any])
+    inline def setTableNumberList(value: String): Self = StObject.set(x, "TableNumberList", value.asInstanceOf[js.Any])
   }
 }

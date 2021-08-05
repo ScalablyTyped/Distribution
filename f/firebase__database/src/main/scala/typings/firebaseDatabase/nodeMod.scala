@@ -34,8 +34,7 @@ object nodeMod {
       * @param {!Node} node
       * @return {NamedNode}
       */
-    @scala.inline
-    def Wrap(name: String, node: Node): NamedNode = (^.asInstanceOf[js.Dynamic].applyDynamic("Wrap")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[NamedNode]
+    inline def Wrap(name: String, node: Node): NamedNode = (^.asInstanceOf[js.Dynamic].applyDynamic("Wrap")(name.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[NamedNode]
   }
   
   @js.native

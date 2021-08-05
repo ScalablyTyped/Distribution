@@ -28,37 +28,27 @@ trait Classifier extends StObject {
 }
 object Classifier {
   
-  @scala.inline
-  def apply(): Classifier = {
+  inline def apply(): Classifier = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Classifier]
   }
   
-  @scala.inline
-  implicit class ClassifierMutableBuilder[Self <: Classifier] (val x: Self) extends AnyVal {
+  extension [Self <: Classifier](x: Self) {
     
-    @scala.inline
-    def setCsvClassifier(value: CsvClassifier): Self = StObject.set(x, "CsvClassifier", value.asInstanceOf[js.Any])
+    inline def setCsvClassifier(value: CsvClassifier): Self = StObject.set(x, "CsvClassifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCsvClassifierUndefined: Self = StObject.set(x, "CsvClassifier", js.undefined)
+    inline def setCsvClassifierUndefined: Self = StObject.set(x, "CsvClassifier", js.undefined)
     
-    @scala.inline
-    def setGrokClassifier(value: GrokClassifier): Self = StObject.set(x, "GrokClassifier", value.asInstanceOf[js.Any])
+    inline def setGrokClassifier(value: GrokClassifier): Self = StObject.set(x, "GrokClassifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrokClassifierUndefined: Self = StObject.set(x, "GrokClassifier", js.undefined)
+    inline def setGrokClassifierUndefined: Self = StObject.set(x, "GrokClassifier", js.undefined)
     
-    @scala.inline
-    def setJsonClassifier(value: JsonClassifier): Self = StObject.set(x, "JsonClassifier", value.asInstanceOf[js.Any])
+    inline def setJsonClassifier(value: JsonClassifier): Self = StObject.set(x, "JsonClassifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonClassifierUndefined: Self = StObject.set(x, "JsonClassifier", js.undefined)
+    inline def setJsonClassifierUndefined: Self = StObject.set(x, "JsonClassifier", js.undefined)
     
-    @scala.inline
-    def setXMLClassifier(value: XMLClassifier): Self = StObject.set(x, "XMLClassifier", value.asInstanceOf[js.Any])
+    inline def setXMLClassifier(value: XMLClassifier): Self = StObject.set(x, "XMLClassifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXMLClassifierUndefined: Self = StObject.set(x, "XMLClassifier", js.undefined)
+    inline def setXMLClassifierUndefined: Self = StObject.set(x, "XMLClassifier", js.undefined)
   }
 }

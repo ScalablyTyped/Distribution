@@ -45,55 +45,39 @@ trait EnvelopeFormData extends StObject {
 }
 object EnvelopeFormData {
   
-  @scala.inline
-  def apply(): EnvelopeFormData = {
+  inline def apply(): EnvelopeFormData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnvelopeFormData]
   }
   
-  @scala.inline
-  implicit class EnvelopeFormDataMutableBuilder[Self <: EnvelopeFormData] (val x: Self) extends AnyVal {
+  extension [Self <: EnvelopeFormData](x: Self) {
     
-    @scala.inline
-    def setEmailSubject(value: String): Self = StObject.set(x, "emailSubject", value.asInstanceOf[js.Any])
+    inline def setEmailSubject(value: String): Self = StObject.set(x, "emailSubject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailSubjectUndefined: Self = StObject.set(x, "emailSubject", js.undefined)
+    inline def setEmailSubjectUndefined: Self = StObject.set(x, "emailSubject", js.undefined)
     
-    @scala.inline
-    def setEnvelopeId(value: String): Self = StObject.set(x, "envelopeId", value.asInstanceOf[js.Any])
+    inline def setEnvelopeId(value: String): Self = StObject.set(x, "envelopeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvelopeIdUndefined: Self = StObject.set(x, "envelopeId", js.undefined)
+    inline def setEnvelopeIdUndefined: Self = StObject.set(x, "envelopeId", js.undefined)
     
-    @scala.inline
-    def setFormData(value: js.Array[FormDataItem]): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
+    inline def setFormData(value: js.Array[FormDataItem]): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
+    inline def setFormDataUndefined: Self = StObject.set(x, "formData", js.undefined)
     
-    @scala.inline
-    def setFormDataVarargs(value: FormDataItem*): Self = StObject.set(x, "formData", js.Array(value :_*))
+    inline def setFormDataVarargs(value: FormDataItem*): Self = StObject.set(x, "formData", js.Array(value :_*))
     
-    @scala.inline
-    def setRecipientFormData(value: js.Array[RecipientFormData]): Self = StObject.set(x, "recipientFormData", value.asInstanceOf[js.Any])
+    inline def setRecipientFormData(value: js.Array[RecipientFormData]): Self = StObject.set(x, "recipientFormData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientFormDataUndefined: Self = StObject.set(x, "recipientFormData", js.undefined)
+    inline def setRecipientFormDataUndefined: Self = StObject.set(x, "recipientFormData", js.undefined)
     
-    @scala.inline
-    def setRecipientFormDataVarargs(value: RecipientFormData*): Self = StObject.set(x, "recipientFormData", js.Array(value :_*))
+    inline def setRecipientFormDataVarargs(value: RecipientFormData*): Self = StObject.set(x, "recipientFormData", js.Array(value :_*))
     
-    @scala.inline
-    def setSentDateTime(value: String): Self = StObject.set(x, "sentDateTime", value.asInstanceOf[js.Any])
+    inline def setSentDateTime(value: String): Self = StObject.set(x, "sentDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentDateTimeUndefined: Self = StObject.set(x, "sentDateTime", js.undefined)
+    inline def setSentDateTimeUndefined: Self = StObject.set(x, "sentDateTime", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

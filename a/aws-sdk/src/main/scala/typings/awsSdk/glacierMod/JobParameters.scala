@@ -58,73 +58,51 @@ trait JobParameters extends StObject {
 }
 object JobParameters {
   
-  @scala.inline
-  def apply(): JobParameters = {
+  inline def apply(): JobParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobParameters]
   }
   
-  @scala.inline
-  implicit class JobParametersMutableBuilder[Self <: JobParameters] (val x: Self) extends AnyVal {
+  extension [Self <: JobParameters](x: Self) {
     
-    @scala.inline
-    def setArchiveId(value: String): Self = StObject.set(x, "ArchiveId", value.asInstanceOf[js.Any])
+    inline def setArchiveId(value: String): Self = StObject.set(x, "ArchiveId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArchiveIdUndefined: Self = StObject.set(x, "ArchiveId", js.undefined)
+    inline def setArchiveIdUndefined: Self = StObject.set(x, "ArchiveId", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
     
-    @scala.inline
-    def setInventoryRetrievalParameters(value: InventoryRetrievalJobInput): Self = StObject.set(x, "InventoryRetrievalParameters", value.asInstanceOf[js.Any])
+    inline def setInventoryRetrievalParameters(value: InventoryRetrievalJobInput): Self = StObject.set(x, "InventoryRetrievalParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInventoryRetrievalParametersUndefined: Self = StObject.set(x, "InventoryRetrievalParameters", js.undefined)
+    inline def setInventoryRetrievalParametersUndefined: Self = StObject.set(x, "InventoryRetrievalParameters", js.undefined)
     
-    @scala.inline
-    def setOutputLocation(value: OutputLocation): Self = StObject.set(x, "OutputLocation", value.asInstanceOf[js.Any])
+    inline def setOutputLocation(value: OutputLocation): Self = StObject.set(x, "OutputLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputLocationUndefined: Self = StObject.set(x, "OutputLocation", js.undefined)
+    inline def setOutputLocationUndefined: Self = StObject.set(x, "OutputLocation", js.undefined)
     
-    @scala.inline
-    def setRetrievalByteRange(value: String): Self = StObject.set(x, "RetrievalByteRange", value.asInstanceOf[js.Any])
+    inline def setRetrievalByteRange(value: String): Self = StObject.set(x, "RetrievalByteRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetrievalByteRangeUndefined: Self = StObject.set(x, "RetrievalByteRange", js.undefined)
+    inline def setRetrievalByteRangeUndefined: Self = StObject.set(x, "RetrievalByteRange", js.undefined)
     
-    @scala.inline
-    def setSNSTopic(value: String): Self = StObject.set(x, "SNSTopic", value.asInstanceOf[js.Any])
+    inline def setSNSTopic(value: String): Self = StObject.set(x, "SNSTopic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSNSTopicUndefined: Self = StObject.set(x, "SNSTopic", js.undefined)
+    inline def setSNSTopicUndefined: Self = StObject.set(x, "SNSTopic", js.undefined)
     
-    @scala.inline
-    def setSelectParameters(value: SelectParameters): Self = StObject.set(x, "SelectParameters", value.asInstanceOf[js.Any])
+    inline def setSelectParameters(value: SelectParameters): Self = StObject.set(x, "SelectParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectParametersUndefined: Self = StObject.set(x, "SelectParameters", js.undefined)
+    inline def setSelectParametersUndefined: Self = StObject.set(x, "SelectParameters", js.undefined)
     
-    @scala.inline
-    def setTier(value: String): Self = StObject.set(x, "Tier", value.asInstanceOf[js.Any])
+    inline def setTier(value: String): Self = StObject.set(x, "Tier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTierUndefined: Self = StObject.set(x, "Tier", js.undefined)
+    inline def setTierUndefined: Self = StObject.set(x, "Tier", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

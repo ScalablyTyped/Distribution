@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object objectToCamelWithMetadataMod {
   
-  @scala.inline
-  def apply(entry: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(entry.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(entry: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(entry.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("ipfs-http-client/dist/src/lib/object-to-camel-with-metadata", JSImport.Namespace)
   @js.native

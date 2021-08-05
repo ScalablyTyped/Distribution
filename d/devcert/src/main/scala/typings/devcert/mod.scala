@@ -12,22 +12,16 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def certificateFor[O /* <: Options */](domain: String): js.Promise[IReturnData[O]] = ^.asInstanceOf[js.Dynamic].applyDynamic("certificateFor")(domain.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IReturnData[O]]]
-  @scala.inline
-  def certificateFor[O /* <: Options */](domain: String, options: O): js.Promise[IReturnData[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("certificateFor")(domain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IReturnData[O]]]
+  inline def certificateFor[O /* <: Options */](domain: String): js.Promise[IReturnData[O]] = ^.asInstanceOf[js.Dynamic].applyDynamic("certificateFor")(domain.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IReturnData[O]]]
+  inline def certificateFor[O /* <: Options */](domain: String, options: O): js.Promise[IReturnData[O]] = (^.asInstanceOf[js.Dynamic].applyDynamic("certificateFor")(domain.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IReturnData[O]]]
   
-  @scala.inline
-  def configuredDomains(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("configuredDomains")().asInstanceOf[js.Array[String]]
+  inline def configuredDomains(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("configuredDomains")().asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def hasCertificateFor(domain: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasCertificateFor")(domain.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def hasCertificateFor(domain: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasCertificateFor")(domain.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def removeDomain(domain: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeDomain")(domain.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeDomain(domain: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeDomain")(domain.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def uninstall(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("uninstall")().asInstanceOf[Unit]
+  inline def uninstall(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("uninstall")().asInstanceOf[Unit]
   
   trait ICaBuffer
     extends StObject
@@ -37,17 +31,14 @@ object mod {
   }
   object ICaBuffer {
     
-    @scala.inline
-    def apply(ca: Buffer): ICaBuffer = {
+    inline def apply(ca: Buffer): ICaBuffer = {
       val __obj = js.Dynamic.literal(ca = ca.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICaBuffer]
     }
     
-    @scala.inline
-    implicit class ICaBufferMutableBuilder[Self <: ICaBuffer] (val x: Self) extends AnyVal {
+    extension [Self <: ICaBuffer](x: Self) {
       
-      @scala.inline
-      def setCa(value: Buffer): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
+      inline def setCa(value: Buffer): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
     }
   }
   
@@ -59,17 +50,14 @@ object mod {
   }
   object ICaPath {
     
-    @scala.inline
-    def apply(caPath: String): ICaPath = {
+    inline def apply(caPath: String): ICaPath = {
       val __obj = js.Dynamic.literal(caPath = caPath.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICaPath]
     }
     
-    @scala.inline
-    implicit class ICaPathMutableBuilder[Self <: ICaPath] (val x: Self) extends AnyVal {
+    extension [Self <: ICaPath](x: Self) {
       
-      @scala.inline
-      def setCaPath(value: String): Self = StObject.set(x, "caPath", value.asInstanceOf[js.Any])
+      inline def setCaPath(value: String): Self = StObject.set(x, "caPath", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,20 +69,16 @@ object mod {
   }
   object IDomainData {
     
-    @scala.inline
-    def apply(cert: Buffer, key: Buffer): IDomainData = {
+    inline def apply(cert: Buffer, key: Buffer): IDomainData = {
       val __obj = js.Dynamic.literal(cert = cert.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDomainData]
     }
     
-    @scala.inline
-    implicit class IDomainDataMutableBuilder[Self <: IDomainData] (val x: Self) extends AnyVal {
+    extension [Self <: IDomainData](x: Self) {
       
-      @scala.inline
-      def setCert(value: Buffer): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+      inline def setCert(value: Buffer): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
   }
   
@@ -131,44 +115,32 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setGetCaBuffer(value: Boolean): Self = StObject.set(x, "getCaBuffer", value.asInstanceOf[js.Any])
+      inline def setGetCaBuffer(value: Boolean): Self = StObject.set(x, "getCaBuffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetCaBufferUndefined: Self = StObject.set(x, "getCaBuffer", js.undefined)
+      inline def setGetCaBufferUndefined: Self = StObject.set(x, "getCaBuffer", js.undefined)
       
-      @scala.inline
-      def setGetCaPath(value: Boolean): Self = StObject.set(x, "getCaPath", value.asInstanceOf[js.Any])
+      inline def setGetCaPath(value: Boolean): Self = StObject.set(x, "getCaPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetCaPathUndefined: Self = StObject.set(x, "getCaPath", js.undefined)
+      inline def setGetCaPathUndefined: Self = StObject.set(x, "getCaPath", js.undefined)
       
-      @scala.inline
-      def setSkipCertutilInstall(value: Boolean): Self = StObject.set(x, "skipCertutilInstall", value.asInstanceOf[js.Any])
+      inline def setSkipCertutilInstall(value: Boolean): Self = StObject.set(x, "skipCertutilInstall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipCertutilInstallUndefined: Self = StObject.set(x, "skipCertutilInstall", js.undefined)
+      inline def setSkipCertutilInstallUndefined: Self = StObject.set(x, "skipCertutilInstall", js.undefined)
       
-      @scala.inline
-      def setSkipHostsFile(value: Boolean): Self = StObject.set(x, "skipHostsFile", value.asInstanceOf[js.Any])
+      inline def setSkipHostsFile(value: Boolean): Self = StObject.set(x, "skipHostsFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipHostsFileUndefined: Self = StObject.set(x, "skipHostsFile", js.undefined)
+      inline def setSkipHostsFileUndefined: Self = StObject.set(x, "skipHostsFile", js.undefined)
       
-      @scala.inline
-      def setUi(value: UserInterface): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
+      inline def setUi(value: UserInterface): Self = StObject.set(x, "ui", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUiUndefined: Self = StObject.set(x, "ui", js.undefined)
+      inline def setUiUndefined: Self = StObject.set(x, "ui", js.undefined)
     }
   }
 }

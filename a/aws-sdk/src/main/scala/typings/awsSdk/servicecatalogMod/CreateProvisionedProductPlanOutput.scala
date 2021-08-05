@@ -33,43 +33,31 @@ trait CreateProvisionedProductPlanOutput extends StObject {
 }
 object CreateProvisionedProductPlanOutput {
   
-  @scala.inline
-  def apply(): CreateProvisionedProductPlanOutput = {
+  inline def apply(): CreateProvisionedProductPlanOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateProvisionedProductPlanOutput]
   }
   
-  @scala.inline
-  implicit class CreateProvisionedProductPlanOutputMutableBuilder[Self <: CreateProvisionedProductPlanOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateProvisionedProductPlanOutput](x: Self) {
     
-    @scala.inline
-    def setPlanId(value: Id): Self = StObject.set(x, "PlanId", value.asInstanceOf[js.Any])
+    inline def setPlanId(value: Id): Self = StObject.set(x, "PlanId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlanIdUndefined: Self = StObject.set(x, "PlanId", js.undefined)
+    inline def setPlanIdUndefined: Self = StObject.set(x, "PlanId", js.undefined)
     
-    @scala.inline
-    def setPlanName(value: ProvisionedProductPlanName): Self = StObject.set(x, "PlanName", value.asInstanceOf[js.Any])
+    inline def setPlanName(value: ProvisionedProductPlanName): Self = StObject.set(x, "PlanName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlanNameUndefined: Self = StObject.set(x, "PlanName", js.undefined)
+    inline def setPlanNameUndefined: Self = StObject.set(x, "PlanName", js.undefined)
     
-    @scala.inline
-    def setProvisionProductId(value: Id): Self = StObject.set(x, "ProvisionProductId", value.asInstanceOf[js.Any])
+    inline def setProvisionProductId(value: Id): Self = StObject.set(x, "ProvisionProductId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionProductIdUndefined: Self = StObject.set(x, "ProvisionProductId", js.undefined)
+    inline def setProvisionProductIdUndefined: Self = StObject.set(x, "ProvisionProductId", js.undefined)
     
-    @scala.inline
-    def setProvisionedProductName(value: ProvisionedProductName): Self = StObject.set(x, "ProvisionedProductName", value.asInstanceOf[js.Any])
+    inline def setProvisionedProductName(value: ProvisionedProductName): Self = StObject.set(x, "ProvisionedProductName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionedProductNameUndefined: Self = StObject.set(x, "ProvisionedProductName", js.undefined)
+    inline def setProvisionedProductNameUndefined: Self = StObject.set(x, "ProvisionedProductName", js.undefined)
     
-    @scala.inline
-    def setProvisioningArtifactId(value: Id): Self = StObject.set(x, "ProvisioningArtifactId", value.asInstanceOf[js.Any])
+    inline def setProvisioningArtifactId(value: Id): Self = StObject.set(x, "ProvisioningArtifactId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisioningArtifactIdUndefined: Self = StObject.set(x, "ProvisioningArtifactId", js.undefined)
+    inline def setProvisioningArtifactIdUndefined: Self = StObject.set(x, "ProvisioningArtifactId", js.undefined)
   }
 }

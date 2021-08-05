@@ -14,8 +14,7 @@ trait ReadBuildProgramHost extends StObject {
 }
 object ReadBuildProgramHost {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCurrentDirectory: () => java.lang.String,
     readFile: java.lang.String => js.UndefOr[java.lang.String],
     useCaseSensitiveFileNames: () => Boolean
@@ -24,16 +23,12 @@ object ReadBuildProgramHost {
     __obj.asInstanceOf[ReadBuildProgramHost]
   }
   
-  @scala.inline
-  implicit class ReadBuildProgramHostMutableBuilder[Self <: ReadBuildProgramHost] (val x: Self) extends AnyVal {
+  extension [Self <: ReadBuildProgramHost](x: Self) {
     
-    @scala.inline
-    def setGetCurrentDirectory(value: () => java.lang.String): Self = StObject.set(x, "getCurrentDirectory", js.Any.fromFunction0(value))
+    inline def setGetCurrentDirectory(value: () => java.lang.String): Self = StObject.set(x, "getCurrentDirectory", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadFile(value: java.lang.String => js.UndefOr[java.lang.String]): Self = StObject.set(x, "readFile", js.Any.fromFunction1(value))
+    inline def setReadFile(value: java.lang.String => js.UndefOr[java.lang.String]): Self = StObject.set(x, "readFile", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUseCaseSensitiveFileNames(value: () => Boolean): Self = StObject.set(x, "useCaseSensitiveFileNames", js.Any.fromFunction0(value))
+    inline def setUseCaseSensitiveFileNames(value: () => Boolean): Self = StObject.set(x, "useCaseSensitiveFileNames", js.Any.fromFunction0(value))
   }
 }

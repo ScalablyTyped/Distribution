@@ -36,22 +36,18 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(): `0` = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setRequest(
+      inline def setRequest(
         value: (/* span */ js.UndefOr[Span], /* req */ js.UndefOr[ClientRequest], /* res */ js.UndefOr[IncomingMessage]) => js.Any
       ): Self = StObject.set(x, "request", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+      inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     }
   }
   
@@ -66,20 +62,16 @@ object anon {
   }
   object `1` {
     
-    @scala.inline
-    def apply(): `1` = {
+    inline def apply(): `1` = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[`1`]
     }
     
-    @scala.inline
-    implicit class `1MutableBuilder`[Self <: `1`] (val x: Self) extends AnyVal {
+    extension [Self <: `1`](x: Self) {
       
-      @scala.inline
-      def setRequest(value: (/* span */ js.UndefOr[Span], /* response */ js.UndefOr[anyObject]) => js.Any): Self = StObject.set(x, "request", js.Any.fromFunction2(value))
+      inline def setRequest(value: (/* span */ js.UndefOr[Span], /* response */ js.UndefOr[anyObject]) => js.Any): Self = StObject.set(x, "request", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+      inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     }
   }
   
@@ -99,22 +91,18 @@ object anon {
   }
   object `2` {
     
-    @scala.inline
-    def apply(): `2` = {
+    inline def apply(): `2` = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[`2`]
     }
     
-    @scala.inline
-    implicit class `2MutableBuilder`[Self <: `2`] (val x: Self) extends AnyVal {
+    extension [Self <: `2`](x: Self) {
       
-      @scala.inline
-      def setRequest(
+      inline def setRequest(
         value: (/* span */ js.UndefOr[Span], /* req */ js.UndefOr[IncomingMessage | ClientRequest], /* res */ js.UndefOr[ServerResponse | IncomingMessage]) => js.Any
       ): Self = StObject.set(x, "request", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+      inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     }
   }
   
@@ -153,53 +141,38 @@ object anon {
   }
   object B3 {
     
-    @scala.inline
-    def apply(): B3 = {
+    inline def apply(): B3 = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[B3]
     }
     
-    @scala.inline
-    implicit class B3MutableBuilder[Self <: B3] (val x: Self) extends AnyVal {
+    extension [Self <: B3](x: Self) {
       
-      @scala.inline
-      def setB3(value: Boolean): Self = StObject.set(x, "b3", value.asInstanceOf[js.Any])
+      inline def setB3(value: Boolean): Self = StObject.set(x, "b3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setB3Undefined: Self = StObject.set(x, "b3", js.undefined)
+      inline def setB3Undefined: Self = StObject.set(x, "b3", js.undefined)
       
-      @scala.inline
-      def setDistributedTracingOriginWhitelist(value: js.Array[String | RegExp]): Self = StObject.set(x, "distributedTracingOriginWhitelist", value.asInstanceOf[js.Any])
+      inline def setDistributedTracingOriginWhitelist(value: js.Array[String | RegExp]): Self = StObject.set(x, "distributedTracingOriginWhitelist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDistributedTracingOriginWhitelistUndefined: Self = StObject.set(x, "distributedTracingOriginWhitelist", js.undefined)
+      inline def setDistributedTracingOriginWhitelistUndefined: Self = StObject.set(x, "distributedTracingOriginWhitelist", js.undefined)
       
-      @scala.inline
-      def setDistributedTracingOriginWhitelistVarargs(value: (String | RegExp)*): Self = StObject.set(x, "distributedTracingOriginWhitelist", js.Array(value :_*))
+      inline def setDistributedTracingOriginWhitelistVarargs(value: (String | RegExp)*): Self = StObject.set(x, "distributedTracingOriginWhitelist", js.Array(value :_*))
       
-      @scala.inline
-      def setEnableGetRumData(value: Boolean): Self = StObject.set(x, "enableGetRumData", value.asInstanceOf[js.Any])
+      inline def setEnableGetRumData(value: Boolean): Self = StObject.set(x, "enableGetRumData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableGetRumDataUndefined: Self = StObject.set(x, "enableGetRumData", js.undefined)
+      inline def setEnableGetRumDataUndefined: Self = StObject.set(x, "enableGetRumData", js.undefined)
       
-      @scala.inline
-      def setExporter(value: log | browser | agent): Self = StObject.set(x, "exporter", value.asInstanceOf[js.Any])
+      inline def setExporter(value: log | browser | agent): Self = StObject.set(x, "exporter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExporterUndefined: Self = StObject.set(x, "exporter", js.undefined)
+      inline def setExporterUndefined: Self = StObject.set(x, "exporter", js.undefined)
       
-      @scala.inline
-      def setRuntimeId(value: Boolean): Self = StObject.set(x, "runtimeId", value.asInstanceOf[js.Any])
+      inline def setRuntimeId(value: Boolean): Self = StObject.set(x, "runtimeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuntimeIdUndefined: Self = StObject.set(x, "runtimeId", js.undefined)
+      inline def setRuntimeIdUndefined: Self = StObject.set(x, "runtimeId", js.undefined)
       
-      @scala.inline
-      def setSampler(value: Rules): Self = StObject.set(x, "sampler", value.asInstanceOf[js.Any])
+      inline def setSampler(value: Rules): Self = StObject.set(x, "sampler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSamplerUndefined: Self = StObject.set(x, "sampler", js.undefined)
+      inline def setSamplerUndefined: Self = StObject.set(x, "sampler", js.undefined)
     }
   }
   
@@ -229,22 +202,18 @@ object anon {
   }
   object Execute {
     
-    @scala.inline
-    def apply(): Execute = {
+    inline def apply(): Execute = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Execute]
     }
     
-    @scala.inline
-    implicit class ExecuteMutableBuilder[Self <: Execute] (val x: Self) extends AnyVal {
+    extension [Self <: Execute](x: Self) {
       
-      @scala.inline
-      def setExecute(
+      inline def setExecute(
         value: (/* span */ js.UndefOr[typings.ddTrace.mod.Span], /* args */ js.UndefOr[ExecutionArgs], /* res */ js.UndefOr[js.Any]) => Unit
       ): Self = StObject.set(x, "execute", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setExecuteUndefined: Self = StObject.set(x, "execute", js.undefined)
+      inline def setExecuteUndefined: Self = StObject.set(x, "execute", js.undefined)
     }
   }
   
@@ -263,26 +232,20 @@ object anon {
   }
   object Hostname {
     
-    @scala.inline
-    def apply(): Hostname = {
+    inline def apply(): Hostname = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Hostname]
     }
     
-    @scala.inline
-    implicit class HostnameMutableBuilder[Self <: Hostname] (val x: Self) extends AnyVal {
+    extension [Self <: Hostname](x: Self) {
       
-      @scala.inline
-      def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+      inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     }
   }
   
@@ -297,20 +260,16 @@ object anon {
   }
   object Query {
     
-    @scala.inline
-    def apply(): Query = {
+    inline def apply(): Query = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Query]
     }
     
-    @scala.inline
-    implicit class QueryMutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
+    extension [Self <: Query](x: Self) {
       
-      @scala.inline
-      def setQuery(value: (/* span */ js.UndefOr[Span], /* params */ js.UndefOr[TransportRequestParams]) => js.Any): Self = StObject.set(x, "query", js.Any.fromFunction2(value))
+      inline def setQuery(value: (/* span */ js.UndefOr[Span], /* params */ js.UndefOr[TransportRequestParams]) => js.Any): Self = StObject.set(x, "query", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     }
   }
   
@@ -328,26 +287,20 @@ object anon {
   }
   object RateLimit {
     
-    @scala.inline
-    def apply(): RateLimit = {
+    inline def apply(): RateLimit = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RateLimit]
     }
     
-    @scala.inline
-    implicit class RateLimitMutableBuilder[Self <: RateLimit] (val x: Self) extends AnyVal {
+    extension [Self <: RateLimit](x: Self) {
       
-      @scala.inline
-      def setRateLimit(value: Double): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
+      inline def setRateLimit(value: Double): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRateLimitUndefined: Self = StObject.set(x, "rateLimit", js.undefined)
+      inline def setRateLimitUndefined: Self = StObject.set(x, "rateLimit", js.undefined)
       
-      @scala.inline
-      def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
+      inline def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
+      inline def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
     }
   }
   
@@ -367,22 +320,18 @@ object anon {
   }
   object Request {
     
-    @scala.inline
-    def apply(): Request = {
+    inline def apply(): Request = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Request]
     }
     
-    @scala.inline
-    implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+    extension [Self <: Request](x: Self) {
       
-      @scala.inline
-      def setRequest(
+      inline def setRequest(
         value: (/* span */ js.UndefOr[Span], /* req */ js.UndefOr[IncomingMessage], /* res */ js.UndefOr[ServerResponse]) => js.Any
       ): Self = StObject.set(x, "request", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+      inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     }
   }
   
@@ -407,35 +356,26 @@ object anon {
   }
   object Rules {
     
-    @scala.inline
-    def apply(): Rules = {
+    inline def apply(): Rules = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Rules]
     }
     
-    @scala.inline
-    implicit class RulesMutableBuilder[Self <: Rules] (val x: Self) extends AnyVal {
+    extension [Self <: Rules](x: Self) {
       
-      @scala.inline
-      def setRateLimit(value: Number): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
+      inline def setRateLimit(value: Number): Self = StObject.set(x, "rateLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRateLimitUndefined: Self = StObject.set(x, "rateLimit", js.undefined)
+      inline def setRateLimitUndefined: Self = StObject.set(x, "rateLimit", js.undefined)
       
-      @scala.inline
-      def setRules(value: js.Array[SamplingRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: js.Array[SamplingRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+      inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
       
-      @scala.inline
-      def setRulesVarargs(value: SamplingRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: SamplingRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
       
-      @scala.inline
-      def setSampleRate(value: Number): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
+      inline def setSampleRate(value: Number): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
+      inline def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
     }
   }
 }

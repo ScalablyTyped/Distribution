@@ -16,31 +16,23 @@ trait TileDebugOptions extends StObject {
 }
 object TileDebugOptions {
   
-  @scala.inline
-  def apply(): TileDebugOptions = {
+  inline def apply(): TileDebugOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TileDebugOptions]
   }
   
-  @scala.inline
-  implicit class TileDebugOptionsMutableBuilder[Self <: TileDebugOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TileDebugOptions](x: Self) {
     
-    @scala.inline
-    def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    inline def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+    inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
-    @scala.inline
-    def setTileGrid(value: TileGrid): Self = StObject.set(x, "tileGrid", value.asInstanceOf[js.Any])
+    inline def setTileGrid(value: TileGrid): Self = StObject.set(x, "tileGrid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileGridUndefined: Self = StObject.set(x, "tileGrid", js.undefined)
+    inline def setTileGridUndefined: Self = StObject.set(x, "tileGrid", js.undefined)
     
-    @scala.inline
-    def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
+    inline def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrapXUndefined: Self = StObject.set(x, "wrapX", js.undefined)
+    inline def setWrapXUndefined: Self = StObject.set(x, "wrapX", js.undefined)
   }
 }

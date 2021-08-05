@@ -156,17 +156,14 @@ object typesBadRequestExceptionMod {
   }
   object BadRequestException {
     
-    @scala.inline
-    def apply(): BadRequestException = {
+    inline def apply(): BadRequestException = {
       val __obj = js.Dynamic.literal(name = "BadRequestException")
       __obj.asInstanceOf[BadRequestException]
     }
     
-    @scala.inline
-    implicit class BadRequestExceptionMutableBuilder[Self <: BadRequestException] (val x: Self) extends AnyVal {
+    extension [Self <: BadRequestException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.BadRequestException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.BadRequestException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -184,26 +181,20 @@ object typesBadRequestExceptionMod {
   }
   object BadRequestExceptionDetails {
     
-    @scala.inline
-    def apply(): BadRequestExceptionDetails = {
+    inline def apply(): BadRequestExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BadRequestExceptionDetails]
     }
     
-    @scala.inline
-    implicit class BadRequestExceptionDetailsMutableBuilder[Self <: BadRequestExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: BadRequestExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
       
-      @scala.inline
-      def setRequestID(value: String): Self = StObject.set(x, "RequestID", value.asInstanceOf[js.Any])
+      inline def setRequestID(value: String): Self = StObject.set(x, "RequestID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestIDUndefined: Self = StObject.set(x, "RequestID", js.undefined)
+      inline def setRequestIDUndefined: Self = StObject.set(x, "RequestID", js.undefined)
     }
   }
 }

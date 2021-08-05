@@ -12,19 +12,15 @@ trait StripFlags extends StObject {
 }
 object StripFlags {
   
-  @scala.inline
-  def apply(close: Boolean, open: Boolean): StripFlags = {
+  inline def apply(close: Boolean, open: Boolean): StripFlags = {
     val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
     __obj.asInstanceOf[StripFlags]
   }
   
-  @scala.inline
-  implicit class StripFlagsMutableBuilder[Self <: StripFlags] (val x: Self) extends AnyVal {
+  extension [Self <: StripFlags](x: Self) {
     
-    @scala.inline
-    def setClose(value: Boolean): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: Boolean): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
   }
 }

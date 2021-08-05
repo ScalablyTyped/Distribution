@@ -11,8 +11,7 @@ object csstransitionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def CSSTransition(
+  inline def CSSTransition(
     hasChildrenTemporaryTransitionInOptions: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSTransitionProps */ js.Any
   ): ReactElement | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("CSSTransition")(hasChildrenTemporaryTransitionInOptions.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
 }

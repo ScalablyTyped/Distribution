@@ -23,22 +23,17 @@ trait DeleteHostedConfigurationVersionRequest extends StObject {
 }
 object DeleteHostedConfigurationVersionRequest {
   
-  @scala.inline
-  def apply(ApplicationId: Id, ConfigurationProfileId: Id, VersionNumber: Integer): DeleteHostedConfigurationVersionRequest = {
+  inline def apply(ApplicationId: Id, ConfigurationProfileId: Id, VersionNumber: Integer): DeleteHostedConfigurationVersionRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], ConfigurationProfileId = ConfigurationProfileId.asInstanceOf[js.Any], VersionNumber = VersionNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteHostedConfigurationVersionRequest]
   }
   
-  @scala.inline
-  implicit class DeleteHostedConfigurationVersionRequestMutableBuilder[Self <: DeleteHostedConfigurationVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteHostedConfigurationVersionRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: Id): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: Id): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationProfileId(value: Id): Self = StObject.set(x, "ConfigurationProfileId", value.asInstanceOf[js.Any])
+    inline def setConfigurationProfileId(value: Id): Self = StObject.set(x, "ConfigurationProfileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionNumber(value: Integer): Self = StObject.set(x, "VersionNumber", value.asInstanceOf[js.Any])
+    inline def setVersionNumber(value: Integer): Self = StObject.set(x, "VersionNumber", value.asInstanceOf[js.Any])
   }
 }

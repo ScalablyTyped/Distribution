@@ -19,7 +19,7 @@ object fetchMod {
       * @param sentryRequest Prepared SentryRequest to be delivered
       * @param originalPayload Original payload used to create SentryRequest
       */
-    var _sendRequest: js.Any = js.native
+    /* private */ var _sendRequest: js.Any = js.native
     
     /**
       * @inheritDoc

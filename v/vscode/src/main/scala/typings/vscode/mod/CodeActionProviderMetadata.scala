@@ -34,31 +34,23 @@ trait CodeActionProviderMetadata extends StObject {
 }
 object CodeActionProviderMetadata {
   
-  @scala.inline
-  def apply(): CodeActionProviderMetadata = {
+  inline def apply(): CodeActionProviderMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CodeActionProviderMetadata]
   }
   
-  @scala.inline
-  implicit class CodeActionProviderMetadataMutableBuilder[Self <: CodeActionProviderMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: CodeActionProviderMetadata](x: Self) {
     
-    @scala.inline
-    def setDocumentation(value: js.Array[typings.vscode.anon.Command]): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
+    inline def setDocumentation(value: js.Array[typings.vscode.anon.Command]): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
+    inline def setDocumentationUndefined: Self = StObject.set(x, "documentation", js.undefined)
     
-    @scala.inline
-    def setDocumentationVarargs(value: typings.vscode.anon.Command*): Self = StObject.set(x, "documentation", js.Array(value :_*))
+    inline def setDocumentationVarargs(value: typings.vscode.anon.Command*): Self = StObject.set(x, "documentation", js.Array(value :_*))
     
-    @scala.inline
-    def setProvidedCodeActionKinds(value: js.Array[CodeActionKind]): Self = StObject.set(x, "providedCodeActionKinds", value.asInstanceOf[js.Any])
+    inline def setProvidedCodeActionKinds(value: js.Array[CodeActionKind]): Self = StObject.set(x, "providedCodeActionKinds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvidedCodeActionKindsUndefined: Self = StObject.set(x, "providedCodeActionKinds", js.undefined)
+    inline def setProvidedCodeActionKindsUndefined: Self = StObject.set(x, "providedCodeActionKinds", js.undefined)
     
-    @scala.inline
-    def setProvidedCodeActionKindsVarargs(value: CodeActionKind*): Self = StObject.set(x, "providedCodeActionKinds", js.Array(value :_*))
+    inline def setProvidedCodeActionKindsVarargs(value: CodeActionKind*): Self = StObject.set(x, "providedCodeActionKinds", js.Array(value :_*))
   }
 }

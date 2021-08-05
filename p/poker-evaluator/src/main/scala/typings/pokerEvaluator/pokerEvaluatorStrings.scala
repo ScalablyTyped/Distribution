@@ -11,69 +11,59 @@ object pokerEvaluatorStrings {
   sealed trait flush
     extends StObject
        with HandName
-  @scala.inline
-  def flush: flush = "flush".asInstanceOf[flush]
+  inline def flush: flush = "flush".asInstanceOf[flush]
   
   @js.native
   sealed trait `four of a kind`
     extends StObject
        with HandName
-  @scala.inline
-  def `four of a kind`: `four of a kind` = ("four of a kind").asInstanceOf[`four of a kind`]
+  inline def `four of a kind`: `four of a kind` = ("four of a kind").asInstanceOf[`four of a kind`]
   
   @js.native
   sealed trait `full house`
     extends StObject
        with HandName
-  @scala.inline
-  def `full house`: `full house` = ("full house").asInstanceOf[`full house`]
+  inline def `full house`: `full house` = ("full house").asInstanceOf[`full house`]
   
   @js.native
   sealed trait `high card`
     extends StObject
        with HandName
-  @scala.inline
-  def `high card`: `high card` = ("high card").asInstanceOf[`high card`]
+  inline def `high card`: `high card` = ("high card").asInstanceOf[`high card`]
   
   @js.native
   sealed trait `invalid hand`
     extends StObject
        with HandName
-  @scala.inline
-  def `invalid hand`: `invalid hand` = ("invalid hand").asInstanceOf[`invalid hand`]
+  inline def `invalid hand`: `invalid hand` = ("invalid hand").asInstanceOf[`invalid hand`]
   
   @js.native
   sealed trait `one pair`
     extends StObject
        with HandName
-  @scala.inline
-  def `one pair`: `one pair` = ("one pair").asInstanceOf[`one pair`]
+  inline def `one pair`: `one pair` = ("one pair").asInstanceOf[`one pair`]
   
   @js.native
   sealed trait straight
     extends StObject
        with HandName
-  @scala.inline
-  def straight: straight = "straight".asInstanceOf[straight]
+  inline def straight: straight = "straight".asInstanceOf[straight]
   
   @js.native
   sealed trait `straight flush`
     extends StObject
        with HandName
-  @scala.inline
-  def `straight flush`: `straight flush` = ("straight flush").asInstanceOf[`straight flush`]
+  inline def `straight flush`: `straight flush` = ("straight flush").asInstanceOf[`straight flush`]
   
   @js.native
   sealed trait `three of a kind`
     extends StObject
        with HandName
-  @scala.inline
-  def `three of a kind`: `three of a kind` = ("three of a kind").asInstanceOf[`three of a kind`]
+  inline def `three of a kind`: `three of a kind` = ("three of a kind").asInstanceOf[`three of a kind`]
   
   @js.native
   sealed trait `two pairs`
     extends StObject
        with HandName
-  @scala.inline
-  def `two pairs`: `two pairs` = ("two pairs").asInstanceOf[`two pairs`]
+  inline def `two pairs`: `two pairs` = ("two pairs").asInstanceOf[`two pairs`]
 }

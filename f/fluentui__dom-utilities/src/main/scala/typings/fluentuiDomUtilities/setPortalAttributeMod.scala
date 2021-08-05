@@ -15,6 +15,5 @@ object setPortalAttributeMod {
   @js.native
   val DATA_PORTAL_ATTRIBUTE: /* "data-portal-element" */ String = js.native
   
-  @scala.inline
-  def setPortalAttribute(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPortalAttribute")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setPortalAttribute(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPortalAttribute")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

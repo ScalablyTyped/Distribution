@@ -19,40 +19,29 @@ trait WorkbookComment
 }
 object WorkbookComment {
   
-  @scala.inline
-  def apply(): WorkbookComment = {
+  inline def apply(): WorkbookComment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkbookComment]
   }
   
-  @scala.inline
-  implicit class WorkbookCommentMutableBuilder[Self <: WorkbookComment] (val x: Self) extends AnyVal {
+  extension [Self <: WorkbookComment](x: Self) {
     
-    @scala.inline
-    def setContent(value: NullableOption[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: NullableOption[String]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentNull: Self = StObject.set(x, "content", null)
+    inline def setContentNull: Self = StObject.set(x, "content", null)
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setReplies(value: NullableOption[js.Array[WorkbookCommentReply]]): Self = StObject.set(x, "replies", value.asInstanceOf[js.Any])
+    inline def setReplies(value: NullableOption[js.Array[WorkbookCommentReply]]): Self = StObject.set(x, "replies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepliesNull: Self = StObject.set(x, "replies", null)
+    inline def setRepliesNull: Self = StObject.set(x, "replies", null)
     
-    @scala.inline
-    def setRepliesUndefined: Self = StObject.set(x, "replies", js.undefined)
+    inline def setRepliesUndefined: Self = StObject.set(x, "replies", js.undefined)
     
-    @scala.inline
-    def setRepliesVarargs(value: WorkbookCommentReply*): Self = StObject.set(x, "replies", js.Array(value :_*))
+    inline def setRepliesVarargs(value: WorkbookCommentReply*): Self = StObject.set(x, "replies", js.Array(value :_*))
   }
 }

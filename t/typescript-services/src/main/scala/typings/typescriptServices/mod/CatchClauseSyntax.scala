@@ -97,8 +97,7 @@ object CatchClauseSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(
+  inline def create(
     catchKeyword: ISyntaxToken,
     openParenToken: ISyntaxToken,
     identifier: ISyntaxToken,
@@ -107,6 +106,5 @@ object CatchClauseSyntax {
   ): typings.typescriptServices.TypeScript.CatchClauseSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(catchKeyword.asInstanceOf[js.Any], openParenToken.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any], closeParenToken.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.CatchClauseSyntax]
   
   /* static member */
-  @scala.inline
-  def create1(identifier: ISyntaxToken): typings.typescriptServices.TypeScript.CatchClauseSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(identifier.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.CatchClauseSyntax]
+  inline def create1(identifier: ISyntaxToken): typings.typescriptServices.TypeScript.CatchClauseSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(identifier.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.CatchClauseSyntax]
 }

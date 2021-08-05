@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.CaptionLabels")
 @js.native
-class CaptionLabels protected ()
+/* private */ class CaptionLabels ()
   extends StObject
      with typings.activexWord.Word.CaptionLabels {
   
@@ -28,7 +28,7 @@ class CaptionLabels protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.CaptionLabels_typekey")
   var WordDotCaptionLabels_typekey: typings.activexWord.Word.CaptionLabels = js.native
 }

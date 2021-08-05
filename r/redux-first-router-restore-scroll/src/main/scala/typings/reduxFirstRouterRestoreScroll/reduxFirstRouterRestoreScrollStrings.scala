@@ -8,6 +8,5 @@ object reduxFirstRouterRestoreScrollStrings {
   
   @js.native
   sealed trait `profile-box` extends StObject
-  @scala.inline
-  def `profile-box`: `profile-box` = "profile-box".asInstanceOf[`profile-box`]
+  inline def `profile-box`: `profile-box` = "profile-box".asInstanceOf[`profile-box`]
 }

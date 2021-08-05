@@ -18,19 +18,15 @@ trait DescribeDocumentPermissionRequest extends StObject {
 }
 object DescribeDocumentPermissionRequest {
   
-  @scala.inline
-  def apply(Name: DocumentName, PermissionType: DocumentPermissionType): DescribeDocumentPermissionRequest = {
+  inline def apply(Name: DocumentName, PermissionType: DocumentPermissionType): DescribeDocumentPermissionRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], PermissionType = PermissionType.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeDocumentPermissionRequest]
   }
   
-  @scala.inline
-  implicit class DescribeDocumentPermissionRequestMutableBuilder[Self <: DescribeDocumentPermissionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDocumentPermissionRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: DocumentName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: DocumentName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionType(value: DocumentPermissionType): Self = StObject.set(x, "PermissionType", value.asInstanceOf[js.Any])
+    inline def setPermissionType(value: DocumentPermissionType): Self = StObject.set(x, "PermissionType", value.asInstanceOf[js.Any])
   }
 }

@@ -31,14 +31,12 @@ object html5videoOutputMod {
     @JSImport("playable/dist/src/modules/playback-engine/output/native/html5video-output", "default.dependencies")
     @js.native
     def dependencies: js.Array[String] = js.native
-    @scala.inline
-    def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
+    inline def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/modules/playback-engine/output/native/html5video-output", "default.moduleName")
     @js.native
     def moduleName: String = js.native
-    @scala.inline
-    def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
+    inline def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -46,25 +44,25 @@ object html5videoOutputMod {
     extends StObject
        with IVideoOutput {
     
-    var _adapterStrategy: js.Any = js.native
+    /* private */ var _adapterStrategy: js.Any = js.native
     
-    var _availablePlaybackAdapters: js.Any = js.native
+    /* private */ var _availablePlaybackAdapters: js.Any = js.native
     
-    var _createVideoTag: js.Any = js.native
+    /* private */ var _createVideoTag: js.Any = js.native
     
-    var _eventEmitter: js.Any = js.native
+    /* private */ var _eventEmitter: js.Any = js.native
     
-    var _getViewDimensions: js.Any = js.native
+    /* private */ var _getViewDimensions: js.Any = js.native
     
-    var _nativeEventsBroadcaster: js.Any = js.native
+    /* private */ var _nativeEventsBroadcaster: js.Any = js.native
     
-    var _pauseRequested: js.Any = js.native
+    /* private */ var _pauseRequested: js.Any = js.native
     
-    var _playPromise: js.Any = js.native
+    /* private */ var _playPromise: js.Any = js.native
     
-    var _stateEngine: js.Any = js.native
+    /* private */ var _stateEngine: js.Any = js.native
     
-    var _video: js.Any = js.native
+    /* private */ var _video: js.Any = js.native
     
     def attachedAdapter: IPlaybackAdapter = js.native
     

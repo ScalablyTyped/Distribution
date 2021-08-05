@@ -11,19 +11,15 @@ trait PartialwithThemeboolean extends StObject {
 }
 object PartialwithThemeboolean {
   
-  @scala.inline
-  def apply(): PartialwithThemeboolean = {
+  inline def apply(): PartialwithThemeboolean = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialwithThemeboolean]
   }
   
-  @scala.inline
-  implicit class PartialwithThemebooleanMutableBuilder[Self <: PartialwithThemeboolean] (val x: Self) extends AnyVal {
+  extension [Self <: PartialwithThemeboolean](x: Self) {
     
-    @scala.inline
-    def setWithTheme(value: Boolean): Self = StObject.set(x, "withTheme", value.asInstanceOf[js.Any])
+    inline def setWithTheme(value: Boolean): Self = StObject.set(x, "withTheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithThemeUndefined: Self = StObject.set(x, "withTheme", js.undefined)
+    inline def setWithThemeUndefined: Self = StObject.set(x, "withTheme", js.undefined)
   }
 }

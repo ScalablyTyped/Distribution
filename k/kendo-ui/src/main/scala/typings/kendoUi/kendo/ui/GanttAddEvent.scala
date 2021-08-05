@@ -16,25 +16,19 @@ trait GanttAddEvent
 }
 object GanttAddEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Gantt): GanttAddEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Gantt): GanttAddEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[GanttAddEvent]
   }
   
-  @scala.inline
-  implicit class GanttAddEventMutableBuilder[Self <: GanttAddEvent] (val x: Self) extends AnyVal {
+  extension [Self <: GanttAddEvent](x: Self) {
     
-    @scala.inline
-    def setDependency(value: GanttDependency): Self = StObject.set(x, "dependency", value.asInstanceOf[js.Any])
+    inline def setDependency(value: GanttDependency): Self = StObject.set(x, "dependency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDependencyUndefined: Self = StObject.set(x, "dependency", js.undefined)
+    inline def setDependencyUndefined: Self = StObject.set(x, "dependency", js.undefined)
     
-    @scala.inline
-    def setTask(value: GanttTask): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
+    inline def setTask(value: GanttTask): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskUndefined: Self = StObject.set(x, "task", js.undefined)
+    inline def setTaskUndefined: Self = StObject.set(x, "task", js.undefined)
   }
 }

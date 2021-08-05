@@ -30,79 +30,55 @@ trait DialogClasses extends StObject {
 }
 object DialogClasses {
   
-  @scala.inline
-  def apply(): DialogClasses = {
+  inline def apply(): DialogClasses = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DialogClasses]
   }
   
-  @scala.inline
-  implicit class DialogClassesMutableBuilder[Self <: DialogClasses] (val x: Self) extends AnyVal {
+  extension [Self <: DialogClasses](x: Self) {
     
-    @scala.inline
-    def `setUi-dialog`(value: String): Self = StObject.set(x, "ui-dialog", value.asInstanceOf[js.Any])
+    inline def `setUi-dialog`(value: String): Self = StObject.set(x, "ui-dialog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setUi-dialog-buttonpane`(value: String): Self = StObject.set(x, "ui-dialog-buttonpane", value.asInstanceOf[js.Any])
+    inline def `setUi-dialog-buttonpane`(value: String): Self = StObject.set(x, "ui-dialog-buttonpane", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setUi-dialog-buttonpaneUndefined`: Self = StObject.set(x, "ui-dialog-buttonpane", js.undefined)
+    inline def `setUi-dialog-buttonpaneUndefined`: Self = StObject.set(x, "ui-dialog-buttonpane", js.undefined)
     
-    @scala.inline
-    def `setUi-dialog-buttons`(value: String): Self = StObject.set(x, "ui-dialog-buttons", value.asInstanceOf[js.Any])
+    inline def `setUi-dialog-buttons`(value: String): Self = StObject.set(x, "ui-dialog-buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setUi-dialog-buttonsUndefined`: Self = StObject.set(x, "ui-dialog-buttons", js.undefined)
+    inline def `setUi-dialog-buttonsUndefined`: Self = StObject.set(x, "ui-dialog-buttons", js.undefined)
     
-    @scala.inline
-    def `setUi-dialog-buttonset`(value: String): Self = StObject.set(x, "ui-dialog-buttonset", value.asInstanceOf[js.Any])
+    inline def `setUi-dialog-buttonset`(value: String): Self = StObject.set(x, "ui-dialog-buttonset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setUi-dialog-buttonsetUndefined`: Self = StObject.set(x, "ui-dialog-buttonset", js.undefined)
+    inline def `setUi-dialog-buttonsetUndefined`: Self = StObject.set(x, "ui-dialog-buttonset", js.undefined)
     
-    @scala.inline
-    def `setUi-dialog-content`(value: String): Self = StObject.set(x, "ui-dialog-content", value.asInstanceOf[js.Any])
+    inline def `setUi-dialog-content`(value: String): Self = StObject.set(x, "ui-dialog-content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setUi-dialog-contentUndefined`: Self = StObject.set(x, "ui-dialog-content", js.undefined)
+    inline def `setUi-dialog-contentUndefined`: Self = StObject.set(x, "ui-dialog-content", js.undefined)
     
-    @scala.inline
-    def `setUi-dialog-dragging`(value: String): Self = StObject.set(x, "ui-dialog-dragging", value.asInstanceOf[js.Any])
+    inline def `setUi-dialog-dragging`(value: String): Self = StObject.set(x, "ui-dialog-dragging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setUi-dialog-draggingUndefined`: Self = StObject.set(x, "ui-dialog-dragging", js.undefined)
+    inline def `setUi-dialog-draggingUndefined`: Self = StObject.set(x, "ui-dialog-dragging", js.undefined)
     
-    @scala.inline
-    def `setUi-dialog-resizing`(value: String): Self = StObject.set(x, "ui-dialog-resizing", value.asInstanceOf[js.Any])
+    inline def `setUi-dialog-resizing`(value: String): Self = StObject.set(x, "ui-dialog-resizing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setUi-dialog-resizingUndefined`: Self = StObject.set(x, "ui-dialog-resizing", js.undefined)
+    inline def `setUi-dialog-resizingUndefined`: Self = StObject.set(x, "ui-dialog-resizing", js.undefined)
     
-    @scala.inline
-    def `setUi-dialog-title`(value: String): Self = StObject.set(x, "ui-dialog-title", value.asInstanceOf[js.Any])
+    inline def `setUi-dialog-title`(value: String): Self = StObject.set(x, "ui-dialog-title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setUi-dialog-titleUndefined`: Self = StObject.set(x, "ui-dialog-title", js.undefined)
+    inline def `setUi-dialog-titleUndefined`: Self = StObject.set(x, "ui-dialog-title", js.undefined)
     
-    @scala.inline
-    def `setUi-dialog-titlebar`(value: String): Self = StObject.set(x, "ui-dialog-titlebar", value.asInstanceOf[js.Any])
+    inline def `setUi-dialog-titlebar`(value: String): Self = StObject.set(x, "ui-dialog-titlebar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setUi-dialog-titlebar-close`(value: String): Self = StObject.set(x, "ui-dialog-titlebar-close", value.asInstanceOf[js.Any])
+    inline def `setUi-dialog-titlebar-close`(value: String): Self = StObject.set(x, "ui-dialog-titlebar-close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setUi-dialog-titlebar-closeUndefined`: Self = StObject.set(x, "ui-dialog-titlebar-close", js.undefined)
+    inline def `setUi-dialog-titlebar-closeUndefined`: Self = StObject.set(x, "ui-dialog-titlebar-close", js.undefined)
     
-    @scala.inline
-    def `setUi-dialog-titlebarUndefined`: Self = StObject.set(x, "ui-dialog-titlebar", js.undefined)
+    inline def `setUi-dialog-titlebarUndefined`: Self = StObject.set(x, "ui-dialog-titlebar", js.undefined)
     
-    @scala.inline
-    def `setUi-dialogUndefined`: Self = StObject.set(x, "ui-dialog", js.undefined)
+    inline def `setUi-dialogUndefined`: Self = StObject.set(x, "ui-dialog", js.undefined)
     
-    @scala.inline
-    def `setUi-widget-overlay`(value: String): Self = StObject.set(x, "ui-widget-overlay", value.asInstanceOf[js.Any])
+    inline def `setUi-widget-overlay`(value: String): Self = StObject.set(x, "ui-widget-overlay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setUi-widget-overlayUndefined`: Self = StObject.set(x, "ui-widget-overlay", js.undefined)
+    inline def `setUi-widget-overlayUndefined`: Self = StObject.set(x, "ui-widget-overlay", js.undefined)
   }
 }

@@ -12,34 +12,29 @@ object graphqlPlaygroundHtmlStrings {
   sealed trait block
     extends StObject
        with CursorShape
-  @scala.inline
-  def block: block = "block".asInstanceOf[block]
+  inline def block: block = "block".asInstanceOf[block]
   
   @js.native
   sealed trait dark
     extends StObject
        with Theme
-  @scala.inline
-  def dark: dark = "dark".asInstanceOf[dark]
+  inline def dark: dark = "dark".asInstanceOf[dark]
   
   @js.native
   sealed trait light
     extends StObject
        with Theme
-  @scala.inline
-  def light: light = "light".asInstanceOf[light]
+  inline def light: light = "light".asInstanceOf[light]
   
   @js.native
   sealed trait line
     extends StObject
        with CursorShape
-  @scala.inline
-  def line: line = "line".asInstanceOf[line]
+  inline def line: line = "line".asInstanceOf[line]
   
   @js.native
   sealed trait underline
     extends StObject
        with CursorShape
-  @scala.inline
-  def underline: underline = "underline".asInstanceOf[underline]
+  inline def underline: underline = "underline".asInstanceOf[underline]
 }

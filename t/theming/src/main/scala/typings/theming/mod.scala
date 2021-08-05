@@ -24,8 +24,7 @@ object mod {
   @js.native
   val ThemeProvider: ThemeProviderFactory[DefaultTheme] = js.native
   
-  @scala.inline
-  def createTheming[Theme](context: Context[Theme]): Theming[Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTheming")(context.asInstanceOf[js.Any]).asInstanceOf[Theming[Theme]]
+  inline def createTheming[Theme](context: Context[Theme]): Theming[Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTheming")(context.asInstanceOf[js.Any]).asInstanceOf[Theming[Theme]]
   
   @JSImport("theming", "useTheme")
   @js.native
@@ -47,26 +46,20 @@ object mod {
   }
   object ThemeProviderProps {
     
-    @scala.inline
-    def apply[Theme](theme: NonNullable[Theme] | (js.Function1[/* outerTheme */ Theme, NonNullable[Theme]])): ThemeProviderProps[Theme] = {
+    inline def apply[Theme](theme: NonNullable[Theme] | (js.Function1[/* outerTheme */ Theme, NonNullable[Theme]])): ThemeProviderProps[Theme] = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[ThemeProviderProps[Theme]]
     }
     
-    @scala.inline
-    implicit class ThemeProviderPropsMutableBuilder[Self <: ThemeProviderProps[?], Theme] (val x: Self & ThemeProviderProps[Theme]) extends AnyVal {
+    extension [Self <: ThemeProviderProps[?], Theme](x: Self & ThemeProviderProps[Theme]) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setTheme(value: NonNullable[Theme] | (js.Function1[/* outerTheme */ Theme, NonNullable[Theme]])): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: NonNullable[Theme] | (js.Function1[/* outerTheme */ Theme, NonNullable[Theme]])): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeFunction1(value: /* outerTheme */ Theme => NonNullable[Theme]): Self = StObject.set(x, "theme", js.Any.fromFunction1(value))
+      inline def setThemeFunction1(value: /* outerTheme */ Theme => NonNullable[Theme]): Self = StObject.set(x, "theme", js.Any.fromFunction1(value))
     }
   }
   
@@ -82,8 +75,7 @@ object mod {
   }
   object Theming {
     
-    @scala.inline
-    def apply[Theme](
+    inline def apply[Theme](
       ThemeProvider: ThemeProviderFactory[Theme],
       context: Context[Theme],
       useTheme: () => Theme,
@@ -93,20 +85,15 @@ object mod {
       __obj.asInstanceOf[Theming[Theme]]
     }
     
-    @scala.inline
-    implicit class ThemingMutableBuilder[Self <: Theming[?], Theme] (val x: Self & Theming[Theme]) extends AnyVal {
+    extension [Self <: Theming[?], Theme](x: Self & Theming[Theme]) {
       
-      @scala.inline
-      def setContext(value: Context[Theme]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: Context[Theme]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeProvider(value: ThemeProviderFactory[Theme]): Self = StObject.set(x, "ThemeProvider", value.asInstanceOf[js.Any])
+      inline def setThemeProvider(value: ThemeProviderFactory[Theme]): Self = StObject.set(x, "ThemeProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseTheme(value: () => Theme): Self = StObject.set(x, "useTheme", js.Any.fromFunction0(value))
+      inline def setUseTheme(value: () => Theme): Self = StObject.set(x, "useTheme", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setWithTheme(
+      inline def setWithTheme(
         value: /* comp */ ComponentType[ThemeNonNullable[Theme]] => ComponentType[ThemeNonNullable[Theme] & `0`[Theme]]
       ): Self = StObject.set(x, "withTheme", js.Any.fromFunction1(value))
     }

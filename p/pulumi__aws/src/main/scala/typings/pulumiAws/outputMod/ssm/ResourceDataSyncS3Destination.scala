@@ -33,37 +33,27 @@ trait ResourceDataSyncS3Destination extends StObject {
 }
 object ResourceDataSyncS3Destination {
   
-  @scala.inline
-  def apply(bucketName: String, region: String): ResourceDataSyncS3Destination = {
+  inline def apply(bucketName: String, region: String): ResourceDataSyncS3Destination = {
     val __obj = js.Dynamic.literal(bucketName = bucketName.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceDataSyncS3Destination]
   }
   
-  @scala.inline
-  implicit class ResourceDataSyncS3DestinationMutableBuilder[Self <: ResourceDataSyncS3Destination] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceDataSyncS3Destination](x: Self) {
     
-    @scala.inline
-    def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
+    inline def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyArn(value: String): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
+    inline def setKmsKeyArn(value: String): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
+    inline def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncFormat(value: String): Self = StObject.set(x, "syncFormat", value.asInstanceOf[js.Any])
+    inline def setSyncFormat(value: String): Self = StObject.set(x, "syncFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncFormatUndefined: Self = StObject.set(x, "syncFormat", js.undefined)
+    inline def setSyncFormatUndefined: Self = StObject.set(x, "syncFormat", js.undefined)
   }
 }

@@ -23,11 +23,9 @@ object componentsInputMod {
   @js.native
   val Input: ComponentType[InputProps] = js.native
   
-  @scala.inline
-  def inputCSS(props: InputProps): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("inputCSS")(props.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
+  inline def inputCSS(props: InputProps): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("inputCSS")(props.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
   
-  @scala.inline
-  def inputStyle(isHidden: Boolean): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("inputStyle")(isHidden.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
+  inline def inputStyle(isHidden: Boolean): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("inputStyle")(isHidden.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
   
   @js.native
   trait InputProps

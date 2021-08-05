@@ -83,103 +83,71 @@ trait DbCreateOptions extends StObject {
 }
 object DbCreateOptions {
   
-  @scala.inline
-  def apply(): DbCreateOptions = {
+  inline def apply(): DbCreateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DbCreateOptions]
   }
   
-  @scala.inline
-  implicit class DbCreateOptionsMutableBuilder[Self <: DbCreateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DbCreateOptions](x: Self) {
     
-    @scala.inline
-    def setAuthSource(value: String): Self = StObject.set(x, "authSource", value.asInstanceOf[js.Any])
+    inline def setAuthSource(value: String): Self = StObject.set(x, "authSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthSourceUndefined: Self = StObject.set(x, "authSource", js.undefined)
+    inline def setAuthSourceUndefined: Self = StObject.set(x, "authSource", js.undefined)
     
-    @scala.inline
-    def setBufferMaxEntries(value: scala.Double): Self = StObject.set(x, "bufferMaxEntries", value.asInstanceOf[js.Any])
+    inline def setBufferMaxEntries(value: scala.Double): Self = StObject.set(x, "bufferMaxEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBufferMaxEntriesUndefined: Self = StObject.set(x, "bufferMaxEntries", js.undefined)
+    inline def setBufferMaxEntriesUndefined: Self = StObject.set(x, "bufferMaxEntries", js.undefined)
     
-    @scala.inline
-    def setForceServerObjectId(value: Boolean): Self = StObject.set(x, "forceServerObjectId", value.asInstanceOf[js.Any])
+    inline def setForceServerObjectId(value: Boolean): Self = StObject.set(x, "forceServerObjectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceServerObjectIdUndefined: Self = StObject.set(x, "forceServerObjectId", js.undefined)
+    inline def setForceServerObjectIdUndefined: Self = StObject.set(x, "forceServerObjectId", js.undefined)
     
-    @scala.inline
-    def setIgnoreUndefined(value: Boolean): Self = StObject.set(x, "ignoreUndefined", value.asInstanceOf[js.Any])
+    inline def setIgnoreUndefined(value: Boolean): Self = StObject.set(x, "ignoreUndefined", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreUndefinedUndefined: Self = StObject.set(x, "ignoreUndefined", js.undefined)
+    inline def setIgnoreUndefinedUndefined: Self = StObject.set(x, "ignoreUndefined", js.undefined)
     
-    @scala.inline
-    def setJ(value: Boolean): Self = StObject.set(x, "j", value.asInstanceOf[js.Any])
+    inline def setJ(value: Boolean): Self = StObject.set(x, "j", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJUndefined: Self = StObject.set(x, "j", js.undefined)
+    inline def setJUndefined: Self = StObject.set(x, "j", js.undefined)
     
-    @scala.inline
-    def setNative_parser(value: Boolean): Self = StObject.set(x, "native_parser", value.asInstanceOf[js.Any])
+    inline def setNative_parser(value: Boolean): Self = StObject.set(x, "native_parser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNative_parserUndefined: Self = StObject.set(x, "native_parser", js.undefined)
+    inline def setNative_parserUndefined: Self = StObject.set(x, "native_parser", js.undefined)
     
-    @scala.inline
-    def setPkFactory(value: js.Object): Self = StObject.set(x, "pkFactory", value.asInstanceOf[js.Any])
+    inline def setPkFactory(value: js.Object): Self = StObject.set(x, "pkFactory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPkFactoryUndefined: Self = StObject.set(x, "pkFactory", js.undefined)
+    inline def setPkFactoryUndefined: Self = StObject.set(x, "pkFactory", js.undefined)
     
-    @scala.inline
-    def setPromiseLibrary(value: js.Object): Self = StObject.set(x, "promiseLibrary", value.asInstanceOf[js.Any])
+    inline def setPromiseLibrary(value: js.Object): Self = StObject.set(x, "promiseLibrary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromiseLibraryUndefined: Self = StObject.set(x, "promiseLibrary", js.undefined)
+    inline def setPromiseLibraryUndefined: Self = StObject.set(x, "promiseLibrary", js.undefined)
     
-    @scala.inline
-    def setPromoteLongs(value: Boolean): Self = StObject.set(x, "promoteLongs", value.asInstanceOf[js.Any])
+    inline def setPromoteLongs(value: Boolean): Self = StObject.set(x, "promoteLongs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromoteLongsUndefined: Self = StObject.set(x, "promoteLongs", js.undefined)
+    inline def setPromoteLongsUndefined: Self = StObject.set(x, "promoteLongs", js.undefined)
     
-    @scala.inline
-    def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+    inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
-    @scala.inline
-    def setReadConcern(value: ReadConcern): Self = StObject.set(x, "readConcern", value.asInstanceOf[js.Any])
+    inline def setReadConcern(value: ReadConcern): Self = StObject.set(x, "readConcern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadConcernUndefined: Self = StObject.set(x, "readConcern", js.undefined)
+    inline def setReadConcernUndefined: Self = StObject.set(x, "readConcern", js.undefined)
     
-    @scala.inline
-    def setReadPreference(value: ReadPreference | String): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
+    inline def setReadPreference(value: ReadPreference | String): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
+    inline def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
     
-    @scala.inline
-    def setSerializeFunctions(value: Boolean): Self = StObject.set(x, "serializeFunctions", value.asInstanceOf[js.Any])
+    inline def setSerializeFunctions(value: Boolean): Self = StObject.set(x, "serializeFunctions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerializeFunctionsUndefined: Self = StObject.set(x, "serializeFunctions", js.undefined)
+    inline def setSerializeFunctionsUndefined: Self = StObject.set(x, "serializeFunctions", js.undefined)
     
-    @scala.inline
-    def setW(value: scala.Double | String): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+    inline def setW(value: scala.Double | String): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWUndefined: Self = StObject.set(x, "w", js.undefined)
+    inline def setWUndefined: Self = StObject.set(x, "w", js.undefined)
     
-    @scala.inline
-    def setWtimeout(value: scala.Double): Self = StObject.set(x, "wtimeout", value.asInstanceOf[js.Any])
+    inline def setWtimeout(value: scala.Double): Self = StObject.set(x, "wtimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWtimeoutUndefined: Self = StObject.set(x, "wtimeout", js.undefined)
+    inline def setWtimeoutUndefined: Self = StObject.set(x, "wtimeout", js.undefined)
   }
 }

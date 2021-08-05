@@ -21,7 +21,7 @@ class ObservableObject () extends StObject {
   /**Add a listener/observer to watch for changes in this object's properties */
   def onPropertyChanged(listener: PropertyChangedCallback): Unit = js.native
   
-  var propertyChangedListeners: js.Array[PropertyChangedCallback] = js.native
+  /* private */ var propertyChangedListeners: js.Array[PropertyChangedCallback] = js.native
   
   def toJSON(excludeProperties: String*): js.Any = js.native
 }
@@ -38,6 +38,5 @@ object ObservableObject {
   @JSImport("node-mysql-wrapper", "ObservableObject.RESERVED_PROPERTY_NAMES")
   @js.native
   def RESERVED_PROPERTY_NAMES: js.Array[String] = js.native
-  @scala.inline
-  def RESERVED_PROPERTY_NAMES_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RESERVED_PROPERTY_NAMES")(x.asInstanceOf[js.Any])
+  inline def RESERVED_PROPERTY_NAMES_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RESERVED_PROPERTY_NAMES")(x.asInstanceOf[js.Any])
 }

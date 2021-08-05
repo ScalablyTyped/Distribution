@@ -59,49 +59,35 @@ trait SchemaTurnBasedMatchParticipant extends StObject {
 }
 object SchemaTurnBasedMatchParticipant {
   
-  @scala.inline
-  def apply(): SchemaTurnBasedMatchParticipant = {
+  inline def apply(): SchemaTurnBasedMatchParticipant = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTurnBasedMatchParticipant]
   }
   
-  @scala.inline
-  implicit class SchemaTurnBasedMatchParticipantMutableBuilder[Self <: SchemaTurnBasedMatchParticipant] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTurnBasedMatchParticipant](x: Self) {
     
-    @scala.inline
-    def setAutoMatched(value: Boolean): Self = StObject.set(x, "autoMatched", value.asInstanceOf[js.Any])
+    inline def setAutoMatched(value: Boolean): Self = StObject.set(x, "autoMatched", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoMatchedPlayer(value: SchemaAnonymousPlayer): Self = StObject.set(x, "autoMatchedPlayer", value.asInstanceOf[js.Any])
+    inline def setAutoMatchedPlayer(value: SchemaAnonymousPlayer): Self = StObject.set(x, "autoMatchedPlayer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoMatchedPlayerUndefined: Self = StObject.set(x, "autoMatchedPlayer", js.undefined)
+    inline def setAutoMatchedPlayerUndefined: Self = StObject.set(x, "autoMatchedPlayer", js.undefined)
     
-    @scala.inline
-    def setAutoMatchedUndefined: Self = StObject.set(x, "autoMatched", js.undefined)
+    inline def setAutoMatchedUndefined: Self = StObject.set(x, "autoMatched", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPlayer(value: SchemaPlayer): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
+    inline def setPlayer(value: SchemaPlayer): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerUndefined: Self = StObject.set(x, "player", js.undefined)
+    inline def setPlayerUndefined: Self = StObject.set(x, "player", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

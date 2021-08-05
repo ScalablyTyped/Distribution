@@ -26,26 +26,21 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def branch[TOutter](
+  inline def branch[TOutter](
     test: predicate[TOutter],
     trueEnhancer: (ComponentEnhancer[js.Any, js.Any]) | InferableComponentEnhancer[js.Object]
   ): ComponentEnhancer[js.Any, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("branch")(test.asInstanceOf[js.Any], trueEnhancer.asInstanceOf[js.Any])).asInstanceOf[ComponentEnhancer[js.Any, TOutter]]
-  @scala.inline
-  def branch[TOutter](
+  inline def branch[TOutter](
     test: predicate[TOutter],
     trueEnhancer: (ComponentEnhancer[js.Any, js.Any]) | InferableComponentEnhancer[js.Object],
     falseEnhancer: (ComponentEnhancer[js.Any, js.Any]) | InferableComponentEnhancer[js.Object]
   ): ComponentEnhancer[js.Any, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("branch")(test.asInstanceOf[js.Any], trueEnhancer.asInstanceOf[js.Any], falseEnhancer.asInstanceOf[js.Any])).asInstanceOf[ComponentEnhancer[js.Any, TOutter]]
   
-  @scala.inline
-  def componentFromProp(propName: String): StatelessComponent[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("componentFromProp")(propName.asInstanceOf[js.Any]).asInstanceOf[StatelessComponent[js.Any]]
+  inline def componentFromProp(propName: String): StatelessComponent[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("componentFromProp")(propName.asInstanceOf[js.Any]).asInstanceOf[StatelessComponent[js.Any]]
   
-  @scala.inline
-  def componentFromStream[TProps](propsToReactNode: mapper[Subscribable[TProps], Subscribable[ReactNode]]): ComponentType[TProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("componentFromStream")(propsToReactNode.asInstanceOf[js.Any]).asInstanceOf[ComponentType[TProps]]
+  inline def componentFromStream[TProps](propsToReactNode: mapper[Subscribable[TProps], Subscribable[ReactNode]]): ComponentType[TProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("componentFromStream")(propsToReactNode.asInstanceOf[js.Any]).asInstanceOf[ComponentType[TProps]]
   
-  @scala.inline
-  def componentFromStreamWithConfig(config: ObservableConfig): js.Function1[
+  inline def componentFromStreamWithConfig(config: ObservableConfig): js.Function1[
     /* propsToReactNode */ mapper[Subscribable[js.Any], Subscribable[ReactNode]], 
     ComponentType[js.Any]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("componentFromStreamWithConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -53,83 +48,56 @@ object mod {
     ComponentType[js.Any]
   ]]
   
-  @scala.inline
-  def compose[TInner, TOutter](functions: js.Function*): ComponentEnhancer[TInner, TOutter] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(functions.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[TInner, TOutter]]
+  inline def compose[TInner, TOutter](functions: js.Function*): ComponentEnhancer[TInner, TOutter] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(functions.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[TInner, TOutter]]
   
-  @scala.inline
-  def createEagerElement(`type`: String): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createEagerElement")(`type`.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
-  @scala.inline
-  def createEagerElement(`type`: String, props: js.Object): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createEagerElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
-  @scala.inline
-  def createEagerElement(`type`: String, props: js.Object, children: ReactNode): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createEagerElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
-  @scala.inline
-  def createEagerElement(`type`: String, props: Unit, children: ReactNode): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createEagerElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
-  @scala.inline
-  def createEagerElement(`type`: ComponentType[js.Any]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createEagerElement")(`type`.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
-  @scala.inline
-  def createEagerElement(`type`: ComponentType[js.Any], props: js.Object): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createEagerElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
-  @scala.inline
-  def createEagerElement(`type`: ComponentType[js.Any], props: js.Object, children: ReactNode): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createEagerElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
-  @scala.inline
-  def createEagerElement(`type`: ComponentType[js.Any], props: Unit, children: ReactNode): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createEagerElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  inline def createEagerElement(`type`: String): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createEagerElement")(`type`.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def createEagerElement(`type`: String, props: js.Object): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createEagerElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  inline def createEagerElement(`type`: String, props: js.Object, children: ReactNode): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createEagerElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  inline def createEagerElement(`type`: String, props: Unit, children: ReactNode): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createEagerElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  inline def createEagerElement(`type`: ComponentType[js.Any]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createEagerElement")(`type`.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def createEagerElement(`type`: ComponentType[js.Any], props: js.Object): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createEagerElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  inline def createEagerElement(`type`: ComponentType[js.Any], props: js.Object, children: ReactNode): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createEagerElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  inline def createEagerElement(`type`: ComponentType[js.Any], props: Unit, children: ReactNode): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createEagerElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def createEagerFactory(`type`: String): componentFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("createEagerFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[componentFactory]
-  @scala.inline
-  def createEagerFactory(`type`: ComponentType[js.Any]): componentFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("createEagerFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[componentFactory]
+  inline def createEagerFactory(`type`: String): componentFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("createEagerFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[componentFactory]
+  inline def createEagerFactory(`type`: ComponentType[js.Any]): componentFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("createEagerFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[componentFactory]
   
-  @scala.inline
-  def createEventHandler[T, TSubs /* <: Subscribable[T] */](): EventHandlerOf[T, TSubs] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEventHandler")().asInstanceOf[EventHandlerOf[T, TSubs]]
+  inline def createEventHandler[T, TSubs /* <: Subscribable[T] */](): EventHandlerOf[T, TSubs] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEventHandler")().asInstanceOf[EventHandlerOf[T, TSubs]]
   
-  @scala.inline
-  def createEventHandlerWithConfig(config: ObservableConfig): js.Function0[EventHandlerOf[js.Any, Subscribable[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEventHandlerWithConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function0[EventHandlerOf[js.Any, Subscribable[js.Any]]]]
+  inline def createEventHandlerWithConfig(config: ObservableConfig): js.Function0[EventHandlerOf[js.Any, Subscribable[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEventHandlerWithConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function0[EventHandlerOf[js.Any, Subscribable[js.Any]]]]
   
-  @scala.inline
-  def createSink(callback: js.Function1[/* props */ js.Object, Unit]): ComponentClass[js.Any, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSink")(callback.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[js.Any, ComponentState]]
+  inline def createSink(callback: js.Function1[/* props */ js.Object, Unit]): ComponentClass[js.Any, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSink")(callback.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[js.Any, ComponentState]]
   
-  @scala.inline
-  def defaultProps[T](props: T): DefaultingInferableComponentEnhancer[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultProps")(props.asInstanceOf[js.Any]).asInstanceOf[DefaultingInferableComponentEnhancer[T]]
+  inline def defaultProps[T](props: T): DefaultingInferableComponentEnhancer[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultProps")(props.asInstanceOf[js.Any]).asInstanceOf[DefaultingInferableComponentEnhancer[T]]
   
-  @scala.inline
-  def flattenProp(propName: String): ComponentEnhancer[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("flattenProp")(propName.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[js.Any, js.Any]]
+  inline def flattenProp(propName: String): ComponentEnhancer[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("flattenProp")(propName.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[js.Any, js.Any]]
   
-  @scala.inline
-  def fromRenderProps[TInner, TOutter, TRenderProps](
+  inline def fromRenderProps[TInner, TOutter, TRenderProps](
     RenderPropsComponent: ComponentType[js.Any],
     propsMapper: js.Function1[/* props */ TRenderProps, TInner]
   ): ComponentEnhancer[TInner & TOutter, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRenderProps")(RenderPropsComponent.asInstanceOf[js.Any], propsMapper.asInstanceOf[js.Any])).asInstanceOf[ComponentEnhancer[TInner & TOutter, TOutter]]
-  @scala.inline
-  def fromRenderProps[TInner, TOutter, TRenderProps](
+  inline def fromRenderProps[TInner, TOutter, TRenderProps](
     RenderPropsComponent: ComponentType[js.Any],
     propsMapper: js.Function1[/* props */ TRenderProps, TInner],
     renderPropName: String
   ): ComponentEnhancer[TInner & TOutter, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRenderProps")(RenderPropsComponent.asInstanceOf[js.Any], propsMapper.asInstanceOf[js.Any], renderPropName.asInstanceOf[js.Any])).asInstanceOf[ComponentEnhancer[TInner & TOutter, TOutter]]
   
-  @scala.inline
-  def getContext[TContext](contextTypes: ValidationMap[TContext]): InferableComponentEnhancer[TContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(contextTypes.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancer[TContext]]
+  inline def getContext[TContext](contextTypes: ValidationMap[TContext]): InferableComponentEnhancer[TContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(contextTypes.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancer[TContext]]
   
-  @scala.inline
-  def getDisplayName(component: ComponentType[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayName")(component.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getDisplayName(component: ComponentType[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayName")(component.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def hoistStatics[TProps](hoc: InferableComponentEnhancer[TProps]): InferableComponentEnhancer[TProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("hoistStatics")(hoc.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancer[TProps]]
-  @scala.inline
-  def hoistStatics[TProps](hoc: InferableComponentEnhancer[TProps], blacklist: StringDictionary[Boolean]): InferableComponentEnhancer[TProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("hoistStatics")(hoc.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[InferableComponentEnhancer[TProps]]
+  inline def hoistStatics[TProps](hoc: InferableComponentEnhancer[TProps]): InferableComponentEnhancer[TProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("hoistStatics")(hoc.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancer[TProps]]
+  inline def hoistStatics[TProps](hoc: InferableComponentEnhancer[TProps], blacklist: StringDictionary[Boolean]): InferableComponentEnhancer[TProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("hoistStatics")(hoc.asInstanceOf[js.Any], blacklist.asInstanceOf[js.Any])).asInstanceOf[InferableComponentEnhancer[TProps]]
   
-  @scala.inline
-  def isClassComponent(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isClassComponent")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isClassComponent(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isClassComponent")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def lifecycle[TProps, TState, TInstance](spec: (ReactLifeCycleFunctions[TProps, TState, TInstance]) & TInstance): InferableComponentEnhancer[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("lifecycle")(spec.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancer[js.Object]]
+  inline def lifecycle[TProps, TState, TInstance](spec: (ReactLifeCycleFunctions[TProps, TState, TInstance]) & TInstance): InferableComponentEnhancer[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("lifecycle")(spec.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancer[js.Object]]
   
-  @scala.inline
-  def mapProps[TInner, TOutter](propsMapper: mapper[TOutter, TInner]): InferableComponentEnhancerWithProps[TInner, TOutter] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapProps")(propsMapper.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancerWithProps[TInner, TOutter]]
+  inline def mapProps[TInner, TOutter](propsMapper: mapper[TOutter, TInner]): InferableComponentEnhancerWithProps[TInner, TOutter] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapProps")(propsMapper.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancerWithProps[TInner, TOutter]]
   
-  @scala.inline
-  def mapPropsStream[TInner, TOutter](transform: mapper[Subscribable[TOutter], Subscribable[TInner]]): ComponentEnhancer[TInner, TOutter] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapPropsStream")(transform.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[TInner, TOutter]]
+  inline def mapPropsStream[TInner, TOutter](transform: mapper[Subscribable[TOutter], Subscribable[TInner]]): ComponentEnhancer[TInner, TOutter] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapPropsStream")(transform.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[TInner, TOutter]]
   
-  @scala.inline
-  def mapPropsStreamWithConfig(config: ObservableConfig): js.Function1[
+  inline def mapPropsStreamWithConfig(config: ObservableConfig): js.Function1[
     /* transform */ mapper[Subscribable[js.Any], Subscribable[js.Any]], 
     ComponentEnhancer[js.Any, js.Any]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapPropsStreamWithConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -137,107 +105,78 @@ object mod {
     ComponentEnhancer[js.Any, js.Any]
   ]]
   
-  @scala.inline
-  def nest(Components: (String | ComponentType[js.Any])*): ComponentClass[js.Any, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("nest")(Components.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[js.Any, ComponentState]]
+  inline def nest(Components: (String | ComponentType[js.Any])*): ComponentClass[js.Any, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("nest")(Components.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[js.Any, ComponentState]]
   
-  @scala.inline
-  def onlyUpdateForKeys(propKeys: js.Array[String]): InferableComponentEnhancer[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("onlyUpdateForKeys")(propKeys.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancer[js.Object]]
+  inline def onlyUpdateForKeys(propKeys: js.Array[String]): InferableComponentEnhancer[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("onlyUpdateForKeys")(propKeys.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancer[js.Object]]
   
-  @scala.inline
-  def onlyUpdateForKeys_T[T](propKeys: js.Array[/* keyof T */ String]): InferableComponentEnhancer[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("onlyUpdateForKeys")(propKeys.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancer[js.Object]]
+  inline def onlyUpdateForKeys_T[T](propKeys: js.Array[/* keyof T */ String]): InferableComponentEnhancer[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("onlyUpdateForKeys")(propKeys.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancer[js.Object]]
   
   @JSImport("recompose", "onlyUpdateForPropTypes")
   @js.native
   val onlyUpdateForPropTypes: InferableComponentEnhancer[js.Object] = js.native
   
-  @scala.inline
-  def pure[TProps](component: ComponentType[TProps]): ComponentType[TProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("pure")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[TProps]]
+  inline def pure[TProps](component: ComponentType[TProps]): ComponentType[TProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("pure")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[TProps]]
   
-  @scala.inline
-  def renameProp(outterName: String, innerName: String): ComponentEnhancer[js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("renameProp")(outterName.asInstanceOf[js.Any], innerName.asInstanceOf[js.Any])).asInstanceOf[ComponentEnhancer[js.Any, js.Any]]
+  inline def renameProp(outterName: String, innerName: String): ComponentEnhancer[js.Any, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("renameProp")(outterName.asInstanceOf[js.Any], innerName.asInstanceOf[js.Any])).asInstanceOf[ComponentEnhancer[js.Any, js.Any]]
   
-  @scala.inline
-  def renameProps(nameMap: NameMap): ComponentEnhancer[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("renameProps")(nameMap.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[js.Any, js.Any]]
+  inline def renameProps(nameMap: NameMap): ComponentEnhancer[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("renameProps")(nameMap.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[js.Any, js.Any]]
   
-  @scala.inline
-  def renderComponent[TProps](component: String): ComponentEnhancer[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderComponent")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[js.Any, js.Any]]
-  @scala.inline
-  def renderComponent[TProps](component: ComponentType[TProps]): ComponentEnhancer[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderComponent")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[js.Any, js.Any]]
+  inline def renderComponent[TProps](component: String): ComponentEnhancer[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderComponent")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[js.Any, js.Any]]
+  inline def renderComponent[TProps](component: ComponentType[TProps]): ComponentEnhancer[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("renderComponent")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentEnhancer[js.Any, js.Any]]
   
   @JSImport("recompose", "renderNothing")
   @js.native
   val renderNothing: InferableComponentEnhancer[js.Object] = js.native
   
-  @scala.inline
-  def setDisplayName(displayName: String): js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("setDisplayName")(displayName.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]]]
+  inline def setDisplayName(displayName: String): js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("setDisplayName")(displayName.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]]]
   
-  @scala.inline
-  def setObservableConfig(config: ObservableConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setObservableConfig")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setObservableConfig(config: ObservableConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setObservableConfig")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setPropTypes[P](propTypes: ValidationMap[P]): js.Function1[/* component */ ComponentType[P], ComponentType[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("setPropTypes")(propTypes.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[P], ComponentType[P]]]
+  inline def setPropTypes[P](propTypes: ValidationMap[P]): js.Function1[/* component */ ComponentType[P], ComponentType[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("setPropTypes")(propTypes.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[P], ComponentType[P]]]
   
-  @scala.inline
-  def setStatic(key: String, value: js.Any): js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("setStatic")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]]]
+  inline def setStatic(key: String, value: js.Any): js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("setStatic")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]]]
   
-  @scala.inline
-  def shallowEqual(a: js.Object, b: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def shallowEqual(a: js.Object, b: js.Object): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def shouldUpdate[TProps](test: predicateDiff[TProps]): InferableComponentEnhancer[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldUpdate")(test.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancer[js.Object]]
+  inline def shouldUpdate[TProps](test: predicateDiff[TProps]): InferableComponentEnhancer[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldUpdate")(test.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancer[js.Object]]
   
   @JSImport("recompose", "toClass")
   @js.native
   val toClass: InferableComponentEnhancer[js.Object] = js.native
   
-  @scala.inline
-  def toRenderProps[TInner, TOutter](hoc: InferableComponentEnhancerWithProps[TInner & TOutter, TOutter]): StatelessComponent[TOutter & Children[TInner]] = ^.asInstanceOf[js.Dynamic].applyDynamic("toRenderProps")(hoc.asInstanceOf[js.Any]).asInstanceOf[StatelessComponent[TOutter & Children[TInner]]]
+  inline def toRenderProps[TInner, TOutter](hoc: InferableComponentEnhancerWithProps[TInner & TOutter, TOutter]): StatelessComponent[TOutter & Children[TInner]] = ^.asInstanceOf[js.Dynamic].applyDynamic("toRenderProps")(hoc.asInstanceOf[js.Any]).asInstanceOf[StatelessComponent[TOutter & Children[TInner]]]
   
-  @scala.inline
-  def withContext[TContext, TProps](childContextTypes: ValidationMap[TContext], getChildContext: mapper[TProps, js.Any]): InferableComponentEnhancer[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("withContext")(childContextTypes.asInstanceOf[js.Any], getChildContext.asInstanceOf[js.Any])).asInstanceOf[InferableComponentEnhancer[js.Object]]
+  inline def withContext[TContext, TProps](childContextTypes: ValidationMap[TContext], getChildContext: mapper[TProps, js.Any]): InferableComponentEnhancer[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("withContext")(childContextTypes.asInstanceOf[js.Any], getChildContext.asInstanceOf[js.Any])).asInstanceOf[InferableComponentEnhancer[js.Object]]
   
-  @scala.inline
-  def withHandlers[TOutter, THandlers](handlerCreators: HandleCreators[TOutter, THandlers]): InferableComponentEnhancerWithProps[THandlers & TOutter, TOutter] = ^.asInstanceOf[js.Dynamic].applyDynamic("withHandlers")(handlerCreators.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancerWithProps[THandlers & TOutter, TOutter]]
-  @scala.inline
-  def withHandlers[TOutter, THandlers](handlerCreators: HandleCreatorsFactory[TOutter, THandlers]): InferableComponentEnhancerWithProps[THandlers & TOutter, TOutter] = ^.asInstanceOf[js.Dynamic].applyDynamic("withHandlers")(handlerCreators.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancerWithProps[THandlers & TOutter, TOutter]]
+  inline def withHandlers[TOutter, THandlers](handlerCreators: HandleCreators[TOutter, THandlers]): InferableComponentEnhancerWithProps[THandlers & TOutter, TOutter] = ^.asInstanceOf[js.Dynamic].applyDynamic("withHandlers")(handlerCreators.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancerWithProps[THandlers & TOutter, TOutter]]
+  inline def withHandlers[TOutter, THandlers](handlerCreators: HandleCreatorsFactory[TOutter, THandlers]): InferableComponentEnhancerWithProps[THandlers & TOutter, TOutter] = ^.asInstanceOf[js.Dynamic].applyDynamic("withHandlers")(handlerCreators.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancerWithProps[THandlers & TOutter, TOutter]]
   
-  @scala.inline
-  def withProps[TInner, TOutter](createProps: TInner): InferableComponentEnhancerWithProps[TInner & TOutter, TOutter] = ^.asInstanceOf[js.Dynamic].applyDynamic("withProps")(createProps.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancerWithProps[TInner & TOutter, TOutter]]
-  @scala.inline
-  def withProps[TInner, TOutter](createProps: mapper[TOutter, TInner]): InferableComponentEnhancerWithProps[TInner & TOutter, TOutter] = ^.asInstanceOf[js.Dynamic].applyDynamic("withProps")(createProps.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancerWithProps[TInner & TOutter, TOutter]]
+  inline def withProps[TInner, TOutter](createProps: TInner): InferableComponentEnhancerWithProps[TInner & TOutter, TOutter] = ^.asInstanceOf[js.Dynamic].applyDynamic("withProps")(createProps.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancerWithProps[TInner & TOutter, TOutter]]
+  inline def withProps[TInner, TOutter](createProps: mapper[TOutter, TInner]): InferableComponentEnhancerWithProps[TInner & TOutter, TOutter] = ^.asInstanceOf[js.Dynamic].applyDynamic("withProps")(createProps.asInstanceOf[js.Any]).asInstanceOf[InferableComponentEnhancerWithProps[TInner & TOutter, TOutter]]
   
-  @scala.inline
-  def withPropsOnChange[TInner, TOutter](shouldMapOrKeys: js.Array[String], createProps: mapper[TOutter, TInner]): InferableComponentEnhancerWithProps[TInner & TOutter, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("withPropsOnChange")(shouldMapOrKeys.asInstanceOf[js.Any], createProps.asInstanceOf[js.Any])).asInstanceOf[InferableComponentEnhancerWithProps[TInner & TOutter, TOutter]]
-  @scala.inline
-  def withPropsOnChange[TInner, TOutter](shouldMapOrKeys: predicateDiff[TOutter], createProps: mapper[TOutter, TInner]): InferableComponentEnhancerWithProps[TInner & TOutter, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("withPropsOnChange")(shouldMapOrKeys.asInstanceOf[js.Any], createProps.asInstanceOf[js.Any])).asInstanceOf[InferableComponentEnhancerWithProps[TInner & TOutter, TOutter]]
+  inline def withPropsOnChange[TInner, TOutter](shouldMapOrKeys: js.Array[String], createProps: mapper[TOutter, TInner]): InferableComponentEnhancerWithProps[TInner & TOutter, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("withPropsOnChange")(shouldMapOrKeys.asInstanceOf[js.Any], createProps.asInstanceOf[js.Any])).asInstanceOf[InferableComponentEnhancerWithProps[TInner & TOutter, TOutter]]
+  inline def withPropsOnChange[TInner, TOutter](shouldMapOrKeys: predicateDiff[TOutter], createProps: mapper[TOutter, TInner]): InferableComponentEnhancerWithProps[TInner & TOutter, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("withPropsOnChange")(shouldMapOrKeys.asInstanceOf[js.Any], createProps.asInstanceOf[js.Any])).asInstanceOf[InferableComponentEnhancerWithProps[TInner & TOutter, TOutter]]
   
-  @scala.inline
-  def withReducer[TOutter, TState, TAction, TStateName /* <: String */, TDispatchName /* <: String */](
+  inline def withReducer[TOutter, TState, TAction, TStateName /* <: String */, TDispatchName /* <: String */](
     stateName: TStateName,
     dispatchName: TDispatchName,
     reducer: reducer[TState, TAction],
     initialState: TState
   ): InferableComponentEnhancerWithProps[reducerProps[TState, TAction, TStateName, TDispatchName], TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("withReducer")(stateName.asInstanceOf[js.Any], dispatchName.asInstanceOf[js.Any], reducer.asInstanceOf[js.Any], initialState.asInstanceOf[js.Any])).asInstanceOf[InferableComponentEnhancerWithProps[reducerProps[TState, TAction, TStateName, TDispatchName], TOutter]]
-  @scala.inline
-  def withReducer[TOutter, TState, TAction, TStateName /* <: String */, TDispatchName /* <: String */](
+  inline def withReducer[TOutter, TState, TAction, TStateName /* <: String */, TDispatchName /* <: String */](
     stateName: TStateName,
     dispatchName: TDispatchName,
     reducer: reducer[TState, TAction],
     initialState: mapper[TOutter, TState]
   ): InferableComponentEnhancerWithProps[reducerProps[TState, TAction, TStateName, TDispatchName], TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("withReducer")(stateName.asInstanceOf[js.Any], dispatchName.asInstanceOf[js.Any], reducer.asInstanceOf[js.Any], initialState.asInstanceOf[js.Any])).asInstanceOf[InferableComponentEnhancerWithProps[reducerProps[TState, TAction, TStateName, TDispatchName], TOutter]]
   
-  @scala.inline
-  def withState[TOutter, TState, TStateName /* <: String */, TStateUpdaterName /* <: String */](stateName: TStateName, stateUpdaterName: TStateUpdaterName, initialState: TState): InferableComponentEnhancerWithProps[stateProps[TState, TStateName, TStateUpdaterName], TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("withState")(stateName.asInstanceOf[js.Any], stateUpdaterName.asInstanceOf[js.Any], initialState.asInstanceOf[js.Any])).asInstanceOf[InferableComponentEnhancerWithProps[stateProps[TState, TStateName, TStateUpdaterName], TOutter]]
-  @scala.inline
-  def withState[TOutter, TState, TStateName /* <: String */, TStateUpdaterName /* <: String */](stateName: TStateName, stateUpdaterName: TStateUpdaterName, initialState: mapper[TOutter, TState]): InferableComponentEnhancerWithProps[stateProps[TState, TStateName, TStateUpdaterName], TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("withState")(stateName.asInstanceOf[js.Any], stateUpdaterName.asInstanceOf[js.Any], initialState.asInstanceOf[js.Any])).asInstanceOf[InferableComponentEnhancerWithProps[stateProps[TState, TStateName, TStateUpdaterName], TOutter]]
+  inline def withState[TOutter, TState, TStateName /* <: String */, TStateUpdaterName /* <: String */](stateName: TStateName, stateUpdaterName: TStateUpdaterName, initialState: TState): InferableComponentEnhancerWithProps[stateProps[TState, TStateName, TStateUpdaterName], TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("withState")(stateName.asInstanceOf[js.Any], stateUpdaterName.asInstanceOf[js.Any], initialState.asInstanceOf[js.Any])).asInstanceOf[InferableComponentEnhancerWithProps[stateProps[TState, TStateName, TStateUpdaterName], TOutter]]
+  inline def withState[TOutter, TState, TStateName /* <: String */, TStateUpdaterName /* <: String */](stateName: TStateName, stateUpdaterName: TStateUpdaterName, initialState: mapper[TOutter, TState]): InferableComponentEnhancerWithProps[stateProps[TState, TStateName, TStateUpdaterName], TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("withState")(stateName.asInstanceOf[js.Any], stateUpdaterName.asInstanceOf[js.Any], initialState.asInstanceOf[js.Any])).asInstanceOf[InferableComponentEnhancerWithProps[stateProps[TState, TStateName, TStateUpdaterName], TOutter]]
   
-  @scala.inline
-  def withStateHandlers[TState, TUpdaters /* <: StateHandlerMap[TState] */, TOutter](createProps: TState, stateUpdaters: StateUpdaters[TOutter, TState, TUpdaters]): InferableComponentEnhancerWithProps[TOutter & TState & TUpdaters, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("withStateHandlers")(createProps.asInstanceOf[js.Any], stateUpdaters.asInstanceOf[js.Any])).asInstanceOf[InferableComponentEnhancerWithProps[TOutter & TState & TUpdaters, TOutter]]
-  @scala.inline
-  def withStateHandlers[TState, TUpdaters /* <: StateHandlerMap[TState] */, TOutter](createProps: mapper[TOutter, TState], stateUpdaters: StateUpdaters[TOutter, TState, TUpdaters]): InferableComponentEnhancerWithProps[TOutter & TState & TUpdaters, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("withStateHandlers")(createProps.asInstanceOf[js.Any], stateUpdaters.asInstanceOf[js.Any])).asInstanceOf[InferableComponentEnhancerWithProps[TOutter & TState & TUpdaters, TOutter]]
+  inline def withStateHandlers[TState, TUpdaters /* <: StateHandlerMap[TState] */, TOutter](createProps: TState, stateUpdaters: StateUpdaters[TOutter, TState, TUpdaters]): InferableComponentEnhancerWithProps[TOutter & TState & TUpdaters, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("withStateHandlers")(createProps.asInstanceOf[js.Any], stateUpdaters.asInstanceOf[js.Any])).asInstanceOf[InferableComponentEnhancerWithProps[TOutter & TState & TUpdaters, TOutter]]
+  inline def withStateHandlers[TState, TUpdaters /* <: StateHandlerMap[TState] */, TOutter](createProps: mapper[TOutter, TState], stateUpdaters: StateUpdaters[TOutter, TState, TUpdaters]): InferableComponentEnhancerWithProps[TOutter & TState & TUpdaters, TOutter] = (^.asInstanceOf[js.Dynamic].applyDynamic("withStateHandlers")(createProps.asInstanceOf[js.Any], stateUpdaters.asInstanceOf[js.Any])).asInstanceOf[InferableComponentEnhancerWithProps[TOutter & TState & TUpdaters, TOutter]]
   
-  @scala.inline
-  def wrapDisplayName(component: ComponentType[js.Any], wrapperName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapDisplayName")(component.asInstanceOf[js.Any], wrapperName.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def wrapDisplayName(component: ComponentType[js.Any], wrapperName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapDisplayName")(component.asInstanceOf[js.Any], wrapperName.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type ComponentEnhancer[TInner, TOutter] = js.Function1[/* component */ ComponentType[TInner], ComponentClass[TOutter, ComponentState]]
   
@@ -255,20 +194,16 @@ object mod {
   }
   object EventHandlerOf {
     
-    @scala.inline
-    def apply[T, TSubs /* <: Subscribable[T] */](handler: T => Unit, stream: TSubs): EventHandlerOf[T, TSubs] = {
+    inline def apply[T, TSubs /* <: Subscribable[T] */](handler: T => Unit, stream: TSubs): EventHandlerOf[T, TSubs] = {
       val __obj = js.Dynamic.literal(handler = js.Any.fromFunction1(handler), stream = stream.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventHandlerOf[T, TSubs]]
     }
     
-    @scala.inline
-    implicit class EventHandlerOfMutableBuilder[Self <: EventHandlerOf[?, ?], T, TSubs /* <: Subscribable[T] */] (val x: Self & (EventHandlerOf[T, TSubs])) extends AnyVal {
+    extension [Self <: EventHandlerOf[?, ?], T, TSubs /* <: Subscribable[T] */](x: Self & (EventHandlerOf[T, TSubs])) {
       
-      @scala.inline
-      def setHandler(value: T => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
+      inline def setHandler(value: T => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStream(value: TSubs): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: TSubs): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     }
   }
   
@@ -306,26 +241,20 @@ object mod {
   }
   object ObservableConfig {
     
-    @scala.inline
-    def apply(): ObservableConfig = {
+    inline def apply(): ObservableConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ObservableConfig]
     }
     
-    @scala.inline
-    implicit class ObservableConfigMutableBuilder[Self <: ObservableConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ObservableConfig](x: Self) {
       
-      @scala.inline
-      def setFromESObservable(value: /* observable */ Subscribable[js.Any] => js.Any): Self = StObject.set(x, "fromESObservable", js.Any.fromFunction1(value))
+      inline def setFromESObservable(value: /* observable */ Subscribable[js.Any] => js.Any): Self = StObject.set(x, "fromESObservable", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFromESObservableUndefined: Self = StObject.set(x, "fromESObservable", js.undefined)
+      inline def setFromESObservableUndefined: Self = StObject.set(x, "fromESObservable", js.undefined)
       
-      @scala.inline
-      def setToESObservable(value: /* stream */ js.Any => Subscribable[js.Any]): Self = StObject.set(x, "toESObservable", js.Any.fromFunction1(value))
+      inline def setToESObservable(value: /* stream */ js.Any => Subscribable[js.Any]): Self = StObject.set(x, "toESObservable", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToESObservableUndefined: Self = StObject.set(x, "toESObservable", js.undefined)
+      inline def setToESObservableUndefined: Self = StObject.set(x, "toESObservable", js.undefined)
     }
   }
   
@@ -337,20 +266,16 @@ object mod {
   }
   object Observer {
     
-    @scala.inline
-    def apply[T](complete: () => Unit, next: T => Unit): Observer[T] = {
+    inline def apply[T](complete: () => Unit, next: T => Unit): Observer[T] = {
       val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete), next = js.Any.fromFunction1(next))
       __obj.asInstanceOf[Observer[T]]
     }
     
-    @scala.inline
-    implicit class ObserverMutableBuilder[Self <: Observer[?], T] (val x: Self & Observer[T]) extends AnyVal {
+    extension [Self <: Observer[?], T](x: Self & Observer[T]) {
       
-      @scala.inline
-      def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+      inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNext(value: T => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
+      inline def setNext(value: T => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
     }
   }
   
@@ -439,17 +364,14 @@ object mod {
   }
   object ReactLifeCycleFunctions {
     
-    @scala.inline
-    def apply[TProps, TState, TInstance](): ReactLifeCycleFunctions[TProps, TState, TInstance] = {
+    inline def apply[TProps, TState, TInstance](): ReactLifeCycleFunctions[TProps, TState, TInstance] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReactLifeCycleFunctions[TProps, TState, TInstance]]
     }
     
-    @scala.inline
-    implicit class ReactLifeCycleFunctionsMutableBuilder[Self <: ReactLifeCycleFunctions[?, ?, ?], TProps, TState, TInstance] (val x: Self & (ReactLifeCycleFunctions[TProps, TState, TInstance])) extends AnyVal {
+    extension [Self <: ReactLifeCycleFunctions[?, ?, ?], TProps, TState, TInstance](x: Self & (ReactLifeCycleFunctions[TProps, TState, TInstance])) {
       
-      @scala.inline
-      def setComponentDidCatch(
+      inline def setComponentDidCatch(
         value: js.ThisFunction2[
               /* this */ ReactLifeCycleFunctionsThisArguments[TProps, TState, TInstance], 
               /* error */ Error, 
@@ -458,19 +380,15 @@ object mod {
             ]
       ): Self = StObject.set(x, "componentDidCatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentDidCatchUndefined: Self = StObject.set(x, "componentDidCatch", js.undefined)
+      inline def setComponentDidCatchUndefined: Self = StObject.set(x, "componentDidCatch", js.undefined)
       
-      @scala.inline
-      def setComponentDidMount(
+      inline def setComponentDidMount(
         value: js.ThisFunction0[/* this */ ReactLifeCycleFunctionsThisArguments[TProps, TState, TInstance], Unit]
       ): Self = StObject.set(x, "componentDidMount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentDidMountUndefined: Self = StObject.set(x, "componentDidMount", js.undefined)
+      inline def setComponentDidMountUndefined: Self = StObject.set(x, "componentDidMount", js.undefined)
       
-      @scala.inline
-      def setComponentDidUpdate(
+      inline def setComponentDidUpdate(
         value: js.ThisFunction2[
               /* this */ ReactLifeCycleFunctionsThisArguments[TProps, TState, TInstance], 
               /* prevProps */ TProps, 
@@ -479,19 +397,15 @@ object mod {
             ]
       ): Self = StObject.set(x, "componentDidUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentDidUpdateUndefined: Self = StObject.set(x, "componentDidUpdate", js.undefined)
+      inline def setComponentDidUpdateUndefined: Self = StObject.set(x, "componentDidUpdate", js.undefined)
       
-      @scala.inline
-      def setComponentWillMount(
+      inline def setComponentWillMount(
         value: js.ThisFunction0[/* this */ ReactLifeCycleFunctionsThisArguments[TProps, TState, TInstance], Unit]
       ): Self = StObject.set(x, "componentWillMount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentWillMountUndefined: Self = StObject.set(x, "componentWillMount", js.undefined)
+      inline def setComponentWillMountUndefined: Self = StObject.set(x, "componentWillMount", js.undefined)
       
-      @scala.inline
-      def setComponentWillReceiveProps(
+      inline def setComponentWillReceiveProps(
         value: js.ThisFunction1[
               /* this */ ReactLifeCycleFunctionsThisArguments[TProps, TState, TInstance], 
               /* nextProps */ TProps, 
@@ -499,19 +413,15 @@ object mod {
             ]
       ): Self = StObject.set(x, "componentWillReceiveProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentWillReceivePropsUndefined: Self = StObject.set(x, "componentWillReceiveProps", js.undefined)
+      inline def setComponentWillReceivePropsUndefined: Self = StObject.set(x, "componentWillReceiveProps", js.undefined)
       
-      @scala.inline
-      def setComponentWillUnmount(
+      inline def setComponentWillUnmount(
         value: js.ThisFunction0[/* this */ ReactLifeCycleFunctionsThisArguments[TProps, TState, TInstance], Unit]
       ): Self = StObject.set(x, "componentWillUnmount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentWillUnmountUndefined: Self = StObject.set(x, "componentWillUnmount", js.undefined)
+      inline def setComponentWillUnmountUndefined: Self = StObject.set(x, "componentWillUnmount", js.undefined)
       
-      @scala.inline
-      def setComponentWillUpdate(
+      inline def setComponentWillUpdate(
         value: js.ThisFunction2[
               /* this */ ReactLifeCycleFunctionsThisArguments[TProps, TState, TInstance], 
               /* nextProps */ TProps, 
@@ -520,11 +430,9 @@ object mod {
             ]
       ): Self = StObject.set(x, "componentWillUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentWillUpdateUndefined: Self = StObject.set(x, "componentWillUpdate", js.undefined)
+      inline def setComponentWillUpdateUndefined: Self = StObject.set(x, "componentWillUpdate", js.undefined)
       
-      @scala.inline
-      def setShouldComponentUpdate(
+      inline def setShouldComponentUpdate(
         value: js.ThisFunction2[
               /* this */ ReactLifeCycleFunctionsThisArguments[TProps, TState, TInstance], 
               /* nextProps */ TProps, 
@@ -533,19 +441,15 @@ object mod {
             ]
       ): Self = StObject.set(x, "shouldComponentUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldComponentUpdateUndefined: Self = StObject.set(x, "shouldComponentUpdate", js.undefined)
+      inline def setShouldComponentUpdateUndefined: Self = StObject.set(x, "shouldComponentUpdate", js.undefined)
       
-      @scala.inline
-      def setUNSAFE_componentWillMount(
+      inline def setUNSAFE_componentWillMount(
         value: js.ThisFunction0[/* this */ ReactLifeCycleFunctionsThisArguments[TProps, TState, TInstance], Unit]
       ): Self = StObject.set(x, "UNSAFE_componentWillMount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUNSAFE_componentWillMountUndefined: Self = StObject.set(x, "UNSAFE_componentWillMount", js.undefined)
+      inline def setUNSAFE_componentWillMountUndefined: Self = StObject.set(x, "UNSAFE_componentWillMount", js.undefined)
       
-      @scala.inline
-      def setUNSAFE_componentWillReceiveProps(
+      inline def setUNSAFE_componentWillReceiveProps(
         value: js.ThisFunction1[
               /* this */ ReactLifeCycleFunctionsThisArguments[TProps, TState, TInstance], 
               /* nextProps */ TProps, 
@@ -553,11 +457,9 @@ object mod {
             ]
       ): Self = StObject.set(x, "UNSAFE_componentWillReceiveProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUNSAFE_componentWillReceivePropsUndefined: Self = StObject.set(x, "UNSAFE_componentWillReceiveProps", js.undefined)
+      inline def setUNSAFE_componentWillReceivePropsUndefined: Self = StObject.set(x, "UNSAFE_componentWillReceiveProps", js.undefined)
       
-      @scala.inline
-      def setUNSAFE_componentWillUpdate(
+      inline def setUNSAFE_componentWillUpdate(
         value: js.ThisFunction2[
               /* this */ ReactLifeCycleFunctionsThisArguments[TProps, TState, TInstance], 
               /* nextProps */ TProps, 
@@ -566,8 +468,7 @@ object mod {
             ]
       ): Self = StObject.set(x, "UNSAFE_componentWillUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUNSAFE_componentWillUpdateUndefined: Self = StObject.set(x, "UNSAFE_componentWillUpdate", js.undefined)
+      inline def setUNSAFE_componentWillUpdateUndefined: Self = StObject.set(x, "UNSAFE_componentWillUpdate", js.undefined)
     }
   }
   
@@ -592,17 +493,14 @@ object mod {
   }
   object Subscribable {
     
-    @scala.inline
-    def apply[T](subscribe: Observer[T] => Subscription): Subscribable[T] = {
+    inline def apply[T](subscribe: Observer[T] => Subscription): Subscribable[T] = {
       val __obj = js.Dynamic.literal(subscribe = js.Any.fromFunction1(subscribe))
       __obj.asInstanceOf[Subscribable[T]]
     }
     
-    @scala.inline
-    implicit class SubscribableMutableBuilder[Self <: Subscribable[?], T] (val x: Self & Subscribable[T]) extends AnyVal {
+    extension [Self <: Subscribable[?], T](x: Self & Subscribable[T]) {
       
-      @scala.inline
-      def setSubscribe(value: Observer[T] => Subscription): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
+      inline def setSubscribe(value: Observer[T] => Subscription): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
     }
   }
   
@@ -612,17 +510,14 @@ object mod {
   }
   object Subscription {
     
-    @scala.inline
-    def apply(unsubscribe: () => Unit): Subscription = {
+    inline def apply(unsubscribe: () => Unit): Subscription = {
       val __obj = js.Dynamic.literal(unsubscribe = js.Any.fromFunction0(unsubscribe))
       __obj.asInstanceOf[Subscription]
     }
     
-    @scala.inline
-    implicit class SubscriptionMutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
+    extension [Self <: Subscription](x: Self) {
       
-      @scala.inline
-      def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
+      inline def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
     }
   }
   

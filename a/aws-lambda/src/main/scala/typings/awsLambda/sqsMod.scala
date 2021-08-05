@@ -14,20 +14,16 @@ object sqsMod {
   }
   object SQSEvent {
     
-    @scala.inline
-    def apply(Records: js.Array[SQSRecord]): SQSEvent = {
+    inline def apply(Records: js.Array[SQSRecord]): SQSEvent = {
       val __obj = js.Dynamic.literal(Records = Records.asInstanceOf[js.Any])
       __obj.asInstanceOf[SQSEvent]
     }
     
-    @scala.inline
-    implicit class SQSEventMutableBuilder[Self <: SQSEvent] (val x: Self) extends AnyVal {
+    extension [Self <: SQSEvent](x: Self) {
       
-      @scala.inline
-      def setRecords(value: js.Array[SQSRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
+      inline def setRecords(value: js.Array[SQSRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordsVarargs(value: SQSRecord*): Self = StObject.set(x, "Records", js.Array(value :_*))
+      inline def setRecordsVarargs(value: SQSRecord*): Self = StObject.set(x, "Records", js.Array(value :_*))
     }
   }
   
@@ -49,8 +45,7 @@ object sqsMod {
   }
   object SQSMessageAttribute {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       binaryListValues: js.Array[scala.Nothing],
       dataType: SQSMessageAttributeDataType,
       stringListValues: js.Array[scala.Nothing]
@@ -59,35 +54,25 @@ object sqsMod {
       __obj.asInstanceOf[SQSMessageAttribute]
     }
     
-    @scala.inline
-    implicit class SQSMessageAttributeMutableBuilder[Self <: SQSMessageAttribute] (val x: Self) extends AnyVal {
+    extension [Self <: SQSMessageAttribute](x: Self) {
       
-      @scala.inline
-      def setBinaryListValues(value: js.Array[scala.Nothing]): Self = StObject.set(x, "binaryListValues", value.asInstanceOf[js.Any])
+      inline def setBinaryListValues(value: js.Array[scala.Nothing]): Self = StObject.set(x, "binaryListValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinaryListValuesVarargs(value: scala.Nothing*): Self = StObject.set(x, "binaryListValues", js.Array(value :_*))
+      inline def setBinaryListValuesVarargs(value: scala.Nothing*): Self = StObject.set(x, "binaryListValues", js.Array(value :_*))
       
-      @scala.inline
-      def setBinaryValue(value: String): Self = StObject.set(x, "binaryValue", value.asInstanceOf[js.Any])
+      inline def setBinaryValue(value: String): Self = StObject.set(x, "binaryValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinaryValueUndefined: Self = StObject.set(x, "binaryValue", js.undefined)
+      inline def setBinaryValueUndefined: Self = StObject.set(x, "binaryValue", js.undefined)
       
-      @scala.inline
-      def setDataType(value: SQSMessageAttributeDataType): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+      inline def setDataType(value: SQSMessageAttributeDataType): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringListValues(value: js.Array[scala.Nothing]): Self = StObject.set(x, "stringListValues", value.asInstanceOf[js.Any])
+      inline def setStringListValues(value: js.Array[scala.Nothing]): Self = StObject.set(x, "stringListValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringListValuesVarargs(value: scala.Nothing*): Self = StObject.set(x, "stringListValues", js.Array(value :_*))
+      inline def setStringListValuesVarargs(value: scala.Nothing*): Self = StObject.set(x, "stringListValues", js.Array(value :_*))
       
-      @scala.inline
-      def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
+      inline def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
+      inline def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
     }
   }
   
@@ -123,8 +108,7 @@ object sqsMod {
   }
   object SQSRecord {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attributes: SQSRecordAttributes,
       awsRegion: String,
       body: String,
@@ -139,35 +123,25 @@ object sqsMod {
       __obj.asInstanceOf[SQSRecord]
     }
     
-    @scala.inline
-    implicit class SQSRecordMutableBuilder[Self <: SQSRecord] (val x: Self) extends AnyVal {
+    extension [Self <: SQSRecord](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: SQSRecordAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: SQSRecordAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAwsRegion(value: String): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
+      inline def setAwsRegion(value: String): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventSource(value: String): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
+      inline def setEventSource(value: String): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventSourceARN(value: String): Self = StObject.set(x, "eventSourceARN", value.asInstanceOf[js.Any])
+      inline def setEventSourceARN(value: String): Self = StObject.set(x, "eventSourceARN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMd5OfBody(value: String): Self = StObject.set(x, "md5OfBody", value.asInstanceOf[js.Any])
+      inline def setMd5OfBody(value: String): Self = StObject.set(x, "md5OfBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageAttributes(value: SQSMessageAttributes): Self = StObject.set(x, "messageAttributes", value.asInstanceOf[js.Any])
+      inline def setMessageAttributes(value: SQSMessageAttributes): Self = StObject.set(x, "messageAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+      inline def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReceiptHandle(value: String): Self = StObject.set(x, "receiptHandle", value.asInstanceOf[js.Any])
+      inline def setReceiptHandle(value: String): Self = StObject.set(x, "receiptHandle", value.asInstanceOf[js.Any])
     }
   }
   
@@ -191,8 +165,7 @@ object sqsMod {
   }
   object SQSRecordAttributes {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ApproximateFirstReceiveTimestamp: String,
       ApproximateReceiveCount: String,
       SenderId: String,
@@ -202,44 +175,31 @@ object sqsMod {
       __obj.asInstanceOf[SQSRecordAttributes]
     }
     
-    @scala.inline
-    implicit class SQSRecordAttributesMutableBuilder[Self <: SQSRecordAttributes] (val x: Self) extends AnyVal {
+    extension [Self <: SQSRecordAttributes](x: Self) {
       
-      @scala.inline
-      def setAWSTraceHeader(value: String): Self = StObject.set(x, "AWSTraceHeader", value.asInstanceOf[js.Any])
+      inline def setAWSTraceHeader(value: String): Self = StObject.set(x, "AWSTraceHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAWSTraceHeaderUndefined: Self = StObject.set(x, "AWSTraceHeader", js.undefined)
+      inline def setAWSTraceHeaderUndefined: Self = StObject.set(x, "AWSTraceHeader", js.undefined)
       
-      @scala.inline
-      def setApproximateFirstReceiveTimestamp(value: String): Self = StObject.set(x, "ApproximateFirstReceiveTimestamp", value.asInstanceOf[js.Any])
+      inline def setApproximateFirstReceiveTimestamp(value: String): Self = StObject.set(x, "ApproximateFirstReceiveTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApproximateReceiveCount(value: String): Self = StObject.set(x, "ApproximateReceiveCount", value.asInstanceOf[js.Any])
+      inline def setApproximateReceiveCount(value: String): Self = StObject.set(x, "ApproximateReceiveCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageDeduplicationId(value: String): Self = StObject.set(x, "MessageDeduplicationId", value.asInstanceOf[js.Any])
+      inline def setMessageDeduplicationId(value: String): Self = StObject.set(x, "MessageDeduplicationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageDeduplicationIdUndefined: Self = StObject.set(x, "MessageDeduplicationId", js.undefined)
+      inline def setMessageDeduplicationIdUndefined: Self = StObject.set(x, "MessageDeduplicationId", js.undefined)
       
-      @scala.inline
-      def setMessageGroupId(value: String): Self = StObject.set(x, "MessageGroupId", value.asInstanceOf[js.Any])
+      inline def setMessageGroupId(value: String): Self = StObject.set(x, "MessageGroupId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageGroupIdUndefined: Self = StObject.set(x, "MessageGroupId", js.undefined)
+      inline def setMessageGroupIdUndefined: Self = StObject.set(x, "MessageGroupId", js.undefined)
       
-      @scala.inline
-      def setSenderId(value: String): Self = StObject.set(x, "SenderId", value.asInstanceOf[js.Any])
+      inline def setSenderId(value: String): Self = StObject.set(x, "SenderId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSentTimestamp(value: String): Self = StObject.set(x, "SentTimestamp", value.asInstanceOf[js.Any])
+      inline def setSentTimestamp(value: String): Self = StObject.set(x, "SentTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSequenceNumber(value: String): Self = StObject.set(x, "SequenceNumber", value.asInstanceOf[js.Any])
+      inline def setSequenceNumber(value: String): Self = StObject.set(x, "SequenceNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSequenceNumberUndefined: Self = StObject.set(x, "SequenceNumber", js.undefined)
+      inline def setSequenceNumberUndefined: Self = StObject.set(x, "SequenceNumber", js.undefined)
     }
   }
   

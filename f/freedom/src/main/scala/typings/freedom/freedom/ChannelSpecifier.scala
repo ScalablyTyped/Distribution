@@ -17,19 +17,15 @@ trait ChannelSpecifier extends StObject {
 }
 object ChannelSpecifier {
   
-  @scala.inline
-  def apply(channel: Channel, identifier: String): ChannelSpecifier = {
+  inline def apply(channel: Channel, identifier: String): ChannelSpecifier = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], identifier = identifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelSpecifier]
   }
   
-  @scala.inline
-  implicit class ChannelSpecifierMutableBuilder[Self <: ChannelSpecifier] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelSpecifier](x: Self) {
     
-    @scala.inline
-    def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
   }
 }

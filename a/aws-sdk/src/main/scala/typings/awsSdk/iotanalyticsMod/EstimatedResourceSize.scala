@@ -18,25 +18,19 @@ trait EstimatedResourceSize extends StObject {
 }
 object EstimatedResourceSize {
   
-  @scala.inline
-  def apply(): EstimatedResourceSize = {
+  inline def apply(): EstimatedResourceSize = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EstimatedResourceSize]
   }
   
-  @scala.inline
-  implicit class EstimatedResourceSizeMutableBuilder[Self <: EstimatedResourceSize] (val x: Self) extends AnyVal {
+  extension [Self <: EstimatedResourceSize](x: Self) {
     
-    @scala.inline
-    def setEstimatedOn(value: Timestamp): Self = StObject.set(x, "estimatedOn", value.asInstanceOf[js.Any])
+    inline def setEstimatedOn(value: Timestamp): Self = StObject.set(x, "estimatedOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedOnUndefined: Self = StObject.set(x, "estimatedOn", js.undefined)
+    inline def setEstimatedOnUndefined: Self = StObject.set(x, "estimatedOn", js.undefined)
     
-    @scala.inline
-    def setEstimatedSizeInBytes(value: SizeInBytes): Self = StObject.set(x, "estimatedSizeInBytes", value.asInstanceOf[js.Any])
+    inline def setEstimatedSizeInBytes(value: SizeInBytes): Self = StObject.set(x, "estimatedSizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedSizeInBytesUndefined: Self = StObject.set(x, "estimatedSizeInBytes", js.undefined)
+    inline def setEstimatedSizeInBytesUndefined: Self = StObject.set(x, "estimatedSizeInBytes", js.undefined)
   }
 }

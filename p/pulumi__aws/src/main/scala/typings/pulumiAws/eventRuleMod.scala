@@ -111,21 +111,16 @@ object eventRuleMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): EventRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EventRule]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EventRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventRule]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EventRuleState): EventRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EventRule]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: EventRuleState, opts: CustomResourceOptions): EventRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventRule]
+    inline def get(name: String, id: Input[ID]): EventRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EventRule]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EventRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventRule]
+    inline def get(name: String, id: Input[ID], state: EventRuleState): EventRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EventRule]
+    inline def get(name: String, id: Input[ID], state: EventRuleState, opts: CustomResourceOptions): EventRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventRule]
     
     /**
       * Returns true if the given object is an instance of EventRule.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/eventRule.EventRule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudwatch/eventRule.EventRule */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/eventRule.EventRule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudwatch/eventRule.EventRule */ Boolean]
   }
   
   trait EventRuleArgs extends StObject {
@@ -177,68 +172,48 @@ object eventRuleMod {
   }
   object EventRuleArgs {
     
-    @scala.inline
-    def apply(): EventRuleArgs = {
+    inline def apply(): EventRuleArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EventRuleArgs]
     }
     
-    @scala.inline
-    implicit class EventRuleArgsMutableBuilder[Self <: EventRuleArgs] (val x: Self) extends AnyVal {
+    extension [Self <: EventRuleArgs](x: Self) {
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setEventBusName(value: Input[String]): Self = StObject.set(x, "eventBusName", value.asInstanceOf[js.Any])
+      inline def setEventBusName(value: Input[String]): Self = StObject.set(x, "eventBusName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventBusNameUndefined: Self = StObject.set(x, "eventBusName", js.undefined)
+      inline def setEventBusNameUndefined: Self = StObject.set(x, "eventBusName", js.undefined)
       
-      @scala.inline
-      def setEventPattern(value: Input[String]): Self = StObject.set(x, "eventPattern", value.asInstanceOf[js.Any])
+      inline def setEventPattern(value: Input[String]): Self = StObject.set(x, "eventPattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventPatternUndefined: Self = StObject.set(x, "eventPattern", js.undefined)
+      inline def setEventPatternUndefined: Self = StObject.set(x, "eventPattern", js.undefined)
       
-      @scala.inline
-      def setIsEnabled(value: Input[Boolean]): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+      inline def setIsEnabled(value: Input[Boolean]): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
+      inline def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
+      inline def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
+      inline def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+      inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
       
-      @scala.inline
-      def setScheduleExpression(value: Input[String]): Self = StObject.set(x, "scheduleExpression", value.asInstanceOf[js.Any])
+      inline def setScheduleExpression(value: Input[String]): Self = StObject.set(x, "scheduleExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheduleExpressionUndefined: Self = StObject.set(x, "scheduleExpression", js.undefined)
+      inline def setScheduleExpressionUndefined: Self = StObject.set(x, "scheduleExpression", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -296,74 +271,52 @@ object eventRuleMod {
   }
   object EventRuleState {
     
-    @scala.inline
-    def apply(): EventRuleState = {
+    inline def apply(): EventRuleState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EventRuleState]
     }
     
-    @scala.inline
-    implicit class EventRuleStateMutableBuilder[Self <: EventRuleState] (val x: Self) extends AnyVal {
+    extension [Self <: EventRuleState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setEventBusName(value: Input[String]): Self = StObject.set(x, "eventBusName", value.asInstanceOf[js.Any])
+      inline def setEventBusName(value: Input[String]): Self = StObject.set(x, "eventBusName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventBusNameUndefined: Self = StObject.set(x, "eventBusName", js.undefined)
+      inline def setEventBusNameUndefined: Self = StObject.set(x, "eventBusName", js.undefined)
       
-      @scala.inline
-      def setEventPattern(value: Input[String]): Self = StObject.set(x, "eventPattern", value.asInstanceOf[js.Any])
+      inline def setEventPattern(value: Input[String]): Self = StObject.set(x, "eventPattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventPatternUndefined: Self = StObject.set(x, "eventPattern", js.undefined)
+      inline def setEventPatternUndefined: Self = StObject.set(x, "eventPattern", js.undefined)
       
-      @scala.inline
-      def setIsEnabled(value: Input[Boolean]): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+      inline def setIsEnabled(value: Input[Boolean]): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
+      inline def setIsEnabledUndefined: Self = StObject.set(x, "isEnabled", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
+      inline def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
+      inline def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+      inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
       
-      @scala.inline
-      def setScheduleExpression(value: Input[String]): Self = StObject.set(x, "scheduleExpression", value.asInstanceOf[js.Any])
+      inline def setScheduleExpression(value: Input[String]): Self = StObject.set(x, "scheduleExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheduleExpressionUndefined: Self = StObject.set(x, "scheduleExpression", js.undefined)
+      inline def setScheduleExpressionUndefined: Self = StObject.set(x, "scheduleExpression", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

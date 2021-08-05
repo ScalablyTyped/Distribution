@@ -17,8 +17,7 @@ object logMod {
     * @param options
     * The options for creating the new logger.
     */
-  @scala.inline
-  def apply[TCategories /* <: String | Double | js.Symbol */](options: LoggerOptions[TCategories]): Logger[TCategories] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Logger[TCategories]]
+  inline def apply[TCategories /* <: String | Double | js.Symbol */](options: LoggerOptions[TCategories]): Logger[TCategories] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Logger[TCategories]]
   
   @JSImport("yeoman-environment/lib/util/log", JSImport.Namespace)
   @js.native
@@ -46,26 +45,19 @@ object logMod {
   trait DefaultCategories extends StObject
   object DefaultCategories {
     
-    @scala.inline
-    def conflict: typings.yeomanEnvironment.yeomanEnvironmentStrings.conflict = "conflict".asInstanceOf[typings.yeomanEnvironment.yeomanEnvironmentStrings.conflict]
+    inline def conflict: typings.yeomanEnvironment.yeomanEnvironmentStrings.conflict = "conflict".asInstanceOf[typings.yeomanEnvironment.yeomanEnvironmentStrings.conflict]
     
-    @scala.inline
-    def create: typings.yeomanEnvironment.yeomanEnvironmentStrings.create = "create".asInstanceOf[typings.yeomanEnvironment.yeomanEnvironmentStrings.create]
+    inline def create: typings.yeomanEnvironment.yeomanEnvironmentStrings.create = "create".asInstanceOf[typings.yeomanEnvironment.yeomanEnvironmentStrings.create]
     
-    @scala.inline
-    def force: typings.yeomanEnvironment.yeomanEnvironmentStrings.force = "force".asInstanceOf[typings.yeomanEnvironment.yeomanEnvironmentStrings.force]
+    inline def force: typings.yeomanEnvironment.yeomanEnvironmentStrings.force = "force".asInstanceOf[typings.yeomanEnvironment.yeomanEnvironmentStrings.force]
     
-    @scala.inline
-    def identical: typings.yeomanEnvironment.yeomanEnvironmentStrings.identical = "identical".asInstanceOf[typings.yeomanEnvironment.yeomanEnvironmentStrings.identical]
+    inline def identical: typings.yeomanEnvironment.yeomanEnvironmentStrings.identical = "identical".asInstanceOf[typings.yeomanEnvironment.yeomanEnvironmentStrings.identical]
     
-    @scala.inline
-    def info: typings.yeomanEnvironment.yeomanEnvironmentStrings.info = "info".asInstanceOf[typings.yeomanEnvironment.yeomanEnvironmentStrings.info]
+    inline def info: typings.yeomanEnvironment.yeomanEnvironmentStrings.info = "info".asInstanceOf[typings.yeomanEnvironment.yeomanEnvironmentStrings.info]
     
-    @scala.inline
-    def invoke: typings.yeomanEnvironment.yeomanEnvironmentStrings.invoke = "invoke".asInstanceOf[typings.yeomanEnvironment.yeomanEnvironmentStrings.invoke]
+    inline def invoke: typings.yeomanEnvironment.yeomanEnvironmentStrings.invoke = "invoke".asInstanceOf[typings.yeomanEnvironment.yeomanEnvironmentStrings.invoke]
     
-    @scala.inline
-    def skip: typings.yeomanEnvironment.yeomanEnvironmentStrings.skip = "skip".asInstanceOf[typings.yeomanEnvironment.yeomanEnvironmentStrings.skip]
+    inline def skip: typings.yeomanEnvironment.yeomanEnvironmentStrings.skip = "skip".asInstanceOf[typings.yeomanEnvironment.yeomanEnvironmentStrings.skip]
   }
   
   /**
@@ -100,38 +92,28 @@ object logMod {
   }
   object LoggerOptions {
     
-    @scala.inline
-    def apply[TCategories /* <: String | Double | js.Symbol */](): LoggerOptions[TCategories] = {
+    inline def apply[TCategories /* <: String | Double | js.Symbol */](): LoggerOptions[TCategories] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoggerOptions[TCategories]]
     }
     
-    @scala.inline
-    implicit class LoggerOptionsMutableBuilder[Self <: LoggerOptions[?], TCategories /* <: String | Double | js.Symbol */] (val x: Self & LoggerOptions[TCategories]) extends AnyVal {
+    extension [Self <: LoggerOptions[?], TCategories /* <: String | Double | js.Symbol */](x: Self & LoggerOptions[TCategories]) {
       
-      @scala.inline
-      def setColors(value: ColorMap[TCategories]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: ColorMap[TCategories]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+      inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
-      @scala.inline
-      def setConsole(value: Console): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
+      inline def setConsole(value: Console): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsoleUndefined: Self = StObject.set(x, "console", js.undefined)
+      inline def setConsoleUndefined: Self = StObject.set(x, "console", js.undefined)
       
-      @scala.inline
-      def setStderr(value: WriteStream): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
+      inline def setStderr(value: WriteStream): Self = StObject.set(x, "stderr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
+      inline def setStderrUndefined: Self = StObject.set(x, "stderr", js.undefined)
       
-      @scala.inline
-      def setStdout(value: WriteStream): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
+      inline def setStdout(value: WriteStream): Self = StObject.set(x, "stdout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
+      inline def setStdoutUndefined: Self = StObject.set(x, "stdout", js.undefined)
     }
   }
 }

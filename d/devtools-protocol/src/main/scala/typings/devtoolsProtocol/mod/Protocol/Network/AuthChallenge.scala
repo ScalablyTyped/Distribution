@@ -30,28 +30,21 @@ trait AuthChallenge extends StObject {
 }
 object AuthChallenge {
   
-  @scala.inline
-  def apply(origin: String, realm: String, scheme: String): AuthChallenge = {
+  inline def apply(origin: String, realm: String, scheme: String): AuthChallenge = {
     val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any], realm = realm.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthChallenge]
   }
   
-  @scala.inline
-  implicit class AuthChallengeMutableBuilder[Self <: AuthChallenge] (val x: Self) extends AnyVal {
+  extension [Self <: AuthChallenge](x: Self) {
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
+    inline def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+    inline def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: Server | Proxy): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Server | Proxy): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

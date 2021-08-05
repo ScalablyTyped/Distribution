@@ -14,13 +14,13 @@ object jestHooksMod {
     extends StObject
        with JestHooks {
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _emitter: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _listeners: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _subscriber: js.Any = js.native
     
     /* CompleteClass */
@@ -41,23 +41,20 @@ object jestHooksMod {
   trait AvailableHooks extends StObject
   object AvailableHooks {
     
-    @scala.inline
-    def onFileChange: typings.jestWatcher.jestWatcherStrings.onFileChange = "onFileChange".asInstanceOf[typings.jestWatcher.jestWatcherStrings.onFileChange]
+    inline def onFileChange: typings.jestWatcher.jestWatcherStrings.onFileChange = "onFileChange".asInstanceOf[typings.jestWatcher.jestWatcherStrings.onFileChange]
     
-    @scala.inline
-    def onTestRunComplete: typings.jestWatcher.jestWatcherStrings.onTestRunComplete = "onTestRunComplete".asInstanceOf[typings.jestWatcher.jestWatcherStrings.onTestRunComplete]
+    inline def onTestRunComplete: typings.jestWatcher.jestWatcherStrings.onTestRunComplete = "onTestRunComplete".asInstanceOf[typings.jestWatcher.jestWatcherStrings.onTestRunComplete]
     
-    @scala.inline
-    def shouldRunTestSuite: typings.jestWatcher.jestWatcherStrings.shouldRunTestSuite = "shouldRunTestSuite".asInstanceOf[typings.jestWatcher.jestWatcherStrings.shouldRunTestSuite]
+    inline def shouldRunTestSuite: typings.jestWatcher.jestWatcherStrings.shouldRunTestSuite = "shouldRunTestSuite".asInstanceOf[typings.jestWatcher.jestWatcherStrings.shouldRunTestSuite]
   }
   
   trait JestHooks extends StObject {
     
-    var _emitter: js.Any
+    /* private */ var _emitter: js.Any
     
-    var _listeners: js.Any
+    /* private */ var _listeners: js.Any
     
-    var _subscriber: js.Any
+    /* private */ var _subscriber: js.Any
     
     def getEmitter(): ReadonlyJestHookEmitter
     
@@ -67,8 +64,7 @@ object jestHooksMod {
   }
   object JestHooks {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _emitter: js.Any,
       _listeners: js.Any,
       _subscriber: js.Any,
@@ -80,26 +76,19 @@ object jestHooksMod {
       __obj.asInstanceOf[JestHooks]
     }
     
-    @scala.inline
-    implicit class JestHooksMutableBuilder[Self <: JestHooks] (val x: Self) extends AnyVal {
+    extension [Self <: JestHooks](x: Self) {
       
-      @scala.inline
-      def setGetEmitter(value: () => ReadonlyJestHookEmitter): Self = StObject.set(x, "getEmitter", js.Any.fromFunction0(value))
+      inline def setGetEmitter(value: () => ReadonlyJestHookEmitter): Self = StObject.set(x, "getEmitter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSubscriber(value: () => ReadonlyJestHookSubscribe): Self = StObject.set(x, "getSubscriber", js.Any.fromFunction0(value))
+      inline def setGetSubscriber(value: () => ReadonlyJestHookSubscribe): Self = StObject.set(x, "getSubscriber", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsUsed(value: AvailableHooks => Boolean): Self = StObject.set(x, "isUsed", js.Any.fromFunction1(value))
+      inline def setIsUsed(value: AvailableHooks => Boolean): Self = StObject.set(x, "isUsed", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_emitter(value: js.Any): Self = StObject.set(x, "_emitter", value.asInstanceOf[js.Any])
+      inline def set_emitter(value: js.Any): Self = StObject.set(x, "_emitter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_listeners(value: js.Any): Self = StObject.set(x, "_listeners", value.asInstanceOf[js.Any])
+      inline def set_listeners(value: js.Any): Self = StObject.set(x, "_listeners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_subscriber(value: js.Any): Self = StObject.set(x, "_subscriber", value.asInstanceOf[js.Any])
+      inline def set_subscriber(value: js.Any): Self = StObject.set(x, "_subscriber", value.asInstanceOf[js.Any])
     }
   }
 }

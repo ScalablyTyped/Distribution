@@ -12,8 +12,7 @@ object defaultMenuItemRendererMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def defaultMenuItemRenderer(item: ValidMenuItem, key: String): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultMenuItemRenderer")(item.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  inline def defaultMenuItemRenderer(item: ValidMenuItem, key: String): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultMenuItemRenderer")(item.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
   
   type MenuItemRenderer = js.Function2[/* item */ ValidMenuItem, /* key */ String, ReactNode]
   
@@ -27,14 +26,12 @@ object defaultMenuItemRendererMod {
   trait _ValidMenuItem extends StObject
   object _ValidMenuItem {
     
-    @scala.inline
-    def MenuItemProps(): typings.reactMdMenu.menuItemMod.MenuItemProps = {
+    inline def MenuItemProps(): typings.reactMdMenu.menuItemMod.MenuItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.reactMdMenu.menuItemMod.MenuItemProps]
     }
     
-    @scala.inline
-    def MenuItemSeparatorPropsrol(role: js.UndefOr[String] & separator): typings.reactMdMenu.anon.MenuItemSeparatorPropsrol = {
+    inline def MenuItemSeparatorPropsrol(role: js.UndefOr[String] & separator): typings.reactMdMenu.anon.MenuItemSeparatorPropsrol = {
       val __obj = js.Dynamic.literal(role = role.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.reactMdMenu.anon.MenuItemSeparatorPropsrol]
     }

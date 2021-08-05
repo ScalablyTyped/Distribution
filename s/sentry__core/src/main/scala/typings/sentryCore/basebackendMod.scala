@@ -22,7 +22,7 @@ object basebackendMod {
     def this(options: O) = this()
     
     /** Options passed to the SDK. */
-    val _options: O = js.native
+    /* protected */ val _options: O = js.native
     
     /**
       * Sets up the transport so it can be used later to send requests.
@@ -30,7 +30,7 @@ object basebackendMod {
     /* protected */ def _setupTransport(): Transport = js.native
     
     /** Cached transport used internally. */
-    var _transport: Transport = js.native
+    /* protected */ var _transport: Transport = js.native
   }
   
   @js.native

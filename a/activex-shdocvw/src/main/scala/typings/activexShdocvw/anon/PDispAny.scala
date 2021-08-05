@@ -10,16 +10,13 @@ trait PDispAny extends StObject {
 }
 object PDispAny {
   
-  @scala.inline
-  def apply(pDisp: js.Any): PDispAny = {
+  inline def apply(pDisp: js.Any): PDispAny = {
     val __obj = js.Dynamic.literal(pDisp = pDisp.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDispAny]
   }
   
-  @scala.inline
-  implicit class PDispAnyMutableBuilder[Self <: PDispAny] (val x: Self) extends AnyVal {
+  extension [Self <: PDispAny](x: Self) {
     
-    @scala.inline
-    def setPDisp(value: js.Any): Self = StObject.set(x, "pDisp", value.asInstanceOf[js.Any])
+    inline def setPDisp(value: js.Any): Self = StObject.set(x, "pDisp", value.asInstanceOf[js.Any])
   }
 }

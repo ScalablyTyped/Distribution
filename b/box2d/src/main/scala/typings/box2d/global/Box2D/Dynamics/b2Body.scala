@@ -22,8 +22,7 @@ object b2Body {
   @JSGlobal("Box2D.Dynamics.b2Body.b2_dynamicBody")
   @js.native
   def b2_dynamicBody: Double = js.native
-  @scala.inline
-  def b2_dynamicBody_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("b2_dynamicBody")(x.asInstanceOf[js.Any])
+  inline def b2_dynamicBody_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("b2_dynamicBody")(x.asInstanceOf[js.Any])
   
   /**
     * Kinematic Body
@@ -31,8 +30,7 @@ object b2Body {
   @JSGlobal("Box2D.Dynamics.b2Body.b2_kinematicBody")
   @js.native
   def b2_kinematicBody: Double = js.native
-  @scala.inline
-  def b2_kinematicBody_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("b2_kinematicBody")(x.asInstanceOf[js.Any])
+  inline def b2_kinematicBody_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("b2_kinematicBody")(x.asInstanceOf[js.Any])
   
   /**
     * Static Body
@@ -40,6 +38,5 @@ object b2Body {
   @JSGlobal("Box2D.Dynamics.b2Body.b2_staticBody")
   @js.native
   def b2_staticBody: Double = js.native
-  @scala.inline
-  def b2_staticBody_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("b2_staticBody")(x.asInstanceOf[js.Any])
+  inline def b2_staticBody_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("b2_staticBody")(x.asInstanceOf[js.Any])
 }

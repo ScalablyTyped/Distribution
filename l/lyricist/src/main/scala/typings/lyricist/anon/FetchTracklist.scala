@@ -13,25 +13,19 @@ trait FetchTracklist extends StObject {
 }
 object FetchTracklist {
   
-  @scala.inline
-  def apply(): FetchTracklist = {
+  inline def apply(): FetchTracklist = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FetchTracklist]
   }
   
-  @scala.inline
-  implicit class FetchTracklistMutableBuilder[Self <: FetchTracklist] (val x: Self) extends AnyVal {
+  extension [Self <: FetchTracklist](x: Self) {
     
-    @scala.inline
-    def setFetchTracklist(value: Boolean): Self = StObject.set(x, "fetchTracklist", value.asInstanceOf[js.Any])
+    inline def setFetchTracklist(value: Boolean): Self = StObject.set(x, "fetchTracklist", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFetchTracklistUndefined: Self = StObject.set(x, "fetchTracklist", js.undefined)
+    inline def setFetchTracklistUndefined: Self = StObject.set(x, "fetchTracklist", js.undefined)
     
-    @scala.inline
-    def setTextFormat(value: LyricistTextFormat): Self = StObject.set(x, "textFormat", value.asInstanceOf[js.Any])
+    inline def setTextFormat(value: LyricistTextFormat): Self = StObject.set(x, "textFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextFormatUndefined: Self = StObject.set(x, "textFormat", js.undefined)
+    inline def setTextFormatUndefined: Self = StObject.set(x, "textFormat", js.undefined)
   }
 }

@@ -48,55 +48,39 @@ trait GetTimeSeriesServiceStatisticsRequest extends StObject {
 }
 object GetTimeSeriesServiceStatisticsRequest {
   
-  @scala.inline
-  def apply(EndTime: Timestamp, StartTime: Timestamp): GetTimeSeriesServiceStatisticsRequest = {
+  inline def apply(EndTime: Timestamp, StartTime: Timestamp): GetTimeSeriesServiceStatisticsRequest = {
     val __obj = js.Dynamic.literal(EndTime = EndTime.asInstanceOf[js.Any], StartTime = StartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTimeSeriesServiceStatisticsRequest]
   }
   
-  @scala.inline
-  implicit class GetTimeSeriesServiceStatisticsRequestMutableBuilder[Self <: GetTimeSeriesServiceStatisticsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetTimeSeriesServiceStatisticsRequest](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitySelectorExpression(value: EntitySelectorExpression): Self = StObject.set(x, "EntitySelectorExpression", value.asInstanceOf[js.Any])
+    inline def setEntitySelectorExpression(value: EntitySelectorExpression): Self = StObject.set(x, "EntitySelectorExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitySelectorExpressionUndefined: Self = StObject.set(x, "EntitySelectorExpression", js.undefined)
+    inline def setEntitySelectorExpressionUndefined: Self = StObject.set(x, "EntitySelectorExpression", js.undefined)
     
-    @scala.inline
-    def setForecastStatistics(value: NullableBoolean): Self = StObject.set(x, "ForecastStatistics", value.asInstanceOf[js.Any])
+    inline def setForecastStatistics(value: NullableBoolean): Self = StObject.set(x, "ForecastStatistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForecastStatisticsUndefined: Self = StObject.set(x, "ForecastStatistics", js.undefined)
+    inline def setForecastStatisticsUndefined: Self = StObject.set(x, "ForecastStatistics", js.undefined)
     
-    @scala.inline
-    def setGroupARN(value: GroupARN): Self = StObject.set(x, "GroupARN", value.asInstanceOf[js.Any])
+    inline def setGroupARN(value: GroupARN): Self = StObject.set(x, "GroupARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupARNUndefined: Self = StObject.set(x, "GroupARN", js.undefined)
+    inline def setGroupARNUndefined: Self = StObject.set(x, "GroupARN", js.undefined)
     
-    @scala.inline
-    def setGroupName(value: GroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: GroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
+    inline def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPeriod(value: NullableInteger): Self = StObject.set(x, "Period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: NullableInteger): Self = StObject.set(x, "Period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "Period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "Period", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
   }
 }

@@ -12,16 +12,13 @@ trait DataArgs
 }
 object DataArgs {
   
-  @scala.inline
-  def apply(argsDict: Dict, argsList: js.Array[js.Any], details: Dict): DataArgs = {
+  inline def apply(argsDict: Dict, argsList: js.Array[js.Any], details: Dict): DataArgs = {
     val __obj = js.Dynamic.literal(argsDict = argsDict.asInstanceOf[js.Any], argsList = argsList.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataArgs]
   }
   
-  @scala.inline
-  implicit class DataArgsMutableBuilder[Self <: DataArgs] (val x: Self) extends AnyVal {
+  extension [Self <: DataArgs](x: Self) {
     
-    @scala.inline
-    def setDetails(value: Dict): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: Dict): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
   }
 }

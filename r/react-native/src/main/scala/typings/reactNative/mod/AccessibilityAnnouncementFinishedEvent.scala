@@ -13,19 +13,15 @@ trait AccessibilityAnnouncementFinishedEvent extends StObject {
 }
 object AccessibilityAnnouncementFinishedEvent {
   
-  @scala.inline
-  def apply(announcement: String, success: Boolean): AccessibilityAnnouncementFinishedEvent = {
+  inline def apply(announcement: String, success: Boolean): AccessibilityAnnouncementFinishedEvent = {
     val __obj = js.Dynamic.literal(announcement = announcement.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessibilityAnnouncementFinishedEvent]
   }
   
-  @scala.inline
-  implicit class AccessibilityAnnouncementFinishedEventMutableBuilder[Self <: AccessibilityAnnouncementFinishedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: AccessibilityAnnouncementFinishedEvent](x: Self) {
     
-    @scala.inline
-    def setAnnouncement(value: String): Self = StObject.set(x, "announcement", value.asInstanceOf[js.Any])
+    inline def setAnnouncement(value: String): Self = StObject.set(x, "announcement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }
 }

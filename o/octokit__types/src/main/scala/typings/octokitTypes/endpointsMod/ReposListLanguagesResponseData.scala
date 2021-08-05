@@ -12,19 +12,15 @@ trait ReposListLanguagesResponseData extends StObject {
 }
 object ReposListLanguagesResponseData {
   
-  @scala.inline
-  def apply(C: Double, Python: Double): ReposListLanguagesResponseData = {
+  inline def apply(C: Double, Python: Double): ReposListLanguagesResponseData = {
     val __obj = js.Dynamic.literal(C = C.asInstanceOf[js.Any], Python = Python.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposListLanguagesResponseData]
   }
   
-  @scala.inline
-  implicit class ReposListLanguagesResponseDataMutableBuilder[Self <: ReposListLanguagesResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: ReposListLanguagesResponseData](x: Self) {
     
-    @scala.inline
-    def setC(value: Double): Self = StObject.set(x, "C", value.asInstanceOf[js.Any])
+    inline def setC(value: Double): Self = StObject.set(x, "C", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPython(value: Double): Self = StObject.set(x, "Python", value.asInstanceOf[js.Any])
+    inline def setPython(value: Double): Self = StObject.set(x, "Python", value.asInstanceOf[js.Any])
   }
 }

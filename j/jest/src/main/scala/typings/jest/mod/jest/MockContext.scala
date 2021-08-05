@@ -19,8 +19,7 @@ trait MockContext[T, Y /* <: js.Array[js.Any] */] extends StObject {
 }
 object MockContext {
   
-  @scala.inline
-  def apply[T, Y /* <: js.Array[js.Any] */](
+  inline def apply[T, Y /* <: js.Array[js.Any] */](
     calls: js.Array[Y],
     instances: js.Array[T],
     invocationCallOrder: js.Array[Double],
@@ -30,31 +29,22 @@ object MockContext {
     __obj.asInstanceOf[MockContext[T, Y]]
   }
   
-  @scala.inline
-  implicit class MockContextMutableBuilder[Self <: MockContext[?, ?], T, Y /* <: js.Array[js.Any] */] (val x: Self & (MockContext[T, Y])) extends AnyVal {
+  extension [Self <: MockContext[?, ?], T, Y /* <: js.Array[js.Any] */](x: Self & (MockContext[T, Y])) {
     
-    @scala.inline
-    def setCalls(value: js.Array[Y]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
+    inline def setCalls(value: js.Array[Y]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallsVarargs(value: Y*): Self = StObject.set(x, "calls", js.Array(value :_*))
+    inline def setCallsVarargs(value: Y*): Self = StObject.set(x, "calls", js.Array(value :_*))
     
-    @scala.inline
-    def setInstances(value: js.Array[T]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+    inline def setInstances(value: js.Array[T]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesVarargs(value: T*): Self = StObject.set(x, "instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: T*): Self = StObject.set(x, "instances", js.Array(value :_*))
     
-    @scala.inline
-    def setInvocationCallOrder(value: js.Array[Double]): Self = StObject.set(x, "invocationCallOrder", value.asInstanceOf[js.Any])
+    inline def setInvocationCallOrder(value: js.Array[Double]): Self = StObject.set(x, "invocationCallOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvocationCallOrderVarargs(value: Double*): Self = StObject.set(x, "invocationCallOrder", js.Array(value :_*))
+    inline def setInvocationCallOrderVarargs(value: Double*): Self = StObject.set(x, "invocationCallOrder", js.Array(value :_*))
     
-    @scala.inline
-    def setResults(value: js.Array[MockResult[T]]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[MockResult[T]]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsVarargs(value: MockResult[T]*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: MockResult[T]*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

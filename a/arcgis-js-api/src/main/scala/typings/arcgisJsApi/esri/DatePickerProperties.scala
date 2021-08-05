@@ -31,31 +31,23 @@ trait DatePickerProperties
 }
 object DatePickerProperties {
   
-  @scala.inline
-  def apply(): DatePickerProperties = {
+  inline def apply(): DatePickerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DatePickerProperties]
   }
   
-  @scala.inline
-  implicit class DatePickerPropertiesMutableBuilder[Self <: DatePickerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: DatePickerProperties](x: Self) {
     
-    @scala.inline
-    def setCommitOnMonthChange(value: Boolean): Self = StObject.set(x, "commitOnMonthChange", value.asInstanceOf[js.Any])
+    inline def setCommitOnMonthChange(value: Boolean): Self = StObject.set(x, "commitOnMonthChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitOnMonthChangeUndefined: Self = StObject.set(x, "commitOnMonthChange", js.undefined)
+    inline def setCommitOnMonthChangeUndefined: Self = StObject.set(x, "commitOnMonthChange", js.undefined)
     
-    @scala.inline
-    def setValue(value: DateProperties): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: DateProperties): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    @scala.inline
-    def setViewModel(value: DatePickerViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
+    inline def setViewModel(value: DatePickerViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
+    inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
   }
 }

@@ -13,22 +13,17 @@ trait Driver extends StObject {
 }
 object Driver {
   
-  @scala.inline
-  def apply(Name: String): Driver = {
+  inline def apply(Name: String): Driver = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Driver]
   }
   
-  @scala.inline
-  implicit class DriverMutableBuilder[Self <: Driver] (val x: Self) extends AnyVal {
+  extension [Self <: Driver](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: StringDictionary[String]): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: StringDictionary[String]): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "Options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "Options", js.undefined)
   }
 }

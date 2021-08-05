@@ -37,39 +37,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StandardControlType extends StObject
 object StandardControlType {
   
-  @scala.inline
-  def IFrame: iframe = "iframe".asInstanceOf[iframe]
+  inline def IFrame: iframe = "iframe".asInstanceOf[iframe]
   
-  @scala.inline
-  def KBSearch: kbsearch = "kbsearch".asInstanceOf[kbsearch]
+  inline def KBSearch: kbsearch = "kbsearch".asInstanceOf[kbsearch]
   
-  @scala.inline
-  def Lookup: lookup = "lookup".asInstanceOf[lookup]
+  inline def Lookup: lookup = "lookup".asInstanceOf[lookup]
   
-  @scala.inline
-  def MultiSelectOptionSet: multiselectoptionset = "multiselectoptionset".asInstanceOf[multiselectoptionset]
+  inline def MultiSelectOptionSet: multiselectoptionset = "multiselectoptionset".asInstanceOf[multiselectoptionset]
   
-  @scala.inline
-  def Notes: notes = "notes".asInstanceOf[notes]
+  inline def Notes: notes = "notes".asInstanceOf[notes]
   
-  @scala.inline
-  def OptionSet: optionset = "optionset".asInstanceOf[optionset]
+  inline def OptionSet: optionset = "optionset".asInstanceOf[optionset]
   
-  @scala.inline
-  def QuickForm: quickform = "quickform".asInstanceOf[quickform]
+  inline def QuickForm: quickform = "quickform".asInstanceOf[quickform]
   
-  @scala.inline
-  def Standard: standard = "standard".asInstanceOf[standard]
+  inline def Standard: standard = "standard".asInstanceOf[standard]
   
-  @scala.inline
-  def SubGrid: subgrid = "subgrid".asInstanceOf[subgrid]
+  inline def SubGrid: subgrid = "subgrid".asInstanceOf[subgrid]
   
-  @scala.inline
-  def TimeLineWall: timelinewall = "timelinewall".asInstanceOf[timelinewall]
+  inline def TimeLineWall: timelinewall = "timelinewall".asInstanceOf[timelinewall]
   
-  @scala.inline
-  def TimerControl: timercontrol = "timercontrol".asInstanceOf[timercontrol]
+  inline def TimerControl: timercontrol = "timercontrol".asInstanceOf[timercontrol]
   
-  @scala.inline
-  def WebResource: webresource = "webresource".asInstanceOf[webresource]
+  inline def WebResource: webresource = "webresource".asInstanceOf[webresource]
 }

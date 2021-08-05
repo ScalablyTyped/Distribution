@@ -11,8 +11,7 @@ object asyncMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[State, Raw](config: AsyncEncryptorConfig): Transform[State, Raw, js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[Transform[State, Raw, js.Any, js.Any]]
+  inline def default[State, Raw](config: AsyncEncryptorConfig): Transform[State, Raw, js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[Transform[State, Raw, js.Any, js.Any]]
   
   trait AsyncEncryptorConfig extends StObject {
     
@@ -20,17 +19,14 @@ object asyncMod {
   }
   object AsyncEncryptorConfig {
     
-    @scala.inline
-    def apply(secretKey: String): AsyncEncryptorConfig = {
+    inline def apply(secretKey: String): AsyncEncryptorConfig = {
       val __obj = js.Dynamic.literal(secretKey = secretKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[AsyncEncryptorConfig]
     }
     
-    @scala.inline
-    implicit class AsyncEncryptorConfigMutableBuilder[Self <: AsyncEncryptorConfig] (val x: Self) extends AnyVal {
+    extension [Self <: AsyncEncryptorConfig](x: Self) {
       
-      @scala.inline
-      def setSecretKey(value: String): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
+      inline def setSecretKey(value: String): Self = StObject.set(x, "secretKey", value.asInstanceOf[js.Any])
     }
   }
 }

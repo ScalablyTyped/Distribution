@@ -18,19 +18,15 @@ trait CloudwatchLogsAction extends StObject {
 }
 object CloudwatchLogsAction {
   
-  @scala.inline
-  def apply(logGroupName: LogGroupName, roleArn: AwsArn): CloudwatchLogsAction = {
+  inline def apply(logGroupName: LogGroupName, roleArn: AwsArn): CloudwatchLogsAction = {
     val __obj = js.Dynamic.literal(logGroupName = logGroupName.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudwatchLogsAction]
   }
   
-  @scala.inline
-  implicit class CloudwatchLogsActionMutableBuilder[Self <: CloudwatchLogsAction] (val x: Self) extends AnyVal {
+  extension [Self <: CloudwatchLogsAction](x: Self) {
     
-    @scala.inline
-    def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
+    inline def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }
 }

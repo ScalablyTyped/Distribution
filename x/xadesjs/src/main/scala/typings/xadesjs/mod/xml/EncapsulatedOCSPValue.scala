@@ -13,6 +13,5 @@ class EncapsulatedOCSPValue ()
   extends typings.xadesjs.xmlMod.EncapsulatedOCSPValue
 object EncapsulatedOCSPValue {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.EncapsulatedOCSPValue] = ^.asInstanceOf[js.Dynamic].selectDynamic("EncapsulatedOCSPValue").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.EncapsulatedOCSPValue]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.EncapsulatedOCSPValue] = ^.asInstanceOf[js.Dynamic].selectDynamic("EncapsulatedOCSPValue").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.EncapsulatedOCSPValue]]
 }

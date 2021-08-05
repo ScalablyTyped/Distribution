@@ -10,8 +10,7 @@ trait `0` extends StObject {
 }
 object `0` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `0`: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, any> */ js.Any
   ): `0` = {
     val __obj = js.Dynamic.literal()
@@ -19,11 +18,9 @@ object `0` {
     __obj.asInstanceOf[`0`]
   }
   
-  @scala.inline
-  implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+  extension [Self <: `0`](x: Self) {
     
-    @scala.inline
-    def set0(
+    inline def set0(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, any> */ js.Any
     ): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
   }

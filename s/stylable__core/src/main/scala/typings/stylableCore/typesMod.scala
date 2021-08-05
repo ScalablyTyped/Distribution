@@ -53,8 +53,7 @@ object typesMod {
   }
   object IStylableNamespaceOptimizer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getNamespace: (StylableMeta, /* repeated */ js.Any) => String,
       index: Double,
       namespaceMapping: Record[String, String],
@@ -64,20 +63,15 @@ object typesMod {
       __obj.asInstanceOf[IStylableNamespaceOptimizer]
     }
     
-    @scala.inline
-    implicit class IStylableNamespaceOptimizerMutableBuilder[Self <: IStylableNamespaceOptimizer] (val x: Self) extends AnyVal {
+    extension [Self <: IStylableNamespaceOptimizer](x: Self) {
       
-      @scala.inline
-      def setGetNamespace(value: (StylableMeta, /* repeated */ js.Any) => String): Self = StObject.set(x, "getNamespace", js.Any.fromFunction2(value))
+      inline def setGetNamespace(value: (StylableMeta, /* repeated */ js.Any) => String): Self = StObject.set(x, "getNamespace", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceMapping(value: Record[String, String]): Self = StObject.set(x, "namespaceMapping", value.asInstanceOf[js.Any])
+      inline def setNamespaceMapping(value: Record[String, String]): Self = StObject.set(x, "namespaceMapping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespacePrefix(value: String): Self = StObject.set(x, "namespacePrefix", value.asInstanceOf[js.Any])
+      inline def setNamespacePrefix(value: String): Self = StObject.set(x, "namespacePrefix", value.asInstanceOf[js.Any])
     }
   }
   
@@ -117,39 +111,29 @@ object typesMod {
   }
   object ParsedValue {
     
-    @scala.inline
-    def apply(`type`: String, value: String): ParsedValue = {
+    inline def apply(`type`: String, value: String): ParsedValue = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParsedValue]
     }
     
-    @scala.inline
-    implicit class ParsedValueMutableBuilder[Self <: ParsedValue] (val x: Self) extends AnyVal {
+    extension [Self <: ParsedValue](x: Self) {
       
-      @scala.inline
-      def setNodes(value: js.Any): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: js.Any): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
+      inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
       
-      @scala.inline
-      def setResolvedValue(value: String | (Box_[String, js.Any])): Self = StObject.set(x, "resolvedValue", value.asInstanceOf[js.Any])
+      inline def setResolvedValue(value: String | (Box_[String, js.Any])): Self = StObject.set(x, "resolvedValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolvedValueUndefined: Self = StObject.set(x, "resolvedValue", js.undefined)
+      inline def setResolvedValueUndefined: Self = StObject.set(x, "resolvedValue", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -167,30 +151,23 @@ object typesMod {
   }
   object StateParsedValue {
     
-    @scala.inline
-    def apply(arguments: StateArguments, `type`: String): StateParsedValue = {
+    inline def apply(arguments: StateArguments, `type`: String): StateParsedValue = {
       val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[StateParsedValue]
     }
     
-    @scala.inline
-    implicit class StateParsedValueMutableBuilder[Self <: StateParsedValue] (val x: Self) extends AnyVal {
+    extension [Self <: StateParsedValue](x: Self) {
       
-      @scala.inline
-      def setArguments(value: StateArguments): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+      inline def setArguments(value: StateArguments): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgumentsVarargs(value: (StateTypeValidator | String)*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+      inline def setArgumentsVarargs(value: (StateTypeValidator | String)*): Self = StObject.set(x, "arguments", js.Array(value :_*))
       
-      @scala.inline
-      def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -202,23 +179,18 @@ object typesMod {
   }
   object StateTypeValidator {
     
-    @scala.inline
-    def apply(args: js.Array[String], name: String): StateTypeValidator = {
+    inline def apply(args: js.Array[String], name: String): StateTypeValidator = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[StateTypeValidator]
     }
     
-    @scala.inline
-    implicit class StateTypeValidatorMutableBuilder[Self <: StateTypeValidator] (val x: Self) extends AnyVal {
+    extension [Self <: StateTypeValidator](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

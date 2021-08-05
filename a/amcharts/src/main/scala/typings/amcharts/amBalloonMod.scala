@@ -250,8 +250,7 @@ object amBalloonMod {
   }
   object AmBalloon {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       adjustBorderColor: Boolean,
       borderAlpha: Double,
       borderColor: String,
@@ -276,65 +275,45 @@ object amBalloonMod {
       __obj.asInstanceOf[AmBalloon]
     }
     
-    @scala.inline
-    implicit class AmBalloonMutableBuilder[Self <: AmBalloon] (val x: Self) extends AnyVal {
+    extension [Self <: AmBalloon](x: Self) {
       
-      @scala.inline
-      def setAdjustBorderColor(value: Boolean): Self = StObject.set(x, "adjustBorderColor", value.asInstanceOf[js.Any])
+      inline def setAdjustBorderColor(value: Boolean): Self = StObject.set(x, "adjustBorderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderAlpha(value: Double): Self = StObject.set(x, "borderAlpha", value.asInstanceOf[js.Any])
+      inline def setBorderAlpha(value: Double): Self = StObject.set(x, "borderAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+      inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderThickness(value: Double): Self = StObject.set(x, "borderThickness", value.asInstanceOf[js.Any])
+      inline def setBorderThickness(value: Double): Self = StObject.set(x, "borderThickness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCornerRadius(value: Double): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
+      inline def setCornerRadius(value: Double): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillAlpha(value: Double): Self = StObject.set(x, "fillAlpha", value.asInstanceOf[js.Any])
+      inline def setFillAlpha(value: Double): Self = StObject.set(x, "fillAlpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+      inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHorizontalPadding(value: Double): Self = StObject.set(x, "horizontalPadding", value.asInstanceOf[js.Any])
+      inline def setHorizontalPadding(value: Double): Self = StObject.set(x, "horizontalPadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerWidth(value: Double): Self = StObject.set(x, "pointerWidth", value.asInstanceOf[js.Any])
+      inline def setPointerWidth(value: Double): Self = StObject.set(x, "pointerWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetBounds(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "setBounds", js.Any.fromFunction4(value))
+      inline def setSetBounds(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "setBounds", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setSetPosition(value: (Double, Double) => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction2(value))
+      inline def setSetPosition(value: (Double, Double) => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setShow(value: String => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
+      inline def setShow(value: String => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShowBullet(value: Boolean): Self = StObject.set(x, "showBullet", value.asInstanceOf[js.Any])
+      inline def setShowBullet(value: Boolean): Self = StObject.set(x, "showBullet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+      inline def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextShadowColor(value: String): Self = StObject.set(x, "textShadowColor", value.asInstanceOf[js.Any])
+      inline def setTextShadowColor(value: String): Self = StObject.set(x, "textShadowColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalPadding(value: Double): Self = StObject.set(x, "verticalPadding", value.asInstanceOf[js.Any])
+      inline def setVerticalPadding(value: Double): Self = StObject.set(x, "verticalPadding", value.asInstanceOf[js.Any])
     }
   }
 }

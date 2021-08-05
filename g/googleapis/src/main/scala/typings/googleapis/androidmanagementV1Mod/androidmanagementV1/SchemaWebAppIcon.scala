@@ -20,19 +20,15 @@ trait SchemaWebAppIcon extends StObject {
 }
 object SchemaWebAppIcon {
   
-  @scala.inline
-  def apply(): SchemaWebAppIcon = {
+  inline def apply(): SchemaWebAppIcon = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaWebAppIcon]
   }
   
-  @scala.inline
-  implicit class SchemaWebAppIconMutableBuilder[Self <: SchemaWebAppIcon] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaWebAppIcon](x: Self) {
     
-    @scala.inline
-    def setImageData(value: String): Self = StObject.set(x, "imageData", value.asInstanceOf[js.Any])
+    inline def setImageData(value: String): Self = StObject.set(x, "imageData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageDataUndefined: Self = StObject.set(x, "imageData", js.undefined)
+    inline def setImageDataUndefined: Self = StObject.set(x, "imageData", js.undefined)
   }
 }

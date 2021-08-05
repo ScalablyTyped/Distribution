@@ -19,22 +19,17 @@ object World {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def add(world: World, body: js.Array[Body | Composite | Constraint]): World = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(world.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[World]
+  inline def add(world: World, body: js.Array[Body | Composite | Constraint]): World = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(world.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[World]
   /**
     * Add objects or arrays of objects of types: Body, Constraint, Composite
     * @param world
     * @param body
     * @returns world
     */
-  @scala.inline
-  def add(world: World, body: Body): World = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(world.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[World]
-  @scala.inline
-  def add(world: World, body: Composite): World = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(world.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[World]
-  @scala.inline
-  def add(world: World, body: Constraint): World = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(world.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[World]
-  @scala.inline
-  def add(world: World, body: MouseConstraint): World = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(world.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[World]
+  inline def add(world: World, body: Body): World = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(world.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[World]
+  inline def add(world: World, body: Composite): World = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(world.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[World]
+  inline def add(world: World, body: Constraint): World = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(world.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[World]
+  inline def add(world: World, body: MouseConstraint): World = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(world.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[World]
   
   /**
     * An alias for Composite.addBody since World is also a Composite
@@ -43,8 +38,7 @@ object World {
     * @param {body} body
     * @return {world} The original world with the body added
     */
-  @scala.inline
-  def addBody(world: World, body: Body): World = (^.asInstanceOf[js.Dynamic].applyDynamic("addBody")(world.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[World]
+  inline def addBody(world: World, body: Body): World = (^.asInstanceOf[js.Dynamic].applyDynamic("addBody")(world.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[World]
   
   /**
     * An alias for Composite.add since World is also a Composite
@@ -53,8 +47,7 @@ object World {
     * @param {composite} composite
     * @return {world} The original world with the objects from composite added
     */
-  @scala.inline
-  def addComposite(world: World, composite: Composite): World = (^.asInstanceOf[js.Dynamic].applyDynamic("addComposite")(world.asInstanceOf[js.Any], composite.asInstanceOf[js.Any])).asInstanceOf[World]
+  inline def addComposite(world: World, composite: Composite): World = (^.asInstanceOf[js.Dynamic].applyDynamic("addComposite")(world.asInstanceOf[js.Any], composite.asInstanceOf[js.Any])).asInstanceOf[World]
   
   /**
     * An alias for Composite.addConstraint since World is also a Composite
@@ -63,8 +56,7 @@ object World {
     * @param {constraint} constraint
     * @return {world} The original world with the constraint added
     */
-  @scala.inline
-  def addConstraint(world: World, constraint: Constraint): World = (^.asInstanceOf[js.Dynamic].applyDynamic("addConstraint")(world.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any])).asInstanceOf[World]
+  inline def addConstraint(world: World, constraint: Constraint): World = (^.asInstanceOf[js.Dynamic].applyDynamic("addConstraint")(world.asInstanceOf[js.Any], constraint.asInstanceOf[js.Any])).asInstanceOf[World]
   
   /**
     * An alias for Composite.clear since World is also a Composite
@@ -72,8 +64,7 @@ object World {
     * @param {world} world
     * @param {boolean} keepStatic
     */
-  @scala.inline
-  def clear(world: World, keepStatic: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clear")(world.asInstanceOf[js.Any], keepStatic.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def clear(world: World, keepStatic: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clear")(world.asInstanceOf[js.Any], keepStatic.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Creates a new world composite. The options parameter is an object that specifies any properties you wish to override the defaults.
@@ -83,6 +74,5 @@ object World {
     * @param {} options
     * @return {world} A new world
     */
-  @scala.inline
-  def create(options: IWorldDefinition): World = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[World]
+  inline def create(options: IWorldDefinition): World = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[World]
 }

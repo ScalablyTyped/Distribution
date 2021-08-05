@@ -10,16 +10,13 @@ trait GetResourceActionId extends StObject {
 }
 object GetResourceActionId {
   
-  @scala.inline
-  def apply(request: () => js.Promise[ExportResponse]): GetResourceActionId = {
+  inline def apply(request: () => js.Promise[ExportResponse]): GetResourceActionId = {
     val __obj = js.Dynamic.literal(request = js.Any.fromFunction0(request))
     __obj.asInstanceOf[GetResourceActionId]
   }
   
-  @scala.inline
-  implicit class GetResourceActionIdMutableBuilder[Self <: GetResourceActionId] (val x: Self) extends AnyVal {
+  extension [Self <: GetResourceActionId](x: Self) {
     
-    @scala.inline
-    def setRequest(value: () => js.Promise[ExportResponse]): Self = StObject.set(x, "request", js.Any.fromFunction0(value))
+    inline def setRequest(value: () => js.Promise[ExportResponse]): Self = StObject.set(x, "request", js.Any.fromFunction0(value))
   }
 }

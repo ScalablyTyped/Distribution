@@ -30,8 +30,7 @@ trait RotateEventInfo
 }
 object RotateEventInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     angle: Double,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -43,13 +42,10 @@ object RotateEventInfo {
     __obj.asInstanceOf[RotateEventInfo]
   }
   
-  @scala.inline
-  implicit class RotateEventInfoMutableBuilder[Self <: RotateEventInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RotateEventInfo](x: Self) {
     
-    @scala.inline
-    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `rotate-start` | rotate | `rotate-stop`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `rotate-start` | rotate | `rotate-stop`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

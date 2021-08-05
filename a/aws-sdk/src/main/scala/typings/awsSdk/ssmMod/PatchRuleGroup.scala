@@ -13,19 +13,15 @@ trait PatchRuleGroup extends StObject {
 }
 object PatchRuleGroup {
   
-  @scala.inline
-  def apply(PatchRules: PatchRuleList): PatchRuleGroup = {
+  inline def apply(PatchRules: PatchRuleList): PatchRuleGroup = {
     val __obj = js.Dynamic.literal(PatchRules = PatchRules.asInstanceOf[js.Any])
     __obj.asInstanceOf[PatchRuleGroup]
   }
   
-  @scala.inline
-  implicit class PatchRuleGroupMutableBuilder[Self <: PatchRuleGroup] (val x: Self) extends AnyVal {
+  extension [Self <: PatchRuleGroup](x: Self) {
     
-    @scala.inline
-    def setPatchRules(value: PatchRuleList): Self = StObject.set(x, "PatchRules", value.asInstanceOf[js.Any])
+    inline def setPatchRules(value: PatchRuleList): Self = StObject.set(x, "PatchRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchRulesVarargs(value: PatchRule*): Self = StObject.set(x, "PatchRules", js.Array(value :_*))
+    inline def setPatchRulesVarargs(value: PatchRule*): Self = StObject.set(x, "PatchRules", js.Array(value :_*))
   }
 }

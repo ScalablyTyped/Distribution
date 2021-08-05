@@ -23,11 +23,9 @@ object loginState {
   trait ProfileType extends StObject
   object ProfileType {
     
-    @scala.inline
-    def SIGNIN_PROFILE: typings.chrome.chromeStrings.SIGNIN_PROFILE = "SIGNIN_PROFILE".asInstanceOf[typings.chrome.chromeStrings.SIGNIN_PROFILE]
+    inline def SIGNIN_PROFILE: typings.chrome.chromeStrings.SIGNIN_PROFILE = "SIGNIN_PROFILE".asInstanceOf[typings.chrome.chromeStrings.SIGNIN_PROFILE]
     
-    @scala.inline
-    def USER_PROFILE: typings.chrome.chromeStrings.USER_PROFILE = "USER_PROFILE".asInstanceOf[typings.chrome.chromeStrings.USER_PROFILE]
+    inline def USER_PROFILE: typings.chrome.chromeStrings.USER_PROFILE = "USER_PROFILE".asInstanceOf[typings.chrome.chromeStrings.USER_PROFILE]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -40,20 +38,15 @@ object loginState {
   trait SessionState extends StObject
   object SessionState {
     
-    @scala.inline
-    def IN_LOCK_SCREEN: typings.chrome.chromeStrings.IN_LOCK_SCREEN = "IN_LOCK_SCREEN".asInstanceOf[typings.chrome.chromeStrings.IN_LOCK_SCREEN]
+    inline def IN_LOCK_SCREEN: typings.chrome.chromeStrings.IN_LOCK_SCREEN = "IN_LOCK_SCREEN".asInstanceOf[typings.chrome.chromeStrings.IN_LOCK_SCREEN]
     
-    @scala.inline
-    def IN_LOGIN_SCREEN: typings.chrome.chromeStrings.IN_LOGIN_SCREEN = "IN_LOGIN_SCREEN".asInstanceOf[typings.chrome.chromeStrings.IN_LOGIN_SCREEN]
+    inline def IN_LOGIN_SCREEN: typings.chrome.chromeStrings.IN_LOGIN_SCREEN = "IN_LOGIN_SCREEN".asInstanceOf[typings.chrome.chromeStrings.IN_LOGIN_SCREEN]
     
-    @scala.inline
-    def IN_OOBE_SCREEN: typings.chrome.chromeStrings.IN_OOBE_SCREEN = "IN_OOBE_SCREEN".asInstanceOf[typings.chrome.chromeStrings.IN_OOBE_SCREEN]
+    inline def IN_OOBE_SCREEN: typings.chrome.chromeStrings.IN_OOBE_SCREEN = "IN_OOBE_SCREEN".asInstanceOf[typings.chrome.chromeStrings.IN_OOBE_SCREEN]
     
-    @scala.inline
-    def IN_SESSION: typings.chrome.chromeStrings.IN_SESSION = "IN_SESSION".asInstanceOf[typings.chrome.chromeStrings.IN_SESSION]
+    inline def IN_SESSION: typings.chrome.chromeStrings.IN_SESSION = "IN_SESSION".asInstanceOf[typings.chrome.chromeStrings.IN_SESSION]
     
-    @scala.inline
-    def UNKNOWN: typings.chrome.chromeStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.chrome.chromeStrings.UNKNOWN]
+    inline def UNKNOWN: typings.chrome.chromeStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.chrome.chromeStrings.UNKNOWN]
   }
   
   type SessionStateChangedEvent = Event[js.Function1[/* sessionState */ SessionState, Unit]]

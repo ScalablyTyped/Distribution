@@ -18,8 +18,7 @@ trait AgentNotebookInfo
 }
 object AgentNotebookInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alerts: js.Array[AgentAlertInfo],
     category: String,
     categoryId: Double,
@@ -56,19 +55,14 @@ object AgentNotebookInfo {
     __obj.asInstanceOf[AgentNotebookInfo]
   }
   
-  @scala.inline
-  implicit class AgentNotebookInfoMutableBuilder[Self <: AgentNotebookInfo] (val x: Self) extends AnyVal {
+  extension [Self <: AgentNotebookInfo](x: Self) {
     
-    @scala.inline
-    def setExecuteDatabase(value: String): Self = StObject.set(x, "executeDatabase", value.asInstanceOf[js.Any])
+    inline def setExecuteDatabase(value: String): Self = StObject.set(x, "executeDatabase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastRunNotebookError(value: String): Self = StObject.set(x, "lastRunNotebookError", value.asInstanceOf[js.Any])
+    inline def setLastRunNotebookError(value: String): Self = StObject.set(x, "lastRunNotebookError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetDatabase(value: String): Self = StObject.set(x, "targetDatabase", value.asInstanceOf[js.Any])
+    inline def setTargetDatabase(value: String): Self = StObject.set(x, "targetDatabase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateId(value: Double): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
+    inline def setTemplateId(value: Double): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
   }
 }

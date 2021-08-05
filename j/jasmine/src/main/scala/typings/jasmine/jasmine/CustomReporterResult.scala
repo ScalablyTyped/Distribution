@@ -22,52 +22,37 @@ trait CustomReporterResult extends StObject {
 }
 object CustomReporterResult {
   
-  @scala.inline
-  def apply(description: String, fullName: String, id: String): CustomReporterResult = {
+  inline def apply(description: String, fullName: String, id: String): CustomReporterResult = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], fullName = fullName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomReporterResult]
   }
   
-  @scala.inline
-  implicit class CustomReporterResultMutableBuilder[Self <: CustomReporterResult] (val x: Self) extends AnyVal {
+  extension [Self <: CustomReporterResult](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedExpectations(value: js.Array[FailedExpectation]): Self = StObject.set(x, "failedExpectations", value.asInstanceOf[js.Any])
+    inline def setFailedExpectations(value: js.Array[FailedExpectation]): Self = StObject.set(x, "failedExpectations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedExpectationsUndefined: Self = StObject.set(x, "failedExpectations", js.undefined)
+    inline def setFailedExpectationsUndefined: Self = StObject.set(x, "failedExpectations", js.undefined)
     
-    @scala.inline
-    def setFailedExpectationsVarargs(value: FailedExpectation*): Self = StObject.set(x, "failedExpectations", js.Array(value :_*))
+    inline def setFailedExpectationsVarargs(value: FailedExpectation*): Self = StObject.set(x, "failedExpectations", js.Array(value :_*))
     
-    @scala.inline
-    def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
+    inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassedExpectations(value: js.Array[PassedExpectation]): Self = StObject.set(x, "passedExpectations", value.asInstanceOf[js.Any])
+    inline def setPassedExpectations(value: js.Array[PassedExpectation]): Self = StObject.set(x, "passedExpectations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassedExpectationsUndefined: Self = StObject.set(x, "passedExpectations", js.undefined)
+    inline def setPassedExpectationsUndefined: Self = StObject.set(x, "passedExpectations", js.undefined)
     
-    @scala.inline
-    def setPassedExpectationsVarargs(value: PassedExpectation*): Self = StObject.set(x, "passedExpectations", js.Array(value :_*))
+    inline def setPassedExpectationsVarargs(value: PassedExpectation*): Self = StObject.set(x, "passedExpectations", js.Array(value :_*))
     
-    @scala.inline
-    def setPendingReason(value: String): Self = StObject.set(x, "pendingReason", value.asInstanceOf[js.Any])
+    inline def setPendingReason(value: String): Self = StObject.set(x, "pendingReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingReasonUndefined: Self = StObject.set(x, "pendingReason", js.undefined)
+    inline def setPendingReasonUndefined: Self = StObject.set(x, "pendingReason", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

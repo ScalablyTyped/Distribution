@@ -28,8 +28,7 @@ trait StartThingRegistrationTaskRequest extends StObject {
 }
 object StartThingRegistrationTaskRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     inputFileBucket: RegistryS3BucketName,
     inputFileKey: RegistryS3KeyName,
     roleArn: RoleArn,
@@ -39,19 +38,14 @@ object StartThingRegistrationTaskRequest {
     __obj.asInstanceOf[StartThingRegistrationTaskRequest]
   }
   
-  @scala.inline
-  implicit class StartThingRegistrationTaskRequestMutableBuilder[Self <: StartThingRegistrationTaskRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartThingRegistrationTaskRequest](x: Self) {
     
-    @scala.inline
-    def setInputFileBucket(value: RegistryS3BucketName): Self = StObject.set(x, "inputFileBucket", value.asInstanceOf[js.Any])
+    inline def setInputFileBucket(value: RegistryS3BucketName): Self = StObject.set(x, "inputFileBucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputFileKey(value: RegistryS3KeyName): Self = StObject.set(x, "inputFileKey", value.asInstanceOf[js.Any])
+    inline def setInputFileKey(value: RegistryS3KeyName): Self = StObject.set(x, "inputFileKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateBody(value: TemplateBody): Self = StObject.set(x, "templateBody", value.asInstanceOf[js.Any])
+    inline def setTemplateBody(value: TemplateBody): Self = StObject.set(x, "templateBody", value.asInstanceOf[js.Any])
   }
 }

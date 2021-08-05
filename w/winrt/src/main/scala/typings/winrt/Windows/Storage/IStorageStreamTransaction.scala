@@ -17,19 +17,15 @@ trait IStorageStreamTransaction
 }
 object IStorageStreamTransaction {
   
-  @scala.inline
-  def apply(close: () => Unit, commitAsync: () => IAsyncAction, stream: IRandomAccessStream): IStorageStreamTransaction = {
+  inline def apply(close: () => Unit, commitAsync: () => IAsyncAction, stream: IRandomAccessStream): IStorageStreamTransaction = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), commitAsync = js.Any.fromFunction0(commitAsync), stream = stream.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStorageStreamTransaction]
   }
   
-  @scala.inline
-  implicit class IStorageStreamTransactionMutableBuilder[Self <: IStorageStreamTransaction] (val x: Self) extends AnyVal {
+  extension [Self <: IStorageStreamTransaction](x: Self) {
     
-    @scala.inline
-    def setCommitAsync(value: () => IAsyncAction): Self = StObject.set(x, "commitAsync", js.Any.fromFunction0(value))
+    inline def setCommitAsync(value: () => IAsyncAction): Self = StObject.set(x, "commitAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStream(value: IRandomAccessStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+    inline def setStream(value: IRandomAccessStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
   }
 }

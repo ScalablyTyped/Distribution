@@ -10,16 +10,13 @@ trait IPublication extends StObject {
 }
 object IPublication {
   
-  @scala.inline
-  def apply(id: Double): IPublication = {
+  inline def apply(id: Double): IPublication = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPublication]
   }
   
-  @scala.inline
-  implicit class IPublicationMutableBuilder[Self <: IPublication] (val x: Self) extends AnyVal {
+  extension [Self <: IPublication](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

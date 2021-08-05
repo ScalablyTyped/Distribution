@@ -15,19 +15,15 @@ trait IdentifiedLanguage extends StObject {
 }
 object IdentifiedLanguage {
   
-  @scala.inline
-  def apply(confidence: Double, language: String): IdentifiedLanguage = {
+  inline def apply(confidence: Double, language: String): IdentifiedLanguage = {
     val __obj = js.Dynamic.literal(confidence = confidence.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdentifiedLanguage]
   }
   
-  @scala.inline
-  implicit class IdentifiedLanguageMutableBuilder[Self <: IdentifiedLanguage] (val x: Self) extends AnyVal {
+  extension [Self <: IdentifiedLanguage](x: Self) {
     
-    @scala.inline
-    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
   }
 }

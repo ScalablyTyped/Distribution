@@ -31,7 +31,7 @@ object dropdownContentDropdownContentMod {
     
     def isValidOptionForSelection(option: Option): Boolean = js.native
     
-    val mouseCoords: js.Any = js.native
+    /* private */ val mouseCoords: js.Any = js.native
     
     def onKeyDown(eventKey: String, evt: KeyboardEvent[HTMLElement]): Unit = js.native
     
@@ -43,7 +43,7 @@ object dropdownContentDropdownContentMod {
     
     def onOptionHover(): Unit = js.native
     
-    var optionsContainerRef: js.Any = js.native
+    /* private */ var optionsContainerRef: js.Any = js.native
     
     def setHoveredIndex(index: Double): Unit = js.native
     
@@ -60,8 +60,7 @@ object dropdownContentDropdownContentMod {
     @JSImport("wix-ui-core/dist/src/components/dropdown-content/DropdownContent", "DropdownContent.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -105,17 +104,14 @@ object dropdownContentDropdownContentMod {
   }
   object DropdownContentState {
     
-    @scala.inline
-    def apply(hoveredIndex: Double): DropdownContentState = {
+    inline def apply(hoveredIndex: Double): DropdownContentState = {
       val __obj = js.Dynamic.literal(hoveredIndex = hoveredIndex.asInstanceOf[js.Any])
       __obj.asInstanceOf[DropdownContentState]
     }
     
-    @scala.inline
-    implicit class DropdownContentStateMutableBuilder[Self <: DropdownContentState] (val x: Self) extends AnyVal {
+    extension [Self <: DropdownContentState](x: Self) {
       
-      @scala.inline
-      def setHoveredIndex(value: Double): Self = StObject.set(x, "hoveredIndex", value.asInstanceOf[js.Any])
+      inline def setHoveredIndex(value: Double): Self = StObject.set(x, "hoveredIndex", value.asInstanceOf[js.Any])
     }
   }
   
@@ -125,17 +121,14 @@ object dropdownContentDropdownContentMod {
   }
   object IDOMid {
     
-    @scala.inline
-    def apply(_DOMid: String): IDOMid = {
+    inline def apply(_DOMid: String): IDOMid = {
       val __obj = js.Dynamic.literal(_DOMid = _DOMid.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDOMid]
     }
     
-    @scala.inline
-    implicit class IDOMidMutableBuilder[Self <: IDOMid] (val x: Self) extends AnyVal {
+    extension [Self <: IDOMid](x: Self) {
       
-      @scala.inline
-      def set_DOMid(value: String): Self = StObject.set(x, "_DOMid", value.asInstanceOf[js.Any])
+      inline def set_DOMid(value: String): Self = StObject.set(x, "_DOMid", value.asInstanceOf[js.Any])
     }
   }
 }

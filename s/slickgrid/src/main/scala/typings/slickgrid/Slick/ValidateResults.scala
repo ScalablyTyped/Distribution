@@ -12,19 +12,15 @@ trait ValidateResults extends StObject {
 }
 object ValidateResults {
   
-  @scala.inline
-  def apply(msg: String, valid: Boolean): ValidateResults = {
+  inline def apply(msg: String, valid: Boolean): ValidateResults = {
     val __obj = js.Dynamic.literal(msg = msg.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidateResults]
   }
   
-  @scala.inline
-  implicit class ValidateResultsMutableBuilder[Self <: ValidateResults] (val x: Self) extends AnyVal {
+  extension [Self <: ValidateResults](x: Self) {
     
-    @scala.inline
-    def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+    inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+    inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
   }
 }

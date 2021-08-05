@@ -12,22 +12,17 @@ trait Flow extends StObject {
 }
 object Flow {
   
-  @scala.inline
-  def apply(flow: js.Object): Flow = {
+  inline def apply(flow: js.Object): Flow = {
     val __obj = js.Dynamic.literal(flow = flow.asInstanceOf[js.Any])
     __obj.asInstanceOf[Flow]
   }
   
-  @scala.inline
-  implicit class FlowMutableBuilder[Self <: Flow] (val x: Self) extends AnyVal {
+  extension [Self <: Flow](x: Self) {
     
-    @scala.inline
-    def setFlow(value: js.Object): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
+    inline def setFlow(value: js.Object): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReq(value: js.Object): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+    inline def setReq(value: js.Object): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
+    inline def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
   }
 }

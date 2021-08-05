@@ -27,52 +27,37 @@ trait OpenPointInTime
 }
 object OpenPointInTime {
   
-  @scala.inline
-  def apply(): OpenPointInTime = {
+  inline def apply(): OpenPointInTime = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OpenPointInTime]
   }
   
-  @scala.inline
-  implicit class OpenPointInTimeMutableBuilder[Self <: OpenPointInTime] (val x: Self) extends AnyVal {
+  extension [Self <: OpenPointInTime](x: Self) {
     
-    @scala.inline
-    def setExpand_wildcards(value: open | closed | hidden | none | all): Self = StObject.set(x, "expand_wildcards", value.asInstanceOf[js.Any])
+    inline def setExpand_wildcards(value: open | closed | hidden | none | all): Self = StObject.set(x, "expand_wildcards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpand_wildcardsUndefined: Self = StObject.set(x, "expand_wildcards", js.undefined)
+    inline def setExpand_wildcardsUndefined: Self = StObject.set(x, "expand_wildcards", js.undefined)
     
-    @scala.inline
-    def setIgnore_unavailable(value: Boolean): Self = StObject.set(x, "ignore_unavailable", value.asInstanceOf[js.Any])
+    inline def setIgnore_unavailable(value: Boolean): Self = StObject.set(x, "ignore_unavailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnore_unavailableUndefined: Self = StObject.set(x, "ignore_unavailable", js.undefined)
+    inline def setIgnore_unavailableUndefined: Self = StObject.set(x, "ignore_unavailable", js.undefined)
     
-    @scala.inline
-    def setIndex(value: String | js.Array[String]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: String | js.Array[String]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
+    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
     
-    @scala.inline
-    def setKeep_alive(value: String): Self = StObject.set(x, "keep_alive", value.asInstanceOf[js.Any])
+    inline def setKeep_alive(value: String): Self = StObject.set(x, "keep_alive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeep_aliveUndefined: Self = StObject.set(x, "keep_alive", js.undefined)
+    inline def setKeep_aliveUndefined: Self = StObject.set(x, "keep_alive", js.undefined)
     
-    @scala.inline
-    def setPreference(value: String): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
+    inline def setPreference(value: String): Self = StObject.set(x, "preference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferenceUndefined: Self = StObject.set(x, "preference", js.undefined)
+    inline def setPreferenceUndefined: Self = StObject.set(x, "preference", js.undefined)
     
-    @scala.inline
-    def setRouting(value: String): Self = StObject.set(x, "routing", value.asInstanceOf[js.Any])
+    inline def setRouting(value: String): Self = StObject.set(x, "routing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutingUndefined: Self = StObject.set(x, "routing", js.undefined)
+    inline def setRoutingUndefined: Self = StObject.set(x, "routing", js.undefined)
   }
 }

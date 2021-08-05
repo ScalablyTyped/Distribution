@@ -10,16 +10,13 @@ trait MenuBar extends StObject {
 }
 object MenuBar {
   
-  @scala.inline
-  def apply(MenuBar: Boolean): MenuBar = {
+  inline def apply(MenuBar: Boolean): MenuBar = {
     val __obj = js.Dynamic.literal(MenuBar = MenuBar.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuBar]
   }
   
-  @scala.inline
-  implicit class MenuBarMutableBuilder[Self <: MenuBar] (val x: Self) extends AnyVal {
+  extension [Self <: MenuBar](x: Self) {
     
-    @scala.inline
-    def setMenuBar(value: Boolean): Self = StObject.set(x, "MenuBar", value.asInstanceOf[js.Any])
+    inline def setMenuBar(value: Boolean): Self = StObject.set(x, "MenuBar", value.asInstanceOf[js.Any])
   }
 }

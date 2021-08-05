@@ -12,23 +12,18 @@ object matchShapeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def exact(`object`: StringDictionary[js.Any], shape: Shape): Boolean | String = (^.asInstanceOf[js.Dynamic].applyDynamic("exact")(`object`.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Boolean | String]
-  @scala.inline
-  def exact(`object`: StringDictionary[js.Any], shape: Shape, parent: String): Boolean | String = (^.asInstanceOf[js.Dynamic].applyDynamic("exact")(`object`.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Boolean | String]
+  inline def exact(`object`: StringDictionary[js.Any], shape: Shape): Boolean | String = (^.asInstanceOf[js.Dynamic].applyDynamic("exact")(`object`.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Boolean | String]
+  inline def exact(`object`: StringDictionary[js.Any], shape: Shape, parent: String): Boolean | String = (^.asInstanceOf[js.Dynamic].applyDynamic("exact")(`object`.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Boolean | String]
   
-  @scala.inline
-  def partial(`object`: StringDictionary[js.Any], shape: Shape): Boolean | String = (^.asInstanceOf[js.Dynamic].applyDynamic("partial")(`object`.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Boolean | String]
-  @scala.inline
-  def partial(`object`: StringDictionary[js.Any], shape: Shape, parent: String): Boolean | String = (^.asInstanceOf[js.Dynamic].applyDynamic("partial")(`object`.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Boolean | String]
+  inline def partial(`object`: StringDictionary[js.Any], shape: Shape): Boolean | String = (^.asInstanceOf[js.Dynamic].applyDynamic("partial")(`object`.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Boolean | String]
+  inline def partial(`object`: StringDictionary[js.Any], shape: Shape, parent: String): Boolean | String = (^.asInstanceOf[js.Dynamic].applyDynamic("partial")(`object`.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Boolean | String]
   
   trait Shape
     extends StObject
        with /* key */ StringDictionary[BasePredicate[js.Any] | Shape]
   object Shape {
     
-    @scala.inline
-    def apply(): Shape = {
+    inline def apply(): Shape = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Shape]
     }

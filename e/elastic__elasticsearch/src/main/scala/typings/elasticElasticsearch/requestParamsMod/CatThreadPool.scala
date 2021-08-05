@@ -34,76 +34,53 @@ trait CatThreadPool
 }
 object CatThreadPool {
   
-  @scala.inline
-  def apply(): CatThreadPool = {
+  inline def apply(): CatThreadPool = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CatThreadPool]
   }
   
-  @scala.inline
-  implicit class CatThreadPoolMutableBuilder[Self <: CatThreadPool] (val x: Self) extends AnyVal {
+  extension [Self <: CatThreadPool](x: Self) {
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setH(value: String | js.Array[String]): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+    inline def setH(value: String | js.Array[String]): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHUndefined: Self = StObject.set(x, "h", js.undefined)
+    inline def setHUndefined: Self = StObject.set(x, "h", js.undefined)
     
-    @scala.inline
-    def setHVarargs(value: String*): Self = StObject.set(x, "h", js.Array(value :_*))
+    inline def setHVarargs(value: String*): Self = StObject.set(x, "h", js.Array(value :_*))
     
-    @scala.inline
-    def setHelp(value: Boolean): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
+    inline def setHelp(value: Boolean): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
+    inline def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
     
-    @scala.inline
-    def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+    inline def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
+    inline def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
     
-    @scala.inline
-    def setMaster_timeout(value: String): Self = StObject.set(x, "master_timeout", value.asInstanceOf[js.Any])
+    inline def setMaster_timeout(value: String): Self = StObject.set(x, "master_timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaster_timeoutUndefined: Self = StObject.set(x, "master_timeout", js.undefined)
+    inline def setMaster_timeoutUndefined: Self = StObject.set(x, "master_timeout", js.undefined)
     
-    @scala.inline
-    def setS(value: String | js.Array[String]): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+    inline def setS(value: String | js.Array[String]): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSUndefined: Self = StObject.set(x, "s", js.undefined)
+    inline def setSUndefined: Self = StObject.set(x, "s", js.undefined)
     
-    @scala.inline
-    def setSVarargs(value: String*): Self = StObject.set(x, "s", js.Array(value :_*))
+    inline def setSVarargs(value: String*): Self = StObject.set(x, "s", js.Array(value :_*))
     
-    @scala.inline
-    def setSize(value: _empty | k | m | g | t | p): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: _empty | k | m | g | t | p): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setThread_pool_patterns(value: String | js.Array[String]): Self = StObject.set(x, "thread_pool_patterns", value.asInstanceOf[js.Any])
+    inline def setThread_pool_patterns(value: String | js.Array[String]): Self = StObject.set(x, "thread_pool_patterns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThread_pool_patternsUndefined: Self = StObject.set(x, "thread_pool_patterns", js.undefined)
+    inline def setThread_pool_patternsUndefined: Self = StObject.set(x, "thread_pool_patterns", js.undefined)
     
-    @scala.inline
-    def setThread_pool_patternsVarargs(value: String*): Self = StObject.set(x, "thread_pool_patterns", js.Array(value :_*))
+    inline def setThread_pool_patternsVarargs(value: String*): Self = StObject.set(x, "thread_pool_patterns", js.Array(value :_*))
     
-    @scala.inline
-    def setV(value: Boolean): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+    inline def setV(value: Boolean): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVUndefined: Self = StObject.set(x, "v", js.undefined)
+    inline def setVUndefined: Self = StObject.set(x, "v", js.undefined)
   }
 }

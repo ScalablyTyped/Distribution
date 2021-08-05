@@ -10,16 +10,13 @@ trait `13` extends StObject {
 }
 object `13` {
   
-  @scala.inline
-  def apply(next: () => DoneBoolean): `13` = {
+  inline def apply(next: () => DoneBoolean): `13` = {
     val __obj = js.Dynamic.literal(next = js.Any.fromFunction0(next))
     __obj.asInstanceOf[`13`]
   }
   
-  @scala.inline
-  implicit class `13MutableBuilder`[Self <: `13`] (val x: Self) extends AnyVal {
+  extension [Self <: `13`](x: Self) {
     
-    @scala.inline
-    def setNext(value: () => DoneBoolean): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+    inline def setNext(value: () => DoneBoolean): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
   }
 }

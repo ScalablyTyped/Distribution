@@ -23,28 +23,21 @@ trait ListIdentityProvidersRequest extends StObject {
 }
 object ListIdentityProvidersRequest {
   
-  @scala.inline
-  def apply(UserPoolId: UserPoolIdType): ListIdentityProvidersRequest = {
+  inline def apply(UserPoolId: UserPoolIdType): ListIdentityProvidersRequest = {
     val __obj = js.Dynamic.literal(UserPoolId = UserPoolId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListIdentityProvidersRequest]
   }
   
-  @scala.inline
-  implicit class ListIdentityProvidersRequestMutableBuilder[Self <: ListIdentityProvidersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListIdentityProvidersRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: ListProvidersLimitType): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: ListProvidersLimitType): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationKeyType): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationKeyType): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
+    inline def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
   }
 }

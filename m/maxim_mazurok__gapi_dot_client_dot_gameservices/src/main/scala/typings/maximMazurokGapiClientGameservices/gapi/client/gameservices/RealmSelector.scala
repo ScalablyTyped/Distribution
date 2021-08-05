@@ -11,22 +11,17 @@ trait RealmSelector extends StObject {
 }
 object RealmSelector {
   
-  @scala.inline
-  def apply(): RealmSelector = {
+  inline def apply(): RealmSelector = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RealmSelector]
   }
   
-  @scala.inline
-  implicit class RealmSelectorMutableBuilder[Self <: RealmSelector] (val x: Self) extends AnyVal {
+  extension [Self <: RealmSelector](x: Self) {
     
-    @scala.inline
-    def setRealms(value: js.Array[String]): Self = StObject.set(x, "realms", value.asInstanceOf[js.Any])
+    inline def setRealms(value: js.Array[String]): Self = StObject.set(x, "realms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRealmsUndefined: Self = StObject.set(x, "realms", js.undefined)
+    inline def setRealmsUndefined: Self = StObject.set(x, "realms", js.undefined)
     
-    @scala.inline
-    def setRealmsVarargs(value: String*): Self = StObject.set(x, "realms", js.Array(value :_*))
+    inline def setRealmsVarargs(value: String*): Self = StObject.set(x, "realms", js.Array(value :_*))
   }
 }

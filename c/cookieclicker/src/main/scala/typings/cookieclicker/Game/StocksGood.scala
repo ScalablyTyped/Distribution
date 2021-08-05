@@ -98,8 +98,7 @@ trait StocksGood extends StObject {
 }
 object StocksGood {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     active: Boolean,
     building: GameObject,
     company: String,
@@ -129,79 +128,54 @@ object StocksGood {
     __obj.asInstanceOf[StocksGood]
   }
   
-  @scala.inline
-  implicit class StocksGoodMutableBuilder[Self <: StocksGood] (val x: Self) extends AnyVal {
+  extension [Self <: StocksGood](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuilding(value: GameObject): Self = StObject.set(x, "building", value.asInstanceOf[js.Any])
+    inline def setBuilding(value: GameObject): Self = StObject.set(x, "building", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompany(value: String): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
+    inline def setCompany(value: String): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setD(value: Double): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+    inline def setD(value: Double): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+    inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDur(value: Double): Self = StObject.set(x, "dur", value.asInstanceOf[js.Any])
+    inline def setDur(value: Double): Self = StObject.set(x, "dur", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphIconL(value: HTMLDivElement): Self = StObject.set(x, "graphIconL", value.asInstanceOf[js.Any])
+    inline def setGraphIconL(value: HTMLDivElement): Self = StObject.set(x, "graphIconL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIcon(value: Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setL(value: HTMLDivElement): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
+    inline def setL(value: HTMLDivElement): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast(value: Double): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
+    inline def setLast(value: Double): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStock(value: Double): Self = StObject.set(x, "stock", value.asInstanceOf[js.Any])
+    inline def setStock(value: Double): Self = StObject.set(x, "stock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStockBoxL(value: HTMLDivElement): Self = StObject.set(x, "stockBoxL", value.asInstanceOf[js.Any])
+    inline def setStockBoxL(value: HTMLDivElement): Self = StObject.set(x, "stockBoxL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStockL(value: HTMLSpanElement): Self = StObject.set(x, "stockL", value.asInstanceOf[js.Any])
+    inline def setStockL(value: HTMLSpanElement): Self = StObject.set(x, "stockL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStockMaxL(value: HTMLSpanElement): Self = StObject.set(x, "stockMaxL", value.asInstanceOf[js.Any])
+    inline def setStockMaxL(value: HTMLSpanElement): Self = StObject.set(x, "stockMaxL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolNumL(value: HTMLSpanElement): Self = StObject.set(x, "symbolNumL", value.asInstanceOf[js.Any])
+    inline def setSymbolNumL(value: HTMLSpanElement): Self = StObject.set(x, "symbolNumL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVal(value: Double): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+    inline def setVal(value: Double): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVals(value: js.Array[Double]): Self = StObject.set(x, "vals", value.asInstanceOf[js.Any])
+    inline def setVals(value: js.Array[Double]): Self = StObject.set(x, "vals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValsVarargs(value: Double*): Self = StObject.set(x, "vals", js.Array(value :_*))
+    inline def setValsVarargs(value: Double*): Self = StObject.set(x, "vals", js.Array(value :_*))
     
-    @scala.inline
-    def setViewHideL(value: HTMLDivElement): Self = StObject.set(x, "viewHideL", value.asInstanceOf[js.Any])
+    inline def setViewHideL(value: HTMLDivElement): Self = StObject.set(x, "viewHideL", value.asInstanceOf[js.Any])
   }
 }

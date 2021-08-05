@@ -26,49 +26,35 @@ trait GoogleCloudRecommendationengineV1beta1ImportMetadata extends StObject {
 }
 object GoogleCloudRecommendationengineV1beta1ImportMetadata {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommendationengineV1beta1ImportMetadata = {
+  inline def apply(): GoogleCloudRecommendationengineV1beta1ImportMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1ImportMetadata]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1ImportMetadataMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1ImportMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommendationengineV1beta1ImportMetadata](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setFailureCount(value: String): Self = StObject.set(x, "failureCount", value.asInstanceOf[js.Any])
+    inline def setFailureCount(value: String): Self = StObject.set(x, "failureCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureCountUndefined: Self = StObject.set(x, "failureCount", js.undefined)
+    inline def setFailureCountUndefined: Self = StObject.set(x, "failureCount", js.undefined)
     
-    @scala.inline
-    def setOperationName(value: String): Self = StObject.set(x, "operationName", value.asInstanceOf[js.Any])
+    inline def setOperationName(value: String): Self = StObject.set(x, "operationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationNameUndefined: Self = StObject.set(x, "operationName", js.undefined)
+    inline def setOperationNameUndefined: Self = StObject.set(x, "operationName", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
     
-    @scala.inline
-    def setSuccessCount(value: String): Self = StObject.set(x, "successCount", value.asInstanceOf[js.Any])
+    inline def setSuccessCount(value: String): Self = StObject.set(x, "successCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessCountUndefined: Self = StObject.set(x, "successCount", js.undefined)
+    inline def setSuccessCountUndefined: Self = StObject.set(x, "successCount", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

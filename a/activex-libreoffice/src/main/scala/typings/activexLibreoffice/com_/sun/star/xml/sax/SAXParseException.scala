@@ -27,8 +27,7 @@ trait SAXParseException
 }
 object SAXParseException {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ColumnNumber: Double,
     Context: XInterface,
     LineNumber: Double,
@@ -41,19 +40,14 @@ object SAXParseException {
     __obj.asInstanceOf[SAXParseException]
   }
   
-  @scala.inline
-  implicit class SAXParseExceptionMutableBuilder[Self <: SAXParseException] (val x: Self) extends AnyVal {
+  extension [Self <: SAXParseException](x: Self) {
     
-    @scala.inline
-    def setColumnNumber(value: Double): Self = StObject.set(x, "ColumnNumber", value.asInstanceOf[js.Any])
+    inline def setColumnNumber(value: Double): Self = StObject.set(x, "ColumnNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineNumber(value: Double): Self = StObject.set(x, "LineNumber", value.asInstanceOf[js.Any])
+    inline def setLineNumber(value: Double): Self = StObject.set(x, "LineNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicId(value: String): Self = StObject.set(x, "PublicId", value.asInstanceOf[js.Any])
+    inline def setPublicId(value: String): Self = StObject.set(x, "PublicId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemId(value: String): Self = StObject.set(x, "SystemId", value.asInstanceOf[js.Any])
+    inline def setSystemId(value: String): Self = StObject.set(x, "SystemId", value.asInstanceOf[js.Any])
   }
 }

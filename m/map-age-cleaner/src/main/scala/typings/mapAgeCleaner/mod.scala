@@ -12,10 +12,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[K, V /* <: MaxAgeEntry */](map: Map[K, V]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(map.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def default[K, V](map: Map[K, V], property: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(map.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def default[K, V /* <: MaxAgeEntry */](map: Map[K, V]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(map.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def default[K, V](map: Map[K, V], property: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(map.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   type Entry = StringDictionary[js.Any]
   
@@ -27,17 +25,14 @@ object mod {
   }
   object MaxAgeEntry {
     
-    @scala.inline
-    def apply(maxAge: Double): MaxAgeEntry = {
+    inline def apply(maxAge: Double): MaxAgeEntry = {
       val __obj = js.Dynamic.literal(maxAge = maxAge.asInstanceOf[js.Any])
       __obj.asInstanceOf[MaxAgeEntry]
     }
     
-    @scala.inline
-    implicit class MaxAgeEntryMutableBuilder[Self <: MaxAgeEntry] (val x: Self) extends AnyVal {
+    extension [Self <: MaxAgeEntry](x: Self) {
       
-      @scala.inline
-      def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
     }
   }
 }

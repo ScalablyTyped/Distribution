@@ -10,16 +10,13 @@ trait GatherV2Attrs extends StObject {
 }
 object GatherV2Attrs {
   
-  @scala.inline
-  def apply(axis: Double): GatherV2Attrs = {
+  inline def apply(axis: Double): GatherV2Attrs = {
     val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any])
     __obj.asInstanceOf[GatherV2Attrs]
   }
   
-  @scala.inline
-  implicit class GatherV2AttrsMutableBuilder[Self <: GatherV2Attrs] (val x: Self) extends AnyVal {
+  extension [Self <: GatherV2Attrs](x: Self) {
     
-    @scala.inline
-    def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
   }
 }

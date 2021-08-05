@@ -16,46 +16,33 @@ trait MaxAgeSeconds extends StObject {
 }
 object MaxAgeSeconds {
   
-  @scala.inline
-  def apply(): MaxAgeSeconds = {
+  inline def apply(): MaxAgeSeconds = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaxAgeSeconds]
   }
   
-  @scala.inline
-  implicit class MaxAgeSecondsMutableBuilder[Self <: MaxAgeSeconds] (val x: Self) extends AnyVal {
+  extension [Self <: MaxAgeSeconds](x: Self) {
     
-    @scala.inline
-    def setMaxAgeSeconds(value: Double): Self = StObject.set(x, "maxAgeSeconds", value.asInstanceOf[js.Any])
+    inline def setMaxAgeSeconds(value: Double): Self = StObject.set(x, "maxAgeSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAgeSecondsUndefined: Self = StObject.set(x, "maxAgeSeconds", js.undefined)
+    inline def setMaxAgeSecondsUndefined: Self = StObject.set(x, "maxAgeSeconds", js.undefined)
     
-    @scala.inline
-    def setMethod(value: js.Array[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: js.Array[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setMethodVarargs(value: String*): Self = StObject.set(x, "method", js.Array(value :_*))
+    inline def setMethodVarargs(value: String*): Self = StObject.set(x, "method", js.Array(value :_*))
     
-    @scala.inline
-    def setOrigin(value: js.Array[String]): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: js.Array[String]): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
-    @scala.inline
-    def setOriginVarargs(value: String*): Self = StObject.set(x, "origin", js.Array(value :_*))
+    inline def setOriginVarargs(value: String*): Self = StObject.set(x, "origin", js.Array(value :_*))
     
-    @scala.inline
-    def setResponseHeader(value: js.Array[String]): Self = StObject.set(x, "responseHeader", value.asInstanceOf[js.Any])
+    inline def setResponseHeader(value: js.Array[String]): Self = StObject.set(x, "responseHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseHeaderUndefined: Self = StObject.set(x, "responseHeader", js.undefined)
+    inline def setResponseHeaderUndefined: Self = StObject.set(x, "responseHeader", js.undefined)
     
-    @scala.inline
-    def setResponseHeaderVarargs(value: String*): Self = StObject.set(x, "responseHeader", js.Array(value :_*))
+    inline def setResponseHeaderVarargs(value: String*): Self = StObject.set(x, "responseHeader", js.Array(value :_*))
   }
 }

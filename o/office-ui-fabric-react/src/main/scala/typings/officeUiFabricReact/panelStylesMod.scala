@@ -12,6 +12,5 @@ object panelStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(props: IPanelStyleProps): IPanelStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IPanelStyles]
+  inline def getStyles(props: IPanelStyleProps): IPanelStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IPanelStyles]
 }

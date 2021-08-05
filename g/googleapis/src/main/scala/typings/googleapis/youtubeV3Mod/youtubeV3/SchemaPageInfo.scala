@@ -22,25 +22,19 @@ trait SchemaPageInfo extends StObject {
 }
 object SchemaPageInfo {
   
-  @scala.inline
-  def apply(): SchemaPageInfo = {
+  inline def apply(): SchemaPageInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPageInfo]
   }
   
-  @scala.inline
-  implicit class SchemaPageInfoMutableBuilder[Self <: SchemaPageInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPageInfo](x: Self) {
     
-    @scala.inline
-    def setResultsPerPage(value: Double): Self = StObject.set(x, "resultsPerPage", value.asInstanceOf[js.Any])
+    inline def setResultsPerPage(value: Double): Self = StObject.set(x, "resultsPerPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsPerPageUndefined: Self = StObject.set(x, "resultsPerPage", js.undefined)
+    inline def setResultsPerPageUndefined: Self = StObject.set(x, "resultsPerPage", js.undefined)
     
-    @scala.inline
-    def setTotalResults(value: Double): Self = StObject.set(x, "totalResults", value.asInstanceOf[js.Any])
+    inline def setTotalResults(value: Double): Self = StObject.set(x, "totalResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalResultsUndefined: Self = StObject.set(x, "totalResults", js.undefined)
+    inline def setTotalResultsUndefined: Self = StObject.set(x, "totalResults", js.undefined)
   }
 }

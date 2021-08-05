@@ -14,7 +14,7 @@ trait PlotArea extends StObject {
   
   val Creator: XlCreator
   
-  @JSName("Excel.PlotArea_typekey")
+  /* private */ @JSName("Excel.PlotArea_typekey")
   var ExcelDotPlotArea_typekey: PlotArea
   
   val Fill: ChartFillFormat
@@ -57,8 +57,7 @@ trait PlotArea extends StObject {
 }
 object PlotArea {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Border: Border,
     ClearFormats: () => js.Any,
@@ -89,79 +88,54 @@ object PlotArea {
     __obj.asInstanceOf[PlotArea]
   }
   
-  @scala.inline
-  implicit class PlotAreaMutableBuilder[Self <: PlotArea] (val x: Self) extends AnyVal {
+  extension [Self <: PlotArea](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorder(value: Border): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: Border): Self = StObject.set(x, "Border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearFormats(value: () => js.Any): Self = StObject.set(x, "ClearFormats", js.Any.fromFunction0(value))
+    inline def setClearFormats(value: () => js.Any): Self = StObject.set(x, "ClearFormats", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotPlotArea_typekey(value: PlotArea): Self = StObject.set(x, "Excel.PlotArea_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotPlotArea_typekey(value: PlotArea): Self = StObject.set(x, "Excel.PlotArea_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFill(value: ChartFillFormat): Self = StObject.set(x, "Fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: ChartFillFormat): Self = StObject.set(x, "Fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: ChartFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: ChartFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsideHeight(value: Double): Self = StObject.set(x, "InsideHeight", value.asInstanceOf[js.Any])
+    inline def setInsideHeight(value: Double): Self = StObject.set(x, "InsideHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsideLeft(value: Double): Self = StObject.set(x, "InsideLeft", value.asInstanceOf[js.Any])
+    inline def setInsideLeft(value: Double): Self = StObject.set(x, "InsideLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsideTop(value: Double): Self = StObject.set(x, "InsideTop", value.asInstanceOf[js.Any])
+    inline def setInsideTop(value: Double): Self = StObject.set(x, "InsideTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsideWidth(value: Double): Self = StObject.set(x, "InsideWidth", value.asInstanceOf[js.Any])
+    inline def setInsideWidth(value: Double): Self = StObject.set(x, "InsideWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterior(value: Interior): Self = StObject.set(x, "Interior", value.asInstanceOf[js.Any])
+    inline def setInterior(value: Interior): Self = StObject.set(x, "Interior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: XlChartElementPosition): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: XlChartElementPosition): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelect(value: () => js.Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
+    inline def setSelect(value: () => js.Any): Self = StObject.set(x, "Select", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_InsideHeight(value: Double): Self = StObject.set(x, "_InsideHeight", value.asInstanceOf[js.Any])
+    inline def set_InsideHeight(value: Double): Self = StObject.set(x, "_InsideHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_InsideLeft(value: Double): Self = StObject.set(x, "_InsideLeft", value.asInstanceOf[js.Any])
+    inline def set_InsideLeft(value: Double): Self = StObject.set(x, "_InsideLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_InsideTop(value: Double): Self = StObject.set(x, "_InsideTop", value.asInstanceOf[js.Any])
+    inline def set_InsideTop(value: Double): Self = StObject.set(x, "_InsideTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_InsideWidth(value: Double): Self = StObject.set(x, "_InsideWidth", value.asInstanceOf[js.Any])
+    inline def set_InsideWidth(value: Double): Self = StObject.set(x, "_InsideWidth", value.asInstanceOf[js.Any])
   }
 }

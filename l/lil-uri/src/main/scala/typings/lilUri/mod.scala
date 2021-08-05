@@ -12,10 +12,8 @@ object mod {
     *
     * @param the URI string to parse.
     */
-  @scala.inline
-  def apply(): URI = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[URI]
-  @scala.inline
-  def apply(uri: String): URI = ^.asInstanceOf[js.Dynamic].apply(uri.asInstanceOf[js.Any]).asInstanceOf[URI]
+  inline def apply(): URI = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[URI]
+  inline def apply(uri: String): URI = ^.asInstanceOf[js.Dynamic].apply(uri.asInstanceOf[js.Any]).asInstanceOf[URI]
   
   @JSImport("lil-uri", JSImport.Namespace)
   @js.native
@@ -32,20 +30,16 @@ object mod {
   }
   object Credentials {
     
-    @scala.inline
-    def apply(password: String, user: String): Credentials = {
+    inline def apply(password: String, user: String): Credentials = {
       val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
       __obj.asInstanceOf[Credentials]
     }
     
-    @scala.inline
-    implicit class CredentialsMutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
+    extension [Self <: Credentials](x: Self) {
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
   
@@ -224,8 +218,7 @@ object mod {
   }
   object URIParts {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       auth: String,
       hash: String,
       host: String,
@@ -243,44 +236,31 @@ object mod {
       __obj.asInstanceOf[URIParts]
     }
     
-    @scala.inline
-    implicit class URIPartsMutableBuilder[Self <: URIParts] (val x: Self) extends AnyVal {
+    extension [Self <: URIParts](x: Self) {
       
-      @scala.inline
-      def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuery(value: QueryString): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: QueryString): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
 }

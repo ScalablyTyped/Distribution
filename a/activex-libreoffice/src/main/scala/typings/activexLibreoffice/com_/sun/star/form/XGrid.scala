@@ -32,8 +32,7 @@ trait XGrid
 }
 object XGrid {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CurrentColumnPosition: Double,
     acquire: () => Unit,
     getCurrentColumnPosition: () => Double,
@@ -45,16 +44,12 @@ object XGrid {
     __obj.asInstanceOf[XGrid]
   }
   
-  @scala.inline
-  implicit class XGridMutableBuilder[Self <: XGrid] (val x: Self) extends AnyVal {
+  extension [Self <: XGrid](x: Self) {
     
-    @scala.inline
-    def setCurrentColumnPosition(value: Double): Self = StObject.set(x, "CurrentColumnPosition", value.asInstanceOf[js.Any])
+    inline def setCurrentColumnPosition(value: Double): Self = StObject.set(x, "CurrentColumnPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCurrentColumnPosition(value: () => Double): Self = StObject.set(x, "getCurrentColumnPosition", js.Any.fromFunction0(value))
+    inline def setGetCurrentColumnPosition(value: () => Double): Self = StObject.set(x, "getCurrentColumnPosition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetCurrentColumnPosition(value: Double => Unit): Self = StObject.set(x, "setCurrentColumnPosition", js.Any.fromFunction1(value))
+    inline def setSetCurrentColumnPosition(value: Double => Unit): Self = StObject.set(x, "setCurrentColumnPosition", js.Any.fromFunction1(value))
   }
 }

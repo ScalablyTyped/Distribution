@@ -20,20 +20,16 @@ trait ResourceRequirements extends StObject {
 }
 object ResourceRequirements {
   
-  @scala.inline
-  def apply(`type`: String, value: String): ResourceRequirements = {
+  inline def apply(`type`: String, value: String): ResourceRequirements = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceRequirements]
   }
   
-  @scala.inline
-  implicit class ResourceRequirementsMutableBuilder[Self <: ResourceRequirements] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceRequirements](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

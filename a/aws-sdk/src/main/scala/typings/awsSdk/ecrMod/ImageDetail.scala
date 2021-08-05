@@ -58,76 +58,53 @@ trait ImageDetail extends StObject {
 }
 object ImageDetail {
   
-  @scala.inline
-  def apply(): ImageDetail = {
+  inline def apply(): ImageDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageDetail]
   }
   
-  @scala.inline
-  implicit class ImageDetailMutableBuilder[Self <: ImageDetail] (val x: Self) extends AnyVal {
+  extension [Self <: ImageDetail](x: Self) {
     
-    @scala.inline
-    def setArtifactMediaType(value: MediaType): Self = StObject.set(x, "artifactMediaType", value.asInstanceOf[js.Any])
+    inline def setArtifactMediaType(value: MediaType): Self = StObject.set(x, "artifactMediaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtifactMediaTypeUndefined: Self = StObject.set(x, "artifactMediaType", js.undefined)
+    inline def setArtifactMediaTypeUndefined: Self = StObject.set(x, "artifactMediaType", js.undefined)
     
-    @scala.inline
-    def setImageDigest(value: ImageDigest): Self = StObject.set(x, "imageDigest", value.asInstanceOf[js.Any])
+    inline def setImageDigest(value: ImageDigest): Self = StObject.set(x, "imageDigest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageDigestUndefined: Self = StObject.set(x, "imageDigest", js.undefined)
+    inline def setImageDigestUndefined: Self = StObject.set(x, "imageDigest", js.undefined)
     
-    @scala.inline
-    def setImageManifestMediaType(value: MediaType): Self = StObject.set(x, "imageManifestMediaType", value.asInstanceOf[js.Any])
+    inline def setImageManifestMediaType(value: MediaType): Self = StObject.set(x, "imageManifestMediaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageManifestMediaTypeUndefined: Self = StObject.set(x, "imageManifestMediaType", js.undefined)
+    inline def setImageManifestMediaTypeUndefined: Self = StObject.set(x, "imageManifestMediaType", js.undefined)
     
-    @scala.inline
-    def setImagePushedAt(value: PushTimestamp): Self = StObject.set(x, "imagePushedAt", value.asInstanceOf[js.Any])
+    inline def setImagePushedAt(value: PushTimestamp): Self = StObject.set(x, "imagePushedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagePushedAtUndefined: Self = StObject.set(x, "imagePushedAt", js.undefined)
+    inline def setImagePushedAtUndefined: Self = StObject.set(x, "imagePushedAt", js.undefined)
     
-    @scala.inline
-    def setImageScanFindingsSummary(value: ImageScanFindingsSummary): Self = StObject.set(x, "imageScanFindingsSummary", value.asInstanceOf[js.Any])
+    inline def setImageScanFindingsSummary(value: ImageScanFindingsSummary): Self = StObject.set(x, "imageScanFindingsSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageScanFindingsSummaryUndefined: Self = StObject.set(x, "imageScanFindingsSummary", js.undefined)
+    inline def setImageScanFindingsSummaryUndefined: Self = StObject.set(x, "imageScanFindingsSummary", js.undefined)
     
-    @scala.inline
-    def setImageScanStatus(value: ImageScanStatus): Self = StObject.set(x, "imageScanStatus", value.asInstanceOf[js.Any])
+    inline def setImageScanStatus(value: ImageScanStatus): Self = StObject.set(x, "imageScanStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageScanStatusUndefined: Self = StObject.set(x, "imageScanStatus", js.undefined)
+    inline def setImageScanStatusUndefined: Self = StObject.set(x, "imageScanStatus", js.undefined)
     
-    @scala.inline
-    def setImageSizeInBytes(value: ImageSizeInBytes): Self = StObject.set(x, "imageSizeInBytes", value.asInstanceOf[js.Any])
+    inline def setImageSizeInBytes(value: ImageSizeInBytes): Self = StObject.set(x, "imageSizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageSizeInBytesUndefined: Self = StObject.set(x, "imageSizeInBytes", js.undefined)
+    inline def setImageSizeInBytesUndefined: Self = StObject.set(x, "imageSizeInBytes", js.undefined)
     
-    @scala.inline
-    def setImageTags(value: ImageTagList): Self = StObject.set(x, "imageTags", value.asInstanceOf[js.Any])
+    inline def setImageTags(value: ImageTagList): Self = StObject.set(x, "imageTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageTagsUndefined: Self = StObject.set(x, "imageTags", js.undefined)
+    inline def setImageTagsUndefined: Self = StObject.set(x, "imageTags", js.undefined)
     
-    @scala.inline
-    def setImageTagsVarargs(value: ImageTag*): Self = StObject.set(x, "imageTags", js.Array(value :_*))
+    inline def setImageTagsVarargs(value: ImageTag*): Self = StObject.set(x, "imageTags", js.Array(value :_*))
     
-    @scala.inline
-    def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
+    inline def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
+    inline def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
     
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
+    inline def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
   }
 }

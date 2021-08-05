@@ -13,19 +13,15 @@ trait DisassociateExternalConnectionResult extends StObject {
 }
 object DisassociateExternalConnectionResult {
   
-  @scala.inline
-  def apply(): DisassociateExternalConnectionResult = {
+  inline def apply(): DisassociateExternalConnectionResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisassociateExternalConnectionResult]
   }
   
-  @scala.inline
-  implicit class DisassociateExternalConnectionResultMutableBuilder[Self <: DisassociateExternalConnectionResult] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateExternalConnectionResult](x: Self) {
     
-    @scala.inline
-    def setRepository(value: RepositoryDescription): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: RepositoryDescription): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
+    inline def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
   }
 }

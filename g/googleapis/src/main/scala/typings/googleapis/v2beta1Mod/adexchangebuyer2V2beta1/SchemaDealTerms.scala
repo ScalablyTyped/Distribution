@@ -58,61 +58,43 @@ trait SchemaDealTerms extends StObject {
 }
 object SchemaDealTerms {
   
-  @scala.inline
-  def apply(): SchemaDealTerms = {
+  inline def apply(): SchemaDealTerms = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDealTerms]
   }
   
-  @scala.inline
-  implicit class SchemaDealTermsMutableBuilder[Self <: SchemaDealTerms] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDealTerms](x: Self) {
     
-    @scala.inline
-    def setBrandingType(value: String): Self = StObject.set(x, "brandingType", value.asInstanceOf[js.Any])
+    inline def setBrandingType(value: String): Self = StObject.set(x, "brandingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrandingTypeUndefined: Self = StObject.set(x, "brandingType", js.undefined)
+    inline def setBrandingTypeUndefined: Self = StObject.set(x, "brandingType", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEstimatedGrossSpend(value: SchemaPrice): Self = StObject.set(x, "estimatedGrossSpend", value.asInstanceOf[js.Any])
+    inline def setEstimatedGrossSpend(value: SchemaPrice): Self = StObject.set(x, "estimatedGrossSpend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedGrossSpendUndefined: Self = StObject.set(x, "estimatedGrossSpend", js.undefined)
+    inline def setEstimatedGrossSpendUndefined: Self = StObject.set(x, "estimatedGrossSpend", js.undefined)
     
-    @scala.inline
-    def setEstimatedImpressionsPerDay(value: String): Self = StObject.set(x, "estimatedImpressionsPerDay", value.asInstanceOf[js.Any])
+    inline def setEstimatedImpressionsPerDay(value: String): Self = StObject.set(x, "estimatedImpressionsPerDay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedImpressionsPerDayUndefined: Self = StObject.set(x, "estimatedImpressionsPerDay", js.undefined)
+    inline def setEstimatedImpressionsPerDayUndefined: Self = StObject.set(x, "estimatedImpressionsPerDay", js.undefined)
     
-    @scala.inline
-    def setGuaranteedFixedPriceTerms(value: SchemaGuaranteedFixedPriceTerms): Self = StObject.set(x, "guaranteedFixedPriceTerms", value.asInstanceOf[js.Any])
+    inline def setGuaranteedFixedPriceTerms(value: SchemaGuaranteedFixedPriceTerms): Self = StObject.set(x, "guaranteedFixedPriceTerms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuaranteedFixedPriceTermsUndefined: Self = StObject.set(x, "guaranteedFixedPriceTerms", js.undefined)
+    inline def setGuaranteedFixedPriceTermsUndefined: Self = StObject.set(x, "guaranteedFixedPriceTerms", js.undefined)
     
-    @scala.inline
-    def setNonGuaranteedAuctionTerms(value: SchemaNonGuaranteedAuctionTerms): Self = StObject.set(x, "nonGuaranteedAuctionTerms", value.asInstanceOf[js.Any])
+    inline def setNonGuaranteedAuctionTerms(value: SchemaNonGuaranteedAuctionTerms): Self = StObject.set(x, "nonGuaranteedAuctionTerms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonGuaranteedAuctionTermsUndefined: Self = StObject.set(x, "nonGuaranteedAuctionTerms", js.undefined)
+    inline def setNonGuaranteedAuctionTermsUndefined: Self = StObject.set(x, "nonGuaranteedAuctionTerms", js.undefined)
     
-    @scala.inline
-    def setNonGuaranteedFixedPriceTerms(value: SchemaNonGuaranteedFixedPriceTerms): Self = StObject.set(x, "nonGuaranteedFixedPriceTerms", value.asInstanceOf[js.Any])
+    inline def setNonGuaranteedFixedPriceTerms(value: SchemaNonGuaranteedFixedPriceTerms): Self = StObject.set(x, "nonGuaranteedFixedPriceTerms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonGuaranteedFixedPriceTermsUndefined: Self = StObject.set(x, "nonGuaranteedFixedPriceTerms", js.undefined)
+    inline def setNonGuaranteedFixedPriceTermsUndefined: Self = StObject.set(x, "nonGuaranteedFixedPriceTerms", js.undefined)
     
-    @scala.inline
-    def setSellerTimeZone(value: String): Self = StObject.set(x, "sellerTimeZone", value.asInstanceOf[js.Any])
+    inline def setSellerTimeZone(value: String): Self = StObject.set(x, "sellerTimeZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSellerTimeZoneUndefined: Self = StObject.set(x, "sellerTimeZone", js.undefined)
+    inline def setSellerTimeZoneUndefined: Self = StObject.set(x, "sellerTimeZone", js.undefined)
   }
 }

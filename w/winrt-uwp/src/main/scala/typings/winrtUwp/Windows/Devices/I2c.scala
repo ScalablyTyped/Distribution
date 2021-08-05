@@ -87,23 +87,18 @@ object I2c {
   }
   object I2cConnectionSettings {
     
-    @scala.inline
-    def apply(busSpeed: I2cBusSpeed, sharingMode: I2cSharingMode, slaveAddress: Double): I2cConnectionSettings = {
+    inline def apply(busSpeed: I2cBusSpeed, sharingMode: I2cSharingMode, slaveAddress: Double): I2cConnectionSettings = {
       val __obj = js.Dynamic.literal(busSpeed = busSpeed.asInstanceOf[js.Any], sharingMode = sharingMode.asInstanceOf[js.Any], slaveAddress = slaveAddress.asInstanceOf[js.Any])
       __obj.asInstanceOf[I2cConnectionSettings]
     }
     
-    @scala.inline
-    implicit class I2cConnectionSettingsMutableBuilder[Self <: I2cConnectionSettings] (val x: Self) extends AnyVal {
+    extension [Self <: I2cConnectionSettings](x: Self) {
       
-      @scala.inline
-      def setBusSpeed(value: I2cBusSpeed): Self = StObject.set(x, "busSpeed", value.asInstanceOf[js.Any])
+      inline def setBusSpeed(value: I2cBusSpeed): Self = StObject.set(x, "busSpeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSharingMode(value: I2cSharingMode): Self = StObject.set(x, "sharingMode", value.asInstanceOf[js.Any])
+      inline def setSharingMode(value: I2cSharingMode): Self = StObject.set(x, "sharingMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlaveAddress(value: Double): Self = StObject.set(x, "slaveAddress", value.asInstanceOf[js.Any])
+      inline def setSlaveAddress(value: Double): Self = StObject.set(x, "slaveAddress", value.asInstanceOf[js.Any])
     }
   }
   
@@ -119,17 +114,14 @@ object I2c {
   }
   object I2cController {
     
-    @scala.inline
-    def apply(getDevice: I2cConnectionSettings => I2cDevice): I2cController = {
+    inline def apply(getDevice: I2cConnectionSettings => I2cDevice): I2cController = {
       val __obj = js.Dynamic.literal(getDevice = js.Any.fromFunction1(getDevice))
       __obj.asInstanceOf[I2cController]
     }
     
-    @scala.inline
-    implicit class I2cControllerMutableBuilder[Self <: I2cController] (val x: Self) extends AnyVal {
+    extension [Self <: I2cController](x: Self) {
       
-      @scala.inline
-      def setGetDevice(value: I2cConnectionSettings => I2cDevice): Self = StObject.set(x, "getDevice", js.Any.fromFunction1(value))
+      inline def setGetDevice(value: I2cConnectionSettings => I2cDevice): Self = StObject.set(x, "getDevice", js.Any.fromFunction1(value))
     }
   }
   
@@ -188,8 +180,7 @@ object I2c {
   }
   object I2cDevice {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       close: () => Unit,
       connectionSettings: I2cConnectionSettings,
       deviceId: String,
@@ -204,35 +195,25 @@ object I2c {
       __obj.asInstanceOf[I2cDevice]
     }
     
-    @scala.inline
-    implicit class I2cDeviceMutableBuilder[Self <: I2cDevice] (val x: Self) extends AnyVal {
+    extension [Self <: I2cDevice](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setConnectionSettings(value: I2cConnectionSettings): Self = StObject.set(x, "connectionSettings", value.asInstanceOf[js.Any])
+      inline def setConnectionSettings(value: I2cConnectionSettings): Self = StObject.set(x, "connectionSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+      inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRead(value: js.Array[Double] => Unit): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+      inline def setRead(value: js.Array[Double] => Unit): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReadPartial(value: js.Array[Double] => I2cTransferResult): Self = StObject.set(x, "readPartial", js.Any.fromFunction1(value))
+      inline def setReadPartial(value: js.Array[Double] => I2cTransferResult): Self = StObject.set(x, "readPartial", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWrite(value: js.Array[Double] => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+      inline def setWrite(value: js.Array[Double] => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWritePartial(value: js.Array[Double] => I2cTransferResult): Self = StObject.set(x, "writePartial", js.Any.fromFunction1(value))
+      inline def setWritePartial(value: js.Array[Double] => I2cTransferResult): Self = StObject.set(x, "writePartial", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteRead(value: (js.Array[Double], js.Array[Double]) => Unit): Self = StObject.set(x, "writeRead", js.Any.fromFunction2(value))
+      inline def setWriteRead(value: (js.Array[Double], js.Array[Double]) => Unit): Self = StObject.set(x, "writeRead", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWriteReadPartial(value: (js.Array[Double], js.Array[Double]) => I2cTransferResult): Self = StObject.set(x, "writeReadPartial", js.Any.fromFunction2(value))
+      inline def setWriteReadPartial(value: (js.Array[Double], js.Array[Double]) => I2cTransferResult): Self = StObject.set(x, "writeReadPartial", js.Any.fromFunction2(value))
     }
   }
   
@@ -247,20 +228,16 @@ object I2c {
   }
   object I2cTransferResult {
     
-    @scala.inline
-    def apply(bytesTransferred: Double, status: I2cTransferStatus): I2cTransferResult = {
+    inline def apply(bytesTransferred: Double, status: I2cTransferStatus): I2cTransferResult = {
       val __obj = js.Dynamic.literal(bytesTransferred = bytesTransferred.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[I2cTransferResult]
     }
     
-    @scala.inline
-    implicit class I2cTransferResultMutableBuilder[Self <: I2cTransferResult] (val x: Self) extends AnyVal {
+    extension [Self <: I2cTransferResult](x: Self) {
       
-      @scala.inline
-      def setBytesTransferred(value: Double): Self = StObject.set(x, "bytesTransferred", value.asInstanceOf[js.Any])
+      inline def setBytesTransferred(value: Double): Self = StObject.set(x, "bytesTransferred", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: I2cTransferStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: I2cTransferStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -274,17 +251,14 @@ object I2c {
     }
     object II2cProvider {
       
-      @scala.inline
-      def apply(getControllersAsync: js.Any): II2cProvider = {
+      inline def apply(getControllersAsync: js.Any): II2cProvider = {
         val __obj = js.Dynamic.literal(getControllersAsync = getControllersAsync.asInstanceOf[js.Any])
         __obj.asInstanceOf[II2cProvider]
       }
       
-      @scala.inline
-      implicit class II2cProviderMutableBuilder[Self <: II2cProvider] (val x: Self) extends AnyVal {
+      extension [Self <: II2cProvider](x: Self) {
         
-        @scala.inline
-        def setGetControllersAsync(value: js.Any): Self = StObject.set(x, "getControllersAsync", value.asInstanceOf[js.Any])
+        inline def setGetControllersAsync(value: js.Any): Self = StObject.set(x, "getControllersAsync", value.asInstanceOf[js.Any])
       }
     }
     
@@ -300,23 +274,18 @@ object I2c {
     }
     object ProviderI2cConnectionSettings {
       
-      @scala.inline
-      def apply(busSpeed: js.Any, sharingMode: js.Any, slaveAddress: js.Any): ProviderI2cConnectionSettings = {
+      inline def apply(busSpeed: js.Any, sharingMode: js.Any, slaveAddress: js.Any): ProviderI2cConnectionSettings = {
         val __obj = js.Dynamic.literal(busSpeed = busSpeed.asInstanceOf[js.Any], sharingMode = sharingMode.asInstanceOf[js.Any], slaveAddress = slaveAddress.asInstanceOf[js.Any])
         __obj.asInstanceOf[ProviderI2cConnectionSettings]
       }
       
-      @scala.inline
-      implicit class ProviderI2cConnectionSettingsMutableBuilder[Self <: ProviderI2cConnectionSettings] (val x: Self) extends AnyVal {
+      extension [Self <: ProviderI2cConnectionSettings](x: Self) {
         
-        @scala.inline
-        def setBusSpeed(value: js.Any): Self = StObject.set(x, "busSpeed", value.asInstanceOf[js.Any])
+        inline def setBusSpeed(value: js.Any): Self = StObject.set(x, "busSpeed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSharingMode(value: js.Any): Self = StObject.set(x, "sharingMode", value.asInstanceOf[js.Any])
+        inline def setSharingMode(value: js.Any): Self = StObject.set(x, "sharingMode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSlaveAddress(value: js.Any): Self = StObject.set(x, "slaveAddress", value.asInstanceOf[js.Any])
+        inline def setSlaveAddress(value: js.Any): Self = StObject.set(x, "slaveAddress", value.asInstanceOf[js.Any])
       }
     }
   }

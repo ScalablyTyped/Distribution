@@ -43,112 +43,77 @@ trait ManagedDeviceMobileAppConfiguration
 }
 object ManagedDeviceMobileAppConfiguration {
   
-  @scala.inline
-  def apply(): ManagedDeviceMobileAppConfiguration = {
+  inline def apply(): ManagedDeviceMobileAppConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManagedDeviceMobileAppConfiguration]
   }
   
-  @scala.inline
-  implicit class ManagedDeviceMobileAppConfigurationMutableBuilder[Self <: ManagedDeviceMobileAppConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ManagedDeviceMobileAppConfiguration](x: Self) {
     
-    @scala.inline
-    def setAssignments(value: NullableOption[js.Array[ManagedDeviceMobileAppConfigurationAssignment]]): Self = StObject.set(x, "assignments", value.asInstanceOf[js.Any])
+    inline def setAssignments(value: NullableOption[js.Array[ManagedDeviceMobileAppConfigurationAssignment]]): Self = StObject.set(x, "assignments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignmentsNull: Self = StObject.set(x, "assignments", null)
+    inline def setAssignmentsNull: Self = StObject.set(x, "assignments", null)
     
-    @scala.inline
-    def setAssignmentsUndefined: Self = StObject.set(x, "assignments", js.undefined)
+    inline def setAssignmentsUndefined: Self = StObject.set(x, "assignments", js.undefined)
     
-    @scala.inline
-    def setAssignmentsVarargs(value: ManagedDeviceMobileAppConfigurationAssignment*): Self = StObject.set(x, "assignments", js.Array(value :_*))
+    inline def setAssignmentsVarargs(value: ManagedDeviceMobileAppConfigurationAssignment*): Self = StObject.set(x, "assignments", js.Array(value :_*))
     
-    @scala.inline
-    def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
+    inline def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
+    inline def setCreatedDateTimeUndefined: Self = StObject.set(x, "createdDateTime", js.undefined)
     
-    @scala.inline
-    def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionNull: Self = StObject.set(x, "description", null)
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDeviceStatusSummary(value: NullableOption[ManagedDeviceMobileAppConfigurationDeviceSummary]): Self = StObject.set(x, "deviceStatusSummary", value.asInstanceOf[js.Any])
+    inline def setDeviceStatusSummary(value: NullableOption[ManagedDeviceMobileAppConfigurationDeviceSummary]): Self = StObject.set(x, "deviceStatusSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceStatusSummaryNull: Self = StObject.set(x, "deviceStatusSummary", null)
+    inline def setDeviceStatusSummaryNull: Self = StObject.set(x, "deviceStatusSummary", null)
     
-    @scala.inline
-    def setDeviceStatusSummaryUndefined: Self = StObject.set(x, "deviceStatusSummary", js.undefined)
+    inline def setDeviceStatusSummaryUndefined: Self = StObject.set(x, "deviceStatusSummary", js.undefined)
     
-    @scala.inline
-    def setDeviceStatuses(value: NullableOption[js.Array[ManagedDeviceMobileAppConfigurationDeviceStatus]]): Self = StObject.set(x, "deviceStatuses", value.asInstanceOf[js.Any])
+    inline def setDeviceStatuses(value: NullableOption[js.Array[ManagedDeviceMobileAppConfigurationDeviceStatus]]): Self = StObject.set(x, "deviceStatuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceStatusesNull: Self = StObject.set(x, "deviceStatuses", null)
+    inline def setDeviceStatusesNull: Self = StObject.set(x, "deviceStatuses", null)
     
-    @scala.inline
-    def setDeviceStatusesUndefined: Self = StObject.set(x, "deviceStatuses", js.undefined)
+    inline def setDeviceStatusesUndefined: Self = StObject.set(x, "deviceStatuses", js.undefined)
     
-    @scala.inline
-    def setDeviceStatusesVarargs(value: ManagedDeviceMobileAppConfigurationDeviceStatus*): Self = StObject.set(x, "deviceStatuses", js.Array(value :_*))
+    inline def setDeviceStatusesVarargs(value: ManagedDeviceMobileAppConfigurationDeviceStatus*): Self = StObject.set(x, "deviceStatuses", js.Array(value :_*))
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setLastModifiedDateTime(value: String): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDateTime(value: String): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
+    inline def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
     
-    @scala.inline
-    def setTargetedMobileApps(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "targetedMobileApps", value.asInstanceOf[js.Any])
+    inline def setTargetedMobileApps(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "targetedMobileApps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetedMobileAppsNull: Self = StObject.set(x, "targetedMobileApps", null)
+    inline def setTargetedMobileAppsNull: Self = StObject.set(x, "targetedMobileApps", null)
     
-    @scala.inline
-    def setTargetedMobileAppsUndefined: Self = StObject.set(x, "targetedMobileApps", js.undefined)
+    inline def setTargetedMobileAppsUndefined: Self = StObject.set(x, "targetedMobileApps", js.undefined)
     
-    @scala.inline
-    def setTargetedMobileAppsVarargs(value: String*): Self = StObject.set(x, "targetedMobileApps", js.Array(value :_*))
+    inline def setTargetedMobileAppsVarargs(value: String*): Self = StObject.set(x, "targetedMobileApps", js.Array(value :_*))
     
-    @scala.inline
-    def setUserStatusSummary(value: NullableOption[ManagedDeviceMobileAppConfigurationUserSummary]): Self = StObject.set(x, "userStatusSummary", value.asInstanceOf[js.Any])
+    inline def setUserStatusSummary(value: NullableOption[ManagedDeviceMobileAppConfigurationUserSummary]): Self = StObject.set(x, "userStatusSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserStatusSummaryNull: Self = StObject.set(x, "userStatusSummary", null)
+    inline def setUserStatusSummaryNull: Self = StObject.set(x, "userStatusSummary", null)
     
-    @scala.inline
-    def setUserStatusSummaryUndefined: Self = StObject.set(x, "userStatusSummary", js.undefined)
+    inline def setUserStatusSummaryUndefined: Self = StObject.set(x, "userStatusSummary", js.undefined)
     
-    @scala.inline
-    def setUserStatuses(value: NullableOption[js.Array[ManagedDeviceMobileAppConfigurationUserStatus]]): Self = StObject.set(x, "userStatuses", value.asInstanceOf[js.Any])
+    inline def setUserStatuses(value: NullableOption[js.Array[ManagedDeviceMobileAppConfigurationUserStatus]]): Self = StObject.set(x, "userStatuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserStatusesNull: Self = StObject.set(x, "userStatuses", null)
+    inline def setUserStatusesNull: Self = StObject.set(x, "userStatuses", null)
     
-    @scala.inline
-    def setUserStatusesUndefined: Self = StObject.set(x, "userStatuses", js.undefined)
+    inline def setUserStatusesUndefined: Self = StObject.set(x, "userStatuses", js.undefined)
     
-    @scala.inline
-    def setUserStatusesVarargs(value: ManagedDeviceMobileAppConfigurationUserStatus*): Self = StObject.set(x, "userStatuses", js.Array(value :_*))
+    inline def setUserStatusesVarargs(value: ManagedDeviceMobileAppConfigurationUserStatus*): Self = StObject.set(x, "userStatuses", js.Array(value :_*))
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait GetBuiltinIntentRequest extends StObject {
 }
 object GetBuiltinIntentRequest {
   
-  @scala.inline
-  def apply(signature: BuiltinIntentSignature): GetBuiltinIntentRequest = {
+  inline def apply(signature: BuiltinIntentSignature): GetBuiltinIntentRequest = {
     val __obj = js.Dynamic.literal(signature = signature.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBuiltinIntentRequest]
   }
   
-  @scala.inline
-  implicit class GetBuiltinIntentRequestMutableBuilder[Self <: GetBuiltinIntentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetBuiltinIntentRequest](x: Self) {
     
-    @scala.inline
-    def setSignature(value: BuiltinIntentSignature): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: BuiltinIntentSignature): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
   }
 }

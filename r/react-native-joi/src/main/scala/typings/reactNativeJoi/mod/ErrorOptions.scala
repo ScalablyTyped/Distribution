@@ -16,19 +16,15 @@ trait ErrorOptions extends StObject {
 }
 object ErrorOptions {
   
-  @scala.inline
-  def apply(): ErrorOptions = {
+  inline def apply(): ErrorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ErrorOptions]
   }
   
-  @scala.inline
-  implicit class ErrorOptionsMutableBuilder[Self <: ErrorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorOptions](x: Self) {
     
-    @scala.inline
-    def setSelf(value: Boolean): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
+    inline def setSelf(value: Boolean): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfUndefined: Self = StObject.set(x, "self", js.undefined)
+    inline def setSelfUndefined: Self = StObject.set(x, "self", js.undefined)
   }
 }

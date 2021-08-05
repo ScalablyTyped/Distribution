@@ -18,25 +18,19 @@ trait MeetingNotificationConfiguration extends StObject {
 }
 object MeetingNotificationConfiguration {
   
-  @scala.inline
-  def apply(): MeetingNotificationConfiguration = {
+  inline def apply(): MeetingNotificationConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MeetingNotificationConfiguration]
   }
   
-  @scala.inline
-  implicit class MeetingNotificationConfigurationMutableBuilder[Self <: MeetingNotificationConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: MeetingNotificationConfiguration](x: Self) {
     
-    @scala.inline
-    def setSnsTopicArn(value: Arn): Self = StObject.set(x, "SnsTopicArn", value.asInstanceOf[js.Any])
+    inline def setSnsTopicArn(value: Arn): Self = StObject.set(x, "SnsTopicArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnsTopicArnUndefined: Self = StObject.set(x, "SnsTopicArn", js.undefined)
+    inline def setSnsTopicArnUndefined: Self = StObject.set(x, "SnsTopicArn", js.undefined)
     
-    @scala.inline
-    def setSqsQueueArn(value: Arn): Self = StObject.set(x, "SqsQueueArn", value.asInstanceOf[js.Any])
+    inline def setSqsQueueArn(value: Arn): Self = StObject.set(x, "SqsQueueArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqsQueueArnUndefined: Self = StObject.set(x, "SqsQueueArn", js.undefined)
+    inline def setSqsQueueArnUndefined: Self = StObject.set(x, "SqsQueueArn", js.undefined)
   }
 }

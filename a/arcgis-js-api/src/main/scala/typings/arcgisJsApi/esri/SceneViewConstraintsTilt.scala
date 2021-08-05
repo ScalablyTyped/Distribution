@@ -28,8 +28,7 @@ trait SceneViewConstraintsTilt
 }
 object SceneViewConstraintsTilt {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -41,19 +40,14 @@ object SceneViewConstraintsTilt {
     __obj.asInstanceOf[SceneViewConstraintsTilt]
   }
   
-  @scala.inline
-  implicit class SceneViewConstraintsTiltMutableBuilder[Self <: SceneViewConstraintsTilt] (val x: Self) extends AnyVal {
+  extension [Self <: SceneViewConstraintsTilt](x: Self) {
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMode(value: auto | manual): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: auto | manual): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

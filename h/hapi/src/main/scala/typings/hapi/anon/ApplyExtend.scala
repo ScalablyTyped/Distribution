@@ -14,22 +14,17 @@ trait ApplyExtend extends StObject {
 }
 object ApplyExtend {
   
-  @scala.inline
-  def apply(): ApplyExtend = {
+  inline def apply(): ApplyExtend = {
     val __obj = js.Dynamic.literal(apply = true)
     __obj.asInstanceOf[ApplyExtend]
   }
   
-  @scala.inline
-  implicit class ApplyExtendMutableBuilder[Self <: ApplyExtend] (val x: Self) extends AnyVal {
+  extension [Self <: ApplyExtend](x: Self) {
     
-    @scala.inline
-    def setApply(value: `true`): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
+    inline def setApply(value: `true`): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtend(value: Boolean): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    inline def setExtend(value: Boolean): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
+    inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
   }
 }

@@ -9,8 +9,7 @@ trait DescribeContinuousBackupsInput
      with typings.awsSdkClientDynamodbBrowser.typesDescribeContinuousBackupsInputMod.DescribeContinuousBackupsInput
 object DescribeContinuousBackupsInput {
   
-  @scala.inline
-  def apply(TableName: String): DescribeContinuousBackupsInput = {
+  inline def apply(TableName: String): DescribeContinuousBackupsInput = {
     val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeContinuousBackupsInput]
   }

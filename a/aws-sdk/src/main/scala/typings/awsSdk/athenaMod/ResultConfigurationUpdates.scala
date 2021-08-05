@@ -28,37 +28,27 @@ trait ResultConfigurationUpdates extends StObject {
 }
 object ResultConfigurationUpdates {
   
-  @scala.inline
-  def apply(): ResultConfigurationUpdates = {
+  inline def apply(): ResultConfigurationUpdates = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResultConfigurationUpdates]
   }
   
-  @scala.inline
-  implicit class ResultConfigurationUpdatesMutableBuilder[Self <: ResultConfigurationUpdates] (val x: Self) extends AnyVal {
+  extension [Self <: ResultConfigurationUpdates](x: Self) {
     
-    @scala.inline
-    def setEncryptionConfiguration(value: EncryptionConfiguration): Self = StObject.set(x, "EncryptionConfiguration", value.asInstanceOf[js.Any])
+    inline def setEncryptionConfiguration(value: EncryptionConfiguration): Self = StObject.set(x, "EncryptionConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionConfigurationUndefined: Self = StObject.set(x, "EncryptionConfiguration", js.undefined)
+    inline def setEncryptionConfigurationUndefined: Self = StObject.set(x, "EncryptionConfiguration", js.undefined)
     
-    @scala.inline
-    def setOutputLocation(value: String): Self = StObject.set(x, "OutputLocation", value.asInstanceOf[js.Any])
+    inline def setOutputLocation(value: String): Self = StObject.set(x, "OutputLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputLocationUndefined: Self = StObject.set(x, "OutputLocation", js.undefined)
+    inline def setOutputLocationUndefined: Self = StObject.set(x, "OutputLocation", js.undefined)
     
-    @scala.inline
-    def setRemoveEncryptionConfiguration(value: BoxedBoolean): Self = StObject.set(x, "RemoveEncryptionConfiguration", value.asInstanceOf[js.Any])
+    inline def setRemoveEncryptionConfiguration(value: BoxedBoolean): Self = StObject.set(x, "RemoveEncryptionConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveEncryptionConfigurationUndefined: Self = StObject.set(x, "RemoveEncryptionConfiguration", js.undefined)
+    inline def setRemoveEncryptionConfigurationUndefined: Self = StObject.set(x, "RemoveEncryptionConfiguration", js.undefined)
     
-    @scala.inline
-    def setRemoveOutputLocation(value: BoxedBoolean): Self = StObject.set(x, "RemoveOutputLocation", value.asInstanceOf[js.Any])
+    inline def setRemoveOutputLocation(value: BoxedBoolean): Self = StObject.set(x, "RemoveOutputLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveOutputLocationUndefined: Self = StObject.set(x, "RemoveOutputLocation", js.undefined)
+    inline def setRemoveOutputLocationUndefined: Self = StObject.set(x, "RemoveOutputLocation", js.undefined)
   }
 }

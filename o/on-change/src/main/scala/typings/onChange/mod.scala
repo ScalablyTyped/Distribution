@@ -94,8 +94,7 @@ object mod {
   	// Callback isn't called
   	```
   	*/
-  @scala.inline
-  def apply[ObjectType /* <: StringDictionary[js.Any] */](
+  inline def apply[ObjectType /* <: StringDictionary[js.Any] */](
     `object`: ObjectType,
     onChange: js.ThisFunction4[
       /* this */ ObjectType, 
@@ -106,8 +105,7 @@ object mod {
       Unit
     ]
   ): ObjectType = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any])).asInstanceOf[ObjectType]
-  @scala.inline
-  def apply[ObjectType /* <: StringDictionary[js.Any] */](
+  inline def apply[ObjectType /* <: StringDictionary[js.Any] */](
     `object`: ObjectType,
     onChange: js.ThisFunction4[
       /* this */ ObjectType, 
@@ -120,8 +118,7 @@ object mod {
     options: OptionspathAsArrayfalseun
   ): ObjectType = (^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any], onChange.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ObjectType]
   // Overload that returns an Array as path when pathAsArray is true
-  @scala.inline
-  def apply[ObjectType /* <: StringDictionary[js.Any] */](
+  inline def apply[ObjectType /* <: StringDictionary[js.Any] */](
     `object`: ObjectType,
     onChange: js.ThisFunction4[
       /* this */ ObjectType, 
@@ -142,8 +139,7 @@ object mod {
   	@param object - Object that is already being watched for changes.
   	@returns The original unwatched object.
   	*/
-  @scala.inline
-  def target[ObjectType /* <: StringDictionary[js.Any] */](`object`: ObjectType): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("target")(`object`.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
+  inline def target[ObjectType /* <: StringDictionary[js.Any] */](`object`: ObjectType): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("target")(`object`.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
   
   // eslint-disable-line @typescript-eslint/method-signature-style
   /**
@@ -151,8 +147,7 @@ object mod {
   	@param object - Object that is already being watched for changes.
   	@returns The original unwatched object.
   	*/
-  @scala.inline
-  def unsubscribe[ObjectType /* <: StringDictionary[js.Any] */](`object`: ObjectType): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("unsubscribe")(`object`.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
+  inline def unsubscribe[ObjectType /* <: StringDictionary[js.Any] */](`object`: ObjectType): ObjectType = ^.asInstanceOf[js.Dynamic].applyDynamic("unsubscribe")(`object`.asInstanceOf[js.Any]).asInstanceOf[ObjectType]
   
   trait Options extends StObject {
     
@@ -235,59 +230,42 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setEquals_(value: (/* a */ js.Any, /* b */ js.Any) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
+      inline def setEquals_(value: (/* a */ js.Any, /* b */ js.Any) => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
+      inline def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
       
-      @scala.inline
-      def setIgnoreDetached(value: Boolean): Self = StObject.set(x, "ignoreDetached", value.asInstanceOf[js.Any])
+      inline def setIgnoreDetached(value: Boolean): Self = StObject.set(x, "ignoreDetached", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreDetachedUndefined: Self = StObject.set(x, "ignoreDetached", js.undefined)
+      inline def setIgnoreDetachedUndefined: Self = StObject.set(x, "ignoreDetached", js.undefined)
       
-      @scala.inline
-      def setIgnoreKeys(value: js.Array[String | js.Symbol]): Self = StObject.set(x, "ignoreKeys", value.asInstanceOf[js.Any])
+      inline def setIgnoreKeys(value: js.Array[String | js.Symbol]): Self = StObject.set(x, "ignoreKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreKeysUndefined: Self = StObject.set(x, "ignoreKeys", js.undefined)
+      inline def setIgnoreKeysUndefined: Self = StObject.set(x, "ignoreKeys", js.undefined)
       
-      @scala.inline
-      def setIgnoreKeysVarargs(value: (String | js.Symbol)*): Self = StObject.set(x, "ignoreKeys", js.Array(value :_*))
+      inline def setIgnoreKeysVarargs(value: (String | js.Symbol)*): Self = StObject.set(x, "ignoreKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setIgnoreSymbols(value: Boolean): Self = StObject.set(x, "ignoreSymbols", value.asInstanceOf[js.Any])
+      inline def setIgnoreSymbols(value: Boolean): Self = StObject.set(x, "ignoreSymbols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreSymbolsUndefined: Self = StObject.set(x, "ignoreSymbols", js.undefined)
+      inline def setIgnoreSymbolsUndefined: Self = StObject.set(x, "ignoreSymbols", js.undefined)
       
-      @scala.inline
-      def setIgnoreUnderscores(value: Boolean): Self = StObject.set(x, "ignoreUnderscores", value.asInstanceOf[js.Any])
+      inline def setIgnoreUnderscores(value: Boolean): Self = StObject.set(x, "ignoreUnderscores", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUnderscoresUndefined: Self = StObject.set(x, "ignoreUnderscores", js.undefined)
+      inline def setIgnoreUnderscoresUndefined: Self = StObject.set(x, "ignoreUnderscores", js.undefined)
       
-      @scala.inline
-      def setIsShallow(value: Boolean): Self = StObject.set(x, "isShallow", value.asInstanceOf[js.Any])
+      inline def setIsShallow(value: Boolean): Self = StObject.set(x, "isShallow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsShallowUndefined: Self = StObject.set(x, "isShallow", js.undefined)
+      inline def setIsShallowUndefined: Self = StObject.set(x, "isShallow", js.undefined)
       
-      @scala.inline
-      def setPathAsArray(value: Boolean): Self = StObject.set(x, "pathAsArray", value.asInstanceOf[js.Any])
+      inline def setPathAsArray(value: Boolean): Self = StObject.set(x, "pathAsArray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathAsArrayUndefined: Self = StObject.set(x, "pathAsArray", js.undefined)
+      inline def setPathAsArrayUndefined: Self = StObject.set(x, "pathAsArray", js.undefined)
     }
   }
 }

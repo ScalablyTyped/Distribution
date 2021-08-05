@@ -25,19 +25,19 @@ object chromecastOutputMod {
     extends StObject
        with IVideoOutput {
     
-    var _eventEmitter: js.Any = js.native
+    /* private */ var _eventEmitter: js.Any = js.native
     
-    var _initRemote: js.Any = js.native
+    /* private */ var _initRemote: js.Any = js.native
     
-    var _isAutoplay: js.Any = js.native
+    /* private */ var _isAutoplay: js.Any = js.native
     
-    var _player: js.Any = js.native
+    /* private */ var _player: js.Any = js.native
     
-    var _playerController: js.Any = js.native
+    /* private */ var _playerController: js.Any = js.native
     
-    var _src: js.Any = js.native
+    /* private */ var _src: js.Any = js.native
     
-    var _stateEngine: js.Any = js.native
+    /* private */ var _stateEngine: js.Any = js.native
     
     @JSName("autoplay")
     def autoplay_MChromecastOutput: Boolean = js.native

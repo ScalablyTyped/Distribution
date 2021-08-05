@@ -18,31 +18,23 @@ trait ShareDetails extends StObject {
 }
 object ShareDetails {
   
-  @scala.inline
-  def apply(): ShareDetails = {
+  inline def apply(): ShareDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShareDetails]
   }
   
-  @scala.inline
-  implicit class ShareDetailsMutableBuilder[Self <: ShareDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ShareDetails](x: Self) {
     
-    @scala.inline
-    def setShareErrors(value: ShareErrors): Self = StObject.set(x, "ShareErrors", value.asInstanceOf[js.Any])
+    inline def setShareErrors(value: ShareErrors): Self = StObject.set(x, "ShareErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShareErrorsUndefined: Self = StObject.set(x, "ShareErrors", js.undefined)
+    inline def setShareErrorsUndefined: Self = StObject.set(x, "ShareErrors", js.undefined)
     
-    @scala.inline
-    def setShareErrorsVarargs(value: ShareError*): Self = StObject.set(x, "ShareErrors", js.Array(value :_*))
+    inline def setShareErrorsVarargs(value: ShareError*): Self = StObject.set(x, "ShareErrors", js.Array(value :_*))
     
-    @scala.inline
-    def setSuccessfulShares(value: SuccessfulShares): Self = StObject.set(x, "SuccessfulShares", value.asInstanceOf[js.Any])
+    inline def setSuccessfulShares(value: SuccessfulShares): Self = StObject.set(x, "SuccessfulShares", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessfulSharesUndefined: Self = StObject.set(x, "SuccessfulShares", js.undefined)
+    inline def setSuccessfulSharesUndefined: Self = StObject.set(x, "SuccessfulShares", js.undefined)
     
-    @scala.inline
-    def setSuccessfulSharesVarargs(value: AccountId*): Self = StObject.set(x, "SuccessfulShares", js.Array(value :_*))
+    inline def setSuccessfulSharesVarargs(value: AccountId*): Self = StObject.set(x, "SuccessfulShares", js.Array(value :_*))
   }
 }

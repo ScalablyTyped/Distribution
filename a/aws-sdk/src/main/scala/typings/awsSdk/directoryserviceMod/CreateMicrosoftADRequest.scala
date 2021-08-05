@@ -43,49 +43,35 @@ trait CreateMicrosoftADRequest extends StObject {
 }
 object CreateMicrosoftADRequest {
   
-  @scala.inline
-  def apply(Name: DirectoryName, Password: Password, VpcSettings: DirectoryVpcSettings): CreateMicrosoftADRequest = {
+  inline def apply(Name: DirectoryName, Password: Password, VpcSettings: DirectoryVpcSettings): CreateMicrosoftADRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Password = Password.asInstanceOf[js.Any], VpcSettings = VpcSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateMicrosoftADRequest]
   }
   
-  @scala.inline
-  implicit class CreateMicrosoftADRequestMutableBuilder[Self <: CreateMicrosoftADRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateMicrosoftADRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setEdition(value: DirectoryEdition): Self = StObject.set(x, "Edition", value.asInstanceOf[js.Any])
+    inline def setEdition(value: DirectoryEdition): Self = StObject.set(x, "Edition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditionUndefined: Self = StObject.set(x, "Edition", js.undefined)
+    inline def setEditionUndefined: Self = StObject.set(x, "Edition", js.undefined)
     
-    @scala.inline
-    def setName(value: DirectoryName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: DirectoryName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassword(value: Password): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: Password): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortName(value: DirectoryShortName): Self = StObject.set(x, "ShortName", value.asInstanceOf[js.Any])
+    inline def setShortName(value: DirectoryShortName): Self = StObject.set(x, "ShortName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortNameUndefined: Self = StObject.set(x, "ShortName", js.undefined)
+    inline def setShortNameUndefined: Self = StObject.set(x, "ShortName", js.undefined)
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setVpcSettings(value: DirectoryVpcSettings): Self = StObject.set(x, "VpcSettings", value.asInstanceOf[js.Any])
+    inline def setVpcSettings(value: DirectoryVpcSettings): Self = StObject.set(x, "VpcSettings", value.asInstanceOf[js.Any])
   }
 }

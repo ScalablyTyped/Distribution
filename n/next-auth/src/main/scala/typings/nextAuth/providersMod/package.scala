@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def default: typings.nextAuth.providersMod.Providers = typings.nextAuth.providersMod.^.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[typings.nextAuth.providersMod.Providers]
+inline def default: typings.nextAuth.providersMod.Providers = typings.nextAuth.providersMod.^.asInstanceOf[js.Dynamic].selectDynamic("default").asInstanceOf[typings.nextAuth.providersMod.Providers]
 
 /**
   * Apple

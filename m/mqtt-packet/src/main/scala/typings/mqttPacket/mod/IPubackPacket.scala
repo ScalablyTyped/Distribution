@@ -18,22 +18,17 @@ trait IPubackPacket
 }
 object IPubackPacket {
   
-  @scala.inline
-  def apply(): IPubackPacket = {
+  inline def apply(): IPubackPacket = {
     val __obj = js.Dynamic.literal(cmd = "puback")
     __obj.asInstanceOf[IPubackPacket]
   }
   
-  @scala.inline
-  implicit class IPubackPacketMutableBuilder[Self <: IPubackPacket] (val x: Self) extends AnyVal {
+  extension [Self <: IPubackPacket](x: Self) {
     
-    @scala.inline
-    def setCmd(value: puback): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
+    inline def setCmd(value: puback): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: ReasonString): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: ReasonString): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }
 }

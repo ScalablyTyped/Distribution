@@ -48,61 +48,43 @@ trait DescribeFleetMetadataResponse extends StObject {
 }
 object DescribeFleetMetadataResponse {
   
-  @scala.inline
-  def apply(): DescribeFleetMetadataResponse = {
+  inline def apply(): DescribeFleetMetadataResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeFleetMetadataResponse]
   }
   
-  @scala.inline
-  implicit class DescribeFleetMetadataResponseMutableBuilder[Self <: DescribeFleetMetadataResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeFleetMetadataResponse](x: Self) {
     
-    @scala.inline
-    def setCompanyCode(value: CompanyCode): Self = StObject.set(x, "CompanyCode", value.asInstanceOf[js.Any])
+    inline def setCompanyCode(value: CompanyCode): Self = StObject.set(x, "CompanyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompanyCodeUndefined: Self = StObject.set(x, "CompanyCode", js.undefined)
+    inline def setCompanyCodeUndefined: Self = StObject.set(x, "CompanyCode", js.undefined)
     
-    @scala.inline
-    def setCreatedTime(value: DateTime): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: DateTime): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
+    inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: DisplayName): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: DisplayName): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
     
-    @scala.inline
-    def setFleetName(value: FleetName): Self = StObject.set(x, "FleetName", value.asInstanceOf[js.Any])
+    inline def setFleetName(value: FleetName): Self = StObject.set(x, "FleetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFleetNameUndefined: Self = StObject.set(x, "FleetName", js.undefined)
+    inline def setFleetNameUndefined: Self = StObject.set(x, "FleetName", js.undefined)
     
-    @scala.inline
-    def setFleetStatus(value: FleetStatus): Self = StObject.set(x, "FleetStatus", value.asInstanceOf[js.Any])
+    inline def setFleetStatus(value: FleetStatus): Self = StObject.set(x, "FleetStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFleetStatusUndefined: Self = StObject.set(x, "FleetStatus", js.undefined)
+    inline def setFleetStatusUndefined: Self = StObject.set(x, "FleetStatus", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedTime(value: DateTime): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: DateTime): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
+    inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
     
-    @scala.inline
-    def setOptimizeForEndUserLocation(value: Boolean): Self = StObject.set(x, "OptimizeForEndUserLocation", value.asInstanceOf[js.Any])
+    inline def setOptimizeForEndUserLocation(value: Boolean): Self = StObject.set(x, "OptimizeForEndUserLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptimizeForEndUserLocationUndefined: Self = StObject.set(x, "OptimizeForEndUserLocation", js.undefined)
+    inline def setOptimizeForEndUserLocationUndefined: Self = StObject.set(x, "OptimizeForEndUserLocation", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

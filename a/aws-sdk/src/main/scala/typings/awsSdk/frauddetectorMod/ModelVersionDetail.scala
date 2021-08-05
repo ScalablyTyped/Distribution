@@ -63,79 +63,55 @@ trait ModelVersionDetail extends StObject {
 }
 object ModelVersionDetail {
   
-  @scala.inline
-  def apply(): ModelVersionDetail = {
+  inline def apply(): ModelVersionDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModelVersionDetail]
   }
   
-  @scala.inline
-  implicit class ModelVersionDetailMutableBuilder[Self <: ModelVersionDetail] (val x: Self) extends AnyVal {
+  extension [Self <: ModelVersionDetail](x: Self) {
     
-    @scala.inline
-    def setArn(value: fraudDetectorArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: fraudDetectorArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setCreatedTime(value: time): Self = StObject.set(x, "createdTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: time): Self = StObject.set(x, "createdTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedTimeUndefined: Self = StObject.set(x, "createdTime", js.undefined)
+    inline def setCreatedTimeUndefined: Self = StObject.set(x, "createdTime", js.undefined)
     
-    @scala.inline
-    def setExternalEventsDetail(value: ExternalEventsDetail): Self = StObject.set(x, "externalEventsDetail", value.asInstanceOf[js.Any])
+    inline def setExternalEventsDetail(value: ExternalEventsDetail): Self = StObject.set(x, "externalEventsDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalEventsDetailUndefined: Self = StObject.set(x, "externalEventsDetail", js.undefined)
+    inline def setExternalEventsDetailUndefined: Self = StObject.set(x, "externalEventsDetail", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedTime(value: time): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: time): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedTimeUndefined: Self = StObject.set(x, "lastUpdatedTime", js.undefined)
+    inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "lastUpdatedTime", js.undefined)
     
-    @scala.inline
-    def setModelId(value: modelIdentifier): Self = StObject.set(x, "modelId", value.asInstanceOf[js.Any])
+    inline def setModelId(value: modelIdentifier): Self = StObject.set(x, "modelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelIdUndefined: Self = StObject.set(x, "modelId", js.undefined)
+    inline def setModelIdUndefined: Self = StObject.set(x, "modelId", js.undefined)
     
-    @scala.inline
-    def setModelType(value: ModelTypeEnum): Self = StObject.set(x, "modelType", value.asInstanceOf[js.Any])
+    inline def setModelType(value: ModelTypeEnum): Self = StObject.set(x, "modelType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelTypeUndefined: Self = StObject.set(x, "modelType", js.undefined)
+    inline def setModelTypeUndefined: Self = StObject.set(x, "modelType", js.undefined)
     
-    @scala.inline
-    def setModelVersionNumber(value: floatVersionString): Self = StObject.set(x, "modelVersionNumber", value.asInstanceOf[js.Any])
+    inline def setModelVersionNumber(value: floatVersionString): Self = StObject.set(x, "modelVersionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelVersionNumberUndefined: Self = StObject.set(x, "modelVersionNumber", js.undefined)
+    inline def setModelVersionNumberUndefined: Self = StObject.set(x, "modelVersionNumber", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTrainingDataSchema(value: TrainingDataSchema): Self = StObject.set(x, "trainingDataSchema", value.asInstanceOf[js.Any])
+    inline def setTrainingDataSchema(value: TrainingDataSchema): Self = StObject.set(x, "trainingDataSchema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrainingDataSchemaUndefined: Self = StObject.set(x, "trainingDataSchema", js.undefined)
+    inline def setTrainingDataSchemaUndefined: Self = StObject.set(x, "trainingDataSchema", js.undefined)
     
-    @scala.inline
-    def setTrainingDataSource(value: TrainingDataSourceEnum): Self = StObject.set(x, "trainingDataSource", value.asInstanceOf[js.Any])
+    inline def setTrainingDataSource(value: TrainingDataSourceEnum): Self = StObject.set(x, "trainingDataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrainingDataSourceUndefined: Self = StObject.set(x, "trainingDataSource", js.undefined)
+    inline def setTrainingDataSourceUndefined: Self = StObject.set(x, "trainingDataSource", js.undefined)
     
-    @scala.inline
-    def setTrainingResult(value: TrainingResult): Self = StObject.set(x, "trainingResult", value.asInstanceOf[js.Any])
+    inline def setTrainingResult(value: TrainingResult): Self = StObject.set(x, "trainingResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrainingResultUndefined: Self = StObject.set(x, "trainingResult", js.undefined)
+    inline def setTrainingResultUndefined: Self = StObject.set(x, "trainingResult", js.undefined)
   }
 }

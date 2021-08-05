@@ -22,17 +22,14 @@ object toBeEmptyArrayMod {
       }
       object Matchers {
         
-        @scala.inline
-        def apply[T](toBeEmptyArray: /* expectationFailOutput */ js.UndefOr[js.Any] => Boolean): Matchers[T] = {
+        inline def apply[T](toBeEmptyArray: /* expectationFailOutput */ js.UndefOr[js.Any] => Boolean): Matchers[T] = {
           val __obj = js.Dynamic.literal(toBeEmptyArray = js.Any.fromFunction1(toBeEmptyArray))
           __obj.asInstanceOf[Matchers[T]]
         }
         
-        @scala.inline
-        implicit class MatchersMutableBuilder[Self <: Matchers[?], T] (val x: Self & Matchers[T]) extends AnyVal {
+        extension [Self <: Matchers[?], T](x: Self & Matchers[T]) {
           
-          @scala.inline
-          def setToBeEmptyArray(value: /* expectationFailOutput */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "toBeEmptyArray", js.Any.fromFunction1(value))
+          inline def setToBeEmptyArray(value: /* expectationFailOutput */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "toBeEmptyArray", js.Any.fromFunction1(value))
         }
       }
     }

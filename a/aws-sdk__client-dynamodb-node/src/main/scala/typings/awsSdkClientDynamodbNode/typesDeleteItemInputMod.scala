@@ -102,8 +102,7 @@ object typesDeleteItemInputMod {
   }
   object DeleteItemInput {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Key: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]]),
       TableName: String
     ): DeleteItemInput = {
@@ -111,84 +110,59 @@ object typesDeleteItemInputMod {
       __obj.asInstanceOf[DeleteItemInput]
     }
     
-    @scala.inline
-    implicit class DeleteItemInputMutableBuilder[Self <: DeleteItemInput] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteItemInput](x: Self) {
       
-      @scala.inline
-      def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
+      inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
+      inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
-      @scala.inline
-      def set$httpOptions(
+      inline def set$httpOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
+      inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
       
-      @scala.inline
-      def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
+      inline def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
+      inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      @scala.inline
-      def setConditionExpression(value: String): Self = StObject.set(x, "ConditionExpression", value.asInstanceOf[js.Any])
+      inline def setConditionExpression(value: String): Self = StObject.set(x, "ConditionExpression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionExpressionUndefined: Self = StObject.set(x, "ConditionExpression", js.undefined)
+      inline def setConditionExpressionUndefined: Self = StObject.set(x, "ConditionExpression", js.undefined)
       
-      @scala.inline
-      def setConditionalOperator(value: AND | OR | String): Self = StObject.set(x, "ConditionalOperator", value.asInstanceOf[js.Any])
+      inline def setConditionalOperator(value: AND | OR | String): Self = StObject.set(x, "ConditionalOperator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionalOperatorUndefined: Self = StObject.set(x, "ConditionalOperator", js.undefined)
+      inline def setConditionalOperatorUndefined: Self = StObject.set(x, "ConditionalOperator", js.undefined)
       
-      @scala.inline
-      def setExpected(
+      inline def setExpected(
         value: StringDictionary[ExpectedAttributeValue] | (Iterable[js.Tuple2[String, ExpectedAttributeValue]])
       ): Self = StObject.set(x, "Expected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpectedUndefined: Self = StObject.set(x, "Expected", js.undefined)
+      inline def setExpectedUndefined: Self = StObject.set(x, "Expected", js.undefined)
       
-      @scala.inline
-      def setExpressionAttributeNames(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
+      inline def setExpressionAttributeNames(value: StringDictionary[String] | (Iterable[js.Tuple2[String, String]])): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
+      inline def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
       
-      @scala.inline
-      def setExpressionAttributeValues(value: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]])): Self = StObject.set(x, "ExpressionAttributeValues", value.asInstanceOf[js.Any])
+      inline def setExpressionAttributeValues(value: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]])): Self = StObject.set(x, "ExpressionAttributeValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionAttributeValuesUndefined: Self = StObject.set(x, "ExpressionAttributeValues", js.undefined)
+      inline def setExpressionAttributeValuesUndefined: Self = StObject.set(x, "ExpressionAttributeValues", js.undefined)
       
-      @scala.inline
-      def setKey(value: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]])): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+      inline def setKey(value: StringDictionary[AttributeValue] | (Iterable[js.Tuple2[String, AttributeValue]])): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnConsumedCapacity(value: INDEXES | TOTAL | NONE | String): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
+      inline def setReturnConsumedCapacity(value: INDEXES | TOTAL | NONE | String): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
+      inline def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
       
-      @scala.inline
-      def setReturnItemCollectionMetrics(value: SIZE | NONE | String): Self = StObject.set(x, "ReturnItemCollectionMetrics", value.asInstanceOf[js.Any])
+      inline def setReturnItemCollectionMetrics(value: SIZE | NONE | String): Self = StObject.set(x, "ReturnItemCollectionMetrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnItemCollectionMetricsUndefined: Self = StObject.set(x, "ReturnItemCollectionMetrics", js.undefined)
+      inline def setReturnItemCollectionMetricsUndefined: Self = StObject.set(x, "ReturnItemCollectionMetrics", js.undefined)
       
-      @scala.inline
-      def setReturnValues(value: NONE | ALL_OLD | UPDATED_OLD | ALL_NEW | UPDATED_NEW | String): Self = StObject.set(x, "ReturnValues", value.asInstanceOf[js.Any])
+      inline def setReturnValues(value: NONE | ALL_OLD | UPDATED_OLD | ALL_NEW | UPDATED_NEW | String): Self = StObject.set(x, "ReturnValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnValuesUndefined: Self = StObject.set(x, "ReturnValues", js.undefined)
+      inline def setReturnValuesUndefined: Self = StObject.set(x, "ReturnValues", js.undefined)
       
-      @scala.inline
-      def setTableName(value: String): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: String): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     }
   }
 }

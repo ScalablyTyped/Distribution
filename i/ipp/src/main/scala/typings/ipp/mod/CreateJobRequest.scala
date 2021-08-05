@@ -13,23 +13,18 @@ trait CreateJobRequest extends StObject {
 }
 object CreateJobRequest {
   
-  @scala.inline
-  def apply(`operation-attributes-tag`: Ippattributefidelity): CreateJobRequest = {
+  inline def apply(`operation-attributes-tag`: Ippattributefidelity): CreateJobRequest = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("operation-attributes-tag")(`operation-attributes-tag`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateJobRequest]
   }
   
-  @scala.inline
-  implicit class CreateJobRequestMutableBuilder[Self <: CreateJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateJobRequest](x: Self) {
     
-    @scala.inline
-    def `setJob-attributes-tag`(value: JobTemplateAttributes): Self = StObject.set(x, "job-attributes-tag", value.asInstanceOf[js.Any])
+    inline def `setJob-attributes-tag`(value: JobTemplateAttributes): Self = StObject.set(x, "job-attributes-tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setJob-attributes-tagUndefined`: Self = StObject.set(x, "job-attributes-tag", js.undefined)
+    inline def `setJob-attributes-tagUndefined`: Self = StObject.set(x, "job-attributes-tag", js.undefined)
     
-    @scala.inline
-    def `setOperation-attributes-tag`(value: Ippattributefidelity): Self = StObject.set(x, "operation-attributes-tag", value.asInstanceOf[js.Any])
+    inline def `setOperation-attributes-tag`(value: Ippattributefidelity): Self = StObject.set(x, "operation-attributes-tag", value.asInstanceOf[js.Any])
   }
 }

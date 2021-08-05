@@ -26,23 +26,18 @@ object taxRates {
   }
   object ITaxAmount {
     
-    @scala.inline
-    def apply(amount: Double, inclusive: Boolean, tax_rate: String | ITaxRate): ITaxAmount = {
+    inline def apply(amount: Double, inclusive: Boolean, tax_rate: String | ITaxRate): ITaxAmount = {
       val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], inclusive = inclusive.asInstanceOf[js.Any], tax_rate = tax_rate.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITaxAmount]
     }
     
-    @scala.inline
-    implicit class ITaxAmountMutableBuilder[Self <: ITaxAmount] (val x: Self) extends AnyVal {
+    extension [Self <: ITaxAmount](x: Self) {
       
-      @scala.inline
-      def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInclusive(value: Boolean): Self = StObject.set(x, "inclusive", value.asInstanceOf[js.Any])
+      inline def setInclusive(value: Boolean): Self = StObject.set(x, "inclusive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTax_rate(value: String | ITaxRate): Self = StObject.set(x, "tax_rate", value.asInstanceOf[js.Any])
+      inline def setTax_rate(value: String | ITaxRate): Self = StObject.set(x, "tax_rate", value.asInstanceOf[js.Any])
     }
   }
   
@@ -106,60 +101,43 @@ object taxRates {
   }
   object ITaxRate {
     
-    @scala.inline
-    def apply(active: Boolean, id: String, inclusive: Boolean, livemode: Boolean, metadata: IMetadata): ITaxRate = {
+    inline def apply(active: Boolean, id: String, inclusive: Boolean, livemode: Boolean, metadata: IMetadata): ITaxRate = {
       val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], inclusive = inclusive.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], created = null, description = null, display_name = null, jurisdiction = null, percentage = null)
       __obj.updateDynamic("object")("tax_rate")
       __obj.asInstanceOf[ITaxRate]
     }
     
-    @scala.inline
-    implicit class ITaxRateMutableBuilder[Self <: ITaxRate] (val x: Self) extends AnyVal {
+    extension [Self <: ITaxRate](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedNull: Self = StObject.set(x, "created", null)
+      inline def setCreatedNull: Self = StObject.set(x, "created", null)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionNull: Self = StObject.set(x, "description", null)
+      inline def setDescriptionNull: Self = StObject.set(x, "description", null)
       
-      @scala.inline
-      def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
+      inline def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplay_nameNull: Self = StObject.set(x, "display_name", null)
+      inline def setDisplay_nameNull: Self = StObject.set(x, "display_name", null)
       
-      @scala.inline
-      def setInclusive(value: Boolean): Self = StObject.set(x, "inclusive", value.asInstanceOf[js.Any])
+      inline def setInclusive(value: Boolean): Self = StObject.set(x, "inclusive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJurisdiction(value: String): Self = StObject.set(x, "jurisdiction", value.asInstanceOf[js.Any])
+      inline def setJurisdiction(value: String): Self = StObject.set(x, "jurisdiction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJurisdictionNull: Self = StObject.set(x, "jurisdiction", null)
+      inline def setJurisdictionNull: Self = StObject.set(x, "jurisdiction", null)
       
-      @scala.inline
-      def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
+      inline def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: tax_rate): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: tax_rate): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
+      inline def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercentageNull: Self = StObject.set(x, "percentage", null)
+      inline def setPercentageNull: Self = StObject.set(x, "percentage", null)
     }
   }
   
@@ -203,47 +181,34 @@ object taxRates {
   }
   object ITaxRateCreationOptions {
     
-    @scala.inline
-    def apply(display_name: String, inclusive: Boolean, percentage: Double): ITaxRateCreationOptions = {
+    inline def apply(display_name: String, inclusive: Boolean, percentage: Double): ITaxRateCreationOptions = {
       val __obj = js.Dynamic.literal(display_name = display_name.asInstanceOf[js.Any], inclusive = inclusive.asInstanceOf[js.Any], percentage = percentage.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITaxRateCreationOptions]
     }
     
-    @scala.inline
-    implicit class ITaxRateCreationOptionsMutableBuilder[Self <: ITaxRateCreationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ITaxRateCreationOptions](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
+      inline def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInclusive(value: Boolean): Self = StObject.set(x, "inclusive", value.asInstanceOf[js.Any])
+      inline def setInclusive(value: Boolean): Self = StObject.set(x, "inclusive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJurisdiction(value: String): Self = StObject.set(x, "jurisdiction", value.asInstanceOf[js.Any])
+      inline def setJurisdiction(value: String): Self = StObject.set(x, "jurisdiction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJurisdictionUndefined: Self = StObject.set(x, "jurisdiction", js.undefined)
+      inline def setJurisdictionUndefined: Self = StObject.set(x, "jurisdiction", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: IOptionsMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: IOptionsMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
+      inline def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
     }
   }
   
@@ -277,44 +242,32 @@ object taxRates {
   }
   object ITaxRateUpdateOptions {
     
-    @scala.inline
-    def apply(): ITaxRateUpdateOptions = {
+    inline def apply(): ITaxRateUpdateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ITaxRateUpdateOptions]
     }
     
-    @scala.inline
-    implicit class ITaxRateUpdateOptionsMutableBuilder[Self <: ITaxRateUpdateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ITaxRateUpdateOptions](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
+      inline def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplay_nameUndefined: Self = StObject.set(x, "display_name", js.undefined)
+      inline def setDisplay_nameUndefined: Self = StObject.set(x, "display_name", js.undefined)
       
-      @scala.inline
-      def setJurisdiction(value: String): Self = StObject.set(x, "jurisdiction", value.asInstanceOf[js.Any])
+      inline def setJurisdiction(value: String): Self = StObject.set(x, "jurisdiction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJurisdictionUndefined: Self = StObject.set(x, "jurisdiction", js.undefined)
+      inline def setJurisdictionUndefined: Self = StObject.set(x, "jurisdiction", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: IOptionsMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: IOptionsMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     }
   }
   
@@ -347,35 +300,26 @@ object taxRates {
   }
   object ItaxRateSearchOptions {
     
-    @scala.inline
-    def apply(limit: Double): ItaxRateSearchOptions = {
+    inline def apply(limit: Double): ItaxRateSearchOptions = {
       val __obj = js.Dynamic.literal(limit = limit.asInstanceOf[js.Any])
       __obj.asInstanceOf[ItaxRateSearchOptions]
     }
     
-    @scala.inline
-    implicit class ItaxRateSearchOptionsMutableBuilder[Self <: ItaxRateSearchOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ItaxRateSearchOptions](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setCreated(value: String | IDateFilter): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: String | IDateFilter): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+      inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
       
-      @scala.inline
-      def setInclusive(value: Boolean): Self = StObject.set(x, "inclusive", value.asInstanceOf[js.Any])
+      inline def setInclusive(value: Boolean): Self = StObject.set(x, "inclusive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInclusiveUndefined: Self = StObject.set(x, "inclusive", js.undefined)
+      inline def setInclusiveUndefined: Self = StObject.set(x, "inclusive", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     }
   }
 }

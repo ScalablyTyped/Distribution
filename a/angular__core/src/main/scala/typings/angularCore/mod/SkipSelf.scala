@@ -8,6 +8,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SkipSelf extends StObject
 object SkipSelf {
   
-  @scala.inline
-  def apply: SkipSelfDecorator = ^.asInstanceOf[js.Dynamic].selectDynamic("SkipSelf").asInstanceOf[SkipSelfDecorator]
+  inline def apply: SkipSelfDecorator = ^.asInstanceOf[js.Dynamic].selectDynamic("SkipSelf").asInstanceOf[SkipSelfDecorator]
 }

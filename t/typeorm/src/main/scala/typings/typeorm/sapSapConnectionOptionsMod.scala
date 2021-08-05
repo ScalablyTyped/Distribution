@@ -35,30 +35,23 @@ object sapSapConnectionOptionsMod {
   }
   object SapConnectionOptions {
     
-    @scala.inline
-    def apply(): SapConnectionOptions = {
+    inline def apply(): SapConnectionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("sap")
       __obj.asInstanceOf[SapConnectionOptions]
     }
     
-    @scala.inline
-    implicit class SapConnectionOptionsMutableBuilder[Self <: SapConnectionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SapConnectionOptions](x: Self) {
       
-      @scala.inline
-      def setPool(value: CheckInterval): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
+      inline def setPool(value: CheckInterval): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoolUndefined: Self = StObject.set(x, "pool", js.undefined)
+      inline def setPoolUndefined: Self = StObject.set(x, "pool", js.undefined)
       
-      @scala.inline
-      def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+      inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
       
-      @scala.inline
-      def setType(value: sap): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: sap): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

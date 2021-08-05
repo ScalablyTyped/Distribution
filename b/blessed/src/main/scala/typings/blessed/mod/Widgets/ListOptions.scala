@@ -38,46 +38,33 @@ trait ListOptions[TStyle /* <: ListElementStyle */]
 }
 object ListOptions {
   
-  @scala.inline
-  def apply[TStyle /* <: ListElementStyle */](): ListOptions[TStyle] = {
+  inline def apply[TStyle /* <: ListElementStyle */](): ListOptions[TStyle] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListOptions[TStyle]]
   }
   
-  @scala.inline
-  implicit class ListOptionsMutableBuilder[Self <: ListOptions[?], TStyle /* <: ListElementStyle */] (val x: Self & ListOptions[TStyle]) extends AnyVal {
+  extension [Self <: ListOptions[?], TStyle /* <: ListElementStyle */](x: Self & ListOptions[TStyle]) {
     
-    @scala.inline
-    def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
+    inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
+    inline def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
     
-    @scala.inline
-    def setInvertSelected(value: Boolean): Self = StObject.set(x, "invertSelected", value.asInstanceOf[js.Any])
+    inline def setInvertSelected(value: Boolean): Self = StObject.set(x, "invertSelected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvertSelectedUndefined: Self = StObject.set(x, "invertSelected", js.undefined)
+    inline def setInvertSelectedUndefined: Self = StObject.set(x, "invertSelected", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Array[String]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[String]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: String*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: String*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setSearch(value: (/* err */ js.Any, /* value */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "search", js.Any.fromFunction2(value))
+    inline def setSearch(value: (/* err */ js.Any, /* value */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "search", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+    inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
     
-    @scala.inline
-    def setStyle(value: TStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: TStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

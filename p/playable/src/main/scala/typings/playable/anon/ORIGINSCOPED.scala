@@ -10,16 +10,13 @@ trait ORIGINSCOPED extends StObject {
 }
 object ORIGINSCOPED {
   
-  @scala.inline
-  def apply(ORIGIN_SCOPED: Boolean): ORIGINSCOPED = {
+  inline def apply(ORIGIN_SCOPED: Boolean): ORIGINSCOPED = {
     val __obj = js.Dynamic.literal(ORIGIN_SCOPED = ORIGIN_SCOPED.asInstanceOf[js.Any])
     __obj.asInstanceOf[ORIGINSCOPED]
   }
   
-  @scala.inline
-  implicit class ORIGINSCOPEDMutableBuilder[Self <: ORIGINSCOPED] (val x: Self) extends AnyVal {
+  extension [Self <: ORIGINSCOPED](x: Self) {
     
-    @scala.inline
-    def setORIGIN_SCOPED(value: Boolean): Self = StObject.set(x, "ORIGIN_SCOPED", value.asInstanceOf[js.Any])
+    inline def setORIGIN_SCOPED(value: Boolean): Self = StObject.set(x, "ORIGIN_SCOPED", value.asInstanceOf[js.Any])
   }
 }

@@ -14,16 +14,13 @@ trait ExecuteActionRequestedEventOptions
 }
 object ExecuteActionRequestedEventOptions {
   
-  @scala.inline
-  def apply(actionId: String, entryPaths: js.Array[String], fileSystemId: String, requestId: integer): ExecuteActionRequestedEventOptions = {
+  inline def apply(actionId: String, entryPaths: js.Array[String], fileSystemId: String, requestId: integer): ExecuteActionRequestedEventOptions = {
     val __obj = js.Dynamic.literal(actionId = actionId.asInstanceOf[js.Any], entryPaths = entryPaths.asInstanceOf[js.Any], fileSystemId = fileSystemId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExecuteActionRequestedEventOptions]
   }
   
-  @scala.inline
-  implicit class ExecuteActionRequestedEventOptionsMutableBuilder[Self <: ExecuteActionRequestedEventOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ExecuteActionRequestedEventOptions](x: Self) {
     
-    @scala.inline
-    def setActionId(value: String): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
+    inline def setActionId(value: String): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
   }
 }

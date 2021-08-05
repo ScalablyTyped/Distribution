@@ -29,44 +29,32 @@ object socialPreviewMod {
   }
   object SocialPreviewProps {
     
-    @scala.inline
-    def apply(): SocialPreviewProps = {
+    inline def apply(): SocialPreviewProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SocialPreviewProps]
     }
     
-    @scala.inline
-    implicit class SocialPreviewPropsMutableBuilder[Self <: SocialPreviewProps] (val x: Self) extends AnyVal {
+    extension [Self <: SocialPreviewProps](x: Self) {
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setMedia(value: ReactNode): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+      inline def setMedia(value: ReactNode): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
+      inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
       
-      @scala.inline
-      def setPreviewUrl(value: String): Self = StObject.set(x, "previewUrl", value.asInstanceOf[js.Any])
+      inline def setPreviewUrl(value: String): Self = StObject.set(x, "previewUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewUrlUndefined: Self = StObject.set(x, "previewUrl", js.undefined)
+      inline def setPreviewUrlUndefined: Self = StObject.set(x, "previewUrl", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
 }

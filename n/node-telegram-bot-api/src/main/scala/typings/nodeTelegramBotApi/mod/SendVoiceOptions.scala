@@ -16,31 +16,23 @@ trait SendVoiceOptions
 }
 object SendVoiceOptions {
   
-  @scala.inline
-  def apply(): SendVoiceOptions = {
+  inline def apply(): SendVoiceOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SendVoiceOptions]
   }
   
-  @scala.inline
-  implicit class SendVoiceOptionsMutableBuilder[Self <: SendVoiceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SendVoiceOptions](x: Self) {
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setParse_mode(value: ParseMode): Self = StObject.set(x, "parse_mode", value.asInstanceOf[js.Any])
+    inline def setParse_mode(value: ParseMode): Self = StObject.set(x, "parse_mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParse_modeUndefined: Self = StObject.set(x, "parse_mode", js.undefined)
+    inline def setParse_modeUndefined: Self = StObject.set(x, "parse_mode", js.undefined)
   }
 }

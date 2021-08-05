@@ -12,25 +12,19 @@ trait ConfigOptions extends StObject {
 }
 object ConfigOptions {
   
-  @scala.inline
-  def apply(): ConfigOptions = {
+  inline def apply(): ConfigOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfigOptions]
   }
   
-  @scala.inline
-  implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigOptions](x: Self) {
     
-    @scala.inline
-    def setLogLevel(value: String): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+    inline def setLogLevel(value: String): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+    inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
     
-    @scala.inline
-    def setRtmPort(value: Double): Self = StObject.set(x, "rtmPort", value.asInstanceOf[js.Any])
+    inline def setRtmPort(value: Double): Self = StObject.set(x, "rtmPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRtmPortUndefined: Self = StObject.set(x, "rtmPort", js.undefined)
+    inline def setRtmPortUndefined: Self = StObject.set(x, "rtmPort", js.undefined)
   }
 }

@@ -37,8 +37,7 @@ trait ObjectMetricSource extends StObject {
 }
 object ObjectMetricSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     averageValue: String,
     metricName: String,
     selector: LabelSelector,
@@ -49,22 +48,16 @@ object ObjectMetricSource {
     __obj.asInstanceOf[ObjectMetricSource]
   }
   
-  @scala.inline
-  implicit class ObjectMetricSourceMutableBuilder[Self <: ObjectMetricSource] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectMetricSource](x: Self) {
     
-    @scala.inline
-    def setAverageValue(value: String): Self = StObject.set(x, "averageValue", value.asInstanceOf[js.Any])
+    inline def setAverageValue(value: String): Self = StObject.set(x, "averageValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelector(value: LabelSelector): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: LabelSelector): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: CrossVersionObjectReference): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: CrossVersionObjectReference): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetValue(value: String): Self = StObject.set(x, "targetValue", value.asInstanceOf[js.Any])
+    inline def setTargetValue(value: String): Self = StObject.set(x, "targetValue", value.asInstanceOf[js.Any])
   }
 }

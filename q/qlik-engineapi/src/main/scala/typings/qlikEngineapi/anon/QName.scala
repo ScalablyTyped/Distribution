@@ -10,16 +10,13 @@ trait QName extends StObject {
 }
 object QName {
   
-  @scala.inline
-  def apply(qName: String): QName = {
+  inline def apply(qName: String): QName = {
     val __obj = js.Dynamic.literal(qName = qName.asInstanceOf[js.Any])
     __obj.asInstanceOf[QName]
   }
   
-  @scala.inline
-  implicit class QNameMutableBuilder[Self <: QName] (val x: Self) extends AnyVal {
+  extension [Self <: QName](x: Self) {
     
-    @scala.inline
-    def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
+    inline def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
   }
 }

@@ -21,16 +21,13 @@ trait BatchDrawCall extends StObject {
 }
 object BatchDrawCall {
   
-  @scala.inline
-  def apply(data: js.Any): BatchDrawCall = {
+  inline def apply(data: js.Any): BatchDrawCall = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchDrawCall]
   }
   
-  @scala.inline
-  implicit class BatchDrawCallMutableBuilder[Self <: BatchDrawCall] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDrawCall](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

@@ -9,8 +9,7 @@ trait KeypadPressedEventArgs
      with IKeypadPressedEventArgs
 object KeypadPressedEventArgs {
   
-  @scala.inline
-  def apply(telephonyKey: TelephonyKey): KeypadPressedEventArgs = {
+  inline def apply(telephonyKey: TelephonyKey): KeypadPressedEventArgs = {
     val __obj = js.Dynamic.literal(telephonyKey = telephonyKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeypadPressedEventArgs]
   }

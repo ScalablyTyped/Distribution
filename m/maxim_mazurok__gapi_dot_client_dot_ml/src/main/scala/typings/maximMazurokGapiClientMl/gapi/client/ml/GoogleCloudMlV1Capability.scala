@@ -13,28 +13,21 @@ trait GoogleCloudMlV1Capability extends StObject {
 }
 object GoogleCloudMlV1Capability {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1Capability = {
+  inline def apply(): GoogleCloudMlV1Capability = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1Capability]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1CapabilityMutableBuilder[Self <: GoogleCloudMlV1Capability] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1Capability](x: Self) {
     
-    @scala.inline
-    def setAvailableAccelerators(value: js.Array[String]): Self = StObject.set(x, "availableAccelerators", value.asInstanceOf[js.Any])
+    inline def setAvailableAccelerators(value: js.Array[String]): Self = StObject.set(x, "availableAccelerators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailableAcceleratorsUndefined: Self = StObject.set(x, "availableAccelerators", js.undefined)
+    inline def setAvailableAcceleratorsUndefined: Self = StObject.set(x, "availableAccelerators", js.undefined)
     
-    @scala.inline
-    def setAvailableAcceleratorsVarargs(value: String*): Self = StObject.set(x, "availableAccelerators", js.Array(value :_*))
+    inline def setAvailableAcceleratorsVarargs(value: String*): Self = StObject.set(x, "availableAccelerators", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

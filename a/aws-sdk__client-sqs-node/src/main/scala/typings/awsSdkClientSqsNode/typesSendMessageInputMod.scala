@@ -71,66 +71,48 @@ object typesSendMessageInputMod {
   }
   object SendMessageInput {
     
-    @scala.inline
-    def apply(MessageBody: String, QueueUrl: String): SendMessageInput = {
+    inline def apply(MessageBody: String, QueueUrl: String): SendMessageInput = {
       val __obj = js.Dynamic.literal(MessageBody = MessageBody.asInstanceOf[js.Any], QueueUrl = QueueUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[SendMessageInput]
     }
     
-    @scala.inline
-    implicit class SendMessageInputMutableBuilder[Self <: SendMessageInput] (val x: Self) extends AnyVal {
+    extension [Self <: SendMessageInput](x: Self) {
       
-      @scala.inline
-      def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
+      inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
+      inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
-      @scala.inline
-      def set$httpOptions(
+      inline def set$httpOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
+      inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
       
-      @scala.inline
-      def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
+      inline def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
+      inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      @scala.inline
-      def setDelaySeconds(value: Double): Self = StObject.set(x, "DelaySeconds", value.asInstanceOf[js.Any])
+      inline def setDelaySeconds(value: Double): Self = StObject.set(x, "DelaySeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelaySecondsUndefined: Self = StObject.set(x, "DelaySeconds", js.undefined)
+      inline def setDelaySecondsUndefined: Self = StObject.set(x, "DelaySeconds", js.undefined)
       
-      @scala.inline
-      def setMessageAttributes(
+      inline def setMessageAttributes(
         value: StringDictionary[MessageAttributeValue] | (Iterable[js.Tuple2[String, MessageAttributeValue]])
       ): Self = StObject.set(x, "MessageAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageAttributesUndefined: Self = StObject.set(x, "MessageAttributes", js.undefined)
+      inline def setMessageAttributesUndefined: Self = StObject.set(x, "MessageAttributes", js.undefined)
       
-      @scala.inline
-      def setMessageBody(value: String): Self = StObject.set(x, "MessageBody", value.asInstanceOf[js.Any])
+      inline def setMessageBody(value: String): Self = StObject.set(x, "MessageBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageDeduplicationId(value: String): Self = StObject.set(x, "MessageDeduplicationId", value.asInstanceOf[js.Any])
+      inline def setMessageDeduplicationId(value: String): Self = StObject.set(x, "MessageDeduplicationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageDeduplicationIdUndefined: Self = StObject.set(x, "MessageDeduplicationId", js.undefined)
+      inline def setMessageDeduplicationIdUndefined: Self = StObject.set(x, "MessageDeduplicationId", js.undefined)
       
-      @scala.inline
-      def setMessageGroupId(value: String): Self = StObject.set(x, "MessageGroupId", value.asInstanceOf[js.Any])
+      inline def setMessageGroupId(value: String): Self = StObject.set(x, "MessageGroupId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageGroupIdUndefined: Self = StObject.set(x, "MessageGroupId", js.undefined)
+      inline def setMessageGroupIdUndefined: Self = StObject.set(x, "MessageGroupId", js.undefined)
       
-      @scala.inline
-      def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
+      inline def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
     }
   }
 }

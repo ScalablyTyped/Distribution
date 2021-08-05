@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.SignatureInfo")
 @js.native
-class SignatureInfo protected ()
+/* private */ class SignatureInfo ()
   extends StObject
      with typings.activexOffice.Office.SignatureInfo {
   
@@ -43,7 +43,7 @@ class SignatureInfo protected ()
   /* CompleteClass */
   override val IsValid: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.SignatureInfo_typekey")
   var OfficeDotSignatureInfo_typekey: typings.activexOffice.Office.SignatureInfo = js.native
   

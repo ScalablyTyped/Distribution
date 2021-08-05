@@ -14,20 +14,16 @@ object anon {
   }
   object AudioMode {
     
-    @scala.inline
-    def apply(audioMode: typings.clovelcedPluginAudiomanagement.mod.AudioMode, label: String): AudioMode = {
+    inline def apply(audioMode: typings.clovelcedPluginAudiomanagement.mod.AudioMode, label: String): AudioMode = {
       val __obj = js.Dynamic.literal(audioMode = audioMode.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[AudioMode]
     }
     
-    @scala.inline
-    implicit class AudioModeMutableBuilder[Self <: AudioMode] (val x: Self) extends AnyVal {
+    extension [Self <: AudioMode](x: Self) {
       
-      @scala.inline
-      def setAudioMode(value: typings.clovelcedPluginAudiomanagement.mod.AudioMode): Self = StObject.set(x, "audioMode", value.asInstanceOf[js.Any])
+      inline def setAudioMode(value: typings.clovelcedPluginAudiomanagement.mod.AudioMode): Self = StObject.set(x, "audioMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     }
   }
   
@@ -37,17 +33,14 @@ object anon {
   }
   object MaxVolume {
     
-    @scala.inline
-    def apply(maxVolume: Double): MaxVolume = {
+    inline def apply(maxVolume: Double): MaxVolume = {
       val __obj = js.Dynamic.literal(maxVolume = maxVolume.asInstanceOf[js.Any])
       __obj.asInstanceOf[MaxVolume]
     }
     
-    @scala.inline
-    implicit class MaxVolumeMutableBuilder[Self <: MaxVolume] (val x: Self) extends AnyVal {
+    extension [Self <: MaxVolume](x: Self) {
       
-      @scala.inline
-      def setMaxVolume(value: Double): Self = StObject.set(x, "maxVolume", value.asInstanceOf[js.Any])
+      inline def setMaxVolume(value: Double): Self = StObject.set(x, "maxVolume", value.asInstanceOf[js.Any])
     }
   }
   
@@ -57,17 +50,14 @@ object anon {
   }
   object Volume {
     
-    @scala.inline
-    def apply(volume: Double): Volume = {
+    inline def apply(volume: Double): Volume = {
       val __obj = js.Dynamic.literal(volume = volume.asInstanceOf[js.Any])
       __obj.asInstanceOf[Volume]
     }
     
-    @scala.inline
-    implicit class VolumeMutableBuilder[Self <: Volume] (val x: Self) extends AnyVal {
+    extension [Self <: Volume](x: Self) {
       
-      @scala.inline
-      def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+      inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
     }
   }
 }

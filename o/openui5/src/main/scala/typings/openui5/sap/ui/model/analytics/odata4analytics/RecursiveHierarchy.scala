@@ -44,8 +44,7 @@ trait RecursiveHierarchy extends StObject {
 }
 object RecursiveHierarchy {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getNodeIDProperty: () => js.Any,
     getNodeLevelProperty: () => js.Any,
     getNodeValueProperty: () => js.Any,
@@ -57,25 +56,18 @@ object RecursiveHierarchy {
     __obj.asInstanceOf[RecursiveHierarchy]
   }
   
-  @scala.inline
-  implicit class RecursiveHierarchyMutableBuilder[Self <: RecursiveHierarchy] (val x: Self) extends AnyVal {
+  extension [Self <: RecursiveHierarchy](x: Self) {
     
-    @scala.inline
-    def setGetNodeIDProperty(value: () => js.Any): Self = StObject.set(x, "getNodeIDProperty", js.Any.fromFunction0(value))
+    inline def setGetNodeIDProperty(value: () => js.Any): Self = StObject.set(x, "getNodeIDProperty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNodeLevelProperty(value: () => js.Any): Self = StObject.set(x, "getNodeLevelProperty", js.Any.fromFunction0(value))
+    inline def setGetNodeLevelProperty(value: () => js.Any): Self = StObject.set(x, "getNodeLevelProperty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNodeValueProperty(value: () => js.Any): Self = StObject.set(x, "getNodeValueProperty", js.Any.fromFunction0(value))
+    inline def setGetNodeValueProperty(value: () => js.Any): Self = StObject.set(x, "getNodeValueProperty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetParentNodeIDProperty(value: () => js.Any): Self = StObject.set(x, "getParentNodeIDProperty", js.Any.fromFunction0(value))
+    inline def setGetParentNodeIDProperty(value: () => js.Any): Self = StObject.set(x, "getParentNodeIDProperty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsLeveledHierarchy(value: () => Boolean): Self = StObject.set(x, "isLeveledHierarchy", js.Any.fromFunction0(value))
+    inline def setIsLeveledHierarchy(value: () => Boolean): Self = StObject.set(x, "isLeveledHierarchy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsRecursiveHierarchy(value: () => Boolean): Self = StObject.set(x, "isRecursiveHierarchy", js.Any.fromFunction0(value))
+    inline def setIsRecursiveHierarchy(value: () => Boolean): Self = StObject.set(x, "isRecursiveHierarchy", js.Any.fromFunction0(value))
   }
 }

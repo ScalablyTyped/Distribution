@@ -11,19 +11,15 @@ trait CustomSourceLocation extends StObject {
 }
 object CustomSourceLocation {
   
-  @scala.inline
-  def apply(): CustomSourceLocation = {
+  inline def apply(): CustomSourceLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomSourceLocation]
   }
   
-  @scala.inline
-  implicit class CustomSourceLocationMutableBuilder[Self <: CustomSourceLocation] (val x: Self) extends AnyVal {
+  extension [Self <: CustomSourceLocation](x: Self) {
     
-    @scala.inline
-    def setStateful(value: Boolean): Self = StObject.set(x, "stateful", value.asInstanceOf[js.Any])
+    inline def setStateful(value: Boolean): Self = StObject.set(x, "stateful", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatefulUndefined: Self = StObject.set(x, "stateful", js.undefined)
+    inline def setStatefulUndefined: Self = StObject.set(x, "stateful", js.undefined)
   }
 }

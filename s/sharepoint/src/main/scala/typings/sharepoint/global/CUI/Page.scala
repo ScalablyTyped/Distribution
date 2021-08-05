@@ -109,16 +109,13 @@ object Page {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def createPageManager(): typings.sharepoint.CUI.Page.PageManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createPageManager")().asInstanceOf[typings.sharepoint.CUI.Page.PageManager]
+    inline def createPageManager(): typings.sharepoint.CUI.Page.PageManager = ^.asInstanceOf[js.Dynamic].applyDynamic("createPageManager")().asInstanceOf[typings.sharepoint.CUI.Page.PageManager]
     
     /* static member */
-    @scala.inline
-    def getInstance(): typings.sharepoint.CUI.Page.PageManager = ^.asInstanceOf[js.Dynamic].applyDynamic("get_instance")().asInstanceOf[typings.sharepoint.CUI.Page.PageManager]
+    inline def getInstance(): typings.sharepoint.CUI.Page.PageManager = ^.asInstanceOf[js.Dynamic].applyDynamic("get_instance")().asInstanceOf[typings.sharepoint.CUI.Page.PageManager]
     
     /* static member */
-    @scala.inline
-    def initialize(): scala.Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")().asInstanceOf[scala.Unit]
+    inline def initialize(): scala.Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")().asInstanceOf[scala.Unit]
   }
   
   @JSGlobal("CUI.Page.UndoManager")

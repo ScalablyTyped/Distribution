@@ -19,25 +19,19 @@ trait IssuesCreateCommentEndpoint extends StObject {
 }
 object IssuesCreateCommentEndpoint {
   
-  @scala.inline
-  def apply(body: String, issue_number: Double, owner: String, repo: String): IssuesCreateCommentEndpoint = {
+  inline def apply(body: String, issue_number: Double, owner: String, repo: String): IssuesCreateCommentEndpoint = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], issue_number = issue_number.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[IssuesCreateCommentEndpoint]
   }
   
-  @scala.inline
-  implicit class IssuesCreateCommentEndpointMutableBuilder[Self <: IssuesCreateCommentEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: IssuesCreateCommentEndpoint](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssue_number(value: Double): Self = StObject.set(x, "issue_number", value.asInstanceOf[js.Any])
+    inline def setIssue_number(value: Double): Self = StObject.set(x, "issue_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

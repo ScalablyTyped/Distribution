@@ -12,19 +12,15 @@ trait LineEnding extends StObject {
 }
 object LineEnding {
   
-  @scala.inline
-  def apply(lineEnding: String, preserveBOM: Boolean): LineEnding = {
+  inline def apply(lineEnding: String, preserveBOM: Boolean): LineEnding = {
     val __obj = js.Dynamic.literal(lineEnding = lineEnding.asInstanceOf[js.Any], preserveBOM = preserveBOM.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineEnding]
   }
   
-  @scala.inline
-  implicit class LineEndingMutableBuilder[Self <: LineEnding] (val x: Self) extends AnyVal {
+  extension [Self <: LineEnding](x: Self) {
     
-    @scala.inline
-    def setLineEnding(value: String): Self = StObject.set(x, "lineEnding", value.asInstanceOf[js.Any])
+    inline def setLineEnding(value: String): Self = StObject.set(x, "lineEnding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveBOM(value: Boolean): Self = StObject.set(x, "preserveBOM", value.asInstanceOf[js.Any])
+    inline def setPreserveBOM(value: Boolean): Self = StObject.set(x, "preserveBOM", value.asInstanceOf[js.Any])
   }
 }

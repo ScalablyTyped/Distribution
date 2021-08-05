@@ -18,34 +18,25 @@ trait QueryEntitiesResponseItem extends StObject {
 }
 object QueryEntitiesResponseItem {
   
-  @scala.inline
-  def apply(): QueryEntitiesResponseItem = {
+  inline def apply(): QueryEntitiesResponseItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryEntitiesResponseItem]
   }
   
-  @scala.inline
-  implicit class QueryEntitiesResponseItemMutableBuilder[Self <: QueryEntitiesResponseItem] (val x: Self) extends AnyVal {
+  extension [Self <: QueryEntitiesResponseItem](x: Self) {
     
-    @scala.inline
-    def setEvidence(value: js.Array[QueryEvidence]): Self = StObject.set(x, "evidence", value.asInstanceOf[js.Any])
+    inline def setEvidence(value: js.Array[QueryEvidence]): Self = StObject.set(x, "evidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvidenceUndefined: Self = StObject.set(x, "evidence", js.undefined)
+    inline def setEvidenceUndefined: Self = StObject.set(x, "evidence", js.undefined)
     
-    @scala.inline
-    def setEvidenceVarargs(value: QueryEvidence*): Self = StObject.set(x, "evidence", js.Array(value :_*))
+    inline def setEvidenceVarargs(value: QueryEvidence*): Self = StObject.set(x, "evidence", js.Array(value :_*))
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

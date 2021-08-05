@@ -78,8 +78,7 @@ object mod extends Shortcut {
   }
   object NProgressOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       barSelector: String,
       easing: String,
       minimum: Double,
@@ -96,41 +95,29 @@ object mod extends Shortcut {
       __obj.asInstanceOf[NProgressOptions]
     }
     
-    @scala.inline
-    implicit class NProgressOptionsMutableBuilder[Self <: NProgressOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NProgressOptions](x: Self) {
       
-      @scala.inline
-      def setBarSelector(value: String): Self = StObject.set(x, "barSelector", value.asInstanceOf[js.Any])
+      inline def setBarSelector(value: String): Self = StObject.set(x, "barSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+      inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimum(value: Double): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
+      inline def setMinimum(value: Double): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUsing(value: String): Self = StObject.set(x, "positionUsing", value.asInstanceOf[js.Any])
+      inline def setPositionUsing(value: String): Self = StObject.set(x, "positionUsing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowSpinner(value: Boolean): Self = StObject.set(x, "showSpinner", value.asInstanceOf[js.Any])
+      inline def setShowSpinner(value: Boolean): Self = StObject.set(x, "showSpinner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+      inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpinnerSelector(value: String): Self = StObject.set(x, "spinnerSelector", value.asInstanceOf[js.Any])
+      inline def setSpinnerSelector(value: String): Self = StObject.set(x, "spinnerSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrickle(value: Boolean): Self = StObject.set(x, "trickle", value.asInstanceOf[js.Any])
+      inline def setTrickle(value: Boolean): Self = StObject.set(x, "trickle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrickleSpeed(value: Double): Self = StObject.set(x, "trickleSpeed", value.asInstanceOf[js.Any])
+      inline def setTrickleSpeed(value: Double): Self = StObject.set(x, "trickleSpeed", value.asInstanceOf[js.Any])
     }
   }
   

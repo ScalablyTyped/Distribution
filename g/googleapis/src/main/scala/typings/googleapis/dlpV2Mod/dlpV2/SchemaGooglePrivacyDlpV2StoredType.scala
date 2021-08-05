@@ -24,25 +24,19 @@ trait SchemaGooglePrivacyDlpV2StoredType extends StObject {
 }
 object SchemaGooglePrivacyDlpV2StoredType {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2StoredType = {
+  inline def apply(): SchemaGooglePrivacyDlpV2StoredType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2StoredType]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2StoredTypeMutableBuilder[Self <: SchemaGooglePrivacyDlpV2StoredType] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2StoredType](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

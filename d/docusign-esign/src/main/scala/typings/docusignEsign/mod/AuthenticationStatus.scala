@@ -145,127 +145,87 @@ trait AuthenticationStatus extends StObject {
 }
 object AuthenticationStatus {
   
-  @scala.inline
-  def apply(): AuthenticationStatus = {
+  inline def apply(): AuthenticationStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuthenticationStatus]
   }
   
-  @scala.inline
-  implicit class AuthenticationStatusMutableBuilder[Self <: AuthenticationStatus] (val x: Self) extends AnyVal {
+  extension [Self <: AuthenticationStatus](x: Self) {
     
-    @scala.inline
-    def setAccessCodeResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "accessCodeResult", value.asInstanceOf[js.Any])
+    inline def setAccessCodeResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "accessCodeResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessCodeResultUndefined: Self = StObject.set(x, "accessCodeResult", js.undefined)
+    inline def setAccessCodeResultUndefined: Self = StObject.set(x, "accessCodeResult", js.undefined)
     
-    @scala.inline
-    def setAgeVerifyResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "ageVerifyResult", value.asInstanceOf[js.Any])
+    inline def setAgeVerifyResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "ageVerifyResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgeVerifyResultUndefined: Self = StObject.set(x, "ageVerifyResult", js.undefined)
+    inline def setAgeVerifyResultUndefined: Self = StObject.set(x, "ageVerifyResult", js.undefined)
     
-    @scala.inline
-    def setAnySocialIDResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "anySocialIDResult", value.asInstanceOf[js.Any])
+    inline def setAnySocialIDResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "anySocialIDResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnySocialIDResultUndefined: Self = StObject.set(x, "anySocialIDResult", js.undefined)
+    inline def setAnySocialIDResultUndefined: Self = StObject.set(x, "anySocialIDResult", js.undefined)
     
-    @scala.inline
-    def setFacebookResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "facebookResult", value.asInstanceOf[js.Any])
+    inline def setFacebookResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "facebookResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacebookResultUndefined: Self = StObject.set(x, "facebookResult", js.undefined)
+    inline def setFacebookResultUndefined: Self = StObject.set(x, "facebookResult", js.undefined)
     
-    @scala.inline
-    def setGoogleResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "googleResult", value.asInstanceOf[js.Any])
+    inline def setGoogleResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "googleResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogleResultUndefined: Self = StObject.set(x, "googleResult", js.undefined)
+    inline def setGoogleResultUndefined: Self = StObject.set(x, "googleResult", js.undefined)
     
-    @scala.inline
-    def setIdLookupResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "idLookupResult", value.asInstanceOf[js.Any])
+    inline def setIdLookupResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "idLookupResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdLookupResultUndefined: Self = StObject.set(x, "idLookupResult", js.undefined)
+    inline def setIdLookupResultUndefined: Self = StObject.set(x, "idLookupResult", js.undefined)
     
-    @scala.inline
-    def setIdQuestionsResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "idQuestionsResult", value.asInstanceOf[js.Any])
+    inline def setIdQuestionsResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "idQuestionsResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdQuestionsResultUndefined: Self = StObject.set(x, "idQuestionsResult", js.undefined)
+    inline def setIdQuestionsResultUndefined: Self = StObject.set(x, "idQuestionsResult", js.undefined)
     
-    @scala.inline
-    def setIdentityVerificationResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "identityVerificationResult", value.asInstanceOf[js.Any])
+    inline def setIdentityVerificationResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "identityVerificationResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityVerificationResultUndefined: Self = StObject.set(x, "identityVerificationResult", js.undefined)
+    inline def setIdentityVerificationResultUndefined: Self = StObject.set(x, "identityVerificationResult", js.undefined)
     
-    @scala.inline
-    def setLinkedinResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "linkedinResult", value.asInstanceOf[js.Any])
+    inline def setLinkedinResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "linkedinResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkedinResultUndefined: Self = StObject.set(x, "linkedinResult", js.undefined)
+    inline def setLinkedinResultUndefined: Self = StObject.set(x, "linkedinResult", js.undefined)
     
-    @scala.inline
-    def setLiveIDResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "liveIDResult", value.asInstanceOf[js.Any])
+    inline def setLiveIDResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "liveIDResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLiveIDResultUndefined: Self = StObject.set(x, "liveIDResult", js.undefined)
+    inline def setLiveIDResultUndefined: Self = StObject.set(x, "liveIDResult", js.undefined)
     
-    @scala.inline
-    def setOfacResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "ofacResult", value.asInstanceOf[js.Any])
+    inline def setOfacResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "ofacResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfacResultUndefined: Self = StObject.set(x, "ofacResult", js.undefined)
+    inline def setOfacResultUndefined: Self = StObject.set(x, "ofacResult", js.undefined)
     
-    @scala.inline
-    def setOpenIDResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "openIDResult", value.asInstanceOf[js.Any])
+    inline def setOpenIDResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "openIDResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenIDResultUndefined: Self = StObject.set(x, "openIDResult", js.undefined)
+    inline def setOpenIDResultUndefined: Self = StObject.set(x, "openIDResult", js.undefined)
     
-    @scala.inline
-    def setPhoneAuthResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "phoneAuthResult", value.asInstanceOf[js.Any])
+    inline def setPhoneAuthResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "phoneAuthResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneAuthResultUndefined: Self = StObject.set(x, "phoneAuthResult", js.undefined)
+    inline def setPhoneAuthResultUndefined: Self = StObject.set(x, "phoneAuthResult", js.undefined)
     
-    @scala.inline
-    def setSTANPinResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "sTANPinResult", value.asInstanceOf[js.Any])
+    inline def setSTANPinResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "sTANPinResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSTANPinResultUndefined: Self = StObject.set(x, "sTANPinResult", js.undefined)
+    inline def setSTANPinResultUndefined: Self = StObject.set(x, "sTANPinResult", js.undefined)
     
-    @scala.inline
-    def setSalesforceResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "salesforceResult", value.asInstanceOf[js.Any])
+    inline def setSalesforceResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "salesforceResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSalesforceResultUndefined: Self = StObject.set(x, "salesforceResult", js.undefined)
+    inline def setSalesforceResultUndefined: Self = StObject.set(x, "salesforceResult", js.undefined)
     
-    @scala.inline
-    def setSignatureProviderResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "signatureProviderResult", value.asInstanceOf[js.Any])
+    inline def setSignatureProviderResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "signatureProviderResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureProviderResultUndefined: Self = StObject.set(x, "signatureProviderResult", js.undefined)
+    inline def setSignatureProviderResultUndefined: Self = StObject.set(x, "signatureProviderResult", js.undefined)
     
-    @scala.inline
-    def setSmsAuthResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "smsAuthResult", value.asInstanceOf[js.Any])
+    inline def setSmsAuthResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "smsAuthResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmsAuthResultUndefined: Self = StObject.set(x, "smsAuthResult", js.undefined)
+    inline def setSmsAuthResultUndefined: Self = StObject.set(x, "smsAuthResult", js.undefined)
     
-    @scala.inline
-    def setTwitterResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "twitterResult", value.asInstanceOf[js.Any])
+    inline def setTwitterResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "twitterResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTwitterResultUndefined: Self = StObject.set(x, "twitterResult", js.undefined)
+    inline def setTwitterResultUndefined: Self = StObject.set(x, "twitterResult", js.undefined)
     
-    @scala.inline
-    def setYahooResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "yahooResult", value.asInstanceOf[js.Any])
+    inline def setYahooResult(value: /* Information about the result of an event. */ EventResult): Self = StObject.set(x, "yahooResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYahooResultUndefined: Self = StObject.set(x, "yahooResult", js.undefined)
+    inline def setYahooResultUndefined: Self = StObject.set(x, "yahooResult", js.undefined)
   }
 }

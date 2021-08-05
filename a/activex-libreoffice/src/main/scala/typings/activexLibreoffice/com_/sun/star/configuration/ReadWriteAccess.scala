@@ -25,8 +25,7 @@ trait ReadWriteAccess
 }
 object ReadWriteAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PendingChanges: ChangesSet,
     acquire: () => Unit,
     commitChanges: () => Unit,
@@ -45,10 +44,8 @@ object ReadWriteAccess {
     __obj.asInstanceOf[ReadWriteAccess]
   }
   
-  @scala.inline
-  implicit class ReadWriteAccessMutableBuilder[Self <: ReadWriteAccess] (val x: Self) extends AnyVal {
+  extension [Self <: ReadWriteAccess](x: Self) {
     
-    @scala.inline
-    def setCreate(value: String => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: String => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }
 }

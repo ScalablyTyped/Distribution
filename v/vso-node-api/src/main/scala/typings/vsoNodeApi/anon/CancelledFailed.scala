@@ -20,8 +20,7 @@ trait CancelledFailed extends StObject {
 }
 object CancelledFailed {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cancelled: scala.Double,
     failed: scala.Double,
     inProgress: scala.Double,
@@ -33,25 +32,18 @@ object CancelledFailed {
     __obj.asInstanceOf[CancelledFailed]
   }
   
-  @scala.inline
-  implicit class CancelledFailedMutableBuilder[Self <: CancelledFailed] (val x: Self) extends AnyVal {
+  extension [Self <: CancelledFailed](x: Self) {
     
-    @scala.inline
-    def setCancelled(value: scala.Double): Self = StObject.set(x, "cancelled", value.asInstanceOf[js.Any])
+    inline def setCancelled(value: scala.Double): Self = StObject.set(x, "cancelled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailed(value: scala.Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
+    inline def setFailed(value: scala.Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInProgress(value: scala.Double): Self = StObject.set(x, "inProgress", value.asInstanceOf[js.Any])
+    inline def setInProgress(value: scala.Double): Self = StObject.set(x, "inProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotSet(value: scala.Double): Self = StObject.set(x, "notSet", value.asInstanceOf[js.Any])
+    inline def setNotSet(value: scala.Double): Self = StObject.set(x, "notSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueued(value: scala.Double): Self = StObject.set(x, "queued", value.asInstanceOf[js.Any])
+    inline def setQueued(value: scala.Double): Self = StObject.set(x, "queued", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSucceeded(value: scala.Double): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
+    inline def setSucceeded(value: scala.Double): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
   }
 }

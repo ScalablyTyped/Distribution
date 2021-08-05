@@ -15,8 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     options: js.Function1[
       /* options */ js.UndefOr[SessionOptions], 
       RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
@@ -79,112 +78,78 @@ object mod {
   }
   object RedisStoreOptions {
     
-    @scala.inline
-    def apply(): RedisStoreOptions = {
+    inline def apply(): RedisStoreOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RedisStoreOptions]
     }
     
-    @scala.inline
-    implicit class RedisStoreOptionsMutableBuilder[Self <: RedisStoreOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RedisStoreOptions](x: Self) {
       
-      @scala.inline
-      def setClient(value: RedisClient | Redis): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: RedisClient | Redis): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
+      inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
       
-      @scala.inline
-      def setDb(value: Double): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
+      inline def setDb(value: Double): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDbUndefined: Self = StObject.set(x, "db", js.undefined)
+      inline def setDbUndefined: Self = StObject.set(x, "db", js.undefined)
       
-      @scala.inline
-      def setDisableTTL(value: Boolean): Self = StObject.set(x, "disableTTL", value.asInstanceOf[js.Any])
+      inline def setDisableTTL(value: Boolean): Self = StObject.set(x, "disableTTL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableTTLUndefined: Self = StObject.set(x, "disableTTL", js.undefined)
+      inline def setDisableTTLUndefined: Self = StObject.set(x, "disableTTL", js.undefined)
       
-      @scala.inline
-      def setDisableTouch(value: Boolean): Self = StObject.set(x, "disableTouch", value.asInstanceOf[js.Any])
+      inline def setDisableTouch(value: Boolean): Self = StObject.set(x, "disableTouch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableTouchUndefined: Self = StObject.set(x, "disableTouch", js.undefined)
+      inline def setDisableTouchUndefined: Self = StObject.set(x, "disableTouch", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setLogErrors(value: Boolean | (js.Function1[/* error */ String, Unit])): Self = StObject.set(x, "logErrors", value.asInstanceOf[js.Any])
+      inline def setLogErrors(value: Boolean | (js.Function1[/* error */ String, Unit])): Self = StObject.set(x, "logErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogErrorsFunction1(value: /* error */ String => Unit): Self = StObject.set(x, "logErrors", js.Any.fromFunction1(value))
+      inline def setLogErrorsFunction1(value: /* error */ String => Unit): Self = StObject.set(x, "logErrors", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLogErrorsUndefined: Self = StObject.set(x, "logErrors", js.undefined)
+      inline def setLogErrorsUndefined: Self = StObject.set(x, "logErrors", js.undefined)
       
-      @scala.inline
-      def setPass(value: String): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
+      inline def setPass(value: String): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassUndefined: Self = StObject.set(x, "pass", js.undefined)
+      inline def setPassUndefined: Self = StObject.set(x, "pass", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setScanCount(value: Double): Self = StObject.set(x, "scanCount", value.asInstanceOf[js.Any])
+      inline def setScanCount(value: Double): Self = StObject.set(x, "scanCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScanCountUndefined: Self = StObject.set(x, "scanCount", js.undefined)
+      inline def setScanCountUndefined: Self = StObject.set(x, "scanCount", js.undefined)
       
-      @scala.inline
-      def setSerializer(value: Serializer | JSON): Self = StObject.set(x, "serializer", value.asInstanceOf[js.Any])
+      inline def setSerializer(value: Serializer | JSON): Self = StObject.set(x, "serializer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerializerUndefined: Self = StObject.set(x, "serializer", js.undefined)
+      inline def setSerializerUndefined: Self = StObject.set(x, "serializer", js.undefined)
       
-      @scala.inline
-      def setSocket(value: String): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
+      inline def setSocket(value: String): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocketUndefined: Self = StObject.set(x, "socket", js.undefined)
+      inline def setSocketUndefined: Self = StObject.set(x, "socket", js.undefined)
       
-      @scala.inline
-      def setTtl(
+      inline def setTtl(
         value: Double | String | (js.Function3[/* store */ RedisStore, /* sess */ SessionData, /* sid */ String, Double])
       ): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtlFunction3(value: (/* store */ RedisStore, /* sess */ SessionData, /* sid */ String) => Double): Self = StObject.set(x, "ttl", js.Any.fromFunction3(value))
+      inline def setTtlFunction3(value: (/* store */ RedisStore, /* sess */ SessionData, /* sid */ String) => Double): Self = StObject.set(x, "ttl", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+      inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
       
-      @scala.inline
-      def setUnref(value: Boolean): Self = StObject.set(x, "unref", value.asInstanceOf[js.Any])
+      inline def setUnref(value: Boolean): Self = StObject.set(x, "unref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnrefUndefined: Self = StObject.set(x, "unref", js.undefined)
+      inline def setUnrefUndefined: Self = StObject.set(x, "unref", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -196,20 +161,16 @@ object mod {
   }
   object Serializer {
     
-    @scala.inline
-    def apply(parse: js.Function, stringify: js.Function): Serializer = {
+    inline def apply(parse: js.Function, stringify: js.Function): Serializer = {
       val __obj = js.Dynamic.literal(parse = parse.asInstanceOf[js.Any], stringify = stringify.asInstanceOf[js.Any])
       __obj.asInstanceOf[Serializer]
     }
     
-    @scala.inline
-    implicit class SerializerMutableBuilder[Self <: Serializer] (val x: Self) extends AnyVal {
+    extension [Self <: Serializer](x: Self) {
       
-      @scala.inline
-      def setParse(value: js.Function): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+      inline def setParse(value: js.Function): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringify(value: js.Function): Self = StObject.set(x, "stringify", value.asInstanceOf[js.Any])
+      inline def setStringify(value: js.Function): Self = StObject.set(x, "stringify", value.asInstanceOf[js.Any])
     }
   }
 }

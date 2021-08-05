@@ -18,25 +18,19 @@ trait CreateBGPPeerRequest extends StObject {
 }
 object CreateBGPPeerRequest {
   
-  @scala.inline
-  def apply(): CreateBGPPeerRequest = {
+  inline def apply(): CreateBGPPeerRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateBGPPeerRequest]
   }
   
-  @scala.inline
-  implicit class CreateBGPPeerRequestMutableBuilder[Self <: CreateBGPPeerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateBGPPeerRequest](x: Self) {
     
-    @scala.inline
-    def setNewBGPPeer(value: NewBGPPeer): Self = StObject.set(x, "newBGPPeer", value.asInstanceOf[js.Any])
+    inline def setNewBGPPeer(value: NewBGPPeer): Self = StObject.set(x, "newBGPPeer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewBGPPeerUndefined: Self = StObject.set(x, "newBGPPeer", js.undefined)
+    inline def setNewBGPPeerUndefined: Self = StObject.set(x, "newBGPPeer", js.undefined)
     
-    @scala.inline
-    def setVirtualInterfaceId(value: VirtualInterfaceId): Self = StObject.set(x, "virtualInterfaceId", value.asInstanceOf[js.Any])
+    inline def setVirtualInterfaceId(value: VirtualInterfaceId): Self = StObject.set(x, "virtualInterfaceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualInterfaceIdUndefined: Self = StObject.set(x, "virtualInterfaceId", js.undefined)
+    inline def setVirtualInterfaceIdUndefined: Self = StObject.set(x, "virtualInterfaceId", js.undefined)
   }
 }

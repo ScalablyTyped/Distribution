@@ -18,25 +18,19 @@ trait AgentFilter extends StObject {
 }
 object AgentFilter {
   
-  @scala.inline
-  def apply(agentHealthCodes: AgentHealthCodeList, agentHealths: AgentHealthList): AgentFilter = {
+  inline def apply(agentHealthCodes: AgentHealthCodeList, agentHealths: AgentHealthList): AgentFilter = {
     val __obj = js.Dynamic.literal(agentHealthCodes = agentHealthCodes.asInstanceOf[js.Any], agentHealths = agentHealths.asInstanceOf[js.Any])
     __obj.asInstanceOf[AgentFilter]
   }
   
-  @scala.inline
-  implicit class AgentFilterMutableBuilder[Self <: AgentFilter] (val x: Self) extends AnyVal {
+  extension [Self <: AgentFilter](x: Self) {
     
-    @scala.inline
-    def setAgentHealthCodes(value: AgentHealthCodeList): Self = StObject.set(x, "agentHealthCodes", value.asInstanceOf[js.Any])
+    inline def setAgentHealthCodes(value: AgentHealthCodeList): Self = StObject.set(x, "agentHealthCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentHealthCodesVarargs(value: AgentHealthCode*): Self = StObject.set(x, "agentHealthCodes", js.Array(value :_*))
+    inline def setAgentHealthCodesVarargs(value: AgentHealthCode*): Self = StObject.set(x, "agentHealthCodes", js.Array(value :_*))
     
-    @scala.inline
-    def setAgentHealths(value: AgentHealthList): Self = StObject.set(x, "agentHealths", value.asInstanceOf[js.Any])
+    inline def setAgentHealths(value: AgentHealthList): Self = StObject.set(x, "agentHealths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentHealthsVarargs(value: AgentHealth*): Self = StObject.set(x, "agentHealths", js.Array(value :_*))
+    inline def setAgentHealthsVarargs(value: AgentHealth*): Self = StObject.set(x, "agentHealths", js.Array(value :_*))
   }
 }

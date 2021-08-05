@@ -15,31 +15,23 @@ trait TransitionAnimation extends StObject {
 }
 object TransitionAnimation {
   
-  @scala.inline
-  def apply(): TransitionAnimation = {
+  inline def apply(): TransitionAnimation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransitionAnimation]
   }
   
-  @scala.inline
-  implicit class TransitionAnimationMutableBuilder[Self <: TransitionAnimation] (val x: Self) extends AnyVal {
+  extension [Self <: TransitionAnimation](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+    inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     
-    @scala.inline
-    def setStartup(value: Boolean): Self = StObject.set(x, "startup", value.asInstanceOf[js.Any])
+    inline def setStartup(value: Boolean): Self = StObject.set(x, "startup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartupUndefined: Self = StObject.set(x, "startup", js.undefined)
+    inline def setStartupUndefined: Self = StObject.set(x, "startup", js.undefined)
   }
 }

@@ -22,26 +22,20 @@ trait MidiSongPositionPointerMessage extends StObject {
 }
 object MidiSongPositionPointerMessage {
   
-  @scala.inline
-  def apply(beats: Double, rawData: IBuffer, timestamp: Double, `type`: MidiMessageType): MidiSongPositionPointerMessage = {
+  inline def apply(beats: Double, rawData: IBuffer, timestamp: Double, `type`: MidiMessageType): MidiSongPositionPointerMessage = {
     val __obj = js.Dynamic.literal(beats = beats.asInstanceOf[js.Any], rawData = rawData.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MidiSongPositionPointerMessage]
   }
   
-  @scala.inline
-  implicit class MidiSongPositionPointerMessageMutableBuilder[Self <: MidiSongPositionPointerMessage] (val x: Self) extends AnyVal {
+  extension [Self <: MidiSongPositionPointerMessage](x: Self) {
     
-    @scala.inline
-    def setBeats(value: Double): Self = StObject.set(x, "beats", value.asInstanceOf[js.Any])
+    inline def setBeats(value: Double): Self = StObject.set(x, "beats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawData(value: IBuffer): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
+    inline def setRawData(value: IBuffer): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: MidiMessageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: MidiMessageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

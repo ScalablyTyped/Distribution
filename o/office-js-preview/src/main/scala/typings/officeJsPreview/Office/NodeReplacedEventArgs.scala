@@ -31,22 +31,17 @@ trait NodeReplacedEventArgs extends StObject {
 }
 object NodeReplacedEventArgs {
   
-  @scala.inline
-  def apply(isUndoRedo: Boolean, newNode: CustomXmlNode, oldNode: CustomXmlNode): NodeReplacedEventArgs = {
+  inline def apply(isUndoRedo: Boolean, newNode: CustomXmlNode, oldNode: CustomXmlNode): NodeReplacedEventArgs = {
     val __obj = js.Dynamic.literal(isUndoRedo = isUndoRedo.asInstanceOf[js.Any], newNode = newNode.asInstanceOf[js.Any], oldNode = oldNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeReplacedEventArgs]
   }
   
-  @scala.inline
-  implicit class NodeReplacedEventArgsMutableBuilder[Self <: NodeReplacedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: NodeReplacedEventArgs](x: Self) {
     
-    @scala.inline
-    def setIsUndoRedo(value: Boolean): Self = StObject.set(x, "isUndoRedo", value.asInstanceOf[js.Any])
+    inline def setIsUndoRedo(value: Boolean): Self = StObject.set(x, "isUndoRedo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewNode(value: CustomXmlNode): Self = StObject.set(x, "newNode", value.asInstanceOf[js.Any])
+    inline def setNewNode(value: CustomXmlNode): Self = StObject.set(x, "newNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldNode(value: CustomXmlNode): Self = StObject.set(x, "oldNode", value.asInstanceOf[js.Any])
+    inline def setOldNode(value: CustomXmlNode): Self = StObject.set(x, "oldNode", value.asInstanceOf[js.Any])
   }
 }

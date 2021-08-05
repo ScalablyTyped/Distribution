@@ -62,82 +62,58 @@ object sourceVectorMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAttributions(value: AttributionLike): Self = StObject.set(x, "attributions", value.asInstanceOf[js.Any])
+      inline def setAttributions(value: AttributionLike): Self = StObject.set(x, "attributions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributionsFunction1(value: /* p0 */ FrameState => String | js.Array[String]): Self = StObject.set(x, "attributions", js.Any.fromFunction1(value))
+      inline def setAttributionsFunction1(value: /* p0 */ FrameState => String | js.Array[String]): Self = StObject.set(x, "attributions", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
+      inline def setAttributionsUndefined: Self = StObject.set(x, "attributions", js.undefined)
       
-      @scala.inline
-      def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value :_*))
+      inline def setAttributionsVarargs(value: String*): Self = StObject.set(x, "attributions", js.Array(value :_*))
       
-      @scala.inline
-      def setFeatures(
+      inline def setFeatures(
         value: js.Array[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]] | typings.ol.collectionMod.default[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]]
       ): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
+      inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
       
-      @scala.inline
-      def setFeaturesVarargs(value: typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]*): Self = StObject.set(x, "features", js.Array(value :_*))
+      inline def setFeaturesVarargs(value: typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]*): Self = StObject.set(x, "features", js.Array(value :_*))
       
-      @scala.inline
-      def setFormat(value: typings.ol.featureMod.default): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: typings.ol.featureMod.default): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setLoader(value: FeatureLoader): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
+      inline def setLoader(value: FeatureLoader): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
+      inline def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
       
-      @scala.inline
-      def setOverlaps(value: Boolean): Self = StObject.set(x, "overlaps", value.asInstanceOf[js.Any])
+      inline def setOverlaps(value: Boolean): Self = StObject.set(x, "overlaps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlapsUndefined: Self = StObject.set(x, "overlaps", js.undefined)
+      inline def setOverlapsUndefined: Self = StObject.set(x, "overlaps", js.undefined)
       
-      @scala.inline
-      def setStrategy(value: (/* p0 */ Extent, /* p1 */ Double) => js.Array[Extent]): Self = StObject.set(x, "strategy", js.Any.fromFunction2(value))
+      inline def setStrategy(value: (/* p0 */ Extent, /* p1 */ Double) => js.Array[Extent]): Self = StObject.set(x, "strategy", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
+      inline def setStrategyUndefined: Self = StObject.set(x, "strategy", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String | FeatureUrlFunction): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String | FeatureUrlFunction): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlFunction3(value: (/* p0 */ Extent, /* p1 */ Double, /* p2 */ typings.ol.projectionMod.default) => String): Self = StObject.set(x, "url", js.Any.fromFunction3(value))
+      inline def setUrlFunction3(value: (/* p0 */ Extent, /* p1 */ Double, /* p2 */ typings.ol.projectionMod.default) => String): Self = StObject.set(x, "url", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      @scala.inline
-      def setUseSpatialIndex(value: Boolean): Self = StObject.set(x, "useSpatialIndex", value.asInstanceOf[js.Any])
+      inline def setUseSpatialIndex(value: Boolean): Self = StObject.set(x, "useSpatialIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseSpatialIndexUndefined: Self = StObject.set(x, "useSpatialIndex", js.undefined)
+      inline def setUseSpatialIndexUndefined: Self = StObject.set(x, "useSpatialIndex", js.undefined)
       
-      @scala.inline
-      def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
+      inline def setWrapX(value: Boolean): Self = StObject.set(x, "wrapX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapXUndefined: Self = StObject.set(x, "wrapX", js.undefined)
+      inline def setWrapXUndefined: Self = StObject.set(x, "wrapX", js.undefined)
     }
   }
   

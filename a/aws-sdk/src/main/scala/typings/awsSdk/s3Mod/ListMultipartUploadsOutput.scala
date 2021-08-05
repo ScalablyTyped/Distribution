@@ -68,91 +68,63 @@ trait ListMultipartUploadsOutput extends StObject {
 }
 object ListMultipartUploadsOutput {
   
-  @scala.inline
-  def apply(): ListMultipartUploadsOutput = {
+  inline def apply(): ListMultipartUploadsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListMultipartUploadsOutput]
   }
   
-  @scala.inline
-  implicit class ListMultipartUploadsOutputMutableBuilder[Self <: ListMultipartUploadsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListMultipartUploadsOutput](x: Self) {
     
-    @scala.inline
-    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketUndefined: Self = StObject.set(x, "Bucket", js.undefined)
+    inline def setBucketUndefined: Self = StObject.set(x, "Bucket", js.undefined)
     
-    @scala.inline
-    def setCommonPrefixes(value: CommonPrefixList): Self = StObject.set(x, "CommonPrefixes", value.asInstanceOf[js.Any])
+    inline def setCommonPrefixes(value: CommonPrefixList): Self = StObject.set(x, "CommonPrefixes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommonPrefixesUndefined: Self = StObject.set(x, "CommonPrefixes", js.undefined)
+    inline def setCommonPrefixesUndefined: Self = StObject.set(x, "CommonPrefixes", js.undefined)
     
-    @scala.inline
-    def setCommonPrefixesVarargs(value: CommonPrefix*): Self = StObject.set(x, "CommonPrefixes", js.Array(value :_*))
+    inline def setCommonPrefixesVarargs(value: CommonPrefix*): Self = StObject.set(x, "CommonPrefixes", js.Array(value :_*))
     
-    @scala.inline
-    def setDelimiter(value: Delimiter): Self = StObject.set(x, "Delimiter", value.asInstanceOf[js.Any])
+    inline def setDelimiter(value: Delimiter): Self = StObject.set(x, "Delimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelimiterUndefined: Self = StObject.set(x, "Delimiter", js.undefined)
+    inline def setDelimiterUndefined: Self = StObject.set(x, "Delimiter", js.undefined)
     
-    @scala.inline
-    def setEncodingType(value: EncodingType): Self = StObject.set(x, "EncodingType", value.asInstanceOf[js.Any])
+    inline def setEncodingType(value: EncodingType): Self = StObject.set(x, "EncodingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingTypeUndefined: Self = StObject.set(x, "EncodingType", js.undefined)
+    inline def setEncodingTypeUndefined: Self = StObject.set(x, "EncodingType", js.undefined)
     
-    @scala.inline
-    def setIsTruncated(value: IsTruncated): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
+    inline def setIsTruncated(value: IsTruncated): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
+    inline def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
     
-    @scala.inline
-    def setKeyMarker(value: KeyMarker): Self = StObject.set(x, "KeyMarker", value.asInstanceOf[js.Any])
+    inline def setKeyMarker(value: KeyMarker): Self = StObject.set(x, "KeyMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyMarkerUndefined: Self = StObject.set(x, "KeyMarker", js.undefined)
+    inline def setKeyMarkerUndefined: Self = StObject.set(x, "KeyMarker", js.undefined)
     
-    @scala.inline
-    def setMaxUploads(value: MaxUploads): Self = StObject.set(x, "MaxUploads", value.asInstanceOf[js.Any])
+    inline def setMaxUploads(value: MaxUploads): Self = StObject.set(x, "MaxUploads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUploadsUndefined: Self = StObject.set(x, "MaxUploads", js.undefined)
+    inline def setMaxUploadsUndefined: Self = StObject.set(x, "MaxUploads", js.undefined)
     
-    @scala.inline
-    def setNextKeyMarker(value: NextKeyMarker): Self = StObject.set(x, "NextKeyMarker", value.asInstanceOf[js.Any])
+    inline def setNextKeyMarker(value: NextKeyMarker): Self = StObject.set(x, "NextKeyMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextKeyMarkerUndefined: Self = StObject.set(x, "NextKeyMarker", js.undefined)
+    inline def setNextKeyMarkerUndefined: Self = StObject.set(x, "NextKeyMarker", js.undefined)
     
-    @scala.inline
-    def setNextUploadIdMarker(value: NextUploadIdMarker): Self = StObject.set(x, "NextUploadIdMarker", value.asInstanceOf[js.Any])
+    inline def setNextUploadIdMarker(value: NextUploadIdMarker): Self = StObject.set(x, "NextUploadIdMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextUploadIdMarkerUndefined: Self = StObject.set(x, "NextUploadIdMarker", js.undefined)
+    inline def setNextUploadIdMarkerUndefined: Self = StObject.set(x, "NextUploadIdMarker", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: Prefix): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: Prefix): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
     
-    @scala.inline
-    def setUploadIdMarker(value: UploadIdMarker): Self = StObject.set(x, "UploadIdMarker", value.asInstanceOf[js.Any])
+    inline def setUploadIdMarker(value: UploadIdMarker): Self = StObject.set(x, "UploadIdMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadIdMarkerUndefined: Self = StObject.set(x, "UploadIdMarker", js.undefined)
+    inline def setUploadIdMarkerUndefined: Self = StObject.set(x, "UploadIdMarker", js.undefined)
     
-    @scala.inline
-    def setUploads(value: MultipartUploadList): Self = StObject.set(x, "Uploads", value.asInstanceOf[js.Any])
+    inline def setUploads(value: MultipartUploadList): Self = StObject.set(x, "Uploads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadsUndefined: Self = StObject.set(x, "Uploads", js.undefined)
+    inline def setUploadsUndefined: Self = StObject.set(x, "Uploads", js.undefined)
     
-    @scala.inline
-    def setUploadsVarargs(value: MultipartUpload*): Self = StObject.set(x, "Uploads", js.Array(value :_*))
+    inline def setUploadsVarargs(value: MultipartUpload*): Self = StObject.set(x, "Uploads", js.Array(value :_*))
   }
 }

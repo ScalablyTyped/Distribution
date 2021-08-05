@@ -37,20 +37,16 @@ object protocolConfigurationMod {
   }
   object ConfigurationClientCapabilities {
     
-    @scala.inline
-    def apply(): ConfigurationClientCapabilities = {
+    inline def apply(): ConfigurationClientCapabilities = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigurationClientCapabilities]
     }
     
-    @scala.inline
-    implicit class ConfigurationClientCapabilitiesMutableBuilder[Self <: ConfigurationClientCapabilities] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigurationClientCapabilities](x: Self) {
       
-      @scala.inline
-      def setWorkspace(value: Configuration): Self = StObject.set(x, "workspace", value.asInstanceOf[js.Any])
+      inline def setWorkspace(value: Configuration): Self = StObject.set(x, "workspace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkspaceUndefined: Self = StObject.set(x, "workspace", js.undefined)
+      inline def setWorkspaceUndefined: Self = StObject.set(x, "workspace", js.undefined)
     }
   }
   
@@ -68,26 +64,20 @@ object protocolConfigurationMod {
   }
   object ConfigurationItem {
     
-    @scala.inline
-    def apply(): ConfigurationItem = {
+    inline def apply(): ConfigurationItem = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigurationItem]
     }
     
-    @scala.inline
-    implicit class ConfigurationItemMutableBuilder[Self <: ConfigurationItem] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigurationItem](x: Self) {
       
-      @scala.inline
-      def setScopeUri(value: String): Self = StObject.set(x, "scopeUri", value.asInstanceOf[js.Any])
+      inline def setScopeUri(value: String): Self = StObject.set(x, "scopeUri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUriUndefined: Self = StObject.set(x, "scopeUri", js.undefined)
+      inline def setScopeUriUndefined: Self = StObject.set(x, "scopeUri", js.undefined)
       
-      @scala.inline
-      def setSection(value: String): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
+      inline def setSection(value: String): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSectionUndefined: Self = StObject.set(x, "section", js.undefined)
+      inline def setSectionUndefined: Self = StObject.set(x, "section", js.undefined)
     }
   }
   
@@ -97,20 +87,16 @@ object protocolConfigurationMod {
   }
   object ConfigurationParams {
     
-    @scala.inline
-    def apply(items: js.Array[ConfigurationItem]): ConfigurationParams = {
+    inline def apply(items: js.Array[ConfigurationItem]): ConfigurationParams = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConfigurationParams]
     }
     
-    @scala.inline
-    implicit class ConfigurationParamsMutableBuilder[Self <: ConfigurationParams] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigurationParams](x: Self) {
       
-      @scala.inline
-      def setItems(value: js.Array[ConfigurationItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[ConfigurationItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: ConfigurationItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: ConfigurationItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     }
   }
 }

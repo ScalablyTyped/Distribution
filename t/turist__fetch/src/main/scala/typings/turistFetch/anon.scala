@@ -142,8 +142,7 @@ object anon {
   }
   object Typeofdns {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ADDRCONFIG: Double,
       ADDRGETNETWORKPARAMS: String,
       ALL: Double,
@@ -195,148 +194,101 @@ object anon {
       __obj.asInstanceOf[Typeofdns]
     }
     
-    @scala.inline
-    implicit class TypeofdnsMutableBuilder[Self <: Typeofdns] (val x: Self) extends AnyVal {
+    extension [Self <: Typeofdns](x: Self) {
       
-      @scala.inline
-      def setADDRCONFIG(value: Double): Self = StObject.set(x, "ADDRCONFIG", value.asInstanceOf[js.Any])
+      inline def setADDRCONFIG(value: Double): Self = StObject.set(x, "ADDRCONFIG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setADDRGETNETWORKPARAMS(value: String): Self = StObject.set(x, "ADDRGETNETWORKPARAMS", value.asInstanceOf[js.Any])
+      inline def setADDRGETNETWORKPARAMS(value: String): Self = StObject.set(x, "ADDRGETNETWORKPARAMS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setALL(value: Double): Self = StObject.set(x, "ALL", value.asInstanceOf[js.Any])
+      inline def setALL(value: Double): Self = StObject.set(x, "ALL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBADFAMILY(value: String): Self = StObject.set(x, "BADFAMILY", value.asInstanceOf[js.Any])
+      inline def setBADFAMILY(value: String): Self = StObject.set(x, "BADFAMILY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBADFLAGS(value: String): Self = StObject.set(x, "BADFLAGS", value.asInstanceOf[js.Any])
+      inline def setBADFLAGS(value: String): Self = StObject.set(x, "BADFLAGS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBADHINTS(value: String): Self = StObject.set(x, "BADHINTS", value.asInstanceOf[js.Any])
+      inline def setBADHINTS(value: String): Self = StObject.set(x, "BADHINTS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBADNAME(value: String): Self = StObject.set(x, "BADNAME", value.asInstanceOf[js.Any])
+      inline def setBADNAME(value: String): Self = StObject.set(x, "BADNAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBADQUERY(value: String): Self = StObject.set(x, "BADQUERY", value.asInstanceOf[js.Any])
+      inline def setBADQUERY(value: String): Self = StObject.set(x, "BADQUERY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBADRESP(value: String): Self = StObject.set(x, "BADRESP", value.asInstanceOf[js.Any])
+      inline def setBADRESP(value: String): Self = StObject.set(x, "BADRESP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBADSTR(value: String): Self = StObject.set(x, "BADSTR", value.asInstanceOf[js.Any])
+      inline def setBADSTR(value: String): Self = StObject.set(x, "BADSTR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCANCELLED(value: String): Self = StObject.set(x, "CANCELLED", value.asInstanceOf[js.Any])
+      inline def setCANCELLED(value: String): Self = StObject.set(x, "CANCELLED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCONNREFUSED(value: String): Self = StObject.set(x, "CONNREFUSED", value.asInstanceOf[js.Any])
+      inline def setCONNREFUSED(value: String): Self = StObject.set(x, "CONNREFUSED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDESTRUCTION(value: String): Self = StObject.set(x, "DESTRUCTION", value.asInstanceOf[js.Any])
+      inline def setDESTRUCTION(value: String): Self = StObject.set(x, "DESTRUCTION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEOF(value: String): Self = StObject.set(x, "EOF", value.asInstanceOf[js.Any])
+      inline def setEOF(value: String): Self = StObject.set(x, "EOF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFILE(value: String): Self = StObject.set(x, "FILE", value.asInstanceOf[js.Any])
+      inline def setFILE(value: String): Self = StObject.set(x, "FILE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFORMERR(value: String): Self = StObject.set(x, "FORMERR", value.asInstanceOf[js.Any])
+      inline def setFORMERR(value: String): Self = StObject.set(x, "FORMERR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetServers(value: () => js.Array[String]): Self = StObject.set(x, "getServers", js.Any.fromFunction0(value))
+      inline def setGetServers(value: () => js.Array[String]): Self = StObject.set(x, "getServers", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLOADIPHLPAPI(value: String): Self = StObject.set(x, "LOADIPHLPAPI", value.asInstanceOf[js.Any])
+      inline def setLOADIPHLPAPI(value: String): Self = StObject.set(x, "LOADIPHLPAPI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLookup(value: Typeoflookup): Self = StObject.set(x, "lookup", value.asInstanceOf[js.Any])
+      inline def setLookup(value: Typeoflookup): Self = StObject.set(x, "lookup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLookupService(value: TypeoflookupService): Self = StObject.set(x, "lookupService", value.asInstanceOf[js.Any])
+      inline def setLookupService(value: TypeoflookupService): Self = StObject.set(x, "lookupService", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNODATA(value: String): Self = StObject.set(x, "NODATA", value.asInstanceOf[js.Any])
+      inline def setNODATA(value: String): Self = StObject.set(x, "NODATA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNOMEM(value: String): Self = StObject.set(x, "NOMEM", value.asInstanceOf[js.Any])
+      inline def setNOMEM(value: String): Self = StObject.set(x, "NOMEM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNONAME(value: String): Self = StObject.set(x, "NONAME", value.asInstanceOf[js.Any])
+      inline def setNONAME(value: String): Self = StObject.set(x, "NONAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNOTFOUND(value: String): Self = StObject.set(x, "NOTFOUND", value.asInstanceOf[js.Any])
+      inline def setNOTFOUND(value: String): Self = StObject.set(x, "NOTFOUND", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNOTIMP(value: String): Self = StObject.set(x, "NOTIMP", value.asInstanceOf[js.Any])
+      inline def setNOTIMP(value: String): Self = StObject.set(x, "NOTIMP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNOTINITIALIZED(value: String): Self = StObject.set(x, "NOTINITIALIZED", value.asInstanceOf[js.Any])
+      inline def setNOTINITIALIZED(value: String): Self = StObject.set(x, "NOTINITIALIZED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromises(value: Typeofpromises): Self = StObject.set(x, "promises", value.asInstanceOf[js.Any])
+      inline def setPromises(value: Typeofpromises): Self = StObject.set(x, "promises", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setREFUSED(value: String): Self = StObject.set(x, "REFUSED", value.asInstanceOf[js.Any])
+      inline def setREFUSED(value: String): Self = StObject.set(x, "REFUSED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolve(value: Typeofresolve): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
+      inline def setResolve(value: Typeofresolve): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolve4(value: Typeofresolve4): Self = StObject.set(x, "resolve4", value.asInstanceOf[js.Any])
+      inline def setResolve4(value: Typeofresolve4): Self = StObject.set(x, "resolve4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolve6(value: Typeofresolve6): Self = StObject.set(x, "resolve6", value.asInstanceOf[js.Any])
+      inline def setResolve6(value: Typeofresolve6): Self = StObject.set(x, "resolve6", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolveAny(value: TypeofresolveAny): Self = StObject.set(x, "resolveAny", value.asInstanceOf[js.Any])
+      inline def setResolveAny(value: TypeofresolveAny): Self = StObject.set(x, "resolveAny", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolveCname(value: TypeofresolveCname): Self = StObject.set(x, "resolveCname", value.asInstanceOf[js.Any])
+      inline def setResolveCname(value: TypeofresolveCname): Self = StObject.set(x, "resolveCname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolveMx(value: TypeofresolveMx): Self = StObject.set(x, "resolveMx", value.asInstanceOf[js.Any])
+      inline def setResolveMx(value: TypeofresolveMx): Self = StObject.set(x, "resolveMx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolveNaptr(value: TypeofresolveNaptr): Self = StObject.set(x, "resolveNaptr", value.asInstanceOf[js.Any])
+      inline def setResolveNaptr(value: TypeofresolveNaptr): Self = StObject.set(x, "resolveNaptr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolveNs(value: TypeofresolveNs): Self = StObject.set(x, "resolveNs", value.asInstanceOf[js.Any])
+      inline def setResolveNs(value: TypeofresolveNs): Self = StObject.set(x, "resolveNs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolvePtr(value: TypeofresolvePtr): Self = StObject.set(x, "resolvePtr", value.asInstanceOf[js.Any])
+      inline def setResolvePtr(value: TypeofresolvePtr): Self = StObject.set(x, "resolvePtr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolveSoa(value: TypeofresolveSoa): Self = StObject.set(x, "resolveSoa", value.asInstanceOf[js.Any])
+      inline def setResolveSoa(value: TypeofresolveSoa): Self = StObject.set(x, "resolveSoa", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolveSrv(value: TypeofresolveSrv): Self = StObject.set(x, "resolveSrv", value.asInstanceOf[js.Any])
+      inline def setResolveSrv(value: TypeofresolveSrv): Self = StObject.set(x, "resolveSrv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolveTxt(value: TypeofresolveTxt): Self = StObject.set(x, "resolveTxt", value.asInstanceOf[js.Any])
+      inline def setResolveTxt(value: TypeofresolveTxt): Self = StObject.set(x, "resolveTxt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolver(value: Instantiable0[Resolver]): Self = StObject.set(x, "Resolver", value.asInstanceOf[js.Any])
+      inline def setResolver(value: Instantiable0[Resolver]): Self = StObject.set(x, "Resolver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReverse(
+      inline def setReverse(
         value: (String, js.Function2[/* err */ ErrnoException | Null, /* hostnames */ js.Array[String], Unit]) => Unit
       ): Self = StObject.set(x, "reverse", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSERVFAIL(value: String): Self = StObject.set(x, "SERVFAIL", value.asInstanceOf[js.Any])
+      inline def setSERVFAIL(value: String): Self = StObject.set(x, "SERVFAIL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetServers(value: js.Array[String] => Unit): Self = StObject.set(x, "setServers", js.Any.fromFunction1(value))
+      inline def setSetServers(value: js.Array[String] => Unit): Self = StObject.set(x, "setServers", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTIMEOUT(value: String): Self = StObject.set(x, "TIMEOUT", value.asInstanceOf[js.Any])
+      inline def setTIMEOUT(value: String): Self = StObject.set(x, "TIMEOUT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setV4MAPPED(value: Double): Self = StObject.set(x, "V4MAPPED", value.asInstanceOf[js.Any])
+      inline def setV4MAPPED(value: Double): Self = StObject.set(x, "V4MAPPED", value.asInstanceOf[js.Any])
     }
   }
   

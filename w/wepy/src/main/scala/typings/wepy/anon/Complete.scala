@@ -14,22 +14,17 @@ trait Complete[T] extends StObject {
 }
 object Complete {
   
-  @scala.inline
-  def apply[T](complete: () => Unit, fail: () => Unit, success: T => Unit): Complete[T] = {
+  inline def apply[T](complete: () => Unit, fail: () => Unit, success: T => Unit): Complete[T] = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete), fail = js.Any.fromFunction0(fail), success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[Complete[T]]
   }
   
-  @scala.inline
-  implicit class CompleteMutableBuilder[Self <: Complete[?], T] (val x: Self & Complete[T]) extends AnyVal {
+  extension [Self <: Complete[?], T](x: Self & Complete[T]) {
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
+    inline def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSuccess(value: T => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: T => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

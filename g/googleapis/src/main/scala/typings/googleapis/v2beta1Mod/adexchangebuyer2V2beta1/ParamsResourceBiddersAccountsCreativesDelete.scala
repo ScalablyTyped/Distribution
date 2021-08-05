@@ -33,31 +33,23 @@ trait ParamsResourceBiddersAccountsCreativesDelete
 }
 object ParamsResourceBiddersAccountsCreativesDelete {
   
-  @scala.inline
-  def apply(): ParamsResourceBiddersAccountsCreativesDelete = {
+  inline def apply(): ParamsResourceBiddersAccountsCreativesDelete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceBiddersAccountsCreativesDelete]
   }
   
-  @scala.inline
-  implicit class ParamsResourceBiddersAccountsCreativesDeleteMutableBuilder[Self <: ParamsResourceBiddersAccountsCreativesDelete] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceBiddersAccountsCreativesDelete](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCreativeId(value: String): Self = StObject.set(x, "creativeId", value.asInstanceOf[js.Any])
+    inline def setCreativeId(value: String): Self = StObject.set(x, "creativeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreativeIdUndefined: Self = StObject.set(x, "creativeId", js.undefined)
+    inline def setCreativeIdUndefined: Self = StObject.set(x, "creativeId", js.undefined)
     
-    @scala.inline
-    def setOwnerName(value: String): Self = StObject.set(x, "ownerName", value.asInstanceOf[js.Any])
+    inline def setOwnerName(value: String): Self = StObject.set(x, "ownerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerNameUndefined: Self = StObject.set(x, "ownerName", js.undefined)
+    inline def setOwnerNameUndefined: Self = StObject.set(x, "ownerName", js.undefined)
   }
 }

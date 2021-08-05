@@ -23,19 +23,15 @@ trait ASPxClientCallbackCompleteEventArgs
 }
 object ASPxClientCallbackCompleteEventArgs {
   
-  @scala.inline
-  def apply(parameter: String, result: String): ASPxClientCallbackCompleteEventArgs = {
+  inline def apply(parameter: String, result: String): ASPxClientCallbackCompleteEventArgs = {
     val __obj = js.Dynamic.literal(parameter = parameter.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientCallbackCompleteEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientCallbackCompleteEventArgsMutableBuilder[Self <: ASPxClientCallbackCompleteEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientCallbackCompleteEventArgs](x: Self) {
     
-    @scala.inline
-    def setParameter(value: String): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+    inline def setParameter(value: String): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

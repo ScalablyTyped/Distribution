@@ -17,6 +17,5 @@ object notificationsMod {
   @js.native
   val default: FunctionComponent[js.Any] = js.native
   
-  @scala.inline
-  def mapper(hasState: Combo): Notifications = ^.asInstanceOf[js.Dynamic].applyDynamic("mapper")(hasState.asInstanceOf[js.Any]).asInstanceOf[Notifications]
+  inline def mapper(hasState: Combo): Notifications = ^.asInstanceOf[js.Dynamic].applyDynamic("mapper")(hasState.asInstanceOf[js.Any]).asInstanceOf[Notifications]
 }

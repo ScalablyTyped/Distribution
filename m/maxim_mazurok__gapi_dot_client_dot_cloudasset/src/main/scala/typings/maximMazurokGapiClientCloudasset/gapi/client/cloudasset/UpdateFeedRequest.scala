@@ -17,25 +17,19 @@ trait UpdateFeedRequest extends StObject {
 }
 object UpdateFeedRequest {
   
-  @scala.inline
-  def apply(): UpdateFeedRequest = {
+  inline def apply(): UpdateFeedRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateFeedRequest]
   }
   
-  @scala.inline
-  implicit class UpdateFeedRequestMutableBuilder[Self <: UpdateFeedRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateFeedRequest](x: Self) {
     
-    @scala.inline
-    def setFeed(value: Feed): Self = StObject.set(x, "feed", value.asInstanceOf[js.Any])
+    inline def setFeed(value: Feed): Self = StObject.set(x, "feed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeedUndefined: Self = StObject.set(x, "feed", js.undefined)
+    inline def setFeedUndefined: Self = StObject.set(x, "feed", js.undefined)
     
-    @scala.inline
-    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

@@ -10,22 +10,17 @@ trait SchemaRepeatedString extends StObject {
 }
 object SchemaRepeatedString {
   
-  @scala.inline
-  def apply(): SchemaRepeatedString = {
+  inline def apply(): SchemaRepeatedString = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRepeatedString]
   }
   
-  @scala.inline
-  implicit class SchemaRepeatedStringMutableBuilder[Self <: SchemaRepeatedString] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRepeatedString](x: Self) {
     
-    @scala.inline
-    def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

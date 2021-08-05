@@ -18,28 +18,21 @@ trait ListManagedPoliciesInPermissionSetResponse extends StObject {
 }
 object ListManagedPoliciesInPermissionSetResponse {
   
-  @scala.inline
-  def apply(): ListManagedPoliciesInPermissionSetResponse = {
+  inline def apply(): ListManagedPoliciesInPermissionSetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListManagedPoliciesInPermissionSetResponse]
   }
   
-  @scala.inline
-  implicit class ListManagedPoliciesInPermissionSetResponseMutableBuilder[Self <: ListManagedPoliciesInPermissionSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListManagedPoliciesInPermissionSetResponse](x: Self) {
     
-    @scala.inline
-    def setAttachedManagedPolicies(value: AttachedManagedPolicyList): Self = StObject.set(x, "AttachedManagedPolicies", value.asInstanceOf[js.Any])
+    inline def setAttachedManagedPolicies(value: AttachedManagedPolicyList): Self = StObject.set(x, "AttachedManagedPolicies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachedManagedPoliciesUndefined: Self = StObject.set(x, "AttachedManagedPolicies", js.undefined)
+    inline def setAttachedManagedPoliciesUndefined: Self = StObject.set(x, "AttachedManagedPolicies", js.undefined)
     
-    @scala.inline
-    def setAttachedManagedPoliciesVarargs(value: AttachedManagedPolicy*): Self = StObject.set(x, "AttachedManagedPolicies", js.Array(value :_*))
+    inline def setAttachedManagedPoliciesVarargs(value: AttachedManagedPolicy*): Self = StObject.set(x, "AttachedManagedPolicies", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

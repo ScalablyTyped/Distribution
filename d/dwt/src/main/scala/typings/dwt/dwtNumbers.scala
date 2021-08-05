@@ -8,36 +8,29 @@ object dwtNumbers {
   
   @js.native
   sealed trait `10` extends StObject
-  @scala.inline
-  def `10`: `10` = 10.asInstanceOf[`10`]
+  inline def `10`: `10` = 10.asInstanceOf[`10`]
   
   @js.native
   sealed trait `11` extends StObject
-  @scala.inline
-  def `11`: `11` = 11.asInstanceOf[`11`]
+  inline def `11`: `11` = 11.asInstanceOf[`11`]
   
   @js.native
   sealed trait `5` extends StObject
-  @scala.inline
-  def `5`: `5` = 5.asInstanceOf[`5`]
+  inline def `5`: `5` = 5.asInstanceOf[`5`]
   
   @js.native
   sealed trait `6` extends StObject
-  @scala.inline
-  def `6`: `6` = 6.asInstanceOf[`6`]
+  inline def `6`: `6` = 6.asInstanceOf[`6`]
   
   @js.native
   sealed trait `7` extends StObject
-  @scala.inline
-  def `7`: `7` = 7.asInstanceOf[`7`]
+  inline def `7`: `7` = 7.asInstanceOf[`7`]
   
   @js.native
   sealed trait `8` extends StObject
-  @scala.inline
-  def `8`: `8` = 8.asInstanceOf[`8`]
+  inline def `8`: `8` = 8.asInstanceOf[`8`]
   
   @js.native
   sealed trait `9` extends StObject
-  @scala.inline
-  def `9`: `9` = 9.asInstanceOf[`9`]
+  inline def `9`: `9` = 9.asInstanceOf[`9`]
 }

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RegisterType extends StObject
 object RegisterType {
   
-  @scala.inline
-  def format: typings.numeral.numeralStrings.format = "format".asInstanceOf[typings.numeral.numeralStrings.format]
+  inline def format: typings.numeral.numeralStrings.format = "format".asInstanceOf[typings.numeral.numeralStrings.format]
   
-  @scala.inline
-  def locale: typings.numeral.numeralStrings.locale = "locale".asInstanceOf[typings.numeral.numeralStrings.locale]
+  inline def locale: typings.numeral.numeralStrings.locale = "locale".asInstanceOf[typings.numeral.numeralStrings.locale]
 }

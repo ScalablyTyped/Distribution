@@ -22,11 +22,9 @@ object marketingPageLayoutMod {
   trait MarketingPageLayoutHorizontalSize extends StObject
   object MarketingPageLayoutHorizontalSize {
     
-    @scala.inline
-    def large: typings.wixStyleReact.wixStyleReactStrings.large = "large".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.large]
+    inline def large: typings.wixStyleReact.wixStyleReactStrings.large = "large".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.large]
     
-    @scala.inline
-    def medium: typings.wixStyleReact.wixStyleReactStrings.medium = "medium".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.medium]
+    inline def medium: typings.wixStyleReact.wixStyleReactStrings.medium = "medium".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.medium]
   }
   
   trait MarketingPageLayoutProps extends StObject {
@@ -51,68 +49,48 @@ object marketingPageLayoutMod {
   }
   object MarketingPageLayoutProps {
     
-    @scala.inline
-    def apply(): MarketingPageLayoutProps = {
+    inline def apply(): MarketingPageLayoutProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MarketingPageLayoutProps]
     }
     
-    @scala.inline
-    implicit class MarketingPageLayoutPropsMutableBuilder[Self <: MarketingPageLayoutProps] (val x: Self) extends AnyVal {
+    extension [Self <: MarketingPageLayoutProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setFooter(value: ReactNode): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+      inline def setFooter(value: ReactNode): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+      inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
       
-      @scala.inline
-      def setHorizontalSize(value: MarketingPageLayoutHorizontalSize): Self = StObject.set(x, "horizontalSize", value.asInstanceOf[js.Any])
+      inline def setHorizontalSize(value: MarketingPageLayoutHorizontalSize): Self = StObject.set(x, "horizontalSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHorizontalSizeUndefined: Self = StObject.set(x, "horizontalSize", js.undefined)
+      inline def setHorizontalSizeUndefined: Self = StObject.set(x, "horizontalSize", js.undefined)
       
-      @scala.inline
-      def setImage(value: ReactNode): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: ReactNode): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
-      @scala.inline
-      def setRemoveImageHorizontalPadding(value: Boolean): Self = StObject.set(x, "removeImageHorizontalPadding", value.asInstanceOf[js.Any])
+      inline def setRemoveImageHorizontalPadding(value: Boolean): Self = StObject.set(x, "removeImageHorizontalPadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveImageHorizontalPaddingUndefined: Self = StObject.set(x, "removeImageHorizontalPadding", js.undefined)
+      inline def setRemoveImageHorizontalPaddingUndefined: Self = StObject.set(x, "removeImageHorizontalPadding", js.undefined)
       
-      @scala.inline
-      def setRemoveImageVerticalPadding(value: Boolean): Self = StObject.set(x, "removeImageVerticalPadding", value.asInstanceOf[js.Any])
+      inline def setRemoveImageVerticalPadding(value: Boolean): Self = StObject.set(x, "removeImageVerticalPadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveImageVerticalPaddingUndefined: Self = StObject.set(x, "removeImageVerticalPadding", js.undefined)
+      inline def setRemoveImageVerticalPaddingUndefined: Self = StObject.set(x, "removeImageVerticalPadding", js.undefined)
       
-      @scala.inline
-      def setVerticalSize(value: MarketingPageLayoutVerticalSize): Self = StObject.set(x, "verticalSize", value.asInstanceOf[js.Any])
+      inline def setVerticalSize(value: MarketingPageLayoutVerticalSize): Self = StObject.set(x, "verticalSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalSizeUndefined: Self = StObject.set(x, "verticalSize", js.undefined)
+      inline def setVerticalSizeUndefined: Self = StObject.set(x, "verticalSize", js.undefined)
     }
   }
   
@@ -123,10 +101,8 @@ object marketingPageLayoutMod {
   trait MarketingPageLayoutVerticalSize extends StObject
   object MarketingPageLayoutVerticalSize {
     
-    @scala.inline
-    def large: typings.wixStyleReact.wixStyleReactStrings.large = "large".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.large]
+    inline def large: typings.wixStyleReact.wixStyleReactStrings.large = "large".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.large]
     
-    @scala.inline
-    def medium: typings.wixStyleReact.wixStyleReactStrings.medium = "medium".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.medium]
+    inline def medium: typings.wixStyleReact.wixStyleReactStrings.medium = "medium".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.medium]
   }
 }

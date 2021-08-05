@@ -20,25 +20,19 @@ trait PodspecPath extends StObject {
 }
 object PodspecPath {
   
-  @scala.inline
-  def apply(podspecPath: String): PodspecPath = {
+  inline def apply(podspecPath: String): PodspecPath = {
     val __obj = js.Dynamic.literal(podspecPath = podspecPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[PodspecPath]
   }
   
-  @scala.inline
-  implicit class PodspecPathMutableBuilder[Self <: PodspecPath] (val x: Self) extends AnyVal {
+  extension [Self <: PodspecPath](x: Self) {
     
-    @scala.inline
-    def setPodspecPath(value: String): Self = StObject.set(x, "podspecPath", value.asInstanceOf[js.Any])
+    inline def setPodspecPath(value: String): Self = StObject.set(x, "podspecPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptPhases(value: js.Array[IOSScriptPhase]): Self = StObject.set(x, "scriptPhases", value.asInstanceOf[js.Any])
+    inline def setScriptPhases(value: js.Array[IOSScriptPhase]): Self = StObject.set(x, "scriptPhases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptPhasesUndefined: Self = StObject.set(x, "scriptPhases", js.undefined)
+    inline def setScriptPhasesUndefined: Self = StObject.set(x, "scriptPhases", js.undefined)
     
-    @scala.inline
-    def setScriptPhasesVarargs(value: IOSScriptPhase*): Self = StObject.set(x, "scriptPhases", js.Array(value :_*))
+    inline def setScriptPhasesVarargs(value: IOSScriptPhase*): Self = StObject.set(x, "scriptPhases", js.Array(value :_*))
   }
 }

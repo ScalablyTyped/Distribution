@@ -21,20 +21,17 @@ object FormLocation {
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FormLocation.Content")
   @js.native
   def Content: FormLocation = js.native
-  @scala.inline
-  def Content_=(x: FormLocation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Content")(x.asInstanceOf[js.Any])
+  inline def Content_=(x: FormLocation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Content")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FormLocation.ModalPopup")
   @js.native
   def ModalPopup: FormLocation = js.native
-  @scala.inline
-  def ModalPopup_=(x: FormLocation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ModalPopup")(x.asInstanceOf[js.Any])
+  inline def ModalPopup_=(x: FormLocation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ModalPopup")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.FormLocation.Popup")
   @js.native
   def Popup: FormLocation = js.native
-  @scala.inline
-  def Popup_=(x: FormLocation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Popup")(x.asInstanceOf[js.Any])
+  inline def Popup_=(x: FormLocation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Popup")(x.asInstanceOf[js.Any])
 }

@@ -66,8 +66,7 @@ trait ISCSIVolumeSource extends StObject {
 }
 object ISCSIVolumeSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     chapAuthDiscovery: Boolean,
     chapAuthSession: Boolean,
     fsType: String,
@@ -84,43 +83,30 @@ object ISCSIVolumeSource {
     __obj.asInstanceOf[ISCSIVolumeSource]
   }
   
-  @scala.inline
-  implicit class ISCSIVolumeSourceMutableBuilder[Self <: ISCSIVolumeSource] (val x: Self) extends AnyVal {
+  extension [Self <: ISCSIVolumeSource](x: Self) {
     
-    @scala.inline
-    def setChapAuthDiscovery(value: Boolean): Self = StObject.set(x, "chapAuthDiscovery", value.asInstanceOf[js.Any])
+    inline def setChapAuthDiscovery(value: Boolean): Self = StObject.set(x, "chapAuthDiscovery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChapAuthSession(value: Boolean): Self = StObject.set(x, "chapAuthSession", value.asInstanceOf[js.Any])
+    inline def setChapAuthSession(value: Boolean): Self = StObject.set(x, "chapAuthSession", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFsType(value: String): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
+    inline def setFsType(value: String): Self = StObject.set(x, "fsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitiatorName(value: String): Self = StObject.set(x, "initiatorName", value.asInstanceOf[js.Any])
+    inline def setInitiatorName(value: String): Self = StObject.set(x, "initiatorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIqn(value: String): Self = StObject.set(x, "iqn", value.asInstanceOf[js.Any])
+    inline def setIqn(value: String): Self = StObject.set(x, "iqn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIscsiInterface(value: String): Self = StObject.set(x, "iscsiInterface", value.asInstanceOf[js.Any])
+    inline def setIscsiInterface(value: String): Self = StObject.set(x, "iscsiInterface", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLun(value: Double): Self = StObject.set(x, "lun", value.asInstanceOf[js.Any])
+    inline def setLun(value: Double): Self = StObject.set(x, "lun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortals(value: js.Array[String]): Self = StObject.set(x, "portals", value.asInstanceOf[js.Any])
+    inline def setPortals(value: js.Array[String]): Self = StObject.set(x, "portals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalsVarargs(value: String*): Self = StObject.set(x, "portals", js.Array(value :_*))
+    inline def setPortalsVarargs(value: String*): Self = StObject.set(x, "portals", js.Array(value :_*))
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretRef(value: LocalObjectReference): Self = StObject.set(x, "secretRef", value.asInstanceOf[js.Any])
+    inline def setSecretRef(value: LocalObjectReference): Self = StObject.set(x, "secretRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetPortal(value: String): Self = StObject.set(x, "targetPortal", value.asInstanceOf[js.Any])
+    inline def setTargetPortal(value: String): Self = StObject.set(x, "targetPortal", value.asInstanceOf[js.Any])
   }
 }

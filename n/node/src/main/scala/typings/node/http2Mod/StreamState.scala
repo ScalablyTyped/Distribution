@@ -20,49 +20,35 @@ trait StreamState extends StObject {
 }
 object StreamState {
   
-  @scala.inline
-  def apply(): StreamState = {
+  inline def apply(): StreamState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StreamState]
   }
   
-  @scala.inline
-  implicit class StreamStateMutableBuilder[Self <: StreamState] (val x: Self) extends AnyVal {
+  extension [Self <: StreamState](x: Self) {
     
-    @scala.inline
-    def setLocalClose(value: Double): Self = StObject.set(x, "localClose", value.asInstanceOf[js.Any])
+    inline def setLocalClose(value: Double): Self = StObject.set(x, "localClose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalCloseUndefined: Self = StObject.set(x, "localClose", js.undefined)
+    inline def setLocalCloseUndefined: Self = StObject.set(x, "localClose", js.undefined)
     
-    @scala.inline
-    def setLocalWindowSize(value: Double): Self = StObject.set(x, "localWindowSize", value.asInstanceOf[js.Any])
+    inline def setLocalWindowSize(value: Double): Self = StObject.set(x, "localWindowSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalWindowSizeUndefined: Self = StObject.set(x, "localWindowSize", js.undefined)
+    inline def setLocalWindowSizeUndefined: Self = StObject.set(x, "localWindowSize", js.undefined)
     
-    @scala.inline
-    def setRemoteClose(value: Double): Self = StObject.set(x, "remoteClose", value.asInstanceOf[js.Any])
+    inline def setRemoteClose(value: Double): Self = StObject.set(x, "remoteClose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoteCloseUndefined: Self = StObject.set(x, "remoteClose", js.undefined)
+    inline def setRemoteCloseUndefined: Self = StObject.set(x, "remoteClose", js.undefined)
     
-    @scala.inline
-    def setState(value: Double): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: Double): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setSumDependencyWeight(value: Double): Self = StObject.set(x, "sumDependencyWeight", value.asInstanceOf[js.Any])
+    inline def setSumDependencyWeight(value: Double): Self = StObject.set(x, "sumDependencyWeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSumDependencyWeightUndefined: Self = StObject.set(x, "sumDependencyWeight", js.undefined)
+    inline def setSumDependencyWeightUndefined: Self = StObject.set(x, "sumDependencyWeight", js.undefined)
     
-    @scala.inline
-    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "weight", js.undefined)
   }
 }

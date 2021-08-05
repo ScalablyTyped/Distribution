@@ -26,37 +26,27 @@ trait SchemaItemStatus extends StObject {
 }
 object SchemaItemStatus {
   
-  @scala.inline
-  def apply(): SchemaItemStatus = {
+  inline def apply(): SchemaItemStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaItemStatus]
   }
   
-  @scala.inline
-  implicit class SchemaItemStatusMutableBuilder[Self <: SchemaItemStatus] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaItemStatus](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setProcessingErrors(value: js.Array[SchemaProcessingError]): Self = StObject.set(x, "processingErrors", value.asInstanceOf[js.Any])
+    inline def setProcessingErrors(value: js.Array[SchemaProcessingError]): Self = StObject.set(x, "processingErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessingErrorsUndefined: Self = StObject.set(x, "processingErrors", js.undefined)
+    inline def setProcessingErrorsUndefined: Self = StObject.set(x, "processingErrors", js.undefined)
     
-    @scala.inline
-    def setProcessingErrorsVarargs(value: SchemaProcessingError*): Self = StObject.set(x, "processingErrors", js.Array(value :_*))
+    inline def setProcessingErrorsVarargs(value: SchemaProcessingError*): Self = StObject.set(x, "processingErrors", js.Array(value :_*))
     
-    @scala.inline
-    def setRepositoryErrors(value: js.Array[SchemaRepositoryError]): Self = StObject.set(x, "repositoryErrors", value.asInstanceOf[js.Any])
+    inline def setRepositoryErrors(value: js.Array[SchemaRepositoryError]): Self = StObject.set(x, "repositoryErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryErrorsUndefined: Self = StObject.set(x, "repositoryErrors", js.undefined)
+    inline def setRepositoryErrorsUndefined: Self = StObject.set(x, "repositoryErrors", js.undefined)
     
-    @scala.inline
-    def setRepositoryErrorsVarargs(value: SchemaRepositoryError*): Self = StObject.set(x, "repositoryErrors", js.Array(value :_*))
+    inline def setRepositoryErrorsVarargs(value: SchemaRepositoryError*): Self = StObject.set(x, "repositoryErrors", js.Array(value :_*))
   }
 }

@@ -24,8 +24,7 @@ object adapterMod {
   }
   object MDCSnackbarAdapter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addClass: String => Unit,
       announce: () => Unit,
       notifyClosed: String => Unit,
@@ -38,29 +37,21 @@ object adapterMod {
       __obj.asInstanceOf[MDCSnackbarAdapter]
     }
     
-    @scala.inline
-    implicit class MDCSnackbarAdapterMutableBuilder[Self <: MDCSnackbarAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: MDCSnackbarAdapter](x: Self) {
       
-      @scala.inline
-      def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
+      inline def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAnnounce(value: () => Unit): Self = StObject.set(x, "announce", js.Any.fromFunction0(value))
+      inline def setAnnounce(value: () => Unit): Self = StObject.set(x, "announce", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNotifyClosed(value: String => Unit): Self = StObject.set(x, "notifyClosed", js.Any.fromFunction1(value))
+      inline def setNotifyClosed(value: String => Unit): Self = StObject.set(x, "notifyClosed", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNotifyClosing(value: String => Unit): Self = StObject.set(x, "notifyClosing", js.Any.fromFunction1(value))
+      inline def setNotifyClosing(value: String => Unit): Self = StObject.set(x, "notifyClosing", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNotifyOpened(value: () => Unit): Self = StObject.set(x, "notifyOpened", js.Any.fromFunction0(value))
+      inline def setNotifyOpened(value: () => Unit): Self = StObject.set(x, "notifyOpened", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNotifyOpening(value: () => Unit): Self = StObject.set(x, "notifyOpening", js.Any.fromFunction0(value))
+      inline def setNotifyOpening(value: () => Unit): Self = StObject.set(x, "notifyOpening", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveClass(value: String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
+      inline def setRemoveClass(value: String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
     }
   }
 }

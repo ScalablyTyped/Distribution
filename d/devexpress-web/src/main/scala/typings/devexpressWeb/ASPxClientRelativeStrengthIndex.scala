@@ -23,8 +23,7 @@ trait ASPxClientRelativeStrengthIndex
 }
 object ASPxClientRelativeStrengthIndex {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     axisY: String,
     chart: ASPxClientWebChart,
     name: String,
@@ -37,13 +36,10 @@ object ASPxClientRelativeStrengthIndex {
     __obj.asInstanceOf[ASPxClientRelativeStrengthIndex]
   }
   
-  @scala.inline
-  implicit class ASPxClientRelativeStrengthIndexMutableBuilder[Self <: ASPxClientRelativeStrengthIndex] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientRelativeStrengthIndex](x: Self) {
     
-    @scala.inline
-    def setPointsCount(value: Double): Self = StObject.set(x, "pointsCount", value.asInstanceOf[js.Any])
+    inline def setPointsCount(value: Double): Self = StObject.set(x, "pointsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueLevel(value: String): Self = StObject.set(x, "valueLevel", value.asInstanceOf[js.Any])
+    inline def setValueLevel(value: String): Self = StObject.set(x, "valueLevel", value.asInstanceOf[js.Any])
   }
 }

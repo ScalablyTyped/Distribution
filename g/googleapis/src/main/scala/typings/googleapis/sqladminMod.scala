@@ -36,8 +36,7 @@ object sqladminMod {
     @JSImport("googleapis/build/src/apis/sqladmin", "VERSIONS.v1beta4")
     @js.native
     def v1beta4: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Sqladmin] = js.native
-    @scala.inline
-    def v1beta4_=(
+    inline def v1beta4_=(
       x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Sqladmin]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1beta4")(x.asInstanceOf[js.Any])
   }
@@ -75,8 +74,7 @@ object sqladminMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -120,9 +118,7 @@ object sqladminMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def sqladmin(options: Options): Sqladmin = ^.asInstanceOf[js.Dynamic].applyDynamic("sqladmin")(options.asInstanceOf[js.Any]).asInstanceOf[Sqladmin]
+  inline def sqladmin(options: Options): Sqladmin = ^.asInstanceOf[js.Dynamic].applyDynamic("sqladmin")(options.asInstanceOf[js.Any]).asInstanceOf[Sqladmin]
   
-  @scala.inline
-  def sqladmin_v1beta4(version: v1beta4): Sqladmin = ^.asInstanceOf[js.Dynamic].applyDynamic("sqladmin")(version.asInstanceOf[js.Any]).asInstanceOf[Sqladmin]
+  inline def sqladmin_v1beta4(version: v1beta4): Sqladmin = ^.asInstanceOf[js.Dynamic].applyDynamic("sqladmin")(version.asInstanceOf[js.Any]).asInstanceOf[Sqladmin]
 }

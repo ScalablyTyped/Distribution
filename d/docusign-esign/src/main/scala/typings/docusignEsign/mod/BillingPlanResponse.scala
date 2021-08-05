@@ -18,28 +18,21 @@ trait BillingPlanResponse extends StObject {
 }
 object BillingPlanResponse {
   
-  @scala.inline
-  def apply(): BillingPlanResponse = {
+  inline def apply(): BillingPlanResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BillingPlanResponse]
   }
   
-  @scala.inline
-  implicit class BillingPlanResponseMutableBuilder[Self <: BillingPlanResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BillingPlanResponse](x: Self) {
     
-    @scala.inline
-    def setBillingPlan(value: /* Contains information about a billing plan. */ BillingPlan): Self = StObject.set(x, "billingPlan", value.asInstanceOf[js.Any])
+    inline def setBillingPlan(value: /* Contains information about a billing plan. */ BillingPlan): Self = StObject.set(x, "billingPlan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingPlanUndefined: Self = StObject.set(x, "billingPlan", js.undefined)
+    inline def setBillingPlanUndefined: Self = StObject.set(x, "billingPlan", js.undefined)
     
-    @scala.inline
-    def setSuccessorPlans(value: js.Array[/* Contains information about a billing plan. */ BillingPlan]): Self = StObject.set(x, "successorPlans", value.asInstanceOf[js.Any])
+    inline def setSuccessorPlans(value: js.Array[/* Contains information about a billing plan. */ BillingPlan]): Self = StObject.set(x, "successorPlans", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessorPlansUndefined: Self = StObject.set(x, "successorPlans", js.undefined)
+    inline def setSuccessorPlansUndefined: Self = StObject.set(x, "successorPlans", js.undefined)
     
-    @scala.inline
-    def setSuccessorPlansVarargs(value: (/* Contains information about a billing plan. */ BillingPlan)*): Self = StObject.set(x, "successorPlans", js.Array(value :_*))
+    inline def setSuccessorPlansVarargs(value: (/* Contains information about a billing plan. */ BillingPlan)*): Self = StObject.set(x, "successorPlans", js.Array(value :_*))
   }
 }

@@ -15,19 +15,15 @@ trait StringPair extends StObject {
 }
 object StringPair {
   
-  @scala.inline
-  def apply(First: String, Second: String): StringPair = {
+  inline def apply(First: String, Second: String): StringPair = {
     val __obj = js.Dynamic.literal(First = First.asInstanceOf[js.Any], Second = Second.asInstanceOf[js.Any])
     __obj.asInstanceOf[StringPair]
   }
   
-  @scala.inline
-  implicit class StringPairMutableBuilder[Self <: StringPair] (val x: Self) extends AnyVal {
+  extension [Self <: StringPair](x: Self) {
     
-    @scala.inline
-    def setFirst(value: String): Self = StObject.set(x, "First", value.asInstanceOf[js.Any])
+    inline def setFirst(value: String): Self = StObject.set(x, "First", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecond(value: String): Self = StObject.set(x, "Second", value.asInstanceOf[js.Any])
+    inline def setSecond(value: String): Self = StObject.set(x, "Second", value.asInstanceOf[js.Any])
   }
 }

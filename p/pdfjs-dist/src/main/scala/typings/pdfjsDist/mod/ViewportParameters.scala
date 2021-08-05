@@ -22,40 +22,29 @@ trait ViewportParameters extends StObject {
 }
 object ViewportParameters {
   
-  @scala.inline
-  def apply(scale: Double): ViewportParameters = {
+  inline def apply(scale: Double): ViewportParameters = {
     val __obj = js.Dynamic.literal(scale = scale.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewportParameters]
   }
   
-  @scala.inline
-  implicit class ViewportParametersMutableBuilder[Self <: ViewportParameters] (val x: Self) extends AnyVal {
+  extension [Self <: ViewportParameters](x: Self) {
     
-    @scala.inline
-    def setDontFlip(value: Boolean): Self = StObject.set(x, "dontFlip", value.asInstanceOf[js.Any])
+    inline def setDontFlip(value: Boolean): Self = StObject.set(x, "dontFlip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDontFlipUndefined: Self = StObject.set(x, "dontFlip", js.undefined)
+    inline def setDontFlipUndefined: Self = StObject.set(x, "dontFlip", js.undefined)
     
-    @scala.inline
-    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+    inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
+    inline def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
     
-    @scala.inline
-    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+    inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
+    inline def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
     
-    @scala.inline
-    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+    inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
   }
 }

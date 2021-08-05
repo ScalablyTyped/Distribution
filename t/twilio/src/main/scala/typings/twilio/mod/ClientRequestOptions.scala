@@ -14,28 +14,21 @@ trait ClientRequestOptions extends StObject {
 }
 object ClientRequestOptions {
   
-  @scala.inline
-  def apply(url: String): ClientRequestOptions = {
+  inline def apply(url: String): ClientRequestOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClientRequestOptions]
   }
   
-  @scala.inline
-  implicit class ClientRequestOptionsMutableBuilder[Self <: ClientRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ClientRequestOptions](x: Self) {
     
-    @scala.inline
-    def setForm(value: js.Any): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+    inline def setForm(value: js.Any): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
+    inline def setFormUndefined: Self = StObject.set(x, "form", js.undefined)
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

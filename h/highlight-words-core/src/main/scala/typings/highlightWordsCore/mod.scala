@@ -10,8 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def findAll(args: FindAllArgs): js.Array[Chunk] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAll")(args.asInstanceOf[js.Any]).asInstanceOf[js.Array[Chunk]]
+  inline def findAll(args: FindAllArgs): js.Array[Chunk] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAll")(args.asInstanceOf[js.Any]).asInstanceOf[js.Array[Chunk]]
   
   trait Chunk extends StObject {
     
@@ -23,23 +22,18 @@ object mod {
   }
   object Chunk {
     
-    @scala.inline
-    def apply(end: Double, highlight: Boolean, start: Double): Chunk = {
+    inline def apply(end: Double, highlight: Boolean, start: Double): Chunk = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], highlight = highlight.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[Chunk]
     }
     
-    @scala.inline
-    implicit class ChunkMutableBuilder[Self <: Chunk] (val x: Self) extends AnyVal {
+    extension [Self <: Chunk](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlight(value: Boolean): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+      inline def setHighlight(value: Boolean): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
   
@@ -51,20 +45,16 @@ object mod {
   }
   object FindAllArgs {
     
-    @scala.inline
-    def apply(searchWords: js.Array[String], textToHighlight: String): FindAllArgs = {
+    inline def apply(searchWords: js.Array[String], textToHighlight: String): FindAllArgs = {
       val __obj = js.Dynamic.literal(searchWords = searchWords.asInstanceOf[js.Any], textToHighlight = textToHighlight.asInstanceOf[js.Any])
       __obj.asInstanceOf[FindAllArgs]
     }
     
-    @scala.inline
-    implicit class FindAllArgsMutableBuilder[Self <: FindAllArgs] (val x: Self) extends AnyVal {
+    extension [Self <: FindAllArgs](x: Self) {
       
-      @scala.inline
-      def setFindChunks(value: /* args */ FindChunksArgs => js.Array[Chunk]): Self = StObject.set(x, "findChunks", js.Any.fromFunction1(value))
+      inline def setFindChunks(value: /* args */ FindChunksArgs => js.Array[Chunk]): Self = StObject.set(x, "findChunks", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFindChunksUndefined: Self = StObject.set(x, "findChunks", js.undefined)
+      inline def setFindChunksUndefined: Self = StObject.set(x, "findChunks", js.undefined)
     }
   }
   
@@ -82,41 +72,30 @@ object mod {
   }
   object FindChunksArgs {
     
-    @scala.inline
-    def apply(searchWords: js.Array[String], textToHighlight: String): FindChunksArgs = {
+    inline def apply(searchWords: js.Array[String], textToHighlight: String): FindChunksArgs = {
       val __obj = js.Dynamic.literal(searchWords = searchWords.asInstanceOf[js.Any], textToHighlight = textToHighlight.asInstanceOf[js.Any])
       __obj.asInstanceOf[FindChunksArgs]
     }
     
-    @scala.inline
-    implicit class FindChunksArgsMutableBuilder[Self <: FindChunksArgs] (val x: Self) extends AnyVal {
+    extension [Self <: FindChunksArgs](x: Self) {
       
-      @scala.inline
-      def setAutoEscape(value: Boolean): Self = StObject.set(x, "autoEscape", value.asInstanceOf[js.Any])
+      inline def setAutoEscape(value: Boolean): Self = StObject.set(x, "autoEscape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoEscapeUndefined: Self = StObject.set(x, "autoEscape", js.undefined)
+      inline def setAutoEscapeUndefined: Self = StObject.set(x, "autoEscape", js.undefined)
       
-      @scala.inline
-      def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+      inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
+      inline def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
       
-      @scala.inline
-      def setSanitize(value: /* text */ String => String): Self = StObject.set(x, "sanitize", js.Any.fromFunction1(value))
+      inline def setSanitize(value: /* text */ String => String): Self = StObject.set(x, "sanitize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSanitizeUndefined: Self = StObject.set(x, "sanitize", js.undefined)
+      inline def setSanitizeUndefined: Self = StObject.set(x, "sanitize", js.undefined)
       
-      @scala.inline
-      def setSearchWords(value: js.Array[String]): Self = StObject.set(x, "searchWords", value.asInstanceOf[js.Any])
+      inline def setSearchWords(value: js.Array[String]): Self = StObject.set(x, "searchWords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchWordsVarargs(value: String*): Self = StObject.set(x, "searchWords", js.Array(value :_*))
+      inline def setSearchWordsVarargs(value: String*): Self = StObject.set(x, "searchWords", js.Array(value :_*))
       
-      @scala.inline
-      def setTextToHighlight(value: String): Self = StObject.set(x, "textToHighlight", value.asInstanceOf[js.Any])
+      inline def setTextToHighlight(value: String): Self = StObject.set(x, "textToHighlight", value.asInstanceOf[js.Any])
     }
   }
 }

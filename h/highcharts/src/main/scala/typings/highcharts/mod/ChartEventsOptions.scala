@@ -128,85 +128,59 @@ trait ChartEventsOptions extends StObject {
 }
 object ChartEventsOptions {
   
-  @scala.inline
-  def apply(): ChartEventsOptions = {
+  inline def apply(): ChartEventsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartEventsOptions]
   }
   
-  @scala.inline
-  implicit class ChartEventsOptionsMutableBuilder[Self <: ChartEventsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChartEventsOptions](x: Self) {
     
-    @scala.inline
-    def setAddSeries(value: ChartAddSeriesCallbackFunction): Self = StObject.set(x, "addSeries", value.asInstanceOf[js.Any])
+    inline def setAddSeries(value: ChartAddSeriesCallbackFunction): Self = StObject.set(x, "addSeries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddSeriesUndefined: Self = StObject.set(x, "addSeries", js.undefined)
+    inline def setAddSeriesUndefined: Self = StObject.set(x, "addSeries", js.undefined)
     
-    @scala.inline
-    def setAfterPrint(value: (/* chart */ Chart_, /* event */ Event) => Unit): Self = StObject.set(x, "afterPrint", js.Any.fromFunction2(value))
+    inline def setAfterPrint(value: (/* chart */ Chart_, /* event */ Event) => Unit): Self = StObject.set(x, "afterPrint", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAfterPrintUndefined: Self = StObject.set(x, "afterPrint", js.undefined)
+    inline def setAfterPrintUndefined: Self = StObject.set(x, "afterPrint", js.undefined)
     
-    @scala.inline
-    def setBeforePrint(value: (/* chart */ Chart_, /* event */ Event) => Unit): Self = StObject.set(x, "beforePrint", js.Any.fromFunction2(value))
+    inline def setBeforePrint(value: (/* chart */ Chart_, /* event */ Event) => Unit): Self = StObject.set(x, "beforePrint", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBeforePrintUndefined: Self = StObject.set(x, "beforePrint", js.undefined)
+    inline def setBeforePrintUndefined: Self = StObject.set(x, "beforePrint", js.undefined)
     
-    @scala.inline
-    def setClick(value: ChartClickCallbackFunction): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
+    inline def setClick(value: ChartClickCallbackFunction): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
+    inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
     
-    @scala.inline
-    def setDrilldown(value: DrilldownCallbackFunction): Self = StObject.set(x, "drilldown", value.asInstanceOf[js.Any])
+    inline def setDrilldown(value: DrilldownCallbackFunction): Self = StObject.set(x, "drilldown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrilldownUndefined: Self = StObject.set(x, "drilldown", js.undefined)
+    inline def setDrilldownUndefined: Self = StObject.set(x, "drilldown", js.undefined)
     
-    @scala.inline
-    def setDrillup(value: DrillupCallbackFunction): Self = StObject.set(x, "drillup", value.asInstanceOf[js.Any])
+    inline def setDrillup(value: DrillupCallbackFunction): Self = StObject.set(x, "drillup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrillupUndefined: Self = StObject.set(x, "drillup", js.undefined)
+    inline def setDrillupUndefined: Self = StObject.set(x, "drillup", js.undefined)
     
-    @scala.inline
-    def setDrillupall(value: DrillupAllCallbackFunction): Self = StObject.set(x, "drillupall", value.asInstanceOf[js.Any])
+    inline def setDrillupall(value: DrillupAllCallbackFunction): Self = StObject.set(x, "drillupall", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrillupallUndefined: Self = StObject.set(x, "drillupall", js.undefined)
+    inline def setDrillupallUndefined: Self = StObject.set(x, "drillupall", js.undefined)
     
-    @scala.inline
-    def setExportData(value: ExportDataCallbackFunction): Self = StObject.set(x, "exportData", value.asInstanceOf[js.Any])
+    inline def setExportData(value: ExportDataCallbackFunction): Self = StObject.set(x, "exportData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportDataUndefined: Self = StObject.set(x, "exportData", js.undefined)
+    inline def setExportDataUndefined: Self = StObject.set(x, "exportData", js.undefined)
     
-    @scala.inline
-    def setLoad(value: ChartLoadCallbackFunction): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
+    inline def setLoad(value: ChartLoadCallbackFunction): Self = StObject.set(x, "load", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
+    inline def setLoadUndefined: Self = StObject.set(x, "load", js.undefined)
     
-    @scala.inline
-    def setRedraw(value: ChartRedrawCallbackFunction): Self = StObject.set(x, "redraw", value.asInstanceOf[js.Any])
+    inline def setRedraw(value: ChartRedrawCallbackFunction): Self = StObject.set(x, "redraw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedrawUndefined: Self = StObject.set(x, "redraw", js.undefined)
+    inline def setRedrawUndefined: Self = StObject.set(x, "redraw", js.undefined)
     
-    @scala.inline
-    def setRender(value: ChartRenderCallbackFunction): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+    inline def setRender(value: ChartRenderCallbackFunction): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+    inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     
-    @scala.inline
-    def setSelection(value: ChartSelectionCallbackFunction): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: ChartSelectionCallbackFunction): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
+    inline def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)
   }
 }

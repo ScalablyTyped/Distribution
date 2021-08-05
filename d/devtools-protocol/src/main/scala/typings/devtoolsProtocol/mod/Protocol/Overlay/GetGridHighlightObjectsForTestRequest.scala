@@ -14,19 +14,15 @@ trait GetGridHighlightObjectsForTestRequest extends StObject {
 }
 object GetGridHighlightObjectsForTestRequest {
   
-  @scala.inline
-  def apply(nodeIds: js.Array[NodeId]): GetGridHighlightObjectsForTestRequest = {
+  inline def apply(nodeIds: js.Array[NodeId]): GetGridHighlightObjectsForTestRequest = {
     val __obj = js.Dynamic.literal(nodeIds = nodeIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetGridHighlightObjectsForTestRequest]
   }
   
-  @scala.inline
-  implicit class GetGridHighlightObjectsForTestRequestMutableBuilder[Self <: GetGridHighlightObjectsForTestRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetGridHighlightObjectsForTestRequest](x: Self) {
     
-    @scala.inline
-    def setNodeIds(value: js.Array[NodeId]): Self = StObject.set(x, "nodeIds", value.asInstanceOf[js.Any])
+    inline def setNodeIds(value: js.Array[NodeId]): Self = StObject.set(x, "nodeIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeIdsVarargs(value: NodeId*): Self = StObject.set(x, "nodeIds", js.Array(value :_*))
+    inline def setNodeIdsVarargs(value: NodeId*): Self = StObject.set(x, "nodeIds", js.Array(value :_*))
   }
 }

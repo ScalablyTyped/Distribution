@@ -11,19 +11,15 @@ trait DidChangeAccountsParams extends StObject {
 }
 object DidChangeAccountsParams {
   
-  @scala.inline
-  def apply(accounts: js.Array[Account]): DidChangeAccountsParams = {
+  inline def apply(accounts: js.Array[Account]): DidChangeAccountsParams = {
     val __obj = js.Dynamic.literal(accounts = accounts.asInstanceOf[js.Any])
     __obj.asInstanceOf[DidChangeAccountsParams]
   }
   
-  @scala.inline
-  implicit class DidChangeAccountsParamsMutableBuilder[Self <: DidChangeAccountsParams] (val x: Self) extends AnyVal {
+  extension [Self <: DidChangeAccountsParams](x: Self) {
     
-    @scala.inline
-    def setAccounts(value: js.Array[Account]): Self = StObject.set(x, "accounts", value.asInstanceOf[js.Any])
+    inline def setAccounts(value: js.Array[Account]): Self = StObject.set(x, "accounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountsVarargs(value: Account*): Self = StObject.set(x, "accounts", js.Array(value :_*))
+    inline def setAccountsVarargs(value: Account*): Self = StObject.set(x, "accounts", js.Array(value :_*))
   }
 }

@@ -40,46 +40,33 @@ trait SchemaTurnBasedMatchCreateRequest extends StObject {
 }
 object SchemaTurnBasedMatchCreateRequest {
   
-  @scala.inline
-  def apply(): SchemaTurnBasedMatchCreateRequest = {
+  inline def apply(): SchemaTurnBasedMatchCreateRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTurnBasedMatchCreateRequest]
   }
   
-  @scala.inline
-  implicit class SchemaTurnBasedMatchCreateRequestMutableBuilder[Self <: SchemaTurnBasedMatchCreateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTurnBasedMatchCreateRequest](x: Self) {
     
-    @scala.inline
-    def setAutoMatchingCriteria(value: SchemaTurnBasedAutoMatchingCriteria): Self = StObject.set(x, "autoMatchingCriteria", value.asInstanceOf[js.Any])
+    inline def setAutoMatchingCriteria(value: SchemaTurnBasedAutoMatchingCriteria): Self = StObject.set(x, "autoMatchingCriteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoMatchingCriteriaUndefined: Self = StObject.set(x, "autoMatchingCriteria", js.undefined)
+    inline def setAutoMatchingCriteriaUndefined: Self = StObject.set(x, "autoMatchingCriteria", js.undefined)
     
-    @scala.inline
-    def setInvitedPlayerIds(value: js.Array[String]): Self = StObject.set(x, "invitedPlayerIds", value.asInstanceOf[js.Any])
+    inline def setInvitedPlayerIds(value: js.Array[String]): Self = StObject.set(x, "invitedPlayerIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitedPlayerIdsUndefined: Self = StObject.set(x, "invitedPlayerIds", js.undefined)
+    inline def setInvitedPlayerIdsUndefined: Self = StObject.set(x, "invitedPlayerIds", js.undefined)
     
-    @scala.inline
-    def setInvitedPlayerIdsVarargs(value: String*): Self = StObject.set(x, "invitedPlayerIds", js.Array(value :_*))
+    inline def setInvitedPlayerIdsVarargs(value: String*): Self = StObject.set(x, "invitedPlayerIds", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
     
-    @scala.inline
-    def setVariant(value: Double): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
+    inline def setVariant(value: Double): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
+    inline def setVariantUndefined: Self = StObject.set(x, "variant", js.undefined)
   }
 }

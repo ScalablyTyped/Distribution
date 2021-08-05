@@ -16,22 +16,17 @@ trait SetBlackboxedRangesRequest extends StObject {
 }
 object SetBlackboxedRangesRequest {
   
-  @scala.inline
-  def apply(positions: js.Array[ScriptPosition], scriptId: ScriptId): SetBlackboxedRangesRequest = {
+  inline def apply(positions: js.Array[ScriptPosition], scriptId: ScriptId): SetBlackboxedRangesRequest = {
     val __obj = js.Dynamic.literal(positions = positions.asInstanceOf[js.Any], scriptId = scriptId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetBlackboxedRangesRequest]
   }
   
-  @scala.inline
-  implicit class SetBlackboxedRangesRequestMutableBuilder[Self <: SetBlackboxedRangesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetBlackboxedRangesRequest](x: Self) {
     
-    @scala.inline
-    def setPositions(value: js.Array[ScriptPosition]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
+    inline def setPositions(value: js.Array[ScriptPosition]): Self = StObject.set(x, "positions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionsVarargs(value: ScriptPosition*): Self = StObject.set(x, "positions", js.Array(value :_*))
+    inline def setPositionsVarargs(value: ScriptPosition*): Self = StObject.set(x, "positions", js.Array(value :_*))
     
-    @scala.inline
-    def setScriptId(value: ScriptId): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
+    inline def setScriptId(value: ScriptId): Self = StObject.set(x, "scriptId", value.asInstanceOf[js.Any])
   }
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.PlaceholderFormat")
 @js.native
-class PlaceholderFormat protected ()
+/* private */ class PlaceholderFormat ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.PlaceholderFormat {
   
@@ -24,7 +24,7 @@ class PlaceholderFormat protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.PlaceholderFormat_typekey")
   var PowerPointDotPlaceholderFormat_typekey: typings.activexPowerpoint.PowerPoint.PlaceholderFormat = js.native
   

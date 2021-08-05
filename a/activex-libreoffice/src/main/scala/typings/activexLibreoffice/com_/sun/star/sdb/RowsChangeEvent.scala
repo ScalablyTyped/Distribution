@@ -15,16 +15,13 @@ trait RowsChangeEvent
 }
 object RowsChangeEvent {
   
-  @scala.inline
-  def apply(Action: Double, Bookmarks: SafeArray[js.Any], Rows: Double, Source: XInterface): RowsChangeEvent = {
+  inline def apply(Action: Double, Bookmarks: SafeArray[js.Any], Rows: Double, Source: XInterface): RowsChangeEvent = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], Bookmarks = Bookmarks.asInstanceOf[js.Any], Rows = Rows.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[RowsChangeEvent]
   }
   
-  @scala.inline
-  implicit class RowsChangeEventMutableBuilder[Self <: RowsChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: RowsChangeEvent](x: Self) {
     
-    @scala.inline
-    def setBookmarks(value: SafeArray[js.Any]): Self = StObject.set(x, "Bookmarks", value.asInstanceOf[js.Any])
+    inline def setBookmarks(value: SafeArray[js.Any]): Self = StObject.set(x, "Bookmarks", value.asInstanceOf[js.Any])
   }
 }

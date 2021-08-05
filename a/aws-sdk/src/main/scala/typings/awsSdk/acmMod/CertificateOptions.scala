@@ -13,19 +13,15 @@ trait CertificateOptions extends StObject {
 }
 object CertificateOptions {
   
-  @scala.inline
-  def apply(): CertificateOptions = {
+  inline def apply(): CertificateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CertificateOptions]
   }
   
-  @scala.inline
-  implicit class CertificateOptionsMutableBuilder[Self <: CertificateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CertificateOptions](x: Self) {
     
-    @scala.inline
-    def setCertificateTransparencyLoggingPreference(value: CertificateTransparencyLoggingPreference): Self = StObject.set(x, "CertificateTransparencyLoggingPreference", value.asInstanceOf[js.Any])
+    inline def setCertificateTransparencyLoggingPreference(value: CertificateTransparencyLoggingPreference): Self = StObject.set(x, "CertificateTransparencyLoggingPreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateTransparencyLoggingPreferenceUndefined: Self = StObject.set(x, "CertificateTransparencyLoggingPreference", js.undefined)
+    inline def setCertificateTransparencyLoggingPreferenceUndefined: Self = StObject.set(x, "CertificateTransparencyLoggingPreference", js.undefined)
   }
 }

@@ -25,17 +25,14 @@ object nonceProviderMod {
   }
   object NonceProviderProps {
     
-    @scala.inline
-    def apply(nonce: String): NonceProviderProps = {
+    inline def apply(nonce: String): NonceProviderProps = {
       val __obj = js.Dynamic.literal(nonce = nonce.asInstanceOf[js.Any])
       __obj.asInstanceOf[NonceProviderProps]
     }
     
-    @scala.inline
-    implicit class NonceProviderPropsMutableBuilder[Self <: NonceProviderProps] (val x: Self) extends AnyVal {
+    extension [Self <: NonceProviderProps](x: Self) {
       
-      @scala.inline
-      def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     }
   }
 }

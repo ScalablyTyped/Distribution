@@ -18,19 +18,15 @@ trait AttachThingPrincipalRequest extends StObject {
 }
 object AttachThingPrincipalRequest {
   
-  @scala.inline
-  def apply(principal: Principal, thingName: ThingName): AttachThingPrincipalRequest = {
+  inline def apply(principal: Principal, thingName: ThingName): AttachThingPrincipalRequest = {
     val __obj = js.Dynamic.literal(principal = principal.asInstanceOf[js.Any], thingName = thingName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachThingPrincipalRequest]
   }
   
-  @scala.inline
-  implicit class AttachThingPrincipalRequestMutableBuilder[Self <: AttachThingPrincipalRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AttachThingPrincipalRequest](x: Self) {
     
-    @scala.inline
-    def setPrincipal(value: Principal): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
+    inline def setPrincipal(value: Principal): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
+    inline def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
   }
 }

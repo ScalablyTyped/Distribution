@@ -571,61 +571,52 @@ object SearchQuery {
     * Creates a compound BooleanQuery composed of several other query objects.
     */
   /* static member */
-  @scala.inline
-  def boolean(): BooleanQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("boolean")().asInstanceOf[BooleanQuery]
+  inline def boolean(): BooleanQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("boolean")().asInstanceOf[BooleanQuery]
   
   /**
     * Creates a BooleanFieldQuery for searching boolean fields in an index.
     */
   /* static member */
-  @scala.inline
-  def booleanField(`val`: Boolean): BooleanFieldQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("booleanField")(`val`.asInstanceOf[js.Any]).asInstanceOf[BooleanFieldQuery]
+  inline def booleanField(`val`: Boolean): BooleanFieldQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("booleanField")(`val`.asInstanceOf[js.Any]).asInstanceOf[BooleanFieldQuery]
   
   /**
     * Creates a query for matches all of a list of subqueries in an index.
     */
   /* static member */
-  @scala.inline
-  def conjuncts(queries: Query*): ConjunctionQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("conjuncts")(queries.asInstanceOf[js.Any]).asInstanceOf[ConjunctionQuery]
+  inline def conjuncts(queries: Query*): ConjunctionQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("conjuncts")(queries.asInstanceOf[js.Any]).asInstanceOf[ConjunctionQuery]
   /**
     * Creates a query for matches all of a list of subqueries in an index.
     */
   /* static member */
-  @scala.inline
-  def conjuncts(queries: js.Array[Query]): ConjunctionQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("conjuncts")(queries.asInstanceOf[js.Any]).asInstanceOf[ConjunctionQuery]
+  inline def conjuncts(queries: js.Array[Query]): ConjunctionQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("conjuncts")(queries.asInstanceOf[js.Any]).asInstanceOf[ConjunctionQuery]
   
   /**
     * Creates a search query for matching date ranges in an index.
     */
   /* static member */
-  @scala.inline
-  def dateRange(): DateRangeQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("dateRange")().asInstanceOf[DateRangeQuery]
+  inline def dateRange(): DateRangeQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("dateRange")().asInstanceOf[DateRangeQuery]
   
   /**
     * Creates a query for matches any of a list of subqueries in an index.
     */
   /* static member */
-  @scala.inline
-  def disjuncts(queries: Query*): DisjunctionQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("disjuncts")(queries.asInstanceOf[js.Any]).asInstanceOf[DisjunctionQuery]
+  inline def disjuncts(queries: Query*): DisjunctionQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("disjuncts")(queries.asInstanceOf[js.Any]).asInstanceOf[DisjunctionQuery]
   /**
     * Creates a query for matches any of a list of subqueries in an index.
     */
   /* static member */
-  @scala.inline
-  def disjuncts(queries: js.Array[Query]): DisjunctionQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("disjuncts")(queries.asInstanceOf[js.Any]).asInstanceOf[DisjunctionQuery]
+  inline def disjuncts(queries: js.Array[Query]): DisjunctionQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("disjuncts")(queries.asInstanceOf[js.Any]).asInstanceOf[DisjunctionQuery]
   
   /**
     * Creates a query which allows you to match a list of document IDs in an index.
     */
   /* static member */
-  @scala.inline
-  def docIds(ids: String*): DocIdQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("docIds")(ids.asInstanceOf[js.Any]).asInstanceOf[DocIdQuery]
+  inline def docIds(ids: String*): DocIdQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("docIds")(ids.asInstanceOf[js.Any]).asInstanceOf[DocIdQuery]
   /**
     * Creates a query which allows you to match a list of document IDs in an index.
     */
   /* static member */
-  @scala.inline
-  def docIds(ids: js.Array[String]): DocIdQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("docIds")(ids.asInstanceOf[js.Any]).asInstanceOf[DocIdQuery]
+  inline def docIds(ids: js.Array[String]): DocIdQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("docIds")(ids.asInstanceOf[js.Any]).asInstanceOf[DocIdQuery]
   
   /**
     * Creates a geographical bounding-box based query.
@@ -635,43 +626,37 @@ object SearchQuery {
     * @param br_lon Bottom-right longitude.
     */
   /* static member */
-  @scala.inline
-  def geoBoundingBoxQuery(tl_lat: Double, tl_lon: Double, br_lat: Double, br_lon: Double): GeoBoundingBoxQuery_ = (^.asInstanceOf[js.Dynamic].applyDynamic("geoBoundingBoxQuery")(tl_lat.asInstanceOf[js.Any], tl_lon.asInstanceOf[js.Any], br_lat.asInstanceOf[js.Any], br_lon.asInstanceOf[js.Any])).asInstanceOf[GeoBoundingBoxQuery_]
+  inline def geoBoundingBoxQuery(tl_lat: Double, tl_lon: Double, br_lat: Double, br_lon: Double): GeoBoundingBoxQuery_ = (^.asInstanceOf[js.Dynamic].applyDynamic("geoBoundingBoxQuery")(tl_lat.asInstanceOf[js.Any], tl_lon.asInstanceOf[js.Any], br_lat.asInstanceOf[js.Any], br_lon.asInstanceOf[js.Any])).asInstanceOf[GeoBoundingBoxQuery_]
   
   /**
     * Creates a geographical distance based query.
     */
   /* static member */
-  @scala.inline
-  def geoDistanceQuery(): GeoDistanceQuery_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoDistanceQuery")().asInstanceOf[GeoDistanceQuery_]
+  inline def geoDistanceQuery(): GeoDistanceQuery_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoDistanceQuery")().asInstanceOf[GeoDistanceQuery_]
   
   /**
     * Creates a search query for matching text.
     */
   /* static member */
-  @scala.inline
-  def `match`(`match`: String): MatchQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("match")(`match`.asInstanceOf[js.Any]).asInstanceOf[MatchQuery]
+  inline def `match`(`match`: String): MatchQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("match")(`match`.asInstanceOf[js.Any]).asInstanceOf[MatchQuery]
   
   /**
     * Creates a search query which matches anything.
     */
   /* static member */
-  @scala.inline
-  def matchAll(): MatchAllQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("matchAll")().asInstanceOf[MatchAllQuery]
+  inline def matchAll(): MatchAllQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("matchAll")().asInstanceOf[MatchAllQuery]
   
   /**
     * Creates a search query which matches nothing.
     */
   /* static member */
-  @scala.inline
-  def matchNone(): MatchAllQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("matchNone")().asInstanceOf[MatchAllQuery]
+  inline def matchNone(): MatchAllQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("matchNone")().asInstanceOf[MatchAllQuery]
   
   /**
     * Creates a search query for matching phrases in an index.
     */
   /* static member */
-  @scala.inline
-  def matchPhrase(phrase: String): MatchPhraseQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("matchPhrase")(phrase.asInstanceOf[js.Any]).asInstanceOf[MatchPhraseQuery]
+  inline def matchPhrase(phrase: String): MatchPhraseQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("matchPhrase")(phrase.asInstanceOf[js.Any]).asInstanceOf[MatchPhraseQuery]
   
   /**
     * Creates a new search query from an index name and search query definition.
@@ -679,29 +664,25 @@ object SearchQuery {
     * @param query The body of the FTS query.
     */
   /* static member */
-  @scala.inline
-  def `new`(indexName: String, query: Query): SearchQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("new")(indexName.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[SearchQuery]
+  inline def `new`(indexName: String, query: Query): SearchQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("new")(indexName.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[SearchQuery]
   
   /**
     * Creates a search query for matching numeric ranges in an index.
     */
   /* static member */
-  @scala.inline
-  def numericRange(): NumericRangeQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("numericRange")().asInstanceOf[NumericRangeQuery]
+  inline def numericRange(): NumericRangeQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("numericRange")().asInstanceOf[NumericRangeQuery]
   
   /**
     * Creates a search query for a prefix in an index.
     */
   /* static member */
-  @scala.inline
-  def phrase(terms: js.Array[String]): PhraseQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("phrase")(terms.asInstanceOf[js.Any]).asInstanceOf[PhraseQuery]
+  inline def phrase(terms: js.Array[String]): PhraseQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("phrase")(terms.asInstanceOf[js.Any]).asInstanceOf[PhraseQuery]
   
   /**
     * Creates a search query for a prefix in an index.
     */
   /* static member */
-  @scala.inline
-  def prefix(prefix: String): PrefixQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("prefix")(prefix.asInstanceOf[js.Any]).asInstanceOf[PrefixQuery]
+  inline def prefix(prefix: String): PrefixQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("prefix")(prefix.asInstanceOf[js.Any]).asInstanceOf[PrefixQuery]
   
   /**
     * Creates a query for matches any of a list of subqueries in an index.
@@ -710,34 +691,29 @@ object SearchQuery {
     * Creates a search query for matching string.
     */
   /* static member */
-  @scala.inline
-  def queryString(query: String): QueryStringQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("queryString")(query.asInstanceOf[js.Any]).asInstanceOf[QueryStringQuery]
+  inline def queryString(query: String): QueryStringQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("queryString")(query.asInstanceOf[js.Any]).asInstanceOf[QueryStringQuery]
   
   /**
     * Creates a search query for matching against a regexp query in an index.
     */
   /* static member */
-  @scala.inline
-  def regexp(regexp: String): RegexpQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("regexp")(regexp.asInstanceOf[js.Any]).asInstanceOf[RegexpQuery]
+  inline def regexp(regexp: String): RegexpQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("regexp")(regexp.asInstanceOf[js.Any]).asInstanceOf[RegexpQuery]
   
   /**
     * Creates a search query for searching terms in an index.
     */
   /* static member */
-  @scala.inline
-  def term(term: String): TermQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("term")(term.asInstanceOf[js.Any]).asInstanceOf[TermQuery]
+  inline def term(term: String): TermQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("term")(term.asInstanceOf[js.Any]).asInstanceOf[TermQuery]
   
   /**
     * Creates a search query for matching term ranges in the index.
     */
   /* static member */
-  @scala.inline
-  def termRange(): TermRangeQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("termRange")().asInstanceOf[TermRangeQuery]
+  inline def termRange(): TermRangeQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("termRange")().asInstanceOf[TermRangeQuery]
   
   /**
     * Creates a search query for matching a string with wildcards in an index.
     */
   /* static member */
-  @scala.inline
-  def wildcard(wildcard: String): WildcardQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("wildcard")(wildcard.asInstanceOf[js.Any]).asInstanceOf[WildcardQuery]
+  inline def wildcard(wildcard: String): WildcardQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("wildcard")(wildcard.asInstanceOf[js.Any]).asInstanceOf[WildcardQuery]
 }

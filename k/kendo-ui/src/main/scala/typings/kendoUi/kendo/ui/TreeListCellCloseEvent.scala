@@ -18,31 +18,23 @@ trait TreeListCellCloseEvent
 }
 object TreeListCellCloseEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: TreeList): TreeListCellCloseEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: TreeList): TreeListCellCloseEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeListCellCloseEvent]
   }
   
-  @scala.inline
-  implicit class TreeListCellCloseEventMutableBuilder[Self <: TreeListCellCloseEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TreeListCellCloseEvent](x: Self) {
     
-    @scala.inline
-    def setContainer(value: JQuery): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: JQuery): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setModel(value: Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

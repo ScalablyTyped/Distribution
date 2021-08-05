@@ -49,26 +49,20 @@ object transport {
   }
   object TransportOptions {
     
-    @scala.inline
-    def apply(): TransportOptions = {
+    inline def apply(): TransportOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransportOptions]
     }
     
-    @scala.inline
-    implicit class TransportOptionsMutableBuilder[Self <: TransportOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TransportOptions](x: Self) {
       
-      @scala.inline
-      def setRetry(value: Boolean): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
+      inline def setRetry(value: Boolean): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
+      inline def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
       
-      @scala.inline
-      def setSandbox(value: Sandbox): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
+      inline def setSandbox(value: Sandbox): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
+      inline def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
     }
   }
 }

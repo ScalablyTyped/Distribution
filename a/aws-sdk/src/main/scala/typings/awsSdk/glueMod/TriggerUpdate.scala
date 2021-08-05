@@ -33,46 +33,33 @@ trait TriggerUpdate extends StObject {
 }
 object TriggerUpdate {
   
-  @scala.inline
-  def apply(): TriggerUpdate = {
+  inline def apply(): TriggerUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TriggerUpdate]
   }
   
-  @scala.inline
-  implicit class TriggerUpdateMutableBuilder[Self <: TriggerUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: TriggerUpdate](x: Self) {
     
-    @scala.inline
-    def setActions(value: ActionList): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: ActionList): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsUndefined: Self = StObject.set(x, "Actions", js.undefined)
+    inline def setActionsUndefined: Self = StObject.set(x, "Actions", js.undefined)
     
-    @scala.inline
-    def setActionsVarargs(value: Action*): Self = StObject.set(x, "Actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "Actions", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setPredicate(value: Predicate): Self = StObject.set(x, "Predicate", value.asInstanceOf[js.Any])
+    inline def setPredicate(value: Predicate): Self = StObject.set(x, "Predicate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredicateUndefined: Self = StObject.set(x, "Predicate", js.undefined)
+    inline def setPredicateUndefined: Self = StObject.set(x, "Predicate", js.undefined)
     
-    @scala.inline
-    def setSchedule(value: GenericString): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
+    inline def setSchedule(value: GenericString): Self = StObject.set(x, "Schedule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleUndefined: Self = StObject.set(x, "Schedule", js.undefined)
+    inline def setScheduleUndefined: Self = StObject.set(x, "Schedule", js.undefined)
   }
 }

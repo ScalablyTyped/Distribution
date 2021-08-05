@@ -10,16 +10,13 @@ trait RemoveBindingRequest extends StObject {
 }
 object RemoveBindingRequest {
   
-  @scala.inline
-  def apply(name: String): RemoveBindingRequest = {
+  inline def apply(name: String): RemoveBindingRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveBindingRequest]
   }
   
-  @scala.inline
-  implicit class RemoveBindingRequestMutableBuilder[Self <: RemoveBindingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveBindingRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

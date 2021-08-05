@@ -14,22 +14,17 @@ trait scopeJobScopeSudo extends StObject {
 }
 object scopeJobScopeSudo {
   
-  @scala.inline
-  def apply(scope: JobScope): scopeJobScopeSudo = {
+  inline def apply(scope: JobScope): scopeJobScopeSudo = {
     val __obj = js.Dynamic.literal(scope = scope.asInstanceOf[js.Any])
     __obj.asInstanceOf[scopeJobScopeSudo]
   }
   
-  @scala.inline
-  implicit class scopeJobScopeSudoMutableBuilder[Self <: scopeJobScopeSudo] (val x: Self) extends AnyVal {
+  extension [Self <: scopeJobScopeSudo](x: Self) {
     
-    @scala.inline
-    def setScope(value: JobScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: JobScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSudo(value: String | Double): Self = StObject.set(x, "sudo", value.asInstanceOf[js.Any])
+    inline def setSudo(value: String | Double): Self = StObject.set(x, "sudo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSudoUndefined: Self = StObject.set(x, "sudo", js.undefined)
+    inline def setSudoUndefined: Self = StObject.set(x, "sudo", js.undefined)
   }
 }

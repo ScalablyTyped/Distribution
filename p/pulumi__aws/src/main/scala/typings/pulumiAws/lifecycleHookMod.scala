@@ -80,21 +80,16 @@ object lifecycleHookMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): LifecycleHook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LifecycleHook]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LifecycleHook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LifecycleHook]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: LifecycleHookState): LifecycleHook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LifecycleHook]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: LifecycleHookState, opts: CustomResourceOptions): LifecycleHook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LifecycleHook]
+    inline def get(name: String, id: Input[ID]): LifecycleHook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LifecycleHook]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LifecycleHook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LifecycleHook]
+    inline def get(name: String, id: Input[ID], state: LifecycleHookState): LifecycleHook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LifecycleHook]
+    inline def get(name: String, id: Input[ID], state: LifecycleHookState, opts: CustomResourceOptions): LifecycleHook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LifecycleHook]
     
     /**
       * Returns true if the given object is an instance of LifecycleHook.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/lifecycleHook.LifecycleHook */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/autoscaling/lifecycleHook.LifecycleHook */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/lifecycleHook.LifecycleHook */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/autoscaling/lifecycleHook.LifecycleHook */ Boolean]
   }
   
   trait LifecycleHookArgs extends StObject {
@@ -141,56 +136,40 @@ object lifecycleHookMod {
   }
   object LifecycleHookArgs {
     
-    @scala.inline
-    def apply(autoscalingGroupName: Input[String], lifecycleTransition: Input[String]): LifecycleHookArgs = {
+    inline def apply(autoscalingGroupName: Input[String], lifecycleTransition: Input[String]): LifecycleHookArgs = {
       val __obj = js.Dynamic.literal(autoscalingGroupName = autoscalingGroupName.asInstanceOf[js.Any], lifecycleTransition = lifecycleTransition.asInstanceOf[js.Any])
       __obj.asInstanceOf[LifecycleHookArgs]
     }
     
-    @scala.inline
-    implicit class LifecycleHookArgsMutableBuilder[Self <: LifecycleHookArgs] (val x: Self) extends AnyVal {
+    extension [Self <: LifecycleHookArgs](x: Self) {
       
-      @scala.inline
-      def setAutoscalingGroupName(value: Input[String]): Self = StObject.set(x, "autoscalingGroupName", value.asInstanceOf[js.Any])
+      inline def setAutoscalingGroupName(value: Input[String]): Self = StObject.set(x, "autoscalingGroupName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultResult(value: Input[String]): Self = StObject.set(x, "defaultResult", value.asInstanceOf[js.Any])
+      inline def setDefaultResult(value: Input[String]): Self = StObject.set(x, "defaultResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultResultUndefined: Self = StObject.set(x, "defaultResult", js.undefined)
+      inline def setDefaultResultUndefined: Self = StObject.set(x, "defaultResult", js.undefined)
       
-      @scala.inline
-      def setHeartbeatTimeout(value: Input[Double]): Self = StObject.set(x, "heartbeatTimeout", value.asInstanceOf[js.Any])
+      inline def setHeartbeatTimeout(value: Input[Double]): Self = StObject.set(x, "heartbeatTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeartbeatTimeoutUndefined: Self = StObject.set(x, "heartbeatTimeout", js.undefined)
+      inline def setHeartbeatTimeoutUndefined: Self = StObject.set(x, "heartbeatTimeout", js.undefined)
       
-      @scala.inline
-      def setLifecycleTransition(value: Input[String]): Self = StObject.set(x, "lifecycleTransition", value.asInstanceOf[js.Any])
+      inline def setLifecycleTransition(value: Input[String]): Self = StObject.set(x, "lifecycleTransition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNotificationMetadata(value: Input[String]): Self = StObject.set(x, "notificationMetadata", value.asInstanceOf[js.Any])
+      inline def setNotificationMetadata(value: Input[String]): Self = StObject.set(x, "notificationMetadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationMetadataUndefined: Self = StObject.set(x, "notificationMetadata", js.undefined)
+      inline def setNotificationMetadataUndefined: Self = StObject.set(x, "notificationMetadata", js.undefined)
       
-      @scala.inline
-      def setNotificationTargetArn(value: Input[String]): Self = StObject.set(x, "notificationTargetArn", value.asInstanceOf[js.Any])
+      inline def setNotificationTargetArn(value: Input[String]): Self = StObject.set(x, "notificationTargetArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationTargetArnUndefined: Self = StObject.set(x, "notificationTargetArn", js.undefined)
+      inline def setNotificationTargetArnUndefined: Self = StObject.set(x, "notificationTargetArn", js.undefined)
       
-      @scala.inline
-      def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+      inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
     }
   }
   
@@ -238,62 +217,44 @@ object lifecycleHookMod {
   }
   object LifecycleHookState {
     
-    @scala.inline
-    def apply(): LifecycleHookState = {
+    inline def apply(): LifecycleHookState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LifecycleHookState]
     }
     
-    @scala.inline
-    implicit class LifecycleHookStateMutableBuilder[Self <: LifecycleHookState] (val x: Self) extends AnyVal {
+    extension [Self <: LifecycleHookState](x: Self) {
       
-      @scala.inline
-      def setAutoscalingGroupName(value: Input[String]): Self = StObject.set(x, "autoscalingGroupName", value.asInstanceOf[js.Any])
+      inline def setAutoscalingGroupName(value: Input[String]): Self = StObject.set(x, "autoscalingGroupName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoscalingGroupNameUndefined: Self = StObject.set(x, "autoscalingGroupName", js.undefined)
+      inline def setAutoscalingGroupNameUndefined: Self = StObject.set(x, "autoscalingGroupName", js.undefined)
       
-      @scala.inline
-      def setDefaultResult(value: Input[String]): Self = StObject.set(x, "defaultResult", value.asInstanceOf[js.Any])
+      inline def setDefaultResult(value: Input[String]): Self = StObject.set(x, "defaultResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultResultUndefined: Self = StObject.set(x, "defaultResult", js.undefined)
+      inline def setDefaultResultUndefined: Self = StObject.set(x, "defaultResult", js.undefined)
       
-      @scala.inline
-      def setHeartbeatTimeout(value: Input[Double]): Self = StObject.set(x, "heartbeatTimeout", value.asInstanceOf[js.Any])
+      inline def setHeartbeatTimeout(value: Input[Double]): Self = StObject.set(x, "heartbeatTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeartbeatTimeoutUndefined: Self = StObject.set(x, "heartbeatTimeout", js.undefined)
+      inline def setHeartbeatTimeoutUndefined: Self = StObject.set(x, "heartbeatTimeout", js.undefined)
       
-      @scala.inline
-      def setLifecycleTransition(value: Input[String]): Self = StObject.set(x, "lifecycleTransition", value.asInstanceOf[js.Any])
+      inline def setLifecycleTransition(value: Input[String]): Self = StObject.set(x, "lifecycleTransition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLifecycleTransitionUndefined: Self = StObject.set(x, "lifecycleTransition", js.undefined)
+      inline def setLifecycleTransitionUndefined: Self = StObject.set(x, "lifecycleTransition", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNotificationMetadata(value: Input[String]): Self = StObject.set(x, "notificationMetadata", value.asInstanceOf[js.Any])
+      inline def setNotificationMetadata(value: Input[String]): Self = StObject.set(x, "notificationMetadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationMetadataUndefined: Self = StObject.set(x, "notificationMetadata", js.undefined)
+      inline def setNotificationMetadataUndefined: Self = StObject.set(x, "notificationMetadata", js.undefined)
       
-      @scala.inline
-      def setNotificationTargetArn(value: Input[String]): Self = StObject.set(x, "notificationTargetArn", value.asInstanceOf[js.Any])
+      inline def setNotificationTargetArn(value: Input[String]): Self = StObject.set(x, "notificationTargetArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationTargetArnUndefined: Self = StObject.set(x, "notificationTargetArn", js.undefined)
+      inline def setNotificationTargetArnUndefined: Self = StObject.set(x, "notificationTargetArn", js.undefined)
       
-      @scala.inline
-      def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+      inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
     }
   }
 }

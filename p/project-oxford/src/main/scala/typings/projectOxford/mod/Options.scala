@@ -32,56 +32,40 @@ object Options {
   }
   object Analyze {
     
-    @scala.inline
-    def apply(): Analyze = {
+    inline def apply(): Analyze = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Analyze]
     }
     
-    @scala.inline
-    implicit class AnalyzeMutableBuilder[Self <: Analyze] (val x: Self) extends AnyVal {
+    extension [Self <: Analyze](x: Self) {
       
-      @scala.inline
-      def setAdult(value: Boolean): Self = StObject.set(x, "Adult", value.asInstanceOf[js.Any])
+      inline def setAdult(value: Boolean): Self = StObject.set(x, "Adult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdultUndefined: Self = StObject.set(x, "Adult", js.undefined)
+      inline def setAdultUndefined: Self = StObject.set(x, "Adult", js.undefined)
       
-      @scala.inline
-      def setCategories(value: Boolean): Self = StObject.set(x, "Categories", value.asInstanceOf[js.Any])
+      inline def setCategories(value: Boolean): Self = StObject.set(x, "Categories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategoriesUndefined: Self = StObject.set(x, "Categories", js.undefined)
+      inline def setCategoriesUndefined: Self = StObject.set(x, "Categories", js.undefined)
       
-      @scala.inline
-      def setColor(value: Boolean): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
+      inline def setColor(value: Boolean): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "Color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "Color", js.undefined)
       
-      @scala.inline
-      def setFaces(value: Boolean): Self = StObject.set(x, "Faces", value.asInstanceOf[js.Any])
+      inline def setFaces(value: Boolean): Self = StObject.set(x, "Faces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacesUndefined: Self = StObject.set(x, "Faces", js.undefined)
+      inline def setFacesUndefined: Self = StObject.set(x, "Faces", js.undefined)
       
-      @scala.inline
-      def setImageType(value: Boolean): Self = StObject.set(x, "ImageType", value.asInstanceOf[js.Any])
+      inline def setImageType(value: Boolean): Self = StObject.set(x, "ImageType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageTypeUndefined: Self = StObject.set(x, "ImageType", js.undefined)
+      inline def setImageTypeUndefined: Self = StObject.set(x, "ImageType", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -109,56 +93,40 @@ object Options {
   }
   object Detect {
     
-    @scala.inline
-    def apply(): Detect = {
+    inline def apply(): Detect = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Detect]
     }
     
-    @scala.inline
-    implicit class DetectMutableBuilder[Self <: Detect] (val x: Self) extends AnyVal {
+    extension [Self <: Detect](x: Self) {
       
-      @scala.inline
-      def setAnalyzesAge(value: Boolean): Self = StObject.set(x, "analyzesAge", value.asInstanceOf[js.Any])
+      inline def setAnalyzesAge(value: Boolean): Self = StObject.set(x, "analyzesAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnalyzesAgeUndefined: Self = StObject.set(x, "analyzesAge", js.undefined)
+      inline def setAnalyzesAgeUndefined: Self = StObject.set(x, "analyzesAge", js.undefined)
       
-      @scala.inline
-      def setAnalyzesFaceLandmarks(value: Boolean): Self = StObject.set(x, "analyzesFaceLandmarks", value.asInstanceOf[js.Any])
+      inline def setAnalyzesFaceLandmarks(value: Boolean): Self = StObject.set(x, "analyzesFaceLandmarks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnalyzesFaceLandmarksUndefined: Self = StObject.set(x, "analyzesFaceLandmarks", js.undefined)
+      inline def setAnalyzesFaceLandmarksUndefined: Self = StObject.set(x, "analyzesFaceLandmarks", js.undefined)
       
-      @scala.inline
-      def setAnalyzesGender(value: Boolean): Self = StObject.set(x, "analyzesGender", value.asInstanceOf[js.Any])
+      inline def setAnalyzesGender(value: Boolean): Self = StObject.set(x, "analyzesGender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnalyzesGenderUndefined: Self = StObject.set(x, "analyzesGender", js.undefined)
+      inline def setAnalyzesGenderUndefined: Self = StObject.set(x, "analyzesGender", js.undefined)
       
-      @scala.inline
-      def setAnalyzesHeadPose(value: Boolean): Self = StObject.set(x, "analyzesHeadPose", value.asInstanceOf[js.Any])
+      inline def setAnalyzesHeadPose(value: Boolean): Self = StObject.set(x, "analyzesHeadPose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnalyzesHeadPoseUndefined: Self = StObject.set(x, "analyzesHeadPose", js.undefined)
+      inline def setAnalyzesHeadPoseUndefined: Self = StObject.set(x, "analyzesHeadPose", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setStream(value: Stream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: Stream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+      inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -170,20 +138,16 @@ object Options {
   }
   object Identify {
     
-    @scala.inline
-    def apply(maxNumOfCandidatesReturned: Double, personGroupId: String): Identify = {
+    inline def apply(maxNumOfCandidatesReturned: Double, personGroupId: String): Identify = {
       val __obj = js.Dynamic.literal(maxNumOfCandidatesReturned = maxNumOfCandidatesReturned.asInstanceOf[js.Any], personGroupId = personGroupId.asInstanceOf[js.Any])
       __obj.asInstanceOf[Identify]
     }
     
-    @scala.inline
-    implicit class IdentifyMutableBuilder[Self <: Identify] (val x: Self) extends AnyVal {
+    extension [Self <: Identify](x: Self) {
       
-      @scala.inline
-      def setMaxNumOfCandidatesReturned(value: Double): Self = StObject.set(x, "maxNumOfCandidatesReturned", value.asInstanceOf[js.Any])
+      inline def setMaxNumOfCandidatesReturned(value: Double): Self = StObject.set(x, "maxNumOfCandidatesReturned", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersonGroupId(value: String): Self = StObject.set(x, "personGroupId", value.asInstanceOf[js.Any])
+      inline def setPersonGroupId(value: String): Self = StObject.set(x, "personGroupId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -202,38 +166,28 @@ object Options {
   }
   object Ocr {
     
-    @scala.inline
-    def apply(): Ocr = {
+    inline def apply(): Ocr = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Ocr]
     }
     
-    @scala.inline
-    implicit class OcrMutableBuilder[Self <: Ocr] (val x: Self) extends AnyVal {
+    extension [Self <: Ocr](x: Self) {
       
-      @scala.inline
-      def setDetectOrientation(value: Boolean): Self = StObject.set(x, "detectOrientation", value.asInstanceOf[js.Any])
+      inline def setDetectOrientation(value: Boolean): Self = StObject.set(x, "detectOrientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetectOrientationUndefined: Self = StObject.set(x, "detectOrientation", js.undefined)
+      inline def setDetectOrientationUndefined: Self = StObject.set(x, "detectOrientation", js.undefined)
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+      inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -258,50 +212,36 @@ object Options {
   }
   object Thumbnail {
     
-    @scala.inline
-    def apply(): Thumbnail = {
+    inline def apply(): Thumbnail = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Thumbnail]
     }
     
-    @scala.inline
-    implicit class ThumbnailMutableBuilder[Self <: Thumbnail] (val x: Self) extends AnyVal {
+    extension [Self <: Thumbnail](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setPipe(value: Writable): Self = StObject.set(x, "pipe", value.asInstanceOf[js.Any])
+      inline def setPipe(value: Writable): Self = StObject.set(x, "pipe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPipeUndefined: Self = StObject.set(x, "pipe", js.undefined)
+      inline def setPipeUndefined: Self = StObject.set(x, "pipe", js.undefined)
       
-      @scala.inline
-      def setSmartCropping(value: Boolean): Self = StObject.set(x, "smartCropping", value.asInstanceOf[js.Any])
+      inline def setSmartCropping(value: Boolean): Self = StObject.set(x, "smartCropping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmartCroppingUndefined: Self = StObject.set(x, "smartCropping", js.undefined)
+      inline def setSmartCroppingUndefined: Self = StObject.set(x, "smartCropping", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

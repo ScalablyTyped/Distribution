@@ -15,8 +15,7 @@ trait RouteSegment
     ]
 object RouteSegment {
   
-  @scala.inline
-  def apply(): RouteSegment = {
+  inline def apply(): RouteSegment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RouteSegment]
   }

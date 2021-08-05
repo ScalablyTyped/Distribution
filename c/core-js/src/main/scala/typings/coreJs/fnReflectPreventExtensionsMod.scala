@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object fnReflectPreventExtensionsMod {
   
   /* was `typeof core.Reflect.preventExtensions` */
-  @scala.inline
-  def apply(target: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def apply(target: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("core-js/library/fn/reflect/prevent-extensions", JSImport.Namespace)
   @js.native

@@ -17,13 +17,13 @@ object sectionlistMod {
       */
     def this(options: IOptions) = this()
     
-    var _count: js.Any = js.native
+    /* private */ var _count: js.Any = js.native
     
-    var _defaultSize: js.Any = js.native
+    /* private */ var _defaultSize: js.Any = js.native
     
-    var _length: js.Any = js.native
+    /* private */ var _length: js.Any = js.native
     
-    var _sections: js.Any = js.native
+    /* private */ var _sections: js.Any = js.native
     
     /**
       * Remove all sections from the list.
@@ -217,17 +217,14 @@ object sectionlistMod {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(defaultSize: Double): IOptions = {
+      inline def apply(defaultSize: Double): IOptions = {
         val __obj = js.Dynamic.literal(defaultSize = defaultSize.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setDefaultSize(value: Double): Self = StObject.set(x, "defaultSize", value.asInstanceOf[js.Any])
+        inline def setDefaultSize(value: Double): Self = StObject.set(x, "defaultSize", value.asInstanceOf[js.Any])
       }
     }
   }

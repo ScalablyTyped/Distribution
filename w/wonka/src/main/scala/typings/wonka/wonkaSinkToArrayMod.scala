@@ -11,6 +11,5 @@ object wonkaSinkToArrayMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def toArray[A](source: Source[A]): js.Array[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(source.asInstanceOf[js.Any]).asInstanceOf[js.Array[A]]
+  inline def toArray[A](source: Source[A]): js.Array[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(source.asInstanceOf[js.Any]).asInstanceOf[js.Array[A]]
 }

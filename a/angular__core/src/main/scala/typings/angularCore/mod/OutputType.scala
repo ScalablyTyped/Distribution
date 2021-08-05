@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OutputType extends StObject
 object OutputType {
   
-  @scala.inline
-  def DirectiveOutput: `1` = 1.asInstanceOf[`1`]
+  inline def DirectiveOutput: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def ElementOutput: `0` = 0.asInstanceOf[`0`]
+  inline def ElementOutput: `0` = 0.asInstanceOf[`0`]
 }

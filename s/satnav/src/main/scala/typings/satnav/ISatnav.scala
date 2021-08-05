@@ -16,8 +16,7 @@ trait ISatnav extends StObject {
 }
 object ISatnav {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     change: js.Function3[/* hash */ String, /* params */ js.Any, /* old */ js.Any, js.Any] => ISatnav,
     go: () => ISatnav,
     navigate: INavigationOptions => ISatnav,
@@ -27,19 +26,14 @@ object ISatnav {
     __obj.asInstanceOf[ISatnav]
   }
   
-  @scala.inline
-  implicit class ISatnavMutableBuilder[Self <: ISatnav] (val x: Self) extends AnyVal {
+  extension [Self <: ISatnav](x: Self) {
     
-    @scala.inline
-    def setChange(value: js.Function3[/* hash */ String, /* params */ js.Any, /* old */ js.Any, js.Any] => ISatnav): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+    inline def setChange(value: js.Function3[/* hash */ String, /* params */ js.Any, /* old */ js.Any, js.Any] => ISatnav): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGo(value: () => ISatnav): Self = StObject.set(x, "go", js.Any.fromFunction0(value))
+    inline def setGo(value: () => ISatnav): Self = StObject.set(x, "go", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNavigate(value: INavigationOptions => ISatnav): Self = StObject.set(x, "navigate", js.Any.fromFunction1(value))
+    inline def setNavigate(value: INavigationOptions => ISatnav): Self = StObject.set(x, "navigate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOtherwise(value: String => ISatnav): Self = StObject.set(x, "otherwise", js.Any.fromFunction1(value))
+    inline def setOtherwise(value: String => ISatnav): Self = StObject.set(x, "otherwise", js.Any.fromFunction1(value))
   }
 }

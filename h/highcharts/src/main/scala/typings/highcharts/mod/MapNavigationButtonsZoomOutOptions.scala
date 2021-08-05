@@ -75,85 +75,59 @@ trait MapNavigationButtonsZoomOutOptions extends StObject {
 }
 object MapNavigationButtonsZoomOutOptions {
   
-  @scala.inline
-  def apply(): MapNavigationButtonsZoomOutOptions = {
+  inline def apply(): MapNavigationButtonsZoomOutOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapNavigationButtonsZoomOutOptions]
   }
   
-  @scala.inline
-  implicit class MapNavigationButtonsZoomOutOptionsMutableBuilder[Self <: MapNavigationButtonsZoomOutOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MapNavigationButtonsZoomOutOptions](x: Self) {
     
-    @scala.inline
-    def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignTo(value: ButtonRelativeToValue): Self = StObject.set(x, "alignTo", value.asInstanceOf[js.Any])
+    inline def setAlignTo(value: ButtonRelativeToValue): Self = StObject.set(x, "alignTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignToUndefined: Self = StObject.set(x, "alignTo", js.undefined)
+    inline def setAlignToUndefined: Self = StObject.set(x, "alignTo", js.undefined)
     
-    @scala.inline
-    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setOnclick(value: js.Function): Self = StObject.set(x, "onclick", value.asInstanceOf[js.Any])
+    inline def setOnclick(value: js.Function): Self = StObject.set(x, "onclick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnclickUndefined: Self = StObject.set(x, "onclick", js.undefined)
+    inline def setOnclickUndefined: Self = StObject.set(x, "onclick", js.undefined)
     
-    @scala.inline
-    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setTheme(value: SVGAttributes): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: SVGAttributes): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     
-    @scala.inline
-    def setVerticalAlign(value: VerticalAlignValue): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+    inline def setVerticalAlign(value: VerticalAlignValue): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
+    inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

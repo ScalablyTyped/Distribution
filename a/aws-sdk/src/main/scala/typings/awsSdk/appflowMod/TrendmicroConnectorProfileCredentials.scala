@@ -13,16 +13,13 @@ trait TrendmicroConnectorProfileCredentials extends StObject {
 }
 object TrendmicroConnectorProfileCredentials {
   
-  @scala.inline
-  def apply(apiSecretKey: ApiSecretKey): TrendmicroConnectorProfileCredentials = {
+  inline def apply(apiSecretKey: ApiSecretKey): TrendmicroConnectorProfileCredentials = {
     val __obj = js.Dynamic.literal(apiSecretKey = apiSecretKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[TrendmicroConnectorProfileCredentials]
   }
   
-  @scala.inline
-  implicit class TrendmicroConnectorProfileCredentialsMutableBuilder[Self <: TrendmicroConnectorProfileCredentials] (val x: Self) extends AnyVal {
+  extension [Self <: TrendmicroConnectorProfileCredentials](x: Self) {
     
-    @scala.inline
-    def setApiSecretKey(value: ApiSecretKey): Self = StObject.set(x, "apiSecretKey", value.asInstanceOf[js.Any])
+    inline def setApiSecretKey(value: ApiSecretKey): Self = StObject.set(x, "apiSecretKey", value.asInstanceOf[js.Any])
   }
 }

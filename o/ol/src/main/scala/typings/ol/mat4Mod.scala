@@ -11,9 +11,7 @@ object mat4Mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Array[Double]]
+  inline def create(): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Array[Double]]
   
-  @scala.inline
-  def fromTransform(mat4: js.Array[Double], transform: Transform): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromTransform")(mat4.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def fromTransform(mat4: js.Array[Double], transform: Transform): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromTransform")(mat4.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
 }

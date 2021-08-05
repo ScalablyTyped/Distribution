@@ -18,19 +18,15 @@ trait ASPxClientSchedulerStorageReminderAlertEventArgs
 }
 object ASPxClientSchedulerStorageReminderAlertEventArgs {
   
-  @scala.inline
-  def apply(alertNotifications: js.Array[ASPxClientReminderAlertNotification]): ASPxClientSchedulerStorageReminderAlertEventArgs = {
+  inline def apply(alertNotifications: js.Array[ASPxClientReminderAlertNotification]): ASPxClientSchedulerStorageReminderAlertEventArgs = {
     val __obj = js.Dynamic.literal(alertNotifications = alertNotifications.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientSchedulerStorageReminderAlertEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientSchedulerStorageReminderAlertEventArgsMutableBuilder[Self <: ASPxClientSchedulerStorageReminderAlertEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientSchedulerStorageReminderAlertEventArgs](x: Self) {
     
-    @scala.inline
-    def setAlertNotifications(value: js.Array[ASPxClientReminderAlertNotification]): Self = StObject.set(x, "alertNotifications", value.asInstanceOf[js.Any])
+    inline def setAlertNotifications(value: js.Array[ASPxClientReminderAlertNotification]): Self = StObject.set(x, "alertNotifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlertNotificationsVarargs(value: ASPxClientReminderAlertNotification*): Self = StObject.set(x, "alertNotifications", js.Array(value :_*))
+    inline def setAlertNotificationsVarargs(value: ASPxClientReminderAlertNotification*): Self = StObject.set(x, "alertNotifications", js.Array(value :_*))
   }
 }

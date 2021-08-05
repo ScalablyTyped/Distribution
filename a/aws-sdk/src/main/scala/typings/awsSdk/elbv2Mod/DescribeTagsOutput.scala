@@ -13,22 +13,17 @@ trait DescribeTagsOutput extends StObject {
 }
 object DescribeTagsOutput {
   
-  @scala.inline
-  def apply(): DescribeTagsOutput = {
+  inline def apply(): DescribeTagsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeTagsOutput]
   }
   
-  @scala.inline
-  implicit class DescribeTagsOutputMutableBuilder[Self <: DescribeTagsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTagsOutput](x: Self) {
     
-    @scala.inline
-    def setTagDescriptions(value: TagDescriptions): Self = StObject.set(x, "TagDescriptions", value.asInstanceOf[js.Any])
+    inline def setTagDescriptions(value: TagDescriptions): Self = StObject.set(x, "TagDescriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagDescriptionsUndefined: Self = StObject.set(x, "TagDescriptions", js.undefined)
+    inline def setTagDescriptionsUndefined: Self = StObject.set(x, "TagDescriptions", js.undefined)
     
-    @scala.inline
-    def setTagDescriptionsVarargs(value: TagDescription*): Self = StObject.set(x, "TagDescriptions", js.Array(value :_*))
+    inline def setTagDescriptionsVarargs(value: TagDescription*): Self = StObject.set(x, "TagDescriptions", js.Array(value :_*))
   }
 }

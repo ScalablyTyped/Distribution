@@ -14,22 +14,17 @@ trait HTML extends StObject {
 }
 object HTML {
   
-  @scala.inline
-  def apply(Date: String, HTML: Double, Text: Double): HTML = {
+  inline def apply(Date: String, HTML: Double, Text: Double): HTML = {
     val __obj = js.Dynamic.literal(Date = Date.asInstanceOf[js.Any], HTML = HTML.asInstanceOf[js.Any], Text = Text.asInstanceOf[js.Any])
     __obj.asInstanceOf[HTML]
   }
   
-  @scala.inline
-  implicit class HTMLMutableBuilder[Self <: HTML] (val x: Self) extends AnyVal {
+  extension [Self <: HTML](x: Self) {
     
-    @scala.inline
-    def setDate(value: String): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
+    inline def setDate(value: String): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHTML(value: Double): Self = StObject.set(x, "HTML", value.asInstanceOf[js.Any])
+    inline def setHTML(value: Double): Self = StObject.set(x, "HTML", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: Double): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: Double): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }
 }

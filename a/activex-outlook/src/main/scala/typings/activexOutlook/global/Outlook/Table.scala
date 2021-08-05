@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.Table")
 @js.native
-class Table protected ()
+/* private */ class Table ()
   extends StObject
      with typings.activexOutlook.Outlook.Table

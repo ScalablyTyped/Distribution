@@ -43,49 +43,35 @@ trait ClaimResponseProcessNote
 }
 object ClaimResponseProcessNote {
   
-  @scala.inline
-  def apply(): ClaimResponseProcessNote = {
+  inline def apply(): ClaimResponseProcessNote = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClaimResponseProcessNote]
   }
   
-  @scala.inline
-  implicit class ClaimResponseProcessNoteMutableBuilder[Self <: ClaimResponseProcessNote] (val x: Self) extends AnyVal {
+  extension [Self <: ClaimResponseProcessNote](x: Self) {
     
-    @scala.inline
-    def setLanguage(value: CodeableConcept): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: CodeableConcept): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setNumber(value: positiveInt): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: positiveInt): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+    inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def set_number(value: Element): Self = StObject.set(x, "_number", value.asInstanceOf[js.Any])
+    inline def set_number(value: Element): Self = StObject.set(x, "_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_numberUndefined: Self = StObject.set(x, "_number", js.undefined)
+    inline def set_numberUndefined: Self = StObject.set(x, "_number", js.undefined)
     
-    @scala.inline
-    def set_text(value: Element): Self = StObject.set(x, "_text", value.asInstanceOf[js.Any])
+    inline def set_text(value: Element): Self = StObject.set(x, "_text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_textUndefined: Self = StObject.set(x, "_text", js.undefined)
+    inline def set_textUndefined: Self = StObject.set(x, "_text", js.undefined)
   }
 }

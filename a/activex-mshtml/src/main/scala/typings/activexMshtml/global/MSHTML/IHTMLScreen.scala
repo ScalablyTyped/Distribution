@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IHTMLScreen")
 @js.native
-class IHTMLScreen protected ()
+/* private */ class IHTMLScreen ()
   extends StObject
      with typings.activexMshtml.MSHTML.IHTMLScreen {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.IHTMLScreen_typekey")
   var MSHTMLDotIHTMLScreen_typekey: typings.activexMshtml.MSHTML.IHTMLScreen = js.native
   

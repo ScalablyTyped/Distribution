@@ -24,25 +24,19 @@ trait SchemaKeyOperationAttestation extends StObject {
 }
 object SchemaKeyOperationAttestation {
   
-  @scala.inline
-  def apply(): SchemaKeyOperationAttestation = {
+  inline def apply(): SchemaKeyOperationAttestation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaKeyOperationAttestation]
   }
   
-  @scala.inline
-  implicit class SchemaKeyOperationAttestationMutableBuilder[Self <: SchemaKeyOperationAttestation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaKeyOperationAttestation](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
   }
 }

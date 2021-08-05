@@ -73,6 +73,5 @@ object rmMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasCtxHashForceQuietTimeout: Force): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasCtxHashForceQuietTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(hasCtxHashForceQuietTimeout: Force): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasCtxHashForceQuietTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

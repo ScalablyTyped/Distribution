@@ -20,34 +20,25 @@ trait TableRow extends StObject {
 }
 object TableRow {
   
-  @scala.inline
-  def apply(): TableRow = {
+  inline def apply(): TableRow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableRow]
   }
   
-  @scala.inline
-  implicit class TableRowMutableBuilder[Self <: TableRow] (val x: Self) extends AnyVal {
+  extension [Self <: TableRow](x: Self) {
     
-    @scala.inline
-    def setRowHeight(value: Dimension): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
+    inline def setRowHeight(value: Dimension): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
+    inline def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
     
-    @scala.inline
-    def setTableCells(value: js.Array[TableCell]): Self = StObject.set(x, "tableCells", value.asInstanceOf[js.Any])
+    inline def setTableCells(value: js.Array[TableCell]): Self = StObject.set(x, "tableCells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableCellsUndefined: Self = StObject.set(x, "tableCells", js.undefined)
+    inline def setTableCellsUndefined: Self = StObject.set(x, "tableCells", js.undefined)
     
-    @scala.inline
-    def setTableCellsVarargs(value: TableCell*): Self = StObject.set(x, "tableCells", js.Array(value :_*))
+    inline def setTableCellsVarargs(value: TableCell*): Self = StObject.set(x, "tableCells", js.Array(value :_*))
     
-    @scala.inline
-    def setTableRowProperties(value: TableRowProperties): Self = StObject.set(x, "tableRowProperties", value.asInstanceOf[js.Any])
+    inline def setTableRowProperties(value: TableRowProperties): Self = StObject.set(x, "tableRowProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableRowPropertiesUndefined: Self = StObject.set(x, "tableRowProperties", js.undefined)
+    inline def setTableRowPropertiesUndefined: Self = StObject.set(x, "tableRowProperties", js.undefined)
   }
 }

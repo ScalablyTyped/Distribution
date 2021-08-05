@@ -17,9 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UpdateAction extends StObject
 object UpdateAction {
   
-  @scala.inline
-  def CUSTOM: typings.facebookInstantGames.facebookInstantGamesStrings.CUSTOM = "CUSTOM".asInstanceOf[typings.facebookInstantGames.facebookInstantGamesStrings.CUSTOM]
+  inline def CUSTOM: typings.facebookInstantGames.facebookInstantGamesStrings.CUSTOM = "CUSTOM".asInstanceOf[typings.facebookInstantGames.facebookInstantGamesStrings.CUSTOM]
   
-  @scala.inline
-  def LEADERBOARD: typings.facebookInstantGames.facebookInstantGamesStrings.LEADERBOARD = "LEADERBOARD".asInstanceOf[typings.facebookInstantGames.facebookInstantGamesStrings.LEADERBOARD]
+  inline def LEADERBOARD: typings.facebookInstantGames.facebookInstantGamesStrings.LEADERBOARD = "LEADERBOARD".asInstanceOf[typings.facebookInstantGames.facebookInstantGamesStrings.LEADERBOARD]
 }

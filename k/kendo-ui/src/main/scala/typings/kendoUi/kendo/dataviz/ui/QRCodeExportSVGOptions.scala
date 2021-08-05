@@ -10,19 +10,15 @@ trait QRCodeExportSVGOptions extends StObject {
 }
 object QRCodeExportSVGOptions {
   
-  @scala.inline
-  def apply(): QRCodeExportSVGOptions = {
+  inline def apply(): QRCodeExportSVGOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QRCodeExportSVGOptions]
   }
   
-  @scala.inline
-  implicit class QRCodeExportSVGOptionsMutableBuilder[Self <: QRCodeExportSVGOptions] (val x: Self) extends AnyVal {
+  extension [Self <: QRCodeExportSVGOptions](x: Self) {
     
-    @scala.inline
-    def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+    inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
   }
 }

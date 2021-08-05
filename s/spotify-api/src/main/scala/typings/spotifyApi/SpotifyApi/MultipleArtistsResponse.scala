@@ -16,19 +16,15 @@ trait MultipleArtistsResponse extends StObject {
 }
 object MultipleArtistsResponse {
   
-  @scala.inline
-  def apply(artists: js.Array[ArtistObjectFull]): MultipleArtistsResponse = {
+  inline def apply(artists: js.Array[ArtistObjectFull]): MultipleArtistsResponse = {
     val __obj = js.Dynamic.literal(artists = artists.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultipleArtistsResponse]
   }
   
-  @scala.inline
-  implicit class MultipleArtistsResponseMutableBuilder[Self <: MultipleArtistsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: MultipleArtistsResponse](x: Self) {
     
-    @scala.inline
-    def setArtists(value: js.Array[ArtistObjectFull]): Self = StObject.set(x, "artists", value.asInstanceOf[js.Any])
+    inline def setArtists(value: js.Array[ArtistObjectFull]): Self = StObject.set(x, "artists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtistsVarargs(value: ArtistObjectFull*): Self = StObject.set(x, "artists", js.Array(value :_*))
+    inline def setArtistsVarargs(value: ArtistObjectFull*): Self = StObject.set(x, "artists", js.Array(value :_*))
   }
 }

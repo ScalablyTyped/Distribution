@@ -31,91 +31,63 @@ trait Workbook
 }
 object Workbook {
   
-  @scala.inline
-  def apply(): Workbook = {
+  inline def apply(): Workbook = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Workbook]
   }
   
-  @scala.inline
-  implicit class WorkbookMutableBuilder[Self <: Workbook] (val x: Self) extends AnyVal {
+  extension [Self <: Workbook](x: Self) {
     
-    @scala.inline
-    def setApplication(value: NullableOption[WorkbookApplication]): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: NullableOption[WorkbookApplication]): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationNull: Self = StObject.set(x, "application", null)
+    inline def setApplicationNull: Self = StObject.set(x, "application", null)
     
-    @scala.inline
-    def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
+    inline def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
     
-    @scala.inline
-    def setComments(value: NullableOption[js.Array[WorkbookComment]]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: NullableOption[js.Array[WorkbookComment]]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentsNull: Self = StObject.set(x, "comments", null)
+    inline def setCommentsNull: Self = StObject.set(x, "comments", null)
     
-    @scala.inline
-    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+    inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
-    @scala.inline
-    def setCommentsVarargs(value: WorkbookComment*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: WorkbookComment*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
-    @scala.inline
-    def setFunctions(value: NullableOption[WorkbookFunctions]): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
+    inline def setFunctions(value: NullableOption[WorkbookFunctions]): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionsNull: Self = StObject.set(x, "functions", null)
+    inline def setFunctionsNull: Self = StObject.set(x, "functions", null)
     
-    @scala.inline
-    def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
+    inline def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
     
-    @scala.inline
-    def setNames(value: NullableOption[js.Array[WorkbookNamedItem]]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+    inline def setNames(value: NullableOption[js.Array[WorkbookNamedItem]]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamesNull: Self = StObject.set(x, "names", null)
+    inline def setNamesNull: Self = StObject.set(x, "names", null)
     
-    @scala.inline
-    def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
+    inline def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
     
-    @scala.inline
-    def setNamesVarargs(value: WorkbookNamedItem*): Self = StObject.set(x, "names", js.Array(value :_*))
+    inline def setNamesVarargs(value: WorkbookNamedItem*): Self = StObject.set(x, "names", js.Array(value :_*))
     
-    @scala.inline
-    def setOperations(value: NullableOption[js.Array[WorkbookOperation]]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: NullableOption[js.Array[WorkbookOperation]]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationsNull: Self = StObject.set(x, "operations", null)
+    inline def setOperationsNull: Self = StObject.set(x, "operations", null)
     
-    @scala.inline
-    def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
+    inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
     
-    @scala.inline
-    def setOperationsVarargs(value: WorkbookOperation*): Self = StObject.set(x, "operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: WorkbookOperation*): Self = StObject.set(x, "operations", js.Array(value :_*))
     
-    @scala.inline
-    def setTables(value: NullableOption[js.Array[WorkbookTable]]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
+    inline def setTables(value: NullableOption[js.Array[WorkbookTable]]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTablesNull: Self = StObject.set(x, "tables", null)
+    inline def setTablesNull: Self = StObject.set(x, "tables", null)
     
-    @scala.inline
-    def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
+    inline def setTablesUndefined: Self = StObject.set(x, "tables", js.undefined)
     
-    @scala.inline
-    def setTablesVarargs(value: WorkbookTable*): Self = StObject.set(x, "tables", js.Array(value :_*))
+    inline def setTablesVarargs(value: WorkbookTable*): Self = StObject.set(x, "tables", js.Array(value :_*))
     
-    @scala.inline
-    def setWorksheets(value: NullableOption[js.Array[WorkbookWorksheet]]): Self = StObject.set(x, "worksheets", value.asInstanceOf[js.Any])
+    inline def setWorksheets(value: NullableOption[js.Array[WorkbookWorksheet]]): Self = StObject.set(x, "worksheets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorksheetsNull: Self = StObject.set(x, "worksheets", null)
+    inline def setWorksheetsNull: Self = StObject.set(x, "worksheets", null)
     
-    @scala.inline
-    def setWorksheetsUndefined: Self = StObject.set(x, "worksheets", js.undefined)
+    inline def setWorksheetsUndefined: Self = StObject.set(x, "worksheets", js.undefined)
     
-    @scala.inline
-    def setWorksheetsVarargs(value: WorkbookWorksheet*): Self = StObject.set(x, "worksheets", js.Array(value :_*))
+    inline def setWorksheetsVarargs(value: WorkbookWorksheet*): Self = StObject.set(x, "worksheets", js.Array(value :_*))
   }
 }

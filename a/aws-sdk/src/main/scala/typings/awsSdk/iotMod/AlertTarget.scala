@@ -18,19 +18,15 @@ trait AlertTarget extends StObject {
 }
 object AlertTarget {
   
-  @scala.inline
-  def apply(alertTargetArn: AlertTargetArn, roleArn: RoleArn): AlertTarget = {
+  inline def apply(alertTargetArn: AlertTargetArn, roleArn: RoleArn): AlertTarget = {
     val __obj = js.Dynamic.literal(alertTargetArn = alertTargetArn.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlertTarget]
   }
   
-  @scala.inline
-  implicit class AlertTargetMutableBuilder[Self <: AlertTarget] (val x: Self) extends AnyVal {
+  extension [Self <: AlertTarget](x: Self) {
     
-    @scala.inline
-    def setAlertTargetArn(value: AlertTargetArn): Self = StObject.set(x, "alertTargetArn", value.asInstanceOf[js.Any])
+    inline def setAlertTargetArn(value: AlertTargetArn): Self = StObject.set(x, "alertTargetArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }
 }

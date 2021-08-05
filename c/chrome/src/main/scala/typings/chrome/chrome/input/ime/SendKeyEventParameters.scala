@@ -14,22 +14,17 @@ trait SendKeyEventParameters extends StObject {
 }
 object SendKeyEventParameters {
   
-  @scala.inline
-  def apply(contextID: Double, keyData: js.Array[KeyboardEvent]): SendKeyEventParameters = {
+  inline def apply(contextID: Double, keyData: js.Array[KeyboardEvent]): SendKeyEventParameters = {
     val __obj = js.Dynamic.literal(contextID = contextID.asInstanceOf[js.Any], keyData = keyData.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendKeyEventParameters]
   }
   
-  @scala.inline
-  implicit class SendKeyEventParametersMutableBuilder[Self <: SendKeyEventParameters] (val x: Self) extends AnyVal {
+  extension [Self <: SendKeyEventParameters](x: Self) {
     
-    @scala.inline
-    def setContextID(value: Double): Self = StObject.set(x, "contextID", value.asInstanceOf[js.Any])
+    inline def setContextID(value: Double): Self = StObject.set(x, "contextID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyData(value: js.Array[KeyboardEvent]): Self = StObject.set(x, "keyData", value.asInstanceOf[js.Any])
+    inline def setKeyData(value: js.Array[KeyboardEvent]): Self = StObject.set(x, "keyData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyDataVarargs(value: KeyboardEvent*): Self = StObject.set(x, "keyData", js.Array(value :_*))
+    inline def setKeyDataVarargs(value: KeyboardEvent*): Self = StObject.set(x, "keyData", js.Array(value :_*))
   }
 }

@@ -14,17 +14,14 @@ trait NavigationResetAction
 }
 object NavigationResetAction {
   
-  @scala.inline
-  def apply(actions: js.Array[NavigationNavigateAction], index: Double): NavigationResetAction = {
+  inline def apply(actions: js.Array[NavigationNavigateAction], index: Double): NavigationResetAction = {
     val __obj = js.Dynamic.literal(actions = actions.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Navigation/RESET")
     __obj.asInstanceOf[NavigationResetAction]
   }
   
-  @scala.inline
-  implicit class NavigationResetActionMutableBuilder[Self <: NavigationResetAction] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationResetAction](x: Self) {
     
-    @scala.inline
-    def setType(value: NavigationSlashRESET): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NavigationSlashRESET): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

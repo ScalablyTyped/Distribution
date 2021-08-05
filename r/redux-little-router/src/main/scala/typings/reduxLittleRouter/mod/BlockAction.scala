@@ -14,8 +14,7 @@ trait BlockAction
 }
 object BlockAction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     payload: (/* location */ Location, /* action */ js.UndefOr[HistoryAction]) => String,
     `type`: /* "ROUTER_BLOCK" */ String
   ): BlockAction = {
@@ -24,13 +23,10 @@ object BlockAction {
     __obj.asInstanceOf[BlockAction]
   }
   
-  @scala.inline
-  implicit class BlockActionMutableBuilder[Self <: BlockAction] (val x: Self) extends AnyVal {
+  extension [Self <: BlockAction](x: Self) {
     
-    @scala.inline
-    def setPayload(value: (/* location */ Location, /* action */ js.UndefOr[HistoryAction]) => String): Self = StObject.set(x, "payload", js.Any.fromFunction2(value))
+    inline def setPayload(value: (/* location */ Location, /* action */ js.UndefOr[HistoryAction]) => String): Self = StObject.set(x, "payload", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setType(value: /* "ROUTER_BLOCK" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: /* "ROUTER_BLOCK" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

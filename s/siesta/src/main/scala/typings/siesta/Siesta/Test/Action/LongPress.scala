@@ -15,8 +15,7 @@ trait LongPress
      with IHasTarget
 object LongPress {
   
-  @scala.inline
-  def apply(): LongPress = {
+  inline def apply(): LongPress = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LongPress]
   }

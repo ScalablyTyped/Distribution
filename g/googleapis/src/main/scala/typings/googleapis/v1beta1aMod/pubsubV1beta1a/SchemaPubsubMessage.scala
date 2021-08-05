@@ -36,40 +36,29 @@ trait SchemaPubsubMessage extends StObject {
 }
 object SchemaPubsubMessage {
   
-  @scala.inline
-  def apply(): SchemaPubsubMessage = {
+  inline def apply(): SchemaPubsubMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPubsubMessage]
   }
   
-  @scala.inline
-  implicit class SchemaPubsubMessageMutableBuilder[Self <: SchemaPubsubMessage] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPubsubMessage](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setLabel(value: js.Array[SchemaLabel]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: js.Array[SchemaLabel]): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setLabelVarargs(value: SchemaLabel*): Self = StObject.set(x, "label", js.Array(value :_*))
+    inline def setLabelVarargs(value: SchemaLabel*): Self = StObject.set(x, "label", js.Array(value :_*))
     
-    @scala.inline
-    def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+    inline def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
+    inline def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
     
-    @scala.inline
-    def setPublishTime(value: String): Self = StObject.set(x, "publishTime", value.asInstanceOf[js.Any])
+    inline def setPublishTime(value: String): Self = StObject.set(x, "publishTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishTimeUndefined: Self = StObject.set(x, "publishTime", js.undefined)
+    inline def setPublishTimeUndefined: Self = StObject.set(x, "publishTime", js.undefined)
   }
 }

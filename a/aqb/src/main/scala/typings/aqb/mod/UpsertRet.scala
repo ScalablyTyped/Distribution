@@ -10,16 +10,13 @@ trait UpsertRet extends StObject {
 }
 object UpsertRet {
   
-  @scala.inline
-  def apply(insert: js.Any => UpsertRetInsertRet): UpsertRet = {
+  inline def apply(insert: js.Any => UpsertRetInsertRet): UpsertRet = {
     val __obj = js.Dynamic.literal(insert = js.Any.fromFunction1(insert))
     __obj.asInstanceOf[UpsertRet]
   }
   
-  @scala.inline
-  implicit class UpsertRetMutableBuilder[Self <: UpsertRet] (val x: Self) extends AnyVal {
+  extension [Self <: UpsertRet](x: Self) {
     
-    @scala.inline
-    def setInsert(value: js.Any => UpsertRetInsertRet): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
+    inline def setInsert(value: js.Any => UpsertRetInsertRet): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
   }
 }

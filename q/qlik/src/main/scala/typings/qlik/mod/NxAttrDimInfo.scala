@@ -18,8 +18,7 @@ trait NxAttrDimInfo extends StObject {
 }
 object NxAttrDimInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qCardinal: Double,
     qError: NxValidationError,
     qFallbackTitle: String,
@@ -30,22 +29,16 @@ object NxAttrDimInfo {
     __obj.asInstanceOf[NxAttrDimInfo]
   }
   
-  @scala.inline
-  implicit class NxAttrDimInfoMutableBuilder[Self <: NxAttrDimInfo] (val x: Self) extends AnyVal {
+  extension [Self <: NxAttrDimInfo](x: Self) {
     
-    @scala.inline
-    def setQCardinal(value: Double): Self = StObject.set(x, "qCardinal", value.asInstanceOf[js.Any])
+    inline def setQCardinal(value: Double): Self = StObject.set(x, "qCardinal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQError(value: NxValidationError): Self = StObject.set(x, "qError", value.asInstanceOf[js.Any])
+    inline def setQError(value: NxValidationError): Self = StObject.set(x, "qError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQFallbackTitle(value: String): Self = StObject.set(x, "qFallbackTitle", value.asInstanceOf[js.Any])
+    inline def setQFallbackTitle(value: String): Self = StObject.set(x, "qFallbackTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQLocked(value: Boolean): Self = StObject.set(x, "qLocked", value.asInstanceOf[js.Any])
+    inline def setQLocked(value: Boolean): Self = StObject.set(x, "qLocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSize(value: Size): Self = StObject.set(x, "qSize", value.asInstanceOf[js.Any])
+    inline def setQSize(value: Size): Self = StObject.set(x, "qSize", value.asInstanceOf[js.Any])
   }
 }

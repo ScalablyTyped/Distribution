@@ -25,28 +25,21 @@ trait MimeTypedBuffer extends StObject {
 }
 object MimeTypedBuffer {
   
-  @scala.inline
-  def apply(data: Buffer): MimeTypedBuffer = {
+  inline def apply(data: Buffer): MimeTypedBuffer = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[MimeTypedBuffer]
   }
   
-  @scala.inline
-  implicit class MimeTypedBufferMutableBuilder[Self <: MimeTypedBuffer] (val x: Self) extends AnyVal {
+  extension [Self <: MimeTypedBuffer](x: Self) {
     
-    @scala.inline
-    def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
+    inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharsetUndefined: Self = StObject.set(x, "charset", js.undefined)
+    inline def setCharsetUndefined: Self = StObject.set(x, "charset", js.undefined)
     
-    @scala.inline
-    def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
   }
 }

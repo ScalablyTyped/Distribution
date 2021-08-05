@@ -22,28 +22,21 @@ trait BuildingExplorerViewModelProperties extends StObject {
 }
 object BuildingExplorerViewModelProperties {
   
-  @scala.inline
-  def apply(): BuildingExplorerViewModelProperties = {
+  inline def apply(): BuildingExplorerViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildingExplorerViewModelProperties]
   }
   
-  @scala.inline
-  implicit class BuildingExplorerViewModelPropertiesMutableBuilder[Self <: BuildingExplorerViewModelProperties] (val x: Self) extends AnyVal {
+  extension [Self <: BuildingExplorerViewModelProperties](x: Self) {
     
-    @scala.inline
-    def setLayers(value: CollectionProperties[BuildingSceneLayerProperties]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+    inline def setLayers(value: CollectionProperties[BuildingSceneLayerProperties]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
+    inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    @scala.inline
-    def setLayersVarargs(value: BuildingSceneLayerProperties*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: BuildingSceneLayerProperties*): Self = StObject.set(x, "layers", js.Array(value :_*))
     
-    @scala.inline
-    def setView(value: SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

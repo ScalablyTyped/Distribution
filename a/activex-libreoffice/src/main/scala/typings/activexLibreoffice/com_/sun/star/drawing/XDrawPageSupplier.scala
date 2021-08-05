@@ -25,8 +25,7 @@ trait XDrawPageSupplier
 }
 object XDrawPageSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DrawPage: XDrawPage,
     acquire: () => Unit,
     getDrawPage: () => XDrawPage,
@@ -37,13 +36,10 @@ object XDrawPageSupplier {
     __obj.asInstanceOf[XDrawPageSupplier]
   }
   
-  @scala.inline
-  implicit class XDrawPageSupplierMutableBuilder[Self <: XDrawPageSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XDrawPageSupplier](x: Self) {
     
-    @scala.inline
-    def setDrawPage(value: XDrawPage): Self = StObject.set(x, "DrawPage", value.asInstanceOf[js.Any])
+    inline def setDrawPage(value: XDrawPage): Self = StObject.set(x, "DrawPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDrawPage(value: () => XDrawPage): Self = StObject.set(x, "getDrawPage", js.Any.fromFunction0(value))
+    inline def setGetDrawPage(value: () => XDrawPage): Self = StObject.set(x, "getDrawPage", js.Any.fromFunction0(value))
   }
 }

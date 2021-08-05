@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "windows-mutex"
-version := "0.4-dt-20191216Z-1310b2"
+version := "0.4-dt-20191216Z-f5c066"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -5,35 +5,25 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def addMethod[T /* <: typings.yup.mod.Schema[js.Any, js.Object] */](
+inline def addMethod[T /* <: typings.yup.mod.Schema[js.Any, js.Object] */](
   schemaCtor: typings.yup.mod.AnySchemaConstructor,
   name: java.lang.String,
   method: js.ThisFunction1[/* this */ T, /* repeated */ js.Any, T]
 ): scala.Unit = (typings.yup.mod.^.asInstanceOf[js.Dynamic].applyDynamic("addMethod")(schemaCtor.asInstanceOf[js.Any], name.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
-@scala.inline
-def isSchema(obj: js.Any): /* is yup.yup.Schema<any, object> */ scala.Boolean = typings.yup.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isSchema")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is yup.yup.Schema<any, object> */ scala.Boolean]
+inline def isSchema(obj: js.Any): /* is yup.yup.Schema<any, object> */ scala.Boolean = typings.yup.mod.^.asInstanceOf[js.Dynamic].applyDynamic("isSchema")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is yup.yup.Schema<any, object> */ scala.Boolean]
 
-@scala.inline
-def `lazy`[T](fn: js.Function1[/* value */ T, typings.yup.mod.Schema[T, js.Object]]): typings.yup.mod.Lazy_ = typings.yup.mod.^.asInstanceOf[js.Dynamic].applyDynamic("lazy")(fn.asInstanceOf[js.Any]).asInstanceOf[typings.yup.mod.Lazy_]
+inline def `lazy`[T](fn: js.Function1[/* value */ T, typings.yup.mod.Schema[T, js.Object]]): typings.yup.mod.Lazy_ = typings.yup.mod.^.asInstanceOf[js.Dynamic].applyDynamic("lazy")(fn.asInstanceOf[js.Any]).asInstanceOf[typings.yup.mod.Lazy_]
 
-@scala.inline
-def reach[T, C](schema: typings.yup.mod.Schema[T, C], path: java.lang.String): typings.yup.mod.Schema[T, C] = (typings.yup.mod.^.asInstanceOf[js.Dynamic].applyDynamic("reach")(schema.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[typings.yup.mod.Schema[T, C]]
-@scala.inline
-def reach[T, C](schema: typings.yup.mod.Schema[T, C], path: java.lang.String, value: js.Any): typings.yup.mod.Schema[T, C] = (typings.yup.mod.^.asInstanceOf[js.Dynamic].applyDynamic("reach")(schema.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.yup.mod.Schema[T, C]]
-@scala.inline
-def reach[T, C](schema: typings.yup.mod.Schema[T, C], path: java.lang.String, value: js.Any, context: js.Any): typings.yup.mod.Schema[T, C] = (typings.yup.mod.^.asInstanceOf[js.Dynamic].applyDynamic("reach")(schema.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.yup.mod.Schema[T, C]]
-@scala.inline
-def reach[T, C](schema: typings.yup.mod.Schema[T, C], path: java.lang.String, value: scala.Unit, context: js.Any): typings.yup.mod.Schema[T, C] = (typings.yup.mod.^.asInstanceOf[js.Dynamic].applyDynamic("reach")(schema.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.yup.mod.Schema[T, C]]
+inline def reach[T, C](schema: typings.yup.mod.Schema[T, C], path: java.lang.String): typings.yup.mod.Schema[T, C] = (typings.yup.mod.^.asInstanceOf[js.Dynamic].applyDynamic("reach")(schema.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[typings.yup.mod.Schema[T, C]]
+inline def reach[T, C](schema: typings.yup.mod.Schema[T, C], path: java.lang.String, value: js.Any): typings.yup.mod.Schema[T, C] = (typings.yup.mod.^.asInstanceOf[js.Dynamic].applyDynamic("reach")(schema.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.yup.mod.Schema[T, C]]
+inline def reach[T, C](schema: typings.yup.mod.Schema[T, C], path: java.lang.String, value: js.Any, context: js.Any): typings.yup.mod.Schema[T, C] = (typings.yup.mod.^.asInstanceOf[js.Dynamic].applyDynamic("reach")(schema.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.yup.mod.Schema[T, C]]
+inline def reach[T, C](schema: typings.yup.mod.Schema[T, C], path: java.lang.String, value: scala.Unit, context: js.Any): typings.yup.mod.Schema[T, C] = (typings.yup.mod.^.asInstanceOf[js.Dynamic].applyDynamic("reach")(schema.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[typings.yup.mod.Schema[T, C]]
 
-@scala.inline
-def ref(path: java.lang.String): typings.yup.mod.Ref_ = typings.yup.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ref")(path.asInstanceOf[js.Any]).asInstanceOf[typings.yup.mod.Ref_]
-@scala.inline
-def ref(path: java.lang.String, options: typings.yup.anon.ContextPrefix): typings.yup.mod.Ref_ = (typings.yup.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ref")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.yup.mod.Ref_]
+inline def ref(path: java.lang.String): typings.yup.mod.Ref_ = typings.yup.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ref")(path.asInstanceOf[js.Any]).asInstanceOf[typings.yup.mod.Ref_]
+inline def ref(path: java.lang.String, options: typings.yup.anon.ContextPrefix): typings.yup.mod.Ref_ = (typings.yup.mod.^.asInstanceOf[js.Dynamic].applyDynamic("ref")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.yup.mod.Ref_]
 
-@scala.inline
-def setLocale(customLocale: typings.yup.mod.LocaleObject): scala.Unit = typings.yup.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setLocale")(customLocale.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def setLocale(customLocale: typings.yup.mod.LocaleObject): scala.Unit = typings.yup.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setLocale")(customLocale.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
 type AssertingTestFunction[T, C] = js.ThisFunction1[
 /* this */ typings.yup.mod.TestContext[C], 

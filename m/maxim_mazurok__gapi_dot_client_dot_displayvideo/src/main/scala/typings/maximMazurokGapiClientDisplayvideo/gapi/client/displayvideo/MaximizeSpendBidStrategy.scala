@@ -23,31 +23,23 @@ trait MaximizeSpendBidStrategy extends StObject {
 }
 object MaximizeSpendBidStrategy {
   
-  @scala.inline
-  def apply(): MaximizeSpendBidStrategy = {
+  inline def apply(): MaximizeSpendBidStrategy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaximizeSpendBidStrategy]
   }
   
-  @scala.inline
-  implicit class MaximizeSpendBidStrategyMutableBuilder[Self <: MaximizeSpendBidStrategy] (val x: Self) extends AnyVal {
+  extension [Self <: MaximizeSpendBidStrategy](x: Self) {
     
-    @scala.inline
-    def setCustomBiddingAlgorithmId(value: String): Self = StObject.set(x, "customBiddingAlgorithmId", value.asInstanceOf[js.Any])
+    inline def setCustomBiddingAlgorithmId(value: String): Self = StObject.set(x, "customBiddingAlgorithmId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomBiddingAlgorithmIdUndefined: Self = StObject.set(x, "customBiddingAlgorithmId", js.undefined)
+    inline def setCustomBiddingAlgorithmIdUndefined: Self = StObject.set(x, "customBiddingAlgorithmId", js.undefined)
     
-    @scala.inline
-    def setMaxAverageCpmBidAmountMicros(value: String): Self = StObject.set(x, "maxAverageCpmBidAmountMicros", value.asInstanceOf[js.Any])
+    inline def setMaxAverageCpmBidAmountMicros(value: String): Self = StObject.set(x, "maxAverageCpmBidAmountMicros", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAverageCpmBidAmountMicrosUndefined: Self = StObject.set(x, "maxAverageCpmBidAmountMicros", js.undefined)
+    inline def setMaxAverageCpmBidAmountMicrosUndefined: Self = StObject.set(x, "maxAverageCpmBidAmountMicros", js.undefined)
     
-    @scala.inline
-    def setPerformanceGoalType(value: String): Self = StObject.set(x, "performanceGoalType", value.asInstanceOf[js.Any])
+    inline def setPerformanceGoalType(value: String): Self = StObject.set(x, "performanceGoalType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerformanceGoalTypeUndefined: Self = StObject.set(x, "performanceGoalType", js.undefined)
+    inline def setPerformanceGoalTypeUndefined: Self = StObject.set(x, "performanceGoalType", js.undefined)
   }
 }

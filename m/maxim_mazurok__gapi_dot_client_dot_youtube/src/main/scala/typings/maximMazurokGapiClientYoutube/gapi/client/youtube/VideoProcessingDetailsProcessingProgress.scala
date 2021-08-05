@@ -21,31 +21,23 @@ trait VideoProcessingDetailsProcessingProgress extends StObject {
 }
 object VideoProcessingDetailsProcessingProgress {
   
-  @scala.inline
-  def apply(): VideoProcessingDetailsProcessingProgress = {
+  inline def apply(): VideoProcessingDetailsProcessingProgress = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoProcessingDetailsProcessingProgress]
   }
   
-  @scala.inline
-  implicit class VideoProcessingDetailsProcessingProgressMutableBuilder[Self <: VideoProcessingDetailsProcessingProgress] (val x: Self) extends AnyVal {
+  extension [Self <: VideoProcessingDetailsProcessingProgress](x: Self) {
     
-    @scala.inline
-    def setPartsProcessed(value: String): Self = StObject.set(x, "partsProcessed", value.asInstanceOf[js.Any])
+    inline def setPartsProcessed(value: String): Self = StObject.set(x, "partsProcessed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartsProcessedUndefined: Self = StObject.set(x, "partsProcessed", js.undefined)
+    inline def setPartsProcessedUndefined: Self = StObject.set(x, "partsProcessed", js.undefined)
     
-    @scala.inline
-    def setPartsTotal(value: String): Self = StObject.set(x, "partsTotal", value.asInstanceOf[js.Any])
+    inline def setPartsTotal(value: String): Self = StObject.set(x, "partsTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartsTotalUndefined: Self = StObject.set(x, "partsTotal", js.undefined)
+    inline def setPartsTotalUndefined: Self = StObject.set(x, "partsTotal", js.undefined)
     
-    @scala.inline
-    def setTimeLeftMs(value: String): Self = StObject.set(x, "timeLeftMs", value.asInstanceOf[js.Any])
+    inline def setTimeLeftMs(value: String): Self = StObject.set(x, "timeLeftMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeLeftMsUndefined: Self = StObject.set(x, "timeLeftMs", js.undefined)
+    inline def setTimeLeftMsUndefined: Self = StObject.set(x, "timeLeftMs", js.undefined)
   }
 }

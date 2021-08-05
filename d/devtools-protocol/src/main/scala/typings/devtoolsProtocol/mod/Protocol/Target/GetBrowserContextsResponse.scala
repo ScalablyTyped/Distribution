@@ -14,19 +14,15 @@ trait GetBrowserContextsResponse extends StObject {
 }
 object GetBrowserContextsResponse {
   
-  @scala.inline
-  def apply(browserContextIds: js.Array[BrowserContextID]): GetBrowserContextsResponse = {
+  inline def apply(browserContextIds: js.Array[BrowserContextID]): GetBrowserContextsResponse = {
     val __obj = js.Dynamic.literal(browserContextIds = browserContextIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBrowserContextsResponse]
   }
   
-  @scala.inline
-  implicit class GetBrowserContextsResponseMutableBuilder[Self <: GetBrowserContextsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetBrowserContextsResponse](x: Self) {
     
-    @scala.inline
-    def setBrowserContextIds(value: js.Array[BrowserContextID]): Self = StObject.set(x, "browserContextIds", value.asInstanceOf[js.Any])
+    inline def setBrowserContextIds(value: js.Array[BrowserContextID]): Self = StObject.set(x, "browserContextIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowserContextIdsVarargs(value: BrowserContextID*): Self = StObject.set(x, "browserContextIds", js.Array(value :_*))
+    inline def setBrowserContextIdsVarargs(value: BrowserContextID*): Self = StObject.set(x, "browserContextIds", js.Array(value :_*))
   }
 }

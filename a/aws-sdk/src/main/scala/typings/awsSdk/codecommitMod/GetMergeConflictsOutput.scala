@@ -38,8 +38,7 @@ trait GetMergeConflictsOutput extends StObject {
 }
 object GetMergeConflictsOutput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     conflictMetadataList: ConflictMetadataList,
     destinationCommitId: ObjectId,
     mergeable: IsMergeable,
@@ -49,34 +48,24 @@ object GetMergeConflictsOutput {
     __obj.asInstanceOf[GetMergeConflictsOutput]
   }
   
-  @scala.inline
-  implicit class GetMergeConflictsOutputMutableBuilder[Self <: GetMergeConflictsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetMergeConflictsOutput](x: Self) {
     
-    @scala.inline
-    def setBaseCommitId(value: ObjectId): Self = StObject.set(x, "baseCommitId", value.asInstanceOf[js.Any])
+    inline def setBaseCommitId(value: ObjectId): Self = StObject.set(x, "baseCommitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseCommitIdUndefined: Self = StObject.set(x, "baseCommitId", js.undefined)
+    inline def setBaseCommitIdUndefined: Self = StObject.set(x, "baseCommitId", js.undefined)
     
-    @scala.inline
-    def setConflictMetadataList(value: ConflictMetadataList): Self = StObject.set(x, "conflictMetadataList", value.asInstanceOf[js.Any])
+    inline def setConflictMetadataList(value: ConflictMetadataList): Self = StObject.set(x, "conflictMetadataList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConflictMetadataListVarargs(value: ConflictMetadata*): Self = StObject.set(x, "conflictMetadataList", js.Array(value :_*))
+    inline def setConflictMetadataListVarargs(value: ConflictMetadata*): Self = StObject.set(x, "conflictMetadataList", js.Array(value :_*))
     
-    @scala.inline
-    def setDestinationCommitId(value: ObjectId): Self = StObject.set(x, "destinationCommitId", value.asInstanceOf[js.Any])
+    inline def setDestinationCommitId(value: ObjectId): Self = StObject.set(x, "destinationCommitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeable(value: IsMergeable): Self = StObject.set(x, "mergeable", value.asInstanceOf[js.Any])
+    inline def setMergeable(value: IsMergeable): Self = StObject.set(x, "mergeable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setSourceCommitId(value: ObjectId): Self = StObject.set(x, "sourceCommitId", value.asInstanceOf[js.Any])
+    inline def setSourceCommitId(value: ObjectId): Self = StObject.set(x, "sourceCommitId", value.asInstanceOf[js.Any])
   }
 }

@@ -11,8 +11,7 @@ object renderPlaygroundPageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def renderPlaygroundPage(options: RenderPageOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("renderPlaygroundPage")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def renderPlaygroundPage(options: RenderPageOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("renderPlaygroundPage")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* Rewritten from type alias, can be one of: 
     - typings.graphqlPlaygroundHtml.graphqlPlaygroundHtmlStrings.line
@@ -22,14 +21,11 @@ object renderPlaygroundPageMod {
   trait CursorShape extends StObject
   object CursorShape {
     
-    @scala.inline
-    def block: typings.graphqlPlaygroundHtml.graphqlPlaygroundHtmlStrings.block = "block".asInstanceOf[typings.graphqlPlaygroundHtml.graphqlPlaygroundHtmlStrings.block]
+    inline def block: typings.graphqlPlaygroundHtml.graphqlPlaygroundHtmlStrings.block = "block".asInstanceOf[typings.graphqlPlaygroundHtml.graphqlPlaygroundHtmlStrings.block]
     
-    @scala.inline
-    def line: typings.graphqlPlaygroundHtml.graphqlPlaygroundHtmlStrings.line = "line".asInstanceOf[typings.graphqlPlaygroundHtml.graphqlPlaygroundHtmlStrings.line]
+    inline def line: typings.graphqlPlaygroundHtml.graphqlPlaygroundHtmlStrings.line = "line".asInstanceOf[typings.graphqlPlaygroundHtml.graphqlPlaygroundHtmlStrings.line]
     
-    @scala.inline
-    def underline: typings.graphqlPlaygroundHtml.graphqlPlaygroundHtmlStrings.underline = "underline".asInstanceOf[typings.graphqlPlaygroundHtml.graphqlPlaygroundHtmlStrings.underline]
+    inline def underline: typings.graphqlPlaygroundHtml.graphqlPlaygroundHtmlStrings.underline = "underline".asInstanceOf[typings.graphqlPlaygroundHtml.graphqlPlaygroundHtmlStrings.underline]
   }
   
   trait EditorColours extends StObject {
@@ -78,8 +74,7 @@ object renderPlaygroundPageMod {
   }
   object EditorColours {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       atom: String,
       attribute: String,
       builtin: String,
@@ -107,71 +102,49 @@ object renderPlaygroundPageMod {
       __obj.asInstanceOf[EditorColours]
     }
     
-    @scala.inline
-    implicit class EditorColoursMutableBuilder[Self <: EditorColours] (val x: Self) extends AnyVal {
+    extension [Self <: EditorColours](x: Self) {
       
-      @scala.inline
-      def setAtom(value: String): Self = StObject.set(x, "atom", value.asInstanceOf[js.Any])
+      inline def setAtom(value: String): Self = StObject.set(x, "atom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
+      inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuiltin(value: String): Self = StObject.set(x, "builtin", value.asInstanceOf[js.Any])
+      inline def setBuiltin(value: String): Self = StObject.set(x, "builtin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCursorColor(value: String): Self = StObject.set(x, "cursorColor", value.asInstanceOf[js.Any])
+      inline def setCursorColor(value: String): Self = StObject.set(x, "cursorColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDef(value: String): Self = StObject.set(x, "def", value.asInstanceOf[js.Any])
+      inline def setDef(value: String): Self = StObject.set(x, "def", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditorBackground(value: String): Self = StObject.set(x, "editorBackground", value.asInstanceOf[js.Any])
+      inline def setEditorBackground(value: String): Self = StObject.set(x, "editorBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
+      inline def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftDrawerBackground(value: String): Self = StObject.set(x, "leftDrawerBackground", value.asInstanceOf[js.Any])
+      inline def setLeftDrawerBackground(value: String): Self = StObject.set(x, "leftDrawerBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeta(value: String): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+      inline def setMeta(value: String): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+      inline def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+      inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPunctuation(value: String): Self = StObject.set(x, "punctuation", value.asInstanceOf[js.Any])
+      inline def setPunctuation(value: String): Self = StObject.set(x, "punctuation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualifier(value: String): Self = StObject.set(x, "qualifier", value.asInstanceOf[js.Any])
+      inline def setQualifier(value: String): Self = StObject.set(x, "qualifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultBackground(value: String): Self = StObject.set(x, "resultBackground", value.asInstanceOf[js.Any])
+      inline def setResultBackground(value: String): Self = StObject.set(x, "resultBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightDrawerBackground(value: String): Self = StObject.set(x, "rightDrawerBackground", value.asInstanceOf[js.Any])
+      inline def setRightDrawerBackground(value: String): Self = StObject.set(x, "rightDrawerBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelection(value: String): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+      inline def setSelection(value: String): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+      inline def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setString2(value: String): Self = StObject.set(x, "string2", value.asInstanceOf[js.Any])
+      inline def setString2(value: String): Self = StObject.set(x, "string2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariable(value: String): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
+      inline def setVariable(value: String): Self = StObject.set(x, "variable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWs(value: String): Self = StObject.set(x, "ws", value.asInstanceOf[js.Any])
+      inline def setWs(value: String): Self = StObject.set(x, "ws", value.asInstanceOf[js.Any])
     }
   }
   
@@ -218,8 +191,7 @@ object renderPlaygroundPageMod {
   }
   object ISettings {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       editorDotcursorShape: CursorShape,
       editorDotfontFamily: String,
       editorDotfontSize: Double,
@@ -251,47 +223,33 @@ object renderPlaygroundPageMod {
       __obj.asInstanceOf[ISettings]
     }
     
-    @scala.inline
-    implicit class ISettingsMutableBuilder[Self <: ISettings] (val x: Self) extends AnyVal {
+    extension [Self <: ISettings](x: Self) {
       
-      @scala.inline
-      def setEditorDotcursorShape(value: CursorShape): Self = StObject.set(x, "editor.cursorShape", value.asInstanceOf[js.Any])
+      inline def setEditorDotcursorShape(value: CursorShape): Self = StObject.set(x, "editor.cursorShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditorDotfontFamily(value: String): Self = StObject.set(x, "editor.fontFamily", value.asInstanceOf[js.Any])
+      inline def setEditorDotfontFamily(value: String): Self = StObject.set(x, "editor.fontFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditorDotfontSize(value: Double): Self = StObject.set(x, "editor.fontSize", value.asInstanceOf[js.Any])
+      inline def setEditorDotfontSize(value: Double): Self = StObject.set(x, "editor.fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditorDotreuseHeaders(value: Boolean): Self = StObject.set(x, "editor.reuseHeaders", value.asInstanceOf[js.Any])
+      inline def setEditorDotreuseHeaders(value: Boolean): Self = StObject.set(x, "editor.reuseHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditorDottheme(value: Theme): Self = StObject.set(x, "editor.theme", value.asInstanceOf[js.Any])
+      inline def setEditorDottheme(value: Theme): Self = StObject.set(x, "editor.theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeneralDotbetaUpdates(value: Boolean): Self = StObject.set(x, "general.betaUpdates", value.asInstanceOf[js.Any])
+      inline def setGeneralDotbetaUpdates(value: Boolean): Self = StObject.set(x, "general.betaUpdates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestDotcredentials(value: String): Self = StObject.set(x, "request.credentials", value.asInstanceOf[js.Any])
+      inline def setRequestDotcredentials(value: String): Self = StObject.set(x, "request.credentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestDotglobalHeaders(value: StringDictionary[String]): Self = StObject.set(x, "request.globalHeaders", value.asInstanceOf[js.Any])
+      inline def setRequestDotglobalHeaders(value: StringDictionary[String]): Self = StObject.set(x, "request.globalHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaDotpollingDotenable(value: Boolean): Self = StObject.set(x, "schema.polling.enable", value.asInstanceOf[js.Any])
+      inline def setSchemaDotpollingDotenable(value: Boolean): Self = StObject.set(x, "schema.polling.enable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaDotpollingDotendpointFilter(value: String): Self = StObject.set(x, "schema.polling.endpointFilter", value.asInstanceOf[js.Any])
+      inline def setSchemaDotpollingDotendpointFilter(value: String): Self = StObject.set(x, "schema.polling.endpointFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaDotpollingDotinterval(value: Double): Self = StObject.set(x, "schema.polling.interval", value.asInstanceOf[js.Any])
+      inline def setSchemaDotpollingDotinterval(value: Double): Self = StObject.set(x, "schema.polling.interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTracingDothideTracingResponse(value: Boolean): Self = StObject.set(x, "tracing.hideTracingResponse", value.asInstanceOf[js.Any])
+      inline def setTracingDothideTracingResponse(value: Boolean): Self = StObject.set(x, "tracing.hideTracingResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTracingDottracingSupported(value: Boolean): Self = StObject.set(x, "tracing.tracingSupported", value.asInstanceOf[js.Any])
+      inline def setTracingDottracingSupported(value: Boolean): Self = StObject.set(x, "tracing.tracingSupported", value.asInstanceOf[js.Any])
     }
   }
   
@@ -301,17 +259,14 @@ object renderPlaygroundPageMod {
   }
   object IntrospectionResult {
     
-    @scala.inline
-    def apply(__schema: js.Any): IntrospectionResult = {
+    inline def apply(__schema: js.Any): IntrospectionResult = {
       val __obj = js.Dynamic.literal(__schema = __schema.asInstanceOf[js.Any])
       __obj.asInstanceOf[IntrospectionResult]
     }
     
-    @scala.inline
-    implicit class IntrospectionResultMutableBuilder[Self <: IntrospectionResult] (val x: Self) extends AnyVal {
+    extension [Self <: IntrospectionResult](x: Self) {
       
-      @scala.inline
-      def set__schema(value: js.Any): Self = StObject.set(x, "__schema", value.asInstanceOf[js.Any])
+      inline def set__schema(value: js.Any): Self = StObject.set(x, "__schema", value.asInstanceOf[js.Any])
     }
   }
   
@@ -337,71 +292,50 @@ object renderPlaygroundPageMod {
   }
   object MiddlewareOptions {
     
-    @scala.inline
-    def apply(): MiddlewareOptions = {
+    inline def apply(): MiddlewareOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MiddlewareOptions]
     }
     
-    @scala.inline
-    implicit class MiddlewareOptionsMutableBuilder[Self <: MiddlewareOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MiddlewareOptions](x: Self) {
       
-      @scala.inline
-      def setCodeTheme(value: EditorColours): Self = StObject.set(x, "codeTheme", value.asInstanceOf[js.Any])
+      inline def setCodeTheme(value: EditorColours): Self = StObject.set(x, "codeTheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeThemeUndefined: Self = StObject.set(x, "codeTheme", js.undefined)
+      inline def setCodeThemeUndefined: Self = StObject.set(x, "codeTheme", js.undefined)
       
-      @scala.inline
-      def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+      inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
       
-      @scala.inline
-      def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+      inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
-      @scala.inline
-      def setSchema(value: IntrospectionResult): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+      inline def setSchema(value: IntrospectionResult): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+      inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
       
-      @scala.inline
-      def setSettings(value: ISettings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: ISettings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
+      inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
       
-      @scala.inline
-      def setSubscriptionEndpoint(value: String): Self = StObject.set(x, "subscriptionEndpoint", value.asInstanceOf[js.Any])
+      inline def setSubscriptionEndpoint(value: String): Self = StObject.set(x, "subscriptionEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscriptionEndpointUndefined: Self = StObject.set(x, "subscriptionEndpoint", js.undefined)
+      inline def setSubscriptionEndpointUndefined: Self = StObject.set(x, "subscriptionEndpoint", js.undefined)
       
-      @scala.inline
-      def setTabs(value: js.Array[Tab]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
+      inline def setTabs(value: js.Array[Tab]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
+      inline def setTabsUndefined: Self = StObject.set(x, "tabs", js.undefined)
       
-      @scala.inline
-      def setTabsVarargs(value: Tab*): Self = StObject.set(x, "tabs", js.Array(value :_*))
+      inline def setTabsVarargs(value: Tab*): Self = StObject.set(x, "tabs", js.Array(value :_*))
       
-      @scala.inline
-      def setWorkspaceName(value: String): Self = StObject.set(x, "workspaceName", value.asInstanceOf[js.Any])
+      inline def setWorkspaceName(value: String): Self = StObject.set(x, "workspaceName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkspaceNameUndefined: Self = StObject.set(x, "workspaceName", js.undefined)
+      inline def setWorkspaceNameUndefined: Self = StObject.set(x, "workspaceName", js.undefined)
     }
   }
   
@@ -419,41 +353,30 @@ object renderPlaygroundPageMod {
   }
   object RenderPageOptions {
     
-    @scala.inline
-    def apply(): RenderPageOptions = {
+    inline def apply(): RenderPageOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RenderPageOptions]
     }
     
-    @scala.inline
-    implicit class RenderPageOptionsMutableBuilder[Self <: RenderPageOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RenderPageOptions](x: Self) {
       
-      @scala.inline
-      def setCdnUrl(value: String): Self = StObject.set(x, "cdnUrl", value.asInstanceOf[js.Any])
+      inline def setCdnUrl(value: String): Self = StObject.set(x, "cdnUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCdnUrlUndefined: Self = StObject.set(x, "cdnUrl", js.undefined)
+      inline def setCdnUrlUndefined: Self = StObject.set(x, "cdnUrl", js.undefined)
       
-      @scala.inline
-      def setFaviconUrl(value: String): Self = StObject.set(x, "faviconUrl", value.asInstanceOf[js.Any])
+      inline def setFaviconUrl(value: String): Self = StObject.set(x, "faviconUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFaviconUrlNull: Self = StObject.set(x, "faviconUrl", null)
+      inline def setFaviconUrlNull: Self = StObject.set(x, "faviconUrl", null)
       
-      @scala.inline
-      def setFaviconUrlUndefined: Self = StObject.set(x, "faviconUrl", js.undefined)
+      inline def setFaviconUrlUndefined: Self = StObject.set(x, "faviconUrl", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -473,47 +396,34 @@ object renderPlaygroundPageMod {
   }
   object Tab {
     
-    @scala.inline
-    def apply(endpoint: String, query: String): Tab = {
+    inline def apply(endpoint: String, query: String): Tab = {
       val __obj = js.Dynamic.literal(endpoint = endpoint.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
       __obj.asInstanceOf[Tab]
     }
     
-    @scala.inline
-    implicit class TabMutableBuilder[Self <: Tab] (val x: Self) extends AnyVal {
+    extension [Self <: Tab](x: Self) {
       
-      @scala.inline
-      def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponses(value: js.Array[String]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+      inline def setResponses(value: js.Array[String]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
+      inline def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
       
-      @scala.inline
-      def setResponsesVarargs(value: String*): Self = StObject.set(x, "responses", js.Array(value :_*))
+      inline def setResponsesVarargs(value: String*): Self = StObject.set(x, "responses", js.Array(value :_*))
       
-      @scala.inline
-      def setVariables(value: String): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+      inline def setVariables(value: String): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
+      inline def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)
     }
   }
   
@@ -524,10 +434,8 @@ object renderPlaygroundPageMod {
   trait Theme extends StObject
   object Theme {
     
-    @scala.inline
-    def dark: typings.graphqlPlaygroundHtml.graphqlPlaygroundHtmlStrings.dark = "dark".asInstanceOf[typings.graphqlPlaygroundHtml.graphqlPlaygroundHtmlStrings.dark]
+    inline def dark: typings.graphqlPlaygroundHtml.graphqlPlaygroundHtmlStrings.dark = "dark".asInstanceOf[typings.graphqlPlaygroundHtml.graphqlPlaygroundHtmlStrings.dark]
     
-    @scala.inline
-    def light: typings.graphqlPlaygroundHtml.graphqlPlaygroundHtmlStrings.light = "light".asInstanceOf[typings.graphqlPlaygroundHtml.graphqlPlaygroundHtmlStrings.light]
+    inline def light: typings.graphqlPlaygroundHtml.graphqlPlaygroundHtmlStrings.light = "light".asInstanceOf[typings.graphqlPlaygroundHtml.graphqlPlaygroundHtmlStrings.light]
   }
 }

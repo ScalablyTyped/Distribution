@@ -14,8 +14,7 @@ trait DomainInstance
 }
 object DomainInstance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     credentialListMappings: CredentialListMappingResource,
     delete: RestMethod,
     get: RestMethod,
@@ -27,13 +26,10 @@ object DomainInstance {
     __obj.asInstanceOf[DomainInstance]
   }
   
-  @scala.inline
-  implicit class DomainInstanceMutableBuilder[Self <: DomainInstance] (val x: Self) extends AnyVal {
+  extension [Self <: DomainInstance](x: Self) {
     
-    @scala.inline
-    def setCredentialListMappings(value: CredentialListMappingResource): Self = StObject.set(x, "credentialListMappings", value.asInstanceOf[js.Any])
+    inline def setCredentialListMappings(value: CredentialListMappingResource): Self = StObject.set(x, "credentialListMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAccessControlListMappings(value: IPAccessControlListMappingResource): Self = StObject.set(x, "ipAccessControlListMappings", value.asInstanceOf[js.Any])
+    inline def setIpAccessControlListMappings(value: IPAccessControlListMappingResource): Self = StObject.set(x, "ipAccessControlListMappings", value.asInstanceOf[js.Any])
   }
 }

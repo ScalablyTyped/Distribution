@@ -17,7 +17,7 @@ trait Characters extends StObject {
   
   def Delete(): Null = js.native
   
-  @JSName("Excel.Characters_typekey")
+  /* private */ @JSName("Excel.Characters_typekey")
   var ExcelDotCharacters_typekey: Characters = js.native
   
   val Font: typings.activexExcel.Excel.Font = js.native

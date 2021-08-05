@@ -33,64 +33,45 @@ trait SearchOptions extends StObject {
 }
 object SearchOptions {
   
-  @scala.inline
-  def apply(): SearchOptions = {
+  inline def apply(): SearchOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchOptions]
   }
   
-  @scala.inline
-  implicit class SearchOptionsMutableBuilder[Self <: SearchOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SearchOptions](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: String | js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: String | js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
     
-    @scala.inline
-    def setDerefAliases(value: Double): Self = StObject.set(x, "derefAliases", value.asInstanceOf[js.Any])
+    inline def setDerefAliases(value: Double): Self = StObject.set(x, "derefAliases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDerefAliasesUndefined: Self = StObject.set(x, "derefAliases", js.undefined)
+    inline def setDerefAliasesUndefined: Self = StObject.set(x, "derefAliases", js.undefined)
     
-    @scala.inline
-    def setFilter(value: String | Filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String | Filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setPaged(value: Boolean | PagePause): Self = StObject.set(x, "paged", value.asInstanceOf[js.Any])
+    inline def setPaged(value: Boolean | PagePause): Self = StObject.set(x, "paged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagedUndefined: Self = StObject.set(x, "paged", js.undefined)
+    inline def setPagedUndefined: Self = StObject.set(x, "paged", js.undefined)
     
-    @scala.inline
-    def setScope(value: base | one | sub): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: base | one | sub): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    @scala.inline
-    def setSizeLimit(value: Double): Self = StObject.set(x, "sizeLimit", value.asInstanceOf[js.Any])
+    inline def setSizeLimit(value: Double): Self = StObject.set(x, "sizeLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeLimitUndefined: Self = StObject.set(x, "sizeLimit", js.undefined)
+    inline def setSizeLimitUndefined: Self = StObject.set(x, "sizeLimit", js.undefined)
     
-    @scala.inline
-    def setTimeLimit(value: Double): Self = StObject.set(x, "timeLimit", value.asInstanceOf[js.Any])
+    inline def setTimeLimit(value: Double): Self = StObject.set(x, "timeLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeLimitUndefined: Self = StObject.set(x, "timeLimit", js.undefined)
+    inline def setTimeLimitUndefined: Self = StObject.set(x, "timeLimit", js.undefined)
     
-    @scala.inline
-    def setTypesOnly(value: Boolean): Self = StObject.set(x, "typesOnly", value.asInstanceOf[js.Any])
+    inline def setTypesOnly(value: Boolean): Self = StObject.set(x, "typesOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesOnlyUndefined: Self = StObject.set(x, "typesOnly", js.undefined)
+    inline def setTypesOnlyUndefined: Self = StObject.set(x, "typesOnly", js.undefined)
   }
 }

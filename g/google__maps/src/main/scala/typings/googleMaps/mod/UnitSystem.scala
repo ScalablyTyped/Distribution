@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait UnitSystem extends StObject
 object UnitSystem {
   
-  @scala.inline
-  def imperial: typings.googleMaps.googleMapsStrings.imperial = "imperial".asInstanceOf[typings.googleMaps.googleMapsStrings.imperial]
+  inline def imperial: typings.googleMaps.googleMapsStrings.imperial = "imperial".asInstanceOf[typings.googleMaps.googleMapsStrings.imperial]
   
-  @scala.inline
-  def metric: typings.googleMaps.googleMapsStrings.metric = "metric".asInstanceOf[typings.googleMaps.googleMapsStrings.metric]
+  inline def metric: typings.googleMaps.googleMapsStrings.metric = "metric".asInstanceOf[typings.googleMaps.googleMapsStrings.metric]
 }

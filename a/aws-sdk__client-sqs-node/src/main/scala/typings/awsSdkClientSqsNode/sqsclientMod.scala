@@ -16,7 +16,7 @@ object sqsclientMod {
   class SQSClient protected () extends StObject {
     def this(configuration: SQSConfiguration) = this()
     
-    val config: SQSResolvedConfiguration = js.native
+    /* protected */ val config: SQSResolvedConfiguration = js.native
     
     def destroy(): Unit = js.native
     

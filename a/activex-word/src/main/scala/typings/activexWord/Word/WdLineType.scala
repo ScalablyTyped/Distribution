@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdLineType extends StObject
 object WdLineType {
   
-  @scala.inline
-  def wdTableRow: `1` = 1.asInstanceOf[`1`]
+  inline def wdTableRow: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdTextLine: `0` = 0.asInstanceOf[`0`]
+  inline def wdTextLine: `0` = 0.asInstanceOf[`0`]
 }

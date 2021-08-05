@@ -33,31 +33,23 @@ trait IterativeCalculationData extends StObject {
 }
 object IterativeCalculationData {
   
-  @scala.inline
-  def apply(): IterativeCalculationData = {
+  inline def apply(): IterativeCalculationData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IterativeCalculationData]
   }
   
-  @scala.inline
-  implicit class IterativeCalculationDataMutableBuilder[Self <: IterativeCalculationData] (val x: Self) extends AnyVal {
+  extension [Self <: IterativeCalculationData](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setMaxChange(value: Double): Self = StObject.set(x, "maxChange", value.asInstanceOf[js.Any])
+    inline def setMaxChange(value: Double): Self = StObject.set(x, "maxChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxChangeUndefined: Self = StObject.set(x, "maxChange", js.undefined)
+    inline def setMaxChangeUndefined: Self = StObject.set(x, "maxChange", js.undefined)
     
-    @scala.inline
-    def setMaxIteration(value: Double): Self = StObject.set(x, "maxIteration", value.asInstanceOf[js.Any])
+    inline def setMaxIteration(value: Double): Self = StObject.set(x, "maxIteration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxIterationUndefined: Self = StObject.set(x, "maxIteration", js.undefined)
+    inline def setMaxIterationUndefined: Self = StObject.set(x, "maxIteration", js.undefined)
   }
 }

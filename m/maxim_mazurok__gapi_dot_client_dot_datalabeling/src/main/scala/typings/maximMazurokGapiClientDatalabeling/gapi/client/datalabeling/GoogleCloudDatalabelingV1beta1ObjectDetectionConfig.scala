@@ -14,25 +14,19 @@ trait GoogleCloudDatalabelingV1beta1ObjectDetectionConfig extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1ObjectDetectionConfig {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1ObjectDetectionConfig = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1ObjectDetectionConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1ObjectDetectionConfig]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1ObjectDetectionConfigMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1ObjectDetectionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1ObjectDetectionConfig](x: Self) {
     
-    @scala.inline
-    def setAnnotationSpecSet(value: String): Self = StObject.set(x, "annotationSpecSet", value.asInstanceOf[js.Any])
+    inline def setAnnotationSpecSet(value: String): Self = StObject.set(x, "annotationSpecSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationSpecSetUndefined: Self = StObject.set(x, "annotationSpecSet", js.undefined)
+    inline def setAnnotationSpecSetUndefined: Self = StObject.set(x, "annotationSpecSet", js.undefined)
     
-    @scala.inline
-    def setExtractionFrameRate(value: Double): Self = StObject.set(x, "extractionFrameRate", value.asInstanceOf[js.Any])
+    inline def setExtractionFrameRate(value: Double): Self = StObject.set(x, "extractionFrameRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtractionFrameRateUndefined: Self = StObject.set(x, "extractionFrameRate", js.undefined)
+    inline def setExtractionFrameRateUndefined: Self = StObject.set(x, "extractionFrameRate", js.undefined)
   }
 }

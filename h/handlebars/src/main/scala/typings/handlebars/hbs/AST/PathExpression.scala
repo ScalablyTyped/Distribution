@@ -21,32 +21,24 @@ trait PathExpression
 }
 object PathExpression {
   
-  @scala.inline
-  def apply(data: Boolean, depth: Double, loc: SourceLocation, original: String, parts: js.Array[String]): PathExpression = {
+  inline def apply(data: Boolean, depth: Double, loc: SourceLocation, original: String, parts: js.Array[String]): PathExpression = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], original = original.asInstanceOf[js.Any], parts = parts.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("PathExpression")
     __obj.asInstanceOf[PathExpression]
   }
   
-  @scala.inline
-  implicit class PathExpressionMutableBuilder[Self <: PathExpression] (val x: Self) extends AnyVal {
+  extension [Self <: PathExpression](x: Self) {
     
-    @scala.inline
-    def setData(value: Boolean): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Boolean): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginal(value: String): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
+    inline def setOriginal(value: String): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParts(value: js.Array[String]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
+    inline def setParts(value: js.Array[String]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartsVarargs(value: String*): Self = StObject.set(x, "parts", js.Array(value :_*))
+    inline def setPartsVarargs(value: String*): Self = StObject.set(x, "parts", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: typings.handlebars.handlebarsStrings.PathExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.handlebars.handlebarsStrings.PathExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

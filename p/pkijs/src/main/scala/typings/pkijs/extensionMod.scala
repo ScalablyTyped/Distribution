@@ -39,13 +39,10 @@ object extensionMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
-    @scala.inline
-    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    inline def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   trait Extension extends StObject {
@@ -66,8 +63,7 @@ object extensionMod {
   }
   object Extension {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       critical: Boolean,
       extnID: String,
       extnValue: OctetString,
@@ -79,32 +75,23 @@ object extensionMod {
       __obj.asInstanceOf[Extension]
     }
     
-    @scala.inline
-    implicit class ExtensionMutableBuilder[Self <: Extension] (val x: Self) extends AnyVal {
+    extension [Self <: Extension](x: Self) {
       
-      @scala.inline
-      def setCritical(value: Boolean): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
+      inline def setCritical(value: Boolean): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtnID(value: String): Self = StObject.set(x, "extnID", value.asInstanceOf[js.Any])
+      inline def setExtnID(value: String): Self = StObject.set(x, "extnID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtnValue(value: OctetString): Self = StObject.set(x, "extnValue", value.asInstanceOf[js.Any])
+      inline def setExtnValue(value: OctetString): Self = StObject.set(x, "extnValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
+      inline def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setParsedValue(value: js.Any): Self = StObject.set(x, "parsedValue", value.asInstanceOf[js.Any])
+      inline def setParsedValue(value: js.Any): Self = StObject.set(x, "parsedValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParsedValueUndefined: Self = StObject.set(x, "parsedValue", js.undefined)
+      inline def setParsedValueUndefined: Self = StObject.set(x, "parsedValue", js.undefined)
       
-      @scala.inline
-      def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
+      inline def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
     }
   }
 }

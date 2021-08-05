@@ -10,13 +10,10 @@ object skipduplicatesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[A](src: typings.baconjs.observableMod.default[A]): typings.baconjs.observableMod.default[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any]).asInstanceOf[typings.baconjs.observableMod.default[A]]
-  @scala.inline
-  def default[A](src: typings.baconjs.observableMod.default[A], isEqual: Equals[A]): typings.baconjs.observableMod.default[A] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any], isEqual.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.default[A]]
+  inline def default[A](src: typings.baconjs.observableMod.default[A]): typings.baconjs.observableMod.default[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any]).asInstanceOf[typings.baconjs.observableMod.default[A]]
+  inline def default[A](src: typings.baconjs.observableMod.default[A], isEqual: Equals[A]): typings.baconjs.observableMod.default[A] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(src.asInstanceOf[js.Any], isEqual.asInstanceOf[js.Any])).asInstanceOf[typings.baconjs.observableMod.default[A]]
   
-  @scala.inline
-  def equals_[A](a: A, b: A): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def equals_[A](a: A, b: A): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   type Equals[A] = js.Function2[/* left */ A, /* right */ A, Boolean]
 }

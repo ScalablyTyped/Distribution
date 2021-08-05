@@ -27,14 +27,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def AggregateError(message: String): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("AggregateError")(message.asInstanceOf[js.Any]).asInstanceOf[Error]
-  @scala.inline
-  def AggregateError(message: String, innerError: Unit, skipIfAlreadyAggregate: Boolean): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("AggregateError")(message.asInstanceOf[js.Any], innerError.asInstanceOf[js.Any], skipIfAlreadyAggregate.asInstanceOf[js.Any])).asInstanceOf[Error]
-  @scala.inline
-  def AggregateError(message: String, innerError: Error): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("AggregateError")(message.asInstanceOf[js.Any], innerError.asInstanceOf[js.Any])).asInstanceOf[Error]
-  @scala.inline
-  def AggregateError(message: String, innerError: Error, skipIfAlreadyAggregate: Boolean): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("AggregateError")(message.asInstanceOf[js.Any], innerError.asInstanceOf[js.Any], skipIfAlreadyAggregate.asInstanceOf[js.Any])).asInstanceOf[Error]
+  inline def AggregateError(message: String): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("AggregateError")(message.asInstanceOf[js.Any]).asInstanceOf[Error]
+  inline def AggregateError(message: String, innerError: Unit, skipIfAlreadyAggregate: Boolean): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("AggregateError")(message.asInstanceOf[js.Any], innerError.asInstanceOf[js.Any], skipIfAlreadyAggregate.asInstanceOf[js.Any])).asInstanceOf[Error]
+  inline def AggregateError(message: String, innerError: Error): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("AggregateError")(message.asInstanceOf[js.Any], innerError.asInstanceOf[js.Any])).asInstanceOf[Error]
+  inline def AggregateError(message: String, innerError: Error, skipIfAlreadyAggregate: Boolean): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("AggregateError")(message.asInstanceOf[js.Any], innerError.asInstanceOf[js.Any], skipIfAlreadyAggregate.asInstanceOf[js.Any])).asInstanceOf[Error]
   
   @JSImport("aurelia-pal", "DOM")
   @js.native
@@ -48,17 +44,14 @@ object mod {
   @js.native
   val PLATFORM_ : Platform = js.native
   
-  @scala.inline
-  def initializePAL(callback: js.Function3[/* platform */ Platform, /* feature */ Feature, /* dom */ Dom, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializePAL")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def initializePAL(callback: js.Function3[/* platform */ Platform, /* feature */ Feature, /* dom */ Dom, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializePAL")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("aurelia-pal", "isInitialized")
   @js.native
   def isInitialized: js.Any = js.native
-  @scala.inline
-  def isInitialized_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isInitialized")(x.asInstanceOf[js.Any])
+  inline def isInitialized_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isInitialized")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def reset(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[js.Any]
+  inline def reset(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[js.Any]
   
   @js.native
   trait Dom extends StObject {
@@ -294,26 +287,20 @@ object mod {
   }
   object Feature {
     
-    @scala.inline
-    def apply(htmlTemplateElement: Boolean, mutationObserver: Boolean, scopedCSS: Boolean, shadowDOM: Boolean): Feature = {
+    inline def apply(htmlTemplateElement: Boolean, mutationObserver: Boolean, scopedCSS: Boolean, shadowDOM: Boolean): Feature = {
       val __obj = js.Dynamic.literal(htmlTemplateElement = htmlTemplateElement.asInstanceOf[js.Any], mutationObserver = mutationObserver.asInstanceOf[js.Any], scopedCSS = scopedCSS.asInstanceOf[js.Any], shadowDOM = shadowDOM.asInstanceOf[js.Any])
       __obj.asInstanceOf[Feature]
     }
     
-    @scala.inline
-    implicit class FeatureMutableBuilder[Self <: Feature] (val x: Self) extends AnyVal {
+    extension [Self <: Feature](x: Self) {
       
-      @scala.inline
-      def setHtmlTemplateElement(value: Boolean): Self = StObject.set(x, "htmlTemplateElement", value.asInstanceOf[js.Any])
+      inline def setHtmlTemplateElement(value: Boolean): Self = StObject.set(x, "htmlTemplateElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMutationObserver(value: Boolean): Self = StObject.set(x, "mutationObserver", value.asInstanceOf[js.Any])
+      inline def setMutationObserver(value: Boolean): Self = StObject.set(x, "mutationObserver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopedCSS(value: Boolean): Self = StObject.set(x, "scopedCSS", value.asInstanceOf[js.Any])
+      inline def setScopedCSS(value: Boolean): Self = StObject.set(x, "scopedCSS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShadowDOM(value: Boolean): Self = StObject.set(x, "shadowDOM", value.asInstanceOf[js.Any])
+      inline def setShadowDOM(value: Boolean): Self = StObject.set(x, "shadowDOM", value.asInstanceOf[js.Any])
     }
   }
   
@@ -331,29 +318,22 @@ object mod {
   }
   object ModuleNameOptions {
     
-    @scala.inline
-    def apply(): ModuleNameOptions = {
+    inline def apply(): ModuleNameOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ModuleNameOptions]
     }
     
-    @scala.inline
-    implicit class ModuleNameOptionsMutableBuilder[Self <: ModuleNameOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ModuleNameOptions](x: Self) {
       
-      @scala.inline
-      def setChunk(value: String): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
+      inline def setChunk(value: String): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunkUndefined: Self = StObject.set(x, "chunk", js.undefined)
+      inline def setChunkUndefined: Self = StObject.set(x, "chunk", js.undefined)
       
-      @scala.inline
-      def setExports(value: js.Array[String]): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
+      inline def setExports(value: js.Array[String]): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportsUndefined: Self = StObject.set(x, "exports", js.undefined)
+      inline def setExportsUndefined: Self = StObject.set(x, "exports", js.undefined)
       
-      @scala.inline
-      def setExportsVarargs(value: String*): Self = StObject.set(x, "exports", js.Array(value :_*))
+      inline def setExportsVarargs(value: String*): Self = StObject.set(x, "exports", js.Array(value :_*))
     }
   }
   

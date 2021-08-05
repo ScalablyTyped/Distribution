@@ -18,19 +18,15 @@ trait AssociateRoleToGroupRequest extends StObject {
 }
 object AssociateRoleToGroupRequest {
   
-  @scala.inline
-  def apply(GroupId: string, RoleArn: string): AssociateRoleToGroupRequest = {
+  inline def apply(GroupId: string, RoleArn: string): AssociateRoleToGroupRequest = {
     val __obj = js.Dynamic.literal(GroupId = GroupId.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateRoleToGroupRequest]
   }
   
-  @scala.inline
-  implicit class AssociateRoleToGroupRequestMutableBuilder[Self <: AssociateRoleToGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateRoleToGroupRequest](x: Self) {
     
-    @scala.inline
-    def setGroupId(value: string): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: string): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: string): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: string): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
   }
 }

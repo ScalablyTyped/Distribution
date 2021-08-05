@@ -101,13 +101,10 @@ object mod {
     @JSImport("eventemitter2", "EventEmitter2.defaultMaxListeners")
     @js.native
     def defaultMaxListeners: Double = js.native
-    @scala.inline
-    def defaultMaxListeners_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultMaxListeners")(x.asInstanceOf[js.Any])
+    inline def defaultMaxListeners_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultMaxListeners")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def once(emitter: EventEmitter2, event: event | eventNS): CancelablePromise[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[CancelablePromise[js.Array[js.Any]]]
-    @scala.inline
-    def once(emitter: EventEmitter2, event: event | eventNS, options: OnceOptions): CancelablePromise[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CancelablePromise[js.Array[js.Any]]]
+    inline def once(emitter: EventEmitter2, event: event | eventNS): CancelablePromise[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[CancelablePromise[js.Array[js.Any]]]
+    inline def once(emitter: EventEmitter2, event: event | eventNS, options: OnceOptions): CancelablePromise[js.Array[js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CancelablePromise[js.Array[js.Any]]]
   }
   
   @js.native
@@ -163,56 +160,40 @@ object mod {
   }
   object ConstructorOptions {
     
-    @scala.inline
-    def apply(): ConstructorOptions = {
+    inline def apply(): ConstructorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConstructorOptions]
     }
     
-    @scala.inline
-    implicit class ConstructorOptionsMutableBuilder[Self <: ConstructorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConstructorOptions](x: Self) {
       
-      @scala.inline
-      def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+      inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+      inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
       
-      @scala.inline
-      def setIgnoreErrors(value: Boolean): Self = StObject.set(x, "ignoreErrors", value.asInstanceOf[js.Any])
+      inline def setIgnoreErrors(value: Boolean): Self = StObject.set(x, "ignoreErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreErrorsUndefined: Self = StObject.set(x, "ignoreErrors", js.undefined)
+      inline def setIgnoreErrorsUndefined: Self = StObject.set(x, "ignoreErrors", js.undefined)
       
-      @scala.inline
-      def setMaxListeners(value: Double): Self = StObject.set(x, "maxListeners", value.asInstanceOf[js.Any])
+      inline def setMaxListeners(value: Double): Self = StObject.set(x, "maxListeners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxListenersUndefined: Self = StObject.set(x, "maxListeners", js.undefined)
+      inline def setMaxListenersUndefined: Self = StObject.set(x, "maxListeners", js.undefined)
       
-      @scala.inline
-      def setNewListener(value: Boolean): Self = StObject.set(x, "newListener", value.asInstanceOf[js.Any])
+      inline def setNewListener(value: Boolean): Self = StObject.set(x, "newListener", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewListenerUndefined: Self = StObject.set(x, "newListener", js.undefined)
+      inline def setNewListenerUndefined: Self = StObject.set(x, "newListener", js.undefined)
       
-      @scala.inline
-      def setRemoveListener(value: Boolean): Self = StObject.set(x, "removeListener", value.asInstanceOf[js.Any])
+      inline def setRemoveListener(value: Boolean): Self = StObject.set(x, "removeListener", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveListenerUndefined: Self = StObject.set(x, "removeListener", js.undefined)
+      inline def setRemoveListenerUndefined: Self = StObject.set(x, "removeListener", js.undefined)
       
-      @scala.inline
-      def setVerboseMemoryLeak(value: Boolean): Self = StObject.set(x, "verboseMemoryLeak", value.asInstanceOf[js.Any])
+      inline def setVerboseMemoryLeak(value: Boolean): Self = StObject.set(x, "verboseMemoryLeak", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseMemoryLeakUndefined: Self = StObject.set(x, "verboseMemoryLeak", js.undefined)
+      inline def setVerboseMemoryLeakUndefined: Self = StObject.set(x, "verboseMemoryLeak", js.undefined)
       
-      @scala.inline
-      def setWildcard(value: Boolean): Self = StObject.set(x, "wildcard", value.asInstanceOf[js.Any])
+      inline def setWildcard(value: Boolean): Self = StObject.set(x, "wildcard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWildcardUndefined: Self = StObject.set(x, "wildcard", js.undefined)
+      inline def setWildcardUndefined: Self = StObject.set(x, "wildcard", js.undefined)
     }
   }
   
@@ -226,20 +207,16 @@ object mod {
   }
   object GeneralEventEmitter {
     
-    @scala.inline
-    def apply(addEventListener: js.Function, removeEventListener: js.Function): GeneralEventEmitter = {
+    inline def apply(addEventListener: js.Function, removeEventListener: js.Function): GeneralEventEmitter = {
       val __obj = js.Dynamic.literal(addEventListener = addEventListener.asInstanceOf[js.Any], removeEventListener = removeEventListener.asInstanceOf[js.Any])
       __obj.asInstanceOf[GeneralEventEmitter]
     }
     
-    @scala.inline
-    implicit class GeneralEventEmitterMutableBuilder[Self <: GeneralEventEmitter] (val x: Self) extends AnyVal {
+    extension [Self <: GeneralEventEmitter](x: Self) {
       
-      @scala.inline
-      def setAddEventListener(value: js.Function): Self = StObject.set(x, "addEventListener", value.asInstanceOf[js.Any])
+      inline def setAddEventListener(value: js.Function): Self = StObject.set(x, "addEventListener", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveEventListener(value: js.Function): Self = StObject.set(x, "removeEventListener", value.asInstanceOf[js.Any])
+      inline def setRemoveEventListener(value: js.Function): Self = StObject.set(x, "removeEventListener", value.asInstanceOf[js.Any])
     }
   }
   
@@ -253,29 +230,22 @@ object mod {
   }
   object ListenToOptions {
     
-    @scala.inline
-    def apply(reducers: js.Function | js.Object): ListenToOptions = {
+    inline def apply(reducers: js.Function | js.Object): ListenToOptions = {
       val __obj = js.Dynamic.literal(reducers = reducers.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListenToOptions]
     }
     
-    @scala.inline
-    implicit class ListenToOptionsMutableBuilder[Self <: ListenToOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ListenToOptions](x: Self) {
       
-      @scala.inline
-      def setOff(value: (/* event */ event | eventNS, /* handler */ js.Function) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
+      inline def setOff(value: (/* event */ event | eventNS, /* handler */ js.Function) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOffUndefined: Self = StObject.set(x, "off", js.undefined)
+      inline def setOffUndefined: Self = StObject.set(x, "off", js.undefined)
       
-      @scala.inline
-      def setOn(value: (/* event */ event | eventNS, /* handler */ js.Function) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (/* event */ event | eventNS, /* handler */ js.Function) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
+      inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
       
-      @scala.inline
-      def setReducers(value: js.Function | js.Object): Self = StObject.set(x, "reducers", value.asInstanceOf[js.Any])
+      inline def setReducers(value: js.Function | js.Object): Self = StObject.set(x, "reducers", value.asInstanceOf[js.Any])
     }
   }
   
@@ -293,8 +263,7 @@ object mod {
   }
   object Listener {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       emitter: EventEmitter2,
       event: event | eventNS,
       listener: /* repeated */ js.Any => Unit,
@@ -304,23 +273,17 @@ object mod {
       __obj.asInstanceOf[Listener]
     }
     
-    @scala.inline
-    implicit class ListenerMutableBuilder[Self <: Listener] (val x: Self) extends AnyVal {
+    extension [Self <: Listener](x: Self) {
       
-      @scala.inline
-      def setEmitter(value: EventEmitter2): Self = StObject.set(x, "emitter", value.asInstanceOf[js.Any])
+      inline def setEmitter(value: EventEmitter2): Self = StObject.set(x, "emitter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvent(value: event | eventNS): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: event | eventNS): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventVarargs(value: event*): Self = StObject.set(x, "event", js.Array(value :_*))
+      inline def setEventVarargs(value: event*): Self = StObject.set(x, "event", js.Array(value :_*))
       
-      @scala.inline
-      def setListener(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "listener", js.Any.fromFunction1(value))
+      inline def setListener(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "listener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOff(value: () => Listener): Self = StObject.set(x, "off", js.Any.fromFunction0(value))
+      inline def setOff(value: () => Listener): Self = StObject.set(x, "off", js.Any.fromFunction0(value))
     }
   }
   
@@ -338,38 +301,28 @@ object mod {
   }
   object OnOptions {
     
-    @scala.inline
-    def apply(): OnOptions = {
+    inline def apply(): OnOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OnOptions]
     }
     
-    @scala.inline
-    implicit class OnOptionsMutableBuilder[Self <: OnOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OnOptions](x: Self) {
       
-      @scala.inline
-      def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
-      @scala.inline
-      def setNextTick(value: Boolean): Self = StObject.set(x, "nextTick", value.asInstanceOf[js.Any])
+      inline def setNextTick(value: Boolean): Self = StObject.set(x, "nextTick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTickUndefined: Self = StObject.set(x, "nextTick", js.undefined)
+      inline def setNextTickUndefined: Self = StObject.set(x, "nextTick", js.undefined)
       
-      @scala.inline
-      def setObjectify(value: Boolean): Self = StObject.set(x, "objectify", value.asInstanceOf[js.Any])
+      inline def setObjectify(value: Boolean): Self = StObject.set(x, "objectify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectifyUndefined: Self = StObject.set(x, "objectify", js.undefined)
+      inline def setObjectifyUndefined: Self = StObject.set(x, "objectify", js.undefined)
       
-      @scala.inline
-      def setPromisify(value: Boolean): Self = StObject.set(x, "promisify", value.asInstanceOf[js.Any])
+      inline def setPromisify(value: Boolean): Self = StObject.set(x, "promisify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromisifyUndefined: Self = StObject.set(x, "promisify", js.undefined)
+      inline def setPromisifyUndefined: Self = StObject.set(x, "promisify", js.undefined)
     }
   }
   
@@ -392,23 +345,18 @@ object mod {
   }
   object OnceOptions {
     
-    @scala.inline
-    def apply(Promise: js.Function, overload: Boolean, timeout: Double): OnceOptions = {
+    inline def apply(Promise: js.Function, overload: Boolean, timeout: Double): OnceOptions = {
       val __obj = js.Dynamic.literal(Promise = Promise.asInstanceOf[js.Any], overload = overload.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnceOptions]
     }
     
-    @scala.inline
-    implicit class OnceOptionsMutableBuilder[Self <: OnceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OnceOptions](x: Self) {
       
-      @scala.inline
-      def setOverload(value: Boolean): Self = StObject.set(x, "overload", value.asInstanceOf[js.Any])
+      inline def setOverload(value: Boolean): Self = StObject.set(x, "overload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromise(value: js.Function): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: js.Function): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     }
   }
   
@@ -448,8 +396,7 @@ object mod {
   }
   object WaitForOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Promise: js.Function,
       filter: /* repeated */ js.Any => Boolean,
       handleError: Boolean,
@@ -460,23 +407,17 @@ object mod {
       __obj.asInstanceOf[WaitForOptions]
     }
     
-    @scala.inline
-    implicit class WaitForOptionsMutableBuilder[Self <: WaitForOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WaitForOptions](x: Self) {
       
-      @scala.inline
-      def setFilter(value: /* repeated */ js.Any => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: /* repeated */ js.Any => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHandleError(value: Boolean): Self = StObject.set(x, "handleError", value.asInstanceOf[js.Any])
+      inline def setHandleError(value: Boolean): Self = StObject.set(x, "handleError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverload(value: Boolean): Self = StObject.set(x, "overload", value.asInstanceOf[js.Any])
+      inline def setOverload(value: Boolean): Self = StObject.set(x, "overload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromise(value: js.Function): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: js.Function): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     }
   }
   

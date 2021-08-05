@@ -18,8 +18,7 @@ trait WheelOption extends StObject {
 }
 object WheelOption {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     adjustTime: Double,
     rotate: Double,
     selectedIndex: Double,
@@ -30,22 +29,16 @@ object WheelOption {
     __obj.asInstanceOf[WheelOption]
   }
   
-  @scala.inline
-  implicit class WheelOptionMutableBuilder[Self <: WheelOption] (val x: Self) extends AnyVal {
+  extension [Self <: WheelOption](x: Self) {
     
-    @scala.inline
-    def setAdjustTime(value: Double): Self = StObject.set(x, "adjustTime", value.asInstanceOf[js.Any])
+    inline def setAdjustTime(value: Double): Self = StObject.set(x, "adjustTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+    inline def setRotate(value: Double): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
+    inline def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWheelItemClass(value: String): Self = StObject.set(x, "wheelItemClass", value.asInstanceOf[js.Any])
+    inline def setWheelItemClass(value: String): Self = StObject.set(x, "wheelItemClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWheelWrapperClass(value: String): Self = StObject.set(x, "wheelWrapperClass", value.asInstanceOf[js.Any])
+    inline def setWheelWrapperClass(value: String): Self = StObject.set(x, "wheelWrapperClass", value.asInstanceOf[js.Any])
   }
 }

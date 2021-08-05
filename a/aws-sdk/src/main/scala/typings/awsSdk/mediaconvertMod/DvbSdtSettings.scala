@@ -28,37 +28,27 @@ trait DvbSdtSettings extends StObject {
 }
 object DvbSdtSettings {
   
-  @scala.inline
-  def apply(): DvbSdtSettings = {
+  inline def apply(): DvbSdtSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DvbSdtSettings]
   }
   
-  @scala.inline
-  implicit class DvbSdtSettingsMutableBuilder[Self <: DvbSdtSettings] (val x: Self) extends AnyVal {
+  extension [Self <: DvbSdtSettings](x: Self) {
     
-    @scala.inline
-    def setOutputSdt(value: OutputSdt): Self = StObject.set(x, "OutputSdt", value.asInstanceOf[js.Any])
+    inline def setOutputSdt(value: OutputSdt): Self = StObject.set(x, "OutputSdt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputSdtUndefined: Self = StObject.set(x, "OutputSdt", js.undefined)
+    inline def setOutputSdtUndefined: Self = StObject.set(x, "OutputSdt", js.undefined)
     
-    @scala.inline
-    def setSdtInterval(value: integerMin25Max2000): Self = StObject.set(x, "SdtInterval", value.asInstanceOf[js.Any])
+    inline def setSdtInterval(value: integerMin25Max2000): Self = StObject.set(x, "SdtInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSdtIntervalUndefined: Self = StObject.set(x, "SdtInterval", js.undefined)
+    inline def setSdtIntervalUndefined: Self = StObject.set(x, "SdtInterval", js.undefined)
     
-    @scala.inline
-    def setServiceName(value: stringMin1Max256): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: stringMin1Max256): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNameUndefined: Self = StObject.set(x, "ServiceName", js.undefined)
+    inline def setServiceNameUndefined: Self = StObject.set(x, "ServiceName", js.undefined)
     
-    @scala.inline
-    def setServiceProviderName(value: stringMin1Max256): Self = StObject.set(x, "ServiceProviderName", value.asInstanceOf[js.Any])
+    inline def setServiceProviderName(value: stringMin1Max256): Self = StObject.set(x, "ServiceProviderName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceProviderNameUndefined: Self = StObject.set(x, "ServiceProviderName", js.undefined)
+    inline def setServiceProviderNameUndefined: Self = StObject.set(x, "ServiceProviderName", js.undefined)
   }
 }

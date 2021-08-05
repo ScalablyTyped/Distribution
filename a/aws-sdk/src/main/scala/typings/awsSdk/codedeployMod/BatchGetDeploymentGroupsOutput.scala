@@ -18,28 +18,21 @@ trait BatchGetDeploymentGroupsOutput extends StObject {
 }
 object BatchGetDeploymentGroupsOutput {
   
-  @scala.inline
-  def apply(): BatchGetDeploymentGroupsOutput = {
+  inline def apply(): BatchGetDeploymentGroupsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchGetDeploymentGroupsOutput]
   }
   
-  @scala.inline
-  implicit class BatchGetDeploymentGroupsOutputMutableBuilder[Self <: BatchGetDeploymentGroupsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetDeploymentGroupsOutput](x: Self) {
     
-    @scala.inline
-    def setDeploymentGroupsInfo(value: DeploymentGroupInfoList): Self = StObject.set(x, "deploymentGroupsInfo", value.asInstanceOf[js.Any])
+    inline def setDeploymentGroupsInfo(value: DeploymentGroupInfoList): Self = StObject.set(x, "deploymentGroupsInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentGroupsInfoUndefined: Self = StObject.set(x, "deploymentGroupsInfo", js.undefined)
+    inline def setDeploymentGroupsInfoUndefined: Self = StObject.set(x, "deploymentGroupsInfo", js.undefined)
     
-    @scala.inline
-    def setDeploymentGroupsInfoVarargs(value: DeploymentGroupInfo*): Self = StObject.set(x, "deploymentGroupsInfo", js.Array(value :_*))
+    inline def setDeploymentGroupsInfoVarargs(value: DeploymentGroupInfo*): Self = StObject.set(x, "deploymentGroupsInfo", js.Array(value :_*))
     
-    @scala.inline
-    def setErrorMessage(value: ErrorMessage): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: ErrorMessage): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
   }
 }

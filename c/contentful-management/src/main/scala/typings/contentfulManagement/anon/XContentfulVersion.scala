@@ -10,19 +10,15 @@ trait XContentfulVersion extends StObject {
 }
 object XContentfulVersion {
   
-  @scala.inline
-  def apply(): XContentfulVersion = {
+  inline def apply(): XContentfulVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[XContentfulVersion]
   }
   
-  @scala.inline
-  implicit class XContentfulVersionMutableBuilder[Self <: XContentfulVersion] (val x: Self) extends AnyVal {
+  extension [Self <: XContentfulVersion](x: Self) {
     
-    @scala.inline
-    def `setX-Contentful-Version`(value: Double): Self = StObject.set(x, "X-Contentful-Version", value.asInstanceOf[js.Any])
+    inline def `setX-Contentful-Version`(value: Double): Self = StObject.set(x, "X-Contentful-Version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setX-Contentful-VersionUndefined`: Self = StObject.set(x, "X-Contentful-Version", js.undefined)
+    inline def `setX-Contentful-VersionUndefined`: Self = StObject.set(x, "X-Contentful-Version", js.undefined)
   }
 }

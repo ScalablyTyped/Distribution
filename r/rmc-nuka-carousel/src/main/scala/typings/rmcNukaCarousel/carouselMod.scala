@@ -44,8 +44,7 @@ object carouselMod {
     @JSImport("rmc-nuka-carousel/es/carousel", "default.defaultProps")
     @js.native
     def defaultProps: ICarouselProps = js.native
-    @scala.inline
-    def defaultProps_=(x: ICarouselProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: ICarouselProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -224,185 +223,126 @@ object carouselMod {
   }
   object ICarouselProps {
     
-    @scala.inline
-    def apply(): ICarouselProps = {
+    inline def apply(): ICarouselProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICarouselProps]
     }
     
-    @scala.inline
-    implicit class ICarouselPropsMutableBuilder[Self <: ICarouselProps] (val x: Self) extends AnyVal {
+    extension [Self <: ICarouselProps](x: Self) {
       
-      @scala.inline
-      def setAfterSlide(value: /* index */ Double => Unit): Self = StObject.set(x, "afterSlide", js.Any.fromFunction1(value))
+      inline def setAfterSlide(value: /* index */ Double => Unit): Self = StObject.set(x, "afterSlide", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAfterSlideUndefined: Self = StObject.set(x, "afterSlide", js.undefined)
+      inline def setAfterSlideUndefined: Self = StObject.set(x, "afterSlide", js.undefined)
       
-      @scala.inline
-      def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
+      inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoplayInterval(value: Double): Self = StObject.set(x, "autoplayInterval", value.asInstanceOf[js.Any])
+      inline def setAutoplayInterval(value: Double): Self = StObject.set(x, "autoplayInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoplayIntervalUndefined: Self = StObject.set(x, "autoplayInterval", js.undefined)
+      inline def setAutoplayIntervalUndefined: Self = StObject.set(x, "autoplayInterval", js.undefined)
       
-      @scala.inline
-      def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
+      inline def setAutoplayUndefined: Self = StObject.set(x, "autoplay", js.undefined)
       
-      @scala.inline
-      def setBeforeSlide(value: (/* currentIndex */ Double, /* endIndex */ Double) => Unit): Self = StObject.set(x, "beforeSlide", js.Any.fromFunction2(value))
+      inline def setBeforeSlide(value: (/* currentIndex */ Double, /* endIndex */ Double) => Unit): Self = StObject.set(x, "beforeSlide", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBeforeSlideUndefined: Self = StObject.set(x, "beforeSlide", js.undefined)
+      inline def setBeforeSlideUndefined: Self = StObject.set(x, "beforeSlide", js.undefined)
       
-      @scala.inline
-      def setCellAlign(value: left | center | right): Self = StObject.set(x, "cellAlign", value.asInstanceOf[js.Any])
+      inline def setCellAlign(value: left | center | right): Self = StObject.set(x, "cellAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellAlignUndefined: Self = StObject.set(x, "cellAlign", js.undefined)
+      inline def setCellAlignUndefined: Self = StObject.set(x, "cellAlign", js.undefined)
       
-      @scala.inline
-      def setCellSpacing(value: Double): Self = StObject.set(x, "cellSpacing", value.asInstanceOf[js.Any])
+      inline def setCellSpacing(value: Double): Self = StObject.set(x, "cellSpacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellSpacingUndefined: Self = StObject.set(x, "cellSpacing", js.undefined)
+      inline def setCellSpacingUndefined: Self = StObject.set(x, "cellSpacing", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setData(value: () => Unit): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
+      inline def setData(value: () => Unit): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDecorators(value: js.Array[js.Any]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
+      inline def setDecorators(value: js.Array[js.Any]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecoratorsUndefined: Self = StObject.set(x, "decorators", js.undefined)
+      inline def setDecoratorsUndefined: Self = StObject.set(x, "decorators", js.undefined)
       
-      @scala.inline
-      def setDecoratorsVarargs(value: js.Any*): Self = StObject.set(x, "decorators", js.Array(value :_*))
+      inline def setDecoratorsVarargs(value: js.Any*): Self = StObject.set(x, "decorators", js.Array(value :_*))
       
-      @scala.inline
-      def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
+      inline def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDraggingUndefined: Self = StObject.set(x, "dragging", js.undefined)
+      inline def setDraggingUndefined: Self = StObject.set(x, "dragging", js.undefined)
       
-      @scala.inline
-      def setEasing(value: js.Function): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+      inline def setEasing(value: js.Function): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+      inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
       
-      @scala.inline
-      def setEdgeEasing(value: js.Function): Self = StObject.set(x, "edgeEasing", value.asInstanceOf[js.Any])
+      inline def setEdgeEasing(value: js.Function): Self = StObject.set(x, "edgeEasing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdgeEasingUndefined: Self = StObject.set(x, "edgeEasing", js.undefined)
+      inline def setEdgeEasingUndefined: Self = StObject.set(x, "edgeEasing", js.undefined)
       
-      @scala.inline
-      def setFrameOverflow(value: String): Self = StObject.set(x, "frameOverflow", value.asInstanceOf[js.Any])
+      inline def setFrameOverflow(value: String): Self = StObject.set(x, "frameOverflow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameOverflowUndefined: Self = StObject.set(x, "frameOverflow", js.undefined)
+      inline def setFrameOverflowUndefined: Self = StObject.set(x, "frameOverflow", js.undefined)
       
-      @scala.inline
-      def setFramePadding(value: String): Self = StObject.set(x, "framePadding", value.asInstanceOf[js.Any])
+      inline def setFramePadding(value: String): Self = StObject.set(x, "framePadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFramePaddingUndefined: Self = StObject.set(x, "framePadding", js.undefined)
+      inline def setFramePaddingUndefined: Self = StObject.set(x, "framePadding", js.undefined)
       
-      @scala.inline
-      def setInitialSlideHeight(value: Double): Self = StObject.set(x, "initialSlideHeight", value.asInstanceOf[js.Any])
+      inline def setInitialSlideHeight(value: Double): Self = StObject.set(x, "initialSlideHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialSlideHeightUndefined: Self = StObject.set(x, "initialSlideHeight", js.undefined)
+      inline def setInitialSlideHeightUndefined: Self = StObject.set(x, "initialSlideHeight", js.undefined)
       
-      @scala.inline
-      def setInitialSlideWidth(value: Double): Self = StObject.set(x, "initialSlideWidth", value.asInstanceOf[js.Any])
+      inline def setInitialSlideWidth(value: Double): Self = StObject.set(x, "initialSlideWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialSlideWidthUndefined: Self = StObject.set(x, "initialSlideWidth", js.undefined)
+      inline def setInitialSlideWidthUndefined: Self = StObject.set(x, "initialSlideWidth", js.undefined)
       
-      @scala.inline
-      def setResetAutoplay(value: Boolean): Self = StObject.set(x, "resetAutoplay", value.asInstanceOf[js.Any])
+      inline def setResetAutoplay(value: Boolean): Self = StObject.set(x, "resetAutoplay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResetAutoplayUndefined: Self = StObject.set(x, "resetAutoplay", js.undefined)
+      inline def setResetAutoplayUndefined: Self = StObject.set(x, "resetAutoplay", js.undefined)
       
-      @scala.inline
-      def setSlideIndex(value: Double): Self = StObject.set(x, "slideIndex", value.asInstanceOf[js.Any])
+      inline def setSlideIndex(value: Double): Self = StObject.set(x, "slideIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideIndexUndefined: Self = StObject.set(x, "slideIndex", js.undefined)
+      inline def setSlideIndexUndefined: Self = StObject.set(x, "slideIndex", js.undefined)
       
-      @scala.inline
-      def setSlideWidth(value: String | Double): Self = StObject.set(x, "slideWidth", value.asInstanceOf[js.Any])
+      inline def setSlideWidth(value: String | Double): Self = StObject.set(x, "slideWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlideWidthUndefined: Self = StObject.set(x, "slideWidth", js.undefined)
+      inline def setSlideWidthUndefined: Self = StObject.set(x, "slideWidth", js.undefined)
       
-      @scala.inline
-      def setSlidesToScroll(value: Double | auto): Self = StObject.set(x, "slidesToScroll", value.asInstanceOf[js.Any])
+      inline def setSlidesToScroll(value: Double | auto): Self = StObject.set(x, "slidesToScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlidesToScrollUndefined: Self = StObject.set(x, "slidesToScroll", js.undefined)
+      inline def setSlidesToScrollUndefined: Self = StObject.set(x, "slidesToScroll", js.undefined)
       
-      @scala.inline
-      def setSlidesToShow(value: Double): Self = StObject.set(x, "slidesToShow", value.asInstanceOf[js.Any])
+      inline def setSlidesToShow(value: Double): Self = StObject.set(x, "slidesToShow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlidesToShowUndefined: Self = StObject.set(x, "slidesToShow", js.undefined)
+      inline def setSlidesToShowUndefined: Self = StObject.set(x, "slidesToShow", js.undefined)
       
-      @scala.inline
-      def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+      inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+      inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
       
-      @scala.inline
-      def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setSwipeSpeed(value: Double): Self = StObject.set(x, "swipeSpeed", value.asInstanceOf[js.Any])
+      inline def setSwipeSpeed(value: Double): Self = StObject.set(x, "swipeSpeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwipeSpeedUndefined: Self = StObject.set(x, "swipeSpeed", js.undefined)
+      inline def setSwipeSpeedUndefined: Self = StObject.set(x, "swipeSpeed", js.undefined)
       
-      @scala.inline
-      def setSwiping(value: Boolean): Self = StObject.set(x, "swiping", value.asInstanceOf[js.Any])
+      inline def setSwiping(value: Boolean): Self = StObject.set(x, "swiping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwipingUndefined: Self = StObject.set(x, "swiping", js.undefined)
+      inline def setSwipingUndefined: Self = StObject.set(x, "swiping", js.undefined)
       
-      @scala.inline
-      def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+      inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+      inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
       
-      @scala.inline
-      def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def setWrapAround(value: Boolean): Self = StObject.set(x, "wrapAround", value.asInstanceOf[js.Any])
+      inline def setWrapAround(value: Boolean): Self = StObject.set(x, "wrapAround", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapAroundUndefined: Self = StObject.set(x, "wrapAround", js.undefined)
+      inline def setWrapAroundUndefined: Self = StObject.set(x, "wrapAround", js.undefined)
     }
   }
   
@@ -420,31 +360,22 @@ object carouselMod {
   trait IDecoratorPosition extends StObject
   object IDecoratorPosition {
     
-    @scala.inline
-    def BottomCenter: typings.rmcNukaCarousel.rmcNukaCarouselStrings.BottomCenter = "BottomCenter".asInstanceOf[typings.rmcNukaCarousel.rmcNukaCarouselStrings.BottomCenter]
+    inline def BottomCenter: typings.rmcNukaCarousel.rmcNukaCarouselStrings.BottomCenter = "BottomCenter".asInstanceOf[typings.rmcNukaCarousel.rmcNukaCarouselStrings.BottomCenter]
     
-    @scala.inline
-    def BottomLeft: typings.rmcNukaCarousel.rmcNukaCarouselStrings.BottomLeft = "BottomLeft".asInstanceOf[typings.rmcNukaCarousel.rmcNukaCarouselStrings.BottomLeft]
+    inline def BottomLeft: typings.rmcNukaCarousel.rmcNukaCarouselStrings.BottomLeft = "BottomLeft".asInstanceOf[typings.rmcNukaCarousel.rmcNukaCarouselStrings.BottomLeft]
     
-    @scala.inline
-    def BottomRight: typings.rmcNukaCarousel.rmcNukaCarouselStrings.BottomRight = "BottomRight".asInstanceOf[typings.rmcNukaCarousel.rmcNukaCarouselStrings.BottomRight]
+    inline def BottomRight: typings.rmcNukaCarousel.rmcNukaCarouselStrings.BottomRight = "BottomRight".asInstanceOf[typings.rmcNukaCarousel.rmcNukaCarouselStrings.BottomRight]
     
-    @scala.inline
-    def CenterCenter: typings.rmcNukaCarousel.rmcNukaCarouselStrings.CenterCenter = "CenterCenter".asInstanceOf[typings.rmcNukaCarousel.rmcNukaCarouselStrings.CenterCenter]
+    inline def CenterCenter: typings.rmcNukaCarousel.rmcNukaCarouselStrings.CenterCenter = "CenterCenter".asInstanceOf[typings.rmcNukaCarousel.rmcNukaCarouselStrings.CenterCenter]
     
-    @scala.inline
-    def CenterLeft: typings.rmcNukaCarousel.rmcNukaCarouselStrings.CenterLeft = "CenterLeft".asInstanceOf[typings.rmcNukaCarousel.rmcNukaCarouselStrings.CenterLeft]
+    inline def CenterLeft: typings.rmcNukaCarousel.rmcNukaCarouselStrings.CenterLeft = "CenterLeft".asInstanceOf[typings.rmcNukaCarousel.rmcNukaCarouselStrings.CenterLeft]
     
-    @scala.inline
-    def CenterRight: typings.rmcNukaCarousel.rmcNukaCarouselStrings.CenterRight = "CenterRight".asInstanceOf[typings.rmcNukaCarousel.rmcNukaCarouselStrings.CenterRight]
+    inline def CenterRight: typings.rmcNukaCarousel.rmcNukaCarouselStrings.CenterRight = "CenterRight".asInstanceOf[typings.rmcNukaCarousel.rmcNukaCarouselStrings.CenterRight]
     
-    @scala.inline
-    def TopCenter: typings.rmcNukaCarousel.rmcNukaCarouselStrings.TopCenter = "TopCenter".asInstanceOf[typings.rmcNukaCarousel.rmcNukaCarouselStrings.TopCenter]
+    inline def TopCenter: typings.rmcNukaCarousel.rmcNukaCarouselStrings.TopCenter = "TopCenter".asInstanceOf[typings.rmcNukaCarousel.rmcNukaCarouselStrings.TopCenter]
     
-    @scala.inline
-    def TopLeft: typings.rmcNukaCarousel.rmcNukaCarouselStrings.TopLeft = "TopLeft".asInstanceOf[typings.rmcNukaCarousel.rmcNukaCarouselStrings.TopLeft]
+    inline def TopLeft: typings.rmcNukaCarousel.rmcNukaCarouselStrings.TopLeft = "TopLeft".asInstanceOf[typings.rmcNukaCarousel.rmcNukaCarouselStrings.TopLeft]
     
-    @scala.inline
-    def TopRight: typings.rmcNukaCarousel.rmcNukaCarouselStrings.TopRight = "TopRight".asInstanceOf[typings.rmcNukaCarousel.rmcNukaCarouselStrings.TopRight]
+    inline def TopRight: typings.rmcNukaCarousel.rmcNukaCarouselStrings.TopRight = "TopRight".asInstanceOf[typings.rmcNukaCarousel.rmcNukaCarouselStrings.TopRight]
   }
 }

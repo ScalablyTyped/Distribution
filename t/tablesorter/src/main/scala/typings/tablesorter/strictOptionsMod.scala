@@ -15,20 +15,16 @@ object strictOptionsMod {
   }
   object StrictOptions {
     
-    @scala.inline
-    def apply(): StrictOptions = {
+    inline def apply(): StrictOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictOptions]
     }
     
-    @scala.inline
-    implicit class StrictOptionsMutableBuilder[Self <: StrictOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StrictOptions](x: Self) {
       
-      @scala.inline
-      def setExactMatch(value: Boolean): Self = StObject.set(x, "exactMatch", value.asInstanceOf[js.Any])
+      inline def setExactMatch(value: Boolean): Self = StObject.set(x, "exactMatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExactMatchUndefined: Self = StObject.set(x, "exactMatch", js.undefined)
+      inline def setExactMatchUndefined: Self = StObject.set(x, "exactMatch", js.undefined)
     }
   }
 }

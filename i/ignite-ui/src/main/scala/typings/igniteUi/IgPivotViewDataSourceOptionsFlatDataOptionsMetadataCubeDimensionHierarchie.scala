@@ -40,40 +40,29 @@ trait IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchie
 }
 object IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchie {
   
-  @scala.inline
-  def apply(): IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchie = {
+  inline def apply(): IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchie = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchie]
   }
   
-  @scala.inline
-  implicit class IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieMutableBuilder[Self <: IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchie] (val x: Self) extends AnyVal {
+  extension [Self <: IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchie](x: Self) {
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
-    @scala.inline
-    def setDisplayFolder(value: String): Self = StObject.set(x, "displayFolder", value.asInstanceOf[js.Any])
+    inline def setDisplayFolder(value: String): Self = StObject.set(x, "displayFolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayFolderUndefined: Self = StObject.set(x, "displayFolder", js.undefined)
+    inline def setDisplayFolderUndefined: Self = StObject.set(x, "displayFolder", js.undefined)
     
-    @scala.inline
-    def setLevels(value: js.Array[IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieLevel]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
+    inline def setLevels(value: js.Array[IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieLevel]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
+    inline def setLevelsUndefined: Self = StObject.set(x, "levels", js.undefined)
     
-    @scala.inline
-    def setLevelsVarargs(value: IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieLevel*): Self = StObject.set(x, "levels", js.Array(value :_*))
+    inline def setLevelsVarargs(value: IgPivotViewDataSourceOptionsFlatDataOptionsMetadataCubeDimensionHierarchieLevel*): Self = StObject.set(x, "levels", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

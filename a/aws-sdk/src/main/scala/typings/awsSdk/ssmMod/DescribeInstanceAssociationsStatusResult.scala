@@ -18,28 +18,21 @@ trait DescribeInstanceAssociationsStatusResult extends StObject {
 }
 object DescribeInstanceAssociationsStatusResult {
   
-  @scala.inline
-  def apply(): DescribeInstanceAssociationsStatusResult = {
+  inline def apply(): DescribeInstanceAssociationsStatusResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeInstanceAssociationsStatusResult]
   }
   
-  @scala.inline
-  implicit class DescribeInstanceAssociationsStatusResultMutableBuilder[Self <: DescribeInstanceAssociationsStatusResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeInstanceAssociationsStatusResult](x: Self) {
     
-    @scala.inline
-    def setInstanceAssociationStatusInfos(value: InstanceAssociationStatusInfos): Self = StObject.set(x, "InstanceAssociationStatusInfos", value.asInstanceOf[js.Any])
+    inline def setInstanceAssociationStatusInfos(value: InstanceAssociationStatusInfos): Self = StObject.set(x, "InstanceAssociationStatusInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceAssociationStatusInfosUndefined: Self = StObject.set(x, "InstanceAssociationStatusInfos", js.undefined)
+    inline def setInstanceAssociationStatusInfosUndefined: Self = StObject.set(x, "InstanceAssociationStatusInfos", js.undefined)
     
-    @scala.inline
-    def setInstanceAssociationStatusInfosVarargs(value: InstanceAssociationStatusInfo*): Self = StObject.set(x, "InstanceAssociationStatusInfos", js.Array(value :_*))
+    inline def setInstanceAssociationStatusInfosVarargs(value: InstanceAssociationStatusInfo*): Self = StObject.set(x, "InstanceAssociationStatusInfos", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

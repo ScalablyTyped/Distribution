@@ -33,8 +33,7 @@ trait UnoControlDialogElement extends StObject {
 }
 object UnoControlDialogElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Height: Double,
     Name: String,
     PositionX: String,
@@ -48,31 +47,22 @@ object UnoControlDialogElement {
     __obj.asInstanceOf[UnoControlDialogElement]
   }
   
-  @scala.inline
-  implicit class UnoControlDialogElementMutableBuilder[Self <: UnoControlDialogElement] (val x: Self) extends AnyVal {
+  extension [Self <: UnoControlDialogElement](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionX(value: String): Self = StObject.set(x, "PositionX", value.asInstanceOf[js.Any])
+    inline def setPositionX(value: String): Self = StObject.set(x, "PositionX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionY(value: String): Self = StObject.set(x, "PositionY", value.asInstanceOf[js.Any])
+    inline def setPositionY(value: String): Self = StObject.set(x, "PositionY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStep(value: Double): Self = StObject.set(x, "Step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Double): Self = StObject.set(x, "Step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabIndex(value: Double): Self = StObject.set(x, "TabIndex", value.asInstanceOf[js.Any])
+    inline def setTabIndex(value: Double): Self = StObject.set(x, "TabIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
   }
 }

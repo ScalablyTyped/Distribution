@@ -12,25 +12,19 @@ trait Capture extends StObject {
 }
 object Capture {
   
-  @scala.inline
-  def apply(): Capture = {
+  inline def apply(): Capture = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Capture]
   }
   
-  @scala.inline
-  implicit class CaptureMutableBuilder[Self <: Capture] (val x: Self) extends AnyVal {
+  extension [Self <: Capture](x: Self) {
     
-    @scala.inline
-    def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+    inline def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
+    inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
     
-    @scala.inline
-    def setPassive(value: Boolean): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
+    inline def setPassive(value: Boolean): Self = StObject.set(x, "passive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassiveUndefined: Self = StObject.set(x, "passive", js.undefined)
+    inline def setPassiveUndefined: Self = StObject.set(x, "passive", js.undefined)
   }
 }

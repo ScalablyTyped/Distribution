@@ -13,22 +13,17 @@ trait `140` extends StObject {
 }
 object `140` {
   
-  @scala.inline
-  def apply(paramsType: js.Array[SetShowViewportSizeOnResizeRequest], returnType: Unit): `140` = {
+  inline def apply(paramsType: js.Array[SetShowViewportSizeOnResizeRequest], returnType: Unit): `140` = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[`140`]
   }
   
-  @scala.inline
-  implicit class `140MutableBuilder`[Self <: `140`] (val x: Self) extends AnyVal {
+  extension [Self <: `140`](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[SetShowViewportSizeOnResizeRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[SetShowViewportSizeOnResizeRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: SetShowViewportSizeOnResizeRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: SetShowViewportSizeOnResizeRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: Unit): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

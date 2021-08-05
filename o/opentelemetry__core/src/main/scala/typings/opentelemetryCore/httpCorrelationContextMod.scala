@@ -21,11 +21,11 @@ object httpCorrelationContextMod {
     extends StObject
        with TextMapPropagator {
     
-    var _getKeyPairs: js.Any = js.native
+    /* private */ var _getKeyPairs: js.Any = js.native
     
-    var _parsePairKeyValue: js.Any = js.native
+    /* private */ var _parsePairKeyValue: js.Any = js.native
     
-    var _serializeKeyPairs: js.Any = js.native
+    /* private */ var _serializeKeyPairs: js.Any = js.native
     
     def extract(context: Context_, carrier: js.Any, getter: GetterFunction[js.Any]): Context_ = js.native
     /**

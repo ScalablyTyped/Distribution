@@ -17,34 +17,25 @@ trait TableComponents[RecordType] extends StObject {
 }
 object TableComponents {
   
-  @scala.inline
-  def apply[RecordType](): TableComponents[RecordType] = {
+  inline def apply[RecordType](): TableComponents[RecordType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableComponents[RecordType]]
   }
   
-  @scala.inline
-  implicit class TableComponentsMutableBuilder[Self <: TableComponents[?], RecordType] (val x: Self & TableComponents[RecordType]) extends AnyVal {
+  extension [Self <: TableComponents[?], RecordType](x: Self & TableComponents[RecordType]) {
     
-    @scala.inline
-    def setBody(value: CustomizeScrollBody[RecordType] | Cell): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: CustomizeScrollBody[RecordType] | Cell): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyFunction2(value: (/* data */ js.Array[RecordType], /* info */ OnScroll) => ReactNode): Self = StObject.set(x, "body", js.Any.fromFunction2(value))
+    inline def setBodyFunction2(value: (/* data */ js.Array[RecordType], /* info */ OnScroll) => ReactNode): Self = StObject.set(x, "body", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setHeader(value: Cell): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: Cell): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setTable(value: CustomizeComponent): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: CustomizeComponent): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+    inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
   }
 }

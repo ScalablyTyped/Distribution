@@ -15,17 +15,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object KeyframesDefinition {
   
-  @scala.inline
-  def apply(): KeyframesDefinition = {
+  inline def apply(): KeyframesDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("keyframes")
     __obj.asInstanceOf[KeyframesDefinition]
   }
   
-  @scala.inline
-  implicit class KeyframesDefinitionMutableBuilder[Self <: KeyframesDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: KeyframesDefinition](x: Self) {
     
-    @scala.inline
-    def setType(value: keyframes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: keyframes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

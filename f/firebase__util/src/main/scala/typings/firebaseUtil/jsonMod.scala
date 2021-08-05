@@ -10,9 +10,7 @@ object jsonMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def jsonEval(str: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonEval")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def jsonEval(str: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonEval")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def stringify(data: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stringify(data: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any]).asInstanceOf[String]
 }

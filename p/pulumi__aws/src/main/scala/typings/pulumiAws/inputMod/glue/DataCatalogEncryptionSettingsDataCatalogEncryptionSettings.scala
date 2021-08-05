@@ -21,8 +21,7 @@ trait DataCatalogEncryptionSettingsDataCatalogEncryptionSettings extends StObjec
 }
 object DataCatalogEncryptionSettingsDataCatalogEncryptionSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     connectionPasswordEncryption: Input[
       DataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryption
     ],
@@ -32,17 +31,14 @@ object DataCatalogEncryptionSettingsDataCatalogEncryptionSettings {
     __obj.asInstanceOf[DataCatalogEncryptionSettingsDataCatalogEncryptionSettings]
   }
   
-  @scala.inline
-  implicit class DataCatalogEncryptionSettingsDataCatalogEncryptionSettingsMutableBuilder[Self <: DataCatalogEncryptionSettingsDataCatalogEncryptionSettings] (val x: Self) extends AnyVal {
+  extension [Self <: DataCatalogEncryptionSettingsDataCatalogEncryptionSettings](x: Self) {
     
-    @scala.inline
-    def setConnectionPasswordEncryption(
+    inline def setConnectionPasswordEncryption(
       value: Input[
           DataCatalogEncryptionSettingsDataCatalogEncryptionSettingsConnectionPasswordEncryption
         ]
     ): Self = StObject.set(x, "connectionPasswordEncryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionAtRest(value: Input[DataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRest]): Self = StObject.set(x, "encryptionAtRest", value.asInstanceOf[js.Any])
+    inline def setEncryptionAtRest(value: Input[DataCatalogEncryptionSettingsDataCatalogEncryptionSettingsEncryptionAtRest]): Self = StObject.set(x, "encryptionAtRest", value.asInstanceOf[js.Any])
   }
 }

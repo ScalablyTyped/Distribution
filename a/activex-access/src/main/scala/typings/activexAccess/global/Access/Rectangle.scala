@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.Rectangle")
 @js.native
-class Rectangle protected ()
+/* private */ class Rectangle ()
   extends StObject
      with typings.activexAccess.Access.Rectangle

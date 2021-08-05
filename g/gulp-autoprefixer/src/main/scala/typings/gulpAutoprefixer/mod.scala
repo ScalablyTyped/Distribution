@@ -11,10 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
-  @scala.inline
-  def apply(opts: Options): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
+  inline def apply(opts: Options): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
   @JSImport("gulp-autoprefixer", JSImport.Namespace)
   @js.native
@@ -44,77 +42,54 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAdd(value: Boolean): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
+      inline def setAdd(value: Boolean): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
+      inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
       
-      @scala.inline
-      def setBrowsers(value: js.Array[String]): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
+      inline def setBrowsers(value: js.Array[String]): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrowsersUndefined: Self = StObject.set(x, "browsers", js.undefined)
+      inline def setBrowsersUndefined: Self = StObject.set(x, "browsers", js.undefined)
       
-      @scala.inline
-      def setBrowsersVarargs(value: String*): Self = StObject.set(x, "browsers", js.Array(value :_*))
+      inline def setBrowsersVarargs(value: String*): Self = StObject.set(x, "browsers", js.Array(value :_*))
       
-      @scala.inline
-      def setCascade(value: Boolean): Self = StObject.set(x, "cascade", value.asInstanceOf[js.Any])
+      inline def setCascade(value: Boolean): Self = StObject.set(x, "cascade", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCascadeUndefined: Self = StObject.set(x, "cascade", js.undefined)
+      inline def setCascadeUndefined: Self = StObject.set(x, "cascade", js.undefined)
       
-      @scala.inline
-      def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+      inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
-      @scala.inline
-      def setFlexbox(value: Boolean | `no-2009`): Self = StObject.set(x, "flexbox", value.asInstanceOf[js.Any])
+      inline def setFlexbox(value: Boolean | `no-2009`): Self = StObject.set(x, "flexbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexboxUndefined: Self = StObject.set(x, "flexbox", js.undefined)
+      inline def setFlexboxUndefined: Self = StObject.set(x, "flexbox", js.undefined)
       
-      @scala.inline
-      def setGrid(value: `false` | autoplace | `no-autoplace`): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+      inline def setGrid(value: `false` | autoplace | `no-autoplace`): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
+      inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
       
-      @scala.inline
-      def setIgnoreUnknownVersions(value: Boolean): Self = StObject.set(x, "ignoreUnknownVersions", value.asInstanceOf[js.Any])
+      inline def setIgnoreUnknownVersions(value: Boolean): Self = StObject.set(x, "ignoreUnknownVersions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUnknownVersionsUndefined: Self = StObject.set(x, "ignoreUnknownVersions", js.undefined)
+      inline def setIgnoreUnknownVersionsUndefined: Self = StObject.set(x, "ignoreUnknownVersions", js.undefined)
       
-      @scala.inline
-      def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+      inline def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+      inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
       
-      @scala.inline
-      def setStats(value: js.Object): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+      inline def setStats(value: js.Object): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
+      inline def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
       
-      @scala.inline
-      def setSupports(value: Boolean): Self = StObject.set(x, "supports", value.asInstanceOf[js.Any])
+      inline def setSupports(value: Boolean): Self = StObject.set(x, "supports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportsUndefined: Self = StObject.set(x, "supports", js.undefined)
+      inline def setSupportsUndefined: Self = StObject.set(x, "supports", js.undefined)
     }
   }
 }

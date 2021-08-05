@@ -27,39 +27,29 @@ trait PartialDataTitle extends StObject {
 }
 object PartialDataTitle {
   
-  @scala.inline
-  def apply(): PartialDataTitle = {
+  inline def apply(): PartialDataTitle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialDataTitle]
   }
   
-  @scala.inline
-  implicit class PartialDataTitleMutableBuilder[Self <: PartialDataTitle] (val x: Self) extends AnyVal {
+  extension [Self <: PartialDataTitle](x: Self) {
     
-    @scala.inline
-    def setFont(value: Partial[typings.plotlyJs.mod.Font]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: Partial[typings.plotlyJs.mod.Font]): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    @scala.inline
-    def setPosition(
+    inline def setPosition(
       value: (`top left`) | (`top center`) | (`top right`) | (`middle center`) | (`bottom left`) | (`bottom center`) | (`bottom right`)
     ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setStandoff(value: Double): Self = StObject.set(x, "standoff", value.asInstanceOf[js.Any])
+    inline def setStandoff(value: Double): Self = StObject.set(x, "standoff", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandoffUndefined: Self = StObject.set(x, "standoff", js.undefined)
+    inline def setStandoffUndefined: Self = StObject.set(x, "standoff", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

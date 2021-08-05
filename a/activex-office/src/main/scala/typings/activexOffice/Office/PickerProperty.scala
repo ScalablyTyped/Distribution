@@ -12,7 +12,7 @@ trait PickerProperty extends StObject {
   
   val Id: String
   
-  @JSName("Office.PickerProperty_typekey")
+  /* private */ @JSName("Office.PickerProperty_typekey")
   var OfficeDotPickerProperty_typekey: PickerProperty
   
   val Type: MsoPickerField
@@ -21,8 +21,7 @@ trait PickerProperty extends StObject {
 }
 object PickerProperty {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Creator: Double,
     Id: String,
@@ -35,25 +34,18 @@ object PickerProperty {
     __obj.asInstanceOf[PickerProperty]
   }
   
-  @scala.inline
-  implicit class PickerPropertyMutableBuilder[Self <: PickerProperty] (val x: Self) extends AnyVal {
+  extension [Self <: PickerProperty](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotPickerProperty_typekey(value: PickerProperty): Self = StObject.set(x, "Office.PickerProperty_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotPickerProperty_typekey(value: PickerProperty): Self = StObject.set(x, "Office.PickerProperty_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: MsoPickerField): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: MsoPickerField): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

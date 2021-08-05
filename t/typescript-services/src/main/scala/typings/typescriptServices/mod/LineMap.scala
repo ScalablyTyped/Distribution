@@ -13,10 +13,10 @@ class LineMap protected ()
      with typings.typescriptServices.TypeScript.LineMap {
   def this(_computeLineStarts: js.Function0[js.Array[Double]], length: Double) = this()
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _computeLineStarts: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _lineStarts: js.Any = js.native
   
   /* CompleteClass */
@@ -37,7 +37,7 @@ class LineMap protected ()
   /* CompleteClass */
   override def getPosition(line: Double, character: Double): Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var length: js.Any = js.native
   
   /* CompleteClass */
@@ -59,6 +59,5 @@ object LineMap {
   @JSImport("typescript-services", "LineMap.empty")
   @js.native
   def empty: typings.typescriptServices.TypeScript.LineMap = js.native
-  @scala.inline
-  def empty_=(x: typings.typescriptServices.TypeScript.LineMap): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("empty")(x.asInstanceOf[js.Any])
+  inline def empty_=(x: typings.typescriptServices.TypeScript.LineMap): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("empty")(x.asInstanceOf[js.Any])
 }

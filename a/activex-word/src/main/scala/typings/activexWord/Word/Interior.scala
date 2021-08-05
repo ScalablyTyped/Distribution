@@ -24,13 +24,12 @@ trait Interior extends StObject {
   
   var PatternColorIndex: js.Any
   
-  @JSName("Word.Interior_typekey")
+  /* private */ @JSName("Word.Interior_typekey")
   var WordDotInterior_typekey: Interior
 }
 object Interior {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Color: js.Any,
     ColorIndex: js.Any,
@@ -47,37 +46,26 @@ object Interior {
     __obj.asInstanceOf[Interior]
   }
   
-  @scala.inline
-  implicit class InteriorMutableBuilder[Self <: Interior] (val x: Self) extends AnyVal {
+  extension [Self <: Interior](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: js.Any): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
+    inline def setColor(value: js.Any): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorIndex(value: js.Any): Self = StObject.set(x, "ColorIndex", value.asInstanceOf[js.Any])
+    inline def setColorIndex(value: js.Any): Self = StObject.set(x, "ColorIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvertIfNegative(value: js.Any): Self = StObject.set(x, "InvertIfNegative", value.asInstanceOf[js.Any])
+    inline def setInvertIfNegative(value: js.Any): Self = StObject.set(x, "InvertIfNegative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPattern(value: js.Any): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: js.Any): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternColor(value: js.Any): Self = StObject.set(x, "PatternColor", value.asInstanceOf[js.Any])
+    inline def setPatternColor(value: js.Any): Self = StObject.set(x, "PatternColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternColorIndex(value: js.Any): Self = StObject.set(x, "PatternColorIndex", value.asInstanceOf[js.Any])
+    inline def setPatternColorIndex(value: js.Any): Self = StObject.set(x, "PatternColorIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotInterior_typekey(value: Interior): Self = StObject.set(x, "Word.Interior_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotInterior_typekey(value: Interior): Self = StObject.set(x, "Word.Interior_typekey", value.asInstanceOf[js.Any])
   }
 }

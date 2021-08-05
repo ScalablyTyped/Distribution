@@ -18,23 +18,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object TypeParameterDeclaration_ {
   
-  @scala.inline
-  def apply(params: js.Array[TypeParameter_]): TypeParameterDeclaration_ = {
+  inline def apply(params: js.Array[TypeParameter_]): TypeParameterDeclaration_ = {
     val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("TypeParameterDeclaration")
     __obj.asInstanceOf[TypeParameterDeclaration_]
   }
   
-  @scala.inline
-  implicit class TypeParameterDeclaration_MutableBuilder[Self <: TypeParameterDeclaration_] (val x: Self) extends AnyVal {
+  extension [Self <: TypeParameterDeclaration_](x: Self) {
     
-    @scala.inline
-    def setParams(value: js.Array[TypeParameter_]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Array[TypeParameter_]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsVarargs(value: TypeParameter_ *): Self = StObject.set(x, "params", js.Array(value :_*))
+    inline def setParamsVarargs(value: TypeParameter_ *): Self = StObject.set(x, "params", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: TypeParameterDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TypeParameterDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

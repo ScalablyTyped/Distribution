@@ -18,25 +18,19 @@ trait Limit extends StObject {
 }
 object Limit {
   
-  @scala.inline
-  def apply(): Limit = {
+  inline def apply(): Limit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Limit]
   }
   
-  @scala.inline
-  implicit class LimitMutableBuilder[Self <: Limit] (val x: Self) extends AnyVal {
+  extension [Self <: Limit](x: Self) {
     
-    @scala.inline
-    def setMax(value: Max): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Max): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "Max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "Max", js.undefined)
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

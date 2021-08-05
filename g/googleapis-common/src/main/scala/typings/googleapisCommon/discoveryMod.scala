@@ -37,7 +37,7 @@ object discoveryMod {
     /**
       * Log output of generator. Works just like console.log
       */
-    var log: js.Any = js.native
+    /* private */ var log: js.Any = js.native
     
     /**
       * Generate and Endpoint from an endpoint schema object.
@@ -45,11 +45,11 @@ object discoveryMod {
       * @param schema The schema from which to generate the Endpoint.
       * @return A function that creates an endpoint.
       */
-    var makeEndpoint: js.Any = js.native
+    /* private */ var makeEndpoint: js.Any = js.native
     
-    var options: js.Any = js.native
+    /* private */ var options: js.Any = js.native
     
-    var transporter: js.Any = js.native
+    /* private */ var transporter: js.Any = js.native
   }
   
   trait DiscoveryOptions extends StObject {
@@ -60,26 +60,20 @@ object discoveryMod {
   }
   object DiscoveryOptions {
     
-    @scala.inline
-    def apply(): DiscoveryOptions = {
+    inline def apply(): DiscoveryOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DiscoveryOptions]
     }
     
-    @scala.inline
-    implicit class DiscoveryOptionsMutableBuilder[Self <: DiscoveryOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DiscoveryOptions](x: Self) {
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setIncludePrivate(value: Boolean): Self = StObject.set(x, "includePrivate", value.asInstanceOf[js.Any])
+      inline def setIncludePrivate(value: Boolean): Self = StObject.set(x, "includePrivate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludePrivateUndefined: Self = StObject.set(x, "includePrivate", js.undefined)
+      inline def setIncludePrivateUndefined: Self = StObject.set(x, "includePrivate", js.undefined)
     }
   }
   

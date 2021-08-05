@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Command extends StObject {
   
-  @JSName("ADODB.Command_typekey")
+  /* private */ @JSName("ADODB.Command_typekey")
   var ADODBDotCommand_typekey: Command = js.native
   
   /**

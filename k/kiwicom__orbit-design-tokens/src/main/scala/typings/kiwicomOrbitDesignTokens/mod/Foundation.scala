@@ -12,19 +12,15 @@ trait Foundation extends StObject {
 }
 object Foundation {
   
-  @scala.inline
-  def apply(base: Base, palette: Palette): Foundation = {
+  inline def apply(base: Base, palette: Palette): Foundation = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], palette = palette.asInstanceOf[js.Any])
     __obj.asInstanceOf[Foundation]
   }
   
-  @scala.inline
-  implicit class FoundationMutableBuilder[Self <: Foundation] (val x: Self) extends AnyVal {
+  extension [Self <: Foundation](x: Self) {
     
-    @scala.inline
-    def setBase(value: Base): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: Base): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPalette(value: Palette): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
+    inline def setPalette(value: Palette): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
   }
 }

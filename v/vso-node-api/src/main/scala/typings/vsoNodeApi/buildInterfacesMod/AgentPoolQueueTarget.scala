@@ -27,8 +27,7 @@ trait AgentPoolQueueTarget
 }
 object AgentPoolQueueTarget {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allowScriptsAuthAccessOption: Boolean,
     demands: js.Array[js.Any],
     executionOptions: AgentTargetExecutionOptions,
@@ -40,22 +39,16 @@ object AgentPoolQueueTarget {
     __obj.asInstanceOf[AgentPoolQueueTarget]
   }
   
-  @scala.inline
-  implicit class AgentPoolQueueTargetMutableBuilder[Self <: AgentPoolQueueTarget] (val x: Self) extends AnyVal {
+  extension [Self <: AgentPoolQueueTarget](x: Self) {
     
-    @scala.inline
-    def setAllowScriptsAuthAccessOption(value: Boolean): Self = StObject.set(x, "allowScriptsAuthAccessOption", value.asInstanceOf[js.Any])
+    inline def setAllowScriptsAuthAccessOption(value: Boolean): Self = StObject.set(x, "allowScriptsAuthAccessOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDemands(value: js.Array[js.Any]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
+    inline def setDemands(value: js.Array[js.Any]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDemandsVarargs(value: js.Any*): Self = StObject.set(x, "demands", js.Array(value :_*))
+    inline def setDemandsVarargs(value: js.Any*): Self = StObject.set(x, "demands", js.Array(value :_*))
     
-    @scala.inline
-    def setExecutionOptions(value: AgentTargetExecutionOptions): Self = StObject.set(x, "executionOptions", value.asInstanceOf[js.Any])
+    inline def setExecutionOptions(value: AgentTargetExecutionOptions): Self = StObject.set(x, "executionOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueue(value: AgentPoolQueue): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+    inline def setQueue(value: AgentPoolQueue): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
   }
 }

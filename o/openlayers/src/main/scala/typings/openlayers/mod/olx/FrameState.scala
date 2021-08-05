@@ -14,22 +14,17 @@ trait FrameState extends StObject {
 }
 object FrameState {
   
-  @scala.inline
-  def apply(pixelRatio: Double, time: Double, viewState: ViewState): FrameState = {
+  inline def apply(pixelRatio: Double, time: Double, viewState: ViewState): FrameState = {
     val __obj = js.Dynamic.literal(pixelRatio = pixelRatio.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], viewState = viewState.asInstanceOf[js.Any])
     __obj.asInstanceOf[FrameState]
   }
   
-  @scala.inline
-  implicit class FrameStateMutableBuilder[Self <: FrameState] (val x: Self) extends AnyVal {
+  extension [Self <: FrameState](x: Self) {
     
-    @scala.inline
-    def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
+    inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewState(value: ViewState): Self = StObject.set(x, "viewState", value.asInstanceOf[js.Any])
+    inline def setViewState(value: ViewState): Self = StObject.set(x, "viewState", value.asInstanceOf[js.Any])
   }
 }

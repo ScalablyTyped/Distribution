@@ -28,31 +28,23 @@ trait TaskFailedEventDetails extends StObject {
 }
 object TaskFailedEventDetails {
   
-  @scala.inline
-  def apply(resource: Name, resourceType: Name): TaskFailedEventDetails = {
+  inline def apply(resource: Name, resourceType: Name): TaskFailedEventDetails = {
     val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskFailedEventDetails]
   }
   
-  @scala.inline
-  implicit class TaskFailedEventDetailsMutableBuilder[Self <: TaskFailedEventDetails] (val x: Self) extends AnyVal {
+  extension [Self <: TaskFailedEventDetails](x: Self) {
     
-    @scala.inline
-    def setCause(value: SensitiveCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+    inline def setCause(value: SensitiveCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
+    inline def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
     
-    @scala.inline
-    def setError(value: SensitiveError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: SensitiveError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setResource(value: Name): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Name): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceType(value: Name): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: Name): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
   }
 }

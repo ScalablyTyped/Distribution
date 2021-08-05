@@ -34,8 +34,7 @@ trait PageOptions
 }
 object PageOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     data: js.Any,
     onError: () => Unit,
     onHide: () => Unit,
@@ -46,28 +45,20 @@ object PageOptions {
     __obj.asInstanceOf[PageOptions]
   }
   
-  @scala.inline
-  implicit class PageOptionsMutableBuilder[Self <: PageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PageOptions](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnError(value: () => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction0(value))
+    inline def setOnError(value: () => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnHide(value: () => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
+    inline def setOnHide(value: () => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnLaunch(value: Options => Unit): Self = StObject.set(x, "onLaunch", js.Any.fromFunction1(value))
+    inline def setOnLaunch(value: Options => Unit): Self = StObject.set(x, "onLaunch", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnPullDownRefresh(value: js.ThisFunction0[/* this */ Page, Unit]): Self = StObject.set(x, "onPullDownRefresh", value.asInstanceOf[js.Any])
+    inline def setOnPullDownRefresh(value: js.ThisFunction0[/* this */ Page, Unit]): Self = StObject.set(x, "onPullDownRefresh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnPullDownRefreshUndefined: Self = StObject.set(x, "onPullDownRefresh", js.undefined)
+    inline def setOnPullDownRefreshUndefined: Self = StObject.set(x, "onPullDownRefresh", js.undefined)
     
-    @scala.inline
-    def setOnShow(value: Options => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
+    inline def setOnShow(value: Options => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
   }
 }

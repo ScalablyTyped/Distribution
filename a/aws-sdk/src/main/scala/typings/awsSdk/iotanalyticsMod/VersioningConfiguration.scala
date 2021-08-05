@@ -18,25 +18,19 @@ trait VersioningConfiguration extends StObject {
 }
 object VersioningConfiguration {
   
-  @scala.inline
-  def apply(): VersioningConfiguration = {
+  inline def apply(): VersioningConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VersioningConfiguration]
   }
   
-  @scala.inline
-  implicit class VersioningConfigurationMutableBuilder[Self <: VersioningConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: VersioningConfiguration](x: Self) {
     
-    @scala.inline
-    def setMaxVersions(value: MaxVersions): Self = StObject.set(x, "maxVersions", value.asInstanceOf[js.Any])
+    inline def setMaxVersions(value: MaxVersions): Self = StObject.set(x, "maxVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxVersionsUndefined: Self = StObject.set(x, "maxVersions", js.undefined)
+    inline def setMaxVersionsUndefined: Self = StObject.set(x, "maxVersions", js.undefined)
     
-    @scala.inline
-    def setUnlimited(value: UnlimitedVersioning): Self = StObject.set(x, "unlimited", value.asInstanceOf[js.Any])
+    inline def setUnlimited(value: UnlimitedVersioning): Self = StObject.set(x, "unlimited", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnlimitedUndefined: Self = StObject.set(x, "unlimited", js.undefined)
+    inline def setUnlimitedUndefined: Self = StObject.set(x, "unlimited", js.undefined)
   }
 }

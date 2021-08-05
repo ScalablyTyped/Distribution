@@ -11,6 +11,5 @@ object tooltipDotUniDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def tooltipDriverFactory(base: js.Any, body: js.Any): GetTooltipText = (^.asInstanceOf[js.Dynamic].applyDynamic("tooltipDriverFactory")(base.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetTooltipText]
+  inline def tooltipDriverFactory(base: js.Any, body: js.Any): GetTooltipText = (^.asInstanceOf[js.Dynamic].applyDynamic("tooltipDriverFactory")(base.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[GetTooltipText]
 }

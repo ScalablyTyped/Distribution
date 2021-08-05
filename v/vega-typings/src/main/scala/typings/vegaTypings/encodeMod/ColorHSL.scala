@@ -14,22 +14,17 @@ trait ColorHSL extends StObject {
 }
 object ColorHSL {
   
-  @scala.inline
-  def apply(h: NumericValueRef, l: NumericValueRef, s: NumericValueRef): ColorHSL = {
+  inline def apply(h: NumericValueRef, l: NumericValueRef, s: NumericValueRef): ColorHSL = {
     val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], l = l.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorHSL]
   }
   
-  @scala.inline
-  implicit class ColorHSLMutableBuilder[Self <: ColorHSL] (val x: Self) extends AnyVal {
+  extension [Self <: ColorHSL](x: Self) {
     
-    @scala.inline
-    def setH(value: NumericValueRef): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+    inline def setH(value: NumericValueRef): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setL(value: NumericValueRef): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
+    inline def setL(value: NumericValueRef): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS(value: NumericValueRef): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+    inline def setS(value: NumericValueRef): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
   }
 }

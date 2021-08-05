@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object ipldFormatsMod {
   
-  @scala.inline
-  def apply(): js.Function = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function]
-  @scala.inline
-  def apply(hasFormatsLoadFormat: LoadFormat): js.Function = ^.asInstanceOf[js.Dynamic].apply(hasFormatsLoadFormat.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def apply(): js.Function = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function]
+  inline def apply(hasFormatsLoadFormat: LoadFormat): js.Function = ^.asInstanceOf[js.Dynamic].apply(hasFormatsLoadFormat.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
   @JSImport("ipfs-http-client/dist/src/lib/ipld-formats", JSImport.Namespace)
   @js.native

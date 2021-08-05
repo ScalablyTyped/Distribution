@@ -12,25 +12,19 @@ trait Jiggle extends StObject {
 }
 object Jiggle {
   
-  @scala.inline
-  def apply(): Jiggle = {
+  inline def apply(): Jiggle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Jiggle]
   }
   
-  @scala.inline
-  implicit class JiggleMutableBuilder[Self <: Jiggle] (val x: Self) extends AnyVal {
+  extension [Self <: Jiggle](x: Self) {
     
-    @scala.inline
-    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setJiggle(value: Duration): Self = StObject.set(x, "jiggle", value.asInstanceOf[js.Any])
+    inline def setJiggle(value: Duration): Self = StObject.set(x, "jiggle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJiggleUndefined: Self = StObject.set(x, "jiggle", js.undefined)
+    inline def setJiggleUndefined: Self = StObject.set(x, "jiggle", js.undefined)
   }
 }

@@ -10,19 +10,15 @@ trait CreateGovCloudAccountResponse extends StObject {
 }
 object CreateGovCloudAccountResponse {
   
-  @scala.inline
-  def apply(): CreateGovCloudAccountResponse = {
+  inline def apply(): CreateGovCloudAccountResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateGovCloudAccountResponse]
   }
   
-  @scala.inline
-  implicit class CreateGovCloudAccountResponseMutableBuilder[Self <: CreateGovCloudAccountResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateGovCloudAccountResponse](x: Self) {
     
-    @scala.inline
-    def setCreateAccountStatus(value: CreateAccountStatus): Self = StObject.set(x, "CreateAccountStatus", value.asInstanceOf[js.Any])
+    inline def setCreateAccountStatus(value: CreateAccountStatus): Self = StObject.set(x, "CreateAccountStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateAccountStatusUndefined: Self = StObject.set(x, "CreateAccountStatus", js.undefined)
+    inline def setCreateAccountStatusUndefined: Self = StObject.set(x, "CreateAccountStatus", js.undefined)
   }
 }

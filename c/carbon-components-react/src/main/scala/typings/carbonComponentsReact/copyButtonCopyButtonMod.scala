@@ -21,20 +21,16 @@ object copyButtonCopyButtonMod extends Shortcut {
   }
   object CopyButtonProps {
     
-    @scala.inline
-    def apply(): CopyButtonProps = {
+    inline def apply(): CopyButtonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CopyButtonProps]
     }
     
-    @scala.inline
-    implicit class CopyButtonPropsMutableBuilder[Self <: CopyButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: CopyButtonProps](x: Self) {
       
-      @scala.inline
-      def setIconDescription(value: String): Self = StObject.set(x, "iconDescription", value.asInstanceOf[js.Any])
+      inline def setIconDescription(value: String): Self = StObject.set(x, "iconDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconDescriptionUndefined: Self = StObject.set(x, "iconDescription", js.undefined)
+      inline def setIconDescriptionUndefined: Self = StObject.set(x, "iconDescription", js.undefined)
     }
   }
   

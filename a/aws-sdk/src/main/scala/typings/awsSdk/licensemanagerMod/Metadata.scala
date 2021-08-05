@@ -18,25 +18,19 @@ trait Metadata extends StObject {
 }
 object Metadata {
   
-  @scala.inline
-  def apply(): Metadata = {
+  inline def apply(): Metadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Metadata]
   }
   
-  @scala.inline
-  implicit class MetadataMutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
+  extension [Self <: Metadata](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

@@ -33,34 +33,25 @@ trait MediaQueryExpression extends StObject {
 }
 object MediaQueryExpression {
   
-  @scala.inline
-  def apply(feature: String, unit: String, value: Double): MediaQueryExpression = {
+  inline def apply(feature: String, unit: String, value: Double): MediaQueryExpression = {
     val __obj = js.Dynamic.literal(feature = feature.asInstanceOf[js.Any], unit = unit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaQueryExpression]
   }
   
-  @scala.inline
-  implicit class MediaQueryExpressionMutableBuilder[Self <: MediaQueryExpression] (val x: Self) extends AnyVal {
+  extension [Self <: MediaQueryExpression](x: Self) {
     
-    @scala.inline
-    def setComputedLength(value: Double): Self = StObject.set(x, "computedLength", value.asInstanceOf[js.Any])
+    inline def setComputedLength(value: Double): Self = StObject.set(x, "computedLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputedLengthUndefined: Self = StObject.set(x, "computedLength", js.undefined)
+    inline def setComputedLengthUndefined: Self = StObject.set(x, "computedLength", js.undefined)
     
-    @scala.inline
-    def setFeature(value: String): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+    inline def setFeature(value: String): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueRange(value: SourceRange): Self = StObject.set(x, "valueRange", value.asInstanceOf[js.Any])
+    inline def setValueRange(value: SourceRange): Self = StObject.set(x, "valueRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueRangeUndefined: Self = StObject.set(x, "valueRange", js.undefined)
+    inline def setValueRangeUndefined: Self = StObject.set(x, "valueRange", js.undefined)
   }
 }

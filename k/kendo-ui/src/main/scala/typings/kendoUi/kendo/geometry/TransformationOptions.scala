@@ -10,19 +10,15 @@ trait TransformationOptions extends StObject {
 }
 object TransformationOptions {
   
-  @scala.inline
-  def apply(): TransformationOptions = {
+  inline def apply(): TransformationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransformationOptions]
   }
   
-  @scala.inline
-  implicit class TransformationOptionsMutableBuilder[Self <: TransformationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TransformationOptions](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

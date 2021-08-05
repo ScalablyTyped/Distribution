@@ -27,55 +27,39 @@ trait HorizontalAlignment extends StObject {
 }
 object HorizontalAlignment {
   
-  @scala.inline
-  def apply(): HorizontalAlignment = {
+  inline def apply(): HorizontalAlignment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HorizontalAlignment]
   }
   
-  @scala.inline
-  implicit class HorizontalAlignmentMutableBuilder[Self <: HorizontalAlignment] (val x: Self) extends AnyVal {
+  extension [Self <: HorizontalAlignment](x: Self) {
     
-    @scala.inline
-    def setFont(value: typings.devextreme.mod.DevExpress.viz.Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: typings.devextreme.mod.DevExpress.viz.Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    @scala.inline
-    def setHorizontalAlignment(value: center | left | right): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
+    inline def setHorizontalAlignment(value: center | left | right): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
+    inline def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
     
-    @scala.inline
-    def setMargin(value: Bottom): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: Bottom): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    @scala.inline
-    def setPlaceholderSize(value: Double): Self = StObject.set(x, "placeholderSize", value.asInstanceOf[js.Any])
+    inline def setPlaceholderSize(value: Double): Self = StObject.set(x, "placeholderSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderSizeUndefined: Self = StObject.set(x, "placeholderSize", js.undefined)
+    inline def setPlaceholderSizeUndefined: Self = StObject.set(x, "placeholderSize", js.undefined)
     
-    @scala.inline
-    def setSubtitle(value: Font | String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+    inline def setSubtitle(value: Font | String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+    inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setVerticalAlignment(value: bottom | top): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
+    inline def setVerticalAlignment(value: bottom | top): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
+    inline def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
   }
 }

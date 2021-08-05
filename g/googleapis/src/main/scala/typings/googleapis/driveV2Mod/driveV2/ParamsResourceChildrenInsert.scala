@@ -34,37 +34,27 @@ trait ParamsResourceChildrenInsert
 }
 object ParamsResourceChildrenInsert {
   
-  @scala.inline
-  def apply(): ParamsResourceChildrenInsert = {
+  inline def apply(): ParamsResourceChildrenInsert = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceChildrenInsert]
   }
   
-  @scala.inline
-  implicit class ParamsResourceChildrenInsertMutableBuilder[Self <: ParamsResourceChildrenInsert] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceChildrenInsert](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setFolderId(value: String): Self = StObject.set(x, "folderId", value.asInstanceOf[js.Any])
+    inline def setFolderId(value: String): Self = StObject.set(x, "folderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFolderIdUndefined: Self = StObject.set(x, "folderId", js.undefined)
+    inline def setFolderIdUndefined: Self = StObject.set(x, "folderId", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaChildReference): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaChildReference): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
-    @scala.inline
-    def setSupportsTeamDrives(value: Boolean): Self = StObject.set(x, "supportsTeamDrives", value.asInstanceOf[js.Any])
+    inline def setSupportsTeamDrives(value: Boolean): Self = StObject.set(x, "supportsTeamDrives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsTeamDrivesUndefined: Self = StObject.set(x, "supportsTeamDrives", js.undefined)
+    inline def setSupportsTeamDrivesUndefined: Self = StObject.set(x, "supportsTeamDrives", js.undefined)
   }
 }

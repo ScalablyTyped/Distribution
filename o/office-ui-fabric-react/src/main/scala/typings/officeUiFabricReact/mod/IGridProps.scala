@@ -10,8 +10,7 @@ trait IGridProps
      with typings.officeUiFabricReact.buttonGridTypesMod.IButtonGridProps
 object IGridProps {
   
-  @scala.inline
-  def apply(columnCount: Double, items: js.Array[js.Any], onRenderItem: (js.Any, Double) => Element): IGridProps = {
+  inline def apply(columnCount: Double, items: js.Array[js.Any], onRenderItem: (js.Any, Double) => Element): IGridProps = {
     val __obj = js.Dynamic.literal(columnCount = columnCount.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], onRenderItem = js.Any.fromFunction2(onRenderItem))
     __obj.asInstanceOf[IGridProps]
   }

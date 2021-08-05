@@ -14,31 +14,23 @@ trait ZeptoAnimateSettings extends StObject {
 }
 object ZeptoAnimateSettings {
   
-  @scala.inline
-  def apply(): ZeptoAnimateSettings = {
+  inline def apply(): ZeptoAnimateSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ZeptoAnimateSettings]
   }
   
-  @scala.inline
-  implicit class ZeptoAnimateSettingsMutableBuilder[Self <: ZeptoAnimateSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ZeptoAnimateSettings](x: Self) {
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+    inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
   }
 }

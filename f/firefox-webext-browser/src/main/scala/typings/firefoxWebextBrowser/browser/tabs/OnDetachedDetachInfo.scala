@@ -12,19 +12,15 @@ trait OnDetachedDetachInfo extends StObject {
 }
 object OnDetachedDetachInfo {
   
-  @scala.inline
-  def apply(oldPosition: Double, oldWindowId: Double): OnDetachedDetachInfo = {
+  inline def apply(oldPosition: Double, oldWindowId: Double): OnDetachedDetachInfo = {
     val __obj = js.Dynamic.literal(oldPosition = oldPosition.asInstanceOf[js.Any], oldWindowId = oldWindowId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnDetachedDetachInfo]
   }
   
-  @scala.inline
-  implicit class OnDetachedDetachInfoMutableBuilder[Self <: OnDetachedDetachInfo] (val x: Self) extends AnyVal {
+  extension [Self <: OnDetachedDetachInfo](x: Self) {
     
-    @scala.inline
-    def setOldPosition(value: Double): Self = StObject.set(x, "oldPosition", value.asInstanceOf[js.Any])
+    inline def setOldPosition(value: Double): Self = StObject.set(x, "oldPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldWindowId(value: Double): Self = StObject.set(x, "oldWindowId", value.asInstanceOf[js.Any])
+    inline def setOldWindowId(value: Double): Self = StObject.set(x, "oldWindowId", value.asInstanceOf[js.Any])
   }
 }

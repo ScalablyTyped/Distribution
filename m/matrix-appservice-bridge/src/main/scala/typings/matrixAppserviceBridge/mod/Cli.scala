@@ -45,18 +45,15 @@ object Cli {
   @JSImport("matrix-appservice-bridge", "Cli.DEFAULT_FILENAME")
   @js.native
   def DEFAULT_FILENAME: String = js.native
-  @scala.inline
-  def DEFAULT_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_FILENAME")(x.asInstanceOf[js.Any])
+  inline def DEFAULT_FILENAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_FILENAME")(x.asInstanceOf[js.Any])
   
   @JSImport("matrix-appservice-bridge", "Cli.DEFAULT_PORT")
   @js.native
   def DEFAULT_PORT: Double = js.native
-  @scala.inline
-  def DEFAULT_PORT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_PORT")(x.asInstanceOf[js.Any])
+  inline def DEFAULT_PORT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_PORT")(x.asInstanceOf[js.Any])
   
   @JSImport("matrix-appservice-bridge", "Cli.DEFAULT_WATCH_INTERVAL")
   @js.native
   def DEFAULT_WATCH_INTERVAL: Double = js.native
-  @scala.inline
-  def DEFAULT_WATCH_INTERVAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_WATCH_INTERVAL")(x.asInstanceOf[js.Any])
+  inline def DEFAULT_WATCH_INTERVAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_WATCH_INTERVAL")(x.asInstanceOf[js.Any])
 }

@@ -20,38 +20,28 @@ object gradeServiceMod {
   }
   object GradeFilters {
     
-    @scala.inline
-    def apply(): GradeFilters = {
+    inline def apply(): GradeFilters = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GradeFilters]
     }
     
-    @scala.inline
-    implicit class GradeFiltersMutableBuilder[Self <: GradeFilters] (val x: Self) extends AnyVal {
+    extension [Self <: GradeFilters](x: Self) {
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setResourceLinkId(value: Boolean): Self = StObject.set(x, "resourceLinkId", value.asInstanceOf[js.Any])
+      inline def setResourceLinkId(value: Boolean): Self = StObject.set(x, "resourceLinkId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceLinkIdUndefined: Self = StObject.set(x, "resourceLinkId", js.undefined)
+      inline def setResourceLinkIdUndefined: Self = StObject.set(x, "resourceLinkId", js.undefined)
       
-      @scala.inline
-      def setTag(value: Boolean): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: Boolean): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
       
-      @scala.inline
-      def setUserId(value: Boolean): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+      inline def setUserId(value: Boolean): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+      inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
     }
   }
   
@@ -76,29 +66,22 @@ object gradeServiceMod {
   }
   object PublishedGrade {
     
-    @scala.inline
-    def apply(activityProgress: String, gradingProgress: String, scoreGiven: Double): PublishedGrade = {
+    inline def apply(activityProgress: String, gradingProgress: String, scoreGiven: Double): PublishedGrade = {
       val __obj = js.Dynamic.literal(activityProgress = activityProgress.asInstanceOf[js.Any], gradingProgress = gradingProgress.asInstanceOf[js.Any], scoreGiven = scoreGiven.asInstanceOf[js.Any])
       __obj.asInstanceOf[PublishedGrade]
     }
     
-    @scala.inline
-    implicit class PublishedGradeMutableBuilder[Self <: PublishedGrade] (val x: Self) extends AnyVal {
+    extension [Self <: PublishedGrade](x: Self) {
       
-      @scala.inline
-      def setActivityProgress(value: String): Self = StObject.set(x, "activityProgress", value.asInstanceOf[js.Any])
+      inline def setActivityProgress(value: String): Self = StObject.set(x, "activityProgress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setGradingProgress(value: String): Self = StObject.set(x, "gradingProgress", value.asInstanceOf[js.Any])
+      inline def setGradingProgress(value: String): Self = StObject.set(x, "gradingProgress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScoreGiven(value: Double): Self = StObject.set(x, "scoreGiven", value.asInstanceOf[js.Any])
+      inline def setScoreGiven(value: Double): Self = StObject.set(x, "scoreGiven", value.asInstanceOf[js.Any])
     }
   }
   
@@ -118,8 +101,7 @@ object gradeServiceMod {
   }
   object RetrievedGrade {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       comment: String,
       id: String,
       resultMaximum: Double,
@@ -131,26 +113,19 @@ object gradeServiceMod {
       __obj.asInstanceOf[RetrievedGrade]
     }
     
-    @scala.inline
-    implicit class RetrievedGradeMutableBuilder[Self <: RetrievedGrade] (val x: Self) extends AnyVal {
+    extension [Self <: RetrievedGrade](x: Self) {
       
-      @scala.inline
-      def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultMaximum(value: Double): Self = StObject.set(x, "resultMaximum", value.asInstanceOf[js.Any])
+      inline def setResultMaximum(value: Double): Self = StObject.set(x, "resultMaximum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultScore(value: Double): Self = StObject.set(x, "resultScore", value.asInstanceOf[js.Any])
+      inline def setResultScore(value: Double): Self = StObject.set(x, "resultScore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScoreOf(value: String): Self = StObject.set(x, "scoreOf", value.asInstanceOf[js.Any])
+      inline def setScoreOf(value: String): Self = StObject.set(x, "scoreOf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+      inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     }
   }
 }

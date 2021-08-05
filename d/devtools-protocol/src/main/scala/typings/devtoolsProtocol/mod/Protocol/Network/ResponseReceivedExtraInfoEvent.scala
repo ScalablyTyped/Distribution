@@ -31,31 +31,23 @@ trait ResponseReceivedExtraInfoEvent extends StObject {
 }
 object ResponseReceivedExtraInfoEvent {
   
-  @scala.inline
-  def apply(blockedCookies: js.Array[BlockedSetCookieWithReason], headers: Headers, requestId: RequestId): ResponseReceivedExtraInfoEvent = {
+  inline def apply(blockedCookies: js.Array[BlockedSetCookieWithReason], headers: Headers, requestId: RequestId): ResponseReceivedExtraInfoEvent = {
     val __obj = js.Dynamic.literal(blockedCookies = blockedCookies.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResponseReceivedExtraInfoEvent]
   }
   
-  @scala.inline
-  implicit class ResponseReceivedExtraInfoEventMutableBuilder[Self <: ResponseReceivedExtraInfoEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ResponseReceivedExtraInfoEvent](x: Self) {
     
-    @scala.inline
-    def setBlockedCookies(value: js.Array[BlockedSetCookieWithReason]): Self = StObject.set(x, "blockedCookies", value.asInstanceOf[js.Any])
+    inline def setBlockedCookies(value: js.Array[BlockedSetCookieWithReason]): Self = StObject.set(x, "blockedCookies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockedCookiesVarargs(value: BlockedSetCookieWithReason*): Self = StObject.set(x, "blockedCookies", js.Array(value :_*))
+    inline def setBlockedCookiesVarargs(value: BlockedSetCookieWithReason*): Self = StObject.set(x, "blockedCookies", js.Array(value :_*))
     
-    @scala.inline
-    def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersText(value: String): Self = StObject.set(x, "headersText", value.asInstanceOf[js.Any])
+    inline def setHeadersText(value: String): Self = StObject.set(x, "headersText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersTextUndefined: Self = StObject.set(x, "headersText", js.undefined)
+    inline def setHeadersTextUndefined: Self = StObject.set(x, "headersText", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
   }
 }

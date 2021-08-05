@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TableDefAttributeEnum extends StObject
 object TableDefAttributeEnum {
   
-  @scala.inline
-  def dbAttachExclusive: `65536` = 65536.asInstanceOf[`65536`]
+  inline def dbAttachExclusive: `65536` = 65536.asInstanceOf[`65536`]
   
-  @scala.inline
-  def dbAttachSavePWD: `131072` = 131072.asInstanceOf[`131072`]
+  inline def dbAttachSavePWD: `131072` = 131072.asInstanceOf[`131072`]
   
-  @scala.inline
-  def dbAttachedODBC: `536870912` = 536870912.asInstanceOf[`536870912`]
+  inline def dbAttachedODBC: `536870912` = 536870912.asInstanceOf[`536870912`]
   
-  @scala.inline
-  def dbAttachedTable: `1073741824` = 1073741824.asInstanceOf[`1073741824`]
+  inline def dbAttachedTable: `1073741824` = 1073741824.asInstanceOf[`1073741824`]
   
-  @scala.inline
-  def dbHiddenObject: `1` = 1.asInstanceOf[`1`]
+  inline def dbHiddenObject: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def dbSystemObject: `-2147483646` = -2147483646.asInstanceOf[`-2147483646`]
+  inline def dbSystemObject: `-2147483646` = -2147483646.asInstanceOf[`-2147483646`]
 }

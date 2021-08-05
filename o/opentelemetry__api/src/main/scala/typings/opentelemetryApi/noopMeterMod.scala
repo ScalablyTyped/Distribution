@@ -185,7 +185,7 @@ object noopMeterMod {
        with UnboundMetric[T] {
     def this(instrument: T) = this()
     
-    val _instrument: js.Any = js.native
+    /* private */ val _instrument: js.Any = js.native
     
     /**
       * Returns a Instrument associated with specified Labels.

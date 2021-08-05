@@ -13,19 +13,15 @@ trait IRawQuery extends StObject {
 }
 object IRawQuery {
   
-  @scala.inline
-  def apply(ModifyWhere: () => IRawQueryModify, ReplaceWhere: () => IFieldExpression): IRawQuery = {
+  inline def apply(ModifyWhere: () => IRawQueryModify, ReplaceWhere: () => IFieldExpression): IRawQuery = {
     val __obj = js.Dynamic.literal(ModifyWhere = js.Any.fromFunction0(ModifyWhere), ReplaceWhere = js.Any.fromFunction0(ReplaceWhere))
     __obj.asInstanceOf[IRawQuery]
   }
   
-  @scala.inline
-  implicit class IRawQueryMutableBuilder[Self <: IRawQuery] (val x: Self) extends AnyVal {
+  extension [Self <: IRawQuery](x: Self) {
     
-    @scala.inline
-    def setModifyWhere(value: () => IRawQueryModify): Self = StObject.set(x, "ModifyWhere", js.Any.fromFunction0(value))
+    inline def setModifyWhere(value: () => IRawQueryModify): Self = StObject.set(x, "ModifyWhere", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReplaceWhere(value: () => IFieldExpression): Self = StObject.set(x, "ReplaceWhere", js.Any.fromFunction0(value))
+    inline def setReplaceWhere(value: () => IFieldExpression): Self = StObject.set(x, "ReplaceWhere", js.Any.fromFunction0(value))
   }
 }

@@ -15,28 +15,21 @@ trait UserNotFound extends StObject {
 }
 object UserNotFound {
   
-  @scala.inline
-  def apply(userAttributes: StringMap): UserNotFound = {
+  inline def apply(userAttributes: StringMap): UserNotFound = {
     val __obj = js.Dynamic.literal(userAttributes = userAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserNotFound]
   }
   
-  @scala.inline
-  implicit class UserNotFoundMutableBuilder[Self <: UserNotFound] (val x: Self) extends AnyVal {
+  extension [Self <: UserNotFound](x: Self) {
     
-    @scala.inline
-    def setUserAttributes(value: StringMap): Self = StObject.set(x, "userAttributes", value.asInstanceOf[js.Any])
+    inline def setUserAttributes(value: StringMap): Self = StObject.set(x, "userAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNotFound(value: Boolean): Self = StObject.set(x, "userNotFound", value.asInstanceOf[js.Any])
+    inline def setUserNotFound(value: Boolean): Self = StObject.set(x, "userNotFound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNotFoundUndefined: Self = StObject.set(x, "userNotFound", js.undefined)
+    inline def setUserNotFoundUndefined: Self = StObject.set(x, "userNotFound", js.undefined)
     
-    @scala.inline
-    def setValidationData(value: StringMap): Self = StObject.set(x, "validationData", value.asInstanceOf[js.Any])
+    inline def setValidationData(value: StringMap): Self = StObject.set(x, "validationData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationDataUndefined: Self = StObject.set(x, "validationData", js.undefined)
+    inline def setValidationDataUndefined: Self = StObject.set(x, "validationData", js.undefined)
   }
 }

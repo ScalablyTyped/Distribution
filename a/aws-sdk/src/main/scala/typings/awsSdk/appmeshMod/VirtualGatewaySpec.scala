@@ -20,31 +20,23 @@ trait VirtualGatewaySpec extends StObject {
 }
 object VirtualGatewaySpec {
   
-  @scala.inline
-  def apply(listeners: VirtualGatewayListeners): VirtualGatewaySpec = {
+  inline def apply(listeners: VirtualGatewayListeners): VirtualGatewaySpec = {
     val __obj = js.Dynamic.literal(listeners = listeners.asInstanceOf[js.Any])
     __obj.asInstanceOf[VirtualGatewaySpec]
   }
   
-  @scala.inline
-  implicit class VirtualGatewaySpecMutableBuilder[Self <: VirtualGatewaySpec] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualGatewaySpec](x: Self) {
     
-    @scala.inline
-    def setBackendDefaults(value: VirtualGatewayBackendDefaults): Self = StObject.set(x, "backendDefaults", value.asInstanceOf[js.Any])
+    inline def setBackendDefaults(value: VirtualGatewayBackendDefaults): Self = StObject.set(x, "backendDefaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackendDefaultsUndefined: Self = StObject.set(x, "backendDefaults", js.undefined)
+    inline def setBackendDefaultsUndefined: Self = StObject.set(x, "backendDefaults", js.undefined)
     
-    @scala.inline
-    def setListeners(value: VirtualGatewayListeners): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
+    inline def setListeners(value: VirtualGatewayListeners): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListenersVarargs(value: VirtualGatewayListener*): Self = StObject.set(x, "listeners", js.Array(value :_*))
+    inline def setListenersVarargs(value: VirtualGatewayListener*): Self = StObject.set(x, "listeners", js.Array(value :_*))
     
-    @scala.inline
-    def setLogging(value: VirtualGatewayLogging): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
+    inline def setLogging(value: VirtualGatewayLogging): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
+    inline def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
   }
 }

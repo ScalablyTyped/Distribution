@@ -18,25 +18,19 @@ trait DeleteTagsOutput extends StObject {
 }
 object DeleteTagsOutput {
   
-  @scala.inline
-  def apply(): DeleteTagsOutput = {
+  inline def apply(): DeleteTagsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteTagsOutput]
   }
   
-  @scala.inline
-  implicit class DeleteTagsOutputMutableBuilder[Self <: DeleteTagsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteTagsOutput](x: Self) {
     
-    @scala.inline
-    def setResourceId(value: EntityId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: EntityId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: TaggableResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: TaggableResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
   }
 }

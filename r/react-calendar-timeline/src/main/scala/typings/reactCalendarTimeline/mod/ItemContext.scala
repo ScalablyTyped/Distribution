@@ -44,8 +44,7 @@ trait ItemContext extends StObject {
 }
 object ItemContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canMove: Boolean,
     canResizeLeft: Boolean,
     canResizeRight: Boolean,
@@ -67,55 +66,38 @@ object ItemContext {
     __obj.asInstanceOf[ItemContext]
   }
   
-  @scala.inline
-  implicit class ItemContextMutableBuilder[Self <: ItemContext] (val x: Self) extends AnyVal {
+  extension [Self <: ItemContext](x: Self) {
     
-    @scala.inline
-    def setCanMove(value: Boolean): Self = StObject.set(x, "canMove", value.asInstanceOf[js.Any])
+    inline def setCanMove(value: Boolean): Self = StObject.set(x, "canMove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanResizeLeft(value: Boolean): Self = StObject.set(x, "canResizeLeft", value.asInstanceOf[js.Any])
+    inline def setCanResizeLeft(value: Boolean): Self = StObject.set(x, "canResizeLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanResizeRight(value: Boolean): Self = StObject.set(x, "canResizeRight", value.asInstanceOf[js.Any])
+    inline def setCanResizeRight(value: Boolean): Self = StObject.set(x, "canResizeRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensions(value: CollisionLeft): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: CollisionLeft): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragGroupDelta(value: Double): Self = StObject.set(x, "dragGroupDelta", value.asInstanceOf[js.Any])
+    inline def setDragGroupDelta(value: Double): Self = StObject.set(x, "dragGroupDelta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragStart(value: X): Self = StObject.set(x, "dragStart", value.asInstanceOf[js.Any])
+    inline def setDragStart(value: X): Self = StObject.set(x, "dragStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragTime(value: Double): Self = StObject.set(x, "dragTime", value.asInstanceOf[js.Any])
+    inline def setDragTime(value: Double): Self = StObject.set(x, "dragTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
+    inline def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizeEdge(value: left | right): Self = StObject.set(x, "resizeEdge", value.asInstanceOf[js.Any])
+    inline def setResizeEdge(value: left | right): Self = StObject.set(x, "resizeEdge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizeStart(value: Double): Self = StObject.set(x, "resizeStart", value.asInstanceOf[js.Any])
+    inline def setResizeStart(value: Double): Self = StObject.set(x, "resizeStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizeTime(value: Double): Self = StObject.set(x, "resizeTime", value.asInstanceOf[js.Any])
+    inline def setResizeTime(value: Double): Self = StObject.set(x, "resizeTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizing(value: Boolean): Self = StObject.set(x, "resizing", value.asInstanceOf[js.Any])
+    inline def setResizing(value: Boolean): Self = StObject.set(x, "resizing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseResizeHandle(value: Boolean): Self = StObject.set(x, "useResizeHandle", value.asInstanceOf[js.Any])
+    inline def setUseResizeHandle(value: Boolean): Self = StObject.set(x, "useResizeHandle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Boolean): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Boolean): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

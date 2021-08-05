@@ -15,19 +15,15 @@ trait DataProtectionInfo extends StObject {
 }
 object DataProtectionInfo {
   
-  @scala.inline
-  def apply(identity: String, status: DataProtectionStatus): DataProtectionInfo = {
+  inline def apply(identity: String, status: DataProtectionStatus): DataProtectionInfo = {
     val __obj = js.Dynamic.literal(identity = identity.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataProtectionInfo]
   }
   
-  @scala.inline
-  implicit class DataProtectionInfoMutableBuilder[Self <: DataProtectionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DataProtectionInfo](x: Self) {
     
-    @scala.inline
-    def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+    inline def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: DataProtectionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: DataProtectionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

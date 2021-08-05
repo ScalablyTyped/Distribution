@@ -17,17 +17,14 @@ object spacingMod extends Shortcut {
   }
   object Spacing {
     
-    @scala.inline
-    def apply(unit: Double): Spacing = {
+    inline def apply(unit: Double): Spacing = {
       val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any])
       __obj.asInstanceOf[Spacing]
     }
     
-    @scala.inline
-    implicit class SpacingMutableBuilder[Self <: Spacing] (val x: Self) extends AnyVal {
+    extension [Self <: Spacing](x: Self) {
       
-      @scala.inline
-      def setUnit(value: Double): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+      inline def setUnit(value: Double): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     }
   }
   
@@ -38,20 +35,16 @@ object spacingMod extends Shortcut {
   }
   object SpacingOptions {
     
-    @scala.inline
-    def apply(): SpacingOptions = {
+    inline def apply(): SpacingOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SpacingOptions]
     }
     
-    @scala.inline
-    implicit class SpacingOptionsMutableBuilder[Self <: SpacingOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SpacingOptions](x: Self) {
       
-      @scala.inline
-      def setUnit(value: Double): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+      inline def setUnit(value: Double): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+      inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     }
   }
   

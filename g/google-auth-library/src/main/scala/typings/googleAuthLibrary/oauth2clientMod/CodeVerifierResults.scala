@@ -20,22 +20,17 @@ trait CodeVerifierResults extends StObject {
 }
 object CodeVerifierResults {
   
-  @scala.inline
-  def apply(codeVerifier: String): CodeVerifierResults = {
+  inline def apply(codeVerifier: String): CodeVerifierResults = {
     val __obj = js.Dynamic.literal(codeVerifier = codeVerifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeVerifierResults]
   }
   
-  @scala.inline
-  implicit class CodeVerifierResultsMutableBuilder[Self <: CodeVerifierResults] (val x: Self) extends AnyVal {
+  extension [Self <: CodeVerifierResults](x: Self) {
     
-    @scala.inline
-    def setCodeChallenge(value: String): Self = StObject.set(x, "codeChallenge", value.asInstanceOf[js.Any])
+    inline def setCodeChallenge(value: String): Self = StObject.set(x, "codeChallenge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeChallengeUndefined: Self = StObject.set(x, "codeChallenge", js.undefined)
+    inline def setCodeChallengeUndefined: Self = StObject.set(x, "codeChallenge", js.undefined)
     
-    @scala.inline
-    def setCodeVerifier(value: String): Self = StObject.set(x, "codeVerifier", value.asInstanceOf[js.Any])
+    inline def setCodeVerifier(value: String): Self = StObject.set(x, "codeVerifier", value.asInstanceOf[js.Any])
   }
 }

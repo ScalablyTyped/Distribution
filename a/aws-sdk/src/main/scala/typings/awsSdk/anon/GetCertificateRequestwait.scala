@@ -24,25 +24,19 @@ trait GetCertificateRequestwait extends StObject {
 }
 object GetCertificateRequestwait {
   
-  @scala.inline
-  def apply(CertificateArn: Arn, CertificateAuthorityArn: Arn): GetCertificateRequestwait = {
+  inline def apply(CertificateArn: Arn, CertificateAuthorityArn: Arn): GetCertificateRequestwait = {
     val __obj = js.Dynamic.literal(CertificateArn = CertificateArn.asInstanceOf[js.Any], CertificateAuthorityArn = CertificateAuthorityArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCertificateRequestwait]
   }
   
-  @scala.inline
-  implicit class GetCertificateRequestwaitMutableBuilder[Self <: GetCertificateRequestwait] (val x: Self) extends AnyVal {
+  extension [Self <: GetCertificateRequestwait](x: Self) {
     
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
+    inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    @scala.inline
-    def setCertificateArn(value: Arn): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
+    inline def setCertificateArn(value: Arn): Self = StObject.set(x, "CertificateArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateAuthorityArn(value: Arn): Self = StObject.set(x, "CertificateAuthorityArn", value.asInstanceOf[js.Any])
+    inline def setCertificateAuthorityArn(value: Arn): Self = StObject.set(x, "CertificateAuthorityArn", value.asInstanceOf[js.Any])
   }
 }

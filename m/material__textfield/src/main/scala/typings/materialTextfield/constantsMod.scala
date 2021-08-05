@@ -37,8 +37,7 @@ object constantsMod {
     @JSImport("@material/textfield/character-counter/constants", "cssClasses.ROOT")
     @js.native
     def ROOT: String = js.native
-    @scala.inline
-    def ROOT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT")(x.asInstanceOf[js.Any])
+    inline def ROOT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT")(x.asInstanceOf[js.Any])
   }
   
   object strings {
@@ -50,7 +49,6 @@ object constantsMod {
     @JSImport("@material/textfield/character-counter/constants", "strings.ROOT_SELECTOR")
     @js.native
     def ROOT_SELECTOR: String = js.native
-    @scala.inline
-    def ROOT_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT_SELECTOR")(x.asInstanceOf[js.Any])
+    inline def ROOT_SELECTOR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ROOT_SELECTOR")(x.asInstanceOf[js.Any])
   }
 }

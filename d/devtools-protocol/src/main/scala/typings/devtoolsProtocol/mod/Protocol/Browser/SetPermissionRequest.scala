@@ -28,31 +28,23 @@ trait SetPermissionRequest extends StObject {
 }
 object SetPermissionRequest {
   
-  @scala.inline
-  def apply(permission: PermissionDescriptor, setting: PermissionSetting): SetPermissionRequest = {
+  inline def apply(permission: PermissionDescriptor, setting: PermissionSetting): SetPermissionRequest = {
     val __obj = js.Dynamic.literal(permission = permission.asInstanceOf[js.Any], setting = setting.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetPermissionRequest]
   }
   
-  @scala.inline
-  implicit class SetPermissionRequestMutableBuilder[Self <: SetPermissionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetPermissionRequest](x: Self) {
     
-    @scala.inline
-    def setBrowserContextId(value: BrowserContextID): Self = StObject.set(x, "browserContextId", value.asInstanceOf[js.Any])
+    inline def setBrowserContextId(value: BrowserContextID): Self = StObject.set(x, "browserContextId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowserContextIdUndefined: Self = StObject.set(x, "browserContextId", js.undefined)
+    inline def setBrowserContextIdUndefined: Self = StObject.set(x, "browserContextId", js.undefined)
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+    inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
     
-    @scala.inline
-    def setPermission(value: PermissionDescriptor): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
+    inline def setPermission(value: PermissionDescriptor): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetting(value: PermissionSetting): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
+    inline def setSetting(value: PermissionSetting): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
   }
 }

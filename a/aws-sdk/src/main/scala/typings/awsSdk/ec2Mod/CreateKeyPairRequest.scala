@@ -23,31 +23,23 @@ trait CreateKeyPairRequest extends StObject {
 }
 object CreateKeyPairRequest {
   
-  @scala.inline
-  def apply(KeyName: String): CreateKeyPairRequest = {
+  inline def apply(KeyName: String): CreateKeyPairRequest = {
     val __obj = js.Dynamic.literal(KeyName = KeyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateKeyPairRequest]
   }
   
-  @scala.inline
-  implicit class CreateKeyPairRequestMutableBuilder[Self <: CreateKeyPairRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateKeyPairRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setKeyName(value: String): Self = StObject.set(x, "KeyName", value.asInstanceOf[js.Any])
+    inline def setKeyName(value: String): Self = StObject.set(x, "KeyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagSpecifications(value: TagSpecificationList): Self = StObject.set(x, "TagSpecifications", value.asInstanceOf[js.Any])
+    inline def setTagSpecifications(value: TagSpecificationList): Self = StObject.set(x, "TagSpecifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
+    inline def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
     
-    @scala.inline
-    def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
+    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
   }
 }

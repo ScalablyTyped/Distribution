@@ -40,8 +40,7 @@ trait FolderPicker extends StObject {
 }
 object FolderPicker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     commitButtonText: String,
     continuationData: ValueSet,
     fileTypeFilter: IVector[String],
@@ -55,31 +54,22 @@ object FolderPicker {
     __obj.asInstanceOf[FolderPicker]
   }
   
-  @scala.inline
-  implicit class FolderPickerMutableBuilder[Self <: FolderPicker] (val x: Self) extends AnyVal {
+  extension [Self <: FolderPicker](x: Self) {
     
-    @scala.inline
-    def setCommitButtonText(value: String): Self = StObject.set(x, "commitButtonText", value.asInstanceOf[js.Any])
+    inline def setCommitButtonText(value: String): Self = StObject.set(x, "commitButtonText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinuationData(value: ValueSet): Self = StObject.set(x, "continuationData", value.asInstanceOf[js.Any])
+    inline def setContinuationData(value: ValueSet): Self = StObject.set(x, "continuationData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileTypeFilter(value: IVector[String]): Self = StObject.set(x, "fileTypeFilter", value.asInstanceOf[js.Any])
+    inline def setFileTypeFilter(value: IVector[String]): Self = StObject.set(x, "fileTypeFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickFolderAndContinue(value: () => Unit): Self = StObject.set(x, "pickFolderAndContinue", js.Any.fromFunction0(value))
+    inline def setPickFolderAndContinue(value: () => Unit): Self = StObject.set(x, "pickFolderAndContinue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPickSingleFolderAsync(value: () => IPromiseWithIAsyncOperation[StorageFolder]): Self = StObject.set(x, "pickSingleFolderAsync", js.Any.fromFunction0(value))
+    inline def setPickSingleFolderAsync(value: () => IPromiseWithIAsyncOperation[StorageFolder]): Self = StObject.set(x, "pickSingleFolderAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSettingsIdentifier(value: String): Self = StObject.set(x, "settingsIdentifier", value.asInstanceOf[js.Any])
+    inline def setSettingsIdentifier(value: String): Self = StObject.set(x, "settingsIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestedStartLocation(value: PickerLocationId): Self = StObject.set(x, "suggestedStartLocation", value.asInstanceOf[js.Any])
+    inline def setSuggestedStartLocation(value: PickerLocationId): Self = StObject.set(x, "suggestedStartLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewMode(value: PickerViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
+    inline def setViewMode(value: PickerViewMode): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
   }
 }

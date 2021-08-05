@@ -18,25 +18,19 @@ trait UsageAllocation extends StObject {
 }
 object UsageAllocation {
   
-  @scala.inline
-  def apply(AllocatedUsageQuantity: AllocatedUsageQuantity): UsageAllocation = {
+  inline def apply(AllocatedUsageQuantity: AllocatedUsageQuantity): UsageAllocation = {
     val __obj = js.Dynamic.literal(AllocatedUsageQuantity = AllocatedUsageQuantity.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsageAllocation]
   }
   
-  @scala.inline
-  implicit class UsageAllocationMutableBuilder[Self <: UsageAllocation] (val x: Self) extends AnyVal {
+  extension [Self <: UsageAllocation](x: Self) {
     
-    @scala.inline
-    def setAllocatedUsageQuantity(value: AllocatedUsageQuantity): Self = StObject.set(x, "AllocatedUsageQuantity", value.asInstanceOf[js.Any])
+    inline def setAllocatedUsageQuantity(value: AllocatedUsageQuantity): Self = StObject.set(x, "AllocatedUsageQuantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

@@ -12,19 +12,15 @@ trait SchedulerAddEvent
 }
 object SchedulerAddEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Scheduler): SchedulerAddEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Scheduler): SchedulerAddEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchedulerAddEvent]
   }
   
-  @scala.inline
-  implicit class SchedulerAddEventMutableBuilder[Self <: SchedulerAddEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SchedulerAddEvent](x: Self) {
     
-    @scala.inline
-    def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
   }
 }

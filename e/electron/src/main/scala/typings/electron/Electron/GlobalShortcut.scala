@@ -67,8 +67,7 @@ trait GlobalShortcut extends StObject {
 }
 object GlobalShortcut {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isRegistered: Accelerator => Boolean,
     register: (Accelerator, js.Function0[Unit]) => Boolean,
     registerAll: (js.Array[String], js.Function0[Unit]) => Unit,
@@ -79,22 +78,16 @@ object GlobalShortcut {
     __obj.asInstanceOf[GlobalShortcut]
   }
   
-  @scala.inline
-  implicit class GlobalShortcutMutableBuilder[Self <: GlobalShortcut] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalShortcut](x: Self) {
     
-    @scala.inline
-    def setIsRegistered(value: Accelerator => Boolean): Self = StObject.set(x, "isRegistered", js.Any.fromFunction1(value))
+    inline def setIsRegistered(value: Accelerator => Boolean): Self = StObject.set(x, "isRegistered", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegister(value: (Accelerator, js.Function0[Unit]) => Boolean): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
+    inline def setRegister(value: (Accelerator, js.Function0[Unit]) => Boolean): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRegisterAll(value: (js.Array[String], js.Function0[Unit]) => Unit): Self = StObject.set(x, "registerAll", js.Any.fromFunction2(value))
+    inline def setRegisterAll(value: (js.Array[String], js.Function0[Unit]) => Unit): Self = StObject.set(x, "registerAll", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUnregister(value: Accelerator => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction1(value))
+    inline def setUnregister(value: Accelerator => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnregisterAll(value: () => Unit): Self = StObject.set(x, "unregisterAll", js.Any.fromFunction0(value))
+    inline def setUnregisterAll(value: () => Unit): Self = StObject.set(x, "unregisterAll", js.Any.fromFunction0(value))
   }
 }

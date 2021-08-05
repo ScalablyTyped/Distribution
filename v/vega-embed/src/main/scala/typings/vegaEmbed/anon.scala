@@ -18,38 +18,28 @@ object anon {
   }
   object Bottom {
     
-    @scala.inline
-    def apply(): Bottom = {
+    inline def apply(): Bottom = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Bottom]
     }
     
-    @scala.inline
-    implicit class BottomMutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
+    extension [Self <: Bottom](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+      inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+      inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     }
   }
   
@@ -70,50 +60,36 @@ object anon {
   }
   object PartialCLICKTOVIEWACTIONS {
     
-    @scala.inline
-    def apply(): PartialCLICKTOVIEWACTIONS = {
+    inline def apply(): PartialCLICKTOVIEWACTIONS = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialCLICKTOVIEWACTIONS]
     }
     
-    @scala.inline
-    implicit class PartialCLICKTOVIEWACTIONSMutableBuilder[Self <: PartialCLICKTOVIEWACTIONS] (val x: Self) extends AnyVal {
+    extension [Self <: PartialCLICKTOVIEWACTIONS](x: Self) {
       
-      @scala.inline
-      def setCLICK_TO_VIEW_ACTIONS(value: String): Self = StObject.set(x, "CLICK_TO_VIEW_ACTIONS", value.asInstanceOf[js.Any])
+      inline def setCLICK_TO_VIEW_ACTIONS(value: String): Self = StObject.set(x, "CLICK_TO_VIEW_ACTIONS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCLICK_TO_VIEW_ACTIONSUndefined: Self = StObject.set(x, "CLICK_TO_VIEW_ACTIONS", js.undefined)
+      inline def setCLICK_TO_VIEW_ACTIONSUndefined: Self = StObject.set(x, "CLICK_TO_VIEW_ACTIONS", js.undefined)
       
-      @scala.inline
-      def setCOMPILED_ACTION(value: String): Self = StObject.set(x, "COMPILED_ACTION", value.asInstanceOf[js.Any])
+      inline def setCOMPILED_ACTION(value: String): Self = StObject.set(x, "COMPILED_ACTION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCOMPILED_ACTIONUndefined: Self = StObject.set(x, "COMPILED_ACTION", js.undefined)
+      inline def setCOMPILED_ACTIONUndefined: Self = StObject.set(x, "COMPILED_ACTION", js.undefined)
       
-      @scala.inline
-      def setEDITOR_ACTION(value: String): Self = StObject.set(x, "EDITOR_ACTION", value.asInstanceOf[js.Any])
+      inline def setEDITOR_ACTION(value: String): Self = StObject.set(x, "EDITOR_ACTION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEDITOR_ACTIONUndefined: Self = StObject.set(x, "EDITOR_ACTION", js.undefined)
+      inline def setEDITOR_ACTIONUndefined: Self = StObject.set(x, "EDITOR_ACTION", js.undefined)
       
-      @scala.inline
-      def setPNG_ACTION(value: String): Self = StObject.set(x, "PNG_ACTION", value.asInstanceOf[js.Any])
+      inline def setPNG_ACTION(value: String): Self = StObject.set(x, "PNG_ACTION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPNG_ACTIONUndefined: Self = StObject.set(x, "PNG_ACTION", js.undefined)
+      inline def setPNG_ACTIONUndefined: Self = StObject.set(x, "PNG_ACTION", js.undefined)
       
-      @scala.inline
-      def setSOURCE_ACTION(value: String): Self = StObject.set(x, "SOURCE_ACTION", value.asInstanceOf[js.Any])
+      inline def setSOURCE_ACTION(value: String): Self = StObject.set(x, "SOURCE_ACTION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSOURCE_ACTIONUndefined: Self = StObject.set(x, "SOURCE_ACTION", js.undefined)
+      inline def setSOURCE_ACTIONUndefined: Self = StObject.set(x, "SOURCE_ACTION", js.undefined)
       
-      @scala.inline
-      def setSVG_ACTION(value: String): Self = StObject.set(x, "SVG_ACTION", value.asInstanceOf[js.Any])
+      inline def setSVG_ACTION(value: String): Self = StObject.set(x, "SVG_ACTION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSVG_ACTIONUndefined: Self = StObject.set(x, "SVG_ACTION", js.undefined)
+      inline def setSVG_ACTIONUndefined: Self = StObject.set(x, "SVG_ACTION", js.undefined)
     }
   }
   
@@ -125,26 +101,20 @@ object anon {
   }
   object Png {
     
-    @scala.inline
-    def apply(): Png = {
+    inline def apply(): Png = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Png]
     }
     
-    @scala.inline
-    implicit class PngMutableBuilder[Self <: Png] (val x: Self) extends AnyVal {
+    extension [Self <: Png](x: Self) {
       
-      @scala.inline
-      def setPng(value: Boolean): Self = StObject.set(x, "png", value.asInstanceOf[js.Any])
+      inline def setPng(value: Boolean): Self = StObject.set(x, "png", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPngUndefined: Self = StObject.set(x, "png", js.undefined)
+      inline def setPngUndefined: Self = StObject.set(x, "png", js.undefined)
       
-      @scala.inline
-      def setSvg(value: Boolean): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
+      inline def setSvg(value: Boolean): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSvgUndefined: Self = StObject.set(x, "svg", js.undefined)
+      inline def setSvgUndefined: Self = StObject.set(x, "svg", js.undefined)
     }
   }
   
@@ -156,20 +126,16 @@ object anon {
   }
   object Svg {
     
-    @scala.inline
-    def apply(png: Boolean, svg: Boolean): Svg = {
+    inline def apply(png: Boolean, svg: Boolean): Svg = {
       val __obj = js.Dynamic.literal(png = png.asInstanceOf[js.Any], svg = svg.asInstanceOf[js.Any])
       __obj.asInstanceOf[Svg]
     }
     
-    @scala.inline
-    implicit class SvgMutableBuilder[Self <: Svg] (val x: Self) extends AnyVal {
+    extension [Self <: Svg](x: Self) {
       
-      @scala.inline
-      def setPng(value: Boolean): Self = StObject.set(x, "png", value.asInstanceOf[js.Any])
+      inline def setPng(value: Boolean): Self = StObject.set(x, "png", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSvg(value: Boolean): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
+      inline def setSvg(value: Boolean): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
     }
   }
 }

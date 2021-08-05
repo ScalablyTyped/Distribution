@@ -17,31 +17,23 @@ trait SchemaGooglePrivacyDlpV2Table extends StObject {
 }
 object SchemaGooglePrivacyDlpV2Table {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2Table = {
+  inline def apply(): SchemaGooglePrivacyDlpV2Table = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2Table]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2TableMutableBuilder[Self <: SchemaGooglePrivacyDlpV2Table] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2Table](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: js.Array[SchemaGooglePrivacyDlpV2FieldId]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Array[SchemaGooglePrivacyDlpV2FieldId]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setHeadersVarargs(value: SchemaGooglePrivacyDlpV2FieldId*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: SchemaGooglePrivacyDlpV2FieldId*): Self = StObject.set(x, "headers", js.Array(value :_*))
     
-    @scala.inline
-    def setRows(value: js.Array[SchemaGooglePrivacyDlpV2Row]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[SchemaGooglePrivacyDlpV2Row]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    @scala.inline
-    def setRowsVarargs(value: SchemaGooglePrivacyDlpV2Row*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: SchemaGooglePrivacyDlpV2Row*): Self = StObject.set(x, "rows", js.Array(value :_*))
   }
 }

@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AttestationConveyancePreference extends StObject
 object AttestationConveyancePreference {
   
-  @scala.inline
-  def direct: typings.std.stdStrings.direct = "direct".asInstanceOf[typings.std.stdStrings.direct]
+  inline def direct: typings.std.stdStrings.direct = "direct".asInstanceOf[typings.std.stdStrings.direct]
   
-  @scala.inline
-  def enterprise: typings.std.stdStrings.enterprise = "enterprise".asInstanceOf[typings.std.stdStrings.enterprise]
+  inline def enterprise: typings.std.stdStrings.enterprise = "enterprise".asInstanceOf[typings.std.stdStrings.enterprise]
   
-  @scala.inline
-  def indirect: typings.std.stdStrings.indirect = "indirect".asInstanceOf[typings.std.stdStrings.indirect]
+  inline def indirect: typings.std.stdStrings.indirect = "indirect".asInstanceOf[typings.std.stdStrings.indirect]
   
-  @scala.inline
-  def none: typings.std.stdStrings.none = "none".asInstanceOf[typings.std.stdStrings.none]
+  inline def none: typings.std.stdStrings.none = "none".asInstanceOf[typings.std.stdStrings.none]
 }

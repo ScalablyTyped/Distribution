@@ -88,7 +88,7 @@ object priorityQueueMod {
     /* CompleteClass */
     override def forEach(callback: ILoopFunction[T]): Unit = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var heap: js.Any = js.native
     
     /**
@@ -159,7 +159,7 @@ object priorityQueueMod {
       */
     def forEach(callback: ILoopFunction[T]): Unit
     
-    var heap: js.Any
+    /* private */ var heap: js.Any
     
     /**
       * Checks if this priority queue is empty.
@@ -182,8 +182,7 @@ object priorityQueueMod {
   }
   object PriorityQueue {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       add: T => Boolean,
       clear: () => Unit,
       contains: T => Boolean,
@@ -199,38 +198,27 @@ object priorityQueueMod {
       __obj.asInstanceOf[PriorityQueue[T]]
     }
     
-    @scala.inline
-    implicit class PriorityQueueMutableBuilder[Self <: PriorityQueue[?], T] (val x: Self & PriorityQueue[T]) extends AnyVal {
+    extension [Self <: PriorityQueue[?], T](x: Self & PriorityQueue[T]) {
       
-      @scala.inline
-      def setAdd(value: T => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+      inline def setAdd(value: T => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setContains(value: T => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+      inline def setContains(value: T => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDequeue(value: () => js.UndefOr[T]): Self = StObject.set(x, "dequeue", js.Any.fromFunction0(value))
+      inline def setDequeue(value: () => js.UndefOr[T]): Self = StObject.set(x, "dequeue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnqueue(value: T => Boolean): Self = StObject.set(x, "enqueue", js.Any.fromFunction1(value))
+      inline def setEnqueue(value: T => Boolean): Self = StObject.set(x, "enqueue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setForEach(value: ILoopFunction[T] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
+      inline def setForEach(value: ILoopFunction[T] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHeap(value: js.Any): Self = StObject.set(x, "heap", value.asInstanceOf[js.Any])
+      inline def setHeap(value: js.Any): Self = StObject.set(x, "heap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
+      inline def setIsEmpty(value: () => Boolean): Self = StObject.set(x, "isEmpty", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPeek(value: () => js.UndefOr[T]): Self = StObject.set(x, "peek", js.Any.fromFunction0(value))
+      inline def setPeek(value: () => js.UndefOr[T]): Self = StObject.set(x, "peek", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
+      inline def setSize(value: () => Double): Self = StObject.set(x, "size", js.Any.fromFunction0(value))
     }
   }
 }

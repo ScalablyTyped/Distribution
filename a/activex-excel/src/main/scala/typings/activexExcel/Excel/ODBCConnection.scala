@@ -27,7 +27,7 @@ trait ODBCConnection extends StObject {
   
   var EnableRefresh: Boolean = js.native
   
-  @JSName("Excel.ODBCConnection_typekey")
+  /* private */ @JSName("Excel.ODBCConnection_typekey")
   var ExcelDotODBCConnection_typekey: ODBCConnection = js.native
   
   val Parent: js.Any = js.native

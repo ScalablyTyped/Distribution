@@ -16,20 +16,16 @@ object anon {
   }
   object Accesstoken {
     
-    @scala.inline
-    def apply(): Accesstoken = {
+    inline def apply(): Accesstoken = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Accesstoken]
     }
     
-    @scala.inline
-    implicit class AccesstokenMutableBuilder[Self <: Accesstoken] (val x: Self) extends AnyVal {
+    extension [Self <: Accesstoken](x: Self) {
       
-      @scala.inline
-      def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+      inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
+      inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
     }
   }
   
@@ -43,32 +39,24 @@ object anon {
   }
   object Data {
     
-    @scala.inline
-    def apply(): Data = {
+    inline def apply(): Data = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Data]
     }
     
-    @scala.inline
-    implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+    extension [Self <: Data](x: Self) {
       
-      @scala.inline
-      def setData(value: Accesstoken): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Accesstoken): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setOptions(value: Dictkey): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Dictkey): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setRedirect(value: String): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
+      inline def setRedirect(value: String): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
+      inline def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
     }
   }
   
@@ -80,20 +68,16 @@ object anon {
   }
   object Dictkey {
     
-    @scala.inline
-    def apply(): Dictkey = {
+    inline def apply(): Dictkey = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Dictkey]
     }
     
-    @scala.inline
-    implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
+    extension [Self <: Dictkey](x: Self) {
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     }
   }
   
@@ -104,17 +88,14 @@ object anon {
   }
   object Get {
     
-    @scala.inline
-    def apply(get: (js.Any, js.Function1[/* success */ `false` | js.Object, Unit]) => Unit): Get = {
+    inline def apply(get: (js.Any, js.Function1[/* success */ `false` | js.Object, Unit]) => Unit): Get = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction2(get))
       __obj.asInstanceOf[Get]
     }
     
-    @scala.inline
-    implicit class GetMutableBuilder[Self <: Get] (val x: Self) extends AnyVal {
+    extension [Self <: Get](x: Self) {
       
-      @scala.inline
-      def setGet(value: (js.Any, js.Function1[/* success */ `false` | js.Object, Unit]) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+      inline def setGet(value: (js.Any, js.Function1[/* success */ `false` | js.Object, Unit]) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     }
   }
 }

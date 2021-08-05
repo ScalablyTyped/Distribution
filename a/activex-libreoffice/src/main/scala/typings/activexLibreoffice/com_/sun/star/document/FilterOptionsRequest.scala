@@ -25,19 +25,15 @@ trait FilterOptionsRequest
 }
 object FilterOptionsRequest {
   
-  @scala.inline
-  def apply(Context: XInterface, Message: String, rModel: XModel, rProperties: SafeArray[PropertyValue]): FilterOptionsRequest = {
+  inline def apply(Context: XInterface, Message: String, rModel: XModel, rProperties: SafeArray[PropertyValue]): FilterOptionsRequest = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], rModel = rModel.asInstanceOf[js.Any], rProperties = rProperties.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilterOptionsRequest]
   }
   
-  @scala.inline
-  implicit class FilterOptionsRequestMutableBuilder[Self <: FilterOptionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: FilterOptionsRequest](x: Self) {
     
-    @scala.inline
-    def setRModel(value: XModel): Self = StObject.set(x, "rModel", value.asInstanceOf[js.Any])
+    inline def setRModel(value: XModel): Self = StObject.set(x, "rModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRProperties(value: SafeArray[PropertyValue]): Self = StObject.set(x, "rProperties", value.asInstanceOf[js.Any])
+    inline def setRProperties(value: SafeArray[PropertyValue]): Self = StObject.set(x, "rProperties", value.asInstanceOf[js.Any])
   }
 }

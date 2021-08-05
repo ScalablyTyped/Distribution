@@ -37,8 +37,7 @@ trait XStorageBasedDocument
 }
 object XStorageBasedDocument {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DocumentStorage: XStorage,
     acquire: () => Unit,
     addStorageChangeListener: XStorageChangeListener => Unit,
@@ -54,28 +53,20 @@ object XStorageBasedDocument {
     __obj.asInstanceOf[XStorageBasedDocument]
   }
   
-  @scala.inline
-  implicit class XStorageBasedDocumentMutableBuilder[Self <: XStorageBasedDocument] (val x: Self) extends AnyVal {
+  extension [Self <: XStorageBasedDocument](x: Self) {
     
-    @scala.inline
-    def setAddStorageChangeListener(value: XStorageChangeListener => Unit): Self = StObject.set(x, "addStorageChangeListener", js.Any.fromFunction1(value))
+    inline def setAddStorageChangeListener(value: XStorageChangeListener => Unit): Self = StObject.set(x, "addStorageChangeListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDocumentStorage(value: XStorage): Self = StObject.set(x, "DocumentStorage", value.asInstanceOf[js.Any])
+    inline def setDocumentStorage(value: XStorage): Self = StObject.set(x, "DocumentStorage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDocumentStorage(value: () => XStorage): Self = StObject.set(x, "getDocumentStorage", js.Any.fromFunction0(value))
+    inline def setGetDocumentStorage(value: () => XStorage): Self = StObject.set(x, "getDocumentStorage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLoadFromStorage(value: (XStorage, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "loadFromStorage", js.Any.fromFunction2(value))
+    inline def setLoadFromStorage(value: (XStorage, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "loadFromStorage", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveStorageChangeListener(value: XStorageChangeListener => Unit): Self = StObject.set(x, "removeStorageChangeListener", js.Any.fromFunction1(value))
+    inline def setRemoveStorageChangeListener(value: XStorageChangeListener => Unit): Self = StObject.set(x, "removeStorageChangeListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStoreToStorage(value: (XStorage, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "storeToStorage", js.Any.fromFunction2(value))
+    inline def setStoreToStorage(value: (XStorage, SeqEquiv[PropertyValue]) => Unit): Self = StObject.set(x, "storeToStorage", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSwitchToStorage(value: XStorage => Unit): Self = StObject.set(x, "switchToStorage", js.Any.fromFunction1(value))
+    inline def setSwitchToStorage(value: XStorage => Unit): Self = StObject.set(x, "switchToStorage", js.Any.fromFunction1(value))
   }
 }

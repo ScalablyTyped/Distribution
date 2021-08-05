@@ -11,6 +11,5 @@ object autoFormatMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def formatLabels(labelGroup: IGroup, limitLength: Double, unit: Double, suffix: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("formatLabels")(labelGroup.asInstanceOf[js.Any], limitLength.asInstanceOf[js.Any], unit.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def formatLabels(labelGroup: IGroup, limitLength: Double, unit: Double, suffix: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("formatLabels")(labelGroup.asInstanceOf[js.Any], limitLength.asInstanceOf[js.Any], unit.asInstanceOf[js.Any], suffix.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

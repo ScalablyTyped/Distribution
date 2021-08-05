@@ -36,8 +36,7 @@ trait Grid extends StObject {
 }
 object Grid {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Columns: FC[
       Pick[
         Pick[
@@ -58,11 +57,9 @@ object Grid {
     __obj.asInstanceOf[Grid]
   }
   
-  @scala.inline
-  implicit class GridMutableBuilder[Self <: Grid] (val x: Self) extends AnyVal {
+  extension [Self <: Grid](x: Self) {
     
-    @scala.inline
-    def setColumns(
+    inline def setColumns(
       value: FC[
           Pick[
             Pick[
@@ -74,8 +71,7 @@ object Grid {
         ]
     ): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrid(
+    inline def setGrid(
       value: FC[
           Pick[
             Pick[HorizontalMenuGridLayoutProps, style | className | menuContext | maxOverflowWidth], 

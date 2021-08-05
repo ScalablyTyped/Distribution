@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.SVGZoomEvent")
 @js.native
-class SVGZoomEvent protected ()
+/* private */ class SVGZoomEvent ()
   extends StObject
      with typings.activexMshtml.MSHTML.SVGZoomEvent {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.SVGZoomEvent_typekey")
   var MSHTMLDotSVGZoomEvent_typekey: typings.activexMshtml.MSHTML.SVGZoomEvent = js.native
   

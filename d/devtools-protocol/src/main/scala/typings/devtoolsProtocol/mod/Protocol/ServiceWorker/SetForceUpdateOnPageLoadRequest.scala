@@ -10,16 +10,13 @@ trait SetForceUpdateOnPageLoadRequest extends StObject {
 }
 object SetForceUpdateOnPageLoadRequest {
   
-  @scala.inline
-  def apply(forceUpdateOnPageLoad: Boolean): SetForceUpdateOnPageLoadRequest = {
+  inline def apply(forceUpdateOnPageLoad: Boolean): SetForceUpdateOnPageLoadRequest = {
     val __obj = js.Dynamic.literal(forceUpdateOnPageLoad = forceUpdateOnPageLoad.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetForceUpdateOnPageLoadRequest]
   }
   
-  @scala.inline
-  implicit class SetForceUpdateOnPageLoadRequestMutableBuilder[Self <: SetForceUpdateOnPageLoadRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetForceUpdateOnPageLoadRequest](x: Self) {
     
-    @scala.inline
-    def setForceUpdateOnPageLoad(value: Boolean): Self = StObject.set(x, "forceUpdateOnPageLoad", value.asInstanceOf[js.Any])
+    inline def setForceUpdateOnPageLoad(value: Boolean): Self = StObject.set(x, "forceUpdateOnPageLoad", value.asInstanceOf[js.Any])
   }
 }

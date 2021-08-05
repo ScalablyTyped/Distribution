@@ -56,8 +56,7 @@ trait XInterfaceMethodTypeDescription
 }
 object XInterfaceMethodTypeDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Exceptions: SafeArray[XTypeDescription],
     MemberName: String,
     Name: String,
@@ -81,28 +80,20 @@ object XInterfaceMethodTypeDescription {
     __obj.asInstanceOf[XInterfaceMethodTypeDescription]
   }
   
-  @scala.inline
-  implicit class XInterfaceMethodTypeDescriptionMutableBuilder[Self <: XInterfaceMethodTypeDescription] (val x: Self) extends AnyVal {
+  extension [Self <: XInterfaceMethodTypeDescription](x: Self) {
     
-    @scala.inline
-    def setExceptions(value: SafeArray[XTypeDescription]): Self = StObject.set(x, "Exceptions", value.asInstanceOf[js.Any])
+    inline def setExceptions(value: SafeArray[XTypeDescription]): Self = StObject.set(x, "Exceptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetExceptions(value: () => SafeArray[XTypeDescription]): Self = StObject.set(x, "getExceptions", js.Any.fromFunction0(value))
+    inline def setGetExceptions(value: () => SafeArray[XTypeDescription]): Self = StObject.set(x, "getExceptions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetParameters(value: () => SafeArray[XMethodParameter]): Self = StObject.set(x, "getParameters", js.Any.fromFunction0(value))
+    inline def setGetParameters(value: () => SafeArray[XMethodParameter]): Self = StObject.set(x, "getParameters", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetReturnType(value: () => XTypeDescription): Self = StObject.set(x, "getReturnType", js.Any.fromFunction0(value))
+    inline def setGetReturnType(value: () => XTypeDescription): Self = StObject.set(x, "getReturnType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsOneway(value: () => Boolean): Self = StObject.set(x, "isOneway", js.Any.fromFunction0(value))
+    inline def setIsOneway(value: () => Boolean): Self = StObject.set(x, "isOneway", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setParameters(value: SafeArray[XMethodParameter]): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: SafeArray[XMethodParameter]): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnType(value: XTypeDescription): Self = StObject.set(x, "ReturnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: XTypeDescription): Self = StObject.set(x, "ReturnType", value.asInstanceOf[js.Any])
   }
 }

@@ -20,8 +20,7 @@ object registrationresultMod {
         }
         object RegistrationResult {
           
-          @scala.inline
-          def apply(
+          inline def apply(
             parse: js.Object => js.Object | js.Array[js.Object],
             serialize: (String, js.Object, js.Array[String]) => String
           ): RegistrationResult = {
@@ -29,14 +28,11 @@ object registrationresultMod {
             __obj.asInstanceOf[RegistrationResult]
           }
           
-          @scala.inline
-          implicit class RegistrationResultMutableBuilder[Self <: RegistrationResult] (val x: Self) extends AnyVal {
+          extension [Self <: RegistrationResult](x: Self) {
             
-            @scala.inline
-            def setParse(value: js.Object => js.Object | js.Array[js.Object]): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+            inline def setParse(value: js.Object => js.Object | js.Array[js.Object]): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
             
-            @scala.inline
-            def setSerialize(value: (String, js.Object, js.Array[String]) => String): Self = StObject.set(x, "serialize", js.Any.fromFunction3(value))
+            inline def setSerialize(value: (String, js.Object, js.Array[String]) => String): Self = StObject.set(x, "serialize", js.Any.fromFunction3(value))
           }
         }
       }

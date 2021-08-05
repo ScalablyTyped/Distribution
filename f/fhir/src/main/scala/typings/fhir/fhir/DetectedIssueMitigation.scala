@@ -33,34 +33,25 @@ trait DetectedIssueMitigation
 }
 object DetectedIssueMitigation {
   
-  @scala.inline
-  def apply(action: CodeableConcept): DetectedIssueMitigation = {
+  inline def apply(action: CodeableConcept): DetectedIssueMitigation = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectedIssueMitigation]
   }
   
-  @scala.inline
-  implicit class DetectedIssueMitigationMutableBuilder[Self <: DetectedIssueMitigation] (val x: Self) extends AnyVal {
+  extension [Self <: DetectedIssueMitigation](x: Self) {
     
-    @scala.inline
-    def setAction(value: CodeableConcept): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: CodeableConcept): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthor(value: Reference): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: Reference): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
+    inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
     
-    @scala.inline
-    def setDate(value: dateTime): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: dateTime): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    @scala.inline
-    def set_date(value: Element): Self = StObject.set(x, "_date", value.asInstanceOf[js.Any])
+    inline def set_date(value: Element): Self = StObject.set(x, "_date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_dateUndefined: Self = StObject.set(x, "_date", js.undefined)
+    inline def set_dateUndefined: Self = StObject.set(x, "_date", js.undefined)
   }
 }

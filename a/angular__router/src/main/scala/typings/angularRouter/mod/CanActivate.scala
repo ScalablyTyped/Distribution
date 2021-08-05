@@ -11,19 +11,16 @@ trait CanActivate extends StObject {
 }
 object CanActivate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canActivate: (ActivatedRouteSnapshot, RouterStateSnapshot) => (Observable_[Boolean | UrlTree]) | (js.Promise[Boolean | UrlTree]) | Boolean | UrlTree
   ): CanActivate = {
     val __obj = js.Dynamic.literal(canActivate = js.Any.fromFunction2(canActivate))
     __obj.asInstanceOf[CanActivate]
   }
   
-  @scala.inline
-  implicit class CanActivateMutableBuilder[Self <: CanActivate] (val x: Self) extends AnyVal {
+  extension [Self <: CanActivate](x: Self) {
     
-    @scala.inline
-    def setCanActivate(
+    inline def setCanActivate(
       value: (ActivatedRouteSnapshot, RouterStateSnapshot) => (Observable_[Boolean | UrlTree]) | (js.Promise[Boolean | UrlTree]) | Boolean | UrlTree
     ): Self = StObject.set(x, "canActivate", js.Any.fromFunction2(value))
   }

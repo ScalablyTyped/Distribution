@@ -8,11 +8,9 @@ object reactOnclickoutsideStrings {
   
   @js.native
   sealed trait disableOnClickOutside extends StObject
-  @scala.inline
-  def disableOnClickOutside: disableOnClickOutside = "disableOnClickOutside".asInstanceOf[disableOnClickOutside]
+  inline def disableOnClickOutside: disableOnClickOutside = "disableOnClickOutside".asInstanceOf[disableOnClickOutside]
   
   @js.native
   sealed trait enableOnClickOutside extends StObject
-  @scala.inline
-  def enableOnClickOutside: enableOnClickOutside = "enableOnClickOutside".asInstanceOf[enableOnClickOutside]
+  inline def enableOnClickOutside: enableOnClickOutside = "enableOnClickOutside".asInstanceOf[enableOnClickOutside]
 }

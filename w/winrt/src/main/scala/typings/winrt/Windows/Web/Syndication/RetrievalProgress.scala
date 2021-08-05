@@ -12,19 +12,15 @@ trait RetrievalProgress extends StObject {
 }
 object RetrievalProgress {
   
-  @scala.inline
-  def apply(bytesRetrieved: Double, totalBytesToRetrieve: Double): RetrievalProgress = {
+  inline def apply(bytesRetrieved: Double, totalBytesToRetrieve: Double): RetrievalProgress = {
     val __obj = js.Dynamic.literal(bytesRetrieved = bytesRetrieved.asInstanceOf[js.Any], totalBytesToRetrieve = totalBytesToRetrieve.asInstanceOf[js.Any])
     __obj.asInstanceOf[RetrievalProgress]
   }
   
-  @scala.inline
-  implicit class RetrievalProgressMutableBuilder[Self <: RetrievalProgress] (val x: Self) extends AnyVal {
+  extension [Self <: RetrievalProgress](x: Self) {
     
-    @scala.inline
-    def setBytesRetrieved(value: Double): Self = StObject.set(x, "bytesRetrieved", value.asInstanceOf[js.Any])
+    inline def setBytesRetrieved(value: Double): Self = StObject.set(x, "bytesRetrieved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalBytesToRetrieve(value: Double): Self = StObject.set(x, "totalBytesToRetrieve", value.asInstanceOf[js.Any])
+    inline def setTotalBytesToRetrieve(value: Double): Self = StObject.set(x, "totalBytesToRetrieve", value.asInstanceOf[js.Any])
   }
 }

@@ -17,26 +17,21 @@ trait ConnectFailureResults extends StObject {
 }
 object ConnectFailureResults {
   
-  @scala.inline
-  def apply(): ConnectFailureResults = {
+  inline def apply(): ConnectFailureResults = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectFailureResults]
   }
   
-  @scala.inline
-  implicit class ConnectFailureResultsMutableBuilder[Self <: ConnectFailureResults] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectFailureResults](x: Self) {
     
-    @scala.inline
-    def setRetryQueue(
+    inline def setRetryQueue(
       value: js.Array[
           /* This object contains details about a Connect failure result. */ ConnectFailureResult
         ]
     ): Self = StObject.set(x, "retryQueue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryQueueUndefined: Self = StObject.set(x, "retryQueue", js.undefined)
+    inline def setRetryQueueUndefined: Self = StObject.set(x, "retryQueue", js.undefined)
     
-    @scala.inline
-    def setRetryQueueVarargs(value: (/* This object contains details about a Connect failure result. */ ConnectFailureResult)*): Self = StObject.set(x, "retryQueue", js.Array(value :_*))
+    inline def setRetryQueueVarargs(value: (/* This object contains details about a Connect failure result. */ ConnectFailureResult)*): Self = StObject.set(x, "retryQueue", js.Array(value :_*))
   }
 }

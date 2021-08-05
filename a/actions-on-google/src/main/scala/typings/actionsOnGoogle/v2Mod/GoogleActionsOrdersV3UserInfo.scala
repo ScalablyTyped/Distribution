@@ -33,46 +33,33 @@ trait GoogleActionsOrdersV3UserInfo extends StObject {
 }
 object GoogleActionsOrdersV3UserInfo {
   
-  @scala.inline
-  def apply(): GoogleActionsOrdersV3UserInfo = {
+  inline def apply(): GoogleActionsOrdersV3UserInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsOrdersV3UserInfo]
   }
   
-  @scala.inline
-  implicit class GoogleActionsOrdersV3UserInfoMutableBuilder[Self <: GoogleActionsOrdersV3UserInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsOrdersV3UserInfo](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
+    inline def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstNameUndefined: Self = StObject.set(x, "firstName", js.undefined)
+    inline def setFirstNameUndefined: Self = StObject.set(x, "firstName", js.undefined)
     
-    @scala.inline
-    def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
+    inline def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastNameUndefined: Self = StObject.set(x, "lastName", js.undefined)
+    inline def setLastNameUndefined: Self = StObject.set(x, "lastName", js.undefined)
     
-    @scala.inline
-    def setPhoneNumbers(value: js.Array[GoogleActionsOrdersV3PhoneNumber]): Self = StObject.set(x, "phoneNumbers", value.asInstanceOf[js.Any])
+    inline def setPhoneNumbers(value: js.Array[GoogleActionsOrdersV3PhoneNumber]): Self = StObject.set(x, "phoneNumbers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNumbersUndefined: Self = StObject.set(x, "phoneNumbers", js.undefined)
+    inline def setPhoneNumbersUndefined: Self = StObject.set(x, "phoneNumbers", js.undefined)
     
-    @scala.inline
-    def setPhoneNumbersVarargs(value: GoogleActionsOrdersV3PhoneNumber*): Self = StObject.set(x, "phoneNumbers", js.Array(value :_*))
+    inline def setPhoneNumbersVarargs(value: GoogleActionsOrdersV3PhoneNumber*): Self = StObject.set(x, "phoneNumbers", js.Array(value :_*))
   }
 }

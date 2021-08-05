@@ -13,16 +13,13 @@ trait OpenedFileRequestedEventOptions
 }
 object OpenedFileRequestedEventOptions {
   
-  @scala.inline
-  def apply(fileSystemId: String, openRequestId: Double, requestId: Double): OpenedFileRequestedEventOptions = {
+  inline def apply(fileSystemId: String, openRequestId: Double, requestId: Double): OpenedFileRequestedEventOptions = {
     val __obj = js.Dynamic.literal(fileSystemId = fileSystemId.asInstanceOf[js.Any], openRequestId = openRequestId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenedFileRequestedEventOptions]
   }
   
-  @scala.inline
-  implicit class OpenedFileRequestedEventOptionsMutableBuilder[Self <: OpenedFileRequestedEventOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OpenedFileRequestedEventOptions](x: Self) {
     
-    @scala.inline
-    def setOpenRequestId(value: Double): Self = StObject.set(x, "openRequestId", value.asInstanceOf[js.Any])
+    inline def setOpenRequestId(value: Double): Self = StObject.set(x, "openRequestId", value.asInstanceOf[js.Any])
   }
 }

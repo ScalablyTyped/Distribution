@@ -12,19 +12,15 @@ trait InUse extends StObject {
 }
 object InUse {
   
-  @scala.inline
-  def apply(inUse: Double, total: Double): InUse = {
+  inline def apply(inUse: Double, total: Double): InUse = {
     val __obj = js.Dynamic.literal(inUse = inUse.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
     __obj.asInstanceOf[InUse]
   }
   
-  @scala.inline
-  implicit class InUseMutableBuilder[Self <: InUse] (val x: Self) extends AnyVal {
+  extension [Self <: InUse](x: Self) {
     
-    @scala.inline
-    def setInUse(value: Double): Self = StObject.set(x, "inUse", value.asInstanceOf[js.Any])
+    inline def setInUse(value: Double): Self = StObject.set(x, "inUse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }
 }

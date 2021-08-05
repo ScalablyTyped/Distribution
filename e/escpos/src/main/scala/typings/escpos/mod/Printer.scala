@@ -215,6 +215,5 @@ object Printer {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(device: Adapter): js.Promise[Printer] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(device.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Printer]]
+  inline def create(device: Adapter): js.Promise[Printer] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(device.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Printer]]
 }

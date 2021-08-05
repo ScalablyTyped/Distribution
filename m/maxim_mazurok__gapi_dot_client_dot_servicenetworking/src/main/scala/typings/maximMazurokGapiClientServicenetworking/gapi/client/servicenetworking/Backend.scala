@@ -11,22 +11,17 @@ trait Backend extends StObject {
 }
 object Backend {
   
-  @scala.inline
-  def apply(): Backend = {
+  inline def apply(): Backend = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Backend]
   }
   
-  @scala.inline
-  implicit class BackendMutableBuilder[Self <: Backend] (val x: Self) extends AnyVal {
+  extension [Self <: Backend](x: Self) {
     
-    @scala.inline
-    def setRules(value: js.Array[BackendRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: js.Array[BackendRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+    inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    @scala.inline
-    def setRulesVarargs(value: BackendRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: BackendRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
   }
 }

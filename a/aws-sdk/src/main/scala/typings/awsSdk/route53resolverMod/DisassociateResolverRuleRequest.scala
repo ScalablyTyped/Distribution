@@ -18,19 +18,15 @@ trait DisassociateResolverRuleRequest extends StObject {
 }
 object DisassociateResolverRuleRequest {
   
-  @scala.inline
-  def apply(ResolverRuleId: ResourceId, VPCId: ResourceId): DisassociateResolverRuleRequest = {
+  inline def apply(ResolverRuleId: ResourceId, VPCId: ResourceId): DisassociateResolverRuleRequest = {
     val __obj = js.Dynamic.literal(ResolverRuleId = ResolverRuleId.asInstanceOf[js.Any], VPCId = VPCId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateResolverRuleRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateResolverRuleRequestMutableBuilder[Self <: DisassociateResolverRuleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateResolverRuleRequest](x: Self) {
     
-    @scala.inline
-    def setResolverRuleId(value: ResourceId): Self = StObject.set(x, "ResolverRuleId", value.asInstanceOf[js.Any])
+    inline def setResolverRuleId(value: ResourceId): Self = StObject.set(x, "ResolverRuleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVPCId(value: ResourceId): Self = StObject.set(x, "VPCId", value.asInstanceOf[js.Any])
+    inline def setVPCId(value: ResourceId): Self = StObject.set(x, "VPCId", value.asInstanceOf[js.Any])
   }
 }

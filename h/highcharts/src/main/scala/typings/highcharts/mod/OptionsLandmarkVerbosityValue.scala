@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OptionsLandmarkVerbosityValue extends StObject
 object OptionsLandmarkVerbosityValue {
   
-  @scala.inline
-  def all: typings.highcharts.highchartsStrings.all = "all".asInstanceOf[typings.highcharts.highchartsStrings.all]
+  inline def all: typings.highcharts.highchartsStrings.all = "all".asInstanceOf[typings.highcharts.highchartsStrings.all]
   
-  @scala.inline
-  def disabled: typings.highcharts.highchartsStrings.disabled = "disabled".asInstanceOf[typings.highcharts.highchartsStrings.disabled]
+  inline def disabled: typings.highcharts.highchartsStrings.disabled = "disabled".asInstanceOf[typings.highcharts.highchartsStrings.disabled]
   
-  @scala.inline
-  def one: typings.highcharts.highchartsStrings.one = "one".asInstanceOf[typings.highcharts.highchartsStrings.one]
+  inline def one: typings.highcharts.highchartsStrings.one = "one".asInstanceOf[typings.highcharts.highchartsStrings.one]
 }

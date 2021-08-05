@@ -16,22 +16,17 @@ trait SchemaLeaseTasksResponse extends StObject {
 }
 object SchemaLeaseTasksResponse {
   
-  @scala.inline
-  def apply(): SchemaLeaseTasksResponse = {
+  inline def apply(): SchemaLeaseTasksResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLeaseTasksResponse]
   }
   
-  @scala.inline
-  implicit class SchemaLeaseTasksResponseMutableBuilder[Self <: SchemaLeaseTasksResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLeaseTasksResponse](x: Self) {
     
-    @scala.inline
-    def setTasks(value: js.Array[SchemaTask]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
+    inline def setTasks(value: js.Array[SchemaTask]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTasksUndefined: Self = StObject.set(x, "tasks", js.undefined)
+    inline def setTasksUndefined: Self = StObject.set(x, "tasks", js.undefined)
     
-    @scala.inline
-    def setTasksVarargs(value: SchemaTask*): Self = StObject.set(x, "tasks", js.Array(value :_*))
+    inline def setTasksVarargs(value: SchemaTask*): Self = StObject.set(x, "tasks", js.Array(value :_*))
   }
 }

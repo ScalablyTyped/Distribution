@@ -18,19 +18,15 @@ trait StatelessRuleGroupReference extends StObject {
 }
 object StatelessRuleGroupReference {
   
-  @scala.inline
-  def apply(Priority: Priority, ResourceArn: ResourceArn): StatelessRuleGroupReference = {
+  inline def apply(Priority: Priority, ResourceArn: ResourceArn): StatelessRuleGroupReference = {
     val __obj = js.Dynamic.literal(Priority = Priority.asInstanceOf[js.Any], ResourceArn = ResourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatelessRuleGroupReference]
   }
   
-  @scala.inline
-  implicit class StatelessRuleGroupReferenceMutableBuilder[Self <: StatelessRuleGroupReference] (val x: Self) extends AnyVal {
+  extension [Self <: StatelessRuleGroupReference](x: Self) {
     
-    @scala.inline
-    def setPriority(value: Priority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Priority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceArn(value: ResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: ResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
   }
 }

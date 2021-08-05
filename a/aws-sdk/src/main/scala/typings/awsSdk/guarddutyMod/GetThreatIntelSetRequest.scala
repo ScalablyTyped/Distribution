@@ -18,19 +18,15 @@ trait GetThreatIntelSetRequest extends StObject {
 }
 object GetThreatIntelSetRequest {
   
-  @scala.inline
-  def apply(DetectorId: DetectorId, ThreatIntelSetId: String): GetThreatIntelSetRequest = {
+  inline def apply(DetectorId: DetectorId, ThreatIntelSetId: String): GetThreatIntelSetRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId.asInstanceOf[js.Any], ThreatIntelSetId = ThreatIntelSetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetThreatIntelSetRequest]
   }
   
-  @scala.inline
-  implicit class GetThreatIntelSetRequestMutableBuilder[Self <: GetThreatIntelSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetThreatIntelSetRequest](x: Self) {
     
-    @scala.inline
-    def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
+    inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreatIntelSetId(value: String): Self = StObject.set(x, "ThreatIntelSetId", value.asInstanceOf[js.Any])
+    inline def setThreatIntelSetId(value: String): Self = StObject.set(x, "ThreatIntelSetId", value.asInstanceOf[js.Any])
   }
 }

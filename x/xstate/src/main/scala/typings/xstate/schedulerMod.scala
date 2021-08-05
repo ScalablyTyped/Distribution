@@ -14,20 +14,20 @@ object schedulerMod {
     
     def clear(): Unit = js.native
     
-    var flushEvents: js.Any = js.native
+    /* private */ var flushEvents: js.Any = js.native
     
     def initialize(): Unit = js.native
     def initialize(callback: js.Function0[Unit]): Unit = js.native
     
-    var initialized: js.Any = js.native
+    /* private */ var initialized: js.Any = js.native
     
-    var options: js.Any = js.native
+    /* private */ var options: js.Any = js.native
     
-    var process: js.Any = js.native
+    /* private */ var process: js.Any = js.native
     
-    var processingEvent: js.Any = js.native
+    /* private */ var processingEvent: js.Any = js.native
     
-    var queue: js.Any = js.native
+    /* private */ var queue: js.Any = js.native
     
     def schedule(task: js.Function0[Unit]): Unit = js.native
   }
@@ -38,17 +38,14 @@ object schedulerMod {
   }
   object SchedulerOptions {
     
-    @scala.inline
-    def apply(deferEvents: Boolean): SchedulerOptions = {
+    inline def apply(deferEvents: Boolean): SchedulerOptions = {
       val __obj = js.Dynamic.literal(deferEvents = deferEvents.asInstanceOf[js.Any])
       __obj.asInstanceOf[SchedulerOptions]
     }
     
-    @scala.inline
-    implicit class SchedulerOptionsMutableBuilder[Self <: SchedulerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SchedulerOptions](x: Self) {
       
-      @scala.inline
-      def setDeferEvents(value: Boolean): Self = StObject.set(x, "deferEvents", value.asInstanceOf[js.Any])
+      inline def setDeferEvents(value: Boolean): Self = StObject.set(x, "deferEvents", value.asInstanceOf[js.Any])
     }
   }
 }

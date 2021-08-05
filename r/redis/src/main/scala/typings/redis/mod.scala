@@ -214,34 +214,23 @@ object mod {
     var command: String = js.native
   }
   
-  @scala.inline
-  def createClient(): typings.redis.mod.RedisClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")().asInstanceOf[typings.redis.mod.RedisClient]
-  @scala.inline
-  def createClient(options: ClientOpts): typings.redis.mod.RedisClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(options.asInstanceOf[js.Any]).asInstanceOf[typings.redis.mod.RedisClient]
-  @scala.inline
-  def createClient(port: Double): typings.redis.mod.RedisClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(port.asInstanceOf[js.Any]).asInstanceOf[typings.redis.mod.RedisClient]
-  @scala.inline
-  def createClient(port: Double, host: String): typings.redis.mod.RedisClient = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[typings.redis.mod.RedisClient]
-  @scala.inline
-  def createClient(port: Double, host: String, options: ClientOpts): typings.redis.mod.RedisClient = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.redis.mod.RedisClient]
-  @scala.inline
-  def createClient(port: Double, host: Unit, options: ClientOpts): typings.redis.mod.RedisClient = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.redis.mod.RedisClient]
-  @scala.inline
-  def createClient(unix_socket: String): typings.redis.mod.RedisClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(unix_socket.asInstanceOf[js.Any]).asInstanceOf[typings.redis.mod.RedisClient]
-  @scala.inline
-  def createClient(unix_socket: String, options: ClientOpts): typings.redis.mod.RedisClient = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(unix_socket.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.redis.mod.RedisClient]
+  inline def createClient(): typings.redis.mod.RedisClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")().asInstanceOf[typings.redis.mod.RedisClient]
+  inline def createClient(options: ClientOpts): typings.redis.mod.RedisClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(options.asInstanceOf[js.Any]).asInstanceOf[typings.redis.mod.RedisClient]
+  inline def createClient(port: Double): typings.redis.mod.RedisClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(port.asInstanceOf[js.Any]).asInstanceOf[typings.redis.mod.RedisClient]
+  inline def createClient(port: Double, host: String): typings.redis.mod.RedisClient = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[typings.redis.mod.RedisClient]
+  inline def createClient(port: Double, host: String, options: ClientOpts): typings.redis.mod.RedisClient = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.redis.mod.RedisClient]
+  inline def createClient(port: Double, host: Unit, options: ClientOpts): typings.redis.mod.RedisClient = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.redis.mod.RedisClient]
+  inline def createClient(unix_socket: String): typings.redis.mod.RedisClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(unix_socket.asInstanceOf[js.Any]).asInstanceOf[typings.redis.mod.RedisClient]
+  inline def createClient(unix_socket: String, options: ClientOpts): typings.redis.mod.RedisClient = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(unix_socket.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.redis.mod.RedisClient]
   
   @JSImport("redis", "debug_mode")
   @js.native
   def debugMode: Boolean = js.native
   
-  @scala.inline
-  def debugMode_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("debug_mode")(x.asInstanceOf[js.Any])
+  inline def debugMode_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("debug_mode")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def print(err: Null, reply: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("print")(err.asInstanceOf[js.Any], reply.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def print(err: Error, reply: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("print")(err.asInstanceOf[js.Any], reply.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def print(err: Null, reply: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("print")(err.asInstanceOf[js.Any], reply.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def print(err: Error, reply: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("print")(err.asInstanceOf[js.Any], reply.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type Callback[T] = js.Function2[/* err */ Error | Null, /* reply */ T, Unit]
   
@@ -446,167 +435,114 @@ object mod {
   }
   object ClientOpts {
     
-    @scala.inline
-    def apply(): ClientOpts = {
+    inline def apply(): ClientOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientOpts]
     }
     
-    @scala.inline
-    implicit class ClientOptsMutableBuilder[Self <: ClientOpts] (val x: Self) extends AnyVal {
+    extension [Self <: ClientOpts](x: Self) {
       
-      @scala.inline
-      def setAuth_pass(value: String): Self = StObject.set(x, "auth_pass", value.asInstanceOf[js.Any])
+      inline def setAuth_pass(value: String): Self = StObject.set(x, "auth_pass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuth_passUndefined: Self = StObject.set(x, "auth_pass", js.undefined)
+      inline def setAuth_passUndefined: Self = StObject.set(x, "auth_pass", js.undefined)
       
-      @scala.inline
-      def setConnect_timeout(value: Double): Self = StObject.set(x, "connect_timeout", value.asInstanceOf[js.Any])
+      inline def setConnect_timeout(value: Double): Self = StObject.set(x, "connect_timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnect_timeoutUndefined: Self = StObject.set(x, "connect_timeout", js.undefined)
+      inline def setConnect_timeoutUndefined: Self = StObject.set(x, "connect_timeout", js.undefined)
       
-      @scala.inline
-      def setDb(value: String | Double): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
+      inline def setDb(value: String | Double): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDbUndefined: Self = StObject.set(x, "db", js.undefined)
+      inline def setDbUndefined: Self = StObject.set(x, "db", js.undefined)
       
-      @scala.inline
-      def setDetect_buffers(value: Boolean): Self = StObject.set(x, "detect_buffers", value.asInstanceOf[js.Any])
+      inline def setDetect_buffers(value: Boolean): Self = StObject.set(x, "detect_buffers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetect_buffersUndefined: Self = StObject.set(x, "detect_buffers", js.undefined)
+      inline def setDetect_buffersUndefined: Self = StObject.set(x, "detect_buffers", js.undefined)
       
-      @scala.inline
-      def setDisable_resubscribing(value: Boolean): Self = StObject.set(x, "disable_resubscribing", value.asInstanceOf[js.Any])
+      inline def setDisable_resubscribing(value: Boolean): Self = StObject.set(x, "disable_resubscribing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisable_resubscribingUndefined: Self = StObject.set(x, "disable_resubscribing", js.undefined)
+      inline def setDisable_resubscribingUndefined: Self = StObject.set(x, "disable_resubscribing", js.undefined)
       
-      @scala.inline
-      def setEnable_offline_queue(value: Boolean): Self = StObject.set(x, "enable_offline_queue", value.asInstanceOf[js.Any])
+      inline def setEnable_offline_queue(value: Boolean): Self = StObject.set(x, "enable_offline_queue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnable_offline_queueUndefined: Self = StObject.set(x, "enable_offline_queue", js.undefined)
+      inline def setEnable_offline_queueUndefined: Self = StObject.set(x, "enable_offline_queue", js.undefined)
       
-      @scala.inline
-      def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+      inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
+      inline def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setMax_attempts(value: Double): Self = StObject.set(x, "max_attempts", value.asInstanceOf[js.Any])
+      inline def setMax_attempts(value: Double): Self = StObject.set(x, "max_attempts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax_attemptsUndefined: Self = StObject.set(x, "max_attempts", js.undefined)
+      inline def setMax_attemptsUndefined: Self = StObject.set(x, "max_attempts", js.undefined)
       
-      @scala.inline
-      def setNo_ready_check(value: Boolean): Self = StObject.set(x, "no_ready_check", value.asInstanceOf[js.Any])
+      inline def setNo_ready_check(value: Boolean): Self = StObject.set(x, "no_ready_check", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNo_ready_checkUndefined: Self = StObject.set(x, "no_ready_check", js.undefined)
+      inline def setNo_ready_checkUndefined: Self = StObject.set(x, "no_ready_check", js.undefined)
       
-      @scala.inline
-      def setParser(value: String): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
+      inline def setParser(value: String): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
+      inline def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setRename_commands(value: StringDictionary[String]): Self = StObject.set(x, "rename_commands", value.asInstanceOf[js.Any])
+      inline def setRename_commands(value: StringDictionary[String]): Self = StObject.set(x, "rename_commands", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRename_commandsNull: Self = StObject.set(x, "rename_commands", null)
+      inline def setRename_commandsNull: Self = StObject.set(x, "rename_commands", null)
       
-      @scala.inline
-      def setRename_commandsUndefined: Self = StObject.set(x, "rename_commands", js.undefined)
+      inline def setRename_commandsUndefined: Self = StObject.set(x, "rename_commands", js.undefined)
       
-      @scala.inline
-      def setRetry_max_delay(value: Double): Self = StObject.set(x, "retry_max_delay", value.asInstanceOf[js.Any])
+      inline def setRetry_max_delay(value: Double): Self = StObject.set(x, "retry_max_delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetry_max_delayUndefined: Self = StObject.set(x, "retry_max_delay", js.undefined)
+      inline def setRetry_max_delayUndefined: Self = StObject.set(x, "retry_max_delay", js.undefined)
       
-      @scala.inline
-      def setRetry_strategy(value: /* options */ RetryStrategyOptions => Double | Error | js.Any): Self = StObject.set(x, "retry_strategy", js.Any.fromFunction1(value))
+      inline def setRetry_strategy(value: /* options */ RetryStrategyOptions => Double | Error | js.Any): Self = StObject.set(x, "retry_strategy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRetry_strategyUndefined: Self = StObject.set(x, "retry_strategy", js.undefined)
+      inline def setRetry_strategyUndefined: Self = StObject.set(x, "retry_strategy", js.undefined)
       
-      @scala.inline
-      def setRetry_unfulfilled_commands(value: Boolean): Self = StObject.set(x, "retry_unfulfilled_commands", value.asInstanceOf[js.Any])
+      inline def setRetry_unfulfilled_commands(value: Boolean): Self = StObject.set(x, "retry_unfulfilled_commands", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetry_unfulfilled_commandsUndefined: Self = StObject.set(x, "retry_unfulfilled_commands", js.undefined)
+      inline def setRetry_unfulfilled_commandsUndefined: Self = StObject.set(x, "retry_unfulfilled_commands", js.undefined)
       
-      @scala.inline
-      def setReturn_buffers(value: Boolean): Self = StObject.set(x, "return_buffers", value.asInstanceOf[js.Any])
+      inline def setReturn_buffers(value: Boolean): Self = StObject.set(x, "return_buffers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturn_buffersUndefined: Self = StObject.set(x, "return_buffers", js.undefined)
+      inline def setReturn_buffersUndefined: Self = StObject.set(x, "return_buffers", js.undefined)
       
-      @scala.inline
-      def setSocket_initial_delay(value: Double): Self = StObject.set(x, "socket_initial_delay", value.asInstanceOf[js.Any])
+      inline def setSocket_initial_delay(value: Double): Self = StObject.set(x, "socket_initial_delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocket_initial_delayUndefined: Self = StObject.set(x, "socket_initial_delay", js.undefined)
+      inline def setSocket_initial_delayUndefined: Self = StObject.set(x, "socket_initial_delay", js.undefined)
       
-      @scala.inline
-      def setSocket_keepalive(value: Boolean): Self = StObject.set(x, "socket_keepalive", value.asInstanceOf[js.Any])
+      inline def setSocket_keepalive(value: Boolean): Self = StObject.set(x, "socket_keepalive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocket_keepaliveUndefined: Self = StObject.set(x, "socket_keepalive", js.undefined)
+      inline def setSocket_keepaliveUndefined: Self = StObject.set(x, "socket_keepalive", js.undefined)
       
-      @scala.inline
-      def setString_numbers(value: Boolean): Self = StObject.set(x, "string_numbers", value.asInstanceOf[js.Any])
+      inline def setString_numbers(value: Boolean): Self = StObject.set(x, "string_numbers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setString_numbersUndefined: Self = StObject.set(x, "string_numbers", js.undefined)
+      inline def setString_numbersUndefined: Self = StObject.set(x, "string_numbers", js.undefined)
       
-      @scala.inline
-      def setTls(value: js.Any): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
+      inline def setTls(value: js.Any): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
+      inline def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -10220,26 +10156,20 @@ object mod {
   }
   object RetryStrategyOptions {
     
-    @scala.inline
-    def apply(attempt: Double, error: ErrnoException, times_connected: Double, total_retry_time: Double): RetryStrategyOptions = {
+    inline def apply(attempt: Double, error: ErrnoException, times_connected: Double, total_retry_time: Double): RetryStrategyOptions = {
       val __obj = js.Dynamic.literal(attempt = attempt.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], times_connected = times_connected.asInstanceOf[js.Any], total_retry_time = total_retry_time.asInstanceOf[js.Any])
       __obj.asInstanceOf[RetryStrategyOptions]
     }
     
-    @scala.inline
-    implicit class RetryStrategyOptionsMutableBuilder[Self <: RetryStrategyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RetryStrategyOptions](x: Self) {
       
-      @scala.inline
-      def setAttempt(value: Double): Self = StObject.set(x, "attempt", value.asInstanceOf[js.Any])
+      inline def setAttempt(value: Double): Self = StObject.set(x, "attempt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: ErrnoException): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: ErrnoException): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimes_connected(value: Double): Self = StObject.set(x, "times_connected", value.asInstanceOf[js.Any])
+      inline def setTimes_connected(value: Double): Self = StObject.set(x, "times_connected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal_retry_time(value: Double): Self = StObject.set(x, "total_retry_time", value.asInstanceOf[js.Any])
+      inline def setTotal_retry_time(value: Double): Self = StObject.set(x, "total_retry_time", value.asInstanceOf[js.Any])
     }
   }
   
@@ -10251,23 +10181,18 @@ object mod {
   }
   object ServerInfo {
     
-    @scala.inline
-    def apply(redis_version: String, versions: js.Array[Double]): ServerInfo = {
+    inline def apply(redis_version: String, versions: js.Array[Double]): ServerInfo = {
       val __obj = js.Dynamic.literal(redis_version = redis_version.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServerInfo]
     }
     
-    @scala.inline
-    implicit class ServerInfoMutableBuilder[Self <: ServerInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ServerInfo](x: Self) {
       
-      @scala.inline
-      def setRedis_version(value: String): Self = StObject.set(x, "redis_version", value.asInstanceOf[js.Any])
+      inline def setRedis_version(value: String): Self = StObject.set(x, "redis_version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersions(value: js.Array[Double]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
+      inline def setVersions(value: js.Array[Double]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionsVarargs(value: Double*): Self = StObject.set(x, "versions", js.Array(value :_*))
+      inline def setVersionsVarargs(value: Double*): Self = StObject.set(x, "versions", js.Array(value :_*))
     }
   }
 }

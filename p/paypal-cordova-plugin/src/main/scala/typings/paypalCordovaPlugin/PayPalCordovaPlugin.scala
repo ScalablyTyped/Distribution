@@ -18,20 +18,16 @@ object PayPalCordovaPlugin {
   }
   object BaseResult {
     
-    @scala.inline
-    def apply(client: Client, response_type: String): BaseResult = {
+    inline def apply(client: Client, response_type: String): BaseResult = {
       val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], response_type = response_type.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseResult]
     }
     
-    @scala.inline
-    implicit class BaseResultMutableBuilder[Self <: BaseResult] (val x: Self) extends AnyVal {
+    extension [Self <: BaseResult](x: Self) {
       
-      @scala.inline
-      def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse_type(value: String): Self = StObject.set(x, "response_type", value.asInstanceOf[js.Any])
+      inline def setResponse_type(value: String): Self = StObject.set(x, "response_type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -47,26 +43,20 @@ object PayPalCordovaPlugin {
   }
   object Client {
     
-    @scala.inline
-    def apply(environment: String, paypal_sdk_version: String, platform: String, product_name: String): Client = {
+    inline def apply(environment: String, paypal_sdk_version: String, platform: String, product_name: String): Client = {
       val __obj = js.Dynamic.literal(environment = environment.asInstanceOf[js.Any], paypal_sdk_version = paypal_sdk_version.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any], product_name = product_name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Client]
     }
     
-    @scala.inline
-    implicit class ClientMutableBuilder[Self <: Client] (val x: Self) extends AnyVal {
+    extension [Self <: Client](x: Self) {
       
-      @scala.inline
-      def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+      inline def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaypal_sdk_version(value: String): Self = StObject.set(x, "paypal_sdk_version", value.asInstanceOf[js.Any])
+      inline def setPaypal_sdk_version(value: String): Self = StObject.set(x, "paypal_sdk_version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProduct_name(value: String): Self = StObject.set(x, "product_name", value.asInstanceOf[js.Any])
+      inline def setProduct_name(value: String): Self = StObject.set(x, "product_name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -78,17 +68,14 @@ object PayPalCordovaPlugin {
   }
   object FuturePaymentResult {
     
-    @scala.inline
-    def apply(client: Client, response: Code, response_type: String): FuturePaymentResult = {
+    inline def apply(client: Client, response: Code, response_type: String): FuturePaymentResult = {
       val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], response_type = response_type.asInstanceOf[js.Any])
       __obj.asInstanceOf[FuturePaymentResult]
     }
     
-    @scala.inline
-    implicit class FuturePaymentResultMutableBuilder[Self <: FuturePaymentResult] (val x: Self) extends AnyVal {
+    extension [Self <: FuturePaymentResult](x: Self) {
       
-      @scala.inline
-      def setResponse(value: Code): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: Code): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
   }
   
@@ -100,20 +87,16 @@ object PayPalCordovaPlugin {
   }
   object PayPalClientIds {
     
-    @scala.inline
-    def apply(PayPalEnvironmentProduction: String, PayPalEnvironmentSandbox: String): PayPalClientIds = {
+    inline def apply(PayPalEnvironmentProduction: String, PayPalEnvironmentSandbox: String): PayPalClientIds = {
       val __obj = js.Dynamic.literal(PayPalEnvironmentProduction = PayPalEnvironmentProduction.asInstanceOf[js.Any], PayPalEnvironmentSandbox = PayPalEnvironmentSandbox.asInstanceOf[js.Any])
       __obj.asInstanceOf[PayPalClientIds]
     }
     
-    @scala.inline
-    implicit class PayPalClientIdsMutableBuilder[Self <: PayPalClientIds] (val x: Self) extends AnyVal {
+    extension [Self <: PayPalClientIds](x: Self) {
       
-      @scala.inline
-      def setPayPalEnvironmentProduction(value: String): Self = StObject.set(x, "PayPalEnvironmentProduction", value.asInstanceOf[js.Any])
+      inline def setPayPalEnvironmentProduction(value: String): Self = StObject.set(x, "PayPalEnvironmentProduction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayPalEnvironmentSandbox(value: String): Self = StObject.set(x, "PayPalEnvironmentSandbox", value.asInstanceOf[js.Any])
+      inline def setPayPalEnvironmentSandbox(value: String): Self = StObject.set(x, "PayPalEnvironmentSandbox", value.asInstanceOf[js.Any])
     }
   }
   
@@ -223,8 +206,7 @@ object PayPalCordovaPlugin {
   }
   object PayPalMobileStatic {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       applicationCorrelationIDForEnvironment: (String, js.Function1[/* applicationCorrelationId */ String, Unit]) => Unit,
       clientMetadataID: js.Function1[/* clientMetadataId */ String, Unit] => Unit,
       init: (PayPalClientIds, js.Function0[Unit]) => Unit,
@@ -238,38 +220,29 @@ object PayPalCordovaPlugin {
       __obj.asInstanceOf[PayPalMobileStatic]
     }
     
-    @scala.inline
-    implicit class PayPalMobileStaticMutableBuilder[Self <: PayPalMobileStatic] (val x: Self) extends AnyVal {
+    extension [Self <: PayPalMobileStatic](x: Self) {
       
-      @scala.inline
-      def setApplicationCorrelationIDForEnvironment(value: (String, js.Function1[/* applicationCorrelationId */ String, Unit]) => Unit): Self = StObject.set(x, "applicationCorrelationIDForEnvironment", js.Any.fromFunction2(value))
+      inline def setApplicationCorrelationIDForEnvironment(value: (String, js.Function1[/* applicationCorrelationId */ String, Unit]) => Unit): Self = StObject.set(x, "applicationCorrelationIDForEnvironment", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setClientMetadataID(value: js.Function1[/* clientMetadataId */ String, Unit] => Unit): Self = StObject.set(x, "clientMetadataID", js.Any.fromFunction1(value))
+      inline def setClientMetadataID(value: js.Function1[/* clientMetadataId */ String, Unit] => Unit): Self = StObject.set(x, "clientMetadataID", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInit(value: (PayPalClientIds, js.Function0[Unit]) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction2(value))
+      inline def setInit(value: (PayPalClientIds, js.Function0[Unit]) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPrepareToRender(value: (String, PayPalConfiguration, js.Function0[Unit]) => Unit): Self = StObject.set(x, "prepareToRender", js.Any.fromFunction3(value))
+      inline def setPrepareToRender(value: (String, PayPalConfiguration, js.Function0[Unit]) => Unit): Self = StObject.set(x, "prepareToRender", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRenderFuturePaymentUI(
+      inline def setRenderFuturePaymentUI(
         value: (js.Function1[/* result */ FuturePaymentResult, Unit], js.Function1[/* cancelReason */ String, Unit]) => Unit
       ): Self = StObject.set(x, "renderFuturePaymentUI", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRenderProfileSharingUI(
+      inline def setRenderProfileSharingUI(
         value: (js.Array[String], js.Function1[/* result */ js.Any, Unit], js.Function1[/* cancelReason */ String, Unit]) => Unit
       ): Self = StObject.set(x, "renderProfileSharingUI", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRenderSinglePaymentUI(
+      inline def setRenderSinglePaymentUI(
         value: (PayPalPayment, js.Function1[/* result */ SinglePaymentResult, Unit], js.Function1[/* cancelReason */ String, Unit]) => Unit
       ): Self = StObject.set(x, "renderSinglePaymentUI", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setVersion(value: js.Function1[/* result */ String, Unit] => Unit): Self = StObject.set(x, "version", js.Any.fromFunction1(value))
+      inline def setVersion(value: js.Function1[/* result */ String, Unit] => Unit): Self = StObject.set(x, "version", js.Any.fromFunction1(value))
     }
   }
   
@@ -281,17 +254,14 @@ object PayPalCordovaPlugin {
   }
   object SinglePaymentResult {
     
-    @scala.inline
-    def apply(client: Client, response: Authorizationid, response_type: String): SinglePaymentResult = {
+    inline def apply(client: Client, response: Authorizationid, response_type: String): SinglePaymentResult = {
       val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], response_type = response_type.asInstanceOf[js.Any])
       __obj.asInstanceOf[SinglePaymentResult]
     }
     
-    @scala.inline
-    implicit class SinglePaymentResultMutableBuilder[Self <: SinglePaymentResult] (val x: Self) extends AnyVal {
+    extension [Self <: SinglePaymentResult](x: Self) {
       
-      @scala.inline
-      def setResponse(value: Authorizationid): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: Authorizationid): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdMonthNames extends StObject
 object WdMonthNames {
   
-  @scala.inline
-  def wdMonthNamesArabic: `0` = 0.asInstanceOf[`0`]
+  inline def wdMonthNamesArabic: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdMonthNamesEnglish: `1` = 1.asInstanceOf[`1`]
+  inline def wdMonthNamesEnglish: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdMonthNamesFrench: `2` = 2.asInstanceOf[`2`]
+  inline def wdMonthNamesFrench: `2` = 2.asInstanceOf[`2`]
 }

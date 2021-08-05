@@ -16,19 +16,15 @@ trait LaunchUriResult extends StObject {
 }
 object LaunchUriResult {
   
-  @scala.inline
-  def apply(result: ValueSet, status: LaunchUriStatus): LaunchUriResult = {
+  inline def apply(result: ValueSet, status: LaunchUriStatus): LaunchUriResult = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchUriResult]
   }
   
-  @scala.inline
-  implicit class LaunchUriResultMutableBuilder[Self <: LaunchUriResult] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchUriResult](x: Self) {
     
-    @scala.inline
-    def setResult(value: ValueSet): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: ValueSet): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: LaunchUriStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: LaunchUriStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

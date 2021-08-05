@@ -11,19 +11,15 @@ trait BigQueryQuerySpec extends StObject {
 }
 object BigQueryQuerySpec {
   
-  @scala.inline
-  def apply(): BigQueryQuerySpec = {
+  inline def apply(): BigQueryQuerySpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BigQueryQuerySpec]
   }
   
-  @scala.inline
-  implicit class BigQueryQuerySpecMutableBuilder[Self <: BigQueryQuerySpec] (val x: Self) extends AnyVal {
+  extension [Self <: BigQueryQuerySpec](x: Self) {
     
-    @scala.inline
-    def setRawQuery(value: String): Self = StObject.set(x, "rawQuery", value.asInstanceOf[js.Any])
+    inline def setRawQuery(value: String): Self = StObject.set(x, "rawQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawQueryUndefined: Self = StObject.set(x, "rawQuery", js.undefined)
+    inline def setRawQueryUndefined: Self = StObject.set(x, "rawQuery", js.undefined)
   }
 }

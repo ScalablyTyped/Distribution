@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("crypto", "Hmac")
 @js.native
-class Hmac protected () extends Transform {
+/* private */ class Hmac () extends Transform {
   
   def digest(): Buffer = js.native
   def digest(encoding: HexBase64Latin1Encoding): String = js.native

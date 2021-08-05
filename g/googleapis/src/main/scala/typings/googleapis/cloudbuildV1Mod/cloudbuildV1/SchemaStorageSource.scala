@@ -29,31 +29,23 @@ trait SchemaStorageSource extends StObject {
 }
 object SchemaStorageSource {
   
-  @scala.inline
-  def apply(): SchemaStorageSource = {
+  inline def apply(): SchemaStorageSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaStorageSource]
   }
   
-  @scala.inline
-  implicit class SchemaStorageSourceMutableBuilder[Self <: SchemaStorageSource] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaStorageSource](x: Self) {
     
-    @scala.inline
-    def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
+    inline def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
     
-    @scala.inline
-    def setGeneration(value: String): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
+    inline def setGeneration(value: String): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
+    inline def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
     
-    @scala.inline
-    def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
+    inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
   }
 }

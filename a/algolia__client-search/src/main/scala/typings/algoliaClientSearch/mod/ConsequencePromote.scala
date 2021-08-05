@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ConsequencePromote extends StObject
 object ConsequencePromote {
   
-  @scala.inline
-  def ObjectIDs(objectIDs: js.Array[String], position: Double): typings.algoliaClientSearch.anon.ObjectIDs = {
+  inline def ObjectIDs(objectIDs: js.Array[String], position: Double): typings.algoliaClientSearch.anon.ObjectIDs = {
     val __obj = js.Dynamic.literal(objectIDs = objectIDs.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.algoliaClientSearch.anon.ObjectIDs]
   }
   
-  @scala.inline
-  def Position(objectID: String, position: Double): typings.algoliaClientSearch.anon.Position = {
+  inline def Position(objectID: String, position: Double): typings.algoliaClientSearch.anon.Position = {
     val __obj = js.Dynamic.literal(objectID = objectID.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.algoliaClientSearch.anon.Position]
   }

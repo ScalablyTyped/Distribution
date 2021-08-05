@@ -13,19 +13,15 @@ trait BaselineView
 }
 object BaselineView {
   
-  @scala.inline
-  def apply(): BaselineView = {
+  inline def apply(): BaselineView = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BaselineView]
   }
   
-  @scala.inline
-  implicit class BaselineViewMutableBuilder[Self <: BaselineView] (val x: Self) extends AnyVal {
+  extension [Self <: BaselineView](x: Self) {
     
-    @scala.inline
-    def setMetric_name(value: BaselineDetails): Self = StObject.set(x, "metric_name", value.asInstanceOf[js.Any])
+    inline def setMetric_name(value: BaselineDetails): Self = StObject.set(x, "metric_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetric_nameUndefined: Self = StObject.set(x, "metric_name", js.undefined)
+    inline def setMetric_nameUndefined: Self = StObject.set(x, "metric_name", js.undefined)
   }
 }

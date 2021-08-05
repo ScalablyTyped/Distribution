@@ -271,197 +271,169 @@ object microsoftGraphStrings {
        with EdgeSearchEngineType
        with EndpointType
        with LocationType
-  @scala.inline
-  def default: default = "default".asInstanceOf[default]
+  inline def default: default = "default".asInstanceOf[default]
   
   @js.native
   sealed trait After
     extends StObject
        with OnenotePatchInsertPosition
-  @scala.inline
-  def After: After = "After".asInstanceOf[After]
+  inline def After: After = "After".asInstanceOf[After]
   
   @js.native
   sealed trait Append
     extends StObject
        with OnenotePatchActionType
-  @scala.inline
-  def Append: Append = "Append".asInstanceOf[Append]
+  inline def Append: Append = "Append".asInstanceOf[Append]
   
   @js.native
   sealed trait Before
     extends StObject
        with OnenotePatchInsertPosition
-  @scala.inline
-  def Before: Before = "Before".asInstanceOf[Before]
+  inline def Before: Before = "Before".asInstanceOf[Before]
   
   @js.native
   sealed trait Completed
     extends StObject
        with OperationStatus
-  @scala.inline
-  def Completed: Completed = "Completed".asInstanceOf[Completed]
+  inline def Completed: Completed = "Completed".asInstanceOf[Completed]
   
   @js.native
   sealed trait Contributor
     extends StObject
        with OnenoteUserRole
-  @scala.inline
-  def Contributor: Contributor = "Contributor".asInstanceOf[Contributor]
+  inline def Contributor: Contributor = "Contributor".asInstanceOf[Contributor]
   
   @js.native
   sealed trait Delete
     extends StObject
        with OnenotePatchActionType
-  @scala.inline
-  def Delete: Delete = "Delete".asInstanceOf[Delete]
+  inline def Delete: Delete = "Delete".asInstanceOf[Delete]
   
   @js.native
   sealed trait Failed
     extends StObject
        with OperationStatus
-  @scala.inline
-  def Failed: Failed = "Failed".asInstanceOf[Failed]
+  inline def Failed: Failed = "Failed".asInstanceOf[Failed]
   
   @js.native
   sealed trait Insert
     extends StObject
        with OnenotePatchActionType
-  @scala.inline
-  def Insert: Insert = "Insert".asInstanceOf[Insert]
+  inline def Insert: Insert = "Insert".asInstanceOf[Insert]
   
   @js.native
   sealed trait None
     extends StObject
        with OnenoteUserRole
-  @scala.inline
-  def None: None = "None".asInstanceOf[None]
+  inline def None: None = "None".asInstanceOf[None]
   
   @js.native
   sealed trait NotStarted
     extends StObject
        with OperationStatus
-  @scala.inline
-  def NotStarted: NotStarted = "NotStarted".asInstanceOf[NotStarted]
+  inline def NotStarted: NotStarted = "NotStarted".asInstanceOf[NotStarted]
   
   @js.native
   sealed trait OnPremOneDriveForBusiness
     extends StObject
        with OnenoteSourceService
-  @scala.inline
-  def OnPremOneDriveForBusiness: OnPremOneDriveForBusiness = "OnPremOneDriveForBusiness".asInstanceOf[OnPremOneDriveForBusiness]
+  inline def OnPremOneDriveForBusiness: OnPremOneDriveForBusiness = "OnPremOneDriveForBusiness".asInstanceOf[OnPremOneDriveForBusiness]
   
   @js.native
   sealed trait OneDrive
     extends StObject
        with OnenoteSourceService
-  @scala.inline
-  def OneDrive: OneDrive = "OneDrive".asInstanceOf[OneDrive]
+  inline def OneDrive: OneDrive = "OneDrive".asInstanceOf[OneDrive]
   
   @js.native
   sealed trait OneDriveForBusiness
     extends StObject
        with OnenoteSourceService
-  @scala.inline
-  def OneDriveForBusiness: OneDriveForBusiness = "OneDriveForBusiness".asInstanceOf[OneDriveForBusiness]
+  inline def OneDriveForBusiness: OneDriveForBusiness = "OneDriveForBusiness".asInstanceOf[OneDriveForBusiness]
   
   @js.native
   sealed trait Owner
     extends StObject
        with OnenoteUserRole
-  @scala.inline
-  def Owner: Owner = "Owner".asInstanceOf[Owner]
+  inline def Owner: Owner = "Owner".asInstanceOf[Owner]
   
   @js.native
   sealed trait Prepend
     extends StObject
        with OnenotePatchActionType
-  @scala.inline
-  def Prepend: Prepend = "Prepend".asInstanceOf[Prepend]
+  inline def Prepend: Prepend = "Prepend".asInstanceOf[Prepend]
   
   @js.native
   sealed trait Reader
     extends StObject
        with OnenoteUserRole
-  @scala.inline
-  def Reader: Reader = "Reader".asInstanceOf[Reader]
+  inline def Reader: Reader = "Reader".asInstanceOf[Reader]
   
   @js.native
   sealed trait Replace
     extends StObject
        with OnenotePatchActionType
-  @scala.inline
-  def Replace: Replace = "Replace".asInstanceOf[Replace]
+  inline def Replace: Replace = "Replace".asInstanceOf[Replace]
   
   @js.native
   sealed trait Running
     extends StObject
        with OperationStatus
-  @scala.inline
-  def Running: Running = "Running".asInstanceOf[Running]
+  inline def Running: Running = "Running".asInstanceOf[Running]
   
   @js.native
   sealed trait Unknown
     extends StObject
        with OnenoteSourceService
-  @scala.inline
-  def Unknown: Unknown = "Unknown".asInstanceOf[Unknown]
+  inline def Unknown: Unknown = "Unknown".asInstanceOf[Unknown]
   
   @js.native
   sealed trait a
     extends StObject
        with Tone
-  @scala.inline
-  def a: a = "a".asInstanceOf[a]
+  inline def a: a = "a".asInstanceOf[a]
   
   @js.native
   sealed trait absoluteMonthly
     extends StObject
        with RecurrencePatternType
-  @scala.inline
-  def absoluteMonthly: absoluteMonthly = "absoluteMonthly".asInstanceOf[absoluteMonthly]
+  inline def absoluteMonthly: absoluteMonthly = "absoluteMonthly".asInstanceOf[absoluteMonthly]
   
   @js.native
   sealed trait absoluteYearly
     extends StObject
        with RecurrencePatternType
-  @scala.inline
-  def absoluteYearly: absoluteYearly = "absoluteYearly".asInstanceOf[absoluteYearly]
+  inline def absoluteYearly: absoluteYearly = "absoluteYearly".asInstanceOf[absoluteYearly]
   
   @js.native
   sealed trait accept
     extends StObject
        with CalendarSharingAction
-  @scala.inline
-  def accept: accept = "accept".asInstanceOf[accept]
+  inline def accept: accept = "accept".asInstanceOf[accept]
   
   @js.native
   sealed trait acceptAndViewCalendar
     extends StObject
        with CalendarSharingAction
-  @scala.inline
-  def acceptAndViewCalendar: acceptAndViewCalendar = "acceptAndViewCalendar".asInstanceOf[acceptAndViewCalendar]
+  inline def acceptAndViewCalendar: acceptAndViewCalendar = "acceptAndViewCalendar".asInstanceOf[acceptAndViewCalendar]
   
   @js.native
   sealed trait accepted
     extends StObject
        with ResponseType
-  @scala.inline
-  def accepted: accepted = "accepted".asInstanceOf[accepted]
+  inline def accepted: accepted = "accepted".asInstanceOf[accepted]
   
   @js.native
   sealed trait accountValidation
     extends StObject
        with DeviceEnrollmentFailureReason
-  @scala.inline
-  def accountValidation: accountValidation = "accountValidation".asInstanceOf[accountValidation]
+  inline def accountValidation: accountValidation = "accountValidation".asInstanceOf[accountValidation]
   
   @js.native
   sealed trait activated
     extends StObject
        with ManagedDevicePartnerReportedHealthState
-  @scala.inline
-  def activated: activated = "activated".asInstanceOf[activated]
+  inline def activated: activated = "activated".asInstanceOf[activated]
   
   @js.native
   sealed trait active
@@ -471,59 +443,51 @@ object microsoftGraphStrings {
        with DeviceManagementSubscriptionState
        with MediaState
        with Status
-  @scala.inline
-  def active: active = "active".asInstanceOf[active]
+  inline def active: active = "active".asInstanceOf[active]
   
   @js.native
   sealed trait addThisCalendar
     extends StObject
        with CalendarSharingAction
-  @scala.inline
-  def addThisCalendar: addThisCalendar = "addThisCalendar".asInstanceOf[addThisCalendar]
+  inline def addThisCalendar: addThisCalendar = "addThisCalendar".asInstanceOf[addThisCalendar]
   
   @js.native
   sealed trait adminConfirmedSigninCompromised
     extends StObject
        with RiskDetail
-  @scala.inline
-  def adminConfirmedSigninCompromised: adminConfirmedSigninCompromised = "adminConfirmedSigninCompromised".asInstanceOf[adminConfirmedSigninCompromised]
+  inline def adminConfirmedSigninCompromised: adminConfirmedSigninCompromised = "adminConfirmedSigninCompromised".asInstanceOf[adminConfirmedSigninCompromised]
   
   @js.native
   sealed trait adminConfirmedSigninSafe
     extends StObject
        with RiskDetail
-  @scala.inline
-  def adminConfirmedSigninSafe: adminConfirmedSigninSafe = "adminConfirmedSigninSafe".asInstanceOf[adminConfirmedSigninSafe]
+  inline def adminConfirmedSigninSafe: adminConfirmedSigninSafe = "adminConfirmedSigninSafe".asInstanceOf[adminConfirmedSigninSafe]
   
   @js.native
   sealed trait adminConfirmedUserCompromised
     extends StObject
        with RiskDetail
        with RiskEventType
-  @scala.inline
-  def adminConfirmedUserCompromised: adminConfirmedUserCompromised = "adminConfirmedUserCompromised".asInstanceOf[adminConfirmedUserCompromised]
+  inline def adminConfirmedUserCompromised: adminConfirmedUserCompromised = "adminConfirmedUserCompromised".asInstanceOf[adminConfirmedUserCompromised]
   
   @js.native
   sealed trait adminDismissedAllRiskForUser
     extends StObject
        with RiskDetail
-  @scala.inline
-  def adminDismissedAllRiskForUser: adminDismissedAllRiskForUser = "adminDismissedAllRiskForUser".asInstanceOf[adminDismissedAllRiskForUser]
+  inline def adminDismissedAllRiskForUser: adminDismissedAllRiskForUser = "adminDismissedAllRiskForUser".asInstanceOf[adminDismissedAllRiskForUser]
   
   @js.native
   sealed trait adminGeneratedTemporaryPassword
     extends StObject
        with RiskDetail
-  @scala.inline
-  def adminGeneratedTemporaryPassword: adminGeneratedTemporaryPassword = "adminGeneratedTemporaryPassword".asInstanceOf[adminGeneratedTemporaryPassword]
+  inline def adminGeneratedTemporaryPassword: adminGeneratedTemporaryPassword = "adminGeneratedTemporaryPassword".asInstanceOf[adminGeneratedTemporaryPassword]
   
   @js.native
   sealed trait administrator
     extends StObject
        with ThreatAssessmentRequestSource
        with UserAccountSecurityType
-  @scala.inline
-  def administrator: administrator = "administrator".asInstanceOf[administrator]
+  inline def administrator: administrator = "administrator".asInstanceOf[administrator]
   
   @js.native
   sealed trait adults
@@ -535,44 +499,38 @@ object microsoftGraphStrings {
        with RatingUnitedKingdomMoviesType
        with RatingUnitedStatesMoviesType
        with RatingUnitedStatesTelevisionType
-  @scala.inline
-  def adults: adults = "adults".asInstanceOf[adults]
+  inline def adults: adults = "adults".asInstanceOf[adults]
   
   @js.native
   sealed trait advancedSpamFiltering
     extends StObject
        with MailDestinationRoutingReason
-  @scala.inline
-  def advancedSpamFiltering: advancedSpamFiltering = "advancedSpamFiltering".asInstanceOf[advancedSpamFiltering]
+  inline def advancedSpamFiltering: advancedSpamFiltering = "advancedSpamFiltering".asInstanceOf[advancedSpamFiltering]
   
   @js.native
   sealed trait aesCbc128
     extends StObject
        with BitLockerEncryptionMethod
-  @scala.inline
-  def aesCbc128: aesCbc128 = "aesCbc128".asInstanceOf[aesCbc128]
+  inline def aesCbc128: aesCbc128 = "aesCbc128".asInstanceOf[aesCbc128]
   
   @js.native
   sealed trait aesCbc256
     extends StObject
        with BitLockerEncryptionMethod
-  @scala.inline
-  def aesCbc256: aesCbc256 = "aesCbc256".asInstanceOf[aesCbc256]
+  inline def aesCbc256: aesCbc256 = "aesCbc256".asInstanceOf[aesCbc256]
   
   @js.native
   sealed trait afterDeviceRestart
     extends StObject
        with ManagedAppDataEncryptionType
-  @scala.inline
-  def afterDeviceRestart: afterDeviceRestart = "afterDeviceRestart".asInstanceOf[afterDeviceRestart]
+  inline def afterDeviceRestart: afterDeviceRestart = "afterDeviceRestart".asInstanceOf[afterDeviceRestart]
   
   @js.native
   sealed trait agesAbove10
     extends StObject
        with RatingFranceMoviesType
        with RatingFranceTelevisionType
-  @scala.inline
-  def agesAbove10: agesAbove10 = "agesAbove10".asInstanceOf[agesAbove10]
+  inline def agesAbove10: agesAbove10 = "agesAbove10".asInstanceOf[agesAbove10]
   
   @js.native
   sealed trait agesAbove12
@@ -583,37 +541,32 @@ object microsoftGraphStrings {
        with RatingGermanyMoviesType
        with RatingGermanyTelevisionType
        with RatingIrelandMoviesType
-  @scala.inline
-  def agesAbove12: agesAbove12 = "agesAbove12".asInstanceOf[agesAbove12]
+  inline def agesAbove12: agesAbove12 = "agesAbove12".asInstanceOf[agesAbove12]
   
   @js.native
   sealed trait agesAbove12Cinema
     extends StObject
        with RatingUnitedKingdomMoviesType
-  @scala.inline
-  def agesAbove12Cinema: agesAbove12Cinema = "agesAbove12Cinema".asInstanceOf[agesAbove12Cinema]
+  inline def agesAbove12Cinema: agesAbove12Cinema = "agesAbove12Cinema".asInstanceOf[agesAbove12Cinema]
   
   @js.native
   sealed trait agesAbove12Video
     extends StObject
        with RatingUnitedKingdomMoviesType
-  @scala.inline
-  def agesAbove12Video: agesAbove12Video = "agesAbove12Video".asInstanceOf[agesAbove12Video]
+  inline def agesAbove12Video: agesAbove12Video = "agesAbove12Video".asInstanceOf[agesAbove12Video]
   
   @js.native
   sealed trait agesAbove13
     extends StObject
        with RatingNewZealandMoviesType
-  @scala.inline
-  def agesAbove13: agesAbove13 = "agesAbove13".asInstanceOf[agesAbove13]
+  inline def agesAbove13: agesAbove13 = "agesAbove13".asInstanceOf[agesAbove13]
   
   @js.native
   sealed trait agesAbove14
     extends StObject
        with RatingCanadaMoviesType
        with RatingCanadaTelevisionType
-  @scala.inline
-  def agesAbove14: agesAbove14 = "agesAbove14".asInstanceOf[agesAbove14]
+  inline def agesAbove14: agesAbove14 = "agesAbove14".asInstanceOf[agesAbove14]
   
   @js.native
   sealed trait agesAbove15
@@ -624,15 +577,13 @@ object microsoftGraphStrings {
        with RatingJapanMoviesType
        with RatingNewZealandMoviesType
        with RatingUnitedKingdomMoviesType
-  @scala.inline
-  def agesAbove15: agesAbove15 = "agesAbove15".asInstanceOf[agesAbove15]
+  inline def agesAbove15: agesAbove15 = "agesAbove15".asInstanceOf[agesAbove15]
   
   @js.native
   sealed trait agesAbove15AdultViolence
     extends StObject
        with RatingAustraliaTelevisionType
-  @scala.inline
-  def agesAbove15AdultViolence: agesAbove15AdultViolence = "agesAbove15AdultViolence".asInstanceOf[agesAbove15AdultViolence]
+  inline def agesAbove15AdultViolence: agesAbove15AdultViolence = "agesAbove15AdultViolence".asInstanceOf[agesAbove15AdultViolence]
   
   @js.native
   sealed trait agesAbove16
@@ -643,22 +594,19 @@ object microsoftGraphStrings {
        with RatingGermanyTelevisionType
        with RatingIrelandMoviesType
        with RatingNewZealandMoviesType
-  @scala.inline
-  def agesAbove16: agesAbove16 = "agesAbove16".asInstanceOf[agesAbove16]
+  inline def agesAbove16: agesAbove16 = "agesAbove16".asInstanceOf[agesAbove16]
   
   @js.native
   sealed trait agesAbove16Restricted
     extends StObject
        with RatingNewZealandMoviesType
-  @scala.inline
-  def agesAbove16Restricted: agesAbove16Restricted = "agesAbove16Restricted".asInstanceOf[agesAbove16Restricted]
+  inline def agesAbove16Restricted: agesAbove16Restricted = "agesAbove16Restricted".asInstanceOf[agesAbove16Restricted]
   
   @js.native
   sealed trait agesAbove17
     extends StObject
        with RatingAppsType
-  @scala.inline
-  def agesAbove17: agesAbove17 = "agesAbove17".asInstanceOf[agesAbove17]
+  inline def agesAbove17: agesAbove17 = "agesAbove17".asInstanceOf[agesAbove17]
   
   @js.native
   sealed trait agesAbove18
@@ -670,37 +618,32 @@ object microsoftGraphStrings {
        with RatingFranceTelevisionType
        with RatingJapanMoviesType
        with RatingNewZealandMoviesType
-  @scala.inline
-  def agesAbove18: agesAbove18 = "agesAbove18".asInstanceOf[agesAbove18]
+  inline def agesAbove18: agesAbove18 = "agesAbove18".asInstanceOf[agesAbove18]
   
   @js.native
   sealed trait agesAbove4
     extends StObject
        with RatingAppsType
-  @scala.inline
-  def agesAbove4: agesAbove4 = "agesAbove4".asInstanceOf[agesAbove4]
+  inline def agesAbove4: agesAbove4 = "agesAbove4".asInstanceOf[agesAbove4]
   
   @js.native
   sealed trait agesAbove6
     extends StObject
        with RatingGermanyMoviesType
        with RatingGermanyTelevisionType
-  @scala.inline
-  def agesAbove6: agesAbove6 = "agesAbove6".asInstanceOf[agesAbove6]
+  inline def agesAbove6: agesAbove6 = "agesAbove6".asInstanceOf[agesAbove6]
   
   @js.native
   sealed trait agesAbove9
     extends StObject
        with RatingAppsType
-  @scala.inline
-  def agesAbove9: agesAbove9 = "agesAbove9".asInstanceOf[agesAbove9]
+  inline def agesAbove9: agesAbove9 = "agesAbove9".asInstanceOf[agesAbove9]
   
   @js.native
   sealed trait aiConfirmedSigninSafe
     extends StObject
        with RiskDetail
-  @scala.inline
-  def aiConfirmedSigninSafe: aiConfirmedSigninSafe = "aiConfirmedSigninSafe".asInstanceOf[aiConfirmedSigninSafe]
+  inline def aiConfirmedSigninSafe: aiConfirmedSigninSafe = "aiConfirmedSigninSafe".asInstanceOf[aiConfirmedSigninSafe]
   
   @js.native
   sealed trait all
@@ -710,8 +653,7 @@ object microsoftGraphStrings {
        with ExternalAudienceScope
        with PolicyPlatformType
        with WindowsUpdateType
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
   sealed trait allAllowed
@@ -735,16 +677,14 @@ object microsoftGraphStrings {
        with RatingUnitedKingdomTelevisionType
        with RatingUnitedStatesMoviesType
        with RatingUnitedStatesTelevisionType
-  @scala.inline
-  def allAllowed: allAllowed = "allAllowed".asInstanceOf[allAllowed]
+  inline def allAllowed: allAllowed = "allAllowed".asInstanceOf[allAllowed]
   
   @js.native
   sealed trait allApps
     extends StObject
        with ManagedAppClipboardSharingLevel
        with ManagedAppDataTransferLevel
-  @scala.inline
-  def allApps: allApps = "allApps".asInstanceOf[allApps]
+  inline def allApps: allApps = "allApps".asInstanceOf[allApps]
   
   @js.native
   sealed trait allBlocked
@@ -768,8 +708,7 @@ object microsoftGraphStrings {
        with RatingUnitedKingdomTelevisionType
        with RatingUnitedStatesMoviesType
        with RatingUnitedStatesTelevisionType
-  @scala.inline
-  def allBlocked: allBlocked = "allBlocked".asInstanceOf[allBlocked]
+  inline def allBlocked: allBlocked = "allBlocked".asInstanceOf[allBlocked]
   
   @js.native
   sealed trait allow
@@ -778,57 +717,49 @@ object microsoftGraphStrings {
        with EdgeCookiePolicy
        with Win32LobAppRestartBehavior
        with WindowsInformationProtectionPinCharacterRequirements
-  @scala.inline
-  def allow: allow = "allow".asInstanceOf[allow]
+  inline def allow: allow = "allow".asInstanceOf[allow]
   
   @js.native
   sealed trait allowAlways
     extends StObject
        with WebBrowserCookieSettings
-  @scala.inline
-  def allowAlways: allowAlways = "allowAlways".asInstanceOf[allowAlways]
+  inline def allowAlways: allowAlways = "allowAlways".asInstanceOf[allowAlways]
   
   @js.native
   sealed trait allowCurrentWebSite
     extends StObject
        with WebBrowserCookieSettings
-  @scala.inline
-  def allowCurrentWebSite: allowCurrentWebSite = "allowCurrentWebSite".asInstanceOf[allowCurrentWebSite]
+  inline def allowCurrentWebSite: allowCurrentWebSite = "allowCurrentWebSite".asInstanceOf[allowCurrentWebSite]
   
   @js.native
   sealed trait allowFalsePositiveOverride
     extends StObject
        with ChatMessagePolicyViolationVerdictDetailsTypes
-  @scala.inline
-  def allowFalsePositiveOverride: allowFalsePositiveOverride = "allowFalsePositiveOverride".asInstanceOf[allowFalsePositiveOverride]
+  inline def allowFalsePositiveOverride: allowFalsePositiveOverride = "allowFalsePositiveOverride".asInstanceOf[allowFalsePositiveOverride]
   
   @js.native
   sealed trait allowFromWebsitesVisited
     extends StObject
        with WebBrowserCookieSettings
-  @scala.inline
-  def allowFromWebsitesVisited: allowFromWebsitesVisited = "allowFromWebsitesVisited".asInstanceOf[allowFromWebsitesVisited]
+  inline def allowFromWebsitesVisited: allowFromWebsitesVisited = "allowFromWebsitesVisited".asInstanceOf[allowFromWebsitesVisited]
   
   @js.native
   sealed trait allowOverrideWithJustification
     extends StObject
        with ChatMessagePolicyViolationVerdictDetailsTypes
-  @scala.inline
-  def allowOverrideWithJustification: allowOverrideWithJustification = "allowOverrideWithJustification".asInstanceOf[allowOverrideWithJustification]
+  inline def allowOverrideWithJustification: allowOverrideWithJustification = "allowOverrideWithJustification".asInstanceOf[allowOverrideWithJustification]
   
   @js.native
   sealed trait allowOverrideWithoutJustification
     extends StObject
        with ChatMessagePolicyViolationVerdictDetailsTypes
-  @scala.inline
-  def allowOverrideWithoutJustification: allowOverrideWithoutJustification = "allowOverrideWithoutJustification".asInstanceOf[allowOverrideWithoutJustification]
+  inline def allowOverrideWithoutJustification: allowOverrideWithoutJustification = "allowOverrideWithoutJustification".asInstanceOf[allowOverrideWithoutJustification]
   
   @js.native
   sealed trait allowPersonalToWork
     extends StObject
        with AndroidWorkProfileCrossProfileDataSharingType
-  @scala.inline
-  def allowPersonalToWork: allowPersonalToWork = "allowPersonalToWork".asInstanceOf[allowPersonalToWork]
+  inline def allowPersonalToWork: allowPersonalToWork = "allowPersonalToWork".asInstanceOf[allowPersonalToWork]
   
   @js.native
   sealed trait allowed
@@ -836,66 +767,57 @@ object microsoftGraphStrings {
        with DeviceManagementExchangeAccessState
        with StateManagementSetting
        with WindowsHelloForBusinessPinUsage
-  @scala.inline
-  def allowed: allowed = "allowed".asInstanceOf[allowed]
+  inline def allowed: allowed = "allowed".asInstanceOf[allowed]
   
   @js.native
   sealed trait alphabetic
     extends StObject
        with AndroidRequiredPasswordType
-  @scala.inline
-  def alphabetic: alphabetic = "alphabetic".asInstanceOf[alphabetic]
+  inline def alphabetic: alphabetic = "alphabetic".asInstanceOf[alphabetic]
   
   @js.native
   sealed trait alphanumeric
     extends StObject
        with AndroidRequiredPasswordType
        with RequiredPasswordType
-  @scala.inline
-  def alphanumeric: alphanumeric = "alphanumeric".asInstanceOf[alphanumeric]
+  inline def alphanumeric: alphanumeric = "alphanumeric".asInstanceOf[alphanumeric]
   
   @js.native
   sealed trait alphanumericAndSymbol
     extends StObject
        with ManagedAppPinCharacterSet
-  @scala.inline
-  def alphanumericAndSymbol: alphanumericAndSymbol = "alphanumericAndSymbol".asInstanceOf[alphanumericAndSymbol]
+  inline def alphanumericAndSymbol: alphanumericAndSymbol = "alphanumericAndSymbol".asInstanceOf[alphanumericAndSymbol]
   
   @js.native
   sealed trait alphanumericWithSymbols
     extends StObject
        with AndroidRequiredPasswordType
        with AndroidWorkProfileRequiredPasswordType
-  @scala.inline
-  def alphanumericWithSymbols: alphanumericWithSymbols = "alphanumericWithSymbols".asInstanceOf[alphanumericWithSymbols]
+  inline def alphanumericWithSymbols: alphanumericWithSymbols = "alphanumericWithSymbols".asInstanceOf[alphanumericWithSymbols]
   
   @js.native
   sealed trait always
     extends StObject
        with PersistentBrowserSessionMode
-  @scala.inline
-  def always: always = "always".asInstanceOf[always]
+  inline def always: always = "always".asInstanceOf[always]
   
   @js.native
   sealed trait alwaysEnabled
     extends StObject
        with AutomaticRepliesStatus
-  @scala.inline
-  def alwaysEnabled: alwaysEnabled = "alwaysEnabled".asInstanceOf[alwaysEnabled]
+  inline def alwaysEnabled: alwaysEnabled = "alwaysEnabled".asInstanceOf[alwaysEnabled]
   
   @js.native
   sealed trait alwaysNotify
     extends StObject
        with WindowsUserAccountControlSettings
-  @scala.inline
-  def alwaysNotify: alwaysNotify = "alwaysNotify".asInstanceOf[alwaysNotify]
+  inline def alwaysNotify: alwaysNotify = "alwaysNotify".asInstanceOf[alwaysNotify]
   
   @js.native
   sealed trait alwaysPrompt
     extends StObject
        with DefenderPromptForSampleSubmission
-  @scala.inline
-  def alwaysPrompt: alwaysPrompt = "alwaysPrompt".asInstanceOf[alwaysPrompt]
+  inline def alwaysPrompt: alwaysPrompt = "alwaysPrompt".asInstanceOf[alwaysPrompt]
   
   @js.native
   sealed trait android
@@ -903,311 +825,267 @@ object microsoftGraphStrings {
        with ClientPlatform
        with ConditionalAccessDevicePlatform
        with PolicyPlatformType
-  @scala.inline
-  def android: android = "android".asInstanceOf[android]
+  inline def android: android = "android".asInstanceOf[android]
   
   @js.native
   sealed trait androidWorkProfile
     extends StObject
        with PolicyPlatformType
-  @scala.inline
-  def androidWorkProfile: androidWorkProfile = "androidWorkProfile".asInstanceOf[androidWorkProfile]
+  inline def androidWorkProfile: androidWorkProfile = "androidWorkProfile".asInstanceOf[androidWorkProfile]
   
   @js.native
   sealed trait anonymizedIPAddress
     extends StObject
        with RiskEventType
-  @scala.inline
-  def anonymizedIPAddress: anonymizedIPAddress = "anonymizedIPAddress".asInstanceOf[anonymizedIPAddress]
+  inline def anonymizedIPAddress: anonymizedIPAddress = "anonymizedIPAddress".asInstanceOf[anonymizedIPAddress]
   
   @js.native
   sealed trait any
     extends StObject
        with AndroidRequiredPasswordType
        with MessageActionFlag
-  @scala.inline
-  def any: any = "any".asInstanceOf[any]
+  inline def any: any = "any".asInstanceOf[any]
   
   @js.native
   sealed trait appleBulkWithUser
     extends StObject
        with DeviceEnrollmentType
-  @scala.inline
-  def appleBulkWithUser: appleBulkWithUser = "appleBulkWithUser".asInstanceOf[appleBulkWithUser]
+  inline def appleBulkWithUser: appleBulkWithUser = "appleBulkWithUser".asInstanceOf[appleBulkWithUser]
   
   @js.native
   sealed trait appleBulkWithoutUser
     extends StObject
        with DeviceEnrollmentType
-  @scala.inline
-  def appleBulkWithoutUser: appleBulkWithoutUser = "appleBulkWithoutUser".asInstanceOf[appleBulkWithoutUser]
+  inline def appleBulkWithoutUser: appleBulkWithoutUser = "appleBulkWithoutUser".asInstanceOf[appleBulkWithoutUser]
   
   @js.native
   sealed trait application
     extends StObject
        with PermissionType
-  @scala.inline
-  def application: application = "application".asInstanceOf[application]
+  inline def application: application = "application".asInstanceOf[application]
   
   @js.native
   sealed trait approvalPending
     extends StObject
        with DeviceRegistrationState
-  @scala.inline
-  def approvalPending: approvalPending = "approvalPending".asInstanceOf[approvalPending]
+  inline def approvalPending: approvalPending = "approvalPending".asInstanceOf[approvalPending]
   
   @js.native
   sealed trait approved
     extends StObject
        with ScheduleChangeState
-  @scala.inline
-  def approved: approved = "approved".asInstanceOf[approved]
+  inline def approved: approved = "approved".asInstanceOf[approved]
   
   @js.native
   sealed trait approvedApplication
     extends StObject
        with ConditionalAccessGrantControl
-  @scala.inline
-  def approvedApplication: approvedApplication = "approvedApplication".asInstanceOf[approvedApplication]
+  inline def approvedApplication: approvedApplication = "approvedApplication".asInstanceOf[approvedApplication]
   
   @js.native
   sealed trait apps
     extends StObject
        with ClonableTeamParts
-  @scala.inline
-  def apps: apps = "apps".asInstanceOf[apps]
+  inline def apps: apps = "apps".asInstanceOf[apps]
   
   @js.native
   sealed trait appsInListCompliant
     extends StObject
        with AppListType
-  @scala.inline
-  def appsInListCompliant: appsInListCompliant = "appsInListCompliant".asInstanceOf[appsInListCompliant]
+  inline def appsInListCompliant: appsInListCompliant = "appsInListCompliant".asInstanceOf[appsInListCompliant]
   
   @js.native
   sealed trait appsNotInListCompliant
     extends StObject
        with AppListType
-  @scala.inline
-  def appsNotInListCompliant: appsNotInListCompliant = "appsNotInListCompliant".asInstanceOf[appsNotInListCompliant]
+  inline def appsNotInListCompliant: appsNotInListCompliant = "appsNotInListCompliant".asInstanceOf[appsNotInListCompliant]
   
   @js.native
   sealed trait archiveTeam
     extends StObject
        with TeamsAsyncOperationType
-  @scala.inline
-  def archiveTeam: archiveTeam = "archiveTeam".asInstanceOf[archiveTeam]
+  inline def archiveTeam: archiveTeam = "archiveTeam".asInstanceOf[archiveTeam]
   
   @js.native
   sealed trait arm
     extends StObject
        with WindowsArchitecture
-  @scala.inline
-  def arm: arm = "arm".asInstanceOf[arm]
+  inline def arm: arm = "arm".asInstanceOf[arm]
   
   @js.native
   sealed trait assignedToExternalMDM
     extends StObject
        with VppTokenState
-  @scala.inline
-  def assignedToExternalMDM: assignedToExternalMDM = "assignedToExternalMDM".asInstanceOf[assignedToExternalMDM]
+  inline def assignedToExternalMDM: assignedToExternalMDM = "assignedToExternalMDM".asInstanceOf[assignedToExternalMDM]
   
   @js.native
   sealed trait assistant
     extends StObject
        with PhoneType
-  @scala.inline
-  def assistant: assistant = "assistant".asInstanceOf[assistant]
+  inline def assistant: assistant = "assistant".asInstanceOf[assistant]
   
   @js.native
   sealed trait atLeastAlphabetic
     extends StObject
        with AndroidWorkProfileRequiredPasswordType
-  @scala.inline
-  def atLeastAlphabetic: atLeastAlphabetic = "atLeastAlphabetic".asInstanceOf[atLeastAlphabetic]
+  inline def atLeastAlphabetic: atLeastAlphabetic = "atLeastAlphabetic".asInstanceOf[atLeastAlphabetic]
   
   @js.native
   sealed trait atLeastAlphanumeric
     extends StObject
        with AndroidWorkProfileRequiredPasswordType
-  @scala.inline
-  def atLeastAlphanumeric: atLeastAlphanumeric = "atLeastAlphanumeric".asInstanceOf[atLeastAlphanumeric]
+  inline def atLeastAlphanumeric: atLeastAlphanumeric = "atLeastAlphanumeric".asInstanceOf[atLeastAlphanumeric]
   
   @js.native
   sealed trait atLeastNumeric
     extends StObject
        with AndroidWorkProfileRequiredPasswordType
-  @scala.inline
-  def atLeastNumeric: atLeastNumeric = "atLeastNumeric".asInstanceOf[atLeastNumeric]
+  inline def atLeastNumeric: atLeastNumeric = "atLeastNumeric".asInstanceOf[atLeastNumeric]
   
   @js.native
   sealed trait atRisk
     extends StObject
        with RiskState
-  @scala.inline
-  def atRisk: atRisk = "atRisk".asInstanceOf[atRisk]
+  inline def atRisk: atRisk = "atRisk".asInstanceOf[atRisk]
   
   @js.native
   sealed trait attacked
     extends StObject
        with SecurityResourceType
-  @scala.inline
-  def attacked: attacked = "attacked".asInstanceOf[attacked]
+  inline def attacked: attacked = "attacked".asInstanceOf[attacked]
   
   @js.native
   sealed trait attempt
     extends StObject
        with FirewallCertificateRevocationListCheckMethodType
-  @scala.inline
-  def attempt: attempt = "attempt".asInstanceOf[attempt]
+  inline def attempt: attempt = "attempt".asInstanceOf[attempt]
   
   @js.native
   sealed trait attempted
     extends StObject
        with ConnectionStatus
-  @scala.inline
-  def attempted: attempted = "attempted".asInstanceOf[attempted]
+  inline def attempted: attempted = "attempted".asInstanceOf[attempted]
   
   @js.native
   sealed trait attendee
     extends StObject
        with OnlineMeetingRole
-  @scala.inline
-  def attendee: attendee = "attendee".asInstanceOf[attendee]
+  inline def attendee: attendee = "attendee".asInstanceOf[attendee]
   
   @js.native
   sealed trait audio
     extends StObject
        with Modality
        with typings.microsoftGraph.mod.CallRecords.Modality
-  @scala.inline
-  def audio: audio = "audio".asInstanceOf[audio]
+  inline def audio: audio = "audio".asInstanceOf[audio]
   
   @js.native
   sealed trait audioTeleconferencerController
     extends StObject
        with ServiceRole
-  @scala.inline
-  def audioTeleconferencerController: audioTeleconferencerController = "audioTeleconferencerController".asInstanceOf[audioTeleconferencerController]
+  inline def audioTeleconferencerController: audioTeleconferencerController = "audioTeleconferencerController".asInstanceOf[audioTeleconferencerController]
   
   @js.native
   sealed trait auditComponentsAndStoreApps
     extends StObject
        with AppLockerApplicationControlType
-  @scala.inline
-  def auditComponentsAndStoreApps: auditComponentsAndStoreApps = "auditComponentsAndStoreApps".asInstanceOf[auditComponentsAndStoreApps]
+  inline def auditComponentsAndStoreApps: auditComponentsAndStoreApps = "auditComponentsAndStoreApps".asInstanceOf[auditComponentsAndStoreApps]
   
   @js.native
   sealed trait auditComponentsStoreAppsAndSmartlocker
     extends StObject
        with AppLockerApplicationControlType
-  @scala.inline
-  def auditComponentsStoreAppsAndSmartlocker: auditComponentsStoreAppsAndSmartlocker = "auditComponentsStoreAppsAndSmartlocker".asInstanceOf[auditComponentsStoreAppsAndSmartlocker]
+  inline def auditComponentsStoreAppsAndSmartlocker: auditComponentsStoreAppsAndSmartlocker = "auditComponentsStoreAppsAndSmartlocker".asInstanceOf[auditComponentsStoreAppsAndSmartlocker]
   
   @js.native
   sealed trait authentication
     extends StObject
        with DeviceEnrollmentFailureReason
-  @scala.inline
-  def authentication: authentication = "authentication".asInstanceOf[authentication]
+  inline def authentication: authentication = "authentication".asInstanceOf[authentication]
   
   @js.native
   sealed trait authenticodeHash256
     extends StObject
        with FileHashType
-  @scala.inline
-  def authenticodeHash256: authenticodeHash256 = "authenticodeHash256".asInstanceOf[authenticodeHash256]
+  inline def authenticodeHash256: authenticodeHash256 = "authenticodeHash256".asInstanceOf[authenticodeHash256]
   
   @js.native
   sealed trait authorization
     extends StObject
        with DeviceEnrollmentFailureReason
-  @scala.inline
-  def authorization: authorization = "authorization".asInstanceOf[authorization]
+  inline def authorization: authorization = "authorization".asInstanceOf[authorization]
   
   @js.native
   sealed trait auto
     extends StObject
        with CalendarColor
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
   sealed trait autoDeny
     extends StObject
        with AndroidWorkProfileDefaultAppPermissionPolicyType
-  @scala.inline
-  def autoDeny: autoDeny = "autoDeny".asInstanceOf[autoDeny]
+  inline def autoDeny: autoDeny = "autoDeny".asInstanceOf[autoDeny]
   
   @js.native
   sealed trait autoGrant
     extends StObject
        with AndroidWorkProfileDefaultAppPermissionPolicyType
-  @scala.inline
-  def autoGrant: autoGrant = "autoGrant".asInstanceOf[autoGrant]
+  inline def autoGrant: autoGrant = "autoGrant".asInstanceOf[autoGrant]
   
   @js.native
   sealed trait autoInstallAndRebootAtMaintenanceTime
     extends StObject
        with AutomaticUpdateMode
-  @scala.inline
-  def autoInstallAndRebootAtMaintenanceTime: autoInstallAndRebootAtMaintenanceTime = "autoInstallAndRebootAtMaintenanceTime".asInstanceOf[autoInstallAndRebootAtMaintenanceTime]
+  inline def autoInstallAndRebootAtMaintenanceTime: autoInstallAndRebootAtMaintenanceTime = "autoInstallAndRebootAtMaintenanceTime".asInstanceOf[autoInstallAndRebootAtMaintenanceTime]
   
   @js.native
   sealed trait autoInstallAndRebootAtScheduledTime
     extends StObject
        with AutomaticUpdateMode
-  @scala.inline
-  def autoInstallAndRebootAtScheduledTime: autoInstallAndRebootAtScheduledTime = "autoInstallAndRebootAtScheduledTime".asInstanceOf[autoInstallAndRebootAtScheduledTime]
+  inline def autoInstallAndRebootAtScheduledTime: autoInstallAndRebootAtScheduledTime = "autoInstallAndRebootAtScheduledTime".asInstanceOf[autoInstallAndRebootAtScheduledTime]
   
   @js.native
   sealed trait autoInstallAndRebootWithoutEndUserControl
     extends StObject
        with AutomaticUpdateMode
-  @scala.inline
-  def autoInstallAndRebootWithoutEndUserControl: autoInstallAndRebootWithoutEndUserControl = "autoInstallAndRebootWithoutEndUserControl".asInstanceOf[autoInstallAndRebootWithoutEndUserControl]
+  inline def autoInstallAndRebootWithoutEndUserControl: autoInstallAndRebootWithoutEndUserControl = "autoInstallAndRebootWithoutEndUserControl".asInstanceOf[autoInstallAndRebootWithoutEndUserControl]
   
   @js.native
   sealed trait autoInstallAtMaintenanceTime
     extends StObject
        with AutomaticUpdateMode
-  @scala.inline
-  def autoInstallAtMaintenanceTime: autoInstallAtMaintenanceTime = "autoInstallAtMaintenanceTime".asInstanceOf[autoInstallAtMaintenanceTime]
+  inline def autoInstallAtMaintenanceTime: autoInstallAtMaintenanceTime = "autoInstallAtMaintenanceTime".asInstanceOf[autoInstallAtMaintenanceTime]
   
   @js.native
   sealed trait autoPurgeToDeleted
     extends StObject
        with MailDestinationRoutingReason
-  @scala.inline
-  def autoPurgeToDeleted: autoPurgeToDeleted = "autoPurgeToDeleted".asInstanceOf[autoPurgeToDeleted]
+  inline def autoPurgeToDeleted: autoPurgeToDeleted = "autoPurgeToDeleted".asInstanceOf[autoPurgeToDeleted]
   
   @js.native
   sealed trait autoPurgeToInbox
     extends StObject
        with MailDestinationRoutingReason
-  @scala.inline
-  def autoPurgeToInbox: autoPurgeToInbox = "autoPurgeToInbox".asInstanceOf[autoPurgeToInbox]
+  inline def autoPurgeToInbox: autoPurgeToInbox = "autoPurgeToInbox".asInstanceOf[autoPurgeToInbox]
   
   @js.native
   sealed trait autoPurgeToJunk
     extends StObject
        with MailDestinationRoutingReason
-  @scala.inline
-  def autoPurgeToJunk: autoPurgeToJunk = "autoPurgeToJunk".asInstanceOf[autoPurgeToJunk]
+  inline def autoPurgeToJunk: autoPurgeToJunk = "autoPurgeToJunk".asInstanceOf[autoPurgeToJunk]
   
   @js.native
   sealed trait automatic
     extends StObject
        with PlannerPreviewType
-  @scala.inline
-  def automatic: automatic = "automatic".asInstanceOf[automatic]
+  inline def automatic: automatic = "automatic".asInstanceOf[automatic]
   
   @js.native
   sealed trait automaticReplies
     extends StObject
        with MailTipsType
-  @scala.inline
-  def automaticReplies: automaticReplies = "automaticReplies".asInstanceOf[automaticReplies]
+  inline def automaticReplies: automaticReplies = "automaticReplies".asInstanceOf[automaticReplies]
   
   @js.native
   sealed trait available
@@ -1215,156 +1093,134 @@ object microsoftGraphStrings {
        with InstallIntent
        with IosUpdatesInstallStatus
        with MobileThreatPartnerTenantState
-  @scala.inline
-  def available: available = "available".asInstanceOf[available]
+  inline def available: available = "available".asInstanceOf[available]
   
   @js.native
   sealed trait availableWithoutEnrollment
     extends StObject
        with InstallIntent
-  @scala.inline
-  def availableWithoutEnrollment: availableWithoutEnrollment = "availableWithoutEnrollment".asInstanceOf[availableWithoutEnrollment]
+  inline def availableWithoutEnrollment: availableWithoutEnrollment = "availableWithoutEnrollment".asInstanceOf[availableWithoutEnrollment]
   
   @js.native
   sealed trait azureAD
     extends StObject
        with GroupType
-  @scala.inline
-  def azureAD: azureAD = "azureAD".asInstanceOf[azureAD]
+  inline def azureAD: azureAD = "azureAD".asInstanceOf[azureAD]
   
   @js.native
   sealed trait azureADBlockDueToAccessPolicy
     extends StObject
        with DeviceManagementExchangeAccessStateReason
-  @scala.inline
-  def azureADBlockDueToAccessPolicy: azureADBlockDueToAccessPolicy = "azureADBlockDueToAccessPolicy".asInstanceOf[azureADBlockDueToAccessPolicy]
+  inline def azureADBlockDueToAccessPolicy: azureADBlockDueToAccessPolicy = "azureADBlockDueToAccessPolicy".asInstanceOf[azureADBlockDueToAccessPolicy]
   
   @js.native
   sealed trait azureStorageUriRenewalFailed
     extends StObject
        with MobileAppContentFileUploadState
-  @scala.inline
-  def azureStorageUriRenewalFailed: azureStorageUriRenewalFailed = "azureStorageUriRenewalFailed".asInstanceOf[azureStorageUriRenewalFailed]
+  inline def azureStorageUriRenewalFailed: azureStorageUriRenewalFailed = "azureStorageUriRenewalFailed".asInstanceOf[azureStorageUriRenewalFailed]
   
   @js.native
   sealed trait azureStorageUriRenewalPending
     extends StObject
        with MobileAppContentFileUploadState
-  @scala.inline
-  def azureStorageUriRenewalPending: azureStorageUriRenewalPending = "azureStorageUriRenewalPending".asInstanceOf[azureStorageUriRenewalPending]
+  inline def azureStorageUriRenewalPending: azureStorageUriRenewalPending = "azureStorageUriRenewalPending".asInstanceOf[azureStorageUriRenewalPending]
   
   @js.native
   sealed trait azureStorageUriRenewalSuccess
     extends StObject
        with MobileAppContentFileUploadState
-  @scala.inline
-  def azureStorageUriRenewalSuccess: azureStorageUriRenewalSuccess = "azureStorageUriRenewalSuccess".asInstanceOf[azureStorageUriRenewalSuccess]
+  inline def azureStorageUriRenewalSuccess: azureStorageUriRenewalSuccess = "azureStorageUriRenewalSuccess".asInstanceOf[azureStorageUriRenewalSuccess]
   
   @js.native
   sealed trait azureStorageUriRenewalTimedOut
     extends StObject
        with MobileAppContentFileUploadState
-  @scala.inline
-  def azureStorageUriRenewalTimedOut: azureStorageUriRenewalTimedOut = "azureStorageUriRenewalTimedOut".asInstanceOf[azureStorageUriRenewalTimedOut]
+  inline def azureStorageUriRenewalTimedOut: azureStorageUriRenewalTimedOut = "azureStorageUriRenewalTimedOut".asInstanceOf[azureStorageUriRenewalTimedOut]
   
   @js.native
   sealed trait azureStorageUriRequestFailed
     extends StObject
        with MobileAppContentFileUploadState
-  @scala.inline
-  def azureStorageUriRequestFailed: azureStorageUriRequestFailed = "azureStorageUriRequestFailed".asInstanceOf[azureStorageUriRequestFailed]
+  inline def azureStorageUriRequestFailed: azureStorageUriRequestFailed = "azureStorageUriRequestFailed".asInstanceOf[azureStorageUriRequestFailed]
   
   @js.native
   sealed trait azureStorageUriRequestPending
     extends StObject
        with MobileAppContentFileUploadState
-  @scala.inline
-  def azureStorageUriRequestPending: azureStorageUriRequestPending = "azureStorageUriRequestPending".asInstanceOf[azureStorageUriRequestPending]
+  inline def azureStorageUriRequestPending: azureStorageUriRequestPending = "azureStorageUriRequestPending".asInstanceOf[azureStorageUriRequestPending]
   
   @js.native
   sealed trait azureStorageUriRequestSuccess
     extends StObject
        with MobileAppContentFileUploadState
-  @scala.inline
-  def azureStorageUriRequestSuccess: azureStorageUriRequestSuccess = "azureStorageUriRequestSuccess".asInstanceOf[azureStorageUriRequestSuccess]
+  inline def azureStorageUriRequestSuccess: azureStorageUriRequestSuccess = "azureStorageUriRequestSuccess".asInstanceOf[azureStorageUriRequestSuccess]
   
   @js.native
   sealed trait azureStorageUriRequestTimedOut
     extends StObject
        with MobileAppContentFileUploadState
-  @scala.inline
-  def azureStorageUriRequestTimedOut: azureStorageUriRequestTimedOut = "azureStorageUriRequestTimedOut".asInstanceOf[azureStorageUriRequestTimedOut]
+  inline def azureStorageUriRequestTimedOut: azureStorageUriRequestTimedOut = "azureStorageUriRequestTimedOut".asInstanceOf[azureStorageUriRequestTimedOut]
   
   @js.native
   sealed trait b
     extends StObject
        with Tone
-  @scala.inline
-  def b: b = "b".asInstanceOf[b]
+  inline def b: b = "b".asInstanceOf[b]
   
   @js.native
   sealed trait bad
     extends StObject
        with UserFeedbackRating
-  @scala.inline
-  def bad: bad = "bad".asInstanceOf[bad]
+  inline def bad: bad = "bad".asInstanceOf[bad]
   
   @js.native
   sealed trait badRequest
     extends StObject
        with DeviceEnrollmentFailureReason
-  @scala.inline
-  def badRequest: badRequest = "badRequest".asInstanceOf[badRequest]
+  inline def badRequest: badRequest = "badRequest".asInstanceOf[badRequest]
   
   @js.native
   sealed trait banner
     extends StObject
        with IosNotificationAlertType
-  @scala.inline
-  def banner: banner = "banner".asInstanceOf[banner]
+  inline def banner: banner = "banner".asInstanceOf[banner]
   
   @js.native
   sealed trait basedOnReturnCode
     extends StObject
        with Win32LobAppRestartBehavior
-  @scala.inline
-  def basedOnReturnCode: basedOnReturnCode = "basedOnReturnCode".asInstanceOf[basedOnReturnCode]
+  inline def basedOnReturnCode: basedOnReturnCode = "basedOnReturnCode".asInstanceOf[basedOnReturnCode]
   
   @js.native
   sealed trait basic
     extends StObject
        with DiagnosticDataSubmissionMode
-  @scala.inline
-  def basic: basic = "basic".asInstanceOf[basic]
+  inline def basic: basic = "basic".asInstanceOf[basic]
   
   @js.native
   sealed trait batch
     extends StObject
        with LogonType
-  @scala.inline
-  def batch: batch = "batch".asInstanceOf[batch]
+  inline def batch: batch = "batch".asInstanceOf[batch]
   
   @js.native
   sealed trait benignPositive
     extends StObject
        with AlertFeedback
-  @scala.inline
-  def benignPositive: benignPositive = "benignPositive".asInstanceOf[benignPositive]
+  inline def benignPositive: benignPositive = "benignPositive".asInstanceOf[benignPositive]
   
   @js.native
   sealed trait binary
     extends StObject
        with RegistryValueType
-  @scala.inline
-  def binary: binary = "binary".asInstanceOf[binary]
+  inline def binary: binary = "binary".asInstanceOf[binary]
   
   @js.native
   sealed trait bing
     extends StObject
        with EdgeSearchEngineType
        with LocationUniqueIdType
-  @scala.inline
-  def bing: bing = "bing".asInstanceOf[bing]
+  inline def bing: bing = "bing".asInstanceOf[bing]
   
   @js.native
   sealed trait block
@@ -1373,100 +1229,86 @@ object microsoftGraphStrings {
        with DefenderThreatAction
        with DeviceComplianceActionType
        with ThreatExpectedAssessment
-  @scala.inline
-  def block: block = "block".asInstanceOf[block]
+  inline def block: block = "block".asInstanceOf[block]
   
   @js.native
   sealed trait blockAccess
     extends StObject
        with ChatMessagePolicyViolationDlpActionTypes
-  @scala.inline
-  def blockAccess: blockAccess = "blockAccess".asInstanceOf[blockAccess]
+  inline def blockAccess: blockAccess = "blockAccess".asInstanceOf[blockAccess]
   
   @js.native
   sealed trait blockAccessExternal
     extends StObject
        with ChatMessagePolicyViolationDlpActionTypes
-  @scala.inline
-  def blockAccessExternal: blockAccessExternal = "blockAccessExternal".asInstanceOf[blockAccessExternal]
+  inline def blockAccessExternal: blockAccessExternal = "blockAccessExternal".asInstanceOf[blockAccessExternal]
   
   @js.native
   sealed trait blockAll
     extends StObject
        with EdgeCookiePolicy
-  @scala.inline
-  def blockAll: blockAll = "blockAll".asInstanceOf[blockAll]
+  inline def blockAll: blockAll = "blockAll".asInstanceOf[blockAll]
   
   @js.native
   sealed trait blockAlways
     extends StObject
        with WebBrowserCookieSettings
-  @scala.inline
-  def blockAlways: blockAlways = "blockAlways".asInstanceOf[blockAlways]
+  inline def blockAlways: blockAlways = "blockAlways".asInstanceOf[blockAlways]
   
   @js.native
   sealed trait blockBoth
     extends StObject
        with ApplicationGuardBlockClipboardSharingType
-  @scala.inline
-  def blockBoth: blockBoth = "blockBoth".asInstanceOf[blockBoth]
+  inline def blockBoth: blockBoth = "blockBoth".asInstanceOf[blockBoth]
   
   @js.native
   sealed trait blockContainerToHost
     extends StObject
        with ApplicationGuardBlockClipboardSharingType
-  @scala.inline
-  def blockContainerToHost: blockContainerToHost = "blockContainerToHost".asInstanceOf[blockContainerToHost]
+  inline def blockContainerToHost: blockContainerToHost = "blockContainerToHost".asInstanceOf[blockContainerToHost]
   
   @js.native
   sealed trait blockDownloads
     extends StObject
        with CloudAppSecuritySessionControlType
-  @scala.inline
-  def blockDownloads: blockDownloads = "blockDownloads".asInstanceOf[blockDownloads]
+  inline def blockDownloads: blockDownloads = "blockDownloads".asInstanceOf[blockDownloads]
   
   @js.native
   sealed trait blockHostToContainer
     extends StObject
        with ApplicationGuardBlockClipboardSharingType
-  @scala.inline
-  def blockHostToContainer: blockHostToContainer = "blockHostToContainer".asInstanceOf[blockHostToContainer]
+  inline def blockHostToContainer: blockHostToContainer = "blockHostToContainer".asInstanceOf[blockHostToContainer]
   
   @js.native
   sealed trait blockImageAndTextFile
     extends StObject
        with ApplicationGuardBlockFileTransferType
-  @scala.inline
-  def blockImageAndTextFile: blockImageAndTextFile = "blockImageAndTextFile".asInstanceOf[blockImageAndTextFile]
+  inline def blockImageAndTextFile: blockImageAndTextFile = "blockImageAndTextFile".asInstanceOf[blockImageAndTextFile]
   
   @js.native
   sealed trait blockImageFile
     extends StObject
        with ApplicationGuardBlockFileTransferType
-  @scala.inline
-  def blockImageFile: blockImageFile = "blockImageFile".asInstanceOf[blockImageFile]
+  inline def blockImageFile: blockImageFile = "blockImageFile".asInstanceOf[blockImageFile]
   
   @js.native
   sealed trait blockNone
     extends StObject
        with ApplicationGuardBlockClipboardSharingType
        with ApplicationGuardBlockFileTransferType
-  @scala.inline
-  def blockNone: blockNone = "blockNone".asInstanceOf[blockNone]
+  inline def blockNone: blockNone = "blockNone".asInstanceOf[blockNone]
   
   @js.native
   sealed trait blockTextFile
     extends StObject
        with ApplicationGuardBlockFileTransferType
-  @scala.inline
-  def blockTextFile: blockTextFile = "blockTextFile".asInstanceOf[blockTextFile]
+  inline def blockTextFile: blockTextFile = "blockTextFile".asInstanceOf[blockTextFile]
   
   @js.native
   sealed trait blockThirdParty
     extends StObject
        with EdgeCookiePolicy
-  @scala.inline
-  def blockThirdParty: blockThirdParty = "blockThirdParty".asInstanceOf[blockThirdParty]
+  inline def blockThirdParty: blockThirdParty = "blockThirdParty".asInstanceOf[blockThirdParty]
   
   @js.native
   sealed trait blocked
@@ -1476,57 +1318,49 @@ object microsoftGraphStrings {
        with DeviceManagementSubscriptionState
        with ManagedAppClipboardSharingLevel
        with StateManagementSetting
-  @scala.inline
-  def blocked: blocked = "blocked".asInstanceOf[blocked]
+  inline def blocked: blocked = "blocked".asInstanceOf[blocked]
   
   @js.native
   sealed trait blockedSender
     extends StObject
        with MailDestinationRoutingReason
-  @scala.inline
-  def blockedSender: blockedSender = "blockedSender".asInstanceOf[blockedSender]
+  inline def blockedSender: blockedSender = "blockedSender".asInstanceOf[blockedSender]
   
   @js.native
   sealed trait blog
     extends StObject
        with WebsiteType
-  @scala.inline
-  def blog: blog = "blog".asInstanceOf[blog]
+  inline def blog: blog = "blog".asInstanceOf[blog]
   
   @js.native
   sealed trait blue
     extends StObject
        with ScheduleEntityTheme
-  @scala.inline
-  def blue: blue = "blue".asInstanceOf[blue]
+  inline def blue: blue = "blue".asInstanceOf[blue]
   
   @js.native
   sealed trait boolean
     extends StObject
        with Win32LobAppPowerShellScriptRuleOperationType
-  @scala.inline
-  def boolean: boolean = "boolean".asInstanceOf[boolean]
+  inline def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
   sealed trait booleanType
     extends StObject
        with MdmAppConfigKeyType
-  @scala.inline
-  def booleanType: booleanType = "booleanType".asInstanceOf[booleanType]
+  inline def booleanType: booleanType = "booleanType".asInstanceOf[booleanType]
   
   @js.native
   sealed trait browser
     extends StObject
        with ConditionalAccessClientApp
-  @scala.inline
-  def browser: browser = "browser".asInstanceOf[browser]
+  inline def browser: browser = "browser".asInstanceOf[browser]
   
   @js.native
   sealed trait browserDefault
     extends StObject
        with WebBrowserCookieSettings
-  @scala.inline
-  def browserDefault: browserDefault = "browserDefault".asInstanceOf[browserDefault]
+  inline def browserDefault: browserDefault = "browserDefault".asInstanceOf[browserDefault]
   
   @js.native
   sealed trait business
@@ -1534,149 +1368,128 @@ object microsoftGraphStrings {
        with PhoneType
        with PhysicalAddressType
        with VppTokenAccountType
-  @scala.inline
-  def business: business = "business".asInstanceOf[business]
+  inline def business: business = "business".asInstanceOf[business]
   
   @js.native
   sealed trait businessAddress
     extends StObject
        with LocationType
-  @scala.inline
-  def businessAddress: businessAddress = "businessAddress".asInstanceOf[businessAddress]
+  inline def businessAddress: businessAddress = "businessAddress".asInstanceOf[businessAddress]
   
   @js.native
   sealed trait businessFax
     extends StObject
        with PhoneType
-  @scala.inline
-  def businessFax: businessFax = "businessFax".asInstanceOf[businessFax]
+  inline def businessFax: businessFax = "businessFax".asInstanceOf[businessFax]
   
   @js.native
   sealed trait businessReadyOnly
     extends StObject
        with WindowsUpdateType
-  @scala.inline
-  def businessReadyOnly: businessReadyOnly = "businessReadyOnly".asInstanceOf[businessReadyOnly]
+  inline def businessReadyOnly: businessReadyOnly = "businessReadyOnly".asInstanceOf[businessReadyOnly]
   
   @js.native
   sealed trait busy
     extends StObject
        with FreeBusyStatus
        with RejectReason
-  @scala.inline
-  def busy: busy = "busy".asInstanceOf[busy]
+  inline def busy: busy = "busy".asInstanceOf[busy]
   
   @js.native
   sealed trait bypassMode
     extends StObject
        with WindowsDeliveryOptimizationMode
-  @scala.inline
-  def bypassMode: bypassMode = "bypassMode".asInstanceOf[bypassMode]
+  inline def bypassMode: bypassMode = "bypassMode".asInstanceOf[bypassMode]
   
   @js.native
   sealed trait c
     extends StObject
        with Tone
-  @scala.inline
-  def c: c = "c".asInstanceOf[c]
+  inline def c: c = "c".asInstanceOf[c]
   
   @js.native
   sealed trait cake
     extends StObject
        with TimeOffReasonIconType
-  @scala.inline
-  def cake: cake = "cake".asInstanceOf[cake]
+  inline def cake: cake = "cake".asInstanceOf[cake]
   
   @js.native
   sealed trait calendar
     extends StObject
        with TimeOffReasonIconType
-  @scala.inline
-  def calendar: calendar = "calendar".asInstanceOf[calendar]
+  inline def calendar: calendar = "calendar".asInstanceOf[calendar]
   
   @js.native
   sealed trait call
     extends StObject
        with MessageActionFlag
-  @scala.inline
-  def call: call = "call".asInstanceOf[call]
+  inline def call: call = "call".asInstanceOf[call]
   
   @js.native
   sealed trait callSetup
     extends StObject
        with FailureStage
-  @scala.inline
-  def callSetup: callSetup = "callSetup".asInstanceOf[callSetup]
+  inline def callSetup: callSetup = "callSetup".asInstanceOf[callSetup]
   
   @js.native
   sealed trait calleeToCaller
     extends StObject
        with MediaStreamDirection
-  @scala.inline
-  def calleeToCaller: calleeToCaller = "calleeToCaller".asInstanceOf[calleeToCaller]
+  inline def calleeToCaller: calleeToCaller = "calleeToCaller".asInstanceOf[calleeToCaller]
   
   @js.native
   sealed trait callerToCallee
     extends StObject
        with MediaStreamDirection
-  @scala.inline
-  def callerToCallee: callerToCallee = "callerToCallee".asInstanceOf[callerToCallee]
+  inline def callerToCallee: callerToCallee = "callerToCallee".asInstanceOf[callerToCallee]
   
   @js.native
   sealed trait canceled
     extends StObject
        with ActionState
-  @scala.inline
-  def canceled: canceled = "canceled".asInstanceOf[canceled]
+  inline def canceled: canceled = "canceled".asInstanceOf[canceled]
   
   @js.native
   sealed trait car
     extends StObject
        with TimeOffReasonIconType
-  @scala.inline
-  def car: car = "car".asInstanceOf[car]
+  inline def car: car = "car".asInstanceOf[car]
   
   @js.native
   sealed trait caution
     extends StObject
        with RatingUnitedKingdomTelevisionType
-  @scala.inline
-  def caution: caution = "caution".asInstanceOf[caution]
+  inline def caution: caution = "caution".asInstanceOf[caution]
   
   @js.native
   sealed trait certificateReset
     extends StObject
        with DeviceRegistrationState
-  @scala.inline
-  def certificateReset: certificateReset = "certificateReset".asInstanceOf[certificateReset]
+  inline def certificateReset: certificateReset = "certificateReset".asInstanceOf[certificateReset]
   
   @js.native
   sealed trait channels
     extends StObject
        with ClonableTeamParts
-  @scala.inline
-  def channels: channels = "channels".asInstanceOf[channels]
+  inline def channels: channels = "channels".asInstanceOf[channels]
   
   @js.native
   sealed trait chatEvent
     extends StObject
        with ChatMessageType
-  @scala.inline
-  def chatEvent: chatEvent = "chatEvent".asInstanceOf[chatEvent]
+  inline def chatEvent: chatEvent = "chatEvent".asInstanceOf[chatEvent]
   
   @js.native
   sealed trait checkPolicy
     extends StObject
        with ThreatAssessmentResultType
-  @scala.inline
-  def checkPolicy: checkPolicy = "checkPolicy".asInstanceOf[checkPolicy]
+  inline def checkPolicy: checkPolicy = "checkPolicy".asInstanceOf[checkPolicy]
   
   @js.native
   sealed trait checklist
     extends StObject
        with PlannerPreviewType
-  @scala.inline
-  def checklist: checklist = "checklist".asInstanceOf[checklist]
+  inline def checklist: checklist = "checklist".asInstanceOf[checklist]
   
   @js.native
   sealed trait children
@@ -1684,114 +1497,98 @@ object microsoftGraphStrings {
        with RatingAustraliaTelevisionType
        with RatingCanadaTelevisionType
        with RatingIrelandTelevisionType
-  @scala.inline
-  def children: children = "children".asInstanceOf[children]
+  inline def children: children = "children".asInstanceOf[children]
   
   @js.native
   sealed trait childrenAbove14
     extends StObject
        with RatingUnitedStatesTelevisionType
-  @scala.inline
-  def childrenAbove14: childrenAbove14 = "childrenAbove14".asInstanceOf[childrenAbove14]
+  inline def childrenAbove14: childrenAbove14 = "childrenAbove14".asInstanceOf[childrenAbove14]
   
   @js.native
   sealed trait childrenAbove7
     extends StObject
        with RatingUnitedStatesTelevisionType
-  @scala.inline
-  def childrenAbove7: childrenAbove7 = "childrenAbove7".asInstanceOf[childrenAbove7]
+  inline def childrenAbove7: childrenAbove7 = "childrenAbove7".asInstanceOf[childrenAbove7]
   
   @js.native
   sealed trait childrenAbove8
     extends StObject
        with RatingCanadaTelevisionType
-  @scala.inline
-  def childrenAbove8: childrenAbove8 = "childrenAbove8".asInstanceOf[childrenAbove8]
+  inline def childrenAbove8: childrenAbove8 = "childrenAbove8".asInstanceOf[childrenAbove8]
   
   @js.native
   sealed trait childrenAll
     extends StObject
        with RatingUnitedStatesTelevisionType
-  @scala.inline
-  def childrenAll: childrenAll = "childrenAll".asInstanceOf[childrenAll]
+  inline def childrenAll: childrenAll = "childrenAll".asInstanceOf[childrenAll]
   
   @js.native
   sealed trait clean
     extends StObject
        with DefenderThreatAction
-  @scala.inline
-  def clean: clean = "clean".asInstanceOf[clean]
+  inline def clean: clean = "clean".asInstanceOf[clean]
   
   @js.native
   sealed trait clientDisconnected
     extends StObject
        with DeviceEnrollmentFailureReason
-  @scala.inline
-  def clientDisconnected: clientDisconnected = "clientDisconnected".asInstanceOf[clientDisconnected]
+  inline def clientDisconnected: clientDisconnected = "clientDisconnected".asInstanceOf[clientDisconnected]
   
   @js.native
   sealed trait clock
     extends StObject
        with TimeOffReasonIconType
-  @scala.inline
-  def clock: clock = "clock".asInstanceOf[clock]
+  inline def clock: clock = "clock".asInstanceOf[clock]
   
   @js.native
   sealed trait cloneTeam
     extends StObject
        with TeamsAsyncOperationType
-  @scala.inline
-  def cloneTeam: cloneTeam = "cloneTeam".asInstanceOf[cloneTeam]
+  inline def cloneTeam: cloneTeam = "cloneTeam".asInstanceOf[cloneTeam]
   
   @js.native
   sealed trait collapse
     extends StObject
        with WindowsStartMenuAppListVisibilityType
-  @scala.inline
-  def collapse: collapse = "collapse".asInstanceOf[collapse]
+  inline def collapse: collapse = "collapse".asInstanceOf[collapse]
   
   @js.native
   sealed trait commitFileFailed
     extends StObject
        with MobileAppContentFileUploadState
-  @scala.inline
-  def commitFileFailed: commitFileFailed = "commitFileFailed".asInstanceOf[commitFileFailed]
+  inline def commitFileFailed: commitFileFailed = "commitFileFailed".asInstanceOf[commitFileFailed]
   
   @js.native
   sealed trait commitFilePending
     extends StObject
        with MobileAppContentFileUploadState
-  @scala.inline
-  def commitFilePending: commitFilePending = "commitFilePending".asInstanceOf[commitFilePending]
+  inline def commitFilePending: commitFilePending = "commitFilePending".asInstanceOf[commitFilePending]
   
   @js.native
   sealed trait commitFileSuccess
     extends StObject
        with MobileAppContentFileUploadState
-  @scala.inline
-  def commitFileSuccess: commitFileSuccess = "commitFileSuccess".asInstanceOf[commitFileSuccess]
+  inline def commitFileSuccess: commitFileSuccess = "commitFileSuccess".asInstanceOf[commitFileSuccess]
   
   @js.native
   sealed trait commitFileTimedOut
     extends StObject
        with MobileAppContentFileUploadState
-  @scala.inline
-  def commitFileTimedOut: commitFileTimedOut = "commitFileTimedOut".asInstanceOf[commitFileTimedOut]
+  inline def commitFileTimedOut: commitFileTimedOut = "commitFileTimedOut".asInstanceOf[commitFileTimedOut]
   
   @js.native
   sealed trait company
     extends StObject
        with ManagedDeviceOwnerType
-  @scala.inline
-  def company: company = "company".asInstanceOf[company]
+  inline def company: company = "company".asInstanceOf[company]
   
   @js.native
   sealed trait complete
     extends StObject
        with DataPolicyOperationStatus
        with FollowupFlagStatus
-  @scala.inline
-  def complete: complete = "complete".asInstanceOf[complete]
+  inline def complete: complete = "complete".asInstanceOf[complete]
   
   @js.native
   sealed trait completed_
@@ -1799,8 +1596,7 @@ object microsoftGraphStrings {
        with TaskStatus
        with ThreatAssessmentStatus
        with VppTokenSyncStatus
-  @scala.inline
-  def completed_ : completed_ = "completed".asInstanceOf[completed_]
+  inline def completed_ : completed_ = "completed".asInstanceOf[completed_]
   
   @js.native
   sealed trait compliant
@@ -1808,354 +1604,304 @@ object microsoftGraphStrings {
        with ComplianceState
        with ComplianceStatus
        with DeviceManagementExchangeAccessStateReason
-  @scala.inline
-  def compliant: compliant = "compliant".asInstanceOf[compliant]
+  inline def compliant: compliant = "compliant".asInstanceOf[compliant]
   
   @js.native
   sealed trait compliantApplication
     extends StObject
        with ConditionalAccessGrantControl
-  @scala.inline
-  def compliantApplication: compliantApplication = "compliantApplication".asInstanceOf[compliantApplication]
+  inline def compliantApplication: compliantApplication = "compliantApplication".asInstanceOf[compliantApplication]
   
   @js.native
   sealed trait compliantDevice
     extends StObject
        with ConditionalAccessGrantControl
-  @scala.inline
-  def compliantDevice: compliantDevice = "compliantDevice".asInstanceOf[compliantDevice]
+  inline def compliantDevice: compliantDevice = "compliantDevice".asInstanceOf[compliantDevice]
   
   @js.native
   sealed trait compromised
     extends StObject
        with ManagedDevicePartnerReportedHealthState
-  @scala.inline
-  def compromised: compromised = "compromised".asInstanceOf[compromised]
+  inline def compromised: compromised = "compromised".asInstanceOf[compromised]
   
   @js.native
   sealed trait compromisedPassword
     extends StObject
        with DeviceManagementExchangeAccessStateReason
-  @scala.inline
-  def compromisedPassword: compromisedPassword = "compromisedPassword".asInstanceOf[compromisedPassword]
+  inline def compromisedPassword: compromisedPassword = "compromisedPassword".asInstanceOf[compromisedPassword]
   
   @js.native
   sealed trait conferenceRoom
     extends StObject
        with LocationType
-  @scala.inline
-  def conferenceRoom: conferenceRoom = "conferenceRoom".asInstanceOf[conferenceRoom]
+  inline def conferenceRoom: conferenceRoom = "conferenceRoom".asInstanceOf[conferenceRoom]
   
   @js.native
   sealed trait conferencingAnnouncementService
     extends StObject
        with ServiceRole
-  @scala.inline
-  def conferencingAnnouncementService: conferencingAnnouncementService = "conferencingAnnouncementService".asInstanceOf[conferencingAnnouncementService]
+  inline def conferencingAnnouncementService: conferencingAnnouncementService = "conferencingAnnouncementService".asInstanceOf[conferencingAnnouncementService]
   
   @js.native
   sealed trait conferencingAttendant
     extends StObject
        with ServiceRole
-  @scala.inline
-  def conferencingAttendant: conferencingAttendant = "conferencingAttendant".asInstanceOf[conferencingAttendant]
+  inline def conferencingAttendant: conferencingAttendant = "conferencingAttendant".asInstanceOf[conferencingAttendant]
   
   @js.native
   sealed trait confidential
     extends StObject
        with Sensitivity
-  @scala.inline
-  def confidential: confidential = "confidential".asInstanceOf[confidential]
+  inline def confidential: confidential = "confidential".asInstanceOf[confidential]
   
   @js.native
   sealed trait configManager
     extends StObject
        with ComplianceState
-  @scala.inline
-  def configManager: configManager = "configManager".asInstanceOf[configManager]
+  inline def configManager: configManager = "configManager".asInstanceOf[configManager]
   
   @js.native
   sealed trait configurationManagerClient
     extends StObject
        with ManagementAgentType
-  @scala.inline
-  def configurationManagerClient: configurationManagerClient = "configurationManagerClient".asInstanceOf[configurationManagerClient]
+  inline def configurationManagerClient: configurationManagerClient = "configurationManagerClient".asInstanceOf[configurationManagerClient]
   
   @js.native
   sealed trait configurationManagerClientMdm
     extends StObject
        with ManagementAgentType
-  @scala.inline
-  def configurationManagerClientMdm: configurationManagerClientMdm = "configurationManagerClientMdm".asInstanceOf[configurationManagerClientMdm]
+  inline def configurationManagerClientMdm: configurationManagerClientMdm = "configurationManagerClientMdm".asInstanceOf[configurationManagerClientMdm]
   
   @js.native
   sealed trait configurationManagerClientMdmEas
     extends StObject
        with ManagementAgentType
-  @scala.inline
-  def configurationManagerClientMdmEas: configurationManagerClientMdmEas = "configurationManagerClientMdmEas".asInstanceOf[configurationManagerClientMdmEas]
+  inline def configurationManagerClientMdmEas: configurationManagerClientMdmEas = "configurationManagerClientMdmEas".asInstanceOf[configurationManagerClientMdmEas]
   
   @js.native
   sealed trait confirmedCompromised
     extends StObject
        with RiskState
-  @scala.inline
-  def confirmedCompromised: confirmedCompromised = "confirmedCompromised".asInstanceOf[confirmedCompromised]
+  inline def confirmedCompromised: confirmedCompromised = "confirmedCompromised".asInstanceOf[confirmedCompromised]
   
   @js.native
   sealed trait confirmedSafe
     extends StObject
        with RiskState
-  @scala.inline
-  def confirmedSafe: confirmedSafe = "confirmedSafe".asInstanceOf[confirmedSafe]
+  inline def confirmedSafe: confirmedSafe = "confirmedSafe".asInstanceOf[confirmedSafe]
   
   @js.native
   sealed trait conflict
     extends StObject
        with ComplianceState
        with ComplianceStatus
-  @scala.inline
-  def conflict: conflict = "conflict".asInstanceOf[conflict]
+  inline def conflict: conflict = "conflict".asInstanceOf[conflict]
   
   @js.native
   sealed trait connected
     extends StObject
        with DeviceManagementExchangeConnectorStatus
-  @scala.inline
-  def connected: connected = "connected".asInstanceOf[connected]
+  inline def connected: connected = "connected".asInstanceOf[connected]
   
   @js.native
   sealed trait connectionPending
     extends StObject
        with DeviceManagementExchangeConnectorStatus
-  @scala.inline
-  def connectionPending: connectionPending = "connectionPending".asInstanceOf[connectionPending]
+  inline def connectionPending: connectionPending = "connectionPending".asInstanceOf[connectionPending]
   
   @js.native
   sealed trait contactsOnly
     extends StObject
        with ExternalAudienceScope
-  @scala.inline
-  def contactsOnly: contactsOnly = "contactsOnly".asInstanceOf[contactsOnly]
+  inline def contactsOnly: contactsOnly = "contactsOnly".asInstanceOf[contactsOnly]
   
   @js.native
   sealed trait create
     extends StObject
        with RegistryOperation
-  @scala.inline
-  def create: create = "create".asInstanceOf[create]
+  inline def create: create = "create".asInstanceOf[create]
   
   @js.native
   sealed trait createTeam
     extends StObject
        with TeamsAsyncOperationType
-  @scala.inline
-  def createTeam: createTeam = "createTeam".asInstanceOf[createTeam]
+  inline def createTeam: createTeam = "createTeam".asInstanceOf[createTeam]
   
   @js.native
   sealed trait created
     extends StObject
        with ChangeType
-  @scala.inline
-  def created: created = "created".asInstanceOf[created]
+  inline def created: created = "created".asInstanceOf[created]
   
   @js.native
   sealed trait createdDate
     extends StObject
        with Win32LobAppFileSystemOperationType
-  @scala.inline
-  def createdDate: createdDate = "createdDate".asInstanceOf[createdDate]
+  inline def createdDate: createdDate = "createdDate".asInstanceOf[createdDate]
   
   @js.native
   sealed trait ctph
     extends StObject
        with FileHashType
-  @scala.inline
-  def ctph: ctph = "ctph".asInstanceOf[ctph]
+  inline def ctph: ctph = "ctph".asInstanceOf[ctph]
   
   @js.native
   sealed trait cup
     extends StObject
        with TimeOffReasonIconType
-  @scala.inline
-  def cup: cup = "cup".asInstanceOf[cup]
+  inline def cup: cup = "cup".asInstanceOf[cup]
   
   @js.native
   sealed trait currentConfig
     extends StObject
        with RegistryHive
-  @scala.inline
-  def currentConfig: currentConfig = "currentConfig".asInstanceOf[currentConfig]
+  inline def currentConfig: currentConfig = "currentConfig".asInstanceOf[currentConfig]
   
   @js.native
   sealed trait currentUser
     extends StObject
        with RegistryHive
-  @scala.inline
-  def currentUser: currentUser = "currentUser".asInstanceOf[currentUser]
+  inline def currentUser: currentUser = "currentUser".asInstanceOf[currentUser]
   
   @js.native
   sealed trait custom
     extends StObject
        with CalendarRoleType
-  @scala.inline
-  def custom: custom = "custom".asInstanceOf[custom]
+  inline def custom: custom = "custom".asInstanceOf[custom]
   
   @js.native
   sealed trait customBot
     extends StObject
        with ServiceRole
-  @scala.inline
-  def customBot: customBot = "customBot".asInstanceOf[customBot]
+  inline def customBot: customBot = "customBot".asInstanceOf[customBot]
   
   @js.native
   sealed trait customMailTip
     extends StObject
        with MailTipsType
-  @scala.inline
-  def customMailTip: customMailTip = "customMailTip".asInstanceOf[customMailTip]
+  inline def customMailTip: customMailTip = "customMailTip".asInstanceOf[customMailTip]
   
   @js.native
   sealed trait d
     extends StObject
        with Tone
-  @scala.inline
-  def d: d = "d".asInstanceOf[d]
+  inline def d: d = "d".asInstanceOf[d]
   
   @js.native
   sealed trait daily
     extends StObject
        with RecurrencePatternType
-  @scala.inline
-  def daily: daily = "daily".asInstanceOf[daily]
+  inline def daily: daily = "daily".asInstanceOf[daily]
   
   @js.native
   sealed trait darkBlue
     extends StObject
        with ScheduleEntityTheme
-  @scala.inline
-  def darkBlue: darkBlue = "darkBlue".asInstanceOf[darkBlue]
+  inline def darkBlue: darkBlue = "darkBlue".asInstanceOf[darkBlue]
   
   @js.native
   sealed trait darkGreen
     extends StObject
        with ScheduleEntityTheme
-  @scala.inline
-  def darkGreen: darkGreen = "darkGreen".asInstanceOf[darkGreen]
+  inline def darkGreen: darkGreen = "darkGreen".asInstanceOf[darkGreen]
   
   @js.native
   sealed trait darkPink
     extends StObject
        with ScheduleEntityTheme
-  @scala.inline
-  def darkPink: darkPink = "darkPink".asInstanceOf[darkPink]
+  inline def darkPink: darkPink = "darkPink".asInstanceOf[darkPink]
   
   @js.native
   sealed trait darkPurple
     extends StObject
        with ScheduleEntityTheme
-  @scala.inline
-  def darkPurple: darkPurple = "darkPurple".asInstanceOf[darkPurple]
+  inline def darkPurple: darkPurple = "darkPurple".asInstanceOf[darkPurple]
   
   @js.native
   sealed trait darkYellow
     extends StObject
        with ScheduleEntityTheme
-  @scala.inline
-  def darkYellow: darkYellow = "darkYellow".asInstanceOf[darkYellow]
+  inline def darkYellow: darkYellow = "darkYellow".asInstanceOf[darkYellow]
   
   @js.native
   sealed trait data
     extends StObject
        with Modality
        with typings.microsoftGraph.mod.CallRecords.Modality
-  @scala.inline
-  def data: data = "data".asInstanceOf[data]
+  inline def data: data = "data".asInstanceOf[data]
   
   @js.native
   sealed trait dateTime
     extends StObject
        with Win32LobAppPowerShellScriptRuleOperationType
-  @scala.inline
-  def dateTime: dateTime = "dateTime".asInstanceOf[dateTime]
+  inline def dateTime: dateTime = "dateTime".asInstanceOf[dateTime]
   
   @js.native
   sealed trait days
     extends StObject
        with SigninFrequencyType
-  @scala.inline
-  def days: days = "days".asInstanceOf[days]
+  inline def days: days = "days".asInstanceOf[days]
   
   @js.native
   sealed trait deactivated
     extends StObject
        with ManagedDevicePartnerReportedHealthState
-  @scala.inline
-  def deactivated: deactivated = "deactivated".asInstanceOf[deactivated]
+  inline def deactivated: deactivated = "deactivated".asInstanceOf[deactivated]
   
   @js.native
   sealed trait declined
     extends StObject
        with ResponseType
        with ScheduleChangeState
-  @scala.inline
-  def declined: declined = "declined".asInstanceOf[declined]
+  inline def declined: declined = "declined".asInstanceOf[declined]
   
   @js.native
   sealed trait dedicated
     extends StObject
        with DeviceManagementExchangeConnectorType
-  @scala.inline
-  def dedicated: dedicated = "dedicated".asInstanceOf[dedicated]
+  inline def dedicated: dedicated = "dedicated".asInstanceOf[dedicated]
   
   @js.native
   sealed trait defaultList
     extends StObject
        with WellknownListName
-  @scala.inline
-  def defaultList: defaultList = "defaultList".asInstanceOf[defaultList]
+  inline def defaultList: defaultList = "defaultList".asInstanceOf[defaultList]
   
   @js.native
   sealed trait deferred
     extends StObject
        with TaskStatus
-  @scala.inline
-  def deferred: deferred = "deferred".asInstanceOf[deferred]
+  inline def deferred: deferred = "deferred".asInstanceOf[deferred]
   
   @js.native
   sealed trait delegateWithPrivateEventAccess
     extends StObject
        with CalendarRoleType
-  @scala.inline
-  def delegateWithPrivateEventAccess: delegateWithPrivateEventAccess = "delegateWithPrivateEventAccess".asInstanceOf[delegateWithPrivateEventAccess]
+  inline def delegateWithPrivateEventAccess: delegateWithPrivateEventAccess = "delegateWithPrivateEventAccess".asInstanceOf[delegateWithPrivateEventAccess]
   
   @js.native
   sealed trait delegateWithoutPrivateEventAccess
     extends StObject
        with CalendarRoleType
-  @scala.inline
-  def delegateWithoutPrivateEventAccess: delegateWithoutPrivateEventAccess = "delegateWithoutPrivateEventAccess".asInstanceOf[delegateWithoutPrivateEventAccess]
+  inline def delegateWithoutPrivateEventAccess: delegateWithoutPrivateEventAccess = "delegateWithoutPrivateEventAccess".asInstanceOf[delegateWithoutPrivateEventAccess]
   
   @js.native
   sealed trait delegated
     extends StObject
        with PermissionType
-  @scala.inline
-  def delegated: delegated = "delegated".asInstanceOf[delegated]
+  inline def delegated: delegated = "delegated".asInstanceOf[delegated]
   
   @js.native
   sealed trait delegatedUserConsentable
     extends StObject
        with PermissionType
-  @scala.inline
-  def delegatedUserConsentable: delegatedUserConsentable = "delegatedUserConsentable".asInstanceOf[delegatedUserConsentable]
+  inline def delegatedUserConsentable: delegatedUserConsentable = "delegatedUserConsentable".asInstanceOf[delegatedUserConsentable]
   
   @js.native
   sealed trait delete_
     extends StObject
        with RegistryOperation
-  @scala.inline
-  def delete_ : delete_ = "delete".asInstanceOf[delete_]
+  inline def delete_ : delete_ = "delete".asInstanceOf[delete_]
   
   @js.native
   sealed trait deleted
@@ -2163,44 +1909,38 @@ object microsoftGraphStrings {
        with ChangeType
        with DeviceManagementSubscriptionState
        with Status
-  @scala.inline
-  def deleted: deleted = "deleted".asInstanceOf[deleted]
+  inline def deleted: deleted = "deleted".asInstanceOf[deleted]
   
   @js.native
   sealed trait deliveryRestriction
     extends StObject
        with MailTipsType
-  @scala.inline
-  def deliveryRestriction: deliveryRestriction = "deliveryRestriction".asInstanceOf[deliveryRestriction]
+  inline def deliveryRestriction: deliveryRestriction = "deliveryRestriction".asInstanceOf[deliveryRestriction]
   
   @js.native
   sealed trait deltaSync
     extends StObject
        with DeviceManagementExchangeConnectorSyncType
-  @scala.inline
-  def deltaSync: deltaSync = "deltaSync".asInstanceOf[deltaSync]
+  inline def deltaSync: deltaSync = "deltaSync".asInstanceOf[deltaSync]
   
   @js.native
   sealed trait description
     extends StObject
        with PlannerPreviewType
-  @scala.inline
-  def description: description = "description".asInstanceOf[description]
+  inline def description: description = "description".asInstanceOf[description]
   
   @js.native
   sealed trait desktop
     extends StObject
        with ApplicationType
        with WindowsDeviceType
-  @scala.inline
-  def desktop: desktop = "desktop".asInstanceOf[desktop]
+  inline def desktop: desktop = "desktop".asInstanceOf[desktop]
   
   @js.native
   sealed trait detection
     extends StObject
        with Win32LobAppRuleType
-  @scala.inline
-  def detection: detection = "detection".asInstanceOf[detection]
+  inline def detection: detection = "detection".asInstanceOf[detection]
   
   @js.native
   sealed trait deviceDefault
@@ -2215,57 +1955,49 @@ object microsoftGraphStrings {
        with FirewallPreSharedKeyEncodingMethodType
        with IosNotificationAlertType
        with RequiredPasswordType
-  @scala.inline
-  def deviceDefault: deviceDefault = "deviceDefault".asInstanceOf[deviceDefault]
+  inline def deviceDefault: deviceDefault = "deviceDefault".asInstanceOf[deviceDefault]
   
   @js.native
   sealed trait deviceEnrollmentManager
     extends StObject
        with DeviceEnrollmentType
-  @scala.inline
-  def deviceEnrollmentManager: deviceEnrollmentManager = "deviceEnrollmentManager".asInstanceOf[deviceEnrollmentManager]
+  inline def deviceEnrollmentManager: deviceEnrollmentManager = "deviceEnrollmentManager".asInstanceOf[deviceEnrollmentManager]
   
   @js.native
   sealed trait deviceNotKnownWithManagedApp
     extends StObject
        with DeviceManagementExchangeAccessStateReason
-  @scala.inline
-  def deviceNotKnownWithManagedApp: deviceNotKnownWithManagedApp = "deviceNotKnownWithManagedApp".asInstanceOf[deviceNotKnownWithManagedApp]
+  inline def deviceNotKnownWithManagedApp: deviceNotKnownWithManagedApp = "deviceNotKnownWithManagedApp".asInstanceOf[deviceNotKnownWithManagedApp]
   
   @js.native
   sealed trait deviceNotSupported
     extends StObject
        with DeviceEnrollmentFailureReason
-  @scala.inline
-  def deviceNotSupported: deviceNotSupported = "deviceNotSupported".asInstanceOf[deviceNotSupported]
+  inline def deviceNotSupported: deviceNotSupported = "deviceNotSupported".asInstanceOf[deviceNotSupported]
   
   @js.native
   sealed trait deviceOsHigherThanDesiredOsVersion
     extends StObject
        with IosUpdatesInstallStatus
-  @scala.inline
-  def deviceOsHigherThanDesiredOsVersion: deviceOsHigherThanDesiredOsVersion = "deviceOsHigherThanDesiredOsVersion".asInstanceOf[deviceOsHigherThanDesiredOsVersion]
+  inline def deviceOsHigherThanDesiredOsVersion: deviceOsHigherThanDesiredOsVersion = "deviceOsHigherThanDesiredOsVersion".asInstanceOf[deviceOsHigherThanDesiredOsVersion]
   
   @js.native
   sealed trait directory
     extends StObject
        with LocationUniqueIdType
-  @scala.inline
-  def directory: directory = "directory".asInstanceOf[directory]
+  inline def directory: directory = "directory".asInstanceOf[directory]
   
   @js.native
   sealed trait disable
     extends StObject
        with DefenderMonitorFileActivity
-  @scala.inline
-  def disable: disable = "disable".asInstanceOf[disable]
+  inline def disable: disable = "disable".asInstanceOf[disable]
   
   @js.native
   sealed trait disableSettingsApp
     extends StObject
        with WindowsStartMenuAppListVisibilityType
-  @scala.inline
-  def disableSettingsApp: disableSettingsApp = "disableSettingsApp".asInstanceOf[disableSettingsApp]
+  inline def disableSettingsApp: disableSettingsApp = "disableSettingsApp".asInstanceOf[disableSettingsApp]
   
   @js.native
   sealed trait disabled
@@ -2277,268 +2009,230 @@ object microsoftGraphStrings {
        with Enablement
        with FirewallPacketQueueingMethodType
        with WindowsSpotlightEnablementSettings
-  @scala.inline
-  def disabled: disabled = "disabled".asInstanceOf[disabled]
+  inline def disabled: disabled = "disabled".asInstanceOf[disabled]
   
   @js.native
   sealed trait disallowed
     extends StObject
        with WindowsHelloForBusinessPinUsage
-  @scala.inline
-  def disallowed: disallowed = "disallowed".asInstanceOf[disallowed]
+  inline def disallowed: disallowed = "disallowed".asInstanceOf[disallowed]
   
   @js.native
   sealed trait disconnected
     extends StObject
        with DeviceManagementExchangeConnectorStatus
-  @scala.inline
-  def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
+  inline def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
   
   @js.native
   sealed trait diskSpaceThreshold
     extends StObject
        with SharedPCAccountDeletionPolicyType
-  @scala.inline
-  def diskSpaceThreshold: diskSpaceThreshold = "diskSpaceThreshold".asInstanceOf[diskSpaceThreshold]
+  inline def diskSpaceThreshold: diskSpaceThreshold = "diskSpaceThreshold".asInstanceOf[diskSpaceThreshold]
   
   @js.native
   sealed trait diskSpaceThresholdOrInactiveThreshold
     extends StObject
        with SharedPCAccountDeletionPolicyType
-  @scala.inline
-  def diskSpaceThresholdOrInactiveThreshold: diskSpaceThresholdOrInactiveThreshold = "diskSpaceThresholdOrInactiveThreshold".asInstanceOf[diskSpaceThresholdOrInactiveThreshold]
+  inline def diskSpaceThresholdOrInactiveThreshold: diskSpaceThresholdOrInactiveThreshold = "diskSpaceThresholdOrInactiveThreshold".asInstanceOf[diskSpaceThresholdOrInactiveThreshold]
   
   @js.native
   sealed trait dismissed
     extends StObject
        with AlertStatus
        with RiskState
-  @scala.inline
-  def dismissed: dismissed = "dismissed".asInstanceOf[dismissed]
+  inline def dismissed: dismissed = "dismissed".asInstanceOf[dismissed]
   
   @js.native
   sealed trait doNotForward
     extends StObject
        with MessageActionFlag
-  @scala.inline
-  def doNotForward: doNotForward = "doNotForward".asInstanceOf[doNotForward]
+  inline def doNotForward: doNotForward = "doNotForward".asInstanceOf[doNotForward]
   
   @js.native
   sealed trait doctor
     extends StObject
        with TimeOffReasonIconType
-  @scala.inline
-  def doctor: doctor = "doctor".asInstanceOf[doctor]
+  inline def doctor: doctor = "doctor".asInstanceOf[doctor]
   
   @js.native
   sealed trait doesNotExist
     extends StObject
        with Win32LobAppRegistryRuleOperationType
-  @scala.inline
-  def doesNotExist: doesNotExist = "doesNotExist".asInstanceOf[doesNotExist]
+  inline def doesNotExist: doesNotExist = "doesNotExist".asInstanceOf[doesNotExist]
   
   @js.native
   sealed trait dog
     extends StObject
        with TimeOffReasonIconType
-  @scala.inline
-  def dog: dog = "dog".asInstanceOf[dog]
+  inline def dog: dog = "dog".asInstanceOf[dog]
   
   @js.native
   sealed trait domain
     extends StObject
        with SharedPCAllowedAccountType
-  @scala.inline
-  def domain: domain = "domain".asInstanceOf[domain]
+  inline def domain: domain = "domain".asInstanceOf[domain]
   
   @js.native
   sealed trait domainAllowList
     extends StObject
        with MailDestinationRoutingReason
-  @scala.inline
-  def domainAllowList: domainAllowList = "domainAllowList".asInstanceOf[domainAllowList]
+  inline def domainAllowList: domainAllowList = "domainAllowList".asInstanceOf[domainAllowList]
   
   @js.native
   sealed trait domainBlockList
     extends StObject
        with MailDestinationRoutingReason
-  @scala.inline
-  def domainBlockList: domainBlockList = "domainBlockList".asInstanceOf[domainBlockList]
+  inline def domainBlockList: domainBlockList = "domainBlockList".asInstanceOf[domainBlockList]
   
   @js.native
   sealed trait domainJoinedDevice
     extends StObject
        with ConditionalAccessGrantControl
-  @scala.inline
-  def domainJoinedDevice: domainJoinedDevice = "domainJoinedDevice".asInstanceOf[domainJoinedDevice]
+  inline def domainJoinedDevice: domainJoinedDevice = "domainJoinedDevice".asInstanceOf[domainJoinedDevice]
   
   @js.native
   sealed trait done
     extends StObject
        with ActionState
-  @scala.inline
-  def done: done = "done".asInstanceOf[done]
+  inline def done: done = "done".asInstanceOf[done]
   
   @js.native
   sealed trait downloadFailed
     extends StObject
        with IosUpdatesInstallStatus
-  @scala.inline
-  def downloadFailed: downloadFailed = "downloadFailed".asInstanceOf[downloadFailed]
+  inline def downloadFailed: downloadFailed = "downloadFailed".asInstanceOf[downloadFailed]
   
   @js.native
   sealed trait downloadInsufficientNetwork
     extends StObject
        with IosUpdatesInstallStatus
-  @scala.inline
-  def downloadInsufficientNetwork: downloadInsufficientNetwork = "downloadInsufficientNetwork".asInstanceOf[downloadInsufficientNetwork]
+  inline def downloadInsufficientNetwork: downloadInsufficientNetwork = "downloadInsufficientNetwork".asInstanceOf[downloadInsufficientNetwork]
   
   @js.native
   sealed trait downloadInsufficientPower
     extends StObject
        with IosUpdatesInstallStatus
-  @scala.inline
-  def downloadInsufficientPower: downloadInsufficientPower = "downloadInsufficientPower".asInstanceOf[downloadInsufficientPower]
+  inline def downloadInsufficientPower: downloadInsufficientPower = "downloadInsufficientPower".asInstanceOf[downloadInsufficientPower]
   
   @js.native
   sealed trait downloadInsufficientSpace
     extends StObject
        with IosUpdatesInstallStatus
-  @scala.inline
-  def downloadInsufficientSpace: downloadInsufficientSpace = "downloadInsufficientSpace".asInstanceOf[downloadInsufficientSpace]
+  inline def downloadInsufficientSpace: downloadInsufficientSpace = "downloadInsufficientSpace".asInstanceOf[downloadInsufficientSpace]
   
   @js.native
   sealed trait downloadRequiresComputer
     extends StObject
        with IosUpdatesInstallStatus
-  @scala.inline
-  def downloadRequiresComputer: downloadRequiresComputer = "downloadRequiresComputer".asInstanceOf[downloadRequiresComputer]
+  inline def downloadRequiresComputer: downloadRequiresComputer = "downloadRequiresComputer".asInstanceOf[downloadRequiresComputer]
   
   @js.native
   sealed trait downloading
     extends StObject
        with IosUpdatesInstallStatus
-  @scala.inline
-  def downloading: downloading = "downloading".asInstanceOf[downloading]
+  inline def downloading: downloading = "downloading".asInstanceOf[downloading]
   
   @js.native
   sealed trait drive
     extends StObject
        with EntityType
-  @scala.inline
-  def drive: drive = "drive".asInstanceOf[drive]
+  inline def drive: drive = "drive".asInstanceOf[drive]
   
   @js.native
   sealed trait driveItem
     extends StObject
        with EntityType
-  @scala.inline
-  def driveItem: driveItem = "driveItem".asInstanceOf[driveItem]
+  inline def driveItem: driveItem = "driveItem".asInstanceOf[driveItem]
   
   @js.native
   sealed trait dualPurpose
     extends StObject
        with Win32LobAppMsiPackageType
-  @scala.inline
-  def dualPurpose: dualPurpose = "dualPurpose".asInstanceOf[dualPurpose]
+  inline def dualPurpose: dualPurpose = "dualPurpose".asInstanceOf[dualPurpose]
   
   @js.native
   sealed trait dword
     extends StObject
        with RegistryValueType
-  @scala.inline
-  def dword: dword = "dword".asInstanceOf[dword]
+  inline def dword: dword = "dword".asInstanceOf[dword]
   
   @js.native
   sealed trait dwordBigEndian
     extends StObject
        with RegistryValueType
-  @scala.inline
-  def dwordBigEndian: dwordBigEndian = "dwordBigEndian".asInstanceOf[dwordBigEndian]
+  inline def dwordBigEndian: dwordBigEndian = "dwordBigEndian".asInstanceOf[dwordBigEndian]
   
   @js.native
   sealed trait dwordLittleEndian
     extends StObject
        with RegistryValueType
-  @scala.inline
-  def dwordLittleEndian: dwordLittleEndian = "dwordLittleEndian".asInstanceOf[dwordLittleEndian]
+  inline def dwordLittleEndian: dwordLittleEndian = "dwordLittleEndian".asInstanceOf[dwordLittleEndian]
   
   @js.native
   sealed trait eas
     extends StObject
        with ManagementAgentType
-  @scala.inline
-  def eas: eas = "eas".asInstanceOf[eas]
+  inline def eas: eas = "eas".asInstanceOf[eas]
   
   @js.native
   sealed trait easIntuneClient
     extends StObject
        with ManagementAgentType
-  @scala.inline
-  def easIntuneClient: easIntuneClient = "easIntuneClient".asInstanceOf[easIntuneClient]
+  inline def easIntuneClient: easIntuneClient = "easIntuneClient".asInstanceOf[easIntuneClient]
   
   @js.native
   sealed trait easMdm
     extends StObject
        with ManagementAgentType
-  @scala.inline
-  def easMdm: easMdm = "easMdm".asInstanceOf[easMdm]
+  inline def easMdm: easMdm = "easMdm".asInstanceOf[easMdm]
   
   @js.native
   sealed trait easSupported
     extends StObject
        with ConditionalAccessClientApp
-  @scala.inline
-  def easSupported: easSupported = "easSupported".asInstanceOf[easSupported]
+  inline def easSupported: easSupported = "easSupported".asInstanceOf[easSupported]
   
   @js.native
   sealed trait education
     extends StObject
        with VppTokenAccountType
-  @scala.inline
-  def education: education = "education".asInstanceOf[education]
+  inline def education: education = "education".asInstanceOf[education]
   
   @js.native
   sealed trait educationClass
     extends StObject
        with TeamSpecialization
-  @scala.inline
-  def educationClass: educationClass = "educationClass".asInstanceOf[educationClass]
+  inline def educationClass: educationClass = "educationClass".asInstanceOf[educationClass]
   
   @js.native
   sealed trait educationProfessionalLearningCommunity
     extends StObject
        with TeamSpecialization
-  @scala.inline
-  def educationProfessionalLearningCommunity: educationProfessionalLearningCommunity = "educationProfessionalLearningCommunity".asInstanceOf[educationProfessionalLearningCommunity]
+  inline def educationProfessionalLearningCommunity: educationProfessionalLearningCommunity = "educationProfessionalLearningCommunity".asInstanceOf[educationProfessionalLearningCommunity]
   
   @js.native
   sealed trait educationStaff
     extends StObject
        with TeamSpecialization
-  @scala.inline
-  def educationStaff: educationStaff = "educationStaff".asInstanceOf[educationStaff]
+  inline def educationStaff: educationStaff = "educationStaff".asInstanceOf[educationStaff]
   
   @js.native
   sealed trait educationStandard
     extends StObject
        with TeamSpecialization
-  @scala.inline
-  def educationStandard: educationStandard = "educationStandard".asInstanceOf[educationStandard]
+  inline def educationStandard: educationStandard = "educationStandard".asInstanceOf[educationStandard]
   
   @js.native
   sealed trait eight
     extends StObject
        with MiracastChannel
-  @scala.inline
-  def eight: eight = "eight".asInstanceOf[eight]
+  inline def eight: eight = "eight".asInstanceOf[eight]
   
   @js.native
   sealed trait eleven
     extends StObject
        with MiracastChannel
-  @scala.inline
-  def eleven: eleven = "eleven".asInstanceOf[eleven]
+  inline def eleven: eleven = "eleven".asInstanceOf[eleven]
   
   @js.native
   sealed trait enabled
@@ -2548,85 +2242,73 @@ object microsoftGraphStrings {
        with Enablement
        with MobileThreatPartnerTenantState
        with WindowsSpotlightEnablementSettings
-  @scala.inline
-  def enabled: enabled = "enabled".asInstanceOf[enabled]
+  inline def enabled: enabled = "enabled".asInstanceOf[enabled]
   
   @js.native
   sealed trait enabledForReportingButNotEnforced
     extends StObject
        with ConditionalAccessPolicyState
-  @scala.inline
-  def enabledForReportingButNotEnforced: enabledForReportingButNotEnforced = "enabledForReportingButNotEnforced".asInstanceOf[enabledForReportingButNotEnforced]
+  inline def enabledForReportingButNotEnforced: enabledForReportingButNotEnforced = "enabledForReportingButNotEnforced".asInstanceOf[enabledForReportingButNotEnforced]
   
   @js.native
   sealed trait encryptAndAuditOnly
     extends StObject
        with WindowsInformationProtectionEnforcementLevel
-  @scala.inline
-  def encryptAndAuditOnly: encryptAndAuditOnly = "encryptAndAuditOnly".asInstanceOf[encryptAndAuditOnly]
+  inline def encryptAndAuditOnly: encryptAndAuditOnly = "encryptAndAuditOnly".asInstanceOf[encryptAndAuditOnly]
   
   @js.native
   sealed trait encryptAuditAndBlock
     extends StObject
        with WindowsInformationProtectionEnforcementLevel
-  @scala.inline
-  def encryptAuditAndBlock: encryptAuditAndBlock = "encryptAuditAndBlock".asInstanceOf[encryptAuditAndBlock]
+  inline def encryptAuditAndBlock: encryptAuditAndBlock = "encryptAuditAndBlock".asInstanceOf[encryptAuditAndBlock]
   
   @js.native
   sealed trait encryptAuditAndPrompt
     extends StObject
        with WindowsInformationProtectionEnforcementLevel
-  @scala.inline
-  def encryptAuditAndPrompt: encryptAuditAndPrompt = "encryptAuditAndPrompt".asInstanceOf[encryptAuditAndPrompt]
+  inline def encryptAuditAndPrompt: encryptAuditAndPrompt = "encryptAuditAndPrompt".asInstanceOf[encryptAuditAndPrompt]
   
   @js.native
   sealed trait endDate
     extends StObject
        with RecurrenceRangeType
-  @scala.inline
-  def endDate: endDate = "endDate".asInstanceOf[endDate]
+  inline def endDate: endDate = "endDate".asInstanceOf[endDate]
   
   @js.native
   sealed trait enforceComponentsAndStoreApps
     extends StObject
        with AppLockerApplicationControlType
-  @scala.inline
-  def enforceComponentsAndStoreApps: enforceComponentsAndStoreApps = "enforceComponentsAndStoreApps".asInstanceOf[enforceComponentsAndStoreApps]
+  inline def enforceComponentsAndStoreApps: enforceComponentsAndStoreApps = "enforceComponentsAndStoreApps".asInstanceOf[enforceComponentsAndStoreApps]
   
   @js.native
   sealed trait enforceComponentsStoreAppsAndSmartlocker
     extends StObject
        with AppLockerApplicationControlType
-  @scala.inline
-  def enforceComponentsStoreAppsAndSmartlocker: enforceComponentsStoreAppsAndSmartlocker = "enforceComponentsStoreAppsAndSmartlocker".asInstanceOf[enforceComponentsStoreAppsAndSmartlocker]
+  inline def enforceComponentsStoreAppsAndSmartlocker: enforceComponentsStoreAppsAndSmartlocker = "enforceComponentsStoreAppsAndSmartlocker".asInstanceOf[enforceComponentsStoreAppsAndSmartlocker]
   
   @js.native
   sealed trait enhanced
     extends StObject
        with DiagnosticDataSubmissionMode
-  @scala.inline
-  def enhanced: enhanced = "enhanced".asInstanceOf[enhanced]
+  inline def enhanced: enhanced = "enhanced".asInstanceOf[enhanced]
   
   @js.native
   sealed trait enrollmentRestrictionsEnforced
     extends StObject
        with DeviceEnrollmentFailureReason
-  @scala.inline
-  def enrollmentRestrictionsEnforced: enrollmentRestrictionsEnforced = "enrollmentRestrictionsEnforced".asInstanceOf[enrollmentRestrictionsEnforced]
+  inline def enrollmentRestrictionsEnforced: enrollmentRestrictionsEnforced = "enrollmentRestrictionsEnforced".asInstanceOf[enrollmentRestrictionsEnforced]
   
   @js.native
   sealed trait entryId
     extends StObject
        with ExchangeIdFormat
-  @scala.inline
-  def entryId: entryId = "entryId".asInstanceOf[entryId]
+  inline def entryId: entryId = "entryId".asInstanceOf[entryId]
   
   @js.native
   sealed trait equal
     extends StObject
        with Win32LobAppRuleOperator
-  @scala.inline
-  def equal: equal = "equal".asInstanceOf[equal]
+  inline def equal: equal = "equal".asInstanceOf[equal]
   
   @js.native
   sealed trait error
@@ -2634,178 +2316,153 @@ object microsoftGraphStrings {
        with ComplianceState
        with ComplianceStatus
        with MobileAppContentFileUploadState
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait established
     extends StObject
        with CallState
-  @scala.inline
-  def established: established = "established".asInstanceOf[established]
+  inline def established: established = "established".asInstanceOf[established]
   
   @js.native
   sealed trait establishing
     extends StObject
        with CallState
-  @scala.inline
-  def establishing: establishing = "establishing".asInstanceOf[establishing]
+  inline def establishing: establishing = "establishing".asInstanceOf[establishing]
   
   @js.native
   sealed trait event
     extends StObject
        with EntityType
-  @scala.inline
-  def event: event = "event".asInstanceOf[event]
+  inline def event: event = "event".asInstanceOf[event]
   
   @js.native
   sealed trait everyday
     extends StObject
        with WeeklySchedule
-  @scala.inline
-  def everyday: everyday = "everyday".asInstanceOf[everyday]
+  inline def everyday: everyday = "everyday".asInstanceOf[everyday]
   
   @js.native
   sealed trait everyone
     extends StObject
        with LobbyBypassScope
        with OnlineMeetingPresenters
-  @scala.inline
-  def everyone: everyone = "everyone".asInstanceOf[everyone]
+  inline def everyone: everyone = "everyone".asInstanceOf[everyone]
   
   @js.native
   sealed trait ewsId
     extends StObject
        with ExchangeIdFormat
-  @scala.inline
-  def ewsId: ewsId = "ewsId".asInstanceOf[ewsId]
+  inline def ewsId: ewsId = "ewsId".asInstanceOf[ewsId]
   
   @js.native
   sealed trait excellent
     extends StObject
        with UserFeedbackRating
-  @scala.inline
-  def excellent: excellent = "excellent".asInstanceOf[excellent]
+  inline def excellent: excellent = "excellent".asInstanceOf[excellent]
   
   @js.native
   sealed trait exception
     extends StObject
        with EventType
-  @scala.inline
-  def exception: exception = "exception".asInstanceOf[exception]
+  inline def exception: exception = "exception".asInstanceOf[exception]
   
   @js.native
   sealed trait exchangeActiveSync
     extends StObject
        with ConditionalAccessClientApp
-  @scala.inline
-  def exchangeActiveSync: exchangeActiveSync = "exchangeActiveSync".asInstanceOf[exchangeActiveSync]
+  inline def exchangeActiveSync: exchangeActiveSync = "exchangeActiveSync".asInstanceOf[exchangeActiveSync]
   
   @js.native
   sealed trait exchangeDeviceRule
     extends StObject
        with DeviceManagementExchangeAccessStateReason
-  @scala.inline
-  def exchangeDeviceRule: exchangeDeviceRule = "exchangeDeviceRule".asInstanceOf[exchangeDeviceRule]
+  inline def exchangeDeviceRule: exchangeDeviceRule = "exchangeDeviceRule".asInstanceOf[exchangeDeviceRule]
   
   @js.native
   sealed trait exchangeGlobalRule
     extends StObject
        with DeviceManagementExchangeAccessStateReason
-  @scala.inline
-  def exchangeGlobalRule: exchangeGlobalRule = "exchangeGlobalRule".asInstanceOf[exchangeGlobalRule]
+  inline def exchangeGlobalRule: exchangeGlobalRule = "exchangeGlobalRule".asInstanceOf[exchangeGlobalRule]
   
   @js.native
   sealed trait exchangeIndividualRule
     extends StObject
        with DeviceManagementExchangeAccessStateReason
-  @scala.inline
-  def exchangeIndividualRule: exchangeIndividualRule = "exchangeIndividualRule".asInstanceOf[exchangeIndividualRule]
+  inline def exchangeIndividualRule: exchangeIndividualRule = "exchangeIndividualRule".asInstanceOf[exchangeIndividualRule]
   
   @js.native
   sealed trait exchangeMailboxPolicy
     extends StObject
        with DeviceManagementExchangeAccessStateReason
-  @scala.inline
-  def exchangeMailboxPolicy: exchangeMailboxPolicy = "exchangeMailboxPolicy".asInstanceOf[exchangeMailboxPolicy]
+  inline def exchangeMailboxPolicy: exchangeMailboxPolicy = "exchangeMailboxPolicy".asInstanceOf[exchangeMailboxPolicy]
   
   @js.native
   sealed trait exchangeUnifiedMessagingService
     extends StObject
        with ServiceRole
-  @scala.inline
-  def exchangeUnifiedMessagingService: exchangeUnifiedMessagingService = "exchangeUnifiedMessagingService".asInstanceOf[exchangeUnifiedMessagingService]
+  inline def exchangeUnifiedMessagingService: exchangeUnifiedMessagingService = "exchangeUnifiedMessagingService".asInstanceOf[exchangeUnifiedMessagingService]
   
   @js.native
   sealed trait exchangeUpgrade
     extends StObject
        with DeviceManagementExchangeAccessStateReason
-  @scala.inline
-  def exchangeUpgrade: exchangeUpgrade = "exchangeUpgrade".asInstanceOf[exchangeUpgrade]
+  inline def exchangeUpgrade: exchangeUpgrade = "exchangeUpgrade".asInstanceOf[exchangeUpgrade]
   
   @js.native
   sealed trait exists
     extends StObject
        with Win32LobAppFileSystemOperationType
        with Win32LobAppRegistryRuleOperationType
-  @scala.inline
-  def exists: exists = "exists".asInstanceOf[exists]
+  inline def exists: exists = "exists".asInstanceOf[exists]
   
   @js.native
   sealed trait expandSz
     extends StObject
        with RegistryValueType
-  @scala.inline
-  def expandSz: expandSz = "expandSz".asInstanceOf[expandSz]
+  inline def expandSz: expandSz = "expandSz".asInstanceOf[expandSz]
   
   @js.native
   sealed trait expired
     extends StObject
        with VppTokenState
-  @scala.inline
-  def expired: expired = "expired".asInstanceOf[expired]
+  inline def expired: expired = "expired".asInstanceOf[expired]
   
   @js.native
   sealed trait explicitAllowed
     extends StObject
        with RatingJapanTelevisionType
-  @scala.inline
-  def explicitAllowed: explicitAllowed = "explicitAllowed".asInstanceOf[explicitAllowed]
+  inline def explicitAllowed: explicitAllowed = "explicitAllowed".asInstanceOf[explicitAllowed]
   
   @js.native
   sealed trait external
     extends StObject
        with RecipientScopeType
-  @scala.inline
-  def external: external = "external".asInstanceOf[external]
+  inline def external: external = "external".asInstanceOf[external]
   
   @js.native
   sealed trait externalItem
     extends StObject
        with EntityType
-  @scala.inline
-  def externalItem: externalItem = "externalItem".asInstanceOf[externalItem]
+  inline def externalItem: externalItem = "externalItem".asInstanceOf[externalItem]
   
   @js.native
   sealed trait externalMemberCount
     extends StObject
        with MailTipsType
-  @scala.inline
-  def externalMemberCount: externalMemberCount = "externalMemberCount".asInstanceOf[externalMemberCount]
+  inline def externalMemberCount: externalMemberCount = "externalMemberCount".asInstanceOf[externalMemberCount]
   
   @js.native
   sealed trait externalNonPartner
     extends StObject
        with RecipientScopeType
-  @scala.inline
-  def externalNonPartner: externalNonPartner = "externalNonPartner".asInstanceOf[externalNonPartner]
+  inline def externalNonPartner: externalNonPartner = "externalNonPartner".asInstanceOf[externalNonPartner]
   
   @js.native
   sealed trait externalPartner
     extends StObject
        with RecipientScopeType
-  @scala.inline
-  def externalPartner: externalPartner = "externalPartner".asInstanceOf[externalPartner]
+  inline def externalPartner: externalPartner = "externalPartner".asInstanceOf[externalPartner]
   
   @js.native
   sealed trait failed_
@@ -2819,8 +2476,7 @@ object microsoftGraphStrings {
        with VppTokenSyncStatus
        with Win32LobAppReturnCodeType
        with WorkbookOperationStatus
-  @scala.inline
-  def failed_ : failed_ = "failed".asInstanceOf[failed_]
+  inline def failed_ : failed_ = "failed".asInstanceOf[failed_]
   
   @js.native
   sealed trait failure
@@ -2828,263 +2484,226 @@ object microsoftGraphStrings {
        with AppliedConditionalAccessPolicyResult
        with ConditionalAccessStatus
        with OperationResult
-  @scala.inline
-  def failure: failure = "failure".asInstanceOf[failure]
+  inline def failure: failure = "failure".asInstanceOf[failure]
   
   @js.native
   sealed trait fair
     extends StObject
        with UserFeedbackRating
-  @scala.inline
-  def fair: fair = "fair".asInstanceOf[fair]
+  inline def fair: fair = "fair".asInstanceOf[fair]
   
   @js.native
   sealed trait falsePositive
     extends StObject
        with AlertFeedback
-  @scala.inline
-  def falsePositive: falsePositive = "falsePositive".asInstanceOf[falsePositive]
+  inline def falsePositive: falsePositive = "falsePositive".asInstanceOf[falsePositive]
   
   @js.native
   sealed trait featureNotSupported
     extends StObject
        with DeviceEnrollmentFailureReason
-  @scala.inline
-  def featureNotSupported: featureNotSupported = "featureNotSupported".asInstanceOf[featureNotSupported]
+  inline def featureNotSupported: featureNotSupported = "featureNotSupported".asInstanceOf[featureNotSupported]
   
   @js.native
   sealed trait female
     extends StObject
        with EducationGender
-  @scala.inline
-  def female: female = "female".asInstanceOf[female]
+  inline def female: female = "female".asInstanceOf[female]
   
   @js.native
   sealed trait file
     extends StObject
        with AttachmentType
        with ThreatAssessmentContentType
-  @scala.inline
-  def file: file = "file".asInstanceOf[file]
+  inline def file: file = "file".asInstanceOf[file]
   
   @js.native
   sealed trait first
     extends StObject
        with WeekIndex
-  @scala.inline
-  def first: first = "first".asInstanceOf[first]
+  inline def first: first = "first".asInstanceOf[first]
   
   @js.native
   sealed trait firstAid
     extends StObject
        with TimeOffReasonIconType
-  @scala.inline
-  def firstAid: firstAid = "firstAid".asInstanceOf[firstAid]
+  inline def firstAid: firstAid = "firstAid".asInstanceOf[firstAid]
   
   @js.native
   sealed trait firstTimeSender
     extends StObject
        with MailDestinationRoutingReason
-  @scala.inline
-  def firstTimeSender: firstTimeSender = "firstTimeSender".asInstanceOf[firstTimeSender]
+  inline def firstTimeSender: firstTimeSender = "firstTimeSender".asInstanceOf[firstTimeSender]
   
   @js.native
   sealed trait five
     extends StObject
        with MiracastChannel
-  @scala.inline
-  def five: five = "five".asInstanceOf[five]
+  inline def five: five = "five".asInstanceOf[five]
   
   @js.native
   sealed trait flagged
     extends StObject
        with FollowupFlagStatus
-  @scala.inline
-  def flagged: flagged = "flagged".asInstanceOf[flagged]
+  inline def flagged: flagged = "flagged".asInstanceOf[flagged]
   
   @js.native
   sealed trait flaggedEmails
     extends StObject
        with WellknownListName
-  @scala.inline
-  def flaggedEmails: flaggedEmails = "flaggedEmails".asInstanceOf[flaggedEmails]
+  inline def flaggedEmails: flaggedEmails = "flaggedEmails".asInstanceOf[flaggedEmails]
   
   @js.native
   sealed trait flash
     extends StObject
        with Tone
-  @scala.inline
-  def flash: flash = "flash".asInstanceOf[flash]
+  inline def flash: flash = "flash".asInstanceOf[flash]
   
   @js.native
   sealed trait float
     extends StObject
        with Win32LobAppPowerShellScriptRuleOperationType
-  @scala.inline
-  def float: float = "float".asInstanceOf[float]
+  inline def float: float = "float".asInstanceOf[float]
   
   @js.native
   sealed trait focused
     extends StObject
        with InferenceClassificationType
-  @scala.inline
-  def focused: focused = "focused".asInstanceOf[focused]
+  inline def focused: focused = "focused".asInstanceOf[focused]
   
   @js.native
   sealed trait followUp
     extends StObject
        with MessageActionFlag
-  @scala.inline
-  def followUp: followUp = "followUp".asInstanceOf[followUp]
+  inline def followUp: followUp = "followUp".asInstanceOf[followUp]
   
   @js.native
   sealed trait forbidden
     extends StObject
        with RejectReason
-  @scala.inline
-  def forbidden: forbidden = "forbidden".asInstanceOf[forbidden]
+  inline def forbidden: forbidden = "forbidden".asInstanceOf[forbidden]
   
   @js.native
   sealed trait force
     extends StObject
        with Win32LobAppRestartBehavior
-  @scala.inline
-  def force: force = "force".asInstanceOf[force]
+  inline def force: force = "force".asInstanceOf[force]
   
   @js.native
   sealed trait forty
     extends StObject
        with MiracastChannel
-  @scala.inline
-  def forty: forty = "forty".asInstanceOf[forty]
+  inline def forty: forty = "forty".asInstanceOf[forty]
   
   @js.native
   sealed trait fortyEight
     extends StObject
        with MiracastChannel
-  @scala.inline
-  def fortyEight: fortyEight = "fortyEight".asInstanceOf[fortyEight]
+  inline def fortyEight: fortyEight = "fortyEight".asInstanceOf[fortyEight]
   
   @js.native
   sealed trait fortyFour
     extends StObject
        with MiracastChannel
-  @scala.inline
-  def fortyFour: fortyFour = "fortyFour".asInstanceOf[fortyFour]
+  inline def fortyFour: fortyFour = "fortyFour".asInstanceOf[fortyFour]
   
   @js.native
   sealed trait forward
     extends StObject
        with MessageActionFlag
-  @scala.inline
-  def forward: forward = "forward".asInstanceOf[forward]
+  inline def forward: forward = "forward".asInstanceOf[forward]
   
   @js.native
   sealed trait forwarded
     extends StObject
        with RoutingType
-  @scala.inline
-  def forwarded: forwarded = "forwarded".asInstanceOf[forwarded]
+  inline def forwarded: forwarded = "forwarded".asInstanceOf[forwarded]
   
   @js.native
   sealed trait four
     extends StObject
        with MiracastChannel
-  @scala.inline
-  def four: four = "four".asInstanceOf[four]
+  inline def four: four = "four".asInstanceOf[four]
   
   @js.native
   sealed trait fourth
     extends StObject
        with WeekIndex
-  @scala.inline
-  def fourth: fourth = "fourth".asInstanceOf[fourth]
+  inline def fourth: fourth = "fourth".asInstanceOf[fourth]
   
   @js.native
   sealed trait free
     extends StObject
        with FreeBusyStatus
-  @scala.inline
-  def free: free = "free".asInstanceOf[free]
+  inline def free: free = "free".asInstanceOf[free]
   
   @js.native
   sealed trait freeBusyRead
     extends StObject
        with CalendarRoleType
-  @scala.inline
-  def freeBusyRead: freeBusyRead = "freeBusyRead".asInstanceOf[freeBusyRead]
+  inline def freeBusyRead: freeBusyRead = "freeBusyRead".asInstanceOf[freeBusyRead]
   
   @js.native
   sealed trait frequency24GHz
     extends StObject
        with WifiBand
-  @scala.inline
-  def frequency24GHz: frequency24GHz = "frequency24GHz".asInstanceOf[frequency24GHz]
+  inline def frequency24GHz: frequency24GHz = "frequency24GHz".asInstanceOf[frequency24GHz]
   
   @js.native
   sealed trait frequency50GHz
     extends StObject
        with WifiBand
-  @scala.inline
-  def frequency50GHz: frequency50GHz = "frequency50GHz".asInstanceOf[frequency50GHz]
+  inline def frequency50GHz: frequency50GHz = "frequency50GHz".asInstanceOf[frequency50GHz]
   
   @js.native
   sealed trait frequency60GHz
     extends StObject
        with WifiBand
-  @scala.inline
-  def frequency60GHz: frequency60GHz = "frequency60GHz".asInstanceOf[frequency60GHz]
+  inline def frequency60GHz: frequency60GHz = "frequency60GHz".asInstanceOf[frequency60GHz]
   
   @js.native
   sealed trait friday
     extends StObject
        with DayOfWeek
        with WeeklySchedule
-  @scala.inline
-  def friday: friday = "friday".asInstanceOf[friday]
+  inline def friday: friday = "friday".asInstanceOf[friday]
   
   @js.native
   sealed trait full
     extends StObject
        with DefenderScanType
        with DiagnosticDataSubmissionMode
-  @scala.inline
-  def full: full = "full".asInstanceOf[full]
+  inline def full: full = "full".asInstanceOf[full]
   
   @js.native
   sealed trait fullScreen
     extends StObject
        with WindowsStartMenuModeType
-  @scala.inline
-  def fullScreen: fullScreen = "fullScreen".asInstanceOf[fullScreen]
+  inline def fullScreen: fullScreen = "fullScreen".asInstanceOf[fullScreen]
   
   @js.native
   sealed trait fullSync
     extends StObject
        with DeviceManagementExchangeConnectorSyncType
-  @scala.inline
-  def fullSync: fullSync = "fullSync".asInstanceOf[fullSync]
+  inline def fullSync: fullSync = "fullSync".asInstanceOf[fullSync]
   
   @js.native
   sealed trait fullUpdate
     extends StObject
        with MeetingRequestType
-  @scala.inline
-  def fullUpdate: fullUpdate = "fullUpdate".asInstanceOf[fullUpdate]
+  inline def fullUpdate: fullUpdate = "fullUpdate".asInstanceOf[fullUpdate]
   
   @js.native
   sealed trait fyi
     extends StObject
        with MessageActionFlag
-  @scala.inline
-  def fyi: fyi = "fyi".asInstanceOf[fyi]
+  inline def fyi: fyi = "fyi".asInstanceOf[fyi]
   
   @js.native
   sealed trait gateway
     extends StObject
        with ServiceRole
-  @scala.inline
-  def gateway: gateway = "gateway".asInstanceOf[gateway]
+  inline def gateway: gateway = "gateway".asInstanceOf[gateway]
   
   @js.native
   sealed trait general
@@ -3103,149 +2722,128 @@ object microsoftGraphStrings {
        with RatingUnitedKingdomMoviesType
        with RatingUnitedStatesMoviesType
        with RatingUnitedStatesTelevisionType
-  @scala.inline
-  def general: general = "general".asInstanceOf[general]
+  inline def general: general = "general".asInstanceOf[general]
   
   @js.native
   sealed trait generic
     extends StObject
        with RiskEventType
-  @scala.inline
-  def generic: generic = "generic".asInstanceOf[generic]
+  inline def generic: generic = "generic".asInstanceOf[generic]
   
   @js.native
   sealed trait geoCoordinates
     extends StObject
        with LocationType
-  @scala.inline
-  def geoCoordinates: geoCoordinates = "geoCoordinates".asInstanceOf[geoCoordinates]
+  inline def geoCoordinates: geoCoordinates = "geoCoordinates".asInstanceOf[geoCoordinates]
   
   @js.native
   sealed trait ggp
     extends StObject
        with SecurityNetworkProtocol
-  @scala.inline
-  def ggp: ggp = "ggp".asInstanceOf[ggp]
+  inline def ggp: ggp = "ggp".asInstanceOf[ggp]
   
   @js.native
   sealed trait global
     extends StObject
        with ManagedAppAvailability
-  @scala.inline
-  def global: global = "global".asInstanceOf[global]
+  inline def global: global = "global".asInstanceOf[global]
   
   @js.native
   sealed trait globe
     extends StObject
        with TimeOffReasonIconType
-  @scala.inline
-  def globe: globe = "globe".asInstanceOf[globe]
+  inline def globe: globe = "globe".asInstanceOf[globe]
   
   @js.native
   sealed trait good
     extends StObject
        with UserFeedbackRating
-  @scala.inline
-  def good: good = "good".asInstanceOf[good]
+  inline def good: good = "good".asInstanceOf[good]
   
   @js.native
   sealed trait googleCloudDevicePolicyController
     extends StObject
        with ManagementAgentType
-  @scala.inline
-  def googleCloudDevicePolicyController: googleCloudDevicePolicyController = "googleCloudDevicePolicyController".asInstanceOf[googleCloudDevicePolicyController]
+  inline def googleCloudDevicePolicyController: googleCloudDevicePolicyController = "googleCloudDevicePolicyController".asInstanceOf[googleCloudDevicePolicyController]
   
   @js.native
   sealed trait gray
     extends StObject
        with ScheduleEntityTheme
-  @scala.inline
-  def gray: gray = "gray".asInstanceOf[gray]
+  inline def gray: gray = "gray".asInstanceOf[gray]
   
   @js.native
   sealed trait greaterThan
     extends StObject
        with Win32LobAppRuleOperator
-  @scala.inline
-  def greaterThan: greaterThan = "greaterThan".asInstanceOf[greaterThan]
+  inline def greaterThan: greaterThan = "greaterThan".asInstanceOf[greaterThan]
   
   @js.native
   sealed trait greaterThanOrEqual
     extends StObject
        with Win32LobAppRuleOperator
-  @scala.inline
-  def greaterThanOrEqual: greaterThanOrEqual = "greaterThanOrEqual".asInstanceOf[greaterThanOrEqual]
+  inline def greaterThanOrEqual: greaterThanOrEqual = "greaterThanOrEqual".asInstanceOf[greaterThanOrEqual]
   
   @js.native
   sealed trait green
     extends StObject
        with ScheduleEntityTheme
-  @scala.inline
-  def green: green = "green".asInstanceOf[green]
+  inline def green: green = "green".asInstanceOf[green]
   
   @js.native
   sealed trait groupCall
     extends StObject
        with CallType
-  @scala.inline
-  def groupCall: groupCall = "groupCall".asInstanceOf[groupCall]
+  inline def groupCall: groupCall = "groupCall".asInstanceOf[groupCall]
   
   @js.native
   sealed trait guest
     extends StObject
        with SharedPCAllowedAccountType
-  @scala.inline
-  def guest: guest = "guest".asInstanceOf[guest]
+  inline def guest: guest = "guest".asInstanceOf[guest]
   
   @js.native
   sealed trait hardReboot
     extends StObject
        with Win32LobAppReturnCodeType
-  @scala.inline
-  def hardReboot: hardReboot = "hardReboot".asInstanceOf[hardReboot]
+  inline def hardReboot: hardReboot = "hardReboot".asInstanceOf[hardReboot]
   
   @js.native
   sealed trait healthcareCareCoordination
     extends StObject
        with TeamSpecialization
-  @scala.inline
-  def healthcareCareCoordination: healthcareCareCoordination = "healthcareCareCoordination".asInstanceOf[healthcareCareCoordination]
+  inline def healthcareCareCoordination: healthcareCareCoordination = "healthcareCareCoordination".asInstanceOf[healthcareCareCoordination]
   
   @js.native
   sealed trait healthcareStandard
     extends StObject
        with TeamSpecialization
-  @scala.inline
-  def healthcareStandard: healthcareStandard = "healthcareStandard".asInstanceOf[healthcareStandard]
+  inline def healthcareStandard: healthcareStandard = "healthcareStandard".asInstanceOf[healthcareStandard]
   
   @js.native
   sealed trait hidden
     extends StObject
        with RiskDetail
        with RiskLevel
-  @scala.inline
-  def hidden: hidden = "hidden".asInstanceOf[hidden]
+  inline def hidden: hidden = "hidden".asInstanceOf[hidden]
   
   @js.native
   sealed trait hiddenMembership
     extends StObject
        with TeamVisibilityType
-  @scala.inline
-  def hiddenMembership: hiddenMembership = "hiddenMembership".asInstanceOf[hiddenMembership]
+  inline def hiddenMembership: hiddenMembership = "hiddenMembership".asInstanceOf[hiddenMembership]
   
   @js.native
   sealed trait hide
     extends StObject
        with VisibilitySetting
-  @scala.inline
-  def hide: hide = "hide".asInstanceOf[hide]
+  inline def hide: hide = "hide".asInstanceOf[hide]
   
   @js.native
   sealed trait hideAll
     extends StObject
        with Win32LobAppNotification
-  @scala.inline
-  def hideAll: hideAll = "hideAll".asInstanceOf[hideAll]
+  inline def hideAll: hideAll = "hideAll".asInstanceOf[hideAll]
   
   @js.native
   sealed trait high
@@ -3261,43 +2859,37 @@ object microsoftGraphStrings {
        with RiskLevel
        with SelectionLikelihoodInfo
        with SiteSecurityLevel
-  @scala.inline
-  def high: high = "high".asInstanceOf[high]
+  inline def high: high = "high".asInstanceOf[high]
   
   @js.native
   sealed trait highPlus
     extends StObject
        with DefenderCloudBlockLevelType
-  @scala.inline
-  def highPlus: highPlus = "highPlus".asInstanceOf[highPlus]
+  inline def highPlus: highPlus = "highPlus".asInstanceOf[highPlus]
   
   @js.native
   sealed trait highSeverity
     extends StObject
        with ManagedDevicePartnerReportedHealthState
-  @scala.inline
-  def highSeverity: highSeverity = "highSeverity".asInstanceOf[highSeverity]
+  inline def highSeverity: highSeverity = "highSeverity".asInstanceOf[highSeverity]
   
   @js.native
   sealed trait hold
     extends StObject
        with CallState
-  @scala.inline
-  def hold: hold = "hold".asInstanceOf[hold]
+  inline def hold: hold = "hold".asInstanceOf[hold]
   
   @js.native
   sealed trait holoLens
     extends StObject
        with ClientPlatform
-  @scala.inline
-  def holoLens: holoLens = "holoLens".asInstanceOf[holoLens]
+  inline def holoLens: holoLens = "holoLens".asInstanceOf[holoLens]
   
   @js.native
   sealed trait holographic
     extends StObject
        with WindowsDeviceType
-  @scala.inline
-  def holographic: holographic = "holographic".asInstanceOf[holographic]
+  inline def holographic: holographic = "holographic".asInstanceOf[holographic]
   
   @js.native
   sealed trait home
@@ -3305,78 +2897,67 @@ object microsoftGraphStrings {
        with PhoneType
        with PhysicalAddressType
        with WebsiteType
-  @scala.inline
-  def home: home = "home".asInstanceOf[home]
+  inline def home: home = "home".asInstanceOf[home]
   
   @js.native
   sealed trait homeAddress
     extends StObject
        with LocationType
-  @scala.inline
-  def homeAddress: homeAddress = "homeAddress".asInstanceOf[homeAddress]
+  inline def homeAddress: homeAddress = "homeAddress".asInstanceOf[homeAddress]
   
   @js.native
   sealed trait homeFax
     extends StObject
        with PhoneType
-  @scala.inline
-  def homeFax: homeFax = "homeFax".asInstanceOf[homeFax]
+  inline def homeFax: homeFax = "homeFax".asInstanceOf[homeFax]
   
   @js.native
   sealed trait hosted
     extends StObject
        with DeviceManagementExchangeConnectorType
-  @scala.inline
-  def hosted: hosted = "hosted".asInstanceOf[hosted]
+  inline def hosted: hosted = "hosted".asInstanceOf[hosted]
   
   @js.native
   sealed trait hotel
     extends StObject
        with LocationType
-  @scala.inline
-  def hotel: hotel = "hotel".asInstanceOf[hotel]
+  inline def hotel: hotel = "hotel".asInstanceOf[hotel]
   
   @js.native
   sealed trait hours
     extends StObject
        with SigninFrequencyType
-  @scala.inline
-  def hours: hours = "hours".asInstanceOf[hours]
+  inline def hours: hours = "hours".asInstanceOf[hours]
   
   @js.native
   sealed trait html
     extends StObject
        with BodyType
-  @scala.inline
-  def html: html = "html".asInstanceOf[html]
+  inline def html: html = "html".asInstanceOf[html]
   
   @js.native
   sealed trait httpOnly
     extends StObject
        with WindowsDeliveryOptimizationMode
-  @scala.inline
-  def httpOnly: httpOnly = "httpOnly".asInstanceOf[httpOnly]
+  inline def httpOnly: httpOnly = "httpOnly".asInstanceOf[httpOnly]
   
   @js.native
   sealed trait httpWithInternetPeering
     extends StObject
        with WindowsDeliveryOptimizationMode
-  @scala.inline
-  def httpWithInternetPeering: httpWithInternetPeering = "httpWithInternetPeering".asInstanceOf[httpWithInternetPeering]
+  inline def httpWithInternetPeering: httpWithInternetPeering = "httpWithInternetPeering".asInstanceOf[httpWithInternetPeering]
   
   @js.native
   sealed trait httpWithPeeringNat
     extends StObject
        with WindowsDeliveryOptimizationMode
-  @scala.inline
-  def httpWithPeeringNat: httpWithPeeringNat = "httpWithPeeringNat".asInstanceOf[httpWithPeeringNat]
+  inline def httpWithPeeringNat: httpWithPeeringNat = "httpWithPeeringNat".asInstanceOf[httpWithPeeringNat]
   
   @js.native
   sealed trait httpWithPeeringPrivateGroup
     extends StObject
        with WindowsDeliveryOptimizationMode
-  @scala.inline
-  def httpWithPeeringPrivateGroup: httpWithPeeringPrivateGroup = "httpWithPeeringPrivateGroup".asInstanceOf[httpWithPeeringPrivateGroup]
+  inline def httpWithPeeringPrivateGroup: httpWithPeeringPrivateGroup = "httpWithPeeringPrivateGroup".asInstanceOf[httpWithPeeringPrivateGroup]
   
   @js.native
   sealed trait iOS
@@ -3384,85 +2965,73 @@ object microsoftGraphStrings {
        with ClientPlatform
        with ConditionalAccessDevicePlatform
        with PolicyPlatformType
-  @scala.inline
-  def iOS: iOS = "iOS".asInstanceOf[iOS]
+  inline def iOS: iOS = "iOS".asInstanceOf[iOS]
   
   @js.native
   sealed trait iana
     extends StObject
        with TimeZoneStandard
-  @scala.inline
-  def iana: iana = "iana".asInstanceOf[iana]
+  inline def iana: iana = "iana".asInstanceOf[iana]
   
   @js.native
   sealed trait icmp
     extends StObject
        with SecurityNetworkProtocol
-  @scala.inline
-  def icmp: icmp = "icmp".asInstanceOf[icmp]
+  inline def icmp: icmp = "icmp".asInstanceOf[icmp]
   
   @js.native
   sealed trait icmpV6
     extends StObject
        with SecurityNetworkProtocol
-  @scala.inline
-  def icmpV6: icmpV6 = "icmpV6".asInstanceOf[icmpV6]
+  inline def icmpV6: icmpV6 = "icmpV6".asInstanceOf[icmpV6]
   
   @js.native
   sealed trait idle
     extends StObject
        with IosUpdatesInstallStatus
-  @scala.inline
-  def idle: idle = "idle".asInstanceOf[idle]
+  inline def idle: idle = "idle".asInstanceOf[idle]
   
   @js.native
   sealed trait idp
     extends StObject
        with SecurityNetworkProtocol
-  @scala.inline
-  def idp: idp = "idp".asInstanceOf[idp]
+  inline def idp: idp = "idp".asInstanceOf[idp]
   
   @js.native
   sealed trait igmp
     extends StObject
        with SecurityNetworkProtocol
-  @scala.inline
-  def igmp: igmp = "igmp".asInstanceOf[igmp]
+  inline def igmp: igmp = "igmp".asInstanceOf[igmp]
   
   @js.native
   sealed trait ignored
     extends StObject
        with Status
-  @scala.inline
-  def ignored: ignored = "ignored".asInstanceOf[ignored]
+  inline def ignored: ignored = "ignored".asInstanceOf[ignored]
   
   @js.native
   sealed trait immediate
     extends StObject
        with SharedPCAccountDeletionPolicyType
-  @scala.inline
-  def immediate: immediate = "immediate".asInstanceOf[immediate]
+  inline def immediate: immediate = "immediate".asInstanceOf[immediate]
   
   @js.native
   sealed trait immutableEntryId
     extends StObject
        with ExchangeIdFormat
-  @scala.inline
-  def immutableEntryId: immutableEntryId = "immutableEntryId".asInstanceOf[immutableEntryId]
+  inline def immutableEntryId: immutableEntryId = "immutableEntryId".asInstanceOf[immutableEntryId]
   
   @js.native
   sealed trait inGracePeriod
     extends StObject
        with ComplianceState
-  @scala.inline
-  def inGracePeriod: inGracePeriod = "inGracePeriod".asInstanceOf[inGracePeriod]
+  inline def inGracePeriod: inGracePeriod = "inGracePeriod".asInstanceOf[inGracePeriod]
   
   @js.native
   sealed trait inMaintenance
     extends StObject
        with DeviceEnrollmentFailureReason
-  @scala.inline
-  def inMaintenance: inMaintenance = "inMaintenance".asInstanceOf[inMaintenance]
+  inline def inMaintenance: inMaintenance = "inMaintenance".asInstanceOf[inMaintenance]
   
   @js.native
   sealed trait inProgress
@@ -3471,8 +3040,7 @@ object microsoftGraphStrings {
        with TaskStatus
        with TeamsAsyncOperationStatus
        with VppTokenSyncStatus
-  @scala.inline
-  def inProgress: inProgress = "inProgress".asInstanceOf[inProgress]
+  inline def inProgress: inProgress = "inProgress".asInstanceOf[inProgress]
   
   @js.native
   sealed trait inactive
@@ -3480,143 +3048,123 @@ object microsoftGraphStrings {
        with CallTranscriptionState
        with MediaDirection
        with MediaState
-  @scala.inline
-  def inactive: inactive = "inactive".asInstanceOf[inactive]
+  inline def inactive: inactive = "inactive".asInstanceOf[inactive]
   
   @js.native
   sealed trait inbound
     extends StObject
        with ConnectionDirection
-  @scala.inline
-  def inbound: inbound = "inbound".asInstanceOf[inbound]
+  inline def inbound: inbound = "inbound".asInstanceOf[inbound]
   
   @js.native
   sealed trait includeCompanyLogo
     extends StObject
        with NotificationTemplateBrandingOptions
-  @scala.inline
-  def includeCompanyLogo: includeCompanyLogo = "includeCompanyLogo".asInstanceOf[includeCompanyLogo]
+  inline def includeCompanyLogo: includeCompanyLogo = "includeCompanyLogo".asInstanceOf[includeCompanyLogo]
   
   @js.native
   sealed trait includeCompanyName
     extends StObject
        with NotificationTemplateBrandingOptions
-  @scala.inline
-  def includeCompanyName: includeCompanyName = "includeCompanyName".asInstanceOf[includeCompanyName]
+  inline def includeCompanyName: includeCompanyName = "includeCompanyName".asInstanceOf[includeCompanyName]
   
   @js.native
   sealed trait includeContactInformation
     extends StObject
        with NotificationTemplateBrandingOptions
-  @scala.inline
-  def includeContactInformation: includeContactInformation = "includeContactInformation".asInstanceOf[includeContactInformation]
+  inline def includeContactInformation: includeContactInformation = "includeContactInformation".asInstanceOf[includeContactInformation]
   
   @js.native
   sealed trait incoming
     extends StObject
        with CallDirection
        with CallState
-  @scala.inline
-  def incoming: incoming = "incoming".asInstanceOf[incoming]
+  inline def incoming: incoming = "incoming".asInstanceOf[incoming]
   
   @js.native
   sealed trait informational
     extends StObject
        with AlertSeverity
-  @scala.inline
-  def informational: informational = "informational".asInstanceOf[informational]
+  inline def informational: informational = "informational".asInstanceOf[informational]
   
   @js.native
   sealed trait informationalUpdate
     extends StObject
        with MeetingRequestType
-  @scala.inline
-  def informationalUpdate: informationalUpdate = "informationalUpdate".asInstanceOf[informationalUpdate]
+  inline def informationalUpdate: informationalUpdate = "informationalUpdate".asInstanceOf[informationalUpdate]
   
   @js.native
   sealed trait installFailed
     extends StObject
        with IosUpdatesInstallStatus
-  @scala.inline
-  def installFailed: installFailed = "installFailed".asInstanceOf[installFailed]
+  inline def installFailed: installFailed = "installFailed".asInstanceOf[installFailed]
   
   @js.native
   sealed trait installInsufficientPower
     extends StObject
        with IosUpdatesInstallStatus
-  @scala.inline
-  def installInsufficientPower: installInsufficientPower = "installInsufficientPower".asInstanceOf[installInsufficientPower]
+  inline def installInsufficientPower: installInsufficientPower = "installInsufficientPower".asInstanceOf[installInsufficientPower]
   
   @js.native
   sealed trait installInsufficientSpace
     extends StObject
        with IosUpdatesInstallStatus
-  @scala.inline
-  def installInsufficientSpace: installInsufficientSpace = "installInsufficientSpace".asInstanceOf[installInsufficientSpace]
+  inline def installInsufficientSpace: installInsufficientSpace = "installInsufficientSpace".asInstanceOf[installInsufficientSpace]
   
   @js.native
   sealed trait installPhoneCallInProgress
     extends StObject
        with IosUpdatesInstallStatus
-  @scala.inline
-  def installPhoneCallInProgress: installPhoneCallInProgress = "installPhoneCallInProgress".asInstanceOf[installPhoneCallInProgress]
+  inline def installPhoneCallInProgress: installPhoneCallInProgress = "installPhoneCallInProgress".asInstanceOf[installPhoneCallInProgress]
   
   @js.native
   sealed trait installed
     extends StObject
        with InstallState
-  @scala.inline
-  def installed: installed = "installed".asInstanceOf[installed]
+  inline def installed: installed = "installed".asInstanceOf[installed]
   
   @js.native
   sealed trait installing
     extends StObject
        with IosUpdatesInstallStatus
-  @scala.inline
-  def installing: installing = "installing".asInstanceOf[installing]
+  inline def installing: installing = "installing".asInstanceOf[installing]
   
   @js.native
   sealed trait integer
     extends StObject
        with Win32LobAppPowerShellScriptRuleOperationType
        with Win32LobAppRegistryRuleOperationType
-  @scala.inline
-  def integer: integer = "integer".asInstanceOf[integer]
+  inline def integer: integer = "integer".asInstanceOf[integer]
   
   @js.native
   sealed trait integerType
     extends StObject
        with MdmAppConfigKeyType
-  @scala.inline
-  def integerType: integerType = "integerType".asInstanceOf[integerType]
+  inline def integerType: integerType = "integerType".asInstanceOf[integerType]
   
   @js.native
   sealed trait interactive
     extends StObject
        with LogonType
-  @scala.inline
-  def interactive: interactive = "interactive".asInstanceOf[interactive]
+  inline def interactive: interactive = "interactive".asInstanceOf[interactive]
   
   @js.native
   sealed trait internal
     extends StObject
        with RecipientScopeType
-  @scala.inline
-  def internal: internal = "internal".asInstanceOf[internal]
+  inline def internal: internal = "internal".asInstanceOf[internal]
   
   @js.native
   sealed trait intune
     extends StObject
        with MdmAuthority
-  @scala.inline
-  def intune: intune = "intune".asInstanceOf[intune]
+  inline def intune: intune = "intune".asInstanceOf[intune]
   
   @js.native
   sealed trait intuneClient
     extends StObject
        with ManagementAgentType
-  @scala.inline
-  def intuneClient: intuneClient = "intuneClient".asInstanceOf[intuneClient]
+  inline def intuneClient: intuneClient = "intuneClient".asInstanceOf[intuneClient]
   
   @js.native
   sealed trait invalid
@@ -3624,330 +3172,283 @@ object microsoftGraphStrings {
        with TeamsAsyncOperationStatus
        with TeamsAsyncOperationType
        with VppTokenState
-  @scala.inline
-  def invalid: invalid = "invalid".asInstanceOf[invalid]
+  inline def invalid: invalid = "invalid".asInstanceOf[invalid]
   
   @js.native
   sealed trait investigationsThreatIntelligence
     extends StObject
        with RiskEventType
-  @scala.inline
-  def investigationsThreatIntelligence: investigationsThreatIntelligence = "investigationsThreatIntelligence".asInstanceOf[investigationsThreatIntelligence]
+  inline def investigationsThreatIntelligence: investigationsThreatIntelligence = "investigationsThreatIntelligence".asInstanceOf[investigationsThreatIntelligence]
   
   @js.native
   sealed trait investigationsThreatIntelligenceSigninLinked
     extends StObject
        with RiskEventType
-  @scala.inline
-  def investigationsThreatIntelligenceSigninLinked: investigationsThreatIntelligenceSigninLinked = "investigationsThreatIntelligenceSigninLinked".asInstanceOf[investigationsThreatIntelligenceSigninLinked]
+  inline def investigationsThreatIntelligenceSigninLinked: investigationsThreatIntelligenceSigninLinked = "investigationsThreatIntelligenceSigninLinked".asInstanceOf[investigationsThreatIntelligenceSigninLinked]
   
   @js.native
   sealed trait ip
     extends StObject
        with SecurityNetworkProtocol
-  @scala.inline
-  def ip: ip = "ip".asInstanceOf[ip]
+  inline def ip: ip = "ip".asInstanceOf[ip]
   
   @js.native
   sealed trait ipPhone
     extends StObject
        with ClientPlatform
-  @scala.inline
-  def ipPhone: ipPhone = "ipPhone".asInstanceOf[ipPhone]
+  inline def ipPhone: ipPhone = "ipPhone".asInstanceOf[ipPhone]
   
   @js.native
   sealed trait ipSecAuthenticationHeader
     extends StObject
        with SecurityNetworkProtocol
-  @scala.inline
-  def ipSecAuthenticationHeader: ipSecAuthenticationHeader = "ipSecAuthenticationHeader".asInstanceOf[ipSecAuthenticationHeader]
+  inline def ipSecAuthenticationHeader: ipSecAuthenticationHeader = "ipSecAuthenticationHeader".asInstanceOf[ipSecAuthenticationHeader]
   
   @js.native
   sealed trait ipSecEncapsulatingSecurityPayload
     extends StObject
        with SecurityNetworkProtocol
-  @scala.inline
-  def ipSecEncapsulatingSecurityPayload: ipSecEncapsulatingSecurityPayload = "ipSecEncapsulatingSecurityPayload".asInstanceOf[ipSecEncapsulatingSecurityPayload]
+  inline def ipSecEncapsulatingSecurityPayload: ipSecEncapsulatingSecurityPayload = "ipSecEncapsulatingSecurityPayload".asInstanceOf[ipSecEncapsulatingSecurityPayload]
   
   @js.native
   sealed trait ipv4
     extends StObject
        with SecurityNetworkProtocol
-  @scala.inline
-  def ipv4: ipv4 = "ipv4".asInstanceOf[ipv4]
+  inline def ipv4: ipv4 = "ipv4".asInstanceOf[ipv4]
   
   @js.native
   sealed trait ipv6
     extends StObject
        with SecurityNetworkProtocol
-  @scala.inline
-  def ipv6: ipv6 = "ipv6".asInstanceOf[ipv6]
+  inline def ipv6: ipv6 = "ipv6".asInstanceOf[ipv6]
   
   @js.native
   sealed trait ipv6DestinationOptions
     extends StObject
        with SecurityNetworkProtocol
-  @scala.inline
-  def ipv6DestinationOptions: ipv6DestinationOptions = "ipv6DestinationOptions".asInstanceOf[ipv6DestinationOptions]
+  inline def ipv6DestinationOptions: ipv6DestinationOptions = "ipv6DestinationOptions".asInstanceOf[ipv6DestinationOptions]
   
   @js.native
   sealed trait ipv6FragmentHeader
     extends StObject
        with SecurityNetworkProtocol
-  @scala.inline
-  def ipv6FragmentHeader: ipv6FragmentHeader = "ipv6FragmentHeader".asInstanceOf[ipv6FragmentHeader]
+  inline def ipv6FragmentHeader: ipv6FragmentHeader = "ipv6FragmentHeader".asInstanceOf[ipv6FragmentHeader]
   
   @js.native
   sealed trait ipv6NoNextHeader
     extends StObject
        with SecurityNetworkProtocol
-  @scala.inline
-  def ipv6NoNextHeader: ipv6NoNextHeader = "ipv6NoNextHeader".asInstanceOf[ipv6NoNextHeader]
+  inline def ipv6NoNextHeader: ipv6NoNextHeader = "ipv6NoNextHeader".asInstanceOf[ipv6NoNextHeader]
   
   @js.native
   sealed trait ipv6RoutingHeader
     extends StObject
        with SecurityNetworkProtocol
-  @scala.inline
-  def ipv6RoutingHeader: ipv6RoutingHeader = "ipv6RoutingHeader".asInstanceOf[ipv6RoutingHeader]
+  inline def ipv6RoutingHeader: ipv6RoutingHeader = "ipv6RoutingHeader".asInstanceOf[ipv6RoutingHeader]
   
   @js.native
   sealed trait ipx
     extends StObject
        with SecurityNetworkProtocol
-  @scala.inline
-  def ipx: ipx = "ipx".asInstanceOf[ipx]
+  inline def ipx: ipx = "ipx".asInstanceOf[ipx]
   
   @js.native
   sealed trait item
     extends StObject
        with AttachmentType
-  @scala.inline
-  def item: item = "item".asInstanceOf[item]
+  inline def item: item = "item".asInstanceOf[item]
   
   @js.native
   sealed trait jamf
     extends StObject
        with ManagementAgentType
-  @scala.inline
-  def jamf: jamf = "jamf".asInstanceOf[jamf]
+  inline def jamf: jamf = "jamf".asInstanceOf[jamf]
   
   @js.native
   sealed trait junk
     extends StObject
        with MailDestinationRoutingReason
-  @scala.inline
-  def junk: junk = "junk".asInstanceOf[junk]
+  inline def junk: junk = "junk".asInstanceOf[junk]
   
   @js.native
   sealed trait juryDuty
     extends StObject
        with TimeOffReasonIconType
-  @scala.inline
-  def juryDuty: juryDuty = "juryDuty".asInstanceOf[juryDuty]
+  inline def juryDuty: juryDuty = "juryDuty".asInstanceOf[juryDuty]
   
   @js.native
   sealed trait keyConflict
     extends StObject
        with DeviceRegistrationState
-  @scala.inline
-  def keyConflict: keyConflict = "keyConflict".asInstanceOf[keyConflict]
+  inline def keyConflict: keyConflict = "keyConflict".asInstanceOf[keyConflict]
   
   @js.native
   sealed trait last
     extends StObject
        with WeekIndex
-  @scala.inline
-  def last: last = "last".asInstanceOf[last]
+  inline def last: last = "last".asInstanceOf[last]
   
   @js.native
   sealed trait leakedCredentials
     extends StObject
        with RiskEventType
-  @scala.inline
-  def leakedCredentials: leakedCredentials = "leakedCredentials".asInstanceOf[leakedCredentials]
+  inline def leakedCredentials: leakedCredentials = "leakedCredentials".asInstanceOf[leakedCredentials]
   
   @js.native
   sealed trait lessThan
     extends StObject
        with Win32LobAppRuleOperator
-  @scala.inline
-  def lessThan: lessThan = "lessThan".asInstanceOf[lessThan]
+  inline def lessThan: lessThan = "lessThan".asInstanceOf[lessThan]
   
   @js.native
   sealed trait lessThanOrEqual
     extends StObject
        with Win32LobAppRuleOperator
-  @scala.inline
-  def lessThanOrEqual: lessThanOrEqual = "lessThanOrEqual".asInstanceOf[lessThanOrEqual]
+  inline def lessThanOrEqual: lessThanOrEqual = "lessThanOrEqual".asInstanceOf[lessThanOrEqual]
   
   @js.native
   sealed trait licenseFile
     extends StObject
        with EditionUpgradeLicenseType
-  @scala.inline
-  def licenseFile: licenseFile = "licenseFile".asInstanceOf[licenseFile]
+  inline def licenseFile: licenseFile = "licenseFile".asInstanceOf[licenseFile]
   
   @js.native
   sealed trait lightBlue
     extends StObject
        with CalendarColor
-  @scala.inline
-  def lightBlue: lightBlue = "lightBlue".asInstanceOf[lightBlue]
+  inline def lightBlue: lightBlue = "lightBlue".asInstanceOf[lightBlue]
   
   @js.native
   sealed trait lightBrown
     extends StObject
        with CalendarColor
-  @scala.inline
-  def lightBrown: lightBrown = "lightBrown".asInstanceOf[lightBrown]
+  inline def lightBrown: lightBrown = "lightBrown".asInstanceOf[lightBrown]
   
   @js.native
   sealed trait lightGray
     extends StObject
        with CalendarColor
-  @scala.inline
-  def lightGray: lightGray = "lightGray".asInstanceOf[lightGray]
+  inline def lightGray: lightGray = "lightGray".asInstanceOf[lightGray]
   
   @js.native
   sealed trait lightGreen
     extends StObject
        with CalendarColor
-  @scala.inline
-  def lightGreen: lightGreen = "lightGreen".asInstanceOf[lightGreen]
+  inline def lightGreen: lightGreen = "lightGreen".asInstanceOf[lightGreen]
   
   @js.native
   sealed trait lightOrange
     extends StObject
        with CalendarColor
-  @scala.inline
-  def lightOrange: lightOrange = "lightOrange".asInstanceOf[lightOrange]
+  inline def lightOrange: lightOrange = "lightOrange".asInstanceOf[lightOrange]
   
   @js.native
   sealed trait lightPink
     extends StObject
        with CalendarColor
-  @scala.inline
-  def lightPink: lightPink = "lightPink".asInstanceOf[lightPink]
+  inline def lightPink: lightPink = "lightPink".asInstanceOf[lightPink]
   
   @js.native
   sealed trait lightRed
     extends StObject
        with CalendarColor
-  @scala.inline
-  def lightRed: lightRed = "lightRed".asInstanceOf[lightRed]
+  inline def lightRed: lightRed = "lightRed".asInstanceOf[lightRed]
   
   @js.native
   sealed trait lightTeal
     extends StObject
        with CalendarColor
-  @scala.inline
-  def lightTeal: lightTeal = "lightTeal".asInstanceOf[lightTeal]
+  inline def lightTeal: lightTeal = "lightTeal".asInstanceOf[lightTeal]
   
   @js.native
   sealed trait lightYellow
     extends StObject
        with CalendarColor
-  @scala.inline
-  def lightYellow: lightYellow = "lightYellow".asInstanceOf[lightYellow]
+  inline def lightYellow: lightYellow = "lightYellow".asInstanceOf[lightYellow]
   
   @js.native
   sealed trait limitedRead
     extends StObject
        with CalendarRoleType
-  @scala.inline
-  def limitedRead: limitedRead = "limitedRead".asInstanceOf[limitedRead]
+  inline def limitedRead: limitedRead = "limitedRead".asInstanceOf[limitedRead]
   
   @js.native
   sealed trait lineOfBusiness
     extends StObject
        with ManagedAppAvailability
-  @scala.inline
-  def lineOfBusiness: lineOfBusiness = "lineOfBusiness".asInstanceOf[lineOfBusiness]
+  inline def lineOfBusiness: lineOfBusiness = "lineOfBusiness".asInstanceOf[lineOfBusiness]
   
   @js.native
   sealed trait link
     extends StObject
        with RegistryValueType
-  @scala.inline
-  def link: link = "link".asInstanceOf[link]
+  inline def link: link = "link".asInstanceOf[link]
   
   @js.native
   sealed trait list
     extends StObject
        with EntityType
-  @scala.inline
-  def list: list = "list".asInstanceOf[list]
+  inline def list: list = "list".asInstanceOf[list]
   
   @js.native
   sealed trait listItem
     extends StObject
        with EntityType
-  @scala.inline
-  def listItem: listItem = "listItem".asInstanceOf[listItem]
+  inline def listItem: listItem = "listItem".asInstanceOf[listItem]
   
   @js.native
   sealed trait localBusiness
     extends StObject
        with LocationType
-  @scala.inline
-  def localBusiness: localBusiness = "localBusiness".asInstanceOf[localBusiness]
+  inline def localBusiness: localBusiness = "localBusiness".asInstanceOf[localBusiness]
   
   @js.native
   sealed trait localMachineSam
     extends StObject
        with RegistryHive
-  @scala.inline
-  def localMachineSam: localMachineSam = "localMachineSam".asInstanceOf[localMachineSam]
+  inline def localMachineSam: localMachineSam = "localMachineSam".asInstanceOf[localMachineSam]
   
   @js.native
   sealed trait localMachineSecurity
     extends StObject
        with RegistryHive
-  @scala.inline
-  def localMachineSecurity: localMachineSecurity = "localMachineSecurity".asInstanceOf[localMachineSecurity]
+  inline def localMachineSecurity: localMachineSecurity = "localMachineSecurity".asInstanceOf[localMachineSecurity]
   
   @js.native
   sealed trait localMachineSoftware
     extends StObject
        with RegistryHive
-  @scala.inline
-  def localMachineSoftware: localMachineSoftware = "localMachineSoftware".asInstanceOf[localMachineSoftware]
+  inline def localMachineSoftware: localMachineSoftware = "localMachineSoftware".asInstanceOf[localMachineSoftware]
   
   @js.native
   sealed trait localMachineSystem
     extends StObject
        with RegistryHive
-  @scala.inline
-  def localMachineSystem: localMachineSystem = "localMachineSystem".asInstanceOf[localMachineSystem]
+  inline def localMachineSystem: localMachineSystem = "localMachineSystem".asInstanceOf[localMachineSystem]
   
   @js.native
   sealed trait localStorage
     extends StObject
        with ManagedAppDataStorageLocation
-  @scala.inline
-  def localStorage: localStorage = "localStorage".asInstanceOf[localStorage]
+  inline def localStorage: localStorage = "localStorage".asInstanceOf[localStorage]
   
   @js.native
   sealed trait locationStore
     extends StObject
        with LocationUniqueIdType
-  @scala.inline
-  def locationStore: locationStore = "locationStore".asInstanceOf[locationStore]
+  inline def locationStore: locationStore = "locationStore".asInstanceOf[locationStore]
   
   @js.native
   sealed trait lockedOut
     extends StObject
        with DeviceManagementSubscriptionState
-  @scala.inline
-  def lockedOut: lockedOut = "lockedOut".asInstanceOf[lockedOut]
+  inline def lockedOut: lockedOut = "lockedOut".asInstanceOf[lockedOut]
   
   @js.native
   sealed trait lookup
     extends StObject
        with RoutingType
-  @scala.inline
-  def lookup: lookup = "lookup".asInstanceOf[lookup]
+  inline def lookup: lookup = "lookup".asInstanceOf[lookup]
   
   @js.native
   sealed trait low
@@ -3959,37 +3460,32 @@ object microsoftGraphStrings {
        with ProcessIntegrityLevel
        with RiskLevel
        with SiteSecurityLevel
-  @scala.inline
-  def low: low = "low".asInstanceOf[low]
+  inline def low: low = "low".asInstanceOf[low]
   
   @js.native
   sealed trait lowSecurityBiometric
     extends StObject
        with AndroidRequiredPasswordType
        with AndroidWorkProfileRequiredPasswordType
-  @scala.inline
-  def lowSecurityBiometric: lowSecurityBiometric = "lowSecurityBiometric".asInstanceOf[lowSecurityBiometric]
+  inline def lowSecurityBiometric: lowSecurityBiometric = "lowSecurityBiometric".asInstanceOf[lowSecurityBiometric]
   
   @js.native
   sealed trait lowSeverity
     extends StObject
        with ManagedDevicePartnerReportedHealthState
-  @scala.inline
-  def lowSeverity: lowSeverity = "lowSeverity".asInstanceOf[lowSeverity]
+  inline def lowSeverity: lowSeverity = "lowSeverity".asInstanceOf[lowSeverity]
   
   @js.native
   sealed trait lsHash
     extends StObject
        with FileHashType
-  @scala.inline
-  def lsHash: lsHash = "lsHash".asInstanceOf[lsHash]
+  inline def lsHash: lsHash = "lsHash".asInstanceOf[lsHash]
   
   @js.native
   sealed trait lync
     extends StObject
        with ProductFamily
-  @scala.inline
-  def lync: lync = "lync".asInstanceOf[lync]
+  inline def lync: lync = "lync".asInstanceOf[lync]
   
   @js.native
   sealed trait macOS
@@ -3997,93 +3493,80 @@ object microsoftGraphStrings {
        with ClientPlatform
        with ConditionalAccessDevicePlatform
        with PolicyPlatformType
-  @scala.inline
-  def macOS: macOS = "macOS".asInstanceOf[macOS]
+  inline def macOS: macOS = "macOS".asInstanceOf[macOS]
   
   @js.native
   sealed trait mail
     extends StObject
        with ThreatAssessmentContentType
-  @scala.inline
-  def mail: mail = "mail".asInstanceOf[mail]
+  inline def mail: mail = "mail".asInstanceOf[mail]
   
   @js.native
   sealed trait mailFlowRule
     extends StObject
        with MailDestinationRoutingReason
-  @scala.inline
-  def mailFlowRule: mailFlowRule = "mailFlowRule".asInstanceOf[mailFlowRule]
+  inline def mailFlowRule: mailFlowRule = "mailFlowRule".asInstanceOf[mailFlowRule]
   
   @js.native
   sealed trait mailboxFullStatus
     extends StObject
        with MailTipsType
-  @scala.inline
-  def mailboxFullStatus: mailboxFullStatus = "mailboxFullStatus".asInstanceOf[mailboxFullStatus]
+  inline def mailboxFullStatus: mailboxFullStatus = "mailboxFullStatus".asInstanceOf[mailboxFullStatus]
   
   @js.native
   sealed trait male
     extends StObject
        with EducationGender
-  @scala.inline
-  def male: male = "male".asInstanceOf[male]
+  inline def male: male = "male".asInstanceOf[male]
   
   @js.native
   sealed trait maliciousIPAddress
     extends StObject
        with RiskEventType
-  @scala.inline
-  def maliciousIPAddress: maliciousIPAddress = "maliciousIPAddress".asInstanceOf[maliciousIPAddress]
+  inline def maliciousIPAddress: maliciousIPAddress = "maliciousIPAddress".asInstanceOf[maliciousIPAddress]
   
   @js.native
   sealed trait maliciousIPAddressValidCredentialsBlockedIP
     extends StObject
        with RiskEventType
-  @scala.inline
-  def maliciousIPAddressValidCredentialsBlockedIP: maliciousIPAddressValidCredentialsBlockedIP = "maliciousIPAddressValidCredentialsBlockedIP".asInstanceOf[maliciousIPAddressValidCredentialsBlockedIP]
+  inline def maliciousIPAddressValidCredentialsBlockedIP: maliciousIPAddressValidCredentialsBlockedIP = "maliciousIPAddressValidCredentialsBlockedIP".asInstanceOf[maliciousIPAddressValidCredentialsBlockedIP]
   
   @js.native
   sealed trait malware
     extends StObject
        with ThreatCategory
-  @scala.inline
-  def malware: malware = "malware".asInstanceOf[malware]
+  inline def malware: malware = "malware".asInstanceOf[malware]
   
   @js.native
   sealed trait malwareInfectedIPAddress
     extends StObject
        with RiskEventType
-  @scala.inline
-  def malwareInfectedIPAddress: malwareInfectedIPAddress = "malwareInfectedIPAddress".asInstanceOf[malwareInfectedIPAddress]
+  inline def malwareInfectedIPAddress: malwareInfectedIPAddress = "malwareInfectedIPAddress".asInstanceOf[malwareInfectedIPAddress]
   
   @js.native
   sealed trait managedApps
     extends StObject
        with ManagedAppClipboardSharingLevel
        with ManagedAppDataTransferLevel
-  @scala.inline
-  def managedApps: managedApps = "managedApps".asInstanceOf[managedApps]
+  inline def managedApps: managedApps = "managedApps".asInstanceOf[managedApps]
   
   @js.native
   sealed trait managedAppsWithPasteIn
     extends StObject
        with ManagedAppClipboardSharingLevel
-  @scala.inline
-  def managedAppsWithPasteIn: managedAppsWithPasteIn = "managedAppsWithPasteIn".asInstanceOf[managedAppsWithPasteIn]
+  inline def managedAppsWithPasteIn: managedAppsWithPasteIn = "managedAppsWithPasteIn".asInstanceOf[managedAppsWithPasteIn]
   
   @js.native
   sealed trait manager
     extends StObject
        with ScheduleChangeRequestActor
-  @scala.inline
-  def manager: manager = "manager".asInstanceOf[manager]
+  inline def manager: manager = "manager".asInstanceOf[manager]
   
   @js.native
   sealed trait manual
     extends StObject
        with EducationExternalSource
-  @scala.inline
-  def manual: manual = "manual".asInstanceOf[manual]
+  inline def manual: manual = "manual".asInstanceOf[manual]
   
   @js.native
   sealed trait mature
@@ -4092,78 +3575,67 @@ object microsoftGraphStrings {
        with RatingAustraliaTelevisionType
        with RatingIrelandTelevisionType
        with RatingNewZealandMoviesType
-  @scala.inline
-  def mature: mature = "mature".asInstanceOf[mature]
+  inline def mature: mature = "mature".asInstanceOf[mature]
   
   @js.native
   sealed trait maxColor
     extends StObject
        with CalendarColor
-  @scala.inline
-  def maxColor: maxColor = "maxColor".asInstanceOf[maxColor]
+  inline def maxColor: maxColor = "maxColor".asInstanceOf[maxColor]
   
   @js.native
   sealed trait maxMessageSize
     extends StObject
        with MailTipsType
-  @scala.inline
-  def maxMessageSize: maxMessageSize = "maxMessageSize".asInstanceOf[maxMessageSize]
+  inline def maxMessageSize: maxMessageSize = "maxMessageSize".asInstanceOf[maxMessageSize]
   
   @js.native
   sealed trait mcasConfigured
     extends StObject
        with CloudAppSecuritySessionControlType
-  @scala.inline
-  def mcasConfigured: mcasConfigured = "mcasConfigured".asInstanceOf[mcasConfigured]
+  inline def mcasConfigured: mcasConfigured = "mcasConfigured".asInstanceOf[mcasConfigured]
   
   @js.native
   sealed trait mcasImpossibleTravel
     extends StObject
        with RiskEventType
-  @scala.inline
-  def mcasImpossibleTravel: mcasImpossibleTravel = "mcasImpossibleTravel".asInstanceOf[mcasImpossibleTravel]
+  inline def mcasImpossibleTravel: mcasImpossibleTravel = "mcasImpossibleTravel".asInstanceOf[mcasImpossibleTravel]
   
   @js.native
   sealed trait mcasSuspiciousInboxManipulationRules
     extends StObject
        with RiskEventType
-  @scala.inline
-  def mcasSuspiciousInboxManipulationRules: mcasSuspiciousInboxManipulationRules = "mcasSuspiciousInboxManipulationRules".asInstanceOf[mcasSuspiciousInboxManipulationRules]
+  inline def mcasSuspiciousInboxManipulationRules: mcasSuspiciousInboxManipulationRules = "mcasSuspiciousInboxManipulationRules".asInstanceOf[mcasSuspiciousInboxManipulationRules]
   
   @js.native
   sealed trait md5
     extends StObject
        with FileHashType
-  @scala.inline
-  def md5: md5 = "md5".asInstanceOf[md5]
+  inline def md5: md5 = "md5".asInstanceOf[md5]
   
   @js.native
   sealed trait mdm
     extends StObject
        with ManagementAgentType
-  @scala.inline
-  def mdm: mdm = "mdm".asInstanceOf[mdm]
+  inline def mdm: mdm = "mdm".asInstanceOf[mdm]
   
   @js.native
   sealed trait mediaController
     extends StObject
        with ServiceRole
-  @scala.inline
-  def mediaController: mediaController = "mediaController".asInstanceOf[mediaController]
+  inline def mediaController: mediaController = "mediaController".asInstanceOf[mediaController]
   
   @js.native
   sealed trait mediationServer
     extends StObject
        with ServiceRole
-  @scala.inline
-  def mediationServer: mediationServer = "mediationServer".asInstanceOf[mediationServer]
+  inline def mediationServer: mediationServer = "mediationServer".asInstanceOf[mediationServer]
   
   @js.native
   sealed trait mediationServerCloudConnectorEdition
     extends StObject
        with ServiceRole
-  @scala.inline
-  def mediationServerCloudConnectorEdition: mediationServerCloudConnectorEdition = "mediationServerCloudConnectorEdition".asInstanceOf[mediationServerCloudConnectorEdition]
+  inline def mediationServerCloudConnectorEdition: mediationServerCloudConnectorEdition = "mediationServerCloudConnectorEdition".asInstanceOf[mediationServerCloudConnectorEdition]
   
   @js.native
   sealed trait medium
@@ -4175,122 +3647,105 @@ object microsoftGraphStrings {
        with ProcessIntegrityLevel
        with RiskLevel
        with SiteSecurityLevel
-  @scala.inline
-  def medium: medium = "medium".asInstanceOf[medium]
+  inline def medium: medium = "medium".asInstanceOf[medium]
   
   @js.native
   sealed trait mediumHigh
     extends StObject
        with InternetSiteSecurityLevel
        with SiteSecurityLevel
-  @scala.inline
-  def mediumHigh: mediumHigh = "mediumHigh".asInstanceOf[mediumHigh]
+  inline def mediumHigh: mediumHigh = "mediumHigh".asInstanceOf[mediumHigh]
   
   @js.native
   sealed trait mediumLow
     extends StObject
        with SiteSecurityLevel
-  @scala.inline
-  def mediumLow: mediumLow = "mediumLow".asInstanceOf[mediumLow]
+  inline def mediumLow: mediumLow = "mediumLow".asInstanceOf[mediumLow]
   
   @js.native
   sealed trait mediumSeverity
     extends StObject
        with ManagedDevicePartnerReportedHealthState
-  @scala.inline
-  def mediumSeverity: mediumSeverity = "mediumSeverity".asInstanceOf[mediumSeverity]
+  inline def mediumSeverity: mediumSeverity = "mediumSeverity".asInstanceOf[mediumSeverity]
   
   @js.native
   sealed trait meetingAccepted
     extends StObject
        with MeetingMessageType
-  @scala.inline
-  def meetingAccepted: meetingAccepted = "meetingAccepted".asInstanceOf[meetingAccepted]
+  inline def meetingAccepted: meetingAccepted = "meetingAccepted".asInstanceOf[meetingAccepted]
   
   @js.native
   sealed trait meetingCancelled
     extends StObject
        with MeetingMessageType
-  @scala.inline
-  def meetingCancelled: meetingCancelled = "meetingCancelled".asInstanceOf[meetingCancelled]
+  inline def meetingCancelled: meetingCancelled = "meetingCancelled".asInstanceOf[meetingCancelled]
   
   @js.native
   sealed trait meetingDeclined
     extends StObject
        with MeetingMessageType
-  @scala.inline
-  def meetingDeclined: meetingDeclined = "meetingDeclined".asInstanceOf[meetingDeclined]
+  inline def meetingDeclined: meetingDeclined = "meetingDeclined".asInstanceOf[meetingDeclined]
   
   @js.native
   sealed trait meetingRequest
     extends StObject
        with MeetingMessageType
-  @scala.inline
-  def meetingRequest: meetingRequest = "meetingRequest".asInstanceOf[meetingRequest]
+  inline def meetingRequest: meetingRequest = "meetingRequest".asInstanceOf[meetingRequest]
   
   @js.native
   sealed trait meetingTenativelyAccepted
     extends StObject
        with MeetingMessageType
-  @scala.inline
-  def meetingTenativelyAccepted: meetingTenativelyAccepted = "meetingTenativelyAccepted".asInstanceOf[meetingTenativelyAccepted]
+  inline def meetingTenativelyAccepted: meetingTenativelyAccepted = "meetingTenativelyAccepted".asInstanceOf[meetingTenativelyAccepted]
   
   @js.native
   sealed trait members
     extends StObject
        with ClonableTeamParts
-  @scala.inline
-  def members: members = "members".asInstanceOf[members]
+  inline def members: members = "members".asInstanceOf[members]
   
   @js.native
   sealed trait message
     extends StObject
        with ChatMessageType
        with EntityType
-  @scala.inline
-  def message: message = "message".asInstanceOf[message]
+  inline def message: message = "message".asInstanceOf[message]
   
   @js.native
   sealed trait mfa
     extends StObject
        with ConditionalAccessGrantControl
-  @scala.inline
-  def mfa: mfa = "mfa".asInstanceOf[mfa]
+  inline def mfa: mfa = "mfa".asInstanceOf[mfa]
   
   @js.native
   sealed trait mfaRequired
     extends StObject
        with DeviceManagementExchangeAccessStateReason
-  @scala.inline
-  def mfaRequired: mfaRequired = "mfaRequired".asInstanceOf[mfaRequired]
+  inline def mfaRequired: mfaRequired = "mfaRequired".asInstanceOf[mfaRequired]
   
   @js.native
   sealed trait microsoftEdge
     extends StObject
        with ManagedBrowserType
-  @scala.inline
-  def microsoftEdge: microsoftEdge = "microsoftEdge".asInstanceOf[microsoftEdge]
+  inline def microsoftEdge: microsoftEdge = "microsoftEdge".asInstanceOf[microsoftEdge]
   
   @js.native
   sealed trait midcall
     extends StObject
        with FailureStage
-  @scala.inline
-  def midcall: midcall = "midcall".asInstanceOf[midcall]
+  inline def midcall: midcall = "midcall".asInstanceOf[midcall]
   
   @js.native
   sealed trait misconfigured
     extends StObject
        with ManagedDevicePartnerReportedHealthState
-  @scala.inline
-  def misconfigured: misconfigured = "misconfigured".asInstanceOf[misconfigured]
+  inline def misconfigured: misconfigured = "misconfigured".asInstanceOf[misconfigured]
   
   @js.native
   sealed trait missed
     extends StObject
        with LifecycleEventType
-  @scala.inline
-  def missed: missed = "missed".asInstanceOf[missed]
+  inline def missed: missed = "missed".asInstanceOf[missed]
   
   @js.native
   sealed trait mobile
@@ -4298,227 +3753,195 @@ object microsoftGraphStrings {
        with NetworkConnectionType
        with PhoneType
        with WindowsDeviceType
-  @scala.inline
-  def mobile: mobile = "mobile".asInstanceOf[mobile]
+  inline def mobile: mobile = "mobile".asInstanceOf[mobile]
   
   @js.native
   sealed trait mobileAppsAndDesktopClients
     extends StObject
        with ConditionalAccessClientApp
-  @scala.inline
-  def mobileAppsAndDesktopClients: mobileAppsAndDesktopClients = "mobileAppsAndDesktopClients".asInstanceOf[mobileAppsAndDesktopClients]
+  inline def mobileAppsAndDesktopClients: mobileAppsAndDesktopClients = "mobileAppsAndDesktopClients".asInstanceOf[mobileAppsAndDesktopClients]
   
   @js.native
   sealed trait modal
     extends StObject
        with IosNotificationAlertType
-  @scala.inline
-  def modal: modal = "modal".asInstanceOf[modal]
+  inline def modal: modal = "modal".asInstanceOf[modal]
   
   @js.native
   sealed trait moderate
     extends StObject
        with GiphyRatingType
        with SafeSearchFilterType
-  @scala.inline
-  def moderate: moderate = "moderate".asInstanceOf[moderate]
+  inline def moderate: moderate = "moderate".asInstanceOf[moderate]
   
   @js.native
   sealed trait moderationStatus
     extends StObject
        with MailTipsType
-  @scala.inline
-  def moderationStatus: moderationStatus = "moderationStatus".asInstanceOf[moderationStatus]
+  inline def moderationStatus: moderationStatus = "moderationStatus".asInstanceOf[moderationStatus]
   
   @js.native
   sealed trait modifiedDate
     extends StObject
        with Win32LobAppFileSystemOperationType
-  @scala.inline
-  def modifiedDate: modifiedDate = "modifiedDate".asInstanceOf[modifiedDate]
+  inline def modifiedDate: modifiedDate = "modifiedDate".asInstanceOf[modifiedDate]
   
   @js.native
   sealed trait modify
     extends StObject
        with RegistryOperation
-  @scala.inline
-  def modify: modify = "modify".asInstanceOf[modify]
+  inline def modify: modify = "modify".asInstanceOf[modify]
   
   @js.native
   sealed trait monday
     extends StObject
        with DayOfWeek
        with WeeklySchedule
-  @scala.inline
-  def monday: monday = "monday".asInstanceOf[monday]
+  inline def monday: monday = "monday".asInstanceOf[monday]
   
   @js.native
   sealed trait monitorAllFiles
     extends StObject
        with DefenderMonitorFileActivity
-  @scala.inline
-  def monitorAllFiles: monitorAllFiles = "monitorAllFiles".asInstanceOf[monitorAllFiles]
+  inline def monitorAllFiles: monitorAllFiles = "monitorAllFiles".asInstanceOf[monitorAllFiles]
   
   @js.native
   sealed trait monitorIncomingFilesOnly
     extends StObject
        with DefenderMonitorFileActivity
-  @scala.inline
-  def monitorIncomingFilesOnly: monitorIncomingFilesOnly = "monitorIncomingFilesOnly".asInstanceOf[monitorIncomingFilesOnly]
+  inline def monitorIncomingFilesOnly: monitorIncomingFilesOnly = "monitorIncomingFilesOnly".asInstanceOf[monitorIncomingFilesOnly]
   
   @js.native
   sealed trait monitorOnly
     extends StObject
        with CloudAppSecuritySessionControlType
-  @scala.inline
-  def monitorOnly: monitorOnly = "monitorOnly".asInstanceOf[monitorOnly]
+  inline def monitorOnly: monitorOnly = "monitorOnly".asInstanceOf[monitorOnly]
   
   @js.native
   sealed trait monitorOutgoingFilesOnly
     extends StObject
        with DefenderMonitorFileActivity
-  @scala.inline
-  def monitorOutgoingFilesOnly: monitorOutgoingFilesOnly = "monitorOutgoingFilesOnly".asInstanceOf[monitorOutgoingFilesOnly]
+  inline def monitorOutgoingFilesOnly: monitorOutgoingFilesOnly = "monitorOutgoingFilesOnly".asInstanceOf[monitorOutgoingFilesOnly]
   
   @js.native
   sealed trait multiSz
     extends StObject
        with RegistryValueType
-  @scala.inline
-  def multiSz: multiSz = "multiSz".asInstanceOf[multiSz]
+  inline def multiSz: multiSz = "multiSz".asInstanceOf[multiSz]
   
   @js.native
   sealed trait multiTenantApp
     extends StObject
        with DeviceManagementPartnerAppType
-  @scala.inline
-  def multiTenantApp: multiTenantApp = "multiTenantApp".asInstanceOf[multiTenantApp]
+  inline def multiTenantApp: multiTenantApp = "multiTenantApp".asInstanceOf[multiTenantApp]
   
   @js.native
   sealed trait nd
     extends StObject
        with SecurityNetworkProtocol
-  @scala.inline
-  def nd: nd = "nd".asInstanceOf[nd]
+  inline def nd: nd = "nd".asInstanceOf[nd]
   
   @js.native
   sealed trait network
     extends StObject
        with LogonType
-  @scala.inline
-  def network: network = "network".asInstanceOf[network]
+  inline def network: network = "network".asInstanceOf[network]
   
   @js.native
   sealed trait neutral
     extends StObject
        with WindowsArchitecture
-  @scala.inline
-  def neutral: neutral = "neutral".asInstanceOf[neutral]
+  inline def neutral: neutral = "neutral".asInstanceOf[neutral]
   
   @js.native
   sealed trait never
     extends StObject
        with PersistentBrowserSessionMode
-  @scala.inline
-  def never: never = "never".asInstanceOf[never]
+  inline def never: never = "never".asInstanceOf[never]
   
   @js.native
   sealed trait neverNotify
     extends StObject
        with WindowsUserAccountControlSettings
-  @scala.inline
-  def neverNotify: neverNotify = "neverNotify".asInstanceOf[neverNotify]
+  inline def neverNotify: neverNotify = "neverNotify".asInstanceOf[neverNotify]
   
   @js.native
   sealed trait neverSendData
     extends StObject
        with DefenderPromptForSampleSubmission
-  @scala.inline
-  def neverSendData: neverSendData = "neverSendData".asInstanceOf[neverSendData]
+  inline def neverSendData: neverSendData = "neverSendData".asInstanceOf[neverSendData]
   
   @js.native
   sealed trait newAlert
     extends StObject
        with AlertStatus
-  @scala.inline
-  def newAlert: newAlert = "newAlert".asInstanceOf[newAlert]
+  inline def newAlert: newAlert = "newAlert".asInstanceOf[newAlert]
   
   @js.native
   sealed trait newMeetingRequest
     extends StObject
        with MeetingRequestType
-  @scala.inline
-  def newMeetingRequest: newMeetingRequest = "newMeetingRequest".asInstanceOf[newMeetingRequest]
+  inline def newMeetingRequest: newMeetingRequest = "newMeetingRequest".asInstanceOf[newMeetingRequest]
   
   @js.native
   sealed trait nine
     extends StObject
        with MiracastChannel
-  @scala.inline
-  def nine: nine = "nine".asInstanceOf[nine]
+  inline def nine: nine = "nine".asInstanceOf[nine]
   
   @js.native
   sealed trait noAction
     extends StObject
        with DeviceComplianceActionType
-  @scala.inline
-  def noAction: noAction = "noAction".asInstanceOf[noAction]
+  inline def noAction: noAction = "noAction".asInstanceOf[noAction]
   
   @js.native
   sealed trait noEnd
     extends StObject
        with RecurrenceRangeType
-  @scala.inline
-  def noEnd: noEnd = "noEnd".asInstanceOf[noEnd]
+  inline def noEnd: noEnd = "noEnd".asInstanceOf[noEnd]
   
   @js.native
   sealed trait noPreview
     extends StObject
        with PlannerPreviewType
-  @scala.inline
-  def noPreview: noPreview = "noPreview".asInstanceOf[noPreview]
+  inline def noPreview: noPreview = "noPreview".asInstanceOf[noPreview]
   
   @js.native
   sealed trait noProtection
     extends StObject
        with WindowsInformationProtectionEnforcementLevel
-  @scala.inline
-  def noProtection: noProtection = "noProtection".asInstanceOf[noProtection]
+  inline def noProtection: noProtection = "noProtection".asInstanceOf[noProtection]
   
   @js.native
   sealed trait noResponseNecessary
     extends StObject
        with MessageActionFlag
-  @scala.inline
-  def noResponseNecessary: noResponseNecessary = "noResponseNecessary".asInstanceOf[noResponseNecessary]
+  inline def noResponseNecessary: noResponseNecessary = "noResponseNecessary".asInstanceOf[noResponseNecessary]
   
   @js.native
   sealed trait noRestrictions
     extends StObject
        with AndroidWorkProfileCrossProfileDataSharingType
-  @scala.inline
-  def noRestrictions: noRestrictions = "noRestrictions".asInstanceOf[noRestrictions]
+  inline def noRestrictions: noRestrictions = "noRestrictions".asInstanceOf[noRestrictions]
   
   @js.native
   sealed trait nonCompliant
     extends StObject
        with ComplianceStatus
-  @scala.inline
-  def nonCompliant: nonCompliant = "nonCompliant".asInstanceOf[nonCompliant]
+  inline def nonCompliant: nonCompliant = "nonCompliant".asInstanceOf[nonCompliant]
   
   @js.native
   sealed trait nonFullScreen
     extends StObject
        with WindowsStartMenuModeType
-  @scala.inline
-  def nonFullScreen: nonFullScreen = "nonFullScreen".asInstanceOf[nonFullScreen]
+  inline def nonFullScreen: nonFullScreen = "nonFullScreen".asInstanceOf[nonFullScreen]
   
   @js.native
   sealed trait noncompliant_
     extends StObject
        with ComplianceState
-  @scala.inline
-  def noncompliant_ : noncompliant_ = "noncompliant".asInstanceOf[noncompliant_]
+  inline def noncompliant_ : noncompliant_ = "noncompliant".asInstanceOf[noncompliant_]
   
   @js.native
   sealed trait none_
@@ -4559,8 +3982,7 @@ object microsoftGraphStrings {
        with WindowsArchitecture
        with WindowsDeviceType
        with WorkforceIntegrationSupportedEntities
-  @scala.inline
-  def none_ : none_ = "none".asInstanceOf[none_]
+  inline def none_ : none_ = "none".asInstanceOf[none_]
   
   @js.native
   sealed trait normal
@@ -4568,52 +3990,45 @@ object microsoftGraphStrings {
        with ChatMessageImportance
        with Importance
        with Sensitivity
-  @scala.inline
-  def normal: normal = "normal".asInstanceOf[normal]
+  inline def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
   sealed trait notAllow
     extends StObject
        with WindowsInformationProtectionPinCharacterRequirements
-  @scala.inline
-  def notAllow: notAllow = "notAllow".asInstanceOf[notAllow]
+  inline def notAllow: notAllow = "notAllow".asInstanceOf[notAllow]
   
   @js.native
   sealed trait notAllowed
     extends StObject
        with PrereleaseFeatures
-  @scala.inline
-  def notAllowed: notAllowed = "notAllowed".asInstanceOf[notAllowed]
+  inline def notAllowed: notAllowed = "notAllowed".asInstanceOf[notAllowed]
   
   @js.native
   sealed trait notApplicable
     extends StObject
        with ComplianceStatus
        with InstallState
-  @scala.inline
-  def notApplicable: notApplicable = "notApplicable".asInstanceOf[notApplicable]
+  inline def notApplicable: notApplicable = "notApplicable".asInstanceOf[notApplicable]
   
   @js.native
   sealed trait notApplied
     extends StObject
        with AppliedConditionalAccessPolicyResult
        with ConditionalAccessStatus
-  @scala.inline
-  def notApplied: notApplied = "notApplied".asInstanceOf[notApplied]
+  inline def notApplied: notApplied = "notApplied".asInstanceOf[notApplied]
   
   @js.native
   sealed trait notAssigned
     extends StObject
        with ComplianceStatus
-  @scala.inline
-  def notAssigned: notAssigned = "notAssigned".asInstanceOf[notAssigned]
+  inline def notAssigned: notAssigned = "notAssigned".asInstanceOf[notAssigned]
   
   @js.native
   sealed trait notCompliant
     extends StObject
        with DeviceManagementExchangeAccessStateReason
-  @scala.inline
-  def notCompliant: notCompliant = "notCompliant".asInstanceOf[notCompliant]
+  inline def notCompliant: notCompliant = "notCompliant".asInstanceOf[notCompliant]
   
   @js.native
   sealed trait notConfigured
@@ -4631,120 +4046,103 @@ object microsoftGraphStrings {
        with Win32LobAppRegistryRuleOperationType
        with Win32LobAppRuleOperator
        with WindowsSpotlightEnablementSettings
-  @scala.inline
-  def notConfigured: notConfigured = "notConfigured".asInstanceOf[notConfigured]
+  inline def notConfigured: notConfigured = "notConfigured".asInstanceOf[notConfigured]
   
   @js.native
   sealed trait notEnabled
     extends StObject
        with AppliedConditionalAccessPolicyResult
-  @scala.inline
-  def notEnabled: notEnabled = "notEnabled".asInstanceOf[notEnabled]
+  inline def notEnabled: notEnabled = "notEnabled".asInstanceOf[notEnabled]
   
   @js.native
   sealed trait notEnrolled
     extends StObject
        with DeviceManagementExchangeAccessStateReason
-  @scala.inline
-  def notEnrolled: notEnrolled = "notEnrolled".asInstanceOf[notEnrolled]
+  inline def notEnrolled: notEnrolled = "notEnrolled".asInstanceOf[notEnrolled]
   
   @js.native
   sealed trait notEqual
     extends StObject
        with Win32LobAppRuleOperator
-  @scala.inline
-  def notEqual: notEqual = "notEqual".asInstanceOf[notEqual]
+  inline def notEqual: notEqual = "notEqual".asInstanceOf[notEqual]
   
   @js.native
   sealed trait notFlagged
     extends StObject
        with FollowupFlagStatus
-  @scala.inline
-  def notFlagged: notFlagged = "notFlagged".asInstanceOf[notFlagged]
+  inline def notFlagged: notFlagged = "notFlagged".asInstanceOf[notFlagged]
   
   @js.native
   sealed trait notInAddressBook
     extends StObject
        with MailDestinationRoutingReason
-  @scala.inline
-  def notInAddressBook: notInAddressBook = "notInAddressBook".asInstanceOf[notInAddressBook]
+  inline def notInAddressBook: notInAddressBook = "notInAddressBook".asInstanceOf[notInAddressBook]
   
   @js.native
   sealed trait notInstalled
     extends StObject
        with InstallState
-  @scala.inline
-  def notInstalled: notInstalled = "notInstalled".asInstanceOf[notInstalled]
+  inline def notInstalled: notInstalled = "notInstalled".asInstanceOf[notInstalled]
   
   @js.native
   sealed trait notJunk
     extends StObject
        with MailDestinationRoutingReason
-  @scala.inline
-  def notJunk: notJunk = "notJunk".asInstanceOf[notJunk]
+  inline def notJunk: notJunk = "notJunk".asInstanceOf[notJunk]
   
   @js.native
   sealed trait notOnboarded
     extends StObject
        with RemoteAssistanceOnboardingStatus
-  @scala.inline
-  def notOnboarded: notOnboarded = "notOnboarded".asInstanceOf[notOnboarded]
+  inline def notOnboarded: notOnboarded = "notOnboarded".asInstanceOf[notOnboarded]
   
   @js.native
   sealed trait notPublished
     extends StObject
        with MobileAppPublishingState
-  @scala.inline
-  def notPublished: notPublished = "notPublished".asInstanceOf[notPublished]
+  inline def notPublished: notPublished = "notPublished".asInstanceOf[notPublished]
   
   @js.native
   sealed trait notRated
     extends StObject
        with UserFeedbackRating
-  @scala.inline
-  def notRated: notRated = "notRated".asInstanceOf[notRated]
+  inline def notRated: notRated = "notRated".asInstanceOf[notRated]
   
   @js.native
   sealed trait notRecording
     extends StObject
        with RecordingStatus
-  @scala.inline
-  def notRecording: notRecording = "notRecording".asInstanceOf[notRecording]
+  inline def notRecording: notRecording = "notRecording".asInstanceOf[notRecording]
   
   @js.native
   sealed trait notRegistered
     extends StObject
        with DeviceRegistrationState
-  @scala.inline
-  def notRegistered: notRegistered = "notRegistered".asInstanceOf[notRegistered]
+  inline def notRegistered: notRegistered = "notRegistered".asInstanceOf[notRegistered]
   
   @js.native
   sealed trait notRegisteredPendingEnrollment
     extends StObject
        with DeviceRegistrationState
-  @scala.inline
-  def notRegisteredPendingEnrollment: notRegisteredPendingEnrollment = "notRegisteredPendingEnrollment".asInstanceOf[notRegisteredPendingEnrollment]
+  inline def notRegisteredPendingEnrollment: notRegisteredPendingEnrollment = "notRegisteredPendingEnrollment".asInstanceOf[notRegisteredPendingEnrollment]
   
   @js.native
   sealed trait notResponded
     extends StObject
        with ResponseType
-  @scala.inline
-  def notResponded: notResponded = "notResponded".asInstanceOf[notResponded]
+  inline def notResponded: notResponded = "notResponded".asInstanceOf[notResponded]
   
   @js.native
   sealed trait notSet
     extends StObject
        with DeviceThreatProtectionLevel
-  @scala.inline
-  def notSet: notSet = "notSet".asInstanceOf[notSet]
+  inline def notSet: notSet = "notSet".asInstanceOf[notSet]
   
   @js.native
   sealed trait notSpecified
     extends StObject
        with SelectionLikelihoodInfo
-  @scala.inline
-  def notSpecified: notSpecified = "notSpecified".asInstanceOf[notSpecified]
+  inline def notSpecified: notSpecified = "notSpecified".asInstanceOf[notSpecified]
   
   @js.native
   sealed trait notStarted_
@@ -4754,71 +4152,61 @@ object microsoftGraphStrings {
        with TaskStatus
        with TeamsAsyncOperationStatus
        with WorkbookOperationStatus
-  @scala.inline
-  def notStarted_ : notStarted_ = "notStarted".asInstanceOf[notStarted_]
+  inline def notStarted_ : notStarted_ = "notStarted".asInstanceOf[notStarted_]
   
   @js.native
   sealed trait notSupported
     extends StObject
        with ActionState
-  @scala.inline
-  def notSupported: notSupported = "notSupported".asInstanceOf[notSupported]
+  inline def notSupported: notSupported = "notSupported".asInstanceOf[notSupported]
   
   @js.native
   sealed trait notSupportedOperation
     extends StObject
        with IosUpdatesInstallStatus
-  @scala.inline
-  def notSupportedOperation: notSupportedOperation = "notSupportedOperation".asInstanceOf[notSupportedOperation]
+  inline def notSupportedOperation: notSupportedOperation = "notSupportedOperation".asInstanceOf[notSupportedOperation]
   
   @js.native
   sealed trait notWorking
     extends StObject
        with TimeOffReasonIconType
-  @scala.inline
-  def notWorking: notWorking = "notWorking".asInstanceOf[notWorking]
+  inline def notWorking: notWorking = "notWorking".asInstanceOf[notWorking]
   
   @js.native
   sealed trait notification
     extends StObject
        with DeviceComplianceActionType
-  @scala.inline
-  def notification: notification = "notification".asInstanceOf[notification]
+  inline def notification: notification = "notification".asInstanceOf[notification]
   
   @js.native
   sealed trait notifyDownload
     extends StObject
        with AutomaticUpdateMode
-  @scala.inline
-  def notifyDownload: notifyDownload = "notifyDownload".asInstanceOf[notifyDownload]
+  inline def notifyDownload: notifyDownload = "notifyDownload".asInstanceOf[notifyDownload]
   
   @js.native
   sealed trait notifyOnAppChanges
     extends StObject
        with WindowsUserAccountControlSettings
-  @scala.inline
-  def notifyOnAppChanges: notifyOnAppChanges = "notifyOnAppChanges".asInstanceOf[notifyOnAppChanges]
+  inline def notifyOnAppChanges: notifyOnAppChanges = "notifyOnAppChanges".asInstanceOf[notifyOnAppChanges]
   
   @js.native
   sealed trait notifyOnAppChangesWithoutDimming
     extends StObject
        with WindowsUserAccountControlSettings
-  @scala.inline
-  def notifyOnAppChangesWithoutDimming: notifyOnAppChangesWithoutDimming = "notifyOnAppChangesWithoutDimming".asInstanceOf[notifyOnAppChangesWithoutDimming]
+  inline def notifyOnAppChangesWithoutDimming: notifyOnAppChangesWithoutDimming = "notifyOnAppChangesWithoutDimming".asInstanceOf[notifyOnAppChangesWithoutDimming]
   
   @js.native
   sealed trait notifySender
     extends StObject
        with ChatMessagePolicyViolationDlpActionTypes
-  @scala.inline
-  def notifySender: notifySender = "notifySender".asInstanceOf[notifySender]
+  inline def notifySender: notifySender = "notifySender".asInstanceOf[notifySender]
   
   @js.native
   sealed trait numbered
     extends StObject
        with RecurrenceRangeType
-  @scala.inline
-  def numbered: numbered = "numbered".asInstanceOf[numbered]
+  inline def numbered: numbered = "numbered".asInstanceOf[numbered]
   
   @js.native
   sealed trait numeric
@@ -4826,149 +4214,128 @@ object microsoftGraphStrings {
        with AndroidRequiredPasswordType
        with ManagedAppPinCharacterSet
        with RequiredPasswordType
-  @scala.inline
-  def numeric: numeric = "numeric".asInstanceOf[numeric]
+  inline def numeric: numeric = "numeric".asInstanceOf[numeric]
   
   @js.native
   sealed trait numericComplex
     extends StObject
        with AndroidRequiredPasswordType
        with AndroidWorkProfileRequiredPasswordType
-  @scala.inline
-  def numericComplex: numericComplex = "numericComplex".asInstanceOf[numericComplex]
+  inline def numericComplex: numericComplex = "numericComplex".asInstanceOf[numericComplex]
   
   @js.native
   sealed trait occurrence
     extends StObject
        with EventType
-  @scala.inline
-  def occurrence: occurrence = "occurrence".asInstanceOf[occurrence]
+  inline def occurrence: occurrence = "occurrence".asInstanceOf[occurrence]
   
   @js.native
   sealed trait offerShiftRequest
     extends StObject
        with WorkforceIntegrationSupportedEntities
-  @scala.inline
-  def offerShiftRequest: offerShiftRequest = "offerShiftRequest".asInstanceOf[offerShiftRequest]
+  inline def offerShiftRequest: offerShiftRequest = "offerShiftRequest".asInstanceOf[offerShiftRequest]
   
   @js.native
   sealed trait office365
     extends StObject
        with MdmAuthority
-  @scala.inline
-  def office365: office365 = "office365".asInstanceOf[office365]
+  inline def office365: office365 = "office365".asInstanceOf[office365]
   
   @js.native
   sealed trait offline
     extends StObject
        with MicrosoftStoreForBusinessLicenseType
-  @scala.inline
-  def offline: offline = "offline".asInstanceOf[offline]
+  inline def offline: offline = "offline".asInstanceOf[offline]
   
   @js.native
   sealed trait onPremises
     extends StObject
        with DeviceManagementExchangeConnectorType
-  @scala.inline
-  def onPremises: onPremises = "onPremises".asInstanceOf[onPremises]
+  inline def onPremises: onPremises = "onPremises".asInstanceOf[onPremises]
   
   @js.native
   sealed trait onboarded
     extends StObject
        with RemoteAssistanceOnboardingStatus
-  @scala.inline
-  def onboarded: onboarded = "onboarded".asInstanceOf[onboarded]
+  inline def onboarded: onboarded = "onboarded".asInstanceOf[onboarded]
   
   @js.native
   sealed trait onboarding
     extends StObject
        with RemoteAssistanceOnboardingStatus
-  @scala.inline
-  def onboarding: onboarding = "onboarding".asInstanceOf[onboarding]
+  inline def onboarding: onboarding = "onboarding".asInstanceOf[onboarding]
   
   @js.native
   sealed trait one
     extends StObject
        with MiracastChannel
-  @scala.inline
-  def one: one = "one".asInstanceOf[one]
+  inline def one: one = "one".asInstanceOf[one]
   
   @js.native
   sealed trait oneDriveForBusiness_
     extends StObject
        with ManagedAppDataStorageLocation
-  @scala.inline
-  def oneDriveForBusiness_ : oneDriveForBusiness_ = "oneDriveForBusiness".asInstanceOf[oneDriveForBusiness_]
+  inline def oneDriveForBusiness_ : oneDriveForBusiness_ = "oneDriveForBusiness".asInstanceOf[oneDriveForBusiness_]
   
   @js.native
   sealed trait oneHundredFiftySeven
     extends StObject
        with MiracastChannel
-  @scala.inline
-  def oneHundredFiftySeven: oneHundredFiftySeven = "oneHundredFiftySeven".asInstanceOf[oneHundredFiftySeven]
+  inline def oneHundredFiftySeven: oneHundredFiftySeven = "oneHundredFiftySeven".asInstanceOf[oneHundredFiftySeven]
   
   @js.native
   sealed trait oneHundredFiftyThree
     extends StObject
        with MiracastChannel
-  @scala.inline
-  def oneHundredFiftyThree: oneHundredFiftyThree = "oneHundredFiftyThree".asInstanceOf[oneHundredFiftyThree]
+  inline def oneHundredFiftyThree: oneHundredFiftyThree = "oneHundredFiftyThree".asInstanceOf[oneHundredFiftyThree]
   
   @js.native
   sealed trait oneHundredFortyNine
     extends StObject
        with MiracastChannel
-  @scala.inline
-  def oneHundredFortyNine: oneHundredFortyNine = "oneHundredFortyNine".asInstanceOf[oneHundredFortyNine]
+  inline def oneHundredFortyNine: oneHundredFortyNine = "oneHundredFortyNine".asInstanceOf[oneHundredFortyNine]
   
   @js.native
   sealed trait oneHundredSixtyFive
     extends StObject
        with MiracastChannel
-  @scala.inline
-  def oneHundredSixtyFive: oneHundredSixtyFive = "oneHundredSixtyFive".asInstanceOf[oneHundredSixtyFive]
+  inline def oneHundredSixtyFive: oneHundredSixtyFive = "oneHundredSixtyFive".asInstanceOf[oneHundredSixtyFive]
   
   @js.native
   sealed trait oneHundredSixtyOne
     extends StObject
        with MiracastChannel
-  @scala.inline
-  def oneHundredSixtyOne: oneHundredSixtyOne = "oneHundredSixtyOne".asInstanceOf[oneHundredSixtyOne]
+  inline def oneHundredSixtyOne: oneHundredSixtyOne = "oneHundredSixtyOne".asInstanceOf[oneHundredSixtyOne]
   
   @js.native
   sealed trait online
     extends StObject
        with MicrosoftStoreForBusinessLicenseType
-  @scala.inline
-  def online: online = "online".asInstanceOf[online]
+  inline def online: online = "online".asInstanceOf[online]
   
   @js.native
   sealed trait oof
     extends StObject
        with FreeBusyStatus
-  @scala.inline
-  def oof: oof = "oof".asInstanceOf[oof]
+  inline def oof: oof = "oof".asInstanceOf[oof]
   
   @js.native
   sealed trait openShift
     extends StObject
        with WorkforceIntegrationSupportedEntities
-  @scala.inline
-  def openShift: openShift = "openShift".asInstanceOf[openShift]
+  inline def openShift: openShift = "openShift".asInstanceOf[openShift]
   
   @js.native
   sealed trait openShiftRequest
     extends StObject
        with WorkforceIntegrationSupportedEntities
-  @scala.inline
-  def openShiftRequest: openShiftRequest = "openShiftRequest".asInstanceOf[openShiftRequest]
+  inline def openShiftRequest: openShiftRequest = "openShiftRequest".asInstanceOf[openShiftRequest]
   
   @js.native
   sealed trait optional
     extends StObject
        with AttendeeType
-  @scala.inline
-  def optional: optional = "optional".asInstanceOf[optional]
+  inline def optional: optional = "optional".asInstanceOf[optional]
   
   @js.native
   sealed trait organization
@@ -4976,15 +4343,13 @@ object microsoftGraphStrings {
        with LobbyBypassScope
        with OnlineMeetingPresenters
        with TeamsAppDistributionMethod
-  @scala.inline
-  def organization: organization = "organization".asInstanceOf[organization]
+  inline def organization: organization = "organization".asInstanceOf[organization]
   
   @js.native
   sealed trait organizationAndFederated
     extends StObject
        with LobbyBypassScope
-  @scala.inline
-  def organizationAndFederated: organizationAndFederated = "organizationAndFederated".asInstanceOf[organizationAndFederated]
+  inline def organizationAndFederated: organizationAndFederated = "organizationAndFederated".asInstanceOf[organizationAndFederated]
   
   @js.native
   sealed trait organizer
@@ -4992,8 +4357,7 @@ object microsoftGraphStrings {
        with LobbyBypassScope
        with OnlineMeetingPresenters
        with ResponseType
-  @scala.inline
-  def organizer: organizer = "organizer".asInstanceOf[organizer]
+  inline def organizer: organizer = "organizer".asInstanceOf[organizer]
   
   @js.native
   sealed trait other
@@ -5005,51 +4369,44 @@ object microsoftGraphStrings {
        with PhoneType
        with PhysicalAddressType
        with WebsiteType
-  @scala.inline
-  def other: other = "other".asInstanceOf[other]
+  inline def other: other = "other".asInstanceOf[other]
   
   @js.native
   sealed trait otherFax
     extends StObject
        with PhoneType
-  @scala.inline
-  def otherFax: otherFax = "otherFax".asInstanceOf[otherFax]
+  inline def otherFax: otherFax = "otherFax".asInstanceOf[otherFax]
   
   @js.native
   sealed trait outbound
     extends StObject
        with ConnectionDirection
        with MailDestinationRoutingReason
-  @scala.inline
-  def outbound: outbound = "outbound".asInstanceOf[outbound]
+  inline def outbound: outbound = "outbound".asInstanceOf[outbound]
   
   @js.native
   sealed trait outdated
     extends StObject
        with MeetingRequestType
-  @scala.inline
-  def outdated: outdated = "outdated".asInstanceOf[outdated]
+  inline def outdated: outdated = "outdated".asInstanceOf[outdated]
   
   @js.native
   sealed trait outgoing
     extends StObject
        with CallDirection
-  @scala.inline
-  def outgoing: outgoing = "outgoing".asInstanceOf[outgoing]
+  inline def outgoing: outgoing = "outgoing".asInstanceOf[outgoing]
   
   @js.native
   sealed trait `override`
     extends StObject
        with ChatMessagePolicyViolationUserActionTypes
-  @scala.inline
-  def `override`: `override` = "override".asInstanceOf[`override`]
+  inline def `override`: `override` = "override".asInstanceOf[`override`]
   
   @js.native
   sealed trait pager
     extends StObject
        with PhoneType
-  @scala.inline
-  def pager: pager = "pager".asInstanceOf[pager]
+  inline def pager: pager = "pager".asInstanceOf[pager]
   
   @js.native
   sealed trait parentalGuidance
@@ -5065,29 +4422,25 @@ object microsoftGraphStrings {
        with RatingUnitedKingdomMoviesType
        with RatingUnitedStatesMoviesType
        with RatingUnitedStatesTelevisionType
-  @scala.inline
-  def parentalGuidance: parentalGuidance = "parentalGuidance".asInstanceOf[parentalGuidance]
+  inline def parentalGuidance: parentalGuidance = "parentalGuidance".asInstanceOf[parentalGuidance]
   
   @js.native
   sealed trait parentalGuidance13
     extends StObject
        with RatingUnitedStatesMoviesType
-  @scala.inline
-  def parentalGuidance13: parentalGuidance13 = "parentalGuidance13".asInstanceOf[parentalGuidance13]
+  inline def parentalGuidance13: parentalGuidance13 = "parentalGuidance13".asInstanceOf[parentalGuidance13]
   
   @js.native
   sealed trait parentalSupervision
     extends StObject
        with RatingIrelandTelevisionType
-  @scala.inline
-  def parentalSupervision: parentalSupervision = "parentalSupervision".asInstanceOf[parentalSupervision]
+  inline def parentalSupervision: parentalSupervision = "parentalSupervision".asInstanceOf[parentalSupervision]
   
   @js.native
   sealed trait peerToPeer
     extends StObject
        with CallType
-  @scala.inline
-  def peerToPeer: peerToPeer = "peerToPeer".asInstanceOf[peerToPeer]
+  inline def peerToPeer: peerToPeer = "peerToPeer".asInstanceOf[peerToPeer]
   
   @js.native
   sealed trait pending
@@ -5096,22 +4449,19 @@ object microsoftGraphStrings {
        with DeviceManagementSubscriptionState
        with ScheduleChangeState
        with ThreatAssessmentStatus
-  @scala.inline
-  def pending: pending = "pending".asInstanceOf[pending]
+  inline def pending: pending = "pending".asInstanceOf[pending]
   
   @js.native
   sealed trait perMachine
     extends StObject
        with Win32LobAppMsiPackageType
-  @scala.inline
-  def perMachine: perMachine = "perMachine".asInstanceOf[perMachine]
+  inline def perMachine: perMachine = "perMachine".asInstanceOf[perMachine]
   
   @js.native
   sealed trait perUser
     extends StObject
        with Win32LobAppMsiPackageType
-  @scala.inline
-  def perUser: perUser = "perUser".asInstanceOf[perUser]
+  inline def perUser: perUser = "perUser".asInstanceOf[perUser]
   
   @js.native
   sealed trait personal
@@ -5119,288 +4469,247 @@ object microsoftGraphStrings {
        with ActivityDomain
        with ManagedDeviceOwnerType
        with Sensitivity
-  @scala.inline
-  def personal: personal = "personal".asInstanceOf[personal]
+  inline def personal: personal = "personal".asInstanceOf[personal]
   
   @js.native
   sealed trait phishing
     extends StObject
        with ThreatCategory
-  @scala.inline
-  def phishing: phishing = "phishing".asInstanceOf[phishing]
+  inline def phishing: phishing = "phishing".asInstanceOf[phishing]
   
   @js.native
   sealed trait phone
     extends StObject
        with TimeOffReasonIconType
-  @scala.inline
-  def phone: phone = "phone".asInstanceOf[phone]
+  inline def phone: phone = "phone".asInstanceOf[phone]
   
   @js.native
   sealed trait piggyBank
     extends StObject
        with TimeOffReasonIconType
-  @scala.inline
-  def piggyBank: piggyBank = "piggyBank".asInstanceOf[piggyBank]
+  inline def piggyBank: piggyBank = "piggyBank".asInstanceOf[piggyBank]
   
   @js.native
   sealed trait pin
     extends StObject
        with TimeOffReasonIconType
-  @scala.inline
-  def pin: pin = "pin".asInstanceOf[pin]
+  inline def pin: pin = "pin".asInstanceOf[pin]
   
   @js.native
   sealed trait pink
     extends StObject
        with ScheduleEntityTheme
-  @scala.inline
-  def pink: pink = "pink".asInstanceOf[pink]
+  inline def pink: pink = "pink".asInstanceOf[pink]
   
   @js.native
   sealed trait plane
     extends StObject
        with TimeOffReasonIconType
-  @scala.inline
-  def plane: plane = "plane".asInstanceOf[plane]
+  inline def plane: plane = "plane".asInstanceOf[plane]
   
   @js.native
   sealed trait poor
     extends StObject
        with UserFeedbackRating
-  @scala.inline
-  def poor: poor = "poor".asInstanceOf[poor]
+  inline def poor: poor = "poor".asInstanceOf[poor]
   
   @js.native
   sealed trait postalAddress
     extends StObject
        with LocationType
-  @scala.inline
-  def postalAddress: postalAddress = "postalAddress".asInstanceOf[postalAddress]
+  inline def postalAddress: postalAddress = "postalAddress".asInstanceOf[postalAddress]
   
   @js.native
   sealed trait pound
     extends StObject
        with Tone
-  @scala.inline
-  def pound: pound = "pound".asInstanceOf[pound]
+  inline def pound: pound = "pound".asInstanceOf[pound]
   
   @js.native
   sealed trait power
     extends StObject
        with UserAccountSecurityType
-  @scala.inline
-  def power: power = "power".asInstanceOf[power]
+  inline def power: power = "power".asInstanceOf[power]
   
   @js.native
   sealed trait preschoolers
     extends StObject
        with RatingAustraliaTelevisionType
-  @scala.inline
-  def preschoolers: preschoolers = "preschoolers".asInstanceOf[preschoolers]
+  inline def preschoolers: preschoolers = "preschoolers".asInstanceOf[preschoolers]
   
   @js.native
   sealed trait presenter
     extends StObject
        with OnlineMeetingRole
-  @scala.inline
-  def presenter: presenter = "presenter".asInstanceOf[presenter]
+  inline def presenter: presenter = "presenter".asInstanceOf[presenter]
   
   @js.native
   sealed trait preset0
     extends StObject
        with CategoryColor
-  @scala.inline
-  def preset0: preset0 = "preset0".asInstanceOf[preset0]
+  inline def preset0: preset0 = "preset0".asInstanceOf[preset0]
   
   @js.native
   sealed trait preset1
     extends StObject
        with CategoryColor
-  @scala.inline
-  def preset1: preset1 = "preset1".asInstanceOf[preset1]
+  inline def preset1: preset1 = "preset1".asInstanceOf[preset1]
   
   @js.native
   sealed trait preset10
     extends StObject
        with CategoryColor
-  @scala.inline
-  def preset10: preset10 = "preset10".asInstanceOf[preset10]
+  inline def preset10: preset10 = "preset10".asInstanceOf[preset10]
   
   @js.native
   sealed trait preset11
     extends StObject
        with CategoryColor
-  @scala.inline
-  def preset11: preset11 = "preset11".asInstanceOf[preset11]
+  inline def preset11: preset11 = "preset11".asInstanceOf[preset11]
   
   @js.native
   sealed trait preset12
     extends StObject
        with CategoryColor
-  @scala.inline
-  def preset12: preset12 = "preset12".asInstanceOf[preset12]
+  inline def preset12: preset12 = "preset12".asInstanceOf[preset12]
   
   @js.native
   sealed trait preset13
     extends StObject
        with CategoryColor
-  @scala.inline
-  def preset13: preset13 = "preset13".asInstanceOf[preset13]
+  inline def preset13: preset13 = "preset13".asInstanceOf[preset13]
   
   @js.native
   sealed trait preset14
     extends StObject
        with CategoryColor
-  @scala.inline
-  def preset14: preset14 = "preset14".asInstanceOf[preset14]
+  inline def preset14: preset14 = "preset14".asInstanceOf[preset14]
   
   @js.native
   sealed trait preset15
     extends StObject
        with CategoryColor
-  @scala.inline
-  def preset15: preset15 = "preset15".asInstanceOf[preset15]
+  inline def preset15: preset15 = "preset15".asInstanceOf[preset15]
   
   @js.native
   sealed trait preset16
     extends StObject
        with CategoryColor
-  @scala.inline
-  def preset16: preset16 = "preset16".asInstanceOf[preset16]
+  inline def preset16: preset16 = "preset16".asInstanceOf[preset16]
   
   @js.native
   sealed trait preset17
     extends StObject
        with CategoryColor
-  @scala.inline
-  def preset17: preset17 = "preset17".asInstanceOf[preset17]
+  inline def preset17: preset17 = "preset17".asInstanceOf[preset17]
   
   @js.native
   sealed trait preset18
     extends StObject
        with CategoryColor
-  @scala.inline
-  def preset18: preset18 = "preset18".asInstanceOf[preset18]
+  inline def preset18: preset18 = "preset18".asInstanceOf[preset18]
   
   @js.native
   sealed trait preset19
     extends StObject
        with CategoryColor
-  @scala.inline
-  def preset19: preset19 = "preset19".asInstanceOf[preset19]
+  inline def preset19: preset19 = "preset19".asInstanceOf[preset19]
   
   @js.native
   sealed trait preset2
     extends StObject
        with CategoryColor
-  @scala.inline
-  def preset2: preset2 = "preset2".asInstanceOf[preset2]
+  inline def preset2: preset2 = "preset2".asInstanceOf[preset2]
   
   @js.native
   sealed trait preset20
     extends StObject
        with CategoryColor
-  @scala.inline
-  def preset20: preset20 = "preset20".asInstanceOf[preset20]
+  inline def preset20: preset20 = "preset20".asInstanceOf[preset20]
   
   @js.native
   sealed trait preset21
     extends StObject
        with CategoryColor
-  @scala.inline
-  def preset21: preset21 = "preset21".asInstanceOf[preset21]
+  inline def preset21: preset21 = "preset21".asInstanceOf[preset21]
   
   @js.native
   sealed trait preset22
     extends StObject
        with CategoryColor
-  @scala.inline
-  def preset22: preset22 = "preset22".asInstanceOf[preset22]
+  inline def preset22: preset22 = "preset22".asInstanceOf[preset22]
   
   @js.native
   sealed trait preset23
     extends StObject
        with CategoryColor
-  @scala.inline
-  def preset23: preset23 = "preset23".asInstanceOf[preset23]
+  inline def preset23: preset23 = "preset23".asInstanceOf[preset23]
   
   @js.native
   sealed trait preset24
     extends StObject
        with CategoryColor
-  @scala.inline
-  def preset24: preset24 = "preset24".asInstanceOf[preset24]
+  inline def preset24: preset24 = "preset24".asInstanceOf[preset24]
   
   @js.native
   sealed trait preset3
     extends StObject
        with CategoryColor
-  @scala.inline
-  def preset3: preset3 = "preset3".asInstanceOf[preset3]
+  inline def preset3: preset3 = "preset3".asInstanceOf[preset3]
   
   @js.native
   sealed trait preset4
     extends StObject
        with CategoryColor
-  @scala.inline
-  def preset4: preset4 = "preset4".asInstanceOf[preset4]
+  inline def preset4: preset4 = "preset4".asInstanceOf[preset4]
   
   @js.native
   sealed trait preset5
     extends StObject
        with CategoryColor
-  @scala.inline
-  def preset5: preset5 = "preset5".asInstanceOf[preset5]
+  inline def preset5: preset5 = "preset5".asInstanceOf[preset5]
   
   @js.native
   sealed trait preset6
     extends StObject
        with CategoryColor
-  @scala.inline
-  def preset6: preset6 = "preset6".asInstanceOf[preset6]
+  inline def preset6: preset6 = "preset6".asInstanceOf[preset6]
   
   @js.native
   sealed trait preset7
     extends StObject
        with CategoryColor
-  @scala.inline
-  def preset7: preset7 = "preset7".asInstanceOf[preset7]
+  inline def preset7: preset7 = "preset7".asInstanceOf[preset7]
   
   @js.native
   sealed trait preset8
     extends StObject
        with CategoryColor
-  @scala.inline
-  def preset8: preset8 = "preset8".asInstanceOf[preset8]
+  inline def preset8: preset8 = "preset8".asInstanceOf[preset8]
   
   @js.native
   sealed trait preset9
     extends StObject
        with CategoryColor
-  @scala.inline
-  def preset9: preset9 = "preset9".asInstanceOf[preset9]
+  inline def preset9: preset9 = "preset9".asInstanceOf[preset9]
   
   @js.native
   sealed trait preventAny
     extends StObject
        with AndroidWorkProfileCrossProfileDataSharingType
-  @scala.inline
-  def preventAny: preventAny = "preventAny".asInstanceOf[preventAny]
+  inline def preventAny: preventAny = "preventAny".asInstanceOf[preventAny]
   
   @js.native
   sealed trait primary
     extends StObject
        with CalendarSharingActionImportance
-  @scala.inline
-  def primary: primary = "primary".asInstanceOf[primary]
+  inline def primary: primary = "primary".asInstanceOf[primary]
   
   @js.native
   sealed trait principalWantsCopy
     extends StObject
        with MeetingRequestType
-  @scala.inline
-  def principalWantsCopy: principalWantsCopy = "principalWantsCopy".asInstanceOf[principalWantsCopy]
+  inline def principalWantsCopy: principalWantsCopy = "principalWantsCopy".asInstanceOf[principalWantsCopy]
   
   @js.native
   sealed trait `private`
@@ -5409,321 +4718,276 @@ object microsoftGraphStrings {
        with LocationUniqueIdType
        with Sensitivity
        with TeamVisibilityType
-  @scala.inline
-  def `private`: `private` = "private".asInstanceOf[`private`]
+  inline def `private`: `private` = "private".asInstanceOf[`private`]
   
   @js.native
   sealed trait processing
     extends StObject
        with MobileAppPublishingState
-  @scala.inline
-  def processing: processing = "processing".asInstanceOf[processing]
+  inline def processing: processing = "processing".asInstanceOf[processing]
   
   @js.native
   sealed trait productKey
     extends StObject
        with EditionUpgradeLicenseType
-  @scala.inline
-  def productKey: productKey = "productKey".asInstanceOf[productKey]
+  inline def productKey: productKey = "productKey".asInstanceOf[productKey]
   
   @js.native
   sealed trait profile
     extends StObject
        with WebsiteType
-  @scala.inline
-  def profile: profile = "profile".asInstanceOf[profile]
+  inline def profile: profile = "profile".asInstanceOf[profile]
   
   @js.native
   sealed trait prompt
     extends StObject
        with AndroidWorkProfileDefaultAppPermissionPolicyType
-  @scala.inline
-  def prompt: prompt = "prompt".asInstanceOf[prompt]
+  inline def prompt: prompt = "prompt".asInstanceOf[prompt]
   
   @js.native
   sealed trait promptBeforeSendingPersonalData
     extends StObject
        with DefenderPromptForSampleSubmission
-  @scala.inline
-  def promptBeforeSendingPersonalData: promptBeforeSendingPersonalData = "promptBeforeSendingPersonalData".asInstanceOf[promptBeforeSendingPersonalData]
+  inline def promptBeforeSendingPersonalData: promptBeforeSendingPersonalData = "promptBeforeSendingPersonalData".asInstanceOf[promptBeforeSendingPersonalData]
   
   @js.native
   sealed trait public
     extends StObject
        with TeamVisibilityType
-  @scala.inline
-  def public: public = "public".asInstanceOf[public]
+  inline def public: public = "public".asInstanceOf[public]
   
   @js.native
   sealed trait published
     extends StObject
        with MobileAppPublishingState
-  @scala.inline
-  def published: published = "published".asInstanceOf[published]
+  inline def published: published = "published".asInstanceOf[published]
   
   @js.native
   sealed trait pup
     extends StObject
        with SecurityNetworkProtocol
-  @scala.inline
-  def pup: pup = "pup".asInstanceOf[pup]
+  inline def pup: pup = "pup".asInstanceOf[pup]
   
   @js.native
   sealed trait purple
     extends StObject
        with ScheduleEntityTheme
-  @scala.inline
-  def purple: purple = "purple".asInstanceOf[purple]
+  inline def purple: purple = "purple".asInstanceOf[purple]
   
   @js.native
   sealed trait pushNotification
     extends StObject
        with DeviceComplianceActionType
-  @scala.inline
-  def pushNotification: pushNotification = "pushNotification".asInstanceOf[pushNotification]
+  inline def pushNotification: pushNotification = "pushNotification".asInstanceOf[pushNotification]
   
   @js.native
   sealed trait quarantine
     extends StObject
        with DefenderThreatAction
-  @scala.inline
-  def quarantine: quarantine = "quarantine".asInstanceOf[quarantine]
+  inline def quarantine: quarantine = "quarantine".asInstanceOf[quarantine]
   
   @js.native
   sealed trait quarantined
     extends StObject
        with DeviceManagementExchangeAccessState
-  @scala.inline
-  def quarantined: quarantined = "quarantined".asInstanceOf[quarantined]
+  inline def quarantined: quarantined = "quarantined".asInstanceOf[quarantined]
   
   @js.native
   sealed trait queueBoth
     extends StObject
        with FirewallPacketQueueingMethodType
-  @scala.inline
-  def queueBoth: queueBoth = "queueBoth".asInstanceOf[queueBoth]
+  inline def queueBoth: queueBoth = "queueBoth".asInstanceOf[queueBoth]
   
   @js.native
   sealed trait queueInbound
     extends StObject
        with FirewallPacketQueueingMethodType
-  @scala.inline
-  def queueInbound: queueInbound = "queueInbound".asInstanceOf[queueInbound]
+  inline def queueInbound: queueInbound = "queueInbound".asInstanceOf[queueInbound]
   
   @js.native
   sealed trait queueOutbound
     extends StObject
        with FirewallPacketQueueingMethodType
-  @scala.inline
-  def queueOutbound: queueOutbound = "queueOutbound".asInstanceOf[queueOutbound]
+  inline def queueOutbound: queueOutbound = "queueOutbound".asInstanceOf[queueOutbound]
   
   @js.native
   sealed trait quick
     extends StObject
        with DefenderScanType
-  @scala.inline
-  def quick: quick = "quick".asInstanceOf[quick]
+  inline def quick: quick = "quick".asInstanceOf[quick]
   
   @js.native
   sealed trait qword
     extends StObject
        with RegistryValueType
-  @scala.inline
-  def qword: qword = "qword".asInstanceOf[qword]
+  inline def qword: qword = "qword".asInstanceOf[qword]
   
   @js.native
   sealed trait qwordlittleEndian
     extends StObject
        with RegistryValueType
-  @scala.inline
-  def qwordlittleEndian: qwordlittleEndian = "qwordlittleEndian".asInstanceOf[qwordlittleEndian]
+  inline def qwordlittleEndian: qwordlittleEndian = "qwordlittleEndian".asInstanceOf[qwordlittleEndian]
   
   @js.native
   sealed trait radio
     extends StObject
        with PhoneType
-  @scala.inline
-  def radio: radio = "radio".asInstanceOf[radio]
+  inline def radio: radio = "radio".asInstanceOf[radio]
   
   @js.native
   sealed trait raw
     extends StObject
        with SecurityNetworkProtocol
-  @scala.inline
-  def raw: raw = "raw".asInstanceOf[raw]
+  inline def raw: raw = "raw".asInstanceOf[raw]
   
   @js.native
   sealed trait read
     extends StObject
        with CalendarRoleType
        with MessageActionFlag
-  @scala.inline
-  def read: read = "read".asInstanceOf[read]
+  inline def read: read = "read".asInstanceOf[read]
   
   @js.native
   sealed trait realType
     extends StObject
        with MdmAppConfigKeyType
-  @scala.inline
-  def realType: realType = "realType".asInstanceOf[realType]
+  inline def realType: realType = "realType".asInstanceOf[realType]
   
   @js.native
   sealed trait reauthorizationRequired
     extends StObject
        with LifecycleEventType
-  @scala.inline
-  def reauthorizationRequired: reauthorizationRequired = "reauthorizationRequired".asInstanceOf[reauthorizationRequired]
+  inline def reauthorizationRequired: reauthorizationRequired = "reauthorizationRequired".asInstanceOf[reauthorizationRequired]
   
   @js.native
   sealed trait receiveOnly
     extends StObject
        with MediaDirection
-  @scala.inline
-  def receiveOnly: receiveOnly = "receiveOnly".asInstanceOf[receiveOnly]
+  inline def receiveOnly: receiveOnly = "receiveOnly".asInstanceOf[receiveOnly]
   
   @js.native
   sealed trait recipient
     extends StObject
        with EmailRole
        with ScheduleChangeRequestActor
-  @scala.inline
-  def recipient: recipient = "recipient".asInstanceOf[recipient]
+  inline def recipient: recipient = "recipient".asInstanceOf[recipient]
   
   @js.native
   sealed trait recipientScope
     extends StObject
        with MailTipsType
-  @scala.inline
-  def recipientScope: recipientScope = "recipientScope".asInstanceOf[recipientScope]
+  inline def recipientScope: recipientScope = "recipientScope".asInstanceOf[recipientScope]
   
   @js.native
   sealed trait recipientSuggestions
     extends StObject
        with MailTipsType
-  @scala.inline
-  def recipientSuggestions: recipientSuggestions = "recipientSuggestions".asInstanceOf[recipientSuggestions]
+  inline def recipientSuggestions: recipientSuggestions = "recipientSuggestions".asInstanceOf[recipientSuggestions]
   
   @js.native
   sealed trait recording
     extends StObject
        with RecordingStatus
-  @scala.inline
-  def recording: recording = "recording".asInstanceOf[recording]
+  inline def recording: recording = "recording".asInstanceOf[recording]
   
   @js.native
   sealed trait redirecting
     extends StObject
        with CallState
-  @scala.inline
-  def redirecting: redirecting = "redirecting".asInstanceOf[redirecting]
+  inline def redirecting: redirecting = "redirecting".asInstanceOf[redirecting]
   
   @js.native
   sealed trait reference
     extends StObject
        with AttachmentType
        with PlannerPreviewType
-  @scala.inline
-  def reference: reference = "reference".asInstanceOf[reference]
+  inline def reference: reference = "reference".asInstanceOf[reference]
   
   @js.native
   sealed trait registered
     extends StObject
        with DeviceRegistrationState
-  @scala.inline
-  def registered: registered = "registered".asInstanceOf[registered]
+  inline def registered: registered = "registered".asInstanceOf[registered]
   
   @js.native
   sealed trait rejected
     extends StObject
        with DeviceManagementPartnerTenantState
-  @scala.inline
-  def rejected: rejected = "rejected".asInstanceOf[rejected]
+  inline def rejected: rejected = "rejected".asInstanceOf[rejected]
   
   @js.native
   sealed trait related
     extends StObject
        with SecurityResourceType
-  @scala.inline
-  def related: related = "related".asInstanceOf[related]
+  inline def related: related = "related".asInstanceOf[related]
   
   @js.native
   sealed trait relativeMonthly
     extends StObject
        with RecurrencePatternType
-  @scala.inline
-  def relativeMonthly: relativeMonthly = "relativeMonthly".asInstanceOf[relativeMonthly]
+  inline def relativeMonthly: relativeMonthly = "relativeMonthly".asInstanceOf[relativeMonthly]
   
   @js.native
   sealed trait relativeYearly
     extends StObject
        with RecurrencePatternType
-  @scala.inline
-  def relativeYearly: relativeYearly = "relativeYearly".asInstanceOf[relativeYearly]
+  inline def relativeYearly: relativeYearly = "relativeYearly".asInstanceOf[relativeYearly]
   
   @js.native
   sealed trait remediated
     extends StObject
        with ComplianceStatus
        with RiskState
-  @scala.inline
-  def remediated: remediated = "remediated".asInstanceOf[remediated]
+  inline def remediated: remediated = "remediated".asInstanceOf[remediated]
   
   @js.native
   sealed trait remoteInteractive
     extends StObject
        with LogonType
-  @scala.inline
-  def remoteInteractive: remoteInteractive = "remoteInteractive".asInstanceOf[remoteInteractive]
+  inline def remoteInteractive: remoteInteractive = "remoteInteractive".asInstanceOf[remoteInteractive]
   
   @js.native
   sealed trait remove
     extends StObject
        with DefenderThreatAction
        with WindowsStartMenuAppListVisibilityType
-  @scala.inline
-  def remove: remove = "remove".asInstanceOf[remove]
+  inline def remove: remove = "remove".asInstanceOf[remove]
   
   @js.native
   sealed trait removeResourceAccessProfiles
     extends StObject
        with DeviceComplianceActionType
-  @scala.inline
-  def removeResourceAccessProfiles: removeResourceAccessProfiles = "removeResourceAccessProfiles".asInstanceOf[removeResourceAccessProfiles]
+  inline def removeResourceAccessProfiles: removeResourceAccessProfiles = "removeResourceAccessProfiles".asInstanceOf[removeResourceAccessProfiles]
   
   @js.native
   sealed trait reply
     extends StObject
        with MessageActionFlag
-  @scala.inline
-  def reply: reply = "reply".asInstanceOf[reply]
+  inline def reply: reply = "reply".asInstanceOf[reply]
   
   @js.native
   sealed trait replyToAll
     extends StObject
        with MessageActionFlag
-  @scala.inline
-  def replyToAll: replyToAll = "replyToAll".asInstanceOf[replyToAll]
+  inline def replyToAll: replyToAll = "replyToAll".asInstanceOf[replyToAll]
   
   @js.native
   sealed trait reportFalsePositive
     extends StObject
        with ChatMessagePolicyViolationUserActionTypes
-  @scala.inline
-  def reportFalsePositive: reportFalsePositive = "reportFalsePositive".asInstanceOf[reportFalsePositive]
+  inline def reportFalsePositive: reportFalsePositive = "reportFalsePositive".asInstanceOf[reportFalsePositive]
   
   @js.native
   sealed trait require
     extends StObject
        with FirewallCertificateRevocationListCheckMethodType
-  @scala.inline
-  def require: require = "require".asInstanceOf[require]
+  inline def require: require = "require".asInstanceOf[require]
   
   @js.native
   sealed trait requireAtLeastOne
     extends StObject
        with WindowsInformationProtectionPinCharacterRequirements
-  @scala.inline
-  def requireAtLeastOne: requireAtLeastOne = "requireAtLeastOne".asInstanceOf[requireAtLeastOne]
+  inline def requireAtLeastOne: requireAtLeastOne = "requireAtLeastOne".asInstanceOf[requireAtLeastOne]
   
   @js.native
   sealed trait required
@@ -5732,78 +4996,67 @@ object microsoftGraphStrings {
        with AttendeeType
        with InstallIntent
        with WindowsHelloForBusinessPinUsage
-  @scala.inline
-  def required: required = "required".asInstanceOf[required]
+  inline def required: required = "required".asInstanceOf[required]
   
   @js.native
   sealed trait requirement
     extends StObject
        with Win32LobAppRuleType
-  @scala.inline
-  def requirement: requirement = "requirement".asInstanceOf[requirement]
+  inline def requirement: requirement = "requirement".asInstanceOf[requirement]
   
   @js.native
   sealed trait rescan
     extends StObject
        with ThreatAssessmentResultType
-  @scala.inline
-  def rescan: rescan = "rescan".asInstanceOf[rescan]
+  inline def rescan: rescan = "rescan".asInstanceOf[rescan]
   
   @js.native
   sealed trait reserved
     extends StObject
        with BookingType
-  @scala.inline
-  def reserved: reserved = "reserved".asInstanceOf[reserved]
+  inline def reserved: reserved = "reserved".asInstanceOf[reserved]
   
   @js.native
   sealed trait resolved
     extends StObject
        with AlertStatus
-  @scala.inline
-  def resolved: resolved = "resolved".asInstanceOf[resolved]
+  inline def resolved: resolved = "resolved".asInstanceOf[resolved]
   
   @js.native
   sealed trait resource
     extends StObject
        with AttendeeType
-  @scala.inline
-  def resource: resource = "resource".asInstanceOf[resource]
+  inline def resource: resource = "resource".asInstanceOf[resource]
   
   @js.native
   sealed trait responseGroupService
     extends StObject
        with ServiceRole
-  @scala.inline
-  def responseGroupService: responseGroupService = "responseGroupService".asInstanceOf[responseGroupService]
+  inline def responseGroupService: responseGroupService = "responseGroupService".asInstanceOf[responseGroupService]
   
   @js.native
   sealed trait responseGroupServiceAnnouncementService
     extends StObject
        with ServiceRole
-  @scala.inline
-  def responseGroupServiceAnnouncementService: responseGroupServiceAnnouncementService = "responseGroupServiceAnnouncementService".asInstanceOf[responseGroupServiceAnnouncementService]
+  inline def responseGroupServiceAnnouncementService: responseGroupServiceAnnouncementService = "responseGroupServiceAnnouncementService".asInstanceOf[responseGroupServiceAnnouncementService]
   
   @js.native
   sealed trait restId
     extends StObject
        with ExchangeIdFormat
-  @scala.inline
-  def restId: restId = "restId".asInstanceOf[restId]
+  inline def restId: restId = "restId".asInstanceOf[restId]
   
   @js.native
   sealed trait restImmutableEntryId
     extends StObject
        with ExchangeIdFormat
-  @scala.inline
-  def restImmutableEntryId: restImmutableEntryId = "restImmutableEntryId".asInstanceOf[restImmutableEntryId]
+  inline def restImmutableEntryId: restImmutableEntryId = "restImmutableEntryId".asInstanceOf[restImmutableEntryId]
   
   @js.native
   sealed trait restaurant
     extends StObject
        with LocationType
-  @scala.inline
-  def restaurant: restaurant = "restaurant".asInstanceOf[restaurant]
+  inline def restaurant: restaurant = "restaurant".asInstanceOf[restaurant]
   
   @js.native
   sealed trait restricted
@@ -5811,57 +5064,49 @@ object microsoftGraphStrings {
        with RatingCanadaMoviesType
        with RatingNewZealandMoviesType
        with RatingUnitedStatesMoviesType
-  @scala.inline
-  def restricted: restricted = "restricted".asInstanceOf[restricted]
+  inline def restricted: restricted = "restricted".asInstanceOf[restricted]
   
   @js.native
   sealed trait retire
     extends StObject
        with DeviceComplianceActionType
-  @scala.inline
-  def retire: retire = "retire".asInstanceOf[retire]
+  inline def retire: retire = "retire".asInstanceOf[retire]
   
   @js.native
   sealed trait retry
     extends StObject
        with Win32LobAppReturnCodeType
-  @scala.inline
-  def retry: retry = "retry".asInstanceOf[retry]
+  inline def retry: retry = "retry".asInstanceOf[retry]
   
   @js.native
   sealed trait review
     extends StObject
        with MessageActionFlag
-  @scala.inline
-  def review: review = "review".asInstanceOf[review]
+  inline def review: review = "review".asInstanceOf[review]
   
   @js.native
   sealed trait revoked
     extends StObject
        with DeviceRegistrationState
-  @scala.inline
-  def revoked: revoked = "revoked".asInstanceOf[revoked]
+  inline def revoked: revoked = "revoked".asInstanceOf[revoked]
   
   @js.native
   sealed trait roleIsPresenter
     extends StObject
        with OnlineMeetingPresenters
-  @scala.inline
-  def roleIsPresenter: roleIsPresenter = "roleIsPresenter".asInstanceOf[roleIsPresenter]
+  inline def roleIsPresenter: roleIsPresenter = "roleIsPresenter".asInstanceOf[roleIsPresenter]
   
   @js.native
   sealed trait roomSystem
     extends StObject
        with ClientPlatform
-  @scala.inline
-  def roomSystem: roomSystem = "roomSystem".asInstanceOf[roomSystem]
+  inline def roomSystem: roomSystem = "roomSystem".asInstanceOf[roomSystem]
   
   @js.native
   sealed trait rootedDevice
     extends StObject
        with ManagedAppFlaggedReason
-  @scala.inline
-  def rootedDevice: rootedDevice = "rootedDevice".asInstanceOf[rootedDevice]
+  inline def rootedDevice: rootedDevice = "rootedDevice".asInstanceOf[rootedDevice]
   
   @js.native
   sealed trait running_
@@ -5869,319 +5114,274 @@ object microsoftGraphStrings {
        with DataPolicyOperationStatus
        with TimeOffReasonIconType
        with WorkbookOperationStatus
-  @scala.inline
-  def running_ : running_ = "running".asInstanceOf[running_]
+  inline def running_ : running_ = "running".asInstanceOf[running_]
   
   @js.native
   sealed trait safeSender
     extends StObject
        with MailDestinationRoutingReason
-  @scala.inline
-  def safeSender: safeSender = "safeSender".asInstanceOf[safeSender]
+  inline def safeSender: safeSender = "safeSender".asInstanceOf[safeSender]
   
   @js.native
   sealed trait saturday
     extends StObject
        with DayOfWeek
        with WeeklySchedule
-  @scala.inline
-  def saturday: saturday = "saturday".asInstanceOf[saturday]
+  inline def saturday: saturday = "saturday".asInstanceOf[saturday]
   
   @js.native
   sealed trait sccm
     extends StObject
        with MdmAuthority
-  @scala.inline
-  def sccm: sccm = "sccm".asInstanceOf[sccm]
+  inline def sccm: sccm = "sccm".asInstanceOf[sccm]
   
   @js.native
   sealed trait scheduled
     extends StObject
        with AutomaticRepliesStatus
-  @scala.inline
-  def scheduled: scheduled = "scheduled".asInstanceOf[scheduled]
+  inline def scheduled: scheduled = "scheduled".asInstanceOf[scheduled]
   
   @js.native
   sealed trait screenSharing
     extends StObject
        with typings.microsoftGraph.mod.CallRecords.Modality
-  @scala.inline
-  def screenSharing: screenSharing = "screenSharing".asInstanceOf[screenSharing]
+  inline def screenSharing: screenSharing = "screenSharing".asInstanceOf[screenSharing]
   
   @js.native
   sealed trait second
     extends StObject
        with WeekIndex
-  @scala.inline
-  def second: second = "second".asInstanceOf[second]
+  inline def second: second = "second".asInstanceOf[second]
   
   @js.native
   sealed trait secondary
     extends StObject
        with CalendarSharingActionImportance
-  @scala.inline
-  def secondary: secondary = "secondary".asInstanceOf[secondary]
+  inline def secondary: secondary = "secondary".asInstanceOf[secondary]
   
   @js.native
   sealed trait secured
     extends StObject
        with DeviceThreatProtectionLevel
        with ManagedDevicePartnerReportedHealthState
-  @scala.inline
-  def secured: secured = "secured".asInstanceOf[secured]
+  inline def secured: secured = "secured".asInstanceOf[secured]
   
   @js.native
   sealed trait selfFork
     extends StObject
        with RoutingType
-  @scala.inline
-  def selfFork: selfFork = "selfFork".asInstanceOf[selfFork]
+  inline def selfFork: selfFork = "selfFork".asInstanceOf[selfFork]
   
   @js.native
   sealed trait sendAllDataWithoutPrompting
     extends StObject
        with DefenderPromptForSampleSubmission
-  @scala.inline
-  def sendAllDataWithoutPrompting: sendAllDataWithoutPrompting = "sendAllDataWithoutPrompting".asInstanceOf[sendAllDataWithoutPrompting]
+  inline def sendAllDataWithoutPrompting: sendAllDataWithoutPrompting = "sendAllDataWithoutPrompting".asInstanceOf[sendAllDataWithoutPrompting]
   
   @js.native
   sealed trait sendOnly
     extends StObject
        with MediaDirection
-  @scala.inline
-  def sendOnly: sendOnly = "sendOnly".asInstanceOf[sendOnly]
+  inline def sendOnly: sendOnly = "sendOnly".asInstanceOf[sendOnly]
   
   @js.native
   sealed trait sendReceive
     extends StObject
        with MediaDirection
-  @scala.inline
-  def sendReceive: sendReceive = "sendReceive".asInstanceOf[sendReceive]
+  inline def sendReceive: sendReceive = "sendReceive".asInstanceOf[sendReceive]
   
   @js.native
   sealed trait sendToDelegateAndInformationToPrincipal
     extends StObject
        with DelegateMeetingMessageDeliveryOptions
-  @scala.inline
-  def sendToDelegateAndInformationToPrincipal: sendToDelegateAndInformationToPrincipal = "sendToDelegateAndInformationToPrincipal".asInstanceOf[sendToDelegateAndInformationToPrincipal]
+  inline def sendToDelegateAndInformationToPrincipal: sendToDelegateAndInformationToPrincipal = "sendToDelegateAndInformationToPrincipal".asInstanceOf[sendToDelegateAndInformationToPrincipal]
   
   @js.native
   sealed trait sendToDelegateAndPrincipal
     extends StObject
        with DelegateMeetingMessageDeliveryOptions
-  @scala.inline
-  def sendToDelegateAndPrincipal: sendToDelegateAndPrincipal = "sendToDelegateAndPrincipal".asInstanceOf[sendToDelegateAndPrincipal]
+  inline def sendToDelegateAndPrincipal: sendToDelegateAndPrincipal = "sendToDelegateAndPrincipal".asInstanceOf[sendToDelegateAndPrincipal]
   
   @js.native
   sealed trait sendToDelegateOnly
     extends StObject
        with DelegateMeetingMessageDeliveryOptions
-  @scala.inline
-  def sendToDelegateOnly: sendToDelegateOnly = "sendToDelegateOnly".asInstanceOf[sendToDelegateOnly]
+  inline def sendToDelegateOnly: sendToDelegateOnly = "sendToDelegateOnly".asInstanceOf[sendToDelegateOnly]
   
   @js.native
   sealed trait sender
     extends StObject
        with EmailRole
        with ScheduleChangeRequestActor
-  @scala.inline
-  def sender: sender = "sender".asInstanceOf[sender]
+  inline def sender: sender = "sender".asInstanceOf[sender]
   
   @js.native
   sealed trait seriesMaster
     extends StObject
        with EventType
-  @scala.inline
-  def seriesMaster: seriesMaster = "seriesMaster".asInstanceOf[seriesMaster]
+  inline def seriesMaster: seriesMaster = "seriesMaster".asInstanceOf[seriesMaster]
   
   @js.native
   sealed trait service
     extends StObject
        with LogonType
-  @scala.inline
-  def service: service = "service".asInstanceOf[service]
+  inline def service: service = "service".asInstanceOf[service]
   
   @js.native
   sealed trait serviceToService
     extends StObject
        with DeviceManagementExchangeConnectorType
-  @scala.inline
-  def serviceToService: serviceToService = "serviceToService".asInstanceOf[serviceToService]
+  inline def serviceToService: serviceToService = "serviceToService".asInstanceOf[serviceToService]
   
   @js.native
   sealed trait settings
     extends StObject
        with ClonableTeamParts
-  @scala.inline
-  def settings: settings = "settings".asInstanceOf[settings]
+  inline def settings: settings = "settings".asInstanceOf[settings]
   
   @js.native
   sealed trait settingsAndExperimentations
     extends StObject
        with PrereleaseFeatures
-  @scala.inline
-  def settingsAndExperimentations: settingsAndExperimentations = "settingsAndExperimentations".asInstanceOf[settingsAndExperimentations]
+  inline def settingsAndExperimentations: settingsAndExperimentations = "settingsAndExperimentations".asInstanceOf[settingsAndExperimentations]
   
   @js.native
   sealed trait settingsOnly
     extends StObject
        with PrereleaseFeatures
-  @scala.inline
-  def settingsOnly: settingsOnly = "settingsOnly".asInstanceOf[settingsOnly]
+  inline def settingsOnly: settingsOnly = "settingsOnly".asInstanceOf[settingsOnly]
   
   @js.native
   sealed trait seven
     extends StObject
        with MiracastChannel
-  @scala.inline
-  def seven: seven = "seven".asInstanceOf[seven]
+  inline def seven: seven = "seven".asInstanceOf[seven]
   
   @js.native
   sealed trait sha1
     extends StObject
        with FileHashType
-  @scala.inline
-  def sha1: sha1 = "sha1".asInstanceOf[sha1]
+  inline def sha1: sha1 = "sha1".asInstanceOf[sha1]
   
   @js.native
   sealed trait sha256
     extends StObject
        with FileHashType
-  @scala.inline
-  def sha256: sha256 = "sha256".asInstanceOf[sha256]
+  inline def sha256: sha256 = "sha256".asInstanceOf[sha256]
   
   @js.native
   sealed trait sharePoint
     extends StObject
        with ManagedAppDataStorageLocation
-  @scala.inline
-  def sharePoint: sharePoint = "sharePoint".asInstanceOf[sharePoint]
+  inline def sharePoint: sharePoint = "sharePoint".asInstanceOf[sharePoint]
   
   @js.native
   sealed trait sharedDeviceUserLoggedInError
     extends StObject
        with IosUpdatesInstallStatus
-  @scala.inline
-  def sharedDeviceUserLoggedInError: sharedDeviceUserLoggedInError = "sharedDeviceUserLoggedInError".asInstanceOf[sharedDeviceUserLoggedInError]
+  inline def sharedDeviceUserLoggedInError: sharedDeviceUserLoggedInError = "sharedDeviceUserLoggedInError".asInstanceOf[sharedDeviceUserLoggedInError]
   
   @js.native
   sealed trait sharedSecret
     extends StObject
        with WorkforceIntegrationEncryptionProtocol
-  @scala.inline
-  def sharedSecret: sharedSecret = "sharedSecret".asInstanceOf[sharedSecret]
+  inline def sharedSecret: sharedSecret = "sharedSecret".asInstanceOf[sharedSecret]
   
   @js.native
   sealed trait sharer
     extends StObject
        with ScreenSharingRole
-  @scala.inline
-  def sharer: sharer = "sharer".asInstanceOf[sharer]
+  inline def sharer: sharer = "sharer".asInstanceOf[sharer]
   
   @js.native
   sealed trait shift
     extends StObject
        with WorkforceIntegrationSupportedEntities
-  @scala.inline
-  def shift: shift = "shift".asInstanceOf[shift]
+  inline def shift: shift = "shift".asInstanceOf[shift]
   
   @js.native
   sealed trait show
     extends StObject
        with VisibilitySetting
-  @scala.inline
-  def show: show = "show".asInstanceOf[show]
+  inline def show: show = "show".asInstanceOf[show]
   
   @js.native
   sealed trait showAll
     extends StObject
        with Win32LobAppNotification
-  @scala.inline
-  def showAll: showAll = "showAll".asInstanceOf[showAll]
+  inline def showAll: showAll = "showAll".asInstanceOf[showAll]
   
   @js.native
   sealed trait showOrganizerAndTimeAndSubject
     extends StObject
        with WelcomeScreenMeetingInformation
-  @scala.inline
-  def showOrganizerAndTimeAndSubject: showOrganizerAndTimeAndSubject = "showOrganizerAndTimeAndSubject".asInstanceOf[showOrganizerAndTimeAndSubject]
+  inline def showOrganizerAndTimeAndSubject: showOrganizerAndTimeAndSubject = "showOrganizerAndTimeAndSubject".asInstanceOf[showOrganizerAndTimeAndSubject]
   
   @js.native
   sealed trait showOrganizerAndTimeOnly
     extends StObject
        with WelcomeScreenMeetingInformation
-  @scala.inline
-  def showOrganizerAndTimeOnly: showOrganizerAndTimeOnly = "showOrganizerAndTimeOnly".asInstanceOf[showOrganizerAndTimeOnly]
+  inline def showOrganizerAndTimeOnly: showOrganizerAndTimeOnly = "showOrganizerAndTimeOnly".asInstanceOf[showOrganizerAndTimeOnly]
   
   @js.native
   sealed trait showReboot
     extends StObject
        with Win32LobAppNotification
-  @scala.inline
-  def showReboot: showReboot = "showReboot".asInstanceOf[showReboot]
+  inline def showReboot: showReboot = "showReboot".asInstanceOf[showReboot]
   
   @js.native
   sealed trait sideloaded
     extends StObject
        with TeamsAppDistributionMethod
-  @scala.inline
-  def sideloaded: sideloaded = "sideloaded".asInstanceOf[sideloaded]
+  inline def sideloaded: sideloaded = "sideloaded".asInstanceOf[sideloaded]
   
   @js.native
   sealed trait silentUpdate
     extends StObject
        with MeetingRequestType
-  @scala.inline
-  def silentUpdate: silentUpdate = "silentUpdate".asInstanceOf[silentUpdate]
+  inline def silentUpdate: silentUpdate = "silentUpdate".asInstanceOf[silentUpdate]
   
   @js.native
   sealed trait simpleDownload
     extends StObject
        with WindowsDeliveryOptimizationMode
-  @scala.inline
-  def simpleDownload: simpleDownload = "simpleDownload".asInstanceOf[simpleDownload]
+  inline def simpleDownload: simpleDownload = "simpleDownload".asInstanceOf[simpleDownload]
   
   @js.native
   sealed trait singleInstance
     extends StObject
        with EventType
-  @scala.inline
-  def singleInstance: singleInstance = "singleInstance".asInstanceOf[singleInstance]
+  inline def singleInstance: singleInstance = "singleInstance".asInstanceOf[singleInstance]
   
   @js.native
   sealed trait singleTenantApp
     extends StObject
        with DeviceManagementPartnerAppType
-  @scala.inline
-  def singleTenantApp: singleTenantApp = "singleTenantApp".asInstanceOf[singleTenantApp]
+  inline def singleTenantApp: singleTenantApp = "singleTenantApp".asInstanceOf[singleTenantApp]
   
   @js.native
   sealed trait sis
     extends StObject
        with EducationExternalSource
-  @scala.inline
-  def sis: sis = "sis".asInstanceOf[sis]
+  inline def sis: sis = "sis".asInstanceOf[sis]
   
   @js.native
   sealed trait site
     extends StObject
        with EntityType
-  @scala.inline
-  def site: site = "site".asInstanceOf[site]
+  inline def site: site = "site".asInstanceOf[site]
   
   @js.native
   sealed trait six
     extends StObject
        with MiracastChannel
-  @scala.inline
-  def six: six = "six".asInstanceOf[six]
+  inline def six: six = "six".asInstanceOf[six]
   
   @js.native
   sealed trait sizeInMB
     extends StObject
        with Win32LobAppFileSystemOperationType
-  @scala.inline
-  def sizeInMB: sizeInMB = "sizeInMB".asInstanceOf[sizeInMB]
+  inline def sizeInMB: sizeInMB = "sizeInMB".asInstanceOf[sizeInMB]
   
   @js.native
   sealed trait skypeForBusiness
@@ -6189,106 +5389,91 @@ object microsoftGraphStrings {
        with EndpointType
        with OnlineMeetingProviderType
        with ProductFamily
-  @scala.inline
-  def skypeForBusiness: skypeForBusiness = "skypeForBusiness".asInstanceOf[skypeForBusiness]
+  inline def skypeForBusiness: skypeForBusiness = "skypeForBusiness".asInstanceOf[skypeForBusiness]
   
   @js.native
   sealed trait skypeForBusinessApplicationSharingMcu
     extends StObject
        with ServiceRole
-  @scala.inline
-  def skypeForBusinessApplicationSharingMcu: skypeForBusinessApplicationSharingMcu = "skypeForBusinessApplicationSharingMcu".asInstanceOf[skypeForBusinessApplicationSharingMcu]
+  inline def skypeForBusinessApplicationSharingMcu: skypeForBusinessApplicationSharingMcu = "skypeForBusinessApplicationSharingMcu".asInstanceOf[skypeForBusinessApplicationSharingMcu]
   
   @js.native
   sealed trait skypeForBusinessAttendant
     extends StObject
        with ServiceRole
-  @scala.inline
-  def skypeForBusinessAttendant: skypeForBusinessAttendant = "skypeForBusinessAttendant".asInstanceOf[skypeForBusinessAttendant]
+  inline def skypeForBusinessAttendant: skypeForBusinessAttendant = "skypeForBusinessAttendant".asInstanceOf[skypeForBusinessAttendant]
   
   @js.native
   sealed trait skypeForBusinessAudioVideoMcu
     extends StObject
        with ServiceRole
-  @scala.inline
-  def skypeForBusinessAudioVideoMcu: skypeForBusinessAudioVideoMcu = "skypeForBusinessAudioVideoMcu".asInstanceOf[skypeForBusinessAudioVideoMcu]
+  inline def skypeForBusinessAudioVideoMcu: skypeForBusinessAudioVideoMcu = "skypeForBusinessAudioVideoMcu".asInstanceOf[skypeForBusinessAudioVideoMcu]
   
   @js.native
   sealed trait skypeForBusinessAutoAttendant
     extends StObject
        with ServiceRole
-  @scala.inline
-  def skypeForBusinessAutoAttendant: skypeForBusinessAutoAttendant = "skypeForBusinessAutoAttendant".asInstanceOf[skypeForBusinessAutoAttendant]
+  inline def skypeForBusinessAutoAttendant: skypeForBusinessAutoAttendant = "skypeForBusinessAutoAttendant".asInstanceOf[skypeForBusinessAutoAttendant]
   
   @js.native
   sealed trait skypeForBusinessCallQueues
     extends StObject
        with ServiceRole
-  @scala.inline
-  def skypeForBusinessCallQueues: skypeForBusinessCallQueues = "skypeForBusinessCallQueues".asInstanceOf[skypeForBusinessCallQueues]
+  inline def skypeForBusinessCallQueues: skypeForBusinessCallQueues = "skypeForBusinessCallQueues".asInstanceOf[skypeForBusinessCallQueues]
   
   @js.native
   sealed trait skypeForBusinessMicrosoftTeamsGateway
     extends StObject
        with ServiceRole
-  @scala.inline
-  def skypeForBusinessMicrosoftTeamsGateway: skypeForBusinessMicrosoftTeamsGateway = "skypeForBusinessMicrosoftTeamsGateway".asInstanceOf[skypeForBusinessMicrosoftTeamsGateway]
+  inline def skypeForBusinessMicrosoftTeamsGateway: skypeForBusinessMicrosoftTeamsGateway = "skypeForBusinessMicrosoftTeamsGateway".asInstanceOf[skypeForBusinessMicrosoftTeamsGateway]
   
   @js.native
   sealed trait skypeForBusinessUnifiedCommunicationApplicationPlatform
     extends StObject
        with ServiceRole
-  @scala.inline
-  def skypeForBusinessUnifiedCommunicationApplicationPlatform: skypeForBusinessUnifiedCommunicationApplicationPlatform = "skypeForBusinessUnifiedCommunicationApplicationPlatform".asInstanceOf[skypeForBusinessUnifiedCommunicationApplicationPlatform]
+  inline def skypeForBusinessUnifiedCommunicationApplicationPlatform: skypeForBusinessUnifiedCommunicationApplicationPlatform = "skypeForBusinessUnifiedCommunicationApplicationPlatform".asInstanceOf[skypeForBusinessUnifiedCommunicationApplicationPlatform]
   
   @js.native
   sealed trait skypeForBusinessVoipPhone
     extends StObject
        with EndpointType
-  @scala.inline
-  def skypeForBusinessVoipPhone: skypeForBusinessVoipPhone = "skypeForBusinessVoipPhone".asInstanceOf[skypeForBusinessVoipPhone]
+  inline def skypeForBusinessVoipPhone: skypeForBusinessVoipPhone = "skypeForBusinessVoipPhone".asInstanceOf[skypeForBusinessVoipPhone]
   
   @js.native
   sealed trait skypeForConsumer
     extends StObject
        with OnlineMeetingProviderType
-  @scala.inline
-  def skypeForConsumer: skypeForConsumer = "skypeForConsumer".asInstanceOf[skypeForConsumer]
+  inline def skypeForConsumer: skypeForConsumer = "skypeForConsumer".asInstanceOf[skypeForConsumer]
   
   @js.native
   sealed trait skypeTranslator
     extends StObject
        with ServiceRole
-  @scala.inline
-  def skypeTranslator: skypeTranslator = "skypeTranslator".asInstanceOf[skypeTranslator]
+  inline def skypeTranslator: skypeTranslator = "skypeTranslator".asInstanceOf[skypeTranslator]
   
   @js.native
   sealed trait softReboot
     extends StObject
        with Win32LobAppReturnCodeType
-  @scala.inline
-  def softReboot: softReboot = "softReboot".asInstanceOf[softReboot]
+  inline def softReboot: softReboot = "softReboot".asInstanceOf[softReboot]
   
   @js.native
   sealed trait spam
     extends StObject
        with ThreatCategory
-  @scala.inline
-  def spam: spam = "spam".asInstanceOf[spam]
+  inline def spam: spam = "spam".asInstanceOf[spam]
   
   @js.native
   sealed trait spx
     extends StObject
        with SecurityNetworkProtocol
-  @scala.inline
-  def spx: spx = "spx".asInstanceOf[spx]
+  inline def spx: spx = "spx".asInstanceOf[spx]
   
   @js.native
   sealed trait spxII
     extends StObject
        with SecurityNetworkProtocol
-  @scala.inline
-  def spxII: spxII = "spxII".asInstanceOf[spxII]
+  inline def spxII: spxII = "spxII".asInstanceOf[spxII]
   
   @js.native
   sealed trait standard
@@ -6296,66 +5481,57 @@ object microsoftGraphStrings {
        with BookingType
        with ChannelMembershipType
        with UserAccountSecurityType
-  @scala.inline
-  def standard: standard = "standard".asInstanceOf[standard]
+  inline def standard: standard = "standard".asInstanceOf[standard]
   
   @js.native
   sealed trait star
     extends StObject
        with Tone
-  @scala.inline
-  def star: star = "star".asInstanceOf[star]
+  inline def star: star = "star".asInstanceOf[star]
   
   @js.native
   sealed trait store
     extends StObject
        with TeamsAppDistributionMethod
-  @scala.inline
-  def store: store = "store".asInstanceOf[store]
+  inline def store: store = "store".asInstanceOf[store]
   
   @js.native
   sealed trait streetAddress
     extends StObject
        with LocationType
-  @scala.inline
-  def streetAddress: streetAddress = "streetAddress".asInstanceOf[streetAddress]
+  inline def streetAddress: streetAddress = "streetAddress".asInstanceOf[streetAddress]
   
   @js.native
   sealed trait strict
     extends StObject
        with GiphyRatingType
        with SafeSearchFilterType
-  @scala.inline
-  def strict: strict = "strict".asInstanceOf[strict]
+  inline def strict: strict = "strict".asInstanceOf[strict]
   
   @js.native
   sealed trait string
     extends StObject
        with Win32LobAppPowerShellScriptRuleOperationType
        with Win32LobAppRegistryRuleOperationType
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
+  inline def string: string = "string".asInstanceOf[string]
   
   @js.native
   sealed trait stringType
     extends StObject
        with MdmAppConfigKeyType
-  @scala.inline
-  def stringType: stringType = "stringType".asInstanceOf[stringType]
+  inline def stringType: stringType = "stringType".asInstanceOf[stringType]
   
   @js.native
   sealed trait student
     extends StObject
        with EducationUserRole
-  @scala.inline
-  def student: student = "student".asInstanceOf[student]
+  inline def student: student = "student".asInstanceOf[student]
   
   @js.native
   sealed trait subscriptionRemoved
     extends StObject
        with LifecycleEventType
-  @scala.inline
-  def subscriptionRemoved: subscriptionRemoved = "subscriptionRemoved".asInstanceOf[subscriptionRemoved]
+  inline def subscriptionRemoved: subscriptionRemoved = "subscriptionRemoved".asInstanceOf[subscriptionRemoved]
   
   @js.native
   sealed trait succeeded
@@ -6363,8 +5539,7 @@ object microsoftGraphStrings {
        with ConnectionStatus
        with TeamsAsyncOperationStatus
        with WorkbookOperationStatus
-  @scala.inline
-  def succeeded: succeeded = "succeeded".asInstanceOf[succeeded]
+  inline def succeeded: succeeded = "succeeded".asInstanceOf[succeeded]
   
   @js.native
   sealed trait success
@@ -6375,51 +5550,44 @@ object microsoftGraphStrings {
        with MobileAppContentFileUploadState
        with OperationResult
        with Win32LobAppReturnCodeType
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
+  inline def success: success = "success".asInstanceOf[success]
   
   @js.native
   sealed trait sunday
     extends StObject
        with DayOfWeek
        with WeeklySchedule
-  @scala.inline
-  def sunday: sunday = "sunday".asInstanceOf[sunday]
+  inline def sunday: sunday = "sunday".asInstanceOf[sunday]
   
   @js.native
   sealed trait sunny
     extends StObject
        with TimeOffReasonIconType
-  @scala.inline
-  def sunny: sunny = "sunny".asInstanceOf[sunny]
+  inline def sunny: sunny = "sunny".asInstanceOf[sunny]
   
   @js.native
   sealed trait suppress
     extends StObject
        with Win32LobAppRestartBehavior
-  @scala.inline
-  def suppress: suppress = "suppress".asInstanceOf[suppress]
+  inline def suppress: suppress = "suppress".asInstanceOf[suppress]
   
   @js.native
   sealed trait surfaceHub
     extends StObject
        with ClientPlatform
-  @scala.inline
-  def surfaceHub: surfaceHub = "surfaceHub".asInstanceOf[surfaceHub]
+  inline def surfaceHub: surfaceHub = "surfaceHub".asInstanceOf[surfaceHub]
   
   @js.native
   sealed trait suspiciousIPAddress
     extends StObject
        with RiskEventType
-  @scala.inline
-  def suspiciousIPAddress: suspiciousIPAddress = "suspiciousIPAddress".asInstanceOf[suspiciousIPAddress]
+  inline def suspiciousIPAddress: suspiciousIPAddress = "suspiciousIPAddress".asInstanceOf[suspiciousIPAddress]
   
   @js.native
   sealed trait swapRequest
     extends StObject
        with WorkforceIntegrationSupportedEntities
-  @scala.inline
-  def swapRequest: swapRequest = "swapRequest".asInstanceOf[swapRequest]
+  inline def swapRequest: swapRequest = "swapRequest".asInstanceOf[swapRequest]
   
   @js.native
   sealed trait system
@@ -6427,305 +5595,262 @@ object microsoftGraphStrings {
        with ProcessIntegrityLevel
        with RunAsAccountType
        with ScheduleChangeRequestActor
-  @scala.inline
-  def system: system = "system".asInstanceOf[system]
+  inline def system: system = "system".asInstanceOf[system]
   
   @js.native
   sealed trait sz
     extends StObject
        with RegistryValueType
-  @scala.inline
-  def sz: sz = "sz".asInstanceOf[sz]
+  inline def sz: sz = "sz".asInstanceOf[sz]
   
   @js.native
   sealed trait tabs
     extends StObject
        with ClonableTeamParts
-  @scala.inline
-  def tabs: tabs = "tabs".asInstanceOf[tabs]
+  inline def tabs: tabs = "tabs".asInstanceOf[tabs]
   
   @js.native
   sealed trait tcp
     extends StObject
        with SecurityNetworkProtocol
-  @scala.inline
-  def tcp: tcp = "tcp".asInstanceOf[tcp]
+  inline def tcp: tcp = "tcp".asInstanceOf[tcp]
   
   @js.native
   sealed trait teacher
     extends StObject
        with EducationUserRole
-  @scala.inline
-  def teacher: teacher = "teacher".asInstanceOf[teacher]
+  inline def teacher: teacher = "teacher".asInstanceOf[teacher]
   
   @js.native
   sealed trait team
     extends StObject
        with WindowsDeviceType
-  @scala.inline
-  def team: team = "team".asInstanceOf[team]
+  inline def team: team = "team".asInstanceOf[team]
   
   @js.native
   sealed trait teams
     extends StObject
        with ProductFamily
-  @scala.inline
-  def teams: teams = "teams".asInstanceOf[teams]
+  inline def teams: teams = "teams".asInstanceOf[teams]
   
   @js.native
   sealed trait teamsForBusiness
     extends StObject
        with OnlineMeetingProviderType
-  @scala.inline
-  def teamsForBusiness: teamsForBusiness = "teamsForBusiness".asInstanceOf[teamsForBusiness]
+  inline def teamsForBusiness: teamsForBusiness = "teamsForBusiness".asInstanceOf[teamsForBusiness]
   
   @js.native
   sealed trait ten
     extends StObject
        with MiracastChannel
-  @scala.inline
-  def ten: ten = "ten".asInstanceOf[ten]
+  inline def ten: ten = "ten".asInstanceOf[ten]
   
   @js.native
   sealed trait tentative
     extends StObject
        with FreeBusyStatus
-  @scala.inline
-  def tentative: tentative = "tentative".asInstanceOf[tentative]
+  inline def tentative: tentative = "tentative".asInstanceOf[tentative]
   
   @js.native
   sealed trait tentativelyAccepted
     extends StObject
        with ResponseType
-  @scala.inline
-  def tentativelyAccepted: tentativelyAccepted = "tentativelyAccepted".asInstanceOf[tentativelyAccepted]
+  inline def tentativelyAccepted: tentativelyAccepted = "tentativelyAccepted".asInstanceOf[tentativelyAccepted]
   
   @js.native
   sealed trait terminated
     extends StObject
        with CallState
        with DeviceManagementPartnerTenantState
-  @scala.inline
-  def terminated: terminated = "terminated".asInstanceOf[terminated]
+  inline def terminated: terminated = "terminated".asInstanceOf[terminated]
   
   @js.native
   sealed trait terminating
     extends StObject
        with CallState
-  @scala.inline
-  def terminating: terminating = "terminating".asInstanceOf[terminating]
+  inline def terminating: terminating = "terminating".asInstanceOf[terminating]
   
   @js.native
   sealed trait text
     extends StObject
        with BodyType
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
+  inline def text: text = "text".asInstanceOf[text]
   
   @js.native
   sealed trait third
     extends StObject
        with WeekIndex
-  @scala.inline
-  def third: third = "third".asInstanceOf[third]
+  inline def third: third = "third".asInstanceOf[third]
   
   @js.native
   sealed trait thirtySix
     extends StObject
        with MiracastChannel
-  @scala.inline
-  def thirtySix: thirtySix = "thirtySix".asInstanceOf[thirtySix]
+  inline def thirtySix: thirtySix = "thirtySix".asInstanceOf[thirtySix]
   
   @js.native
   sealed trait three
     extends StObject
        with MiracastChannel
-  @scala.inline
-  def three: three = "three".asInstanceOf[three]
+  inline def three: three = "three".asInstanceOf[three]
   
   @js.native
   sealed trait thursday
     extends StObject
        with DayOfWeek
        with WeeklySchedule
-  @scala.inline
-  def thursday: thursday = "thursday".asInstanceOf[thursday]
+  inline def thursday: thursday = "thursday".asInstanceOf[thursday]
   
   @js.native
   sealed trait timeout
     extends StObject
        with OperationResult
-  @scala.inline
-  def timeout: timeout = "timeout".asInstanceOf[timeout]
+  inline def timeout: timeout = "timeout".asInstanceOf[timeout]
   
   @js.native
   sealed trait tokenType
     extends StObject
        with MdmAppConfigKeyType
-  @scala.inline
-  def tokenType: tokenType = "tokenType".asInstanceOf[tokenType]
+  inline def tokenType: tokenType = "tokenType".asInstanceOf[tokenType]
   
   @js.native
   sealed trait tone0
     extends StObject
        with Tone
-  @scala.inline
-  def tone0: tone0 = "tone0".asInstanceOf[tone0]
+  inline def tone0: tone0 = "tone0".asInstanceOf[tone0]
   
   @js.native
   sealed trait tone1
     extends StObject
        with Tone
-  @scala.inline
-  def tone1: tone1 = "tone1".asInstanceOf[tone1]
+  inline def tone1: tone1 = "tone1".asInstanceOf[tone1]
   
   @js.native
   sealed trait tone2
     extends StObject
        with Tone
-  @scala.inline
-  def tone2: tone2 = "tone2".asInstanceOf[tone2]
+  inline def tone2: tone2 = "tone2".asInstanceOf[tone2]
   
   @js.native
   sealed trait tone3
     extends StObject
        with Tone
-  @scala.inline
-  def tone3: tone3 = "tone3".asInstanceOf[tone3]
+  inline def tone3: tone3 = "tone3".asInstanceOf[tone3]
   
   @js.native
   sealed trait tone4
     extends StObject
        with Tone
-  @scala.inline
-  def tone4: tone4 = "tone4".asInstanceOf[tone4]
+  inline def tone4: tone4 = "tone4".asInstanceOf[tone4]
   
   @js.native
   sealed trait tone5
     extends StObject
        with Tone
-  @scala.inline
-  def tone5: tone5 = "tone5".asInstanceOf[tone5]
+  inline def tone5: tone5 = "tone5".asInstanceOf[tone5]
   
   @js.native
   sealed trait tone6
     extends StObject
        with Tone
-  @scala.inline
-  def tone6: tone6 = "tone6".asInstanceOf[tone6]
+  inline def tone6: tone6 = "tone6".asInstanceOf[tone6]
   
   @js.native
   sealed trait tone7
     extends StObject
        with Tone
-  @scala.inline
-  def tone7: tone7 = "tone7".asInstanceOf[tone7]
+  inline def tone7: tone7 = "tone7".asInstanceOf[tone7]
   
   @js.native
   sealed trait tone8
     extends StObject
        with Tone
-  @scala.inline
-  def tone8: tone8 = "tone8".asInstanceOf[tone8]
+  inline def tone8: tone8 = "tone8".asInstanceOf[tone8]
   
   @js.native
   sealed trait tone9
     extends StObject
        with Tone
-  @scala.inline
-  def tone9: tone9 = "tone9".asInstanceOf[tone9]
+  inline def tone9: tone9 = "tone9".asInstanceOf[tone9]
   
   @js.native
   sealed trait totalMemberCount
     extends StObject
        with MailTipsType
-  @scala.inline
-  def totalMemberCount: totalMemberCount = "totalMemberCount".asInstanceOf[totalMemberCount]
+  inline def totalMemberCount: totalMemberCount = "totalMemberCount".asInstanceOf[totalMemberCount]
   
   @js.native
   sealed trait trafficCone
     extends StObject
        with TimeOffReasonIconType
-  @scala.inline
-  def trafficCone: trafficCone = "trafficCone".asInstanceOf[trafficCone]
+  inline def trafficCone: trafficCone = "trafficCone".asInstanceOf[trafficCone]
   
   @js.native
   sealed trait transferAccepted
     extends StObject
        with CallState
-  @scala.inline
-  def transferAccepted: transferAccepted = "transferAccepted".asInstanceOf[transferAccepted]
+  inline def transferAccepted: transferAccepted = "transferAccepted".asInstanceOf[transferAccepted]
   
   @js.native
   sealed trait transferring
     extends StObject
        with CallState
-  @scala.inline
-  def transferring: transferring = "transferring".asInstanceOf[transferring]
+  inline def transferring: transferring = "transferring".asInstanceOf[transferring]
   
   @js.native
   sealed trait transientError
     extends StObject
        with MobileAppContentFileUploadState
-  @scala.inline
-  def transientError: transientError = "transientError".asInstanceOf[transientError]
+  inline def transientError: transientError = "transientError".asInstanceOf[transientError]
   
   @js.native
   sealed trait truePositive
     extends StObject
        with AlertFeedback
-  @scala.inline
-  def truePositive: truePositive = "truePositive".asInstanceOf[truePositive]
+  inline def truePositive: truePositive = "truePositive".asInstanceOf[truePositive]
   
   @js.native
   sealed trait tuesday
     extends StObject
        with DayOfWeek
        with WeeklySchedule
-  @scala.inline
-  def tuesday: tuesday = "tuesday".asInstanceOf[tuesday]
+  inline def tuesday: tuesday = "tuesday".asInstanceOf[tuesday]
   
   @js.native
   sealed trait tunnel
     extends StObject
        with NetworkConnectionType
-  @scala.inline
-  def tunnel: tunnel = "tunnel".asInstanceOf[tunnel]
+  inline def tunnel: tunnel = "tunnel".asInstanceOf[tunnel]
   
   @js.native
   sealed trait two
     extends StObject
        with MiracastChannel
-  @scala.inline
-  def two: two = "two".asInstanceOf[two]
+  inline def two: two = "two".asInstanceOf[two]
   
   @js.native
   sealed trait typing
     extends StObject
        with ChatMessageType
-  @scala.inline
-  def typing: typing = "typing".asInstanceOf[typing]
+  inline def typing: typing = "typing".asInstanceOf[typing]
   
   @js.native
   sealed trait udp
     extends StObject
        with SecurityNetworkProtocol
-  @scala.inline
-  def udp: udp = "udp".asInstanceOf[udp]
+  inline def udp: udp = "udp".asInstanceOf[udp]
   
   @js.native
   sealed trait umbrella
     extends StObject
        with TimeOffReasonIconType
-  @scala.inline
-  def umbrella: umbrella = "umbrella".asInstanceOf[umbrella]
+  inline def umbrella: umbrella = "umbrella".asInstanceOf[umbrella]
   
   @js.native
   sealed trait unarchiveTeam
     extends StObject
        with TeamsAsyncOperationType
-  @scala.inline
-  def unarchiveTeam: unarchiveTeam = "unarchiveTeam".asInstanceOf[unarchiveTeam]
+  inline def unarchiveTeam: unarchiveTeam = "unarchiveTeam".asInstanceOf[unarchiveTeam]
   
   @js.native
   sealed trait unavailable
@@ -6733,65 +5858,56 @@ object microsoftGraphStrings {
        with DeviceManagementPartnerTenantState
        with DeviceThreatProtectionLevel
        with MobileThreatPartnerTenantState
-  @scala.inline
-  def unavailable: unavailable = "unavailable".asInstanceOf[unavailable]
+  inline def unavailable: unavailable = "unavailable".asInstanceOf[unavailable]
   
   @js.native
   sealed trait unblock
     extends StObject
        with ThreatExpectedAssessment
-  @scala.inline
-  def unblock: unblock = "unblock".asInstanceOf[unblock]
+  inline def unblock: unblock = "unblock".asInstanceOf[unblock]
   
   @js.native
   sealed trait undefined
     extends StObject
        with ThreatAssessmentRequestSource
        with ThreatCategory
-  @scala.inline
-  def undefined: undefined = "undefined".asInstanceOf[undefined]
+  inline def undefined: undefined = "undefined".asInstanceOf[undefined]
   
   @js.native
   sealed trait unfamiliarFeatures
     extends StObject
        with RiskEventType
-  @scala.inline
-  def unfamiliarFeatures: unfamiliarFeatures = "unfamiliarFeatures".asInstanceOf[unfamiliarFeatures]
+  inline def unfamiliarFeatures: unfamiliarFeatures = "unfamiliarFeatures".asInstanceOf[unfamiliarFeatures]
   
   @js.native
   sealed trait unifiedGroups
     extends StObject
        with GroupType
-  @scala.inline
-  def unifiedGroups: unifiedGroups = "unifiedGroups".asInstanceOf[unifiedGroups]
+  inline def unifiedGroups: unifiedGroups = "unifiedGroups".asInstanceOf[unifiedGroups]
   
   @js.native
   sealed trait uninstall
     extends StObject
        with InstallIntent
-  @scala.inline
-  def uninstall: uninstall = "uninstall".asInstanceOf[uninstall]
+  inline def uninstall: uninstall = "uninstall".asInstanceOf[uninstall]
   
   @js.native
   sealed trait uninstallFailed
     extends StObject
        with InstallState
-  @scala.inline
-  def uninstallFailed: uninstallFailed = "uninstallFailed".asInstanceOf[uninstallFailed]
+  inline def uninstallFailed: uninstallFailed = "uninstallFailed".asInstanceOf[uninstallFailed]
   
   @js.native
   sealed trait universal
     extends StObject
        with ApplicationType
-  @scala.inline
-  def universal: universal = "universal".asInstanceOf[universal]
+  inline def universal: universal = "universal".asInstanceOf[universal]
   
   @js.native
   sealed trait universalChildren
     extends StObject
        with RatingUnitedKingdomMoviesType
-  @scala.inline
-  def universalChildren: universalChildren = "universalChildren".asInstanceOf[universalChildren]
+  inline def universalChildren: universalChildren = "universalChildren".asInstanceOf[universalChildren]
   
   @js.native
   sealed trait unknownFutureValue
@@ -6869,15 +5985,13 @@ object microsoftGraphStrings {
        with WifiRadioType
        with WorkforceIntegrationEncryptionProtocol
        with WorkforceIntegrationSupportedEntities
-  @scala.inline
-  def unknownFutureValue: unknownFutureValue = "unknownFutureValue".asInstanceOf[unknownFutureValue]
+  inline def unknownFutureValue: unknownFutureValue = "unknownFutureValue".asInstanceOf[unknownFutureValue]
   
   @js.native
   sealed trait unknownLocation
     extends StObject
        with DeviceManagementExchangeAccessStateReason
-  @scala.inline
-  def unknownLocation: unknownLocation = "unknownLocation".asInstanceOf[unknownLocation]
+  inline def unknownLocation: unknownLocation = "unknownLocation".asInstanceOf[unknownLocation]
   
   @js.native
   sealed trait unknown_
@@ -6930,22 +6044,19 @@ object microsoftGraphStrings {
        with VppTokenState
        with WifiBand
        with WifiRadioType
-  @scala.inline
-  def unknown_ : unknown_ = "unknown".asInstanceOf[unknown_]
+  inline def unknown_ : unknown_ = "unknown".asInstanceOf[unknown_]
   
   @js.native
   sealed trait unknownfuturevalue_
     extends StObject
        with EntityType
-  @scala.inline
-  def unknownfuturevalue_ : unknownfuturevalue_ = "unknownfuturevalue".asInstanceOf[unknownfuturevalue_]
+  inline def unknownfuturevalue_ : unknownfuturevalue_ = "unknownfuturevalue".asInstanceOf[unknownfuturevalue_]
   
   @js.native
   sealed trait unlikelyTravel
     extends StObject
        with RiskEventType
-  @scala.inline
-  def unlikelyTravel: unlikelyTravel = "unlikelyTravel".asInstanceOf[unlikelyTravel]
+  inline def unlikelyTravel: unlikelyTravel = "unlikelyTravel".asInstanceOf[unlikelyTravel]
   
   @js.native
   sealed trait unresponsive
@@ -6953,66 +6064,57 @@ object microsoftGraphStrings {
        with DeviceManagementPartnerTenantState
        with ManagedDevicePartnerReportedHealthState
        with MobileThreatPartnerTenantState
-  @scala.inline
-  def unresponsive: unresponsive = "unresponsive".asInstanceOf[unresponsive]
+  inline def unresponsive: unresponsive = "unresponsive".asInstanceOf[unresponsive]
   
   @js.native
   sealed trait unrestricted
     extends StObject
        with ActivityDomain
-  @scala.inline
-  def unrestricted: unrestricted = "unrestricted".asInstanceOf[unrestricted]
+  inline def unrestricted: unrestricted = "unrestricted".asInstanceOf[unrestricted]
   
   @js.native
   sealed trait untrusted
     extends StObject
        with ProcessIntegrityLevel
-  @scala.inline
-  def untrusted: untrusted = "untrusted".asInstanceOf[untrusted]
+  inline def untrusted: untrusted = "untrusted".asInstanceOf[untrusted]
   
   @js.native
   sealed trait updated
     extends StObject
        with ChangeType
        with Status
-  @scala.inline
-  def updated: updated = "updated".asInstanceOf[updated]
+  inline def updated: updated = "updated".asInstanceOf[updated]
   
   @js.native
   sealed trait urgent
     extends StObject
        with ChatMessageImportance
-  @scala.inline
-  def urgent: urgent = "urgent".asInstanceOf[urgent]
+  inline def urgent: urgent = "urgent".asInstanceOf[urgent]
   
   @js.native
   sealed trait url
     extends StObject
        with ThreatAssessmentContentType
-  @scala.inline
-  def url: url = "url".asInstanceOf[url]
+  inline def url: url = "url".asInstanceOf[url]
   
   @js.native
   sealed trait useDeviceSettings
     extends StObject
        with ManagedAppDataEncryptionType
-  @scala.inline
-  def useDeviceSettings: useDeviceSettings = "useDeviceSettings".asInstanceOf[useDeviceSettings]
+  inline def useDeviceSettings: useDeviceSettings = "useDeviceSettings".asInstanceOf[useDeviceSettings]
   
   @js.native
   sealed trait user
     extends StObject
        with RunAsAccountType
        with ThreatAssessmentRequestSource
-  @scala.inline
-  def user: user = "user".asInstanceOf[user]
+  inline def user: user = "user".asInstanceOf[user]
   
   @js.native
   sealed trait userAbandonment
     extends StObject
        with DeviceEnrollmentFailureReason
-  @scala.inline
-  def userAbandonment: userAbandonment = "userAbandonment".asInstanceOf[userAbandonment]
+  inline def userAbandonment: userAbandonment = "userAbandonment".asInstanceOf[userAbandonment]
   
   @js.native
   sealed trait userDefined
@@ -7036,71 +6138,61 @@ object microsoftGraphStrings {
        with WindowsStartMenuModeType
        with WindowsUpdateType
        with WindowsUserAccountControlSettings
-  @scala.inline
-  def userDefined: userDefined = "userDefined".asInstanceOf[userDefined]
+  inline def userDefined: userDefined = "userDefined".asInstanceOf[userDefined]
   
   @js.native
   sealed trait userEnrollment
     extends StObject
        with DeviceEnrollmentType
-  @scala.inline
-  def userEnrollment: userEnrollment = "userEnrollment".asInstanceOf[userEnrollment]
+  inline def userEnrollment: userEnrollment = "userEnrollment".asInstanceOf[userEnrollment]
   
   @js.native
   sealed trait userPassedMFADrivenByRiskBasedPolicy
     extends StObject
        with RiskDetail
-  @scala.inline
-  def userPassedMFADrivenByRiskBasedPolicy: userPassedMFADrivenByRiskBasedPolicy = "userPassedMFADrivenByRiskBasedPolicy".asInstanceOf[userPassedMFADrivenByRiskBasedPolicy]
+  inline def userPassedMFADrivenByRiskBasedPolicy: userPassedMFADrivenByRiskBasedPolicy = "userPassedMFADrivenByRiskBasedPolicy".asInstanceOf[userPassedMFADrivenByRiskBasedPolicy]
   
   @js.native
   sealed trait userPerformedSecuredPasswordChange
     extends StObject
        with RiskDetail
-  @scala.inline
-  def userPerformedSecuredPasswordChange: userPerformedSecuredPasswordChange = "userPerformedSecuredPasswordChange".asInstanceOf[userPerformedSecuredPasswordChange]
+  inline def userPerformedSecuredPasswordChange: userPerformedSecuredPasswordChange = "userPerformedSecuredPasswordChange".asInstanceOf[userPerformedSecuredPasswordChange]
   
   @js.native
   sealed trait userPerformedSecuredPasswordReset
     extends StObject
        with RiskDetail
-  @scala.inline
-  def userPerformedSecuredPasswordReset: userPerformedSecuredPasswordReset = "userPerformedSecuredPasswordReset".asInstanceOf[userPerformedSecuredPasswordReset]
+  inline def userPerformedSecuredPasswordReset: userPerformedSecuredPasswordReset = "userPerformedSecuredPasswordReset".asInstanceOf[userPerformedSecuredPasswordReset]
   
   @js.native
   sealed trait userShiftPreferences
     extends StObject
        with WorkforceIntegrationSupportedEntities
-  @scala.inline
-  def userShiftPreferences: userShiftPreferences = "userShiftPreferences".asInstanceOf[userShiftPreferences]
+  inline def userShiftPreferences: userShiftPreferences = "userShiftPreferences".asInstanceOf[userShiftPreferences]
   
   @js.native
   sealed trait userValidation
     extends StObject
        with DeviceEnrollmentFailureReason
-  @scala.inline
-  def userValidation: userValidation = "userValidation".asInstanceOf[userValidation]
+  inline def userValidation: userValidation = "userValidation".asInstanceOf[userValidation]
   
   @js.native
   sealed trait usersDefault
     extends StObject
        with RegistryHive
-  @scala.inline
-  def usersDefault: usersDefault = "usersDefault".asInstanceOf[usersDefault]
+  inline def usersDefault: usersDefault = "usersDefault".asInstanceOf[usersDefault]
   
   @js.native
   sealed trait utF8
     extends StObject
        with FirewallPreSharedKeyEncodingMethodType
-  @scala.inline
-  def utF8: utF8 = "utF8".asInstanceOf[utF8]
+  inline def utF8: utF8 = "utF8".asInstanceOf[utF8]
   
   @js.native
   sealed trait valid
     extends StObject
        with VppTokenState
-  @scala.inline
-  def valid: valid = "valid".asInstanceOf[valid]
+  inline def valid: valid = "valid".asInstanceOf[valid]
   
   @js.native
   sealed trait version
@@ -7108,159 +6200,137 @@ object microsoftGraphStrings {
        with Win32LobAppFileSystemOperationType
        with Win32LobAppPowerShellScriptRuleOperationType
        with Win32LobAppRegistryRuleOperationType
-  @scala.inline
-  def version: version = "version".asInstanceOf[version]
+  inline def version: version = "version".asInstanceOf[version]
   
   @js.native
   sealed trait video
     extends StObject
        with Modality
        with typings.microsoftGraph.mod.CallRecords.Modality
-  @scala.inline
-  def video: video = "video".asInstanceOf[video]
+  inline def video: video = "video".asInstanceOf[video]
   
   @js.native
   sealed trait videoBasedScreenSharing
     extends StObject
        with Modality
        with typings.microsoftGraph.mod.CallRecords.Modality
-  @scala.inline
-  def videoBasedScreenSharing: videoBasedScreenSharing = "videoBasedScreenSharing".asInstanceOf[videoBasedScreenSharing]
+  inline def videoBasedScreenSharing: videoBasedScreenSharing = "videoBasedScreenSharing".asInstanceOf[videoBasedScreenSharing]
   
   @js.native
   sealed trait viewCalendar
     extends StObject
        with CalendarSharingAction
-  @scala.inline
-  def viewCalendar: viewCalendar = "viewCalendar".asInstanceOf[viewCalendar]
+  inline def viewCalendar: viewCalendar = "viewCalendar".asInstanceOf[viewCalendar]
   
   @js.native
   sealed trait viewer
     extends StObject
        with ScreenSharingRole
-  @scala.inline
-  def viewer: viewer = "viewer".asInstanceOf[viewer]
+  inline def viewer: viewer = "viewer".asInstanceOf[viewer]
   
   @js.native
   sealed trait voicemail
     extends StObject
        with EndpointType
        with ServiceRole
-  @scala.inline
-  def voicemail: voicemail = "voicemail".asInstanceOf[voicemail]
+  inline def voicemail: voicemail = "voicemail".asInstanceOf[voicemail]
   
   @js.native
   sealed trait waitingOnOthers
     extends StObject
        with TaskStatus
-  @scala.inline
-  def waitingOnOthers: waitingOnOthers = "waitingOnOthers".asInstanceOf[waitingOnOthers]
+  inline def waitingOnOthers: waitingOnOthers = "waitingOnOthers".asInstanceOf[waitingOnOthers]
   
   @js.native
   sealed trait warning
     extends StObject
        with DeviceManagementSubscriptionState
-  @scala.inline
-  def warning: warning = "warning".asInstanceOf[warning]
+  inline def warning: warning = "warning".asInstanceOf[warning]
   
   @js.native
   sealed trait weather
     extends StObject
        with TimeOffReasonIconType
-  @scala.inline
-  def weather: weather = "weather".asInstanceOf[weather]
+  inline def weather: weather = "weather".asInstanceOf[weather]
   
   @js.native
   sealed trait web
     extends StObject
        with ClientPlatform
-  @scala.inline
-  def web: web = "web".asInstanceOf[web]
+  inline def web: web = "web".asInstanceOf[web]
   
   @js.native
   sealed trait wednesday
     extends StObject
        with DayOfWeek
        with WeeklySchedule
-  @scala.inline
-  def wednesday: wednesday = "wednesday".asInstanceOf[wednesday]
+  inline def wednesday: wednesday = "wednesday".asInstanceOf[wednesday]
   
   @js.native
   sealed trait weekly
     extends StObject
        with RecurrencePatternType
-  @scala.inline
-  def weekly: weekly = "weekly".asInstanceOf[weekly]
+  inline def weekly: weekly = "weekly".asInstanceOf[weekly]
   
   @js.native
   sealed trait whenDeviceLocked
     extends StObject
        with ManagedAppDataEncryptionType
-  @scala.inline
-  def whenDeviceLocked: whenDeviceLocked = "whenDeviceLocked".asInstanceOf[whenDeviceLocked]
+  inline def whenDeviceLocked: whenDeviceLocked = "whenDeviceLocked".asInstanceOf[whenDeviceLocked]
   
   @js.native
   sealed trait whenDeviceLockedExceptOpenFiles
     extends StObject
        with ManagedAppDataEncryptionType
-  @scala.inline
-  def whenDeviceLockedExceptOpenFiles: whenDeviceLockedExceptOpenFiles = "whenDeviceLockedExceptOpenFiles".asInstanceOf[whenDeviceLockedExceptOpenFiles]
+  inline def whenDeviceLockedExceptOpenFiles: whenDeviceLockedExceptOpenFiles = "whenDeviceLockedExceptOpenFiles".asInstanceOf[whenDeviceLockedExceptOpenFiles]
   
   @js.native
   sealed trait white
     extends StObject
        with ScheduleEntityTheme
-  @scala.inline
-  def white: white = "white".asInstanceOf[white]
+  inline def white: white = "white".asInstanceOf[white]
   
   @js.native
   sealed trait wifi
     extends StObject
        with NetworkConnectionType
-  @scala.inline
-  def wifi: wifi = "wifi".asInstanceOf[wifi]
+  inline def wifi: wifi = "wifi".asInstanceOf[wifi]
   
   @js.native
   sealed trait wifi80211a
     extends StObject
        with WifiRadioType
-  @scala.inline
-  def wifi80211a: wifi80211a = "wifi80211a".asInstanceOf[wifi80211a]
+  inline def wifi80211a: wifi80211a = "wifi80211a".asInstanceOf[wifi80211a]
   
   @js.native
   sealed trait wifi80211ac
     extends StObject
        with WifiRadioType
-  @scala.inline
-  def wifi80211ac: wifi80211ac = "wifi80211ac".asInstanceOf[wifi80211ac]
+  inline def wifi80211ac: wifi80211ac = "wifi80211ac".asInstanceOf[wifi80211ac]
   
   @js.native
   sealed trait wifi80211ax
     extends StObject
        with WifiRadioType
-  @scala.inline
-  def wifi80211ax: wifi80211ax = "wifi80211ax".asInstanceOf[wifi80211ax]
+  inline def wifi80211ax: wifi80211ax = "wifi80211ax".asInstanceOf[wifi80211ax]
   
   @js.native
   sealed trait wifi80211b
     extends StObject
        with WifiRadioType
-  @scala.inline
-  def wifi80211b: wifi80211b = "wifi80211b".asInstanceOf[wifi80211b]
+  inline def wifi80211b: wifi80211b = "wifi80211b".asInstanceOf[wifi80211b]
   
   @js.native
   sealed trait wifi80211g
     extends StObject
        with WifiRadioType
-  @scala.inline
-  def wifi80211g: wifi80211g = "wifi80211g".asInstanceOf[wifi80211g]
+  inline def wifi80211g: wifi80211g = "wifi80211g".asInstanceOf[wifi80211g]
   
   @js.native
   sealed trait wifi80211n
     extends StObject
        with WifiRadioType
-  @scala.inline
-  def wifi80211n: wifi80211n = "wifi80211n".asInstanceOf[wifi80211n]
+  inline def wifi80211n: wifi80211n = "wifi80211n".asInstanceOf[wifi80211n]
   
   @js.native
   sealed trait windows
@@ -7268,259 +6338,222 @@ object microsoftGraphStrings {
        with ClientPlatform
        with ConditionalAccessDevicePlatform
        with TimeZoneStandard
-  @scala.inline
-  def windows: windows = "windows".asInstanceOf[windows]
+  inline def windows: windows = "windows".asInstanceOf[windows]
   
   @js.native
   sealed trait windows10AndLater
     extends StObject
        with PolicyPlatformType
-  @scala.inline
-  def windows10AndLater: windows10AndLater = "windows10AndLater".asInstanceOf[windows10AndLater]
+  inline def windows10AndLater: windows10AndLater = "windows10AndLater".asInstanceOf[windows10AndLater]
   
   @js.native
   sealed trait windows10Education
     extends StObject
        with Windows10EditionType
-  @scala.inline
-  def windows10Education: windows10Education = "windows10Education".asInstanceOf[windows10Education]
+  inline def windows10Education: windows10Education = "windows10Education".asInstanceOf[windows10Education]
   
   @js.native
   sealed trait windows10EducationN
     extends StObject
        with Windows10EditionType
-  @scala.inline
-  def windows10EducationN: windows10EducationN = "windows10EducationN".asInstanceOf[windows10EducationN]
+  inline def windows10EducationN: windows10EducationN = "windows10EducationN".asInstanceOf[windows10EducationN]
   
   @js.native
   sealed trait windows10Enterprise
     extends StObject
        with Windows10EditionType
-  @scala.inline
-  def windows10Enterprise: windows10Enterprise = "windows10Enterprise".asInstanceOf[windows10Enterprise]
+  inline def windows10Enterprise: windows10Enterprise = "windows10Enterprise".asInstanceOf[windows10Enterprise]
   
   @js.native
   sealed trait windows10EnterpriseN
     extends StObject
        with Windows10EditionType
-  @scala.inline
-  def windows10EnterpriseN: windows10EnterpriseN = "windows10EnterpriseN".asInstanceOf[windows10EnterpriseN]
+  inline def windows10EnterpriseN: windows10EnterpriseN = "windows10EnterpriseN".asInstanceOf[windows10EnterpriseN]
   
   @js.native
   sealed trait windows10HolographicEnterprise
     extends StObject
        with Windows10EditionType
-  @scala.inline
-  def windows10HolographicEnterprise: windows10HolographicEnterprise = "windows10HolographicEnterprise".asInstanceOf[windows10HolographicEnterprise]
+  inline def windows10HolographicEnterprise: windows10HolographicEnterprise = "windows10HolographicEnterprise".asInstanceOf[windows10HolographicEnterprise]
   
   @js.native
   sealed trait windows10MobileEnterprise
     extends StObject
        with Windows10EditionType
-  @scala.inline
-  def windows10MobileEnterprise: windows10MobileEnterprise = "windows10MobileEnterprise".asInstanceOf[windows10MobileEnterprise]
+  inline def windows10MobileEnterprise: windows10MobileEnterprise = "windows10MobileEnterprise".asInstanceOf[windows10MobileEnterprise]
   
   @js.native
   sealed trait windows10Professional
     extends StObject
        with Windows10EditionType
-  @scala.inline
-  def windows10Professional: windows10Professional = "windows10Professional".asInstanceOf[windows10Professional]
+  inline def windows10Professional: windows10Professional = "windows10Professional".asInstanceOf[windows10Professional]
   
   @js.native
   sealed trait windows10ProfessionalEducation
     extends StObject
        with Windows10EditionType
-  @scala.inline
-  def windows10ProfessionalEducation: windows10ProfessionalEducation = "windows10ProfessionalEducation".asInstanceOf[windows10ProfessionalEducation]
+  inline def windows10ProfessionalEducation: windows10ProfessionalEducation = "windows10ProfessionalEducation".asInstanceOf[windows10ProfessionalEducation]
   
   @js.native
   sealed trait windows10ProfessionalEducationN
     extends StObject
        with Windows10EditionType
-  @scala.inline
-  def windows10ProfessionalEducationN: windows10ProfessionalEducationN = "windows10ProfessionalEducationN".asInstanceOf[windows10ProfessionalEducationN]
+  inline def windows10ProfessionalEducationN: windows10ProfessionalEducationN = "windows10ProfessionalEducationN".asInstanceOf[windows10ProfessionalEducationN]
   
   @js.native
   sealed trait windows10ProfessionalN
     extends StObject
        with Windows10EditionType
-  @scala.inline
-  def windows10ProfessionalN: windows10ProfessionalN = "windows10ProfessionalN".asInstanceOf[windows10ProfessionalN]
+  inline def windows10ProfessionalN: windows10ProfessionalN = "windows10ProfessionalN".asInstanceOf[windows10ProfessionalN]
   
   @js.native
   sealed trait windows10ProfessionalWorkstation
     extends StObject
        with Windows10EditionType
-  @scala.inline
-  def windows10ProfessionalWorkstation: windows10ProfessionalWorkstation = "windows10ProfessionalWorkstation".asInstanceOf[windows10ProfessionalWorkstation]
+  inline def windows10ProfessionalWorkstation: windows10ProfessionalWorkstation = "windows10ProfessionalWorkstation".asInstanceOf[windows10ProfessionalWorkstation]
   
   @js.native
   sealed trait windows10ProfessionalWorkstationN
     extends StObject
        with Windows10EditionType
-  @scala.inline
-  def windows10ProfessionalWorkstationN: windows10ProfessionalWorkstationN = "windows10ProfessionalWorkstationN".asInstanceOf[windows10ProfessionalWorkstationN]
+  inline def windows10ProfessionalWorkstationN: windows10ProfessionalWorkstationN = "windows10ProfessionalWorkstationN".asInstanceOf[windows10ProfessionalWorkstationN]
   
   @js.native
   sealed trait windows81AndLater
     extends StObject
        with PolicyPlatformType
-  @scala.inline
-  def windows81AndLater: windows81AndLater = "windows81AndLater".asInstanceOf[windows81AndLater]
+  inline def windows81AndLater: windows81AndLater = "windows81AndLater".asInstanceOf[windows81AndLater]
   
   @js.native
   sealed trait windowsAutoEnrollment
     extends StObject
        with DeviceEnrollmentType
-  @scala.inline
-  def windowsAutoEnrollment: windowsAutoEnrollment = "windowsAutoEnrollment".asInstanceOf[windowsAutoEnrollment]
+  inline def windowsAutoEnrollment: windowsAutoEnrollment = "windowsAutoEnrollment".asInstanceOf[windowsAutoEnrollment]
   
   @js.native
   sealed trait windowsAzureADJoin
     extends StObject
        with DeviceEnrollmentType
-  @scala.inline
-  def windowsAzureADJoin: windowsAzureADJoin = "windowsAzureADJoin".asInstanceOf[windowsAzureADJoin]
+  inline def windowsAzureADJoin: windowsAzureADJoin = "windowsAzureADJoin".asInstanceOf[windowsAzureADJoin]
   
   @js.native
   sealed trait windowsBulkAzureDomainJoin
     extends StObject
        with DeviceEnrollmentType
-  @scala.inline
-  def windowsBulkAzureDomainJoin: windowsBulkAzureDomainJoin = "windowsBulkAzureDomainJoin".asInstanceOf[windowsBulkAzureDomainJoin]
+  inline def windowsBulkAzureDomainJoin: windowsBulkAzureDomainJoin = "windowsBulkAzureDomainJoin".asInstanceOf[windowsBulkAzureDomainJoin]
   
   @js.native
   sealed trait windowsBulkUserless
     extends StObject
        with DeviceEnrollmentType
-  @scala.inline
-  def windowsBulkUserless: windowsBulkUserless = "windowsBulkUserless".asInstanceOf[windowsBulkUserless]
+  inline def windowsBulkUserless: windowsBulkUserless = "windowsBulkUserless".asInstanceOf[windowsBulkUserless]
   
   @js.native
   sealed trait windowsCoManagement
     extends StObject
        with DeviceEnrollmentType
-  @scala.inline
-  def windowsCoManagement: windowsCoManagement = "windowsCoManagement".asInstanceOf[windowsCoManagement]
+  inline def windowsCoManagement: windowsCoManagement = "windowsCoManagement".asInstanceOf[windowsCoManagement]
   
   @js.native
   sealed trait windowsInsiderBuildFast
     extends StObject
        with WindowsUpdateType
-  @scala.inline
-  def windowsInsiderBuildFast: windowsInsiderBuildFast = "windowsInsiderBuildFast".asInstanceOf[windowsInsiderBuildFast]
+  inline def windowsInsiderBuildFast: windowsInsiderBuildFast = "windowsInsiderBuildFast".asInstanceOf[windowsInsiderBuildFast]
   
   @js.native
   sealed trait windowsInsiderBuildRelease
     extends StObject
        with WindowsUpdateType
-  @scala.inline
-  def windowsInsiderBuildRelease: windowsInsiderBuildRelease = "windowsInsiderBuildRelease".asInstanceOf[windowsInsiderBuildRelease]
+  inline def windowsInsiderBuildRelease: windowsInsiderBuildRelease = "windowsInsiderBuildRelease".asInstanceOf[windowsInsiderBuildRelease]
   
   @js.native
   sealed trait windowsInsiderBuildSlow
     extends StObject
        with WindowsUpdateType
-  @scala.inline
-  def windowsInsiderBuildSlow: windowsInsiderBuildSlow = "windowsInsiderBuildSlow".asInstanceOf[windowsInsiderBuildSlow]
+  inline def windowsInsiderBuildSlow: windowsInsiderBuildSlow = "windowsInsiderBuildSlow".asInstanceOf[windowsInsiderBuildSlow]
   
   @js.native
   sealed trait windowsPhone
     extends StObject
        with ConditionalAccessDevicePlatform
-  @scala.inline
-  def windowsPhone: windowsPhone = "windowsPhone".asInstanceOf[windowsPhone]
+  inline def windowsPhone: windowsPhone = "windowsPhone".asInstanceOf[windowsPhone]
   
   @js.native
   sealed trait windowsPhone81
     extends StObject
        with PolicyPlatformType
-  @scala.inline
-  def windowsPhone81: windowsPhone81 = "windowsPhone81".asInstanceOf[windowsPhone81]
+  inline def windowsPhone81: windowsPhone81 = "windowsPhone81".asInstanceOf[windowsPhone81]
   
   @js.native
   sealed trait wipe
     extends StObject
        with DeviceComplianceActionType
-  @scala.inline
-  def wipe: wipe = "wipe".asInstanceOf[wipe]
+  inline def wipe: wipe = "wipe".asInstanceOf[wipe]
   
   @js.native
   sealed trait wired
     extends StObject
        with NetworkConnectionType
-  @scala.inline
-  def wired: wired = "wired".asInstanceOf[wired]
+  inline def wired: wired = "wired".asInstanceOf[wired]
   
   @js.native
   sealed trait work
     extends StObject
        with ActivityDomain
        with WebsiteType
-  @scala.inline
-  def work: work = "work".asInstanceOf[work]
+  inline def work: work = "work".asInstanceOf[work]
   
   @js.native
   sealed trait workingElsewhere
     extends StObject
        with FreeBusyStatus
-  @scala.inline
-  def workingElsewhere: workingElsewhere = "workingElsewhere".asInstanceOf[workingElsewhere]
+  inline def workingElsewhere: workingElsewhere = "workingElsewhere".asInstanceOf[workingElsewhere]
   
   @js.native
   sealed trait write
     extends StObject
        with CalendarRoleType
-  @scala.inline
-  def write: write = "write".asInstanceOf[write]
+  inline def write: write = "write".asInstanceOf[write]
   
   @js.native
   sealed trait x64
     extends StObject
        with WindowsArchitecture
-  @scala.inline
-  def x64: x64 = "x64".asInstanceOf[x64]
+  inline def x64: x64 = "x64".asInstanceOf[x64]
   
   @js.native
   sealed trait x86
     extends StObject
        with WindowsArchitecture
-  @scala.inline
-  def x86: x86 = "x86".asInstanceOf[x86]
+  inline def x86: x86 = "x86".asInstanceOf[x86]
   
   @js.native
   sealed trait xtsAes128
     extends StObject
        with BitLockerEncryptionMethod
-  @scala.inline
-  def xtsAes128: xtsAes128 = "xtsAes128".asInstanceOf[xtsAes128]
+  inline def xtsAes128: xtsAes128 = "xtsAes128".asInstanceOf[xtsAes128]
   
   @js.native
   sealed trait xtsAes256
     extends StObject
        with BitLockerEncryptionMethod
-  @scala.inline
-  def xtsAes256: xtsAes256 = "xtsAes256".asInstanceOf[xtsAes256]
+  inline def xtsAes256: xtsAes256 = "xtsAes256".asInstanceOf[xtsAes256]
   
   @js.native
   sealed trait yellow
     extends StObject
        with ScheduleEntityTheme
-  @scala.inline
-  def yellow: yellow = "yellow".asInstanceOf[yellow]
+  inline def yellow: yellow = "yellow".asInstanceOf[yellow]
   
   @js.native
   sealed trait youngAdults
     extends StObject
        with RatingIrelandTelevisionType
-  @scala.inline
-  def youngAdults: youngAdults = "youngAdults".asInstanceOf[youngAdults]
+  inline def youngAdults: youngAdults = "youngAdults".asInstanceOf[youngAdults]
   
   @js.native
   sealed trait zeroTolerance
     extends StObject
        with DefenderCloudBlockLevelType
-  @scala.inline
-  def zeroTolerance: zeroTolerance = "zeroTolerance".asInstanceOf[zeroTolerance]
+  inline def zeroTolerance: zeroTolerance = "zeroTolerance".asInstanceOf[zeroTolerance]
 }

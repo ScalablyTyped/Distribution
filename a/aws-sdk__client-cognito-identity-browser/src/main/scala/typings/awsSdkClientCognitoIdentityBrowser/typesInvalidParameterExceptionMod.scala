@@ -50,17 +50,14 @@ object typesInvalidParameterExceptionMod {
   }
   object InvalidParameterException {
     
-    @scala.inline
-    def apply(): InvalidParameterException = {
+    inline def apply(): InvalidParameterException = {
       val __obj = js.Dynamic.literal(name = "InvalidParameterException")
       __obj.asInstanceOf[InvalidParameterException]
     }
     
-    @scala.inline
-    implicit class InvalidParameterExceptionMutableBuilder[Self <: InvalidParameterException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidParameterException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.InvalidParameterException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -75,20 +72,16 @@ object typesInvalidParameterExceptionMod {
   }
   object InvalidParameterExceptionDetails {
     
-    @scala.inline
-    def apply(): InvalidParameterExceptionDetails = {
+    inline def apply(): InvalidParameterExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InvalidParameterExceptionDetails]
     }
     
-    @scala.inline
-    implicit class InvalidParameterExceptionDetailsMutableBuilder[Self <: InvalidParameterExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidParameterExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

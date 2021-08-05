@@ -14,37 +14,27 @@ trait DynHeight extends StObject {
 }
 object DynHeight {
   
-  @scala.inline
-  def apply(): DynHeight = {
+  inline def apply(): DynHeight = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DynHeight]
   }
   
-  @scala.inline
-  implicit class DynHeightMutableBuilder[Self <: DynHeight] (val x: Self) extends AnyVal {
+  extension [Self <: DynHeight](x: Self) {
     
-    @scala.inline
-    def setDynHeight(value: Boolean): Self = StObject.set(x, "dynHeight", value.asInstanceOf[js.Any])
+    inline def setDynHeight(value: Boolean): Self = StObject.set(x, "dynHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynHeightUndefined: Self = StObject.set(x, "dynHeight", js.undefined)
+    inline def setDynHeightUndefined: Self = StObject.set(x, "dynHeight", js.undefined)
     
-    @scala.inline
-    def setDynWidth(value: Boolean): Self = StObject.set(x, "dynWidth", value.asInstanceOf[js.Any])
+    inline def setDynWidth(value: Boolean): Self = StObject.set(x, "dynWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynWidthUndefined: Self = StObject.set(x, "dynWidth", js.undefined)
+    inline def setDynWidthUndefined: Self = StObject.set(x, "dynWidth", js.undefined)
     
-    @scala.inline
-    def setInheritedAttrs(value: String | js.Array[String]): Self = StObject.set(x, "inheritedAttrs", value.asInstanceOf[js.Any])
+    inline def setInheritedAttrs(value: String | js.Array[String]): Self = StObject.set(x, "inheritedAttrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInheritedAttrsNull: Self = StObject.set(x, "inheritedAttrs", null)
+    inline def setInheritedAttrsNull: Self = StObject.set(x, "inheritedAttrs", null)
     
-    @scala.inline
-    def setInheritedAttrsUndefined: Self = StObject.set(x, "inheritedAttrs", js.undefined)
+    inline def setInheritedAttrsUndefined: Self = StObject.set(x, "inheritedAttrs", js.undefined)
     
-    @scala.inline
-    def setInheritedAttrsVarargs(value: String*): Self = StObject.set(x, "inheritedAttrs", js.Array(value :_*))
+    inline def setInheritedAttrsVarargs(value: String*): Self = StObject.set(x, "inheritedAttrs", js.Array(value :_*))
   }
 }

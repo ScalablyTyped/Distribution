@@ -28,34 +28,25 @@ trait GetCommentReactionsInput extends StObject {
 }
 object GetCommentReactionsInput {
   
-  @scala.inline
-  def apply(commentId: CommentId): GetCommentReactionsInput = {
+  inline def apply(commentId: CommentId): GetCommentReactionsInput = {
     val __obj = js.Dynamic.literal(commentId = commentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCommentReactionsInput]
   }
   
-  @scala.inline
-  implicit class GetCommentReactionsInputMutableBuilder[Self <: GetCommentReactionsInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetCommentReactionsInput](x: Self) {
     
-    @scala.inline
-    def setCommentId(value: CommentId): Self = StObject.set(x, "commentId", value.asInstanceOf[js.Any])
+    inline def setCommentId(value: CommentId): Self = StObject.set(x, "commentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setReactionUserArn(value: Arn): Self = StObject.set(x, "reactionUserArn", value.asInstanceOf[js.Any])
+    inline def setReactionUserArn(value: Arn): Self = StObject.set(x, "reactionUserArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReactionUserArnUndefined: Self = StObject.set(x, "reactionUserArn", js.undefined)
+    inline def setReactionUserArnUndefined: Self = StObject.set(x, "reactionUserArn", js.undefined)
   }
 }

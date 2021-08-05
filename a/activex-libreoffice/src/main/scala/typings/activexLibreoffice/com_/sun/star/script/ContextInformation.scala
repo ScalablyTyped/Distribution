@@ -47,8 +47,7 @@ trait ContextInformation extends StObject {
 }
 object ContextInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EndColumn: Double,
     EndLine: Double,
     LocalVariableNames: SafeArray[String],
@@ -61,28 +60,20 @@ object ContextInformation {
     __obj.asInstanceOf[ContextInformation]
   }
   
-  @scala.inline
-  implicit class ContextInformationMutableBuilder[Self <: ContextInformation] (val x: Self) extends AnyVal {
+  extension [Self <: ContextInformation](x: Self) {
     
-    @scala.inline
-    def setEndColumn(value: Double): Self = StObject.set(x, "EndColumn", value.asInstanceOf[js.Any])
+    inline def setEndColumn(value: Double): Self = StObject.set(x, "EndColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndLine(value: Double): Self = StObject.set(x, "EndLine", value.asInstanceOf[js.Any])
+    inline def setEndLine(value: Double): Self = StObject.set(x, "EndLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalVariableNames(value: SafeArray[String]): Self = StObject.set(x, "LocalVariableNames", value.asInstanceOf[js.Any])
+    inline def setLocalVariableNames(value: SafeArray[String]): Self = StObject.set(x, "LocalVariableNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceCode(value: String): Self = StObject.set(x, "SourceCode", value.asInstanceOf[js.Any])
+    inline def setSourceCode(value: String): Self = StObject.set(x, "SourceCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartColumn(value: Double): Self = StObject.set(x, "StartColumn", value.asInstanceOf[js.Any])
+    inline def setStartColumn(value: Double): Self = StObject.set(x, "StartColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartLine(value: Double): Self = StObject.set(x, "StartLine", value.asInstanceOf[js.Any])
+    inline def setStartLine(value: Double): Self = StObject.set(x, "StartLine", value.asInstanceOf[js.Any])
   }
 }

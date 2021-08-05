@@ -17,8 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object StringLiteralType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `type`: (ModelToObject[/* "stringLiteral" */ String]) | (/* "stringLiteral" */ String),
     value: ModelToObject[String] | String
   ): StringLiteralType = {
@@ -27,19 +26,14 @@ object StringLiteralType {
     __obj.asInstanceOf[StringLiteralType]
   }
   
-  @scala.inline
-  implicit class StringLiteralTypeMutableBuilder[Self <: StringLiteralType] (val x: Self) extends AnyVal {
+  extension [Self <: StringLiteralType](x: Self) {
     
-    @scala.inline
-    def setType(value: (ModelToObject[/* "stringLiteral" */ String]) | (/* "stringLiteral" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: (ModelToObject[/* "stringLiteral" */ String]) | (/* "stringLiteral" */ String)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
     
-    @scala.inline
-    def setValue(value: ModelToObject[String] | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: ModelToObject[String] | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

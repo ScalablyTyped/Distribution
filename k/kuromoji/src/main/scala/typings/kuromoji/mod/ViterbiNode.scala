@@ -28,8 +28,7 @@ trait ViterbiNode extends StObject {
 }
 object ViterbiNode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cost: Double,
     left_id: Double,
     length: Double,
@@ -46,37 +45,26 @@ object ViterbiNode {
     __obj.asInstanceOf[ViterbiNode]
   }
   
-  @scala.inline
-  implicit class ViterbiNodeMutableBuilder[Self <: ViterbiNode] (val x: Self) extends AnyVal {
+  extension [Self <: ViterbiNode](x: Self) {
     
-    @scala.inline
-    def setCost(value: Double): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
+    inline def setCost(value: Double): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft_id(value: Double): Self = StObject.set(x, "left_id", value.asInstanceOf[js.Any])
+    inline def setLeft_id(value: Double): Self = StObject.set(x, "left_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrev(value: ViterbiNode): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+    inline def setPrev(value: ViterbiNode): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight_id(value: Double): Self = StObject.set(x, "right_id", value.asInstanceOf[js.Any])
+    inline def setRight_id(value: Double): Self = StObject.set(x, "right_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortest_cost(value: Double): Self = StObject.set(x, "shortest_cost", value.asInstanceOf[js.Any])
+    inline def setShortest_cost(value: Double): Self = StObject.set(x, "shortest_cost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart_pos(value: Double): Self = StObject.set(x, "start_pos", value.asInstanceOf[js.Any])
+    inline def setStart_pos(value: Double): Self = StObject.set(x, "start_pos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSurface_form(value: String): Self = StObject.set(x, "surface_form", value.asInstanceOf[js.Any])
+    inline def setSurface_form(value: String): Self = StObject.set(x, "surface_form", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

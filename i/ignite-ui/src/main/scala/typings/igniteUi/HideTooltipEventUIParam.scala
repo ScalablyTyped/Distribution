@@ -23,31 +23,23 @@ trait HideTooltipEventUIParam extends StObject {
 }
 object HideTooltipEventUIParam {
   
-  @scala.inline
-  def apply(): HideTooltipEventUIParam = {
+  inline def apply(): HideTooltipEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HideTooltipEventUIParam]
   }
   
-  @scala.inline
-  implicit class HideTooltipEventUIParamMutableBuilder[Self <: HideTooltipEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: HideTooltipEventUIParam](x: Self) {
     
-    @scala.inline
-    def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    @scala.inline
-    def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

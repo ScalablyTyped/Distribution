@@ -28,37 +28,27 @@ trait PublicKey extends StObject {
 }
 object PublicKey {
   
-  @scala.inline
-  def apply(): PublicKey = {
+  inline def apply(): PublicKey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PublicKey]
   }
   
-  @scala.inline
-  implicit class PublicKeyMutableBuilder[Self <: PublicKey] (val x: Self) extends AnyVal {
+  extension [Self <: PublicKey](x: Self) {
     
-    @scala.inline
-    def setFingerprint(value: String): Self = StObject.set(x, "Fingerprint", value.asInstanceOf[js.Any])
+    inline def setFingerprint(value: String): Self = StObject.set(x, "Fingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerprintUndefined: Self = StObject.set(x, "Fingerprint", js.undefined)
+    inline def setFingerprintUndefined: Self = StObject.set(x, "Fingerprint", js.undefined)
     
-    @scala.inline
-    def setValidityEndTime(value: Date): Self = StObject.set(x, "ValidityEndTime", value.asInstanceOf[js.Any])
+    inline def setValidityEndTime(value: Date): Self = StObject.set(x, "ValidityEndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidityEndTimeUndefined: Self = StObject.set(x, "ValidityEndTime", js.undefined)
+    inline def setValidityEndTimeUndefined: Self = StObject.set(x, "ValidityEndTime", js.undefined)
     
-    @scala.inline
-    def setValidityStartTime(value: Date): Self = StObject.set(x, "ValidityStartTime", value.asInstanceOf[js.Any])
+    inline def setValidityStartTime(value: Date): Self = StObject.set(x, "ValidityStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidityStartTimeUndefined: Self = StObject.set(x, "ValidityStartTime", js.undefined)
+    inline def setValidityStartTimeUndefined: Self = StObject.set(x, "ValidityStartTime", js.undefined)
     
-    @scala.inline
-    def setValue(value: ByteBuffer): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: ByteBuffer): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

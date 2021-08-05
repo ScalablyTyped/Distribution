@@ -41,37 +41,27 @@ trait ShapeDataItemData extends StObject {
 }
 object ShapeDataItemData {
   
-  @scala.inline
-  def apply(): ShapeDataItemData = {
+  inline def apply(): ShapeDataItemData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShapeDataItemData]
   }
   
-  @scala.inline
-  implicit class ShapeDataItemDataMutableBuilder[Self <: ShapeDataItemData] (val x: Self) extends AnyVal {
+  extension [Self <: ShapeDataItemData](x: Self) {
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setFormattedValue(value: String): Self = StObject.set(x, "formattedValue", value.asInstanceOf[js.Any])
+    inline def setFormattedValue(value: String): Self = StObject.set(x, "formattedValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattedValueUndefined: Self = StObject.set(x, "formattedValue", js.undefined)
+    inline def setFormattedValueUndefined: Self = StObject.set(x, "formattedValue", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -15,8 +15,7 @@ trait GameClubButton
 }
 object GameClubButton {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroy: () => Unit,
     hide: () => Unit,
     icon: GameClubButtonIcon,
@@ -33,10 +32,8 @@ object GameClubButton {
     __obj.asInstanceOf[GameClubButton]
   }
   
-  @scala.inline
-  implicit class GameClubButtonMutableBuilder[Self <: GameClubButton] (val x: Self) extends AnyVal {
+  extension [Self <: GameClubButton](x: Self) {
     
-    @scala.inline
-    def setIcon(value: GameClubButtonIcon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: GameClubButtonIcon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
   }
 }

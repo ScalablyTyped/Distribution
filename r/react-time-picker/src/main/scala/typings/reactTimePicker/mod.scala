@@ -14,8 +14,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(props: TimePickerProps[TimePickerValue]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def default(props: TimePickerProps[TimePickerValue]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /* Inlined std.Omit<react-clock.react-clock.ClockProps<react-clock.react-clock.ClockValue>, 'value' | 'className'> */
   trait TimePickerClockProps extends StObject {
@@ -60,128 +59,88 @@ object mod {
   }
   object TimePickerClockProps {
     
-    @scala.inline
-    def apply(): TimePickerClockProps = {
+    inline def apply(): TimePickerClockProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TimePickerClockProps]
     }
     
-    @scala.inline
-    implicit class TimePickerClockPropsMutableBuilder[Self <: TimePickerClockProps] (val x: Self) extends AnyVal {
+    extension [Self <: TimePickerClockProps](x: Self) {
       
-      @scala.inline
-      def setHourHandLength(value: Double): Self = StObject.set(x, "hourHandLength", value.asInstanceOf[js.Any])
+      inline def setHourHandLength(value: Double): Self = StObject.set(x, "hourHandLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHourHandLengthUndefined: Self = StObject.set(x, "hourHandLength", js.undefined)
+      inline def setHourHandLengthUndefined: Self = StObject.set(x, "hourHandLength", js.undefined)
       
-      @scala.inline
-      def setHourHandOppositeLength(value: Double): Self = StObject.set(x, "hourHandOppositeLength", value.asInstanceOf[js.Any])
+      inline def setHourHandOppositeLength(value: Double): Self = StObject.set(x, "hourHandOppositeLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHourHandOppositeLengthUndefined: Self = StObject.set(x, "hourHandOppositeLength", js.undefined)
+      inline def setHourHandOppositeLengthUndefined: Self = StObject.set(x, "hourHandOppositeLength", js.undefined)
       
-      @scala.inline
-      def setHourHandWidth(value: Double): Self = StObject.set(x, "hourHandWidth", value.asInstanceOf[js.Any])
+      inline def setHourHandWidth(value: Double): Self = StObject.set(x, "hourHandWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHourHandWidthUndefined: Self = StObject.set(x, "hourHandWidth", js.undefined)
+      inline def setHourHandWidthUndefined: Self = StObject.set(x, "hourHandWidth", js.undefined)
       
-      @scala.inline
-      def setHourMarksLength(value: Double): Self = StObject.set(x, "hourMarksLength", value.asInstanceOf[js.Any])
+      inline def setHourMarksLength(value: Double): Self = StObject.set(x, "hourMarksLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHourMarksLengthUndefined: Self = StObject.set(x, "hourMarksLength", js.undefined)
+      inline def setHourMarksLengthUndefined: Self = StObject.set(x, "hourMarksLength", js.undefined)
       
-      @scala.inline
-      def setHourMarksWidth(value: Double): Self = StObject.set(x, "hourMarksWidth", value.asInstanceOf[js.Any])
+      inline def setHourMarksWidth(value: Double): Self = StObject.set(x, "hourMarksWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHourMarksWidthUndefined: Self = StObject.set(x, "hourMarksWidth", js.undefined)
+      inline def setHourMarksWidthUndefined: Self = StObject.set(x, "hourMarksWidth", js.undefined)
       
-      @scala.inline
-      def setMinuteHandLength(value: Double): Self = StObject.set(x, "minuteHandLength", value.asInstanceOf[js.Any])
+      inline def setMinuteHandLength(value: Double): Self = StObject.set(x, "minuteHandLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinuteHandLengthUndefined: Self = StObject.set(x, "minuteHandLength", js.undefined)
+      inline def setMinuteHandLengthUndefined: Self = StObject.set(x, "minuteHandLength", js.undefined)
       
-      @scala.inline
-      def setMinuteHandOppositeLength(value: Double): Self = StObject.set(x, "minuteHandOppositeLength", value.asInstanceOf[js.Any])
+      inline def setMinuteHandOppositeLength(value: Double): Self = StObject.set(x, "minuteHandOppositeLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinuteHandOppositeLengthUndefined: Self = StObject.set(x, "minuteHandOppositeLength", js.undefined)
+      inline def setMinuteHandOppositeLengthUndefined: Self = StObject.set(x, "minuteHandOppositeLength", js.undefined)
       
-      @scala.inline
-      def setMinuteHandWidth(value: Double): Self = StObject.set(x, "minuteHandWidth", value.asInstanceOf[js.Any])
+      inline def setMinuteHandWidth(value: Double): Self = StObject.set(x, "minuteHandWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinuteHandWidthUndefined: Self = StObject.set(x, "minuteHandWidth", js.undefined)
+      inline def setMinuteHandWidthUndefined: Self = StObject.set(x, "minuteHandWidth", js.undefined)
       
-      @scala.inline
-      def setMinuteMarksLength(value: Double): Self = StObject.set(x, "minuteMarksLength", value.asInstanceOf[js.Any])
+      inline def setMinuteMarksLength(value: Double): Self = StObject.set(x, "minuteMarksLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinuteMarksLengthUndefined: Self = StObject.set(x, "minuteMarksLength", js.undefined)
+      inline def setMinuteMarksLengthUndefined: Self = StObject.set(x, "minuteMarksLength", js.undefined)
       
-      @scala.inline
-      def setMinuteMarksWidth(value: Double): Self = StObject.set(x, "minuteMarksWidth", value.asInstanceOf[js.Any])
+      inline def setMinuteMarksWidth(value: Double): Self = StObject.set(x, "minuteMarksWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinuteMarksWidthUndefined: Self = StObject.set(x, "minuteMarksWidth", js.undefined)
+      inline def setMinuteMarksWidthUndefined: Self = StObject.set(x, "minuteMarksWidth", js.undefined)
       
-      @scala.inline
-      def setRenderHourMarks(value: Boolean): Self = StObject.set(x, "renderHourMarks", value.asInstanceOf[js.Any])
+      inline def setRenderHourMarks(value: Boolean): Self = StObject.set(x, "renderHourMarks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderHourMarksUndefined: Self = StObject.set(x, "renderHourMarks", js.undefined)
+      inline def setRenderHourMarksUndefined: Self = StObject.set(x, "renderHourMarks", js.undefined)
       
-      @scala.inline
-      def setRenderMinuteHand(value: Boolean): Self = StObject.set(x, "renderMinuteHand", value.asInstanceOf[js.Any])
+      inline def setRenderMinuteHand(value: Boolean): Self = StObject.set(x, "renderMinuteHand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderMinuteHandUndefined: Self = StObject.set(x, "renderMinuteHand", js.undefined)
+      inline def setRenderMinuteHandUndefined: Self = StObject.set(x, "renderMinuteHand", js.undefined)
       
-      @scala.inline
-      def setRenderMinuteMarks(value: Boolean): Self = StObject.set(x, "renderMinuteMarks", value.asInstanceOf[js.Any])
+      inline def setRenderMinuteMarks(value: Boolean): Self = StObject.set(x, "renderMinuteMarks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderMinuteMarksUndefined: Self = StObject.set(x, "renderMinuteMarks", js.undefined)
+      inline def setRenderMinuteMarksUndefined: Self = StObject.set(x, "renderMinuteMarks", js.undefined)
       
-      @scala.inline
-      def setRenderNumbers(value: Boolean): Self = StObject.set(x, "renderNumbers", value.asInstanceOf[js.Any])
+      inline def setRenderNumbers(value: Boolean): Self = StObject.set(x, "renderNumbers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderNumbersUndefined: Self = StObject.set(x, "renderNumbers", js.undefined)
+      inline def setRenderNumbersUndefined: Self = StObject.set(x, "renderNumbers", js.undefined)
       
-      @scala.inline
-      def setRenderSecondHand(value: Boolean): Self = StObject.set(x, "renderSecondHand", value.asInstanceOf[js.Any])
+      inline def setRenderSecondHand(value: Boolean): Self = StObject.set(x, "renderSecondHand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderSecondHandUndefined: Self = StObject.set(x, "renderSecondHand", js.undefined)
+      inline def setRenderSecondHandUndefined: Self = StObject.set(x, "renderSecondHand", js.undefined)
       
-      @scala.inline
-      def setSecondHandLength(value: Double): Self = StObject.set(x, "secondHandLength", value.asInstanceOf[js.Any])
+      inline def setSecondHandLength(value: Double): Self = StObject.set(x, "secondHandLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondHandLengthUndefined: Self = StObject.set(x, "secondHandLength", js.undefined)
+      inline def setSecondHandLengthUndefined: Self = StObject.set(x, "secondHandLength", js.undefined)
       
-      @scala.inline
-      def setSecondHandOppositeLength(value: Double): Self = StObject.set(x, "secondHandOppositeLength", value.asInstanceOf[js.Any])
+      inline def setSecondHandOppositeLength(value: Double): Self = StObject.set(x, "secondHandOppositeLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondHandOppositeLengthUndefined: Self = StObject.set(x, "secondHandOppositeLength", js.undefined)
+      inline def setSecondHandOppositeLengthUndefined: Self = StObject.set(x, "secondHandOppositeLength", js.undefined)
       
-      @scala.inline
-      def setSecondHandWidth(value: Double): Self = StObject.set(x, "secondHandWidth", value.asInstanceOf[js.Any])
+      inline def setSecondHandWidth(value: Double): Self = StObject.set(x, "secondHandWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondHandWidthUndefined: Self = StObject.set(x, "secondHandWidth", js.undefined)
+      inline def setSecondHandWidthUndefined: Self = StObject.set(x, "secondHandWidth", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   
@@ -355,201 +314,138 @@ object mod {
   }
   object TimePickerProps {
     
-    @scala.inline
-    def apply[T](value: T): TimePickerProps[T] = {
+    inline def apply[T](value: T): TimePickerProps[T] = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[TimePickerProps[T]]
     }
     
-    @scala.inline
-    implicit class TimePickerPropsMutableBuilder[Self <: TimePickerProps[?], T] (val x: Self & TimePickerProps[T]) extends AnyVal {
+    extension [Self <: TimePickerProps[?], T](x: Self & TimePickerProps[T]) {
       
-      @scala.inline
-      def setAmPmAriaLabel(value: String): Self = StObject.set(x, "amPmAriaLabel", value.asInstanceOf[js.Any])
+      inline def setAmPmAriaLabel(value: String): Self = StObject.set(x, "amPmAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmPmAriaLabelUndefined: Self = StObject.set(x, "amPmAriaLabel", js.undefined)
+      inline def setAmPmAriaLabelUndefined: Self = StObject.set(x, "amPmAriaLabel", js.undefined)
       
-      @scala.inline
-      def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String | js.Array[String]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String | js.Array[String]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setClassNameVarargs(value: String*): Self = StObject.set(x, "className", js.Array(value :_*))
+      inline def setClassNameVarargs(value: String*): Self = StObject.set(x, "className", js.Array(value :_*))
       
-      @scala.inline
-      def setClearAriaLabel(value: String): Self = StObject.set(x, "clearAriaLabel", value.asInstanceOf[js.Any])
+      inline def setClearAriaLabel(value: String): Self = StObject.set(x, "clearAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearAriaLabelUndefined: Self = StObject.set(x, "clearAriaLabel", js.undefined)
+      inline def setClearAriaLabelUndefined: Self = StObject.set(x, "clearAriaLabel", js.undefined)
       
-      @scala.inline
-      def setClearIcon(
+      inline def setClearIcon(
         value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any)
       ): Self = StObject.set(x, "clearIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearIconUndefined: Self = StObject.set(x, "clearIcon", js.undefined)
+      inline def setClearIconUndefined: Self = StObject.set(x, "clearIcon", js.undefined)
       
-      @scala.inline
-      def setClockAriaLabel(value: String): Self = StObject.set(x, "clockAriaLabel", value.asInstanceOf[js.Any])
+      inline def setClockAriaLabel(value: String): Self = StObject.set(x, "clockAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClockAriaLabelUndefined: Self = StObject.set(x, "clockAriaLabel", js.undefined)
+      inline def setClockAriaLabelUndefined: Self = StObject.set(x, "clockAriaLabel", js.undefined)
       
-      @scala.inline
-      def setClockClassName(value: String | js.Array[String]): Self = StObject.set(x, "clockClassName", value.asInstanceOf[js.Any])
+      inline def setClockClassName(value: String | js.Array[String]): Self = StObject.set(x, "clockClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClockClassNameUndefined: Self = StObject.set(x, "clockClassName", js.undefined)
+      inline def setClockClassNameUndefined: Self = StObject.set(x, "clockClassName", js.undefined)
       
-      @scala.inline
-      def setClockClassNameVarargs(value: String*): Self = StObject.set(x, "clockClassName", js.Array(value :_*))
+      inline def setClockClassNameVarargs(value: String*): Self = StObject.set(x, "clockClassName", js.Array(value :_*))
       
-      @scala.inline
-      def setClockIcon(
+      inline def setClockIcon(
         value: String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSX.Element */ js.Any)
       ): Self = StObject.set(x, "clockIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClockIconUndefined: Self = StObject.set(x, "clockIcon", js.undefined)
+      inline def setClockIconUndefined: Self = StObject.set(x, "clockIcon", js.undefined)
       
-      @scala.inline
-      def setCloseClock(value: Boolean): Self = StObject.set(x, "closeClock", value.asInstanceOf[js.Any])
+      inline def setCloseClock(value: Boolean): Self = StObject.set(x, "closeClock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseClockUndefined: Self = StObject.set(x, "closeClock", js.undefined)
+      inline def setCloseClockUndefined: Self = StObject.set(x, "closeClock", js.undefined)
       
-      @scala.inline
-      def setDisableClock(value: Boolean): Self = StObject.set(x, "disableClock", value.asInstanceOf[js.Any])
+      inline def setDisableClock(value: Boolean): Self = StObject.set(x, "disableClock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableClockUndefined: Self = StObject.set(x, "disableClock", js.undefined)
+      inline def setDisableClockUndefined: Self = StObject.set(x, "disableClock", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setHourAriaLabel(value: String): Self = StObject.set(x, "hourAriaLabel", value.asInstanceOf[js.Any])
+      inline def setHourAriaLabel(value: String): Self = StObject.set(x, "hourAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHourAriaLabelUndefined: Self = StObject.set(x, "hourAriaLabel", js.undefined)
+      inline def setHourAriaLabelUndefined: Self = StObject.set(x, "hourAriaLabel", js.undefined)
       
-      @scala.inline
-      def setHourPlaceholder(value: String): Self = StObject.set(x, "hourPlaceholder", value.asInstanceOf[js.Any])
+      inline def setHourPlaceholder(value: String): Self = StObject.set(x, "hourPlaceholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHourPlaceholderUndefined: Self = StObject.set(x, "hourPlaceholder", js.undefined)
+      inline def setHourPlaceholderUndefined: Self = StObject.set(x, "hourPlaceholder", js.undefined)
       
-      @scala.inline
-      def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
+      inline def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setMaxDetail(value: hour | minute | second): Self = StObject.set(x, "maxDetail", value.asInstanceOf[js.Any])
+      inline def setMaxDetail(value: hour | minute | second): Self = StObject.set(x, "maxDetail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDetailUndefined: Self = StObject.set(x, "maxDetail", js.undefined)
+      inline def setMaxDetailUndefined: Self = StObject.set(x, "maxDetail", js.undefined)
       
-      @scala.inline
-      def setMaxTime(value: T): Self = StObject.set(x, "maxTime", value.asInstanceOf[js.Any])
+      inline def setMaxTime(value: T): Self = StObject.set(x, "maxTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxTimeUndefined: Self = StObject.set(x, "maxTime", js.undefined)
+      inline def setMaxTimeUndefined: Self = StObject.set(x, "maxTime", js.undefined)
       
-      @scala.inline
-      def setMinTime(value: T): Self = StObject.set(x, "minTime", value.asInstanceOf[js.Any])
+      inline def setMinTime(value: T): Self = StObject.set(x, "minTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinTimeUndefined: Self = StObject.set(x, "minTime", js.undefined)
+      inline def setMinTimeUndefined: Self = StObject.set(x, "minTime", js.undefined)
       
-      @scala.inline
-      def setMinuteAriaLabel(value: String): Self = StObject.set(x, "minuteAriaLabel", value.asInstanceOf[js.Any])
+      inline def setMinuteAriaLabel(value: String): Self = StObject.set(x, "minuteAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinuteAriaLabelUndefined: Self = StObject.set(x, "minuteAriaLabel", js.undefined)
+      inline def setMinuteAriaLabelUndefined: Self = StObject.set(x, "minuteAriaLabel", js.undefined)
       
-      @scala.inline
-      def setMinutePlaceholder(value: String): Self = StObject.set(x, "minutePlaceholder", value.asInstanceOf[js.Any])
+      inline def setMinutePlaceholder(value: String): Self = StObject.set(x, "minutePlaceholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinutePlaceholderUndefined: Self = StObject.set(x, "minutePlaceholder", js.undefined)
+      inline def setMinutePlaceholderUndefined: Self = StObject.set(x, "minutePlaceholder", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNativeInputAriaLabel(value: String): Self = StObject.set(x, "nativeInputAriaLabel", value.asInstanceOf[js.Any])
+      inline def setNativeInputAriaLabel(value: String): Self = StObject.set(x, "nativeInputAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNativeInputAriaLabelUndefined: Self = StObject.set(x, "nativeInputAriaLabel", js.undefined)
+      inline def setNativeInputAriaLabelUndefined: Self = StObject.set(x, "nativeInputAriaLabel", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* value */ T => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* value */ T => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnClockClose(value: () => Unit): Self = StObject.set(x, "onClockClose", js.Any.fromFunction0(value))
+      inline def setOnClockClose(value: () => Unit): Self = StObject.set(x, "onClockClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnClockCloseUndefined: Self = StObject.set(x, "onClockClose", js.undefined)
+      inline def setOnClockCloseUndefined: Self = StObject.set(x, "onClockClose", js.undefined)
       
-      @scala.inline
-      def setOnClockOpen(value: () => Unit): Self = StObject.set(x, "onClockOpen", js.Any.fromFunction0(value))
+      inline def setOnClockOpen(value: () => Unit): Self = StObject.set(x, "onClockOpen", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnClockOpenUndefined: Self = StObject.set(x, "onClockOpen", js.undefined)
+      inline def setOnClockOpenUndefined: Self = StObject.set(x, "onClockOpen", js.undefined)
       
-      @scala.inline
-      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
-      @scala.inline
-      def setSecondAriaLabel(value: String): Self = StObject.set(x, "secondAriaLabel", value.asInstanceOf[js.Any])
+      inline def setSecondAriaLabel(value: String): Self = StObject.set(x, "secondAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondAriaLabelUndefined: Self = StObject.set(x, "secondAriaLabel", js.undefined)
+      inline def setSecondAriaLabelUndefined: Self = StObject.set(x, "secondAriaLabel", js.undefined)
       
-      @scala.inline
-      def setSecondPlaceholder(value: String): Self = StObject.set(x, "secondPlaceholder", value.asInstanceOf[js.Any])
+      inline def setSecondPlaceholder(value: String): Self = StObject.set(x, "secondPlaceholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondPlaceholderUndefined: Self = StObject.set(x, "secondPlaceholder", js.undefined)
+      inline def setSecondPlaceholderUndefined: Self = StObject.set(x, "secondPlaceholder", js.undefined)
       
-      @scala.inline
-      def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

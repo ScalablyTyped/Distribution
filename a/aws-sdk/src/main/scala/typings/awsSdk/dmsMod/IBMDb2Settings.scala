@@ -48,61 +48,43 @@ trait IBMDb2Settings extends StObject {
 }
 object IBMDb2Settings {
   
-  @scala.inline
-  def apply(): IBMDb2Settings = {
+  inline def apply(): IBMDb2Settings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IBMDb2Settings]
   }
   
-  @scala.inline
-  implicit class IBMDb2SettingsMutableBuilder[Self <: IBMDb2Settings] (val x: Self) extends AnyVal {
+  extension [Self <: IBMDb2Settings](x: Self) {
     
-    @scala.inline
-    def setCurrentLsn(value: String): Self = StObject.set(x, "CurrentLsn", value.asInstanceOf[js.Any])
+    inline def setCurrentLsn(value: String): Self = StObject.set(x, "CurrentLsn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentLsnUndefined: Self = StObject.set(x, "CurrentLsn", js.undefined)
+    inline def setCurrentLsnUndefined: Self = StObject.set(x, "CurrentLsn", js.undefined)
     
-    @scala.inline
-    def setDatabaseName(value: String): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: String): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseNameUndefined: Self = StObject.set(x, "DatabaseName", js.undefined)
+    inline def setDatabaseNameUndefined: Self = StObject.set(x, "DatabaseName", js.undefined)
     
-    @scala.inline
-    def setMaxKBytesPerRead(value: IntegerOptional): Self = StObject.set(x, "MaxKBytesPerRead", value.asInstanceOf[js.Any])
+    inline def setMaxKBytesPerRead(value: IntegerOptional): Self = StObject.set(x, "MaxKBytesPerRead", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxKBytesPerReadUndefined: Self = StObject.set(x, "MaxKBytesPerRead", js.undefined)
+    inline def setMaxKBytesPerReadUndefined: Self = StObject.set(x, "MaxKBytesPerRead", js.undefined)
     
-    @scala.inline
-    def setPassword(value: SecretString): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: SecretString): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "Password", js.undefined)
     
-    @scala.inline
-    def setPort(value: IntegerOptional): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
+    inline def setPort(value: IntegerOptional): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
     
-    @scala.inline
-    def setServerName(value: String): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
+    inline def setServerName(value: String): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerNameUndefined: Self = StObject.set(x, "ServerName", js.undefined)
+    inline def setServerNameUndefined: Self = StObject.set(x, "ServerName", js.undefined)
     
-    @scala.inline
-    def setSetDataCaptureChanges(value: BooleanOptional): Self = StObject.set(x, "SetDataCaptureChanges", value.asInstanceOf[js.Any])
+    inline def setSetDataCaptureChanges(value: BooleanOptional): Self = StObject.set(x, "SetDataCaptureChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetDataCaptureChangesUndefined: Self = StObject.set(x, "SetDataCaptureChanges", js.undefined)
+    inline def setSetDataCaptureChangesUndefined: Self = StObject.set(x, "SetDataCaptureChanges", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
   }
 }

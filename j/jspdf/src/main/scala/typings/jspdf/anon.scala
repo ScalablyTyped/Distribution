@@ -20,41 +20,30 @@ object anon {
   }
   object Align {
     
-    @scala.inline
-    def apply(name: String): Align = {
+    inline def apply(name: String): Align = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Align]
     }
     
-    @scala.inline
-    implicit class AlignMutableBuilder[Self <: Align] (val x: Self) extends AnyVal {
+    extension [Self <: Align](x: Self) {
       
-      @scala.inline
-      def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      @scala.inline
-      def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+      inline def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
+      inline def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -269,8 +258,7 @@ object anon {
   }
   object Collections {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       collections: js.Any,
       events: js.Any,
       f2: Double => Double,
@@ -300,83 +288,57 @@ object anon {
       __obj.asInstanceOf[Collections]
     }
     
-    @scala.inline
-    implicit class CollectionsMutableBuilder[Self <: Collections] (val x: Self) extends AnyVal {
+    extension [Self <: Collections](x: Self) {
       
-      @scala.inline
-      def setCollections(value: js.Any): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
+      inline def setCollections(value: js.Any): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setF2(value: Double => Double): Self = StObject.set(x, "f2", js.Any.fromFunction1(value))
+      inline def setF2(value: Double => Double): Self = StObject.set(x, "f2", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetCoordinateString(value: Double => Double): Self = StObject.set(x, "getCoordinateString", js.Any.fromFunction1(value))
+      inline def setGetCoordinateString(value: Double => Double): Self = StObject.set(x, "getCoordinateString", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetCurrentPageInfo(value: () => js.Any): Self = StObject.set(x, "getCurrentPageInfo", js.Any.fromFunction0(value))
+      inline def setGetCurrentPageInfo(value: () => js.Any): Self = StObject.set(x, "getCurrentPageInfo", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFont(value: () => js.Any): Self = StObject.set(x, "getFont", js.Any.fromFunction0(value))
+      inline def setGetFont(value: () => js.Any): Self = StObject.set(x, "getFont", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFontSize(value: () => Double): Self = StObject.set(x, "getFontSize", js.Any.fromFunction0(value))
+      inline def setGetFontSize(value: () => Double): Self = StObject.set(x, "getFontSize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLineHeight(value: () => Double): Self = StObject.set(x, "getLineHeight", js.Any.fromFunction0(value))
+      inline def setGetLineHeight(value: () => Double): Self = StObject.set(x, "getLineHeight", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetNumberOfPages(value: () => Double): Self = StObject.set(x, "getNumberOfPages", js.Any.fromFunction0(value))
+      inline def setGetNumberOfPages(value: () => Double): Self = StObject.set(x, "getNumberOfPages", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPageInfo(value: Double => js.Any): Self = StObject.set(x, "getPageInfo", js.Any.fromFunction1(value))
+      inline def setGetPageInfo(value: Double => js.Any): Self = StObject.set(x, "getPageInfo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetStyle(value: String => js.Any): Self = StObject.set(x, "getStyle", js.Any.fromFunction1(value))
+      inline def setGetStyle(value: String => js.Any): Self = StObject.set(x, "getStyle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetVerticalCoordinateString(value: Double => Double): Self = StObject.set(x, "getVerticalCoordinateString", js.Any.fromFunction1(value))
+      inline def setGetVerticalCoordinateString(value: Double => Double): Self = StObject.set(x, "getVerticalCoordinateString", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNewAdditionalObject(value: () => js.Any): Self = StObject.set(x, "newAdditionalObject", js.Any.fromFunction0(value))
+      inline def setNewAdditionalObject(value: () => js.Any): Self = StObject.set(x, "newAdditionalObject", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNewObject(value: () => Double): Self = StObject.set(x, "newObject", js.Any.fromFunction0(value))
+      inline def setNewObject(value: () => Double): Self = StObject.set(x, "newObject", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNewObjectDeferred(value: () => Double): Self = StObject.set(x, "newObjectDeferred", js.Any.fromFunction0(value))
+      inline def setNewObjectDeferred(value: () => Double): Self = StObject.set(x, "newObjectDeferred", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNewObjectDeferredBegin(value: Double => Unit): Self = StObject.set(x, "newObjectDeferredBegin", js.Any.fromFunction1(value))
+      inline def setNewObjectDeferredBegin(value: Double => Unit): Self = StObject.set(x, "newObjectDeferredBegin", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOut(value: String => Unit): Self = StObject.set(x, "out", js.Any.fromFunction1(value))
+      inline def setOut(value: String => Unit): Self = StObject.set(x, "out", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOutput(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "output", js.Any.fromFunction2(value))
+      inline def setOutput(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "output", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPageSize(value: GetHeight): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+      inline def setPageSize(value: GetHeight): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPages(value: js.Array[Double]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+      inline def setPages(value: js.Array[Double]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPagesVarargs(value: Double*): Self = StObject.set(x, "pages", js.Array(value :_*))
+      inline def setPagesVarargs(value: Double*): Self = StObject.set(x, "pages", js.Array(value :_*))
       
-      @scala.inline
-      def setPdfEscape(value: (String, js.Any) => js.Any): Self = StObject.set(x, "pdfEscape", js.Any.fromFunction2(value))
+      inline def setPdfEscape(value: (String, js.Any) => js.Any): Self = StObject.set(x, "pdfEscape", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPutStream(value: String => Unit): Self = StObject.set(x, "putStream", js.Any.fromFunction1(value))
+      inline def setPutStream(value: String => Unit): Self = StObject.set(x, "putStream", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
+      inline def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrite(value: String => js.Any): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+      inline def setWrite(value: String => js.Any): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }
   }
   
@@ -388,20 +350,16 @@ object anon {
   }
   object GetContext {
     
-    @scala.inline
-    def apply(getContext: () => js.Any, style: js.Any): GetContext = {
+    inline def apply(getContext: () => js.Any, style: js.Any): GetContext = {
       val __obj = js.Dynamic.literal(getContext = js.Any.fromFunction0(getContext), style = style.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetContext]
     }
     
-    @scala.inline
-    implicit class GetContextMutableBuilder[Self <: GetContext] (val x: Self) extends AnyVal {
+    extension [Self <: GetContext](x: Self) {
       
-      @scala.inline
-      def setGetContext(value: () => js.Any): Self = StObject.set(x, "getContext", js.Any.fromFunction0(value))
+      inline def setGetContext(value: () => js.Any): Self = StObject.set(x, "getContext", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }
   }
   
@@ -417,26 +375,20 @@ object anon {
   }
   object GetHeight {
     
-    @scala.inline
-    def apply(getHeight: () => Double, getWidth: () => Double, height: Double, width: Double): GetHeight = {
+    inline def apply(getHeight: () => Double, getWidth: () => Double, height: Double, width: Double): GetHeight = {
       val __obj = js.Dynamic.literal(getHeight = js.Any.fromFunction0(getHeight), getWidth = js.Any.fromFunction0(getWidth), height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetHeight]
     }
     
-    @scala.inline
-    implicit class GetHeightMutableBuilder[Self <: GetHeight] (val x: Self) extends AnyVal {
+    extension [Self <: GetHeight](x: Self) {
       
-      @scala.inline
-      def setGetHeight(value: () => Double): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
+      inline def setGetHeight(value: () => Double): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
+      inline def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -446,17 +398,14 @@ object anon {
   }
   object ReturnPromise {
     
-    @scala.inline
-    def apply(returnPromise: Boolean): ReturnPromise = {
+    inline def apply(returnPromise: Boolean): ReturnPromise = {
       val __obj = js.Dynamic.literal(returnPromise = returnPromise.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReturnPromise]
     }
     
-    @scala.inline
-    implicit class ReturnPromiseMutableBuilder[Self <: ReturnPromise] (val x: Self) extends AnyVal {
+    extension [Self <: ReturnPromise](x: Self) {
       
-      @scala.inline
-      def setReturnPromise(value: Boolean): Self = StObject.set(x, "returnPromise", value.asInstanceOf[js.Any])
+      inline def setReturnPromise(value: Boolean): Self = StObject.set(x, "returnPromise", value.asInstanceOf[js.Any])
     }
   }
   
@@ -466,17 +415,14 @@ object anon {
   }
   object Width {
     
-    @scala.inline
-    def apply(width: Double): Width = {
+    inline def apply(width: Double): Width = {
       val __obj = js.Dynamic.literal(width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Width]
     }
     
-    @scala.inline
-    implicit class WidthMutableBuilder[Self <: Width] (val x: Self) extends AnyVal {
+    extension [Self <: Width](x: Self) {
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

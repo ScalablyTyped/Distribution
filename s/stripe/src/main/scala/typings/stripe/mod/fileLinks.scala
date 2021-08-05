@@ -55,8 +55,7 @@ object fileLinks {
   }
   object IFileLink {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       created: Double,
       expired: Boolean,
       file: String,
@@ -70,35 +69,25 @@ object fileLinks {
       __obj.asInstanceOf[IFileLink]
     }
     
-    @scala.inline
-    implicit class IFileLinkMutableBuilder[Self <: IFileLink] (val x: Self) extends AnyVal {
+    extension [Self <: IFileLink](x: Self) {
       
-      @scala.inline
-      def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpired(value: Boolean): Self = StObject.set(x, "expired", value.asInstanceOf[js.Any])
+      inline def setExpired(value: Boolean): Self = StObject.set(x, "expired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpires_at(value: Double): Self = StObject.set(x, "expires_at", value.asInstanceOf[js.Any])
+      inline def setExpires_at(value: Double): Self = StObject.set(x, "expires_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpires_atNull: Self = StObject.set(x, "expires_at", null)
+      inline def setExpires_atNull: Self = StObject.set(x, "expires_at", null)
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
+      inline def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: IMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObject(value: file_link): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: file_link): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -118,23 +107,18 @@ object fileLinks {
   }
   object IFileLinksCreationOptions {
     
-    @scala.inline
-    def apply(file: String): IFileLinksCreationOptions = {
+    inline def apply(file: String): IFileLinksCreationOptions = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
       __obj.asInstanceOf[IFileLinksCreationOptions]
     }
     
-    @scala.inline
-    implicit class IFileLinksCreationOptionsMutableBuilder[Self <: IFileLinksCreationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IFileLinksCreationOptions](x: Self) {
       
-      @scala.inline
-      def setExpires_at(value: Double): Self = StObject.set(x, "expires_at", value.asInstanceOf[js.Any])
+      inline def setExpires_at(value: Double): Self = StObject.set(x, "expires_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpires_atUndefined: Self = StObject.set(x, "expires_at", js.undefined)
+      inline def setExpires_atUndefined: Self = StObject.set(x, "expires_at", js.undefined)
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     }
   }
   
@@ -154,26 +138,20 @@ object fileLinks {
   }
   object IFileLinksListOptions {
     
-    @scala.inline
-    def apply(): IFileLinksListOptions = {
+    inline def apply(): IFileLinksListOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IFileLinksListOptions]
     }
     
-    @scala.inline
-    implicit class IFileLinksListOptionsMutableBuilder[Self <: IFileLinksListOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IFileLinksListOptions](x: Self) {
       
-      @scala.inline
-      def setExpired(value: Boolean): Self = StObject.set(x, "expired", value.asInstanceOf[js.Any])
+      inline def setExpired(value: Boolean): Self = StObject.set(x, "expired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiredUndefined: Self = StObject.set(x, "expired", js.undefined)
+      inline def setExpiredUndefined: Self = StObject.set(x, "expired", js.undefined)
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     }
   }
   
@@ -185,20 +163,16 @@ object fileLinks {
   }
   object IFileLinksUpdateOptions {
     
-    @scala.inline
-    def apply(): IFileLinksUpdateOptions = {
+    inline def apply(): IFileLinksUpdateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IFileLinksUpdateOptions]
     }
     
-    @scala.inline
-    implicit class IFileLinksUpdateOptionsMutableBuilder[Self <: IFileLinksUpdateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IFileLinksUpdateOptions](x: Self) {
       
-      @scala.inline
-      def setExpires_at(value: Double | now): Self = StObject.set(x, "expires_at", value.asInstanceOf[js.Any])
+      inline def setExpires_at(value: Double | now): Self = StObject.set(x, "expires_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpires_atUndefined: Self = StObject.set(x, "expires_at", js.undefined)
+      inline def setExpires_atUndefined: Self = StObject.set(x, "expires_at", js.undefined)
     }
   }
 }

@@ -270,62 +270,44 @@ object mod {
   }
   object ConnectionOptions {
     
-    @scala.inline
-    def apply(): ConnectionOptions = {
+    inline def apply(): ConnectionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConnectionOptions]
     }
     
-    @scala.inline
-    implicit class ConnectionOptionsMutableBuilder[Self <: ConnectionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectionOptions](x: Self) {
       
-      @scala.inline
-      def setDatabase(value: Double): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
+      inline def setDatabase(value: Double): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
+      inline def setDatabaseUndefined: Self = StObject.set(x, "database", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setLooping(value: Boolean): Self = StObject.set(x, "looping", value.asInstanceOf[js.Any])
+      inline def setLooping(value: Boolean): Self = StObject.set(x, "looping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoopingUndefined: Self = StObject.set(x, "looping", js.undefined)
+      inline def setLoopingUndefined: Self = StObject.set(x, "looping", js.undefined)
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+      inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
       
-      @scala.inline
-      def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setPkg(value: String): Self = StObject.set(x, "pkg", value.asInstanceOf[js.Any])
+      inline def setPkg(value: String): Self = StObject.set(x, "pkg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPkgUndefined: Self = StObject.set(x, "pkg", js.undefined)
+      inline def setPkgUndefined: Self = StObject.set(x, "pkg", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setRedis(value: js.Any): Self = StObject.set(x, "redis", value.asInstanceOf[js.Any])
+      inline def setRedis(value: js.Any): Self = StObject.set(x, "redis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRedisUndefined: Self = StObject.set(x, "redis", js.undefined)
+      inline def setRedisUndefined: Self = StObject.set(x, "redis", js.undefined)
     }
   }
   
@@ -347,8 +329,7 @@ object mod {
   }
   object ErrorPayload {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       error: String,
       exception: String,
       failed_at: String,
@@ -360,35 +341,25 @@ object mod {
       __obj.asInstanceOf[ErrorPayload]
     }
     
-    @scala.inline
-    implicit class ErrorPayloadMutableBuilder[Self <: ErrorPayload] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorPayload](x: Self) {
       
-      @scala.inline
-      def setBacktrace(value: js.Array[String]): Self = StObject.set(x, "backtrace", value.asInstanceOf[js.Any])
+      inline def setBacktrace(value: js.Array[String]): Self = StObject.set(x, "backtrace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBacktraceNull: Self = StObject.set(x, "backtrace", null)
+      inline def setBacktraceNull: Self = StObject.set(x, "backtrace", null)
       
-      @scala.inline
-      def setBacktraceVarargs(value: String*): Self = StObject.set(x, "backtrace", js.Array(value :_*))
+      inline def setBacktraceVarargs(value: String*): Self = StObject.set(x, "backtrace", js.Array(value :_*))
       
-      @scala.inline
-      def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setException(value: String): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
+      inline def setException(value: String): Self = StObject.set(x, "exception", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailed_at(value: String): Self = StObject.set(x, "failed_at", value.asInstanceOf[js.Any])
+      inline def setFailed_at(value: String): Self = StObject.set(x, "failed_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+      inline def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorker(value: String): Self = StObject.set(x, "worker", value.asInstanceOf[js.Any])
+      inline def setWorker(value: String): Self = StObject.set(x, "worker", value.asInstanceOf[js.Any])
     }
   }
   
@@ -402,32 +373,24 @@ object mod {
   }
   object Job {
     
-    @scala.inline
-    def apply[TResult](perform: /* repeated */ js.Any => js.Promise[TResult]): Job[TResult] = {
+    inline def apply[TResult](perform: /* repeated */ js.Any => js.Promise[TResult]): Job[TResult] = {
       val __obj = js.Dynamic.literal(perform = js.Any.fromFunction1(perform))
       __obj.asInstanceOf[Job[TResult]]
     }
     
-    @scala.inline
-    implicit class JobMutableBuilder[Self <: Job[?], TResult] (val x: Self & Job[TResult]) extends AnyVal {
+    extension [Self <: Job[?], TResult](x: Self & Job[TResult]) {
       
-      @scala.inline
-      def setPerform(value: /* repeated */ js.Any => js.Promise[TResult]): Self = StObject.set(x, "perform", js.Any.fromFunction1(value))
+      inline def setPerform(value: /* repeated */ js.Any => js.Promise[TResult]): Self = StObject.set(x, "perform", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPluginOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "pluginOptions", value.asInstanceOf[js.Any])
+      inline def setPluginOptions(value: StringDictionary[js.Any]): Self = StObject.set(x, "pluginOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginOptionsUndefined: Self = StObject.set(x, "pluginOptions", js.undefined)
+      inline def setPluginOptionsUndefined: Self = StObject.set(x, "pluginOptions", js.undefined)
       
-      @scala.inline
-      def setPlugins(value: js.Array[String]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Array[String]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      @scala.inline
-      def setPluginsVarargs(value: String*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: String*): Self = StObject.set(x, "plugins", js.Array(value :_*))
     }
   }
   
@@ -439,20 +402,16 @@ object mod {
   }
   object QueueOptions {
     
-    @scala.inline
-    def apply(): QueueOptions = {
+    inline def apply(): QueueOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[QueueOptions]
     }
     
-    @scala.inline
-    implicit class QueueOptionsMutableBuilder[Self <: QueueOptions] (val x: Self) extends AnyVal {
+    extension [Self <: QueueOptions](x: Self) {
       
-      @scala.inline
-      def setConnection(value: ConnectionOptions): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+      inline def setConnection(value: ConnectionOptions): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
+      inline def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
     }
   }
   
@@ -469,29 +428,21 @@ object mod {
   trait SchedulerEvent extends StObject
   object SchedulerEvent {
     
-    @scala.inline
-    def cleanStuckWorker: typings.nodeResque.nodeResqueStrings.cleanStuckWorker = "cleanStuckWorker".asInstanceOf[typings.nodeResque.nodeResqueStrings.cleanStuckWorker]
+    inline def cleanStuckWorker: typings.nodeResque.nodeResqueStrings.cleanStuckWorker = "cleanStuckWorker".asInstanceOf[typings.nodeResque.nodeResqueStrings.cleanStuckWorker]
     
-    @scala.inline
-    def end: typings.nodeResque.nodeResqueStrings.end = "end".asInstanceOf[typings.nodeResque.nodeResqueStrings.end]
+    inline def end: typings.nodeResque.nodeResqueStrings.end = "end".asInstanceOf[typings.nodeResque.nodeResqueStrings.end]
     
-    @scala.inline
-    def error: typings.nodeResque.nodeResqueStrings.error = "error".asInstanceOf[typings.nodeResque.nodeResqueStrings.error]
+    inline def error: typings.nodeResque.nodeResqueStrings.error = "error".asInstanceOf[typings.nodeResque.nodeResqueStrings.error]
     
-    @scala.inline
-    def master: typings.nodeResque.nodeResqueStrings.master = "master".asInstanceOf[typings.nodeResque.nodeResqueStrings.master]
+    inline def master: typings.nodeResque.nodeResqueStrings.master = "master".asInstanceOf[typings.nodeResque.nodeResqueStrings.master]
     
-    @scala.inline
-    def poll: typings.nodeResque.nodeResqueStrings.poll = "poll".asInstanceOf[typings.nodeResque.nodeResqueStrings.poll]
+    inline def poll: typings.nodeResque.nodeResqueStrings.poll = "poll".asInstanceOf[typings.nodeResque.nodeResqueStrings.poll]
     
-    @scala.inline
-    def start: typings.nodeResque.nodeResqueStrings.start = "start".asInstanceOf[typings.nodeResque.nodeResqueStrings.start]
+    inline def start: typings.nodeResque.nodeResqueStrings.start = "start".asInstanceOf[typings.nodeResque.nodeResqueStrings.start]
     
-    @scala.inline
-    def transferredJob: typings.nodeResque.nodeResqueStrings.transferredJob = "transferredJob".asInstanceOf[typings.nodeResque.nodeResqueStrings.transferredJob]
+    inline def transferredJob: typings.nodeResque.nodeResqueStrings.transferredJob = "transferredJob".asInstanceOf[typings.nodeResque.nodeResqueStrings.transferredJob]
     
-    @scala.inline
-    def workingTimestamp: typings.nodeResque.nodeResqueStrings.workingTimestamp = "workingTimestamp".asInstanceOf[typings.nodeResque.nodeResqueStrings.workingTimestamp]
+    inline def workingTimestamp: typings.nodeResque.nodeResqueStrings.workingTimestamp = "workingTimestamp".asInstanceOf[typings.nodeResque.nodeResqueStrings.workingTimestamp]
   }
   
   trait SchedulerOptions extends StObject {
@@ -508,44 +459,32 @@ object mod {
   }
   object SchedulerOptions {
     
-    @scala.inline
-    def apply(): SchedulerOptions = {
+    inline def apply(): SchedulerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SchedulerOptions]
     }
     
-    @scala.inline
-    implicit class SchedulerOptionsMutableBuilder[Self <: SchedulerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SchedulerOptions](x: Self) {
       
-      @scala.inline
-      def setConnection(value: ConnectionOptions): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+      inline def setConnection(value: ConnectionOptions): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
+      inline def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
       
-      @scala.inline
-      def setMasterLockTimeout(value: Double): Self = StObject.set(x, "masterLockTimeout", value.asInstanceOf[js.Any])
+      inline def setMasterLockTimeout(value: Double): Self = StObject.set(x, "masterLockTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMasterLockTimeoutUndefined: Self = StObject.set(x, "masterLockTimeout", js.undefined)
+      inline def setMasterLockTimeoutUndefined: Self = StObject.set(x, "masterLockTimeout", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setStuckWorkerTimeout(value: Double): Self = StObject.set(x, "stuckWorkerTimeout", value.asInstanceOf[js.Any])
+      inline def setStuckWorkerTimeout(value: Double): Self = StObject.set(x, "stuckWorkerTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStuckWorkerTimeoutUndefined: Self = StObject.set(x, "stuckWorkerTimeout", js.undefined)
+      inline def setStuckWorkerTimeoutUndefined: Self = StObject.set(x, "stuckWorkerTimeout", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -565,38 +504,27 @@ object mod {
   trait WorkerEvent extends StObject
   object WorkerEvent {
     
-    @scala.inline
-    def cleaning_worker: typings.nodeResque.nodeResqueStrings.cleaning_worker = "cleaning_worker".asInstanceOf[typings.nodeResque.nodeResqueStrings.cleaning_worker]
+    inline def cleaning_worker: typings.nodeResque.nodeResqueStrings.cleaning_worker = "cleaning_worker".asInstanceOf[typings.nodeResque.nodeResqueStrings.cleaning_worker]
     
-    @scala.inline
-    def end: typings.nodeResque.nodeResqueStrings.end = "end".asInstanceOf[typings.nodeResque.nodeResqueStrings.end]
+    inline def end: typings.nodeResque.nodeResqueStrings.end = "end".asInstanceOf[typings.nodeResque.nodeResqueStrings.end]
     
-    @scala.inline
-    def error: typings.nodeResque.nodeResqueStrings.error = "error".asInstanceOf[typings.nodeResque.nodeResqueStrings.error]
+    inline def error: typings.nodeResque.nodeResqueStrings.error = "error".asInstanceOf[typings.nodeResque.nodeResqueStrings.error]
     
-    @scala.inline
-    def failure: typings.nodeResque.nodeResqueStrings.failure = "failure".asInstanceOf[typings.nodeResque.nodeResqueStrings.failure]
+    inline def failure: typings.nodeResque.nodeResqueStrings.failure = "failure".asInstanceOf[typings.nodeResque.nodeResqueStrings.failure]
     
-    @scala.inline
-    def job: typings.nodeResque.nodeResqueStrings.job = "job".asInstanceOf[typings.nodeResque.nodeResqueStrings.job]
+    inline def job: typings.nodeResque.nodeResqueStrings.job = "job".asInstanceOf[typings.nodeResque.nodeResqueStrings.job]
     
-    @scala.inline
-    def pause: typings.nodeResque.nodeResqueStrings.pause = "pause".asInstanceOf[typings.nodeResque.nodeResqueStrings.pause]
+    inline def pause: typings.nodeResque.nodeResqueStrings.pause = "pause".asInstanceOf[typings.nodeResque.nodeResqueStrings.pause]
     
-    @scala.inline
-    def ping: typings.nodeResque.nodeResqueStrings.ping = "ping".asInstanceOf[typings.nodeResque.nodeResqueStrings.ping]
+    inline def ping: typings.nodeResque.nodeResqueStrings.ping = "ping".asInstanceOf[typings.nodeResque.nodeResqueStrings.ping]
     
-    @scala.inline
-    def poll: typings.nodeResque.nodeResqueStrings.poll = "poll".asInstanceOf[typings.nodeResque.nodeResqueStrings.poll]
+    inline def poll: typings.nodeResque.nodeResqueStrings.poll = "poll".asInstanceOf[typings.nodeResque.nodeResqueStrings.poll]
     
-    @scala.inline
-    def reEnqueue: typings.nodeResque.nodeResqueStrings.reEnqueue = "reEnqueue".asInstanceOf[typings.nodeResque.nodeResqueStrings.reEnqueue]
+    inline def reEnqueue: typings.nodeResque.nodeResqueStrings.reEnqueue = "reEnqueue".asInstanceOf[typings.nodeResque.nodeResqueStrings.reEnqueue]
     
-    @scala.inline
-    def start: typings.nodeResque.nodeResqueStrings.start = "start".asInstanceOf[typings.nodeResque.nodeResqueStrings.start]
+    inline def start: typings.nodeResque.nodeResqueStrings.start = "start".asInstanceOf[typings.nodeResque.nodeResqueStrings.start]
     
-    @scala.inline
-    def success: typings.nodeResque.nodeResqueStrings.success = "success".asInstanceOf[typings.nodeResque.nodeResqueStrings.success]
+    inline def success: typings.nodeResque.nodeResqueStrings.success = "success".asInstanceOf[typings.nodeResque.nodeResqueStrings.success]
   }
   
   trait WorkerOptions extends StObject {
@@ -613,44 +541,32 @@ object mod {
   }
   object WorkerOptions {
     
-    @scala.inline
-    def apply(queues: js.Array[String]): WorkerOptions = {
+    inline def apply(queues: js.Array[String]): WorkerOptions = {
       val __obj = js.Dynamic.literal(queues = queues.asInstanceOf[js.Any])
       __obj.asInstanceOf[WorkerOptions]
     }
     
-    @scala.inline
-    implicit class WorkerOptionsMutableBuilder[Self <: WorkerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WorkerOptions](x: Self) {
       
-      @scala.inline
-      def setConnection(value: ConnectionOptions): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+      inline def setConnection(value: ConnectionOptions): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
+      inline def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
       
-      @scala.inline
-      def setLooping(value: Boolean): Self = StObject.set(x, "looping", value.asInstanceOf[js.Any])
+      inline def setLooping(value: Boolean): Self = StObject.set(x, "looping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoopingUndefined: Self = StObject.set(x, "looping", js.undefined)
+      inline def setLoopingUndefined: Self = StObject.set(x, "looping", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setQueues(value: js.Array[String]): Self = StObject.set(x, "queues", value.asInstanceOf[js.Any])
+      inline def setQueues(value: js.Array[String]): Self = StObject.set(x, "queues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueuesVarargs(value: String*): Self = StObject.set(x, "queues", js.Array(value :_*))
+      inline def setQueuesVarargs(value: String*): Self = StObject.set(x, "queues", js.Array(value :_*))
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -666,26 +582,20 @@ object mod {
   }
   object WorkerStatus {
     
-    @scala.inline
-    def apply(payload: Args, queue: String, run_at: String, worker: String): WorkerStatus = {
+    inline def apply(payload: Args, queue: String, run_at: String, worker: String): WorkerStatus = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any], run_at = run_at.asInstanceOf[js.Any], worker = worker.asInstanceOf[js.Any])
       __obj.asInstanceOf[WorkerStatus]
     }
     
-    @scala.inline
-    implicit class WorkerStatusMutableBuilder[Self <: WorkerStatus] (val x: Self) extends AnyVal {
+    extension [Self <: WorkerStatus](x: Self) {
       
-      @scala.inline
-      def setPayload(value: Args): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Args): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+      inline def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRun_at(value: String): Self = StObject.set(x, "run_at", value.asInstanceOf[js.Any])
+      inline def setRun_at(value: String): Self = StObject.set(x, "run_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorker(value: String): Self = StObject.set(x, "worker", value.asInstanceOf[js.Any])
+      inline def setWorker(value: String): Self = StObject.set(x, "worker", value.asInstanceOf[js.Any])
     }
   }
 }

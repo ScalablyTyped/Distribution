@@ -33,43 +33,31 @@ trait ExecutionRecord extends StObject {
 }
 object ExecutionRecord {
   
-  @scala.inline
-  def apply(): ExecutionRecord = {
+  inline def apply(): ExecutionRecord = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExecutionRecord]
   }
   
-  @scala.inline
-  implicit class ExecutionRecordMutableBuilder[Self <: ExecutionRecord] (val x: Self) extends AnyVal {
+  extension [Self <: ExecutionRecord](x: Self) {
     
-    @scala.inline
-    def setExecutionId(value: ExecutionId): Self = StObject.set(x, "executionId", value.asInstanceOf[js.Any])
+    inline def setExecutionId(value: ExecutionId): Self = StObject.set(x, "executionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionIdUndefined: Self = StObject.set(x, "executionId", js.undefined)
+    inline def setExecutionIdUndefined: Self = StObject.set(x, "executionId", js.undefined)
     
-    @scala.inline
-    def setExecutionResult(value: ExecutionResult): Self = StObject.set(x, "executionResult", value.asInstanceOf[js.Any])
+    inline def setExecutionResult(value: ExecutionResult): Self = StObject.set(x, "executionResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionResultUndefined: Self = StObject.set(x, "executionResult", js.undefined)
+    inline def setExecutionResultUndefined: Self = StObject.set(x, "executionResult", js.undefined)
     
-    @scala.inline
-    def setExecutionStatus(value: ExecutionStatus): Self = StObject.set(x, "executionStatus", value.asInstanceOf[js.Any])
+    inline def setExecutionStatus(value: ExecutionStatus): Self = StObject.set(x, "executionStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionStatusUndefined: Self = StObject.set(x, "executionStatus", js.undefined)
+    inline def setExecutionStatusUndefined: Self = StObject.set(x, "executionStatus", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedAt(value: Date): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedAt(value: Date): Self = StObject.set(x, "lastUpdatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
+    inline def setLastUpdatedAtUndefined: Self = StObject.set(x, "lastUpdatedAt", js.undefined)
     
-    @scala.inline
-    def setStartedAt(value: Date): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
+    inline def setStartedAt(value: Date): Self = StObject.set(x, "startedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartedAtUndefined: Self = StObject.set(x, "startedAt", js.undefined)
+    inline def setStartedAtUndefined: Self = StObject.set(x, "startedAt", js.undefined)
   }
 }

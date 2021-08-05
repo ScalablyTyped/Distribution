@@ -21,10 +21,8 @@ object mod {
   	//=> ['bar']
   	```
   	*/
-  @scala.inline
-  def apply(inputs: js.Array[String], patterns: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(inputs.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-  @scala.inline
-  def apply(inputs: js.Array[String], patterns: js.Array[String], options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(inputs.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def apply(inputs: js.Array[String], patterns: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(inputs.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def apply(inputs: js.Array[String], patterns: js.Array[String], options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(inputs.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   @JSImport("matcher", JSImport.Namespace)
   @js.native
@@ -62,22 +60,14 @@ object mod {
   	//=> false
   	```
   	*/
-  @scala.inline
-  def isMatch(input: String, pattern: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isMatch(input: String, pattern: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isMatch(input: String, pattern: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isMatch(input: String, pattern: js.Array[String], options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isMatch(input: js.Array[String], pattern: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isMatch(input: js.Array[String], pattern: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isMatch(input: js.Array[String], pattern: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def isMatch(input: js.Array[String], pattern: js.Array[String], options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isMatch(input: String, pattern: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isMatch(input: String, pattern: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isMatch(input: String, pattern: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isMatch(input: String, pattern: js.Array[String], options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isMatch(input: js.Array[String], pattern: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isMatch(input: js.Array[String], pattern: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isMatch(input: js.Array[String], pattern: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isMatch(input: js.Array[String], pattern: js.Array[String], options: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(input.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   trait Options extends StObject {
     
@@ -90,20 +80,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+      inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
+      inline def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
     }
   }
 }

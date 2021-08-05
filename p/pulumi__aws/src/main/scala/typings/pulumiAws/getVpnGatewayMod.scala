@@ -13,14 +13,10 @@ object getVpnGatewayMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getVpnGateway(): js.Promise[GetVpnGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpnGateway")().asInstanceOf[js.Promise[GetVpnGatewayResult]]
-  @scala.inline
-  def getVpnGateway(args: Unit, opts: InvokeOptions): js.Promise[GetVpnGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpnGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpnGatewayResult]]
-  @scala.inline
-  def getVpnGateway(args: GetVpnGatewayArgs): js.Promise[GetVpnGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpnGateway")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetVpnGatewayResult]]
-  @scala.inline
-  def getVpnGateway(args: GetVpnGatewayArgs, opts: InvokeOptions): js.Promise[GetVpnGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpnGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpnGatewayResult]]
+  inline def getVpnGateway(): js.Promise[GetVpnGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpnGateway")().asInstanceOf[js.Promise[GetVpnGatewayResult]]
+  inline def getVpnGateway(args: Unit, opts: InvokeOptions): js.Promise[GetVpnGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpnGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpnGatewayResult]]
+  inline def getVpnGateway(args: GetVpnGatewayArgs): js.Promise[GetVpnGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpnGateway")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetVpnGatewayResult]]
+  inline def getVpnGateway(args: GetVpnGatewayArgs, opts: InvokeOptions): js.Promise[GetVpnGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpnGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpnGatewayResult]]
   
   trait GetVpnGatewayArgs extends StObject {
     
@@ -62,59 +58,42 @@ object getVpnGatewayMod {
   }
   object GetVpnGatewayArgs {
     
-    @scala.inline
-    def apply(): GetVpnGatewayArgs = {
+    inline def apply(): GetVpnGatewayArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetVpnGatewayArgs]
     }
     
-    @scala.inline
-    implicit class GetVpnGatewayArgsMutableBuilder[Self <: GetVpnGatewayArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetVpnGatewayArgs](x: Self) {
       
-      @scala.inline
-      def setAmazonSideAsn(value: String): Self = StObject.set(x, "amazonSideAsn", value.asInstanceOf[js.Any])
+      inline def setAmazonSideAsn(value: String): Self = StObject.set(x, "amazonSideAsn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmazonSideAsnUndefined: Self = StObject.set(x, "amazonSideAsn", js.undefined)
+      inline def setAmazonSideAsnUndefined: Self = StObject.set(x, "amazonSideAsn", js.undefined)
       
-      @scala.inline
-      def setAttachedVpcId(value: String): Self = StObject.set(x, "attachedVpcId", value.asInstanceOf[js.Any])
+      inline def setAttachedVpcId(value: String): Self = StObject.set(x, "attachedVpcId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachedVpcIdUndefined: Self = StObject.set(x, "attachedVpcId", js.undefined)
+      inline def setAttachedVpcIdUndefined: Self = StObject.set(x, "attachedVpcId", js.undefined)
       
-      @scala.inline
-      def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
+      inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
       
-      @scala.inline
-      def setFilters(value: js.Array[GetVpnGatewayFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[GetVpnGatewayFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: GetVpnGatewayFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: GetVpnGatewayFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -138,8 +117,7 @@ object getVpnGatewayMod {
   }
   object GetVpnGatewayResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       amazonSideAsn: String,
       arn: String,
       attachedVpcId: String,
@@ -152,38 +130,27 @@ object getVpnGatewayMod {
       __obj.asInstanceOf[GetVpnGatewayResult]
     }
     
-    @scala.inline
-    implicit class GetVpnGatewayResultMutableBuilder[Self <: GetVpnGatewayResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetVpnGatewayResult](x: Self) {
       
-      @scala.inline
-      def setAmazonSideAsn(value: String): Self = StObject.set(x, "amazonSideAsn", value.asInstanceOf[js.Any])
+      inline def setAmazonSideAsn(value: String): Self = StObject.set(x, "amazonSideAsn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachedVpcId(value: String): Self = StObject.set(x, "attachedVpcId", value.asInstanceOf[js.Any])
+      inline def setAttachedVpcId(value: String): Self = StObject.set(x, "attachedVpcId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2.GetVpnGatewayFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2.GetVpnGatewayFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2.GetVpnGatewayFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2.GetVpnGatewayFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     }
   }
 }

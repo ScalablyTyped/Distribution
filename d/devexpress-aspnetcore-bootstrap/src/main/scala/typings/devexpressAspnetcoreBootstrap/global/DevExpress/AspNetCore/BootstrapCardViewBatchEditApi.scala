@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class BootstrapCardViewBatchEditApi protected ()
   extends StObject
      with typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.BootstrapCardViewBatchEditApi {
-  protected def this(instance: js.Any) = this()
+  /* protected */ def this(instance: js.Any) = this()
   
   /* CompleteClass */
   override def addNewCard(): Unit = js.native
@@ -29,7 +29,7 @@ class BootstrapCardViewBatchEditApi protected ()
   /* CompleteClass */
   override def getInsertedCardIndices(): js.Array[Double] = js.native
   
-  /* CompleteClass */
+  /* protected */ /* CompleteClass */
   override val instance: js.Any = js.native
   
   /* CompleteClass */

@@ -43,49 +43,35 @@ trait GetResourceConfigHistoryRequest extends StObject {
 }
 object GetResourceConfigHistoryRequest {
   
-  @scala.inline
-  def apply(resourceId: ResourceId, resourceType: ResourceType): GetResourceConfigHistoryRequest = {
+  inline def apply(resourceId: ResourceId, resourceType: ResourceType): GetResourceConfigHistoryRequest = {
     val __obj = js.Dynamic.literal(resourceId = resourceId.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResourceConfigHistoryRequest]
   }
   
-  @scala.inline
-  implicit class GetResourceConfigHistoryRequestMutableBuilder[Self <: GetResourceConfigHistoryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetResourceConfigHistoryRequest](x: Self) {
     
-    @scala.inline
-    def setChronologicalOrder(value: ChronologicalOrder): Self = StObject.set(x, "chronologicalOrder", value.asInstanceOf[js.Any])
+    inline def setChronologicalOrder(value: ChronologicalOrder): Self = StObject.set(x, "chronologicalOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChronologicalOrderUndefined: Self = StObject.set(x, "chronologicalOrder", js.undefined)
+    inline def setChronologicalOrderUndefined: Self = StObject.set(x, "chronologicalOrder", js.undefined)
     
-    @scala.inline
-    def setEarlierTime(value: EarlierTime): Self = StObject.set(x, "earlierTime", value.asInstanceOf[js.Any])
+    inline def setEarlierTime(value: EarlierTime): Self = StObject.set(x, "earlierTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEarlierTimeUndefined: Self = StObject.set(x, "earlierTime", js.undefined)
+    inline def setEarlierTimeUndefined: Self = StObject.set(x, "earlierTime", js.undefined)
     
-    @scala.inline
-    def setLaterTime(value: LaterTime): Self = StObject.set(x, "laterTime", value.asInstanceOf[js.Any])
+    inline def setLaterTime(value: LaterTime): Self = StObject.set(x, "laterTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaterTimeUndefined: Self = StObject.set(x, "laterTime", js.undefined)
+    inline def setLaterTimeUndefined: Self = StObject.set(x, "laterTime", js.undefined)
     
-    @scala.inline
-    def setLimit(value: Limit): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Limit): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setResourceId(value: ResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
   }
 }

@@ -28,37 +28,27 @@ trait GetAggregateDiscoveredResourceCountsResponse extends StObject {
 }
 object GetAggregateDiscoveredResourceCountsResponse {
   
-  @scala.inline
-  def apply(TotalDiscoveredResources: Long): GetAggregateDiscoveredResourceCountsResponse = {
+  inline def apply(TotalDiscoveredResources: Long): GetAggregateDiscoveredResourceCountsResponse = {
     val __obj = js.Dynamic.literal(TotalDiscoveredResources = TotalDiscoveredResources.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAggregateDiscoveredResourceCountsResponse]
   }
   
-  @scala.inline
-  implicit class GetAggregateDiscoveredResourceCountsResponseMutableBuilder[Self <: GetAggregateDiscoveredResourceCountsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAggregateDiscoveredResourceCountsResponse](x: Self) {
     
-    @scala.inline
-    def setGroupByKey(value: StringWithCharLimit256): Self = StObject.set(x, "GroupByKey", value.asInstanceOf[js.Any])
+    inline def setGroupByKey(value: StringWithCharLimit256): Self = StObject.set(x, "GroupByKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupByKeyUndefined: Self = StObject.set(x, "GroupByKey", js.undefined)
+    inline def setGroupByKeyUndefined: Self = StObject.set(x, "GroupByKey", js.undefined)
     
-    @scala.inline
-    def setGroupedResourceCounts(value: GroupedResourceCountList): Self = StObject.set(x, "GroupedResourceCounts", value.asInstanceOf[js.Any])
+    inline def setGroupedResourceCounts(value: GroupedResourceCountList): Self = StObject.set(x, "GroupedResourceCounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupedResourceCountsUndefined: Self = StObject.set(x, "GroupedResourceCounts", js.undefined)
+    inline def setGroupedResourceCountsUndefined: Self = StObject.set(x, "GroupedResourceCounts", js.undefined)
     
-    @scala.inline
-    def setGroupedResourceCountsVarargs(value: GroupedResourceCount*): Self = StObject.set(x, "GroupedResourceCounts", js.Array(value :_*))
+    inline def setGroupedResourceCountsVarargs(value: GroupedResourceCount*): Self = StObject.set(x, "GroupedResourceCounts", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTotalDiscoveredResources(value: Long): Self = StObject.set(x, "TotalDiscoveredResources", value.asInstanceOf[js.Any])
+    inline def setTotalDiscoveredResources(value: Long): Self = StObject.set(x, "TotalDiscoveredResources", value.asInstanceOf[js.Any])
   }
 }

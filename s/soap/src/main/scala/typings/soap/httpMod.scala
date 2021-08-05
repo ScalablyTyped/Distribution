@@ -16,7 +16,7 @@ object httpMod {
   class HttpClient () extends StObject {
     def this(options: IOptions) = this()
     
-    var _request: js.Any = js.native
+    /* private */ var _request: js.Any = js.native
     
     /**
       * Build the HTTP request (method, uri, headers, ...)
@@ -160,26 +160,20 @@ object httpMod {
   }
   object IAttachment {
     
-    @scala.inline
-    def apply(body: ReadableStream, contentId: String, mimetype: String, name: String): IAttachment = {
+    inline def apply(body: ReadableStream, contentId: String, mimetype: String, name: String): IAttachment = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], contentId = contentId.asInstanceOf[js.Any], mimetype = mimetype.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[IAttachment]
     }
     
-    @scala.inline
-    implicit class IAttachmentMutableBuilder[Self <: IAttachment] (val x: Self) extends AnyVal {
+    extension [Self <: IAttachment](x: Self) {
       
-      @scala.inline
-      def setBody(value: ReadableStream): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: ReadableStream): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentId(value: String): Self = StObject.set(x, "contentId", value.asInstanceOf[js.Any])
+      inline def setContentId(value: String): Self = StObject.set(x, "contentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimetype(value: String): Self = StObject.set(x, "mimetype", value.asInstanceOf[js.Any])
+      inline def setMimetype(value: String): Self = StObject.set(x, "mimetype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

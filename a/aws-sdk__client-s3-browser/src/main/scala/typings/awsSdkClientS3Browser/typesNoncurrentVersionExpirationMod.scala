@@ -15,20 +15,16 @@ object typesNoncurrentVersionExpirationMod {
   }
   object NoncurrentVersionExpiration {
     
-    @scala.inline
-    def apply(): NoncurrentVersionExpiration = {
+    inline def apply(): NoncurrentVersionExpiration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NoncurrentVersionExpiration]
     }
     
-    @scala.inline
-    implicit class NoncurrentVersionExpirationMutableBuilder[Self <: NoncurrentVersionExpiration] (val x: Self) extends AnyVal {
+    extension [Self <: NoncurrentVersionExpiration](x: Self) {
       
-      @scala.inline
-      def setNoncurrentDays(value: Double): Self = StObject.set(x, "NoncurrentDays", value.asInstanceOf[js.Any])
+      inline def setNoncurrentDays(value: Double): Self = StObject.set(x, "NoncurrentDays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoncurrentDaysUndefined: Self = StObject.set(x, "NoncurrentDays", js.undefined)
+      inline def setNoncurrentDaysUndefined: Self = StObject.set(x, "NoncurrentDays", js.undefined)
     }
   }
   

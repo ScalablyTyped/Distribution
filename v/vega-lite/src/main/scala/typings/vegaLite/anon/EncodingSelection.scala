@@ -23,22 +23,17 @@ trait EncodingSelection
 }
 object EncodingSelection {
   
-  @scala.inline
-  def apply(selection: String): EncodingSelection = {
+  inline def apply(selection: String): EncodingSelection = {
     val __obj = js.Dynamic.literal(selection = selection.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncodingSelection]
   }
   
-  @scala.inline
-  implicit class EncodingSelectionMutableBuilder[Self <: EncodingSelection] (val x: Self) extends AnyVal {
+  extension [Self <: EncodingSelection](x: Self) {
     
-    @scala.inline
-    def setEncoding(value: SingleDefUnitChannel): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: SingleDefUnitChannel): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    @scala.inline
-    def setSelection(value: String): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: String): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
   }
 }

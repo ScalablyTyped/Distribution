@@ -11,19 +11,15 @@ trait `15` extends StObject {
 }
 object `15` {
   
-  @scala.inline
-  def apply(data: js.Array[Avatarurl]): `15` = {
+  inline def apply(data: js.Array[Avatarurl]): `15` = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[`15`]
   }
   
-  @scala.inline
-  implicit class `15MutableBuilder`[Self <: `15`] (val x: Self) extends AnyVal {
+  extension [Self <: `15`](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Array[Avatarurl]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[Avatarurl]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: Avatarurl*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Avatarurl*): Self = StObject.set(x, "data", js.Array(value :_*))
   }
 }

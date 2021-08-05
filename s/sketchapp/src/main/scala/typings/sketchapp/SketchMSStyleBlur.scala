@@ -22,32 +22,24 @@ trait SketchMSStyleBlur extends StObject {
 }
 object SketchMSStyleBlur {
   
-  @scala.inline
-  def apply(center: X, isEnabled: Double, motionAngle: Double, radius: Double, `type`: Double): SketchMSStyleBlur = {
+  inline def apply(center: X, isEnabled: Double, motionAngle: Double, radius: Double, `type`: Double): SketchMSStyleBlur = {
     val __obj = js.Dynamic.literal(_class = "styleBlur", center = center.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], motionAngle = motionAngle.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSStyleBlur]
   }
   
-  @scala.inline
-  implicit class SketchMSStyleBlurMutableBuilder[Self <: SketchMSStyleBlur] (val x: Self) extends AnyVal {
+  extension [Self <: SketchMSStyleBlur](x: Self) {
     
-    @scala.inline
-    def setCenter(value: X): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: X): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEnabled(value: Double): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+    inline def setIsEnabled(value: Double): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMotionAngle(value: Double): Self = StObject.set(x, "motionAngle", value.asInstanceOf[js.Any])
+    inline def setMotionAngle(value: Double): Self = StObject.set(x, "motionAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_class(value: styleBlur): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
+    inline def set_class(value: styleBlur): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

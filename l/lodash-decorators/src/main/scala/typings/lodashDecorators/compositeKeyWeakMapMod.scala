@@ -10,7 +10,7 @@ object compositeKeyWeakMapMod {
   @js.native
   class CompositeKeyWeakMap[T] () extends StObject {
     
-    var _weakMap: js.Any = js.native
+    /* private */ var _weakMap: js.Any = js.native
     
     def get(keys: js.Array[js.Any]): T = js.native
     

@@ -10,12 +10,9 @@ object packingUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getChannels(name: String, rank: Double): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getChannels")(name.asInstanceOf[js.Any], rank.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def getChannels(name: String, rank: Double): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getChannels")(name.asInstanceOf[js.Any], rank.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def getSourceCoords(rank: Double, dims: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSourceCoords")(rank.asInstanceOf[js.Any], dims.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getSourceCoords(rank: Double, dims: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSourceCoords")(rank.asInstanceOf[js.Any], dims.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def getVecChannels(name: String, rank: Double): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVecChannels")(name.asInstanceOf[js.Any], rank.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def getVecChannels(name: String, rank: Double): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVecChannels")(name.asInstanceOf[js.Any], rank.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
 }

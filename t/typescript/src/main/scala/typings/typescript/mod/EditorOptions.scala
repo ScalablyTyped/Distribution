@@ -20,8 +20,7 @@ trait EditorOptions extends StObject {
 }
 object EditorOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ConvertTabsToSpaces: Boolean,
     IndentSize: Double,
     IndentStyle: IndentStyle,
@@ -32,28 +31,20 @@ object EditorOptions {
     __obj.asInstanceOf[EditorOptions]
   }
   
-  @scala.inline
-  implicit class EditorOptionsMutableBuilder[Self <: EditorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EditorOptions](x: Self) {
     
-    @scala.inline
-    def setBaseIndentSize(value: Double): Self = StObject.set(x, "BaseIndentSize", value.asInstanceOf[js.Any])
+    inline def setBaseIndentSize(value: Double): Self = StObject.set(x, "BaseIndentSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseIndentSizeUndefined: Self = StObject.set(x, "BaseIndentSize", js.undefined)
+    inline def setBaseIndentSizeUndefined: Self = StObject.set(x, "BaseIndentSize", js.undefined)
     
-    @scala.inline
-    def setConvertTabsToSpaces(value: Boolean): Self = StObject.set(x, "ConvertTabsToSpaces", value.asInstanceOf[js.Any])
+    inline def setConvertTabsToSpaces(value: Boolean): Self = StObject.set(x, "ConvertTabsToSpaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndentSize(value: Double): Self = StObject.set(x, "IndentSize", value.asInstanceOf[js.Any])
+    inline def setIndentSize(value: Double): Self = StObject.set(x, "IndentSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndentStyle(value: IndentStyle): Self = StObject.set(x, "IndentStyle", value.asInstanceOf[js.Any])
+    inline def setIndentStyle(value: IndentStyle): Self = StObject.set(x, "IndentStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewLineCharacter(value: java.lang.String): Self = StObject.set(x, "NewLineCharacter", value.asInstanceOf[js.Any])
+    inline def setNewLineCharacter(value: java.lang.String): Self = StObject.set(x, "NewLineCharacter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabSize(value: Double): Self = StObject.set(x, "TabSize", value.asInstanceOf[js.Any])
+    inline def setTabSize(value: Double): Self = StObject.set(x, "TabSize", value.asInstanceOf[js.Any])
   }
 }

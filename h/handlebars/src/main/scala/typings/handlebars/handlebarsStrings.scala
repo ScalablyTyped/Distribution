@@ -8,137 +8,113 @@ object handlebarsStrings {
   
   @js.native
   sealed trait BlockStatement extends StObject
-  @scala.inline
-  def BlockStatement: BlockStatement = "BlockStatement".asInstanceOf[BlockStatement]
+  inline def BlockStatement: BlockStatement = "BlockStatement".asInstanceOf[BlockStatement]
   
   @js.native
   sealed trait BooleanLiteral extends StObject
-  @scala.inline
-  def BooleanLiteral: BooleanLiteral = "BooleanLiteral".asInstanceOf[BooleanLiteral]
+  inline def BooleanLiteral: BooleanLiteral = "BooleanLiteral".asInstanceOf[BooleanLiteral]
   
   @js.native
   sealed trait CommentStatement extends StObject
-  @scala.inline
-  def CommentStatement: CommentStatement = "CommentStatement".asInstanceOf[CommentStatement]
+  inline def CommentStatement: CommentStatement = "CommentStatement".asInstanceOf[CommentStatement]
   
   @js.native
   sealed trait ContentStatement extends StObject
-  @scala.inline
-  def ContentStatement: ContentStatement = "ContentStatement".asInstanceOf[ContentStatement]
+  inline def ContentStatement: ContentStatement = "ContentStatement".asInstanceOf[ContentStatement]
   
   @js.native
   sealed trait Hash extends StObject
-  @scala.inline
-  def Hash: Hash = "Hash".asInstanceOf[Hash]
+  inline def Hash: Hash = "Hash".asInstanceOf[Hash]
   
   @js.native
   sealed trait HashPair extends StObject
-  @scala.inline
-  def HashPair: HashPair = "HashPair".asInstanceOf[HashPair]
+  inline def HashPair: HashPair = "HashPair".asInstanceOf[HashPair]
   
   @js.native
   sealed trait KnownHelpers extends StObject
-  @scala.inline
-  def KnownHelpers: KnownHelpers = "KnownHelpers".asInstanceOf[KnownHelpers]
+  inline def KnownHelpers: KnownHelpers = "KnownHelpers".asInstanceOf[KnownHelpers]
   
   @js.native
   sealed trait MustacheStatement extends StObject
-  @scala.inline
-  def MustacheStatement: MustacheStatement = "MustacheStatement".asInstanceOf[MustacheStatement]
+  inline def MustacheStatement: MustacheStatement = "MustacheStatement".asInstanceOf[MustacheStatement]
   
   @js.native
   sealed trait NullLiteral extends StObject
-  @scala.inline
-  def NullLiteral: NullLiteral = "NullLiteral".asInstanceOf[NullLiteral]
+  inline def NullLiteral: NullLiteral = "NullLiteral".asInstanceOf[NullLiteral]
   
   @js.native
   sealed trait NumberLiteral extends StObject
-  @scala.inline
-  def NumberLiteral: NumberLiteral = "NumberLiteral".asInstanceOf[NumberLiteral]
+  inline def NumberLiteral: NumberLiteral = "NumberLiteral".asInstanceOf[NumberLiteral]
   
   @js.native
   sealed trait PartialBlockStatement extends StObject
-  @scala.inline
-  def PartialBlockStatement: PartialBlockStatement = "PartialBlockStatement".asInstanceOf[PartialBlockStatement]
+  inline def PartialBlockStatement: PartialBlockStatement = "PartialBlockStatement".asInstanceOf[PartialBlockStatement]
   
   @js.native
   sealed trait PartialStatement extends StObject
-  @scala.inline
-  def PartialStatement: PartialStatement = "PartialStatement".asInstanceOf[PartialStatement]
+  inline def PartialStatement: PartialStatement = "PartialStatement".asInstanceOf[PartialStatement]
   
   @js.native
   sealed trait PathExpression extends StObject
-  @scala.inline
-  def PathExpression: PathExpression = "PathExpression".asInstanceOf[PathExpression]
+  inline def PathExpression: PathExpression = "PathExpression".asInstanceOf[PathExpression]
   
   @js.native
   sealed trait StringLiteral extends StObject
-  @scala.inline
-  def StringLiteral: StringLiteral = "StringLiteral".asInstanceOf[StringLiteral]
+  inline def StringLiteral: StringLiteral = "StringLiteral".asInstanceOf[StringLiteral]
   
   @js.native
   sealed trait SubExpression extends StObject
-  @scala.inline
-  def SubExpression: SubExpression = "SubExpression".asInstanceOf[SubExpression]
+  inline def SubExpression: SubExpression = "SubExpression".asInstanceOf[SubExpression]
   
   @js.native
   sealed trait UndefinedLiteral extends StObject
-  @scala.inline
-  def UndefinedLiteral: UndefinedLiteral = "UndefinedLiteral".asInstanceOf[UndefinedLiteral]
+  inline def UndefinedLiteral: UndefinedLiteral = "UndefinedLiteral".asInstanceOf[UndefinedLiteral]
   
   @js.native
   sealed trait blockHelperMissing
     extends StObject
        with BuiltinHelperName
-  @scala.inline
-  def blockHelperMissing: blockHelperMissing = "blockHelperMissing".asInstanceOf[blockHelperMissing]
+  inline def blockHelperMissing: blockHelperMissing = "blockHelperMissing".asInstanceOf[blockHelperMissing]
   
   @js.native
   sealed trait each
     extends StObject
        with BuiltinHelperName
-  @scala.inline
-  def each: each = "each".asInstanceOf[each]
+  inline def each: each = "each".asInstanceOf[each]
   
   @js.native
   sealed trait helperMissing
     extends StObject
        with BuiltinHelperName
-  @scala.inline
-  def helperMissing: helperMissing = "helperMissing".asInstanceOf[helperMissing]
+  inline def helperMissing: helperMissing = "helperMissing".asInstanceOf[helperMissing]
   
   @js.native
   sealed trait `if`
     extends StObject
        with BuiltinHelperName
-  @scala.inline
-  def `if`: `if` = "if".asInstanceOf[`if`]
+  inline def `if`: `if` = "if".asInstanceOf[`if`]
   
   @js.native
   sealed trait log
     extends StObject
        with BuiltinHelperName
-  @scala.inline
-  def log: log = "log".asInstanceOf[log]
+  inline def log: log = "log".asInstanceOf[log]
   
   @js.native
   sealed trait lookup
     extends StObject
        with BuiltinHelperName
-  @scala.inline
-  def lookup: lookup = "lookup".asInstanceOf[lookup]
+  inline def lookup: lookup = "lookup".asInstanceOf[lookup]
   
   @js.native
   sealed trait unless
     extends StObject
        with BuiltinHelperName
-  @scala.inline
-  def unless: unless = "unless".asInstanceOf[unless]
+  inline def unless: unless = "unless".asInstanceOf[unless]
   
   @js.native
   sealed trait `with`
     extends StObject
        with BuiltinHelperName
-  @scala.inline
-  def `with`: `with` = "with".asInstanceOf[`with`]
+  inline def `with`: `with` = "with".asInstanceOf[`with`]
 }

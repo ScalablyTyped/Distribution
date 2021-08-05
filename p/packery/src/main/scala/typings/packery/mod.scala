@@ -290,92 +290,64 @@ object mod {
   }
   object PackeryOptions {
     
-    @scala.inline
-    def apply(): PackeryOptions = {
+    inline def apply(): PackeryOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PackeryOptions]
     }
     
-    @scala.inline
-    implicit class PackeryOptionsMutableBuilder[Self <: PackeryOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PackeryOptions](x: Self) {
       
-      @scala.inline
-      def setColumnWidth(value: Double): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
+      inline def setColumnWidth(value: Double): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
+      inline def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
       
-      @scala.inline
-      def setContainerStyle(value: js.Object): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
+      inline def setContainerStyle(value: js.Object): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
+      inline def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
       
-      @scala.inline
-      def setGutter(value: Double): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
+      inline def setGutter(value: Double): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
+      inline def setGutterUndefined: Self = StObject.set(x, "gutter", js.undefined)
       
-      @scala.inline
-      def setIsHorizontal(value: Boolean): Self = StObject.set(x, "isHorizontal", value.asInstanceOf[js.Any])
+      inline def setIsHorizontal(value: Boolean): Self = StObject.set(x, "isHorizontal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHorizontalUndefined: Self = StObject.set(x, "isHorizontal", js.undefined)
+      inline def setIsHorizontalUndefined: Self = StObject.set(x, "isHorizontal", js.undefined)
       
-      @scala.inline
-      def setIsInitLayout(value: Boolean): Self = StObject.set(x, "isInitLayout", value.asInstanceOf[js.Any])
+      inline def setIsInitLayout(value: Boolean): Self = StObject.set(x, "isInitLayout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsInitLayoutUndefined: Self = StObject.set(x, "isInitLayout", js.undefined)
+      inline def setIsInitLayoutUndefined: Self = StObject.set(x, "isInitLayout", js.undefined)
       
-      @scala.inline
-      def setIsOriginLeft(value: Boolean): Self = StObject.set(x, "isOriginLeft", value.asInstanceOf[js.Any])
+      inline def setIsOriginLeft(value: Boolean): Self = StObject.set(x, "isOriginLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOriginLeftUndefined: Self = StObject.set(x, "isOriginLeft", js.undefined)
+      inline def setIsOriginLeftUndefined: Self = StObject.set(x, "isOriginLeft", js.undefined)
       
-      @scala.inline
-      def setIsOriginTop(value: Boolean): Self = StObject.set(x, "isOriginTop", value.asInstanceOf[js.Any])
+      inline def setIsOriginTop(value: Boolean): Self = StObject.set(x, "isOriginTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOriginTopUndefined: Self = StObject.set(x, "isOriginTop", js.undefined)
+      inline def setIsOriginTopUndefined: Self = StObject.set(x, "isOriginTop", js.undefined)
       
-      @scala.inline
-      def setIsResizeBound(value: Boolean): Self = StObject.set(x, "isResizeBound", value.asInstanceOf[js.Any])
+      inline def setIsResizeBound(value: Boolean): Self = StObject.set(x, "isResizeBound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsResizeBoundUndefined: Self = StObject.set(x, "isResizeBound", js.undefined)
+      inline def setIsResizeBoundUndefined: Self = StObject.set(x, "isResizeBound", js.undefined)
       
-      @scala.inline
-      def setItemSelector(value: String): Self = StObject.set(x, "itemSelector", value.asInstanceOf[js.Any])
+      inline def setItemSelector(value: String): Self = StObject.set(x, "itemSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemSelectorUndefined: Self = StObject.set(x, "itemSelector", js.undefined)
+      inline def setItemSelectorUndefined: Self = StObject.set(x, "itemSelector", js.undefined)
       
-      @scala.inline
-      def setPercentPosition(value: Boolean): Self = StObject.set(x, "percentPosition", value.asInstanceOf[js.Any])
+      inline def setPercentPosition(value: Boolean): Self = StObject.set(x, "percentPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercentPositionUndefined: Self = StObject.set(x, "percentPosition", js.undefined)
+      inline def setPercentPositionUndefined: Self = StObject.set(x, "percentPosition", js.undefined)
       
-      @scala.inline
-      def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
+      inline def setRowHeight(value: Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
+      inline def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
       
-      @scala.inline
-      def setStamp(value: String): Self = StObject.set(x, "stamp", value.asInstanceOf[js.Any])
+      inline def setStamp(value: String): Self = StObject.set(x, "stamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStampUndefined: Self = StObject.set(x, "stamp", js.undefined)
+      inline def setStampUndefined: Self = StObject.set(x, "stamp", js.undefined)
       
-      @scala.inline
-      def setTransitionDuration(value: String): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
+      inline def setTransitionDuration(value: String): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
+      inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
     }
   }
 }

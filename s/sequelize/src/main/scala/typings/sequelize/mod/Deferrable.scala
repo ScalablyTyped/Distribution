@@ -81,8 +81,7 @@ trait Deferrable extends StObject {
 }
 object Deferrable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     INITIALLY_DEFERRED: DeferrableInitiallyDeferred,
     INITIALLY_IMMEDIATE: DeferrableInitiallyImmediate,
     NOT: DeferrableNot,
@@ -93,22 +92,16 @@ object Deferrable {
     __obj.asInstanceOf[Deferrable]
   }
   
-  @scala.inline
-  implicit class DeferrableMutableBuilder[Self <: Deferrable] (val x: Self) extends AnyVal {
+  extension [Self <: Deferrable](x: Self) {
     
-    @scala.inline
-    def setINITIALLY_DEFERRED(value: DeferrableInitiallyDeferred): Self = StObject.set(x, "INITIALLY_DEFERRED", value.asInstanceOf[js.Any])
+    inline def setINITIALLY_DEFERRED(value: DeferrableInitiallyDeferred): Self = StObject.set(x, "INITIALLY_DEFERRED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setINITIALLY_IMMEDIATE(value: DeferrableInitiallyImmediate): Self = StObject.set(x, "INITIALLY_IMMEDIATE", value.asInstanceOf[js.Any])
+    inline def setINITIALLY_IMMEDIATE(value: DeferrableInitiallyImmediate): Self = StObject.set(x, "INITIALLY_IMMEDIATE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNOT(value: DeferrableNot): Self = StObject.set(x, "NOT", value.asInstanceOf[js.Any])
+    inline def setNOT(value: DeferrableNot): Self = StObject.set(x, "NOT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSET_DEFERRED(value: DeferrableSetDeferred): Self = StObject.set(x, "SET_DEFERRED", value.asInstanceOf[js.Any])
+    inline def setSET_DEFERRED(value: DeferrableSetDeferred): Self = StObject.set(x, "SET_DEFERRED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSET_IMMEDIATE(value: DeferrableSetImmediate): Self = StObject.set(x, "SET_IMMEDIATE", value.asInstanceOf[js.Any])
+    inline def setSET_IMMEDIATE(value: DeferrableSetImmediate): Self = StObject.set(x, "SET_IMMEDIATE", value.asInstanceOf[js.Any])
   }
 }

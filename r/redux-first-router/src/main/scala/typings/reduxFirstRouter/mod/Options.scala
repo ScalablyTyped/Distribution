@@ -139,130 +139,91 @@ trait Options[TKeys, TState] extends StObject {
 }
 object Options {
   
-  @scala.inline
-  def apply[TKeys, TState](): Options[TKeys, TState] = {
+  inline def apply[TKeys, TState](): Options[TKeys, TState] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Options[TKeys, TState]]
   }
   
-  @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options[?, ?], TKeys, TState] (val x: Self & (Options[TKeys, TState])) extends AnyVal {
+  extension [Self <: Options[?, ?], TKeys, TState](x: Self & (Options[TKeys, TState])) {
     
-    @scala.inline
-    def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
+    inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasenameUndefined: Self = StObject.set(x, "basename", js.undefined)
+    inline def setBasenameUndefined: Self = StObject.set(x, "basename", js.undefined)
     
-    @scala.inline
-    def setCreateHistory(value: () => History[typings.history.mod.LocationState]): Self = StObject.set(x, "createHistory", js.Any.fromFunction0(value))
+    inline def setCreateHistory(value: () => History[typings.history.mod.LocationState]): Self = StObject.set(x, "createHistory", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateHistoryUndefined: Self = StObject.set(x, "createHistory", js.undefined)
+    inline def setCreateHistoryUndefined: Self = StObject.set(x, "createHistory", js.undefined)
     
-    @scala.inline
-    def setDisplayConfirmLeave(value: (/* message */ String, /* callback */ js.Function1[/* unblock */ Boolean, Unit]) => Unit): Self = StObject.set(x, "displayConfirmLeave", js.Any.fromFunction2(value))
+    inline def setDisplayConfirmLeave(value: (/* message */ String, /* callback */ js.Function1[/* unblock */ Boolean, Unit]) => Unit): Self = StObject.set(x, "displayConfirmLeave", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDisplayConfirmLeaveUndefined: Self = StObject.set(x, "displayConfirmLeave", js.undefined)
+    inline def setDisplayConfirmLeaveUndefined: Self = StObject.set(x, "displayConfirmLeave", js.undefined)
     
-    @scala.inline
-    def setExtra(value: js.Any): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+    inline def setExtra(value: js.Any): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
+    inline def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
     
-    @scala.inline
-    def setInitialDispatch(value: Boolean): Self = StObject.set(x, "initialDispatch", value.asInstanceOf[js.Any])
+    inline def setInitialDispatch(value: Boolean): Self = StObject.set(x, "initialDispatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialDispatchUndefined: Self = StObject.set(x, "initialDispatch", js.undefined)
+    inline def setInitialDispatchUndefined: Self = StObject.set(x, "initialDispatch", js.undefined)
     
-    @scala.inline
-    def setInitialEntries(value: HistoryEntries): Self = StObject.set(x, "initialEntries", value.asInstanceOf[js.Any])
+    inline def setInitialEntries(value: HistoryEntries): Self = StObject.set(x, "initialEntries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialEntriesUndefined: Self = StObject.set(x, "initialEntries", js.undefined)
+    inline def setInitialEntriesUndefined: Self = StObject.set(x, "initialEntries", js.undefined)
     
-    @scala.inline
-    def setInitialEntriesVarargs(value: Pathname*): Self = StObject.set(x, "initialEntries", js.Array(value :_*))
+    inline def setInitialEntriesVarargs(value: Pathname*): Self = StObject.set(x, "initialEntries", js.Array(value :_*))
     
-    @scala.inline
-    def setLocation(value: String | (SelectLocationState_[TKeys, TState])): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String | (SelectLocationState_[TKeys, TState])): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationFunction1(value: TState => LocationState[TKeys, TState]): Self = StObject.set(x, "location", js.Any.fromFunction1(value))
+    inline def setLocationFunction1(value: TState => LocationState[TKeys, TState]): Self = StObject.set(x, "location", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setNavigators(value: NavigatorsConfig[TKeys, TState]): Self = StObject.set(x, "navigators", value.asInstanceOf[js.Any])
+    inline def setNavigators(value: NavigatorsConfig[TKeys, TState]): Self = StObject.set(x, "navigators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigatorsUndefined: Self = StObject.set(x, "navigators", js.undefined)
+    inline def setNavigatorsUndefined: Self = StObject.set(x, "navigators", js.undefined)
     
-    @scala.inline
-    def setNotFoundPath(value: String): Self = StObject.set(x, "notFoundPath", value.asInstanceOf[js.Any])
+    inline def setNotFoundPath(value: String): Self = StObject.set(x, "notFoundPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotFoundPathUndefined: Self = StObject.set(x, "notFoundPath", js.undefined)
+    inline def setNotFoundPathUndefined: Self = StObject.set(x, "notFoundPath", js.undefined)
     
-    @scala.inline
-    def setOnAfterChange(
+    inline def setOnAfterChange(
       value: (/* dispatch */ Dispatch[js.Any], /* getState */ StateGetter[TState], /* bag */ Bag) => Unit
     ): Self = StObject.set(x, "onAfterChange", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnAfterChangeUndefined: Self = StObject.set(x, "onAfterChange", js.undefined)
+    inline def setOnAfterChangeUndefined: Self = StObject.set(x, "onAfterChange", js.undefined)
     
-    @scala.inline
-    def setOnBackNext(
+    inline def setOnBackNext(
       value: (/* dispatch */ Dispatch[js.Any], /* getState */ StateGetter[TState], /* bag */ Bag) => Unit
     ): Self = StObject.set(x, "onBackNext", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnBackNextUndefined: Self = StObject.set(x, "onBackNext", js.undefined)
+    inline def setOnBackNextUndefined: Self = StObject.set(x, "onBackNext", js.undefined)
     
-    @scala.inline
-    def setOnBeforeChange(
+    inline def setOnBeforeChange(
       value: (/* dispatch */ Dispatch[js.Any], /* getState */ StateGetter[TState], /* bag */ Bag) => Unit
     ): Self = StObject.set(x, "onBeforeChange", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnBeforeChangeUndefined: Self = StObject.set(x, "onBeforeChange", js.undefined)
+    inline def setOnBeforeChangeUndefined: Self = StObject.set(x, "onBeforeChange", js.undefined)
     
-    @scala.inline
-    def setQuerySerializer(value: QuerySerializer): Self = StObject.set(x, "querySerializer", value.asInstanceOf[js.Any])
+    inline def setQuerySerializer(value: QuerySerializer): Self = StObject.set(x, "querySerializer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuerySerializerUndefined: Self = StObject.set(x, "querySerializer", js.undefined)
+    inline def setQuerySerializerUndefined: Self = StObject.set(x, "querySerializer", js.undefined)
     
-    @scala.inline
-    def setRestoreScroll(value: /* history */ History[typings.history.mod.LocationState] => ScrollBehavior_): Self = StObject.set(x, "restoreScroll", js.Any.fromFunction1(value))
+    inline def setRestoreScroll(value: /* history */ History[typings.history.mod.LocationState] => ScrollBehavior_): Self = StObject.set(x, "restoreScroll", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRestoreScrollUndefined: Self = StObject.set(x, "restoreScroll", js.undefined)
+    inline def setRestoreScrollUndefined: Self = StObject.set(x, "restoreScroll", js.undefined)
     
-    @scala.inline
-    def setScrollTop(value: Boolean): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
+    inline def setScrollTop(value: Boolean): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollTopUndefined: Self = StObject.set(x, "scrollTop", js.undefined)
+    inline def setScrollTopUndefined: Self = StObject.set(x, "scrollTop", js.undefined)
     
-    @scala.inline
-    def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+    inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+    inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String | SelectTitleState[TState]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String | SelectTitleState[TState]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleFunction1(value: TState => String): Self = StObject.set(x, "title", js.Any.fromFunction1(value))
+    inline def setTitleFunction1(value: TState => String): Self = StObject.set(x, "title", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

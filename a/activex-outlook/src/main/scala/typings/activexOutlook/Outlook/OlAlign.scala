@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlAlign extends StObject
 object OlAlign {
   
-  @scala.inline
-  def olAlignCenter: `1` = 1.asInstanceOf[`1`]
+  inline def olAlignCenter: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olAlignLeft: `0` = 0.asInstanceOf[`0`]
+  inline def olAlignLeft: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def olAlignRight: `2` = 2.asInstanceOf[`2`]
+  inline def olAlignRight: `2` = 2.asInstanceOf[`2`]
 }

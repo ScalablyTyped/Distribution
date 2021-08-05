@@ -47,49 +47,35 @@ trait SchemaGooglePrivacyDlpV2Finding extends StObject {
 }
 object SchemaGooglePrivacyDlpV2Finding {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2Finding = {
+  inline def apply(): SchemaGooglePrivacyDlpV2Finding = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2Finding]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2FindingMutableBuilder[Self <: SchemaGooglePrivacyDlpV2Finding] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2Finding](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setInfoType(value: SchemaGooglePrivacyDlpV2InfoType): Self = StObject.set(x, "infoType", value.asInstanceOf[js.Any])
+    inline def setInfoType(value: SchemaGooglePrivacyDlpV2InfoType): Self = StObject.set(x, "infoType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoTypeUndefined: Self = StObject.set(x, "infoType", js.undefined)
+    inline def setInfoTypeUndefined: Self = StObject.set(x, "infoType", js.undefined)
     
-    @scala.inline
-    def setLikelihood(value: String): Self = StObject.set(x, "likelihood", value.asInstanceOf[js.Any])
+    inline def setLikelihood(value: String): Self = StObject.set(x, "likelihood", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLikelihoodUndefined: Self = StObject.set(x, "likelihood", js.undefined)
+    inline def setLikelihoodUndefined: Self = StObject.set(x, "likelihood", js.undefined)
     
-    @scala.inline
-    def setLocation(value: SchemaGooglePrivacyDlpV2Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: SchemaGooglePrivacyDlpV2Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setQuote(value: String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
+    inline def setQuote(value: String): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuoteInfo(value: SchemaGooglePrivacyDlpV2QuoteInfo): Self = StObject.set(x, "quoteInfo", value.asInstanceOf[js.Any])
+    inline def setQuoteInfo(value: SchemaGooglePrivacyDlpV2QuoteInfo): Self = StObject.set(x, "quoteInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuoteInfoUndefined: Self = StObject.set(x, "quoteInfo", js.undefined)
+    inline def setQuoteInfoUndefined: Self = StObject.set(x, "quoteInfo", js.undefined)
     
-    @scala.inline
-    def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
+    inline def setQuoteUndefined: Self = StObject.set(x, "quote", js.undefined)
   }
 }

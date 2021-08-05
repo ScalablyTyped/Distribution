@@ -17,34 +17,25 @@ trait GoogleCloudVideointelligenceV1beta2TextAnnotation extends StObject {
 }
 object GoogleCloudVideointelligenceV1beta2TextAnnotation {
   
-  @scala.inline
-  def apply(): GoogleCloudVideointelligenceV1beta2TextAnnotation = {
+  inline def apply(): GoogleCloudVideointelligenceV1beta2TextAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1beta2TextAnnotation]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVideointelligenceV1beta2TextAnnotationMutableBuilder[Self <: GoogleCloudVideointelligenceV1beta2TextAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVideointelligenceV1beta2TextAnnotation](x: Self) {
     
-    @scala.inline
-    def setSegments(value: js.Array[GoogleCloudVideointelligenceV1beta2TextSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
+    inline def setSegments(value: js.Array[GoogleCloudVideointelligenceV1beta2TextSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
+    inline def setSegmentsUndefined: Self = StObject.set(x, "segments", js.undefined)
     
-    @scala.inline
-    def setSegmentsVarargs(value: GoogleCloudVideointelligenceV1beta2TextSegment*): Self = StObject.set(x, "segments", js.Array(value :_*))
+    inline def setSegmentsVarargs(value: GoogleCloudVideointelligenceV1beta2TextSegment*): Self = StObject.set(x, "segments", js.Array(value :_*))
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

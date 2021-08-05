@@ -14,19 +14,15 @@ trait PublicRawRSAKeyHexResult extends StObject {
 }
 object PublicRawRSAKeyHexResult {
   
-  @scala.inline
-  def apply(e: String, n: String): PublicRawRSAKeyHexResult = {
+  inline def apply(e: String, n: String): PublicRawRSAKeyHexResult = {
     val __obj = js.Dynamic.literal(e = e.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublicRawRSAKeyHexResult]
   }
   
-  @scala.inline
-  implicit class PublicRawRSAKeyHexResultMutableBuilder[Self <: PublicRawRSAKeyHexResult] (val x: Self) extends AnyVal {
+  extension [Self <: PublicRawRSAKeyHexResult](x: Self) {
     
-    @scala.inline
-    def setE(value: String): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+    inline def setE(value: String): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setN(value: String): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+    inline def setN(value: String): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
   }
 }

@@ -68,85 +68,59 @@ trait CommonProps extends StObject {
 }
 object CommonProps {
   
-  @scala.inline
-  def apply(): CommonProps = {
+  inline def apply(): CommonProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommonProps]
   }
   
-  @scala.inline
-  implicit class CommonPropsMutableBuilder[Self <: CommonProps] (val x: Self) extends AnyVal {
+  extension [Self <: CommonProps](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setInnerElementType(value: ReactElementType): Self = StObject.set(x, "innerElementType", value.asInstanceOf[js.Any])
+    inline def setInnerElementType(value: ReactElementType): Self = StObject.set(x, "innerElementType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInnerElementTypeUndefined: Self = StObject.set(x, "innerElementType", js.undefined)
+    inline def setInnerElementTypeUndefined: Self = StObject.set(x, "innerElementType", js.undefined)
     
-    @scala.inline
-    def setInnerRef(value: Ref[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+    inline def setInnerRef(value: Ref[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+    inline def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
+    inline def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
     
-    @scala.inline
-    def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
+    inline def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
     
-    @scala.inline
-    def setInnerTagName(value: String): Self = StObject.set(x, "innerTagName", value.asInstanceOf[js.Any])
+    inline def setInnerTagName(value: String): Self = StObject.set(x, "innerTagName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInnerTagNameUndefined: Self = StObject.set(x, "innerTagName", js.undefined)
+    inline def setInnerTagNameUndefined: Self = StObject.set(x, "innerTagName", js.undefined)
     
-    @scala.inline
-    def setItemData(value: js.Any): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
+    inline def setItemData(value: js.Any): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemDataUndefined: Self = StObject.set(x, "itemData", js.undefined)
+    inline def setItemDataUndefined: Self = StObject.set(x, "itemData", js.undefined)
     
-    @scala.inline
-    def setOuterElementType(value: ReactElementType): Self = StObject.set(x, "outerElementType", value.asInstanceOf[js.Any])
+    inline def setOuterElementType(value: ReactElementType): Self = StObject.set(x, "outerElementType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOuterElementTypeUndefined: Self = StObject.set(x, "outerElementType", js.undefined)
+    inline def setOuterElementTypeUndefined: Self = StObject.set(x, "outerElementType", js.undefined)
     
-    @scala.inline
-    def setOuterRef(value: Ref[js.Any]): Self = StObject.set(x, "outerRef", value.asInstanceOf[js.Any])
+    inline def setOuterRef(value: Ref[js.Any]): Self = StObject.set(x, "outerRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOuterRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "outerRef", js.Any.fromFunction1(value))
+    inline def setOuterRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "outerRef", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOuterRefNull: Self = StObject.set(x, "outerRef", null)
+    inline def setOuterRefNull: Self = StObject.set(x, "outerRef", null)
     
-    @scala.inline
-    def setOuterRefUndefined: Self = StObject.set(x, "outerRef", js.undefined)
+    inline def setOuterRefUndefined: Self = StObject.set(x, "outerRef", js.undefined)
     
-    @scala.inline
-    def setOuterTagName(value: String): Self = StObject.set(x, "outerTagName", value.asInstanceOf[js.Any])
+    inline def setOuterTagName(value: String): Self = StObject.set(x, "outerTagName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOuterTagNameUndefined: Self = StObject.set(x, "outerTagName", js.undefined)
+    inline def setOuterTagNameUndefined: Self = StObject.set(x, "outerTagName", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setUseIsScrolling(value: Boolean): Self = StObject.set(x, "useIsScrolling", value.asInstanceOf[js.Any])
+    inline def setUseIsScrolling(value: Boolean): Self = StObject.set(x, "useIsScrolling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseIsScrollingUndefined: Self = StObject.set(x, "useIsScrolling", js.undefined)
+    inline def setUseIsScrollingUndefined: Self = StObject.set(x, "useIsScrolling", js.undefined)
   }
 }

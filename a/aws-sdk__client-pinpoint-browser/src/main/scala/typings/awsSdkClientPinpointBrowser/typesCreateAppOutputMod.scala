@@ -26,20 +26,16 @@ object typesCreateAppOutputMod {
   }
   object CreateAppOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, ApplicationResponse: UnmarshalledApplicationResponse): CreateAppOutput = {
+    inline def apply($metadata: ResponseMetadata, ApplicationResponse: UnmarshalledApplicationResponse): CreateAppOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], ApplicationResponse = ApplicationResponse.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateAppOutput]
     }
     
-    @scala.inline
-    implicit class CreateAppOutputMutableBuilder[Self <: CreateAppOutput] (val x: Self) extends AnyVal {
+    extension [Self <: CreateAppOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationResponse(value: UnmarshalledApplicationResponse): Self = StObject.set(x, "ApplicationResponse", value.asInstanceOf[js.Any])
+      inline def setApplicationResponse(value: UnmarshalledApplicationResponse): Self = StObject.set(x, "ApplicationResponse", value.asInstanceOf[js.Any])
     }
   }
 }

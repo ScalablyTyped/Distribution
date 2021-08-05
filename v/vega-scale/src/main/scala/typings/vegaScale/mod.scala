@@ -10,8 +10,6 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def scheme(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("scheme")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def scheme(name: String, scheme: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("scheme")(name.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def scheme(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("scheme")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def scheme(name: String, scheme: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("scheme")(name.asInstanceOf[js.Any], scheme.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

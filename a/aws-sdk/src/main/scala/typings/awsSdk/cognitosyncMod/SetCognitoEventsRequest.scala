@@ -18,19 +18,15 @@ trait SetCognitoEventsRequest extends StObject {
 }
 object SetCognitoEventsRequest {
   
-  @scala.inline
-  def apply(Events: Events, IdentityPoolId: IdentityPoolId): SetCognitoEventsRequest = {
+  inline def apply(Events: Events, IdentityPoolId: IdentityPoolId): SetCognitoEventsRequest = {
     val __obj = js.Dynamic.literal(Events = Events.asInstanceOf[js.Any], IdentityPoolId = IdentityPoolId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetCognitoEventsRequest]
   }
   
-  @scala.inline
-  implicit class SetCognitoEventsRequestMutableBuilder[Self <: SetCognitoEventsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetCognitoEventsRequest](x: Self) {
     
-    @scala.inline
-    def setEvents(value: Events): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: Events): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
+    inline def setIdentityPoolId(value: IdentityPoolId): Self = StObject.set(x, "IdentityPoolId", value.asInstanceOf[js.Any])
   }
 }

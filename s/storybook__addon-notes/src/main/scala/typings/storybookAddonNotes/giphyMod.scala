@@ -25,17 +25,14 @@ object giphyMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(query: String): Props = {
+    inline def apply(query: String): Props = {
       val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     }
   }
   
@@ -45,20 +42,16 @@ object giphyMod {
   }
   object State {
     
-    @scala.inline
-    def apply(): State = {
+    inline def apply(): State = {
       val __obj = js.Dynamic.literal(src = null)
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcNull: Self = StObject.set(x, "src", null)
+      inline def setSrcNull: Self = StObject.set(x, "src", null)
     }
   }
 }

@@ -17,25 +17,19 @@ trait ManyToManyAttribute
 }
 object ManyToManyAttribute {
   
-  @scala.inline
-  def apply(collection: String, via: String): ManyToManyAttribute = {
+  inline def apply(collection: String, via: String): ManyToManyAttribute = {
     val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any], via = via.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManyToManyAttribute]
   }
   
-  @scala.inline
-  implicit class ManyToManyAttributeMutableBuilder[Self <: ManyToManyAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: ManyToManyAttribute](x: Self) {
     
-    @scala.inline
-    def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+    inline def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDominant(value: Boolean): Self = StObject.set(x, "dominant", value.asInstanceOf[js.Any])
+    inline def setDominant(value: Boolean): Self = StObject.set(x, "dominant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDominantUndefined: Self = StObject.set(x, "dominant", js.undefined)
+    inline def setDominantUndefined: Self = StObject.set(x, "dominant", js.undefined)
     
-    @scala.inline
-    def setVia(value: String): Self = StObject.set(x, "via", value.asInstanceOf[js.Any])
+    inline def setVia(value: String): Self = StObject.set(x, "via", value.asInstanceOf[js.Any])
   }
 }

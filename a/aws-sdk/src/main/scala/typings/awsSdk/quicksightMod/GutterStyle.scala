@@ -13,19 +13,15 @@ trait GutterStyle extends StObject {
 }
 object GutterStyle {
   
-  @scala.inline
-  def apply(): GutterStyle = {
+  inline def apply(): GutterStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GutterStyle]
   }
   
-  @scala.inline
-  implicit class GutterStyleMutableBuilder[Self <: GutterStyle] (val x: Self) extends AnyVal {
+  extension [Self <: GutterStyle](x: Self) {
     
-    @scala.inline
-    def setShow(value: scala.Boolean): Self = StObject.set(x, "Show", value.asInstanceOf[js.Any])
+    inline def setShow(value: scala.Boolean): Self = StObject.set(x, "Show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "Show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "Show", js.undefined)
   }
 }

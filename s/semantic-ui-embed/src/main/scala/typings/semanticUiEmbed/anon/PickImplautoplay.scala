@@ -12,16 +12,13 @@ trait PickImplautoplay extends StObject {
 }
 object PickImplautoplay {
   
-  @scala.inline
-  def apply(autoplay: auto | Boolean): PickImplautoplay = {
+  inline def apply(autoplay: auto | Boolean): PickImplautoplay = {
     val __obj = js.Dynamic.literal(autoplay = autoplay.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplautoplay]
   }
   
-  @scala.inline
-  implicit class PickImplautoplayMutableBuilder[Self <: PickImplautoplay] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplautoplay](x: Self) {
     
-    @scala.inline
-    def setAutoplay(value: auto | Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
+    inline def setAutoplay(value: auto | Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
   }
 }

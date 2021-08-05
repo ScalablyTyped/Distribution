@@ -18,8 +18,7 @@ trait GitPushEventData extends StObject {
 }
 object GitPushEventData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     afterId: String,
     beforeId: String,
     branch: String,
@@ -30,25 +29,18 @@ object GitPushEventData {
     __obj.asInstanceOf[GitPushEventData]
   }
   
-  @scala.inline
-  implicit class GitPushEventDataMutableBuilder[Self <: GitPushEventData] (val x: Self) extends AnyVal {
+  extension [Self <: GitPushEventData](x: Self) {
     
-    @scala.inline
-    def setAfterId(value: String): Self = StObject.set(x, "afterId", value.asInstanceOf[js.Any])
+    inline def setAfterId(value: String): Self = StObject.set(x, "afterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeforeId(value: String): Self = StObject.set(x, "beforeId", value.asInstanceOf[js.Any])
+    inline def setBeforeId(value: String): Self = StObject.set(x, "beforeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+    inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommits(value: js.Array[GitCommit]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
+    inline def setCommits(value: js.Array[GitCommit]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitsVarargs(value: GitCommit*): Self = StObject.set(x, "commits", js.Array(value :_*))
+    inline def setCommitsVarargs(value: GitCommit*): Self = StObject.set(x, "commits", js.Array(value :_*))
     
-    @scala.inline
-    def setRepository(value: GitRepository): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: GitRepository): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
   }
 }

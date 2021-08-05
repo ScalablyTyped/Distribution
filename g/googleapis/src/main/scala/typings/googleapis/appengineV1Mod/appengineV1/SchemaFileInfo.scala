@@ -30,31 +30,23 @@ trait SchemaFileInfo extends StObject {
 }
 object SchemaFileInfo {
   
-  @scala.inline
-  def apply(): SchemaFileInfo = {
+  inline def apply(): SchemaFileInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFileInfo]
   }
   
-  @scala.inline
-  implicit class SchemaFileInfoMutableBuilder[Self <: SchemaFileInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFileInfo](x: Self) {
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
-    @scala.inline
-    def setSha1Sum(value: String): Self = StObject.set(x, "sha1Sum", value.asInstanceOf[js.Any])
+    inline def setSha1Sum(value: String): Self = StObject.set(x, "sha1Sum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha1SumUndefined: Self = StObject.set(x, "sha1Sum", js.undefined)
+    inline def setSha1SumUndefined: Self = StObject.set(x, "sha1Sum", js.undefined)
     
-    @scala.inline
-    def setSourceUrl(value: String): Self = StObject.set(x, "sourceUrl", value.asInstanceOf[js.Any])
+    inline def setSourceUrl(value: String): Self = StObject.set(x, "sourceUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUrlUndefined: Self = StObject.set(x, "sourceUrl", js.undefined)
+    inline def setSourceUrlUndefined: Self = StObject.set(x, "sourceUrl", js.undefined)
   }
 }

@@ -32,8 +32,7 @@ trait InternalEditorScrollbarOptions extends StObject {
 }
 object InternalEditorScrollbarOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alwaysConsumeMouseWheel: Boolean,
     arrowSize: Double,
     handleMouseWheel: Boolean,
@@ -51,43 +50,30 @@ object InternalEditorScrollbarOptions {
     __obj.asInstanceOf[InternalEditorScrollbarOptions]
   }
   
-  @scala.inline
-  implicit class InternalEditorScrollbarOptionsMutableBuilder[Self <: InternalEditorScrollbarOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InternalEditorScrollbarOptions](x: Self) {
     
-    @scala.inline
-    def setAlwaysConsumeMouseWheel(value: Boolean): Self = StObject.set(x, "alwaysConsumeMouseWheel", value.asInstanceOf[js.Any])
+    inline def setAlwaysConsumeMouseWheel(value: Boolean): Self = StObject.set(x, "alwaysConsumeMouseWheel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrowSize(value: Double): Self = StObject.set(x, "arrowSize", value.asInstanceOf[js.Any])
+    inline def setArrowSize(value: Double): Self = StObject.set(x, "arrowSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandleMouseWheel(value: Boolean): Self = StObject.set(x, "handleMouseWheel", value.asInstanceOf[js.Any])
+    inline def setHandleMouseWheel(value: Boolean): Self = StObject.set(x, "handleMouseWheel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontal(value: ScrollbarVisibility): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+    inline def setHorizontal(value: ScrollbarVisibility): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalHasArrows(value: Boolean): Self = StObject.set(x, "horizontalHasArrows", value.asInstanceOf[js.Any])
+    inline def setHorizontalHasArrows(value: Boolean): Self = StObject.set(x, "horizontalHasArrows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalScrollbarSize(value: Double): Self = StObject.set(x, "horizontalScrollbarSize", value.asInstanceOf[js.Any])
+    inline def setHorizontalScrollbarSize(value: Double): Self = StObject.set(x, "horizontalScrollbarSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalSliderSize(value: Double): Self = StObject.set(x, "horizontalSliderSize", value.asInstanceOf[js.Any])
+    inline def setHorizontalSliderSize(value: Double): Self = StObject.set(x, "horizontalSliderSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseShadows(value: Boolean): Self = StObject.set(x, "useShadows", value.asInstanceOf[js.Any])
+    inline def setUseShadows(value: Boolean): Self = StObject.set(x, "useShadows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertical(value: ScrollbarVisibility): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+    inline def setVertical(value: ScrollbarVisibility): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalHasArrows(value: Boolean): Self = StObject.set(x, "verticalHasArrows", value.asInstanceOf[js.Any])
+    inline def setVerticalHasArrows(value: Boolean): Self = StObject.set(x, "verticalHasArrows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalScrollbarSize(value: Double): Self = StObject.set(x, "verticalScrollbarSize", value.asInstanceOf[js.Any])
+    inline def setVerticalScrollbarSize(value: Double): Self = StObject.set(x, "verticalScrollbarSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalSliderSize(value: Double): Self = StObject.set(x, "verticalSliderSize", value.asInstanceOf[js.Any])
+    inline def setVerticalSliderSize(value: Double): Self = StObject.set(x, "verticalSliderSize", value.asInstanceOf[js.Any])
   }
 }

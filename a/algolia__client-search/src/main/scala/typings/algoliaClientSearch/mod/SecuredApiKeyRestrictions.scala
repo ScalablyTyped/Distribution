@@ -25,34 +25,25 @@ trait SecuredApiKeyRestrictions
 }
 object SecuredApiKeyRestrictions {
   
-  @scala.inline
-  def apply(): SecuredApiKeyRestrictions = {
+  inline def apply(): SecuredApiKeyRestrictions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SecuredApiKeyRestrictions]
   }
   
-  @scala.inline
-  implicit class SecuredApiKeyRestrictionsMutableBuilder[Self <: SecuredApiKeyRestrictions] (val x: Self) extends AnyVal {
+  extension [Self <: SecuredApiKeyRestrictions](x: Self) {
     
-    @scala.inline
-    def setRestrictIndices(value: js.Array[String] | String): Self = StObject.set(x, "restrictIndices", value.asInstanceOf[js.Any])
+    inline def setRestrictIndices(value: js.Array[String] | String): Self = StObject.set(x, "restrictIndices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictIndicesUndefined: Self = StObject.set(x, "restrictIndices", js.undefined)
+    inline def setRestrictIndicesUndefined: Self = StObject.set(x, "restrictIndices", js.undefined)
     
-    @scala.inline
-    def setRestrictIndicesVarargs(value: String*): Self = StObject.set(x, "restrictIndices", js.Array(value :_*))
+    inline def setRestrictIndicesVarargs(value: String*): Self = StObject.set(x, "restrictIndices", js.Array(value :_*))
     
-    @scala.inline
-    def setRestrictSources(value: String): Self = StObject.set(x, "restrictSources", value.asInstanceOf[js.Any])
+    inline def setRestrictSources(value: String): Self = StObject.set(x, "restrictSources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictSourcesUndefined: Self = StObject.set(x, "restrictSources", js.undefined)
+    inline def setRestrictSourcesUndefined: Self = StObject.set(x, "restrictSources", js.undefined)
     
-    @scala.inline
-    def setValidUntil(value: Double): Self = StObject.set(x, "validUntil", value.asInstanceOf[js.Any])
+    inline def setValidUntil(value: Double): Self = StObject.set(x, "validUntil", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidUntilUndefined: Self = StObject.set(x, "validUntil", js.undefined)
+    inline def setValidUntilUndefined: Self = StObject.set(x, "validUntil", js.undefined)
   }
 }

@@ -23,31 +23,23 @@ trait AppointmentDialogOpenedEventUIParam extends StObject {
 }
 object AppointmentDialogOpenedEventUIParam {
   
-  @scala.inline
-  def apply(): AppointmentDialogOpenedEventUIParam = {
+  inline def apply(): AppointmentDialogOpenedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppointmentDialogOpenedEventUIParam]
   }
   
-  @scala.inline
-  implicit class AppointmentDialogOpenedEventUIParamMutableBuilder[Self <: AppointmentDialogOpenedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: AppointmentDialogOpenedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    @scala.inline
-    def setIsAppointmentNew(value: Boolean): Self = StObject.set(x, "isAppointmentNew", value.asInstanceOf[js.Any])
+    inline def setIsAppointmentNew(value: Boolean): Self = StObject.set(x, "isAppointmentNew", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAppointmentNewUndefined: Self = StObject.set(x, "isAppointmentNew", js.undefined)
+    inline def setIsAppointmentNewUndefined: Self = StObject.set(x, "isAppointmentNew", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

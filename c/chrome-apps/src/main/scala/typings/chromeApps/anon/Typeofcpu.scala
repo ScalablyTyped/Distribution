@@ -12,16 +12,13 @@ trait Typeofcpu extends StObject {
 }
 object Typeofcpu {
   
-  @scala.inline
-  def apply(getInfo: js.Function1[/* info */ CpuInfo, Unit] => Unit): Typeofcpu = {
+  inline def apply(getInfo: js.Function1[/* info */ CpuInfo, Unit] => Unit): Typeofcpu = {
     val __obj = js.Dynamic.literal(getInfo = js.Any.fromFunction1(getInfo))
     __obj.asInstanceOf[Typeofcpu]
   }
   
-  @scala.inline
-  implicit class TypeofcpuMutableBuilder[Self <: Typeofcpu] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofcpu](x: Self) {
     
-    @scala.inline
-    def setGetInfo(value: js.Function1[/* info */ CpuInfo, Unit] => Unit): Self = StObject.set(x, "getInfo", js.Any.fromFunction1(value))
+    inline def setGetInfo(value: js.Function1[/* info */ CpuInfo, Unit] => Unit): Self = StObject.set(x, "getInfo", js.Any.fromFunction1(value))
   }
 }

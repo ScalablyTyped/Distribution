@@ -77,7 +77,7 @@ trait Slide extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("PowerPoint.Slide_typekey")
+  /* private */ @JSName("PowerPoint.Slide_typekey")
   var PowerPointDotSlide_typekey: Slide = js.native
   
   val PrintSteps: Double = js.native

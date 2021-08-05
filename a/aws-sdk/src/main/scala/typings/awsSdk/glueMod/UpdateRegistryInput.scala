@@ -18,19 +18,15 @@ trait UpdateRegistryInput extends StObject {
 }
 object UpdateRegistryInput {
   
-  @scala.inline
-  def apply(Description: DescriptionString, RegistryId: RegistryId): UpdateRegistryInput = {
+  inline def apply(Description: DescriptionString, RegistryId: RegistryId): UpdateRegistryInput = {
     val __obj = js.Dynamic.literal(Description = Description.asInstanceOf[js.Any], RegistryId = RegistryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRegistryInput]
   }
   
-  @scala.inline
-  implicit class UpdateRegistryInputMutableBuilder[Self <: UpdateRegistryInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateRegistryInput](x: Self) {
     
-    @scala.inline
-    def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryId(value: RegistryId): Self = StObject.set(x, "RegistryId", value.asInstanceOf[js.Any])
+    inline def setRegistryId(value: RegistryId): Self = StObject.set(x, "RegistryId", value.asInstanceOf[js.Any])
   }
 }

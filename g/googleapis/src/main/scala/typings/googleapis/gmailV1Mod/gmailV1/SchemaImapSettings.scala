@@ -36,37 +36,27 @@ trait SchemaImapSettings extends StObject {
 }
 object SchemaImapSettings {
   
-  @scala.inline
-  def apply(): SchemaImapSettings = {
+  inline def apply(): SchemaImapSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaImapSettings]
   }
   
-  @scala.inline
-  implicit class SchemaImapSettingsMutableBuilder[Self <: SchemaImapSettings] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaImapSettings](x: Self) {
     
-    @scala.inline
-    def setAutoExpunge(value: Boolean): Self = StObject.set(x, "autoExpunge", value.asInstanceOf[js.Any])
+    inline def setAutoExpunge(value: Boolean): Self = StObject.set(x, "autoExpunge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoExpungeUndefined: Self = StObject.set(x, "autoExpunge", js.undefined)
+    inline def setAutoExpungeUndefined: Self = StObject.set(x, "autoExpunge", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setExpungeBehavior(value: String): Self = StObject.set(x, "expungeBehavior", value.asInstanceOf[js.Any])
+    inline def setExpungeBehavior(value: String): Self = StObject.set(x, "expungeBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpungeBehaviorUndefined: Self = StObject.set(x, "expungeBehavior", js.undefined)
+    inline def setExpungeBehaviorUndefined: Self = StObject.set(x, "expungeBehavior", js.undefined)
     
-    @scala.inline
-    def setMaxFolderSize(value: Double): Self = StObject.set(x, "maxFolderSize", value.asInstanceOf[js.Any])
+    inline def setMaxFolderSize(value: Double): Self = StObject.set(x, "maxFolderSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFolderSizeUndefined: Self = StObject.set(x, "maxFolderSize", js.undefined)
+    inline def setMaxFolderSizeUndefined: Self = StObject.set(x, "maxFolderSize", js.undefined)
   }
 }

@@ -30,23 +30,17 @@ object headingMod extends Shortcut {
   trait HeadingAppearance extends StObject
   object HeadingAppearance {
     
-    @scala.inline
-    def H1: typings.wixStyleReact.wixStyleReactStrings.H1 = "H1".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.H1]
+    inline def H1: typings.wixStyleReact.wixStyleReactStrings.H1 = "H1".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.H1]
     
-    @scala.inline
-    def H2: typings.wixStyleReact.wixStyleReactStrings.H2 = "H2".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.H2]
+    inline def H2: typings.wixStyleReact.wixStyleReactStrings.H2 = "H2".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.H2]
     
-    @scala.inline
-    def H3: typings.wixStyleReact.wixStyleReactStrings.H3 = "H3".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.H3]
+    inline def H3: typings.wixStyleReact.wixStyleReactStrings.H3 = "H3".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.H3]
     
-    @scala.inline
-    def H4: typings.wixStyleReact.wixStyleReactStrings.H4 = "H4".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.H4]
+    inline def H4: typings.wixStyleReact.wixStyleReactStrings.H4 = "H4".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.H4]
     
-    @scala.inline
-    def H5: typings.wixStyleReact.wixStyleReactStrings.H5 = "H5".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.H5]
+    inline def H5: typings.wixStyleReact.wixStyleReactStrings.H5 = "H5".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.H5]
     
-    @scala.inline
-    def H6: typings.wixStyleReact.wixStyleReactStrings.H6 = "H6".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.H6]
+    inline def H6: typings.wixStyleReact.wixStyleReactStrings.H6 = "H6".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.H6]
   }
   
   trait HeadingProps
@@ -62,32 +56,24 @@ object headingMod extends Shortcut {
   }
   object HeadingProps {
     
-    @scala.inline
-    def apply(): HeadingProps = {
+    inline def apply(): HeadingProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HeadingProps]
     }
     
-    @scala.inline
-    implicit class HeadingPropsMutableBuilder[Self <: HeadingProps] (val x: Self) extends AnyVal {
+    extension [Self <: HeadingProps](x: Self) {
       
-      @scala.inline
-      def setAppearance(value: HeadingAppearance): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
+      inline def setAppearance(value: HeadingAppearance): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppearanceUndefined: Self = StObject.set(x, "appearance", js.undefined)
+      inline def setAppearanceUndefined: Self = StObject.set(x, "appearance", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setLight(value: Boolean): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
+      inline def setLight(value: Boolean): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLightUndefined: Self = StObject.set(x, "light", js.undefined)
+      inline def setLightUndefined: Self = StObject.set(x, "light", js.undefined)
     }
   }
   

@@ -11,19 +11,15 @@ trait UnpackInputs extends StObject {
 }
 object UnpackInputs {
   
-  @scala.inline
-  def apply(): UnpackInputs = {
+  inline def apply(): UnpackInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UnpackInputs]
   }
   
-  @scala.inline
-  implicit class UnpackInputsMutableBuilder[Self <: UnpackInputs] (val x: Self) extends AnyVal {
+  extension [Self <: UnpackInputs](x: Self) {
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

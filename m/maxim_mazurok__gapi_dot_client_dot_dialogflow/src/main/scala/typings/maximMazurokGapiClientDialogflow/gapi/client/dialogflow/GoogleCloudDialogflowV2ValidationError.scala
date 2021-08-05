@@ -21,34 +21,25 @@ trait GoogleCloudDialogflowV2ValidationError extends StObject {
 }
 object GoogleCloudDialogflowV2ValidationError {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2ValidationError = {
+  inline def apply(): GoogleCloudDialogflowV2ValidationError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2ValidationError]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2ValidationErrorMutableBuilder[Self <: GoogleCloudDialogflowV2ValidationError] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2ValidationError](x: Self) {
     
-    @scala.inline
-    def setEntries(value: js.Array[String]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: js.Array[String]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
+    inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    @scala.inline
-    def setEntriesVarargs(value: String*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: String*): Self = StObject.set(x, "entries", js.Array(value :_*))
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
-    @scala.inline
-    def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+    inline def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
+    inline def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
   }
 }

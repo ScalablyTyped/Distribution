@@ -56,61 +56,43 @@ trait Borderradius extends StObject {
 }
 object Borderradius {
   
-  @scala.inline
-  def apply(): Borderradius = {
+  inline def apply(): Borderradius = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Borderradius]
   }
   
-  @scala.inline
-  implicit class BorderradiusMutableBuilder[Self <: Borderradius] (val x: Self) extends AnyVal {
+  extension [Self <: Borderradius](x: Self) {
     
-    @scala.inline
-    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+    inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
-    @scala.inline
-    def `setBackground-color`(value: String): Self = StObject.set(x, "background-color", value.asInstanceOf[js.Any])
+    inline def `setBackground-color`(value: String): Self = StObject.set(x, "background-color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBackground-colorUndefined`: Self = StObject.set(x, "background-color", js.undefined)
+    inline def `setBackground-colorUndefined`: Self = StObject.set(x, "background-color", js.undefined)
     
-    @scala.inline
-    def `setBorder-bottom`(value: js.Any): Self = StObject.set(x, "border-bottom", value.asInstanceOf[js.Any])
+    inline def `setBorder-bottom`(value: js.Any): Self = StObject.set(x, "border-bottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBorder-bottomUndefined`: Self = StObject.set(x, "border-bottom", js.undefined)
+    inline def `setBorder-bottomUndefined`: Self = StObject.set(x, "border-bottom", js.undefined)
     
-    @scala.inline
-    def `setBorder-left`(value: js.Any): Self = StObject.set(x, "border-left", value.asInstanceOf[js.Any])
+    inline def `setBorder-left`(value: js.Any): Self = StObject.set(x, "border-left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBorder-leftUndefined`: Self = StObject.set(x, "border-left", js.undefined)
+    inline def `setBorder-leftUndefined`: Self = StObject.set(x, "border-left", js.undefined)
     
-    @scala.inline
-    def `setBorder-radius`(value: js.Any): Self = StObject.set(x, "border-radius", value.asInstanceOf[js.Any])
+    inline def `setBorder-radius`(value: js.Any): Self = StObject.set(x, "border-radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBorder-radiusUndefined`: Self = StObject.set(x, "border-radius", js.undefined)
+    inline def `setBorder-radiusUndefined`: Self = StObject.set(x, "border-radius", js.undefined)
     
-    @scala.inline
-    def `setBorder-right`(value: js.Any): Self = StObject.set(x, "border-right", value.asInstanceOf[js.Any])
+    inline def `setBorder-right`(value: js.Any): Self = StObject.set(x, "border-right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBorder-rightUndefined`: Self = StObject.set(x, "border-right", js.undefined)
+    inline def `setBorder-rightUndefined`: Self = StObject.set(x, "border-right", js.undefined)
     
-    @scala.inline
-    def `setBorder-top`(value: js.Any): Self = StObject.set(x, "border-top", value.asInstanceOf[js.Any])
+    inline def `setBorder-top`(value: js.Any): Self = StObject.set(x, "border-top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setBorder-topUndefined`: Self = StObject.set(x, "border-top", js.undefined)
+    inline def `setBorder-topUndefined`: Self = StObject.set(x, "border-top", js.undefined)
     
-    @scala.inline
-    def setWidth(value: js.Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: js.Any): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

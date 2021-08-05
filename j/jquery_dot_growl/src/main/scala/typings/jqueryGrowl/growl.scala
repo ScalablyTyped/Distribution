@@ -49,65 +49,46 @@ object growl {
   }
   object Options {
     
-    @scala.inline
-    def apply(message: String): Options = {
+    inline def apply(message: String): Options = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDelayOnHover(value: Boolean): Self = StObject.set(x, "delayOnHover", value.asInstanceOf[js.Any])
+      inline def setDelayOnHover(value: Boolean): Self = StObject.set(x, "delayOnHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayOnHoverUndefined: Self = StObject.set(x, "delayOnHover", js.undefined)
+      inline def setDelayOnHoverUndefined: Self = StObject.set(x, "delayOnHover", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+      inline def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
+      inline def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
       
-      @scala.inline
-      def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
 }

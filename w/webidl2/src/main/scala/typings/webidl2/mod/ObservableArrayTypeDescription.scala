@@ -15,8 +15,7 @@ trait ObservableArrayTypeDescription
 }
 object ObservableArrayTypeDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     extAttrs: js.Array[ExtendedAttribute],
     idlType: js.Array[IDLTypeDescription],
     nullable: Boolean,
@@ -27,10 +26,8 @@ object ObservableArrayTypeDescription {
     __obj.asInstanceOf[ObservableArrayTypeDescription]
   }
   
-  @scala.inline
-  implicit class ObservableArrayTypeDescriptionMutableBuilder[Self <: ObservableArrayTypeDescription] (val x: Self) extends AnyVal {
+  extension [Self <: ObservableArrayTypeDescription](x: Self) {
     
-    @scala.inline
-    def setGeneric(value: ObservableArray): Self = StObject.set(x, "generic", value.asInstanceOf[js.Any])
+    inline def setGeneric(value: ObservableArray): Self = StObject.set(x, "generic", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait ExpandNodeInfo extends StObject {
 }
 object ExpandNodeInfo {
   
-  @scala.inline
-  def apply(nodePath: String, sessionId: String): ExpandNodeInfo = {
+  inline def apply(nodePath: String, sessionId: String): ExpandNodeInfo = {
     val __obj = js.Dynamic.literal(nodePath = nodePath.asInstanceOf[js.Any], sessionId = sessionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpandNodeInfo]
   }
   
-  @scala.inline
-  implicit class ExpandNodeInfoMutableBuilder[Self <: ExpandNodeInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ExpandNodeInfo](x: Self) {
     
-    @scala.inline
-    def setNodePath(value: String): Self = StObject.set(x, "nodePath", value.asInstanceOf[js.Any])
+    inline def setNodePath(value: String): Self = StObject.set(x, "nodePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+    inline def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
   }
 }

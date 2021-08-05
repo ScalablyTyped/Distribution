@@ -14,22 +14,17 @@ trait IEnumerator[T] extends StObject {
 }
 object IEnumerator {
   
-  @scala.inline
-  def apply[T](get_current: () => T, moveNext: () => Boolean, reset: () => Unit): IEnumerator[T] = {
+  inline def apply[T](get_current: () => T, moveNext: () => Boolean, reset: () => Unit): IEnumerator[T] = {
     val __obj = js.Dynamic.literal(get_current = js.Any.fromFunction0(get_current), moveNext = js.Any.fromFunction0(moveNext), reset = js.Any.fromFunction0(reset))
     __obj.asInstanceOf[IEnumerator[T]]
   }
   
-  @scala.inline
-  implicit class IEnumeratorMutableBuilder[Self <: IEnumerator[?], T] (val x: Self & IEnumerator[T]) extends AnyVal {
+  extension [Self <: IEnumerator[?], T](x: Self & IEnumerator[T]) {
     
-    @scala.inline
-    def setGet_current(value: () => T): Self = StObject.set(x, "get_current", js.Any.fromFunction0(value))
+    inline def setGet_current(value: () => T): Self = StObject.set(x, "get_current", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMoveNext(value: () => Boolean): Self = StObject.set(x, "moveNext", js.Any.fromFunction0(value))
+    inline def setMoveNext(value: () => Boolean): Self = StObject.set(x, "moveNext", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
   }
 }

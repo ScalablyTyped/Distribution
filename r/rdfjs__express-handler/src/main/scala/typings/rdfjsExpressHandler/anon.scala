@@ -18,20 +18,16 @@ object anon {
   }
   object Typeofformats {
     
-    @scala.inline
-    def apply(parsers: SinkMap[EventEmitter, Stream[Quad]], serializers: SinkMap[Stream[Quad], EventEmitter]): Typeofformats = {
+    inline def apply(parsers: SinkMap[EventEmitter, Stream[Quad]], serializers: SinkMap[Stream[Quad], EventEmitter]): Typeofformats = {
       val __obj = js.Dynamic.literal(parsers = parsers.asInstanceOf[js.Any], serializers = serializers.asInstanceOf[js.Any])
       __obj.asInstanceOf[Typeofformats]
     }
     
-    @scala.inline
-    implicit class TypeofformatsMutableBuilder[Self <: Typeofformats] (val x: Self) extends AnyVal {
+    extension [Self <: Typeofformats](x: Self) {
       
-      @scala.inline
-      def setParsers(value: SinkMap[EventEmitter, Stream[Quad]]): Self = StObject.set(x, "parsers", value.asInstanceOf[js.Any])
+      inline def setParsers(value: SinkMap[EventEmitter, Stream[Quad]]): Self = StObject.set(x, "parsers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerializers(value: SinkMap[Stream[Quad], EventEmitter]): Self = StObject.set(x, "serializers", value.asInstanceOf[js.Any])
+      inline def setSerializers(value: SinkMap[Stream[Quad], EventEmitter]): Self = StObject.set(x, "serializers", value.asInstanceOf[js.Any])
     }
   }
 }

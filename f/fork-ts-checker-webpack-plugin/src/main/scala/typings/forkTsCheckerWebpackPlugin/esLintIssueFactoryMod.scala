@@ -12,6 +12,5 @@ object esLintIssueFactoryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createIssuesFromEsLintResults(results: js.Array[LintResult]): js.Array[Issue] = ^.asInstanceOf[js.Dynamic].applyDynamic("createIssuesFromEsLintResults")(results.asInstanceOf[js.Any]).asInstanceOf[js.Array[Issue]]
+  inline def createIssuesFromEsLintResults(results: js.Array[LintResult]): js.Array[Issue] = ^.asInstanceOf[js.Dynamic].applyDynamic("createIssuesFromEsLintResults")(results.asInstanceOf[js.Any]).asInstanceOf[js.Array[Issue]]
 }

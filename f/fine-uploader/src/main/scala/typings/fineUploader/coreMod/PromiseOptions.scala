@@ -51,8 +51,7 @@ trait PromiseOptions extends StObject {
 }
 object PromiseOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     done: js.Function => PromiseOptions,
     failure: js.Any => PromiseOptions,
     success: js.Any => PromiseOptions,
@@ -63,19 +62,14 @@ object PromiseOptions {
     __obj.asInstanceOf[PromiseOptions]
   }
   
-  @scala.inline
-  implicit class PromiseOptionsMutableBuilder[Self <: PromiseOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PromiseOptions](x: Self) {
     
-    @scala.inline
-    def setDone(value: js.Function => PromiseOptions): Self = StObject.set(x, "done", js.Any.fromFunction1(value))
+    inline def setDone(value: js.Function => PromiseOptions): Self = StObject.set(x, "done", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFailure(value: js.Any => PromiseOptions): Self = StObject.set(x, "failure", js.Any.fromFunction1(value))
+    inline def setFailure(value: js.Any => PromiseOptions): Self = StObject.set(x, "failure", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccess(value: js.Any => PromiseOptions): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: js.Any => PromiseOptions): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setThen(value: (js.Function, js.Function) => PromiseOptions): Self = StObject.set(x, "then", js.Any.fromFunction2(value))
+    inline def setThen(value: (js.Function, js.Function) => PromiseOptions): Self = StObject.set(x, "then", js.Any.fromFunction2(value))
   }
 }

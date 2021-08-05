@@ -12,14 +12,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(code: String, message: String): FastifyError = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(code.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[FastifyError]
-  @scala.inline
-  def default(code: String, message: String, statusCode: Double): FastifyError = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(code.asInstanceOf[js.Any], message.asInstanceOf[js.Any], statusCode.asInstanceOf[js.Any])).asInstanceOf[FastifyError]
-  @scala.inline
-  def default(code: String, message: String, statusCode: Double, Base: Error): FastifyError = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(code.asInstanceOf[js.Any], message.asInstanceOf[js.Any], statusCode.asInstanceOf[js.Any], Base.asInstanceOf[js.Any])).asInstanceOf[FastifyError]
-  @scala.inline
-  def default(code: String, message: String, statusCode: Unit, Base: Error): FastifyError = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(code.asInstanceOf[js.Any], message.asInstanceOf[js.Any], statusCode.asInstanceOf[js.Any], Base.asInstanceOf[js.Any])).asInstanceOf[FastifyError]
+  inline def default(code: String, message: String): FastifyError = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(code.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[FastifyError]
+  inline def default(code: String, message: String, statusCode: Double): FastifyError = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(code.asInstanceOf[js.Any], message.asInstanceOf[js.Any], statusCode.asInstanceOf[js.Any])).asInstanceOf[FastifyError]
+  inline def default(code: String, message: String, statusCode: Double, Base: Error): FastifyError = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(code.asInstanceOf[js.Any], message.asInstanceOf[js.Any], statusCode.asInstanceOf[js.Any], Base.asInstanceOf[js.Any])).asInstanceOf[FastifyError]
+  inline def default(code: String, message: String, statusCode: Unit, Base: Error): FastifyError = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(code.asInstanceOf[js.Any], message.asInstanceOf[js.Any], statusCode.asInstanceOf[js.Any], Base.asInstanceOf[js.Any])).asInstanceOf[FastifyError]
   
   trait FastifyError
     extends StObject
@@ -33,32 +29,24 @@ object mod {
   }
   object FastifyError {
     
-    @scala.inline
-    def apply(code: String, message: String, name: String): FastifyError = {
+    inline def apply(code: String, message: String, name: String): FastifyError = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[FastifyError]
     }
     
-    @scala.inline
-    implicit class FastifyErrorMutableBuilder[Self <: FastifyError] (val x: Self) extends AnyVal {
+    extension [Self <: FastifyError](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+      inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
       
-      @scala.inline
-      def setValidation(value: js.Array[ValidationResult]): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
+      inline def setValidation(value: js.Array[ValidationResult]): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
+      inline def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
       
-      @scala.inline
-      def setValidationVarargs(value: ValidationResult*): Self = StObject.set(x, "validation", js.Array(value :_*))
+      inline def setValidationVarargs(value: ValidationResult*): Self = StObject.set(x, "validation", js.Array(value :_*))
     }
   }
   
@@ -76,8 +64,7 @@ object mod {
   }
   object ValidationResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dataPath: String,
       keyword: String,
       message: String,
@@ -88,23 +75,17 @@ object mod {
       __obj.asInstanceOf[ValidationResult]
     }
     
-    @scala.inline
-    implicit class ValidationResultMutableBuilder[Self <: ValidationResult] (val x: Self) extends AnyVal {
+    extension [Self <: ValidationResult](x: Self) {
       
-      @scala.inline
-      def setDataPath(value: String): Self = StObject.set(x, "dataPath", value.asInstanceOf[js.Any])
+      inline def setDataPath(value: String): Self = StObject.set(x, "dataPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
+      inline def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: Record[String, String | js.Array[String]]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Record[String, String | js.Array[String]]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaPath(value: String): Self = StObject.set(x, "schemaPath", value.asInstanceOf[js.Any])
+      inline def setSchemaPath(value: String): Self = StObject.set(x, "schemaPath", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -20,8 +20,7 @@ trait BootstrapMenuEventMap
 }
 object BootstrapMenuEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     closeUp: MenuItemEventArgs,
     init: EventArgs,
     itemClick: MenuItemClickEventArgs,
@@ -33,22 +32,16 @@ object BootstrapMenuEventMap {
     __obj.asInstanceOf[BootstrapMenuEventMap]
   }
   
-  @scala.inline
-  implicit class BootstrapMenuEventMapMutableBuilder[Self <: BootstrapMenuEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapMenuEventMap](x: Self) {
     
-    @scala.inline
-    def setCloseUp(value: MenuItemEventArgs): Self = StObject.set(x, "closeUp", value.asInstanceOf[js.Any])
+    inline def setCloseUp(value: MenuItemEventArgs): Self = StObject.set(x, "closeUp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemClick(value: MenuItemClickEventArgs): Self = StObject.set(x, "itemClick", value.asInstanceOf[js.Any])
+    inline def setItemClick(value: MenuItemClickEventArgs): Self = StObject.set(x, "itemClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemMouseOut(value: MenuItemMouseEventArgs): Self = StObject.set(x, "itemMouseOut", value.asInstanceOf[js.Any])
+    inline def setItemMouseOut(value: MenuItemMouseEventArgs): Self = StObject.set(x, "itemMouseOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemMouseOver(value: MenuItemMouseEventArgs): Self = StObject.set(x, "itemMouseOver", value.asInstanceOf[js.Any])
+    inline def setItemMouseOver(value: MenuItemMouseEventArgs): Self = StObject.set(x, "itemMouseOver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopUp(value: MenuItemEventArgs): Self = StObject.set(x, "popUp", value.asInstanceOf[js.Any])
+    inline def setPopUp(value: MenuItemEventArgs): Self = StObject.set(x, "popUp", value.asInstanceOf[js.Any])
   }
 }

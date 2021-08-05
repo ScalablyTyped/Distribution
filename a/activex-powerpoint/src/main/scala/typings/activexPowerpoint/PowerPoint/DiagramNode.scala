@@ -41,7 +41,7 @@ trait DiagramNode extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("PowerPoint.DiagramNode_typekey")
+  /* private */ @JSName("PowerPoint.DiagramNode_typekey")
   var PowerPointDotDiagramNode_typekey: DiagramNode = js.native
   
   def PrevNode(): DiagramNode = js.native

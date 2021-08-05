@@ -11,6 +11,5 @@ object notMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(bits: js.Array[Bit]): js.Array[Bit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(bits.asInstanceOf[js.Any]).asInstanceOf[js.Array[Bit]]
+  inline def default(bits: js.Array[Bit]): js.Array[Bit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(bits.asInstanceOf[js.Any]).asInstanceOf[js.Array[Bit]]
 }

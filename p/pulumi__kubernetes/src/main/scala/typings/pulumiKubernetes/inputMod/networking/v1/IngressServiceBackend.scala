@@ -22,22 +22,17 @@ trait IngressServiceBackend extends StObject {
 }
 object IngressServiceBackend {
   
-  @scala.inline
-  def apply(name: Input[String]): IngressServiceBackend = {
+  inline def apply(name: Input[String]): IngressServiceBackend = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IngressServiceBackend]
   }
   
-  @scala.inline
-  implicit class IngressServiceBackendMutableBuilder[Self <: IngressServiceBackend] (val x: Self) extends AnyVal {
+  extension [Self <: IngressServiceBackend](x: Self) {
     
-    @scala.inline
-    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPort(value: Input[ServiceBackendPort]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Input[ServiceBackendPort]): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
   }
 }

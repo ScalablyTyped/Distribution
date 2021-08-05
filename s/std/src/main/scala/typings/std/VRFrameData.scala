@@ -21,8 +21,7 @@ trait VRFrameData extends StObject {
 }
 object VRFrameData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     leftProjectionMatrix: Float32Array,
     leftViewMatrix: Float32Array,
     pose: VRPose,
@@ -34,25 +33,18 @@ object VRFrameData {
     __obj.asInstanceOf[VRFrameData]
   }
   
-  @scala.inline
-  implicit class VRFrameDataMutableBuilder[Self <: VRFrameData] (val x: Self) extends AnyVal {
+  extension [Self <: VRFrameData](x: Self) {
     
-    @scala.inline
-    def setLeftProjectionMatrix(value: Float32Array): Self = StObject.set(x, "leftProjectionMatrix", value.asInstanceOf[js.Any])
+    inline def setLeftProjectionMatrix(value: Float32Array): Self = StObject.set(x, "leftProjectionMatrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftViewMatrix(value: Float32Array): Self = StObject.set(x, "leftViewMatrix", value.asInstanceOf[js.Any])
+    inline def setLeftViewMatrix(value: Float32Array): Self = StObject.set(x, "leftViewMatrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPose(value: VRPose): Self = StObject.set(x, "pose", value.asInstanceOf[js.Any])
+    inline def setPose(value: VRPose): Self = StObject.set(x, "pose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightProjectionMatrix(value: Float32Array): Self = StObject.set(x, "rightProjectionMatrix", value.asInstanceOf[js.Any])
+    inline def setRightProjectionMatrix(value: Float32Array): Self = StObject.set(x, "rightProjectionMatrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightViewMatrix(value: Float32Array): Self = StObject.set(x, "rightViewMatrix", value.asInstanceOf[js.Any])
+    inline def setRightViewMatrix(value: Float32Array): Self = StObject.set(x, "rightViewMatrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

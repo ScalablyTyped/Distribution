@@ -16,8 +16,7 @@ trait EventBacklogStatus extends StObject {
 }
 object EventBacklogStatus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     maxUnprocessedEventAgeMs: Double,
     publisher: String,
     timeSinceLastProcessedEventMs: Double,
@@ -27,19 +26,14 @@ object EventBacklogStatus {
     __obj.asInstanceOf[EventBacklogStatus]
   }
   
-  @scala.inline
-  implicit class EventBacklogStatusMutableBuilder[Self <: EventBacklogStatus] (val x: Self) extends AnyVal {
+  extension [Self <: EventBacklogStatus](x: Self) {
     
-    @scala.inline
-    def setMaxUnprocessedEventAgeMs(value: Double): Self = StObject.set(x, "maxUnprocessedEventAgeMs", value.asInstanceOf[js.Any])
+    inline def setMaxUnprocessedEventAgeMs(value: Double): Self = StObject.set(x, "maxUnprocessedEventAgeMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
+    inline def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeSinceLastProcessedEventMs(value: Double): Self = StObject.set(x, "timeSinceLastProcessedEventMs", value.asInstanceOf[js.Any])
+    inline def setTimeSinceLastProcessedEventMs(value: Double): Self = StObject.set(x, "timeSinceLastProcessedEventMs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnprocessedEvents(value: Double): Self = StObject.set(x, "unprocessedEvents", value.asInstanceOf[js.Any])
+    inline def setUnprocessedEvents(value: Double): Self = StObject.set(x, "unprocessedEvents", value.asInstanceOf[js.Any])
   }
 }

@@ -17,37 +17,27 @@ trait PartialIRectangle extends StObject {
 }
 object PartialIRectangle {
   
-  @scala.inline
-  def apply(): PartialIRectangle = {
+  inline def apply(): PartialIRectangle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialIRectangle]
   }
   
-  @scala.inline
-  implicit class PartialIRectangleMutableBuilder[Self <: PartialIRectangle] (val x: Self) extends AnyVal {
+  extension [Self <: PartialIRectangle](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

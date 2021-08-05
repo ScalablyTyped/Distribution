@@ -17,22 +17,17 @@ trait `67` extends StObject {
 }
 object `67` {
   
-  @scala.inline
-  def apply(): `67` = {
+  inline def apply(): `67` = {
     val __obj = js.Dynamic.literal(dialCode = "+33", id = "FR", label = "France")
     __obj.asInstanceOf[`67`]
   }
   
-  @scala.inline
-  implicit class `67MutableBuilder`[Self <: `67`] (val x: Self) extends AnyVal {
+  extension [Self <: `67`](x: Self) {
     
-    @scala.inline
-    def setDialCode(value: Plussign33): Self = StObject.set(x, "dialCode", value.asInstanceOf[js.Any])
+    inline def setDialCode(value: Plussign33): Self = StObject.set(x, "dialCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: FR): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: FR): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: France): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: France): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }
 }

@@ -20,58 +20,41 @@ trait DebugThumbTouchArea extends StObject {
 }
 object DebugThumbTouchArea {
   
-  @scala.inline
-  def apply(): DebugThumbTouchArea = {
+  inline def apply(): DebugThumbTouchArea = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DebugThumbTouchArea]
   }
   
-  @scala.inline
-  implicit class DebugThumbTouchAreaMutableBuilder[Self <: DebugThumbTouchArea] (val x: Self) extends AnyVal {
+  extension [Self <: DebugThumbTouchArea](x: Self) {
     
-    @scala.inline
-    def setContainer(value: StyleProp[ViewStyle]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: StyleProp[ViewStyle]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerNull: Self = StObject.set(x, "container", null)
+    inline def setContainerNull: Self = StObject.set(x, "container", null)
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setDebugThumbTouchArea(value: StyleProp[ViewStyle]): Self = StObject.set(x, "debugThumbTouchArea", value.asInstanceOf[js.Any])
+    inline def setDebugThumbTouchArea(value: StyleProp[ViewStyle]): Self = StObject.set(x, "debugThumbTouchArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugThumbTouchAreaNull: Self = StObject.set(x, "debugThumbTouchArea", null)
+    inline def setDebugThumbTouchAreaNull: Self = StObject.set(x, "debugThumbTouchArea", null)
     
-    @scala.inline
-    def setDebugThumbTouchAreaUndefined: Self = StObject.set(x, "debugThumbTouchArea", js.undefined)
+    inline def setDebugThumbTouchAreaUndefined: Self = StObject.set(x, "debugThumbTouchArea", js.undefined)
     
-    @scala.inline
-    def setThumb(value: StyleProp[ViewStyle]): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
+    inline def setThumb(value: StyleProp[ViewStyle]): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbNull: Self = StObject.set(x, "thumb", null)
+    inline def setThumbNull: Self = StObject.set(x, "thumb", null)
     
-    @scala.inline
-    def setThumbUndefined: Self = StObject.set(x, "thumb", js.undefined)
+    inline def setThumbUndefined: Self = StObject.set(x, "thumb", js.undefined)
     
-    @scala.inline
-    def setTouchArea(value: StyleProp[ViewStyle]): Self = StObject.set(x, "touchArea", value.asInstanceOf[js.Any])
+    inline def setTouchArea(value: StyleProp[ViewStyle]): Self = StObject.set(x, "touchArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTouchAreaNull: Self = StObject.set(x, "touchArea", null)
+    inline def setTouchAreaNull: Self = StObject.set(x, "touchArea", null)
     
-    @scala.inline
-    def setTouchAreaUndefined: Self = StObject.set(x, "touchArea", js.undefined)
+    inline def setTouchAreaUndefined: Self = StObject.set(x, "touchArea", js.undefined)
     
-    @scala.inline
-    def setTrack(value: StyleProp[ViewStyle]): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+    inline def setTrack(value: StyleProp[ViewStyle]): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackNull: Self = StObject.set(x, "track", null)
+    inline def setTrackNull: Self = StObject.set(x, "track", null)
     
-    @scala.inline
-    def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
+    inline def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
   }
 }

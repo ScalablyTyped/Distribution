@@ -13,19 +13,15 @@ trait GetAggregateResourceConfigResponse extends StObject {
 }
 object GetAggregateResourceConfigResponse {
   
-  @scala.inline
-  def apply(): GetAggregateResourceConfigResponse = {
+  inline def apply(): GetAggregateResourceConfigResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAggregateResourceConfigResponse]
   }
   
-  @scala.inline
-  implicit class GetAggregateResourceConfigResponseMutableBuilder[Self <: GetAggregateResourceConfigResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAggregateResourceConfigResponse](x: Self) {
     
-    @scala.inline
-    def setConfigurationItem(value: ConfigurationItem): Self = StObject.set(x, "ConfigurationItem", value.asInstanceOf[js.Any])
+    inline def setConfigurationItem(value: ConfigurationItem): Self = StObject.set(x, "ConfigurationItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationItemUndefined: Self = StObject.set(x, "ConfigurationItem", js.undefined)
+    inline def setConfigurationItemUndefined: Self = StObject.set(x, "ConfigurationItem", js.undefined)
   }
 }

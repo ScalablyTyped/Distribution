@@ -23,19 +23,15 @@ trait NaturalEffect
 }
 object NaturalEffect {
   
-  @scala.inline
-  def apply(effect: EffectConstant, ticksRemaining: Double): NaturalEffect = {
+  inline def apply(effect: EffectConstant, ticksRemaining: Double): NaturalEffect = {
     val __obj = js.Dynamic.literal(effect = effect.asInstanceOf[js.Any], ticksRemaining = ticksRemaining.asInstanceOf[js.Any])
     __obj.asInstanceOf[NaturalEffect]
   }
   
-  @scala.inline
-  implicit class NaturalEffectMutableBuilder[Self <: NaturalEffect] (val x: Self) extends AnyVal {
+  extension [Self <: NaturalEffect](x: Self) {
     
-    @scala.inline
-    def setEffect(value: EffectConstant): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
+    inline def setEffect(value: EffectConstant): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTicksRemaining(value: Double): Self = StObject.set(x, "ticksRemaining", value.asInstanceOf[js.Any])
+    inline def setTicksRemaining(value: Double): Self = StObject.set(x, "ticksRemaining", value.asInstanceOf[js.Any])
   }
 }

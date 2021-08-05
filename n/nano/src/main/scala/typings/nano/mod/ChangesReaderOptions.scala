@@ -33,61 +33,43 @@ trait ChangesReaderOptions extends StObject {
 }
 object ChangesReaderOptions {
   
-  @scala.inline
-  def apply(): ChangesReaderOptions = {
+  inline def apply(): ChangesReaderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChangesReaderOptions]
   }
   
-  @scala.inline
-  implicit class ChangesReaderOptionsMutableBuilder[Self <: ChangesReaderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChangesReaderOptions](x: Self) {
     
-    @scala.inline
-    def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+    inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
+    inline def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
     
-    @scala.inline
-    def setFastChanges(value: Boolean): Self = StObject.set(x, "fastChanges", value.asInstanceOf[js.Any])
+    inline def setFastChanges(value: Boolean): Self = StObject.set(x, "fastChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFastChangesUndefined: Self = StObject.set(x, "fastChanges", js.undefined)
+    inline def setFastChangesUndefined: Self = StObject.set(x, "fastChanges", js.undefined)
     
-    @scala.inline
-    def setIncludeDocs(value: Boolean): Self = StObject.set(x, "includeDocs", value.asInstanceOf[js.Any])
+    inline def setIncludeDocs(value: Boolean): Self = StObject.set(x, "includeDocs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeDocsUndefined: Self = StObject.set(x, "includeDocs", js.undefined)
+    inline def setIncludeDocsUndefined: Self = StObject.set(x, "includeDocs", js.undefined)
     
-    @scala.inline
-    def setQs(value: js.Object): Self = StObject.set(x, "qs", value.asInstanceOf[js.Any])
+    inline def setQs(value: js.Object): Self = StObject.set(x, "qs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQsUndefined: Self = StObject.set(x, "qs", js.undefined)
+    inline def setQsUndefined: Self = StObject.set(x, "qs", js.undefined)
     
-    @scala.inline
-    def setSelector(value: MangoSelector): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: MangoSelector): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
-    @scala.inline
-    def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
+    inline def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
+    inline def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setWait_(value: Boolean): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
+    inline def setWait_(value: Boolean): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
+    inline def setWait_Undefined: Self = StObject.set(x, "wait", js.undefined)
   }
 }

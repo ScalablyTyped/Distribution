@@ -13,8 +13,7 @@ object dateHeaderMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[DateType](props: DateHeaderProps[DateType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default[DateType](props: DateHeaderProps[DateType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   trait DateHeaderProps[DateType] extends StObject {
     
@@ -42,8 +41,7 @@ object dateHeaderMod {
   }
   object DateHeaderProps {
     
-    @scala.inline
-    def apply[DateType](
+    inline def apply[DateType](
       generateConfig: GenerateConfig[DateType],
       locale: Locale,
       onMonthClick: () => Unit,
@@ -59,47 +57,33 @@ object dateHeaderMod {
       __obj.asInstanceOf[DateHeaderProps[DateType]]
     }
     
-    @scala.inline
-    implicit class DateHeaderPropsMutableBuilder[Self <: DateHeaderProps[?], DateType] (val x: Self & DateHeaderProps[DateType]) extends AnyVal {
+    extension [Self <: DateHeaderProps[?], DateType](x: Self & DateHeaderProps[DateType]) {
       
-      @scala.inline
-      def setGenerateConfig(value: GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
+      inline def setGenerateConfig(value: GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnMonthClick(value: () => Unit): Self = StObject.set(x, "onMonthClick", js.Any.fromFunction0(value))
+      inline def setOnMonthClick(value: () => Unit): Self = StObject.set(x, "onMonthClick", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnNextMonth(value: () => Unit): Self = StObject.set(x, "onNextMonth", js.Any.fromFunction0(value))
+      inline def setOnNextMonth(value: () => Unit): Self = StObject.set(x, "onNextMonth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnNextYear(value: () => Unit): Self = StObject.set(x, "onNextYear", js.Any.fromFunction0(value))
+      inline def setOnNextYear(value: () => Unit): Self = StObject.set(x, "onNextYear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnPrevMonth(value: () => Unit): Self = StObject.set(x, "onPrevMonth", js.Any.fromFunction0(value))
+      inline def setOnPrevMonth(value: () => Unit): Self = StObject.set(x, "onPrevMonth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnPrevYear(value: () => Unit): Self = StObject.set(x, "onPrevYear", js.Any.fromFunction0(value))
+      inline def setOnPrevYear(value: () => Unit): Self = StObject.set(x, "onPrevYear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnYearClick(value: () => Unit): Self = StObject.set(x, "onYearClick", js.Any.fromFunction0(value))
+      inline def setOnYearClick(value: () => Unit): Self = StObject.set(x, "onYearClick", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: DateType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: DateType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueNull: Self = StObject.set(x, "value", null)
+      inline def setValueNull: Self = StObject.set(x, "value", null)
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setViewDate(value: DateType): Self = StObject.set(x, "viewDate", value.asInstanceOf[js.Any])
+      inline def setViewDate(value: DateType): Self = StObject.set(x, "viewDate", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -21,25 +21,19 @@ trait SchemaExtendedCompensationInfoCompensationRange extends StObject {
 }
 object SchemaExtendedCompensationInfoCompensationRange {
   
-  @scala.inline
-  def apply(): SchemaExtendedCompensationInfoCompensationRange = {
+  inline def apply(): SchemaExtendedCompensationInfoCompensationRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaExtendedCompensationInfoCompensationRange]
   }
   
-  @scala.inline
-  implicit class SchemaExtendedCompensationInfoCompensationRangeMutableBuilder[Self <: SchemaExtendedCompensationInfoCompensationRange] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaExtendedCompensationInfoCompensationRange](x: Self) {
     
-    @scala.inline
-    def setMax(value: SchemaExtendedCompensationInfoDecimal): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: SchemaExtendedCompensationInfoDecimal): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: SchemaExtendedCompensationInfoDecimal): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: SchemaExtendedCompensationInfoDecimal): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
   }
 }

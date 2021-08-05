@@ -13,19 +13,15 @@ trait ExportTransitGatewayRoutesResult extends StObject {
 }
 object ExportTransitGatewayRoutesResult {
   
-  @scala.inline
-  def apply(): ExportTransitGatewayRoutesResult = {
+  inline def apply(): ExportTransitGatewayRoutesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportTransitGatewayRoutesResult]
   }
   
-  @scala.inline
-  implicit class ExportTransitGatewayRoutesResultMutableBuilder[Self <: ExportTransitGatewayRoutesResult] (val x: Self) extends AnyVal {
+  extension [Self <: ExportTransitGatewayRoutesResult](x: Self) {
     
-    @scala.inline
-    def setS3Location(value: String): Self = StObject.set(x, "S3Location", value.asInstanceOf[js.Any])
+    inline def setS3Location(value: String): Self = StObject.set(x, "S3Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3LocationUndefined: Self = StObject.set(x, "S3Location", js.undefined)
+    inline def setS3LocationUndefined: Self = StObject.set(x, "S3Location", js.undefined)
   }
 }

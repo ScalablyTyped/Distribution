@@ -15,8 +15,7 @@ trait EntryPointReference[TPreloadedEntryPoint /* <: PreloadedEntryPoint[js.Any]
 }
 object EntryPointReference {
   
-  @scala.inline
-  def apply[TPreloadedEntryPoint /* <: PreloadedEntryPoint[js.Any] */](
+  inline def apply[TPreloadedEntryPoint /* <: PreloadedEntryPoint[js.Any] */](
     entryPointReference: TPreloadedEntryPoint,
     props: GetRuntimePropsFromComponent[GetComponentFromPreloadedEntryPoint[TPreloadedEntryPoint]]
   ): EntryPointReference[TPreloadedEntryPoint] = {
@@ -24,13 +23,10 @@ object EntryPointReference {
     __obj.asInstanceOf[EntryPointReference[TPreloadedEntryPoint]]
   }
   
-  @scala.inline
-  implicit class EntryPointReferenceMutableBuilder[Self <: EntryPointReference[?], TPreloadedEntryPoint /* <: PreloadedEntryPoint[js.Any] */] (val x: Self & EntryPointReference[TPreloadedEntryPoint]) extends AnyVal {
+  extension [Self <: EntryPointReference[?], TPreloadedEntryPoint /* <: PreloadedEntryPoint[js.Any] */](x: Self & EntryPointReference[TPreloadedEntryPoint]) {
     
-    @scala.inline
-    def setEntryPointReference(value: TPreloadedEntryPoint): Self = StObject.set(x, "entryPointReference", value.asInstanceOf[js.Any])
+    inline def setEntryPointReference(value: TPreloadedEntryPoint): Self = StObject.set(x, "entryPointReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProps(value: GetRuntimePropsFromComponent[GetComponentFromPreloadedEntryPoint[TPreloadedEntryPoint]]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: GetRuntimePropsFromComponent[GetComponentFromPreloadedEntryPoint[TPreloadedEntryPoint]]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
   }
 }

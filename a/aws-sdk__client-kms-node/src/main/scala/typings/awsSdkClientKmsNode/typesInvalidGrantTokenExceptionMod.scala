@@ -28,17 +28,14 @@ object typesInvalidGrantTokenExceptionMod {
   }
   object InvalidGrantTokenException {
     
-    @scala.inline
-    def apply(): InvalidGrantTokenException = {
+    inline def apply(): InvalidGrantTokenException = {
       val __obj = js.Dynamic.literal(name = "InvalidGrantTokenException")
       __obj.asInstanceOf[InvalidGrantTokenException]
     }
     
-    @scala.inline
-    implicit class InvalidGrantTokenExceptionMutableBuilder[Self <: InvalidGrantTokenException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidGrantTokenException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.InvalidGrantTokenException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.InvalidGrantTokenException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -51,20 +48,16 @@ object typesInvalidGrantTokenExceptionMod {
   }
   object InvalidGrantTokenExceptionDetails {
     
-    @scala.inline
-    def apply(): InvalidGrantTokenExceptionDetails = {
+    inline def apply(): InvalidGrantTokenExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InvalidGrantTokenExceptionDetails]
     }
     
-    @scala.inline
-    implicit class InvalidGrantTokenExceptionDetailsMutableBuilder[Self <: InvalidGrantTokenExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidGrantTokenExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

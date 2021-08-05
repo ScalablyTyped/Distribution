@@ -22,8 +22,7 @@ trait ValidationCompletedEventArgs
 }
 object ValidationCompletedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     container: js.Any,
     firstInvalidControl: Control,
     firstVisibleInvalidControl: Control,
@@ -36,25 +35,18 @@ object ValidationCompletedEventArgs {
     __obj.asInstanceOf[ValidationCompletedEventArgs]
   }
   
-  @scala.inline
-  implicit class ValidationCompletedEventArgsMutableBuilder[Self <: ValidationCompletedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ValidationCompletedEventArgs](x: Self) {
     
-    @scala.inline
-    def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: js.Any): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstInvalidControl(value: Control): Self = StObject.set(x, "firstInvalidControl", value.asInstanceOf[js.Any])
+    inline def setFirstInvalidControl(value: Control): Self = StObject.set(x, "firstInvalidControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstVisibleInvalidControl(value: Control): Self = StObject.set(x, "firstVisibleInvalidControl", value.asInstanceOf[js.Any])
+    inline def setFirstVisibleInvalidControl(value: Control): Self = StObject.set(x, "firstVisibleInvalidControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvisibleControlsValidated(value: Boolean): Self = StObject.set(x, "invisibleControlsValidated", value.asInstanceOf[js.Any])
+    inline def setInvisibleControlsValidated(value: Boolean): Self = StObject.set(x, "invisibleControlsValidated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+    inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationGroup(value: String): Self = StObject.set(x, "validationGroup", value.asInstanceOf[js.Any])
+    inline def setValidationGroup(value: String): Self = StObject.set(x, "validationGroup", value.asInstanceOf[js.Any])
   }
 }

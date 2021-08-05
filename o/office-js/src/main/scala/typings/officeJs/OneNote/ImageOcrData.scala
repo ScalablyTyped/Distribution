@@ -30,19 +30,15 @@ trait ImageOcrData extends StObject {
 }
 object ImageOcrData {
   
-  @scala.inline
-  def apply(ocrLanguageId: String, ocrText: String): ImageOcrData = {
+  inline def apply(ocrLanguageId: String, ocrText: String): ImageOcrData = {
     val __obj = js.Dynamic.literal(ocrLanguageId = ocrLanguageId.asInstanceOf[js.Any], ocrText = ocrText.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageOcrData]
   }
   
-  @scala.inline
-  implicit class ImageOcrDataMutableBuilder[Self <: ImageOcrData] (val x: Self) extends AnyVal {
+  extension [Self <: ImageOcrData](x: Self) {
     
-    @scala.inline
-    def setOcrLanguageId(value: String): Self = StObject.set(x, "ocrLanguageId", value.asInstanceOf[js.Any])
+    inline def setOcrLanguageId(value: String): Self = StObject.set(x, "ocrLanguageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOcrText(value: String): Self = StObject.set(x, "ocrText", value.asInstanceOf[js.Any])
+    inline def setOcrText(value: String): Self = StObject.set(x, "ocrText", value.asInstanceOf[js.Any])
   }
 }

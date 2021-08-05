@@ -14,22 +14,17 @@ trait ServerConfiguration extends StObject {
 }
 object ServerConfiguration {
   
-  @scala.inline
-  def apply(get: String => String, list: () => js.Any, set: (String, String) => String): ServerConfiguration = {
+  inline def apply(get: String => String, list: () => js.Any, set: (String, String) => String): ServerConfiguration = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), list = js.Any.fromFunction0(list), set = js.Any.fromFunction2(set))
     __obj.asInstanceOf[ServerConfiguration]
   }
   
-  @scala.inline
-  implicit class ServerConfigurationMutableBuilder[Self <: ServerConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ServerConfiguration](x: Self) {
     
-    @scala.inline
-    def setGet(value: String => String): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: String => String): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setList(value: () => js.Any): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
+    inline def setList(value: () => js.Any): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet(value: (String, String) => String): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    inline def setSet(value: (String, String) => String): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
   }
 }

@@ -39,43 +39,31 @@ trait IExecuteOptions extends StObject {
 }
 object IExecuteOptions {
   
-  @scala.inline
-  def apply(): IExecuteOptions = {
+  inline def apply(): IExecuteOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IExecuteOptions]
   }
   
-  @scala.inline
-  implicit class IExecuteOptionsMutableBuilder[Self <: IExecuteOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IExecuteOptions](x: Self) {
     
-    @scala.inline
-    def setAllow_stdin(value: Boolean): Self = StObject.set(x, "allow_stdin", value.asInstanceOf[js.Any])
+    inline def setAllow_stdin(value: Boolean): Self = StObject.set(x, "allow_stdin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllow_stdinUndefined: Self = StObject.set(x, "allow_stdin", js.undefined)
+    inline def setAllow_stdinUndefined: Self = StObject.set(x, "allow_stdin", js.undefined)
     
-    @scala.inline
-    def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+    inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+    inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     
-    @scala.inline
-    def setStop_on_error(value: Boolean): Self = StObject.set(x, "stop_on_error", value.asInstanceOf[js.Any])
+    inline def setStop_on_error(value: Boolean): Self = StObject.set(x, "stop_on_error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStop_on_errorUndefined: Self = StObject.set(x, "stop_on_error", js.undefined)
+    inline def setStop_on_errorUndefined: Self = StObject.set(x, "stop_on_error", js.undefined)
     
-    @scala.inline
-    def setStore_history(value: Boolean): Self = StObject.set(x, "store_history", value.asInstanceOf[js.Any])
+    inline def setStore_history(value: Boolean): Self = StObject.set(x, "store_history", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStore_historyUndefined: Self = StObject.set(x, "store_history", js.undefined)
+    inline def setStore_historyUndefined: Self = StObject.set(x, "store_history", js.undefined)
     
-    @scala.inline
-    def setUser_expressions(value: js.Object): Self = StObject.set(x, "user_expressions", value.asInstanceOf[js.Any])
+    inline def setUser_expressions(value: js.Object): Self = StObject.set(x, "user_expressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser_expressionsUndefined: Self = StObject.set(x, "user_expressions", js.undefined)
+    inline def setUser_expressionsUndefined: Self = StObject.set(x, "user_expressions", js.undefined)
   }
 }

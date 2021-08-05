@@ -11,16 +11,13 @@ trait PickImplexclusive extends StObject {
 }
 object PickImplexclusive {
   
-  @scala.inline
-  def apply(exclusive: Boolean): PickImplexclusive = {
+  inline def apply(exclusive: Boolean): PickImplexclusive = {
     val __obj = js.Dynamic.literal(exclusive = exclusive.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplexclusive]
   }
   
-  @scala.inline
-  implicit class PickImplexclusiveMutableBuilder[Self <: PickImplexclusive] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplexclusive](x: Self) {
     
-    @scala.inline
-    def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
+    inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
   }
 }

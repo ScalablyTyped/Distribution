@@ -42,50 +42,36 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setGetUserNameFromHeader(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => String): Self = StObject.set(x, "getUserNameFromHeader", js.Any.fromFunction1(value))
+      inline def setGetUserNameFromHeader(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => String): Self = StObject.set(x, "getUserNameFromHeader", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetUserNameFromHeaderUndefined: Self = StObject.set(x, "getUserNameFromHeader", js.undefined)
+      inline def setGetUserNameFromHeaderUndefined: Self = StObject.set(x, "getUserNameFromHeader", js.undefined)
       
-      @scala.inline
-      def setIntegrated(value: Boolean): Self = StObject.set(x, "integrated", value.asInstanceOf[js.Any])
+      inline def setIntegrated(value: Boolean): Self = StObject.set(x, "integrated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntegratedUndefined: Self = StObject.set(x, "integrated", js.undefined)
+      inline def setIntegratedUndefined: Self = StObject.set(x, "integrated", js.undefined)
       
-      @scala.inline
-      def setLdap(value: Base): Self = StObject.set(x, "ldap", value.asInstanceOf[js.Any])
+      inline def setLdap(value: Base): Self = StObject.set(x, "ldap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLdapUndefined: Self = StObject.set(x, "ldap", js.undefined)
+      inline def setLdapUndefined: Self = StObject.set(x, "ldap", js.undefined)
       
-      @scala.inline
-      def setPassReqToCallback(value: Boolean): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
+      inline def setPassReqToCallback(value: Boolean): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassReqToCallbackUndefined: Self = StObject.set(x, "passReqToCallback", js.undefined)
+      inline def setPassReqToCallbackUndefined: Self = StObject.set(x, "passReqToCallback", js.undefined)
       
-      @scala.inline
-      def setPasswordField(value: String): Self = StObject.set(x, "passwordField", value.asInstanceOf[js.Any])
+      inline def setPasswordField(value: String): Self = StObject.set(x, "passwordField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordFieldUndefined: Self = StObject.set(x, "passwordField", js.undefined)
+      inline def setPasswordFieldUndefined: Self = StObject.set(x, "passwordField", js.undefined)
       
-      @scala.inline
-      def setUsernameField(value: String): Self = StObject.set(x, "usernameField", value.asInstanceOf[js.Any])
+      inline def setUsernameField(value: String): Self = StObject.set(x, "usernameField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameFieldUndefined: Self = StObject.set(x, "usernameField", js.undefined)
+      inline def setUsernameFieldUndefined: Self = StObject.set(x, "usernameField", js.undefined)
     }
   }
   

@@ -18,25 +18,19 @@ trait DeleteBackupResponse extends StObject {
 }
 object DeleteBackupResponse {
   
-  @scala.inline
-  def apply(): DeleteBackupResponse = {
+  inline def apply(): DeleteBackupResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteBackupResponse]
   }
   
-  @scala.inline
-  implicit class DeleteBackupResponseMutableBuilder[Self <: DeleteBackupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteBackupResponse](x: Self) {
     
-    @scala.inline
-    def setBackupId(value: BackupId): Self = StObject.set(x, "BackupId", value.asInstanceOf[js.Any])
+    inline def setBackupId(value: BackupId): Self = StObject.set(x, "BackupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupIdUndefined: Self = StObject.set(x, "BackupId", js.undefined)
+    inline def setBackupIdUndefined: Self = StObject.set(x, "BackupId", js.undefined)
     
-    @scala.inline
-    def setLifecycle(value: BackupLifecycle): Self = StObject.set(x, "Lifecycle", value.asInstanceOf[js.Any])
+    inline def setLifecycle(value: BackupLifecycle): Self = StObject.set(x, "Lifecycle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifecycleUndefined: Self = StObject.set(x, "Lifecycle", js.undefined)
+    inline def setLifecycleUndefined: Self = StObject.set(x, "Lifecycle", js.undefined)
   }
 }

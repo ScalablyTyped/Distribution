@@ -18,31 +18,23 @@ trait GetAccountInfoParams
 }
 object GetAccountInfoParams {
   
-  @scala.inline
-  def apply(coin: String): GetAccountInfoParams = {
+  inline def apply(coin: String): GetAccountInfoParams = {
     val __obj = js.Dynamic.literal(coin = coin.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAccountInfoParams]
   }
   
-  @scala.inline
-  implicit class GetAccountInfoParamsMutableBuilder[Self <: GetAccountInfoParams] (val x: Self) extends AnyVal {
+  extension [Self <: GetAccountInfoParams](x: Self) {
     
-    @scala.inline
-    def setCoin(value: String): Self = StObject.set(x, "coin", value.asInstanceOf[js.Any])
+    inline def setCoin(value: String): Self = StObject.set(x, "coin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: js.Array[Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: js.Array[Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setPathVarargs(value: Double*): Self = StObject.set(x, "path", js.Array(value :_*))
+    inline def setPathVarargs(value: Double*): Self = StObject.set(x, "path", js.Array(value :_*))
     
-    @scala.inline
-    def setXpub(value: String): Self = StObject.set(x, "xpub", value.asInstanceOf[js.Any])
+    inline def setXpub(value: String): Self = StObject.set(x, "xpub", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXpubUndefined: Self = StObject.set(x, "xpub", js.undefined)
+    inline def setXpubUndefined: Self = StObject.set(x, "xpub", js.undefined)
   }
 }

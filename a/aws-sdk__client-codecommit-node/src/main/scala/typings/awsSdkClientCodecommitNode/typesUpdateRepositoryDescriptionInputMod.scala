@@ -46,43 +46,32 @@ object typesUpdateRepositoryDescriptionInputMod {
   }
   object UpdateRepositoryDescriptionInput {
     
-    @scala.inline
-    def apply(repositoryName: String): UpdateRepositoryDescriptionInput = {
+    inline def apply(repositoryName: String): UpdateRepositoryDescriptionInput = {
       val __obj = js.Dynamic.literal(repositoryName = repositoryName.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateRepositoryDescriptionInput]
     }
     
-    @scala.inline
-    implicit class UpdateRepositoryDescriptionInputMutableBuilder[Self <: UpdateRepositoryDescriptionInput] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateRepositoryDescriptionInput](x: Self) {
       
-      @scala.inline
-      def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
+      inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
+      inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
-      @scala.inline
-      def set$httpOptions(
+      inline def set$httpOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
+      inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
       
-      @scala.inline
-      def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
+      inline def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
+      inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      @scala.inline
-      def setRepositoryDescription(value: String): Self = StObject.set(x, "repositoryDescription", value.asInstanceOf[js.Any])
+      inline def setRepositoryDescription(value: String): Self = StObject.set(x, "repositoryDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepositoryDescriptionUndefined: Self = StObject.set(x, "repositoryDescription", js.undefined)
+      inline def setRepositoryDescriptionUndefined: Self = StObject.set(x, "repositoryDescription", js.undefined)
       
-      @scala.inline
-      def setRepositoryName(value: String): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+      inline def setRepositoryName(value: String): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     }
   }
 }

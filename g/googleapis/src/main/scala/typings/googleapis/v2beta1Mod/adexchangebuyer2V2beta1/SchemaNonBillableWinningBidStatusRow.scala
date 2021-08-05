@@ -27,31 +27,23 @@ trait SchemaNonBillableWinningBidStatusRow extends StObject {
 }
 object SchemaNonBillableWinningBidStatusRow {
   
-  @scala.inline
-  def apply(): SchemaNonBillableWinningBidStatusRow = {
+  inline def apply(): SchemaNonBillableWinningBidStatusRow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNonBillableWinningBidStatusRow]
   }
   
-  @scala.inline
-  implicit class SchemaNonBillableWinningBidStatusRowMutableBuilder[Self <: SchemaNonBillableWinningBidStatusRow] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaNonBillableWinningBidStatusRow](x: Self) {
     
-    @scala.inline
-    def setBidCount(value: SchemaMetricValue): Self = StObject.set(x, "bidCount", value.asInstanceOf[js.Any])
+    inline def setBidCount(value: SchemaMetricValue): Self = StObject.set(x, "bidCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBidCountUndefined: Self = StObject.set(x, "bidCount", js.undefined)
+    inline def setBidCountUndefined: Self = StObject.set(x, "bidCount", js.undefined)
     
-    @scala.inline
-    def setRowDimensions(value: SchemaRowDimensions): Self = StObject.set(x, "rowDimensions", value.asInstanceOf[js.Any])
+    inline def setRowDimensions(value: SchemaRowDimensions): Self = StObject.set(x, "rowDimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowDimensionsUndefined: Self = StObject.set(x, "rowDimensions", js.undefined)
+    inline def setRowDimensionsUndefined: Self = StObject.set(x, "rowDimensions", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

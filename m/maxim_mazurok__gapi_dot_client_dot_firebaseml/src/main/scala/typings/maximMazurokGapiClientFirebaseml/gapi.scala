@@ -31,29 +31,22 @@ object gapi {
       }
       object ListOperationsResponse {
         
-        @scala.inline
-        def apply(): ListOperationsResponse = {
+        inline def apply(): ListOperationsResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[ListOperationsResponse]
         }
         
-        @scala.inline
-        implicit class ListOperationsResponseMutableBuilder[Self <: ListOperationsResponse] (val x: Self) extends AnyVal {
+        extension [Self <: ListOperationsResponse](x: Self) {
           
-          @scala.inline
-          def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+          inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+          inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
           
-          @scala.inline
-          def setOperations(value: js.Array[Operation]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+          inline def setOperations(value: js.Array[Operation]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
+          inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
           
-          @scala.inline
-          def setOperationsVarargs(value: Operation*): Self = StObject.set(x, "operations", js.Array(value :_*))
+          inline def setOperationsVarargs(value: Operation*): Self = StObject.set(x, "operations", js.Array(value :_*))
         }
       }
       
@@ -66,26 +59,20 @@ object gapi {
       }
       object ModelOperationMetadata {
         
-        @scala.inline
-        def apply(): ModelOperationMetadata = {
+        inline def apply(): ModelOperationMetadata = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[ModelOperationMetadata]
         }
         
-        @scala.inline
-        implicit class ModelOperationMetadataMutableBuilder[Self <: ModelOperationMetadata] (val x: Self) extends AnyVal {
+        extension [Self <: ModelOperationMetadata](x: Self) {
           
-          @scala.inline
-          def setBasicOperationStatus(value: String): Self = StObject.set(x, "basicOperationStatus", value.asInstanceOf[js.Any])
+          inline def setBasicOperationStatus(value: String): Self = StObject.set(x, "basicOperationStatus", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setBasicOperationStatusUndefined: Self = StObject.set(x, "basicOperationStatus", js.undefined)
+          inline def setBasicOperationStatusUndefined: Self = StObject.set(x, "basicOperationStatus", js.undefined)
           
-          @scala.inline
-          def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+          inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+          inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         }
       }
       
@@ -126,52 +113,40 @@ object gapi {
       }
       object Operation {
         
-        @scala.inline
-        def apply(): Operation = {
+        inline def apply(): Operation = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[Operation]
         }
         
-        @scala.inline
-        implicit class OperationMutableBuilder[Self <: Operation] (val x: Self) extends AnyVal {
+        extension [Self <: Operation](x: Self) {
           
-          @scala.inline
-          def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+          inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
+          inline def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
           
-          @scala.inline
-          def setError(value: Status): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+          inline def setError(value: Status): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+          inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
           
-          @scala.inline
-          def setMetadata(
+          inline def setMetadata(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
             */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Operation & TopLevel[js.Any]
           ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+          inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
           
-          @scala.inline
-          def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+          inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+          inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
           
-          @scala.inline
-          def setResponse(
+          inline def setResponse(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
             */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Operation & TopLevel[js.Any]
           ): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+          inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
         }
       }
       
@@ -226,23 +201,18 @@ object gapi {
       }
       object Status {
         
-        @scala.inline
-        def apply(): Status = {
+        inline def apply(): Status = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[Status]
         }
         
-        @scala.inline
-        implicit class StatusMutableBuilder[Self <: Status] (val x: Self) extends AnyVal {
+        extension [Self <: Status](x: Self) {
           
-          @scala.inline
-          def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+          inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+          inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
           
-          @scala.inline
-          def setDetails(
+          inline def setDetails(
             value: js.Array[
                       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
@@ -250,21 +220,17 @@ object gapi {
                     ]
           ): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+          inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
           
-          @scala.inline
-          def setDetailsVarargs(
+          inline def setDetailsVarargs(
             value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
             */ typings.maximMazurokGapiClientFirebaseml.maximMazurokGapiClientFirebasemlStrings.Status & TopLevel[js.Any])*
           ): Self = StObject.set(x, "details", js.Array(value :_*))
           
-          @scala.inline
-          def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+          inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+          inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
         }
       }
     }

@@ -30,31 +30,23 @@ trait SchemaIpMapping extends StObject {
 }
 object SchemaIpMapping {
   
-  @scala.inline
-  def apply(): SchemaIpMapping = {
+  inline def apply(): SchemaIpMapping = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaIpMapping]
   }
   
-  @scala.inline
-  implicit class SchemaIpMappingMutableBuilder[Self <: SchemaIpMapping] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaIpMapping](x: Self) {
     
-    @scala.inline
-    def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+    inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
+    inline def setIpAddressUndefined: Self = StObject.set(x, "ipAddress", js.undefined)
     
-    @scala.inline
-    def setTimeToRetire(value: String): Self = StObject.set(x, "timeToRetire", value.asInstanceOf[js.Any])
+    inline def setTimeToRetire(value: String): Self = StObject.set(x, "timeToRetire", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeToRetireUndefined: Self = StObject.set(x, "timeToRetire", js.undefined)
+    inline def setTimeToRetireUndefined: Self = StObject.set(x, "timeToRetire", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

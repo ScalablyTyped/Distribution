@@ -11,6 +11,5 @@ object debug {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def printDocToDebug(doc: Doc_): String = ^.asInstanceOf[js.Dynamic].applyDynamic("printDocToDebug")(doc.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def printDocToDebug(doc: Doc_): String = ^.asInstanceOf[js.Dynamic].applyDynamic("printDocToDebug")(doc.asInstanceOf[js.Any]).asInstanceOf[String]
 }

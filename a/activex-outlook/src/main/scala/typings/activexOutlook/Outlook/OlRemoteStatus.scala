@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlRemoteStatus extends StObject
 object OlRemoteStatus {
   
-  @scala.inline
-  def olMarkedForCopy: `3` = 3.asInstanceOf[`3`]
+  inline def olMarkedForCopy: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def olMarkedForDelete: `4` = 4.asInstanceOf[`4`]
+  inline def olMarkedForDelete: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def olMarkedForDownload: `2` = 2.asInstanceOf[`2`]
+  inline def olMarkedForDownload: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olRemoteStatusNone: `0` = 0.asInstanceOf[`0`]
+  inline def olRemoteStatusNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def olUnMarked: `1` = 1.asInstanceOf[`1`]
+  inline def olUnMarked: `1` = 1.asInstanceOf[`1`]
 }

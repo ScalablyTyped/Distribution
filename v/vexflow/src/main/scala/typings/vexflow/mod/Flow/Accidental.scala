@@ -83,16 +83,12 @@ object Accidental {
   @JSImport("vexflow", "Flow.Accidental.DEBUG")
   @js.native
   def DEBUG: Boolean = js.native
-  @scala.inline
-  def DEBUG_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEBUG")(x.asInstanceOf[js.Any])
+  inline def DEBUG_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEBUG")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def applyAccidentals(voices: js.Array[typings.vexflow.Vex.Flow.Voice]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applyAccidentals")(voices.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def applyAccidentals(voices: js.Array[typings.vexflow.Vex.Flow.Voice], keySignature: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyAccidentals")(voices.asInstanceOf[js.Any], keySignature.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def applyAccidentals(voices: js.Array[typings.vexflow.Vex.Flow.Voice]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applyAccidentals")(voices.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def applyAccidentals(voices: js.Array[typings.vexflow.Vex.Flow.Voice], keySignature: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyAccidentals")(voices.asInstanceOf[js.Any], keySignature.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @scala.inline
-  def format(accidentals: js.Array[typings.vexflow.Vex.Flow.Accidental], state: Leftshift): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(accidentals.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def format(accidentals: js.Array[typings.vexflow.Vex.Flow.Accidental], state: Leftshift): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(accidentals.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

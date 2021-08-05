@@ -16,43 +16,31 @@ trait RTCSrtpSdesParameters extends StObject {
 }
 object RTCSrtpSdesParameters {
   
-  @scala.inline
-  def apply(): RTCSrtpSdesParameters = {
+  inline def apply(): RTCSrtpSdesParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RTCSrtpSdesParameters]
   }
   
-  @scala.inline
-  implicit class RTCSrtpSdesParametersMutableBuilder[Self <: RTCSrtpSdesParameters] (val x: Self) extends AnyVal {
+  extension [Self <: RTCSrtpSdesParameters](x: Self) {
     
-    @scala.inline
-    def setCryptoSuite(value: java.lang.String): Self = StObject.set(x, "cryptoSuite", value.asInstanceOf[js.Any])
+    inline def setCryptoSuite(value: java.lang.String): Self = StObject.set(x, "cryptoSuite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCryptoSuiteUndefined: Self = StObject.set(x, "cryptoSuite", js.undefined)
+    inline def setCryptoSuiteUndefined: Self = StObject.set(x, "cryptoSuite", js.undefined)
     
-    @scala.inline
-    def setKeyParams(value: js.Array[RTCSrtpKeyParam]): Self = StObject.set(x, "keyParams", value.asInstanceOf[js.Any])
+    inline def setKeyParams(value: js.Array[RTCSrtpKeyParam]): Self = StObject.set(x, "keyParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyParamsUndefined: Self = StObject.set(x, "keyParams", js.undefined)
+    inline def setKeyParamsUndefined: Self = StObject.set(x, "keyParams", js.undefined)
     
-    @scala.inline
-    def setKeyParamsVarargs(value: RTCSrtpKeyParam*): Self = StObject.set(x, "keyParams", js.Array(value :_*))
+    inline def setKeyParamsVarargs(value: RTCSrtpKeyParam*): Self = StObject.set(x, "keyParams", js.Array(value :_*))
     
-    @scala.inline
-    def setSessionParams(value: js.Array[java.lang.String]): Self = StObject.set(x, "sessionParams", value.asInstanceOf[js.Any])
+    inline def setSessionParams(value: js.Array[java.lang.String]): Self = StObject.set(x, "sessionParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionParamsUndefined: Self = StObject.set(x, "sessionParams", js.undefined)
+    inline def setSessionParamsUndefined: Self = StObject.set(x, "sessionParams", js.undefined)
     
-    @scala.inline
-    def setSessionParamsVarargs(value: java.lang.String*): Self = StObject.set(x, "sessionParams", js.Array(value :_*))
+    inline def setSessionParamsVarargs(value: java.lang.String*): Self = StObject.set(x, "sessionParams", js.Array(value :_*))
     
-    @scala.inline
-    def setTag(value: Double): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: Double): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

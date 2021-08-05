@@ -32,7 +32,7 @@ object messagerMod {
     ) = this()
     def this(userAgent: UserAgent, targetURI: URI, content: String, contentType: Unit, options: MessagerOptions) = this()
     
-    var logger: js.Any = js.native
+    /* private */ var logger: js.Any = js.native
     
     /**
       * Send the message.
@@ -40,8 +40,8 @@ object messagerMod {
     def message(): js.Promise[Unit] = js.native
     def message(options: MessagerMessageOptions): js.Promise[Unit] = js.native
     
-    var request: js.Any = js.native
+    /* private */ var request: js.Any = js.native
     
-    var userAgent: js.Any = js.native
+    /* private */ var userAgent: js.Any = js.native
   }
 }

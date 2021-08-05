@@ -10,16 +10,13 @@ trait ListenerExpression extends StObject {
 }
 object ListenerExpression {
   
-  @scala.inline
-  def apply(createBinding: js.Any => Binding): ListenerExpression = {
+  inline def apply(createBinding: js.Any => Binding): ListenerExpression = {
     val __obj = js.Dynamic.literal(createBinding = js.Any.fromFunction1(createBinding))
     __obj.asInstanceOf[ListenerExpression]
   }
   
-  @scala.inline
-  implicit class ListenerExpressionMutableBuilder[Self <: ListenerExpression] (val x: Self) extends AnyVal {
+  extension [Self <: ListenerExpression](x: Self) {
     
-    @scala.inline
-    def setCreateBinding(value: js.Any => Binding): Self = StObject.set(x, "createBinding", js.Any.fromFunction1(value))
+    inline def setCreateBinding(value: js.Any => Binding): Self = StObject.set(x, "createBinding", js.Any.fromFunction1(value))
   }
 }

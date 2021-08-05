@@ -60,46 +60,33 @@ trait ServerAuthSchemeObject extends StObject {
 }
 object ServerAuthSchemeObject {
   
-  @scala.inline
-  def apply(authenticate: (Request, ResponseToolkit) => ReturnValue): ServerAuthSchemeObject = {
+  inline def apply(authenticate: (Request, ResponseToolkit) => ReturnValue): ServerAuthSchemeObject = {
     val __obj = js.Dynamic.literal(authenticate = js.Any.fromFunction2(authenticate))
     __obj.asInstanceOf[ServerAuthSchemeObject]
   }
   
-  @scala.inline
-  implicit class ServerAuthSchemeObjectMutableBuilder[Self <: ServerAuthSchemeObject] (val x: Self) extends AnyVal {
+  extension [Self <: ServerAuthSchemeObject](x: Self) {
     
-    @scala.inline
-    def setApi(value: ServerAuthSchemeObjectApi): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+    inline def setApi(value: ServerAuthSchemeObjectApi): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
+    inline def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
     
-    @scala.inline
-    def setAuthenticate(value: (Request, ResponseToolkit) => ReturnValue): Self = StObject.set(x, "authenticate", js.Any.fromFunction2(value))
+    inline def setAuthenticate(value: (Request, ResponseToolkit) => ReturnValue): Self = StObject.set(x, "authenticate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOptions(value: Payload): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Payload): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setPayload(value: (/* request */ Request, /* h */ ResponseToolkit) => ReturnValue): Self = StObject.set(x, "payload", js.Any.fromFunction2(value))
+    inline def setPayload(value: (/* request */ Request, /* h */ ResponseToolkit) => ReturnValue): Self = StObject.set(x, "payload", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
-    @scala.inline
-    def setResponse(value: (/* request */ Request, /* h */ ResponseToolkit) => ReturnValue): Self = StObject.set(x, "response", js.Any.fromFunction2(value))
+    inline def setResponse(value: (/* request */ Request, /* h */ ResponseToolkit) => ReturnValue): Self = StObject.set(x, "response", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+    inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     
-    @scala.inline
-    def setVerify(value: /* auth */ RequestAuth => js.Promise[Unit]): Self = StObject.set(x, "verify", js.Any.fromFunction1(value))
+    inline def setVerify(value: /* auth */ RequestAuth => js.Promise[Unit]): Self = StObject.set(x, "verify", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVerifyUndefined: Self = StObject.set(x, "verify", js.undefined)
+    inline def setVerifyUndefined: Self = StObject.set(x, "verify", js.undefined)
   }
 }

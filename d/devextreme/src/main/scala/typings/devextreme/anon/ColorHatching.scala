@@ -16,37 +16,27 @@ trait ColorHatching extends StObject {
 }
 object ColorHatching {
   
-  @scala.inline
-  def apply(): ColorHatching = {
+  inline def apply(): ColorHatching = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColorHatching]
   }
   
-  @scala.inline
-  implicit class ColorHatchingMutableBuilder[Self <: ColorHatching] (val x: Self) extends AnyVal {
+  extension [Self <: ColorHatching](x: Self) {
     
-    @scala.inline
-    def setBorder(value: ColorVisible): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: ColorVisible): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setHatching(value: Step): Self = StObject.set(x, "hatching", value.asInstanceOf[js.Any])
+    inline def setHatching(value: Step): Self = StObject.set(x, "hatching", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHatchingUndefined: Self = StObject.set(x, "hatching", js.undefined)
+    inline def setHatchingUndefined: Self = StObject.set(x, "hatching", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
   }
 }

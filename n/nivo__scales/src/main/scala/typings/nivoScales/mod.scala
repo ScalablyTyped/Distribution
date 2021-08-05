@@ -36,42 +36,31 @@ object mod {
   }
   object LinearScale {
     
-    @scala.inline
-    def apply(): LinearScale = {
+    inline def apply(): LinearScale = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("linear")
       __obj.asInstanceOf[LinearScale]
     }
     
-    @scala.inline
-    implicit class LinearScaleMutableBuilder[Self <: LinearScale] (val x: Self) extends AnyVal {
+    extension [Self <: LinearScale](x: Self) {
       
-      @scala.inline
-      def setMax(value: auto | Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: auto | Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMin(value: auto | Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: auto | Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      @scala.inline
-      def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+      inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
+      inline def setReverseUndefined: Self = StObject.set(x, "reverse", js.undefined)
       
-      @scala.inline
-      def setStacked(value: Boolean): Self = StObject.set(x, "stacked", value.asInstanceOf[js.Any])
+      inline def setStacked(value: Boolean): Self = StObject.set(x, "stacked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackedUndefined: Self = StObject.set(x, "stacked", js.undefined)
+      inline def setStackedUndefined: Self = StObject.set(x, "stacked", js.undefined)
       
-      @scala.inline
-      def setType(value: linear): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: linear): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -89,36 +78,27 @@ object mod {
   }
   object LogScale {
     
-    @scala.inline
-    def apply(): LogScale = {
+    inline def apply(): LogScale = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("log")
       __obj.asInstanceOf[LogScale]
     }
     
-    @scala.inline
-    implicit class LogScaleMutableBuilder[Self <: LogScale] (val x: Self) extends AnyVal {
+    extension [Self <: LogScale](x: Self) {
       
-      @scala.inline
-      def setBase(value: Double): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: Double): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+      inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      @scala.inline
-      def setMax(value: auto | Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: auto | Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMin(value: auto | Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: auto | Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      @scala.inline
-      def setType(value: log): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: log): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -130,18 +110,15 @@ object mod {
   }
   object PointScale {
     
-    @scala.inline
-    def apply(): PointScale = {
+    inline def apply(): PointScale = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("point")
       __obj.asInstanceOf[PointScale]
     }
     
-    @scala.inline
-    implicit class PointScaleMutableBuilder[Self <: PointScale] (val x: Self) extends AnyVal {
+    extension [Self <: PointScale](x: Self) {
       
-      @scala.inline
-      def setType(value: point): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: point): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -156,43 +133,37 @@ object mod {
   trait Scale extends StObject
   object Scale {
     
-    @scala.inline
-    def LinearScale(): typings.nivoScales.mod.LinearScale = {
+    inline def LinearScale(): typings.nivoScales.mod.LinearScale = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("linear")
       __obj.asInstanceOf[typings.nivoScales.mod.LinearScale]
     }
     
-    @scala.inline
-    def LogScale(): typings.nivoScales.mod.LogScale = {
+    inline def LogScale(): typings.nivoScales.mod.LogScale = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("log")
       __obj.asInstanceOf[typings.nivoScales.mod.LogScale]
     }
     
-    @scala.inline
-    def PointScale(): typings.nivoScales.mod.PointScale = {
+    inline def PointScale(): typings.nivoScales.mod.PointScale = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("point")
       __obj.asInstanceOf[typings.nivoScales.mod.PointScale]
     }
     
-    @scala.inline
-    def SymlogScale(): typings.nivoScales.mod.SymlogScale = {
+    inline def SymlogScale(): typings.nivoScales.mod.SymlogScale = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("symlog")
       __obj.asInstanceOf[typings.nivoScales.mod.SymlogScale]
     }
     
-    @scala.inline
-    def TimeScale(): typings.nivoScales.mod.TimeScale = {
+    inline def TimeScale(): typings.nivoScales.mod.TimeScale = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("time")
       __obj.asInstanceOf[typings.nivoScales.mod.TimeScale]
     }
     
-    @scala.inline
-    def TimeScaleFormatted(format: String): typings.nivoScales.mod.TimeScaleFormatted = {
+    inline def TimeScaleFormatted(format: String): typings.nivoScales.mod.TimeScaleFormatted = {
       val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("time")
       __obj.asInstanceOf[typings.nivoScales.mod.TimeScaleFormatted]
@@ -215,36 +186,27 @@ object mod {
   }
   object SymlogScale {
     
-    @scala.inline
-    def apply(): SymlogScale = {
+    inline def apply(): SymlogScale = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("symlog")
       __obj.asInstanceOf[SymlogScale]
     }
     
-    @scala.inline
-    implicit class SymlogScaleMutableBuilder[Self <: SymlogScale] (val x: Self) extends AnyVal {
+    extension [Self <: SymlogScale](x: Self) {
       
-      @scala.inline
-      def setConstant(value: Double): Self = StObject.set(x, "constant", value.asInstanceOf[js.Any])
+      inline def setConstant(value: Double): Self = StObject.set(x, "constant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstantUndefined: Self = StObject.set(x, "constant", js.undefined)
+      inline def setConstantUndefined: Self = StObject.set(x, "constant", js.undefined)
       
-      @scala.inline
-      def setMax(value: auto | Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: auto | Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMin(value: auto | Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: auto | Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      @scala.inline
-      def setType(value: symlog): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: symlog): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -264,42 +226,31 @@ object mod {
   }
   object TimeScale {
     
-    @scala.inline
-    def apply(): TimeScale = {
+    inline def apply(): TimeScale = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")("time")
       __obj.asInstanceOf[TimeScale]
     }
     
-    @scala.inline
-    implicit class TimeScaleMutableBuilder[Self <: TimeScale] (val x: Self) extends AnyVal {
+    extension [Self <: TimeScale](x: Self) {
       
-      @scala.inline
-      def setMax(value: auto | Date): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: auto | Date): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMin(value: auto | Date): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: auto | Date): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      @scala.inline
-      def setPrecision(value: millisecond | second | minute | hour | month | year | day): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+      inline def setPrecision(value: millisecond | second | minute | hour | month | year | day): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+      inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
       
-      @scala.inline
-      def setType(value: time): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: time): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseUTC(value: Boolean): Self = StObject.set(x, "useUTC", value.asInstanceOf[js.Any])
+      inline def setUseUTC(value: Boolean): Self = StObject.set(x, "useUTC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseUTCUndefined: Self = StObject.set(x, "useUTC", js.undefined)
+      inline def setUseUTCUndefined: Self = StObject.set(x, "useUTC", js.undefined)
     }
   }
   
@@ -321,45 +272,33 @@ object mod {
   }
   object TimeScaleFormatted {
     
-    @scala.inline
-    def apply(format: String): TimeScaleFormatted = {
+    inline def apply(format: String): TimeScaleFormatted = {
       val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("time")
       __obj.asInstanceOf[TimeScaleFormatted]
     }
     
-    @scala.inline
-    implicit class TimeScaleFormattedMutableBuilder[Self <: TimeScaleFormatted] (val x: Self) extends AnyVal {
+    extension [Self <: TimeScaleFormatted](x: Self) {
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax(value: auto | String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: auto | String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMin(value: auto | String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: auto | String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      @scala.inline
-      def setPrecision(value: millisecond | second | minute | hour | month | year | day): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+      inline def setPrecision(value: millisecond | second | minute | hour | month | year | day): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+      inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
       
-      @scala.inline
-      def setType(value: time): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: time): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseUTC(value: Boolean): Self = StObject.set(x, "useUTC", value.asInstanceOf[js.Any])
+      inline def setUseUTC(value: Boolean): Self = StObject.set(x, "useUTC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseUTCUndefined: Self = StObject.set(x, "useUTC", js.undefined)
+      inline def setUseUTCUndefined: Self = StObject.set(x, "useUTC", js.undefined)
     }
   }
 }

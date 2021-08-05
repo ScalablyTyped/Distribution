@@ -22,8 +22,7 @@ trait CloudColor extends StObject {
 }
 object CloudColor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dark: String,
     light: String,
     lightActive: String,
@@ -36,28 +35,20 @@ object CloudColor {
     __obj.asInstanceOf[CloudColor]
   }
   
-  @scala.inline
-  implicit class CloudColorMutableBuilder[Self <: CloudColor] (val x: Self) extends AnyVal {
+  extension [Self <: CloudColor](x: Self) {
     
-    @scala.inline
-    def setDark(value: String): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
+    inline def setDark(value: String): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLight(value: String): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
+    inline def setLight(value: String): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLightActive(value: String): Self = StObject.set(x, "lightActive", value.asInstanceOf[js.Any])
+    inline def setLightActive(value: String): Self = StObject.set(x, "lightActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLightHover(value: String): Self = StObject.set(x, "lightHover", value.asInstanceOf[js.Any])
+    inline def setLightHover(value: String): Self = StObject.set(x, "lightHover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormal(value: String): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
+    inline def setNormal(value: String): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalActive(value: String): Self = StObject.set(x, "normalActive", value.asInstanceOf[js.Any])
+    inline def setNormalActive(value: String): Self = StObject.set(x, "normalActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalHover(value: String): Self = StObject.set(x, "normalHover", value.asInstanceOf[js.Any])
+    inline def setNormalHover(value: String): Self = StObject.set(x, "normalHover", value.asInstanceOf[js.Any])
   }
 }

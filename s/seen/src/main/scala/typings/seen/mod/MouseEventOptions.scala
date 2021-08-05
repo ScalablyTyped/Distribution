@@ -24,55 +24,39 @@ trait MouseEventOptions extends StObject {
 }
 object MouseEventOptions {
   
-  @scala.inline
-  def apply(): MouseEventOptions = {
+  inline def apply(): MouseEventOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MouseEventOptions]
   }
   
-  @scala.inline
-  implicit class MouseEventOptionsMutableBuilder[Self <: MouseEventOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MouseEventOptions](x: Self) {
     
-    @scala.inline
-    def setDrag(value: /* evt */ Event => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction1(value))
+    inline def setDrag(value: /* evt */ Event => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDragEnd(value: /* evt */ Event => Unit): Self = StObject.set(x, "dragEnd", js.Any.fromFunction1(value))
+    inline def setDragEnd(value: /* evt */ Event => Unit): Self = StObject.set(x, "dragEnd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDragEndUndefined: Self = StObject.set(x, "dragEnd", js.undefined)
+    inline def setDragEndUndefined: Self = StObject.set(x, "dragEnd", js.undefined)
     
-    @scala.inline
-    def setDragStart(value: /* evt */ Event => Unit): Self = StObject.set(x, "dragStart", js.Any.fromFunction1(value))
+    inline def setDragStart(value: /* evt */ Event => Unit): Self = StObject.set(x, "dragStart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDragStartUndefined: Self = StObject.set(x, "dragStart", js.undefined)
+    inline def setDragStartUndefined: Self = StObject.set(x, "dragStart", js.undefined)
     
-    @scala.inline
-    def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
+    inline def setDragUndefined: Self = StObject.set(x, "drag", js.undefined)
     
-    @scala.inline
-    def setMouseDown(value: /* evt */ Event => Unit): Self = StObject.set(x, "mouseDown", js.Any.fromFunction1(value))
+    inline def setMouseDown(value: /* evt */ Event => Unit): Self = StObject.set(x, "mouseDown", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMouseDownUndefined: Self = StObject.set(x, "mouseDown", js.undefined)
+    inline def setMouseDownUndefined: Self = StObject.set(x, "mouseDown", js.undefined)
     
-    @scala.inline
-    def setMouseMove(value: /* evt */ Event => Unit): Self = StObject.set(x, "mouseMove", js.Any.fromFunction1(value))
+    inline def setMouseMove(value: /* evt */ Event => Unit): Self = StObject.set(x, "mouseMove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMouseMoveUndefined: Self = StObject.set(x, "mouseMove", js.undefined)
+    inline def setMouseMoveUndefined: Self = StObject.set(x, "mouseMove", js.undefined)
     
-    @scala.inline
-    def setMouseUp(value: /* evt */ Event => Unit): Self = StObject.set(x, "mouseUp", js.Any.fromFunction1(value))
+    inline def setMouseUp(value: /* evt */ Event => Unit): Self = StObject.set(x, "mouseUp", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMouseUpUndefined: Self = StObject.set(x, "mouseUp", js.undefined)
+    inline def setMouseUpUndefined: Self = StObject.set(x, "mouseUp", js.undefined)
     
-    @scala.inline
-    def setMouseWheel(value: /* evt */ Event => Unit): Self = StObject.set(x, "mouseWheel", js.Any.fromFunction1(value))
+    inline def setMouseWheel(value: /* evt */ Event => Unit): Self = StObject.set(x, "mouseWheel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMouseWheelUndefined: Self = StObject.set(x, "mouseWheel", js.undefined)
+    inline def setMouseWheelUndefined: Self = StObject.set(x, "mouseWheel", js.undefined)
   }
 }

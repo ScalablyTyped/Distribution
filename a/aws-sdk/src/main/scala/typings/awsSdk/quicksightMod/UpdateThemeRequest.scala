@@ -38,40 +38,29 @@ trait UpdateThemeRequest extends StObject {
 }
 object UpdateThemeRequest {
   
-  @scala.inline
-  def apply(AwsAccountId: AwsAccountId, BaseThemeId: RestrictiveResourceId, ThemeId: RestrictiveResourceId): UpdateThemeRequest = {
+  inline def apply(AwsAccountId: AwsAccountId, BaseThemeId: RestrictiveResourceId, ThemeId: RestrictiveResourceId): UpdateThemeRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], BaseThemeId = BaseThemeId.asInstanceOf[js.Any], ThemeId = ThemeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateThemeRequest]
   }
   
-  @scala.inline
-  implicit class UpdateThemeRequestMutableBuilder[Self <: UpdateThemeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateThemeRequest](x: Self) {
     
-    @scala.inline
-    def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
+    inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseThemeId(value: RestrictiveResourceId): Self = StObject.set(x, "BaseThemeId", value.asInstanceOf[js.Any])
+    inline def setBaseThemeId(value: RestrictiveResourceId): Self = StObject.set(x, "BaseThemeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfiguration(value: ThemeConfiguration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: ThemeConfiguration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationUndefined: Self = StObject.set(x, "Configuration", js.undefined)
+    inline def setConfigurationUndefined: Self = StObject.set(x, "Configuration", js.undefined)
     
-    @scala.inline
-    def setName(value: ThemeName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ThemeName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setThemeId(value: RestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
+    inline def setThemeId(value: RestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionDescription(value: VersionDescription): Self = StObject.set(x, "VersionDescription", value.asInstanceOf[js.Any])
+    inline def setVersionDescription(value: VersionDescription): Self = StObject.set(x, "VersionDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionDescriptionUndefined: Self = StObject.set(x, "VersionDescription", js.undefined)
+    inline def setVersionDescriptionUndefined: Self = StObject.set(x, "VersionDescription", js.undefined)
   }
 }

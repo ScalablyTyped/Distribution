@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object GetRowsOptionEnum {
   
-  @scala.inline
-  def adGetRowsRest: `-1` = -1.asInstanceOf[`-1`]
+  inline def adGetRowsRest: `-1` = -1.asInstanceOf[`-1`]
 }

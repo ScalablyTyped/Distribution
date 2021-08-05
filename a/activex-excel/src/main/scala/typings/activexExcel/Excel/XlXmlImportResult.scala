@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlXmlImportResult extends StObject
 object XlXmlImportResult {
   
-  @scala.inline
-  def xlXmlImportElementsTruncated: `1` = 1.asInstanceOf[`1`]
+  inline def xlXmlImportElementsTruncated: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlXmlImportSuccess: `0` = 0.asInstanceOf[`0`]
+  inline def xlXmlImportSuccess: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlXmlImportValidationFailed: `2` = 2.asInstanceOf[`2`]
+  inline def xlXmlImportValidationFailed: `2` = 2.asInstanceOf[`2`]
 }

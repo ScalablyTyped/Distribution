@@ -30,70 +30,49 @@ trait StockToolsGuiDefinitionsLinesOptions extends StObject {
 }
 object StockToolsGuiDefinitionsLinesOptions {
   
-  @scala.inline
-  def apply(): StockToolsGuiDefinitionsLinesOptions = {
+  inline def apply(): StockToolsGuiDefinitionsLinesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StockToolsGuiDefinitionsLinesOptions]
   }
   
-  @scala.inline
-  implicit class StockToolsGuiDefinitionsLinesOptionsMutableBuilder[Self <: StockToolsGuiDefinitionsLinesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StockToolsGuiDefinitionsLinesOptions](x: Self) {
     
-    @scala.inline
-    def setArrowLine(value: StockToolsGuiDefinitionsLinesArrowLineOptions): Self = StObject.set(x, "arrowLine", value.asInstanceOf[js.Any])
+    inline def setArrowLine(value: StockToolsGuiDefinitionsLinesArrowLineOptions): Self = StObject.set(x, "arrowLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrowLineUndefined: Self = StObject.set(x, "arrowLine", js.undefined)
+    inline def setArrowLineUndefined: Self = StObject.set(x, "arrowLine", js.undefined)
     
-    @scala.inline
-    def setArrowRay(value: StockToolsGuiDefinitionsLinesArrowRayOptions): Self = StObject.set(x, "arrowRay", value.asInstanceOf[js.Any])
+    inline def setArrowRay(value: StockToolsGuiDefinitionsLinesArrowRayOptions): Self = StObject.set(x, "arrowRay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrowRayUndefined: Self = StObject.set(x, "arrowRay", js.undefined)
+    inline def setArrowRayUndefined: Self = StObject.set(x, "arrowRay", js.undefined)
     
-    @scala.inline
-    def setArrowSegment(value: StockToolsGuiDefinitionsLinesArrowSegmentOptions): Self = StObject.set(x, "arrowSegment", value.asInstanceOf[js.Any])
+    inline def setArrowSegment(value: StockToolsGuiDefinitionsLinesArrowSegmentOptions): Self = StObject.set(x, "arrowSegment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrowSegmentUndefined: Self = StObject.set(x, "arrowSegment", js.undefined)
+    inline def setArrowSegmentUndefined: Self = StObject.set(x, "arrowSegment", js.undefined)
     
-    @scala.inline
-    def setHorizontalLine(value: StockToolsGuiDefinitionsLinesHorizontalLineOptions): Self = StObject.set(x, "horizontalLine", value.asInstanceOf[js.Any])
+    inline def setHorizontalLine(value: StockToolsGuiDefinitionsLinesHorizontalLineOptions): Self = StObject.set(x, "horizontalLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalLineUndefined: Self = StObject.set(x, "horizontalLine", js.undefined)
+    inline def setHorizontalLineUndefined: Self = StObject.set(x, "horizontalLine", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setLine(value: StockToolsGuiDefinitionsLinesLineOptions): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: StockToolsGuiDefinitionsLinesLineOptions): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
-    @scala.inline
-    def setRay(value: StockToolsGuiDefinitionsLinesRayOptions): Self = StObject.set(x, "ray", value.asInstanceOf[js.Any])
+    inline def setRay(value: StockToolsGuiDefinitionsLinesRayOptions): Self = StObject.set(x, "ray", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRayUndefined: Self = StObject.set(x, "ray", js.undefined)
+    inline def setRayUndefined: Self = StObject.set(x, "ray", js.undefined)
     
-    @scala.inline
-    def setSegment(value: StockToolsGuiDefinitionsLinesSegmentOptions): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
+    inline def setSegment(value: StockToolsGuiDefinitionsLinesSegmentOptions): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentUndefined: Self = StObject.set(x, "segment", js.undefined)
+    inline def setSegmentUndefined: Self = StObject.set(x, "segment", js.undefined)
     
-    @scala.inline
-    def setVerticalLine(value: StockToolsGuiDefinitionsLinesVerticalLineOptions): Self = StObject.set(x, "verticalLine", value.asInstanceOf[js.Any])
+    inline def setVerticalLine(value: StockToolsGuiDefinitionsLinesVerticalLineOptions): Self = StObject.set(x, "verticalLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalLineUndefined: Self = StObject.set(x, "verticalLine", js.undefined)
+    inline def setVerticalLineUndefined: Self = StObject.set(x, "verticalLine", js.undefined)
   }
 }

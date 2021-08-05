@@ -22,8 +22,7 @@ object stringUtilMod {
     @JSImport("samchon/library/utils/StringUtil", "StringUtil.SPACE_ARRAY")
     @js.native
     def SPACE_ARRAY: js.Any = js.native
-    @scala.inline
-    def SPACE_ARRAY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SPACE_ARRAY")(x.asInstanceOf[js.Any])
+    inline def SPACE_ARRAY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SPACE_ARRAY")(x.asInstanceOf[js.Any])
     
     /**
       * @hidden
@@ -31,8 +30,7 @@ object stringUtilMod {
     @JSImport("samchon/library/utils/StringUtil", "StringUtil._Fetch_substitute_index")
     @js.native
     def _Fetch_substitute_index: js.Any = js.native
-    @scala.inline
-    def _Fetch_substitute_index_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Fetch_substitute_index")(x.asInstanceOf[js.Any])
+    inline def _Fetch_substitute_index_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Fetch_substitute_index")(x.asInstanceOf[js.Any])
     
     /**
       * @hidden
@@ -40,8 +38,7 @@ object stringUtilMod {
     @JSImport("samchon/library/utils/StringUtil", "StringUtil._Substitute_sql_string")
     @js.native
     def _Substitute_sql_string: js.Any = js.native
-    @scala.inline
-    def _Substitute_sql_string_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Substitute_sql_string")(x.asInstanceOf[js.Any])
+    inline def _Substitute_sql_string_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Substitute_sql_string")(x.asInstanceOf[js.Any])
     
     /**
       * Generate a substring.
@@ -64,14 +61,10 @@ object stringUtilMod {
       *
       * @return substring by specified terms.
       */
-    @scala.inline
-    def between(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("between")(str.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def between(str: String, start: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def between(str: String, start: String, end: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def between(str: String, start: Unit, end: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def between(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("between")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def between(str: String, start: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def between(str: String, start: String, end: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def between(str: String, start: Unit, end: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Fetch substrings.
@@ -92,14 +85,10 @@ object stringUtilMod {
       *			  If omitted, it's same with split(start) not having first item.
       * @return An array of substrings.
       */
-    @scala.inline
-    def betweens(str: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("betweens")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-    @scala.inline
-    def betweens(str: String, start: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("betweens")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-    @scala.inline
-    def betweens(str: String, start: String, end: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("betweens")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
-    @scala.inline
-    def betweens(str: String, start: Unit, end: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("betweens")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def betweens(str: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("betweens")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def betweens(str: String, start: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("betweens")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def betweens(str: String, start: String, end: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("betweens")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    inline def betweens(str: String, start: Unit, end: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("betweens")(str.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
     /**
       * Remove all designated characters from the beginning of the specified string.
@@ -109,8 +98,7 @@ object stringUtilMod {
       *
       * @return Updated string where designated characters was removed from the beginning
       */
-    @scala.inline
-    def ltrim(str: String, args: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ltrim")(str.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def ltrim(str: String, args: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ltrim")(str.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Number to formatted string with &quot;,&quot; sign.
@@ -122,23 +110,18 @@ object stringUtilMod {
       *
       * @return A string who represents the number with roundoff and &quot;,&quot; symbols.
       */
-    @scala.inline
-    def numberFormat(`val`: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("numberFormat")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def numberFormat(`val`: Double, precision: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("numberFormat")(`val`.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def numberFormat(`val`: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("numberFormat")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def numberFormat(`val`: Double, precision: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("numberFormat")(`val`.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def percentFormat(`val`: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("percentFormat")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def percentFormat(`val`: Double, precision: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("percentFormat")(`val`.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def percentFormat(`val`: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("percentFormat")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def percentFormat(`val`: Double, precision: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("percentFormat")(`val`.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Replace all HTML spaces to a literal space.
       *
       * @param str Target string to replace.
       */
-    @scala.inline
-    def removeHTMLSpaces(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removeHTMLSpaces")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def removeHTMLSpaces(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removeHTMLSpaces")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Repeat a string.
@@ -150,8 +133,7 @@ object stringUtilMod {
       *
       * @return The repeated string.
       */
-    @scala.inline
-    def repeat(str: String, n: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("repeat")(str.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def repeat(str: String, n: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("repeat")(str.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Returns a string specified word is replaced.
@@ -162,8 +144,7 @@ object stringUtilMod {
       *
       * @return A string specified word is replaced
       */
-    @scala.inline
-    def replaceAll(str: String, before: String, after: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceAll")(str.asInstanceOf[js.Any], before.asInstanceOf[js.Any], after.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def replaceAll(str: String, before: String, after: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceAll")(str.asInstanceOf[js.Any], before.asInstanceOf[js.Any], after.asInstanceOf[js.Any])).asInstanceOf[String]
     /**
       * Returns a string specified words are replaced.
       *
@@ -172,8 +153,7 @@ object stringUtilMod {
       *
       * @return A string specified words are replaced
       */
-    @scala.inline
-    def replaceAll(
+    inline def replaceAll(
       str: String,
       pairs: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.Pair<string, string> */ js.Any)*
     ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceAll")(str.asInstanceOf[js.Any], pairs.asInstanceOf[js.Any])).asInstanceOf[String]
@@ -186,8 +166,7 @@ object stringUtilMod {
       *
       * @return Updated string where designated characters was removed from the end.
       */
-    @scala.inline
-    def rtrim(str: String, args: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rtrim")(str.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def rtrim(str: String, args: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rtrim")(str.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Substitute `{n}` tokens within the specified string.
@@ -201,8 +180,7 @@ object stringUtilMod {
       *
       * @return New string with all of the `{n}` tokens replaced with the respective arguments specified.
       */
-    @scala.inline
-    def substitute(format: String, args: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("substitute")(format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def substitute(format: String, args: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("substitute")(format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Substitute `{n}` tokens within the specified SQL-string.
@@ -216,8 +194,7 @@ object stringUtilMod {
       *
       * @return New SQL-string with all of the `{n}` tokens replaced with the respective arguments specified.
       */
-    @scala.inline
-    def substituteSQL(format: String, args: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("substituteSQL")(format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def substituteSQL(format: String, args: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("substituteSQL")(format.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Remove all designated characters from the beginning and end of the specified string.
@@ -227,7 +204,6 @@ object stringUtilMod {
       *
       * @return Updated string where designated characters was removed from the beginning and end.
       */
-    @scala.inline
-    def trim(str: String, args: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("trim")(str.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def trim(str: String, args: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("trim")(str.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
   }
 }

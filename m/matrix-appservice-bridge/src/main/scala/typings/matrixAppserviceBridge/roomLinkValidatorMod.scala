@@ -20,18 +20,18 @@ object roomLinkValidatorMod {
       */
     def this(config: typings.matrixAppserviceBridge.anon.Rules, asBot: AppServiceBot) = this()
     
-    var asBot: js.Any = js.native
+    /* private */ var asBot: js.Any = js.native
     
-    var checkConflictCache: js.Any = js.native
+    /* private */ var checkConflictCache: js.Any = js.native
     
-    var conflictCache: js.Any = js.native
+    /* private */ var conflictCache: js.Any = js.native
     
-    var evaluateRules: js.Any = js.native
+    /* private */ var evaluateRules: js.Any = js.native
     
     def readRuleFile(): Rules = js.native
     def readRuleFile(filename: String): Rules = js.native
     
-    var ruleFile: js.Any = js.native
+    /* private */ var ruleFile: js.Any = js.native
     
     val rules: Rules = js.native
     
@@ -79,17 +79,14 @@ object roomLinkValidatorMod {
   }
   object Rules {
     
-    @scala.inline
-    def apply(userIds: Conflict): Rules = {
+    inline def apply(userIds: Conflict): Rules = {
       val __obj = js.Dynamic.literal(userIds = userIds.asInstanceOf[js.Any])
       __obj.asInstanceOf[Rules]
     }
     
-    @scala.inline
-    implicit class RulesMutableBuilder[Self <: Rules] (val x: Self) extends AnyVal {
+    extension [Self <: Rules](x: Self) {
       
-      @scala.inline
-      def setUserIds(value: Conflict): Self = StObject.set(x, "userIds", value.asInstanceOf[js.Any])
+      inline def setUserIds(value: Conflict): Self = StObject.set(x, "userIds", value.asInstanceOf[js.Any])
     }
   }
 }

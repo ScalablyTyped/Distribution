@@ -14,22 +14,17 @@ trait Current extends StObject {
 }
 object Current {
   
-  @scala.inline
-  def apply(current: String, latest: String, name: String): Current = {
+  inline def apply(current: String, latest: String, name: String): Current = {
     val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], latest = latest.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Current]
   }
   
-  @scala.inline
-  implicit class CurrentMutableBuilder[Self <: Current] (val x: Self) extends AnyVal {
+  extension [Self <: Current](x: Self) {
     
-    @scala.inline
-    def setCurrent(value: String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    inline def setCurrent(value: String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatest(value: String): Self = StObject.set(x, "latest", value.asInstanceOf[js.Any])
+    inline def setLatest(value: String): Self = StObject.set(x, "latest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

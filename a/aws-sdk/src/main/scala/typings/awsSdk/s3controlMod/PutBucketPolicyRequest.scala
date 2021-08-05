@@ -28,28 +28,21 @@ trait PutBucketPolicyRequest extends StObject {
 }
 object PutBucketPolicyRequest {
   
-  @scala.inline
-  def apply(AccountId: AccountId, Bucket: BucketName, Policy: Policy): PutBucketPolicyRequest = {
+  inline def apply(AccountId: AccountId, Bucket: BucketName, Policy: Policy): PutBucketPolicyRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], Bucket = Bucket.asInstanceOf[js.Any], Policy = Policy.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketPolicyRequest]
   }
   
-  @scala.inline
-  implicit class PutBucketPolicyRequestMutableBuilder[Self <: PutBucketPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutBucketPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfirmRemoveSelfBucketAccess(value: ConfirmRemoveSelfBucketAccess): Self = StObject.set(x, "ConfirmRemoveSelfBucketAccess", value.asInstanceOf[js.Any])
+    inline def setConfirmRemoveSelfBucketAccess(value: ConfirmRemoveSelfBucketAccess): Self = StObject.set(x, "ConfirmRemoveSelfBucketAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfirmRemoveSelfBucketAccessUndefined: Self = StObject.set(x, "ConfirmRemoveSelfBucketAccess", js.undefined)
+    inline def setConfirmRemoveSelfBucketAccessUndefined: Self = StObject.set(x, "ConfirmRemoveSelfBucketAccess", js.undefined)
     
-    @scala.inline
-    def setPolicy(value: Policy): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: Policy): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
   }
 }

@@ -32,38 +32,28 @@ object composerSidebarMod {
   }
   object ComposerSidebarItem {
     
-    @scala.inline
-    def apply(id: String | Double, label: String): ComposerSidebarItem = {
+    inline def apply(id: String | Double, label: String): ComposerSidebarItem = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[ComposerSidebarItem]
     }
     
-    @scala.inline
-    implicit class ComposerSidebarItemMutableBuilder[Self <: ComposerSidebarItem] (val x: Self) extends AnyVal {
+    extension [Self <: ComposerSidebarItem](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setIcon(value: js.Any): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: js.Any): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     }
   }
   
@@ -85,59 +75,42 @@ object composerSidebarMod {
   }
   object ComposerSidebarProps {
     
-    @scala.inline
-    def apply(): ComposerSidebarProps = {
+    inline def apply(): ComposerSidebarProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ComposerSidebarProps]
     }
     
-    @scala.inline
-    implicit class ComposerSidebarPropsMutableBuilder[Self <: ComposerSidebarProps] (val x: Self) extends AnyVal {
+    extension [Self <: ComposerSidebarProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setItems(value: js.Array[ComposerSidebarItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[ComposerSidebarItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setItemsVarargs(value: ComposerSidebarItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: ComposerSidebarItem*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setLabelPlacement(value: String): Self = StObject.set(x, "labelPlacement", value.asInstanceOf[js.Any])
+      inline def setLabelPlacement(value: String): Self = StObject.set(x, "labelPlacement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelPlacementUndefined: Self = StObject.set(x, "labelPlacement", js.undefined)
+      inline def setLabelPlacementUndefined: Self = StObject.set(x, "labelPlacement", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setSelectedId(value: Double | String): Self = StObject.set(x, "selectedId", value.asInstanceOf[js.Any])
+      inline def setSelectedId(value: Double | String): Self = StObject.set(x, "selectedId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedIdUndefined: Self = StObject.set(x, "selectedId", js.undefined)
+      inline def setSelectedIdUndefined: Self = StObject.set(x, "selectedId", js.undefined)
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
 }

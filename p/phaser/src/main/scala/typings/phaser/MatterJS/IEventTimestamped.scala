@@ -15,16 +15,13 @@ trait IEventTimestamped[T]
 }
 object IEventTimestamped {
   
-  @scala.inline
-  def apply[T](name: String, source: T, timestamp: Double): IEventTimestamped[T] = {
+  inline def apply[T](name: String, source: T, timestamp: Double): IEventTimestamped[T] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEventTimestamped[T]]
   }
   
-  @scala.inline
-  implicit class IEventTimestampedMutableBuilder[Self <: IEventTimestamped[?], T] (val x: Self & IEventTimestamped[T]) extends AnyVal {
+  extension [Self <: IEventTimestamped[?], T](x: Self & IEventTimestamped[T]) {
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

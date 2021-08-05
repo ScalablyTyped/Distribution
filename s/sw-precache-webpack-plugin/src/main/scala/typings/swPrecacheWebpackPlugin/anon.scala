@@ -14,26 +14,20 @@ object anon {
   }
   object ChunkName {
     
-    @scala.inline
-    def apply(): ChunkName = {
+    inline def apply(): ChunkName = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ChunkName]
     }
     
-    @scala.inline
-    implicit class ChunkNameMutableBuilder[Self <: ChunkName] (val x: Self) extends AnyVal {
+    extension [Self <: ChunkName](x: Self) {
       
-      @scala.inline
-      def setChunkName(value: String): Self = StObject.set(x, "chunkName", value.asInstanceOf[js.Any])
+      inline def setChunkName(value: String): Self = StObject.set(x, "chunkName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunkNameUndefined: Self = StObject.set(x, "chunkName", js.undefined)
+      inline def setChunkNameUndefined: Self = StObject.set(x, "chunkName", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     }
   }
 }

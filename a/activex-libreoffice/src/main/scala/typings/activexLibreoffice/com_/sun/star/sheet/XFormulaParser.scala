@@ -18,8 +18,7 @@ trait XFormulaParser extends StObject {
 }
 object XFormulaParser {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parseFormula: (String, CellAddress) => SafeArray[FormulaToken],
     printFormula: (SeqEquiv[FormulaToken], CellAddress) => String
   ): XFormulaParser = {
@@ -27,13 +26,10 @@ object XFormulaParser {
     __obj.asInstanceOf[XFormulaParser]
   }
   
-  @scala.inline
-  implicit class XFormulaParserMutableBuilder[Self <: XFormulaParser] (val x: Self) extends AnyVal {
+  extension [Self <: XFormulaParser](x: Self) {
     
-    @scala.inline
-    def setParseFormula(value: (String, CellAddress) => SafeArray[FormulaToken]): Self = StObject.set(x, "parseFormula", js.Any.fromFunction2(value))
+    inline def setParseFormula(value: (String, CellAddress) => SafeArray[FormulaToken]): Self = StObject.set(x, "parseFormula", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPrintFormula(value: (SeqEquiv[FormulaToken], CellAddress) => String): Self = StObject.set(x, "printFormula", js.Any.fromFunction2(value))
+    inline def setPrintFormula(value: (SeqEquiv[FormulaToken], CellAddress) => String): Self = StObject.set(x, "printFormula", js.Any.fromFunction2(value))
   }
 }

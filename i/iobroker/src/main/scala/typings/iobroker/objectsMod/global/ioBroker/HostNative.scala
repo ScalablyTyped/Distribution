@@ -17,22 +17,17 @@ trait HostNative extends StObject {
 }
 object HostNative {
   
-  @scala.inline
-  def apply(hardware: Cpus, os: Arch, process: Env): HostNative = {
+  inline def apply(hardware: Cpus, os: Arch, process: Env): HostNative = {
     val __obj = js.Dynamic.literal(hardware = hardware.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any], process = process.asInstanceOf[js.Any])
     __obj.asInstanceOf[HostNative]
   }
   
-  @scala.inline
-  implicit class HostNativeMutableBuilder[Self <: HostNative] (val x: Self) extends AnyVal {
+  extension [Self <: HostNative](x: Self) {
     
-    @scala.inline
-    def setHardware(value: Cpus): Self = StObject.set(x, "hardware", value.asInstanceOf[js.Any])
+    inline def setHardware(value: Cpus): Self = StObject.set(x, "hardware", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOs(value: Arch): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+    inline def setOs(value: Arch): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcess(value: Env): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
+    inline def setProcess(value: Env): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
   }
 }

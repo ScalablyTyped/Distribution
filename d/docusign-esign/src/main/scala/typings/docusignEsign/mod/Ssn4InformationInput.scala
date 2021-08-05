@@ -26,31 +26,23 @@ trait Ssn4InformationInput extends StObject {
 }
 object Ssn4InformationInput {
   
-  @scala.inline
-  def apply(): Ssn4InformationInput = {
+  inline def apply(): Ssn4InformationInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Ssn4InformationInput]
   }
   
-  @scala.inline
-  implicit class Ssn4InformationInputMutableBuilder[Self <: Ssn4InformationInput] (val x: Self) extends AnyVal {
+  extension [Self <: Ssn4InformationInput](x: Self) {
     
-    @scala.inline
-    def setDisplayLevelCode(value: String): Self = StObject.set(x, "displayLevelCode", value.asInstanceOf[js.Any])
+    inline def setDisplayLevelCode(value: String): Self = StObject.set(x, "displayLevelCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayLevelCodeUndefined: Self = StObject.set(x, "displayLevelCode", js.undefined)
+    inline def setDisplayLevelCodeUndefined: Self = StObject.set(x, "displayLevelCode", js.undefined)
     
-    @scala.inline
-    def setReceiveInResponse(value: String): Self = StObject.set(x, "receiveInResponse", value.asInstanceOf[js.Any])
+    inline def setReceiveInResponse(value: String): Self = StObject.set(x, "receiveInResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceiveInResponseUndefined: Self = StObject.set(x, "receiveInResponse", js.undefined)
+    inline def setReceiveInResponseUndefined: Self = StObject.set(x, "receiveInResponse", js.undefined)
     
-    @scala.inline
-    def setSsn4(value: String): Self = StObject.set(x, "ssn4", value.asInstanceOf[js.Any])
+    inline def setSsn4(value: String): Self = StObject.set(x, "ssn4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsn4Undefined: Self = StObject.set(x, "ssn4", js.undefined)
+    inline def setSsn4Undefined: Self = StObject.set(x, "ssn4", js.undefined)
   }
 }

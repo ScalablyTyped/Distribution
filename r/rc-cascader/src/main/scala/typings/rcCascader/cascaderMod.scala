@@ -30,12 +30,10 @@ object cascaderMod {
     @JSImport("rc-cascader/es/Cascader", "default.defaultProps")
     @js.native
     def defaultProps: CascaderProps = js.native
-    @scala.inline
-    def defaultProps_=(x: CascaderProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: CascaderProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @scala.inline
-    def getDerivedStateFromProps(nextProps: CascaderProps, prevState: CascaderState): CascaderState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[CascaderState]
+    inline def getDerivedStateFromProps(nextProps: CascaderProps, prevState: CascaderState): CascaderState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[CascaderState]
   }
   
   @js.native
@@ -81,32 +79,24 @@ object cascaderMod {
   }
   object CascaderFieldNames {
     
-    @scala.inline
-    def apply(): CascaderFieldNames = {
+    inline def apply(): CascaderFieldNames = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CascaderFieldNames]
     }
     
-    @scala.inline
-    implicit class CascaderFieldNamesMutableBuilder[Self <: CascaderFieldNames] (val x: Self) extends AnyVal {
+    extension [Self <: CascaderFieldNames](x: Self) {
       
-      @scala.inline
-      def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -128,53 +118,38 @@ object cascaderMod {
   }
   object CascaderOption {
     
-    @scala.inline
-    def apply(): CascaderOption = {
+    inline def apply(): CascaderOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CascaderOption]
     }
     
-    @scala.inline
-    implicit class CascaderOptionMutableBuilder[Self <: CascaderOption] (val x: Self) extends AnyVal {
+    extension [Self <: CascaderOption](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[CascaderOption]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[CascaderOption]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: CascaderOption*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: CascaderOption*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setIsLeaf(value: Boolean): Self = StObject.set(x, "isLeaf", value.asInstanceOf[js.Any])
+      inline def setIsLeaf(value: Boolean): Self = StObject.set(x, "isLeaf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLeafUndefined: Self = StObject.set(x, "isLeaf", js.undefined)
+      inline def setIsLeafUndefined: Self = StObject.set(x, "isLeaf", js.undefined)
       
-      @scala.inline
-      def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+      inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
-      @scala.inline
-      def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String | Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -233,167 +208,114 @@ object cascaderMod {
   }
   object CascaderProps {
     
-    @scala.inline
-    def apply(): CascaderProps = {
+    inline def apply(): CascaderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CascaderProps]
     }
     
-    @scala.inline
-    implicit class CascaderPropsMutableBuilder[Self <: CascaderProps] (val x: Self) extends AnyVal {
+    extension [Self <: CascaderProps](x: Self) {
       
-      @scala.inline
-      def setBuiltinPlacements(value: BuildInPlacements): Self = StObject.set(x, "builtinPlacements", value.asInstanceOf[js.Any])
+      inline def setBuiltinPlacements(value: BuildInPlacements): Self = StObject.set(x, "builtinPlacements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuiltinPlacementsUndefined: Self = StObject.set(x, "builtinPlacements", js.undefined)
+      inline def setBuiltinPlacementsUndefined: Self = StObject.set(x, "builtinPlacements", js.undefined)
       
-      @scala.inline
-      def setChangeOnSelect(value: Boolean): Self = StObject.set(x, "changeOnSelect", value.asInstanceOf[js.Any])
+      inline def setChangeOnSelect(value: Boolean): Self = StObject.set(x, "changeOnSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangeOnSelectUndefined: Self = StObject.set(x, "changeOnSelect", js.undefined)
+      inline def setChangeOnSelectUndefined: Self = StObject.set(x, "changeOnSelect", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDefaultValue(value: CascaderValueType): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: CascaderValueType): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setDefaultValueVarargs(value: (String | Double)*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: (String | Double)*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setDropdownMenuColumnStyle(value: CSSProperties): Self = StObject.set(x, "dropdownMenuColumnStyle", value.asInstanceOf[js.Any])
+      inline def setDropdownMenuColumnStyle(value: CSSProperties): Self = StObject.set(x, "dropdownMenuColumnStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropdownMenuColumnStyleUndefined: Self = StObject.set(x, "dropdownMenuColumnStyle", js.undefined)
+      inline def setDropdownMenuColumnStyleUndefined: Self = StObject.set(x, "dropdownMenuColumnStyle", js.undefined)
       
-      @scala.inline
-      def setDropdownRender(value: /* menu */ ReactElement => ReactElement): Self = StObject.set(x, "dropdownRender", js.Any.fromFunction1(value))
+      inline def setDropdownRender(value: /* menu */ ReactElement => ReactElement): Self = StObject.set(x, "dropdownRender", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDropdownRenderUndefined: Self = StObject.set(x, "dropdownRender", js.undefined)
+      inline def setDropdownRenderUndefined: Self = StObject.set(x, "dropdownRender", js.undefined)
       
-      @scala.inline
-      def setExpandIcon(value: ReactNode): Self = StObject.set(x, "expandIcon", value.asInstanceOf[js.Any])
+      inline def setExpandIcon(value: ReactNode): Self = StObject.set(x, "expandIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandIconUndefined: Self = StObject.set(x, "expandIcon", js.undefined)
+      inline def setExpandIconUndefined: Self = StObject.set(x, "expandIcon", js.undefined)
       
-      @scala.inline
-      def setExpandTrigger(value: String): Self = StObject.set(x, "expandTrigger", value.asInstanceOf[js.Any])
+      inline def setExpandTrigger(value: String): Self = StObject.set(x, "expandTrigger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandTriggerUndefined: Self = StObject.set(x, "expandTrigger", js.undefined)
+      inline def setExpandTriggerUndefined: Self = StObject.set(x, "expandTrigger", js.undefined)
       
-      @scala.inline
-      def setFieldNames(value: CascaderFieldNames): Self = StObject.set(x, "fieldNames", value.asInstanceOf[js.Any])
+      inline def setFieldNames(value: CascaderFieldNames): Self = StObject.set(x, "fieldNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldNamesUndefined: Self = StObject.set(x, "fieldNames", js.undefined)
+      inline def setFieldNamesUndefined: Self = StObject.set(x, "fieldNames", js.undefined)
       
-      @scala.inline
-      def setFiledNames(value: CascaderFieldNames): Self = StObject.set(x, "filedNames", value.asInstanceOf[js.Any])
+      inline def setFiledNames(value: CascaderFieldNames): Self = StObject.set(x, "filedNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiledNamesUndefined: Self = StObject.set(x, "filedNames", js.undefined)
+      inline def setFiledNamesUndefined: Self = StObject.set(x, "filedNames", js.undefined)
       
-      @scala.inline
-      def setGetPopupContainer(value: /* node */ HTMLElement => HTMLElement): Self = StObject.set(x, "getPopupContainer", js.Any.fromFunction1(value))
+      inline def setGetPopupContainer(value: /* node */ HTMLElement => HTMLElement): Self = StObject.set(x, "getPopupContainer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetPopupContainerUndefined: Self = StObject.set(x, "getPopupContainer", js.undefined)
+      inline def setGetPopupContainerUndefined: Self = StObject.set(x, "getPopupContainer", js.undefined)
       
-      @scala.inline
-      def setLoadData(value: /* selectOptions */ js.Array[CascaderOption] => Unit): Self = StObject.set(x, "loadData", js.Any.fromFunction1(value))
+      inline def setLoadData(value: /* selectOptions */ js.Array[CascaderOption] => Unit): Self = StObject.set(x, "loadData", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLoadDataUndefined: Self = StObject.set(x, "loadData", js.undefined)
+      inline def setLoadDataUndefined: Self = StObject.set(x, "loadData", js.undefined)
       
-      @scala.inline
-      def setLoadingIcon(value: ReactNode): Self = StObject.set(x, "loadingIcon", value.asInstanceOf[js.Any])
+      inline def setLoadingIcon(value: ReactNode): Self = StObject.set(x, "loadingIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingIconUndefined: Self = StObject.set(x, "loadingIcon", js.undefined)
+      inline def setLoadingIconUndefined: Self = StObject.set(x, "loadingIcon", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: (/* value */ CascaderValueType, /* selectOptions */ js.Array[CascaderOption]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* value */ CascaderValueType, /* selectOptions */ js.Array[CascaderOption]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnKeyDown(value: /* e */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: /* e */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      @scala.inline
-      def setOnPopupVisibleChange(value: /* popupVisible */ Boolean => Unit): Self = StObject.set(x, "onPopupVisibleChange", js.Any.fromFunction1(value))
+      inline def setOnPopupVisibleChange(value: /* popupVisible */ Boolean => Unit): Self = StObject.set(x, "onPopupVisibleChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPopupVisibleChangeUndefined: Self = StObject.set(x, "onPopupVisibleChange", js.undefined)
+      inline def setOnPopupVisibleChangeUndefined: Self = StObject.set(x, "onPopupVisibleChange", js.undefined)
       
-      @scala.inline
-      def setOptions(value: js.Array[CascaderOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Array[CascaderOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setOptionsVarargs(value: CascaderOption*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: CascaderOption*): Self = StObject.set(x, "options", js.Array(value :_*))
       
-      @scala.inline
-      def setPopupClassName(value: String): Self = StObject.set(x, "popupClassName", value.asInstanceOf[js.Any])
+      inline def setPopupClassName(value: String): Self = StObject.set(x, "popupClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopupClassNameUndefined: Self = StObject.set(x, "popupClassName", js.undefined)
+      inline def setPopupClassNameUndefined: Self = StObject.set(x, "popupClassName", js.undefined)
       
-      @scala.inline
-      def setPopupPlacement(value: String): Self = StObject.set(x, "popupPlacement", value.asInstanceOf[js.Any])
+      inline def setPopupPlacement(value: String): Self = StObject.set(x, "popupPlacement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopupPlacementUndefined: Self = StObject.set(x, "popupPlacement", js.undefined)
+      inline def setPopupPlacementUndefined: Self = StObject.set(x, "popupPlacement", js.undefined)
       
-      @scala.inline
-      def setPopupVisible(value: Boolean): Self = StObject.set(x, "popupVisible", value.asInstanceOf[js.Any])
+      inline def setPopupVisible(value: Boolean): Self = StObject.set(x, "popupVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopupVisibleUndefined: Self = StObject.set(x, "popupVisible", js.undefined)
+      inline def setPopupVisibleUndefined: Self = StObject.set(x, "popupVisible", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setTransitionName(value: String): Self = StObject.set(x, "transitionName", value.asInstanceOf[js.Any])
+      inline def setTransitionName(value: String): Self = StObject.set(x, "transitionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionNameUndefined: Self = StObject.set(x, "transitionName", js.undefined)
+      inline def setTransitionNameUndefined: Self = StObject.set(x, "transitionName", js.undefined)
       
-      @scala.inline
-      def setValue(value: CascaderValueType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: CascaderValueType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setValueVarargs(value: (String | Double)*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: (String | Double)*): Self = StObject.set(x, "value", js.Array(value :_*))
     }
   }
   
@@ -409,44 +331,32 @@ object cascaderMod {
   }
   object CascaderState {
     
-    @scala.inline
-    def apply(): CascaderState = {
+    inline def apply(): CascaderState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CascaderState]
     }
     
-    @scala.inline
-    implicit class CascaderStateMutableBuilder[Self <: CascaderState] (val x: Self) extends AnyVal {
+    extension [Self <: CascaderState](x: Self) {
       
-      @scala.inline
-      def setActiveValue(value: CascaderValueType): Self = StObject.set(x, "activeValue", value.asInstanceOf[js.Any])
+      inline def setActiveValue(value: CascaderValueType): Self = StObject.set(x, "activeValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveValueUndefined: Self = StObject.set(x, "activeValue", js.undefined)
+      inline def setActiveValueUndefined: Self = StObject.set(x, "activeValue", js.undefined)
       
-      @scala.inline
-      def setActiveValueVarargs(value: (String | Double)*): Self = StObject.set(x, "activeValue", js.Array(value :_*))
+      inline def setActiveValueVarargs(value: (String | Double)*): Self = StObject.set(x, "activeValue", js.Array(value :_*))
       
-      @scala.inline
-      def setPopupVisible(value: Boolean): Self = StObject.set(x, "popupVisible", value.asInstanceOf[js.Any])
+      inline def setPopupVisible(value: Boolean): Self = StObject.set(x, "popupVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPopupVisibleUndefined: Self = StObject.set(x, "popupVisible", js.undefined)
+      inline def setPopupVisibleUndefined: Self = StObject.set(x, "popupVisible", js.undefined)
       
-      @scala.inline
-      def setPrevProps(value: CascaderProps): Self = StObject.set(x, "prevProps", value.asInstanceOf[js.Any])
+      inline def setPrevProps(value: CascaderProps): Self = StObject.set(x, "prevProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevPropsUndefined: Self = StObject.set(x, "prevProps", js.undefined)
+      inline def setPrevPropsUndefined: Self = StObject.set(x, "prevProps", js.undefined)
       
-      @scala.inline
-      def setValue(value: CascaderValueType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: CascaderValueType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setValueVarargs(value: (String | Double)*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: (String | Double)*): Self = StObject.set(x, "value", js.Array(value :_*))
     }
   }
   

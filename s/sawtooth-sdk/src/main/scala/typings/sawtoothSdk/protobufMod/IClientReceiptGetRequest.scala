@@ -11,25 +11,19 @@ trait IClientReceiptGetRequest extends StObject {
 }
 object IClientReceiptGetRequest {
   
-  @scala.inline
-  def apply(): IClientReceiptGetRequest = {
+  inline def apply(): IClientReceiptGetRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IClientReceiptGetRequest]
   }
   
-  @scala.inline
-  implicit class IClientReceiptGetRequestMutableBuilder[Self <: IClientReceiptGetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IClientReceiptGetRequest](x: Self) {
     
-    @scala.inline
-    def setTransactionIds(value: js.Array[String]): Self = StObject.set(x, "transactionIds", value.asInstanceOf[js.Any])
+    inline def setTransactionIds(value: js.Array[String]): Self = StObject.set(x, "transactionIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionIdsNull: Self = StObject.set(x, "transactionIds", null)
+    inline def setTransactionIdsNull: Self = StObject.set(x, "transactionIds", null)
     
-    @scala.inline
-    def setTransactionIdsUndefined: Self = StObject.set(x, "transactionIds", js.undefined)
+    inline def setTransactionIdsUndefined: Self = StObject.set(x, "transactionIds", js.undefined)
     
-    @scala.inline
-    def setTransactionIdsVarargs(value: String*): Self = StObject.set(x, "transactionIds", js.Array(value :_*))
+    inline def setTransactionIdsVarargs(value: String*): Self = StObject.set(x, "transactionIds", js.Array(value :_*))
   }
 }

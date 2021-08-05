@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ChatType extends StObject
 object ChatType {
   
-  @scala.inline
-  def channel: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.channel = "channel".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.channel]
+  inline def channel: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.channel = "channel".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.channel]
   
-  @scala.inline
-  def group: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.group = "group".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.group]
+  inline def group: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.group = "group".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.group]
   
-  @scala.inline
-  def `private`: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.`private` = "private".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.`private`]
+  inline def `private`: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.`private` = "private".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.`private`]
   
-  @scala.inline
-  def supergroup: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.supergroup = "supergroup".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.supergroup]
+  inline def supergroup: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.supergroup = "supergroup".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.supergroup]
 }

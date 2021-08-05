@@ -40,8 +40,7 @@ object analyticsreportingMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Analyticsreporting
       ] = js.native
-    @scala.inline
-    def v4_=(
+    inline def v4_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -50,11 +49,9 @@ object analyticsreportingMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v4")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def analyticsreporting(options: Options): Analyticsreporting = ^.asInstanceOf[js.Dynamic].applyDynamic("analyticsreporting")(options.asInstanceOf[js.Any]).asInstanceOf[Analyticsreporting]
+  inline def analyticsreporting(options: Options): Analyticsreporting = ^.asInstanceOf[js.Dynamic].applyDynamic("analyticsreporting")(options.asInstanceOf[js.Any]).asInstanceOf[Analyticsreporting]
   
-  @scala.inline
-  def analyticsreporting_v4(version: v4): Analyticsreporting = ^.asInstanceOf[js.Dynamic].applyDynamic("analyticsreporting")(version.asInstanceOf[js.Any]).asInstanceOf[Analyticsreporting]
+  inline def analyticsreporting_v4(version: v4): Analyticsreporting = ^.asInstanceOf[js.Dynamic].applyDynamic("analyticsreporting")(version.asInstanceOf[js.Any]).asInstanceOf[Analyticsreporting]
   
   object auth extends Shortcut {
     
@@ -89,8 +86,7 @@ object analyticsreportingMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */

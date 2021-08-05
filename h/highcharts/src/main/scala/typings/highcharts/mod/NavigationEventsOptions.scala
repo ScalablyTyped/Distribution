@@ -31,37 +31,27 @@ trait NavigationEventsOptions extends StObject {
 }
 object NavigationEventsOptions {
   
-  @scala.inline
-  def apply(): NavigationEventsOptions = {
+  inline def apply(): NavigationEventsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigationEventsOptions]
   }
   
-  @scala.inline
-  implicit class NavigationEventsOptionsMutableBuilder[Self <: NavigationEventsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationEventsOptions](x: Self) {
     
-    @scala.inline
-    def setClosePopup(value: js.Function): Self = StObject.set(x, "closePopup", value.asInstanceOf[js.Any])
+    inline def setClosePopup(value: js.Function): Self = StObject.set(x, "closePopup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClosePopupUndefined: Self = StObject.set(x, "closePopup", js.undefined)
+    inline def setClosePopupUndefined: Self = StObject.set(x, "closePopup", js.undefined)
     
-    @scala.inline
-    def setDeselectButton(value: js.Function): Self = StObject.set(x, "deselectButton", value.asInstanceOf[js.Any])
+    inline def setDeselectButton(value: js.Function): Self = StObject.set(x, "deselectButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeselectButtonUndefined: Self = StObject.set(x, "deselectButton", js.undefined)
+    inline def setDeselectButtonUndefined: Self = StObject.set(x, "deselectButton", js.undefined)
     
-    @scala.inline
-    def setSelectButton(value: js.Function): Self = StObject.set(x, "selectButton", value.asInstanceOf[js.Any])
+    inline def setSelectButton(value: js.Function): Self = StObject.set(x, "selectButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectButtonUndefined: Self = StObject.set(x, "selectButton", js.undefined)
+    inline def setSelectButtonUndefined: Self = StObject.set(x, "selectButton", js.undefined)
     
-    @scala.inline
-    def setShowPopup(value: js.Function): Self = StObject.set(x, "showPopup", value.asInstanceOf[js.Any])
+    inline def setShowPopup(value: js.Function): Self = StObject.set(x, "showPopup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowPopupUndefined: Self = StObject.set(x, "showPopup", js.undefined)
+    inline def setShowPopupUndefined: Self = StObject.set(x, "showPopup", js.undefined)
   }
 }

@@ -29,22 +29,17 @@ trait SystemInfoBuild
 }
 object SystemInfoBuild {
   
-  @scala.inline
-  def apply(buildVersion: String, manufacturer: String, model: String): SystemInfoBuild = {
+  inline def apply(buildVersion: String, manufacturer: String, model: String): SystemInfoBuild = {
     val __obj = js.Dynamic.literal(buildVersion = buildVersion.asInstanceOf[js.Any], manufacturer = manufacturer.asInstanceOf[js.Any], model = model.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemInfoBuild]
   }
   
-  @scala.inline
-  implicit class SystemInfoBuildMutableBuilder[Self <: SystemInfoBuild] (val x: Self) extends AnyVal {
+  extension [Self <: SystemInfoBuild](x: Self) {
     
-    @scala.inline
-    def setBuildVersion(value: String): Self = StObject.set(x, "buildVersion", value.asInstanceOf[js.Any])
+    inline def setBuildVersion(value: String): Self = StObject.set(x, "buildVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
+    inline def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
   }
 }

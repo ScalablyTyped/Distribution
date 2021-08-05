@@ -11,9 +11,7 @@ object utilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def mergeArrowBBox(shape: IShape, bbox: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeArrowBBox")(shape.asInstanceOf[js.Any], bbox.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def mergeArrowBBox(shape: IShape, bbox: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeArrowBBox")(shape.asInstanceOf[js.Any], bbox.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def mergeBBox(bbox1: js.Any, bbox2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeBBox")(bbox1.asInstanceOf[js.Any], bbox2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def mergeBBox(bbox1: js.Any, bbox2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeBBox")(bbox1.asInstanceOf[js.Any], bbox2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

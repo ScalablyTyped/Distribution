@@ -14,25 +14,19 @@ trait DragRotateAndZoomOptions extends StObject {
 }
 object DragRotateAndZoomOptions {
   
-  @scala.inline
-  def apply(): DragRotateAndZoomOptions = {
+  inline def apply(): DragRotateAndZoomOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DragRotateAndZoomOptions]
   }
   
-  @scala.inline
-  implicit class DragRotateAndZoomOptionsMutableBuilder[Self <: DragRotateAndZoomOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DragRotateAndZoomOptions](x: Self) {
     
-    @scala.inline
-    def setCondition(value: /* event */ MapBrowserEvent => Boolean): Self = StObject.set(x, "condition", js.Any.fromFunction1(value))
+    inline def setCondition(value: /* event */ MapBrowserEvent => Boolean): Self = StObject.set(x, "condition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
   }
 }

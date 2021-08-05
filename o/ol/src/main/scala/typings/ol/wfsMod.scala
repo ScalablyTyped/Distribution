@@ -21,8 +21,7 @@ object wfsMod {
     def this(opt_options: Options) = this()
   }
   
-  @scala.inline
-  def writeFilter(filter: typings.ol.filterFilterMod.default): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("writeFilter")(filter.asInstanceOf[js.Any]).asInstanceOf[Node]
+  inline def writeFilter(filter: typings.ol.filterFilterMod.default): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("writeFilter")(filter.asInstanceOf[js.Any]).asInstanceOf[Node]
   
   trait FeatureCollectionMetadata extends StObject {
     
@@ -32,20 +31,16 @@ object wfsMod {
   }
   object FeatureCollectionMetadata {
     
-    @scala.inline
-    def apply(bounds: Extent, numberOfFeatures: Double): FeatureCollectionMetadata = {
+    inline def apply(bounds: Extent, numberOfFeatures: Double): FeatureCollectionMetadata = {
       val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], numberOfFeatures = numberOfFeatures.asInstanceOf[js.Any])
       __obj.asInstanceOf[FeatureCollectionMetadata]
     }
     
-    @scala.inline
-    implicit class FeatureCollectionMetadataMutableBuilder[Self <: FeatureCollectionMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: FeatureCollectionMetadata](x: Self) {
       
-      @scala.inline
-      def setBounds(value: Extent): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+      inline def setBounds(value: Extent): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberOfFeatures(value: Double): Self = StObject.set(x, "numberOfFeatures", value.asInstanceOf[js.Any])
+      inline def setNumberOfFeatures(value: Double): Self = StObject.set(x, "numberOfFeatures", value.asInstanceOf[js.Any])
     }
   }
   
@@ -61,41 +56,30 @@ object wfsMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setFeatureNS(value: StringDictionary[String] | String): Self = StObject.set(x, "featureNS", value.asInstanceOf[js.Any])
+      inline def setFeatureNS(value: StringDictionary[String] | String): Self = StObject.set(x, "featureNS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeatureNSUndefined: Self = StObject.set(x, "featureNS", js.undefined)
+      inline def setFeatureNSUndefined: Self = StObject.set(x, "featureNS", js.undefined)
       
-      @scala.inline
-      def setFeatureType(value: js.Array[String] | String): Self = StObject.set(x, "featureType", value.asInstanceOf[js.Any])
+      inline def setFeatureType(value: js.Array[String] | String): Self = StObject.set(x, "featureType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeatureTypeUndefined: Self = StObject.set(x, "featureType", js.undefined)
+      inline def setFeatureTypeUndefined: Self = StObject.set(x, "featureType", js.undefined)
       
-      @scala.inline
-      def setFeatureTypeVarargs(value: String*): Self = StObject.set(x, "featureType", js.Array(value :_*))
+      inline def setFeatureTypeVarargs(value: String*): Self = StObject.set(x, "featureType", js.Array(value :_*))
       
-      @scala.inline
-      def setGmlFormat(value: typings.ol.gmlbaseMod.default): Self = StObject.set(x, "gmlFormat", value.asInstanceOf[js.Any])
+      inline def setGmlFormat(value: typings.ol.gmlbaseMod.default): Self = StObject.set(x, "gmlFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGmlFormatUndefined: Self = StObject.set(x, "gmlFormat", js.undefined)
+      inline def setGmlFormatUndefined: Self = StObject.set(x, "gmlFormat", js.undefined)
       
-      @scala.inline
-      def setSchemaLocation(value: String): Self = StObject.set(x, "schemaLocation", value.asInstanceOf[js.Any])
+      inline def setSchemaLocation(value: String): Self = StObject.set(x, "schemaLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaLocationUndefined: Self = StObject.set(x, "schemaLocation", js.undefined)
+      inline def setSchemaLocationUndefined: Self = StObject.set(x, "schemaLocation", js.undefined)
     }
   }
   
@@ -111,29 +95,22 @@ object wfsMod {
   }
   object TransactionResponse {
     
-    @scala.inline
-    def apply(insertIds: js.Array[String], totalDeleted: Double, totalInserted: Double, totalUpdated: Double): TransactionResponse = {
+    inline def apply(insertIds: js.Array[String], totalDeleted: Double, totalInserted: Double, totalUpdated: Double): TransactionResponse = {
       val __obj = js.Dynamic.literal(insertIds = insertIds.asInstanceOf[js.Any], totalDeleted = totalDeleted.asInstanceOf[js.Any], totalInserted = totalInserted.asInstanceOf[js.Any], totalUpdated = totalUpdated.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransactionResponse]
     }
     
-    @scala.inline
-    implicit class TransactionResponseMutableBuilder[Self <: TransactionResponse] (val x: Self) extends AnyVal {
+    extension [Self <: TransactionResponse](x: Self) {
       
-      @scala.inline
-      def setInsertIds(value: js.Array[String]): Self = StObject.set(x, "insertIds", value.asInstanceOf[js.Any])
+      inline def setInsertIds(value: js.Array[String]): Self = StObject.set(x, "insertIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertIdsVarargs(value: String*): Self = StObject.set(x, "insertIds", js.Array(value :_*))
+      inline def setInsertIdsVarargs(value: String*): Self = StObject.set(x, "insertIds", js.Array(value :_*))
       
-      @scala.inline
-      def setTotalDeleted(value: Double): Self = StObject.set(x, "totalDeleted", value.asInstanceOf[js.Any])
+      inline def setTotalDeleted(value: Double): Self = StObject.set(x, "totalDeleted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalInserted(value: Double): Self = StObject.set(x, "totalInserted", value.asInstanceOf[js.Any])
+      inline def setTotalInserted(value: Double): Self = StObject.set(x, "totalInserted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalUpdated(value: Double): Self = StObject.set(x, "totalUpdated", value.asInstanceOf[js.Any])
+      inline def setTotalUpdated(value: Double): Self = StObject.set(x, "totalUpdated", value.asInstanceOf[js.Any])
     }
   }
   
@@ -221,101 +198,70 @@ object wfsMod {
   }
   object WriteGetFeatureOptions {
     
-    @scala.inline
-    def apply(featureNS: String, featurePrefix: String, featureTypes: js.Array[String]): WriteGetFeatureOptions = {
+    inline def apply(featureNS: String, featurePrefix: String, featureTypes: js.Array[String]): WriteGetFeatureOptions = {
       val __obj = js.Dynamic.literal(featureNS = featureNS.asInstanceOf[js.Any], featurePrefix = featurePrefix.asInstanceOf[js.Any], featureTypes = featureTypes.asInstanceOf[js.Any])
       __obj.asInstanceOf[WriteGetFeatureOptions]
     }
     
-    @scala.inline
-    implicit class WriteGetFeatureOptionsMutableBuilder[Self <: WriteGetFeatureOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WriteGetFeatureOptions](x: Self) {
       
-      @scala.inline
-      def setBbox(value: Extent): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
+      inline def setBbox(value: Extent): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBboxUndefined: Self = StObject.set(x, "bbox", js.undefined)
+      inline def setBboxUndefined: Self = StObject.set(x, "bbox", js.undefined)
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      @scala.inline
-      def setFeatureNS(value: String): Self = StObject.set(x, "featureNS", value.asInstanceOf[js.Any])
+      inline def setFeatureNS(value: String): Self = StObject.set(x, "featureNS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeaturePrefix(value: String): Self = StObject.set(x, "featurePrefix", value.asInstanceOf[js.Any])
+      inline def setFeaturePrefix(value: String): Self = StObject.set(x, "featurePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeatureTypes(value: js.Array[String]): Self = StObject.set(x, "featureTypes", value.asInstanceOf[js.Any])
+      inline def setFeatureTypes(value: js.Array[String]): Self = StObject.set(x, "featureTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeatureTypesVarargs(value: String*): Self = StObject.set(x, "featureTypes", js.Array(value :_*))
+      inline def setFeatureTypesVarargs(value: String*): Self = StObject.set(x, "featureTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setFilter(value: typings.ol.filterFilterMod.default): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: typings.ol.filterFilterMod.default): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setGeometryName(value: String): Self = StObject.set(x, "geometryName", value.asInstanceOf[js.Any])
+      inline def setGeometryName(value: String): Self = StObject.set(x, "geometryName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeometryNameUndefined: Self = StObject.set(x, "geometryName", js.undefined)
+      inline def setGeometryNameUndefined: Self = StObject.set(x, "geometryName", js.undefined)
       
-      @scala.inline
-      def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+      inline def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
+      inline def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
       
-      @scala.inline
-      def setMaxFeatures(value: Double): Self = StObject.set(x, "maxFeatures", value.asInstanceOf[js.Any])
+      inline def setMaxFeatures(value: Double): Self = StObject.set(x, "maxFeatures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxFeaturesUndefined: Self = StObject.set(x, "maxFeatures", js.undefined)
+      inline def setMaxFeaturesUndefined: Self = StObject.set(x, "maxFeatures", js.undefined)
       
-      @scala.inline
-      def setOutputFormat(value: String): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
+      inline def setOutputFormat(value: String): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputFormatUndefined: Self = StObject.set(x, "outputFormat", js.undefined)
+      inline def setOutputFormatUndefined: Self = StObject.set(x, "outputFormat", js.undefined)
       
-      @scala.inline
-      def setPropertyNames(value: js.Array[String]): Self = StObject.set(x, "propertyNames", value.asInstanceOf[js.Any])
+      inline def setPropertyNames(value: js.Array[String]): Self = StObject.set(x, "propertyNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertyNamesUndefined: Self = StObject.set(x, "propertyNames", js.undefined)
+      inline def setPropertyNamesUndefined: Self = StObject.set(x, "propertyNames", js.undefined)
       
-      @scala.inline
-      def setPropertyNamesVarargs(value: String*): Self = StObject.set(x, "propertyNames", js.Array(value :_*))
+      inline def setPropertyNamesVarargs(value: String*): Self = StObject.set(x, "propertyNames", js.Array(value :_*))
       
-      @scala.inline
-      def setResultType(value: String): Self = StObject.set(x, "resultType", value.asInstanceOf[js.Any])
+      inline def setResultType(value: String): Self = StObject.set(x, "resultType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultTypeUndefined: Self = StObject.set(x, "resultType", js.undefined)
+      inline def setResultTypeUndefined: Self = StObject.set(x, "resultType", js.undefined)
       
-      @scala.inline
-      def setSrsName(value: String): Self = StObject.set(x, "srsName", value.asInstanceOf[js.Any])
+      inline def setSrsName(value: String): Self = StObject.set(x, "srsName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrsNameUndefined: Self = StObject.set(x, "srsName", js.undefined)
+      inline def setSrsNameUndefined: Self = StObject.set(x, "srsName", js.undefined)
       
-      @scala.inline
-      def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+      inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
+      inline def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
       
-      @scala.inline
-      def setViewParams(value: String): Self = StObject.set(x, "viewParams", value.asInstanceOf[js.Any])
+      inline def setViewParams(value: String): Self = StObject.set(x, "viewParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewParamsUndefined: Self = StObject.set(x, "viewParams", js.undefined)
+      inline def setViewParamsUndefined: Self = StObject.set(x, "viewParams", js.undefined)
     }
   }
   
@@ -341,59 +287,42 @@ object wfsMod {
   }
   object WriteTransactionOptions {
     
-    @scala.inline
-    def apply(featureNS: String, featurePrefix: String, featureType: String, nativeElements: js.Array[js.Object]): WriteTransactionOptions = {
+    inline def apply(featureNS: String, featurePrefix: String, featureType: String, nativeElements: js.Array[js.Object]): WriteTransactionOptions = {
       val __obj = js.Dynamic.literal(featureNS = featureNS.asInstanceOf[js.Any], featurePrefix = featurePrefix.asInstanceOf[js.Any], featureType = featureType.asInstanceOf[js.Any], nativeElements = nativeElements.asInstanceOf[js.Any])
       __obj.asInstanceOf[WriteTransactionOptions]
     }
     
-    @scala.inline
-    implicit class WriteTransactionOptionsMutableBuilder[Self <: WriteTransactionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WriteTransactionOptions](x: Self) {
       
-      @scala.inline
-      def setFeatureNS(value: String): Self = StObject.set(x, "featureNS", value.asInstanceOf[js.Any])
+      inline def setFeatureNS(value: String): Self = StObject.set(x, "featureNS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeaturePrefix(value: String): Self = StObject.set(x, "featurePrefix", value.asInstanceOf[js.Any])
+      inline def setFeaturePrefix(value: String): Self = StObject.set(x, "featurePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeatureType(value: String): Self = StObject.set(x, "featureType", value.asInstanceOf[js.Any])
+      inline def setFeatureType(value: String): Self = StObject.set(x, "featureType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGmlOptions(value: typings.ol.gmlbaseMod.Options): Self = StObject.set(x, "gmlOptions", value.asInstanceOf[js.Any])
+      inline def setGmlOptions(value: typings.ol.gmlbaseMod.Options): Self = StObject.set(x, "gmlOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGmlOptionsUndefined: Self = StObject.set(x, "gmlOptions", js.undefined)
+      inline def setGmlOptionsUndefined: Self = StObject.set(x, "gmlOptions", js.undefined)
       
-      @scala.inline
-      def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+      inline def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
+      inline def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
       
-      @scala.inline
-      def setHasZ(value: Boolean): Self = StObject.set(x, "hasZ", value.asInstanceOf[js.Any])
+      inline def setHasZ(value: Boolean): Self = StObject.set(x, "hasZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasZUndefined: Self = StObject.set(x, "hasZ", js.undefined)
+      inline def setHasZUndefined: Self = StObject.set(x, "hasZ", js.undefined)
       
-      @scala.inline
-      def setNativeElements(value: js.Array[js.Object]): Self = StObject.set(x, "nativeElements", value.asInstanceOf[js.Any])
+      inline def setNativeElements(value: js.Array[js.Object]): Self = StObject.set(x, "nativeElements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNativeElementsVarargs(value: js.Object*): Self = StObject.set(x, "nativeElements", js.Array(value :_*))
+      inline def setNativeElementsVarargs(value: js.Object*): Self = StObject.set(x, "nativeElements", js.Array(value :_*))
       
-      @scala.inline
-      def setSrsName(value: String): Self = StObject.set(x, "srsName", value.asInstanceOf[js.Any])
+      inline def setSrsName(value: String): Self = StObject.set(x, "srsName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrsNameUndefined: Self = StObject.set(x, "srsName", js.undefined)
+      inline def setSrsNameUndefined: Self = StObject.set(x, "srsName", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
 }

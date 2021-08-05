@@ -209,23 +209,18 @@ object unionpayMod {
   }
   object UnionPayAccountDetails {
     
-    @scala.inline
-    def apply(cardType: String, description: String, lastTwo: String): UnionPayAccountDetails = {
+    inline def apply(cardType: String, description: String, lastTwo: String): UnionPayAccountDetails = {
       val __obj = js.Dynamic.literal(cardType = cardType.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], lastTwo = lastTwo.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnionPayAccountDetails]
     }
     
-    @scala.inline
-    implicit class UnionPayAccountDetailsMutableBuilder[Self <: UnionPayAccountDetails] (val x: Self) extends AnyVal {
+    extension [Self <: UnionPayAccountDetails](x: Self) {
       
-      @scala.inline
-      def setCardType(value: String): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
+      inline def setCardType(value: String): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastTwo(value: String): Self = StObject.set(x, "lastTwo", value.asInstanceOf[js.Any])
+      inline def setLastTwo(value: String): Self = StObject.set(x, "lastTwo", value.asInstanceOf[js.Any])
     }
   }
   
@@ -237,20 +232,16 @@ object unionpayMod {
   }
   object UnionPayEnrollPayload {
     
-    @scala.inline
-    def apply(enrollmentId: String, smsCodeRequired: Boolean): UnionPayEnrollPayload = {
+    inline def apply(enrollmentId: String, smsCodeRequired: Boolean): UnionPayEnrollPayload = {
       val __obj = js.Dynamic.literal(enrollmentId = enrollmentId.asInstanceOf[js.Any], smsCodeRequired = smsCodeRequired.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnionPayEnrollPayload]
     }
     
-    @scala.inline
-    implicit class UnionPayEnrollPayloadMutableBuilder[Self <: UnionPayEnrollPayload] (val x: Self) extends AnyVal {
+    extension [Self <: UnionPayEnrollPayload](x: Self) {
       
-      @scala.inline
-      def setEnrollmentId(value: String): Self = StObject.set(x, "enrollmentId", value.asInstanceOf[js.Any])
+      inline def setEnrollmentId(value: String): Self = StObject.set(x, "enrollmentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmsCodeRequired(value: Boolean): Self = StObject.set(x, "smsCodeRequired", value.asInstanceOf[js.Any])
+      inline def setSmsCodeRequired(value: Boolean): Self = StObject.set(x, "smsCodeRequired", value.asInstanceOf[js.Any])
     }
   }
   
@@ -264,23 +255,18 @@ object unionpayMod {
   }
   object UnionPayFetchCapabilitiesPayload {
     
-    @scala.inline
-    def apply(isDebit: Boolean, isUnionPay: Boolean, unionPay: UnionPayProperties): UnionPayFetchCapabilitiesPayload = {
+    inline def apply(isDebit: Boolean, isUnionPay: Boolean, unionPay: UnionPayProperties): UnionPayFetchCapabilitiesPayload = {
       val __obj = js.Dynamic.literal(isDebit = isDebit.asInstanceOf[js.Any], isUnionPay = isUnionPay.asInstanceOf[js.Any], unionPay = unionPay.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnionPayFetchCapabilitiesPayload]
     }
     
-    @scala.inline
-    implicit class UnionPayFetchCapabilitiesPayloadMutableBuilder[Self <: UnionPayFetchCapabilitiesPayload] (val x: Self) extends AnyVal {
+    extension [Self <: UnionPayFetchCapabilitiesPayload](x: Self) {
       
-      @scala.inline
-      def setIsDebit(value: Boolean): Self = StObject.set(x, "isDebit", value.asInstanceOf[js.Any])
+      inline def setIsDebit(value: Boolean): Self = StObject.set(x, "isDebit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsUnionPay(value: Boolean): Self = StObject.set(x, "isUnionPay", value.asInstanceOf[js.Any])
+      inline def setIsUnionPay(value: Boolean): Self = StObject.set(x, "isUnionPay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnionPay(value: UnionPayProperties): Self = StObject.set(x, "unionPay", value.asInstanceOf[js.Any])
+      inline def setUnionPay(value: UnionPayProperties): Self = StObject.set(x, "unionPay", value.asInstanceOf[js.Any])
     }
   }
   
@@ -292,20 +278,16 @@ object unionpayMod {
   }
   object UnionPayProperties {
     
-    @scala.inline
-    def apply(isSupported: Boolean, supportsTwoStepAuthAndCapture: Boolean): UnionPayProperties = {
+    inline def apply(isSupported: Boolean, supportsTwoStepAuthAndCapture: Boolean): UnionPayProperties = {
       val __obj = js.Dynamic.literal(isSupported = isSupported.asInstanceOf[js.Any], supportsTwoStepAuthAndCapture = supportsTwoStepAuthAndCapture.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnionPayProperties]
     }
     
-    @scala.inline
-    implicit class UnionPayPropertiesMutableBuilder[Self <: UnionPayProperties] (val x: Self) extends AnyVal {
+    extension [Self <: UnionPayProperties](x: Self) {
       
-      @scala.inline
-      def setIsSupported(value: Boolean): Self = StObject.set(x, "isSupported", value.asInstanceOf[js.Any])
+      inline def setIsSupported(value: Boolean): Self = StObject.set(x, "isSupported", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportsTwoStepAuthAndCapture(value: Boolean): Self = StObject.set(x, "supportsTwoStepAuthAndCapture", value.asInstanceOf[js.Any])
+      inline def setSupportsTwoStepAuthAndCapture(value: Boolean): Self = StObject.set(x, "supportsTwoStepAuthAndCapture", value.asInstanceOf[js.Any])
     }
   }
   
@@ -319,24 +301,19 @@ object unionpayMod {
   }
   object UnionPayTokenizePayload {
     
-    @scala.inline
-    def apply(details: UnionPayAccountDetails, nonce: String, `type`: String): UnionPayTokenizePayload = {
+    inline def apply(details: UnionPayAccountDetails, nonce: String, `type`: String): UnionPayTokenizePayload = {
       val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[UnionPayTokenizePayload]
     }
     
-    @scala.inline
-    implicit class UnionPayTokenizePayloadMutableBuilder[Self <: UnionPayTokenizePayload] (val x: Self) extends AnyVal {
+    extension [Self <: UnionPayTokenizePayload](x: Self) {
       
-      @scala.inline
-      def setDetails(value: UnionPayAccountDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: UnionPayAccountDetails): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
+      inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

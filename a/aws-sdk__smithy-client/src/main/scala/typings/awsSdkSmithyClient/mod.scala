@@ -36,8 +36,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromObject(`object`: js.Any): typings.awsSdkSmithyClient.lazyJsonMod.LazyJsonString = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.awsSdkSmithyClient.lazyJsonMod.LazyJsonString]
+    inline def fromObject(`object`: js.Any): typings.awsSdkSmithyClient.lazyJsonMod.LazyJsonString = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.awsSdkSmithyClient.lazyJsonMod.LazyJsonString]
   }
   
   @JSImport("@aws-sdk/smithy-client", "SENSITIVE_STRING")
@@ -57,18 +56,13 @@ object mod {
     def this(arg: js.Any) = this()
   }
   
-  @scala.inline
-  def dateToUtcString(date: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dateToUtcString")(date.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def dateToUtcString(date: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dateToUtcString")(date.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def extendedEncodeURIComponent(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extendedEncodeURIComponent")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def extendedEncodeURIComponent(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extendedEncodeURIComponent")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def getArrayIfSingleItem[T](mayBeArray: T): T | js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("getArrayIfSingleItem")(mayBeArray.asInstanceOf[js.Any]).asInstanceOf[T | js.Array[T]]
+  inline def getArrayIfSingleItem[T](mayBeArray: T): T | js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("getArrayIfSingleItem")(mayBeArray.asInstanceOf[js.Any]).asInstanceOf[T | js.Array[T]]
   
-  @scala.inline
-  def getValueFromTextNode(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getValueFromTextNode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getValueFromTextNode(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getValueFromTextNode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def splitEvery(value: String, delimiter: String, numDelimiters: Double): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("splitEvery")(value.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], numDelimiters.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def splitEvery(value: String, delimiter: String, numDelimiters: Double): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("splitEvery")(value.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], numDelimiters.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
 }

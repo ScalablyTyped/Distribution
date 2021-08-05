@@ -12,19 +12,15 @@ trait CollectionGroupsResource extends StObject {
 }
 object CollectionGroupsResource {
   
-  @scala.inline
-  def apply(fields: FieldsResource, indexes: IndexesResource): CollectionGroupsResource = {
+  inline def apply(fields: FieldsResource, indexes: IndexesResource): CollectionGroupsResource = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], indexes = indexes.asInstanceOf[js.Any])
     __obj.asInstanceOf[CollectionGroupsResource]
   }
   
-  @scala.inline
-  implicit class CollectionGroupsResourceMutableBuilder[Self <: CollectionGroupsResource] (val x: Self) extends AnyVal {
+  extension [Self <: CollectionGroupsResource](x: Self) {
     
-    @scala.inline
-    def setFields(value: FieldsResource): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: FieldsResource): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexes(value: IndexesResource): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
+    inline def setIndexes(value: IndexesResource): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
   }
 }

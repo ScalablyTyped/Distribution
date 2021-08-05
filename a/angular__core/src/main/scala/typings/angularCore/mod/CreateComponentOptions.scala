@@ -55,58 +55,41 @@ trait CreateComponentOptions extends StObject {
 }
 object CreateComponentOptions {
   
-  @scala.inline
-  def apply(): CreateComponentOptions = {
+  inline def apply(): CreateComponentOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateComponentOptions]
   }
   
-  @scala.inline
-  implicit class CreateComponentOptionsMutableBuilder[Self <: CreateComponentOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CreateComponentOptions](x: Self) {
     
-    @scala.inline
-    def setHost(value: RElement | String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: RElement | String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostFeatures(value: js.Array[HostFeature]): Self = StObject.set(x, "hostFeatures", value.asInstanceOf[js.Any])
+    inline def setHostFeatures(value: js.Array[HostFeature]): Self = StObject.set(x, "hostFeatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostFeaturesUndefined: Self = StObject.set(x, "hostFeatures", js.undefined)
+    inline def setHostFeaturesUndefined: Self = StObject.set(x, "hostFeatures", js.undefined)
     
-    @scala.inline
-    def setHostFeaturesVarargs(value: HostFeature*): Self = StObject.set(x, "hostFeatures", js.Array(value :_*))
+    inline def setHostFeaturesVarargs(value: HostFeature*): Self = StObject.set(x, "hostFeatures", js.Array(value :_*))
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    @scala.inline
-    def setInjector(value: Injector): Self = StObject.set(x, "injector", value.asInstanceOf[js.Any])
+    inline def setInjector(value: Injector): Self = StObject.set(x, "injector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInjectorUndefined: Self = StObject.set(x, "injector", js.undefined)
+    inline def setInjectorUndefined: Self = StObject.set(x, "injector", js.undefined)
     
-    @scala.inline
-    def setPlayerHandler(value: ɵPlayerHandler): Self = StObject.set(x, "playerHandler", value.asInstanceOf[js.Any])
+    inline def setPlayerHandler(value: ɵPlayerHandler): Self = StObject.set(x, "playerHandler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerHandlerUndefined: Self = StObject.set(x, "playerHandler", js.undefined)
+    inline def setPlayerHandlerUndefined: Self = StObject.set(x, "playerHandler", js.undefined)
     
-    @scala.inline
-    def setRendererFactory(value: RendererFactory3): Self = StObject.set(x, "rendererFactory", value.asInstanceOf[js.Any])
+    inline def setRendererFactory(value: RendererFactory3): Self = StObject.set(x, "rendererFactory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRendererFactoryUndefined: Self = StObject.set(x, "rendererFactory", js.undefined)
+    inline def setRendererFactoryUndefined: Self = StObject.set(x, "rendererFactory", js.undefined)
     
-    @scala.inline
-    def setSanitizer(value: Sanitizer): Self = StObject.set(x, "sanitizer", value.asInstanceOf[js.Any])
+    inline def setSanitizer(value: Sanitizer): Self = StObject.set(x, "sanitizer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSanitizerUndefined: Self = StObject.set(x, "sanitizer", js.undefined)
+    inline def setSanitizerUndefined: Self = StObject.set(x, "sanitizer", js.undefined)
     
-    @scala.inline
-    def setScheduler(value: /* work */ js.Function0[Unit] => Unit): Self = StObject.set(x, "scheduler", js.Any.fromFunction1(value))
+    inline def setScheduler(value: /* work */ js.Function0[Unit] => Unit): Self = StObject.set(x, "scheduler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSchedulerUndefined: Self = StObject.set(x, "scheduler", js.undefined)
+    inline def setSchedulerUndefined: Self = StObject.set(x, "scheduler", js.undefined)
   }
 }

@@ -12,19 +12,15 @@ trait Taggable extends StObject {
 }
 object Taggable {
   
-  @scala.inline
-  def apply(addLabels: Labels => Boolean, setLabel: (String, LabelValue) => Boolean): Taggable = {
+  inline def apply(addLabels: Labels => Boolean, setLabel: (String, LabelValue) => Boolean): Taggable = {
     val __obj = js.Dynamic.literal(addLabels = js.Any.fromFunction1(addLabels), setLabel = js.Any.fromFunction2(setLabel))
     __obj.asInstanceOf[Taggable]
   }
   
-  @scala.inline
-  implicit class TaggableMutableBuilder[Self <: Taggable] (val x: Self) extends AnyVal {
+  extension [Self <: Taggable](x: Self) {
     
-    @scala.inline
-    def setAddLabels(value: Labels => Boolean): Self = StObject.set(x, "addLabels", js.Any.fromFunction1(value))
+    inline def setAddLabels(value: Labels => Boolean): Self = StObject.set(x, "addLabels", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLabel(value: (String, LabelValue) => Boolean): Self = StObject.set(x, "setLabel", js.Any.fromFunction2(value))
+    inline def setSetLabel(value: (String, LabelValue) => Boolean): Self = StObject.set(x, "setLabel", js.Any.fromFunction2(value))
   }
 }

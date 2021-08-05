@@ -45,41 +45,30 @@ object v1alpha1 {
   }
   object VolumeAttachment {
     
-    @scala.inline
-    def apply(spec: Input[VolumeAttachmentSpec]): VolumeAttachment = {
+    inline def apply(spec: Input[VolumeAttachmentSpec]): VolumeAttachment = {
       val __obj = js.Dynamic.literal(spec = spec.asInstanceOf[js.Any])
       __obj.asInstanceOf[VolumeAttachment]
     }
     
-    @scala.inline
-    implicit class VolumeAttachmentMutableBuilder[Self <: VolumeAttachment] (val x: Self) extends AnyVal {
+    extension [Self <: VolumeAttachment](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: Input[storageDotk8sDotioSlashv1alpha1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: Input[storageDotk8sDotioSlashv1alpha1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
       
-      @scala.inline
-      def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.VolumeAttachment]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.VolumeAttachment]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+      inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setSpec(value: Input[VolumeAttachmentSpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+      inline def setSpec(value: Input[VolumeAttachmentSpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Input[VolumeAttachmentStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Input[VolumeAttachmentStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     }
   }
   
@@ -100,26 +89,20 @@ object v1alpha1 {
   }
   object VolumeAttachmentSource {
     
-    @scala.inline
-    def apply(): VolumeAttachmentSource = {
+    inline def apply(): VolumeAttachmentSource = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VolumeAttachmentSource]
     }
     
-    @scala.inline
-    implicit class VolumeAttachmentSourceMutableBuilder[Self <: VolumeAttachmentSource] (val x: Self) extends AnyVal {
+    extension [Self <: VolumeAttachmentSource](x: Self) {
       
-      @scala.inline
-      def setInlineVolumeSpec(value: Input[PersistentVolumeSpec]): Self = StObject.set(x, "inlineVolumeSpec", value.asInstanceOf[js.Any])
+      inline def setInlineVolumeSpec(value: Input[PersistentVolumeSpec]): Self = StObject.set(x, "inlineVolumeSpec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineVolumeSpecUndefined: Self = StObject.set(x, "inlineVolumeSpec", js.undefined)
+      inline def setInlineVolumeSpecUndefined: Self = StObject.set(x, "inlineVolumeSpec", js.undefined)
       
-      @scala.inline
-      def setPersistentVolumeName(value: Input[String]): Self = StObject.set(x, "persistentVolumeName", value.asInstanceOf[js.Any])
+      inline def setPersistentVolumeName(value: Input[String]): Self = StObject.set(x, "persistentVolumeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersistentVolumeNameUndefined: Self = StObject.set(x, "persistentVolumeName", js.undefined)
+      inline def setPersistentVolumeNameUndefined: Self = StObject.set(x, "persistentVolumeName", js.undefined)
     }
   }
   
@@ -145,23 +128,18 @@ object v1alpha1 {
   }
   object VolumeAttachmentSpec {
     
-    @scala.inline
-    def apply(attacher: Input[String], nodeName: Input[String], source: Input[VolumeAttachmentSource]): VolumeAttachmentSpec = {
+    inline def apply(attacher: Input[String], nodeName: Input[String], source: Input[VolumeAttachmentSource]): VolumeAttachmentSpec = {
       val __obj = js.Dynamic.literal(attacher = attacher.asInstanceOf[js.Any], nodeName = nodeName.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[VolumeAttachmentSpec]
     }
     
-    @scala.inline
-    implicit class VolumeAttachmentSpecMutableBuilder[Self <: VolumeAttachmentSpec] (val x: Self) extends AnyVal {
+    extension [Self <: VolumeAttachmentSpec](x: Self) {
       
-      @scala.inline
-      def setAttacher(value: Input[String]): Self = StObject.set(x, "attacher", value.asInstanceOf[js.Any])
+      inline def setAttacher(value: Input[String]): Self = StObject.set(x, "attacher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeName(value: Input[String]): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
+      inline def setNodeName(value: Input[String]): Self = StObject.set(x, "nodeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: Input[VolumeAttachmentSource]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Input[VolumeAttachmentSource]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   
@@ -192,35 +170,26 @@ object v1alpha1 {
   }
   object VolumeAttachmentStatus {
     
-    @scala.inline
-    def apply(attached: Input[Boolean]): VolumeAttachmentStatus = {
+    inline def apply(attached: Input[Boolean]): VolumeAttachmentStatus = {
       val __obj = js.Dynamic.literal(attached = attached.asInstanceOf[js.Any])
       __obj.asInstanceOf[VolumeAttachmentStatus]
     }
     
-    @scala.inline
-    implicit class VolumeAttachmentStatusMutableBuilder[Self <: VolumeAttachmentStatus] (val x: Self) extends AnyVal {
+    extension [Self <: VolumeAttachmentStatus](x: Self) {
       
-      @scala.inline
-      def setAttachError(value: Input[VolumeError]): Self = StObject.set(x, "attachError", value.asInstanceOf[js.Any])
+      inline def setAttachError(value: Input[VolumeError]): Self = StObject.set(x, "attachError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachErrorUndefined: Self = StObject.set(x, "attachError", js.undefined)
+      inline def setAttachErrorUndefined: Self = StObject.set(x, "attachError", js.undefined)
       
-      @scala.inline
-      def setAttached(value: Input[Boolean]): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
+      inline def setAttached(value: Input[Boolean]): Self = StObject.set(x, "attached", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachmentMetadata(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "attachmentMetadata", value.asInstanceOf[js.Any])
+      inline def setAttachmentMetadata(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "attachmentMetadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachmentMetadataUndefined: Self = StObject.set(x, "attachmentMetadata", js.undefined)
+      inline def setAttachmentMetadataUndefined: Self = StObject.set(x, "attachmentMetadata", js.undefined)
       
-      @scala.inline
-      def setDetachError(value: Input[VolumeError]): Self = StObject.set(x, "detachError", value.asInstanceOf[js.Any])
+      inline def setDetachError(value: Input[VolumeError]): Self = StObject.set(x, "detachError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetachErrorUndefined: Self = StObject.set(x, "detachError", js.undefined)
+      inline def setDetachErrorUndefined: Self = StObject.set(x, "detachError", js.undefined)
     }
   }
   
@@ -241,26 +210,20 @@ object v1alpha1 {
   }
   object VolumeError {
     
-    @scala.inline
-    def apply(): VolumeError = {
+    inline def apply(): VolumeError = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VolumeError]
     }
     
-    @scala.inline
-    implicit class VolumeErrorMutableBuilder[Self <: VolumeError] (val x: Self) extends AnyVal {
+    extension [Self <: VolumeError](x: Self) {
       
-      @scala.inline
-      def setMessage(value: Input[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: Input[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setTime(value: Input[String]): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Input[String]): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+      inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
     }
   }
 }

@@ -24,54 +24,39 @@ trait MapContextProps extends StObject {
 }
 object MapContextProps {
   
-  @scala.inline
-  def apply(isDragging: Boolean): MapContextProps = {
+  inline def apply(isDragging: Boolean): MapContextProps = {
     val __obj = js.Dynamic.literal(isDragging = isDragging.asInstanceOf[js.Any], mapContainer = null)
     __obj.asInstanceOf[MapContextProps]
   }
   
-  @scala.inline
-  implicit class MapContextPropsMutableBuilder[Self <: MapContextProps] (val x: Self) extends AnyVal {
+  extension [Self <: MapContextProps](x: Self) {
     
-    @scala.inline
-    def setEventManager(value: EventManager): Self = StObject.set(x, "eventManager", value.asInstanceOf[js.Any])
+    inline def setEventManager(value: EventManager): Self = StObject.set(x, "eventManager", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventManagerUndefined: Self = StObject.set(x, "eventManager", js.undefined)
+    inline def setEventManagerUndefined: Self = StObject.set(x, "eventManager", js.undefined)
     
-    @scala.inline
-    def setIsDragging(value: Boolean): Self = StObject.set(x, "isDragging", value.asInstanceOf[js.Any])
+    inline def setIsDragging(value: Boolean): Self = StObject.set(x, "isDragging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+    inline def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapContainer(value: HTMLElement): Self = StObject.set(x, "mapContainer", value.asInstanceOf[js.Any])
+    inline def setMapContainer(value: HTMLElement): Self = StObject.set(x, "mapContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapContainerNull: Self = StObject.set(x, "mapContainer", null)
+    inline def setMapContainerNull: Self = StObject.set(x, "mapContainer", null)
     
-    @scala.inline
-    def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+    inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     
-    @scala.inline
-    def setOnViewStateChange(value: /* info */ ContextViewStateChangeInfo => Unit): Self = StObject.set(x, "onViewStateChange", js.Any.fromFunction1(value))
+    inline def setOnViewStateChange(value: /* info */ ContextViewStateChangeInfo => Unit): Self = StObject.set(x, "onViewStateChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnViewStateChangeUndefined: Self = StObject.set(x, "onViewStateChange", js.undefined)
+    inline def setOnViewStateChangeUndefined: Self = StObject.set(x, "onViewStateChange", js.undefined)
     
-    @scala.inline
-    def setOnViewportChange(
+    inline def setOnViewportChange(
       value: (/* viewState */ ViewportProps, /* interactionState */ ExtraState, /* oldViewState */ ViewportProps) => Unit
     ): Self = StObject.set(x, "onViewportChange", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOnViewportChangeUndefined: Self = StObject.set(x, "onViewportChange", js.undefined)
+    inline def setOnViewportChangeUndefined: Self = StObject.set(x, "onViewportChange", js.undefined)
     
-    @scala.inline
-    def setViewport(value: typings.viewportMercatorProject.mod.default): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
+    inline def setViewport(value: typings.viewportMercatorProject.mod.default): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewportUndefined: Self = StObject.set(x, "viewport", js.undefined)
+    inline def setViewportUndefined: Self = StObject.set(x, "viewport", js.undefined)
   }
 }

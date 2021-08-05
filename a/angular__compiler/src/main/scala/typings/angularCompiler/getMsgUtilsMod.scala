@@ -15,14 +15,12 @@ object getMsgUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createGoogleGetMsgStatements(
+  inline def createGoogleGetMsgStatements(
     variable: ReadVarExpr,
     message: Message,
     closureVar: ReadVarExpr,
     params: StringDictionary[Expression]
   ): js.Array[Statement] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGoogleGetMsgStatements")(variable.asInstanceOf[js.Any], message.asInstanceOf[js.Any], closureVar.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Array[Statement]]
   
-  @scala.inline
-  def serializeI18nMessageForGetMsg(message: Message): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeI18nMessageForGetMsg")(message.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def serializeI18nMessageForGetMsg(message: Message): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeI18nMessageForGetMsg")(message.asInstanceOf[js.Any]).asInstanceOf[String]
 }

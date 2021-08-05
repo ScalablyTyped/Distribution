@@ -15,22 +15,17 @@ trait PublisherAdvertisement
 }
 object PublisherAdvertisement {
   
-  @scala.inline
-  def apply(name: String): PublisherAdvertisement = {
+  inline def apply(name: String): PublisherAdvertisement = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublisherAdvertisement]
   }
   
-  @scala.inline
-  implicit class PublisherAdvertisementMutableBuilder[Self <: PublisherAdvertisement] (val x: Self) extends AnyVal {
+  extension [Self <: PublisherAdvertisement](x: Self) {
     
-    @scala.inline
-    def setBroadcasts(value: js.Array[String]): Self = StObject.set(x, "broadcasts", value.asInstanceOf[js.Any])
+    inline def setBroadcasts(value: js.Array[String]): Self = StObject.set(x, "broadcasts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBroadcastsUndefined: Self = StObject.set(x, "broadcasts", js.undefined)
+    inline def setBroadcastsUndefined: Self = StObject.set(x, "broadcasts", js.undefined)
     
-    @scala.inline
-    def setBroadcastsVarargs(value: String*): Self = StObject.set(x, "broadcasts", js.Array(value :_*))
+    inline def setBroadcastsVarargs(value: String*): Self = StObject.set(x, "broadcasts", js.Array(value :_*))
   }
 }

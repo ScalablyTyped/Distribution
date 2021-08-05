@@ -12,16 +12,13 @@ trait Reference
 }
 object Reference {
   
-  @scala.inline
-  def apply(identifier: String, referenceType: ReferenceType): Reference = {
+  inline def apply(identifier: String, referenceType: ReferenceType): Reference = {
     val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any], referenceType = referenceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reference]
   }
   
-  @scala.inline
-  implicit class ReferenceMutableBuilder[Self <: Reference] (val x: Self) extends AnyVal {
+  extension [Self <: Reference](x: Self) {
     
-    @scala.inline
-    def setReferenceType(value: ReferenceType): Self = StObject.set(x, "referenceType", value.asInstanceOf[js.Any])
+    inline def setReferenceType(value: ReferenceType): Self = StObject.set(x, "referenceType", value.asInstanceOf[js.Any])
   }
 }

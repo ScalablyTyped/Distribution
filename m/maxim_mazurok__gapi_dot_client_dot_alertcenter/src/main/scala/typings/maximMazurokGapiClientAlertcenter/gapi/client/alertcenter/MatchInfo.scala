@@ -14,25 +14,19 @@ trait MatchInfo extends StObject {
 }
 object MatchInfo {
   
-  @scala.inline
-  def apply(): MatchInfo = {
+  inline def apply(): MatchInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MatchInfo]
   }
   
-  @scala.inline
-  implicit class MatchInfoMutableBuilder[Self <: MatchInfo] (val x: Self) extends AnyVal {
+  extension [Self <: MatchInfo](x: Self) {
     
-    @scala.inline
-    def setPredefinedDetector(value: PredefinedDetectorInfo): Self = StObject.set(x, "predefinedDetector", value.asInstanceOf[js.Any])
+    inline def setPredefinedDetector(value: PredefinedDetectorInfo): Self = StObject.set(x, "predefinedDetector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredefinedDetectorUndefined: Self = StObject.set(x, "predefinedDetector", js.undefined)
+    inline def setPredefinedDetectorUndefined: Self = StObject.set(x, "predefinedDetector", js.undefined)
     
-    @scala.inline
-    def setUserDefinedDetector(value: UserDefinedDetectorInfo): Self = StObject.set(x, "userDefinedDetector", value.asInstanceOf[js.Any])
+    inline def setUserDefinedDetector(value: UserDefinedDetectorInfo): Self = StObject.set(x, "userDefinedDetector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserDefinedDetectorUndefined: Self = StObject.set(x, "userDefinedDetector", js.undefined)
+    inline def setUserDefinedDetectorUndefined: Self = StObject.set(x, "userDefinedDetector", js.undefined)
   }
 }

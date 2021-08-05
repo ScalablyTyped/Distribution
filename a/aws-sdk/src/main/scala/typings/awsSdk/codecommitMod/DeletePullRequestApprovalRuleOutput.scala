@@ -13,16 +13,13 @@ trait DeletePullRequestApprovalRuleOutput extends StObject {
 }
 object DeletePullRequestApprovalRuleOutput {
   
-  @scala.inline
-  def apply(approvalRuleId: ApprovalRuleId): DeletePullRequestApprovalRuleOutput = {
+  inline def apply(approvalRuleId: ApprovalRuleId): DeletePullRequestApprovalRuleOutput = {
     val __obj = js.Dynamic.literal(approvalRuleId = approvalRuleId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeletePullRequestApprovalRuleOutput]
   }
   
-  @scala.inline
-  implicit class DeletePullRequestApprovalRuleOutputMutableBuilder[Self <: DeletePullRequestApprovalRuleOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DeletePullRequestApprovalRuleOutput](x: Self) {
     
-    @scala.inline
-    def setApprovalRuleId(value: ApprovalRuleId): Self = StObject.set(x, "approvalRuleId", value.asInstanceOf[js.Any])
+    inline def setApprovalRuleId(value: ApprovalRuleId): Self = StObject.set(x, "approvalRuleId", value.asInstanceOf[js.Any])
   }
 }

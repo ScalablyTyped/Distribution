@@ -12,25 +12,19 @@ trait SchedulerCurrentTimeMarker extends StObject {
 }
 object SchedulerCurrentTimeMarker {
   
-  @scala.inline
-  def apply(): SchedulerCurrentTimeMarker = {
+  inline def apply(): SchedulerCurrentTimeMarker = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchedulerCurrentTimeMarker]
   }
   
-  @scala.inline
-  implicit class SchedulerCurrentTimeMarkerMutableBuilder[Self <: SchedulerCurrentTimeMarker] (val x: Self) extends AnyVal {
+  extension [Self <: SchedulerCurrentTimeMarker](x: Self) {
     
-    @scala.inline
-    def setUpdateInterval(value: Double): Self = StObject.set(x, "updateInterval", value.asInstanceOf[js.Any])
+    inline def setUpdateInterval(value: Double): Self = StObject.set(x, "updateInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateIntervalUndefined: Self = StObject.set(x, "updateInterval", js.undefined)
+    inline def setUpdateIntervalUndefined: Self = StObject.set(x, "updateInterval", js.undefined)
     
-    @scala.inline
-    def setUseLocalTimezone(value: Boolean): Self = StObject.set(x, "useLocalTimezone", value.asInstanceOf[js.Any])
+    inline def setUseLocalTimezone(value: Boolean): Self = StObject.set(x, "useLocalTimezone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseLocalTimezoneUndefined: Self = StObject.set(x, "useLocalTimezone", js.undefined)
+    inline def setUseLocalTimezoneUndefined: Self = StObject.set(x, "useLocalTimezone", js.undefined)
   }
 }

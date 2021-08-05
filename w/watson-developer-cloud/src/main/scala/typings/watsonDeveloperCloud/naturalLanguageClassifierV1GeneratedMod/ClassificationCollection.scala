@@ -18,34 +18,25 @@ trait ClassificationCollection extends StObject {
 }
 object ClassificationCollection {
   
-  @scala.inline
-  def apply(): ClassificationCollection = {
+  inline def apply(): ClassificationCollection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClassificationCollection]
   }
   
-  @scala.inline
-  implicit class ClassificationCollectionMutableBuilder[Self <: ClassificationCollection] (val x: Self) extends AnyVal {
+  extension [Self <: ClassificationCollection](x: Self) {
     
-    @scala.inline
-    def setClassifier_id(value: String): Self = StObject.set(x, "classifier_id", value.asInstanceOf[js.Any])
+    inline def setClassifier_id(value: String): Self = StObject.set(x, "classifier_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassifier_idUndefined: Self = StObject.set(x, "classifier_id", js.undefined)
+    inline def setClassifier_idUndefined: Self = StObject.set(x, "classifier_id", js.undefined)
     
-    @scala.inline
-    def setCollection(value: js.Array[CollectionItem]): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+    inline def setCollection(value: js.Array[CollectionItem]): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
+    inline def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
     
-    @scala.inline
-    def setCollectionVarargs(value: CollectionItem*): Self = StObject.set(x, "collection", js.Array(value :_*))
+    inline def setCollectionVarargs(value: CollectionItem*): Self = StObject.set(x, "collection", js.Array(value :_*))
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

@@ -28,25 +28,19 @@ trait TcpipForwardingConfig extends StObject {
 }
 object TcpipForwardingConfig {
   
-  @scala.inline
-  def apply(destIP: String, destPort: Double, srcIP: String, srcPort: Double): TcpipForwardingConfig = {
+  inline def apply(destIP: String, destPort: Double, srcIP: String, srcPort: Double): TcpipForwardingConfig = {
     val __obj = js.Dynamic.literal(destIP = destIP.asInstanceOf[js.Any], destPort = destPort.asInstanceOf[js.Any], srcIP = srcIP.asInstanceOf[js.Any], srcPort = srcPort.asInstanceOf[js.Any])
     __obj.asInstanceOf[TcpipForwardingConfig]
   }
   
-  @scala.inline
-  implicit class TcpipForwardingConfigMutableBuilder[Self <: TcpipForwardingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: TcpipForwardingConfig](x: Self) {
     
-    @scala.inline
-    def setDestIP(value: String): Self = StObject.set(x, "destIP", value.asInstanceOf[js.Any])
+    inline def setDestIP(value: String): Self = StObject.set(x, "destIP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestPort(value: Double): Self = StObject.set(x, "destPort", value.asInstanceOf[js.Any])
+    inline def setDestPort(value: Double): Self = StObject.set(x, "destPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcIP(value: String): Self = StObject.set(x, "srcIP", value.asInstanceOf[js.Any])
+    inline def setSrcIP(value: String): Self = StObject.set(x, "srcIP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcPort(value: Double): Self = StObject.set(x, "srcPort", value.asInstanceOf[js.Any])
+    inline def setSrcPort(value: Double): Self = StObject.set(x, "srcPort", value.asInstanceOf[js.Any])
   }
 }

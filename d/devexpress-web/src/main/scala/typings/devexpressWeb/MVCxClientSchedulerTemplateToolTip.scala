@@ -18,8 +18,7 @@ trait MVCxClientSchedulerTemplateToolTip
 }
 object MVCxClientSchedulerTemplateToolTip {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CalculatePosition: js.Any => ASPxClientPoint,
     CanShowToolTip: () => Boolean,
     Close: () => Unit,
@@ -35,10 +34,8 @@ object MVCxClientSchedulerTemplateToolTip {
     __obj.asInstanceOf[MVCxClientSchedulerTemplateToolTip]
   }
   
-  @scala.inline
-  implicit class MVCxClientSchedulerTemplateToolTipMutableBuilder[Self <: MVCxClientSchedulerTemplateToolTip] (val x: Self) extends AnyVal {
+  extension [Self <: MVCxClientSchedulerTemplateToolTip](x: Self) {
     
-    @scala.inline
-    def setType(value: MVCxSchedulerToolTipType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: MVCxSchedulerToolTipType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

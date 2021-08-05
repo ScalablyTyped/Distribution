@@ -99,7 +99,7 @@ trait DistListItem extends StObject {
   
   var OneOffMembers: js.Any = js.native
   
-  @JSName("Outlook.DistListItem_typekey")
+  /* private */ @JSName("Outlook.DistListItem_typekey")
   var OutlookDotDistListItem_typekey: DistListItem = js.native
   
   val OutlookInternalVersion: Double = js.native

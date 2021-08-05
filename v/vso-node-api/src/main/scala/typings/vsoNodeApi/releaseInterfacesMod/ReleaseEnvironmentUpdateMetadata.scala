@@ -24,22 +24,17 @@ trait ReleaseEnvironmentUpdateMetadata extends StObject {
 }
 object ReleaseEnvironmentUpdateMetadata {
   
-  @scala.inline
-  def apply(comment: String, scheduledDeploymentTime: Date, status: EnvironmentStatus): ReleaseEnvironmentUpdateMetadata = {
+  inline def apply(comment: String, scheduledDeploymentTime: Date, status: EnvironmentStatus): ReleaseEnvironmentUpdateMetadata = {
     val __obj = js.Dynamic.literal(comment = comment.asInstanceOf[js.Any], scheduledDeploymentTime = scheduledDeploymentTime.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReleaseEnvironmentUpdateMetadata]
   }
   
-  @scala.inline
-  implicit class ReleaseEnvironmentUpdateMetadataMutableBuilder[Self <: ReleaseEnvironmentUpdateMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ReleaseEnvironmentUpdateMetadata](x: Self) {
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledDeploymentTime(value: Date): Self = StObject.set(x, "scheduledDeploymentTime", value.asInstanceOf[js.Any])
+    inline def setScheduledDeploymentTime(value: Date): Self = StObject.set(x, "scheduledDeploymentTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: EnvironmentStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: EnvironmentStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

@@ -60,94 +60,65 @@ trait InstanceGroup extends StObject {
 }
 object InstanceGroup {
   
-  @scala.inline
-  def apply(): InstanceGroup = {
+  inline def apply(): InstanceGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceGroup]
   }
   
-  @scala.inline
-  implicit class InstanceGroupMutableBuilder[Self <: InstanceGroup] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceGroup](x: Self) {
     
-    @scala.inline
-    def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
+    inline def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+    inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+    inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNamedPorts(value: js.Array[NamedPort]): Self = StObject.set(x, "namedPorts", value.asInstanceOf[js.Any])
+    inline def setNamedPorts(value: js.Array[NamedPort]): Self = StObject.set(x, "namedPorts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamedPortsUndefined: Self = StObject.set(x, "namedPorts", js.undefined)
+    inline def setNamedPortsUndefined: Self = StObject.set(x, "namedPorts", js.undefined)
     
-    @scala.inline
-    def setNamedPortsVarargs(value: NamedPort*): Self = StObject.set(x, "namedPorts", js.Array(value :_*))
+    inline def setNamedPortsVarargs(value: NamedPort*): Self = StObject.set(x, "namedPorts", js.Array(value :_*))
     
-    @scala.inline
-    def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+    inline def setNetwork(value: String): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
+    inline def setNetworkUndefined: Self = StObject.set(x, "network", js.undefined)
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
-    @scala.inline
-    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setSubnetwork(value: String): Self = StObject.set(x, "subnetwork", value.asInstanceOf[js.Any])
+    inline def setSubnetwork(value: String): Self = StObject.set(x, "subnetwork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetworkUndefined: Self = StObject.set(x, "subnetwork", js.undefined)
+    inline def setSubnetworkUndefined: Self = StObject.set(x, "subnetwork", js.undefined)
     
-    @scala.inline
-    def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    inline def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
+    inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

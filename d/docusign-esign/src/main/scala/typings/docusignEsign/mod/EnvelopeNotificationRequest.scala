@@ -28,33 +28,25 @@ trait EnvelopeNotificationRequest extends StObject {
 }
 object EnvelopeNotificationRequest {
   
-  @scala.inline
-  def apply(): EnvelopeNotificationRequest = {
+  inline def apply(): EnvelopeNotificationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnvelopeNotificationRequest]
   }
   
-  @scala.inline
-  implicit class EnvelopeNotificationRequestMutableBuilder[Self <: EnvelopeNotificationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: EnvelopeNotificationRequest](x: Self) {
     
-    @scala.inline
-    def setExpirations(
+    inline def setExpirations(
       value: /* A complex element that specifies the expiration settings for the envelope. */ Expirations
     ): Self = StObject.set(x, "expirations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationsUndefined: Self = StObject.set(x, "expirations", js.undefined)
+    inline def setExpirationsUndefined: Self = StObject.set(x, "expirations", js.undefined)
     
-    @scala.inline
-    def setReminders(value: /* A complex element that specifies reminder settings for the envelope. */ Reminders): Self = StObject.set(x, "reminders", value.asInstanceOf[js.Any])
+    inline def setReminders(value: /* A complex element that specifies reminder settings for the envelope. */ Reminders): Self = StObject.set(x, "reminders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemindersUndefined: Self = StObject.set(x, "reminders", js.undefined)
+    inline def setRemindersUndefined: Self = StObject.set(x, "reminders", js.undefined)
     
-    @scala.inline
-    def setUseAccountDefaults(value: String): Self = StObject.set(x, "useAccountDefaults", value.asInstanceOf[js.Any])
+    inline def setUseAccountDefaults(value: String): Self = StObject.set(x, "useAccountDefaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseAccountDefaultsUndefined: Self = StObject.set(x, "useAccountDefaults", js.undefined)
+    inline def setUseAccountDefaultsUndefined: Self = StObject.set(x, "useAccountDefaults", js.undefined)
   }
 }

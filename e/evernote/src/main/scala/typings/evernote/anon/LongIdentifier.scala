@@ -15,31 +15,23 @@ trait LongIdentifier extends StObject {
 }
 object LongIdentifier {
   
-  @scala.inline
-  def apply(): LongIdentifier = {
+  inline def apply(): LongIdentifier = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LongIdentifier]
   }
   
-  @scala.inline
-  implicit class LongIdentifierMutableBuilder[Self <: LongIdentifier] (val x: Self) extends AnyVal {
+  extension [Self <: LongIdentifier](x: Self) {
     
-    @scala.inline
-    def setLongIdentifier(value: Double): Self = StObject.set(x, "longIdentifier", value.asInstanceOf[js.Any])
+    inline def setLongIdentifier(value: Double): Self = StObject.set(x, "longIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongIdentifierUndefined: Self = StObject.set(x, "longIdentifier", js.undefined)
+    inline def setLongIdentifierUndefined: Self = StObject.set(x, "longIdentifier", js.undefined)
     
-    @scala.inline
-    def setStringIdentifier(value: String): Self = StObject.set(x, "stringIdentifier", value.asInstanceOf[js.Any])
+    inline def setStringIdentifier(value: String): Self = StObject.set(x, "stringIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringIdentifierUndefined: Self = StObject.set(x, "stringIdentifier", js.undefined)
+    inline def setStringIdentifierUndefined: Self = StObject.set(x, "stringIdentifier", js.undefined)
     
-    @scala.inline
-    def setType(value: UserIdentityType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: UserIdentityType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

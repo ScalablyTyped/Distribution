@@ -64,17 +64,14 @@ object apitypesMod {
   }
   object GRPCCallResult {
     
-    @scala.inline
-    def apply(cancel: () => Unit): GRPCCallResult = {
+    inline def apply(cancel: () => Unit): GRPCCallResult = {
       val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel))
       __obj.asInstanceOf[GRPCCallResult]
     }
     
-    @scala.inline
-    implicit class GRPCCallResultMutableBuilder[Self <: GRPCCallResult] (val x: Self) extends AnyVal {
+    extension [Self <: GRPCCallResult](x: Self) {
       
-      @scala.inline
-      def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+      inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     }
   }
   

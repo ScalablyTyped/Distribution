@@ -21,8 +21,7 @@ trait RestrictedLaunchActivatedEventArgs extends StObject {
 }
 object RestrictedLaunchActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,
     sharedContext: js.Any,
@@ -32,19 +31,14 @@ object RestrictedLaunchActivatedEventArgs {
     __obj.asInstanceOf[RestrictedLaunchActivatedEventArgs]
   }
   
-  @scala.inline
-  implicit class RestrictedLaunchActivatedEventArgsMutableBuilder[Self <: RestrictedLaunchActivatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: RestrictedLaunchActivatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
+    inline def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedContext(value: js.Any): Self = StObject.set(x, "sharedContext", value.asInstanceOf[js.Any])
+    inline def setSharedContext(value: js.Any): Self = StObject.set(x, "sharedContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
+    inline def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
   }
 }

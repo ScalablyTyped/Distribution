@@ -21,20 +21,16 @@ object anon {
   }
   object Aes {
     
-    @scala.inline
-    def apply(Aes: String, ChaCha20: String): Aes = {
+    inline def apply(Aes: String, ChaCha20: String): Aes = {
       val __obj = js.Dynamic.literal(Aes = Aes.asInstanceOf[js.Any], ChaCha20 = ChaCha20.asInstanceOf[js.Any])
       __obj.asInstanceOf[Aes]
     }
     
-    @scala.inline
-    implicit class AesMutableBuilder[Self <: Aes] (val x: Self) extends AnyVal {
+    extension [Self <: Aes](x: Self) {
       
-      @scala.inline
-      def setAes(value: String): Self = StObject.set(x, "Aes", value.asInstanceOf[js.Any])
+      inline def setAes(value: String): Self = StObject.set(x, "Aes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChaCha20(value: String): Self = StObject.set(x, "ChaCha20", value.asInstanceOf[js.Any])
+      inline def setChaCha20(value: String): Self = StObject.set(x, "ChaCha20", value.asInstanceOf[js.Any])
     }
   }
   
@@ -180,8 +176,7 @@ object anon {
   }
   object Apple {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Apple: Double,
       Archive: Double,
       BlackBerry: Double,
@@ -256,215 +251,145 @@ object anon {
       __obj.asInstanceOf[Apple]
     }
     
-    @scala.inline
-    implicit class AppleMutableBuilder[Self <: Apple] (val x: Self) extends AnyVal {
+    extension [Self <: Apple](x: Self) {
       
-      @scala.inline
-      def setApple(value: Double): Self = StObject.set(x, "Apple", value.asInstanceOf[js.Any])
+      inline def setApple(value: Double): Self = StObject.set(x, "Apple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArchive(value: Double): Self = StObject.set(x, "Archive", value.asInstanceOf[js.Any])
+      inline def setArchive(value: Double): Self = StObject.set(x, "Archive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlackBerry(value: Double): Self = StObject.set(x, "BlackBerry", value.asInstanceOf[js.Any])
+      inline def setBlackBerry(value: Double): Self = StObject.set(x, "BlackBerry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBook(value: Double): Self = StObject.set(x, "Book", value.asInstanceOf[js.Any])
+      inline def setBook(value: Double): Self = StObject.set(x, "Book", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCDRom(value: Double): Self = StObject.set(x, "CDRom", value.asInstanceOf[js.Any])
+      inline def setCDRom(value: Double): Self = StObject.set(x, "CDRom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificate(value: Double): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
+      inline def setCertificate(value: Double): Self = StObject.set(x, "Certificate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChecked(value: Double): Self = StObject.set(x, "Checked", value.asInstanceOf[js.Any])
+      inline def setChecked(value: Double): Self = StObject.set(x, "Checked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClipboardReady(value: Double): Self = StObject.set(x, "ClipboardReady", value.asInstanceOf[js.Any])
+      inline def setClipboardReady(value: Double): Self = StObject.set(x, "ClipboardReady", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClock(value: Double): Self = StObject.set(x, "Clock", value.asInstanceOf[js.Any])
+      inline def setClock(value: Double): Self = StObject.set(x, "Clock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfiguration(value: Double): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
+      inline def setConfiguration(value: Double): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsole(value: Double): Self = StObject.set(x, "Console", value.asInstanceOf[js.Any])
+      inline def setConsole(value: Double): Self = StObject.set(x, "Console", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDigicam(value: Double): Self = StObject.set(x, "Digicam", value.asInstanceOf[js.Any])
+      inline def setDigicam(value: Double): Self = StObject.set(x, "Digicam", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisk(value: Double): Self = StObject.set(x, "Disk", value.asInstanceOf[js.Any])
+      inline def setDisk(value: Double): Self = StObject.set(x, "Disk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrive(value: Double): Self = StObject.set(x, "Drive", value.asInstanceOf[js.Any])
+      inline def setDrive(value: Double): Self = StObject.set(x, "Drive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDriveWindows(value: Double): Self = StObject.set(x, "DriveWindows", value.asInstanceOf[js.Any])
+      inline def setDriveWindows(value: Double): Self = StObject.set(x, "DriveWindows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEMail(value: Double): Self = StObject.set(x, "EMail", value.asInstanceOf[js.Any])
+      inline def setEMail(value: Double): Self = StObject.set(x, "EMail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEMailBox(value: Double): Self = StObject.set(x, "EMailBox", value.asInstanceOf[js.Any])
+      inline def setEMailBox(value: Double): Self = StObject.set(x, "EMailBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEMailSearch(value: Double): Self = StObject.set(x, "EMailSearch", value.asInstanceOf[js.Any])
+      inline def setEMailSearch(value: Double): Self = StObject.set(x, "EMailSearch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnergy(value: Double): Self = StObject.set(x, "Energy", value.asInstanceOf[js.Any])
+      inline def setEnergy(value: Double): Self = StObject.set(x, "Energy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnergyCareful(value: Double): Self = StObject.set(x, "EnergyCareful", value.asInstanceOf[js.Any])
+      inline def setEnergyCareful(value: Double): Self = StObject.set(x, "EnergyCareful", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpired(value: Double): Self = StObject.set(x, "Expired", value.asInstanceOf[js.Any])
+      inline def setExpired(value: Double): Self = StObject.set(x, "Expired", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeather(value: Double): Self = StObject.set(x, "Feather", value.asInstanceOf[js.Any])
+      inline def setFeather(value: Double): Self = StObject.set(x, "Feather", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFolder(value: Double): Self = StObject.set(x, "Folder", value.asInstanceOf[js.Any])
+      inline def setFolder(value: Double): Self = StObject.set(x, "Folder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFolderOpen(value: Double): Self = StObject.set(x, "FolderOpen", value.asInstanceOf[js.Any])
+      inline def setFolderOpen(value: Double): Self = StObject.set(x, "FolderOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFolderPackage(value: Double): Self = StObject.set(x, "FolderPackage", value.asInstanceOf[js.Any])
+      inline def setFolderPackage(value: Double): Self = StObject.set(x, "FolderPackage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHome(value: Double): Self = StObject.set(x, "Home", value.asInstanceOf[js.Any])
+      inline def setHome(value: Double): Self = StObject.set(x, "Home", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHomebanking(value: Double): Self = StObject.set(x, "Homebanking", value.asInstanceOf[js.Any])
+      inline def setHomebanking(value: Double): Self = StObject.set(x, "Homebanking", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIRCommunication(value: Double): Self = StObject.set(x, "IRCommunication", value.asInstanceOf[js.Any])
+      inline def setIRCommunication(value: Double): Self = StObject.set(x, "IRCommunication", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentity(value: Double): Self = StObject.set(x, "Identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: Double): Self = StObject.set(x, "Identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfo(value: Double): Self = StObject.set(x, "Info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: Double): Self = StObject.set(x, "Info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: Double): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Double): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setList(value: Double): Self = StObject.set(x, "List", value.asInstanceOf[js.Any])
+      inline def setList(value: Double): Self = StObject.set(x, "List", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockOpen(value: Double): Self = StObject.set(x, "LockOpen", value.asInstanceOf[js.Any])
+      inline def setLockOpen(value: Double): Self = StObject.set(x, "LockOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkedDirectory(value: Double): Self = StObject.set(x, "MarkedDirectory", value.asInstanceOf[js.Any])
+      inline def setMarkedDirectory(value: Double): Self = StObject.set(x, "MarkedDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemory(value: Double): Self = StObject.set(x, "Memory", value.asInstanceOf[js.Any])
+      inline def setMemory(value: Double): Self = StObject.set(x, "Memory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoney(value: Double): Self = StObject.set(x, "Money", value.asInstanceOf[js.Any])
+      inline def setMoney(value: Double): Self = StObject.set(x, "Money", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonitor(value: Double): Self = StObject.set(x, "Monitor", value.asInstanceOf[js.Any])
+      inline def setMonitor(value: Double): Self = StObject.set(x, "Monitor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiKeys(value: Double): Self = StObject.set(x, "MultiKeys", value.asInstanceOf[js.Any])
+      inline def setMultiKeys(value: Double): Self = StObject.set(x, "MultiKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkServer(value: Double): Self = StObject.set(x, "NetworkServer", value.asInstanceOf[js.Any])
+      inline def setNetworkServer(value: Double): Self = StObject.set(x, "NetworkServer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNote(value: Double): Self = StObject.set(x, "Note", value.asInstanceOf[js.Any])
+      inline def setNote(value: Double): Self = StObject.set(x, "Note", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotepad(value: Double): Self = StObject.set(x, "Notepad", value.asInstanceOf[js.Any])
+      inline def setNotepad(value: Double): Self = StObject.set(x, "Notepad", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackage(value: Double): Self = StObject.set(x, "Package", value.asInstanceOf[js.Any])
+      inline def setPackage(value: Double): Self = StObject.set(x, "Package", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaperFlag(value: Double): Self = StObject.set(x, "PaperFlag", value.asInstanceOf[js.Any])
+      inline def setPaperFlag(value: Double): Self = StObject.set(x, "PaperFlag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaperLocked(value: Double): Self = StObject.set(x, "PaperLocked", value.asInstanceOf[js.Any])
+      inline def setPaperLocked(value: Double): Self = StObject.set(x, "PaperLocked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaperNew(value: Double): Self = StObject.set(x, "PaperNew", value.asInstanceOf[js.Any])
+      inline def setPaperNew(value: Double): Self = StObject.set(x, "PaperNew", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaperQ(value: Double): Self = StObject.set(x, "PaperQ", value.asInstanceOf[js.Any])
+      inline def setPaperQ(value: Double): Self = StObject.set(x, "PaperQ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaperReady(value: Double): Self = StObject.set(x, "PaperReady", value.asInstanceOf[js.Any])
+      inline def setPaperReady(value: Double): Self = StObject.set(x, "PaperReady", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParts(value: Double): Self = StObject.set(x, "Parts", value.asInstanceOf[js.Any])
+      inline def setParts(value: Double): Self = StObject.set(x, "Parts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPen(value: Double): Self = StObject.set(x, "Pen", value.asInstanceOf[js.Any])
+      inline def setPen(value: Double): Self = StObject.set(x, "Pen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrinter(value: Double): Self = StObject.set(x, "Printer", value.asInstanceOf[js.Any])
+      inline def setPrinter(value: Double): Self = StObject.set(x, "Printer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgramIcons(value: Double): Self = StObject.set(x, "ProgramIcons", value.asInstanceOf[js.Any])
+      inline def setProgramIcons(value: Double): Self = StObject.set(x, "ProgramIcons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRun(value: Double): Self = StObject.set(x, "Run", value.asInstanceOf[js.Any])
+      inline def setRun(value: Double): Self = StObject.set(x, "Run", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScanner(value: Double): Self = StObject.set(x, "Scanner", value.asInstanceOf[js.Any])
+      inline def setScanner(value: Double): Self = StObject.set(x, "Scanner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScreen(value: Double): Self = StObject.set(x, "Screen", value.asInstanceOf[js.Any])
+      inline def setScreen(value: Double): Self = StObject.set(x, "Screen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettings(value: Double): Self = StObject.set(x, "Settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: Double): Self = StObject.set(x, "Settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStar(value: Double): Self = StObject.set(x, "Star", value.asInstanceOf[js.Any])
+      inline def setStar(value: Double): Self = StObject.set(x, "Star", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTerminalEncrypted(value: Double): Self = StObject.set(x, "TerminalEncrypted", value.asInstanceOf[js.Any])
+      inline def setTerminalEncrypted(value: Double): Self = StObject.set(x, "TerminalEncrypted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnail(value: Double): Self = StObject.set(x, "Thumbnail", value.asInstanceOf[js.Any])
+      inline def setThumbnail(value: Double): Self = StObject.set(x, "Thumbnail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTool(value: Double): Self = StObject.set(x, "Tool", value.asInstanceOf[js.Any])
+      inline def setTool(value: Double): Self = StObject.set(x, "Tool", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrashBin(value: Double): Self = StObject.set(x, "TrashBin", value.asInstanceOf[js.Any])
+      inline def setTrashBin(value: Double): Self = StObject.set(x, "TrashBin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTux(value: Double): Self = StObject.set(x, "Tux", value.asInstanceOf[js.Any])
+      inline def setTux(value: Double): Self = StObject.set(x, "Tux", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserCommunication(value: Double): Self = StObject.set(x, "UserCommunication", value.asInstanceOf[js.Any])
+      inline def setUserCommunication(value: Double): Self = StObject.set(x, "UserCommunication", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserKey(value: Double): Self = StObject.set(x, "UserKey", value.asInstanceOf[js.Any])
+      inline def setUserKey(value: Double): Self = StObject.set(x, "UserKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarning(value: Double): Self = StObject.set(x, "Warning", value.asInstanceOf[js.Any])
+      inline def setWarning(value: Double): Self = StObject.set(x, "Warning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWiki(value: Double): Self = StObject.set(x, "Wiki", value.asInstanceOf[js.Any])
+      inline def setWiki(value: Double): Self = StObject.set(x, "Wiki", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorld(value: Double): Self = StObject.set(x, "World", value.asInstanceOf[js.Any])
+      inline def setWorld(value: Double): Self = StObject.set(x, "World", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorldComputer(value: Double): Self = StObject.set(x, "WorldComputer", value.asInstanceOf[js.Any])
+      inline def setWorldComputer(value: Double): Self = StObject.set(x, "WorldComputer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorldSocket(value: Double): Self = StObject.set(x, "WorldSocket", value.asInstanceOf[js.Any])
+      inline def setWorldSocket(value: Double): Self = StObject.set(x, "WorldSocket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorldStar(value: Double): Self = StObject.set(x, "WorldStar", value.asInstanceOf[js.Any])
+      inline def setWorldStar(value: Double): Self = StObject.set(x, "WorldStar", value.asInstanceOf[js.Any])
     }
   }
   
@@ -480,26 +405,20 @@ object anon {
   }
   object ArcFourVariant {
     
-    @scala.inline
-    def apply(ArcFourVariant: Double, ChaCha20: Double, Null: Double, Salsa20: Double): ArcFourVariant = {
+    inline def apply(ArcFourVariant: Double, ChaCha20: Double, Null: Double, Salsa20: Double): ArcFourVariant = {
       val __obj = js.Dynamic.literal(ArcFourVariant = ArcFourVariant.asInstanceOf[js.Any], ChaCha20 = ChaCha20.asInstanceOf[js.Any], Null = Null.asInstanceOf[js.Any], Salsa20 = Salsa20.asInstanceOf[js.Any])
       __obj.asInstanceOf[ArcFourVariant]
     }
     
-    @scala.inline
-    implicit class ArcFourVariantMutableBuilder[Self <: ArcFourVariant] (val x: Self) extends AnyVal {
+    extension [Self <: ArcFourVariant](x: Self) {
       
-      @scala.inline
-      def setArcFourVariant(value: Double): Self = StObject.set(x, "ArcFourVariant", value.asInstanceOf[js.Any])
+      inline def setArcFourVariant(value: Double): Self = StObject.set(x, "ArcFourVariant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChaCha20(value: Double): Self = StObject.set(x, "ChaCha20", value.asInstanceOf[js.Any])
+      inline def setChaCha20(value: Double): Self = StObject.set(x, "ChaCha20", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNull(value: Double): Self = StObject.set(x, "Null", value.asInstanceOf[js.Any])
+      inline def setNull(value: Double): Self = StObject.set(x, "Null", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSalsa20(value: Double): Self = StObject.set(x, "Salsa20", value.asInstanceOf[js.Any])
+      inline def setSalsa20(value: Double): Self = StObject.set(x, "Salsa20", value.asInstanceOf[js.Any])
     }
   }
   
@@ -511,20 +430,16 @@ object anon {
   }
   object Argon2 {
     
-    @scala.inline
-    def apply(Aes: String, Argon2: String): Argon2 = {
+    inline def apply(Aes: String, Argon2: String): Argon2 = {
       val __obj = js.Dynamic.literal(Aes = Aes.asInstanceOf[js.Any], Argon2 = Argon2.asInstanceOf[js.Any])
       __obj.asInstanceOf[Argon2]
     }
     
-    @scala.inline
-    implicit class Argon2MutableBuilder[Self <: Argon2] (val x: Self) extends AnyVal {
+    extension [Self <: Argon2](x: Self) {
       
-      @scala.inline
-      def setAes(value: String): Self = StObject.set(x, "Aes", value.asInstanceOf[js.Any])
+      inline def setAes(value: String): Self = StObject.set(x, "Aes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgon2(value: String): Self = StObject.set(x, "Argon2", value.asInstanceOf[js.Any])
+      inline def setArgon2(value: String): Self = StObject.set(x, "Argon2", value.asInstanceOf[js.Any])
     }
   }
   
@@ -548,38 +463,28 @@ object anon {
   }
   object BadSignature {
     
-    @scala.inline
-    def apply(): BadSignature = {
+    inline def apply(): BadSignature = {
       val __obj = js.Dynamic.literal(BadSignature = "BadSignature", FileCorrupt = "FileCorrupt", InvalidArg = "InvalidArg", InvalidKey = "InvalidKey", InvalidVersion = "InvalidVersion", MergeError = "MergeError", NotImplemented = "NotImplemented", Unsupported = "Unsupported")
       __obj.asInstanceOf[BadSignature]
     }
     
-    @scala.inline
-    implicit class BadSignatureMutableBuilder[Self <: BadSignature] (val x: Self) extends AnyVal {
+    extension [Self <: BadSignature](x: Self) {
       
-      @scala.inline
-      def setBadSignature(value: typings.kdbxweb.kdbxwebStrings.BadSignature): Self = StObject.set(x, "BadSignature", value.asInstanceOf[js.Any])
+      inline def setBadSignature(value: typings.kdbxweb.kdbxwebStrings.BadSignature): Self = StObject.set(x, "BadSignature", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileCorrupt(value: FileCorrupt): Self = StObject.set(x, "FileCorrupt", value.asInstanceOf[js.Any])
+      inline def setFileCorrupt(value: FileCorrupt): Self = StObject.set(x, "FileCorrupt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidArg(value: InvalidArg): Self = StObject.set(x, "InvalidArg", value.asInstanceOf[js.Any])
+      inline def setInvalidArg(value: InvalidArg): Self = StObject.set(x, "InvalidArg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidKey(value: InvalidKey): Self = StObject.set(x, "InvalidKey", value.asInstanceOf[js.Any])
+      inline def setInvalidKey(value: InvalidKey): Self = StObject.set(x, "InvalidKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidVersion(value: InvalidVersion): Self = StObject.set(x, "InvalidVersion", value.asInstanceOf[js.Any])
+      inline def setInvalidVersion(value: InvalidVersion): Self = StObject.set(x, "InvalidVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMergeError(value: MergeError): Self = StObject.set(x, "MergeError", value.asInstanceOf[js.Any])
+      inline def setMergeError(value: MergeError): Self = StObject.set(x, "MergeError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotImplemented(value: NotImplemented): Self = StObject.set(x, "NotImplemented", value.asInstanceOf[js.Any])
+      inline def setNotImplemented(value: NotImplemented): Self = StObject.set(x, "NotImplemented", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsupported(value: Unsupported): Self = StObject.set(x, "Unsupported", value.asInstanceOf[js.Any])
+      inline def setUnsupported(value: Unsupported): Self = StObject.set(x, "Unsupported", value.asInstanceOf[js.Any])
     }
   }
   
@@ -601,8 +506,7 @@ object anon {
   }
   object Bool {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Bool: Double,
       Bytes: Double,
       Int32: Double,
@@ -615,29 +519,21 @@ object anon {
       __obj.asInstanceOf[Bool]
     }
     
-    @scala.inline
-    implicit class BoolMutableBuilder[Self <: Bool] (val x: Self) extends AnyVal {
+    extension [Self <: Bool](x: Self) {
       
-      @scala.inline
-      def setBool(value: Double): Self = StObject.set(x, "Bool", value.asInstanceOf[js.Any])
+      inline def setBool(value: Double): Self = StObject.set(x, "Bool", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBytes(value: Double): Self = StObject.set(x, "Bytes", value.asInstanceOf[js.Any])
+      inline def setBytes(value: Double): Self = StObject.set(x, "Bytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInt32(value: Double): Self = StObject.set(x, "Int32", value.asInstanceOf[js.Any])
+      inline def setInt32(value: Double): Self = StObject.set(x, "Int32", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInt64(value: Double): Self = StObject.set(x, "Int64", value.asInstanceOf[js.Any])
+      inline def setInt64(value: Double): Self = StObject.set(x, "Int64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setString(value: Double): Self = StObject.set(x, "String", value.asInstanceOf[js.Any])
+      inline def setString(value: Double): Self = StObject.set(x, "String", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUInt32(value: Double): Self = StObject.set(x, "UInt32", value.asInstanceOf[js.Any])
+      inline def setUInt32(value: Double): Self = StObject.set(x, "UInt32", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUInt64(value: Double): Self = StObject.set(x, "UInt64", value.asInstanceOf[js.Any])
+      inline def setUInt64(value: Double): Self = StObject.set(x, "UInt64", value.asInstanceOf[js.Any])
     }
   }
   
@@ -653,26 +549,20 @@ object anon {
   }
   object DefaultSequence {
     
-    @scala.inline
-    def apply(defaultSequence: String, enabled: Boolean, items: KeystrokeSequence, obfuscation: Double): DefaultSequence = {
+    inline def apply(defaultSequence: String, enabled: Boolean, items: KeystrokeSequence, obfuscation: Double): DefaultSequence = {
       val __obj = js.Dynamic.literal(defaultSequence = defaultSequence.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], obfuscation = obfuscation.asInstanceOf[js.Any])
       __obj.asInstanceOf[DefaultSequence]
     }
     
-    @scala.inline
-    implicit class DefaultSequenceMutableBuilder[Self <: DefaultSequence] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultSequence](x: Self) {
       
-      @scala.inline
-      def setDefaultSequence(value: String): Self = StObject.set(x, "defaultSequence", value.asInstanceOf[js.Any])
+      inline def setDefaultSequence(value: String): Self = StObject.set(x, "defaultSequence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItems(value: KeystrokeSequence): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: KeystrokeSequence): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObfuscation(value: Double): Self = StObject.set(x, "obfuscation", value.asInstanceOf[js.Any])
+      inline def setObfuscation(value: Double): Self = StObject.set(x, "obfuscation", value.asInstanceOf[js.Any])
     }
   }
   
@@ -686,23 +576,18 @@ object anon {
   }
   object FileMagic {
     
-    @scala.inline
-    def apply(FileMagic: Double, Sig2Kdb: Double, Sig2Kdbx: Double): FileMagic = {
+    inline def apply(FileMagic: Double, Sig2Kdb: Double, Sig2Kdbx: Double): FileMagic = {
       val __obj = js.Dynamic.literal(FileMagic = FileMagic.asInstanceOf[js.Any], Sig2Kdb = Sig2Kdb.asInstanceOf[js.Any], Sig2Kdbx = Sig2Kdbx.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileMagic]
     }
     
-    @scala.inline
-    implicit class FileMagicMutableBuilder[Self <: FileMagic] (val x: Self) extends AnyVal {
+    extension [Self <: FileMagic](x: Self) {
       
-      @scala.inline
-      def setFileMagic(value: Double): Self = StObject.set(x, "FileMagic", value.asInstanceOf[js.Any])
+      inline def setFileMagic(value: Double): Self = StObject.set(x, "FileMagic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSig2Kdb(value: Double): Self = StObject.set(x, "Sig2Kdb", value.asInstanceOf[js.Any])
+      inline def setSig2Kdb(value: Double): Self = StObject.set(x, "Sig2Kdb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSig2Kdbx(value: Double): Self = StObject.set(x, "Sig2Kdbx", value.asInstanceOf[js.Any])
+      inline def setSig2Kdbx(value: Double): Self = StObject.set(x, "Sig2Kdbx", value.asInstanceOf[js.Any])
     }
   }
   
@@ -714,20 +599,16 @@ object anon {
   }
   object GZip {
     
-    @scala.inline
-    def apply(GZip: Double, None: Double): GZip = {
+    inline def apply(GZip: Double, None: Double): GZip = {
       val __obj = js.Dynamic.literal(GZip = GZip.asInstanceOf[js.Any], None = None.asInstanceOf[js.Any])
       __obj.asInstanceOf[GZip]
     }
     
-    @scala.inline
-    implicit class GZipMutableBuilder[Self <: GZip] (val x: Self) extends AnyVal {
+    extension [Self <: GZip](x: Self) {
       
-      @scala.inline
-      def setGZip(value: Double): Self = StObject.set(x, "GZip", value.asInstanceOf[js.Any])
+      inline def setGZip(value: Double): Self = StObject.set(x, "GZip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNone(value: Double): Self = StObject.set(x, "None", value.asInstanceOf[js.Any])
+      inline def setNone(value: Double): Self = StObject.set(x, "None", value.asInstanceOf[js.Any])
     }
   }
   
@@ -745,8 +626,7 @@ object anon {
   }
   object HistoryMaxItems {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       HistoryMaxItems: Double,
       HistoryMaxSize: Double,
       KeyEncryptionRounds: Double,
@@ -757,23 +637,17 @@ object anon {
       __obj.asInstanceOf[HistoryMaxItems]
     }
     
-    @scala.inline
-    implicit class HistoryMaxItemsMutableBuilder[Self <: HistoryMaxItems] (val x: Self) extends AnyVal {
+    extension [Self <: HistoryMaxItems](x: Self) {
       
-      @scala.inline
-      def setHistoryMaxItems(value: Double): Self = StObject.set(x, "HistoryMaxItems", value.asInstanceOf[js.Any])
+      inline def setHistoryMaxItems(value: Double): Self = StObject.set(x, "HistoryMaxItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHistoryMaxSize(value: Double): Self = StObject.set(x, "HistoryMaxSize", value.asInstanceOf[js.Any])
+      inline def setHistoryMaxSize(value: Double): Self = StObject.set(x, "HistoryMaxSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyEncryptionRounds(value: Double): Self = StObject.set(x, "KeyEncryptionRounds", value.asInstanceOf[js.Any])
+      inline def setKeyEncryptionRounds(value: Double): Self = StObject.set(x, "KeyEncryptionRounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMntncHistoryDays(value: Double): Self = StObject.set(x, "MntncHistoryDays", value.asInstanceOf[js.Any])
+      inline def setMntncHistoryDays(value: Double): Self = StObject.set(x, "MntncHistoryDays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecycleBinName(value: String): Self = StObject.set(x, "RecycleBinName", value.asInstanceOf[js.Any])
+      inline def setRecycleBinName(value: String): Self = StObject.set(x, "RecycleBinName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -785,20 +659,16 @@ object anon {
   }
   object KeystrokeSequence {
     
-    @scala.inline
-    def apply(keystrokeSequence: String, windows: String): KeystrokeSequence = {
+    inline def apply(keystrokeSequence: String, windows: String): KeystrokeSequence = {
       val __obj = js.Dynamic.literal(keystrokeSequence = keystrokeSequence.asInstanceOf[js.Any], windows = windows.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeystrokeSequence]
     }
     
-    @scala.inline
-    implicit class KeystrokeSequenceMutableBuilder[Self <: KeystrokeSequence] (val x: Self) extends AnyVal {
+    extension [Self <: KeystrokeSequence](x: Self) {
       
-      @scala.inline
-      def setKeystrokeSequence(value: String): Self = StObject.set(x, "keystrokeSequence", value.asInstanceOf[js.Any])
+      inline def setKeystrokeSequence(value: String): Self = StObject.set(x, "keystrokeSequence", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWindows(value: String): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
+      inline def setWindows(value: String): Self = StObject.set(x, "windows", value.asInstanceOf[js.Any])
     }
   }
   
@@ -810,20 +680,16 @@ object anon {
   }
   object None {
     
-    @scala.inline
-    def apply(None: Double, UseClipboard: Double): None = {
+    inline def apply(None: Double, UseClipboard: Double): None = {
       val __obj = js.Dynamic.literal(None = None.asInstanceOf[js.Any], UseClipboard = UseClipboard.asInstanceOf[js.Any])
       __obj.asInstanceOf[None]
     }
     
-    @scala.inline
-    implicit class NoneMutableBuilder[Self <: None] (val x: Self) extends AnyVal {
+    extension [Self <: None](x: Self) {
       
-      @scala.inline
-      def setNone(value: Double): Self = StObject.set(x, "None", value.asInstanceOf[js.Any])
+      inline def setNone(value: Double): Self = StObject.set(x, "None", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseClipboard(value: Double): Self = StObject.set(x, "UseClipboard", value.asInstanceOf[js.Any])
+      inline def setUseClipboard(value: Double): Self = StObject.set(x, "UseClipboard", value.asInstanceOf[js.Any])
     }
   }
 }

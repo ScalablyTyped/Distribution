@@ -42,22 +42,14 @@ object mod {
       * @param eventData An optional object which contains additional event data used when creating the
       *     event.
       */
-    @scala.inline
-    def browserTrigger(element: JQuery): Unit = js.Dynamic.global.applyDynamic("browserTrigger")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def browserTrigger(element: JQuery, eventType: String): Unit = (js.Dynamic.global.applyDynamic("browserTrigger")(element.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def browserTrigger(element: JQuery, eventType: String, eventData: IBrowserTriggerEventData): Unit = (js.Dynamic.global.applyDynamic("browserTrigger")(element.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], eventData.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def browserTrigger(element: JQuery, eventType: Unit, eventData: IBrowserTriggerEventData): Unit = (js.Dynamic.global.applyDynamic("browserTrigger")(element.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], eventData.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def browserTrigger(element: Element): Unit = js.Dynamic.global.applyDynamic("browserTrigger")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def browserTrigger(element: Element, eventType: String): Unit = (js.Dynamic.global.applyDynamic("browserTrigger")(element.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def browserTrigger(element: Element, eventType: String, eventData: IBrowserTriggerEventData): Unit = (js.Dynamic.global.applyDynamic("browserTrigger")(element.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], eventData.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def browserTrigger(element: Element, eventType: Unit, eventData: IBrowserTriggerEventData): Unit = (js.Dynamic.global.applyDynamic("browserTrigger")(element.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], eventData.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def browserTrigger(element: JQuery): Unit = js.Dynamic.global.applyDynamic("browserTrigger")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def browserTrigger(element: JQuery, eventType: String): Unit = (js.Dynamic.global.applyDynamic("browserTrigger")(element.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def browserTrigger(element: JQuery, eventType: String, eventData: IBrowserTriggerEventData): Unit = (js.Dynamic.global.applyDynamic("browserTrigger")(element.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], eventData.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def browserTrigger(element: JQuery, eventType: Unit, eventData: IBrowserTriggerEventData): Unit = (js.Dynamic.global.applyDynamic("browserTrigger")(element.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], eventData.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def browserTrigger(element: Element): Unit = js.Dynamic.global.applyDynamic("browserTrigger")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def browserTrigger(element: Element, eventType: String): Unit = (js.Dynamic.global.applyDynamic("browserTrigger")(element.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def browserTrigger(element: Element, eventType: String, eventData: IBrowserTriggerEventData): Unit = (js.Dynamic.global.applyDynamic("browserTrigger")(element.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], eventData.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def browserTrigger(element: Element, eventType: Unit, eventData: IBrowserTriggerEventData): Unit = (js.Dynamic.global.applyDynamic("browserTrigger")(element.asInstanceOf[js.Any], eventType.asInstanceOf[js.Any], eventData.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSGlobal("inject")
     @js.native
@@ -80,17 +72,14 @@ object mod {
     }
     object IAngularStatic {
       
-      @scala.inline
-      def apply(mock: IMockStatic): IAngularStatic = {
+      inline def apply(mock: IMockStatic): IAngularStatic = {
         val __obj = js.Dynamic.literal(mock = mock.asInstanceOf[js.Any])
         __obj.asInstanceOf[IAngularStatic]
       }
       
-      @scala.inline
-      implicit class IAngularStaticMutableBuilder[Self <: IAngularStatic] (val x: Self) extends AnyVal {
+      extension [Self <: IAngularStatic](x: Self) {
         
-        @scala.inline
-        def setMock(value: IMockStatic): Self = StObject.set(x, "mock", value.asInstanceOf[js.Any])
+        inline def setMock(value: IMockStatic): Self = StObject.set(x, "mock", value.asInstanceOf[js.Any])
       }
     }
     
@@ -131,17 +120,14 @@ object mod {
     }
     object IExceptionHandlerProvider {
       
-      @scala.inline
-      def apply($get: js.Any, mode: String => Unit): IExceptionHandlerProvider = {
+      inline def apply($get: js.Any, mode: String => Unit): IExceptionHandlerProvider = {
         val __obj = js.Dynamic.literal($get = $get.asInstanceOf[js.Any], mode = js.Any.fromFunction1(mode))
         __obj.asInstanceOf[IExceptionHandlerProvider]
       }
       
-      @scala.inline
-      implicit class IExceptionHandlerProviderMutableBuilder[Self <: IExceptionHandlerProvider] (val x: Self) extends AnyVal {
+      extension [Self <: IExceptionHandlerProvider](x: Self) {
         
-        @scala.inline
-        def setMode(value: String => Unit): Self = StObject.set(x, "mode", js.Any.fromFunction1(value))
+        inline def setMode(value: String => Unit): Self = StObject.set(x, "mode", js.Any.fromFunction1(value))
       }
     }
     
@@ -608,17 +594,14 @@ object mod {
     }
     object IIntervalService {
       
-      @scala.inline
-      def apply(flush: Double => Double): IIntervalService = {
+      inline def apply(flush: Double => Double): IIntervalService = {
         val __obj = js.Dynamic.literal(flush = js.Any.fromFunction1(flush))
         __obj.asInstanceOf[IIntervalService]
       }
       
-      @scala.inline
-      implicit class IIntervalServiceMutableBuilder[Self <: IIntervalService] (val x: Self) extends AnyVal {
+      extension [Self <: IIntervalService](x: Self) {
         
-        @scala.inline
-        def setFlush(value: Double => Double): Self = StObject.set(x, "flush", js.Any.fromFunction1(value))
+        inline def setFlush(value: Double => Double): Self = StObject.set(x, "flush", js.Any.fromFunction1(value))
       }
     }
     
@@ -628,20 +611,16 @@ object mod {
     }
     object ILogCall {
       
-      @scala.inline
-      def apply(logs: js.Array[String]): ILogCall = {
+      inline def apply(logs: js.Array[String]): ILogCall = {
         val __obj = js.Dynamic.literal(logs = logs.asInstanceOf[js.Any])
         __obj.asInstanceOf[ILogCall]
       }
       
-      @scala.inline
-      implicit class ILogCallMutableBuilder[Self <: ILogCall] (val x: Self) extends AnyVal {
+      extension [Self <: ILogCall](x: Self) {
         
-        @scala.inline
-        def setLogs(value: js.Array[String]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
+        inline def setLogs(value: js.Array[String]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLogsVarargs(value: String*): Self = StObject.set(x, "logs", js.Array(value :_*))
+        inline def setLogsVarargs(value: String*): Self = StObject.set(x, "logs", js.Array(value :_*))
       }
     }
     
@@ -658,20 +637,16 @@ object mod {
     }
     object ILogService {
       
-      @scala.inline
-      def apply(assertEmpty: () => Unit, reset: () => Unit): ILogService = {
+      inline def apply(assertEmpty: () => Unit, reset: () => Unit): ILogService = {
         val __obj = js.Dynamic.literal(assertEmpty = js.Any.fromFunction0(assertEmpty), reset = js.Any.fromFunction0(reset))
         __obj.asInstanceOf[ILogService]
       }
       
-      @scala.inline
-      implicit class ILogServiceMutableBuilder[Self <: ILogService] (val x: Self) extends AnyVal {
+      extension [Self <: ILogService](x: Self) {
         
-        @scala.inline
-        def setAssertEmpty(value: () => Unit): Self = StObject.set(x, "assertEmpty", js.Any.fromFunction0(value))
+        inline def setAssertEmpty(value: () => Unit): Self = StObject.set(x, "assertEmpty", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+        inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       }
     }
     
@@ -769,20 +744,16 @@ object mod {
       }
       object IAnimateService {
         
-        @scala.inline
-        def apply(closeAndFlush: () => Unit, flush: () => Unit): IAnimateService = {
+        inline def apply(closeAndFlush: () => Unit, flush: () => Unit): IAnimateService = {
           val __obj = js.Dynamic.literal(closeAndFlush = js.Any.fromFunction0(closeAndFlush), flush = js.Any.fromFunction0(flush))
           __obj.asInstanceOf[IAnimateService]
         }
         
-        @scala.inline
-        implicit class IAnimateServiceMutableBuilder[Self <: IAnimateService] (val x: Self) extends AnyVal {
+        extension [Self <: IAnimateService](x: Self) {
           
-          @scala.inline
-          def setCloseAndFlush(value: () => Unit): Self = StObject.set(x, "closeAndFlush", js.Any.fromFunction0(value))
+          inline def setCloseAndFlush(value: () => Unit): Self = StObject.set(x, "closeAndFlush", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+          inline def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
         }
       }
     }
@@ -864,83 +835,58 @@ object mod {
       }
       object IBrowserTriggerEventData {
         
-        @scala.inline
-        def apply(): IBrowserTriggerEventData = {
+        inline def apply(): IBrowserTriggerEventData = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[IBrowserTriggerEventData]
         }
         
-        @scala.inline
-        implicit class IBrowserTriggerEventDataMutableBuilder[Self <: IBrowserTriggerEventData] (val x: Self) extends AnyVal {
+        extension [Self <: IBrowserTriggerEventData](x: Self) {
           
-          @scala.inline
-          def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
+          inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setBubblesUndefined: Self = StObject.set(x, "bubbles", js.undefined)
+          inline def setBubblesUndefined: Self = StObject.set(x, "bubbles", js.undefined)
           
-          @scala.inline
-          def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
+          inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCancelableUndefined: Self = StObject.set(x, "cancelable", js.undefined)
+          inline def setCancelableUndefined: Self = StObject.set(x, "cancelable", js.undefined)
           
-          @scala.inline
-          def setCharcode(value: Double): Self = StObject.set(x, "charcode", value.asInstanceOf[js.Any])
+          inline def setCharcode(value: Double): Self = StObject.set(x, "charcode", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCharcodeUndefined: Self = StObject.set(x, "charcode", js.undefined)
+          inline def setCharcodeUndefined: Self = StObject.set(x, "charcode", js.undefined)
           
-          @scala.inline
-          def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+          inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+          inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
           
-          @scala.inline
-          def setElapsedTime(value: Double): Self = StObject.set(x, "elapsedTime", value.asInstanceOf[js.Any])
+          inline def setElapsedTime(value: Double): Self = StObject.set(x, "elapsedTime", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setElapsedTimeUndefined: Self = StObject.set(x, "elapsedTime", js.undefined)
+          inline def setElapsedTimeUndefined: Self = StObject.set(x, "elapsedTime", js.undefined)
           
-          @scala.inline
-          def setKeycode(value: Double): Self = StObject.set(x, "keycode", value.asInstanceOf[js.Any])
+          inline def setKeycode(value: Double): Self = StObject.set(x, "keycode", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setKeycodeUndefined: Self = StObject.set(x, "keycode", js.undefined)
+          inline def setKeycodeUndefined: Self = StObject.set(x, "keycode", js.undefined)
           
-          @scala.inline
-          def setKeys(value: js.Array[ctrl | alt | shift | meta]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+          inline def setKeys(value: js.Array[ctrl | alt | shift | meta]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+          inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
           
-          @scala.inline
-          def setKeysVarargs(value: (ctrl | alt | shift | meta)*): Self = StObject.set(x, "keys", js.Array(value :_*))
+          inline def setKeysVarargs(value: (ctrl | alt | shift | meta)*): Self = StObject.set(x, "keys", js.Array(value :_*))
           
-          @scala.inline
-          def setRelatedTarget(value: Node): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
+          inline def setRelatedTarget(value: Node): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRelatedTargetUndefined: Self = StObject.set(x, "relatedTarget", js.undefined)
+          inline def setRelatedTargetUndefined: Self = StObject.set(x, "relatedTarget", js.undefined)
           
-          @scala.inline
-          def setWhich(value: Double): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
+          inline def setWhich(value: Double): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setWhichUndefined: Self = StObject.set(x, "which", js.undefined)
+          inline def setWhichUndefined: Self = StObject.set(x, "which", js.undefined)
           
-          @scala.inline
-          def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+          inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+          inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
           
-          @scala.inline
-          def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+          inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+          inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
         }
       }
       

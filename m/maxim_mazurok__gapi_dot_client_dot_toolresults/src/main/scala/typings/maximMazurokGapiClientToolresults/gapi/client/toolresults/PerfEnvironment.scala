@@ -14,25 +14,19 @@ trait PerfEnvironment extends StObject {
 }
 object PerfEnvironment {
   
-  @scala.inline
-  def apply(): PerfEnvironment = {
+  inline def apply(): PerfEnvironment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PerfEnvironment]
   }
   
-  @scala.inline
-  implicit class PerfEnvironmentMutableBuilder[Self <: PerfEnvironment] (val x: Self) extends AnyVal {
+  extension [Self <: PerfEnvironment](x: Self) {
     
-    @scala.inline
-    def setCpuInfo(value: CPUInfo): Self = StObject.set(x, "cpuInfo", value.asInstanceOf[js.Any])
+    inline def setCpuInfo(value: CPUInfo): Self = StObject.set(x, "cpuInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpuInfoUndefined: Self = StObject.set(x, "cpuInfo", js.undefined)
+    inline def setCpuInfoUndefined: Self = StObject.set(x, "cpuInfo", js.undefined)
     
-    @scala.inline
-    def setMemoryInfo(value: MemoryInfo): Self = StObject.set(x, "memoryInfo", value.asInstanceOf[js.Any])
+    inline def setMemoryInfo(value: MemoryInfo): Self = StObject.set(x, "memoryInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemoryInfoUndefined: Self = StObject.set(x, "memoryInfo", js.undefined)
+    inline def setMemoryInfoUndefined: Self = StObject.set(x, "memoryInfo", js.undefined)
   }
 }

@@ -23,49 +23,35 @@ trait IBindingDelta extends StObject {
 }
 object IBindingDelta {
   
-  @scala.inline
-  def apply(): IBindingDelta = {
+  inline def apply(): IBindingDelta = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IBindingDelta]
   }
   
-  @scala.inline
-  implicit class IBindingDeltaMutableBuilder[Self <: IBindingDelta] (val x: Self) extends AnyVal {
+  extension [Self <: IBindingDelta](x: Self) {
     
-    @scala.inline
-    def setAction(value: Action): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: Action): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionNull: Self = StObject.set(x, "action", null)
+    inline def setActionNull: Self = StObject.set(x, "action", null)
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setCondition(value: IExpr): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: IExpr): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionNull: Self = StObject.set(x, "condition", null)
+    inline def setConditionNull: Self = StObject.set(x, "condition", null)
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    @scala.inline
-    def setMember(value: String): Self = StObject.set(x, "member", value.asInstanceOf[js.Any])
+    inline def setMember(value: String): Self = StObject.set(x, "member", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberNull: Self = StObject.set(x, "member", null)
+    inline def setMemberNull: Self = StObject.set(x, "member", null)
     
-    @scala.inline
-    def setMemberUndefined: Self = StObject.set(x, "member", js.undefined)
+    inline def setMemberUndefined: Self = StObject.set(x, "member", js.undefined)
     
-    @scala.inline
-    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleNull: Self = StObject.set(x, "role", null)
+    inline def setRoleNull: Self = StObject.set(x, "role", null)
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
   }
 }

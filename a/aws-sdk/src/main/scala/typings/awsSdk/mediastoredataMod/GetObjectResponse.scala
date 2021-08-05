@@ -48,58 +48,41 @@ trait GetObjectResponse extends StObject {
 }
 object GetObjectResponse {
   
-  @scala.inline
-  def apply(StatusCode: statusCode): GetObjectResponse = {
+  inline def apply(StatusCode: statusCode): GetObjectResponse = {
     val __obj = js.Dynamic.literal(StatusCode = StatusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetObjectResponse]
   }
   
-  @scala.inline
-  implicit class GetObjectResponseMutableBuilder[Self <: GetObjectResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetObjectResponse](x: Self) {
     
-    @scala.inline
-    def setBody(value: PayloadBlob): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
+    inline def setBody(value: PayloadBlob): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
     
-    @scala.inline
-    def setCacheControl(value: StringPrimitive): Self = StObject.set(x, "CacheControl", value.asInstanceOf[js.Any])
+    inline def setCacheControl(value: StringPrimitive): Self = StObject.set(x, "CacheControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheControlUndefined: Self = StObject.set(x, "CacheControl", js.undefined)
+    inline def setCacheControlUndefined: Self = StObject.set(x, "CacheControl", js.undefined)
     
-    @scala.inline
-    def setContentLength(value: NonNegativeLong): Self = StObject.set(x, "ContentLength", value.asInstanceOf[js.Any])
+    inline def setContentLength(value: NonNegativeLong): Self = StObject.set(x, "ContentLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentLengthUndefined: Self = StObject.set(x, "ContentLength", js.undefined)
+    inline def setContentLengthUndefined: Self = StObject.set(x, "ContentLength", js.undefined)
     
-    @scala.inline
-    def setContentRange(value: ContentRangePattern): Self = StObject.set(x, "ContentRange", value.asInstanceOf[js.Any])
+    inline def setContentRange(value: ContentRangePattern): Self = StObject.set(x, "ContentRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentRangeUndefined: Self = StObject.set(x, "ContentRange", js.undefined)
+    inline def setContentRangeUndefined: Self = StObject.set(x, "ContentRange", js.undefined)
     
-    @scala.inline
-    def setContentType(value: ContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: ContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
     
-    @scala.inline
-    def setETag(value: ETag): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
+    inline def setETag(value: ETag): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
+    inline def setETagUndefined: Self = StObject.set(x, "ETag", js.undefined)
     
-    @scala.inline
-    def setLastModified(value: TimeStamp): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: TimeStamp): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
+    inline def setLastModifiedUndefined: Self = StObject.set(x, "LastModified", js.undefined)
     
-    @scala.inline
-    def setStatusCode(value: statusCode): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: statusCode): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
   }
 }

@@ -14,25 +14,19 @@ trait ApigatewayOperationMetadataDiagnostic extends StObject {
 }
 object ApigatewayOperationMetadataDiagnostic {
   
-  @scala.inline
-  def apply(): ApigatewayOperationMetadataDiagnostic = {
+  inline def apply(): ApigatewayOperationMetadataDiagnostic = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApigatewayOperationMetadataDiagnostic]
   }
   
-  @scala.inline
-  implicit class ApigatewayOperationMetadataDiagnosticMutableBuilder[Self <: ApigatewayOperationMetadataDiagnostic] (val x: Self) extends AnyVal {
+  extension [Self <: ApigatewayOperationMetadataDiagnostic](x: Self) {
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

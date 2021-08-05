@@ -15,28 +15,21 @@ trait PartialEditorFontSizePick extends StObject {
 }
 object PartialEditorFontSizePick {
   
-  @scala.inline
-  def apply(size: js.UndefOr[Double] & Double): PartialEditorFontSizePick = {
+  inline def apply(size: js.UndefOr[Double] & Double): PartialEditorFontSizePick = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialEditorFontSizePick]
   }
   
-  @scala.inline
-  implicit class PartialEditorFontSizePickMutableBuilder[Self <: PartialEditorFontSizePick] (val x: Self) extends AnyVal {
+  extension [Self <: PartialEditorFontSizePick](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSize(value: js.UndefOr[Double] & Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: js.UndefOr[Double] & Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
+    inline def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlugUndefined: Self = StObject.set(x, "slug", js.undefined)
+    inline def setSlugUndefined: Self = StObject.set(x, "slug", js.undefined)
   }
 }

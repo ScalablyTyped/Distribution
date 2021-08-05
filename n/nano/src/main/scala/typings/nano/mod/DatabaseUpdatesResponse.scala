@@ -16,22 +16,17 @@ trait DatabaseUpdatesResponse extends StObject {
 }
 object DatabaseUpdatesResponse {
   
-  @scala.inline
-  def apply(last_seq: String, results: js.Array[DatabaseUpdatesResultItem]): DatabaseUpdatesResponse = {
+  inline def apply(last_seq: String, results: js.Array[DatabaseUpdatesResultItem]): DatabaseUpdatesResponse = {
     val __obj = js.Dynamic.literal(last_seq = last_seq.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatabaseUpdatesResponse]
   }
   
-  @scala.inline
-  implicit class DatabaseUpdatesResponseMutableBuilder[Self <: DatabaseUpdatesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseUpdatesResponse](x: Self) {
     
-    @scala.inline
-    def setLast_seq(value: String): Self = StObject.set(x, "last_seq", value.asInstanceOf[js.Any])
+    inline def setLast_seq(value: String): Self = StObject.set(x, "last_seq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResults(value: js.Array[DatabaseUpdatesResultItem]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[DatabaseUpdatesResultItem]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsVarargs(value: DatabaseUpdatesResultItem*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: DatabaseUpdatesResultItem*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

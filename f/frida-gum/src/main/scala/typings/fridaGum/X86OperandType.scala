@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait X86OperandType extends StObject
 object X86OperandType {
   
-  @scala.inline
-  def imm: typings.fridaGum.fridaGumStrings.imm = "imm".asInstanceOf[typings.fridaGum.fridaGumStrings.imm]
+  inline def imm: typings.fridaGum.fridaGumStrings.imm = "imm".asInstanceOf[typings.fridaGum.fridaGumStrings.imm]
   
-  @scala.inline
-  def mem: typings.fridaGum.fridaGumStrings.mem = "mem".asInstanceOf[typings.fridaGum.fridaGumStrings.mem]
+  inline def mem: typings.fridaGum.fridaGumStrings.mem = "mem".asInstanceOf[typings.fridaGum.fridaGumStrings.mem]
   
-  @scala.inline
-  def reg: typings.fridaGum.fridaGumStrings.reg = "reg".asInstanceOf[typings.fridaGum.fridaGumStrings.reg]
+  inline def reg: typings.fridaGum.fridaGumStrings.reg = "reg".asInstanceOf[typings.fridaGum.fridaGumStrings.reg]
 }

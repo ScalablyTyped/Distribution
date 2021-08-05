@@ -13,16 +13,13 @@ trait DeleteSlotTypeRequest extends StObject {
 }
 object DeleteSlotTypeRequest {
   
-  @scala.inline
-  def apply(name: SlotTypeName): DeleteSlotTypeRequest = {
+  inline def apply(name: SlotTypeName): DeleteSlotTypeRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSlotTypeRequest]
   }
   
-  @scala.inline
-  implicit class DeleteSlotTypeRequestMutableBuilder[Self <: DeleteSlotTypeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSlotTypeRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: SlotTypeName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: SlotTypeName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

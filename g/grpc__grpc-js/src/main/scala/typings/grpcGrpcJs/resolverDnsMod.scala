@@ -10,8 +10,7 @@ object resolverDnsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def setup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")().asInstanceOf[Unit]
+  inline def setup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")().asInstanceOf[Unit]
   
   trait DnsUrl extends StObject {
     
@@ -21,23 +20,18 @@ object resolverDnsMod {
   }
   object DnsUrl {
     
-    @scala.inline
-    def apply(host: String): DnsUrl = {
+    inline def apply(host: String): DnsUrl = {
       val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any])
       __obj.asInstanceOf[DnsUrl]
     }
     
-    @scala.inline
-    implicit class DnsUrlMutableBuilder[Self <: DnsUrl] (val x: Self) extends AnyVal {
+    extension [Self <: DnsUrl](x: Self) {
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     }
   }
 }

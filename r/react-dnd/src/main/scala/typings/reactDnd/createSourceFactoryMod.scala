@@ -16,8 +16,7 @@ object createSourceFactoryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createSourceFactory[Props, DragObject](spec: DragSourceSpec[Props, DragObject]): js.Function2[/* monitor */ DragSourceMonitor, /* ref */ RefObject[js.Any], Source] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSourceFactory")(spec.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* monitor */ DragSourceMonitor, /* ref */ RefObject[js.Any], Source]]
+  inline def createSourceFactory[Props, DragObject](spec: DragSourceSpec[Props, DragObject]): js.Function2[/* monitor */ DragSourceMonitor, /* ref */ RefObject[js.Any], Source] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSourceFactory")(spec.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* monitor */ DragSourceMonitor, /* ref */ RefObject[js.Any], Source]]
   
   trait Source
     extends StObject
@@ -27,8 +26,7 @@ object createSourceFactoryMod {
   }
   object Source {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       beginDrag: (DragDropMonitor, Identifier) => Unit,
       canDrag: (DragDropMonitor, Identifier) => Boolean,
       endDrag: (DragDropMonitor, Identifier) => Unit,
@@ -39,11 +37,9 @@ object createSourceFactoryMod {
       __obj.asInstanceOf[Source]
     }
     
-    @scala.inline
-    implicit class SourceMutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
+    extension [Self <: Source](x: Self) {
       
-      @scala.inline
-      def setReceiveProps(value: js.Any => Unit): Self = StObject.set(x, "receiveProps", js.Any.fromFunction1(value))
+      inline def setReceiveProps(value: js.Any => Unit): Self = StObject.set(x, "receiveProps", js.Any.fromFunction1(value))
     }
   }
 }

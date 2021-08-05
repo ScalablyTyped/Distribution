@@ -43,14 +43,12 @@ object contextMod {
   trait TooltipStateContextData extends StObject
   object TooltipStateContextData {
     
-    @scala.inline
-    def TooltipStateContextDataHidden(anchor: Null, content: Null, position: js.Tuple2[Null, Null]): typings.nivoTooltip.contextMod.TooltipStateContextDataHidden = {
+    inline def TooltipStateContextDataHidden(anchor: Null, content: Null, position: js.Tuple2[Null, Null]): typings.nivoTooltip.contextMod.TooltipStateContextDataHidden = {
       val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], isVisible = false, position = position.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.nivoTooltip.contextMod.TooltipStateContextDataHidden]
     }
     
-    @scala.inline
-    def TooltipStateContextDataVisible(anchor: TooltipAnchor, content: Element, position: js.Tuple2[Double, Double]): typings.nivoTooltip.contextMod.TooltipStateContextDataVisible = {
+    inline def TooltipStateContextDataVisible(anchor: TooltipAnchor, content: Element, position: js.Tuple2[Double, Double]): typings.nivoTooltip.contextMod.TooltipStateContextDataVisible = {
       val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], isVisible = true, position = position.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.nivoTooltip.contextMod.TooltipStateContextDataVisible]
     }
@@ -70,26 +68,20 @@ object contextMod {
   }
   object TooltipStateContextDataHidden {
     
-    @scala.inline
-    def apply(anchor: Null, content: Null, position: js.Tuple2[Null, Null]): TooltipStateContextDataHidden = {
+    inline def apply(anchor: Null, content: Null, position: js.Tuple2[Null, Null]): TooltipStateContextDataHidden = {
       val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], isVisible = false, position = position.asInstanceOf[js.Any])
       __obj.asInstanceOf[TooltipStateContextDataHidden]
     }
     
-    @scala.inline
-    implicit class TooltipStateContextDataHiddenMutableBuilder[Self <: TooltipStateContextDataHidden] (val x: Self) extends AnyVal {
+    extension [Self <: TooltipStateContextDataHidden](x: Self) {
       
-      @scala.inline
-      def setAnchor(value: Null): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+      inline def setAnchor(value: Null): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent(value: Null): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: Null): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsVisible(value: `false`): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
+      inline def setIsVisible(value: `false`): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: js.Tuple2[Null, Null]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: js.Tuple2[Null, Null]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     }
   }
   
@@ -107,26 +99,20 @@ object contextMod {
   }
   object TooltipStateContextDataVisible {
     
-    @scala.inline
-    def apply(anchor: TooltipAnchor, content: Element, position: js.Tuple2[Double, Double]): TooltipStateContextDataVisible = {
+    inline def apply(anchor: TooltipAnchor, content: Element, position: js.Tuple2[Double, Double]): TooltipStateContextDataVisible = {
       val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], isVisible = true, position = position.asInstanceOf[js.Any])
       __obj.asInstanceOf[TooltipStateContextDataVisible]
     }
     
-    @scala.inline
-    implicit class TooltipStateContextDataVisibleMutableBuilder[Self <: TooltipStateContextDataVisible] (val x: Self) extends AnyVal {
+    extension [Self <: TooltipStateContextDataVisible](x: Self) {
       
-      @scala.inline
-      def setAnchor(value: TooltipAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+      inline def setAnchor(value: TooltipAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContent(value: Element): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: Element): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsVisible(value: `true`): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
+      inline def setIsVisible(value: `true`): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     }
   }
 }

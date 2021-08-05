@@ -28,37 +28,27 @@ trait SliceClickedEventUIParam extends StObject {
 }
 object SliceClickedEventUIParam {
   
-  @scala.inline
-  def apply(): SliceClickedEventUIParam = {
+  inline def apply(): SliceClickedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SliceClickedEventUIParam]
   }
   
-  @scala.inline
-  implicit class SliceClickedEventUIParamMutableBuilder[Self <: SliceClickedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: SliceClickedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setIndex(value: js.Any): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: js.Any): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setSelected(value: js.Any): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: js.Any): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
   }
 }

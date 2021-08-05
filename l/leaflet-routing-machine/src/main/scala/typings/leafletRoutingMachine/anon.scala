@@ -41,8 +41,7 @@ object anon {
   }
   object E {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       E: String,
       Left: String,
       N: String,
@@ -63,53 +62,37 @@ object anon {
       __obj.asInstanceOf[E]
     }
     
-    @scala.inline
-    implicit class EMutableBuilder[Self <: E] (val x: Self) extends AnyVal {
+    extension [Self <: E](x: Self) {
       
-      @scala.inline
-      def setE(value: String): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
+      inline def setE(value: String): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: String): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: String): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setN(value: String): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
+      inline def setN(value: String): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNE(value: String): Self = StObject.set(x, "NE", value.asInstanceOf[js.Any])
+      inline def setNE(value: String): Self = StObject.set(x, "NE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNW(value: String): Self = StObject.set(x, "NW", value.asInstanceOf[js.Any])
+      inline def setNW(value: String): Self = StObject.set(x, "NW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: String): Self = StObject.set(x, "Right", value.asInstanceOf[js.Any])
+      inline def setRight(value: String): Self = StObject.set(x, "Right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS(value: String): Self = StObject.set(x, "S", value.asInstanceOf[js.Any])
+      inline def setS(value: String): Self = StObject.set(x, "S", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSE(value: String): Self = StObject.set(x, "SE", value.asInstanceOf[js.Any])
+      inline def setSE(value: String): Self = StObject.set(x, "SE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSW(value: String): Self = StObject.set(x, "SW", value.asInstanceOf[js.Any])
+      inline def setSW(value: String): Self = StObject.set(x, "SW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSharpLeft(value: String): Self = StObject.set(x, "SharpLeft", value.asInstanceOf[js.Any])
+      inline def setSharpLeft(value: String): Self = StObject.set(x, "SharpLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSharpRight(value: String): Self = StObject.set(x, "SharpRight", value.asInstanceOf[js.Any])
+      inline def setSharpRight(value: String): Self = StObject.set(x, "SharpRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlightLeft(value: String): Self = StObject.set(x, "SlightLeft", value.asInstanceOf[js.Any])
+      inline def setSlightLeft(value: String): Self = StObject.set(x, "SlightLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlightRight(value: String): Self = StObject.set(x, "SlightRight", value.asInstanceOf[js.Any])
+      inline def setSlightRight(value: String): Self = StObject.set(x, "SlightRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUturn(value: String): Self = StObject.set(x, "Uturn", value.asInstanceOf[js.Any])
+      inline def setUturn(value: String): Self = StObject.set(x, "Uturn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setW(value: String): Self = StObject.set(x, "W", value.asInstanceOf[js.Any])
+      inline def setW(value: String): Self = StObject.set(x, "W", value.asInstanceOf[js.Any])
     }
   }
   
@@ -123,23 +106,18 @@ object anon {
   }
   object EndPlaceholder {
     
-    @scala.inline
-    def apply(endPlaceholder: String, startPlaceholder: String, viaPlaceholder: String): EndPlaceholder = {
+    inline def apply(endPlaceholder: String, startPlaceholder: String, viaPlaceholder: String): EndPlaceholder = {
       val __obj = js.Dynamic.literal(endPlaceholder = endPlaceholder.asInstanceOf[js.Any], startPlaceholder = startPlaceholder.asInstanceOf[js.Any], viaPlaceholder = viaPlaceholder.asInstanceOf[js.Any])
       __obj.asInstanceOf[EndPlaceholder]
     }
     
-    @scala.inline
-    implicit class EndPlaceholderMutableBuilder[Self <: EndPlaceholder] (val x: Self) extends AnyVal {
+    extension [Self <: EndPlaceholder](x: Self) {
       
-      @scala.inline
-      def setEndPlaceholder(value: String): Self = StObject.set(x, "endPlaceholder", value.asInstanceOf[js.Any])
+      inline def setEndPlaceholder(value: String): Self = StObject.set(x, "endPlaceholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartPlaceholder(value: String): Self = StObject.set(x, "startPlaceholder", value.asInstanceOf[js.Any])
+      inline def setStartPlaceholder(value: String): Self = StObject.set(x, "startPlaceholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViaPlaceholder(value: String): Self = StObject.set(x, "viaPlaceholder", value.asInstanceOf[js.Any])
+      inline def setViaPlaceholder(value: String): Self = StObject.set(x, "viaPlaceholder", value.asInstanceOf[js.Any])
     }
   }
   
@@ -161,8 +139,7 @@ object anon {
   }
   object Hours {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       hours: String,
       kilometers: String,
       meters: String,
@@ -175,29 +152,21 @@ object anon {
       __obj.asInstanceOf[Hours]
     }
     
-    @scala.inline
-    implicit class HoursMutableBuilder[Self <: Hours] (val x: Self) extends AnyVal {
+    extension [Self <: Hours](x: Self) {
       
-      @scala.inline
-      def setHours(value: String): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
+      inline def setHours(value: String): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKilometers(value: String): Self = StObject.set(x, "kilometers", value.asInstanceOf[js.Any])
+      inline def setKilometers(value: String): Self = StObject.set(x, "kilometers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeters(value: String): Self = StObject.set(x, "meters", value.asInstanceOf[js.Any])
+      inline def setMeters(value: String): Self = StObject.set(x, "meters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMiles(value: String): Self = StObject.set(x, "miles", value.asInstanceOf[js.Any])
+      inline def setMiles(value: String): Self = StObject.set(x, "miles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinutes(value: String): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
+      inline def setMinutes(value: String): Self = StObject.set(x, "minutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeconds(value: String): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+      inline def setSeconds(value: String): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYards(value: String): Self = StObject.set(x, "yards", value.asInstanceOf[js.Any])
+      inline def setYards(value: String): Self = StObject.set(x, "yards", value.asInstanceOf[js.Any])
     }
   }
   
@@ -211,26 +180,20 @@ object anon {
   }
   object InputWaypoints {
     
-    @scala.inline
-    def apply(inputWaypoints: Waypoint_, waypoints: Waypoint_): InputWaypoints = {
+    inline def apply(inputWaypoints: Waypoint_, waypoints: Waypoint_): InputWaypoints = {
       val __obj = js.Dynamic.literal(inputWaypoints = inputWaypoints.asInstanceOf[js.Any], waypoints = waypoints.asInstanceOf[js.Any])
       __obj.asInstanceOf[InputWaypoints]
     }
     
-    @scala.inline
-    implicit class InputWaypointsMutableBuilder[Self <: InputWaypoints] (val x: Self) extends AnyVal {
+    extension [Self <: InputWaypoints](x: Self) {
       
-      @scala.inline
-      def setInputWaypoints(value: Waypoint_): Self = StObject.set(x, "inputWaypoints", value.asInstanceOf[js.Any])
+      inline def setInputWaypoints(value: Waypoint_): Self = StObject.set(x, "inputWaypoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+      inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
-      @scala.inline
-      def setWaypoints(value: Waypoint_): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
+      inline def setWaypoints(value: Waypoint_): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
     }
   }
   
@@ -242,20 +205,16 @@ object anon {
   }
   object LegCount {
     
-    @scala.inline
-    def apply(legCount: Double, legIndex: Double): LegCount = {
+    inline def apply(legCount: Double, legIndex: Double): LegCount = {
       val __obj = js.Dynamic.literal(legCount = legCount.asInstanceOf[js.Any], legIndex = legIndex.asInstanceOf[js.Any])
       __obj.asInstanceOf[LegCount]
     }
     
-    @scala.inline
-    implicit class LegCountMutableBuilder[Self <: LegCount] (val x: Self) extends AnyVal {
+    extension [Self <: LegCount](x: Self) {
       
-      @scala.inline
-      def setLegCount(value: Double): Self = StObject.set(x, "legCount", value.asInstanceOf[js.Any])
+      inline def setLegCount(value: Double): Self = StObject.set(x, "legCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLegIndex(value: Double): Self = StObject.set(x, "legIndex", value.asInstanceOf[js.Any])
+      inline def setLegIndex(value: Double): Self = StObject.set(x, "legIndex", value.asInstanceOf[js.Any])
     }
   }
 }

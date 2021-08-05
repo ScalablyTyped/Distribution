@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdOMathFracType extends StObject
 object WdOMathFracType {
   
-  @scala.inline
-  def wdOMathFracBar: `0` = 0.asInstanceOf[`0`]
+  inline def wdOMathFracBar: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdOMathFracLin: `3` = 3.asInstanceOf[`3`]
+  inline def wdOMathFracLin: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdOMathFracNoBar: `1` = 1.asInstanceOf[`1`]
+  inline def wdOMathFracNoBar: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdOMathFracSkw: `2` = 2.asInstanceOf[`2`]
+  inline def wdOMathFracSkw: `2` = 2.asInstanceOf[`2`]
 }

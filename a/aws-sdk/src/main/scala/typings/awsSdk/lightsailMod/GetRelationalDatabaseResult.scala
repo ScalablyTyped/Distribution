@@ -13,19 +13,15 @@ trait GetRelationalDatabaseResult extends StObject {
 }
 object GetRelationalDatabaseResult {
   
-  @scala.inline
-  def apply(): GetRelationalDatabaseResult = {
+  inline def apply(): GetRelationalDatabaseResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetRelationalDatabaseResult]
   }
   
-  @scala.inline
-  implicit class GetRelationalDatabaseResultMutableBuilder[Self <: GetRelationalDatabaseResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetRelationalDatabaseResult](x: Self) {
     
-    @scala.inline
-    def setRelationalDatabase(value: RelationalDatabase): Self = StObject.set(x, "relationalDatabase", value.asInstanceOf[js.Any])
+    inline def setRelationalDatabase(value: RelationalDatabase): Self = StObject.set(x, "relationalDatabase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationalDatabaseUndefined: Self = StObject.set(x, "relationalDatabase", js.undefined)
+    inline def setRelationalDatabaseUndefined: Self = StObject.set(x, "relationalDatabase", js.undefined)
   }
 }

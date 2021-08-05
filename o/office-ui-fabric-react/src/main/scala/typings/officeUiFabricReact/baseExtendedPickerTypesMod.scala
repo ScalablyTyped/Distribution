@@ -30,32 +30,24 @@ object baseExtendedPickerTypesMod {
   }
   object IBaseExtendedPicker {
     
-    @scala.inline
-    def apply[T](focus: () => Unit): IBaseExtendedPicker[T] = {
+    inline def apply[T](focus: () => Unit): IBaseExtendedPicker[T] = {
       val __obj = js.Dynamic.literal(focus = js.Any.fromFunction0(focus))
       __obj.asInstanceOf[IBaseExtendedPicker[T]]
     }
     
-    @scala.inline
-    implicit class IBaseExtendedPickerMutableBuilder[Self <: IBaseExtendedPicker[?], T] (val x: Self & IBaseExtendedPicker[T]) extends AnyVal {
+    extension [Self <: IBaseExtendedPicker[?], T](x: Self & IBaseExtendedPicker[T]) {
       
-      @scala.inline
-      def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+      inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setForceResolve(value: () => Unit): Self = StObject.set(x, "forceResolve", js.Any.fromFunction0(value))
+      inline def setForceResolve(value: () => Unit): Self = StObject.set(x, "forceResolve", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setForceResolveUndefined: Self = StObject.set(x, "forceResolve", js.undefined)
+      inline def setForceResolveUndefined: Self = StObject.set(x, "forceResolve", js.undefined)
       
-      @scala.inline
-      def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[T]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: T*): Self = StObject.set(x, "items", js.Array(value :_*))
     }
   }
   
@@ -177,8 +169,7 @@ object baseExtendedPickerTypesMod {
   }
   object IBaseExtendedPickerProps {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       floatingPickerProps: IBaseFloatingPickerProps[T],
       onRenderFloatingPicker: ComponentType[IBaseFloatingPickerProps[T]],
       onRenderSelectedItems: ComponentType[IBaseSelectedItemsListProps[T]],
@@ -188,140 +179,95 @@ object baseExtendedPickerTypesMod {
       __obj.asInstanceOf[IBaseExtendedPickerProps[T]]
     }
     
-    @scala.inline
-    implicit class IBaseExtendedPickerPropsMutableBuilder[Self <: IBaseExtendedPickerProps[?], T] (val x: Self & IBaseExtendedPickerProps[T]) extends AnyVal {
+    extension [Self <: IBaseExtendedPickerProps[?], T](x: Self & IBaseExtendedPickerProps[T]) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[IBaseExtendedPicker[T]]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[IBaseExtendedPicker[T]]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ IBaseExtendedPicker[T] | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ IBaseExtendedPicker[T] | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setCurrentRenderedQueryString(value: String): Self = StObject.set(x, "currentRenderedQueryString", value.asInstanceOf[js.Any])
+      inline def setCurrentRenderedQueryString(value: String): Self = StObject.set(x, "currentRenderedQueryString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentRenderedQueryStringUndefined: Self = StObject.set(x, "currentRenderedQueryString", js.undefined)
+      inline def setCurrentRenderedQueryStringUndefined: Self = StObject.set(x, "currentRenderedQueryString", js.undefined)
       
-      @scala.inline
-      def setDefaultSelectedItems(value: js.Array[T]): Self = StObject.set(x, "defaultSelectedItems", value.asInstanceOf[js.Any])
+      inline def setDefaultSelectedItems(value: js.Array[T]): Self = StObject.set(x, "defaultSelectedItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSelectedItemsUndefined: Self = StObject.set(x, "defaultSelectedItems", js.undefined)
+      inline def setDefaultSelectedItemsUndefined: Self = StObject.set(x, "defaultSelectedItems", js.undefined)
       
-      @scala.inline
-      def setDefaultSelectedItemsVarargs(value: T*): Self = StObject.set(x, "defaultSelectedItems", js.Array(value :_*))
+      inline def setDefaultSelectedItemsVarargs(value: T*): Self = StObject.set(x, "defaultSelectedItems", js.Array(value :_*))
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setFloatingPickerProps(value: IBaseFloatingPickerProps[T]): Self = StObject.set(x, "floatingPickerProps", value.asInstanceOf[js.Any])
+      inline def setFloatingPickerProps(value: IBaseFloatingPickerProps[T]): Self = StObject.set(x, "floatingPickerProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusZoneProps(value: IFocusZoneProps): Self = StObject.set(x, "focusZoneProps", value.asInstanceOf[js.Any])
+      inline def setFocusZoneProps(value: IFocusZoneProps): Self = StObject.set(x, "focusZoneProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusZonePropsUndefined: Self = StObject.set(x, "focusZoneProps", js.undefined)
+      inline def setFocusZonePropsUndefined: Self = StObject.set(x, "focusZoneProps", js.undefined)
       
-      @scala.inline
-      def setHeaderComponent(value: Element): Self = StObject.set(x, "headerComponent", value.asInstanceOf[js.Any])
+      inline def setHeaderComponent(value: Element): Self = StObject.set(x, "headerComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderComponentUndefined: Self = StObject.set(x, "headerComponent", js.undefined)
+      inline def setHeaderComponentUndefined: Self = StObject.set(x, "headerComponent", js.undefined)
       
-      @scala.inline
-      def setInputProps(value: IInputProps): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
+      inline def setInputProps(value: IInputProps): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
+      inline def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
       
-      @scala.inline
-      def setItemLimit(value: Double): Self = StObject.set(x, "itemLimit", value.asInstanceOf[js.Any])
+      inline def setItemLimit(value: Double): Self = StObject.set(x, "itemLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemLimitUndefined: Self = StObject.set(x, "itemLimit", js.undefined)
+      inline def setItemLimitUndefined: Self = StObject.set(x, "itemLimit", js.undefined)
       
-      @scala.inline
-      def setOnBlur(value: FocusEvent[HTMLInputElement | Autofill] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLInputElement | Autofill] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+      inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* items */ js.UndefOr[js.Array[T]] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* items */ js.UndefOr[js.Array[T]] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnFocus(value: FocusEvent[HTMLInputElement | Autofill] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLInputElement | Autofill] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+      inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      @scala.inline
-      def setOnItemAdded(value: /* addedItem */ T => Unit): Self = StObject.set(x, "onItemAdded", js.Any.fromFunction1(value))
+      inline def setOnItemAdded(value: /* addedItem */ T => Unit): Self = StObject.set(x, "onItemAdded", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnItemAddedUndefined: Self = StObject.set(x, "onItemAdded", js.undefined)
+      inline def setOnItemAddedUndefined: Self = StObject.set(x, "onItemAdded", js.undefined)
       
-      @scala.inline
-      def setOnItemSelected(value: /* selectedItem */ js.UndefOr[T] => T | js.Thenable[T]): Self = StObject.set(x, "onItemSelected", js.Any.fromFunction1(value))
+      inline def setOnItemSelected(value: /* selectedItem */ js.UndefOr[T] => T | js.Thenable[T]): Self = StObject.set(x, "onItemSelected", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnItemSelectedUndefined: Self = StObject.set(x, "onItemSelected", js.undefined)
+      inline def setOnItemSelectedUndefined: Self = StObject.set(x, "onItemSelected", js.undefined)
       
-      @scala.inline
-      def setOnItemsRemoved(value: /* removedItems */ js.Array[T] => Unit): Self = StObject.set(x, "onItemsRemoved", js.Any.fromFunction1(value))
+      inline def setOnItemsRemoved(value: /* removedItems */ js.Array[T] => Unit): Self = StObject.set(x, "onItemsRemoved", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnItemsRemovedUndefined: Self = StObject.set(x, "onItemsRemoved", js.undefined)
+      inline def setOnItemsRemovedUndefined: Self = StObject.set(x, "onItemsRemoved", js.undefined)
       
-      @scala.inline
-      def setOnPaste(value: /* pastedText */ String => js.Array[T]): Self = StObject.set(x, "onPaste", js.Any.fromFunction1(value))
+      inline def setOnPaste(value: /* pastedText */ String => js.Array[T]): Self = StObject.set(x, "onPaste", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPasteUndefined: Self = StObject.set(x, "onPaste", js.undefined)
+      inline def setOnPasteUndefined: Self = StObject.set(x, "onPaste", js.undefined)
       
-      @scala.inline
-      def setOnRenderFloatingPicker(value: ComponentType[IBaseFloatingPickerProps[T]]): Self = StObject.set(x, "onRenderFloatingPicker", value.asInstanceOf[js.Any])
+      inline def setOnRenderFloatingPicker(value: ComponentType[IBaseFloatingPickerProps[T]]): Self = StObject.set(x, "onRenderFloatingPicker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnRenderSelectedItems(value: ComponentType[IBaseSelectedItemsListProps[T]]): Self = StObject.set(x, "onRenderSelectedItems", value.asInstanceOf[js.Any])
+      inline def setOnRenderSelectedItems(value: ComponentType[IBaseSelectedItemsListProps[T]]): Self = StObject.set(x, "onRenderSelectedItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedItems(value: js.Array[T]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+      inline def setSelectedItems(value: js.Array[T]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedItemsListProps(value: IBaseSelectedItemsListProps[T]): Self = StObject.set(x, "selectedItemsListProps", value.asInstanceOf[js.Any])
+      inline def setSelectedItemsListProps(value: IBaseSelectedItemsListProps[T]): Self = StObject.set(x, "selectedItemsListProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
+      inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
       
-      @scala.inline
-      def setSelectedItemsVarargs(value: T*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
+      inline def setSelectedItemsVarargs(value: T*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
       
-      @scala.inline
-      def setSuggestionItems(value: js.Array[T]): Self = StObject.set(x, "suggestionItems", value.asInstanceOf[js.Any])
+      inline def setSuggestionItems(value: js.Array[T]): Self = StObject.set(x, "suggestionItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuggestionItemsUndefined: Self = StObject.set(x, "suggestionItems", js.undefined)
+      inline def setSuggestionItemsUndefined: Self = StObject.set(x, "suggestionItems", js.undefined)
       
-      @scala.inline
-      def setSuggestionItemsVarargs(value: T*): Self = StObject.set(x, "suggestionItems", js.Array(value :_*))
+      inline def setSuggestionItemsVarargs(value: T*): Self = StObject.set(x, "suggestionItems", js.Array(value :_*))
     }
   }
 }

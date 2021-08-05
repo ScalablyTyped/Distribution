@@ -13,19 +13,15 @@ trait ClearRulesOptions extends StObject {
 }
 object ClearRulesOptions {
   
-  @scala.inline
-  def apply(): ClearRulesOptions = {
+  inline def apply(): ClearRulesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClearRulesOptions]
   }
   
-  @scala.inline
-  implicit class ClearRulesOptionsMutableBuilder[Self <: ClearRulesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ClearRulesOptions](x: Self) {
     
-    @scala.inline
-    def setForwardToReplicas(value: Boolean): Self = StObject.set(x, "forwardToReplicas", value.asInstanceOf[js.Any])
+    inline def setForwardToReplicas(value: Boolean): Self = StObject.set(x, "forwardToReplicas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardToReplicasUndefined: Self = StObject.set(x, "forwardToReplicas", js.undefined)
+    inline def setForwardToReplicasUndefined: Self = StObject.set(x, "forwardToReplicas", js.undefined)
   }
 }

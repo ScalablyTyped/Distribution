@@ -556,20 +556,16 @@ object Dom {
   }
   object Coordinates {
     
-    @scala.inline
-    def apply(x: Double, y: Double): Coordinates = {
+    inline def apply(x: Double, y: Double): Coordinates = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[Coordinates]
     }
     
-    @scala.inline
-    implicit class CoordinatesMutableBuilder[Self <: Coordinates] (val x: Self) extends AnyVal {
+    extension [Self <: Coordinates](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -590,20 +586,16 @@ object Dom {
   }
   object Position {
     
-    @scala.inline
-    def apply(left: Double, top: Double): Position = {
+    inline def apply(left: Double, top: Double): Position = {
       val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
       __obj.asInstanceOf[Position]
     }
     
-    @scala.inline
-    implicit class PositionMutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
+    extension [Self <: Position](x: Self) {
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }
   }
   

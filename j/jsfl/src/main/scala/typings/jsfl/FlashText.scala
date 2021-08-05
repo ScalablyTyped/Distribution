@@ -30,8 +30,7 @@ trait FlashText extends StObject {
 }
 object FlashText {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accName: String,
     antiAliasSharpness: Double,
     antiAliasThickness: Double,
@@ -48,40 +47,28 @@ object FlashText {
     __obj.asInstanceOf[FlashText]
   }
   
-  @scala.inline
-  implicit class FlashTextMutableBuilder[Self <: FlashText] (val x: Self) extends AnyVal {
+  extension [Self <: FlashText](x: Self) {
     
-    @scala.inline
-    def setAccName(value: String): Self = StObject.set(x, "accName", value.asInstanceOf[js.Any])
+    inline def setAccName(value: String): Self = StObject.set(x, "accName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAntiAliasSharpness(value: Double): Self = StObject.set(x, "antiAliasSharpness", value.asInstanceOf[js.Any])
+    inline def setAntiAliasSharpness(value: Double): Self = StObject.set(x, "antiAliasSharpness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAntiAliasThickness(value: Double): Self = StObject.set(x, "antiAliasThickness", value.asInstanceOf[js.Any])
+    inline def setAntiAliasThickness(value: Double): Self = StObject.set(x, "antiAliasThickness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoExpand(value: Boolean): Self = StObject.set(x, "autoExpand", value.asInstanceOf[js.Any])
+    inline def setAutoExpand(value: Boolean): Self = StObject.set(x, "autoExpand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorder(value: Boolean): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: Boolean): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbeddedCharacters(value: String): Self = StObject.set(x, "embeddedCharacters", value.asInstanceOf[js.Any])
+    inline def setEmbeddedCharacters(value: String): Self = StObject.set(x, "embeddedCharacters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetTextAttr(value: () => js.Any): Self = StObject.set(x, "getTextAttr", js.Any.fromFunction0(value))
+    inline def setGetTextAttr(value: () => js.Any): Self = StObject.set(x, "getTextAttr", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTextString(value: () => js.Any): Self = StObject.set(x, "getTextString", js.Any.fromFunction0(value))
+    inline def setGetTextString(value: () => js.Any): Self = StObject.set(x, "getTextString", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetTextAttr(value: () => js.Any): Self = StObject.set(x, "setTextAttr", js.Any.fromFunction0(value))
+    inline def setSetTextAttr(value: () => js.Any): Self = StObject.set(x, "setTextAttr", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetTextString(value: () => js.Any): Self = StObject.set(x, "setTextString", js.Any.fromFunction0(value))
+    inline def setSetTextString(value: () => js.Any): Self = StObject.set(x, "setTextString", js.Any.fromFunction0(value))
   }
 }

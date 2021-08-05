@@ -34,32 +34,24 @@ object typesGetBucketNotificationOutputMod {
   }
   object GetBucketNotificationOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): GetBucketNotificationOutput = {
+    inline def apply($metadata: ResponseMetadata): GetBucketNotificationOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetBucketNotificationOutput]
     }
     
-    @scala.inline
-    implicit class GetBucketNotificationOutputMutableBuilder[Self <: GetBucketNotificationOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetBucketNotificationOutput](x: Self) {
       
-      @scala.inline
-      def setCloudFunctionConfiguration(value: UnmarshalledCloudFunctionConfiguration): Self = StObject.set(x, "CloudFunctionConfiguration", value.asInstanceOf[js.Any])
+      inline def setCloudFunctionConfiguration(value: UnmarshalledCloudFunctionConfiguration): Self = StObject.set(x, "CloudFunctionConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloudFunctionConfigurationUndefined: Self = StObject.set(x, "CloudFunctionConfiguration", js.undefined)
+      inline def setCloudFunctionConfigurationUndefined: Self = StObject.set(x, "CloudFunctionConfiguration", js.undefined)
       
-      @scala.inline
-      def setQueueConfiguration(value: UnmarshalledQueueConfigurationDeprecated): Self = StObject.set(x, "QueueConfiguration", value.asInstanceOf[js.Any])
+      inline def setQueueConfiguration(value: UnmarshalledQueueConfigurationDeprecated): Self = StObject.set(x, "QueueConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueueConfigurationUndefined: Self = StObject.set(x, "QueueConfiguration", js.undefined)
+      inline def setQueueConfigurationUndefined: Self = StObject.set(x, "QueueConfiguration", js.undefined)
       
-      @scala.inline
-      def setTopicConfiguration(value: UnmarshalledTopicConfigurationDeprecated): Self = StObject.set(x, "TopicConfiguration", value.asInstanceOf[js.Any])
+      inline def setTopicConfiguration(value: UnmarshalledTopicConfigurationDeprecated): Self = StObject.set(x, "TopicConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopicConfigurationUndefined: Self = StObject.set(x, "TopicConfiguration", js.undefined)
+      inline def setTopicConfigurationUndefined: Self = StObject.set(x, "TopicConfiguration", js.undefined)
     }
   }
 }

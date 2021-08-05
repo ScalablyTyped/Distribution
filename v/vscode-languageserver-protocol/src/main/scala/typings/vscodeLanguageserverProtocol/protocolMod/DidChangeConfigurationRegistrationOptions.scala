@@ -10,22 +10,17 @@ trait DidChangeConfigurationRegistrationOptions extends StObject {
 }
 object DidChangeConfigurationRegistrationOptions {
   
-  @scala.inline
-  def apply(): DidChangeConfigurationRegistrationOptions = {
+  inline def apply(): DidChangeConfigurationRegistrationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DidChangeConfigurationRegistrationOptions]
   }
   
-  @scala.inline
-  implicit class DidChangeConfigurationRegistrationOptionsMutableBuilder[Self <: DidChangeConfigurationRegistrationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DidChangeConfigurationRegistrationOptions](x: Self) {
     
-    @scala.inline
-    def setSection(value: String | js.Array[String]): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
+    inline def setSection(value: String | js.Array[String]): Self = StObject.set(x, "section", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionUndefined: Self = StObject.set(x, "section", js.undefined)
+    inline def setSectionUndefined: Self = StObject.set(x, "section", js.undefined)
     
-    @scala.inline
-    def setSectionVarargs(value: String*): Self = StObject.set(x, "section", js.Array(value :_*))
+    inline def setSectionVarargs(value: String*): Self = StObject.set(x, "section", js.Array(value :_*))
   }
 }

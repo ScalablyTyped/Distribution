@@ -141,8 +141,7 @@ trait XModel
 }
 object XModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Args: SafeArray[PropertyValue],
     CurrentController: XController,
     CurrentSelection: XInterface,
@@ -169,52 +168,36 @@ object XModel {
     __obj.asInstanceOf[XModel]
   }
   
-  @scala.inline
-  implicit class XModelMutableBuilder[Self <: XModel] (val x: Self) extends AnyVal {
+  extension [Self <: XModel](x: Self) {
     
-    @scala.inline
-    def setArgs(value: SafeArray[PropertyValue]): Self = StObject.set(x, "Args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: SafeArray[PropertyValue]): Self = StObject.set(x, "Args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachResource(value: (String, SeqEquiv[PropertyValue]) => Boolean): Self = StObject.set(x, "attachResource", js.Any.fromFunction2(value))
+    inline def setAttachResource(value: (String, SeqEquiv[PropertyValue]) => Boolean): Self = StObject.set(x, "attachResource", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setConnectController(value: XController => Unit): Self = StObject.set(x, "connectController", js.Any.fromFunction1(value))
+    inline def setConnectController(value: XController => Unit): Self = StObject.set(x, "connectController", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCurrentController(value: XController): Self = StObject.set(x, "CurrentController", value.asInstanceOf[js.Any])
+    inline def setCurrentController(value: XController): Self = StObject.set(x, "CurrentController", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentSelection(value: XInterface): Self = StObject.set(x, "CurrentSelection", value.asInstanceOf[js.Any])
+    inline def setCurrentSelection(value: XInterface): Self = StObject.set(x, "CurrentSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisconnectController(value: XController => Unit): Self = StObject.set(x, "disconnectController", js.Any.fromFunction1(value))
+    inline def setDisconnectController(value: XController => Unit): Self = StObject.set(x, "disconnectController", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetArgs(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "getArgs", js.Any.fromFunction0(value))
+    inline def setGetArgs(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "getArgs", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCurrentController(value: () => XController): Self = StObject.set(x, "getCurrentController", js.Any.fromFunction0(value))
+    inline def setGetCurrentController(value: () => XController): Self = StObject.set(x, "getCurrentController", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCurrentSelection(value: () => XInterface): Self = StObject.set(x, "getCurrentSelection", js.Any.fromFunction0(value))
+    inline def setGetCurrentSelection(value: () => XInterface): Self = StObject.set(x, "getCurrentSelection", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetURL(value: () => String): Self = StObject.set(x, "getURL", js.Any.fromFunction0(value))
+    inline def setGetURL(value: () => String): Self = StObject.set(x, "getURL", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasControllersLocked(value: () => Boolean): Self = StObject.set(x, "hasControllersLocked", js.Any.fromFunction0(value))
+    inline def setHasControllersLocked(value: () => Boolean): Self = StObject.set(x, "hasControllersLocked", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLockControllers(value: () => Unit): Self = StObject.set(x, "lockControllers", js.Any.fromFunction0(value))
+    inline def setLockControllers(value: () => Unit): Self = StObject.set(x, "lockControllers", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetCurrentController(value: XController => Unit): Self = StObject.set(x, "setCurrentController", js.Any.fromFunction1(value))
+    inline def setSetCurrentController(value: XController => Unit): Self = StObject.set(x, "setCurrentController", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+    inline def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnlockControllers(value: () => Unit): Self = StObject.set(x, "unlockControllers", js.Any.fromFunction0(value))
+    inline def setUnlockControllers(value: () => Unit): Self = StObject.set(x, "unlockControllers", js.Any.fromFunction0(value))
   }
 }

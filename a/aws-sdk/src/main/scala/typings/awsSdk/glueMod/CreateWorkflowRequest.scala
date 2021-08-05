@@ -33,40 +33,29 @@ trait CreateWorkflowRequest extends StObject {
 }
 object CreateWorkflowRequest {
   
-  @scala.inline
-  def apply(Name: NameString): CreateWorkflowRequest = {
+  inline def apply(Name: NameString): CreateWorkflowRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateWorkflowRequest]
   }
   
-  @scala.inline
-  implicit class CreateWorkflowRequestMutableBuilder[Self <: CreateWorkflowRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateWorkflowRequest](x: Self) {
     
-    @scala.inline
-    def setDefaultRunProperties(value: WorkflowRunProperties): Self = StObject.set(x, "DefaultRunProperties", value.asInstanceOf[js.Any])
+    inline def setDefaultRunProperties(value: WorkflowRunProperties): Self = StObject.set(x, "DefaultRunProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultRunPropertiesUndefined: Self = StObject.set(x, "DefaultRunProperties", js.undefined)
+    inline def setDefaultRunPropertiesUndefined: Self = StObject.set(x, "DefaultRunProperties", js.undefined)
     
-    @scala.inline
-    def setDescription(value: GenericString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: GenericString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setMaxConcurrentRuns(value: NullableInteger): Self = StObject.set(x, "MaxConcurrentRuns", value.asInstanceOf[js.Any])
+    inline def setMaxConcurrentRuns(value: NullableInteger): Self = StObject.set(x, "MaxConcurrentRuns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxConcurrentRunsUndefined: Self = StObject.set(x, "MaxConcurrentRuns", js.undefined)
+    inline def setMaxConcurrentRunsUndefined: Self = StObject.set(x, "MaxConcurrentRuns", js.undefined)
     
-    @scala.inline
-    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagsMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagsMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

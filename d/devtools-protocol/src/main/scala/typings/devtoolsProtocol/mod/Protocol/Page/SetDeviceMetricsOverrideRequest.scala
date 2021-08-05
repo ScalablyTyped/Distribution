@@ -71,73 +71,51 @@ trait SetDeviceMetricsOverrideRequest extends StObject {
 }
 object SetDeviceMetricsOverrideRequest {
   
-  @scala.inline
-  def apply(deviceScaleFactor: Double, height: integer, mobile: Boolean, width: integer): SetDeviceMetricsOverrideRequest = {
+  inline def apply(deviceScaleFactor: Double, height: integer, mobile: Boolean, width: integer): SetDeviceMetricsOverrideRequest = {
     val __obj = js.Dynamic.literal(deviceScaleFactor = deviceScaleFactor.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], mobile = mobile.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetDeviceMetricsOverrideRequest]
   }
   
-  @scala.inline
-  implicit class SetDeviceMetricsOverrideRequestMutableBuilder[Self <: SetDeviceMetricsOverrideRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetDeviceMetricsOverrideRequest](x: Self) {
     
-    @scala.inline
-    def setDeviceScaleFactor(value: Double): Self = StObject.set(x, "deviceScaleFactor", value.asInstanceOf[js.Any])
+    inline def setDeviceScaleFactor(value: Double): Self = StObject.set(x, "deviceScaleFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDontSetVisibleSize(value: Boolean): Self = StObject.set(x, "dontSetVisibleSize", value.asInstanceOf[js.Any])
+    inline def setDontSetVisibleSize(value: Boolean): Self = StObject.set(x, "dontSetVisibleSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDontSetVisibleSizeUndefined: Self = StObject.set(x, "dontSetVisibleSize", js.undefined)
+    inline def setDontSetVisibleSizeUndefined: Self = StObject.set(x, "dontSetVisibleSize", js.undefined)
     
-    @scala.inline
-    def setHeight(value: integer): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: integer): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobile(value: Boolean): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
+    inline def setMobile(value: Boolean): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionX(value: integer): Self = StObject.set(x, "positionX", value.asInstanceOf[js.Any])
+    inline def setPositionX(value: integer): Self = StObject.set(x, "positionX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionXUndefined: Self = StObject.set(x, "positionX", js.undefined)
+    inline def setPositionXUndefined: Self = StObject.set(x, "positionX", js.undefined)
     
-    @scala.inline
-    def setPositionY(value: integer): Self = StObject.set(x, "positionY", value.asInstanceOf[js.Any])
+    inline def setPositionY(value: integer): Self = StObject.set(x, "positionY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionYUndefined: Self = StObject.set(x, "positionY", js.undefined)
+    inline def setPositionYUndefined: Self = StObject.set(x, "positionY", js.undefined)
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    @scala.inline
-    def setScreenHeight(value: integer): Self = StObject.set(x, "screenHeight", value.asInstanceOf[js.Any])
+    inline def setScreenHeight(value: integer): Self = StObject.set(x, "screenHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenHeightUndefined: Self = StObject.set(x, "screenHeight", js.undefined)
+    inline def setScreenHeightUndefined: Self = StObject.set(x, "screenHeight", js.undefined)
     
-    @scala.inline
-    def setScreenOrientation(value: ScreenOrientation): Self = StObject.set(x, "screenOrientation", value.asInstanceOf[js.Any])
+    inline def setScreenOrientation(value: ScreenOrientation): Self = StObject.set(x, "screenOrientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenOrientationUndefined: Self = StObject.set(x, "screenOrientation", js.undefined)
+    inline def setScreenOrientationUndefined: Self = StObject.set(x, "screenOrientation", js.undefined)
     
-    @scala.inline
-    def setScreenWidth(value: integer): Self = StObject.set(x, "screenWidth", value.asInstanceOf[js.Any])
+    inline def setScreenWidth(value: integer): Self = StObject.set(x, "screenWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenWidthUndefined: Self = StObject.set(x, "screenWidth", js.undefined)
+    inline def setScreenWidthUndefined: Self = StObject.set(x, "screenWidth", js.undefined)
     
-    @scala.inline
-    def setViewport(value: Viewport): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
+    inline def setViewport(value: Viewport): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewportUndefined: Self = StObject.set(x, "viewport", js.undefined)
+    inline def setViewportUndefined: Self = StObject.set(x, "viewport", js.undefined)
     
-    @scala.inline
-    def setWidth(value: integer): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: integer): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

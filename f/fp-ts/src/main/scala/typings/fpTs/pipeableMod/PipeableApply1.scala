@@ -31,8 +31,7 @@ trait PipeableApply1[F /* <: /* import warning: transforms.QualifyReferences#res
 }
 object PipeableApply1 {
   
-  @scala.inline
-  def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
+  inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
     ap: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ js.Any => js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, (a : A): B> */ /* fab */ js.Any, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, B> */ js.Any
@@ -54,27 +53,23 @@ object PipeableApply1 {
     __obj.asInstanceOf[PipeableApply1[F]]
   }
   
-  @scala.inline
-  implicit class PipeableApply1MutableBuilder[Self <: PipeableApply1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */] (val x: Self & PipeableApply1[F]) extends AnyVal {
+  extension [Self <: PipeableApply1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](x: Self & PipeableApply1[F]) {
     
-    @scala.inline
-    def setAp(
+    inline def setAp(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ js.Any => js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, (a : A): B> */ /* fab */ js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, B> */ js.Any
         ]
     ): Self = StObject.set(x, "ap", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setApFirst(
+    inline def setApFirst(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, B> */ js.Any => js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ /* fa */ js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ js.Any
         ]
     ): Self = StObject.set(x, "apFirst", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setApSecond(
+    inline def setApSecond(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, B> */ js.Any => js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ /* fa */ js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, B> */ js.Any

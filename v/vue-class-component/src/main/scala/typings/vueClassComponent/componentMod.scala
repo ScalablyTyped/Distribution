@@ -18,10 +18,8 @@ object componentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def componentFactory(Component: VueClass[Vue]): VueClass[Vue] = ^.asInstanceOf[js.Dynamic].applyDynamic("componentFactory")(Component.asInstanceOf[js.Any]).asInstanceOf[VueClass[Vue]]
-  @scala.inline
-  def componentFactory(
+  inline def componentFactory(Component: VueClass[Vue]): VueClass[Vue] = ^.asInstanceOf[js.Dynamic].applyDynamic("componentFactory")(Component.asInstanceOf[js.Any]).asInstanceOf[VueClass[Vue]]
+  inline def componentFactory(
     Component: VueClass[Vue],
     options: ComponentOptions[
       Vue, 

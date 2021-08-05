@@ -15,10 +15,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
-  @scala.inline
-  def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  inline def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
   @JSImport("express-fileupload", JSImport.Namespace)
   @js.native
@@ -127,91 +125,64 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAbortOnLimit(value: Boolean): Self = StObject.set(x, "abortOnLimit", value.asInstanceOf[js.Any])
+      inline def setAbortOnLimit(value: Boolean): Self = StObject.set(x, "abortOnLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbortOnLimitUndefined: Self = StObject.set(x, "abortOnLimit", js.undefined)
+      inline def setAbortOnLimitUndefined: Self = StObject.set(x, "abortOnLimit", js.undefined)
       
-      @scala.inline
-      def setCreateParentPath(value: Boolean): Self = StObject.set(x, "createParentPath", value.asInstanceOf[js.Any])
+      inline def setCreateParentPath(value: Boolean): Self = StObject.set(x, "createParentPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateParentPathUndefined: Self = StObject.set(x, "createParentPath", js.undefined)
+      inline def setCreateParentPathUndefined: Self = StObject.set(x, "createParentPath", js.undefined)
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setLimitHandler(value: Boolean | (RequestHandler[ParamsDictionary, js.Any, js.Any, Query])): Self = StObject.set(x, "limitHandler", value.asInstanceOf[js.Any])
+      inline def setLimitHandler(value: Boolean | (RequestHandler[ParamsDictionary, js.Any, js.Any, Query])): Self = StObject.set(x, "limitHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitHandlerFunction3(
+      inline def setLimitHandlerFunction3(
         value: (/* req */ Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "limitHandler", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setLimitHandlerUndefined: Self = StObject.set(x, "limitHandler", js.undefined)
+      inline def setLimitHandlerUndefined: Self = StObject.set(x, "limitHandler", js.undefined)
       
-      @scala.inline
-      def setParseNested(value: Boolean): Self = StObject.set(x, "parseNested", value.asInstanceOf[js.Any])
+      inline def setParseNested(value: Boolean): Self = StObject.set(x, "parseNested", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParseNestedUndefined: Self = StObject.set(x, "parseNested", js.undefined)
+      inline def setParseNestedUndefined: Self = StObject.set(x, "parseNested", js.undefined)
       
-      @scala.inline
-      def setPreserveExtension(value: Boolean | Double): Self = StObject.set(x, "preserveExtension", value.asInstanceOf[js.Any])
+      inline def setPreserveExtension(value: Boolean | Double): Self = StObject.set(x, "preserveExtension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveExtensionUndefined: Self = StObject.set(x, "preserveExtension", js.undefined)
+      inline def setPreserveExtensionUndefined: Self = StObject.set(x, "preserveExtension", js.undefined)
       
-      @scala.inline
-      def setResponseOnLimit(value: String): Self = StObject.set(x, "responseOnLimit", value.asInstanceOf[js.Any])
+      inline def setResponseOnLimit(value: String): Self = StObject.set(x, "responseOnLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseOnLimitUndefined: Self = StObject.set(x, "responseOnLimit", js.undefined)
+      inline def setResponseOnLimitUndefined: Self = StObject.set(x, "responseOnLimit", js.undefined)
       
-      @scala.inline
-      def setSafeFileNames(value: Boolean | RegExp): Self = StObject.set(x, "safeFileNames", value.asInstanceOf[js.Any])
+      inline def setSafeFileNames(value: Boolean | RegExp): Self = StObject.set(x, "safeFileNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSafeFileNamesUndefined: Self = StObject.set(x, "safeFileNames", js.undefined)
+      inline def setSafeFileNamesUndefined: Self = StObject.set(x, "safeFileNames", js.undefined)
       
-      @scala.inline
-      def setTempFileDir(value: String): Self = StObject.set(x, "tempFileDir", value.asInstanceOf[js.Any])
+      inline def setTempFileDir(value: String): Self = StObject.set(x, "tempFileDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTempFileDirUndefined: Self = StObject.set(x, "tempFileDir", js.undefined)
+      inline def setTempFileDirUndefined: Self = StObject.set(x, "tempFileDir", js.undefined)
       
-      @scala.inline
-      def setUploadTimeout(value: Double): Self = StObject.set(x, "uploadTimeout", value.asInstanceOf[js.Any])
+      inline def setUploadTimeout(value: Double): Self = StObject.set(x, "uploadTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadTimeoutUndefined: Self = StObject.set(x, "uploadTimeout", js.undefined)
+      inline def setUploadTimeoutUndefined: Self = StObject.set(x, "uploadTimeout", js.undefined)
       
-      @scala.inline
-      def setUriDecodeFileNames(value: Boolean): Self = StObject.set(x, "uriDecodeFileNames", value.asInstanceOf[js.Any])
+      inline def setUriDecodeFileNames(value: Boolean): Self = StObject.set(x, "uriDecodeFileNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUriDecodeFileNamesUndefined: Self = StObject.set(x, "uriDecodeFileNames", js.undefined)
+      inline def setUriDecodeFileNamesUndefined: Self = StObject.set(x, "uriDecodeFileNames", js.undefined)
       
-      @scala.inline
-      def setUseTempFiles(value: Boolean): Self = StObject.set(x, "useTempFiles", value.asInstanceOf[js.Any])
+      inline def setUseTempFiles(value: Boolean): Self = StObject.set(x, "useTempFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseTempFilesUndefined: Self = StObject.set(x, "useTempFiles", js.undefined)
+      inline def setUseTempFilesUndefined: Self = StObject.set(x, "useTempFiles", js.undefined)
     }
   }
   
@@ -257,20 +228,16 @@ object mod {
       }
       object Request {
         
-        @scala.inline
-        def apply(): typings.expressFileupload.mod.global.Express.Request = {
+        inline def apply(): typings.expressFileupload.mod.global.Express.Request = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[typings.expressFileupload.mod.global.Express.Request]
         }
         
-        @scala.inline
-        implicit class RequestMutableBuilder[Self <: typings.expressFileupload.mod.global.Express.Request] (val x: Self) extends AnyVal {
+        extension [Self <: typings.expressFileupload.mod.global.Express.Request](x: Self) {
           
-          @scala.inline
-          def setFiles(value: FileArray): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+          inline def setFiles(value: FileArray): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+          inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
         }
       }
     }

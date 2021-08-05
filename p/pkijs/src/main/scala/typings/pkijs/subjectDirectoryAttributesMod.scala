@@ -32,13 +32,10 @@ object subjectDirectoryAttributesMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
-    @scala.inline
-    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    inline def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   trait SubjectDirectoryAttributes extends StObject {
@@ -53,8 +50,7 @@ object subjectDirectoryAttributesMod {
   }
   object SubjectDirectoryAttributes {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attributes: js.Array[typings.pkijs.attributeMod.default],
       fromSchema: js.Any => Unit,
       toJSON: () => js.Any,
@@ -64,23 +60,17 @@ object subjectDirectoryAttributesMod {
       __obj.asInstanceOf[SubjectDirectoryAttributes]
     }
     
-    @scala.inline
-    implicit class SubjectDirectoryAttributesMutableBuilder[Self <: SubjectDirectoryAttributes] (val x: Self) extends AnyVal {
+    extension [Self <: SubjectDirectoryAttributes](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: js.Array[typings.pkijs.attributeMod.default]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Array[typings.pkijs.attributeMod.default]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesVarargs(value: typings.pkijs.attributeMod.default*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: typings.pkijs.attributeMod.default*): Self = StObject.set(x, "attributes", js.Array(value :_*))
       
-      @scala.inline
-      def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
+      inline def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
+      inline def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
     }
   }
 }

@@ -41,61 +41,43 @@ trait SchemaComputationTopology extends StObject {
 }
 object SchemaComputationTopology {
   
-  @scala.inline
-  def apply(): SchemaComputationTopology = {
+  inline def apply(): SchemaComputationTopology = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaComputationTopology]
   }
   
-  @scala.inline
-  implicit class SchemaComputationTopologyMutableBuilder[Self <: SchemaComputationTopology] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaComputationTopology](x: Self) {
     
-    @scala.inline
-    def setComputationId(value: String): Self = StObject.set(x, "computationId", value.asInstanceOf[js.Any])
+    inline def setComputationId(value: String): Self = StObject.set(x, "computationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputationIdUndefined: Self = StObject.set(x, "computationId", js.undefined)
+    inline def setComputationIdUndefined: Self = StObject.set(x, "computationId", js.undefined)
     
-    @scala.inline
-    def setInputs(value: js.Array[SchemaStreamLocation]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: js.Array[SchemaStreamLocation]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
+    inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     
-    @scala.inline
-    def setInputsVarargs(value: SchemaStreamLocation*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: SchemaStreamLocation*): Self = StObject.set(x, "inputs", js.Array(value :_*))
     
-    @scala.inline
-    def setKeyRanges(value: js.Array[SchemaKeyRangeLocation]): Self = StObject.set(x, "keyRanges", value.asInstanceOf[js.Any])
+    inline def setKeyRanges(value: js.Array[SchemaKeyRangeLocation]): Self = StObject.set(x, "keyRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyRangesUndefined: Self = StObject.set(x, "keyRanges", js.undefined)
+    inline def setKeyRangesUndefined: Self = StObject.set(x, "keyRanges", js.undefined)
     
-    @scala.inline
-    def setKeyRangesVarargs(value: SchemaKeyRangeLocation*): Self = StObject.set(x, "keyRanges", js.Array(value :_*))
+    inline def setKeyRangesVarargs(value: SchemaKeyRangeLocation*): Self = StObject.set(x, "keyRanges", js.Array(value :_*))
     
-    @scala.inline
-    def setOutputs(value: js.Array[SchemaStreamLocation]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+    inline def setOutputs(value: js.Array[SchemaStreamLocation]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
+    inline def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
     
-    @scala.inline
-    def setOutputsVarargs(value: SchemaStreamLocation*): Self = StObject.set(x, "outputs", js.Array(value :_*))
+    inline def setOutputsVarargs(value: SchemaStreamLocation*): Self = StObject.set(x, "outputs", js.Array(value :_*))
     
-    @scala.inline
-    def setStateFamilies(value: js.Array[SchemaStateFamilyConfig]): Self = StObject.set(x, "stateFamilies", value.asInstanceOf[js.Any])
+    inline def setStateFamilies(value: js.Array[SchemaStateFamilyConfig]): Self = StObject.set(x, "stateFamilies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateFamiliesUndefined: Self = StObject.set(x, "stateFamilies", js.undefined)
+    inline def setStateFamiliesUndefined: Self = StObject.set(x, "stateFamilies", js.undefined)
     
-    @scala.inline
-    def setStateFamiliesVarargs(value: SchemaStateFamilyConfig*): Self = StObject.set(x, "stateFamilies", js.Array(value :_*))
+    inline def setStateFamiliesVarargs(value: SchemaStateFamilyConfig*): Self = StObject.set(x, "stateFamilies", js.Array(value :_*))
     
-    @scala.inline
-    def setSystemStageName(value: String): Self = StObject.set(x, "systemStageName", value.asInstanceOf[js.Any])
+    inline def setSystemStageName(value: String): Self = StObject.set(x, "systemStageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemStageNameUndefined: Self = StObject.set(x, "systemStageName", js.undefined)
+    inline def setSystemStageNameUndefined: Self = StObject.set(x, "systemStageName", js.undefined)
   }
 }

@@ -42,22 +42,17 @@ trait DocumentEvent
 }
 object DocumentEvent {
   
-  @scala.inline
-  def apply(EventName: String, Source: XInterface, Supplement: js.Any, ViewController: XController2): DocumentEvent = {
+  inline def apply(EventName: String, Source: XInterface, Supplement: js.Any, ViewController: XController2): DocumentEvent = {
     val __obj = js.Dynamic.literal(EventName = EventName.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any], Supplement = Supplement.asInstanceOf[js.Any], ViewController = ViewController.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentEvent]
   }
   
-  @scala.inline
-  implicit class DocumentEventMutableBuilder[Self <: DocumentEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentEvent](x: Self) {
     
-    @scala.inline
-    def setEventName(value: String): Self = StObject.set(x, "EventName", value.asInstanceOf[js.Any])
+    inline def setEventName(value: String): Self = StObject.set(x, "EventName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupplement(value: js.Any): Self = StObject.set(x, "Supplement", value.asInstanceOf[js.Any])
+    inline def setSupplement(value: js.Any): Self = StObject.set(x, "Supplement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewController(value: XController2): Self = StObject.set(x, "ViewController", value.asInstanceOf[js.Any])
+    inline def setViewController(value: XController2): Self = StObject.set(x, "ViewController", value.asInstanceOf[js.Any])
   }
 }

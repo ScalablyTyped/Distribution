@@ -16,17 +16,14 @@ object anon {
   }
   object HasError {
     
-    @scala.inline
-    def apply(): HasError = {
+    inline def apply(): HasError = {
       val __obj = js.Dynamic.literal(hasError = true)
       __obj.asInstanceOf[HasError]
     }
     
-    @scala.inline
-    implicit class HasErrorMutableBuilder[Self <: HasError] (val x: Self) extends AnyVal {
+    extension [Self <: HasError](x: Self) {
       
-      @scala.inline
-      def setHasError(value: `true`): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
+      inline def setHasError(value: `true`): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
     }
   }
   
@@ -38,20 +35,16 @@ object anon {
   }
   object HasErrorValue {
     
-    @scala.inline
-    def apply[TValue /* <: ValidatableMapOrArray */](value: TValue): HasErrorValue[TValue] = {
+    inline def apply[TValue /* <: ValidatableMapOrArray */](value: TValue): HasErrorValue[TValue] = {
       val __obj = js.Dynamic.literal(hasError = false, value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[HasErrorValue[TValue]]
     }
     
-    @scala.inline
-    implicit class HasErrorValueMutableBuilder[Self <: HasErrorValue[?], TValue /* <: ValidatableMapOrArray */] (val x: Self & HasErrorValue[TValue]) extends AnyVal {
+    extension [Self <: HasErrorValue[?], TValue /* <: ValidatableMapOrArray */](x: Self & HasErrorValue[TValue]) {
       
-      @scala.inline
-      def setHasError(value: `false`): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
+      inline def setHasError(value: `false`): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: TValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: TValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -63,20 +56,16 @@ object anon {
   }
   object NewValue {
     
-    @scala.inline
-    def apply[TValue](newValue: TValue, oldValue: TValue): NewValue[TValue] = {
+    inline def apply[TValue](newValue: TValue, oldValue: TValue): NewValue[TValue] = {
       val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[NewValue[TValue]]
     }
     
-    @scala.inline
-    implicit class NewValueMutableBuilder[Self <: NewValue[?], TValue] (val x: Self & NewValue[TValue]) extends AnyVal {
+    extension [Self <: NewValue[?], TValue](x: Self & NewValue[TValue]) {
       
-      @scala.inline
-      def setNewValue(value: TValue): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+      inline def setNewValue(value: TValue): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldValue(value: TValue): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+      inline def setOldValue(value: TValue): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     }
   }
   
@@ -90,20 +79,16 @@ object anon {
   }
   object OnReinit {
     
-    @scala.inline
-    def apply(on$Reinit: () => Unit, on$ValidationPass: () => Unit): OnReinit = {
+    inline def apply(on$Reinit: () => Unit, on$ValidationPass: () => Unit): OnReinit = {
       val __obj = js.Dynamic.literal(on$Reinit = js.Any.fromFunction0(on$Reinit), on$ValidationPass = js.Any.fromFunction0(on$ValidationPass))
       __obj.asInstanceOf[OnReinit]
     }
     
-    @scala.inline
-    implicit class OnReinitMutableBuilder[Self <: OnReinit] (val x: Self) extends AnyVal {
+    extension [Self <: OnReinit](x: Self) {
       
-      @scala.inline
-      def setOn$Reinit(value: () => Unit): Self = StObject.set(x, "on$Reinit", js.Any.fromFunction0(value))
+      inline def setOn$Reinit(value: () => Unit): Self = StObject.set(x, "on$Reinit", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOn$ValidationPass(value: () => Unit): Self = StObject.set(x, "on$ValidationPass", js.Any.fromFunction0(value))
+      inline def setOn$ValidationPass(value: () => Unit): Self = StObject.set(x, "on$ValidationPass", js.Any.fromFunction0(value))
     }
   }
   
@@ -115,20 +100,16 @@ object anon {
   }
   object Value {
     
-    @scala.inline
-    def apply[TValue](value: TValue): Value[TValue] = {
+    inline def apply[TValue](value: TValue): Value[TValue] = {
       val __obj = js.Dynamic.literal(hasError = false, value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Value[TValue]]
     }
     
-    @scala.inline
-    implicit class ValueMutableBuilder[Self <: Value[?], TValue] (val x: Self & Value[TValue]) extends AnyVal {
+    extension [Self <: Value[?], TValue](x: Self & Value[TValue]) {
       
-      @scala.inline
-      def setHasError(value: `false`): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
+      inline def setHasError(value: `false`): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: TValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: TValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -140,20 +121,16 @@ object anon {
   }
   object ValueTValue {
     
-    @scala.inline
-    def apply[TValue /* <: ValidatableArray */](value: TValue): ValueTValue[TValue] = {
+    inline def apply[TValue /* <: ValidatableArray */](value: TValue): ValueTValue[TValue] = {
       val __obj = js.Dynamic.literal(hasError = false, value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValueTValue[TValue]]
     }
     
-    @scala.inline
-    implicit class ValueTValueMutableBuilder[Self <: ValueTValue[?], TValue /* <: ValidatableArray */] (val x: Self & ValueTValue[TValue]) extends AnyVal {
+    extension [Self <: ValueTValue[?], TValue /* <: ValidatableArray */](x: Self & ValueTValue[TValue]) {
       
-      @scala.inline
-      def setHasError(value: `false`): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
+      inline def setHasError(value: `false`): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: TValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: TValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

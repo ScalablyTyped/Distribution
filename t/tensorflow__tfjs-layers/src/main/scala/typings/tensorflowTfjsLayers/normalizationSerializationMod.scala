@@ -48,92 +48,64 @@ object normalizationSerializationMod {
   }
   object BatchNormalizationLayerConfig {
     
-    @scala.inline
-    def apply(): BatchNormalizationLayerConfig = {
+    inline def apply(): BatchNormalizationLayerConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BatchNormalizationLayerConfig]
     }
     
-    @scala.inline
-    implicit class BatchNormalizationLayerConfigMutableBuilder[Self <: BatchNormalizationLayerConfig] (val x: Self) extends AnyVal {
+    extension [Self <: BatchNormalizationLayerConfig](x: Self) {
       
-      @scala.inline
-      def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+      inline def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+      inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
       
-      @scala.inline
-      def setBeta_constraint(value: ConstraintSerialization): Self = StObject.set(x, "beta_constraint", value.asInstanceOf[js.Any])
+      inline def setBeta_constraint(value: ConstraintSerialization): Self = StObject.set(x, "beta_constraint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeta_constraintUndefined: Self = StObject.set(x, "beta_constraint", js.undefined)
+      inline def setBeta_constraintUndefined: Self = StObject.set(x, "beta_constraint", js.undefined)
       
-      @scala.inline
-      def setBeta_initializer(value: InitializerSerialization): Self = StObject.set(x, "beta_initializer", value.asInstanceOf[js.Any])
+      inline def setBeta_initializer(value: InitializerSerialization): Self = StObject.set(x, "beta_initializer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeta_initializerUndefined: Self = StObject.set(x, "beta_initializer", js.undefined)
+      inline def setBeta_initializerUndefined: Self = StObject.set(x, "beta_initializer", js.undefined)
       
-      @scala.inline
-      def setBeta_regularizer(value: RegularizerSerialization): Self = StObject.set(x, "beta_regularizer", value.asInstanceOf[js.Any])
+      inline def setBeta_regularizer(value: RegularizerSerialization): Self = StObject.set(x, "beta_regularizer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeta_regularizerUndefined: Self = StObject.set(x, "beta_regularizer", js.undefined)
+      inline def setBeta_regularizerUndefined: Self = StObject.set(x, "beta_regularizer", js.undefined)
       
-      @scala.inline
-      def setCenter(value: Boolean): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+      inline def setCenter(value: Boolean): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+      inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
       
-      @scala.inline
-      def setEpsilon(value: Double): Self = StObject.set(x, "epsilon", value.asInstanceOf[js.Any])
+      inline def setEpsilon(value: Double): Self = StObject.set(x, "epsilon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEpsilonUndefined: Self = StObject.set(x, "epsilon", js.undefined)
+      inline def setEpsilonUndefined: Self = StObject.set(x, "epsilon", js.undefined)
       
-      @scala.inline
-      def setGamma_constraint(value: ConstraintSerialization): Self = StObject.set(x, "gamma_constraint", value.asInstanceOf[js.Any])
+      inline def setGamma_constraint(value: ConstraintSerialization): Self = StObject.set(x, "gamma_constraint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGamma_constraintUndefined: Self = StObject.set(x, "gamma_constraint", js.undefined)
+      inline def setGamma_constraintUndefined: Self = StObject.set(x, "gamma_constraint", js.undefined)
       
-      @scala.inline
-      def setGamma_initializer(value: InitializerSerialization): Self = StObject.set(x, "gamma_initializer", value.asInstanceOf[js.Any])
+      inline def setGamma_initializer(value: InitializerSerialization): Self = StObject.set(x, "gamma_initializer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGamma_initializerUndefined: Self = StObject.set(x, "gamma_initializer", js.undefined)
+      inline def setGamma_initializerUndefined: Self = StObject.set(x, "gamma_initializer", js.undefined)
       
-      @scala.inline
-      def setGamma_regularizer(value: RegularizerSerialization): Self = StObject.set(x, "gamma_regularizer", value.asInstanceOf[js.Any])
+      inline def setGamma_regularizer(value: RegularizerSerialization): Self = StObject.set(x, "gamma_regularizer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGamma_regularizerUndefined: Self = StObject.set(x, "gamma_regularizer", js.undefined)
+      inline def setGamma_regularizerUndefined: Self = StObject.set(x, "gamma_regularizer", js.undefined)
       
-      @scala.inline
-      def setMomentum(value: Double): Self = StObject.set(x, "momentum", value.asInstanceOf[js.Any])
+      inline def setMomentum(value: Double): Self = StObject.set(x, "momentum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMomentumUndefined: Self = StObject.set(x, "momentum", js.undefined)
+      inline def setMomentumUndefined: Self = StObject.set(x, "momentum", js.undefined)
       
-      @scala.inline
-      def setMoving_mean_initializer(value: InitializerSerialization): Self = StObject.set(x, "moving_mean_initializer", value.asInstanceOf[js.Any])
+      inline def setMoving_mean_initializer(value: InitializerSerialization): Self = StObject.set(x, "moving_mean_initializer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoving_mean_initializerUndefined: Self = StObject.set(x, "moving_mean_initializer", js.undefined)
+      inline def setMoving_mean_initializerUndefined: Self = StObject.set(x, "moving_mean_initializer", js.undefined)
       
-      @scala.inline
-      def setMoving_variance_initializer(value: InitializerSerialization): Self = StObject.set(x, "moving_variance_initializer", value.asInstanceOf[js.Any])
+      inline def setMoving_variance_initializer(value: InitializerSerialization): Self = StObject.set(x, "moving_variance_initializer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoving_variance_initializerUndefined: Self = StObject.set(x, "moving_variance_initializer", js.undefined)
+      inline def setMoving_variance_initializerUndefined: Self = StObject.set(x, "moving_variance_initializer", js.undefined)
       
-      @scala.inline
-      def setScale(value: Boolean): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Boolean): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     }
   }
   

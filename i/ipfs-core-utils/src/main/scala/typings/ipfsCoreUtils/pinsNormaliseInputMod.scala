@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object pinsNormaliseInputMod {
   
-  @scala.inline
-  def apply(input: Source): AsyncIterable[Pin] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[AsyncIterable[Pin]]
+  inline def apply(input: Source): AsyncIterable[Pin] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[AsyncIterable[Pin]]
   
   @JSImport("ipfs-core-utils/dist/src/pins/normalise-input", JSImport.Namespace)
   @js.native
@@ -26,26 +25,20 @@ object pinsNormaliseInputMod {
   }
   object Pin {
     
-    @scala.inline
-    def apply(path: String | typings.cids.mod.^, recursive: Boolean): Pin = {
+    inline def apply(path: String | typings.cids.mod.^, recursive: Boolean): Pin = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], recursive = recursive.asInstanceOf[js.Any])
       __obj.asInstanceOf[Pin]
     }
     
-    @scala.inline
-    implicit class PinMutableBuilder[Self <: Pin] (val x: Self) extends AnyVal {
+    extension [Self <: Pin](x: Self) {
       
-      @scala.inline
-      def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setPath(value: String | typings.cids.mod.^): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String | typings.cids.mod.^): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+      inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     }
   }
   
@@ -65,32 +58,24 @@ object pinsNormaliseInputMod {
   }
   object ToPinWithCID {
     
-    @scala.inline
-    def apply(cid: typings.cids.mod.^, path: Unit): ToPinWithCID = {
+    inline def apply(cid: typings.cids.mod.^, path: Unit): ToPinWithCID = {
       val __obj = js.Dynamic.literal(cid = cid.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[ToPinWithCID]
     }
     
-    @scala.inline
-    implicit class ToPinWithCIDMutableBuilder[Self <: ToPinWithCID] (val x: Self) extends AnyVal {
+    extension [Self <: ToPinWithCID](x: Self) {
       
-      @scala.inline
-      def setCid(value: typings.cids.mod.^): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
+      inline def setCid(value: typings.cids.mod.^): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setPath(value: Unit): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: Unit): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+      inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
+      inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
     }
   }
   
@@ -108,8 +93,7 @@ object pinsNormaliseInputMod {
   }
   object ToPinWithPath {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cid: Unit,
       path: String | (InstanceType[
           /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof window.String */ js.Any
@@ -119,30 +103,23 @@ object pinsNormaliseInputMod {
       __obj.asInstanceOf[ToPinWithPath]
     }
     
-    @scala.inline
-    implicit class ToPinWithPathMutableBuilder[Self <: ToPinWithPath] (val x: Self) extends AnyVal {
+    extension [Self <: ToPinWithPath](x: Self) {
       
-      @scala.inline
-      def setCid(value: Unit): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
+      inline def setCid(value: Unit): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setPath(
+      inline def setPath(
         value: String | (InstanceType[
               /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof window.String */ js.Any
             ]) | typings.cids.mod.^
       ): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+      inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
+      inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
     }
   }
 }

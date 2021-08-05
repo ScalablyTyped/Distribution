@@ -17,28 +17,21 @@ trait ReportFooter extends StObject {
 }
 object ReportFooter {
   
-  @scala.inline
-  def apply(): ReportFooter = {
+  inline def apply(): ReportFooter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReportFooter]
   }
   
-  @scala.inline
-  implicit class ReportFooterMutableBuilder[Self <: ReportFooter] (val x: Self) extends AnyVal {
+  extension [Self <: ReportFooter](x: Self) {
     
-    @scala.inline
-    def setMatchingRowCount(value: String): Self = StObject.set(x, "matchingRowCount", value.asInstanceOf[js.Any])
+    inline def setMatchingRowCount(value: String): Self = StObject.set(x, "matchingRowCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchingRowCountUndefined: Self = StObject.set(x, "matchingRowCount", js.undefined)
+    inline def setMatchingRowCountUndefined: Self = StObject.set(x, "matchingRowCount", js.undefined)
     
-    @scala.inline
-    def setWarnings(value: js.Array[ReportWarning]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+    inline def setWarnings(value: js.Array[ReportWarning]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
+    inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
     
-    @scala.inline
-    def setWarningsVarargs(value: ReportWarning*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: ReportWarning*): Self = StObject.set(x, "warnings", js.Array(value :_*))
   }
 }

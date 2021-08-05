@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Provider[T] extends StObject {
   
-  var callback: js.Any = js.native
+  /* private */ var callback: js.Any = js.native
   
   def count(): ICountResult = js.native
   def count(success: js.Function1[/* result */ ICountResult, js.Any]): ICountResult = js.native
@@ -19,14 +19,14 @@ trait Provider[T] extends StObject {
   def expand(params: String*): Provider[T] = js.native
   def expand(params: js.Array[String]): Provider[T] = js.native
   
-  var expandables: js.Any = js.native
+  /* private */ var expandables: js.Any = js.native
   
   def filter(operand1: js.Any): Provider[T] = js.native
   def filter(operand1: js.Any, operand2: js.Any): Provider[T] = js.native
   def filter(operand1: js.Any, operand2: js.Any, operand3: js.Any): Provider[T] = js.native
   def filter(operand1: js.Any, operand2: Unit, operand3: js.Any): Provider[T] = js.native
   
-  var filters: js.Any = js.native
+  /* private */ var filters: js.Any = js.native
   
   def get(key: js.Any): T = js.native
   def get(key: js.Any, success: js.Function1[/* p */ T, Unit]): T = js.native
@@ -51,13 +51,13 @@ trait Provider[T] extends StObject {
   
   def skip(amount: Double): Provider[T] = js.native
   
-  var skipAmount: js.Any = js.native
+  /* private */ var skipAmount: js.Any = js.native
   
-  var sortOrders: js.Any = js.native
+  /* private */ var sortOrders: js.Any = js.native
   
   def take(amount: Double): Provider[T] = js.native
   
-  var takeAmount: js.Any = js.native
+  /* private */ var takeAmount: js.Any = js.native
   
   def transformUrl(transformMethod: js.Function1[/* url */ String, String]): Provider[T] = js.native
   

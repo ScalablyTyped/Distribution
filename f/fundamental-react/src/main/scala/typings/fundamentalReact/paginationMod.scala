@@ -50,92 +50,64 @@ object paginationMod {
   }
   object PaginationProps {
     
-    @scala.inline
-    def apply(itemsTotal: Double, onClick: /* repeated */ js.Any => js.Any): PaginationProps = {
+    inline def apply(itemsTotal: Double, onClick: /* repeated */ js.Any => js.Any): PaginationProps = {
       val __obj = js.Dynamic.literal(itemsTotal = itemsTotal.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick))
       __obj.asInstanceOf[PaginationProps]
     }
     
-    @scala.inline
-    implicit class PaginationPropsMutableBuilder[Self <: PaginationProps] (val x: Self) extends AnyVal {
+    extension [Self <: PaginationProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
+      inline def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
+      inline def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
       
-      @scala.inline
-      def setDisplayTotal(value: Boolean): Self = StObject.set(x, "displayTotal", value.asInstanceOf[js.Any])
+      inline def setDisplayTotal(value: Boolean): Self = StObject.set(x, "displayTotal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayTotalProps(value: js.Any): Self = StObject.set(x, "displayTotalProps", value.asInstanceOf[js.Any])
+      inline def setDisplayTotalProps(value: js.Any): Self = StObject.set(x, "displayTotalProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayTotalPropsUndefined: Self = StObject.set(x, "displayTotalProps", js.undefined)
+      inline def setDisplayTotalPropsUndefined: Self = StObject.set(x, "displayTotalProps", js.undefined)
       
-      @scala.inline
-      def setDisplayTotalUndefined: Self = StObject.set(x, "displayTotal", js.undefined)
+      inline def setDisplayTotalUndefined: Self = StObject.set(x, "displayTotal", js.undefined)
       
-      @scala.inline
-      def setInitialPage(value: Double): Self = StObject.set(x, "initialPage", value.asInstanceOf[js.Any])
+      inline def setInitialPage(value: Double): Self = StObject.set(x, "initialPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialPageUndefined: Self = StObject.set(x, "initialPage", js.undefined)
+      inline def setInitialPageUndefined: Self = StObject.set(x, "initialPage", js.undefined)
       
-      @scala.inline
-      def setItemsPerPage(value: Double): Self = StObject.set(x, "itemsPerPage", value.asInstanceOf[js.Any])
+      inline def setItemsPerPage(value: Double): Self = StObject.set(x, "itemsPerPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsPerPageUndefined: Self = StObject.set(x, "itemsPerPage", js.undefined)
+      inline def setItemsPerPageUndefined: Self = StObject.set(x, "itemsPerPage", js.undefined)
       
-      @scala.inline
-      def setItemsTotal(value: Double): Self = StObject.set(x, "itemsTotal", value.asInstanceOf[js.Any])
+      inline def setItemsTotal(value: Double): Self = StObject.set(x, "itemsTotal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkProps(value: js.Any): Self = StObject.set(x, "linkProps", value.asInstanceOf[js.Any])
+      inline def setLinkProps(value: js.Any): Self = StObject.set(x, "linkProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkPropsUndefined: Self = StObject.set(x, "linkProps", js.undefined)
+      inline def setLinkPropsUndefined: Self = StObject.set(x, "linkProps", js.undefined)
       
-      @scala.inline
-      def setLocalizedText(value: Next): Self = StObject.set(x, "localizedText", value.asInstanceOf[js.Any])
+      inline def setLocalizedText(value: Next): Self = StObject.set(x, "localizedText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalizedTextUndefined: Self = StObject.set(x, "localizedText", js.undefined)
+      inline def setLocalizedTextUndefined: Self = StObject.set(x, "localizedText", js.undefined)
       
-      @scala.inline
-      def setNextProps(value: js.Any): Self = StObject.set(x, "nextProps", value.asInstanceOf[js.Any])
+      inline def setNextProps(value: js.Any): Self = StObject.set(x, "nextProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextPropsUndefined: Self = StObject.set(x, "nextProps", js.undefined)
+      inline def setNextPropsUndefined: Self = StObject.set(x, "nextProps", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPrevProps(value: js.Any): Self = StObject.set(x, "prevProps", value.asInstanceOf[js.Any])
+      inline def setPrevProps(value: js.Any): Self = StObject.set(x, "prevProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevPropsUndefined: Self = StObject.set(x, "prevProps", js.undefined)
+      inline def setPrevPropsUndefined: Self = StObject.set(x, "prevProps", js.undefined)
       
-      @scala.inline
-      def setTotalText(value: String): Self = StObject.set(x, "totalText", value.asInstanceOf[js.Any])
+      inline def setTotalText(value: String): Self = StObject.set(x, "totalText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalTextUndefined: Self = StObject.set(x, "totalText", js.undefined)
+      inline def setTotalTextUndefined: Self = StObject.set(x, "totalText", js.undefined)
       
-      @scala.inline
-      def setVisiblePageTotal(value: Double): Self = StObject.set(x, "visiblePageTotal", value.asInstanceOf[js.Any])
+      inline def setVisiblePageTotal(value: Double): Self = StObject.set(x, "visiblePageTotal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisiblePageTotalUndefined: Self = StObject.set(x, "visiblePageTotal", js.undefined)
+      inline def setVisiblePageTotalUndefined: Self = StObject.set(x, "visiblePageTotal", js.undefined)
     }
   }
 }

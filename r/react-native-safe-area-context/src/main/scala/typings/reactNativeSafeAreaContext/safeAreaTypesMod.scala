@@ -22,17 +22,13 @@ object safeAreaTypesMod {
   trait Edge extends StObject
   object Edge {
     
-    @scala.inline
-    def bottom: typings.reactNativeSafeAreaContext.reactNativeSafeAreaContextStrings.bottom = "bottom".asInstanceOf[typings.reactNativeSafeAreaContext.reactNativeSafeAreaContextStrings.bottom]
+    inline def bottom: typings.reactNativeSafeAreaContext.reactNativeSafeAreaContextStrings.bottom = "bottom".asInstanceOf[typings.reactNativeSafeAreaContext.reactNativeSafeAreaContextStrings.bottom]
     
-    @scala.inline
-    def left: typings.reactNativeSafeAreaContext.reactNativeSafeAreaContextStrings.left = "left".asInstanceOf[typings.reactNativeSafeAreaContext.reactNativeSafeAreaContextStrings.left]
+    inline def left: typings.reactNativeSafeAreaContext.reactNativeSafeAreaContextStrings.left = "left".asInstanceOf[typings.reactNativeSafeAreaContext.reactNativeSafeAreaContextStrings.left]
     
-    @scala.inline
-    def right: typings.reactNativeSafeAreaContext.reactNativeSafeAreaContextStrings.right = "right".asInstanceOf[typings.reactNativeSafeAreaContext.reactNativeSafeAreaContextStrings.right]
+    inline def right: typings.reactNativeSafeAreaContext.reactNativeSafeAreaContextStrings.right = "right".asInstanceOf[typings.reactNativeSafeAreaContext.reactNativeSafeAreaContextStrings.right]
     
-    @scala.inline
-    def top: typings.reactNativeSafeAreaContext.reactNativeSafeAreaContextStrings.top = "top".asInstanceOf[typings.reactNativeSafeAreaContext.reactNativeSafeAreaContextStrings.top]
+    inline def top: typings.reactNativeSafeAreaContext.reactNativeSafeAreaContextStrings.top = "top".asInstanceOf[typings.reactNativeSafeAreaContext.reactNativeSafeAreaContextStrings.top]
   }
   
   trait EdgeInsets extends StObject {
@@ -47,26 +43,20 @@ object safeAreaTypesMod {
   }
   object EdgeInsets {
     
-    @scala.inline
-    def apply(bottom: Double, left: Double, right: Double, top: Double): EdgeInsets = {
+    inline def apply(bottom: Double, left: Double, right: Double, top: Double): EdgeInsets = {
       val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
       __obj.asInstanceOf[EdgeInsets]
     }
     
-    @scala.inline
-    implicit class EdgeInsetsMutableBuilder[Self <: EdgeInsets] (val x: Self) extends AnyVal {
+    extension [Self <: EdgeInsets](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }
   }
   
@@ -82,20 +72,16 @@ object safeAreaTypesMod {
   }
   object Metrics {
     
-    @scala.inline
-    def apply(frame: Rect, insets: EdgeInsets): Metrics = {
+    inline def apply(frame: Rect, insets: EdgeInsets): Metrics = {
       val __obj = js.Dynamic.literal(frame = frame.asInstanceOf[js.Any], insets = insets.asInstanceOf[js.Any])
       __obj.asInstanceOf[Metrics]
     }
     
-    @scala.inline
-    implicit class MetricsMutableBuilder[Self <: Metrics] (val x: Self) extends AnyVal {
+    extension [Self <: Metrics](x: Self) {
       
-      @scala.inline
-      def setFrame(value: Rect): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+      inline def setFrame(value: Rect): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsets(value: EdgeInsets): Self = StObject.set(x, "insets", value.asInstanceOf[js.Any])
+      inline def setInsets(value: EdgeInsets): Self = StObject.set(x, "insets", value.asInstanceOf[js.Any])
     }
   }
   
@@ -109,32 +95,24 @@ object safeAreaTypesMod {
   }
   object NativeSafeAreaProviderProps {
     
-    @scala.inline
-    def apply(onInsetsChange: /* event */ InsetChangedEvent => Unit): NativeSafeAreaProviderProps = {
+    inline def apply(onInsetsChange: /* event */ InsetChangedEvent => Unit): NativeSafeAreaProviderProps = {
       val __obj = js.Dynamic.literal(onInsetsChange = js.Any.fromFunction1(onInsetsChange))
       __obj.asInstanceOf[NativeSafeAreaProviderProps]
     }
     
-    @scala.inline
-    implicit class NativeSafeAreaProviderPropsMutableBuilder[Self <: NativeSafeAreaProviderProps] (val x: Self) extends AnyVal {
+    extension [Self <: NativeSafeAreaProviderProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setOnInsetsChange(value: /* event */ InsetChangedEvent => Unit): Self = StObject.set(x, "onInsetsChange", js.Any.fromFunction1(value))
+      inline def setOnInsetsChange(value: /* event */ InsetChangedEvent => Unit): Self = StObject.set(x, "onInsetsChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -150,35 +128,26 @@ object safeAreaTypesMod {
   }
   object NativeSafeAreaViewProps {
     
-    @scala.inline
-    def apply(): NativeSafeAreaViewProps = {
+    inline def apply(): NativeSafeAreaViewProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NativeSafeAreaViewProps]
     }
     
-    @scala.inline
-    implicit class NativeSafeAreaViewPropsMutableBuilder[Self <: NativeSafeAreaViewProps] (val x: Self) extends AnyVal {
+    extension [Self <: NativeSafeAreaViewProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setEdges(value: js.Array[Edge]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
+      inline def setEdges(value: js.Array[Edge]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdgesUndefined: Self = StObject.set(x, "edges", js.undefined)
+      inline def setEdgesUndefined: Self = StObject.set(x, "edges", js.undefined)
       
-      @scala.inline
-      def setEdgesVarargs(value: Edge*): Self = StObject.set(x, "edges", js.Array(value :_*))
+      inline def setEdgesVarargs(value: Edge*): Self = StObject.set(x, "edges", js.Array(value :_*))
       
-      @scala.inline
-      def setMode(value: padding | margin): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: padding | margin): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     }
   }
   
@@ -194,26 +163,20 @@ object safeAreaTypesMod {
   }
   object Rect {
     
-    @scala.inline
-    def apply(height: Double, width: Double, x: Double, y: Double): Rect = {
+    inline def apply(height: Double, width: Double, x: Double, y: Double): Rect = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[Rect]
     }
     
-    @scala.inline
-    implicit class RectMutableBuilder[Self <: Rect] (val x: Self) extends AnyVal {
+    extension [Self <: Rect](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

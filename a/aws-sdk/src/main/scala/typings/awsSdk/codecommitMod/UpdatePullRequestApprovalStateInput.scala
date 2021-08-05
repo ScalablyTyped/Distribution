@@ -23,22 +23,17 @@ trait UpdatePullRequestApprovalStateInput extends StObject {
 }
 object UpdatePullRequestApprovalStateInput {
   
-  @scala.inline
-  def apply(approvalState: ApprovalState, pullRequestId: PullRequestId, revisionId: RevisionId): UpdatePullRequestApprovalStateInput = {
+  inline def apply(approvalState: ApprovalState, pullRequestId: PullRequestId, revisionId: RevisionId): UpdatePullRequestApprovalStateInput = {
     val __obj = js.Dynamic.literal(approvalState = approvalState.asInstanceOf[js.Any], pullRequestId = pullRequestId.asInstanceOf[js.Any], revisionId = revisionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatePullRequestApprovalStateInput]
   }
   
-  @scala.inline
-  implicit class UpdatePullRequestApprovalStateInputMutableBuilder[Self <: UpdatePullRequestApprovalStateInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdatePullRequestApprovalStateInput](x: Self) {
     
-    @scala.inline
-    def setApprovalState(value: ApprovalState): Self = StObject.set(x, "approvalState", value.asInstanceOf[js.Any])
+    inline def setApprovalState(value: ApprovalState): Self = StObject.set(x, "approvalState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullRequestId(value: PullRequestId): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
+    inline def setPullRequestId(value: PullRequestId): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionId(value: RevisionId): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
+    inline def setRevisionId(value: RevisionId): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
   }
 }

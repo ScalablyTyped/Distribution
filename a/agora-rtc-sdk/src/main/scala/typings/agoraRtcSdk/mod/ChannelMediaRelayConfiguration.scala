@@ -72,8 +72,7 @@ trait ChannelMediaRelayConfiguration extends StObject {
 }
 object ChannelMediaRelayConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     removeDestChannelInfo: String => Unit,
     setDestChannelInfo: (String, js.Any) => Unit,
     setSrcChannelInfo: js.Any => Unit
@@ -82,16 +81,12 @@ object ChannelMediaRelayConfiguration {
     __obj.asInstanceOf[ChannelMediaRelayConfiguration]
   }
   
-  @scala.inline
-  implicit class ChannelMediaRelayConfigurationMutableBuilder[Self <: ChannelMediaRelayConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelMediaRelayConfiguration](x: Self) {
     
-    @scala.inline
-    def setRemoveDestChannelInfo(value: String => Unit): Self = StObject.set(x, "removeDestChannelInfo", js.Any.fromFunction1(value))
+    inline def setRemoveDestChannelInfo(value: String => Unit): Self = StObject.set(x, "removeDestChannelInfo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDestChannelInfo(value: (String, js.Any) => Unit): Self = StObject.set(x, "setDestChannelInfo", js.Any.fromFunction2(value))
+    inline def setSetDestChannelInfo(value: (String, js.Any) => Unit): Self = StObject.set(x, "setDestChannelInfo", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetSrcChannelInfo(value: js.Any => Unit): Self = StObject.set(x, "setSrcChannelInfo", js.Any.fromFunction1(value))
+    inline def setSetSrcChannelInfo(value: js.Any => Unit): Self = StObject.set(x, "setSrcChannelInfo", js.Any.fromFunction1(value))
   }
 }

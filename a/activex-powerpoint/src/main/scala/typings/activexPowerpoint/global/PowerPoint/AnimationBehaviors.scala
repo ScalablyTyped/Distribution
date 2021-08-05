@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.AnimationBehaviors")
 @js.native
-class AnimationBehaviors protected ()
+/* private */ class AnimationBehaviors ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.AnimationBehaviors

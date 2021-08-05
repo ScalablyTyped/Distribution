@@ -31,25 +31,19 @@ trait AnimateTimings extends StObject {
 }
 object AnimateTimings {
   
-  @scala.inline
-  def apply(delay: Double, duration: Double): AnimateTimings = {
+  inline def apply(delay: Double, duration: Double): AnimateTimings = {
     val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], easing = null)
     __obj.asInstanceOf[AnimateTimings]
   }
   
-  @scala.inline
-  implicit class AnimateTimingsMutableBuilder[Self <: AnimateTimings] (val x: Self) extends AnyVal {
+  extension [Self <: AnimateTimings](x: Self) {
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEasingNull: Self = StObject.set(x, "easing", null)
+    inline def setEasingNull: Self = StObject.set(x, "easing", null)
   }
 }

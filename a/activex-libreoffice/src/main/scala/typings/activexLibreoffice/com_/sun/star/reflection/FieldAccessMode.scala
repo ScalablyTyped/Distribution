@@ -22,18 +22,14 @@ object FieldAccessMode {
     * Deprecated. Not used anymore.
     * @deprecated Deprecated
     */
-  @scala.inline
-  def CONST: `3` = 3.asInstanceOf[`3`]
+  inline def CONST: `3` = 3.asInstanceOf[`3`]
   
   /** readable only */
-  @scala.inline
-  def READONLY: `1` = 1.asInstanceOf[`1`]
+  inline def READONLY: `1` = 1.asInstanceOf[`1`]
   
   /** readable and writeable */
-  @scala.inline
-  def READWRITE: `0` = 0.asInstanceOf[`0`]
+  inline def READWRITE: `0` = 0.asInstanceOf[`0`]
   
   /** writeable only */
-  @scala.inline
-  def WRITEONLY: `2` = 2.asInstanceOf[`2`]
+  inline def WRITEONLY: `2` = 2.asInstanceOf[`2`]
 }

@@ -54,67 +54,47 @@ trait MongoClientOptions extends StObject {
 }
 object MongoClientOptions {
   
-  @scala.inline
-  def apply(): MongoClientOptions = {
+  inline def apply(): MongoClientOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MongoClientOptions]
   }
   
-  @scala.inline
-  implicit class MongoClientOptionsMutableBuilder[Self <: MongoClientOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MongoClientOptions](x: Self) {
     
-    @scala.inline
-    def setDb(value: DbCreateOptions): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
+    inline def setDb(value: DbCreateOptions): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbUndefined: Self = StObject.set(x, "db", js.undefined)
+    inline def setDbUndefined: Self = StObject.set(x, "db", js.undefined)
     
-    @scala.inline
-    def setMongos(value: MongosOptions): Self = StObject.set(x, "mongos", value.asInstanceOf[js.Any])
+    inline def setMongos(value: MongosOptions): Self = StObject.set(x, "mongos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMongosUndefined: Self = StObject.set(x, "mongos", js.undefined)
+    inline def setMongosUndefined: Self = StObject.set(x, "mongos", js.undefined)
     
-    @scala.inline
-    def setPoolSize(value: scala.Double): Self = StObject.set(x, "poolSize", value.asInstanceOf[js.Any])
+    inline def setPoolSize(value: scala.Double): Self = StObject.set(x, "poolSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolSizeUndefined: Self = StObject.set(x, "poolSize", js.undefined)
+    inline def setPoolSizeUndefined: Self = StObject.set(x, "poolSize", js.undefined)
     
-    @scala.inline
-    def setPromiseLibrary(value: js.Object): Self = StObject.set(x, "promiseLibrary", value.asInstanceOf[js.Any])
+    inline def setPromiseLibrary(value: js.Object): Self = StObject.set(x, "promiseLibrary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromiseLibraryUndefined: Self = StObject.set(x, "promiseLibrary", js.undefined)
+    inline def setPromiseLibraryUndefined: Self = StObject.set(x, "promiseLibrary", js.undefined)
     
-    @scala.inline
-    def setReplSet(value: ReplSetOptions): Self = StObject.set(x, "replSet", value.asInstanceOf[js.Any])
+    inline def setReplSet(value: ReplSetOptions): Self = StObject.set(x, "replSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplSetUndefined: Self = StObject.set(x, "replSet", js.undefined)
+    inline def setReplSetUndefined: Self = StObject.set(x, "replSet", js.undefined)
     
-    @scala.inline
-    def setServer(value: ServerOptions): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(value: ServerOptions): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+    inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
     
-    @scala.inline
-    def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
+    inline def setSsl(value: Boolean): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslCA(value: Buffer): Self = StObject.set(x, "sslCA", value.asInstanceOf[js.Any])
+    inline def setSslCA(value: Buffer): Self = StObject.set(x, "sslCA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslCAUndefined: Self = StObject.set(x, "sslCA", js.undefined)
+    inline def setSslCAUndefined: Self = StObject.set(x, "sslCA", js.undefined)
     
-    @scala.inline
-    def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
+    inline def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
     
-    @scala.inline
-    def setUri_decode_auth(value: Boolean): Self = StObject.set(x, "uri_decode_auth", value.asInstanceOf[js.Any])
+    inline def setUri_decode_auth(value: Boolean): Self = StObject.set(x, "uri_decode_auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri_decode_authUndefined: Self = StObject.set(x, "uri_decode_auth", js.undefined)
+    inline def setUri_decode_authUndefined: Self = StObject.set(x, "uri_decode_auth", js.undefined)
   }
 }

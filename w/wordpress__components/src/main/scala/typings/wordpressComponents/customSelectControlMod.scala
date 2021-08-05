@@ -37,32 +37,24 @@ object customSelectControlMod {
     }
     object Option {
       
-      @scala.inline
-      def apply(key: String, name: String): Option = {
+      inline def apply(key: String, name: String): Option = {
         val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
         __obj.asInstanceOf[Option]
       }
       
-      @scala.inline
-      implicit class OptionMutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
+      extension [Self <: Option](x: Self) {
         
-        @scala.inline
-        def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+        inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
         
-        @scala.inline
-        def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+        inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+        inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       }
     }
     
@@ -99,47 +91,34 @@ object customSelectControlMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(label: String, options: js.Array[Option]): Props = {
+      inline def apply(label: String, options: js.Array[Option]): Props = {
         val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+        inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
         
-        @scala.inline
-        def setHideLabelFromVision(value: Boolean): Self = StObject.set(x, "hideLabelFromVision", value.asInstanceOf[js.Any])
+        inline def setHideLabelFromVision(value: Boolean): Self = StObject.set(x, "hideLabelFromVision", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHideLabelFromVisionUndefined: Self = StObject.set(x, "hideLabelFromVision", js.undefined)
+        inline def setHideLabelFromVisionUndefined: Self = StObject.set(x, "hideLabelFromVision", js.undefined)
         
-        @scala.inline
-        def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOnChange(value: /* changes */ UseSelectStateChange[Option] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+        inline def setOnChange(value: /* changes */ UseSelectStateChange[Option] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+        inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
         
-        @scala.inline
-        def setOptions(value: js.Array[Option]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+        inline def setOptions(value: js.Array[Option]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOptionsVarargs(value: Option*): Self = StObject.set(x, "options", js.Array(value :_*))
+        inline def setOptionsVarargs(value: Option*): Self = StObject.set(x, "options", js.Array(value :_*))
         
-        @scala.inline
-        def setValue(value: Option): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: Option): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+        inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       }
     }
   }

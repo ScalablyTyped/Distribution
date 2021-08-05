@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NavigationReason extends StObject
 object NavigationReason {
   
-  @scala.inline
-  def down: typings.std.stdStrings.down = "down".asInstanceOf[typings.std.stdStrings.down]
+  inline def down: typings.std.stdStrings.down = "down".asInstanceOf[typings.std.stdStrings.down]
   
-  @scala.inline
-  def left: typings.std.stdStrings.left = "left".asInstanceOf[typings.std.stdStrings.left]
+  inline def left: typings.std.stdStrings.left = "left".asInstanceOf[typings.std.stdStrings.left]
   
-  @scala.inline
-  def right: typings.std.stdStrings.right = "right".asInstanceOf[typings.std.stdStrings.right]
+  inline def right: typings.std.stdStrings.right = "right".asInstanceOf[typings.std.stdStrings.right]
   
-  @scala.inline
-  def up: typings.std.stdStrings.up = "up".asInstanceOf[typings.std.stdStrings.up]
+  inline def up: typings.std.stdStrings.up = "up".asInstanceOf[typings.std.stdStrings.up]
 }

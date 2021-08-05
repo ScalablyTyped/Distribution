@@ -14,25 +14,19 @@ trait SourceSplitOptions extends StObject {
 }
 object SourceSplitOptions {
   
-  @scala.inline
-  def apply(): SourceSplitOptions = {
+  inline def apply(): SourceSplitOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceSplitOptions]
   }
   
-  @scala.inline
-  implicit class SourceSplitOptionsMutableBuilder[Self <: SourceSplitOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SourceSplitOptions](x: Self) {
     
-    @scala.inline
-    def setDesiredBundleSizeBytes(value: String): Self = StObject.set(x, "desiredBundleSizeBytes", value.asInstanceOf[js.Any])
+    inline def setDesiredBundleSizeBytes(value: String): Self = StObject.set(x, "desiredBundleSizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredBundleSizeBytesUndefined: Self = StObject.set(x, "desiredBundleSizeBytes", js.undefined)
+    inline def setDesiredBundleSizeBytesUndefined: Self = StObject.set(x, "desiredBundleSizeBytes", js.undefined)
     
-    @scala.inline
-    def setDesiredShardSizeBytes(value: String): Self = StObject.set(x, "desiredShardSizeBytes", value.asInstanceOf[js.Any])
+    inline def setDesiredShardSizeBytes(value: String): Self = StObject.set(x, "desiredShardSizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredShardSizeBytesUndefined: Self = StObject.set(x, "desiredShardSizeBytes", js.undefined)
+    inline def setDesiredShardSizeBytesUndefined: Self = StObject.set(x, "desiredShardSizeBytes", js.undefined)
   }
 }

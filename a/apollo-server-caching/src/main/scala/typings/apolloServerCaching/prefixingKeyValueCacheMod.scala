@@ -14,8 +14,8 @@ object prefixingKeyValueCacheMod {
        with KeyValueCache[V] {
     def this(wrapped: KeyValueCache[V], prefix: String) = this()
     
-    var prefix: js.Any = js.native
+    /* private */ var prefix: js.Any = js.native
     
-    var wrapped: js.Any = js.native
+    /* private */ var wrapped: js.Any = js.native
   }
 }

@@ -30,18 +30,18 @@ object missingInjectableTransformMod {
       * To ensure forward compatibility, we migrate these empty object literal providers
       * to explicitly use `useValue: undefined`.
       */
-    var _migrateLiteralProviders: js.Any = js.native
+    /* private */ var _migrateLiteralProviders: js.Any = js.native
     
     /**
       * Visits the given resolved value of a provider. Providers can be nested in
       * arrays and we need to recursively walk through the providers to be able to
       * migrate all referenced provider classes. e.g. "providers: [[A, [B]]]".
       */
-    var _visitProviderResolvedValue: js.Any = js.native
+    /* private */ var _visitProviderResolvedValue: js.Any = js.native
     
-    var getUpdateRecorder: js.Any = js.native
+    /* private */ var getUpdateRecorder: js.Any = js.native
     
-    var importManager: js.Any = js.native
+    /* private */ var importManager: js.Any = js.native
     
     /**
       * Migrates a given directive by walking through defined providers. This method
@@ -71,19 +71,19 @@ object missingInjectableTransformMod {
       */
     def migrateProviderClass(node: ClassDeclaration, context: ResolvedNgModule): Unit = js.native
     
-    var printer: js.Any = js.native
+    /* private */ var printer: js.Any = js.native
     
-    var providersEvaluator: js.Any = js.native
+    /* private */ var providersEvaluator: js.Any = js.native
     
     def recordChanges(): Unit = js.native
     
-    var typeChecker: js.Any = js.native
+    /* private */ var typeChecker: js.Any = js.native
     
     /** Set of provider class declarations which were already checked or migrated. */
-    var visitedProviderClasses: js.Any = js.native
+    /* private */ var visitedProviderClasses: js.Any = js.native
     
     /** Set of provider object literals which were already checked or migrated. */
-    var visitedProviderLiterals: js.Any = js.native
+    /* private */ var visitedProviderLiterals: js.Any = js.native
   }
   
   trait AnalysisFailure extends StObject {
@@ -94,20 +94,16 @@ object missingInjectableTransformMod {
   }
   object AnalysisFailure {
     
-    @scala.inline
-    def apply(message: String, node: Node): AnalysisFailure = {
+    inline def apply(message: String, node: Node): AnalysisFailure = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
       __obj.asInstanceOf[AnalysisFailure]
     }
     
-    @scala.inline
-    implicit class AnalysisFailureMutableBuilder[Self <: AnalysisFailure] (val x: Self) extends AnyVal {
+    extension [Self <: AnalysisFailure](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }
   }
 }

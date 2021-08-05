@@ -18,28 +18,21 @@ trait ListNetworkProfilesResult extends StObject {
 }
 object ListNetworkProfilesResult {
   
-  @scala.inline
-  def apply(): ListNetworkProfilesResult = {
+  inline def apply(): ListNetworkProfilesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListNetworkProfilesResult]
   }
   
-  @scala.inline
-  implicit class ListNetworkProfilesResultMutableBuilder[Self <: ListNetworkProfilesResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListNetworkProfilesResult](x: Self) {
     
-    @scala.inline
-    def setNetworkProfiles(value: NetworkProfiles): Self = StObject.set(x, "networkProfiles", value.asInstanceOf[js.Any])
+    inline def setNetworkProfiles(value: NetworkProfiles): Self = StObject.set(x, "networkProfiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkProfilesUndefined: Self = StObject.set(x, "networkProfiles", js.undefined)
+    inline def setNetworkProfilesUndefined: Self = StObject.set(x, "networkProfiles", js.undefined)
     
-    @scala.inline
-    def setNetworkProfilesVarargs(value: NetworkProfile*): Self = StObject.set(x, "networkProfiles", js.Array(value :_*))
+    inline def setNetworkProfilesVarargs(value: NetworkProfile*): Self = StObject.set(x, "networkProfiles", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

@@ -14,6 +14,5 @@ object Polygon {
     * Checks a polygon for any intersecting line segments.
     * Ignores holes.
     */
-  @scala.inline
-  def intersects(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("intersects")().asInstanceOf[Boolean]
+  inline def intersects(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("intersects")().asInstanceOf[Boolean]
 }

@@ -14,31 +14,23 @@ trait ServerVariableObject extends StObject {
 }
 object ServerVariableObject {
   
-  @scala.inline
-  def apply(default: String): ServerVariableObject = {
+  inline def apply(default: String): ServerVariableObject = {
     val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerVariableObject]
   }
   
-  @scala.inline
-  implicit class ServerVariableObjectMutableBuilder[Self <: ServerVariableObject] (val x: Self) extends AnyVal {
+  extension [Self <: ServerVariableObject](x: Self) {
     
-    @scala.inline
-    def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEnum(value: js.Array[String]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
+    inline def setEnum(value: js.Array[String]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
+    inline def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
     
-    @scala.inline
-    def setEnumVarargs(value: String*): Self = StObject.set(x, "enum", js.Array(value :_*))
+    inline def setEnumVarargs(value: String*): Self = StObject.set(x, "enum", js.Array(value :_*))
   }
 }

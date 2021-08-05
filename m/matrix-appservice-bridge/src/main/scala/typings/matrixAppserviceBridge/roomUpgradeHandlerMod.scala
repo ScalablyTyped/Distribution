@@ -19,13 +19,13 @@ object roomUpgradeHandlerMod {
       */
     def this(opts: RoomUpgradeHandlerOpts, bridge: Bridge) = this()
     
-    val bridge: js.Any = js.native
+    /* private */ val bridge: js.Any = js.native
     
-    var joinNewRoom: js.Any = js.native
+    /* private */ var joinNewRoom: js.Any = js.native
     
-    var migrateEntry: js.Any = js.native
+    /* private */ var migrateEntry: js.Any = js.native
     
-    var migrateStoreEntries: js.Any = js.native
+    /* private */ var migrateStoreEntries: js.Any = js.native
     
     /**
       * Called when an invite event reaches the bridge. This function
@@ -38,7 +38,7 @@ object roomUpgradeHandlerMod {
       */
     def onInvite(ev: Roomid): js.Promise[Boolean] = js.native
     
-    var onJoinedNewRoom: js.Any = js.native
+    /* private */ var onJoinedNewRoom: js.Any = js.native
     
     /**
       * Called when the bridge sees a "m.room.tombstone" event.
@@ -46,9 +46,9 @@ object roomUpgradeHandlerMod {
       */
     def onTombstone(ev: Sender): js.Promise[Boolean] = js.native
     
-    val opts: js.Any = js.native
+    /* private */ val opts: js.Any = js.native
     
-    var waitingForInvite: js.Any = js.native
+    /* private */ var waitingForInvite: js.Any = js.native
   }
   
   trait RoomUpgradeHandlerOpts extends StObject {
@@ -101,37 +101,28 @@ object roomUpgradeHandlerMod {
   }
   object RoomUpgradeHandlerOpts {
     
-    @scala.inline
-    def apply(consumeEvent: Boolean, migrateGhosts: Boolean, migrateStoreEntries: Boolean): RoomUpgradeHandlerOpts = {
+    inline def apply(consumeEvent: Boolean, migrateGhosts: Boolean, migrateStoreEntries: Boolean): RoomUpgradeHandlerOpts = {
       val __obj = js.Dynamic.literal(consumeEvent = consumeEvent.asInstanceOf[js.Any], migrateGhosts = migrateGhosts.asInstanceOf[js.Any], migrateStoreEntries = migrateStoreEntries.asInstanceOf[js.Any])
       __obj.asInstanceOf[RoomUpgradeHandlerOpts]
     }
     
-    @scala.inline
-    implicit class RoomUpgradeHandlerOptsMutableBuilder[Self <: RoomUpgradeHandlerOpts] (val x: Self) extends AnyVal {
+    extension [Self <: RoomUpgradeHandlerOpts](x: Self) {
       
-      @scala.inline
-      def setConsumeEvent(value: Boolean): Self = StObject.set(x, "consumeEvent", value.asInstanceOf[js.Any])
+      inline def setConsumeEvent(value: Boolean): Self = StObject.set(x, "consumeEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMigrateEntry(
+      inline def setMigrateEntry(
         value: (/* entry */ RoomBridgeStoreEntry, /* newRoomId */ String) => js.Promise[RoomBridgeStoreEntry | Null]
       ): Self = StObject.set(x, "migrateEntry", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMigrateEntryUndefined: Self = StObject.set(x, "migrateEntry", js.undefined)
+      inline def setMigrateEntryUndefined: Self = StObject.set(x, "migrateEntry", js.undefined)
       
-      @scala.inline
-      def setMigrateGhosts(value: Boolean): Self = StObject.set(x, "migrateGhosts", value.asInstanceOf[js.Any])
+      inline def setMigrateGhosts(value: Boolean): Self = StObject.set(x, "migrateGhosts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMigrateStoreEntries(value: Boolean): Self = StObject.set(x, "migrateStoreEntries", value.asInstanceOf[js.Any])
+      inline def setMigrateStoreEntries(value: Boolean): Self = StObject.set(x, "migrateStoreEntries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnRoomMigrated(value: (/* oldRoomId */ String, /* newRoomId */ String) => js.Promise[Unit] | Unit): Self = StObject.set(x, "onRoomMigrated", js.Any.fromFunction2(value))
+      inline def setOnRoomMigrated(value: (/* oldRoomId */ String, /* newRoomId */ String) => js.Promise[Unit] | Unit): Self = StObject.set(x, "onRoomMigrated", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRoomMigratedUndefined: Self = StObject.set(x, "onRoomMigrated", js.undefined)
+      inline def setOnRoomMigratedUndefined: Self = StObject.set(x, "onRoomMigrated", js.undefined)
     }
   }
 }

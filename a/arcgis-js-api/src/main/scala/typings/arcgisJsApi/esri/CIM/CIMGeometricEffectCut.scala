@@ -34,41 +34,30 @@ trait CIMGeometricEffectCut
 }
 object CIMGeometricEffectCut {
   
-  @scala.inline
-  def apply(): CIMGeometricEffectCut = {
+  inline def apply(): CIMGeometricEffectCut = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMGeometricEffectCut")
     __obj.asInstanceOf[CIMGeometricEffectCut]
   }
   
-  @scala.inline
-  implicit class CIMGeometricEffectCutMutableBuilder[Self <: CIMGeometricEffectCut] (val x: Self) extends AnyVal {
+  extension [Self <: CIMGeometricEffectCut](x: Self) {
     
-    @scala.inline
-    def setBeginCut(value: Double): Self = StObject.set(x, "beginCut", value.asInstanceOf[js.Any])
+    inline def setBeginCut(value: Double): Self = StObject.set(x, "beginCut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeginCutUndefined: Self = StObject.set(x, "beginCut", js.undefined)
+    inline def setBeginCutUndefined: Self = StObject.set(x, "beginCut", js.undefined)
     
-    @scala.inline
-    def setEndCut(value: Double): Self = StObject.set(x, "endCut", value.asInstanceOf[js.Any])
+    inline def setEndCut(value: Double): Self = StObject.set(x, "endCut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndCutUndefined: Self = StObject.set(x, "endCut", js.undefined)
+    inline def setEndCutUndefined: Self = StObject.set(x, "endCut", js.undefined)
     
-    @scala.inline
-    def setInvert(value: Boolean): Self = StObject.set(x, "invert", value.asInstanceOf[js.Any])
+    inline def setInvert(value: Boolean): Self = StObject.set(x, "invert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvertUndefined: Self = StObject.set(x, "invert", js.undefined)
+    inline def setInvertUndefined: Self = StObject.set(x, "invert", js.undefined)
     
-    @scala.inline
-    def setMiddleCut(value: Double): Self = StObject.set(x, "middleCut", value.asInstanceOf[js.Any])
+    inline def setMiddleCut(value: Double): Self = StObject.set(x, "middleCut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMiddleCutUndefined: Self = StObject.set(x, "middleCut", js.undefined)
+    inline def setMiddleCutUndefined: Self = StObject.set(x, "middleCut", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectCut): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectCut): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

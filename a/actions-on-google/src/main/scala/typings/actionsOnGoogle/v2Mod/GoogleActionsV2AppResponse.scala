@@ -60,64 +60,45 @@ trait GoogleActionsV2AppResponse extends StObject {
 }
 object GoogleActionsV2AppResponse {
   
-  @scala.inline
-  def apply(): GoogleActionsV2AppResponse = {
+  inline def apply(): GoogleActionsV2AppResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2AppResponse]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2AppResponseMutableBuilder[Self <: GoogleActionsV2AppResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2AppResponse](x: Self) {
     
-    @scala.inline
-    def setConversationToken(value: String): Self = StObject.set(x, "conversationToken", value.asInstanceOf[js.Any])
+    inline def setConversationToken(value: String): Self = StObject.set(x, "conversationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversationTokenUndefined: Self = StObject.set(x, "conversationToken", js.undefined)
+    inline def setConversationTokenUndefined: Self = StObject.set(x, "conversationToken", js.undefined)
     
-    @scala.inline
-    def setCustomPushMessage(value: GoogleActionsV2CustomPushMessage): Self = StObject.set(x, "customPushMessage", value.asInstanceOf[js.Any])
+    inline def setCustomPushMessage(value: GoogleActionsV2CustomPushMessage): Self = StObject.set(x, "customPushMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomPushMessageUndefined: Self = StObject.set(x, "customPushMessage", js.undefined)
+    inline def setCustomPushMessageUndefined: Self = StObject.set(x, "customPushMessage", js.undefined)
     
-    @scala.inline
-    def setExpectUserResponse(value: Boolean): Self = StObject.set(x, "expectUserResponse", value.asInstanceOf[js.Any])
+    inline def setExpectUserResponse(value: Boolean): Self = StObject.set(x, "expectUserResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectUserResponseUndefined: Self = StObject.set(x, "expectUserResponse", js.undefined)
+    inline def setExpectUserResponseUndefined: Self = StObject.set(x, "expectUserResponse", js.undefined)
     
-    @scala.inline
-    def setExpectedInputs(value: js.Array[GoogleActionsV2ExpectedInput]): Self = StObject.set(x, "expectedInputs", value.asInstanceOf[js.Any])
+    inline def setExpectedInputs(value: js.Array[GoogleActionsV2ExpectedInput]): Self = StObject.set(x, "expectedInputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedInputsUndefined: Self = StObject.set(x, "expectedInputs", js.undefined)
+    inline def setExpectedInputsUndefined: Self = StObject.set(x, "expectedInputs", js.undefined)
     
-    @scala.inline
-    def setExpectedInputsVarargs(value: GoogleActionsV2ExpectedInput*): Self = StObject.set(x, "expectedInputs", js.Array(value :_*))
+    inline def setExpectedInputsVarargs(value: GoogleActionsV2ExpectedInput*): Self = StObject.set(x, "expectedInputs", js.Array(value :_*))
     
-    @scala.inline
-    def setFinalResponse(value: GoogleActionsV2FinalResponse): Self = StObject.set(x, "finalResponse", value.asInstanceOf[js.Any])
+    inline def setFinalResponse(value: GoogleActionsV2FinalResponse): Self = StObject.set(x, "finalResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalResponseUndefined: Self = StObject.set(x, "finalResponse", js.undefined)
+    inline def setFinalResponseUndefined: Self = StObject.set(x, "finalResponse", js.undefined)
     
-    @scala.inline
-    def setIsInSandbox(value: Boolean): Self = StObject.set(x, "isInSandbox", value.asInstanceOf[js.Any])
+    inline def setIsInSandbox(value: Boolean): Self = StObject.set(x, "isInSandbox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsInSandboxUndefined: Self = StObject.set(x, "isInSandbox", js.undefined)
+    inline def setIsInSandboxUndefined: Self = StObject.set(x, "isInSandbox", js.undefined)
     
-    @scala.inline
-    def setResetUserStorage(value: Boolean): Self = StObject.set(x, "resetUserStorage", value.asInstanceOf[js.Any])
+    inline def setResetUserStorage(value: Boolean): Self = StObject.set(x, "resetUserStorage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetUserStorageUndefined: Self = StObject.set(x, "resetUserStorage", js.undefined)
+    inline def setResetUserStorageUndefined: Self = StObject.set(x, "resetUserStorage", js.undefined)
     
-    @scala.inline
-    def setUserStorage(value: String): Self = StObject.set(x, "userStorage", value.asInstanceOf[js.Any])
+    inline def setUserStorage(value: String): Self = StObject.set(x, "userStorage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserStorageUndefined: Self = StObject.set(x, "userStorage", js.undefined)
+    inline def setUserStorageUndefined: Self = StObject.set(x, "userStorage", js.undefined)
   }
 }

@@ -56,43 +56,31 @@ trait NavigatorXAxisEventsOptions extends StObject {
 }
 object NavigatorXAxisEventsOptions {
   
-  @scala.inline
-  def apply(): NavigatorXAxisEventsOptions = {
+  inline def apply(): NavigatorXAxisEventsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigatorXAxisEventsOptions]
   }
   
-  @scala.inline
-  implicit class NavigatorXAxisEventsOptionsMutableBuilder[Self <: NavigatorXAxisEventsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NavigatorXAxisEventsOptions](x: Self) {
     
-    @scala.inline
-    def setAfterBreaks(value: AxisEventCallbackFunction): Self = StObject.set(x, "afterBreaks", value.asInstanceOf[js.Any])
+    inline def setAfterBreaks(value: AxisEventCallbackFunction): Self = StObject.set(x, "afterBreaks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterBreaksUndefined: Self = StObject.set(x, "afterBreaks", js.undefined)
+    inline def setAfterBreaksUndefined: Self = StObject.set(x, "afterBreaks", js.undefined)
     
-    @scala.inline
-    def setAfterSetExtremes(value: AxisSetExtremesEventCallbackFunction): Self = StObject.set(x, "afterSetExtremes", value.asInstanceOf[js.Any])
+    inline def setAfterSetExtremes(value: AxisSetExtremesEventCallbackFunction): Self = StObject.set(x, "afterSetExtremes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterSetExtremesUndefined: Self = StObject.set(x, "afterSetExtremes", js.undefined)
+    inline def setAfterSetExtremesUndefined: Self = StObject.set(x, "afterSetExtremes", js.undefined)
     
-    @scala.inline
-    def setPointBreak(value: AxisPointBreakEventCallbackFunction): Self = StObject.set(x, "pointBreak", value.asInstanceOf[js.Any])
+    inline def setPointBreak(value: AxisPointBreakEventCallbackFunction): Self = StObject.set(x, "pointBreak", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointBreakUndefined: Self = StObject.set(x, "pointBreak", js.undefined)
+    inline def setPointBreakUndefined: Self = StObject.set(x, "pointBreak", js.undefined)
     
-    @scala.inline
-    def setPointInBreak(value: AxisPointBreakEventCallbackFunction): Self = StObject.set(x, "pointInBreak", value.asInstanceOf[js.Any])
+    inline def setPointInBreak(value: AxisPointBreakEventCallbackFunction): Self = StObject.set(x, "pointInBreak", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointInBreakUndefined: Self = StObject.set(x, "pointInBreak", js.undefined)
+    inline def setPointInBreakUndefined: Self = StObject.set(x, "pointInBreak", js.undefined)
     
-    @scala.inline
-    def setSetExtremes(value: AxisSetExtremesEventCallbackFunction): Self = StObject.set(x, "setExtremes", value.asInstanceOf[js.Any])
+    inline def setSetExtremes(value: AxisSetExtremesEventCallbackFunction): Self = StObject.set(x, "setExtremes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetExtremesUndefined: Self = StObject.set(x, "setExtremes", js.undefined)
+    inline def setSetExtremesUndefined: Self = StObject.set(x, "setExtremes", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait WebCLImage
 }
 object WebCLImage {
   
-  @scala.inline
-  def apply(getInfo: () => WebCLImageDescriptor, release: () => Unit): WebCLImage = {
+  inline def apply(getInfo: () => WebCLImageDescriptor, release: () => Unit): WebCLImage = {
     val __obj = js.Dynamic.literal(getInfo = js.Any.fromFunction0(getInfo), release = js.Any.fromFunction0(release))
     __obj.asInstanceOf[WebCLImage]
   }
   
-  @scala.inline
-  implicit class WebCLImageMutableBuilder[Self <: WebCLImage] (val x: Self) extends AnyVal {
+  extension [Self <: WebCLImage](x: Self) {
     
-    @scala.inline
-    def setGetInfo(value: () => WebCLImageDescriptor): Self = StObject.set(x, "getInfo", js.Any.fromFunction0(value))
+    inline def setGetInfo(value: () => WebCLImageDescriptor): Self = StObject.set(x, "getInfo", js.Any.fromFunction0(value))
   }
 }

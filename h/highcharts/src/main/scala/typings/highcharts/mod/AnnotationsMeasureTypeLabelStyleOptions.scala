@@ -12,25 +12,19 @@ trait AnnotationsMeasureTypeLabelStyleOptions extends StObject {
 }
 object AnnotationsMeasureTypeLabelStyleOptions {
   
-  @scala.inline
-  def apply(): AnnotationsMeasureTypeLabelStyleOptions = {
+  inline def apply(): AnnotationsMeasureTypeLabelStyleOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnnotationsMeasureTypeLabelStyleOptions]
   }
   
-  @scala.inline
-  implicit class AnnotationsMeasureTypeLabelStyleOptionsMutableBuilder[Self <: AnnotationsMeasureTypeLabelStyleOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotationsMeasureTypeLabelStyleOptions](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+    inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
   }
 }

@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): NanoScheduler = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[NanoScheduler]
+  inline def apply(): NanoScheduler = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[NanoScheduler]
   
   @JSImport("nanoscheduler", JSImport.Namespace)
   @js.native
@@ -32,23 +31,18 @@ object mod {
     }
     object NanoScheduler {
       
-      @scala.inline
-      def apply(push: js.Function0[Unit] => Unit, schedule: () => Unit, setTimeout: js.Function0[Unit] => Unit): NanoScheduler = {
+      inline def apply(push: js.Function0[Unit] => Unit, schedule: () => Unit, setTimeout: js.Function0[Unit] => Unit): NanoScheduler = {
         val __obj = js.Dynamic.literal(push = js.Any.fromFunction1(push), schedule = js.Any.fromFunction0(schedule), setTimeout = js.Any.fromFunction1(setTimeout))
         __obj.asInstanceOf[NanoScheduler]
       }
       
-      @scala.inline
-      implicit class NanoSchedulerMutableBuilder[Self <: NanoScheduler] (val x: Self) extends AnyVal {
+      extension [Self <: NanoScheduler](x: Self) {
         
-        @scala.inline
-        def setPush(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+        inline def setPush(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSchedule(value: () => Unit): Self = StObject.set(x, "schedule", js.Any.fromFunction0(value))
+        inline def setSchedule(value: () => Unit): Self = StObject.set(x, "schedule", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setSetTimeout(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "setTimeout", js.Any.fromFunction1(value))
+        inline def setSetTimeout(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "setTimeout", js.Any.fromFunction1(value))
       }
     }
   }

@@ -11,16 +11,13 @@ trait WeightedTargetLbConfig extends StObject {
 }
 object WeightedTargetLbConfig {
   
-  @scala.inline
-  def apply(targets: Map[String, WeightedTarget]): WeightedTargetLbConfig = {
+  inline def apply(targets: Map[String, WeightedTarget]): WeightedTargetLbConfig = {
     val __obj = js.Dynamic.literal(targets = targets.asInstanceOf[js.Any])
     __obj.asInstanceOf[WeightedTargetLbConfig]
   }
   
-  @scala.inline
-  implicit class WeightedTargetLbConfigMutableBuilder[Self <: WeightedTargetLbConfig] (val x: Self) extends AnyVal {
+  extension [Self <: WeightedTargetLbConfig](x: Self) {
     
-    @scala.inline
-    def setTargets(value: Map[String, WeightedTarget]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
+    inline def setTargets(value: Map[String, WeightedTarget]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
   }
 }

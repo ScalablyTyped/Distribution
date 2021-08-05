@@ -16,68 +16,57 @@ object commonPdfoptionsMod {
     @JSImport("puppeteer-core/lib/esm/puppeteer/common/PDFOptions", "paperFormats.a0")
     @js.native
     def a0: PaperFormatDimensions = js.native
-    @scala.inline
-    def a0_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a0")(x.asInstanceOf[js.Any])
+    inline def a0_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a0")(x.asInstanceOf[js.Any])
     
     @JSImport("puppeteer-core/lib/esm/puppeteer/common/PDFOptions", "paperFormats.a1")
     @js.native
     def a1: PaperFormatDimensions = js.native
-    @scala.inline
-    def a1_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a1")(x.asInstanceOf[js.Any])
+    inline def a1_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a1")(x.asInstanceOf[js.Any])
     
     @JSImport("puppeteer-core/lib/esm/puppeteer/common/PDFOptions", "paperFormats.a2")
     @js.native
     def a2: PaperFormatDimensions = js.native
-    @scala.inline
-    def a2_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a2")(x.asInstanceOf[js.Any])
+    inline def a2_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a2")(x.asInstanceOf[js.Any])
     
     @JSImport("puppeteer-core/lib/esm/puppeteer/common/PDFOptions", "paperFormats.a3")
     @js.native
     def a3: PaperFormatDimensions = js.native
-    @scala.inline
-    def a3_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a3")(x.asInstanceOf[js.Any])
+    inline def a3_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a3")(x.asInstanceOf[js.Any])
     
     @JSImport("puppeteer-core/lib/esm/puppeteer/common/PDFOptions", "paperFormats.a4")
     @js.native
     def a4: PaperFormatDimensions = js.native
-    @scala.inline
-    def a4_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a4")(x.asInstanceOf[js.Any])
+    inline def a4_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a4")(x.asInstanceOf[js.Any])
     
     @JSImport("puppeteer-core/lib/esm/puppeteer/common/PDFOptions", "paperFormats.a5")
     @js.native
     def a5: PaperFormatDimensions = js.native
-    @scala.inline
-    def a5_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a5")(x.asInstanceOf[js.Any])
+    inline def a5_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a5")(x.asInstanceOf[js.Any])
     
     @JSImport("puppeteer-core/lib/esm/puppeteer/common/PDFOptions", "paperFormats.a6")
     @js.native
     def a6: PaperFormatDimensions = js.native
-    @scala.inline
-    def a6_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a6")(x.asInstanceOf[js.Any])
+    inline def a6_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("a6")(x.asInstanceOf[js.Any])
     
     @JSImport("puppeteer-core/lib/esm/puppeteer/common/PDFOptions", "paperFormats.ledger")
     @js.native
     def ledger: PaperFormatDimensions = js.native
-    @scala.inline
-    def ledger_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ledger")(x.asInstanceOf[js.Any])
+    inline def ledger_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ledger")(x.asInstanceOf[js.Any])
     
     @JSImport("puppeteer-core/lib/esm/puppeteer/common/PDFOptions", "paperFormats.legal")
     @js.native
     def legal: PaperFormatDimensions = js.native
-    @scala.inline
-    def legal_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("legal")(x.asInstanceOf[js.Any])
+    inline def legal_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("legal")(x.asInstanceOf[js.Any])
     
     @JSImport("puppeteer-core/lib/esm/puppeteer/common/PDFOptions", "paperFormats.letter")
     @js.native
     def letter: PaperFormatDimensions = js.native
-    @scala.inline
-    def letter_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("letter")(x.asInstanceOf[js.Any])
+    inline def letter_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("letter")(x.asInstanceOf[js.Any])
     
     @JSImport("puppeteer-core/lib/esm/puppeteer/common/PDFOptions", "paperFormats.tabloid")
     @js.native
     def tabloid: PaperFormatDimensions = js.native
-    @scala.inline
-    def tabloid_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tabloid")(x.asInstanceOf[js.Any])
+    inline def tabloid_=(x: PaperFormatDimensions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tabloid")(x.asInstanceOf[js.Any])
   }
   
   trait PDFMargin extends StObject {
@@ -92,38 +81,28 @@ object commonPdfoptionsMod {
   }
   object PDFMargin {
     
-    @scala.inline
-    def apply(): PDFMargin = {
+    inline def apply(): PDFMargin = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PDFMargin]
     }
     
-    @scala.inline
-    implicit class PDFMarginMutableBuilder[Self <: PDFMargin] (val x: Self) extends AnyVal {
+    extension [Self <: PDFMargin](x: Self) {
       
-      @scala.inline
-      def setBottom(value: String | Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: String | Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+      inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
       
-      @scala.inline
-      def setLeft(value: String | Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: String | Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      @scala.inline
-      def setRight(value: String | Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: String | Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+      inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
       
-      @scala.inline
-      def setTop(value: String | Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: String | Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     }
   }
   
@@ -223,92 +202,64 @@ object commonPdfoptionsMod {
   }
   object PDFOptions {
     
-    @scala.inline
-    def apply(): PDFOptions = {
+    inline def apply(): PDFOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PDFOptions]
     }
     
-    @scala.inline
-    implicit class PDFOptionsMutableBuilder[Self <: PDFOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PDFOptions](x: Self) {
       
-      @scala.inline
-      def setDisplayHeaderFooter(value: Boolean): Self = StObject.set(x, "displayHeaderFooter", value.asInstanceOf[js.Any])
+      inline def setDisplayHeaderFooter(value: Boolean): Self = StObject.set(x, "displayHeaderFooter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayHeaderFooterUndefined: Self = StObject.set(x, "displayHeaderFooter", js.undefined)
+      inline def setDisplayHeaderFooterUndefined: Self = StObject.set(x, "displayHeaderFooter", js.undefined)
       
-      @scala.inline
-      def setFooterTemplate(value: String): Self = StObject.set(x, "footerTemplate", value.asInstanceOf[js.Any])
+      inline def setFooterTemplate(value: String): Self = StObject.set(x, "footerTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFooterTemplateUndefined: Self = StObject.set(x, "footerTemplate", js.undefined)
+      inline def setFooterTemplateUndefined: Self = StObject.set(x, "footerTemplate", js.undefined)
       
-      @scala.inline
-      def setFormat(value: PaperFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: PaperFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setHeaderTemplate(value: String): Self = StObject.set(x, "headerTemplate", value.asInstanceOf[js.Any])
+      inline def setHeaderTemplate(value: String): Self = StObject.set(x, "headerTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderTemplateUndefined: Self = StObject.set(x, "headerTemplate", js.undefined)
+      inline def setHeaderTemplateUndefined: Self = StObject.set(x, "headerTemplate", js.undefined)
       
-      @scala.inline
-      def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setLandscape(value: Boolean): Self = StObject.set(x, "landscape", value.asInstanceOf[js.Any])
+      inline def setLandscape(value: Boolean): Self = StObject.set(x, "landscape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLandscapeUndefined: Self = StObject.set(x, "landscape", js.undefined)
+      inline def setLandscapeUndefined: Self = StObject.set(x, "landscape", js.undefined)
       
-      @scala.inline
-      def setMargin(value: PDFMargin): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: PDFMargin): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+      inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      @scala.inline
-      def setPageRanges(value: String): Self = StObject.set(x, "pageRanges", value.asInstanceOf[js.Any])
+      inline def setPageRanges(value: String): Self = StObject.set(x, "pageRanges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageRangesUndefined: Self = StObject.set(x, "pageRanges", js.undefined)
+      inline def setPageRangesUndefined: Self = StObject.set(x, "pageRanges", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setPreferCSSPageSize(value: Boolean): Self = StObject.set(x, "preferCSSPageSize", value.asInstanceOf[js.Any])
+      inline def setPreferCSSPageSize(value: Boolean): Self = StObject.set(x, "preferCSSPageSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreferCSSPageSizeUndefined: Self = StObject.set(x, "preferCSSPageSize", js.undefined)
+      inline def setPreferCSSPageSizeUndefined: Self = StObject.set(x, "preferCSSPageSize", js.undefined)
       
-      @scala.inline
-      def setPrintBackground(value: Boolean): Self = StObject.set(x, "printBackground", value.asInstanceOf[js.Any])
+      inline def setPrintBackground(value: Boolean): Self = StObject.set(x, "printBackground", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrintBackgroundUndefined: Self = StObject.set(x, "printBackground", js.undefined)
+      inline def setPrintBackgroundUndefined: Self = StObject.set(x, "printBackground", js.undefined)
       
-      @scala.inline
-      def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
-      @scala.inline
-      def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -328,38 +279,27 @@ object commonPdfoptionsMod {
   trait PaperFormat extends StObject
   object PaperFormat {
     
-    @scala.inline
-    def a0: typings.puppeteerCore.puppeteerCoreStrings.a0 = "a0".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.a0]
+    inline def a0: typings.puppeteerCore.puppeteerCoreStrings.a0 = "a0".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.a0]
     
-    @scala.inline
-    def a1: typings.puppeteerCore.puppeteerCoreStrings.a1 = "a1".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.a1]
+    inline def a1: typings.puppeteerCore.puppeteerCoreStrings.a1 = "a1".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.a1]
     
-    @scala.inline
-    def a2: typings.puppeteerCore.puppeteerCoreStrings.a2 = "a2".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.a2]
+    inline def a2: typings.puppeteerCore.puppeteerCoreStrings.a2 = "a2".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.a2]
     
-    @scala.inline
-    def a3: typings.puppeteerCore.puppeteerCoreStrings.a3 = "a3".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.a3]
+    inline def a3: typings.puppeteerCore.puppeteerCoreStrings.a3 = "a3".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.a3]
     
-    @scala.inline
-    def a4: typings.puppeteerCore.puppeteerCoreStrings.a4 = "a4".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.a4]
+    inline def a4: typings.puppeteerCore.puppeteerCoreStrings.a4 = "a4".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.a4]
     
-    @scala.inline
-    def a5: typings.puppeteerCore.puppeteerCoreStrings.a5 = "a5".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.a5]
+    inline def a5: typings.puppeteerCore.puppeteerCoreStrings.a5 = "a5".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.a5]
     
-    @scala.inline
-    def a6: typings.puppeteerCore.puppeteerCoreStrings.a6 = "a6".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.a6]
+    inline def a6: typings.puppeteerCore.puppeteerCoreStrings.a6 = "a6".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.a6]
     
-    @scala.inline
-    def ledger: typings.puppeteerCore.puppeteerCoreStrings.ledger = "ledger".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.ledger]
+    inline def ledger: typings.puppeteerCore.puppeteerCoreStrings.ledger = "ledger".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.ledger]
     
-    @scala.inline
-    def legal: typings.puppeteerCore.puppeteerCoreStrings.legal = "legal".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.legal]
+    inline def legal: typings.puppeteerCore.puppeteerCoreStrings.legal = "legal".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.legal]
     
-    @scala.inline
-    def letter: typings.puppeteerCore.puppeteerCoreStrings.letter = "letter".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.letter]
+    inline def letter: typings.puppeteerCore.puppeteerCoreStrings.letter = "letter".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.letter]
     
-    @scala.inline
-    def tabloid: typings.puppeteerCore.puppeteerCoreStrings.tabloid = "tabloid".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.tabloid]
+    inline def tabloid: typings.puppeteerCore.puppeteerCoreStrings.tabloid = "tabloid".asInstanceOf[typings.puppeteerCore.puppeteerCoreStrings.tabloid]
   }
   
   trait PaperFormatDimensions extends StObject {
@@ -370,20 +310,16 @@ object commonPdfoptionsMod {
   }
   object PaperFormatDimensions {
     
-    @scala.inline
-    def apply(height: Double, width: Double): PaperFormatDimensions = {
+    inline def apply(height: Double, width: Double): PaperFormatDimensions = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[PaperFormatDimensions]
     }
     
-    @scala.inline
-    implicit class PaperFormatDimensionsMutableBuilder[Self <: PaperFormatDimensions] (val x: Self) extends AnyVal {
+    extension [Self <: PaperFormatDimensions](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

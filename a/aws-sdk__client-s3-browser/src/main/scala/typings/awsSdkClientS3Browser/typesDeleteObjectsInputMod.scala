@@ -91,76 +91,54 @@ object typesDeleteObjectsInputMod {
   }
   object DeleteObjectsInput {
     
-    @scala.inline
-    def apply(Bucket: String, Delete: Delete): DeleteObjectsInput = {
+    inline def apply(Bucket: String, Delete: Delete): DeleteObjectsInput = {
       val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Delete = Delete.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteObjectsInput]
     }
     
-    @scala.inline
-    implicit class DeleteObjectsInputMutableBuilder[Self <: DeleteObjectsInput] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteObjectsInput](x: Self) {
       
-      @scala.inline
-      def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
+      inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
+      inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
-      @scala.inline
-      def set$bucketEndpoint(value: String): Self = StObject.set(x, "$bucketEndpoint", value.asInstanceOf[js.Any])
+      inline def set$bucketEndpoint(value: String): Self = StObject.set(x, "$bucketEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$bucketEndpointUndefined: Self = StObject.set(x, "$bucketEndpoint", js.undefined)
+      inline def set$bucketEndpointUndefined: Self = StObject.set(x, "$bucketEndpoint", js.undefined)
       
-      @scala.inline
-      def set$forcePathStyle(value: Boolean): Self = StObject.set(x, "$forcePathStyle", value.asInstanceOf[js.Any])
+      inline def set$forcePathStyle(value: Boolean): Self = StObject.set(x, "$forcePathStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$forcePathStyleUndefined: Self = StObject.set(x, "$forcePathStyle", js.undefined)
+      inline def set$forcePathStyleUndefined: Self = StObject.set(x, "$forcePathStyle", js.undefined)
       
-      @scala.inline
-      def set$httpOptions(
+      inline def set$httpOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
+      inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
       
-      @scala.inline
-      def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
+      inline def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
+      inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      @scala.inline
-      def set$useAccelerateEndpoint(value: Boolean): Self = StObject.set(x, "$useAccelerateEndpoint", value.asInstanceOf[js.Any])
+      inline def set$useAccelerateEndpoint(value: Boolean): Self = StObject.set(x, "$useAccelerateEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$useAccelerateEndpointUndefined: Self = StObject.set(x, "$useAccelerateEndpoint", js.undefined)
+      inline def set$useAccelerateEndpointUndefined: Self = StObject.set(x, "$useAccelerateEndpoint", js.undefined)
       
-      @scala.inline
-      def set$useDualstackEndpoint(value: Boolean): Self = StObject.set(x, "$useDualstackEndpoint", value.asInstanceOf[js.Any])
+      inline def set$useDualstackEndpoint(value: Boolean): Self = StObject.set(x, "$useDualstackEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$useDualstackEndpointUndefined: Self = StObject.set(x, "$useDualstackEndpoint", js.undefined)
+      inline def set$useDualstackEndpointUndefined: Self = StObject.set(x, "$useDualstackEndpoint", js.undefined)
       
-      @scala.inline
-      def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelete(value: Delete): Self = StObject.set(x, "Delete", value.asInstanceOf[js.Any])
+      inline def setDelete(value: Delete): Self = StObject.set(x, "Delete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMFA(value: String): Self = StObject.set(x, "MFA", value.asInstanceOf[js.Any])
+      inline def setMFA(value: String): Self = StObject.set(x, "MFA", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMFAUndefined: Self = StObject.set(x, "MFA", js.undefined)
+      inline def setMFAUndefined: Self = StObject.set(x, "MFA", js.undefined)
       
-      @scala.inline
-      def setRequestPayer(value: requester_ | String): Self = StObject.set(x, "RequestPayer", value.asInstanceOf[js.Any])
+      inline def setRequestPayer(value: requester_ | String): Self = StObject.set(x, "RequestPayer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestPayerUndefined: Self = StObject.set(x, "RequestPayer", js.undefined)
+      inline def setRequestPayerUndefined: Self = StObject.set(x, "RequestPayer", js.undefined)
     }
   }
 }

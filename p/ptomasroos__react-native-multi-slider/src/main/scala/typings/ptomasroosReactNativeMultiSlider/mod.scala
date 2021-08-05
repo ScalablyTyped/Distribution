@@ -33,8 +33,7 @@ object mod {
   }
   object MarkerProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       currentValue: Double,
       enabled: Boolean,
       markerStyle: ViewStyle,
@@ -47,29 +46,21 @@ object mod {
       __obj.asInstanceOf[MarkerProps]
     }
     
-    @scala.inline
-    implicit class MarkerPropsMutableBuilder[Self <: MarkerProps] (val x: Self) extends AnyVal {
+    extension [Self <: MarkerProps](x: Self) {
       
-      @scala.inline
-      def setCurrentValue(value: Double): Self = StObject.set(x, "currentValue", value.asInstanceOf[js.Any])
+      inline def setCurrentValue(value: Double): Self = StObject.set(x, "currentValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkerStyle(value: ViewStyle): Self = StObject.set(x, "markerStyle", value.asInstanceOf[js.Any])
+      inline def setMarkerStyle(value: ViewStyle): Self = StObject.set(x, "markerStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPressed(value: Boolean): Self = StObject.set(x, "pressed", value.asInstanceOf[js.Any])
+      inline def setPressed(value: Boolean): Self = StObject.set(x, "pressed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPressedMarkerStyle(value: ViewStyle): Self = StObject.set(x, "pressedMarkerStyle", value.asInstanceOf[js.Any])
+      inline def setPressedMarkerStyle(value: ViewStyle): Self = StObject.set(x, "pressedMarkerStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuePrefix(value: String): Self = StObject.set(x, "valuePrefix", value.asInstanceOf[js.Any])
+      inline def setValuePrefix(value: String): Self = StObject.set(x, "valuePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueSuffix(value: String): Self = StObject.set(x, "valueSuffix", value.asInstanceOf[js.Any])
+      inline def setValueSuffix(value: String): Self = StObject.set(x, "valueSuffix", value.asInstanceOf[js.Any])
     }
   }
   
@@ -141,206 +132,140 @@ object mod {
   }
   object MultiSliderProps {
     
-    @scala.inline
-    def apply(): MultiSliderProps = {
+    inline def apply(): MultiSliderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MultiSliderProps]
     }
     
-    @scala.inline
-    implicit class MultiSliderPropsMutableBuilder[Self <: MultiSliderProps] (val x: Self) extends AnyVal {
+    extension [Self <: MultiSliderProps](x: Self) {
       
-      @scala.inline
-      def setAllowOverlap(value: Boolean): Self = StObject.set(x, "allowOverlap", value.asInstanceOf[js.Any])
+      inline def setAllowOverlap(value: Boolean): Self = StObject.set(x, "allowOverlap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowOverlapUndefined: Self = StObject.set(x, "allowOverlap", js.undefined)
+      inline def setAllowOverlapUndefined: Self = StObject.set(x, "allowOverlap", js.undefined)
       
-      @scala.inline
-      def setContainerStyle(value: ViewStyle): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
+      inline def setContainerStyle(value: ViewStyle): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
+      inline def setContainerStyleUndefined: Self = StObject.set(x, "containerStyle", js.undefined)
       
-      @scala.inline
-      def setCustomMarker(value: ComponentType[MarkerProps]): Self = StObject.set(x, "customMarker", value.asInstanceOf[js.Any])
+      inline def setCustomMarker(value: ComponentType[MarkerProps]): Self = StObject.set(x, "customMarker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomMarkerLeft(value: ComponentType[MarkerProps]): Self = StObject.set(x, "customMarkerLeft", value.asInstanceOf[js.Any])
+      inline def setCustomMarkerLeft(value: ComponentType[MarkerProps]): Self = StObject.set(x, "customMarkerLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomMarkerLeftUndefined: Self = StObject.set(x, "customMarkerLeft", js.undefined)
+      inline def setCustomMarkerLeftUndefined: Self = StObject.set(x, "customMarkerLeft", js.undefined)
       
-      @scala.inline
-      def setCustomMarkerRight(value: ComponentType[MarkerProps]): Self = StObject.set(x, "customMarkerRight", value.asInstanceOf[js.Any])
+      inline def setCustomMarkerRight(value: ComponentType[MarkerProps]): Self = StObject.set(x, "customMarkerRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomMarkerRightUndefined: Self = StObject.set(x, "customMarkerRight", js.undefined)
+      inline def setCustomMarkerRightUndefined: Self = StObject.set(x, "customMarkerRight", js.undefined)
       
-      @scala.inline
-      def setCustomMarkerUndefined: Self = StObject.set(x, "customMarker", js.undefined)
+      inline def setCustomMarkerUndefined: Self = StObject.set(x, "customMarker", js.undefined)
       
-      @scala.inline
-      def setEnabledOne(value: Boolean): Self = StObject.set(x, "enabledOne", value.asInstanceOf[js.Any])
+      inline def setEnabledOne(value: Boolean): Self = StObject.set(x, "enabledOne", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledOneUndefined: Self = StObject.set(x, "enabledOne", js.undefined)
+      inline def setEnabledOneUndefined: Self = StObject.set(x, "enabledOne", js.undefined)
       
-      @scala.inline
-      def setEnabledTwo(value: Boolean): Self = StObject.set(x, "enabledTwo", value.asInstanceOf[js.Any])
+      inline def setEnabledTwo(value: Boolean): Self = StObject.set(x, "enabledTwo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledTwoUndefined: Self = StObject.set(x, "enabledTwo", js.undefined)
+      inline def setEnabledTwoUndefined: Self = StObject.set(x, "enabledTwo", js.undefined)
       
-      @scala.inline
-      def setIsMarkersSeparated(value: Boolean): Self = StObject.set(x, "isMarkersSeparated", value.asInstanceOf[js.Any])
+      inline def setIsMarkersSeparated(value: Boolean): Self = StObject.set(x, "isMarkersSeparated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMarkersSeparatedUndefined: Self = StObject.set(x, "isMarkersSeparated", js.undefined)
+      inline def setIsMarkersSeparatedUndefined: Self = StObject.set(x, "isMarkersSeparated", js.undefined)
       
-      @scala.inline
-      def setMarkerContainerStyle(value: ViewStyle): Self = StObject.set(x, "markerContainerStyle", value.asInstanceOf[js.Any])
+      inline def setMarkerContainerStyle(value: ViewStyle): Self = StObject.set(x, "markerContainerStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkerContainerStyleUndefined: Self = StObject.set(x, "markerContainerStyle", js.undefined)
+      inline def setMarkerContainerStyleUndefined: Self = StObject.set(x, "markerContainerStyle", js.undefined)
       
-      @scala.inline
-      def setMarkerOffsetX(value: Double): Self = StObject.set(x, "markerOffsetX", value.asInstanceOf[js.Any])
+      inline def setMarkerOffsetX(value: Double): Self = StObject.set(x, "markerOffsetX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkerOffsetXUndefined: Self = StObject.set(x, "markerOffsetX", js.undefined)
+      inline def setMarkerOffsetXUndefined: Self = StObject.set(x, "markerOffsetX", js.undefined)
       
-      @scala.inline
-      def setMarkerOffsetY(value: Double): Self = StObject.set(x, "markerOffsetY", value.asInstanceOf[js.Any])
+      inline def setMarkerOffsetY(value: Double): Self = StObject.set(x, "markerOffsetY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkerOffsetYUndefined: Self = StObject.set(x, "markerOffsetY", js.undefined)
+      inline def setMarkerOffsetYUndefined: Self = StObject.set(x, "markerOffsetY", js.undefined)
       
-      @scala.inline
-      def setMarkerStyle(value: ViewStyle): Self = StObject.set(x, "markerStyle", value.asInstanceOf[js.Any])
+      inline def setMarkerStyle(value: ViewStyle): Self = StObject.set(x, "markerStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarkerStyleUndefined: Self = StObject.set(x, "markerStyle", js.undefined)
+      inline def setMarkerStyleUndefined: Self = StObject.set(x, "markerStyle", js.undefined)
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      @scala.inline
-      def setOnToggleOne(value: () => Unit): Self = StObject.set(x, "onToggleOne", js.Any.fromFunction0(value))
+      inline def setOnToggleOne(value: () => Unit): Self = StObject.set(x, "onToggleOne", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnToggleOneUndefined: Self = StObject.set(x, "onToggleOne", js.undefined)
+      inline def setOnToggleOneUndefined: Self = StObject.set(x, "onToggleOne", js.undefined)
       
-      @scala.inline
-      def setOnToggleTwo(value: () => Unit): Self = StObject.set(x, "onToggleTwo", js.Any.fromFunction0(value))
+      inline def setOnToggleTwo(value: () => Unit): Self = StObject.set(x, "onToggleTwo", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnToggleTwoUndefined: Self = StObject.set(x, "onToggleTwo", js.undefined)
+      inline def setOnToggleTwoUndefined: Self = StObject.set(x, "onToggleTwo", js.undefined)
       
-      @scala.inline
-      def setOnValuesChange(value: /* values */ js.Array[Double] => Unit): Self = StObject.set(x, "onValuesChange", js.Any.fromFunction1(value))
+      inline def setOnValuesChange(value: /* values */ js.Array[Double] => Unit): Self = StObject.set(x, "onValuesChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnValuesChangeFinish(value: /* values */ js.Array[Double] => Unit): Self = StObject.set(x, "onValuesChangeFinish", js.Any.fromFunction1(value))
+      inline def setOnValuesChangeFinish(value: /* values */ js.Array[Double] => Unit): Self = StObject.set(x, "onValuesChangeFinish", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnValuesChangeFinishUndefined: Self = StObject.set(x, "onValuesChangeFinish", js.undefined)
+      inline def setOnValuesChangeFinishUndefined: Self = StObject.set(x, "onValuesChangeFinish", js.undefined)
       
-      @scala.inline
-      def setOnValuesChangeStart(value: () => Unit): Self = StObject.set(x, "onValuesChangeStart", js.Any.fromFunction0(value))
+      inline def setOnValuesChangeStart(value: () => Unit): Self = StObject.set(x, "onValuesChangeStart", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnValuesChangeStartUndefined: Self = StObject.set(x, "onValuesChangeStart", js.undefined)
+      inline def setOnValuesChangeStartUndefined: Self = StObject.set(x, "onValuesChangeStart", js.undefined)
       
-      @scala.inline
-      def setOnValuesChangeUndefined: Self = StObject.set(x, "onValuesChange", js.undefined)
+      inline def setOnValuesChangeUndefined: Self = StObject.set(x, "onValuesChange", js.undefined)
       
-      @scala.inline
-      def setOptionsArray(value: js.Array[Double]): Self = StObject.set(x, "optionsArray", value.asInstanceOf[js.Any])
+      inline def setOptionsArray(value: js.Array[Double]): Self = StObject.set(x, "optionsArray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsArrayUndefined: Self = StObject.set(x, "optionsArray", js.undefined)
+      inline def setOptionsArrayUndefined: Self = StObject.set(x, "optionsArray", js.undefined)
       
-      @scala.inline
-      def setOptionsArrayVarargs(value: Double*): Self = StObject.set(x, "optionsArray", js.Array(value :_*))
+      inline def setOptionsArrayVarargs(value: Double*): Self = StObject.set(x, "optionsArray", js.Array(value :_*))
       
-      @scala.inline
-      def setPressedMarkerStyle(value: ViewStyle): Self = StObject.set(x, "pressedMarkerStyle", value.asInstanceOf[js.Any])
+      inline def setPressedMarkerStyle(value: ViewStyle): Self = StObject.set(x, "pressedMarkerStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPressedMarkerStyleUndefined: Self = StObject.set(x, "pressedMarkerStyle", js.undefined)
+      inline def setPressedMarkerStyleUndefined: Self = StObject.set(x, "pressedMarkerStyle", js.undefined)
       
-      @scala.inline
-      def setSelectedStyle(value: ViewStyle): Self = StObject.set(x, "selectedStyle", value.asInstanceOf[js.Any])
+      inline def setSelectedStyle(value: ViewStyle): Self = StObject.set(x, "selectedStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedStyleUndefined: Self = StObject.set(x, "selectedStyle", js.undefined)
+      inline def setSelectedStyleUndefined: Self = StObject.set(x, "selectedStyle", js.undefined)
       
-      @scala.inline
-      def setSliderLength(value: Double): Self = StObject.set(x, "sliderLength", value.asInstanceOf[js.Any])
+      inline def setSliderLength(value: Double): Self = StObject.set(x, "sliderLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSliderLengthUndefined: Self = StObject.set(x, "sliderLength", js.undefined)
+      inline def setSliderLengthUndefined: Self = StObject.set(x, "sliderLength", js.undefined)
       
-      @scala.inline
-      def setSnapped(value: Boolean): Self = StObject.set(x, "snapped", value.asInstanceOf[js.Any])
+      inline def setSnapped(value: Boolean): Self = StObject.set(x, "snapped", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnappedUndefined: Self = StObject.set(x, "snapped", js.undefined)
+      inline def setSnappedUndefined: Self = StObject.set(x, "snapped", js.undefined)
       
-      @scala.inline
-      def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
       
-      @scala.inline
-      def setTouchDimensions(value: BorderRadius): Self = StObject.set(x, "touchDimensions", value.asInstanceOf[js.Any])
+      inline def setTouchDimensions(value: BorderRadius): Self = StObject.set(x, "touchDimensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchDimensionsUndefined: Self = StObject.set(x, "touchDimensions", js.undefined)
+      inline def setTouchDimensionsUndefined: Self = StObject.set(x, "touchDimensions", js.undefined)
       
-      @scala.inline
-      def setTrackStyle(value: ViewStyle): Self = StObject.set(x, "trackStyle", value.asInstanceOf[js.Any])
+      inline def setTrackStyle(value: ViewStyle): Self = StObject.set(x, "trackStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackStyleUndefined: Self = StObject.set(x, "trackStyle", js.undefined)
+      inline def setTrackStyleUndefined: Self = StObject.set(x, "trackStyle", js.undefined)
       
-      @scala.inline
-      def setUnselectedStyle(value: ViewStyle): Self = StObject.set(x, "unselectedStyle", value.asInstanceOf[js.Any])
+      inline def setUnselectedStyle(value: ViewStyle): Self = StObject.set(x, "unselectedStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnselectedStyleUndefined: Self = StObject.set(x, "unselectedStyle", js.undefined)
+      inline def setUnselectedStyleUndefined: Self = StObject.set(x, "unselectedStyle", js.undefined)
       
-      @scala.inline
-      def setValuePrefix(value: String): Self = StObject.set(x, "valuePrefix", value.asInstanceOf[js.Any])
+      inline def setValuePrefix(value: String): Self = StObject.set(x, "valuePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuePrefixUndefined: Self = StObject.set(x, "valuePrefix", js.undefined)
+      inline def setValuePrefixUndefined: Self = StObject.set(x, "valuePrefix", js.undefined)
       
-      @scala.inline
-      def setValueSuffix(value: String): Self = StObject.set(x, "valueSuffix", value.asInstanceOf[js.Any])
+      inline def setValueSuffix(value: String): Self = StObject.set(x, "valueSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueSuffixUndefined: Self = StObject.set(x, "valueSuffix", js.undefined)
+      inline def setValueSuffixUndefined: Self = StObject.set(x, "valueSuffix", js.undefined)
       
-      @scala.inline
-      def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+      inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      @scala.inline
-      def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
 }

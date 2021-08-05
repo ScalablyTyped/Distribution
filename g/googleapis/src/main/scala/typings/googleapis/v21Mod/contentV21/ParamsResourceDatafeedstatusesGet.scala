@@ -46,43 +46,31 @@ trait ParamsResourceDatafeedstatusesGet
 }
 object ParamsResourceDatafeedstatusesGet {
   
-  @scala.inline
-  def apply(): ParamsResourceDatafeedstatusesGet = {
+  inline def apply(): ParamsResourceDatafeedstatusesGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceDatafeedstatusesGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceDatafeedstatusesGetMutableBuilder[Self <: ParamsResourceDatafeedstatusesGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceDatafeedstatusesGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+    inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
-    @scala.inline
-    def setDatafeedId(value: String): Self = StObject.set(x, "datafeedId", value.asInstanceOf[js.Any])
+    inline def setDatafeedId(value: String): Self = StObject.set(x, "datafeedId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatafeedIdUndefined: Self = StObject.set(x, "datafeedId", js.undefined)
+    inline def setDatafeedIdUndefined: Self = StObject.set(x, "datafeedId", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
+    inline def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
+    inline def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
   }
 }

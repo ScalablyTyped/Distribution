@@ -117,8 +117,7 @@ object Workflow {
   }
   object WorkflowAssociationCreationInformation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       customFromJson: js.Any => Boolean,
       customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
       fromJson: js.Any => Unit,
@@ -141,44 +140,31 @@ object Workflow {
       __obj.asInstanceOf[WorkflowAssociationCreationInformation]
     }
     
-    @scala.inline
-    implicit class WorkflowAssociationCreationInformationMutableBuilder[Self <: WorkflowAssociationCreationInformation] (val x: Self) extends AnyVal {
+    extension [Self <: WorkflowAssociationCreationInformation](x: Self) {
       
-      @scala.inline
-      def setGet_contentTypeAssociationHistoryListName(value: () => String): Self = StObject.set(x, "get_contentTypeAssociationHistoryListName", js.Any.fromFunction0(value))
+      inline def setGet_contentTypeAssociationHistoryListName(value: () => String): Self = StObject.set(x, "get_contentTypeAssociationHistoryListName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_contentTypeAssociationTaskListName(value: () => String): Self = StObject.set(x, "get_contentTypeAssociationTaskListName", js.Any.fromFunction0(value))
+      inline def setGet_contentTypeAssociationTaskListName(value: () => String): Self = StObject.set(x, "get_contentTypeAssociationTaskListName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_historyList(value: () => List[js.Any]): Self = StObject.set(x, "get_historyList", js.Any.fromFunction0(value))
+      inline def setGet_historyList(value: () => List[js.Any]): Self = StObject.set(x, "get_historyList", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_name(value: () => String): Self = StObject.set(x, "get_name", js.Any.fromFunction0(value))
+      inline def setGet_name(value: () => String): Self = StObject.set(x, "get_name", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_taskList(value: () => List[js.Any]): Self = StObject.set(x, "get_taskList", js.Any.fromFunction0(value))
+      inline def setGet_taskList(value: () => List[js.Any]): Self = StObject.set(x, "get_taskList", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_template(value: () => WorkflowTemplate): Self = StObject.set(x, "get_template", js.Any.fromFunction0(value))
+      inline def setGet_template(value: () => WorkflowTemplate): Self = StObject.set(x, "get_template", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSet_contentTypeAssociationHistoryListName(value: String => Unit): Self = StObject.set(x, "set_contentTypeAssociationHistoryListName", js.Any.fromFunction1(value))
+      inline def setSet_contentTypeAssociationHistoryListName(value: String => Unit): Self = StObject.set(x, "set_contentTypeAssociationHistoryListName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_contentTypeAssociationTaskListName(value: String => Unit): Self = StObject.set(x, "set_contentTypeAssociationTaskListName", js.Any.fromFunction1(value))
+      inline def setSet_contentTypeAssociationTaskListName(value: String => Unit): Self = StObject.set(x, "set_contentTypeAssociationTaskListName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_historyList(value: List[js.Any] => Unit): Self = StObject.set(x, "set_historyList", js.Any.fromFunction1(value))
+      inline def setSet_historyList(value: List[js.Any] => Unit): Self = StObject.set(x, "set_historyList", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_name(value: String => Unit): Self = StObject.set(x, "set_name", js.Any.fromFunction1(value))
+      inline def setSet_name(value: String => Unit): Self = StObject.set(x, "set_name", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_taskList(value: List[js.Any] => Unit): Self = StObject.set(x, "set_taskList", js.Any.fromFunction1(value))
+      inline def setSet_taskList(value: List[js.Any] => Unit): Self = StObject.set(x, "set_taskList", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_template(value: WorkflowTemplate => Unit): Self = StObject.set(x, "set_template", js.Any.fromFunction1(value))
+      inline def setSet_template(value: WorkflowTemplate => Unit): Self = StObject.set(x, "set_template", js.Any.fromFunction1(value))
     }
   }
   

@@ -18,25 +18,19 @@ trait InstanceCreditSpecificationRequest extends StObject {
 }
 object InstanceCreditSpecificationRequest {
   
-  @scala.inline
-  def apply(): InstanceCreditSpecificationRequest = {
+  inline def apply(): InstanceCreditSpecificationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceCreditSpecificationRequest]
   }
   
-  @scala.inline
-  implicit class InstanceCreditSpecificationRequestMutableBuilder[Self <: InstanceCreditSpecificationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceCreditSpecificationRequest](x: Self) {
     
-    @scala.inline
-    def setCpuCredits(value: String): Self = StObject.set(x, "CpuCredits", value.asInstanceOf[js.Any])
+    inline def setCpuCredits(value: String): Self = StObject.set(x, "CpuCredits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCpuCreditsUndefined: Self = StObject.set(x, "CpuCredits", js.undefined)
+    inline def setCpuCreditsUndefined: Self = StObject.set(x, "CpuCredits", js.undefined)
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
   }
 }

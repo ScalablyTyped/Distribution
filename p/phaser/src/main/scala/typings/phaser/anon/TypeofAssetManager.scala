@@ -14,19 +14,15 @@ trait TypeofAssetManager extends StObject {
 }
 object TypeofAssetManager {
   
-  @scala.inline
-  def apply(downloadBinary: js.Any, downloadText: js.Any): TypeofAssetManager = {
+  inline def apply(downloadBinary: js.Any, downloadText: js.Any): TypeofAssetManager = {
     val __obj = js.Dynamic.literal(downloadBinary = downloadBinary.asInstanceOf[js.Any], downloadText = downloadText.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofAssetManager]
   }
   
-  @scala.inline
-  implicit class TypeofAssetManagerMutableBuilder[Self <: TypeofAssetManager] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofAssetManager](x: Self) {
     
-    @scala.inline
-    def setDownloadBinary(value: js.Any): Self = StObject.set(x, "downloadBinary", value.asInstanceOf[js.Any])
+    inline def setDownloadBinary(value: js.Any): Self = StObject.set(x, "downloadBinary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadText(value: js.Any): Self = StObject.set(x, "downloadText", value.asInstanceOf[js.Any])
+    inline def setDownloadText(value: js.Any): Self = StObject.set(x, "downloadText", value.asInstanceOf[js.Any])
   }
 }

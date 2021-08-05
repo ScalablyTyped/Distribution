@@ -32,61 +32,43 @@ trait PagespeedApiPagespeedResponseV5 extends StObject {
 }
 object PagespeedApiPagespeedResponseV5 {
   
-  @scala.inline
-  def apply(): PagespeedApiPagespeedResponseV5 = {
+  inline def apply(): PagespeedApiPagespeedResponseV5 = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PagespeedApiPagespeedResponseV5]
   }
   
-  @scala.inline
-  implicit class PagespeedApiPagespeedResponseV5MutableBuilder[Self <: PagespeedApiPagespeedResponseV5] (val x: Self) extends AnyVal {
+  extension [Self <: PagespeedApiPagespeedResponseV5](x: Self) {
     
-    @scala.inline
-    def setAnalysisUTCTimestamp(value: String): Self = StObject.set(x, "analysisUTCTimestamp", value.asInstanceOf[js.Any])
+    inline def setAnalysisUTCTimestamp(value: String): Self = StObject.set(x, "analysisUTCTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalysisUTCTimestampUndefined: Self = StObject.set(x, "analysisUTCTimestamp", js.undefined)
+    inline def setAnalysisUTCTimestampUndefined: Self = StObject.set(x, "analysisUTCTimestamp", js.undefined)
     
-    @scala.inline
-    def setCaptchaResult(value: String): Self = StObject.set(x, "captchaResult", value.asInstanceOf[js.Any])
+    inline def setCaptchaResult(value: String): Self = StObject.set(x, "captchaResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptchaResultUndefined: Self = StObject.set(x, "captchaResult", js.undefined)
+    inline def setCaptchaResultUndefined: Self = StObject.set(x, "captchaResult", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLighthouseResult(value: LighthouseResultV5): Self = StObject.set(x, "lighthouseResult", value.asInstanceOf[js.Any])
+    inline def setLighthouseResult(value: LighthouseResultV5): Self = StObject.set(x, "lighthouseResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLighthouseResultUndefined: Self = StObject.set(x, "lighthouseResult", js.undefined)
+    inline def setLighthouseResultUndefined: Self = StObject.set(x, "lighthouseResult", js.undefined)
     
-    @scala.inline
-    def setLoadingExperience(value: PagespeedApiLoadingExperienceV5): Self = StObject.set(x, "loadingExperience", value.asInstanceOf[js.Any])
+    inline def setLoadingExperience(value: PagespeedApiLoadingExperienceV5): Self = StObject.set(x, "loadingExperience", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadingExperienceUndefined: Self = StObject.set(x, "loadingExperience", js.undefined)
+    inline def setLoadingExperienceUndefined: Self = StObject.set(x, "loadingExperience", js.undefined)
     
-    @scala.inline
-    def setOriginLoadingExperience(value: PagespeedApiLoadingExperienceV5): Self = StObject.set(x, "originLoadingExperience", value.asInstanceOf[js.Any])
+    inline def setOriginLoadingExperience(value: PagespeedApiLoadingExperienceV5): Self = StObject.set(x, "originLoadingExperience", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginLoadingExperienceUndefined: Self = StObject.set(x, "originLoadingExperience", js.undefined)
+    inline def setOriginLoadingExperienceUndefined: Self = StObject.set(x, "originLoadingExperience", js.undefined)
     
-    @scala.inline
-    def setVersion(value: PagespeedVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: PagespeedVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

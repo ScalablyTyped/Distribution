@@ -22,8 +22,7 @@ trait ReplaceRetWithRet extends StObject {
 }
 object ReplaceRetWithRet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     in: /* collection */ js.Any => ReplaceExpression,
     in_ : /* collection */ js.Any => ReplaceExpression,
     into: js.Any => ReplaceExpression,
@@ -34,19 +33,14 @@ object ReplaceRetWithRet {
     __obj.asInstanceOf[ReplaceRetWithRet]
   }
   
-  @scala.inline
-  implicit class ReplaceRetWithRetMutableBuilder[Self <: ReplaceRetWithRet] (val x: Self) extends AnyVal {
+  extension [Self <: ReplaceRetWithRet](x: Self) {
     
-    @scala.inline
-    def setIn(value: /* collection */ js.Any => ReplaceExpression): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
+    inline def setIn(value: /* collection */ js.Any => ReplaceExpression): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIn_(value: /* collection */ js.Any => ReplaceExpression): Self = StObject.set(x, "in_", js.Any.fromFunction1(value))
+    inline def setIn_(value: /* collection */ js.Any => ReplaceExpression): Self = StObject.set(x, "in_", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInto(value: js.Any => ReplaceExpression): Self = StObject.set(x, "into", js.Any.fromFunction1(value))
+    inline def setInto(value: js.Any => ReplaceExpression): Self = StObject.set(x, "into", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWith(value: js.Any => ReplaceRetWithRet): Self = StObject.set(x, "with", js.Any.fromFunction1(value))
+    inline def setWith(value: js.Any => ReplaceRetWithRet): Self = StObject.set(x, "with", js.Any.fromFunction1(value))
   }
 }

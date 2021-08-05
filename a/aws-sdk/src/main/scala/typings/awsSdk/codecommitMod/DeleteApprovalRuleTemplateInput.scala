@@ -13,16 +13,13 @@ trait DeleteApprovalRuleTemplateInput extends StObject {
 }
 object DeleteApprovalRuleTemplateInput {
   
-  @scala.inline
-  def apply(approvalRuleTemplateName: ApprovalRuleTemplateName): DeleteApprovalRuleTemplateInput = {
+  inline def apply(approvalRuleTemplateName: ApprovalRuleTemplateName): DeleteApprovalRuleTemplateInput = {
     val __obj = js.Dynamic.literal(approvalRuleTemplateName = approvalRuleTemplateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteApprovalRuleTemplateInput]
   }
   
-  @scala.inline
-  implicit class DeleteApprovalRuleTemplateInputMutableBuilder[Self <: DeleteApprovalRuleTemplateInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteApprovalRuleTemplateInput](x: Self) {
     
-    @scala.inline
-    def setApprovalRuleTemplateName(value: ApprovalRuleTemplateName): Self = StObject.set(x, "approvalRuleTemplateName", value.asInstanceOf[js.Any])
+    inline def setApprovalRuleTemplateName(value: ApprovalRuleTemplateName): Self = StObject.set(x, "approvalRuleTemplateName", value.asInstanceOf[js.Any])
   }
 }

@@ -31,34 +31,25 @@ trait ClassedSizeSliderProperties
 }
 object ClassedSizeSliderProperties {
   
-  @scala.inline
-  def apply(): ClassedSizeSliderProperties = {
+  inline def apply(): ClassedSizeSliderProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClassedSizeSliderProperties]
   }
   
-  @scala.inline
-  implicit class ClassedSizeSliderPropertiesMutableBuilder[Self <: ClassedSizeSliderProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ClassedSizeSliderProperties](x: Self) {
     
-    @scala.inline
-    def setBreaks(value: js.Array[ClassedSizeSliderBreaks]): Self = StObject.set(x, "breaks", value.asInstanceOf[js.Any])
+    inline def setBreaks(value: js.Array[ClassedSizeSliderBreaks]): Self = StObject.set(x, "breaks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreaksUndefined: Self = StObject.set(x, "breaks", js.undefined)
+    inline def setBreaksUndefined: Self = StObject.set(x, "breaks", js.undefined)
     
-    @scala.inline
-    def setBreaksVarargs(value: ClassedSizeSliderBreaks*): Self = StObject.set(x, "breaks", js.Array(value :_*))
+    inline def setBreaksVarargs(value: ClassedSizeSliderBreaks*): Self = StObject.set(x, "breaks", js.Array(value :_*))
     
-    @scala.inline
-    def setStyle(value: ClassedSizeSliderStyleProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: ClassedSizeSliderStyleProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setViewModel(value: ClassedSizeSliderViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
+    inline def setViewModel(value: ClassedSizeSliderViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
+    inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
   }
 }

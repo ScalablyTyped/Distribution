@@ -20,43 +20,31 @@ trait StockChartNoteClickEvent
 }
 object StockChartNoteClickEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: StockChart): StockChartNoteClickEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: StockChart): StockChartNoteClickEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[StockChartNoteClickEvent]
   }
   
-  @scala.inline
-  implicit class StockChartNoteClickEventMutableBuilder[Self <: StockChartNoteClickEvent] (val x: Self) extends AnyVal {
+  extension [Self <: StockChartNoteClickEvent](x: Self) {
     
-    @scala.inline
-    def setCategory(value: js.Any): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: js.Any): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
-    @scala.inline
-    def setDataItem(value: js.Any): Self = StObject.set(x, "dataItem", value.asInstanceOf[js.Any])
+    inline def setDataItem(value: js.Any): Self = StObject.set(x, "dataItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataItemUndefined: Self = StObject.set(x, "dataItem", js.undefined)
+    inline def setDataItemUndefined: Self = StObject.set(x, "dataItem", js.undefined)
     
-    @scala.inline
-    def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: js.Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    @scala.inline
-    def setSeries(value: js.Any): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    inline def setSeries(value: js.Any): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
+    inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

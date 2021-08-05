@@ -10,8 +10,7 @@ object createBreakpointsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(options: BreakpointsOptions): Breakpoints = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Breakpoints]
+  inline def default(options: BreakpointsOptions): Breakpoints = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Breakpoints]
   
   @JSImport("@material-ui/core/styles/createBreakpoints", "keys")
   @js.native
@@ -27,20 +26,15 @@ object createBreakpointsMod {
   trait Breakpoint extends StObject
   object Breakpoint {
     
-    @scala.inline
-    def lg: typings.materialUiCore.materialUiCoreStrings.lg = "lg".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.lg]
+    inline def lg: typings.materialUiCore.materialUiCoreStrings.lg = "lg".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.lg]
     
-    @scala.inline
-    def md: typings.materialUiCore.materialUiCoreStrings.md = "md".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.md]
+    inline def md: typings.materialUiCore.materialUiCoreStrings.md = "md".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.md]
     
-    @scala.inline
-    def sm: typings.materialUiCore.materialUiCoreStrings.sm = "sm".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.sm]
+    inline def sm: typings.materialUiCore.materialUiCoreStrings.sm = "sm".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.sm]
     
-    @scala.inline
-    def xl: typings.materialUiCore.materialUiCoreStrings.xl = "xl".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.xl]
+    inline def xl: typings.materialUiCore.materialUiCoreStrings.xl = "xl".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.xl]
     
-    @scala.inline
-    def xs: typings.materialUiCore.materialUiCoreStrings.xs = "xs".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.xs]
+    inline def xs: typings.materialUiCore.materialUiCoreStrings.xs = "xs".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.xs]
   }
   
   /* Inlined {[ key in @material-ui/core.@material-ui/core/styles/createBreakpoints.Breakpoint ]: number} */
@@ -58,29 +52,22 @@ object createBreakpointsMod {
   }
   object BreakpointValues {
     
-    @scala.inline
-    def apply(lg: Double, md: Double, sm: Double, xl: Double, xs: Double): BreakpointValues = {
+    inline def apply(lg: Double, md: Double, sm: Double, xl: Double, xs: Double): BreakpointValues = {
       val __obj = js.Dynamic.literal(lg = lg.asInstanceOf[js.Any], md = md.asInstanceOf[js.Any], sm = sm.asInstanceOf[js.Any], xl = xl.asInstanceOf[js.Any], xs = xs.asInstanceOf[js.Any])
       __obj.asInstanceOf[BreakpointValues]
     }
     
-    @scala.inline
-    implicit class BreakpointValuesMutableBuilder[Self <: BreakpointValues] (val x: Self) extends AnyVal {
+    extension [Self <: BreakpointValues](x: Self) {
       
-      @scala.inline
-      def setLg(value: Double): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
+      inline def setLg(value: Double): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMd(value: Double): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
+      inline def setMd(value: Double): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSm(value: Double): Self = StObject.set(x, "sm", value.asInstanceOf[js.Any])
+      inline def setSm(value: Double): Self = StObject.set(x, "sm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXl(value: Double): Self = StObject.set(x, "xl", value.asInstanceOf[js.Any])
+      inline def setXl(value: Double): Self = StObject.set(x, "xl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXs(value: Double): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
+      inline def setXs(value: Double): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
     }
   }
   
@@ -127,71 +114,50 @@ object createBreakpointsMod {
   }
   object BreakpointsOptions {
     
-    @scala.inline
-    def apply(): BreakpointsOptions = {
+    inline def apply(): BreakpointsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BreakpointsOptions]
     }
     
-    @scala.inline
-    implicit class BreakpointsOptionsMutableBuilder[Self <: BreakpointsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BreakpointsOptions](x: Self) {
       
-      @scala.inline
-      def setBetween(value: (/* start */ Breakpoint, /* end */ Breakpoint) => String): Self = StObject.set(x, "between", js.Any.fromFunction2(value))
+      inline def setBetween(value: (/* start */ Breakpoint, /* end */ Breakpoint) => String): Self = StObject.set(x, "between", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBetweenUndefined: Self = StObject.set(x, "between", js.undefined)
+      inline def setBetweenUndefined: Self = StObject.set(x, "between", js.undefined)
       
-      @scala.inline
-      def setDown(value: /* key */ Breakpoint | Double => String): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
+      inline def setDown(value: /* key */ Breakpoint | Double => String): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
+      inline def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
       
-      @scala.inline
-      def setKeys(value: js.Array[Breakpoint]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+      inline def setKeys(value: js.Array[Breakpoint]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+      inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
       
-      @scala.inline
-      def setKeysVarargs(value: Breakpoint*): Self = StObject.set(x, "keys", js.Array(value :_*))
+      inline def setKeysVarargs(value: Breakpoint*): Self = StObject.set(x, "keys", js.Array(value :_*))
       
-      @scala.inline
-      def setOnly(value: /* key */ Breakpoint => String): Self = StObject.set(x, "only", js.Any.fromFunction1(value))
+      inline def setOnly(value: /* key */ Breakpoint => String): Self = StObject.set(x, "only", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
+      inline def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
       
-      @scala.inline
-      def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
       
-      @scala.inline
-      def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+      inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+      inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
       
-      @scala.inline
-      def setUp(value: /* key */ Breakpoint | Double => String): Self = StObject.set(x, "up", js.Any.fromFunction1(value))
+      inline def setUp(value: /* key */ Breakpoint | Double => String): Self = StObject.set(x, "up", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpUndefined: Self = StObject.set(x, "up", js.undefined)
+      inline def setUpUndefined: Self = StObject.set(x, "up", js.undefined)
       
-      @scala.inline
-      def setValues(value: BreakpointValues): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: BreakpointValues): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+      inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      @scala.inline
-      def setWidth(value: /* key */ Breakpoint => Double): Self = StObject.set(x, "width", js.Any.fromFunction1(value))
+      inline def setWidth(value: /* key */ Breakpoint => Double): Self = StObject.set(x, "width", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

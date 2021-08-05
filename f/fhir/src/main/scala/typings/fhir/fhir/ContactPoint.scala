@@ -58,67 +58,47 @@ trait ContactPoint
 }
 object ContactPoint {
   
-  @scala.inline
-  def apply(): ContactPoint = {
+  inline def apply(): ContactPoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContactPoint]
   }
   
-  @scala.inline
-  implicit class ContactPointMutableBuilder[Self <: ContactPoint] (val x: Self) extends AnyVal {
+  extension [Self <: ContactPoint](x: Self) {
     
-    @scala.inline
-    def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
-    @scala.inline
-    def setRank(value: positiveInt): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+    inline def setRank(value: positiveInt): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
+    inline def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
     
-    @scala.inline
-    def setSystem(value: code): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
+    inline def setSystem(value: code): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
+    inline def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
     
-    @scala.inline
-    def setUse(value: code): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
+    inline def setUse(value: code): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
+    inline def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    @scala.inline
-    def set_rank(value: Element): Self = StObject.set(x, "_rank", value.asInstanceOf[js.Any])
+    inline def set_rank(value: Element): Self = StObject.set(x, "_rank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_rankUndefined: Self = StObject.set(x, "_rank", js.undefined)
+    inline def set_rankUndefined: Self = StObject.set(x, "_rank", js.undefined)
     
-    @scala.inline
-    def set_system(value: Element): Self = StObject.set(x, "_system", value.asInstanceOf[js.Any])
+    inline def set_system(value: Element): Self = StObject.set(x, "_system", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_systemUndefined: Self = StObject.set(x, "_system", js.undefined)
+    inline def set_systemUndefined: Self = StObject.set(x, "_system", js.undefined)
     
-    @scala.inline
-    def set_use(value: Element): Self = StObject.set(x, "_use", value.asInstanceOf[js.Any])
+    inline def set_use(value: Element): Self = StObject.set(x, "_use", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_useUndefined: Self = StObject.set(x, "_use", js.undefined)
+    inline def set_useUndefined: Self = StObject.set(x, "_use", js.undefined)
     
-    @scala.inline
-    def set_value(value: Element): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
+    inline def set_value(value: Element): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_valueUndefined: Self = StObject.set(x, "_value", js.undefined)
+    inline def set_valueUndefined: Self = StObject.set(x, "_value", js.undefined)
   }
 }

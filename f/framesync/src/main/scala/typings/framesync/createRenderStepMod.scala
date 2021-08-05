@@ -11,6 +11,5 @@ object createRenderStepMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(setRunNextFrame: js.Function1[/* fillRun */ Boolean, Unit]): Step = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(setRunNextFrame.asInstanceOf[js.Any]).asInstanceOf[Step]
+  inline def default(setRunNextFrame: js.Function1[/* fillRun */ Boolean, Unit]): Step = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(setRunNextFrame.asInstanceOf[js.Any]).asInstanceOf[Step]
 }

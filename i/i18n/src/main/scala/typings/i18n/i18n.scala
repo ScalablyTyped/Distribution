@@ -133,137 +133,94 @@ object i18n {
   }
   object ConfigurationOptions {
     
-    @scala.inline
-    def apply(): ConfigurationOptions = {
+    inline def apply(): ConfigurationOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigurationOptions]
     }
     
-    @scala.inline
-    implicit class ConfigurationOptionsMutableBuilder[Self <: ConfigurationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigurationOptions](x: Self) {
       
-      @scala.inline
-      def setApi(value: StringDictionary[String]): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
+      inline def setApi(value: StringDictionary[String]): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
+      inline def setApiUndefined: Self = StObject.set(x, "api", js.undefined)
       
-      @scala.inline
-      def setAutoReload(value: Boolean): Self = StObject.set(x, "autoReload", value.asInstanceOf[js.Any])
+      inline def setAutoReload(value: Boolean): Self = StObject.set(x, "autoReload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoReloadUndefined: Self = StObject.set(x, "autoReload", js.undefined)
+      inline def setAutoReloadUndefined: Self = StObject.set(x, "autoReload", js.undefined)
       
-      @scala.inline
-      def setCookie(value: String): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+      inline def setCookie(value: String): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
+      inline def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
       
-      @scala.inline
-      def setDefaultLocale(value: String): Self = StObject.set(x, "defaultLocale", value.asInstanceOf[js.Any])
+      inline def setDefaultLocale(value: String): Self = StObject.set(x, "defaultLocale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultLocaleUndefined: Self = StObject.set(x, "defaultLocale", js.undefined)
+      inline def setDefaultLocaleUndefined: Self = StObject.set(x, "defaultLocale", js.undefined)
       
-      @scala.inline
-      def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
+      inline def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectoryPermissions(value: String): Self = StObject.set(x, "directoryPermissions", value.asInstanceOf[js.Any])
+      inline def setDirectoryPermissions(value: String): Self = StObject.set(x, "directoryPermissions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectoryPermissionsUndefined: Self = StObject.set(x, "directoryPermissions", js.undefined)
+      inline def setDirectoryPermissionsUndefined: Self = StObject.set(x, "directoryPermissions", js.undefined)
       
-      @scala.inline
-      def setDirectoryUndefined: Self = StObject.set(x, "directory", js.undefined)
+      inline def setDirectoryUndefined: Self = StObject.set(x, "directory", js.undefined)
       
-      @scala.inline
-      def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+      inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
+      inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
       
-      @scala.inline
-      def setFallbacks(value: StringDictionary[String]): Self = StObject.set(x, "fallbacks", value.asInstanceOf[js.Any])
+      inline def setFallbacks(value: StringDictionary[String]): Self = StObject.set(x, "fallbacks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbacksUndefined: Self = StObject.set(x, "fallbacks", js.undefined)
+      inline def setFallbacksUndefined: Self = StObject.set(x, "fallbacks", js.undefined)
       
-      @scala.inline
-      def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+      inline def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+      inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
       
-      @scala.inline
-      def setLocales(value: js.Array[String]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
+      inline def setLocales(value: js.Array[String]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
+      inline def setLocalesUndefined: Self = StObject.set(x, "locales", js.undefined)
       
-      @scala.inline
-      def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value :_*))
+      inline def setLocalesVarargs(value: String*): Self = StObject.set(x, "locales", js.Array(value :_*))
       
-      @scala.inline
-      def setLogDebugFn(value: /* msg */ String => Unit): Self = StObject.set(x, "logDebugFn", js.Any.fromFunction1(value))
+      inline def setLogDebugFn(value: /* msg */ String => Unit): Self = StObject.set(x, "logDebugFn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLogDebugFnUndefined: Self = StObject.set(x, "logDebugFn", js.undefined)
+      inline def setLogDebugFnUndefined: Self = StObject.set(x, "logDebugFn", js.undefined)
       
-      @scala.inline
-      def setLogErrorFn(value: /* msg */ String => Unit): Self = StObject.set(x, "logErrorFn", js.Any.fromFunction1(value))
+      inline def setLogErrorFn(value: /* msg */ String => Unit): Self = StObject.set(x, "logErrorFn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLogErrorFnUndefined: Self = StObject.set(x, "logErrorFn", js.undefined)
+      inline def setLogErrorFnUndefined: Self = StObject.set(x, "logErrorFn", js.undefined)
       
-      @scala.inline
-      def setLogWarnFn(value: /* msg */ String => Unit): Self = StObject.set(x, "logWarnFn", js.Any.fromFunction1(value))
+      inline def setLogWarnFn(value: /* msg */ String => Unit): Self = StObject.set(x, "logWarnFn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLogWarnFnUndefined: Self = StObject.set(x, "logWarnFn", js.undefined)
+      inline def setLogWarnFnUndefined: Self = StObject.set(x, "logWarnFn", js.undefined)
       
-      @scala.inline
-      def setObjectNotation(value: Boolean): Self = StObject.set(x, "objectNotation", value.asInstanceOf[js.Any])
+      inline def setObjectNotation(value: Boolean): Self = StObject.set(x, "objectNotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectNotationUndefined: Self = StObject.set(x, "objectNotation", js.undefined)
+      inline def setObjectNotationUndefined: Self = StObject.set(x, "objectNotation", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setPreserveLegacyCase(value: Boolean): Self = StObject.set(x, "preserveLegacyCase", value.asInstanceOf[js.Any])
+      inline def setPreserveLegacyCase(value: Boolean): Self = StObject.set(x, "preserveLegacyCase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveLegacyCaseUndefined: Self = StObject.set(x, "preserveLegacyCase", js.undefined)
+      inline def setPreserveLegacyCaseUndefined: Self = StObject.set(x, "preserveLegacyCase", js.undefined)
       
-      @scala.inline
-      def setQueryParameter(value: String): Self = StObject.set(x, "queryParameter", value.asInstanceOf[js.Any])
+      inline def setQueryParameter(value: String): Self = StObject.set(x, "queryParameter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryParameterUndefined: Self = StObject.set(x, "queryParameter", js.undefined)
+      inline def setQueryParameterUndefined: Self = StObject.set(x, "queryParameter", js.undefined)
       
-      @scala.inline
-      def setRegister(value: js.Any): Self = StObject.set(x, "register", value.asInstanceOf[js.Any])
+      inline def setRegister(value: js.Any): Self = StObject.set(x, "register", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegisterUndefined: Self = StObject.set(x, "register", js.undefined)
+      inline def setRegisterUndefined: Self = StObject.set(x, "register", js.undefined)
       
-      @scala.inline
-      def setSyncFiles(value: Boolean): Self = StObject.set(x, "syncFiles", value.asInstanceOf[js.Any])
+      inline def setSyncFiles(value: Boolean): Self = StObject.set(x, "syncFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyncFilesUndefined: Self = StObject.set(x, "syncFiles", js.undefined)
+      inline def setSyncFilesUndefined: Self = StObject.set(x, "syncFiles", js.undefined)
       
-      @scala.inline
-      def setUpdateFiles(value: Boolean): Self = StObject.set(x, "updateFiles", value.asInstanceOf[js.Any])
+      inline def setUpdateFiles(value: Boolean): Self = StObject.set(x, "updateFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateFilesUndefined: Self = StObject.set(x, "updateFiles", js.undefined)
+      inline def setUpdateFilesUndefined: Self = StObject.set(x, "updateFiles", js.undefined)
     }
   }
   
@@ -285,32 +242,24 @@ object i18n {
   }
   object PluralOptions {
     
-    @scala.inline
-    def apply(plural: String, singular: String): PluralOptions = {
+    inline def apply(plural: String, singular: String): PluralOptions = {
       val __obj = js.Dynamic.literal(plural = plural.asInstanceOf[js.Any], singular = singular.asInstanceOf[js.Any])
       __obj.asInstanceOf[PluralOptions]
     }
     
-    @scala.inline
-    implicit class PluralOptionsMutableBuilder[Self <: PluralOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PluralOptions](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setPlural(value: String): Self = StObject.set(x, "plural", value.asInstanceOf[js.Any])
+      inline def setPlural(value: String): Self = StObject.set(x, "plural", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSingular(value: String): Self = StObject.set(x, "singular", value.asInstanceOf[js.Any])
+      inline def setSingular(value: String): Self = StObject.set(x, "singular", value.asInstanceOf[js.Any])
     }
   }
   
@@ -324,23 +273,18 @@ object i18n {
   }
   object TranslateOptions {
     
-    @scala.inline
-    def apply(phrase: String): TranslateOptions = {
+    inline def apply(phrase: String): TranslateOptions = {
       val __obj = js.Dynamic.literal(phrase = phrase.asInstanceOf[js.Any])
       __obj.asInstanceOf[TranslateOptions]
     }
     
-    @scala.inline
-    implicit class TranslateOptionsMutableBuilder[Self <: TranslateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TranslateOptions](x: Self) {
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setPhrase(value: String): Self = StObject.set(x, "phrase", value.asInstanceOf[js.Any])
+      inline def setPhrase(value: String): Self = StObject.set(x, "phrase", value.asInstanceOf[js.Any])
     }
   }
 }

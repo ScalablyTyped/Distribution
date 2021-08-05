@@ -9,26 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(glob: String): IWatchStream = ^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any]).asInstanceOf[IWatchStream]
-  @scala.inline
-  def apply(glob: String, callback: Cb): IWatchStream = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IWatchStream]
-  @scala.inline
-  def apply(glob: String, options: Unit, callback: Cb): IWatchStream = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IWatchStream]
-  @scala.inline
-  def apply(glob: String, options: IOptions): IWatchStream = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IWatchStream]
-  @scala.inline
-  def apply(glob: String, options: IOptions, callback: Cb): IWatchStream = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IWatchStream]
-  @scala.inline
-  def apply(glob: js.Array[String]): IWatchStream = ^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any]).asInstanceOf[IWatchStream]
-  @scala.inline
-  def apply(glob: js.Array[String], callback: Cb): IWatchStream = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IWatchStream]
-  @scala.inline
-  def apply(glob: js.Array[String], options: Unit, callback: Cb): IWatchStream = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IWatchStream]
-  @scala.inline
-  def apply(glob: js.Array[String], options: IOptions): IWatchStream = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IWatchStream]
-  @scala.inline
-  def apply(glob: js.Array[String], options: IOptions, callback: Cb): IWatchStream = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IWatchStream]
+  inline def apply(glob: String): IWatchStream = ^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any]).asInstanceOf[IWatchStream]
+  inline def apply(glob: String, callback: Cb): IWatchStream = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IWatchStream]
+  inline def apply(glob: String, options: Unit, callback: Cb): IWatchStream = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IWatchStream]
+  inline def apply(glob: String, options: IOptions): IWatchStream = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IWatchStream]
+  inline def apply(glob: String, options: IOptions, callback: Cb): IWatchStream = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IWatchStream]
+  inline def apply(glob: js.Array[String]): IWatchStream = ^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any]).asInstanceOf[IWatchStream]
+  inline def apply(glob: js.Array[String], callback: Cb): IWatchStream = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IWatchStream]
+  inline def apply(glob: js.Array[String], options: Unit, callback: Cb): IWatchStream = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IWatchStream]
+  inline def apply(glob: js.Array[String], options: IOptions): IWatchStream = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IWatchStream]
+  inline def apply(glob: js.Array[String], options: IOptions, callback: Cb): IWatchStream = (^.asInstanceOf[js.Dynamic].apply(glob.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[IWatchStream]
   
   @JSImport("gulp-watch", JSImport.Namespace)
   @js.native
@@ -52,47 +42,34 @@ object mod {
   }
   object IOptions {
     
-    @scala.inline
-    def apply(): IOptions = {
+    inline def apply(): IOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IOptions]
     }
     
-    @scala.inline
-    implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IOptions](x: Self) {
       
-      @scala.inline
-      def setEvents(value: js.Array[String]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: js.Array[String]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+      inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
-      @scala.inline
-      def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value :_*))
+      inline def setEventsVarargs(value: String*): Self = StObject.set(x, "events", js.Array(value :_*))
       
-      @scala.inline
-      def setIgnoreInitial(value: Boolean): Self = StObject.set(x, "ignoreInitial", value.asInstanceOf[js.Any])
+      inline def setIgnoreInitial(value: Boolean): Self = StObject.set(x, "ignoreInitial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreInitialUndefined: Self = StObject.set(x, "ignoreInitial", js.undefined)
+      inline def setIgnoreInitialUndefined: Self = StObject.set(x, "ignoreInitial", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setReadDelay(value: Double): Self = StObject.set(x, "readDelay", value.asInstanceOf[js.Any])
+      inline def setReadDelay(value: Double): Self = StObject.set(x, "readDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadDelayUndefined: Self = StObject.set(x, "readDelay", js.undefined)
+      inline def setReadDelayUndefined: Self = StObject.set(x, "readDelay", js.undefined)
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
   

@@ -25,14 +25,11 @@ object BootstrapGrowlIfightcrime {
   trait AlignType extends StObject
   object AlignType {
     
-    @scala.inline
-    def center: typings.bootstrapGrowlIfightcrime.bootstrapGrowlIfightcrimeStrings.center = "center".asInstanceOf[typings.bootstrapGrowlIfightcrime.bootstrapGrowlIfightcrimeStrings.center]
+    inline def center: typings.bootstrapGrowlIfightcrime.bootstrapGrowlIfightcrimeStrings.center = "center".asInstanceOf[typings.bootstrapGrowlIfightcrime.bootstrapGrowlIfightcrimeStrings.center]
     
-    @scala.inline
-    def left: typings.bootstrapGrowlIfightcrime.bootstrapGrowlIfightcrimeStrings.left = "left".asInstanceOf[typings.bootstrapGrowlIfightcrime.bootstrapGrowlIfightcrimeStrings.left]
+    inline def left: typings.bootstrapGrowlIfightcrime.bootstrapGrowlIfightcrimeStrings.left = "left".asInstanceOf[typings.bootstrapGrowlIfightcrime.bootstrapGrowlIfightcrimeStrings.left]
     
-    @scala.inline
-    def right: typings.bootstrapGrowlIfightcrime.bootstrapGrowlIfightcrimeStrings.right = "right".asInstanceOf[typings.bootstrapGrowlIfightcrime.bootstrapGrowlIfightcrimeStrings.right]
+    inline def right: typings.bootstrapGrowlIfightcrime.bootstrapGrowlIfightcrimeStrings.right = "right".asInstanceOf[typings.bootstrapGrowlIfightcrime.bootstrapGrowlIfightcrimeStrings.right]
   }
   
   trait OffsetOption extends StObject {
@@ -49,26 +46,20 @@ object BootstrapGrowlIfightcrime {
   }
   object OffsetOption {
     
-    @scala.inline
-    def apply(): OffsetOption = {
+    inline def apply(): OffsetOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OffsetOption]
     }
     
-    @scala.inline
-    implicit class OffsetOptionMutableBuilder[Self <: OffsetOption] (val x: Self) extends AnyVal {
+    extension [Self <: OffsetOption](x: Self) {
       
-      @scala.inline
-      def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
+      inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
       
-      @scala.inline
-      def setFrom(value: OffsetPositionType): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: OffsetPositionType): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     }
   }
   
@@ -79,11 +70,9 @@ object BootstrapGrowlIfightcrime {
   trait OffsetPositionType extends StObject
   object OffsetPositionType {
     
-    @scala.inline
-    def bottom: typings.bootstrapGrowlIfightcrime.bootstrapGrowlIfightcrimeStrings.bottom = "bottom".asInstanceOf[typings.bootstrapGrowlIfightcrime.bootstrapGrowlIfightcrimeStrings.bottom]
+    inline def bottom: typings.bootstrapGrowlIfightcrime.bootstrapGrowlIfightcrimeStrings.bottom = "bottom".asInstanceOf[typings.bootstrapGrowlIfightcrime.bootstrapGrowlIfightcrimeStrings.bottom]
     
-    @scala.inline
-    def top: typings.bootstrapGrowlIfightcrime.bootstrapGrowlIfightcrimeStrings.top = "top".asInstanceOf[typings.bootstrapGrowlIfightcrime.bootstrapGrowlIfightcrimeStrings.top]
+    inline def top: typings.bootstrapGrowlIfightcrime.bootstrapGrowlIfightcrimeStrings.top = "top".asInstanceOf[typings.bootstrapGrowlIfightcrime.bootstrapGrowlIfightcrimeStrings.top]
   }
   
   trait Options extends StObject {
@@ -130,65 +119,46 @@ object BootstrapGrowlIfightcrime {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAlign(value: AlignType): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: AlignType): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setAllow_dismiss(value: Boolean): Self = StObject.set(x, "allow_dismiss", value.asInstanceOf[js.Any])
+      inline def setAllow_dismiss(value: Boolean): Self = StObject.set(x, "allow_dismiss", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllow_dismissUndefined: Self = StObject.set(x, "allow_dismiss", js.undefined)
+      inline def setAllow_dismissUndefined: Self = StObject.set(x, "allow_dismiss", js.undefined)
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+      inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
-      @scala.inline
-      def setEle(value: String): Self = StObject.set(x, "ele", value.asInstanceOf[js.Any])
+      inline def setEle(value: String): Self = StObject.set(x, "ele", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEleUndefined: Self = StObject.set(x, "ele", js.undefined)
+      inline def setEleUndefined: Self = StObject.set(x, "ele", js.undefined)
       
-      @scala.inline
-      def setOffset(value: OffsetOption): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: OffsetOption): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setStackup_spacing(value: Double): Self = StObject.set(x, "stackup_spacing", value.asInstanceOf[js.Any])
+      inline def setStackup_spacing(value: Double): Self = StObject.set(x, "stackup_spacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackup_spacingUndefined: Self = StObject.set(x, "stackup_spacing", js.undefined)
+      inline def setStackup_spacingUndefined: Self = StObject.set(x, "stackup_spacing", js.undefined)
       
-      @scala.inline
-      def setType(value: AlertType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: AlertType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeNull: Self = StObject.set(x, "type", null)
+      inline def setTypeNull: Self = StObject.set(x, "type", null)
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double | auto): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double | auto): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   

@@ -37,8 +37,7 @@ trait SizeConstraintSetSizeConstraint extends StObject {
 }
 object SizeConstraintSetSizeConstraint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     comparisonOperator: Input[String],
     fieldToMatch: Input[SizeConstraintSetSizeConstraintFieldToMatch],
     size: Input[Double],
@@ -48,19 +47,14 @@ object SizeConstraintSetSizeConstraint {
     __obj.asInstanceOf[SizeConstraintSetSizeConstraint]
   }
   
-  @scala.inline
-  implicit class SizeConstraintSetSizeConstraintMutableBuilder[Self <: SizeConstraintSetSizeConstraint] (val x: Self) extends AnyVal {
+  extension [Self <: SizeConstraintSetSizeConstraint](x: Self) {
     
-    @scala.inline
-    def setComparisonOperator(value: Input[String]): Self = StObject.set(x, "comparisonOperator", value.asInstanceOf[js.Any])
+    inline def setComparisonOperator(value: Input[String]): Self = StObject.set(x, "comparisonOperator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldToMatch(value: Input[SizeConstraintSetSizeConstraintFieldToMatch]): Self = StObject.set(x, "fieldToMatch", value.asInstanceOf[js.Any])
+    inline def setFieldToMatch(value: Input[SizeConstraintSetSizeConstraintFieldToMatch]): Self = StObject.set(x, "fieldToMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Input[Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Input[Double]): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextTransformation(value: Input[String]): Self = StObject.set(x, "textTransformation", value.asInstanceOf[js.Any])
+    inline def setTextTransformation(value: Input[String]): Self = StObject.set(x, "textTransformation", value.asInstanceOf[js.Any])
   }
 }

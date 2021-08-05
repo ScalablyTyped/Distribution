@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TopBottomEnumType extends StObject
 object TopBottomEnumType {
   
-  @scala.inline
-  def bottom: typings.vis.visStrings.bottom = "bottom".asInstanceOf[typings.vis.visStrings.bottom]
+  inline def bottom: typings.vis.visStrings.bottom = "bottom".asInstanceOf[typings.vis.visStrings.bottom]
   
-  @scala.inline
-  def top: typings.vis.visStrings.top = "top".asInstanceOf[typings.vis.visStrings.top]
+  inline def top: typings.vis.visStrings.top = "top".asInstanceOf[typings.vis.visStrings.top]
 }

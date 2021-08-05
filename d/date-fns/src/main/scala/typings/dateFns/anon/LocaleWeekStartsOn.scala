@@ -18,25 +18,19 @@ trait LocaleWeekStartsOn extends StObject {
 }
 object LocaleWeekStartsOn {
   
-  @scala.inline
-  def apply(): LocaleWeekStartsOn = {
+  inline def apply(): LocaleWeekStartsOn = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocaleWeekStartsOn]
   }
   
-  @scala.inline
-  implicit class LocaleWeekStartsOnMutableBuilder[Self <: LocaleWeekStartsOn] (val x: Self) extends AnyVal {
+  extension [Self <: LocaleWeekStartsOn](x: Self) {
     
-    @scala.inline
-    def setLocale(value: typings.dateFns.Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: typings.dateFns.Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setWeekStartsOn(value: typings.dateFns.dateFnsNumbers.`0` | `1` | `2` | `3` | `4` | `5` | `6`): Self = StObject.set(x, "weekStartsOn", value.asInstanceOf[js.Any])
+    inline def setWeekStartsOn(value: typings.dateFns.dateFnsNumbers.`0` | `1` | `2` | `3` | `4` | `5` | `6`): Self = StObject.set(x, "weekStartsOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeekStartsOnUndefined: Self = StObject.set(x, "weekStartsOn", js.undefined)
+    inline def setWeekStartsOnUndefined: Self = StObject.set(x, "weekStartsOn", js.undefined)
   }
 }

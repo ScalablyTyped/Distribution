@@ -18,25 +18,19 @@ trait CoversBodyPart extends StObject {
 }
 object CoversBodyPart {
   
-  @scala.inline
-  def apply(): CoversBodyPart = {
+  inline def apply(): CoversBodyPart = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CoversBodyPart]
   }
   
-  @scala.inline
-  implicit class CoversBodyPartMutableBuilder[Self <: CoversBodyPart] (val x: Self) extends AnyVal {
+  extension [Self <: CoversBodyPart](x: Self) {
     
-    @scala.inline
-    def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
     
-    @scala.inline
-    def setValue(value: Boolean): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Boolean): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

@@ -13,22 +13,17 @@ trait GetAuthorizationTokenResponse extends StObject {
 }
 object GetAuthorizationTokenResponse {
   
-  @scala.inline
-  def apply(): GetAuthorizationTokenResponse = {
+  inline def apply(): GetAuthorizationTokenResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAuthorizationTokenResponse]
   }
   
-  @scala.inline
-  implicit class GetAuthorizationTokenResponseMutableBuilder[Self <: GetAuthorizationTokenResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAuthorizationTokenResponse](x: Self) {
     
-    @scala.inline
-    def setAuthorizationData(value: AuthorizationDataList): Self = StObject.set(x, "authorizationData", value.asInstanceOf[js.Any])
+    inline def setAuthorizationData(value: AuthorizationDataList): Self = StObject.set(x, "authorizationData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizationDataUndefined: Self = StObject.set(x, "authorizationData", js.undefined)
+    inline def setAuthorizationDataUndefined: Self = StObject.set(x, "authorizationData", js.undefined)
     
-    @scala.inline
-    def setAuthorizationDataVarargs(value: AuthorizationData*): Self = StObject.set(x, "authorizationData", js.Array(value :_*))
+    inline def setAuthorizationDataVarargs(value: AuthorizationData*): Self = StObject.set(x, "authorizationData", js.Array(value :_*))
   }
 }

@@ -10,19 +10,15 @@ trait DeleteCapacityProviderResponse extends StObject {
 }
 object DeleteCapacityProviderResponse {
   
-  @scala.inline
-  def apply(): DeleteCapacityProviderResponse = {
+  inline def apply(): DeleteCapacityProviderResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteCapacityProviderResponse]
   }
   
-  @scala.inline
-  implicit class DeleteCapacityProviderResponseMutableBuilder[Self <: DeleteCapacityProviderResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteCapacityProviderResponse](x: Self) {
     
-    @scala.inline
-    def setCapacityProvider(value: CapacityProvider): Self = StObject.set(x, "capacityProvider", value.asInstanceOf[js.Any])
+    inline def setCapacityProvider(value: CapacityProvider): Self = StObject.set(x, "capacityProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapacityProviderUndefined: Self = StObject.set(x, "capacityProvider", js.undefined)
+    inline def setCapacityProviderUndefined: Self = StObject.set(x, "capacityProvider", js.undefined)
   }
 }

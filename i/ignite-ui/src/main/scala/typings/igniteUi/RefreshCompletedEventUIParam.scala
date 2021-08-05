@@ -13,19 +13,15 @@ trait RefreshCompletedEventUIParam extends StObject {
 }
 object RefreshCompletedEventUIParam {
   
-  @scala.inline
-  def apply(): RefreshCompletedEventUIParam = {
+  inline def apply(): RefreshCompletedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RefreshCompletedEventUIParam]
   }
   
-  @scala.inline
-  implicit class RefreshCompletedEventUIParamMutableBuilder[Self <: RefreshCompletedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: RefreshCompletedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setChart(value: js.Any): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+    inline def setChart(value: js.Any): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChartUndefined: Self = StObject.set(x, "chart", js.undefined)
+    inline def setChartUndefined: Self = StObject.set(x, "chart", js.undefined)
   }
 }

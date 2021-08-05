@@ -48,61 +48,43 @@ trait DeploymentStrategy extends StObject {
 }
 object DeploymentStrategy {
   
-  @scala.inline
-  def apply(): DeploymentStrategy = {
+  inline def apply(): DeploymentStrategy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeploymentStrategy]
   }
   
-  @scala.inline
-  implicit class DeploymentStrategyMutableBuilder[Self <: DeploymentStrategy] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentStrategy](x: Self) {
     
-    @scala.inline
-    def setDeploymentDurationInMinutes(value: MinutesBetween0And24Hours): Self = StObject.set(x, "DeploymentDurationInMinutes", value.asInstanceOf[js.Any])
+    inline def setDeploymentDurationInMinutes(value: MinutesBetween0And24Hours): Self = StObject.set(x, "DeploymentDurationInMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentDurationInMinutesUndefined: Self = StObject.set(x, "DeploymentDurationInMinutes", js.undefined)
+    inline def setDeploymentDurationInMinutesUndefined: Self = StObject.set(x, "DeploymentDurationInMinutes", js.undefined)
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setFinalBakeTimeInMinutes(value: MinutesBetween0And24Hours): Self = StObject.set(x, "FinalBakeTimeInMinutes", value.asInstanceOf[js.Any])
+    inline def setFinalBakeTimeInMinutes(value: MinutesBetween0And24Hours): Self = StObject.set(x, "FinalBakeTimeInMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalBakeTimeInMinutesUndefined: Self = StObject.set(x, "FinalBakeTimeInMinutes", js.undefined)
+    inline def setFinalBakeTimeInMinutesUndefined: Self = StObject.set(x, "FinalBakeTimeInMinutes", js.undefined)
     
-    @scala.inline
-    def setGrowthFactor(value: Percentage): Self = StObject.set(x, "GrowthFactor", value.asInstanceOf[js.Any])
+    inline def setGrowthFactor(value: Percentage): Self = StObject.set(x, "GrowthFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrowthFactorUndefined: Self = StObject.set(x, "GrowthFactor", js.undefined)
+    inline def setGrowthFactorUndefined: Self = StObject.set(x, "GrowthFactor", js.undefined)
     
-    @scala.inline
-    def setGrowthType(value: GrowthType): Self = StObject.set(x, "GrowthType", value.asInstanceOf[js.Any])
+    inline def setGrowthType(value: GrowthType): Self = StObject.set(x, "GrowthType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrowthTypeUndefined: Self = StObject.set(x, "GrowthType", js.undefined)
+    inline def setGrowthTypeUndefined: Self = StObject.set(x, "GrowthType", js.undefined)
     
-    @scala.inline
-    def setId(value: Id): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: Id): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setReplicateTo(value: ReplicateTo): Self = StObject.set(x, "ReplicateTo", value.asInstanceOf[js.Any])
+    inline def setReplicateTo(value: ReplicateTo): Self = StObject.set(x, "ReplicateTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicateToUndefined: Self = StObject.set(x, "ReplicateTo", js.undefined)
+    inline def setReplicateToUndefined: Self = StObject.set(x, "ReplicateTo", js.undefined)
   }
 }

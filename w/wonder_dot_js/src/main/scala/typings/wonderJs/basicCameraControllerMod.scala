@@ -20,7 +20,6 @@ object basicCameraControllerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(cameraComponent: Camera): BasicCameraController = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(cameraComponent.asInstanceOf[js.Any]).asInstanceOf[BasicCameraController]
+    inline def create(cameraComponent: Camera): BasicCameraController = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(cameraComponent.asInstanceOf[js.Any]).asInstanceOf[BasicCameraController]
   }
 }

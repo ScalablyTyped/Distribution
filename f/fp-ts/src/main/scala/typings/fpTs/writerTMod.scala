@@ -21,16 +21,11 @@ object writerTMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getWriterM[M](M: Monad[M]): WriterM[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWriterM")(M.asInstanceOf[js.Any]).asInstanceOf[WriterM[M]]
-  @scala.inline
-  def getWriterM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](M: Monad1[M]): WriterM1[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWriterM")(M.asInstanceOf[js.Any]).asInstanceOf[WriterM1[M]]
-  @scala.inline
-  def getWriterM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](M: Monad2[M]): WriterM2[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWriterM")(M.asInstanceOf[js.Any]).asInstanceOf[WriterM2[M]]
-  @scala.inline
-  def getWriterM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](M: Monad3[M]): WriterM3[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWriterM")(M.asInstanceOf[js.Any]).asInstanceOf[WriterM3[M]]
-  @scala.inline
-  def getWriterM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](M: Monad2C[M, E]): WriterM2C[M, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWriterM")(M.asInstanceOf[js.Any]).asInstanceOf[WriterM2C[M, E]]
+  inline def getWriterM[M](M: Monad[M]): WriterM[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWriterM")(M.asInstanceOf[js.Any]).asInstanceOf[WriterM[M]]
+  inline def getWriterM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](M: Monad1[M]): WriterM1[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWriterM")(M.asInstanceOf[js.Any]).asInstanceOf[WriterM1[M]]
+  inline def getWriterM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](M: Monad2[M]): WriterM2[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWriterM")(M.asInstanceOf[js.Any]).asInstanceOf[WriterM2[M]]
+  inline def getWriterM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](M: Monad3[M]): WriterM3[M] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWriterM")(M.asInstanceOf[js.Any]).asInstanceOf[WriterM3[M]]
+  inline def getWriterM[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](M: Monad2C[M, E]): WriterM2C[M, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWriterM")(M.asInstanceOf[js.Any]).asInstanceOf[WriterM2C[M, E]]
   
   trait WriterM[M] extends StObject {
     
@@ -54,8 +49,7 @@ object writerTMod {
   }
   object WriterM {
     
-    @scala.inline
-    def apply[M](
+    inline def apply[M](
       censor: (WriterT[M, js.Any, js.Any], js.Function1[js.Any, js.Any]) => WriterT[M, js.Any, js.Any],
       evalWriter: WriterT[M, js.Any, js.Any] => js.Any,
       execWriter: WriterT[M, js.Any, js.Any] => js.Any,
@@ -70,39 +64,29 @@ object writerTMod {
       __obj.asInstanceOf[WriterM[M]]
     }
     
-    @scala.inline
-    implicit class WriterMMutableBuilder[Self <: WriterM[?], M] (val x: Self & WriterM[M]) extends AnyVal {
+    extension [Self <: WriterM[?], M](x: Self & WriterM[M]) {
       
-      @scala.inline
-      def setCensor(value: (WriterT[M, js.Any, js.Any], js.Function1[js.Any, js.Any]) => WriterT[M, js.Any, js.Any]): Self = StObject.set(x, "censor", js.Any.fromFunction2(value))
+      inline def setCensor(value: (WriterT[M, js.Any, js.Any], js.Function1[js.Any, js.Any]) => WriterT[M, js.Any, js.Any]): Self = StObject.set(x, "censor", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEvalWriter(value: WriterT[M, js.Any, js.Any] => js.Any): Self = StObject.set(x, "evalWriter", js.Any.fromFunction1(value))
+      inline def setEvalWriter(value: WriterT[M, js.Any, js.Any] => js.Any): Self = StObject.set(x, "evalWriter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExecWriter(value: WriterT[M, js.Any, js.Any] => js.Any): Self = StObject.set(x, "execWriter", js.Any.fromFunction1(value))
+      inline def setExecWriter(value: WriterT[M, js.Any, js.Any] => js.Any): Self = StObject.set(x, "execWriter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetMonad(value: Monoid[js.Any] => E[js.Any, M]): Self = StObject.set(x, "getMonad", js.Any.fromFunction1(value))
+      inline def setGetMonad(value: Monoid[js.Any] => E[js.Any, M]): Self = StObject.set(x, "getMonad", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setListen(value: WriterT[M, js.Any, js.Any] => WriterT[M, js.Any, js.Tuple2[js.Any, js.Any]]): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
+      inline def setListen(value: WriterT[M, js.Any, js.Any] => WriterT[M, js.Any, js.Tuple2[js.Any, js.Any]]): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setListens(
+      inline def setListens(
         value: (WriterT[M, js.Any, js.Any], js.Function1[js.Any, js.Any]) => WriterT[M, js.Any, js.Tuple2[js.Any, js.Any]]
       ): Self = StObject.set(x, "listens", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMap(value: (WriterT[M, js.Any, js.Any], js.Function1[js.Any, js.Any]) => WriterT[M, js.Any, js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
+      inline def setMap(value: (WriterT[M, js.Any, js.Any], js.Function1[js.Any, js.Any]) => WriterT[M, js.Any, js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPass(
+      inline def setPass(
         value: WriterT[M, js.Any, js.Tuple2[js.Any, js.Function1[js.Any, js.Any]]] => WriterT[M, js.Any, js.Any]
       ): Self = StObject.set(x, "pass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTell(value: js.Any => WriterT[M, js.Any, Unit]): Self = StObject.set(x, "tell", js.Any.fromFunction1(value))
+      inline def setTell(value: js.Any => WriterT[M, js.Any, Unit]): Self = StObject.set(x, "tell", js.Any.fromFunction1(value))
     }
   }
   
@@ -128,8 +112,7 @@ object writerTMod {
   }
   object WriterM1 {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
       censor: (WriterT1[M, js.Any, js.Any], js.Function1[js.Any, js.Any]) => WriterT1[M, js.Any, js.Any],
       evalWriter: WriterT1[M, js.Any, js.Any] => js.Any,
       execWriter: WriterT1[M, js.Any, js.Any] => js.Any,
@@ -144,39 +127,29 @@ object writerTMod {
       __obj.asInstanceOf[WriterM1[M]]
     }
     
-    @scala.inline
-    implicit class WriterM1MutableBuilder[Self <: WriterM1[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */] (val x: Self & WriterM1[M]) extends AnyVal {
+    extension [Self <: WriterM1[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](x: Self & WriterM1[M]) {
       
-      @scala.inline
-      def setCensor(value: (WriterT1[M, js.Any, js.Any], js.Function1[js.Any, js.Any]) => WriterT1[M, js.Any, js.Any]): Self = StObject.set(x, "censor", js.Any.fromFunction2(value))
+      inline def setCensor(value: (WriterT1[M, js.Any, js.Any], js.Function1[js.Any, js.Any]) => WriterT1[M, js.Any, js.Any]): Self = StObject.set(x, "censor", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEvalWriter(value: WriterT1[M, js.Any, js.Any] => js.Any): Self = StObject.set(x, "evalWriter", js.Any.fromFunction1(value))
+      inline def setEvalWriter(value: WriterT1[M, js.Any, js.Any] => js.Any): Self = StObject.set(x, "evalWriter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExecWriter(value: WriterT1[M, js.Any, js.Any] => js.Any): Self = StObject.set(x, "execWriter", js.Any.fromFunction1(value))
+      inline def setExecWriter(value: WriterT1[M, js.Any, js.Any] => js.Any): Self = StObject.set(x, "execWriter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetMonad(value: Monoid[js.Any] => Of[js.Any, M]): Self = StObject.set(x, "getMonad", js.Any.fromFunction1(value))
+      inline def setGetMonad(value: Monoid[js.Any] => Of[js.Any, M]): Self = StObject.set(x, "getMonad", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setListen(value: WriterT1[M, js.Any, js.Any] => WriterT1[M, js.Any, js.Tuple2[js.Any, js.Any]]): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
+      inline def setListen(value: WriterT1[M, js.Any, js.Any] => WriterT1[M, js.Any, js.Tuple2[js.Any, js.Any]]): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setListens(
+      inline def setListens(
         value: (WriterT1[M, js.Any, js.Any], js.Function1[js.Any, js.Any]) => WriterT1[M, js.Any, js.Tuple2[js.Any, js.Any]]
       ): Self = StObject.set(x, "listens", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMap(value: (WriterT1[M, js.Any, js.Any], js.Function1[js.Any, js.Any]) => WriterT1[M, js.Any, js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
+      inline def setMap(value: (WriterT1[M, js.Any, js.Any], js.Function1[js.Any, js.Any]) => WriterT1[M, js.Any, js.Any]): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPass(
+      inline def setPass(
         value: WriterT1[M, js.Any, js.Tuple2[js.Any, js.Function1[js.Any, js.Any]]] => WriterT1[M, js.Any, js.Any]
       ): Self = StObject.set(x, "pass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTell(value: js.Any => WriterT1[M, js.Any, Unit]): Self = StObject.set(x, "tell", js.Any.fromFunction1(value))
+      inline def setTell(value: js.Any => WriterT1[M, js.Any, Unit]): Self = StObject.set(x, "tell", js.Any.fromFunction1(value))
     }
   }
   
@@ -202,8 +175,7 @@ object writerTMod {
   }
   object WriterM2 {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
       censor: (WriterT2[M, js.Any, js.Any, js.Any], js.Function1[js.Any, js.Any]) => WriterT2[M, js.Any, js.Any, js.Any],
       evalWriter: WriterT2[M, js.Any, js.Any, js.Any] => js.Any,
       execWriter: WriterT2[M, js.Any, js.Any, js.Any] => js.Any,
@@ -218,45 +190,35 @@ object writerTMod {
       __obj.asInstanceOf[WriterM2[M]]
     }
     
-    @scala.inline
-    implicit class WriterM2MutableBuilder[Self <: WriterM2[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */] (val x: Self & WriterM2[M]) extends AnyVal {
+    extension [Self <: WriterM2[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](x: Self & WriterM2[M]) {
       
-      @scala.inline
-      def setCensor(
+      inline def setCensor(
         value: (WriterT2[M, js.Any, js.Any, js.Any], js.Function1[js.Any, js.Any]) => WriterT2[M, js.Any, js.Any, js.Any]
       ): Self = StObject.set(x, "censor", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEvalWriter(value: WriterT2[M, js.Any, js.Any, js.Any] => js.Any): Self = StObject.set(x, "evalWriter", js.Any.fromFunction1(value))
+      inline def setEvalWriter(value: WriterT2[M, js.Any, js.Any, js.Any] => js.Any): Self = StObject.set(x, "evalWriter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExecWriter(value: WriterT2[M, js.Any, js.Any, js.Any] => js.Any): Self = StObject.set(x, "execWriter", js.Any.fromFunction1(value))
+      inline def setExecWriter(value: WriterT2[M, js.Any, js.Any, js.Any] => js.Any): Self = StObject.set(x, "execWriter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetMonad(value: Monoid[js.Any] => ApChain[js.Any, M]): Self = StObject.set(x, "getMonad", js.Any.fromFunction1(value))
+      inline def setGetMonad(value: Monoid[js.Any] => ApChain[js.Any, M]): Self = StObject.set(x, "getMonad", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setListen(
+      inline def setListen(
         value: WriterT2[M, js.Any, js.Any, js.Any] => WriterT2[M, js.Any, js.Any, js.Tuple2[js.Any, js.Any]]
       ): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setListens(
+      inline def setListens(
         value: (WriterT2[M, js.Any, js.Any, js.Any], js.Function1[js.Any, js.Any]) => WriterT2[M, js.Any, js.Any, js.Tuple2[js.Any, js.Any]]
       ): Self = StObject.set(x, "listens", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMap(
+      inline def setMap(
         value: (WriterT2[M, js.Any, js.Any, js.Any], js.Function1[js.Any, js.Any]) => WriterT2[M, js.Any, js.Any, js.Any]
       ): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPass(
+      inline def setPass(
         value: WriterT2[M, js.Any, js.Any, js.Tuple2[js.Any, js.Function1[js.Any, js.Any]]] => WriterT2[M, js.Any, js.Any, js.Any]
       ): Self = StObject.set(x, "pass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTell(value: js.Any => WriterT2[M, js.Any, js.Any, Unit]): Self = StObject.set(x, "tell", js.Any.fromFunction1(value))
+      inline def setTell(value: js.Any => WriterT2[M, js.Any, js.Any, Unit]): Self = StObject.set(x, "tell", js.Any.fromFunction1(value))
     }
   }
   
@@ -282,8 +244,7 @@ object writerTMod {
   }
   object WriterM2C {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
       censor: (WriterT2[M, E, js.Any, js.Any], js.Function1[js.Any, js.Any]) => WriterT2[M, E, js.Any, js.Any],
       evalWriter: WriterT2[M, E, js.Any, js.Any] => js.Any,
       execWriter: WriterT2[M, E, js.Any, js.Any] => js.Any,
@@ -298,43 +259,33 @@ object writerTMod {
       __obj.asInstanceOf[WriterM2C[M, E]]
     }
     
-    @scala.inline
-    implicit class WriterM2CMutableBuilder[Self <: WriterM2C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E] (val x: Self & (WriterM2C[M, E])) extends AnyVal {
+    extension [Self <: WriterM2C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](x: Self & (WriterM2C[M, E])) {
       
-      @scala.inline
-      def setCensor(
+      inline def setCensor(
         value: (WriterT2[M, E, js.Any, js.Any], js.Function1[js.Any, js.Any]) => WriterT2[M, E, js.Any, js.Any]
       ): Self = StObject.set(x, "censor", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEvalWriter(value: WriterT2[M, E, js.Any, js.Any] => js.Any): Self = StObject.set(x, "evalWriter", js.Any.fromFunction1(value))
+      inline def setEvalWriter(value: WriterT2[M, E, js.Any, js.Any] => js.Any): Self = StObject.set(x, "evalWriter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExecWriter(value: WriterT2[M, E, js.Any, js.Any] => js.Any): Self = StObject.set(x, "execWriter", js.Any.fromFunction1(value))
+      inline def setExecWriter(value: WriterT2[M, E, js.Any, js.Any] => js.Any): Self = StObject.set(x, "execWriter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetMonad(value: Monoid[js.Any] => ChainE[js.Any, M, E]): Self = StObject.set(x, "getMonad", js.Any.fromFunction1(value))
+      inline def setGetMonad(value: Monoid[js.Any] => ChainE[js.Any, M, E]): Self = StObject.set(x, "getMonad", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setListen(value: WriterT2[M, E, js.Any, js.Any] => WriterT2[M, E, js.Any, js.Tuple2[js.Any, js.Any]]): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
+      inline def setListen(value: WriterT2[M, E, js.Any, js.Any] => WriterT2[M, E, js.Any, js.Tuple2[js.Any, js.Any]]): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setListens(
+      inline def setListens(
         value: (WriterT2[M, E, js.Any, js.Any], js.Function1[js.Any, js.Any]) => WriterT2[M, E, js.Any, js.Tuple2[js.Any, js.Any]]
       ): Self = StObject.set(x, "listens", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMap(
+      inline def setMap(
         value: (WriterT2[M, E, js.Any, js.Any], js.Function1[js.Any, js.Any]) => WriterT2[M, E, js.Any, js.Any]
       ): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPass(
+      inline def setPass(
         value: WriterT2[M, E, js.Any, js.Tuple2[js.Any, js.Function1[js.Any, js.Any]]] => WriterT2[M, E, js.Any, js.Any]
       ): Self = StObject.set(x, "pass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTell(value: js.Any => WriterT2[M, E, js.Any, Unit]): Self = StObject.set(x, "tell", js.Any.fromFunction1(value))
+      inline def setTell(value: js.Any => WriterT2[M, E, js.Any, Unit]): Self = StObject.set(x, "tell", js.Any.fromFunction1(value))
     }
   }
   
@@ -360,8 +311,7 @@ object writerTMod {
   }
   object WriterM3 {
     
-    @scala.inline
-    def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
+    inline def apply[M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
       censor: (WriterT3[M, js.Any, js.Any, js.Any, js.Any], js.Function1[js.Any, js.Any]) => WriterT3[M, js.Any, js.Any, js.Any, js.Any],
       evalWriter: WriterT3[M, js.Any, js.Any, js.Any, js.Any] => js.Any,
       execWriter: WriterT3[M, js.Any, js.Any, js.Any, js.Any] => js.Any,
@@ -376,45 +326,35 @@ object writerTMod {
       __obj.asInstanceOf[WriterM3[M]]
     }
     
-    @scala.inline
-    implicit class WriterM3MutableBuilder[Self <: WriterM3[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */] (val x: Self & WriterM3[M]) extends AnyVal {
+    extension [Self <: WriterM3[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](x: Self & WriterM3[M]) {
       
-      @scala.inline
-      def setCensor(
+      inline def setCensor(
         value: (WriterT3[M, js.Any, js.Any, js.Any, js.Any], js.Function1[js.Any, js.Any]) => WriterT3[M, js.Any, js.Any, js.Any, js.Any]
       ): Self = StObject.set(x, "censor", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEvalWriter(value: WriterT3[M, js.Any, js.Any, js.Any, js.Any] => js.Any): Self = StObject.set(x, "evalWriter", js.Any.fromFunction1(value))
+      inline def setEvalWriter(value: WriterT3[M, js.Any, js.Any, js.Any, js.Any] => js.Any): Self = StObject.set(x, "evalWriter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExecWriter(value: WriterT3[M, js.Any, js.Any, js.Any, js.Any] => js.Any): Self = StObject.set(x, "execWriter", js.Any.fromFunction1(value))
+      inline def setExecWriter(value: WriterT3[M, js.Any, js.Any, js.Any, js.Any] => js.Any): Self = StObject.set(x, "execWriter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetMonad(value: Monoid[js.Any] => EMap[js.Any, M]): Self = StObject.set(x, "getMonad", js.Any.fromFunction1(value))
+      inline def setGetMonad(value: Monoid[js.Any] => EMap[js.Any, M]): Self = StObject.set(x, "getMonad", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setListen(
+      inline def setListen(
         value: WriterT3[M, js.Any, js.Any, js.Any, js.Any] => WriterT3[M, js.Any, js.Any, js.Any, js.Tuple2[js.Any, js.Any]]
       ): Self = StObject.set(x, "listen", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setListens(
+      inline def setListens(
         value: (WriterT3[M, js.Any, js.Any, js.Any, js.Any], js.Function1[js.Any, js.Any]) => WriterT3[M, js.Any, js.Any, js.Any, js.Tuple2[js.Any, js.Any]]
       ): Self = StObject.set(x, "listens", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMap(
+      inline def setMap(
         value: (WriterT3[M, js.Any, js.Any, js.Any, js.Any], js.Function1[js.Any, js.Any]) => WriterT3[M, js.Any, js.Any, js.Any, js.Any]
       ): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPass(
+      inline def setPass(
         value: WriterT3[M, js.Any, js.Any, js.Any, js.Tuple2[js.Any, js.Function1[js.Any, js.Any]]] => WriterT3[M, js.Any, js.Any, js.Any, js.Any]
       ): Self = StObject.set(x, "pass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTell(value: js.Any => WriterT3[M, js.Any, js.Any, js.Any, Unit]): Self = StObject.set(x, "tell", js.Any.fromFunction1(value))
+      inline def setTell(value: js.Any => WriterT3[M, js.Any, js.Any, js.Any, Unit]): Self = StObject.set(x, "tell", js.Any.fromFunction1(value))
     }
   }
   

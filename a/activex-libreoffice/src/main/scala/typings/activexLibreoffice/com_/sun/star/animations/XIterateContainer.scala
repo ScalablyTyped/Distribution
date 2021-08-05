@@ -33,8 +33,7 @@ trait XIterateContainer
 }
 object XIterateContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Acceleration: Double,
     AutoReverse: Boolean,
     Begin: js.Any,
@@ -70,19 +69,14 @@ object XIterateContainer {
     __obj.asInstanceOf[XIterateContainer]
   }
   
-  @scala.inline
-  implicit class XIterateContainerMutableBuilder[Self <: XIterateContainer] (val x: Self) extends AnyVal {
+  extension [Self <: XIterateContainer](x: Self) {
     
-    @scala.inline
-    def setIterateInterval(value: Double): Self = StObject.set(x, "IterateInterval", value.asInstanceOf[js.Any])
+    inline def setIterateInterval(value: Double): Self = StObject.set(x, "IterateInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIterateType(value: Double): Self = StObject.set(x, "IterateType", value.asInstanceOf[js.Any])
+    inline def setIterateType(value: Double): Self = StObject.set(x, "IterateType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubItem(value: Double): Self = StObject.set(x, "SubItem", value.asInstanceOf[js.Any])
+    inline def setSubItem(value: Double): Self = StObject.set(x, "SubItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: js.Any): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: js.Any): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
   }
 }

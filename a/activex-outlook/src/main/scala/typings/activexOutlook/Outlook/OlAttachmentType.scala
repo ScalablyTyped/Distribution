@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlAttachmentType extends StObject
 object OlAttachmentType {
   
-  @scala.inline
-  def olByReference: `4` = 4.asInstanceOf[`4`]
+  inline def olByReference: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def olByValue: `1` = 1.asInstanceOf[`1`]
+  inline def olByValue: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olEmbeddeditem: `5` = 5.asInstanceOf[`5`]
+  inline def olEmbeddeditem: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def olOLE: `6` = 6.asInstanceOf[`6`]
+  inline def olOLE: `6` = 6.asInstanceOf[`6`]
 }

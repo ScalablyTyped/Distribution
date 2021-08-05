@@ -22,8 +22,7 @@ trait BootboxConfirmOptions
 }
 object BootboxConfirmOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     callback: Boolean => js.Any,
     message: JQuery[HTMLElement] | js.Array[js.Any] | Element | DocumentFragment | Text | String | (js.Function2[/* index */ Double, /* html */ String, String | Element | JQuery[HTMLElement]])
   ): BootboxConfirmOptions = {
@@ -31,16 +30,12 @@ object BootboxConfirmOptions {
     __obj.asInstanceOf[BootboxConfirmOptions]
   }
   
-  @scala.inline
-  implicit class BootboxConfirmOptionsMutableBuilder[Self <: BootboxConfirmOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BootboxConfirmOptions](x: Self) {
     
-    @scala.inline
-    def setButtons(value: BootboxConfirmPromptButtonMap): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: BootboxConfirmPromptButtonMap): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+    inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    @scala.inline
-    def setCallback(value: Boolean => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+    inline def setCallback(value: Boolean => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
   }
 }

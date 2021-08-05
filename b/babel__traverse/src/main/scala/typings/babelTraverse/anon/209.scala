@@ -11,17 +11,14 @@ trait `209` extends StObject {
 }
 object `209` {
   
-  @scala.inline
-  def apply(): `209` = {
+  inline def apply(): `209` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("IntersectionTypeAnnotation")
     __obj.asInstanceOf[`209`]
   }
   
-  @scala.inline
-  implicit class `209MutableBuilder`[Self <: `209`] (val x: Self) extends AnyVal {
+  extension [Self <: `209`](x: Self) {
     
-    @scala.inline
-    def setType(value: IntersectionTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: IntersectionTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -17,25 +17,19 @@ trait CampaignGoal extends StObject {
 }
 object CampaignGoal {
   
-  @scala.inline
-  def apply(): CampaignGoal = {
+  inline def apply(): CampaignGoal = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CampaignGoal]
   }
   
-  @scala.inline
-  implicit class CampaignGoalMutableBuilder[Self <: CampaignGoal] (val x: Self) extends AnyVal {
+  extension [Self <: CampaignGoal](x: Self) {
     
-    @scala.inline
-    def setCampaignGoalType(value: String): Self = StObject.set(x, "campaignGoalType", value.asInstanceOf[js.Any])
+    inline def setCampaignGoalType(value: String): Self = StObject.set(x, "campaignGoalType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCampaignGoalTypeUndefined: Self = StObject.set(x, "campaignGoalType", js.undefined)
+    inline def setCampaignGoalTypeUndefined: Self = StObject.set(x, "campaignGoalType", js.undefined)
     
-    @scala.inline
-    def setPerformanceGoal(value: PerformanceGoal): Self = StObject.set(x, "performanceGoal", value.asInstanceOf[js.Any])
+    inline def setPerformanceGoal(value: PerformanceGoal): Self = StObject.set(x, "performanceGoal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerformanceGoalUndefined: Self = StObject.set(x, "performanceGoal", js.undefined)
+    inline def setPerformanceGoalUndefined: Self = StObject.set(x, "performanceGoal", js.undefined)
   }
 }

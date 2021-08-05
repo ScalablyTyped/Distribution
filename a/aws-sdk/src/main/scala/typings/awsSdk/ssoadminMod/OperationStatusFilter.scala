@@ -13,19 +13,15 @@ trait OperationStatusFilter extends StObject {
 }
 object OperationStatusFilter {
   
-  @scala.inline
-  def apply(): OperationStatusFilter = {
+  inline def apply(): OperationStatusFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OperationStatusFilter]
   }
   
-  @scala.inline
-  implicit class OperationStatusFilterMutableBuilder[Self <: OperationStatusFilter] (val x: Self) extends AnyVal {
+  extension [Self <: OperationStatusFilter](x: Self) {
     
-    @scala.inline
-    def setStatus(value: StatusValues): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: StatusValues): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

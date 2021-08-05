@@ -53,8 +53,7 @@ trait TextSortDescriptor
 }
 object TextSortDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CollatorAlgorithm: String,
     CollatorLocale: Locale,
     Delimiter: String,
@@ -87,40 +86,28 @@ object TextSortDescriptor {
     __obj.asInstanceOf[TextSortDescriptor]
   }
   
-  @scala.inline
-  implicit class TextSortDescriptorMutableBuilder[Self <: TextSortDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: TextSortDescriptor](x: Self) {
     
-    @scala.inline
-    def setDelimiter(value: String): Self = StObject.set(x, "Delimiter", value.asInstanceOf[js.Any])
+    inline def setDelimiter(value: String): Self = StObject.set(x, "Delimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSortAscending0(value: Boolean): Self = StObject.set(x, "IsSortAscending0", value.asInstanceOf[js.Any])
+    inline def setIsSortAscending0(value: Boolean): Self = StObject.set(x, "IsSortAscending0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSortAscending1(value: Boolean): Self = StObject.set(x, "IsSortAscending1", value.asInstanceOf[js.Any])
+    inline def setIsSortAscending1(value: Boolean): Self = StObject.set(x, "IsSortAscending1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSortAscending2(value: Boolean): Self = StObject.set(x, "IsSortAscending2", value.asInstanceOf[js.Any])
+    inline def setIsSortAscending2(value: Boolean): Self = StObject.set(x, "IsSortAscending2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSortInTable(value: Boolean): Self = StObject.set(x, "IsSortInTable", value.asInstanceOf[js.Any])
+    inline def setIsSortInTable(value: Boolean): Self = StObject.set(x, "IsSortInTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSortNumeric0(value: Boolean): Self = StObject.set(x, "IsSortNumeric0", value.asInstanceOf[js.Any])
+    inline def setIsSortNumeric0(value: Boolean): Self = StObject.set(x, "IsSortNumeric0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSortNumeric1(value: Boolean): Self = StObject.set(x, "IsSortNumeric1", value.asInstanceOf[js.Any])
+    inline def setIsSortNumeric1(value: Boolean): Self = StObject.set(x, "IsSortNumeric1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSortNumeric2(value: Boolean): Self = StObject.set(x, "IsSortNumeric2", value.asInstanceOf[js.Any])
+    inline def setIsSortNumeric2(value: Boolean): Self = StObject.set(x, "IsSortNumeric2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortRowOrColumnNo0(value: Double): Self = StObject.set(x, "SortRowOrColumnNo0", value.asInstanceOf[js.Any])
+    inline def setSortRowOrColumnNo0(value: Double): Self = StObject.set(x, "SortRowOrColumnNo0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortRowOrColumnNo1(value: Double): Self = StObject.set(x, "SortRowOrColumnNo1", value.asInstanceOf[js.Any])
+    inline def setSortRowOrColumnNo1(value: Double): Self = StObject.set(x, "SortRowOrColumnNo1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortRowOrColumnNo2(value: Double): Self = StObject.set(x, "SortRowOrColumnNo2", value.asInstanceOf[js.Any])
+    inline def setSortRowOrColumnNo2(value: Double): Self = StObject.set(x, "SortRowOrColumnNo2", value.asInstanceOf[js.Any])
   }
 }

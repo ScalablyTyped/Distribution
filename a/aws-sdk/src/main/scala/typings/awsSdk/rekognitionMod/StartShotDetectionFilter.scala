@@ -13,19 +13,15 @@ trait StartShotDetectionFilter extends StObject {
 }
 object StartShotDetectionFilter {
   
-  @scala.inline
-  def apply(): StartShotDetectionFilter = {
+  inline def apply(): StartShotDetectionFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartShotDetectionFilter]
   }
   
-  @scala.inline
-  implicit class StartShotDetectionFilterMutableBuilder[Self <: StartShotDetectionFilter] (val x: Self) extends AnyVal {
+  extension [Self <: StartShotDetectionFilter](x: Self) {
     
-    @scala.inline
-    def setMinSegmentConfidence(value: SegmentConfidence): Self = StObject.set(x, "MinSegmentConfidence", value.asInstanceOf[js.Any])
+    inline def setMinSegmentConfidence(value: SegmentConfidence): Self = StObject.set(x, "MinSegmentConfidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinSegmentConfidenceUndefined: Self = StObject.set(x, "MinSegmentConfidence", js.undefined)
+    inline def setMinSegmentConfidenceUndefined: Self = StObject.set(x, "MinSegmentConfidence", js.undefined)
   }
 }

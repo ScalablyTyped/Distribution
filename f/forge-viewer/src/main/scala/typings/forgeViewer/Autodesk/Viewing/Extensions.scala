@@ -39,8 +39,7 @@ object Extensions {
     }
     object Snapper {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         activate: () => Unit,
         clearSnapped: () => Unit,
         copyResults: js.Any => Unit,
@@ -58,44 +57,31 @@ object Extensions {
         __obj.asInstanceOf[Snapper]
       }
       
-      @scala.inline
-      implicit class SnapperMutableBuilder[Self <: Snapper] (val x: Self) extends AnyVal {
+      extension [Self <: Snapper](x: Self) {
         
-        @scala.inline
-        def setActivate(value: () => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction0(value))
+        inline def setActivate(value: () => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setClearSnapped(value: () => Unit): Self = StObject.set(x, "clearSnapped", js.Any.fromFunction0(value))
+        inline def setClearSnapped(value: () => Unit): Self = StObject.set(x, "clearSnapped", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setCopyResults(value: js.Any => Unit): Self = StObject.set(x, "copyResults", js.Any.fromFunction1(value))
+        inline def setCopyResults(value: js.Any => Unit): Self = StObject.set(x, "copyResults", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setDeactivate(value: () => Unit): Self = StObject.set(x, "deactivate", js.Any.fromFunction0(value))
+        inline def setDeactivate(value: () => Unit): Self = StObject.set(x, "deactivate", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetEdge(value: () => js.Any): Self = StObject.set(x, "getEdge", js.Any.fromFunction0(value))
+        inline def setGetEdge(value: () => js.Any): Self = StObject.set(x, "getEdge", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetGeometry(value: () => js.Any): Self = StObject.set(x, "getGeometry", js.Any.fromFunction0(value))
+        inline def setGetGeometry(value: () => js.Any): Self = StObject.set(x, "getGeometry", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetSnapResult(value: () => SnapResult): Self = StObject.set(x, "getSnapResult", js.Any.fromFunction0(value))
+        inline def setGetSnapResult(value: () => SnapResult): Self = StObject.set(x, "getSnapResult", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetVertex(value: () => js.Any): Self = StObject.set(x, "getVertex", js.Any.fromFunction0(value))
+        inline def setGetVertex(value: () => js.Any): Self = StObject.set(x, "getVertex", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setIndicator(value: SnapperIndicator): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
+        inline def setIndicator(value: SnapperIndicator): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsActive(value: () => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
+        inline def setIsActive(value: () => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setIsSnapped(value: () => Boolean): Self = StObject.set(x, "isSnapped", js.Any.fromFunction0(value))
+        inline def setIsSnapped(value: () => Boolean): Self = StObject.set(x, "isSnapped", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnMouseMove(value: X => Boolean): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
+        inline def setOnMouseMove(value: X => Boolean): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
       }
     }
     
@@ -109,23 +95,18 @@ object Extensions {
     }
     object SnapperIndicator {
       
-      @scala.inline
-      def apply(clearOverlays: () => Unit, onCameraChange: () => Unit, render: () => Unit): SnapperIndicator = {
+      inline def apply(clearOverlays: () => Unit, onCameraChange: () => Unit, render: () => Unit): SnapperIndicator = {
         val __obj = js.Dynamic.literal(clearOverlays = js.Any.fromFunction0(clearOverlays), onCameraChange = js.Any.fromFunction0(onCameraChange), render = js.Any.fromFunction0(render))
         __obj.asInstanceOf[SnapperIndicator]
       }
       
-      @scala.inline
-      implicit class SnapperIndicatorMutableBuilder[Self <: SnapperIndicator] (val x: Self) extends AnyVal {
+      extension [Self <: SnapperIndicator](x: Self) {
         
-        @scala.inline
-        def setClearOverlays(value: () => Unit): Self = StObject.set(x, "clearOverlays", js.Any.fromFunction0(value))
+        inline def setClearOverlays(value: () => Unit): Self = StObject.set(x, "clearOverlays", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setOnCameraChange(value: () => Unit): Self = StObject.set(x, "onCameraChange", js.Any.fromFunction0(value))
+        inline def setOnCameraChange(value: () => Unit): Self = StObject.set(x, "onCameraChange", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setRender(value: () => Unit): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
+        inline def setRender(value: () => Unit): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
       }
     }
   }

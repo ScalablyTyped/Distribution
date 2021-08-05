@@ -34,31 +34,23 @@ trait WorkArounds extends StObject {
 }
 object WorkArounds {
   
-  @scala.inline
-  def apply(): WorkArounds = {
+  inline def apply(): WorkArounds = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkArounds]
   }
   
-  @scala.inline
-  implicit class WorkAroundsMutableBuilder[Self <: WorkArounds] (val x: Self) extends AnyVal {
+  extension [Self <: WorkArounds](x: Self) {
     
-    @scala.inline
-    def setIos8BrowserCrash(value: Boolean): Self = StObject.set(x, "ios8BrowserCrash", value.asInstanceOf[js.Any])
+    inline def setIos8BrowserCrash(value: Boolean): Self = StObject.set(x, "ios8BrowserCrash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIos8BrowserCrashUndefined: Self = StObject.set(x, "ios8BrowserCrash", js.undefined)
+    inline def setIos8BrowserCrashUndefined: Self = StObject.set(x, "ios8BrowserCrash", js.undefined)
     
-    @scala.inline
-    def setIos8SafariUploads(value: Boolean): Self = StObject.set(x, "ios8SafariUploads", value.asInstanceOf[js.Any])
+    inline def setIos8SafariUploads(value: Boolean): Self = StObject.set(x, "ios8SafariUploads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIos8SafariUploadsUndefined: Self = StObject.set(x, "ios8SafariUploads", js.undefined)
+    inline def setIos8SafariUploadsUndefined: Self = StObject.set(x, "ios8SafariUploads", js.undefined)
     
-    @scala.inline
-    def setIosEmptyVideos(value: Boolean): Self = StObject.set(x, "iosEmptyVideos", value.asInstanceOf[js.Any])
+    inline def setIosEmptyVideos(value: Boolean): Self = StObject.set(x, "iosEmptyVideos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIosEmptyVideosUndefined: Self = StObject.set(x, "iosEmptyVideos", js.undefined)
+    inline def setIosEmptyVideosUndefined: Self = StObject.set(x, "iosEmptyVideos", js.undefined)
   }
 }

@@ -16,20 +16,16 @@ trait RepoStarterTemplate
 }
 object RepoStarterTemplate {
   
-  @scala.inline
-  def apply(name: String, projectType: ProjectType, repo: String): RepoStarterTemplate = {
+  inline def apply(name: String, projectType: ProjectType, repo: String): RepoStarterTemplate = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], projectType = projectType.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("repo")
     __obj.asInstanceOf[RepoStarterTemplate]
   }
   
-  @scala.inline
-  implicit class RepoStarterTemplateMutableBuilder[Self <: RepoStarterTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: RepoStarterTemplate](x: Self) {
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: repo): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: repo): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -24,9 +24,9 @@ object restClientMod {
       appId: String
     ) = this()
     
-    val apiKey: js.Any = js.native
+    /* private */ val apiKey: js.Any = js.native
     
-    val appId: js.Any = js.native
+    /* private */ val appId: js.Any = js.native
     
     /**
       * @throws if response status is not 200 or 304.
@@ -34,12 +34,12 @@ object restClientMod {
     /* CompleteClass */
     override def fetch(request: FetchRequest): js.Promise[FetchResponse] = js.native
     
-    val firebaseInstallations: js.Any = js.native
+    /* private */ val firebaseInstallations: js.Any = js.native
     
-    val namespace: js.Any = js.native
+    /* private */ val namespace: js.Any = js.native
     
-    val projectId: js.Any = js.native
+    /* private */ val projectId: js.Any = js.native
     
-    val sdkVersion: js.Any = js.native
+    /* private */ val sdkVersion: js.Any = js.native
   }
 }

@@ -28,20 +28,16 @@ object Xsl {
   }
   object XsltProcessor {
     
-    @scala.inline
-    def apply(transformToDocument: IXmlNode => XmlDocument, transformToString: IXmlNode => String): XsltProcessor = {
+    inline def apply(transformToDocument: IXmlNode => XmlDocument, transformToString: IXmlNode => String): XsltProcessor = {
       val __obj = js.Dynamic.literal(transformToDocument = js.Any.fromFunction1(transformToDocument), transformToString = js.Any.fromFunction1(transformToString))
       __obj.asInstanceOf[XsltProcessor]
     }
     
-    @scala.inline
-    implicit class XsltProcessorMutableBuilder[Self <: XsltProcessor] (val x: Self) extends AnyVal {
+    extension [Self <: XsltProcessor](x: Self) {
       
-      @scala.inline
-      def setTransformToDocument(value: IXmlNode => XmlDocument): Self = StObject.set(x, "transformToDocument", js.Any.fromFunction1(value))
+      inline def setTransformToDocument(value: IXmlNode => XmlDocument): Self = StObject.set(x, "transformToDocument", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTransformToString(value: IXmlNode => String): Self = StObject.set(x, "transformToString", js.Any.fromFunction1(value))
+      inline def setTransformToString(value: IXmlNode => String): Self = StObject.set(x, "transformToString", js.Any.fromFunction1(value))
     }
   }
 }

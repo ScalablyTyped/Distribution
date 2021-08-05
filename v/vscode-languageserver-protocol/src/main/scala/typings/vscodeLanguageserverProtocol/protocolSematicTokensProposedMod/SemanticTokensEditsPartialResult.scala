@@ -10,19 +10,15 @@ trait SemanticTokensEditsPartialResult extends StObject {
 }
 object SemanticTokensEditsPartialResult {
   
-  @scala.inline
-  def apply(edits: js.Array[SemanticTokensEdit]): SemanticTokensEditsPartialResult = {
+  inline def apply(edits: js.Array[SemanticTokensEdit]): SemanticTokensEditsPartialResult = {
     val __obj = js.Dynamic.literal(edits = edits.asInstanceOf[js.Any])
     __obj.asInstanceOf[SemanticTokensEditsPartialResult]
   }
   
-  @scala.inline
-  implicit class SemanticTokensEditsPartialResultMutableBuilder[Self <: SemanticTokensEditsPartialResult] (val x: Self) extends AnyVal {
+  extension [Self <: SemanticTokensEditsPartialResult](x: Self) {
     
-    @scala.inline
-    def setEdits(value: js.Array[SemanticTokensEdit]): Self = StObject.set(x, "edits", value.asInstanceOf[js.Any])
+    inline def setEdits(value: js.Array[SemanticTokensEdit]): Self = StObject.set(x, "edits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditsVarargs(value: SemanticTokensEdit*): Self = StObject.set(x, "edits", js.Array(value :_*))
+    inline def setEditsVarargs(value: SemanticTokensEdit*): Self = StObject.set(x, "edits", js.Array(value :_*))
   }
 }

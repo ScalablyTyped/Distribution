@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SuspenseListTailMode extends StObject
 object SuspenseListTailMode {
   
-  @scala.inline
-  def collapsed: typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.collapsed = "collapsed".asInstanceOf[typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.collapsed]
+  inline def collapsed: typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.collapsed = "collapsed".asInstanceOf[typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.collapsed]
   
-  @scala.inline
-  def hidden: typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.hidden = "hidden".asInstanceOf[typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.hidden]
+  inline def hidden: typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.hidden = "hidden".asInstanceOf[typings.babelPluginReactHtmlAttrs.babelPluginReactHtmlAttrsStrings.hidden]
 }

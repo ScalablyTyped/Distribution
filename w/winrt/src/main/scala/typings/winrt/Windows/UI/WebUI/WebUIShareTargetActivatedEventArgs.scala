@@ -15,8 +15,7 @@ trait WebUIShareTargetActivatedEventArgs
      with IActivatedEventArgsDeferral
 object WebUIShareTargetActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activatedOperation: ActivatedOperation,
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,

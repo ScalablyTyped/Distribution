@@ -15,19 +15,15 @@ trait NormalizationTypeDiscriminator
 }
 object NormalizationTypeDiscriminator {
   
-  @scala.inline
-  def apply(abstractKey: String, kind: String): NormalizationTypeDiscriminator = {
+  inline def apply(abstractKey: String, kind: String): NormalizationTypeDiscriminator = {
     val __obj = js.Dynamic.literal(abstractKey = abstractKey.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
     __obj.asInstanceOf[NormalizationTypeDiscriminator]
   }
   
-  @scala.inline
-  implicit class NormalizationTypeDiscriminatorMutableBuilder[Self <: NormalizationTypeDiscriminator] (val x: Self) extends AnyVal {
+  extension [Self <: NormalizationTypeDiscriminator](x: Self) {
     
-    @scala.inline
-    def setAbstractKey(value: String): Self = StObject.set(x, "abstractKey", value.asInstanceOf[js.Any])
+    inline def setAbstractKey(value: String): Self = StObject.set(x, "abstractKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }
 }

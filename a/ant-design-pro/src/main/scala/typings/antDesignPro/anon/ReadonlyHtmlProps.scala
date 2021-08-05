@@ -27,63 +27,45 @@ trait ReadonlyHtmlProps extends StObject {
 }
 object ReadonlyHtmlProps {
   
-  @scala.inline
-  def apply(): ReadonlyHtmlProps = {
+  inline def apply(): ReadonlyHtmlProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReadonlyHtmlProps]
   }
   
-  @scala.inline
-  implicit class ReadonlyHtmlPropsMutableBuilder[Self <: ReadonlyHtmlProps] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyHtmlProps](x: Self) {
     
-    @scala.inline
-    def setAlignX(value: AlignXType): Self = StObject.set(x, "alignX", value.asInstanceOf[js.Any])
+    inline def setAlignX(value: AlignXType): Self = StObject.set(x, "alignX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignXUndefined: Self = StObject.set(x, "alignX", js.undefined)
+    inline def setAlignXUndefined: Self = StObject.set(x, "alignX", js.undefined)
     
-    @scala.inline
-    def setAlignY(value: AlignYType): Self = StObject.set(x, "alignY", value.asInstanceOf[js.Any])
+    inline def setAlignY(value: AlignYType): Self = StObject.set(x, "alignY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignYUndefined: Self = StObject.set(x, "alignY", js.undefined)
+    inline def setAlignYUndefined: Self = StObject.set(x, "alignY", js.undefined)
     
-    @scala.inline
-    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+    inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
     
-    @scala.inline
-    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+    inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
+    inline def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
     
-    @scala.inline
-    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+    inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
+    inline def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
     
-    @scala.inline
-    def setPosition(
+    inline def setPosition(
       value: js.Object | js.Array[js.Any] | (js.Function2[/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any], js.Any])
     ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "position", js.Any.fromFunction2(value))
+    inline def setPositionFunction2(value: (/* xScale */ js.UndefOr[js.Any], /* yScale */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "position", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setPositionVarargs(value: js.Any*): Self = StObject.set(x, "position", js.Array(value :_*))
+    inline def setPositionVarargs(value: js.Any*): Self = StObject.set(x, "position", js.Array(value :_*))
     
-    @scala.inline
-    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

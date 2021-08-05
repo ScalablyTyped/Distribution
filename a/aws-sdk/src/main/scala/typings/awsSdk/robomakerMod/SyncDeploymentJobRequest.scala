@@ -18,19 +18,15 @@ trait SyncDeploymentJobRequest extends StObject {
 }
 object SyncDeploymentJobRequest {
   
-  @scala.inline
-  def apply(clientRequestToken: ClientRequestToken, fleet: Arn): SyncDeploymentJobRequest = {
+  inline def apply(clientRequestToken: ClientRequestToken, fleet: Arn): SyncDeploymentJobRequest = {
     val __obj = js.Dynamic.literal(clientRequestToken = clientRequestToken.asInstanceOf[js.Any], fleet = fleet.asInstanceOf[js.Any])
     __obj.asInstanceOf[SyncDeploymentJobRequest]
   }
   
-  @scala.inline
-  implicit class SyncDeploymentJobRequestMutableBuilder[Self <: SyncDeploymentJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SyncDeploymentJobRequest](x: Self) {
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFleet(value: Arn): Self = StObject.set(x, "fleet", value.asInstanceOf[js.Any])
+    inline def setFleet(value: Arn): Self = StObject.set(x, "fleet", value.asInstanceOf[js.Any])
   }
 }

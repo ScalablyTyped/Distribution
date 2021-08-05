@@ -31,39 +31,33 @@ object writeMod {
     @js.native
     def cidVersion: AliasArray = js.native
     
-    @scala.inline
-    def cidVersion_=(x: AliasArray): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cid-version")(x.asInstanceOf[js.Any])
+    inline def cidVersion_=(x: AliasArray): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cid-version")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/files/write", "builder.create")
     @js.native
     def create: AliasCoerce = js.native
-    @scala.inline
-    def create_=(x: AliasCoerce): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("create")(x.asInstanceOf[js.Any])
+    inline def create_=(x: AliasCoerce): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("create")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/files/write", "builder.flush")
     @js.native
     def flush: AliasCoerce = js.native
-    @scala.inline
-    def flush_=(x: AliasCoerce): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flush")(x.asInstanceOf[js.Any])
+    inline def flush_=(x: AliasCoerce): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flush")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/files/write", "builder.hash-alg")
     @js.native
     def hashAlg: AliasDefaultType = js.native
     
-    @scala.inline
-    def hashAlg_=(x: AliasDefaultType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hash-alg")(x.asInstanceOf[js.Any])
+    inline def hashAlg_=(x: AliasDefaultType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hash-alg")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/files/write", "builder.length")
     @js.native
     def length: AliasDescribeType = js.native
-    @scala.inline
-    def length_=(x: AliasDescribeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("length")(x.asInstanceOf[js.Any])
+    inline def length_=(x: AliasDescribeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("length")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/files/write", "builder.mode")
     @js.native
     def mode: CoerceDescribe = js.native
-    @scala.inline
-    def mode_=(x: CoerceDescribe): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mode")(x.asInstanceOf[js.Any])
+    inline def mode_=(x: CoerceDescribe): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mode")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/files/write", "builder.mtime")
     @js.native
@@ -73,62 +67,52 @@ object writeMod {
     @js.native
     def mtimeNsecs: Coerce = js.native
     
-    @scala.inline
-    def mtimeNsecs_=(x: Coerce): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mtime-nsecs")(x.asInstanceOf[js.Any])
+    inline def mtimeNsecs_=(x: Coerce): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mtime-nsecs")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def mtime_=(x: Coerce): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mtime")(x.asInstanceOf[js.Any])
+    inline def mtime_=(x: Coerce): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mtime")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/files/write", "builder.offset")
     @js.native
     def offset: AliasDescribeType = js.native
-    @scala.inline
-    def offset_=(x: AliasDescribeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("offset")(x.asInstanceOf[js.Any])
+    inline def offset_=(x: AliasDescribeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("offset")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/files/write", "builder.parents")
     @js.native
     def parents: Alias = js.native
-    @scala.inline
-    def parents_=(x: Alias): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parents")(x.asInstanceOf[js.Any])
+    inline def parents_=(x: Alias): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parents")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/files/write", "builder.raw-leaves")
     @js.native
     def rawLeaves: AliasCoerce = js.native
     
-    @scala.inline
-    def rawLeaves_=(x: AliasCoerce): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("raw-leaves")(x.asInstanceOf[js.Any])
+    inline def rawLeaves_=(x: AliasCoerce): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("raw-leaves")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/files/write", "builder.reduce-single-leaf-to-self")
     @js.native
     def reduceSingleLeafToSelf: CoerceDefault = js.native
     
-    @scala.inline
-    def reduceSingleLeafToSelf_=(x: CoerceDefault): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reduce-single-leaf-to-self")(x.asInstanceOf[js.Any])
+    inline def reduceSingleLeafToSelf_=(x: CoerceDefault): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reduce-single-leaf-to-self")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/files/write", "builder.shard-split-threshold")
     @js.native
     def shardSplitThreshold: Describe = js.native
     
-    @scala.inline
-    def shardSplitThreshold_=(x: Describe): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shard-split-threshold")(x.asInstanceOf[js.Any])
+    inline def shardSplitThreshold_=(x: Describe): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shard-split-threshold")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/files/write", "builder.strategy")
     @js.native
     def strategy: AliasDefaultType = js.native
-    @scala.inline
-    def strategy_=(x: AliasDefaultType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("strategy")(x.asInstanceOf[js.Any])
+    inline def strategy_=(x: AliasDefaultType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("strategy")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/files/write", "builder.timeout")
     @js.native
     def timeout: CoerceType = js.native
-    @scala.inline
-    def timeout_=(x: CoerceType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
+    inline def timeout_=(x: CoerceType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/files/write", "builder.truncate")
     @js.native
     def truncate: AliasCoerce = js.native
-    @scala.inline
-    def truncate_=(x: AliasCoerce): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("truncate")(x.asInstanceOf[js.Any])
+    inline def truncate_=(x: AliasCoerce): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("truncate")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ipfs-cli/dist/src/commands/files/write", "command")
@@ -139,8 +123,7 @@ object writeMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(
+  inline def handler(
     hasHasIpfsGetStdinPathOffsetLengthCreateTruncateRawLeavesReduceSingleLeafToSelfCidVersionHashAlgParentsProgressStrategyFlushShardSplitThresholdModeMtimeMtimeNsecsTimeout: Create
   ): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsGetStdinPathOffsetLengthCreateTruncateRawLeavesReduceSingleLeafToSelfCidVersionHashAlgParentsProgressStrategyFlushShardSplitThresholdModeMtimeMtimeNsecsTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

@@ -22,8 +22,7 @@ trait Pending extends StObject {
 }
 object Pending {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     approved: scala.Double,
     canceled: scala.Double,
     pending: scala.Double,
@@ -36,28 +35,20 @@ object Pending {
     __obj.asInstanceOf[Pending]
   }
   
-  @scala.inline
-  implicit class PendingMutableBuilder[Self <: Pending] (val x: Self) extends AnyVal {
+  extension [Self <: Pending](x: Self) {
     
-    @scala.inline
-    def setApproved(value: scala.Double): Self = StObject.set(x, "approved", value.asInstanceOf[js.Any])
+    inline def setApproved(value: scala.Double): Self = StObject.set(x, "approved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanceled(value: scala.Double): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
+    inline def setCanceled(value: scala.Double): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPending(value: scala.Double): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+    inline def setPending(value: scala.Double): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReassigned(value: scala.Double): Self = StObject.set(x, "reassigned", value.asInstanceOf[js.Any])
+    inline def setReassigned(value: scala.Double): Self = StObject.set(x, "reassigned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRejected(value: scala.Double): Self = StObject.set(x, "rejected", value.asInstanceOf[js.Any])
+    inline def setRejected(value: scala.Double): Self = StObject.set(x, "rejected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipped(value: scala.Double): Self = StObject.set(x, "skipped", value.asInstanceOf[js.Any])
+    inline def setSkipped(value: scala.Double): Self = StObject.set(x, "skipped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndefined(value: scala.Double): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
+    inline def setUndefined(value: scala.Double): Self = StObject.set(x, "undefined", value.asInstanceOf[js.Any])
   }
 }

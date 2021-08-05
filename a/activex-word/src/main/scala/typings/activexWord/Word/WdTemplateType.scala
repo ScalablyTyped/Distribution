@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdTemplateType extends StObject
 object WdTemplateType {
   
-  @scala.inline
-  def wdAttachedTemplate: `2` = 2.asInstanceOf[`2`]
+  inline def wdAttachedTemplate: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdGlobalTemplate: `1` = 1.asInstanceOf[`1`]
+  inline def wdGlobalTemplate: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdNormalTemplate: `0` = 0.asInstanceOf[`0`]
+  inline def wdNormalTemplate: `0` = 0.asInstanceOf[`0`]
 }

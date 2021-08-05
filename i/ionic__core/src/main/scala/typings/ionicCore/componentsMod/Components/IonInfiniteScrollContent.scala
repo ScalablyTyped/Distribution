@@ -20,28 +20,21 @@ trait IonInfiniteScrollContent extends StObject {
 }
 object IonInfiniteScrollContent {
   
-  @scala.inline
-  def apply(): IonInfiniteScrollContent = {
+  inline def apply(): IonInfiniteScrollContent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IonInfiniteScrollContent]
   }
   
-  @scala.inline
-  implicit class IonInfiniteScrollContentMutableBuilder[Self <: IonInfiniteScrollContent] (val x: Self) extends AnyVal {
+  extension [Self <: IonInfiniteScrollContent](x: Self) {
     
-    @scala.inline
-    def setLoadingSpinner(value: SpinnerTypes): Self = StObject.set(x, "loadingSpinner", value.asInstanceOf[js.Any])
+    inline def setLoadingSpinner(value: SpinnerTypes): Self = StObject.set(x, "loadingSpinner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadingSpinnerNull: Self = StObject.set(x, "loadingSpinner", null)
+    inline def setLoadingSpinnerNull: Self = StObject.set(x, "loadingSpinner", null)
     
-    @scala.inline
-    def setLoadingSpinnerUndefined: Self = StObject.set(x, "loadingSpinner", js.undefined)
+    inline def setLoadingSpinnerUndefined: Self = StObject.set(x, "loadingSpinner", js.undefined)
     
-    @scala.inline
-    def setLoadingText(value: String | IonicSafeString): Self = StObject.set(x, "loadingText", value.asInstanceOf[js.Any])
+    inline def setLoadingText(value: String | IonicSafeString): Self = StObject.set(x, "loadingText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadingTextUndefined: Self = StObject.set(x, "loadingText", js.undefined)
+    inline def setLoadingTextUndefined: Self = StObject.set(x, "loadingText", js.undefined)
   }
 }

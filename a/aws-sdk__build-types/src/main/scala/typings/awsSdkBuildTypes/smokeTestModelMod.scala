@@ -27,23 +27,18 @@ object smokeTestModelMod {
   }
   object SmokeTestCase {
     
-    @scala.inline
-    def apply(errorExpectedFromService: Boolean, input: js.Object, operationName: String): SmokeTestCase = {
+    inline def apply(errorExpectedFromService: Boolean, input: js.Object, operationName: String): SmokeTestCase = {
       val __obj = js.Dynamic.literal(errorExpectedFromService = errorExpectedFromService.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], operationName = operationName.asInstanceOf[js.Any])
       __obj.asInstanceOf[SmokeTestCase]
     }
     
-    @scala.inline
-    implicit class SmokeTestCaseMutableBuilder[Self <: SmokeTestCase] (val x: Self) extends AnyVal {
+    extension [Self <: SmokeTestCase](x: Self) {
       
-      @scala.inline
-      def setErrorExpectedFromService(value: Boolean): Self = StObject.set(x, "errorExpectedFromService", value.asInstanceOf[js.Any])
+      inline def setErrorExpectedFromService(value: Boolean): Self = StObject.set(x, "errorExpectedFromService", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInput(value: js.Object): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+      inline def setInput(value: js.Object): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperationName(value: String): Self = StObject.set(x, "operationName", value.asInstanceOf[js.Any])
+      inline def setOperationName(value: String): Self = StObject.set(x, "operationName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -63,26 +58,20 @@ object smokeTestModelMod {
   }
   object SmokeTestModel {
     
-    @scala.inline
-    def apply(defaultRegion: String, testCases: js.Array[SmokeTestCase], version: Double): SmokeTestModel = {
+    inline def apply(defaultRegion: String, testCases: js.Array[SmokeTestCase], version: Double): SmokeTestModel = {
       val __obj = js.Dynamic.literal(defaultRegion = defaultRegion.asInstanceOf[js.Any], testCases = testCases.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[SmokeTestModel]
     }
     
-    @scala.inline
-    implicit class SmokeTestModelMutableBuilder[Self <: SmokeTestModel] (val x: Self) extends AnyVal {
+    extension [Self <: SmokeTestModel](x: Self) {
       
-      @scala.inline
-      def setDefaultRegion(value: String): Self = StObject.set(x, "defaultRegion", value.asInstanceOf[js.Any])
+      inline def setDefaultRegion(value: String): Self = StObject.set(x, "defaultRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestCases(value: js.Array[SmokeTestCase]): Self = StObject.set(x, "testCases", value.asInstanceOf[js.Any])
+      inline def setTestCases(value: js.Array[SmokeTestCase]): Self = StObject.set(x, "testCases", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestCasesVarargs(value: SmokeTestCase*): Self = StObject.set(x, "testCases", js.Array(value :_*))
+      inline def setTestCasesVarargs(value: SmokeTestCase*): Self = StObject.set(x, "testCases", js.Array(value :_*))
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

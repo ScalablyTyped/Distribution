@@ -10,16 +10,13 @@ trait Fatigue extends StObject {
 }
 object Fatigue {
   
-  @scala.inline
-  def apply(): Fatigue = {
+  inline def apply(): Fatigue = {
     val __obj = js.Dynamic.literal(fatigue = 2)
     __obj.asInstanceOf[Fatigue]
   }
   
-  @scala.inline
-  implicit class FatigueMutableBuilder[Self <: Fatigue] (val x: Self) extends AnyVal {
+  extension [Self <: Fatigue](x: Self) {
     
-    @scala.inline
-    def setFatigue(value: typings.screeps.screepsNumbers.`2`): Self = StObject.set(x, "fatigue", value.asInstanceOf[js.Any])
+    inline def setFatigue(value: typings.screeps.screepsNumbers.`2`): Self = StObject.set(x, "fatigue", value.asInstanceOf[js.Any])
   }
 }

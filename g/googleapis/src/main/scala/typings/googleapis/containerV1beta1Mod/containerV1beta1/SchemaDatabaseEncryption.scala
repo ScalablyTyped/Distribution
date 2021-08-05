@@ -22,25 +22,19 @@ trait SchemaDatabaseEncryption extends StObject {
 }
 object SchemaDatabaseEncryption {
   
-  @scala.inline
-  def apply(): SchemaDatabaseEncryption = {
+  inline def apply(): SchemaDatabaseEncryption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDatabaseEncryption]
   }
   
-  @scala.inline
-  implicit class SchemaDatabaseEncryptionMutableBuilder[Self <: SchemaDatabaseEncryption] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDatabaseEncryption](x: Self) {
     
-    @scala.inline
-    def setKeyName(value: String): Self = StObject.set(x, "keyName", value.asInstanceOf[js.Any])
+    inline def setKeyName(value: String): Self = StObject.set(x, "keyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyNameUndefined: Self = StObject.set(x, "keyName", js.undefined)
+    inline def setKeyNameUndefined: Self = StObject.set(x, "keyName", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

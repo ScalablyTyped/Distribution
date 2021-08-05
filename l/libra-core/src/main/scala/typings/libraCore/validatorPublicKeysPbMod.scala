@@ -60,11 +60,9 @@ object validatorPublicKeysPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def deserializeBinary(bytes: Uint8Array): ValidatorPublicKeys = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ValidatorPublicKeys]
+    inline def deserializeBinary(bytes: Uint8Array): ValidatorPublicKeys = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[ValidatorPublicKeys]
     
-    @scala.inline
-    def deserializeBinaryFromReader(message: ValidatorPublicKeys, reader: BinaryReader): ValidatorPublicKeys = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[ValidatorPublicKeys]
+    inline def deserializeBinaryFromReader(message: ValidatorPublicKeys, reader: BinaryReader): ValidatorPublicKeys = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[ValidatorPublicKeys]
     
     @JSImport("libra-core/lib/@/generated/validator_public_keys_pb", "ValidatorPublicKeys.extensions")
     @js.native
@@ -73,17 +71,13 @@ object validatorPublicKeysPbMod {
     @JSImport("libra-core/lib/@/generated/validator_public_keys_pb", "ValidatorPublicKeys.extensionsBinary")
     @js.native
     def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-    @scala.inline
-    def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+    inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+    inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def serializeBinaryToWriter(message: ValidatorPublicKeys, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def serializeBinaryToWriter(message: ValidatorPublicKeys, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def toObject(includeInstance: Boolean, msg: ValidatorPublicKeys): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+    inline def toObject(includeInstance: Boolean, msg: ValidatorPublicKeys): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
     trait AsObject extends StObject {
       
@@ -97,8 +91,7 @@ object validatorPublicKeysPbMod {
     }
     object AsObject {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         accountAddress: Uint8Array | String,
         consensusPublicKey: Uint8Array | String,
         networkIdentityPublicKey: Uint8Array | String,
@@ -108,20 +101,15 @@ object validatorPublicKeysPbMod {
         __obj.asInstanceOf[AsObject]
       }
       
-      @scala.inline
-      implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+      extension [Self <: AsObject](x: Self) {
         
-        @scala.inline
-        def setAccountAddress(value: Uint8Array | String): Self = StObject.set(x, "accountAddress", value.asInstanceOf[js.Any])
+        inline def setAccountAddress(value: Uint8Array | String): Self = StObject.set(x, "accountAddress", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConsensusPublicKey(value: Uint8Array | String): Self = StObject.set(x, "consensusPublicKey", value.asInstanceOf[js.Any])
+        inline def setConsensusPublicKey(value: Uint8Array | String): Self = StObject.set(x, "consensusPublicKey", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkIdentityPublicKey(value: Uint8Array | String): Self = StObject.set(x, "networkIdentityPublicKey", value.asInstanceOf[js.Any])
+        inline def setNetworkIdentityPublicKey(value: Uint8Array | String): Self = StObject.set(x, "networkIdentityPublicKey", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNetworkSigningPublicKey(value: Uint8Array | String): Self = StObject.set(x, "networkSigningPublicKey", value.asInstanceOf[js.Any])
+        inline def setNetworkSigningPublicKey(value: Uint8Array | String): Self = StObject.set(x, "networkSigningPublicKey", value.asInstanceOf[js.Any])
       }
     }
   }

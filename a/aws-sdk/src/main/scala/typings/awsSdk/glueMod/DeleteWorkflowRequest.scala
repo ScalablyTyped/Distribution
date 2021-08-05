@@ -13,16 +13,13 @@ trait DeleteWorkflowRequest extends StObject {
 }
 object DeleteWorkflowRequest {
   
-  @scala.inline
-  def apply(Name: NameString): DeleteWorkflowRequest = {
+  inline def apply(Name: NameString): DeleteWorkflowRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteWorkflowRequest]
   }
   
-  @scala.inline
-  implicit class DeleteWorkflowRequestMutableBuilder[Self <: DeleteWorkflowRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteWorkflowRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

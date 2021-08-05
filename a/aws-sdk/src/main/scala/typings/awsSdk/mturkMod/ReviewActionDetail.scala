@@ -48,61 +48,43 @@ trait ReviewActionDetail extends StObject {
 }
 object ReviewActionDetail {
   
-  @scala.inline
-  def apply(): ReviewActionDetail = {
+  inline def apply(): ReviewActionDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReviewActionDetail]
   }
   
-  @scala.inline
-  implicit class ReviewActionDetailMutableBuilder[Self <: ReviewActionDetail] (val x: Self) extends AnyVal {
+  extension [Self <: ReviewActionDetail](x: Self) {
     
-    @scala.inline
-    def setActionId(value: EntityId): Self = StObject.set(x, "ActionId", value.asInstanceOf[js.Any])
+    inline def setActionId(value: EntityId): Self = StObject.set(x, "ActionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionIdUndefined: Self = StObject.set(x, "ActionId", js.undefined)
+    inline def setActionIdUndefined: Self = StObject.set(x, "ActionId", js.undefined)
     
-    @scala.inline
-    def setActionName(value: String): Self = StObject.set(x, "ActionName", value.asInstanceOf[js.Any])
+    inline def setActionName(value: String): Self = StObject.set(x, "ActionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionNameUndefined: Self = StObject.set(x, "ActionName", js.undefined)
+    inline def setActionNameUndefined: Self = StObject.set(x, "ActionName", js.undefined)
     
-    @scala.inline
-    def setCompleteTime(value: Timestamp): Self = StObject.set(x, "CompleteTime", value.asInstanceOf[js.Any])
+    inline def setCompleteTime(value: Timestamp): Self = StObject.set(x, "CompleteTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompleteTimeUndefined: Self = StObject.set(x, "CompleteTime", js.undefined)
+    inline def setCompleteTimeUndefined: Self = StObject.set(x, "CompleteTime", js.undefined)
     
-    @scala.inline
-    def setErrorCode(value: String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
-    @scala.inline
-    def setResult(value: String): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
+    inline def setResult(value: String): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "Result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "Result", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ReviewActionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ReviewActionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setTargetId(value: EntityId): Self = StObject.set(x, "TargetId", value.asInstanceOf[js.Any])
+    inline def setTargetId(value: EntityId): Self = StObject.set(x, "TargetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetIdUndefined: Self = StObject.set(x, "TargetId", js.undefined)
+    inline def setTargetIdUndefined: Self = StObject.set(x, "TargetId", js.undefined)
     
-    @scala.inline
-    def setTargetType(value: String): Self = StObject.set(x, "TargetType", value.asInstanceOf[js.Any])
+    inline def setTargetType(value: String): Self = StObject.set(x, "TargetType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetTypeUndefined: Self = StObject.set(x, "TargetType", js.undefined)
+    inline def setTargetTypeUndefined: Self = StObject.set(x, "TargetType", js.undefined)
   }
 }

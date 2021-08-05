@@ -15,10 +15,10 @@ object lineMod {
   trait LineAnnotation
     extends typings.antvComponent.groupComponentMod.default[LineAnnotationCfg] {
     
-    var getLabelPoint: js.Any = js.native
+    /* private */ var getLabelPoint: js.Any = js.native
     
-    var renderLabel: js.Any = js.native
+    /* private */ var renderLabel: js.Any = js.native
     
-    var renderLine: js.Any = js.native
+    /* private */ var renderLine: js.Any = js.native
   }
 }

@@ -16,28 +16,21 @@ trait Attributes extends StObject {
 }
 object Attributes {
   
-  @scala.inline
-  def apply(attributes: js.Any, fshader: String, vshader: String): Attributes = {
+  inline def apply(attributes: js.Any, fshader: String, vshader: String): Attributes = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], fshader = fshader.asInstanceOf[js.Any], vshader = vshader.asInstanceOf[js.Any])
     __obj.asInstanceOf[Attributes]
   }
   
-  @scala.inline
-  implicit class AttributesMutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
+  extension [Self <: Attributes](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFshader(value: String): Self = StObject.set(x, "fshader", value.asInstanceOf[js.Any])
+    inline def setFshader(value: String): Self = StObject.set(x, "fshader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseTransformFeedback(value: Boolean): Self = StObject.set(x, "useTransformFeedback", value.asInstanceOf[js.Any])
+    inline def setUseTransformFeedback(value: Boolean): Self = StObject.set(x, "useTransformFeedback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseTransformFeedbackUndefined: Self = StObject.set(x, "useTransformFeedback", js.undefined)
+    inline def setUseTransformFeedbackUndefined: Self = StObject.set(x, "useTransformFeedback", js.undefined)
     
-    @scala.inline
-    def setVshader(value: String): Self = StObject.set(x, "vshader", value.asInstanceOf[js.Any])
+    inline def setVshader(value: String): Self = StObject.set(x, "vshader", value.asInstanceOf[js.Any])
   }
 }

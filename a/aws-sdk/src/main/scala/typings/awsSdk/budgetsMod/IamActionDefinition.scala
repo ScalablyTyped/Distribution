@@ -28,43 +28,31 @@ trait IamActionDefinition extends StObject {
 }
 object IamActionDefinition {
   
-  @scala.inline
-  def apply(PolicyArn: PolicyArn): IamActionDefinition = {
+  inline def apply(PolicyArn: PolicyArn): IamActionDefinition = {
     val __obj = js.Dynamic.literal(PolicyArn = PolicyArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[IamActionDefinition]
   }
   
-  @scala.inline
-  implicit class IamActionDefinitionMutableBuilder[Self <: IamActionDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: IamActionDefinition](x: Self) {
     
-    @scala.inline
-    def setGroups(value: Groups): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: Groups): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
+    inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
-    @scala.inline
-    def setGroupsVarargs(value: Group*): Self = StObject.set(x, "Groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: Group*): Self = StObject.set(x, "Groups", js.Array(value :_*))
     
-    @scala.inline
-    def setPolicyArn(value: PolicyArn): Self = StObject.set(x, "PolicyArn", value.asInstanceOf[js.Any])
+    inline def setPolicyArn(value: PolicyArn): Self = StObject.set(x, "PolicyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoles(value: Roles): Self = StObject.set(x, "Roles", value.asInstanceOf[js.Any])
+    inline def setRoles(value: Roles): Self = StObject.set(x, "Roles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRolesUndefined: Self = StObject.set(x, "Roles", js.undefined)
+    inline def setRolesUndefined: Self = StObject.set(x, "Roles", js.undefined)
     
-    @scala.inline
-    def setRolesVarargs(value: Role*): Self = StObject.set(x, "Roles", js.Array(value :_*))
+    inline def setRolesVarargs(value: Role*): Self = StObject.set(x, "Roles", js.Array(value :_*))
     
-    @scala.inline
-    def setUsers(value: Users): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: Users): Self = StObject.set(x, "Users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsersUndefined: Self = StObject.set(x, "Users", js.undefined)
+    inline def setUsersUndefined: Self = StObject.set(x, "Users", js.undefined)
     
-    @scala.inline
-    def setUsersVarargs(value: User*): Self = StObject.set(x, "Users", js.Array(value :_*))
+    inline def setUsersVarargs(value: User*): Self = StObject.set(x, "Users", js.Array(value :_*))
   }
 }

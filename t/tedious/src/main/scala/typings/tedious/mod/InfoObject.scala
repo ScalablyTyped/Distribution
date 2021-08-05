@@ -38,8 +38,7 @@ trait InfoObject extends StObject {
 }
 object InfoObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `class`: Double,
     lineNumber: Double,
     message: String,
@@ -52,25 +51,18 @@ object InfoObject {
     __obj.asInstanceOf[InfoObject]
   }
   
-  @scala.inline
-  implicit class InfoObjectMutableBuilder[Self <: InfoObject] (val x: Self) extends AnyVal {
+  extension [Self <: InfoObject](x: Self) {
     
-    @scala.inline
-    def setClass(value: Double): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+    inline def setClass(value: Double): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+    inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcName(value: String): Self = StObject.set(x, "procName", value.asInstanceOf[js.Any])
+    inline def setProcName(value: String): Self = StObject.set(x, "procName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

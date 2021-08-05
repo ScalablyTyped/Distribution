@@ -16,8 +16,7 @@ trait NarrowRecordShortRecord extends StObject {
 }
 object NarrowRecordShortRecord {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     long: Record[CurrencyCode, String],
     narrow: Record[CurrencyCode, String],
     short: Record[CurrencyCode, String]
@@ -26,16 +25,12 @@ object NarrowRecordShortRecord {
     __obj.asInstanceOf[NarrowRecordShortRecord]
   }
   
-  @scala.inline
-  implicit class NarrowRecordShortRecordMutableBuilder[Self <: NarrowRecordShortRecord] (val x: Self) extends AnyVal {
+  extension [Self <: NarrowRecordShortRecord](x: Self) {
     
-    @scala.inline
-    def setLong(value: Record[CurrencyCode, String]): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
+    inline def setLong(value: Record[CurrencyCode, String]): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNarrow(value: Record[CurrencyCode, String]): Self = StObject.set(x, "narrow", value.asInstanceOf[js.Any])
+    inline def setNarrow(value: Record[CurrencyCode, String]): Self = StObject.set(x, "narrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShort(value: Record[CurrencyCode, String]): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
+    inline def setShort(value: Record[CurrencyCode, String]): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
   }
 }

@@ -20,31 +20,23 @@ trait CreateConferenceRequest extends StObject {
 }
 object CreateConferenceRequest {
   
-  @scala.inline
-  def apply(): CreateConferenceRequest = {
+  inline def apply(): CreateConferenceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateConferenceRequest]
   }
   
-  @scala.inline
-  implicit class CreateConferenceRequestMutableBuilder[Self <: CreateConferenceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateConferenceRequest](x: Self) {
     
-    @scala.inline
-    def setConferenceSolutionKey(value: ConferenceSolutionKey): Self = StObject.set(x, "conferenceSolutionKey", value.asInstanceOf[js.Any])
+    inline def setConferenceSolutionKey(value: ConferenceSolutionKey): Self = StObject.set(x, "conferenceSolutionKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConferenceSolutionKeyUndefined: Self = StObject.set(x, "conferenceSolutionKey", js.undefined)
+    inline def setConferenceSolutionKeyUndefined: Self = StObject.set(x, "conferenceSolutionKey", js.undefined)
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ConferenceRequestStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ConferenceRequestStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

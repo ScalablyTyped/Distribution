@@ -25,34 +25,25 @@ trait NodePropertyDef[TVal, TInstProps /* <: NodeProperties */] extends StObject
 }
 object NodePropertyDef {
   
-  @scala.inline
-  def apply[TVal, TInstProps /* <: NodeProperties */](value: TVal | _empty): NodePropertyDef[TVal, TInstProps] = {
+  inline def apply[TVal, TInstProps /* <: NodeProperties */](value: TVal | _empty): NodePropertyDef[TVal, TInstProps] = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodePropertyDef[TVal, TInstProps]]
   }
   
-  @scala.inline
-  implicit class NodePropertyDefMutableBuilder[Self <: NodePropertyDef[?, ?], TVal, TInstProps /* <: NodeProperties */] (val x: Self & (NodePropertyDef[TVal, TInstProps])) extends AnyVal {
+  extension [Self <: NodePropertyDef[?, ?], TVal, TInstProps /* <: NodeProperties */](x: Self & (NodePropertyDef[TVal, TInstProps])) {
     
-    @scala.inline
-    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+    inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setValidate(value: js.ThisFunction1[/* this */ NodeInstance[TInstProps], /* val */ String, Boolean]): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+    inline def setValidate(value: js.ThisFunction1[/* this */ NodeInstance[TInstProps], /* val */ String, Boolean]): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+    inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     
-    @scala.inline
-    def setValue(value: TVal | _empty): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: TVal | _empty): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

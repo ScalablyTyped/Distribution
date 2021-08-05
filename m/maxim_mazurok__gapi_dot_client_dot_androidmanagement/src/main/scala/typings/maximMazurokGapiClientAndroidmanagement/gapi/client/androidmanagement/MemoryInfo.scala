@@ -14,25 +14,19 @@ trait MemoryInfo extends StObject {
 }
 object MemoryInfo {
   
-  @scala.inline
-  def apply(): MemoryInfo = {
+  inline def apply(): MemoryInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MemoryInfo]
   }
   
-  @scala.inline
-  implicit class MemoryInfoMutableBuilder[Self <: MemoryInfo] (val x: Self) extends AnyVal {
+  extension [Self <: MemoryInfo](x: Self) {
     
-    @scala.inline
-    def setTotalInternalStorage(value: String): Self = StObject.set(x, "totalInternalStorage", value.asInstanceOf[js.Any])
+    inline def setTotalInternalStorage(value: String): Self = StObject.set(x, "totalInternalStorage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalInternalStorageUndefined: Self = StObject.set(x, "totalInternalStorage", js.undefined)
+    inline def setTotalInternalStorageUndefined: Self = StObject.set(x, "totalInternalStorage", js.undefined)
     
-    @scala.inline
-    def setTotalRam(value: String): Self = StObject.set(x, "totalRam", value.asInstanceOf[js.Any])
+    inline def setTotalRam(value: String): Self = StObject.set(x, "totalRam", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalRamUndefined: Self = StObject.set(x, "totalRam", js.undefined)
+    inline def setTotalRamUndefined: Self = StObject.set(x, "totalRam", js.undefined)
   }
 }

@@ -20,8 +20,7 @@ trait XAllListenerAdapterService
 }
 object XAllListenerAdapterService {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createAllListerAdapter: (`type`, XAllListener, js.Any) => XInterface,
     queryInterface: `type` => js.Any,
@@ -31,10 +30,8 @@ object XAllListenerAdapterService {
     __obj.asInstanceOf[XAllListenerAdapterService]
   }
   
-  @scala.inline
-  implicit class XAllListenerAdapterServiceMutableBuilder[Self <: XAllListenerAdapterService] (val x: Self) extends AnyVal {
+  extension [Self <: XAllListenerAdapterService](x: Self) {
     
-    @scala.inline
-    def setCreateAllListerAdapter(value: (`type`, XAllListener, js.Any) => XInterface): Self = StObject.set(x, "createAllListerAdapter", js.Any.fromFunction3(value))
+    inline def setCreateAllListerAdapter(value: (`type`, XAllListener, js.Any) => XInterface): Self = StObject.set(x, "createAllListerAdapter", js.Any.fromFunction3(value))
   }
 }

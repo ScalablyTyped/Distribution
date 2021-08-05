@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object diagMod {
   
-  @scala.inline
-  def apply(config: js.Any): Cmds = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Cmds]
+  inline def apply(config: js.Any): Cmds = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Cmds]
   
   @JSImport("ipfs-http-client/dist/src/diag", JSImport.Namespace)
   @js.native

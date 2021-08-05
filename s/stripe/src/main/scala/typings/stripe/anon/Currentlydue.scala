@@ -33,8 +33,7 @@ trait Currentlydue extends StObject {
 }
 object Currentlydue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currently_due: js.Array[String],
     eventually_due: js.Array[String],
     past_due: js.Array[String],
@@ -44,31 +43,22 @@ object Currentlydue {
     __obj.asInstanceOf[Currentlydue]
   }
   
-  @scala.inline
-  implicit class CurrentlydueMutableBuilder[Self <: Currentlydue] (val x: Self) extends AnyVal {
+  extension [Self <: Currentlydue](x: Self) {
     
-    @scala.inline
-    def setCurrently_due(value: js.Array[String]): Self = StObject.set(x, "currently_due", value.asInstanceOf[js.Any])
+    inline def setCurrently_due(value: js.Array[String]): Self = StObject.set(x, "currently_due", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrently_dueVarargs(value: String*): Self = StObject.set(x, "currently_due", js.Array(value :_*))
+    inline def setCurrently_dueVarargs(value: String*): Self = StObject.set(x, "currently_due", js.Array(value :_*))
     
-    @scala.inline
-    def setEventually_due(value: js.Array[String]): Self = StObject.set(x, "eventually_due", value.asInstanceOf[js.Any])
+    inline def setEventually_due(value: js.Array[String]): Self = StObject.set(x, "eventually_due", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventually_dueVarargs(value: String*): Self = StObject.set(x, "eventually_due", js.Array(value :_*))
+    inline def setEventually_dueVarargs(value: String*): Self = StObject.set(x, "eventually_due", js.Array(value :_*))
     
-    @scala.inline
-    def setPast_due(value: js.Array[String]): Self = StObject.set(x, "past_due", value.asInstanceOf[js.Any])
+    inline def setPast_due(value: js.Array[String]): Self = StObject.set(x, "past_due", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPast_dueVarargs(value: String*): Self = StObject.set(x, "past_due", js.Array(value :_*))
+    inline def setPast_dueVarargs(value: String*): Self = StObject.set(x, "past_due", js.Array(value :_*))
     
-    @scala.inline
-    def setPending_verification(value: js.Array[String]): Self = StObject.set(x, "pending_verification", value.asInstanceOf[js.Any])
+    inline def setPending_verification(value: js.Array[String]): Self = StObject.set(x, "pending_verification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPending_verificationVarargs(value: String*): Self = StObject.set(x, "pending_verification", js.Array(value :_*))
+    inline def setPending_verificationVarargs(value: String*): Self = StObject.set(x, "pending_verification", js.Array(value :_*))
   }
 }

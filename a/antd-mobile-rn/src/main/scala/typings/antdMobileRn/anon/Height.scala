@@ -22,8 +22,7 @@ trait Height extends StObject {
 }
 object Height {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     backgroundColor: String,
     borderRadius: Double,
     height: Double,
@@ -36,28 +35,20 @@ object Height {
     __obj.asInstanceOf[Height]
   }
   
-  @scala.inline
-  implicit class HeightMutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
+  extension [Self <: Height](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+    inline def setBorderRadius(value: Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

@@ -13,22 +13,17 @@ trait GetTypedLinkFacetInformationResponse extends StObject {
 }
 object GetTypedLinkFacetInformationResponse {
   
-  @scala.inline
-  def apply(): GetTypedLinkFacetInformationResponse = {
+  inline def apply(): GetTypedLinkFacetInformationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetTypedLinkFacetInformationResponse]
   }
   
-  @scala.inline
-  implicit class GetTypedLinkFacetInformationResponseMutableBuilder[Self <: GetTypedLinkFacetInformationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetTypedLinkFacetInformationResponse](x: Self) {
     
-    @scala.inline
-    def setIdentityAttributeOrder(value: AttributeNameList): Self = StObject.set(x, "IdentityAttributeOrder", value.asInstanceOf[js.Any])
+    inline def setIdentityAttributeOrder(value: AttributeNameList): Self = StObject.set(x, "IdentityAttributeOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityAttributeOrderUndefined: Self = StObject.set(x, "IdentityAttributeOrder", js.undefined)
+    inline def setIdentityAttributeOrderUndefined: Self = StObject.set(x, "IdentityAttributeOrder", js.undefined)
     
-    @scala.inline
-    def setIdentityAttributeOrderVarargs(value: AttributeName*): Self = StObject.set(x, "IdentityAttributeOrder", js.Array(value :_*))
+    inline def setIdentityAttributeOrderVarargs(value: AttributeName*): Self = StObject.set(x, "IdentityAttributeOrder", js.Array(value :_*))
   }
 }

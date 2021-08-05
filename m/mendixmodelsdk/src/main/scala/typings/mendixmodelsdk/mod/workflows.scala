@@ -42,8 +42,7 @@ object workflows {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @scala.inline
-    def create(model: IModel): typings.mendixmodelsdk.workflowsMod.workflows.BooleanSplitOutcome = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.BooleanSplitOutcome]
+    inline def create(model: IModel): typings.mendixmodelsdk.workflowsMod.workflows.BooleanSplitOutcome = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.BooleanSplitOutcome]
     
     /**
       * Creates and returns a new BooleanSplitOutcome instance in the SDK and on the server.
@@ -54,22 +53,19 @@ object workflows {
       *  8.15.0 and higher
       */
     /* static member */
-    @scala.inline
-    def createIn(container: typings.mendixmodelsdk.workflowsMod.workflows.ExclusiveSplitActivity): typings.mendixmodelsdk.workflowsMod.workflows.BooleanSplitOutcome = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.BooleanSplitOutcome]
+    inline def createIn(container: typings.mendixmodelsdk.workflowsMod.workflows.ExclusiveSplitActivity): typings.mendixmodelsdk.workflowsMod.workflows.BooleanSplitOutcome = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.BooleanSplitOutcome]
     
     /* static member */
     @JSImport("mendixmodelsdk", "workflows.BooleanSplitOutcome.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
-    @scala.inline
-    def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+    inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "workflows.BooleanSplitOutcome.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo = js.native
-    @scala.inline
-    def versionInfo_=(x: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    inline def versionInfo_=(x: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -104,8 +100,7 @@ object workflows {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @scala.inline
-    def create(model: IModel): typings.mendixmodelsdk.workflowsMod.workflows.CallMicroflowTask = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.CallMicroflowTask]
+    inline def create(model: IModel): typings.mendixmodelsdk.workflowsMod.workflows.CallMicroflowTask = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.CallMicroflowTask]
     
     /**
       * Creates and returns a new CallMicroflowTask instance in the SDK and on the server.
@@ -116,22 +111,19 @@ object workflows {
       *  8.15.0 and higher
       */
     /* static member */
-    @scala.inline
-    def createIn(container: typings.mendixmodelsdk.workflowsMod.workflows.Flow): typings.mendixmodelsdk.workflowsMod.workflows.CallMicroflowTask = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.CallMicroflowTask]
+    inline def createIn(container: typings.mendixmodelsdk.workflowsMod.workflows.Flow): typings.mendixmodelsdk.workflowsMod.workflows.CallMicroflowTask = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.CallMicroflowTask]
     
     /* static member */
     @JSImport("mendixmodelsdk", "workflows.CallMicroflowTask.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
-    @scala.inline
-    def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+    inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "workflows.CallMicroflowTask.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo = js.native
-    @scala.inline
-    def versionInfo_=(x: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    inline def versionInfo_=(x: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -166,8 +158,7 @@ object workflows {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @scala.inline
-    def create(model: IModel): typings.mendixmodelsdk.workflowsMod.workflows.CallWorkflowActivity = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.CallWorkflowActivity]
+    inline def create(model: IModel): typings.mendixmodelsdk.workflowsMod.workflows.CallWorkflowActivity = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.CallWorkflowActivity]
     
     /**
       * Creates and returns a new CallWorkflowActivity instance in the SDK and on the server.
@@ -178,22 +169,19 @@ object workflows {
       *  8.15.0 and higher
       */
     /* static member */
-    @scala.inline
-    def createIn(container: typings.mendixmodelsdk.workflowsMod.workflows.Flow): typings.mendixmodelsdk.workflowsMod.workflows.CallWorkflowActivity = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.CallWorkflowActivity]
+    inline def createIn(container: typings.mendixmodelsdk.workflowsMod.workflows.Flow): typings.mendixmodelsdk.workflowsMod.workflows.CallWorkflowActivity = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.CallWorkflowActivity]
     
     /* static member */
     @JSImport("mendixmodelsdk", "workflows.CallWorkflowActivity.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
-    @scala.inline
-    def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+    inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "workflows.CallWorkflowActivity.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo = js.native
-    @scala.inline
-    def versionInfo_=(x: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    inline def versionInfo_=(x: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -228,8 +216,7 @@ object workflows {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @scala.inline
-    def create(model: IModel): typings.mendixmodelsdk.workflowsMod.workflows.EndWorkflowActivity = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.EndWorkflowActivity]
+    inline def create(model: IModel): typings.mendixmodelsdk.workflowsMod.workflows.EndWorkflowActivity = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.EndWorkflowActivity]
     
     /**
       * Creates and returns a new EndWorkflowActivity instance in the SDK and on the server.
@@ -240,22 +227,19 @@ object workflows {
       *  8.15.0 and higher
       */
     /* static member */
-    @scala.inline
-    def createIn(container: typings.mendixmodelsdk.workflowsMod.workflows.Flow): typings.mendixmodelsdk.workflowsMod.workflows.EndWorkflowActivity = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.EndWorkflowActivity]
+    inline def createIn(container: typings.mendixmodelsdk.workflowsMod.workflows.Flow): typings.mendixmodelsdk.workflowsMod.workflows.EndWorkflowActivity = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.EndWorkflowActivity]
     
     /* static member */
     @JSImport("mendixmodelsdk", "workflows.EndWorkflowActivity.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
-    @scala.inline
-    def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+    inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "workflows.EndWorkflowActivity.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo = js.native
-    @scala.inline
-    def versionInfo_=(x: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    inline def versionInfo_=(x: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -290,8 +274,7 @@ object workflows {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @scala.inline
-    def create(model: IModel): typings.mendixmodelsdk.workflowsMod.workflows.EnumerationValueSplitOutcome = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.EnumerationValueSplitOutcome]
+    inline def create(model: IModel): typings.mendixmodelsdk.workflowsMod.workflows.EnumerationValueSplitOutcome = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.EnumerationValueSplitOutcome]
     
     /**
       * Creates and returns a new EnumerationValueSplitOutcome instance in the SDK and on the server.
@@ -302,22 +285,19 @@ object workflows {
       *  8.15.0 and higher
       */
     /* static member */
-    @scala.inline
-    def createIn(container: typings.mendixmodelsdk.workflowsMod.workflows.ExclusiveSplitActivity): typings.mendixmodelsdk.workflowsMod.workflows.EnumerationValueSplitOutcome = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.EnumerationValueSplitOutcome]
+    inline def createIn(container: typings.mendixmodelsdk.workflowsMod.workflows.ExclusiveSplitActivity): typings.mendixmodelsdk.workflowsMod.workflows.EnumerationValueSplitOutcome = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.EnumerationValueSplitOutcome]
     
     /* static member */
     @JSImport("mendixmodelsdk", "workflows.EnumerationValueSplitOutcome.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
-    @scala.inline
-    def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+    inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "workflows.EnumerationValueSplitOutcome.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo = js.native
-    @scala.inline
-    def versionInfo_=(x: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    inline def versionInfo_=(x: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -352,8 +332,7 @@ object workflows {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @scala.inline
-    def create(model: IModel): typings.mendixmodelsdk.workflowsMod.workflows.ExclusiveSplitActivity = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.ExclusiveSplitActivity]
+    inline def create(model: IModel): typings.mendixmodelsdk.workflowsMod.workflows.ExclusiveSplitActivity = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.ExclusiveSplitActivity]
     
     /**
       * Creates and returns a new ExclusiveSplitActivity instance in the SDK and on the server.
@@ -364,22 +343,19 @@ object workflows {
       *  8.15.0 and higher
       */
     /* static member */
-    @scala.inline
-    def createIn(container: typings.mendixmodelsdk.workflowsMod.workflows.Flow): typings.mendixmodelsdk.workflowsMod.workflows.ExclusiveSplitActivity = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.ExclusiveSplitActivity]
+    inline def createIn(container: typings.mendixmodelsdk.workflowsMod.workflows.Flow): typings.mendixmodelsdk.workflowsMod.workflows.ExclusiveSplitActivity = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.ExclusiveSplitActivity]
     
     /* static member */
     @JSImport("mendixmodelsdk", "workflows.ExclusiveSplitActivity.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
-    @scala.inline
-    def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+    inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "workflows.ExclusiveSplitActivity.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo = js.native
-    @scala.inline
-    def versionInfo_=(x: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    inline def versionInfo_=(x: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -412,15 +388,13 @@ object workflows {
     @JSImport("mendixmodelsdk", "workflows.ExclusiveSplitOutcome.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
-    @scala.inline
-    def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+    inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "workflows.ExclusiveSplitOutcome.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo = js.native
-    @scala.inline
-    def versionInfo_=(x: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    inline def versionInfo_=(x: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -455,8 +429,7 @@ object workflows {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @scala.inline
-    def create(model: IModel): typings.mendixmodelsdk.workflowsMod.workflows.Flow = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.Flow]
+    inline def create(model: IModel): typings.mendixmodelsdk.workflowsMod.workflows.Flow = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.Flow]
     
     /**
       * Creates and returns a new Flow instance in the SDK and on the server.
@@ -467,8 +440,7 @@ object workflows {
       *  8.15.0 and higher
       */
     /* static member */
-    @scala.inline
-    def createInOutcomeUnderFlow(container: typings.mendixmodelsdk.workflowsMod.workflows.Outcome): typings.mendixmodelsdk.workflowsMod.workflows.Flow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOutcomeUnderFlow")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.Flow]
+    inline def createInOutcomeUnderFlow(container: typings.mendixmodelsdk.workflowsMod.workflows.Outcome): typings.mendixmodelsdk.workflowsMod.workflows.Flow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOutcomeUnderFlow")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.Flow]
     
     /**
       * Creates and returns a new Flow instance in the SDK and on the server.
@@ -479,22 +451,19 @@ object workflows {
       *  8.15.0 and higher
       */
     /* static member */
-    @scala.inline
-    def createInWorkflowUnderFlow(container: typings.mendixmodelsdk.workflowsMod.workflows.Workflow): typings.mendixmodelsdk.workflowsMod.workflows.Flow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWorkflowUnderFlow")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.Flow]
+    inline def createInWorkflowUnderFlow(container: typings.mendixmodelsdk.workflowsMod.workflows.Workflow): typings.mendixmodelsdk.workflowsMod.workflows.Flow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWorkflowUnderFlow")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.Flow]
     
     /* static member */
     @JSImport("mendixmodelsdk", "workflows.Flow.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
-    @scala.inline
-    def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+    inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "workflows.Flow.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo = js.native
-    @scala.inline
-    def versionInfo_=(x: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    inline def versionInfo_=(x: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -527,15 +496,13 @@ object workflows {
     @JSImport("mendixmodelsdk", "workflows.Outcome.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
-    @scala.inline
-    def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+    inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "workflows.Outcome.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo = js.native
-    @scala.inline
-    def versionInfo_=(x: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    inline def versionInfo_=(x: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -570,8 +537,7 @@ object workflows {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @scala.inline
-    def create(model: IModel): typings.mendixmodelsdk.workflowsMod.workflows.ParallelSplitActivity = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.ParallelSplitActivity]
+    inline def create(model: IModel): typings.mendixmodelsdk.workflowsMod.workflows.ParallelSplitActivity = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.ParallelSplitActivity]
     
     /**
       * Creates and returns a new ParallelSplitActivity instance in the SDK and on the server.
@@ -582,22 +548,19 @@ object workflows {
       *  9.0.0 and higher
       */
     /* static member */
-    @scala.inline
-    def createIn(container: typings.mendixmodelsdk.workflowsMod.workflows.Flow): typings.mendixmodelsdk.workflowsMod.workflows.ParallelSplitActivity = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.ParallelSplitActivity]
+    inline def createIn(container: typings.mendixmodelsdk.workflowsMod.workflows.Flow): typings.mendixmodelsdk.workflowsMod.workflows.ParallelSplitActivity = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.ParallelSplitActivity]
     
     /* static member */
     @JSImport("mendixmodelsdk", "workflows.ParallelSplitActivity.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
-    @scala.inline
-    def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+    inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "workflows.ParallelSplitActivity.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo = js.native
-    @scala.inline
-    def versionInfo_=(x: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    inline def versionInfo_=(x: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -632,8 +595,7 @@ object workflows {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @scala.inline
-    def create(model: IModel): typings.mendixmodelsdk.workflowsMod.workflows.ParallelSplitOutcome = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.ParallelSplitOutcome]
+    inline def create(model: IModel): typings.mendixmodelsdk.workflowsMod.workflows.ParallelSplitOutcome = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.ParallelSplitOutcome]
     
     /**
       * Creates and returns a new ParallelSplitOutcome instance in the SDK and on the server.
@@ -644,22 +606,19 @@ object workflows {
       *  9.0.0 and higher
       */
     /* static member */
-    @scala.inline
-    def createIn(container: typings.mendixmodelsdk.workflowsMod.workflows.ParallelSplitActivity): typings.mendixmodelsdk.workflowsMod.workflows.ParallelSplitOutcome = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.ParallelSplitOutcome]
+    inline def createIn(container: typings.mendixmodelsdk.workflowsMod.workflows.ParallelSplitActivity): typings.mendixmodelsdk.workflowsMod.workflows.ParallelSplitOutcome = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.ParallelSplitOutcome]
     
     /* static member */
     @JSImport("mendixmodelsdk", "workflows.ParallelSplitOutcome.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
-    @scala.inline
-    def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+    inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "workflows.ParallelSplitOutcome.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo = js.native
-    @scala.inline
-    def versionInfo_=(x: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    inline def versionInfo_=(x: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -692,15 +651,13 @@ object workflows {
     @JSImport("mendixmodelsdk", "workflows.UserSource.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
-    @scala.inline
-    def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+    inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "workflows.UserSource.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo = js.native
-    @scala.inline
-    def versionInfo_=(x: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    inline def versionInfo_=(x: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -735,8 +692,7 @@ object workflows {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @scala.inline
-    def create(model: IModel): typings.mendixmodelsdk.workflowsMod.workflows.UserTask = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.UserTask]
+    inline def create(model: IModel): typings.mendixmodelsdk.workflowsMod.workflows.UserTask = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.UserTask]
     
     /**
       * Creates and returns a new UserTask instance in the SDK and on the server.
@@ -747,22 +703,19 @@ object workflows {
       *  8.15.0 and higher
       */
     /* static member */
-    @scala.inline
-    def createIn(container: typings.mendixmodelsdk.workflowsMod.workflows.Flow): typings.mendixmodelsdk.workflowsMod.workflows.UserTask = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.UserTask]
+    inline def createIn(container: typings.mendixmodelsdk.workflowsMod.workflows.Flow): typings.mendixmodelsdk.workflowsMod.workflows.UserTask = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.UserTask]
     
     /* static member */
     @JSImport("mendixmodelsdk", "workflows.UserTask.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
-    @scala.inline
-    def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+    inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "workflows.UserTask.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo = js.native
-    @scala.inline
-    def versionInfo_=(x: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    inline def versionInfo_=(x: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -795,22 +748,19 @@ object workflows {
       * Expects one argument, the projects.IFolderBase in which this unit is contained.
       */
     /* static member */
-    @scala.inline
-    def createIn(container: IFolderBase): typings.mendixmodelsdk.workflowsMod.workflows.Workflow = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.Workflow]
+    inline def createIn(container: IFolderBase): typings.mendixmodelsdk.workflowsMod.workflows.Workflow = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.Workflow]
     
     /* static member */
     @JSImport("mendixmodelsdk", "workflows.Workflow.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
-    @scala.inline
-    def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+    inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "workflows.Workflow.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo = js.native
-    @scala.inline
-    def versionInfo_=(x: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    inline def versionInfo_=(x: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -843,15 +793,13 @@ object workflows {
     @JSImport("mendixmodelsdk", "workflows.WorkflowActivity.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
-    @scala.inline
-    def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+    inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "workflows.WorkflowActivity.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo = js.native
-    @scala.inline
-    def versionInfo_=(x: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    inline def versionInfo_=(x: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -884,15 +832,13 @@ object workflows {
     @JSImport("mendixmodelsdk", "workflows.WorkflowTask.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
-    @scala.inline
-    def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+    inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "workflows.WorkflowTask.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo = js.native
-    @scala.inline
-    def versionInfo_=(x: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    inline def versionInfo_=(x: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -927,8 +873,7 @@ object workflows {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @scala.inline
-    def create(model: IModel): typings.mendixmodelsdk.workflowsMod.workflows.WorkflowTaskOutcome = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.WorkflowTaskOutcome]
+    inline def create(model: IModel): typings.mendixmodelsdk.workflowsMod.workflows.WorkflowTaskOutcome = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.WorkflowTaskOutcome]
     
     /**
       * Creates and returns a new WorkflowTaskOutcome instance in the SDK and on the server.
@@ -939,22 +884,19 @@ object workflows {
       *  8.15.0 and higher
       */
     /* static member */
-    @scala.inline
-    def createIn(container: typings.mendixmodelsdk.workflowsMod.workflows.WorkflowTask): typings.mendixmodelsdk.workflowsMod.workflows.WorkflowTaskOutcome = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.WorkflowTaskOutcome]
+    inline def createIn(container: typings.mendixmodelsdk.workflowsMod.workflows.WorkflowTask): typings.mendixmodelsdk.workflowsMod.workflows.WorkflowTaskOutcome = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.WorkflowTaskOutcome]
     
     /* static member */
     @JSImport("mendixmodelsdk", "workflows.WorkflowTaskOutcome.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
-    @scala.inline
-    def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+    inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "workflows.WorkflowTaskOutcome.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo = js.native
-    @scala.inline
-    def versionInfo_=(x: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    inline def versionInfo_=(x: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -989,8 +931,7 @@ object workflows {
       * After creation, assign or add this instance to a property that accepts this kind of objects.
       */
     /* static member */
-    @scala.inline
-    def create(model: IModel): typings.mendixmodelsdk.workflowsMod.workflows.XPathBasedUserSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.XPathBasedUserSource]
+    inline def create(model: IModel): typings.mendixmodelsdk.workflowsMod.workflows.XPathBasedUserSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.XPathBasedUserSource]
     
     /**
       * Creates and returns a new XPathBasedUserSource instance in the SDK and on the server.
@@ -1001,21 +942,18 @@ object workflows {
       *  8.15.0 and higher
       */
     /* static member */
-    @scala.inline
-    def createIn(container: typings.mendixmodelsdk.workflowsMod.workflows.UserTask): typings.mendixmodelsdk.workflowsMod.workflows.XPathBasedUserSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.XPathBasedUserSource]
+    inline def createIn(container: typings.mendixmodelsdk.workflowsMod.workflows.UserTask): typings.mendixmodelsdk.workflowsMod.workflows.XPathBasedUserSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.workflowsMod.workflows.XPathBasedUserSource]
     
     /* static member */
     @JSImport("mendixmodelsdk", "workflows.XPathBasedUserSource.structureTypeName")
     @js.native
     def structureTypeName: String = js.native
-    @scala.inline
-    def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+    inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
     
     /* static member */
     @JSImport("mendixmodelsdk", "workflows.XPathBasedUserSource.versionInfo")
     @js.native
     def versionInfo: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo = js.native
-    @scala.inline
-    def versionInfo_=(x: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+    inline def versionInfo_=(x: typings.mendixmodelsdk.workflowsMod.StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
   }
 }

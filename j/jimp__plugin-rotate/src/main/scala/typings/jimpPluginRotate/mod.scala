@@ -11,8 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Rotate = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Rotate]
+  inline def default(): Rotate = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Rotate]
   
   @js.native
   trait Rotate extends StObject {

@@ -25,7 +25,6 @@ object basicMaterialColorShaderLibMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): BasicMaterialColorShaderLib = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BasicMaterialColorShaderLib]
+    inline def create(): BasicMaterialColorShaderLib = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BasicMaterialColorShaderLib]
   }
 }

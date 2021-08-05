@@ -13,16 +13,13 @@ trait DeleteConfigurationSetTrackingOptionsRequest extends StObject {
 }
 object DeleteConfigurationSetTrackingOptionsRequest {
   
-  @scala.inline
-  def apply(ConfigurationSetName: ConfigurationSetName): DeleteConfigurationSetTrackingOptionsRequest = {
+  inline def apply(ConfigurationSetName: ConfigurationSetName): DeleteConfigurationSetTrackingOptionsRequest = {
     val __obj = js.Dynamic.literal(ConfigurationSetName = ConfigurationSetName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteConfigurationSetTrackingOptionsRequest]
   }
   
-  @scala.inline
-  implicit class DeleteConfigurationSetTrackingOptionsRequestMutableBuilder[Self <: DeleteConfigurationSetTrackingOptionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteConfigurationSetTrackingOptionsRequest](x: Self) {
     
-    @scala.inline
-    def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
+    inline def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
   }
 }

@@ -16,19 +16,15 @@ trait KeyValuePair[K, V] extends StObject {
 }
 object KeyValuePair {
   
-  @scala.inline
-  def apply[K, V](key: K, value: V): KeyValuePair[K, V] = {
+  inline def apply[K, V](key: K, value: V): KeyValuePair[K, V] = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyValuePair[K, V]]
   }
   
-  @scala.inline
-  implicit class KeyValuePairMutableBuilder[Self <: KeyValuePair[?, ?], K, V] (val x: Self & (KeyValuePair[K, V])) extends AnyVal {
+  extension [Self <: KeyValuePair[?, ?], K, V](x: Self & (KeyValuePair[K, V])) {
     
-    @scala.inline
-    def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: V): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: V): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

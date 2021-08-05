@@ -22,7 +22,7 @@ object serializationComponentsMod {
   abstract class SerializerComponent[T] protected () extends StObject {
     def this(owner: Serializer) = this()
     
-    var owner: Serializer = js.native
+    /* protected */ var owner: Serializer = js.native
     
     def priority: Double = js.native
     
@@ -43,8 +43,7 @@ object serializationComponentsMod {
     @JSImport("typedoc/dist/lib/serialization/components", "SerializerComponent.PRIORITY")
     @js.native
     def PRIORITY: Double = js.native
-    @scala.inline
-    def PRIORITY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIORITY")(x.asInstanceOf[js.Any])
+    inline def PRIORITY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRIORITY")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("typedoc/dist/lib/serialization/components", "TypeSerializerComponent")

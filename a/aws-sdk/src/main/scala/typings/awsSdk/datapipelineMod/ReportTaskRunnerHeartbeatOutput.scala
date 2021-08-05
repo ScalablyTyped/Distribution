@@ -13,16 +13,13 @@ trait ReportTaskRunnerHeartbeatOutput extends StObject {
 }
 object ReportTaskRunnerHeartbeatOutput {
   
-  @scala.inline
-  def apply(terminate: Boolean): ReportTaskRunnerHeartbeatOutput = {
+  inline def apply(terminate: Boolean): ReportTaskRunnerHeartbeatOutput = {
     val __obj = js.Dynamic.literal(terminate = terminate.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReportTaskRunnerHeartbeatOutput]
   }
   
-  @scala.inline
-  implicit class ReportTaskRunnerHeartbeatOutputMutableBuilder[Self <: ReportTaskRunnerHeartbeatOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ReportTaskRunnerHeartbeatOutput](x: Self) {
     
-    @scala.inline
-    def setTerminate(value: Boolean): Self = StObject.set(x, "terminate", value.asInstanceOf[js.Any])
+    inline def setTerminate(value: Boolean): Self = StObject.set(x, "terminate", value.asInstanceOf[js.Any])
   }
 }

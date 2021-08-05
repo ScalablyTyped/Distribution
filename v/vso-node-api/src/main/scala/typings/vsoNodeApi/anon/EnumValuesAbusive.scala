@@ -10,16 +10,13 @@ trait EnumValuesAbusive extends StObject {
 }
 object EnumValuesAbusive {
   
-  @scala.inline
-  def apply(enumValues: Abusive): EnumValuesAbusive = {
+  inline def apply(enumValues: Abusive): EnumValuesAbusive = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesAbusive]
   }
   
-  @scala.inline
-  implicit class EnumValuesAbusiveMutableBuilder[Self <: EnumValuesAbusive] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesAbusive](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: Abusive): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: Abusive): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

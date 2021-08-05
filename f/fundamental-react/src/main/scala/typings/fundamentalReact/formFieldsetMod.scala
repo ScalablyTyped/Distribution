@@ -23,26 +23,20 @@ object formFieldsetMod extends Shortcut {
   }
   object FormFieldsetProps {
     
-    @scala.inline
-    def apply(): FormFieldsetProps = {
+    inline def apply(): FormFieldsetProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FormFieldsetProps]
     }
     
-    @scala.inline
-    implicit class FormFieldsetPropsMutableBuilder[Self <: FormFieldsetProps] (val x: Self) extends AnyVal {
+    extension [Self <: FormFieldsetProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
+      inline def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
+      inline def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
     }
   }
   

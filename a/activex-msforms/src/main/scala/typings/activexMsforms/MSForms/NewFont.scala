@@ -12,7 +12,7 @@ trait NewFont extends StObject {
   
   val Italic: Boolean
   
-  @JSName("MSForms.NewFont_typekey")
+  /* private */ @JSName("MSForms.NewFont_typekey")
   var MSFormsDotNewFont_typekey: NewFont
   
   val Name: String
@@ -27,8 +27,7 @@ trait NewFont extends StObject {
 }
 object NewFont {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Bold: Boolean,
     Charset: Double,
     Italic: Boolean,
@@ -44,34 +43,24 @@ object NewFont {
     __obj.asInstanceOf[NewFont]
   }
   
-  @scala.inline
-  implicit class NewFontMutableBuilder[Self <: NewFont] (val x: Self) extends AnyVal {
+  extension [Self <: NewFont](x: Self) {
     
-    @scala.inline
-    def setBold(value: Boolean): Self = StObject.set(x, "Bold", value.asInstanceOf[js.Any])
+    inline def setBold(value: Boolean): Self = StObject.set(x, "Bold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharset(value: Double): Self = StObject.set(x, "Charset", value.asInstanceOf[js.Any])
+    inline def setCharset(value: Double): Self = StObject.set(x, "Charset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItalic(value: Boolean): Self = StObject.set(x, "Italic", value.asInstanceOf[js.Any])
+    inline def setItalic(value: Boolean): Self = StObject.set(x, "Italic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSFormsDotNewFont_typekey(value: NewFont): Self = StObject.set(x, "MSForms.NewFont_typekey", value.asInstanceOf[js.Any])
+    inline def setMSFormsDotNewFont_typekey(value: NewFont): Self = StObject.set(x, "MSForms.NewFont_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrikethrough(value: Boolean): Self = StObject.set(x, "Strikethrough", value.asInstanceOf[js.Any])
+    inline def setStrikethrough(value: Boolean): Self = StObject.set(x, "Strikethrough", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnderline(value: Boolean): Self = StObject.set(x, "Underline", value.asInstanceOf[js.Any])
+    inline def setUnderline(value: Boolean): Self = StObject.set(x, "Underline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeight(value: Double): Self = StObject.set(x, "Weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: Double): Self = StObject.set(x, "Weight", value.asInstanceOf[js.Any])
   }
 }

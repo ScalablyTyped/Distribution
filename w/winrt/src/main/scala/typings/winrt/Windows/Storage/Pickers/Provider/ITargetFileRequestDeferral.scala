@@ -10,16 +10,13 @@ trait ITargetFileRequestDeferral extends StObject {
 }
 object ITargetFileRequestDeferral {
   
-  @scala.inline
-  def apply(complete: () => Unit): ITargetFileRequestDeferral = {
+  inline def apply(complete: () => Unit): ITargetFileRequestDeferral = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
     __obj.asInstanceOf[ITargetFileRequestDeferral]
   }
   
-  @scala.inline
-  implicit class ITargetFileRequestDeferralMutableBuilder[Self <: ITargetFileRequestDeferral] (val x: Self) extends AnyVal {
+  extension [Self <: ITargetFileRequestDeferral](x: Self) {
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
   }
 }

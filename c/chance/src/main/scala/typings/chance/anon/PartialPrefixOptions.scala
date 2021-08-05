@@ -16,25 +16,19 @@ trait PartialPrefixOptions extends StObject {
 }
 object PartialPrefixOptions {
   
-  @scala.inline
-  def apply(): PartialPrefixOptions = {
+  inline def apply(): PartialPrefixOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPrefixOptions]
   }
   
-  @scala.inline
-  implicit class PartialPrefixOptionsMutableBuilder[Self <: PartialPrefixOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPrefixOptions](x: Self) {
     
-    @scala.inline
-    def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
+    inline def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullUndefined: Self = StObject.set(x, "full", js.undefined)
+    inline def setFullUndefined: Self = StObject.set(x, "full", js.undefined)
     
-    @scala.inline
-    def setGender(value: male | female | all): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
+    inline def setGender(value: male | female | all): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenderUndefined: Self = StObject.set(x, "gender", js.undefined)
+    inline def setGenderUndefined: Self = StObject.set(x, "gender", js.undefined)
   }
 }

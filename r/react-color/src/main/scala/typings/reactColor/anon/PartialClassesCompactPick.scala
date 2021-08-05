@@ -11,19 +11,15 @@ trait PartialClassesCompactPick extends StObject {
 }
 object PartialClassesCompactPick {
   
-  @scala.inline
-  def apply(): PartialClassesCompactPick = {
+  inline def apply(): PartialClassesCompactPick = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassesCompactPick]
   }
   
-  @scala.inline
-  implicit class PartialClassesCompactPickMutableBuilder[Self <: PartialClassesCompactPick] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassesCompactPick](x: Self) {
     
-    @scala.inline
-    def setDefault(value: PartialCompactPickerStyle): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: PartialCompactPickerStyle): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
   }
 }

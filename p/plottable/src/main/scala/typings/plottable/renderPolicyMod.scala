@@ -32,7 +32,7 @@ object renderPolicyMod {
     extends StObject
        with IRenderPolicy {
     
-    var _timeoutMsec: js.Any = js.native
+    /* private */ var _timeoutMsec: js.Any = js.native
     
     /* CompleteClass */
     override def render(): js.Any = js.native
@@ -44,17 +44,14 @@ object renderPolicyMod {
   }
   object IRenderPolicy {
     
-    @scala.inline
-    def apply(render: () => js.Any): IRenderPolicy = {
+    inline def apply(render: () => js.Any): IRenderPolicy = {
       val __obj = js.Dynamic.literal(render = js.Any.fromFunction0(render))
       __obj.asInstanceOf[IRenderPolicy]
     }
     
-    @scala.inline
-    implicit class IRenderPolicyMutableBuilder[Self <: IRenderPolicy] (val x: Self) extends AnyVal {
+    extension [Self <: IRenderPolicy](x: Self) {
       
-      @scala.inline
-      def setRender(value: () => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
+      inline def setRender(value: () => js.Any): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
     }
   }
 }

@@ -35,8 +35,7 @@ object timeTableUniDriverMod {
   }
   object TimeTableUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addItemButtonExistsAt: Double => js.Promise[Boolean],
       click: () => js.Promise[Unit],
       clickOnAddItemButtonAt: Double => js.Promise[Unit],
@@ -56,41 +55,29 @@ object timeTableUniDriverMod {
       __obj.asInstanceOf[TimeTableUniDriver]
     }
     
-    @scala.inline
-    implicit class TimeTableUniDriverMutableBuilder[Self <: TimeTableUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: TimeTableUniDriver](x: Self) {
       
-      @scala.inline
-      def setAddItemButtonExistsAt(value: Double => js.Promise[Boolean]): Self = StObject.set(x, "addItemButtonExistsAt", js.Any.fromFunction1(value))
+      inline def setAddItemButtonExistsAt(value: Double => js.Promise[Boolean]): Self = StObject.set(x, "addItemButtonExistsAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClickOnAddItemButtonAt(value: Double => js.Promise[Unit]): Self = StObject.set(x, "clickOnAddItemButtonAt", js.Any.fromFunction1(value))
+      inline def setClickOnAddItemButtonAt(value: Double => js.Promise[Unit]): Self = StObject.set(x, "clickOnAddItemButtonAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetColumnCount(value: () => js.Promise[Double]): Self = StObject.set(x, "getColumnCount", js.Any.fromFunction0(value))
+      inline def setGetColumnCount(value: () => js.Promise[Double]): Self = StObject.set(x, "getColumnCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetItemCountAt(value: Double => js.Promise[Double]): Self = StObject.set(x, "getItemCountAt", js.Any.fromFunction1(value))
+      inline def setGetItemCountAt(value: Double => js.Promise[Double]): Self = StObject.set(x, "getItemCountAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetSubtitleAt(value: Double => js.Promise[String]): Self = StObject.set(x, "getSubtitleAt", js.Any.fromFunction1(value))
+      inline def setGetSubtitleAt(value: Double => js.Promise[String]): Self = StObject.set(x, "getSubtitleAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetTitleAt(value: Double => js.Promise[String]): Self = StObject.set(x, "getTitleAt", js.Any.fromFunction1(value))
+      inline def setGetTitleAt(value: Double => js.Promise[String]): Self = StObject.set(x, "getTitleAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsColumnActiveAt(value: Double => js.Promise[Boolean]): Self = StObject.set(x, "isColumnActiveAt", js.Any.fromFunction1(value))
+      inline def setIsColumnActiveAt(value: Double => js.Promise[Boolean]): Self = StObject.set(x, "isColumnActiveAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsColumnDisabledAt(value: Double => js.Promise[Boolean]): Self = StObject.set(x, "isColumnDisabledAt", js.Any.fromFunction1(value))
+      inline def setIsColumnDisabledAt(value: Double => js.Promise[Boolean]): Self = StObject.set(x, "isColumnDisabledAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsColumnDroppableAt(value: Double => js.Promise[Boolean]): Self = StObject.set(x, "isColumnDroppableAt", js.Any.fromFunction1(value))
+      inline def setIsColumnDroppableAt(value: Double => js.Promise[Boolean]): Self = StObject.set(x, "isColumnDroppableAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsItemDisabledAt(value: (Double, Double) => js.Promise[Boolean]): Self = StObject.set(x, "isItemDisabledAt", js.Any.fromFunction2(value))
+      inline def setIsItemDisabledAt(value: (Double, Double) => js.Promise[Boolean]): Self = StObject.set(x, "isItemDisabledAt", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIsItemDraggableAt(value: (Double, Double) => js.Promise[Boolean]): Self = StObject.set(x, "isItemDraggableAt", js.Any.fromFunction2(value))
+      inline def setIsItemDraggableAt(value: (Double, Double) => js.Promise[Boolean]): Self = StObject.set(x, "isItemDraggableAt", js.Any.fromFunction2(value))
     }
   }
 }

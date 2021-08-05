@@ -20,17 +20,14 @@ object typesSetIdentityPoolRolesOutputMod {
   }
   object SetIdentityPoolRolesOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): SetIdentityPoolRolesOutput = {
+    inline def apply($metadata: ResponseMetadata): SetIdentityPoolRolesOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[SetIdentityPoolRolesOutput]
     }
     
-    @scala.inline
-    implicit class SetIdentityPoolRolesOutputMutableBuilder[Self <: SetIdentityPoolRolesOutput] (val x: Self) extends AnyVal {
+    extension [Self <: SetIdentityPoolRolesOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
 }

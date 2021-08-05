@@ -21,8 +21,7 @@ trait LanguageDetectorModule
 }
 object LanguageDetectorModule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cacheUserLanguage: String => Unit,
     detect: () => js.UndefOr[String],
     init: (Services, js.Object, InitOptions) => Unit
@@ -32,19 +31,14 @@ object LanguageDetectorModule {
     __obj.asInstanceOf[LanguageDetectorModule]
   }
   
-  @scala.inline
-  implicit class LanguageDetectorModuleMutableBuilder[Self <: LanguageDetectorModule] (val x: Self) extends AnyVal {
+  extension [Self <: LanguageDetectorModule](x: Self) {
     
-    @scala.inline
-    def setCacheUserLanguage(value: String => Unit): Self = StObject.set(x, "cacheUserLanguage", js.Any.fromFunction1(value))
+    inline def setCacheUserLanguage(value: String => Unit): Self = StObject.set(x, "cacheUserLanguage", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDetect(value: () => js.UndefOr[String]): Self = StObject.set(x, "detect", js.Any.fromFunction0(value))
+    inline def setDetect(value: () => js.UndefOr[String]): Self = StObject.set(x, "detect", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInit(value: (Services, js.Object, InitOptions) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
+    inline def setInit(value: (Services, js.Object, InitOptions) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setType(value: languageDetector): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: languageDetector): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

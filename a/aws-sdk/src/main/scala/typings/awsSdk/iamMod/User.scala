@@ -48,49 +48,35 @@ trait User extends StObject {
 }
 object User {
   
-  @scala.inline
-  def apply(Arn: arnType, CreateDate: dateType, Path: pathType, UserId: idType, UserName: userNameType): User = {
+  inline def apply(Arn: arnType, CreateDate: dateType, Path: pathType, UserId: idType, UserName: userNameType): User = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any], CreateDate = CreateDate.asInstanceOf[js.Any], Path = Path.asInstanceOf[js.Any], UserId = UserId.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
     __obj.asInstanceOf[User]
   }
   
-  @scala.inline
-  implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
+  extension [Self <: User](x: Self) {
     
-    @scala.inline
-    def setArn(value: arnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: arnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateDate(value: dateType): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: dateType): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordLastUsed(value: dateType): Self = StObject.set(x, "PasswordLastUsed", value.asInstanceOf[js.Any])
+    inline def setPasswordLastUsed(value: dateType): Self = StObject.set(x, "PasswordLastUsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordLastUsedUndefined: Self = StObject.set(x, "PasswordLastUsed", js.undefined)
+    inline def setPasswordLastUsedUndefined: Self = StObject.set(x, "PasswordLastUsed", js.undefined)
     
-    @scala.inline
-    def setPath(value: pathType): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: pathType): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsBoundary(value: AttachedPermissionsBoundary): Self = StObject.set(x, "PermissionsBoundary", value.asInstanceOf[js.Any])
+    inline def setPermissionsBoundary(value: AttachedPermissionsBoundary): Self = StObject.set(x, "PermissionsBoundary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsBoundaryUndefined: Self = StObject.set(x, "PermissionsBoundary", js.undefined)
+    inline def setPermissionsBoundaryUndefined: Self = StObject.set(x, "PermissionsBoundary", js.undefined)
     
-    @scala.inline
-    def setTags(value: tagListType): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: tagListType): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setUserId(value: idType): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: idType): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

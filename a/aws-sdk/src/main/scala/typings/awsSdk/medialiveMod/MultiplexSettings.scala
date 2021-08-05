@@ -28,31 +28,23 @@ trait MultiplexSettings extends StObject {
 }
 object MultiplexSettings {
   
-  @scala.inline
-  def apply(TransportStreamBitrate: integerMin1000000Max100000000, TransportStreamId: integerMin0Max65535): MultiplexSettings = {
+  inline def apply(TransportStreamBitrate: integerMin1000000Max100000000, TransportStreamId: integerMin0Max65535): MultiplexSettings = {
     val __obj = js.Dynamic.literal(TransportStreamBitrate = TransportStreamBitrate.asInstanceOf[js.Any], TransportStreamId = TransportStreamId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiplexSettings]
   }
   
-  @scala.inline
-  implicit class MultiplexSettingsMutableBuilder[Self <: MultiplexSettings] (val x: Self) extends AnyVal {
+  extension [Self <: MultiplexSettings](x: Self) {
     
-    @scala.inline
-    def setMaximumVideoBufferDelayMilliseconds(value: integerMin800Max3000): Self = StObject.set(x, "MaximumVideoBufferDelayMilliseconds", value.asInstanceOf[js.Any])
+    inline def setMaximumVideoBufferDelayMilliseconds(value: integerMin800Max3000): Self = StObject.set(x, "MaximumVideoBufferDelayMilliseconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumVideoBufferDelayMillisecondsUndefined: Self = StObject.set(x, "MaximumVideoBufferDelayMilliseconds", js.undefined)
+    inline def setMaximumVideoBufferDelayMillisecondsUndefined: Self = StObject.set(x, "MaximumVideoBufferDelayMilliseconds", js.undefined)
     
-    @scala.inline
-    def setTransportStreamBitrate(value: integerMin1000000Max100000000): Self = StObject.set(x, "TransportStreamBitrate", value.asInstanceOf[js.Any])
+    inline def setTransportStreamBitrate(value: integerMin1000000Max100000000): Self = StObject.set(x, "TransportStreamBitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransportStreamId(value: integerMin0Max65535): Self = StObject.set(x, "TransportStreamId", value.asInstanceOf[js.Any])
+    inline def setTransportStreamId(value: integerMin0Max65535): Self = StObject.set(x, "TransportStreamId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransportStreamReservedBitrate(value: integerMin0Max100000000): Self = StObject.set(x, "TransportStreamReservedBitrate", value.asInstanceOf[js.Any])
+    inline def setTransportStreamReservedBitrate(value: integerMin0Max100000000): Self = StObject.set(x, "TransportStreamReservedBitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransportStreamReservedBitrateUndefined: Self = StObject.set(x, "TransportStreamReservedBitrate", js.undefined)
+    inline def setTransportStreamReservedBitrateUndefined: Self = StObject.set(x, "TransportStreamReservedBitrate", js.undefined)
   }
 }

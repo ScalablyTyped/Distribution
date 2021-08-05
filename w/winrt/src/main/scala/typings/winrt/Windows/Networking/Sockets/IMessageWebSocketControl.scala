@@ -16,8 +16,7 @@ trait IMessageWebSocketControl
 }
 object IMessageWebSocketControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     maxMessageSize: Double,
     messageType: SocketMessageType,
     outboundBufferSizeInBytes: Double,
@@ -29,13 +28,10 @@ object IMessageWebSocketControl {
     __obj.asInstanceOf[IMessageWebSocketControl]
   }
   
-  @scala.inline
-  implicit class IMessageWebSocketControlMutableBuilder[Self <: IMessageWebSocketControl] (val x: Self) extends AnyVal {
+  extension [Self <: IMessageWebSocketControl](x: Self) {
     
-    @scala.inline
-    def setMaxMessageSize(value: Double): Self = StObject.set(x, "maxMessageSize", value.asInstanceOf[js.Any])
+    inline def setMaxMessageSize(value: Double): Self = StObject.set(x, "maxMessageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageType(value: SocketMessageType): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
+    inline def setMessageType(value: SocketMessageType): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
   }
 }

@@ -23,34 +23,25 @@ trait ExecutionParameter extends StObject {
 }
 object ExecutionParameter {
   
-  @scala.inline
-  def apply(): ExecutionParameter = {
+  inline def apply(): ExecutionParameter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExecutionParameter]
   }
   
-  @scala.inline
-  implicit class ExecutionParameterMutableBuilder[Self <: ExecutionParameter] (val x: Self) extends AnyVal {
+  extension [Self <: ExecutionParameter](x: Self) {
     
-    @scala.inline
-    def setDefaultValues(value: ExecutionParameterValueList): Self = StObject.set(x, "DefaultValues", value.asInstanceOf[js.Any])
+    inline def setDefaultValues(value: ExecutionParameterValueList): Self = StObject.set(x, "DefaultValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValuesUndefined: Self = StObject.set(x, "DefaultValues", js.undefined)
+    inline def setDefaultValuesUndefined: Self = StObject.set(x, "DefaultValues", js.undefined)
     
-    @scala.inline
-    def setDefaultValuesVarargs(value: ExecutionParameterValue*): Self = StObject.set(x, "DefaultValues", js.Array(value :_*))
+    inline def setDefaultValuesVarargs(value: ExecutionParameterValue*): Self = StObject.set(x, "DefaultValues", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: ExecutionParameterKey): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ExecutionParameterKey): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setType(value: ExecutionParameterType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: ExecutionParameterType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

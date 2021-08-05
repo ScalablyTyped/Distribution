@@ -16,50 +16,33 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addCustomAttribute(key: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCustomAttribute")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addCustomAttribute(key: String, value: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCustomAttribute")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addCustomAttribute(key: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCustomAttribute")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addCustomAttribute(key: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCustomAttribute")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addCustomAttribute(key: String, value: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCustomAttribute")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addCustomAttribute(key: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCustomAttribute")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def addCustomAttributes(atts: StringDictionary[String | Double | Boolean]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addCustomAttributes")(atts.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addCustomAttributes(atts: StringDictionary[String | Double | Boolean]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addCustomAttributes")(atts.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def addIgnoringRule(pattern: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addIgnoringRule")(pattern.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def addIgnoringRule(pattern: RegExp): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addIgnoringRule")(pattern.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addIgnoringRule(pattern: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addIgnoringRule")(pattern.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addIgnoringRule(pattern: RegExp): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addIgnoringRule")(pattern.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def addNamingRule(pattern: String, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addNamingRule")(pattern.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def addNamingRule(pattern: RegExp, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addNamingRule")(pattern.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addNamingRule(pattern: String, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addNamingRule")(pattern.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addNamingRule(pattern: RegExp, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addNamingRule")(pattern.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def createTracer[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](name: String, handle: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createTracer")(name.asInstanceOf[js.Any], handle.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def createTracer[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](name: String, handle: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createTracer")(name.asInstanceOf[js.Any], handle.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @scala.inline
-  def endTransaction(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("endTransaction")().asInstanceOf[Unit]
+  inline def endTransaction(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("endTransaction")().asInstanceOf[Unit]
   
-  @scala.inline
-  def getBrowserTimingHeader(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBrowserTimingHeader")().asInstanceOf[String]
+  inline def getBrowserTimingHeader(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBrowserTimingHeader")().asInstanceOf[String]
   
-  @scala.inline
-  def getLinkingMetadata(): LinkingMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("getLinkingMetadata")().asInstanceOf[LinkingMetadata]
-  @scala.inline
-  def getLinkingMetadata(omitSupportability: Boolean): LinkingMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("getLinkingMetadata")(omitSupportability.asInstanceOf[js.Any]).asInstanceOf[LinkingMetadata]
+  inline def getLinkingMetadata(): LinkingMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("getLinkingMetadata")().asInstanceOf[LinkingMetadata]
+  inline def getLinkingMetadata(omitSupportability: Boolean): LinkingMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("getLinkingMetadata")(omitSupportability.asInstanceOf[js.Any]).asInstanceOf[LinkingMetadata]
   
-  @scala.inline
-  def getTraceMetadata(): TraceMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("getTraceMetadata")().asInstanceOf[TraceMetadata]
+  inline def getTraceMetadata(): TraceMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("getTraceMetadata")().asInstanceOf[TraceMetadata]
   
-  @scala.inline
-  def getTransaction(): TransactionHandle = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransaction")().asInstanceOf[TransactionHandle]
+  inline def getTransaction(): TransactionHandle = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransaction")().asInstanceOf[TransactionHandle]
   
-  @scala.inline
-  def incrementMetric(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("incrementMetric")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def incrementMetric(name: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("incrementMetric")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def incrementMetric(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("incrementMetric")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def incrementMetric(name: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("incrementMetric")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("newrelic", "instrument")
   @js.native
@@ -69,8 +52,7 @@ object mod {
   @js.native
   val instrumentDatastore: Instrument_ = js.native
   
-  @scala.inline
-  def instrumentLoadedModule(moduleName: String, moduleInstance: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("instrumentLoadedModule")(moduleName.asInstanceOf[js.Any], moduleInstance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def instrumentLoadedModule(moduleName: String, moduleInstance: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("instrumentLoadedModule")(moduleName.asInstanceOf[js.Any], moduleInstance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("newrelic", "instrumentMessages")
   @js.native
@@ -80,67 +62,42 @@ object mod {
   @js.native
   val instrumentWebframework: Instrument_ = js.native
   
-  @scala.inline
-  def noticeError(error: Error): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noticeError")(error.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def noticeError(error: Error, customAttributes: StringDictionary[String | Double | Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("noticeError")(error.asInstanceOf[js.Any], customAttributes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def noticeError(error: Error): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noticeError")(error.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def noticeError(error: Error, customAttributes: StringDictionary[String | Double | Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("noticeError")(error.asInstanceOf[js.Any], customAttributes.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def recordCustomEvent(eventType: String, attributes: StringDictionary[Boolean | Double | String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("recordCustomEvent")(eventType.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def recordCustomEvent(eventType: String, attributes: StringDictionary[Boolean | Double | String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("recordCustomEvent")(eventType.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def recordMetric(name: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("recordMetric")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def recordMetric(name: String, value: Metric): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("recordMetric")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def recordMetric(name: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("recordMetric")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def recordMetric(name: String, value: Metric): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("recordMetric")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setControllerName(name: String, action: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setControllerName")(name.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setControllerName(name: String, action: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setControllerName")(name.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setDispatcher(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDispatcher")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def setDispatcher(name: String, version: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setDispatcher")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setDispatcher(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDispatcher")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setDispatcher(name: String, version: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setDispatcher")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def setIgnoreTransaction(ignored: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setIgnoreTransaction")(ignored.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setIgnoreTransaction(ignored: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setIgnoreTransaction")(ignored.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setLambdaHandler[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](handler: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("setLambdaHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def setLambdaHandler[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](handler: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("setLambdaHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @scala.inline
-  def setTransactionName(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTransactionName")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setTransactionName(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTransactionName")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def shutdown(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shutdown")().asInstanceOf[Unit]
-  @scala.inline
-  def shutdown(cb: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shutdown")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def shutdown(options: Unit, cb: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("shutdown")(options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def shutdown(options: CollectPendingData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shutdown")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def shutdown(options: CollectPendingData, cb: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("shutdown")(options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def shutdown(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shutdown")().asInstanceOf[Unit]
+  inline def shutdown(cb: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shutdown")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def shutdown(options: Unit, cb: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("shutdown")(options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def shutdown(options: CollectPendingData): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shutdown")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def shutdown(options: CollectPendingData, cb: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("shutdown")(options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def startBackgroundTransaction[T](name: String, group: String, handle: js.Function1[/* repeated */ js.Any, T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("startBackgroundTransaction")(name.asInstanceOf[js.Any], group.asInstanceOf[js.Any], handle.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def startBackgroundTransaction[T](name: String, group: String, handle: js.Promise[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("startBackgroundTransaction")(name.asInstanceOf[js.Any], group.asInstanceOf[js.Any], handle.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
-  @scala.inline
-  def startBackgroundTransaction[T](name: String, handle: js.Function1[/* repeated */ js.Any, T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("startBackgroundTransaction")(name.asInstanceOf[js.Any], handle.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def startBackgroundTransaction[T](name: String, handle: js.Promise[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("startBackgroundTransaction")(name.asInstanceOf[js.Any], handle.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def startBackgroundTransaction[T](name: String, group: String, handle: js.Function1[/* repeated */ js.Any, T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("startBackgroundTransaction")(name.asInstanceOf[js.Any], group.asInstanceOf[js.Any], handle.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def startBackgroundTransaction[T](name: String, group: String, handle: js.Promise[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("startBackgroundTransaction")(name.asInstanceOf[js.Any], group.asInstanceOf[js.Any], handle.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def startBackgroundTransaction[T](name: String, handle: js.Function1[/* repeated */ js.Any, T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("startBackgroundTransaction")(name.asInstanceOf[js.Any], handle.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def startBackgroundTransaction[T](name: String, handle: js.Promise[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("startBackgroundTransaction")(name.asInstanceOf[js.Any], handle.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
-  @scala.inline
-  def startSegment[T /* <: js.Thenable[js.Any] */](name: String, record: Boolean, handler: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("startSegment")(name.asInstanceOf[js.Any], record.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def startSegment[T, C /* <: js.Function1[/* repeated */ js.Any, js.Any] */](name: String, record: Boolean, handler: js.Function1[/* cb */ js.UndefOr[C], T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("startSegment")(name.asInstanceOf[js.Any], record.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def startSegment[T, C /* <: js.Function1[/* repeated */ js.Any, js.Any] */](name: String, record: Boolean, handler: js.Function1[/* cb */ js.UndefOr[C], T], callback: C): T = (^.asInstanceOf[js.Dynamic].applyDynamic("startSegment")(name.asInstanceOf[js.Any], record.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def startSegment[T /* <: js.Thenable[js.Any] */](name: String, record: Boolean, handler: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("startSegment")(name.asInstanceOf[js.Any], record.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def startSegment[T, C /* <: js.Function1[/* repeated */ js.Any, js.Any] */](name: String, record: Boolean, handler: js.Function1[/* cb */ js.UndefOr[C], T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("startSegment")(name.asInstanceOf[js.Any], record.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def startSegment[T, C /* <: js.Function1[/* repeated */ js.Any, js.Any] */](name: String, record: Boolean, handler: js.Function1[/* cb */ js.UndefOr[C], T], callback: C): T = (^.asInstanceOf[js.Dynamic].applyDynamic("startSegment")(name.asInstanceOf[js.Any], record.asInstanceOf[js.Any], handler.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @scala.inline
-  def startWebTransaction[T](url: String, handle: js.Function1[/* repeated */ js.Any, T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("startWebTransaction")(url.asInstanceOf[js.Any], handle.asInstanceOf[js.Any])).asInstanceOf[T]
-  @scala.inline
-  def startWebTransaction[T](url: String, handle: js.Promise[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("startWebTransaction")(url.asInstanceOf[js.Any], handle.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  inline def startWebTransaction[T](url: String, handle: js.Function1[/* repeated */ js.Any, T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("startWebTransaction")(url.asInstanceOf[js.Any], handle.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def startWebTransaction[T](url: String, handle: js.Promise[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("startWebTransaction")(url.asInstanceOf[js.Any], handle.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
   type DistributedTraceHeaders = Record[String, js.UndefOr[Double | String | js.Array[String]]]
   
@@ -158,20 +115,16 @@ object mod {
   }
   object DistributedTracePayload {
     
-    @scala.inline
-    def apply(httpSafe: () => String, text: () => String): DistributedTracePayload = {
+    inline def apply(httpSafe: () => String, text: () => String): DistributedTracePayload = {
       val __obj = js.Dynamic.literal(httpSafe = js.Any.fromFunction0(httpSafe), text = js.Any.fromFunction0(text))
       __obj.asInstanceOf[DistributedTracePayload]
     }
     
-    @scala.inline
-    implicit class DistributedTracePayloadMutableBuilder[Self <: DistributedTracePayload] (val x: Self) extends AnyVal {
+    extension [Self <: DistributedTracePayload](x: Self) {
       
-      @scala.inline
-      def setHttpSafe(value: () => String): Self = StObject.set(x, "httpSafe", js.Any.fromFunction0(value))
+      inline def setHttpSafe(value: () => String): Self = StObject.set(x, "httpSafe", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setText(value: () => String): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
+      inline def setText(value: () => String): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
     }
   }
   
@@ -226,43 +179,32 @@ object mod {
   }
   object LinkingMetadata {
     
-    @scala.inline
-    def apply(entityDotname: String, entityDottype: String, hostname: String): LinkingMetadata = {
+    inline def apply(entityDotname: String, entityDottype: String, hostname: String): LinkingMetadata = {
       val __obj = js.Dynamic.literal(hostname = hostname.asInstanceOf[js.Any])
       __obj.updateDynamic("entity.name")(entityDotname.asInstanceOf[js.Any])
       __obj.updateDynamic("entity.type")(entityDottype.asInstanceOf[js.Any])
       __obj.asInstanceOf[LinkingMetadata]
     }
     
-    @scala.inline
-    implicit class LinkingMetadataMutableBuilder[Self <: LinkingMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: LinkingMetadata](x: Self) {
       
-      @scala.inline
-      def setEntityDotguid(value: String): Self = StObject.set(x, "entity.guid", value.asInstanceOf[js.Any])
+      inline def setEntityDotguid(value: String): Self = StObject.set(x, "entity.guid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntityDotguidUndefined: Self = StObject.set(x, "entity.guid", js.undefined)
+      inline def setEntityDotguidUndefined: Self = StObject.set(x, "entity.guid", js.undefined)
       
-      @scala.inline
-      def setEntityDotname(value: String): Self = StObject.set(x, "entity.name", value.asInstanceOf[js.Any])
+      inline def setEntityDotname(value: String): Self = StObject.set(x, "entity.name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntityDottype(value: String): Self = StObject.set(x, "entity.type", value.asInstanceOf[js.Any])
+      inline def setEntityDottype(value: String): Self = StObject.set(x, "entity.type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpanDotid(value: String): Self = StObject.set(x, "span.id", value.asInstanceOf[js.Any])
+      inline def setSpanDotid(value: String): Self = StObject.set(x, "span.id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpanDotidUndefined: Self = StObject.set(x, "span.id", js.undefined)
+      inline def setSpanDotidUndefined: Self = StObject.set(x, "span.id", js.undefined)
       
-      @scala.inline
-      def setTraceDotid(value: String): Self = StObject.set(x, "trace.id", value.asInstanceOf[js.Any])
+      inline def setTraceDotid(value: String): Self = StObject.set(x, "trace.id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraceDotidUndefined: Self = StObject.set(x, "trace.id", js.undefined)
+      inline def setTraceDotidUndefined: Self = StObject.set(x, "trace.id", js.undefined)
     }
   }
   
@@ -280,29 +222,22 @@ object mod {
   }
   object Metric {
     
-    @scala.inline
-    def apply(count: Double, max: Double, min: Double, sumOfSquares: Double, total: Double): Metric = {
+    inline def apply(count: Double, max: Double, min: Double, sumOfSquares: Double, total: Double): Metric = {
       val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], sumOfSquares = sumOfSquares.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[Metric]
     }
     
-    @scala.inline
-    implicit class MetricMutableBuilder[Self <: Metric] (val x: Self) extends AnyVal {
+    extension [Self <: Metric](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSumOfSquares(value: Double): Self = StObject.set(x, "sumOfSquares", value.asInstanceOf[js.Any])
+      inline def setSumOfSquares(value: Double): Self = StObject.set(x, "sumOfSquares", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
   }
   
@@ -320,26 +255,20 @@ object mod {
   }
   object TraceMetadata {
     
-    @scala.inline
-    def apply(): TraceMetadata = {
+    inline def apply(): TraceMetadata = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TraceMetadata]
     }
     
-    @scala.inline
-    implicit class TraceMetadataMutableBuilder[Self <: TraceMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: TraceMetadata](x: Self) {
       
-      @scala.inline
-      def setSpanId(value: String): Self = StObject.set(x, "spanId", value.asInstanceOf[js.Any])
+      inline def setSpanId(value: String): Self = StObject.set(x, "spanId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpanIdUndefined: Self = StObject.set(x, "spanId", js.undefined)
+      inline def setSpanIdUndefined: Self = StObject.set(x, "spanId", js.undefined)
       
-      @scala.inline
-      def setTraceId(value: String): Self = StObject.set(x, "traceId", value.asInstanceOf[js.Any])
+      inline def setTraceId(value: String): Self = StObject.set(x, "traceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraceIdUndefined: Self = StObject.set(x, "traceId", js.undefined)
+      inline def setTraceIdUndefined: Self = StObject.set(x, "traceId", js.undefined)
     }
   }
   

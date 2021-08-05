@@ -185,38 +185,32 @@ object mod {
     @JSImport("clarinet", "STATE.BACKSLASH")
     @js.native
     def BACKSLASH: Double = js.native
-    @scala.inline
-    def BACKSLASH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BACKSLASH")(x.asInstanceOf[js.Any])
+    inline def BACKSLASH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BACKSLASH")(x.asInstanceOf[js.Any])
     
     @JSImport("clarinet", "STATE.BEGIN")
     @js.native
     def BEGIN: Double = js.native
-    @scala.inline
-    def BEGIN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BEGIN")(x.asInstanceOf[js.Any])
+    inline def BEGIN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BEGIN")(x.asInstanceOf[js.Any])
     
     @JSImport("clarinet", "STATE.CLOSE_ARRAY")
     @js.native
     def CLOSE_ARRAY: Double = js.native
-    @scala.inline
-    def CLOSE_ARRAY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSE_ARRAY")(x.asInstanceOf[js.Any])
+    inline def CLOSE_ARRAY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSE_ARRAY")(x.asInstanceOf[js.Any])
     
     @JSImport("clarinet", "STATE.CLOSE_KEY")
     @js.native
     def CLOSE_KEY: Double = js.native
-    @scala.inline
-    def CLOSE_KEY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSE_KEY")(x.asInstanceOf[js.Any])
+    inline def CLOSE_KEY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSE_KEY")(x.asInstanceOf[js.Any])
     
     @JSImport("clarinet", "STATE.CLOSE_OBJECT")
     @js.native
     def CLOSE_OBJECT: Double = js.native
-    @scala.inline
-    def CLOSE_OBJECT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSE_OBJECT")(x.asInstanceOf[js.Any])
+    inline def CLOSE_OBJECT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CLOSE_OBJECT")(x.asInstanceOf[js.Any])
     
     @JSImport("clarinet", "STATE.END")
     @js.native
     def END: Double = js.native
-    @scala.inline
-    def END_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("END")(x.asInstanceOf[js.Any])
+    inline def END_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("END")(x.asInstanceOf[js.Any])
     
     @JSImport("clarinet", "STATE.FALSE")
     @js.native
@@ -225,23 +219,19 @@ object mod {
     @JSImport("clarinet", "STATE.FALSE2")
     @js.native
     def FALSE2: Double = js.native
-    @scala.inline
-    def FALSE2_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FALSE2")(x.asInstanceOf[js.Any])
+    inline def FALSE2_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FALSE2")(x.asInstanceOf[js.Any])
     
     @JSImport("clarinet", "STATE.FALSE3")
     @js.native
     def FALSE3: Double = js.native
-    @scala.inline
-    def FALSE3_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FALSE3")(x.asInstanceOf[js.Any])
+    inline def FALSE3_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FALSE3")(x.asInstanceOf[js.Any])
     
     @JSImport("clarinet", "STATE.FALSE4")
     @js.native
     def FALSE4: Double = js.native
-    @scala.inline
-    def FALSE4_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FALSE4")(x.asInstanceOf[js.Any])
+    inline def FALSE4_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FALSE4")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def FALSE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FALSE")(x.asInstanceOf[js.Any])
+    inline def FALSE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FALSE")(x.asInstanceOf[js.Any])
     
     @JSImport("clarinet", "STATE.NULL")
     @js.native
@@ -250,59 +240,49 @@ object mod {
     @JSImport("clarinet", "STATE.NULL2")
     @js.native
     def NULL2: Double = js.native
-    @scala.inline
-    def NULL2_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NULL2")(x.asInstanceOf[js.Any])
+    inline def NULL2_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NULL2")(x.asInstanceOf[js.Any])
     
     @JSImport("clarinet", "STATE.NULL3")
     @js.native
     def NULL3: Double = js.native
-    @scala.inline
-    def NULL3_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NULL3")(x.asInstanceOf[js.Any])
+    inline def NULL3_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NULL3")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def NULL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NULL")(x.asInstanceOf[js.Any])
+    inline def NULL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NULL")(x.asInstanceOf[js.Any])
     
     @JSImport("clarinet", "STATE.NUMBER_DECIMAL_POINT")
     @js.native
     def NUMBER_DECIMAL_POINT: Double = js.native
-    @scala.inline
-    def NUMBER_DECIMAL_POINT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMBER_DECIMAL_POINT")(x.asInstanceOf[js.Any])
+    inline def NUMBER_DECIMAL_POINT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMBER_DECIMAL_POINT")(x.asInstanceOf[js.Any])
     
     @JSImport("clarinet", "STATE.NUMBER_DIGIT")
     @js.native
     def NUMBER_DIGIT: Double = js.native
-    @scala.inline
-    def NUMBER_DIGIT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMBER_DIGIT")(x.asInstanceOf[js.Any])
+    inline def NUMBER_DIGIT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMBER_DIGIT")(x.asInstanceOf[js.Any])
     
     @JSImport("clarinet", "STATE.OPEN_ARRAY")
     @js.native
     def OPEN_ARRAY: Double = js.native
-    @scala.inline
-    def OPEN_ARRAY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPEN_ARRAY")(x.asInstanceOf[js.Any])
+    inline def OPEN_ARRAY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPEN_ARRAY")(x.asInstanceOf[js.Any])
     
     @JSImport("clarinet", "STATE.OPEN_KEY")
     @js.native
     def OPEN_KEY: Double = js.native
-    @scala.inline
-    def OPEN_KEY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPEN_KEY")(x.asInstanceOf[js.Any])
+    inline def OPEN_KEY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPEN_KEY")(x.asInstanceOf[js.Any])
     
     @JSImport("clarinet", "STATE.OPEN_OBJECT")
     @js.native
     def OPEN_OBJECT: Double = js.native
-    @scala.inline
-    def OPEN_OBJECT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPEN_OBJECT")(x.asInstanceOf[js.Any])
+    inline def OPEN_OBJECT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OPEN_OBJECT")(x.asInstanceOf[js.Any])
     
     @JSImport("clarinet", "STATE.STRING")
     @js.native
     def STRING: Double = js.native
-    @scala.inline
-    def STRING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STRING")(x.asInstanceOf[js.Any])
+    inline def STRING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STRING")(x.asInstanceOf[js.Any])
     
     @JSImport("clarinet", "STATE.TEXT_ESCAPE")
     @js.native
     def TEXT_ESCAPE: Double = js.native
-    @scala.inline
-    def TEXT_ESCAPE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEXT_ESCAPE")(x.asInstanceOf[js.Any])
+    inline def TEXT_ESCAPE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEXT_ESCAPE")(x.asInstanceOf[js.Any])
     
     @JSImport("clarinet", "STATE.TRUE")
     @js.native
@@ -311,34 +291,26 @@ object mod {
     @JSImport("clarinet", "STATE.TRUE2")
     @js.native
     def TRUE2: Double = js.native
-    @scala.inline
-    def TRUE2_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRUE2")(x.asInstanceOf[js.Any])
+    inline def TRUE2_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRUE2")(x.asInstanceOf[js.Any])
     
     @JSImport("clarinet", "STATE.TRUE3")
     @js.native
     def TRUE3: Double = js.native
-    @scala.inline
-    def TRUE3_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRUE3")(x.asInstanceOf[js.Any])
+    inline def TRUE3_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRUE3")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def TRUE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRUE")(x.asInstanceOf[js.Any])
+    inline def TRUE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TRUE")(x.asInstanceOf[js.Any])
     
     @JSImport("clarinet", "STATE.VALUE")
     @js.native
     def VALUE: Double = js.native
-    @scala.inline
-    def VALUE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VALUE")(x.asInstanceOf[js.Any])
+    inline def VALUE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VALUE")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def createStream(): CStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")().asInstanceOf[CStream]
-  @scala.inline
-  def createStream(opt: Options): CStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(opt.asInstanceOf[js.Any]).asInstanceOf[CStream]
+  inline def createStream(): CStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")().asInstanceOf[CStream]
+  inline def createStream(opt: Options): CStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createStream")(opt.asInstanceOf[js.Any]).asInstanceOf[CStream]
   
-  @scala.inline
-  def parser(): CParser = ^.asInstanceOf[js.Dynamic].applyDynamic("parser")().asInstanceOf[CParser]
-  @scala.inline
-  def parser(opt: Options): CParser = ^.asInstanceOf[js.Dynamic].applyDynamic("parser")(opt.asInstanceOf[js.Any]).asInstanceOf[CParser]
+  inline def parser(): CParser = ^.asInstanceOf[js.Dynamic].applyDynamic("parser")().asInstanceOf[CParser]
+  inline def parser(opt: Options): CParser = ^.asInstanceOf[js.Dynamic].applyDynamic("parser")(opt.asInstanceOf[js.Any]).asInstanceOf[CParser]
   
   trait Options extends StObject {
     
@@ -348,26 +320,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setNormalize(value: Boolean): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
+      inline def setNormalize(value: Boolean): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
+      inline def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
       
-      @scala.inline
-      def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
+      inline def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
+      inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
     }
   }
 }

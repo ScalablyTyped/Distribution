@@ -68,58 +68,41 @@ trait ExportingCsvOptions extends StObject {
 }
 object ExportingCsvOptions {
   
-  @scala.inline
-  def apply(): ExportingCsvOptions = {
+  inline def apply(): ExportingCsvOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportingCsvOptions]
   }
   
-  @scala.inline
-  implicit class ExportingCsvOptionsMutableBuilder[Self <: ExportingCsvOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ExportingCsvOptions](x: Self) {
     
-    @scala.inline
-    def setAnnotations(value: ExportingCsvAnnotationsOptions): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
+    inline def setAnnotations(value: ExportingCsvAnnotationsOptions): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
+    inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
-    @scala.inline
-    def setColumnHeaderFormatter(value: js.Function): Self = StObject.set(x, "columnHeaderFormatter", value.asInstanceOf[js.Any])
+    inline def setColumnHeaderFormatter(value: js.Function): Self = StObject.set(x, "columnHeaderFormatter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnHeaderFormatterNull: Self = StObject.set(x, "columnHeaderFormatter", null)
+    inline def setColumnHeaderFormatterNull: Self = StObject.set(x, "columnHeaderFormatter", null)
     
-    @scala.inline
-    def setColumnHeaderFormatterUndefined: Self = StObject.set(x, "columnHeaderFormatter", js.undefined)
+    inline def setColumnHeaderFormatterUndefined: Self = StObject.set(x, "columnHeaderFormatter", js.undefined)
     
-    @scala.inline
-    def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
+    inline def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
+    inline def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
     
-    @scala.inline
-    def setDecimalPoint(value: String): Self = StObject.set(x, "decimalPoint", value.asInstanceOf[js.Any])
+    inline def setDecimalPoint(value: String): Self = StObject.set(x, "decimalPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecimalPointNull: Self = StObject.set(x, "decimalPoint", null)
+    inline def setDecimalPointNull: Self = StObject.set(x, "decimalPoint", null)
     
-    @scala.inline
-    def setDecimalPointUndefined: Self = StObject.set(x, "decimalPoint", js.undefined)
+    inline def setDecimalPointUndefined: Self = StObject.set(x, "decimalPoint", js.undefined)
     
-    @scala.inline
-    def setItemDelimiter(value: String): Self = StObject.set(x, "itemDelimiter", value.asInstanceOf[js.Any])
+    inline def setItemDelimiter(value: String): Self = StObject.set(x, "itemDelimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemDelimiterNull: Self = StObject.set(x, "itemDelimiter", null)
+    inline def setItemDelimiterNull: Self = StObject.set(x, "itemDelimiter", null)
     
-    @scala.inline
-    def setItemDelimiterUndefined: Self = StObject.set(x, "itemDelimiter", js.undefined)
+    inline def setItemDelimiterUndefined: Self = StObject.set(x, "itemDelimiter", js.undefined)
     
-    @scala.inline
-    def setLineDelimiter(value: String): Self = StObject.set(x, "lineDelimiter", value.asInstanceOf[js.Any])
+    inline def setLineDelimiter(value: String): Self = StObject.set(x, "lineDelimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineDelimiterUndefined: Self = StObject.set(x, "lineDelimiter", js.undefined)
+    inline def setLineDelimiterUndefined: Self = StObject.set(x, "lineDelimiter", js.undefined)
   }
 }

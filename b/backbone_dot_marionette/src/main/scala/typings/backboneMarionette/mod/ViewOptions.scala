@@ -35,37 +35,27 @@ trait ViewOptions[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */]
 }
 object ViewOptions {
   
-  @scala.inline
-  def apply[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */](): ViewOptions[TModel] = {
+  inline def apply[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */](): ViewOptions[TModel] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ViewOptions[TModel]]
   }
   
-  @scala.inline
-  implicit class ViewOptionsMutableBuilder[Self <: ViewOptions[?], TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */] (val x: Self & ViewOptions[TModel]) extends AnyVal {
+  extension [Self <: ViewOptions[?], TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */](x: Self & ViewOptions[TModel]) {
     
-    @scala.inline
-    def setRegionClass(value: js.Any): Self = StObject.set(x, "regionClass", value.asInstanceOf[js.Any])
+    inline def setRegionClass(value: js.Any): Self = StObject.set(x, "regionClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionClassUndefined: Self = StObject.set(x, "regionClass", js.undefined)
+    inline def setRegionClassUndefined: Self = StObject.set(x, "regionClass", js.undefined)
     
-    @scala.inline
-    def setRegions(value: js.Any): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
+    inline def setRegions(value: js.Any): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
+    inline def setRegionsUndefined: Self = StObject.set(x, "regions", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: js.Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: js.Any): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateContext(value: js.Any): Self = StObject.set(x, "templateContext", value.asInstanceOf[js.Any])
+    inline def setTemplateContext(value: js.Any): Self = StObject.set(x, "templateContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateContextUndefined: Self = StObject.set(x, "templateContext", js.undefined)
+    inline def setTemplateContextUndefined: Self = StObject.set(x, "templateContext", js.undefined)
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

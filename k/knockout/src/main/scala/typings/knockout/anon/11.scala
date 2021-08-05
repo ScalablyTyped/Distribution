@@ -24,8 +24,7 @@ trait `11` extends StObject {
 }
 object `11` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     init: (Node, js.Function0[MaybeSubscribable[String | BindingTemplateOptions]]) => BindingHandlerControlsDescendant,
     update: (Node, js.Function0[MaybeSubscribable[String | BindingTemplateOptions]], AllBindings, js.Any, BindingContext[js.Any]) => Unit
   ): `11` = {
@@ -33,16 +32,13 @@ object `11` {
     __obj.asInstanceOf[`11`]
   }
   
-  @scala.inline
-  implicit class `11MutableBuilder`[Self <: `11`] (val x: Self) extends AnyVal {
+  extension [Self <: `11`](x: Self) {
     
-    @scala.inline
-    def setInit(
+    inline def setInit(
       value: (Node, js.Function0[MaybeSubscribable[String | BindingTemplateOptions]]) => BindingHandlerControlsDescendant
     ): Self = StObject.set(x, "init", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUpdate(
+    inline def setUpdate(
       value: (Node, js.Function0[MaybeSubscribable[String | BindingTemplateOptions]], AllBindings, js.Any, BindingContext[js.Any]) => Unit
     ): Self = StObject.set(x, "update", js.Any.fromFunction5(value))
   }

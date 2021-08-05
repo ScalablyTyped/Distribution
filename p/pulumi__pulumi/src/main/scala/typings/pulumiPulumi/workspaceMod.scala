@@ -33,8 +33,7 @@ object workspaceMod {
   }
   object PluginInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       installTime: Date,
       kind: PluginKind,
       lastUsedTime: Date,
@@ -47,35 +46,25 @@ object workspaceMod {
       __obj.asInstanceOf[PluginInfo]
     }
     
-    @scala.inline
-    implicit class PluginInfoMutableBuilder[Self <: PluginInfo] (val x: Self) extends AnyVal {
+    extension [Self <: PluginInfo](x: Self) {
       
-      @scala.inline
-      def setInstallTime(value: Date): Self = StObject.set(x, "installTime", value.asInstanceOf[js.Any])
+      inline def setInstallTime(value: Date): Self = StObject.set(x, "installTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKind(value: PluginKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: PluginKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastUsedTime(value: Date): Self = StObject.set(x, "lastUsedTime", value.asInstanceOf[js.Any])
+      inline def setLastUsedTime(value: Date): Self = StObject.set(x, "lastUsedTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerURL(value: String): Self = StObject.set(x, "serverURL", value.asInstanceOf[js.Any])
+      inline def setServerURL(value: String): Self = StObject.set(x, "serverURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -87,14 +76,11 @@ object workspaceMod {
   trait PluginKind extends StObject
   object PluginKind {
     
-    @scala.inline
-    def analyzer: typings.pulumiPulumi.pulumiPulumiStrings.analyzer = "analyzer".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.analyzer]
+    inline def analyzer: typings.pulumiPulumi.pulumiPulumiStrings.analyzer = "analyzer".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.analyzer]
     
-    @scala.inline
-    def language: typings.pulumiPulumi.pulumiPulumiStrings.language = "language".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.language]
+    inline def language: typings.pulumiPulumi.pulumiPulumiStrings.language = "language".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.language]
     
-    @scala.inline
-    def resource: typings.pulumiPulumi.pulumiPulumiStrings.resource = "resource".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.resource]
+    inline def resource: typings.pulumiPulumi.pulumiPulumiStrings.resource = "resource".asInstanceOf[typings.pulumiPulumi.pulumiPulumiStrings.resource]
   }
   
   type PulumiFn = js.Function0[js.Promise[(Record[String, js.Any]) | Unit]]
@@ -115,41 +101,30 @@ object workspaceMod {
   }
   object StackSummary {
     
-    @scala.inline
-    def apply(current: Boolean, name: String, updateInProgress: Boolean): StackSummary = {
+    inline def apply(current: Boolean, name: String, updateInProgress: Boolean): StackSummary = {
       val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], updateInProgress = updateInProgress.asInstanceOf[js.Any])
       __obj.asInstanceOf[StackSummary]
     }
     
-    @scala.inline
-    implicit class StackSummaryMutableBuilder[Self <: StackSummary] (val x: Self) extends AnyVal {
+    extension [Self <: StackSummary](x: Self) {
       
-      @scala.inline
-      def setCurrent(value: Boolean): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: Boolean): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastUpdate(value: String): Self = StObject.set(x, "lastUpdate", value.asInstanceOf[js.Any])
+      inline def setLastUpdate(value: String): Self = StObject.set(x, "lastUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastUpdateUndefined: Self = StObject.set(x, "lastUpdate", js.undefined)
+      inline def setLastUpdateUndefined: Self = StObject.set(x, "lastUpdate", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceCount(value: Double): Self = StObject.set(x, "resourceCount", value.asInstanceOf[js.Any])
+      inline def setResourceCount(value: Double): Self = StObject.set(x, "resourceCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceCountUndefined: Self = StObject.set(x, "resourceCount", js.undefined)
+      inline def setResourceCountUndefined: Self = StObject.set(x, "resourceCount", js.undefined)
       
-      @scala.inline
-      def setUpdateInProgress(value: Boolean): Self = StObject.set(x, "updateInProgress", value.asInstanceOf[js.Any])
+      inline def setUpdateInProgress(value: Boolean): Self = StObject.set(x, "updateInProgress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -159,17 +134,14 @@ object workspaceMod {
   }
   object WhoAmIResult {
     
-    @scala.inline
-    def apply(user: String): WhoAmIResult = {
+    inline def apply(user: String): WhoAmIResult = {
       val __obj = js.Dynamic.literal(user = user.asInstanceOf[js.Any])
       __obj.asInstanceOf[WhoAmIResult]
     }
     
-    @scala.inline
-    implicit class WhoAmIResultMutableBuilder[Self <: WhoAmIResult] (val x: Self) extends AnyVal {
+    extension [Self <: WhoAmIResult](x: Self) {
       
-      @scala.inline
-      def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
   

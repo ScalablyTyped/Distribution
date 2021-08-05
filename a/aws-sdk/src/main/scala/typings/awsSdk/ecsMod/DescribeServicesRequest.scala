@@ -23,34 +23,25 @@ trait DescribeServicesRequest extends StObject {
 }
 object DescribeServicesRequest {
   
-  @scala.inline
-  def apply(services: StringList): DescribeServicesRequest = {
+  inline def apply(services: StringList): DescribeServicesRequest = {
     val __obj = js.Dynamic.literal(services = services.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeServicesRequest]
   }
   
-  @scala.inline
-  implicit class DescribeServicesRequestMutableBuilder[Self <: DescribeServicesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeServicesRequest](x: Self) {
     
-    @scala.inline
-    def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
+    inline def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
+    inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
     
-    @scala.inline
-    def setInclude(value: ServiceFieldList): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: ServiceFieldList): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+    inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
-    @scala.inline
-    def setIncludeVarargs(value: ServiceField*): Self = StObject.set(x, "include", js.Array(value :_*))
+    inline def setIncludeVarargs(value: ServiceField*): Self = StObject.set(x, "include", js.Array(value :_*))
     
-    @scala.inline
-    def setServices(value: StringList): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+    inline def setServices(value: StringList): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicesVarargs(value: String*): Self = StObject.set(x, "services", js.Array(value :_*))
+    inline def setServicesVarargs(value: String*): Self = StObject.set(x, "services", js.Array(value :_*))
   }
 }

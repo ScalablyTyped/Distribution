@@ -27,9 +27,9 @@ object stylableUnidriverUtilLegacyMod {
     def hasStyleState(base: UniDriver[js.Any], stateName: String): js.Promise[Boolean] = js.native
     def hasStyleState(base: UniDriver[js.Any], stateName: String, param: StateValue): js.Promise[Boolean] = js.native
     
-    var internal: js.Any = js.native
+    /* private */ var internal: js.Any = js.native
     
-    var style: js.Any = js.native
+    /* private */ var style: js.Any = js.native
   }
   
   @JSImport("wix-ui-test-utils/dist/src/unidriver/stylable-unidriver-util-legacy", "StylableUnidriverUtilCompat")
@@ -37,7 +37,7 @@ object stylableUnidriverUtilLegacyMod {
   class StylableUnidriverUtilCompat protected () extends StObject {
     def this(style: CompatStylesheet) = this()
     
-    var getBaseStateWithParam: js.Any = js.native
+    /* private */ var getBaseStateWithParam: js.Any = js.native
     
     def getStateValueFromClassName(cls: String, baseState: String): String = js.native
     
@@ -51,7 +51,7 @@ object stylableUnidriverUtilLegacyMod {
     def hasStyleState(base: UniDriver[js.Any], stateName: String): js.Promise[Boolean] = js.native
     def hasStyleState(base: UniDriver[js.Any], stateName: String, param: StateValue): js.Promise[Boolean] = js.native
     
-    var style: js.Any = js.native
+    /* private */ var style: js.Any = js.native
   }
   
   @JSImport("wix-ui-test-utils/dist/src/unidriver/stylable-unidriver-util-legacy", "StylableUnidriverUtilLegacy")
@@ -59,7 +59,7 @@ object stylableUnidriverUtilLegacyMod {
   class StylableUnidriverUtilLegacy protected () extends StObject {
     def this(style: LegacyStylesheet) = this()
     
-    var getStateDataAttrKey: js.Any = js.native
+    /* private */ var getStateDataAttrKey: js.Any = js.native
     
     /**
       * Get style state value
@@ -71,6 +71,6 @@ object stylableUnidriverUtilLegacyMod {
     def hasStyleState(base: UniDriver[js.Any], stateName: String): js.Promise[Boolean] = js.native
     def hasStyleState(base: UniDriver[js.Any], stateName: String, param: StateValue): js.Promise[Boolean] = js.native
     
-    var style: js.Any = js.native
+    /* private */ var style: js.Any = js.native
   }
 }

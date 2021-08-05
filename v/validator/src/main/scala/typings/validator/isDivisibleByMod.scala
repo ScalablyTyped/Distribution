@@ -15,6 +15,5 @@ object isDivisibleByMod {
     *
     * @param number - Divider number
     */
-  @scala.inline
-  def default(str: String, number: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], number.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def default(str: String, number: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(str.asInstanceOf[js.Any], number.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

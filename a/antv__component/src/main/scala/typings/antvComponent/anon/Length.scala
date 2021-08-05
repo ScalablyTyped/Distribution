@@ -14,22 +14,17 @@ trait Length extends StObject {
 }
 object Length {
   
-  @scala.inline
-  def apply(display: Boolean, length: Double, style: LineWidth): Length = {
+  inline def apply(display: Boolean, length: Double, style: LineWidth): Length = {
     val __obj = js.Dynamic.literal(display = display.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
     __obj.asInstanceOf[Length]
   }
   
-  @scala.inline
-  implicit class LengthMutableBuilder[Self <: Length] (val x: Self) extends AnyVal {
+  extension [Self <: Length](x: Self) {
     
-    @scala.inline
-    def setDisplay(value: Boolean): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: Boolean): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: LineWidth): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: LineWidth): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

@@ -16,9 +16,9 @@ object simpleSpanProcessorMod {
        with SpanProcessor {
     def this(_exporter: SpanExporter) = this()
     
-    val _exporter: js.Any = js.native
+    /* private */ val _exporter: js.Any = js.native
     
-    var _isShutdown: js.Any = js.native
+    /* private */ var _isShutdown: js.Any = js.native
     
     def forceFlush(): Unit = js.native
     /**

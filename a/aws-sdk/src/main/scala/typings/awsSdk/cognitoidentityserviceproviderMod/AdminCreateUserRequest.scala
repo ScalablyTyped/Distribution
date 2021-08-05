@@ -53,70 +53,49 @@ trait AdminCreateUserRequest extends StObject {
 }
 object AdminCreateUserRequest {
   
-  @scala.inline
-  def apply(UserPoolId: UserPoolIdType, Username: UsernameType): AdminCreateUserRequest = {
+  inline def apply(UserPoolId: UserPoolIdType, Username: UsernameType): AdminCreateUserRequest = {
     val __obj = js.Dynamic.literal(UserPoolId = UserPoolId.asInstanceOf[js.Any], Username = Username.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdminCreateUserRequest]
   }
   
-  @scala.inline
-  implicit class AdminCreateUserRequestMutableBuilder[Self <: AdminCreateUserRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AdminCreateUserRequest](x: Self) {
     
-    @scala.inline
-    def setClientMetadata(value: ClientMetadataType): Self = StObject.set(x, "ClientMetadata", value.asInstanceOf[js.Any])
+    inline def setClientMetadata(value: ClientMetadataType): Self = StObject.set(x, "ClientMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientMetadataUndefined: Self = StObject.set(x, "ClientMetadata", js.undefined)
+    inline def setClientMetadataUndefined: Self = StObject.set(x, "ClientMetadata", js.undefined)
     
-    @scala.inline
-    def setDesiredDeliveryMediums(value: DeliveryMediumListType): Self = StObject.set(x, "DesiredDeliveryMediums", value.asInstanceOf[js.Any])
+    inline def setDesiredDeliveryMediums(value: DeliveryMediumListType): Self = StObject.set(x, "DesiredDeliveryMediums", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredDeliveryMediumsUndefined: Self = StObject.set(x, "DesiredDeliveryMediums", js.undefined)
+    inline def setDesiredDeliveryMediumsUndefined: Self = StObject.set(x, "DesiredDeliveryMediums", js.undefined)
     
-    @scala.inline
-    def setDesiredDeliveryMediumsVarargs(value: DeliveryMediumType*): Self = StObject.set(x, "DesiredDeliveryMediums", js.Array(value :_*))
+    inline def setDesiredDeliveryMediumsVarargs(value: DeliveryMediumType*): Self = StObject.set(x, "DesiredDeliveryMediums", js.Array(value :_*))
     
-    @scala.inline
-    def setForceAliasCreation(value: ForceAliasCreation): Self = StObject.set(x, "ForceAliasCreation", value.asInstanceOf[js.Any])
+    inline def setForceAliasCreation(value: ForceAliasCreation): Self = StObject.set(x, "ForceAliasCreation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceAliasCreationUndefined: Self = StObject.set(x, "ForceAliasCreation", js.undefined)
+    inline def setForceAliasCreationUndefined: Self = StObject.set(x, "ForceAliasCreation", js.undefined)
     
-    @scala.inline
-    def setMessageAction(value: MessageActionType): Self = StObject.set(x, "MessageAction", value.asInstanceOf[js.Any])
+    inline def setMessageAction(value: MessageActionType): Self = StObject.set(x, "MessageAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageActionUndefined: Self = StObject.set(x, "MessageAction", js.undefined)
+    inline def setMessageActionUndefined: Self = StObject.set(x, "MessageAction", js.undefined)
     
-    @scala.inline
-    def setTemporaryPassword(value: PasswordType): Self = StObject.set(x, "TemporaryPassword", value.asInstanceOf[js.Any])
+    inline def setTemporaryPassword(value: PasswordType): Self = StObject.set(x, "TemporaryPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemporaryPasswordUndefined: Self = StObject.set(x, "TemporaryPassword", js.undefined)
+    inline def setTemporaryPasswordUndefined: Self = StObject.set(x, "TemporaryPassword", js.undefined)
     
-    @scala.inline
-    def setUserAttributes(value: AttributeListType): Self = StObject.set(x, "UserAttributes", value.asInstanceOf[js.Any])
+    inline def setUserAttributes(value: AttributeListType): Self = StObject.set(x, "UserAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserAttributesUndefined: Self = StObject.set(x, "UserAttributes", js.undefined)
+    inline def setUserAttributesUndefined: Self = StObject.set(x, "UserAttributes", js.undefined)
     
-    @scala.inline
-    def setUserAttributesVarargs(value: AttributeType*): Self = StObject.set(x, "UserAttributes", js.Array(value :_*))
+    inline def setUserAttributesVarargs(value: AttributeType*): Self = StObject.set(x, "UserAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
+    inline def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: UsernameType): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: UsernameType): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationData(value: AttributeListType): Self = StObject.set(x, "ValidationData", value.asInstanceOf[js.Any])
+    inline def setValidationData(value: AttributeListType): Self = StObject.set(x, "ValidationData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationDataUndefined: Self = StObject.set(x, "ValidationData", js.undefined)
+    inline def setValidationDataUndefined: Self = StObject.set(x, "ValidationData", js.undefined)
     
-    @scala.inline
-    def setValidationDataVarargs(value: AttributeType*): Self = StObject.set(x, "ValidationData", js.Array(value :_*))
+    inline def setValidationDataVarargs(value: AttributeType*): Self = StObject.set(x, "ValidationData", js.Array(value :_*))
   }
 }

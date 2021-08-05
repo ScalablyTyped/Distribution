@@ -67,8 +67,7 @@ object mod {
   @JSImport("sasl-scram-sha-1", "Mechanism")
   @js.native
   def Mechanism: Instantiable1[/* options */ js.UndefOr[Options], ScramSha1Mechanism] = js.native
-  @scala.inline
-  def Mechanism_=(x: Instantiable1[/* options */ js.UndefOr[Options], ScramSha1Mechanism]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Mechanism")(x.asInstanceOf[js.Any])
+  inline def Mechanism_=(x: Instantiable1[/* options */ js.UndefOr[Options], ScramSha1Mechanism]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Mechanism")(x.asInstanceOf[js.Any])
   
   /* static member */
   object prototype {
@@ -80,14 +79,12 @@ object mod {
     @JSImport("sasl-scram-sha-1", "prototype.clientFirst")
     @js.native
     def clientFirst: `true` = js.native
-    @scala.inline
-    def clientFirst_=(x: `true`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clientFirst")(x.asInstanceOf[js.Any])
+    inline def clientFirst_=(x: `true`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clientFirst")(x.asInstanceOf[js.Any])
     
     @JSImport("sasl-scram-sha-1", "prototype.name")
     @js.native
     def name: `SCRAM-SHA-1` = js.native
-    @scala.inline
-    def name_=(x: `SCRAM-SHA-1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
+    inline def name_=(x: `SCRAM-SHA-1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
   }
   
   trait Credentials extends StObject {
@@ -108,56 +105,40 @@ object mod {
   }
   object Credentials {
     
-    @scala.inline
-    def apply(): Credentials = {
+    inline def apply(): Credentials = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Credentials]
     }
     
-    @scala.inline
-    implicit class CredentialsMutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
+    extension [Self <: Credentials](x: Self) {
       
-      @scala.inline
-      def setAuthzid(value: String): Self = StObject.set(x, "authzid", value.asInstanceOf[js.Any])
+      inline def setAuthzid(value: String): Self = StObject.set(x, "authzid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthzidUndefined: Self = StObject.set(x, "authzid", js.undefined)
+      inline def setAuthzidUndefined: Self = StObject.set(x, "authzid", js.undefined)
       
-      @scala.inline
-      def setClientKey(value: String): Self = StObject.set(x, "clientKey", value.asInstanceOf[js.Any])
+      inline def setClientKey(value: String): Self = StObject.set(x, "clientKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientKeyUndefined: Self = StObject.set(x, "clientKey", js.undefined)
+      inline def setClientKeyUndefined: Self = StObject.set(x, "clientKey", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setSalt(value: String): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
+      inline def setSalt(value: String): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaltUndefined: Self = StObject.set(x, "salt", js.undefined)
+      inline def setSaltUndefined: Self = StObject.set(x, "salt", js.undefined)
       
-      @scala.inline
-      def setSaltedPassword(value: String): Self = StObject.set(x, "saltedPassword", value.asInstanceOf[js.Any])
+      inline def setSaltedPassword(value: String): Self = StObject.set(x, "saltedPassword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaltedPasswordUndefined: Self = StObject.set(x, "saltedPassword", js.undefined)
+      inline def setSaltedPasswordUndefined: Self = StObject.set(x, "saltedPassword", js.undefined)
       
-      @scala.inline
-      def setServerKey(value: String): Self = StObject.set(x, "serverKey", value.asInstanceOf[js.Any])
+      inline def setServerKey(value: String): Self = StObject.set(x, "serverKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerKeyUndefined: Self = StObject.set(x, "serverKey", js.undefined)
+      inline def setServerKeyUndefined: Self = StObject.set(x, "serverKey", js.undefined)
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     }
   }
   
@@ -167,20 +148,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setGenNonce(value: () => Double): Self = StObject.set(x, "genNonce", js.Any.fromFunction0(value))
+      inline def setGenNonce(value: () => Double): Self = StObject.set(x, "genNonce", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGenNonceUndefined: Self = StObject.set(x, "genNonce", js.undefined)
+      inline def setGenNonceUndefined: Self = StObject.set(x, "genNonce", js.undefined)
     }
   }
   
@@ -197,23 +174,18 @@ object mod {
   }
   object ScramSha1Mechanism {
     
-    @scala.inline
-    def apply(challenge: String => Unit, response: Credentials => String): ScramSha1Mechanism = {
+    inline def apply(challenge: String => Unit, response: Credentials => String): ScramSha1Mechanism = {
       val __obj = js.Dynamic.literal(challenge = js.Any.fromFunction1(challenge), clientFirst = true, name = "SCRAM-SHA-1", response = js.Any.fromFunction1(response))
       __obj.asInstanceOf[ScramSha1Mechanism]
     }
     
-    @scala.inline
-    implicit class ScramSha1MechanismMutableBuilder[Self <: ScramSha1Mechanism] (val x: Self) extends AnyVal {
+    extension [Self <: ScramSha1Mechanism](x: Self) {
       
-      @scala.inline
-      def setClientFirst(value: `true`): Self = StObject.set(x, "clientFirst", value.asInstanceOf[js.Any])
+      inline def setClientFirst(value: `true`): Self = StObject.set(x, "clientFirst", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: `SCRAM-SHA-1`): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: `SCRAM-SHA-1`): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: Credentials => String): Self = StObject.set(x, "response", js.Any.fromFunction1(value))
+      inline def setResponse(value: Credentials => String): Self = StObject.set(x, "response", js.Any.fromFunction1(value))
     }
   }
 }

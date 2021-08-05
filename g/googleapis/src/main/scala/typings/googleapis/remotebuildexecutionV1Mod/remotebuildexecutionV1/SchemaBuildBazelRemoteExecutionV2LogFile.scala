@@ -25,25 +25,19 @@ trait SchemaBuildBazelRemoteExecutionV2LogFile extends StObject {
 }
 object SchemaBuildBazelRemoteExecutionV2LogFile {
   
-  @scala.inline
-  def apply(): SchemaBuildBazelRemoteExecutionV2LogFile = {
+  inline def apply(): SchemaBuildBazelRemoteExecutionV2LogFile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBuildBazelRemoteExecutionV2LogFile]
   }
   
-  @scala.inline
-  implicit class SchemaBuildBazelRemoteExecutionV2LogFileMutableBuilder[Self <: SchemaBuildBazelRemoteExecutionV2LogFile] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBuildBazelRemoteExecutionV2LogFile](x: Self) {
     
-    @scala.inline
-    def setDigest(value: SchemaBuildBazelRemoteExecutionV2Digest): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
+    inline def setDigest(value: SchemaBuildBazelRemoteExecutionV2Digest): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
+    inline def setDigestUndefined: Self = StObject.set(x, "digest", js.undefined)
     
-    @scala.inline
-    def setHumanReadable(value: Boolean): Self = StObject.set(x, "humanReadable", value.asInstanceOf[js.Any])
+    inline def setHumanReadable(value: Boolean): Self = StObject.set(x, "humanReadable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHumanReadableUndefined: Self = StObject.set(x, "humanReadable", js.undefined)
+    inline def setHumanReadableUndefined: Self = StObject.set(x, "humanReadable", js.undefined)
   }
 }

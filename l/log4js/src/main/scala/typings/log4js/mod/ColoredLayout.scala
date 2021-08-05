@@ -14,17 +14,14 @@ trait ColoredLayout
 }
 object ColoredLayout {
   
-  @scala.inline
-  def apply(`type`: colored | coloured): ColoredLayout = {
+  inline def apply(`type`: colored | coloured): ColoredLayout = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColoredLayout]
   }
   
-  @scala.inline
-  implicit class ColoredLayoutMutableBuilder[Self <: ColoredLayout] (val x: Self) extends AnyVal {
+  extension [Self <: ColoredLayout](x: Self) {
     
-    @scala.inline
-    def setType(value: colored | coloured): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: colored | coloured): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

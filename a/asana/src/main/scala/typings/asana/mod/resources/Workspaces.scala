@@ -208,30 +208,23 @@ object Workspaces extends Shortcut {
   }
   object TypeaheadParams {
     
-    @scala.inline
-    def apply(`type`: String): TypeaheadParams = {
+    inline def apply(`type`: String): TypeaheadParams = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeaheadParams]
     }
     
-    @scala.inline
-    implicit class TypeaheadParamsMutableBuilder[Self <: TypeaheadParams] (val x: Self) extends AnyVal {
+    extension [Self <: TypeaheadParams](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      @scala.inline
-      def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

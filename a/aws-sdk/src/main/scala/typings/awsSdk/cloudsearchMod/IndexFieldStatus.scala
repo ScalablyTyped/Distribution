@@ -12,19 +12,15 @@ trait IndexFieldStatus extends StObject {
 }
 object IndexFieldStatus {
   
-  @scala.inline
-  def apply(Options: IndexField, Status: OptionStatus): IndexFieldStatus = {
+  inline def apply(Options: IndexField, Status: OptionStatus): IndexFieldStatus = {
     val __obj = js.Dynamic.literal(Options = Options.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexFieldStatus]
   }
   
-  @scala.inline
-  implicit class IndexFieldStatusMutableBuilder[Self <: IndexFieldStatus] (val x: Self) extends AnyVal {
+  extension [Self <: IndexFieldStatus](x: Self) {
     
-    @scala.inline
-    def setOptions(value: IndexField): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: IndexField): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: OptionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: OptionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

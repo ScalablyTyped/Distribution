@@ -33,20 +33,16 @@ object storage {
   }
   object StorageCapacityInfo {
     
-    @scala.inline
-    def apply(availableCapacity: integer, id: String): StorageCapacityInfo = {
+    inline def apply(availableCapacity: integer, id: String): StorageCapacityInfo = {
       val __obj = js.Dynamic.literal(availableCapacity = availableCapacity.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[StorageCapacityInfo]
     }
     
-    @scala.inline
-    implicit class StorageCapacityInfoMutableBuilder[Self <: StorageCapacityInfo] (val x: Self) extends AnyVal {
+    extension [Self <: StorageCapacityInfo](x: Self) {
       
-      @scala.inline
-      def setAvailableCapacity(value: integer): Self = StObject.set(x, "availableCapacity", value.asInstanceOf[js.Any])
+      inline def setAvailableCapacity(value: integer): Self = StObject.set(x, "availableCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -83,8 +79,7 @@ object storage {
   }
   object StorageUnitInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       capacity: integer,
       id: String,
       name: String,
@@ -102,20 +97,15 @@ object storage {
       __obj.asInstanceOf[StorageUnitInfo]
     }
     
-    @scala.inline
-    implicit class StorageUnitInfoMutableBuilder[Self <: StorageUnitInfo] (val x: Self) extends AnyVal {
+    extension [Self <: StorageUnitInfo](x: Self) {
       
-      @scala.inline
-      def setCapacity(value: integer): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
+      inline def setCapacity(value: integer): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(
+      inline def setType(
         value: ToStringLiteral[
               FIXED, 
               /* keyof chrome-apps.anon.FIXED */ typings.chromeApps.chromeAppsStrings.FIXED | REMOVABLE | UNKNOWN, 

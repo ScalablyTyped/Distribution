@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // there is no way to use the Globals class from within Javascript
 @JSGlobal("Excel.Graphic")
 @js.native
-class Graphic protected ()
+/* private */ class Graphic ()
   extends StObject
      with typings.activexExcel.Excel.Graphic {
   
@@ -41,7 +41,7 @@ class Graphic protected ()
   /* CompleteClass */
   var CropTop: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.Graphic_typekey")
   var ExcelDotGraphic_typekey: typings.activexExcel.Excel.Graphic = js.native
   

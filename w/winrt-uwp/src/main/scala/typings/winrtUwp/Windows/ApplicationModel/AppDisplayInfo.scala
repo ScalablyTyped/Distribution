@@ -24,22 +24,17 @@ trait AppDisplayInfo extends StObject {
 }
 object AppDisplayInfo {
   
-  @scala.inline
-  def apply(description: String, displayName: String, getLogo: Size => RandomAccessStreamReference): AppDisplayInfo = {
+  inline def apply(description: String, displayName: String, getLogo: Size => RandomAccessStreamReference): AppDisplayInfo = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], getLogo = js.Any.fromFunction1(getLogo))
     __obj.asInstanceOf[AppDisplayInfo]
   }
   
-  @scala.inline
-  implicit class AppDisplayInfoMutableBuilder[Self <: AppDisplayInfo] (val x: Self) extends AnyVal {
+  extension [Self <: AppDisplayInfo](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetLogo(value: Size => RandomAccessStreamReference): Self = StObject.set(x, "getLogo", js.Any.fromFunction1(value))
+    inline def setGetLogo(value: Size => RandomAccessStreamReference): Self = StObject.set(x, "getLogo", js.Any.fromFunction1(value))
   }
 }

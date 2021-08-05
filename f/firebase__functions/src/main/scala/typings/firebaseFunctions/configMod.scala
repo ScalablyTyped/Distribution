@@ -12,6 +12,5 @@ object configMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def registerFunctions(instance: FirebaseNamespace, fetchImpl: FnCall): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFunctions")(instance.asInstanceOf[js.Any], fetchImpl.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerFunctions(instance: FirebaseNamespace, fetchImpl: FnCall): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFunctions")(instance.asInstanceOf[js.Any], fetchImpl.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

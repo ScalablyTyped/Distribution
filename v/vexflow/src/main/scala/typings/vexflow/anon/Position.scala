@@ -18,37 +18,27 @@ trait Position extends StObject {
 }
 object Position {
   
-  @scala.inline
-  def apply(start: typings.vexflow.Vex.Flow.Note, stop: typings.vexflow.Vex.Flow.Note): Position = {
+  inline def apply(start: typings.vexflow.Vex.Flow.Note, stop: typings.vexflow.Vex.Flow.Note): Position = {
     val __obj = js.Dynamic.literal(start = start.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any])
     __obj.asInstanceOf[Position]
   }
   
-  @scala.inline
-  implicit class PositionMutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
+  extension [Self <: Position](x: Self) {
     
-    @scala.inline
-    def setPosition(value: typings.vexflow.Vex.Flow.TextBracket.Positions): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: typings.vexflow.Vex.Flow.TextBracket.Positions): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setStart(value: typings.vexflow.Vex.Flow.Note): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: typings.vexflow.Vex.Flow.Note): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStop(value: typings.vexflow.Vex.Flow.Note): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
+    inline def setStop(value: typings.vexflow.Vex.Flow.Note): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuperscript(value: String): Self = StObject.set(x, "superscript", value.asInstanceOf[js.Any])
+    inline def setSuperscript(value: String): Self = StObject.set(x, "superscript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuperscriptUndefined: Self = StObject.set(x, "superscript", js.undefined)
+    inline def setSuperscriptUndefined: Self = StObject.set(x, "superscript", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

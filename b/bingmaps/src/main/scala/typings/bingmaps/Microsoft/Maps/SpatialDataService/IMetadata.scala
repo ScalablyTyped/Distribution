@@ -26,8 +26,7 @@ trait IMetadata extends StObject {
 }
 object IMetadata {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AreaSqKm: String,
     BestMapViewBox: String,
     OfficialCulture: String,
@@ -38,22 +37,16 @@ object IMetadata {
     __obj.asInstanceOf[IMetadata]
   }
   
-  @scala.inline
-  implicit class IMetadataMutableBuilder[Self <: IMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: IMetadata](x: Self) {
     
-    @scala.inline
-    def setAreaSqKm(value: String): Self = StObject.set(x, "AreaSqKm", value.asInstanceOf[js.Any])
+    inline def setAreaSqKm(value: String): Self = StObject.set(x, "AreaSqKm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBestMapViewBox(value: String): Self = StObject.set(x, "BestMapViewBox", value.asInstanceOf[js.Any])
+    inline def setBestMapViewBox(value: String): Self = StObject.set(x, "BestMapViewBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficialCulture(value: String): Self = StObject.set(x, "OfficialCulture", value.asInstanceOf[js.Any])
+    inline def setOfficialCulture(value: String): Self = StObject.set(x, "OfficialCulture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopulationClass(value: String): Self = StObject.set(x, "PopulationClass", value.asInstanceOf[js.Any])
+    inline def setPopulationClass(value: String): Self = StObject.set(x, "PopulationClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionalCulture(value: String): Self = StObject.set(x, "RegionalCulture", value.asInstanceOf[js.Any])
+    inline def setRegionalCulture(value: String): Self = StObject.set(x, "RegionalCulture", value.asInstanceOf[js.Any])
   }
 }

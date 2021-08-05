@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HttpObserve extends StObject
 object HttpObserve {
   
-  @scala.inline
-  def body: typings.angularCommon.angularCommonStrings.body = "body".asInstanceOf[typings.angularCommon.angularCommonStrings.body]
+  inline def body: typings.angularCommon.angularCommonStrings.body = "body".asInstanceOf[typings.angularCommon.angularCommonStrings.body]
   
-  @scala.inline
-  def events: typings.angularCommon.angularCommonStrings.events = "events".asInstanceOf[typings.angularCommon.angularCommonStrings.events]
+  inline def events: typings.angularCommon.angularCommonStrings.events = "events".asInstanceOf[typings.angularCommon.angularCommonStrings.events]
   
-  @scala.inline
-  def response: typings.angularCommon.angularCommonStrings.response = "response".asInstanceOf[typings.angularCommon.angularCommonStrings.response]
+  inline def response: typings.angularCommon.angularCommonStrings.response = "response".asInstanceOf[typings.angularCommon.angularCommonStrings.response]
 }

@@ -23,31 +23,23 @@ trait NativeKeyboardUpdateOptions extends StObject {
 }
 object NativeKeyboardUpdateOptions {
   
-  @scala.inline
-  def apply(): NativeKeyboardUpdateOptions = {
+  inline def apply(): NativeKeyboardUpdateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NativeKeyboardUpdateOptions]
   }
   
-  @scala.inline
-  implicit class NativeKeyboardUpdateOptionsMutableBuilder[Self <: NativeKeyboardUpdateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NativeKeyboardUpdateOptions](x: Self) {
     
-    @scala.inline
-    def setCaretIndex(value: Double): Self = StObject.set(x, "caretIndex", value.asInstanceOf[js.Any])
+    inline def setCaretIndex(value: Double): Self = StObject.set(x, "caretIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaretIndexUndefined: Self = StObject.set(x, "caretIndex", js.undefined)
+    inline def setCaretIndexUndefined: Self = StObject.set(x, "caretIndex", js.undefined)
     
-    @scala.inline
-    def setShowKeyboard(value: Boolean): Self = StObject.set(x, "showKeyboard", value.asInstanceOf[js.Any])
+    inline def setShowKeyboard(value: Boolean): Self = StObject.set(x, "showKeyboard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowKeyboardUndefined: Self = StObject.set(x, "showKeyboard", js.undefined)
+    inline def setShowKeyboardUndefined: Self = StObject.set(x, "showKeyboard", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

@@ -28,8 +28,7 @@ trait ReleaseDeployPhase extends StObject {
 }
 object ReleaseDeployPhase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deploymentJobs: js.Array[DeploymentJob],
     errorLog: String,
     id: Double,
@@ -45,43 +44,30 @@ object ReleaseDeployPhase {
     __obj.asInstanceOf[ReleaseDeployPhase]
   }
   
-  @scala.inline
-  implicit class ReleaseDeployPhaseMutableBuilder[Self <: ReleaseDeployPhase] (val x: Self) extends AnyVal {
+  extension [Self <: ReleaseDeployPhase](x: Self) {
     
-    @scala.inline
-    def setDeploymentJobs(value: js.Array[DeploymentJob]): Self = StObject.set(x, "deploymentJobs", value.asInstanceOf[js.Any])
+    inline def setDeploymentJobs(value: js.Array[DeploymentJob]): Self = StObject.set(x, "deploymentJobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentJobsVarargs(value: DeploymentJob*): Self = StObject.set(x, "deploymentJobs", js.Array(value :_*))
+    inline def setDeploymentJobsVarargs(value: DeploymentJob*): Self = StObject.set(x, "deploymentJobs", js.Array(value :_*))
     
-    @scala.inline
-    def setErrorLog(value: String): Self = StObject.set(x, "errorLog", value.asInstanceOf[js.Any])
+    inline def setErrorLog(value: String): Self = StObject.set(x, "errorLog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManualInterventions(value: js.Array[ManualIntervention]): Self = StObject.set(x, "manualInterventions", value.asInstanceOf[js.Any])
+    inline def setManualInterventions(value: js.Array[ManualIntervention]): Self = StObject.set(x, "manualInterventions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManualInterventionsVarargs(value: ManualIntervention*): Self = StObject.set(x, "manualInterventions", js.Array(value :_*))
+    inline def setManualInterventionsVarargs(value: ManualIntervention*): Self = StObject.set(x, "manualInterventions", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhaseId(value: String): Self = StObject.set(x, "phaseId", value.asInstanceOf[js.Any])
+    inline def setPhaseId(value: String): Self = StObject.set(x, "phaseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhaseType(value: DeployPhaseTypes): Self = StObject.set(x, "phaseType", value.asInstanceOf[js.Any])
+    inline def setPhaseType(value: DeployPhaseTypes): Self = StObject.set(x, "phaseType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+    inline def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunPlanId(value: String): Self = StObject.set(x, "runPlanId", value.asInstanceOf[js.Any])
+    inline def setRunPlanId(value: String): Self = StObject.set(x, "runPlanId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: DeployPhaseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: DeployPhaseStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

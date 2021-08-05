@@ -18,8 +18,7 @@ trait IGeometryEditorChildModel
 }
 object IGeometryEditorChildModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroy: () => Unit,
     editor: IGeometryEditor,
     events: IEventManager[js.Object],
@@ -32,19 +31,14 @@ object IGeometryEditorChildModel {
     __obj.asInstanceOf[IGeometryEditorChildModel]
   }
   
-  @scala.inline
-  implicit class IGeometryEditorChildModelMutableBuilder[Self <: IGeometryEditorChildModel] (val x: Self) extends AnyVal {
+  extension [Self <: IGeometryEditorChildModel](x: Self) {
     
-    @scala.inline
-    def setEditor(value: IGeometryEditor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+    inline def setEditor(value: IGeometryEditor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometry(value: IBaseGeometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: IBaseGeometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetParent(value: () => IGeometryEditorModel): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
+    inline def setGetParent(value: () => IGeometryEditorModel): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetPixels(value: js.Array[Double] => Unit): Self = StObject.set(x, "setPixels", js.Any.fromFunction1(value))
+    inline def setSetPixels(value: js.Array[Double] => Unit): Self = StObject.set(x, "setPixels", js.Any.fromFunction1(value))
   }
 }

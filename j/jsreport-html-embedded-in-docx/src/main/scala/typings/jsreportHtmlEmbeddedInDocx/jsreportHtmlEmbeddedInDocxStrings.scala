@@ -8,6 +8,5 @@ object jsreportHtmlEmbeddedInDocxStrings {
   
   @js.native
   sealed trait `html-embedded-in-docx` extends StObject
-  @scala.inline
-  def `html-embedded-in-docx`: `html-embedded-in-docx` = "html-embedded-in-docx".asInstanceOf[`html-embedded-in-docx`]
+  inline def `html-embedded-in-docx`: `html-embedded-in-docx` = "html-embedded-in-docx".asInstanceOf[`html-embedded-in-docx`]
 }

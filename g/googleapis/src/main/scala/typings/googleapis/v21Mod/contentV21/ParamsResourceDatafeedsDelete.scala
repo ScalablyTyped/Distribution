@@ -30,31 +30,23 @@ trait ParamsResourceDatafeedsDelete
 }
 object ParamsResourceDatafeedsDelete {
   
-  @scala.inline
-  def apply(): ParamsResourceDatafeedsDelete = {
+  inline def apply(): ParamsResourceDatafeedsDelete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceDatafeedsDelete]
   }
   
-  @scala.inline
-  implicit class ParamsResourceDatafeedsDeleteMutableBuilder[Self <: ParamsResourceDatafeedsDelete] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceDatafeedsDelete](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setDatafeedId(value: String): Self = StObject.set(x, "datafeedId", value.asInstanceOf[js.Any])
+    inline def setDatafeedId(value: String): Self = StObject.set(x, "datafeedId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatafeedIdUndefined: Self = StObject.set(x, "datafeedId", js.undefined)
+    inline def setDatafeedIdUndefined: Self = StObject.set(x, "datafeedId", js.undefined)
     
-    @scala.inline
-    def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
+    inline def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
+    inline def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
   }
 }

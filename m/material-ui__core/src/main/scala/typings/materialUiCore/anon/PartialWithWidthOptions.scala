@@ -18,37 +18,27 @@ trait PartialWithWidthOptions extends StObject {
 }
 object PartialWithWidthOptions {
   
-  @scala.inline
-  def apply(): PartialWithWidthOptions = {
+  inline def apply(): PartialWithWidthOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialWithWidthOptions]
   }
   
-  @scala.inline
-  implicit class PartialWithWidthOptionsMutableBuilder[Self <: PartialWithWidthOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartialWithWidthOptions](x: Self) {
     
-    @scala.inline
-    def setInitialWidth(value: Breakpoint): Self = StObject.set(x, "initialWidth", value.asInstanceOf[js.Any])
+    inline def setInitialWidth(value: Breakpoint): Self = StObject.set(x, "initialWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialWidthUndefined: Self = StObject.set(x, "initialWidth", js.undefined)
+    inline def setInitialWidthUndefined: Self = StObject.set(x, "initialWidth", js.undefined)
     
-    @scala.inline
-    def setNoSSR(value: Boolean): Self = StObject.set(x, "noSSR", value.asInstanceOf[js.Any])
+    inline def setNoSSR(value: Boolean): Self = StObject.set(x, "noSSR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoSSRUndefined: Self = StObject.set(x, "noSSR", js.undefined)
+    inline def setNoSSRUndefined: Self = StObject.set(x, "noSSR", js.undefined)
     
-    @scala.inline
-    def setResizeInterval(value: Double): Self = StObject.set(x, "resizeInterval", value.asInstanceOf[js.Any])
+    inline def setResizeInterval(value: Double): Self = StObject.set(x, "resizeInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizeIntervalUndefined: Self = StObject.set(x, "resizeInterval", js.undefined)
+    inline def setResizeIntervalUndefined: Self = StObject.set(x, "resizeInterval", js.undefined)
     
-    @scala.inline
-    def setWithTheme(value: Boolean): Self = StObject.set(x, "withTheme", value.asInstanceOf[js.Any])
+    inline def setWithTheme(value: Boolean): Self = StObject.set(x, "withTheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithThemeUndefined: Self = StObject.set(x, "withTheme", js.undefined)
+    inline def setWithThemeUndefined: Self = StObject.set(x, "withTheme", js.undefined)
   }
 }

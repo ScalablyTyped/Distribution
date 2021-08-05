@@ -12,17 +12,14 @@ object jest {
   }
   object Matchers {
     
-    @scala.inline
-    def apply[R, T](toBeOneOf: js.Array[js.Any] => R): Matchers[R, T] = {
+    inline def apply[R, T](toBeOneOf: js.Array[js.Any] => R): Matchers[R, T] = {
       val __obj = js.Dynamic.literal(toBeOneOf = js.Any.fromFunction1(toBeOneOf))
       __obj.asInstanceOf[Matchers[R, T]]
     }
     
-    @scala.inline
-    implicit class MatchersMutableBuilder[Self <: Matchers[?, ?], R, T] (val x: Self & (Matchers[R, T])) extends AnyVal {
+    extension [Self <: Matchers[?, ?], R, T](x: Self & (Matchers[R, T])) {
       
-      @scala.inline
-      def setToBeOneOf(value: js.Array[js.Any] => R): Self = StObject.set(x, "toBeOneOf", js.Any.fromFunction1(value))
+      inline def setToBeOneOf(value: js.Array[js.Any] => R): Self = StObject.set(x, "toBeOneOf", js.Any.fromFunction1(value))
     }
   }
 }

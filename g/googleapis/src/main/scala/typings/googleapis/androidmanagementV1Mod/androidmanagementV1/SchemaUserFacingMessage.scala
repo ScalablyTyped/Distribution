@@ -28,25 +28,19 @@ trait SchemaUserFacingMessage extends StObject {
 }
 object SchemaUserFacingMessage {
   
-  @scala.inline
-  def apply(): SchemaUserFacingMessage = {
+  inline def apply(): SchemaUserFacingMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUserFacingMessage]
   }
   
-  @scala.inline
-  implicit class SchemaUserFacingMessageMutableBuilder[Self <: SchemaUserFacingMessage] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUserFacingMessage](x: Self) {
     
-    @scala.inline
-    def setDefaultMessage(value: String): Self = StObject.set(x, "defaultMessage", value.asInstanceOf[js.Any])
+    inline def setDefaultMessage(value: String): Self = StObject.set(x, "defaultMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultMessageUndefined: Self = StObject.set(x, "defaultMessage", js.undefined)
+    inline def setDefaultMessageUndefined: Self = StObject.set(x, "defaultMessage", js.undefined)
     
-    @scala.inline
-    def setLocalizedMessages(value: StringDictionary[String]): Self = StObject.set(x, "localizedMessages", value.asInstanceOf[js.Any])
+    inline def setLocalizedMessages(value: StringDictionary[String]): Self = StObject.set(x, "localizedMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalizedMessagesUndefined: Self = StObject.set(x, "localizedMessages", js.undefined)
+    inline def setLocalizedMessagesUndefined: Self = StObject.set(x, "localizedMessages", js.undefined)
   }
 }

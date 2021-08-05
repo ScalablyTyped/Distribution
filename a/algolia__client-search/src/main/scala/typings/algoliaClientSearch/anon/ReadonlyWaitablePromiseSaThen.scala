@@ -16,8 +16,7 @@ trait ReadonlyWaitablePromiseSaThen extends StObject {
 }
 object ReadonlyWaitablePromiseSaThen {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `catch`: () => js.Promise[SaveRuleResponse | js.Any],
     `finally`: () => js.Promise[SaveRuleResponse],
     `then`: () => js.Promise[js.Any | js.Any]
@@ -29,16 +28,12 @@ object ReadonlyWaitablePromiseSaThen {
     __obj.asInstanceOf[ReadonlyWaitablePromiseSaThen]
   }
   
-  @scala.inline
-  implicit class ReadonlyWaitablePromiseSaThenMutableBuilder[Self <: ReadonlyWaitablePromiseSaThen] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyWaitablePromiseSaThen](x: Self) {
     
-    @scala.inline
-    def setCatch(value: () => js.Promise[SaveRuleResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
+    inline def setCatch(value: () => js.Promise[SaveRuleResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFinally(value: () => js.Promise[SaveRuleResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
+    inline def setFinally(value: () => js.Promise[SaveRuleResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
+    inline def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
   }
 }

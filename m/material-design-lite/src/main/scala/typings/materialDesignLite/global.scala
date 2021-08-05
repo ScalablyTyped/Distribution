@@ -10,6 +10,5 @@ object global {
   @JSGlobal("componentHandler")
   @js.native
   def componentHandler: ComponentHandler = js.native
-  @scala.inline
-  def componentHandler_=(x: ComponentHandler): Unit = js.Dynamic.global.updateDynamic("componentHandler")(x.asInstanceOf[js.Any])
+  inline def componentHandler_=(x: ComponentHandler): Unit = js.Dynamic.global.updateDynamic("componentHandler")(x.asInstanceOf[js.Any])
 }

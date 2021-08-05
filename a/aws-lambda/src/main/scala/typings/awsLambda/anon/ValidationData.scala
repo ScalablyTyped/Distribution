@@ -15,28 +15,21 @@ trait ValidationData extends StObject {
 }
 object ValidationData {
   
-  @scala.inline
-  def apply(userAttributes: StringMap): ValidationData = {
+  inline def apply(userAttributes: StringMap): ValidationData = {
     val __obj = js.Dynamic.literal(userAttributes = userAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValidationData]
   }
   
-  @scala.inline
-  implicit class ValidationDataMutableBuilder[Self <: ValidationData] (val x: Self) extends AnyVal {
+  extension [Self <: ValidationData](x: Self) {
     
-    @scala.inline
-    def setClientMetadata(value: StringMap): Self = StObject.set(x, "clientMetadata", value.asInstanceOf[js.Any])
+    inline def setClientMetadata(value: StringMap): Self = StObject.set(x, "clientMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientMetadataUndefined: Self = StObject.set(x, "clientMetadata", js.undefined)
+    inline def setClientMetadataUndefined: Self = StObject.set(x, "clientMetadata", js.undefined)
     
-    @scala.inline
-    def setUserAttributes(value: StringMap): Self = StObject.set(x, "userAttributes", value.asInstanceOf[js.Any])
+    inline def setUserAttributes(value: StringMap): Self = StObject.set(x, "userAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationData(value: StringMap): Self = StObject.set(x, "validationData", value.asInstanceOf[js.Any])
+    inline def setValidationData(value: StringMap): Self = StObject.set(x, "validationData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationDataUndefined: Self = StObject.set(x, "validationData", js.undefined)
+    inline def setValidationDataUndefined: Self = StObject.set(x, "validationData", js.undefined)
   }
 }

@@ -12,16 +12,13 @@ trait MediaStreamSourceSampleRequestedEventArgs extends StObject {
 }
 object MediaStreamSourceSampleRequestedEventArgs {
   
-  @scala.inline
-  def apply(request: MediaStreamSourceSampleRequest): MediaStreamSourceSampleRequestedEventArgs = {
+  inline def apply(request: MediaStreamSourceSampleRequest): MediaStreamSourceSampleRequestedEventArgs = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaStreamSourceSampleRequestedEventArgs]
   }
   
-  @scala.inline
-  implicit class MediaStreamSourceSampleRequestedEventArgsMutableBuilder[Self <: MediaStreamSourceSampleRequestedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: MediaStreamSourceSampleRequestedEventArgs](x: Self) {
     
-    @scala.inline
-    def setRequest(value: MediaStreamSourceSampleRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: MediaStreamSourceSampleRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }
 }

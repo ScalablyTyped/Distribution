@@ -11,19 +11,15 @@ trait UpdateContactPhotoResponse extends StObject {
 }
 object UpdateContactPhotoResponse {
   
-  @scala.inline
-  def apply(): UpdateContactPhotoResponse = {
+  inline def apply(): UpdateContactPhotoResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateContactPhotoResponse]
   }
   
-  @scala.inline
-  implicit class UpdateContactPhotoResponseMutableBuilder[Self <: UpdateContactPhotoResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateContactPhotoResponse](x: Self) {
     
-    @scala.inline
-    def setPerson(value: Person): Self = StObject.set(x, "person", value.asInstanceOf[js.Any])
+    inline def setPerson(value: Person): Self = StObject.set(x, "person", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersonUndefined: Self = StObject.set(x, "person", js.undefined)
+    inline def setPersonUndefined: Self = StObject.set(x, "person", js.undefined)
   }
 }

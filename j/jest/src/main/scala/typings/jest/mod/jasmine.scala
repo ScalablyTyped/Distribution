@@ -19,53 +19,36 @@ object jasmine {
   @JSImport("jest", "jasmine.DEFAULT_TIMEOUT_INTERVAL")
   @js.native
   def DEFAULT_TIMEOUT_INTERVAL: Double = js.native
-  @scala.inline
-  def DEFAULT_TIMEOUT_INTERVAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_TIMEOUT_INTERVAL")(x.asInstanceOf[js.Any])
+  inline def DEFAULT_TIMEOUT_INTERVAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_TIMEOUT_INTERVAL")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def addCustomEqualityTester(equalityTester: CustomEqualityTester): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addCustomEqualityTester")(equalityTester.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addCustomEqualityTester(equalityTester: CustomEqualityTester): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addCustomEqualityTester")(equalityTester.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def addMatchers(matchers: CustomMatcherFactories): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addMatchers")(matchers.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addMatchers(matchers: CustomMatcherFactories): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addMatchers")(matchers.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def any(aclass: js.Any): Any_ = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(aclass.asInstanceOf[js.Any]).asInstanceOf[Any_]
+  inline def any(aclass: js.Any): Any_ = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(aclass.asInstanceOf[js.Any]).asInstanceOf[Any_]
   
-  @scala.inline
-  def anything(): Any_ = ^.asInstanceOf[js.Dynamic].applyDynamic("anything")().asInstanceOf[Any_]
+  inline def anything(): Any_ = ^.asInstanceOf[js.Dynamic].applyDynamic("anything")().asInstanceOf[Any_]
   
-  @scala.inline
-  def arrayContaining(sample: js.Array[js.Any]): ArrayContaining_ = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayContaining")(sample.asInstanceOf[js.Any]).asInstanceOf[ArrayContaining_]
+  inline def arrayContaining(sample: js.Array[js.Any]): ArrayContaining_ = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayContaining")(sample.asInstanceOf[js.Any]).asInstanceOf[ArrayContaining_]
   
-  @scala.inline
-  def clock(): Clock_ = ^.asInstanceOf[js.Dynamic].applyDynamic("clock")().asInstanceOf[Clock_]
+  inline def clock(): Clock_ = ^.asInstanceOf[js.Dynamic].applyDynamic("clock")().asInstanceOf[Clock_]
   
-  @scala.inline
-  def createSpy(): Spy = ^.asInstanceOf[js.Dynamic].applyDynamic("createSpy")().asInstanceOf[Spy]
-  @scala.inline
-  def createSpy(name: String): Spy = ^.asInstanceOf[js.Dynamic].applyDynamic("createSpy")(name.asInstanceOf[js.Any]).asInstanceOf[Spy]
-  @scala.inline
-  def createSpy(name: String, originalFn: js.Function1[/* repeated */ js.Any, js.Any]): Spy = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpy")(name.asInstanceOf[js.Any], originalFn.asInstanceOf[js.Any])).asInstanceOf[Spy]
-  @scala.inline
-  def createSpy(name: Unit, originalFn: js.Function1[/* repeated */ js.Any, js.Any]): Spy = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpy")(name.asInstanceOf[js.Any], originalFn.asInstanceOf[js.Any])).asInstanceOf[Spy]
+  inline def createSpy(): Spy = ^.asInstanceOf[js.Dynamic].applyDynamic("createSpy")().asInstanceOf[Spy]
+  inline def createSpy(name: String): Spy = ^.asInstanceOf[js.Dynamic].applyDynamic("createSpy")(name.asInstanceOf[js.Any]).asInstanceOf[Spy]
+  inline def createSpy(name: String, originalFn: js.Function1[/* repeated */ js.Any, js.Any]): Spy = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpy")(name.asInstanceOf[js.Any], originalFn.asInstanceOf[js.Any])).asInstanceOf[Spy]
+  inline def createSpy(name: Unit, originalFn: js.Function1[/* repeated */ js.Any, js.Any]): Spy = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpy")(name.asInstanceOf[js.Any], originalFn.asInstanceOf[js.Any])).asInstanceOf[Spy]
   
-  @scala.inline
-  def createSpyObj(baseName: String, methodNames: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpyObj")(baseName.asInstanceOf[js.Any], methodNames.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def createSpyObj(baseName: String, methodNames: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpyObj")(baseName.asInstanceOf[js.Any], methodNames.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   // tslint:disable-next-line: no-unnecessary-generics
-  @scala.inline
-  def createSpyObj_T_T[T](baseName: String, methodNames: js.Array[js.Any]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpyObj")(baseName.asInstanceOf[js.Any], methodNames.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def createSpyObj_T_T[T](baseName: String, methodNames: js.Array[js.Any]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpyObj")(baseName.asInstanceOf[js.Any], methodNames.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @scala.inline
-  def objectContaining(sample: js.Any): ObjectContaining_ = ^.asInstanceOf[js.Dynamic].applyDynamic("objectContaining")(sample.asInstanceOf[js.Any]).asInstanceOf[ObjectContaining_]
+  inline def objectContaining(sample: js.Any): ObjectContaining_ = ^.asInstanceOf[js.Dynamic].applyDynamic("objectContaining")(sample.asInstanceOf[js.Any]).asInstanceOf[ObjectContaining_]
   
-  @scala.inline
-  def pp(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pp")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def pp(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pp")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def stringMatching(value: String): Any_ = ^.asInstanceOf[js.Dynamic].applyDynamic("stringMatching")(value.asInstanceOf[js.Any]).asInstanceOf[Any_]
-  @scala.inline
-  def stringMatching(value: RegExp): Any_ = ^.asInstanceOf[js.Dynamic].applyDynamic("stringMatching")(value.asInstanceOf[js.Any]).asInstanceOf[Any_]
+  inline def stringMatching(value: String): Any_ = ^.asInstanceOf[js.Dynamic].applyDynamic("stringMatching")(value.asInstanceOf[js.Any]).asInstanceOf[Any_]
+  inline def stringMatching(value: RegExp): Any_ = ^.asInstanceOf[js.Dynamic].applyDynamic("stringMatching")(value.asInstanceOf[js.Any]).asInstanceOf[Any_]
   
   @js.native
   trait Any_
@@ -95,17 +78,14 @@ object jasmine {
   }
   object ArrayLike {
     
-    @scala.inline
-    def apply[T](length: Double): ArrayLike[T] = {
+    inline def apply[T](length: Double): ArrayLike[T] = {
       val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
       __obj.asInstanceOf[ArrayLike[T]]
     }
     
-    @scala.inline
-    implicit class ArrayLikeMutableBuilder[Self <: ArrayLike[?], T] (val x: Self & ArrayLike[T]) extends AnyVal {
+    extension [Self <: ArrayLike[?], T](x: Self & ArrayLike[T]) {
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -128,27 +108,21 @@ object jasmine {
   }
   object CallInfo {
     
-    @scala.inline
-    def apply(args: js.Array[js.Any], `object`: js.Any, returnValue: js.Any): CallInfo = {
+    inline def apply(args: js.Array[js.Any], `object`: js.Any, returnValue: js.Any): CallInfo = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.asInstanceOf[CallInfo]
     }
     
-    @scala.inline
-    implicit class CallInfoMutableBuilder[Self <: CallInfo] (val x: Self) extends AnyVal {
+    extension [Self <: CallInfo](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnValue(value: js.Any): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+      inline def setReturnValue(value: js.Any): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
     }
   }
   
@@ -204,8 +178,7 @@ object jasmine {
   }
   object Calls {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       all: () => js.Array[CallInfo],
       allArgs: () => js.Array[js.Any],
       any: () => Boolean,
@@ -219,32 +192,23 @@ object jasmine {
       __obj.asInstanceOf[Calls]
     }
     
-    @scala.inline
-    implicit class CallsMutableBuilder[Self <: Calls] (val x: Self) extends AnyVal {
+    extension [Self <: Calls](x: Self) {
       
-      @scala.inline
-      def setAll(value: () => js.Array[CallInfo]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
+      inline def setAll(value: () => js.Array[CallInfo]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAllArgs(value: () => js.Array[js.Any]): Self = StObject.set(x, "allArgs", js.Any.fromFunction0(value))
+      inline def setAllArgs(value: () => js.Array[js.Any]): Self = StObject.set(x, "allArgs", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAny(value: () => Boolean): Self = StObject.set(x, "any", js.Any.fromFunction0(value))
+      inline def setAny(value: () => Boolean): Self = StObject.set(x, "any", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setArgsFor(value: Double => js.Array[js.Any]): Self = StObject.set(x, "argsFor", js.Any.fromFunction1(value))
+      inline def setArgsFor(value: Double => js.Array[js.Any]): Self = StObject.set(x, "argsFor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
+      inline def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFirst(value: () => CallInfo): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+      inline def setFirst(value: () => CallInfo): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMostRecent(value: () => CallInfo): Self = StObject.set(x, "mostRecent", js.Any.fromFunction0(value))
+      inline def setMostRecent(value: () => CallInfo): Self = StObject.set(x, "mostRecent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     }
   }
   
@@ -290,23 +254,18 @@ object jasmine {
   }
   object CustomMatcherResult {
     
-    @scala.inline
-    def apply(message: String | js.Function0[String], pass: Boolean): CustomMatcherResult = {
+    inline def apply(message: String | js.Function0[String], pass: Boolean): CustomMatcherResult = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], pass = pass.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomMatcherResult]
     }
     
-    @scala.inline
-    implicit class CustomMatcherResultMutableBuilder[Self <: CustomMatcherResult] (val x: Self) extends AnyVal {
+    extension [Self <: CustomMatcherResult](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String | js.Function0[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String | js.Function0[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageFunction0(value: () => String): Self = StObject.set(x, "message", js.Any.fromFunction0(value))
+      inline def setMessageFunction0(value: () => String): Self = StObject.set(x, "message", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPass(value: Boolean): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
+      inline def setPass(value: Boolean): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
     }
   }
   
@@ -393,8 +352,7 @@ object jasmine {
   }
   object SpyAnd {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       callFake: js.Function1[/* repeated */ js.Any, js.Any] => Spy,
       callThrough: () => Spy,
       returnValue: js.Any => Spy,
@@ -406,26 +364,19 @@ object jasmine {
       __obj.asInstanceOf[SpyAnd]
     }
     
-    @scala.inline
-    implicit class SpyAndMutableBuilder[Self <: SpyAnd] (val x: Self) extends AnyVal {
+    extension [Self <: SpyAnd](x: Self) {
       
-      @scala.inline
-      def setCallFake(value: js.Function1[/* repeated */ js.Any, js.Any] => Spy): Self = StObject.set(x, "callFake", js.Any.fromFunction1(value))
+      inline def setCallFake(value: js.Function1[/* repeated */ js.Any, js.Any] => Spy): Self = StObject.set(x, "callFake", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCallThrough(value: () => Spy): Self = StObject.set(x, "callThrough", js.Any.fromFunction0(value))
+      inline def setCallThrough(value: () => Spy): Self = StObject.set(x, "callThrough", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReturnValue(value: js.Any => Spy): Self = StObject.set(x, "returnValue", js.Any.fromFunction1(value))
+      inline def setReturnValue(value: js.Any => Spy): Self = StObject.set(x, "returnValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReturnValues(value: /* repeated */ js.Any => Spy): Self = StObject.set(x, "returnValues", js.Any.fromFunction1(value))
+      inline def setReturnValues(value: /* repeated */ js.Any => Spy): Self = StObject.set(x, "returnValues", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStub(value: () => Spy): Self = StObject.set(x, "stub", js.Any.fromFunction0(value))
+      inline def setStub(value: () => Spy): Self = StObject.set(x, "stub", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setThrowError(value: String => Spy): Self = StObject.set(x, "throwError", js.Any.fromFunction1(value))
+      inline def setThrowError(value: String => Spy): Self = StObject.set(x, "throwError", js.Any.fromFunction1(value))
     }
   }
 }

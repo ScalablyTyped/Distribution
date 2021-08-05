@@ -19,22 +19,17 @@ trait SchemaGoogleCloudVideointelligenceV1TextDetectionConfig extends StObject {
 }
 object SchemaGoogleCloudVideointelligenceV1TextDetectionConfig {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudVideointelligenceV1TextDetectionConfig = {
+  inline def apply(): SchemaGoogleCloudVideointelligenceV1TextDetectionConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudVideointelligenceV1TextDetectionConfig]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudVideointelligenceV1TextDetectionConfigMutableBuilder[Self <: SchemaGoogleCloudVideointelligenceV1TextDetectionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudVideointelligenceV1TextDetectionConfig](x: Self) {
     
-    @scala.inline
-    def setLanguageHints(value: js.Array[String]): Self = StObject.set(x, "languageHints", value.asInstanceOf[js.Any])
+    inline def setLanguageHints(value: js.Array[String]): Self = StObject.set(x, "languageHints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageHintsUndefined: Self = StObject.set(x, "languageHints", js.undefined)
+    inline def setLanguageHintsUndefined: Self = StObject.set(x, "languageHints", js.undefined)
     
-    @scala.inline
-    def setLanguageHintsVarargs(value: String*): Self = StObject.set(x, "languageHints", js.Array(value :_*))
+    inline def setLanguageHintsVarargs(value: String*): Self = StObject.set(x, "languageHints", js.Array(value :_*))
   }
 }

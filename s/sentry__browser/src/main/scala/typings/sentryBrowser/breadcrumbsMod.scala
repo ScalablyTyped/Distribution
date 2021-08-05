@@ -24,30 +24,30 @@ object breadcrumbsMod {
     /**
       * Creates breadcrumbs from console API calls
       */
-    var _consoleBreadcrumb: js.Any = js.native
+    /* private */ var _consoleBreadcrumb: js.Any = js.native
     
     /**
       * Creates breadcrumbs from DOM API calls
       */
-    var _domBreadcrumb: js.Any = js.native
+    /* private */ var _domBreadcrumb: js.Any = js.native
     
     /**
       * Creates breadcrumbs from fetch API calls
       */
-    var _fetchBreadcrumb: js.Any = js.native
+    /* private */ var _fetchBreadcrumb: js.Any = js.native
     
     /**
       * Creates breadcrumbs from history API calls
       */
-    var _historyBreadcrumb: js.Any = js.native
+    /* private */ var _historyBreadcrumb: js.Any = js.native
     
     /** JSDoc */
-    val _options: js.Any = js.native
+    /* private */ val _options: js.Any = js.native
     
     /**
       * Creates breadcrumbs from XHR API calls
       */
-    var _xhrBreadcrumb: js.Any = js.native
+    /* private */ var _xhrBreadcrumb: js.Any = js.native
     
     /**
       * Create a breadcrumb of `sentry` from the events themselves
@@ -92,8 +92,7 @@ object breadcrumbsMod {
     @JSImport("@sentry/browser/dist/integrations/breadcrumbs", "Breadcrumbs.id")
     @js.native
     def id: String = js.native
-    @scala.inline
-    def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
+    inline def id_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("id")(x.asInstanceOf[js.Any])
   }
   
   /** JSDoc */
@@ -113,32 +112,24 @@ object breadcrumbsMod {
   }
   object BreadcrumbsOptions {
     
-    @scala.inline
-    def apply(console: Boolean, dom: Boolean, fetch: Boolean, history: Boolean, sentry: Boolean, xhr: Boolean): BreadcrumbsOptions = {
+    inline def apply(console: Boolean, dom: Boolean, fetch: Boolean, history: Boolean, sentry: Boolean, xhr: Boolean): BreadcrumbsOptions = {
       val __obj = js.Dynamic.literal(console = console.asInstanceOf[js.Any], dom = dom.asInstanceOf[js.Any], fetch = fetch.asInstanceOf[js.Any], history = history.asInstanceOf[js.Any], sentry = sentry.asInstanceOf[js.Any], xhr = xhr.asInstanceOf[js.Any])
       __obj.asInstanceOf[BreadcrumbsOptions]
     }
     
-    @scala.inline
-    implicit class BreadcrumbsOptionsMutableBuilder[Self <: BreadcrumbsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BreadcrumbsOptions](x: Self) {
       
-      @scala.inline
-      def setConsole(value: Boolean): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
+      inline def setConsole(value: Boolean): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDom(value: Boolean): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
+      inline def setDom(value: Boolean): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetch(value: Boolean): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
+      inline def setFetch(value: Boolean): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHistory(value: Boolean): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: Boolean): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSentry(value: Boolean): Self = StObject.set(x, "sentry", value.asInstanceOf[js.Any])
+      inline def setSentry(value: Boolean): Self = StObject.set(x, "sentry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXhr(value: Boolean): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+      inline def setXhr(value: Boolean): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
     }
   }
 }

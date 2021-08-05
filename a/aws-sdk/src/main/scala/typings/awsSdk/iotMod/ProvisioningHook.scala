@@ -18,22 +18,17 @@ trait ProvisioningHook extends StObject {
 }
 object ProvisioningHook {
   
-  @scala.inline
-  def apply(targetArn: TargetArn): ProvisioningHook = {
+  inline def apply(targetArn: TargetArn): ProvisioningHook = {
     val __obj = js.Dynamic.literal(targetArn = targetArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProvisioningHook]
   }
   
-  @scala.inline
-  implicit class ProvisioningHookMutableBuilder[Self <: ProvisioningHook] (val x: Self) extends AnyVal {
+  extension [Self <: ProvisioningHook](x: Self) {
     
-    @scala.inline
-    def setPayloadVersion(value: PayloadVersion): Self = StObject.set(x, "payloadVersion", value.asInstanceOf[js.Any])
+    inline def setPayloadVersion(value: PayloadVersion): Self = StObject.set(x, "payloadVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadVersionUndefined: Self = StObject.set(x, "payloadVersion", js.undefined)
+    inline def setPayloadVersionUndefined: Self = StObject.set(x, "payloadVersion", js.undefined)
     
-    @scala.inline
-    def setTargetArn(value: TargetArn): Self = StObject.set(x, "targetArn", value.asInstanceOf[js.Any])
+    inline def setTargetArn(value: TargetArn): Self = StObject.set(x, "targetArn", value.asInstanceOf[js.Any])
   }
 }

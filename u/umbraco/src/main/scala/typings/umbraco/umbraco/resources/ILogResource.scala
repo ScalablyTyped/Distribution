@@ -85,8 +85,7 @@ trait ILogResource extends StObject {
 }
 object ILogResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getEntityLog: Double => IPromise[IResourcePromise],
     getLog: (LogType, Date) => IPromise[IResourcePromise],
     getUserLog: (LogType, Date) => IPromise[IResourcePromise]
@@ -95,16 +94,12 @@ object ILogResource {
     __obj.asInstanceOf[ILogResource]
   }
   
-  @scala.inline
-  implicit class ILogResourceMutableBuilder[Self <: ILogResource] (val x: Self) extends AnyVal {
+  extension [Self <: ILogResource](x: Self) {
     
-    @scala.inline
-    def setGetEntityLog(value: Double => IPromise[IResourcePromise]): Self = StObject.set(x, "getEntityLog", js.Any.fromFunction1(value))
+    inline def setGetEntityLog(value: Double => IPromise[IResourcePromise]): Self = StObject.set(x, "getEntityLog", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetLog(value: (LogType, Date) => IPromise[IResourcePromise]): Self = StObject.set(x, "getLog", js.Any.fromFunction2(value))
+    inline def setGetLog(value: (LogType, Date) => IPromise[IResourcePromise]): Self = StObject.set(x, "getLog", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetUserLog(value: (LogType, Date) => IPromise[IResourcePromise]): Self = StObject.set(x, "getUserLog", js.Any.fromFunction2(value))
+    inline def setGetUserLog(value: (LogType, Date) => IPromise[IResourcePromise]): Self = StObject.set(x, "getUserLog", js.Any.fromFunction2(value))
   }
 }

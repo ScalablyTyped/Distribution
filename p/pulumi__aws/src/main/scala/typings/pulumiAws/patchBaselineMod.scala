@@ -90,21 +90,16 @@ object patchBaselineMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): PatchBaseline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[PatchBaseline]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): PatchBaseline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PatchBaseline]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: PatchBaselineState): PatchBaseline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PatchBaseline]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: PatchBaselineState, opts: CustomResourceOptions): PatchBaseline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PatchBaseline]
+    inline def get(name: String, id: Input[ID]): PatchBaseline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[PatchBaseline]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): PatchBaseline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PatchBaseline]
+    inline def get(name: String, id: Input[ID], state: PatchBaselineState): PatchBaseline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PatchBaseline]
+    inline def get(name: String, id: Input[ID], state: PatchBaselineState, opts: CustomResourceOptions): PatchBaseline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PatchBaseline]
     
     /**
       * Returns true if the given object is an instance of PatchBaseline.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/patchBaseline.PatchBaseline */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ssm/patchBaseline.PatchBaseline */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/patchBaseline.PatchBaseline */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ssm/patchBaseline.PatchBaseline */ Boolean]
   }
   
   trait PatchBaselineArgs extends StObject {
@@ -156,80 +151,56 @@ object patchBaselineMod {
   }
   object PatchBaselineArgs {
     
-    @scala.inline
-    def apply(): PatchBaselineArgs = {
+    inline def apply(): PatchBaselineArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PatchBaselineArgs]
     }
     
-    @scala.inline
-    implicit class PatchBaselineArgsMutableBuilder[Self <: PatchBaselineArgs] (val x: Self) extends AnyVal {
+    extension [Self <: PatchBaselineArgs](x: Self) {
       
-      @scala.inline
-      def setApprovalRules(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.PatchBaselineApprovalRule]]]): Self = StObject.set(x, "approvalRules", value.asInstanceOf[js.Any])
+      inline def setApprovalRules(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.PatchBaselineApprovalRule]]]): Self = StObject.set(x, "approvalRules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApprovalRulesUndefined: Self = StObject.set(x, "approvalRules", js.undefined)
+      inline def setApprovalRulesUndefined: Self = StObject.set(x, "approvalRules", js.undefined)
       
-      @scala.inline
-      def setApprovalRulesVarargs(value: Input[typings.pulumiAws.inputMod.ssm.PatchBaselineApprovalRule]*): Self = StObject.set(x, "approvalRules", js.Array(value :_*))
+      inline def setApprovalRulesVarargs(value: Input[typings.pulumiAws.inputMod.ssm.PatchBaselineApprovalRule]*): Self = StObject.set(x, "approvalRules", js.Array(value :_*))
       
-      @scala.inline
-      def setApprovedPatches(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "approvedPatches", value.asInstanceOf[js.Any])
+      inline def setApprovedPatches(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "approvedPatches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApprovedPatchesComplianceLevel(value: Input[String]): Self = StObject.set(x, "approvedPatchesComplianceLevel", value.asInstanceOf[js.Any])
+      inline def setApprovedPatchesComplianceLevel(value: Input[String]): Self = StObject.set(x, "approvedPatchesComplianceLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApprovedPatchesComplianceLevelUndefined: Self = StObject.set(x, "approvedPatchesComplianceLevel", js.undefined)
+      inline def setApprovedPatchesComplianceLevelUndefined: Self = StObject.set(x, "approvedPatchesComplianceLevel", js.undefined)
       
-      @scala.inline
-      def setApprovedPatchesUndefined: Self = StObject.set(x, "approvedPatches", js.undefined)
+      inline def setApprovedPatchesUndefined: Self = StObject.set(x, "approvedPatches", js.undefined)
       
-      @scala.inline
-      def setApprovedPatchesVarargs(value: Input[String]*): Self = StObject.set(x, "approvedPatches", js.Array(value :_*))
+      inline def setApprovedPatchesVarargs(value: Input[String]*): Self = StObject.set(x, "approvedPatches", js.Array(value :_*))
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setGlobalFilters(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.PatchBaselineGlobalFilter]]]): Self = StObject.set(x, "globalFilters", value.asInstanceOf[js.Any])
+      inline def setGlobalFilters(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.PatchBaselineGlobalFilter]]]): Self = StObject.set(x, "globalFilters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalFiltersUndefined: Self = StObject.set(x, "globalFilters", js.undefined)
+      inline def setGlobalFiltersUndefined: Self = StObject.set(x, "globalFilters", js.undefined)
       
-      @scala.inline
-      def setGlobalFiltersVarargs(value: Input[typings.pulumiAws.inputMod.ssm.PatchBaselineGlobalFilter]*): Self = StObject.set(x, "globalFilters", js.Array(value :_*))
+      inline def setGlobalFiltersVarargs(value: Input[typings.pulumiAws.inputMod.ssm.PatchBaselineGlobalFilter]*): Self = StObject.set(x, "globalFilters", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOperatingSystem(value: Input[String]): Self = StObject.set(x, "operatingSystem", value.asInstanceOf[js.Any])
+      inline def setOperatingSystem(value: Input[String]): Self = StObject.set(x, "operatingSystem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperatingSystemUndefined: Self = StObject.set(x, "operatingSystem", js.undefined)
+      inline def setOperatingSystemUndefined: Self = StObject.set(x, "operatingSystem", js.undefined)
       
-      @scala.inline
-      def setRejectedPatches(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "rejectedPatches", value.asInstanceOf[js.Any])
+      inline def setRejectedPatches(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "rejectedPatches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRejectedPatchesUndefined: Self = StObject.set(x, "rejectedPatches", js.undefined)
+      inline def setRejectedPatchesUndefined: Self = StObject.set(x, "rejectedPatches", js.undefined)
       
-      @scala.inline
-      def setRejectedPatchesVarargs(value: Input[String]*): Self = StObject.set(x, "rejectedPatches", js.Array(value :_*))
+      inline def setRejectedPatchesVarargs(value: Input[String]*): Self = StObject.set(x, "rejectedPatches", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -282,80 +253,56 @@ object patchBaselineMod {
   }
   object PatchBaselineState {
     
-    @scala.inline
-    def apply(): PatchBaselineState = {
+    inline def apply(): PatchBaselineState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PatchBaselineState]
     }
     
-    @scala.inline
-    implicit class PatchBaselineStateMutableBuilder[Self <: PatchBaselineState] (val x: Self) extends AnyVal {
+    extension [Self <: PatchBaselineState](x: Self) {
       
-      @scala.inline
-      def setApprovalRules(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.PatchBaselineApprovalRule]]]): Self = StObject.set(x, "approvalRules", value.asInstanceOf[js.Any])
+      inline def setApprovalRules(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.PatchBaselineApprovalRule]]]): Self = StObject.set(x, "approvalRules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApprovalRulesUndefined: Self = StObject.set(x, "approvalRules", js.undefined)
+      inline def setApprovalRulesUndefined: Self = StObject.set(x, "approvalRules", js.undefined)
       
-      @scala.inline
-      def setApprovalRulesVarargs(value: Input[typings.pulumiAws.inputMod.ssm.PatchBaselineApprovalRule]*): Self = StObject.set(x, "approvalRules", js.Array(value :_*))
+      inline def setApprovalRulesVarargs(value: Input[typings.pulumiAws.inputMod.ssm.PatchBaselineApprovalRule]*): Self = StObject.set(x, "approvalRules", js.Array(value :_*))
       
-      @scala.inline
-      def setApprovedPatches(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "approvedPatches", value.asInstanceOf[js.Any])
+      inline def setApprovedPatches(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "approvedPatches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApprovedPatchesComplianceLevel(value: Input[String]): Self = StObject.set(x, "approvedPatchesComplianceLevel", value.asInstanceOf[js.Any])
+      inline def setApprovedPatchesComplianceLevel(value: Input[String]): Self = StObject.set(x, "approvedPatchesComplianceLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApprovedPatchesComplianceLevelUndefined: Self = StObject.set(x, "approvedPatchesComplianceLevel", js.undefined)
+      inline def setApprovedPatchesComplianceLevelUndefined: Self = StObject.set(x, "approvedPatchesComplianceLevel", js.undefined)
       
-      @scala.inline
-      def setApprovedPatchesUndefined: Self = StObject.set(x, "approvedPatches", js.undefined)
+      inline def setApprovedPatchesUndefined: Self = StObject.set(x, "approvedPatches", js.undefined)
       
-      @scala.inline
-      def setApprovedPatchesVarargs(value: Input[String]*): Self = StObject.set(x, "approvedPatches", js.Array(value :_*))
+      inline def setApprovedPatchesVarargs(value: Input[String]*): Self = StObject.set(x, "approvedPatches", js.Array(value :_*))
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setGlobalFilters(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.PatchBaselineGlobalFilter]]]): Self = StObject.set(x, "globalFilters", value.asInstanceOf[js.Any])
+      inline def setGlobalFilters(value: Input[js.Array[Input[typings.pulumiAws.inputMod.ssm.PatchBaselineGlobalFilter]]]): Self = StObject.set(x, "globalFilters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalFiltersUndefined: Self = StObject.set(x, "globalFilters", js.undefined)
+      inline def setGlobalFiltersUndefined: Self = StObject.set(x, "globalFilters", js.undefined)
       
-      @scala.inline
-      def setGlobalFiltersVarargs(value: Input[typings.pulumiAws.inputMod.ssm.PatchBaselineGlobalFilter]*): Self = StObject.set(x, "globalFilters", js.Array(value :_*))
+      inline def setGlobalFiltersVarargs(value: Input[typings.pulumiAws.inputMod.ssm.PatchBaselineGlobalFilter]*): Self = StObject.set(x, "globalFilters", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOperatingSystem(value: Input[String]): Self = StObject.set(x, "operatingSystem", value.asInstanceOf[js.Any])
+      inline def setOperatingSystem(value: Input[String]): Self = StObject.set(x, "operatingSystem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperatingSystemUndefined: Self = StObject.set(x, "operatingSystem", js.undefined)
+      inline def setOperatingSystemUndefined: Self = StObject.set(x, "operatingSystem", js.undefined)
       
-      @scala.inline
-      def setRejectedPatches(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "rejectedPatches", value.asInstanceOf[js.Any])
+      inline def setRejectedPatches(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "rejectedPatches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRejectedPatchesUndefined: Self = StObject.set(x, "rejectedPatches", js.undefined)
+      inline def setRejectedPatchesUndefined: Self = StObject.set(x, "rejectedPatches", js.undefined)
       
-      @scala.inline
-      def setRejectedPatchesVarargs(value: Input[String]*): Self = StObject.set(x, "rejectedPatches", js.Array(value :_*))
+      inline def setRejectedPatchesVarargs(value: Input[String]*): Self = StObject.set(x, "rejectedPatches", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

@@ -14,8 +14,7 @@ trait LSPLogMessage extends StObject {
 }
 object LSPLogMessage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     message: RequestMessage | ResponseMessage | NotificationMessage,
     timestamp: Double,
     `type`: LSPMessageType
@@ -25,16 +24,12 @@ object LSPLogMessage {
     __obj.asInstanceOf[LSPLogMessage]
   }
   
-  @scala.inline
-  implicit class LSPLogMessageMutableBuilder[Self <: LSPLogMessage] (val x: Self) extends AnyVal {
+  extension [Self <: LSPLogMessage](x: Self) {
     
-    @scala.inline
-    def setMessage(value: RequestMessage | ResponseMessage | NotificationMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: RequestMessage | ResponseMessage | NotificationMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: LSPMessageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: LSPMessageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

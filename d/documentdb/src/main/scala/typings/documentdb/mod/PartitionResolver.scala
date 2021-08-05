@@ -26,8 +26,7 @@ trait PartitionResolver extends StObject {
 }
 object PartitionResolver {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getPartitionKey: js.Any => String,
     resolveForCreate: String => String,
     resolveForRead: js.Any => js.Array[String]
@@ -36,16 +35,12 @@ object PartitionResolver {
     __obj.asInstanceOf[PartitionResolver]
   }
   
-  @scala.inline
-  implicit class PartitionResolverMutableBuilder[Self <: PartitionResolver] (val x: Self) extends AnyVal {
+  extension [Self <: PartitionResolver](x: Self) {
     
-    @scala.inline
-    def setGetPartitionKey(value: js.Any => String): Self = StObject.set(x, "getPartitionKey", js.Any.fromFunction1(value))
+    inline def setGetPartitionKey(value: js.Any => String): Self = StObject.set(x, "getPartitionKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResolveForCreate(value: String => String): Self = StObject.set(x, "resolveForCreate", js.Any.fromFunction1(value))
+    inline def setResolveForCreate(value: String => String): Self = StObject.set(x, "resolveForCreate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResolveForRead(value: js.Any => js.Array[String]): Self = StObject.set(x, "resolveForRead", js.Any.fromFunction1(value))
+    inline def setResolveForRead(value: js.Any => js.Array[String]): Self = StObject.set(x, "resolveForRead", js.Any.fromFunction1(value))
   }
 }

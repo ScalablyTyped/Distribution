@@ -35,35 +35,26 @@ object titleMod extends Shortcut {
   }
   object TitleProps {
     
-    @scala.inline
-    def apply(level: `1` | `2` | `3` | `4` | `5` | `6`): TitleProps = {
+    inline def apply(level: `1` | `2` | `3` | `4` | `5` | `6`): TitleProps = {
       val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
       __obj.asInstanceOf[TitleProps]
     }
     
-    @scala.inline
-    implicit class TitlePropsMutableBuilder[Self <: TitleProps] (val x: Self) extends AnyVal {
+    extension [Self <: TitleProps](x: Self) {
       
-      @scala.inline
-      def setLevel(value: `1` | `2` | `3` | `4` | `5` | `6`): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: `1` | `2` | `3` | `4` | `5` | `6`): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelStyle(value: `1` | `2` | `3` | `4` | `5` | `6`): Self = StObject.set(x, "levelStyle", value.asInstanceOf[js.Any])
+      inline def setLevelStyle(value: `1` | `2` | `3` | `4` | `5` | `6`): Self = StObject.set(x, "levelStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelStyleUndefined: Self = StObject.set(x, "levelStyle", js.undefined)
+      inline def setLevelStyleUndefined: Self = StObject.set(x, "levelStyle", js.undefined)
       
-      @scala.inline
-      def setLocalizedText(value: Loading): Self = StObject.set(x, "localizedText", value.asInstanceOf[js.Any])
+      inline def setLocalizedText(value: Loading): Self = StObject.set(x, "localizedText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalizedTextUndefined: Self = StObject.set(x, "localizedText", js.undefined)
+      inline def setLocalizedTextUndefined: Self = StObject.set(x, "localizedText", js.undefined)
       
-      @scala.inline
-      def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
+      inline def setWrap(value: Boolean): Self = StObject.set(x, "wrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
+      inline def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
     }
   }
   

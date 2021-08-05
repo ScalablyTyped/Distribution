@@ -33,52 +33,37 @@ trait Write extends StObject {
 }
 object Write {
   
-  @scala.inline
-  def apply(): Write = {
+  inline def apply(): Write = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Write]
   }
   
-  @scala.inline
-  implicit class WriteMutableBuilder[Self <: Write] (val x: Self) extends AnyVal {
+  extension [Self <: Write](x: Self) {
     
-    @scala.inline
-    def setCurrentDocument(value: Precondition): Self = StObject.set(x, "currentDocument", value.asInstanceOf[js.Any])
+    inline def setCurrentDocument(value: Precondition): Self = StObject.set(x, "currentDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentDocumentUndefined: Self = StObject.set(x, "currentDocument", js.undefined)
+    inline def setCurrentDocumentUndefined: Self = StObject.set(x, "currentDocument", js.undefined)
     
-    @scala.inline
-    def setDelete(value: String): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: String): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
+    inline def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
     
-    @scala.inline
-    def setTransform(value: DocumentTransform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    inline def setTransform(value: DocumentTransform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+    inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
-    @scala.inline
-    def setUpdate(value: Document): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: Document): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMask(value: DocumentMask): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: DocumentMask): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
     
-    @scala.inline
-    def setUpdateTransforms(value: js.Array[FieldTransform]): Self = StObject.set(x, "updateTransforms", value.asInstanceOf[js.Any])
+    inline def setUpdateTransforms(value: js.Array[FieldTransform]): Self = StObject.set(x, "updateTransforms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTransformsUndefined: Self = StObject.set(x, "updateTransforms", js.undefined)
+    inline def setUpdateTransformsUndefined: Self = StObject.set(x, "updateTransforms", js.undefined)
     
-    @scala.inline
-    def setUpdateTransformsVarargs(value: FieldTransform*): Self = StObject.set(x, "updateTransforms", js.Array(value :_*))
+    inline def setUpdateTransformsVarargs(value: FieldTransform*): Self = StObject.set(x, "updateTransforms", js.Array(value :_*))
     
-    @scala.inline
-    def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+    inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
   }
 }

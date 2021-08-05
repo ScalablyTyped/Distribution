@@ -9,8 +9,7 @@ trait ScanInput
      with typings.awsSdkClientDynamodbBrowser.typesScanInputMod.ScanInput
 object ScanInput {
   
-  @scala.inline
-  def apply(TableName: String): ScanInput = {
+  inline def apply(TableName: String): ScanInput = {
     val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScanInput]
   }

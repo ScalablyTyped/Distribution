@@ -14,19 +14,15 @@ trait ContainerWaitOptions extends StObject {
 }
 object ContainerWaitOptions {
   
-  @scala.inline
-  def apply(): ContainerWaitOptions = {
+  inline def apply(): ContainerWaitOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContainerWaitOptions]
   }
   
-  @scala.inline
-  implicit class ContainerWaitOptionsMutableBuilder[Self <: ContainerWaitOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerWaitOptions](x: Self) {
     
-    @scala.inline
-    def setCondition(value: `not-running` | `next-exit` | removed): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: `not-running` | `next-exit` | removed): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
   }
 }

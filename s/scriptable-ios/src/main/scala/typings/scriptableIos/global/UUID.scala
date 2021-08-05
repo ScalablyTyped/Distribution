@@ -20,6 +20,5 @@ object UUID {
     * Used for getting the string value of a newly generated UUID.
     * @see https://docs.scriptable.app/uuid/#string
     */
-  @scala.inline
-  def string(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("string")().asInstanceOf[String]
+  inline def string(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("string")().asInstanceOf[String]
 }

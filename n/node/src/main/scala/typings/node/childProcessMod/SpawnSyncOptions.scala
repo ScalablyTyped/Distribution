@@ -22,40 +22,29 @@ trait SpawnSyncOptions
 }
 object SpawnSyncOptions {
   
-  @scala.inline
-  def apply(): SpawnSyncOptions = {
+  inline def apply(): SpawnSyncOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpawnSyncOptions]
   }
   
-  @scala.inline
-  implicit class SpawnSyncOptionsMutableBuilder[Self <: SpawnSyncOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SpawnSyncOptions](x: Self) {
     
-    @scala.inline
-    def setEncoding(value: BufferEncoding | buffer_): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: BufferEncoding | buffer_): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingNull: Self = StObject.set(x, "encoding", null)
+    inline def setEncodingNull: Self = StObject.set(x, "encoding", null)
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    @scala.inline
-    def setInput(value: String | ArrayBufferView): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: String | ArrayBufferView): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    @scala.inline
-    def setKillSignal(value: Signals | Double): Self = StObject.set(x, "killSignal", value.asInstanceOf[js.Any])
+    inline def setKillSignal(value: Signals | Double): Self = StObject.set(x, "killSignal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKillSignalUndefined: Self = StObject.set(x, "killSignal", js.undefined)
+    inline def setKillSignalUndefined: Self = StObject.set(x, "killSignal", js.undefined)
     
-    @scala.inline
-    def setMaxBuffer(value: Double): Self = StObject.set(x, "maxBuffer", value.asInstanceOf[js.Any])
+    inline def setMaxBuffer(value: Double): Self = StObject.set(x, "maxBuffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxBufferUndefined: Self = StObject.set(x, "maxBuffer", js.undefined)
+    inline def setMaxBufferUndefined: Self = StObject.set(x, "maxBuffer", js.undefined)
   }
 }

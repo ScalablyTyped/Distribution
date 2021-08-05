@@ -21,37 +21,27 @@ trait SpeechRecognitionResult extends StObject {
 }
 object SpeechRecognitionResult {
   
-  @scala.inline
-  def apply(alternatives: js.Array[SpeechRecognitionAlternative], final_results: Boolean): SpeechRecognitionResult = {
+  inline def apply(alternatives: js.Array[SpeechRecognitionAlternative], final_results: Boolean): SpeechRecognitionResult = {
     val __obj = js.Dynamic.literal(alternatives = alternatives.asInstanceOf[js.Any], final_results = final_results.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpeechRecognitionResult]
   }
   
-  @scala.inline
-  implicit class SpeechRecognitionResultMutableBuilder[Self <: SpeechRecognitionResult] (val x: Self) extends AnyVal {
+  extension [Self <: SpeechRecognitionResult](x: Self) {
     
-    @scala.inline
-    def setAlternatives(value: js.Array[SpeechRecognitionAlternative]): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
+    inline def setAlternatives(value: js.Array[SpeechRecognitionAlternative]): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternativesVarargs(value: SpeechRecognitionAlternative*): Self = StObject.set(x, "alternatives", js.Array(value :_*))
+    inline def setAlternativesVarargs(value: SpeechRecognitionAlternative*): Self = StObject.set(x, "alternatives", js.Array(value :_*))
     
-    @scala.inline
-    def setFinal_results(value: Boolean): Self = StObject.set(x, "final_results", value.asInstanceOf[js.Any])
+    inline def setFinal_results(value: Boolean): Self = StObject.set(x, "final_results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeywords_result(value: js.Object): Self = StObject.set(x, "keywords_result", value.asInstanceOf[js.Any])
+    inline def setKeywords_result(value: js.Object): Self = StObject.set(x, "keywords_result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeywords_resultUndefined: Self = StObject.set(x, "keywords_result", js.undefined)
+    inline def setKeywords_resultUndefined: Self = StObject.set(x, "keywords_result", js.undefined)
     
-    @scala.inline
-    def setWord_alternatives(value: js.Array[WordAlternativeResults]): Self = StObject.set(x, "word_alternatives", value.asInstanceOf[js.Any])
+    inline def setWord_alternatives(value: js.Array[WordAlternativeResults]): Self = StObject.set(x, "word_alternatives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWord_alternativesUndefined: Self = StObject.set(x, "word_alternatives", js.undefined)
+    inline def setWord_alternativesUndefined: Self = StObject.set(x, "word_alternatives", js.undefined)
     
-    @scala.inline
-    def setWord_alternativesVarargs(value: WordAlternativeResults*): Self = StObject.set(x, "word_alternatives", js.Array(value :_*))
+    inline def setWord_alternativesVarargs(value: WordAlternativeResults*): Self = StObject.set(x, "word_alternatives", js.Array(value :_*))
   }
 }

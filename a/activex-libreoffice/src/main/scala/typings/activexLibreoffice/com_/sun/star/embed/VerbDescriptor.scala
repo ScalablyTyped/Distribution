@@ -29,25 +29,19 @@ trait VerbDescriptor extends StObject {
 }
 object VerbDescriptor {
   
-  @scala.inline
-  def apply(VerbAttributes: Double, VerbFlags: Double, VerbID: Double, VerbName: String): VerbDescriptor = {
+  inline def apply(VerbAttributes: Double, VerbFlags: Double, VerbID: Double, VerbName: String): VerbDescriptor = {
     val __obj = js.Dynamic.literal(VerbAttributes = VerbAttributes.asInstanceOf[js.Any], VerbFlags = VerbFlags.asInstanceOf[js.Any], VerbID = VerbID.asInstanceOf[js.Any], VerbName = VerbName.asInstanceOf[js.Any])
     __obj.asInstanceOf[VerbDescriptor]
   }
   
-  @scala.inline
-  implicit class VerbDescriptorMutableBuilder[Self <: VerbDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: VerbDescriptor](x: Self) {
     
-    @scala.inline
-    def setVerbAttributes(value: Double): Self = StObject.set(x, "VerbAttributes", value.asInstanceOf[js.Any])
+    inline def setVerbAttributes(value: Double): Self = StObject.set(x, "VerbAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerbFlags(value: Double): Self = StObject.set(x, "VerbFlags", value.asInstanceOf[js.Any])
+    inline def setVerbFlags(value: Double): Self = StObject.set(x, "VerbFlags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerbID(value: Double): Self = StObject.set(x, "VerbID", value.asInstanceOf[js.Any])
+    inline def setVerbID(value: Double): Self = StObject.set(x, "VerbID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerbName(value: String): Self = StObject.set(x, "VerbName", value.asInstanceOf[js.Any])
+    inline def setVerbName(value: String): Self = StObject.set(x, "VerbName", value.asInstanceOf[js.Any])
   }
 }

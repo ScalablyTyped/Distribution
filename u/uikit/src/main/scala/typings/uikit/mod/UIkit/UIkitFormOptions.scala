@@ -10,19 +10,15 @@ trait UIkitFormOptions extends StObject {
 }
 object UIkitFormOptions {
   
-  @scala.inline
-  def apply(): UIkitFormOptions = {
+  inline def apply(): UIkitFormOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UIkitFormOptions]
   }
   
-  @scala.inline
-  implicit class UIkitFormOptionsMutableBuilder[Self <: UIkitFormOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UIkitFormOptions](x: Self) {
     
-    @scala.inline
-    def setTarget(value: String | Boolean): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String | Boolean): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

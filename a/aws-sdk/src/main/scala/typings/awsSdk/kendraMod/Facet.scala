@@ -13,19 +13,15 @@ trait Facet extends StObject {
 }
 object Facet {
   
-  @scala.inline
-  def apply(): Facet = {
+  inline def apply(): Facet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Facet]
   }
   
-  @scala.inline
-  implicit class FacetMutableBuilder[Self <: Facet] (val x: Self) extends AnyVal {
+  extension [Self <: Facet](x: Self) {
     
-    @scala.inline
-    def setDocumentAttributeKey(value: DocumentAttributeKey): Self = StObject.set(x, "DocumentAttributeKey", value.asInstanceOf[js.Any])
+    inline def setDocumentAttributeKey(value: DocumentAttributeKey): Self = StObject.set(x, "DocumentAttributeKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentAttributeKeyUndefined: Self = StObject.set(x, "DocumentAttributeKey", js.undefined)
+    inline def setDocumentAttributeKeyUndefined: Self = StObject.set(x, "DocumentAttributeKey", js.undefined)
   }
 }

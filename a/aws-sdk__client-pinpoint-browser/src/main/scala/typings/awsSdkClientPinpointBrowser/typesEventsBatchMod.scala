@@ -26,26 +26,20 @@ object typesEventsBatchMod {
   }
   object EventsBatch {
     
-    @scala.inline
-    def apply(): EventsBatch = {
+    inline def apply(): EventsBatch = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EventsBatch]
     }
     
-    @scala.inline
-    implicit class EventsBatchMutableBuilder[Self <: EventsBatch] (val x: Self) extends AnyVal {
+    extension [Self <: EventsBatch](x: Self) {
       
-      @scala.inline
-      def setEndpoint(value: PublicEndpoint): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: PublicEndpoint): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointUndefined: Self = StObject.set(x, "Endpoint", js.undefined)
+      inline def setEndpointUndefined: Self = StObject.set(x, "Endpoint", js.undefined)
       
-      @scala.inline
-      def setEvents(value: StringDictionary[Event] | (Iterable[js.Tuple2[String, Event]])): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: StringDictionary[Event] | (Iterable[js.Tuple2[String, Event]])): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
+      inline def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
     }
   }
   
@@ -67,26 +61,20 @@ object typesEventsBatchMod {
   }
   object UnmarshalledEventsBatch {
     
-    @scala.inline
-    def apply(): UnmarshalledEventsBatch = {
+    inline def apply(): UnmarshalledEventsBatch = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledEventsBatch]
     }
     
-    @scala.inline
-    implicit class UnmarshalledEventsBatchMutableBuilder[Self <: UnmarshalledEventsBatch] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledEventsBatch](x: Self) {
       
-      @scala.inline
-      def setEndpoint(value: UnmarshalledPublicEndpoint): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
+      inline def setEndpoint(value: UnmarshalledPublicEndpoint): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointUndefined: Self = StObject.set(x, "Endpoint", js.undefined)
+      inline def setEndpointUndefined: Self = StObject.set(x, "Endpoint", js.undefined)
       
-      @scala.inline
-      def setEvents(value: StringDictionary[UnmarshalledEvent]): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: StringDictionary[UnmarshalledEvent]): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
+      inline def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
     }
   }
 }

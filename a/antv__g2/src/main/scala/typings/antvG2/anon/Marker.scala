@@ -20,25 +20,19 @@ trait Marker extends StObject {
 }
 object Marker {
   
-  @scala.inline
-  def apply(fill: String, value: String): Marker = {
+  inline def apply(fill: String, value: String): Marker = {
     val __obj = js.Dynamic.literal(fill = fill.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Marker]
   }
   
-  @scala.inline
-  implicit class MarkerMutableBuilder[Self <: Marker] (val x: Self) extends AnyVal {
+  extension [Self <: Marker](x: Self) {
     
-    @scala.inline
-    def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarker(value: String | js.Function): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String | js.Function): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

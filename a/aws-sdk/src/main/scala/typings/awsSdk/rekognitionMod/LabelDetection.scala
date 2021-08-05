@@ -18,25 +18,19 @@ trait LabelDetection extends StObject {
 }
 object LabelDetection {
   
-  @scala.inline
-  def apply(): LabelDetection = {
+  inline def apply(): LabelDetection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LabelDetection]
   }
   
-  @scala.inline
-  implicit class LabelDetectionMutableBuilder[Self <: LabelDetection] (val x: Self) extends AnyVal {
+  extension [Self <: LabelDetection](x: Self) {
     
-    @scala.inline
-    def setLabel(value: Label): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: Label): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "Label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "Label", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }
 }

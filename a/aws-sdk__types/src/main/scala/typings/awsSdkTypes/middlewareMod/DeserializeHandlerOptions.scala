@@ -14,16 +14,13 @@ trait DeserializeHandlerOptions
 }
 object DeserializeHandlerOptions {
   
-  @scala.inline
-  def apply(): DeserializeHandlerOptions = {
+  inline def apply(): DeserializeHandlerOptions = {
     val __obj = js.Dynamic.literal(step = "deserialize")
     __obj.asInstanceOf[DeserializeHandlerOptions]
   }
   
-  @scala.inline
-  implicit class DeserializeHandlerOptionsMutableBuilder[Self <: DeserializeHandlerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DeserializeHandlerOptions](x: Self) {
     
-    @scala.inline
-    def setStep(value: deserialize): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: deserialize): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
   }
 }

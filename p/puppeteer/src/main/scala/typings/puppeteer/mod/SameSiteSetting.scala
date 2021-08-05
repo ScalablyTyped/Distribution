@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SameSiteSetting extends StObject
 object SameSiteSetting {
   
-  @scala.inline
-  def Lax: typings.puppeteer.puppeteerStrings.Lax = "Lax".asInstanceOf[typings.puppeteer.puppeteerStrings.Lax]
+  inline def Lax: typings.puppeteer.puppeteerStrings.Lax = "Lax".asInstanceOf[typings.puppeteer.puppeteerStrings.Lax]
   
-  @scala.inline
-  def Strict: typings.puppeteer.puppeteerStrings.Strict = "Strict".asInstanceOf[typings.puppeteer.puppeteerStrings.Strict]
+  inline def Strict: typings.puppeteer.puppeteerStrings.Strict = "Strict".asInstanceOf[typings.puppeteer.puppeteerStrings.Strict]
 }

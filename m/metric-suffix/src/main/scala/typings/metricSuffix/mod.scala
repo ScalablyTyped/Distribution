@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(value: Double): String = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(value: Double, precision: Double): String = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(value: Double): String = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(value: Double, precision: Double): String = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("metric-suffix", JSImport.Namespace)
   @js.native

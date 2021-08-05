@@ -40,8 +40,7 @@ trait Config extends StObject {
 }
 object Config {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     controls: Boolean,
     fillAllSpace: Boolean,
     loop: Boolean,
@@ -63,55 +62,38 @@ object Config {
     __obj.asInstanceOf[Config]
   }
   
-  @scala.inline
-  implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+  extension [Self <: Config](x: Self) {
     
-    @scala.inline
-    def setControls(value: Boolean): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+    inline def setControls(value: Boolean): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillAllSpace(value: Boolean): Self = StObject.set(x, "fillAllSpace", value.asInstanceOf[js.Any])
+    inline def setFillAllSpace(value: Boolean): Self = StObject.set(x, "fillAllSpace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+    inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
+    inline def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDuration(value: () => js.Any): Self = StObject.set(x, "onDuration", js.Any.fromFunction0(value))
+    inline def setOnDuration(value: () => js.Any): Self = StObject.set(x, "onDuration", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnEnded(value: () => js.Any): Self = StObject.set(x, "onEnded", js.Any.fromFunction0(value))
+    inline def setOnEnded(value: () => js.Any): Self = StObject.set(x, "onEnded", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnError(value: () => js.Any): Self = StObject.set(x, "onError", js.Any.fromFunction0(value))
+    inline def setOnError(value: () => js.Any): Self = StObject.set(x, "onError", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnFirstEnded(value: () => js.Any): Self = StObject.set(x, "onFirstEnded", js.Any.fromFunction0(value))
+    inline def setOnFirstEnded(value: () => js.Any): Self = StObject.set(x, "onFirstEnded", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnFirstPlay(value: () => js.Any): Self = StObject.set(x, "onFirstPlay", js.Any.fromFunction0(value))
+    inline def setOnFirstPlay(value: () => js.Any): Self = StObject.set(x, "onFirstPlay", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnInit(value: () => js.Any): Self = StObject.set(x, "onInit", js.Any.fromFunction0(value))
+    inline def setOnInit(value: () => js.Any): Self = StObject.set(x, "onInit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnPause(value: () => js.Any): Self = StObject.set(x, "onPause", js.Any.fromFunction0(value))
+    inline def setOnPause(value: () => js.Any): Self = StObject.set(x, "onPause", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnPlay(value: () => js.Any): Self = StObject.set(x, "onPlay", js.Any.fromFunction0(value))
+    inline def setOnPlay(value: () => js.Any): Self = StObject.set(x, "onPlay", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnProgress(value: () => js.Any): Self = StObject.set(x, "onProgress", js.Any.fromFunction0(value))
+    inline def setOnProgress(value: () => js.Any): Self = StObject.set(x, "onProgress", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnReady(value: () => js.Any): Self = StObject.set(x, "onReady", js.Any.fromFunction0(value))
+    inline def setOnReady(value: () => js.Any): Self = StObject.set(x, "onReady", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShowTitle(value: Boolean): Self = StObject.set(x, "showTitle", value.asInstanceOf[js.Any])
+    inline def setShowTitle(value: Boolean): Self = StObject.set(x, "showTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+    inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
   }
 }

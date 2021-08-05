@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "timing_dot_js"
-version := "1.2-dt-20201012Z-4e827c"
+version := "1.2-dt-20201012Z-1c62b4"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -18,28 +18,21 @@ trait Group extends StObject {
 }
 object Group {
   
-  @scala.inline
-  def apply(): Group = {
+  inline def apply(): Group = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Group]
   }
   
-  @scala.inline
-  implicit class GroupMutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
+  extension [Self <: Group](x: Self) {
     
-    @scala.inline
-    def setKeys(value: Keys): Self = StObject.set(x, "Keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: Keys): Self = StObject.set(x, "Keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysUndefined: Self = StObject.set(x, "Keys", js.undefined)
+    inline def setKeysUndefined: Self = StObject.set(x, "Keys", js.undefined)
     
-    @scala.inline
-    def setKeysVarargs(value: Key*): Self = StObject.set(x, "Keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: Key*): Self = StObject.set(x, "Keys", js.Array(value :_*))
     
-    @scala.inline
-    def setMetrics(value: Metrics): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: Metrics): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
+    inline def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
   }
 }

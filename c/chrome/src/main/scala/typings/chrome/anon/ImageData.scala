@@ -11,19 +11,15 @@ trait ImageData extends StObject {
 }
 object ImageData {
   
-  @scala.inline
-  def apply(): ImageData = {
+  inline def apply(): ImageData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageData]
   }
   
-  @scala.inline
-  implicit class ImageDataMutableBuilder[Self <: ImageData] (val x: Self) extends AnyVal {
+  extension [Self <: ImageData](x: Self) {
     
-    @scala.inline
-    def setImageData(value: typings.std.ImageData | StringDictionary[typings.std.ImageData]): Self = StObject.set(x, "imageData", value.asInstanceOf[js.Any])
+    inline def setImageData(value: typings.std.ImageData | StringDictionary[typings.std.ImageData]): Self = StObject.set(x, "imageData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageDataUndefined: Self = StObject.set(x, "imageData", js.undefined)
+    inline def setImageDataUndefined: Self = StObject.set(x, "imageData", js.undefined)
   }
 }

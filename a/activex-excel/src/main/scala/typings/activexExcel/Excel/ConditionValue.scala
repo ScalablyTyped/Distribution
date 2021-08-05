@@ -17,7 +17,7 @@ trait ConditionValue extends StObject {
   
   val Creator: XlCreator = js.native
   
-  @JSName("Excel.ConditionValue_typekey")
+  /* private */ @JSName("Excel.ConditionValue_typekey")
   var ExcelDotConditionValue_typekey: ConditionValue = js.native
   
   def Modify(newtype: XlConditionValueTypes): Unit = js.native

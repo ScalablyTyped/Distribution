@@ -30,55 +30,39 @@ trait WindowOptions
 }
 object WindowOptions {
   
-  @scala.inline
-  def apply(): WindowOptions = {
+  inline def apply(): WindowOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WindowOptions]
   }
   
-  @scala.inline
-  implicit class WindowOptionsMutableBuilder[Self <: WindowOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WindowOptions](x: Self) {
     
-    @scala.inline
-    def setAutoload(value: Boolean): Self = StObject.set(x, "autoload", value.asInstanceOf[js.Any])
+    inline def setAutoload(value: Boolean): Self = StObject.set(x, "autoload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoloadUndefined: Self = StObject.set(x, "autoload", js.undefined)
+    inline def setAutoloadUndefined: Self = StObject.set(x, "autoload", js.undefined)
     
-    @scala.inline
-    def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setHeight(value: js.Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: js.Any): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setLoadMethod(value: String): Self = StObject.set(x, "loadMethod", value.asInstanceOf[js.Any])
+    inline def setLoadMethod(value: String): Self = StObject.set(x, "loadMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadMethodUndefined: Self = StObject.set(x, "loadMethod", js.undefined)
+    inline def setLoadMethodUndefined: Self = StObject.set(x, "loadMethod", js.undefined)
     
-    @scala.inline
-    def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    @scala.inline
-    def setShowAfterLoad(value: Boolean): Self = StObject.set(x, "showAfterLoad", value.asInstanceOf[js.Any])
+    inline def setShowAfterLoad(value: Boolean): Self = StObject.set(x, "showAfterLoad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowAfterLoadUndefined: Self = StObject.set(x, "showAfterLoad", js.undefined)
+    inline def setShowAfterLoadUndefined: Self = StObject.set(x, "showAfterLoad", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

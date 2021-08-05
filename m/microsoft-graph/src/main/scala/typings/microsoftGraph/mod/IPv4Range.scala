@@ -16,25 +16,19 @@ trait IPv4Range
 }
 object IPv4Range {
   
-  @scala.inline
-  def apply(): IPv4Range = {
+  inline def apply(): IPv4Range = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPv4Range]
   }
   
-  @scala.inline
-  implicit class IPv4RangeMutableBuilder[Self <: IPv4Range] (val x: Self) extends AnyVal {
+  extension [Self <: IPv4Range](x: Self) {
     
-    @scala.inline
-    def setLowerAddress(value: String): Self = StObject.set(x, "lowerAddress", value.asInstanceOf[js.Any])
+    inline def setLowerAddress(value: String): Self = StObject.set(x, "lowerAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowerAddressUndefined: Self = StObject.set(x, "lowerAddress", js.undefined)
+    inline def setLowerAddressUndefined: Self = StObject.set(x, "lowerAddress", js.undefined)
     
-    @scala.inline
-    def setUpperAddress(value: String): Self = StObject.set(x, "upperAddress", value.asInstanceOf[js.Any])
+    inline def setUpperAddress(value: String): Self = StObject.set(x, "upperAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpperAddressUndefined: Self = StObject.set(x, "upperAddress", js.undefined)
+    inline def setUpperAddressUndefined: Self = StObject.set(x, "upperAddress", js.undefined)
   }
 }

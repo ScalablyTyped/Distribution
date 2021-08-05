@@ -46,23 +46,18 @@ object mod {
   }
   object DecoderOptions {
     
-    @scala.inline
-    def apply(lengthDecoder: LengthDecoderFunction, maxDataLength: Double, maxLengthLength: Double): DecoderOptions = {
+    inline def apply(lengthDecoder: LengthDecoderFunction, maxDataLength: Double, maxLengthLength: Double): DecoderOptions = {
       val __obj = js.Dynamic.literal(lengthDecoder = lengthDecoder.asInstanceOf[js.Any], maxDataLength = maxDataLength.asInstanceOf[js.Any], maxLengthLength = maxLengthLength.asInstanceOf[js.Any])
       __obj.asInstanceOf[DecoderOptions]
     }
     
-    @scala.inline
-    implicit class DecoderOptionsMutableBuilder[Self <: DecoderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DecoderOptions](x: Self) {
       
-      @scala.inline
-      def setLengthDecoder(value: LengthDecoderFunction): Self = StObject.set(x, "lengthDecoder", value.asInstanceOf[js.Any])
+      inline def setLengthDecoder(value: LengthDecoderFunction): Self = StObject.set(x, "lengthDecoder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDataLength(value: Double): Self = StObject.set(x, "maxDataLength", value.asInstanceOf[js.Any])
+      inline def setMaxDataLength(value: Double): Self = StObject.set(x, "maxDataLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLengthLength(value: Double): Self = StObject.set(x, "maxLengthLength", value.asInstanceOf[js.Any])
+      inline def setMaxLengthLength(value: Double): Self = StObject.set(x, "maxLengthLength", value.asInstanceOf[js.Any])
     }
   }
   

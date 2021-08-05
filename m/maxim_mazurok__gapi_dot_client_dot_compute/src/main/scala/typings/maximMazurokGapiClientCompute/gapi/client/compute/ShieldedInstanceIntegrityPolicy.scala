@@ -11,19 +11,15 @@ trait ShieldedInstanceIntegrityPolicy extends StObject {
 }
 object ShieldedInstanceIntegrityPolicy {
   
-  @scala.inline
-  def apply(): ShieldedInstanceIntegrityPolicy = {
+  inline def apply(): ShieldedInstanceIntegrityPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShieldedInstanceIntegrityPolicy]
   }
   
-  @scala.inline
-  implicit class ShieldedInstanceIntegrityPolicyMutableBuilder[Self <: ShieldedInstanceIntegrityPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: ShieldedInstanceIntegrityPolicy](x: Self) {
     
-    @scala.inline
-    def setUpdateAutoLearnPolicy(value: Boolean): Self = StObject.set(x, "updateAutoLearnPolicy", value.asInstanceOf[js.Any])
+    inline def setUpdateAutoLearnPolicy(value: Boolean): Self = StObject.set(x, "updateAutoLearnPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateAutoLearnPolicyUndefined: Self = StObject.set(x, "updateAutoLearnPolicy", js.undefined)
+    inline def setUpdateAutoLearnPolicyUndefined: Self = StObject.set(x, "updateAutoLearnPolicy", js.undefined)
   }
 }

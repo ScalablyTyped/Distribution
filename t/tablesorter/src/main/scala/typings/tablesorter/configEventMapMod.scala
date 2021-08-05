@@ -13,10 +13,8 @@ object configEventMapMod {
   trait ConfigEventMap extends StObject
   object ConfigEventMap {
     
-    @scala.inline
-    def filterEnd: typings.tablesorter.tablesorterStrings.filterEnd = "filterEnd".asInstanceOf[typings.tablesorter.tablesorterStrings.filterEnd]
+    inline def filterEnd: typings.tablesorter.tablesorterStrings.filterEnd = "filterEnd".asInstanceOf[typings.tablesorter.tablesorterStrings.filterEnd]
     
-    @scala.inline
-    def filterInit: typings.tablesorter.tablesorterStrings.filterInit = "filterInit".asInstanceOf[typings.tablesorter.tablesorterStrings.filterInit]
+    inline def filterInit: typings.tablesorter.tablesorterStrings.filterInit = "filterInit".asInstanceOf[typings.tablesorter.tablesorterStrings.filterInit]
   }
 }

@@ -23,8 +23,7 @@ trait SketchUndoEvent extends StObject {
 }
 object SketchUndoEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     graphics: js.Array[Graphic],
     tool: point | polyline | polygon | rectangle | circle | move | transform | reshape
   ): SketchUndoEvent = {
@@ -33,19 +32,14 @@ object SketchUndoEvent {
     __obj.asInstanceOf[SketchUndoEvent]
   }
   
-  @scala.inline
-  implicit class SketchUndoEventMutableBuilder[Self <: SketchUndoEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SketchUndoEvent](x: Self) {
     
-    @scala.inline
-    def setGraphics(value: js.Array[Graphic]): Self = StObject.set(x, "graphics", value.asInstanceOf[js.Any])
+    inline def setGraphics(value: js.Array[Graphic]): Self = StObject.set(x, "graphics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphicsVarargs(value: Graphic*): Self = StObject.set(x, "graphics", js.Array(value :_*))
+    inline def setGraphicsVarargs(value: Graphic*): Self = StObject.set(x, "graphics", js.Array(value :_*))
     
-    @scala.inline
-    def setTool(value: point | polyline | polygon | rectangle | circle | move | transform | reshape): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
+    inline def setTool(value: point | polyline | polygon | rectangle | circle | move | transform | reshape): Self = StObject.set(x, "tool", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: undo): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: undo): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

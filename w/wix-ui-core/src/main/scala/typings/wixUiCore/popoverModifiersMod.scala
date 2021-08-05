@@ -12,6 +12,5 @@ object popoverModifiersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createModifiers(hasWidthMoveByAppendToShouldAnimateFlipFixedPlacementIsTestEnvMinWidthDynamicWidth: DynamicWidth): Modifiers = ^.asInstanceOf[js.Dynamic].applyDynamic("createModifiers")(hasWidthMoveByAppendToShouldAnimateFlipFixedPlacementIsTestEnvMinWidthDynamicWidth.asInstanceOf[js.Any]).asInstanceOf[Modifiers]
+  inline def createModifiers(hasWidthMoveByAppendToShouldAnimateFlipFixedPlacementIsTestEnvMinWidthDynamicWidth: DynamicWidth): Modifiers = ^.asInstanceOf[js.Dynamic].applyDynamic("createModifiers")(hasWidthMoveByAppendToShouldAnimateFlipFixedPlacementIsTestEnvMinWidthDynamicWidth.asInstanceOf[js.Any]).asInstanceOf[Modifiers]
 }

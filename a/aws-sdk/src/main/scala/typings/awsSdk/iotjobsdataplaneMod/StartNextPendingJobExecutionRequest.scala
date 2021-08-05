@@ -23,28 +23,21 @@ trait StartNextPendingJobExecutionRequest extends StObject {
 }
 object StartNextPendingJobExecutionRequest {
   
-  @scala.inline
-  def apply(thingName: ThingName): StartNextPendingJobExecutionRequest = {
+  inline def apply(thingName: ThingName): StartNextPendingJobExecutionRequest = {
     val __obj = js.Dynamic.literal(thingName = thingName.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartNextPendingJobExecutionRequest]
   }
   
-  @scala.inline
-  implicit class StartNextPendingJobExecutionRequestMutableBuilder[Self <: StartNextPendingJobExecutionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartNextPendingJobExecutionRequest](x: Self) {
     
-    @scala.inline
-    def setStatusDetails(value: DetailsMap): Self = StObject.set(x, "statusDetails", value.asInstanceOf[js.Any])
+    inline def setStatusDetails(value: DetailsMap): Self = StObject.set(x, "statusDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusDetailsUndefined: Self = StObject.set(x, "statusDetails", js.undefined)
+    inline def setStatusDetailsUndefined: Self = StObject.set(x, "statusDetails", js.undefined)
     
-    @scala.inline
-    def setStepTimeoutInMinutes(value: StepTimeoutInMinutes): Self = StObject.set(x, "stepTimeoutInMinutes", value.asInstanceOf[js.Any])
+    inline def setStepTimeoutInMinutes(value: StepTimeoutInMinutes): Self = StObject.set(x, "stepTimeoutInMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepTimeoutInMinutesUndefined: Self = StObject.set(x, "stepTimeoutInMinutes", js.undefined)
+    inline def setStepTimeoutInMinutesUndefined: Self = StObject.set(x, "stepTimeoutInMinutes", js.undefined)
     
-    @scala.inline
-    def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
+    inline def setThingName(value: ThingName): Self = StObject.set(x, "thingName", value.asInstanceOf[js.Any])
   }
 }

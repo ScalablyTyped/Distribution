@@ -23,17 +23,14 @@ object defaultPortLabelWidgetMod {
   }
   object DefaultPortLabelProps {
     
-    @scala.inline
-    def apply(model: DefaultPortModel): DefaultPortLabelProps = {
+    inline def apply(model: DefaultPortModel): DefaultPortLabelProps = {
       val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
       __obj.asInstanceOf[DefaultPortLabelProps]
     }
     
-    @scala.inline
-    implicit class DefaultPortLabelPropsMutableBuilder[Self <: DefaultPortLabelProps] (val x: Self) extends AnyVal {
+    extension [Self <: DefaultPortLabelProps](x: Self) {
       
-      @scala.inline
-      def setModel(value: DefaultPortModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: DefaultPortModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     }
   }
   

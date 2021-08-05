@@ -13,19 +13,15 @@ trait OmaSettingBoolean
 }
 object OmaSettingBoolean {
   
-  @scala.inline
-  def apply(): OmaSettingBoolean = {
+  inline def apply(): OmaSettingBoolean = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OmaSettingBoolean]
   }
   
-  @scala.inline
-  implicit class OmaSettingBooleanMutableBuilder[Self <: OmaSettingBoolean] (val x: Self) extends AnyVal {
+  extension [Self <: OmaSettingBoolean](x: Self) {
     
-    @scala.inline
-    def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

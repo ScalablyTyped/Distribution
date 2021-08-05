@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SocketListenOptions extends StObject
 object SocketListenOptions {
   
-  @scala.inline
-  def TcpListenOptions(): typings.fridaGum.TcpListenOptions = {
+  inline def TcpListenOptions(): typings.fridaGum.TcpListenOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[typings.fridaGum.TcpListenOptions]
   }
   
-  @scala.inline
-  def UnixListenOptions(path: String): typings.fridaGum.UnixListenOptions = {
+  inline def UnixListenOptions(path: String): typings.fridaGum.UnixListenOptions = {
     val __obj = js.Dynamic.literal(family = "unix", path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fridaGum.UnixListenOptions]
   }

@@ -20,13 +20,12 @@ trait AutoTextEntries extends StObject {
   
   val Parent: js.Any
   
-  @JSName("Word.AutoTextEntries_typekey")
+  /* private */ @JSName("Word.AutoTextEntries_typekey")
   var WordDotAutoTextEntries_typekey: AutoTextEntries
 }
 object AutoTextEntries {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: (String, Range) => AutoTextEntry,
     AppendToSpike: Range => AutoTextEntry,
     Application: Application,
@@ -41,31 +40,22 @@ object AutoTextEntries {
     __obj.asInstanceOf[AutoTextEntries]
   }
   
-  @scala.inline
-  implicit class AutoTextEntriesMutableBuilder[Self <: AutoTextEntries] (val x: Self) extends AnyVal {
+  extension [Self <: AutoTextEntries](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (String, Range) => AutoTextEntry): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (String, Range) => AutoTextEntry): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAppendToSpike(value: Range => AutoTextEntry): Self = StObject.set(x, "AppendToSpike", js.Any.fromFunction1(value))
+    inline def setAppendToSpike(value: Range => AutoTextEntry): Self = StObject.set(x, "AppendToSpike", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: js.Any => AutoTextEntry): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: js.Any => AutoTextEntry): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotAutoTextEntries_typekey(value: AutoTextEntries): Self = StObject.set(x, "Word.AutoTextEntries_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotAutoTextEntries_typekey(value: AutoTextEntries): Self = StObject.set(x, "Word.AutoTextEntries_typekey", value.asInstanceOf[js.Any])
   }
 }

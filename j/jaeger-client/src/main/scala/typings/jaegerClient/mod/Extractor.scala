@@ -11,16 +11,13 @@ trait Extractor extends StObject {
 }
 object Extractor {
   
-  @scala.inline
-  def apply(extract: js.Any => SpanContext | Null): Extractor = {
+  inline def apply(extract: js.Any => SpanContext | Null): Extractor = {
     val __obj = js.Dynamic.literal(extract = js.Any.fromFunction1(extract))
     __obj.asInstanceOf[Extractor]
   }
   
-  @scala.inline
-  implicit class ExtractorMutableBuilder[Self <: Extractor] (val x: Self) extends AnyVal {
+  extension [Self <: Extractor](x: Self) {
     
-    @scala.inline
-    def setExtract(value: js.Any => SpanContext | Null): Self = StObject.set(x, "extract", js.Any.fromFunction1(value))
+    inline def setExtract(value: js.Any => SpanContext | Null): Self = StObject.set(x, "extract", js.Any.fromFunction1(value))
   }
 }

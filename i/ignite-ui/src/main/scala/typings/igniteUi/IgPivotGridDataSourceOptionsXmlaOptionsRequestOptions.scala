@@ -26,25 +26,19 @@ trait IgPivotGridDataSourceOptionsXmlaOptionsRequestOptions
 }
 object IgPivotGridDataSourceOptionsXmlaOptionsRequestOptions {
   
-  @scala.inline
-  def apply(): IgPivotGridDataSourceOptionsXmlaOptionsRequestOptions = {
+  inline def apply(): IgPivotGridDataSourceOptionsXmlaOptionsRequestOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgPivotGridDataSourceOptionsXmlaOptionsRequestOptions]
   }
   
-  @scala.inline
-  implicit class IgPivotGridDataSourceOptionsXmlaOptionsRequestOptionsMutableBuilder[Self <: IgPivotGridDataSourceOptionsXmlaOptionsRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IgPivotGridDataSourceOptionsXmlaOptionsRequestOptions](x: Self) {
     
-    @scala.inline
-    def setBeforeSend(value: js.Function): Self = StObject.set(x, "beforeSend", value.asInstanceOf[js.Any])
+    inline def setBeforeSend(value: js.Function): Self = StObject.set(x, "beforeSend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
+    inline def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
     
-    @scala.inline
-    def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+    inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
+    inline def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
   }
 }

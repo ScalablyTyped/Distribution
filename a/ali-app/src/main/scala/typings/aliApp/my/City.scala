@@ -18,25 +18,19 @@ trait City extends StObject {
 }
 object City {
   
-  @scala.inline
-  def apply(adCode: String, city: String): City = {
+  inline def apply(adCode: String, city: String): City = {
     val __obj = js.Dynamic.literal(adCode = adCode.asInstanceOf[js.Any], city = city.asInstanceOf[js.Any])
     __obj.asInstanceOf[City]
   }
   
-  @scala.inline
-  implicit class CityMutableBuilder[Self <: City] (val x: Self) extends AnyVal {
+  extension [Self <: City](x: Self) {
     
-    @scala.inline
-    def setAdCode(value: String): Self = StObject.set(x, "adCode", value.asInstanceOf[js.Any])
+    inline def setAdCode(value: String): Self = StObject.set(x, "adCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+    inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpell(value: String): Self = StObject.set(x, "spell", value.asInstanceOf[js.Any])
+    inline def setSpell(value: String): Self = StObject.set(x, "spell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpellUndefined: Self = StObject.set(x, "spell", js.undefined)
+    inline def setSpellUndefined: Self = StObject.set(x, "spell", js.undefined)
   }
 }

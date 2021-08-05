@@ -16,32 +16,24 @@ trait CreateItemIncluded extends StObject {
 }
 object CreateItemIncluded {
   
-  @scala.inline
-  def apply(id: String, `type`: String): CreateItemIncluded = {
+  inline def apply(id: String, `type`: String): CreateItemIncluded = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateItemIncluded]
   }
   
-  @scala.inline
-  implicit class CreateItemIncludedMutableBuilder[Self <: CreateItemIncluded] (val x: Self) extends AnyVal {
+  extension [Self <: CreateItemIncluded](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: CreateStorageDataAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: CreateStorageDataAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationships(value: CreateItemRelationships): Self = StObject.set(x, "relationships", value.asInstanceOf[js.Any])
+    inline def setRelationships(value: CreateItemRelationships): Self = StObject.set(x, "relationships", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationshipsUndefined: Self = StObject.set(x, "relationships", js.undefined)
+    inline def setRelationshipsUndefined: Self = StObject.set(x, "relationships", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

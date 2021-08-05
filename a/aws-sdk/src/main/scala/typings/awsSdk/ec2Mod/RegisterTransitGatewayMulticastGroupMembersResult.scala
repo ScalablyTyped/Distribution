@@ -13,19 +13,15 @@ trait RegisterTransitGatewayMulticastGroupMembersResult extends StObject {
 }
 object RegisterTransitGatewayMulticastGroupMembersResult {
   
-  @scala.inline
-  def apply(): RegisterTransitGatewayMulticastGroupMembersResult = {
+  inline def apply(): RegisterTransitGatewayMulticastGroupMembersResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RegisterTransitGatewayMulticastGroupMembersResult]
   }
   
-  @scala.inline
-  implicit class RegisterTransitGatewayMulticastGroupMembersResultMutableBuilder[Self <: RegisterTransitGatewayMulticastGroupMembersResult] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterTransitGatewayMulticastGroupMembersResult](x: Self) {
     
-    @scala.inline
-    def setRegisteredMulticastGroupMembers(value: TransitGatewayMulticastRegisteredGroupMembers): Self = StObject.set(x, "RegisteredMulticastGroupMembers", value.asInstanceOf[js.Any])
+    inline def setRegisteredMulticastGroupMembers(value: TransitGatewayMulticastRegisteredGroupMembers): Self = StObject.set(x, "RegisteredMulticastGroupMembers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegisteredMulticastGroupMembersUndefined: Self = StObject.set(x, "RegisteredMulticastGroupMembers", js.undefined)
+    inline def setRegisteredMulticastGroupMembersUndefined: Self = StObject.set(x, "RegisteredMulticastGroupMembers", js.undefined)
   }
 }

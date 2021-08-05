@@ -15,26 +15,20 @@ object dynamodb {
   }
   object GetTableServerSideEncryption {
     
-    @scala.inline
-    def apply(): GetTableServerSideEncryption = {
+    inline def apply(): GetTableServerSideEncryption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetTableServerSideEncryption]
     }
     
-    @scala.inline
-    implicit class GetTableServerSideEncryptionMutableBuilder[Self <: GetTableServerSideEncryption] (val x: Self) extends AnyVal {
+    extension [Self <: GetTableServerSideEncryption](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setKmsKeyArn(value: String): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
+      inline def setKmsKeyArn(value: String): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
+      inline def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
     }
   }
   
@@ -47,17 +41,14 @@ object dynamodb {
   }
   object GlobalTableReplica {
     
-    @scala.inline
-    def apply(regionName: Input[String]): GlobalTableReplica = {
+    inline def apply(regionName: Input[String]): GlobalTableReplica = {
       val __obj = js.Dynamic.literal(regionName = regionName.asInstanceOf[js.Any])
       __obj.asInstanceOf[GlobalTableReplica]
     }
     
-    @scala.inline
-    implicit class GlobalTableReplicaMutableBuilder[Self <: GlobalTableReplica] (val x: Self) extends AnyVal {
+    extension [Self <: GlobalTableReplica](x: Self) {
       
-      @scala.inline
-      def setRegionName(value: Input[String]): Self = StObject.set(x, "regionName", value.asInstanceOf[js.Any])
+      inline def setRegionName(value: Input[String]): Self = StObject.set(x, "regionName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -75,21 +66,17 @@ object dynamodb {
   }
   object TableAttribute {
     
-    @scala.inline
-    def apply(name: Input[String], `type`: Input[String]): TableAttribute = {
+    inline def apply(name: Input[String], `type`: Input[String]): TableAttribute = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[TableAttribute]
     }
     
-    @scala.inline
-    implicit class TableAttributeMutableBuilder[Self <: TableAttribute] (val x: Self) extends AnyVal {
+    extension [Self <: TableAttribute](x: Self) {
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -139,50 +126,36 @@ object dynamodb {
   }
   object TableGlobalSecondaryIndex {
     
-    @scala.inline
-    def apply(hashKey: Input[String], name: Input[String], projectionType: Input[String]): TableGlobalSecondaryIndex = {
+    inline def apply(hashKey: Input[String], name: Input[String], projectionType: Input[String]): TableGlobalSecondaryIndex = {
       val __obj = js.Dynamic.literal(hashKey = hashKey.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], projectionType = projectionType.asInstanceOf[js.Any])
       __obj.asInstanceOf[TableGlobalSecondaryIndex]
     }
     
-    @scala.inline
-    implicit class TableGlobalSecondaryIndexMutableBuilder[Self <: TableGlobalSecondaryIndex] (val x: Self) extends AnyVal {
+    extension [Self <: TableGlobalSecondaryIndex](x: Self) {
       
-      @scala.inline
-      def setHashKey(value: Input[String]): Self = StObject.set(x, "hashKey", value.asInstanceOf[js.Any])
+      inline def setHashKey(value: Input[String]): Self = StObject.set(x, "hashKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonKeyAttributes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "nonKeyAttributes", value.asInstanceOf[js.Any])
+      inline def setNonKeyAttributes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "nonKeyAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonKeyAttributesUndefined: Self = StObject.set(x, "nonKeyAttributes", js.undefined)
+      inline def setNonKeyAttributesUndefined: Self = StObject.set(x, "nonKeyAttributes", js.undefined)
       
-      @scala.inline
-      def setNonKeyAttributesVarargs(value: Input[String]*): Self = StObject.set(x, "nonKeyAttributes", js.Array(value :_*))
+      inline def setNonKeyAttributesVarargs(value: Input[String]*): Self = StObject.set(x, "nonKeyAttributes", js.Array(value :_*))
       
-      @scala.inline
-      def setProjectionType(value: Input[String]): Self = StObject.set(x, "projectionType", value.asInstanceOf[js.Any])
+      inline def setProjectionType(value: Input[String]): Self = StObject.set(x, "projectionType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeKey(value: Input[String]): Self = StObject.set(x, "rangeKey", value.asInstanceOf[js.Any])
+      inline def setRangeKey(value: Input[String]): Self = StObject.set(x, "rangeKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeKeyUndefined: Self = StObject.set(x, "rangeKey", js.undefined)
+      inline def setRangeKeyUndefined: Self = StObject.set(x, "rangeKey", js.undefined)
       
-      @scala.inline
-      def setReadCapacity(value: Input[Double]): Self = StObject.set(x, "readCapacity", value.asInstanceOf[js.Any])
+      inline def setReadCapacity(value: Input[Double]): Self = StObject.set(x, "readCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadCapacityUndefined: Self = StObject.set(x, "readCapacity", js.undefined)
+      inline def setReadCapacityUndefined: Self = StObject.set(x, "readCapacity", js.undefined)
       
-      @scala.inline
-      def setWriteCapacity(value: Input[Double]): Self = StObject.set(x, "writeCapacity", value.asInstanceOf[js.Any])
+      inline def setWriteCapacity(value: Input[Double]): Self = StObject.set(x, "writeCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteCapacityUndefined: Self = StObject.set(x, "writeCapacity", js.undefined)
+      inline def setWriteCapacityUndefined: Self = StObject.set(x, "writeCapacity", js.undefined)
     }
   }
   
@@ -216,32 +189,24 @@ object dynamodb {
   }
   object TableLocalSecondaryIndex {
     
-    @scala.inline
-    def apply(name: Input[String], projectionType: Input[String], rangeKey: Input[String]): TableLocalSecondaryIndex = {
+    inline def apply(name: Input[String], projectionType: Input[String], rangeKey: Input[String]): TableLocalSecondaryIndex = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], projectionType = projectionType.asInstanceOf[js.Any], rangeKey = rangeKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[TableLocalSecondaryIndex]
     }
     
-    @scala.inline
-    implicit class TableLocalSecondaryIndexMutableBuilder[Self <: TableLocalSecondaryIndex] (val x: Self) extends AnyVal {
+    extension [Self <: TableLocalSecondaryIndex](x: Self) {
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonKeyAttributes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "nonKeyAttributes", value.asInstanceOf[js.Any])
+      inline def setNonKeyAttributes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "nonKeyAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonKeyAttributesUndefined: Self = StObject.set(x, "nonKeyAttributes", js.undefined)
+      inline def setNonKeyAttributesUndefined: Self = StObject.set(x, "nonKeyAttributes", js.undefined)
       
-      @scala.inline
-      def setNonKeyAttributesVarargs(value: Input[String]*): Self = StObject.set(x, "nonKeyAttributes", js.Array(value :_*))
+      inline def setNonKeyAttributesVarargs(value: Input[String]*): Self = StObject.set(x, "nonKeyAttributes", js.Array(value :_*))
       
-      @scala.inline
-      def setProjectionType(value: Input[String]): Self = StObject.set(x, "projectionType", value.asInstanceOf[js.Any])
+      inline def setProjectionType(value: Input[String]): Self = StObject.set(x, "projectionType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeKey(value: Input[String]): Self = StObject.set(x, "rangeKey", value.asInstanceOf[js.Any])
+      inline def setRangeKey(value: Input[String]): Self = StObject.set(x, "rangeKey", value.asInstanceOf[js.Any])
     }
   }
   
@@ -254,17 +219,14 @@ object dynamodb {
   }
   object TablePointInTimeRecovery {
     
-    @scala.inline
-    def apply(enabled: Input[Boolean]): TablePointInTimeRecovery = {
+    inline def apply(enabled: Input[Boolean]): TablePointInTimeRecovery = {
       val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[TablePointInTimeRecovery]
     }
     
-    @scala.inline
-    implicit class TablePointInTimeRecoveryMutableBuilder[Self <: TablePointInTimeRecovery] (val x: Self) extends AnyVal {
+    extension [Self <: TablePointInTimeRecovery](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     }
   }
   
@@ -277,17 +239,14 @@ object dynamodb {
   }
   object TableReplica {
     
-    @scala.inline
-    def apply(regionName: Input[String]): TableReplica = {
+    inline def apply(regionName: Input[String]): TableReplica = {
       val __obj = js.Dynamic.literal(regionName = regionName.asInstanceOf[js.Any])
       __obj.asInstanceOf[TableReplica]
     }
     
-    @scala.inline
-    implicit class TableReplicaMutableBuilder[Self <: TableReplica] (val x: Self) extends AnyVal {
+    extension [Self <: TableReplica](x: Self) {
       
-      @scala.inline
-      def setRegionName(value: Input[String]): Self = StObject.set(x, "regionName", value.asInstanceOf[js.Any])
+      inline def setRegionName(value: Input[String]): Self = StObject.set(x, "regionName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -306,23 +265,18 @@ object dynamodb {
   }
   object TableServerSideEncryption {
     
-    @scala.inline
-    def apply(enabled: Input[Boolean]): TableServerSideEncryption = {
+    inline def apply(enabled: Input[Boolean]): TableServerSideEncryption = {
       val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
       __obj.asInstanceOf[TableServerSideEncryption]
     }
     
-    @scala.inline
-    implicit class TableServerSideEncryptionMutableBuilder[Self <: TableServerSideEncryption] (val x: Self) extends AnyVal {
+    extension [Self <: TableServerSideEncryption](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyArn(value: Input[String]): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
+      inline def setKmsKeyArn(value: Input[String]): Self = StObject.set(x, "kmsKeyArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
+      inline def setKmsKeyArnUndefined: Self = StObject.set(x, "kmsKeyArn", js.undefined)
     }
   }
   
@@ -340,23 +294,18 @@ object dynamodb {
   }
   object TableTtl {
     
-    @scala.inline
-    def apply(attributeName: Input[String]): TableTtl = {
+    inline def apply(attributeName: Input[String]): TableTtl = {
       val __obj = js.Dynamic.literal(attributeName = attributeName.asInstanceOf[js.Any])
       __obj.asInstanceOf[TableTtl]
     }
     
-    @scala.inline
-    implicit class TableTtlMutableBuilder[Self <: TableTtl] (val x: Self) extends AnyVal {
+    extension [Self <: TableTtl](x: Self) {
       
-      @scala.inline
-      def setAttributeName(value: Input[String]): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
+      inline def setAttributeName(value: Input[String]): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Input[Boolean]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     }
   }
 }

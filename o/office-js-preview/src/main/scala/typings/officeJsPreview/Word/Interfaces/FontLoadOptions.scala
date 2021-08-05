@@ -109,85 +109,59 @@ trait FontLoadOptions extends StObject {
 }
 object FontLoadOptions {
   
-  @scala.inline
-  def apply(): FontLoadOptions = {
+  inline def apply(): FontLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FontLoadOptions]
   }
   
-  @scala.inline
-  implicit class FontLoadOptionsMutableBuilder[Self <: FontLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FontLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
+    inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
+    inline def setBoldUndefined: Self = StObject.set(x, "bold", js.undefined)
     
-    @scala.inline
-    def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setDoubleStrikeThrough(value: Boolean): Self = StObject.set(x, "doubleStrikeThrough", value.asInstanceOf[js.Any])
+    inline def setDoubleStrikeThrough(value: Boolean): Self = StObject.set(x, "doubleStrikeThrough", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoubleStrikeThroughUndefined: Self = StObject.set(x, "doubleStrikeThrough", js.undefined)
+    inline def setDoubleStrikeThroughUndefined: Self = StObject.set(x, "doubleStrikeThrough", js.undefined)
     
-    @scala.inline
-    def setHighlightColor(value: Boolean): Self = StObject.set(x, "highlightColor", value.asInstanceOf[js.Any])
+    inline def setHighlightColor(value: Boolean): Self = StObject.set(x, "highlightColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightColorUndefined: Self = StObject.set(x, "highlightColor", js.undefined)
+    inline def setHighlightColorUndefined: Self = StObject.set(x, "highlightColor", js.undefined)
     
-    @scala.inline
-    def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
+    inline def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
+    inline def setItalicUndefined: Self = StObject.set(x, "italic", js.undefined)
     
-    @scala.inline
-    def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSize(value: Boolean): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Boolean): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setStrikeThrough(value: Boolean): Self = StObject.set(x, "strikeThrough", value.asInstanceOf[js.Any])
+    inline def setStrikeThrough(value: Boolean): Self = StObject.set(x, "strikeThrough", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrikeThroughUndefined: Self = StObject.set(x, "strikeThrough", js.undefined)
+    inline def setStrikeThroughUndefined: Self = StObject.set(x, "strikeThrough", js.undefined)
     
-    @scala.inline
-    def setSubscript(value: Boolean): Self = StObject.set(x, "subscript", value.asInstanceOf[js.Any])
+    inline def setSubscript(value: Boolean): Self = StObject.set(x, "subscript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptUndefined: Self = StObject.set(x, "subscript", js.undefined)
+    inline def setSubscriptUndefined: Self = StObject.set(x, "subscript", js.undefined)
     
-    @scala.inline
-    def setSuperscript(value: Boolean): Self = StObject.set(x, "superscript", value.asInstanceOf[js.Any])
+    inline def setSuperscript(value: Boolean): Self = StObject.set(x, "superscript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuperscriptUndefined: Self = StObject.set(x, "superscript", js.undefined)
+    inline def setSuperscriptUndefined: Self = StObject.set(x, "superscript", js.undefined)
     
-    @scala.inline
-    def setUnderline(value: Boolean): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
+    inline def setUnderline(value: Boolean): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
+    inline def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
   }
 }

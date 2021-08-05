@@ -12,24 +12,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InterfaceDeclarationKind extends StObject
 object InterfaceDeclarationKind {
   
-  @scala.inline
-  def DeclareClass(body: ObjectTypeAnnotationKind, `extends`: js.Array[InterfaceExtendsKind], id: IdentifierKind): typings.astTypes.namedTypesMod.namedTypes.DeclareClass = {
+  inline def DeclareClass(body: ObjectTypeAnnotationKind, `extends`: js.Array[InterfaceExtendsKind], id: IdentifierKind): typings.astTypes.namedTypesMod.namedTypes.DeclareClass = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("DeclareClass")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.DeclareClass]
   }
   
-  @scala.inline
-  def DeclareInterface(body: ObjectTypeAnnotationKind, `extends`: js.Array[InterfaceExtendsKind], id: IdentifierKind): typings.astTypes.namedTypesMod.namedTypes.DeclareInterface = {
+  inline def DeclareInterface(body: ObjectTypeAnnotationKind, `extends`: js.Array[InterfaceExtendsKind], id: IdentifierKind): typings.astTypes.namedTypesMod.namedTypes.DeclareInterface = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("DeclareInterface")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.DeclareInterface]
   }
   
-  @scala.inline
-  def InterfaceDeclaration(body: ObjectTypeAnnotationKind, `extends`: js.Array[InterfaceExtendsKind], id: IdentifierKind): typings.astTypes.namedTypesMod.namedTypes.InterfaceDeclaration = {
+  inline def InterfaceDeclaration(body: ObjectTypeAnnotationKind, `extends`: js.Array[InterfaceExtendsKind], id: IdentifierKind): typings.astTypes.namedTypesMod.namedTypes.InterfaceDeclaration = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("extends")(`extends`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("InterfaceDeclaration")

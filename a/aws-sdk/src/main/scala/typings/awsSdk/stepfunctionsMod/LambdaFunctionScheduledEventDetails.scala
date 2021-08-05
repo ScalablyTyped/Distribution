@@ -28,34 +28,25 @@ trait LambdaFunctionScheduledEventDetails extends StObject {
 }
 object LambdaFunctionScheduledEventDetails {
   
-  @scala.inline
-  def apply(resource: Arn): LambdaFunctionScheduledEventDetails = {
+  inline def apply(resource: Arn): LambdaFunctionScheduledEventDetails = {
     val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[LambdaFunctionScheduledEventDetails]
   }
   
-  @scala.inline
-  implicit class LambdaFunctionScheduledEventDetailsMutableBuilder[Self <: LambdaFunctionScheduledEventDetails] (val x: Self) extends AnyVal {
+  extension [Self <: LambdaFunctionScheduledEventDetails](x: Self) {
     
-    @scala.inline
-    def setInput(value: SensitiveData): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+    inline def setInput(value: SensitiveData): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputDetails(value: HistoryEventExecutionDataDetails): Self = StObject.set(x, "inputDetails", value.asInstanceOf[js.Any])
+    inline def setInputDetails(value: HistoryEventExecutionDataDetails): Self = StObject.set(x, "inputDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputDetailsUndefined: Self = StObject.set(x, "inputDetails", js.undefined)
+    inline def setInputDetailsUndefined: Self = StObject.set(x, "inputDetails", js.undefined)
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
     
-    @scala.inline
-    def setResource(value: Arn): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Arn): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutInSeconds(value: TimeoutInSeconds): Self = StObject.set(x, "timeoutInSeconds", value.asInstanceOf[js.Any])
+    inline def setTimeoutInSeconds(value: TimeoutInSeconds): Self = StObject.set(x, "timeoutInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutInSecondsUndefined: Self = StObject.set(x, "timeoutInSeconds", js.undefined)
+    inline def setTimeoutInSecondsUndefined: Self = StObject.set(x, "timeoutInSeconds", js.undefined)
   }
 }

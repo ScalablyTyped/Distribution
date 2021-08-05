@@ -39,8 +39,7 @@ trait TextShape
 }
 object TextShape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CornerRadius: Double,
     FillBackground: Boolean,
     FillBitmap: XBitmap,
@@ -140,10 +139,8 @@ object TextShape {
     __obj.asInstanceOf[TextShape]
   }
   
-  @scala.inline
-  implicit class TextShapeMutableBuilder[Self <: TextShape] (val x: Self) extends AnyVal {
+  extension [Self <: TextShape](x: Self) {
     
-    @scala.inline
-    def setCornerRadius(value: Double): Self = StObject.set(x, "CornerRadius", value.asInstanceOf[js.Any])
+    inline def setCornerRadius(value: Double): Self = StObject.set(x, "CornerRadius", value.asInstanceOf[js.Any])
   }
 }

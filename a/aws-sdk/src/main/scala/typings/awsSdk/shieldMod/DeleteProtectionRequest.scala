@@ -13,16 +13,13 @@ trait DeleteProtectionRequest extends StObject {
 }
 object DeleteProtectionRequest {
   
-  @scala.inline
-  def apply(ProtectionId: ProtectionId): DeleteProtectionRequest = {
+  inline def apply(ProtectionId: ProtectionId): DeleteProtectionRequest = {
     val __obj = js.Dynamic.literal(ProtectionId = ProtectionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteProtectionRequest]
   }
   
-  @scala.inline
-  implicit class DeleteProtectionRequestMutableBuilder[Self <: DeleteProtectionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteProtectionRequest](x: Self) {
     
-    @scala.inline
-    def setProtectionId(value: ProtectionId): Self = StObject.set(x, "ProtectionId", value.asInstanceOf[js.Any])
+    inline def setProtectionId(value: ProtectionId): Self = StObject.set(x, "ProtectionId", value.asInstanceOf[js.Any])
   }
 }

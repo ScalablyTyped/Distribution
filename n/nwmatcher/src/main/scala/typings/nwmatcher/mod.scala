@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(global: Document): Matcher = ^.asInstanceOf[js.Dynamic].apply(global.asInstanceOf[js.Any]).asInstanceOf[Matcher]
+  inline def apply(global: Document): Matcher = ^.asInstanceOf[js.Dynamic].apply(global.asInstanceOf[js.Any]).asInstanceOf[Matcher]
   
   @JSImport("nwmatcher", JSImport.Namespace)
   @js.native

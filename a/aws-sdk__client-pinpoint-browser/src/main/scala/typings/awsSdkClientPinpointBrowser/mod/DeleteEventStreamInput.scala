@@ -9,8 +9,7 @@ trait DeleteEventStreamInput
      with typings.awsSdkClientPinpointBrowser.typesDeleteEventStreamInputMod.DeleteEventStreamInput
 object DeleteEventStreamInput {
   
-  @scala.inline
-  def apply(ApplicationId: String): DeleteEventStreamInput = {
+  inline def apply(ApplicationId: String): DeleteEventStreamInput = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteEventStreamInput]
   }

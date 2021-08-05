@@ -28,31 +28,23 @@ trait CreateRobotApplicationRequest extends StObject {
 }
 object CreateRobotApplicationRequest {
   
-  @scala.inline
-  def apply(name: Name, robotSoftwareSuite: RobotSoftwareSuite, sources: SourceConfigs): CreateRobotApplicationRequest = {
+  inline def apply(name: Name, robotSoftwareSuite: RobotSoftwareSuite, sources: SourceConfigs): CreateRobotApplicationRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], robotSoftwareSuite = robotSoftwareSuite.asInstanceOf[js.Any], sources = sources.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRobotApplicationRequest]
   }
   
-  @scala.inline
-  implicit class CreateRobotApplicationRequestMutableBuilder[Self <: CreateRobotApplicationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateRobotApplicationRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRobotSoftwareSuite(value: RobotSoftwareSuite): Self = StObject.set(x, "robotSoftwareSuite", value.asInstanceOf[js.Any])
+    inline def setRobotSoftwareSuite(value: RobotSoftwareSuite): Self = StObject.set(x, "robotSoftwareSuite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSources(value: SourceConfigs): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+    inline def setSources(value: SourceConfigs): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcesVarargs(value: SourceConfig*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: SourceConfig*): Self = StObject.set(x, "sources", js.Array(value :_*))
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

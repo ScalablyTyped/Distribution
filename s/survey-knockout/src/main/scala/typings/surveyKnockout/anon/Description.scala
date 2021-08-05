@@ -14,22 +14,17 @@ trait Description extends StObject {
 }
 object Description {
   
-  @scala.inline
-  def apply(description: String, root: String, title: String): Description = {
+  inline def apply(description: String, root: String, title: String): Description = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Description]
   }
   
-  @scala.inline
-  implicit class DescriptionMutableBuilder[Self <: Description] (val x: Self) extends AnyVal {
+  extension [Self <: Description](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

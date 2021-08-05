@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object importMod {
   
-  @scala.inline
-  def apply(clientOptions: ClientOptions): js.Function4[
+  inline def apply(clientOptions: ClientOptions): js.Function4[
     /* name */ js.Any, 
     /* pem */ js.Any, 
     /* password */ js.Any, 

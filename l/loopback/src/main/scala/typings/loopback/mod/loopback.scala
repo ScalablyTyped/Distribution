@@ -81,8 +81,7 @@ object loopback {
     * @header loopback.configureModel(ModelCtor, config
     */
   /* static member */
-  @scala.inline
-  def configureModel(ModelCtor: Model, config: Relations): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("configureModel")(ModelCtor.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def configureModel(ModelCtor: Model, config: Relations): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("configureModel")(ModelCtor.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Create a data source with passing the provided options to the connector
@@ -93,8 +92,7 @@ object loopback {
     * See the relevant connector documentation
     */
   /* static member */
-  @scala.inline
-  def createDataSource(name: String, options: Connector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createDataSource")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def createDataSource(name: String, options: Connector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createDataSource")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Create a named vanilla JavaScript class constructor with an attached
@@ -151,8 +149,7 @@ object loopback {
     * @header loopback.createMode
     */
   /* static member */
-  @scala.inline
-  def createModel(name: String, properties: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createModel")(name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def createModel(name: String, properties: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createModel")(name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Look up a model class by name from all models created by
@@ -162,8 +159,7 @@ object loopback {
     * @header loopback.findModel(modelName
     */
   /* static member */
-  @scala.inline
-  def findModel(modelName: String): Model = ^.asInstanceOf[js.Dynamic].applyDynamic("findModel")(modelName.asInstanceOf[js.Any]).asInstanceOf[Model]
+  inline def findModel(modelName: String): Model = ^.asInstanceOf[js.Dynamic].applyDynamic("findModel")(modelName.asInstanceOf[js.Any]).asInstanceOf[Model]
   
   /**
     * Look up a model class by name from all models created by
@@ -173,8 +169,7 @@ object loopback {
     * @header loopback.getModel(modelName
     */
   /* static member */
-  @scala.inline
-  def getModel(modelName: String): Model = ^.asInstanceOf[js.Dynamic].applyDynamic("getModel")(modelName.asInstanceOf[js.Any]).asInstanceOf[Model]
+  inline def getModel(modelName: String): Model = ^.asInstanceOf[js.Dynamic].applyDynamic("getModel")(modelName.asInstanceOf[js.Any]).asInstanceOf[Model]
   
   /**
     * Look up a model class by the base model class.
@@ -185,8 +180,7 @@ object loopback {
     * @header loopback.getModelByType(modelType
     */
   /* static member */
-  @scala.inline
-  def getModelByType(modelType: Model): Model = ^.asInstanceOf[js.Dynamic].applyDynamic("getModelByType")(modelType.asInstanceOf[js.Any]).asInstanceOf[Model]
+  inline def getModelByType(modelType: Model): Model = ^.asInstanceOf[js.Dynamic].applyDynamic("getModelByType")(modelType.asInstanceOf[js.Any]).asInstanceOf[Model]
   
   /**
     * Get an in-memory data source. Use one if it already exists
@@ -194,10 +188,8 @@ object loopback {
     * If not provided, the `'default'` is used
     */
   /* static member */
-  @scala.inline
-  def memory(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("memory")().asInstanceOf[Unit]
-  @scala.inline
-  def memory(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("memory")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def memory(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("memory")().asInstanceOf[Unit]
+  inline def memory(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("memory")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Add a remote method to a model.
@@ -205,8 +197,7 @@ object loopback {
     * @param {any} options (optional
     */
   /* static member */
-  @scala.inline
-  def remoteMethod(fn: js.Function0[Unit], options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remoteMethod")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def remoteMethod(fn: js.Function0[Unit], options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remoteMethod")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Create a template helper
@@ -216,6 +207,5 @@ object loopback {
     * @returns {() => void
     */
   /* static member */
-  @scala.inline
-  def template(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("template")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def template(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("template")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

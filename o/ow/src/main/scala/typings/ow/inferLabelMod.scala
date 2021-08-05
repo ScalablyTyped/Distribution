@@ -11,6 +11,5 @@ object inferLabelMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def inferLabel(callsites: js.Array[CallSite]): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("inferLabel")(callsites.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def inferLabel(callsites: js.Array[CallSite]): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("inferLabel")(callsites.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
 }

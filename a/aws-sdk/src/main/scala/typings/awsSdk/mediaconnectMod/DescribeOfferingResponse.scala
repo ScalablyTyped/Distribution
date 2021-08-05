@@ -10,19 +10,15 @@ trait DescribeOfferingResponse extends StObject {
 }
 object DescribeOfferingResponse {
   
-  @scala.inline
-  def apply(): DescribeOfferingResponse = {
+  inline def apply(): DescribeOfferingResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeOfferingResponse]
   }
   
-  @scala.inline
-  implicit class DescribeOfferingResponseMutableBuilder[Self <: DescribeOfferingResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeOfferingResponse](x: Self) {
     
-    @scala.inline
-    def setOffering(value: Offering): Self = StObject.set(x, "Offering", value.asInstanceOf[js.Any])
+    inline def setOffering(value: Offering): Self = StObject.set(x, "Offering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfferingUndefined: Self = StObject.set(x, "Offering", js.undefined)
+    inline def setOfferingUndefined: Self = StObject.set(x, "Offering", js.undefined)
   }
 }

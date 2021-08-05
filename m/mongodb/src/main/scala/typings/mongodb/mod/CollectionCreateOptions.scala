@@ -51,124 +51,85 @@ trait CollectionCreateOptions
 }
 object CollectionCreateOptions {
   
-  @scala.inline
-  def apply(): CollectionCreateOptions = {
+  inline def apply(): CollectionCreateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CollectionCreateOptions]
   }
   
-  @scala.inline
-  implicit class CollectionCreateOptionsMutableBuilder[Self <: CollectionCreateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CollectionCreateOptions](x: Self) {
     
-    @scala.inline
-    def setAutoIndexId(value: Boolean): Self = StObject.set(x, "autoIndexId", value.asInstanceOf[js.Any])
+    inline def setAutoIndexId(value: Boolean): Self = StObject.set(x, "autoIndexId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoIndexIdUndefined: Self = StObject.set(x, "autoIndexId", js.undefined)
+    inline def setAutoIndexIdUndefined: Self = StObject.set(x, "autoIndexId", js.undefined)
     
-    @scala.inline
-    def setCapped(value: Boolean): Self = StObject.set(x, "capped", value.asInstanceOf[js.Any])
+    inline def setCapped(value: Boolean): Self = StObject.set(x, "capped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCappedUndefined: Self = StObject.set(x, "capped", js.undefined)
+    inline def setCappedUndefined: Self = StObject.set(x, "capped", js.undefined)
     
-    @scala.inline
-    def setCollation(value: CollationDocument): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])
+    inline def setCollation(value: CollationDocument): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollationUndefined: Self = StObject.set(x, "collation", js.undefined)
+    inline def setCollationUndefined: Self = StObject.set(x, "collation", js.undefined)
     
-    @scala.inline
-    def setFlags(value: scala.Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: scala.Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+    inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
     
-    @scala.inline
-    def setIndexOptionDefaults(value: js.Object): Self = StObject.set(x, "indexOptionDefaults", value.asInstanceOf[js.Any])
+    inline def setIndexOptionDefaults(value: js.Object): Self = StObject.set(x, "indexOptionDefaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexOptionDefaultsUndefined: Self = StObject.set(x, "indexOptionDefaults", js.undefined)
+    inline def setIndexOptionDefaultsUndefined: Self = StObject.set(x, "indexOptionDefaults", js.undefined)
     
-    @scala.inline
-    def setMax(value: scala.Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: scala.Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setPipeline(value: js.Array[js.Any]): Self = StObject.set(x, "pipeline", value.asInstanceOf[js.Any])
+    inline def setPipeline(value: js.Array[js.Any]): Self = StObject.set(x, "pipeline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineUndefined: Self = StObject.set(x, "pipeline", js.undefined)
+    inline def setPipelineUndefined: Self = StObject.set(x, "pipeline", js.undefined)
     
-    @scala.inline
-    def setPipelineVarargs(value: js.Any*): Self = StObject.set(x, "pipeline", js.Array(value :_*))
+    inline def setPipelineVarargs(value: js.Any*): Self = StObject.set(x, "pipeline", js.Array(value :_*))
     
-    @scala.inline
-    def setPkFactory(value: js.Object): Self = StObject.set(x, "pkFactory", value.asInstanceOf[js.Any])
+    inline def setPkFactory(value: js.Object): Self = StObject.set(x, "pkFactory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPkFactoryUndefined: Self = StObject.set(x, "pkFactory", js.undefined)
+    inline def setPkFactoryUndefined: Self = StObject.set(x, "pkFactory", js.undefined)
     
-    @scala.inline
-    def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+    inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
-    @scala.inline
-    def setReadPreference(value: ReadPreferenceOrMode): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
+    inline def setReadPreference(value: ReadPreferenceOrMode): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
+    inline def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
     
-    @scala.inline
-    def setSerializeFunctions(value: Boolean): Self = StObject.set(x, "serializeFunctions", value.asInstanceOf[js.Any])
+    inline def setSerializeFunctions(value: Boolean): Self = StObject.set(x, "serializeFunctions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerializeFunctionsUndefined: Self = StObject.set(x, "serializeFunctions", js.undefined)
+    inline def setSerializeFunctionsUndefined: Self = StObject.set(x, "serializeFunctions", js.undefined)
     
-    @scala.inline
-    def setSize(value: scala.Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: scala.Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setStorageEngine(value: js.Object): Self = StObject.set(x, "storageEngine", value.asInstanceOf[js.Any])
+    inline def setStorageEngine(value: js.Object): Self = StObject.set(x, "storageEngine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageEngineUndefined: Self = StObject.set(x, "storageEngine", js.undefined)
+    inline def setStorageEngineUndefined: Self = StObject.set(x, "storageEngine", js.undefined)
     
-    @scala.inline
-    def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+    inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+    inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     
-    @scala.inline
-    def setValidationAction(value: error | warn): Self = StObject.set(x, "validationAction", value.asInstanceOf[js.Any])
+    inline def setValidationAction(value: error | warn): Self = StObject.set(x, "validationAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationActionUndefined: Self = StObject.set(x, "validationAction", js.undefined)
+    inline def setValidationActionUndefined: Self = StObject.set(x, "validationAction", js.undefined)
     
-    @scala.inline
-    def setValidationLevel(value: off | strict | moderate): Self = StObject.set(x, "validationLevel", value.asInstanceOf[js.Any])
+    inline def setValidationLevel(value: off | strict | moderate): Self = StObject.set(x, "validationLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationLevelUndefined: Self = StObject.set(x, "validationLevel", js.undefined)
+    inline def setValidationLevelUndefined: Self = StObject.set(x, "validationLevel", js.undefined)
     
-    @scala.inline
-    def setValidator(value: js.Object): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
+    inline def setValidator(value: js.Object): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
+    inline def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
     
-    @scala.inline
-    def setViewOn(value: String): Self = StObject.set(x, "viewOn", value.asInstanceOf[js.Any])
+    inline def setViewOn(value: String): Self = StObject.set(x, "viewOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewOnUndefined: Self = StObject.set(x, "viewOn", js.undefined)
+    inline def setViewOnUndefined: Self = StObject.set(x, "viewOn", js.undefined)
   }
 }

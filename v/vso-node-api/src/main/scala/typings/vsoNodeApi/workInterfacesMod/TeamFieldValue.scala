@@ -12,19 +12,15 @@ trait TeamFieldValue extends StObject {
 }
 object TeamFieldValue {
   
-  @scala.inline
-  def apply(includeChildren: Boolean, value: String): TeamFieldValue = {
+  inline def apply(includeChildren: Boolean, value: String): TeamFieldValue = {
     val __obj = js.Dynamic.literal(includeChildren = includeChildren.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamFieldValue]
   }
   
-  @scala.inline
-  implicit class TeamFieldValueMutableBuilder[Self <: TeamFieldValue] (val x: Self) extends AnyVal {
+  extension [Self <: TeamFieldValue](x: Self) {
     
-    @scala.inline
-    def setIncludeChildren(value: Boolean): Self = StObject.set(x, "includeChildren", value.asInstanceOf[js.Any])
+    inline def setIncludeChildren(value: Boolean): Self = StObject.set(x, "includeChildren", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

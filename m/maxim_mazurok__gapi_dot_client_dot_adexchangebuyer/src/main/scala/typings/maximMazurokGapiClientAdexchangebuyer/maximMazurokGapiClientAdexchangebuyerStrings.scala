@@ -8,11 +8,9 @@ object maximMazurokGapiClientAdexchangebuyerStrings {
   
   @js.native
   sealed trait adexchangebuyer extends StObject
-  @scala.inline
-  def adexchangebuyer: adexchangebuyer = "adexchangebuyer".asInstanceOf[adexchangebuyer]
+  inline def adexchangebuyer: adexchangebuyer = "adexchangebuyer".asInstanceOf[adexchangebuyer]
   
   @js.native
   sealed trait v1Dot4 extends StObject
-  @scala.inline
-  def v1Dot4: v1Dot4 = "v1.4".asInstanceOf[v1Dot4]
+  inline def v1Dot4: v1Dot4 = "v1.4".asInstanceOf[v1Dot4]
 }

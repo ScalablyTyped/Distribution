@@ -11,6 +11,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def loadToml(filepath: String, content: String): JsonMap = (^.asInstanceOf[js.Dynamic].applyDynamic("loadToml")(filepath.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[JsonMap]
+  inline def loadToml(filepath: String, content: String): JsonMap = (^.asInstanceOf[js.Dynamic].applyDynamic("loadToml")(filepath.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[JsonMap]
 }

@@ -31,22 +31,17 @@ trait TabContainer extends StObject {
 }
 object TabContainer {
   
-  @scala.inline
-  def apply(childFocus: HTMLElement, dispose: () => Unit, tabIndex: Double): TabContainer = {
+  inline def apply(childFocus: HTMLElement, dispose: () => Unit, tabIndex: Double): TabContainer = {
     val __obj = js.Dynamic.literal(childFocus = childFocus.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), tabIndex = tabIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabContainer]
   }
   
-  @scala.inline
-  implicit class TabContainerMutableBuilder[Self <: TabContainer] (val x: Self) extends AnyVal {
+  extension [Self <: TabContainer](x: Self) {
     
-    @scala.inline
-    def setChildFocus(value: HTMLElement): Self = StObject.set(x, "childFocus", value.asInstanceOf[js.Any])
+    inline def setChildFocus(value: HTMLElement): Self = StObject.set(x, "childFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+    inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
   }
 }

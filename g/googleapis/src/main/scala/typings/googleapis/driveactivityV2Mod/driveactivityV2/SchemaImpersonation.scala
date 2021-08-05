@@ -17,19 +17,15 @@ trait SchemaImpersonation extends StObject {
 }
 object SchemaImpersonation {
   
-  @scala.inline
-  def apply(): SchemaImpersonation = {
+  inline def apply(): SchemaImpersonation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaImpersonation]
   }
   
-  @scala.inline
-  implicit class SchemaImpersonationMutableBuilder[Self <: SchemaImpersonation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaImpersonation](x: Self) {
     
-    @scala.inline
-    def setImpersonatedUser(value: SchemaUser): Self = StObject.set(x, "impersonatedUser", value.asInstanceOf[js.Any])
+    inline def setImpersonatedUser(value: SchemaUser): Self = StObject.set(x, "impersonatedUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImpersonatedUserUndefined: Self = StObject.set(x, "impersonatedUser", js.undefined)
+    inline def setImpersonatedUserUndefined: Self = StObject.set(x, "impersonatedUser", js.undefined)
   }
 }

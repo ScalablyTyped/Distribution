@@ -7,6 +7,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object XlCreator {
   
-  @scala.inline
-  def xlCreatorCode: `1480803660` = 1480803660.asInstanceOf[`1480803660`]
+  inline def xlCreatorCode: `1480803660` = 1480803660.asInstanceOf[`1480803660`]
 }

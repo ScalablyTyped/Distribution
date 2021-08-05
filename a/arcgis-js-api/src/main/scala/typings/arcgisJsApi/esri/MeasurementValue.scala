@@ -26,8 +26,7 @@ trait MeasurementValue
 }
 object MeasurementValue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -38,13 +37,10 @@ object MeasurementValue {
     __obj.asInstanceOf[MeasurementValue]
   }
   
-  @scala.inline
-  implicit class MeasurementValueMutableBuilder[Self <: MeasurementValue] (val x: Self) extends AnyVal {
+  extension [Self <: MeasurementValue](x: Self) {
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

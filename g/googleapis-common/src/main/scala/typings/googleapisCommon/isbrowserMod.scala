@@ -10,6 +10,5 @@ object isbrowserMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isBrowser(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBrowser")().asInstanceOf[Boolean]
+  inline def isBrowser(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBrowser")().asInstanceOf[Boolean]
 }

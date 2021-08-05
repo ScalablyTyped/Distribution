@@ -39,8 +39,7 @@ object mod {
     def stream(maybeOptions: js.Any): js.Any = js.native
   }
   
-  @scala.inline
-  def flushLogsAndExit(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flushLogsAndExit")().asInstanceOf[Unit]
+  inline def flushLogsAndExit(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flushLogsAndExit")().asInstanceOf[Unit]
   
   trait BufferOptions extends StObject {
     
@@ -50,20 +49,16 @@ object mod {
   }
   object BufferOptions {
     
-    @scala.inline
-    def apply(retriesInMilliseconds: Double, size: Double): BufferOptions = {
+    inline def apply(retriesInMilliseconds: Double, size: Double): BufferOptions = {
       val __obj = js.Dynamic.literal(retriesInMilliseconds = retriesInMilliseconds.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[BufferOptions]
     }
     
-    @scala.inline
-    implicit class BufferOptionsMutableBuilder[Self <: BufferOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BufferOptions](x: Self) {
       
-      @scala.inline
-      def setRetriesInMilliseconds(value: Double): Self = StObject.set(x, "retriesInMilliseconds", value.asInstanceOf[js.Any])
+      inline def setRetriesInMilliseconds(value: Double): Self = StObject.set(x, "retriesInMilliseconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
   
@@ -95,83 +90,58 @@ object mod {
   }
   object LogglyOptions {
     
-    @scala.inline
-    def apply(subdomain: String, token: String): LogglyOptions = {
+    inline def apply(subdomain: String, token: String): LogglyOptions = {
       val __obj = js.Dynamic.literal(subdomain = subdomain.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[LogglyOptions]
     }
     
-    @scala.inline
-    implicit class LogglyOptionsMutableBuilder[Self <: LogglyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LogglyOptions](x: Self) {
       
-      @scala.inline
-      def setAuth(value: Password): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: Password): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthNull: Self = StObject.set(x, "auth", null)
+      inline def setAuthNull: Self = StObject.set(x, "auth", null)
       
-      @scala.inline
-      def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+      inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
       
-      @scala.inline
-      def setBufferOptions(value: BufferOptions): Self = StObject.set(x, "bufferOptions", value.asInstanceOf[js.Any])
+      inline def setBufferOptions(value: BufferOptions): Self = StObject.set(x, "bufferOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBufferOptionsUndefined: Self = StObject.set(x, "bufferOptions", js.undefined)
+      inline def setBufferOptionsUndefined: Self = StObject.set(x, "bufferOptions", js.undefined)
       
-      @scala.inline
-      def setIsBulk(value: Boolean): Self = StObject.set(x, "isBulk", value.asInstanceOf[js.Any])
+      inline def setIsBulk(value: Boolean): Self = StObject.set(x, "isBulk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBulkUndefined: Self = StObject.set(x, "isBulk", js.undefined)
+      inline def setIsBulkUndefined: Self = StObject.set(x, "isBulk", js.undefined)
       
-      @scala.inline
-      def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+      inline def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
+      inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
       
-      @scala.inline
-      def setNetworkErrorOnConsole(value: Boolean): Self = StObject.set(x, "networkErrorOnConsole", value.asInstanceOf[js.Any])
+      inline def setNetworkErrorOnConsole(value: Boolean): Self = StObject.set(x, "networkErrorOnConsole", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkErrorOnConsoleUndefined: Self = StObject.set(x, "networkErrorOnConsole", js.undefined)
+      inline def setNetworkErrorOnConsoleUndefined: Self = StObject.set(x, "networkErrorOnConsole", js.undefined)
       
-      @scala.inline
-      def setProxy(value: String | Url): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: String | Url): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyNull: Self = StObject.set(x, "proxy", null)
+      inline def setProxyNull: Self = StObject.set(x, "proxy", null)
       
-      @scala.inline
-      def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+      inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
       
-      @scala.inline
-      def setStripColors(value: Boolean): Self = StObject.set(x, "stripColors", value.asInstanceOf[js.Any])
+      inline def setStripColors(value: Boolean): Self = StObject.set(x, "stripColors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripColorsUndefined: Self = StObject.set(x, "stripColors", js.undefined)
+      inline def setStripColorsUndefined: Self = StObject.set(x, "stripColors", js.undefined)
       
-      @scala.inline
-      def setSubdomain(value: String): Self = StObject.set(x, "subdomain", value.asInstanceOf[js.Any])
+      inline def setSubdomain(value: String): Self = StObject.set(x, "subdomain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+      inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
       
-      @scala.inline
-      def setTimestamp(value: Boolean): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Boolean): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+      inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
   }
 }

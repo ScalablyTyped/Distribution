@@ -10,16 +10,13 @@ trait Inspector extends StObject {
 }
 object Inspector {
   
-  @scala.inline
-  def apply(Inspector: typings.activexOutlook.Outlook.Inspector): Inspector = {
+  inline def apply(Inspector: typings.activexOutlook.Outlook.Inspector): Inspector = {
     val __obj = js.Dynamic.literal(Inspector = Inspector.asInstanceOf[js.Any])
     __obj.asInstanceOf[Inspector]
   }
   
-  @scala.inline
-  implicit class InspectorMutableBuilder[Self <: Inspector] (val x: Self) extends AnyVal {
+  extension [Self <: Inspector](x: Self) {
     
-    @scala.inline
-    def setInspector(value: typings.activexOutlook.Outlook.Inspector): Self = StObject.set(x, "Inspector", value.asInstanceOf[js.Any])
+    inline def setInspector(value: typings.activexOutlook.Outlook.Inspector): Self = StObject.set(x, "Inspector", value.asInstanceOf[js.Any])
   }
 }

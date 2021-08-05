@@ -11,6 +11,5 @@ trait JPFAlwaysMoveDiagonally
      with JumpPointFinderBase
 object JPFAlwaysMoveDiagonally {
   
-  @scala.inline
-  def apply: JPFAlwaysMoveDiagonally = ^.asInstanceOf[js.Dynamic].selectDynamic("JPFAlwaysMoveDiagonally").asInstanceOf[JPFAlwaysMoveDiagonally]
+  inline def apply: JPFAlwaysMoveDiagonally = ^.asInstanceOf[js.Dynamic].selectDynamic("JPFAlwaysMoveDiagonally").asInstanceOf[JPFAlwaysMoveDiagonally]
 }

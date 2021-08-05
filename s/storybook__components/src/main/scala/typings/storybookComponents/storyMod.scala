@@ -44,26 +44,20 @@ object storyMod {
   }
   object CommonProps {
     
-    @scala.inline
-    def apply(id: String, title: String): CommonProps = {
+    inline def apply(id: String, title: String): CommonProps = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[CommonProps]
     }
     
-    @scala.inline
-    implicit class CommonPropsMutableBuilder[Self <: CommonProps] (val x: Self) extends AnyVal {
+    extension [Self <: CommonProps](x: Self) {
       
-      @scala.inline
-      def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -79,20 +73,16 @@ object storyMod {
   }
   object InlineStoryProps {
     
-    @scala.inline
-    def apply(id: String, parameters: Parameters, storyFn: ElementType[js.Any], title: String): InlineStoryProps = {
+    inline def apply(id: String, parameters: Parameters, storyFn: ElementType[js.Any], title: String): InlineStoryProps = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], storyFn = storyFn.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[InlineStoryProps]
     }
     
-    @scala.inline
-    implicit class InlineStoryPropsMutableBuilder[Self <: InlineStoryProps] (val x: Self) extends AnyVal {
+    extension [Self <: InlineStoryProps](x: Self) {
       
-      @scala.inline
-      def setParameters(value: Parameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: Parameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoryFn(value: ElementType[js.Any]): Self = StObject.set(x, "storyFn", value.asInstanceOf[js.Any])
+      inline def setStoryFn(value: ElementType[js.Any]): Self = StObject.set(x, "storyFn", value.asInstanceOf[js.Any])
     }
   }
   

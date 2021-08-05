@@ -65,37 +65,27 @@ object apiErrorMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def EEXIST(path: String): ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("EEXIST")(path.asInstanceOf[js.Any]).asInstanceOf[ApiError]
+    inline def EEXIST(path: String): ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("EEXIST")(path.asInstanceOf[js.Any]).asInstanceOf[ApiError]
     
-    @scala.inline
-    def EISDIR(path: String): ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("EISDIR")(path.asInstanceOf[js.Any]).asInstanceOf[ApiError]
+    inline def EISDIR(path: String): ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("EISDIR")(path.asInstanceOf[js.Any]).asInstanceOf[ApiError]
     
-    @scala.inline
-    def ENOENT(path: String): ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("ENOENT")(path.asInstanceOf[js.Any]).asInstanceOf[ApiError]
+    inline def ENOENT(path: String): ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("ENOENT")(path.asInstanceOf[js.Any]).asInstanceOf[ApiError]
     
-    @scala.inline
-    def ENOTDIR(path: String): ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("ENOTDIR")(path.asInstanceOf[js.Any]).asInstanceOf[ApiError]
+    inline def ENOTDIR(path: String): ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("ENOTDIR")(path.asInstanceOf[js.Any]).asInstanceOf[ApiError]
     
-    @scala.inline
-    def ENOTEMPTY(path: String): ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("ENOTEMPTY")(path.asInstanceOf[js.Any]).asInstanceOf[ApiError]
+    inline def ENOTEMPTY(path: String): ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("ENOTEMPTY")(path.asInstanceOf[js.Any]).asInstanceOf[ApiError]
     
-    @scala.inline
-    def EPERM(path: String): ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("EPERM")(path.asInstanceOf[js.Any]).asInstanceOf[ApiError]
+    inline def EPERM(path: String): ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("EPERM")(path.asInstanceOf[js.Any]).asInstanceOf[ApiError]
     
-    @scala.inline
-    def FileError(code: ErrorCode, p: String): ApiError = (^.asInstanceOf[js.Dynamic].applyDynamic("FileError")(code.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[ApiError]
+    inline def FileError(code: ErrorCode, p: String): ApiError = (^.asInstanceOf[js.Dynamic].applyDynamic("FileError")(code.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[ApiError]
     
     /**
       * Creates an ApiError object from a buffer.
       */
-    @scala.inline
-    def fromBuffer(buffer: Buffer): ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[ApiError]
-    @scala.inline
-    def fromBuffer(buffer: Buffer, i: Double): ApiError = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], i.asInstanceOf[js.Any])).asInstanceOf[ApiError]
+    inline def fromBuffer(buffer: Buffer): ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[ApiError]
+    inline def fromBuffer(buffer: Buffer, i: Double): ApiError = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], i.asInstanceOf[js.Any])).asInstanceOf[ApiError]
     
-    @scala.inline
-    def fromJSON(json: js.Any): ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[ApiError]
+    inline def fromJSON(json: js.Any): ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[ApiError]
   }
   
   @js.native

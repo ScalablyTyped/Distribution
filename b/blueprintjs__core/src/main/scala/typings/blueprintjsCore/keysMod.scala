@@ -54,6 +54,5 @@ object keysMod {
   @js.native
   val TAB: /* 9 */ Double = js.native
   
-  @scala.inline
-  def isKeyboardClick(keyCode: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKeyboardClick")(keyCode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isKeyboardClick(keyCode: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKeyboardClick")(keyCode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

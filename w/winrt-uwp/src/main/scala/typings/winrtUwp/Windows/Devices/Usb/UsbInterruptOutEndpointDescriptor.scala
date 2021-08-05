@@ -21,25 +21,19 @@ trait UsbInterruptOutEndpointDescriptor extends StObject {
 }
 object UsbInterruptOutEndpointDescriptor {
   
-  @scala.inline
-  def apply(endpointNumber: Double, interval: Double, maxPacketSize: Double, pipe: UsbInterruptOutPipe): UsbInterruptOutEndpointDescriptor = {
+  inline def apply(endpointNumber: Double, interval: Double, maxPacketSize: Double, pipe: UsbInterruptOutPipe): UsbInterruptOutEndpointDescriptor = {
     val __obj = js.Dynamic.literal(endpointNumber = endpointNumber.asInstanceOf[js.Any], interval = interval.asInstanceOf[js.Any], maxPacketSize = maxPacketSize.asInstanceOf[js.Any], pipe = pipe.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsbInterruptOutEndpointDescriptor]
   }
   
-  @scala.inline
-  implicit class UsbInterruptOutEndpointDescriptorMutableBuilder[Self <: UsbInterruptOutEndpointDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: UsbInterruptOutEndpointDescriptor](x: Self) {
     
-    @scala.inline
-    def setEndpointNumber(value: Double): Self = StObject.set(x, "endpointNumber", value.asInstanceOf[js.Any])
+    inline def setEndpointNumber(value: Double): Self = StObject.set(x, "endpointNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxPacketSize(value: Double): Self = StObject.set(x, "maxPacketSize", value.asInstanceOf[js.Any])
+    inline def setMaxPacketSize(value: Double): Self = StObject.set(x, "maxPacketSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipe(value: UsbInterruptOutPipe): Self = StObject.set(x, "pipe", value.asInstanceOf[js.Any])
+    inline def setPipe(value: UsbInterruptOutPipe): Self = StObject.set(x, "pipe", value.asInstanceOf[js.Any])
   }
 }

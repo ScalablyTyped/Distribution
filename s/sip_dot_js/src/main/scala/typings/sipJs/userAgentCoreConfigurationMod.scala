@@ -113,8 +113,7 @@ object userAgentCoreConfigurationMod {
   }
   object UserAgentCoreConfiguration {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       aor: URI,
       authenticationFactory: () => js.UndefOr[DigestAuthentication],
       contact: Contact,
@@ -133,62 +132,43 @@ object userAgentCoreConfigurationMod {
       __obj.asInstanceOf[UserAgentCoreConfiguration]
     }
     
-    @scala.inline
-    implicit class UserAgentCoreConfigurationMutableBuilder[Self <: UserAgentCoreConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: UserAgentCoreConfiguration](x: Self) {
       
-      @scala.inline
-      def setAor(value: URI): Self = StObject.set(x, "aor", value.asInstanceOf[js.Any])
+      inline def setAor(value: URI): Self = StObject.set(x, "aor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthenticationFactory(value: () => js.UndefOr[DigestAuthentication]): Self = StObject.set(x, "authenticationFactory", js.Any.fromFunction0(value))
+      inline def setAuthenticationFactory(value: () => js.UndefOr[DigestAuthentication]): Self = StObject.set(x, "authenticationFactory", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setContact(value: Contact): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
+      inline def setContact(value: Contact): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHackViaTcp(value: Boolean): Self = StObject.set(x, "hackViaTcp", value.asInstanceOf[js.Any])
+      inline def setHackViaTcp(value: Boolean): Self = StObject.set(x, "hackViaTcp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggerFactory(value: LoggerFactory): Self = StObject.set(x, "loggerFactory", value.asInstanceOf[js.Any])
+      inline def setLoggerFactory(value: LoggerFactory): Self = StObject.set(x, "loggerFactory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouteSet(value: js.Array[String]): Self = StObject.set(x, "routeSet", value.asInstanceOf[js.Any])
+      inline def setRouteSet(value: js.Array[String]): Self = StObject.set(x, "routeSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouteSetVarargs(value: String*): Self = StObject.set(x, "routeSet", js.Array(value :_*))
+      inline def setRouteSetVarargs(value: String*): Self = StObject.set(x, "routeSet", js.Array(value :_*))
       
-      @scala.inline
-      def setSipjsId(value: String): Self = StObject.set(x, "sipjsId", value.asInstanceOf[js.Any])
+      inline def setSipjsId(value: String): Self = StObject.set(x, "sipjsId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportedOptionTags(value: js.Array[String]): Self = StObject.set(x, "supportedOptionTags", value.asInstanceOf[js.Any])
+      inline def setSupportedOptionTags(value: js.Array[String]): Self = StObject.set(x, "supportedOptionTags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportedOptionTagsResponse(value: js.Array[String]): Self = StObject.set(x, "supportedOptionTagsResponse", value.asInstanceOf[js.Any])
+      inline def setSupportedOptionTagsResponse(value: js.Array[String]): Self = StObject.set(x, "supportedOptionTagsResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportedOptionTagsResponseVarargs(value: String*): Self = StObject.set(x, "supportedOptionTagsResponse", js.Array(value :_*))
+      inline def setSupportedOptionTagsResponseVarargs(value: String*): Self = StObject.set(x, "supportedOptionTagsResponse", js.Array(value :_*))
       
-      @scala.inline
-      def setSupportedOptionTagsVarargs(value: String*): Self = StObject.set(x, "supportedOptionTags", js.Array(value :_*))
+      inline def setSupportedOptionTagsVarargs(value: String*): Self = StObject.set(x, "supportedOptionTags", js.Array(value :_*))
       
-      @scala.inline
-      def setTransportAccessor(value: () => js.UndefOr[Transport]): Self = StObject.set(x, "transportAccessor", js.Any.fromFunction0(value))
+      inline def setTransportAccessor(value: () => js.UndefOr[Transport]): Self = StObject.set(x, "transportAccessor", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUserAgentHeaderFieldValue(value: String): Self = StObject.set(x, "userAgentHeaderFieldValue", value.asInstanceOf[js.Any])
+      inline def setUserAgentHeaderFieldValue(value: String): Self = StObject.set(x, "userAgentHeaderFieldValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserAgentHeaderFieldValueUndefined: Self = StObject.set(x, "userAgentHeaderFieldValue", js.undefined)
+      inline def setUserAgentHeaderFieldValueUndefined: Self = StObject.set(x, "userAgentHeaderFieldValue", js.undefined)
       
-      @scala.inline
-      def setViaForceRport(value: Boolean): Self = StObject.set(x, "viaForceRport", value.asInstanceOf[js.Any])
+      inline def setViaForceRport(value: Boolean): Self = StObject.set(x, "viaForceRport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViaHost(value: String): Self = StObject.set(x, "viaHost", value.asInstanceOf[js.Any])
+      inline def setViaHost(value: String): Self = StObject.set(x, "viaHost", value.asInstanceOf[js.Any])
     }
   }
 }

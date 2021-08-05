@@ -22,22 +22,17 @@ trait IPaymentIntentTransferData extends StObject {
 }
 object IPaymentIntentTransferData {
   
-  @scala.inline
-  def apply(destination: String | IBankAccount | ICardHash | IAccountCreationOptions): IPaymentIntentTransferData = {
+  inline def apply(destination: String | IBankAccount | ICardHash | IAccountCreationOptions): IPaymentIntentTransferData = {
     val __obj = js.Dynamic.literal(destination = destination.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPaymentIntentTransferData]
   }
   
-  @scala.inline
-  implicit class IPaymentIntentTransferDataMutableBuilder[Self <: IPaymentIntentTransferData] (val x: Self) extends AnyVal {
+  extension [Self <: IPaymentIntentTransferData](x: Self) {
     
-    @scala.inline
-    def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
+    inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
-    @scala.inline
-    def setDestination(value: String | IBankAccount | ICardHash | IAccountCreationOptions): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: String | IBankAccount | ICardHash | IAccountCreationOptions): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
   }
 }

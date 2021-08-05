@@ -19,8 +19,7 @@ trait `10` extends StObject {
 }
 object `10` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     failure: (KiiGroup, String, js.Array[KiiUser], js.Array[KiiUser]) => js.Any,
     success: KiiGroup => js.Any
   ): `10` = {
@@ -28,13 +27,10 @@ object `10` {
     __obj.asInstanceOf[`10`]
   }
   
-  @scala.inline
-  implicit class `10MutableBuilder`[Self <: `10`] (val x: Self) extends AnyVal {
+  extension [Self <: `10`](x: Self) {
     
-    @scala.inline
-    def setFailure(value: (KiiGroup, String, js.Array[KiiUser], js.Array[KiiUser]) => js.Any): Self = StObject.set(x, "failure", js.Any.fromFunction4(value))
+    inline def setFailure(value: (KiiGroup, String, js.Array[KiiUser], js.Array[KiiUser]) => js.Any): Self = StObject.set(x, "failure", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setSuccess(value: KiiGroup => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: KiiGroup => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

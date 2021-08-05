@@ -12,12 +12,9 @@ object zipMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def zip[V, V2, Out](left: default[V], right: default[V2], f: js.Function2[/* left */ V, /* right */ V2, Out]): EventStream[Out] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[EventStream[Out]]
+  inline def zip[V, V2, Out](left: default[V], right: default[V2], f: js.Function2[/* left */ V, /* right */ V2, Out]): EventStream[Out] = (^.asInstanceOf[js.Dynamic].applyDynamic("zip")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[EventStream[Out]]
   
-  @scala.inline
-  def zipAsArray[V](args: (default[V] | js.Array[default[V]])*): default[js.Array[V]] = ^.asInstanceOf[js.Dynamic].applyDynamic("zipAsArray")(args.asInstanceOf[js.Any]).asInstanceOf[default[js.Array[V]]]
+  inline def zipAsArray[V](args: (default[V] | js.Array[default[V]])*): default[js.Array[V]] = ^.asInstanceOf[js.Dynamic].applyDynamic("zipAsArray")(args.asInstanceOf[js.Any]).asInstanceOf[default[js.Array[V]]]
   
-  @scala.inline
-  def zipWith[Out](f: js.Function1[/* repeated */ js.Any, Out], streams: default[js.Any]*): EventStream[Out] = (^.asInstanceOf[js.Dynamic].applyDynamic("zipWith")(f.asInstanceOf[js.Any], streams.asInstanceOf[js.Any])).asInstanceOf[EventStream[Out]]
+  inline def zipWith[Out](f: js.Function1[/* repeated */ js.Any, Out], streams: default[js.Any]*): EventStream[Out] = (^.asInstanceOf[js.Dynamic].applyDynamic("zipWith")(f.asInstanceOf[js.Any], streams.asInstanceOf[js.Any])).asInstanceOf[EventStream[Out]]
 }

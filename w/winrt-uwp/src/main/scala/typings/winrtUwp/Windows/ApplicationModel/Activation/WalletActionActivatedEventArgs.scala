@@ -28,8 +28,7 @@ trait WalletActionActivatedEventArgs extends StObject {
 }
 object WalletActionActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     actionId: String,
     actionKind: WalletActionKind,
     itemId: String,
@@ -41,25 +40,18 @@ object WalletActionActivatedEventArgs {
     __obj.asInstanceOf[WalletActionActivatedEventArgs]
   }
   
-  @scala.inline
-  implicit class WalletActionActivatedEventArgsMutableBuilder[Self <: WalletActionActivatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: WalletActionActivatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setActionId(value: String): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
+    inline def setActionId(value: String): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionKind(value: WalletActionKind): Self = StObject.set(x, "actionKind", value.asInstanceOf[js.Any])
+    inline def setActionKind(value: WalletActionKind): Self = StObject.set(x, "actionKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
+    inline def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
+    inline def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
+    inline def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
   }
 }

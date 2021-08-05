@@ -18,19 +18,15 @@ trait AtomDescription extends StObject {
 }
 object AtomDescription {
   
-  @scala.inline
-  def apply(atom: Double, description: String): AtomDescription = {
+  inline def apply(atom: Double, description: String): AtomDescription = {
     val __obj = js.Dynamic.literal(atom = atom.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any])
     __obj.asInstanceOf[AtomDescription]
   }
   
-  @scala.inline
-  implicit class AtomDescriptionMutableBuilder[Self <: AtomDescription] (val x: Self) extends AnyVal {
+  extension [Self <: AtomDescription](x: Self) {
     
-    @scala.inline
-    def setAtom(value: Double): Self = StObject.set(x, "atom", value.asInstanceOf[js.Any])
+    inline def setAtom(value: Double): Self = StObject.set(x, "atom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
   }
 }

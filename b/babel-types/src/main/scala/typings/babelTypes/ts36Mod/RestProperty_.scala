@@ -17,20 +17,16 @@ trait RestProperty_
 }
 object RestProperty_ {
   
-  @scala.inline
-  def apply(argument: LVal, end: Double, loc: SourceLocation, start: Double): RestProperty_ = {
+  inline def apply(argument: LVal, end: Double, loc: SourceLocation, start: Double): RestProperty_ = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("RestProperty")
     __obj.asInstanceOf[RestProperty_]
   }
   
-  @scala.inline
-  implicit class RestProperty_MutableBuilder[Self <: RestProperty_] (val x: Self) extends AnyVal {
+  extension [Self <: RestProperty_](x: Self) {
     
-    @scala.inline
-    def setArgument(value: LVal): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+    inline def setArgument(value: LVal): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: RestProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: RestProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

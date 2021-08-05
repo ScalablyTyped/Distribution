@@ -18,25 +18,19 @@ trait LaunchPermission extends StObject {
 }
 object LaunchPermission {
   
-  @scala.inline
-  def apply(): LaunchPermission = {
+  inline def apply(): LaunchPermission = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LaunchPermission]
   }
   
-  @scala.inline
-  implicit class LaunchPermissionMutableBuilder[Self <: LaunchPermission] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchPermission](x: Self) {
     
-    @scala.inline
-    def setGroup(value: PermissionGroup): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: PermissionGroup): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "Group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "Group", js.undefined)
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "UserId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "UserId", js.undefined)
   }
 }

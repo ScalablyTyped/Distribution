@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Emitter = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Emitter]
-  @scala.inline
-  def apply(obj: js.Any): Emitter = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[Emitter]
+  inline def apply(): Emitter = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Emitter]
+  inline def apply(obj: js.Any): Emitter = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[Emitter]
   
   @JSImport("event-emitter", JSImport.Namespace)
   @js.native
@@ -33,8 +31,7 @@ object mod {
   }
   object Emitter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       emit: (String, /* repeated */ js.Any) => Unit,
       off: (/* type */ String, /* listener */ EventListener) => Unit,
       on: (/* type */ String, /* listener */ EventListener) => Unit,
@@ -44,20 +41,15 @@ object mod {
       __obj.asInstanceOf[Emitter]
     }
     
-    @scala.inline
-    implicit class EmitterMutableBuilder[Self <: Emitter] (val x: Self) extends AnyVal {
+    extension [Self <: Emitter](x: Self) {
       
-      @scala.inline
-      def setEmit(value: (String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      inline def setEmit(value: (String, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOff(value: (/* type */ String, /* listener */ EventListener) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
+      inline def setOff(value: (/* type */ String, /* listener */ EventListener) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOn(value: (/* type */ String, /* listener */ EventListener) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (/* type */ String, /* listener */ EventListener) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnce(value: (/* type */ String, /* listener */ EventListener) => Unit): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
+      inline def setOnce(value: (/* type */ String, /* listener */ EventListener) => Unit): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
     }
   }
   

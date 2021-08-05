@@ -14,8 +14,7 @@ trait RouterChangeEvent
 }
 object RouterChangeEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     backButtonPressed: Boolean,
     isDefaultPrevented: () => Boolean,
     params: js.Any,
@@ -27,13 +26,10 @@ object RouterChangeEvent {
     __obj.asInstanceOf[RouterChangeEvent]
   }
   
-  @scala.inline
-  implicit class RouterChangeEventMutableBuilder[Self <: RouterChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: RouterChangeEvent](x: Self) {
     
-    @scala.inline
-    def setBackButtonPressed(value: Boolean): Self = StObject.set(x, "backButtonPressed", value.asInstanceOf[js.Any])
+    inline def setBackButtonPressed(value: Boolean): Self = StObject.set(x, "backButtonPressed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
   }
 }

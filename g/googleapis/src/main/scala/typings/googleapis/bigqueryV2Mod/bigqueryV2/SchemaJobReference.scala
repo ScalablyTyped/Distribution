@@ -26,31 +26,23 @@ trait SchemaJobReference extends StObject {
 }
 object SchemaJobReference {
   
-  @scala.inline
-  def apply(): SchemaJobReference = {
+  inline def apply(): SchemaJobReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaJobReference]
   }
   
-  @scala.inline
-  implicit class SchemaJobReferenceMutableBuilder[Self <: SchemaJobReference] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaJobReference](x: Self) {
     
-    @scala.inline
-    def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
   }
 }

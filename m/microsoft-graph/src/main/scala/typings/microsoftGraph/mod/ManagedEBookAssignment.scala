@@ -16,28 +16,21 @@ trait ManagedEBookAssignment
 }
 object ManagedEBookAssignment {
   
-  @scala.inline
-  def apply(): ManagedEBookAssignment = {
+  inline def apply(): ManagedEBookAssignment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManagedEBookAssignment]
   }
   
-  @scala.inline
-  implicit class ManagedEBookAssignmentMutableBuilder[Self <: ManagedEBookAssignment] (val x: Self) extends AnyVal {
+  extension [Self <: ManagedEBookAssignment](x: Self) {
     
-    @scala.inline
-    def setInstallIntent(value: InstallIntent): Self = StObject.set(x, "installIntent", value.asInstanceOf[js.Any])
+    inline def setInstallIntent(value: InstallIntent): Self = StObject.set(x, "installIntent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallIntentUndefined: Self = StObject.set(x, "installIntent", js.undefined)
+    inline def setInstallIntentUndefined: Self = StObject.set(x, "installIntent", js.undefined)
     
-    @scala.inline
-    def setTarget(value: NullableOption[DeviceAndAppManagementAssignmentTarget]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: NullableOption[DeviceAndAppManagementAssignmentTarget]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetNull: Self = StObject.set(x, "target", null)
+    inline def setTargetNull: Self = StObject.set(x, "target", null)
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

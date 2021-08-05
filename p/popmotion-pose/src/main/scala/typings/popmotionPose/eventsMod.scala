@@ -14,8 +14,7 @@ object eventsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     element: Element,
     activeActions: ActiveActions[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ColdSubscription */ js.Any

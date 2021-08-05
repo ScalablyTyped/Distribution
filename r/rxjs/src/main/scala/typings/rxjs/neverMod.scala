@@ -15,6 +15,5 @@ object neverMod {
   @js.native
   val NEVER_ : Observable[scala.Nothing] = js.native
   
-  @scala.inline
-  def never(): Observable[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("never")().asInstanceOf[Observable[scala.Nothing]]
+  inline def never(): Observable[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("never")().asInstanceOf[Observable[scala.Nothing]]
 }

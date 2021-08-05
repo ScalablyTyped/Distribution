@@ -17,8 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(options: TransferOptions): TransferStream = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[TransferStream]
+  inline def apply(options: TransferOptions): TransferStream = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[TransferStream]
   /**
     * Fetch URL with retries if failure.
     * Returns stream of transfer contents.
@@ -26,10 +25,8 @@ object mod {
     * @param url URL (optional).
     * @param options Options object.
     */
-  @scala.inline
-  def apply(url: String): TransferStream = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[TransferStream]
-  @scala.inline
-  def apply(url: String, options: TransferOptions): TransferStream = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TransferStream]
+  inline def apply(url: String): TransferStream = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[TransferStream]
+  inline def apply(url: String, options: TransferOptions): TransferStream = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TransferStream]
   
   @JSImport("got-resume", JSImport.Namespace)
   @js.native
@@ -149,16 +146,11 @@ object mod {
     * @param url URL.
     * @param options Options object (as per stream method).
     */
-  @scala.inline
-  def toFile(path: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("toFile")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def toFile(path: String, options: ToFileOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("toFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def toFile(path: String, url: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("toFile")(path.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def toFile(path: String, url: String, options: ToFileOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("toFile")(path.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-  @scala.inline
-  def toFile(path: String, url: Unit, options: ToFileOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("toFile")(path.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def toFile(path: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("toFile")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def toFile(path: String, options: ToFileOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("toFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def toFile(path: String, url: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("toFile")(path.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def toFile(path: String, url: String, options: ToFileOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("toFile")(path.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def toFile(path: String, url: Unit, options: ToFileOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("toFile")(path.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   trait Progress extends StObject {
     
@@ -168,20 +160,16 @@ object mod {
   }
   object Progress {
     
-    @scala.inline
-    def apply(total: Double, transferred: Double): Progress = {
+    inline def apply(total: Double, transferred: Double): Progress = {
       val __obj = js.Dynamic.literal(total = total.asInstanceOf[js.Any], transferred = transferred.asInstanceOf[js.Any])
       __obj.asInstanceOf[Progress]
     }
     
-    @scala.inline
-    implicit class ProgressMutableBuilder[Self <: Progress] (val x: Self) extends AnyVal {
+    extension [Self <: Progress](x: Self) {
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransferred(value: Double): Self = StObject.set(x, "transferred", value.asInstanceOf[js.Any])
+      inline def setTransferred(value: Double): Self = StObject.set(x, "transferred", value.asInstanceOf[js.Any])
     }
   }
   
@@ -200,32 +188,24 @@ object mod {
   }
   object ToFileOptions {
     
-    @scala.inline
-    def apply(): ToFileOptions = {
+    inline def apply(): ToFileOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ToFileOptions]
     }
     
-    @scala.inline
-    implicit class ToFileOptionsMutableBuilder[Self <: ToFileOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ToFileOptions](x: Self) {
       
-      @scala.inline
-      def setOnProgress(value: /* progress */ Progress => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
+      inline def setOnProgress(value: /* progress */ Progress => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
+      inline def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
       
-      @scala.inline
-      def setOnResponse(value: /* res */ js.Any => Unit): Self = StObject.set(x, "onResponse", js.Any.fromFunction1(value))
+      inline def setOnResponse(value: /* res */ js.Any => Unit): Self = StObject.set(x, "onResponse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnResponseUndefined: Self = StObject.set(x, "onResponse", js.undefined)
+      inline def setOnResponseUndefined: Self = StObject.set(x, "onResponse", js.undefined)
       
-      @scala.inline
-      def setPromise(value: PromiseConstructor): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: PromiseConstructor): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromiseUndefined: Self = StObject.set(x, "Promise", js.undefined)
+      inline def setPromiseUndefined: Self = StObject.set(x, "Promise", js.undefined)
     }
   }
   
@@ -275,80 +255,56 @@ object mod {
   }
   object TransferOptions {
     
-    @scala.inline
-    def apply(): TransferOptions = {
+    inline def apply(): TransferOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransferOptions]
     }
     
-    @scala.inline
-    implicit class TransferOptionsMutableBuilder[Self <: TransferOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TransferOptions](x: Self) {
       
-      @scala.inline
-      def setAttempts(value: Double): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
+      inline def setAttempts(value: Double): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttemptsTotal(value: Double): Self = StObject.set(x, "attemptsTotal", value.asInstanceOf[js.Any])
+      inline def setAttemptsTotal(value: Double): Self = StObject.set(x, "attemptsTotal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttemptsTotalUndefined: Self = StObject.set(x, "attemptsTotal", js.undefined)
+      inline def setAttemptsTotalUndefined: Self = StObject.set(x, "attemptsTotal", js.undefined)
       
-      @scala.inline
-      def setAttemptsUndefined: Self = StObject.set(x, "attempts", js.undefined)
+      inline def setAttemptsUndefined: Self = StObject.set(x, "attempts", js.undefined)
       
-      @scala.inline
-      def setBackoff(value: (/* attempt */ Double, /* transfer */ Transfer) => Double): Self = StObject.set(x, "backoff", js.Any.fromFunction2(value))
+      inline def setBackoff(value: (/* attempt */ Double, /* transfer */ Transfer) => Double): Self = StObject.set(x, "backoff", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBackoffUndefined: Self = StObject.set(x, "backoff", js.undefined)
+      inline def setBackoffUndefined: Self = StObject.set(x, "backoff", js.undefined)
       
-      @scala.inline
-      def setGot(value: GotOptions[String | Null]): Self = StObject.set(x, "got", value.asInstanceOf[js.Any])
+      inline def setGot(value: GotOptions[String | Null]): Self = StObject.set(x, "got", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGotUndefined: Self = StObject.set(x, "got", js.undefined)
+      inline def setGotUndefined: Self = StObject.set(x, "got", js.undefined)
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
       
-      @scala.inline
-      def setLog(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+      inline def setLog(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+      inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
       
-      @scala.inline
-      def setNeedLength(value: Boolean): Self = StObject.set(x, "needLength", value.asInstanceOf[js.Any])
+      inline def setNeedLength(value: Boolean): Self = StObject.set(x, "needLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNeedLengthUndefined: Self = StObject.set(x, "needLength", js.undefined)
+      inline def setNeedLengthUndefined: Self = StObject.set(x, "needLength", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setPre(value: /* transfer */ Transfer => js.Promise[Unit]): Self = StObject.set(x, "pre", js.Any.fromFunction1(value))
+      inline def setPre(value: /* transfer */ Transfer => js.Promise[Unit]): Self = StObject.set(x, "pre", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
+      inline def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
       
-      @scala.inline
-      def setTransform(value: Transform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      inline def setTransform(value: Transform): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   

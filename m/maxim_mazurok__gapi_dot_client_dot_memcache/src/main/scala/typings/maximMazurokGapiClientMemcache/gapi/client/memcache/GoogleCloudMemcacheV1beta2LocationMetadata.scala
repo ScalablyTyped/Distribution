@@ -19,23 +19,19 @@ trait GoogleCloudMemcacheV1beta2LocationMetadata extends StObject {
 }
 object GoogleCloudMemcacheV1beta2LocationMetadata {
   
-  @scala.inline
-  def apply(): GoogleCloudMemcacheV1beta2LocationMetadata = {
+  inline def apply(): GoogleCloudMemcacheV1beta2LocationMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMemcacheV1beta2LocationMetadata]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMemcacheV1beta2LocationMetadataMutableBuilder[Self <: GoogleCloudMemcacheV1beta2LocationMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMemcacheV1beta2LocationMetadata](x: Self) {
     
-    @scala.inline
-    def setAvailableZones(
+    inline def setAvailableZones(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientMemcache.maximMazurokGapiClientMemcacheStrings.GoogleCloudMemcacheV1beta2LocationMetadata & TopLevel[js.Any]
     ): Self = StObject.set(x, "availableZones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailableZonesUndefined: Self = StObject.set(x, "availableZones", js.undefined)
+    inline def setAvailableZonesUndefined: Self = StObject.set(x, "availableZones", js.undefined)
   }
 }

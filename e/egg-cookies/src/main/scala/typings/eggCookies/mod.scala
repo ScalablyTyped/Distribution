@@ -31,26 +31,20 @@ object mod {
   }
   object CookieGetOptions {
     
-    @scala.inline
-    def apply(): CookieGetOptions = {
+    inline def apply(): CookieGetOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CookieGetOptions]
     }
     
-    @scala.inline
-    implicit class CookieGetOptionsMutableBuilder[Self <: CookieGetOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CookieGetOptions](x: Self) {
       
-      @scala.inline
-      def setEncrypt(value: Boolean): Self = StObject.set(x, "encrypt", value.asInstanceOf[js.Any])
+      inline def setEncrypt(value: Boolean): Self = StObject.set(x, "encrypt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptUndefined: Self = StObject.set(x, "encrypt", js.undefined)
+      inline def setEncryptUndefined: Self = StObject.set(x, "encrypt", js.undefined)
       
-      @scala.inline
-      def setSigned(value: Boolean): Self = StObject.set(x, "signed", value.asInstanceOf[js.Any])
+      inline def setSigned(value: Boolean): Self = StObject.set(x, "signed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignedUndefined: Self = StObject.set(x, "signed", js.undefined)
+      inline def setSignedUndefined: Self = StObject.set(x, "signed", js.undefined)
     }
   }
   
@@ -108,74 +102,52 @@ object mod {
   }
   object CookieSetOptions {
     
-    @scala.inline
-    def apply(): CookieSetOptions = {
+    inline def apply(): CookieSetOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CookieSetOptions]
     }
     
-    @scala.inline
-    implicit class CookieSetOptionsMutableBuilder[Self <: CookieSetOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CookieSetOptions](x: Self) {
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      @scala.inline
-      def setEncrypt(value: Boolean): Self = StObject.set(x, "encrypt", value.asInstanceOf[js.Any])
+      inline def setEncrypt(value: Boolean): Self = StObject.set(x, "encrypt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptUndefined: Self = StObject.set(x, "encrypt", js.undefined)
+      inline def setEncryptUndefined: Self = StObject.set(x, "encrypt", js.undefined)
       
-      @scala.inline
-      def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+      inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
       
-      @scala.inline
-      def setHttpOnly(value: Boolean): Self = StObject.set(x, "httpOnly", value.asInstanceOf[js.Any])
+      inline def setHttpOnly(value: Boolean): Self = StObject.set(x, "httpOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpOnlyUndefined: Self = StObject.set(x, "httpOnly", js.undefined)
+      inline def setHttpOnlyUndefined: Self = StObject.set(x, "httpOnly", js.undefined)
       
-      @scala.inline
-      def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
-      @scala.inline
-      def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+      inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
+      inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setSameSite(value: Boolean | String): Self = StObject.set(x, "sameSite", value.asInstanceOf[js.Any])
+      inline def setSameSite(value: Boolean | String): Self = StObject.set(x, "sameSite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSameSiteUndefined: Self = StObject.set(x, "sameSite", js.undefined)
+      inline def setSameSiteUndefined: Self = StObject.set(x, "sameSite", js.undefined)
       
-      @scala.inline
-      def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+      inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
+      inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
       
-      @scala.inline
-      def setSigned(value: Boolean): Self = StObject.set(x, "signed", value.asInstanceOf[js.Any])
+      inline def setSigned(value: Boolean): Self = StObject.set(x, "signed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignedUndefined: Self = StObject.set(x, "signed", js.undefined)
+      inline def setSignedUndefined: Self = StObject.set(x, "signed", js.undefined)
     }
   }
   

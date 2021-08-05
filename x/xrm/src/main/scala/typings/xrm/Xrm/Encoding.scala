@@ -26,19 +26,15 @@ trait Encoding extends StObject {
 }
 object Encoding {
   
-  @scala.inline
-  def apply(xmlAttributeEncode: String => String, xmlEncode: String => String): Encoding = {
+  inline def apply(xmlAttributeEncode: String => String, xmlEncode: String => String): Encoding = {
     val __obj = js.Dynamic.literal(xmlAttributeEncode = js.Any.fromFunction1(xmlAttributeEncode), xmlEncode = js.Any.fromFunction1(xmlEncode))
     __obj.asInstanceOf[Encoding]
   }
   
-  @scala.inline
-  implicit class EncodingMutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
+  extension [Self <: Encoding](x: Self) {
     
-    @scala.inline
-    def setXmlAttributeEncode(value: String => String): Self = StObject.set(x, "xmlAttributeEncode", js.Any.fromFunction1(value))
+    inline def setXmlAttributeEncode(value: String => String): Self = StObject.set(x, "xmlAttributeEncode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setXmlEncode(value: String => String): Self = StObject.set(x, "xmlEncode", js.Any.fromFunction1(value))
+    inline def setXmlEncode(value: String => String): Self = StObject.set(x, "xmlEncode", js.Any.fromFunction1(value))
   }
 }

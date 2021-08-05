@@ -28,8 +28,7 @@ trait XFunctionDescriptions
 }
 object XFunctionDescriptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementType: `type`,
     acquire: () => Unit,
@@ -45,10 +44,8 @@ object XFunctionDescriptions {
     __obj.asInstanceOf[XFunctionDescriptions]
   }
   
-  @scala.inline
-  implicit class XFunctionDescriptionsMutableBuilder[Self <: XFunctionDescriptions] (val x: Self) extends AnyVal {
+  extension [Self <: XFunctionDescriptions](x: Self) {
     
-    @scala.inline
-    def setGetById(value: Double => SafeArray[PropertyValue]): Self = StObject.set(x, "getById", js.Any.fromFunction1(value))
+    inline def setGetById(value: Double => SafeArray[PropertyValue]): Self = StObject.set(x, "getById", js.Any.fromFunction1(value))
   }
 }

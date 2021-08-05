@@ -10,10 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(input: String): Result = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Result]
-  @scala.inline
-  def apply(input: Buffer): Result = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Result]
+  inline def apply(input: String): Result = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Result]
+  inline def apply(input: Buffer): Result = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[Result]
   
   @JSImport("git-diff-parser", JSImport.Namespace)
   @js.native
@@ -25,20 +23,16 @@ object mod {
   }
   object Commit {
     
-    @scala.inline
-    def apply(files: js.Array[File]): Commit = {
+    inline def apply(files: js.Array[File]): Commit = {
       val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any])
       __obj.asInstanceOf[Commit]
     }
     
-    @scala.inline
-    implicit class CommitMutableBuilder[Self <: Commit] (val x: Self) extends AnyVal {
+    extension [Self <: Commit](x: Self) {
       
-      @scala.inline
-      def setFiles(value: js.Array[File]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: js.Array[File]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesVarargs(value: File*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: File*): Self = StObject.set(x, "files", js.Array(value :_*))
     }
   }
   
@@ -58,44 +52,32 @@ object mod {
   }
   object DetailedCommit {
     
-    @scala.inline
-    def apply(files: js.Array[File]): DetailedCommit = {
+    inline def apply(files: js.Array[File]): DetailedCommit = {
       val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any])
       __obj.asInstanceOf[DetailedCommit]
     }
     
-    @scala.inline
-    implicit class DetailedCommitMutableBuilder[Self <: DetailedCommit] (val x: Self) extends AnyVal {
+    extension [Self <: DetailedCommit](x: Self) {
       
-      @scala.inline
-      def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+      inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
+      inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
       
-      @scala.inline
-      def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
+      inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShaUndefined: Self = StObject.set(x, "sha", js.undefined)
+      inline def setShaUndefined: Self = StObject.set(x, "sha", js.undefined)
     }
   }
   
@@ -111,23 +93,18 @@ object mod {
   }
   object DetailedResult {
     
-    @scala.inline
-    def apply(commits: js.Array[DetailedCommit]): DetailedResult = {
+    inline def apply(commits: js.Array[DetailedCommit]): DetailedResult = {
       val __obj = js.Dynamic.literal(commits = commits.asInstanceOf[js.Any], detailed = true)
       __obj.asInstanceOf[DetailedResult]
     }
     
-    @scala.inline
-    implicit class DetailedResultMutableBuilder[Self <: DetailedResult] (val x: Self) extends AnyVal {
+    extension [Self <: DetailedResult](x: Self) {
       
-      @scala.inline
-      def setCommits(value: js.Array[DetailedCommit]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
+      inline def setCommits(value: js.Array[DetailedCommit]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitsVarargs(value: DetailedCommit*): Self = StObject.set(x, "commits", js.Array(value :_*))
+      inline def setCommitsVarargs(value: DetailedCommit*): Self = StObject.set(x, "commits", js.Array(value :_*))
       
-      @scala.inline
-      def setDetailed(value: `true`): Self = StObject.set(x, "detailed", value.asInstanceOf[js.Any])
+      inline def setDetailed(value: `true`): Self = StObject.set(x, "detailed", value.asInstanceOf[js.Any])
     }
   }
   
@@ -140,17 +117,14 @@ object mod {
   }
   object DryResult {
     
-    @scala.inline
-    def apply(commits: js.Array[Commit]): DryResult = {
+    inline def apply(commits: js.Array[Commit]): DryResult = {
       val __obj = js.Dynamic.literal(commits = commits.asInstanceOf[js.Any], detailed = false)
       __obj.asInstanceOf[DryResult]
     }
     
-    @scala.inline
-    implicit class DryResultMutableBuilder[Self <: DryResult] (val x: Self) extends AnyVal {
+    extension [Self <: DryResult](x: Self) {
       
-      @scala.inline
-      def setDetailed(value: `false`): Self = StObject.set(x, "detailed", value.asInstanceOf[js.Any])
+      inline def setDetailed(value: `false`): Self = StObject.set(x, "detailed", value.asInstanceOf[js.Any])
     }
   }
   
@@ -174,8 +148,7 @@ object mod {
   }
   object File {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       added: Boolean,
       binary: Boolean,
       deleted: Boolean,
@@ -187,44 +160,31 @@ object mod {
       __obj.asInstanceOf[File]
     }
     
-    @scala.inline
-    implicit class FileMutableBuilder[Self <: File] (val x: Self) extends AnyVal {
+    extension [Self <: File](x: Self) {
       
-      @scala.inline
-      def setAdded(value: Boolean): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
+      inline def setAdded(value: Boolean): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
+      inline def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+      inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: js.Array[String]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: js.Array[String]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
+      inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
       
-      @scala.inline
-      def setLines(value: js.Array[Line]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+      inline def setLines(value: js.Array[Line]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinesVarargs(value: Line*): Self = StObject.set(x, "lines", js.Array(value :_*))
+      inline def setLinesVarargs(value: Line*): Self = StObject.set(x, "lines", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldName(value: String): Self = StObject.set(x, "oldName", value.asInstanceOf[js.Any])
+      inline def setOldName(value: String): Self = StObject.set(x, "oldName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldNameUndefined: Self = StObject.set(x, "oldName", js.undefined)
+      inline def setOldNameUndefined: Self = StObject.set(x, "oldName", js.undefined)
       
-      @scala.inline
-      def setRenamed(value: Boolean): Self = StObject.set(x, "renamed", value.asInstanceOf[js.Any])
+      inline def setRenamed(value: Boolean): Self = StObject.set(x, "renamed", value.asInstanceOf[js.Any])
     }
   }
   
@@ -246,33 +206,25 @@ object mod {
   }
   object Line {
     
-    @scala.inline
-    def apply(break: Boolean, ln1: Double, text: String, `type`: LineType): Line = {
+    inline def apply(break: Boolean, ln1: Double, text: String, `type`: LineType): Line = {
       val __obj = js.Dynamic.literal(break = break.asInstanceOf[js.Any], ln1 = ln1.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Line]
     }
     
-    @scala.inline
-    implicit class LineMutableBuilder[Self <: Line] (val x: Self) extends AnyVal {
+    extension [Self <: Line](x: Self) {
       
-      @scala.inline
-      def setBreak(value: Boolean): Self = StObject.set(x, "break", value.asInstanceOf[js.Any])
+      inline def setBreak(value: Boolean): Self = StObject.set(x, "break", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLn1(value: Double): Self = StObject.set(x, "ln1", value.asInstanceOf[js.Any])
+      inline def setLn1(value: Double): Self = StObject.set(x, "ln1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLn2(value: Double): Self = StObject.set(x, "ln2", value.asInstanceOf[js.Any])
+      inline def setLn2(value: Double): Self = StObject.set(x, "ln2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLn2Undefined: Self = StObject.set(x, "ln2", js.undefined)
+      inline def setLn2Undefined: Self = StObject.set(x, "ln2", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: LineType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: LineType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -285,14 +237,11 @@ object mod {
   trait LineType extends StObject
   object LineType {
     
-    @scala.inline
-    def added: typings.gitDiffParser.gitDiffParserStrings.added = "added".asInstanceOf[typings.gitDiffParser.gitDiffParserStrings.added]
+    inline def added: typings.gitDiffParser.gitDiffParserStrings.added = "added".asInstanceOf[typings.gitDiffParser.gitDiffParserStrings.added]
     
-    @scala.inline
-    def deleted: typings.gitDiffParser.gitDiffParserStrings.deleted = "deleted".asInstanceOf[typings.gitDiffParser.gitDiffParserStrings.deleted]
+    inline def deleted: typings.gitDiffParser.gitDiffParserStrings.deleted = "deleted".asInstanceOf[typings.gitDiffParser.gitDiffParserStrings.deleted]
     
-    @scala.inline
-    def normal: typings.gitDiffParser.gitDiffParserStrings.normal = "normal".asInstanceOf[typings.gitDiffParser.gitDiffParserStrings.normal]
+    inline def normal: typings.gitDiffParser.gitDiffParserStrings.normal = "normal".asInstanceOf[typings.gitDiffParser.gitDiffParserStrings.normal]
   }
   
   trait Result extends StObject {
@@ -303,23 +252,18 @@ object mod {
   }
   object Result {
     
-    @scala.inline
-    def apply(commits: js.Array[Commit], detailed: Boolean): Result = {
+    inline def apply(commits: js.Array[Commit], detailed: Boolean): Result = {
       val __obj = js.Dynamic.literal(commits = commits.asInstanceOf[js.Any], detailed = detailed.asInstanceOf[js.Any])
       __obj.asInstanceOf[Result]
     }
     
-    @scala.inline
-    implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+    extension [Self <: Result](x: Self) {
       
-      @scala.inline
-      def setCommits(value: js.Array[Commit]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
+      inline def setCommits(value: js.Array[Commit]): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitsVarargs(value: Commit*): Self = StObject.set(x, "commits", js.Array(value :_*))
+      inline def setCommitsVarargs(value: Commit*): Self = StObject.set(x, "commits", js.Array(value :_*))
       
-      @scala.inline
-      def setDetailed(value: Boolean): Self = StObject.set(x, "detailed", value.asInstanceOf[js.Any])
+      inline def setDetailed(value: Boolean): Self = StObject.set(x, "detailed", value.asInstanceOf[js.Any])
     }
   }
 }

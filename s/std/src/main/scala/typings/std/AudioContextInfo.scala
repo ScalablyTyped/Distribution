@@ -12,25 +12,19 @@ trait AudioContextInfo extends StObject {
 }
 object AudioContextInfo {
   
-  @scala.inline
-  def apply(): AudioContextInfo = {
+  inline def apply(): AudioContextInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AudioContextInfo]
   }
   
-  @scala.inline
-  implicit class AudioContextInfoMutableBuilder[Self <: AudioContextInfo] (val x: Self) extends AnyVal {
+  extension [Self <: AudioContextInfo](x: Self) {
     
-    @scala.inline
-    def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
+    inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentTimeUndefined: Self = StObject.set(x, "currentTime", js.undefined)
+    inline def setCurrentTimeUndefined: Self = StObject.set(x, "currentTime", js.undefined)
     
-    @scala.inline
-    def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
+    inline def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
+    inline def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
   }
 }

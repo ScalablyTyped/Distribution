@@ -22,8 +22,7 @@ object anon {
   }
   object AdditionalRoles {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       additionalRoles: js.Array[String],
       inherited: Boolean,
       inheritedFrom: String,
@@ -34,26 +33,19 @@ object anon {
       __obj.asInstanceOf[AdditionalRoles]
     }
     
-    @scala.inline
-    implicit class AdditionalRolesMutableBuilder[Self <: AdditionalRoles] (val x: Self) extends AnyVal {
+    extension [Self <: AdditionalRoles](x: Self) {
       
-      @scala.inline
-      def setAdditionalRoles(value: js.Array[String]): Self = StObject.set(x, "additionalRoles", value.asInstanceOf[js.Any])
+      inline def setAdditionalRoles(value: js.Array[String]): Self = StObject.set(x, "additionalRoles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalRolesVarargs(value: String*): Self = StObject.set(x, "additionalRoles", js.Array(value :_*))
+      inline def setAdditionalRolesVarargs(value: String*): Self = StObject.set(x, "additionalRoles", js.Array(value :_*))
       
-      @scala.inline
-      def setInherited(value: Boolean): Self = StObject.set(x, "inherited", value.asInstanceOf[js.Any])
+      inline def setInherited(value: Boolean): Self = StObject.set(x, "inherited", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInheritedFrom(value: String): Self = StObject.set(x, "inheritedFrom", value.asInstanceOf[js.Any])
+      inline def setInheritedFrom(value: String): Self = StObject.set(x, "inheritedFrom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamDrivePermissionType(value: String): Self = StObject.set(x, "teamDrivePermissionType", value.asInstanceOf[js.Any])
+      inline def setTeamDrivePermissionType(value: String): Self = StObject.set(x, "teamDrivePermissionType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -67,23 +59,18 @@ object anon {
   }
   object Altitude {
     
-    @scala.inline
-    def apply(altitude: Double, latitude: Double, longitude: Double): Altitude = {
+    inline def apply(altitude: Double, latitude: Double, longitude: Double): Altitude = {
       val __obj = js.Dynamic.literal(altitude = altitude.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
       __obj.asInstanceOf[Altitude]
     }
     
-    @scala.inline
-    implicit class AltitudeMutableBuilder[Self <: Altitude] (val x: Self) extends AnyVal {
+    extension [Self <: Altitude](x: Self) {
       
-      @scala.inline
-      def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
+      inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+      inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+      inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     }
   }
   
@@ -133,8 +120,7 @@ object anon {
   }
   object Aperture {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       aperture: Double,
       cameraMake: String,
       cameraModel: String,
@@ -161,71 +147,49 @@ object anon {
       __obj.asInstanceOf[Aperture]
     }
     
-    @scala.inline
-    implicit class ApertureMutableBuilder[Self <: Aperture] (val x: Self) extends AnyVal {
+    extension [Self <: Aperture](x: Self) {
       
-      @scala.inline
-      def setAperture(value: Double): Self = StObject.set(x, "aperture", value.asInstanceOf[js.Any])
+      inline def setAperture(value: Double): Self = StObject.set(x, "aperture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCameraMake(value: String): Self = StObject.set(x, "cameraMake", value.asInstanceOf[js.Any])
+      inline def setCameraMake(value: String): Self = StObject.set(x, "cameraMake", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCameraModel(value: String): Self = StObject.set(x, "cameraModel", value.asInstanceOf[js.Any])
+      inline def setCameraModel(value: String): Self = StObject.set(x, "cameraModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorSpace(value: String): Self = StObject.set(x, "colorSpace", value.asInstanceOf[js.Any])
+      inline def setColorSpace(value: String): Self = StObject.set(x, "colorSpace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExposureBias(value: Double): Self = StObject.set(x, "exposureBias", value.asInstanceOf[js.Any])
+      inline def setExposureBias(value: Double): Self = StObject.set(x, "exposureBias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExposureMode(value: String): Self = StObject.set(x, "exposureMode", value.asInstanceOf[js.Any])
+      inline def setExposureMode(value: String): Self = StObject.set(x, "exposureMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExposureTime(value: Double): Self = StObject.set(x, "exposureTime", value.asInstanceOf[js.Any])
+      inline def setExposureTime(value: Double): Self = StObject.set(x, "exposureTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlashUsed(value: Boolean): Self = StObject.set(x, "flashUsed", value.asInstanceOf[js.Any])
+      inline def setFlashUsed(value: Boolean): Self = StObject.set(x, "flashUsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocalLength(value: Double): Self = StObject.set(x, "focalLength", value.asInstanceOf[js.Any])
+      inline def setFocalLength(value: Double): Self = StObject.set(x, "focalLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsoSpeed(value: Double): Self = StObject.set(x, "isoSpeed", value.asInstanceOf[js.Any])
+      inline def setIsoSpeed(value: Double): Self = StObject.set(x, "isoSpeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLens(value: String): Self = StObject.set(x, "lens", value.asInstanceOf[js.Any])
+      inline def setLens(value: String): Self = StObject.set(x, "lens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: Altitude): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Altitude): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxApertureValue(value: Double): Self = StObject.set(x, "maxApertureValue", value.asInstanceOf[js.Any])
+      inline def setMaxApertureValue(value: Double): Self = StObject.set(x, "maxApertureValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeteringMode(value: String): Self = StObject.set(x, "meteringMode", value.asInstanceOf[js.Any])
+      inline def setMeteringMode(value: String): Self = StObject.set(x, "meteringMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+      inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSensor(value: String): Self = StObject.set(x, "sensor", value.asInstanceOf[js.Any])
+      inline def setSensor(value: String): Self = StObject.set(x, "sensor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubjectDistance(value: Double): Self = StObject.set(x, "subjectDistance", value.asInstanceOf[js.Any])
+      inline def setSubjectDistance(value: Double): Self = StObject.set(x, "subjectDistance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhiteBalance(value: String): Self = StObject.set(x, "whiteBalance", value.asInstanceOf[js.Any])
+      inline def setWhiteBalance(value: String): Self = StObject.set(x, "whiteBalance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -267,8 +231,7 @@ object anon {
   }
   object CanAddChildren {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       canAddChildren: Boolean,
       canChangeRestrictedDownload: Boolean,
       canComment: Boolean,
@@ -291,59 +254,41 @@ object anon {
       __obj.asInstanceOf[CanAddChildren]
     }
     
-    @scala.inline
-    implicit class CanAddChildrenMutableBuilder[Self <: CanAddChildren] (val x: Self) extends AnyVal {
+    extension [Self <: CanAddChildren](x: Self) {
       
-      @scala.inline
-      def setCanAddChildren(value: Boolean): Self = StObject.set(x, "canAddChildren", value.asInstanceOf[js.Any])
+      inline def setCanAddChildren(value: Boolean): Self = StObject.set(x, "canAddChildren", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanChangeRestrictedDownload(value: Boolean): Self = StObject.set(x, "canChangeRestrictedDownload", value.asInstanceOf[js.Any])
+      inline def setCanChangeRestrictedDownload(value: Boolean): Self = StObject.set(x, "canChangeRestrictedDownload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanComment(value: Boolean): Self = StObject.set(x, "canComment", value.asInstanceOf[js.Any])
+      inline def setCanComment(value: Boolean): Self = StObject.set(x, "canComment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanCopy(value: Boolean): Self = StObject.set(x, "canCopy", value.asInstanceOf[js.Any])
+      inline def setCanCopy(value: Boolean): Self = StObject.set(x, "canCopy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanDelete(value: Boolean): Self = StObject.set(x, "canDelete", value.asInstanceOf[js.Any])
+      inline def setCanDelete(value: Boolean): Self = StObject.set(x, "canDelete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanDownload(value: Boolean): Self = StObject.set(x, "canDownload", value.asInstanceOf[js.Any])
+      inline def setCanDownload(value: Boolean): Self = StObject.set(x, "canDownload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanEdit(value: Boolean): Self = StObject.set(x, "canEdit", value.asInstanceOf[js.Any])
+      inline def setCanEdit(value: Boolean): Self = StObject.set(x, "canEdit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanListChildren(value: Boolean): Self = StObject.set(x, "canListChildren", value.asInstanceOf[js.Any])
+      inline def setCanListChildren(value: Boolean): Self = StObject.set(x, "canListChildren", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanMoveItemIntoTeamDrive(value: Boolean): Self = StObject.set(x, "canMoveItemIntoTeamDrive", value.asInstanceOf[js.Any])
+      inline def setCanMoveItemIntoTeamDrive(value: Boolean): Self = StObject.set(x, "canMoveItemIntoTeamDrive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanMoveTeamDriveItem(value: Boolean): Self = StObject.set(x, "canMoveTeamDriveItem", value.asInstanceOf[js.Any])
+      inline def setCanMoveTeamDriveItem(value: Boolean): Self = StObject.set(x, "canMoveTeamDriveItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanReadRevisions(value: Boolean): Self = StObject.set(x, "canReadRevisions", value.asInstanceOf[js.Any])
+      inline def setCanReadRevisions(value: Boolean): Self = StObject.set(x, "canReadRevisions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanReadTeamDrive(value: Boolean): Self = StObject.set(x, "canReadTeamDrive", value.asInstanceOf[js.Any])
+      inline def setCanReadTeamDrive(value: Boolean): Self = StObject.set(x, "canReadTeamDrive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanRemoveChildren(value: Boolean): Self = StObject.set(x, "canRemoveChildren", value.asInstanceOf[js.Any])
+      inline def setCanRemoveChildren(value: Boolean): Self = StObject.set(x, "canRemoveChildren", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanRename(value: Boolean): Self = StObject.set(x, "canRename", value.asInstanceOf[js.Any])
+      inline def setCanRename(value: Boolean): Self = StObject.set(x, "canRename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanShare(value: Boolean): Self = StObject.set(x, "canShare", value.asInstanceOf[js.Any])
+      inline def setCanShare(value: Boolean): Self = StObject.set(x, "canShare", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanTrash(value: Boolean): Self = StObject.set(x, "canTrash", value.asInstanceOf[js.Any])
+      inline def setCanTrash(value: Boolean): Self = StObject.set(x, "canTrash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanUntrash(value: Boolean): Self = StObject.set(x, "canUntrash", value.asInstanceOf[js.Any])
+      inline def setCanUntrash(value: Boolean): Self = StObject.set(x, "canUntrash", value.asInstanceOf[js.Any])
     }
   }
   
@@ -363,8 +308,7 @@ object anon {
   }
   object DisplayName {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       displayName: String,
       emailAddress: String,
       isAuthenticatedUser: Boolean,
@@ -375,26 +319,19 @@ object anon {
       __obj.asInstanceOf[DisplayName]
     }
     
-    @scala.inline
-    implicit class DisplayNameMutableBuilder[Self <: DisplayName] (val x: Self) extends AnyVal {
+    extension [Self <: DisplayName](x: Self) {
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
+      inline def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAuthenticatedUser(value: Boolean): Self = StObject.set(x, "isAuthenticatedUser", value.asInstanceOf[js.Any])
+      inline def setIsAuthenticatedUser(value: Boolean): Self = StObject.set(x, "isAuthenticatedUser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKind(value: driveNumbersignuser): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: driveNumbersignuser): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPermissionId(value: String): Self = StObject.set(x, "permissionId", value.asInstanceOf[js.Any])
+      inline def setPermissionId(value: String): Self = StObject.set(x, "permissionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPicture(value: Url): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
+      inline def setPicture(value: Url): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
     }
   }
   
@@ -408,23 +345,18 @@ object anon {
   }
   object DurationMillis {
     
-    @scala.inline
-    def apply(durationMillis: Double, height: Double, width: Double): DurationMillis = {
+    inline def apply(durationMillis: Double, height: Double, width: Double): DurationMillis = {
       val __obj = js.Dynamic.literal(durationMillis = durationMillis.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[DurationMillis]
     }
     
-    @scala.inline
-    implicit class DurationMillisMutableBuilder[Self <: DurationMillis] (val x: Self) extends AnyVal {
+    extension [Self <: DurationMillis](x: Self) {
       
-      @scala.inline
-      def setDurationMillis(value: Double): Self = StObject.set(x, "durationMillis", value.asInstanceOf[js.Any])
+      inline def setDurationMillis(value: Double): Self = StObject.set(x, "durationMillis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -444,8 +376,7 @@ object anon {
   }
   object Hidden {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       hidden: Boolean,
       modified: Boolean,
       restricted: Boolean,
@@ -457,26 +388,19 @@ object anon {
       __obj.asInstanceOf[Hidden]
     }
     
-    @scala.inline
-    implicit class HiddenMutableBuilder[Self <: Hidden] (val x: Self) extends AnyVal {
+    extension [Self <: Hidden](x: Self) {
       
-      @scala.inline
-      def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModified(value: Boolean): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
+      inline def setModified(value: Boolean): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestricted(value: Boolean): Self = StObject.set(x, "restricted", value.asInstanceOf[js.Any])
+      inline def setRestricted(value: Boolean): Self = StObject.set(x, "restricted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStarred(value: Boolean): Self = StObject.set(x, "starred", value.asInstanceOf[js.Any])
+      inline def setStarred(value: Boolean): Self = StObject.set(x, "starred", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrashed(value: Boolean): Self = StObject.set(x, "trashed", value.asInstanceOf[js.Any])
+      inline def setTrashed(value: Boolean): Self = StObject.set(x, "trashed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewed(value: Boolean): Self = StObject.set(x, "viewed", value.asInstanceOf[js.Any])
+      inline def setViewed(value: Boolean): Self = StObject.set(x, "viewed", value.asInstanceOf[js.Any])
     }
   }
   
@@ -488,20 +412,16 @@ object anon {
   }
   object Image {
     
-    @scala.inline
-    def apply(image: Uint8Array, mimType: String): Image = {
+    inline def apply(image: Uint8Array, mimType: String): Image = {
       val __obj = js.Dynamic.literal(image = image.asInstanceOf[js.Any], mimType = mimType.asInstanceOf[js.Any])
       __obj.asInstanceOf[Image]
     }
     
-    @scala.inline
-    implicit class ImageMutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
+    extension [Self <: Image](x: Self) {
       
-      @scala.inline
-      def setImage(value: Uint8Array): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: Uint8Array): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimType(value: String): Self = StObject.set(x, "mimType", value.asInstanceOf[js.Any])
+      inline def setMimType(value: String): Self = StObject.set(x, "mimType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -511,17 +431,14 @@ object anon {
   }
   object Text {
     
-    @scala.inline
-    def apply(text: String): Text = {
+    inline def apply(text: String): Text = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[Text]
     }
     
-    @scala.inline
-    implicit class TextMutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
+    extension [Self <: Text](x: Self) {
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -531,17 +448,14 @@ object anon {
   }
   object Url {
     
-    @scala.inline
-    def apply(url: String): Url = {
+    inline def apply(url: String): Url = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Url]
     }
     
-    @scala.inline
-    implicit class UrlMutableBuilder[Self <: Url] (val x: Self) extends AnyVal {
+    extension [Self <: Url](x: Self) {
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

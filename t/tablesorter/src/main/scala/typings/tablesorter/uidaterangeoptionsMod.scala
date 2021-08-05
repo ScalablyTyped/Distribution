@@ -36,38 +36,28 @@ object uidaterangeoptionsMod {
   }
   object UIDateRangeOptions {
     
-    @scala.inline
-    def apply(): UIDateRangeOptions = {
+    inline def apply(): UIDateRangeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UIDateRangeOptions]
     }
     
-    @scala.inline
-    implicit class UIDateRangeOptionsMutableBuilder[Self <: UIDateRangeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UIDateRangeOptions](x: Self) {
       
-      @scala.inline
-      def setFrom(value: Date): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: Date): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      @scala.inline
-      def setTextFrom(value: String): Self = StObject.set(x, "textFrom", value.asInstanceOf[js.Any])
+      inline def setTextFrom(value: String): Self = StObject.set(x, "textFrom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextFromUndefined: Self = StObject.set(x, "textFrom", js.undefined)
+      inline def setTextFromUndefined: Self = StObject.set(x, "textFrom", js.undefined)
       
-      @scala.inline
-      def setTextTo(value: String): Self = StObject.set(x, "textTo", value.asInstanceOf[js.Any])
+      inline def setTextTo(value: String): Self = StObject.set(x, "textTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextToUndefined: Self = StObject.set(x, "textTo", js.undefined)
+      inline def setTextToUndefined: Self = StObject.set(x, "textTo", js.undefined)
       
-      @scala.inline
-      def setTo(value: Date): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: Date): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     }
   }
 }

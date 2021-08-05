@@ -13,6 +13,5 @@ object relativeTimeFormatFormatRelativeTimeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def FormatRelativeTime(rtf: RelativeTimeFormat, value: Double, unit: RelativeTimeFormattableUnit, implDetails: `0`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("FormatRelativeTime")(rtf.asInstanceOf[js.Any], value.asInstanceOf[js.Any], unit.asInstanceOf[js.Any], implDetails.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def FormatRelativeTime(rtf: RelativeTimeFormat, value: Double, unit: RelativeTimeFormattableUnit, implDetails: `0`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("FormatRelativeTime")(rtf.asInstanceOf[js.Any], value.asInstanceOf[js.Any], unit.asInstanceOf[js.Any], implDetails.asInstanceOf[js.Any])).asInstanceOf[String]
 }

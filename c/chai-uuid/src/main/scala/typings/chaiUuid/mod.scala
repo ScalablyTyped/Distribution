@@ -59,23 +59,17 @@ object mod extends Shortcut {
       trait UuidVersion extends StObject
       object UuidVersion {
         
-        @scala.inline
-        def _empty: typings.chaiUuid.chaiUuidStrings._empty = "".asInstanceOf[typings.chaiUuid.chaiUuidStrings._empty]
+        inline def _empty: typings.chaiUuid.chaiUuidStrings._empty = "".asInstanceOf[typings.chaiUuid.chaiUuidStrings._empty]
         
-        @scala.inline
-        def v1: typings.chaiUuid.chaiUuidStrings.v1 = "v1".asInstanceOf[typings.chaiUuid.chaiUuidStrings.v1]
+        inline def v1: typings.chaiUuid.chaiUuidStrings.v1 = "v1".asInstanceOf[typings.chaiUuid.chaiUuidStrings.v1]
         
-        @scala.inline
-        def v2: typings.chaiUuid.chaiUuidStrings.v2 = "v2".asInstanceOf[typings.chaiUuid.chaiUuidStrings.v2]
+        inline def v2: typings.chaiUuid.chaiUuidStrings.v2 = "v2".asInstanceOf[typings.chaiUuid.chaiUuidStrings.v2]
         
-        @scala.inline
-        def v3: typings.chaiUuid.chaiUuidStrings.v3 = "v3".asInstanceOf[typings.chaiUuid.chaiUuidStrings.v3]
+        inline def v3: typings.chaiUuid.chaiUuidStrings.v3 = "v3".asInstanceOf[typings.chaiUuid.chaiUuidStrings.v3]
         
-        @scala.inline
-        def v4: typings.chaiUuid.chaiUuidStrings.v4 = "v4".asInstanceOf[typings.chaiUuid.chaiUuidStrings.v4]
+        inline def v4: typings.chaiUuid.chaiUuidStrings.v4 = "v4".asInstanceOf[typings.chaiUuid.chaiUuidStrings.v4]
         
-        @scala.inline
-        def v5: typings.chaiUuid.chaiUuidStrings.v5 = "v5".asInstanceOf[typings.chaiUuid.chaiUuidStrings.v5]
+        inline def v5: typings.chaiUuid.chaiUuidStrings.v5 = "v5".asInstanceOf[typings.chaiUuid.chaiUuidStrings.v5]
       }
     }
   }

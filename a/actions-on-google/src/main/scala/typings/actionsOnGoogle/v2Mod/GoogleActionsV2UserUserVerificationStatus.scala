@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GoogleActionsV2UserUserVerificationStatus extends StObject
 object GoogleActionsV2UserUserVerificationStatus {
   
-  @scala.inline
-  def GUEST: typings.actionsOnGoogle.actionsOnGoogleStrings.GUEST = "GUEST".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.GUEST]
+  inline def GUEST: typings.actionsOnGoogle.actionsOnGoogleStrings.GUEST = "GUEST".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.GUEST]
   
-  @scala.inline
-  def UNKNOWN: typings.actionsOnGoogle.actionsOnGoogleStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.UNKNOWN]
+  inline def UNKNOWN: typings.actionsOnGoogle.actionsOnGoogleStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.UNKNOWN]
   
-  @scala.inline
-  def VERIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.VERIFIED = "VERIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.VERIFIED]
+  inline def VERIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.VERIFIED = "VERIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.VERIFIED]
 }

@@ -16,17 +16,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def axisBottom[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): Axis[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("axisBottom")(scale.asInstanceOf[js.Any]).asInstanceOf[Axis[Domain]]
+  inline def axisBottom[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): Axis[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("axisBottom")(scale.asInstanceOf[js.Any]).asInstanceOf[Axis[Domain]]
   
-  @scala.inline
-  def axisLeft[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): Axis[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("axisLeft")(scale.asInstanceOf[js.Any]).asInstanceOf[Axis[Domain]]
+  inline def axisLeft[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): Axis[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("axisLeft")(scale.asInstanceOf[js.Any]).asInstanceOf[Axis[Domain]]
   
-  @scala.inline
-  def axisRight[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): Axis[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("axisRight")(scale.asInstanceOf[js.Any]).asInstanceOf[Axis[Domain]]
+  inline def axisRight[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): Axis[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("axisRight")(scale.asInstanceOf[js.Any]).asInstanceOf[Axis[Domain]]
   
-  @scala.inline
-  def axisTop[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): Axis[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("axisTop")(scale.asInstanceOf[js.Any]).asInstanceOf[Axis[Domain]]
+  inline def axisTop[Domain /* <: AxisDomain */](scale: AxisScale[Domain]): Axis[Domain] = ^.asInstanceOf[js.Dynamic].applyDynamic("axisTop")(scale.asInstanceOf[js.Any]).asInstanceOf[Axis[Domain]]
   
   @js.native
   trait Axis[Domain] extends StObject {

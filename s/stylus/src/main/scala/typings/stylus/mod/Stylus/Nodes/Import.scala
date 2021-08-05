@@ -15,8 +15,7 @@ trait Import
 }
 object Import {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     coerce: Node => Node,
     column: Double,
     eval: () => Node,
@@ -37,13 +36,10 @@ object Import {
     __obj.asInstanceOf[Import]
   }
   
-  @scala.inline
-  implicit class ImportMutableBuilder[Self <: Import] (val x: Self) extends AnyVal {
+  extension [Self <: Import](x: Self) {
     
-    @scala.inline
-    def setOnce(value: scala.Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
+    inline def setOnce(value: scala.Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: Expression): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: Expression): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

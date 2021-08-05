@@ -24,19 +24,15 @@ trait World extends StObject {
 }
 object World {
   
-  @scala.inline
-  def apply(bounds: Bounds, gravity: Gravity): World = {
+  inline def apply(bounds: Bounds, gravity: Gravity): World = {
     val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], gravity = gravity.asInstanceOf[js.Any])
     __obj.asInstanceOf[World]
   }
   
-  @scala.inline
-  implicit class WorldMutableBuilder[Self <: World] (val x: Self) extends AnyVal {
+  extension [Self <: World](x: Self) {
     
-    @scala.inline
-    def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGravity(value: Gravity): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
+    inline def setGravity(value: Gravity): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
   }
 }

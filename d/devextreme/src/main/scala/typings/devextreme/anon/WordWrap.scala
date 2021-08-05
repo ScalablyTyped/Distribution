@@ -21,37 +21,27 @@ trait WordWrap extends StObject {
 }
 object WordWrap {
   
-  @scala.inline
-  def apply(): WordWrap = {
+  inline def apply(): WordWrap = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WordWrap]
   }
   
-  @scala.inline
-  implicit class WordWrapMutableBuilder[Self <: WordWrap] (val x: Self) extends AnyVal {
+  extension [Self <: WordWrap](x: Self) {
     
-    @scala.inline
-    def setFont(value: typings.devextreme.mod.DevExpress.viz.Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: typings.devextreme.mod.DevExpress.viz.Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+    inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
     
-    @scala.inline
-    def setTextOverflow(value: ellipsis | hide | none): Self = StObject.set(x, "textOverflow", value.asInstanceOf[js.Any])
+    inline def setTextOverflow(value: ellipsis | hide | none): Self = StObject.set(x, "textOverflow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextOverflowUndefined: Self = StObject.set(x, "textOverflow", js.undefined)
+    inline def setTextOverflowUndefined: Self = StObject.set(x, "textOverflow", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
-    @scala.inline
-    def setWordWrap(value: normal | breakWord | none): Self = StObject.set(x, "wordWrap", value.asInstanceOf[js.Any])
+    inline def setWordWrap(value: normal | breakWord | none): Self = StObject.set(x, "wordWrap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordWrapUndefined: Self = StObject.set(x, "wordWrap", js.undefined)
+    inline def setWordWrapUndefined: Self = StObject.set(x, "wordWrap", js.undefined)
   }
 }

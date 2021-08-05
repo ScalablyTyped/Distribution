@@ -29,14 +29,14 @@ object contextMod {
       message: js.Any
     ) = this()
     
-    val _errors: js.Any = js.native
+    /* private */ val _errors: js.Any = js.native
     
     def addError(message: js.Any, nestedErrors: js.Array[ValidationError]): Unit = js.native
     def addError(message: js.Any, value: js.Any, meta: Meta): Unit = js.native
     
     def addFieldInstances(instances: js.Array[FieldInstance]): Unit = js.native
     
-    val dataMap: js.Any = js.native
+    /* private */ val dataMap: js.Any = js.native
     
     def errors: js.Array[ValidationError] = js.native
     
@@ -100,8 +100,7 @@ object contextMod {
   }
   object ReadonlyContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _errors: js.Any,
       constructor: (/* fields */ js.Array[String], /* locations */ js.Array[Location], /* stack */ js.Array[ContextItem], /* optional */ Optional, /* message */ js.UndefOr[js.Any]) => js.Any,
       dataMap: js.Any,
@@ -116,52 +115,37 @@ object contextMod {
       __obj.asInstanceOf[ReadonlyContext]
     }
     
-    @scala.inline
-    implicit class ReadonlyContextMutableBuilder[Self <: ReadonlyContext] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyContext](x: Self) {
       
-      @scala.inline
-      def setConstructor(
+      inline def setConstructor(
         value: (/* fields */ js.Array[String], /* locations */ js.Array[Location], /* stack */ js.Array[ContextItem], /* optional */ Optional, /* message */ js.UndefOr[js.Any]) => js.Any
       ): Self = StObject.set(x, "constructor", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setDataMap(value: js.Any): Self = StObject.set(x, "dataMap", value.asInstanceOf[js.Any])
+      inline def setDataMap(value: js.Any): Self = StObject.set(x, "dataMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrors(value: () => js.Array[ValidationError]): Self = StObject.set(x, "errors", js.Any.fromFunction0(value))
+      inline def setErrors(value: () => js.Array[ValidationError]): Self = StObject.set(x, "errors", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+      inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
       
-      @scala.inline
-      def setGetData(value: /* options */ js.UndefOr[RequiredOnly] => js.Array[FieldInstance]): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
+      inline def setGetData(value: /* options */ js.UndefOr[RequiredOnly] => js.Array[FieldInstance]): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLocations(value: js.Array[Location]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+      inline def setLocations(value: js.Array[Location]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationsVarargs(value: Location*): Self = StObject.set(x, "locations", js.Array(value :_*))
+      inline def setLocationsVarargs(value: Location*): Self = StObject.set(x, "locations", js.Array(value :_*))
       
-      @scala.inline
-      def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setOptional(value: Optional): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+      inline def setOptional(value: Optional): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStack(value: js.Array[ContextItem]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: js.Array[ContextItem]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackVarargs(value: ContextItem*): Self = StObject.set(x, "stack", js.Array(value :_*))
+      inline def setStackVarargs(value: ContextItem*): Self = StObject.set(x, "stack", js.Array(value :_*))
       
-      @scala.inline
-      def set_errors(value: js.Any): Self = StObject.set(x, "_errors", value.asInstanceOf[js.Any])
+      inline def set_errors(value: js.Any): Self = StObject.set(x, "_errors", value.asInstanceOf[js.Any])
     }
   }
 }

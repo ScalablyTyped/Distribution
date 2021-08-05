@@ -15,8 +15,7 @@ trait ReadonlyCountry extends StObject {
 }
 object ReadonlyCountry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dialCode: String,
     id: /* keyof baseui.baseui/phone-input.COUNTRIES */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 241 */ js.Any,
     label: String
@@ -25,18 +24,14 @@ object ReadonlyCountry {
     __obj.asInstanceOf[ReadonlyCountry]
   }
   
-  @scala.inline
-  implicit class ReadonlyCountryMutableBuilder[Self <: ReadonlyCountry] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyCountry](x: Self) {
     
-    @scala.inline
-    def setDialCode(value: String): Self = StObject.set(x, "dialCode", value.asInstanceOf[js.Any])
+    inline def setDialCode(value: String): Self = StObject.set(x, "dialCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(
+    inline def setId(
       value: /* keyof baseui.baseui/phone-input.COUNTRIES */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 241 */ js.Any
     ): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }
 }

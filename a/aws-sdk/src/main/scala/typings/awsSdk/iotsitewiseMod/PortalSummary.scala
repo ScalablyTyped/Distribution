@@ -45,49 +45,35 @@ trait PortalSummary extends StObject {
 }
 object PortalSummary {
   
-  @scala.inline
-  def apply(id: ID, name: Name, startUrl: Url, status: PortalStatus): PortalSummary = {
+  inline def apply(id: ID, name: Name, startUrl: Url, status: PortalStatus): PortalSummary = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], startUrl = startUrl.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[PortalSummary]
   }
   
-  @scala.inline
-  implicit class PortalSummaryMutableBuilder[Self <: PortalSummary] (val x: Self) extends AnyVal {
+  extension [Self <: PortalSummary](x: Self) {
     
-    @scala.inline
-    def setCreationDate(value: Timestamp): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: Timestamp): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "creationDate", js.undefined)
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setId(value: ID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: ID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdateDate(value: Timestamp): Self = StObject.set(x, "lastUpdateDate", value.asInstanceOf[js.Any])
+    inline def setLastUpdateDate(value: Timestamp): Self = StObject.set(x, "lastUpdateDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdateDateUndefined: Self = StObject.set(x, "lastUpdateDate", js.undefined)
+    inline def setLastUpdateDateUndefined: Self = StObject.set(x, "lastUpdateDate", js.undefined)
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: ARN): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: ARN): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
     
-    @scala.inline
-    def setStartUrl(value: Url): Self = StObject.set(x, "startUrl", value.asInstanceOf[js.Any])
+    inline def setStartUrl(value: Url): Self = StObject.set(x, "startUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: PortalStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: PortalStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

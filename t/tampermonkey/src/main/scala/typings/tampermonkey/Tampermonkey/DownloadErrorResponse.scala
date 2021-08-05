@@ -30,22 +30,17 @@ trait DownloadErrorResponse extends StObject {
 }
 object DownloadErrorResponse {
   
-  @scala.inline
-  def apply(error: not_enabled | not_whitelisted | not_permitted | not_supported | not_succeeded): DownloadErrorResponse = {
+  inline def apply(error: not_enabled | not_whitelisted | not_permitted | not_supported | not_succeeded): DownloadErrorResponse = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadErrorResponse]
   }
   
-  @scala.inline
-  implicit class DownloadErrorResponseMutableBuilder[Self <: DownloadErrorResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DownloadErrorResponse](x: Self) {
     
-    @scala.inline
-    def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    @scala.inline
-    def setError(value: not_enabled | not_whitelisted | not_permitted | not_supported | not_succeeded): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: not_enabled | not_whitelisted | not_permitted | not_supported | not_succeeded): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }
 }

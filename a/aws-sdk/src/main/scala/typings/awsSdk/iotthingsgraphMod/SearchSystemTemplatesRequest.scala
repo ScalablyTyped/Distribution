@@ -23,34 +23,25 @@ trait SearchSystemTemplatesRequest extends StObject {
 }
 object SearchSystemTemplatesRequest {
   
-  @scala.inline
-  def apply(): SearchSystemTemplatesRequest = {
+  inline def apply(): SearchSystemTemplatesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchSystemTemplatesRequest]
   }
   
-  @scala.inline
-  implicit class SearchSystemTemplatesRequestMutableBuilder[Self <: SearchSystemTemplatesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SearchSystemTemplatesRequest](x: Self) {
     
-    @scala.inline
-    def setFilters(value: SystemTemplateFilters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: SystemTemplateFilters): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: SystemTemplateFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: SystemTemplateFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

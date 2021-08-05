@@ -26,28 +26,21 @@ trait PointCloudValueFilterProperties
 }
 object PointCloudValueFilterProperties {
   
-  @scala.inline
-  def apply(): PointCloudValueFilterProperties = {
+  inline def apply(): PointCloudValueFilterProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PointCloudValueFilterProperties]
   }
   
-  @scala.inline
-  implicit class PointCloudValueFilterPropertiesMutableBuilder[Self <: PointCloudValueFilterProperties] (val x: Self) extends AnyVal {
+  extension [Self <: PointCloudValueFilterProperties](x: Self) {
     
-    @scala.inline
-    def setMode(value: include | exclude): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: include | exclude): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

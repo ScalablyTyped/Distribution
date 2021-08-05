@@ -20,49 +20,35 @@ trait MapLayerDefaultsBubble extends StObject {
 }
 object MapLayerDefaultsBubble {
   
-  @scala.inline
-  def apply(): MapLayerDefaultsBubble = {
+  inline def apply(): MapLayerDefaultsBubble = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapLayerDefaultsBubble]
   }
   
-  @scala.inline
-  implicit class MapLayerDefaultsBubbleMutableBuilder[Self <: MapLayerDefaultsBubble] (val x: Self) extends AnyVal {
+  extension [Self <: MapLayerDefaultsBubble](x: Self) {
     
-    @scala.inline
-    def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
+    inline def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributionUndefined: Self = StObject.set(x, "attribution", js.undefined)
+    inline def setAttributionUndefined: Self = StObject.set(x, "attribution", js.undefined)
     
-    @scala.inline
-    def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+    inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
+    inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
     
-    @scala.inline
-    def setMinSize(value: Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
+    inline def setMinSize(value: Double): Self = StObject.set(x, "minSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
+    inline def setMinSizeUndefined: Self = StObject.set(x, "minSize", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    @scala.inline
-    def setStyle(value: MapLayerDefaultsBubbleStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: MapLayerDefaultsBubbleStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setSymbol(value: String | js.Function): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: String | js.Function): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+    inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
   }
 }

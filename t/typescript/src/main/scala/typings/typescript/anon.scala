@@ -36,17 +36,14 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(): `0` = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal(done = true)
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setDone(value: `true`): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+      inline def setDone(value: `true`): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     }
   }
   
@@ -58,20 +55,16 @@ object anon {
   }
   object Affected {
     
-    @scala.inline
-    def apply[T](affected: SourceFile | Program, result: T): Affected[T] = {
+    inline def apply[T](affected: SourceFile | Program, result: T): Affected[T] = {
       val __obj = js.Dynamic.literal(affected = affected.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
       __obj.asInstanceOf[Affected[T]]
     }
     
-    @scala.inline
-    implicit class AffectedMutableBuilder[Self <: Affected[?], T] (val x: Self & Affected[T]) extends AnyVal {
+    extension [Self <: Affected[?], T](x: Self & Affected[T]) {
       
-      @scala.inline
-      def setAffected(value: SourceFile | Program): Self = StObject.set(x, "affected", value.asInstanceOf[js.Any])
+      inline def setAffected(value: SourceFile | Program): Self = StObject.set(x, "affected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResult(value: T): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: T): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }
   }
   
@@ -87,26 +80,20 @@ object anon {
   }
   object Assignable {
     
-    @scala.inline
-    def apply(assignable: Double, identity: Double, strictSubtype: Double, subtype: Double): Assignable = {
+    inline def apply(assignable: Double, identity: Double, strictSubtype: Double, subtype: Double): Assignable = {
       val __obj = js.Dynamic.literal(assignable = assignable.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], strictSubtype = strictSubtype.asInstanceOf[js.Any], subtype = subtype.asInstanceOf[js.Any])
       __obj.asInstanceOf[Assignable]
     }
     
-    @scala.inline
-    implicit class AssignableMutableBuilder[Self <: Assignable] (val x: Self) extends AnyVal {
+    extension [Self <: Assignable](x: Self) {
       
-      @scala.inline
-      def setAssignable(value: Double): Self = StObject.set(x, "assignable", value.asInstanceOf[js.Any])
+      inline def setAssignable(value: Double): Self = StObject.set(x, "assignable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentity(value: Double): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: Double): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictSubtype(value: Double): Self = StObject.set(x, "strictSubtype", value.asInstanceOf[js.Any])
+      inline def setStrictSubtype(value: Double): Self = StObject.set(x, "strictSubtype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtype(value: Double): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
+      inline def setSubtype(value: Double): Self = StObject.set(x, "subtype", value.asInstanceOf[js.Any])
     }
   }
   
@@ -118,26 +105,20 @@ object anon {
   }
   object Config {
     
-    @scala.inline
-    def apply(): Config = {
+    inline def apply(): Config = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: js.Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setError(value: Diagnostic): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Diagnostic): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     }
   }
   
@@ -149,23 +130,18 @@ object anon {
   }
   object Done {
     
-    @scala.inline
-    def apply[T](value: T): Done[T] = {
+    inline def apply[T](value: T): Done[T] = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Done[T]]
     }
     
-    @scala.inline
-    implicit class DoneMutableBuilder[Self <: Done[?], T] (val x: Self & Done[T]) extends AnyVal {
+    extension [Self <: Done[?], T](x: Self & Done[T]) {
       
-      @scala.inline
-      def setDone(value: `false`): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+      inline def setDone(value: `false`): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
+      inline def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
       
-      @scala.inline
-      def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -177,23 +153,18 @@ object anon {
   }
   object Errors {
     
-    @scala.inline
-    def apply(errors: js.Array[Diagnostic], options: CompilerOptions): Errors = {
+    inline def apply(errors: js.Array[Diagnostic], options: CompilerOptions): Errors = {
       val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[Errors]
     }
     
-    @scala.inline
-    implicit class ErrorsMutableBuilder[Self <: Errors] (val x: Self) extends AnyVal {
+    extension [Self <: Errors](x: Self) {
       
-      @scala.inline
-      def setErrors(value: js.Array[Diagnostic]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[Diagnostic]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsVarargs(value: Diagnostic*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: Diagnostic*): Self = StObject.set(x, "errors", js.Array(value :_*))
       
-      @scala.inline
-      def setOptions(value: CompilerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: CompilerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
   }
   
@@ -203,17 +174,14 @@ object anon {
   }
   object EscapedIdentifier {
     
-    @scala.inline
-    def apply(__escapedIdentifier: Unit): EscapedIdentifier = {
+    inline def apply(__escapedIdentifier: Unit): EscapedIdentifier = {
       val __obj = js.Dynamic.literal(__escapedIdentifier = __escapedIdentifier.asInstanceOf[js.Any])
       __obj.asInstanceOf[EscapedIdentifier]
     }
     
-    @scala.inline
-    implicit class EscapedIdentifierMutableBuilder[Self <: EscapedIdentifier] (val x: Self) extends AnyVal {
+    extension [Self <: EscapedIdentifier](x: Self) {
       
-      @scala.inline
-      def set__escapedIdentifier(value: Unit): Self = StObject.set(x, "__escapedIdentifier", value.asInstanceOf[js.Any])
+      inline def set__escapedIdentifier(value: Unit): Self = StObject.set(x, "__escapedIdentifier", value.asInstanceOf[js.Any])
     }
   }
   
@@ -300,8 +268,7 @@ object anon {
   }
   object FileExists {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fileExists: String => Boolean,
       getExecutingFilePath: () => String,
       readFile: String => js.UndefOr[String],
@@ -311,20 +278,15 @@ object anon {
       __obj.asInstanceOf[FileExists]
     }
     
-    @scala.inline
-    implicit class FileExistsMutableBuilder[Self <: FileExists] (val x: Self) extends AnyVal {
+    extension [Self <: FileExists](x: Self) {
       
-      @scala.inline
-      def setFileExists(value: String => Boolean): Self = StObject.set(x, "fileExists", js.Any.fromFunction1(value))
+      inline def setFileExists(value: String => Boolean): Self = StObject.set(x, "fileExists", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetExecutingFilePath(value: () => String): Self = StObject.set(x, "getExecutingFilePath", js.Any.fromFunction0(value))
+      inline def setGetExecutingFilePath(value: () => String): Self = StObject.set(x, "getExecutingFilePath", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReadFile(value: String => js.UndefOr[String]): Self = StObject.set(x, "readFile", js.Any.fromFunction1(value))
+      inline def setReadFile(value: String => js.UndefOr[String]): Self = StObject.set(x, "readFile", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResolvePath(value: String => String): Self = StObject.set(x, "resolvePath", js.Any.fromFunction1(value))
+      inline def setResolvePath(value: String => String): Self = StObject.set(x, "resolvePath", js.Any.fromFunction1(value))
     }
   }
   
@@ -419,20 +381,16 @@ object anon {
   }
   object Metadata {
     
-    @scala.inline
-    def apply(): Metadata = {
+    inline def apply(): Metadata = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Metadata]
     }
     
-    @scala.inline
-    implicit class MetadataMutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
+    extension [Self <: Metadata](x: Self) {
       
-      @scala.inline
-      def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     }
   }
   
@@ -444,23 +402,18 @@ object anon {
   }
   object Options {
     
-    @scala.inline
-    def apply(errors: js.Array[Diagnostic], options: TypeAcquisition): Options = {
+    inline def apply(errors: js.Array[Diagnostic], options: TypeAcquisition): Options = {
       val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setErrors(value: js.Array[Diagnostic]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[Diagnostic]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsVarargs(value: Diagnostic*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: Diagnostic*): Self = StObject.set(x, "errors", js.Array(value :_*))
       
-      @scala.inline
-      def setOptions(value: TypeAcquisition): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: TypeAcquisition): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
   }
   
@@ -470,20 +423,16 @@ object anon {
   }
   object TypeArguments {
     
-    @scala.inline
-    def apply(): TypeArguments = {
+    inline def apply(): TypeArguments = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TypeArguments]
     }
     
-    @scala.inline
-    implicit class TypeArgumentsMutableBuilder[Self <: TypeArguments] (val x: Self) extends AnyVal {
+    extension [Self <: TypeArguments](x: Self) {
       
-      @scala.inline
-      def setTypeArguments(value: NodeArray[TypeNode]): Self = StObject.set(x, "typeArguments", value.asInstanceOf[js.Any])
+      inline def setTypeArguments(value: NodeArray[TypeNode]): Self = StObject.set(x, "typeArguments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeArgumentsUndefined: Self = StObject.set(x, "typeArguments", js.undefined)
+      inline def setTypeArgumentsUndefined: Self = StObject.set(x, "typeArguments", js.undefined)
     }
   }
   
@@ -513,8 +462,7 @@ object anon {
   }
   object WithMetadataCompletionInf {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       entries: js.Array[CompletionEntry],
       isGlobalCompletion: Boolean,
       isMemberCompletion: Boolean,
@@ -524,35 +472,25 @@ object anon {
       __obj.asInstanceOf[WithMetadataCompletionInf]
     }
     
-    @scala.inline
-    implicit class WithMetadataCompletionInfMutableBuilder[Self <: WithMetadataCompletionInf] (val x: Self) extends AnyVal {
+    extension [Self <: WithMetadataCompletionInf](x: Self) {
       
-      @scala.inline
-      def setEntries(value: js.Array[CompletionEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+      inline def setEntries(value: js.Array[CompletionEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntriesVarargs(value: CompletionEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
+      inline def setEntriesVarargs(value: CompletionEntry*): Self = StObject.set(x, "entries", js.Array(value :_*))
       
-      @scala.inline
-      def setIsGlobalCompletion(value: Boolean): Self = StObject.set(x, "isGlobalCompletion", value.asInstanceOf[js.Any])
+      inline def setIsGlobalCompletion(value: Boolean): Self = StObject.set(x, "isGlobalCompletion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMemberCompletion(value: Boolean): Self = StObject.set(x, "isMemberCompletion", value.asInstanceOf[js.Any])
+      inline def setIsMemberCompletion(value: Boolean): Self = StObject.set(x, "isMemberCompletion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsNewIdentifierLocation(value: Boolean): Self = StObject.set(x, "isNewIdentifierLocation", value.asInstanceOf[js.Any])
+      inline def setIsNewIdentifierLocation(value: Boolean): Self = StObject.set(x, "isNewIdentifierLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setOptionalReplacementSpan(value: TextSpan): Self = StObject.set(x, "optionalReplacementSpan", value.asInstanceOf[js.Any])
+      inline def setOptionalReplacementSpan(value: TextSpan): Self = StObject.set(x, "optionalReplacementSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionalReplacementSpanUndefined: Self = StObject.set(x, "optionalReplacementSpan", js.undefined)
+      inline def setOptionalReplacementSpanUndefined: Self = StObject.set(x, "optionalReplacementSpan", js.undefined)
     }
   }
 }

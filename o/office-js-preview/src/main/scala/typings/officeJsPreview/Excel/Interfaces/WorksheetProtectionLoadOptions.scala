@@ -36,31 +36,23 @@ trait WorksheetProtectionLoadOptions extends StObject {
 }
 object WorksheetProtectionLoadOptions {
   
-  @scala.inline
-  def apply(): WorksheetProtectionLoadOptions = {
+  inline def apply(): WorksheetProtectionLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorksheetProtectionLoadOptions]
   }
   
-  @scala.inline
-  implicit class WorksheetProtectionLoadOptionsMutableBuilder[Self <: WorksheetProtectionLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WorksheetProtectionLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setOptions(value: Boolean): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Boolean): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setProtected(value: Boolean): Self = StObject.set(x, "protected", value.asInstanceOf[js.Any])
+    inline def setProtected(value: Boolean): Self = StObject.set(x, "protected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtectedUndefined: Self = StObject.set(x, "protected", js.undefined)
+    inline def setProtectedUndefined: Self = StObject.set(x, "protected", js.undefined)
   }
 }

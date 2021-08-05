@@ -16,8 +16,7 @@ trait ConversationsInstance extends StObject {
 }
 object ConversationsInstance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     registerFileAttachmentCardViewHandler: js.Function1[/* attachmentCardView */ AttachmentCardView, Unit] => js.Function0[Unit],
     registerMessageViewHandler: js.Function1[/* messageView */ MessageView, Unit] => js.Function0[Unit],
     registerMessageViewHandlerAll: js.Function1[/* messageView */ MessageView, Unit] => js.Function0[Unit],
@@ -27,19 +26,14 @@ object ConversationsInstance {
     __obj.asInstanceOf[ConversationsInstance]
   }
   
-  @scala.inline
-  implicit class ConversationsInstanceMutableBuilder[Self <: ConversationsInstance] (val x: Self) extends AnyVal {
+  extension [Self <: ConversationsInstance](x: Self) {
     
-    @scala.inline
-    def setRegisterFileAttachmentCardViewHandler(value: js.Function1[/* attachmentCardView */ AttachmentCardView, Unit] => js.Function0[Unit]): Self = StObject.set(x, "registerFileAttachmentCardViewHandler", js.Any.fromFunction1(value))
+    inline def setRegisterFileAttachmentCardViewHandler(value: js.Function1[/* attachmentCardView */ AttachmentCardView, Unit] => js.Function0[Unit]): Self = StObject.set(x, "registerFileAttachmentCardViewHandler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegisterMessageViewHandler(value: js.Function1[/* messageView */ MessageView, Unit] => js.Function0[Unit]): Self = StObject.set(x, "registerMessageViewHandler", js.Any.fromFunction1(value))
+    inline def setRegisterMessageViewHandler(value: js.Function1[/* messageView */ MessageView, Unit] => js.Function0[Unit]): Self = StObject.set(x, "registerMessageViewHandler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegisterMessageViewHandlerAll(value: js.Function1[/* messageView */ MessageView, Unit] => js.Function0[Unit]): Self = StObject.set(x, "registerMessageViewHandlerAll", js.Any.fromFunction1(value))
+    inline def setRegisterMessageViewHandlerAll(value: js.Function1[/* messageView */ MessageView, Unit] => js.Function0[Unit]): Self = StObject.set(x, "registerMessageViewHandlerAll", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRegisterThreadViewHandler(value: js.Function1[/* threadView */ ThreadView, Unit] => js.Function0[Unit]): Self = StObject.set(x, "registerThreadViewHandler", js.Any.fromFunction1(value))
+    inline def setRegisterThreadViewHandler(value: js.Function1[/* threadView */ ThreadView, Unit] => js.Function0[Unit]): Self = StObject.set(x, "registerThreadViewHandler", js.Any.fromFunction1(value))
   }
 }

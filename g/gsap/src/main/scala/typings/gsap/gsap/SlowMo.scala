@@ -12,16 +12,13 @@ trait SlowMo
 }
 object SlowMo {
   
-  @scala.inline
-  def apply(config: (Double, Double, Boolean) => SlowMo, getRatio: Double => Double): SlowMo = {
+  inline def apply(config: (Double, Double, Boolean) => SlowMo, getRatio: Double => Double): SlowMo = {
     val __obj = js.Dynamic.literal(config = js.Any.fromFunction3(config), getRatio = js.Any.fromFunction1(getRatio))
     __obj.asInstanceOf[SlowMo]
   }
   
-  @scala.inline
-  implicit class SlowMoMutableBuilder[Self <: SlowMo] (val x: Self) extends AnyVal {
+  extension [Self <: SlowMo](x: Self) {
     
-    @scala.inline
-    def setConfig(value: (Double, Double, Boolean) => SlowMo): Self = StObject.set(x, "config", js.Any.fromFunction3(value))
+    inline def setConfig(value: (Double, Double, Boolean) => SlowMo): Self = StObject.set(x, "config", js.Any.fromFunction3(value))
   }
 }

@@ -18,30 +18,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Anchor extends StObject
 object Anchor {
   
-  @scala.inline
-  def bottom: typings.mapboxGl.mapboxGlStrings.bottom = "bottom".asInstanceOf[typings.mapboxGl.mapboxGlStrings.bottom]
+  inline def bottom: typings.mapboxGl.mapboxGlStrings.bottom = "bottom".asInstanceOf[typings.mapboxGl.mapboxGlStrings.bottom]
   
-  @scala.inline
-  def `bottom-left`: typings.mapboxGl.mapboxGlStrings.`bottom-left` = "bottom-left".asInstanceOf[typings.mapboxGl.mapboxGlStrings.`bottom-left`]
+  inline def `bottom-left`: typings.mapboxGl.mapboxGlStrings.`bottom-left` = "bottom-left".asInstanceOf[typings.mapboxGl.mapboxGlStrings.`bottom-left`]
   
-  @scala.inline
-  def `bottom-right`: typings.mapboxGl.mapboxGlStrings.`bottom-right` = "bottom-right".asInstanceOf[typings.mapboxGl.mapboxGlStrings.`bottom-right`]
+  inline def `bottom-right`: typings.mapboxGl.mapboxGlStrings.`bottom-right` = "bottom-right".asInstanceOf[typings.mapboxGl.mapboxGlStrings.`bottom-right`]
   
-  @scala.inline
-  def center: typings.mapboxGl.mapboxGlStrings.center = "center".asInstanceOf[typings.mapboxGl.mapboxGlStrings.center]
+  inline def center: typings.mapboxGl.mapboxGlStrings.center = "center".asInstanceOf[typings.mapboxGl.mapboxGlStrings.center]
   
-  @scala.inline
-  def left: typings.mapboxGl.mapboxGlStrings.left = "left".asInstanceOf[typings.mapboxGl.mapboxGlStrings.left]
+  inline def left: typings.mapboxGl.mapboxGlStrings.left = "left".asInstanceOf[typings.mapboxGl.mapboxGlStrings.left]
   
-  @scala.inline
-  def right: typings.mapboxGl.mapboxGlStrings.right = "right".asInstanceOf[typings.mapboxGl.mapboxGlStrings.right]
+  inline def right: typings.mapboxGl.mapboxGlStrings.right = "right".asInstanceOf[typings.mapboxGl.mapboxGlStrings.right]
   
-  @scala.inline
-  def top: typings.mapboxGl.mapboxGlStrings.top = "top".asInstanceOf[typings.mapboxGl.mapboxGlStrings.top]
+  inline def top: typings.mapboxGl.mapboxGlStrings.top = "top".asInstanceOf[typings.mapboxGl.mapboxGlStrings.top]
   
-  @scala.inline
-  def `top-left`: typings.mapboxGl.mapboxGlStrings.`top-left` = "top-left".asInstanceOf[typings.mapboxGl.mapboxGlStrings.`top-left`]
+  inline def `top-left`: typings.mapboxGl.mapboxGlStrings.`top-left` = "top-left".asInstanceOf[typings.mapboxGl.mapboxGlStrings.`top-left`]
   
-  @scala.inline
-  def `top-right`: typings.mapboxGl.mapboxGlStrings.`top-right` = "top-right".asInstanceOf[typings.mapboxGl.mapboxGlStrings.`top-right`]
+  inline def `top-right`: typings.mapboxGl.mapboxGlStrings.`top-right` = "top-right".asInstanceOf[typings.mapboxGl.mapboxGlStrings.`top-right`]
 }

@@ -12,25 +12,19 @@ trait LocationVisibility extends StObject {
 }
 object LocationVisibility {
   
-  @scala.inline
-  def apply(): LocationVisibility = {
+  inline def apply(): LocationVisibility = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocationVisibility]
   }
   
-  @scala.inline
-  implicit class LocationVisibilityMutableBuilder[Self <: LocationVisibility] (val x: Self) extends AnyVal {
+  extension [Self <: LocationVisibility](x: Self) {
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setVisibility(value: Boolean): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: Boolean): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
+    inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
   }
 }

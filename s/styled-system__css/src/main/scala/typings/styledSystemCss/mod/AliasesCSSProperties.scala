@@ -316,186 +316,127 @@ trait AliasesCSSProperties extends StObject {
 }
 object AliasesCSSProperties {
   
-  @scala.inline
-  def apply(): AliasesCSSProperties = {
+  inline def apply(): AliasesCSSProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AliasesCSSProperties]
   }
   
-  @scala.inline
-  implicit class AliasesCSSPropertiesMutableBuilder[Self <: AliasesCSSProperties] (val x: Self) extends AnyVal {
+  extension [Self <: AliasesCSSProperties](x: Self) {
     
-    @scala.inline
-    def setBg(value: BackgroundColorProperty | js.Array[BackgroundColorProperty]): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
+    inline def setBg(value: BackgroundColorProperty | js.Array[BackgroundColorProperty]): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBgUndefined: Self = StObject.set(x, "bg", js.undefined)
+    inline def setBgUndefined: Self = StObject.set(x, "bg", js.undefined)
     
-    @scala.inline
-    def setBgVarargs(value: BackgroundColorProperty*): Self = StObject.set(x, "bg", js.Array(value :_*))
+    inline def setBgVarargs(value: BackgroundColorProperty*): Self = StObject.set(x, "bg", js.Array(value :_*))
     
-    @scala.inline
-    def setM(value: (MarginProperty[Double | String]) | (js.Array[MarginProperty[Double | String]])): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
+    inline def setM(value: (MarginProperty[Double | String]) | (js.Array[MarginProperty[Double | String]])): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMUndefined: Self = StObject.set(x, "m", js.undefined)
+    inline def setMUndefined: Self = StObject.set(x, "m", js.undefined)
     
-    @scala.inline
-    def setMVarargs(value: (MarginProperty[Double | String])*): Self = StObject.set(x, "m", js.Array(value :_*))
+    inline def setMVarargs(value: (MarginProperty[Double | String])*): Self = StObject.set(x, "m", js.Array(value :_*))
     
-    @scala.inline
-    def setMarginX(value: (MarginLeftProperty[Double | String]) | (js.Array[MarginLeftProperty[Double | String]])): Self = StObject.set(x, "marginX", value.asInstanceOf[js.Any])
+    inline def setMarginX(value: (MarginLeftProperty[Double | String]) | (js.Array[MarginLeftProperty[Double | String]])): Self = StObject.set(x, "marginX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginXUndefined: Self = StObject.set(x, "marginX", js.undefined)
+    inline def setMarginXUndefined: Self = StObject.set(x, "marginX", js.undefined)
     
-    @scala.inline
-    def setMarginXVarargs(value: (MarginLeftProperty[Double | String])*): Self = StObject.set(x, "marginX", js.Array(value :_*))
+    inline def setMarginXVarargs(value: (MarginLeftProperty[Double | String])*): Self = StObject.set(x, "marginX", js.Array(value :_*))
     
-    @scala.inline
-    def setMarginY(value: (MarginTopProperty[Double | String]) | (js.Array[MarginTopProperty[Double | String]])): Self = StObject.set(x, "marginY", value.asInstanceOf[js.Any])
+    inline def setMarginY(value: (MarginTopProperty[Double | String]) | (js.Array[MarginTopProperty[Double | String]])): Self = StObject.set(x, "marginY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginYUndefined: Self = StObject.set(x, "marginY", js.undefined)
+    inline def setMarginYUndefined: Self = StObject.set(x, "marginY", js.undefined)
     
-    @scala.inline
-    def setMarginYVarargs(value: (MarginTopProperty[Double | String])*): Self = StObject.set(x, "marginY", js.Array(value :_*))
+    inline def setMarginYVarargs(value: (MarginTopProperty[Double | String])*): Self = StObject.set(x, "marginY", js.Array(value :_*))
     
-    @scala.inline
-    def setMb(value: (MarginBottomProperty[Double | String]) | (js.Array[MarginBottomProperty[Double | String]])): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
+    inline def setMb(value: (MarginBottomProperty[Double | String]) | (js.Array[MarginBottomProperty[Double | String]])): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMbUndefined: Self = StObject.set(x, "mb", js.undefined)
+    inline def setMbUndefined: Self = StObject.set(x, "mb", js.undefined)
     
-    @scala.inline
-    def setMbVarargs(value: (MarginBottomProperty[Double | String])*): Self = StObject.set(x, "mb", js.Array(value :_*))
+    inline def setMbVarargs(value: (MarginBottomProperty[Double | String])*): Self = StObject.set(x, "mb", js.Array(value :_*))
     
-    @scala.inline
-    def setMl(value: (MarginLeftProperty[Double | String]) | (js.Array[MarginLeftProperty[Double | String]])): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
+    inline def setMl(value: (MarginLeftProperty[Double | String]) | (js.Array[MarginLeftProperty[Double | String]])): Self = StObject.set(x, "ml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMlUndefined: Self = StObject.set(x, "ml", js.undefined)
+    inline def setMlUndefined: Self = StObject.set(x, "ml", js.undefined)
     
-    @scala.inline
-    def setMlVarargs(value: (MarginLeftProperty[Double | String])*): Self = StObject.set(x, "ml", js.Array(value :_*))
+    inline def setMlVarargs(value: (MarginLeftProperty[Double | String])*): Self = StObject.set(x, "ml", js.Array(value :_*))
     
-    @scala.inline
-    def setMr(value: (MarginRightProperty[Double | String]) | (js.Array[MarginRightProperty[Double | String]])): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
+    inline def setMr(value: (MarginRightProperty[Double | String]) | (js.Array[MarginRightProperty[Double | String]])): Self = StObject.set(x, "mr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMrUndefined: Self = StObject.set(x, "mr", js.undefined)
+    inline def setMrUndefined: Self = StObject.set(x, "mr", js.undefined)
     
-    @scala.inline
-    def setMrVarargs(value: (MarginRightProperty[Double | String])*): Self = StObject.set(x, "mr", js.Array(value :_*))
+    inline def setMrVarargs(value: (MarginRightProperty[Double | String])*): Self = StObject.set(x, "mr", js.Array(value :_*))
     
-    @scala.inline
-    def setMt(value: (MarginTopProperty[Double | String]) | (js.Array[MarginTopProperty[Double | String]])): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
+    inline def setMt(value: (MarginTopProperty[Double | String]) | (js.Array[MarginTopProperty[Double | String]])): Self = StObject.set(x, "mt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMtUndefined: Self = StObject.set(x, "mt", js.undefined)
+    inline def setMtUndefined: Self = StObject.set(x, "mt", js.undefined)
     
-    @scala.inline
-    def setMtVarargs(value: (MarginTopProperty[Double | String])*): Self = StObject.set(x, "mt", js.Array(value :_*))
+    inline def setMtVarargs(value: (MarginTopProperty[Double | String])*): Self = StObject.set(x, "mt", js.Array(value :_*))
     
-    @scala.inline
-    def setMx(value: (MarginLeftProperty[Double | String]) | (js.Array[MarginLeftProperty[Double | String]])): Self = StObject.set(x, "mx", value.asInstanceOf[js.Any])
+    inline def setMx(value: (MarginLeftProperty[Double | String]) | (js.Array[MarginLeftProperty[Double | String]])): Self = StObject.set(x, "mx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMxUndefined: Self = StObject.set(x, "mx", js.undefined)
+    inline def setMxUndefined: Self = StObject.set(x, "mx", js.undefined)
     
-    @scala.inline
-    def setMxVarargs(value: (MarginLeftProperty[Double | String])*): Self = StObject.set(x, "mx", js.Array(value :_*))
+    inline def setMxVarargs(value: (MarginLeftProperty[Double | String])*): Self = StObject.set(x, "mx", js.Array(value :_*))
     
-    @scala.inline
-    def setMy(value: (MarginTopProperty[Double | String]) | (js.Array[MarginTopProperty[Double | String]])): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
+    inline def setMy(value: (MarginTopProperty[Double | String]) | (js.Array[MarginTopProperty[Double | String]])): Self = StObject.set(x, "my", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMyUndefined: Self = StObject.set(x, "my", js.undefined)
+    inline def setMyUndefined: Self = StObject.set(x, "my", js.undefined)
     
-    @scala.inline
-    def setMyVarargs(value: (MarginTopProperty[Double | String])*): Self = StObject.set(x, "my", js.Array(value :_*))
+    inline def setMyVarargs(value: (MarginTopProperty[Double | String])*): Self = StObject.set(x, "my", js.Array(value :_*))
     
-    @scala.inline
-    def setP(value: (PaddingProperty[Double | String]) | (js.Array[PaddingProperty[Double | String]])): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+    inline def setP(value: (PaddingProperty[Double | String]) | (js.Array[PaddingProperty[Double | String]])): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPUndefined: Self = StObject.set(x, "p", js.undefined)
+    inline def setPUndefined: Self = StObject.set(x, "p", js.undefined)
     
-    @scala.inline
-    def setPVarargs(value: (PaddingProperty[Double | String])*): Self = StObject.set(x, "p", js.Array(value :_*))
+    inline def setPVarargs(value: (PaddingProperty[Double | String])*): Self = StObject.set(x, "p", js.Array(value :_*))
     
-    @scala.inline
-    def setPaddingX(value: (PaddingLeftProperty[Double | String]) | (js.Array[PaddingLeftProperty[Double | String]])): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
+    inline def setPaddingX(value: (PaddingLeftProperty[Double | String]) | (js.Array[PaddingLeftProperty[Double | String]])): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingXUndefined: Self = StObject.set(x, "paddingX", js.undefined)
+    inline def setPaddingXUndefined: Self = StObject.set(x, "paddingX", js.undefined)
     
-    @scala.inline
-    def setPaddingXVarargs(value: (PaddingLeftProperty[Double | String])*): Self = StObject.set(x, "paddingX", js.Array(value :_*))
+    inline def setPaddingXVarargs(value: (PaddingLeftProperty[Double | String])*): Self = StObject.set(x, "paddingX", js.Array(value :_*))
     
-    @scala.inline
-    def setPaddingY(value: (PaddingTopProperty[Double | String]) | (js.Array[PaddingTopProperty[Double | String]])): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
+    inline def setPaddingY(value: (PaddingTopProperty[Double | String]) | (js.Array[PaddingTopProperty[Double | String]])): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingYUndefined: Self = StObject.set(x, "paddingY", js.undefined)
+    inline def setPaddingYUndefined: Self = StObject.set(x, "paddingY", js.undefined)
     
-    @scala.inline
-    def setPaddingYVarargs(value: (PaddingTopProperty[Double | String])*): Self = StObject.set(x, "paddingY", js.Array(value :_*))
+    inline def setPaddingYVarargs(value: (PaddingTopProperty[Double | String])*): Self = StObject.set(x, "paddingY", js.Array(value :_*))
     
-    @scala.inline
-    def setPb(
+    inline def setPb(
       value: (PaddingBottomProperty[Double | String]) | (js.Array[PaddingBottomProperty[Double | String]])
     ): Self = StObject.set(x, "pb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPbUndefined: Self = StObject.set(x, "pb", js.undefined)
+    inline def setPbUndefined: Self = StObject.set(x, "pb", js.undefined)
     
-    @scala.inline
-    def setPbVarargs(value: (PaddingBottomProperty[Double | String])*): Self = StObject.set(x, "pb", js.Array(value :_*))
+    inline def setPbVarargs(value: (PaddingBottomProperty[Double | String])*): Self = StObject.set(x, "pb", js.Array(value :_*))
     
-    @scala.inline
-    def setPl(value: (PaddingLeftProperty[Double | String]) | (js.Array[PaddingLeftProperty[Double | String]])): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
+    inline def setPl(value: (PaddingLeftProperty[Double | String]) | (js.Array[PaddingLeftProperty[Double | String]])): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlUndefined: Self = StObject.set(x, "pl", js.undefined)
+    inline def setPlUndefined: Self = StObject.set(x, "pl", js.undefined)
     
-    @scala.inline
-    def setPlVarargs(value: (PaddingLeftProperty[Double | String])*): Self = StObject.set(x, "pl", js.Array(value :_*))
+    inline def setPlVarargs(value: (PaddingLeftProperty[Double | String])*): Self = StObject.set(x, "pl", js.Array(value :_*))
     
-    @scala.inline
-    def setPr(value: (PaddingRightProperty[Double | String]) | (js.Array[PaddingRightProperty[Double | String]])): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
+    inline def setPr(value: (PaddingRightProperty[Double | String]) | (js.Array[PaddingRightProperty[Double | String]])): Self = StObject.set(x, "pr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrUndefined: Self = StObject.set(x, "pr", js.undefined)
+    inline def setPrUndefined: Self = StObject.set(x, "pr", js.undefined)
     
-    @scala.inline
-    def setPrVarargs(value: (PaddingRightProperty[Double | String])*): Self = StObject.set(x, "pr", js.Array(value :_*))
+    inline def setPrVarargs(value: (PaddingRightProperty[Double | String])*): Self = StObject.set(x, "pr", js.Array(value :_*))
     
-    @scala.inline
-    def setPt(value: (PaddingTopProperty[Double | String]) | (js.Array[PaddingTopProperty[Double | String]])): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+    inline def setPt(value: (PaddingTopProperty[Double | String]) | (js.Array[PaddingTopProperty[Double | String]])): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
+    inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
     
-    @scala.inline
-    def setPtVarargs(value: (PaddingTopProperty[Double | String])*): Self = StObject.set(x, "pt", js.Array(value :_*))
+    inline def setPtVarargs(value: (PaddingTopProperty[Double | String])*): Self = StObject.set(x, "pt", js.Array(value :_*))
     
-    @scala.inline
-    def setPx(value: (PaddingLeftProperty[Double | String]) | (js.Array[PaddingLeftProperty[Double | String]])): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
+    inline def setPx(value: (PaddingLeftProperty[Double | String]) | (js.Array[PaddingLeftProperty[Double | String]])): Self = StObject.set(x, "px", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPxUndefined: Self = StObject.set(x, "px", js.undefined)
+    inline def setPxUndefined: Self = StObject.set(x, "px", js.undefined)
     
-    @scala.inline
-    def setPxVarargs(value: (PaddingLeftProperty[Double | String])*): Self = StObject.set(x, "px", js.Array(value :_*))
+    inline def setPxVarargs(value: (PaddingLeftProperty[Double | String])*): Self = StObject.set(x, "px", js.Array(value :_*))
     
-    @scala.inline
-    def setPy(value: (PaddingTopProperty[Double | String]) | (js.Array[PaddingTopProperty[Double | String]])): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
+    inline def setPy(value: (PaddingTopProperty[Double | String]) | (js.Array[PaddingTopProperty[Double | String]])): Self = StObject.set(x, "py", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPyUndefined: Self = StObject.set(x, "py", js.undefined)
+    inline def setPyUndefined: Self = StObject.set(x, "py", js.undefined)
     
-    @scala.inline
-    def setPyVarargs(value: (PaddingTopProperty[Double | String])*): Self = StObject.set(x, "py", js.Array(value :_*))
+    inline def setPyVarargs(value: (PaddingTopProperty[Double | String])*): Self = StObject.set(x, "py", js.Array(value :_*))
   }
 }

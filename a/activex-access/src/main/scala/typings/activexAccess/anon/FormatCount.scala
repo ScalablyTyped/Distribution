@@ -12,19 +12,15 @@ trait FormatCount extends StObject {
 }
 object FormatCount {
   
-  @scala.inline
-  def apply(Cancel: Double, FormatCount: Double): FormatCount = {
+  inline def apply(Cancel: Double, FormatCount: Double): FormatCount = {
     val __obj = js.Dynamic.literal(Cancel = Cancel.asInstanceOf[js.Any], FormatCount = FormatCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormatCount]
   }
   
-  @scala.inline
-  implicit class FormatCountMutableBuilder[Self <: FormatCount] (val x: Self) extends AnyVal {
+  extension [Self <: FormatCount](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Double): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Double): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatCount(value: Double): Self = StObject.set(x, "FormatCount", value.asInstanceOf[js.Any])
+    inline def setFormatCount(value: Double): Self = StObject.set(x, "FormatCount", value.asInstanceOf[js.Any])
   }
 }

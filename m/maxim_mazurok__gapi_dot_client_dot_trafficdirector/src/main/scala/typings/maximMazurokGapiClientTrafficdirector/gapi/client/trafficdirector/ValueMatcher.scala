@@ -29,49 +29,35 @@ trait ValueMatcher extends StObject {
 }
 object ValueMatcher {
   
-  @scala.inline
-  def apply(): ValueMatcher = {
+  inline def apply(): ValueMatcher = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValueMatcher]
   }
   
-  @scala.inline
-  implicit class ValueMatcherMutableBuilder[Self <: ValueMatcher] (val x: Self) extends AnyVal {
+  extension [Self <: ValueMatcher](x: Self) {
     
-    @scala.inline
-    def setBoolMatch(value: Boolean): Self = StObject.set(x, "boolMatch", value.asInstanceOf[js.Any])
+    inline def setBoolMatch(value: Boolean): Self = StObject.set(x, "boolMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoolMatchUndefined: Self = StObject.set(x, "boolMatch", js.undefined)
+    inline def setBoolMatchUndefined: Self = StObject.set(x, "boolMatch", js.undefined)
     
-    @scala.inline
-    def setDoubleMatch(value: DoubleMatcher): Self = StObject.set(x, "doubleMatch", value.asInstanceOf[js.Any])
+    inline def setDoubleMatch(value: DoubleMatcher): Self = StObject.set(x, "doubleMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoubleMatchUndefined: Self = StObject.set(x, "doubleMatch", js.undefined)
+    inline def setDoubleMatchUndefined: Self = StObject.set(x, "doubleMatch", js.undefined)
     
-    @scala.inline
-    def setListMatch(value: ListMatcher): Self = StObject.set(x, "listMatch", value.asInstanceOf[js.Any])
+    inline def setListMatch(value: ListMatcher): Self = StObject.set(x, "listMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListMatchUndefined: Self = StObject.set(x, "listMatch", js.undefined)
+    inline def setListMatchUndefined: Self = StObject.set(x, "listMatch", js.undefined)
     
-    @scala.inline
-    def setNullMatch(value: js.Any): Self = StObject.set(x, "nullMatch", value.asInstanceOf[js.Any])
+    inline def setNullMatch(value: js.Any): Self = StObject.set(x, "nullMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNullMatchUndefined: Self = StObject.set(x, "nullMatch", js.undefined)
+    inline def setNullMatchUndefined: Self = StObject.set(x, "nullMatch", js.undefined)
     
-    @scala.inline
-    def setPresentMatch(value: Boolean): Self = StObject.set(x, "presentMatch", value.asInstanceOf[js.Any])
+    inline def setPresentMatch(value: Boolean): Self = StObject.set(x, "presentMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresentMatchUndefined: Self = StObject.set(x, "presentMatch", js.undefined)
+    inline def setPresentMatchUndefined: Self = StObject.set(x, "presentMatch", js.undefined)
     
-    @scala.inline
-    def setStringMatch(value: StringMatcher): Self = StObject.set(x, "stringMatch", value.asInstanceOf[js.Any])
+    inline def setStringMatch(value: StringMatcher): Self = StObject.set(x, "stringMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringMatchUndefined: Self = StObject.set(x, "stringMatch", js.undefined)
+    inline def setStringMatchUndefined: Self = StObject.set(x, "stringMatch", js.undefined)
   }
 }

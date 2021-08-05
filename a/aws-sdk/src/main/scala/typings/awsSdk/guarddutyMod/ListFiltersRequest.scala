@@ -23,28 +23,21 @@ trait ListFiltersRequest extends StObject {
 }
 object ListFiltersRequest {
   
-  @scala.inline
-  def apply(DetectorId: DetectorId): ListFiltersRequest = {
+  inline def apply(DetectorId: DetectorId): ListFiltersRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListFiltersRequest]
   }
   
-  @scala.inline
-  implicit class ListFiltersRequestMutableBuilder[Self <: ListFiltersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListFiltersRequest](x: Self) {
     
-    @scala.inline
-    def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
+    inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LightGroupType extends StObject
 object LightGroupType {
   
-  @scala.inline
-  def LightGroup: typings.nodeHueApi.nodeHueApiStrings.LightGroup = "LightGroup".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.LightGroup]
+  inline def LightGroup: typings.nodeHueApi.nodeHueApiStrings.LightGroup = "LightGroup".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.LightGroup]
   
-  @scala.inline
-  def LightSource: typings.nodeHueApi.nodeHueApiStrings.LightSource = "LightSource".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.LightSource]
+  inline def LightSource: typings.nodeHueApi.nodeHueApiStrings.LightSource = "LightSource".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.LightSource]
   
-  @scala.inline
-  def Luminaire: typings.nodeHueApi.nodeHueApiStrings.Luminaire = "Luminaire".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.Luminaire]
+  inline def Luminaire: typings.nodeHueApi.nodeHueApiStrings.Luminaire = "Luminaire".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.Luminaire]
   
-  @scala.inline
-  def Room: typings.nodeHueApi.nodeHueApiStrings.Room = "Room".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.Room]
+  inline def Room: typings.nodeHueApi.nodeHueApiStrings.Room = "Room".asInstanceOf[typings.nodeHueApi.nodeHueApiStrings.Room]
 }

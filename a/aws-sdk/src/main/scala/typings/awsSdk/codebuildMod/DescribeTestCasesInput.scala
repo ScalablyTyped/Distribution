@@ -28,34 +28,25 @@ trait DescribeTestCasesInput extends StObject {
 }
 object DescribeTestCasesInput {
   
-  @scala.inline
-  def apply(reportArn: String): DescribeTestCasesInput = {
+  inline def apply(reportArn: String): DescribeTestCasesInput = {
     val __obj = js.Dynamic.literal(reportArn = reportArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTestCasesInput]
   }
   
-  @scala.inline
-  implicit class DescribeTestCasesInputMutableBuilder[Self <: DescribeTestCasesInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTestCasesInput](x: Self) {
     
-    @scala.inline
-    def setFilter(value: TestCaseFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: TestCaseFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: PageSize): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: PageSize): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setReportArn(value: String): Self = StObject.set(x, "reportArn", value.asInstanceOf[js.Any])
+    inline def setReportArn(value: String): Self = StObject.set(x, "reportArn", value.asInstanceOf[js.Any])
   }
 }

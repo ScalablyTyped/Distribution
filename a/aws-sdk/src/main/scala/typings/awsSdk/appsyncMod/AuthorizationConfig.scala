@@ -18,22 +18,17 @@ trait AuthorizationConfig extends StObject {
 }
 object AuthorizationConfig {
   
-  @scala.inline
-  def apply(authorizationType: AuthorizationType): AuthorizationConfig = {
+  inline def apply(authorizationType: AuthorizationType): AuthorizationConfig = {
     val __obj = js.Dynamic.literal(authorizationType = authorizationType.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthorizationConfig]
   }
   
-  @scala.inline
-  implicit class AuthorizationConfigMutableBuilder[Self <: AuthorizationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AuthorizationConfig](x: Self) {
     
-    @scala.inline
-    def setAuthorizationType(value: AuthorizationType): Self = StObject.set(x, "authorizationType", value.asInstanceOf[js.Any])
+    inline def setAuthorizationType(value: AuthorizationType): Self = StObject.set(x, "authorizationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsIamConfig(value: AwsIamConfig): Self = StObject.set(x, "awsIamConfig", value.asInstanceOf[js.Any])
+    inline def setAwsIamConfig(value: AwsIamConfig): Self = StObject.set(x, "awsIamConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsIamConfigUndefined: Self = StObject.set(x, "awsIamConfig", js.undefined)
+    inline def setAwsIamConfigUndefined: Self = StObject.set(x, "awsIamConfig", js.undefined)
   }
 }

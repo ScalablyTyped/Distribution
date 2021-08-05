@@ -18,19 +18,15 @@ trait AttachElasticLoadBalancerRequest extends StObject {
 }
 object AttachElasticLoadBalancerRequest {
   
-  @scala.inline
-  def apply(ElasticLoadBalancerName: String, LayerId: String): AttachElasticLoadBalancerRequest = {
+  inline def apply(ElasticLoadBalancerName: String, LayerId: String): AttachElasticLoadBalancerRequest = {
     val __obj = js.Dynamic.literal(ElasticLoadBalancerName = ElasticLoadBalancerName.asInstanceOf[js.Any], LayerId = LayerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachElasticLoadBalancerRequest]
   }
   
-  @scala.inline
-  implicit class AttachElasticLoadBalancerRequestMutableBuilder[Self <: AttachElasticLoadBalancerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AttachElasticLoadBalancerRequest](x: Self) {
     
-    @scala.inline
-    def setElasticLoadBalancerName(value: String): Self = StObject.set(x, "ElasticLoadBalancerName", value.asInstanceOf[js.Any])
+    inline def setElasticLoadBalancerName(value: String): Self = StObject.set(x, "ElasticLoadBalancerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerId(value: String): Self = StObject.set(x, "LayerId", value.asInstanceOf[js.Any])
+    inline def setLayerId(value: String): Self = StObject.set(x, "LayerId", value.asInstanceOf[js.Any])
   }
 }

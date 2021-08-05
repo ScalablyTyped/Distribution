@@ -22,17 +22,17 @@ object global {
     
     @JSGlobal("ADOX.Catalog")
     @js.native
-    class Catalog protected ()
+    /* private */ class Catalog ()
       extends StObject
          with typings.activexAdox.ADOX.Catalog
     
     @JSGlobal("ADOX.Column")
     @js.native
-    class Column protected ()
+    /* private */ class Column ()
       extends StObject
          with typings.activexAdox.ADOX.Column {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("ADOX.Column_typekey")
       var ADOXDotColumn_typekey: typings.activexAdox.ADOX.Column = js.native
       
@@ -74,17 +74,17 @@ object global {
     
     @JSGlobal("ADOX.Group")
     @js.native
-    class Group protected ()
+    /* private */ class Group ()
       extends StObject
          with typings.activexAdox.ADOX.Group
     
     @JSGlobal("ADOX.Index")
     @js.native
-    class Index protected ()
+    /* private */ class Index ()
       extends StObject
          with typings.activexAdox.ADOX.Index {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("ADOX.Index_typekey")
       var ADOXDotIndex_typekey: typings.activexAdox.ADOX.Index = js.native
       
@@ -122,11 +122,11 @@ object global {
     
     @JSGlobal("ADOX.Key")
     @js.native
-    class Key protected ()
+    /* private */ class Key ()
       extends StObject
          with typings.activexAdox.ADOX.Key {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("ADOX.Key_typekey")
       var ADOXDotKey_typekey: typings.activexAdox.ADOX.Key = js.native
       
@@ -156,11 +156,11 @@ object global {
     
     @JSGlobal("ADOX.Procedure")
     @js.native
-    class Procedure protected ()
+    /* private */ class Procedure ()
       extends StObject
          with typings.activexAdox.ADOX.Procedure {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("ADOX.Procedure_typekey")
       var ADOXDotProcedure_typekey: typings.activexAdox.ADOX.Procedure = js.native
       
@@ -179,11 +179,11 @@ object global {
     
     @JSGlobal("ADOX.Table")
     @js.native
-    class Table protected ()
+    /* private */ class Table ()
       extends StObject
          with typings.activexAdox.ADOX.Table {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("ADOX.Table_typekey")
       var ADOXDotTable_typekey: typings.activexAdox.ADOX.Table = js.native
       
@@ -237,17 +237,17 @@ object global {
     
     @JSGlobal("ADOX.User")
     @js.native
-    class User protected ()
+    /* private */ class User ()
       extends StObject
          with typings.activexAdox.ADOX.User
     
     @JSGlobal("ADOX.View")
     @js.native
-    class View protected ()
+    /* private */ class View ()
       extends StObject
          with typings.activexAdox.ADOX.View {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("ADOX.View_typekey")
       var ADOXDotView_typekey: typings.activexAdox.ADOX.View = js.native
       

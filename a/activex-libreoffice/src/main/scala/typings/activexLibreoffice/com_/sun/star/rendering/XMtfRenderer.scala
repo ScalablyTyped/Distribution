@@ -17,8 +17,7 @@ trait XMtfRenderer
 }
 object XMtfRenderer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     draw: (Double, Double) => Unit,
     queryInterface: `type` => js.Any,
@@ -29,13 +28,10 @@ object XMtfRenderer {
     __obj.asInstanceOf[XMtfRenderer]
   }
   
-  @scala.inline
-  implicit class XMtfRendererMutableBuilder[Self <: XMtfRenderer] (val x: Self) extends AnyVal {
+  extension [Self <: XMtfRenderer](x: Self) {
     
-    @scala.inline
-    def setDraw(value: (Double, Double) => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction2(value))
+    inline def setDraw(value: (Double, Double) => Unit): Self = StObject.set(x, "draw", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetMetafile(value: SeqEquiv[Double] => Unit): Self = StObject.set(x, "setMetafile", js.Any.fromFunction1(value))
+    inline def setSetMetafile(value: SeqEquiv[Double] => Unit): Self = StObject.set(x, "setMetafile", js.Any.fromFunction1(value))
   }
 }

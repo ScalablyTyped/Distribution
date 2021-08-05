@@ -25,29 +25,23 @@ trait Entity extends StObject {
 }
 object Entity {
   
-  @scala.inline
-  def apply(): Entity = {
+  inline def apply(): Entity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Entity]
   }
   
-  @scala.inline
-  implicit class EntityMutableBuilder[Self <: Entity] (val x: Self) extends AnyVal {
+  extension [Self <: Entity](x: Self) {
     
-    @scala.inline
-    def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setProperties(
+    inline def setProperties(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.datastore.gapi.client.datastore.Value}
       */ typings.maximMazurokGapiClientDatastore.maximMazurokGapiClientDatastoreStrings.Entity & TopLevel[js.Any]
     ): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }
 }

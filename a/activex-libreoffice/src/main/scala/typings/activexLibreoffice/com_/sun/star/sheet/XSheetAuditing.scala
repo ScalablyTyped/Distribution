@@ -55,8 +55,7 @@ trait XSheetAuditing
 }
 object XSheetAuditing {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     clearArrows: () => Unit,
     hideDependents: CellAddress => Boolean,
@@ -72,28 +71,20 @@ object XSheetAuditing {
     __obj.asInstanceOf[XSheetAuditing]
   }
   
-  @scala.inline
-  implicit class XSheetAuditingMutableBuilder[Self <: XSheetAuditing] (val x: Self) extends AnyVal {
+  extension [Self <: XSheetAuditing](x: Self) {
     
-    @scala.inline
-    def setClearArrows(value: () => Unit): Self = StObject.set(x, "clearArrows", js.Any.fromFunction0(value))
+    inline def setClearArrows(value: () => Unit): Self = StObject.set(x, "clearArrows", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHideDependents(value: CellAddress => Boolean): Self = StObject.set(x, "hideDependents", js.Any.fromFunction1(value))
+    inline def setHideDependents(value: CellAddress => Boolean): Self = StObject.set(x, "hideDependents", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHidePrecedents(value: CellAddress => Boolean): Self = StObject.set(x, "hidePrecedents", js.Any.fromFunction1(value))
+    inline def setHidePrecedents(value: CellAddress => Boolean): Self = StObject.set(x, "hidePrecedents", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowDependents(value: CellAddress => Boolean): Self = StObject.set(x, "showDependents", js.Any.fromFunction1(value))
+    inline def setShowDependents(value: CellAddress => Boolean): Self = StObject.set(x, "showDependents", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowErrors(value: CellAddress => Boolean): Self = StObject.set(x, "showErrors", js.Any.fromFunction1(value))
+    inline def setShowErrors(value: CellAddress => Boolean): Self = StObject.set(x, "showErrors", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowInvalid(value: () => Boolean): Self = StObject.set(x, "showInvalid", js.Any.fromFunction0(value))
+    inline def setShowInvalid(value: () => Boolean): Self = StObject.set(x, "showInvalid", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setShowPrecedents(value: CellAddress => Boolean): Self = StObject.set(x, "showPrecedents", js.Any.fromFunction1(value))
+    inline def setShowPrecedents(value: CellAddress => Boolean): Self = StObject.set(x, "showPrecedents", js.Any.fromFunction1(value))
   }
 }

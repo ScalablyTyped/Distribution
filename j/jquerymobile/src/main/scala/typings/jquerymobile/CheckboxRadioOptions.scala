@@ -12,25 +12,19 @@ trait CheckboxRadioOptions extends StObject {
 }
 object CheckboxRadioOptions {
   
-  @scala.inline
-  def apply(): CheckboxRadioOptions = {
+  inline def apply(): CheckboxRadioOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CheckboxRadioOptions]
   }
   
-  @scala.inline
-  implicit class CheckboxRadioOptionsMutableBuilder[Self <: CheckboxRadioOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CheckboxRadioOptions](x: Self) {
     
-    @scala.inline
-    def setMini(value: Boolean): Self = StObject.set(x, "mini", value.asInstanceOf[js.Any])
+    inline def setMini(value: Boolean): Self = StObject.set(x, "mini", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMiniUndefined: Self = StObject.set(x, "mini", js.undefined)
+    inline def setMiniUndefined: Self = StObject.set(x, "mini", js.undefined)
     
-    @scala.inline
-    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

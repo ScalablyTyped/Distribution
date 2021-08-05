@@ -10,8 +10,7 @@ trait RestoreObjectExceptionsUnion
      with ObjectAlreadyInActiveTierError
 object RestoreObjectExceptionsUnion {
   
-  @scala.inline
-  def apply(): RestoreObjectExceptionsUnion = {
+  inline def apply(): RestoreObjectExceptionsUnion = {
     val __obj = js.Dynamic.literal(name = "ObjectAlreadyInActiveTierError")
     __obj.asInstanceOf[RestoreObjectExceptionsUnion]
   }

@@ -13,16 +13,13 @@ trait Response[T /* <: js.Object */]
 }
 object Response {
   
-  @scala.inline
-  def apply[T /* <: js.Object */](data: T, meta: APIResponseMeta): Response[T] = {
+  inline def apply[T /* <: js.Object */](data: T, meta: APIResponseMeta): Response[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
     __obj.asInstanceOf[Response[T]]
   }
   
-  @scala.inline
-  implicit class ResponseMutableBuilder[Self <: Response[?], T /* <: js.Object */] (val x: Self & Response[T]) extends AnyVal {
+  extension [Self <: Response[?], T /* <: js.Object */](x: Self & Response[T]) {
     
-    @scala.inline
-    def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

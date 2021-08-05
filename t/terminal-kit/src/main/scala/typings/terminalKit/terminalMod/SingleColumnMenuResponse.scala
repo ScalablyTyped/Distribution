@@ -22,8 +22,7 @@ trait SingleColumnMenuResponse extends StObject {
 }
 object SingleColumnMenuResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canceled: Boolean,
     selectedIndex: Double,
     selectedText: String,
@@ -36,28 +35,20 @@ object SingleColumnMenuResponse {
     __obj.asInstanceOf[SingleColumnMenuResponse]
   }
   
-  @scala.inline
-  implicit class SingleColumnMenuResponseMutableBuilder[Self <: SingleColumnMenuResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SingleColumnMenuResponse](x: Self) {
     
-    @scala.inline
-    def setCanceled(value: Boolean): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
+    inline def setCanceled(value: Boolean): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
+    inline def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedText(value: String): Self = StObject.set(x, "selectedText", value.asInstanceOf[js.Any])
+    inline def setSelectedText(value: String): Self = StObject.set(x, "selectedText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmitted(value: Boolean): Self = StObject.set(x, "submitted", value.asInstanceOf[js.Any])
+    inline def setSubmitted(value: Boolean): Self = StObject.set(x, "submitted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnexpectedKey(value: String): Self = StObject.set(x, "unexpectedKey", value.asInstanceOf[js.Any])
+    inline def setUnexpectedKey(value: String): Self = StObject.set(x, "unexpectedKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

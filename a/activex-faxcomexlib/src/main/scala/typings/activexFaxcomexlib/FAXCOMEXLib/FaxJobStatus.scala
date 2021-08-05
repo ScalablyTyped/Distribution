@@ -29,7 +29,7 @@ trait FaxJobStatus extends StObject {
   /** Code of the job's extended status */
   val ExtendedStatusCode: FAX_JOB_EXTENDED_STATUS_ENUM
   
-  @JSName("FAXCOMEXLib.FaxJobStatus_typekey")
+  /* private */ @JSName("FAXCOMEXLib.FaxJobStatus_typekey")
   var FAXCOMEXLibDotFaxJobStatus_typekey: FaxJobStatus
   
   /** Job type */
@@ -64,8 +64,7 @@ trait FaxJobStatus extends StObject {
 }
 object FaxJobStatus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AvailableOperations: FAX_JOB_OPERATIONS_ENUM,
     CSID: String,
     CallerId: String,
@@ -90,61 +89,42 @@ object FaxJobStatus {
     __obj.asInstanceOf[FaxJobStatus]
   }
   
-  @scala.inline
-  implicit class FaxJobStatusMutableBuilder[Self <: FaxJobStatus] (val x: Self) extends AnyVal {
+  extension [Self <: FaxJobStatus](x: Self) {
     
-    @scala.inline
-    def setAvailableOperations(value: FAX_JOB_OPERATIONS_ENUM): Self = StObject.set(x, "AvailableOperations", value.asInstanceOf[js.Any])
+    inline def setAvailableOperations(value: FAX_JOB_OPERATIONS_ENUM): Self = StObject.set(x, "AvailableOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCSID(value: String): Self = StObject.set(x, "CSID", value.asInstanceOf[js.Any])
+    inline def setCSID(value: String): Self = StObject.set(x, "CSID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallerId(value: String): Self = StObject.set(x, "CallerId", value.asInstanceOf[js.Any])
+    inline def setCallerId(value: String): Self = StObject.set(x, "CallerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentPage(value: Double): Self = StObject.set(x, "CurrentPage", value.asInstanceOf[js.Any])
+    inline def setCurrentPage(value: Double): Self = StObject.set(x, "CurrentPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceId(value: Double): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: Double): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendedStatus(value: String): Self = StObject.set(x, "ExtendedStatus", value.asInstanceOf[js.Any])
+    inline def setExtendedStatus(value: String): Self = StObject.set(x, "ExtendedStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendedStatusCode(value: FAX_JOB_EXTENDED_STATUS_ENUM): Self = StObject.set(x, "ExtendedStatusCode", value.asInstanceOf[js.Any])
+    inline def setExtendedStatusCode(value: FAX_JOB_EXTENDED_STATUS_ENUM): Self = StObject.set(x, "ExtendedStatusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFAXCOMEXLibDotFaxJobStatus_typekey(value: FaxJobStatus): Self = StObject.set(x, "FAXCOMEXLib.FaxJobStatus_typekey", value.asInstanceOf[js.Any])
+    inline def setFAXCOMEXLibDotFaxJobStatus_typekey(value: FaxJobStatus): Self = StObject.set(x, "FAXCOMEXLib.FaxJobStatus_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobType(value: FAX_JOB_TYPE_ENUM): Self = StObject.set(x, "JobType", value.asInstanceOf[js.Any])
+    inline def setJobType(value: FAX_JOB_TYPE_ENUM): Self = StObject.set(x, "JobType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPages(value: Double): Self = StObject.set(x, "Pages", value.asInstanceOf[js.Any])
+    inline def setPages(value: Double): Self = StObject.set(x, "Pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetries(value: Double): Self = StObject.set(x, "Retries", value.asInstanceOf[js.Any])
+    inline def setRetries(value: Double): Self = StObject.set(x, "Retries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutingInformation(value: String): Self = StObject.set(x, "RoutingInformation", value.asInstanceOf[js.Any])
+    inline def setRoutingInformation(value: String): Self = StObject.set(x, "RoutingInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledTime(value: VarDate): Self = StObject.set(x, "ScheduledTime", value.asInstanceOf[js.Any])
+    inline def setScheduledTime(value: VarDate): Self = StObject.set(x, "ScheduledTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: FAX_JOB_STATUS_ENUM): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: FAX_JOB_STATUS_ENUM): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTSID(value: String): Self = StObject.set(x, "TSID", value.asInstanceOf[js.Any])
+    inline def setTSID(value: String): Self = StObject.set(x, "TSID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransmissionEnd(value: VarDate): Self = StObject.set(x, "TransmissionEnd", value.asInstanceOf[js.Any])
+    inline def setTransmissionEnd(value: VarDate): Self = StObject.set(x, "TransmissionEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransmissionStart(value: VarDate): Self = StObject.set(x, "TransmissionStart", value.asInstanceOf[js.Any])
+    inline def setTransmissionStart(value: VarDate): Self = StObject.set(x, "TransmissionStart", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait StartRequest extends StObject {
 }
 object StartRequest {
   
-  @scala.inline
-  def apply(): StartRequest = {
+  inline def apply(): StartRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartRequest]
   }
   
-  @scala.inline
-  implicit class StartRequestMutableBuilder[Self <: StartRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartRequest](x: Self) {
     
-    @scala.inline
-    def setWorkspaceId(value: WorkspaceId): Self = StObject.set(x, "WorkspaceId", value.asInstanceOf[js.Any])
+    inline def setWorkspaceId(value: WorkspaceId): Self = StObject.set(x, "WorkspaceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceIdUndefined: Self = StObject.set(x, "WorkspaceId", js.undefined)
+    inline def setWorkspaceIdUndefined: Self = StObject.set(x, "WorkspaceId", js.undefined)
   }
 }

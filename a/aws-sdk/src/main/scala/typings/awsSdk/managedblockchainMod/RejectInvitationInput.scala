@@ -13,16 +13,13 @@ trait RejectInvitationInput extends StObject {
 }
 object RejectInvitationInput {
   
-  @scala.inline
-  def apply(InvitationId: ResourceIdString): RejectInvitationInput = {
+  inline def apply(InvitationId: ResourceIdString): RejectInvitationInput = {
     val __obj = js.Dynamic.literal(InvitationId = InvitationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RejectInvitationInput]
   }
   
-  @scala.inline
-  implicit class RejectInvitationInputMutableBuilder[Self <: RejectInvitationInput] (val x: Self) extends AnyVal {
+  extension [Self <: RejectInvitationInput](x: Self) {
     
-    @scala.inline
-    def setInvitationId(value: ResourceIdString): Self = StObject.set(x, "InvitationId", value.asInstanceOf[js.Any])
+    inline def setInvitationId(value: ResourceIdString): Self = StObject.set(x, "InvitationId", value.asInstanceOf[js.Any])
   }
 }

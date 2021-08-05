@@ -21,31 +21,23 @@ trait DefaultPos extends StObject {
 }
 object DefaultPos {
   
-  @scala.inline
-  def apply(): DefaultPos = {
+  inline def apply(): DefaultPos = {
     val __obj = js.Dynamic.literal(defaultPos = null)
     __obj.asInstanceOf[DefaultPos]
   }
   
-  @scala.inline
-  implicit class DefaultPosMutableBuilder[Self <: DefaultPos] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultPos](x: Self) {
     
-    @scala.inline
-    def setDefaultPos(value: mid | zeroOrMin | zeroOrMax): Self = StObject.set(x, "defaultPos", value.asInstanceOf[js.Any])
+    inline def setDefaultPos(value: mid | zeroOrMin | zeroOrMax): Self = StObject.set(x, "defaultPos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultPosNull: Self = StObject.set(x, "defaultPos", null)
+    inline def setDefaultPosNull: Self = StObject.set(x, "defaultPos", null)
     
-    @scala.inline
-    def setIsMidPoint(value: Boolean): Self = StObject.set(x, "isMidPoint", value.asInstanceOf[js.Any])
+    inline def setIsMidPoint(value: Boolean): Self = StObject.set(x, "isMidPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMidPointUndefined: Self = StObject.set(x, "isMidPoint", js.undefined)
+    inline def setIsMidPointUndefined: Self = StObject.set(x, "isMidPoint", js.undefined)
     
-    @scala.inline
-    def setVgChannel(value: typings.vegaLite.vegaLiteStrings.x | y | xc | yc): Self = StObject.set(x, "vgChannel", value.asInstanceOf[js.Any])
+    inline def setVgChannel(value: typings.vegaLite.vegaLiteStrings.x | y | xc | yc): Self = StObject.set(x, "vgChannel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVgChannelUndefined: Self = StObject.set(x, "vgChannel", js.undefined)
+    inline def setVgChannelUndefined: Self = StObject.set(x, "vgChannel", js.undefined)
   }
 }

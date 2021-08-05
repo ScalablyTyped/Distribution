@@ -14,16 +14,13 @@ trait WebAclRuleStatementOrStatementStatementOrStatementStatementOrStatementStat
 }
 object WebAclRuleStatementOrStatementStatementOrStatementStatementOrStatementStatementXssMatchStatementFieldToMatchSingleHeader {
   
-  @scala.inline
-  def apply(name: Input[String]): WebAclRuleStatementOrStatementStatementOrStatementStatementOrStatementStatementXssMatchStatementFieldToMatchSingleHeader = {
+  inline def apply(name: Input[String]): WebAclRuleStatementOrStatementStatementOrStatementStatementOrStatementStatementXssMatchStatementFieldToMatchSingleHeader = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebAclRuleStatementOrStatementStatementOrStatementStatementOrStatementStatementXssMatchStatementFieldToMatchSingleHeader]
   }
   
-  @scala.inline
-  implicit class WebAclRuleStatementOrStatementStatementOrStatementStatementOrStatementStatementXssMatchStatementFieldToMatchSingleHeaderMutableBuilder[Self <: WebAclRuleStatementOrStatementStatementOrStatementStatementOrStatementStatementXssMatchStatementFieldToMatchSingleHeader] (val x: Self) extends AnyVal {
+  extension [Self <: WebAclRuleStatementOrStatementStatementOrStatementStatementOrStatementStatementXssMatchStatementFieldToMatchSingleHeader](x: Self) {
     
-    @scala.inline
-    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

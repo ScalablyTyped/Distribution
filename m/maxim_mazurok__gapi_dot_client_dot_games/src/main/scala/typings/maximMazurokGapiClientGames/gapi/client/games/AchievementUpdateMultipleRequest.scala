@@ -14,28 +14,21 @@ trait AchievementUpdateMultipleRequest extends StObject {
 }
 object AchievementUpdateMultipleRequest {
   
-  @scala.inline
-  def apply(): AchievementUpdateMultipleRequest = {
+  inline def apply(): AchievementUpdateMultipleRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AchievementUpdateMultipleRequest]
   }
   
-  @scala.inline
-  implicit class AchievementUpdateMultipleRequestMutableBuilder[Self <: AchievementUpdateMultipleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AchievementUpdateMultipleRequest](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setUpdates(value: js.Array[AchievementUpdateRequest]): Self = StObject.set(x, "updates", value.asInstanceOf[js.Any])
+    inline def setUpdates(value: js.Array[AchievementUpdateRequest]): Self = StObject.set(x, "updates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatesUndefined: Self = StObject.set(x, "updates", js.undefined)
+    inline def setUpdatesUndefined: Self = StObject.set(x, "updates", js.undefined)
     
-    @scala.inline
-    def setUpdatesVarargs(value: AchievementUpdateRequest*): Self = StObject.set(x, "updates", js.Array(value :_*))
+    inline def setUpdatesVarargs(value: AchievementUpdateRequest*): Self = StObject.set(x, "updates", js.Array(value :_*))
   }
 }

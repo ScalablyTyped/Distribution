@@ -31,8 +31,7 @@ trait NotificationsPayload extends StObject {
 }
 object NotificationsPayload {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     apns: APNSNotificationPayload,
     buildPayload: js.Array[String] => js.Object,
     debugging: Boolean,
@@ -44,55 +43,38 @@ object NotificationsPayload {
     __obj.asInstanceOf[NotificationsPayload]
   }
   
-  @scala.inline
-  implicit class NotificationsPayloadMutableBuilder[Self <: NotificationsPayload] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationsPayload](x: Self) {
     
-    @scala.inline
-    def setApns(value: APNSNotificationPayload): Self = StObject.set(x, "apns", value.asInstanceOf[js.Any])
+    inline def setApns(value: APNSNotificationPayload): Self = StObject.set(x, "apns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBadge(value: Double): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+    inline def setBadge(value: Double): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
+    inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setBuildPayload(value: js.Array[String] => js.Object): Self = StObject.set(x, "buildPayload", js.Any.fromFunction1(value))
+    inline def setBuildPayload(value: js.Array[String] => js.Object): Self = StObject.set(x, "buildPayload", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDebugging(value: Boolean): Self = StObject.set(x, "debugging", value.asInstanceOf[js.Any])
+    inline def setDebugging(value: Boolean): Self = StObject.set(x, "debugging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFcm(value: FCMNotificationPayload): Self = StObject.set(x, "fcm", value.asInstanceOf[js.Any])
+    inline def setFcm(value: FCMNotificationPayload): Self = StObject.set(x, "fcm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMpns(value: MPNSNotificationPayload): Self = StObject.set(x, "mpns", value.asInstanceOf[js.Any])
+    inline def setMpns(value: MPNSNotificationPayload): Self = StObject.set(x, "mpns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayload(value: Apns): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: Apns): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSound(value: String): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
+    inline def setSound(value: String): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoundUndefined: Self = StObject.set(x, "sound", js.undefined)
+    inline def setSoundUndefined: Self = StObject.set(x, "sound", js.undefined)
     
-    @scala.inline
-    def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+    inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+    inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

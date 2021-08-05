@@ -14,19 +14,15 @@ trait WebAclLoggingConfigurationRedactedFields extends StObject {
 }
 object WebAclLoggingConfigurationRedactedFields {
   
-  @scala.inline
-  def apply(fieldToMatches: Input[js.Array[Input[WebAclLoggingConfigurationRedactedFieldsFieldToMatch]]]): WebAclLoggingConfigurationRedactedFields = {
+  inline def apply(fieldToMatches: Input[js.Array[Input[WebAclLoggingConfigurationRedactedFieldsFieldToMatch]]]): WebAclLoggingConfigurationRedactedFields = {
     val __obj = js.Dynamic.literal(fieldToMatches = fieldToMatches.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebAclLoggingConfigurationRedactedFields]
   }
   
-  @scala.inline
-  implicit class WebAclLoggingConfigurationRedactedFieldsMutableBuilder[Self <: WebAclLoggingConfigurationRedactedFields] (val x: Self) extends AnyVal {
+  extension [Self <: WebAclLoggingConfigurationRedactedFields](x: Self) {
     
-    @scala.inline
-    def setFieldToMatches(value: Input[js.Array[Input[WebAclLoggingConfigurationRedactedFieldsFieldToMatch]]]): Self = StObject.set(x, "fieldToMatches", value.asInstanceOf[js.Any])
+    inline def setFieldToMatches(value: Input[js.Array[Input[WebAclLoggingConfigurationRedactedFieldsFieldToMatch]]]): Self = StObject.set(x, "fieldToMatches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldToMatchesVarargs(value: Input[WebAclLoggingConfigurationRedactedFieldsFieldToMatch]*): Self = StObject.set(x, "fieldToMatches", js.Array(value :_*))
+    inline def setFieldToMatchesVarargs(value: Input[WebAclLoggingConfigurationRedactedFieldsFieldToMatch]*): Self = StObject.set(x, "fieldToMatches", js.Array(value :_*))
   }
 }

@@ -19,28 +19,21 @@ trait SchemaDivisionSearchResponse extends StObject {
 }
 object SchemaDivisionSearchResponse {
   
-  @scala.inline
-  def apply(): SchemaDivisionSearchResponse = {
+  inline def apply(): SchemaDivisionSearchResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDivisionSearchResponse]
   }
   
-  @scala.inline
-  implicit class SchemaDivisionSearchResponseMutableBuilder[Self <: SchemaDivisionSearchResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDivisionSearchResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setResults(value: js.Array[SchemaDivisionSearchResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[SchemaDivisionSearchResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    @scala.inline
-    def setResultsVarargs(value: SchemaDivisionSearchResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: SchemaDivisionSearchResult*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

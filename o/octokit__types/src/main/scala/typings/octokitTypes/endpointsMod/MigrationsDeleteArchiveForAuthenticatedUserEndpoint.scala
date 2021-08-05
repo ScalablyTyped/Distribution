@@ -14,16 +14,13 @@ trait MigrationsDeleteArchiveForAuthenticatedUserEndpoint
 }
 object MigrationsDeleteArchiveForAuthenticatedUserEndpoint {
   
-  @scala.inline
-  def apply(mediaType: `0`[wyandotte], migration_id: Double): MigrationsDeleteArchiveForAuthenticatedUserEndpoint = {
+  inline def apply(mediaType: `0`[wyandotte], migration_id: Double): MigrationsDeleteArchiveForAuthenticatedUserEndpoint = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], migration_id = migration_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[MigrationsDeleteArchiveForAuthenticatedUserEndpoint]
   }
   
-  @scala.inline
-  implicit class MigrationsDeleteArchiveForAuthenticatedUserEndpointMutableBuilder[Self <: MigrationsDeleteArchiveForAuthenticatedUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: MigrationsDeleteArchiveForAuthenticatedUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setMigration_id(value: Double): Self = StObject.set(x, "migration_id", value.asInstanceOf[js.Any])
+    inline def setMigration_id(value: Double): Self = StObject.set(x, "migration_id", value.asInstanceOf[js.Any])
   }
 }

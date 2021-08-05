@@ -13,28 +13,21 @@ trait ListTestCasesResponse extends StObject {
 }
 object ListTestCasesResponse {
   
-  @scala.inline
-  def apply(): ListTestCasesResponse = {
+  inline def apply(): ListTestCasesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTestCasesResponse]
   }
   
-  @scala.inline
-  implicit class ListTestCasesResponseMutableBuilder[Self <: ListTestCasesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListTestCasesResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setTestCases(value: js.Array[TestCase]): Self = StObject.set(x, "testCases", value.asInstanceOf[js.Any])
+    inline def setTestCases(value: js.Array[TestCase]): Self = StObject.set(x, "testCases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestCasesUndefined: Self = StObject.set(x, "testCases", js.undefined)
+    inline def setTestCasesUndefined: Self = StObject.set(x, "testCases", js.undefined)
     
-    @scala.inline
-    def setTestCasesVarargs(value: TestCase*): Self = StObject.set(x, "testCases", js.Array(value :_*))
+    inline def setTestCasesVarargs(value: TestCase*): Self = StObject.set(x, "testCases", js.Array(value :_*))
   }
 }

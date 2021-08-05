@@ -23,22 +23,17 @@ trait PutDestinationRequest extends StObject {
 }
 object PutDestinationRequest {
   
-  @scala.inline
-  def apply(destinationName: DestinationName, roleArn: RoleArn, targetArn: TargetArn): PutDestinationRequest = {
+  inline def apply(destinationName: DestinationName, roleArn: RoleArn, targetArn: TargetArn): PutDestinationRequest = {
     val __obj = js.Dynamic.literal(destinationName = destinationName.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any], targetArn = targetArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutDestinationRequest]
   }
   
-  @scala.inline
-  implicit class PutDestinationRequestMutableBuilder[Self <: PutDestinationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutDestinationRequest](x: Self) {
     
-    @scala.inline
-    def setDestinationName(value: DestinationName): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
+    inline def setDestinationName(value: DestinationName): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetArn(value: TargetArn): Self = StObject.set(x, "targetArn", value.asInstanceOf[js.Any])
+    inline def setTargetArn(value: TargetArn): Self = StObject.set(x, "targetArn", value.asInstanceOf[js.Any])
   }
 }

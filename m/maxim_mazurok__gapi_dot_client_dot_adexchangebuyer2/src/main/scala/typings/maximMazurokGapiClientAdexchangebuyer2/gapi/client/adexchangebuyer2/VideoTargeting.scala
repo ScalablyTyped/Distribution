@@ -14,31 +14,23 @@ trait VideoTargeting extends StObject {
 }
 object VideoTargeting {
   
-  @scala.inline
-  def apply(): VideoTargeting = {
+  inline def apply(): VideoTargeting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoTargeting]
   }
   
-  @scala.inline
-  implicit class VideoTargetingMutableBuilder[Self <: VideoTargeting] (val x: Self) extends AnyVal {
+  extension [Self <: VideoTargeting](x: Self) {
     
-    @scala.inline
-    def setExcludedPositionTypes(value: js.Array[String]): Self = StObject.set(x, "excludedPositionTypes", value.asInstanceOf[js.Any])
+    inline def setExcludedPositionTypes(value: js.Array[String]): Self = StObject.set(x, "excludedPositionTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludedPositionTypesUndefined: Self = StObject.set(x, "excludedPositionTypes", js.undefined)
+    inline def setExcludedPositionTypesUndefined: Self = StObject.set(x, "excludedPositionTypes", js.undefined)
     
-    @scala.inline
-    def setExcludedPositionTypesVarargs(value: String*): Self = StObject.set(x, "excludedPositionTypes", js.Array(value :_*))
+    inline def setExcludedPositionTypesVarargs(value: String*): Self = StObject.set(x, "excludedPositionTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setTargetedPositionTypes(value: js.Array[String]): Self = StObject.set(x, "targetedPositionTypes", value.asInstanceOf[js.Any])
+    inline def setTargetedPositionTypes(value: js.Array[String]): Self = StObject.set(x, "targetedPositionTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetedPositionTypesUndefined: Self = StObject.set(x, "targetedPositionTypes", js.undefined)
+    inline def setTargetedPositionTypesUndefined: Self = StObject.set(x, "targetedPositionTypes", js.undefined)
     
-    @scala.inline
-    def setTargetedPositionTypesVarargs(value: String*): Self = StObject.set(x, "targetedPositionTypes", js.Array(value :_*))
+    inline def setTargetedPositionTypesVarargs(value: String*): Self = StObject.set(x, "targetedPositionTypes", js.Array(value :_*))
   }
 }

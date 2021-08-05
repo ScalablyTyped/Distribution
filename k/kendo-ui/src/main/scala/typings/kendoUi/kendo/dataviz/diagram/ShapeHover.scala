@@ -10,19 +10,15 @@ trait ShapeHover extends StObject {
 }
 object ShapeHover {
   
-  @scala.inline
-  def apply(): ShapeHover = {
+  inline def apply(): ShapeHover = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShapeHover]
   }
   
-  @scala.inline
-  implicit class ShapeHoverMutableBuilder[Self <: ShapeHover] (val x: Self) extends AnyVal {
+  extension [Self <: ShapeHover](x: Self) {
     
-    @scala.inline
-    def setFill(value: String | ShapeHoverFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: String | ShapeHoverFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
   }
 }

@@ -23,19 +23,15 @@ trait ASPxClientHtmlEditorBeforePasteEventArgs
 }
 object ASPxClientHtmlEditorBeforePasteEventArgs {
   
-  @scala.inline
-  def apply(commandName: String, html: String): ASPxClientHtmlEditorBeforePasteEventArgs = {
+  inline def apply(commandName: String, html: String): ASPxClientHtmlEditorBeforePasteEventArgs = {
     val __obj = js.Dynamic.literal(commandName = commandName.asInstanceOf[js.Any], html = html.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientHtmlEditorBeforePasteEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientHtmlEditorBeforePasteEventArgsMutableBuilder[Self <: ASPxClientHtmlEditorBeforePasteEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHtmlEditorBeforePasteEventArgs](x: Self) {
     
-    @scala.inline
-    def setCommandName(value: String): Self = StObject.set(x, "commandName", value.asInstanceOf[js.Any])
+    inline def setCommandName(value: String): Self = StObject.set(x, "commandName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
   }
 }

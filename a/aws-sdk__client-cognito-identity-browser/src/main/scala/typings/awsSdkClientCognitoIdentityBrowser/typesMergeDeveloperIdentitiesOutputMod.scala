@@ -25,23 +25,18 @@ object typesMergeDeveloperIdentitiesOutputMod {
   }
   object MergeDeveloperIdentitiesOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): MergeDeveloperIdentitiesOutput = {
+    inline def apply($metadata: ResponseMetadata): MergeDeveloperIdentitiesOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[MergeDeveloperIdentitiesOutput]
     }
     
-    @scala.inline
-    implicit class MergeDeveloperIdentitiesOutputMutableBuilder[Self <: MergeDeveloperIdentitiesOutput] (val x: Self) extends AnyVal {
+    extension [Self <: MergeDeveloperIdentitiesOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentityId(value: String): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
+      inline def setIdentityId(value: String): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
+      inline def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
     }
   }
 }

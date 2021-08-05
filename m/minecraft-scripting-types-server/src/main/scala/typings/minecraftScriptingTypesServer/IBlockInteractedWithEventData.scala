@@ -23,19 +23,15 @@ trait IBlockInteractedWithEventData extends StObject {
 }
 object IBlockInteractedWithEventData {
   
-  @scala.inline
-  def apply(block_position: VectorXYZ, player: IEntity): IBlockInteractedWithEventData = {
+  inline def apply(block_position: VectorXYZ, player: IEntity): IBlockInteractedWithEventData = {
     val __obj = js.Dynamic.literal(block_position = block_position.asInstanceOf[js.Any], player = player.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBlockInteractedWithEventData]
   }
   
-  @scala.inline
-  implicit class IBlockInteractedWithEventDataMutableBuilder[Self <: IBlockInteractedWithEventData] (val x: Self) extends AnyVal {
+  extension [Self <: IBlockInteractedWithEventData](x: Self) {
     
-    @scala.inline
-    def setBlock_position(value: VectorXYZ): Self = StObject.set(x, "block_position", value.asInstanceOf[js.Any])
+    inline def setBlock_position(value: VectorXYZ): Self = StObject.set(x, "block_position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayer(value: IEntity): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
+    inline def setPlayer(value: IEntity): Self = StObject.set(x, "player", value.asInstanceOf[js.Any])
   }
 }

@@ -19,13 +19,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def authenticate(reason: String): js.Promise[Boolean | TouchIDError] = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(reason.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean | TouchIDError]]
-  @scala.inline
-  def authenticate(reason: String, config: AuthenticateConfig): js.Promise[Boolean | TouchIDError] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(reason.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean | TouchIDError]]
+  inline def authenticate(reason: String): js.Promise[Boolean | TouchIDError] = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(reason.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean | TouchIDError]]
+  inline def authenticate(reason: String, config: AuthenticateConfig): js.Promise[Boolean | TouchIDError] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(reason.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean | TouchIDError]]
   
-  @scala.inline
-  def isSupported(): js.Promise[Boolean | String | TouchIDError] = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[js.Promise[Boolean | String | TouchIDError]]
+  inline def isSupported(): js.Promise[Boolean | String | TouchIDError] = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[js.Promise[Boolean | String | TouchIDError]]
   
   trait AuthenticateConfig extends StObject {
     
@@ -37,29 +34,22 @@ object mod {
   }
   object AuthenticateConfig {
     
-    @scala.inline
-    def apply(fallbackTitle: String): AuthenticateConfig = {
+    inline def apply(fallbackTitle: String): AuthenticateConfig = {
       val __obj = js.Dynamic.literal(fallbackTitle = fallbackTitle.asInstanceOf[js.Any])
       __obj.asInstanceOf[AuthenticateConfig]
     }
     
-    @scala.inline
-    implicit class AuthenticateConfigMutableBuilder[Self <: AuthenticateConfig] (val x: Self) extends AnyVal {
+    extension [Self <: AuthenticateConfig](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setFallbackTitle(value: String): Self = StObject.set(x, "fallbackTitle", value.asInstanceOf[js.Any])
+      inline def setFallbackTitle(value: String): Self = StObject.set(x, "fallbackTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -73,8 +63,7 @@ object mod {
   }
   object TouchIDError {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       details: js.Any,
       message: String,
       name: LAErrorAuthenticationFailed | LAErrorUserCancel | LAErrorUserFallback | LAErrorSystemCancel | LAErrorPasscodeNotSet | LAErrorTouchIDNotAvailable | LAErrorTouchIDNotEnrolled | RCTTouchIDUnknownError | RCTTouchIDNotSupported
@@ -83,17 +72,13 @@ object mod {
       __obj.asInstanceOf[TouchIDError]
     }
     
-    @scala.inline
-    implicit class TouchIDErrorMutableBuilder[Self <: TouchIDError] (val x: Self) extends AnyVal {
+    extension [Self <: TouchIDError](x: Self) {
       
-      @scala.inline
-      def setDetails(value: js.Any): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: js.Any): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: LAErrorAuthenticationFailed | LAErrorUserCancel | LAErrorUserFallback | LAErrorSystemCancel | LAErrorPasscodeNotSet | LAErrorTouchIDNotAvailable | LAErrorTouchIDNotEnrolled | RCTTouchIDUnknownError | RCTTouchIDNotSupported
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

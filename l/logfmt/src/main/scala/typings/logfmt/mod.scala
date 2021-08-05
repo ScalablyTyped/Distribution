@@ -106,26 +106,20 @@ object mod extends Shortcut {
   }
   object RequestLoggerOptions {
     
-    @scala.inline
-    def apply(): RequestLoggerOptions = {
+    inline def apply(): RequestLoggerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RequestLoggerOptions]
     }
     
-    @scala.inline
-    implicit class RequestLoggerOptionsMutableBuilder[Self <: RequestLoggerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RequestLoggerOptions](x: Self) {
       
-      @scala.inline
-      def setElapsed(value: String): Self = StObject.set(x, "elapsed", value.asInstanceOf[js.Any])
+      inline def setElapsed(value: String): Self = StObject.set(x, "elapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElapsedUndefined: Self = StObject.set(x, "elapsed", js.undefined)
+      inline def setElapsedUndefined: Self = StObject.set(x, "elapsed", js.undefined)
       
-      @scala.inline
-      def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
+      inline def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImmediateUndefined: Self = StObject.set(x, "immediate", js.undefined)
+      inline def setImmediateUndefined: Self = StObject.set(x, "immediate", js.undefined)
     }
   }
   
@@ -135,17 +129,14 @@ object mod extends Shortcut {
   }
   object WritableStream {
     
-    @scala.inline
-    def apply(write: String => Unit): WritableStream = {
+    inline def apply(write: String => Unit): WritableStream = {
       val __obj = js.Dynamic.literal(write = js.Any.fromFunction1(write))
       __obj.asInstanceOf[WritableStream]
     }
     
-    @scala.inline
-    implicit class WritableStreamMutableBuilder[Self <: WritableStream] (val x: Self) extends AnyVal {
+    extension [Self <: WritableStream](x: Self) {
       
-      @scala.inline
-      def setWrite(value: String => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+      inline def setWrite(value: String => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }
   }
   

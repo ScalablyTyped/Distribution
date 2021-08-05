@@ -16,8 +16,7 @@ trait DeveloperMetadataLocation extends StObject {
 }
 object DeveloperMetadataLocation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dimensionRange: DimensionRange,
     locationType: DeveloperMetadataLocationType,
     sheetId: Double,
@@ -27,19 +26,14 @@ object DeveloperMetadataLocation {
     __obj.asInstanceOf[DeveloperMetadataLocation]
   }
   
-  @scala.inline
-  implicit class DeveloperMetadataLocationMutableBuilder[Self <: DeveloperMetadataLocation] (val x: Self) extends AnyVal {
+  extension [Self <: DeveloperMetadataLocation](x: Self) {
     
-    @scala.inline
-    def setDimensionRange(value: DimensionRange): Self = StObject.set(x, "dimensionRange", value.asInstanceOf[js.Any])
+    inline def setDimensionRange(value: DimensionRange): Self = StObject.set(x, "dimensionRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationType(value: DeveloperMetadataLocationType): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
+    inline def setLocationType(value: DeveloperMetadataLocationType): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetId(value: Double): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
+    inline def setSheetId(value: Double): Self = StObject.set(x, "sheetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpreadsheet(value: Boolean): Self = StObject.set(x, "spreadsheet", value.asInstanceOf[js.Any])
+    inline def setSpreadsheet(value: Boolean): Self = StObject.set(x, "spreadsheet", value.asInstanceOf[js.Any])
   }
 }

@@ -18,17 +18,14 @@ object errorMod {
   }
   object IErrorProps {
     
-    @scala.inline
-    def apply(details: IStructuredError): IErrorProps = {
+    inline def apply(details: IStructuredError): IErrorProps = {
       val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any])
       __obj.asInstanceOf[IErrorProps]
     }
     
-    @scala.inline
-    implicit class IErrorPropsMutableBuilder[Self <: IErrorProps] (val x: Self) extends AnyVal {
+    extension [Self <: IErrorProps](x: Self) {
       
-      @scala.inline
-      def setDetails(value: IStructuredError): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: IStructuredError): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     }
   }
 }

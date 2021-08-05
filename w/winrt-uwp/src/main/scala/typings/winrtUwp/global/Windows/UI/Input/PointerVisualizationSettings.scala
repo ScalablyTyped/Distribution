@@ -30,6 +30,5 @@ object PointerVisualizationSettings {
     * @return The PointerVisualizationSettings object associated with the current app.
     */
   /* static member */
-  @scala.inline
-  def getForCurrentView(): typings.winrtUwp.Windows.UI.Input.PointerVisualizationSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.UI.Input.PointerVisualizationSettings]
+  inline def getForCurrentView(): typings.winrtUwp.Windows.UI.Input.PointerVisualizationSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.UI.Input.PointerVisualizationSettings]
 }

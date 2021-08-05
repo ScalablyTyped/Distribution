@@ -48,47 +48,34 @@ object mod {
     }
     object Option {
       
-      @scala.inline
-      def apply(test: TestElement): Option = {
+      inline def apply(test: TestElement): Option = {
         val __obj = js.Dynamic.literal(test = test.asInstanceOf[js.Any])
         __obj.asInstanceOf[Option]
       }
       
-      @scala.inline
-      implicit class OptionMutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
+      extension [Self <: Option](x: Self) {
         
-        @scala.inline
-        def setExclude(value: TestElement): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+        inline def setExclude(value: TestElement): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExcludeFunction1(value: /* source */ String => Boolean): Self = StObject.set(x, "exclude", js.Any.fromFunction1(value))
+        inline def setExcludeFunction1(value: /* source */ String => Boolean): Self = StObject.set(x, "exclude", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
+        inline def setExcludeUndefined: Self = StObject.set(x, "exclude", js.undefined)
         
-        @scala.inline
-        def setExcludeVarargs(value: Option*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+        inline def setExcludeVarargs(value: Option*): Self = StObject.set(x, "exclude", js.Array(value :_*))
         
-        @scala.inline
-        def setInclude(value: TestElement): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+        inline def setInclude(value: TestElement): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIncludeFunction1(value: /* source */ String => Boolean): Self = StObject.set(x, "include", js.Any.fromFunction1(value))
+        inline def setIncludeFunction1(value: /* source */ String => Boolean): Self = StObject.set(x, "include", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+        inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
         
-        @scala.inline
-        def setIncludeVarargs(value: Option*): Self = StObject.set(x, "include", js.Array(value :_*))
+        inline def setIncludeVarargs(value: Option*): Self = StObject.set(x, "include", js.Array(value :_*))
         
-        @scala.inline
-        def setTest(value: TestElement): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+        inline def setTest(value: TestElement): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTestFunction1(value: /* source */ String => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
+        inline def setTestFunction1(value: /* source */ String => Boolean): Self = StObject.set(x, "test", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setTestVarargs(value: Option*): Self = StObject.set(x, "test", js.Array(value :_*))
+        inline def setTestVarargs(value: Option*): Self = StObject.set(x, "test", js.Array(value :_*))
       }
     }
     
@@ -144,37 +131,28 @@ object mod {
     }
     object Options {
       
-      @scala.inline
-      def apply(): typings.hardSourceWebpackPlugin.mod.ParallelModulePlugin.Options = {
+      inline def apply(): typings.hardSourceWebpackPlugin.mod.ParallelModulePlugin.Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.hardSourceWebpackPlugin.mod.ParallelModulePlugin.Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: typings.hardSourceWebpackPlugin.mod.ParallelModulePlugin.Options] (val x: Self) extends AnyVal {
+      extension [Self <: typings.hardSourceWebpackPlugin.mod.ParallelModulePlugin.Options](x: Self) {
         
-        @scala.inline
-        def setFork(
+        inline def setFork(
           value: (/* fork */ forkFn, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ /* compiler */ js.Any, /* webpackBin */ String) => Unit
         ): Self = StObject.set(x, "fork", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setForkUndefined: Self = StObject.set(x, "fork", js.undefined)
+        inline def setForkUndefined: Self = StObject.set(x, "fork", js.undefined)
         
-        @scala.inline
-        def setMinModules(value: Double): Self = StObject.set(x, "minModules", value.asInstanceOf[js.Any])
+        inline def setMinModules(value: Double): Self = StObject.set(x, "minModules", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinModulesUndefined: Self = StObject.set(x, "minModules", js.undefined)
+        inline def setMinModulesUndefined: Self = StObject.set(x, "minModules", js.undefined)
         
-        @scala.inline
-        def setNumWorkers(value: Double | js.Function0[Double]): Self = StObject.set(x, "numWorkers", value.asInstanceOf[js.Any])
+        inline def setNumWorkers(value: Double | js.Function0[Double]): Self = StObject.set(x, "numWorkers", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNumWorkersFunction0(value: () => Double): Self = StObject.set(x, "numWorkers", js.Any.fromFunction0(value))
+        inline def setNumWorkersFunction0(value: () => Double): Self = StObject.set(x, "numWorkers", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setNumWorkersUndefined: Self = StObject.set(x, "numWorkers", js.undefined)
+        inline def setNumWorkersUndefined: Self = StObject.set(x, "numWorkers", js.undefined)
       }
     }
     
@@ -250,29 +228,22 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCacheDirectory(value: String): Self = StObject.set(x, "cacheDirectory", value.asInstanceOf[js.Any])
+      inline def setCacheDirectory(value: String): Self = StObject.set(x, "cacheDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheDirectoryUndefined: Self = StObject.set(x, "cacheDirectory", js.undefined)
+      inline def setCacheDirectoryUndefined: Self = StObject.set(x, "cacheDirectory", js.undefined)
       
-      @scala.inline
-      def setCachePrune(value: MaxAge): Self = StObject.set(x, "cachePrune", value.asInstanceOf[js.Any])
+      inline def setCachePrune(value: MaxAge): Self = StObject.set(x, "cachePrune", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCachePruneUndefined: Self = StObject.set(x, "cachePrune", js.undefined)
+      inline def setCachePruneUndefined: Self = StObject.set(x, "cachePrune", js.undefined)
       
-      @scala.inline
-      def setConfigHash(
+      inline def setConfigHash(
         value: String | (js.Function1[
               /* webpackConfig */ js.UndefOr[
                 /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Configuration */ js.Any
@@ -281,27 +252,21 @@ object mod {
             ])
       ): Self = StObject.set(x, "configHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigHashFunction1(
+      inline def setConfigHashFunction1(
         value: /* webpackConfig */ js.UndefOr[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Configuration */ js.Any
             ] => String
       ): Self = StObject.set(x, "configHash", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setConfigHashUndefined: Self = StObject.set(x, "configHash", js.undefined)
+      inline def setConfigHashUndefined: Self = StObject.set(x, "configHash", js.undefined)
       
-      @scala.inline
-      def setEnvironmentHash(value: Directories): Self = StObject.set(x, "environmentHash", value.asInstanceOf[js.Any])
+      inline def setEnvironmentHash(value: Directories): Self = StObject.set(x, "environmentHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironmentHashUndefined: Self = StObject.set(x, "environmentHash", js.undefined)
+      inline def setEnvironmentHashUndefined: Self = StObject.set(x, "environmentHash", js.undefined)
       
-      @scala.inline
-      def setInfo(value: Level): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: Level): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+      inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
     }
   }
   
@@ -312,17 +277,14 @@ object mod {
   }
   object hardSourceWebpackPlugin {
     
-    @scala.inline
-    def apply(apply: /* repeated */ js.Any => Unit): typings.hardSourceWebpackPlugin.mod.hardSourceWebpackPlugin = {
+    inline def apply(apply: /* repeated */ js.Any => Unit): typings.hardSourceWebpackPlugin.mod.hardSourceWebpackPlugin = {
       val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply))
       __obj.asInstanceOf[typings.hardSourceWebpackPlugin.mod.hardSourceWebpackPlugin]
     }
     
-    @scala.inline
-    implicit class hardSourceWebpackPluginMutableBuilder[Self <: typings.hardSourceWebpackPlugin.mod.hardSourceWebpackPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: typings.hardSourceWebpackPlugin.mod.hardSourceWebpackPlugin](x: Self) {
       
-      @scala.inline
-      def setApply(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+      inline def setApply(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     }
   }
 }

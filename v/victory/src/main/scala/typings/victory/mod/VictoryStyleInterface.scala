@@ -14,31 +14,23 @@ trait VictoryStyleInterface extends StObject {
 }
 object VictoryStyleInterface {
   
-  @scala.inline
-  def apply(): VictoryStyleInterface = {
+  inline def apply(): VictoryStyleInterface = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VictoryStyleInterface]
   }
   
-  @scala.inline
-  implicit class VictoryStyleInterfaceMutableBuilder[Self <: VictoryStyleInterface] (val x: Self) extends AnyVal {
+  extension [Self <: VictoryStyleInterface](x: Self) {
     
-    @scala.inline
-    def setData(value: VictoryStyleObject): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: VictoryStyleObject): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setLabels(value: VictoryStyleObject): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: VictoryStyleObject): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setParent(value: VictoryStyleObject): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: VictoryStyleObject): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
   }
 }

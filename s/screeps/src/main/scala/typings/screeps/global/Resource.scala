@@ -48,6 +48,5 @@ class Resource protected ()
 }
 object Resource {
   
-  @scala.inline
-  def apply: ResourceConstructor = js.Dynamic.global.selectDynamic("Resource").asInstanceOf[ResourceConstructor]
+  inline def apply: ResourceConstructor = js.Dynamic.global.selectDynamic("Resource").asInstanceOf[ResourceConstructor]
 }

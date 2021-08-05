@@ -14,31 +14,23 @@ trait Authentication extends StObject {
 }
 object Authentication {
   
-  @scala.inline
-  def apply(): Authentication = {
+  inline def apply(): Authentication = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Authentication]
   }
   
-  @scala.inline
-  implicit class AuthenticationMutableBuilder[Self <: Authentication] (val x: Self) extends AnyVal {
+  extension [Self <: Authentication](x: Self) {
     
-    @scala.inline
-    def setProviders(value: js.Array[AuthProvider]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
+    inline def setProviders(value: js.Array[AuthProvider]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
+    inline def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
     
-    @scala.inline
-    def setProvidersVarargs(value: AuthProvider*): Self = StObject.set(x, "providers", js.Array(value :_*))
+    inline def setProvidersVarargs(value: AuthProvider*): Self = StObject.set(x, "providers", js.Array(value :_*))
     
-    @scala.inline
-    def setRules(value: js.Array[AuthenticationRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: js.Array[AuthenticationRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+    inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    @scala.inline
-    def setRulesVarargs(value: AuthenticationRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: AuthenticationRule*): Self = StObject.set(x, "rules", js.Array(value :_*))
   }
 }

@@ -58,32 +58,24 @@ object pluggableMapMod {
   }
   object AtPixelOptions {
     
-    @scala.inline
-    def apply(): AtPixelOptions = {
+    inline def apply(): AtPixelOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AtPixelOptions]
     }
     
-    @scala.inline
-    implicit class AtPixelOptionsMutableBuilder[Self <: AtPixelOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AtPixelOptions](x: Self) {
       
-      @scala.inline
-      def setCheckWrapped(value: Boolean): Self = StObject.set(x, "checkWrapped", value.asInstanceOf[js.Any])
+      inline def setCheckWrapped(value: Boolean): Self = StObject.set(x, "checkWrapped", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckWrappedUndefined: Self = StObject.set(x, "checkWrapped", js.undefined)
+      inline def setCheckWrappedUndefined: Self = StObject.set(x, "checkWrapped", js.undefined)
       
-      @scala.inline
-      def setHitTolerance(value: Double): Self = StObject.set(x, "hitTolerance", value.asInstanceOf[js.Any])
+      inline def setHitTolerance(value: Double): Self = StObject.set(x, "hitTolerance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHitToleranceUndefined: Self = StObject.set(x, "hitTolerance", js.undefined)
+      inline def setHitToleranceUndefined: Self = StObject.set(x, "hitTolerance", js.undefined)
       
-      @scala.inline
-      def setLayerFilter(value: /* p0 */ typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default] => Boolean): Self = StObject.set(x, "layerFilter", js.Any.fromFunction1(value))
+      inline def setLayerFilter(value: /* p0 */ typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default] => Boolean): Self = StObject.set(x, "layerFilter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLayerFilterUndefined: Self = StObject.set(x, "layerFilter", js.undefined)
+      inline def setLayerFilterUndefined: Self = StObject.set(x, "layerFilter", js.undefined)
     }
   }
   
@@ -95,23 +87,18 @@ object pluggableMapMod {
   }
   object DeclutterItems {
     
-    @scala.inline
-    def apply(items: js.Array[js.Any], opacity: Double): DeclutterItems = {
+    inline def apply(items: js.Array[js.Any], opacity: Double): DeclutterItems = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], opacity = opacity.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeclutterItems]
     }
     
-    @scala.inline
-    implicit class DeclutterItemsMutableBuilder[Self <: DeclutterItems] (val x: Self) extends AnyVal {
+    extension [Self <: DeclutterItems](x: Self) {
       
-      @scala.inline
-      def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     }
   }
   
@@ -153,8 +140,7 @@ object pluggableMapMod {
   }
   object FrameState {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       animate: Boolean,
       coordinateToPixelTransform: Transform,
       declutterItems: js.Array[DeclutterItems],
@@ -177,77 +163,53 @@ object pluggableMapMod {
       __obj.asInstanceOf[FrameState]
     }
     
-    @scala.inline
-    implicit class FrameStateMutableBuilder[Self <: FrameState] (val x: Self) extends AnyVal {
+    extension [Self <: FrameState](x: Self) {
       
-      @scala.inline
-      def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+      inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoordinateToPixelTransform(value: Transform): Self = StObject.set(x, "coordinateToPixelTransform", value.asInstanceOf[js.Any])
+      inline def setCoordinateToPixelTransform(value: Transform): Self = StObject.set(x, "coordinateToPixelTransform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoordinateToPixelTransformVarargs(value: Double*): Self = StObject.set(x, "coordinateToPixelTransform", js.Array(value :_*))
+      inline def setCoordinateToPixelTransformVarargs(value: Double*): Self = StObject.set(x, "coordinateToPixelTransform", js.Array(value :_*))
       
-      @scala.inline
-      def setDeclutterItems(value: js.Array[DeclutterItems]): Self = StObject.set(x, "declutterItems", value.asInstanceOf[js.Any])
+      inline def setDeclutterItems(value: js.Array[DeclutterItems]): Self = StObject.set(x, "declutterItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeclutterItemsVarargs(value: DeclutterItems*): Self = StObject.set(x, "declutterItems", js.Array(value :_*))
+      inline def setDeclutterItemsVarargs(value: DeclutterItems*): Self = StObject.set(x, "declutterItems", js.Array(value :_*))
       
-      @scala.inline
-      def setExtent(value: Extent): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+      inline def setExtent(value: Extent): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayerIndex(value: Double): Self = StObject.set(x, "layerIndex", value.asInstanceOf[js.Any])
+      inline def setLayerIndex(value: Double): Self = StObject.set(x, "layerIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayerStatesArray(value: js.Array[State]): Self = StObject.set(x, "layerStatesArray", value.asInstanceOf[js.Any])
+      inline def setLayerStatesArray(value: js.Array[State]): Self = StObject.set(x, "layerStatesArray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayerStatesArrayVarargs(value: State*): Self = StObject.set(x, "layerStatesArray", js.Array(value :_*))
+      inline def setLayerStatesArrayVarargs(value: State*): Self = StObject.set(x, "layerStatesArray", js.Array(value :_*))
       
-      @scala.inline
-      def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
+      inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPixelToCoordinateTransform(value: Transform): Self = StObject.set(x, "pixelToCoordinateTransform", value.asInstanceOf[js.Any])
+      inline def setPixelToCoordinateTransform(value: Transform): Self = StObject.set(x, "pixelToCoordinateTransform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPixelToCoordinateTransformVarargs(value: Double*): Self = StObject.set(x, "pixelToCoordinateTransform", js.Array(value :_*))
+      inline def setPixelToCoordinateTransformVarargs(value: Double*): Self = StObject.set(x, "pixelToCoordinateTransform", js.Array(value :_*))
       
-      @scala.inline
-      def setPostRenderFunctions(value: js.Array[PostRenderFunction]): Self = StObject.set(x, "postRenderFunctions", value.asInstanceOf[js.Any])
+      inline def setPostRenderFunctions(value: js.Array[PostRenderFunction]): Self = StObject.set(x, "postRenderFunctions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostRenderFunctionsVarargs(value: PostRenderFunction*): Self = StObject.set(x, "postRenderFunctions", js.Array(value :_*))
+      inline def setPostRenderFunctionsVarargs(value: PostRenderFunction*): Self = StObject.set(x, "postRenderFunctions", js.Array(value :_*))
       
-      @scala.inline
-      def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTileQueue(value: typings.ol.tileQueueMod.default): Self = StObject.set(x, "tileQueue", value.asInstanceOf[js.Any])
+      inline def setTileQueue(value: typings.ol.tileQueueMod.default): Self = StObject.set(x, "tileQueue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsedTiles(value: StringDictionary[StringDictionary[Boolean]]): Self = StObject.set(x, "usedTiles", value.asInstanceOf[js.Any])
+      inline def setUsedTiles(value: StringDictionary[StringDictionary[Boolean]]): Self = StObject.set(x, "usedTiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewHints(value: js.Array[Double]): Self = StObject.set(x, "viewHints", value.asInstanceOf[js.Any])
+      inline def setViewHints(value: js.Array[Double]): Self = StObject.set(x, "viewHints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewHintsVarargs(value: Double*): Self = StObject.set(x, "viewHints", js.Array(value :_*))
+      inline def setViewHintsVarargs(value: Double*): Self = StObject.set(x, "viewHints", js.Array(value :_*))
       
-      @scala.inline
-      def setViewState(value: typings.ol.viewMod.State): Self = StObject.set(x, "viewState", value.asInstanceOf[js.Any])
+      inline def setViewState(value: typings.ol.viewMod.State): Self = StObject.set(x, "viewState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWantedTiles(value: StringDictionary[StringDictionary[Boolean]]): Self = StObject.set(x, "wantedTiles", value.asInstanceOf[js.Any])
+      inline def setWantedTiles(value: StringDictionary[StringDictionary[Boolean]]): Self = StObject.set(x, "wantedTiles", value.asInstanceOf[js.Any])
     }
   }
   
@@ -283,94 +245,68 @@ object pluggableMapMod {
   }
   object MapOptions {
     
-    @scala.inline
-    def apply(): MapOptions = {
+    inline def apply(): MapOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MapOptions]
     }
     
-    @scala.inline
-    implicit class MapOptionsMutableBuilder[Self <: MapOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MapOptions](x: Self) {
       
-      @scala.inline
-      def setControls(
+      inline def setControls(
         value: typings.ol.collectionMod.default[typings.ol.controlControlMod.default] | js.Array[typings.ol.controlControlMod.default]
       ): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
+      inline def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
       
-      @scala.inline
-      def setControlsVarargs(value: typings.ol.controlControlMod.default*): Self = StObject.set(x, "controls", js.Array(value :_*))
+      inline def setControlsVarargs(value: typings.ol.controlControlMod.default*): Self = StObject.set(x, "controls", js.Array(value :_*))
       
-      @scala.inline
-      def setInteractions(
+      inline def setInteractions(
         value: typings.ol.collectionMod.default[typings.ol.interactionInteractionMod.default] | js.Array[typings.ol.interactionInteractionMod.default]
       ): Self = StObject.set(x, "interactions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInteractionsUndefined: Self = StObject.set(x, "interactions", js.undefined)
+      inline def setInteractionsUndefined: Self = StObject.set(x, "interactions", js.undefined)
       
-      @scala.inline
-      def setInteractionsVarargs(value: typings.ol.interactionInteractionMod.default*): Self = StObject.set(x, "interactions", js.Array(value :_*))
+      inline def setInteractionsVarargs(value: typings.ol.interactionInteractionMod.default*): Self = StObject.set(x, "interactions", js.Array(value :_*))
       
-      @scala.inline
-      def setKeyboardEventTarget(value: HTMLElement | Document | String): Self = StObject.set(x, "keyboardEventTarget", value.asInstanceOf[js.Any])
+      inline def setKeyboardEventTarget(value: HTMLElement | Document | String): Self = StObject.set(x, "keyboardEventTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyboardEventTargetUndefined: Self = StObject.set(x, "keyboardEventTarget", js.undefined)
+      inline def setKeyboardEventTargetUndefined: Self = StObject.set(x, "keyboardEventTarget", js.undefined)
       
-      @scala.inline
-      def setLayers(
+      inline def setLayers(
         value: js.Array[typings.ol.baseMod.default] | typings.ol.collectionMod.default[typings.ol.baseMod.default] | typings.ol.groupMod.default
       ): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
+      inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
       
-      @scala.inline
-      def setLayersVarargs(value: typings.ol.baseMod.default*): Self = StObject.set(x, "layers", js.Array(value :_*))
+      inline def setLayersVarargs(value: typings.ol.baseMod.default*): Self = StObject.set(x, "layers", js.Array(value :_*))
       
-      @scala.inline
-      def setMaxTilesLoading(value: Double): Self = StObject.set(x, "maxTilesLoading", value.asInstanceOf[js.Any])
+      inline def setMaxTilesLoading(value: Double): Self = StObject.set(x, "maxTilesLoading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxTilesLoadingUndefined: Self = StObject.set(x, "maxTilesLoading", js.undefined)
+      inline def setMaxTilesLoadingUndefined: Self = StObject.set(x, "maxTilesLoading", js.undefined)
       
-      @scala.inline
-      def setMoveTolerance(value: Double): Self = StObject.set(x, "moveTolerance", value.asInstanceOf[js.Any])
+      inline def setMoveTolerance(value: Double): Self = StObject.set(x, "moveTolerance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoveToleranceUndefined: Self = StObject.set(x, "moveTolerance", js.undefined)
+      inline def setMoveToleranceUndefined: Self = StObject.set(x, "moveTolerance", js.undefined)
       
-      @scala.inline
-      def setOverlays(
+      inline def setOverlays(
         value: typings.ol.collectionMod.default[typings.ol.overlayMod.default] | js.Array[typings.ol.overlayMod.default]
       ): Self = StObject.set(x, "overlays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlaysUndefined: Self = StObject.set(x, "overlays", js.undefined)
+      inline def setOverlaysUndefined: Self = StObject.set(x, "overlays", js.undefined)
       
-      @scala.inline
-      def setOverlaysVarargs(value: typings.ol.overlayMod.default*): Self = StObject.set(x, "overlays", js.Array(value :_*))
+      inline def setOverlaysVarargs(value: typings.ol.overlayMod.default*): Self = StObject.set(x, "overlays", js.Array(value :_*))
       
-      @scala.inline
-      def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
+      inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
+      inline def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
       
-      @scala.inline
-      def setTarget(value: HTMLElement | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: HTMLElement | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setView(value: typings.ol.viewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      inline def setView(value: typings.ol.viewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+      inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
     }
   }
   
@@ -388,8 +324,7 @@ object pluggableMapMod {
   }
   object MapOptionsInternal {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       keyboardEventTarget: HTMLElement | Document,
       overlays: typings.ol.collectionMod.default[typings.ol.overlayMod.default],
       values: StringDictionary[js.Any]
@@ -398,29 +333,21 @@ object pluggableMapMod {
       __obj.asInstanceOf[MapOptionsInternal]
     }
     
-    @scala.inline
-    implicit class MapOptionsInternalMutableBuilder[Self <: MapOptionsInternal] (val x: Self) extends AnyVal {
+    extension [Self <: MapOptionsInternal](x: Self) {
       
-      @scala.inline
-      def setControls(value: typings.ol.collectionMod.default[typings.ol.controlControlMod.default]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+      inline def setControls(value: typings.ol.collectionMod.default[typings.ol.controlControlMod.default]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
+      inline def setControlsUndefined: Self = StObject.set(x, "controls", js.undefined)
       
-      @scala.inline
-      def setInteractions(value: typings.ol.collectionMod.default[typings.ol.interactionInteractionMod.default]): Self = StObject.set(x, "interactions", value.asInstanceOf[js.Any])
+      inline def setInteractions(value: typings.ol.collectionMod.default[typings.ol.interactionInteractionMod.default]): Self = StObject.set(x, "interactions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInteractionsUndefined: Self = StObject.set(x, "interactions", js.undefined)
+      inline def setInteractionsUndefined: Self = StObject.set(x, "interactions", js.undefined)
       
-      @scala.inline
-      def setKeyboardEventTarget(value: HTMLElement | Document): Self = StObject.set(x, "keyboardEventTarget", value.asInstanceOf[js.Any])
+      inline def setKeyboardEventTarget(value: HTMLElement | Document): Self = StObject.set(x, "keyboardEventTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlays(value: typings.ol.collectionMod.default[typings.ol.overlayMod.default]): Self = StObject.set(x, "overlays", value.asInstanceOf[js.Any])
+      inline def setOverlays(value: typings.ol.collectionMod.default[typings.ol.overlayMod.default]): Self = StObject.set(x, "overlays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: StringDictionary[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: StringDictionary[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     }
   }
   
@@ -454,7 +381,7 @@ object pluggableMapMod {
       */
     def addOverlay(overlay: typings.ol.overlayMod.default): Unit = js.native
     
-    var controls: typings.ol.collectionMod.default[typings.ol.controlControlMod.default] = js.native
+    /* protected */ var controls: typings.ol.collectionMod.default[typings.ol.controlControlMod.default] = js.native
     
     def createRenderer(): typings.ol.mapMod.default = js.native
     
@@ -666,7 +593,7 @@ object pluggableMapMod {
     def hasFeatureAtPixel(pixel: Pixel): Boolean = js.native
     def hasFeatureAtPixel(pixel: Pixel, opt_options: AtPixelOptions): Boolean = js.native
     
-    var interactions: typings.ol.collectionMod.default[typings.ol.interactionInteractionMod.default] = js.native
+    /* protected */ var interactions: typings.ol.collectionMod.default[typings.ol.interactionInteractionMod.default] = js.native
     
     def isRendered(): Boolean = js.native
     

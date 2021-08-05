@@ -8,16 +8,13 @@ object storybookAddonJestStrings {
   
   @js.native
   sealed trait kind extends StObject
-  @scala.inline
-  def kind: kind = "kind".asInstanceOf[kind]
+  inline def kind: kind = "kind".asInstanceOf[kind]
   
   @js.native
   sealed trait storyName extends StObject
-  @scala.inline
-  def storyName: storyName = "storyName".asInstanceOf[storyName]
+  inline def storyName: storyName = "storyName".asInstanceOf[storyName]
   
   @js.native
   sealed trait tests extends StObject
-  @scala.inline
-  def tests: tests = "tests".asInstanceOf[tests]
+  inline def tests: tests = "tests".asInstanceOf[tests]
 }

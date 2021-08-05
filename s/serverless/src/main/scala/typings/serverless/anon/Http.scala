@@ -10,16 +10,13 @@ trait Http[T /* <: js.Object */] extends StObject {
 }
 object Http {
   
-  @scala.inline
-  def apply[T /* <: js.Object */](http: T | String): Http[T] = {
+  inline def apply[T /* <: js.Object */](http: T | String): Http[T] = {
     val __obj = js.Dynamic.literal(http = http.asInstanceOf[js.Any])
     __obj.asInstanceOf[Http[T]]
   }
   
-  @scala.inline
-  implicit class HttpMutableBuilder[Self <: Http[?], T /* <: js.Object */] (val x: Self & Http[T]) extends AnyVal {
+  extension [Self <: Http[?], T /* <: js.Object */](x: Self & Http[T]) {
     
-    @scala.inline
-    def setHttp(value: T | String): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
+    inline def setHttp(value: T | String): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
   }
 }

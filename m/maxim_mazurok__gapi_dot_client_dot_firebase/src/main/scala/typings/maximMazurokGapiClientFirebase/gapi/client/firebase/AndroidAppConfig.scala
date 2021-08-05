@@ -14,25 +14,19 @@ trait AndroidAppConfig extends StObject {
 }
 object AndroidAppConfig {
   
-  @scala.inline
-  def apply(): AndroidAppConfig = {
+  inline def apply(): AndroidAppConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AndroidAppConfig]
   }
   
-  @scala.inline
-  implicit class AndroidAppConfigMutableBuilder[Self <: AndroidAppConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AndroidAppConfig](x: Self) {
     
-    @scala.inline
-    def setConfigFileContents(value: String): Self = StObject.set(x, "configFileContents", value.asInstanceOf[js.Any])
+    inline def setConfigFileContents(value: String): Self = StObject.set(x, "configFileContents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigFileContentsUndefined: Self = StObject.set(x, "configFileContents", js.undefined)
+    inline def setConfigFileContentsUndefined: Self = StObject.set(x, "configFileContents", js.undefined)
     
-    @scala.inline
-    def setConfigFilename(value: String): Self = StObject.set(x, "configFilename", value.asInstanceOf[js.Any])
+    inline def setConfigFilename(value: String): Self = StObject.set(x, "configFilename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigFilenameUndefined: Self = StObject.set(x, "configFilename", js.undefined)
+    inline def setConfigFilenameUndefined: Self = StObject.set(x, "configFilename", js.undefined)
   }
 }

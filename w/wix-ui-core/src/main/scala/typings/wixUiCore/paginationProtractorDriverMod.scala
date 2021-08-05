@@ -30,8 +30,7 @@ object paginationProtractorDriverMod {
   }
   object PaginationDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       element: () => ElementFinder,
       getElementLocation: String => js.Promise[X],
       getElementSize: String => js.Promise[Height],
@@ -41,17 +40,13 @@ object paginationProtractorDriverMod {
       __obj.asInstanceOf[PaginationDriver]
     }
     
-    @scala.inline
-    implicit class PaginationDriverMutableBuilder[Self <: PaginationDriver] (val x: Self) extends AnyVal {
+    extension [Self <: PaginationDriver](x: Self) {
       
-      @scala.inline
-      def setGetElementLocation(value: String => js.Promise[X]): Self = StObject.set(x, "getElementLocation", js.Any.fromFunction1(value))
+      inline def setGetElementLocation(value: String => js.Promise[X]): Self = StObject.set(x, "getElementLocation", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetElementSize(value: String => js.Promise[Height]): Self = StObject.set(x, "getElementSize", js.Any.fromFunction1(value))
+      inline def setGetElementSize(value: String => js.Promise[Height]): Self = StObject.set(x, "getElementSize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetPageList(value: () => js.Promise[js.Array[String]]): Self = StObject.set(x, "getPageList", js.Any.fromFunction0(value))
+      inline def setGetPageList(value: () => js.Promise[js.Array[String]]): Self = StObject.set(x, "getPageList", js.Any.fromFunction0(value))
     }
   }
 }

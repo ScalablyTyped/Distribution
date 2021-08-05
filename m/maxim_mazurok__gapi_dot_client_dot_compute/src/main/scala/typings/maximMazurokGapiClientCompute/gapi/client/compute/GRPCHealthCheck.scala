@@ -37,37 +37,27 @@ trait GRPCHealthCheck extends StObject {
 }
 object GRPCHealthCheck {
   
-  @scala.inline
-  def apply(): GRPCHealthCheck = {
+  inline def apply(): GRPCHealthCheck = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GRPCHealthCheck]
   }
   
-  @scala.inline
-  implicit class GRPCHealthCheckMutableBuilder[Self <: GRPCHealthCheck] (val x: Self) extends AnyVal {
+  extension [Self <: GRPCHealthCheck](x: Self) {
     
-    @scala.inline
-    def setGrpcServiceName(value: String): Self = StObject.set(x, "grpcServiceName", value.asInstanceOf[js.Any])
+    inline def setGrpcServiceName(value: String): Self = StObject.set(x, "grpcServiceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrpcServiceNameUndefined: Self = StObject.set(x, "grpcServiceName", js.undefined)
+    inline def setGrpcServiceNameUndefined: Self = StObject.set(x, "grpcServiceName", js.undefined)
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortName(value: String): Self = StObject.set(x, "portName", value.asInstanceOf[js.Any])
+    inline def setPortName(value: String): Self = StObject.set(x, "portName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortNameUndefined: Self = StObject.set(x, "portName", js.undefined)
+    inline def setPortNameUndefined: Self = StObject.set(x, "portName", js.undefined)
     
-    @scala.inline
-    def setPortSpecification(value: String): Self = StObject.set(x, "portSpecification", value.asInstanceOf[js.Any])
+    inline def setPortSpecification(value: String): Self = StObject.set(x, "portSpecification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortSpecificationUndefined: Self = StObject.set(x, "portSpecification", js.undefined)
+    inline def setPortSpecificationUndefined: Self = StObject.set(x, "portSpecification", js.undefined)
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
   }
 }

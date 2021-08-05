@@ -20,37 +20,27 @@ trait DeleteObjectsOutput extends StObject {
 }
 object DeleteObjectsOutput {
   
-  @scala.inline
-  def apply(): DeleteObjectsOutput = {
+  inline def apply(): DeleteObjectsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteObjectsOutput]
   }
   
-  @scala.inline
-  implicit class DeleteObjectsOutputMutableBuilder[Self <: DeleteObjectsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteObjectsOutput](x: Self) {
     
-    @scala.inline
-    def setDeleted(value: DeletedObjects): Self = StObject.set(x, "Deleted", value.asInstanceOf[js.Any])
+    inline def setDeleted(value: DeletedObjects): Self = StObject.set(x, "Deleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedUndefined: Self = StObject.set(x, "Deleted", js.undefined)
+    inline def setDeletedUndefined: Self = StObject.set(x, "Deleted", js.undefined)
     
-    @scala.inline
-    def setDeletedVarargs(value: DeletedObject*): Self = StObject.set(x, "Deleted", js.Array(value :_*))
+    inline def setDeletedVarargs(value: DeletedObject*): Self = StObject.set(x, "Deleted", js.Array(value :_*))
     
-    @scala.inline
-    def setErrors(value: Errors): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: Errors): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "Errors", js.undefined)
     
-    @scala.inline
-    def setErrorsVarargs(value: Error*): Self = StObject.set(x, "Errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: Error*): Self = StObject.set(x, "Errors", js.Array(value :_*))
     
-    @scala.inline
-    def setRequestCharged(value: RequestCharged): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
+    inline def setRequestCharged(value: RequestCharged): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestChargedUndefined: Self = StObject.set(x, "RequestCharged", js.undefined)
+    inline def setRequestChargedUndefined: Self = StObject.set(x, "RequestCharged", js.undefined)
   }
 }

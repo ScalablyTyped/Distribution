@@ -24,14 +24,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(url: String): js.Promise[Buffer] & WritableStream & ReadableStream = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer] & WritableStream & ReadableStream]
-  @scala.inline
-  def apply(url: String, destination: String): js.Promise[Buffer] & WritableStream & ReadableStream = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer] & WritableStream & ReadableStream]
-  @scala.inline
-  def apply(url: String, destination: String, options: DownloadOptions): js.Promise[Buffer] & WritableStream & ReadableStream = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer] & WritableStream & ReadableStream]
-  @scala.inline
-  def apply(url: String, destination: Unit, options: DownloadOptions): js.Promise[Buffer] & WritableStream & ReadableStream = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer] & WritableStream & ReadableStream]
+  inline def apply(url: String): js.Promise[Buffer] & WritableStream & ReadableStream = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Buffer] & WritableStream & ReadableStream]
+  inline def apply(url: String, destination: String): js.Promise[Buffer] & WritableStream & ReadableStream = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer] & WritableStream & ReadableStream]
+  inline def apply(url: String, destination: String, options: DownloadOptions): js.Promise[Buffer] & WritableStream & ReadableStream = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer] & WritableStream & ReadableStream]
+  inline def apply(url: String, destination: Unit, options: DownloadOptions): js.Promise[Buffer] & WritableStream & ReadableStream = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], destination.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buffer] & WritableStream & ReadableStream]
   
   @JSImport("download", JSImport.Namespace)
   @js.native
@@ -109,128 +105,88 @@ object mod {
   }
   object DownloadOptions {
     
-    @scala.inline
-    def apply(): DownloadOptions = {
+    inline def apply(): DownloadOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DownloadOptions]
     }
     
-    @scala.inline
-    implicit class DownloadOptionsMutableBuilder[Self <: DownloadOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DownloadOptions](x: Self) {
       
-      @scala.inline
-      def setAgent(value: Agent | AgentOptions | js.Any | Boolean): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+      inline def setAgent(value: Agent | AgentOptions | js.Any | Boolean): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
+      inline def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
       
-      @scala.inline
-      def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+      inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
+      inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
       
-      @scala.inline
-      def setBody(value: String | Buffer | Readable): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String | Buffer | Readable): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setCache(value: Cache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Cache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setCookieJar(value: CookieJar): Self = StObject.set(x, "cookieJar", value.asInstanceOf[js.Any])
+      inline def setCookieJar(value: CookieJar): Self = StObject.set(x, "cookieJar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieJarUndefined: Self = StObject.set(x, "cookieJar", js.undefined)
+      inline def setCookieJarUndefined: Self = StObject.set(x, "cookieJar", js.undefined)
       
-      @scala.inline
-      def setDecompress(value: Boolean): Self = StObject.set(x, "decompress", value.asInstanceOf[js.Any])
+      inline def setDecompress(value: Boolean): Self = StObject.set(x, "decompress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecompressUndefined: Self = StObject.set(x, "decompress", js.undefined)
+      inline def setDecompressUndefined: Self = StObject.set(x, "decompress", js.undefined)
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setExtract(value: Boolean): Self = StObject.set(x, "extract", value.asInstanceOf[js.Any])
+      inline def setExtract(value: Boolean): Self = StObject.set(x, "extract", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtractUndefined: Self = StObject.set(x, "extract", js.undefined)
+      inline def setExtractUndefined: Self = StObject.set(x, "extract", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setFollowRedirect(value: Boolean): Self = StObject.set(x, "followRedirect", value.asInstanceOf[js.Any])
+      inline def setFollowRedirect(value: Boolean): Self = StObject.set(x, "followRedirect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowRedirectUndefined: Self = StObject.set(x, "followRedirect", js.undefined)
+      inline def setFollowRedirectUndefined: Self = StObject.set(x, "followRedirect", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setHooks(value: Hooks[GotBodyOptions[String], String | Buffer | Readable]): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+      inline def setHooks(value: Hooks[GotBodyOptions[String], String | Buffer | Readable]): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
+      inline def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
       
-      @scala.inline
-      def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+      inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
       
-      @scala.inline
-      def setQuery(value: (Record[String, js.Any]) | URLSearchParams | String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: (Record[String, js.Any]) | URLSearchParams | String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      @scala.inline
-      def setRequest(value: RequestFunction): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: RequestFunction): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+      inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
       
-      @scala.inline
-      def setRetry(value: Double | RetryOptions): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
+      inline def setRetry(value: Double | RetryOptions): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
+      inline def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
       
-      @scala.inline
-      def setThrowHttpErrors(value: Boolean): Self = StObject.set(x, "throwHttpErrors", value.asInstanceOf[js.Any])
+      inline def setThrowHttpErrors(value: Boolean): Self = StObject.set(x, "throwHttpErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrowHttpErrorsUndefined: Self = StObject.set(x, "throwHttpErrors", js.undefined)
+      inline def setThrowHttpErrorsUndefined: Self = StObject.set(x, "throwHttpErrors", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: js.Any | Double | TimeoutOptions): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: js.Any | Double | TimeoutOptions): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setUseElectronNet(value: Boolean): Self = StObject.set(x, "useElectronNet", value.asInstanceOf[js.Any])
+      inline def setUseElectronNet(value: Boolean): Self = StObject.set(x, "useElectronNet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseElectronNetUndefined: Self = StObject.set(x, "useElectronNet", js.undefined)
+      inline def setUseElectronNetUndefined: Self = StObject.set(x, "useElectronNet", js.undefined)
     }
   }
   

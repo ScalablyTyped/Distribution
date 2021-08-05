@@ -18,28 +18,21 @@ trait DescribeStandardsControlsResponse extends StObject {
 }
 object DescribeStandardsControlsResponse {
   
-  @scala.inline
-  def apply(): DescribeStandardsControlsResponse = {
+  inline def apply(): DescribeStandardsControlsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeStandardsControlsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeStandardsControlsResponseMutableBuilder[Self <: DescribeStandardsControlsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeStandardsControlsResponse](x: Self) {
     
-    @scala.inline
-    def setControls(value: StandardsControls): Self = StObject.set(x, "Controls", value.asInstanceOf[js.Any])
+    inline def setControls(value: StandardsControls): Self = StObject.set(x, "Controls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlsUndefined: Self = StObject.set(x, "Controls", js.undefined)
+    inline def setControlsUndefined: Self = StObject.set(x, "Controls", js.undefined)
     
-    @scala.inline
-    def setControlsVarargs(value: StandardsControl*): Self = StObject.set(x, "Controls", js.Array(value :_*))
+    inline def setControlsVarargs(value: StandardsControl*): Self = StObject.set(x, "Controls", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

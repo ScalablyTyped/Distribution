@@ -27,67 +27,47 @@ trait SingleLineMenuOptions extends StObject {
 }
 object SingleLineMenuOptions {
   
-  @scala.inline
-  def apply(): SingleLineMenuOptions = {
+  inline def apply(): SingleLineMenuOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SingleLineMenuOptions]
   }
   
-  @scala.inline
-  implicit class SingleLineMenuOptionsMutableBuilder[Self <: SingleLineMenuOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SingleLineMenuOptions](x: Self) {
     
-    @scala.inline
-    def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
+    inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelableUndefined: Self = StObject.set(x, "cancelable", js.undefined)
+    inline def setCancelableUndefined: Self = StObject.set(x, "cancelable", js.undefined)
     
-    @scala.inline
-    def setExitOnUnexpectedKey(value: Boolean): Self = StObject.set(x, "exitOnUnexpectedKey", value.asInstanceOf[js.Any])
+    inline def setExitOnUnexpectedKey(value: Boolean): Self = StObject.set(x, "exitOnUnexpectedKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExitOnUnexpectedKeyUndefined: Self = StObject.set(x, "exitOnUnexpectedKey", js.undefined)
+    inline def setExitOnUnexpectedKeyUndefined: Self = StObject.set(x, "exitOnUnexpectedKey", js.undefined)
     
-    @scala.inline
-    def setKeyBindings(value: StringDictionary[String]): Self = StObject.set(x, "keyBindings", value.asInstanceOf[js.Any])
+    inline def setKeyBindings(value: StringDictionary[String]): Self = StObject.set(x, "keyBindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyBindingsUndefined: Self = StObject.set(x, "keyBindings", js.undefined)
+    inline def setKeyBindingsUndefined: Self = StObject.set(x, "keyBindings", js.undefined)
     
-    @scala.inline
-    def setNextPageHint(value: String): Self = StObject.set(x, "nextPageHint", value.asInstanceOf[js.Any])
+    inline def setNextPageHint(value: String): Self = StObject.set(x, "nextPageHint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageHintUndefined: Self = StObject.set(x, "nextPageHint", js.undefined)
+    inline def setNextPageHintUndefined: Self = StObject.set(x, "nextPageHint", js.undefined)
     
-    @scala.inline
-    def setPreviousPageHint(value: String): Self = StObject.set(x, "previousPageHint", value.asInstanceOf[js.Any])
+    inline def setPreviousPageHint(value: String): Self = StObject.set(x, "previousPageHint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousPageHintUndefined: Self = StObject.set(x, "previousPageHint", js.undefined)
+    inline def setPreviousPageHintUndefined: Self = StObject.set(x, "previousPageHint", js.undefined)
     
-    @scala.inline
-    def setSelectedStyle(value: CTerminal): Self = StObject.set(x, "selectedStyle", value.asInstanceOf[js.Any])
+    inline def setSelectedStyle(value: CTerminal): Self = StObject.set(x, "selectedStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedStyleUndefined: Self = StObject.set(x, "selectedStyle", js.undefined)
+    inline def setSelectedStyleUndefined: Self = StObject.set(x, "selectedStyle", js.undefined)
     
-    @scala.inline
-    def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+    inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+    inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CTerminal): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CTerminal): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

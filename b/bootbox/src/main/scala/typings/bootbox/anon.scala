@@ -16,26 +16,20 @@ object anon {
   }
   object Group {
     
-    @scala.inline
-    def apply(text: String, value: String): Group = {
+    inline def apply(text: String, value: String): Group = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Group]
     }
     
-    @scala.inline
-    implicit class GroupMutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
+    extension [Self <: Group](x: Self) {
       
-      @scala.inline
-      def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+      inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

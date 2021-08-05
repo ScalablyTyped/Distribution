@@ -38,43 +38,31 @@ trait GroundProperties
 }
 object GroundProperties {
   
-  @scala.inline
-  def apply(): GroundProperties = {
+  inline def apply(): GroundProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GroundProperties]
   }
   
-  @scala.inline
-  implicit class GroundPropertiesMutableBuilder[Self <: GroundProperties] (val x: Self) extends AnyVal {
+  extension [Self <: GroundProperties](x: Self) {
     
-    @scala.inline
-    def setLayers(value: CollectionProperties[ElevationLayerProperties]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+    inline def setLayers(value: CollectionProperties[ElevationLayerProperties]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
+    inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    @scala.inline
-    def setLayersVarargs(value: ElevationLayerProperties*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: ElevationLayerProperties*): Self = StObject.set(x, "layers", js.Array(value :_*))
     
-    @scala.inline
-    def setNavigationConstraint(value: GroundNavigationConstraintProperties): Self = StObject.set(x, "navigationConstraint", value.asInstanceOf[js.Any])
+    inline def setNavigationConstraint(value: GroundNavigationConstraintProperties): Self = StObject.set(x, "navigationConstraint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigationConstraintUndefined: Self = StObject.set(x, "navigationConstraint", js.undefined)
+    inline def setNavigationConstraintUndefined: Self = StObject.set(x, "navigationConstraint", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    @scala.inline
-    def setSurfaceColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "surfaceColor", value.asInstanceOf[js.Any])
+    inline def setSurfaceColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "surfaceColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSurfaceColorUndefined: Self = StObject.set(x, "surfaceColor", js.undefined)
+    inline def setSurfaceColorUndefined: Self = StObject.set(x, "surfaceColor", js.undefined)
     
-    @scala.inline
-    def setSurfaceColorVarargs(value: Double*): Self = StObject.set(x, "surfaceColor", js.Array(value :_*))
+    inline def setSurfaceColorVarargs(value: Double*): Self = StObject.set(x, "surfaceColor", js.Array(value :_*))
   }
 }

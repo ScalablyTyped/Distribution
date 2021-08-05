@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlBackStyle extends StObject
 object OlBackStyle {
   
-  @scala.inline
-  def olBackStyleOpaque: `1` = 1.asInstanceOf[`1`]
+  inline def olBackStyleOpaque: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olBackStyleTransparent: `0` = 0.asInstanceOf[`0`]
+  inline def olBackStyleTransparent: `0` = 0.asInstanceOf[`0`]
 }

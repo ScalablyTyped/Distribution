@@ -31,32 +31,24 @@ object mod {
   }
   object ReactScrollIntoViewIfNeededProps {
     
-    @scala.inline
-    def apply(): ReactScrollIntoViewIfNeededProps = {
+    inline def apply(): ReactScrollIntoViewIfNeededProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReactScrollIntoViewIfNeededProps]
     }
     
-    @scala.inline
-    implicit class ReactScrollIntoViewIfNeededPropsMutableBuilder[Self <: ReactScrollIntoViewIfNeededProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReactScrollIntoViewIfNeededProps](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setElementType(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
+      inline def setElementType(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementTypeUndefined: Self = StObject.set(x, "elementType", js.undefined)
+      inline def setElementTypeUndefined: Self = StObject.set(x, "elementType", js.undefined)
       
-      @scala.inline
-      def setOptions(value: Options[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Options[js.Any]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     }
   }
 }

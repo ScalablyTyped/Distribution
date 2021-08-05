@@ -24,58 +24,41 @@ trait ClusterReroute[T]
 }
 object ClusterReroute {
   
-  @scala.inline
-  def apply[T](): ClusterReroute[T] = {
+  inline def apply[T](): ClusterReroute[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClusterReroute[T]]
   }
   
-  @scala.inline
-  implicit class ClusterRerouteMutableBuilder[Self <: ClusterReroute[?], T] (val x: Self & ClusterReroute[T]) extends AnyVal {
+  extension [Self <: ClusterReroute[?], T](x: Self & ClusterReroute[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setDry_run(value: Boolean): Self = StObject.set(x, "dry_run", value.asInstanceOf[js.Any])
+    inline def setDry_run(value: Boolean): Self = StObject.set(x, "dry_run", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDry_runUndefined: Self = StObject.set(x, "dry_run", js.undefined)
+    inline def setDry_runUndefined: Self = StObject.set(x, "dry_run", js.undefined)
     
-    @scala.inline
-    def setExplain(value: Boolean): Self = StObject.set(x, "explain", value.asInstanceOf[js.Any])
+    inline def setExplain(value: Boolean): Self = StObject.set(x, "explain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExplainUndefined: Self = StObject.set(x, "explain", js.undefined)
+    inline def setExplainUndefined: Self = StObject.set(x, "explain", js.undefined)
     
-    @scala.inline
-    def setMaster_timeout(value: String): Self = StObject.set(x, "master_timeout", value.asInstanceOf[js.Any])
+    inline def setMaster_timeout(value: String): Self = StObject.set(x, "master_timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaster_timeoutUndefined: Self = StObject.set(x, "master_timeout", js.undefined)
+    inline def setMaster_timeoutUndefined: Self = StObject.set(x, "master_timeout", js.undefined)
     
-    @scala.inline
-    def setMetric(value: String | js.Array[String]): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
+    inline def setMetric(value: String | js.Array[String]): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
+    inline def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
     
-    @scala.inline
-    def setMetricVarargs(value: String*): Self = StObject.set(x, "metric", js.Array(value :_*))
+    inline def setMetricVarargs(value: String*): Self = StObject.set(x, "metric", js.Array(value :_*))
     
-    @scala.inline
-    def setRetry_failed(value: Boolean): Self = StObject.set(x, "retry_failed", value.asInstanceOf[js.Any])
+    inline def setRetry_failed(value: Boolean): Self = StObject.set(x, "retry_failed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetry_failedUndefined: Self = StObject.set(x, "retry_failed", js.undefined)
+    inline def setRetry_failedUndefined: Self = StObject.set(x, "retry_failed", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

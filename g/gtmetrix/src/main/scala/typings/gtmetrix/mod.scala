@@ -14,10 +14,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): GTmetrix = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[GTmetrix]
-  @scala.inline
-  def apply(opts: Options): GTmetrix = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[GTmetrix]
+  inline def apply(): GTmetrix = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[GTmetrix]
+  inline def apply(opts: Options): GTmetrix = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[GTmetrix]
   
   @JSImport("gtmetrix", JSImport.Namespace)
   @js.native
@@ -43,20 +41,16 @@ object mod {
   }
   object AccountStatus {
     
-    @scala.inline
-    def apply(api_credits: Double, api_refill: Double): AccountStatus = {
+    inline def apply(api_credits: Double, api_refill: Double): AccountStatus = {
       val __obj = js.Dynamic.literal(api_credits = api_credits.asInstanceOf[js.Any], api_refill = api_refill.asInstanceOf[js.Any])
       __obj.asInstanceOf[AccountStatus]
     }
     
-    @scala.inline
-    implicit class AccountStatusMutableBuilder[Self <: AccountStatus] (val x: Self) extends AnyVal {
+    extension [Self <: AccountStatus](x: Self) {
       
-      @scala.inline
-      def setApi_credits(value: Double): Self = StObject.set(x, "api_credits", value.asInstanceOf[js.Any])
+      inline def setApi_credits(value: Double): Self = StObject.set(x, "api_credits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApi_refill(value: Double): Self = StObject.set(x, "api_refill", value.asInstanceOf[js.Any])
+      inline def setApi_refill(value: Double): Self = StObject.set(x, "api_refill", value.asInstanceOf[js.Any])
     }
   }
   
@@ -74,20 +68,16 @@ object mod {
   }
   object ApiError {
     
-    @scala.inline
-    def apply(contentType: String, message: String, name: String, statusCode: Double): ApiError = {
+    inline def apply(contentType: String, message: String, name: String, statusCode: Double): ApiError = {
       val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[ApiError]
     }
     
-    @scala.inline
-    implicit class ApiErrorMutableBuilder[Self <: ApiError] (val x: Self) extends AnyVal {
+    extension [Self <: ApiError](x: Self) {
       
-      @scala.inline
-      def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -105,23 +95,17 @@ object mod {
   trait BinaryResourceType extends StObject
   object BinaryResourceType {
     
-    @scala.inline
-    def filmstrip: typings.gtmetrix.gtmetrixStrings.filmstrip = "filmstrip".asInstanceOf[typings.gtmetrix.gtmetrixStrings.filmstrip]
+    inline def filmstrip: typings.gtmetrix.gtmetrixStrings.filmstrip = "filmstrip".asInstanceOf[typings.gtmetrix.gtmetrixStrings.filmstrip]
     
-    @scala.inline
-    def `pagespeed-files`: typings.gtmetrix.gtmetrixStrings.`pagespeed-files` = "pagespeed-files".asInstanceOf[typings.gtmetrix.gtmetrixStrings.`pagespeed-files`]
+    inline def `pagespeed-files`: typings.gtmetrix.gtmetrixStrings.`pagespeed-files` = "pagespeed-files".asInstanceOf[typings.gtmetrix.gtmetrixStrings.`pagespeed-files`]
     
-    @scala.inline
-    def `report-pdf`: typings.gtmetrix.gtmetrixStrings.`report-pdf` = "report-pdf".asInstanceOf[typings.gtmetrix.gtmetrixStrings.`report-pdf`]
+    inline def `report-pdf`: typings.gtmetrix.gtmetrixStrings.`report-pdf` = "report-pdf".asInstanceOf[typings.gtmetrix.gtmetrixStrings.`report-pdf`]
     
-    @scala.inline
-    def `report-pdf-full`: typings.gtmetrix.gtmetrixStrings.`report-pdf-full` = "report-pdf-full".asInstanceOf[typings.gtmetrix.gtmetrixStrings.`report-pdf-full`]
+    inline def `report-pdf-full`: typings.gtmetrix.gtmetrixStrings.`report-pdf-full` = "report-pdf-full".asInstanceOf[typings.gtmetrix.gtmetrixStrings.`report-pdf-full`]
     
-    @scala.inline
-    def screenshot: typings.gtmetrix.gtmetrixStrings.screenshot = "screenshot".asInstanceOf[typings.gtmetrix.gtmetrixStrings.screenshot]
+    inline def screenshot: typings.gtmetrix.gtmetrixStrings.screenshot = "screenshot".asInstanceOf[typings.gtmetrix.gtmetrixStrings.screenshot]
     
-    @scala.inline
-    def video: typings.gtmetrix.gtmetrixStrings.video = "video".asInstanceOf[typings.gtmetrix.gtmetrixStrings.video]
+    inline def video: typings.gtmetrix.gtmetrixStrings.video = "video".asInstanceOf[typings.gtmetrix.gtmetrixStrings.video]
   }
   
   trait BrowserFeatures extends StObject {
@@ -140,35 +124,26 @@ object mod {
   }
   object BrowserFeatures {
     
-    @scala.inline
-    def apply(browser: String, features: StringDictionary[Boolean], id: Double, name: String, platform: String): BrowserFeatures = {
+    inline def apply(browser: String, features: StringDictionary[Boolean], id: Double, name: String, platform: String): BrowserFeatures = {
       val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any], features = features.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any])
       __obj.asInstanceOf[BrowserFeatures]
     }
     
-    @scala.inline
-    implicit class BrowserFeaturesMutableBuilder[Self <: BrowserFeatures] (val x: Self) extends AnyVal {
+    extension [Self <: BrowserFeatures](x: Self) {
       
-      @scala.inline
-      def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+      inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+      inline def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
+      inline def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
       
-      @scala.inline
-      def setFeatures(value: StringDictionary[Boolean]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+      inline def setFeatures(value: StringDictionary[Boolean]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     }
   }
   
@@ -206,26 +181,20 @@ object mod {
   }
   object GTmetrix {
     
-    @scala.inline
-    def apply(account: AccountApi, browsers: BrowsersApi, locations: LocationsApi, test: TestApi): GTmetrix = {
+    inline def apply(account: AccountApi, browsers: BrowsersApi, locations: LocationsApi, test: TestApi): GTmetrix = {
       val __obj = js.Dynamic.literal(account = account.asInstanceOf[js.Any], browsers = browsers.asInstanceOf[js.Any], locations = locations.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
       __obj.asInstanceOf[GTmetrix]
     }
     
-    @scala.inline
-    implicit class GTmetrixMutableBuilder[Self <: GTmetrix] (val x: Self) extends AnyVal {
+    extension [Self <: GTmetrix](x: Self) {
       
-      @scala.inline
-      def setAccount(value: AccountApi): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
+      inline def setAccount(value: AccountApi): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrowsers(value: BrowsersApi): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
+      inline def setBrowsers(value: BrowsersApi): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocations(value: LocationsApi): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+      inline def setLocations(value: LocationsApi): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTest(value: TestApi): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+      inline def setTest(value: TestApi): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     }
   }
   
@@ -243,20 +212,16 @@ object mod {
   }
   object InvalidResponseError {
     
-    @scala.inline
-    def apply(contentType: String, message: String, name: String, statusCode: Double): InvalidResponseError = {
+    inline def apply(contentType: String, message: String, name: String, statusCode: Double): InvalidResponseError = {
       val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[InvalidResponseError]
     }
     
-    @scala.inline
-    implicit class InvalidResponseErrorMutableBuilder[Self <: InvalidResponseError] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidResponseError](x: Self) {
       
-      @scala.inline
-      def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+      inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+      inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -272,29 +237,22 @@ object mod {
   }
   object LocationInfo {
     
-    @scala.inline
-    def apply(browsers: js.Array[Double], default: Boolean, id: String, name: String): LocationInfo = {
+    inline def apply(browsers: js.Array[Double], default: Boolean, id: String, name: String): LocationInfo = {
       val __obj = js.Dynamic.literal(browsers = browsers.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[LocationInfo]
     }
     
-    @scala.inline
-    implicit class LocationInfoMutableBuilder[Self <: LocationInfo] (val x: Self) extends AnyVal {
+    extension [Self <: LocationInfo](x: Self) {
       
-      @scala.inline
-      def setBrowsers(value: js.Array[Double]): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
+      inline def setBrowsers(value: js.Array[Double]): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrowsersVarargs(value: Double*): Self = StObject.set(x, "browsers", js.Array(value :_*))
+      inline def setBrowsersVarargs(value: Double*): Self = StObject.set(x, "browsers", js.Array(value :_*))
       
-      @scala.inline
-      def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: Boolean): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -326,14 +284,11 @@ object mod {
   trait NonBinaryResourceType extends StObject
   object NonBinaryResourceType {
     
-    @scala.inline
-    def har: typings.gtmetrix.gtmetrixStrings.har = "har".asInstanceOf[typings.gtmetrix.gtmetrixStrings.har]
+    inline def har: typings.gtmetrix.gtmetrixStrings.har = "har".asInstanceOf[typings.gtmetrix.gtmetrixStrings.har]
     
-    @scala.inline
-    def pagespeed: typings.gtmetrix.gtmetrixStrings.pagespeed = "pagespeed".asInstanceOf[typings.gtmetrix.gtmetrixStrings.pagespeed]
+    inline def pagespeed: typings.gtmetrix.gtmetrixStrings.pagespeed = "pagespeed".asInstanceOf[typings.gtmetrix.gtmetrixStrings.pagespeed]
     
-    @scala.inline
-    def yslow: typings.gtmetrix.gtmetrixStrings.yslow = "yslow".asInstanceOf[typings.gtmetrix.gtmetrixStrings.yslow]
+    inline def yslow: typings.gtmetrix.gtmetrixStrings.yslow = "yslow".asInstanceOf[typings.gtmetrix.gtmetrixStrings.yslow]
   }
   
   /**
@@ -361,32 +316,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setApikey(value: String): Self = StObject.set(x, "apikey", value.asInstanceOf[js.Any])
+      inline def setApikey(value: String): Self = StObject.set(x, "apikey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApikeyUndefined: Self = StObject.set(x, "apikey", js.undefined)
+      inline def setApikeyUndefined: Self = StObject.set(x, "apikey", js.undefined)
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -450,23 +397,18 @@ object mod {
   }
   object TestBasicInfo {
     
-    @scala.inline
-    def apply(credits_left: Double, poll_state_url: String, test_id: String): TestBasicInfo = {
+    inline def apply(credits_left: Double, poll_state_url: String, test_id: String): TestBasicInfo = {
       val __obj = js.Dynamic.literal(credits_left = credits_left.asInstanceOf[js.Any], poll_state_url = poll_state_url.asInstanceOf[js.Any], test_id = test_id.asInstanceOf[js.Any])
       __obj.asInstanceOf[TestBasicInfo]
     }
     
-    @scala.inline
-    implicit class TestBasicInfoMutableBuilder[Self <: TestBasicInfo] (val x: Self) extends AnyVal {
+    extension [Self <: TestBasicInfo](x: Self) {
       
-      @scala.inline
-      def setCredits_left(value: Double): Self = StObject.set(x, "credits_left", value.asInstanceOf[js.Any])
+      inline def setCredits_left(value: Double): Self = StObject.set(x, "credits_left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoll_state_url(value: String): Self = StObject.set(x, "poll_state_url", value.asInstanceOf[js.Any])
+      inline def setPoll_state_url(value: String): Self = StObject.set(x, "poll_state_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTest_id(value: String): Self = StObject.set(x, "test_id", value.asInstanceOf[js.Any])
+      inline def setTest_id(value: String): Self = StObject.set(x, "test_id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -482,43 +424,34 @@ object mod {
   }
   object TestDetails {
     
-    @scala.inline
-    def apply(resources: StringDictionary[String], results: StringDictionary[js.Any], state: String): TestDetails = {
+    inline def apply(resources: StringDictionary[String], results: StringDictionary[js.Any], state: String): TestDetails = {
       val __obj = js.Dynamic.literal(resources = resources.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[TestDetails]
     }
     
-    @scala.inline
-    implicit class TestDetailsMutableBuilder[Self <: TestDetails] (val x: Self) extends AnyVal {
+    extension [Self <: TestDetails](x: Self) {
       
-      @scala.inline
-      def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setResources(value: StringDictionary[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+      inline def setResources(value: StringDictionary[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResults(value: StringDictionary[js.Any]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      inline def setResults(value: StringDictionary[js.Any]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
   trait _MetricsError extends StObject
   object _MetricsError {
     
-    @scala.inline
-    def ApiError(contentType: String, message: String, name: String, statusCode: Double): typings.gtmetrix.mod.ApiError = {
+    inline def ApiError(contentType: String, message: String, name: String, statusCode: Double): typings.gtmetrix.mod.ApiError = {
       val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.gtmetrix.mod.ApiError]
     }
     
-    @scala.inline
-    def InvalidResponseError(contentType: String, message: String, name: String, statusCode: Double): typings.gtmetrix.mod.InvalidResponseError = {
+    inline def InvalidResponseError(contentType: String, message: String, name: String, statusCode: Double): typings.gtmetrix.mod.InvalidResponseError = {
       val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.gtmetrix.mod.InvalidResponseError]
     }

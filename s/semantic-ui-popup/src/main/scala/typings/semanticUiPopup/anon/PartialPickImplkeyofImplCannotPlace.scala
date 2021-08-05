@@ -19,43 +19,31 @@ trait PartialPickImplkeyofImplCannotPlace extends StObject {
 }
 object PartialPickImplkeyofImplCannotPlace {
   
-  @scala.inline
-  def apply(): PartialPickImplkeyofImplCannotPlace = {
+  inline def apply(): PartialPickImplkeyofImplCannotPlace = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPickImplkeyofImplCannotPlace]
   }
   
-  @scala.inline
-  implicit class PartialPickImplkeyofImplCannotPlaceMutableBuilder[Self <: PartialPickImplkeyofImplCannotPlace] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPickImplkeyofImplCannotPlace](x: Self) {
     
-    @scala.inline
-    def setCannotPlace(value: String): Self = StObject.set(x, "cannotPlace", value.asInstanceOf[js.Any])
+    inline def setCannotPlace(value: String): Self = StObject.set(x, "cannotPlace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCannotPlaceUndefined: Self = StObject.set(x, "cannotPlace", js.undefined)
+    inline def setCannotPlaceUndefined: Self = StObject.set(x, "cannotPlace", js.undefined)
     
-    @scala.inline
-    def setInvalidPosition(value: String): Self = StObject.set(x, "invalidPosition", value.asInstanceOf[js.Any])
+    inline def setInvalidPosition(value: String): Self = StObject.set(x, "invalidPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidPositionUndefined: Self = StObject.set(x, "invalidPosition", js.undefined)
+    inline def setInvalidPositionUndefined: Self = StObject.set(x, "invalidPosition", js.undefined)
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setNoTransition(value: String): Self = StObject.set(x, "noTransition", value.asInstanceOf[js.Any])
+    inline def setNoTransition(value: String): Self = StObject.set(x, "noTransition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoTransitionUndefined: Self = StObject.set(x, "noTransition", js.undefined)
+    inline def setNoTransitionUndefined: Self = StObject.set(x, "noTransition", js.undefined)
     
-    @scala.inline
-    def setNotFound(value: String): Self = StObject.set(x, "notFound", value.asInstanceOf[js.Any])
+    inline def setNotFound(value: String): Self = StObject.set(x, "notFound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotFoundUndefined: Self = StObject.set(x, "notFound", js.undefined)
+    inline def setNotFoundUndefined: Self = StObject.set(x, "notFound", js.undefined)
   }
 }

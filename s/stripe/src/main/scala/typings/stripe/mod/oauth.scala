@@ -33,32 +33,24 @@ object oauth {
   }
   object IOAuthAuthorizationCodeTokenRequest {
     
-    @scala.inline
-    def apply(code: String): IOAuthAuthorizationCodeTokenRequest = {
+    inline def apply(code: String): IOAuthAuthorizationCodeTokenRequest = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], grant_type = "authorization_code")
       __obj.asInstanceOf[IOAuthAuthorizationCodeTokenRequest]
     }
     
-    @scala.inline
-    implicit class IOAuthAuthorizationCodeTokenRequestMutableBuilder[Self <: IOAuthAuthorizationCodeTokenRequest] (val x: Self) extends AnyVal {
+    extension [Self <: IOAuthAuthorizationCodeTokenRequest](x: Self) {
       
-      @scala.inline
-      def setAssert_capabilities(value: String): Self = StObject.set(x, "assert_capabilities", value.asInstanceOf[js.Any])
+      inline def setAssert_capabilities(value: String): Self = StObject.set(x, "assert_capabilities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssert_capabilitiesUndefined: Self = StObject.set(x, "assert_capabilities", js.undefined)
+      inline def setAssert_capabilitiesUndefined: Self = StObject.set(x, "assert_capabilities", js.undefined)
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrant_type(value: authorization_code): Self = StObject.set(x, "grant_type", value.asInstanceOf[js.Any])
+      inline def setGrant_type(value: authorization_code): Self = StObject.set(x, "grant_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     }
   }
   
@@ -71,17 +63,14 @@ object oauth {
   }
   object IOAuthDeauthorizationResponse {
     
-    @scala.inline
-    def apply(stripe_user_id: String): IOAuthDeauthorizationResponse = {
+    inline def apply(stripe_user_id: String): IOAuthDeauthorizationResponse = {
       val __obj = js.Dynamic.literal(stripe_user_id = stripe_user_id.asInstanceOf[js.Any])
       __obj.asInstanceOf[IOAuthDeauthorizationResponse]
     }
     
-    @scala.inline
-    implicit class IOAuthDeauthorizationResponseMutableBuilder[Self <: IOAuthDeauthorizationResponse] (val x: Self) extends AnyVal {
+    extension [Self <: IOAuthDeauthorizationResponse](x: Self) {
       
-      @scala.inline
-      def setStripe_user_id(value: String): Self = StObject.set(x, "stripe_user_id", value.asInstanceOf[js.Any])
+      inline def setStripe_user_id(value: String): Self = StObject.set(x, "stripe_user_id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -111,32 +100,24 @@ object oauth {
   }
   object IOAuthRefreshTokenRequest {
     
-    @scala.inline
-    def apply(refresh_token: String): IOAuthRefreshTokenRequest = {
+    inline def apply(refresh_token: String): IOAuthRefreshTokenRequest = {
       val __obj = js.Dynamic.literal(grant_type = "refresh_token", refresh_token = refresh_token.asInstanceOf[js.Any])
       __obj.asInstanceOf[IOAuthRefreshTokenRequest]
     }
     
-    @scala.inline
-    implicit class IOAuthRefreshTokenRequestMutableBuilder[Self <: IOAuthRefreshTokenRequest] (val x: Self) extends AnyVal {
+    extension [Self <: IOAuthRefreshTokenRequest](x: Self) {
       
-      @scala.inline
-      def setAssert_capabilities(value: String): Self = StObject.set(x, "assert_capabilities", value.asInstanceOf[js.Any])
+      inline def setAssert_capabilities(value: String): Self = StObject.set(x, "assert_capabilities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAssert_capabilitiesUndefined: Self = StObject.set(x, "assert_capabilities", js.undefined)
+      inline def setAssert_capabilitiesUndefined: Self = StObject.set(x, "assert_capabilities", js.undefined)
       
-      @scala.inline
-      def setGrant_type(value: refresh_token): Self = StObject.set(x, "grant_type", value.asInstanceOf[js.Any])
+      inline def setGrant_type(value: refresh_token): Self = StObject.set(x, "grant_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefresh_token(value: String): Self = StObject.set(x, "refresh_token", value.asInstanceOf[js.Any])
+      inline def setRefresh_token(value: String): Self = StObject.set(x, "refresh_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     }
   }
   
@@ -183,8 +164,7 @@ object oauth {
   }
   object IOAuthToken {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       access_token: String,
       livemode: Boolean,
       refresh_token: String,
@@ -196,29 +176,21 @@ object oauth {
       __obj.asInstanceOf[IOAuthToken]
     }
     
-    @scala.inline
-    implicit class IOAuthTokenMutableBuilder[Self <: IOAuthToken] (val x: Self) extends AnyVal {
+    extension [Self <: IOAuthToken](x: Self) {
       
-      @scala.inline
-      def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+      inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
+      inline def setLivemode(value: Boolean): Self = StObject.set(x, "livemode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefresh_token(value: String): Self = StObject.set(x, "refresh_token", value.asInstanceOf[js.Any])
+      inline def setRefresh_token(value: String): Self = StObject.set(x, "refresh_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripe_publishable_key(value: String): Self = StObject.set(x, "stripe_publishable_key", value.asInstanceOf[js.Any])
+      inline def setStripe_publishable_key(value: String): Self = StObject.set(x, "stripe_publishable_key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripe_user_id(value: String): Self = StObject.set(x, "stripe_user_id", value.asInstanceOf[js.Any])
+      inline def setStripe_user_id(value: String): Self = StObject.set(x, "stripe_user_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken_type(value: bearer): Self = StObject.set(x, "token_type", value.asInstanceOf[js.Any])
+      inline def setToken_type(value: bearer): Self = StObject.set(x, "token_type", value.asInstanceOf[js.Any])
     }
   }
 }

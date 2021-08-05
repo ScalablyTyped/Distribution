@@ -27,62 +27,44 @@ object anon {
   }
   object PartialInitParams {
     
-    @scala.inline
-    def apply(): PartialInitParams = {
+    inline def apply(): PartialInitParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialInitParams]
     }
     
-    @scala.inline
-    implicit class PartialInitParamsMutableBuilder[Self <: PartialInitParams] (val x: Self) extends AnyVal {
+    extension [Self <: PartialInitParams](x: Self) {
       
-      @scala.inline
-      def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+      inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
+      inline def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
       
-      @scala.inline
-      def setAutoLogAppEvents(value: Boolean): Self = StObject.set(x, "autoLogAppEvents", value.asInstanceOf[js.Any])
+      inline def setAutoLogAppEvents(value: Boolean): Self = StObject.set(x, "autoLogAppEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoLogAppEventsUndefined: Self = StObject.set(x, "autoLogAppEvents", js.undefined)
+      inline def setAutoLogAppEventsUndefined: Self = StObject.set(x, "autoLogAppEvents", js.undefined)
       
-      @scala.inline
-      def setCookie(value: Boolean): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+      inline def setCookie(value: Boolean): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
+      inline def setCookieUndefined: Self = StObject.set(x, "cookie", js.undefined)
       
-      @scala.inline
-      def setFrictionlessRequests(value: Boolean): Self = StObject.set(x, "frictionlessRequests", value.asInstanceOf[js.Any])
+      inline def setFrictionlessRequests(value: Boolean): Self = StObject.set(x, "frictionlessRequests", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrictionlessRequestsUndefined: Self = StObject.set(x, "frictionlessRequests", js.undefined)
+      inline def setFrictionlessRequestsUndefined: Self = StObject.set(x, "frictionlessRequests", js.undefined)
       
-      @scala.inline
-      def setHideFlashCallback(value: Boolean): Self = StObject.set(x, "hideFlashCallback", value.asInstanceOf[js.Any])
+      inline def setHideFlashCallback(value: Boolean): Self = StObject.set(x, "hideFlashCallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideFlashCallbackUndefined: Self = StObject.set(x, "hideFlashCallback", js.undefined)
+      inline def setHideFlashCallbackUndefined: Self = StObject.set(x, "hideFlashCallback", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
       
-      @scala.inline
-      def setXfbml(value: Boolean): Self = StObject.set(x, "xfbml", value.asInstanceOf[js.Any])
+      inline def setXfbml(value: Boolean): Self = StObject.set(x, "xfbml", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXfbmlUndefined: Self = StObject.set(x, "xfbml", js.undefined)
+      inline def setXfbmlUndefined: Self = StObject.set(x, "xfbml", js.undefined)
     }
   }
 }

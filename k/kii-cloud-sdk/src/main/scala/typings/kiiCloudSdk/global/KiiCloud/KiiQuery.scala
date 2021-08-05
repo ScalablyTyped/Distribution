@@ -64,6 +64,5 @@ object KiiQuery {
     * @param clause The KiiClause to be executed with the query
     */
   /* static member */
-  @scala.inline
-  def queryWithClause(clause: typings.kiiCloudSdk.KiiCloud.KiiClause): typings.kiiCloudSdk.KiiCloud.KiiQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("queryWithClause")(clause.asInstanceOf[js.Any]).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiQuery]
+  inline def queryWithClause(clause: typings.kiiCloudSdk.KiiCloud.KiiClause): typings.kiiCloudSdk.KiiCloud.KiiQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("queryWithClause")(clause.asInstanceOf[js.Any]).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiQuery]
 }

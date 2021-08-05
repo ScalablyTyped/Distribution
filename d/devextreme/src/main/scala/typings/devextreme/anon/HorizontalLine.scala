@@ -28,61 +28,43 @@ trait HorizontalLine extends StObject {
 }
 object HorizontalLine {
   
-  @scala.inline
-  def apply(): HorizontalLine = {
+  inline def apply(): HorizontalLine = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HorizontalLine]
   }
   
-  @scala.inline
-  implicit class HorizontalLineMutableBuilder[Self <: HorizontalLine] (val x: Self) extends AnyVal {
+  extension [Self <: HorizontalLine](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setDashStyle(value: dash | dot | longDash | solid): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
+    inline def setDashStyle(value: dash | dot | longDash | solid): Self = StObject.set(x, "dashStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
+    inline def setDashStyleUndefined: Self = StObject.set(x, "dashStyle", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setHorizontalLine(value: DashStyle | Boolean): Self = StObject.set(x, "horizontalLine", value.asInstanceOf[js.Any])
+    inline def setHorizontalLine(value: DashStyle | Boolean): Self = StObject.set(x, "horizontalLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalLineUndefined: Self = StObject.set(x, "horizontalLine", js.undefined)
+    inline def setHorizontalLineUndefined: Self = StObject.set(x, "horizontalLine", js.undefined)
     
-    @scala.inline
-    def setLabel(value: BackgroundColorCustomizeText): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: BackgroundColorCustomizeText): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    @scala.inline
-    def setVerticalLine(value: DashStyle | Boolean): Self = StObject.set(x, "verticalLine", value.asInstanceOf[js.Any])
+    inline def setVerticalLine(value: DashStyle | Boolean): Self = StObject.set(x, "verticalLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalLineUndefined: Self = StObject.set(x, "verticalLine", js.undefined)
+    inline def setVerticalLineUndefined: Self = StObject.set(x, "verticalLine", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

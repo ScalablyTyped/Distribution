@@ -53,26 +53,20 @@ object overlaysInterfaceMod {
   }
   object OverlayEventDetail {
     
-    @scala.inline
-    def apply[T](): OverlayEventDetail[T] = {
+    inline def apply[T](): OverlayEventDetail[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OverlayEventDetail[T]]
     }
     
-    @scala.inline
-    implicit class OverlayEventDetailMutableBuilder[Self <: OverlayEventDetail[?], T] (val x: Self & OverlayEventDetail[T]) extends AnyVal {
+    extension [Self <: OverlayEventDetail[?], T](x: Self & OverlayEventDetail[T]) {
       
-      @scala.inline
-      def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     }
   }
   

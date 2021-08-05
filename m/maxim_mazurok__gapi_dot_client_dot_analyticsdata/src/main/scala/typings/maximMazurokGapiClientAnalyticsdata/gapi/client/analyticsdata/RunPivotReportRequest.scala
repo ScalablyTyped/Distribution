@@ -50,91 +50,63 @@ trait RunPivotReportRequest extends StObject {
 }
 object RunPivotReportRequest {
   
-  @scala.inline
-  def apply(): RunPivotReportRequest = {
+  inline def apply(): RunPivotReportRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RunPivotReportRequest]
   }
   
-  @scala.inline
-  implicit class RunPivotReportRequestMutableBuilder[Self <: RunPivotReportRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RunPivotReportRequest](x: Self) {
     
-    @scala.inline
-    def setCohortSpec(value: CohortSpec): Self = StObject.set(x, "cohortSpec", value.asInstanceOf[js.Any])
+    inline def setCohortSpec(value: CohortSpec): Self = StObject.set(x, "cohortSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCohortSpecUndefined: Self = StObject.set(x, "cohortSpec", js.undefined)
+    inline def setCohortSpecUndefined: Self = StObject.set(x, "cohortSpec", js.undefined)
     
-    @scala.inline
-    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
+    inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
+    inline def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
     
-    @scala.inline
-    def setDateRanges(value: js.Array[DateRange]): Self = StObject.set(x, "dateRanges", value.asInstanceOf[js.Any])
+    inline def setDateRanges(value: js.Array[DateRange]): Self = StObject.set(x, "dateRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateRangesUndefined: Self = StObject.set(x, "dateRanges", js.undefined)
+    inline def setDateRangesUndefined: Self = StObject.set(x, "dateRanges", js.undefined)
     
-    @scala.inline
-    def setDateRangesVarargs(value: DateRange*): Self = StObject.set(x, "dateRanges", js.Array(value :_*))
+    inline def setDateRangesVarargs(value: DateRange*): Self = StObject.set(x, "dateRanges", js.Array(value :_*))
     
-    @scala.inline
-    def setDimensionFilter(value: FilterExpression): Self = StObject.set(x, "dimensionFilter", value.asInstanceOf[js.Any])
+    inline def setDimensionFilter(value: FilterExpression): Self = StObject.set(x, "dimensionFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionFilterUndefined: Self = StObject.set(x, "dimensionFilter", js.undefined)
+    inline def setDimensionFilterUndefined: Self = StObject.set(x, "dimensionFilter", js.undefined)
     
-    @scala.inline
-    def setDimensions(value: js.Array[Dimension]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: js.Array[Dimension]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+    inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
-    @scala.inline
-    def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
     
-    @scala.inline
-    def setEntity(value: Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: Entity): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
+    inline def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
     
-    @scala.inline
-    def setKeepEmptyRows(value: Boolean): Self = StObject.set(x, "keepEmptyRows", value.asInstanceOf[js.Any])
+    inline def setKeepEmptyRows(value: Boolean): Self = StObject.set(x, "keepEmptyRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepEmptyRowsUndefined: Self = StObject.set(x, "keepEmptyRows", js.undefined)
+    inline def setKeepEmptyRowsUndefined: Self = StObject.set(x, "keepEmptyRows", js.undefined)
     
-    @scala.inline
-    def setMetricFilter(value: FilterExpression): Self = StObject.set(x, "metricFilter", value.asInstanceOf[js.Any])
+    inline def setMetricFilter(value: FilterExpression): Self = StObject.set(x, "metricFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricFilterUndefined: Self = StObject.set(x, "metricFilter", js.undefined)
+    inline def setMetricFilterUndefined: Self = StObject.set(x, "metricFilter", js.undefined)
     
-    @scala.inline
-    def setMetrics(value: js.Array[Metric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: js.Array[Metric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+    inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    @scala.inline
-    def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
     
-    @scala.inline
-    def setPivots(value: js.Array[Pivot]): Self = StObject.set(x, "pivots", value.asInstanceOf[js.Any])
+    inline def setPivots(value: js.Array[Pivot]): Self = StObject.set(x, "pivots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPivotsUndefined: Self = StObject.set(x, "pivots", js.undefined)
+    inline def setPivotsUndefined: Self = StObject.set(x, "pivots", js.undefined)
     
-    @scala.inline
-    def setPivotsVarargs(value: Pivot*): Self = StObject.set(x, "pivots", js.Array(value :_*))
+    inline def setPivotsVarargs(value: Pivot*): Self = StObject.set(x, "pivots", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnPropertyQuota(value: Boolean): Self = StObject.set(x, "returnPropertyQuota", value.asInstanceOf[js.Any])
+    inline def setReturnPropertyQuota(value: Boolean): Self = StObject.set(x, "returnPropertyQuota", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnPropertyQuotaUndefined: Self = StObject.set(x, "returnPropertyQuota", js.undefined)
+    inline def setReturnPropertyQuotaUndefined: Self = StObject.set(x, "returnPropertyQuota", js.undefined)
   }
 }

@@ -17,28 +17,21 @@ trait CommentTag
 }
 object CommentTag {
   
-  @scala.inline
-  def apply(tag: String, text: ModelToObject[String] | String): CommentTag = {
+  inline def apply(tag: String, text: ModelToObject[String] | String): CommentTag = {
     val __obj = js.Dynamic.literal(tag = tag.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentTag]
   }
   
-  @scala.inline
-  implicit class CommentTagMutableBuilder[Self <: CommentTag] (val x: Self) extends AnyVal {
+  extension [Self <: CommentTag](x: Self) {
     
-    @scala.inline
-    def setParam(value: String): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
+    inline def setParam(value: String): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamUndefined: Self = StObject.set(x, "param", js.undefined)
+    inline def setParamUndefined: Self = StObject.set(x, "param", js.undefined)
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: ModelToObject[String] | String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: ModelToObject[String] | String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "text", js.Array(value :_*))
+    inline def setTextVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "text", js.Array(value :_*))
   }
 }

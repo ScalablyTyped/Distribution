@@ -21,49 +21,35 @@ trait GraphOptions extends StObject {
 }
 object GraphOptions {
   
-  @scala.inline
-  def apply(): GraphOptions = {
+  inline def apply(): GraphOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GraphOptions]
   }
   
-  @scala.inline
-  implicit class GraphOptionsMutableBuilder[Self <: GraphOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GraphOptions](x: Self) {
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setReadConsistency(value: consistencies): Self = StObject.set(x, "readConsistency", value.asInstanceOf[js.Any])
+    inline def setReadConsistency(value: consistencies): Self = StObject.set(x, "readConsistency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadConsistencyUndefined: Self = StObject.set(x, "readConsistency", js.undefined)
+    inline def setReadConsistencyUndefined: Self = StObject.set(x, "readConsistency", js.undefined)
     
-    @scala.inline
-    def setReadTimeout(value: Double): Self = StObject.set(x, "readTimeout", value.asInstanceOf[js.Any])
+    inline def setReadTimeout(value: Double): Self = StObject.set(x, "readTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadTimeoutUndefined: Self = StObject.set(x, "readTimeout", js.undefined)
+    inline def setReadTimeoutUndefined: Self = StObject.set(x, "readTimeout", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setWriteConsistency(value: consistencies): Self = StObject.set(x, "writeConsistency", value.asInstanceOf[js.Any])
+    inline def setWriteConsistency(value: consistencies): Self = StObject.set(x, "writeConsistency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteConsistencyUndefined: Self = StObject.set(x, "writeConsistency", js.undefined)
+    inline def setWriteConsistencyUndefined: Self = StObject.set(x, "writeConsistency", js.undefined)
   }
 }

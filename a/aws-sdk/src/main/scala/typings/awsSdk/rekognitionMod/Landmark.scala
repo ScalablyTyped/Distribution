@@ -23,31 +23,23 @@ trait Landmark extends StObject {
 }
 object Landmark {
   
-  @scala.inline
-  def apply(): Landmark = {
+  inline def apply(): Landmark = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Landmark]
   }
   
-  @scala.inline
-  implicit class LandmarkMutableBuilder[Self <: Landmark] (val x: Self) extends AnyVal {
+  extension [Self <: Landmark](x: Self) {
     
-    @scala.inline
-    def setType(value: LandmarkType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: LandmarkType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
-    @scala.inline
-    def setX(value: Float): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
+    inline def setX(value: Float): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "X", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "X", js.undefined)
     
-    @scala.inline
-    def setY(value: Float): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
+    inline def setY(value: Float): Self = StObject.set(x, "Y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "Y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "Y", js.undefined)
   }
 }

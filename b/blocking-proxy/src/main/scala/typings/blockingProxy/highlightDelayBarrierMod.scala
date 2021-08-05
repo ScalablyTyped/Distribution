@@ -16,7 +16,7 @@ object highlightDelayBarrierMod {
        with WebDriverBarrier {
     def this(client: SimpleWebDriverClient, delay: Double) = this()
     
-    var client: js.Any = js.native
+    /* private */ var client: js.Any = js.native
     
     var delay: Double = js.native
     

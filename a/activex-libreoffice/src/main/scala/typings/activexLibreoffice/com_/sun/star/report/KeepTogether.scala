@@ -17,13 +17,10 @@ object KeepTogether {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def NO: `0` = 0.asInstanceOf[`0`]
+    inline def NO: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def WHOLE_GROUP: `1` = 1.asInstanceOf[`1`]
+    inline def WHOLE_GROUP: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def WITH_FIRST_DETAIL: `2` = 2.asInstanceOf[`2`]
+    inline def WITH_FIRST_DETAIL: `2` = 2.asInstanceOf[`2`]
   }
 }

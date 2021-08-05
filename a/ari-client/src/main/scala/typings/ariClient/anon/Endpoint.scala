@@ -22,49 +22,35 @@ trait Endpoint extends StObject {
 }
 object Endpoint {
   
-  @scala.inline
-  def apply(app: String, endpoint: String): Endpoint = {
+  inline def apply(app: String, endpoint: String): Endpoint = {
     val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], endpoint = endpoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[Endpoint]
   }
   
-  @scala.inline
-  implicit class EndpointMutableBuilder[Self <: Endpoint] (val x: Self) extends AnyVal {
+  extension [Self <: Endpoint](x: Self) {
     
-    @scala.inline
-    def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+    inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppArgs(value: String): Self = StObject.set(x, "appArgs", value.asInstanceOf[js.Any])
+    inline def setAppArgs(value: String): Self = StObject.set(x, "appArgs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppArgsUndefined: Self = StObject.set(x, "appArgs", js.undefined)
+    inline def setAppArgsUndefined: Self = StObject.set(x, "appArgs", js.undefined)
     
-    @scala.inline
-    def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
+    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
+    inline def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
     
-    @scala.inline
-    def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormats(value: String): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+    inline def setFormats(value: String): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
+    inline def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
     
-    @scala.inline
-    def setOriginator(value: String): Self = StObject.set(x, "originator", value.asInstanceOf[js.Any])
+    inline def setOriginator(value: String): Self = StObject.set(x, "originator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginatorUndefined: Self = StObject.set(x, "originator", js.undefined)
+    inline def setOriginatorUndefined: Self = StObject.set(x, "originator", js.undefined)
     
-    @scala.inline
-    def setOtherChannelId(value: String): Self = StObject.set(x, "otherChannelId", value.asInstanceOf[js.Any])
+    inline def setOtherChannelId(value: String): Self = StObject.set(x, "otherChannelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtherChannelIdUndefined: Self = StObject.set(x, "otherChannelId", js.undefined)
+    inline def setOtherChannelIdUndefined: Self = StObject.set(x, "otherChannelId", js.undefined)
   }
 }

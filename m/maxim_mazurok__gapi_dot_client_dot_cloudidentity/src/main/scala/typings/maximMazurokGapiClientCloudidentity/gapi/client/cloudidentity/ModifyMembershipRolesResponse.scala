@@ -11,19 +11,15 @@ trait ModifyMembershipRolesResponse extends StObject {
 }
 object ModifyMembershipRolesResponse {
   
-  @scala.inline
-  def apply(): ModifyMembershipRolesResponse = {
+  inline def apply(): ModifyMembershipRolesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModifyMembershipRolesResponse]
   }
   
-  @scala.inline
-  implicit class ModifyMembershipRolesResponseMutableBuilder[Self <: ModifyMembershipRolesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyMembershipRolesResponse](x: Self) {
     
-    @scala.inline
-    def setMembership(value: Membership): Self = StObject.set(x, "membership", value.asInstanceOf[js.Any])
+    inline def setMembership(value: Membership): Self = StObject.set(x, "membership", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembershipUndefined: Self = StObject.set(x, "membership", js.undefined)
+    inline def setMembershipUndefined: Self = StObject.set(x, "membership", js.undefined)
   }
 }

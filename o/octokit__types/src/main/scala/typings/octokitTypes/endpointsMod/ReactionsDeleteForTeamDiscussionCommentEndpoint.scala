@@ -23,8 +23,7 @@ trait ReactionsDeleteForTeamDiscussionCommentEndpoint
 }
 object ReactionsDeleteForTeamDiscussionCommentEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     comment_number: Double,
     discussion_number: Double,
     mediaType: `0`[`squirrel-girl`],
@@ -37,22 +36,16 @@ object ReactionsDeleteForTeamDiscussionCommentEndpoint {
     __obj.asInstanceOf[ReactionsDeleteForTeamDiscussionCommentEndpoint]
   }
   
-  @scala.inline
-  implicit class ReactionsDeleteForTeamDiscussionCommentEndpointMutableBuilder[Self <: ReactionsDeleteForTeamDiscussionCommentEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReactionsDeleteForTeamDiscussionCommentEndpoint](x: Self) {
     
-    @scala.inline
-    def setComment_number(value: Double): Self = StObject.set(x, "comment_number", value.asInstanceOf[js.Any])
+    inline def setComment_number(value: Double): Self = StObject.set(x, "comment_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscussion_number(value: Double): Self = StObject.set(x, "discussion_number", value.asInstanceOf[js.Any])
+    inline def setDiscussion_number(value: Double): Self = StObject.set(x, "discussion_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReaction_id(value: Double): Self = StObject.set(x, "reaction_id", value.asInstanceOf[js.Any])
+    inline def setReaction_id(value: Double): Self = StObject.set(x, "reaction_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeam_slug(value: String): Self = StObject.set(x, "team_slug", value.asInstanceOf[js.Any])
+    inline def setTeam_slug(value: String): Self = StObject.set(x, "team_slug", value.asInstanceOf[js.Any])
   }
 }

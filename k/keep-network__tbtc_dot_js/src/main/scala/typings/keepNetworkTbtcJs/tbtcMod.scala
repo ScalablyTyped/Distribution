@@ -27,14 +27,11 @@ object tbtcMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def withConfig(config: TBTCConfig): js.Promise[TBTC] = ^.asInstanceOf[js.Dynamic].applyDynamic("withConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TBTC]]
-    @scala.inline
-    def withConfig(config: TBTCConfig, networkMatchCheck: Boolean): js.Promise[TBTC] = (^.asInstanceOf[js.Dynamic].applyDynamic("withConfig")(config.asInstanceOf[js.Any], networkMatchCheck.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TBTC]]
+    inline def withConfig(config: TBTCConfig): js.Promise[TBTC] = ^.asInstanceOf[js.Dynamic].applyDynamic("withConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TBTC]]
+    inline def withConfig(config: TBTCConfig, networkMatchCheck: Boolean): js.Promise[TBTC] = (^.asInstanceOf[js.Dynamic].applyDynamic("withConfig")(config.asInstanceOf[js.Any], networkMatchCheck.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TBTC]]
   }
   
-  @scala.inline
-  def getNetworkIdFromArtifact(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNetworkIdFromArtifact")().asInstanceOf[String]
+  inline def getNetworkIdFromArtifact(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNetworkIdFromArtifact")().asInstanceOf[String]
   
   @js.native
   trait TBTC extends StObject {

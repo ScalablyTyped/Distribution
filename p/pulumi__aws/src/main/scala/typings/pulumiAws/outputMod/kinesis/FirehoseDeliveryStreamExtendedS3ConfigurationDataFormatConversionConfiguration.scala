@@ -28,8 +28,7 @@ trait FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigura
 }
 object FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     inputFormatConfiguration: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfiguration,
     outputFormatConfiguration: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfiguration,
     schemaConfiguration: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfiguration
@@ -38,27 +37,21 @@ object FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigur
     __obj.asInstanceOf[FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfiguration]
   }
   
-  @scala.inline
-  implicit class FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationMutableBuilder[Self <: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfiguration](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setInputFormatConfiguration(
+    inline def setInputFormatConfiguration(
       value: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationInputFormatConfiguration
     ): Self = StObject.set(x, "inputFormatConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputFormatConfiguration(
+    inline def setOutputFormatConfiguration(
       value: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfiguration
     ): Self = StObject.set(x, "outputFormatConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaConfiguration(
+    inline def setSchemaConfiguration(
       value: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationSchemaConfiguration
     ): Self = StObject.set(x, "schemaConfiguration", value.asInstanceOf[js.Any])
   }

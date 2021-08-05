@@ -21,8 +21,7 @@ object indexMod {
     @JSImport("tslint/lib/formatters/index", "CodeFrameFormatter.metadata")
     @js.native
     def metadata: IFormatterMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("tslint/lib/formatters/index", "FileslistFormatter")
@@ -39,8 +38,7 @@ object indexMod {
     @JSImport("tslint/lib/formatters/index", "FileslistFormatter.metadata")
     @js.native
     def metadata: IFormatterMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("tslint/lib/formatters/index", "JUnitFormatter")
@@ -57,8 +55,7 @@ object indexMod {
     @JSImport("tslint/lib/formatters/index", "JUnitFormatter.metadata")
     @js.native
     def metadata: IFormatterMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("tslint/lib/formatters/index", "JsonFormatter")
@@ -75,8 +72,7 @@ object indexMod {
     @JSImport("tslint/lib/formatters/index", "JsonFormatter.metadata")
     @js.native
     def metadata: IFormatterMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("tslint/lib/formatters/index", "PmdFormatter")
@@ -93,8 +89,7 @@ object indexMod {
     @JSImport("tslint/lib/formatters/index", "PmdFormatter.metadata")
     @js.native
     def metadata: IFormatterMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("tslint/lib/formatters/index", "ProseFormatter")
@@ -111,8 +106,7 @@ object indexMod {
     @JSImport("tslint/lib/formatters/index", "ProseFormatter.metadata")
     @js.native
     def metadata: IFormatterMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("tslint/lib/formatters/index", "StylishFormatter")
@@ -129,8 +123,7 @@ object indexMod {
     @JSImport("tslint/lib/formatters/index", "StylishFormatter.metadata")
     @js.native
     def metadata: IFormatterMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("tslint/lib/formatters/index", "TapFormatter")
@@ -147,8 +140,7 @@ object indexMod {
     @JSImport("tslint/lib/formatters/index", "TapFormatter.metadata")
     @js.native
     def metadata: IFormatterMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("tslint/lib/formatters/index", "VerboseFormatter")
@@ -165,7 +157,6 @@ object indexMod {
     @JSImport("tslint/lib/formatters/index", "VerboseFormatter.metadata")
     @js.native
     def metadata: IFormatterMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IFormatterMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
 }

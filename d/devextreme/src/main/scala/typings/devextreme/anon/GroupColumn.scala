@@ -16,31 +16,23 @@ trait GroupColumn extends StObject {
 }
 object GroupColumn {
   
-  @scala.inline
-  def apply(): GroupColumn = {
+  inline def apply(): GroupColumn = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GroupColumn]
   }
   
-  @scala.inline
-  implicit class GroupColumnMutableBuilder[Self <: GroupColumn] (val x: Self) extends AnyVal {
+  extension [Self <: GroupColumn](x: Self) {
     
-    @scala.inline
-    def setGroupColumn(value: String): Self = StObject.set(x, "groupColumn", value.asInstanceOf[js.Any])
+    inline def setGroupColumn(value: String): Self = StObject.set(x, "groupColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupColumnUndefined: Self = StObject.set(x, "groupColumn", js.undefined)
+    inline def setGroupColumnUndefined: Self = StObject.set(x, "groupColumn", js.undefined)
     
-    @scala.inline
-    def setSortOrder(value: asc | desc): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
+    inline def setSortOrder(value: asc | desc): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
+    inline def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
     
-    @scala.inline
-    def setSummaryItem(value: String | Double): Self = StObject.set(x, "summaryItem", value.asInstanceOf[js.Any])
+    inline def setSummaryItem(value: String | Double): Self = StObject.set(x, "summaryItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryItemUndefined: Self = StObject.set(x, "summaryItem", js.undefined)
+    inline def setSummaryItemUndefined: Self = StObject.set(x, "summaryItem", js.undefined)
   }
 }

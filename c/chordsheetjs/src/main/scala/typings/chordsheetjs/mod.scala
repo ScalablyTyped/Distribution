@@ -369,11 +369,9 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def parse(tag: String): Tag | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(tag.asInstanceOf[js.Any]).asInstanceOf[Tag | Null]
+    inline def parse(tag: String): Tag | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(tag.asInstanceOf[js.Any]).asInstanceOf[Tag | Null]
     
-    @scala.inline
-    def parseWithRegex(tag: String, regex: String): Tag | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithRegex")(tag.asInstanceOf[js.Any], regex.asInstanceOf[js.Any])).asInstanceOf[Tag | Null]
+    inline def parseWithRegex(tag: String, regex: String): Tag | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithRegex")(tag.asInstanceOf[js.Any], regex.asInstanceOf[js.Any])).asInstanceOf[Tag | Null]
   }
   
   @JSImport("chordsheetjs", "TextFormatter")
@@ -421,17 +419,14 @@ object mod {
   }
   object ChordSheetParserProps {
     
-    @scala.inline
-    def apply(preserveWhitespace: Boolean): ChordSheetParserProps = {
+    inline def apply(preserveWhitespace: Boolean): ChordSheetParserProps = {
       val __obj = js.Dynamic.literal(preserveWhitespace = preserveWhitespace.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChordSheetParserProps]
     }
     
-    @scala.inline
-    implicit class ChordSheetParserPropsMutableBuilder[Self <: ChordSheetParserProps] (val x: Self) extends AnyVal {
+    extension [Self <: ChordSheetParserProps](x: Self) {
       
-      @scala.inline
-      def setPreserveWhitespace(value: Boolean): Self = StObject.set(x, "preserveWhitespace", value.asInstanceOf[js.Any])
+      inline def setPreserveWhitespace(value: Boolean): Self = StObject.set(x, "preserveWhitespace", value.asInstanceOf[js.Any])
     }
   }
   
@@ -443,20 +438,16 @@ object mod {
   }
   object SongHeader {
     
-    @scala.inline
-    def apply(subtitle: String, title: String): SongHeader = {
+    inline def apply(subtitle: String, title: String): SongHeader = {
       val __obj = js.Dynamic.literal(subtitle = subtitle.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[SongHeader]
     }
     
-    @scala.inline
-    implicit class SongHeaderMutableBuilder[Self <: SongHeader] (val x: Self) extends AnyVal {
+    extension [Self <: SongHeader](x: Self) {
       
-      @scala.inline
-      def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+      inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
 }

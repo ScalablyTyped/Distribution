@@ -16,28 +16,21 @@ trait IngestDeletePipeline
 }
 object IngestDeletePipeline {
   
-  @scala.inline
-  def apply(id: String): IngestDeletePipeline = {
+  inline def apply(id: String): IngestDeletePipeline = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[IngestDeletePipeline]
   }
   
-  @scala.inline
-  implicit class IngestDeletePipelineMutableBuilder[Self <: IngestDeletePipeline] (val x: Self) extends AnyVal {
+  extension [Self <: IngestDeletePipeline](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaster_timeout(value: String): Self = StObject.set(x, "master_timeout", value.asInstanceOf[js.Any])
+    inline def setMaster_timeout(value: String): Self = StObject.set(x, "master_timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaster_timeoutUndefined: Self = StObject.set(x, "master_timeout", js.undefined)
+    inline def setMaster_timeoutUndefined: Self = StObject.set(x, "master_timeout", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

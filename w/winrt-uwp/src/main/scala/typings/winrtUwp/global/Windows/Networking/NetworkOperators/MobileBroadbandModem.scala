@@ -80,22 +80,19 @@ object MobileBroadbandModem {
     * @return The mobile broadband modem.
     */
   /* static member */
-  @scala.inline
-  def fromId(deviceId: String): typings.winrtUwp.Windows.Networking.NetworkOperators.MobileBroadbandModem = ^.asInstanceOf[js.Dynamic].applyDynamic("fromId")(deviceId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Networking.NetworkOperators.MobileBroadbandModem]
+  inline def fromId(deviceId: String): typings.winrtUwp.Windows.Networking.NetworkOperators.MobileBroadbandModem = ^.asInstanceOf[js.Dynamic].applyDynamic("fromId")(deviceId.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Networking.NetworkOperators.MobileBroadbandModem]
   
   /**
     * Determines the default mobile broadband modem.
     * @return The mobile broadband modem.
     */
   /* static member */
-  @scala.inline
-  def getDefault(): typings.winrtUwp.Windows.Networking.NetworkOperators.MobileBroadbandModem = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrtUwp.Windows.Networking.NetworkOperators.MobileBroadbandModem]
+  inline def getDefault(): typings.winrtUwp.Windows.Networking.NetworkOperators.MobileBroadbandModem = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrtUwp.Windows.Networking.NetworkOperators.MobileBroadbandModem]
   
   /**
     * Gets a device selector for the mobile broadband modem.
     * @return A device selector for the mobile broadband modem.
     */
   /* static member */
-  @scala.inline
-  def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
+  inline def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
 }

@@ -13,22 +13,17 @@ trait DescribeElasticIpsResult extends StObject {
 }
 object DescribeElasticIpsResult {
   
-  @scala.inline
-  def apply(): DescribeElasticIpsResult = {
+  inline def apply(): DescribeElasticIpsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeElasticIpsResult]
   }
   
-  @scala.inline
-  implicit class DescribeElasticIpsResultMutableBuilder[Self <: DescribeElasticIpsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeElasticIpsResult](x: Self) {
     
-    @scala.inline
-    def setElasticIps(value: ElasticIps): Self = StObject.set(x, "ElasticIps", value.asInstanceOf[js.Any])
+    inline def setElasticIps(value: ElasticIps): Self = StObject.set(x, "ElasticIps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElasticIpsUndefined: Self = StObject.set(x, "ElasticIps", js.undefined)
+    inline def setElasticIpsUndefined: Self = StObject.set(x, "ElasticIps", js.undefined)
     
-    @scala.inline
-    def setElasticIpsVarargs(value: ElasticIp*): Self = StObject.set(x, "ElasticIps", js.Array(value :_*))
+    inline def setElasticIpsVarargs(value: ElasticIp*): Self = StObject.set(x, "ElasticIps", js.Array(value :_*))
   }
 }

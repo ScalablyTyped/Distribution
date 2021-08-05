@@ -52,7 +52,7 @@ object sqlServerDriverMod {
       */
     /* protected */ def loadDependencies(): Unit = js.native
     
-    var lowerDefaultValueIfNessesary: js.Any = js.native
+    /* private */ var lowerDefaultValueIfNessesary: js.Any = js.native
     
     /**
       * Pool for master database.

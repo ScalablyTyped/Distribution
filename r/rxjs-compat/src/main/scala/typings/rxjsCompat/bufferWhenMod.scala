@@ -10,8 +10,7 @@ object bufferWhenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def bufferWhen[T](
+  inline def bufferWhen[T](
     closingSelector: js.Function0[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Observable<any> */ js.Any
     ]

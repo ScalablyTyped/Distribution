@@ -20,26 +20,20 @@ object typesMessageBodyMod {
   }
   object MessageBody {
     
-    @scala.inline
-    def apply(): MessageBody = {
+    inline def apply(): MessageBody = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MessageBody]
     }
     
-    @scala.inline
-    implicit class MessageBodyMutableBuilder[Self <: MessageBody] (val x: Self) extends AnyVal {
+    extension [Self <: MessageBody](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
       
-      @scala.inline
-      def setRequestID(value: String): Self = StObject.set(x, "RequestID", value.asInstanceOf[js.Any])
+      inline def setRequestID(value: String): Self = StObject.set(x, "RequestID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestIDUndefined: Self = StObject.set(x, "RequestID", js.undefined)
+      inline def setRequestIDUndefined: Self = StObject.set(x, "RequestID", js.undefined)
     }
   }
   

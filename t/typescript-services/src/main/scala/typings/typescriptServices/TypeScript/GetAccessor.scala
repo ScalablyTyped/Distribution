@@ -20,8 +20,7 @@ trait GetAccessor
 }
 object GetAccessor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -52,25 +51,18 @@ object GetAccessor {
     __obj.asInstanceOf[GetAccessor]
   }
   
-  @scala.inline
-  implicit class GetAccessorMutableBuilder[Self <: GetAccessor] (val x: Self) extends AnyVal {
+  extension [Self <: GetAccessor](x: Self) {
     
-    @scala.inline
-    def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    inline def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiers(value: js.Array[PullElementFlags]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+    inline def setModifiers(value: js.Array[PullElementFlags]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiersVarargs(value: PullElementFlags*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
+    inline def setModifiersVarargs(value: PullElementFlags*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
     
-    @scala.inline
-    def setParameterList(value: ParameterList): Self = StObject.set(x, "parameterList", value.asInstanceOf[js.Any])
+    inline def setParameterList(value: ParameterList): Self = StObject.set(x, "parameterList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyName(value: IASTToken): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
+    inline def setPropertyName(value: IASTToken): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAnnotation(value: TypeAnnotation): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
+    inline def setTypeAnnotation(value: TypeAnnotation): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
   }
 }

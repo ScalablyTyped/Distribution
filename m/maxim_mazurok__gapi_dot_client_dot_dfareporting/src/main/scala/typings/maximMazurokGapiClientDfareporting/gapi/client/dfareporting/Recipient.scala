@@ -17,31 +17,23 @@ trait Recipient extends StObject {
 }
 object Recipient {
   
-  @scala.inline
-  def apply(): Recipient = {
+  inline def apply(): Recipient = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Recipient]
   }
   
-  @scala.inline
-  implicit class RecipientMutableBuilder[Self <: Recipient] (val x: Self) extends AnyVal {
+  extension [Self <: Recipient](x: Self) {
     
-    @scala.inline
-    def setDeliveryType(value: String): Self = StObject.set(x, "deliveryType", value.asInstanceOf[js.Any])
+    inline def setDeliveryType(value: String): Self = StObject.set(x, "deliveryType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryTypeUndefined: Self = StObject.set(x, "deliveryType", js.undefined)
+    inline def setDeliveryTypeUndefined: Self = StObject.set(x, "deliveryType", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

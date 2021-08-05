@@ -44,81 +44,58 @@ object fieldsMod {
   }
   object BaseFieldsProps {
     
-    @scala.inline
-    def apply[P](names: js.Array[String]): BaseFieldsProps[P] = {
+    inline def apply[P](names: js.Array[String]): BaseFieldsProps[P] = {
       val __obj = js.Dynamic.literal(names = names.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseFieldsProps[P]]
     }
     
-    @scala.inline
-    implicit class BaseFieldsPropsMutableBuilder[Self <: BaseFieldsProps[?], P] (val x: Self & BaseFieldsProps[P]) extends AnyVal {
+    extension [Self <: BaseFieldsProps[?], P](x: Self & BaseFieldsProps[P]) {
       
-      @scala.inline
-      def setComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setFormat(value: (/* value */ js.Any, /* name */ String) => js.Any): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
+      inline def setFormat(value: (/* value */ js.Any, /* name */ String) => js.Any): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFormatNull: Self = StObject.set(x, "format", null)
+      inline def setFormatNull: Self = StObject.set(x, "format", null)
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setForwardRef(value: Boolean): Self = StObject.set(x, "forwardRef", value.asInstanceOf[js.Any])
+      inline def setForwardRef(value: Boolean): Self = StObject.set(x, "forwardRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForwardRefUndefined: Self = StObject.set(x, "forwardRef", js.undefined)
+      inline def setForwardRefUndefined: Self = StObject.set(x, "forwardRef", js.undefined)
       
-      @scala.inline
-      def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+      inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
       
-      @scala.inline
-      def setParse(value: (/* value */ js.Any, /* name */ String) => js.Any): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
+      inline def setParse(value: (/* value */ js.Any, /* name */ String) => js.Any): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
+      inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
       
-      @scala.inline
-      def setProps(value: P): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: P): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
+      inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
       
-      @scala.inline
-      def setValidate(value: FieldsWarnerOrValidator): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
+      inline def setValidate(value: FieldsWarnerOrValidator): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateFunction4(
+      inline def setValidateFunction4(
         value: (/* value */ js.Any, /* allValues */ js.UndefOr[js.Any], /* props */ js.UndefOr[js.Any], /* name */ js.UndefOr[js.Any]) => js.Any
       ): Self = StObject.set(x, "validate", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+      inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
       
-      @scala.inline
-      def setValidateVarargs(value: Validator*): Self = StObject.set(x, "validate", js.Array(value :_*))
+      inline def setValidateVarargs(value: Validator*): Self = StObject.set(x, "validate", js.Array(value :_*))
       
-      @scala.inline
-      def setWarn(value: FieldsWarnerOrValidator): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+      inline def setWarn(value: FieldsWarnerOrValidator): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarnFunction4(
+      inline def setWarnFunction4(
         value: (/* value */ js.Any, /* allValues */ js.UndefOr[js.Any], /* props */ js.UndefOr[js.Any], /* name */ js.UndefOr[js.Any]) => js.Any
       ): Self = StObject.set(x, "warn", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
+      inline def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
       
-      @scala.inline
-      def setWarnVarargs(value: Validator*): Self = StObject.set(x, "warn", js.Array(value :_*))
+      inline def setWarnVarargs(value: Validator*): Self = StObject.set(x, "warn", js.Array(value :_*))
     }
   }
   
@@ -144,8 +121,7 @@ object fieldsMod {
        with /* name */ StringDictionary[WrappedFieldsProps & WrappedFieldProps]
   object WrappedFieldsProps {
     
-    @scala.inline
-    def apply(): WrappedFieldsProps = {
+    inline def apply(): WrappedFieldsProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WrappedFieldsProps]
     }

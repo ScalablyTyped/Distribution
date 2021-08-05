@@ -14,22 +14,17 @@ trait TypeofSkeletonRenderer extends StObject {
 }
 object TypeofSkeletonRenderer {
   
-  @scala.inline
-  def apply(QUAD_TRIANGLES: js.Array[Double], VERTEX_SIZE: Double): TypeofSkeletonRenderer = {
+  inline def apply(QUAD_TRIANGLES: js.Array[Double], VERTEX_SIZE: Double): TypeofSkeletonRenderer = {
     val __obj = js.Dynamic.literal(QUAD_TRIANGLES = QUAD_TRIANGLES.asInstanceOf[js.Any], VERTEX_SIZE = VERTEX_SIZE.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofSkeletonRenderer]
   }
   
-  @scala.inline
-  implicit class TypeofSkeletonRendererMutableBuilder[Self <: TypeofSkeletonRenderer] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofSkeletonRenderer](x: Self) {
     
-    @scala.inline
-    def setQUAD_TRIANGLES(value: js.Array[Double]): Self = StObject.set(x, "QUAD_TRIANGLES", value.asInstanceOf[js.Any])
+    inline def setQUAD_TRIANGLES(value: js.Array[Double]): Self = StObject.set(x, "QUAD_TRIANGLES", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQUAD_TRIANGLESVarargs(value: Double*): Self = StObject.set(x, "QUAD_TRIANGLES", js.Array(value :_*))
+    inline def setQUAD_TRIANGLESVarargs(value: Double*): Self = StObject.set(x, "QUAD_TRIANGLES", js.Array(value :_*))
     
-    @scala.inline
-    def setVERTEX_SIZE(value: Double): Self = StObject.set(x, "VERTEX_SIZE", value.asInstanceOf[js.Any])
+    inline def setVERTEX_SIZE(value: Double): Self = StObject.set(x, "VERTEX_SIZE", value.asInstanceOf[js.Any])
   }
 }

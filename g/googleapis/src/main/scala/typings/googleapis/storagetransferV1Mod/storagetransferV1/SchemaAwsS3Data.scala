@@ -26,25 +26,19 @@ trait SchemaAwsS3Data extends StObject {
 }
 object SchemaAwsS3Data {
   
-  @scala.inline
-  def apply(): SchemaAwsS3Data = {
+  inline def apply(): SchemaAwsS3Data = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAwsS3Data]
   }
   
-  @scala.inline
-  implicit class SchemaAwsS3DataMutableBuilder[Self <: SchemaAwsS3Data] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAwsS3Data](x: Self) {
     
-    @scala.inline
-    def setAwsAccessKey(value: SchemaAwsAccessKey): Self = StObject.set(x, "awsAccessKey", value.asInstanceOf[js.Any])
+    inline def setAwsAccessKey(value: SchemaAwsAccessKey): Self = StObject.set(x, "awsAccessKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsAccessKeyUndefined: Self = StObject.set(x, "awsAccessKey", js.undefined)
+    inline def setAwsAccessKeyUndefined: Self = StObject.set(x, "awsAccessKey", js.undefined)
     
-    @scala.inline
-    def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
+    inline def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketNameUndefined: Self = StObject.set(x, "bucketName", js.undefined)
+    inline def setBucketNameUndefined: Self = StObject.set(x, "bucketName", js.undefined)
   }
 }

@@ -10,6 +10,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def detectFile(file: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("detectFile")(file.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def detectFile(file: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("detectFile")(file.asInstanceOf[js.Any]).asInstanceOf[String]
 }

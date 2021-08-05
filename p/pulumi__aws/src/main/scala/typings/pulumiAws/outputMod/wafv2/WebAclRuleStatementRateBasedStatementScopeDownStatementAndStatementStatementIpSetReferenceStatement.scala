@@ -20,24 +20,19 @@ trait WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStateme
 }
 object WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementIpSetReferenceStatement {
   
-  @scala.inline
-  def apply(arn: String): WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementIpSetReferenceStatement = {
+  inline def apply(arn: String): WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementIpSetReferenceStatement = {
     val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementIpSetReferenceStatement]
   }
   
-  @scala.inline
-  implicit class WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementIpSetReferenceStatementMutableBuilder[Self <: WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementIpSetReferenceStatement] (val x: Self) extends AnyVal {
+  extension [Self <: WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementIpSetReferenceStatement](x: Self) {
     
-    @scala.inline
-    def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpSetForwardedIpConfig(
+    inline def setIpSetForwardedIpConfig(
       value: WebAclRuleStatementRateBasedStatementScopeDownStatementAndStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig
     ): Self = StObject.set(x, "ipSetForwardedIpConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpSetForwardedIpConfigUndefined: Self = StObject.set(x, "ipSetForwardedIpConfig", js.undefined)
+    inline def setIpSetForwardedIpConfigUndefined: Self = StObject.set(x, "ipSetForwardedIpConfig", js.undefined)
   }
 }

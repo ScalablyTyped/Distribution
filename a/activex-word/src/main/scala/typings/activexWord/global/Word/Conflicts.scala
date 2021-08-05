@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Conflicts")
 @js.native
-class Conflicts protected ()
+/* private */ class Conflicts ()
   extends StObject
      with typings.activexWord.Word.Conflicts {
   
@@ -31,7 +31,7 @@ class Conflicts protected ()
   /* CompleteClass */
   override def RejectAll(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.Conflicts_typekey")
   var WordDotConflicts_typekey: typings.activexWord.Word.Conflicts = js.native
 }

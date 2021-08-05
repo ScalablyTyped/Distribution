@@ -48,21 +48,17 @@ object presignedPostMod {
     }
     object Fields {
       
-      @scala.inline
-      def apply(Policy: String, `X-Amz-Signature`: String): Fields = {
+      inline def apply(Policy: String, `X-Amz-Signature`: String): Fields = {
         val __obj = js.Dynamic.literal(Policy = Policy.asInstanceOf[js.Any])
         __obj.updateDynamic("X-Amz-Signature")(`X-Amz-Signature`.asInstanceOf[js.Any])
         __obj.asInstanceOf[Fields]
       }
       
-      @scala.inline
-      implicit class FieldsMutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
+      extension [Self <: Fields](x: Self) {
         
-        @scala.inline
-        def setPolicy(value: String): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
+        inline def setPolicy(value: String): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setX-Amz-Signature`(value: String): Self = StObject.set(x, "X-Amz-Signature", value.asInstanceOf[js.Any])
+        inline def `setX-Amz-Signature`(value: String): Self = StObject.set(x, "X-Amz-Signature", value.asInstanceOf[js.Any])
       }
     }
     
@@ -94,41 +90,30 @@ object presignedPostMod {
     }
     object Params {
       
-      @scala.inline
-      def apply(): Params = {
+      inline def apply(): Params = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Params]
       }
       
-      @scala.inline
-      implicit class ParamsMutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
+      extension [Self <: Params](x: Self) {
         
-        @scala.inline
-        def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+        inline def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBucketUndefined: Self = StObject.set(x, "Bucket", js.undefined)
+        inline def setBucketUndefined: Self = StObject.set(x, "Bucket", js.undefined)
         
-        @scala.inline
-        def setConditions(value: js.Array[StringDictionary[js.Any] | (js.Tuple3[String, js.Any, js.Any])]): Self = StObject.set(x, "Conditions", value.asInstanceOf[js.Any])
+        inline def setConditions(value: js.Array[StringDictionary[js.Any] | (js.Tuple3[String, js.Any, js.Any])]): Self = StObject.set(x, "Conditions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConditionsUndefined: Self = StObject.set(x, "Conditions", js.undefined)
+        inline def setConditionsUndefined: Self = StObject.set(x, "Conditions", js.undefined)
         
-        @scala.inline
-        def setConditionsVarargs(value: (StringDictionary[js.Any] | (js.Tuple3[String, js.Any, js.Any]))*): Self = StObject.set(x, "Conditions", js.Array(value :_*))
+        inline def setConditionsVarargs(value: (StringDictionary[js.Any] | (js.Tuple3[String, js.Any, js.Any]))*): Self = StObject.set(x, "Conditions", js.Array(value :_*))
         
-        @scala.inline
-        def setExpires(value: Double): Self = StObject.set(x, "Expires", value.asInstanceOf[js.Any])
+        inline def setExpires(value: Double): Self = StObject.set(x, "Expires", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExpiresUndefined: Self = StObject.set(x, "Expires", js.undefined)
+        inline def setExpiresUndefined: Self = StObject.set(x, "Expires", js.undefined)
         
-        @scala.inline
-        def setFields(value: StringDictionary[js.Any]): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
+        inline def setFields(value: StringDictionary[js.Any]): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldsUndefined: Self = StObject.set(x, "Fields", js.undefined)
+        inline def setFieldsUndefined: Self = StObject.set(x, "Fields", js.undefined)
       }
     }
   }

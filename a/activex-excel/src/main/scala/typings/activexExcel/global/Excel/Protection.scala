@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Protection")
 @js.native
-class Protection protected ()
+/* private */ class Protection ()
   extends StObject
      with typings.activexExcel.Excel.Protection {
   
@@ -52,7 +52,7 @@ class Protection protected ()
   /* CompleteClass */
   override val AllowUsingPivotTables: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.Protection_typekey")
   var ExcelDotProtection_typekey: typings.activexExcel.Excel.Protection = js.native
 }

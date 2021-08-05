@@ -15,23 +15,18 @@ trait ICustomText extends StObject {
 }
 object ICustomText {
   
-  @scala.inline
-  def apply(label: String): ICustomText = {
+  inline def apply(label: String): ICustomText = {
     val __obj = js.Dynamic.literal(component = "text", label = label.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("text")
     __obj.asInstanceOf[ICustomText]
   }
   
-  @scala.inline
-  implicit class ICustomTextMutableBuilder[Self <: ICustomText] (val x: Self) extends AnyVal {
+  extension [Self <: ICustomText](x: Self) {
     
-    @scala.inline
-    def setComponent(value: text): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: text): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: text): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: text): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -23,31 +23,23 @@ trait CreateCollectionResponse extends StObject {
 }
 object CreateCollectionResponse {
   
-  @scala.inline
-  def apply(): CreateCollectionResponse = {
+  inline def apply(): CreateCollectionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateCollectionResponse]
   }
   
-  @scala.inline
-  implicit class CreateCollectionResponseMutableBuilder[Self <: CreateCollectionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCollectionResponse](x: Self) {
     
-    @scala.inline
-    def setCollectionArn(value: String): Self = StObject.set(x, "CollectionArn", value.asInstanceOf[js.Any])
+    inline def setCollectionArn(value: String): Self = StObject.set(x, "CollectionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectionArnUndefined: Self = StObject.set(x, "CollectionArn", js.undefined)
+    inline def setCollectionArnUndefined: Self = StObject.set(x, "CollectionArn", js.undefined)
     
-    @scala.inline
-    def setFaceModelVersion(value: String): Self = StObject.set(x, "FaceModelVersion", value.asInstanceOf[js.Any])
+    inline def setFaceModelVersion(value: String): Self = StObject.set(x, "FaceModelVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceModelVersionUndefined: Self = StObject.set(x, "FaceModelVersion", js.undefined)
+    inline def setFaceModelVersionUndefined: Self = StObject.set(x, "FaceModelVersion", js.undefined)
     
-    @scala.inline
-    def setStatusCode(value: UInteger): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: UInteger): Self = StObject.set(x, "StatusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCodeUndefined: Self = StObject.set(x, "StatusCode", js.undefined)
+    inline def setStatusCodeUndefined: Self = StObject.set(x, "StatusCode", js.undefined)
   }
 }

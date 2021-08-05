@@ -23,31 +23,23 @@ trait Identity extends StObject {
 }
 object Identity {
   
-  @scala.inline
-  def apply(): Identity = {
+  inline def apply(): Identity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Identity]
   }
   
-  @scala.inline
-  implicit class IdentityMutableBuilder[Self <: Identity] (val x: Self) extends AnyVal {
+  extension [Self <: Identity](x: Self) {
     
-    @scala.inline
-    def setGroup(value: GroupIdentity): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: GroupIdentity): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    @scala.inline
-    def setIamUser(value: IAMUserIdentity): Self = StObject.set(x, "iamUser", value.asInstanceOf[js.Any])
+    inline def setIamUser(value: IAMUserIdentity): Self = StObject.set(x, "iamUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIamUserUndefined: Self = StObject.set(x, "iamUser", js.undefined)
+    inline def setIamUserUndefined: Self = StObject.set(x, "iamUser", js.undefined)
     
-    @scala.inline
-    def setUser(value: UserIdentity): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: UserIdentity): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

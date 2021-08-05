@@ -12,19 +12,15 @@ trait BindingRewriteValidators extends StObject {
 }
 object BindingRewriteValidators {
   
-  @scala.inline
-  def apply(bindingRewriteValidators: js.Any, parseObjectLiteral: String => js.Array[js.Any]): BindingRewriteValidators = {
+  inline def apply(bindingRewriteValidators: js.Any, parseObjectLiteral: String => js.Array[js.Any]): BindingRewriteValidators = {
     val __obj = js.Dynamic.literal(bindingRewriteValidators = bindingRewriteValidators.asInstanceOf[js.Any], parseObjectLiteral = js.Any.fromFunction1(parseObjectLiteral))
     __obj.asInstanceOf[BindingRewriteValidators]
   }
   
-  @scala.inline
-  implicit class BindingRewriteValidatorsMutableBuilder[Self <: BindingRewriteValidators] (val x: Self) extends AnyVal {
+  extension [Self <: BindingRewriteValidators](x: Self) {
     
-    @scala.inline
-    def setBindingRewriteValidators(value: js.Any): Self = StObject.set(x, "bindingRewriteValidators", value.asInstanceOf[js.Any])
+    inline def setBindingRewriteValidators(value: js.Any): Self = StObject.set(x, "bindingRewriteValidators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParseObjectLiteral(value: String => js.Array[js.Any]): Self = StObject.set(x, "parseObjectLiteral", js.Any.fromFunction1(value))
+    inline def setParseObjectLiteral(value: String => js.Array[js.Any]): Self = StObject.set(x, "parseObjectLiteral", js.Any.fromFunction1(value))
   }
 }

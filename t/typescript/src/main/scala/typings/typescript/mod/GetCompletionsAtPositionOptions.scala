@@ -22,31 +22,23 @@ trait GetCompletionsAtPositionOptions
 }
 object GetCompletionsAtPositionOptions {
   
-  @scala.inline
-  def apply(): GetCompletionsAtPositionOptions = {
+  inline def apply(): GetCompletionsAtPositionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetCompletionsAtPositionOptions]
   }
   
-  @scala.inline
-  implicit class GetCompletionsAtPositionOptionsMutableBuilder[Self <: GetCompletionsAtPositionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetCompletionsAtPositionOptions](x: Self) {
     
-    @scala.inline
-    def setIncludeExternalModuleExports(value: Boolean): Self = StObject.set(x, "includeExternalModuleExports", value.asInstanceOf[js.Any])
+    inline def setIncludeExternalModuleExports(value: Boolean): Self = StObject.set(x, "includeExternalModuleExports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeExternalModuleExportsUndefined: Self = StObject.set(x, "includeExternalModuleExports", js.undefined)
+    inline def setIncludeExternalModuleExportsUndefined: Self = StObject.set(x, "includeExternalModuleExports", js.undefined)
     
-    @scala.inline
-    def setIncludeInsertTextCompletions(value: Boolean): Self = StObject.set(x, "includeInsertTextCompletions", value.asInstanceOf[js.Any])
+    inline def setIncludeInsertTextCompletions(value: Boolean): Self = StObject.set(x, "includeInsertTextCompletions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeInsertTextCompletionsUndefined: Self = StObject.set(x, "includeInsertTextCompletions", js.undefined)
+    inline def setIncludeInsertTextCompletionsUndefined: Self = StObject.set(x, "includeInsertTextCompletions", js.undefined)
     
-    @scala.inline
-    def setTriggerCharacter(value: CompletionsTriggerCharacter): Self = StObject.set(x, "triggerCharacter", value.asInstanceOf[js.Any])
+    inline def setTriggerCharacter(value: CompletionsTriggerCharacter): Self = StObject.set(x, "triggerCharacter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerCharacterUndefined: Self = StObject.set(x, "triggerCharacter", js.undefined)
+    inline def setTriggerCharacterUndefined: Self = StObject.set(x, "triggerCharacter", js.undefined)
   }
 }

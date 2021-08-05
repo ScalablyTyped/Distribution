@@ -18,49 +18,49 @@ object playMod {
        with PlayControl {
     def this(hasEngineEventEmitterTextMapTheme: Theme) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _bindCallbacks: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _bindEvents: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _destroyInterceptor: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _engine: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _eventEmitter: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _initInterceptor: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _initUI: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _interceptor: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _pauseVideo: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _playVideo: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _textMap: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _theme: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _togglePlayback: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _unbindEvents: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _updatePlayingState: js.Any = js.native
     
     /* CompleteClass */
@@ -82,62 +82,58 @@ object playMod {
     @JSImport("playable/dist/src/modules/ui/controls/play/play", "default.View")
     @js.native
     def View: Instantiable1[/* config */ IPlayViewConfig, typings.playable.playViewMod.default] = js.native
-    @scala.inline
-    def View_=(x: Instantiable1[/* config */ IPlayViewConfig, typings.playable.playViewMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("View")(x.asInstanceOf[js.Any])
+    inline def View_=(x: Instantiable1[/* config */ IPlayViewConfig, typings.playable.playViewMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("View")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/modules/ui/controls/play/play", "default.dependencies")
     @js.native
     def dependencies: js.Array[String] = js.native
-    @scala.inline
-    def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
+    inline def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/modules/ui/controls/play/play", "default.moduleName")
     @js.native
     def moduleName: String = js.native
-    @scala.inline
-    def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
+    inline def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
   }
   
   trait PlayControl
     extends StObject
        with IPlayControl {
     
-    var _bindCallbacks: js.Any
+    /* private */ var _bindCallbacks: js.Any
     
-    var _bindEvents: js.Any
+    /* private */ var _bindEvents: js.Any
     
-    var _destroyInterceptor: js.Any
+    /* private */ var _destroyInterceptor: js.Any
     
-    var _engine: js.Any
+    /* private */ var _engine: js.Any
     
-    var _eventEmitter: js.Any
+    /* private */ var _eventEmitter: js.Any
     
-    var _initInterceptor: js.Any
+    /* private */ var _initInterceptor: js.Any
     
-    var _initUI: js.Any
+    /* private */ var _initUI: js.Any
     
-    var _interceptor: js.Any
+    /* private */ var _interceptor: js.Any
     
-    var _pauseVideo: js.Any
+    /* private */ var _pauseVideo: js.Any
     
-    var _playVideo: js.Any
+    /* private */ var _playVideo: js.Any
     
-    var _textMap: js.Any
+    /* private */ var _textMap: js.Any
     
-    var _theme: js.Any
+    /* private */ var _theme: js.Any
     
-    var _togglePlayback: js.Any
+    /* private */ var _togglePlayback: js.Any
     
-    var _unbindEvents: js.Any
+    /* private */ var _unbindEvents: js.Any
     
-    var _updatePlayingState: js.Any
+    /* private */ var _updatePlayingState: js.Any
     
     var view: typings.playable.playViewMod.default
   }
   object PlayControl {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _bindCallbacks: js.Any,
       _bindEvents: js.Any,
       _destroyInterceptor: js.Any,
@@ -161,56 +157,39 @@ object playMod {
       __obj.asInstanceOf[PlayControl]
     }
     
-    @scala.inline
-    implicit class PlayControlMutableBuilder[Self <: PlayControl] (val x: Self) extends AnyVal {
+    extension [Self <: PlayControl](x: Self) {
       
-      @scala.inline
-      def setView(value: typings.playable.playViewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      inline def setView(value: typings.playable.playViewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_bindCallbacks(value: js.Any): Self = StObject.set(x, "_bindCallbacks", value.asInstanceOf[js.Any])
+      inline def set_bindCallbacks(value: js.Any): Self = StObject.set(x, "_bindCallbacks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_bindEvents(value: js.Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
+      inline def set_bindEvents(value: js.Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_destroyInterceptor(value: js.Any): Self = StObject.set(x, "_destroyInterceptor", value.asInstanceOf[js.Any])
+      inline def set_destroyInterceptor(value: js.Any): Self = StObject.set(x, "_destroyInterceptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_engine(value: js.Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
+      inline def set_engine(value: js.Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_eventEmitter(value: js.Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
+      inline def set_eventEmitter(value: js.Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_initInterceptor(value: js.Any): Self = StObject.set(x, "_initInterceptor", value.asInstanceOf[js.Any])
+      inline def set_initInterceptor(value: js.Any): Self = StObject.set(x, "_initInterceptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_initUI(value: js.Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
+      inline def set_initUI(value: js.Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_interceptor(value: js.Any): Self = StObject.set(x, "_interceptor", value.asInstanceOf[js.Any])
+      inline def set_interceptor(value: js.Any): Self = StObject.set(x, "_interceptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_pauseVideo(value: js.Any): Self = StObject.set(x, "_pauseVideo", value.asInstanceOf[js.Any])
+      inline def set_pauseVideo(value: js.Any): Self = StObject.set(x, "_pauseVideo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_playVideo(value: js.Any): Self = StObject.set(x, "_playVideo", value.asInstanceOf[js.Any])
+      inline def set_playVideo(value: js.Any): Self = StObject.set(x, "_playVideo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_textMap(value: js.Any): Self = StObject.set(x, "_textMap", value.asInstanceOf[js.Any])
+      inline def set_textMap(value: js.Any): Self = StObject.set(x, "_textMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_theme(value: js.Any): Self = StObject.set(x, "_theme", value.asInstanceOf[js.Any])
+      inline def set_theme(value: js.Any): Self = StObject.set(x, "_theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_togglePlayback(value: js.Any): Self = StObject.set(x, "_togglePlayback", value.asInstanceOf[js.Any])
+      inline def set_togglePlayback(value: js.Any): Self = StObject.set(x, "_togglePlayback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_unbindEvents(value: js.Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
+      inline def set_unbindEvents(value: js.Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_updatePlayingState(value: js.Any): Self = StObject.set(x, "_updatePlayingState", value.asInstanceOf[js.Any])
+      inline def set_updatePlayingState(value: js.Any): Self = StObject.set(x, "_updatePlayingState", value.asInstanceOf[js.Any])
     }
   }
 }

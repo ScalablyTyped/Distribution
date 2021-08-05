@@ -15,25 +15,19 @@ trait DocumentSentimentResults extends StObject {
 }
 object DocumentSentimentResults {
   
-  @scala.inline
-  def apply(): DocumentSentimentResults = {
+  inline def apply(): DocumentSentimentResults = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentSentimentResults]
   }
   
-  @scala.inline
-  implicit class DocumentSentimentResultsMutableBuilder[Self <: DocumentSentimentResults] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentSentimentResults](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
+    inline def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
   }
 }

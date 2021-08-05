@@ -29,16 +29,12 @@ object signedDataMod {
       * @param {string} memberName String name for a class member
       * @param {*} memberValue Value to compare with default value
       */
-    @scala.inline
-    def compareWithDefault(memberName: String, memberValue: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareWithDefault")(memberName.asInstanceOf[js.Any], memberValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def compareWithDefault(memberName: String, memberValue: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareWithDefault")(memberName.asInstanceOf[js.Any], memberValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @scala.inline
-    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
-    @scala.inline
-    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    inline def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   @js.native
@@ -114,59 +110,42 @@ object signedDataMod {
   }
   object VerifyParams {
     
-    @scala.inline
-    def apply(): VerifyParams = {
+    inline def apply(): VerifyParams = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VerifyParams]
     }
     
-    @scala.inline
-    implicit class VerifyParamsMutableBuilder[Self <: VerifyParams] (val x: Self) extends AnyVal {
+    extension [Self <: VerifyParams](x: Self) {
       
-      @scala.inline
-      def setCheckChain(value: Boolean): Self = StObject.set(x, "checkChain", value.asInstanceOf[js.Any])
+      inline def setCheckChain(value: Boolean): Self = StObject.set(x, "checkChain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckChainUndefined: Self = StObject.set(x, "checkChain", js.undefined)
+      inline def setCheckChainUndefined: Self = StObject.set(x, "checkChain", js.undefined)
       
-      @scala.inline
-      def setCheckDate(value: Date): Self = StObject.set(x, "checkDate", value.asInstanceOf[js.Any])
+      inline def setCheckDate(value: Date): Self = StObject.set(x, "checkDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckDateUndefined: Self = StObject.set(x, "checkDate", js.undefined)
+      inline def setCheckDateUndefined: Self = StObject.set(x, "checkDate", js.undefined)
       
-      @scala.inline
-      def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setExtendedMode(value: Boolean): Self = StObject.set(x, "extendedMode", value.asInstanceOf[js.Any])
+      inline def setExtendedMode(value: Boolean): Self = StObject.set(x, "extendedMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtendedModeUndefined: Self = StObject.set(x, "extendedMode", js.undefined)
+      inline def setExtendedModeUndefined: Self = StObject.set(x, "extendedMode", js.undefined)
       
-      @scala.inline
-      def setIncludeSignerCertificate(value: Boolean): Self = StObject.set(x, "includeSignerCertificate", value.asInstanceOf[js.Any])
+      inline def setIncludeSignerCertificate(value: Boolean): Self = StObject.set(x, "includeSignerCertificate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeSignerCertificateUndefined: Self = StObject.set(x, "includeSignerCertificate", js.undefined)
+      inline def setIncludeSignerCertificateUndefined: Self = StObject.set(x, "includeSignerCertificate", js.undefined)
       
-      @scala.inline
-      def setSigner(value: Double): Self = StObject.set(x, "signer", value.asInstanceOf[js.Any])
+      inline def setSigner(value: Double): Self = StObject.set(x, "signer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignerUndefined: Self = StObject.set(x, "signer", js.undefined)
+      inline def setSignerUndefined: Self = StObject.set(x, "signer", js.undefined)
       
-      @scala.inline
-      def setTrustedCerts(value: js.Array[typings.pkijs.certificateMod.default]): Self = StObject.set(x, "trustedCerts", value.asInstanceOf[js.Any])
+      inline def setTrustedCerts(value: js.Array[typings.pkijs.certificateMod.default]): Self = StObject.set(x, "trustedCerts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrustedCertsUndefined: Self = StObject.set(x, "trustedCerts", js.undefined)
+      inline def setTrustedCertsUndefined: Self = StObject.set(x, "trustedCerts", js.undefined)
       
-      @scala.inline
-      def setTrustedCertsVarargs(value: typings.pkijs.certificateMod.default*): Self = StObject.set(x, "trustedCerts", js.Array(value :_*))
+      inline def setTrustedCertsVarargs(value: typings.pkijs.certificateMod.default*): Self = StObject.set(x, "trustedCerts", js.Array(value :_*))
     }
   }
   
@@ -186,41 +165,30 @@ object signedDataMod {
   }
   object VerifyResult {
     
-    @scala.inline
-    def apply(code: Double, date: Date, message: String): VerifyResult = {
+    inline def apply(code: Double, date: Date, message: String): VerifyResult = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[VerifyResult]
     }
     
-    @scala.inline
-    implicit class VerifyResultMutableBuilder[Self <: VerifyResult] (val x: Self) extends AnyVal {
+    extension [Self <: VerifyResult](x: Self) {
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignatureVerified(value: Boolean): Self = StObject.set(x, "signatureVerified", value.asInstanceOf[js.Any])
+      inline def setSignatureVerified(value: Boolean): Self = StObject.set(x, "signatureVerified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignatureVerifiedUndefined: Self = StObject.set(x, "signatureVerified", js.undefined)
+      inline def setSignatureVerifiedUndefined: Self = StObject.set(x, "signatureVerified", js.undefined)
       
-      @scala.inline
-      def setSignerCertificate(value: typings.pkijs.certificateMod.default): Self = StObject.set(x, "signerCertificate", value.asInstanceOf[js.Any])
+      inline def setSignerCertificate(value: typings.pkijs.certificateMod.default): Self = StObject.set(x, "signerCertificate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignerCertificateUndefined: Self = StObject.set(x, "signerCertificate", js.undefined)
+      inline def setSignerCertificateUndefined: Self = StObject.set(x, "signerCertificate", js.undefined)
       
-      @scala.inline
-      def setSignerCertificateVerified(value: Boolean): Self = StObject.set(x, "signerCertificateVerified", value.asInstanceOf[js.Any])
+      inline def setSignerCertificateVerified(value: Boolean): Self = StObject.set(x, "signerCertificateVerified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignerCertificateVerifiedUndefined: Self = StObject.set(x, "signerCertificateVerified", js.undefined)
+      inline def setSignerCertificateVerifiedUndefined: Self = StObject.set(x, "signerCertificateVerified", js.undefined)
     }
   }
 }

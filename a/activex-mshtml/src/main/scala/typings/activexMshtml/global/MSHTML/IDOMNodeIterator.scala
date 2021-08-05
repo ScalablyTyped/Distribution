@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IDOMNodeIterator")
 @js.native
-class IDOMNodeIterator protected ()
+/* private */ class IDOMNodeIterator ()
   extends StObject
      with typings.activexMshtml.MSHTML.IDOMNodeIterator {
   
   /* CompleteClass */
   override def Detach(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.IDOMNodeIterator_typekey")
   var MSHTMLDotIDOMNodeIterator_typekey: typings.activexMshtml.MSHTML.IDOMNodeIterator = js.native
   

@@ -17,22 +17,17 @@ trait SchemaPollItemsResponse extends StObject {
 }
 object SchemaPollItemsResponse {
   
-  @scala.inline
-  def apply(): SchemaPollItemsResponse = {
+  inline def apply(): SchemaPollItemsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPollItemsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaPollItemsResponseMutableBuilder[Self <: SchemaPollItemsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPollItemsResponse](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[SchemaItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[SchemaItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: SchemaItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SchemaItem*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

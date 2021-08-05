@@ -14,19 +14,15 @@ trait VirtualNodeSpecBackendDefaultsClientPolicy extends StObject {
 }
 object VirtualNodeSpecBackendDefaultsClientPolicy {
   
-  @scala.inline
-  def apply(): VirtualNodeSpecBackendDefaultsClientPolicy = {
+  inline def apply(): VirtualNodeSpecBackendDefaultsClientPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VirtualNodeSpecBackendDefaultsClientPolicy]
   }
   
-  @scala.inline
-  implicit class VirtualNodeSpecBackendDefaultsClientPolicyMutableBuilder[Self <: VirtualNodeSpecBackendDefaultsClientPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualNodeSpecBackendDefaultsClientPolicy](x: Self) {
     
-    @scala.inline
-    def setTls(value: Input[VirtualNodeSpecBackendDefaultsClientPolicyTls]): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
+    inline def setTls(value: Input[VirtualNodeSpecBackendDefaultsClientPolicyTls]): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
+    inline def setTlsUndefined: Self = StObject.set(x, "tls", js.undefined)
   }
 }

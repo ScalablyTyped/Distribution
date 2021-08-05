@@ -73,21 +73,16 @@ object workflowMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Workflow = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Workflow]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Workflow = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Workflow]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: WorkflowState): Workflow = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Workflow]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: WorkflowState, opts: CustomResourceOptions): Workflow = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Workflow]
+    inline def get(name: String, id: Input[ID]): Workflow = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Workflow]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Workflow = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Workflow]
+    inline def get(name: String, id: Input[ID], state: WorkflowState): Workflow = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Workflow]
+    inline def get(name: String, id: Input[ID], state: WorkflowState, opts: CustomResourceOptions): Workflow = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Workflow]
     
     /**
       * Returns true if the given object is an instance of Workflow.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/workflow.Workflow */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/workflow.Workflow */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/workflow.Workflow */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/workflow.Workflow */ Boolean]
   }
   
   trait WorkflowArgs extends StObject {
@@ -119,44 +114,32 @@ object workflowMod {
   }
   object WorkflowArgs {
     
-    @scala.inline
-    def apply(): WorkflowArgs = {
+    inline def apply(): WorkflowArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WorkflowArgs]
     }
     
-    @scala.inline
-    implicit class WorkflowArgsMutableBuilder[Self <: WorkflowArgs] (val x: Self) extends AnyVal {
+    extension [Self <: WorkflowArgs](x: Self) {
       
-      @scala.inline
-      def setDefaultRunProperties(value: Input[StringDictionary[js.Any]]): Self = StObject.set(x, "defaultRunProperties", value.asInstanceOf[js.Any])
+      inline def setDefaultRunProperties(value: Input[StringDictionary[js.Any]]): Self = StObject.set(x, "defaultRunProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultRunPropertiesUndefined: Self = StObject.set(x, "defaultRunProperties", js.undefined)
+      inline def setDefaultRunPropertiesUndefined: Self = StObject.set(x, "defaultRunProperties", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setMaxConcurrentRuns(value: Input[Double]): Self = StObject.set(x, "maxConcurrentRuns", value.asInstanceOf[js.Any])
+      inline def setMaxConcurrentRuns(value: Input[Double]): Self = StObject.set(x, "maxConcurrentRuns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxConcurrentRunsUndefined: Self = StObject.set(x, "maxConcurrentRuns", js.undefined)
+      inline def setMaxConcurrentRunsUndefined: Self = StObject.set(x, "maxConcurrentRuns", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -194,50 +177,36 @@ object workflowMod {
   }
   object WorkflowState {
     
-    @scala.inline
-    def apply(): WorkflowState = {
+    inline def apply(): WorkflowState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WorkflowState]
     }
     
-    @scala.inline
-    implicit class WorkflowStateMutableBuilder[Self <: WorkflowState] (val x: Self) extends AnyVal {
+    extension [Self <: WorkflowState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setDefaultRunProperties(value: Input[StringDictionary[js.Any]]): Self = StObject.set(x, "defaultRunProperties", value.asInstanceOf[js.Any])
+      inline def setDefaultRunProperties(value: Input[StringDictionary[js.Any]]): Self = StObject.set(x, "defaultRunProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultRunPropertiesUndefined: Self = StObject.set(x, "defaultRunProperties", js.undefined)
+      inline def setDefaultRunPropertiesUndefined: Self = StObject.set(x, "defaultRunProperties", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setMaxConcurrentRuns(value: Input[Double]): Self = StObject.set(x, "maxConcurrentRuns", value.asInstanceOf[js.Any])
+      inline def setMaxConcurrentRuns(value: Input[Double]): Self = StObject.set(x, "maxConcurrentRuns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxConcurrentRunsUndefined: Self = StObject.set(x, "maxConcurrentRuns", js.undefined)
+      inline def setMaxConcurrentRunsUndefined: Self = StObject.set(x, "maxConcurrentRuns", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

@@ -24,17 +24,14 @@ object GanttControl {
   @JSGlobal("SP.GanttControl.FnGanttCreationCallback")
   @js.native
   def FnGanttCreationCallback: js.Array[js.Function1[/* control */ typings.sharepoint.SP.GanttControl, Unit]] = js.native
-  @scala.inline
-  def FnGanttCreationCallback_=(x: js.Array[js.Function1[/* control */ typings.sharepoint.SP.GanttControl, Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FnGanttCreationCallback")(x.asInstanceOf[js.Any])
+  inline def FnGanttCreationCallback_=(x: js.Array[js.Function1[/* control */ typings.sharepoint.SP.GanttControl, Unit]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FnGanttCreationCallback")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("SP.GanttControl.Instances")
   @js.native
   def Instances: js.Array[typings.sharepoint.SP.GanttControl] = js.native
-  @scala.inline
-  def Instances_=(x: js.Array[typings.sharepoint.SP.GanttControl]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Instances")(x.asInstanceOf[js.Any])
+  inline def Instances_=(x: js.Array[typings.sharepoint.SP.GanttControl]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Instances")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def WaitForGanttCreation(callack: js.Function1[/* control */ typings.sharepoint.SP.GanttControl, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("WaitForGanttCreation")(callack.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def WaitForGanttCreation(callack: js.Function1[/* control */ typings.sharepoint.SP.GanttControl, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("WaitForGanttCreation")(callack.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

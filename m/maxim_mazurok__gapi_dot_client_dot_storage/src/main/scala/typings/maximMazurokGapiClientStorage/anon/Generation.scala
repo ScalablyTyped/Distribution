@@ -17,31 +17,23 @@ trait Generation extends StObject {
 }
 object Generation {
   
-  @scala.inline
-  def apply(): Generation = {
+  inline def apply(): Generation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Generation]
   }
   
-  @scala.inline
-  implicit class GenerationMutableBuilder[Self <: Generation] (val x: Self) extends AnyVal {
+  extension [Self <: Generation](x: Self) {
     
-    @scala.inline
-    def setGeneration(value: String): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
+    inline def setGeneration(value: String): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
+    inline def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setObjectPreconditions(value: IfGenerationMatch): Self = StObject.set(x, "objectPreconditions", value.asInstanceOf[js.Any])
+    inline def setObjectPreconditions(value: IfGenerationMatch): Self = StObject.set(x, "objectPreconditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectPreconditionsUndefined: Self = StObject.set(x, "objectPreconditions", js.undefined)
+    inline def setObjectPreconditionsUndefined: Self = StObject.set(x, "objectPreconditions", js.undefined)
   }
 }

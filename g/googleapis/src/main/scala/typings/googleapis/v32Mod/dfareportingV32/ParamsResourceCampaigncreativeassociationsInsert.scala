@@ -34,37 +34,27 @@ trait ParamsResourceCampaigncreativeassociationsInsert
 }
 object ParamsResourceCampaigncreativeassociationsInsert {
   
-  @scala.inline
-  def apply(): ParamsResourceCampaigncreativeassociationsInsert = {
+  inline def apply(): ParamsResourceCampaigncreativeassociationsInsert = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceCampaigncreativeassociationsInsert]
   }
   
-  @scala.inline
-  implicit class ParamsResourceCampaigncreativeassociationsInsertMutableBuilder[Self <: ParamsResourceCampaigncreativeassociationsInsert] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceCampaigncreativeassociationsInsert](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCampaignId(value: String): Self = StObject.set(x, "campaignId", value.asInstanceOf[js.Any])
+    inline def setCampaignId(value: String): Self = StObject.set(x, "campaignId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCampaignIdUndefined: Self = StObject.set(x, "campaignId", js.undefined)
+    inline def setCampaignIdUndefined: Self = StObject.set(x, "campaignId", js.undefined)
     
-    @scala.inline
-    def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
+    inline def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
+    inline def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaCampaignCreativeAssociation): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaCampaignCreativeAssociation): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

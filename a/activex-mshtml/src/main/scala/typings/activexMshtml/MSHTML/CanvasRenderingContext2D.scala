@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait CanvasRenderingContext2D extends StObject {
   
-  @JSName("MSHTML.CanvasRenderingContext2D_typekey")
+  /* private */ @JSName("MSHTML.CanvasRenderingContext2D_typekey")
   var MSHTMLDotCanvasRenderingContext2D_typekey: CanvasRenderingContext2D
   
   def arc(x: Double, y: Double, radius: Double, startAngle: Double, endAngle: Double, anticlockwise: Double): Unit
@@ -127,8 +127,7 @@ trait CanvasRenderingContext2D extends StObject {
 }
 object CanvasRenderingContext2D {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotCanvasRenderingContext2D_typekey: CanvasRenderingContext2D,
     arc: (Double, Double, Double, Double, Double, Double) => Unit,
     arcTo: (Double, Double, Double, Double, Double) => Unit,
@@ -185,157 +184,106 @@ object CanvasRenderingContext2D {
     __obj.asInstanceOf[CanvasRenderingContext2D]
   }
   
-  @scala.inline
-  implicit class CanvasRenderingContext2DMutableBuilder[Self <: CanvasRenderingContext2D] (val x: Self) extends AnyVal {
+  extension [Self <: CanvasRenderingContext2D](x: Self) {
     
-    @scala.inline
-    def setArc(value: (Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "arc", js.Any.fromFunction6(value))
+    inline def setArc(value: (Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "arc", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setArcTo(value: (Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "arcTo", js.Any.fromFunction5(value))
+    inline def setArcTo(value: (Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "arcTo", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setBeginPath(value: () => Unit): Self = StObject.set(x, "beginPath", js.Any.fromFunction0(value))
+    inline def setBeginPath(value: () => Unit): Self = StObject.set(x, "beginPath", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBezierCurveTo(value: (Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "bezierCurveTo", js.Any.fromFunction6(value))
+    inline def setBezierCurveTo(value: (Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "bezierCurveTo", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setCanvas(value: IHTMLCanvasElement): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
+    inline def setCanvas(value: IHTMLCanvasElement): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearRect(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "clearRect", js.Any.fromFunction4(value))
+    inline def setClearRect(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "clearRect", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setClip(value: () => Unit): Self = StObject.set(x, "clip", js.Any.fromFunction0(value))
+    inline def setClip(value: () => Unit): Self = StObject.set(x, "clip", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClosePath(value: () => Unit): Self = StObject.set(x, "closePath", js.Any.fromFunction0(value))
+    inline def setClosePath(value: () => Unit): Self = StObject.set(x, "closePath", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateImageData(value: (js.Any, js.Any) => ICanvasImageData): Self = StObject.set(x, "createImageData", js.Any.fromFunction2(value))
+    inline def setCreateImageData(value: (js.Any, js.Any) => ICanvasImageData): Self = StObject.set(x, "createImageData", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateLinearGradient(value: (Double, Double, Double, Double) => ICanvasGradient): Self = StObject.set(x, "createLinearGradient", js.Any.fromFunction4(value))
+    inline def setCreateLinearGradient(value: (Double, Double, Double, Double) => ICanvasGradient): Self = StObject.set(x, "createLinearGradient", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setCreatePattern(value: (js.Any, js.Any) => ICanvasPattern): Self = StObject.set(x, "createPattern", js.Any.fromFunction2(value))
+    inline def setCreatePattern(value: (js.Any, js.Any) => ICanvasPattern): Self = StObject.set(x, "createPattern", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCreateRadialGradient(value: (Double, Double, Double, Double, Double, Double) => ICanvasGradient): Self = StObject.set(x, "createRadialGradient", js.Any.fromFunction6(value))
+    inline def setCreateRadialGradient(value: (Double, Double, Double, Double, Double, Double) => ICanvasGradient): Self = StObject.set(x, "createRadialGradient", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setDrawImage(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "drawImage", js.Any.fromFunction9(value))
+    inline def setDrawImage(value: (js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "drawImage", js.Any.fromFunction9(value))
     
-    @scala.inline
-    def setFill(value: () => Unit): Self = StObject.set(x, "fill", js.Any.fromFunction0(value))
+    inline def setFill(value: () => Unit): Self = StObject.set(x, "fill", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFillRect(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "fillRect", js.Any.fromFunction4(value))
+    inline def setFillRect(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "fillRect", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setFillStyle(value: js.Any): Self = StObject.set(x, "fillStyle", value.asInstanceOf[js.Any])
+    inline def setFillStyle(value: js.Any): Self = StObject.set(x, "fillStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillText(value: (String, Double, Double, js.Any) => Unit): Self = StObject.set(x, "fillText", js.Any.fromFunction4(value))
+    inline def setFillText(value: (String, Double, Double, js.Any) => Unit): Self = StObject.set(x, "fillText", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+    inline def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetImageData(value: (Double, Double, Double, Double) => ICanvasImageData): Self = StObject.set(x, "getImageData", js.Any.fromFunction4(value))
+    inline def setGetImageData(value: (Double, Double, Double, Double) => ICanvasImageData): Self = StObject.set(x, "getImageData", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setGlobalAlpha(value: Double): Self = StObject.set(x, "globalAlpha", value.asInstanceOf[js.Any])
+    inline def setGlobalAlpha(value: Double): Self = StObject.set(x, "globalAlpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalCompositeOperation(value: String): Self = StObject.set(x, "globalCompositeOperation", value.asInstanceOf[js.Any])
+    inline def setGlobalCompositeOperation(value: String): Self = StObject.set(x, "globalCompositeOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPointInPath(value: (Double, Double) => Boolean): Self = StObject.set(x, "isPointInPath", js.Any.fromFunction2(value))
+    inline def setIsPointInPath(value: (Double, Double) => Boolean): Self = StObject.set(x, "isPointInPath", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLineCap(value: String): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])
+    inline def setLineCap(value: String): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineJoin(value: String): Self = StObject.set(x, "lineJoin", value.asInstanceOf[js.Any])
+    inline def setLineJoin(value: String): Self = StObject.set(x, "lineJoin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineTo(value: (Double, Double) => Unit): Self = StObject.set(x, "lineTo", js.Any.fromFunction2(value))
+    inline def setLineTo(value: (Double, Double) => Unit): Self = StObject.set(x, "lineTo", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotCanvasRenderingContext2D_typekey(value: CanvasRenderingContext2D): Self = StObject.set(x, "MSHTML.CanvasRenderingContext2D_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotCanvasRenderingContext2D_typekey(value: CanvasRenderingContext2D): Self = StObject.set(x, "MSHTML.CanvasRenderingContext2D_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasureText(value: String => ICanvasTextMetrics): Self = StObject.set(x, "measureText", js.Any.fromFunction1(value))
+    inline def setMeasureText(value: String => ICanvasTextMetrics): Self = StObject.set(x, "measureText", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMiterLimit(value: Double): Self = StObject.set(x, "miterLimit", value.asInstanceOf[js.Any])
+    inline def setMiterLimit(value: Double): Self = StObject.set(x, "miterLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveTo(value: (Double, Double) => Unit): Self = StObject.set(x, "moveTo", js.Any.fromFunction2(value))
+    inline def setMoveTo(value: (Double, Double) => Unit): Self = StObject.set(x, "moveTo", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPutImageData(value: (ICanvasImageData, Double, Double, js.Any, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "putImageData", js.Any.fromFunction7(value))
+    inline def setPutImageData(value: (ICanvasImageData, Double, Double, js.Any, js.Any, js.Any, js.Any) => Unit): Self = StObject.set(x, "putImageData", js.Any.fromFunction7(value))
     
-    @scala.inline
-    def setQuadraticCurveTo(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "quadraticCurveTo", js.Any.fromFunction4(value))
+    inline def setQuadraticCurveTo(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "quadraticCurveTo", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setRect(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "rect", js.Any.fromFunction4(value))
+    inline def setRect(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "rect", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setRestore(value: () => Unit): Self = StObject.set(x, "restore", js.Any.fromFunction0(value))
+    inline def setRestore(value: () => Unit): Self = StObject.set(x, "restore", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRotate(value: Double => Unit): Self = StObject.set(x, "rotate", js.Any.fromFunction1(value))
+    inline def setRotate(value: Double => Unit): Self = StObject.set(x, "rotate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSave(value: () => Unit): Self = StObject.set(x, "save", js.Any.fromFunction0(value))
+    inline def setSave(value: () => Unit): Self = StObject.set(x, "save", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setScale(value: (Double, Double) => Unit): Self = StObject.set(x, "scale", js.Any.fromFunction2(value))
+    inline def setScale(value: (Double, Double) => Unit): Self = StObject.set(x, "scale", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetTransform(value: (Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "setTransform", js.Any.fromFunction6(value))
+    inline def setSetTransform(value: (Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "setTransform", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setShadowBlur(value: Double): Self = StObject.set(x, "shadowBlur", value.asInstanceOf[js.Any])
+    inline def setShadowBlur(value: Double): Self = StObject.set(x, "shadowBlur", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowColor(value: String): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
+    inline def setShadowColor(value: String): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowOffsetX(value: Double): Self = StObject.set(x, "shadowOffsetX", value.asInstanceOf[js.Any])
+    inline def setShadowOffsetX(value: Double): Self = StObject.set(x, "shadowOffsetX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowOffsetY(value: Double): Self = StObject.set(x, "shadowOffsetY", value.asInstanceOf[js.Any])
+    inline def setShadowOffsetY(value: Double): Self = StObject.set(x, "shadowOffsetY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStroke(value: () => Unit): Self = StObject.set(x, "stroke", js.Any.fromFunction0(value))
+    inline def setStroke(value: () => Unit): Self = StObject.set(x, "stroke", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStrokeRect(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "strokeRect", js.Any.fromFunction4(value))
+    inline def setStrokeRect(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "strokeRect", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setStrokeStyle(value: js.Any): Self = StObject.set(x, "strokeStyle", value.asInstanceOf[js.Any])
+    inline def setStrokeStyle(value: js.Any): Self = StObject.set(x, "strokeStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeText(value: (String, Double, Double, js.Any) => Unit): Self = StObject.set(x, "strokeText", js.Any.fromFunction4(value))
+    inline def setStrokeText(value: (String, Double, Double, js.Any) => Unit): Self = StObject.set(x, "strokeText", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+    inline def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextBaseline(value: String): Self = StObject.set(x, "textBaseline", value.asInstanceOf[js.Any])
+    inline def setTextBaseline(value: String): Self = StObject.set(x, "textBaseline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransform(value: (Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction6(value))
+    inline def setTransform(value: (Double, Double, Double, Double, Double, Double) => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setTranslate(value: (Double, Double) => Unit): Self = StObject.set(x, "translate", js.Any.fromFunction2(value))
+    inline def setTranslate(value: (Double, Double) => Unit): Self = StObject.set(x, "translate", js.Any.fromFunction2(value))
   }
 }

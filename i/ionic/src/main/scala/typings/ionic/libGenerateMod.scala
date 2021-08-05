@@ -31,7 +31,7 @@ object libGenerateMod {
     
     def createOptionsFromCommandLine(inputs: CommandLineInputs, options: CommandLineOptions): GenerateOptions = js.native
     
-    val e: GenerateRunnerDeps = js.native
+    /* protected */ val e: GenerateRunnerDeps = js.native
     
     def ensureCommandLine(inputs: CommandLineInputs, options: CommandLineOptions): js.Promise[Unit] = js.native
     
@@ -61,8 +61,7 @@ object libGenerateMod {
   }
   object GenerateRunnerDeps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       config: IConfig,
       ctx: IonicContext,
       log: ILogger,
@@ -74,26 +73,19 @@ object libGenerateMod {
       __obj.asInstanceOf[GenerateRunnerDeps]
     }
     
-    @scala.inline
-    implicit class GenerateRunnerDepsMutableBuilder[Self <: GenerateRunnerDeps] (val x: Self) extends AnyVal {
+    extension [Self <: GenerateRunnerDeps](x: Self) {
       
-      @scala.inline
-      def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtx(value: IonicContext): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+      inline def setCtx(value: IonicContext): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLog(value: ILogger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: ILogger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProject(value: IProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: IProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrompt(value: PromptModule): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+      inline def setPrompt(value: PromptModule): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShell(value: IShell): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
+      inline def setShell(value: IShell): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
     }
   }
 }

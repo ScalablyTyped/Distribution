@@ -33,22 +33,17 @@ trait FinishEngineEvent
 }
 object FinishEngineEvent {
   
-  @scala.inline
-  def apply(ErrorMessage: String, Finish: FinishReason, Return: js.Any, Source: XInterface): FinishEngineEvent = {
+  inline def apply(ErrorMessage: String, Finish: FinishReason, Return: js.Any, Source: XInterface): FinishEngineEvent = {
     val __obj = js.Dynamic.literal(ErrorMessage = ErrorMessage.asInstanceOf[js.Any], Finish = Finish.asInstanceOf[js.Any], Return = Return.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[FinishEngineEvent]
   }
   
-  @scala.inline
-  implicit class FinishEngineEventMutableBuilder[Self <: FinishEngineEvent] (val x: Self) extends AnyVal {
+  extension [Self <: FinishEngineEvent](x: Self) {
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinish(value: FinishReason): Self = StObject.set(x, "Finish", value.asInstanceOf[js.Any])
+    inline def setFinish(value: FinishReason): Self = StObject.set(x, "Finish", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn(value: js.Any): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
+    inline def setReturn(value: js.Any): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
   }
 }

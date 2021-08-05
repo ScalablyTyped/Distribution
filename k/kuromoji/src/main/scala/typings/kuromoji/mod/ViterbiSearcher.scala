@@ -16,8 +16,7 @@ trait ViterbiSearcher extends StObject {
 }
 object ViterbiSearcher {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     backward: ViterbiLattice => js.Array[ViterbiNode],
     connection_costs: ConnectionCosts,
     forward: ViterbiLattice => ViterbiLattice,
@@ -27,19 +26,14 @@ object ViterbiSearcher {
     __obj.asInstanceOf[ViterbiSearcher]
   }
   
-  @scala.inline
-  implicit class ViterbiSearcherMutableBuilder[Self <: ViterbiSearcher] (val x: Self) extends AnyVal {
+  extension [Self <: ViterbiSearcher](x: Self) {
     
-    @scala.inline
-    def setBackward(value: ViterbiLattice => js.Array[ViterbiNode]): Self = StObject.set(x, "backward", js.Any.fromFunction1(value))
+    inline def setBackward(value: ViterbiLattice => js.Array[ViterbiNode]): Self = StObject.set(x, "backward", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConnection_costs(value: ConnectionCosts): Self = StObject.set(x, "connection_costs", value.asInstanceOf[js.Any])
+    inline def setConnection_costs(value: ConnectionCosts): Self = StObject.set(x, "connection_costs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForward(value: ViterbiLattice => ViterbiLattice): Self = StObject.set(x, "forward", js.Any.fromFunction1(value))
+    inline def setForward(value: ViterbiLattice => ViterbiLattice): Self = StObject.set(x, "forward", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSearch(value: ViterbiLattice => js.Array[ViterbiNode]): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
+    inline def setSearch(value: ViterbiLattice => js.Array[ViterbiNode]): Self = StObject.set(x, "search", js.Any.fromFunction1(value))
   }
 }

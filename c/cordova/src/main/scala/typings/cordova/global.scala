@@ -10,6 +10,5 @@ object global {
   @JSGlobal("cordova")
   @js.native
   def cordova: Cordova = js.native
-  @scala.inline
-  def cordova_=(x: Cordova): Unit = js.Dynamic.global.updateDynamic("cordova")(x.asInstanceOf[js.Any])
+  inline def cordova_=(x: Cordova): Unit = js.Dynamic.global.updateDynamic("cordova")(x.asInstanceOf[js.Any])
 }

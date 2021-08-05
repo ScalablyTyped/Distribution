@@ -21,7 +21,7 @@ object commonConnectionMod {
       */
     def this(connection: Connection, targetType: String, sessionId: String) = this()
     
-    var _callbacks: js.Any = js.native
+    /* private */ var _callbacks: js.Any = js.native
     
     /**
       * @internal
@@ -38,9 +38,9 @@ object commonConnectionMod {
       */
     def _onMessage(`object`: CDPSessionOnMessageObject): Unit = js.native
     
-    var _sessionId: js.Any = js.native
+    /* private */ var _sessionId: js.Any = js.native
     
-    var _targetType: js.Any = js.native
+    /* private */ var _targetType: js.Any = js.native
     
     /**
       * Detaches the cdpSession from the target. Once detached, the cdpSession object
@@ -121,8 +121,7 @@ object commonConnectionMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromSession(session: CDPSession): Connection = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSession")(session.asInstanceOf[js.Any]).asInstanceOf[Connection]
+    inline def fromSession(session: CDPSession): Connection = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSession")(session.asInstanceOf[js.Any]).asInstanceOf[Connection]
   }
   
   object ConnectionEmittedEvents {
@@ -146,35 +145,26 @@ object commonConnectionMod {
   }
   object CDPSessionOnMessageObject {
     
-    @scala.inline
-    def apply(error: Data, method: String, params: Record[String, js.Any]): CDPSessionOnMessageObject = {
+    inline def apply(error: Data, method: String, params: Record[String, js.Any]): CDPSessionOnMessageObject = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
       __obj.asInstanceOf[CDPSessionOnMessageObject]
     }
     
-    @scala.inline
-    implicit class CDPSessionOnMessageObjectMutableBuilder[Self <: CDPSessionOnMessageObject] (val x: Self) extends AnyVal {
+    extension [Self <: CDPSessionOnMessageObject](x: Self) {
       
-      @scala.inline
-      def setError(value: Data): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Data): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: Record[String, js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: Record[String, js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+      inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     }
   }
   
@@ -190,26 +180,20 @@ object commonConnectionMod {
   }
   object ConnectionCallback {
     
-    @scala.inline
-    def apply(error: Error, method: String, reject: js.Function, resolve: js.Function): ConnectionCallback = {
+    inline def apply(error: Error, method: String, reject: js.Function, resolve: js.Function): ConnectionCallback = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], reject = reject.asInstanceOf[js.Any], resolve = resolve.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConnectionCallback]
     }
     
-    @scala.inline
-    implicit class ConnectionCallbackMutableBuilder[Self <: ConnectionCallback] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectionCallback](x: Self) {
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReject(value: js.Function): Self = StObject.set(x, "reject", value.asInstanceOf[js.Any])
+      inline def setReject(value: js.Function): Self = StObject.set(x, "reject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolve(value: js.Function): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
+      inline def setResolve(value: js.Function): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
     }
   }
 }

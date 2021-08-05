@@ -22,19 +22,15 @@ trait TickConfig[ES /* <: ExprRef | SignalRef */]
 }
 object TickConfig {
   
-  @scala.inline
-  def apply[ES /* <: ExprRef | SignalRef */](): TickConfig[ES] = {
+  inline def apply[ES /* <: ExprRef | SignalRef */](): TickConfig[ES] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TickConfig[ES]]
   }
   
-  @scala.inline
-  implicit class TickConfigMutableBuilder[Self <: TickConfig[?], ES /* <: ExprRef | SignalRef */] (val x: Self & TickConfig[ES]) extends AnyVal {
+  extension [Self <: TickConfig[?], ES /* <: ExprRef | SignalRef */](x: Self & TickConfig[ES]) {
     
-    @scala.inline
-    def setBandSize(value: Double): Self = StObject.set(x, "bandSize", value.asInstanceOf[js.Any])
+    inline def setBandSize(value: Double): Self = StObject.set(x, "bandSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBandSizeUndefined: Self = StObject.set(x, "bandSize", js.undefined)
+    inline def setBandSizeUndefined: Self = StObject.set(x, "bandSize", js.undefined)
   }
 }

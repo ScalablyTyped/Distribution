@@ -48,64 +48,45 @@ trait DescribeAlarmHistoryInput extends StObject {
 }
 object DescribeAlarmHistoryInput {
   
-  @scala.inline
-  def apply(): DescribeAlarmHistoryInput = {
+  inline def apply(): DescribeAlarmHistoryInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeAlarmHistoryInput]
   }
   
-  @scala.inline
-  implicit class DescribeAlarmHistoryInputMutableBuilder[Self <: DescribeAlarmHistoryInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAlarmHistoryInput](x: Self) {
     
-    @scala.inline
-    def setAlarmName(value: AlarmName): Self = StObject.set(x, "AlarmName", value.asInstanceOf[js.Any])
+    inline def setAlarmName(value: AlarmName): Self = StObject.set(x, "AlarmName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlarmNameUndefined: Self = StObject.set(x, "AlarmName", js.undefined)
+    inline def setAlarmNameUndefined: Self = StObject.set(x, "AlarmName", js.undefined)
     
-    @scala.inline
-    def setAlarmTypes(value: AlarmTypes): Self = StObject.set(x, "AlarmTypes", value.asInstanceOf[js.Any])
+    inline def setAlarmTypes(value: AlarmTypes): Self = StObject.set(x, "AlarmTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlarmTypesUndefined: Self = StObject.set(x, "AlarmTypes", js.undefined)
+    inline def setAlarmTypesUndefined: Self = StObject.set(x, "AlarmTypes", js.undefined)
     
-    @scala.inline
-    def setAlarmTypesVarargs(value: AlarmType*): Self = StObject.set(x, "AlarmTypes", js.Array(value :_*))
+    inline def setAlarmTypesVarargs(value: AlarmType*): Self = StObject.set(x, "AlarmTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setEndDate(value: Timestamp): Self = StObject.set(x, "EndDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: Timestamp): Self = StObject.set(x, "EndDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateUndefined: Self = StObject.set(x, "EndDate", js.undefined)
+    inline def setEndDateUndefined: Self = StObject.set(x, "EndDate", js.undefined)
     
-    @scala.inline
-    def setHistoryItemType(value: HistoryItemType): Self = StObject.set(x, "HistoryItemType", value.asInstanceOf[js.Any])
+    inline def setHistoryItemType(value: HistoryItemType): Self = StObject.set(x, "HistoryItemType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoryItemTypeUndefined: Self = StObject.set(x, "HistoryItemType", js.undefined)
+    inline def setHistoryItemTypeUndefined: Self = StObject.set(x, "HistoryItemType", js.undefined)
     
-    @scala.inline
-    def setMaxRecords(value: MaxRecords): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
+    inline def setMaxRecords(value: MaxRecords): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
+    inline def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setScanBy(value: ScanBy): Self = StObject.set(x, "ScanBy", value.asInstanceOf[js.Any])
+    inline def setScanBy(value: ScanBy): Self = StObject.set(x, "ScanBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScanByUndefined: Self = StObject.set(x, "ScanBy", js.undefined)
+    inline def setScanByUndefined: Self = StObject.set(x, "ScanBy", js.undefined)
     
-    @scala.inline
-    def setStartDate(value: Timestamp): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: Timestamp): Self = StObject.set(x, "StartDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateUndefined: Self = StObject.set(x, "StartDate", js.undefined)
+    inline def setStartDateUndefined: Self = StObject.set(x, "StartDate", js.undefined)
   }
 }

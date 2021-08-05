@@ -11,15 +11,15 @@ object wrapperMod {
   @js.native
   class Wrapper () extends StObject {
     
-    var _allowBreakingWords: js.Any = js.native
+    /* private */ var _allowBreakingWords: js.Any = js.native
     
     var _breakingCharacter: String = js.native
     
-    var _maxLines: js.Any = js.native
+    /* private */ var _maxLines: js.Any = js.native
     
-    var _textTrimming: js.Any = js.native
+    /* private */ var _textTrimming: js.Any = js.native
     
-    var _tokenizer: js.Any = js.native
+    /* private */ var _tokenizer: js.Any = js.native
     
     /* private */ def addEllipsis(line: js.Any, width: js.Any, measurer: js.Any): js.Any = js.native
     
@@ -64,8 +64,7 @@ object wrapperMod {
   }
   object IWrappingResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       noBrokeWords: Double,
       noLines: Double,
       originalText: String,
@@ -76,23 +75,17 @@ object wrapperMod {
       __obj.asInstanceOf[IWrappingResult]
     }
     
-    @scala.inline
-    implicit class IWrappingResultMutableBuilder[Self <: IWrappingResult] (val x: Self) extends AnyVal {
+    extension [Self <: IWrappingResult](x: Self) {
       
-      @scala.inline
-      def setNoBrokeWords(value: Double): Self = StObject.set(x, "noBrokeWords", value.asInstanceOf[js.Any])
+      inline def setNoBrokeWords(value: Double): Self = StObject.set(x, "noBrokeWords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoLines(value: Double): Self = StObject.set(x, "noLines", value.asInstanceOf[js.Any])
+      inline def setNoLines(value: Double): Self = StObject.set(x, "noLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalText(value: String): Self = StObject.set(x, "originalText", value.asInstanceOf[js.Any])
+      inline def setOriginalText(value: String): Self = StObject.set(x, "originalText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTruncatedText(value: String): Self = StObject.set(x, "truncatedText", value.asInstanceOf[js.Any])
+      inline def setTruncatedText(value: String): Self = StObject.set(x, "truncatedText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrappedText(value: String): Self = StObject.set(x, "wrappedText", value.asInstanceOf[js.Any])
+      inline def setWrappedText(value: String): Self = StObject.set(x, "wrappedText", value.asInstanceOf[js.Any])
     }
   }
 }

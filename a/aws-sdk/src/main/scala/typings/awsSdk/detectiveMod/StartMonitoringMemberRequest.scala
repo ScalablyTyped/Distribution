@@ -18,19 +18,15 @@ trait StartMonitoringMemberRequest extends StObject {
 }
 object StartMonitoringMemberRequest {
   
-  @scala.inline
-  def apply(AccountId: AccountId, GraphArn: GraphArn): StartMonitoringMemberRequest = {
+  inline def apply(AccountId: AccountId, GraphArn: GraphArn): StartMonitoringMemberRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any], GraphArn = GraphArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartMonitoringMemberRequest]
   }
   
-  @scala.inline
-  implicit class StartMonitoringMemberRequestMutableBuilder[Self <: StartMonitoringMemberRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartMonitoringMemberRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphArn(value: GraphArn): Self = StObject.set(x, "GraphArn", value.asInstanceOf[js.Any])
+    inline def setGraphArn(value: GraphArn): Self = StObject.set(x, "GraphArn", value.asInstanceOf[js.Any])
   }
 }

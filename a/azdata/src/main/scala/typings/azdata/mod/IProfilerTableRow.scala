@@ -14,16 +14,13 @@ trait IProfilerTableRow extends StObject {
 }
 object IProfilerTableRow {
   
-  @scala.inline
-  def apply(EventClass: String): IProfilerTableRow = {
+  inline def apply(EventClass: String): IProfilerTableRow = {
     val __obj = js.Dynamic.literal(EventClass = EventClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[IProfilerTableRow]
   }
   
-  @scala.inline
-  implicit class IProfilerTableRowMutableBuilder[Self <: IProfilerTableRow] (val x: Self) extends AnyVal {
+  extension [Self <: IProfilerTableRow](x: Self) {
     
-    @scala.inline
-    def setEventClass(value: String): Self = StObject.set(x, "EventClass", value.asInstanceOf[js.Any])
+    inline def setEventClass(value: String): Self = StObject.set(x, "EventClass", value.asInstanceOf[js.Any])
   }
 }

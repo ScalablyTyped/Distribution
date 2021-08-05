@@ -10,16 +10,13 @@ trait ServerDate extends StObject {
 }
 object ServerDate {
   
-  @scala.inline
-  def apply(options: IServerDateOptions): ServerDate = {
+  inline def apply(options: IServerDateOptions): ServerDate = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerDate]
   }
   
-  @scala.inline
-  implicit class ServerDateMutableBuilder[Self <: ServerDate] (val x: Self) extends AnyVal {
+  extension [Self <: ServerDate](x: Self) {
     
-    @scala.inline
-    def setOptions(value: IServerDateOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: IServerDateOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
   }
 }

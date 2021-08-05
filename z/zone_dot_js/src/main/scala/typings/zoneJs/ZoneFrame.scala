@@ -15,22 +15,17 @@ trait ZoneFrame extends StObject {
 }
 object ZoneFrame {
   
-  @scala.inline
-  def apply(zone: Zone): ZoneFrame = {
+  inline def apply(zone: Zone): ZoneFrame = {
     val __obj = js.Dynamic.literal(zone = zone.asInstanceOf[js.Any], parent = null)
     __obj.asInstanceOf[ZoneFrame]
   }
   
-  @scala.inline
-  implicit class ZoneFrameMutableBuilder[Self <: ZoneFrame] (val x: Self) extends AnyVal {
+  extension [Self <: ZoneFrame](x: Self) {
     
-    @scala.inline
-    def setParent(value: ZoneFrame): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: ZoneFrame): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNull: Self = StObject.set(x, "parent", null)
+    inline def setParentNull: Self = StObject.set(x, "parent", null)
     
-    @scala.inline
-    def setZone(value: Zone): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    inline def setZone(value: Zone): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
   }
 }

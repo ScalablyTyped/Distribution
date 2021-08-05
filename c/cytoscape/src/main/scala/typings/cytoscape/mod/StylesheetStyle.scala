@@ -16,19 +16,15 @@ trait StylesheetStyle
 }
 object StylesheetStyle {
   
-  @scala.inline
-  def apply(selector: String, style: Node | Edge | typings.cytoscape.mod.Css.Core): StylesheetStyle = {
+  inline def apply(selector: String, style: Node | Edge | typings.cytoscape.mod.Css.Core): StylesheetStyle = {
     val __obj = js.Dynamic.literal(selector = selector.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
     __obj.asInstanceOf[StylesheetStyle]
   }
   
-  @scala.inline
-  implicit class StylesheetStyleMutableBuilder[Self <: StylesheetStyle] (val x: Self) extends AnyVal {
+  extension [Self <: StylesheetStyle](x: Self) {
     
-    @scala.inline
-    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyle(value: Node | Edge | typings.cytoscape.mod.Css.Core): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Node | Edge | typings.cytoscape.mod.Css.Core): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

@@ -10,8 +10,7 @@ trait JQueryFileUploadProgressObject
      with JQueryFileUploadProgressAllObject
 object JQueryFileUploadProgressObject {
   
-  @scala.inline
-  def apply(): JQueryFileUploadProgressObject = {
+  inline def apply(): JQueryFileUploadProgressObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JQueryFileUploadProgressObject]
   }

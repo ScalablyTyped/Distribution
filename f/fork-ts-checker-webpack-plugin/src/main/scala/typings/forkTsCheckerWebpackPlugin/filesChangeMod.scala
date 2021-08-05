@@ -16,8 +16,7 @@ object filesChangeMod {
     * @param changes List of subsequent files changes
     * @returns Files change that represents all subsequent changes as a one event
     */
-  @scala.inline
-  def aggregateFilesChanges(changes: js.Array[FilesChange]): FilesChange = ^.asInstanceOf[js.Dynamic].applyDynamic("aggregateFilesChanges")(changes.asInstanceOf[js.Any]).asInstanceOf[FilesChange]
+  inline def aggregateFilesChanges(changes: js.Array[FilesChange]): FilesChange = ^.asInstanceOf[js.Dynamic].applyDynamic("aggregateFilesChanges")(changes.asInstanceOf[js.Any]).asInstanceOf[FilesChange]
   
   trait FilesChange extends StObject {
     
@@ -27,32 +26,24 @@ object filesChangeMod {
   }
   object FilesChange {
     
-    @scala.inline
-    def apply(): FilesChange = {
+    inline def apply(): FilesChange = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FilesChange]
     }
     
-    @scala.inline
-    implicit class FilesChangeMutableBuilder[Self <: FilesChange] (val x: Self) extends AnyVal {
+    extension [Self <: FilesChange](x: Self) {
       
-      @scala.inline
-      def setChangedFiles(value: js.Array[String]): Self = StObject.set(x, "changedFiles", value.asInstanceOf[js.Any])
+      inline def setChangedFiles(value: js.Array[String]): Self = StObject.set(x, "changedFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangedFilesUndefined: Self = StObject.set(x, "changedFiles", js.undefined)
+      inline def setChangedFilesUndefined: Self = StObject.set(x, "changedFiles", js.undefined)
       
-      @scala.inline
-      def setChangedFilesVarargs(value: String*): Self = StObject.set(x, "changedFiles", js.Array(value :_*))
+      inline def setChangedFilesVarargs(value: String*): Self = StObject.set(x, "changedFiles", js.Array(value :_*))
       
-      @scala.inline
-      def setDeletedFiles(value: js.Array[String]): Self = StObject.set(x, "deletedFiles", value.asInstanceOf[js.Any])
+      inline def setDeletedFiles(value: js.Array[String]): Self = StObject.set(x, "deletedFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeletedFilesUndefined: Self = StObject.set(x, "deletedFiles", js.undefined)
+      inline def setDeletedFilesUndefined: Self = StObject.set(x, "deletedFiles", js.undefined)
       
-      @scala.inline
-      def setDeletedFilesVarargs(value: String*): Self = StObject.set(x, "deletedFiles", js.Array(value :_*))
+      inline def setDeletedFilesVarargs(value: String*): Self = StObject.set(x, "deletedFiles", js.Array(value :_*))
     }
   }
 }

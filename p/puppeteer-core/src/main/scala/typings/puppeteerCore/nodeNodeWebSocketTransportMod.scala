@@ -15,7 +15,7 @@ object nodeNodeWebSocketTransportMod {
        with ConnectionTransport {
     def this(ws: ^) = this()
     
-    var _ws: js.Any = js.native
+    /* private */ var _ws: js.Any = js.native
     
     /* CompleteClass */
     override def close(): js.Any = js.native
@@ -31,7 +31,6 @@ object nodeNodeWebSocketTransportMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(url: String): js.Promise[NodeWebSocketTransport] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[NodeWebSocketTransport]]
+    inline def create(url: String): js.Promise[NodeWebSocketTransport] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[NodeWebSocketTransport]]
   }
 }

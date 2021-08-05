@@ -23,31 +23,23 @@ trait UsageRecordResult extends StObject {
 }
 object UsageRecordResult {
   
-  @scala.inline
-  def apply(): UsageRecordResult = {
+  inline def apply(): UsageRecordResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UsageRecordResult]
   }
   
-  @scala.inline
-  implicit class UsageRecordResultMutableBuilder[Self <: UsageRecordResult] (val x: Self) extends AnyVal {
+  extension [Self <: UsageRecordResult](x: Self) {
     
-    @scala.inline
-    def setMeteringRecordId(value: String): Self = StObject.set(x, "MeteringRecordId", value.asInstanceOf[js.Any])
+    inline def setMeteringRecordId(value: String): Self = StObject.set(x, "MeteringRecordId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeteringRecordIdUndefined: Self = StObject.set(x, "MeteringRecordId", js.undefined)
+    inline def setMeteringRecordIdUndefined: Self = StObject.set(x, "MeteringRecordId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: UsageRecordResultStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: UsageRecordResultStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setUsageRecord(value: UsageRecord): Self = StObject.set(x, "UsageRecord", value.asInstanceOf[js.Any])
+    inline def setUsageRecord(value: UsageRecord): Self = StObject.set(x, "UsageRecord", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageRecordUndefined: Self = StObject.set(x, "UsageRecord", js.undefined)
+    inline def setUsageRecordUndefined: Self = StObject.set(x, "UsageRecord", js.undefined)
   }
 }

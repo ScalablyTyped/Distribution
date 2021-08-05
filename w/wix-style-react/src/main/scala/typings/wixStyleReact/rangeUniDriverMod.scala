@@ -22,8 +22,7 @@ object rangeUniDriverMod {
   }
   object RangeUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -36,20 +35,15 @@ object rangeUniDriverMod {
       __obj.asInstanceOf[RangeUniDriver]
     }
     
-    @scala.inline
-    implicit class RangeUniDriverMutableBuilder[Self <: RangeUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: RangeUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetInput(value: () => js.Promise[HTMLElement]): Self = StObject.set(x, "getInput", js.Any.fromFunction0(value))
+      inline def setGetInput(value: () => js.Promise[HTMLElement]): Self = StObject.set(x, "getInput", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLabel(value: () => js.Promise[HTMLElement]): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
+      inline def setGetLabel(value: () => js.Promise[HTMLElement]): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasInput(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasInput", js.Any.fromFunction0(value))
+      inline def setHasInput(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasInput", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasLabel(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasLabel", js.Any.fromFunction0(value))
+      inline def setHasLabel(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasLabel", js.Any.fromFunction0(value))
     }
   }
 }

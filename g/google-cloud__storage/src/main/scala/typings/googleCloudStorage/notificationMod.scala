@@ -56,20 +56,16 @@ object notificationMod {
   }
   object DeleteNotificationOptions {
     
-    @scala.inline
-    def apply(): DeleteNotificationOptions = {
+    inline def apply(): DeleteNotificationOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeleteNotificationOptions]
     }
     
-    @scala.inline
-    implicit class DeleteNotificationOptionsMutableBuilder[Self <: DeleteNotificationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteNotificationOptions](x: Self) {
       
-      @scala.inline
-      def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+      inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+      inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
     }
   }
   
@@ -93,20 +89,16 @@ object notificationMod {
   }
   object GetNotificationMetadataOptions {
     
-    @scala.inline
-    def apply(): GetNotificationMetadataOptions = {
+    inline def apply(): GetNotificationMetadataOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetNotificationMetadataOptions]
     }
     
-    @scala.inline
-    implicit class GetNotificationMetadataOptionsMutableBuilder[Self <: GetNotificationMetadataOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GetNotificationMetadataOptions](x: Self) {
       
-      @scala.inline
-      def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+      inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+      inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
     }
   }
   
@@ -126,26 +118,20 @@ object notificationMod {
   }
   object GetNotificationOptions {
     
-    @scala.inline
-    def apply(): GetNotificationOptions = {
+    inline def apply(): GetNotificationOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetNotificationOptions]
     }
     
-    @scala.inline
-    implicit class GetNotificationOptionsMutableBuilder[Self <: GetNotificationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GetNotificationOptions](x: Self) {
       
-      @scala.inline
-      def setAutoCreate(value: Boolean): Self = StObject.set(x, "autoCreate", value.asInstanceOf[js.Any])
+      inline def setAutoCreate(value: Boolean): Self = StObject.set(x, "autoCreate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoCreateUndefined: Self = StObject.set(x, "autoCreate", js.undefined)
+      inline def setAutoCreateUndefined: Self = StObject.set(x, "autoCreate", js.undefined)
       
-      @scala.inline
-      def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+      inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+      inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
     }
   }
   

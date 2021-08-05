@@ -32,40 +32,29 @@ trait SchemaFindDevicesByOwnerRequest extends StObject {
 }
 object SchemaFindDevicesByOwnerRequest {
   
-  @scala.inline
-  def apply(): SchemaFindDevicesByOwnerRequest = {
+  inline def apply(): SchemaFindDevicesByOwnerRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFindDevicesByOwnerRequest]
   }
   
-  @scala.inline
-  implicit class SchemaFindDevicesByOwnerRequestMutableBuilder[Self <: SchemaFindDevicesByOwnerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFindDevicesByOwnerRequest](x: Self) {
     
-    @scala.inline
-    def setCustomerId(value: js.Array[String]): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
+    inline def setCustomerId(value: js.Array[String]): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
+    inline def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
     
-    @scala.inline
-    def setCustomerIdVarargs(value: String*): Self = StObject.set(x, "customerId", js.Array(value :_*))
+    inline def setCustomerIdVarargs(value: String*): Self = StObject.set(x, "customerId", js.Array(value :_*))
     
-    @scala.inline
-    def setLimit(value: String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: String): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setSectionType(value: String): Self = StObject.set(x, "sectionType", value.asInstanceOf[js.Any])
+    inline def setSectionType(value: String): Self = StObject.set(x, "sectionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionTypeUndefined: Self = StObject.set(x, "sectionType", js.undefined)
+    inline def setSectionTypeUndefined: Self = StObject.set(x, "sectionType", js.undefined)
   }
 }

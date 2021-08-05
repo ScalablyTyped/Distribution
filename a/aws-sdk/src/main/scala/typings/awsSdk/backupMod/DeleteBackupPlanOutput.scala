@@ -28,37 +28,27 @@ trait DeleteBackupPlanOutput extends StObject {
 }
 object DeleteBackupPlanOutput {
   
-  @scala.inline
-  def apply(): DeleteBackupPlanOutput = {
+  inline def apply(): DeleteBackupPlanOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteBackupPlanOutput]
   }
   
-  @scala.inline
-  implicit class DeleteBackupPlanOutputMutableBuilder[Self <: DeleteBackupPlanOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteBackupPlanOutput](x: Self) {
     
-    @scala.inline
-    def setBackupPlanArn(value: ARN): Self = StObject.set(x, "BackupPlanArn", value.asInstanceOf[js.Any])
+    inline def setBackupPlanArn(value: ARN): Self = StObject.set(x, "BackupPlanArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupPlanArnUndefined: Self = StObject.set(x, "BackupPlanArn", js.undefined)
+    inline def setBackupPlanArnUndefined: Self = StObject.set(x, "BackupPlanArn", js.undefined)
     
-    @scala.inline
-    def setBackupPlanId(value: String): Self = StObject.set(x, "BackupPlanId", value.asInstanceOf[js.Any])
+    inline def setBackupPlanId(value: String): Self = StObject.set(x, "BackupPlanId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupPlanIdUndefined: Self = StObject.set(x, "BackupPlanId", js.undefined)
+    inline def setBackupPlanIdUndefined: Self = StObject.set(x, "BackupPlanId", js.undefined)
     
-    @scala.inline
-    def setDeletionDate(value: timestamp): Self = StObject.set(x, "DeletionDate", value.asInstanceOf[js.Any])
+    inline def setDeletionDate(value: timestamp): Self = StObject.set(x, "DeletionDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletionDateUndefined: Self = StObject.set(x, "DeletionDate", js.undefined)
+    inline def setDeletionDateUndefined: Self = StObject.set(x, "DeletionDate", js.undefined)
     
-    @scala.inline
-    def setVersionId(value: String): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
+    inline def setVersionId(value: String): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
+    inline def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
   }
 }

@@ -33,8 +33,7 @@ trait CreateEndpointRequest extends StObject {
 }
 object CreateEndpointRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DesiredInferenceUnits: InferenceUnitsInteger,
     EndpointName: ComprehendEndpointName,
     ModelArn: ComprehendModelArn
@@ -43,31 +42,22 @@ object CreateEndpointRequest {
     __obj.asInstanceOf[CreateEndpointRequest]
   }
   
-  @scala.inline
-  implicit class CreateEndpointRequestMutableBuilder[Self <: CreateEndpointRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateEndpointRequest](x: Self) {
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestTokenString): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestTokenString): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
+    inline def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
     
-    @scala.inline
-    def setDesiredInferenceUnits(value: InferenceUnitsInteger): Self = StObject.set(x, "DesiredInferenceUnits", value.asInstanceOf[js.Any])
+    inline def setDesiredInferenceUnits(value: InferenceUnitsInteger): Self = StObject.set(x, "DesiredInferenceUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointName(value: ComprehendEndpointName): Self = StObject.set(x, "EndpointName", value.asInstanceOf[js.Any])
+    inline def setEndpointName(value: ComprehendEndpointName): Self = StObject.set(x, "EndpointName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelArn(value: ComprehendModelArn): Self = StObject.set(x, "ModelArn", value.asInstanceOf[js.Any])
+    inline def setModelArn(value: ComprehendModelArn): Self = StObject.set(x, "ModelArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

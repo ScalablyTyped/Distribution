@@ -20,34 +20,25 @@ trait ReplaceAllTextRequest extends StObject {
 }
 object ReplaceAllTextRequest {
   
-  @scala.inline
-  def apply(): ReplaceAllTextRequest = {
+  inline def apply(): ReplaceAllTextRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReplaceAllTextRequest]
   }
   
-  @scala.inline
-  implicit class ReplaceAllTextRequestMutableBuilder[Self <: ReplaceAllTextRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ReplaceAllTextRequest](x: Self) {
     
-    @scala.inline
-    def setContainsText(value: SubstringMatchCriteria): Self = StObject.set(x, "containsText", value.asInstanceOf[js.Any])
+    inline def setContainsText(value: SubstringMatchCriteria): Self = StObject.set(x, "containsText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainsTextUndefined: Self = StObject.set(x, "containsText", js.undefined)
+    inline def setContainsTextUndefined: Self = StObject.set(x, "containsText", js.undefined)
     
-    @scala.inline
-    def setPageObjectIds(value: js.Array[String]): Self = StObject.set(x, "pageObjectIds", value.asInstanceOf[js.Any])
+    inline def setPageObjectIds(value: js.Array[String]): Self = StObject.set(x, "pageObjectIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageObjectIdsUndefined: Self = StObject.set(x, "pageObjectIds", js.undefined)
+    inline def setPageObjectIdsUndefined: Self = StObject.set(x, "pageObjectIds", js.undefined)
     
-    @scala.inline
-    def setPageObjectIdsVarargs(value: String*): Self = StObject.set(x, "pageObjectIds", js.Array(value :_*))
+    inline def setPageObjectIdsVarargs(value: String*): Self = StObject.set(x, "pageObjectIds", js.Array(value :_*))
     
-    @scala.inline
-    def setReplaceText(value: String): Self = StObject.set(x, "replaceText", value.asInstanceOf[js.Any])
+    inline def setReplaceText(value: String): Self = StObject.set(x, "replaceText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceTextUndefined: Self = StObject.set(x, "replaceText", js.undefined)
+    inline def setReplaceTextUndefined: Self = StObject.set(x, "replaceText", js.undefined)
   }
 }

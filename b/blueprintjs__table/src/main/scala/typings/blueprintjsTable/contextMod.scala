@@ -17,8 +17,7 @@ object contextMod {
     @JSImport("@blueprintjs/table/lib/esm/common/context", "columnInteractionBarContextTypes.enableColumnInteractionBar")
     @js.native
     def enableColumnInteractionBar: js.UndefOr[Validator[Boolean]] = js.native
-    @scala.inline
-    def enableColumnInteractionBar_=(x: js.UndefOr[Validator[Boolean]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enableColumnInteractionBar")(x.asInstanceOf[js.Any])
+    inline def enableColumnInteractionBar_=(x: js.UndefOr[Validator[Boolean]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enableColumnInteractionBar")(x.asInstanceOf[js.Any])
   }
   
   trait IColumnInteractionBarContextTypes extends StObject {
@@ -27,17 +26,14 @@ object contextMod {
   }
   object IColumnInteractionBarContextTypes {
     
-    @scala.inline
-    def apply(enableColumnInteractionBar: Boolean): IColumnInteractionBarContextTypes = {
+    inline def apply(enableColumnInteractionBar: Boolean): IColumnInteractionBarContextTypes = {
       val __obj = js.Dynamic.literal(enableColumnInteractionBar = enableColumnInteractionBar.asInstanceOf[js.Any])
       __obj.asInstanceOf[IColumnInteractionBarContextTypes]
     }
     
-    @scala.inline
-    implicit class IColumnInteractionBarContextTypesMutableBuilder[Self <: IColumnInteractionBarContextTypes] (val x: Self) extends AnyVal {
+    extension [Self <: IColumnInteractionBarContextTypes](x: Self) {
       
-      @scala.inline
-      def setEnableColumnInteractionBar(value: Boolean): Self = StObject.set(x, "enableColumnInteractionBar", value.asInstanceOf[js.Any])
+      inline def setEnableColumnInteractionBar(value: Boolean): Self = StObject.set(x, "enableColumnInteractionBar", value.asInstanceOf[js.Any])
     }
   }
 }

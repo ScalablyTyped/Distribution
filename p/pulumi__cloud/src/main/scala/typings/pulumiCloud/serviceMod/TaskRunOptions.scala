@@ -19,25 +19,19 @@ trait TaskRunOptions extends StObject {
 }
 object TaskRunOptions {
   
-  @scala.inline
-  def apply(): TaskRunOptions = {
+  inline def apply(): TaskRunOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TaskRunOptions]
   }
   
-  @scala.inline
-  implicit class TaskRunOptionsMutableBuilder[Self <: TaskRunOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TaskRunOptions](x: Self) {
     
-    @scala.inline
-    def setEnvironment(value: Record[String, String]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: Record[String, String]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+    inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
-    @scala.inline
-    def setHost(value: HostProperties): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: HostProperties): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
   }
 }

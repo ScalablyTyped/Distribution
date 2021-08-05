@@ -10,16 +10,13 @@ trait IUssdMessageFactory extends StObject {
 }
 object IUssdMessageFactory {
   
-  @scala.inline
-  def apply(createMessage: String => UssdMessage): IUssdMessageFactory = {
+  inline def apply(createMessage: String => UssdMessage): IUssdMessageFactory = {
     val __obj = js.Dynamic.literal(createMessage = js.Any.fromFunction1(createMessage))
     __obj.asInstanceOf[IUssdMessageFactory]
   }
   
-  @scala.inline
-  implicit class IUssdMessageFactoryMutableBuilder[Self <: IUssdMessageFactory] (val x: Self) extends AnyVal {
+  extension [Self <: IUssdMessageFactory](x: Self) {
     
-    @scala.inline
-    def setCreateMessage(value: String => UssdMessage): Self = StObject.set(x, "createMessage", js.Any.fromFunction1(value))
+    inline def setCreateMessage(value: String => UssdMessage): Self = StObject.set(x, "createMessage", js.Any.fromFunction1(value))
   }
 }

@@ -16,8 +16,7 @@ trait MapViewDragEventOrigin
 }
 object MapViewDragEventOrigin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -28,13 +27,10 @@ object MapViewDragEventOrigin {
     __obj.asInstanceOf[MapViewDragEventOrigin]
   }
   
-  @scala.inline
-  implicit class MapViewDragEventOriginMutableBuilder[Self <: MapViewDragEventOrigin] (val x: Self) extends AnyVal {
+  extension [Self <: MapViewDragEventOrigin](x: Self) {
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

@@ -20,25 +20,19 @@ trait AuthPrivateMessageSuccessCallbackResult extends StObject {
 }
 object AuthPrivateMessageSuccessCallbackResult {
   
-  @scala.inline
-  def apply(encryptedData: String, errMsg: String, iv: String, valid: Boolean): AuthPrivateMessageSuccessCallbackResult = {
+  inline def apply(encryptedData: String, errMsg: String, iv: String, valid: Boolean): AuthPrivateMessageSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(encryptedData = encryptedData.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any], iv = iv.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any])
     __obj.asInstanceOf[AuthPrivateMessageSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class AuthPrivateMessageSuccessCallbackResultMutableBuilder[Self <: AuthPrivateMessageSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: AuthPrivateMessageSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setEncryptedData(value: String): Self = StObject.set(x, "encryptedData", value.asInstanceOf[js.Any])
+    inline def setEncryptedData(value: String): Self = StObject.set(x, "encryptedData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIv(value: String): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
+    inline def setIv(value: String): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+    inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
   }
 }

@@ -43,40 +43,29 @@ trait ExpansionProfileFixedVersion
 }
 object ExpansionProfileFixedVersion {
   
-  @scala.inline
-  def apply(mode: code, system: uri, version: String): ExpansionProfileFixedVersion = {
+  inline def apply(mode: code, system: uri, version: String): ExpansionProfileFixedVersion = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], system = system.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpansionProfileFixedVersion]
   }
   
-  @scala.inline
-  implicit class ExpansionProfileFixedVersionMutableBuilder[Self <: ExpansionProfileFixedVersion] (val x: Self) extends AnyVal {
+  extension [Self <: ExpansionProfileFixedVersion](x: Self) {
     
-    @scala.inline
-    def setMode(value: code): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: code): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystem(value: uri): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
+    inline def setSystem(value: uri): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_mode(value: Element): Self = StObject.set(x, "_mode", value.asInstanceOf[js.Any])
+    inline def set_mode(value: Element): Self = StObject.set(x, "_mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_modeUndefined: Self = StObject.set(x, "_mode", js.undefined)
+    inline def set_modeUndefined: Self = StObject.set(x, "_mode", js.undefined)
     
-    @scala.inline
-    def set_system(value: Element): Self = StObject.set(x, "_system", value.asInstanceOf[js.Any])
+    inline def set_system(value: Element): Self = StObject.set(x, "_system", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_systemUndefined: Self = StObject.set(x, "_system", js.undefined)
+    inline def set_systemUndefined: Self = StObject.set(x, "_system", js.undefined)
     
-    @scala.inline
-    def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
+    inline def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
+    inline def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
   }
 }

@@ -29,22 +29,17 @@ trait ASPxClientSpreadsheetCustomCommandExecutedEventArgs
 }
 object ASPxClientSpreadsheetCustomCommandExecutedEventArgs {
   
-  @scala.inline
-  def apply(commandName: String, item: ASPxClientRibbonItem, parameter: String): ASPxClientSpreadsheetCustomCommandExecutedEventArgs = {
+  inline def apply(commandName: String, item: ASPxClientRibbonItem, parameter: String): ASPxClientSpreadsheetCustomCommandExecutedEventArgs = {
     val __obj = js.Dynamic.literal(commandName = commandName.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], parameter = parameter.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientSpreadsheetCustomCommandExecutedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientSpreadsheetCustomCommandExecutedEventArgsMutableBuilder[Self <: ASPxClientSpreadsheetCustomCommandExecutedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientSpreadsheetCustomCommandExecutedEventArgs](x: Self) {
     
-    @scala.inline
-    def setCommandName(value: String): Self = StObject.set(x, "commandName", value.asInstanceOf[js.Any])
+    inline def setCommandName(value: String): Self = StObject.set(x, "commandName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: ASPxClientRibbonItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: ASPxClientRibbonItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameter(value: String): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+    inline def setParameter(value: String): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
   }
 }

@@ -15,25 +15,19 @@ trait MessageContext extends StObject {
 }
 object MessageContext {
   
-  @scala.inline
-  def apply(): MessageContext = {
+  inline def apply(): MessageContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MessageContext]
   }
   
-  @scala.inline
-  implicit class MessageContextMutableBuilder[Self <: MessageContext] (val x: Self) extends AnyVal {
+  extension [Self <: MessageContext](x: Self) {
     
-    @scala.inline
-    def setGlobal(value: MessageContextGlobal): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+    inline def setGlobal(value: MessageContextGlobal): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
+    inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
     
-    @scala.inline
-    def setSkills(value: MessageContextSkills): Self = StObject.set(x, "skills", value.asInstanceOf[js.Any])
+    inline def setSkills(value: MessageContextSkills): Self = StObject.set(x, "skills", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkillsUndefined: Self = StObject.set(x, "skills", js.undefined)
+    inline def setSkillsUndefined: Self = StObject.set(x, "skills", js.undefined)
   }
 }

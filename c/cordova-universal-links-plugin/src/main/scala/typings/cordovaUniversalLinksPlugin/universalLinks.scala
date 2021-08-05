@@ -23,8 +23,7 @@ object universalLinks {
   }
   object EventData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       hash: String,
       host: String,
       params: StringDictionary[String],
@@ -36,26 +35,19 @@ object universalLinks {
       __obj.asInstanceOf[EventData]
     }
     
-    @scala.inline
-    implicit class EventDataMutableBuilder[Self <: EventData] (val x: Self) extends AnyVal {
+    extension [Self <: EventData](x: Self) {
       
-      @scala.inline
-      def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: StringDictionary[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: StringDictionary[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+      inline def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

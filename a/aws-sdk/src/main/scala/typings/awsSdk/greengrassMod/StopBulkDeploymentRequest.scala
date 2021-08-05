@@ -13,16 +13,13 @@ trait StopBulkDeploymentRequest extends StObject {
 }
 object StopBulkDeploymentRequest {
   
-  @scala.inline
-  def apply(BulkDeploymentId: string): StopBulkDeploymentRequest = {
+  inline def apply(BulkDeploymentId: string): StopBulkDeploymentRequest = {
     val __obj = js.Dynamic.literal(BulkDeploymentId = BulkDeploymentId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopBulkDeploymentRequest]
   }
   
-  @scala.inline
-  implicit class StopBulkDeploymentRequestMutableBuilder[Self <: StopBulkDeploymentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopBulkDeploymentRequest](x: Self) {
     
-    @scala.inline
-    def setBulkDeploymentId(value: string): Self = StObject.set(x, "BulkDeploymentId", value.asInstanceOf[js.Any])
+    inline def setBulkDeploymentId(value: string): Self = StObject.set(x, "BulkDeploymentId", value.asInstanceOf[js.Any])
   }
 }

@@ -18,19 +18,15 @@ trait Forks extends StObject {
 }
 object Forks {
   
-  @scala.inline
-  def apply(allowSecrets: Boolean, enabled: Boolean): Forks = {
+  inline def apply(allowSecrets: Boolean, enabled: Boolean): Forks = {
     val __obj = js.Dynamic.literal(allowSecrets = allowSecrets.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[Forks]
   }
   
-  @scala.inline
-  implicit class ForksMutableBuilder[Self <: Forks] (val x: Self) extends AnyVal {
+  extension [Self <: Forks](x: Self) {
     
-    @scala.inline
-    def setAllowSecrets(value: Boolean): Self = StObject.set(x, "allowSecrets", value.asInstanceOf[js.Any])
+    inline def setAllowSecrets(value: Boolean): Self = StObject.set(x, "allowSecrets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }
 }

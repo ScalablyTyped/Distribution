@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(bodyParser: js.Any): js.Function3[
+  inline def apply(bodyParser: js.Any): js.Function3[
     /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
     /* res */ Response_[js.Any], 
     /* next */ NextFunction, 

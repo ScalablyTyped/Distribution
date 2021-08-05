@@ -17,31 +17,23 @@ trait DataFilter extends StObject {
 }
 object DataFilter {
   
-  @scala.inline
-  def apply(): DataFilter = {
+  inline def apply(): DataFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataFilter]
   }
   
-  @scala.inline
-  implicit class DataFilterMutableBuilder[Self <: DataFilter] (val x: Self) extends AnyVal {
+  extension [Self <: DataFilter](x: Self) {
     
-    @scala.inline
-    def setA1Range(value: String): Self = StObject.set(x, "a1Range", value.asInstanceOf[js.Any])
+    inline def setA1Range(value: String): Self = StObject.set(x, "a1Range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setA1RangeUndefined: Self = StObject.set(x, "a1Range", js.undefined)
+    inline def setA1RangeUndefined: Self = StObject.set(x, "a1Range", js.undefined)
     
-    @scala.inline
-    def setDeveloperMetadataLookup(value: DeveloperMetadataLookup): Self = StObject.set(x, "developerMetadataLookup", value.asInstanceOf[js.Any])
+    inline def setDeveloperMetadataLookup(value: DeveloperMetadataLookup): Self = StObject.set(x, "developerMetadataLookup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeveloperMetadataLookupUndefined: Self = StObject.set(x, "developerMetadataLookup", js.undefined)
+    inline def setDeveloperMetadataLookupUndefined: Self = StObject.set(x, "developerMetadataLookup", js.undefined)
     
-    @scala.inline
-    def setGridRange(value: GridRange): Self = StObject.set(x, "gridRange", value.asInstanceOf[js.Any])
+    inline def setGridRange(value: GridRange): Self = StObject.set(x, "gridRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridRangeUndefined: Self = StObject.set(x, "gridRange", js.undefined)
+    inline def setGridRangeUndefined: Self = StObject.set(x, "gridRange", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait DisableImportFindingsForProductRequest extends StObject {
 }
 object DisableImportFindingsForProductRequest {
   
-  @scala.inline
-  def apply(ProductSubscriptionArn: NonEmptyString): DisableImportFindingsForProductRequest = {
+  inline def apply(ProductSubscriptionArn: NonEmptyString): DisableImportFindingsForProductRequest = {
     val __obj = js.Dynamic.literal(ProductSubscriptionArn = ProductSubscriptionArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisableImportFindingsForProductRequest]
   }
   
-  @scala.inline
-  implicit class DisableImportFindingsForProductRequestMutableBuilder[Self <: DisableImportFindingsForProductRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisableImportFindingsForProductRequest](x: Self) {
     
-    @scala.inline
-    def setProductSubscriptionArn(value: NonEmptyString): Self = StObject.set(x, "ProductSubscriptionArn", value.asInstanceOf[js.Any])
+    inline def setProductSubscriptionArn(value: NonEmptyString): Self = StObject.set(x, "ProductSubscriptionArn", value.asInstanceOf[js.Any])
   }
 }

@@ -48,61 +48,43 @@ trait CheckBoxStateChangedEventUIParam extends StObject {
 }
 object CheckBoxStateChangedEventUIParam {
   
-  @scala.inline
-  def apply(): CheckBoxStateChangedEventUIParam = {
+  inline def apply(): CheckBoxStateChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CheckBoxStateChangedEventUIParam]
   }
   
-  @scala.inline
-  implicit class CheckBoxStateChangedEventUIParamMutableBuilder[Self <: CheckBoxStateChangedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: CheckBoxStateChangedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setGrid(value: js.Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+    inline def setGrid(value: js.Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
+    inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
     
-    @scala.inline
-    def setIsHeader(value: Boolean): Self = StObject.set(x, "isHeader", value.asInstanceOf[js.Any])
+    inline def setIsHeader(value: Boolean): Self = StObject.set(x, "isHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsHeaderUndefined: Self = StObject.set(x, "isHeader", js.undefined)
+    inline def setIsHeaderUndefined: Self = StObject.set(x, "isHeader", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setRow(value: String): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: String): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
+    inline def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
+    inline def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
     
-    @scala.inline
-    def setRowKey(value: String): Self = StObject.set(x, "rowKey", value.asInstanceOf[js.Any])
+    inline def setRowKey(value: String): Self = StObject.set(x, "rowKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowKeyUndefined: Self = StObject.set(x, "rowKey", js.undefined)
+    inline def setRowKeyUndefined: Self = StObject.set(x, "rowKey", js.undefined)
     
-    @scala.inline
-    def setRowSelector(value: String): Self = StObject.set(x, "rowSelector", value.asInstanceOf[js.Any])
+    inline def setRowSelector(value: String): Self = StObject.set(x, "rowSelector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowSelectorUndefined: Self = StObject.set(x, "rowSelector", js.undefined)
+    inline def setRowSelectorUndefined: Self = StObject.set(x, "rowSelector", js.undefined)
     
-    @scala.inline
-    def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+    inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

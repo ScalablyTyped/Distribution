@@ -22,40 +22,29 @@ trait Event extends StObject {
 }
 object Event {
   
-  @scala.inline
-  def apply(end: String, id: Double, resourceId: String, start: String, title: String): Event = {
+  inline def apply(end: String, id: Double, resourceId: String, start: String, title: String): Event = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Event]
   }
   
-  @scala.inline
-  implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+  extension [Self <: Event](x: Self) {
     
-    @scala.inline
-    def setBgColor(value: String): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
+    inline def setBgColor(value: String): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBgColorUndefined: Self = StObject.set(x, "bgColor", js.undefined)
+    inline def setBgColorUndefined: Self = StObject.set(x, "bgColor", js.undefined)
     
-    @scala.inline
-    def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRrule(value: String): Self = StObject.set(x, "rrule", value.asInstanceOf[js.Any])
+    inline def setRrule(value: String): Self = StObject.set(x, "rrule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRruleUndefined: Self = StObject.set(x, "rrule", js.undefined)
+    inline def setRruleUndefined: Self = StObject.set(x, "rrule", js.undefined)
     
-    @scala.inline
-    def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: String): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

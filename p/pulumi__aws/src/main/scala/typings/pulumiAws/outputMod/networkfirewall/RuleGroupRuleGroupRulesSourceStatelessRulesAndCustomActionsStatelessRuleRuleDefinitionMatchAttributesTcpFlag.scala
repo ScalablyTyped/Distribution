@@ -20,28 +20,21 @@ trait RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRu
 }
 object RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesTcpFlag {
   
-  @scala.inline
-  def apply(flags: js.Array[String]): RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesTcpFlag = {
+  inline def apply(flags: js.Array[String]): RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesTcpFlag = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesTcpFlag]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesTcpFlagMutableBuilder[Self <: RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesTcpFlag] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesTcpFlag](x: Self) {
     
-    @scala.inline
-    def setFlags(value: js.Array[String]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: js.Array[String]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value :_*))
+    inline def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value :_*))
     
-    @scala.inline
-    def setMasks(value: js.Array[String]): Self = StObject.set(x, "masks", value.asInstanceOf[js.Any])
+    inline def setMasks(value: js.Array[String]): Self = StObject.set(x, "masks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasksUndefined: Self = StObject.set(x, "masks", js.undefined)
+    inline def setMasksUndefined: Self = StObject.set(x, "masks", js.undefined)
     
-    @scala.inline
-    def setMasksVarargs(value: String*): Self = StObject.set(x, "masks", js.Array(value :_*))
+    inline def setMasksVarargs(value: String*): Self = StObject.set(x, "masks", js.Array(value :_*))
   }
 }

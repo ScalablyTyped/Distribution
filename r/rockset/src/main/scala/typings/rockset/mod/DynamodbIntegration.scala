@@ -11,19 +11,15 @@ trait DynamodbIntegration extends StObject {
 }
 object DynamodbIntegration {
   
-  @scala.inline
-  def apply(): DynamodbIntegration = {
+  inline def apply(): DynamodbIntegration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DynamodbIntegration]
   }
   
-  @scala.inline
-  implicit class DynamodbIntegrationMutableBuilder[Self <: DynamodbIntegration] (val x: Self) extends AnyVal {
+  extension [Self <: DynamodbIntegration](x: Self) {
     
-    @scala.inline
-    def setAws_access_key(value: AwsAccessKey): Self = StObject.set(x, "aws_access_key", value.asInstanceOf[js.Any])
+    inline def setAws_access_key(value: AwsAccessKey): Self = StObject.set(x, "aws_access_key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAws_access_keyUndefined: Self = StObject.set(x, "aws_access_key", js.undefined)
+    inline def setAws_access_keyUndefined: Self = StObject.set(x, "aws_access_key", js.undefined)
   }
 }

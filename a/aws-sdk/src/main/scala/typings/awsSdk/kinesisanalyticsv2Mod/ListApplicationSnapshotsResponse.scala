@@ -18,28 +18,21 @@ trait ListApplicationSnapshotsResponse extends StObject {
 }
 object ListApplicationSnapshotsResponse {
   
-  @scala.inline
-  def apply(): ListApplicationSnapshotsResponse = {
+  inline def apply(): ListApplicationSnapshotsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListApplicationSnapshotsResponse]
   }
   
-  @scala.inline
-  implicit class ListApplicationSnapshotsResponseMutableBuilder[Self <: ListApplicationSnapshotsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListApplicationSnapshotsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSnapshotSummaries(value: SnapshotSummaries): Self = StObject.set(x, "SnapshotSummaries", value.asInstanceOf[js.Any])
+    inline def setSnapshotSummaries(value: SnapshotSummaries): Self = StObject.set(x, "SnapshotSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotSummariesUndefined: Self = StObject.set(x, "SnapshotSummaries", js.undefined)
+    inline def setSnapshotSummariesUndefined: Self = StObject.set(x, "SnapshotSummaries", js.undefined)
     
-    @scala.inline
-    def setSnapshotSummariesVarargs(value: SnapshotDetails*): Self = StObject.set(x, "SnapshotSummaries", js.Array(value :_*))
+    inline def setSnapshotSummariesVarargs(value: SnapshotDetails*): Self = StObject.set(x, "SnapshotSummaries", js.Array(value :_*))
   }
 }

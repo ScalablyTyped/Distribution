@@ -147,8 +147,7 @@ trait TypeofSimulate extends StObject {
 }
 object TypeofSimulate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abort: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
     animationEnd: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
     animationIteration: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit,
@@ -222,346 +221,277 @@ object TypeofSimulate {
     __obj.asInstanceOf[TypeofSimulate]
   }
   
-  @scala.inline
-  implicit class TypeofSimulateMutableBuilder[Self <: TypeofSimulate] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofSimulate](x: Self) {
     
-    @scala.inline
-    def setAbort(
+    inline def setAbort(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "abort", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAnimationEnd(
+    inline def setAnimationEnd(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "animationEnd", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAnimationIteration(
+    inline def setAnimationIteration(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "animationIteration", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAnimationStart(
+    inline def setAnimationStart(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "animationStart", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setBlur(
+    inline def setBlur(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "blur", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCanPlay(
+    inline def setCanPlay(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "canPlay", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCanPlayThrough(
+    inline def setCanPlayThrough(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "canPlayThrough", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setChange(
+    inline def setChange(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "change", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setClick(
+    inline def setClick(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "click", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCompositionEnd(
+    inline def setCompositionEnd(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "compositionEnd", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCompositionStart(
+    inline def setCompositionStart(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "compositionStart", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCompositionUpdate(
+    inline def setCompositionUpdate(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "compositionUpdate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setContextMenu(
+    inline def setContextMenu(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "contextMenu", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCopy(
+    inline def setCopy(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "copy", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCut(
+    inline def setCut(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "cut", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDoubleClick(
+    inline def setDoubleClick(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "doubleClick", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDrag(
+    inline def setDrag(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "drag", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDragEnd(
+    inline def setDragEnd(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "dragEnd", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDragEnter(
+    inline def setDragEnter(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "dragEnter", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDragExit(
+    inline def setDragExit(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "dragExit", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDragLeave(
+    inline def setDragLeave(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "dragLeave", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDragOver(
+    inline def setDragOver(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "dragOver", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDragStart(
+    inline def setDragStart(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "dragStart", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDrop(
+    inline def setDrop(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "drop", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDurationChange(
+    inline def setDurationChange(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "durationChange", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEmptied(
+    inline def setEmptied(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "emptied", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEncrypted(
+    inline def setEncrypted(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "encrypted", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEnded(
+    inline def setEnded(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "ended", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setError(
+    inline def setError(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "error", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFocus(
+    inline def setFocus(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "focus", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInput(
+    inline def setInput(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "input", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInvalid(
+    inline def setInvalid(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "invalid", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setKeyDown(
+    inline def setKeyDown(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "keyDown", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setKeyPress(
+    inline def setKeyPress(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "keyPress", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setKeyUp(
+    inline def setKeyUp(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "keyUp", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLoad(
+    inline def setLoad(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLoadStart(
+    inline def setLoadStart(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "loadStart", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLoadedData(
+    inline def setLoadedData(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "loadedData", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLoadedMetadata(
+    inline def setLoadedMetadata(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "loadedMetadata", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMouseDown(
+    inline def setMouseDown(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "mouseDown", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMouseEnter(
+    inline def setMouseEnter(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "mouseEnter", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMouseLeave(
+    inline def setMouseLeave(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "mouseLeave", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMouseMove(
+    inline def setMouseMove(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "mouseMove", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMouseOut(
+    inline def setMouseOut(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "mouseOut", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMouseOver(
+    inline def setMouseOver(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "mouseOver", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMouseUp(
+    inline def setMouseUp(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "mouseUp", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPaste(
+    inline def setPaste(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "paste", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPause(
+    inline def setPause(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "pause", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPlay(
+    inline def setPlay(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "play", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPlaying(
+    inline def setPlaying(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "playing", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setProgress(
+    inline def setProgress(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "progress", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRateChange(
+    inline def setRateChange(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "rateChange", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setScroll(
+    inline def setScroll(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "scroll", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSeeked(
+    inline def setSeeked(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "seeked", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSeeking(
+    inline def setSeeking(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "seeking", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSelect(
+    inline def setSelect(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "select", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStalled(
+    inline def setStalled(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "stalled", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSubmit(
+    inline def setSubmit(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "submit", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSuspend(
+    inline def setSuspend(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "suspend", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTimeUpdate(
+    inline def setTimeUpdate(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "timeUpdate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTouchCancel(
+    inline def setTouchCancel(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "touchCancel", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTouchEnd(
+    inline def setTouchEnd(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "touchEnd", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTouchMove(
+    inline def setTouchMove(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "touchMove", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTouchStart(
+    inline def setTouchStart(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "touchStart", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTransitionEnd(
+    inline def setTransitionEnd(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "transitionEnd", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setVolumeChange(
+    inline def setVolumeChange(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "volumeChange", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWaiting(
+    inline def setWaiting(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "waiting", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWheel(
+    inline def setWheel(
       value: (/* element */ typings.std.Element | (Component[js.Any, js.Object, js.Any]), /* eventData */ js.UndefOr[SyntheticEventData]) => Unit
     ): Self = StObject.set(x, "wheel", js.Any.fromFunction2(value))
   }

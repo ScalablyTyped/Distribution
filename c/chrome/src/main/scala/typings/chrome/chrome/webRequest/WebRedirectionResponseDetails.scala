@@ -13,8 +13,7 @@ trait WebRedirectionResponseDetails
 }
 object WebRedirectionResponseDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     frameId: Double,
     fromCache: Boolean,
     method: String,
@@ -33,10 +32,8 @@ object WebRedirectionResponseDetails {
     __obj.asInstanceOf[WebRedirectionResponseDetails]
   }
   
-  @scala.inline
-  implicit class WebRedirectionResponseDetailsMutableBuilder[Self <: WebRedirectionResponseDetails] (val x: Self) extends AnyVal {
+  extension [Self <: WebRedirectionResponseDetails](x: Self) {
     
-    @scala.inline
-    def setRedirectUrl(value: String): Self = StObject.set(x, "redirectUrl", value.asInstanceOf[js.Any])
+    inline def setRedirectUrl(value: String): Self = StObject.set(x, "redirectUrl", value.asInstanceOf[js.Any])
   }
 }

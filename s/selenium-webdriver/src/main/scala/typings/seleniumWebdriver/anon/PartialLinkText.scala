@@ -13,16 +13,13 @@ trait PartialLinkText
 }
 object PartialLinkText {
   
-  @scala.inline
-  def apply(partialLinkText: String): PartialLinkText = {
+  inline def apply(partialLinkText: String): PartialLinkText = {
     val __obj = js.Dynamic.literal(partialLinkText = partialLinkText.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialLinkText]
   }
   
-  @scala.inline
-  implicit class PartialLinkTextMutableBuilder[Self <: PartialLinkText] (val x: Self) extends AnyVal {
+  extension [Self <: PartialLinkText](x: Self) {
     
-    @scala.inline
-    def setPartialLinkText(value: String): Self = StObject.set(x, "partialLinkText", value.asInstanceOf[js.Any])
+    inline def setPartialLinkText(value: String): Self = StObject.set(x, "partialLinkText", value.asInstanceOf[js.Any])
   }
 }

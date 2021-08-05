@@ -43,8 +43,7 @@ trait AddLayerVersionPermissionRequest extends StObject {
 }
 object AddLayerVersionPermissionRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Action: LayerPermissionAllowedAction,
     LayerName: LayerName,
     Principal: LayerPermissionAllowedPrincipal,
@@ -55,34 +54,24 @@ object AddLayerVersionPermissionRequest {
     __obj.asInstanceOf[AddLayerVersionPermissionRequest]
   }
   
-  @scala.inline
-  implicit class AddLayerVersionPermissionRequestMutableBuilder[Self <: AddLayerVersionPermissionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AddLayerVersionPermissionRequest](x: Self) {
     
-    @scala.inline
-    def setAction(value: LayerPermissionAllowedAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: LayerPermissionAllowedAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerName(value: LayerName): Self = StObject.set(x, "LayerName", value.asInstanceOf[js.Any])
+    inline def setLayerName(value: LayerName): Self = StObject.set(x, "LayerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
+    inline def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationIdUndefined: Self = StObject.set(x, "OrganizationId", js.undefined)
+    inline def setOrganizationIdUndefined: Self = StObject.set(x, "OrganizationId", js.undefined)
     
-    @scala.inline
-    def setPrincipal(value: LayerPermissionAllowedPrincipal): Self = StObject.set(x, "Principal", value.asInstanceOf[js.Any])
+    inline def setPrincipal(value: LayerPermissionAllowedPrincipal): Self = StObject.set(x, "Principal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionId(value: String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
+    inline def setRevisionId(value: String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
+    inline def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
     
-    @scala.inline
-    def setStatementId(value: StatementId): Self = StObject.set(x, "StatementId", value.asInstanceOf[js.Any])
+    inline def setStatementId(value: StatementId): Self = StObject.set(x, "StatementId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionNumber(value: LayerVersionNumber): Self = StObject.set(x, "VersionNumber", value.asInstanceOf[js.Any])
+    inline def setVersionNumber(value: LayerVersionNumber): Self = StObject.set(x, "VersionNumber", value.asInstanceOf[js.Any])
   }
 }

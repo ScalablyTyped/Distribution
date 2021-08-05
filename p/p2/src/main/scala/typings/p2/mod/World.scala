@@ -142,18 +142,15 @@ object World {
   @JSImport("p2", "World.BODY_SLEEPING")
   @js.native
   def BODY_SLEEPING: Double = js.native
-  @scala.inline
-  def BODY_SLEEPING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BODY_SLEEPING")(x.asInstanceOf[js.Any])
+  inline def BODY_SLEEPING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BODY_SLEEPING")(x.asInstanceOf[js.Any])
   
   @JSImport("p2", "World.ISLAND_SLEEPING")
   @js.native
   def ISLAND_SLEEPING: Double = js.native
-  @scala.inline
-  def ISLAND_SLEEPING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ISLAND_SLEEPING")(x.asInstanceOf[js.Any])
+  inline def ISLAND_SLEEPING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ISLAND_SLEEPING")(x.asInstanceOf[js.Any])
   
   @JSImport("p2", "World.NO_SLEEPING")
   @js.native
   def NO_SLEEPING: Double = js.native
-  @scala.inline
-  def NO_SLEEPING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_SLEEPING")(x.asInstanceOf[js.Any])
+  inline def NO_SLEEPING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NO_SLEEPING")(x.asInstanceOf[js.Any])
 }

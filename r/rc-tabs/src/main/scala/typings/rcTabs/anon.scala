@@ -32,17 +32,14 @@ object anon {
   }
   object Direction {
     
-    @scala.inline
-    def apply(direction: left | right | top | bottom): Direction = {
+    inline def apply(direction: left | right | top | bottom): Direction = {
       val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any])
       __obj.asInstanceOf[Direction]
     }
     
-    @scala.inline
-    implicit class DirectionMutableBuilder[Self <: Direction] (val x: Self) extends AnyVal {
+    extension [Self <: Direction](x: Self) {
       
-      @scala.inline
-      def setDirection(value: left | right | top | bottom): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: left | right | top | bottom): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     }
   }
   
@@ -54,23 +51,18 @@ object anon {
   }
   object Event {
     
-    @scala.inline
-    def apply(event: (MouseEvent[Element, NativeMouseEvent]) | KeyboardEvent[Element]): Event = {
+    inline def apply(event: (MouseEvent[Element, NativeMouseEvent]) | KeyboardEvent[Element]): Event = {
       val __obj = js.Dynamic.literal(event = event.asInstanceOf[js.Any])
       __obj.asInstanceOf[Event]
     }
     
-    @scala.inline
-    implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+    extension [Self <: Event](x: Self) {
       
-      @scala.inline
-      def setEvent(value: (MouseEvent[Element, NativeMouseEvent]) | KeyboardEvent[Element]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: (MouseEvent[Element, NativeMouseEvent]) | KeyboardEvent[Element]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     }
   }
   
@@ -86,26 +78,20 @@ object anon {
   }
   object Height {
     
-    @scala.inline
-    def apply(height: Double, left: Double, top: Double, width: Double): Height = {
+    inline def apply(height: Double, left: Double, top: Double, width: Double): Height = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Height]
     }
     
-    @scala.inline
-    implicit class HeightMutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
+    extension [Self <: Height](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
@@ -117,20 +103,16 @@ object anon {
   }
   object Width {
     
-    @scala.inline
-    def apply(height: Double, width: Double): Width = {
+    inline def apply(height: Double, width: Double): Width = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Width]
     }
     
-    @scala.inline
-    implicit class WidthMutableBuilder[Self <: Width] (val x: Self) extends AnyVal {
+    extension [Self <: Width](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   

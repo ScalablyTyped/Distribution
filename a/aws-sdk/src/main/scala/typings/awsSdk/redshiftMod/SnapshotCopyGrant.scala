@@ -23,34 +23,25 @@ trait SnapshotCopyGrant extends StObject {
 }
 object SnapshotCopyGrant {
   
-  @scala.inline
-  def apply(): SnapshotCopyGrant = {
+  inline def apply(): SnapshotCopyGrant = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SnapshotCopyGrant]
   }
   
-  @scala.inline
-  implicit class SnapshotCopyGrantMutableBuilder[Self <: SnapshotCopyGrant] (val x: Self) extends AnyVal {
+  extension [Self <: SnapshotCopyGrant](x: Self) {
     
-    @scala.inline
-    def setKmsKeyId(value: String): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
+    inline def setKmsKeyId(value: String): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
+    inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
-    @scala.inline
-    def setSnapshotCopyGrantName(value: String): Self = StObject.set(x, "SnapshotCopyGrantName", value.asInstanceOf[js.Any])
+    inline def setSnapshotCopyGrantName(value: String): Self = StObject.set(x, "SnapshotCopyGrantName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotCopyGrantNameUndefined: Self = StObject.set(x, "SnapshotCopyGrantName", js.undefined)
+    inline def setSnapshotCopyGrantNameUndefined: Self = StObject.set(x, "SnapshotCopyGrantName", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

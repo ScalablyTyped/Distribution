@@ -67,8 +67,7 @@ object mod {
   @JSImport("sasl-digest-md5", "Mechanism")
   @js.native
   def Mechanism: Instantiable1[/* options */ js.UndefOr[Options], DigestMd5Mechanism] = js.native
-  @scala.inline
-  def Mechanism_=(x: Instantiable1[/* options */ js.UndefOr[Options], DigestMd5Mechanism]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Mechanism")(x.asInstanceOf[js.Any])
+  inline def Mechanism_=(x: Instantiable1[/* options */ js.UndefOr[Options], DigestMd5Mechanism]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Mechanism")(x.asInstanceOf[js.Any])
   
   /* static member */
   object prototype {
@@ -80,14 +79,12 @@ object mod {
     @JSImport("sasl-digest-md5", "prototype.clientFirst")
     @js.native
     def clientFirst: `false` = js.native
-    @scala.inline
-    def clientFirst_=(x: `false`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clientFirst")(x.asInstanceOf[js.Any])
+    inline def clientFirst_=(x: `false`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clientFirst")(x.asInstanceOf[js.Any])
     
     @JSImport("sasl-digest-md5", "prototype.name")
     @js.native
     def name: `DIGEST-MD5` = js.native
-    @scala.inline
-    def name_=(x: `DIGEST-MD5`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
+    inline def name_=(x: `DIGEST-MD5`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
   }
   
   trait Credentials extends StObject {
@@ -108,44 +105,32 @@ object mod {
   }
   object Credentials {
     
-    @scala.inline
-    def apply(host: String, password: String, serviceType: String, username: String): Credentials = {
+    inline def apply(host: String, password: String, serviceType: String, username: String): Credentials = {
       val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any], serviceType = serviceType.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[Credentials]
     }
     
-    @scala.inline
-    implicit class CredentialsMutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
+    extension [Self <: Credentials](x: Self) {
       
-      @scala.inline
-      def setAuthzid(value: String): Self = StObject.set(x, "authzid", value.asInstanceOf[js.Any])
+      inline def setAuthzid(value: String): Self = StObject.set(x, "authzid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthzidUndefined: Self = StObject.set(x, "authzid", js.undefined)
+      inline def setAuthzidUndefined: Self = StObject.set(x, "authzid", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
+      inline def setRealm(value: String): Self = StObject.set(x, "realm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRealmUndefined: Self = StObject.set(x, "realm", js.undefined)
+      inline def setRealmUndefined: Self = StObject.set(x, "realm", js.undefined)
       
-      @scala.inline
-      def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+      inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
+      inline def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
       
-      @scala.inline
-      def setServiceType(value: String): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
+      inline def setServiceType(value: String): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
@@ -162,23 +147,18 @@ object mod {
   }
   object DigestMd5Mechanism {
     
-    @scala.inline
-    def apply(challenge: String => Unit, response: Credentials => String): DigestMd5Mechanism = {
+    inline def apply(challenge: String => Unit, response: Credentials => String): DigestMd5Mechanism = {
       val __obj = js.Dynamic.literal(challenge = js.Any.fromFunction1(challenge), clientFirst = false, name = "DIGEST-MD5", response = js.Any.fromFunction1(response))
       __obj.asInstanceOf[DigestMd5Mechanism]
     }
     
-    @scala.inline
-    implicit class DigestMd5MechanismMutableBuilder[Self <: DigestMd5Mechanism] (val x: Self) extends AnyVal {
+    extension [Self <: DigestMd5Mechanism](x: Self) {
       
-      @scala.inline
-      def setClientFirst(value: `false`): Self = StObject.set(x, "clientFirst", value.asInstanceOf[js.Any])
+      inline def setClientFirst(value: `false`): Self = StObject.set(x, "clientFirst", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: `DIGEST-MD5`): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: `DIGEST-MD5`): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: Credentials => String): Self = StObject.set(x, "response", js.Any.fromFunction1(value))
+      inline def setResponse(value: Credentials => String): Self = StObject.set(x, "response", js.Any.fromFunction1(value))
     }
   }
   
@@ -188,20 +168,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setGenNonce(value: () => Double): Self = StObject.set(x, "genNonce", js.Any.fromFunction0(value))
+      inline def setGenNonce(value: () => Double): Self = StObject.set(x, "genNonce", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGenNonceUndefined: Self = StObject.set(x, "genNonce", js.undefined)
+      inline def setGenNonceUndefined: Self = StObject.set(x, "genNonce", js.undefined)
     }
   }
 }

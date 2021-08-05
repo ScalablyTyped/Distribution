@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(start: Double, distance: Double, value: Double, period: Double): Double = (^.asInstanceOf[js.Dynamic].apply(start.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], value.asInstanceOf[js.Any], period.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def apply(start: Double, distance: Double, value: Double, period: Double): Double = (^.asInstanceOf[js.Dynamic].apply(start.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], value.asInstanceOf[js.Any], period.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   @JSImport("skipped-periodic-values", JSImport.Namespace)
   @js.native

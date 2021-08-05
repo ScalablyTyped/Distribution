@@ -13,16 +13,13 @@ trait LongPressGestureHandlerStateChangeEvent
 }
 object LongPressGestureHandlerStateChangeEvent {
   
-  @scala.inline
-  def apply(nativeEvent: GestureHandlerStateChangeNativeEvent & LongPressGestureHandlerEventExtra): LongPressGestureHandlerStateChangeEvent = {
+  inline def apply(nativeEvent: GestureHandlerStateChangeNativeEvent & LongPressGestureHandlerEventExtra): LongPressGestureHandlerStateChangeEvent = {
     val __obj = js.Dynamic.literal(nativeEvent = nativeEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[LongPressGestureHandlerStateChangeEvent]
   }
   
-  @scala.inline
-  implicit class LongPressGestureHandlerStateChangeEventMutableBuilder[Self <: LongPressGestureHandlerStateChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: LongPressGestureHandlerStateChangeEvent](x: Self) {
     
-    @scala.inline
-    def setNativeEvent(value: GestureHandlerStateChangeNativeEvent & LongPressGestureHandlerEventExtra): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
+    inline def setNativeEvent(value: GestureHandlerStateChangeNativeEvent & LongPressGestureHandlerEventExtra): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
   }
 }

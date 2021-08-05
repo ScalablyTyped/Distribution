@@ -12,20 +12,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OperationAvailability extends StObject
 object OperationAvailability {
   
-  @scala.inline
-  def `0`(): typings.relayRuntime.anon.`0` = {
+  inline def `0`(): typings.relayRuntime.anon.`0` = {
     val __obj = js.Dynamic.literal(status = "missing")
     __obj.asInstanceOf[typings.relayRuntime.anon.`0`]
   }
   
-  @scala.inline
-  def FetchTime(): typings.relayRuntime.anon.FetchTime = {
+  inline def FetchTime(): typings.relayRuntime.anon.FetchTime = {
     val __obj = js.Dynamic.literal(status = "available")
     __obj.asInstanceOf[typings.relayRuntime.anon.FetchTime]
   }
   
-  @scala.inline
-  def Status(): typings.relayRuntime.anon.Status = {
+  inline def Status(): typings.relayRuntime.anon.Status = {
     val __obj = js.Dynamic.literal(status = "stale")
     __obj.asInstanceOf[typings.relayRuntime.anon.Status]
   }

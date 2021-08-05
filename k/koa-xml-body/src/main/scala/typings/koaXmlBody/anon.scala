@@ -28,44 +28,32 @@ object anon {
   }
   object Encoding {
     
-    @scala.inline
-    def apply(): Encoding = {
+    inline def apply(): Encoding = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Encoding]
     }
     
-    @scala.inline
-    implicit class EncodingMutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
+    extension [Self <: Encoding](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+      inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setOnerror(value: (/* err */ Error, /* ctx */ Context) => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction2(value))
+      inline def setOnerror(value: (/* err */ Error, /* ctx */ Context) => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
+      inline def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
       
-      @scala.inline
-      def setXmlOptions(value: ParserOptions): Self = StObject.set(x, "xmlOptions", value.asInstanceOf[js.Any])
+      inline def setXmlOptions(value: ParserOptions): Self = StObject.set(x, "xmlOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXmlOptionsUndefined: Self = StObject.set(x, "xmlOptions", js.undefined)
+      inline def setXmlOptionsUndefined: Self = StObject.set(x, "xmlOptions", js.undefined)
     }
   }
 }

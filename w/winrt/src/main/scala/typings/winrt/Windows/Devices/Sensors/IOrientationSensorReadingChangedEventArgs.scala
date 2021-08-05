@@ -10,16 +10,13 @@ trait IOrientationSensorReadingChangedEventArgs extends StObject {
 }
 object IOrientationSensorReadingChangedEventArgs {
   
-  @scala.inline
-  def apply(reading: OrientationSensorReading): IOrientationSensorReadingChangedEventArgs = {
+  inline def apply(reading: OrientationSensorReading): IOrientationSensorReadingChangedEventArgs = {
     val __obj = js.Dynamic.literal(reading = reading.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOrientationSensorReadingChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class IOrientationSensorReadingChangedEventArgsMutableBuilder[Self <: IOrientationSensorReadingChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IOrientationSensorReadingChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setReading(value: OrientationSensorReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
+    inline def setReading(value: OrientationSensorReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
   }
 }

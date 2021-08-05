@@ -13,19 +13,15 @@ trait Parent extends StObject {
 }
 object Parent {
   
-  @scala.inline
-  def apply(): Parent = {
+  inline def apply(): Parent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Parent]
   }
   
-  @scala.inline
-  implicit class ParentMutableBuilder[Self <: Parent] (val x: Self) extends AnyVal {
+  extension [Self <: Parent](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

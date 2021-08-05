@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "Printer")
 @js.native
-class Printer_ protected () extends NativeObject {
+/* private */ class Printer_ () extends NativeObject {
   
   /**
     * Prints a PDF document using the native printing capabilities of the device. The data has to be

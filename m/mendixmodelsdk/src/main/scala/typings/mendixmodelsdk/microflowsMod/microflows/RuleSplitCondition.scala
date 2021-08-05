@@ -38,8 +38,7 @@ object RuleSplitCondition {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): RuleSplitCondition = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[RuleSplitCondition]
+  inline def create(model: IModel): RuleSplitCondition = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[RuleSplitCondition]
   
   /**
     * Creates and returns a new RuleSplitCondition instance in the SDK and on the server.
@@ -47,20 +46,17 @@ object RuleSplitCondition {
     * of the parent ExclusiveSplit element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createIn(container: ExclusiveSplit): RuleSplitCondition = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[RuleSplitCondition]
+  inline def createIn(container: ExclusiveSplit): RuleSplitCondition = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[RuleSplitCondition]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.RuleSplitCondition.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.RuleSplitCondition.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

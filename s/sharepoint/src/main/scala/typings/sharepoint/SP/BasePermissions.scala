@@ -22,8 +22,7 @@ trait BasePermissions
 }
 object BasePermissions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clear: PermissionKind => Unit,
     clearAll: () => Unit,
     customFromJson: js.Any => Boolean,
@@ -41,25 +40,18 @@ object BasePermissions {
     __obj.asInstanceOf[BasePermissions]
   }
   
-  @scala.inline
-  implicit class BasePermissionsMutableBuilder[Self <: BasePermissions] (val x: Self) extends AnyVal {
+  extension [Self <: BasePermissions](x: Self) {
     
-    @scala.inline
-    def setClear(value: PermissionKind => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
+    inline def setClear(value: PermissionKind => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClearAll(value: () => Unit): Self = StObject.set(x, "clearAll", js.Any.fromFunction0(value))
+    inline def setClearAll(value: () => Unit): Self = StObject.set(x, "clearAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEquals_(value: BasePermissions => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+    inline def setEquals_(value: BasePermissions => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHas(value: PermissionKind => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+    inline def setHas(value: PermissionKind => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHasPermissions(value: (Double, Double) => Boolean): Self = StObject.set(x, "hasPermissions", js.Any.fromFunction2(value))
+    inline def setHasPermissions(value: (Double, Double) => Boolean): Self = StObject.set(x, "hasPermissions", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSet(value: PermissionKind => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+    inline def setSet(value: PermissionKind => Unit): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
   }
 }

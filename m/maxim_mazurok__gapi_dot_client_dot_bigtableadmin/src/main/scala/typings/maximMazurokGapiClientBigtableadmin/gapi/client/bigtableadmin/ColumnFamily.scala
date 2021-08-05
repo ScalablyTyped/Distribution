@@ -14,19 +14,15 @@ trait ColumnFamily extends StObject {
 }
 object ColumnFamily {
   
-  @scala.inline
-  def apply(): ColumnFamily = {
+  inline def apply(): ColumnFamily = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColumnFamily]
   }
   
-  @scala.inline
-  implicit class ColumnFamilyMutableBuilder[Self <: ColumnFamily] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnFamily](x: Self) {
     
-    @scala.inline
-    def setGcRule(value: GcRule): Self = StObject.set(x, "gcRule", value.asInstanceOf[js.Any])
+    inline def setGcRule(value: GcRule): Self = StObject.set(x, "gcRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcRuleUndefined: Self = StObject.set(x, "gcRule", js.undefined)
+    inline def setGcRuleUndefined: Self = StObject.set(x, "gcRule", js.undefined)
   }
 }

@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait URLProtocol extends StObject
 object URLProtocol {
   
-  @scala.inline
-  def ftp: typings.expressValidator.expressValidatorStrings.ftp = "ftp".asInstanceOf[typings.expressValidator.expressValidatorStrings.ftp]
+  inline def ftp: typings.expressValidator.expressValidatorStrings.ftp = "ftp".asInstanceOf[typings.expressValidator.expressValidatorStrings.ftp]
   
-  @scala.inline
-  def http: typings.expressValidator.expressValidatorStrings.http = "http".asInstanceOf[typings.expressValidator.expressValidatorStrings.http]
+  inline def http: typings.expressValidator.expressValidatorStrings.http = "http".asInstanceOf[typings.expressValidator.expressValidatorStrings.http]
   
-  @scala.inline
-  def https: typings.expressValidator.expressValidatorStrings.https = "https".asInstanceOf[typings.expressValidator.expressValidatorStrings.https]
+  inline def https: typings.expressValidator.expressValidatorStrings.https = "https".asInstanceOf[typings.expressValidator.expressValidatorStrings.https]
 }

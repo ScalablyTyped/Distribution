@@ -12,22 +12,17 @@ trait Key extends StObject {
 }
 object Key {
   
-  @scala.inline
-  def apply(expanded: js.Array[typings.react.mod.Key], key: typings.react.mod.Key): Key = {
+  inline def apply(expanded: js.Array[typings.react.mod.Key], key: typings.react.mod.Key): Key = {
     val __obj = js.Dynamic.literal(expanded = expanded.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[Key]
   }
   
-  @scala.inline
-  implicit class KeyMutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
+  extension [Self <: Key](x: Self) {
     
-    @scala.inline
-    def setExpanded(value: js.Array[typings.react.mod.Key]): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+    inline def setExpanded(value: js.Array[typings.react.mod.Key]): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedVarargs(value: typings.react.mod.Key*): Self = StObject.set(x, "expanded", js.Array(value :_*))
+    inline def setExpandedVarargs(value: typings.react.mod.Key*): Self = StObject.set(x, "expanded", js.Array(value :_*))
     
-    @scala.inline
-    def setKey(value: typings.react.mod.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: typings.react.mod.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

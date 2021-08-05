@@ -14,20 +14,16 @@ object anon {
   }
   object Address {
     
-    @scala.inline
-    def apply(address: String, port: Double): Address = {
+    inline def apply(address: String, port: Double): Address = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[Address]
     }
     
-    @scala.inline
-    implicit class AddressMutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
+    extension [Self <: Address](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     }
   }
 }

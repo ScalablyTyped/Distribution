@@ -13,19 +13,15 @@ trait PopupCustomProps
 }
 object PopupCustomProps {
   
-  @scala.inline
-  def apply(): PopupCustomProps = {
+  inline def apply(): PopupCustomProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PopupCustomProps]
   }
   
-  @scala.inline
-  implicit class PopupCustomPropsMutableBuilder[Self <: PopupCustomProps] (val x: Self) extends AnyVal {
+  extension [Self <: PopupCustomProps](x: Self) {
     
-    @scala.inline
-    def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
   }
 }

@@ -11,8 +11,7 @@ trait IPanoramaConnectionMarker
      with IPanoramaMarker
 object IPanoramaConnectionMarker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getConnectedPanorama: () => js.Promise[IPanorama],
     getIconSet: () => js.Promise[IPanoramaMarkerIconSet],
     getPanorama: () => IPanorama,

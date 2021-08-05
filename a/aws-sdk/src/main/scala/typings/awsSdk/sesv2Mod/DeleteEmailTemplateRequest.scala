@@ -13,16 +13,13 @@ trait DeleteEmailTemplateRequest extends StObject {
 }
 object DeleteEmailTemplateRequest {
   
-  @scala.inline
-  def apply(TemplateName: EmailTemplateName): DeleteEmailTemplateRequest = {
+  inline def apply(TemplateName: EmailTemplateName): DeleteEmailTemplateRequest = {
     val __obj = js.Dynamic.literal(TemplateName = TemplateName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteEmailTemplateRequest]
   }
   
-  @scala.inline
-  implicit class DeleteEmailTemplateRequestMutableBuilder[Self <: DeleteEmailTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteEmailTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setTemplateName(value: EmailTemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
+    inline def setTemplateName(value: EmailTemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
   }
 }

@@ -18,22 +18,17 @@ trait UpdateThingRuntimeConfigurationRequest extends StObject {
 }
 object UpdateThingRuntimeConfigurationRequest {
   
-  @scala.inline
-  def apply(ThingName: string): UpdateThingRuntimeConfigurationRequest = {
+  inline def apply(ThingName: string): UpdateThingRuntimeConfigurationRequest = {
     val __obj = js.Dynamic.literal(ThingName = ThingName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateThingRuntimeConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class UpdateThingRuntimeConfigurationRequestMutableBuilder[Self <: UpdateThingRuntimeConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateThingRuntimeConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setTelemetryConfiguration(value: TelemetryConfigurationUpdate): Self = StObject.set(x, "TelemetryConfiguration", value.asInstanceOf[js.Any])
+    inline def setTelemetryConfiguration(value: TelemetryConfigurationUpdate): Self = StObject.set(x, "TelemetryConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTelemetryConfigurationUndefined: Self = StObject.set(x, "TelemetryConfiguration", js.undefined)
+    inline def setTelemetryConfigurationUndefined: Self = StObject.set(x, "TelemetryConfiguration", js.undefined)
     
-    @scala.inline
-    def setThingName(value: string): Self = StObject.set(x, "ThingName", value.asInstanceOf[js.Any])
+    inline def setThingName(value: string): Self = StObject.set(x, "ThingName", value.asInstanceOf[js.Any])
   }
 }

@@ -33,46 +33,33 @@ trait ComparedFace extends StObject {
 }
 object ComparedFace {
   
-  @scala.inline
-  def apply(): ComparedFace = {
+  inline def apply(): ComparedFace = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComparedFace]
   }
   
-  @scala.inline
-  implicit class ComparedFaceMutableBuilder[Self <: ComparedFace] (val x: Self) extends AnyVal {
+  extension [Self <: ComparedFace](x: Self) {
     
-    @scala.inline
-    def setBoundingBox(value: BoundingBox): Self = StObject.set(x, "BoundingBox", value.asInstanceOf[js.Any])
+    inline def setBoundingBox(value: BoundingBox): Self = StObject.set(x, "BoundingBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundingBoxUndefined: Self = StObject.set(x, "BoundingBox", js.undefined)
+    inline def setBoundingBoxUndefined: Self = StObject.set(x, "BoundingBox", js.undefined)
     
-    @scala.inline
-    def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
     
-    @scala.inline
-    def setLandmarks(value: Landmarks): Self = StObject.set(x, "Landmarks", value.asInstanceOf[js.Any])
+    inline def setLandmarks(value: Landmarks): Self = StObject.set(x, "Landmarks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLandmarksUndefined: Self = StObject.set(x, "Landmarks", js.undefined)
+    inline def setLandmarksUndefined: Self = StObject.set(x, "Landmarks", js.undefined)
     
-    @scala.inline
-    def setLandmarksVarargs(value: Landmark*): Self = StObject.set(x, "Landmarks", js.Array(value :_*))
+    inline def setLandmarksVarargs(value: Landmark*): Self = StObject.set(x, "Landmarks", js.Array(value :_*))
     
-    @scala.inline
-    def setPose(value: Pose): Self = StObject.set(x, "Pose", value.asInstanceOf[js.Any])
+    inline def setPose(value: Pose): Self = StObject.set(x, "Pose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoseUndefined: Self = StObject.set(x, "Pose", js.undefined)
+    inline def setPoseUndefined: Self = StObject.set(x, "Pose", js.undefined)
     
-    @scala.inline
-    def setQuality(value: ImageQuality): Self = StObject.set(x, "Quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: ImageQuality): Self = StObject.set(x, "Quality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualityUndefined: Self = StObject.set(x, "Quality", js.undefined)
+    inline def setQualityUndefined: Self = StObject.set(x, "Quality", js.undefined)
   }
 }

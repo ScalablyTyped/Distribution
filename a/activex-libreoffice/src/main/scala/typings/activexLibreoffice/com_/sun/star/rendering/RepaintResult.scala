@@ -17,13 +17,10 @@ object RepaintResult {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def DRAFTED: `2` = 2.asInstanceOf[`2`]
+    inline def DRAFTED: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def FAILED: `3` = 3.asInstanceOf[`3`]
+    inline def FAILED: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def REDRAWN: `1` = 1.asInstanceOf[`1`]
+    inline def REDRAWN: `1` = 1.asInstanceOf[`1`]
   }
 }

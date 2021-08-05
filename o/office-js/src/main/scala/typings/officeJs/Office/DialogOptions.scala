@@ -42,43 +42,31 @@ trait DialogOptions extends StObject {
 }
 object DialogOptions {
   
-  @scala.inline
-  def apply(): DialogOptions = {
+  inline def apply(): DialogOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DialogOptions]
   }
   
-  @scala.inline
-  implicit class DialogOptionsMutableBuilder[Self <: DialogOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DialogOptions](x: Self) {
     
-    @scala.inline
-    def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
+    inline def setAsyncContext(value: js.Any): Self = StObject.set(x, "asyncContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
+    inline def setAsyncContextUndefined: Self = StObject.set(x, "asyncContext", js.undefined)
     
-    @scala.inline
-    def setDisplayInIframe(value: Boolean): Self = StObject.set(x, "displayInIframe", value.asInstanceOf[js.Any])
+    inline def setDisplayInIframe(value: Boolean): Self = StObject.set(x, "displayInIframe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayInIframeUndefined: Self = StObject.set(x, "displayInIframe", js.undefined)
+    inline def setDisplayInIframeUndefined: Self = StObject.set(x, "displayInIframe", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setPromptBeforeOpen(value: Boolean): Self = StObject.set(x, "promptBeforeOpen", value.asInstanceOf[js.Any])
+    inline def setPromptBeforeOpen(value: Boolean): Self = StObject.set(x, "promptBeforeOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromptBeforeOpenUndefined: Self = StObject.set(x, "promptBeforeOpen", js.undefined)
+    inline def setPromptBeforeOpenUndefined: Self = StObject.set(x, "promptBeforeOpen", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait DescribeFargateProfileRequest extends StObject {
 }
 object DescribeFargateProfileRequest {
   
-  @scala.inline
-  def apply(clusterName: String, fargateProfileName: String): DescribeFargateProfileRequest = {
+  inline def apply(clusterName: String, fargateProfileName: String): DescribeFargateProfileRequest = {
     val __obj = js.Dynamic.literal(clusterName = clusterName.asInstanceOf[js.Any], fargateProfileName = fargateProfileName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeFargateProfileRequest]
   }
   
-  @scala.inline
-  implicit class DescribeFargateProfileRequestMutableBuilder[Self <: DescribeFargateProfileRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeFargateProfileRequest](x: Self) {
     
-    @scala.inline
-    def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
+    inline def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFargateProfileName(value: String): Self = StObject.set(x, "fargateProfileName", value.asInstanceOf[js.Any])
+    inline def setFargateProfileName(value: String): Self = StObject.set(x, "fargateProfileName", value.asInstanceOf[js.Any])
   }
 }

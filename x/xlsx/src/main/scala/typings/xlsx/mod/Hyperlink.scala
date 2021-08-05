@@ -14,22 +14,17 @@ trait Hyperlink extends StObject {
 }
 object Hyperlink {
   
-  @scala.inline
-  def apply(Target: String): Hyperlink = {
+  inline def apply(Target: String): Hyperlink = {
     val __obj = js.Dynamic.literal(Target = Target.asInstanceOf[js.Any])
     __obj.asInstanceOf[Hyperlink]
   }
   
-  @scala.inline
-  implicit class HyperlinkMutableBuilder[Self <: Hyperlink] (val x: Self) extends AnyVal {
+  extension [Self <: Hyperlink](x: Self) {
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltip(value: String): Self = StObject.set(x, "Tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: String): Self = StObject.set(x, "Tooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipUndefined: Self = StObject.set(x, "Tooltip", js.undefined)
+    inline def setTooltipUndefined: Self = StObject.set(x, "Tooltip", js.undefined)
   }
 }

@@ -12,17 +12,14 @@ object joinSemilatticeMod {
   }
   object JoinSemilattice {
     
-    @scala.inline
-    def apply[A](join: (A, A) => A): JoinSemilattice[A] = {
+    inline def apply[A](join: (A, A) => A): JoinSemilattice[A] = {
       val __obj = js.Dynamic.literal(join = js.Any.fromFunction2(join))
       __obj.asInstanceOf[JoinSemilattice[A]]
     }
     
-    @scala.inline
-    implicit class JoinSemilatticeMutableBuilder[Self <: JoinSemilattice[?], A] (val x: Self & JoinSemilattice[A]) extends AnyVal {
+    extension [Self <: JoinSemilattice[?], A](x: Self & JoinSemilattice[A]) {
       
-      @scala.inline
-      def setJoin(value: (A, A) => A): Self = StObject.set(x, "join", js.Any.fromFunction2(value))
+      inline def setJoin(value: (A, A) => A): Self = StObject.set(x, "join", js.Any.fromFunction2(value))
     }
   }
 }

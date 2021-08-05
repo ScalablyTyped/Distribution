@@ -44,8 +44,7 @@ trait MoveEventInfo
 }
 object MoveEventInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     dx: Double,
     dy: Double,
@@ -59,19 +58,14 @@ object MoveEventInfo {
     __obj.asInstanceOf[MoveEventInfo]
   }
   
-  @scala.inline
-  implicit class MoveEventInfoMutableBuilder[Self <: MoveEventInfo] (val x: Self) extends AnyVal {
+  extension [Self <: MoveEventInfo](x: Self) {
     
-    @scala.inline
-    def setDx(value: Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
+    inline def setDx(value: Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDy(value: Double): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
+    inline def setDy(value: Double): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMover(value: Graphic): Self = StObject.set(x, "mover", value.asInstanceOf[js.Any])
+    inline def setMover(value: Graphic): Self = StObject.set(x, "mover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `move-start` | move | `move-stop`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `move-start` | move | `move-stop`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

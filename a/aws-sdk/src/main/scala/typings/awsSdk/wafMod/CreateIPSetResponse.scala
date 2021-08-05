@@ -18,25 +18,19 @@ trait CreateIPSetResponse extends StObject {
 }
 object CreateIPSetResponse {
   
-  @scala.inline
-  def apply(): CreateIPSetResponse = {
+  inline def apply(): CreateIPSetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateIPSetResponse]
   }
   
-  @scala.inline
-  implicit class CreateIPSetResponseMutableBuilder[Self <: CreateIPSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateIPSetResponse](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
+    inline def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
     
-    @scala.inline
-    def setIPSet(value: IPSet): Self = StObject.set(x, "IPSet", value.asInstanceOf[js.Any])
+    inline def setIPSet(value: IPSet): Self = StObject.set(x, "IPSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIPSetUndefined: Self = StObject.set(x, "IPSet", js.undefined)
+    inline def setIPSetUndefined: Self = StObject.set(x, "IPSet", js.undefined)
   }
 }

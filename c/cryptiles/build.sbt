@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "cryptiles"
-version := "3.1-dt-20200515Z-3319ec"
+version := "3.1-dt-20200515Z-39b180"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

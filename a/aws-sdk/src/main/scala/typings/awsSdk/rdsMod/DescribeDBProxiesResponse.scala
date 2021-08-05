@@ -18,28 +18,21 @@ trait DescribeDBProxiesResponse extends StObject {
 }
 object DescribeDBProxiesResponse {
   
-  @scala.inline
-  def apply(): DescribeDBProxiesResponse = {
+  inline def apply(): DescribeDBProxiesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeDBProxiesResponse]
   }
   
-  @scala.inline
-  implicit class DescribeDBProxiesResponseMutableBuilder[Self <: DescribeDBProxiesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDBProxiesResponse](x: Self) {
     
-    @scala.inline
-    def setDBProxies(value: DBProxyList): Self = StObject.set(x, "DBProxies", value.asInstanceOf[js.Any])
+    inline def setDBProxies(value: DBProxyList): Self = StObject.set(x, "DBProxies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBProxiesUndefined: Self = StObject.set(x, "DBProxies", js.undefined)
+    inline def setDBProxiesUndefined: Self = StObject.set(x, "DBProxies", js.undefined)
     
-    @scala.inline
-    def setDBProxiesVarargs(value: DBProxy*): Self = StObject.set(x, "DBProxies", js.Array(value :_*))
+    inline def setDBProxiesVarargs(value: DBProxy*): Self = StObject.set(x, "DBProxies", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

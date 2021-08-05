@@ -35,8 +35,7 @@ trait EllipticalArc extends StObject {
 }
 object EllipticalArc {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EndPosition: RealPoint2D,
     IsClockwiseSweep: Boolean,
     IsLargeArc: Boolean,
@@ -49,28 +48,20 @@ object EllipticalArc {
     __obj.asInstanceOf[EllipticalArc]
   }
   
-  @scala.inline
-  implicit class EllipticalArcMutableBuilder[Self <: EllipticalArc] (val x: Self) extends AnyVal {
+  extension [Self <: EllipticalArc](x: Self) {
     
-    @scala.inline
-    def setEndPosition(value: RealPoint2D): Self = StObject.set(x, "EndPosition", value.asInstanceOf[js.Any])
+    inline def setEndPosition(value: RealPoint2D): Self = StObject.set(x, "EndPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsClockwiseSweep(value: Boolean): Self = StObject.set(x, "IsClockwiseSweep", value.asInstanceOf[js.Any])
+    inline def setIsClockwiseSweep(value: Boolean): Self = StObject.set(x, "IsClockwiseSweep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLargeArc(value: Boolean): Self = StObject.set(x, "IsLargeArc", value.asInstanceOf[js.Any])
+    inline def setIsLargeArc(value: Boolean): Self = StObject.set(x, "IsLargeArc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusX(value: Double): Self = StObject.set(x, "RadiusX", value.asInstanceOf[js.Any])
+    inline def setRadiusX(value: Double): Self = StObject.set(x, "RadiusX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusY(value: Double): Self = StObject.set(x, "RadiusY", value.asInstanceOf[js.Any])
+    inline def setRadiusY(value: Double): Self = StObject.set(x, "RadiusY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartPosition(value: RealPoint2D): Self = StObject.set(x, "StartPosition", value.asInstanceOf[js.Any])
+    inline def setStartPosition(value: RealPoint2D): Self = StObject.set(x, "StartPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXAxisRotation(value: Double): Self = StObject.set(x, "XAxisRotation", value.asInstanceOf[js.Any])
+    inline def setXAxisRotation(value: Double): Self = StObject.set(x, "XAxisRotation", value.asInstanceOf[js.Any])
   }
 }

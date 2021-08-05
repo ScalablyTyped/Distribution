@@ -18,25 +18,19 @@ trait ApprovalStateChangedEventMetadata extends StObject {
 }
 object ApprovalStateChangedEventMetadata {
   
-  @scala.inline
-  def apply(): ApprovalStateChangedEventMetadata = {
+  inline def apply(): ApprovalStateChangedEventMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApprovalStateChangedEventMetadata]
   }
   
-  @scala.inline
-  implicit class ApprovalStateChangedEventMetadataMutableBuilder[Self <: ApprovalStateChangedEventMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ApprovalStateChangedEventMetadata](x: Self) {
     
-    @scala.inline
-    def setApprovalStatus(value: ApprovalState): Self = StObject.set(x, "approvalStatus", value.asInstanceOf[js.Any])
+    inline def setApprovalStatus(value: ApprovalState): Self = StObject.set(x, "approvalStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovalStatusUndefined: Self = StObject.set(x, "approvalStatus", js.undefined)
+    inline def setApprovalStatusUndefined: Self = StObject.set(x, "approvalStatus", js.undefined)
     
-    @scala.inline
-    def setRevisionId(value: RevisionId): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
+    inline def setRevisionId(value: RevisionId): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
+    inline def setRevisionIdUndefined: Self = StObject.set(x, "revisionId", js.undefined)
   }
 }

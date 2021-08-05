@@ -12,8 +12,7 @@ trait ParserBlock extends StObject {
 }
 object ParserBlock {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parse: (String, Options, Env, js.Array[Token]) => Unit,
     tokenize: (StateBlock, Double, Double) => Unit
   ): ParserBlock = {
@@ -21,13 +20,10 @@ object ParserBlock {
     __obj.asInstanceOf[ParserBlock]
   }
   
-  @scala.inline
-  implicit class ParserBlockMutableBuilder[Self <: ParserBlock] (val x: Self) extends AnyVal {
+  extension [Self <: ParserBlock](x: Self) {
     
-    @scala.inline
-    def setParse(value: (String, Options, Env, js.Array[Token]) => Unit): Self = StObject.set(x, "parse", js.Any.fromFunction4(value))
+    inline def setParse(value: (String, Options, Env, js.Array[Token]) => Unit): Self = StObject.set(x, "parse", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setTokenize(value: (StateBlock, Double, Double) => Unit): Self = StObject.set(x, "tokenize", js.Any.fromFunction3(value))
+    inline def setTokenize(value: (StateBlock, Double, Double) => Unit): Self = StObject.set(x, "tokenize", js.Any.fromFunction3(value))
   }
 }

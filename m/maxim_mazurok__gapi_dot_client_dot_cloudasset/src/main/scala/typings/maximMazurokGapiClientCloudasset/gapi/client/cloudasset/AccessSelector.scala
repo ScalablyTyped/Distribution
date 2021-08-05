@@ -14,31 +14,23 @@ trait AccessSelector extends StObject {
 }
 object AccessSelector {
   
-  @scala.inline
-  def apply(): AccessSelector = {
+  inline def apply(): AccessSelector = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccessSelector]
   }
   
-  @scala.inline
-  implicit class AccessSelectorMutableBuilder[Self <: AccessSelector] (val x: Self) extends AnyVal {
+  extension [Self <: AccessSelector](x: Self) {
     
-    @scala.inline
-    def setPermissions(value: js.Array[String]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: js.Array[String]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
+    inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    @scala.inline
-    def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: String*): Self = StObject.set(x, "permissions", js.Array(value :_*))
     
-    @scala.inline
-    def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
+    inline def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
+    inline def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
     
-    @scala.inline
-    def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
+    inline def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
   }
 }

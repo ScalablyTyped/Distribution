@@ -18,28 +18,21 @@ trait DetectTextResponse extends StObject {
 }
 object DetectTextResponse {
   
-  @scala.inline
-  def apply(): DetectTextResponse = {
+  inline def apply(): DetectTextResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DetectTextResponse]
   }
   
-  @scala.inline
-  implicit class DetectTextResponseMutableBuilder[Self <: DetectTextResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DetectTextResponse](x: Self) {
     
-    @scala.inline
-    def setTextDetections(value: TextDetectionList): Self = StObject.set(x, "TextDetections", value.asInstanceOf[js.Any])
+    inline def setTextDetections(value: TextDetectionList): Self = StObject.set(x, "TextDetections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextDetectionsUndefined: Self = StObject.set(x, "TextDetections", js.undefined)
+    inline def setTextDetectionsUndefined: Self = StObject.set(x, "TextDetections", js.undefined)
     
-    @scala.inline
-    def setTextDetectionsVarargs(value: TextDetection*): Self = StObject.set(x, "TextDetections", js.Array(value :_*))
+    inline def setTextDetectionsVarargs(value: TextDetection*): Self = StObject.set(x, "TextDetections", js.Array(value :_*))
     
-    @scala.inline
-    def setTextModelVersion(value: String): Self = StObject.set(x, "TextModelVersion", value.asInstanceOf[js.Any])
+    inline def setTextModelVersion(value: String): Self = StObject.set(x, "TextModelVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextModelVersionUndefined: Self = StObject.set(x, "TextModelVersion", js.undefined)
+    inline def setTextModelVersionUndefined: Self = StObject.set(x, "TextModelVersion", js.undefined)
   }
 }

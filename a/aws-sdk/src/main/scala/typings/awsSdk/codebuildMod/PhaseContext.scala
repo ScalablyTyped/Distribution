@@ -18,25 +18,19 @@ trait PhaseContext extends StObject {
 }
 object PhaseContext {
   
-  @scala.inline
-  def apply(): PhaseContext = {
+  inline def apply(): PhaseContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PhaseContext]
   }
   
-  @scala.inline
-  implicit class PhaseContextMutableBuilder[Self <: PhaseContext] (val x: Self) extends AnyVal {
+  extension [Self <: PhaseContext](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
+    inline def setStatusCodeUndefined: Self = StObject.set(x, "statusCode", js.undefined)
   }
 }

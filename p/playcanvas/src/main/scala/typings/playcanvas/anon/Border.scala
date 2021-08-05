@@ -16,22 +16,17 @@ trait Border extends StObject {
 }
 object Border {
   
-  @scala.inline
-  def apply(border: Vec4, pivot: Vec2, rect: Vec4): Border = {
+  inline def apply(border: Vec4, pivot: Vec2, rect: Vec4): Border = {
     val __obj = js.Dynamic.literal(border = border.asInstanceOf[js.Any], pivot = pivot.asInstanceOf[js.Any], rect = rect.asInstanceOf[js.Any])
     __obj.asInstanceOf[Border]
   }
   
-  @scala.inline
-  implicit class BorderMutableBuilder[Self <: Border] (val x: Self) extends AnyVal {
+  extension [Self <: Border](x: Self) {
     
-    @scala.inline
-    def setBorder(value: Vec4): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: Vec4): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPivot(value: Vec2): Self = StObject.set(x, "pivot", value.asInstanceOf[js.Any])
+    inline def setPivot(value: Vec2): Self = StObject.set(x, "pivot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRect(value: Vec4): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
+    inline def setRect(value: Vec4): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
   }
 }

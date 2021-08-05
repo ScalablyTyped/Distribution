@@ -12,8 +12,7 @@ trait AgentBasedDeployPhase
 }
 object AgentBasedDeployPhase {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deploymentInput: AgentDeploymentInput,
     name: String,
     phaseType: DeployPhaseTypes,
@@ -24,10 +23,8 @@ object AgentBasedDeployPhase {
     __obj.asInstanceOf[AgentBasedDeployPhase]
   }
   
-  @scala.inline
-  implicit class AgentBasedDeployPhaseMutableBuilder[Self <: AgentBasedDeployPhase] (val x: Self) extends AnyVal {
+  extension [Self <: AgentBasedDeployPhase](x: Self) {
     
-    @scala.inline
-    def setDeploymentInput(value: AgentDeploymentInput): Self = StObject.set(x, "deploymentInput", value.asInstanceOf[js.Any])
+    inline def setDeploymentInput(value: AgentDeploymentInput): Self = StObject.set(x, "deploymentInput", value.asInstanceOf[js.Any])
   }
 }

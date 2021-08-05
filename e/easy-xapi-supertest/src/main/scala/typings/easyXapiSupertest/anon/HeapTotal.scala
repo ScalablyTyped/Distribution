@@ -14,22 +14,17 @@ trait HeapTotal extends StObject {
 }
 object HeapTotal {
   
-  @scala.inline
-  def apply(heapTotal: Double, heapUsed: Double, rss: Double): HeapTotal = {
+  inline def apply(heapTotal: Double, heapUsed: Double, rss: Double): HeapTotal = {
     val __obj = js.Dynamic.literal(heapTotal = heapTotal.asInstanceOf[js.Any], heapUsed = heapUsed.asInstanceOf[js.Any], rss = rss.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeapTotal]
   }
   
-  @scala.inline
-  implicit class HeapTotalMutableBuilder[Self <: HeapTotal] (val x: Self) extends AnyVal {
+  extension [Self <: HeapTotal](x: Self) {
     
-    @scala.inline
-    def setHeapTotal(value: Double): Self = StObject.set(x, "heapTotal", value.asInstanceOf[js.Any])
+    inline def setHeapTotal(value: Double): Self = StObject.set(x, "heapTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeapUsed(value: Double): Self = StObject.set(x, "heapUsed", value.asInstanceOf[js.Any])
+    inline def setHeapUsed(value: Double): Self = StObject.set(x, "heapUsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRss(value: Double): Self = StObject.set(x, "rss", value.asInstanceOf[js.Any])
+    inline def setRss(value: Double): Self = StObject.set(x, "rss", value.asInstanceOf[js.Any])
   }
 }

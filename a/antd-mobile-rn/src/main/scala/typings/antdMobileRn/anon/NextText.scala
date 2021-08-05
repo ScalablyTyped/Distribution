@@ -12,19 +12,15 @@ trait NextText extends StObject {
 }
 object NextText {
   
-  @scala.inline
-  def apply(nextText: String, prevText: String): NextText = {
+  inline def apply(nextText: String, prevText: String): NextText = {
     val __obj = js.Dynamic.literal(nextText = nextText.asInstanceOf[js.Any], prevText = prevText.asInstanceOf[js.Any])
     __obj.asInstanceOf[NextText]
   }
   
-  @scala.inline
-  implicit class NextTextMutableBuilder[Self <: NextText] (val x: Self) extends AnyVal {
+  extension [Self <: NextText](x: Self) {
     
-    @scala.inline
-    def setNextText(value: String): Self = StObject.set(x, "nextText", value.asInstanceOf[js.Any])
+    inline def setNextText(value: String): Self = StObject.set(x, "nextText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevText(value: String): Self = StObject.set(x, "prevText", value.asInstanceOf[js.Any])
+    inline def setPrevText(value: String): Self = StObject.set(x, "prevText", value.asInstanceOf[js.Any])
   }
 }

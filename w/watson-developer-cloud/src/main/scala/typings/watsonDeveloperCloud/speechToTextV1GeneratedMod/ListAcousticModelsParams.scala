@@ -16,31 +16,23 @@ trait ListAcousticModelsParams extends StObject {
 }
 object ListAcousticModelsParams {
   
-  @scala.inline
-  def apply(): ListAcousticModelsParams = {
+  inline def apply(): ListAcousticModelsParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAcousticModelsParams]
   }
   
-  @scala.inline
-  implicit class ListAcousticModelsParamsMutableBuilder[Self <: ListAcousticModelsParams] (val x: Self) extends AnyVal {
+  extension [Self <: ListAcousticModelsParams](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
   }
 }

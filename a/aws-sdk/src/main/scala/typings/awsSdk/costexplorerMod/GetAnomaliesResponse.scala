@@ -18,25 +18,19 @@ trait GetAnomaliesResponse extends StObject {
 }
 object GetAnomaliesResponse {
   
-  @scala.inline
-  def apply(Anomalies: Anomalies): GetAnomaliesResponse = {
+  inline def apply(Anomalies: Anomalies): GetAnomaliesResponse = {
     val __obj = js.Dynamic.literal(Anomalies = Anomalies.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAnomaliesResponse]
   }
   
-  @scala.inline
-  implicit class GetAnomaliesResponseMutableBuilder[Self <: GetAnomaliesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAnomaliesResponse](x: Self) {
     
-    @scala.inline
-    def setAnomalies(value: Anomalies): Self = StObject.set(x, "Anomalies", value.asInstanceOf[js.Any])
+    inline def setAnomalies(value: Anomalies): Self = StObject.set(x, "Anomalies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnomaliesVarargs(value: Anomaly*): Self = StObject.set(x, "Anomalies", js.Array(value :_*))
+    inline def setAnomaliesVarargs(value: Anomaly*): Self = StObject.set(x, "Anomalies", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
   }
 }

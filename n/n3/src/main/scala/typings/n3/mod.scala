@@ -55,11 +55,9 @@ object mod {
     @JSImport("n3", "BlankNode.nextId")
     @js.native
     def nextId: Double = js.native
-    @scala.inline
-    def nextId_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nextId")(x.asInstanceOf[js.Any])
+    inline def nextId_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nextId")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def subclass(`type`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("subclass")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def subclass(`type`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("subclass")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   object DataFactory {
@@ -68,72 +66,55 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def blankNode(): BlankNode = ^.asInstanceOf[js.Dynamic].applyDynamic("blankNode")().asInstanceOf[BlankNode]
-    @scala.inline
-    def blankNode(value: String): BlankNode = ^.asInstanceOf[js.Dynamic].applyDynamic("blankNode")(value.asInstanceOf[js.Any]).asInstanceOf[BlankNode]
+    inline def blankNode(): BlankNode = ^.asInstanceOf[js.Dynamic].applyDynamic("blankNode")().asInstanceOf[BlankNode]
+    inline def blankNode(value: String): BlankNode = ^.asInstanceOf[js.Dynamic].applyDynamic("blankNode")(value.asInstanceOf[js.Any]).asInstanceOf[BlankNode]
     
-    @scala.inline
-    def defaultGraph(): DefaultGraph = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultGraph")().asInstanceOf[DefaultGraph]
+    inline def defaultGraph(): DefaultGraph = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultGraph")().asInstanceOf[DefaultGraph]
     
-    @scala.inline
-    def literal(value: String): Literal = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[Literal]
-    @scala.inline
-    def literal(value: String, languageOrDatatype: String): Literal = (^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any], languageOrDatatype.asInstanceOf[js.Any])).asInstanceOf[Literal]
-    @scala.inline
-    def literal(value: String, languageOrDatatype: typings.rdfJs.mod.NamedNode[String]): Literal = (^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any], languageOrDatatype.asInstanceOf[js.Any])).asInstanceOf[Literal]
-    @scala.inline
-    def literal(value: Double): Literal = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[Literal]
-    @scala.inline
-    def literal(value: Double, languageOrDatatype: String): Literal = (^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any], languageOrDatatype.asInstanceOf[js.Any])).asInstanceOf[Literal]
-    @scala.inline
-    def literal(value: Double, languageOrDatatype: typings.rdfJs.mod.NamedNode[String]): Literal = (^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any], languageOrDatatype.asInstanceOf[js.Any])).asInstanceOf[Literal]
+    inline def literal(value: String): Literal = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[Literal]
+    inline def literal(value: String, languageOrDatatype: String): Literal = (^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any], languageOrDatatype.asInstanceOf[js.Any])).asInstanceOf[Literal]
+    inline def literal(value: String, languageOrDatatype: typings.rdfJs.mod.NamedNode[String]): Literal = (^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any], languageOrDatatype.asInstanceOf[js.Any])).asInstanceOf[Literal]
+    inline def literal(value: Double): Literal = ^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any]).asInstanceOf[Literal]
+    inline def literal(value: Double, languageOrDatatype: String): Literal = (^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any], languageOrDatatype.asInstanceOf[js.Any])).asInstanceOf[Literal]
+    inline def literal(value: Double, languageOrDatatype: typings.rdfJs.mod.NamedNode[String]): Literal = (^.asInstanceOf[js.Dynamic].applyDynamic("literal")(value.asInstanceOf[js.Any], languageOrDatatype.asInstanceOf[js.Any])).asInstanceOf[Literal]
     
-    @scala.inline
-    def namedNode[Iri /* <: String */](value: Iri): NamedNode[Iri] = ^.asInstanceOf[js.Dynamic].applyDynamic("namedNode")(value.asInstanceOf[js.Any]).asInstanceOf[NamedNode[Iri]]
+    inline def namedNode[Iri /* <: String */](value: Iri): NamedNode[Iri] = ^.asInstanceOf[js.Dynamic].applyDynamic("namedNode")(value.asInstanceOf[js.Any]).asInstanceOf[NamedNode[Iri]]
     
-    @scala.inline
-    def quad(
+    inline def quad(
       subject: typings.rdfJs.mod.QuadSubject,
       predicate: typings.rdfJs.mod.QuadPredicate,
       `object`: typings.rdfJs.mod.QuadObject
     ): Quad = (^.asInstanceOf[js.Dynamic].applyDynamic("quad")(subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Quad]
-    @scala.inline
-    def quad(
+    inline def quad(
       subject: typings.rdfJs.mod.QuadSubject,
       predicate: typings.rdfJs.mod.QuadPredicate,
       `object`: typings.rdfJs.mod.QuadObject,
       graph: typings.rdfJs.mod.QuadGraph
     ): Quad = (^.asInstanceOf[js.Dynamic].applyDynamic("quad")(subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], graph.asInstanceOf[js.Any])).asInstanceOf[Quad]
-    @scala.inline
-    def quad[Q_In /* <: typings.rdfJs.mod.BaseQuad */, Q_Out /* <: BaseQuad */](
+    inline def quad[Q_In /* <: typings.rdfJs.mod.BaseQuad */, Q_Out /* <: BaseQuad */](
       subject: /* import warning: importer.ImportType#apply Failed type conversion: Q_In['subject'] */ js.Any,
       predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q_In['predicate'] */ js.Any,
       `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q_In['object'] */ js.Any
     ): Q_Out = (^.asInstanceOf[js.Dynamic].applyDynamic("quad")(subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Q_Out]
-    @scala.inline
-    def quad[Q_In /* <: typings.rdfJs.mod.BaseQuad */, Q_Out /* <: BaseQuad */](
+    inline def quad[Q_In /* <: typings.rdfJs.mod.BaseQuad */, Q_Out /* <: BaseQuad */](
       subject: /* import warning: importer.ImportType#apply Failed type conversion: Q_In['subject'] */ js.Any,
       predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q_In['predicate'] */ js.Any,
       `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q_In['object'] */ js.Any,
       graph: /* import warning: importer.ImportType#apply Failed type conversion: Q_In['graph'] */ js.Any
     ): Q_Out = (^.asInstanceOf[js.Dynamic].applyDynamic("quad")(subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], graph.asInstanceOf[js.Any])).asInstanceOf[Q_Out]
     
-    @scala.inline
-    def triple(
+    inline def triple(
       subject: typings.rdfJs.mod.QuadSubject,
       predicate: typings.rdfJs.mod.QuadPredicate,
       `object`: typings.rdfJs.mod.QuadObject
     ): Quad = (^.asInstanceOf[js.Dynamic].applyDynamic("triple")(subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Quad]
-    @scala.inline
-    def triple[Q_In /* <: typings.rdfJs.mod.BaseQuad */, Q_Out /* <: BaseQuad */](
+    inline def triple[Q_In /* <: typings.rdfJs.mod.BaseQuad */, Q_Out /* <: BaseQuad */](
       subject: /* import warning: importer.ImportType#apply Failed type conversion: Q_In['subject'] */ js.Any,
       predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q_In['predicate'] */ js.Any,
       `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q_In['object'] */ js.Any
     ): Q_Out = (^.asInstanceOf[js.Dynamic].applyDynamic("triple")(subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Q_Out]
     
-    @scala.inline
-    def variable(value: String): Variable = ^.asInstanceOf[js.Dynamic].applyDynamic("variable")(value.asInstanceOf[js.Any]).asInstanceOf[Variable]
+    inline def variable(value: String): Variable = ^.asInstanceOf[js.Dynamic].applyDynamic("variable")(value.asInstanceOf[js.Any]).asInstanceOf[Variable]
   }
   
   @JSImport("n3", "DefaultGraph")
@@ -155,8 +136,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def subclass(`type`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("subclass")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def subclass(`type`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("subclass")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("n3", "Literal")
@@ -185,8 +165,7 @@ object mod {
     @js.native
     val langStringDatatype: NamedNode[String] = js.native
     
-    @scala.inline
-    def subclass(`type`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("subclass")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def subclass(`type`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("subclass")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("n3", "NamedNode")
@@ -207,8 +186,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def subclass(`type`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("subclass")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def subclass(`type`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("subclass")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("n3", "Parser")
@@ -578,50 +556,33 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def inDefaultGraph(value: typings.rdfJs.mod.Quad): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("inDefaultGraph")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def inDefaultGraph(value: typings.rdfJs.mod.Quad): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("inDefaultGraph")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isBlankNode(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBlankNode")().asInstanceOf[Boolean]
-    @scala.inline
-    def isBlankNode(value: typings.rdfJs.mod.Term): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBlankNode")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isBlankNode(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBlankNode")().asInstanceOf[Boolean]
+    inline def isBlankNode(value: typings.rdfJs.mod.Term): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBlankNode")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isDefaultGraph(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDefaultGraph")().asInstanceOf[Boolean]
-    @scala.inline
-    def isDefaultGraph(value: typings.rdfJs.mod.Term): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDefaultGraph")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isDefaultGraph(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDefaultGraph")().asInstanceOf[Boolean]
+    inline def isDefaultGraph(value: typings.rdfJs.mod.Term): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDefaultGraph")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isLiteral(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLiteral")().asInstanceOf[Boolean]
-    @scala.inline
-    def isLiteral(value: typings.rdfJs.mod.Term): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLiteral")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isLiteral(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLiteral")().asInstanceOf[Boolean]
+    inline def isLiteral(value: typings.rdfJs.mod.Term): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLiteral")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isNamedNode(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNamedNode")().asInstanceOf[Boolean]
-    @scala.inline
-    def isNamedNode(value: typings.rdfJs.mod.Term): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNamedNode")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isNamedNode(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNamedNode")().asInstanceOf[Boolean]
+    inline def isNamedNode(value: typings.rdfJs.mod.Term): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNamedNode")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def isVariable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVariable")().asInstanceOf[Boolean]
-    @scala.inline
-    def isVariable(value: typings.rdfJs.mod.Term): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVariable")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isVariable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVariable")().asInstanceOf[Boolean]
+    inline def isVariable(value: typings.rdfJs.mod.Term): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVariable")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def prefix(iri: String): PrefixedToIri = ^.asInstanceOf[js.Dynamic].applyDynamic("prefix")(iri.asInstanceOf[js.Any]).asInstanceOf[PrefixedToIri]
-    @scala.inline
-    def prefix(iri: String, factory: DataFactory[typings.rdfJs.mod.Quad, typings.rdfJs.mod.Quad]): PrefixedToIri = (^.asInstanceOf[js.Dynamic].applyDynamic("prefix")(iri.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[PrefixedToIri]
-    @scala.inline
-    def prefix(iri: typings.rdfJs.mod.NamedNode[String]): PrefixedToIri = ^.asInstanceOf[js.Dynamic].applyDynamic("prefix")(iri.asInstanceOf[js.Any]).asInstanceOf[PrefixedToIri]
-    @scala.inline
-    def prefix(
+    inline def prefix(iri: String): PrefixedToIri = ^.asInstanceOf[js.Dynamic].applyDynamic("prefix")(iri.asInstanceOf[js.Any]).asInstanceOf[PrefixedToIri]
+    inline def prefix(iri: String, factory: DataFactory[typings.rdfJs.mod.Quad, typings.rdfJs.mod.Quad]): PrefixedToIri = (^.asInstanceOf[js.Dynamic].applyDynamic("prefix")(iri.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[PrefixedToIri]
+    inline def prefix(iri: typings.rdfJs.mod.NamedNode[String]): PrefixedToIri = ^.asInstanceOf[js.Dynamic].applyDynamic("prefix")(iri.asInstanceOf[js.Any]).asInstanceOf[PrefixedToIri]
+    inline def prefix(
       iri: typings.rdfJs.mod.NamedNode[String],
       factory: DataFactory[typings.rdfJs.mod.Quad, typings.rdfJs.mod.Quad]
     ): PrefixedToIri = (^.asInstanceOf[js.Dynamic].applyDynamic("prefix")(iri.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[PrefixedToIri]
     
-    @scala.inline
-    def prefixes(defaultPrefixes: Prefixes[typings.rdfJs.mod.NamedNode[String] | String]): js.Function1[/* prefix */ String, PrefixedToIri] = ^.asInstanceOf[js.Dynamic].applyDynamic("prefixes")(defaultPrefixes.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* prefix */ String, PrefixedToIri]]
-    @scala.inline
-    def prefixes(
+    inline def prefixes(defaultPrefixes: Prefixes[typings.rdfJs.mod.NamedNode[String] | String]): js.Function1[/* prefix */ String, PrefixedToIri] = ^.asInstanceOf[js.Dynamic].applyDynamic("prefixes")(defaultPrefixes.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* prefix */ String, PrefixedToIri]]
+    inline def prefixes(
       defaultPrefixes: Prefixes[typings.rdfJs.mod.NamedNode[String] | String],
       factory: DataFactory[typings.rdfJs.mod.Quad, typings.rdfJs.mod.Quad]
     ): js.Function1[/* prefix */ String, PrefixedToIri] = (^.asInstanceOf[js.Dynamic].applyDynamic("prefixes")(defaultPrefixes.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* prefix */ String, PrefixedToIri]]
@@ -649,8 +610,7 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def subclass(`type`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("subclass")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def subclass(`type`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("subclass")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("n3", "Writer")
@@ -773,8 +733,7 @@ object mod {
   }
   object BlankTriple {
     
-    @scala.inline
-    def apply[Q /* <: typings.rdfJs.mod.BaseQuad */](
+    inline def apply[Q /* <: typings.rdfJs.mod.BaseQuad */](
       `object`: /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any,
       predicate: /* import warning: importer.ImportType#apply Failed type conversion: Q['predicate'] */ js.Any
     ): BlankTriple[Q] = {
@@ -783,14 +742,11 @@ object mod {
       __obj.asInstanceOf[BlankTriple[Q]]
     }
     
-    @scala.inline
-    implicit class BlankTripleMutableBuilder[Self <: BlankTriple[?], Q /* <: typings.rdfJs.mod.BaseQuad */] (val x: Self & BlankTriple[Q]) extends AnyVal {
+    extension [Self <: BlankTriple[?], Q /* <: typings.rdfJs.mod.BaseQuad */](x: Self & BlankTriple[Q]) {
       
-      @scala.inline
-      def setObject(value: /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: /* import warning: importer.ImportType#apply Failed type conversion: Q['object'] */ js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPredicate(
+      inline def setPredicate(
         value: /* import warning: importer.ImportType#apply Failed type conversion: Q['predicate'] */ js.Any
       ): Self = StObject.set(x, "predicate", value.asInstanceOf[js.Any])
     }
@@ -826,38 +782,28 @@ object mod {
   }
   object ParserOptions {
     
-    @scala.inline
-    def apply(): ParserOptions = {
+    inline def apply(): ParserOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParserOptions]
     }
     
-    @scala.inline
-    implicit class ParserOptionsMutableBuilder[Self <: ParserOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParserOptions](x: Self) {
       
-      @scala.inline
-      def setBaseIRI(value: String): Self = StObject.set(x, "baseIRI", value.asInstanceOf[js.Any])
+      inline def setBaseIRI(value: String): Self = StObject.set(x, "baseIRI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseIRIUndefined: Self = StObject.set(x, "baseIRI", js.undefined)
+      inline def setBaseIRIUndefined: Self = StObject.set(x, "baseIRI", js.undefined)
       
-      @scala.inline
-      def setBlankNodePrefix(value: String): Self = StObject.set(x, "blankNodePrefix", value.asInstanceOf[js.Any])
+      inline def setBlankNodePrefix(value: String): Self = StObject.set(x, "blankNodePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlankNodePrefixUndefined: Self = StObject.set(x, "blankNodePrefix", js.undefined)
+      inline def setBlankNodePrefixUndefined: Self = StObject.set(x, "blankNodePrefix", js.undefined)
       
-      @scala.inline
-      def setFactory(value: DataFactory[typings.rdfJs.mod.Quad, typings.rdfJs.mod.Quad]): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
+      inline def setFactory(value: DataFactory[typings.rdfJs.mod.Quad, typings.rdfJs.mod.Quad]): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFactoryUndefined: Self = StObject.set(x, "factory", js.undefined)
+      inline def setFactoryUndefined: Self = StObject.set(x, "factory", js.undefined)
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     }
   }
   
@@ -900,20 +846,16 @@ object mod {
   }
   object StoreOptions {
     
-    @scala.inline
-    def apply(): StoreOptions = {
+    inline def apply(): StoreOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StoreOptions]
     }
     
-    @scala.inline
-    implicit class StoreOptionsMutableBuilder[Self <: StoreOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StoreOptions](x: Self) {
       
-      @scala.inline
-      def setFactory(value: DataFactory[typings.rdfJs.mod.Quad, typings.rdfJs.mod.Quad]): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
+      inline def setFactory(value: DataFactory[typings.rdfJs.mod.Quad, typings.rdfJs.mod.Quad]): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFactoryUndefined: Self = StObject.set(x, "factory", js.undefined)
+      inline def setFactoryUndefined: Self = StObject.set(x, "factory", js.undefined)
     }
   }
   
@@ -936,32 +878,24 @@ object mod {
   }
   object WriterOptions {
     
-    @scala.inline
-    def apply(): WriterOptions = {
+    inline def apply(): WriterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WriterOptions]
     }
     
-    @scala.inline
-    implicit class WriterOptionsMutableBuilder[Self <: WriterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WriterOptions](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setPrefixes(value: Prefixes[typings.rdfJs.mod.NamedNode[String] | String]): Self = StObject.set(x, "prefixes", value.asInstanceOf[js.Any])
+      inline def setPrefixes(value: Prefixes[typings.rdfJs.mod.NamedNode[String] | String]): Self = StObject.set(x, "prefixes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixesUndefined: Self = StObject.set(x, "prefixes", js.undefined)
+      inline def setPrefixesUndefined: Self = StObject.set(x, "prefixes", js.undefined)
     }
   }
   

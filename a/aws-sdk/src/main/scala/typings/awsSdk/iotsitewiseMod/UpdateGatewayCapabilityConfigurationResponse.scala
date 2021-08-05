@@ -18,19 +18,15 @@ trait UpdateGatewayCapabilityConfigurationResponse extends StObject {
 }
 object UpdateGatewayCapabilityConfigurationResponse {
   
-  @scala.inline
-  def apply(capabilityNamespace: CapabilityNamespace, capabilitySyncStatus: CapabilitySyncStatus): UpdateGatewayCapabilityConfigurationResponse = {
+  inline def apply(capabilityNamespace: CapabilityNamespace, capabilitySyncStatus: CapabilitySyncStatus): UpdateGatewayCapabilityConfigurationResponse = {
     val __obj = js.Dynamic.literal(capabilityNamespace = capabilityNamespace.asInstanceOf[js.Any], capabilitySyncStatus = capabilitySyncStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateGatewayCapabilityConfigurationResponse]
   }
   
-  @scala.inline
-  implicit class UpdateGatewayCapabilityConfigurationResponseMutableBuilder[Self <: UpdateGatewayCapabilityConfigurationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateGatewayCapabilityConfigurationResponse](x: Self) {
     
-    @scala.inline
-    def setCapabilityNamespace(value: CapabilityNamespace): Self = StObject.set(x, "capabilityNamespace", value.asInstanceOf[js.Any])
+    inline def setCapabilityNamespace(value: CapabilityNamespace): Self = StObject.set(x, "capabilityNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapabilitySyncStatus(value: CapabilitySyncStatus): Self = StObject.set(x, "capabilitySyncStatus", value.asInstanceOf[js.Any])
+    inline def setCapabilitySyncStatus(value: CapabilitySyncStatus): Self = StObject.set(x, "capabilitySyncStatus", value.asInstanceOf[js.Any])
   }
 }

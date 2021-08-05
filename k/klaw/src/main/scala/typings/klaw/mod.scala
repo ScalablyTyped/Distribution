@@ -15,10 +15,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(root: String): Walker = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[Walker]
-  @scala.inline
-  def apply(root: String, options: Options): Walker = (^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Walker]
+  inline def apply(root: String): Walker = ^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any]).asInstanceOf[Walker]
+  inline def apply(root: String, options: Options): Walker = (^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Walker]
   
   @JSImport("klaw", JSImport.Namespace)
   @js.native
@@ -36,26 +34,19 @@ object mod {
   trait Event extends StObject
   object Event {
     
-    @scala.inline
-    def close: typings.klaw.klawStrings.close = "close".asInstanceOf[typings.klaw.klawStrings.close]
+    inline def close: typings.klaw.klawStrings.close = "close".asInstanceOf[typings.klaw.klawStrings.close]
     
-    @scala.inline
-    def data: typings.klaw.klawStrings.data = "data".asInstanceOf[typings.klaw.klawStrings.data]
+    inline def data: typings.klaw.klawStrings.data = "data".asInstanceOf[typings.klaw.klawStrings.data]
     
-    @scala.inline
-    def end: typings.klaw.klawStrings.end = "end".asInstanceOf[typings.klaw.klawStrings.end]
+    inline def end: typings.klaw.klawStrings.end = "end".asInstanceOf[typings.klaw.klawStrings.end]
     
-    @scala.inline
-    def error: typings.klaw.klawStrings.error = "error".asInstanceOf[typings.klaw.klawStrings.error]
+    inline def error: typings.klaw.klawStrings.error = "error".asInstanceOf[typings.klaw.klawStrings.error]
     
-    @scala.inline
-    def pause: typings.klaw.klawStrings.pause = "pause".asInstanceOf[typings.klaw.klawStrings.pause]
+    inline def pause: typings.klaw.klawStrings.pause = "pause".asInstanceOf[typings.klaw.klawStrings.pause]
     
-    @scala.inline
-    def readable: typings.klaw.klawStrings.readable = "readable".asInstanceOf[typings.klaw.klawStrings.readable]
+    inline def readable: typings.klaw.klawStrings.readable = "readable".asInstanceOf[typings.klaw.klawStrings.readable]
     
-    @scala.inline
-    def resume: typings.klaw.klawStrings.resume = "resume".asInstanceOf[typings.klaw.klawStrings.resume]
+    inline def resume: typings.klaw.klawStrings.resume = "resume".asInstanceOf[typings.klaw.klawStrings.resume]
   }
   
   trait Item extends StObject {
@@ -66,20 +57,16 @@ object mod {
   }
   object Item {
     
-    @scala.inline
-    def apply(path: String, stats: Stats): Item = {
+    inline def apply(path: String, stats: Stats): Item = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
       __obj.asInstanceOf[Item]
     }
     
-    @scala.inline
-    implicit class ItemMutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
+    extension [Self <: Item](x: Self) {
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStats(value: Stats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+      inline def setStats(value: Stats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     }
   }
   
@@ -102,50 +89,36 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDepthLimit(value: Double): Self = StObject.set(x, "depthLimit", value.asInstanceOf[js.Any])
+      inline def setDepthLimit(value: Double): Self = StObject.set(x, "depthLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDepthLimitUndefined: Self = StObject.set(x, "depthLimit", js.undefined)
+      inline def setDepthLimitUndefined: Self = StObject.set(x, "depthLimit", js.undefined)
       
-      @scala.inline
-      def setFilter(value: /* path */ String => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: /* path */ String => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setFs(value: js.Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+      inline def setFs(value: js.Any): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
+      inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
       
-      @scala.inline
-      def setPathSorter(value: (/* pathA */ String, /* pathB */ String) => Double): Self = StObject.set(x, "pathSorter", js.Any.fromFunction2(value))
+      inline def setPathSorter(value: (/* pathA */ String, /* pathB */ String) => Double): Self = StObject.set(x, "pathSorter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPathSorterUndefined: Self = StObject.set(x, "pathSorter", js.undefined)
+      inline def setPathSorterUndefined: Self = StObject.set(x, "pathSorter", js.undefined)
       
-      @scala.inline
-      def setPreserveSymlinks(value: Boolean): Self = StObject.set(x, "preserveSymlinks", value.asInstanceOf[js.Any])
+      inline def setPreserveSymlinks(value: Boolean): Self = StObject.set(x, "preserveSymlinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveSymlinksUndefined: Self = StObject.set(x, "preserveSymlinks", js.undefined)
+      inline def setPreserveSymlinksUndefined: Self = StObject.set(x, "preserveSymlinks", js.undefined)
       
-      @scala.inline
-      def setQueueMethod(value: QueueMethod): Self = StObject.set(x, "queueMethod", value.asInstanceOf[js.Any])
+      inline def setQueueMethod(value: QueueMethod): Self = StObject.set(x, "queueMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueueMethodUndefined: Self = StObject.set(x, "queueMethod", js.undefined)
+      inline def setQueueMethodUndefined: Self = StObject.set(x, "queueMethod", js.undefined)
     }
   }
   
@@ -156,11 +129,9 @@ object mod {
   trait QueueMethod extends StObject
   object QueueMethod {
     
-    @scala.inline
-    def pop: typings.klaw.klawStrings.pop = "pop".asInstanceOf[typings.klaw.klawStrings.pop]
+    inline def pop: typings.klaw.klawStrings.pop = "pop".asInstanceOf[typings.klaw.klawStrings.pop]
     
-    @scala.inline
-    def shift: typings.klaw.klawStrings.shift = "shift".asInstanceOf[typings.klaw.klawStrings.shift]
+    inline def shift: typings.klaw.klawStrings.shift = "shift".asInstanceOf[typings.klaw.klawStrings.shift]
   }
   
   @js.native

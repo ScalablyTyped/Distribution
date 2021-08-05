@@ -10,6 +10,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def chunkArray[T](original: js.Array[T], limit: Double): js.Array[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("chunkArray")(original.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[T]]]
+  inline def chunkArray[T](original: js.Array[T], limit: Double): js.Array[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("chunkArray")(original.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[T]]]
 }

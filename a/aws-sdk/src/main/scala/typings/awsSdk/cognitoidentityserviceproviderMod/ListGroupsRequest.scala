@@ -23,28 +23,21 @@ trait ListGroupsRequest extends StObject {
 }
 object ListGroupsRequest {
   
-  @scala.inline
-  def apply(UserPoolId: UserPoolIdType): ListGroupsRequest = {
+  inline def apply(UserPoolId: UserPoolIdType): ListGroupsRequest = {
     val __obj = js.Dynamic.literal(UserPoolId = UserPoolId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListGroupsRequest]
   }
   
-  @scala.inline
-  implicit class ListGroupsRequestMutableBuilder[Self <: ListGroupsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListGroupsRequest](x: Self) {
     
-    @scala.inline
-    def setLimit(value: QueryLimitType): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: QueryLimitType): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationKey): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationKey): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
+    inline def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
   }
 }

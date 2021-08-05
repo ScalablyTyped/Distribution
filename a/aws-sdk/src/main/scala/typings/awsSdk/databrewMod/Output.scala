@@ -33,43 +33,31 @@ trait Output extends StObject {
 }
 object Output {
   
-  @scala.inline
-  def apply(Location: S3Location): Output = {
+  inline def apply(Location: S3Location): Output = {
     val __obj = js.Dynamic.literal(Location = Location.asInstanceOf[js.Any])
     __obj.asInstanceOf[Output]
   }
   
-  @scala.inline
-  implicit class OutputMutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
+  extension [Self <: Output](x: Self) {
     
-    @scala.inline
-    def setCompressionFormat(value: CompressionFormat): Self = StObject.set(x, "CompressionFormat", value.asInstanceOf[js.Any])
+    inline def setCompressionFormat(value: CompressionFormat): Self = StObject.set(x, "CompressionFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompressionFormatUndefined: Self = StObject.set(x, "CompressionFormat", js.undefined)
+    inline def setCompressionFormatUndefined: Self = StObject.set(x, "CompressionFormat", js.undefined)
     
-    @scala.inline
-    def setFormat(value: OutputFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: OutputFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
     
-    @scala.inline
-    def setLocation(value: S3Location): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: S3Location): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverwrite(value: OverwriteOutput): Self = StObject.set(x, "Overwrite", value.asInstanceOf[js.Any])
+    inline def setOverwrite(value: OverwriteOutput): Self = StObject.set(x, "Overwrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverwriteUndefined: Self = StObject.set(x, "Overwrite", js.undefined)
+    inline def setOverwriteUndefined: Self = StObject.set(x, "Overwrite", js.undefined)
     
-    @scala.inline
-    def setPartitionColumns(value: ColumnNameList): Self = StObject.set(x, "PartitionColumns", value.asInstanceOf[js.Any])
+    inline def setPartitionColumns(value: ColumnNameList): Self = StObject.set(x, "PartitionColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionColumnsUndefined: Self = StObject.set(x, "PartitionColumns", js.undefined)
+    inline def setPartitionColumnsUndefined: Self = StObject.set(x, "PartitionColumns", js.undefined)
     
-    @scala.inline
-    def setPartitionColumnsVarargs(value: ColumnName*): Self = StObject.set(x, "PartitionColumns", js.Array(value :_*))
+    inline def setPartitionColumnsVarargs(value: ColumnName*): Self = StObject.set(x, "PartitionColumns", js.Array(value :_*))
   }
 }

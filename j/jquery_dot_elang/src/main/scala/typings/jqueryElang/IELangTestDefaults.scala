@@ -41,8 +41,7 @@ trait IELangTestDefaults
 }
 object IELangTestDefaults {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contentCSS: String,
     contentInnerCSS: String,
     contentInnerHtml: String,
@@ -77,52 +76,36 @@ object IELangTestDefaults {
     __obj.asInstanceOf[IELangTestDefaults]
   }
   
-  @scala.inline
-  implicit class IELangTestDefaultsMutableBuilder[Self <: IELangTestDefaults] (val x: Self) extends AnyVal {
+  extension [Self <: IELangTestDefaults](x: Self) {
     
-    @scala.inline
-    def setFormHtml(value: String): Self = StObject.set(x, "formHtml", value.asInstanceOf[js.Any])
+    inline def setFormHtml(value: String): Self = StObject.set(x, "formHtml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRdoOrderedLabel(value: String): Self = StObject.set(x, "rdoOrderedLabel", value.asInstanceOf[js.Any])
+    inline def setRdoOrderedLabel(value: String): Self = StObject.set(x, "rdoOrderedLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRdoOrderedTooltip(value: String): Self = StObject.set(x, "rdoOrderedTooltip", value.asInstanceOf[js.Any])
+    inline def setRdoOrderedTooltip(value: String): Self = StObject.set(x, "rdoOrderedTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRdoRandomlyLabel(value: String): Self = StObject.set(x, "rdoRandomlyLabel", value.asInstanceOf[js.Any])
+    inline def setRdoRandomlyLabel(value: String): Self = StObject.set(x, "rdoRandomlyLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRdoRandomlyTooltip(value: String): Self = StObject.set(x, "rdoRandomlyTooltip", value.asInstanceOf[js.Any])
+    inline def setRdoRandomlyTooltip(value: String): Self = StObject.set(x, "rdoRandomlyTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRdoSelectedLabel(value: String): Self = StObject.set(x, "rdoSelectedLabel", value.asInstanceOf[js.Any])
+    inline def setRdoSelectedLabel(value: String): Self = StObject.set(x, "rdoSelectedLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRdoSelectedTooltip(value: String): Self = StObject.set(x, "rdoSelectedTooltip", value.asInstanceOf[js.Any])
+    inline def setRdoSelectedTooltip(value: String): Self = StObject.set(x, "rdoSelectedTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRdoTypedLabel(value: String): Self = StObject.set(x, "rdoTypedLabel", value.asInstanceOf[js.Any])
+    inline def setRdoTypedLabel(value: String): Self = StObject.set(x, "rdoTypedLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRdoTypedTooltip(value: String): Self = StObject.set(x, "rdoTypedTooltip", value.asInstanceOf[js.Any])
+    inline def setRdoTypedTooltip(value: String): Self = StObject.set(x, "rdoTypedTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRdoVoicedLabel(value: String): Self = StObject.set(x, "rdoVoicedLabel", value.asInstanceOf[js.Any])
+    inline def setRdoVoicedLabel(value: String): Self = StObject.set(x, "rdoVoicedLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRdoVoicedTooltip(value: String): Self = StObject.set(x, "rdoVoicedTooltip", value.asInstanceOf[js.Any])
+    inline def setRdoVoicedTooltip(value: String): Self = StObject.set(x, "rdoVoicedTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRdoWrittedLabel(value: String): Self = StObject.set(x, "rdoWrittedLabel", value.asInstanceOf[js.Any])
+    inline def setRdoWrittedLabel(value: String): Self = StObject.set(x, "rdoWrittedLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRdoWrittedTooltip(value: String): Self = StObject.set(x, "rdoWrittedTooltip", value.asInstanceOf[js.Any])
+    inline def setRdoWrittedTooltip(value: String): Self = StObject.set(x, "rdoWrittedTooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartButtonLabel(value: String): Self = StObject.set(x, "startButtonLabel", value.asInstanceOf[js.Any])
+    inline def setStartButtonLabel(value: String): Self = StObject.set(x, "startButtonLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopButtonLabel(value: String): Self = StObject.set(x, "stopButtonLabel", value.asInstanceOf[js.Any])
+    inline def setStopButtonLabel(value: String): Self = StObject.set(x, "stopButtonLabel", value.asInstanceOf[js.Any])
   }
 }

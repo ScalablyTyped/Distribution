@@ -14,15 +14,12 @@ object FixedOffsetZone {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def instance(offset: Double): FixedOffsetZone = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")(offset.asInstanceOf[js.Any]).asInstanceOf[FixedOffsetZone]
+  inline def instance(offset: Double): FixedOffsetZone = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")(offset.asInstanceOf[js.Any]).asInstanceOf[FixedOffsetZone]
   
-  @scala.inline
-  def parseSpecifier(s: String): FixedOffsetZone = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSpecifier")(s.asInstanceOf[js.Any]).asInstanceOf[FixedOffsetZone]
+  inline def parseSpecifier(s: String): FixedOffsetZone = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSpecifier")(s.asInstanceOf[js.Any]).asInstanceOf[FixedOffsetZone]
   
   @JSImport("luxon", "FixedOffsetZone.utcInstance")
   @js.native
   def utcInstance: FixedOffsetZone = js.native
-  @scala.inline
-  def utcInstance_=(x: FixedOffsetZone): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("utcInstance")(x.asInstanceOf[js.Any])
+  inline def utcInstance_=(x: FixedOffsetZone): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("utcInstance")(x.asInstanceOf[js.Any])
 }

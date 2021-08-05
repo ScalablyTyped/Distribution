@@ -10,8 +10,6 @@ object notFocusedMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Unit]
-  @scala.inline
-  def default(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Unit]
+  inline def default(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

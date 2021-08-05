@@ -50,17 +50,14 @@ object typesInternalErrorExceptionMod {
   }
   object InternalErrorException {
     
-    @scala.inline
-    def apply(): InternalErrorException = {
+    inline def apply(): InternalErrorException = {
       val __obj = js.Dynamic.literal(name = "InternalErrorException")
       __obj.asInstanceOf[InternalErrorException]
     }
     
-    @scala.inline
-    implicit class InternalErrorExceptionMutableBuilder[Self <: InternalErrorException] (val x: Self) extends AnyVal {
+    extension [Self <: InternalErrorException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.InternalErrorException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -75,20 +72,16 @@ object typesInternalErrorExceptionMod {
   }
   object InternalErrorExceptionDetails {
     
-    @scala.inline
-    def apply(): InternalErrorExceptionDetails = {
+    inline def apply(): InternalErrorExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InternalErrorExceptionDetails]
     }
     
-    @scala.inline
-    implicit class InternalErrorExceptionDetailsMutableBuilder[Self <: InternalErrorExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: InternalErrorExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

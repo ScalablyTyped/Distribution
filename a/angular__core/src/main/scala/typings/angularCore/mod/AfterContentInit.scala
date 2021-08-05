@@ -16,16 +16,13 @@ trait AfterContentInit extends StObject {
 }
 object AfterContentInit {
   
-  @scala.inline
-  def apply(ngAfterContentInit: () => Unit): AfterContentInit = {
+  inline def apply(ngAfterContentInit: () => Unit): AfterContentInit = {
     val __obj = js.Dynamic.literal(ngAfterContentInit = js.Any.fromFunction0(ngAfterContentInit))
     __obj.asInstanceOf[AfterContentInit]
   }
   
-  @scala.inline
-  implicit class AfterContentInitMutableBuilder[Self <: AfterContentInit] (val x: Self) extends AnyVal {
+  extension [Self <: AfterContentInit](x: Self) {
     
-    @scala.inline
-    def setNgAfterContentInit(value: () => Unit): Self = StObject.set(x, "ngAfterContentInit", js.Any.fromFunction0(value))
+    inline def setNgAfterContentInit(value: () => Unit): Self = StObject.set(x, "ngAfterContentInit", js.Any.fromFunction0(value))
   }
 }

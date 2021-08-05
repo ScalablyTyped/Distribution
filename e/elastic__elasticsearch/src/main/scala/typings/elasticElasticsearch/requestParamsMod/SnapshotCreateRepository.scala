@@ -20,37 +20,27 @@ trait SnapshotCreateRepository[T]
 }
 object SnapshotCreateRepository {
   
-  @scala.inline
-  def apply[T](body: T, repository: String): SnapshotCreateRepository[T] = {
+  inline def apply[T](body: T, repository: String): SnapshotCreateRepository[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], repository = repository.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnapshotCreateRepository[T]]
   }
   
-  @scala.inline
-  implicit class SnapshotCreateRepositoryMutableBuilder[Self <: SnapshotCreateRepository[?], T] (val x: Self & SnapshotCreateRepository[T]) extends AnyVal {
+  extension [Self <: SnapshotCreateRepository[?], T](x: Self & SnapshotCreateRepository[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaster_timeout(value: String): Self = StObject.set(x, "master_timeout", value.asInstanceOf[js.Any])
+    inline def setMaster_timeout(value: String): Self = StObject.set(x, "master_timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaster_timeoutUndefined: Self = StObject.set(x, "master_timeout", js.undefined)
+    inline def setMaster_timeoutUndefined: Self = StObject.set(x, "master_timeout", js.undefined)
     
-    @scala.inline
-    def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setVerify(value: Boolean): Self = StObject.set(x, "verify", value.asInstanceOf[js.Any])
+    inline def setVerify(value: Boolean): Self = StObject.set(x, "verify", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerifyUndefined: Self = StObject.set(x, "verify", js.undefined)
+    inline def setVerifyUndefined: Self = StObject.set(x, "verify", js.undefined)
   }
 }

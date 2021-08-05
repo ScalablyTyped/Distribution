@@ -15,19 +15,15 @@ trait TypeofLinearGauge extends StObject {
 }
 object TypeofLinearGauge {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: LinearGauge): TypeofLinearGauge = {
+  inline def apply(Locale: js.Any, fn: LinearGauge): TypeofLinearGauge = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofLinearGauge]
   }
   
-  @scala.inline
-  implicit class TypeofLinearGaugeMutableBuilder[Self <: TypeofLinearGauge] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofLinearGauge](x: Self) {
     
-    @scala.inline
-    def setFn(value: LinearGauge): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: LinearGauge): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

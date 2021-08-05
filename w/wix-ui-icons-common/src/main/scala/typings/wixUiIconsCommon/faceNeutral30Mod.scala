@@ -22,20 +22,16 @@ object faceNeutral30Mod extends Shortcut {
   }
   object FaceNeutral30Props {
     
-    @scala.inline
-    def apply(): FaceNeutral30Props = {
+    inline def apply(): FaceNeutral30Props = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FaceNeutral30Props]
     }
     
-    @scala.inline
-    implicit class FaceNeutral30PropsMutableBuilder[Self <: FaceNeutral30Props] (val x: Self) extends AnyVal {
+    extension [Self <: FaceNeutral30Props](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

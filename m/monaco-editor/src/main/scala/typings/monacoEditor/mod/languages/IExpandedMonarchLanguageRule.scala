@@ -24,34 +24,25 @@ trait IExpandedMonarchLanguageRule extends StObject {
 }
 object IExpandedMonarchLanguageRule {
   
-  @scala.inline
-  def apply(): IExpandedMonarchLanguageRule = {
+  inline def apply(): IExpandedMonarchLanguageRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IExpandedMonarchLanguageRule]
   }
   
-  @scala.inline
-  implicit class IExpandedMonarchLanguageRuleMutableBuilder[Self <: IExpandedMonarchLanguageRule] (val x: Self) extends AnyVal {
+  extension [Self <: IExpandedMonarchLanguageRule](x: Self) {
     
-    @scala.inline
-    def setAction(value: IMonarchLanguageAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: IMonarchLanguageAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setActionVarargs(value: (IExpandedMonarchLanguageAction | IShortMonarchLanguageAction)*): Self = StObject.set(x, "action", js.Array(value :_*))
+    inline def setActionVarargs(value: (IExpandedMonarchLanguageAction | IShortMonarchLanguageAction)*): Self = StObject.set(x, "action", js.Array(value :_*))
     
-    @scala.inline
-    def setInclude(value: String): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    inline def setInclude(value: String): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+    inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
     
-    @scala.inline
-    def setRegex(value: String | RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
+    inline def setRegex(value: String | RegExp): Self = StObject.set(x, "regex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
+    inline def setRegexUndefined: Self = StObject.set(x, "regex", js.undefined)
   }
 }

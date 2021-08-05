@@ -18,28 +18,21 @@ trait ParameterMapEntry extends StObject {
 }
 object ParameterMapEntry {
   
-  @scala.inline
-  def apply(): ParameterMapEntry = {
+  inline def apply(): ParameterMapEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParameterMapEntry]
   }
   
-  @scala.inline
-  implicit class ParameterMapEntryMutableBuilder[Self <: ParameterMapEntry] (val x: Self) extends AnyVal {
+  extension [Self <: ParameterMapEntry](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
-    @scala.inline
-    def setValues(value: StringList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: StringList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

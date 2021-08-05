@@ -19,46 +19,33 @@ trait PartialUrlOptions extends StObject {
 }
 object PartialUrlOptions {
   
-  @scala.inline
-  def apply(): PartialUrlOptions = {
+  inline def apply(): PartialUrlOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialUrlOptions]
   }
   
-  @scala.inline
-  implicit class PartialUrlOptionsMutableBuilder[Self <: PartialUrlOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartialUrlOptions](x: Self) {
     
-    @scala.inline
-    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
-    @scala.inline
-    def setDomain_prefix(value: String): Self = StObject.set(x, "domain_prefix", value.asInstanceOf[js.Any])
+    inline def setDomain_prefix(value: String): Self = StObject.set(x, "domain_prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomain_prefixUndefined: Self = StObject.set(x, "domain_prefix", js.undefined)
+    inline def setDomain_prefixUndefined: Self = StObject.set(x, "domain_prefix", js.undefined)
     
-    @scala.inline
-    def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+    inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+    inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    @scala.inline
-    def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+    inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
   }
 }

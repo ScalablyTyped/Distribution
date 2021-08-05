@@ -14,27 +14,22 @@ trait GridTemplateAreasProps extends StObject {
 }
 object GridTemplateAreasProps {
   
-  @scala.inline
-  def apply(): GridTemplateAreasProps = {
+  inline def apply(): GridTemplateAreasProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridTemplateAreasProps]
   }
   
-  @scala.inline
-  implicit class GridTemplateAreasPropsMutableBuilder[Self <: GridTemplateAreasProps] (val x: Self) extends AnyVal {
+  extension [Self <: GridTemplateAreasProps](x: Self) {
     
-    @scala.inline
-    def setGridTemplateAreas(
+    inline def setGridTemplateAreas(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateAreas */ js.Any
         ]
     ): Self = StObject.set(x, "gridTemplateAreas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridTemplateAreasUndefined: Self = StObject.set(x, "gridTemplateAreas", js.undefined)
+    inline def setGridTemplateAreasUndefined: Self = StObject.set(x, "gridTemplateAreas", js.undefined)
     
-    @scala.inline
-    def setGridTemplateAreasVarargs(
+    inline def setGridTemplateAreasVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridTemplateAreas */ js.Any)*
     ): Self = StObject.set(x, "gridTemplateAreas", js.Array(value :_*))
   }

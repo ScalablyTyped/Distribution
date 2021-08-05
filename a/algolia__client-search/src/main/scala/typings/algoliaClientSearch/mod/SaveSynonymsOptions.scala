@@ -24,31 +24,23 @@ trait SaveSynonymsOptions extends StObject {
 }
 object SaveSynonymsOptions {
   
-  @scala.inline
-  def apply(): SaveSynonymsOptions = {
+  inline def apply(): SaveSynonymsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SaveSynonymsOptions]
   }
   
-  @scala.inline
-  implicit class SaveSynonymsOptionsMutableBuilder[Self <: SaveSynonymsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SaveSynonymsOptions](x: Self) {
     
-    @scala.inline
-    def setClearExistingSynonyms(value: Boolean): Self = StObject.set(x, "clearExistingSynonyms", value.asInstanceOf[js.Any])
+    inline def setClearExistingSynonyms(value: Boolean): Self = StObject.set(x, "clearExistingSynonyms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClearExistingSynonymsUndefined: Self = StObject.set(x, "clearExistingSynonyms", js.undefined)
+    inline def setClearExistingSynonymsUndefined: Self = StObject.set(x, "clearExistingSynonyms", js.undefined)
     
-    @scala.inline
-    def setForwardToReplicas(value: Boolean): Self = StObject.set(x, "forwardToReplicas", value.asInstanceOf[js.Any])
+    inline def setForwardToReplicas(value: Boolean): Self = StObject.set(x, "forwardToReplicas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardToReplicasUndefined: Self = StObject.set(x, "forwardToReplicas", js.undefined)
+    inline def setForwardToReplicasUndefined: Self = StObject.set(x, "forwardToReplicas", js.undefined)
     
-    @scala.inline
-    def setReplaceExistingSynonyms(value: Boolean): Self = StObject.set(x, "replaceExistingSynonyms", value.asInstanceOf[js.Any])
+    inline def setReplaceExistingSynonyms(value: Boolean): Self = StObject.set(x, "replaceExistingSynonyms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceExistingSynonymsUndefined: Self = StObject.set(x, "replaceExistingSynonyms", js.undefined)
+    inline def setReplaceExistingSynonymsUndefined: Self = StObject.set(x, "replaceExistingSynonyms", js.undefined)
   }
 }

@@ -87,106 +87,73 @@ trait ParsingOptions
 }
 object ParsingOptions {
   
-  @scala.inline
-  def apply(): ParsingOptions = {
+  inline def apply(): ParsingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParsingOptions]
   }
   
-  @scala.inline
-  implicit class ParsingOptionsMutableBuilder[Self <: ParsingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ParsingOptions](x: Self) {
     
-    @scala.inline
-    def setBookDeps(value: Boolean): Self = StObject.set(x, "bookDeps", value.asInstanceOf[js.Any])
+    inline def setBookDeps(value: Boolean): Self = StObject.set(x, "bookDeps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBookDepsUndefined: Self = StObject.set(x, "bookDeps", js.undefined)
+    inline def setBookDepsUndefined: Self = StObject.set(x, "bookDeps", js.undefined)
     
-    @scala.inline
-    def setBookFiles(value: Boolean): Self = StObject.set(x, "bookFiles", value.asInstanceOf[js.Any])
+    inline def setBookFiles(value: Boolean): Self = StObject.set(x, "bookFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBookFilesUndefined: Self = StObject.set(x, "bookFiles", js.undefined)
+    inline def setBookFilesUndefined: Self = StObject.set(x, "bookFiles", js.undefined)
     
-    @scala.inline
-    def setBookProps(value: Boolean): Self = StObject.set(x, "bookProps", value.asInstanceOf[js.Any])
+    inline def setBookProps(value: Boolean): Self = StObject.set(x, "bookProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBookPropsUndefined: Self = StObject.set(x, "bookProps", js.undefined)
+    inline def setBookPropsUndefined: Self = StObject.set(x, "bookProps", js.undefined)
     
-    @scala.inline
-    def setBookSheets(value: Boolean): Self = StObject.set(x, "bookSheets", value.asInstanceOf[js.Any])
+    inline def setBookSheets(value: Boolean): Self = StObject.set(x, "bookSheets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBookSheetsUndefined: Self = StObject.set(x, "bookSheets", js.undefined)
+    inline def setBookSheetsUndefined: Self = StObject.set(x, "bookSheets", js.undefined)
     
-    @scala.inline
-    def setCellFormula(value: Boolean): Self = StObject.set(x, "cellFormula", value.asInstanceOf[js.Any])
+    inline def setCellFormula(value: Boolean): Self = StObject.set(x, "cellFormula", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellFormulaUndefined: Self = StObject.set(x, "cellFormula", js.undefined)
+    inline def setCellFormulaUndefined: Self = StObject.set(x, "cellFormula", js.undefined)
     
-    @scala.inline
-    def setCellHTML(value: Boolean): Self = StObject.set(x, "cellHTML", value.asInstanceOf[js.Any])
+    inline def setCellHTML(value: Boolean): Self = StObject.set(x, "cellHTML", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellHTMLUndefined: Self = StObject.set(x, "cellHTML", js.undefined)
+    inline def setCellHTMLUndefined: Self = StObject.set(x, "cellHTML", js.undefined)
     
-    @scala.inline
-    def setCellNF(value: Boolean): Self = StObject.set(x, "cellNF", value.asInstanceOf[js.Any])
+    inline def setCellNF(value: Boolean): Self = StObject.set(x, "cellNF", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellNFUndefined: Self = StObject.set(x, "cellNF", js.undefined)
+    inline def setCellNFUndefined: Self = StObject.set(x, "cellNF", js.undefined)
     
-    @scala.inline
-    def setCellText(value: Boolean): Self = StObject.set(x, "cellText", value.asInstanceOf[js.Any])
+    inline def setCellText(value: Boolean): Self = StObject.set(x, "cellText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellTextUndefined: Self = StObject.set(x, "cellText", js.undefined)
+    inline def setCellTextUndefined: Self = StObject.set(x, "cellText", js.undefined)
     
-    @scala.inline
-    def setCodepage(value: Double): Self = StObject.set(x, "codepage", value.asInstanceOf[js.Any])
+    inline def setCodepage(value: Double): Self = StObject.set(x, "codepage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodepageUndefined: Self = StObject.set(x, "codepage", js.undefined)
+    inline def setCodepageUndefined: Self = StObject.set(x, "codepage", js.undefined)
     
-    @scala.inline
-    def setDateNF(value: String): Self = StObject.set(x, "dateNF", value.asInstanceOf[js.Any])
+    inline def setDateNF(value: String): Self = StObject.set(x, "dateNF", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateNFUndefined: Self = StObject.set(x, "dateNF", js.undefined)
+    inline def setDateNFUndefined: Self = StObject.set(x, "dateNF", js.undefined)
     
-    @scala.inline
-    def setDense(value: Boolean): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
+    inline def setDense(value: Boolean): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
+    inline def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
     
-    @scala.inline
-    def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
+    inline def setRawUndefined: Self = StObject.set(x, "raw", js.undefined)
     
-    @scala.inline
-    def setSheetRows(value: Double): Self = StObject.set(x, "sheetRows", value.asInstanceOf[js.Any])
+    inline def setSheetRows(value: Double): Self = StObject.set(x, "sheetRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetRowsUndefined: Self = StObject.set(x, "sheetRows", js.undefined)
+    inline def setSheetRowsUndefined: Self = StObject.set(x, "sheetRows", js.undefined)
     
-    @scala.inline
-    def setSheets(value: Double | String | (js.Array[Double | String])): Self = StObject.set(x, "sheets", value.asInstanceOf[js.Any])
+    inline def setSheets(value: Double | String | (js.Array[Double | String])): Self = StObject.set(x, "sheets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSheetsUndefined: Self = StObject.set(x, "sheets", js.undefined)
+    inline def setSheetsUndefined: Self = StObject.set(x, "sheets", js.undefined)
     
-    @scala.inline
-    def setSheetsVarargs(value: (Double | String)*): Self = StObject.set(x, "sheets", js.Array(value :_*))
+    inline def setSheetsVarargs(value: (Double | String)*): Self = StObject.set(x, "sheets", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: base64 | binary | buffer | file | array | string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: base64 | binary | buffer | file | array | string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait AdjustmentType extends StObject {
 }
 object AdjustmentType {
   
-  @scala.inline
-  def apply(): AdjustmentType = {
+  inline def apply(): AdjustmentType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdjustmentType]
   }
   
-  @scala.inline
-  implicit class AdjustmentTypeMutableBuilder[Self <: AdjustmentType] (val x: Self) extends AnyVal {
+  extension [Self <: AdjustmentType](x: Self) {
     
-    @scala.inline
-    def setAdjustmentType(value: XmlStringMaxLen255): Self = StObject.set(x, "AdjustmentType", value.asInstanceOf[js.Any])
+    inline def setAdjustmentType(value: XmlStringMaxLen255): Self = StObject.set(x, "AdjustmentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdjustmentTypeUndefined: Self = StObject.set(x, "AdjustmentType", js.undefined)
+    inline def setAdjustmentTypeUndefined: Self = StObject.set(x, "AdjustmentType", js.undefined)
   }
 }

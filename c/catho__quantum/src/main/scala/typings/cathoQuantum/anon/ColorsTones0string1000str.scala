@@ -23,8 +23,7 @@ trait ColorsTones0string1000str extends StObject {
 }
 object ColorsTones0string1000str {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `0`: String,
     `100`: String,
     `1000`: String,
@@ -44,28 +43,20 @@ object ColorsTones0string1000str {
     __obj.asInstanceOf[ColorsTones0string1000str]
   }
   
-  @scala.inline
-  implicit class ColorsTones0string1000strMutableBuilder[Self <: ColorsTones0string1000str] (val x: Self) extends AnyVal {
+  extension [Self <: ColorsTones0string1000str](x: Self) {
     
-    @scala.inline
-    def set0(value: String): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
+    inline def set0(value: String): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set100(value: String): Self = StObject.set(x, "100", value.asInstanceOf[js.Any])
+    inline def set100(value: String): Self = StObject.set(x, "100", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set1000(value: String): Self = StObject.set(x, "1000", value.asInstanceOf[js.Any])
+    inline def set1000(value: String): Self = StObject.set(x, "1000", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set300(value: String): Self = StObject.set(x, "300", value.asInstanceOf[js.Any])
+    inline def set300(value: String): Self = StObject.set(x, "300", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set500(value: String): Self = StObject.set(x, "500", value.asInstanceOf[js.Any])
+    inline def set500(value: String): Self = StObject.set(x, "500", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set700(value: String): Self = StObject.set(x, "700", value.asInstanceOf[js.Any])
+    inline def set700(value: String): Self = StObject.set(x, "700", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set900(value: String): Self = StObject.set(x, "900", value.asInstanceOf[js.Any])
+    inline def set900(value: String): Self = StObject.set(x, "900", value.asInstanceOf[js.Any])
   }
 }

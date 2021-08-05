@@ -13,19 +13,15 @@ trait StopTaskResponse extends StObject {
 }
 object StopTaskResponse {
   
-  @scala.inline
-  def apply(): StopTaskResponse = {
+  inline def apply(): StopTaskResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StopTaskResponse]
   }
   
-  @scala.inline
-  implicit class StopTaskResponseMutableBuilder[Self <: StopTaskResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StopTaskResponse](x: Self) {
     
-    @scala.inline
-    def setTask(value: Task): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
+    inline def setTask(value: Task): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskUndefined: Self = StObject.set(x, "task", js.undefined)
+    inline def setTaskUndefined: Self = StObject.set(x, "task", js.undefined)
   }
 }

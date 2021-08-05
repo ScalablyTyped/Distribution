@@ -22,19 +22,15 @@ trait SocketPermission
 }
 object SocketPermission {
   
-  @scala.inline
-  def apply(socket: js.Array[String]): SocketPermission = {
+  inline def apply(socket: js.Array[String]): SocketPermission = {
     val __obj = js.Dynamic.literal(socket = socket.asInstanceOf[js.Any])
     __obj.asInstanceOf[SocketPermission]
   }
   
-  @scala.inline
-  implicit class SocketPermissionMutableBuilder[Self <: SocketPermission] (val x: Self) extends AnyVal {
+  extension [Self <: SocketPermission](x: Self) {
     
-    @scala.inline
-    def setSocket(value: js.Array[String]): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
+    inline def setSocket(value: js.Array[String]): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSocketVarargs(value: String*): Self = StObject.set(x, "socket", js.Array(value :_*))
+    inline def setSocketVarargs(value: String*): Self = StObject.set(x, "socket", js.Array(value :_*))
   }
 }

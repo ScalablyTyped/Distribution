@@ -11,13 +11,11 @@ object materialMenuSurfaceStrings {
   sealed trait transform
     extends StObject
        with CssTransformPropertyName
-  @scala.inline
-  def transform: transform = "transform".asInstanceOf[transform]
+  inline def transform: transform = "transform".asInstanceOf[transform]
   
   @js.native
   sealed trait webkitTransform
     extends StObject
        with CssTransformPropertyName
-  @scala.inline
-  def webkitTransform: webkitTransform = "webkitTransform".asInstanceOf[webkitTransform]
+  inline def webkitTransform: webkitTransform = "webkitTransform".asInstanceOf[webkitTransform]
 }

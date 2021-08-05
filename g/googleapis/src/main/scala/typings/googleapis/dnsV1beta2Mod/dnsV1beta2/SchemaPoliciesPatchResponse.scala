@@ -12,25 +12,19 @@ trait SchemaPoliciesPatchResponse extends StObject {
 }
 object SchemaPoliciesPatchResponse {
   
-  @scala.inline
-  def apply(): SchemaPoliciesPatchResponse = {
+  inline def apply(): SchemaPoliciesPatchResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPoliciesPatchResponse]
   }
   
-  @scala.inline
-  implicit class SchemaPoliciesPatchResponseMutableBuilder[Self <: SchemaPoliciesPatchResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPoliciesPatchResponse](x: Self) {
     
-    @scala.inline
-    def setHeader(value: SchemaResponseHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: SchemaResponseHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setPolicy(value: SchemaPolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: SchemaPolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+    inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
   }
 }

@@ -23,29 +23,22 @@ object typesTraceUserMod {
   }
   object TraceUser {
     
-    @scala.inline
-    def apply(): TraceUser = {
+    inline def apply(): TraceUser = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TraceUser]
     }
     
-    @scala.inline
-    implicit class TraceUserMutableBuilder[Self <: TraceUser] (val x: Self) extends AnyVal {
+    extension [Self <: TraceUser](x: Self) {
       
-      @scala.inline
-      def setServiceIds(value: js.Array[ServiceId] | Iterable[ServiceId]): Self = StObject.set(x, "ServiceIds", value.asInstanceOf[js.Any])
+      inline def setServiceIds(value: js.Array[ServiceId] | Iterable[ServiceId]): Self = StObject.set(x, "ServiceIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceIdsUndefined: Self = StObject.set(x, "ServiceIds", js.undefined)
+      inline def setServiceIdsUndefined: Self = StObject.set(x, "ServiceIds", js.undefined)
       
-      @scala.inline
-      def setServiceIdsVarargs(value: ServiceId*): Self = StObject.set(x, "ServiceIds", js.Array(value :_*))
+      inline def setServiceIdsVarargs(value: ServiceId*): Self = StObject.set(x, "ServiceIds", js.Array(value :_*))
       
-      @scala.inline
-      def setUserName(value: String): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+      inline def setUserName(value: String): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
+      inline def setUserNameUndefined: Self = StObject.set(x, "UserName", js.undefined)
     }
   }
   
@@ -61,23 +54,18 @@ object typesTraceUserMod {
   }
   object UnmarshalledTraceUser {
     
-    @scala.inline
-    def apply(): UnmarshalledTraceUser = {
+    inline def apply(): UnmarshalledTraceUser = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledTraceUser]
     }
     
-    @scala.inline
-    implicit class UnmarshalledTraceUserMutableBuilder[Self <: UnmarshalledTraceUser] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledTraceUser](x: Self) {
       
-      @scala.inline
-      def setServiceIds(value: js.Array[UnmarshalledServiceId]): Self = StObject.set(x, "ServiceIds", value.asInstanceOf[js.Any])
+      inline def setServiceIds(value: js.Array[UnmarshalledServiceId]): Self = StObject.set(x, "ServiceIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceIdsUndefined: Self = StObject.set(x, "ServiceIds", js.undefined)
+      inline def setServiceIdsUndefined: Self = StObject.set(x, "ServiceIds", js.undefined)
       
-      @scala.inline
-      def setServiceIdsVarargs(value: UnmarshalledServiceId*): Self = StObject.set(x, "ServiceIds", js.Array(value :_*))
+      inline def setServiceIdsVarargs(value: UnmarshalledServiceId*): Self = StObject.set(x, "ServiceIds", js.Array(value :_*))
     }
   }
 }

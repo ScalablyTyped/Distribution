@@ -16,16 +16,13 @@ trait PlayReadyLicenseIterable extends StObject {
 }
 object PlayReadyLicenseIterable {
   
-  @scala.inline
-  def apply(first: () => IIterator[IPlayReadyLicense]): PlayReadyLicenseIterable = {
+  inline def apply(first: () => IIterator[IPlayReadyLicense]): PlayReadyLicenseIterable = {
     val __obj = js.Dynamic.literal(first = js.Any.fromFunction0(first))
     __obj.asInstanceOf[PlayReadyLicenseIterable]
   }
   
-  @scala.inline
-  implicit class PlayReadyLicenseIterableMutableBuilder[Self <: PlayReadyLicenseIterable] (val x: Self) extends AnyVal {
+  extension [Self <: PlayReadyLicenseIterable](x: Self) {
     
-    @scala.inline
-    def setFirst(value: () => IIterator[IPlayReadyLicense]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+    inline def setFirst(value: () => IIterator[IPlayReadyLicense]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
   }
 }

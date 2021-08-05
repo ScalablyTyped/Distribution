@@ -10,6 +10,5 @@ object isPolygonsIntersectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(points1: js.Any, points2: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(points1.asInstanceOf[js.Any], points2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def default(points1: js.Any, points2: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(points1.asInstanceOf[js.Any], points2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

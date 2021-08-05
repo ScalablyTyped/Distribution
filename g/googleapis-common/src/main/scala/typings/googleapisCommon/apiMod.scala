@@ -21,23 +21,18 @@ object apiMod {
   }
   object APIRequestContext {
     
-    @scala.inline
-    def apply(_options: GlobalOptions): APIRequestContext = {
+    inline def apply(_options: GlobalOptions): APIRequestContext = {
       val __obj = js.Dynamic.literal(_options = _options.asInstanceOf[js.Any])
       __obj.asInstanceOf[APIRequestContext]
     }
     
-    @scala.inline
-    implicit class APIRequestContextMutableBuilder[Self <: APIRequestContext] (val x: Self) extends AnyVal {
+    extension [Self <: APIRequestContext](x: Self) {
       
-      @scala.inline
-      def setGoogle(value: GoogleConfigurable): Self = StObject.set(x, "google", value.asInstanceOf[js.Any])
+      inline def setGoogle(value: GoogleConfigurable): Self = StObject.set(x, "google", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGoogleUndefined: Self = StObject.set(x, "google", js.undefined)
+      inline def setGoogleUndefined: Self = StObject.set(x, "google", js.undefined)
       
-      @scala.inline
-      def set_options(value: GlobalOptions): Self = StObject.set(x, "_options", value.asInstanceOf[js.Any])
+      inline def set_options(value: GlobalOptions): Self = StObject.set(x, "_options", value.asInstanceOf[js.Any])
     }
   }
   
@@ -57,8 +52,7 @@ object apiMod {
   }
   object APIRequestParams {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       context: APIRequestContext,
       options: MethodOptions,
       params: T,
@@ -69,38 +63,27 @@ object apiMod {
       __obj.asInstanceOf[APIRequestParams[T]]
     }
     
-    @scala.inline
-    implicit class APIRequestParamsMutableBuilder[Self <: APIRequestParams[?], T] (val x: Self & APIRequestParams[T]) extends AnyVal {
+    extension [Self <: APIRequestParams[?], T](x: Self & APIRequestParams[T]) {
       
-      @scala.inline
-      def setContext(value: APIRequestContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: APIRequestContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediaUrl(value: String): Self = StObject.set(x, "mediaUrl", value.asInstanceOf[js.Any])
+      inline def setMediaUrl(value: String): Self = StObject.set(x, "mediaUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediaUrlNull: Self = StObject.set(x, "mediaUrl", null)
+      inline def setMediaUrlNull: Self = StObject.set(x, "mediaUrl", null)
       
-      @scala.inline
-      def setMediaUrlUndefined: Self = StObject.set(x, "mediaUrl", js.undefined)
+      inline def setMediaUrlUndefined: Self = StObject.set(x, "mediaUrl", js.undefined)
       
-      @scala.inline
-      def setOptions(value: MethodOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: MethodOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: T): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: T): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathParams(value: js.Array[String]): Self = StObject.set(x, "pathParams", value.asInstanceOf[js.Any])
+      inline def setPathParams(value: js.Array[String]): Self = StObject.set(x, "pathParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathParamsVarargs(value: String*): Self = StObject.set(x, "pathParams", js.Array(value :_*))
+      inline def setPathParamsVarargs(value: String*): Self = StObject.set(x, "pathParams", js.Array(value :_*))
       
-      @scala.inline
-      def setRequiredParams(value: js.Array[String]): Self = StObject.set(x, "requiredParams", value.asInstanceOf[js.Any])
+      inline def setRequiredParams(value: js.Array[String]): Self = StObject.set(x, "requiredParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredParamsVarargs(value: String*): Self = StObject.set(x, "requiredParams", js.Array(value :_*))
+      inline def setRequiredParamsVarargs(value: String*): Self = StObject.set(x, "requiredParams", js.Array(value :_*))
     }
   }
   
@@ -114,20 +97,16 @@ object apiMod {
   }
   object GlobalOptions {
     
-    @scala.inline
-    def apply(): GlobalOptions = {
+    inline def apply(): GlobalOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GlobalOptions]
     }
     
-    @scala.inline
-    implicit class GlobalOptionsMutableBuilder[Self <: GlobalOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GlobalOptions](x: Self) {
       
-      @scala.inline
-      def setAuth(value: OAuth2Client | String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: OAuth2Client | String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+      inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     }
   }
   
@@ -137,17 +116,14 @@ object apiMod {
   }
   object GoogleConfigurable {
     
-    @scala.inline
-    def apply(_options: GlobalOptions): GoogleConfigurable = {
+    inline def apply(_options: GlobalOptions): GoogleConfigurable = {
       val __obj = js.Dynamic.literal(_options = _options.asInstanceOf[js.Any])
       __obj.asInstanceOf[GoogleConfigurable]
     }
     
-    @scala.inline
-    implicit class GoogleConfigurableMutableBuilder[Self <: GoogleConfigurable] (val x: Self) extends AnyVal {
+    extension [Self <: GoogleConfigurable](x: Self) {
       
-      @scala.inline
-      def set_options(value: GlobalOptions): Self = StObject.set(x, "_options", value.asInstanceOf[js.Any])
+      inline def set_options(value: GlobalOptions): Self = StObject.set(x, "_options", value.asInstanceOf[js.Any])
     }
   }
   
@@ -161,29 +137,22 @@ object apiMod {
   }
   object MethodOptions {
     
-    @scala.inline
-    def apply(): MethodOptions = {
+    inline def apply(): MethodOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MethodOptions]
     }
     
-    @scala.inline
-    implicit class MethodOptionsMutableBuilder[Self <: MethodOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MethodOptions](x: Self) {
       
-      @scala.inline
-      def setRootUrl(value: String): Self = StObject.set(x, "rootUrl", value.asInstanceOf[js.Any])
+      inline def setRootUrl(value: String): Self = StObject.set(x, "rootUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUrlUndefined: Self = StObject.set(x, "rootUrl", js.undefined)
+      inline def setRootUrlUndefined: Self = StObject.set(x, "rootUrl", js.undefined)
       
-      @scala.inline
-      def setUserAgentDirectives(value: js.Array[UserAgentDirective]): Self = StObject.set(x, "userAgentDirectives", value.asInstanceOf[js.Any])
+      inline def setUserAgentDirectives(value: js.Array[UserAgentDirective]): Self = StObject.set(x, "userAgentDirectives", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserAgentDirectivesUndefined: Self = StObject.set(x, "userAgentDirectives", js.undefined)
+      inline def setUserAgentDirectivesUndefined: Self = StObject.set(x, "userAgentDirectives", js.undefined)
       
-      @scala.inline
-      def setUserAgentDirectivesVarargs(value: UserAgentDirective*): Self = StObject.set(x, "userAgentDirectives", js.Array(value :_*))
+      inline def setUserAgentDirectivesVarargs(value: UserAgentDirective*): Self = StObject.set(x, "userAgentDirectives", js.Array(value :_*))
     }
   }
   
@@ -195,20 +164,16 @@ object apiMod {
   }
   object ServiceOptions {
     
-    @scala.inline
-    def apply(): ServiceOptions = {
+    inline def apply(): ServiceOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ServiceOptions]
     }
     
-    @scala.inline
-    implicit class ServiceOptionsMutableBuilder[Self <: ServiceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceOptions](x: Self) {
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -222,26 +187,20 @@ object apiMod {
   }
   object UserAgentDirective {
     
-    @scala.inline
-    def apply(product: String, version: String): UserAgentDirective = {
+    inline def apply(product: String, version: String): UserAgentDirective = {
       val __obj = js.Dynamic.literal(product = product.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserAgentDirective]
     }
     
-    @scala.inline
-    implicit class UserAgentDirectiveMutableBuilder[Self <: UserAgentDirective] (val x: Self) extends AnyVal {
+    extension [Self <: UserAgentDirective](x: Self) {
       
-      @scala.inline
-      def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
+      inline def setProduct(value: String): Self = StObject.set(x, "product", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -16,21 +16,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RiskLevel extends StObject
 object RiskLevel {
   
-  @scala.inline
-  def hidden: typings.microsoftGraph.microsoftGraphStrings.hidden = "hidden".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.hidden]
+  inline def hidden: typings.microsoftGraph.microsoftGraphStrings.hidden = "hidden".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.hidden]
   
-  @scala.inline
-  def high: typings.microsoftGraph.microsoftGraphStrings.high = "high".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.high]
+  inline def high: typings.microsoftGraph.microsoftGraphStrings.high = "high".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.high]
   
-  @scala.inline
-  def low: typings.microsoftGraph.microsoftGraphStrings.low = "low".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.low]
+  inline def low: typings.microsoftGraph.microsoftGraphStrings.low = "low".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.low]
   
-  @scala.inline
-  def medium: typings.microsoftGraph.microsoftGraphStrings.medium = "medium".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.medium]
+  inline def medium: typings.microsoftGraph.microsoftGraphStrings.medium = "medium".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.medium]
   
-  @scala.inline
-  def none: none_ = "none".asInstanceOf[none_]
+  inline def none: none_ = "none".asInstanceOf[none_]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }

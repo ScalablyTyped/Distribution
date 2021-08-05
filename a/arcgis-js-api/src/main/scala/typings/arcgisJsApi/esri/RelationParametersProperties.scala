@@ -50,45 +50,33 @@ trait RelationParametersProperties extends StObject {
 }
 object RelationParametersProperties {
   
-  @scala.inline
-  def apply(): RelationParametersProperties = {
+  inline def apply(): RelationParametersProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RelationParametersProperties]
   }
   
-  @scala.inline
-  implicit class RelationParametersPropertiesMutableBuilder[Self <: RelationParametersProperties] (val x: Self) extends AnyVal {
+  extension [Self <: RelationParametersProperties](x: Self) {
     
-    @scala.inline
-    def setGeometries1(value: js.Array[GeometryProperties]): Self = StObject.set(x, "geometries1", value.asInstanceOf[js.Any])
+    inline def setGeometries1(value: js.Array[GeometryProperties]): Self = StObject.set(x, "geometries1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometries1Undefined: Self = StObject.set(x, "geometries1", js.undefined)
+    inline def setGeometries1Undefined: Self = StObject.set(x, "geometries1", js.undefined)
     
-    @scala.inline
-    def setGeometries1Varargs(value: GeometryProperties*): Self = StObject.set(x, "geometries1", js.Array(value :_*))
+    inline def setGeometries1Varargs(value: GeometryProperties*): Self = StObject.set(x, "geometries1", js.Array(value :_*))
     
-    @scala.inline
-    def setGeometries2(value: js.Array[GeometryProperties]): Self = StObject.set(x, "geometries2", value.asInstanceOf[js.Any])
+    inline def setGeometries2(value: js.Array[GeometryProperties]): Self = StObject.set(x, "geometries2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometries2Undefined: Self = StObject.set(x, "geometries2", js.undefined)
+    inline def setGeometries2Undefined: Self = StObject.set(x, "geometries2", js.undefined)
     
-    @scala.inline
-    def setGeometries2Varargs(value: GeometryProperties*): Self = StObject.set(x, "geometries2", js.Array(value :_*))
+    inline def setGeometries2Varargs(value: GeometryProperties*): Self = StObject.set(x, "geometries2", js.Array(value :_*))
     
-    @scala.inline
-    def setRelation(
+    inline def setRelation(
       value: cross | disjoint | in_ | `interior-intersection` | intersection | `line-coincidence` | `line-touch` | overlap | `point-touch` | relation | touch | within
     ): Self = StObject.set(x, "relation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationParameter(value: String): Self = StObject.set(x, "relationParameter", value.asInstanceOf[js.Any])
+    inline def setRelationParameter(value: String): Self = StObject.set(x, "relationParameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationParameterUndefined: Self = StObject.set(x, "relationParameter", js.undefined)
+    inline def setRelationParameterUndefined: Self = StObject.set(x, "relationParameter", js.undefined)
     
-    @scala.inline
-    def setRelationUndefined: Self = StObject.set(x, "relation", js.undefined)
+    inline def setRelationUndefined: Self = StObject.set(x, "relation", js.undefined)
   }
 }

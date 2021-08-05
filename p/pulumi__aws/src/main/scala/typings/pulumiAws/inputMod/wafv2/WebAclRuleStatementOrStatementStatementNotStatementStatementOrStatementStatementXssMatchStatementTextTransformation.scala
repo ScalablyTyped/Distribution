@@ -19,20 +19,16 @@ trait WebAclRuleStatementOrStatementStatementNotStatementStatementOrStatementSta
 }
 object WebAclRuleStatementOrStatementStatementNotStatementStatementOrStatementStatementXssMatchStatementTextTransformation {
   
-  @scala.inline
-  def apply(priority: Input[Double], `type`: Input[String]): WebAclRuleStatementOrStatementStatementNotStatementStatementOrStatementStatementXssMatchStatementTextTransformation = {
+  inline def apply(priority: Input[Double], `type`: Input[String]): WebAclRuleStatementOrStatementStatementNotStatementStatementOrStatementStatementXssMatchStatementTextTransformation = {
     val __obj = js.Dynamic.literal(priority = priority.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WebAclRuleStatementOrStatementStatementNotStatementStatementOrStatementStatementXssMatchStatementTextTransformation]
   }
   
-  @scala.inline
-  implicit class WebAclRuleStatementOrStatementStatementNotStatementStatementOrStatementStatementXssMatchStatementTextTransformationMutableBuilder[Self <: WebAclRuleStatementOrStatementStatementNotStatementStatementOrStatementStatementXssMatchStatementTextTransformation] (val x: Self) extends AnyVal {
+  extension [Self <: WebAclRuleStatementOrStatementStatementNotStatementStatementOrStatementStatementXssMatchStatementTextTransformation](x: Self) {
     
-    @scala.inline
-    def setPriority(value: Input[Double]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Input[Double]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

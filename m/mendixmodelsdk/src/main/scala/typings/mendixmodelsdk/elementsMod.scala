@@ -84,7 +84,7 @@ object elementsMod {
       container: AbstractElement[IAbstractModel, Container]
     ) = this()
     
-    var _deepCopyElement: js.Any = js.native
+    /* private */ var _deepCopyElement: js.Any = js.native
     
     /**
       * Creates a deep copy of this element and its children.
@@ -138,20 +138,16 @@ object elementsMod {
   }
   object IByNameReferrable {
     
-    @scala.inline
-    def apply(): IByNameReferrable = {
+    inline def apply(): IByNameReferrable = {
       val __obj = js.Dynamic.literal(qualifiedName = null)
       __obj.asInstanceOf[IByNameReferrable]
     }
     
-    @scala.inline
-    implicit class IByNameReferrableMutableBuilder[Self <: IByNameReferrable] (val x: Self) extends AnyVal {
+    extension [Self <: IByNameReferrable](x: Self) {
       
-      @scala.inline
-      def setQualifiedName(value: String): Self = StObject.set(x, "qualifiedName", value.asInstanceOf[js.Any])
+      inline def setQualifiedName(value: String): Self = StObject.set(x, "qualifiedName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualifiedNameNull: Self = StObject.set(x, "qualifiedName", null)
+      inline def setQualifiedNameNull: Self = StObject.set(x, "qualifiedName", null)
     }
   }
   

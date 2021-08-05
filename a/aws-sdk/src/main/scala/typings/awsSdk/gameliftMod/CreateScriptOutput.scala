@@ -13,19 +13,15 @@ trait CreateScriptOutput extends StObject {
 }
 object CreateScriptOutput {
   
-  @scala.inline
-  def apply(): CreateScriptOutput = {
+  inline def apply(): CreateScriptOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateScriptOutput]
   }
   
-  @scala.inline
-  implicit class CreateScriptOutputMutableBuilder[Self <: CreateScriptOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateScriptOutput](x: Self) {
     
-    @scala.inline
-    def setScript(value: Script): Self = StObject.set(x, "Script", value.asInstanceOf[js.Any])
+    inline def setScript(value: Script): Self = StObject.set(x, "Script", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptUndefined: Self = StObject.set(x, "Script", js.undefined)
+    inline def setScriptUndefined: Self = StObject.set(x, "Script", js.undefined)
   }
 }

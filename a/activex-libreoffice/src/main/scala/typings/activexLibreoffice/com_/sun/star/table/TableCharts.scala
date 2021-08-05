@@ -22,8 +22,7 @@ trait TableCharts
      with XEnumerationAccess
 object TableCharts {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementNames: SafeArray[String],
     ElementType: `type`,

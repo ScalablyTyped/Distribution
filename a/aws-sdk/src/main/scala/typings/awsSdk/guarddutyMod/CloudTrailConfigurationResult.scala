@@ -13,16 +13,13 @@ trait CloudTrailConfigurationResult extends StObject {
 }
 object CloudTrailConfigurationResult {
   
-  @scala.inline
-  def apply(Status: DataSourceStatus): CloudTrailConfigurationResult = {
+  inline def apply(Status: DataSourceStatus): CloudTrailConfigurationResult = {
     val __obj = js.Dynamic.literal(Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloudTrailConfigurationResult]
   }
   
-  @scala.inline
-  implicit class CloudTrailConfigurationResultMutableBuilder[Self <: CloudTrailConfigurationResult] (val x: Self) extends AnyVal {
+  extension [Self <: CloudTrailConfigurationResult](x: Self) {
     
-    @scala.inline
-    def setStatus(value: DataSourceStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: DataSourceStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

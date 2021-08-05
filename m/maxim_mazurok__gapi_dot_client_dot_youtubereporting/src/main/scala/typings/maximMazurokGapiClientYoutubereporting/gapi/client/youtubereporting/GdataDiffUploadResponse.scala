@@ -14,25 +14,19 @@ trait GdataDiffUploadResponse extends StObject {
 }
 object GdataDiffUploadResponse {
   
-  @scala.inline
-  def apply(): GdataDiffUploadResponse = {
+  inline def apply(): GdataDiffUploadResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GdataDiffUploadResponse]
   }
   
-  @scala.inline
-  implicit class GdataDiffUploadResponseMutableBuilder[Self <: GdataDiffUploadResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GdataDiffUploadResponse](x: Self) {
     
-    @scala.inline
-    def setObjectVersion(value: String): Self = StObject.set(x, "objectVersion", value.asInstanceOf[js.Any])
+    inline def setObjectVersion(value: String): Self = StObject.set(x, "objectVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectVersionUndefined: Self = StObject.set(x, "objectVersion", js.undefined)
+    inline def setObjectVersionUndefined: Self = StObject.set(x, "objectVersion", js.undefined)
     
-    @scala.inline
-    def setOriginalObject(value: GdataCompositeMedia): Self = StObject.set(x, "originalObject", value.asInstanceOf[js.Any])
+    inline def setOriginalObject(value: GdataCompositeMedia): Self = StObject.set(x, "originalObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalObjectUndefined: Self = StObject.set(x, "originalObject", js.undefined)
+    inline def setOriginalObjectUndefined: Self = StObject.set(x, "originalObject", js.undefined)
   }
 }

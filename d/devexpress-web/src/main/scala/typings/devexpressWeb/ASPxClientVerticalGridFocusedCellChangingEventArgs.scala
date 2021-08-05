@@ -18,16 +18,13 @@ trait ASPxClientVerticalGridFocusedCellChangingEventArgs
 }
 object ASPxClientVerticalGridFocusedCellChangingEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, cellInfo: ASPxClientVerticalGridCellInfo): ASPxClientVerticalGridFocusedCellChangingEventArgs = {
+  inline def apply(cancel: Boolean, cellInfo: ASPxClientVerticalGridCellInfo): ASPxClientVerticalGridFocusedCellChangingEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], cellInfo = cellInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientVerticalGridFocusedCellChangingEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientVerticalGridFocusedCellChangingEventArgsMutableBuilder[Self <: ASPxClientVerticalGridFocusedCellChangingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientVerticalGridFocusedCellChangingEventArgs](x: Self) {
     
-    @scala.inline
-    def setCellInfo(value: ASPxClientVerticalGridCellInfo): Self = StObject.set(x, "cellInfo", value.asInstanceOf[js.Any])
+    inline def setCellInfo(value: ASPxClientVerticalGridCellInfo): Self = StObject.set(x, "cellInfo", value.asInstanceOf[js.Any])
   }
 }

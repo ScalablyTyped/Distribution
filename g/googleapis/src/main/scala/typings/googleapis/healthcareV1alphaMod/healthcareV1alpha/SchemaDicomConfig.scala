@@ -18,22 +18,17 @@ trait SchemaDicomConfig extends StObject {
 }
 object SchemaDicomConfig {
   
-  @scala.inline
-  def apply(): SchemaDicomConfig = {
+  inline def apply(): SchemaDicomConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDicomConfig]
   }
   
-  @scala.inline
-  implicit class SchemaDicomConfigMutableBuilder[Self <: SchemaDicomConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDicomConfig](x: Self) {
     
-    @scala.inline
-    def setWhitelistTags(value: js.Array[String]): Self = StObject.set(x, "whitelistTags", value.asInstanceOf[js.Any])
+    inline def setWhitelistTags(value: js.Array[String]): Self = StObject.set(x, "whitelistTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhitelistTagsUndefined: Self = StObject.set(x, "whitelistTags", js.undefined)
+    inline def setWhitelistTagsUndefined: Self = StObject.set(x, "whitelistTags", js.undefined)
     
-    @scala.inline
-    def setWhitelistTagsVarargs(value: String*): Self = StObject.set(x, "whitelistTags", js.Array(value :_*))
+    inline def setWhitelistTagsVarargs(value: String*): Self = StObject.set(x, "whitelistTags", js.Array(value :_*))
   }
 }

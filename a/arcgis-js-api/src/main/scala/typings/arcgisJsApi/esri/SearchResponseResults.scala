@@ -33,8 +33,7 @@ trait SearchResponseResults
 }
 object SearchResponseResults {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -46,19 +45,14 @@ object SearchResponseResults {
     __obj.asInstanceOf[SearchResponseResults]
   }
   
-  @scala.inline
-  implicit class SearchResponseResultsMutableBuilder[Self <: SearchResponseResults] (val x: Self) extends AnyVal {
+  extension [Self <: SearchResponseResults](x: Self) {
     
-    @scala.inline
-    def setResults(value: js.Array[SearchResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[SearchResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsVarargs(value: SearchResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: SearchResult*): Self = StObject.set(x, "results", js.Array(value :_*))
     
-    @scala.inline
-    def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceIndex(value: Double): Self = StObject.set(x, "sourceIndex", value.asInstanceOf[js.Any])
+    inline def setSourceIndex(value: Double): Self = StObject.set(x, "sourceIndex", value.asInstanceOf[js.Any])
   }
 }

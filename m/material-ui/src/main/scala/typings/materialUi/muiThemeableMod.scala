@@ -14,8 +14,7 @@ object muiThemeableMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): js.Function1[
+  inline def default(): js.Function1[
     /* component */ (ComponentClass[MuiTheme, ComponentState]) | StatelessComponent[MuiTheme], 
     (ComponentClass[MuiTheme, ComponentState]) | StatelessComponent[MuiTheme]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[
@@ -23,8 +22,7 @@ object muiThemeableMod {
     (ComponentClass[MuiTheme, ComponentState]) | StatelessComponent[MuiTheme]
   ]]
   
-  @scala.inline
-  def muiThemeable(): js.Function1[
+  inline def muiThemeable(): js.Function1[
     /* component */ (ComponentClass[MuiTheme, ComponentState]) | StatelessComponent[MuiTheme], 
     (ComponentClass[MuiTheme, ComponentState]) | StatelessComponent[MuiTheme]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("muiThemeable")().asInstanceOf[js.Function1[

@@ -25,32 +25,24 @@ object interfaceMod {
   }
   object FlattenOptionData {
     
-    @scala.inline
-    def apply(data: OptionData | OptionGroupData, key: String | Double): FlattenOptionData = {
+    inline def apply(data: OptionData | OptionGroupData, key: String | Double): FlattenOptionData = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[FlattenOptionData]
     }
     
-    @scala.inline
-    implicit class FlattenOptionDataMutableBuilder[Self <: FlattenOptionData] (val x: Self) extends AnyVal {
+    extension [Self <: FlattenOptionData](x: Self) {
       
-      @scala.inline
-      def setData(value: OptionData | OptionGroupData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: OptionData | OptionGroupData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroup(value: Boolean): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: Boolean): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupOption(value: Boolean): Self = StObject.set(x, "groupOption", value.asInstanceOf[js.Any])
+      inline def setGroupOption(value: Boolean): Self = StObject.set(x, "groupOption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupOptionUndefined: Self = StObject.set(x, "groupOption", js.undefined)
+      inline def setGroupOptionUndefined: Self = StObject.set(x, "groupOption", js.undefined)
       
-      @scala.inline
-      def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+      inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
-      @scala.inline
-      def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
   }
   
@@ -62,14 +54,11 @@ object interfaceMod {
   trait Mode extends StObject
   object Mode {
     
-    @scala.inline
-    def combobox: typings.rcSelect.rcSelectStrings.combobox = "combobox".asInstanceOf[typings.rcSelect.rcSelectStrings.combobox]
+    inline def combobox: typings.rcSelect.rcSelectStrings.combobox = "combobox".asInstanceOf[typings.rcSelect.rcSelectStrings.combobox]
     
-    @scala.inline
-    def multiple: typings.rcSelect.rcSelectStrings.multiple = "multiple".asInstanceOf[typings.rcSelect.rcSelectStrings.multiple]
+    inline def multiple: typings.rcSelect.rcSelectStrings.multiple = "multiple".asInstanceOf[typings.rcSelect.rcSelectStrings.multiple]
     
-    @scala.inline
-    def tags: typings.rcSelect.rcSelectStrings.tags = "tags".asInstanceOf[typings.rcSelect.rcSelectStrings.tags]
+    inline def tags: typings.rcSelect.rcSelectStrings.tags = "tags".asInstanceOf[typings.rcSelect.rcSelectStrings.tags]
   }
   
   type OnActiveValue = js.Function3[/* active */ RawValueType, /* index */ Double, /* info */ js.UndefOr[Source], Unit]
@@ -95,59 +84,42 @@ object interfaceMod {
   }
   object OptionCoreData {
     
-    @scala.inline
-    def apply(value: Key): OptionCoreData = {
+    inline def apply(value: Key): OptionCoreData = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionCoreData]
     }
     
-    @scala.inline
-    implicit class OptionCoreDataMutableBuilder[Self <: OptionCoreData] (val x: Self) extends AnyVal {
+    extension [Self <: OptionCoreData](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setValue(value: Key): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Key): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -158,8 +130,7 @@ object interfaceMod {
   /* prop */ StringDictionary[js.Any]
   object OptionData {
     
-    @scala.inline
-    def apply(value: Key): OptionData = {
+    inline def apply(value: Key): OptionData = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionData]
     }
@@ -182,44 +153,32 @@ object interfaceMod {
   }
   object OptionGroupData {
     
-    @scala.inline
-    def apply(options: js.Array[OptionData]): OptionGroupData = {
+    inline def apply(options: js.Array[OptionData]): OptionGroupData = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionGroupData]
     }
     
-    @scala.inline
-    implicit class OptionGroupDataMutableBuilder[Self <: OptionGroupData] (val x: Self) extends AnyVal {
+    extension [Self <: OptionGroupData](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setOptions(value: js.Array[OptionData]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Array[OptionData]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsVarargs(value: OptionData*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: OptionData*): Self = StObject.set(x, "options", js.Array(value :_*))
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   

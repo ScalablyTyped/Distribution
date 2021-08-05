@@ -12,19 +12,15 @@ trait MapsforgePlugin extends StObject {
 }
 object MapsforgePlugin {
   
-  @scala.inline
-  def apply(cache: MapsforgeCachePlugin, embedded: MapsforgeEmbeddedPlugin): MapsforgePlugin = {
+  inline def apply(cache: MapsforgeCachePlugin, embedded: MapsforgeEmbeddedPlugin): MapsforgePlugin = {
     val __obj = js.Dynamic.literal(cache = cache.asInstanceOf[js.Any], embedded = embedded.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapsforgePlugin]
   }
   
-  @scala.inline
-  implicit class MapsforgePluginMutableBuilder[Self <: MapsforgePlugin] (val x: Self) extends AnyVal {
+  extension [Self <: MapsforgePlugin](x: Self) {
     
-    @scala.inline
-    def setCache(value: MapsforgeCachePlugin): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: MapsforgeCachePlugin): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbedded(value: MapsforgeEmbeddedPlugin): Self = StObject.set(x, "embedded", value.asInstanceOf[js.Any])
+    inline def setEmbedded(value: MapsforgeEmbeddedPlugin): Self = StObject.set(x, "embedded", value.asInstanceOf[js.Any])
   }
 }

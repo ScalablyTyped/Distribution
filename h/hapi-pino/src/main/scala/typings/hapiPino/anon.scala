@@ -19,26 +19,20 @@ object anon {
   }
   object Dictkey {
     
-    @scala.inline
-    def apply(): Dictkey = {
+    inline def apply(): Dictkey = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Dictkey]
     }
     
-    @scala.inline
-    implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
+    extension [Self <: Dictkey](x: Self) {
       
-      @scala.inline
-      def setLevel(value: Level | String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: Level | String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setSerializers(value: Serializers): Self = StObject.set(x, "serializers", value.asInstanceOf[js.Any])
+      inline def setSerializers(value: Serializers): Self = StObject.set(x, "serializers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerializersUndefined: Self = StObject.set(x, "serializers", js.undefined)
+      inline def setSerializersUndefined: Self = StObject.set(x, "serializers", js.undefined)
     }
   }
   
@@ -59,50 +53,36 @@ object anon {
   }
   object keyinLevelstring {
     
-    @scala.inline
-    def apply(): keyinLevelstring = {
+    inline def apply(): keyinLevelstring = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[keyinLevelstring]
     }
     
-    @scala.inline
-    implicit class keyinLevelstringMutableBuilder[Self <: keyinLevelstring] (val x: Self) extends AnyVal {
+    extension [Self <: keyinLevelstring](x: Self) {
       
-      @scala.inline
-      def setDebug(value: String): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: String): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setFatal(value: String): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
+      inline def setFatal(value: String): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFatalUndefined: Self = StObject.set(x, "fatal", js.undefined)
+      inline def setFatalUndefined: Self = StObject.set(x, "fatal", js.undefined)
       
-      @scala.inline
-      def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+      inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
       
-      @scala.inline
-      def setTrace(value: String): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
+      inline def setTrace(value: String): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
+      inline def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
       
-      @scala.inline
-      def setWarn(value: String): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+      inline def setWarn(value: String): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
+      inline def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
     }
   }
 }

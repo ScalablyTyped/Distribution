@@ -19,11 +19,9 @@ object mod {
   @js.native
   val dom: Dom_ = js.native
   
-  @scala.inline
-  def expect(value: js.Any): Expect_ = ^.asInstanceOf[js.Dynamic].applyDynamic("expect")(value.asInstanceOf[js.Any]).asInstanceOf[Expect_]
+  inline def expect(value: js.Any): Expect_ = ^.asInstanceOf[js.Dynamic].applyDynamic("expect")(value.asInstanceOf[js.Any]).asInstanceOf[Expect_]
   
-  @scala.inline
-  def spy(config: js.Any*): js.Function1[/* repeated */ js.Any, SpyProxy] = ^.asInstanceOf[js.Dynamic].applyDynamic("spy")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, SpyProxy]]
+  inline def spy(config: js.Any*): js.Function1[/* repeated */ js.Any, SpyProxy] = ^.asInstanceOf[js.Dynamic].applyDynamic("spy")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, SpyProxy]]
   
   trait Dom_ extends StObject {
     
@@ -37,8 +35,7 @@ object mod {
   }
   object Dom_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clear: () => Unit,
       create: () => Unit,
       destroy: () => Unit,
@@ -48,20 +45,15 @@ object mod {
       __obj.asInstanceOf[Dom_]
     }
     
-    @scala.inline
-    implicit class Dom_MutableBuilder[Self <: Dom_] (val x: Self) extends AnyVal {
+    extension [Self <: Dom_](x: Self) {
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCreate(value: () => Unit): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
+      inline def setCreate(value: () => Unit): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setExposedProperties(value: js.Tuple3[window, navigator, document]): Self = StObject.set(x, "exposedProperties", value.asInstanceOf[js.Any])
+      inline def setExposedProperties(value: js.Tuple3[window, navigator, document]): Self = StObject.set(x, "exposedProperties", value.asInstanceOf[js.Any])
     }
   }
   
@@ -103,8 +95,7 @@ object mod {
   }
   object Expect_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       not: Expect_,
       toBe: js.Any => Unit,
       toBeDefined: () => Unit,
@@ -127,59 +118,41 @@ object mod {
       __obj.asInstanceOf[Expect_]
     }
     
-    @scala.inline
-    implicit class Expect_MutableBuilder[Self <: Expect_] (val x: Self) extends AnyVal {
+    extension [Self <: Expect_](x: Self) {
       
-      @scala.inline
-      def setNot(value: Expect_): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
+      inline def setNot(value: Expect_): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToBe(value: js.Any => Unit): Self = StObject.set(x, "toBe", js.Any.fromFunction1(value))
+      inline def setToBe(value: js.Any => Unit): Self = StObject.set(x, "toBe", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToBeDefined(value: () => Unit): Self = StObject.set(x, "toBeDefined", js.Any.fromFunction0(value))
+      inline def setToBeDefined(value: () => Unit): Self = StObject.set(x, "toBeDefined", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToBeFalsy(value: () => Unit): Self = StObject.set(x, "toBeFalsy", js.Any.fromFunction0(value))
+      inline def setToBeFalsy(value: () => Unit): Self = StObject.set(x, "toBeFalsy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToBeGreaterThan(value: Double => Unit): Self = StObject.set(x, "toBeGreaterThan", js.Any.fromFunction1(value))
+      inline def setToBeGreaterThan(value: Double => Unit): Self = StObject.set(x, "toBeGreaterThan", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToBeLessThan(value: Double => Unit): Self = StObject.set(x, "toBeLessThan", js.Any.fromFunction1(value))
+      inline def setToBeLessThan(value: Double => Unit): Self = StObject.set(x, "toBeLessThan", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToBeNull(value: () => Unit): Self = StObject.set(x, "toBeNull", js.Any.fromFunction0(value))
+      inline def setToBeNull(value: () => Unit): Self = StObject.set(x, "toBeNull", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToBeTruthy(value: () => Unit): Self = StObject.set(x, "toBeTruthy", js.Any.fromFunction0(value))
+      inline def setToBeTruthy(value: () => Unit): Self = StObject.set(x, "toBeTruthy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToBeUndefined(value: () => Unit): Self = StObject.set(x, "toBeUndefined", js.Any.fromFunction0(value))
+      inline def setToBeUndefined(value: () => Unit): Self = StObject.set(x, "toBeUndefined", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToContain(value: js.Any => Unit): Self = StObject.set(x, "toContain", js.Any.fromFunction1(value))
+      inline def setToContain(value: js.Any => Unit): Self = StObject.set(x, "toContain", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToEqual(value: js.Any => Unit): Self = StObject.set(x, "toEqual", js.Any.fromFunction1(value))
+      inline def setToEqual(value: js.Any => Unit): Self = StObject.set(x, "toEqual", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToHaveBeenCalled(value: () => Unit): Self = StObject.set(x, "toHaveBeenCalled", js.Any.fromFunction0(value))
+      inline def setToHaveBeenCalled(value: () => Unit): Self = StObject.set(x, "toHaveBeenCalled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToHaveBeenCalledTimes(value: Double => Unit): Self = StObject.set(x, "toHaveBeenCalledTimes", js.Any.fromFunction1(value))
+      inline def setToHaveBeenCalledTimes(value: Double => Unit): Self = StObject.set(x, "toHaveBeenCalledTimes", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToHaveBeenCalledWith(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "toHaveBeenCalledWith", js.Any.fromFunction1(value))
+      inline def setToHaveBeenCalledWith(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "toHaveBeenCalledWith", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToMatch(value: js.Any => Unit): Self = StObject.set(x, "toMatch", js.Any.fromFunction1(value))
+      inline def setToMatch(value: js.Any => Unit): Self = StObject.set(x, "toMatch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToThrow(value: () => Unit): Self = StObject.set(x, "toThrow", js.Any.fromFunction0(value))
+      inline def setToThrow(value: () => Unit): Self = StObject.set(x, "toThrow", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToThrowError(value: js.Any => Unit): Self = StObject.set(x, "toThrowError", js.Any.fromFunction1(value))
+      inline def setToThrowError(value: js.Any => Unit): Self = StObject.set(x, "toThrowError", js.Any.fromFunction1(value))
     }
   }
   
@@ -199,8 +172,7 @@ object mod {
   }
   object SpyProxy {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       and: SpyProxy,
       callFake: js.Function1[/* repeated */ js.Any, js.Any] => Unit,
       callThrough: () => Unit,
@@ -211,26 +183,19 @@ object mod {
       __obj.asInstanceOf[SpyProxy]
     }
     
-    @scala.inline
-    implicit class SpyProxyMutableBuilder[Self <: SpyProxy] (val x: Self) extends AnyVal {
+    extension [Self <: SpyProxy](x: Self) {
       
-      @scala.inline
-      def setAnd(value: SpyProxy): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
+      inline def setAnd(value: SpyProxy): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallFake(value: js.Function1[/* repeated */ js.Any, js.Any] => Unit): Self = StObject.set(x, "callFake", js.Any.fromFunction1(value))
+      inline def setCallFake(value: js.Function1[/* repeated */ js.Any, js.Any] => Unit): Self = StObject.set(x, "callFake", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCallThrough(value: () => Unit): Self = StObject.set(x, "callThrough", js.Any.fromFunction0(value))
+      inline def setCallThrough(value: () => Unit): Self = StObject.set(x, "callThrough", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSubject(value: () => SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "getSubject", js.Any.fromFunction0(value))
+      inline def setGetSubject(value: () => SinonStub[js.Array[js.Any], js.Any]): Self = StObject.set(x, "getSubject", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReturnValue(value: js.Any => Unit): Self = StObject.set(x, "returnValue", js.Any.fromFunction1(value))
+      inline def setReturnValue(value: js.Any => Unit): Self = StObject.set(x, "returnValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSpyProxy(value: `true`): Self = StObject.set(x, "spyProxy", value.asInstanceOf[js.Any])
+      inline def setSpyProxy(value: `true`): Self = StObject.set(x, "spyProxy", value.asInstanceOf[js.Any])
     }
   }
 }

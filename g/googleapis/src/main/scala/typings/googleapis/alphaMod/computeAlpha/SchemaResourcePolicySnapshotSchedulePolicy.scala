@@ -31,31 +31,23 @@ trait SchemaResourcePolicySnapshotSchedulePolicy extends StObject {
 }
 object SchemaResourcePolicySnapshotSchedulePolicy {
   
-  @scala.inline
-  def apply(): SchemaResourcePolicySnapshotSchedulePolicy = {
+  inline def apply(): SchemaResourcePolicySnapshotSchedulePolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaResourcePolicySnapshotSchedulePolicy]
   }
   
-  @scala.inline
-  implicit class SchemaResourcePolicySnapshotSchedulePolicyMutableBuilder[Self <: SchemaResourcePolicySnapshotSchedulePolicy] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaResourcePolicySnapshotSchedulePolicy](x: Self) {
     
-    @scala.inline
-    def setRetentionPolicy(value: SchemaResourcePolicySnapshotSchedulePolicyRetentionPolicy): Self = StObject.set(x, "retentionPolicy", value.asInstanceOf[js.Any])
+    inline def setRetentionPolicy(value: SchemaResourcePolicySnapshotSchedulePolicyRetentionPolicy): Self = StObject.set(x, "retentionPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetentionPolicyUndefined: Self = StObject.set(x, "retentionPolicy", js.undefined)
+    inline def setRetentionPolicyUndefined: Self = StObject.set(x, "retentionPolicy", js.undefined)
     
-    @scala.inline
-    def setSchedule(value: SchemaResourcePolicySnapshotSchedulePolicySchedule): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+    inline def setSchedule(value: SchemaResourcePolicySnapshotSchedulePolicySchedule): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
+    inline def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
     
-    @scala.inline
-    def setSnapshotProperties(value: SchemaResourcePolicySnapshotSchedulePolicySnapshotProperties): Self = StObject.set(x, "snapshotProperties", value.asInstanceOf[js.Any])
+    inline def setSnapshotProperties(value: SchemaResourcePolicySnapshotSchedulePolicySnapshotProperties): Self = StObject.set(x, "snapshotProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotPropertiesUndefined: Self = StObject.set(x, "snapshotProperties", js.undefined)
+    inline def setSnapshotPropertiesUndefined: Self = StObject.set(x, "snapshotProperties", js.undefined)
   }
 }

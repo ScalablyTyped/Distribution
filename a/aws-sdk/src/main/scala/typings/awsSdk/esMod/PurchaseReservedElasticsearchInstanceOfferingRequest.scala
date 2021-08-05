@@ -23,25 +23,19 @@ trait PurchaseReservedElasticsearchInstanceOfferingRequest extends StObject {
 }
 object PurchaseReservedElasticsearchInstanceOfferingRequest {
   
-  @scala.inline
-  def apply(ReservationName: ReservationToken, ReservedElasticsearchInstanceOfferingId: GUID): PurchaseReservedElasticsearchInstanceOfferingRequest = {
+  inline def apply(ReservationName: ReservationToken, ReservedElasticsearchInstanceOfferingId: GUID): PurchaseReservedElasticsearchInstanceOfferingRequest = {
     val __obj = js.Dynamic.literal(ReservationName = ReservationName.asInstanceOf[js.Any], ReservedElasticsearchInstanceOfferingId = ReservedElasticsearchInstanceOfferingId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PurchaseReservedElasticsearchInstanceOfferingRequest]
   }
   
-  @scala.inline
-  implicit class PurchaseReservedElasticsearchInstanceOfferingRequestMutableBuilder[Self <: PurchaseReservedElasticsearchInstanceOfferingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PurchaseReservedElasticsearchInstanceOfferingRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceCount(value: InstanceCount): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
+    inline def setInstanceCount(value: InstanceCount): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceCountUndefined: Self = StObject.set(x, "InstanceCount", js.undefined)
+    inline def setInstanceCountUndefined: Self = StObject.set(x, "InstanceCount", js.undefined)
     
-    @scala.inline
-    def setReservationName(value: ReservationToken): Self = StObject.set(x, "ReservationName", value.asInstanceOf[js.Any])
+    inline def setReservationName(value: ReservationToken): Self = StObject.set(x, "ReservationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedElasticsearchInstanceOfferingId(value: GUID): Self = StObject.set(x, "ReservedElasticsearchInstanceOfferingId", value.asInstanceOf[js.Any])
+    inline def setReservedElasticsearchInstanceOfferingId(value: GUID): Self = StObject.set(x, "ReservedElasticsearchInstanceOfferingId", value.asInstanceOf[js.Any])
   }
 }

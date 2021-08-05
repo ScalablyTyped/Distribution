@@ -150,8 +150,7 @@ object mod {
   }
   object StackFrame {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getArgs: () => js.UndefOr[js.Array[js.Any]],
       getColumnNumber: () => js.UndefOr[Double],
       getEvalOrigin: () => js.UndefOr[StackFrame],
@@ -179,143 +178,97 @@ object mod {
       __obj.asInstanceOf[StackFrame]
     }
     
-    @scala.inline
-    implicit class StackFrameMutableBuilder[Self <: StackFrame] (val x: Self) extends AnyVal {
+    extension [Self <: StackFrame](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+      inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      @scala.inline
-      def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
+      inline def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnNumberUndefined: Self = StObject.set(x, "columnNumber", js.undefined)
+      inline def setColumnNumberUndefined: Self = StObject.set(x, "columnNumber", js.undefined)
       
-      @scala.inline
-      def setEvalOrigin(value: StackFrame): Self = StObject.set(x, "evalOrigin", value.asInstanceOf[js.Any])
+      inline def setEvalOrigin(value: StackFrame): Self = StObject.set(x, "evalOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvalOriginUndefined: Self = StObject.set(x, "evalOrigin", js.undefined)
+      inline def setEvalOriginUndefined: Self = StObject.set(x, "evalOrigin", js.undefined)
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+      inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
       
-      @scala.inline
-      def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
+      inline def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
+      inline def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
       
-      @scala.inline
-      def setGetArgs(value: () => js.UndefOr[js.Array[js.Any]]): Self = StObject.set(x, "getArgs", js.Any.fromFunction0(value))
+      inline def setGetArgs(value: () => js.UndefOr[js.Array[js.Any]]): Self = StObject.set(x, "getArgs", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetColumnNumber(value: () => js.UndefOr[Double]): Self = StObject.set(x, "getColumnNumber", js.Any.fromFunction0(value))
+      inline def setGetColumnNumber(value: () => js.UndefOr[Double]): Self = StObject.set(x, "getColumnNumber", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetEvalOrigin(value: () => js.UndefOr[StackFrame]): Self = StObject.set(x, "getEvalOrigin", js.Any.fromFunction0(value))
+      inline def setGetEvalOrigin(value: () => js.UndefOr[StackFrame]): Self = StObject.set(x, "getEvalOrigin", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFileName(value: () => js.UndefOr[String]): Self = StObject.set(x, "getFileName", js.Any.fromFunction0(value))
+      inline def setGetFileName(value: () => js.UndefOr[String]): Self = StObject.set(x, "getFileName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFunctionName(value: () => js.UndefOr[String]): Self = StObject.set(x, "getFunctionName", js.Any.fromFunction0(value))
+      inline def setGetFunctionName(value: () => js.UndefOr[String]): Self = StObject.set(x, "getFunctionName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetIsConstructor(value: () => js.UndefOr[Boolean]): Self = StObject.set(x, "getIsConstructor", js.Any.fromFunction0(value))
+      inline def setGetIsConstructor(value: () => js.UndefOr[Boolean]): Self = StObject.set(x, "getIsConstructor", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetIsEval(value: () => js.UndefOr[Boolean]): Self = StObject.set(x, "getIsEval", js.Any.fromFunction0(value))
+      inline def setGetIsEval(value: () => js.UndefOr[Boolean]): Self = StObject.set(x, "getIsEval", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetIsNative(value: () => js.UndefOr[Boolean]): Self = StObject.set(x, "getIsNative", js.Any.fromFunction0(value))
+      inline def setGetIsNative(value: () => js.UndefOr[Boolean]): Self = StObject.set(x, "getIsNative", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetIsToplevel(value: () => js.UndefOr[Boolean]): Self = StObject.set(x, "getIsToplevel", js.Any.fromFunction0(value))
+      inline def setGetIsToplevel(value: () => js.UndefOr[Boolean]): Self = StObject.set(x, "getIsToplevel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLineNumber(value: () => js.UndefOr[Double]): Self = StObject.set(x, "getLineNumber", js.Any.fromFunction0(value))
+      inline def setGetLineNumber(value: () => js.UndefOr[Double]): Self = StObject.set(x, "getLineNumber", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSource(value: () => js.UndefOr[String]): Self = StObject.set(x, "getSource", js.Any.fromFunction0(value))
+      inline def setGetSource(value: () => js.UndefOr[String]): Self = StObject.set(x, "getSource", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsConstructor(value: Boolean): Self = StObject.set(x, "isConstructor", value.asInstanceOf[js.Any])
+      inline def setIsConstructor(value: Boolean): Self = StObject.set(x, "isConstructor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsConstructorUndefined: Self = StObject.set(x, "isConstructor", js.undefined)
+      inline def setIsConstructorUndefined: Self = StObject.set(x, "isConstructor", js.undefined)
       
-      @scala.inline
-      def setIsEval(value: Boolean): Self = StObject.set(x, "isEval", value.asInstanceOf[js.Any])
+      inline def setIsEval(value: Boolean): Self = StObject.set(x, "isEval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEvalUndefined: Self = StObject.set(x, "isEval", js.undefined)
+      inline def setIsEvalUndefined: Self = StObject.set(x, "isEval", js.undefined)
       
-      @scala.inline
-      def setIsNative(value: Boolean): Self = StObject.set(x, "isNative", value.asInstanceOf[js.Any])
+      inline def setIsNative(value: Boolean): Self = StObject.set(x, "isNative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsNativeUndefined: Self = StObject.set(x, "isNative", js.undefined)
+      inline def setIsNativeUndefined: Self = StObject.set(x, "isNative", js.undefined)
       
-      @scala.inline
-      def setIsToplevel(value: Boolean): Self = StObject.set(x, "isToplevel", value.asInstanceOf[js.Any])
+      inline def setIsToplevel(value: Boolean): Self = StObject.set(x, "isToplevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsToplevelUndefined: Self = StObject.set(x, "isToplevel", js.undefined)
+      inline def setIsToplevelUndefined: Self = StObject.set(x, "isToplevel", js.undefined)
       
-      @scala.inline
-      def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+      inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
+      inline def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
       
-      @scala.inline
-      def setSetArgs(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "setArgs", js.Any.fromFunction1(value))
+      inline def setSetArgs(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "setArgs", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetColumnNumber(value: Double => Unit): Self = StObject.set(x, "setColumnNumber", js.Any.fromFunction1(value))
+      inline def setSetColumnNumber(value: Double => Unit): Self = StObject.set(x, "setColumnNumber", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetEvalOrigin(value: StackFrame => Unit): Self = StObject.set(x, "setEvalOrigin", js.Any.fromFunction1(value))
+      inline def setSetEvalOrigin(value: StackFrame => Unit): Self = StObject.set(x, "setEvalOrigin", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetFileName(value: String => Unit): Self = StObject.set(x, "setFileName", js.Any.fromFunction1(value))
+      inline def setSetFileName(value: String => Unit): Self = StObject.set(x, "setFileName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetFunctionName(value: String => Unit): Self = StObject.set(x, "setFunctionName", js.Any.fromFunction1(value))
+      inline def setSetFunctionName(value: String => Unit): Self = StObject.set(x, "setFunctionName", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetIsConstructor(value: Boolean => Unit): Self = StObject.set(x, "setIsConstructor", js.Any.fromFunction1(value))
+      inline def setSetIsConstructor(value: Boolean => Unit): Self = StObject.set(x, "setIsConstructor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetIsEval(value: Boolean => Unit): Self = StObject.set(x, "setIsEval", js.Any.fromFunction1(value))
+      inline def setSetIsEval(value: Boolean => Unit): Self = StObject.set(x, "setIsEval", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetIsNative(value: Boolean => Unit): Self = StObject.set(x, "setIsNative", js.Any.fromFunction1(value))
+      inline def setSetIsNative(value: Boolean => Unit): Self = StObject.set(x, "setIsNative", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetIsToplevel(value: Boolean => Unit): Self = StObject.set(x, "setIsToplevel", js.Any.fromFunction1(value))
+      inline def setSetIsToplevel(value: Boolean => Unit): Self = StObject.set(x, "setIsToplevel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetLineNumber(value: Double => Unit): Self = StObject.set(x, "setLineNumber", js.Any.fromFunction1(value))
+      inline def setSetLineNumber(value: Double => Unit): Self = StObject.set(x, "setLineNumber", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetSource(value: String => Unit): Self = StObject.set(x, "setSource", js.Any.fromFunction1(value))
+      inline def setSetSource(value: String => Unit): Self = StObject.set(x, "setSource", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     }
   }
   
@@ -345,83 +298,58 @@ object mod {
   }
   object StackFrameOptions {
     
-    @scala.inline
-    def apply(): StackFrameOptions = {
+    inline def apply(): StackFrameOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StackFrameOptions]
     }
     
-    @scala.inline
-    implicit class StackFrameOptionsMutableBuilder[Self <: StackFrameOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StackFrameOptions](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+      inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      @scala.inline
-      def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
+      inline def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnNumberUndefined: Self = StObject.set(x, "columnNumber", js.undefined)
+      inline def setColumnNumberUndefined: Self = StObject.set(x, "columnNumber", js.undefined)
       
-      @scala.inline
-      def setEvalOrigin(value: StackFrame): Self = StObject.set(x, "evalOrigin", value.asInstanceOf[js.Any])
+      inline def setEvalOrigin(value: StackFrame): Self = StObject.set(x, "evalOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvalOriginUndefined: Self = StObject.set(x, "evalOrigin", js.undefined)
+      inline def setEvalOriginUndefined: Self = StObject.set(x, "evalOrigin", js.undefined)
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+      inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
       
-      @scala.inline
-      def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
+      inline def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
+      inline def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
       
-      @scala.inline
-      def setIsConstructor(value: Boolean): Self = StObject.set(x, "isConstructor", value.asInstanceOf[js.Any])
+      inline def setIsConstructor(value: Boolean): Self = StObject.set(x, "isConstructor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsConstructorUndefined: Self = StObject.set(x, "isConstructor", js.undefined)
+      inline def setIsConstructorUndefined: Self = StObject.set(x, "isConstructor", js.undefined)
       
-      @scala.inline
-      def setIsEval(value: Boolean): Self = StObject.set(x, "isEval", value.asInstanceOf[js.Any])
+      inline def setIsEval(value: Boolean): Self = StObject.set(x, "isEval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEvalUndefined: Self = StObject.set(x, "isEval", js.undefined)
+      inline def setIsEvalUndefined: Self = StObject.set(x, "isEval", js.undefined)
       
-      @scala.inline
-      def setIsNative(value: Boolean): Self = StObject.set(x, "isNative", value.asInstanceOf[js.Any])
+      inline def setIsNative(value: Boolean): Self = StObject.set(x, "isNative", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsNativeUndefined: Self = StObject.set(x, "isNative", js.undefined)
+      inline def setIsNativeUndefined: Self = StObject.set(x, "isNative", js.undefined)
       
-      @scala.inline
-      def setIsToplevel(value: Boolean): Self = StObject.set(x, "isToplevel", value.asInstanceOf[js.Any])
+      inline def setIsToplevel(value: Boolean): Self = StObject.set(x, "isToplevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsToplevelUndefined: Self = StObject.set(x, "isToplevel", js.undefined)
+      inline def setIsToplevelUndefined: Self = StObject.set(x, "isToplevel", js.undefined)
       
-      @scala.inline
-      def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+      inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
+      inline def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     }
   }
 }

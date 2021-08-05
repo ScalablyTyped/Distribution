@@ -12,8 +12,7 @@ object carouselStyleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(theme: Theme): CarouselStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[CarouselStyle]
+  inline def default(theme: Theme): CarouselStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[CarouselStyle]
   
   trait CarouselStyle extends StObject {
     
@@ -31,8 +30,7 @@ object carouselStyleMod {
   }
   object CarouselStyle {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       pagination: ViewStyle,
       paginationX: ViewStyle,
       paginationY: ViewStyle,
@@ -44,26 +42,19 @@ object carouselStyleMod {
       __obj.asInstanceOf[CarouselStyle]
     }
     
-    @scala.inline
-    implicit class CarouselStyleMutableBuilder[Self <: CarouselStyle] (val x: Self) extends AnyVal {
+    extension [Self <: CarouselStyle](x: Self) {
       
-      @scala.inline
-      def setPagination(value: ViewStyle): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
+      inline def setPagination(value: ViewStyle): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaginationX(value: ViewStyle): Self = StObject.set(x, "paginationX", value.asInstanceOf[js.Any])
+      inline def setPaginationX(value: ViewStyle): Self = StObject.set(x, "paginationX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaginationY(value: ViewStyle): Self = StObject.set(x, "paginationY", value.asInstanceOf[js.Any])
+      inline def setPaginationY(value: ViewStyle): Self = StObject.set(x, "paginationY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointActiveStyle(value: ViewStyle): Self = StObject.set(x, "pointActiveStyle", value.asInstanceOf[js.Any])
+      inline def setPointActiveStyle(value: ViewStyle): Self = StObject.set(x, "pointActiveStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointStyle(value: ViewStyle): Self = StObject.set(x, "pointStyle", value.asInstanceOf[js.Any])
+      inline def setPointStyle(value: ViewStyle): Self = StObject.set(x, "pointStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpaceStyle(value: ViewStyle): Self = StObject.set(x, "spaceStyle", value.asInstanceOf[js.Any])
+      inline def setSpaceStyle(value: ViewStyle): Self = StObject.set(x, "spaceStyle", value.asInstanceOf[js.Any])
     }
   }
 }

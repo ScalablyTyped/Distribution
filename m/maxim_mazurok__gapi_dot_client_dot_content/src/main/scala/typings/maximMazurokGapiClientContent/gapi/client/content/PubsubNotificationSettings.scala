@@ -17,34 +17,25 @@ trait PubsubNotificationSettings extends StObject {
 }
 object PubsubNotificationSettings {
   
-  @scala.inline
-  def apply(): PubsubNotificationSettings = {
+  inline def apply(): PubsubNotificationSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PubsubNotificationSettings]
   }
   
-  @scala.inline
-  implicit class PubsubNotificationSettingsMutableBuilder[Self <: PubsubNotificationSettings] (val x: Self) extends AnyVal {
+  extension [Self <: PubsubNotificationSettings](x: Self) {
     
-    @scala.inline
-    def setCloudTopicName(value: String): Self = StObject.set(x, "cloudTopicName", value.asInstanceOf[js.Any])
+    inline def setCloudTopicName(value: String): Self = StObject.set(x, "cloudTopicName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudTopicNameUndefined: Self = StObject.set(x, "cloudTopicName", js.undefined)
+    inline def setCloudTopicNameUndefined: Self = StObject.set(x, "cloudTopicName", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setRegisteredEvents(value: js.Array[String]): Self = StObject.set(x, "registeredEvents", value.asInstanceOf[js.Any])
+    inline def setRegisteredEvents(value: js.Array[String]): Self = StObject.set(x, "registeredEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegisteredEventsUndefined: Self = StObject.set(x, "registeredEvents", js.undefined)
+    inline def setRegisteredEventsUndefined: Self = StObject.set(x, "registeredEvents", js.undefined)
     
-    @scala.inline
-    def setRegisteredEventsVarargs(value: String*): Self = StObject.set(x, "registeredEvents", js.Array(value :_*))
+    inline def setRegisteredEventsVarargs(value: String*): Self = StObject.set(x, "registeredEvents", js.Array(value :_*))
   }
 }

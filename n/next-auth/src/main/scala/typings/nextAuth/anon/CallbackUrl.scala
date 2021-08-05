@@ -10,19 +10,15 @@ trait CallbackUrl extends StObject {
 }
 object CallbackUrl {
   
-  @scala.inline
-  def apply(): CallbackUrl = {
+  inline def apply(): CallbackUrl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CallbackUrl]
   }
   
-  @scala.inline
-  implicit class CallbackUrlMutableBuilder[Self <: CallbackUrl] (val x: Self) extends AnyVal {
+  extension [Self <: CallbackUrl](x: Self) {
     
-    @scala.inline
-    def setCallbackUrl(value: String): Self = StObject.set(x, "callbackUrl", value.asInstanceOf[js.Any])
+    inline def setCallbackUrl(value: String): Self = StObject.set(x, "callbackUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackUrlUndefined: Self = StObject.set(x, "callbackUrl", js.undefined)
+    inline def setCallbackUrlUndefined: Self = StObject.set(x, "callbackUrl", js.undefined)
   }
 }

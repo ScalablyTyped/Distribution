@@ -11,15 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FlowType extends StObject
 object FlowType {
   
-  @scala.inline
-  def IncompleteType(flags: TypeFlags, `type`: Type): typings.typescript.mod.IncompleteType = {
+  inline def IncompleteType(flags: TypeFlags, `type`: Type): typings.typescript.mod.IncompleteType = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.typescript.mod.IncompleteType]
   }
   
-  @scala.inline
-  def Type(
+  inline def Type(
     flags: TypeFlags,
     getApparentProperties: () => js.Array[Symbol],
     getBaseTypes: () => js.UndefOr[js.Array[BaseType]],

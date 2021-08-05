@@ -23,31 +23,23 @@ trait ListMitigationActionsRequest extends StObject {
 }
 object ListMitigationActionsRequest {
   
-  @scala.inline
-  def apply(): ListMitigationActionsRequest = {
+  inline def apply(): ListMitigationActionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListMitigationActionsRequest]
   }
   
-  @scala.inline
-  implicit class ListMitigationActionsRequestMutableBuilder[Self <: ListMitigationActionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListMitigationActionsRequest](x: Self) {
     
-    @scala.inline
-    def setActionType(value: MitigationActionType): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
+    inline def setActionType(value: MitigationActionType): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionTypeUndefined: Self = StObject.set(x, "actionType", js.undefined)
+    inline def setActionTypeUndefined: Self = StObject.set(x, "actionType", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

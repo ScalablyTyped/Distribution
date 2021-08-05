@@ -13,13 +13,10 @@ object optionalMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isOptionalType[IT /* <: IAnyType */](`type`: IT): /* is IT */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOptionalType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is IT */ Boolean]
+  inline def isOptionalType[IT /* <: IAnyType */](`type`: IT): /* is IT */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOptionalType")(`type`.asInstanceOf[js.Any]).asInstanceOf[/* is IT */ Boolean]
   
-  @scala.inline
-  def optional[IT /* <: IAnyType */](`type`: IT, defaultValueOrFunction: OptionalDefaultValueOrFunction[IT]): IOptionalIType[IT, js.Array[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("optional")(`type`.asInstanceOf[js.Any], defaultValueOrFunction.asInstanceOf[js.Any])).asInstanceOf[IOptionalIType[IT, js.Array[Unit]]]
-  @scala.inline
-  def optional[IT /* <: IAnyType */, OptionalVals /* <: ValidOptionalValues */](
+  inline def optional[IT /* <: IAnyType */](`type`: IT, defaultValueOrFunction: OptionalDefaultValueOrFunction[IT]): IOptionalIType[IT, js.Array[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("optional")(`type`.asInstanceOf[js.Any], defaultValueOrFunction.asInstanceOf[js.Any])).asInstanceOf[IOptionalIType[IT, js.Array[Unit]]]
+  inline def optional[IT /* <: IAnyType */, OptionalVals /* <: ValidOptionalValues */](
     `type`: IT,
     defaultValueOrFunction: OptionalDefaultValueOrFunction[IT],
     optionalValues: OptionalVals

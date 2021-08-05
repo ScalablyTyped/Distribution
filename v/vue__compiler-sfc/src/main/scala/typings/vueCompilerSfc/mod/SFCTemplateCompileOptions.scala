@@ -39,67 +39,47 @@ trait SFCTemplateCompileOptions extends StObject {
 }
 object SFCTemplateCompileOptions {
   
-  @scala.inline
-  def apply(filename: String, source: String): SFCTemplateCompileOptions = {
+  inline def apply(filename: String, source: String): SFCTemplateCompileOptions = {
     val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.asInstanceOf[SFCTemplateCompileOptions]
   }
   
-  @scala.inline
-  implicit class SFCTemplateCompileOptionsMutableBuilder[Self <: SFCTemplateCompileOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SFCTemplateCompileOptions](x: Self) {
     
-    @scala.inline
-    def setCompiler(value: TemplateCompiler): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
+    inline def setCompiler(value: TemplateCompiler): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompilerOptions(value: CompilerOptions): Self = StObject.set(x, "compilerOptions", value.asInstanceOf[js.Any])
+    inline def setCompilerOptions(value: CompilerOptions): Self = StObject.set(x, "compilerOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompilerOptionsUndefined: Self = StObject.set(x, "compilerOptions", js.undefined)
+    inline def setCompilerOptionsUndefined: Self = StObject.set(x, "compilerOptions", js.undefined)
     
-    @scala.inline
-    def setCompilerUndefined: Self = StObject.set(x, "compiler", js.undefined)
+    inline def setCompilerUndefined: Self = StObject.set(x, "compiler", js.undefined)
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInMap(value: RawSourceMap): Self = StObject.set(x, "inMap", value.asInstanceOf[js.Any])
+    inline def setInMap(value: RawSourceMap): Self = StObject.set(x, "inMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInMapUndefined: Self = StObject.set(x, "inMap", js.undefined)
+    inline def setInMapUndefined: Self = StObject.set(x, "inMap", js.undefined)
     
-    @scala.inline
-    def setPreprocessCustomRequire(value: /* id */ String => js.Any): Self = StObject.set(x, "preprocessCustomRequire", js.Any.fromFunction1(value))
+    inline def setPreprocessCustomRequire(value: /* id */ String => js.Any): Self = StObject.set(x, "preprocessCustomRequire", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPreprocessCustomRequireUndefined: Self = StObject.set(x, "preprocessCustomRequire", js.undefined)
+    inline def setPreprocessCustomRequireUndefined: Self = StObject.set(x, "preprocessCustomRequire", js.undefined)
     
-    @scala.inline
-    def setPreprocessLang(value: String): Self = StObject.set(x, "preprocessLang", value.asInstanceOf[js.Any])
+    inline def setPreprocessLang(value: String): Self = StObject.set(x, "preprocessLang", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreprocessLangUndefined: Self = StObject.set(x, "preprocessLang", js.undefined)
+    inline def setPreprocessLangUndefined: Self = StObject.set(x, "preprocessLang", js.undefined)
     
-    @scala.inline
-    def setPreprocessOptions(value: js.Any): Self = StObject.set(x, "preprocessOptions", value.asInstanceOf[js.Any])
+    inline def setPreprocessOptions(value: js.Any): Self = StObject.set(x, "preprocessOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreprocessOptionsUndefined: Self = StObject.set(x, "preprocessOptions", js.undefined)
+    inline def setPreprocessOptionsUndefined: Self = StObject.set(x, "preprocessOptions", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsr(value: Boolean): Self = StObject.set(x, "ssr", value.asInstanceOf[js.Any])
+    inline def setSsr(value: Boolean): Self = StObject.set(x, "ssr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsrUndefined: Self = StObject.set(x, "ssr", js.undefined)
+    inline def setSsrUndefined: Self = StObject.set(x, "ssr", js.undefined)
     
-    @scala.inline
-    def setTransformAssetUrls(value: AssetURLOptions | AssetURLTagConfig | Boolean): Self = StObject.set(x, "transformAssetUrls", value.asInstanceOf[js.Any])
+    inline def setTransformAssetUrls(value: AssetURLOptions | AssetURLTagConfig | Boolean): Self = StObject.set(x, "transformAssetUrls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformAssetUrlsUndefined: Self = StObject.set(x, "transformAssetUrls", js.undefined)
+    inline def setTransformAssetUrlsUndefined: Self = StObject.set(x, "transformAssetUrls", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait PhoneMultiFactorEnrollInfoOptions
 }
 object PhoneMultiFactorEnrollInfoOptions {
   
-  @scala.inline
-  def apply(phoneNumber: String, session: MultiFactorSession): PhoneMultiFactorEnrollInfoOptions = {
+  inline def apply(phoneNumber: String, session: MultiFactorSession): PhoneMultiFactorEnrollInfoOptions = {
     val __obj = js.Dynamic.literal(phoneNumber = phoneNumber.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
     __obj.asInstanceOf[PhoneMultiFactorEnrollInfoOptions]
   }
   
-  @scala.inline
-  implicit class PhoneMultiFactorEnrollInfoOptionsMutableBuilder[Self <: PhoneMultiFactorEnrollInfoOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PhoneMultiFactorEnrollInfoOptions](x: Self) {
     
-    @scala.inline
-    def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
+    inline def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: MultiFactorSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    inline def setSession(value: MultiFactorSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
   }
 }

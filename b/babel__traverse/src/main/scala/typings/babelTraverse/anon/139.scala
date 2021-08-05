@@ -11,17 +11,14 @@ trait `139` extends StObject {
 }
 object `139` {
   
-  @scala.inline
-  def apply(): `139` = {
+  inline def apply(): `139` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("EmptyTypeAnnotation")
     __obj.asInstanceOf[`139`]
   }
   
-  @scala.inline
-  implicit class `139MutableBuilder`[Self <: `139`] (val x: Self) extends AnyVal {
+  extension [Self <: `139`](x: Self) {
     
-    @scala.inline
-    def setType(value: EmptyTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: EmptyTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

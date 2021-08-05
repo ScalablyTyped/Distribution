@@ -24,7 +24,7 @@ class EndOfCentralDirectory protected () extends StObject {
   
   def cdZipCommentLength(): Double = js.native
   
-  var data: js.Any = js.native
+  /* private */ var data: js.Any = js.native
   
   def diskNumber(): Double = js.native
   

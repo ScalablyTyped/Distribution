@@ -36,94 +36,65 @@ trait SubscriptionConfig extends StObject {
 }
 object SubscriptionConfig {
   
-  @scala.inline
-  def apply(): SubscriptionConfig = {
+  inline def apply(): SubscriptionConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SubscriptionConfig]
   }
   
-  @scala.inline
-  implicit class SubscriptionConfigMutableBuilder[Self <: SubscriptionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SubscriptionConfig](x: Self) {
     
-    @scala.inline
-    def setAutoCreated(value: Boolean): Self = StObject.set(x, "autoCreated", value.asInstanceOf[js.Any])
+    inline def setAutoCreated(value: Boolean): Self = StObject.set(x, "autoCreated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoCreatedUndefined: Self = StObject.set(x, "autoCreated", js.undefined)
+    inline def setAutoCreatedUndefined: Self = StObject.set(x, "autoCreated", js.undefined)
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setDeferCloseChannel(value: Double): Self = StObject.set(x, "deferCloseChannel", value.asInstanceOf[js.Any])
+    inline def setDeferCloseChannel(value: Double): Self = StObject.set(x, "deferCloseChannel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferCloseChannelUndefined: Self = StObject.set(x, "deferCloseChannel", js.undefined)
+    inline def setDeferCloseChannelUndefined: Self = StObject.set(x, "deferCloseChannel", js.undefined)
     
-    @scala.inline
-    def setEncryption(value: String): Self = StObject.set(x, "encryption", value.asInstanceOf[js.Any])
+    inline def setEncryption(value: String): Self = StObject.set(x, "encryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionUndefined: Self = StObject.set(x, "encryption", js.undefined)
+    inline def setEncryptionUndefined: Self = StObject.set(x, "encryption", js.undefined)
     
-    @scala.inline
-    def setHandler(value: String): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+    inline def setHandler(value: String): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
+    inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
     
-    @scala.inline
-    def setHandlers(value: js.Array[String]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
+    inline def setHandlers(value: js.Array[String]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandlersUndefined: Self = StObject.set(x, "handlers", js.undefined)
+    inline def setHandlersUndefined: Self = StObject.set(x, "handlers", js.undefined)
     
-    @scala.inline
-    def setHandlersVarargs(value: String*): Self = StObject.set(x, "handlers", js.Array(value :_*))
+    inline def setHandlersVarargs(value: String*): Self = StObject.set(x, "handlers", js.Array(value :_*))
     
-    @scala.inline
-    def setOptions(value: Consume): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Consume): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setPrefetch(value: Double): Self = StObject.set(x, "prefetch", value.asInstanceOf[js.Any])
+    inline def setPrefetch(value: Double): Self = StObject.set(x, "prefetch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefetchUndefined: Self = StObject.set(x, "prefetch", js.undefined)
+    inline def setPrefetchUndefined: Self = StObject.set(x, "prefetch", js.undefined)
     
-    @scala.inline
-    def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+    inline def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
+    inline def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
     
-    @scala.inline
-    def setRecovery(value: js.Any): Self = StObject.set(x, "recovery", value.asInstanceOf[js.Any])
+    inline def setRecovery(value: js.Any): Self = StObject.set(x, "recovery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecoveryUndefined: Self = StObject.set(x, "recovery", js.undefined)
+    inline def setRecoveryUndefined: Self = StObject.set(x, "recovery", js.undefined)
     
-    @scala.inline
-    def setRedeliveries(value: Counter): Self = StObject.set(x, "redeliveries", value.asInstanceOf[js.Any])
+    inline def setRedeliveries(value: Counter): Self = StObject.set(x, "redeliveries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedeliveriesUndefined: Self = StObject.set(x, "redeliveries", js.undefined)
+    inline def setRedeliveriesUndefined: Self = StObject.set(x, "redeliveries", js.undefined)
     
-    @scala.inline
-    def setRetry(value: RetryConfig | Boolean): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
+    inline def setRetry(value: RetryConfig | Boolean): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
+    inline def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
     
-    @scala.inline
-    def setVhost(value: String): Self = StObject.set(x, "vhost", value.asInstanceOf[js.Any])
+    inline def setVhost(value: String): Self = StObject.set(x, "vhost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVhostUndefined: Self = StObject.set(x, "vhost", js.undefined)
+    inline def setVhostUndefined: Self = StObject.set(x, "vhost", js.undefined)
   }
 }

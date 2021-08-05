@@ -13,16 +13,13 @@ trait GetTrailRequest extends StObject {
 }
 object GetTrailRequest {
   
-  @scala.inline
-  def apply(Name: String): GetTrailRequest = {
+  inline def apply(Name: String): GetTrailRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTrailRequest]
   }
   
-  @scala.inline
-  implicit class GetTrailRequestMutableBuilder[Self <: GetTrailRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetTrailRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

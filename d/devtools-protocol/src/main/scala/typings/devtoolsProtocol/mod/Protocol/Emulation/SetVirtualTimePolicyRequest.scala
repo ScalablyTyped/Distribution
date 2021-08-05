@@ -35,40 +35,29 @@ trait SetVirtualTimePolicyRequest extends StObject {
 }
 object SetVirtualTimePolicyRequest {
   
-  @scala.inline
-  def apply(policy: VirtualTimePolicy): SetVirtualTimePolicyRequest = {
+  inline def apply(policy: VirtualTimePolicy): SetVirtualTimePolicyRequest = {
     val __obj = js.Dynamic.literal(policy = policy.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetVirtualTimePolicyRequest]
   }
   
-  @scala.inline
-  implicit class SetVirtualTimePolicyRequestMutableBuilder[Self <: SetVirtualTimePolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetVirtualTimePolicyRequest](x: Self) {
     
-    @scala.inline
-    def setBudget(value: Double): Self = StObject.set(x, "budget", value.asInstanceOf[js.Any])
+    inline def setBudget(value: Double): Self = StObject.set(x, "budget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBudgetUndefined: Self = StObject.set(x, "budget", js.undefined)
+    inline def setBudgetUndefined: Self = StObject.set(x, "budget", js.undefined)
     
-    @scala.inline
-    def setInitialVirtualTime(value: TimeSinceEpoch): Self = StObject.set(x, "initialVirtualTime", value.asInstanceOf[js.Any])
+    inline def setInitialVirtualTime(value: TimeSinceEpoch): Self = StObject.set(x, "initialVirtualTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialVirtualTimeUndefined: Self = StObject.set(x, "initialVirtualTime", js.undefined)
+    inline def setInitialVirtualTimeUndefined: Self = StObject.set(x, "initialVirtualTime", js.undefined)
     
-    @scala.inline
-    def setMaxVirtualTimeTaskStarvationCount(value: integer): Self = StObject.set(x, "maxVirtualTimeTaskStarvationCount", value.asInstanceOf[js.Any])
+    inline def setMaxVirtualTimeTaskStarvationCount(value: integer): Self = StObject.set(x, "maxVirtualTimeTaskStarvationCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxVirtualTimeTaskStarvationCountUndefined: Self = StObject.set(x, "maxVirtualTimeTaskStarvationCount", js.undefined)
+    inline def setMaxVirtualTimeTaskStarvationCountUndefined: Self = StObject.set(x, "maxVirtualTimeTaskStarvationCount", js.undefined)
     
-    @scala.inline
-    def setPolicy(value: VirtualTimePolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: VirtualTimePolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitForNavigation(value: Boolean): Self = StObject.set(x, "waitForNavigation", value.asInstanceOf[js.Any])
+    inline def setWaitForNavigation(value: Boolean): Self = StObject.set(x, "waitForNavigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaitForNavigationUndefined: Self = StObject.set(x, "waitForNavigation", js.undefined)
+    inline def setWaitForNavigationUndefined: Self = StObject.set(x, "waitForNavigation", js.undefined)
   }
 }

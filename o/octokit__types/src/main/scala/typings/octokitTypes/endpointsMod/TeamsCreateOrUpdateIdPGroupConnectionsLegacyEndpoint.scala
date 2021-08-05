@@ -15,22 +15,17 @@ trait TeamsCreateOrUpdateIdPGroupConnectionsLegacyEndpoint extends StObject {
 }
 object TeamsCreateOrUpdateIdPGroupConnectionsLegacyEndpoint {
   
-  @scala.inline
-  def apply(groups: js.Array[TeamsCreateOrUpdateIdPGroupConnectionsLegacyParamsGroups], team_id: Double): TeamsCreateOrUpdateIdPGroupConnectionsLegacyEndpoint = {
+  inline def apply(groups: js.Array[TeamsCreateOrUpdateIdPGroupConnectionsLegacyParamsGroups], team_id: Double): TeamsCreateOrUpdateIdPGroupConnectionsLegacyEndpoint = {
     val __obj = js.Dynamic.literal(groups = groups.asInstanceOf[js.Any], team_id = team_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsCreateOrUpdateIdPGroupConnectionsLegacyEndpoint]
   }
   
-  @scala.inline
-  implicit class TeamsCreateOrUpdateIdPGroupConnectionsLegacyEndpointMutableBuilder[Self <: TeamsCreateOrUpdateIdPGroupConnectionsLegacyEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: TeamsCreateOrUpdateIdPGroupConnectionsLegacyEndpoint](x: Self) {
     
-    @scala.inline
-    def setGroups(value: js.Array[TeamsCreateOrUpdateIdPGroupConnectionsLegacyParamsGroups]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: js.Array[TeamsCreateOrUpdateIdPGroupConnectionsLegacyParamsGroups]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsVarargs(value: TeamsCreateOrUpdateIdPGroupConnectionsLegacyParamsGroups*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: TeamsCreateOrUpdateIdPGroupConnectionsLegacyParamsGroups*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
-    @scala.inline
-    def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
+    inline def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
   }
 }

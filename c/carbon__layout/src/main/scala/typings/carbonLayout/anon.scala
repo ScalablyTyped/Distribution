@@ -16,23 +16,18 @@ object anon {
   }
   object Columns {
     
-    @scala.inline
-    def apply(columns: Double, margin: String, width: String): Columns = {
+    inline def apply(columns: Double, margin: String, width: String): Columns = {
       val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], margin = margin.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Columns]
     }
     
-    @scala.inline
-    implicit class ColumnsMutableBuilder[Self <: Columns] (val x: Self) extends AnyVal {
+    extension [Self <: Columns](x: Self) {
       
-      @scala.inline
-      def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMargin(value: String): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: String): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

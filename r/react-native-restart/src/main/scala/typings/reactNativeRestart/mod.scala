@@ -12,7 +12,6 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def Restart(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Restart")().asInstanceOf[Unit]
+    inline def Restart(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Restart")().asInstanceOf[Unit]
   }
 }

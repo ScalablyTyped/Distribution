@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParametrizationInterpolationType extends StObject
 object ParametrizationInterpolationType {
   
-  @scala.inline
-  def centripetal: typings.vis.visStrings.centripetal = "centripetal".asInstanceOf[typings.vis.visStrings.centripetal]
+  inline def centripetal: typings.vis.visStrings.centripetal = "centripetal".asInstanceOf[typings.vis.visStrings.centripetal]
   
-  @scala.inline
-  def chordal: typings.vis.visStrings.chordal = "chordal".asInstanceOf[typings.vis.visStrings.chordal]
+  inline def chordal: typings.vis.visStrings.chordal = "chordal".asInstanceOf[typings.vis.visStrings.chordal]
   
-  @scala.inline
-  def disabled: typings.vis.visStrings.disabled = "disabled".asInstanceOf[typings.vis.visStrings.disabled]
+  inline def disabled: typings.vis.visStrings.disabled = "disabled".asInstanceOf[typings.vis.visStrings.disabled]
   
-  @scala.inline
-  def uniform: typings.vis.visStrings.uniform = "uniform".asInstanceOf[typings.vis.visStrings.uniform]
+  inline def uniform: typings.vis.visStrings.uniform = "uniform".asInstanceOf[typings.vis.visStrings.uniform]
 }

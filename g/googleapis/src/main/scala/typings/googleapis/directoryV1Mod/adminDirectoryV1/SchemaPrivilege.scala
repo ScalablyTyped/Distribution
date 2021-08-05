@@ -48,58 +48,41 @@ trait SchemaPrivilege extends StObject {
 }
 object SchemaPrivilege {
   
-  @scala.inline
-  def apply(): SchemaPrivilege = {
+  inline def apply(): SchemaPrivilege = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPrivilege]
   }
   
-  @scala.inline
-  implicit class SchemaPrivilegeMutableBuilder[Self <: SchemaPrivilege] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPrivilege](x: Self) {
     
-    @scala.inline
-    def setChildPrivileges(value: js.Array[SchemaPrivilege]): Self = StObject.set(x, "childPrivileges", value.asInstanceOf[js.Any])
+    inline def setChildPrivileges(value: js.Array[SchemaPrivilege]): Self = StObject.set(x, "childPrivileges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildPrivilegesUndefined: Self = StObject.set(x, "childPrivileges", js.undefined)
+    inline def setChildPrivilegesUndefined: Self = StObject.set(x, "childPrivileges", js.undefined)
     
-    @scala.inline
-    def setChildPrivilegesVarargs(value: SchemaPrivilege*): Self = StObject.set(x, "childPrivileges", js.Array(value :_*))
+    inline def setChildPrivilegesVarargs(value: SchemaPrivilege*): Self = StObject.set(x, "childPrivileges", js.Array(value :_*))
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setIsOuScopable(value: Boolean): Self = StObject.set(x, "isOuScopable", value.asInstanceOf[js.Any])
+    inline def setIsOuScopable(value: Boolean): Self = StObject.set(x, "isOuScopable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsOuScopableUndefined: Self = StObject.set(x, "isOuScopable", js.undefined)
+    inline def setIsOuScopableUndefined: Self = StObject.set(x, "isOuScopable", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPrivilegeName(value: String): Self = StObject.set(x, "privilegeName", value.asInstanceOf[js.Any])
+    inline def setPrivilegeName(value: String): Self = StObject.set(x, "privilegeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivilegeNameUndefined: Self = StObject.set(x, "privilegeName", js.undefined)
+    inline def setPrivilegeNameUndefined: Self = StObject.set(x, "privilegeName", js.undefined)
     
-    @scala.inline
-    def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
+    inline def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceIdUndefined: Self = StObject.set(x, "serviceId", js.undefined)
+    inline def setServiceIdUndefined: Self = StObject.set(x, "serviceId", js.undefined)
     
-    @scala.inline
-    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
+    inline def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
   }
 }

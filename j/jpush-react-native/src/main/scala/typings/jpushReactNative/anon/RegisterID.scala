@@ -10,16 +10,13 @@ trait RegisterID extends StObject {
 }
 object RegisterID {
   
-  @scala.inline
-  def apply(registerID: String): RegisterID = {
+  inline def apply(registerID: String): RegisterID = {
     val __obj = js.Dynamic.literal(registerID = registerID.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterID]
   }
   
-  @scala.inline
-  implicit class RegisterIDMutableBuilder[Self <: RegisterID] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterID](x: Self) {
     
-    @scala.inline
-    def setRegisterID(value: String): Self = StObject.set(x, "registerID", value.asInstanceOf[js.Any])
+    inline def setRegisterID(value: String): Self = StObject.set(x, "registerID", value.asInstanceOf[js.Any])
   }
 }

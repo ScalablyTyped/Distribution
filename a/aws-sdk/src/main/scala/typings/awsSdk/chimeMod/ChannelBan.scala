@@ -28,37 +28,27 @@ trait ChannelBan extends StObject {
 }
 object ChannelBan {
   
-  @scala.inline
-  def apply(): ChannelBan = {
+  inline def apply(): ChannelBan = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChannelBan]
   }
   
-  @scala.inline
-  implicit class ChannelBanMutableBuilder[Self <: ChannelBan] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelBan](x: Self) {
     
-    @scala.inline
-    def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
+    inline def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelArnUndefined: Self = StObject.set(x, "ChannelArn", js.undefined)
+    inline def setChannelArnUndefined: Self = StObject.set(x, "ChannelArn", js.undefined)
     
-    @scala.inline
-    def setCreatedBy(value: Identity): Self = StObject.set(x, "CreatedBy", value.asInstanceOf[js.Any])
+    inline def setCreatedBy(value: Identity): Self = StObject.set(x, "CreatedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedByUndefined: Self = StObject.set(x, "CreatedBy", js.undefined)
+    inline def setCreatedByUndefined: Self = StObject.set(x, "CreatedBy", js.undefined)
     
-    @scala.inline
-    def setCreatedTimestamp(value: Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimestamp(value: Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
+    inline def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
-    @scala.inline
-    def setMember(value: Identity): Self = StObject.set(x, "Member", value.asInstanceOf[js.Any])
+    inline def setMember(value: Identity): Self = StObject.set(x, "Member", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberUndefined: Self = StObject.set(x, "Member", js.undefined)
+    inline def setMemberUndefined: Self = StObject.set(x, "Member", js.undefined)
   }
 }

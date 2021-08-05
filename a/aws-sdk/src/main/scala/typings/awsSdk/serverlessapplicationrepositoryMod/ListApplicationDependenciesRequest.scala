@@ -28,34 +28,25 @@ trait ListApplicationDependenciesRequest extends StObject {
 }
 object ListApplicationDependenciesRequest {
   
-  @scala.inline
-  def apply(ApplicationId: string): ListApplicationDependenciesRequest = {
+  inline def apply(ApplicationId: string): ListApplicationDependenciesRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListApplicationDependenciesRequest]
   }
   
-  @scala.inline
-  implicit class ListApplicationDependenciesRequestMutableBuilder[Self <: ListApplicationDependenciesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListApplicationDependenciesRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItems(value: MaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: MaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
+    inline def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSemanticVersion(value: string): Self = StObject.set(x, "SemanticVersion", value.asInstanceOf[js.Any])
+    inline def setSemanticVersion(value: string): Self = StObject.set(x, "SemanticVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSemanticVersionUndefined: Self = StObject.set(x, "SemanticVersion", js.undefined)
+    inline def setSemanticVersionUndefined: Self = StObject.set(x, "SemanticVersion", js.undefined)
   }
 }

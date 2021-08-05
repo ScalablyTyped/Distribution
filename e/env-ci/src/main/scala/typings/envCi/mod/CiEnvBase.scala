@@ -11,16 +11,13 @@ trait CiEnvBase extends StObject {
 }
 object CiEnvBase {
   
-  @scala.inline
-  def apply(): CiEnvBase = {
+  inline def apply(): CiEnvBase = {
     val __obj = js.Dynamic.literal(isCi = true)
     __obj.asInstanceOf[CiEnvBase]
   }
   
-  @scala.inline
-  implicit class CiEnvBaseMutableBuilder[Self <: CiEnvBase] (val x: Self) extends AnyVal {
+  extension [Self <: CiEnvBase](x: Self) {
     
-    @scala.inline
-    def setIsCi(value: `true`): Self = StObject.set(x, "isCi", value.asInstanceOf[js.Any])
+    inline def setIsCi(value: `true`): Self = StObject.set(x, "isCi", value.asInstanceOf[js.Any])
   }
 }

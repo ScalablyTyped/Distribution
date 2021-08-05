@@ -20,38 +20,28 @@ object anon {
   }
   object Annots {
     
-    @scala.inline
-    def apply(Annots: js.Any, Pattern: js.Any): Annots = {
+    inline def apply(Annots: js.Any, Pattern: js.Any): Annots = {
       val __obj = js.Dynamic.literal(Annots = Annots.asInstanceOf[js.Any], Pattern = Pattern.asInstanceOf[js.Any])
       __obj.asInstanceOf[Annots]
     }
     
-    @scala.inline
-    implicit class AnnotsMutableBuilder[Self <: Annots] (val x: Self) extends AnyVal {
+    extension [Self <: Annots](x: Self) {
       
-      @scala.inline
-      def setAnnots(value: js.Any): Self = StObject.set(x, "Annots", value.asInstanceOf[js.Any])
+      inline def setAnnots(value: js.Any): Self = StObject.set(x, "Annots", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtGState(value: js.Any): Self = StObject.set(x, "ExtGState", value.asInstanceOf[js.Any])
+      inline def setExtGState(value: js.Any): Self = StObject.set(x, "ExtGState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtGStateUndefined: Self = StObject.set(x, "ExtGState", js.undefined)
+      inline def setExtGStateUndefined: Self = StObject.set(x, "ExtGState", js.undefined)
       
-      @scala.inline
-      def setFont(value: js.Any): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
+      inline def setFont(value: js.Any): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontUndefined: Self = StObject.set(x, "Font", js.undefined)
+      inline def setFontUndefined: Self = StObject.set(x, "Font", js.undefined)
       
-      @scala.inline
-      def setPattern(value: js.Any): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: js.Any): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXObject(value: js.Any): Self = StObject.set(x, "XObject", value.asInstanceOf[js.Any])
+      inline def setXObject(value: js.Any): Self = StObject.set(x, "XObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXObjectUndefined: Self = StObject.set(x, "XObject", js.undefined)
+      inline def setXObjectUndefined: Self = StObject.set(x, "XObject", js.undefined)
     }
   }
   
@@ -67,26 +57,20 @@ object anon {
   }
   object Bottom {
     
-    @scala.inline
-    def apply(bottom: Double, left: Double, right: Double, top: Double): Bottom = {
+    inline def apply(bottom: Double, left: Double, right: Double, top: Double): Bottom = {
       val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
       __obj.asInstanceOf[Bottom]
     }
     
-    @scala.inline
-    implicit class BottomMutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
+    extension [Self <: Bottom](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }
   }
   
@@ -98,20 +82,16 @@ object anon {
   }
   object Count {
     
-    @scala.inline
-    def apply(count: Double, start: Double): Count = {
+    inline def apply(count: Double, start: Double): Count = {
       val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[Count]
     }
     
-    @scala.inline
-    implicit class CountMutableBuilder[Self <: Count] (val x: Self) extends AnyVal {
+    extension [Self <: Count](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
   
@@ -121,23 +101,18 @@ object anon {
   }
   object Origin {
     
-    @scala.inline
-    def apply(): Origin = {
+    inline def apply(): Origin = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Origin]
     }
     
-    @scala.inline
-    implicit class OriginMutableBuilder[Self <: Origin] (val x: Self) extends AnyVal {
+    extension [Self <: Origin](x: Self) {
       
-      @scala.inline
-      def setOrigin(value: js.Array[Double]): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: js.Array[Double]): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+      inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
       
-      @scala.inline
-      def setOriginVarargs(value: Double*): Self = StObject.set(x, "origin", js.Array(value :_*))
+      inline def setOriginVarargs(value: Double*): Self = StObject.set(x, "origin", js.Array(value :_*))
     }
   }
 }

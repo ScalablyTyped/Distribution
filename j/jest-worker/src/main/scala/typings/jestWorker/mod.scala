@@ -16,22 +16,22 @@ object mod {
     def this(workerPath: String) = this()
     def this(workerPath: String, options: FarmOptions) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _bindExposedWorkerMethods: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _callFunctionWithArgs: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _ending: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _farm: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _options: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _workerPool: js.Any = js.native
     
     /* CompleteClass */
@@ -46,17 +46,17 @@ object mod {
   
   trait JestWorker extends StObject {
     
-    var _bindExposedWorkerMethods: js.Any
+    /* private */ var _bindExposedWorkerMethods: js.Any
     
-    var _callFunctionWithArgs: js.Any
+    /* private */ var _callFunctionWithArgs: js.Any
     
-    var _ending: js.Any
+    /* private */ var _ending: js.Any
     
-    var _farm: js.Any
+    /* private */ var _farm: js.Any
     
-    var _options: js.Any
+    /* private */ var _options: js.Any
     
-    var _workerPool: js.Any
+    /* private */ var _workerPool: js.Any
     
     def end(): Unit
     
@@ -66,8 +66,7 @@ object mod {
   }
   object JestWorker {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _bindExposedWorkerMethods: js.Any,
       _callFunctionWithArgs: js.Any,
       _ending: js.Any,
@@ -82,35 +81,25 @@ object mod {
       __obj.asInstanceOf[JestWorker]
     }
     
-    @scala.inline
-    implicit class JestWorkerMutableBuilder[Self <: JestWorker] (val x: Self) extends AnyVal {
+    extension [Self <: JestWorker](x: Self) {
       
-      @scala.inline
-      def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+      inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStderr(value: () => ReadableStream): Self = StObject.set(x, "getStderr", js.Any.fromFunction0(value))
+      inline def setGetStderr(value: () => ReadableStream): Self = StObject.set(x, "getStderr", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStdout(value: () => ReadableStream): Self = StObject.set(x, "getStdout", js.Any.fromFunction0(value))
+      inline def setGetStdout(value: () => ReadableStream): Self = StObject.set(x, "getStdout", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def set_bindExposedWorkerMethods(value: js.Any): Self = StObject.set(x, "_bindExposedWorkerMethods", value.asInstanceOf[js.Any])
+      inline def set_bindExposedWorkerMethods(value: js.Any): Self = StObject.set(x, "_bindExposedWorkerMethods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_callFunctionWithArgs(value: js.Any): Self = StObject.set(x, "_callFunctionWithArgs", value.asInstanceOf[js.Any])
+      inline def set_callFunctionWithArgs(value: js.Any): Self = StObject.set(x, "_callFunctionWithArgs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_ending(value: js.Any): Self = StObject.set(x, "_ending", value.asInstanceOf[js.Any])
+      inline def set_ending(value: js.Any): Self = StObject.set(x, "_ending", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_farm(value: js.Any): Self = StObject.set(x, "_farm", value.asInstanceOf[js.Any])
+      inline def set_farm(value: js.Any): Self = StObject.set(x, "_farm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_options(value: js.Any): Self = StObject.set(x, "_options", value.asInstanceOf[js.Any])
+      inline def set_options(value: js.Any): Self = StObject.set(x, "_options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_workerPool(value: js.Any): Self = StObject.set(x, "_workerPool", value.asInstanceOf[js.Any])
+      inline def set_workerPool(value: js.Any): Self = StObject.set(x, "_workerPool", value.asInstanceOf[js.Any])
     }
   }
 }

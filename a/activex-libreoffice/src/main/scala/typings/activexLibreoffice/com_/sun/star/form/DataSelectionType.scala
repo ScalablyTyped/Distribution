@@ -24,18 +24,14 @@ trait DataSelectionType extends StObject
 object DataSelectionType {
   
   /** The control should be filled with the results of a database query. */
-  @scala.inline
-  def QUERY: `1` = 1.asInstanceOf[`1`]
+  inline def QUERY: `1` = 1.asInstanceOf[`1`]
   
   /** The control should be filled with the results of a database statement. */
-  @scala.inline
-  def SQL: `2` = 2.asInstanceOf[`2`]
+  inline def SQL: `2` = 2.asInstanceOf[`2`]
   
   /** The control should be filled with the results of a database statement, which is not evaluated by the database engine. */
-  @scala.inline
-  def SQLPASSTHROUGH: `3` = 3.asInstanceOf[`3`]
+  inline def SQLPASSTHROUGH: `3` = 3.asInstanceOf[`3`]
   
   /** The control should be filled with the data of a table. */
-  @scala.inline
-  def TABLE: `0` = 0.asInstanceOf[`0`]
+  inline def TABLE: `0` = 0.asInstanceOf[`0`]
 }

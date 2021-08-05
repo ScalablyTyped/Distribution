@@ -14,27 +14,22 @@ trait GridAutoFlowProps extends StObject {
 }
 object GridAutoFlowProps {
   
-  @scala.inline
-  def apply(): GridAutoFlowProps = {
+  inline def apply(): GridAutoFlowProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridAutoFlowProps]
   }
   
-  @scala.inline
-  implicit class GridAutoFlowPropsMutableBuilder[Self <: GridAutoFlowProps] (val x: Self) extends AnyVal {
+  extension [Self <: GridAutoFlowProps](x: Self) {
     
-    @scala.inline
-    def setGridAutoFlow(
+    inline def setGridAutoFlow(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoFlow */ js.Any
         ]
     ): Self = StObject.set(x, "gridAutoFlow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridAutoFlowUndefined: Self = StObject.set(x, "gridAutoFlow", js.undefined)
+    inline def setGridAutoFlowUndefined: Self = StObject.set(x, "gridAutoFlow", js.undefined)
     
-    @scala.inline
-    def setGridAutoFlowVarargs(
+    inline def setGridAutoFlowVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoFlow */ js.Any)*
     ): Self = StObject.set(x, "gridAutoFlow", js.Array(value :_*))
   }

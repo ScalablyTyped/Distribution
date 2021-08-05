@@ -37,8 +37,7 @@ object typesCreateGlobalSecondaryIndexActionMod {
   }
   object CreateGlobalSecondaryIndexAction {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       IndexName: String,
       KeySchema: js.Array[KeySchemaElement] | Iterable[KeySchemaElement],
       Projection: Projection,
@@ -48,23 +47,17 @@ object typesCreateGlobalSecondaryIndexActionMod {
       __obj.asInstanceOf[CreateGlobalSecondaryIndexAction]
     }
     
-    @scala.inline
-    implicit class CreateGlobalSecondaryIndexActionMutableBuilder[Self <: CreateGlobalSecondaryIndexAction] (val x: Self) extends AnyVal {
+    extension [Self <: CreateGlobalSecondaryIndexAction](x: Self) {
       
-      @scala.inline
-      def setIndexName(value: String): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
+      inline def setIndexName(value: String): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeySchema(value: js.Array[KeySchemaElement] | Iterable[KeySchemaElement]): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
+      inline def setKeySchema(value: js.Array[KeySchemaElement] | Iterable[KeySchemaElement]): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+      inline def setKeySchemaVarargs(value: KeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
       
-      @scala.inline
-      def setProjection(value: Projection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
+      inline def setProjection(value: Projection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedThroughput(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
+      inline def setProvisionedThroughput(value: ProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
     }
   }
   
@@ -92,8 +85,7 @@ object typesCreateGlobalSecondaryIndexActionMod {
   }
   object UnmarshalledCreateGlobalSecondaryIndexAction {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       IndexName: String,
       KeySchema: js.Array[UnmarshalledKeySchemaElement],
       Projection: UnmarshalledProjection,
@@ -103,20 +95,15 @@ object typesCreateGlobalSecondaryIndexActionMod {
       __obj.asInstanceOf[UnmarshalledCreateGlobalSecondaryIndexAction]
     }
     
-    @scala.inline
-    implicit class UnmarshalledCreateGlobalSecondaryIndexActionMutableBuilder[Self <: UnmarshalledCreateGlobalSecondaryIndexAction] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledCreateGlobalSecondaryIndexAction](x: Self) {
       
-      @scala.inline
-      def setKeySchema(value: js.Array[UnmarshalledKeySchemaElement]): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
+      inline def setKeySchema(value: js.Array[UnmarshalledKeySchemaElement]): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeySchemaVarargs(value: UnmarshalledKeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
+      inline def setKeySchemaVarargs(value: UnmarshalledKeySchemaElement*): Self = StObject.set(x, "KeySchema", js.Array(value :_*))
       
-      @scala.inline
-      def setProjection(value: UnmarshalledProjection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
+      inline def setProjection(value: UnmarshalledProjection): Self = StObject.set(x, "Projection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvisionedThroughput(value: UnmarshalledProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
+      inline def setProvisionedThroughput(value: UnmarshalledProvisionedThroughput): Self = StObject.set(x, "ProvisionedThroughput", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -19,16 +19,12 @@ object TSInterfaceBody {
   @js.native
   def apply(body: js.Array[TSTypeElement]): TSInterfaceBody = js.native
   
-  @scala.inline
-  implicit class TSInterfaceBodyMutableBuilder[Self <: TSInterfaceBody] (val x: Self) extends AnyVal {
+  extension [Self <: TSInterfaceBody](x: Self) {
     
-    @scala.inline
-    def setBody(value: js.Array[TSTypeElement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: js.Array[TSTypeElement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyVarargs(value: TSTypeElement*): Self = StObject.set(x, "body", js.Array(value :_*))
+    inline def setBodyVarargs(value: TSTypeElement*): Self = StObject.set(x, "body", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: typings.babelTypes.babelTypesStrings.TSInterfaceBody): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.babelTypes.babelTypesStrings.TSInterfaceBody): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

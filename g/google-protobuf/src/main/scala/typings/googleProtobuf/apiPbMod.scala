@@ -81,11 +81,9 @@ object apiPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def deserializeBinary(bytes: Uint8Array): Api = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Api]
+    inline def deserializeBinary(bytes: Uint8Array): Api = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Api]
     
-    @scala.inline
-    def deserializeBinaryFromReader(message: Api, reader: BinaryReader): Api = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Api]
+    inline def deserializeBinaryFromReader(message: Api, reader: BinaryReader): Api = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Api]
     
     @JSImport("google-protobuf/google/protobuf/api_pb", "Api.extensions")
     @js.native
@@ -94,17 +92,13 @@ object apiPbMod {
     @JSImport("google-protobuf/google/protobuf/api_pb", "Api.extensionsBinary")
     @js.native
     def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-    @scala.inline
-    def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+    inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+    inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def serializeBinaryToWriter(message: Api, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def serializeBinaryToWriter(message: Api, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def toObject(includeInstance: Boolean, msg: Api): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+    inline def toObject(includeInstance: Boolean, msg: Api): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
     trait AsObject extends StObject {
       
@@ -124,8 +118,7 @@ object apiPbMod {
     }
     object AsObject {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         methodsList: js.Array[typings.googleProtobuf.apiPbMod.Method.AsObject],
         mixinsList: js.Array[typings.googleProtobuf.apiPbMod.Mixin.AsObject],
         name: String,
@@ -137,41 +130,29 @@ object apiPbMod {
         __obj.asInstanceOf[AsObject]
       }
       
-      @scala.inline
-      implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+      extension [Self <: AsObject](x: Self) {
         
-        @scala.inline
-        def setMethodsList(value: js.Array[typings.googleProtobuf.apiPbMod.Method.AsObject]): Self = StObject.set(x, "methodsList", value.asInstanceOf[js.Any])
+        inline def setMethodsList(value: js.Array[typings.googleProtobuf.apiPbMod.Method.AsObject]): Self = StObject.set(x, "methodsList", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMethodsListVarargs(value: typings.googleProtobuf.apiPbMod.Method.AsObject*): Self = StObject.set(x, "methodsList", js.Array(value :_*))
+        inline def setMethodsListVarargs(value: typings.googleProtobuf.apiPbMod.Method.AsObject*): Self = StObject.set(x, "methodsList", js.Array(value :_*))
         
-        @scala.inline
-        def setMixinsList(value: js.Array[typings.googleProtobuf.apiPbMod.Mixin.AsObject]): Self = StObject.set(x, "mixinsList", value.asInstanceOf[js.Any])
+        inline def setMixinsList(value: js.Array[typings.googleProtobuf.apiPbMod.Mixin.AsObject]): Self = StObject.set(x, "mixinsList", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMixinsListVarargs(value: typings.googleProtobuf.apiPbMod.Mixin.AsObject*): Self = StObject.set(x, "mixinsList", js.Array(value :_*))
+        inline def setMixinsListVarargs(value: typings.googleProtobuf.apiPbMod.Mixin.AsObject*): Self = StObject.set(x, "mixinsList", js.Array(value :_*))
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOptionsList(value: js.Array[typings.googleProtobuf.typePbMod.Option.AsObject]): Self = StObject.set(x, "optionsList", value.asInstanceOf[js.Any])
+        inline def setOptionsList(value: js.Array[typings.googleProtobuf.typePbMod.Option.AsObject]): Self = StObject.set(x, "optionsList", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOptionsListVarargs(value: typings.googleProtobuf.typePbMod.Option.AsObject*): Self = StObject.set(x, "optionsList", js.Array(value :_*))
+        inline def setOptionsListVarargs(value: typings.googleProtobuf.typePbMod.Option.AsObject*): Self = StObject.set(x, "optionsList", js.Array(value :_*))
         
-        @scala.inline
-        def setSourceContext(value: typings.googleProtobuf.sourceContextPbMod.SourceContext.AsObject): Self = StObject.set(x, "sourceContext", value.asInstanceOf[js.Any])
+        inline def setSourceContext(value: typings.googleProtobuf.sourceContextPbMod.SourceContext.AsObject): Self = StObject.set(x, "sourceContext", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSourceContextUndefined: Self = StObject.set(x, "sourceContext", js.undefined)
+        inline def setSourceContextUndefined: Self = StObject.set(x, "sourceContext", js.undefined)
         
-        @scala.inline
-        def setSyntax(value: Syntax): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
+        inline def setSyntax(value: Syntax): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+        inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -222,11 +203,9 @@ object apiPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def deserializeBinary(bytes: Uint8Array): Method = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Method]
+    inline def deserializeBinary(bytes: Uint8Array): Method = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Method]
     
-    @scala.inline
-    def deserializeBinaryFromReader(message: Method, reader: BinaryReader): Method = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Method]
+    inline def deserializeBinaryFromReader(message: Method, reader: BinaryReader): Method = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Method]
     
     @JSImport("google-protobuf/google/protobuf/api_pb", "Method.extensions")
     @js.native
@@ -235,17 +214,13 @@ object apiPbMod {
     @JSImport("google-protobuf/google/protobuf/api_pb", "Method.extensionsBinary")
     @js.native
     def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-    @scala.inline
-    def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+    inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+    inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def serializeBinaryToWriter(message: Method, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def serializeBinaryToWriter(message: Method, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def toObject(includeInstance: Boolean, msg: Method): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+    inline def toObject(includeInstance: Boolean, msg: Method): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
     trait AsObject extends StObject {
       
@@ -265,8 +240,7 @@ object apiPbMod {
     }
     object AsObject {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         name: String,
         optionsList: js.Array[typings.googleProtobuf.typePbMod.Option.AsObject],
         requestStreaming: Boolean,
@@ -279,32 +253,23 @@ object apiPbMod {
         __obj.asInstanceOf[AsObject]
       }
       
-      @scala.inline
-      implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+      extension [Self <: AsObject](x: Self) {
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOptionsList(value: js.Array[typings.googleProtobuf.typePbMod.Option.AsObject]): Self = StObject.set(x, "optionsList", value.asInstanceOf[js.Any])
+        inline def setOptionsList(value: js.Array[typings.googleProtobuf.typePbMod.Option.AsObject]): Self = StObject.set(x, "optionsList", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOptionsListVarargs(value: typings.googleProtobuf.typePbMod.Option.AsObject*): Self = StObject.set(x, "optionsList", js.Array(value :_*))
+        inline def setOptionsListVarargs(value: typings.googleProtobuf.typePbMod.Option.AsObject*): Self = StObject.set(x, "optionsList", js.Array(value :_*))
         
-        @scala.inline
-        def setRequestStreaming(value: Boolean): Self = StObject.set(x, "requestStreaming", value.asInstanceOf[js.Any])
+        inline def setRequestStreaming(value: Boolean): Self = StObject.set(x, "requestStreaming", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRequestTypeUrl(value: String): Self = StObject.set(x, "requestTypeUrl", value.asInstanceOf[js.Any])
+        inline def setRequestTypeUrl(value: String): Self = StObject.set(x, "requestTypeUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResponseStreaming(value: Boolean): Self = StObject.set(x, "responseStreaming", value.asInstanceOf[js.Any])
+        inline def setResponseStreaming(value: Boolean): Self = StObject.set(x, "responseStreaming", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResponseTypeUrl(value: String): Self = StObject.set(x, "responseTypeUrl", value.asInstanceOf[js.Any])
+        inline def setResponseTypeUrl(value: String): Self = StObject.set(x, "responseTypeUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSyntax(value: Syntax): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
+        inline def setSyntax(value: Syntax): Self = StObject.set(x, "syntax", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -328,11 +293,9 @@ object apiPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def deserializeBinary(bytes: Uint8Array): Mixin = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Mixin]
+    inline def deserializeBinary(bytes: Uint8Array): Mixin = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Mixin]
     
-    @scala.inline
-    def deserializeBinaryFromReader(message: Mixin, reader: BinaryReader): Mixin = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Mixin]
+    inline def deserializeBinaryFromReader(message: Mixin, reader: BinaryReader): Mixin = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Mixin]
     
     @JSImport("google-protobuf/google/protobuf/api_pb", "Mixin.extensions")
     @js.native
@@ -341,17 +304,13 @@ object apiPbMod {
     @JSImport("google-protobuf/google/protobuf/api_pb", "Mixin.extensionsBinary")
     @js.native
     def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-    @scala.inline
-    def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+    inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+    inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def serializeBinaryToWriter(message: Mixin, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def serializeBinaryToWriter(message: Mixin, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def toObject(includeInstance: Boolean, msg: Mixin): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+    inline def toObject(includeInstance: Boolean, msg: Mixin): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
     trait AsObject extends StObject {
       
@@ -361,20 +320,16 @@ object apiPbMod {
     }
     object AsObject {
       
-      @scala.inline
-      def apply(name: String, root: String): AsObject = {
+      inline def apply(name: String, root: String): AsObject = {
         val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
         __obj.asInstanceOf[AsObject]
       }
       
-      @scala.inline
-      implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+      extension [Self <: AsObject](x: Self) {
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+        inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       }
     }
   }

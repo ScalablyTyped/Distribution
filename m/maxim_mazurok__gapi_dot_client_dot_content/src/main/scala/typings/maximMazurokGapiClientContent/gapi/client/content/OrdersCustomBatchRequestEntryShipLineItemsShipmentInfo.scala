@@ -17,31 +17,23 @@ trait OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo extends StObject {
 }
 object OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo {
   
-  @scala.inline
-  def apply(): OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo = {
+  inline def apply(): OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo]
   }
   
-  @scala.inline
-  implicit class OrdersCustomBatchRequestEntryShipLineItemsShipmentInfoMutableBuilder[Self <: OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo] (val x: Self) extends AnyVal {
+  extension [Self <: OrdersCustomBatchRequestEntryShipLineItemsShipmentInfo](x: Self) {
     
-    @scala.inline
-    def setCarrier(value: String): Self = StObject.set(x, "carrier", value.asInstanceOf[js.Any])
+    inline def setCarrier(value: String): Self = StObject.set(x, "carrier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCarrierUndefined: Self = StObject.set(x, "carrier", js.undefined)
+    inline def setCarrierUndefined: Self = StObject.set(x, "carrier", js.undefined)
     
-    @scala.inline
-    def setShipmentId(value: String): Self = StObject.set(x, "shipmentId", value.asInstanceOf[js.Any])
+    inline def setShipmentId(value: String): Self = StObject.set(x, "shipmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShipmentIdUndefined: Self = StObject.set(x, "shipmentId", js.undefined)
+    inline def setShipmentIdUndefined: Self = StObject.set(x, "shipmentId", js.undefined)
     
-    @scala.inline
-    def setTrackingId(value: String): Self = StObject.set(x, "trackingId", value.asInstanceOf[js.Any])
+    inline def setTrackingId(value: String): Self = StObject.set(x, "trackingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackingIdUndefined: Self = StObject.set(x, "trackingId", js.undefined)
+    inline def setTrackingIdUndefined: Self = StObject.set(x, "trackingId", js.undefined)
   }
 }

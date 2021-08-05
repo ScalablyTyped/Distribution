@@ -18,28 +18,21 @@ trait CustomAvailabilityZoneMessage extends StObject {
 }
 object CustomAvailabilityZoneMessage {
   
-  @scala.inline
-  def apply(): CustomAvailabilityZoneMessage = {
+  inline def apply(): CustomAvailabilityZoneMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomAvailabilityZoneMessage]
   }
   
-  @scala.inline
-  implicit class CustomAvailabilityZoneMessageMutableBuilder[Self <: CustomAvailabilityZoneMessage] (val x: Self) extends AnyVal {
+  extension [Self <: CustomAvailabilityZoneMessage](x: Self) {
     
-    @scala.inline
-    def setCustomAvailabilityZones(value: CustomAvailabilityZoneList): Self = StObject.set(x, "CustomAvailabilityZones", value.asInstanceOf[js.Any])
+    inline def setCustomAvailabilityZones(value: CustomAvailabilityZoneList): Self = StObject.set(x, "CustomAvailabilityZones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomAvailabilityZonesUndefined: Self = StObject.set(x, "CustomAvailabilityZones", js.undefined)
+    inline def setCustomAvailabilityZonesUndefined: Self = StObject.set(x, "CustomAvailabilityZones", js.undefined)
     
-    @scala.inline
-    def setCustomAvailabilityZonesVarargs(value: CustomAvailabilityZone*): Self = StObject.set(x, "CustomAvailabilityZones", js.Array(value :_*))
+    inline def setCustomAvailabilityZonesVarargs(value: CustomAvailabilityZone*): Self = StObject.set(x, "CustomAvailabilityZones", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

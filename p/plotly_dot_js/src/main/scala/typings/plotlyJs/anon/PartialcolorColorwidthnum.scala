@@ -17,43 +17,31 @@ trait PartialcolorColorwidthnum extends StObject {
 }
 object PartialcolorColorwidthnum {
   
-  @scala.inline
-  def apply(): PartialcolorColorwidthnum = {
+  inline def apply(): PartialcolorColorwidthnum = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialcolorColorwidthnum]
   }
   
-  @scala.inline
-  implicit class PartialcolorColorwidthnumMutableBuilder[Self <: PartialcolorColorwidthnum] (val x: Self) extends AnyVal {
+  extension [Self <: PartialcolorColorwidthnum](x: Self) {
     
-    @scala.inline
-    def setColor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setColorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "color", js.Array(value :_*))
     
-    @scala.inline
-    def setOutliercolor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "outliercolor", value.asInstanceOf[js.Any])
+    inline def setOutliercolor(value: typings.plotlyJs.mod.Color): Self = StObject.set(x, "outliercolor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutliercolorUndefined: Self = StObject.set(x, "outliercolor", js.undefined)
+    inline def setOutliercolorUndefined: Self = StObject.set(x, "outliercolor", js.undefined)
     
-    @scala.inline
-    def setOutliercolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "outliercolor", js.Array(value :_*))
+    inline def setOutliercolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "outliercolor", js.Array(value :_*))
     
-    @scala.inline
-    def setOutlierwidth(value: Double): Self = StObject.set(x, "outlierwidth", value.asInstanceOf[js.Any])
+    inline def setOutlierwidth(value: Double): Self = StObject.set(x, "outlierwidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlierwidthUndefined: Self = StObject.set(x, "outlierwidth", js.undefined)
+    inline def setOutlierwidthUndefined: Self = StObject.set(x, "outlierwidth", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

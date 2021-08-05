@@ -36,61 +36,43 @@ trait AllowedSubjectAltNames extends StObject {
 }
 object AllowedSubjectAltNames {
   
-  @scala.inline
-  def apply(): AllowedSubjectAltNames = {
+  inline def apply(): AllowedSubjectAltNames = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AllowedSubjectAltNames]
   }
   
-  @scala.inline
-  implicit class AllowedSubjectAltNamesMutableBuilder[Self <: AllowedSubjectAltNames] (val x: Self) extends AnyVal {
+  extension [Self <: AllowedSubjectAltNames](x: Self) {
     
-    @scala.inline
-    def setAllowCustomSans(value: Boolean): Self = StObject.set(x, "allowCustomSans", value.asInstanceOf[js.Any])
+    inline def setAllowCustomSans(value: Boolean): Self = StObject.set(x, "allowCustomSans", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowCustomSansUndefined: Self = StObject.set(x, "allowCustomSans", js.undefined)
+    inline def setAllowCustomSansUndefined: Self = StObject.set(x, "allowCustomSans", js.undefined)
     
-    @scala.inline
-    def setAllowGlobbingDnsWildcards(value: Boolean): Self = StObject.set(x, "allowGlobbingDnsWildcards", value.asInstanceOf[js.Any])
+    inline def setAllowGlobbingDnsWildcards(value: Boolean): Self = StObject.set(x, "allowGlobbingDnsWildcards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowGlobbingDnsWildcardsUndefined: Self = StObject.set(x, "allowGlobbingDnsWildcards", js.undefined)
+    inline def setAllowGlobbingDnsWildcardsUndefined: Self = StObject.set(x, "allowGlobbingDnsWildcards", js.undefined)
     
-    @scala.inline
-    def setAllowedDnsNames(value: js.Array[String]): Self = StObject.set(x, "allowedDnsNames", value.asInstanceOf[js.Any])
+    inline def setAllowedDnsNames(value: js.Array[String]): Self = StObject.set(x, "allowedDnsNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedDnsNamesUndefined: Self = StObject.set(x, "allowedDnsNames", js.undefined)
+    inline def setAllowedDnsNamesUndefined: Self = StObject.set(x, "allowedDnsNames", js.undefined)
     
-    @scala.inline
-    def setAllowedDnsNamesVarargs(value: String*): Self = StObject.set(x, "allowedDnsNames", js.Array(value :_*))
+    inline def setAllowedDnsNamesVarargs(value: String*): Self = StObject.set(x, "allowedDnsNames", js.Array(value :_*))
     
-    @scala.inline
-    def setAllowedEmailAddresses(value: js.Array[String]): Self = StObject.set(x, "allowedEmailAddresses", value.asInstanceOf[js.Any])
+    inline def setAllowedEmailAddresses(value: js.Array[String]): Self = StObject.set(x, "allowedEmailAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedEmailAddressesUndefined: Self = StObject.set(x, "allowedEmailAddresses", js.undefined)
+    inline def setAllowedEmailAddressesUndefined: Self = StObject.set(x, "allowedEmailAddresses", js.undefined)
     
-    @scala.inline
-    def setAllowedEmailAddressesVarargs(value: String*): Self = StObject.set(x, "allowedEmailAddresses", js.Array(value :_*))
+    inline def setAllowedEmailAddressesVarargs(value: String*): Self = StObject.set(x, "allowedEmailAddresses", js.Array(value :_*))
     
-    @scala.inline
-    def setAllowedIps(value: js.Array[String]): Self = StObject.set(x, "allowedIps", value.asInstanceOf[js.Any])
+    inline def setAllowedIps(value: js.Array[String]): Self = StObject.set(x, "allowedIps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedIpsUndefined: Self = StObject.set(x, "allowedIps", js.undefined)
+    inline def setAllowedIpsUndefined: Self = StObject.set(x, "allowedIps", js.undefined)
     
-    @scala.inline
-    def setAllowedIpsVarargs(value: String*): Self = StObject.set(x, "allowedIps", js.Array(value :_*))
+    inline def setAllowedIpsVarargs(value: String*): Self = StObject.set(x, "allowedIps", js.Array(value :_*))
     
-    @scala.inline
-    def setAllowedUris(value: js.Array[String]): Self = StObject.set(x, "allowedUris", value.asInstanceOf[js.Any])
+    inline def setAllowedUris(value: js.Array[String]): Self = StObject.set(x, "allowedUris", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedUrisUndefined: Self = StObject.set(x, "allowedUris", js.undefined)
+    inline def setAllowedUrisUndefined: Self = StObject.set(x, "allowedUris", js.undefined)
     
-    @scala.inline
-    def setAllowedUrisVarargs(value: String*): Self = StObject.set(x, "allowedUris", js.Array(value :_*))
+    inline def setAllowedUrisVarargs(value: String*): Self = StObject.set(x, "allowedUris", js.Array(value :_*))
   }
 }

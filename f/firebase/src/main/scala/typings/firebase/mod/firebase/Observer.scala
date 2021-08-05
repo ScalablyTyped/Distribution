@@ -23,22 +23,17 @@ trait Observer[T, E] extends StObject {
 }
 object Observer {
   
-  @scala.inline
-  def apply[T, E](complete: () => Unit, error: E => Unit, next: T => Unit): Observer[T, E] = {
+  inline def apply[T, E](complete: () => Unit, error: E => Unit, next: T => Unit): Observer[T, E] = {
     val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete), error = js.Any.fromFunction1(error), next = js.Any.fromFunction1(next))
     __obj.asInstanceOf[Observer[T, E]]
   }
   
-  @scala.inline
-  implicit class ObserverMutableBuilder[Self <: Observer[?, ?], T, E] (val x: Self & (Observer[T, E])) extends AnyVal {
+  extension [Self <: Observer[?, ?], T, E](x: Self & (Observer[T, E])) {
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setError(value: E => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: E => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNext(value: T => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
+    inline def setNext(value: T => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
   }
 }

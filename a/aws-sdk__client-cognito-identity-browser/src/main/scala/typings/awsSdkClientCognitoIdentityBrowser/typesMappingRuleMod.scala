@@ -34,8 +34,7 @@ object typesMappingRuleMod {
   }
   object MappingRule {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Claim: String,
       MatchType: Equals | Contains | StartsWith | NotEqual | String,
       RoleARN: String,
@@ -45,20 +44,15 @@ object typesMappingRuleMod {
       __obj.asInstanceOf[MappingRule]
     }
     
-    @scala.inline
-    implicit class MappingRuleMutableBuilder[Self <: MappingRule] (val x: Self) extends AnyVal {
+    extension [Self <: MappingRule](x: Self) {
       
-      @scala.inline
-      def setClaim(value: String): Self = StObject.set(x, "Claim", value.asInstanceOf[js.Any])
+      inline def setClaim(value: String): Self = StObject.set(x, "Claim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchType(value: Equals | Contains | StartsWith | NotEqual | String): Self = StObject.set(x, "MatchType", value.asInstanceOf[js.Any])
+      inline def setMatchType(value: Equals | Contains | StartsWith | NotEqual | String): Self = StObject.set(x, "MatchType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleARN(value: String): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
+      inline def setRoleARN(value: String): Self = StObject.set(x, "RoleARN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     }
   }
   

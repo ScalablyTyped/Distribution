@@ -13,8 +13,7 @@ object loadCsfMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def loadCsf(hasClientApiStoryStoreConfigApi: ClientApi): js.Function4[
+  inline def loadCsf(hasClientApiStoryStoreConfigApi: ClientApi): js.Function4[
     /* framework */ String, 
     /* loadable */ Loadable, 
     /* m */ NodeModule, 

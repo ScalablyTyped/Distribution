@@ -18,22 +18,17 @@ trait GetPatchBaselineForPatchGroupRequest extends StObject {
 }
 object GetPatchBaselineForPatchGroupRequest {
   
-  @scala.inline
-  def apply(PatchGroup: PatchGroup): GetPatchBaselineForPatchGroupRequest = {
+  inline def apply(PatchGroup: PatchGroup): GetPatchBaselineForPatchGroupRequest = {
     val __obj = js.Dynamic.literal(PatchGroup = PatchGroup.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPatchBaselineForPatchGroupRequest]
   }
   
-  @scala.inline
-  implicit class GetPatchBaselineForPatchGroupRequestMutableBuilder[Self <: GetPatchBaselineForPatchGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetPatchBaselineForPatchGroupRequest](x: Self) {
     
-    @scala.inline
-    def setOperatingSystem(value: OperatingSystem): Self = StObject.set(x, "OperatingSystem", value.asInstanceOf[js.Any])
+    inline def setOperatingSystem(value: OperatingSystem): Self = StObject.set(x, "OperatingSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatingSystemUndefined: Self = StObject.set(x, "OperatingSystem", js.undefined)
+    inline def setOperatingSystemUndefined: Self = StObject.set(x, "OperatingSystem", js.undefined)
     
-    @scala.inline
-    def setPatchGroup(value: PatchGroup): Self = StObject.set(x, "PatchGroup", value.asInstanceOf[js.Any])
+    inline def setPatchGroup(value: PatchGroup): Self = StObject.set(x, "PatchGroup", value.asInstanceOf[js.Any])
   }
 }

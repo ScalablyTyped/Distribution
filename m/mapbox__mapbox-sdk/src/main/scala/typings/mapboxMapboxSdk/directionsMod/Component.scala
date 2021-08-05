@@ -52,50 +52,36 @@ trait Component extends StObject {
 }
 object Component {
   
-  @scala.inline
-  def apply(active: Boolean, text: String, `type`: String): Component = {
+  inline def apply(active: Boolean, text: String, `type`: String): Component = {
     val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Component]
   }
   
-  @scala.inline
-  implicit class ComponentMutableBuilder[Self <: Component] (val x: Self) extends AnyVal {
+  extension [Self <: Component](x: Self) {
     
-    @scala.inline
-    def setAbbr(value: String): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
+    inline def setAbbr(value: String): Self = StObject.set(x, "abbr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbbrUndefined: Self = StObject.set(x, "abbr", js.undefined)
+    inline def setAbbrUndefined: Self = StObject.set(x, "abbr", js.undefined)
     
-    @scala.inline
-    def setAbbr_priority(value: Double): Self = StObject.set(x, "abbr_priority", value.asInstanceOf[js.Any])
+    inline def setAbbr_priority(value: Double): Self = StObject.set(x, "abbr_priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbbr_priorityUndefined: Self = StObject.set(x, "abbr_priority", js.undefined)
+    inline def setAbbr_priorityUndefined: Self = StObject.set(x, "abbr_priority", js.undefined)
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirections(value: js.Array[String]): Self = StObject.set(x, "directions", value.asInstanceOf[js.Any])
+    inline def setDirections(value: js.Array[String]): Self = StObject.set(x, "directions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionsUndefined: Self = StObject.set(x, "directions", js.undefined)
+    inline def setDirectionsUndefined: Self = StObject.set(x, "directions", js.undefined)
     
-    @scala.inline
-    def setDirectionsVarargs(value: String*): Self = StObject.set(x, "directions", js.Array(value :_*))
+    inline def setDirectionsVarargs(value: String*): Self = StObject.set(x, "directions", js.Array(value :_*))
     
-    @scala.inline
-    def setImageBaseURL(value: String): Self = StObject.set(x, "imageBaseURL", value.asInstanceOf[js.Any])
+    inline def setImageBaseURL(value: String): Self = StObject.set(x, "imageBaseURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageBaseURLUndefined: Self = StObject.set(x, "imageBaseURL", js.undefined)
+    inline def setImageBaseURLUndefined: Self = StObject.set(x, "imageBaseURL", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

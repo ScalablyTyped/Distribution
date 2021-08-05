@@ -5,101 +5,75 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def Image: typings.reactNative.mod.Animated.AnimatedComponent[typings.reactNative.anon.TypeofImage] = typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].selectDynamic("Image").asInstanceOf[typings.reactNative.mod.Animated.AnimatedComponent[typings.reactNative.anon.TypeofImage]]
+inline def Image: typings.reactNative.mod.Animated.AnimatedComponent[typings.reactNative.anon.TypeofImage] = typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].selectDynamic("Image").asInstanceOf[typings.reactNative.mod.Animated.AnimatedComponent[typings.reactNative.anon.TypeofImage]]
 
-@scala.inline
-def ScrollView: typings.reactNative.mod.Animated.AnimatedComponent[org.scalablytyped.runtime.Instantiable0[typings.reactNative.mod._ScrollView]] = typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].selectDynamic("ScrollView").asInstanceOf[typings.reactNative.mod.Animated.AnimatedComponent[org.scalablytyped.runtime.Instantiable0[typings.reactNative.mod._ScrollView]]]
+inline def ScrollView: typings.reactNative.mod.Animated.AnimatedComponent[org.scalablytyped.runtime.Instantiable0[typings.reactNative.mod._ScrollView]] = typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].selectDynamic("ScrollView").asInstanceOf[typings.reactNative.mod.Animated.AnimatedComponent[org.scalablytyped.runtime.Instantiable0[typings.reactNative.mod._ScrollView]]]
 
-@scala.inline
-def Text: typings.reactNative.mod.Animated.AnimatedComponent[org.scalablytyped.runtime.Instantiable0[typings.reactNative.mod._Text]] = typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].selectDynamic("Text").asInstanceOf[typings.reactNative.mod.Animated.AnimatedComponent[org.scalablytyped.runtime.Instantiable0[typings.reactNative.mod._Text]]]
+inline def Text: typings.reactNative.mod.Animated.AnimatedComponent[org.scalablytyped.runtime.Instantiable0[typings.reactNative.mod._Text]] = typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].selectDynamic("Text").asInstanceOf[typings.reactNative.mod.Animated.AnimatedComponent[org.scalablytyped.runtime.Instantiable0[typings.reactNative.mod._Text]]]
 
-@scala.inline
-def View: typings.reactNative.mod.Animated.AnimatedComponent[typings.reactNative.anon.TypeofView] = typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].selectDynamic("View").asInstanceOf[typings.reactNative.mod.Animated.AnimatedComponent[typings.reactNative.anon.TypeofView]]
+inline def View: typings.reactNative.mod.Animated.AnimatedComponent[typings.reactNative.anon.TypeofView] = typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].selectDynamic("View").asInstanceOf[typings.reactNative.mod.Animated.AnimatedComponent[typings.reactNative.anon.TypeofView]]
 
-@scala.inline
-def add(a: typings.reactNative.mod.Animated.Animated, b: typings.reactNative.mod.Animated.Animated): typings.reactNative.mod.Animated.AnimatedAddition = (typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.reactNative.mod.Animated.AnimatedAddition]
+inline def add(a: typings.reactNative.mod.Animated.Animated, b: typings.reactNative.mod.Animated.Animated): typings.reactNative.mod.Animated.AnimatedAddition = (typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.reactNative.mod.Animated.AnimatedAddition]
 
-@scala.inline
-def createAnimatedComponent[T /* <: typings.react.mod.ComponentType[js.Any] */](component: T): typings.reactNative.mod.Animated.AnimatedComponent[T] = typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].applyDynamic("createAnimatedComponent")(component.asInstanceOf[js.Any]).asInstanceOf[typings.reactNative.mod.Animated.AnimatedComponent[T]]
+inline def createAnimatedComponent[T /* <: typings.react.mod.ComponentType[js.Any] */](component: T): typings.reactNative.mod.Animated.AnimatedComponent[T] = typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].applyDynamic("createAnimatedComponent")(component.asInstanceOf[js.Any]).asInstanceOf[typings.reactNative.mod.Animated.AnimatedComponent[T]]
 
-@scala.inline
-def decay(
+inline def decay(
   value: typings.reactNative.mod.Animated.AnimatedValueXY,
   config: typings.reactNative.mod.Animated.DecayAnimationConfig
 ): typings.reactNative.mod.Animated.CompositeAnimation = (typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].applyDynamic("decay")(value.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[typings.reactNative.mod.Animated.CompositeAnimation]
-@scala.inline
-def decay(
+inline def decay(
   value: typings.reactNative.mod.Animated.AnimatedValue,
   config: typings.reactNative.mod.Animated.DecayAnimationConfig
 ): typings.reactNative.mod.Animated.CompositeAnimation = (typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].applyDynamic("decay")(value.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[typings.reactNative.mod.Animated.CompositeAnimation]
 
-@scala.inline
-def delay(time: scala.Double): typings.reactNative.mod.Animated.CompositeAnimation = typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].applyDynamic("delay")(time.asInstanceOf[js.Any]).asInstanceOf[typings.reactNative.mod.Animated.CompositeAnimation]
+inline def delay(time: scala.Double): typings.reactNative.mod.Animated.CompositeAnimation = typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].applyDynamic("delay")(time.asInstanceOf[js.Any]).asInstanceOf[typings.reactNative.mod.Animated.CompositeAnimation]
 
-@scala.inline
-def diffClamp(a: typings.reactNative.mod.Animated.Animated, min: scala.Double, max: scala.Double): typings.reactNative.mod.Animated.AnimatedDiffClamp = (typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].applyDynamic("diffClamp")(a.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[typings.reactNative.mod.Animated.AnimatedDiffClamp]
+inline def diffClamp(a: typings.reactNative.mod.Animated.Animated, min: scala.Double, max: scala.Double): typings.reactNative.mod.Animated.AnimatedDiffClamp = (typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].applyDynamic("diffClamp")(a.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[typings.reactNative.mod.Animated.AnimatedDiffClamp]
 
-@scala.inline
-def divide(a: typings.reactNative.mod.Animated.Animated, b: typings.reactNative.mod.Animated.Animated): typings.reactNative.mod.Animated.AnimatedDivision = (typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].applyDynamic("divide")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.reactNative.mod.Animated.AnimatedDivision]
+inline def divide(a: typings.reactNative.mod.Animated.Animated, b: typings.reactNative.mod.Animated.Animated): typings.reactNative.mod.Animated.AnimatedDivision = (typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].applyDynamic("divide")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.reactNative.mod.Animated.AnimatedDivision]
 
-@scala.inline
-def event[T](argMapping: js.Array[typings.reactNative.mod.Animated.Mapping | scala.Null]): js.Function1[/* repeated */ js.Any, scala.Unit] = typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].applyDynamic("event")(argMapping.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, scala.Unit]]
-@scala.inline
-def event[T](
+inline def event[T](argMapping: js.Array[typings.reactNative.mod.Animated.Mapping | scala.Null]): js.Function1[/* repeated */ js.Any, scala.Unit] = typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].applyDynamic("event")(argMapping.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, scala.Unit]]
+inline def event[T](
   argMapping: js.Array[typings.reactNative.mod.Animated.Mapping | scala.Null],
   config: typings.reactNative.mod.Animated.EventConfig[T]
 ): js.Function1[/* repeated */ js.Any, scala.Unit] = (typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].applyDynamic("event")(argMapping.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* repeated */ js.Any, scala.Unit]]
 
-@scala.inline
-def loop(animation: typings.reactNative.mod.Animated.CompositeAnimation): typings.reactNative.mod.Animated.CompositeAnimation = typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].applyDynamic("loop")(animation.asInstanceOf[js.Any]).asInstanceOf[typings.reactNative.mod.Animated.CompositeAnimation]
-@scala.inline
-def loop(
+inline def loop(animation: typings.reactNative.mod.Animated.CompositeAnimation): typings.reactNative.mod.Animated.CompositeAnimation = typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].applyDynamic("loop")(animation.asInstanceOf[js.Any]).asInstanceOf[typings.reactNative.mod.Animated.CompositeAnimation]
+inline def loop(
   animation: typings.reactNative.mod.Animated.CompositeAnimation,
   config: typings.reactNative.mod.Animated.LoopAnimationConfig
 ): typings.reactNative.mod.Animated.CompositeAnimation = (typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].applyDynamic("loop")(animation.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[typings.reactNative.mod.Animated.CompositeAnimation]
 
-@scala.inline
-def modulo(a: typings.reactNative.mod.Animated.Animated, modulus: scala.Double): typings.reactNative.mod.Animated.AnimatedModulo = (typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].applyDynamic("modulo")(a.asInstanceOf[js.Any], modulus.asInstanceOf[js.Any])).asInstanceOf[typings.reactNative.mod.Animated.AnimatedModulo]
+inline def modulo(a: typings.reactNative.mod.Animated.Animated, modulus: scala.Double): typings.reactNative.mod.Animated.AnimatedModulo = (typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].applyDynamic("modulo")(a.asInstanceOf[js.Any], modulus.asInstanceOf[js.Any])).asInstanceOf[typings.reactNative.mod.Animated.AnimatedModulo]
 
-@scala.inline
-def multiply(a: typings.reactNative.mod.Animated.Animated, b: typings.reactNative.mod.Animated.Animated): typings.reactNative.mod.Animated.AnimatedMultiplication = (typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].applyDynamic("multiply")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.reactNative.mod.Animated.AnimatedMultiplication]
+inline def multiply(a: typings.reactNative.mod.Animated.Animated, b: typings.reactNative.mod.Animated.Animated): typings.reactNative.mod.Animated.AnimatedMultiplication = (typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].applyDynamic("multiply")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.reactNative.mod.Animated.AnimatedMultiplication]
 
-@scala.inline
-def parallel(animations: js.Array[typings.reactNative.mod.Animated.CompositeAnimation]): typings.reactNative.mod.Animated.CompositeAnimation = typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].applyDynamic("parallel")(animations.asInstanceOf[js.Any]).asInstanceOf[typings.reactNative.mod.Animated.CompositeAnimation]
-@scala.inline
-def parallel(
+inline def parallel(animations: js.Array[typings.reactNative.mod.Animated.CompositeAnimation]): typings.reactNative.mod.Animated.CompositeAnimation = typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].applyDynamic("parallel")(animations.asInstanceOf[js.Any]).asInstanceOf[typings.reactNative.mod.Animated.CompositeAnimation]
+inline def parallel(
   animations: js.Array[typings.reactNative.mod.Animated.CompositeAnimation],
   config: typings.reactNative.mod.Animated.ParallelConfig
 ): typings.reactNative.mod.Animated.CompositeAnimation = (typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].applyDynamic("parallel")(animations.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[typings.reactNative.mod.Animated.CompositeAnimation]
 
-@scala.inline
-def sequence(animations: js.Array[typings.reactNative.mod.Animated.CompositeAnimation]): typings.reactNative.mod.Animated.CompositeAnimation = typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].applyDynamic("sequence")(animations.asInstanceOf[js.Any]).asInstanceOf[typings.reactNative.mod.Animated.CompositeAnimation]
+inline def sequence(animations: js.Array[typings.reactNative.mod.Animated.CompositeAnimation]): typings.reactNative.mod.Animated.CompositeAnimation = typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].applyDynamic("sequence")(animations.asInstanceOf[js.Any]).asInstanceOf[typings.reactNative.mod.Animated.CompositeAnimation]
 
-@scala.inline
-def spring(
+inline def spring(
   value: typings.reactNative.mod.Animated.AnimatedValueXY,
   config: typings.reactNative.mod.Animated.SpringAnimationConfig
 ): typings.reactNative.mod.Animated.CompositeAnimation = (typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].applyDynamic("spring")(value.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[typings.reactNative.mod.Animated.CompositeAnimation]
-@scala.inline
-def spring(
+inline def spring(
   value: typings.reactNative.mod.Animated.AnimatedValue,
   config: typings.reactNative.mod.Animated.SpringAnimationConfig
 ): typings.reactNative.mod.Animated.CompositeAnimation = (typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].applyDynamic("spring")(value.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[typings.reactNative.mod.Animated.CompositeAnimation]
 
-@scala.inline
-def stagger(time: scala.Double, animations: js.Array[typings.reactNative.mod.Animated.CompositeAnimation]): typings.reactNative.mod.Animated.CompositeAnimation = (typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].applyDynamic("stagger")(time.asInstanceOf[js.Any], animations.asInstanceOf[js.Any])).asInstanceOf[typings.reactNative.mod.Animated.CompositeAnimation]
+inline def stagger(time: scala.Double, animations: js.Array[typings.reactNative.mod.Animated.CompositeAnimation]): typings.reactNative.mod.Animated.CompositeAnimation = (typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].applyDynamic("stagger")(time.asInstanceOf[js.Any], animations.asInstanceOf[js.Any])).asInstanceOf[typings.reactNative.mod.Animated.CompositeAnimation]
 
-@scala.inline
-def subtract(a: typings.reactNative.mod.Animated.Animated, b: typings.reactNative.mod.Animated.Animated): typings.reactNative.mod.Animated.AnimatedSubtraction = (typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.reactNative.mod.Animated.AnimatedSubtraction]
+inline def subtract(a: typings.reactNative.mod.Animated.Animated, b: typings.reactNative.mod.Animated.Animated): typings.reactNative.mod.Animated.AnimatedSubtraction = (typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.reactNative.mod.Animated.AnimatedSubtraction]
 
-@scala.inline
-def timing(
+inline def timing(
   value: typings.reactNative.mod.Animated.AnimatedValueXY,
   config: typings.reactNative.mod.Animated.TimingAnimationConfig
 ): typings.reactNative.mod.Animated.CompositeAnimation = (typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].applyDynamic("timing")(value.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[typings.reactNative.mod.Animated.CompositeAnimation]
-@scala.inline
-def timing(
+inline def timing(
   value: typings.reactNative.mod.Animated.AnimatedValue,
   config: typings.reactNative.mod.Animated.TimingAnimationConfig
 ): typings.reactNative.mod.Animated.CompositeAnimation = (typings.reactNative.mod.Animated.^.asInstanceOf[js.Dynamic].applyDynamic("timing")(value.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[typings.reactNative.mod.Animated.CompositeAnimation]

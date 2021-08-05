@@ -18,28 +18,21 @@ trait ListLicenseConfigurationsResponse extends StObject {
 }
 object ListLicenseConfigurationsResponse {
   
-  @scala.inline
-  def apply(): ListLicenseConfigurationsResponse = {
+  inline def apply(): ListLicenseConfigurationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListLicenseConfigurationsResponse]
   }
   
-  @scala.inline
-  implicit class ListLicenseConfigurationsResponseMutableBuilder[Self <: ListLicenseConfigurationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListLicenseConfigurationsResponse](x: Self) {
     
-    @scala.inline
-    def setLicenseConfigurations(value: LicenseConfigurations): Self = StObject.set(x, "LicenseConfigurations", value.asInstanceOf[js.Any])
+    inline def setLicenseConfigurations(value: LicenseConfigurations): Self = StObject.set(x, "LicenseConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicenseConfigurationsUndefined: Self = StObject.set(x, "LicenseConfigurations", js.undefined)
+    inline def setLicenseConfigurationsUndefined: Self = StObject.set(x, "LicenseConfigurations", js.undefined)
     
-    @scala.inline
-    def setLicenseConfigurationsVarargs(value: LicenseConfiguration*): Self = StObject.set(x, "LicenseConfigurations", js.Array(value :_*))
+    inline def setLicenseConfigurationsVarargs(value: LicenseConfiguration*): Self = StObject.set(x, "LicenseConfigurations", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

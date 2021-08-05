@@ -86,7 +86,7 @@ object configMod {
       fallback: Double
     ): Double = js.native
     
-    var m: js.Any = js.native
+    /* private */ var m: js.Any = js.native
     
     def reset(configObj: IonicConfig): Unit = js.native
     
@@ -100,12 +100,9 @@ object configMod {
   @js.native
   val config: Config_ = js.native
   
-  @scala.inline
-  def configFromSession(win: Window): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("configFromSession")(win.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def configFromSession(win: Window): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("configFromSession")(win.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def configFromURL(win: Window): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("configFromURL")(win.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def configFromURL(win: Window): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("configFromURL")(win.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def saveConfig(win: Window, c: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveConfig")(win.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def saveConfig(win: Window, c: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveConfig")(win.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

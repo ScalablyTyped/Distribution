@@ -16,8 +16,7 @@ trait BackupProvider
 }
 object BackupProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     backup: (String, StringDictionary[js.Any], TaskExecutionMode) => Thenable[BackupResponse],
     getBackupConfigInfo: String => Thenable[BackupConfigInfo],
     providerId: String
@@ -26,13 +25,10 @@ object BackupProvider {
     __obj.asInstanceOf[BackupProvider]
   }
   
-  @scala.inline
-  implicit class BackupProviderMutableBuilder[Self <: BackupProvider] (val x: Self) extends AnyVal {
+  extension [Self <: BackupProvider](x: Self) {
     
-    @scala.inline
-    def setBackup(value: (String, StringDictionary[js.Any], TaskExecutionMode) => Thenable[BackupResponse]): Self = StObject.set(x, "backup", js.Any.fromFunction3(value))
+    inline def setBackup(value: (String, StringDictionary[js.Any], TaskExecutionMode) => Thenable[BackupResponse]): Self = StObject.set(x, "backup", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetBackupConfigInfo(value: String => Thenable[BackupConfigInfo]): Self = StObject.set(x, "getBackupConfigInfo", js.Any.fromFunction1(value))
+    inline def setGetBackupConfigInfo(value: String => Thenable[BackupConfigInfo]): Self = StObject.set(x, "getBackupConfigInfo", js.Any.fromFunction1(value))
   }
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.CalendarModule")
 @js.native
-class CalendarModule protected ()
+/* private */ class CalendarModule ()
   extends StObject
      with typings.activexOutlook.Outlook.CalendarModule {
   
@@ -27,7 +27,7 @@ class CalendarModule protected ()
   /* CompleteClass */
   override val NavigationModuleType: OlNavigationModuleType = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.CalendarModule_typekey")
   var OutlookDotCalendarModule_typekey: typings.activexOutlook.Outlook.CalendarModule = js.native
   

@@ -61,37 +61,27 @@ trait PlusWebviewWebviewDrawOptions extends StObject {
 }
 object PlusWebviewWebviewDrawOptions {
   
-  @scala.inline
-  def apply(): PlusWebviewWebviewDrawOptions = {
+  inline def apply(): PlusWebviewWebviewDrawOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusWebviewWebviewDrawOptions]
   }
   
-  @scala.inline
-  implicit class PlusWebviewWebviewDrawOptionsMutableBuilder[Self <: PlusWebviewWebviewDrawOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusWebviewWebviewDrawOptions](x: Self) {
     
-    @scala.inline
-    def setBit(value: RGB565 | ARGB): Self = StObject.set(x, "bit", value.asInstanceOf[js.Any])
+    inline def setBit(value: RGB565 | ARGB): Self = StObject.set(x, "bit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitUndefined: Self = StObject.set(x, "bit", js.undefined)
+    inline def setBitUndefined: Self = StObject.set(x, "bit", js.undefined)
     
-    @scala.inline
-    def setCheck(value: Boolean): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
+    inline def setCheck(value: Boolean): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckKeyboard(value: Boolean): Self = StObject.set(x, "checkKeyboard", value.asInstanceOf[js.Any])
+    inline def setCheckKeyboard(value: Boolean): Self = StObject.set(x, "checkKeyboard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckKeyboardUndefined: Self = StObject.set(x, "checkKeyboard", js.undefined)
+    inline def setCheckKeyboardUndefined: Self = StObject.set(x, "checkKeyboard", js.undefined)
     
-    @scala.inline
-    def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
+    inline def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
     
-    @scala.inline
-    def setClip(value: PlusNativeObj): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
+    inline def setClip(value: PlusNativeObj): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
+    inline def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
   }
 }

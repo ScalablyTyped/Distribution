@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DisposeMethod extends StObject
 object DisposeMethod {
   
-  @scala.inline
-  def Background: typings.gm.gmStrings.Background = "Background".asInstanceOf[typings.gm.gmStrings.Background]
+  inline def Background: typings.gm.gmStrings.Background = "Background".asInstanceOf[typings.gm.gmStrings.Background]
   
-  @scala.inline
-  def None: typings.gm.gmStrings.None = "None".asInstanceOf[typings.gm.gmStrings.None]
+  inline def None: typings.gm.gmStrings.None = "None".asInstanceOf[typings.gm.gmStrings.None]
   
-  @scala.inline
-  def Previous: typings.gm.gmStrings.Previous = "Previous".asInstanceOf[typings.gm.gmStrings.Previous]
+  inline def Previous: typings.gm.gmStrings.Previous = "Previous".asInstanceOf[typings.gm.gmStrings.Previous]
   
-  @scala.inline
-  def Undefined: typings.gm.gmStrings.Undefined = "Undefined".asInstanceOf[typings.gm.gmStrings.Undefined]
+  inline def Undefined: typings.gm.gmStrings.Undefined = "Undefined".asInstanceOf[typings.gm.gmStrings.Undefined]
 }

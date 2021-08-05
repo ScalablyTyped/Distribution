@@ -16,37 +16,27 @@ trait GridToolbarItem extends StObject {
 }
 object GridToolbarItem {
   
-  @scala.inline
-  def apply(): GridToolbarItem = {
+  inline def apply(): GridToolbarItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridToolbarItem]
   }
   
-  @scala.inline
-  implicit class GridToolbarItemMutableBuilder[Self <: GridToolbarItem] (val x: Self) extends AnyVal {
+  extension [Self <: GridToolbarItem](x: Self) {
     
-    @scala.inline
-    def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+    inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+    inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

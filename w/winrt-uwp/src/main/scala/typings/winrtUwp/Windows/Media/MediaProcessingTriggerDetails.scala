@@ -13,16 +13,13 @@ trait MediaProcessingTriggerDetails extends StObject {
 }
 object MediaProcessingTriggerDetails {
   
-  @scala.inline
-  def apply(arguments: ValueSet): MediaProcessingTriggerDetails = {
+  inline def apply(arguments: ValueSet): MediaProcessingTriggerDetails = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaProcessingTriggerDetails]
   }
   
-  @scala.inline
-  implicit class MediaProcessingTriggerDetailsMutableBuilder[Self <: MediaProcessingTriggerDetails] (val x: Self) extends AnyVal {
+  extension [Self <: MediaProcessingTriggerDetails](x: Self) {
     
-    @scala.inline
-    def setArguments(value: ValueSet): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: ValueSet): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
   }
 }

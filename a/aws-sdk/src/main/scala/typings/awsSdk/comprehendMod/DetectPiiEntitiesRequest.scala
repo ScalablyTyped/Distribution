@@ -18,19 +18,15 @@ trait DetectPiiEntitiesRequest extends StObject {
 }
 object DetectPiiEntitiesRequest {
   
-  @scala.inline
-  def apply(LanguageCode: LanguageCode, Text: String): DetectPiiEntitiesRequest = {
+  inline def apply(LanguageCode: LanguageCode, Text: String): DetectPiiEntitiesRequest = {
     val __obj = js.Dynamic.literal(LanguageCode = LanguageCode.asInstanceOf[js.Any], Text = Text.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetectPiiEntitiesRequest]
   }
   
-  @scala.inline
-  implicit class DetectPiiEntitiesRequestMutableBuilder[Self <: DetectPiiEntitiesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DetectPiiEntitiesRequest](x: Self) {
     
-    @scala.inline
-    def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }
 }

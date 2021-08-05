@@ -18,7 +18,7 @@ object timeScaleMod {
     */
   class Time () extends QuantitativeScale[Date] {
     
-    var _d3Scale: js.Any = js.native
+    /* private */ var _d3Scale: js.Any = js.native
     
     /**
       * Returns an array of ticks values separated by the specified interval.
@@ -43,7 +43,6 @@ object timeScaleMod {
       * Transforms the Plottable TimeInterval string into a d3 time interval equivalent.
       * If the provided TimeInterval is incorrect, the default is d3.timeYear
       */
-    @scala.inline
-    def timeIntervalToD3Time(timeInterval: String, useUTC: Boolean): CountableTimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("timeIntervalToD3Time")(timeInterval.asInstanceOf[js.Any], useUTC.asInstanceOf[js.Any])).asInstanceOf[CountableTimeInterval]
+    inline def timeIntervalToD3Time(timeInterval: String, useUTC: Boolean): CountableTimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("timeIntervalToD3Time")(timeInterval.asInstanceOf[js.Any], useUTC.asInstanceOf[js.Any])).asInstanceOf[CountableTimeInterval]
   }
 }

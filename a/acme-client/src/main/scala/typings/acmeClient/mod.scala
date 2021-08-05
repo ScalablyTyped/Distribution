@@ -88,8 +88,7 @@ object mod {
     @JSImport("acme-client", "directory.letsencrypt")
     @js.native
     def letsencrypt: Production = js.native
-    @scala.inline
-    def letsencrypt_=(x: Production): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("letsencrypt")(x.asInstanceOf[js.Any])
+    inline def letsencrypt_=(x: Production): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("letsencrypt")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("acme-client", "forge")
@@ -104,8 +103,7 @@ object mod {
   }
   object Authorization {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       challenges: js.Array[Challenge],
       identifier: Identifier,
       status: pending | valid | invalid | deactivated | expired | revoked,
@@ -115,11 +113,9 @@ object mod {
       __obj.asInstanceOf[Authorization]
     }
     
-    @scala.inline
-    implicit class AuthorizationMutableBuilder[Self <: Authorization] (val x: Self) extends AnyVal {
+    extension [Self <: Authorization](x: Self) {
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -133,23 +129,18 @@ object mod {
   }
   object CertificateDomains {
     
-    @scala.inline
-    def apply(altNames: js.Array[String], commonName: String): CertificateDomains = {
+    inline def apply(altNames: js.Array[String], commonName: String): CertificateDomains = {
       val __obj = js.Dynamic.literal(altNames = altNames.asInstanceOf[js.Any], commonName = commonName.asInstanceOf[js.Any])
       __obj.asInstanceOf[CertificateDomains]
     }
     
-    @scala.inline
-    implicit class CertificateDomainsMutableBuilder[Self <: CertificateDomains] (val x: Self) extends AnyVal {
+    extension [Self <: CertificateDomains](x: Self) {
       
-      @scala.inline
-      def setAltNames(value: js.Array[String]): Self = StObject.set(x, "altNames", value.asInstanceOf[js.Any])
+      inline def setAltNames(value: js.Array[String]): Self = StObject.set(x, "altNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAltNamesVarargs(value: String*): Self = StObject.set(x, "altNames", js.Array(value :_*))
+      inline def setAltNamesVarargs(value: String*): Self = StObject.set(x, "altNames", js.Array(value :_*))
       
-      @scala.inline
-      def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
+      inline def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -165,26 +156,20 @@ object mod {
   }
   object CertificateInfo {
     
-    @scala.inline
-    def apply(domains: CertificateDomains, issuer: CertificateIssuer, notAfter: Date, notBefore: Date): CertificateInfo = {
+    inline def apply(domains: CertificateDomains, issuer: CertificateIssuer, notAfter: Date, notBefore: Date): CertificateInfo = {
       val __obj = js.Dynamic.literal(domains = domains.asInstanceOf[js.Any], issuer = issuer.asInstanceOf[js.Any], notAfter = notAfter.asInstanceOf[js.Any], notBefore = notBefore.asInstanceOf[js.Any])
       __obj.asInstanceOf[CertificateInfo]
     }
     
-    @scala.inline
-    implicit class CertificateInfoMutableBuilder[Self <: CertificateInfo] (val x: Self) extends AnyVal {
+    extension [Self <: CertificateInfo](x: Self) {
       
-      @scala.inline
-      def setDomains(value: CertificateDomains): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
+      inline def setDomains(value: CertificateDomains): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssuer(value: CertificateIssuer): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+      inline def setIssuer(value: CertificateIssuer): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotAfter(value: Date): Self = StObject.set(x, "notAfter", value.asInstanceOf[js.Any])
+      inline def setNotAfter(value: Date): Self = StObject.set(x, "notAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotBefore(value: Date): Self = StObject.set(x, "notBefore", value.asInstanceOf[js.Any])
+      inline def setNotBefore(value: Date): Self = StObject.set(x, "notBefore", value.asInstanceOf[js.Any])
     }
   }
   
@@ -194,17 +179,14 @@ object mod {
   }
   object CertificateIssuer {
     
-    @scala.inline
-    def apply(commonName: String): CertificateIssuer = {
+    inline def apply(commonName: String): CertificateIssuer = {
       val __obj = js.Dynamic.literal(commonName = commonName.asInstanceOf[js.Any])
       __obj.asInstanceOf[CertificateIssuer]
     }
     
-    @scala.inline
-    implicit class CertificateIssuerMutableBuilder[Self <: CertificateIssuer] (val x: Self) extends AnyVal {
+    extension [Self <: CertificateIssuer](x: Self) {
       
-      @scala.inline
-      def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
+      inline def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -230,8 +212,7 @@ object mod {
   }
   object ClientAutoOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       challengeCreateFn: (Authorization, Challenge, String) => js.Promise[js.Any],
       challengeRemoveFn: (Authorization, Challenge, String) => js.Promise[js.Any],
       csr: CsrBuffer | CsrString
@@ -240,50 +221,35 @@ object mod {
       __obj.asInstanceOf[ClientAutoOptions]
     }
     
-    @scala.inline
-    implicit class ClientAutoOptionsMutableBuilder[Self <: ClientAutoOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientAutoOptions](x: Self) {
       
-      @scala.inline
-      def setChallengeCreateFn(value: (Authorization, Challenge, String) => js.Promise[js.Any]): Self = StObject.set(x, "challengeCreateFn", js.Any.fromFunction3(value))
+      inline def setChallengeCreateFn(value: (Authorization, Challenge, String) => js.Promise[js.Any]): Self = StObject.set(x, "challengeCreateFn", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setChallengePriority(value: js.Array[String]): Self = StObject.set(x, "challengePriority", value.asInstanceOf[js.Any])
+      inline def setChallengePriority(value: js.Array[String]): Self = StObject.set(x, "challengePriority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChallengePriorityUndefined: Self = StObject.set(x, "challengePriority", js.undefined)
+      inline def setChallengePriorityUndefined: Self = StObject.set(x, "challengePriority", js.undefined)
       
-      @scala.inline
-      def setChallengePriorityVarargs(value: String*): Self = StObject.set(x, "challengePriority", js.Array(value :_*))
+      inline def setChallengePriorityVarargs(value: String*): Self = StObject.set(x, "challengePriority", js.Array(value :_*))
       
-      @scala.inline
-      def setChallengeRemoveFn(value: (Authorization, Challenge, String) => js.Promise[js.Any]): Self = StObject.set(x, "challengeRemoveFn", js.Any.fromFunction3(value))
+      inline def setChallengeRemoveFn(value: (Authorization, Challenge, String) => js.Promise[js.Any]): Self = StObject.set(x, "challengeRemoveFn", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setCsr(value: CsrBuffer | CsrString): Self = StObject.set(x, "csr", value.asInstanceOf[js.Any])
+      inline def setCsr(value: CsrBuffer | CsrString): Self = StObject.set(x, "csr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
       
-      @scala.inline
-      def setPreferredChain(value: String): Self = StObject.set(x, "preferredChain", value.asInstanceOf[js.Any])
+      inline def setPreferredChain(value: String): Self = StObject.set(x, "preferredChain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreferredChainUndefined: Self = StObject.set(x, "preferredChain", js.undefined)
+      inline def setPreferredChainUndefined: Self = StObject.set(x, "preferredChain", js.undefined)
       
-      @scala.inline
-      def setSkipChallengeVerification(value: Boolean): Self = StObject.set(x, "skipChallengeVerification", value.asInstanceOf[js.Any])
+      inline def setSkipChallengeVerification(value: Boolean): Self = StObject.set(x, "skipChallengeVerification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipChallengeVerificationUndefined: Self = StObject.set(x, "skipChallengeVerification", js.undefined)
+      inline def setSkipChallengeVerificationUndefined: Self = StObject.set(x, "skipChallengeVerification", js.undefined)
       
-      @scala.inline
-      def setTermsOfServiceAgreed(value: Boolean): Self = StObject.set(x, "termsOfServiceAgreed", value.asInstanceOf[js.Any])
+      inline def setTermsOfServiceAgreed(value: Boolean): Self = StObject.set(x, "termsOfServiceAgreed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTermsOfServiceAgreedUndefined: Self = StObject.set(x, "termsOfServiceAgreed", js.undefined)
+      inline def setTermsOfServiceAgreedUndefined: Self = StObject.set(x, "termsOfServiceAgreed", js.undefined)
     }
   }
   
@@ -303,44 +269,32 @@ object mod {
   }
   object ClientOptions {
     
-    @scala.inline
-    def apply(accountKey: PrivateKeyBuffer | PrivateKeyString, directoryUrl: String): ClientOptions = {
+    inline def apply(accountKey: PrivateKeyBuffer | PrivateKeyString, directoryUrl: String): ClientOptions = {
       val __obj = js.Dynamic.literal(accountKey = accountKey.asInstanceOf[js.Any], directoryUrl = directoryUrl.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientOptions]
     }
     
-    @scala.inline
-    implicit class ClientOptionsMutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientOptions](x: Self) {
       
-      @scala.inline
-      def setAccountKey(value: PrivateKeyBuffer | PrivateKeyString): Self = StObject.set(x, "accountKey", value.asInstanceOf[js.Any])
+      inline def setAccountKey(value: PrivateKeyBuffer | PrivateKeyString): Self = StObject.set(x, "accountKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountUrl(value: String): Self = StObject.set(x, "accountUrl", value.asInstanceOf[js.Any])
+      inline def setAccountUrl(value: String): Self = StObject.set(x, "accountUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountUrlUndefined: Self = StObject.set(x, "accountUrl", js.undefined)
+      inline def setAccountUrlUndefined: Self = StObject.set(x, "accountUrl", js.undefined)
       
-      @scala.inline
-      def setBackoffAttempts(value: Double): Self = StObject.set(x, "backoffAttempts", value.asInstanceOf[js.Any])
+      inline def setBackoffAttempts(value: Double): Self = StObject.set(x, "backoffAttempts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackoffAttemptsUndefined: Self = StObject.set(x, "backoffAttempts", js.undefined)
+      inline def setBackoffAttemptsUndefined: Self = StObject.set(x, "backoffAttempts", js.undefined)
       
-      @scala.inline
-      def setBackoffMax(value: Double): Self = StObject.set(x, "backoffMax", value.asInstanceOf[js.Any])
+      inline def setBackoffMax(value: Double): Self = StObject.set(x, "backoffMax", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackoffMaxUndefined: Self = StObject.set(x, "backoffMax", js.undefined)
+      inline def setBackoffMaxUndefined: Self = StObject.set(x, "backoffMax", js.undefined)
       
-      @scala.inline
-      def setBackoffMin(value: Double): Self = StObject.set(x, "backoffMin", value.asInstanceOf[js.Any])
+      inline def setBackoffMin(value: Double): Self = StObject.set(x, "backoffMin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackoffMinUndefined: Self = StObject.set(x, "backoffMin", js.undefined)
+      inline def setBackoffMinUndefined: Self = StObject.set(x, "backoffMin", js.undefined)
       
-      @scala.inline
-      def setDirectoryUrl(value: String): Self = StObject.set(x, "directoryUrl", value.asInstanceOf[js.Any])
+      inline def setDirectoryUrl(value: String): Self = StObject.set(x, "directoryUrl", value.asInstanceOf[js.Any])
     }
   }
   
@@ -398,71 +352,50 @@ object mod {
   }
   object CsrOptions {
     
-    @scala.inline
-    def apply(): CsrOptions = {
+    inline def apply(): CsrOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CsrOptions]
     }
     
-    @scala.inline
-    implicit class CsrOptionsMutableBuilder[Self <: CsrOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CsrOptions](x: Self) {
       
-      @scala.inline
-      def setAltNames(value: js.Array[String]): Self = StObject.set(x, "altNames", value.asInstanceOf[js.Any])
+      inline def setAltNames(value: js.Array[String]): Self = StObject.set(x, "altNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAltNamesUndefined: Self = StObject.set(x, "altNames", js.undefined)
+      inline def setAltNamesUndefined: Self = StObject.set(x, "altNames", js.undefined)
       
-      @scala.inline
-      def setAltNamesVarargs(value: String*): Self = StObject.set(x, "altNames", js.Array(value :_*))
+      inline def setAltNamesVarargs(value: String*): Self = StObject.set(x, "altNames", js.Array(value :_*))
       
-      @scala.inline
-      def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
+      inline def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommonNameUndefined: Self = StObject.set(x, "commonName", js.undefined)
+      inline def setCommonNameUndefined: Self = StObject.set(x, "commonName", js.undefined)
       
-      @scala.inline
-      def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+      inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
       
-      @scala.inline
-      def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
+      inline def setEmailAddress(value: String): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
+      inline def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
       
-      @scala.inline
-      def setKeySize(value: Double): Self = StObject.set(x, "keySize", value.asInstanceOf[js.Any])
+      inline def setKeySize(value: Double): Self = StObject.set(x, "keySize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeySizeUndefined: Self = StObject.set(x, "keySize", js.undefined)
+      inline def setKeySizeUndefined: Self = StObject.set(x, "keySize", js.undefined)
       
-      @scala.inline
-      def setLocality(value: String): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
+      inline def setLocality(value: String): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalityUndefined: Self = StObject.set(x, "locality", js.undefined)
+      inline def setLocalityUndefined: Self = StObject.set(x, "locality", js.undefined)
       
-      @scala.inline
-      def setOrganization(value: String): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
+      inline def setOrganization(value: String): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrganizationUndefined: Self = StObject.set(x, "organization", js.undefined)
+      inline def setOrganizationUndefined: Self = StObject.set(x, "organization", js.undefined)
       
-      @scala.inline
-      def setOrganizationUnit(value: String): Self = StObject.set(x, "organizationUnit", value.asInstanceOf[js.Any])
+      inline def setOrganizationUnit(value: String): Self = StObject.set(x, "organizationUnit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrganizationUnitUndefined: Self = StObject.set(x, "organizationUnit", js.undefined)
+      inline def setOrganizationUnitUndefined: Self = StObject.set(x, "organizationUnit", js.undefined)
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     }
   }
   
@@ -476,8 +409,7 @@ object mod {
   }
   object Order {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       authorizations: js.Array[String],
       finalize_ : String,
       identifiers: js.Array[Identifier],
@@ -489,11 +421,9 @@ object mod {
       __obj.asInstanceOf[Order]
     }
     
-    @scala.inline
-    implicit class OrderMutableBuilder[Self <: Order] (val x: Self) extends AnyVal {
+    extension [Self <: Order](x: Self) {
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   

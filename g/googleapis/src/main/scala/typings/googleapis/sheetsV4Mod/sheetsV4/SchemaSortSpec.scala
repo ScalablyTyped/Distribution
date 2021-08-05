@@ -21,25 +21,19 @@ trait SchemaSortSpec extends StObject {
 }
 object SchemaSortSpec {
   
-  @scala.inline
-  def apply(): SchemaSortSpec = {
+  inline def apply(): SchemaSortSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSortSpec]
   }
   
-  @scala.inline
-  implicit class SchemaSortSpecMutableBuilder[Self <: SchemaSortSpec] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSortSpec](x: Self) {
     
-    @scala.inline
-    def setDimensionIndex(value: Double): Self = StObject.set(x, "dimensionIndex", value.asInstanceOf[js.Any])
+    inline def setDimensionIndex(value: Double): Self = StObject.set(x, "dimensionIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionIndexUndefined: Self = StObject.set(x, "dimensionIndex", js.undefined)
+    inline def setDimensionIndexUndefined: Self = StObject.set(x, "dimensionIndex", js.undefined)
     
-    @scala.inline
-    def setSortOrder(value: String): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
+    inline def setSortOrder(value: String): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
+    inline def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
   }
 }

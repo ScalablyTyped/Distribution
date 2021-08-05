@@ -17,31 +17,23 @@ trait ContactGroupResponse extends StObject {
 }
 object ContactGroupResponse {
   
-  @scala.inline
-  def apply(): ContactGroupResponse = {
+  inline def apply(): ContactGroupResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContactGroupResponse]
   }
   
-  @scala.inline
-  implicit class ContactGroupResponseMutableBuilder[Self <: ContactGroupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ContactGroupResponse](x: Self) {
     
-    @scala.inline
-    def setContactGroup(value: ContactGroup): Self = StObject.set(x, "contactGroup", value.asInstanceOf[js.Any])
+    inline def setContactGroup(value: ContactGroup): Self = StObject.set(x, "contactGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactGroupUndefined: Self = StObject.set(x, "contactGroup", js.undefined)
+    inline def setContactGroupUndefined: Self = StObject.set(x, "contactGroup", js.undefined)
     
-    @scala.inline
-    def setRequestedResourceName(value: String): Self = StObject.set(x, "requestedResourceName", value.asInstanceOf[js.Any])
+    inline def setRequestedResourceName(value: String): Self = StObject.set(x, "requestedResourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedResourceNameUndefined: Self = StObject.set(x, "requestedResourceName", js.undefined)
+    inline def setRequestedResourceNameUndefined: Self = StObject.set(x, "requestedResourceName", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

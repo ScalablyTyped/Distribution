@@ -17,26 +17,20 @@ object regionMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(field: String, geoDataView: View | String): Options = {
+    inline def apply(field: String, geoDataView: View | String): Options = {
       val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], geoDataView = geoDataView.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAs(value: js.Tuple2[String, String]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Tuple2[String, String]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+      inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeoDataView(value: View | String): Self = StObject.set(x, "geoDataView", value.asInstanceOf[js.Any])
+      inline def setGeoDataView(value: View | String): Self = StObject.set(x, "geoDataView", value.asInstanceOf[js.Any])
     }
   }
 }

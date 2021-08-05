@@ -15,6 +15,6 @@ object loessMod {
     
     def assemble(): typings.vegaTypings.transformMod.LoessTransform = js.native
     
-    var transform: js.Any = js.native
+    /* private */ var transform: js.Any = js.native
   }
 }

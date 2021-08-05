@@ -10,8 +10,7 @@ trait TextDocumentSaveRegistrationOptions
      with SaveOptions
 object TextDocumentSaveRegistrationOptions {
   
-  @scala.inline
-  def apply(): TextDocumentSaveRegistrationOptions = {
+  inline def apply(): TextDocumentSaveRegistrationOptions = {
     val __obj = js.Dynamic.literal(documentSelector = null)
     __obj.asInstanceOf[TextDocumentSaveRegistrationOptions]
   }

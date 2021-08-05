@@ -8,9 +8,9 @@ object coreExceptionsMod {
   
   @JSImport("sip.js/lib/core/exceptions", "Exception")
   @js.native
-  abstract class Exception protected ()
+  /* protected */ abstract class Exception ()
     extends typings.sipJs.exceptionMod.Exception {
-    protected def this(message: String) = this()
+    /* protected */ def this(message: String) = this()
   }
   
   @JSImport("sip.js/lib/core/exceptions", "TransactionStateError")

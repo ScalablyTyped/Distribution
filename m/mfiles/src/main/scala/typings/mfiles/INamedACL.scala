@@ -21,8 +21,7 @@ trait INamedACL extends StObject {
 }
 object INamedACL {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessControlList: IAccessControlList,
     Clone: () => INamedACL,
     GUID: String,
@@ -34,25 +33,18 @@ object INamedACL {
     __obj.asInstanceOf[INamedACL]
   }
   
-  @scala.inline
-  implicit class INamedACLMutableBuilder[Self <: INamedACL] (val x: Self) extends AnyVal {
+  extension [Self <: INamedACL](x: Self) {
     
-    @scala.inline
-    def setAccessControlList(value: IAccessControlList): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
+    inline def setAccessControlList(value: IAccessControlList): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClone(value: () => INamedACL): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => INamedACL): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGUID(value: String): Self = StObject.set(x, "GUID", value.asInstanceOf[js.Any])
+    inline def setGUID(value: String): Self = StObject.set(x, "GUID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamedACLType(value: MFNamedACLType): Self = StObject.set(x, "NamedACLType", value.asInstanceOf[js.Any])
+    inline def setNamedACLType(value: MFNamedACLType): Self = StObject.set(x, "NamedACLType", value.asInstanceOf[js.Any])
   }
 }

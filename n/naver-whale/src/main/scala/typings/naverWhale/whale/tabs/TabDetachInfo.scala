@@ -12,19 +12,15 @@ trait TabDetachInfo extends StObject {
 }
 object TabDetachInfo {
   
-  @scala.inline
-  def apply(oldPosition: Double, oldWindowId: Double): TabDetachInfo = {
+  inline def apply(oldPosition: Double, oldWindowId: Double): TabDetachInfo = {
     val __obj = js.Dynamic.literal(oldPosition = oldPosition.asInstanceOf[js.Any], oldWindowId = oldWindowId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabDetachInfo]
   }
   
-  @scala.inline
-  implicit class TabDetachInfoMutableBuilder[Self <: TabDetachInfo] (val x: Self) extends AnyVal {
+  extension [Self <: TabDetachInfo](x: Self) {
     
-    @scala.inline
-    def setOldPosition(value: Double): Self = StObject.set(x, "oldPosition", value.asInstanceOf[js.Any])
+    inline def setOldPosition(value: Double): Self = StObject.set(x, "oldPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldWindowId(value: Double): Self = StObject.set(x, "oldWindowId", value.asInstanceOf[js.Any])
+    inline def setOldWindowId(value: Double): Self = StObject.set(x, "oldWindowId", value.asInstanceOf[js.Any])
   }
 }

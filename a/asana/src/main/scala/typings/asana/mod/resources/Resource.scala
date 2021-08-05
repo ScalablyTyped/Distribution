@@ -108,6 +108,5 @@ trait Resource extends StObject {
 }
 object Resource {
   
-  @scala.inline
-  def apply: ResourceStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("Resource").asInstanceOf[ResourceStatic]
+  inline def apply: ResourceStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("Resource").asInstanceOf[ResourceStatic]
 }

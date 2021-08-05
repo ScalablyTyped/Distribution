@@ -31,6 +31,5 @@ object KeytipLayerBase {
   @JSImport("office-ui-fabric-react", "KeytipLayerBase.defaultProps")
   @js.native
   def defaultProps: typings.officeUiFabricReact.keytipLayerTypesMod.IKeytipLayerProps = js.native
-  @scala.inline
-  def defaultProps_=(x: typings.officeUiFabricReact.keytipLayerTypesMod.IKeytipLayerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: typings.officeUiFabricReact.keytipLayerTypesMod.IKeytipLayerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

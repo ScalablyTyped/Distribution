@@ -25,8 +25,7 @@ trait FileOpenPickerActivatedEventArgs extends StObject {
 }
 object FileOpenPickerActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     callerPackageFamilyName: String,
     fileOpenPickerUI: FileOpenPickerUI,
     kind: ActivationKind,
@@ -37,22 +36,16 @@ object FileOpenPickerActivatedEventArgs {
     __obj.asInstanceOf[FileOpenPickerActivatedEventArgs]
   }
   
-  @scala.inline
-  implicit class FileOpenPickerActivatedEventArgsMutableBuilder[Self <: FileOpenPickerActivatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: FileOpenPickerActivatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setCallerPackageFamilyName(value: String): Self = StObject.set(x, "callerPackageFamilyName", value.asInstanceOf[js.Any])
+    inline def setCallerPackageFamilyName(value: String): Self = StObject.set(x, "callerPackageFamilyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileOpenPickerUI(value: FileOpenPickerUI): Self = StObject.set(x, "fileOpenPickerUI", value.asInstanceOf[js.Any])
+    inline def setFileOpenPickerUI(value: FileOpenPickerUI): Self = StObject.set(x, "fileOpenPickerUI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
+    inline def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
+    inline def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
   }
 }

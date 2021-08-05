@@ -32,43 +32,31 @@ trait SchemaOperationMetadata extends StObject {
 }
 object SchemaOperationMetadata {
   
-  @scala.inline
-  def apply(): SchemaOperationMetadata = {
+  inline def apply(): SchemaOperationMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOperationMetadata]
   }
   
-  @scala.inline
-  implicit class SchemaOperationMetadataMutableBuilder[Self <: SchemaOperationMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOperationMetadata](x: Self) {
     
-    @scala.inline
-    def setProgressPercentage(value: Double): Self = StObject.set(x, "progressPercentage", value.asInstanceOf[js.Any])
+    inline def setProgressPercentage(value: Double): Self = StObject.set(x, "progressPercentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressPercentageUndefined: Self = StObject.set(x, "progressPercentage", js.undefined)
+    inline def setProgressPercentageUndefined: Self = StObject.set(x, "progressPercentage", js.undefined)
     
-    @scala.inline
-    def setResourceNames(value: js.Array[String]): Self = StObject.set(x, "resourceNames", value.asInstanceOf[js.Any])
+    inline def setResourceNames(value: js.Array[String]): Self = StObject.set(x, "resourceNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNamesUndefined: Self = StObject.set(x, "resourceNames", js.undefined)
+    inline def setResourceNamesUndefined: Self = StObject.set(x, "resourceNames", js.undefined)
     
-    @scala.inline
-    def setResourceNamesVarargs(value: String*): Self = StObject.set(x, "resourceNames", js.Array(value :_*))
+    inline def setResourceNamesVarargs(value: String*): Self = StObject.set(x, "resourceNames", js.Array(value :_*))
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setSteps(value: js.Array[SchemaStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+    inline def setSteps(value: js.Array[SchemaStep]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
+    inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
     
-    @scala.inline
-    def setStepsVarargs(value: SchemaStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: SchemaStep*): Self = StObject.set(x, "steps", js.Array(value :_*))
   }
 }

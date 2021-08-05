@@ -12,16 +12,13 @@ trait CcrUnfollow
 }
 object CcrUnfollow {
   
-  @scala.inline
-  def apply(index: String): CcrUnfollow = {
+  inline def apply(index: String): CcrUnfollow = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[CcrUnfollow]
   }
   
-  @scala.inline
-  implicit class CcrUnfollowMutableBuilder[Self <: CcrUnfollow] (val x: Self) extends AnyVal {
+  extension [Self <: CcrUnfollow](x: Self) {
     
-    @scala.inline
-    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
   }
 }

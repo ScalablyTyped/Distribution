@@ -26,31 +26,23 @@ trait MatchRecursiveOptions extends StObject {
 }
 object MatchRecursiveOptions {
   
-  @scala.inline
-  def apply(): MatchRecursiveOptions = {
+  inline def apply(): MatchRecursiveOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MatchRecursiveOptions]
   }
   
-  @scala.inline
-  implicit class MatchRecursiveOptionsMutableBuilder[Self <: MatchRecursiveOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MatchRecursiveOptions](x: Self) {
     
-    @scala.inline
-    def setEscapeChar(value: String): Self = StObject.set(x, "escapeChar", value.asInstanceOf[js.Any])
+    inline def setEscapeChar(value: String): Self = StObject.set(x, "escapeChar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEscapeCharNull: Self = StObject.set(x, "escapeChar", null)
+    inline def setEscapeCharNull: Self = StObject.set(x, "escapeChar", null)
     
-    @scala.inline
-    def setEscapeCharUndefined: Self = StObject.set(x, "escapeChar", js.undefined)
+    inline def setEscapeCharUndefined: Self = StObject.set(x, "escapeChar", js.undefined)
     
-    @scala.inline
-    def setValueNames(value: MatchRecursiveValueNames): Self = StObject.set(x, "valueNames", value.asInstanceOf[js.Any])
+    inline def setValueNames(value: MatchRecursiveValueNames): Self = StObject.set(x, "valueNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueNamesNull: Self = StObject.set(x, "valueNames", null)
+    inline def setValueNamesNull: Self = StObject.set(x, "valueNames", null)
     
-    @scala.inline
-    def setValueNamesUndefined: Self = StObject.set(x, "valueNames", js.undefined)
+    inline def setValueNamesUndefined: Self = StObject.set(x, "valueNames", js.undefined)
   }
 }

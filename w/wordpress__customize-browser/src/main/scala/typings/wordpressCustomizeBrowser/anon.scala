@@ -16,20 +16,16 @@ object anon {
   }
   object Choice {
     
-    @scala.inline
-    def apply(choice: js.Any, header: js.Any): Choice = {
+    inline def apply(choice: js.Any, header: js.Any): Choice = {
       val __obj = js.Dynamic.literal(choice = choice.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any])
       __obj.asInstanceOf[Choice]
     }
     
-    @scala.inline
-    implicit class ChoiceMutableBuilder[Self <: Choice] (val x: Self) extends AnyVal {
+    extension [Self <: Choice](x: Self) {
       
-      @scala.inline
-      def setChoice(value: js.Any): Self = StObject.set(x, "choice", value.asInstanceOf[js.Any])
+      inline def setChoice(value: js.Any): Self = StObject.set(x, "choice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeader(value: js.Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: js.Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     }
   }
   
@@ -39,20 +35,16 @@ object anon {
   }
   object Default {
     
-    @scala.inline
-    def apply(): Default = {
+    inline def apply(): Default = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Default]
     }
     
-    @scala.inline
-    implicit class DefaultMutableBuilder[Self <: Default] (val x: Self) extends AnyVal {
+    extension [Self <: Default](x: Self) {
       
-      @scala.inline
-      def setDefault(value: String | Setting[js.Any]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: String | Setting[js.Any]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     }
   }
   
@@ -67,32 +59,24 @@ object anon {
   }
   object PartialSettingOptions {
     
-    @scala.inline
-    def apply(): PartialSettingOptions = {
+    inline def apply(): PartialSettingOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialSettingOptions]
     }
     
-    @scala.inline
-    implicit class PartialSettingOptionsMutableBuilder[Self <: PartialSettingOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialSettingOptions](x: Self) {
       
-      @scala.inline
-      def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
+      inline def setDirty(value: Boolean): Self = StObject.set(x, "dirty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirtyUndefined: Self = StObject.set(x, "dirty", js.undefined)
+      inline def setDirtyUndefined: Self = StObject.set(x, "dirty", js.undefined)
       
-      @scala.inline
-      def setPreviewer(value: Previewer[String]): Self = StObject.set(x, "previewer", value.asInstanceOf[js.Any])
+      inline def setPreviewer(value: Previewer[String]): Self = StObject.set(x, "previewer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewerUndefined: Self = StObject.set(x, "previewer", js.undefined)
+      inline def setPreviewerUndefined: Self = StObject.set(x, "previewer", js.undefined)
       
-      @scala.inline
-      def setTransport(value: String): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+      inline def setTransport(value: String): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
+      inline def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
     }
   }
 }

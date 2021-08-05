@@ -16,23 +16,19 @@ trait QueryResponsePayload extends StObject {
 }
 object QueryResponsePayload {
   
-  @scala.inline
-  def apply(): QueryResponsePayload = {
+  inline def apply(): QueryResponsePayload = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryResponsePayload]
   }
   
-  @scala.inline
-  implicit class QueryResponsePayloadMutableBuilder[Self <: QueryResponsePayload] (val x: Self) extends AnyVal {
+  extension [Self <: QueryResponsePayload](x: Self) {
     
-    @scala.inline
-    def setDevices(
+    inline def setDevices(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: {[ P in string ]: any}}
       */ typings.maximMazurokGapiClientHomegraph.maximMazurokGapiClientHomegraphStrings.QueryResponsePayload & TopLevel[js.Any]
     ): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)
+    inline def setDevicesUndefined: Self = StObject.set(x, "devices", js.undefined)
   }
 }

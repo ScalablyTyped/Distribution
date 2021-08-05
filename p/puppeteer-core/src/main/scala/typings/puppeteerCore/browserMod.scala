@@ -78,11 +78,11 @@ object browserMod {
       closeCallback: BrowserCloseCallback
     ) = this()
     
-    var _closeCallback: js.Any = js.native
+    /* private */ var _closeCallback: js.Any = js.native
     
-    var _connection: js.Any = js.native
+    /* private */ var _connection: js.Any = js.native
     
-    var _contexts: js.Any = js.native
+    /* private */ var _contexts: js.Any = js.native
     
     /**
       * @internal
@@ -91,9 +91,9 @@ object browserMod {
     def _createPageInContext(): js.Promise[Page] = js.native
     def _createPageInContext(contextId: String): js.Promise[Page] = js.native
     
-    var _defaultContext: js.Any = js.native
+    /* private */ var _defaultContext: js.Any = js.native
     
-    var _defaultViewport: js.Any = js.native
+    /* private */ var _defaultViewport: js.Any = js.native
     
     /**
       * @internal
@@ -102,17 +102,17 @@ object browserMod {
     def _disposeContext(): js.Promise[Unit] = js.native
     def _disposeContext(contextId: String): js.Promise[Unit] = js.native
     
-    var _getVersion: js.Any = js.native
+    /* private */ var _getVersion: js.Any = js.native
     
-    var _ignoreHTTPSErrors: js.Any = js.native
+    /* private */ var _ignoreHTTPSErrors: js.Any = js.native
     
-    var _process: js.Any = js.native
+    /* private */ var _process: js.Any = js.native
     
-    var _targetCreated: js.Any = js.native
+    /* private */ var _targetCreated: js.Any = js.native
     
-    var _targetDestroyed: js.Any = js.native
+    /* private */ var _targetDestroyed: js.Any = js.native
     
-    var _targetInfoChanged: js.Any = js.native
+    /* private */ var _targetInfoChanged: js.Any = js.native
     
     /**
       * @internal
@@ -265,10 +265,8 @@ object browserMod {
     /**
       * @internal
       */
-    @scala.inline
-    def create(connection: Connection, contextIds: js.Array[String], ignoreHTTPSErrors: Boolean): js.Promise[Browser] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(connection.asInstanceOf[js.Any], contextIds.asInstanceOf[js.Any], ignoreHTTPSErrors.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Browser]]
-    @scala.inline
-    def create(
+    inline def create(connection: Connection, contextIds: js.Array[String], ignoreHTTPSErrors: Boolean): js.Promise[Browser] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(connection.asInstanceOf[js.Any], contextIds.asInstanceOf[js.Any], ignoreHTTPSErrors.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Browser]]
+    inline def create(
       connection: Connection,
       contextIds: js.Array[String],
       ignoreHTTPSErrors: Boolean,
@@ -276,16 +274,14 @@ object browserMod {
       process: Unit,
       closeCallback: BrowserCloseCallback
     ): js.Promise[Browser] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(connection.asInstanceOf[js.Any], contextIds.asInstanceOf[js.Any], ignoreHTTPSErrors.asInstanceOf[js.Any], defaultViewport.asInstanceOf[js.Any], process.asInstanceOf[js.Any], closeCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Browser]]
-    @scala.inline
-    def create(
+    inline def create(
       connection: Connection,
       contextIds: js.Array[String],
       ignoreHTTPSErrors: Boolean,
       defaultViewport: Unit,
       process: ChildProcess
     ): js.Promise[Browser] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(connection.asInstanceOf[js.Any], contextIds.asInstanceOf[js.Any], ignoreHTTPSErrors.asInstanceOf[js.Any], defaultViewport.asInstanceOf[js.Any], process.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Browser]]
-    @scala.inline
-    def create(
+    inline def create(
       connection: Connection,
       contextIds: js.Array[String],
       ignoreHTTPSErrors: Boolean,
@@ -293,15 +289,13 @@ object browserMod {
       process: ChildProcess,
       closeCallback: BrowserCloseCallback
     ): js.Promise[Browser] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(connection.asInstanceOf[js.Any], contextIds.asInstanceOf[js.Any], ignoreHTTPSErrors.asInstanceOf[js.Any], defaultViewport.asInstanceOf[js.Any], process.asInstanceOf[js.Any], closeCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Browser]]
-    @scala.inline
-    def create(
+    inline def create(
       connection: Connection,
       contextIds: js.Array[String],
       ignoreHTTPSErrors: Boolean,
       defaultViewport: Viewport
     ): js.Promise[Browser] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(connection.asInstanceOf[js.Any], contextIds.asInstanceOf[js.Any], ignoreHTTPSErrors.asInstanceOf[js.Any], defaultViewport.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Browser]]
-    @scala.inline
-    def create(
+    inline def create(
       connection: Connection,
       contextIds: js.Array[String],
       ignoreHTTPSErrors: Boolean,
@@ -309,16 +303,14 @@ object browserMod {
       process: Unit,
       closeCallback: BrowserCloseCallback
     ): js.Promise[Browser] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(connection.asInstanceOf[js.Any], contextIds.asInstanceOf[js.Any], ignoreHTTPSErrors.asInstanceOf[js.Any], defaultViewport.asInstanceOf[js.Any], process.asInstanceOf[js.Any], closeCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Browser]]
-    @scala.inline
-    def create(
+    inline def create(
       connection: Connection,
       contextIds: js.Array[String],
       ignoreHTTPSErrors: Boolean,
       defaultViewport: Viewport,
       process: ChildProcess
     ): js.Promise[Browser] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(connection.asInstanceOf[js.Any], contextIds.asInstanceOf[js.Any], ignoreHTTPSErrors.asInstanceOf[js.Any], defaultViewport.asInstanceOf[js.Any], process.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Browser]]
-    @scala.inline
-    def create(
+    inline def create(
       connection: Connection,
       contextIds: js.Array[String],
       ignoreHTTPSErrors: Boolean,
@@ -337,11 +329,11 @@ object browserMod {
     def this(connection: Connection, browser: Browser) = this()
     def this(connection: Connection, browser: Browser, contextId: String) = this()
     
-    var _browser: js.Any = js.native
+    /* private */ var _browser: js.Any = js.native
     
-    var _connection: js.Any = js.native
+    /* private */ var _connection: js.Any = js.native
     
-    var _id: js.Any = js.native
+    /* private */ var _id: js.Any = js.native
     
     /**
       * The browser this browser context belongs to.
@@ -446,8 +438,7 @@ object browserMod {
       * Emitted when the url of a target inside the browser context changes.
       * Contains a {@link Target} instance.
       */
-    @scala.inline
-    def TargetChanged: targetchanged = "targetchanged".asInstanceOf[targetchanged]
+    inline def TargetChanged: targetchanged = "targetchanged".asInstanceOf[targetchanged]
     
     /**
       * Emitted when a target is created within the browser context, for example
@@ -457,15 +448,13 @@ object browserMod {
       *
       * Contains a {@link Target} instance.
       */
-    @scala.inline
-    def TargetCreated: targetcreated = "targetcreated".asInstanceOf[targetcreated]
+    inline def TargetCreated: targetcreated = "targetcreated".asInstanceOf[targetcreated]
     
     /**
       * Emitted when a target is destroyed within the browser context, for example
       * when a page is closed. Contains a {@link Target} instance.
       */
-    @scala.inline
-    def TargetDestroyed: targetdestroyed = "targetdestroyed".asInstanceOf[targetdestroyed]
+    inline def TargetDestroyed: targetdestroyed = "targetdestroyed".asInstanceOf[targetdestroyed]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -485,8 +474,7 @@ object browserMod {
       *
       * - The {@link Browser.disconnect | browser.disconnect } method was called.
       */
-    @scala.inline
-    def Disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
+    inline def Disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
     
     /**
       * Emitted when the url of a target changes. Contains a {@link Target} instance.
@@ -495,8 +483,7 @@ object browserMod {
       *
       * Note that this includes target changes in incognito browser contexts.
       */
-    @scala.inline
-    def TargetChanged: targetchanged = "targetchanged".asInstanceOf[targetchanged]
+    inline def TargetChanged: targetchanged = "targetchanged".asInstanceOf[targetchanged]
     
     /**
       * Emitted when a target is created, for example when a new page is opened by
@@ -509,8 +496,7 @@ object browserMod {
       *
       * Note that this includes target creations in incognito browser contexts.
       */
-    @scala.inline
-    def TargetCreated: targetcreated = "targetcreated".asInstanceOf[targetcreated]
+    inline def TargetCreated: targetcreated = "targetcreated".asInstanceOf[targetcreated]
     
     /**
       * Emitted when a target is destroyed, for example when a page is closed.
@@ -520,8 +506,7 @@ object browserMod {
       *
       * Note that this includes target destructions in incognito browser contexts.
       */
-    @scala.inline
-    def TargetDestroyed: targetdestroyed = "targetdestroyed".asInstanceOf[targetdestroyed]
+    inline def TargetDestroyed: targetdestroyed = "targetdestroyed".asInstanceOf[targetdestroyed]
   }
   
   trait WaitForTargetOptions extends StObject {
@@ -534,20 +519,16 @@ object browserMod {
   }
   object WaitForTargetOptions {
     
-    @scala.inline
-    def apply(): WaitForTargetOptions = {
+    inline def apply(): WaitForTargetOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WaitForTargetOptions]
     }
     
-    @scala.inline
-    implicit class WaitForTargetOptionsMutableBuilder[Self <: WaitForTargetOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WaitForTargetOptions](x: Self) {
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
 }

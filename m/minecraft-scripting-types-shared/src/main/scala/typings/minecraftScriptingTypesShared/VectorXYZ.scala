@@ -14,22 +14,17 @@ trait VectorXYZ extends StObject {
 }
 object VectorXYZ {
   
-  @scala.inline
-  def apply(x: Double, y: Double, z: Double): VectorXYZ = {
+  inline def apply(x: Double, y: Double, z: Double): VectorXYZ = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
     __obj.asInstanceOf[VectorXYZ]
   }
   
-  @scala.inline
-  implicit class VectorXYZMutableBuilder[Self <: VectorXYZ] (val x: Self) extends AnyVal {
+  extension [Self <: VectorXYZ](x: Self) {
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+    inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
   }
 }

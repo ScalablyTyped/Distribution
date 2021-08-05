@@ -24,17 +24,14 @@ object typesMod {
   }
   object MDCListActionEventDetail {
     
-    @scala.inline
-    def apply(index: Double): MDCListActionEventDetail = {
+    inline def apply(index: Double): MDCListActionEventDetail = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
       __obj.asInstanceOf[MDCListActionEventDetail]
     }
     
-    @scala.inline
-    implicit class MDCListActionEventDetailMutableBuilder[Self <: MDCListActionEventDetail] (val x: Self) extends AnyVal {
+    extension [Self <: MDCListActionEventDetail](x: Self) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     }
   }
   
@@ -48,20 +45,16 @@ object typesMod {
   }
   object MDCListTextAndIndex {
     
-    @scala.inline
-    def apply(index: Double, text: String): MDCListTextAndIndex = {
+    inline def apply(index: Double, text: String): MDCListTextAndIndex = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[MDCListTextAndIndex]
     }
     
-    @scala.inline
-    implicit class MDCListTextAndIndexMutableBuilder[Self <: MDCListTextAndIndex] (val x: Self) extends AnyVal {
+    extension [Self <: MDCListTextAndIndex](x: Self) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
 }

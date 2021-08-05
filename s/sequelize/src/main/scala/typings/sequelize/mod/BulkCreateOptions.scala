@@ -40,40 +40,29 @@ trait BulkCreateOptions
 }
 object BulkCreateOptions {
   
-  @scala.inline
-  def apply(): BulkCreateOptions = {
+  inline def apply(): BulkCreateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BulkCreateOptions]
   }
   
-  @scala.inline
-  implicit class BulkCreateOptionsMutableBuilder[Self <: BulkCreateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BulkCreateOptions](x: Self) {
     
-    @scala.inline
-    def setHooks(value: Boolean): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+    inline def setHooks(value: Boolean): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
+    inline def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)
     
-    @scala.inline
-    def setIgnoreDuplicates(value: Boolean): Self = StObject.set(x, "ignoreDuplicates", value.asInstanceOf[js.Any])
+    inline def setIgnoreDuplicates(value: Boolean): Self = StObject.set(x, "ignoreDuplicates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreDuplicatesUndefined: Self = StObject.set(x, "ignoreDuplicates", js.undefined)
+    inline def setIgnoreDuplicatesUndefined: Self = StObject.set(x, "ignoreDuplicates", js.undefined)
     
-    @scala.inline
-    def setIndividualHooks(value: Boolean): Self = StObject.set(x, "individualHooks", value.asInstanceOf[js.Any])
+    inline def setIndividualHooks(value: Boolean): Self = StObject.set(x, "individualHooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndividualHooksUndefined: Self = StObject.set(x, "individualHooks", js.undefined)
+    inline def setIndividualHooksUndefined: Self = StObject.set(x, "individualHooks", js.undefined)
     
-    @scala.inline
-    def setUpdateOnDuplicate(value: js.Array[String]): Self = StObject.set(x, "updateOnDuplicate", value.asInstanceOf[js.Any])
+    inline def setUpdateOnDuplicate(value: js.Array[String]): Self = StObject.set(x, "updateOnDuplicate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateOnDuplicateUndefined: Self = StObject.set(x, "updateOnDuplicate", js.undefined)
+    inline def setUpdateOnDuplicateUndefined: Self = StObject.set(x, "updateOnDuplicate", js.undefined)
     
-    @scala.inline
-    def setUpdateOnDuplicateVarargs(value: String*): Self = StObject.set(x, "updateOnDuplicate", js.Array(value :_*))
+    inline def setUpdateOnDuplicateVarargs(value: String*): Self = StObject.set(x, "updateOnDuplicate", js.Array(value :_*))
   }
 }

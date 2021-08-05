@@ -21,8 +21,7 @@ trait unsubscribeSuccessArgs
 }
 object unsubscribeSuccessArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     channel: String,
     channels: js.Array[String],
     client: client,
@@ -34,16 +33,12 @@ object unsubscribeSuccessArgs {
     __obj.asInstanceOf[unsubscribeSuccessArgs]
   }
   
-  @scala.inline
-  implicit class unsubscribeSuccessArgsMutableBuilder[Self <: unsubscribeSuccessArgs] (val x: Self) extends AnyVal {
+  extension [Self <: unsubscribeSuccessArgs](x: Self) {
     
-    @scala.inline
-    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
   }
 }

@@ -16,28 +16,21 @@ trait Name extends StObject {
 }
 object Name {
   
-  @scala.inline
-  def apply(bpm: Double, dots: Boolean, duration: String): Name = {
+  inline def apply(bpm: Double, dots: Boolean, duration: String): Name = {
     val __obj = js.Dynamic.literal(bpm = bpm.asInstanceOf[js.Any], dots = dots.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any])
     __obj.asInstanceOf[Name]
   }
   
-  @scala.inline
-  implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+  extension [Self <: Name](x: Self) {
     
-    @scala.inline
-    def setBpm(value: Double): Self = StObject.set(x, "bpm", value.asInstanceOf[js.Any])
+    inline def setBpm(value: Double): Self = StObject.set(x, "bpm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDots(value: Boolean): Self = StObject.set(x, "dots", value.asInstanceOf[js.Any])
+    inline def setDots(value: Boolean): Self = StObject.set(x, "dots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

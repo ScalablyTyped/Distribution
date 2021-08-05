@@ -10,16 +10,13 @@ trait BaselineUndefined extends StObject {
 }
 object BaselineUndefined {
   
-  @scala.inline
-  def apply(baseline: Unit): BaselineUndefined = {
+  inline def apply(baseline: Unit): BaselineUndefined = {
     val __obj = js.Dynamic.literal(baseline = baseline.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaselineUndefined]
   }
   
-  @scala.inline
-  implicit class BaselineUndefinedMutableBuilder[Self <: BaselineUndefined] (val x: Self) extends AnyVal {
+  extension [Self <: BaselineUndefined](x: Self) {
     
-    @scala.inline
-    def setBaseline(value: Unit): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
+    inline def setBaseline(value: Unit): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
   }
 }

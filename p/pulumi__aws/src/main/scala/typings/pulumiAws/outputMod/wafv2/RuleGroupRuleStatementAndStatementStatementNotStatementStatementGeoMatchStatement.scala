@@ -20,27 +20,21 @@ trait RuleGroupRuleStatementAndStatementStatementNotStatementStatementGeoMatchSt
 }
 object RuleGroupRuleStatementAndStatementStatementNotStatementStatementGeoMatchStatement {
   
-  @scala.inline
-  def apply(countryCodes: js.Array[String]): RuleGroupRuleStatementAndStatementStatementNotStatementStatementGeoMatchStatement = {
+  inline def apply(countryCodes: js.Array[String]): RuleGroupRuleStatementAndStatementStatementNotStatementStatementGeoMatchStatement = {
     val __obj = js.Dynamic.literal(countryCodes = countryCodes.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleGroupRuleStatementAndStatementStatementNotStatementStatementGeoMatchStatement]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleStatementAndStatementStatementNotStatementStatementGeoMatchStatementMutableBuilder[Self <: RuleGroupRuleStatementAndStatementStatementNotStatementStatementGeoMatchStatement] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleStatementAndStatementStatementNotStatementStatementGeoMatchStatement](x: Self) {
     
-    @scala.inline
-    def setCountryCodes(value: js.Array[String]): Self = StObject.set(x, "countryCodes", value.asInstanceOf[js.Any])
+    inline def setCountryCodes(value: js.Array[String]): Self = StObject.set(x, "countryCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryCodesVarargs(value: String*): Self = StObject.set(x, "countryCodes", js.Array(value :_*))
+    inline def setCountryCodesVarargs(value: String*): Self = StObject.set(x, "countryCodes", js.Array(value :_*))
     
-    @scala.inline
-    def setForwardedIpConfig(
+    inline def setForwardedIpConfig(
       value: RuleGroupRuleStatementAndStatementStatementNotStatementStatementGeoMatchStatementForwardedIpConfig
     ): Self = StObject.set(x, "forwardedIpConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardedIpConfigUndefined: Self = StObject.set(x, "forwardedIpConfig", js.undefined)
+    inline def setForwardedIpConfigUndefined: Self = StObject.set(x, "forwardedIpConfig", js.undefined)
   }
 }

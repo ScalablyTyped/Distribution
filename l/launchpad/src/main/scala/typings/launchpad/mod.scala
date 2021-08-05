@@ -10,13 +10,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def browserstack(authCreds: BrowserstackAuth, cb: js.Function2[/* err */ js.Any, /* browserstack */ Launcher, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("browserstack")(authCreds.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def browserstack(authCreds: BrowserstackAuth, cb: js.Function2[/* err */ js.Any, /* browserstack */ Launcher, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("browserstack")(authCreds.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object local {
     
-    @scala.inline
-    def apply(cb: js.Function2[/* err */ js.Any, /* localBrowsers */ Launcher, Unit]): Unit = ^.asInstanceOf[js.Dynamic].apply(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def apply(cb: js.Function2[/* err */ js.Any, /* localBrowsers */ Launcher, Unit]): Unit = ^.asInstanceOf[js.Dynamic].apply(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("launchpad", "local")
     @js.native
@@ -31,68 +29,57 @@ object mod {
       @JSImport("launchpad", "local.platform.aurora")
       @js.native
       def aurora: js.UndefOr[BrowserPlatformDetails] = js.native
-      @scala.inline
-      def aurora_=(x: js.UndefOr[BrowserPlatformDetails]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("aurora")(x.asInstanceOf[js.Any])
+      inline def aurora_=(x: js.UndefOr[BrowserPlatformDetails]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("aurora")(x.asInstanceOf[js.Any])
       
       @JSImport("launchpad", "local.platform.canary")
       @js.native
       def canary: js.UndefOr[BrowserPlatformDetails] = js.native
-      @scala.inline
-      def canary_=(x: js.UndefOr[BrowserPlatformDetails]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("canary")(x.asInstanceOf[js.Any])
+      inline def canary_=(x: js.UndefOr[BrowserPlatformDetails]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("canary")(x.asInstanceOf[js.Any])
       
       @JSImport("launchpad", "local.platform.chrome")
       @js.native
       def chrome: js.UndefOr[BrowserPlatformDetails] = js.native
-      @scala.inline
-      def chrome_=(x: js.UndefOr[BrowserPlatformDetails]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("chrome")(x.asInstanceOf[js.Any])
+      inline def chrome_=(x: js.UndefOr[BrowserPlatformDetails]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("chrome")(x.asInstanceOf[js.Any])
       
       @JSImport("launchpad", "local.platform.chromium")
       @js.native
       def chromium: js.UndefOr[BrowserPlatformDetails] = js.native
-      @scala.inline
-      def chromium_=(x: js.UndefOr[BrowserPlatformDetails]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("chromium")(x.asInstanceOf[js.Any])
+      inline def chromium_=(x: js.UndefOr[BrowserPlatformDetails]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("chromium")(x.asInstanceOf[js.Any])
       
       @JSImport("launchpad", "local.platform.edge")
       @js.native
       def edge: js.UndefOr[BrowserPlatformDetails] = js.native
-      @scala.inline
-      def edge_=(x: js.UndefOr[BrowserPlatformDetails]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("edge")(x.asInstanceOf[js.Any])
+      inline def edge_=(x: js.UndefOr[BrowserPlatformDetails]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("edge")(x.asInstanceOf[js.Any])
       
       @JSImport("launchpad", "local.platform.firefox")
       @js.native
       def firefox: js.UndefOr[BrowserPlatformDetails] = js.native
-      @scala.inline
-      def firefox_=(x: js.UndefOr[BrowserPlatformDetails]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("firefox")(x.asInstanceOf[js.Any])
+      inline def firefox_=(x: js.UndefOr[BrowserPlatformDetails]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("firefox")(x.asInstanceOf[js.Any])
       
       @JSImport("launchpad", "local.platform.ie")
       @js.native
       def ie: js.UndefOr[BrowserPlatformDetails] = js.native
-      @scala.inline
-      def ie_=(x: js.UndefOr[BrowserPlatformDetails]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ie")(x.asInstanceOf[js.Any])
+      inline def ie_=(x: js.UndefOr[BrowserPlatformDetails]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ie")(x.asInstanceOf[js.Any])
       
       @JSImport("launchpad", "local.platform.nodeWebkit")
       @js.native
       def nodeWebkit: js.UndefOr[BrowserPlatformDetails] = js.native
-      @scala.inline
-      def nodeWebkit_=(x: js.UndefOr[BrowserPlatformDetails]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nodeWebkit")(x.asInstanceOf[js.Any])
+      inline def nodeWebkit_=(x: js.UndefOr[BrowserPlatformDetails]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nodeWebkit")(x.asInstanceOf[js.Any])
       
       @JSImport("launchpad", "local.platform.opera")
       @js.native
       def opera: js.UndefOr[BrowserPlatformDetails] = js.native
-      @scala.inline
-      def opera_=(x: js.UndefOr[BrowserPlatformDetails]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("opera")(x.asInstanceOf[js.Any])
+      inline def opera_=(x: js.UndefOr[BrowserPlatformDetails]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("opera")(x.asInstanceOf[js.Any])
       
       @JSImport("launchpad", "local.platform.phantom")
       @js.native
       def phantom: js.UndefOr[BrowserPlatformDetails] = js.native
-      @scala.inline
-      def phantom_=(x: js.UndefOr[BrowserPlatformDetails]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("phantom")(x.asInstanceOf[js.Any])
+      inline def phantom_=(x: js.UndefOr[BrowserPlatformDetails]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("phantom")(x.asInstanceOf[js.Any])
       
       @JSImport("launchpad", "local.platform.safari")
       @js.native
       def safari: js.UndefOr[BrowserPlatformDetails] = js.native
-      @scala.inline
-      def safari_=(x: js.UndefOr[BrowserPlatformDetails]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("safari")(x.asInstanceOf[js.Any])
+      inline def safari_=(x: js.UndefOr[BrowserPlatformDetails]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("safari")(x.asInstanceOf[js.Any])
     }
   }
   
@@ -106,23 +93,18 @@ object mod {
   }
   object Browser {
     
-    @scala.inline
-    def apply(binPath: String, name: String, version: String): Browser = {
+    inline def apply(binPath: String, name: String, version: String): Browser = {
       val __obj = js.Dynamic.literal(binPath = binPath.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Browser]
     }
     
-    @scala.inline
-    implicit class BrowserMutableBuilder[Self <: Browser] (val x: Self) extends AnyVal {
+    extension [Self <: Browser](x: Self) {
       
-      @scala.inline
-      def setBinPath(value: String): Self = StObject.set(x, "binPath", value.asInstanceOf[js.Any])
+      inline def setBinPath(value: String): Self = StObject.set(x, "binPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -162,89 +144,62 @@ object mod {
   }
   object BrowserPlatformDetails {
     
-    @scala.inline
-    def apply(): BrowserPlatformDetails = {
+    inline def apply(): BrowserPlatformDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BrowserPlatformDetails]
     }
     
-    @scala.inline
-    implicit class BrowserPlatformDetailsMutableBuilder[Self <: BrowserPlatformDetails] (val x: Self) extends AnyVal {
+    extension [Self <: BrowserPlatformDetails](x: Self) {
       
-      @scala.inline
-      def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+      inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
       
-      @scala.inline
-      def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+      inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
       
-      @scala.inline
-      def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+      inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
+      inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setDefaultLocation(value: String): Self = StObject.set(x, "defaultLocation", value.asInstanceOf[js.Any])
+      inline def setDefaultLocation(value: String): Self = StObject.set(x, "defaultLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultLocationUndefined: Self = StObject.set(x, "defaultLocation", js.undefined)
+      inline def setDefaultLocationUndefined: Self = StObject.set(x, "defaultLocation", js.undefined)
       
-      @scala.inline
-      def setGetCommand(value: (BrowserPlatformDetails, /* url */ String, /* args */ js.Array[String]) => String): Self = StObject.set(x, "getCommand", js.Any.fromFunction3(value))
+      inline def setGetCommand(value: (BrowserPlatformDetails, /* url */ String, /* args */ js.Array[String]) => String): Self = StObject.set(x, "getCommand", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetCommandUndefined: Self = StObject.set(x, "getCommand", js.undefined)
+      inline def setGetCommandUndefined: Self = StObject.set(x, "getCommand", js.undefined)
       
-      @scala.inline
-      def setImageName(value: String): Self = StObject.set(x, "imageName", value.asInstanceOf[js.Any])
+      inline def setImageName(value: String): Self = StObject.set(x, "imageName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageNameUndefined: Self = StObject.set(x, "imageName", js.undefined)
+      inline def setImageNameUndefined: Self = StObject.set(x, "imageName", js.undefined)
       
-      @scala.inline
-      def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
+      inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
+      inline def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
       
-      @scala.inline
-      def setOpensTab(value: Boolean): Self = StObject.set(x, "opensTab", value.asInstanceOf[js.Any])
+      inline def setOpensTab(value: Boolean): Self = StObject.set(x, "opensTab", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpensTabUndefined: Self = StObject.set(x, "opensTab", js.undefined)
+      inline def setOpensTabUndefined: Self = StObject.set(x, "opensTab", js.undefined)
       
-      @scala.inline
-      def setPathQuery(value: String): Self = StObject.set(x, "pathQuery", value.asInstanceOf[js.Any])
+      inline def setPathQuery(value: String): Self = StObject.set(x, "pathQuery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathQueryUndefined: Self = StObject.set(x, "pathQuery", js.undefined)
+      inline def setPathQueryUndefined: Self = StObject.set(x, "pathQuery", js.undefined)
       
-      @scala.inline
-      def setPlistPath(value: String): Self = StObject.set(x, "plistPath", value.asInstanceOf[js.Any])
+      inline def setPlistPath(value: String): Self = StObject.set(x, "plistPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlistPathUndefined: Self = StObject.set(x, "plistPath", js.undefined)
+      inline def setPlistPathUndefined: Self = StObject.set(x, "plistPath", js.undefined)
       
-      @scala.inline
-      def setProcess(value: String): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
+      inline def setProcess(value: String): Self = StObject.set(x, "process", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessUndefined: Self = StObject.set(x, "process", js.undefined)
+      inline def setProcessUndefined: Self = StObject.set(x, "process", js.undefined)
       
-      @scala.inline
-      def setVersionKey(value: String): Self = StObject.set(x, "versionKey", value.asInstanceOf[js.Any])
+      inline def setVersionKey(value: String): Self = StObject.set(x, "versionKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionKeyUndefined: Self = StObject.set(x, "versionKey", js.undefined)
+      inline def setVersionKeyUndefined: Self = StObject.set(x, "versionKey", js.undefined)
     }
   }
   
@@ -256,20 +211,16 @@ object mod {
   }
   object BrowserstackAuth {
     
-    @scala.inline
-    def apply(password: String, username: String): BrowserstackAuth = {
+    inline def apply(password: String, username: String): BrowserstackAuth = {
       val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[BrowserstackAuth]
     }
     
-    @scala.inline
-    implicit class BrowserstackAuthMutableBuilder[Self <: BrowserstackAuth] (val x: Self) extends AnyVal {
+    extension [Self <: BrowserstackAuth](x: Self) {
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
@@ -308,23 +259,18 @@ object mod {
   }
   object LaunchOptions {
     
-    @scala.inline
-    def apply(browser: String): LaunchOptions = {
+    inline def apply(browser: String): LaunchOptions = {
       val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any])
       __obj.asInstanceOf[LaunchOptions]
     }
     
-    @scala.inline
-    implicit class LaunchOptionsMutableBuilder[Self <: LaunchOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LaunchOptions](x: Self) {
       
-      @scala.inline
-      def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+      inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   

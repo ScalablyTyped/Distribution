@@ -84,8 +84,7 @@ object org_ {
       }
       object XModify {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           InstallCatalogs: (Double, SeqEquiv[String], String) => Unit,
           InstallFontconfigResources: (Double, SeqEquiv[String], String) => Unit,
           InstallGStreamerResources: (Double, SeqEquiv[String], String) => Unit,
@@ -104,38 +103,27 @@ object org_ {
           __obj.asInstanceOf[XModify]
         }
         
-        @scala.inline
-        implicit class XModifyMutableBuilder[Self <: XModify] (val x: Self) extends AnyVal {
+        extension [Self <: XModify](x: Self) {
           
-          @scala.inline
-          def setInstallCatalogs(value: (Double, SeqEquiv[String], String) => Unit): Self = StObject.set(x, "InstallCatalogs", js.Any.fromFunction3(value))
+          inline def setInstallCatalogs(value: (Double, SeqEquiv[String], String) => Unit): Self = StObject.set(x, "InstallCatalogs", js.Any.fromFunction3(value))
           
-          @scala.inline
-          def setInstallFontconfigResources(value: (Double, SeqEquiv[String], String) => Unit): Self = StObject.set(x, "InstallFontconfigResources", js.Any.fromFunction3(value))
+          inline def setInstallFontconfigResources(value: (Double, SeqEquiv[String], String) => Unit): Self = StObject.set(x, "InstallFontconfigResources", js.Any.fromFunction3(value))
           
-          @scala.inline
-          def setInstallGStreamerResources(value: (Double, SeqEquiv[String], String) => Unit): Self = StObject.set(x, "InstallGStreamerResources", js.Any.fromFunction3(value))
+          inline def setInstallGStreamerResources(value: (Double, SeqEquiv[String], String) => Unit): Self = StObject.set(x, "InstallGStreamerResources", js.Any.fromFunction3(value))
           
-          @scala.inline
-          def setInstallMimeTypes(value: (Double, SeqEquiv[String], String) => Unit): Self = StObject.set(x, "InstallMimeTypes", js.Any.fromFunction3(value))
+          inline def setInstallMimeTypes(value: (Double, SeqEquiv[String], String) => Unit): Self = StObject.set(x, "InstallMimeTypes", js.Any.fromFunction3(value))
           
-          @scala.inline
-          def setInstallPackageFiles(value: (Double, SeqEquiv[String], String) => Unit): Self = StObject.set(x, "InstallPackageFiles", js.Any.fromFunction3(value))
+          inline def setInstallPackageFiles(value: (Double, SeqEquiv[String], String) => Unit): Self = StObject.set(x, "InstallPackageFiles", js.Any.fromFunction3(value))
           
-          @scala.inline
-          def setInstallPackageNames(value: (Double, SeqEquiv[String], String) => Unit): Self = StObject.set(x, "InstallPackageNames", js.Any.fromFunction3(value))
+          inline def setInstallPackageNames(value: (Double, SeqEquiv[String], String) => Unit): Self = StObject.set(x, "InstallPackageNames", js.Any.fromFunction3(value))
           
-          @scala.inline
-          def setInstallPrinterDrivers(value: (Double, SeqEquiv[String], String) => Unit): Self = StObject.set(x, "InstallPrinterDrivers", js.Any.fromFunction3(value))
+          inline def setInstallPrinterDrivers(value: (Double, SeqEquiv[String], String) => Unit): Self = StObject.set(x, "InstallPrinterDrivers", js.Any.fromFunction3(value))
           
-          @scala.inline
-          def setInstallProvideFiles(value: (Double, SeqEquiv[String], String) => Unit): Self = StObject.set(x, "InstallProvideFiles", js.Any.fromFunction3(value))
+          inline def setInstallProvideFiles(value: (Double, SeqEquiv[String], String) => Unit): Self = StObject.set(x, "InstallProvideFiles", js.Any.fromFunction3(value))
           
-          @scala.inline
-          def setInstallResources(value: (Double, SeqEquiv[String], SeqEquiv[String], String) => Unit): Self = StObject.set(x, "InstallResources", js.Any.fromFunction4(value))
+          inline def setInstallResources(value: (Double, SeqEquiv[String], SeqEquiv[String], String) => Unit): Self = StObject.set(x, "InstallResources", js.Any.fromFunction4(value))
           
-          @scala.inline
-          def setRemovePackageByFiles(value: (Double, SeqEquiv[String], String) => Unit): Self = StObject.set(x, "RemovePackageByFiles", js.Any.fromFunction3(value))
+          inline def setRemovePackageByFiles(value: (Double, SeqEquiv[String], String) => Unit): Self = StObject.set(x, "RemovePackageByFiles", js.Any.fromFunction3(value))
         }
       }
       
@@ -161,8 +149,7 @@ object org_ {
       }
       object XQuery {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           IsInstalled: (String, String, js.Array[Boolean]) => Unit,
           SearchFile: (String, String, js.Array[Boolean], js.Array[String]) => Unit,
           acquire: () => Unit,
@@ -173,14 +160,11 @@ object org_ {
           __obj.asInstanceOf[XQuery]
         }
         
-        @scala.inline
-        implicit class XQueryMutableBuilder[Self <: XQuery] (val x: Self) extends AnyVal {
+        extension [Self <: XQuery](x: Self) {
           
-          @scala.inline
-          def setIsInstalled(value: (String, String, js.Array[Boolean]) => Unit): Self = StObject.set(x, "IsInstalled", js.Any.fromFunction3(value))
+          inline def setIsInstalled(value: (String, String, js.Array[Boolean]) => Unit): Self = StObject.set(x, "IsInstalled", js.Any.fromFunction3(value))
           
-          @scala.inline
-          def setSearchFile(value: (String, String, js.Array[Boolean], js.Array[String]) => Unit): Self = StObject.set(x, "SearchFile", js.Any.fromFunction4(value))
+          inline def setSearchFile(value: (String, String, js.Array[Boolean], js.Array[String]) => Unit): Self = StObject.set(x, "SearchFile", js.Any.fromFunction4(value))
         }
       }
       
@@ -190,8 +174,7 @@ object org_ {
            with XQuery
       object XSyncDbusSessionHelper {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           InstallCatalogs: (Double, SeqEquiv[String], String) => Unit,
           InstallFontconfigResources: (Double, SeqEquiv[String], String) => Unit,
           InstallGStreamerResources: (Double, SeqEquiv[String], String) => Unit,

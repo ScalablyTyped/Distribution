@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AutoCompleteMatchingStrategy extends StObject
 object AutoCompleteMatchingStrategy {
   
-  @scala.inline
-  def contain: typings.jsoneditor.jsoneditorStrings.contain = "contain".asInstanceOf[typings.jsoneditor.jsoneditorStrings.contain]
+  inline def contain: typings.jsoneditor.jsoneditorStrings.contain = "contain".asInstanceOf[typings.jsoneditor.jsoneditorStrings.contain]
   
-  @scala.inline
-  def start: typings.jsoneditor.jsoneditorStrings.start = "start".asInstanceOf[typings.jsoneditor.jsoneditorStrings.start]
+  inline def start: typings.jsoneditor.jsoneditorStrings.start = "start".asInstanceOf[typings.jsoneditor.jsoneditorStrings.start]
 }

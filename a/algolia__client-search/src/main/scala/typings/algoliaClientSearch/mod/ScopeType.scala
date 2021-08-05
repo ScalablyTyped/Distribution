@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ScopeType extends StObject
 object ScopeType {
   
-  @scala.inline
-  def rules: typings.algoliaClientSearch.algoliaClientSearchStrings.rules = "rules".asInstanceOf[typings.algoliaClientSearch.algoliaClientSearchStrings.rules]
+  inline def rules: typings.algoliaClientSearch.algoliaClientSearchStrings.rules = "rules".asInstanceOf[typings.algoliaClientSearch.algoliaClientSearchStrings.rules]
   
-  @scala.inline
-  def settings: typings.algoliaClientSearch.algoliaClientSearchStrings.settings = "settings".asInstanceOf[typings.algoliaClientSearch.algoliaClientSearchStrings.settings]
+  inline def settings: typings.algoliaClientSearch.algoliaClientSearchStrings.settings = "settings".asInstanceOf[typings.algoliaClientSearch.algoliaClientSearchStrings.settings]
   
-  @scala.inline
-  def synonyms: typings.algoliaClientSearch.algoliaClientSearchStrings.synonyms = "synonyms".asInstanceOf[typings.algoliaClientSearch.algoliaClientSearchStrings.synonyms]
+  inline def synonyms: typings.algoliaClientSearch.algoliaClientSearchStrings.synonyms = "synonyms".asInstanceOf[typings.algoliaClientSearch.algoliaClientSearchStrings.synonyms]
 }

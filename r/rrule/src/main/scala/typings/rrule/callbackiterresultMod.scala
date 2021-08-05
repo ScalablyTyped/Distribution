@@ -21,7 +21,7 @@ object callbackiterresultMod {
   trait CallbackIterResult
     extends typings.rrule.iterresultMod.default[all | between] {
     
-    var iterator: js.Any = js.native
+    /* private */ var iterator: js.Any = js.native
   }
   
   type Iterator = js.Function2[/* d */ Date, /* len */ Double, Boolean]

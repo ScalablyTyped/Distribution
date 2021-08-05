@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HyperlinkDisplayType extends StObject
 object HyperlinkDisplayType {
   
-  @scala.inline
-  def LINKED: typings.googleSpreadsheet.googleSpreadsheetStrings.LINKED = "LINKED".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.LINKED]
+  inline def LINKED: typings.googleSpreadsheet.googleSpreadsheetStrings.LINKED = "LINKED".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.LINKED]
   
-  @scala.inline
-  def PLAIN_TEXT: typings.googleSpreadsheet.googleSpreadsheetStrings.PLAIN_TEXT = "PLAIN_TEXT".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.PLAIN_TEXT]
+  inline def PLAIN_TEXT: typings.googleSpreadsheet.googleSpreadsheetStrings.PLAIN_TEXT = "PLAIN_TEXT".asInstanceOf[typings.googleSpreadsheet.googleSpreadsheetStrings.PLAIN_TEXT]
 }

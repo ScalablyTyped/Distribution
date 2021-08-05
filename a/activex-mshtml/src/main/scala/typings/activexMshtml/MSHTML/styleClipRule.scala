@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleClipRule extends StObject
 object styleClipRule {
   
-  @scala.inline
-  def styleClipRuleEvenOdd: `2` = 2.asInstanceOf[`2`]
+  inline def styleClipRuleEvenOdd: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleClipRuleNonZero: `1` = 1.asInstanceOf[`1`]
+  inline def styleClipRuleNonZero: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleClipRuleNotSet: `0` = 0.asInstanceOf[`0`]
+  inline def styleClipRuleNotSet: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleClipRule_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleClipRule_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

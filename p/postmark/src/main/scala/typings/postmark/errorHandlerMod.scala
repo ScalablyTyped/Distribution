@@ -18,7 +18,7 @@ object errorHandlerMod {
       * @param {AxiosResponse} response - request response used to transform to Postmark error.
       * @return {PostmarkError} - formatted Postmark error
       */
-    var buildErrorForResponse: js.Any = js.native
+    /* private */ var buildErrorForResponse: js.Any = js.native
     
     /**
       * Build general Postmark error.
@@ -45,8 +45,8 @@ object errorHandlerMod {
       *
       * @returns properly formatted Postmark error.
       */
-    var buildRequestErrorByStatus: js.Any = js.native
+    /* private */ var buildRequestErrorByStatus: js.Any = js.native
     
-    var retrieveDefaultOrValue: js.Any = js.native
+    /* private */ var retrieveDefaultOrValue: js.Any = js.native
   }
 }

@@ -72,8 +72,7 @@ trait IgToolbarMethods extends StObject {
 }
 object IgToolbarMethods {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activateItem: (js.Object, js.Object) => Unit,
     addItem: js.Object => Unit,
     changeGlobalLanguage: () => Unit,
@@ -90,40 +89,28 @@ object IgToolbarMethods {
     __obj.asInstanceOf[IgToolbarMethods]
   }
   
-  @scala.inline
-  implicit class IgToolbarMethodsMutableBuilder[Self <: IgToolbarMethods] (val x: Self) extends AnyVal {
+  extension [Self <: IgToolbarMethods](x: Self) {
     
-    @scala.inline
-    def setActivateItem(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "activateItem", js.Any.fromFunction2(value))
+    inline def setActivateItem(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "activateItem", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAddItem(value: js.Object => Unit): Self = StObject.set(x, "addItem", js.Any.fromFunction1(value))
+    inline def setAddItem(value: js.Object => Unit): Self = StObject.set(x, "addItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
+    inline def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChangeGlobalRegional(value: () => Unit): Self = StObject.set(x, "changeGlobalRegional", js.Any.fromFunction0(value))
+    inline def setChangeGlobalRegional(value: () => Unit): Self = StObject.set(x, "changeGlobalRegional", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChangeLocale(value: () => Unit): Self = StObject.set(x, "changeLocale", js.Any.fromFunction0(value))
+    inline def setChangeLocale(value: () => Unit): Self = StObject.set(x, "changeLocale", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDeactivateAll(value: () => Unit): Self = StObject.set(x, "deactivateAll", js.Any.fromFunction0(value))
+    inline def setDeactivateAll(value: () => Unit): Self = StObject.set(x, "deactivateAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDisableItem(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "disableItem", js.Any.fromFunction2(value))
+    inline def setDisableItem(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "disableItem", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetItem(value: js.Object => js.Object): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
+    inline def setGetItem(value: js.Object => js.Object): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveItem(value: js.Object => js.Object): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
+    inline def setRemoveItem(value: js.Object => js.Object): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWidget(value: () => Unit): Self = StObject.set(x, "widget", js.Any.fromFunction0(value))
+    inline def setWidget(value: () => Unit): Self = StObject.set(x, "widget", js.Any.fromFunction0(value))
   }
 }

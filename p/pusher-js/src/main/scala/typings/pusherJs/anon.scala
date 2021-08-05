@@ -21,8 +21,7 @@ object anon {
   }
   object Activity {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       activity: () => Unit,
       closed: () => Unit,
       error: js.Any => Unit,
@@ -33,23 +32,17 @@ object anon {
       __obj.asInstanceOf[Activity]
     }
     
-    @scala.inline
-    implicit class ActivityMutableBuilder[Self <: Activity] (val x: Self) extends AnyVal {
+    extension [Self <: Activity](x: Self) {
       
-      @scala.inline
-      def setActivity(value: () => Unit): Self = StObject.set(x, "activity", js.Any.fromFunction0(value))
+      inline def setActivity(value: () => Unit): Self = StObject.set(x, "activity", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClosed(value: () => Unit): Self = StObject.set(x, "closed", js.Any.fromFunction0(value))
+      inline def setClosed(value: () => Unit): Self = StObject.set(x, "closed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setError(value: js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMessage(value: String => Unit): Self = StObject.set(x, "message", js.Any.fromFunction1(value))
+      inline def setMessage(value: String => Unit): Self = StObject.set(x, "message", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPing(value: () => Unit): Self = StObject.set(x, "ping", js.Any.fromFunction0(value))
+      inline def setPing(value: () => Unit): Self = StObject.set(x, "ping", js.Any.fromFunction0(value))
     }
   }
   
@@ -62,19 +55,16 @@ object anon {
   }
   object Authorize {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       authorize: (String, js.Function2[/* errored */ Boolean, /* authInfo */ js.UndefOr[AuthInfo], Unit]) => Unit
     ): Authorize = {
       val __obj = js.Dynamic.literal(authorize = js.Any.fromFunction2(authorize))
       __obj.asInstanceOf[Authorize]
     }
     
-    @scala.inline
-    implicit class AuthorizeMutableBuilder[Self <: Authorize] (val x: Self) extends AnyVal {
+    extension [Self <: Authorize](x: Self) {
       
-      @scala.inline
-      def setAuthorize(
+      inline def setAuthorize(
         value: (String, js.Function2[/* errored */ Boolean, /* authInfo */ js.UndefOr[AuthInfo], Unit]) => Unit
       ): Self = StObject.set(x, "authorize", js.Any.fromFunction2(value))
     }
@@ -92,26 +82,20 @@ object anon {
   }
   object Backoff {
     
-    @scala.inline
-    def apply(backoff: () => Unit, refused: () => Unit, retry: () => Unit, ssl_only: () => Unit): Backoff = {
+    inline def apply(backoff: () => Unit, refused: () => Unit, retry: () => Unit, ssl_only: () => Unit): Backoff = {
       val __obj = js.Dynamic.literal(backoff = js.Any.fromFunction0(backoff), refused = js.Any.fromFunction0(refused), retry = js.Any.fromFunction0(retry), ssl_only = js.Any.fromFunction0(ssl_only))
       __obj.asInstanceOf[Backoff]
     }
     
-    @scala.inline
-    implicit class BackoffMutableBuilder[Self <: Backoff] (val x: Self) extends AnyVal {
+    extension [Self <: Backoff](x: Self) {
       
-      @scala.inline
-      def setBackoff(value: () => Unit): Self = StObject.set(x, "backoff", js.Any.fromFunction0(value))
+      inline def setBackoff(value: () => Unit): Self = StObject.set(x, "backoff", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRefused(value: () => Unit): Self = StObject.set(x, "refused", js.Any.fromFunction0(value))
+      inline def setRefused(value: () => Unit): Self = StObject.set(x, "refused", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRetry(value: () => Unit): Self = StObject.set(x, "retry", js.Any.fromFunction0(value))
+      inline def setRetry(value: () => Unit): Self = StObject.set(x, "retry", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSsl_only(value: () => Unit): Self = StObject.set(x, "ssl_only", js.Any.fromFunction0(value))
+      inline def setSsl_only(value: () => Unit): Self = StObject.set(x, "ssl_only", js.Any.fromFunction0(value))
     }
   }
   
@@ -129,8 +113,7 @@ object anon {
   }
   object Connected {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       backoff: () => Unit,
       connected: js.Any => Unit,
       refused: () => Unit,
@@ -141,23 +124,17 @@ object anon {
       __obj.asInstanceOf[Connected]
     }
     
-    @scala.inline
-    implicit class ConnectedMutableBuilder[Self <: Connected] (val x: Self) extends AnyVal {
+    extension [Self <: Connected](x: Self) {
       
-      @scala.inline
-      def setBackoff(value: () => Unit): Self = StObject.set(x, "backoff", js.Any.fromFunction0(value))
+      inline def setBackoff(value: () => Unit): Self = StObject.set(x, "backoff", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setConnected(value: js.Any => Unit): Self = StObject.set(x, "connected", js.Any.fromFunction1(value))
+      inline def setConnected(value: js.Any => Unit): Self = StObject.set(x, "connected", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRefused(value: () => Unit): Self = StObject.set(x, "refused", js.Any.fromFunction0(value))
+      inline def setRefused(value: () => Unit): Self = StObject.set(x, "refused", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRetry(value: () => Unit): Self = StObject.set(x, "retry", js.Any.fromFunction0(value))
+      inline def setRetry(value: () => Unit): Self = StObject.set(x, "retry", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSsl_only(value: () => Unit): Self = StObject.set(x, "ssl_only", js.Any.fromFunction0(value))
+      inline def setSsl_only(value: () => Unit): Self = StObject.set(x, "ssl_only", js.Any.fromFunction0(value))
     }
   }
 }

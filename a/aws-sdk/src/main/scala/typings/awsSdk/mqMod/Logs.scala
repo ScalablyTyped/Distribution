@@ -18,25 +18,19 @@ trait Logs extends StObject {
 }
 object Logs {
   
-  @scala.inline
-  def apply(): Logs = {
+  inline def apply(): Logs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Logs]
   }
   
-  @scala.inline
-  implicit class LogsMutableBuilder[Self <: Logs] (val x: Self) extends AnyVal {
+  extension [Self <: Logs](x: Self) {
     
-    @scala.inline
-    def setAudit(value: boolean): Self = StObject.set(x, "Audit", value.asInstanceOf[js.Any])
+    inline def setAudit(value: boolean): Self = StObject.set(x, "Audit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuditUndefined: Self = StObject.set(x, "Audit", js.undefined)
+    inline def setAuditUndefined: Self = StObject.set(x, "Audit", js.undefined)
     
-    @scala.inline
-    def setGeneral(value: boolean): Self = StObject.set(x, "General", value.asInstanceOf[js.Any])
+    inline def setGeneral(value: boolean): Self = StObject.set(x, "General", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeneralUndefined: Self = StObject.set(x, "General", js.undefined)
+    inline def setGeneralUndefined: Self = StObject.set(x, "General", js.undefined)
   }
 }

@@ -19,21 +19,17 @@ object MarkerShape {
   }
   object CircleOptions {
     
-    @scala.inline
-    def apply(coords: js.Tuple3[Double, Double, Double]): CircleOptions = {
+    inline def apply(coords: js.Tuple3[Double, Double, Double]): CircleOptions = {
       val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("circle")
       __obj.asInstanceOf[CircleOptions]
     }
     
-    @scala.inline
-    implicit class CircleOptionsMutableBuilder[Self <: CircleOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CircleOptions](x: Self) {
       
-      @scala.inline
-      def setCoords(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
+      inline def setCoords(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: circle): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: circle): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -45,22 +41,19 @@ object MarkerShape {
   trait Options extends StObject
   object Options {
     
-    @scala.inline
-    def CircleOptions(coords: js.Tuple3[Double, Double, Double]): typings.amapJsApi.AMap.MarkerShape.CircleOptions = {
+    inline def CircleOptions(coords: js.Tuple3[Double, Double, Double]): typings.amapJsApi.AMap.MarkerShape.CircleOptions = {
       val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("circle")
       __obj.asInstanceOf[typings.amapJsApi.AMap.MarkerShape.CircleOptions]
     }
     
-    @scala.inline
-    def PolyOptions(coords: js.Array[Double]): typings.amapJsApi.AMap.MarkerShape.PolyOptions = {
+    inline def PolyOptions(coords: js.Array[Double]): typings.amapJsApi.AMap.MarkerShape.PolyOptions = {
       val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("poly")
       __obj.asInstanceOf[typings.amapJsApi.AMap.MarkerShape.PolyOptions]
     }
     
-    @scala.inline
-    def RectOptions(coords: js.Tuple4[Double, Double, Double, Double]): typings.amapJsApi.AMap.MarkerShape.RectOptions = {
+    inline def RectOptions(coords: js.Tuple4[Double, Double, Double, Double]): typings.amapJsApi.AMap.MarkerShape.RectOptions = {
       val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("rect")
       __obj.asInstanceOf[typings.amapJsApi.AMap.MarkerShape.RectOptions]
@@ -77,24 +70,19 @@ object MarkerShape {
   }
   object PolyOptions {
     
-    @scala.inline
-    def apply(coords: js.Array[Double]): PolyOptions = {
+    inline def apply(coords: js.Array[Double]): PolyOptions = {
       val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("poly")
       __obj.asInstanceOf[PolyOptions]
     }
     
-    @scala.inline
-    implicit class PolyOptionsMutableBuilder[Self <: PolyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PolyOptions](x: Self) {
       
-      @scala.inline
-      def setCoords(value: js.Array[Double]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
+      inline def setCoords(value: js.Array[Double]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoordsVarargs(value: Double*): Self = StObject.set(x, "coords", js.Array(value :_*))
+      inline def setCoordsVarargs(value: Double*): Self = StObject.set(x, "coords", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: poly): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: poly): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -108,21 +96,17 @@ object MarkerShape {
   }
   object RectOptions {
     
-    @scala.inline
-    def apply(coords: js.Tuple4[Double, Double, Double, Double]): RectOptions = {
+    inline def apply(coords: js.Tuple4[Double, Double, Double, Double]): RectOptions = {
       val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("rect")
       __obj.asInstanceOf[RectOptions]
     }
     
-    @scala.inline
-    implicit class RectOptionsMutableBuilder[Self <: RectOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RectOptions](x: Self) {
       
-      @scala.inline
-      def setCoords(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
+      inline def setCoords(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: rect): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: rect): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

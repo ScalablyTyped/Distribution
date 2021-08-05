@@ -14,26 +14,20 @@ trait FileExtensionInfo extends StObject {
 }
 object FileExtensionInfo {
   
-  @scala.inline
-  def apply(`extension`: java.lang.String, isMixedContent: Boolean): FileExtensionInfo = {
+  inline def apply(`extension`: java.lang.String, isMixedContent: Boolean): FileExtensionInfo = {
     val __obj = js.Dynamic.literal(isMixedContent = isMixedContent.asInstanceOf[js.Any])
     __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileExtensionInfo]
   }
   
-  @scala.inline
-  implicit class FileExtensionInfoMutableBuilder[Self <: FileExtensionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: FileExtensionInfo](x: Self) {
     
-    @scala.inline
-    def setExtension(value: java.lang.String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: java.lang.String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMixedContent(value: Boolean): Self = StObject.set(x, "isMixedContent", value.asInstanceOf[js.Any])
+    inline def setIsMixedContent(value: Boolean): Self = StObject.set(x, "isMixedContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptKind(value: ScriptKind): Self = StObject.set(x, "scriptKind", value.asInstanceOf[js.Any])
+    inline def setScriptKind(value: ScriptKind): Self = StObject.set(x, "scriptKind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptKindUndefined: Self = StObject.set(x, "scriptKind", js.undefined)
+    inline def setScriptKindUndefined: Self = StObject.set(x, "scriptKind", js.undefined)
   }
 }

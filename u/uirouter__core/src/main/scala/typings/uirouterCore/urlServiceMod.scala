@@ -22,7 +22,7 @@ object urlServiceMod {
     /** @internal */
     def this(/** @internal */ router: UIRouter) = this()
     
-    /** @internal */ var _stopListeningFn: js.Any = js.native
+    /** @internal */ /* private */ var _stopListeningFn: js.Any = js.native
     
     /**
       * The nested [[UrlConfig]] API to configure the URL and retrieve URL information
@@ -64,7 +64,7 @@ object urlServiceMod {
       */
     def parts(): UrlParts = js.native
     
-    var router: js.Any = js.native
+    /* private */ var router: js.Any = js.native
     
     /**
       * The nested [[UrlRules]] API for managing URL rules and rewrites

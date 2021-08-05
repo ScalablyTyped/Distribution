@@ -12,25 +12,19 @@ trait IdRefHttpApiEventAuthorizer extends StObject {
 }
 object IdRefHttpApiEventAuthorizer {
   
-  @scala.inline
-  def apply(id: String): IdRefHttpApiEventAuthorizer = {
+  inline def apply(id: String): IdRefHttpApiEventAuthorizer = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdRefHttpApiEventAuthorizer]
   }
   
-  @scala.inline
-  implicit class IdRefHttpApiEventAuthorizerMutableBuilder[Self <: IdRefHttpApiEventAuthorizer] (val x: Self) extends AnyVal {
+  extension [Self <: IdRefHttpApiEventAuthorizer](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+    inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
+    inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
     
-    @scala.inline
-    def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+    inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
   }
 }

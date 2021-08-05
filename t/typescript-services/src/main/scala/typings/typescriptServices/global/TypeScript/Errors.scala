@@ -17,30 +17,22 @@ object Errors {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def `abstract`(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("abstract")().asInstanceOf[Error]
+  inline def `abstract`(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("abstract")().asInstanceOf[Error]
   
   /* static member */
-  @scala.inline
-  def argument(argument: String): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("argument")(argument.asInstanceOf[js.Any]).asInstanceOf[Error]
-  @scala.inline
-  def argument(argument: String, message: String): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("argument")(argument.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Error]
+  inline def argument(argument: String): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("argument")(argument.asInstanceOf[js.Any]).asInstanceOf[Error]
+  inline def argument(argument: String, message: String): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("argument")(argument.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Error]
   
   /* static member */
-  @scala.inline
-  def argumentNull(argument: String): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("argumentNull")(argument.asInstanceOf[js.Any]).asInstanceOf[Error]
+  inline def argumentNull(argument: String): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("argumentNull")(argument.asInstanceOf[js.Any]).asInstanceOf[Error]
   
   /* static member */
-  @scala.inline
-  def argumentOutOfRange(argument: String): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("argumentOutOfRange")(argument.asInstanceOf[js.Any]).asInstanceOf[Error]
+  inline def argumentOutOfRange(argument: String): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("argumentOutOfRange")(argument.asInstanceOf[js.Any]).asInstanceOf[Error]
   
   /* static member */
-  @scala.inline
-  def invalidOperation(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidOperation")().asInstanceOf[Error]
-  @scala.inline
-  def invalidOperation(message: String): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidOperation")(message.asInstanceOf[js.Any]).asInstanceOf[Error]
+  inline def invalidOperation(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidOperation")().asInstanceOf[Error]
+  inline def invalidOperation(message: String): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidOperation")(message.asInstanceOf[js.Any]).asInstanceOf[Error]
   
   /* static member */
-  @scala.inline
-  def notYetImplemented(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("notYetImplemented")().asInstanceOf[Error]
+  inline def notYetImplemented(): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("notYetImplemented")().asInstanceOf[Error]
 }

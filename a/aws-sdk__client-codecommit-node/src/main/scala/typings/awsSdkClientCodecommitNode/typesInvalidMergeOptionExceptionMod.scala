@@ -16,17 +16,14 @@ object typesInvalidMergeOptionExceptionMod {
   }
   object InvalidMergeOptionException {
     
-    @scala.inline
-    def apply(): InvalidMergeOptionException = {
+    inline def apply(): InvalidMergeOptionException = {
       val __obj = js.Dynamic.literal(name = "InvalidMergeOptionException")
       __obj.asInstanceOf[InvalidMergeOptionException]
     }
     
-    @scala.inline
-    implicit class InvalidMergeOptionExceptionMutableBuilder[Self <: InvalidMergeOptionException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidMergeOptionException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidMergeOptionException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

@@ -37,11 +37,11 @@ object ruleManagerMod {
     /* CompleteClass */
     override def increaseUsage(className: ClassRef, cssText: js.Function0[String]): Unit = js.native
     
-    var injector: js.Any = js.native
+    /* private */ var injector: js.Any = js.native
     
-    var ruleIndexesByClassName: js.Any = js.native
+    /* private */ var ruleIndexesByClassName: js.Any = js.native
     
-    var usageCountsByClassName: js.Any = js.native
+    /* private */ var usageCountsByClassName: js.Any = js.native
   }
   
   trait RuleManager extends StObject {
@@ -52,20 +52,16 @@ object ruleManagerMod {
   }
   object RuleManager {
     
-    @scala.inline
-    def apply(decreaseUsage: (ClassRef, Double) => Unit, increaseUsage: (ClassRef, js.Function0[String]) => Unit): RuleManager = {
+    inline def apply(decreaseUsage: (ClassRef, Double) => Unit, increaseUsage: (ClassRef, js.Function0[String]) => Unit): RuleManager = {
       val __obj = js.Dynamic.literal(decreaseUsage = js.Any.fromFunction2(decreaseUsage), increaseUsage = js.Any.fromFunction2(increaseUsage))
       __obj.asInstanceOf[RuleManager]
     }
     
-    @scala.inline
-    implicit class RuleManagerMutableBuilder[Self <: RuleManager] (val x: Self) extends AnyVal {
+    extension [Self <: RuleManager](x: Self) {
       
-      @scala.inline
-      def setDecreaseUsage(value: (ClassRef, Double) => Unit): Self = StObject.set(x, "decreaseUsage", js.Any.fromFunction2(value))
+      inline def setDecreaseUsage(value: (ClassRef, Double) => Unit): Self = StObject.set(x, "decreaseUsage", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIncreaseUsage(value: (ClassRef, js.Function0[String]) => Unit): Self = StObject.set(x, "increaseUsage", js.Any.fromFunction2(value))
+      inline def setIncreaseUsage(value: (ClassRef, js.Function0[String]) => Unit): Self = StObject.set(x, "increaseUsage", js.Any.fromFunction2(value))
     }
   }
 }

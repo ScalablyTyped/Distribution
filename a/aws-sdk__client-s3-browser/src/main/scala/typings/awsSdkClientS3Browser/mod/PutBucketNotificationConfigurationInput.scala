@@ -10,8 +10,7 @@ trait PutBucketNotificationConfigurationInput
      with typings.awsSdkClientS3Browser.typesPutBucketNotificationConfigurationInputMod.PutBucketNotificationConfigurationInput
 object PutBucketNotificationConfigurationInput {
   
-  @scala.inline
-  def apply(Bucket: String, NotificationConfiguration: NotificationConfiguration): PutBucketNotificationConfigurationInput = {
+  inline def apply(Bucket: String, NotificationConfiguration: NotificationConfiguration): PutBucketNotificationConfigurationInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], NotificationConfiguration = NotificationConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketNotificationConfigurationInput]
   }

@@ -34,39 +34,29 @@ trait Scope extends StObject {
 }
 object Scope {
   
-  @scala.inline
-  def apply(`object`: RemoteObject, `type`: String): Scope = {
+  inline def apply(`object`: RemoteObject, `type`: String): Scope = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Scope]
   }
   
-  @scala.inline
-  implicit class ScopeMutableBuilder[Self <: Scope] (val x: Self) extends AnyVal {
+  extension [Self <: Scope](x: Self) {
     
-    @scala.inline
-    def setEndLocation(value: Location): Self = StObject.set(x, "endLocation", value.asInstanceOf[js.Any])
+    inline def setEndLocation(value: Location): Self = StObject.set(x, "endLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndLocationUndefined: Self = StObject.set(x, "endLocation", js.undefined)
+    inline def setEndLocationUndefined: Self = StObject.set(x, "endLocation", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setObject(value: RemoteObject): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: RemoteObject): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartLocation(value: Location): Self = StObject.set(x, "startLocation", value.asInstanceOf[js.Any])
+    inline def setStartLocation(value: Location): Self = StObject.set(x, "startLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartLocationUndefined: Self = StObject.set(x, "startLocation", js.undefined)
+    inline def setStartLocationUndefined: Self = StObject.set(x, "startLocation", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

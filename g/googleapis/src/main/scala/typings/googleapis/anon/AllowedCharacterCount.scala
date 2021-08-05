@@ -14,31 +14,23 @@ trait AllowedCharacterCount extends StObject {
 }
 object AllowedCharacterCount {
   
-  @scala.inline
-  def apply(): AllowedCharacterCount = {
+  inline def apply(): AllowedCharacterCount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AllowedCharacterCount]
   }
   
-  @scala.inline
-  implicit class AllowedCharacterCountMutableBuilder[Self <: AllowedCharacterCount] (val x: Self) extends AnyVal {
+  extension [Self <: AllowedCharacterCount](x: Self) {
     
-    @scala.inline
-    def setAllowedCharacterCount(value: Double): Self = StObject.set(x, "allowedCharacterCount", value.asInstanceOf[js.Any])
+    inline def setAllowedCharacterCount(value: Double): Self = StObject.set(x, "allowedCharacterCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedCharacterCountUndefined: Self = StObject.set(x, "allowedCharacterCount", js.undefined)
+    inline def setAllowedCharacterCountUndefined: Self = StObject.set(x, "allowedCharacterCount", js.undefined)
     
-    @scala.inline
-    def setLimitType(value: String): Self = StObject.set(x, "limitType", value.asInstanceOf[js.Any])
+    inline def setLimitType(value: String): Self = StObject.set(x, "limitType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitTypeUndefined: Self = StObject.set(x, "limitType", js.undefined)
+    inline def setLimitTypeUndefined: Self = StObject.set(x, "limitType", js.undefined)
     
-    @scala.inline
-    def setRemainingCharacterCount(value: Double): Self = StObject.set(x, "remainingCharacterCount", value.asInstanceOf[js.Any])
+    inline def setRemainingCharacterCount(value: Double): Self = StObject.set(x, "remainingCharacterCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemainingCharacterCountUndefined: Self = StObject.set(x, "remainingCharacterCount", js.undefined)
+    inline def setRemainingCharacterCountUndefined: Self = StObject.set(x, "remainingCharacterCount", js.undefined)
   }
 }

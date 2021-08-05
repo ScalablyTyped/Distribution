@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait User extends StObject {
   
-  @JSName("ADOX.User_typekey")
+  /* private */ @JSName("ADOX.User_typekey")
   var ADOXDotUser_typekey: User = js.native
   
   def ChangePassword(OldPassword: String, NewPassword: String): Unit = js.native

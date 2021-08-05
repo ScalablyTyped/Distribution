@@ -15,7 +15,7 @@ object queryBuilderRelationLoaderMod {
   class RelationLoader protected () extends StObject {
     def this(connection: Connection) = this()
     
-    var connection: js.Any = js.native
+    /* private */ var connection: js.Any = js.native
     
     /**
       * Wraps given entity and creates getters/setters for its given relation

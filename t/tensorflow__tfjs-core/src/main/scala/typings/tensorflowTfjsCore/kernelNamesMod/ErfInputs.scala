@@ -11,19 +11,15 @@ trait ErfInputs extends StObject {
 }
 object ErfInputs {
   
-  @scala.inline
-  def apply(): ErfInputs = {
+  inline def apply(): ErfInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ErfInputs]
   }
   
-  @scala.inline
-  implicit class ErfInputsMutableBuilder[Self <: ErfInputs] (val x: Self) extends AnyVal {
+  extension [Self <: ErfInputs](x: Self) {
     
-    @scala.inline
-    def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }
 }

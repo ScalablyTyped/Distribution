@@ -16,22 +16,17 @@ trait Expanded extends StObject {
 }
 object Expanded {
   
-  @scala.inline
-  def apply(expanded: Boolean, nativeEvent: MouseEvent, node: EventDataNode): Expanded = {
+  inline def apply(expanded: Boolean, nativeEvent: MouseEvent, node: EventDataNode): Expanded = {
     val __obj = js.Dynamic.literal(expanded = expanded.asInstanceOf[js.Any], nativeEvent = nativeEvent.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
     __obj.asInstanceOf[Expanded]
   }
   
-  @scala.inline
-  implicit class ExpandedMutableBuilder[Self <: Expanded] (val x: Self) extends AnyVal {
+  extension [Self <: Expanded](x: Self) {
     
-    @scala.inline
-    def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+    inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNativeEvent(value: MouseEvent): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
+    inline def setNativeEvent(value: MouseEvent): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode(value: EventDataNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: EventDataNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }
 }

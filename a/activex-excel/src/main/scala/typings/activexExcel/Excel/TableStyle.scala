@@ -18,7 +18,7 @@ trait TableStyle extends StObject {
   def Duplicate(): TableStyle = js.native
   def Duplicate(NewTableStyleName: String): TableStyle = js.native
   
-  @JSName("Excel.TableStyle_typekey")
+  /* private */ @JSName("Excel.TableStyle_typekey")
   var ExcelDotTableStyle_typekey: TableStyle = js.native
   
   val Name: String = js.native

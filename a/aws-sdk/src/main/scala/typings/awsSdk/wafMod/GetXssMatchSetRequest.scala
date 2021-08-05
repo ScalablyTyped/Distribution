@@ -13,16 +13,13 @@ trait GetXssMatchSetRequest extends StObject {
 }
 object GetXssMatchSetRequest {
   
-  @scala.inline
-  def apply(XssMatchSetId: ResourceId): GetXssMatchSetRequest = {
+  inline def apply(XssMatchSetId: ResourceId): GetXssMatchSetRequest = {
     val __obj = js.Dynamic.literal(XssMatchSetId = XssMatchSetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetXssMatchSetRequest]
   }
   
-  @scala.inline
-  implicit class GetXssMatchSetRequestMutableBuilder[Self <: GetXssMatchSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetXssMatchSetRequest](x: Self) {
     
-    @scala.inline
-    def setXssMatchSetId(value: ResourceId): Self = StObject.set(x, "XssMatchSetId", value.asInstanceOf[js.Any])
+    inline def setXssMatchSetId(value: ResourceId): Self = StObject.set(x, "XssMatchSetId", value.asInstanceOf[js.Any])
   }
 }

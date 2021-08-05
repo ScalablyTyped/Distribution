@@ -25,16 +25,13 @@ trait ISharedWith extends StObject {
 }
 object ISharedWith {
   
-  @scala.inline
-  def apply(access: String): ISharedWith = {
+  inline def apply(access: String): ISharedWith = {
     val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISharedWith]
   }
   
-  @scala.inline
-  implicit class ISharedWithMutableBuilder[Self <: ISharedWith] (val x: Self) extends AnyVal {
+  extension [Self <: ISharedWith](x: Self) {
     
-    @scala.inline
-    def setAccess(value: String): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
+    inline def setAccess(value: String): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
   }
 }

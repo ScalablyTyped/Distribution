@@ -26,31 +26,23 @@ trait lifecycle extends StObject {
 }
 object lifecycle {
   
-  @scala.inline
-  def apply(): lifecycle = {
+  inline def apply(): lifecycle = {
     val __obj = js.Dynamic.literal(BEACON = "beacon", COMPLETE = "complete", ERROR = "error", INIT = "init", READY = "ready", TOOLTIP = "tooltip")
     __obj.asInstanceOf[lifecycle]
   }
   
-  @scala.inline
-  implicit class lifecycleMutableBuilder[Self <: lifecycle] (val x: Self) extends AnyVal {
+  extension [Self <: lifecycle](x: Self) {
     
-    @scala.inline
-    def setBEACON(value: beacon): Self = StObject.set(x, "BEACON", value.asInstanceOf[js.Any])
+    inline def setBEACON(value: beacon): Self = StObject.set(x, "BEACON", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCOMPLETE(value: complete): Self = StObject.set(x, "COMPLETE", value.asInstanceOf[js.Any])
+    inline def setCOMPLETE(value: complete): Self = StObject.set(x, "COMPLETE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setERROR(value: error): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
+    inline def setERROR(value: error): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setINIT(value: init): Self = StObject.set(x, "INIT", value.asInstanceOf[js.Any])
+    inline def setINIT(value: init): Self = StObject.set(x, "INIT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setREADY(value: ready): Self = StObject.set(x, "READY", value.asInstanceOf[js.Any])
+    inline def setREADY(value: ready): Self = StObject.set(x, "READY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTOOLTIP(value: tooltip): Self = StObject.set(x, "TOOLTIP", value.asInstanceOf[js.Any])
+    inline def setTOOLTIP(value: tooltip): Self = StObject.set(x, "TOOLTIP", value.asInstanceOf[js.Any])
   }
 }

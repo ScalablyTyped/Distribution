@@ -23,28 +23,21 @@ trait ResetFpgaImageAttributeRequest extends StObject {
 }
 object ResetFpgaImageAttributeRequest {
   
-  @scala.inline
-  def apply(FpgaImageId: FpgaImageId): ResetFpgaImageAttributeRequest = {
+  inline def apply(FpgaImageId: FpgaImageId): ResetFpgaImageAttributeRequest = {
     val __obj = js.Dynamic.literal(FpgaImageId = FpgaImageId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResetFpgaImageAttributeRequest]
   }
   
-  @scala.inline
-  implicit class ResetFpgaImageAttributeRequestMutableBuilder[Self <: ResetFpgaImageAttributeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ResetFpgaImageAttributeRequest](x: Self) {
     
-    @scala.inline
-    def setAttribute(value: ResetFpgaImageAttributeName): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
+    inline def setAttribute(value: ResetFpgaImageAttributeName): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeUndefined: Self = StObject.set(x, "Attribute", js.undefined)
+    inline def setAttributeUndefined: Self = StObject.set(x, "Attribute", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setFpgaImageId(value: FpgaImageId): Self = StObject.set(x, "FpgaImageId", value.asInstanceOf[js.Any])
+    inline def setFpgaImageId(value: FpgaImageId): Self = StObject.set(x, "FpgaImageId", value.asInstanceOf[js.Any])
   }
 }

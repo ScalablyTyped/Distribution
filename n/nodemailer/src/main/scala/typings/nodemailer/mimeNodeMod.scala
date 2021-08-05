@@ -47,68 +47,48 @@ object mimeNodeMod {
   }
   object Addresses {
     
-    @scala.inline
-    def apply(): Addresses = {
+    inline def apply(): Addresses = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Addresses]
     }
     
-    @scala.inline
-    implicit class AddressesMutableBuilder[Self <: Addresses] (val x: Self) extends AnyVal {
+    extension [Self <: Addresses](x: Self) {
       
-      @scala.inline
-      def setBcc(value: js.Array[String]): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
+      inline def setBcc(value: js.Array[String]): Self = StObject.set(x, "bcc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBccUndefined: Self = StObject.set(x, "bcc", js.undefined)
+      inline def setBccUndefined: Self = StObject.set(x, "bcc", js.undefined)
       
-      @scala.inline
-      def setBccVarargs(value: String*): Self = StObject.set(x, "bcc", js.Array(value :_*))
+      inline def setBccVarargs(value: String*): Self = StObject.set(x, "bcc", js.Array(value :_*))
       
-      @scala.inline
-      def setCc(value: js.Array[String]): Self = StObject.set(x, "cc", value.asInstanceOf[js.Any])
+      inline def setCc(value: js.Array[String]): Self = StObject.set(x, "cc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCcUndefined: Self = StObject.set(x, "cc", js.undefined)
+      inline def setCcUndefined: Self = StObject.set(x, "cc", js.undefined)
       
-      @scala.inline
-      def setCcVarargs(value: String*): Self = StObject.set(x, "cc", js.Array(value :_*))
+      inline def setCcVarargs(value: String*): Self = StObject.set(x, "cc", js.Array(value :_*))
       
-      @scala.inline
-      def setFrom(value: js.Array[String]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: js.Array[String]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+      inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
       
-      @scala.inline
-      def setFromVarargs(value: String*): Self = StObject.set(x, "from", js.Array(value :_*))
+      inline def setFromVarargs(value: String*): Self = StObject.set(x, "from", js.Array(value :_*))
       
-      @scala.inline
-      def `setReply-to`(value: js.Array[String]): Self = StObject.set(x, "reply-to", value.asInstanceOf[js.Any])
+      inline def `setReply-to`(value: js.Array[String]): Self = StObject.set(x, "reply-to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setReply-toUndefined`: Self = StObject.set(x, "reply-to", js.undefined)
+      inline def `setReply-toUndefined`: Self = StObject.set(x, "reply-to", js.undefined)
       
-      @scala.inline
-      def `setReply-toVarargs`(value: String*): Self = StObject.set(x, "reply-to", js.Array(value :_*))
+      inline def `setReply-toVarargs`(value: String*): Self = StObject.set(x, "reply-to", js.Array(value :_*))
       
-      @scala.inline
-      def setSender(value: js.Array[String]): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+      inline def setSender(value: js.Array[String]): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSenderUndefined: Self = StObject.set(x, "sender", js.undefined)
+      inline def setSenderUndefined: Self = StObject.set(x, "sender", js.undefined)
       
-      @scala.inline
-      def setSenderVarargs(value: String*): Self = StObject.set(x, "sender", js.Array(value :_*))
+      inline def setSenderVarargs(value: String*): Self = StObject.set(x, "sender", js.Array(value :_*))
       
-      @scala.inline
-      def setTo(value: js.Array[String]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: js.Array[String]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+      inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
       
-      @scala.inline
-      def setToVarargs(value: String*): Self = StObject.set(x, "to", js.Array(value :_*))
+      inline def setToVarargs(value: String*): Self = StObject.set(x, "to", js.Array(value :_*))
     }
   }
   
@@ -122,23 +102,18 @@ object mimeNodeMod {
   }
   object Envelope {
     
-    @scala.inline
-    def apply(from: String | `false`, to: js.Array[String]): Envelope = {
+    inline def apply(from: String | `false`, to: js.Array[String]): Envelope = {
       val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[Envelope]
     }
     
-    @scala.inline
-    implicit class EnvelopeMutableBuilder[Self <: Envelope] (val x: Self) extends AnyVal {
+    extension [Self <: Envelope](x: Self) {
       
-      @scala.inline
-      def setFrom(value: String | `false`): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+      inline def setFrom(value: String | `false`): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTo(value: js.Array[String]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: js.Array[String]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToVarargs(value: String*): Self = StObject.set(x, "to", js.Array(value :_*))
+      inline def setToVarargs(value: String*): Self = StObject.set(x, "to", js.Array(value :_*))
     }
   }
   
@@ -274,56 +249,40 @@ object mimeNodeMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBaseBoundary(value: String): Self = StObject.set(x, "baseBoundary", value.asInstanceOf[js.Any])
+      inline def setBaseBoundary(value: String): Self = StObject.set(x, "baseBoundary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseBoundaryUndefined: Self = StObject.set(x, "baseBoundary", js.undefined)
+      inline def setBaseBoundaryUndefined: Self = StObject.set(x, "baseBoundary", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setKeepBcc(value: Boolean): Self = StObject.set(x, "keepBcc", value.asInstanceOf[js.Any])
+      inline def setKeepBcc(value: Boolean): Self = StObject.set(x, "keepBcc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepBccUndefined: Self = StObject.set(x, "keepBcc", js.undefined)
+      inline def setKeepBccUndefined: Self = StObject.set(x, "keepBcc", js.undefined)
       
-      @scala.inline
-      def setNormalizeHeaderKey(value: /* key */ String => String): Self = StObject.set(x, "normalizeHeaderKey", js.Any.fromFunction1(value))
+      inline def setNormalizeHeaderKey(value: /* key */ String => String): Self = StObject.set(x, "normalizeHeaderKey", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNormalizeHeaderKeyUndefined: Self = StObject.set(x, "normalizeHeaderKey", js.undefined)
+      inline def setNormalizeHeaderKeyUndefined: Self = StObject.set(x, "normalizeHeaderKey", js.undefined)
       
-      @scala.inline
-      def setParentNode(value: MimeNode): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
+      inline def setParentNode(value: MimeNode): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentNodeUndefined: Self = StObject.set(x, "parentNode", js.undefined)
+      inline def setParentNodeUndefined: Self = StObject.set(x, "parentNode", js.undefined)
       
-      @scala.inline
-      def setRootNode(value: MimeNode): Self = StObject.set(x, "rootNode", value.asInstanceOf[js.Any])
+      inline def setRootNode(value: MimeNode): Self = StObject.set(x, "rootNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNodeUndefined: Self = StObject.set(x, "rootNode", js.undefined)
+      inline def setRootNodeUndefined: Self = StObject.set(x, "rootNode", js.undefined)
       
-      @scala.inline
-      def setTextEncoding(value: B | Q): Self = StObject.set(x, "textEncoding", value.asInstanceOf[js.Any])
+      inline def setTextEncoding(value: B | Q): Self = StObject.set(x, "textEncoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextEncodingUndefined: Self = StObject.set(x, "textEncoding", js.undefined)
+      inline def setTextEncodingUndefined: Self = StObject.set(x, "textEncoding", js.undefined)
     }
   }
 }

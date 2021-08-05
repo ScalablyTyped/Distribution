@@ -11,8 +11,7 @@ trait FileActivatedEventArgs
      with IFileActivatedEventArgs
 object FileActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     files: IVectorView[IStorageItem],
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,

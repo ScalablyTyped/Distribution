@@ -28,8 +28,7 @@ trait SnapshotDetails extends StObject {
 }
 object SnapshotDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ApplicationVersionId: ApplicationVersionId,
     SnapshotName: SnapshotName,
     SnapshotStatus: SnapshotStatus
@@ -38,22 +37,16 @@ object SnapshotDetails {
     __obj.asInstanceOf[SnapshotDetails]
   }
   
-  @scala.inline
-  implicit class SnapshotDetailsMutableBuilder[Self <: SnapshotDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SnapshotDetails](x: Self) {
     
-    @scala.inline
-    def setApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "ApplicationVersionId", value.asInstanceOf[js.Any])
+    inline def setApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "ApplicationVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotCreationTimestamp(value: Timestamp): Self = StObject.set(x, "SnapshotCreationTimestamp", value.asInstanceOf[js.Any])
+    inline def setSnapshotCreationTimestamp(value: Timestamp): Self = StObject.set(x, "SnapshotCreationTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotCreationTimestampUndefined: Self = StObject.set(x, "SnapshotCreationTimestamp", js.undefined)
+    inline def setSnapshotCreationTimestampUndefined: Self = StObject.set(x, "SnapshotCreationTimestamp", js.undefined)
     
-    @scala.inline
-    def setSnapshotName(value: SnapshotName): Self = StObject.set(x, "SnapshotName", value.asInstanceOf[js.Any])
+    inline def setSnapshotName(value: SnapshotName): Self = StObject.set(x, "SnapshotName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotStatus(value: SnapshotStatus): Self = StObject.set(x, "SnapshotStatus", value.asInstanceOf[js.Any])
+    inline def setSnapshotStatus(value: SnapshotStatus): Self = StObject.set(x, "SnapshotStatus", value.asInstanceOf[js.Any])
   }
 }

@@ -12,25 +12,19 @@ trait SideSize extends StObject {
 }
 object SideSize {
   
-  @scala.inline
-  def apply(): SideSize = {
+  inline def apply(): SideSize = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SideSize]
   }
   
-  @scala.inline
-  implicit class SideSizeMutableBuilder[Self <: SideSize] (val x: Self) extends AnyVal {
+  extension [Self <: SideSize](x: Self) {
     
-    @scala.inline
-    def setSide(value: String): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
+    inline def setSide(value: String): Self = StObject.set(x, "side", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
+    inline def setSideUndefined: Self = StObject.set(x, "side", js.undefined)
     
-    @scala.inline
-    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

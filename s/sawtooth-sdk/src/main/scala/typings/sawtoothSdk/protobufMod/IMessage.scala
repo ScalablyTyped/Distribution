@@ -19,40 +19,29 @@ trait IMessage extends StObject {
 }
 object IMessage {
   
-  @scala.inline
-  def apply(): IMessage = {
+  inline def apply(): IMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IMessage]
   }
   
-  @scala.inline
-  implicit class IMessageMutableBuilder[Self <: IMessage] (val x: Self) extends AnyVal {
+  extension [Self <: IMessage](x: Self) {
     
-    @scala.inline
-    def setContent(value: Uint8Array): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Uint8Array): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentNull: Self = StObject.set(x, "content", null)
+    inline def setContentNull: Self = StObject.set(x, "content", null)
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setCorrelationId(value: String): Self = StObject.set(x, "correlationId", value.asInstanceOf[js.Any])
+    inline def setCorrelationId(value: String): Self = StObject.set(x, "correlationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorrelationIdNull: Self = StObject.set(x, "correlationId", null)
+    inline def setCorrelationIdNull: Self = StObject.set(x, "correlationId", null)
     
-    @scala.inline
-    def setCorrelationIdUndefined: Self = StObject.set(x, "correlationId", js.undefined)
+    inline def setCorrelationIdUndefined: Self = StObject.set(x, "correlationId", js.undefined)
     
-    @scala.inline
-    def setMessageType(value: MessageType): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
+    inline def setMessageType(value: MessageType): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageTypeNull: Self = StObject.set(x, "messageType", null)
+    inline def setMessageTypeNull: Self = StObject.set(x, "messageType", null)
     
-    @scala.inline
-    def setMessageTypeUndefined: Self = StObject.set(x, "messageType", js.undefined)
+    inline def setMessageTypeUndefined: Self = StObject.set(x, "messageType", js.undefined)
   }
 }

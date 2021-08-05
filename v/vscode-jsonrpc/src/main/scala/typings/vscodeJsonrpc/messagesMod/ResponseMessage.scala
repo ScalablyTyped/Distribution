@@ -26,34 +26,25 @@ trait ResponseMessage
 }
 object ResponseMessage {
   
-  @scala.inline
-  def apply(jsonrpc: String): ResponseMessage = {
+  inline def apply(jsonrpc: String): ResponseMessage = {
     val __obj = js.Dynamic.literal(jsonrpc = jsonrpc.asInstanceOf[js.Any], id = null)
     __obj.asInstanceOf[ResponseMessage]
   }
   
-  @scala.inline
-  implicit class ResponseMessageMutableBuilder[Self <: ResponseMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ResponseMessage](x: Self) {
     
-    @scala.inline
-    def setError(value: ResponseErrorLiteral[js.Any]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: ResponseErrorLiteral[js.Any]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdNull: Self = StObject.set(x, "id", null)
+    inline def setIdNull: Self = StObject.set(x, "id", null)
     
-    @scala.inline
-    def setResult(value: String | Double | Boolean | js.Object): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: String | Double | Boolean | js.Object): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultNull: Self = StObject.set(x, "result", null)
+    inline def setResultNull: Self = StObject.set(x, "result", null)
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
   }
 }

@@ -22,6 +22,5 @@ object CalloutContentBase {
   @JSImport("office-ui-fabric-react", "CalloutContentBase.defaultProps")
   @js.native
   def defaultProps: BeakWidth = js.native
-  @scala.inline
-  def defaultProps_=(x: BeakWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: BeakWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

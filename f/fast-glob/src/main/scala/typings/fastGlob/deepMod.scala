@@ -16,34 +16,34 @@ object deepMod {
        with DeepFilter {
     def this(_settings: typings.fastGlob.settingsMod.default, _micromatchOptions: MicromatchOptions) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _filter: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _getEntryLevel: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _getMatcher: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _getNegativePatternsRe: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _isSkippedByDeep: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _isSkippedByNegativePatterns: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _isSkippedByPositivePatterns: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _isSkippedSymbolicLink: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     override val _micromatchOptions: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     override val _settings: js.Any = js.native
     
     /* CompleteClass */
@@ -52,32 +52,31 @@ object deepMod {
   
   trait DeepFilter extends StObject {
     
-    var _filter: js.Any
+    /* private */ var _filter: js.Any
     
-    var _getEntryLevel: js.Any
+    /* private */ var _getEntryLevel: js.Any
     
-    var _getMatcher: js.Any
+    /* private */ var _getMatcher: js.Any
     
-    var _getNegativePatternsRe: js.Any
+    /* private */ var _getNegativePatternsRe: js.Any
     
-    var _isSkippedByDeep: js.Any
+    /* private */ var _isSkippedByDeep: js.Any
     
-    var _isSkippedByNegativePatterns: js.Any
+    /* private */ var _isSkippedByNegativePatterns: js.Any
     
-    var _isSkippedByPositivePatterns: js.Any
+    /* private */ var _isSkippedByPositivePatterns: js.Any
     
-    var _isSkippedSymbolicLink: js.Any
+    /* private */ var _isSkippedSymbolicLink: js.Any
     
-    val _micromatchOptions: js.Any
+    /* private */ val _micromatchOptions: js.Any
     
-    val _settings: js.Any
+    /* private */ val _settings: js.Any
     
     def getFilter(basePath: String, positive: js.Array[Pattern], negative: js.Array[Pattern]): EntryFilterFunction
   }
   object DeepFilter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _filter: js.Any,
       _getEntryLevel: js.Any,
       _getMatcher: js.Any,
@@ -94,41 +93,29 @@ object deepMod {
       __obj.asInstanceOf[DeepFilter]
     }
     
-    @scala.inline
-    implicit class DeepFilterMutableBuilder[Self <: DeepFilter] (val x: Self) extends AnyVal {
+    extension [Self <: DeepFilter](x: Self) {
       
-      @scala.inline
-      def setGetFilter(value: (String, js.Array[Pattern], js.Array[Pattern]) => EntryFilterFunction): Self = StObject.set(x, "getFilter", js.Any.fromFunction3(value))
+      inline def setGetFilter(value: (String, js.Array[Pattern], js.Array[Pattern]) => EntryFilterFunction): Self = StObject.set(x, "getFilter", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def set_filter(value: js.Any): Self = StObject.set(x, "_filter", value.asInstanceOf[js.Any])
+      inline def set_filter(value: js.Any): Self = StObject.set(x, "_filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_getEntryLevel(value: js.Any): Self = StObject.set(x, "_getEntryLevel", value.asInstanceOf[js.Any])
+      inline def set_getEntryLevel(value: js.Any): Self = StObject.set(x, "_getEntryLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_getMatcher(value: js.Any): Self = StObject.set(x, "_getMatcher", value.asInstanceOf[js.Any])
+      inline def set_getMatcher(value: js.Any): Self = StObject.set(x, "_getMatcher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_getNegativePatternsRe(value: js.Any): Self = StObject.set(x, "_getNegativePatternsRe", value.asInstanceOf[js.Any])
+      inline def set_getNegativePatternsRe(value: js.Any): Self = StObject.set(x, "_getNegativePatternsRe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_isSkippedByDeep(value: js.Any): Self = StObject.set(x, "_isSkippedByDeep", value.asInstanceOf[js.Any])
+      inline def set_isSkippedByDeep(value: js.Any): Self = StObject.set(x, "_isSkippedByDeep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_isSkippedByNegativePatterns(value: js.Any): Self = StObject.set(x, "_isSkippedByNegativePatterns", value.asInstanceOf[js.Any])
+      inline def set_isSkippedByNegativePatterns(value: js.Any): Self = StObject.set(x, "_isSkippedByNegativePatterns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_isSkippedByPositivePatterns(value: js.Any): Self = StObject.set(x, "_isSkippedByPositivePatterns", value.asInstanceOf[js.Any])
+      inline def set_isSkippedByPositivePatterns(value: js.Any): Self = StObject.set(x, "_isSkippedByPositivePatterns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_isSkippedSymbolicLink(value: js.Any): Self = StObject.set(x, "_isSkippedSymbolicLink", value.asInstanceOf[js.Any])
+      inline def set_isSkippedSymbolicLink(value: js.Any): Self = StObject.set(x, "_isSkippedSymbolicLink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_micromatchOptions(value: js.Any): Self = StObject.set(x, "_micromatchOptions", value.asInstanceOf[js.Any])
+      inline def set_micromatchOptions(value: js.Any): Self = StObject.set(x, "_micromatchOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_settings(value: js.Any): Self = StObject.set(x, "_settings", value.asInstanceOf[js.Any])
+      inline def set_settings(value: js.Any): Self = StObject.set(x, "_settings", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -18,19 +18,15 @@ trait EncryptionConfig extends StObject {
 }
 object EncryptionConfig {
   
-  @scala.inline
-  def apply(KMSKeyArn: KMSKeyArn, RoleArn: Arn): EncryptionConfig = {
+  inline def apply(KMSKeyArn: KMSKeyArn, RoleArn: Arn): EncryptionConfig = {
     val __obj = js.Dynamic.literal(KMSKeyArn = KMSKeyArn.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[EncryptionConfig]
   }
   
-  @scala.inline
-  implicit class EncryptionConfigMutableBuilder[Self <: EncryptionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: EncryptionConfig](x: Self) {
     
-    @scala.inline
-    def setKMSKeyArn(value: KMSKeyArn): Self = StObject.set(x, "KMSKeyArn", value.asInstanceOf[js.Any])
+    inline def setKMSKeyArn(value: KMSKeyArn): Self = StObject.set(x, "KMSKeyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: Arn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: Arn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
   }
 }

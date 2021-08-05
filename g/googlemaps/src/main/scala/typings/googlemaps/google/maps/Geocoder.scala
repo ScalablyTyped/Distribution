@@ -14,19 +14,16 @@ trait Geocoder extends StObject {
 }
 object Geocoder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     geocode: (GeocoderRequest, js.Function2[/* results */ js.Array[GeocoderResult], /* status */ GeocoderStatus, Unit]) => Unit
   ): Geocoder = {
     val __obj = js.Dynamic.literal(geocode = js.Any.fromFunction2(geocode))
     __obj.asInstanceOf[Geocoder]
   }
   
-  @scala.inline
-  implicit class GeocoderMutableBuilder[Self <: Geocoder] (val x: Self) extends AnyVal {
+  extension [Self <: Geocoder](x: Self) {
     
-    @scala.inline
-    def setGeocode(
+    inline def setGeocode(
       value: (GeocoderRequest, js.Function2[/* results */ js.Array[GeocoderResult], /* status */ GeocoderStatus, Unit]) => Unit
     ): Self = StObject.set(x, "geocode", js.Any.fromFunction2(value))
   }

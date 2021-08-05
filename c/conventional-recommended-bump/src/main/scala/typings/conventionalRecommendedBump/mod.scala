@@ -20,8 +20,7 @@ object mod {
     *                 * `whatBump`
     * @param callback
     */
-  @scala.inline
-  def apply(options: Options, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(options: Options, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     *
     * @param options    `options` is an object with the following properties:
@@ -34,8 +33,7 @@ object mod {
     *                   documentation for available options.
     * @param callback
     */
-  @scala.inline
-  def apply(options: Options, parserOpts: typings.conventionalCommitsParser.mod.Options, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(options: Options, parserOpts: typings.conventionalCommitsParser.mod.Options, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("conventional-recommended-bump", JSImport.Namespace)
   @js.native
@@ -63,20 +61,16 @@ object mod {
     }
     object Recommendation {
       
-      @scala.inline
-      def apply(): Recommendation = {
+      inline def apply(): Recommendation = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Recommendation]
       }
       
-      @scala.inline
-      implicit class RecommendationMutableBuilder[Self <: Recommendation] (val x: Self) extends AnyVal {
+      extension [Self <: Recommendation](x: Self) {
         
-        @scala.inline
-        def setReleaseType(value: ReleaseType): Self = StObject.set(x, "releaseType", value.asInstanceOf[js.Any])
+        inline def setReleaseType(value: ReleaseType): Self = StObject.set(x, "releaseType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReleaseTypeUndefined: Self = StObject.set(x, "releaseType", js.undefined)
+        inline def setReleaseTypeUndefined: Self = StObject.set(x, "releaseType", js.undefined)
       }
       
       /* Rewritten from type alias, can be one of: 
@@ -87,14 +81,11 @@ object mod {
       trait ReleaseType extends StObject
       object ReleaseType {
         
-        @scala.inline
-        def major: typings.conventionalRecommendedBump.conventionalRecommendedBumpStrings.major = "major".asInstanceOf[typings.conventionalRecommendedBump.conventionalRecommendedBumpStrings.major]
+        inline def major: typings.conventionalRecommendedBump.conventionalRecommendedBumpStrings.major = "major".asInstanceOf[typings.conventionalRecommendedBump.conventionalRecommendedBumpStrings.major]
         
-        @scala.inline
-        def minor: typings.conventionalRecommendedBump.conventionalRecommendedBumpStrings.minor = "minor".asInstanceOf[typings.conventionalRecommendedBump.conventionalRecommendedBumpStrings.minor]
+        inline def minor: typings.conventionalRecommendedBump.conventionalRecommendedBumpStrings.minor = "minor".asInstanceOf[typings.conventionalRecommendedBump.conventionalRecommendedBumpStrings.minor]
         
-        @scala.inline
-        def patch: typings.conventionalRecommendedBump.conventionalRecommendedBumpStrings.patch = "patch".asInstanceOf[typings.conventionalRecommendedBump.conventionalRecommendedBumpStrings.patch]
+        inline def patch: typings.conventionalRecommendedBump.conventionalRecommendedBumpStrings.patch = "patch".asInstanceOf[typings.conventionalRecommendedBump.conventionalRecommendedBumpStrings.patch]
       }
     }
   }
@@ -186,52 +177,38 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setConfig(
+      inline def setConfig(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CoreOptions.Config<Commit, WriterContext> */ js.Any
       ): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+      inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
       
-      @scala.inline
-      def setIgnoreReverted(value: Boolean): Self = StObject.set(x, "ignoreReverted", value.asInstanceOf[js.Any])
+      inline def setIgnoreReverted(value: Boolean): Self = StObject.set(x, "ignoreReverted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreRevertedUndefined: Self = StObject.set(x, "ignoreReverted", js.undefined)
+      inline def setIgnoreRevertedUndefined: Self = StObject.set(x, "ignoreReverted", js.undefined)
       
-      @scala.inline
-      def setLernaPackage(value: String): Self = StObject.set(x, "lernaPackage", value.asInstanceOf[js.Any])
+      inline def setLernaPackage(value: String): Self = StObject.set(x, "lernaPackage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLernaPackageUndefined: Self = StObject.set(x, "lernaPackage", js.undefined)
+      inline def setLernaPackageUndefined: Self = StObject.set(x, "lernaPackage", js.undefined)
       
-      @scala.inline
-      def setPreset(value: String): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
+      inline def setPreset(value: String): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
+      inline def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
       
-      @scala.inline
-      def setTagPrefix(value: String): Self = StObject.set(x, "tagPrefix", value.asInstanceOf[js.Any])
+      inline def setTagPrefix(value: String): Self = StObject.set(x, "tagPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagPrefixUndefined: Self = StObject.set(x, "tagPrefix", js.undefined)
+      inline def setTagPrefixUndefined: Self = StObject.set(x, "tagPrefix", js.undefined)
       
-      @scala.inline
-      def setWhatBump(value: /* commits */ js.Array[Commit[String | Double | js.Symbol]] => Result): Self = StObject.set(x, "whatBump", js.Any.fromFunction1(value))
+      inline def setWhatBump(value: /* commits */ js.Array[Commit[String | Double | js.Symbol]] => Result): Self = StObject.set(x, "whatBump", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWhatBumpUndefined: Self = StObject.set(x, "whatBump", js.undefined)
+      inline def setWhatBumpUndefined: Self = StObject.set(x, "whatBump", js.undefined)
     }
     
     object WhatBump {
@@ -244,26 +221,20 @@ object mod {
       }
       object Result {
         
-        @scala.inline
-        def apply(): Result = {
+        inline def apply(): Result = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[Result]
         }
         
-        @scala.inline
-        implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+        extension [Self <: Result](x: Self) {
           
-          @scala.inline
-          def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+          inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+          inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
           
-          @scala.inline
-          def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+          inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+          inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
         }
       }
     }

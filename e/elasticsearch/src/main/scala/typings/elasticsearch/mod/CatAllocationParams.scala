@@ -14,28 +14,21 @@ trait CatAllocationParams
 }
 object CatAllocationParams {
   
-  @scala.inline
-  def apply(format: String): CatAllocationParams = {
+  inline def apply(format: String): CatAllocationParams = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
     __obj.asInstanceOf[CatAllocationParams]
   }
   
-  @scala.inline
-  implicit class CatAllocationParamsMutableBuilder[Self <: CatAllocationParams] (val x: Self) extends AnyVal {
+  extension [Self <: CatAllocationParams](x: Self) {
     
-    @scala.inline
-    def setBytes(value: CatBytes): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
+    inline def setBytes(value: CatBytes): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesUndefined: Self = StObject.set(x, "bytes", js.undefined)
+    inline def setBytesUndefined: Self = StObject.set(x, "bytes", js.undefined)
     
-    @scala.inline
-    def setNodeId(value: NameList): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NameList): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
+    inline def setNodeIdUndefined: Self = StObject.set(x, "nodeId", js.undefined)
     
-    @scala.inline
-    def setNodeIdVarargs(value: String*): Self = StObject.set(x, "nodeId", js.Array(value :_*))
+    inline def setNodeIdVarargs(value: String*): Self = StObject.set(x, "nodeId", js.Array(value :_*))
   }
 }

@@ -13,20 +13,16 @@ trait ReturnStatement
 }
 object ReturnStatement {
   
-  @scala.inline
-  def apply(arguments: js.Array[Expression]): ReturnStatement = {
+  inline def apply(arguments: js.Array[Expression]): ReturnStatement = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ReturnStatement")
     __obj.asInstanceOf[ReturnStatement]
   }
   
-  @scala.inline
-  implicit class ReturnStatementMutableBuilder[Self <: ReturnStatement] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnStatement](x: Self) {
     
-    @scala.inline
-    def setArguments(value: js.Array[Expression]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: js.Array[Expression]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgumentsVarargs(value: Expression*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+    inline def setArgumentsVarargs(value: Expression*): Self = StObject.set(x, "arguments", js.Array(value :_*))
   }
 }

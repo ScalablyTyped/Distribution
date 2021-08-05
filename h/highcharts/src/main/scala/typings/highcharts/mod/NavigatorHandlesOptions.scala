@@ -54,58 +54,41 @@ trait NavigatorHandlesOptions extends StObject {
 }
 object NavigatorHandlesOptions {
   
-  @scala.inline
-  def apply(): NavigatorHandlesOptions = {
+  inline def apply(): NavigatorHandlesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigatorHandlesOptions]
   }
   
-  @scala.inline
-  implicit class NavigatorHandlesOptionsMutableBuilder[Self <: NavigatorHandlesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NavigatorHandlesOptions](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setBorderColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+    inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setLineWidth(value: js.Object): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    inline def setLineWidth(value: js.Object): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
+    inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
     
-    @scala.inline
-    def setSymbols(value: js.Array[String]): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
+    inline def setSymbols(value: js.Array[String]): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolsUndefined: Self = StObject.set(x, "symbols", js.undefined)
+    inline def setSymbolsUndefined: Self = StObject.set(x, "symbols", js.undefined)
     
-    @scala.inline
-    def setSymbolsVarargs(value: String*): Self = StObject.set(x, "symbols", js.Array(value :_*))
+    inline def setSymbolsVarargs(value: String*): Self = StObject.set(x, "symbols", js.Array(value :_*))
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

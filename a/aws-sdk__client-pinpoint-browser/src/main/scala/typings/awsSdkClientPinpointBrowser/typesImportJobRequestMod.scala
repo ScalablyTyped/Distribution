@@ -55,62 +55,44 @@ object typesImportJobRequestMod {
   }
   object ImportJobRequest {
     
-    @scala.inline
-    def apply(): ImportJobRequest = {
+    inline def apply(): ImportJobRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ImportJobRequest]
     }
     
-    @scala.inline
-    implicit class ImportJobRequestMutableBuilder[Self <: ImportJobRequest] (val x: Self) extends AnyVal {
+    extension [Self <: ImportJobRequest](x: Self) {
       
-      @scala.inline
-      def setDefineSegment(value: Boolean): Self = StObject.set(x, "DefineSegment", value.asInstanceOf[js.Any])
+      inline def setDefineSegment(value: Boolean): Self = StObject.set(x, "DefineSegment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefineSegmentUndefined: Self = StObject.set(x, "DefineSegment", js.undefined)
+      inline def setDefineSegmentUndefined: Self = StObject.set(x, "DefineSegment", js.undefined)
       
-      @scala.inline
-      def setExternalId(value: String): Self = StObject.set(x, "ExternalId", value.asInstanceOf[js.Any])
+      inline def setExternalId(value: String): Self = StObject.set(x, "ExternalId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternalIdUndefined: Self = StObject.set(x, "ExternalId", js.undefined)
+      inline def setExternalIdUndefined: Self = StObject.set(x, "ExternalId", js.undefined)
       
-      @scala.inline
-      def setFormat(value: CSV | JSON | String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: CSV | JSON | String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
       
-      @scala.inline
-      def setRegisterEndpoints(value: Boolean): Self = StObject.set(x, "RegisterEndpoints", value.asInstanceOf[js.Any])
+      inline def setRegisterEndpoints(value: Boolean): Self = StObject.set(x, "RegisterEndpoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegisterEndpointsUndefined: Self = StObject.set(x, "RegisterEndpoints", js.undefined)
+      inline def setRegisterEndpointsUndefined: Self = StObject.set(x, "RegisterEndpoints", js.undefined)
       
-      @scala.inline
-      def setRoleArn(value: String): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: String): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
+      inline def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
       
-      @scala.inline
-      def setS3Url(value: String): Self = StObject.set(x, "S3Url", value.asInstanceOf[js.Any])
+      inline def setS3Url(value: String): Self = StObject.set(x, "S3Url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3UrlUndefined: Self = StObject.set(x, "S3Url", js.undefined)
+      inline def setS3UrlUndefined: Self = StObject.set(x, "S3Url", js.undefined)
       
-      @scala.inline
-      def setSegmentId(value: String): Self = StObject.set(x, "SegmentId", value.asInstanceOf[js.Any])
+      inline def setSegmentId(value: String): Self = StObject.set(x, "SegmentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegmentIdUndefined: Self = StObject.set(x, "SegmentId", js.undefined)
+      inline def setSegmentIdUndefined: Self = StObject.set(x, "SegmentId", js.undefined)
       
-      @scala.inline
-      def setSegmentName(value: String): Self = StObject.set(x, "SegmentName", value.asInstanceOf[js.Any])
+      inline def setSegmentName(value: String): Self = StObject.set(x, "SegmentName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSegmentNameUndefined: Self = StObject.set(x, "SegmentName", js.undefined)
+      inline def setSegmentNameUndefined: Self = StObject.set(x, "SegmentName", js.undefined)
     }
   }
   

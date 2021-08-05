@@ -23,22 +23,17 @@ trait dxSchedulerTimeZone extends StObject {
 }
 object dxSchedulerTimeZone {
   
-  @scala.inline
-  def apply(id: String, offset: Double, title: String): dxSchedulerTimeZone = {
+  inline def apply(id: String, offset: Double, title: String): dxSchedulerTimeZone = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[dxSchedulerTimeZone]
   }
   
-  @scala.inline
-  implicit class dxSchedulerTimeZoneMutableBuilder[Self <: dxSchedulerTimeZone] (val x: Self) extends AnyVal {
+  extension [Self <: dxSchedulerTimeZone](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

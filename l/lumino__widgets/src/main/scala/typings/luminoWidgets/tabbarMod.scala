@@ -41,7 +41,7 @@ object tabbarMod {
       * This method accounts for the tab bar's insertion behavior when
       * adjusting the current index and emitting the changed signal.
       */
-    var _adjustCurrentForInsert: js.Any = js.native
+    /* private */ var _adjustCurrentForInsert: js.Any = js.native
     
     /**
       * Adjust the current index for a tab move operation.
@@ -49,7 +49,7 @@ object tabbarMod {
       * This method will not cause the actual current tab to change.
       * It silently adjusts the index to account for the given move.
       */
-    var _adjustCurrentForMove: js.Any = js.native
+    /* private */ var _adjustCurrentForMove: js.Any = js.native
     
     /**
       * Adjust the current index for a tab remove operation.
@@ -57,64 +57,64 @@ object tabbarMod {
       * This method accounts for the tab bar's remove behavior when
       * adjusting the current index and emitting the changed signal.
       */
-    var _adjustCurrentForRemove: js.Any = js.native
+    /* private */ var _adjustCurrentForRemove: js.Any = js.native
     
-    var _currentChanged: js.Any = js.native
+    /* private */ var _currentChanged: js.Any = js.native
     
-    var _currentIndex: js.Any = js.native
+    /* private */ var _currentIndex: js.Any = js.native
     
-    var _dragData: js.Any = js.native
+    /* private */ var _dragData: js.Any = js.native
     
     /**
       * Handle the `'dblclick'` event for the tab bar.
       */
-    var _evtDblClick: js.Any = js.native
+    /* private */ var _evtDblClick: js.Any = js.native
     
     /**
       * Handle the `'keydown'` event for the tab bar.
       */
-    var _evtKeyDown: js.Any = js.native
+    /* private */ var _evtKeyDown: js.Any = js.native
     
     /**
       * Handle the `'mousedown'` event for the tab bar.
       */
-    var _evtMouseDown: js.Any = js.native
+    /* private */ var _evtMouseDown: js.Any = js.native
     
     /**
       * Handle the `'mousemove'` event for the tab bar.
       */
-    var _evtMouseMove: js.Any = js.native
+    /* private */ var _evtMouseMove: js.Any = js.native
     
     /**
       * Handle the `'mouseup'` event for the document.
       */
-    var _evtMouseUp: js.Any = js.native
+    /* private */ var _evtMouseUp: js.Any = js.native
     
     /**
       * Handle the `changed` signal of a title object.
       */
-    var _onTitleChanged: js.Any = js.native
+    /* private */ var _onTitleChanged: js.Any = js.native
     
-    var _orientation: js.Any = js.native
+    /* private */ var _orientation: js.Any = js.native
     
-    var _previousTitle: js.Any = js.native
+    /* private */ var _previousTitle: js.Any = js.native
     
     /**
       * Release the mouse and restore the non-dragged tab positions.
       */
-    var _releaseMouse: js.Any = js.native
+    /* private */ var _releaseMouse: js.Any = js.native
     
-    var _tabActivateRequested: js.Any = js.native
+    /* private */ var _tabActivateRequested: js.Any = js.native
     
-    var _tabCloseRequested: js.Any = js.native
+    /* private */ var _tabCloseRequested: js.Any = js.native
     
-    var _tabDetachRequested: js.Any = js.native
+    /* private */ var _tabDetachRequested: js.Any = js.native
     
-    var _tabMoved: js.Any = js.native
+    /* private */ var _tabMoved: js.Any = js.native
     
-    var _titles: js.Any = js.native
+    /* private */ var _titles: js.Any = js.native
     
-    var _titlesEditable: js.Any = js.native
+    /* private */ var _titlesEditable: js.Any = js.native
     
     /**
       * Add a tab to the end of the tab bar.
@@ -366,9 +366,9 @@ object tabbarMod {
       extends StObject
          with IRenderer[js.Any] {
       
-      var _tabID: js.Any = js.native
+      /* private */ var _tabID: js.Any = js.native
       
-      var _tabKeys: js.Any = js.native
+      /* private */ var _tabKeys: js.Any = js.native
       
       /**
         * A selector which matches the close icon node in a tab.
@@ -498,32 +498,24 @@ object tabbarMod {
     }
     object ICurrentChangedArgs {
       
-      @scala.inline
-      def apply[T](currentIndex: Double, previousIndex: Double): ICurrentChangedArgs[T] = {
+      inline def apply[T](currentIndex: Double, previousIndex: Double): ICurrentChangedArgs[T] = {
         val __obj = js.Dynamic.literal(currentIndex = currentIndex.asInstanceOf[js.Any], previousIndex = previousIndex.asInstanceOf[js.Any], currentTitle = null, previousTitle = null)
         __obj.asInstanceOf[ICurrentChangedArgs[T]]
       }
       
-      @scala.inline
-      implicit class ICurrentChangedArgsMutableBuilder[Self <: ICurrentChangedArgs[?], T] (val x: Self & ICurrentChangedArgs[T]) extends AnyVal {
+      extension [Self <: ICurrentChangedArgs[?], T](x: Self & ICurrentChangedArgs[T]) {
         
-        @scala.inline
-        def setCurrentIndex(value: Double): Self = StObject.set(x, "currentIndex", value.asInstanceOf[js.Any])
+        inline def setCurrentIndex(value: Double): Self = StObject.set(x, "currentIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCurrentTitle(value: Title[T]): Self = StObject.set(x, "currentTitle", value.asInstanceOf[js.Any])
+        inline def setCurrentTitle(value: Title[T]): Self = StObject.set(x, "currentTitle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCurrentTitleNull: Self = StObject.set(x, "currentTitle", null)
+        inline def setCurrentTitleNull: Self = StObject.set(x, "currentTitle", null)
         
-        @scala.inline
-        def setPreviousIndex(value: Double): Self = StObject.set(x, "previousIndex", value.asInstanceOf[js.Any])
+        inline def setPreviousIndex(value: Double): Self = StObject.set(x, "previousIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPreviousTitle(value: Title[T]): Self = StObject.set(x, "previousTitle", value.asInstanceOf[js.Any])
+        inline def setPreviousTitle(value: Title[T]): Self = StObject.set(x, "previousTitle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPreviousTitleNull: Self = StObject.set(x, "previousTitle", null)
+        inline def setPreviousTitleNull: Self = StObject.set(x, "previousTitle", null)
       }
     }
     
@@ -583,56 +575,40 @@ object tabbarMod {
     }
     object IOptions {
       
-      @scala.inline
-      def apply[T](): IOptions[T] = {
+      inline def apply[T](): IOptions[T] = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IOptions[T]]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions[?], T] (val x: Self & IOptions[T]) extends AnyVal {
+      extension [Self <: IOptions[?], T](x: Self & IOptions[T]) {
         
-        @scala.inline
-        def setAllowDeselect(value: Boolean): Self = StObject.set(x, "allowDeselect", value.asInstanceOf[js.Any])
+        inline def setAllowDeselect(value: Boolean): Self = StObject.set(x, "allowDeselect", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAllowDeselectUndefined: Self = StObject.set(x, "allowDeselect", js.undefined)
+        inline def setAllowDeselectUndefined: Self = StObject.set(x, "allowDeselect", js.undefined)
         
-        @scala.inline
-        def setInsertBehavior(value: InsertBehavior): Self = StObject.set(x, "insertBehavior", value.asInstanceOf[js.Any])
+        inline def setInsertBehavior(value: InsertBehavior): Self = StObject.set(x, "insertBehavior", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInsertBehaviorUndefined: Self = StObject.set(x, "insertBehavior", js.undefined)
+        inline def setInsertBehaviorUndefined: Self = StObject.set(x, "insertBehavior", js.undefined)
         
-        @scala.inline
-        def setOrientation(value: Orientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+        inline def setOrientation(value: Orientation): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+        inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
         
-        @scala.inline
-        def setRemoveBehavior(value: RemoveBehavior): Self = StObject.set(x, "removeBehavior", value.asInstanceOf[js.Any])
+        inline def setRemoveBehavior(value: RemoveBehavior): Self = StObject.set(x, "removeBehavior", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRemoveBehaviorUndefined: Self = StObject.set(x, "removeBehavior", js.undefined)
+        inline def setRemoveBehaviorUndefined: Self = StObject.set(x, "removeBehavior", js.undefined)
         
-        @scala.inline
-        def setRenderer(value: IRenderer[T]): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+        inline def setRenderer(value: IRenderer[T]): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+        inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
         
-        @scala.inline
-        def setTabsMovable(value: Boolean): Self = StObject.set(x, "tabsMovable", value.asInstanceOf[js.Any])
+        inline def setTabsMovable(value: Boolean): Self = StObject.set(x, "tabsMovable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTabsMovableUndefined: Self = StObject.set(x, "tabsMovable", js.undefined)
+        inline def setTabsMovableUndefined: Self = StObject.set(x, "tabsMovable", js.undefined)
         
-        @scala.inline
-        def setTitlesEditable(value: Boolean): Self = StObject.set(x, "titlesEditable", value.asInstanceOf[js.Any])
+        inline def setTitlesEditable(value: Boolean): Self = StObject.set(x, "titlesEditable", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitlesEditableUndefined: Self = StObject.set(x, "titlesEditable", js.undefined)
+        inline def setTitlesEditableUndefined: Self = StObject.set(x, "titlesEditable", js.undefined)
       }
     }
     
@@ -658,23 +634,18 @@ object tabbarMod {
     }
     object IRenderData {
       
-      @scala.inline
-      def apply[T](current: Boolean, title: Title[T], zIndex: Double): IRenderData[T] = {
+      inline def apply[T](current: Boolean, title: Title[T], zIndex: Double): IRenderData[T] = {
         val __obj = js.Dynamic.literal(current = current.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], zIndex = zIndex.asInstanceOf[js.Any])
         __obj.asInstanceOf[IRenderData[T]]
       }
       
-      @scala.inline
-      implicit class IRenderDataMutableBuilder[Self <: IRenderData[?], T] (val x: Self & IRenderData[T]) extends AnyVal {
+      extension [Self <: IRenderData[?], T](x: Self & IRenderData[T]) {
         
-        @scala.inline
-        def setCurrent(value: Boolean): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+        inline def setCurrent(value: Boolean): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitle(value: Title[T]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: Title[T]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+        inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
       }
     }
     
@@ -699,20 +670,16 @@ object tabbarMod {
     }
     object IRenderer {
       
-      @scala.inline
-      def apply[T](closeIconSelector: String, renderTab: IRenderData[T] => VirtualElement): IRenderer[T] = {
+      inline def apply[T](closeIconSelector: String, renderTab: IRenderData[T] => VirtualElement): IRenderer[T] = {
         val __obj = js.Dynamic.literal(closeIconSelector = closeIconSelector.asInstanceOf[js.Any], renderTab = js.Any.fromFunction1(renderTab))
         __obj.asInstanceOf[IRenderer[T]]
       }
       
-      @scala.inline
-      implicit class IRendererMutableBuilder[Self <: IRenderer[?], T] (val x: Self & IRenderer[T]) extends AnyVal {
+      extension [Self <: IRenderer[?], T](x: Self & IRenderer[T]) {
         
-        @scala.inline
-        def setCloseIconSelector(value: String): Self = StObject.set(x, "closeIconSelector", value.asInstanceOf[js.Any])
+        inline def setCloseIconSelector(value: String): Self = StObject.set(x, "closeIconSelector", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRenderTab(value: IRenderData[T] => VirtualElement): Self = StObject.set(x, "renderTab", js.Any.fromFunction1(value))
+        inline def setRenderTab(value: IRenderData[T] => VirtualElement): Self = StObject.set(x, "renderTab", js.Any.fromFunction1(value))
       }
     }
     
@@ -733,20 +700,16 @@ object tabbarMod {
     }
     object ITabActivateRequestedArgs {
       
-      @scala.inline
-      def apply[T](index: Double, title: Title[T]): ITabActivateRequestedArgs[T] = {
+      inline def apply[T](index: Double, title: Title[T]): ITabActivateRequestedArgs[T] = {
         val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
         __obj.asInstanceOf[ITabActivateRequestedArgs[T]]
       }
       
-      @scala.inline
-      implicit class ITabActivateRequestedArgsMutableBuilder[Self <: ITabActivateRequestedArgs[?], T] (val x: Self & ITabActivateRequestedArgs[T]) extends AnyVal {
+      extension [Self <: ITabActivateRequestedArgs[?], T](x: Self & ITabActivateRequestedArgs[T]) {
         
-        @scala.inline
-        def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+        inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitle(value: Title[T]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: Title[T]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       }
     }
     
@@ -767,20 +730,16 @@ object tabbarMod {
     }
     object ITabCloseRequestedArgs {
       
-      @scala.inline
-      def apply[T](index: Double, title: Title[T]): ITabCloseRequestedArgs[T] = {
+      inline def apply[T](index: Double, title: Title[T]): ITabCloseRequestedArgs[T] = {
         val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
         __obj.asInstanceOf[ITabCloseRequestedArgs[T]]
       }
       
-      @scala.inline
-      implicit class ITabCloseRequestedArgsMutableBuilder[Self <: ITabCloseRequestedArgs[?], T] (val x: Self & ITabCloseRequestedArgs[T]) extends AnyVal {
+      extension [Self <: ITabCloseRequestedArgs[?], T](x: Self & ITabCloseRequestedArgs[T]) {
         
-        @scala.inline
-        def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+        inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitle(value: Title[T]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: Title[T]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       }
     }
     
@@ -816,29 +775,22 @@ object tabbarMod {
     }
     object ITabDetachRequestedArgs {
       
-      @scala.inline
-      def apply[T](clientX: Double, clientY: Double, index: Double, tab: HTMLElement, title: Title[T]): ITabDetachRequestedArgs[T] = {
+      inline def apply[T](clientX: Double, clientY: Double, index: Double, tab: HTMLElement, title: Title[T]): ITabDetachRequestedArgs[T] = {
         val __obj = js.Dynamic.literal(clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], tab = tab.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
         __obj.asInstanceOf[ITabDetachRequestedArgs[T]]
       }
       
-      @scala.inline
-      implicit class ITabDetachRequestedArgsMutableBuilder[Self <: ITabDetachRequestedArgs[?], T] (val x: Self & ITabDetachRequestedArgs[T]) extends AnyVal {
+      extension [Self <: ITabDetachRequestedArgs[?], T](x: Self & ITabDetachRequestedArgs[T]) {
         
-        @scala.inline
-        def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
+        inline def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
+        inline def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+        inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTab(value: HTMLElement): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
+        inline def setTab(value: HTMLElement): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitle(value: Title[T]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: Title[T]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       }
     }
     
@@ -864,23 +816,18 @@ object tabbarMod {
     }
     object ITabMovedArgs {
       
-      @scala.inline
-      def apply[T](fromIndex: Double, title: Title[T], toIndex: Double): ITabMovedArgs[T] = {
+      inline def apply[T](fromIndex: Double, title: Title[T], toIndex: Double): ITabMovedArgs[T] = {
         val __obj = js.Dynamic.literal(fromIndex = fromIndex.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], toIndex = toIndex.asInstanceOf[js.Any])
         __obj.asInstanceOf[ITabMovedArgs[T]]
       }
       
-      @scala.inline
-      implicit class ITabMovedArgsMutableBuilder[Self <: ITabMovedArgs[?], T] (val x: Self & ITabMovedArgs[T]) extends AnyVal {
+      extension [Self <: ITabMovedArgs[?], T](x: Self & ITabMovedArgs[T]) {
         
-        @scala.inline
-        def setFromIndex(value: Double): Self = StObject.set(x, "fromIndex", value.asInstanceOf[js.Any])
+        inline def setFromIndex(value: Double): Self = StObject.set(x, "fromIndex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitle(value: Title[T]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: Title[T]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setToIndex(value: Double): Self = StObject.set(x, "toIndex", value.asInstanceOf[js.Any])
+        inline def setToIndex(value: Double): Self = StObject.set(x, "toIndex", value.asInstanceOf[js.Any])
       }
     }
     
@@ -895,14 +842,11 @@ object tabbarMod {
     trait InsertBehavior extends StObject
     object InsertBehavior {
       
-      @scala.inline
-      def none: typings.luminoWidgets.luminoWidgetsStrings.none = "none".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.none]
+      inline def none: typings.luminoWidgets.luminoWidgetsStrings.none = "none".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.none]
       
-      @scala.inline
-      def `select-tab`: typings.luminoWidgets.luminoWidgetsStrings.`select-tab` = "select-tab".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`select-tab`]
+      inline def `select-tab`: typings.luminoWidgets.luminoWidgetsStrings.`select-tab` = "select-tab".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`select-tab`]
       
-      @scala.inline
-      def `select-tab-if-needed`: typings.luminoWidgets.luminoWidgetsStrings.`select-tab-if-needed` = "select-tab-if-needed".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`select-tab-if-needed`]
+      inline def `select-tab-if-needed`: typings.luminoWidgets.luminoWidgetsStrings.`select-tab-if-needed` = "select-tab-if-needed".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`select-tab-if-needed`]
     }
     
     /**
@@ -915,11 +859,9 @@ object tabbarMod {
     trait Orientation extends StObject
     object Orientation {
       
-      @scala.inline
-      def horizontal: typings.luminoWidgets.luminoWidgetsStrings.horizontal = "horizontal".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.horizontal]
+      inline def horizontal: typings.luminoWidgets.luminoWidgetsStrings.horizontal = "horizontal".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.horizontal]
       
-      @scala.inline
-      def vertical: typings.luminoWidgets.luminoWidgetsStrings.vertical = "vertical".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.vertical]
+      inline def vertical: typings.luminoWidgets.luminoWidgetsStrings.vertical = "vertical".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.vertical]
     }
     
     /**
@@ -934,17 +876,13 @@ object tabbarMod {
     trait RemoveBehavior extends StObject
     object RemoveBehavior {
       
-      @scala.inline
-      def none: typings.luminoWidgets.luminoWidgetsStrings.none = "none".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.none]
+      inline def none: typings.luminoWidgets.luminoWidgetsStrings.none = "none".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.none]
       
-      @scala.inline
-      def `select-previous-tab`: typings.luminoWidgets.luminoWidgetsStrings.`select-previous-tab` = "select-previous-tab".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`select-previous-tab`]
+      inline def `select-previous-tab`: typings.luminoWidgets.luminoWidgetsStrings.`select-previous-tab` = "select-previous-tab".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`select-previous-tab`]
       
-      @scala.inline
-      def `select-tab-after`: typings.luminoWidgets.luminoWidgetsStrings.`select-tab-after` = "select-tab-after".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`select-tab-after`]
+      inline def `select-tab-after`: typings.luminoWidgets.luminoWidgetsStrings.`select-tab-after` = "select-tab-after".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`select-tab-after`]
       
-      @scala.inline
-      def `select-tab-before`: typings.luminoWidgets.luminoWidgetsStrings.`select-tab-before` = "select-tab-before".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`select-tab-before`]
+      inline def `select-tab-before`: typings.luminoWidgets.luminoWidgetsStrings.`select-tab-before` = "select-tab-before".asInstanceOf[typings.luminoWidgets.luminoWidgetsStrings.`select-tab-before`]
     }
   }
 }

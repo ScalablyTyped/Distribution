@@ -30,25 +30,19 @@ trait ProxyAuthorization extends StObject {
 }
 object ProxyAuthorization {
   
-  @scala.inline
-  def apply(authorizationUrl: String, clientId: String, identity: IdentityDescriptor, publicKey: PublicKey): ProxyAuthorization = {
+  inline def apply(authorizationUrl: String, clientId: String, identity: IdentityDescriptor, publicKey: PublicKey): ProxyAuthorization = {
     val __obj = js.Dynamic.literal(authorizationUrl = authorizationUrl.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], identity = identity.asInstanceOf[js.Any], publicKey = publicKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProxyAuthorization]
   }
   
-  @scala.inline
-  implicit class ProxyAuthorizationMutableBuilder[Self <: ProxyAuthorization] (val x: Self) extends AnyVal {
+  extension [Self <: ProxyAuthorization](x: Self) {
     
-    @scala.inline
-    def setAuthorizationUrl(value: String): Self = StObject.set(x, "authorizationUrl", value.asInstanceOf[js.Any])
+    inline def setAuthorizationUrl(value: String): Self = StObject.set(x, "authorizationUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentity(value: IdentityDescriptor): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+    inline def setIdentity(value: IdentityDescriptor): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKey(value: PublicKey): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
+    inline def setPublicKey(value: PublicKey): Self = StObject.set(x, "publicKey", value.asInstanceOf[js.Any])
   }
 }

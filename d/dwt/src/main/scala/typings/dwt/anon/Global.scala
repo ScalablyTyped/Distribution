@@ -24,61 +24,43 @@ trait Global extends StObject {
 }
 object Global {
   
-  @scala.inline
-  def apply(): Global = {
+  inline def apply(): Global = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Global]
   }
   
-  @scala.inline
-  implicit class GlobalMutableBuilder[Self <: Global] (val x: Self) extends AnyVal {
+  extension [Self <: Global](x: Self) {
     
-    @scala.inline
-    def setGlobal(value: Location): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+    inline def setGlobal(value: Location): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
+    inline def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
     
-    @scala.inline
-    def setPager(value: Location): Self = StObject.set(x, "pager", value.asInstanceOf[js.Any])
+    inline def setPager(value: Location): Self = StObject.set(x, "pager", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagerUndefined: Self = StObject.set(x, "pager", js.undefined)
+    inline def setPagerUndefined: Self = StObject.set(x, "pager", js.undefined)
     
-    @scala.inline
-    def setTabName(value: Location): Self = StObject.set(x, "tabName", value.asInstanceOf[js.Any])
+    inline def setTabName(value: Location): Self = StObject.set(x, "tabName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabNameUndefined: Self = StObject.set(x, "tabName", js.undefined)
+    inline def setTabNameUndefined: Self = StObject.set(x, "tabName", js.undefined)
     
-    @scala.inline
-    def setTopMenuRight(value: Location): Self = StObject.set(x, "topMenuRight", value.asInstanceOf[js.Any])
+    inline def setTopMenuRight(value: Location): Self = StObject.set(x, "topMenuRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopMenuRightUndefined: Self = StObject.set(x, "topMenuRight", js.undefined)
+    inline def setTopMenuRightUndefined: Self = StObject.set(x, "topMenuRight", js.undefined)
     
-    @scala.inline
-    def setViewChange(value: Location): Self = StObject.set(x, "viewChange", value.asInstanceOf[js.Any])
+    inline def setViewChange(value: Location): Self = StObject.set(x, "viewChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewChangeUndefined: Self = StObject.set(x, "viewChange", js.undefined)
+    inline def setViewChangeUndefined: Self = StObject.set(x, "viewChange", js.undefined)
     
-    @scala.inline
-    def setViewMenu(value: Location): Self = StObject.set(x, "viewMenu", value.asInstanceOf[js.Any])
+    inline def setViewMenu(value: Location): Self = StObject.set(x, "viewMenu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewMenuBlock(value: Location): Self = StObject.set(x, "viewMenuBlock", value.asInstanceOf[js.Any])
+    inline def setViewMenuBlock(value: Location): Self = StObject.set(x, "viewMenuBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewMenuBlockUndefined: Self = StObject.set(x, "viewMenuBlock", js.undefined)
+    inline def setViewMenuBlockUndefined: Self = StObject.set(x, "viewMenuBlock", js.undefined)
     
-    @scala.inline
-    def setViewMenuUndefined: Self = StObject.set(x, "viewMenu", js.undefined)
+    inline def setViewMenuUndefined: Self = StObject.set(x, "viewMenu", js.undefined)
     
-    @scala.inline
-    def setViewerCorner(value: Location): Self = StObject.set(x, "viewerCorner", value.asInstanceOf[js.Any])
+    inline def setViewerCorner(value: Location): Self = StObject.set(x, "viewerCorner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewerCornerUndefined: Self = StObject.set(x, "viewerCorner", js.undefined)
+    inline def setViewerCornerUndefined: Self = StObject.set(x, "viewerCorner", js.undefined)
   }
 }

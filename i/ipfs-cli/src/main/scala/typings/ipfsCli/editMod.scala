@@ -18,6 +18,5 @@ object editMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(argv: js.Any): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(argv.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(argv: js.Any): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(argv.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

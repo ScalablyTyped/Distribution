@@ -20,46 +20,33 @@ trait InsightsServiceAccountResponseNodesItem extends StObject {
 }
 object InsightsServiceAccountResponseNodesItem {
   
-  @scala.inline
-  def apply(): InsightsServiceAccountResponseNodesItem = {
+  inline def apply(): InsightsServiceAccountResponseNodesItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InsightsServiceAccountResponseNodesItem]
   }
   
-  @scala.inline
-  implicit class InsightsServiceAccountResponseNodesItemMutableBuilder[Self <: InsightsServiceAccountResponseNodesItem] (val x: Self) extends AnyVal {
+  extension [Self <: InsightsServiceAccountResponseNodesItem](x: Self) {
     
-    @scala.inline
-    def setData_points(value: js.Array[InsightsServiceAccountResponseDataPointsItem]): Self = StObject.set(x, "data_points", value.asInstanceOf[js.Any])
+    inline def setData_points(value: js.Array[InsightsServiceAccountResponseDataPointsItem]): Self = StObject.set(x, "data_points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData_pointsUndefined: Self = StObject.set(x, "data_points", js.undefined)
+    inline def setData_pointsUndefined: Self = StObject.set(x, "data_points", js.undefined)
     
-    @scala.inline
-    def setData_pointsVarargs(value: InsightsServiceAccountResponseDataPointsItem*): Self = StObject.set(x, "data_points", js.Array(value :_*))
+    inline def setData_pointsVarargs(value: InsightsServiceAccountResponseDataPointsItem*): Self = StObject.set(x, "data_points", js.Array(value :_*))
     
-    @scala.inline
-    def setGraph_name(value: String): Self = StObject.set(x, "graph_name", value.asInstanceOf[js.Any])
+    inline def setGraph_name(value: String): Self = StObject.set(x, "graph_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraph_nameUndefined: Self = StObject.set(x, "graph_name", js.undefined)
+    inline def setGraph_nameUndefined: Self = StObject.set(x, "graph_name", js.undefined)
     
-    @scala.inline
-    def setOrganic(value: InsightsServiceAccountResponseOrganic): Self = StObject.set(x, "organic", value.asInstanceOf[js.Any])
+    inline def setOrganic(value: InsightsServiceAccountResponseOrganic): Self = StObject.set(x, "organic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganicUndefined: Self = StObject.set(x, "organic", js.undefined)
+    inline def setOrganicUndefined: Self = StObject.set(x, "organic", js.undefined)
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+    inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
     
-    @scala.inline
-    def set__typename(value: String): Self = StObject.set(x, "__typename", value.asInstanceOf[js.Any])
+    inline def set__typename(value: String): Self = StObject.set(x, "__typename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__typenameUndefined: Self = StObject.set(x, "__typename", js.undefined)
+    inline def set__typenameUndefined: Self = StObject.set(x, "__typename", js.undefined)
   }
 }

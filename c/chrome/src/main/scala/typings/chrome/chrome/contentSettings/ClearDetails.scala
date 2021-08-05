@@ -17,19 +17,15 @@ trait ClearDetails extends StObject {
 }
 object ClearDetails {
   
-  @scala.inline
-  def apply(): ClearDetails = {
+  inline def apply(): ClearDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClearDetails]
   }
   
-  @scala.inline
-  implicit class ClearDetailsMutableBuilder[Self <: ClearDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ClearDetails](x: Self) {
     
-    @scala.inline
-    def setScope(value: ScopeEnum): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: ScopeEnum): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
   }
 }

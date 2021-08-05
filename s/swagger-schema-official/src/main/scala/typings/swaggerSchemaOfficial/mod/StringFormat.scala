@@ -21,23 +21,18 @@ trait StringFormat
 }
 object StringFormat {
   
-  @scala.inline
-  def apply(): StringFormat = {
+  inline def apply(): StringFormat = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("string")
     __obj.asInstanceOf[StringFormat]
   }
   
-  @scala.inline
-  implicit class StringFormatMutableBuilder[Self <: StringFormat] (val x: Self) extends AnyVal {
+  extension [Self <: StringFormat](x: Self) {
     
-    @scala.inline
-    def setFormat(value: _empty | byte | binary | date | `date-time` | password): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: _empty | byte | binary | date | `date-time` | password): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setType(value: string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: string): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

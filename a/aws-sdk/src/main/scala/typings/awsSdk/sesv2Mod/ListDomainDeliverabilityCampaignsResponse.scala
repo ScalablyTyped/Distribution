@@ -18,25 +18,19 @@ trait ListDomainDeliverabilityCampaignsResponse extends StObject {
 }
 object ListDomainDeliverabilityCampaignsResponse {
   
-  @scala.inline
-  def apply(DomainDeliverabilityCampaigns: DomainDeliverabilityCampaignList): ListDomainDeliverabilityCampaignsResponse = {
+  inline def apply(DomainDeliverabilityCampaigns: DomainDeliverabilityCampaignList): ListDomainDeliverabilityCampaignsResponse = {
     val __obj = js.Dynamic.literal(DomainDeliverabilityCampaigns = DomainDeliverabilityCampaigns.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListDomainDeliverabilityCampaignsResponse]
   }
   
-  @scala.inline
-  implicit class ListDomainDeliverabilityCampaignsResponseMutableBuilder[Self <: ListDomainDeliverabilityCampaignsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListDomainDeliverabilityCampaignsResponse](x: Self) {
     
-    @scala.inline
-    def setDomainDeliverabilityCampaigns(value: DomainDeliverabilityCampaignList): Self = StObject.set(x, "DomainDeliverabilityCampaigns", value.asInstanceOf[js.Any])
+    inline def setDomainDeliverabilityCampaigns(value: DomainDeliverabilityCampaignList): Self = StObject.set(x, "DomainDeliverabilityCampaigns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainDeliverabilityCampaignsVarargs(value: DomainDeliverabilityCampaign*): Self = StObject.set(x, "DomainDeliverabilityCampaigns", js.Array(value :_*))
+    inline def setDomainDeliverabilityCampaignsVarargs(value: DomainDeliverabilityCampaign*): Self = StObject.set(x, "DomainDeliverabilityCampaigns", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -26,19 +26,16 @@ object interfacesMod {
     }
     object AuthProvider {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         getUser: (Request_[ParamsDictionary, js.Any, js.Any, Query], Response_[js.Any], NextFunction) => js.Promise[Principal]
       ): AuthProvider = {
         val __obj = js.Dynamic.literal(getUser = js.Any.fromFunction3(getUser))
         __obj.asInstanceOf[AuthProvider]
       }
       
-      @scala.inline
-      implicit class AuthProviderMutableBuilder[Self <: AuthProvider] (val x: Self) extends AnyVal {
+      extension [Self <: AuthProvider](x: Self) {
         
-        @scala.inline
-        def setGetUser(
+        inline def setGetUser(
           value: (Request_[ParamsDictionary, js.Any, js.Any, Query], Response_[js.Any], NextFunction) => js.Promise[Principal]
         ): Self = StObject.set(x, "getUser", js.Any.fromFunction3(value))
       }
@@ -58,26 +55,20 @@ object interfacesMod {
     }
     object ControllerMetadata {
       
-      @scala.inline
-      def apply(middleware: js.Array[Middleware], path: String, target: js.Any): ControllerMetadata = {
+      inline def apply(middleware: js.Array[Middleware], path: String, target: js.Any): ControllerMetadata = {
         val __obj = js.Dynamic.literal(middleware = middleware.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
         __obj.asInstanceOf[ControllerMetadata]
       }
       
-      @scala.inline
-      implicit class ControllerMetadataMutableBuilder[Self <: ControllerMetadata] (val x: Self) extends AnyVal {
+      extension [Self <: ControllerMetadata](x: Self) {
         
-        @scala.inline
-        def setMiddleware(value: js.Array[Middleware]): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
+        inline def setMiddleware(value: js.Array[Middleware]): Self = StObject.set(x, "middleware", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMiddlewareVarargs(value: Middleware*): Self = StObject.set(x, "middleware", js.Array(value :_*))
+        inline def setMiddlewareVarargs(value: Middleware*): Self = StObject.set(x, "middleware", js.Array(value :_*))
         
-        @scala.inline
-        def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+        inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       }
     }
     
@@ -91,20 +82,16 @@ object interfacesMod {
     }
     object ControllerMethodMetadata {
       
-      @scala.inline
-      def apply(key: String, method: String, middleware: js.Array[Middleware], path: String, target: js.Any): ControllerMethodMetadata = {
+      inline def apply(key: String, method: String, middleware: js.Array[Middleware], path: String, target: js.Any): ControllerMethodMetadata = {
         val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], middleware = middleware.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
         __obj.asInstanceOf[ControllerMethodMetadata]
       }
       
-      @scala.inline
-      implicit class ControllerMethodMetadataMutableBuilder[Self <: ControllerMethodMetadata] (val x: Self) extends AnyVal {
+      extension [Self <: ControllerMethodMetadata](x: Self) {
         
-        @scala.inline
-        def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+        inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       }
     }
     
@@ -124,8 +111,7 @@ object interfacesMod {
     }
     object HttpContext {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         container: Container,
         request: Request_[ParamsDictionary, js.Any, js.Any, Query],
         response: Response_[js.Any],
@@ -135,20 +121,15 @@ object interfacesMod {
         __obj.asInstanceOf[HttpContext]
       }
       
-      @scala.inline
-      implicit class HttpContextMutableBuilder[Self <: HttpContext] (val x: Self) extends AnyVal {
+      extension [Self <: HttpContext](x: Self) {
         
-        @scala.inline
-        def setContainer(value: Container): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+        inline def setContainer(value: Container): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRequest(value: Request_[ParamsDictionary, js.Any, js.Any, Query]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+        inline def setRequest(value: Request_[ParamsDictionary, js.Any, js.Any, Query]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResponse(value: Response_[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+        inline def setResponse(value: Response_[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUser(value: Principal): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+        inline def setUser(value: Principal): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       }
     }
     
@@ -158,17 +139,14 @@ object interfacesMod {
     }
     object IHttpActionResult {
       
-      @scala.inline
-      def apply(executeAsync: () => js.Promise[HttpResponseMessage]): IHttpActionResult = {
+      inline def apply(executeAsync: () => js.Promise[HttpResponseMessage]): IHttpActionResult = {
         val __obj = js.Dynamic.literal(executeAsync = js.Any.fromFunction0(executeAsync))
         __obj.asInstanceOf[IHttpActionResult]
       }
       
-      @scala.inline
-      implicit class IHttpActionResultMutableBuilder[Self <: IHttpActionResult] (val x: Self) extends AnyVal {
+      extension [Self <: IHttpActionResult](x: Self) {
         
-        @scala.inline
-        def setExecuteAsync(value: () => js.Promise[HttpResponseMessage]): Self = StObject.set(x, "executeAsync", js.Any.fromFunction0(value))
+        inline def setExecuteAsync(value: () => js.Promise[HttpResponseMessage]): Self = StObject.set(x, "executeAsync", js.Any.fromFunction0(value))
       }
     }
     
@@ -186,30 +164,23 @@ object interfacesMod {
     }
     object ParameterMetadata {
       
-      @scala.inline
-      def apply(index: Double, injectRoot: Boolean, `type`: PARAMETER_TYPE): ParameterMetadata = {
+      inline def apply(index: Double, injectRoot: Boolean, `type`: PARAMETER_TYPE): ParameterMetadata = {
         val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], injectRoot = injectRoot.asInstanceOf[js.Any])
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[ParameterMetadata]
       }
       
-      @scala.inline
-      implicit class ParameterMetadataMutableBuilder[Self <: ParameterMetadata] (val x: Self) extends AnyVal {
+      extension [Self <: ParameterMetadata](x: Self) {
         
-        @scala.inline
-        def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+        inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInjectRoot(value: Boolean): Self = StObject.set(x, "injectRoot", value.asInstanceOf[js.Any])
+        inline def setInjectRoot(value: Boolean): Self = StObject.set(x, "injectRoot", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParameterName(value: String): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
+        inline def setParameterName(value: String): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParameterNameUndefined: Self = StObject.set(x, "parameterName", js.undefined)
+        inline def setParameterNameUndefined: Self = StObject.set(x, "parameterName", js.undefined)
         
-        @scala.inline
-        def setType(value: PARAMETER_TYPE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: PARAMETER_TYPE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -225,8 +196,7 @@ object interfacesMod {
     }
     object Principal {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         details: js.Any,
         isAuthenticated: () => js.Promise[Boolean],
         isInRole: String => js.Promise[Boolean],
@@ -236,20 +206,15 @@ object interfacesMod {
         __obj.asInstanceOf[Principal]
       }
       
-      @scala.inline
-      implicit class PrincipalMutableBuilder[Self <: Principal] (val x: Self) extends AnyVal {
+      extension [Self <: Principal](x: Self) {
         
-        @scala.inline
-        def setDetails(value: js.Any): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+        inline def setDetails(value: js.Any): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsAuthenticated(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isAuthenticated", js.Any.fromFunction0(value))
+        inline def setIsAuthenticated(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isAuthenticated", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setIsInRole(value: String => js.Promise[Boolean]): Self = StObject.set(x, "isInRole", js.Any.fromFunction1(value))
+        inline def setIsInRole(value: String => js.Promise[Boolean]): Self = StObject.set(x, "isInRole", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setIsResourceOwner(value: js.Any => js.Promise[Boolean]): Self = StObject.set(x, "isResourceOwner", js.Any.fromFunction1(value))
+        inline def setIsResourceOwner(value: js.Any => js.Promise[Boolean]): Self = StObject.set(x, "isResourceOwner", js.Any.fromFunction1(value))
       }
     }
     
@@ -259,17 +224,14 @@ object interfacesMod {
     }
     object RoutingConfig {
       
-      @scala.inline
-      def apply(rootPath: String): RoutingConfig = {
+      inline def apply(rootPath: String): RoutingConfig = {
         val __obj = js.Dynamic.literal(rootPath = rootPath.asInstanceOf[js.Any])
         __obj.asInstanceOf[RoutingConfig]
       }
       
-      @scala.inline
-      implicit class RoutingConfigMutableBuilder[Self <: RoutingConfig] (val x: Self) extends AnyVal {
+      extension [Self <: RoutingConfig](x: Self) {
         
-        @scala.inline
-        def setRootPath(value: String): Self = StObject.set(x, "rootPath", value.asInstanceOf[js.Any])
+        inline def setRootPath(value: String): Self = StObject.set(x, "rootPath", value.asInstanceOf[js.Any])
       }
     }
   }

@@ -33,7 +33,7 @@ object percentileIteratorMod {
   trait PercentileIterator
     extends typings.hdrHistogramJs.abstractHistogramIteratorMod.default {
     
-    var doReset: js.Any = js.native
+    /* private */ var doReset: js.Any = js.native
     
     var percentileLevelToIterateFrom: Double = js.native
     

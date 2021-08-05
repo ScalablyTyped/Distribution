@@ -8,11 +8,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   *    Get Client instance to use platform functions
   */
-@scala.inline
-def getInstance(): typings.voximplantWebsdk.mod.Client = typings.voximplantWebsdk.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[typings.voximplantWebsdk.mod.Client]
+inline def getInstance(): typings.voximplantWebsdk.mod.Client = typings.voximplantWebsdk.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[typings.voximplantWebsdk.mod.Client]
 
 /**
   *    VoxImplant Web SDK lib version
   */
-@scala.inline
-def version(): java.lang.String = typings.voximplantWebsdk.mod.^.asInstanceOf[js.Dynamic].applyDynamic("version")().asInstanceOf[java.lang.String]
+inline def version(): java.lang.String = typings.voximplantWebsdk.mod.^.asInstanceOf[js.Dynamic].applyDynamic("version")().asInstanceOf[java.lang.String]

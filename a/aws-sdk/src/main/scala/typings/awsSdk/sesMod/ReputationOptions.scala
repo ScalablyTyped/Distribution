@@ -23,31 +23,23 @@ trait ReputationOptions extends StObject {
 }
 object ReputationOptions {
   
-  @scala.inline
-  def apply(): ReputationOptions = {
+  inline def apply(): ReputationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReputationOptions]
   }
   
-  @scala.inline
-  implicit class ReputationOptionsMutableBuilder[Self <: ReputationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReputationOptions](x: Self) {
     
-    @scala.inline
-    def setLastFreshStart(value: LastFreshStart): Self = StObject.set(x, "LastFreshStart", value.asInstanceOf[js.Any])
+    inline def setLastFreshStart(value: LastFreshStart): Self = StObject.set(x, "LastFreshStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastFreshStartUndefined: Self = StObject.set(x, "LastFreshStart", js.undefined)
+    inline def setLastFreshStartUndefined: Self = StObject.set(x, "LastFreshStart", js.undefined)
     
-    @scala.inline
-    def setReputationMetricsEnabled(value: Enabled): Self = StObject.set(x, "ReputationMetricsEnabled", value.asInstanceOf[js.Any])
+    inline def setReputationMetricsEnabled(value: Enabled): Self = StObject.set(x, "ReputationMetricsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReputationMetricsEnabledUndefined: Self = StObject.set(x, "ReputationMetricsEnabled", js.undefined)
+    inline def setReputationMetricsEnabledUndefined: Self = StObject.set(x, "ReputationMetricsEnabled", js.undefined)
     
-    @scala.inline
-    def setSendingEnabled(value: Enabled): Self = StObject.set(x, "SendingEnabled", value.asInstanceOf[js.Any])
+    inline def setSendingEnabled(value: Enabled): Self = StObject.set(x, "SendingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendingEnabledUndefined: Self = StObject.set(x, "SendingEnabled", js.undefined)
+    inline def setSendingEnabledUndefined: Self = StObject.set(x, "SendingEnabled", js.undefined)
   }
 }

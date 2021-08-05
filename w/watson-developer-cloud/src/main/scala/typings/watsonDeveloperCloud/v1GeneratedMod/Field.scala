@@ -15,25 +15,19 @@ trait Field extends StObject {
 }
 object Field {
   
-  @scala.inline
-  def apply(): Field = {
+  inline def apply(): Field = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Field]
   }
   
-  @scala.inline
-  implicit class FieldMutableBuilder[Self <: Field] (val x: Self) extends AnyVal {
+  extension [Self <: Field](x: Self) {
     
-    @scala.inline
-    def setField_name(value: String): Self = StObject.set(x, "field_name", value.asInstanceOf[js.Any])
+    inline def setField_name(value: String): Self = StObject.set(x, "field_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setField_nameUndefined: Self = StObject.set(x, "field_name", js.undefined)
+    inline def setField_nameUndefined: Self = StObject.set(x, "field_name", js.undefined)
     
-    @scala.inline
-    def setField_type(value: String): Self = StObject.set(x, "field_type", value.asInstanceOf[js.Any])
+    inline def setField_type(value: String): Self = StObject.set(x, "field_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setField_typeUndefined: Self = StObject.set(x, "field_type", js.undefined)
+    inline def setField_typeUndefined: Self = StObject.set(x, "field_type", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait RequiredProjectIntegratio extends StObject {
 }
 object RequiredProjectIntegratio {
   
-  @scala.inline
-  def apply(enabled: Boolean, root: String): RequiredProjectIntegratio = {
+  inline def apply(enabled: Boolean, root: String): RequiredProjectIntegratio = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequiredProjectIntegratio]
   }
   
-  @scala.inline
-  implicit class RequiredProjectIntegratioMutableBuilder[Self <: RequiredProjectIntegratio] (val x: Self) extends AnyVal {
+  extension [Self <: RequiredProjectIntegratio](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }
 }

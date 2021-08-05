@@ -23,31 +23,23 @@ trait InstanceFleetStatus extends StObject {
 }
 object InstanceFleetStatus {
   
-  @scala.inline
-  def apply(): InstanceFleetStatus = {
+  inline def apply(): InstanceFleetStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceFleetStatus]
   }
   
-  @scala.inline
-  implicit class InstanceFleetStatusMutableBuilder[Self <: InstanceFleetStatus] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceFleetStatus](x: Self) {
     
-    @scala.inline
-    def setState(value: InstanceFleetState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: InstanceFleetState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateChangeReason(value: InstanceFleetStateChangeReason): Self = StObject.set(x, "StateChangeReason", value.asInstanceOf[js.Any])
+    inline def setStateChangeReason(value: InstanceFleetStateChangeReason): Self = StObject.set(x, "StateChangeReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateChangeReasonUndefined: Self = StObject.set(x, "StateChangeReason", js.undefined)
+    inline def setStateChangeReasonUndefined: Self = StObject.set(x, "StateChangeReason", js.undefined)
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
-    @scala.inline
-    def setTimeline(value: InstanceFleetTimeline): Self = StObject.set(x, "Timeline", value.asInstanceOf[js.Any])
+    inline def setTimeline(value: InstanceFleetTimeline): Self = StObject.set(x, "Timeline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimelineUndefined: Self = StObject.set(x, "Timeline", js.undefined)
+    inline def setTimelineUndefined: Self = StObject.set(x, "Timeline", js.undefined)
   }
 }

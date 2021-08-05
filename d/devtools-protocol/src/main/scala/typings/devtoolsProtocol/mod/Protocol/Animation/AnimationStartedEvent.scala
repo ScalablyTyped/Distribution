@@ -13,16 +13,13 @@ trait AnimationStartedEvent extends StObject {
 }
 object AnimationStartedEvent {
   
-  @scala.inline
-  def apply(animation: typings.devtoolsProtocol.mod.Protocol.Animation.Animation): AnimationStartedEvent = {
+  inline def apply(animation: typings.devtoolsProtocol.mod.Protocol.Animation.Animation): AnimationStartedEvent = {
     val __obj = js.Dynamic.literal(animation = animation.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnimationStartedEvent]
   }
   
-  @scala.inline
-  implicit class AnimationStartedEventMutableBuilder[Self <: AnimationStartedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationStartedEvent](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: typings.devtoolsProtocol.mod.Protocol.Animation.Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: typings.devtoolsProtocol.mod.Protocol.Animation.Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
   }
 }

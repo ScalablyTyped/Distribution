@@ -28,37 +28,27 @@ trait BrandResourceUrls extends StObject {
 }
 object BrandResourceUrls {
   
-  @scala.inline
-  def apply(): BrandResourceUrls = {
+  inline def apply(): BrandResourceUrls = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BrandResourceUrls]
   }
   
-  @scala.inline
-  implicit class BrandResourceUrlsMutableBuilder[Self <: BrandResourceUrls] (val x: Self) extends AnyVal {
+  extension [Self <: BrandResourceUrls](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setSending(value: String): Self = StObject.set(x, "sending", value.asInstanceOf[js.Any])
+    inline def setSending(value: String): Self = StObject.set(x, "sending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendingUndefined: Self = StObject.set(x, "sending", js.undefined)
+    inline def setSendingUndefined: Self = StObject.set(x, "sending", js.undefined)
     
-    @scala.inline
-    def setSigning(value: String): Self = StObject.set(x, "signing", value.asInstanceOf[js.Any])
+    inline def setSigning(value: String): Self = StObject.set(x, "signing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigningCaptive(value: String): Self = StObject.set(x, "signingCaptive", value.asInstanceOf[js.Any])
+    inline def setSigningCaptive(value: String): Self = StObject.set(x, "signingCaptive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigningCaptiveUndefined: Self = StObject.set(x, "signingCaptive", js.undefined)
+    inline def setSigningCaptiveUndefined: Self = StObject.set(x, "signingCaptive", js.undefined)
     
-    @scala.inline
-    def setSigningUndefined: Self = StObject.set(x, "signing", js.undefined)
+    inline def setSigningUndefined: Self = StObject.set(x, "signing", js.undefined)
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SharepointListAdapterObject extends StObject {
   
-  @JSName("InfoPath.SharepointListAdapterObject_typekey")
+  /* private */ @JSName("InfoPath.SharepointListAdapterObject_typekey")
   var InfoPathDotSharepointListAdapterObject_typekey: SharepointListAdapterObject
   
   val Name: String
@@ -23,8 +23,7 @@ trait SharepointListAdapterObject extends StObject {
 }
 object SharepointListAdapterObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     InfoPathDotSharepointListAdapterObject_typekey: SharepointListAdapterObject,
     Name: String,
     Query: () => Unit,
@@ -38,28 +37,20 @@ object SharepointListAdapterObject {
     __obj.asInstanceOf[SharepointListAdapterObject]
   }
   
-  @scala.inline
-  implicit class SharepointListAdapterObjectMutableBuilder[Self <: SharepointListAdapterObject] (val x: Self) extends AnyVal {
+  extension [Self <: SharepointListAdapterObject](x: Self) {
     
-    @scala.inline
-    def setInfoPathDotSharepointListAdapterObject_typekey(value: SharepointListAdapterObject): Self = StObject.set(x, "InfoPath.SharepointListAdapterObject_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotSharepointListAdapterObject_typekey(value: SharepointListAdapterObject): Self = StObject.set(x, "InfoPath.SharepointListAdapterObject_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: () => Unit): Self = StObject.set(x, "Query", js.Any.fromFunction0(value))
+    inline def setQuery(value: () => Unit): Self = StObject.set(x, "Query", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setQueryAllowed(value: Boolean): Self = StObject.set(x, "QueryAllowed", value.asInstanceOf[js.Any])
+    inline def setQueryAllowed(value: Boolean): Self = StObject.set(x, "QueryAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiteUrl(value: String): Self = StObject.set(x, "SiteUrl", value.asInstanceOf[js.Any])
+    inline def setSiteUrl(value: String): Self = StObject.set(x, "SiteUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmit(value: () => Unit): Self = StObject.set(x, "Submit", js.Any.fromFunction0(value))
+    inline def setSubmit(value: () => Unit): Self = StObject.set(x, "Submit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSubmitAllowed(value: Boolean): Self = StObject.set(x, "SubmitAllowed", value.asInstanceOf[js.Any])
+    inline def setSubmitAllowed(value: Boolean): Self = StObject.set(x, "SubmitAllowed", value.asInstanceOf[js.Any])
   }
 }

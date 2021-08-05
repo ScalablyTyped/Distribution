@@ -17,13 +17,13 @@ object mockRequestMod {
   @js.native
   trait MockRequest extends StObject {
     
-    var _body: js.Any = js.native
+    /* private */ var _body: js.Any = js.native
     
-    var _headers: js.Any = js.native
+    /* private */ var _headers: js.Any = js.native
     
-    var _method: js.Any = js.native
+    /* private */ var _method: js.Any = js.native
     
-    var _url: js.Any = js.native
+    /* private */ var _url: js.Any = js.native
     
     def body(): js.Any = js.native
     def body(body: js.Any): MockRequest = js.native

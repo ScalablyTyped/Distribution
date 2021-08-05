@@ -17,31 +17,23 @@ trait StateHistory extends StObject {
 }
 object StateHistory {
   
-  @scala.inline
-  def apply(): StateHistory = {
+  inline def apply(): StateHistory = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StateHistory]
   }
   
-  @scala.inline
-  implicit class StateHistoryMutableBuilder[Self <: StateHistory] (val x: Self) extends AnyVal {
+  extension [Self <: StateHistory](x: Self) {
     
-    @scala.inline
-    def setActorUserId(value: String): Self = StObject.set(x, "actorUserId", value.asInstanceOf[js.Any])
+    inline def setActorUserId(value: String): Self = StObject.set(x, "actorUserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActorUserIdUndefined: Self = StObject.set(x, "actorUserId", js.undefined)
+    inline def setActorUserIdUndefined: Self = StObject.set(x, "actorUserId", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateTimestamp(value: String): Self = StObject.set(x, "stateTimestamp", value.asInstanceOf[js.Any])
+    inline def setStateTimestamp(value: String): Self = StObject.set(x, "stateTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateTimestampUndefined: Self = StObject.set(x, "stateTimestamp", js.undefined)
+    inline def setStateTimestampUndefined: Self = StObject.set(x, "stateTimestamp", js.undefined)
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

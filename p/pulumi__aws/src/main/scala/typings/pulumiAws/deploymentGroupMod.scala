@@ -125,21 +125,16 @@ object deploymentGroupMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): DeploymentGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DeploymentGroup]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DeploymentGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DeploymentGroup]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DeploymentGroupState): DeploymentGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DeploymentGroup]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DeploymentGroupState, opts: CustomResourceOptions): DeploymentGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DeploymentGroup]
+    inline def get(name: String, id: Input[ID]): DeploymentGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DeploymentGroup]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DeploymentGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DeploymentGroup]
+    inline def get(name: String, id: Input[ID], state: DeploymentGroupState): DeploymentGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DeploymentGroup]
+    inline def get(name: String, id: Input[ID], state: DeploymentGroupState, opts: CustomResourceOptions): DeploymentGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DeploymentGroup]
     
     /**
       * Returns true if the given object is an instance of DeploymentGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codedeploy/deploymentGroup.DeploymentGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codedeploy/deploymentGroup.DeploymentGroup */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codedeploy/deploymentGroup.DeploymentGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codedeploy/deploymentGroup.DeploymentGroup */ Boolean]
   }
   
   trait DeploymentGroupArgs extends StObject {
@@ -241,96 +236,68 @@ object deploymentGroupMod {
   }
   object DeploymentGroupArgs {
     
-    @scala.inline
-    def apply(appName: Input[String], deploymentGroupName: Input[String], serviceRoleArn: Input[String]): DeploymentGroupArgs = {
+    inline def apply(appName: Input[String], deploymentGroupName: Input[String], serviceRoleArn: Input[String]): DeploymentGroupArgs = {
       val __obj = js.Dynamic.literal(appName = appName.asInstanceOf[js.Any], deploymentGroupName = deploymentGroupName.asInstanceOf[js.Any], serviceRoleArn = serviceRoleArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeploymentGroupArgs]
     }
     
-    @scala.inline
-    implicit class DeploymentGroupArgsMutableBuilder[Self <: DeploymentGroupArgs] (val x: Self) extends AnyVal {
+    extension [Self <: DeploymentGroupArgs](x: Self) {
       
-      @scala.inline
-      def setAlarmConfiguration(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupAlarmConfiguration]): Self = StObject.set(x, "alarmConfiguration", value.asInstanceOf[js.Any])
+      inline def setAlarmConfiguration(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupAlarmConfiguration]): Self = StObject.set(x, "alarmConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlarmConfigurationUndefined: Self = StObject.set(x, "alarmConfiguration", js.undefined)
+      inline def setAlarmConfigurationUndefined: Self = StObject.set(x, "alarmConfiguration", js.undefined)
       
-      @scala.inline
-      def setAppName(value: Input[String]): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
+      inline def setAppName(value: Input[String]): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoRollbackConfiguration(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupAutoRollbackConfiguration]): Self = StObject.set(x, "autoRollbackConfiguration", value.asInstanceOf[js.Any])
+      inline def setAutoRollbackConfiguration(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupAutoRollbackConfiguration]): Self = StObject.set(x, "autoRollbackConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoRollbackConfigurationUndefined: Self = StObject.set(x, "autoRollbackConfiguration", js.undefined)
+      inline def setAutoRollbackConfigurationUndefined: Self = StObject.set(x, "autoRollbackConfiguration", js.undefined)
       
-      @scala.inline
-      def setAutoscalingGroups(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "autoscalingGroups", value.asInstanceOf[js.Any])
+      inline def setAutoscalingGroups(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "autoscalingGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoscalingGroupsUndefined: Self = StObject.set(x, "autoscalingGroups", js.undefined)
+      inline def setAutoscalingGroupsUndefined: Self = StObject.set(x, "autoscalingGroups", js.undefined)
       
-      @scala.inline
-      def setAutoscalingGroupsVarargs(value: Input[String]*): Self = StObject.set(x, "autoscalingGroups", js.Array(value :_*))
+      inline def setAutoscalingGroupsVarargs(value: Input[String]*): Self = StObject.set(x, "autoscalingGroups", js.Array(value :_*))
       
-      @scala.inline
-      def setBlueGreenDeploymentConfig(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupBlueGreenDeploymentConfig]): Self = StObject.set(x, "blueGreenDeploymentConfig", value.asInstanceOf[js.Any])
+      inline def setBlueGreenDeploymentConfig(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupBlueGreenDeploymentConfig]): Self = StObject.set(x, "blueGreenDeploymentConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlueGreenDeploymentConfigUndefined: Self = StObject.set(x, "blueGreenDeploymentConfig", js.undefined)
+      inline def setBlueGreenDeploymentConfigUndefined: Self = StObject.set(x, "blueGreenDeploymentConfig", js.undefined)
       
-      @scala.inline
-      def setDeploymentConfigName(value: Input[String]): Self = StObject.set(x, "deploymentConfigName", value.asInstanceOf[js.Any])
+      inline def setDeploymentConfigName(value: Input[String]): Self = StObject.set(x, "deploymentConfigName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeploymentConfigNameUndefined: Self = StObject.set(x, "deploymentConfigName", js.undefined)
+      inline def setDeploymentConfigNameUndefined: Self = StObject.set(x, "deploymentConfigName", js.undefined)
       
-      @scala.inline
-      def setDeploymentGroupName(value: Input[String]): Self = StObject.set(x, "deploymentGroupName", value.asInstanceOf[js.Any])
+      inline def setDeploymentGroupName(value: Input[String]): Self = StObject.set(x, "deploymentGroupName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeploymentStyle(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupDeploymentStyle]): Self = StObject.set(x, "deploymentStyle", value.asInstanceOf[js.Any])
+      inline def setDeploymentStyle(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupDeploymentStyle]): Self = StObject.set(x, "deploymentStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeploymentStyleUndefined: Self = StObject.set(x, "deploymentStyle", js.undefined)
+      inline def setDeploymentStyleUndefined: Self = StObject.set(x, "deploymentStyle", js.undefined)
       
-      @scala.inline
-      def setEc2TagFilters(
+      inline def setEc2TagFilters(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupEc2TagFilter]]
             ]
       ): Self = StObject.set(x, "ec2TagFilters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEc2TagFiltersUndefined: Self = StObject.set(x, "ec2TagFilters", js.undefined)
+      inline def setEc2TagFiltersUndefined: Self = StObject.set(x, "ec2TagFilters", js.undefined)
       
-      @scala.inline
-      def setEc2TagFiltersVarargs(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupEc2TagFilter]*): Self = StObject.set(x, "ec2TagFilters", js.Array(value :_*))
+      inline def setEc2TagFiltersVarargs(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupEc2TagFilter]*): Self = StObject.set(x, "ec2TagFilters", js.Array(value :_*))
       
-      @scala.inline
-      def setEc2TagSets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupEc2TagSet]]]): Self = StObject.set(x, "ec2TagSets", value.asInstanceOf[js.Any])
+      inline def setEc2TagSets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupEc2TagSet]]]): Self = StObject.set(x, "ec2TagSets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEc2TagSetsUndefined: Self = StObject.set(x, "ec2TagSets", js.undefined)
+      inline def setEc2TagSetsUndefined: Self = StObject.set(x, "ec2TagSets", js.undefined)
       
-      @scala.inline
-      def setEc2TagSetsVarargs(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupEc2TagSet]*): Self = StObject.set(x, "ec2TagSets", js.Array(value :_*))
+      inline def setEc2TagSetsVarargs(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupEc2TagSet]*): Self = StObject.set(x, "ec2TagSets", js.Array(value :_*))
       
-      @scala.inline
-      def setEcsService(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupEcsService]): Self = StObject.set(x, "ecsService", value.asInstanceOf[js.Any])
+      inline def setEcsService(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupEcsService]): Self = StObject.set(x, "ecsService", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEcsServiceUndefined: Self = StObject.set(x, "ecsService", js.undefined)
+      inline def setEcsServiceUndefined: Self = StObject.set(x, "ecsService", js.undefined)
       
-      @scala.inline
-      def setLoadBalancerInfo(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupLoadBalancerInfo]): Self = StObject.set(x, "loadBalancerInfo", value.asInstanceOf[js.Any])
+      inline def setLoadBalancerInfo(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupLoadBalancerInfo]): Self = StObject.set(x, "loadBalancerInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadBalancerInfoUndefined: Self = StObject.set(x, "loadBalancerInfo", js.undefined)
+      inline def setLoadBalancerInfoUndefined: Self = StObject.set(x, "loadBalancerInfo", js.undefined)
       
-      @scala.inline
-      def setOnPremisesInstanceTagFilters(
+      inline def setOnPremisesInstanceTagFilters(
         value: Input[
               js.Array[
                 Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupOnPremisesInstanceTagFilter]
@@ -338,27 +305,21 @@ object deploymentGroupMod {
             ]
       ): Self = StObject.set(x, "onPremisesInstanceTagFilters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnPremisesInstanceTagFiltersUndefined: Self = StObject.set(x, "onPremisesInstanceTagFilters", js.undefined)
+      inline def setOnPremisesInstanceTagFiltersUndefined: Self = StObject.set(x, "onPremisesInstanceTagFilters", js.undefined)
       
-      @scala.inline
-      def setOnPremisesInstanceTagFiltersVarargs(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupOnPremisesInstanceTagFilter]*): Self = StObject.set(x, "onPremisesInstanceTagFilters", js.Array(value :_*))
+      inline def setOnPremisesInstanceTagFiltersVarargs(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupOnPremisesInstanceTagFilter]*): Self = StObject.set(x, "onPremisesInstanceTagFilters", js.Array(value :_*))
       
-      @scala.inline
-      def setServiceRoleArn(value: Input[String]): Self = StObject.set(x, "serviceRoleArn", value.asInstanceOf[js.Any])
+      inline def setServiceRoleArn(value: Input[String]): Self = StObject.set(x, "serviceRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggerConfigurations(
+      inline def setTriggerConfigurations(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupTriggerConfiguration]]
             ]
       ): Self = StObject.set(x, "triggerConfigurations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggerConfigurationsUndefined: Self = StObject.set(x, "triggerConfigurations", js.undefined)
+      inline def setTriggerConfigurationsUndefined: Self = StObject.set(x, "triggerConfigurations", js.undefined)
       
-      @scala.inline
-      def setTriggerConfigurationsVarargs(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupTriggerConfiguration]*): Self = StObject.set(x, "triggerConfigurations", js.Array(value :_*))
+      inline def setTriggerConfigurationsVarargs(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupTriggerConfiguration]*): Self = StObject.set(x, "triggerConfigurations", js.Array(value :_*))
     }
   }
   
@@ -461,102 +422,72 @@ object deploymentGroupMod {
   }
   object DeploymentGroupState {
     
-    @scala.inline
-    def apply(): DeploymentGroupState = {
+    inline def apply(): DeploymentGroupState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeploymentGroupState]
     }
     
-    @scala.inline
-    implicit class DeploymentGroupStateMutableBuilder[Self <: DeploymentGroupState] (val x: Self) extends AnyVal {
+    extension [Self <: DeploymentGroupState](x: Self) {
       
-      @scala.inline
-      def setAlarmConfiguration(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupAlarmConfiguration]): Self = StObject.set(x, "alarmConfiguration", value.asInstanceOf[js.Any])
+      inline def setAlarmConfiguration(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupAlarmConfiguration]): Self = StObject.set(x, "alarmConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlarmConfigurationUndefined: Self = StObject.set(x, "alarmConfiguration", js.undefined)
+      inline def setAlarmConfigurationUndefined: Self = StObject.set(x, "alarmConfiguration", js.undefined)
       
-      @scala.inline
-      def setAppName(value: Input[String]): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
+      inline def setAppName(value: Input[String]): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppNameUndefined: Self = StObject.set(x, "appName", js.undefined)
+      inline def setAppNameUndefined: Self = StObject.set(x, "appName", js.undefined)
       
-      @scala.inline
-      def setAutoRollbackConfiguration(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupAutoRollbackConfiguration]): Self = StObject.set(x, "autoRollbackConfiguration", value.asInstanceOf[js.Any])
+      inline def setAutoRollbackConfiguration(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupAutoRollbackConfiguration]): Self = StObject.set(x, "autoRollbackConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoRollbackConfigurationUndefined: Self = StObject.set(x, "autoRollbackConfiguration", js.undefined)
+      inline def setAutoRollbackConfigurationUndefined: Self = StObject.set(x, "autoRollbackConfiguration", js.undefined)
       
-      @scala.inline
-      def setAutoscalingGroups(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "autoscalingGroups", value.asInstanceOf[js.Any])
+      inline def setAutoscalingGroups(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "autoscalingGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoscalingGroupsUndefined: Self = StObject.set(x, "autoscalingGroups", js.undefined)
+      inline def setAutoscalingGroupsUndefined: Self = StObject.set(x, "autoscalingGroups", js.undefined)
       
-      @scala.inline
-      def setAutoscalingGroupsVarargs(value: Input[String]*): Self = StObject.set(x, "autoscalingGroups", js.Array(value :_*))
+      inline def setAutoscalingGroupsVarargs(value: Input[String]*): Self = StObject.set(x, "autoscalingGroups", js.Array(value :_*))
       
-      @scala.inline
-      def setBlueGreenDeploymentConfig(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupBlueGreenDeploymentConfig]): Self = StObject.set(x, "blueGreenDeploymentConfig", value.asInstanceOf[js.Any])
+      inline def setBlueGreenDeploymentConfig(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupBlueGreenDeploymentConfig]): Self = StObject.set(x, "blueGreenDeploymentConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlueGreenDeploymentConfigUndefined: Self = StObject.set(x, "blueGreenDeploymentConfig", js.undefined)
+      inline def setBlueGreenDeploymentConfigUndefined: Self = StObject.set(x, "blueGreenDeploymentConfig", js.undefined)
       
-      @scala.inline
-      def setDeploymentConfigName(value: Input[String]): Self = StObject.set(x, "deploymentConfigName", value.asInstanceOf[js.Any])
+      inline def setDeploymentConfigName(value: Input[String]): Self = StObject.set(x, "deploymentConfigName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeploymentConfigNameUndefined: Self = StObject.set(x, "deploymentConfigName", js.undefined)
+      inline def setDeploymentConfigNameUndefined: Self = StObject.set(x, "deploymentConfigName", js.undefined)
       
-      @scala.inline
-      def setDeploymentGroupName(value: Input[String]): Self = StObject.set(x, "deploymentGroupName", value.asInstanceOf[js.Any])
+      inline def setDeploymentGroupName(value: Input[String]): Self = StObject.set(x, "deploymentGroupName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeploymentGroupNameUndefined: Self = StObject.set(x, "deploymentGroupName", js.undefined)
+      inline def setDeploymentGroupNameUndefined: Self = StObject.set(x, "deploymentGroupName", js.undefined)
       
-      @scala.inline
-      def setDeploymentStyle(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupDeploymentStyle]): Self = StObject.set(x, "deploymentStyle", value.asInstanceOf[js.Any])
+      inline def setDeploymentStyle(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupDeploymentStyle]): Self = StObject.set(x, "deploymentStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeploymentStyleUndefined: Self = StObject.set(x, "deploymentStyle", js.undefined)
+      inline def setDeploymentStyleUndefined: Self = StObject.set(x, "deploymentStyle", js.undefined)
       
-      @scala.inline
-      def setEc2TagFilters(
+      inline def setEc2TagFilters(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupEc2TagFilter]]
             ]
       ): Self = StObject.set(x, "ec2TagFilters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEc2TagFiltersUndefined: Self = StObject.set(x, "ec2TagFilters", js.undefined)
+      inline def setEc2TagFiltersUndefined: Self = StObject.set(x, "ec2TagFilters", js.undefined)
       
-      @scala.inline
-      def setEc2TagFiltersVarargs(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupEc2TagFilter]*): Self = StObject.set(x, "ec2TagFilters", js.Array(value :_*))
+      inline def setEc2TagFiltersVarargs(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupEc2TagFilter]*): Self = StObject.set(x, "ec2TagFilters", js.Array(value :_*))
       
-      @scala.inline
-      def setEc2TagSets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupEc2TagSet]]]): Self = StObject.set(x, "ec2TagSets", value.asInstanceOf[js.Any])
+      inline def setEc2TagSets(value: Input[js.Array[Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupEc2TagSet]]]): Self = StObject.set(x, "ec2TagSets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEc2TagSetsUndefined: Self = StObject.set(x, "ec2TagSets", js.undefined)
+      inline def setEc2TagSetsUndefined: Self = StObject.set(x, "ec2TagSets", js.undefined)
       
-      @scala.inline
-      def setEc2TagSetsVarargs(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupEc2TagSet]*): Self = StObject.set(x, "ec2TagSets", js.Array(value :_*))
+      inline def setEc2TagSetsVarargs(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupEc2TagSet]*): Self = StObject.set(x, "ec2TagSets", js.Array(value :_*))
       
-      @scala.inline
-      def setEcsService(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupEcsService]): Self = StObject.set(x, "ecsService", value.asInstanceOf[js.Any])
+      inline def setEcsService(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupEcsService]): Self = StObject.set(x, "ecsService", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEcsServiceUndefined: Self = StObject.set(x, "ecsService", js.undefined)
+      inline def setEcsServiceUndefined: Self = StObject.set(x, "ecsService", js.undefined)
       
-      @scala.inline
-      def setLoadBalancerInfo(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupLoadBalancerInfo]): Self = StObject.set(x, "loadBalancerInfo", value.asInstanceOf[js.Any])
+      inline def setLoadBalancerInfo(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupLoadBalancerInfo]): Self = StObject.set(x, "loadBalancerInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadBalancerInfoUndefined: Self = StObject.set(x, "loadBalancerInfo", js.undefined)
+      inline def setLoadBalancerInfoUndefined: Self = StObject.set(x, "loadBalancerInfo", js.undefined)
       
-      @scala.inline
-      def setOnPremisesInstanceTagFilters(
+      inline def setOnPremisesInstanceTagFilters(
         value: Input[
               js.Array[
                 Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupOnPremisesInstanceTagFilter]
@@ -564,30 +495,23 @@ object deploymentGroupMod {
             ]
       ): Self = StObject.set(x, "onPremisesInstanceTagFilters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnPremisesInstanceTagFiltersUndefined: Self = StObject.set(x, "onPremisesInstanceTagFilters", js.undefined)
+      inline def setOnPremisesInstanceTagFiltersUndefined: Self = StObject.set(x, "onPremisesInstanceTagFilters", js.undefined)
       
-      @scala.inline
-      def setOnPremisesInstanceTagFiltersVarargs(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupOnPremisesInstanceTagFilter]*): Self = StObject.set(x, "onPremisesInstanceTagFilters", js.Array(value :_*))
+      inline def setOnPremisesInstanceTagFiltersVarargs(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupOnPremisesInstanceTagFilter]*): Self = StObject.set(x, "onPremisesInstanceTagFilters", js.Array(value :_*))
       
-      @scala.inline
-      def setServiceRoleArn(value: Input[String]): Self = StObject.set(x, "serviceRoleArn", value.asInstanceOf[js.Any])
+      inline def setServiceRoleArn(value: Input[String]): Self = StObject.set(x, "serviceRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceRoleArnUndefined: Self = StObject.set(x, "serviceRoleArn", js.undefined)
+      inline def setServiceRoleArnUndefined: Self = StObject.set(x, "serviceRoleArn", js.undefined)
       
-      @scala.inline
-      def setTriggerConfigurations(
+      inline def setTriggerConfigurations(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupTriggerConfiguration]]
             ]
       ): Self = StObject.set(x, "triggerConfigurations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggerConfigurationsUndefined: Self = StObject.set(x, "triggerConfigurations", js.undefined)
+      inline def setTriggerConfigurationsUndefined: Self = StObject.set(x, "triggerConfigurations", js.undefined)
       
-      @scala.inline
-      def setTriggerConfigurationsVarargs(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupTriggerConfiguration]*): Self = StObject.set(x, "triggerConfigurations", js.Array(value :_*))
+      inline def setTriggerConfigurationsVarargs(value: Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupTriggerConfiguration]*): Self = StObject.set(x, "triggerConfigurations", js.Array(value :_*))
     }
   }
 }

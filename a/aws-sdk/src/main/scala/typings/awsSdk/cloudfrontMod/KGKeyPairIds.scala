@@ -15,25 +15,19 @@ trait KGKeyPairIds extends StObject {
 }
 object KGKeyPairIds {
   
-  @scala.inline
-  def apply(): KGKeyPairIds = {
+  inline def apply(): KGKeyPairIds = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KGKeyPairIds]
   }
   
-  @scala.inline
-  implicit class KGKeyPairIdsMutableBuilder[Self <: KGKeyPairIds] (val x: Self) extends AnyVal {
+  extension [Self <: KGKeyPairIds](x: Self) {
     
-    @scala.inline
-    def setKeyGroupId(value: String): Self = StObject.set(x, "KeyGroupId", value.asInstanceOf[js.Any])
+    inline def setKeyGroupId(value: String): Self = StObject.set(x, "KeyGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyGroupIdUndefined: Self = StObject.set(x, "KeyGroupId", js.undefined)
+    inline def setKeyGroupIdUndefined: Self = StObject.set(x, "KeyGroupId", js.undefined)
     
-    @scala.inline
-    def setKeyPairIds(value: KeyPairIds): Self = StObject.set(x, "KeyPairIds", value.asInstanceOf[js.Any])
+    inline def setKeyPairIds(value: KeyPairIds): Self = StObject.set(x, "KeyPairIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyPairIdsUndefined: Self = StObject.set(x, "KeyPairIds", js.undefined)
+    inline def setKeyPairIdsUndefined: Self = StObject.set(x, "KeyPairIds", js.undefined)
   }
 }

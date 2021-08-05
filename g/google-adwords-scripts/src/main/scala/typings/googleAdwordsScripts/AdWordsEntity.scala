@@ -11,19 +11,15 @@ trait AdWordsEntity extends StObject {
 }
 object AdWordsEntity {
   
-  @scala.inline
-  def apply(): AdWordsEntity = {
+  inline def apply(): AdWordsEntity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdWordsEntity]
   }
   
-  @scala.inline
-  implicit class AdWordsEntityMutableBuilder[Self <: AdWordsEntity] (val x: Self) extends AnyVal {
+  extension [Self <: AdWordsEntity](x: Self) {
     
-    @scala.inline
-    def setGetEntityType(value: () => String): Self = StObject.set(x, "getEntityType", js.Any.fromFunction0(value))
+    inline def setGetEntityType(value: () => String): Self = StObject.set(x, "getEntityType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEntityTypeUndefined: Self = StObject.set(x, "getEntityType", js.undefined)
+    inline def setGetEntityTypeUndefined: Self = StObject.set(x, "getEntityType", js.undefined)
   }
 }

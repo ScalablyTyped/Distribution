@@ -11,7 +11,7 @@ object metricsMod {
   @JSImport("@opentelemetry/api/build/src/api/metrics", "MetricsAPI")
   @js.native
   /** Empty private constructor prevents end users from constructing a new instance of the API */
-  class MetricsAPI protected () extends StObject {
+  /* private */ class MetricsAPI () extends StObject {
     
     /** Remove the global meter provider */
     def disable(): Unit = js.native
@@ -42,11 +42,9 @@ object metricsMod {
     @JSImport("@opentelemetry/api/build/src/api/metrics", "MetricsAPI._instance")
     @js.native
     def _instance: js.Any = js.native
-    @scala.inline
-    def _instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
+    inline def _instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
     
     /** Get the singleton instance of the Metrics API */
-    @scala.inline
-    def getInstance(): MetricsAPI = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[MetricsAPI]
+    inline def getInstance(): MetricsAPI = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[MetricsAPI]
   }
 }

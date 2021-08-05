@@ -15,28 +15,21 @@ trait ModuleImportPointer extends StObject {
 }
 object ModuleImportPointer {
   
-  @scala.inline
-  def apply($fragmentRefs: js.Any, __module_component: js.Any): ModuleImportPointer = {
+  inline def apply($fragmentRefs: js.Any, __module_component: js.Any): ModuleImportPointer = {
     val __obj = js.Dynamic.literal($fragmentRefs = $fragmentRefs.asInstanceOf[js.Any], __module_component = __module_component.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModuleImportPointer]
   }
   
-  @scala.inline
-  implicit class ModuleImportPointerMutableBuilder[Self <: ModuleImportPointer] (val x: Self) extends AnyVal {
+  extension [Self <: ModuleImportPointer](x: Self) {
     
-    @scala.inline
-    def set$fragmentRefs(value: js.Any): Self = StObject.set(x, "$fragmentRefs", value.asInstanceOf[js.Any])
+    inline def set$fragmentRefs(value: js.Any): Self = StObject.set(x, "$fragmentRefs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__fragmentPropName(value: String): Self = StObject.set(x, "__fragmentPropName", value.asInstanceOf[js.Any])
+    inline def set__fragmentPropName(value: String): Self = StObject.set(x, "__fragmentPropName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__fragmentPropNameNull: Self = StObject.set(x, "__fragmentPropName", null)
+    inline def set__fragmentPropNameNull: Self = StObject.set(x, "__fragmentPropName", null)
     
-    @scala.inline
-    def set__fragmentPropNameUndefined: Self = StObject.set(x, "__fragmentPropName", js.undefined)
+    inline def set__fragmentPropNameUndefined: Self = StObject.set(x, "__fragmentPropName", js.undefined)
     
-    @scala.inline
-    def set__module_component(value: js.Any): Self = StObject.set(x, "__module_component", value.asInstanceOf[js.Any])
+    inline def set__module_component(value: js.Any): Self = StObject.set(x, "__module_component", value.asInstanceOf[js.Any])
   }
 }

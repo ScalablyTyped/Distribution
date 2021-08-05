@@ -14,31 +14,23 @@ trait BulkEditAssignedUserRolesRequest extends StObject {
 }
 object BulkEditAssignedUserRolesRequest {
   
-  @scala.inline
-  def apply(): BulkEditAssignedUserRolesRequest = {
+  inline def apply(): BulkEditAssignedUserRolesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BulkEditAssignedUserRolesRequest]
   }
   
-  @scala.inline
-  implicit class BulkEditAssignedUserRolesRequestMutableBuilder[Self <: BulkEditAssignedUserRolesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BulkEditAssignedUserRolesRequest](x: Self) {
     
-    @scala.inline
-    def setCreatedAssignedUserRoles(value: js.Array[AssignedUserRole]): Self = StObject.set(x, "createdAssignedUserRoles", value.asInstanceOf[js.Any])
+    inline def setCreatedAssignedUserRoles(value: js.Array[AssignedUserRole]): Self = StObject.set(x, "createdAssignedUserRoles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAssignedUserRolesUndefined: Self = StObject.set(x, "createdAssignedUserRoles", js.undefined)
+    inline def setCreatedAssignedUserRolesUndefined: Self = StObject.set(x, "createdAssignedUserRoles", js.undefined)
     
-    @scala.inline
-    def setCreatedAssignedUserRolesVarargs(value: AssignedUserRole*): Self = StObject.set(x, "createdAssignedUserRoles", js.Array(value :_*))
+    inline def setCreatedAssignedUserRolesVarargs(value: AssignedUserRole*): Self = StObject.set(x, "createdAssignedUserRoles", js.Array(value :_*))
     
-    @scala.inline
-    def setDeletedAssignedUserRoles(value: js.Array[String]): Self = StObject.set(x, "deletedAssignedUserRoles", value.asInstanceOf[js.Any])
+    inline def setDeletedAssignedUserRoles(value: js.Array[String]): Self = StObject.set(x, "deletedAssignedUserRoles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedAssignedUserRolesUndefined: Self = StObject.set(x, "deletedAssignedUserRoles", js.undefined)
+    inline def setDeletedAssignedUserRolesUndefined: Self = StObject.set(x, "deletedAssignedUserRoles", js.undefined)
     
-    @scala.inline
-    def setDeletedAssignedUserRolesVarargs(value: String*): Self = StObject.set(x, "deletedAssignedUserRoles", js.Array(value :_*))
+    inline def setDeletedAssignedUserRolesVarargs(value: String*): Self = StObject.set(x, "deletedAssignedUserRoles", js.Array(value :_*))
   }
 }

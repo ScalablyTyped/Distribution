@@ -55,61 +55,43 @@ trait NotebookShowOptions extends StObject {
 }
 object NotebookShowOptions {
   
-  @scala.inline
-  def apply(): NotebookShowOptions = {
+  inline def apply(): NotebookShowOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NotebookShowOptions]
   }
   
-  @scala.inline
-  implicit class NotebookShowOptionsMutableBuilder[Self <: NotebookShowOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NotebookShowOptions](x: Self) {
     
-    @scala.inline
-    def setConnectionProfile(value: IConnectionProfile): Self = StObject.set(x, "connectionProfile", value.asInstanceOf[js.Any])
+    inline def setConnectionProfile(value: IConnectionProfile): Self = StObject.set(x, "connectionProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionProfileUndefined: Self = StObject.set(x, "connectionProfile", js.undefined)
+    inline def setConnectionProfileUndefined: Self = StObject.set(x, "connectionProfile", js.undefined)
     
-    @scala.inline
-    def setDefaultKernel(value: IKernelSpec): Self = StObject.set(x, "defaultKernel", value.asInstanceOf[js.Any])
+    inline def setDefaultKernel(value: IKernelSpec): Self = StObject.set(x, "defaultKernel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultKernelUndefined: Self = StObject.set(x, "defaultKernel", js.undefined)
+    inline def setDefaultKernelUndefined: Self = StObject.set(x, "defaultKernel", js.undefined)
     
-    @scala.inline
-    def setInitialContent(value: INotebookContents | String): Self = StObject.set(x, "initialContent", value.asInstanceOf[js.Any])
+    inline def setInitialContent(value: INotebookContents | String): Self = StObject.set(x, "initialContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialContentUndefined: Self = StObject.set(x, "initialContent", js.undefined)
+    inline def setInitialContentUndefined: Self = StObject.set(x, "initialContent", js.undefined)
     
-    @scala.inline
-    def setInitialDirtyState(value: Boolean): Self = StObject.set(x, "initialDirtyState", value.asInstanceOf[js.Any])
+    inline def setInitialDirtyState(value: Boolean): Self = StObject.set(x, "initialDirtyState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialDirtyStateUndefined: Self = StObject.set(x, "initialDirtyState", js.undefined)
+    inline def setInitialDirtyStateUndefined: Self = StObject.set(x, "initialDirtyState", js.undefined)
     
-    @scala.inline
-    def setPreserveFocus(value: Boolean): Self = StObject.set(x, "preserveFocus", value.asInstanceOf[js.Any])
+    inline def setPreserveFocus(value: Boolean): Self = StObject.set(x, "preserveFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveFocusUndefined: Self = StObject.set(x, "preserveFocus", js.undefined)
+    inline def setPreserveFocusUndefined: Self = StObject.set(x, "preserveFocus", js.undefined)
     
-    @scala.inline
-    def setPreview(value: Boolean): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+    inline def setPreview(value: Boolean): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
+    inline def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
     
-    @scala.inline
-    def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
+    inline def setProviderId(value: String): Self = StObject.set(x, "providerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderIdUndefined: Self = StObject.set(x, "providerId", js.undefined)
+    inline def setProviderIdUndefined: Self = StObject.set(x, "providerId", js.undefined)
     
-    @scala.inline
-    def setViewColumn(value: ViewColumn): Self = StObject.set(x, "viewColumn", value.asInstanceOf[js.Any])
+    inline def setViewColumn(value: ViewColumn): Self = StObject.set(x, "viewColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewColumnUndefined: Self = StObject.set(x, "viewColumn", js.undefined)
+    inline def setViewColumnUndefined: Self = StObject.set(x, "viewColumn", js.undefined)
   }
 }

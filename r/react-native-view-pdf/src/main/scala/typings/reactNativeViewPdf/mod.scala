@@ -35,32 +35,23 @@ object mod {
   trait HTTPMethod extends StObject
   object HTTPMethod {
     
-    @scala.inline
-    def CONNECT: typings.reactNativeViewPdf.reactNativeViewPdfStrings.CONNECT = "CONNECT".asInstanceOf[typings.reactNativeViewPdf.reactNativeViewPdfStrings.CONNECT]
+    inline def CONNECT: typings.reactNativeViewPdf.reactNativeViewPdfStrings.CONNECT = "CONNECT".asInstanceOf[typings.reactNativeViewPdf.reactNativeViewPdfStrings.CONNECT]
     
-    @scala.inline
-    def DELETE: typings.reactNativeViewPdf.reactNativeViewPdfStrings.DELETE = "DELETE".asInstanceOf[typings.reactNativeViewPdf.reactNativeViewPdfStrings.DELETE]
+    inline def DELETE: typings.reactNativeViewPdf.reactNativeViewPdfStrings.DELETE = "DELETE".asInstanceOf[typings.reactNativeViewPdf.reactNativeViewPdfStrings.DELETE]
     
-    @scala.inline
-    def GET: typings.reactNativeViewPdf.reactNativeViewPdfStrings.GET = "GET".asInstanceOf[typings.reactNativeViewPdf.reactNativeViewPdfStrings.GET]
+    inline def GET: typings.reactNativeViewPdf.reactNativeViewPdfStrings.GET = "GET".asInstanceOf[typings.reactNativeViewPdf.reactNativeViewPdfStrings.GET]
     
-    @scala.inline
-    def HEAD: typings.reactNativeViewPdf.reactNativeViewPdfStrings.HEAD = "HEAD".asInstanceOf[typings.reactNativeViewPdf.reactNativeViewPdfStrings.HEAD]
+    inline def HEAD: typings.reactNativeViewPdf.reactNativeViewPdfStrings.HEAD = "HEAD".asInstanceOf[typings.reactNativeViewPdf.reactNativeViewPdfStrings.HEAD]
     
-    @scala.inline
-    def OPTIONS: typings.reactNativeViewPdf.reactNativeViewPdfStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.reactNativeViewPdf.reactNativeViewPdfStrings.OPTIONS]
+    inline def OPTIONS: typings.reactNativeViewPdf.reactNativeViewPdfStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.reactNativeViewPdf.reactNativeViewPdfStrings.OPTIONS]
     
-    @scala.inline
-    def PATCH: typings.reactNativeViewPdf.reactNativeViewPdfStrings.PATCH = "PATCH".asInstanceOf[typings.reactNativeViewPdf.reactNativeViewPdfStrings.PATCH]
+    inline def PATCH: typings.reactNativeViewPdf.reactNativeViewPdfStrings.PATCH = "PATCH".asInstanceOf[typings.reactNativeViewPdf.reactNativeViewPdfStrings.PATCH]
     
-    @scala.inline
-    def POST: typings.reactNativeViewPdf.reactNativeViewPdfStrings.POST = "POST".asInstanceOf[typings.reactNativeViewPdf.reactNativeViewPdfStrings.POST]
+    inline def POST: typings.reactNativeViewPdf.reactNativeViewPdfStrings.POST = "POST".asInstanceOf[typings.reactNativeViewPdf.reactNativeViewPdfStrings.POST]
     
-    @scala.inline
-    def PUT: typings.reactNativeViewPdf.reactNativeViewPdfStrings.PUT = "PUT".asInstanceOf[typings.reactNativeViewPdf.reactNativeViewPdfStrings.PUT]
+    inline def PUT: typings.reactNativeViewPdf.reactNativeViewPdfStrings.PUT = "PUT".asInstanceOf[typings.reactNativeViewPdf.reactNativeViewPdfStrings.PUT]
     
-    @scala.inline
-    def TRACE: typings.reactNativeViewPdf.reactNativeViewPdfStrings.TRACE = "TRACE".asInstanceOf[typings.reactNativeViewPdf.reactNativeViewPdfStrings.TRACE]
+    inline def TRACE: typings.reactNativeViewPdf.reactNativeViewPdfStrings.TRACE = "TRACE".asInstanceOf[typings.reactNativeViewPdf.reactNativeViewPdfStrings.TRACE]
   }
   
   type PDFView = Component[PDFViewProps, js.Object, js.Any]
@@ -91,71 +82,50 @@ object mod {
   }
   object PDFViewProps {
     
-    @scala.inline
-    def apply(resource: String): PDFViewProps = {
+    inline def apply(resource: String): PDFViewProps = {
       val __obj = js.Dynamic.literal(resource = resource.asInstanceOf[js.Any])
       __obj.asInstanceOf[PDFViewProps]
     }
     
-    @scala.inline
-    implicit class PDFViewPropsMutableBuilder[Self <: PDFViewProps] (val x: Self) extends AnyVal {
+    extension [Self <: PDFViewProps](x: Self) {
       
-      @scala.inline
-      def setFadeInDuration(value: Double): Self = StObject.set(x, "fadeInDuration", value.asInstanceOf[js.Any])
+      inline def setFadeInDuration(value: Double): Self = StObject.set(x, "fadeInDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFadeInDurationUndefined: Self = StObject.set(x, "fadeInDuration", js.undefined)
+      inline def setFadeInDurationUndefined: Self = StObject.set(x, "fadeInDuration", js.undefined)
       
-      @scala.inline
-      def setFileFrom(value: bundle | documentsDirectory): Self = StObject.set(x, "fileFrom", value.asInstanceOf[js.Any])
+      inline def setFileFrom(value: bundle | documentsDirectory): Self = StObject.set(x, "fileFrom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileFromUndefined: Self = StObject.set(x, "fileFrom", js.undefined)
+      inline def setFileFromUndefined: Self = StObject.set(x, "fileFrom", js.undefined)
       
-      @scala.inline
-      def setOnError(value: /* error */ Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: /* error */ Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      @scala.inline
-      def setOnLoad(value: () => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
+      inline def setOnLoad(value: () => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
+      inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
       
-      @scala.inline
-      def setOnPageChanged(value: (/* page */ Double, /* pageCount */ Double) => Unit): Self = StObject.set(x, "onPageChanged", js.Any.fromFunction2(value))
+      inline def setOnPageChanged(value: (/* page */ Double, /* pageCount */ Double) => Unit): Self = StObject.set(x, "onPageChanged", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnPageChangedUndefined: Self = StObject.set(x, "onPageChanged", js.undefined)
+      inline def setOnPageChangedUndefined: Self = StObject.set(x, "onPageChanged", js.undefined)
       
-      @scala.inline
-      def setOnScrolled(value: /* offset */ Double => Unit): Self = StObject.set(x, "onScrolled", js.Any.fromFunction1(value))
+      inline def setOnScrolled(value: /* offset */ Double => Unit): Self = StObject.set(x, "onScrolled", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnScrolledUndefined: Self = StObject.set(x, "onScrolled", js.undefined)
+      inline def setOnScrolledUndefined: Self = StObject.set(x, "onScrolled", js.undefined)
       
-      @scala.inline
-      def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceType(value: url | base64 | file): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+      inline def setResourceType(value: url | base64 | file): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
+      inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
       
-      @scala.inline
-      def setTextEncoding(value: `utf-8` | `utf-16`): Self = StObject.set(x, "textEncoding", value.asInstanceOf[js.Any])
+      inline def setTextEncoding(value: `utf-8` | `utf-16`): Self = StObject.set(x, "textEncoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextEncodingUndefined: Self = StObject.set(x, "textEncoding", js.undefined)
+      inline def setTextEncodingUndefined: Self = StObject.set(x, "textEncoding", js.undefined)
       
-      @scala.inline
-      def setUrlProps(value: URLProps): Self = StObject.set(x, "urlProps", value.asInstanceOf[js.Any])
+      inline def setUrlProps(value: URLProps): Self = StObject.set(x, "urlProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlPropsUndefined: Self = StObject.set(x, "urlProps", js.undefined)
+      inline def setUrlPropsUndefined: Self = StObject.set(x, "urlProps", js.undefined)
     }
   }
   
@@ -169,32 +139,24 @@ object mod {
   }
   object URLProps {
     
-    @scala.inline
-    def apply(): URLProps = {
+    inline def apply(): URLProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[URLProps]
     }
     
-    @scala.inline
-    implicit class URLPropsMutableBuilder[Self <: URLProps] (val x: Self) extends AnyVal {
+    extension [Self <: URLProps](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setMethod(value: HTTPMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: HTTPMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     }
   }
 }

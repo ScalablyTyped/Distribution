@@ -68,8 +68,7 @@ trait MobileBroadbandPin extends StObject {
 }
 object MobileBroadbandPin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attemptsRemaining: Double,
     changeAsync: (String, String) => IPromiseWithIAsyncOperation[MobileBroadbandPinOperationResult],
     disableAsync: String => IPromiseWithIAsyncOperation[MobileBroadbandPinOperationResult],
@@ -88,43 +87,30 @@ object MobileBroadbandPin {
     __obj.asInstanceOf[MobileBroadbandPin]
   }
   
-  @scala.inline
-  implicit class MobileBroadbandPinMutableBuilder[Self <: MobileBroadbandPin] (val x: Self) extends AnyVal {
+  extension [Self <: MobileBroadbandPin](x: Self) {
     
-    @scala.inline
-    def setAttemptsRemaining(value: Double): Self = StObject.set(x, "attemptsRemaining", value.asInstanceOf[js.Any])
+    inline def setAttemptsRemaining(value: Double): Self = StObject.set(x, "attemptsRemaining", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeAsync(value: (String, String) => IPromiseWithIAsyncOperation[MobileBroadbandPinOperationResult]): Self = StObject.set(x, "changeAsync", js.Any.fromFunction2(value))
+    inline def setChangeAsync(value: (String, String) => IPromiseWithIAsyncOperation[MobileBroadbandPinOperationResult]): Self = StObject.set(x, "changeAsync", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDisableAsync(value: String => IPromiseWithIAsyncOperation[MobileBroadbandPinOperationResult]): Self = StObject.set(x, "disableAsync", js.Any.fromFunction1(value))
+    inline def setDisableAsync(value: String => IPromiseWithIAsyncOperation[MobileBroadbandPinOperationResult]): Self = StObject.set(x, "disableAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEnableAsync(value: String => IPromiseWithIAsyncOperation[MobileBroadbandPinOperationResult]): Self = StObject.set(x, "enableAsync", js.Any.fromFunction1(value))
+    inline def setEnableAsync(value: String => IPromiseWithIAsyncOperation[MobileBroadbandPinOperationResult]): Self = StObject.set(x, "enableAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterAsync(value: String => IPromiseWithIAsyncOperation[MobileBroadbandPinOperationResult]): Self = StObject.set(x, "enterAsync", js.Any.fromFunction1(value))
+    inline def setEnterAsync(value: String => IPromiseWithIAsyncOperation[MobileBroadbandPinOperationResult]): Self = StObject.set(x, "enterAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFormat(value: MobileBroadbandPinFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: MobileBroadbandPinFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockState(value: MobileBroadbandPinLockState): Self = StObject.set(x, "lockState", value.asInstanceOf[js.Any])
+    inline def setLockState(value: MobileBroadbandPinLockState): Self = StObject.set(x, "lockState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+    inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
+    inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: MobileBroadbandPinType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: MobileBroadbandPinType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnblockAsync(value: (String, String) => IPromiseWithIAsyncOperation[MobileBroadbandPinOperationResult]): Self = StObject.set(x, "unblockAsync", js.Any.fromFunction2(value))
+    inline def setUnblockAsync(value: (String, String) => IPromiseWithIAsyncOperation[MobileBroadbandPinOperationResult]): Self = StObject.set(x, "unblockAsync", js.Any.fromFunction2(value))
   }
 }

@@ -98,88 +98,61 @@ trait IgGridCellMerging
 }
 object IgGridCellMerging {
   
-  @scala.inline
-  def apply(): IgGridCellMerging = {
+  inline def apply(): IgGridCellMerging = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgGridCellMerging]
   }
   
-  @scala.inline
-  implicit class IgGridCellMergingMutableBuilder[Self <: IgGridCellMerging] (val x: Self) extends AnyVal {
+  extension [Self <: IgGridCellMerging](x: Self) {
     
-    @scala.inline
-    def setCellsMerged(value: (/* event */ Event, /* ui */ CellsMergedEventUIParam) => Unit): Self = StObject.set(x, "cellsMerged", js.Any.fromFunction2(value))
+    inline def setCellsMerged(value: (/* event */ Event, /* ui */ CellsMergedEventUIParam) => Unit): Self = StObject.set(x, "cellsMerged", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCellsMergedUndefined: Self = StObject.set(x, "cellsMerged", js.undefined)
+    inline def setCellsMergedUndefined: Self = StObject.set(x, "cellsMerged", js.undefined)
     
-    @scala.inline
-    def setCellsMerging(value: (/* event */ Event, /* ui */ CellsMergingEventUIParam) => Unit): Self = StObject.set(x, "cellsMerging", js.Any.fromFunction2(value))
+    inline def setCellsMerging(value: (/* event */ Event, /* ui */ CellsMergingEventUIParam) => Unit): Self = StObject.set(x, "cellsMerging", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCellsMergingUndefined: Self = StObject.set(x, "cellsMerging", js.undefined)
+    inline def setCellsMergingUndefined: Self = StObject.set(x, "cellsMerging", js.undefined)
     
-    @scala.inline
-    def setColumnSettings(value: js.Array[IgGridCellMergingColumnSetting]): Self = StObject.set(x, "columnSettings", value.asInstanceOf[js.Any])
+    inline def setColumnSettings(value: js.Array[IgGridCellMergingColumnSetting]): Self = StObject.set(x, "columnSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnSettingsUndefined: Self = StObject.set(x, "columnSettings", js.undefined)
+    inline def setColumnSettingsUndefined: Self = StObject.set(x, "columnSettings", js.undefined)
     
-    @scala.inline
-    def setColumnSettingsVarargs(value: IgGridCellMergingColumnSetting*): Self = StObject.set(x, "columnSettings", js.Array(value :_*))
+    inline def setColumnSettingsVarargs(value: IgGridCellMergingColumnSetting*): Self = StObject.set(x, "columnSettings", js.Array(value :_*))
     
-    @scala.inline
-    def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
+    inline def setInherit(value: Boolean): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
+    inline def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setMergeOn(value: String): Self = StObject.set(x, "mergeOn", value.asInstanceOf[js.Any])
+    inline def setMergeOn(value: String): Self = StObject.set(x, "mergeOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeOnUndefined: Self = StObject.set(x, "mergeOn", js.undefined)
+    inline def setMergeOnUndefined: Self = StObject.set(x, "mergeOn", js.undefined)
     
-    @scala.inline
-    def setMergeRows(value: js.Any): Self = StObject.set(x, "mergeRows", value.asInstanceOf[js.Any])
+    inline def setMergeRows(value: js.Any): Self = StObject.set(x, "mergeRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeRowsUndefined: Self = StObject.set(x, "mergeRows", js.undefined)
+    inline def setMergeRowsUndefined: Self = StObject.set(x, "mergeRows", js.undefined)
     
-    @scala.inline
-    def setMergeStrategy(value: String | js.Function): Self = StObject.set(x, "mergeStrategy", value.asInstanceOf[js.Any])
+    inline def setMergeStrategy(value: String | js.Function): Self = StObject.set(x, "mergeStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeStrategyUndefined: Self = StObject.set(x, "mergeStrategy", js.undefined)
+    inline def setMergeStrategyUndefined: Self = StObject.set(x, "mergeStrategy", js.undefined)
     
-    @scala.inline
-    def setMergeType(value: String): Self = StObject.set(x, "mergeType", value.asInstanceOf[js.Any])
+    inline def setMergeType(value: String): Self = StObject.set(x, "mergeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeTypeUndefined: Self = StObject.set(x, "mergeType", js.undefined)
+    inline def setMergeTypeUndefined: Self = StObject.set(x, "mergeType", js.undefined)
     
-    @scala.inline
-    def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
+    inline def setRegional(value: String | js.Object): Self = StObject.set(x, "regional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
+    inline def setRegionalUndefined: Self = StObject.set(x, "regional", js.undefined)
     
-    @scala.inline
-    def setRowMergeStrategy(value: String | js.Function): Self = StObject.set(x, "rowMergeStrategy", value.asInstanceOf[js.Any])
+    inline def setRowMergeStrategy(value: String | js.Function): Self = StObject.set(x, "rowMergeStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowMergeStrategyUndefined: Self = StObject.set(x, "rowMergeStrategy", js.undefined)
+    inline def setRowMergeStrategyUndefined: Self = StObject.set(x, "rowMergeStrategy", js.undefined)
   }
 }

@@ -18,7 +18,7 @@ trait CustomTaskPane extends StObject {
   
   var Height: Double
   
-  @JSName("Office.CustomTaskPane_typekey")
+  /* private */ @JSName("Office.CustomTaskPane_typekey")
   var OfficeDotCustomTaskPane_typekey: CustomTaskPane
   
   val Title: String
@@ -31,8 +31,7 @@ trait CustomTaskPane extends StObject {
 }
 object CustomTaskPane {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     ContentControl: js.Any,
     Delete: () => Unit,
@@ -50,40 +49,28 @@ object CustomTaskPane {
     __obj.asInstanceOf[CustomTaskPane]
   }
   
-  @scala.inline
-  implicit class CustomTaskPaneMutableBuilder[Self <: CustomTaskPane] (val x: Self) extends AnyVal {
+  extension [Self <: CustomTaskPane](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentControl(value: js.Any): Self = StObject.set(x, "ContentControl", value.asInstanceOf[js.Any])
+    inline def setContentControl(value: js.Any): Self = StObject.set(x, "ContentControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDockPosition(value: MsoCTPDockPosition): Self = StObject.set(x, "DockPosition", value.asInstanceOf[js.Any])
+    inline def setDockPosition(value: MsoCTPDockPosition): Self = StObject.set(x, "DockPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDockPositionRestrict(value: MsoCTPDockPositionRestrict): Self = StObject.set(x, "DockPositionRestrict", value.asInstanceOf[js.Any])
+    inline def setDockPositionRestrict(value: MsoCTPDockPositionRestrict): Self = StObject.set(x, "DockPositionRestrict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotCustomTaskPane_typekey(value: CustomTaskPane): Self = StObject.set(x, "Office.CustomTaskPane_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotCustomTaskPane_typekey(value: CustomTaskPane): Self = StObject.set(x, "Office.CustomTaskPane_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "Visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindow(value: js.Any): Self = StObject.set(x, "Window", value.asInstanceOf[js.Any])
+    inline def setWindow(value: js.Any): Self = StObject.set(x, "Window", value.asInstanceOf[js.Any])
   }
 }

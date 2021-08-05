@@ -18,16 +18,13 @@ trait ASPxClientFileManagerFileOpenedEventArgs
 }
 object ASPxClientFileManagerFileOpenedEventArgs {
   
-  @scala.inline
-  def apply(file: ASPxClientFileManagerFile, processOnServer: Boolean): ASPxClientFileManagerFileOpenedEventArgs = {
+  inline def apply(file: ASPxClientFileManagerFile, processOnServer: Boolean): ASPxClientFileManagerFileOpenedEventArgs = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientFileManagerFileOpenedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientFileManagerFileOpenedEventArgsMutableBuilder[Self <: ASPxClientFileManagerFileOpenedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientFileManagerFileOpenedEventArgs](x: Self) {
     
-    @scala.inline
-    def setProcessOnServer(value: Boolean): Self = StObject.set(x, "processOnServer", value.asInstanceOf[js.Any])
+    inline def setProcessOnServer(value: Boolean): Self = StObject.set(x, "processOnServer", value.asInstanceOf[js.Any])
   }
 }

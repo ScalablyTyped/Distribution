@@ -76,8 +76,7 @@ object resourceMod {
       * Returns true if the given object is an instance of CustomResource.  This is designed to work even when
       * multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/resource.ComponentResource<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/pulumi.@pulumi/pulumi/resource.ComponentResource<any> */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/resource.ComponentResource<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/pulumi.@pulumi/pulumi/resource.ComponentResource<any> */ Boolean]
   }
   
   @JSImport("@pulumi/pulumi/resource", "CustomResource")
@@ -123,8 +122,7 @@ object resourceMod {
       * Returns true if the given object is an instance of CustomResource.  This is designed to work even when
       * multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/resource.CustomResource */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/pulumi.@pulumi/pulumi/resource.CustomResource */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/resource.CustomResource */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/pulumi.@pulumi/pulumi/resource.CustomResource */ Boolean]
   }
   
   @JSImport("@pulumi/pulumi/resource", "DependencyProviderResource")
@@ -167,10 +165,8 @@ object resourceMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def register(): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("register")().asInstanceOf[js.Promise[js.UndefOr[String]]]
-    @scala.inline
-    def register(provider: ProviderResource): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(provider.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
+    inline def register(): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("register")().asInstanceOf[js.Promise[js.UndefOr[String]]]
+    inline def register(provider: ProviderResource): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(provider.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
   }
   
   @JSImport("@pulumi/pulumi/resource", "Resource")
@@ -286,61 +282,36 @@ object resourceMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/resource.Resource */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/pulumi.@pulumi/pulumi/resource.Resource */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/resource.Resource */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/pulumi.@pulumi/pulumi/resource.Resource */ Boolean]
   }
   
-  @scala.inline
-  def createUrn(name: Input[String], `type`: Input[String]): Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Output_[String]]
-  @scala.inline
-  def createUrn(name: Input[String], `type`: Input[String], parent: Unit, project: String): Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any])).asInstanceOf[Output_[String]]
-  @scala.inline
-  def createUrn(name: Input[String], `type`: Input[String], parent: Unit, project: String, stack: String): Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[Output_[String]]
-  @scala.inline
-  def createUrn(name: Input[String], `type`: Input[String], parent: Unit, project: Unit, stack: String): Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[Output_[String]]
-  @scala.inline
-  def createUrn(name: Input[String], `type`: Input[String], parent: Input[URN]): Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Output_[String]]
-  @scala.inline
-  def createUrn(name: Input[String], `type`: Input[String], parent: Input[URN], project: String): Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any])).asInstanceOf[Output_[String]]
-  @scala.inline
-  def createUrn(name: Input[String], `type`: Input[String], parent: Input[URN], project: String, stack: String): Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[Output_[String]]
-  @scala.inline
-  def createUrn(name: Input[String], `type`: Input[String], parent: Input[URN], project: Unit, stack: String): Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[Output_[String]]
-  @scala.inline
-  def createUrn(name: Input[String], `type`: Input[String], parent: Resource): Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Output_[String]]
-  @scala.inline
-  def createUrn(name: Input[String], `type`: Input[String], parent: Resource, project: String): Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any])).asInstanceOf[Output_[String]]
-  @scala.inline
-  def createUrn(name: Input[String], `type`: Input[String], parent: Resource, project: String, stack: String): Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[Output_[String]]
-  @scala.inline
-  def createUrn(name: Input[String], `type`: Input[String], parent: Resource, project: Unit, stack: String): Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[Output_[String]]
+  inline def createUrn(name: Input[String], `type`: Input[String]): Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Output_[String]]
+  inline def createUrn(name: Input[String], `type`: Input[String], parent: Unit, project: String): Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any])).asInstanceOf[Output_[String]]
+  inline def createUrn(name: Input[String], `type`: Input[String], parent: Unit, project: String, stack: String): Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[Output_[String]]
+  inline def createUrn(name: Input[String], `type`: Input[String], parent: Unit, project: Unit, stack: String): Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[Output_[String]]
+  inline def createUrn(name: Input[String], `type`: Input[String], parent: Input[URN]): Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Output_[String]]
+  inline def createUrn(name: Input[String], `type`: Input[String], parent: Input[URN], project: String): Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any])).asInstanceOf[Output_[String]]
+  inline def createUrn(name: Input[String], `type`: Input[String], parent: Input[URN], project: String, stack: String): Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[Output_[String]]
+  inline def createUrn(name: Input[String], `type`: Input[String], parent: Input[URN], project: Unit, stack: String): Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[Output_[String]]
+  inline def createUrn(name: Input[String], `type`: Input[String], parent: Resource): Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Output_[String]]
+  inline def createUrn(name: Input[String], `type`: Input[String], parent: Resource, project: String): Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any])).asInstanceOf[Output_[String]]
+  inline def createUrn(name: Input[String], `type`: Input[String], parent: Resource, project: String, stack: String): Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[Output_[String]]
+  inline def createUrn(name: Input[String], `type`: Input[String], parent: Resource, project: Unit, stack: String): Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[Output_[String]]
   
-  @scala.inline
-  def mergeOptions(): CustomResourceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")().asInstanceOf[CustomResourceOptions]
-  @scala.inline
-  def mergeOptions(opts1: Unit, opts2: ComponentResourceOptions): ComponentResourceOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any], opts2.asInstanceOf[js.Any])).asInstanceOf[ComponentResourceOptions]
-  @scala.inline
-  def mergeOptions(opts1: Unit, opts2: CustomResourceOptions): CustomResourceOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any], opts2.asInstanceOf[js.Any])).asInstanceOf[CustomResourceOptions]
-  @scala.inline
-  def mergeOptions(opts1: Unit, opts2: ResourceOptions): ResourceOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any], opts2.asInstanceOf[js.Any])).asInstanceOf[ResourceOptions]
-  @scala.inline
-  def mergeOptions(opts1: ComponentResourceOptions): ComponentResourceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any]).asInstanceOf[ComponentResourceOptions]
-  @scala.inline
-  def mergeOptions(opts1: ComponentResourceOptions, opts2: ComponentResourceOptions): ComponentResourceOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any], opts2.asInstanceOf[js.Any])).asInstanceOf[ComponentResourceOptions]
-  @scala.inline
-  def mergeOptions(opts1: CustomResourceOptions): CustomResourceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any]).asInstanceOf[CustomResourceOptions]
-  @scala.inline
-  def mergeOptions(opts1: CustomResourceOptions, opts2: CustomResourceOptions): CustomResourceOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any], opts2.asInstanceOf[js.Any])).asInstanceOf[CustomResourceOptions]
-  @scala.inline
-  def mergeOptions(opts1: ResourceOptions): ResourceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any]).asInstanceOf[ResourceOptions]
-  @scala.inline
-  def mergeOptions(opts1: ResourceOptions, opts2: ResourceOptions): ResourceOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any], opts2.asInstanceOf[js.Any])).asInstanceOf[ResourceOptions]
+  inline def mergeOptions(): CustomResourceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")().asInstanceOf[CustomResourceOptions]
+  inline def mergeOptions(opts1: Unit, opts2: ComponentResourceOptions): ComponentResourceOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any], opts2.asInstanceOf[js.Any])).asInstanceOf[ComponentResourceOptions]
+  inline def mergeOptions(opts1: Unit, opts2: CustomResourceOptions): CustomResourceOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any], opts2.asInstanceOf[js.Any])).asInstanceOf[CustomResourceOptions]
+  inline def mergeOptions(opts1: Unit, opts2: ResourceOptions): ResourceOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any], opts2.asInstanceOf[js.Any])).asInstanceOf[ResourceOptions]
+  inline def mergeOptions(opts1: ComponentResourceOptions): ComponentResourceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any]).asInstanceOf[ComponentResourceOptions]
+  inline def mergeOptions(opts1: ComponentResourceOptions, opts2: ComponentResourceOptions): ComponentResourceOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any], opts2.asInstanceOf[js.Any])).asInstanceOf[ComponentResourceOptions]
+  inline def mergeOptions(opts1: CustomResourceOptions): CustomResourceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any]).asInstanceOf[CustomResourceOptions]
+  inline def mergeOptions(opts1: CustomResourceOptions, opts2: CustomResourceOptions): CustomResourceOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any], opts2.asInstanceOf[js.Any])).asInstanceOf[CustomResourceOptions]
+  inline def mergeOptions(opts1: ResourceOptions): ResourceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any]).asInstanceOf[ResourceOptions]
+  inline def mergeOptions(opts1: ResourceOptions, opts2: ResourceOptions): ResourceOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any], opts2.asInstanceOf[js.Any])).asInstanceOf[ResourceOptions]
   
-  @scala.inline
-  def mergeOptions_ComponentResourceOptions(): ComponentResourceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")().asInstanceOf[ComponentResourceOptions]
+  inline def mergeOptions_ComponentResourceOptions(): ComponentResourceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")().asInstanceOf[ComponentResourceOptions]
   
-  @scala.inline
-  def mergeOptions_ResourceOptions(): ResourceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")().asInstanceOf[ResourceOptions]
+  inline def mergeOptions_ResourceOptions(): ResourceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")().asInstanceOf[ResourceOptions]
   
   @JSImport("@pulumi/pulumi/resource", "rootStackResource")
   @js.native
@@ -380,44 +351,32 @@ object resourceMod {
   }
   object Alias {
     
-    @scala.inline
-    def apply(): Alias = {
+    inline def apply(): Alias = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Alias]
     }
     
-    @scala.inline
-    implicit class AliasMutableBuilder[Self <: Alias] (val x: Self) extends AnyVal {
+    extension [Self <: Alias](x: Self) {
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setParent(value: Resource | Input[URN]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: Resource | Input[URN]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
       
-      @scala.inline
-      def setProject(value: Input[String]): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: Input[String]): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+      inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
       
-      @scala.inline
-      def setStack(value: Input[String]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: Input[String]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+      inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -438,23 +397,18 @@ object resourceMod {
   }
   object ComponentResourceOptions {
     
-    @scala.inline
-    def apply(): ComponentResourceOptions = {
+    inline def apply(): ComponentResourceOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ComponentResourceOptions]
     }
     
-    @scala.inline
-    implicit class ComponentResourceOptionsMutableBuilder[Self <: ComponentResourceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ComponentResourceOptions](x: Self) {
       
-      @scala.inline
-      def setProviders(value: (Record[String, ProviderResource]) | js.Array[ProviderResource]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
+      inline def setProviders(value: (Record[String, ProviderResource]) | js.Array[ProviderResource]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
+      inline def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
       
-      @scala.inline
-      def setProvidersVarargs(value: ProviderResource*): Self = StObject.set(x, "providers", js.Array(value :_*))
+      inline def setProvidersVarargs(value: ProviderResource*): Self = StObject.set(x, "providers", js.Array(value :_*))
     }
   }
   
@@ -485,35 +439,26 @@ object resourceMod {
   }
   object CustomResourceOptions {
     
-    @scala.inline
-    def apply(): CustomResourceOptions = {
+    inline def apply(): CustomResourceOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CustomResourceOptions]
     }
     
-    @scala.inline
-    implicit class CustomResourceOptionsMutableBuilder[Self <: CustomResourceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CustomResourceOptions](x: Self) {
       
-      @scala.inline
-      def setAdditionalSecretOutputs(value: js.Array[String]): Self = StObject.set(x, "additionalSecretOutputs", value.asInstanceOf[js.Any])
+      inline def setAdditionalSecretOutputs(value: js.Array[String]): Self = StObject.set(x, "additionalSecretOutputs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalSecretOutputsUndefined: Self = StObject.set(x, "additionalSecretOutputs", js.undefined)
+      inline def setAdditionalSecretOutputsUndefined: Self = StObject.set(x, "additionalSecretOutputs", js.undefined)
       
-      @scala.inline
-      def setAdditionalSecretOutputsVarargs(value: String*): Self = StObject.set(x, "additionalSecretOutputs", js.Array(value :_*))
+      inline def setAdditionalSecretOutputsVarargs(value: String*): Self = StObject.set(x, "additionalSecretOutputs", js.Array(value :_*))
       
-      @scala.inline
-      def setDeleteBeforeReplace(value: Boolean): Self = StObject.set(x, "deleteBeforeReplace", value.asInstanceOf[js.Any])
+      inline def setDeleteBeforeReplace(value: Boolean): Self = StObject.set(x, "deleteBeforeReplace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteBeforeReplaceUndefined: Self = StObject.set(x, "deleteBeforeReplace", js.undefined)
+      inline def setDeleteBeforeReplaceUndefined: Self = StObject.set(x, "deleteBeforeReplace", js.undefined)
       
-      @scala.inline
-      def setImport(value: ID): Self = StObject.set(x, "import", value.asInstanceOf[js.Any])
+      inline def setImport(value: ID): Self = StObject.set(x, "import", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportUndefined: Self = StObject.set(x, "import", js.undefined)
+      inline def setImportUndefined: Self = StObject.set(x, "import", js.undefined)
     }
   }
   
@@ -536,32 +481,24 @@ object resourceMod {
   }
   object CustomTimeouts {
     
-    @scala.inline
-    def apply(): CustomTimeouts = {
+    inline def apply(): CustomTimeouts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CustomTimeouts]
     }
     
-    @scala.inline
-    implicit class CustomTimeoutsMutableBuilder[Self <: CustomTimeouts] (val x: Self) extends AnyVal {
+    extension [Self <: CustomTimeouts](x: Self) {
       
-      @scala.inline
-      def setCreate(value: String): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+      inline def setCreate(value: String): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+      inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
       
-      @scala.inline
-      def setDelete(value: String): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+      inline def setDelete(value: String): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
+      inline def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
       
-      @scala.inline
-      def setUpdate(value: String): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+      inline def setUpdate(value: String): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+      inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     }
   }
   
@@ -629,86 +566,60 @@ object resourceMod {
   }
   object ResourceOptions {
     
-    @scala.inline
-    def apply(): ResourceOptions = {
+    inline def apply(): ResourceOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResourceOptions]
     }
     
-    @scala.inline
-    implicit class ResourceOptionsMutableBuilder[Self <: ResourceOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceOptions](x: Self) {
       
-      @scala.inline
-      def setAliases(value: js.Array[Input[URN | Alias]]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
+      inline def setAliases(value: js.Array[Input[URN | Alias]]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
+      inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
       
-      @scala.inline
-      def setAliasesVarargs(value: (Input[URN | Alias])*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+      inline def setAliasesVarargs(value: (Input[URN | Alias])*): Self = StObject.set(x, "aliases", js.Array(value :_*))
       
-      @scala.inline
-      def setCustomTimeouts(value: CustomTimeouts): Self = StObject.set(x, "customTimeouts", value.asInstanceOf[js.Any])
+      inline def setCustomTimeouts(value: CustomTimeouts): Self = StObject.set(x, "customTimeouts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomTimeoutsUndefined: Self = StObject.set(x, "customTimeouts", js.undefined)
+      inline def setCustomTimeoutsUndefined: Self = StObject.set(x, "customTimeouts", js.undefined)
       
-      @scala.inline
-      def setDependsOn(value: Input[js.Array[Input[Resource]] | Resource]): Self = StObject.set(x, "dependsOn", value.asInstanceOf[js.Any])
+      inline def setDependsOn(value: Input[js.Array[Input[Resource]] | Resource]): Self = StObject.set(x, "dependsOn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDependsOnUndefined: Self = StObject.set(x, "dependsOn", js.undefined)
+      inline def setDependsOnUndefined: Self = StObject.set(x, "dependsOn", js.undefined)
       
-      @scala.inline
-      def setDependsOnVarargs(value: Input[Resource]*): Self = StObject.set(x, "dependsOn", js.Array(value :_*))
+      inline def setDependsOnVarargs(value: Input[Resource]*): Self = StObject.set(x, "dependsOn", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: Input[ID]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Input[ID]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setIgnoreChanges(value: js.Array[String]): Self = StObject.set(x, "ignoreChanges", value.asInstanceOf[js.Any])
+      inline def setIgnoreChanges(value: js.Array[String]): Self = StObject.set(x, "ignoreChanges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreChangesUndefined: Self = StObject.set(x, "ignoreChanges", js.undefined)
+      inline def setIgnoreChangesUndefined: Self = StObject.set(x, "ignoreChanges", js.undefined)
       
-      @scala.inline
-      def setIgnoreChangesVarargs(value: String*): Self = StObject.set(x, "ignoreChanges", js.Array(value :_*))
+      inline def setIgnoreChangesVarargs(value: String*): Self = StObject.set(x, "ignoreChanges", js.Array(value :_*))
       
-      @scala.inline
-      def setParent(value: Resource): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: Resource): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
       
-      @scala.inline
-      def setProtect(value: Boolean): Self = StObject.set(x, "protect", value.asInstanceOf[js.Any])
+      inline def setProtect(value: Boolean): Self = StObject.set(x, "protect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtectUndefined: Self = StObject.set(x, "protect", js.undefined)
+      inline def setProtectUndefined: Self = StObject.set(x, "protect", js.undefined)
       
-      @scala.inline
-      def setProvider(value: ProviderResource): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+      inline def setProvider(value: ProviderResource): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
+      inline def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)
       
-      @scala.inline
-      def setTransformations(value: js.Array[ResourceTransformation]): Self = StObject.set(x, "transformations", value.asInstanceOf[js.Any])
+      inline def setTransformations(value: js.Array[ResourceTransformation]): Self = StObject.set(x, "transformations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformationsUndefined: Self = StObject.set(x, "transformations", js.undefined)
+      inline def setTransformationsUndefined: Self = StObject.set(x, "transformations", js.undefined)
       
-      @scala.inline
-      def setTransformationsVarargs(value: ResourceTransformation*): Self = StObject.set(x, "transformations", js.Array(value :_*))
+      inline def setTransformationsVarargs(value: ResourceTransformation*): Self = StObject.set(x, "transformations", js.Array(value :_*))
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -743,30 +654,23 @@ object resourceMod {
   }
   object ResourceTransformationArgs {
     
-    @scala.inline
-    def apply(name: String, opts: ResourceOptions, props: Inputs, resource: Resource, `type`: String): ResourceTransformationArgs = {
+    inline def apply(name: String, opts: ResourceOptions, props: Inputs, resource: Resource, `type`: String): ResourceTransformationArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], opts = opts.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResourceTransformationArgs]
     }
     
-    @scala.inline
-    implicit class ResourceTransformationArgsMutableBuilder[Self <: ResourceTransformationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceTransformationArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpts(value: ResourceOptions): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
+      inline def setOpts(value: ResourceOptions): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProps(value: Inputs): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: Inputs): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResource(value: Resource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: Resource): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -784,20 +688,16 @@ object resourceMod {
   }
   object ResourceTransformationResult {
     
-    @scala.inline
-    def apply(opts: ResourceOptions, props: Inputs): ResourceTransformationResult = {
+    inline def apply(opts: ResourceOptions, props: Inputs): ResourceTransformationResult = {
       val __obj = js.Dynamic.literal(opts = opts.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResourceTransformationResult]
     }
     
-    @scala.inline
-    implicit class ResourceTransformationResultMutableBuilder[Self <: ResourceTransformationResult] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceTransformationResult](x: Self) {
       
-      @scala.inline
-      def setOpts(value: ResourceOptions): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
+      inline def setOpts(value: ResourceOptions): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProps(value: Inputs): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: Inputs): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }
   }
   

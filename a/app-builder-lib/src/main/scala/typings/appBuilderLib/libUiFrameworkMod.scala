@@ -38,9 +38,9 @@ object libUiFrameworkMod {
     /* CompleteClass */
     override val isNpmRebuildRequired: Boolean = js.native
     
-    val isUseLaunchUi: Boolean = js.native
+    /* protected */ val isUseLaunchUi: Boolean = js.native
     
-    var isUseLaunchUiForPlatform: js.Any = js.native
+    /* private */ var isUseLaunchUiForPlatform: js.Any = js.native
     
     /* CompleteClass */
     override val macOsDefaultTargets: js.Array[String] = js.native
@@ -51,9 +51,9 @@ object libUiFrameworkMod {
     /* CompleteClass */
     override def prepareApplicationStageDirectory(options: PrepareApplicationStageDirectoryOptions): js.Promise[js.Any] = js.native
     
-    var prepareLinuxApplicationStageDirectory: js.Any = js.native
+    /* private */ var prepareLinuxApplicationStageDirectory: js.Any = js.native
     
-    var prepareMacosApplicationStageDirectory: js.Any = js.native
+    /* private */ var prepareMacosApplicationStageDirectory: js.Any = js.native
     
     /* CompleteClass */
     override val version: String = js.native

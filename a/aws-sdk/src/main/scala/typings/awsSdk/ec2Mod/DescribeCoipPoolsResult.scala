@@ -18,28 +18,21 @@ trait DescribeCoipPoolsResult extends StObject {
 }
 object DescribeCoipPoolsResult {
   
-  @scala.inline
-  def apply(): DescribeCoipPoolsResult = {
+  inline def apply(): DescribeCoipPoolsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeCoipPoolsResult]
   }
   
-  @scala.inline
-  implicit class DescribeCoipPoolsResultMutableBuilder[Self <: DescribeCoipPoolsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeCoipPoolsResult](x: Self) {
     
-    @scala.inline
-    def setCoipPools(value: CoipPoolSet): Self = StObject.set(x, "CoipPools", value.asInstanceOf[js.Any])
+    inline def setCoipPools(value: CoipPoolSet): Self = StObject.set(x, "CoipPools", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoipPoolsUndefined: Self = StObject.set(x, "CoipPools", js.undefined)
+    inline def setCoipPoolsUndefined: Self = StObject.set(x, "CoipPools", js.undefined)
     
-    @scala.inline
-    def setCoipPoolsVarargs(value: CoipPool*): Self = StObject.set(x, "CoipPools", js.Array(value :_*))
+    inline def setCoipPoolsVarargs(value: CoipPool*): Self = StObject.set(x, "CoipPools", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -21,8 +21,7 @@ trait KeyCombination extends StObject {
 }
 object KeyCombination {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     id: MouseTrapKeySequence,
     keys: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in react-hotkeys.react-hotkeys.KeyName ]: true}
@@ -32,17 +31,13 @@ object KeyCombination {
     __obj.asInstanceOf[KeyCombination]
   }
   
-  @scala.inline
-  implicit class KeyCombinationMutableBuilder[Self <: KeyCombination] (val x: Self) extends AnyVal {
+  extension [Self <: KeyCombination](x: Self) {
     
-    @scala.inline
-    def setId(value: MouseTrapKeySequence): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: MouseTrapKeySequence): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdVarargs(value: String*): Self = StObject.set(x, "id", js.Array(value :_*))
+    inline def setIdVarargs(value: String*): Self = StObject.set(x, "id", js.Array(value :_*))
     
-    @scala.inline
-    def setKeys(
+    inline def setKeys(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in react-hotkeys.react-hotkeys.KeyName ]: true}
       */ typings.reactHotkeys.reactHotkeysStrings.KeyCombination & TopLevel[js.Any]

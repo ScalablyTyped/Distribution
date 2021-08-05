@@ -16,19 +16,15 @@ trait SchemaGooglePrivacyDlpV2TableLocation extends StObject {
 }
 object SchemaGooglePrivacyDlpV2TableLocation {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2TableLocation = {
+  inline def apply(): SchemaGooglePrivacyDlpV2TableLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2TableLocation]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2TableLocationMutableBuilder[Self <: SchemaGooglePrivacyDlpV2TableLocation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2TableLocation](x: Self) {
     
-    @scala.inline
-    def setRowIndex(value: String): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
+    inline def setRowIndex(value: String): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
+    inline def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
   }
 }

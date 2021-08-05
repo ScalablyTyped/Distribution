@@ -14,27 +14,22 @@ trait FlexWrapProps extends StObject {
 }
 object FlexWrapProps {
   
-  @scala.inline
-  def apply(): FlexWrapProps = {
+  inline def apply(): FlexWrapProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FlexWrapProps]
   }
   
-  @scala.inline
-  implicit class FlexWrapPropsMutableBuilder[Self <: FlexWrapProps] (val x: Self) extends AnyVal {
+  extension [Self <: FlexWrapProps](x: Self) {
     
-    @scala.inline
-    def setFlexWrap(
+    inline def setFlexWrap(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexWrap */ js.Any
         ]
     ): Self = StObject.set(x, "flexWrap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlexWrapUndefined: Self = StObject.set(x, "flexWrap", js.undefined)
+    inline def setFlexWrapUndefined: Self = StObject.set(x, "flexWrap", js.undefined)
     
-    @scala.inline
-    def setFlexWrapVarargs(
+    inline def setFlexWrapVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexWrap */ js.Any)*
     ): Self = StObject.set(x, "flexWrap", js.Array(value :_*))
   }

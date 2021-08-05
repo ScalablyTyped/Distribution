@@ -13,22 +13,17 @@ trait PreserveFocus extends StObject {
 }
 object PreserveFocus {
   
-  @scala.inline
-  def apply(viewColumn: ViewColumn): PreserveFocus = {
+  inline def apply(viewColumn: ViewColumn): PreserveFocus = {
     val __obj = js.Dynamic.literal(viewColumn = viewColumn.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreserveFocus]
   }
   
-  @scala.inline
-  implicit class PreserveFocusMutableBuilder[Self <: PreserveFocus] (val x: Self) extends AnyVal {
+  extension [Self <: PreserveFocus](x: Self) {
     
-    @scala.inline
-    def setPreserveFocus(value: Boolean): Self = StObject.set(x, "preserveFocus", value.asInstanceOf[js.Any])
+    inline def setPreserveFocus(value: Boolean): Self = StObject.set(x, "preserveFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveFocusUndefined: Self = StObject.set(x, "preserveFocus", js.undefined)
+    inline def setPreserveFocusUndefined: Self = StObject.set(x, "preserveFocus", js.undefined)
     
-    @scala.inline
-    def setViewColumn(value: ViewColumn): Self = StObject.set(x, "viewColumn", value.asInstanceOf[js.Any])
+    inline def setViewColumn(value: ViewColumn): Self = StObject.set(x, "viewColumn", value.asInstanceOf[js.Any])
   }
 }

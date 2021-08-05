@@ -14,25 +14,19 @@ trait RouterAdvertisedIpRange extends StObject {
 }
 object RouterAdvertisedIpRange {
   
-  @scala.inline
-  def apply(): RouterAdvertisedIpRange = {
+  inline def apply(): RouterAdvertisedIpRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RouterAdvertisedIpRange]
   }
   
-  @scala.inline
-  implicit class RouterAdvertisedIpRangeMutableBuilder[Self <: RouterAdvertisedIpRange] (val x: Self) extends AnyVal {
+  extension [Self <: RouterAdvertisedIpRange](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

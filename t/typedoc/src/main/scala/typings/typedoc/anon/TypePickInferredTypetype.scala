@@ -13,20 +13,16 @@ trait TypePickInferredTypetype extends StObject {
 }
 object TypePickInferredTypetype {
   
-  @scala.inline
-  def apply(`type`: ModelToObject[String] | String): TypePickInferredTypetype = {
+  inline def apply(`type`: ModelToObject[String] | String): TypePickInferredTypetype = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypePickInferredTypetype]
   }
   
-  @scala.inline
-  implicit class TypePickInferredTypetypeMutableBuilder[Self <: TypePickInferredTypetype] (val x: Self) extends AnyVal {
+  extension [Self <: TypePickInferredTypetype](x: Self) {
     
-    @scala.inline
-    def setType(value: ModelToObject[String] | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ModelToObject[String] | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
+    inline def setTypeVarargs(value: _ModelToObject[js.Any]*): Self = StObject.set(x, "type", js.Array(value :_*))
   }
 }

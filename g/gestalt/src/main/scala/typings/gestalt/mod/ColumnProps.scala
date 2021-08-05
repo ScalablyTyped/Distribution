@@ -19,40 +19,29 @@ trait ColumnProps extends StObject {
 }
 object ColumnProps {
   
-  @scala.inline
-  def apply(span: UnsignedUpTo12): ColumnProps = {
+  inline def apply(span: UnsignedUpTo12): ColumnProps = {
     val __obj = js.Dynamic.literal(span = span.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnProps]
   }
   
-  @scala.inline
-  implicit class ColumnPropsMutableBuilder[Self <: ColumnProps] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setLgSpan(value: UnsignedUpTo12): Self = StObject.set(x, "lgSpan", value.asInstanceOf[js.Any])
+    inline def setLgSpan(value: UnsignedUpTo12): Self = StObject.set(x, "lgSpan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLgSpanUndefined: Self = StObject.set(x, "lgSpan", js.undefined)
+    inline def setLgSpanUndefined: Self = StObject.set(x, "lgSpan", js.undefined)
     
-    @scala.inline
-    def setMdSpan(value: UnsignedUpTo12): Self = StObject.set(x, "mdSpan", value.asInstanceOf[js.Any])
+    inline def setMdSpan(value: UnsignedUpTo12): Self = StObject.set(x, "mdSpan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMdSpanUndefined: Self = StObject.set(x, "mdSpan", js.undefined)
+    inline def setMdSpanUndefined: Self = StObject.set(x, "mdSpan", js.undefined)
     
-    @scala.inline
-    def setSmSpan(value: UnsignedUpTo12): Self = StObject.set(x, "smSpan", value.asInstanceOf[js.Any])
+    inline def setSmSpan(value: UnsignedUpTo12): Self = StObject.set(x, "smSpan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmSpanUndefined: Self = StObject.set(x, "smSpan", js.undefined)
+    inline def setSmSpanUndefined: Self = StObject.set(x, "smSpan", js.undefined)
     
-    @scala.inline
-    def setSpan(value: UnsignedUpTo12): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+    inline def setSpan(value: UnsignedUpTo12): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
   }
 }

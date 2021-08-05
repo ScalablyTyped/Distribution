@@ -25,25 +25,19 @@ trait ApplicationLoadOptions extends StObject {
 }
 object ApplicationLoadOptions {
   
-  @scala.inline
-  def apply(): ApplicationLoadOptions = {
+  inline def apply(): ApplicationLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApplicationLoadOptions]
   }
   
-  @scala.inline
-  implicit class ApplicationLoadOptionsMutableBuilder[Self <: ApplicationLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setNotebooks(value: NotebookCollectionLoadOptions): Self = StObject.set(x, "notebooks", value.asInstanceOf[js.Any])
+    inline def setNotebooks(value: NotebookCollectionLoadOptions): Self = StObject.set(x, "notebooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotebooksUndefined: Self = StObject.set(x, "notebooks", js.undefined)
+    inline def setNotebooksUndefined: Self = StObject.set(x, "notebooks", js.undefined)
   }
 }

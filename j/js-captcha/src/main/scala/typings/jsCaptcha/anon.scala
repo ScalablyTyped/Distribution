@@ -22,50 +22,36 @@ object anon {
   }
   object FillStyle {
     
-    @scala.inline
-    def apply(): FillStyle = {
+    inline def apply(): FillStyle = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FillStyle]
     }
     
-    @scala.inline
-    implicit class FillStyleMutableBuilder[Self <: FillStyle] (val x: Self) extends AnyVal {
+    extension [Self <: FillStyle](x: Self) {
       
-      @scala.inline
-      def setFillStyle(value: String): Self = StObject.set(x, "fillStyle", value.asInstanceOf[js.Any])
+      inline def setFillStyle(value: String): Self = StObject.set(x, "fillStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillStyleUndefined: Self = StObject.set(x, "fillStyle", js.undefined)
+      inline def setFillStyleUndefined: Self = StObject.set(x, "fillStyle", js.undefined)
       
-      @scala.inline
-      def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+      inline def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+      inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+      inline def setTextAlign(value: String): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
+      inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
       
-      @scala.inline
-      def setTextBaseline(value: String): Self = StObject.set(x, "textBaseline", value.asInstanceOf[js.Any])
+      inline def setTextBaseline(value: String): Self = StObject.set(x, "textBaseline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextBaselineUndefined: Self = StObject.set(x, "textBaseline", js.undefined)
+      inline def setTextBaselineUndefined: Self = StObject.set(x, "textBaseline", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

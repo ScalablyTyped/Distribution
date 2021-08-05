@@ -43,16 +43,14 @@ object StaveHairpin {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def FormatByTicksAndDraw(
+  inline def FormatByTicksAndDraw(
     ctx: IRenderContext,
     formatter: typings.vexflow.Vex.Flow.Formatter,
     notes: Firstnote,
     `type`: `type`,
     position: Position
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FormatByTicksAndDraw")(ctx.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any], notes.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def FormatByTicksAndDraw(
+  inline def FormatByTicksAndDraw(
     ctx: IRenderContext,
     formatter: typings.vexflow.Vex.Flow.Formatter,
     notes: Firstnote,

@@ -44,23 +44,23 @@ object bindingParserMod {
       errors: js.Array[ParseError]
     ) = this()
     
-    var _checkPipes: js.Any = js.native
+    /* private */ var _checkPipes: js.Any = js.native
     
-    var _exprParser: js.Any = js.native
+    /* private */ var _exprParser: js.Any = js.native
     
-    var _interpolationConfig: js.Any = js.native
+    /* private */ var _interpolationConfig: js.Any = js.native
     
-    var _parseAction: js.Any = js.native
+    /* private */ var _parseAction: js.Any = js.native
     
-    var _parseAnimation: js.Any = js.native
+    /* private */ var _parseAnimation: js.Any = js.native
     
-    var _parseAnimationEvent: js.Any = js.native
+    /* private */ var _parseAnimationEvent: js.Any = js.native
     
-    var _parseBinding: js.Any = js.native
+    /* private */ var _parseBinding: js.Any = js.native
     
-    var _parsePropertyAst: js.Any = js.native
+    /* private */ var _parsePropertyAst: js.Any = js.native
     
-    var _parseRegularEvent: js.Any = js.native
+    /* private */ var _parseRegularEvent: js.Any = js.native
     
     /**
       * Parses the bindings in a microsyntax expression, e.g.
@@ -74,22 +74,22 @@ object bindingParserMod {
       * @param absoluteKeyOffset start of the `tplKey`
       * @param absoluteValueOffset start of the `tplValue`
       */
-    var _parseTemplateBindings: js.Any = js.native
+    /* private */ var _parseTemplateBindings: js.Any = js.native
     
-    var _reportError: js.Any = js.native
+    /* private */ var _reportError: js.Any = js.native
     
-    var _reportExpressionParserErrors: js.Any = js.native
+    /* private */ var _reportExpressionParserErrors: js.Any = js.native
     
-    var _schemaRegistry: js.Any = js.native
+    /* private */ var _schemaRegistry: js.Any = js.native
     
-    var _usedPipes: js.Any = js.native
+    /* private */ var _usedPipes: js.Any = js.native
     
     /**
       * @param propName the name of the property / attribute
       * @param sourceSpan
       * @param isAttr true when binding to an attribute
       */
-    var _validatePropertyOrAttributeName: js.Any = js.native
+    /* private */ var _validatePropertyOrAttributeName: js.Any = js.native
     
     def calcPossibleSecurityContexts(selector: String, propName: String, isAttribute: Boolean): js.Array[SecurityContext] = js.native
     
@@ -321,6 +321,5 @@ object bindingParserMod {
     var pipes: Map[String, BindingPipe] = js.native
   }
   
-  @scala.inline
-  def calcPossibleSecurityContexts(registry: ElementSchemaRegistry, selector: String, propName: String, isAttribute: Boolean): js.Array[SecurityContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcPossibleSecurityContexts")(registry.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], isAttribute.asInstanceOf[js.Any])).asInstanceOf[js.Array[SecurityContext]]
+  inline def calcPossibleSecurityContexts(registry: ElementSchemaRegistry, selector: String, propName: String, isAttribute: Boolean): js.Array[SecurityContext] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcPossibleSecurityContexts")(registry.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], isAttribute.asInstanceOf[js.Any])).asInstanceOf[js.Array[SecurityContext]]
 }

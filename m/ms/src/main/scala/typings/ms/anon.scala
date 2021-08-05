@@ -12,17 +12,14 @@ object anon {
   }
   object Long {
     
-    @scala.inline
-    def apply(long: Boolean): Long = {
+    inline def apply(long: Boolean): Long = {
       val __obj = js.Dynamic.literal(long = long.asInstanceOf[js.Any])
       __obj.asInstanceOf[Long]
     }
     
-    @scala.inline
-    implicit class LongMutableBuilder[Self <: Long] (val x: Self) extends AnyVal {
+    extension [Self <: Long](x: Self) {
       
-      @scala.inline
-      def setLong(value: Boolean): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
+      inline def setLong(value: Boolean): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
     }
   }
 }

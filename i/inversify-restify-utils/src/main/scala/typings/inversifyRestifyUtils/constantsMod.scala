@@ -19,11 +19,9 @@ object constantsMod {
     @JSImport("inversify-restify-utils/dts/constants", "METADATA_KEY.controllerMethod")
     @js.native
     def controllerMethod: String = js.native
-    @scala.inline
-    def controllerMethod_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("controllerMethod")(x.asInstanceOf[js.Any])
+    inline def controllerMethod_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("controllerMethod")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def controller_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("controller")(x.asInstanceOf[js.Any])
+    inline def controller_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("controller")(x.asInstanceOf[js.Any])
   }
   
   object TYPE {
@@ -35,7 +33,6 @@ object constantsMod {
     @JSImport("inversify-restify-utils/dts/constants", "TYPE.Controller")
     @js.native
     def Controller: js.Symbol = js.native
-    @scala.inline
-    def Controller_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Controller")(x.asInstanceOf[js.Any])
+    inline def Controller_=(x: js.Symbol): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Controller")(x.asInstanceOf[js.Any])
   }
 }

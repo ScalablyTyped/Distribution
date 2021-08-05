@@ -52,75 +52,55 @@ trait GoogleCloudDialogflowV2QueryParameters extends StObject {
 }
 object GoogleCloudDialogflowV2QueryParameters {
   
-  @scala.inline
-  def apply(): GoogleCloudDialogflowV2QueryParameters = {
+  inline def apply(): GoogleCloudDialogflowV2QueryParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDialogflowV2QueryParameters]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDialogflowV2QueryParametersMutableBuilder[Self <: GoogleCloudDialogflowV2QueryParameters] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDialogflowV2QueryParameters](x: Self) {
     
-    @scala.inline
-    def setContexts(value: js.Array[GoogleCloudDialogflowV2Context]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
+    inline def setContexts(value: js.Array[GoogleCloudDialogflowV2Context]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
+    inline def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
     
-    @scala.inline
-    def setContextsVarargs(value: GoogleCloudDialogflowV2Context*): Self = StObject.set(x, "contexts", js.Array(value :_*))
+    inline def setContextsVarargs(value: GoogleCloudDialogflowV2Context*): Self = StObject.set(x, "contexts", js.Array(value :_*))
     
-    @scala.inline
-    def setGeoLocation(value: GoogleTypeLatLng): Self = StObject.set(x, "geoLocation", value.asInstanceOf[js.Any])
+    inline def setGeoLocation(value: GoogleTypeLatLng): Self = StObject.set(x, "geoLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeoLocationUndefined: Self = StObject.set(x, "geoLocation", js.undefined)
+    inline def setGeoLocationUndefined: Self = StObject.set(x, "geoLocation", js.undefined)
     
-    @scala.inline
-    def setPayload(
+    inline def setPayload(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2QueryParameters & TopLevel[js.Any]
     ): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
-    @scala.inline
-    def setResetContexts(value: Boolean): Self = StObject.set(x, "resetContexts", value.asInstanceOf[js.Any])
+    inline def setResetContexts(value: Boolean): Self = StObject.set(x, "resetContexts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetContextsUndefined: Self = StObject.set(x, "resetContexts", js.undefined)
+    inline def setResetContextsUndefined: Self = StObject.set(x, "resetContexts", js.undefined)
     
-    @scala.inline
-    def setSentimentAnalysisRequestConfig(value: GoogleCloudDialogflowV2SentimentAnalysisRequestConfig): Self = StObject.set(x, "sentimentAnalysisRequestConfig", value.asInstanceOf[js.Any])
+    inline def setSentimentAnalysisRequestConfig(value: GoogleCloudDialogflowV2SentimentAnalysisRequestConfig): Self = StObject.set(x, "sentimentAnalysisRequestConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentimentAnalysisRequestConfigUndefined: Self = StObject.set(x, "sentimentAnalysisRequestConfig", js.undefined)
+    inline def setSentimentAnalysisRequestConfigUndefined: Self = StObject.set(x, "sentimentAnalysisRequestConfig", js.undefined)
     
-    @scala.inline
-    def setSessionEntityTypes(value: js.Array[GoogleCloudDialogflowV2SessionEntityType]): Self = StObject.set(x, "sessionEntityTypes", value.asInstanceOf[js.Any])
+    inline def setSessionEntityTypes(value: js.Array[GoogleCloudDialogflowV2SessionEntityType]): Self = StObject.set(x, "sessionEntityTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionEntityTypesUndefined: Self = StObject.set(x, "sessionEntityTypes", js.undefined)
+    inline def setSessionEntityTypesUndefined: Self = StObject.set(x, "sessionEntityTypes", js.undefined)
     
-    @scala.inline
-    def setSessionEntityTypesVarargs(value: GoogleCloudDialogflowV2SessionEntityType*): Self = StObject.set(x, "sessionEntityTypes", js.Array(value :_*))
+    inline def setSessionEntityTypesVarargs(value: GoogleCloudDialogflowV2SessionEntityType*): Self = StObject.set(x, "sessionEntityTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
+    inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
+    inline def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
     
-    @scala.inline
-    def setWebhookHeaders(
+    inline def setWebhookHeaders(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2QueryParameters & TopLevel[js.Any]
     ): Self = StObject.set(x, "webhookHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebhookHeadersUndefined: Self = StObject.set(x, "webhookHeaders", js.undefined)
+    inline def setWebhookHeadersUndefined: Self = StObject.set(x, "webhookHeaders", js.undefined)
   }
 }

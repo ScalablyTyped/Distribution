@@ -25,50 +25,36 @@ object typesMod {
   }
   object Coords {
     
-    @scala.inline
-    def apply(): Coords = {
+    inline def apply(): Coords = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Coords]
     }
     
-    @scala.inline
-    implicit class CoordsMutableBuilder[Self <: Coords] (val x: Self) extends AnyVal {
+    extension [Self <: Coords](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+      inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      @scala.inline
-      def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+      inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+      inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+      inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -100,26 +86,20 @@ object typesMod {
   }
   object FixedPosition {
     
-    @scala.inline
-    def apply(actualX: HorizontalPosition, actualY: VerticalPosition): FixedPosition = {
+    inline def apply(actualX: HorizontalPosition, actualY: VerticalPosition): FixedPosition = {
       val __obj = js.Dynamic.literal(actualX = actualX.asInstanceOf[js.Any], actualY = actualY.asInstanceOf[js.Any])
       __obj.asInstanceOf[FixedPosition]
     }
     
-    @scala.inline
-    implicit class FixedPositionMutableBuilder[Self <: FixedPosition] (val x: Self) extends AnyVal {
+    extension [Self <: FixedPosition](x: Self) {
       
-      @scala.inline
-      def setActualX(value: HorizontalPosition): Self = StObject.set(x, "actualX", value.asInstanceOf[js.Any])
+      inline def setActualX(value: HorizontalPosition): Self = StObject.set(x, "actualX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActualY(value: VerticalPosition): Self = StObject.set(x, "actualY", value.asInstanceOf[js.Any])
+      inline def setActualY(value: VerticalPosition): Self = StObject.set(x, "actualY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: Coordspositionfixedabsolu): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Coordspositionfixedabsolu): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -201,86 +181,60 @@ object typesMod {
   }
   object FixedPositionOptions {
     
-    @scala.inline
-    def apply(): FixedPositionOptions = {
+    inline def apply(): FixedPositionOptions = {
       val __obj = js.Dynamic.literal(container = null, element = null)
       __obj.asInstanceOf[FixedPositionOptions]
     }
     
-    @scala.inline
-    implicit class FixedPositionOptionsMutableBuilder[Self <: FixedPositionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: FixedPositionOptions](x: Self) {
       
-      @scala.inline
-      def setAnchor(value: PartialPositionAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+      inline def setAnchor(value: PartialPositionAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+      inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
       
-      @scala.inline
-      def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainerNull: Self = StObject.set(x, "container", null)
+      inline def setContainerNull: Self = StObject.set(x, "container", null)
       
-      @scala.inline
-      def setDisableSwapping(value: Boolean): Self = StObject.set(x, "disableSwapping", value.asInstanceOf[js.Any])
+      inline def setDisableSwapping(value: Boolean): Self = StObject.set(x, "disableSwapping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableSwappingUndefined: Self = StObject.set(x, "disableSwapping", js.undefined)
+      inline def setDisableSwappingUndefined: Self = StObject.set(x, "disableSwapping", js.undefined)
       
-      @scala.inline
-      def setDisableVHBounds(value: Boolean): Self = StObject.set(x, "disableVHBounds", value.asInstanceOf[js.Any])
+      inline def setDisableVHBounds(value: Boolean): Self = StObject.set(x, "disableVHBounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableVHBoundsUndefined: Self = StObject.set(x, "disableVHBounds", js.undefined)
+      inline def setDisableVHBoundsUndefined: Self = StObject.set(x, "disableVHBounds", js.undefined)
       
-      @scala.inline
-      def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementNull: Self = StObject.set(x, "element", null)
+      inline def setElementNull: Self = StObject.set(x, "element", null)
       
-      @scala.inline
-      def setPreventOverlap(value: Boolean): Self = StObject.set(x, "preventOverlap", value.asInstanceOf[js.Any])
+      inline def setPreventOverlap(value: Boolean): Self = StObject.set(x, "preventOverlap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventOverlapUndefined: Self = StObject.set(x, "preventOverlap", js.undefined)
+      inline def setPreventOverlapUndefined: Self = StObject.set(x, "preventOverlap", js.undefined)
       
-      @scala.inline
-      def setTransformOrigin(value: Boolean): Self = StObject.set(x, "transformOrigin", value.asInstanceOf[js.Any])
+      inline def setTransformOrigin(value: Boolean): Self = StObject.set(x, "transformOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformOriginUndefined: Self = StObject.set(x, "transformOrigin", js.undefined)
+      inline def setTransformOriginUndefined: Self = StObject.set(x, "transformOrigin", js.undefined)
       
-      @scala.inline
-      def setVhMargin(value: Double): Self = StObject.set(x, "vhMargin", value.asInstanceOf[js.Any])
+      inline def setVhMargin(value: Double): Self = StObject.set(x, "vhMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVhMarginUndefined: Self = StObject.set(x, "vhMargin", js.undefined)
+      inline def setVhMarginUndefined: Self = StObject.set(x, "vhMargin", js.undefined)
       
-      @scala.inline
-      def setVwMargin(value: Double): Self = StObject.set(x, "vwMargin", value.asInstanceOf[js.Any])
+      inline def setVwMargin(value: Double): Self = StObject.set(x, "vwMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVwMarginUndefined: Self = StObject.set(x, "vwMargin", js.undefined)
+      inline def setVwMarginUndefined: Self = StObject.set(x, "vwMargin", js.undefined)
       
-      @scala.inline
-      def setWidth(value: PositionWidth): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: PositionWidth): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def setXMargin(value: Double): Self = StObject.set(x, "xMargin", value.asInstanceOf[js.Any])
+      inline def setXMargin(value: Double): Self = StObject.set(x, "xMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXMarginUndefined: Self = StObject.set(x, "xMargin", js.undefined)
+      inline def setXMarginUndefined: Self = StObject.set(x, "xMargin", js.undefined)
       
-      @scala.inline
-      def setYMargin(value: Double): Self = StObject.set(x, "yMargin", value.asInstanceOf[js.Any])
+      inline def setYMargin(value: Double): Self = StObject.set(x, "yMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYMarginUndefined: Self = StObject.set(x, "yMargin", js.undefined)
+      inline def setYMarginUndefined: Self = StObject.set(x, "yMargin", js.undefined)
     }
   }
   
@@ -294,20 +248,15 @@ object typesMod {
   trait HorizontalPosition extends StObject
   object HorizontalPosition {
     
-    @scala.inline
-    def center: typings.reactMdUtils.reactMdUtilsStrings.center = "center".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.center]
+    inline def center: typings.reactMdUtils.reactMdUtilsStrings.center = "center".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.center]
     
-    @scala.inline
-    def `inner-left`: typings.reactMdUtils.reactMdUtilsStrings.`inner-left` = "inner-left".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.`inner-left`]
+    inline def `inner-left`: typings.reactMdUtils.reactMdUtilsStrings.`inner-left` = "inner-left".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.`inner-left`]
     
-    @scala.inline
-    def `inner-right`: typings.reactMdUtils.reactMdUtilsStrings.`inner-right` = "inner-right".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.`inner-right`]
+    inline def `inner-right`: typings.reactMdUtils.reactMdUtilsStrings.`inner-right` = "inner-right".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.`inner-right`]
     
-    @scala.inline
-    def left: typings.reactMdUtils.reactMdUtilsStrings.left = "left".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.left]
+    inline def left: typings.reactMdUtils.reactMdUtilsStrings.left = "left".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.left]
     
-    @scala.inline
-    def right: typings.reactMdUtils.reactMdUtilsStrings.right = "right".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.right]
+    inline def right: typings.reactMdUtils.reactMdUtilsStrings.right = "right".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.right]
   }
   
   trait InitialCoords extends StObject {
@@ -330,26 +279,20 @@ object typesMod {
   }
   object InitialCoords {
     
-    @scala.inline
-    def apply(): InitialCoords = {
+    inline def apply(): InitialCoords = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InitialCoords]
     }
     
-    @scala.inline
-    implicit class InitialCoordsMutableBuilder[Self <: InitialCoords] (val x: Self) extends AnyVal {
+    extension [Self <: InitialCoords](x: Self) {
       
-      @scala.inline
-      def setInitialX(value: Double): Self = StObject.set(x, "initialX", value.asInstanceOf[js.Any])
+      inline def setInitialX(value: Double): Self = StObject.set(x, "initialX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialXUndefined: Self = StObject.set(x, "initialX", js.undefined)
+      inline def setInitialXUndefined: Self = StObject.set(x, "initialX", js.undefined)
       
-      @scala.inline
-      def setInitialY(value: Double): Self = StObject.set(x, "initialY", value.asInstanceOf[js.Any])
+      inline def setInitialY(value: Double): Self = StObject.set(x, "initialY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialYUndefined: Self = StObject.set(x, "initialY", js.undefined)
+      inline def setInitialYUndefined: Self = StObject.set(x, "initialY", js.undefined)
     }
   }
   
@@ -361,20 +304,16 @@ object typesMod {
   }
   object PositionAnchor {
     
-    @scala.inline
-    def apply(x: HorizontalPosition, y: VerticalPosition): PositionAnchor = {
+    inline def apply(x: HorizontalPosition, y: VerticalPosition): PositionAnchor = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[PositionAnchor]
     }
     
-    @scala.inline
-    implicit class PositionAnchorMutableBuilder[Self <: PositionAnchor] (val x: Self) extends AnyVal {
+    extension [Self <: PositionAnchor](x: Self) {
       
-      @scala.inline
-      def setX(value: HorizontalPosition): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: HorizontalPosition): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: VerticalPosition): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: VerticalPosition): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -386,14 +325,11 @@ object typesMod {
   trait PositionWidth extends StObject
   object PositionWidth {
     
-    @scala.inline
-    def auto: typings.reactMdUtils.reactMdUtilsStrings.auto = "auto".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.auto]
+    inline def auto: typings.reactMdUtils.reactMdUtilsStrings.auto = "auto".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.auto]
     
-    @scala.inline
-    def equal: typings.reactMdUtils.reactMdUtilsStrings.equal = "equal".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.equal]
+    inline def equal: typings.reactMdUtils.reactMdUtilsStrings.equal = "equal".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.equal]
     
-    @scala.inline
-    def min: typings.reactMdUtils.reactMdUtilsStrings.min = "min".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.min]
+    inline def min: typings.reactMdUtils.reactMdUtilsStrings.min = "min".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.min]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -405,17 +341,13 @@ object typesMod {
   trait SimplePosition extends StObject
   object SimplePosition {
     
-    @scala.inline
-    def above: typings.reactMdUtils.reactMdUtilsStrings.above = "above".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.above]
+    inline def above: typings.reactMdUtils.reactMdUtilsStrings.above = "above".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.above]
     
-    @scala.inline
-    def below: typings.reactMdUtils.reactMdUtilsStrings.below = "below".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.below]
+    inline def below: typings.reactMdUtils.reactMdUtilsStrings.below = "below".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.below]
     
-    @scala.inline
-    def left: typings.reactMdUtils.reactMdUtilsStrings.left = "left".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.left]
+    inline def left: typings.reactMdUtils.reactMdUtilsStrings.left = "left".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.left]
     
-    @scala.inline
-    def right: typings.reactMdUtils.reactMdUtilsStrings.right = "right".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.right]
+    inline def right: typings.reactMdUtils.reactMdUtilsStrings.right = "right".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.right]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -428,19 +360,14 @@ object typesMod {
   trait VerticalPosition extends StObject
   object VerticalPosition {
     
-    @scala.inline
-    def above: typings.reactMdUtils.reactMdUtilsStrings.above = "above".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.above]
+    inline def above: typings.reactMdUtils.reactMdUtilsStrings.above = "above".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.above]
     
-    @scala.inline
-    def below: typings.reactMdUtils.reactMdUtilsStrings.below = "below".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.below]
+    inline def below: typings.reactMdUtils.reactMdUtilsStrings.below = "below".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.below]
     
-    @scala.inline
-    def bottom: typings.reactMdUtils.reactMdUtilsStrings.bottom = "bottom".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.bottom]
+    inline def bottom: typings.reactMdUtils.reactMdUtilsStrings.bottom = "bottom".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.bottom]
     
-    @scala.inline
-    def center: typings.reactMdUtils.reactMdUtilsStrings.center = "center".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.center]
+    inline def center: typings.reactMdUtils.reactMdUtilsStrings.center = "center".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.center]
     
-    @scala.inline
-    def top: typings.reactMdUtils.reactMdUtilsStrings.top = "top".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.top]
+    inline def top: typings.reactMdUtils.reactMdUtilsStrings.top = "top".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.top]
   }
 }

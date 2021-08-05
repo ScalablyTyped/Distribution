@@ -15,17 +15,14 @@ trait ThrowStatement
 }
 object ThrowStatement {
   
-  @scala.inline
-  def apply(): ThrowStatement = {
+  inline def apply(): ThrowStatement = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("ThrowStatement")
     __obj.asInstanceOf[ThrowStatement]
   }
   
-  @scala.inline
-  implicit class ThrowStatementMutableBuilder[Self <: ThrowStatement] (val x: Self) extends AnyVal {
+  extension [Self <: ThrowStatement](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.ThrowStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.ThrowStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

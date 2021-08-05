@@ -15,11 +15,11 @@ object archiveTargetMod {
     def this(name: String, outDir: String, packager: PlatformPackager[js.Any]) = this()
     def this(name: String, outDir: String, packager: PlatformPackager[js.Any], isWriteUpdateInfo: Boolean) = this()
     
-    val isWriteUpdateInfo: js.Any = js.native
+    /* private */ val isWriteUpdateInfo: js.Any = js.native
     
     @JSName("options")
     val options_ArchiveTarget: TargetSpecificOptions = js.native
     
-    val packager: js.Any = js.native
+    /* private */ val packager: js.Any = js.native
   }
 }

@@ -17,23 +17,18 @@ object anon {
   }
   object End {
     
-    @scala.inline
-    def apply(end: DeclarationPos, source: js.Any, start: DeclarationPos): End = {
+    inline def apply(end: DeclarationPos, source: js.Any, start: DeclarationPos): End = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[End]
     }
     
-    @scala.inline
-    implicit class EndMutableBuilder[Self <: End] (val x: Self) extends AnyVal {
+    extension [Self <: End](x: Self) {
       
-      @scala.inline
-      def setEnd(value: DeclarationPos): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: DeclarationPos): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: DeclarationPos): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: DeclarationPos): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
 }

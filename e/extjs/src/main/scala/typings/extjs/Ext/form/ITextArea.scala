@@ -35,49 +35,35 @@ trait ITextArea
 }
 object ITextArea {
   
-  @scala.inline
-  def apply(): ITextArea = {
+  inline def apply(): ITextArea = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ITextArea]
   }
   
-  @scala.inline
-  implicit class ITextAreaMutableBuilder[Self <: ITextArea] (val x: Self) extends AnyVal {
+  extension [Self <: ITextArea](x: Self) {
     
-    @scala.inline
-    def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+    inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
+    inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
     
-    @scala.inline
-    def setEnterIsSpecial(value: Boolean): Self = StObject.set(x, "enterIsSpecial", value.asInstanceOf[js.Any])
+    inline def setEnterIsSpecial(value: Boolean): Self = StObject.set(x, "enterIsSpecial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterIsSpecialUndefined: Self = StObject.set(x, "enterIsSpecial", js.undefined)
+    inline def setEnterIsSpecialUndefined: Self = StObject.set(x, "enterIsSpecial", js.undefined)
     
-    @scala.inline
-    def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
+    inline def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
     
-    @scala.inline
-    def setPreventScrollbars(value: Boolean): Self = StObject.set(x, "preventScrollbars", value.asInstanceOf[js.Any])
+    inline def setPreventScrollbars(value: Boolean): Self = StObject.set(x, "preventScrollbars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreventScrollbarsUndefined: Self = StObject.set(x, "preventScrollbars", js.undefined)
+    inline def setPreventScrollbarsUndefined: Self = StObject.set(x, "preventScrollbars", js.undefined)
     
-    @scala.inline
-    def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    @scala.inline
-    def setTransformOriginalValue(value: /* value */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "transformOriginalValue", js.Any.fromFunction1(value))
+    inline def setTransformOriginalValue(value: /* value */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "transformOriginalValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTransformOriginalValueUndefined: Self = StObject.set(x, "transformOriginalValue", js.undefined)
+    inline def setTransformOriginalValueUndefined: Self = StObject.set(x, "transformOriginalValue", js.undefined)
   }
 }

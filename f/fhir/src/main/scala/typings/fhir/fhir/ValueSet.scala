@@ -174,214 +174,145 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ValueSet {
   
-  @scala.inline
-  def apply(status: code): ValueSet = {
+  inline def apply(status: code): ValueSet = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueSet]
   }
   
-  @scala.inline
-  implicit class ValueSetMutableBuilder[Self <: ValueSet] (val x: Self) extends AnyVal {
+  extension [Self <: ValueSet](x: Self) {
     
-    @scala.inline
-    def setCompose(value: ValueSetCompose): Self = StObject.set(x, "compose", value.asInstanceOf[js.Any])
+    inline def setCompose(value: ValueSetCompose): Self = StObject.set(x, "compose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComposeUndefined: Self = StObject.set(x, "compose", js.undefined)
+    inline def setComposeUndefined: Self = StObject.set(x, "compose", js.undefined)
     
-    @scala.inline
-    def setContact(value: js.Array[ContactDetail]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
+    inline def setContact(value: js.Array[ContactDetail]): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
+    inline def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
     
-    @scala.inline
-    def setContactVarargs(value: ContactDetail*): Self = StObject.set(x, "contact", js.Array(value :_*))
+    inline def setContactVarargs(value: ContactDetail*): Self = StObject.set(x, "contact", js.Array(value :_*))
     
-    @scala.inline
-    def setCopyright(value: markdown): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
+    inline def setCopyright(value: markdown): Self = StObject.set(x, "copyright", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
+    inline def setCopyrightUndefined: Self = StObject.set(x, "copyright", js.undefined)
     
-    @scala.inline
-    def setDate(value: dateTime): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: dateTime): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    @scala.inline
-    def setDescription(value: markdown): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: markdown): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setExpansion(value: ValueSetExpansion): Self = StObject.set(x, "expansion", value.asInstanceOf[js.Any])
+    inline def setExpansion(value: ValueSetExpansion): Self = StObject.set(x, "expansion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpansionUndefined: Self = StObject.set(x, "expansion", js.undefined)
+    inline def setExpansionUndefined: Self = StObject.set(x, "expansion", js.undefined)
     
-    @scala.inline
-    def setExperimental(value: Boolean): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
+    inline def setExperimental(value: Boolean): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExperimentalUndefined: Self = StObject.set(x, "experimental", js.undefined)
+    inline def setExperimentalUndefined: Self = StObject.set(x, "experimental", js.undefined)
     
-    @scala.inline
-    def setExtensible(value: Boolean): Self = StObject.set(x, "extensible", value.asInstanceOf[js.Any])
+    inline def setExtensible(value: Boolean): Self = StObject.set(x, "extensible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensibleUndefined: Self = StObject.set(x, "extensible", js.undefined)
+    inline def setExtensibleUndefined: Self = StObject.set(x, "extensible", js.undefined)
     
-    @scala.inline
-    def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+    inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
-    @scala.inline
-    def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value :_*))
+    inline def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value :_*))
     
-    @scala.inline
-    def setImmutable(value: Boolean): Self = StObject.set(x, "immutable", value.asInstanceOf[js.Any])
+    inline def setImmutable(value: Boolean): Self = StObject.set(x, "immutable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImmutableUndefined: Self = StObject.set(x, "immutable", js.undefined)
+    inline def setImmutableUndefined: Self = StObject.set(x, "immutable", js.undefined)
     
-    @scala.inline
-    def setJurisdiction(value: js.Array[CodeableConcept]): Self = StObject.set(x, "jurisdiction", value.asInstanceOf[js.Any])
+    inline def setJurisdiction(value: js.Array[CodeableConcept]): Self = StObject.set(x, "jurisdiction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJurisdictionUndefined: Self = StObject.set(x, "jurisdiction", js.undefined)
+    inline def setJurisdictionUndefined: Self = StObject.set(x, "jurisdiction", js.undefined)
     
-    @scala.inline
-    def setJurisdictionVarargs(value: CodeableConcept*): Self = StObject.set(x, "jurisdiction", js.Array(value :_*))
+    inline def setJurisdictionVarargs(value: CodeableConcept*): Self = StObject.set(x, "jurisdiction", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
+    inline def setPublisher(value: String): Self = StObject.set(x, "publisher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisherUndefined: Self = StObject.set(x, "publisher", js.undefined)
+    inline def setPublisherUndefined: Self = StObject.set(x, "publisher", js.undefined)
     
-    @scala.inline
-    def setPurpose(value: markdown): Self = StObject.set(x, "purpose", value.asInstanceOf[js.Any])
+    inline def setPurpose(value: markdown): Self = StObject.set(x, "purpose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPurposeUndefined: Self = StObject.set(x, "purpose", js.undefined)
+    inline def setPurposeUndefined: Self = StObject.set(x, "purpose", js.undefined)
     
-    @scala.inline
-    def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setUrl(value: uri): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: uri): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setUseContext(value: js.Array[UsageContext]): Self = StObject.set(x, "useContext", value.asInstanceOf[js.Any])
+    inline def setUseContext(value: js.Array[UsageContext]): Self = StObject.set(x, "useContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseContextUndefined: Self = StObject.set(x, "useContext", js.undefined)
+    inline def setUseContextUndefined: Self = StObject.set(x, "useContext", js.undefined)
     
-    @scala.inline
-    def setUseContextVarargs(value: UsageContext*): Self = StObject.set(x, "useContext", js.Array(value :_*))
+    inline def setUseContextVarargs(value: UsageContext*): Self = StObject.set(x, "useContext", js.Array(value :_*))
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
-    @scala.inline
-    def set_copyright(value: Element): Self = StObject.set(x, "_copyright", value.asInstanceOf[js.Any])
+    inline def set_copyright(value: Element): Self = StObject.set(x, "_copyright", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_copyrightUndefined: Self = StObject.set(x, "_copyright", js.undefined)
+    inline def set_copyrightUndefined: Self = StObject.set(x, "_copyright", js.undefined)
     
-    @scala.inline
-    def set_date(value: Element): Self = StObject.set(x, "_date", value.asInstanceOf[js.Any])
+    inline def set_date(value: Element): Self = StObject.set(x, "_date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_dateUndefined: Self = StObject.set(x, "_date", js.undefined)
+    inline def set_dateUndefined: Self = StObject.set(x, "_date", js.undefined)
     
-    @scala.inline
-    def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
+    inline def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
+    inline def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
     
-    @scala.inline
-    def set_experimental(value: Element): Self = StObject.set(x, "_experimental", value.asInstanceOf[js.Any])
+    inline def set_experimental(value: Element): Self = StObject.set(x, "_experimental", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_experimentalUndefined: Self = StObject.set(x, "_experimental", js.undefined)
+    inline def set_experimentalUndefined: Self = StObject.set(x, "_experimental", js.undefined)
     
-    @scala.inline
-    def set_extensible(value: Element): Self = StObject.set(x, "_extensible", value.asInstanceOf[js.Any])
+    inline def set_extensible(value: Element): Self = StObject.set(x, "_extensible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_extensibleUndefined: Self = StObject.set(x, "_extensible", js.undefined)
+    inline def set_extensibleUndefined: Self = StObject.set(x, "_extensible", js.undefined)
     
-    @scala.inline
-    def set_immutable(value: Element): Self = StObject.set(x, "_immutable", value.asInstanceOf[js.Any])
+    inline def set_immutable(value: Element): Self = StObject.set(x, "_immutable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_immutableUndefined: Self = StObject.set(x, "_immutable", js.undefined)
+    inline def set_immutableUndefined: Self = StObject.set(x, "_immutable", js.undefined)
     
-    @scala.inline
-    def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
+    inline def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
+    inline def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
     
-    @scala.inline
-    def set_publisher(value: Element): Self = StObject.set(x, "_publisher", value.asInstanceOf[js.Any])
+    inline def set_publisher(value: Element): Self = StObject.set(x, "_publisher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_publisherUndefined: Self = StObject.set(x, "_publisher", js.undefined)
+    inline def set_publisherUndefined: Self = StObject.set(x, "_publisher", js.undefined)
     
-    @scala.inline
-    def set_purpose(value: Element): Self = StObject.set(x, "_purpose", value.asInstanceOf[js.Any])
+    inline def set_purpose(value: Element): Self = StObject.set(x, "_purpose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_purposeUndefined: Self = StObject.set(x, "_purpose", js.undefined)
+    inline def set_purposeUndefined: Self = StObject.set(x, "_purpose", js.undefined)
     
-    @scala.inline
-    def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
+    inline def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
+    inline def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
     
-    @scala.inline
-    def set_title(value: Element): Self = StObject.set(x, "_title", value.asInstanceOf[js.Any])
+    inline def set_title(value: Element): Self = StObject.set(x, "_title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_titleUndefined: Self = StObject.set(x, "_title", js.undefined)
+    inline def set_titleUndefined: Self = StObject.set(x, "_title", js.undefined)
     
-    @scala.inline
-    def set_url(value: Element): Self = StObject.set(x, "_url", value.asInstanceOf[js.Any])
+    inline def set_url(value: Element): Self = StObject.set(x, "_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_urlUndefined: Self = StObject.set(x, "_url", js.undefined)
+    inline def set_urlUndefined: Self = StObject.set(x, "_url", js.undefined)
     
-    @scala.inline
-    def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
+    inline def set_version(value: Element): Self = StObject.set(x, "_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
+    inline def set_versionUndefined: Self = StObject.set(x, "_version", js.undefined)
   }
 }

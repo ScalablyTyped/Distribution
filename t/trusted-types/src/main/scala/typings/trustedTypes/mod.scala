@@ -28,26 +28,26 @@ object mod extends Shortcut {
     
     @JSGlobal("TrustedHTML")
     @js.native
-    class TrustedHTML protected () extends StObject {
+    /* private */ class TrustedHTML () extends StObject {
       
       // To prevent instantiting with 'new'.
-      var brand: `true` = js.native
+      /* private */ var brand: `true` = js.native
     }
     
     @JSGlobal("TrustedScript")
     @js.native
-    class TrustedScript protected () extends StObject {
+    /* private */ class TrustedScript () extends StObject {
       
       // To prevent instantiting with 'new'.
-      var brand: `true` = js.native
+      /* private */ var brand: `true` = js.native
     }
     
     @JSGlobal("TrustedScriptURL")
     @js.native
-    class TrustedScriptURL protected () extends StObject {
+    /* private */ class TrustedScriptURL () extends StObject {
       
       // To prevent instantiting with 'new'.
-      var brand: `true` = js.native
+      /* private */ var brand: `true` = js.native
     }
     
     trait TrustedTypePolicy[Options /* <: TrustedTypePolicyOptions */] extends StObject {
@@ -71,8 +71,7 @@ object mod extends Shortcut {
     }
     object TrustedTypePolicy {
       
-      @scala.inline
-      def apply[Options /* <: TrustedTypePolicyOptions */](
+      inline def apply[Options /* <: TrustedTypePolicyOptions */](
         createHTML: Args[Options, createHTML] => TrustedHTML,
         createScript: Args[Options, createScript] => TrustedScript,
         createScriptURL: Args[Options, createScriptURL] => TrustedScriptURL,
@@ -82,20 +81,15 @@ object mod extends Shortcut {
         __obj.asInstanceOf[TrustedTypePolicy[Options]]
       }
       
-      @scala.inline
-      implicit class TrustedTypePolicyMutableBuilder[Self <: TrustedTypePolicy[?], Options /* <: TrustedTypePolicyOptions */] (val x: Self & TrustedTypePolicy[Options]) extends AnyVal {
+      extension [Self <: TrustedTypePolicy[?], Options /* <: TrustedTypePolicyOptions */](x: Self & TrustedTypePolicy[Options]) {
         
-        @scala.inline
-        def setCreateHTML(value: Args[Options, createHTML] => TrustedHTML): Self = StObject.set(x, "createHTML", js.Any.fromFunction1(value))
+        inline def setCreateHTML(value: Args[Options, createHTML] => TrustedHTML): Self = StObject.set(x, "createHTML", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setCreateScript(value: Args[Options, createScript] => TrustedScript): Self = StObject.set(x, "createScript", js.Any.fromFunction1(value))
+        inline def setCreateScript(value: Args[Options, createScript] => TrustedScript): Self = StObject.set(x, "createScript", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setCreateScriptURL(value: Args[Options, createScriptURL] => TrustedScriptURL): Self = StObject.set(x, "createScriptURL", js.Any.fromFunction1(value))
+        inline def setCreateScriptURL(value: Args[Options, createScriptURL] => TrustedScriptURL): Self = StObject.set(x, "createScriptURL", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       }
     }
     
@@ -136,32 +130,24 @@ object mod extends Shortcut {
     }
     object TrustedTypePolicyOptions {
       
-      @scala.inline
-      def apply(): TrustedTypePolicyOptions = {
+      inline def apply(): TrustedTypePolicyOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TrustedTypePolicyOptions]
       }
       
-      @scala.inline
-      implicit class TrustedTypePolicyOptionsMutableBuilder[Self <: TrustedTypePolicyOptions] (val x: Self) extends AnyVal {
+      extension [Self <: TrustedTypePolicyOptions](x: Self) {
         
-        @scala.inline
-        def setCreateHTML(value: (/* input */ String, /* repeated */ js.Any) => String): Self = StObject.set(x, "createHTML", js.Any.fromFunction2(value))
+        inline def setCreateHTML(value: (/* input */ String, /* repeated */ js.Any) => String): Self = StObject.set(x, "createHTML", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setCreateHTMLUndefined: Self = StObject.set(x, "createHTML", js.undefined)
+        inline def setCreateHTMLUndefined: Self = StObject.set(x, "createHTML", js.undefined)
         
-        @scala.inline
-        def setCreateScript(value: (/* input */ String, /* repeated */ js.Any) => String): Self = StObject.set(x, "createScript", js.Any.fromFunction2(value))
+        inline def setCreateScript(value: (/* input */ String, /* repeated */ js.Any) => String): Self = StObject.set(x, "createScript", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setCreateScriptURL(value: (/* input */ String, /* repeated */ js.Any) => String): Self = StObject.set(x, "createScriptURL", js.Any.fromFunction2(value))
+        inline def setCreateScriptURL(value: (/* input */ String, /* repeated */ js.Any) => String): Self = StObject.set(x, "createScriptURL", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setCreateScriptURLUndefined: Self = StObject.set(x, "createScriptURL", js.undefined)
+        inline def setCreateScriptURLUndefined: Self = StObject.set(x, "createScriptURL", js.undefined)
         
-        @scala.inline
-        def setCreateScriptUndefined: Self = StObject.set(x, "createScript", js.undefined)
+        inline def setCreateScriptUndefined: Self = StObject.set(x, "createScript", js.undefined)
       }
     }
     
@@ -184,8 +170,7 @@ object mod extends Shortcut {
     }
     object Window {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         TrustedHTML: TrustedHTML,
         TrustedScript: TrustedScript,
         TrustedScriptURL: TrustedScriptURL,
@@ -196,29 +181,21 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Window]
       }
       
-      @scala.inline
-      implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+      extension [Self <: Window](x: Self) {
         
-        @scala.inline
-        def setTrustedHTML(value: TrustedHTML): Self = StObject.set(x, "TrustedHTML", value.asInstanceOf[js.Any])
+        inline def setTrustedHTML(value: TrustedHTML): Self = StObject.set(x, "TrustedHTML", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTrustedScript(value: TrustedScript): Self = StObject.set(x, "TrustedScript", value.asInstanceOf[js.Any])
+        inline def setTrustedScript(value: TrustedScript): Self = StObject.set(x, "TrustedScript", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTrustedScriptURL(value: TrustedScriptURL): Self = StObject.set(x, "TrustedScriptURL", value.asInstanceOf[js.Any])
+        inline def setTrustedScriptURL(value: TrustedScriptURL): Self = StObject.set(x, "TrustedScriptURL", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTrustedTypePolicy(value: TrustedTypePolicy[TrustedTypePolicyOptions]): Self = StObject.set(x, "TrustedTypePolicy", value.asInstanceOf[js.Any])
+        inline def setTrustedTypePolicy(value: TrustedTypePolicy[TrustedTypePolicyOptions]): Self = StObject.set(x, "TrustedTypePolicy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTrustedTypePolicyFactory(value: TrustedTypePolicyFactory): Self = StObject.set(x, "TrustedTypePolicyFactory", value.asInstanceOf[js.Any])
+        inline def setTrustedTypePolicyFactory(value: TrustedTypePolicyFactory): Self = StObject.set(x, "TrustedTypePolicyFactory", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTrustedTypes(value: TrustedTypePolicyFactory): Self = StObject.set(x, "trustedTypes", value.asInstanceOf[js.Any])
+        inline def setTrustedTypes(value: TrustedTypePolicyFactory): Self = StObject.set(x, "trustedTypes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTrustedTypesUndefined: Self = StObject.set(x, "trustedTypes", js.undefined)
+        inline def setTrustedTypesUndefined: Self = StObject.set(x, "trustedTypes", js.undefined)
       }
     }
   }

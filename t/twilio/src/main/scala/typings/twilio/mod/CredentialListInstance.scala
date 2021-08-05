@@ -12,8 +12,7 @@ trait CredentialListInstance
 }
 object CredentialListInstance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     credentials: CredentialResource,
     delete: RestMethod,
     get: RestMethod,
@@ -24,10 +23,8 @@ object CredentialListInstance {
     __obj.asInstanceOf[CredentialListInstance]
   }
   
-  @scala.inline
-  implicit class CredentialListInstanceMutableBuilder[Self <: CredentialListInstance] (val x: Self) extends AnyVal {
+  extension [Self <: CredentialListInstance](x: Self) {
     
-    @scala.inline
-    def setCredentials(value: CredentialResource): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+    inline def setCredentials(value: CredentialResource): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
   }
 }

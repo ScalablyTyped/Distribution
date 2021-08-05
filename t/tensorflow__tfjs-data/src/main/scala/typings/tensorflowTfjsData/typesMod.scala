@@ -81,53 +81,38 @@ object typesMod {
   }
   object CSVConfig {
     
-    @scala.inline
-    def apply(): CSVConfig = {
+    inline def apply(): CSVConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CSVConfig]
     }
     
-    @scala.inline
-    implicit class CSVConfigMutableBuilder[Self <: CSVConfig] (val x: Self) extends AnyVal {
+    extension [Self <: CSVConfig](x: Self) {
       
-      @scala.inline
-      def setColumnConfigs(value: StringDictionary[ColumnConfig]): Self = StObject.set(x, "columnConfigs", value.asInstanceOf[js.Any])
+      inline def setColumnConfigs(value: StringDictionary[ColumnConfig]): Self = StObject.set(x, "columnConfigs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnConfigsUndefined: Self = StObject.set(x, "columnConfigs", js.undefined)
+      inline def setColumnConfigsUndefined: Self = StObject.set(x, "columnConfigs", js.undefined)
       
-      @scala.inline
-      def setColumnNames(value: js.Array[String]): Self = StObject.set(x, "columnNames", value.asInstanceOf[js.Any])
+      inline def setColumnNames(value: js.Array[String]): Self = StObject.set(x, "columnNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnNamesUndefined: Self = StObject.set(x, "columnNames", js.undefined)
+      inline def setColumnNamesUndefined: Self = StObject.set(x, "columnNames", js.undefined)
       
-      @scala.inline
-      def setColumnNamesVarargs(value: String*): Self = StObject.set(x, "columnNames", js.Array(value :_*))
+      inline def setColumnNamesVarargs(value: String*): Self = StObject.set(x, "columnNames", js.Array(value :_*))
       
-      @scala.inline
-      def setConfiguredColumnsOnly(value: Boolean): Self = StObject.set(x, "configuredColumnsOnly", value.asInstanceOf[js.Any])
+      inline def setConfiguredColumnsOnly(value: Boolean): Self = StObject.set(x, "configuredColumnsOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfiguredColumnsOnlyUndefined: Self = StObject.set(x, "configuredColumnsOnly", js.undefined)
+      inline def setConfiguredColumnsOnlyUndefined: Self = StObject.set(x, "configuredColumnsOnly", js.undefined)
       
-      @scala.inline
-      def setDelimWhitespace(value: Boolean): Self = StObject.set(x, "delimWhitespace", value.asInstanceOf[js.Any])
+      inline def setDelimWhitespace(value: Boolean): Self = StObject.set(x, "delimWhitespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimWhitespaceUndefined: Self = StObject.set(x, "delimWhitespace", js.undefined)
+      inline def setDelimWhitespaceUndefined: Self = StObject.set(x, "delimWhitespace", js.undefined)
       
-      @scala.inline
-      def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+      inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+      inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
       
-      @scala.inline
-      def setHasHeader(value: Boolean): Self = StObject.set(x, "hasHeader", value.asInstanceOf[js.Any])
+      inline def setHasHeader(value: Boolean): Self = StObject.set(x, "hasHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasHeaderUndefined: Self = StObject.set(x, "hasHeader", js.undefined)
+      inline def setHasHeaderUndefined: Self = StObject.set(x, "hasHeader", js.undefined)
     }
   }
   
@@ -143,38 +128,28 @@ object typesMod {
   }
   object ColumnConfig {
     
-    @scala.inline
-    def apply(): ColumnConfig = {
+    inline def apply(): ColumnConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ColumnConfig]
     }
     
-    @scala.inline
-    implicit class ColumnConfigMutableBuilder[Self <: ColumnConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ColumnConfig](x: Self) {
       
-      @scala.inline
-      def setDefault(value: TensorContainer): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: TensorContainer): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
+      inline def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDtypeUndefined: Self = StObject.set(x, "dtype", js.undefined)
+      inline def setDtypeUndefined: Self = StObject.set(x, "dtype", js.undefined)
       
-      @scala.inline
-      def setIsLabel(value: Boolean): Self = StObject.set(x, "isLabel", value.asInstanceOf[js.Any])
+      inline def setIsLabel(value: Boolean): Self = StObject.set(x, "isLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLabelUndefined: Self = StObject.set(x, "isLabel", js.undefined)
+      inline def setIsLabelUndefined: Self = StObject.set(x, "isLabel", js.undefined)
       
-      @scala.inline
-      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     }
   }
   
@@ -196,8 +171,7 @@ object typesMod {
        with Container[T]
   object ContainerObject {
     
-    @scala.inline
-    def apply[T](): ContainerObject[T] = {
+    inline def apply[T](): ContainerObject[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ContainerObject[T]]
     }
@@ -227,62 +201,44 @@ object typesMod {
   }
   object MicrophoneConfig {
     
-    @scala.inline
-    def apply(): MicrophoneConfig = {
+    inline def apply(): MicrophoneConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MicrophoneConfig]
     }
     
-    @scala.inline
-    implicit class MicrophoneConfigMutableBuilder[Self <: MicrophoneConfig] (val x: Self) extends AnyVal {
+    extension [Self <: MicrophoneConfig](x: Self) {
       
-      @scala.inline
-      def setAudioTrackConstraints(value: MediaTrackConstraints): Self = StObject.set(x, "audioTrackConstraints", value.asInstanceOf[js.Any])
+      inline def setAudioTrackConstraints(value: MediaTrackConstraints): Self = StObject.set(x, "audioTrackConstraints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudioTrackConstraintsUndefined: Self = StObject.set(x, "audioTrackConstraints", js.undefined)
+      inline def setAudioTrackConstraintsUndefined: Self = StObject.set(x, "audioTrackConstraints", js.undefined)
       
-      @scala.inline
-      def setColumnTruncateLength(value: Double): Self = StObject.set(x, "columnTruncateLength", value.asInstanceOf[js.Any])
+      inline def setColumnTruncateLength(value: Double): Self = StObject.set(x, "columnTruncateLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnTruncateLengthUndefined: Self = StObject.set(x, "columnTruncateLength", js.undefined)
+      inline def setColumnTruncateLengthUndefined: Self = StObject.set(x, "columnTruncateLength", js.undefined)
       
-      @scala.inline
-      def setFftSize(value: Double): Self = StObject.set(x, "fftSize", value.asInstanceOf[js.Any])
+      inline def setFftSize(value: Double): Self = StObject.set(x, "fftSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFftSizeUndefined: Self = StObject.set(x, "fftSize", js.undefined)
+      inline def setFftSizeUndefined: Self = StObject.set(x, "fftSize", js.undefined)
       
-      @scala.inline
-      def setIncludeSpectrogram(value: Boolean): Self = StObject.set(x, "includeSpectrogram", value.asInstanceOf[js.Any])
+      inline def setIncludeSpectrogram(value: Boolean): Self = StObject.set(x, "includeSpectrogram", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeSpectrogramUndefined: Self = StObject.set(x, "includeSpectrogram", js.undefined)
+      inline def setIncludeSpectrogramUndefined: Self = StObject.set(x, "includeSpectrogram", js.undefined)
       
-      @scala.inline
-      def setIncludeWaveform(value: Boolean): Self = StObject.set(x, "includeWaveform", value.asInstanceOf[js.Any])
+      inline def setIncludeWaveform(value: Boolean): Self = StObject.set(x, "includeWaveform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeWaveformUndefined: Self = StObject.set(x, "includeWaveform", js.undefined)
+      inline def setIncludeWaveformUndefined: Self = StObject.set(x, "includeWaveform", js.undefined)
       
-      @scala.inline
-      def setNumFramesPerSpectrogram(value: Double): Self = StObject.set(x, "numFramesPerSpectrogram", value.asInstanceOf[js.Any])
+      inline def setNumFramesPerSpectrogram(value: Double): Self = StObject.set(x, "numFramesPerSpectrogram", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumFramesPerSpectrogramUndefined: Self = StObject.set(x, "numFramesPerSpectrogram", js.undefined)
+      inline def setNumFramesPerSpectrogramUndefined: Self = StObject.set(x, "numFramesPerSpectrogram", js.undefined)
       
-      @scala.inline
-      def setSampleRateHz(value: `44100` | `48000`): Self = StObject.set(x, "sampleRateHz", value.asInstanceOf[js.Any])
+      inline def setSampleRateHz(value: `44100` | `48000`): Self = StObject.set(x, "sampleRateHz", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSampleRateHzUndefined: Self = StObject.set(x, "sampleRateHz", js.undefined)
+      inline def setSampleRateHzUndefined: Self = StObject.set(x, "sampleRateHz", js.undefined)
       
-      @scala.inline
-      def setSmoothingTimeConstant(value: Double): Self = StObject.set(x, "smoothingTimeConstant", value.asInstanceOf[js.Any])
+      inline def setSmoothingTimeConstant(value: Double): Self = StObject.set(x, "smoothingTimeConstant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmoothingTimeConstantUndefined: Self = StObject.set(x, "smoothingTimeConstant", js.undefined)
+      inline def setSmoothingTimeConstantUndefined: Self = StObject.set(x, "smoothingTimeConstant", js.undefined)
     }
   }
   
@@ -326,44 +282,32 @@ object typesMod {
   }
   object WebcamConfig {
     
-    @scala.inline
-    def apply(): WebcamConfig = {
+    inline def apply(): WebcamConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WebcamConfig]
     }
     
-    @scala.inline
-    implicit class WebcamConfigMutableBuilder[Self <: WebcamConfig] (val x: Self) extends AnyVal {
+    extension [Self <: WebcamConfig](x: Self) {
       
-      @scala.inline
-      def setCenterCrop(value: Boolean): Self = StObject.set(x, "centerCrop", value.asInstanceOf[js.Any])
+      inline def setCenterCrop(value: Boolean): Self = StObject.set(x, "centerCrop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCenterCropUndefined: Self = StObject.set(x, "centerCrop", js.undefined)
+      inline def setCenterCropUndefined: Self = StObject.set(x, "centerCrop", js.undefined)
       
-      @scala.inline
-      def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+      inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
+      inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
       
-      @scala.inline
-      def setFacingMode(value: user | environment): Self = StObject.set(x, "facingMode", value.asInstanceOf[js.Any])
+      inline def setFacingMode(value: user | environment): Self = StObject.set(x, "facingMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacingModeUndefined: Self = StObject.set(x, "facingMode", js.undefined)
+      inline def setFacingModeUndefined: Self = StObject.set(x, "facingMode", js.undefined)
       
-      @scala.inline
-      def setResizeHeight(value: Double): Self = StObject.set(x, "resizeHeight", value.asInstanceOf[js.Any])
+      inline def setResizeHeight(value: Double): Self = StObject.set(x, "resizeHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeHeightUndefined: Self = StObject.set(x, "resizeHeight", js.undefined)
+      inline def setResizeHeightUndefined: Self = StObject.set(x, "resizeHeight", js.undefined)
       
-      @scala.inline
-      def setResizeWidth(value: Double): Self = StObject.set(x, "resizeWidth", value.asInstanceOf[js.Any])
+      inline def setResizeWidth(value: Double): Self = StObject.set(x, "resizeWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeWidthUndefined: Self = StObject.set(x, "resizeWidth", js.undefined)
+      inline def setResizeWidthUndefined: Self = StObject.set(x, "resizeWidth", js.undefined)
     }
   }
 }

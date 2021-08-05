@@ -51,13 +51,13 @@ object serverCallMod {
   class Http2ServerCallStream[RequestType, ResponseType] protected () extends EventEmitter {
     def this(stream: ServerHttp2Stream, handler: Handler[RequestType, ResponseType], options: ChannelOptions) = this()
     
-    var bufferedMessages: js.Any = js.native
+    /* private */ var bufferedMessages: js.Any = js.native
     
-    var canPush: js.Any = js.native
+    /* private */ var canPush: js.Any = js.native
     
     var cancelled: Boolean = js.native
     
-    var checkCancelled: js.Any = js.native
+    /* private */ var checkCancelled: js.Any = js.native
     
     def consumeUnpushedMessages(readable: ServerDuplexStream[RequestType, ResponseType]): Boolean = js.native
     def consumeUnpushedMessages(readable: ServerReadableStream[RequestType, ResponseType]): Boolean = js.native
@@ -68,23 +68,23 @@ object serverCallMod {
     
     def getPeer(): String = js.native
     
-    var handler: js.Any = js.native
+    /* private */ var handler: js.Any = js.native
     
-    var isPushPending: js.Any = js.native
+    /* private */ var isPushPending: js.Any = js.native
     
-    var maxReceiveMessageSize: js.Any = js.native
+    /* private */ var maxReceiveMessageSize: js.Any = js.native
     
-    var maxSendMessageSize: js.Any = js.native
+    /* private */ var maxSendMessageSize: js.Any = js.native
     
-    var messagesToPush: js.Any = js.native
+    /* private */ var messagesToPush: js.Any = js.native
     
-    var metadataSent: js.Any = js.native
+    /* private */ var metadataSent: js.Any = js.native
     
-    var options: js.Any = js.native
+    /* private */ var options: js.Any = js.native
     
-    var pushMessage: js.Any = js.native
+    /* private */ var pushMessage: js.Any = js.native
     
-    var pushOrBufferMessage: js.Any = js.native
+    /* private */ var pushOrBufferMessage: js.Any = js.native
     
     def receiveMetadata(headers: IncomingHttpHeaders): js.UndefOr[Metadata] = js.native
     
@@ -132,9 +132,9 @@ object serverCallMod {
     
     def setupSurfaceCall(call: ServerSurfaceCall): Unit = js.native
     
-    var stream: js.Any = js.native
+    /* private */ var stream: js.Any = js.native
     
-    var wantTrailers: js.Any = js.native
+    /* private */ var wantTrailers: js.Any = js.native
     
     def write(chunk: Buffer): js.UndefOr[Boolean] = js.native
   }
@@ -150,7 +150,7 @@ object serverCallMod {
       deserialize: Deserialize[RequestType]
     ) = this()
     
-    var call: js.Any = js.native
+    /* private */ var call: js.Any = js.native
     
     var cancelled: Boolean = js.native
     
@@ -168,7 +168,7 @@ object serverCallMod {
     @JSName("serialize")
     var serialize_Original: Serialize[ResponseType] = js.native
     
-    var trailingMetadata: js.Any = js.native
+    /* private */ var trailingMetadata: js.Any = js.native
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -222,7 +222,7 @@ object serverCallMod {
     @JSName("addListener")
     def addListener_resume(event: resume, listener: js.Function0[Unit]): this.type = js.native
     
-    var call: js.Any = js.native
+    /* private */ var call: js.Any = js.native
     
     def deserialize(bytes: Buffer): RequestType = js.native
     @JSName("deserialize")
@@ -371,7 +371,7 @@ object serverCallMod {
     /* InferMemberOverrides */
     override def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
     
-    var call: js.Any = js.native
+    /* private */ var call: js.Any = js.native
     
     /* InferMemberOverrides */
     override def emit(event: String, args: js.Any*): Boolean = js.native
@@ -455,7 +455,7 @@ object serverCallMod {
     
     def _write(chunk: ResponseType, encoding: String, callback: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
     
-    var call: js.Any = js.native
+    /* private */ var call: js.Any = js.native
     
     var cancelled: Boolean = js.native
     
@@ -471,7 +471,7 @@ object serverCallMod {
     @JSName("serialize")
     var serialize_Original: Serialize[ResponseType] = js.native
     
-    var trailingMetadata: js.Any = js.native
+    /* private */ var trailingMetadata: js.Any = js.native
   }
   
   trait BidiStreamingHandler[RequestType, ResponseType]
@@ -496,8 +496,7 @@ object serverCallMod {
   }
   object BidiStreamingHandler {
     
-    @scala.inline
-    def apply[RequestType, ResponseType](
+    inline def apply[RequestType, ResponseType](
       deserialize: /* bytes */ Buffer => RequestType,
       func: /* call */ ServerDuplexStream[RequestType, ResponseType] => Unit,
       path: String,
@@ -509,23 +508,17 @@ object serverCallMod {
       __obj.asInstanceOf[BidiStreamingHandler[RequestType, ResponseType]]
     }
     
-    @scala.inline
-    implicit class BidiStreamingHandlerMutableBuilder[Self <: BidiStreamingHandler[?, ?], RequestType, ResponseType] (val x: Self & (BidiStreamingHandler[RequestType, ResponseType])) extends AnyVal {
+    extension [Self <: BidiStreamingHandler[?, ?], RequestType, ResponseType](x: Self & (BidiStreamingHandler[RequestType, ResponseType])) {
       
-      @scala.inline
-      def setDeserialize(value: /* bytes */ Buffer => RequestType): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
+      inline def setDeserialize(value: /* bytes */ Buffer => RequestType): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFunc(value: /* call */ ServerDuplexStream[RequestType, ResponseType] => Unit): Self = StObject.set(x, "func", js.Any.fromFunction1(value))
+      inline def setFunc(value: /* call */ ServerDuplexStream[RequestType, ResponseType] => Unit): Self = StObject.set(x, "func", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerialize(value: ResponseType => Buffer): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
+      inline def setSerialize(value: ResponseType => Buffer): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setType(value: HandlerType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: HandlerType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -551,8 +544,7 @@ object serverCallMod {
   }
   object ClientStreamingHandler {
     
-    @scala.inline
-    def apply[RequestType, ResponseType](
+    inline def apply[RequestType, ResponseType](
       deserialize: /* bytes */ Buffer => RequestType,
       func: (/* call */ ServerReadableStream[RequestType, ResponseType], /* callback */ sendUnaryData[ResponseType]) => Unit,
       path: String,
@@ -564,25 +556,19 @@ object serverCallMod {
       __obj.asInstanceOf[ClientStreamingHandler[RequestType, ResponseType]]
     }
     
-    @scala.inline
-    implicit class ClientStreamingHandlerMutableBuilder[Self <: ClientStreamingHandler[?, ?], RequestType, ResponseType] (val x: Self & (ClientStreamingHandler[RequestType, ResponseType])) extends AnyVal {
+    extension [Self <: ClientStreamingHandler[?, ?], RequestType, ResponseType](x: Self & (ClientStreamingHandler[RequestType, ResponseType])) {
       
-      @scala.inline
-      def setDeserialize(value: /* bytes */ Buffer => RequestType): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
+      inline def setDeserialize(value: /* bytes */ Buffer => RequestType): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFunc(
+      inline def setFunc(
         value: (/* call */ ServerReadableStream[RequestType, ResponseType], /* callback */ sendUnaryData[ResponseType]) => Unit
       ): Self = StObject.set(x, "func", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerialize(value: ResponseType => Buffer): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
+      inline def setSerialize(value: ResponseType => Buffer): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setType(value: HandlerType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: HandlerType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -597,8 +583,7 @@ object serverCallMod {
   trait Handler[RequestType, ResponseType] extends StObject
   object Handler {
     
-    @scala.inline
-    def BidiStreamingHandler[RequestType, ResponseType](
+    inline def BidiStreamingHandler[RequestType, ResponseType](
       deserialize: /* bytes */ Buffer => RequestType,
       func: /* call */ ServerDuplexStream[RequestType, ResponseType] => Unit,
       path: String,
@@ -610,8 +595,7 @@ object serverCallMod {
       __obj.asInstanceOf[typings.grpcGrpcJs.serverCallMod.BidiStreamingHandler[RequestType, ResponseType]]
     }
     
-    @scala.inline
-    def ClientStreamingHandler[RequestType, ResponseType](
+    inline def ClientStreamingHandler[RequestType, ResponseType](
       deserialize: /* bytes */ Buffer => RequestType,
       func: (/* call */ ServerReadableStream[RequestType, ResponseType], /* callback */ sendUnaryData[ResponseType]) => Unit,
       path: String,
@@ -623,8 +607,7 @@ object serverCallMod {
       __obj.asInstanceOf[typings.grpcGrpcJs.serverCallMod.ClientStreamingHandler[RequestType, ResponseType]]
     }
     
-    @scala.inline
-    def ServerStreamingHandler[RequestType, ResponseType](
+    inline def ServerStreamingHandler[RequestType, ResponseType](
       deserialize: /* bytes */ Buffer => RequestType,
       func: /* call */ ServerWritableStream[RequestType, ResponseType] => Unit,
       path: String,
@@ -636,8 +619,7 @@ object serverCallMod {
       __obj.asInstanceOf[typings.grpcGrpcJs.serverCallMod.ServerStreamingHandler[RequestType, ResponseType]]
     }
     
-    @scala.inline
-    def UnaryHandler[RequestType, ResponseType](
+    inline def UnaryHandler[RequestType, ResponseType](
       deserialize: /* bytes */ Buffer => RequestType,
       func: (/* call */ ServerUnaryCall[RequestType, ResponseType], /* callback */ sendUnaryData[ResponseType]) => Unit,
       path: String,
@@ -659,17 +641,13 @@ object serverCallMod {
   trait HandlerType extends StObject
   object HandlerType {
     
-    @scala.inline
-    def bidi: typings.grpcGrpcJs.grpcGrpcJsStrings.bidi = "bidi".asInstanceOf[typings.grpcGrpcJs.grpcGrpcJsStrings.bidi]
+    inline def bidi: typings.grpcGrpcJs.grpcGrpcJsStrings.bidi = "bidi".asInstanceOf[typings.grpcGrpcJs.grpcGrpcJsStrings.bidi]
     
-    @scala.inline
-    def clientStream: typings.grpcGrpcJs.grpcGrpcJsStrings.clientStream = "clientStream".asInstanceOf[typings.grpcGrpcJs.grpcGrpcJsStrings.clientStream]
+    inline def clientStream: typings.grpcGrpcJs.grpcGrpcJsStrings.clientStream = "clientStream".asInstanceOf[typings.grpcGrpcJs.grpcGrpcJsStrings.clientStream]
     
-    @scala.inline
-    def serverStream: typings.grpcGrpcJs.grpcGrpcJsStrings.serverStream = "serverStream".asInstanceOf[typings.grpcGrpcJs.grpcGrpcJsStrings.serverStream]
+    inline def serverStream: typings.grpcGrpcJs.grpcGrpcJsStrings.serverStream = "serverStream".asInstanceOf[typings.grpcGrpcJs.grpcGrpcJsStrings.serverStream]
     
-    @scala.inline
-    def unary: typings.grpcGrpcJs.grpcGrpcJsStrings.unary = "unary".asInstanceOf[typings.grpcGrpcJs.grpcGrpcJsStrings.unary]
+    inline def unary: typings.grpcGrpcJs.grpcGrpcJsStrings.unary = "unary".asInstanceOf[typings.grpcGrpcJs.grpcGrpcJsStrings.unary]
   }
   
   /* Inlined @grpc/grpc-js.@grpc/grpc-js/build/src/server-call.ServerSurfaceCall & @grpc/grpc-js.@grpc/grpc-js/build/src/object-stream.ObjectReadable<RequestType> & @grpc/grpc-js.@grpc/grpc-js/build/src/object-stream.ObjectWritable<ResponseType> & {end (metadata : @grpc/grpc-js.@grpc/grpc-js/build/src/metadata.Metadata | undefined): void} */
@@ -1060,44 +1038,32 @@ object serverCallMod {
   }
   object ServerErrorResponse {
     
-    @scala.inline
-    def apply(message: String, name: String): ServerErrorResponse = {
+    inline def apply(message: String, name: String): ServerErrorResponse = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServerErrorResponse]
     }
     
-    @scala.inline
-    implicit class ServerErrorResponseMutableBuilder[Self <: ServerErrorResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ServerErrorResponse](x: Self) {
       
-      @scala.inline
-      def setCode(value: Status): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Status): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      @scala.inline
-      def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+      inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadata(value: Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+      inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     }
   }
   
@@ -1114,32 +1080,24 @@ object serverCallMod {
   }
   object ServerStatusResponse {
     
-    @scala.inline
-    def apply(): ServerStatusResponse = {
+    inline def apply(): ServerStatusResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ServerStatusResponse]
     }
     
-    @scala.inline
-    implicit class ServerStatusResponseMutableBuilder[Self <: ServerStatusResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ServerStatusResponse](x: Self) {
       
-      @scala.inline
-      def setCode(value: Status): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Status): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      @scala.inline
-      def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+      inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+      inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     }
   }
   
@@ -1165,8 +1123,7 @@ object serverCallMod {
   }
   object ServerStreamingHandler {
     
-    @scala.inline
-    def apply[RequestType, ResponseType](
+    inline def apply[RequestType, ResponseType](
       deserialize: /* bytes */ Buffer => RequestType,
       func: /* call */ ServerWritableStream[RequestType, ResponseType] => Unit,
       path: String,
@@ -1178,23 +1135,17 @@ object serverCallMod {
       __obj.asInstanceOf[ServerStreamingHandler[RequestType, ResponseType]]
     }
     
-    @scala.inline
-    implicit class ServerStreamingHandlerMutableBuilder[Self <: ServerStreamingHandler[?, ?], RequestType, ResponseType] (val x: Self & (ServerStreamingHandler[RequestType, ResponseType])) extends AnyVal {
+    extension [Self <: ServerStreamingHandler[?, ?], RequestType, ResponseType](x: Self & (ServerStreamingHandler[RequestType, ResponseType])) {
       
-      @scala.inline
-      def setDeserialize(value: /* bytes */ Buffer => RequestType): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
+      inline def setDeserialize(value: /* bytes */ Buffer => RequestType): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFunc(value: /* call */ ServerWritableStream[RequestType, ResponseType] => Unit): Self = StObject.set(x, "func", js.Any.fromFunction1(value))
+      inline def setFunc(value: /* call */ ServerWritableStream[RequestType, ResponseType] => Unit): Self = StObject.set(x, "func", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerialize(value: ResponseType => Buffer): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
+      inline def setSerialize(value: ResponseType => Buffer): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setType(value: HandlerType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: HandlerType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1537,8 +1488,7 @@ object serverCallMod {
   }
   object UnaryHandler {
     
-    @scala.inline
-    def apply[RequestType, ResponseType](
+    inline def apply[RequestType, ResponseType](
       deserialize: /* bytes */ Buffer => RequestType,
       func: (/* call */ ServerUnaryCall[RequestType, ResponseType], /* callback */ sendUnaryData[ResponseType]) => Unit,
       path: String,
@@ -1550,25 +1500,19 @@ object serverCallMod {
       __obj.asInstanceOf[UnaryHandler[RequestType, ResponseType]]
     }
     
-    @scala.inline
-    implicit class UnaryHandlerMutableBuilder[Self <: UnaryHandler[?, ?], RequestType, ResponseType] (val x: Self & (UnaryHandler[RequestType, ResponseType])) extends AnyVal {
+    extension [Self <: UnaryHandler[?, ?], RequestType, ResponseType](x: Self & (UnaryHandler[RequestType, ResponseType])) {
       
-      @scala.inline
-      def setDeserialize(value: /* bytes */ Buffer => RequestType): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
+      inline def setDeserialize(value: /* bytes */ Buffer => RequestType): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFunc(
+      inline def setFunc(
         value: (/* call */ ServerUnaryCall[RequestType, ResponseType], /* callback */ sendUnaryData[ResponseType]) => Unit
       ): Self = StObject.set(x, "func", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerialize(value: ResponseType => Buffer): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
+      inline def setSerialize(value: ResponseType => Buffer): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setType(value: HandlerType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: HandlerType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

@@ -39,8 +39,7 @@ trait DERTaggedObject
 }
 object DERTaggedObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getEncodedHex: () => String,
     getFreshValueHex: () => String,
     getLengthHexFromValue: () => String,
@@ -56,10 +55,8 @@ object DERTaggedObject {
     __obj.asInstanceOf[DERTaggedObject]
   }
   
-  @scala.inline
-  implicit class DERTaggedObjectMutableBuilder[Self <: DERTaggedObject] (val x: Self) extends AnyVal {
+  extension [Self <: DERTaggedObject](x: Self) {
     
-    @scala.inline
-    def setSetASN1Object(value: (Boolean, String, ASN1Object) => Unit): Self = StObject.set(x, "setASN1Object", js.Any.fromFunction3(value))
+    inline def setSetASN1Object(value: (Boolean, String, ASN1Object) => Unit): Self = StObject.set(x, "setASN1Object", js.Any.fromFunction3(value))
   }
 }

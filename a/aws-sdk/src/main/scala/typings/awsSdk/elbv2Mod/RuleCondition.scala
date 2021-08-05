@@ -48,64 +48,45 @@ trait RuleCondition extends StObject {
 }
 object RuleCondition {
   
-  @scala.inline
-  def apply(): RuleCondition = {
+  inline def apply(): RuleCondition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RuleCondition]
   }
   
-  @scala.inline
-  implicit class RuleConditionMutableBuilder[Self <: RuleCondition] (val x: Self) extends AnyVal {
+  extension [Self <: RuleCondition](x: Self) {
     
-    @scala.inline
-    def setField(value: ConditionFieldName): Self = StObject.set(x, "Field", value.asInstanceOf[js.Any])
+    inline def setField(value: ConditionFieldName): Self = StObject.set(x, "Field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "Field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "Field", js.undefined)
     
-    @scala.inline
-    def setHostHeaderConfig(value: HostHeaderConditionConfig): Self = StObject.set(x, "HostHeaderConfig", value.asInstanceOf[js.Any])
+    inline def setHostHeaderConfig(value: HostHeaderConditionConfig): Self = StObject.set(x, "HostHeaderConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostHeaderConfigUndefined: Self = StObject.set(x, "HostHeaderConfig", js.undefined)
+    inline def setHostHeaderConfigUndefined: Self = StObject.set(x, "HostHeaderConfig", js.undefined)
     
-    @scala.inline
-    def setHttpHeaderConfig(value: HttpHeaderConditionConfig): Self = StObject.set(x, "HttpHeaderConfig", value.asInstanceOf[js.Any])
+    inline def setHttpHeaderConfig(value: HttpHeaderConditionConfig): Self = StObject.set(x, "HttpHeaderConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpHeaderConfigUndefined: Self = StObject.set(x, "HttpHeaderConfig", js.undefined)
+    inline def setHttpHeaderConfigUndefined: Self = StObject.set(x, "HttpHeaderConfig", js.undefined)
     
-    @scala.inline
-    def setHttpRequestMethodConfig(value: HttpRequestMethodConditionConfig): Self = StObject.set(x, "HttpRequestMethodConfig", value.asInstanceOf[js.Any])
+    inline def setHttpRequestMethodConfig(value: HttpRequestMethodConditionConfig): Self = StObject.set(x, "HttpRequestMethodConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpRequestMethodConfigUndefined: Self = StObject.set(x, "HttpRequestMethodConfig", js.undefined)
+    inline def setHttpRequestMethodConfigUndefined: Self = StObject.set(x, "HttpRequestMethodConfig", js.undefined)
     
-    @scala.inline
-    def setPathPatternConfig(value: PathPatternConditionConfig): Self = StObject.set(x, "PathPatternConfig", value.asInstanceOf[js.Any])
+    inline def setPathPatternConfig(value: PathPatternConditionConfig): Self = StObject.set(x, "PathPatternConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathPatternConfigUndefined: Self = StObject.set(x, "PathPatternConfig", js.undefined)
+    inline def setPathPatternConfigUndefined: Self = StObject.set(x, "PathPatternConfig", js.undefined)
     
-    @scala.inline
-    def setQueryStringConfig(value: QueryStringConditionConfig): Self = StObject.set(x, "QueryStringConfig", value.asInstanceOf[js.Any])
+    inline def setQueryStringConfig(value: QueryStringConditionConfig): Self = StObject.set(x, "QueryStringConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryStringConfigUndefined: Self = StObject.set(x, "QueryStringConfig", js.undefined)
+    inline def setQueryStringConfigUndefined: Self = StObject.set(x, "QueryStringConfig", js.undefined)
     
-    @scala.inline
-    def setSourceIpConfig(value: SourceIpConditionConfig): Self = StObject.set(x, "SourceIpConfig", value.asInstanceOf[js.Any])
+    inline def setSourceIpConfig(value: SourceIpConditionConfig): Self = StObject.set(x, "SourceIpConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceIpConfigUndefined: Self = StObject.set(x, "SourceIpConfig", js.undefined)
+    inline def setSourceIpConfigUndefined: Self = StObject.set(x, "SourceIpConfig", js.undefined)
     
-    @scala.inline
-    def setValues(value: ListOfString): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: ListOfString): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: StringValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: StringValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

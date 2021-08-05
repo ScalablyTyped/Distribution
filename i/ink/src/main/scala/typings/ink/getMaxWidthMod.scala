@@ -11,6 +11,5 @@ object getMaxWidthMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(yogaNode: YogaNode): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(yogaNode.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def default(yogaNode: YogaNode): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(yogaNode.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

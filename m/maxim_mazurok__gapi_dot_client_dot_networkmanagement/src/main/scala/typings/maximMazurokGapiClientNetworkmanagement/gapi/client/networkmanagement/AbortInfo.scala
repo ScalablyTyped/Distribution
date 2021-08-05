@@ -14,25 +14,19 @@ trait AbortInfo extends StObject {
 }
 object AbortInfo {
   
-  @scala.inline
-  def apply(): AbortInfo = {
+  inline def apply(): AbortInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AbortInfo]
   }
   
-  @scala.inline
-  implicit class AbortInfoMutableBuilder[Self <: AbortInfo] (val x: Self) extends AnyVal {
+  extension [Self <: AbortInfo](x: Self) {
     
-    @scala.inline
-    def setCause(value: String): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+    inline def setCause(value: String): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
+    inline def setCauseUndefined: Self = StObject.set(x, "cause", js.undefined)
     
-    @scala.inline
-    def setResourceUri(value: String): Self = StObject.set(x, "resourceUri", value.asInstanceOf[js.Any])
+    inline def setResourceUri(value: String): Self = StObject.set(x, "resourceUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUriUndefined: Self = StObject.set(x, "resourceUri", js.undefined)
+    inline def setResourceUriUndefined: Self = StObject.set(x, "resourceUri", js.undefined)
   }
 }

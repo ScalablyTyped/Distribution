@@ -13,16 +13,13 @@ trait ItemCount extends StObject {
 }
 object ItemCount {
   
-  @scala.inline
-  def apply(itemCount: Double): ItemCount = {
+  inline def apply(itemCount: Double): ItemCount = {
     val __obj = js.Dynamic.literal(itemCount = itemCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[ItemCount]
   }
   
-  @scala.inline
-  implicit class ItemCountMutableBuilder[Self <: ItemCount] (val x: Self) extends AnyVal {
+  extension [Self <: ItemCount](x: Self) {
     
-    @scala.inline
-    def setItemCount(value: Double): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
+    inline def setItemCount(value: Double): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
   }
 }

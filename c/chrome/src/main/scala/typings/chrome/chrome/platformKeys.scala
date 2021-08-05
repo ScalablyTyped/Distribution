@@ -33,29 +33,22 @@ object platformKeys {
   }
   object ClientCertificateSelectDetails {
     
-    @scala.inline
-    def apply(interactive: Boolean, request: ClientCertificateSelectRequestDetails): ClientCertificateSelectDetails = {
+    inline def apply(interactive: Boolean, request: ClientCertificateSelectRequestDetails): ClientCertificateSelectDetails = {
       val __obj = js.Dynamic.literal(interactive = interactive.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientCertificateSelectDetails]
     }
     
-    @scala.inline
-    implicit class ClientCertificateSelectDetailsMutableBuilder[Self <: ClientCertificateSelectDetails] (val x: Self) extends AnyVal {
+    extension [Self <: ClientCertificateSelectDetails](x: Self) {
       
-      @scala.inline
-      def setClientCerts(value: js.Array[ArrayBuffer]): Self = StObject.set(x, "clientCerts", value.asInstanceOf[js.Any])
+      inline def setClientCerts(value: js.Array[ArrayBuffer]): Self = StObject.set(x, "clientCerts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientCertsUndefined: Self = StObject.set(x, "clientCerts", js.undefined)
+      inline def setClientCertsUndefined: Self = StObject.set(x, "clientCerts", js.undefined)
       
-      @scala.inline
-      def setClientCertsVarargs(value: ArrayBuffer*): Self = StObject.set(x, "clientCerts", js.Array(value :_*))
+      inline def setClientCertsVarargs(value: ArrayBuffer*): Self = StObject.set(x, "clientCerts", js.Array(value :_*))
       
-      @scala.inline
-      def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
+      inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: ClientCertificateSelectRequestDetails): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: ClientCertificateSelectRequestDetails): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     }
   }
   
@@ -69,26 +62,20 @@ object platformKeys {
   }
   object ClientCertificateSelectRequestDetails {
     
-    @scala.inline
-    def apply(certificateAuthorities: js.Array[ArrayBuffer], certificateTypes: js.Array[String]): ClientCertificateSelectRequestDetails = {
+    inline def apply(certificateAuthorities: js.Array[ArrayBuffer], certificateTypes: js.Array[String]): ClientCertificateSelectRequestDetails = {
       val __obj = js.Dynamic.literal(certificateAuthorities = certificateAuthorities.asInstanceOf[js.Any], certificateTypes = certificateTypes.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClientCertificateSelectRequestDetails]
     }
     
-    @scala.inline
-    implicit class ClientCertificateSelectRequestDetailsMutableBuilder[Self <: ClientCertificateSelectRequestDetails] (val x: Self) extends AnyVal {
+    extension [Self <: ClientCertificateSelectRequestDetails](x: Self) {
       
-      @scala.inline
-      def setCertificateAuthorities(value: js.Array[ArrayBuffer]): Self = StObject.set(x, "certificateAuthorities", value.asInstanceOf[js.Any])
+      inline def setCertificateAuthorities(value: js.Array[ArrayBuffer]): Self = StObject.set(x, "certificateAuthorities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateAuthoritiesVarargs(value: ArrayBuffer*): Self = StObject.set(x, "certificateAuthorities", js.Array(value :_*))
+      inline def setCertificateAuthoritiesVarargs(value: ArrayBuffer*): Self = StObject.set(x, "certificateAuthorities", js.Array(value :_*))
       
-      @scala.inline
-      def setCertificateTypes(value: js.Array[String]): Self = StObject.set(x, "certificateTypes", value.asInstanceOf[js.Any])
+      inline def setCertificateTypes(value: js.Array[String]): Self = StObject.set(x, "certificateTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertificateTypesVarargs(value: String*): Self = StObject.set(x, "certificateTypes", js.Array(value :_*))
+      inline def setCertificateTypesVarargs(value: String*): Self = StObject.set(x, "certificateTypes", js.Array(value :_*))
     }
   }
   
@@ -102,20 +89,16 @@ object platformKeys {
   }
   object Match {
     
-    @scala.inline
-    def apply(certificate: ArrayBuffer, keyAlgorithm: KeyAlgorithm): Match = {
+    inline def apply(certificate: ArrayBuffer, keyAlgorithm: KeyAlgorithm): Match = {
       val __obj = js.Dynamic.literal(certificate = certificate.asInstanceOf[js.Any], keyAlgorithm = keyAlgorithm.asInstanceOf[js.Any])
       __obj.asInstanceOf[Match]
     }
     
-    @scala.inline
-    implicit class MatchMutableBuilder[Self <: Match] (val x: Self) extends AnyVal {
+    extension [Self <: Match](x: Self) {
       
-      @scala.inline
-      def setCertificate(value: ArrayBuffer): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+      inline def setCertificate(value: ArrayBuffer): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyAlgorithm(value: KeyAlgorithm): Self = StObject.set(x, "keyAlgorithm", value.asInstanceOf[js.Any])
+      inline def setKeyAlgorithm(value: KeyAlgorithm): Self = StObject.set(x, "keyAlgorithm", value.asInstanceOf[js.Any])
     }
   }
   
@@ -129,23 +112,18 @@ object platformKeys {
   }
   object ServerCertificateVerificationDetails {
     
-    @scala.inline
-    def apply(hostname: String, serverCertificateChain: js.Array[ArrayBuffer]): ServerCertificateVerificationDetails = {
+    inline def apply(hostname: String, serverCertificateChain: js.Array[ArrayBuffer]): ServerCertificateVerificationDetails = {
       val __obj = js.Dynamic.literal(hostname = hostname.asInstanceOf[js.Any], serverCertificateChain = serverCertificateChain.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServerCertificateVerificationDetails]
     }
     
-    @scala.inline
-    implicit class ServerCertificateVerificationDetailsMutableBuilder[Self <: ServerCertificateVerificationDetails] (val x: Self) extends AnyVal {
+    extension [Self <: ServerCertificateVerificationDetails](x: Self) {
       
-      @scala.inline
-      def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerCertificateChain(value: js.Array[ArrayBuffer]): Self = StObject.set(x, "serverCertificateChain", value.asInstanceOf[js.Any])
+      inline def setServerCertificateChain(value: js.Array[ArrayBuffer]): Self = StObject.set(x, "serverCertificateChain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerCertificateChainVarargs(value: ArrayBuffer*): Self = StObject.set(x, "serverCertificateChain", js.Array(value :_*))
+      inline def setServerCertificateChainVarargs(value: ArrayBuffer*): Self = StObject.set(x, "serverCertificateChain", js.Array(value :_*))
     }
   }
   
@@ -162,23 +140,18 @@ object platformKeys {
   }
   object ServerCertificateVerificationResult {
     
-    @scala.inline
-    def apply(debug_errors: js.Array[String], trusted: Boolean): ServerCertificateVerificationResult = {
+    inline def apply(debug_errors: js.Array[String], trusted: Boolean): ServerCertificateVerificationResult = {
       val __obj = js.Dynamic.literal(debug_errors = debug_errors.asInstanceOf[js.Any], trusted = trusted.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServerCertificateVerificationResult]
     }
     
-    @scala.inline
-    implicit class ServerCertificateVerificationResultMutableBuilder[Self <: ServerCertificateVerificationResult] (val x: Self) extends AnyVal {
+    extension [Self <: ServerCertificateVerificationResult](x: Self) {
       
-      @scala.inline
-      def setDebug_errors(value: js.Array[String]): Self = StObject.set(x, "debug_errors", value.asInstanceOf[js.Any])
+      inline def setDebug_errors(value: js.Array[String]): Self = StObject.set(x, "debug_errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebug_errorsVarargs(value: String*): Self = StObject.set(x, "debug_errors", js.Array(value :_*))
+      inline def setDebug_errorsVarargs(value: String*): Self = StObject.set(x, "debug_errors", js.Array(value :_*))
       
-      @scala.inline
-      def setTrusted(value: Boolean): Self = StObject.set(x, "trusted", value.asInstanceOf[js.Any])
+      inline def setTrusted(value: Boolean): Self = StObject.set(x, "trusted", value.asInstanceOf[js.Any])
     }
   }
 }

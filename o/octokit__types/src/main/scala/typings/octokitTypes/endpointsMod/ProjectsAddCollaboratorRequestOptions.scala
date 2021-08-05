@@ -20,25 +20,19 @@ trait ProjectsAddCollaboratorRequestOptions extends StObject {
 }
 object ProjectsAddCollaboratorRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): ProjectsAddCollaboratorRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): ProjectsAddCollaboratorRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "PUT", request = request.asInstanceOf[js.Any], url = "/projects/:project_id/collaborators/:username")
     __obj.asInstanceOf[ProjectsAddCollaboratorRequestOptions]
   }
   
-  @scala.inline
-  implicit class ProjectsAddCollaboratorRequestOptionsMutableBuilder[Self <: ProjectsAddCollaboratorRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectsAddCollaboratorRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: PUT): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: PUT): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashprojectsSlashColonproject_idSlashcollaboratorsSlashColonusername): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashprojectsSlashColonproject_idSlashcollaboratorsSlashColonusername): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -23,34 +23,25 @@ trait DimensionKeyDescription extends StObject {
 }
 object DimensionKeyDescription {
   
-  @scala.inline
-  def apply(): DimensionKeyDescription = {
+  inline def apply(): DimensionKeyDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DimensionKeyDescription]
   }
   
-  @scala.inline
-  implicit class DimensionKeyDescriptionMutableBuilder[Self <: DimensionKeyDescription] (val x: Self) extends AnyVal {
+  extension [Self <: DimensionKeyDescription](x: Self) {
     
-    @scala.inline
-    def setDimensions(value: DimensionMap): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: DimensionMap): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
+    inline def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
     
-    @scala.inline
-    def setPartitions(value: MetricValuesList): Self = StObject.set(x, "Partitions", value.asInstanceOf[js.Any])
+    inline def setPartitions(value: MetricValuesList): Self = StObject.set(x, "Partitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionsUndefined: Self = StObject.set(x, "Partitions", js.undefined)
+    inline def setPartitionsUndefined: Self = StObject.set(x, "Partitions", js.undefined)
     
-    @scala.inline
-    def setPartitionsVarargs(value: Double*): Self = StObject.set(x, "Partitions", js.Array(value :_*))
+    inline def setPartitionsVarargs(value: Double*): Self = StObject.set(x, "Partitions", js.Array(value :_*))
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "Total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUndefined: Self = StObject.set(x, "Total", js.undefined)
+    inline def setTotalUndefined: Self = StObject.set(x, "Total", js.undefined)
   }
 }

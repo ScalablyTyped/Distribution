@@ -13,14 +13,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def geojson(geom: Geometry, limits: Limits): FeatureCollection[Geometry, GeoJsonProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("geojson")(geom.asInstanceOf[js.Any], limits.asInstanceOf[js.Any])).asInstanceOf[FeatureCollection[Geometry, GeoJsonProperties]]
+  inline def geojson(geom: Geometry, limits: Limits): FeatureCollection[Geometry, GeoJsonProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("geojson")(geom.asInstanceOf[js.Any], limits.asInstanceOf[js.Any])).asInstanceOf[FeatureCollection[Geometry, GeoJsonProperties]]
   
-  @scala.inline
-  def indexes(geom: Geometry, limits: Limits): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("indexes")(geom.asInstanceOf[js.Any], limits.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def indexes(geom: Geometry, limits: Limits): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("indexes")(geom.asInstanceOf[js.Any], limits.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def tiles(geom: Geometry, limits: Limits): js.Array[js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("tiles")(geom.asInstanceOf[js.Any], limits.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Double]]]
+  inline def tiles(geom: Geometry, limits: Limits): js.Array[js.Array[Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("tiles")(geom.asInstanceOf[js.Any], limits.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[Double]]]
   
   trait Limits extends StObject {
     
@@ -30,20 +27,16 @@ object mod {
   }
   object Limits {
     
-    @scala.inline
-    def apply(max_zoom: Double, min_zoom: Double): Limits = {
+    inline def apply(max_zoom: Double, min_zoom: Double): Limits = {
       val __obj = js.Dynamic.literal(max_zoom = max_zoom.asInstanceOf[js.Any], min_zoom = min_zoom.asInstanceOf[js.Any])
       __obj.asInstanceOf[Limits]
     }
     
-    @scala.inline
-    implicit class LimitsMutableBuilder[Self <: Limits] (val x: Self) extends AnyVal {
+    extension [Self <: Limits](x: Self) {
       
-      @scala.inline
-      def setMax_zoom(value: Double): Self = StObject.set(x, "max_zoom", value.asInstanceOf[js.Any])
+      inline def setMax_zoom(value: Double): Self = StObject.set(x, "max_zoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMin_zoom(value: Double): Self = StObject.set(x, "min_zoom", value.asInstanceOf[js.Any])
+      inline def setMin_zoom(value: Double): Self = StObject.set(x, "min_zoom", value.asInstanceOf[js.Any])
     }
   }
 }

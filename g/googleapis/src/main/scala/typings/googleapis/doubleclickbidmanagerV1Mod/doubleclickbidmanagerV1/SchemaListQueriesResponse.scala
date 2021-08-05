@@ -22,28 +22,21 @@ trait SchemaListQueriesResponse extends StObject {
 }
 object SchemaListQueriesResponse {
   
-  @scala.inline
-  def apply(): SchemaListQueriesResponse = {
+  inline def apply(): SchemaListQueriesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListQueriesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListQueriesResponseMutableBuilder[Self <: SchemaListQueriesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListQueriesResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setQueries(value: js.Array[SchemaQuery]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
+    inline def setQueries(value: js.Array[SchemaQuery]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueriesUndefined: Self = StObject.set(x, "queries", js.undefined)
+    inline def setQueriesUndefined: Self = StObject.set(x, "queries", js.undefined)
     
-    @scala.inline
-    def setQueriesVarargs(value: SchemaQuery*): Self = StObject.set(x, "queries", js.Array(value :_*))
+    inline def setQueriesVarargs(value: SchemaQuery*): Self = StObject.set(x, "queries", js.Array(value :_*))
   }
 }

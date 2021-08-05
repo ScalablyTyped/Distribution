@@ -10,8 +10,7 @@ trait IGridCellProps[T]
      with typings.officeUiFabricReact.buttonGridCellTypesMod.IButtonGridCellProps[T]
 object IGridCellProps {
   
-  @scala.inline
-  def apply[T](id: String, item: T, onRenderItem: T => Element): IGridCellProps[T] = {
+  inline def apply[T](id: String, item: T, onRenderItem: T => Element): IGridCellProps[T] = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], onRenderItem = js.Any.fromFunction1(onRenderItem))
     __obj.asInstanceOf[IGridCellProps[T]]
   }

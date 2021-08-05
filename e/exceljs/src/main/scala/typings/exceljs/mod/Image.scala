@@ -19,35 +19,26 @@ trait Image extends StObject {
 }
 object Image {
   
-  @scala.inline
-  def apply(`extension`: jpeg | png | gif): Image = {
+  inline def apply(`extension`: jpeg | png | gif): Image = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Image]
   }
   
-  @scala.inline
-  implicit class ImageMutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
+  extension [Self <: Image](x: Self) {
     
-    @scala.inline
-    def setBase64(value: String): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
+    inline def setBase64(value: String): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBase64Undefined: Self = StObject.set(x, "base64", js.undefined)
+    inline def setBase64Undefined: Self = StObject.set(x, "base64", js.undefined)
     
-    @scala.inline
-    def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+    inline def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
+    inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
     
-    @scala.inline
-    def setExtension(value: jpeg | png | gif): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: jpeg | png | gif): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+    inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
   }
 }

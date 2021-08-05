@@ -34,43 +34,31 @@ trait IonImg extends StObject {
 }
 object IonImg {
   
-  @scala.inline
-  def apply(): IonImg = {
+  inline def apply(): IonImg = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IonImg]
   }
   
-  @scala.inline
-  implicit class IonImgMutableBuilder[Self <: IonImg] (val x: Self) extends AnyVal {
+  extension [Self <: IonImg](x: Self) {
     
-    @scala.inline
-    def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+    inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+    inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
-    @scala.inline
-    def setOnIonError(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonError", js.Any.fromFunction1(value))
+    inline def setOnIonError(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnIonErrorUndefined: Self = StObject.set(x, "onIonError", js.undefined)
+    inline def setOnIonErrorUndefined: Self = StObject.set(x, "onIonError", js.undefined)
     
-    @scala.inline
-    def setOnIonImgDidLoad(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonImgDidLoad", js.Any.fromFunction1(value))
+    inline def setOnIonImgDidLoad(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonImgDidLoad", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnIonImgDidLoadUndefined: Self = StObject.set(x, "onIonImgDidLoad", js.undefined)
+    inline def setOnIonImgDidLoadUndefined: Self = StObject.set(x, "onIonImgDidLoad", js.undefined)
     
-    @scala.inline
-    def setOnIonImgWillLoad(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonImgWillLoad", js.Any.fromFunction1(value))
+    inline def setOnIonImgWillLoad(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonImgWillLoad", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnIonImgWillLoadUndefined: Self = StObject.set(x, "onIonImgWillLoad", js.undefined)
+    inline def setOnIonImgWillLoadUndefined: Self = StObject.set(x, "onIonImgWillLoad", js.undefined)
     
-    @scala.inline
-    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+    inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
   }
 }

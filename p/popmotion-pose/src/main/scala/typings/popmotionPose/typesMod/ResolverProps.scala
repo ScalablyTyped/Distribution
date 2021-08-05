@@ -11,8 +11,7 @@ trait ResolverProps
      with /* key */ StringDictionary[js.Any]
 object ResolverProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dimensions: Dimensions,
     from: String | Double,
     key: String,

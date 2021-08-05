@@ -66,8 +66,7 @@ trait PhotoImportSource extends StObject {
 }
 object PhotoImportSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     batteryLevelPercent: Double,
     connectionProtocol: String,
     connectionTransport: PhotoImportConnectionTransport,
@@ -91,58 +90,40 @@ object PhotoImportSource {
     __obj.asInstanceOf[PhotoImportSource]
   }
   
-  @scala.inline
-  implicit class PhotoImportSourceMutableBuilder[Self <: PhotoImportSource] (val x: Self) extends AnyVal {
+  extension [Self <: PhotoImportSource](x: Self) {
     
-    @scala.inline
-    def setBatteryLevelPercent(value: Double): Self = StObject.set(x, "batteryLevelPercent", value.asInstanceOf[js.Any])
+    inline def setBatteryLevelPercent(value: Double): Self = StObject.set(x, "batteryLevelPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionProtocol(value: String): Self = StObject.set(x, "connectionProtocol", value.asInstanceOf[js.Any])
+    inline def setConnectionProtocol(value: String): Self = StObject.set(x, "connectionProtocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionTransport(value: PhotoImportConnectionTransport): Self = StObject.set(x, "connectionTransport", value.asInstanceOf[js.Any])
+    inline def setConnectionTransport(value: PhotoImportConnectionTransport): Self = StObject.set(x, "connectionTransport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateImportSession(value: () => PhotoImportSession): Self = StObject.set(x, "createImportSession", js.Any.fromFunction0(value))
+    inline def setCreateImportSession(value: () => PhotoImportSession): Self = StObject.set(x, "createImportSession", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDateTime(value: Date): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
+    inline def setDateTime(value: Date): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLocked(value: Boolean): Self = StObject.set(x, "isLocked", value.asInstanceOf[js.Any])
+    inline def setIsLocked(value: Boolean): Self = StObject.set(x, "isLocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMassStorage(value: Boolean): Self = StObject.set(x, "isMassStorage", value.asInstanceOf[js.Any])
+    inline def setIsMassStorage(value: Boolean): Self = StObject.set(x, "isMassStorage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
+    inline def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerSource(value: PhotoImportPowerSource): Self = StObject.set(x, "powerSource", value.asInstanceOf[js.Any])
+    inline def setPowerSource(value: PhotoImportPowerSource): Self = StObject.set(x, "powerSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
+    inline def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageMedia(value: IVectorView[PhotoImportStorageMedium]): Self = StObject.set(x, "storageMedia", value.asInstanceOf[js.Any])
+    inline def setStorageMedia(value: IVectorView[PhotoImportStorageMedium]): Self = StObject.set(x, "storageMedia", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnail(value: IRandomAccessStreamReference): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+    inline def setThumbnail(value: IRandomAccessStreamReference): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: PhotoImportSourceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: PhotoImportSourceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

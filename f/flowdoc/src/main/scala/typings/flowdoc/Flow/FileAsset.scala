@@ -12,19 +12,15 @@ trait FileAsset extends StObject {
 }
 object FileAsset {
   
-  @scala.inline
-  def apply(dirPath: String, fileName: String): FileAsset = {
+  inline def apply(dirPath: String, fileName: String): FileAsset = {
     val __obj = js.Dynamic.literal(dirPath = dirPath.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileAsset]
   }
   
-  @scala.inline
-  implicit class FileAssetMutableBuilder[Self <: FileAsset] (val x: Self) extends AnyVal {
+  extension [Self <: FileAsset](x: Self) {
     
-    @scala.inline
-    def setDirPath(value: String): Self = StObject.set(x, "dirPath", value.asInstanceOf[js.Any])
+    inline def setDirPath(value: String): Self = StObject.set(x, "dirPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
   }
 }

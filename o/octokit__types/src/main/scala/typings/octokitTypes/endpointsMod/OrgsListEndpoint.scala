@@ -13,19 +13,15 @@ trait OrgsListEndpoint extends StObject {
 }
 object OrgsListEndpoint {
   
-  @scala.inline
-  def apply(): OrgsListEndpoint = {
+  inline def apply(): OrgsListEndpoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrgsListEndpoint]
   }
   
-  @scala.inline
-  implicit class OrgsListEndpointMutableBuilder[Self <: OrgsListEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: OrgsListEndpoint](x: Self) {
     
-    @scala.inline
-    def setSince(value: Double): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
+    inline def setSince(value: Double): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
+    inline def setSinceUndefined: Self = StObject.set(x, "since", js.undefined)
   }
 }

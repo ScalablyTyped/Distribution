@@ -18,28 +18,21 @@ trait GetResourceSharesResponse extends StObject {
 }
 object GetResourceSharesResponse {
   
-  @scala.inline
-  def apply(): GetResourceSharesResponse = {
+  inline def apply(): GetResourceSharesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetResourceSharesResponse]
   }
   
-  @scala.inline
-  implicit class GetResourceSharesResponseMutableBuilder[Self <: GetResourceSharesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetResourceSharesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setResourceShares(value: ResourceShareList): Self = StObject.set(x, "resourceShares", value.asInstanceOf[js.Any])
+    inline def setResourceShares(value: ResourceShareList): Self = StObject.set(x, "resourceShares", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceSharesUndefined: Self = StObject.set(x, "resourceShares", js.undefined)
+    inline def setResourceSharesUndefined: Self = StObject.set(x, "resourceShares", js.undefined)
     
-    @scala.inline
-    def setResourceSharesVarargs(value: ResourceShare*): Self = StObject.set(x, "resourceShares", js.Array(value :_*))
+    inline def setResourceSharesVarargs(value: ResourceShare*): Self = StObject.set(x, "resourceShares", js.Array(value :_*))
   }
 }

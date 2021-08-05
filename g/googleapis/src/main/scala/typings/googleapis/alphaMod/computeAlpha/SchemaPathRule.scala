@@ -49,40 +49,29 @@ trait SchemaPathRule extends StObject {
 }
 object SchemaPathRule {
   
-  @scala.inline
-  def apply(): SchemaPathRule = {
+  inline def apply(): SchemaPathRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPathRule]
   }
   
-  @scala.inline
-  implicit class SchemaPathRuleMutableBuilder[Self <: SchemaPathRule] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPathRule](x: Self) {
     
-    @scala.inline
-    def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
+    inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
     
-    @scala.inline
-    def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
+    inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
     
-    @scala.inline
-    def setRouteAction(value: SchemaHttpRouteAction): Self = StObject.set(x, "routeAction", value.asInstanceOf[js.Any])
+    inline def setRouteAction(value: SchemaHttpRouteAction): Self = StObject.set(x, "routeAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteActionUndefined: Self = StObject.set(x, "routeAction", js.undefined)
+    inline def setRouteActionUndefined: Self = StObject.set(x, "routeAction", js.undefined)
     
-    @scala.inline
-    def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+    inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
     
-    @scala.inline
-    def setUrlRedirect(value: SchemaHttpRedirectAction): Self = StObject.set(x, "urlRedirect", value.asInstanceOf[js.Any])
+    inline def setUrlRedirect(value: SchemaHttpRedirectAction): Self = StObject.set(x, "urlRedirect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlRedirectUndefined: Self = StObject.set(x, "urlRedirect", js.undefined)
+    inline def setUrlRedirectUndefined: Self = StObject.set(x, "urlRedirect", js.undefined)
   }
 }

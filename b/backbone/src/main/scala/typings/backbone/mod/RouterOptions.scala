@@ -10,16 +10,13 @@ trait RouterOptions extends StObject {
 }
 object RouterOptions {
   
-  @scala.inline
-  def apply(routes: js.Any): RouterOptions = {
+  inline def apply(routes: js.Any): RouterOptions = {
     val __obj = js.Dynamic.literal(routes = routes.asInstanceOf[js.Any])
     __obj.asInstanceOf[RouterOptions]
   }
   
-  @scala.inline
-  implicit class RouterOptionsMutableBuilder[Self <: RouterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RouterOptions](x: Self) {
     
-    @scala.inline
-    def setRoutes(value: js.Any): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+    inline def setRoutes(value: js.Any): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
   }
 }

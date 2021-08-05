@@ -18,28 +18,21 @@ trait ListStreamConsumersOutput extends StObject {
 }
 object ListStreamConsumersOutput {
   
-  @scala.inline
-  def apply(): ListStreamConsumersOutput = {
+  inline def apply(): ListStreamConsumersOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListStreamConsumersOutput]
   }
   
-  @scala.inline
-  implicit class ListStreamConsumersOutputMutableBuilder[Self <: ListStreamConsumersOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListStreamConsumersOutput](x: Self) {
     
-    @scala.inline
-    def setConsumers(value: ConsumerList): Self = StObject.set(x, "Consumers", value.asInstanceOf[js.Any])
+    inline def setConsumers(value: ConsumerList): Self = StObject.set(x, "Consumers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumersUndefined: Self = StObject.set(x, "Consumers", js.undefined)
+    inline def setConsumersUndefined: Self = StObject.set(x, "Consumers", js.undefined)
     
-    @scala.inline
-    def setConsumersVarargs(value: Consumer*): Self = StObject.set(x, "Consumers", js.Array(value :_*))
+    inline def setConsumersVarargs(value: Consumer*): Self = StObject.set(x, "Consumers", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

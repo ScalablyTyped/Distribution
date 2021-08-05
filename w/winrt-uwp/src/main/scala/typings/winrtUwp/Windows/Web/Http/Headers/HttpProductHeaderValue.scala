@@ -15,19 +15,15 @@ trait HttpProductHeaderValue extends StObject {
 }
 object HttpProductHeaderValue {
   
-  @scala.inline
-  def apply(name: String, version: String): HttpProductHeaderValue = {
+  inline def apply(name: String, version: String): HttpProductHeaderValue = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[HttpProductHeaderValue]
   }
   
-  @scala.inline
-  implicit class HttpProductHeaderValueMutableBuilder[Self <: HttpProductHeaderValue] (val x: Self) extends AnyVal {
+  extension [Self <: HttpProductHeaderValue](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

@@ -12,16 +12,13 @@ trait HeroObjectiveKillsAverage
 }
 object HeroObjectiveKillsAverage {
   
-  @scala.inline
-  def apply(hero: String, img: String, objective_kills_average: String): HeroObjectiveKillsAverage = {
+  inline def apply(hero: String, img: String, objective_kills_average: String): HeroObjectiveKillsAverage = {
     val __obj = js.Dynamic.literal(hero = hero.asInstanceOf[js.Any], img = img.asInstanceOf[js.Any], objective_kills_average = objective_kills_average.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeroObjectiveKillsAverage]
   }
   
-  @scala.inline
-  implicit class HeroObjectiveKillsAverageMutableBuilder[Self <: HeroObjectiveKillsAverage] (val x: Self) extends AnyVal {
+  extension [Self <: HeroObjectiveKillsAverage](x: Self) {
     
-    @scala.inline
-    def setObjective_kills_average(value: String): Self = StObject.set(x, "objective_kills_average", value.asInstanceOf[js.Any])
+    inline def setObjective_kills_average(value: String): Self = StObject.set(x, "objective_kills_average", value.asInstanceOf[js.Any])
   }
 }

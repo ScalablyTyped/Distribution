@@ -56,6 +56,5 @@ object XmlWriter {
   
   /** Creates a new instance of the XmlWriter class with the specified string builder. */
   /* static member */
-  @scala.inline
-  def create(sb: StringBuilder): typings.sharepoint.SP.XmlWriter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(sb.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.XmlWriter]
+  inline def create(sb: StringBuilder): typings.sharepoint.SP.XmlWriter = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(sb.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.XmlWriter]
 }

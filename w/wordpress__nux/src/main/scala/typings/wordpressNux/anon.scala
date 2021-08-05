@@ -19,8 +19,7 @@ object anon {
   }
   object TypeofimportedActions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       disableTips: () => Unit,
       dismissTip: String => Unit,
       enableTips: () => Unit,
@@ -30,20 +29,15 @@ object anon {
       __obj.asInstanceOf[TypeofimportedActions]
     }
     
-    @scala.inline
-    implicit class TypeofimportedActionsMutableBuilder[Self <: TypeofimportedActions] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofimportedActions](x: Self) {
       
-      @scala.inline
-      def setDisableTips(value: () => Unit): Self = StObject.set(x, "disableTips", js.Any.fromFunction0(value))
+      inline def setDisableTips(value: () => Unit): Self = StObject.set(x, "disableTips", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDismissTip(value: String => Unit): Self = StObject.set(x, "dismissTip", js.Any.fromFunction1(value))
+      inline def setDismissTip(value: String => Unit): Self = StObject.set(x, "dismissTip", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEnableTips(value: () => Unit): Self = StObject.set(x, "enableTips", js.Any.fromFunction0(value))
+      inline def setEnableTips(value: () => Unit): Self = StObject.set(x, "enableTips", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTriggerGuide(value: js.Array[String] => Unit): Self = StObject.set(x, "triggerGuide", js.Any.fromFunction1(value))
+      inline def setTriggerGuide(value: js.Array[String] => Unit): Self = StObject.set(x, "triggerGuide", js.Any.fromFunction1(value))
     }
   }
   
@@ -57,8 +51,7 @@ object anon {
   }
   object TypeofimportedSelectors {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       areTipsEnabled: () => Boolean,
       getAssociatedGuide: String => js.UndefOr[GuideInfo],
       isTipVisible: String => Boolean
@@ -67,17 +60,13 @@ object anon {
       __obj.asInstanceOf[TypeofimportedSelectors]
     }
     
-    @scala.inline
-    implicit class TypeofimportedSelectorsMutableBuilder[Self <: TypeofimportedSelectors] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofimportedSelectors](x: Self) {
       
-      @scala.inline
-      def setAreTipsEnabled(value: () => Boolean): Self = StObject.set(x, "areTipsEnabled", js.Any.fromFunction0(value))
+      inline def setAreTipsEnabled(value: () => Boolean): Self = StObject.set(x, "areTipsEnabled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAssociatedGuide(value: String => js.UndefOr[GuideInfo]): Self = StObject.set(x, "getAssociatedGuide", js.Any.fromFunction1(value))
+      inline def setGetAssociatedGuide(value: String => js.UndefOr[GuideInfo]): Self = StObject.set(x, "getAssociatedGuide", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsTipVisible(value: String => Boolean): Self = StObject.set(x, "isTipVisible", js.Any.fromFunction1(value))
+      inline def setIsTipVisible(value: String => Boolean): Self = StObject.set(x, "isTipVisible", js.Any.fromFunction1(value))
     }
   }
 }

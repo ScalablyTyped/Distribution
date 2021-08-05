@@ -28,25 +28,19 @@ trait SchemaGenerateConfigReportRequest extends StObject {
 }
 object SchemaGenerateConfigReportRequest {
   
-  @scala.inline
-  def apply(): SchemaGenerateConfigReportRequest = {
+  inline def apply(): SchemaGenerateConfigReportRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGenerateConfigReportRequest]
   }
   
-  @scala.inline
-  implicit class SchemaGenerateConfigReportRequestMutableBuilder[Self <: SchemaGenerateConfigReportRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGenerateConfigReportRequest](x: Self) {
     
-    @scala.inline
-    def setNewConfig(value: StringDictionary[js.Any]): Self = StObject.set(x, "newConfig", value.asInstanceOf[js.Any])
+    inline def setNewConfig(value: StringDictionary[js.Any]): Self = StObject.set(x, "newConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewConfigUndefined: Self = StObject.set(x, "newConfig", js.undefined)
+    inline def setNewConfigUndefined: Self = StObject.set(x, "newConfig", js.undefined)
     
-    @scala.inline
-    def setOldConfig(value: StringDictionary[js.Any]): Self = StObject.set(x, "oldConfig", value.asInstanceOf[js.Any])
+    inline def setOldConfig(value: StringDictionary[js.Any]): Self = StObject.set(x, "oldConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldConfigUndefined: Self = StObject.set(x, "oldConfig", js.undefined)
+    inline def setOldConfigUndefined: Self = StObject.set(x, "oldConfig", js.undefined)
   }
 }

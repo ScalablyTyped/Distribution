@@ -34,8 +34,7 @@ trait Shimmer[N /* <: String */, C /* <: js.Object */] extends StObject {
 }
 object Shimmer {
   
-  @scala.inline
-  def apply[N /* <: String */, C /* <: js.Object */](
+  inline def apply[N /* <: String */, C /* <: js.Object */](
     die: () => Unit,
     forceObj: C,
     id: Double,
@@ -54,43 +53,30 @@ object Shimmer {
     __obj.asInstanceOf[Shimmer[N, C]]
   }
   
-  @scala.inline
-  implicit class ShimmerMutableBuilder[Self <: Shimmer[?, ?], N /* <: String */, C /* <: js.Object */] (val x: Self & (Shimmer[N, C])) extends AnyVal {
+  extension [Self <: Shimmer[?, ?], N /* <: String */, C /* <: js.Object */](x: Self & (Shimmer[N, C])) {
     
-    @scala.inline
-    def setDie(value: () => Unit): Self = StObject.set(x, "die", js.Any.fromFunction0(value))
+    inline def setDie(value: () => Unit): Self = StObject.set(x, "die", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setForceObj(value: C): Self = StObject.set(x, "forceObj", value.asInstanceOf[js.Any])
+    inline def setForceObj(value: C): Self = StObject.set(x, "forceObj", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+    inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setL(value: HTMLElement): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
+    inline def setL(value: HTMLElement): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoCount(value: Boolean): Self = StObject.set(x, "noCount", value.asInstanceOf[js.Any])
+    inline def setNoCount(value: Boolean): Self = StObject.set(x, "noCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPop(value: MouseEvent => Unit): Self = StObject.set(x, "pop", js.Any.fromFunction1(value))
+    inline def setPop(value: MouseEvent => Unit): Self = StObject.set(x, "pop", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSpawnLead(value: Double): Self = StObject.set(x, "spawnLead", value.asInstanceOf[js.Any])
+    inline def setSpawnLead(value: Double): Self = StObject.set(x, "spawnLead", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: N): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: N): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+    inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

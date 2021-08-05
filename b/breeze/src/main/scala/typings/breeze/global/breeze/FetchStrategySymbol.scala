@@ -11,7 +11,7 @@ class FetchStrategySymbol ()
   extends StObject
      with typings.breeze.breeze.FetchStrategySymbol {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var foo: js.Any = js.native
   
   /* CompleteClass */

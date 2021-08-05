@@ -25,7 +25,7 @@ object resolveContextMod {
     
     var _injector: UIInjector = js.native
     
-    var _path: js.Any = js.native
+    /* private */ var _path: js.Any = js.native
     
     /**
       * Adds Resolvables to the node that matches the state

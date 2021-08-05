@@ -14,13 +14,10 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def caching(IConfig: StoreConfig & CacheOptions): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("caching")(IConfig.asInstanceOf[js.Any]).asInstanceOf[Cache]
+  inline def caching(IConfig: StoreConfig & CacheOptions): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("caching")(IConfig.asInstanceOf[js.Any]).asInstanceOf[Cache]
   
-  @scala.inline
-  def multiCaching(Caches: js.Array[Cache]): MultiCache = ^.asInstanceOf[js.Dynamic].applyDynamic("multiCaching")(Caches.asInstanceOf[js.Any]).asInstanceOf[MultiCache]
-  @scala.inline
-  def multiCaching(Caches: js.Array[Cache], options: CacheOptions): MultiCache = (^.asInstanceOf[js.Dynamic].applyDynamic("multiCaching")(Caches.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MultiCache]
+  inline def multiCaching(Caches: js.Array[Cache]): MultiCache = ^.asInstanceOf[js.Dynamic].applyDynamic("multiCaching")(Caches.asInstanceOf[js.Any]).asInstanceOf[MultiCache]
+  inline def multiCaching(Caches: js.Array[Cache], options: CacheOptions): MultiCache = (^.asInstanceOf[js.Dynamic].applyDynamic("multiCaching")(Caches.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MultiCache]
   
   @js.native
   trait Cache extends StObject {
@@ -62,26 +59,20 @@ object mod {
   }
   object CacheOptions {
     
-    @scala.inline
-    def apply(): CacheOptions = {
+    inline def apply(): CacheOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CacheOptions]
     }
     
-    @scala.inline
-    implicit class CacheOptionsMutableBuilder[Self <: CacheOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CacheOptions](x: Self) {
       
-      @scala.inline
-      def setIsCacheableValue(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isCacheableValue", js.Any.fromFunction1(value))
+      inline def setIsCacheableValue(value: /* value */ js.Any => Boolean): Self = StObject.set(x, "isCacheableValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsCacheableValueUndefined: Self = StObject.set(x, "isCacheableValue", js.undefined)
+      inline def setIsCacheableValueUndefined: Self = StObject.set(x, "isCacheableValue", js.undefined)
       
-      @scala.inline
-      def setPromiseDependency(value: js.Any): Self = StObject.set(x, "promiseDependency", value.asInstanceOf[js.Any])
+      inline def setPromiseDependency(value: js.Any): Self = StObject.set(x, "promiseDependency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromiseDependencyUndefined: Self = StObject.set(x, "promiseDependency", js.undefined)
+      inline def setPromiseDependencyUndefined: Self = StObject.set(x, "promiseDependency", js.undefined)
     }
   }
   
@@ -91,20 +82,16 @@ object mod {
   }
   object CachingConfig {
     
-    @scala.inline
-    def apply(ttl: Double | TtlFunction): CachingConfig = {
+    inline def apply(ttl: Double | TtlFunction): CachingConfig = {
       val __obj = js.Dynamic.literal(ttl = ttl.asInstanceOf[js.Any])
       __obj.asInstanceOf[CachingConfig]
     }
     
-    @scala.inline
-    implicit class CachingConfigMutableBuilder[Self <: CachingConfig] (val x: Self) extends AnyVal {
+    extension [Self <: CachingConfig](x: Self) {
       
-      @scala.inline
-      def setTtl(value: Double | TtlFunction): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: Double | TtlFunction): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtlFunction1(value: /* result */ js.Any => Double): Self = StObject.set(x, "ttl", js.Any.fromFunction1(value))
+      inline def setTtlFunction1(value: /* result */ js.Any => Double): Self = StObject.set(x, "ttl", js.Any.fromFunction1(value))
     }
   }
   
@@ -159,62 +146,44 @@ object mod {
   }
   object Store {
     
-    @scala.inline
-    def apply(get: /* repeated */ js.Any => js.Promise[js.Any], set: /* repeated */ js.Any => js.Promise[js.Any]): Store = {
+    inline def apply(get: /* repeated */ js.Any => js.Promise[js.Any], set: /* repeated */ js.Any => js.Promise[js.Any]): Store = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), set = js.Any.fromFunction1(set))
       __obj.asInstanceOf[Store]
     }
     
-    @scala.inline
-    implicit class StoreMutableBuilder[Self <: Store] (val x: Self) extends AnyVal {
+    extension [Self <: Store](x: Self) {
       
-      @scala.inline
-      def setDel(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "del", js.Any.fromFunction1(value))
+      inline def setDel(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "del", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDelUndefined: Self = StObject.set(x, "del", js.undefined)
+      inline def setDelUndefined: Self = StObject.set(x, "del", js.undefined)
       
-      @scala.inline
-      def setGet(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKeys(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "keys", js.Any.fromFunction1(value))
+      inline def setKeys(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "keys", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+      inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
       
-      @scala.inline
-      def setMget(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "mget", js.Any.fromFunction1(value))
+      inline def setMget(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "mget", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMgetUndefined: Self = StObject.set(x, "mget", js.undefined)
+      inline def setMgetUndefined: Self = StObject.set(x, "mget", js.undefined)
       
-      @scala.inline
-      def setMset(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "mset", js.Any.fromFunction1(value))
+      inline def setMset(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "mset", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMsetUndefined: Self = StObject.set(x, "mset", js.undefined)
+      inline def setMsetUndefined: Self = StObject.set(x, "mset", js.undefined)
       
-      @scala.inline
-      def setReset(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
+      inline def setReset(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
+      inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
       
-      @scala.inline
-      def setSet(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+      inline def setSet(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetex(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "setex", js.Any.fromFunction1(value))
+      inline def setSetex(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "setex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetexUndefined: Self = StObject.set(x, "setex", js.undefined)
+      inline def setSetexUndefined: Self = StObject.set(x, "setex", js.undefined)
       
-      @scala.inline
-      def setTtl(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "ttl", js.Any.fromFunction1(value))
+      inline def setTtl(value: /* repeated */ js.Any => js.Promise[js.Any]): Self = StObject.set(x, "ttl", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+      inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
     }
   }
   
@@ -233,23 +202,18 @@ object mod {
   }
   object StoreConfig {
     
-    @scala.inline
-    def apply(store: memory | none | Store | Create, ttl: Double | TtlFunction): StoreConfig = {
+    inline def apply(store: memory | none | Store | Create, ttl: Double | TtlFunction): StoreConfig = {
       val __obj = js.Dynamic.literal(store = store.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
       __obj.asInstanceOf[StoreConfig]
     }
     
-    @scala.inline
-    implicit class StoreConfigMutableBuilder[Self <: StoreConfig] (val x: Self) extends AnyVal {
+    extension [Self <: StoreConfig](x: Self) {
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setStore(value: memory | none | Store | Create): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: memory | none | Store | Create): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     }
   }
   

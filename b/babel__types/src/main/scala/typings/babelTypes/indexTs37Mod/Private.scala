@@ -18,8 +18,7 @@ trait Private
      with _Node
 object Private {
   
-  @scala.inline
-  def ClassPrivateMethod_(
+  inline def ClassPrivateMethod_(
     async: Boolean,
     body: BlockStatement_,
     computed: Boolean,
@@ -35,15 +34,13 @@ object Private {
     __obj.asInstanceOf[typings.babelTypes.indexTs37Mod.ClassPrivateMethod_]
   }
   
-  @scala.inline
-  def ClassPrivateProperty_(key: PrivateName_, static: js.Any): typings.babelTypes.indexTs37Mod.ClassPrivateProperty_ = {
+  inline def ClassPrivateProperty_(key: PrivateName_, static: js.Any): typings.babelTypes.indexTs37Mod.ClassPrivateProperty_ = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, value = null)
     __obj.updateDynamic("type")("ClassPrivateProperty")
     __obj.asInstanceOf[typings.babelTypes.indexTs37Mod.ClassPrivateProperty_]
   }
   
-  @scala.inline
-  def PrivateName_(id: Identifier_): typings.babelTypes.indexTs37Mod.PrivateName_ = {
+  inline def PrivateName_(id: Identifier_): typings.babelTypes.indexTs37Mod.PrivateName_ = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("PrivateName")
     __obj.asInstanceOf[typings.babelTypes.indexTs37Mod.PrivateName_]

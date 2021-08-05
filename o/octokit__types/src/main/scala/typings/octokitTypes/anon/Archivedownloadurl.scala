@@ -26,8 +26,7 @@ trait Archivedownloadurl extends StObject {
 }
 object Archivedownloadurl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     archive_download_url: String,
     created_at: String,
     expired: Boolean,
@@ -42,34 +41,24 @@ object Archivedownloadurl {
     __obj.asInstanceOf[Archivedownloadurl]
   }
   
-  @scala.inline
-  implicit class ArchivedownloadurlMutableBuilder[Self <: Archivedownloadurl] (val x: Self) extends AnyVal {
+  extension [Self <: Archivedownloadurl](x: Self) {
     
-    @scala.inline
-    def setArchive_download_url(value: String): Self = StObject.set(x, "archive_download_url", value.asInstanceOf[js.Any])
+    inline def setArchive_download_url(value: String): Self = StObject.set(x, "archive_download_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+    inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpired(value: Boolean): Self = StObject.set(x, "expired", value.asInstanceOf[js.Any])
+    inline def setExpired(value: Boolean): Self = StObject.set(x, "expired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpires_at(value: String): Self = StObject.set(x, "expires_at", value.asInstanceOf[js.Any])
+    inline def setExpires_at(value: String): Self = StObject.set(x, "expires_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
+    inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize_in_bytes(value: Double): Self = StObject.set(x, "size_in_bytes", value.asInstanceOf[js.Any])
+    inline def setSize_in_bytes(value: Double): Self = StObject.set(x, "size_in_bytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

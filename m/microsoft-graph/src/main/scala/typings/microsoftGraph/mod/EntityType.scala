@@ -19,30 +19,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EntityType extends StObject
 object EntityType {
   
-  @scala.inline
-  def drive: typings.microsoftGraph.microsoftGraphStrings.drive = "drive".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.drive]
+  inline def drive: typings.microsoftGraph.microsoftGraphStrings.drive = "drive".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.drive]
   
-  @scala.inline
-  def driveItem: typings.microsoftGraph.microsoftGraphStrings.driveItem = "driveItem".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.driveItem]
+  inline def driveItem: typings.microsoftGraph.microsoftGraphStrings.driveItem = "driveItem".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.driveItem]
   
-  @scala.inline
-  def event: typings.microsoftGraph.microsoftGraphStrings.event = "event".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.event]
+  inline def event: typings.microsoftGraph.microsoftGraphStrings.event = "event".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.event]
   
-  @scala.inline
-  def externalItem: typings.microsoftGraph.microsoftGraphStrings.externalItem = "externalItem".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.externalItem]
+  inline def externalItem: typings.microsoftGraph.microsoftGraphStrings.externalItem = "externalItem".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.externalItem]
   
-  @scala.inline
-  def list: typings.microsoftGraph.microsoftGraphStrings.list = "list".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.list]
+  inline def list: typings.microsoftGraph.microsoftGraphStrings.list = "list".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.list]
   
-  @scala.inline
-  def listItem: typings.microsoftGraph.microsoftGraphStrings.listItem = "listItem".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.listItem]
+  inline def listItem: typings.microsoftGraph.microsoftGraphStrings.listItem = "listItem".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.listItem]
   
-  @scala.inline
-  def message: typings.microsoftGraph.microsoftGraphStrings.message = "message".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.message]
+  inline def message: typings.microsoftGraph.microsoftGraphStrings.message = "message".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.message]
   
-  @scala.inline
-  def site: typings.microsoftGraph.microsoftGraphStrings.site = "site".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.site]
+  inline def site: typings.microsoftGraph.microsoftGraphStrings.site = "site".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.site]
   
-  @scala.inline
-  def unknownfuturevalue: unknownfuturevalue_ = "unknownfuturevalue".asInstanceOf[unknownfuturevalue_]
+  inline def unknownfuturevalue: unknownfuturevalue_ = "unknownfuturevalue".asInstanceOf[unknownfuturevalue_]
 }

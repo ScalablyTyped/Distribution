@@ -13,8 +13,6 @@ object fromArrayMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromArray[T](input: ArrayLike[T]): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(input.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
-  @scala.inline
-  def fromArray[T](input: ArrayLike[T], scheduler: SchedulerLike): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(input.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+  inline def fromArray[T](input: ArrayLike[T]): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(input.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
+  inline def fromArray[T](input: ArrayLike[T], scheduler: SchedulerLike): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(input.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
 }

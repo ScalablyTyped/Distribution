@@ -24,22 +24,17 @@ trait DataEntry extends StObject {
 }
 object DataEntry {
   
-  @scala.inline
-  def apply(key: RemoteObject, primaryKey: RemoteObject, value: RemoteObject): DataEntry = {
+  inline def apply(key: RemoteObject, primaryKey: RemoteObject, value: RemoteObject): DataEntry = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], primaryKey = primaryKey.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataEntry]
   }
   
-  @scala.inline
-  implicit class DataEntryMutableBuilder[Self <: DataEntry] (val x: Self) extends AnyVal {
+  extension [Self <: DataEntry](x: Self) {
     
-    @scala.inline
-    def setKey(value: RemoteObject): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: RemoteObject): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryKey(value: RemoteObject): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
+    inline def setPrimaryKey(value: RemoteObject): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: RemoteObject): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: RemoteObject): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

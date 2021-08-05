@@ -16,20 +16,16 @@ trait Arm64FpOperand
 }
 object Arm64FpOperand {
   
-  @scala.inline
-  def apply(value: Double): Arm64FpOperand = {
+  inline def apply(value: Double): Arm64FpOperand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("fp")
     __obj.asInstanceOf[Arm64FpOperand]
   }
   
-  @scala.inline
-  implicit class Arm64FpOperandMutableBuilder[Self <: Arm64FpOperand] (val x: Self) extends AnyVal {
+  extension [Self <: Arm64FpOperand](x: Self) {
     
-    @scala.inline
-    def setType(value: fp): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: fp): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

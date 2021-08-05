@@ -11,19 +11,15 @@ trait WorkloadMetadataConfig extends StObject {
 }
 object WorkloadMetadataConfig {
   
-  @scala.inline
-  def apply(): WorkloadMetadataConfig = {
+  inline def apply(): WorkloadMetadataConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkloadMetadataConfig]
   }
   
-  @scala.inline
-  implicit class WorkloadMetadataConfigMutableBuilder[Self <: WorkloadMetadataConfig] (val x: Self) extends AnyVal {
+  extension [Self <: WorkloadMetadataConfig](x: Self) {
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

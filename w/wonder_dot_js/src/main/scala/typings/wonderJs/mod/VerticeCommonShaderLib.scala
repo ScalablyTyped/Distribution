@@ -15,6 +15,5 @@ object VerticeCommonShaderLib {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(): typings.wonderJs.verticeCommonShaderLibMod.VerticeCommonShaderLib = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.verticeCommonShaderLibMod.VerticeCommonShaderLib]
+  inline def create(): typings.wonderJs.verticeCommonShaderLibMod.VerticeCommonShaderLib = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.verticeCommonShaderLibMod.VerticeCommonShaderLib]
 }

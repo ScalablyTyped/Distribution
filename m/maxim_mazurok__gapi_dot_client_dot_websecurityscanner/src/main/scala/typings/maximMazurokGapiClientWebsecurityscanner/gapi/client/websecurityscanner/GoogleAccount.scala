@@ -14,25 +14,19 @@ trait GoogleAccount extends StObject {
 }
 object GoogleAccount {
   
-  @scala.inline
-  def apply(): GoogleAccount = {
+  inline def apply(): GoogleAccount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAccount]
   }
   
-  @scala.inline
-  implicit class GoogleAccountMutableBuilder[Self <: GoogleAccount] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAccount](x: Self) {
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

@@ -28,31 +28,23 @@ trait SchemaOrderBy extends StObject {
 }
 object SchemaOrderBy {
   
-  @scala.inline
-  def apply(): SchemaOrderBy = {
+  inline def apply(): SchemaOrderBy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaOrderBy]
   }
   
-  @scala.inline
-  implicit class SchemaOrderByMutableBuilder[Self <: SchemaOrderBy] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaOrderBy](x: Self) {
     
-    @scala.inline
-    def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
+    inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldNameUndefined: Self = StObject.set(x, "fieldName", js.undefined)
+    inline def setFieldNameUndefined: Self = StObject.set(x, "fieldName", js.undefined)
     
-    @scala.inline
-    def setOrderType(value: String): Self = StObject.set(x, "orderType", value.asInstanceOf[js.Any])
+    inline def setOrderType(value: String): Self = StObject.set(x, "orderType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderTypeUndefined: Self = StObject.set(x, "orderType", js.undefined)
+    inline def setOrderTypeUndefined: Self = StObject.set(x, "orderType", js.undefined)
     
-    @scala.inline
-    def setSortOrder(value: String): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
+    inline def setSortOrder(value: String): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
+    inline def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
   }
 }

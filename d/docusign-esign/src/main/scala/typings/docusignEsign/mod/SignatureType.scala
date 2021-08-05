@@ -25,25 +25,19 @@ trait SignatureType extends StObject {
 }
 object SignatureType {
   
-  @scala.inline
-  def apply(): SignatureType = {
+  inline def apply(): SignatureType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SignatureType]
   }
   
-  @scala.inline
-  implicit class SignatureTypeMutableBuilder[Self <: SignatureType] (val x: Self) extends AnyVal {
+  extension [Self <: SignatureType](x: Self) {
     
-    @scala.inline
-    def setIsDefault(value: String): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
+    inline def setIsDefault(value: String): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
+    inline def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

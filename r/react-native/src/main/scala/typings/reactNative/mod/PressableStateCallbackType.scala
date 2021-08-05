@@ -10,16 +10,13 @@ trait PressableStateCallbackType extends StObject {
 }
 object PressableStateCallbackType {
   
-  @scala.inline
-  def apply(pressed: Boolean): PressableStateCallbackType = {
+  inline def apply(pressed: Boolean): PressableStateCallbackType = {
     val __obj = js.Dynamic.literal(pressed = pressed.asInstanceOf[js.Any])
     __obj.asInstanceOf[PressableStateCallbackType]
   }
   
-  @scala.inline
-  implicit class PressableStateCallbackTypeMutableBuilder[Self <: PressableStateCallbackType] (val x: Self) extends AnyVal {
+  extension [Self <: PressableStateCallbackType](x: Self) {
     
-    @scala.inline
-    def setPressed(value: Boolean): Self = StObject.set(x, "pressed", value.asInstanceOf[js.Any])
+    inline def setPressed(value: Boolean): Self = StObject.set(x, "pressed", value.asInstanceOf[js.Any])
   }
 }

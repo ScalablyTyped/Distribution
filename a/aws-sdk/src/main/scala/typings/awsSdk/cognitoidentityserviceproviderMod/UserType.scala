@@ -43,61 +43,43 @@ trait UserType extends StObject {
 }
 object UserType {
   
-  @scala.inline
-  def apply(): UserType = {
+  inline def apply(): UserType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserType]
   }
   
-  @scala.inline
-  implicit class UserTypeMutableBuilder[Self <: UserType] (val x: Self) extends AnyVal {
+  extension [Self <: UserType](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: AttributeListType): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: AttributeListType): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
-    @scala.inline
-    def setAttributesVarargs(value: AttributeType*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: AttributeType*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
     
-    @scala.inline
-    def setEnabled(value: BooleanType): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: BooleanType): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
-    @scala.inline
-    def setMFAOptions(value: MFAOptionListType): Self = StObject.set(x, "MFAOptions", value.asInstanceOf[js.Any])
+    inline def setMFAOptions(value: MFAOptionListType): Self = StObject.set(x, "MFAOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMFAOptionsUndefined: Self = StObject.set(x, "MFAOptions", js.undefined)
+    inline def setMFAOptionsUndefined: Self = StObject.set(x, "MFAOptions", js.undefined)
     
-    @scala.inline
-    def setMFAOptionsVarargs(value: MFAOptionType*): Self = StObject.set(x, "MFAOptions", js.Array(value :_*))
+    inline def setMFAOptionsVarargs(value: MFAOptionType*): Self = StObject.set(x, "MFAOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setUserCreateDate(value: DateType): Self = StObject.set(x, "UserCreateDate", value.asInstanceOf[js.Any])
+    inline def setUserCreateDate(value: DateType): Self = StObject.set(x, "UserCreateDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserCreateDateUndefined: Self = StObject.set(x, "UserCreateDate", js.undefined)
+    inline def setUserCreateDateUndefined: Self = StObject.set(x, "UserCreateDate", js.undefined)
     
-    @scala.inline
-    def setUserLastModifiedDate(value: DateType): Self = StObject.set(x, "UserLastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setUserLastModifiedDate(value: DateType): Self = StObject.set(x, "UserLastModifiedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserLastModifiedDateUndefined: Self = StObject.set(x, "UserLastModifiedDate", js.undefined)
+    inline def setUserLastModifiedDateUndefined: Self = StObject.set(x, "UserLastModifiedDate", js.undefined)
     
-    @scala.inline
-    def setUserStatus(value: UserStatusType): Self = StObject.set(x, "UserStatus", value.asInstanceOf[js.Any])
+    inline def setUserStatus(value: UserStatusType): Self = StObject.set(x, "UserStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserStatusUndefined: Self = StObject.set(x, "UserStatus", js.undefined)
+    inline def setUserStatusUndefined: Self = StObject.set(x, "UserStatus", js.undefined)
     
-    @scala.inline
-    def setUsername(value: UsernameType): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: UsernameType): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
   }
 }

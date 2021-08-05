@@ -58,73 +58,51 @@ trait ConflictMetadata extends StObject {
 }
 object ConflictMetadata {
   
-  @scala.inline
-  def apply(): ConflictMetadata = {
+  inline def apply(): ConflictMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConflictMetadata]
   }
   
-  @scala.inline
-  implicit class ConflictMetadataMutableBuilder[Self <: ConflictMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ConflictMetadata](x: Self) {
     
-    @scala.inline
-    def setContentConflict(value: IsContentConflict): Self = StObject.set(x, "contentConflict", value.asInstanceOf[js.Any])
+    inline def setContentConflict(value: IsContentConflict): Self = StObject.set(x, "contentConflict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentConflictUndefined: Self = StObject.set(x, "contentConflict", js.undefined)
+    inline def setContentConflictUndefined: Self = StObject.set(x, "contentConflict", js.undefined)
     
-    @scala.inline
-    def setFileModeConflict(value: IsFileModeConflict): Self = StObject.set(x, "fileModeConflict", value.asInstanceOf[js.Any])
+    inline def setFileModeConflict(value: IsFileModeConflict): Self = StObject.set(x, "fileModeConflict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileModeConflictUndefined: Self = StObject.set(x, "fileModeConflict", js.undefined)
+    inline def setFileModeConflictUndefined: Self = StObject.set(x, "fileModeConflict", js.undefined)
     
-    @scala.inline
-    def setFileModes(value: FileModes): Self = StObject.set(x, "fileModes", value.asInstanceOf[js.Any])
+    inline def setFileModes(value: FileModes): Self = StObject.set(x, "fileModes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileModesUndefined: Self = StObject.set(x, "fileModes", js.undefined)
+    inline def setFileModesUndefined: Self = StObject.set(x, "fileModes", js.undefined)
     
-    @scala.inline
-    def setFilePath(value: Path): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: Path): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
+    inline def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
     
-    @scala.inline
-    def setFileSizes(value: FileSizes): Self = StObject.set(x, "fileSizes", value.asInstanceOf[js.Any])
+    inline def setFileSizes(value: FileSizes): Self = StObject.set(x, "fileSizes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSizesUndefined: Self = StObject.set(x, "fileSizes", js.undefined)
+    inline def setFileSizesUndefined: Self = StObject.set(x, "fileSizes", js.undefined)
     
-    @scala.inline
-    def setIsBinaryFile(value: IsBinaryFile): Self = StObject.set(x, "isBinaryFile", value.asInstanceOf[js.Any])
+    inline def setIsBinaryFile(value: IsBinaryFile): Self = StObject.set(x, "isBinaryFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBinaryFileUndefined: Self = StObject.set(x, "isBinaryFile", js.undefined)
+    inline def setIsBinaryFileUndefined: Self = StObject.set(x, "isBinaryFile", js.undefined)
     
-    @scala.inline
-    def setMergeOperations(value: MergeOperations): Self = StObject.set(x, "mergeOperations", value.asInstanceOf[js.Any])
+    inline def setMergeOperations(value: MergeOperations): Self = StObject.set(x, "mergeOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeOperationsUndefined: Self = StObject.set(x, "mergeOperations", js.undefined)
+    inline def setMergeOperationsUndefined: Self = StObject.set(x, "mergeOperations", js.undefined)
     
-    @scala.inline
-    def setNumberOfConflicts(value: NumberOfConflicts): Self = StObject.set(x, "numberOfConflicts", value.asInstanceOf[js.Any])
+    inline def setNumberOfConflicts(value: NumberOfConflicts): Self = StObject.set(x, "numberOfConflicts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfConflictsUndefined: Self = StObject.set(x, "numberOfConflicts", js.undefined)
+    inline def setNumberOfConflictsUndefined: Self = StObject.set(x, "numberOfConflicts", js.undefined)
     
-    @scala.inline
-    def setObjectTypeConflict(value: IsObjectTypeConflict): Self = StObject.set(x, "objectTypeConflict", value.asInstanceOf[js.Any])
+    inline def setObjectTypeConflict(value: IsObjectTypeConflict): Self = StObject.set(x, "objectTypeConflict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectTypeConflictUndefined: Self = StObject.set(x, "objectTypeConflict", js.undefined)
+    inline def setObjectTypeConflictUndefined: Self = StObject.set(x, "objectTypeConflict", js.undefined)
     
-    @scala.inline
-    def setObjectTypes(value: ObjectTypes): Self = StObject.set(x, "objectTypes", value.asInstanceOf[js.Any])
+    inline def setObjectTypes(value: ObjectTypes): Self = StObject.set(x, "objectTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectTypesUndefined: Self = StObject.set(x, "objectTypes", js.undefined)
+    inline def setObjectTypesUndefined: Self = StObject.set(x, "objectTypes", js.undefined)
   }
 }

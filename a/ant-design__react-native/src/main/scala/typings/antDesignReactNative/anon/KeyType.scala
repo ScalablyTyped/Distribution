@@ -19,26 +19,20 @@ trait KeyType
 }
 object KeyType {
   
-  @scala.inline
-  def apply(key: Double): KeyType = {
+  inline def apply(key: Double): KeyType = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("update")
     __obj.asInstanceOf[KeyType]
   }
   
-  @scala.inline
-  implicit class KeyTypeMutableBuilder[Self <: KeyType] (val x: Self) extends AnyVal {
+  extension [Self <: KeyType](x: Self) {
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: update): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: update): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

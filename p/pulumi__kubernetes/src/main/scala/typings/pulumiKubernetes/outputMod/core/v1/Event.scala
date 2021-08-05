@@ -97,8 +97,7 @@ trait Event extends StObject {
 }
 object Event {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     action: String,
     count: Double,
     eventTime: String,
@@ -120,58 +119,40 @@ object Event {
     __obj.asInstanceOf[Event]
   }
   
-  @scala.inline
-  implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+  extension [Self <: Event](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiVersion(value: typings.pulumiKubernetes.pulumiKubernetesStrings.v1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    inline def setApiVersion(value: typings.pulumiKubernetes.pulumiKubernetesStrings.v1): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTime(value: String): Self = StObject.set(x, "eventTime", value.asInstanceOf[js.Any])
+    inline def setEventTime(value: String): Self = StObject.set(x, "eventTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstTimestamp(value: String): Self = StObject.set(x, "firstTimestamp", value.asInstanceOf[js.Any])
+    inline def setFirstTimestamp(value: String): Self = StObject.set(x, "firstTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvolvedObject(value: ObjectReference): Self = StObject.set(x, "involvedObject", value.asInstanceOf[js.Any])
+    inline def setInvolvedObject(value: ObjectReference): Self = StObject.set(x, "involvedObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.Event): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: typings.pulumiKubernetes.pulumiKubernetesStrings.Event): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastTimestamp(value: String): Self = StObject.set(x, "lastTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastTimestamp(value: String): Self = StObject.set(x, "lastTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: ObjectMeta): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelated(value: ObjectReference): Self = StObject.set(x, "related", value.asInstanceOf[js.Any])
+    inline def setRelated(value: ObjectReference): Self = StObject.set(x, "related", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportingComponent(value: String): Self = StObject.set(x, "reportingComponent", value.asInstanceOf[js.Any])
+    inline def setReportingComponent(value: String): Self = StObject.set(x, "reportingComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportingInstance(value: String): Self = StObject.set(x, "reportingInstance", value.asInstanceOf[js.Any])
+    inline def setReportingInstance(value: String): Self = StObject.set(x, "reportingInstance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeries(value: EventSeries): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    inline def setSeries(value: EventSeries): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: EventSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: EventSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

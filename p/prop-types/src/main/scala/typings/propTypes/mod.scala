@@ -29,17 +29,14 @@ object mod {
   @js.native
   val array: Requireable[js.Array[js.Any]] = js.native
   
-  @scala.inline
-  def arrayOf[T](`type`: Validator[T]): Requireable[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayOf")(`type`.asInstanceOf[js.Any]).asInstanceOf[Requireable[js.Array[T]]]
+  inline def arrayOf[T](`type`: Validator[T]): Requireable[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayOf")(`type`.asInstanceOf[js.Any]).asInstanceOf[Requireable[js.Array[T]]]
   
   @JSImport("prop-types", "bool")
   @js.native
   val bool: Requireable[Boolean] = js.native
   
-  @scala.inline
-  def checkPropTypes(typeSpecs: js.Any, values: js.Any, location: String, componentName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkPropTypes")(typeSpecs.asInstanceOf[js.Any], values.asInstanceOf[js.Any], location.asInstanceOf[js.Any], componentName.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def checkPropTypes(
+  inline def checkPropTypes(typeSpecs: js.Any, values: js.Any, location: String, componentName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkPropTypes")(typeSpecs.asInstanceOf[js.Any], values.asInstanceOf[js.Any], location.asInstanceOf[js.Any], componentName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def checkPropTypes(
     typeSpecs: js.Any,
     values: js.Any,
     location: String,
@@ -55,15 +52,13 @@ object mod {
   @js.native
   val elementType: Requireable[ReactComponentLike] = js.native
   
-  @scala.inline
-  def exact[P /* <: ValidationMap[js.Any] */](`type`: P): Requireable[Required[InferProps[P]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("exact")(`type`.asInstanceOf[js.Any]).asInstanceOf[Requireable[Required[InferProps[P]]]]
+  inline def exact[P /* <: ValidationMap[js.Any] */](`type`: P): Requireable[Required[InferProps[P]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("exact")(`type`.asInstanceOf[js.Any]).asInstanceOf[Requireable[Required[InferProps[P]]]]
   
   @JSImport("prop-types", "func")
   @js.native
   val func: Requireable[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
   
-  @scala.inline
-  def instanceOf[T](expectedClass: Instantiable1[/* args (repeated) */ js.Any, T]): Requireable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("instanceOf")(expectedClass.asInstanceOf[js.Any]).asInstanceOf[Requireable[T]]
+  inline def instanceOf[T](expectedClass: Instantiable1[/* args (repeated) */ js.Any, T]): Requireable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("instanceOf")(expectedClass.asInstanceOf[js.Any]).asInstanceOf[Requireable[T]]
   
   @JSImport("prop-types", "node")
   @js.native
@@ -81,8 +76,7 @@ object mod {
   @js.native
   val `object`: Requireable[js.Object] = js.native
   
-  @scala.inline
-  def objectOf[T](`type`: Validator[T]): Requireable[
+  inline def objectOf[T](`type`: Validator[T]): Requireable[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof any ]: T}
     */ typings.propTypes.propTypesStrings.objectOf & TopLevel[js.Any]
@@ -92,17 +86,13 @@ object mod {
     */ typings.propTypes.propTypesStrings.objectOf & TopLevel[js.Any]
   ]]
   
-  @scala.inline
-  def oneOf[T](types: js.Array[T]): Requireable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("oneOf")(types.asInstanceOf[js.Any]).asInstanceOf[Requireable[T]]
+  inline def oneOf[T](types: js.Array[T]): Requireable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("oneOf")(types.asInstanceOf[js.Any]).asInstanceOf[Requireable[T]]
   
-  @scala.inline
-  def oneOfType[T /* <: Validator[js.Any] */](types: js.Array[T]): Requireable[NonNullable[InferType[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("oneOfType")(types.asInstanceOf[js.Any]).asInstanceOf[Requireable[NonNullable[InferType[T]]]]
+  inline def oneOfType[T /* <: Validator[js.Any] */](types: js.Array[T]): Requireable[NonNullable[InferType[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("oneOfType")(types.asInstanceOf[js.Any]).asInstanceOf[Requireable[NonNullable[InferType[T]]]]
   
-  @scala.inline
-  def resetWarningCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetWarningCache")().asInstanceOf[Unit]
+  inline def resetWarningCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetWarningCache")().asInstanceOf[Unit]
   
-  @scala.inline
-  def shape[P /* <: ValidationMap[js.Any] */](`type`: P): Requireable[InferProps[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("shape")(`type`.asInstanceOf[js.Any]).asInstanceOf[Requireable[InferProps[P]]]
+  inline def shape[P /* <: ValidationMap[js.Any] */](`type`: P): Requireable[InferProps[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("shape")(`type`.asInstanceOf[js.Any]).asInstanceOf[Requireable[InferProps[P]]]
   
   @JSImport("prop-types", "string")
   @js.native
@@ -142,30 +132,23 @@ object mod {
   }
   object ReactElementLike {
     
-    @scala.inline
-    def apply(props: js.Any, `type`: ReactComponentLike): ReactElementLike = {
+    inline def apply(props: js.Any, `type`: ReactComponentLike): ReactElementLike = {
       val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], key = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactElementLike]
     }
     
-    @scala.inline
-    implicit class ReactElementLikeMutableBuilder[Self <: ReactElementLike] (val x: Self) extends AnyVal {
+    extension [Self <: ReactElementLike](x: Self) {
       
-      @scala.inline
-      def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyNull: Self = StObject.set(x, "key", null)
+      inline def setKeyNull: Self = StObject.set(x, "key", null)
       
-      @scala.inline
-      def setProps(value: js.Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: js.Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: ReactComponentLike): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ReactComponentLike): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeFunction2(value: (/* props */ js.Any, /* context */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "type", js.Any.fromFunction2(value))
+      inline def setTypeFunction2(value: (/* props */ js.Any, /* context */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "type", js.Any.fromFunction2(value))
     }
   }
   

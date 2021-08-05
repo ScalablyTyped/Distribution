@@ -26,8 +26,7 @@ trait HistogramRangeSliderDataLines
 }
 object HistogramRangeSliderDataLines {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -37,16 +36,12 @@ object HistogramRangeSliderDataLines {
     __obj.asInstanceOf[HistogramRangeSliderDataLines]
   }
   
-  @scala.inline
-  implicit class HistogramRangeSliderDataLinesMutableBuilder[Self <: HistogramRangeSliderDataLines] (val x: Self) extends AnyVal {
+  extension [Self <: HistogramRangeSliderDataLines](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String | Double): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String | Double): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

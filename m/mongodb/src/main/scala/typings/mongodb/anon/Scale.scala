@@ -10,19 +10,15 @@ trait Scale extends StObject {
 }
 object Scale {
   
-  @scala.inline
-  def apply(): Scale = {
+  inline def apply(): Scale = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Scale]
   }
   
-  @scala.inline
-  implicit class ScaleMutableBuilder[Self <: Scale] (val x: Self) extends AnyVal {
+  extension [Self <: Scale](x: Self) {
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
   }
 }

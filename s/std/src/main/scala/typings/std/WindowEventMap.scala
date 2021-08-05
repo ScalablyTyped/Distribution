@@ -78,8 +78,7 @@ trait WindowEventMap
 }
 object WindowEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSGestureChange: Event,
     MSGestureDoubleTap: Event,
     MSGestureEnd: Event,
@@ -220,106 +219,72 @@ object WindowEventMap {
     __obj.asInstanceOf[WindowEventMap]
   }
   
-  @scala.inline
-  implicit class WindowEventMapMutableBuilder[Self <: WindowEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: WindowEventMap](x: Self) {
     
-    @scala.inline
-    def setCompassneedscalibration(value: Event): Self = StObject.set(x, "compassneedscalibration", value.asInstanceOf[js.Any])
+    inline def setCompassneedscalibration(value: Event): Self = StObject.set(x, "compassneedscalibration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevicelight(value: DeviceLightEvent): Self = StObject.set(x, "devicelight", value.asInstanceOf[js.Any])
+    inline def setDevicelight(value: DeviceLightEvent): Self = StObject.set(x, "devicelight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevicemotion(value: DeviceMotionEvent): Self = StObject.set(x, "devicemotion", value.asInstanceOf[js.Any])
+    inline def setDevicemotion(value: DeviceMotionEvent): Self = StObject.set(x, "devicemotion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceorientation(value: DeviceOrientationEvent): Self = StObject.set(x, "deviceorientation", value.asInstanceOf[js.Any])
+    inline def setDeviceorientation(value: DeviceOrientationEvent): Self = StObject.set(x, "deviceorientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceorientationabsolute(value: DeviceOrientationEvent): Self = StObject.set(x, "deviceorientationabsolute", value.asInstanceOf[js.Any])
+    inline def setDeviceorientationabsolute(value: DeviceOrientationEvent): Self = StObject.set(x, "deviceorientationabsolute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSGestureChange(value: Event): Self = StObject.set(x, "MSGestureChange", value.asInstanceOf[js.Any])
+    inline def setMSGestureChange(value: Event): Self = StObject.set(x, "MSGestureChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSGestureDoubleTap(value: Event): Self = StObject.set(x, "MSGestureDoubleTap", value.asInstanceOf[js.Any])
+    inline def setMSGestureDoubleTap(value: Event): Self = StObject.set(x, "MSGestureDoubleTap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSGestureEnd(value: Event): Self = StObject.set(x, "MSGestureEnd", value.asInstanceOf[js.Any])
+    inline def setMSGestureEnd(value: Event): Self = StObject.set(x, "MSGestureEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSGestureHold(value: Event): Self = StObject.set(x, "MSGestureHold", value.asInstanceOf[js.Any])
+    inline def setMSGestureHold(value: Event): Self = StObject.set(x, "MSGestureHold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSGestureStart(value: Event): Self = StObject.set(x, "MSGestureStart", value.asInstanceOf[js.Any])
+    inline def setMSGestureStart(value: Event): Self = StObject.set(x, "MSGestureStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSGestureTap(value: Event): Self = StObject.set(x, "MSGestureTap", value.asInstanceOf[js.Any])
+    inline def setMSGestureTap(value: Event): Self = StObject.set(x, "MSGestureTap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSInertiaStart(value: Event): Self = StObject.set(x, "MSInertiaStart", value.asInstanceOf[js.Any])
+    inline def setMSInertiaStart(value: Event): Self = StObject.set(x, "MSInertiaStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSPointerCancel(value: Event): Self = StObject.set(x, "MSPointerCancel", value.asInstanceOf[js.Any])
+    inline def setMSPointerCancel(value: Event): Self = StObject.set(x, "MSPointerCancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSPointerDown(value: Event): Self = StObject.set(x, "MSPointerDown", value.asInstanceOf[js.Any])
+    inline def setMSPointerDown(value: Event): Self = StObject.set(x, "MSPointerDown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSPointerEnter(value: Event): Self = StObject.set(x, "MSPointerEnter", value.asInstanceOf[js.Any])
+    inline def setMSPointerEnter(value: Event): Self = StObject.set(x, "MSPointerEnter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSPointerLeave(value: Event): Self = StObject.set(x, "MSPointerLeave", value.asInstanceOf[js.Any])
+    inline def setMSPointerLeave(value: Event): Self = StObject.set(x, "MSPointerLeave", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSPointerMove(value: Event): Self = StObject.set(x, "MSPointerMove", value.asInstanceOf[js.Any])
+    inline def setMSPointerMove(value: Event): Self = StObject.set(x, "MSPointerMove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSPointerOut(value: Event): Self = StObject.set(x, "MSPointerOut", value.asInstanceOf[js.Any])
+    inline def setMSPointerOut(value: Event): Self = StObject.set(x, "MSPointerOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSPointerOver(value: Event): Self = StObject.set(x, "MSPointerOver", value.asInstanceOf[js.Any])
+    inline def setMSPointerOver(value: Event): Self = StObject.set(x, "MSPointerOver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSPointerUp(value: Event): Self = StObject.set(x, "MSPointerUp", value.asInstanceOf[js.Any])
+    inline def setMSPointerUp(value: Event): Self = StObject.set(x, "MSPointerUp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMousewheel(value: Event): Self = StObject.set(x, "mousewheel", value.asInstanceOf[js.Any])
+    inline def setMousewheel(value: Event): Self = StObject.set(x, "mousewheel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationchange(value: Event): Self = StObject.set(x, "orientationchange", value.asInstanceOf[js.Any])
+    inline def setOrientationchange(value: Event): Self = StObject.set(x, "orientationchange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgress(value: ProgressEvent[Window]): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: ProgressEvent[Window]): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadystatechange(value: ProgressEvent[Window]): Self = StObject.set(x, "readystatechange", value.asInstanceOf[js.Any])
+    inline def setReadystatechange(value: ProgressEvent[Window]): Self = StObject.set(x, "readystatechange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVrdisplayactivate(value: Event): Self = StObject.set(x, "vrdisplayactivate", value.asInstanceOf[js.Any])
+    inline def setVrdisplayactivate(value: Event): Self = StObject.set(x, "vrdisplayactivate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVrdisplayblur(value: Event): Self = StObject.set(x, "vrdisplayblur", value.asInstanceOf[js.Any])
+    inline def setVrdisplayblur(value: Event): Self = StObject.set(x, "vrdisplayblur", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVrdisplayconnect(value: Event): Self = StObject.set(x, "vrdisplayconnect", value.asInstanceOf[js.Any])
+    inline def setVrdisplayconnect(value: Event): Self = StObject.set(x, "vrdisplayconnect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVrdisplaydeactivate(value: Event): Self = StObject.set(x, "vrdisplaydeactivate", value.asInstanceOf[js.Any])
+    inline def setVrdisplaydeactivate(value: Event): Self = StObject.set(x, "vrdisplaydeactivate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVrdisplaydisconnect(value: Event): Self = StObject.set(x, "vrdisplaydisconnect", value.asInstanceOf[js.Any])
+    inline def setVrdisplaydisconnect(value: Event): Self = StObject.set(x, "vrdisplaydisconnect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVrdisplayfocus(value: Event): Self = StObject.set(x, "vrdisplayfocus", value.asInstanceOf[js.Any])
+    inline def setVrdisplayfocus(value: Event): Self = StObject.set(x, "vrdisplayfocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVrdisplaypointerrestricted(value: Event): Self = StObject.set(x, "vrdisplaypointerrestricted", value.asInstanceOf[js.Any])
+    inline def setVrdisplaypointerrestricted(value: Event): Self = StObject.set(x, "vrdisplaypointerrestricted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVrdisplaypointerunrestricted(value: Event): Self = StObject.set(x, "vrdisplaypointerunrestricted", value.asInstanceOf[js.Any])
+    inline def setVrdisplaypointerunrestricted(value: Event): Self = StObject.set(x, "vrdisplaypointerunrestricted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVrdisplaypresentchange(value: Event): Self = StObject.set(x, "vrdisplaypresentchange", value.asInstanceOf[js.Any])
+    inline def setVrdisplaypresentchange(value: Event): Self = StObject.set(x, "vrdisplaypresentchange", value.asInstanceOf[js.Any])
   }
 }

@@ -33,43 +33,31 @@ trait EnvironmentMember extends StObject {
 }
 object EnvironmentMember {
   
-  @scala.inline
-  def apply(): EnvironmentMember = {
+  inline def apply(): EnvironmentMember = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnvironmentMember]
   }
   
-  @scala.inline
-  implicit class EnvironmentMemberMutableBuilder[Self <: EnvironmentMember] (val x: Self) extends AnyVal {
+  extension [Self <: EnvironmentMember](x: Self) {
     
-    @scala.inline
-    def setEnvironmentId(value: EnvironmentId): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
+    inline def setEnvironmentId(value: EnvironmentId): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentIdUndefined: Self = StObject.set(x, "environmentId", js.undefined)
+    inline def setEnvironmentIdUndefined: Self = StObject.set(x, "environmentId", js.undefined)
     
-    @scala.inline
-    def setLastAccess(value: Timestamp): Self = StObject.set(x, "lastAccess", value.asInstanceOf[js.Any])
+    inline def setLastAccess(value: Timestamp): Self = StObject.set(x, "lastAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastAccessUndefined: Self = StObject.set(x, "lastAccess", js.undefined)
+    inline def setLastAccessUndefined: Self = StObject.set(x, "lastAccess", js.undefined)
     
-    @scala.inline
-    def setPermissions(value: Permissions): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: Permissions): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
+    inline def setPermissionsUndefined: Self = StObject.set(x, "permissions", js.undefined)
     
-    @scala.inline
-    def setUserArn(value: UserArn): Self = StObject.set(x, "userArn", value.asInstanceOf[js.Any])
+    inline def setUserArn(value: UserArn): Self = StObject.set(x, "userArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserArnUndefined: Self = StObject.set(x, "userArn", js.undefined)
+    inline def setUserArnUndefined: Self = StObject.set(x, "userArn", js.undefined)
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

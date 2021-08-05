@@ -13,16 +13,13 @@ trait FaqStatistics extends StObject {
 }
 object FaqStatistics {
   
-  @scala.inline
-  def apply(IndexedQuestionAnswersCount: IndexedQuestionAnswersCount): FaqStatistics = {
+  inline def apply(IndexedQuestionAnswersCount: IndexedQuestionAnswersCount): FaqStatistics = {
     val __obj = js.Dynamic.literal(IndexedQuestionAnswersCount = IndexedQuestionAnswersCount.asInstanceOf[js.Any])
     __obj.asInstanceOf[FaqStatistics]
   }
   
-  @scala.inline
-  implicit class FaqStatisticsMutableBuilder[Self <: FaqStatistics] (val x: Self) extends AnyVal {
+  extension [Self <: FaqStatistics](x: Self) {
     
-    @scala.inline
-    def setIndexedQuestionAnswersCount(value: IndexedQuestionAnswersCount): Self = StObject.set(x, "IndexedQuestionAnswersCount", value.asInstanceOf[js.Any])
+    inline def setIndexedQuestionAnswersCount(value: IndexedQuestionAnswersCount): Self = StObject.set(x, "IndexedQuestionAnswersCount", value.asInstanceOf[js.Any])
   }
 }

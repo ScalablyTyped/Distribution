@@ -33,8 +33,7 @@ trait RegisterGameServerInput extends StObject {
 }
 object RegisterGameServerInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GameServerGroupName: GameServerGroupNameOrArn,
     GameServerId: GameServerId,
     InstanceId: GameServerInstanceId
@@ -43,28 +42,20 @@ object RegisterGameServerInput {
     __obj.asInstanceOf[RegisterGameServerInput]
   }
   
-  @scala.inline
-  implicit class RegisterGameServerInputMutableBuilder[Self <: RegisterGameServerInput] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterGameServerInput](x: Self) {
     
-    @scala.inline
-    def setConnectionInfo(value: GameServerConnectionInfo): Self = StObject.set(x, "ConnectionInfo", value.asInstanceOf[js.Any])
+    inline def setConnectionInfo(value: GameServerConnectionInfo): Self = StObject.set(x, "ConnectionInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionInfoUndefined: Self = StObject.set(x, "ConnectionInfo", js.undefined)
+    inline def setConnectionInfoUndefined: Self = StObject.set(x, "ConnectionInfo", js.undefined)
     
-    @scala.inline
-    def setGameServerData(value: GameServerData): Self = StObject.set(x, "GameServerData", value.asInstanceOf[js.Any])
+    inline def setGameServerData(value: GameServerData): Self = StObject.set(x, "GameServerData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameServerDataUndefined: Self = StObject.set(x, "GameServerData", js.undefined)
+    inline def setGameServerDataUndefined: Self = StObject.set(x, "GameServerData", js.undefined)
     
-    @scala.inline
-    def setGameServerGroupName(value: GameServerGroupNameOrArn): Self = StObject.set(x, "GameServerGroupName", value.asInstanceOf[js.Any])
+    inline def setGameServerGroupName(value: GameServerGroupNameOrArn): Self = StObject.set(x, "GameServerGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameServerId(value: GameServerId): Self = StObject.set(x, "GameServerId", value.asInstanceOf[js.Any])
+    inline def setGameServerId(value: GameServerId): Self = StObject.set(x, "GameServerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceId(value: GameServerInstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: GameServerInstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
   }
 }

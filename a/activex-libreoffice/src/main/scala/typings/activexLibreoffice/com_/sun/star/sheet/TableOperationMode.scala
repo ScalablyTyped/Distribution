@@ -21,8 +21,7 @@ object TableOperationMode {
     *
     * using both row and column values is specified separately.</p>
     */
-  @scala.inline
-  def BOTH: `2` = 2.asInstanceOf[`2`]
+  inline def BOTH: `2` = 2.asInstanceOf[`2`]
   
   /**
     * the field is used as a column field.
@@ -31,8 +30,7 @@ object TableOperationMode {
     *
     * contains formulas.</p>
     */
-  @scala.inline
-  def COLUMN: `0` = 0.asInstanceOf[`0`]
+  inline def COLUMN: `0` = 0.asInstanceOf[`0`]
   
   /**
     * the field is used as a row field.
@@ -41,6 +39,5 @@ object TableOperationMode {
     *
     * contains formulas.</p>
     */
-  @scala.inline
-  def ROW: `1` = 1.asInstanceOf[`1`]
+  inline def ROW: `1` = 1.asInstanceOf[`1`]
 }

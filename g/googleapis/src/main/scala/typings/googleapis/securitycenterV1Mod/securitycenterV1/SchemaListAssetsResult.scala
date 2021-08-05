@@ -21,25 +21,19 @@ trait SchemaListAssetsResult extends StObject {
 }
 object SchemaListAssetsResult {
   
-  @scala.inline
-  def apply(): SchemaListAssetsResult = {
+  inline def apply(): SchemaListAssetsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListAssetsResult]
   }
   
-  @scala.inline
-  implicit class SchemaListAssetsResultMutableBuilder[Self <: SchemaListAssetsResult] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListAssetsResult](x: Self) {
     
-    @scala.inline
-    def setAsset(value: SchemaAsset): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
+    inline def setAsset(value: SchemaAsset): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetUndefined: Self = StObject.set(x, "asset", js.undefined)
+    inline def setAssetUndefined: Self = StObject.set(x, "asset", js.undefined)
     
-    @scala.inline
-    def setStateChange(value: String): Self = StObject.set(x, "stateChange", value.asInstanceOf[js.Any])
+    inline def setStateChange(value: String): Self = StObject.set(x, "stateChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateChangeUndefined: Self = StObject.set(x, "stateChange", js.undefined)
+    inline def setStateChangeUndefined: Self = StObject.set(x, "stateChange", js.undefined)
   }
 }

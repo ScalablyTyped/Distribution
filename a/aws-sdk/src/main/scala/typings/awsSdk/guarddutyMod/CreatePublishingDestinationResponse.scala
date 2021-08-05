@@ -13,16 +13,13 @@ trait CreatePublishingDestinationResponse extends StObject {
 }
 object CreatePublishingDestinationResponse {
   
-  @scala.inline
-  def apply(DestinationId: String): CreatePublishingDestinationResponse = {
+  inline def apply(DestinationId: String): CreatePublishingDestinationResponse = {
     val __obj = js.Dynamic.literal(DestinationId = DestinationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePublishingDestinationResponse]
   }
   
-  @scala.inline
-  implicit class CreatePublishingDestinationResponseMutableBuilder[Self <: CreatePublishingDestinationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePublishingDestinationResponse](x: Self) {
     
-    @scala.inline
-    def setDestinationId(value: String): Self = StObject.set(x, "DestinationId", value.asInstanceOf[js.Any])
+    inline def setDestinationId(value: String): Self = StObject.set(x, "DestinationId", value.asInstanceOf[js.Any])
   }
 }

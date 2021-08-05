@@ -8,7 +8,7 @@ object constantsMod {
   
   @JSImport("react-native-navigation/lib/dist/adapters/Constants", "Constants")
   @js.native
-  class Constants protected () extends StObject {
+  /* private */ class Constants () extends StObject {
     
     val backButtonId: String = js.native
     
@@ -25,8 +25,7 @@ object constantsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def get(): js.Promise[NavigationConstants] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Promise[NavigationConstants]]
+    inline def get(): js.Promise[NavigationConstants] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Promise[NavigationConstants]]
   }
   
   trait NavigationConstants extends StObject {
@@ -41,26 +40,20 @@ object constantsMod {
   }
   object NavigationConstants {
     
-    @scala.inline
-    def apply(backButtonId: String, bottomTabsHeight: Double, statusBarHeight: Double, topBarHeight: Double): NavigationConstants = {
+    inline def apply(backButtonId: String, bottomTabsHeight: Double, statusBarHeight: Double, topBarHeight: Double): NavigationConstants = {
       val __obj = js.Dynamic.literal(backButtonId = backButtonId.asInstanceOf[js.Any], bottomTabsHeight = bottomTabsHeight.asInstanceOf[js.Any], statusBarHeight = statusBarHeight.asInstanceOf[js.Any], topBarHeight = topBarHeight.asInstanceOf[js.Any])
       __obj.asInstanceOf[NavigationConstants]
     }
     
-    @scala.inline
-    implicit class NavigationConstantsMutableBuilder[Self <: NavigationConstants] (val x: Self) extends AnyVal {
+    extension [Self <: NavigationConstants](x: Self) {
       
-      @scala.inline
-      def setBackButtonId(value: String): Self = StObject.set(x, "backButtonId", value.asInstanceOf[js.Any])
+      inline def setBackButtonId(value: String): Self = StObject.set(x, "backButtonId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomTabsHeight(value: Double): Self = StObject.set(x, "bottomTabsHeight", value.asInstanceOf[js.Any])
+      inline def setBottomTabsHeight(value: Double): Self = StObject.set(x, "bottomTabsHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusBarHeight(value: Double): Self = StObject.set(x, "statusBarHeight", value.asInstanceOf[js.Any])
+      inline def setStatusBarHeight(value: Double): Self = StObject.set(x, "statusBarHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopBarHeight(value: Double): Self = StObject.set(x, "topBarHeight", value.asInstanceOf[js.Any])
+      inline def setTopBarHeight(value: Double): Self = StObject.set(x, "topBarHeight", value.asInstanceOf[js.Any])
     }
   }
 }

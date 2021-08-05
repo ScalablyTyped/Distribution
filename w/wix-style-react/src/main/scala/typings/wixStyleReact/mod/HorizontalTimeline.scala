@@ -19,24 +19,20 @@ object HorizontalTimeline {
   @JSImport("wix-style-react", "HorizontalTimeline.ActiveIcon")
   @js.native
   def ActiveIcon: FC[js.Object] = js.native
-  @scala.inline
-  def ActiveIcon_=(x: FC[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ActiveIcon")(x.asInstanceOf[js.Any])
+  inline def ActiveIcon_=(x: FC[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ActiveIcon")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-style-react", "HorizontalTimeline.CompleteIcon")
   @js.native
   def CompleteIcon: FC[js.Object] = js.native
-  @scala.inline
-  def CompleteIcon_=(x: FC[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CompleteIcon")(x.asInstanceOf[js.Any])
+  inline def CompleteIcon_=(x: FC[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CompleteIcon")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-style-react", "HorizontalTimeline.DefaultIcon")
   @js.native
   def DefaultIcon: FC[js.Object] = js.native
-  @scala.inline
-  def DefaultIcon_=(x: FC[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultIcon")(x.asInstanceOf[js.Any])
+  inline def DefaultIcon_=(x: FC[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultIcon")(x.asInstanceOf[js.Any])
   
   @JSImport("wix-style-react", "HorizontalTimeline.DestructiveIcon")
   @js.native
   def DestructiveIcon: FC[js.Object] = js.native
-  @scala.inline
-  def DestructiveIcon_=(x: FC[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DestructiveIcon")(x.asInstanceOf[js.Any])
+  inline def DestructiveIcon_=(x: FC[js.Object]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DestructiveIcon")(x.asInstanceOf[js.Any])
 }

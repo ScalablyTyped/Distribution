@@ -27,26 +27,20 @@ object pageLoaderMod {
   }
   object GoodPageCache {
     
-    @scala.inline
-    def apply(mod: js.Any, page: ComponentType[js.Object], styleSheets: js.Array[StyleSheetTuple]): GoodPageCache = {
+    inline def apply(mod: js.Any, page: ComponentType[js.Object], styleSheets: js.Array[StyleSheetTuple]): GoodPageCache = {
       val __obj = js.Dynamic.literal(mod = mod.asInstanceOf[js.Any], page = page.asInstanceOf[js.Any], styleSheets = styleSheets.asInstanceOf[js.Any])
       __obj.asInstanceOf[GoodPageCache]
     }
     
-    @scala.inline
-    implicit class GoodPageCacheMutableBuilder[Self <: GoodPageCache] (val x: Self) extends AnyVal {
+    extension [Self <: GoodPageCache](x: Self) {
       
-      @scala.inline
-      def setMod(value: js.Any): Self = StObject.set(x, "mod", value.asInstanceOf[js.Any])
+      inline def setMod(value: js.Any): Self = StObject.set(x, "mod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPage(value: ComponentType[js.Object]): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+      inline def setPage(value: ComponentType[js.Object]): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleSheets(value: js.Array[StyleSheetTuple]): Self = StObject.set(x, "styleSheets", value.asInstanceOf[js.Any])
+      inline def setStyleSheets(value: js.Array[StyleSheetTuple]): Self = StObject.set(x, "styleSheets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleSheetsVarargs(value: StyleSheetTuple*): Self = StObject.set(x, "styleSheets", js.Array(value :_*))
+      inline def setStyleSheetsVarargs(value: StyleSheetTuple*): Self = StObject.set(x, "styleSheets", js.Array(value :_*))
     }
   }
   
@@ -58,9 +52,9 @@ object pageLoaderMod {
       */
     def _isSsg(href: String): js.Promise[Boolean] = js.native
     
-    var assetPrefix: js.Any = js.native
+    /* private */ var assetPrefix: js.Any = js.native
     
-    var buildId: js.Any = js.native
+    /* private */ var buildId: js.Any = js.native
     
     /**
       * @param {string} href the route href (file-system path)
@@ -77,9 +71,9 @@ object pageLoaderMod {
     
     def prefetch(route: String): js.Promise[Unit] = js.native
     
-    var promisedDevPagesManifest: js.Any = js.native
+    /* private */ var promisedDevPagesManifest: js.Any = js.native
     
-    var promisedSsgManifest: js.Any = js.native
+    /* private */ var promisedSsgManifest: js.Any = js.native
     
     var routeLoader: RouteLoader = js.native
   }
@@ -92,20 +86,16 @@ object pageLoaderMod {
   }
   object StyleSheetTuple {
     
-    @scala.inline
-    def apply(href: String, text: String): StyleSheetTuple = {
+    inline def apply(href: String, text: String): StyleSheetTuple = {
       val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[StyleSheetTuple]
     }
     
-    @scala.inline
-    implicit class StyleSheetTupleMutableBuilder[Self <: StyleSheetTuple] (val x: Self) extends AnyVal {
+    extension [Self <: StyleSheetTuple](x: Self) {
       
-      @scala.inline
-      def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
 }

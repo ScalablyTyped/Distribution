@@ -8,16 +8,13 @@ object reactThreeFiberStrings {
   
   @js.native
   sealed trait mouse extends StObject
-  @scala.inline
-  def mouse: mouse = "mouse".asInstanceOf[mouse]
+  inline def mouse: mouse = "mouse".asInstanceOf[mouse]
   
   @js.native
   sealed trait pen extends StObject
-  @scala.inline
-  def pen: pen = "pen".asInstanceOf[pen]
+  inline def pen: pen = "pen".asInstanceOf[pen]
   
   @js.native
   sealed trait touch extends StObject
-  @scala.inline
-  def touch: touch = "touch".asInstanceOf[touch]
+  inline def touch: touch = "touch".asInstanceOf[touch]
 }

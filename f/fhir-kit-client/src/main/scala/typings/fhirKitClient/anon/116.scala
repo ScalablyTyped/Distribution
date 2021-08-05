@@ -19,34 +19,25 @@ trait `116` extends StObject {
 }
 object `116` {
   
-  @scala.inline
-  def apply(id: String, version: String): `116` = {
+  inline def apply(id: String, version: String): `116` = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], resourceType = "ConceptMap", version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[`116`]
   }
   
-  @scala.inline
-  implicit class `116MutableBuilder`[Self <: `116`] (val x: Self) extends AnyVal {
+  extension [Self <: `116`](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: typings.request.mod.Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: typings.request.mod.Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: typings.request.mod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: typings.request.mod.Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: ConceptMap): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ConceptMap): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

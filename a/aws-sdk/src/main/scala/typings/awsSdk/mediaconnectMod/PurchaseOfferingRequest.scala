@@ -23,22 +23,17 @@ trait PurchaseOfferingRequest extends StObject {
 }
 object PurchaseOfferingRequest {
   
-  @scala.inline
-  def apply(OfferingArn: string, ReservationName: string, Start: string): PurchaseOfferingRequest = {
+  inline def apply(OfferingArn: string, ReservationName: string, Start: string): PurchaseOfferingRequest = {
     val __obj = js.Dynamic.literal(OfferingArn = OfferingArn.asInstanceOf[js.Any], ReservationName = ReservationName.asInstanceOf[js.Any], Start = Start.asInstanceOf[js.Any])
     __obj.asInstanceOf[PurchaseOfferingRequest]
   }
   
-  @scala.inline
-  implicit class PurchaseOfferingRequestMutableBuilder[Self <: PurchaseOfferingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PurchaseOfferingRequest](x: Self) {
     
-    @scala.inline
-    def setOfferingArn(value: string): Self = StObject.set(x, "OfferingArn", value.asInstanceOf[js.Any])
+    inline def setOfferingArn(value: string): Self = StObject.set(x, "OfferingArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservationName(value: string): Self = StObject.set(x, "ReservationName", value.asInstanceOf[js.Any])
+    inline def setReservationName(value: string): Self = StObject.set(x, "ReservationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: string): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
+    inline def setStart(value: string): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
   }
 }

@@ -9,8 +9,7 @@ trait Compass
      with ICompass
 object Compass {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCurrentReading: () => CompassReading,
     minimumReportInterval: Double,
     onreadingchanged: js.Any,

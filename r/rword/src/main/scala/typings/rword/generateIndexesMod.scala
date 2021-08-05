@@ -10,6 +10,5 @@ object generateIndexesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def generateIndexes(length: Double, count: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateIndexes")(length.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  inline def generateIndexes(length: Double, count: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateIndexes")(length.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
 }

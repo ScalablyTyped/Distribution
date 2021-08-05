@@ -14,13 +14,9 @@ object unaryUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def unaryKernelFunc(name: String, op: SimpleUnaryOperation): KernelFunc = (^.asInstanceOf[js.Dynamic].applyDynamic("unaryKernelFunc")(name.asInstanceOf[js.Any], op.asInstanceOf[js.Any])).asInstanceOf[KernelFunc]
-  @scala.inline
-  def unaryKernelFunc(name: String, op: SimpleUnaryOperation, dtype: DataType): KernelFunc = (^.asInstanceOf[js.Dynamic].applyDynamic("unaryKernelFunc")(name.asInstanceOf[js.Any], op.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[KernelFunc]
+  inline def unaryKernelFunc(name: String, op: SimpleUnaryOperation): KernelFunc = (^.asInstanceOf[js.Dynamic].applyDynamic("unaryKernelFunc")(name.asInstanceOf[js.Any], op.asInstanceOf[js.Any])).asInstanceOf[KernelFunc]
+  inline def unaryKernelFunc(name: String, op: SimpleUnaryOperation, dtype: DataType): KernelFunc = (^.asInstanceOf[js.Dynamic].applyDynamic("unaryKernelFunc")(name.asInstanceOf[js.Any], op.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[KernelFunc]
   
-  @scala.inline
-  def unaryKernelFuncFromImpl(name: String, unaryImpl: SimpleUnaryImpl): KernelFunc = (^.asInstanceOf[js.Dynamic].applyDynamic("unaryKernelFuncFromImpl")(name.asInstanceOf[js.Any], unaryImpl.asInstanceOf[js.Any])).asInstanceOf[KernelFunc]
-  @scala.inline
-  def unaryKernelFuncFromImpl(name: String, unaryImpl: SimpleUnaryImpl, dtype: DataType): KernelFunc = (^.asInstanceOf[js.Dynamic].applyDynamic("unaryKernelFuncFromImpl")(name.asInstanceOf[js.Any], unaryImpl.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[KernelFunc]
+  inline def unaryKernelFuncFromImpl(name: String, unaryImpl: SimpleUnaryImpl): KernelFunc = (^.asInstanceOf[js.Dynamic].applyDynamic("unaryKernelFuncFromImpl")(name.asInstanceOf[js.Any], unaryImpl.asInstanceOf[js.Any])).asInstanceOf[KernelFunc]
+  inline def unaryKernelFuncFromImpl(name: String, unaryImpl: SimpleUnaryImpl, dtype: DataType): KernelFunc = (^.asInstanceOf[js.Dynamic].applyDynamic("unaryKernelFuncFromImpl")(name.asInstanceOf[js.Any], unaryImpl.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[KernelFunc]
 }

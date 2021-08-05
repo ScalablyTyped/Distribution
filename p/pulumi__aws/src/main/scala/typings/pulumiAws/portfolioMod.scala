@@ -67,21 +67,16 @@ object portfolioMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Portfolio = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Portfolio]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Portfolio = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Portfolio]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: PortfolioState): Portfolio = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Portfolio]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: PortfolioState, opts: CustomResourceOptions): Portfolio = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Portfolio]
+    inline def get(name: String, id: Input[ID]): Portfolio = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Portfolio]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Portfolio = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Portfolio]
+    inline def get(name: String, id: Input[ID], state: PortfolioState): Portfolio = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Portfolio]
+    inline def get(name: String, id: Input[ID], state: PortfolioState, opts: CustomResourceOptions): Portfolio = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Portfolio]
     
     /**
       * Returns true if the given object is an instance of Portfolio.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/servicecatalog/portfolio.Portfolio */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/servicecatalog/portfolio.Portfolio */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/servicecatalog/portfolio.Portfolio */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/servicecatalog/portfolio.Portfolio */ Boolean]
   }
   
   trait PortfolioArgs extends StObject {
@@ -108,38 +103,28 @@ object portfolioMod {
   }
   object PortfolioArgs {
     
-    @scala.inline
-    def apply(): PortfolioArgs = {
+    inline def apply(): PortfolioArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PortfolioArgs]
     }
     
-    @scala.inline
-    implicit class PortfolioArgsMutableBuilder[Self <: PortfolioArgs] (val x: Self) extends AnyVal {
+    extension [Self <: PortfolioArgs](x: Self) {
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setProviderName(value: Input[String]): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
+      inline def setProviderName(value: Input[String]): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProviderNameUndefined: Self = StObject.set(x, "providerName", js.undefined)
+      inline def setProviderNameUndefined: Self = StObject.set(x, "providerName", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -171,50 +156,36 @@ object portfolioMod {
   }
   object PortfolioState {
     
-    @scala.inline
-    def apply(): PortfolioState = {
+    inline def apply(): PortfolioState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PortfolioState]
     }
     
-    @scala.inline
-    implicit class PortfolioStateMutableBuilder[Self <: PortfolioState] (val x: Self) extends AnyVal {
+    extension [Self <: PortfolioState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setCreatedTime(value: Input[String]): Self = StObject.set(x, "createdTime", value.asInstanceOf[js.Any])
+      inline def setCreatedTime(value: Input[String]): Self = StObject.set(x, "createdTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedTimeUndefined: Self = StObject.set(x, "createdTime", js.undefined)
+      inline def setCreatedTimeUndefined: Self = StObject.set(x, "createdTime", js.undefined)
       
-      @scala.inline
-      def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: Input[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setProviderName(value: Input[String]): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
+      inline def setProviderName(value: Input[String]): Self = StObject.set(x, "providerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProviderNameUndefined: Self = StObject.set(x, "providerName", js.undefined)
+      inline def setProviderNameUndefined: Self = StObject.set(x, "providerName", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

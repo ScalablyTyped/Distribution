@@ -23,10 +23,8 @@ object mod {
   	]);
   	```
   	*/
-  @scala.inline
-  def apply(files: js.Array[PathLike]): Unit = ^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def apply(files: js.Array[PathLike], options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(files: js.Array[PathLike]): Unit = ^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(files: js.Array[PathLike], options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(files.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("open-editor", JSImport.Namespace)
   @js.native
@@ -40,10 +38,8 @@ object mod {
   	{binary: 'subl', arguments: ['foo.js:1:5'], isTerminalEditor: false}
   	```
   	*/
-  @scala.inline
-  def make(files: js.Array[PathLike]): EditorRunConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("make")(files.asInstanceOf[js.Any]).asInstanceOf[EditorRunConfig]
-  @scala.inline
-  def make(files: js.Array[PathLike], options: Options): EditorRunConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("make")(files.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EditorRunConfig]
+  inline def make(files: js.Array[PathLike]): EditorRunConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("make")(files.asInstanceOf[js.Any]).asInstanceOf[EditorRunConfig]
+  inline def make(files: js.Array[PathLike], options: Options): EditorRunConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("make")(files.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EditorRunConfig]
   
   trait EditorRunConfig extends StObject {
     
@@ -64,26 +60,20 @@ object mod {
   }
   object EditorRunConfig {
     
-    @scala.inline
-    def apply(arguments: js.Array[String], binary: String, isTerminalEditor: Boolean): EditorRunConfig = {
+    inline def apply(arguments: js.Array[String], binary: String, isTerminalEditor: Boolean): EditorRunConfig = {
       val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], binary = binary.asInstanceOf[js.Any], isTerminalEditor = isTerminalEditor.asInstanceOf[js.Any])
       __obj.asInstanceOf[EditorRunConfig]
     }
     
-    @scala.inline
-    implicit class EditorRunConfigMutableBuilder[Self <: EditorRunConfig] (val x: Self) extends AnyVal {
+    extension [Self <: EditorRunConfig](x: Self) {
       
-      @scala.inline
-      def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+      inline def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value :_*))
+      inline def setArgumentsVarargs(value: String*): Self = StObject.set(x, "arguments", js.Array(value :_*))
       
-      @scala.inline
-      def setBinary(value: String): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
+      inline def setBinary(value: String): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsTerminalEditor(value: Boolean): Self = StObject.set(x, "isTerminalEditor", value.asInstanceOf[js.Any])
+      inline def setIsTerminalEditor(value: Boolean): Self = StObject.set(x, "isTerminalEditor", value.asInstanceOf[js.Any])
     }
   }
   
@@ -98,20 +88,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setEditor(value: String): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+      inline def setEditor(value: String): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
+      inline def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
     }
   }
 }

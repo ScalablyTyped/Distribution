@@ -43,55 +43,39 @@ trait VpcPeeringConnection extends StObject {
 }
 object VpcPeeringConnection {
   
-  @scala.inline
-  def apply(): VpcPeeringConnection = {
+  inline def apply(): VpcPeeringConnection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VpcPeeringConnection]
   }
   
-  @scala.inline
-  implicit class VpcPeeringConnectionMutableBuilder[Self <: VpcPeeringConnection] (val x: Self) extends AnyVal {
+  extension [Self <: VpcPeeringConnection](x: Self) {
     
-    @scala.inline
-    def setFleetArn(value: FleetArn): Self = StObject.set(x, "FleetArn", value.asInstanceOf[js.Any])
+    inline def setFleetArn(value: FleetArn): Self = StObject.set(x, "FleetArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFleetArnUndefined: Self = StObject.set(x, "FleetArn", js.undefined)
+    inline def setFleetArnUndefined: Self = StObject.set(x, "FleetArn", js.undefined)
     
-    @scala.inline
-    def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
+    inline def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFleetIdUndefined: Self = StObject.set(x, "FleetId", js.undefined)
+    inline def setFleetIdUndefined: Self = StObject.set(x, "FleetId", js.undefined)
     
-    @scala.inline
-    def setGameLiftVpcId(value: NonZeroAndMaxString): Self = StObject.set(x, "GameLiftVpcId", value.asInstanceOf[js.Any])
+    inline def setGameLiftVpcId(value: NonZeroAndMaxString): Self = StObject.set(x, "GameLiftVpcId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameLiftVpcIdUndefined: Self = StObject.set(x, "GameLiftVpcId", js.undefined)
+    inline def setGameLiftVpcIdUndefined: Self = StObject.set(x, "GameLiftVpcId", js.undefined)
     
-    @scala.inline
-    def setIpV4CidrBlock(value: NonZeroAndMaxString): Self = StObject.set(x, "IpV4CidrBlock", value.asInstanceOf[js.Any])
+    inline def setIpV4CidrBlock(value: NonZeroAndMaxString): Self = StObject.set(x, "IpV4CidrBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpV4CidrBlockUndefined: Self = StObject.set(x, "IpV4CidrBlock", js.undefined)
+    inline def setIpV4CidrBlockUndefined: Self = StObject.set(x, "IpV4CidrBlock", js.undefined)
     
-    @scala.inline
-    def setPeerVpcId(value: NonZeroAndMaxString): Self = StObject.set(x, "PeerVpcId", value.asInstanceOf[js.Any])
+    inline def setPeerVpcId(value: NonZeroAndMaxString): Self = StObject.set(x, "PeerVpcId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeerVpcIdUndefined: Self = StObject.set(x, "PeerVpcId", js.undefined)
+    inline def setPeerVpcIdUndefined: Self = StObject.set(x, "PeerVpcId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: VpcPeeringConnectionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: VpcPeeringConnectionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setVpcPeeringConnectionId(value: NonZeroAndMaxString): Self = StObject.set(x, "VpcPeeringConnectionId", value.asInstanceOf[js.Any])
+    inline def setVpcPeeringConnectionId(value: NonZeroAndMaxString): Self = StObject.set(x, "VpcPeeringConnectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcPeeringConnectionIdUndefined: Self = StObject.set(x, "VpcPeeringConnectionId", js.undefined)
+    inline def setVpcPeeringConnectionIdUndefined: Self = StObject.set(x, "VpcPeeringConnectionId", js.undefined)
   }
 }

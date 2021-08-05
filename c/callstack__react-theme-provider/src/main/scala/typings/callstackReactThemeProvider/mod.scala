@@ -20,8 +20,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createTheming[Theme](defaultTheme: Theme): ThemingType[Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTheming")(defaultTheme.asInstanceOf[js.Any]).asInstanceOf[ThemingType[Theme]]
+  inline def createTheming[Theme](defaultTheme: Theme): ThemingType[Theme] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTheming")(defaultTheme.asInstanceOf[js.Any]).asInstanceOf[ThemingType[Theme]]
   
   type DeepPartial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @callstack/react-theme-provider.@callstack/react-theme-provider.$DeepPartial<T[P]> * / object}

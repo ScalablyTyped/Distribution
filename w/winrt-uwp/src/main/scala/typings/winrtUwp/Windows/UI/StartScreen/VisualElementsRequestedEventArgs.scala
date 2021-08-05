@@ -12,16 +12,13 @@ trait VisualElementsRequestedEventArgs extends StObject {
 }
 object VisualElementsRequestedEventArgs {
   
-  @scala.inline
-  def apply(request: VisualElementsRequest): VisualElementsRequestedEventArgs = {
+  inline def apply(request: VisualElementsRequest): VisualElementsRequestedEventArgs = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
     __obj.asInstanceOf[VisualElementsRequestedEventArgs]
   }
   
-  @scala.inline
-  implicit class VisualElementsRequestedEventArgsMutableBuilder[Self <: VisualElementsRequestedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: VisualElementsRequestedEventArgs](x: Self) {
     
-    @scala.inline
-    def setRequest(value: VisualElementsRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: VisualElementsRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }
 }

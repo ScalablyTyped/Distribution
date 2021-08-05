@@ -10,19 +10,15 @@ trait Encodable[T] extends StObject {
 }
 object Encodable {
   
-  @scala.inline
-  def apply[T](): Encodable[T] = {
+  inline def apply[T](): Encodable[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Encodable[T]]
   }
   
-  @scala.inline
-  implicit class EncodableMutableBuilder[Self <: Encodable[?], T] (val x: Self & Encodable[T]) extends AnyVal {
+  extension [Self <: Encodable[?], T](x: Self & Encodable[T]) {
     
-    @scala.inline
-    def setEncode(value: Encode[T]): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
+    inline def setEncode(value: Encode[T]): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
+    inline def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
   }
 }

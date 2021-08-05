@@ -18,23 +18,18 @@ object anon {
   }
   object R {
     
-    @scala.inline
-    def apply(r: String, s: String, v: Double): R = {
+    inline def apply(r: String, s: String, v: Double): R = {
       val __obj = js.Dynamic.literal(r = r.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
       __obj.asInstanceOf[R]
     }
     
-    @scala.inline
-    implicit class RMutableBuilder[Self <: R] (val x: Self) extends AnyVal {
+    extension [Self <: R](x: Self) {
       
-      @scala.inline
-      def setR(value: String): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      inline def setR(value: String): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS(value: String): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+      inline def setS(value: String): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+      inline def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     }
   }
   
@@ -48,20 +43,16 @@ object anon {
   }
   object T {
     
-    @scala.inline
-    def apply(t: String, v: String | ^ | Double): T = {
+    inline def apply(t: String, v: String | ^ | Double): T = {
       val __obj = js.Dynamic.literal(t = t.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
       __obj.asInstanceOf[T]
     }
     
-    @scala.inline
-    implicit class TMutableBuilder[Self <: T] (val x: Self) extends AnyVal {
+    extension [Self <: T](x: Self) {
       
-      @scala.inline
-      def setT(value: String): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+      inline def setT(value: String): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setV(value: String | ^ | Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+      inline def setV(value: String | ^ | Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     }
   }
   
@@ -75,21 +66,17 @@ object anon {
   }
   object Type {
     
-    @scala.inline
-    def apply(`type`: String, value: String): Type = {
+    inline def apply(`type`: String, value: String): Type = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Type]
     }
     
-    @scala.inline
-    implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+    extension [Self <: Type](x: Self) {
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

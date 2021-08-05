@@ -13,16 +13,13 @@ trait ConnectionSettings extends StObject {
 }
 object ConnectionSettings {
   
-  @scala.inline
-  def apply(IdleTimeout: IdleTimeout): ConnectionSettings = {
+  inline def apply(IdleTimeout: IdleTimeout): ConnectionSettings = {
     val __obj = js.Dynamic.literal(IdleTimeout = IdleTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConnectionSettings]
   }
   
-  @scala.inline
-  implicit class ConnectionSettingsMutableBuilder[Self <: ConnectionSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionSettings](x: Self) {
     
-    @scala.inline
-    def setIdleTimeout(value: IdleTimeout): Self = StObject.set(x, "IdleTimeout", value.asInstanceOf[js.Any])
+    inline def setIdleTimeout(value: IdleTimeout): Self = StObject.set(x, "IdleTimeout", value.asInstanceOf[js.Any])
   }
 }

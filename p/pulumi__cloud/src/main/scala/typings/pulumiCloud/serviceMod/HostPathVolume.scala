@@ -18,13 +18,10 @@ object HostPathVolume {
   @js.native
   val ^ : HostPathVolumeConstructor = js.native
   
-  @scala.inline
-  implicit class HostPathVolumeMutableBuilder[Self <: HostPathVolume] (val x: Self) extends AnyVal {
+  extension [Self <: HostPathVolume](x: Self) {
     
-    @scala.inline
-    def setKind(value: typings.pulumiCloud.pulumiCloudStrings.HostPathVolume): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: typings.pulumiCloud.pulumiCloudStrings.HostPathVolume): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

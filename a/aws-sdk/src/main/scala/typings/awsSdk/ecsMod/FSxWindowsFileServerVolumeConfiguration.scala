@@ -23,8 +23,7 @@ trait FSxWindowsFileServerVolumeConfiguration extends StObject {
 }
 object FSxWindowsFileServerVolumeConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authorizationConfig: FSxWindowsFileServerAuthorizationConfig,
     fileSystemId: String,
     rootDirectory: String
@@ -33,16 +32,12 @@ object FSxWindowsFileServerVolumeConfiguration {
     __obj.asInstanceOf[FSxWindowsFileServerVolumeConfiguration]
   }
   
-  @scala.inline
-  implicit class FSxWindowsFileServerVolumeConfigurationMutableBuilder[Self <: FSxWindowsFileServerVolumeConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: FSxWindowsFileServerVolumeConfiguration](x: Self) {
     
-    @scala.inline
-    def setAuthorizationConfig(value: FSxWindowsFileServerAuthorizationConfig): Self = StObject.set(x, "authorizationConfig", value.asInstanceOf[js.Any])
+    inline def setAuthorizationConfig(value: FSxWindowsFileServerAuthorizationConfig): Self = StObject.set(x, "authorizationConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSystemId(value: String): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
+    inline def setFileSystemId(value: String): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootDirectory(value: String): Self = StObject.set(x, "rootDirectory", value.asInstanceOf[js.Any])
+    inline def setRootDirectory(value: String): Self = StObject.set(x, "rootDirectory", value.asInstanceOf[js.Any])
   }
 }

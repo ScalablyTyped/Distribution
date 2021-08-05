@@ -16,8 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     session: js.Function1[
       /* options */ js.UndefOr[SessionOptions], 
       RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
@@ -67,68 +66,48 @@ object mod {
   }
   object PGStoreOptions {
     
-    @scala.inline
-    def apply(): PGStoreOptions = {
+    inline def apply(): PGStoreOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PGStoreOptions]
     }
     
-    @scala.inline
-    implicit class PGStoreOptionsMutableBuilder[Self <: PGStoreOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PGStoreOptions](x: Self) {
       
-      @scala.inline
-      def setConObject(value: PoolConfig): Self = StObject.set(x, "conObject", value.asInstanceOf[js.Any])
+      inline def setConObject(value: PoolConfig): Self = StObject.set(x, "conObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConObjectUndefined: Self = StObject.set(x, "conObject", js.undefined)
+      inline def setConObjectUndefined: Self = StObject.set(x, "conObject", js.undefined)
       
-      @scala.inline
-      def setConString(value: String): Self = StObject.set(x, "conString", value.asInstanceOf[js.Any])
+      inline def setConString(value: String): Self = StObject.set(x, "conString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConStringUndefined: Self = StObject.set(x, "conString", js.undefined)
+      inline def setConStringUndefined: Self = StObject.set(x, "conString", js.undefined)
       
-      @scala.inline
-      def setErrorLog(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "errorLog", js.Any.fromFunction1(value))
+      inline def setErrorLog(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "errorLog", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorLogUndefined: Self = StObject.set(x, "errorLog", js.undefined)
+      inline def setErrorLogUndefined: Self = StObject.set(x, "errorLog", js.undefined)
       
-      @scala.inline
-      def setPgPromise(value: js.Object): Self = StObject.set(x, "pgPromise", value.asInstanceOf[js.Any])
+      inline def setPgPromise(value: js.Object): Self = StObject.set(x, "pgPromise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPgPromiseUndefined: Self = StObject.set(x, "pgPromise", js.undefined)
+      inline def setPgPromiseUndefined: Self = StObject.set(x, "pgPromise", js.undefined)
       
-      @scala.inline
-      def setPool(value: Pool): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
+      inline def setPool(value: Pool): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoolUndefined: Self = StObject.set(x, "pool", js.undefined)
+      inline def setPoolUndefined: Self = StObject.set(x, "pool", js.undefined)
       
-      @scala.inline
-      def setPruneSessionInterval(value: `false` | Double): Self = StObject.set(x, "pruneSessionInterval", value.asInstanceOf[js.Any])
+      inline def setPruneSessionInterval(value: `false` | Double): Self = StObject.set(x, "pruneSessionInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPruneSessionIntervalUndefined: Self = StObject.set(x, "pruneSessionInterval", js.undefined)
+      inline def setPruneSessionIntervalUndefined: Self = StObject.set(x, "pruneSessionInterval", js.undefined)
       
-      @scala.inline
-      def setSchemaName(value: String): Self = StObject.set(x, "schemaName", value.asInstanceOf[js.Any])
+      inline def setSchemaName(value: String): Self = StObject.set(x, "schemaName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaNameUndefined: Self = StObject.set(x, "schemaName", js.undefined)
+      inline def setSchemaNameUndefined: Self = StObject.set(x, "schemaName", js.undefined)
       
-      @scala.inline
-      def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
+      inline def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableNameUndefined: Self = StObject.set(x, "tableName", js.undefined)
+      inline def setTableNameUndefined: Self = StObject.set(x, "tableName", js.undefined)
       
-      @scala.inline
-      def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+      inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
     }
   }
 }

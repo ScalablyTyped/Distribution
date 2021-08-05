@@ -23,34 +23,25 @@ trait ProjectCache extends StObject {
 }
 object ProjectCache {
   
-  @scala.inline
-  def apply(): ProjectCache = {
+  inline def apply(): ProjectCache = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProjectCache]
   }
   
-  @scala.inline
-  implicit class ProjectCacheMutableBuilder[Self <: ProjectCache] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectCache](x: Self) {
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setModes(value: js.Array[String]): Self = StObject.set(x, "modes", value.asInstanceOf[js.Any])
+    inline def setModes(value: js.Array[String]): Self = StObject.set(x, "modes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModesUndefined: Self = StObject.set(x, "modes", js.undefined)
+    inline def setModesUndefined: Self = StObject.set(x, "modes", js.undefined)
     
-    @scala.inline
-    def setModesVarargs(value: String*): Self = StObject.set(x, "modes", js.Array(value :_*))
+    inline def setModesVarargs(value: String*): Self = StObject.set(x, "modes", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -23,25 +23,19 @@ trait IngressBackend extends StObject {
 }
 object IngressBackend {
   
-  @scala.inline
-  def apply(): IngressBackend = {
+  inline def apply(): IngressBackend = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IngressBackend]
   }
   
-  @scala.inline
-  implicit class IngressBackendMutableBuilder[Self <: IngressBackend] (val x: Self) extends AnyVal {
+  extension [Self <: IngressBackend](x: Self) {
     
-    @scala.inline
-    def setResource(value: Input[TypedLocalObjectReference]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Input[TypedLocalObjectReference]): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
-    @scala.inline
-    def setService(value: Input[IngressServiceBackend]): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: Input[IngressServiceBackend]): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+    inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
   }
 }

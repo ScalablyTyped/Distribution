@@ -11,13 +11,11 @@ object jsdevtoolsFilePathFilterStrings {
   sealed trait exclude
     extends StObject
        with Filter
-  @scala.inline
-  def exclude: exclude = "exclude".asInstanceOf[exclude]
+  inline def exclude: exclude = "exclude".asInstanceOf[exclude]
   
   @js.native
   sealed trait include
     extends StObject
        with Filter
-  @scala.inline
-  def include: include = "include".asInstanceOf[include]
+  inline def include: include = "include".asInstanceOf[include]
 }

@@ -58,20 +58,16 @@ object typesMod {
   }
   object MDCSliderChangeEventDetail {
     
-    @scala.inline
-    def apply(thumb: Thumb, value: Double): MDCSliderChangeEventDetail = {
+    inline def apply(thumb: Thumb, value: Double): MDCSliderChangeEventDetail = {
       val __obj = js.Dynamic.literal(thumb = thumb.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[MDCSliderChangeEventDetail]
     }
     
-    @scala.inline
-    implicit class MDCSliderChangeEventDetailMutableBuilder[Self <: MDCSliderChangeEventDetail] (val x: Self) extends AnyVal {
+    extension [Self <: MDCSliderChangeEventDetail](x: Self) {
       
-      @scala.inline
-      def setThumb(value: Thumb): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
+      inline def setThumb(value: Thumb): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

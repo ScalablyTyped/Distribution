@@ -12,8 +12,7 @@ object adminClientMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def adminListEnterpriseStreamsV2(
+  inline def adminListEnterpriseStreamsV2(
     streamTypes: js.Array[StreamType],
     scope: String,
     origin: String,
@@ -25,14 +24,11 @@ object adminClientMod {
     limit: Double
   ): js.Promise[AdminStreamListResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("adminListEnterpriseStreamsV2")(streamTypes.asInstanceOf[js.Any], scope.asInstanceOf[js.Any], origin.asInstanceOf[js.Any], privacy.asInstanceOf[js.Any], status.asInstanceOf[js.Any], startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AdminStreamListResponse]]
   
-  @scala.inline
-  def importMessages(messageList: js.Array[ImportMessage]): js.Promise[js.Array[ImportMessageResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("importMessages")(messageList.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[ImportMessageResult]]]
+  inline def importMessages(messageList: js.Array[ImportMessage]): js.Promise[js.Array[ImportMessageResult]] = ^.asInstanceOf[js.Dynamic].applyDynamic("importMessages")(messageList.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[ImportMessageResult]]]
   
-  @scala.inline
-  def streamMembers(id: String, skip: Double, limit: Double): js.Promise[StreamMembers_] = (^.asInstanceOf[js.Dynamic].applyDynamic("streamMembers")(id.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StreamMembers_]]
+  inline def streamMembers(id: String, skip: Double, limit: Double): js.Promise[StreamMembers_] = (^.asInstanceOf[js.Dynamic].applyDynamic("streamMembers")(id.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[StreamMembers_]]
   
-  @scala.inline
-  def suppressMessage(id: String): js.Promise[SuppressedMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("suppressMessage")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SuppressedMessage]]
+  inline def suppressMessage(id: String): js.Promise[SuppressedMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("suppressMessage")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SuppressedMessage]]
   
   trait AdminStreamAttributes extends StObject {
     
@@ -58,8 +54,7 @@ object adminClientMod {
   }
   object AdminStreamAttributes {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createdByUserId: Double,
       createdDate: Double,
       lastMessageDate: Double,
@@ -72,50 +67,35 @@ object adminClientMod {
       __obj.asInstanceOf[AdminStreamAttributes]
     }
     
-    @scala.inline
-    implicit class AdminStreamAttributesMutableBuilder[Self <: AdminStreamAttributes] (val x: Self) extends AnyVal {
+    extension [Self <: AdminStreamAttributes](x: Self) {
       
-      @scala.inline
-      def setCreatedByUserId(value: Double): Self = StObject.set(x, "createdByUserId", value.asInstanceOf[js.Any])
+      inline def setCreatedByUserId(value: Double): Self = StObject.set(x, "createdByUserId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedDate(value: Double): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+      inline def setCreatedDate(value: Double): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastMessageDate(value: Double): Self = StObject.set(x, "lastMessageDate", value.asInstanceOf[js.Any])
+      inline def setLastMessageDate(value: Double): Self = StObject.set(x, "lastMessageDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastModifiedDate(value: Double): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
+      inline def setLastModifiedDate(value: Double): Self = StObject.set(x, "lastModifiedDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMembers(value: js.Array[Double]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+      inline def setMembers(value: js.Array[Double]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMembersCount(value: Double): Self = StObject.set(x, "membersCount", value.asInstanceOf[js.Any])
+      inline def setMembersCount(value: Double): Self = StObject.set(x, "membersCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
+      inline def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)
       
-      @scala.inline
-      def setMembersVarargs(value: Double*): Self = StObject.set(x, "members", js.Array(value :_*))
+      inline def setMembersVarargs(value: Double*): Self = StObject.set(x, "members", js.Array(value :_*))
       
-      @scala.inline
-      def setOriginCompany(value: String): Self = StObject.set(x, "originCompany", value.asInstanceOf[js.Any])
+      inline def setOriginCompany(value: String): Self = StObject.set(x, "originCompany", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginCompanyId(value: Double): Self = StObject.set(x, "originCompanyId", value.asInstanceOf[js.Any])
+      inline def setOriginCompanyId(value: Double): Self = StObject.set(x, "originCompanyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoomDescription(value: String): Self = StObject.set(x, "roomDescription", value.asInstanceOf[js.Any])
+      inline def setRoomDescription(value: String): Self = StObject.set(x, "roomDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoomDescriptionUndefined: Self = StObject.set(x, "roomDescription", js.undefined)
+      inline def setRoomDescriptionUndefined: Self = StObject.set(x, "roomDescription", js.undefined)
       
-      @scala.inline
-      def setRoomName(value: String): Self = StObject.set(x, "roomName", value.asInstanceOf[js.Any])
+      inline def setRoomName(value: String): Self = StObject.set(x, "roomName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoomNameUndefined: Self = StObject.set(x, "roomName", js.undefined)
+      inline def setRoomNameUndefined: Self = StObject.set(x, "roomName", js.undefined)
     }
   }
   
@@ -135,8 +115,7 @@ object adminClientMod {
   }
   object AdminStreamInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attributes: AdminStreamAttributes,
       id: String,
       isActive: Boolean,
@@ -149,26 +128,19 @@ object adminClientMod {
       __obj.asInstanceOf[AdminStreamInfo]
     }
     
-    @scala.inline
-    implicit class AdminStreamInfoMutableBuilder[Self <: AdminStreamInfo] (val x: Self) extends AnyVal {
+    extension [Self <: AdminStreamInfo](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: AdminStreamAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: AdminStreamAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+      inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsExternal(value: Boolean): Self = StObject.set(x, "isExternal", value.asInstanceOf[js.Any])
+      inline def setIsExternal(value: Boolean): Self = StObject.set(x, "isExternal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPublic(value: Boolean): Self = StObject.set(x, "isPublic", value.asInstanceOf[js.Any])
+      inline def setIsPublic(value: Boolean): Self = StObject.set(x, "isPublic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -186,8 +158,7 @@ object adminClientMod {
   }
   object AdminStreamListResponse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       count: Double,
       filter: StreamTypes,
       limit: Double,
@@ -198,26 +169,19 @@ object adminClientMod {
       __obj.asInstanceOf[AdminStreamListResponse]
     }
     
-    @scala.inline
-    implicit class AdminStreamListResponseMutableBuilder[Self <: AdminStreamListResponse] (val x: Self) extends AnyVal {
+    extension [Self <: AdminStreamListResponse](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter(value: StreamTypes): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: StreamTypes): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+      inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreams(value: js.Array[AdminStreamInfo]): Self = StObject.set(x, "streams", value.asInstanceOf[js.Any])
+      inline def setStreams(value: js.Array[AdminStreamInfo]): Self = StObject.set(x, "streams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamsVarargs(value: AdminStreamInfo*): Self = StObject.set(x, "streams", js.Array(value :_*))
+      inline def setStreamsVarargs(value: AdminStreamInfo*): Self = StObject.set(x, "streams", js.Array(value :_*))
     }
   }
   
@@ -239,8 +203,7 @@ object adminClientMod {
   }
   object ImportMessage {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       intendedMessageFromUserId: Double,
       intendedMessageTimestamp: Double,
       message: String,
@@ -251,35 +214,25 @@ object adminClientMod {
       __obj.asInstanceOf[ImportMessage]
     }
     
-    @scala.inline
-    implicit class ImportMessageMutableBuilder[Self <: ImportMessage] (val x: Self) extends AnyVal {
+    extension [Self <: ImportMessage](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setIntendedMessageFromUserId(value: Double): Self = StObject.set(x, "intendedMessageFromUserId", value.asInstanceOf[js.Any])
+      inline def setIntendedMessageFromUserId(value: Double): Self = StObject.set(x, "intendedMessageFromUserId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntendedMessageTimestamp(value: Double): Self = StObject.set(x, "intendedMessageTimestamp", value.asInstanceOf[js.Any])
+      inline def setIntendedMessageTimestamp(value: Double): Self = StObject.set(x, "intendedMessageTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalMessageId(value: String): Self = StObject.set(x, "originalMessageId", value.asInstanceOf[js.Any])
+      inline def setOriginalMessageId(value: String): Self = StObject.set(x, "originalMessageId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalMessageIdUndefined: Self = StObject.set(x, "originalMessageId", js.undefined)
+      inline def setOriginalMessageIdUndefined: Self = StObject.set(x, "originalMessageId", js.undefined)
       
-      @scala.inline
-      def setOriginatingSystemId(value: String): Self = StObject.set(x, "originatingSystemId", value.asInstanceOf[js.Any])
+      inline def setOriginatingSystemId(value: String): Self = StObject.set(x, "originatingSystemId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamId(value: String): Self = StObject.set(x, "streamId", value.asInstanceOf[js.Any])
+      inline def setStreamId(value: String): Self = StObject.set(x, "streamId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -295,35 +248,26 @@ object adminClientMod {
   }
   object ImportMessageResult {
     
-    @scala.inline
-    def apply(originatingSystemId: String): ImportMessageResult = {
+    inline def apply(originatingSystemId: String): ImportMessageResult = {
       val __obj = js.Dynamic.literal(originatingSystemId = originatingSystemId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ImportMessageResult]
     }
     
-    @scala.inline
-    implicit class ImportMessageResultMutableBuilder[Self <: ImportMessageResult] (val x: Self) extends AnyVal {
+    extension [Self <: ImportMessageResult](x: Self) {
       
-      @scala.inline
-      def setDiagnostic(value: String): Self = StObject.set(x, "diagnostic", value.asInstanceOf[js.Any])
+      inline def setDiagnostic(value: String): Self = StObject.set(x, "diagnostic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiagnosticUndefined: Self = StObject.set(x, "diagnostic", js.undefined)
+      inline def setDiagnosticUndefined: Self = StObject.set(x, "diagnostic", js.undefined)
       
-      @scala.inline
-      def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+      inline def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
+      inline def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
       
-      @scala.inline
-      def setOriginalMessageId(value: String): Self = StObject.set(x, "originalMessageId", value.asInstanceOf[js.Any])
+      inline def setOriginalMessageId(value: String): Self = StObject.set(x, "originalMessageId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalMessageIdUndefined: Self = StObject.set(x, "originalMessageId", js.undefined)
+      inline def setOriginalMessageIdUndefined: Self = StObject.set(x, "originalMessageId", js.undefined)
       
-      @scala.inline
-      def setOriginatingSystemId(value: String): Self = StObject.set(x, "originatingSystemId", value.asInstanceOf[js.Any])
+      inline def setOriginatingSystemId(value: String): Self = StObject.set(x, "originatingSystemId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -339,29 +283,22 @@ object adminClientMod {
   }
   object StreamMember {
     
-    @scala.inline
-    def apply(isCreator: Boolean, joinDate: Double, user: StreamUser): StreamMember = {
+    inline def apply(isCreator: Boolean, joinDate: Double, user: StreamUser): StreamMember = {
       val __obj = js.Dynamic.literal(isCreator = isCreator.asInstanceOf[js.Any], joinDate = joinDate.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
       __obj.asInstanceOf[StreamMember]
     }
     
-    @scala.inline
-    implicit class StreamMemberMutableBuilder[Self <: StreamMember] (val x: Self) extends AnyVal {
+    extension [Self <: StreamMember](x: Self) {
       
-      @scala.inline
-      def setIsCreator(value: Boolean): Self = StObject.set(x, "isCreator", value.asInstanceOf[js.Any])
+      inline def setIsCreator(value: Boolean): Self = StObject.set(x, "isCreator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOwner(value: Boolean): Self = StObject.set(x, "isOwner", value.asInstanceOf[js.Any])
+      inline def setIsOwner(value: Boolean): Self = StObject.set(x, "isOwner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOwnerUndefined: Self = StObject.set(x, "isOwner", js.undefined)
+      inline def setIsOwnerUndefined: Self = StObject.set(x, "isOwner", js.undefined)
       
-      @scala.inline
-      def setJoinDate(value: Double): Self = StObject.set(x, "joinDate", value.asInstanceOf[js.Any])
+      inline def setJoinDate(value: Double): Self = StObject.set(x, "joinDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: StreamUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: StreamUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
   
@@ -377,29 +314,22 @@ object adminClientMod {
   }
   object StreamMembers_ {
     
-    @scala.inline
-    def apply(count: Double, limit: Double, members: js.Array[StreamMember], skip: Double): StreamMembers_ = {
+    inline def apply(count: Double, limit: Double, members: js.Array[StreamMember], skip: Double): StreamMembers_ = {
       val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], skip = skip.asInstanceOf[js.Any])
       __obj.asInstanceOf[StreamMembers_]
     }
     
-    @scala.inline
-    implicit class StreamMembers_MutableBuilder[Self <: StreamMembers_] (val x: Self) extends AnyVal {
+    extension [Self <: StreamMembers_](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMembers(value: js.Array[StreamMember]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+      inline def setMembers(value: js.Array[StreamMember]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMembersVarargs(value: StreamMember*): Self = StObject.set(x, "members", js.Array(value :_*))
+      inline def setMembersVarargs(value: StreamMember*): Self = StObject.set(x, "members", js.Array(value :_*))
       
-      @scala.inline
-      def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+      inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     }
   }
   
@@ -423,56 +353,40 @@ object adminClientMod {
   }
   object StreamUser {
     
-    @scala.inline
-    def apply(isExternal: Boolean, userId: Double): StreamUser = {
+    inline def apply(isExternal: Boolean, userId: Double): StreamUser = {
       val __obj = js.Dynamic.literal(isExternal = isExternal.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
       __obj.asInstanceOf[StreamUser]
     }
     
-    @scala.inline
-    implicit class StreamUserMutableBuilder[Self <: StreamUser] (val x: Self) extends AnyVal {
+    extension [Self <: StreamUser](x: Self) {
       
-      @scala.inline
-      def setCompany(value: String): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
+      inline def setCompany(value: String): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompanyId(value: Double): Self = StObject.set(x, "companyId", value.asInstanceOf[js.Any])
+      inline def setCompanyId(value: Double): Self = StObject.set(x, "companyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompanyIdUndefined: Self = StObject.set(x, "companyId", js.undefined)
+      inline def setCompanyIdUndefined: Self = StObject.set(x, "companyId", js.undefined)
       
-      @scala.inline
-      def setCompanyUndefined: Self = StObject.set(x, "company", js.undefined)
+      inline def setCompanyUndefined: Self = StObject.set(x, "company", js.undefined)
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+      inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
       
-      @scala.inline
-      def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
+      inline def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstNameUndefined: Self = StObject.set(x, "firstName", js.undefined)
+      inline def setFirstNameUndefined: Self = StObject.set(x, "firstName", js.undefined)
       
-      @scala.inline
-      def setIsExternal(value: Boolean): Self = StObject.set(x, "isExternal", value.asInstanceOf[js.Any])
+      inline def setIsExternal(value: Boolean): Self = StObject.set(x, "isExternal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
+      inline def setLastName(value: String): Self = StObject.set(x, "lastName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastNameUndefined: Self = StObject.set(x, "lastName", js.undefined)
+      inline def setLastNameUndefined: Self = StObject.set(x, "lastName", js.undefined)
       
-      @scala.inline
-      def setUserId(value: Double): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+      inline def setUserId(value: Double): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -486,23 +400,18 @@ object adminClientMod {
   }
   object SuppressedMessage {
     
-    @scala.inline
-    def apply(messageId: String, suppressed: Boolean, suppressionDate: Double): SuppressedMessage = {
+    inline def apply(messageId: String, suppressed: Boolean, suppressionDate: Double): SuppressedMessage = {
       val __obj = js.Dynamic.literal(messageId = messageId.asInstanceOf[js.Any], suppressed = suppressed.asInstanceOf[js.Any], suppressionDate = suppressionDate.asInstanceOf[js.Any])
       __obj.asInstanceOf[SuppressedMessage]
     }
     
-    @scala.inline
-    implicit class SuppressedMessageMutableBuilder[Self <: SuppressedMessage] (val x: Self) extends AnyVal {
+    extension [Self <: SuppressedMessage](x: Self) {
       
-      @scala.inline
-      def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+      inline def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressed(value: Boolean): Self = StObject.set(x, "suppressed", value.asInstanceOf[js.Any])
+      inline def setSuppressed(value: Boolean): Self = StObject.set(x, "suppressed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressionDate(value: Double): Self = StObject.set(x, "suppressionDate", value.asInstanceOf[js.Any])
+      inline def setSuppressionDate(value: Double): Self = StObject.set(x, "suppressionDate", value.asInstanceOf[js.Any])
     }
   }
 }

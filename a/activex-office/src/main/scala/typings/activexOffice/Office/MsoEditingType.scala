@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoEditingType extends StObject
 object MsoEditingType {
   
-  @scala.inline
-  def msoEditingAuto: `0` = 0.asInstanceOf[`0`]
+  inline def msoEditingAuto: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def msoEditingCorner: `1` = 1.asInstanceOf[`1`]
+  inline def msoEditingCorner: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def msoEditingSmooth: `2` = 2.asInstanceOf[`2`]
+  inline def msoEditingSmooth: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoEditingSymmetric: `3` = 3.asInstanceOf[`3`]
+  inline def msoEditingSymmetric: `3` = 3.asInstanceOf[`3`]
 }

@@ -137,10 +137,8 @@ object r3AstMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromBoundElementProperty(prop: BoundElementProperty): BoundAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBoundElementProperty")(prop.asInstanceOf[js.Any]).asInstanceOf[BoundAttribute]
-    @scala.inline
-    def fromBoundElementProperty(prop: BoundElementProperty, i18n: I18nMeta): BoundAttribute = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBoundElementProperty")(prop.asInstanceOf[js.Any], i18n.asInstanceOf[js.Any])).asInstanceOf[BoundAttribute]
+    inline def fromBoundElementProperty(prop: BoundElementProperty): BoundAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBoundElementProperty")(prop.asInstanceOf[js.Any]).asInstanceOf[BoundAttribute]
+    inline def fromBoundElementProperty(prop: BoundElementProperty, i18n: I18nMeta): BoundAttribute = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBoundElementProperty")(prop.asInstanceOf[js.Any], i18n.asInstanceOf[js.Any])).asInstanceOf[BoundAttribute]
   }
   
   @JSImport("@angular/compiler/src/render3/r3_ast", "BoundEvent")
@@ -210,8 +208,7 @@ object r3AstMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromParsedEvent(event: ParsedEvent): BoundEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromParsedEvent")(event.asInstanceOf[js.Any]).asInstanceOf[BoundEvent]
+    inline def fromParsedEvent(event: ParsedEvent): BoundEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromParsedEvent")(event.asInstanceOf[js.Any]).asInstanceOf[BoundEvent]
   }
   
   @JSImport("@angular/compiler/src/render3/r3_ast", "BoundText")
@@ -746,11 +743,9 @@ object r3AstMod {
     override def visit[Result](visitor: Visitor[Result]): Result = js.native
   }
   
-  @scala.inline
-  def transformAll[Result /* <: Node */](visitor: Visitor[Node], nodes: js.Array[Result]): js.Array[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformAll")(visitor.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any])).asInstanceOf[js.Array[Result]]
+  inline def transformAll[Result /* <: Node */](visitor: Visitor[Node], nodes: js.Array[Result]): js.Array[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformAll")(visitor.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any])).asInstanceOf[js.Array[Result]]
   
-  @scala.inline
-  def visitAll[Result](visitor: Visitor[Result], nodes: js.Array[Node]): js.Array[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitAll")(visitor.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any])).asInstanceOf[js.Array[Result]]
+  inline def visitAll[Result](visitor: Visitor[Result], nodes: js.Array[Node]): js.Array[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("visitAll")(visitor.asInstanceOf[js.Any], nodes.asInstanceOf[js.Any])).asInstanceOf[js.Array[Result]]
   
   trait Node extends StObject {
     
@@ -760,20 +755,16 @@ object r3AstMod {
   }
   object Node {
     
-    @scala.inline
-    def apply(sourceSpan: ParseSourceSpan, visit: Visitor[js.Any] => js.Any): Node = {
+    inline def apply(sourceSpan: ParseSourceSpan, visit: Visitor[js.Any] => js.Any): Node = {
       val __obj = js.Dynamic.literal(sourceSpan = sourceSpan.asInstanceOf[js.Any], visit = js.Any.fromFunction1(visit))
       __obj.asInstanceOf[Node]
     }
     
-    @scala.inline
-    implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
+    extension [Self <: Node](x: Self) {
       
-      @scala.inline
-      def setSourceSpan(value: ParseSourceSpan): Self = StObject.set(x, "sourceSpan", value.asInstanceOf[js.Any])
+      inline def setSourceSpan(value: ParseSourceSpan): Self = StObject.set(x, "sourceSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisit(value: Visitor[js.Any] => js.Any): Self = StObject.set(x, "visit", js.Any.fromFunction1(value))
+      inline def setVisit(value: Visitor[js.Any] => js.Any): Self = StObject.set(x, "visit", js.Any.fromFunction1(value))
     }
   }
   
@@ -805,8 +796,7 @@ object r3AstMod {
   }
   object Visitor {
     
-    @scala.inline
-    def apply[Result](
+    inline def apply[Result](
       visitBoundAttribute: BoundAttribute => Result,
       visitBoundEvent: BoundEvent => Result,
       visitBoundText: BoundText => Result,
@@ -823,47 +813,33 @@ object r3AstMod {
       __obj.asInstanceOf[Visitor[Result]]
     }
     
-    @scala.inline
-    implicit class VisitorMutableBuilder[Self <: Visitor[?], Result] (val x: Self & Visitor[Result]) extends AnyVal {
+    extension [Self <: Visitor[?], Result](x: Self & Visitor[Result]) {
       
-      @scala.inline
-      def setVisit(value: /* node */ Node => Result): Self = StObject.set(x, "visit", js.Any.fromFunction1(value))
+      inline def setVisit(value: /* node */ Node => Result): Self = StObject.set(x, "visit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVisitBoundAttribute(value: BoundAttribute => Result): Self = StObject.set(x, "visitBoundAttribute", js.Any.fromFunction1(value))
+      inline def setVisitBoundAttribute(value: BoundAttribute => Result): Self = StObject.set(x, "visitBoundAttribute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVisitBoundEvent(value: BoundEvent => Result): Self = StObject.set(x, "visitBoundEvent", js.Any.fromFunction1(value))
+      inline def setVisitBoundEvent(value: BoundEvent => Result): Self = StObject.set(x, "visitBoundEvent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVisitBoundText(value: BoundText => Result): Self = StObject.set(x, "visitBoundText", js.Any.fromFunction1(value))
+      inline def setVisitBoundText(value: BoundText => Result): Self = StObject.set(x, "visitBoundText", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVisitContent(value: Content => Result): Self = StObject.set(x, "visitContent", js.Any.fromFunction1(value))
+      inline def setVisitContent(value: Content => Result): Self = StObject.set(x, "visitContent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVisitElement(value: Element => Result): Self = StObject.set(x, "visitElement", js.Any.fromFunction1(value))
+      inline def setVisitElement(value: Element => Result): Self = StObject.set(x, "visitElement", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVisitIcu(value: Icu => Result): Self = StObject.set(x, "visitIcu", js.Any.fromFunction1(value))
+      inline def setVisitIcu(value: Icu => Result): Self = StObject.set(x, "visitIcu", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVisitReference(value: Reference => Result): Self = StObject.set(x, "visitReference", js.Any.fromFunction1(value))
+      inline def setVisitReference(value: Reference => Result): Self = StObject.set(x, "visitReference", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVisitTemplate(value: Template => Result): Self = StObject.set(x, "visitTemplate", js.Any.fromFunction1(value))
+      inline def setVisitTemplate(value: Template => Result): Self = StObject.set(x, "visitTemplate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVisitText(value: Text => Result): Self = StObject.set(x, "visitText", js.Any.fromFunction1(value))
+      inline def setVisitText(value: Text => Result): Self = StObject.set(x, "visitText", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVisitTextAttribute(value: TextAttribute => Result): Self = StObject.set(x, "visitTextAttribute", js.Any.fromFunction1(value))
+      inline def setVisitTextAttribute(value: TextAttribute => Result): Self = StObject.set(x, "visitTextAttribute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVisitUndefined: Self = StObject.set(x, "visit", js.undefined)
+      inline def setVisitUndefined: Self = StObject.set(x, "visit", js.undefined)
       
-      @scala.inline
-      def setVisitVariable(value: Variable => Result): Self = StObject.set(x, "visitVariable", js.Any.fromFunction1(value))
+      inline def setVisitVariable(value: Variable => Result): Self = StObject.set(x, "visitVariable", js.Any.fromFunction1(value))
     }
   }
 }

@@ -20,25 +20,19 @@ trait UsersCreatePublicSshKeyForAuthenticatedRequestOptions extends StObject {
 }
 object UsersCreatePublicSshKeyForAuthenticatedRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): UsersCreatePublicSshKeyForAuthenticatedRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): UsersCreatePublicSshKeyForAuthenticatedRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "POST", request = request.asInstanceOf[js.Any], url = "/user/keys")
     __obj.asInstanceOf[UsersCreatePublicSshKeyForAuthenticatedRequestOptions]
   }
   
-  @scala.inline
-  implicit class UsersCreatePublicSshKeyForAuthenticatedRequestOptionsMutableBuilder[Self <: UsersCreatePublicSshKeyForAuthenticatedRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UsersCreatePublicSshKeyForAuthenticatedRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: POST): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashuserSlashkeys): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashuserSlashkeys): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

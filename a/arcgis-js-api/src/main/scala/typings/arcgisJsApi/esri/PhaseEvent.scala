@@ -33,8 +33,7 @@ trait PhaseEvent
 }
 object PhaseEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     deltaTime: Double,
     elapsedFrameTime: Double,
@@ -46,16 +45,12 @@ object PhaseEvent {
     __obj.asInstanceOf[PhaseEvent]
   }
   
-  @scala.inline
-  implicit class PhaseEventMutableBuilder[Self <: PhaseEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PhaseEvent](x: Self) {
     
-    @scala.inline
-    def setDeltaTime(value: Double): Self = StObject.set(x, "deltaTime", value.asInstanceOf[js.Any])
+    inline def setDeltaTime(value: Double): Self = StObject.set(x, "deltaTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElapsedFrameTime(value: Double): Self = StObject.set(x, "elapsedFrameTime", value.asInstanceOf[js.Any])
+    inline def setElapsedFrameTime(value: Double): Self = StObject.set(x, "elapsedFrameTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
   }
 }

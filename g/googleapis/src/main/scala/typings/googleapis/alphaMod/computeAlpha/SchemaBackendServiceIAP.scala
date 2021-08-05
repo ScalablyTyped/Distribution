@@ -28,43 +28,31 @@ trait SchemaBackendServiceIAP extends StObject {
 }
 object SchemaBackendServiceIAP {
   
-  @scala.inline
-  def apply(): SchemaBackendServiceIAP = {
+  inline def apply(): SchemaBackendServiceIAP = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBackendServiceIAP]
   }
   
-  @scala.inline
-  implicit class SchemaBackendServiceIAPMutableBuilder[Self <: SchemaBackendServiceIAP] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBackendServiceIAP](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setOauth2ClientId(value: String): Self = StObject.set(x, "oauth2ClientId", value.asInstanceOf[js.Any])
+    inline def setOauth2ClientId(value: String): Self = StObject.set(x, "oauth2ClientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOauth2ClientIdUndefined: Self = StObject.set(x, "oauth2ClientId", js.undefined)
+    inline def setOauth2ClientIdUndefined: Self = StObject.set(x, "oauth2ClientId", js.undefined)
     
-    @scala.inline
-    def setOauth2ClientInfo(value: SchemaBackendServiceIAPOAuth2ClientInfo): Self = StObject.set(x, "oauth2ClientInfo", value.asInstanceOf[js.Any])
+    inline def setOauth2ClientInfo(value: SchemaBackendServiceIAPOAuth2ClientInfo): Self = StObject.set(x, "oauth2ClientInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOauth2ClientInfoUndefined: Self = StObject.set(x, "oauth2ClientInfo", js.undefined)
+    inline def setOauth2ClientInfoUndefined: Self = StObject.set(x, "oauth2ClientInfo", js.undefined)
     
-    @scala.inline
-    def setOauth2ClientSecret(value: String): Self = StObject.set(x, "oauth2ClientSecret", value.asInstanceOf[js.Any])
+    inline def setOauth2ClientSecret(value: String): Self = StObject.set(x, "oauth2ClientSecret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOauth2ClientSecretSha256(value: String): Self = StObject.set(x, "oauth2ClientSecretSha256", value.asInstanceOf[js.Any])
+    inline def setOauth2ClientSecretSha256(value: String): Self = StObject.set(x, "oauth2ClientSecretSha256", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOauth2ClientSecretSha256Undefined: Self = StObject.set(x, "oauth2ClientSecretSha256", js.undefined)
+    inline def setOauth2ClientSecretSha256Undefined: Self = StObject.set(x, "oauth2ClientSecretSha256", js.undefined)
     
-    @scala.inline
-    def setOauth2ClientSecretUndefined: Self = StObject.set(x, "oauth2ClientSecret", js.undefined)
+    inline def setOauth2ClientSecretUndefined: Self = StObject.set(x, "oauth2ClientSecret", js.undefined)
   }
 }

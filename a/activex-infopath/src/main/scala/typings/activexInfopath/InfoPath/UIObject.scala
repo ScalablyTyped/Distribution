@@ -11,7 +11,7 @@ trait UIObject extends StObject {
   
   def Confirm(bstrPrompt: String, lButtons: XdConfirmButtons): XdConfirmChoice = js.native
   
-  @JSName("InfoPath.UIObject_typekey")
+  /* private */ @JSName("InfoPath.UIObject_typekey")
   var InfoPathDotUIObject_typekey: UIObject = js.native
   
   def SetSaveAsDialogFileName(bstrFileName: String): Unit = js.native

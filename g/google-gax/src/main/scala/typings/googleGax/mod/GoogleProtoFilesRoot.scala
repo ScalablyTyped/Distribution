@@ -17,6 +17,5 @@ object GoogleProtoFilesRoot {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def _findIncludePath(originPath: String, includePath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("_findIncludePath")(originPath.asInstanceOf[js.Any], includePath.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def _findIncludePath(originPath: String, includePath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("_findIncludePath")(originPath.asInstanceOf[js.Any], includePath.asInstanceOf[js.Any])).asInstanceOf[String]
 }

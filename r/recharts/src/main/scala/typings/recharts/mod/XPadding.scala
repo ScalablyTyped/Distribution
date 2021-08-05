@@ -12,19 +12,15 @@ trait XPadding extends StObject {
 }
 object XPadding {
   
-  @scala.inline
-  def apply(left: Double, right: Double): XPadding = {
+  inline def apply(left: Double, right: Double): XPadding = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
     __obj.asInstanceOf[XPadding]
   }
   
-  @scala.inline
-  implicit class XPaddingMutableBuilder[Self <: XPadding] (val x: Self) extends AnyVal {
+  extension [Self <: XPadding](x: Self) {
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
   }
 }

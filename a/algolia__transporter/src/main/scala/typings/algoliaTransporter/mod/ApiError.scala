@@ -22,22 +22,17 @@ trait ApiError
 }
 object ApiError {
   
-  @scala.inline
-  def apply(message: String, name: String, status: Double, transporterStackTrace: js.Array[StackFrame]): ApiError = {
+  inline def apply(message: String, name: String, status: Double, transporterStackTrace: js.Array[StackFrame]): ApiError = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], transporterStackTrace = transporterStackTrace.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApiError]
   }
   
-  @scala.inline
-  implicit class ApiErrorMutableBuilder[Self <: ApiError] (val x: Self) extends AnyVal {
+  extension [Self <: ApiError](x: Self) {
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransporterStackTrace(value: js.Array[StackFrame]): Self = StObject.set(x, "transporterStackTrace", value.asInstanceOf[js.Any])
+    inline def setTransporterStackTrace(value: js.Array[StackFrame]): Self = StObject.set(x, "transporterStackTrace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransporterStackTraceVarargs(value: StackFrame*): Self = StObject.set(x, "transporterStackTrace", js.Array(value :_*))
+    inline def setTransporterStackTraceVarargs(value: StackFrame*): Self = StObject.set(x, "transporterStackTrace", js.Array(value :_*))
   }
 }

@@ -12,19 +12,15 @@ trait MarginLeftMarginRight extends StObject {
 }
 object MarginLeftMarginRight {
   
-  @scala.inline
-  def apply(marginLeft: Double, marginRight: Double): MarginLeftMarginRight = {
+  inline def apply(marginLeft: Double, marginRight: Double): MarginLeftMarginRight = {
     val __obj = js.Dynamic.literal(marginLeft = marginLeft.asInstanceOf[js.Any], marginRight = marginRight.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarginLeftMarginRight]
   }
   
-  @scala.inline
-  implicit class MarginLeftMarginRightMutableBuilder[Self <: MarginLeftMarginRight] (val x: Self) extends AnyVal {
+  extension [Self <: MarginLeftMarginRight](x: Self) {
     
-    @scala.inline
-    def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+    inline def setMarginLeft(value: Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginRight(value: Double): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
+    inline def setMarginRight(value: Double): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
   }
 }

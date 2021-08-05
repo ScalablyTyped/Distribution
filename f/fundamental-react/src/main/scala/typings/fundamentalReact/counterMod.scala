@@ -18,10 +18,8 @@ object counterMod {
   /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/Counter/Counter.CounterProps> & {  displayName :'Counter'} */
   object default {
     
-    @scala.inline
-    def apply(props: PropsWithChildren[CounterProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
-    @scala.inline
-    def apply(props: PropsWithChildren[CounterProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    inline def apply(props: PropsWithChildren[CounterProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    inline def apply(props: PropsWithChildren[CounterProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
     
     @JSImport("fundamental-react/lib/Counter/Counter", JSImport.Default)
     @js.native
@@ -30,26 +28,22 @@ object counterMod {
     @JSImport("fundamental-react/lib/Counter/Counter", "default.contextTypes")
     @js.native
     def contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
-    @scala.inline
-    def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+    inline def contextTypes_=(x: js.UndefOr[ValidationMap[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
     
     @JSImport("fundamental-react/lib/Counter/Counter", "default.defaultProps")
     @js.native
     def defaultProps: js.UndefOr[PartialCounterProps] = js.native
-    @scala.inline
-    def defaultProps_=(x: js.UndefOr[PartialCounterProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: js.UndefOr[PartialCounterProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("fundamental-react/lib/Counter/Counter", "default.displayName")
     @js.native
     def displayName: js.UndefOr[Counter | String] = js.native
-    @scala.inline
-    def displayName_=(x: js.UndefOr[Counter | String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: js.UndefOr[Counter | String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
     @JSImport("fundamental-react/lib/Counter/Counter", "default.propTypes")
     @js.native
     def propTypes: js.UndefOr[WeakValidationMapCounterP] = js.native
-    @scala.inline
-    def propTypes_=(x: js.UndefOr[WeakValidationMapCounterP]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+    inline def propTypes_=(x: js.UndefOr[WeakValidationMapCounterP]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
   trait CounterProps
@@ -64,32 +58,24 @@ object counterMod {
   }
   object CounterProps {
     
-    @scala.inline
-    def apply(): CounterProps = {
+    inline def apply(): CounterProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CounterProps]
     }
     
-    @scala.inline
-    implicit class CounterPropsMutableBuilder[Self <: CounterProps] (val x: Self) extends AnyVal {
+    extension [Self <: CounterProps](x: Self) {
       
-      @scala.inline
-      def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
+      inline def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
+      inline def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
       
-      @scala.inline
-      def setLocalizedText(value: CounterLabel): Self = StObject.set(x, "localizedText", value.asInstanceOf[js.Any])
+      inline def setLocalizedText(value: CounterLabel): Self = StObject.set(x, "localizedText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalizedTextUndefined: Self = StObject.set(x, "localizedText", js.undefined)
+      inline def setLocalizedTextUndefined: Self = StObject.set(x, "localizedText", js.undefined)
       
-      @scala.inline
-      def setNotification(value: Boolean): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+      inline def setNotification(value: Boolean): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
+      inline def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
     }
   }
 }

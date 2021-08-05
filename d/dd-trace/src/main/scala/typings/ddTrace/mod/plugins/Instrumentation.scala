@@ -12,8 +12,7 @@ trait Instrumentation
      with Analyzable
 object Instrumentation {
   
-  @scala.inline
-  def apply(): Instrumentation = {
+  inline def apply(): Instrumentation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Instrumentation]
   }

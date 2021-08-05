@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlGradientFillType extends StObject
 object XlGradientFillType {
   
-  @scala.inline
-  def xlGradientFillLinear: `0` = 0.asInstanceOf[`0`]
+  inline def xlGradientFillLinear: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlGradientFillPath: `1` = 1.asInstanceOf[`1`]
+  inline def xlGradientFillPath: `1` = 1.asInstanceOf[`1`]
 }

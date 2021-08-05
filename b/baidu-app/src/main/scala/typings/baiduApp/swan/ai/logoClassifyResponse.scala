@@ -17,25 +17,19 @@ trait logoClassifyResponse extends StObject {
 }
 object logoClassifyResponse {
   
-  @scala.inline
-  def apply(log_id: Double, result: js.Array[Probability], result_num: Double): logoClassifyResponse = {
+  inline def apply(log_id: Double, result: js.Array[Probability], result_num: Double): logoClassifyResponse = {
     val __obj = js.Dynamic.literal(log_id = log_id.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], result_num = result_num.asInstanceOf[js.Any])
     __obj.asInstanceOf[logoClassifyResponse]
   }
   
-  @scala.inline
-  implicit class logoClassifyResponseMutableBuilder[Self <: logoClassifyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: logoClassifyResponse](x: Self) {
     
-    @scala.inline
-    def setLog_id(value: Double): Self = StObject.set(x, "log_id", value.asInstanceOf[js.Any])
+    inline def setLog_id(value: Double): Self = StObject.set(x, "log_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: js.Array[Probability]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: js.Array[Probability]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultVarargs(value: Probability*): Self = StObject.set(x, "result", js.Array(value :_*))
+    inline def setResultVarargs(value: Probability*): Self = StObject.set(x, "result", js.Array(value :_*))
     
-    @scala.inline
-    def setResult_num(value: Double): Self = StObject.set(x, "result_num", value.asInstanceOf[js.Any])
+    inline def setResult_num(value: Double): Self = StObject.set(x, "result_num", value.asInstanceOf[js.Any])
   }
 }

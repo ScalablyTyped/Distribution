@@ -26,31 +26,23 @@ trait BOTTOM_ extends StObject {
 }
 object BOTTOM_ {
   
-  @scala.inline
-  def apply(): BOTTOM_ = {
+  inline def apply(): BOTTOM_ = {
     val __obj = js.Dynamic.literal(BOTTOM = "bottom", HORIZONTAL = "horizontal", LEFT = "left", RIGHT = "right", TOP = "top", VERTICAL = "vertical")
     __obj.asInstanceOf[BOTTOM_]
   }
   
-  @scala.inline
-  implicit class BOTTOM_MutableBuilder[Self <: BOTTOM_] (val x: Self) extends AnyVal {
+  extension [Self <: BOTTOM_](x: Self) {
     
-    @scala.inline
-    def setBOTTOM(value: bottom): Self = StObject.set(x, "BOTTOM", value.asInstanceOf[js.Any])
+    inline def setBOTTOM(value: bottom): Self = StObject.set(x, "BOTTOM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHORIZONTAL(value: horizontal): Self = StObject.set(x, "HORIZONTAL", value.asInstanceOf[js.Any])
+    inline def setHORIZONTAL(value: horizontal): Self = StObject.set(x, "HORIZONTAL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLEFT(value: left): Self = StObject.set(x, "LEFT", value.asInstanceOf[js.Any])
+    inline def setLEFT(value: left): Self = StObject.set(x, "LEFT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRIGHT(value: right): Self = StObject.set(x, "RIGHT", value.asInstanceOf[js.Any])
+    inline def setRIGHT(value: right): Self = StObject.set(x, "RIGHT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTOP(value: top): Self = StObject.set(x, "TOP", value.asInstanceOf[js.Any])
+    inline def setTOP(value: top): Self = StObject.set(x, "TOP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVERTICAL(value: vertical): Self = StObject.set(x, "VERTICAL", value.asInstanceOf[js.Any])
+    inline def setVERTICAL(value: vertical): Self = StObject.set(x, "VERTICAL", value.asInstanceOf[js.Any])
   }
 }

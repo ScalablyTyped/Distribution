@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TypeForShape extends StObject
 object TypeForShape {
   
-  @scala.inline
-  def geojson: typings.vegaLite.vegaLiteStrings.geojson = "geojson".asInstanceOf[typings.vegaLite.vegaLiteStrings.geojson]
+  inline def geojson: typings.vegaLite.vegaLiteStrings.geojson = "geojson".asInstanceOf[typings.vegaLite.vegaLiteStrings.geojson]
   
-  @scala.inline
-  def nominal: typings.vegaLite.vegaLiteStrings.nominal = "nominal".asInstanceOf[typings.vegaLite.vegaLiteStrings.nominal]
+  inline def nominal: typings.vegaLite.vegaLiteStrings.nominal = "nominal".asInstanceOf[typings.vegaLite.vegaLiteStrings.nominal]
   
-  @scala.inline
-  def ordinal: typings.vegaLite.vegaLiteStrings.ordinal = "ordinal".asInstanceOf[typings.vegaLite.vegaLiteStrings.ordinal]
+  inline def ordinal: typings.vegaLite.vegaLiteStrings.ordinal = "ordinal".asInstanceOf[typings.vegaLite.vegaLiteStrings.ordinal]
 }

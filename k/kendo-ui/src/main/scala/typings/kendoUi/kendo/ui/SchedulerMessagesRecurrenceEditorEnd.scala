@@ -20,49 +20,35 @@ trait SchedulerMessagesRecurrenceEditorEnd extends StObject {
 }
 object SchedulerMessagesRecurrenceEditorEnd {
   
-  @scala.inline
-  def apply(): SchedulerMessagesRecurrenceEditorEnd = {
+  inline def apply(): SchedulerMessagesRecurrenceEditorEnd = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchedulerMessagesRecurrenceEditorEnd]
   }
   
-  @scala.inline
-  implicit class SchedulerMessagesRecurrenceEditorEndMutableBuilder[Self <: SchedulerMessagesRecurrenceEditorEnd] (val x: Self) extends AnyVal {
+  extension [Self <: SchedulerMessagesRecurrenceEditorEnd](x: Self) {
     
-    @scala.inline
-    def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+    inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+    inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setMobileLabel(value: String): Self = StObject.set(x, "mobileLabel", value.asInstanceOf[js.Any])
+    inline def setMobileLabel(value: String): Self = StObject.set(x, "mobileLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobileLabelUndefined: Self = StObject.set(x, "mobileLabel", js.undefined)
+    inline def setMobileLabelUndefined: Self = StObject.set(x, "mobileLabel", js.undefined)
     
-    @scala.inline
-    def setNever(value: String): Self = StObject.set(x, "never", value.asInstanceOf[js.Any])
+    inline def setNever(value: String): Self = StObject.set(x, "never", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeverUndefined: Self = StObject.set(x, "never", js.undefined)
+    inline def setNeverUndefined: Self = StObject.set(x, "never", js.undefined)
     
-    @scala.inline
-    def setOccurrence(value: String): Self = StObject.set(x, "occurrence", value.asInstanceOf[js.Any])
+    inline def setOccurrence(value: String): Self = StObject.set(x, "occurrence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOccurrenceUndefined: Self = StObject.set(x, "occurrence", js.undefined)
+    inline def setOccurrenceUndefined: Self = StObject.set(x, "occurrence", js.undefined)
     
-    @scala.inline
-    def setOn(value: String): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+    inline def setOn(value: String): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
+    inline def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
   }
 }

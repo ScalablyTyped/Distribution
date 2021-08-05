@@ -16,8 +16,7 @@ object bindMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[EachCallback /* <: TestCallback */](cb: GlobalCallback): js.Function2[
+  inline def default[EachCallback /* <: TestCallback */](cb: GlobalCallback): js.Function2[
     /* table */ EachTable, 
     /* taggedTemplateData */ TemplateData, 
     js.Function3[
@@ -36,8 +35,7 @@ object bindMod {
       Unit
     ]
   ]]
-  @scala.inline
-  def default[EachCallback /* <: TestCallback */](cb: GlobalCallback, supportsDone: Boolean): js.Function2[
+  inline def default[EachCallback /* <: TestCallback */](cb: GlobalCallback, supportsDone: Boolean): js.Function2[
     /* table */ EachTable, 
     /* taggedTemplateData */ TemplateData, 
     js.Function3[

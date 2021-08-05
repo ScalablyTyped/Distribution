@@ -10,16 +10,13 @@ trait SpatialCoordinateSystem extends StObject {
 }
 object SpatialCoordinateSystem {
   
-  @scala.inline
-  def apply(tryGetTransformTo: js.Any): SpatialCoordinateSystem = {
+  inline def apply(tryGetTransformTo: js.Any): SpatialCoordinateSystem = {
     val __obj = js.Dynamic.literal(tryGetTransformTo = tryGetTransformTo.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpatialCoordinateSystem]
   }
   
-  @scala.inline
-  implicit class SpatialCoordinateSystemMutableBuilder[Self <: SpatialCoordinateSystem] (val x: Self) extends AnyVal {
+  extension [Self <: SpatialCoordinateSystem](x: Self) {
     
-    @scala.inline
-    def setTryGetTransformTo(value: js.Any): Self = StObject.set(x, "tryGetTransformTo", value.asInstanceOf[js.Any])
+    inline def setTryGetTransformTo(value: js.Any): Self = StObject.set(x, "tryGetTransformTo", value.asInstanceOf[js.Any])
   }
 }

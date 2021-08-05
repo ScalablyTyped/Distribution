@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.XmlMap")
 @js.native
-class XmlMap protected ()
+/* private */ class XmlMap ()
   extends StObject
      with typings.activexExcel.Excel.XmlMap

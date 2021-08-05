@@ -13,16 +13,13 @@ trait TablePointInTimeRecovery extends StObject {
 }
 object TablePointInTimeRecovery {
   
-  @scala.inline
-  def apply(enabled: Boolean): TablePointInTimeRecovery = {
+  inline def apply(enabled: Boolean): TablePointInTimeRecovery = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[TablePointInTimeRecovery]
   }
   
-  @scala.inline
-  implicit class TablePointInTimeRecoveryMutableBuilder[Self <: TablePointInTimeRecovery] (val x: Self) extends AnyVal {
+  extension [Self <: TablePointInTimeRecovery](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }
 }

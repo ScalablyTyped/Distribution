@@ -84,8 +84,7 @@ object BulkAccess {
   }
   object IFileInformationFactoryFactory {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createWithMode: (IStorageQueryResultBase, ThumbnailMode) => FileInformationFactory,
       createWithModeAndSize: (IStorageQueryResultBase, ThumbnailMode, Double) => FileInformationFactory,
       createWithModeAndSizeAndOptions: (IStorageQueryResultBase, ThumbnailMode, Double, ThumbnailOptions) => FileInformationFactory,
@@ -95,22 +94,17 @@ object BulkAccess {
       __obj.asInstanceOf[IFileInformationFactoryFactory]
     }
     
-    @scala.inline
-    implicit class IFileInformationFactoryFactoryMutableBuilder[Self <: IFileInformationFactoryFactory] (val x: Self) extends AnyVal {
+    extension [Self <: IFileInformationFactoryFactory](x: Self) {
       
-      @scala.inline
-      def setCreateWithMode(value: (IStorageQueryResultBase, ThumbnailMode) => FileInformationFactory): Self = StObject.set(x, "createWithMode", js.Any.fromFunction2(value))
+      inline def setCreateWithMode(value: (IStorageQueryResultBase, ThumbnailMode) => FileInformationFactory): Self = StObject.set(x, "createWithMode", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCreateWithModeAndSize(value: (IStorageQueryResultBase, ThumbnailMode, Double) => FileInformationFactory): Self = StObject.set(x, "createWithModeAndSize", js.Any.fromFunction3(value))
+      inline def setCreateWithModeAndSize(value: (IStorageQueryResultBase, ThumbnailMode, Double) => FileInformationFactory): Self = StObject.set(x, "createWithModeAndSize", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setCreateWithModeAndSizeAndOptions(
+      inline def setCreateWithModeAndSizeAndOptions(
         value: (IStorageQueryResultBase, ThumbnailMode, Double, ThumbnailOptions) => FileInformationFactory
       ): Self = StObject.set(x, "createWithModeAndSizeAndOptions", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setCreateWithModeAndSizeAndOptionsAndFlags(
+      inline def setCreateWithModeAndSizeAndOptionsAndFlags(
         value: (IStorageQueryResultBase, ThumbnailMode, Double, ThumbnailOptions, Boolean) => FileInformationFactory
       ): Self = StObject.set(x, "createWithModeAndSizeAndOptionsAndFlags", js.Any.fromFunction5(value))
     }
@@ -136,8 +130,7 @@ object BulkAccess {
   }
   object IStorageItemInformation {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       basicProperties: BasicProperties,
       documentProperties: DocumentProperties,
       imageProperties: ImageProperties,
@@ -151,32 +144,23 @@ object BulkAccess {
       __obj.asInstanceOf[IStorageItemInformation]
     }
     
-    @scala.inline
-    implicit class IStorageItemInformationMutableBuilder[Self <: IStorageItemInformation] (val x: Self) extends AnyVal {
+    extension [Self <: IStorageItemInformation](x: Self) {
       
-      @scala.inline
-      def setBasicProperties(value: BasicProperties): Self = StObject.set(x, "basicProperties", value.asInstanceOf[js.Any])
+      inline def setBasicProperties(value: BasicProperties): Self = StObject.set(x, "basicProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentProperties(value: DocumentProperties): Self = StObject.set(x, "documentProperties", value.asInstanceOf[js.Any])
+      inline def setDocumentProperties(value: DocumentProperties): Self = StObject.set(x, "documentProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageProperties(value: ImageProperties): Self = StObject.set(x, "imageProperties", value.asInstanceOf[js.Any])
+      inline def setImageProperties(value: ImageProperties): Self = StObject.set(x, "imageProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMusicProperties(value: MusicProperties): Self = StObject.set(x, "musicProperties", value.asInstanceOf[js.Any])
+      inline def setMusicProperties(value: MusicProperties): Self = StObject.set(x, "musicProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnpropertiesupdated(value: js.Any): Self = StObject.set(x, "onpropertiesupdated", value.asInstanceOf[js.Any])
+      inline def setOnpropertiesupdated(value: js.Any): Self = StObject.set(x, "onpropertiesupdated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnthumbnailupdated(value: js.Any): Self = StObject.set(x, "onthumbnailupdated", value.asInstanceOf[js.Any])
+      inline def setOnthumbnailupdated(value: js.Any): Self = StObject.set(x, "onthumbnailupdated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnail(value: StorageItemThumbnail): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+      inline def setThumbnail(value: StorageItemThumbnail): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVideoProperties(value: VideoProperties): Self = StObject.set(x, "videoProperties", value.asInstanceOf[js.Any])
+      inline def setVideoProperties(value: VideoProperties): Self = StObject.set(x, "videoProperties", value.asInstanceOf[js.Any])
     }
   }
 }

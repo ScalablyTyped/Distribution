@@ -10,14 +10,10 @@ object fileUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createDirAndWriteFile(filePath: String, content: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDirAndWriteFile")(filePath.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def createDirAndWriteFile(filePath: String, content: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDirAndWriteFile")(filePath.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def readFileWithFallback(filePath: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readFileWithFallback")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def readFileWithFallback(filePath: String, fallbackContent: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileWithFallback")(filePath.asInstanceOf[js.Any], fallbackContent.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def readFileWithFallback(filePath: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readFileWithFallback")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def readFileWithFallback(filePath: String, fallbackContent: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileWithFallback")(filePath.asInstanceOf[js.Any], fallbackContent.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def removeFileIfExists(filePath: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFileIfExists")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def removeFileIfExists(filePath: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFileIfExists")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

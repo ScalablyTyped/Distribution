@@ -12,22 +12,17 @@ trait SegmentSubdivisionsOpt
 }
 object SegmentSubdivisionsOpt {
   
-  @scala.inline
-  def apply(): SegmentSubdivisionsOpt = {
+  inline def apply(): SegmentSubdivisionsOpt = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SegmentSubdivisionsOpt]
   }
   
-  @scala.inline
-  implicit class SegmentSubdivisionsOptMutableBuilder[Self <: SegmentSubdivisionsOpt] (val x: Self) extends AnyVal {
+  extension [Self <: SegmentSubdivisionsOpt](x: Self) {
     
-    @scala.inline
-    def setSegmentSubdivisions(value: js.Array[js.Array[Curve]]): Self = StObject.set(x, "segmentSubdivisions", value.asInstanceOf[js.Any])
+    inline def setSegmentSubdivisions(value: js.Array[js.Array[Curve]]): Self = StObject.set(x, "segmentSubdivisions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentSubdivisionsUndefined: Self = StObject.set(x, "segmentSubdivisions", js.undefined)
+    inline def setSegmentSubdivisionsUndefined: Self = StObject.set(x, "segmentSubdivisions", js.undefined)
     
-    @scala.inline
-    def setSegmentSubdivisionsVarargs(value: js.Array[Curve]*): Self = StObject.set(x, "segmentSubdivisions", js.Array(value :_*))
+    inline def setSegmentSubdivisionsVarargs(value: js.Array[Curve]*): Self = StObject.set(x, "segmentSubdivisions", js.Array(value :_*))
   }
 }

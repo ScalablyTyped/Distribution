@@ -58,8 +58,7 @@ trait XAccessibleTextMarkup
 }
 object XAccessibleTextMarkup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CaretPosition: Double,
     CharacterCount: Double,
     SelectedText: String,
@@ -94,16 +93,12 @@ object XAccessibleTextMarkup {
     __obj.asInstanceOf[XAccessibleTextMarkup]
   }
   
-  @scala.inline
-  implicit class XAccessibleTextMarkupMutableBuilder[Self <: XAccessibleTextMarkup] (val x: Self) extends AnyVal {
+  extension [Self <: XAccessibleTextMarkup](x: Self) {
     
-    @scala.inline
-    def setGetTextMarkup(value: (Double, Double) => TextSegment): Self = StObject.set(x, "getTextMarkup", js.Any.fromFunction2(value))
+    inline def setGetTextMarkup(value: (Double, Double) => TextSegment): Self = StObject.set(x, "getTextMarkup", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetTextMarkupAtIndex(value: (Double, Double) => SafeArray[TextSegment]): Self = StObject.set(x, "getTextMarkupAtIndex", js.Any.fromFunction2(value))
+    inline def setGetTextMarkupAtIndex(value: (Double, Double) => SafeArray[TextSegment]): Self = StObject.set(x, "getTextMarkupAtIndex", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetTextMarkupCount(value: Double => Double): Self = StObject.set(x, "getTextMarkupCount", js.Any.fromFunction1(value))
+    inline def setGetTextMarkupCount(value: Double => Double): Self = StObject.set(x, "getTextMarkupCount", js.Any.fromFunction1(value))
   }
 }

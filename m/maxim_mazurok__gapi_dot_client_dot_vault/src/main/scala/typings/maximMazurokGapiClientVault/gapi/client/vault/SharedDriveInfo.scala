@@ -11,22 +11,17 @@ trait SharedDriveInfo extends StObject {
 }
 object SharedDriveInfo {
   
-  @scala.inline
-  def apply(): SharedDriveInfo = {
+  inline def apply(): SharedDriveInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SharedDriveInfo]
   }
   
-  @scala.inline
-  implicit class SharedDriveInfoMutableBuilder[Self <: SharedDriveInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SharedDriveInfo](x: Self) {
     
-    @scala.inline
-    def setSharedDriveIds(value: js.Array[String]): Self = StObject.set(x, "sharedDriveIds", value.asInstanceOf[js.Any])
+    inline def setSharedDriveIds(value: js.Array[String]): Self = StObject.set(x, "sharedDriveIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedDriveIdsUndefined: Self = StObject.set(x, "sharedDriveIds", js.undefined)
+    inline def setSharedDriveIdsUndefined: Self = StObject.set(x, "sharedDriveIds", js.undefined)
     
-    @scala.inline
-    def setSharedDriveIdsVarargs(value: String*): Self = StObject.set(x, "sharedDriveIds", js.Array(value :_*))
+    inline def setSharedDriveIdsVarargs(value: String*): Self = StObject.set(x, "sharedDriveIds", js.Array(value :_*))
   }
 }

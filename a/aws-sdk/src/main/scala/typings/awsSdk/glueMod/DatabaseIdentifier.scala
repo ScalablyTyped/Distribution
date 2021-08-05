@@ -18,25 +18,19 @@ trait DatabaseIdentifier extends StObject {
 }
 object DatabaseIdentifier {
   
-  @scala.inline
-  def apply(): DatabaseIdentifier = {
+  inline def apply(): DatabaseIdentifier = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DatabaseIdentifier]
   }
   
-  @scala.inline
-  implicit class DatabaseIdentifierMutableBuilder[Self <: DatabaseIdentifier] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseIdentifier](x: Self) {
     
-    @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
+    inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
+    inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
-    @scala.inline
-    def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseNameUndefined: Self = StObject.set(x, "DatabaseName", js.undefined)
+    inline def setDatabaseNameUndefined: Self = StObject.set(x, "DatabaseName", js.undefined)
   }
 }

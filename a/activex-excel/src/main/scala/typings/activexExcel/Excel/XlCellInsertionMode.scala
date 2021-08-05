@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlCellInsertionMode extends StObject
 object XlCellInsertionMode {
   
-  @scala.inline
-  def xlInsertDeleteCells: `1` = 1.asInstanceOf[`1`]
+  inline def xlInsertDeleteCells: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlInsertEntireRows: `2` = 2.asInstanceOf[`2`]
+  inline def xlInsertEntireRows: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlOverwriteCells: `0` = 0.asInstanceOf[`0`]
+  inline def xlOverwriteCells: `0` = 0.asInstanceOf[`0`]
 }

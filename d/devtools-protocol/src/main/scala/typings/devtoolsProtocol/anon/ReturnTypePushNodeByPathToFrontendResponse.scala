@@ -14,8 +14,7 @@ trait ReturnTypePushNodeByPathToFrontendResponse extends StObject {
 }
 object ReturnTypePushNodeByPathToFrontendResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     paramsType: js.Array[PushNodeByPathToFrontendRequest],
     returnType: PushNodeByPathToFrontendResponse
   ): ReturnTypePushNodeByPathToFrontendResponse = {
@@ -23,16 +22,12 @@ object ReturnTypePushNodeByPathToFrontendResponse {
     __obj.asInstanceOf[ReturnTypePushNodeByPathToFrontendResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypePushNodeByPathToFrontendResponseMutableBuilder[Self <: ReturnTypePushNodeByPathToFrontendResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypePushNodeByPathToFrontendResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[PushNodeByPathToFrontendRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[PushNodeByPathToFrontendRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: PushNodeByPathToFrontendRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: PushNodeByPathToFrontendRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: PushNodeByPathToFrontendResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: PushNodeByPathToFrontendResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

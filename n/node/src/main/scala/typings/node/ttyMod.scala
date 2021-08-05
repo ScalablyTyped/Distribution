@@ -96,8 +96,7 @@ object ttyMod {
     var rows: Double = js.native
   }
   
-  @scala.inline
-  def isatty(fd: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isatty")(fd.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isatty(fd: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isatty")(fd.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * -1 - to the left from cursor
@@ -112,13 +111,10 @@ object ttyMod {
   trait Direction extends StObject
   object Direction {
     
-    @scala.inline
-    def `-1`: typings.node.nodeNumbers.`-1` = -1.asInstanceOf[typings.node.nodeNumbers.`-1`]
+    inline def `-1`: typings.node.nodeNumbers.`-1` = -1.asInstanceOf[typings.node.nodeNumbers.`-1`]
     
-    @scala.inline
-    def `0`: typings.node.nodeNumbers.`0` = 0.asInstanceOf[typings.node.nodeNumbers.`0`]
+    inline def `0`: typings.node.nodeNumbers.`0` = 0.asInstanceOf[typings.node.nodeNumbers.`0`]
     
-    @scala.inline
-    def `1`: typings.node.nodeNumbers.`1` = 1.asInstanceOf[typings.node.nodeNumbers.`1`]
+    inline def `1`: typings.node.nodeNumbers.`1` = 1.asInstanceOf[typings.node.nodeNumbers.`1`]
   }
 }

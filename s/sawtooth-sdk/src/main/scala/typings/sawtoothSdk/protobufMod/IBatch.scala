@@ -21,52 +21,37 @@ trait IBatch extends StObject {
 }
 object IBatch {
   
-  @scala.inline
-  def apply(): IBatch = {
+  inline def apply(): IBatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IBatch]
   }
   
-  @scala.inline
-  implicit class IBatchMutableBuilder[Self <: IBatch] (val x: Self) extends AnyVal {
+  extension [Self <: IBatch](x: Self) {
     
-    @scala.inline
-    def setHeader(value: Uint8Array): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: Uint8Array): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderNull: Self = StObject.set(x, "header", null)
+    inline def setHeaderNull: Self = StObject.set(x, "header", null)
     
-    @scala.inline
-    def setHeaderSignature(value: String): Self = StObject.set(x, "headerSignature", value.asInstanceOf[js.Any])
+    inline def setHeaderSignature(value: String): Self = StObject.set(x, "headerSignature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderSignatureNull: Self = StObject.set(x, "headerSignature", null)
+    inline def setHeaderSignatureNull: Self = StObject.set(x, "headerSignature", null)
     
-    @scala.inline
-    def setHeaderSignatureUndefined: Self = StObject.set(x, "headerSignature", js.undefined)
+    inline def setHeaderSignatureUndefined: Self = StObject.set(x, "headerSignature", js.undefined)
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setTrace(value: Boolean): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
+    inline def setTrace(value: Boolean): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraceNull: Self = StObject.set(x, "trace", null)
+    inline def setTraceNull: Self = StObject.set(x, "trace", null)
     
-    @scala.inline
-    def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
+    inline def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
     
-    @scala.inline
-    def setTransactions(value: js.Array[ITransaction]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
+    inline def setTransactions(value: js.Array[ITransaction]): Self = StObject.set(x, "transactions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransactionsNull: Self = StObject.set(x, "transactions", null)
+    inline def setTransactionsNull: Self = StObject.set(x, "transactions", null)
     
-    @scala.inline
-    def setTransactionsUndefined: Self = StObject.set(x, "transactions", js.undefined)
+    inline def setTransactionsUndefined: Self = StObject.set(x, "transactions", js.undefined)
     
-    @scala.inline
-    def setTransactionsVarargs(value: ITransaction*): Self = StObject.set(x, "transactions", js.Array(value :_*))
+    inline def setTransactionsVarargs(value: ITransaction*): Self = StObject.set(x, "transactions", js.Array(value :_*))
   }
 }

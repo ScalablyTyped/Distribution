@@ -16,8 +16,7 @@ trait CaseSwitchClause
 }
 object CaseSwitchClause {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -45,16 +44,12 @@ object CaseSwitchClause {
     __obj.asInstanceOf[CaseSwitchClause]
   }
   
-  @scala.inline
-  implicit class CaseSwitchClauseMutableBuilder[Self <: CaseSwitchClause] (val x: Self) extends AnyVal {
+  extension [Self <: CaseSwitchClause](x: Self) {
     
-    @scala.inline
-    def setExpression(value: AST): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: AST): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatements(value: ISyntaxList2): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
+    inline def setStatements(value: ISyntaxList2): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuralEquals(value: (CaseSwitchClause, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (CaseSwitchClause, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
   }
 }

@@ -38,55 +38,39 @@ trait IEventObject
 }
 object IEventObject {
   
-  @scala.inline
-  def apply(): IEventObject = {
+  inline def apply(): IEventObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IEventObject]
   }
   
-  @scala.inline
-  implicit class IEventObjectMutableBuilder[Self <: IEventObject] (val x: Self) extends AnyVal {
+  extension [Self <: IEventObject](x: Self) {
     
-    @scala.inline
-    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+    inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
-    @scala.inline
-    def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+    inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    @scala.inline
-    def setStopEvent(value: () => IEvent): Self = StObject.set(x, "stopEvent", js.Any.fromFunction0(value))
+    inline def setStopEvent(value: () => IEvent): Self = StObject.set(x, "stopEvent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStopEventUndefined: Self = StObject.set(x, "stopEvent", js.undefined)
+    inline def setStopEventUndefined: Self = StObject.set(x, "stopEvent", js.undefined)
     
-    @scala.inline
-    def setStopPropagation(value: () => IEvent): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
+    inline def setStopPropagation(value: () => IEvent): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStopPropagationUndefined: Self = StObject.set(x, "stopPropagation", js.undefined)
+    inline def setStopPropagationUndefined: Self = StObject.set(x, "stopPropagation", js.undefined)
   }
 }

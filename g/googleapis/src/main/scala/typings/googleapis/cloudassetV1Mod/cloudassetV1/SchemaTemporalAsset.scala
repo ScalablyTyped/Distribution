@@ -27,31 +27,23 @@ trait SchemaTemporalAsset extends StObject {
 }
 object SchemaTemporalAsset {
   
-  @scala.inline
-  def apply(): SchemaTemporalAsset = {
+  inline def apply(): SchemaTemporalAsset = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTemporalAsset]
   }
   
-  @scala.inline
-  implicit class SchemaTemporalAssetMutableBuilder[Self <: SchemaTemporalAsset] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTemporalAsset](x: Self) {
     
-    @scala.inline
-    def setAsset(value: SchemaAsset): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
+    inline def setAsset(value: SchemaAsset): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetUndefined: Self = StObject.set(x, "asset", js.undefined)
+    inline def setAssetUndefined: Self = StObject.set(x, "asset", js.undefined)
     
-    @scala.inline
-    def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+    inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
+    inline def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
     
-    @scala.inline
-    def setWindow(value: SchemaTimeWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+    inline def setWindow(value: SchemaTimeWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
+    inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
   }
 }

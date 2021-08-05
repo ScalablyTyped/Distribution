@@ -11,12 +11,8 @@ object bitsToStringMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(bits: js.Array[Bit]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(bits.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def default(bits: js.Array[Bit], spacing: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(bits.asInstanceOf[js.Any], spacing.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def default(bits: js.Array[Bit], spacing: Double, spacer: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(bits.asInstanceOf[js.Any], spacing.asInstanceOf[js.Any], spacer.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def default(bits: js.Array[Bit], spacing: Unit, spacer: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(bits.asInstanceOf[js.Any], spacing.asInstanceOf[js.Any], spacer.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(bits: js.Array[Bit]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(bits.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(bits: js.Array[Bit], spacing: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(bits.asInstanceOf[js.Any], spacing.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(bits: js.Array[Bit], spacing: Double, spacer: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(bits.asInstanceOf[js.Any], spacing.asInstanceOf[js.Any], spacer.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(bits: js.Array[Bit], spacing: Unit, spacer: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(bits.asInstanceOf[js.Any], spacing.asInstanceOf[js.Any], spacer.asInstanceOf[js.Any])).asInstanceOf[String]
 }

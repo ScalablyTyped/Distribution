@@ -87,8 +87,7 @@ trait ASPxClientButton
 }
 object ASPxClientButton {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     CheckedChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientButton]],
     Click: ASPxClientEvent[ASPxClientButtonClickEventHandler[ASPxClientButton]],
@@ -123,49 +122,34 @@ object ASPxClientButton {
     __obj.asInstanceOf[ASPxClientButton]
   }
   
-  @scala.inline
-  implicit class ASPxClientButtonMutableBuilder[Self <: ASPxClientButton] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientButton](x: Self) {
     
-    @scala.inline
-    def setCheckedChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientButton]]): Self = StObject.set(x, "CheckedChanged", value.asInstanceOf[js.Any])
+    inline def setCheckedChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientButton]]): Self = StObject.set(x, "CheckedChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClick(value: ASPxClientEvent[ASPxClientButtonClickEventHandler[ASPxClientButton]]): Self = StObject.set(x, "Click", value.asInstanceOf[js.Any])
+    inline def setClick(value: ASPxClientEvent[ASPxClientButtonClickEventHandler[ASPxClientButton]]): Self = StObject.set(x, "Click", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoClick(value: () => Unit): Self = StObject.set(x, "DoClick", js.Any.fromFunction0(value))
+    inline def setDoClick(value: () => Unit): Self = StObject.set(x, "DoClick", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFocus(value: () => Unit): Self = StObject.set(x, "Focus", js.Any.fromFunction0(value))
+    inline def setFocus(value: () => Unit): Self = StObject.set(x, "Focus", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetChecked(value: () => Boolean): Self = StObject.set(x, "GetChecked", js.Any.fromFunction0(value))
+    inline def setGetChecked(value: () => Boolean): Self = StObject.set(x, "GetChecked", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEnabled(value: () => Boolean): Self = StObject.set(x, "GetEnabled", js.Any.fromFunction0(value))
+    inline def setGetEnabled(value: () => Boolean): Self = StObject.set(x, "GetEnabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetImageUrl(value: () => String): Self = StObject.set(x, "GetImageUrl", js.Any.fromFunction0(value))
+    inline def setGetImageUrl(value: () => String): Self = StObject.set(x, "GetImageUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetText(value: () => String): Self = StObject.set(x, "GetText", js.Any.fromFunction0(value))
+    inline def setGetText(value: () => String): Self = StObject.set(x, "GetText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGotFocus(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientButton]]): Self = StObject.set(x, "GotFocus", value.asInstanceOf[js.Any])
+    inline def setGotFocus(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientButton]]): Self = StObject.set(x, "GotFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLostFocus(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientButton]]): Self = StObject.set(x, "LostFocus", value.asInstanceOf[js.Any])
+    inline def setLostFocus(value: ASPxClientEvent[ASPxClientEventHandler[ASPxClientButton]]): Self = StObject.set(x, "LostFocus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetChecked(value: Boolean => Unit): Self = StObject.set(x, "SetChecked", js.Any.fromFunction1(value))
+    inline def setSetChecked(value: Boolean => Unit): Self = StObject.set(x, "SetChecked", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetEnabled(value: Boolean => Unit): Self = StObject.set(x, "SetEnabled", js.Any.fromFunction1(value))
+    inline def setSetEnabled(value: Boolean => Unit): Self = StObject.set(x, "SetEnabled", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetImageUrl(value: String => Unit): Self = StObject.set(x, "SetImageUrl", js.Any.fromFunction1(value))
+    inline def setSetImageUrl(value: String => Unit): Self = StObject.set(x, "SetImageUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetText(value: String => Unit): Self = StObject.set(x, "SetText", js.Any.fromFunction1(value))
+    inline def setSetText(value: String => Unit): Self = StObject.set(x, "SetText", js.Any.fromFunction1(value))
   }
 }

@@ -437,17 +437,14 @@ object InstallControl {
   }
   object AppInstallManagerItemEventArgs {
     
-    @scala.inline
-    def apply(item: AppInstallItem): AppInstallManagerItemEventArgs = {
+    inline def apply(item: AppInstallItem): AppInstallManagerItemEventArgs = {
       val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppInstallManagerItemEventArgs]
     }
     
-    @scala.inline
-    implicit class AppInstallManagerItemEventArgsMutableBuilder[Self <: AppInstallManagerItemEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: AppInstallManagerItemEventArgs](x: Self) {
       
-      @scala.inline
-      def setItem(value: AppInstallItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: AppInstallItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     }
   }
   
@@ -471,8 +468,7 @@ object InstallControl {
   }
   object AppInstallStatus {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bytesDownloaded: Double,
       downloadSizeInBytes: Double,
       errorCode: WinRTError,
@@ -483,23 +479,17 @@ object InstallControl {
       __obj.asInstanceOf[AppInstallStatus]
     }
     
-    @scala.inline
-    implicit class AppInstallStatusMutableBuilder[Self <: AppInstallStatus] (val x: Self) extends AnyVal {
+    extension [Self <: AppInstallStatus](x: Self) {
       
-      @scala.inline
-      def setBytesDownloaded(value: Double): Self = StObject.set(x, "bytesDownloaded", value.asInstanceOf[js.Any])
+      inline def setBytesDownloaded(value: Double): Self = StObject.set(x, "bytesDownloaded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDownloadSizeInBytes(value: Double): Self = StObject.set(x, "downloadSizeInBytes", value.asInstanceOf[js.Any])
+      inline def setDownloadSizeInBytes(value: Double): Self = StObject.set(x, "downloadSizeInBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorCode(value: WinRTError): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+      inline def setErrorCode(value: WinRTError): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstallState(value: AppInstallState): Self = StObject.set(x, "installState", value.asInstanceOf[js.Any])
+      inline def setInstallState(value: AppInstallState): Self = StObject.set(x, "installState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercentComplete(value: Double): Self = StObject.set(x, "percentComplete", value.asInstanceOf[js.Any])
+      inline def setPercentComplete(value: Double): Self = StObject.set(x, "percentComplete", value.asInstanceOf[js.Any])
     }
   }
 }

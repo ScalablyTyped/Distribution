@@ -15,16 +15,13 @@ trait PickImplonComplete extends StObject {
 }
 object PickImplonComplete {
   
-  @scala.inline
-  def apply(onComplete: (/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[js.Any]) => Unit): PickImplonComplete = {
+  inline def apply(onComplete: (/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[js.Any]) => Unit): PickImplonComplete = {
     val __obj = js.Dynamic.literal(onComplete = js.Any.fromFunction3(onComplete))
     __obj.asInstanceOf[PickImplonComplete]
   }
   
-  @scala.inline
-  implicit class PickImplonCompleteMutableBuilder[Self <: PickImplonComplete] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplonComplete](x: Self) {
     
-    @scala.inline
-    def setOnComplete(value: (/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[js.Any]) => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction3(value))
+    inline def setOnComplete(value: (/* response */ js.Any, /* element */ JQuery, /* xhr */ jqXHR[js.Any]) => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction3(value))
   }
 }

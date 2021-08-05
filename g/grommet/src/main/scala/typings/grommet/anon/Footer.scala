@@ -16,37 +16,27 @@ trait Footer extends StObject {
 }
 object Footer {
   
-  @scala.inline
-  def apply(): Footer = {
+  inline def apply(): Footer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Footer]
   }
   
-  @scala.inline
-  implicit class FooterMutableBuilder[Self <: Footer] (val x: Self) extends AnyVal {
+  extension [Self <: Footer](x: Self) {
     
-    @scala.inline
-    def setBody(value: AlignBackground): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: AlignBackground): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setFooter(value: VerticalAlign): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+    inline def setFooter(value: VerticalAlign): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+    inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
     
-    @scala.inline
-    def setHeader(value: Align): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: Align): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setRow(value: `20`): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: `20`): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+    inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
   }
 }

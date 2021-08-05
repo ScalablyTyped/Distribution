@@ -13,17 +13,14 @@ trait LaunchTemplateElasticInferenceAccelerator extends StObject {
 }
 object LaunchTemplateElasticInferenceAccelerator {
   
-  @scala.inline
-  def apply(`type`: String): LaunchTemplateElasticInferenceAccelerator = {
+  inline def apply(`type`: String): LaunchTemplateElasticInferenceAccelerator = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchTemplateElasticInferenceAccelerator]
   }
   
-  @scala.inline
-  implicit class LaunchTemplateElasticInferenceAcceleratorMutableBuilder[Self <: LaunchTemplateElasticInferenceAccelerator] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchTemplateElasticInferenceAccelerator](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

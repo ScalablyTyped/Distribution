@@ -10,6 +10,5 @@ object getPercentageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getPercentage(min: Double, max: Double, value: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPercentage")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getPercentage(min: Double, max: Double, value: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPercentage")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

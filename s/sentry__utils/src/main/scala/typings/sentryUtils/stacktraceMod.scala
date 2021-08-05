@@ -10,6 +10,5 @@ object stacktraceMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getFunctionName(fn: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFunctionName")(fn.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getFunctionName(fn: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFunctionName")(fn.asInstanceOf[js.Any]).asInstanceOf[String]
 }

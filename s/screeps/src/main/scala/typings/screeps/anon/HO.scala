@@ -12,19 +12,15 @@ trait HO extends StObject {
 }
 object HO {
   
-  @scala.inline
-  def apply(): HO = {
+  inline def apply(): HO = {
     val __obj = js.Dynamic.literal(H = "GH", O = "GO")
     __obj.asInstanceOf[HO]
   }
   
-  @scala.inline
-  implicit class HOMutableBuilder[Self <: HO] (val x: Self) extends AnyVal {
+  extension [Self <: HO](x: Self) {
     
-    @scala.inline
-    def setH(value: typings.screeps.screepsStrings.GH): Self = StObject.set(x, "H", value.asInstanceOf[js.Any])
+    inline def setH(value: typings.screeps.screepsStrings.GH): Self = StObject.set(x, "H", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setO(value: typings.screeps.screepsStrings.GO): Self = StObject.set(x, "O", value.asInstanceOf[js.Any])
+    inline def setO(value: typings.screeps.screepsStrings.GO): Self = StObject.set(x, "O", value.asInstanceOf[js.Any])
   }
 }

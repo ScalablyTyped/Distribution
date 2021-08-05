@@ -39,37 +39,27 @@ trait ParamsResourceProjectsDatabasesDocumentsDelete
 }
 object ParamsResourceProjectsDatabasesDocumentsDelete {
   
-  @scala.inline
-  def apply(): ParamsResourceProjectsDatabasesDocumentsDelete = {
+  inline def apply(): ParamsResourceProjectsDatabasesDocumentsDelete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceProjectsDatabasesDocumentsDelete]
   }
   
-  @scala.inline
-  implicit class ParamsResourceProjectsDatabasesDocumentsDeleteMutableBuilder[Self <: ParamsResourceProjectsDatabasesDocumentsDelete] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceProjectsDatabasesDocumentsDelete](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCurrentDocumentDotexists(value: Boolean): Self = StObject.set(x, "currentDocument.exists", value.asInstanceOf[js.Any])
+    inline def setCurrentDocumentDotexists(value: Boolean): Self = StObject.set(x, "currentDocument.exists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentDocumentDotexistsUndefined: Self = StObject.set(x, "currentDocument.exists", js.undefined)
+    inline def setCurrentDocumentDotexistsUndefined: Self = StObject.set(x, "currentDocument.exists", js.undefined)
     
-    @scala.inline
-    def setCurrentDocumentDotupdateTime(value: String): Self = StObject.set(x, "currentDocument.updateTime", value.asInstanceOf[js.Any])
+    inline def setCurrentDocumentDotupdateTime(value: String): Self = StObject.set(x, "currentDocument.updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentDocumentDotupdateTimeUndefined: Self = StObject.set(x, "currentDocument.updateTime", js.undefined)
+    inline def setCurrentDocumentDotupdateTimeUndefined: Self = StObject.set(x, "currentDocument.updateTime", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

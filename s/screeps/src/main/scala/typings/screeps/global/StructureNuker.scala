@@ -135,6 +135,5 @@ class StructureNuker protected ()
 }
 object StructureNuker {
   
-  @scala.inline
-  def apply: StructureNukerConstructor = js.Dynamic.global.selectDynamic("StructureNuker").asInstanceOf[StructureNukerConstructor]
+  inline def apply: StructureNukerConstructor = js.Dynamic.global.selectDynamic("StructureNuker").asInstanceOf[StructureNukerConstructor]
 }

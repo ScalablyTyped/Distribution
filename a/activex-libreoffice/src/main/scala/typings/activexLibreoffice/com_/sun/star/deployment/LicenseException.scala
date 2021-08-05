@@ -29,22 +29,17 @@ trait LicenseException
 }
 object LicenseException {
   
-  @scala.inline
-  def apply(AcceptBy: String, Context: XInterface, ExtensionName: String, Message: String, Text: String): LicenseException = {
+  inline def apply(AcceptBy: String, Context: XInterface, ExtensionName: String, Message: String, Text: String): LicenseException = {
     val __obj = js.Dynamic.literal(AcceptBy = AcceptBy.asInstanceOf[js.Any], Context = Context.asInstanceOf[js.Any], ExtensionName = ExtensionName.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], Text = Text.asInstanceOf[js.Any])
     __obj.asInstanceOf[LicenseException]
   }
   
-  @scala.inline
-  implicit class LicenseExceptionMutableBuilder[Self <: LicenseException] (val x: Self) extends AnyVal {
+  extension [Self <: LicenseException](x: Self) {
     
-    @scala.inline
-    def setAcceptBy(value: String): Self = StObject.set(x, "AcceptBy", value.asInstanceOf[js.Any])
+    inline def setAcceptBy(value: String): Self = StObject.set(x, "AcceptBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionName(value: String): Self = StObject.set(x, "ExtensionName", value.asInstanceOf[js.Any])
+    inline def setExtensionName(value: String): Self = StObject.set(x, "ExtensionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "Text", value.asInstanceOf[js.Any])
   }
 }

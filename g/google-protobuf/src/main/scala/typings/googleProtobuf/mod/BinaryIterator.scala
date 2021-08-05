@@ -40,28 +40,20 @@ object BinaryIterator {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def alloc(): BinaryIterator = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")().asInstanceOf[BinaryIterator]
-  @scala.inline
-  def alloc(decoder: Unit, next: js.Function0[Double | Boolean | String | Null]): BinaryIterator = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(decoder.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[BinaryIterator]
-  @scala.inline
-  def alloc(
+  inline def alloc(): BinaryIterator = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")().asInstanceOf[BinaryIterator]
+  inline def alloc(decoder: Unit, next: js.Function0[Double | Boolean | String | Null]): BinaryIterator = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(decoder.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[BinaryIterator]
+  inline def alloc(
     decoder: Unit,
     next: js.Function0[Double | Boolean | String | Null],
     elements: js.Array[Double | Boolean | String]
   ): BinaryIterator = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(decoder.asInstanceOf[js.Any], next.asInstanceOf[js.Any], elements.asInstanceOf[js.Any])).asInstanceOf[BinaryIterator]
-  @scala.inline
-  def alloc(decoder: Unit, next: Unit, elements: js.Array[Double | Boolean | String]): BinaryIterator = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(decoder.asInstanceOf[js.Any], next.asInstanceOf[js.Any], elements.asInstanceOf[js.Any])).asInstanceOf[BinaryIterator]
-  @scala.inline
-  def alloc(decoder: BinaryDecoder): BinaryIterator = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(decoder.asInstanceOf[js.Any]).asInstanceOf[BinaryIterator]
-  @scala.inline
-  def alloc(decoder: BinaryDecoder, next: js.Function0[Double | Boolean | String | Null]): BinaryIterator = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(decoder.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[BinaryIterator]
-  @scala.inline
-  def alloc(
+  inline def alloc(decoder: Unit, next: Unit, elements: js.Array[Double | Boolean | String]): BinaryIterator = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(decoder.asInstanceOf[js.Any], next.asInstanceOf[js.Any], elements.asInstanceOf[js.Any])).asInstanceOf[BinaryIterator]
+  inline def alloc(decoder: BinaryDecoder): BinaryIterator = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(decoder.asInstanceOf[js.Any]).asInstanceOf[BinaryIterator]
+  inline def alloc(decoder: BinaryDecoder, next: js.Function0[Double | Boolean | String | Null]): BinaryIterator = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(decoder.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[BinaryIterator]
+  inline def alloc(
     decoder: BinaryDecoder,
     next: js.Function0[Double | Boolean | String | Null],
     elements: js.Array[Double | Boolean | String]
   ): BinaryIterator = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(decoder.asInstanceOf[js.Any], next.asInstanceOf[js.Any], elements.asInstanceOf[js.Any])).asInstanceOf[BinaryIterator]
-  @scala.inline
-  def alloc(decoder: BinaryDecoder, next: Unit, elements: js.Array[Double | Boolean | String]): BinaryIterator = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(decoder.asInstanceOf[js.Any], next.asInstanceOf[js.Any], elements.asInstanceOf[js.Any])).asInstanceOf[BinaryIterator]
+  inline def alloc(decoder: BinaryDecoder, next: Unit, elements: js.Array[Double | Boolean | String]): BinaryIterator = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(decoder.asInstanceOf[js.Any], next.asInstanceOf[js.Any], elements.asInstanceOf[js.Any])).asInstanceOf[BinaryIterator]
 }

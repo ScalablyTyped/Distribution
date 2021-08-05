@@ -13,17 +13,14 @@ object typesNoSuchUploadMod {
   }
   object NoSuchUpload {
     
-    @scala.inline
-    def apply(): NoSuchUpload = {
+    inline def apply(): NoSuchUpload = {
       val __obj = js.Dynamic.literal(name = "NoSuchUpload")
       __obj.asInstanceOf[NoSuchUpload]
     }
     
-    @scala.inline
-    implicit class NoSuchUploadMutableBuilder[Self <: NoSuchUpload] (val x: Self) extends AnyVal {
+    extension [Self <: NoSuchUpload](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.NoSuchUpload): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.NoSuchUpload): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

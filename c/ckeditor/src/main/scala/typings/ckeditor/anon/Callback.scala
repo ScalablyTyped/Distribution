@@ -14,31 +14,23 @@ trait Callback extends StObject {
 }
 object Callback {
   
-  @scala.inline
-  def apply(): Callback = {
+  inline def apply(): Callback = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Callback]
   }
   
-  @scala.inline
-  implicit class CallbackMutableBuilder[Self <: Callback] (val x: Self) extends AnyVal {
+  extension [Self <: Callback](x: Self) {
     
-    @scala.inline
-    def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+    inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    @scala.inline
-    def setInternal(value: Boolean): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
+    inline def setInternal(value: Boolean): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternalUndefined: Self = StObject.set(x, "internal", js.undefined)
+    inline def setInternalUndefined: Self = StObject.set(x, "internal", js.undefined)
     
-    @scala.inline
-    def setNoSnapshot(value: Boolean): Self = StObject.set(x, "noSnapshot", value.asInstanceOf[js.Any])
+    inline def setNoSnapshot(value: Boolean): Self = StObject.set(x, "noSnapshot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoSnapshotUndefined: Self = StObject.set(x, "noSnapshot", js.undefined)
+    inline def setNoSnapshotUndefined: Self = StObject.set(x, "noSnapshot", js.undefined)
   }
 }

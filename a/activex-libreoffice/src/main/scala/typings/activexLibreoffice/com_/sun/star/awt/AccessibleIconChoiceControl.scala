@@ -27,8 +27,7 @@ trait AccessibleIconChoiceControl
      with XAccessibleSelection
 object AccessibleIconChoiceControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleChildCount: Double,
     AccessibleDescription: String,
     AccessibleIndexInParent: Double,

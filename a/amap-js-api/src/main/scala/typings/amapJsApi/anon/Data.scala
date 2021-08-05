@@ -18,19 +18,15 @@ trait Data[I] extends StObject {
 }
 object Data {
   
-  @scala.inline
-  def apply[I](data: typings.amapJsApi.AMap.MassMarks.Data, target: I): Data[I] = {
+  inline def apply[I](data: typings.amapJsApi.AMap.MassMarks.Data, target: I): Data[I] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[Data[I]]
   }
   
-  @scala.inline
-  implicit class DataMutableBuilder[Self <: Data[?], I] (val x: Self & Data[I]) extends AnyVal {
+  extension [Self <: Data[?], I](x: Self & Data[I]) {
     
-    @scala.inline
-    def setData(value: typings.amapJsApi.AMap.MassMarks.Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: typings.amapJsApi.AMap.MassMarks.Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: I): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: I): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

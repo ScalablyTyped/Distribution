@@ -26,43 +26,31 @@ trait GoogleIdentityAccesscontextmanagerV1AccessLevel extends StObject {
 }
 object GoogleIdentityAccesscontextmanagerV1AccessLevel {
   
-  @scala.inline
-  def apply(): GoogleIdentityAccesscontextmanagerV1AccessLevel = {
+  inline def apply(): GoogleIdentityAccesscontextmanagerV1AccessLevel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleIdentityAccesscontextmanagerV1AccessLevel]
   }
   
-  @scala.inline
-  implicit class GoogleIdentityAccesscontextmanagerV1AccessLevelMutableBuilder[Self <: GoogleIdentityAccesscontextmanagerV1AccessLevel] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleIdentityAccesscontextmanagerV1AccessLevel](x: Self) {
     
-    @scala.inline
-    def setBasic(value: GoogleIdentityAccesscontextmanagerV1BasicLevel): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
+    inline def setBasic(value: GoogleIdentityAccesscontextmanagerV1BasicLevel): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasicUndefined: Self = StObject.set(x, "basic", js.undefined)
+    inline def setBasicUndefined: Self = StObject.set(x, "basic", js.undefined)
     
-    @scala.inline
-    def setCustom(value: GoogleIdentityAccesscontextmanagerV1CustomLevel): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    inline def setCustom(value: GoogleIdentityAccesscontextmanagerV1CustomLevel): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
+    inline def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

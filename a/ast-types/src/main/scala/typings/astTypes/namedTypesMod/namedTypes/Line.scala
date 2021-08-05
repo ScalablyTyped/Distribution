@@ -22,10 +22,8 @@ object Line {
   @js.native
   val ^ : Type[Line] = js.native
   
-  @scala.inline
-  implicit class LineMutableBuilder[Self <: Line] (val x: Self) extends AnyVal {
+  extension [Self <: Line](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.astTypes.astTypesStrings.Line): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.astTypes.astTypesStrings.Line): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

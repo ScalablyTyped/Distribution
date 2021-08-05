@@ -16,8 +16,7 @@ trait ExcelBorders extends StObject {
 }
 object ExcelBorders {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     borderBottom: ExcelBorder,
     borderLeft: ExcelBorder,
     borderRight: ExcelBorder,
@@ -27,19 +26,14 @@ object ExcelBorders {
     __obj.asInstanceOf[ExcelBorders]
   }
   
-  @scala.inline
-  implicit class ExcelBordersMutableBuilder[Self <: ExcelBorders] (val x: Self) extends AnyVal {
+  extension [Self <: ExcelBorders](x: Self) {
     
-    @scala.inline
-    def setBorderBottom(value: ExcelBorder): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
+    inline def setBorderBottom(value: ExcelBorder): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderLeft(value: ExcelBorder): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
+    inline def setBorderLeft(value: ExcelBorder): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderRight(value: ExcelBorder): Self = StObject.set(x, "borderRight", value.asInstanceOf[js.Any])
+    inline def setBorderRight(value: ExcelBorder): Self = StObject.set(x, "borderRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderTop(value: ExcelBorder): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])
+    inline def setBorderTop(value: ExcelBorder): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])
   }
 }

@@ -12,11 +12,9 @@ object typesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isSyncTransform[I /* <: Row[js.Any] */, O /* <: Row[js.Any] */](transform: RowTransformFunction[I, O]): /* is @fast-csv/parse.@fast-csv/parse/build/src/types.SyncRowTransform<I, O> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSyncTransform")(transform.asInstanceOf[js.Any]).asInstanceOf[/* is @fast-csv/parse.@fast-csv/parse/build/src/types.SyncRowTransform<I, O> */ Boolean]
+  inline def isSyncTransform[I /* <: Row[js.Any] */, O /* <: Row[js.Any] */](transform: RowTransformFunction[I, O]): /* is @fast-csv/parse.@fast-csv/parse/build/src/types.SyncRowTransform<I, O> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSyncTransform")(transform.asInstanceOf[js.Any]).asInstanceOf[/* is @fast-csv/parse.@fast-csv/parse/build/src/types.SyncRowTransform<I, O> */ Boolean]
   
-  @scala.inline
-  def isSyncValidate[R /* <: Row[js.Any] */](validate: RowValidate[R]): /* is @fast-csv/parse.@fast-csv/parse/build/src/types.SyncRowValidate<R> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSyncValidate")(validate.asInstanceOf[js.Any]).asInstanceOf[/* is @fast-csv/parse.@fast-csv/parse/build/src/types.SyncRowValidate<R> */ Boolean]
+  inline def isSyncValidate[R /* <: Row[js.Any] */](validate: RowValidate[R]): /* is @fast-csv/parse.@fast-csv/parse/build/src/types.SyncRowValidate<R> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSyncValidate")(validate.asInstanceOf[js.Any]).asInstanceOf[/* is @fast-csv/parse.@fast-csv/parse/build/src/types.SyncRowValidate<R> */ Boolean]
   
   type AsyncRowTransform[I /* <: Row[js.Any] */, O /* <: Row[js.Any] */] = js.Function2[/* row */ I, /* cb */ RowTransformCallback[O], Unit]
   
@@ -55,29 +53,22 @@ object typesMod {
   }
   object RowValidationResult {
     
-    @scala.inline
-    def apply[R /* <: Row[js.Any] */](isValid: Boolean): RowValidationResult[R] = {
+    inline def apply[R /* <: Row[js.Any] */](isValid: Boolean): RowValidationResult[R] = {
       val __obj = js.Dynamic.literal(isValid = isValid.asInstanceOf[js.Any], row = null)
       __obj.asInstanceOf[RowValidationResult[R]]
     }
     
-    @scala.inline
-    implicit class RowValidationResultMutableBuilder[Self <: RowValidationResult[?], R /* <: Row[js.Any] */] (val x: Self & RowValidationResult[R]) extends AnyVal {
+    extension [Self <: RowValidationResult[?], R /* <: Row[js.Any] */](x: Self & RowValidationResult[R]) {
       
-      @scala.inline
-      def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+      inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+      inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
       
-      @scala.inline
-      def setRow(value: R): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      inline def setRow(value: R): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowNull: Self = StObject.set(x, "row", null)
+      inline def setRowNull: Self = StObject.set(x, "row", null)
     }
   }
   

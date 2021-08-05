@@ -41,61 +41,43 @@ trait VacationSettings extends StObject {
 }
 object VacationSettings {
   
-  @scala.inline
-  def apply(): VacationSettings = {
+  inline def apply(): VacationSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VacationSettings]
   }
   
-  @scala.inline
-  implicit class VacationSettingsMutableBuilder[Self <: VacationSettings] (val x: Self) extends AnyVal {
+  extension [Self <: VacationSettings](x: Self) {
     
-    @scala.inline
-    def setEnableAutoReply(value: Boolean): Self = StObject.set(x, "enableAutoReply", value.asInstanceOf[js.Any])
+    inline def setEnableAutoReply(value: Boolean): Self = StObject.set(x, "enableAutoReply", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableAutoReplyUndefined: Self = StObject.set(x, "enableAutoReply", js.undefined)
+    inline def setEnableAutoReplyUndefined: Self = StObject.set(x, "enableAutoReply", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setResponseBodyHtml(value: String): Self = StObject.set(x, "responseBodyHtml", value.asInstanceOf[js.Any])
+    inline def setResponseBodyHtml(value: String): Self = StObject.set(x, "responseBodyHtml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseBodyHtmlUndefined: Self = StObject.set(x, "responseBodyHtml", js.undefined)
+    inline def setResponseBodyHtmlUndefined: Self = StObject.set(x, "responseBodyHtml", js.undefined)
     
-    @scala.inline
-    def setResponseBodyPlainText(value: String): Self = StObject.set(x, "responseBodyPlainText", value.asInstanceOf[js.Any])
+    inline def setResponseBodyPlainText(value: String): Self = StObject.set(x, "responseBodyPlainText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseBodyPlainTextUndefined: Self = StObject.set(x, "responseBodyPlainText", js.undefined)
+    inline def setResponseBodyPlainTextUndefined: Self = StObject.set(x, "responseBodyPlainText", js.undefined)
     
-    @scala.inline
-    def setResponseSubject(value: String): Self = StObject.set(x, "responseSubject", value.asInstanceOf[js.Any])
+    inline def setResponseSubject(value: String): Self = StObject.set(x, "responseSubject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseSubjectUndefined: Self = StObject.set(x, "responseSubject", js.undefined)
+    inline def setResponseSubjectUndefined: Self = StObject.set(x, "responseSubject", js.undefined)
     
-    @scala.inline
-    def setRestrictToContacts(value: Boolean): Self = StObject.set(x, "restrictToContacts", value.asInstanceOf[js.Any])
+    inline def setRestrictToContacts(value: Boolean): Self = StObject.set(x, "restrictToContacts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictToContactsUndefined: Self = StObject.set(x, "restrictToContacts", js.undefined)
+    inline def setRestrictToContactsUndefined: Self = StObject.set(x, "restrictToContacts", js.undefined)
     
-    @scala.inline
-    def setRestrictToDomain(value: Boolean): Self = StObject.set(x, "restrictToDomain", value.asInstanceOf[js.Any])
+    inline def setRestrictToDomain(value: Boolean): Self = StObject.set(x, "restrictToDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictToDomainUndefined: Self = StObject.set(x, "restrictToDomain", js.undefined)
+    inline def setRestrictToDomainUndefined: Self = StObject.set(x, "restrictToDomain", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

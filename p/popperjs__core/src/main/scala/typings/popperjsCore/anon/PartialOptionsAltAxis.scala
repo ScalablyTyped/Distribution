@@ -30,67 +30,47 @@ trait PartialOptionsAltAxis extends StObject {
 }
 object PartialOptionsAltAxis {
   
-  @scala.inline
-  def apply(): PartialOptionsAltAxis = {
+  inline def apply(): PartialOptionsAltAxis = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialOptionsAltAxis]
   }
   
-  @scala.inline
-  implicit class PartialOptionsAltAxisMutableBuilder[Self <: PartialOptionsAltAxis] (val x: Self) extends AnyVal {
+  extension [Self <: PartialOptionsAltAxis](x: Self) {
     
-    @scala.inline
-    def setAltAxis(value: Boolean): Self = StObject.set(x, "altAxis", value.asInstanceOf[js.Any])
+    inline def setAltAxis(value: Boolean): Self = StObject.set(x, "altAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltAxisUndefined: Self = StObject.set(x, "altAxis", js.undefined)
+    inline def setAltAxisUndefined: Self = StObject.set(x, "altAxis", js.undefined)
     
-    @scala.inline
-    def setAltBoundary(value: Boolean): Self = StObject.set(x, "altBoundary", value.asInstanceOf[js.Any])
+    inline def setAltBoundary(value: Boolean): Self = StObject.set(x, "altBoundary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltBoundaryUndefined: Self = StObject.set(x, "altBoundary", js.undefined)
+    inline def setAltBoundaryUndefined: Self = StObject.set(x, "altBoundary", js.undefined)
     
-    @scala.inline
-    def setBoundary(value: Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
+    inline def setBoundary(value: Boundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
+    inline def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
     
-    @scala.inline
-    def setBoundaryVarargs(value: HTMLElement*): Self = StObject.set(x, "boundary", js.Array(value :_*))
+    inline def setBoundaryVarargs(value: HTMLElement*): Self = StObject.set(x, "boundary", js.Array(value :_*))
     
-    @scala.inline
-    def setMainAxis(value: Boolean): Self = StObject.set(x, "mainAxis", value.asInstanceOf[js.Any])
+    inline def setMainAxis(value: Boolean): Self = StObject.set(x, "mainAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMainAxisUndefined: Self = StObject.set(x, "mainAxis", js.undefined)
+    inline def setMainAxisUndefined: Self = StObject.set(x, "mainAxis", js.undefined)
     
-    @scala.inline
-    def setPadding(value: Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    @scala.inline
-    def setRootBoundary(value: RootBoundary): Self = StObject.set(x, "rootBoundary", value.asInstanceOf[js.Any])
+    inline def setRootBoundary(value: RootBoundary): Self = StObject.set(x, "rootBoundary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootBoundaryUndefined: Self = StObject.set(x, "rootBoundary", js.undefined)
+    inline def setRootBoundaryUndefined: Self = StObject.set(x, "rootBoundary", js.undefined)
     
-    @scala.inline
-    def setTether(value: Boolean): Self = StObject.set(x, "tether", value.asInstanceOf[js.Any])
+    inline def setTether(value: Boolean): Self = StObject.set(x, "tether", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTetherOffset(value: TetherOffset): Self = StObject.set(x, "tetherOffset", value.asInstanceOf[js.Any])
+    inline def setTetherOffset(value: TetherOffset): Self = StObject.set(x, "tetherOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTetherOffsetFunction1(value: /* arg0 */ Placement => Double): Self = StObject.set(x, "tetherOffset", js.Any.fromFunction1(value))
+    inline def setTetherOffsetFunction1(value: /* arg0 */ Placement => Double): Self = StObject.set(x, "tetherOffset", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTetherOffsetUndefined: Self = StObject.set(x, "tetherOffset", js.undefined)
+    inline def setTetherOffsetUndefined: Self = StObject.set(x, "tetherOffset", js.undefined)
     
-    @scala.inline
-    def setTetherUndefined: Self = StObject.set(x, "tether", js.undefined)
+    inline def setTetherUndefined: Self = StObject.set(x, "tether", js.undefined)
   }
 }

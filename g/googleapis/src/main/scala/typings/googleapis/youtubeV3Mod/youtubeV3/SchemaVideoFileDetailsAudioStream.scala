@@ -32,37 +32,27 @@ trait SchemaVideoFileDetailsAudioStream extends StObject {
 }
 object SchemaVideoFileDetailsAudioStream {
   
-  @scala.inline
-  def apply(): SchemaVideoFileDetailsAudioStream = {
+  inline def apply(): SchemaVideoFileDetailsAudioStream = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVideoFileDetailsAudioStream]
   }
   
-  @scala.inline
-  implicit class SchemaVideoFileDetailsAudioStreamMutableBuilder[Self <: SchemaVideoFileDetailsAudioStream] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaVideoFileDetailsAudioStream](x: Self) {
     
-    @scala.inline
-    def setBitrateBps(value: String): Self = StObject.set(x, "bitrateBps", value.asInstanceOf[js.Any])
+    inline def setBitrateBps(value: String): Self = StObject.set(x, "bitrateBps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitrateBpsUndefined: Self = StObject.set(x, "bitrateBps", js.undefined)
+    inline def setBitrateBpsUndefined: Self = StObject.set(x, "bitrateBps", js.undefined)
     
-    @scala.inline
-    def setChannelCount(value: Double): Self = StObject.set(x, "channelCount", value.asInstanceOf[js.Any])
+    inline def setChannelCount(value: Double): Self = StObject.set(x, "channelCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelCountUndefined: Self = StObject.set(x, "channelCount", js.undefined)
+    inline def setChannelCountUndefined: Self = StObject.set(x, "channelCount", js.undefined)
     
-    @scala.inline
-    def setCodec(value: String): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
+    inline def setCodec(value: String): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodecUndefined: Self = StObject.set(x, "codec", js.undefined)
+    inline def setCodecUndefined: Self = StObject.set(x, "codec", js.undefined)
     
-    @scala.inline
-    def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
+    inline def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVendorUndefined: Self = StObject.set(x, "vendor", js.undefined)
+    inline def setVendorUndefined: Self = StObject.set(x, "vendor", js.undefined)
   }
 }

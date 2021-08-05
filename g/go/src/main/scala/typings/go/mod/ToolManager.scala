@@ -137,46 +137,40 @@ object ToolManager {
   @JSImport("go", "ToolManager.GestureCancel")
   @js.native
   def GestureCancel: EnumValue = js.native
-  @scala.inline
-  def GestureCancel_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GestureCancel")(x.asInstanceOf[js.Any])
+  inline def GestureCancel_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GestureCancel")(x.asInstanceOf[js.Any])
   
   /**This value for gestureBehavior indicates that the pointer/touch pinch gestures on the canvas intend to have no effect on the Diagram, but will not be prevented, and may bubble up the page to have other effects (such as zooming the page).*/
   /* static member */
   @JSImport("go", "ToolManager.GestureNone")
   @js.native
   def GestureNone: EnumValue = js.native
-  @scala.inline
-  def GestureNone_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GestureNone")(x.asInstanceOf[js.Any])
+  inline def GestureNone_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GestureNone")(x.asInstanceOf[js.Any])
   
   /**This value for gestureBehavior indicates that the pointer/touch pinch gestures on the canvas intend to zoom the Diagram.*/
   /* static member */
   @JSImport("go", "ToolManager.GestureZoom")
   @js.native
   def GestureZoom: EnumValue = js.native
-  @scala.inline
-  def GestureZoom_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GestureZoom")(x.asInstanceOf[js.Any])
+  inline def GestureZoom_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GestureZoom")(x.asInstanceOf[js.Any])
   
   /**This value for .mouseWheelBehavior indicates that the mouse wheel events are ignored, although scrolling or zooming by other means may still be allowed.*/
   /* static member */
   @JSImport("go", "ToolManager.WheelNone")
   @js.native
   def WheelNone: EnumValue = js.native
-  @scala.inline
-  def WheelNone_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WheelNone")(x.asInstanceOf[js.Any])
+  inline def WheelNone_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WheelNone")(x.asInstanceOf[js.Any])
   
   /**This default value for .mouseWheelBehavior indicates that mouse wheel events scroll the diagram.*/
   /* static member */
   @JSImport("go", "ToolManager.WheelScroll")
   @js.native
   def WheelScroll: EnumValue = js.native
-  @scala.inline
-  def WheelScroll_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WheelScroll")(x.asInstanceOf[js.Any])
+  inline def WheelScroll_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WheelScroll")(x.asInstanceOf[js.Any])
   
   /**This value for .mouseWheelBehavior indicates that the mouse wheel events change the scale of the diagram.*/
   /* static member */
   @JSImport("go", "ToolManager.WheelZoom")
   @js.native
   def WheelZoom: EnumValue = js.native
-  @scala.inline
-  def WheelZoom_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WheelZoom")(x.asInstanceOf[js.Any])
+  inline def WheelZoom_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WheelZoom")(x.asInstanceOf[js.Any])
 }

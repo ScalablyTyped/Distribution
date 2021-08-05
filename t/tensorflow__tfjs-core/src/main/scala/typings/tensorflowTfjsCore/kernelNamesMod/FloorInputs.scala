@@ -11,19 +11,15 @@ trait FloorInputs extends StObject {
 }
 object FloorInputs {
   
-  @scala.inline
-  def apply(): FloorInputs = {
+  inline def apply(): FloorInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FloorInputs]
   }
   
-  @scala.inline
-  implicit class FloorInputsMutableBuilder[Self <: FloorInputs] (val x: Self) extends AnyVal {
+  extension [Self <: FloorInputs](x: Self) {
     
-    @scala.inline
-    def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }
 }

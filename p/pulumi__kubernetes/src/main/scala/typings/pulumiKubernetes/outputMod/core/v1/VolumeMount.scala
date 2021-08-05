@@ -41,8 +41,7 @@ trait VolumeMount extends StObject {
 }
 object VolumeMount {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     mountPath: String,
     mountPropagation: String,
     name: String,
@@ -54,25 +53,18 @@ object VolumeMount {
     __obj.asInstanceOf[VolumeMount]
   }
   
-  @scala.inline
-  implicit class VolumeMountMutableBuilder[Self <: VolumeMount] (val x: Self) extends AnyVal {
+  extension [Self <: VolumeMount](x: Self) {
     
-    @scala.inline
-    def setMountPath(value: String): Self = StObject.set(x, "mountPath", value.asInstanceOf[js.Any])
+    inline def setMountPath(value: String): Self = StObject.set(x, "mountPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMountPropagation(value: String): Self = StObject.set(x, "mountPropagation", value.asInstanceOf[js.Any])
+    inline def setMountPropagation(value: String): Self = StObject.set(x, "mountPropagation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubPath(value: String): Self = StObject.set(x, "subPath", value.asInstanceOf[js.Any])
+    inline def setSubPath(value: String): Self = StObject.set(x, "subPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubPathExpr(value: String): Self = StObject.set(x, "subPathExpr", value.asInstanceOf[js.Any])
+    inline def setSubPathExpr(value: String): Self = StObject.set(x, "subPathExpr", value.asInstanceOf[js.Any])
   }
 }

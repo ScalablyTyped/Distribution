@@ -11,8 +11,6 @@ object deepCyclicCopyReplaceableMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](value: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[T]
-  @scala.inline
-  def default[T](value: T, cycles: WeakMap[js.Any, js.Any]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], cycles.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def default[T](value: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def default[T](value: T, cycles: WeakMap[js.Any, js.Any]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], cycles.asInstanceOf[js.Any])).asInstanceOf[T]
 }

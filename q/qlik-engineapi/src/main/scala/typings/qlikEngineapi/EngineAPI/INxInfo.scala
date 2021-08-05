@@ -24,22 +24,17 @@ trait INxInfo extends StObject {
 }
 object INxInfo {
   
-  @scala.inline
-  def apply(qType: String): INxInfo = {
+  inline def apply(qType: String): INxInfo = {
     val __obj = js.Dynamic.literal(qType = qType.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxInfo]
   }
   
-  @scala.inline
-  implicit class INxInfoMutableBuilder[Self <: INxInfo] (val x: Self) extends AnyVal {
+  extension [Self <: INxInfo](x: Self) {
     
-    @scala.inline
-    def setQId(value: String): Self = StObject.set(x, "qId", value.asInstanceOf[js.Any])
+    inline def setQId(value: String): Self = StObject.set(x, "qId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQIdUndefined: Self = StObject.set(x, "qId", js.undefined)
+    inline def setQIdUndefined: Self = StObject.set(x, "qId", js.undefined)
     
-    @scala.inline
-    def setQType(value: String): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
+    inline def setQType(value: String): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
   }
 }

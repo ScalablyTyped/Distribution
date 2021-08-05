@@ -11,19 +11,15 @@ trait ReportStateAndNotificationResponse extends StObject {
 }
 object ReportStateAndNotificationResponse {
   
-  @scala.inline
-  def apply(): ReportStateAndNotificationResponse = {
+  inline def apply(): ReportStateAndNotificationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReportStateAndNotificationResponse]
   }
   
-  @scala.inline
-  implicit class ReportStateAndNotificationResponseMutableBuilder[Self <: ReportStateAndNotificationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReportStateAndNotificationResponse](x: Self) {
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
   }
 }

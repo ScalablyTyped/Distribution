@@ -17,31 +17,23 @@ trait AlertButton extends StObject {
 }
 object AlertButton {
   
-  @scala.inline
-  def apply(): AlertButton = {
+  inline def apply(): AlertButton = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AlertButton]
   }
   
-  @scala.inline
-  implicit class AlertButtonMutableBuilder[Self <: AlertButton] (val x: Self) extends AnyVal {
+  extension [Self <: AlertButton](x: Self) {
     
-    @scala.inline
-    def setOnPress(value: /* value */ js.UndefOr[String] => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
+    inline def setOnPress(value: /* value */ js.UndefOr[String] => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
+    inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     
-    @scala.inline
-    def setStyle(value: default | cancel | destructive): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: default | cancel | destructive): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

@@ -20,8 +20,7 @@ object anon {
   }
   object Cache {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cache: Boolean,
       defaultExtension: String,
       defaultViewEngine: String,
@@ -32,25 +31,19 @@ object anon {
       __obj.asInstanceOf[Cache]
     }
     
-    @scala.inline
-    implicit class CacheMutableBuilder[Self <: Cache] (val x: Self) extends AnyVal {
+    extension [Self <: Cache](x: Self) {
       
-      @scala.inline
-      def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultExtension(value: String): Self = StObject.set(x, "defaultExtension", value.asInstanceOf[js.Any])
+      inline def setDefaultExtension(value: String): Self = StObject.set(x, "defaultExtension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultViewEngine(value: String): Self = StObject.set(x, "defaultViewEngine", value.asInstanceOf[js.Any])
+      inline def setDefaultViewEngine(value: String): Self = StObject.set(x, "defaultViewEngine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapping(
+      inline def setMapping(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PlainObject<string> */ js.Any
       ): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -14,19 +14,15 @@ trait GoogleCloudRecommendationengineV1beta1ImportErrorsConfig extends StObject 
 }
 object GoogleCloudRecommendationengineV1beta1ImportErrorsConfig {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommendationengineV1beta1ImportErrorsConfig = {
+  inline def apply(): GoogleCloudRecommendationengineV1beta1ImportErrorsConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1ImportErrorsConfig]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1ImportErrorsConfigMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1ImportErrorsConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommendationengineV1beta1ImportErrorsConfig](x: Self) {
     
-    @scala.inline
-    def setGcsPrefix(value: String): Self = StObject.set(x, "gcsPrefix", value.asInstanceOf[js.Any])
+    inline def setGcsPrefix(value: String): Self = StObject.set(x, "gcsPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsPrefixUndefined: Self = StObject.set(x, "gcsPrefix", js.undefined)
+    inline def setGcsPrefixUndefined: Self = StObject.set(x, "gcsPrefix", js.undefined)
   }
 }

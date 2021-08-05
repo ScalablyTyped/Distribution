@@ -14,25 +14,19 @@ trait LookbackWindow extends StObject {
 }
 object LookbackWindow {
   
-  @scala.inline
-  def apply(): LookbackWindow = {
+  inline def apply(): LookbackWindow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LookbackWindow]
   }
   
-  @scala.inline
-  implicit class LookbackWindowMutableBuilder[Self <: LookbackWindow] (val x: Self) extends AnyVal {
+  extension [Self <: LookbackWindow](x: Self) {
     
-    @scala.inline
-    def setClickDays(value: Double): Self = StObject.set(x, "clickDays", value.asInstanceOf[js.Any])
+    inline def setClickDays(value: Double): Self = StObject.set(x, "clickDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickDaysUndefined: Self = StObject.set(x, "clickDays", js.undefined)
+    inline def setClickDaysUndefined: Self = StObject.set(x, "clickDays", js.undefined)
     
-    @scala.inline
-    def setImpressionDays(value: Double): Self = StObject.set(x, "impressionDays", value.asInstanceOf[js.Any])
+    inline def setImpressionDays(value: Double): Self = StObject.set(x, "impressionDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImpressionDaysUndefined: Self = StObject.set(x, "impressionDays", js.undefined)
+    inline def setImpressionDaysUndefined: Self = StObject.set(x, "impressionDays", js.undefined)
   }
 }

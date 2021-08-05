@@ -16,23 +16,18 @@ object anon {
   }
   object ComponentId {
     
-    @scala.inline
-    def apply(componentId: js.Any, componentName: js.Any, passProps: js.Any): ComponentId = {
+    inline def apply(componentId: js.Any, componentName: js.Any, passProps: js.Any): ComponentId = {
       val __obj = js.Dynamic.literal(componentId = componentId.asInstanceOf[js.Any], componentName = componentName.asInstanceOf[js.Any], passProps = passProps.asInstanceOf[js.Any])
       __obj.asInstanceOf[ComponentId]
     }
     
-    @scala.inline
-    implicit class ComponentIdMutableBuilder[Self <: ComponentId] (val x: Self) extends AnyVal {
+    extension [Self <: ComponentId](x: Self) {
       
-      @scala.inline
-      def setComponentId(value: js.Any): Self = StObject.set(x, "componentId", value.asInstanceOf[js.Any])
+      inline def setComponentId(value: js.Any): Self = StObject.set(x, "componentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentName(value: js.Any): Self = StObject.set(x, "componentName", value.asInstanceOf[js.Any])
+      inline def setComponentName(value: js.Any): Self = StObject.set(x, "componentName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassProps(value: js.Any): Self = StObject.set(x, "passProps", value.asInstanceOf[js.Any])
+      inline def setPassProps(value: js.Any): Self = StObject.set(x, "passProps", value.asInstanceOf[js.Any])
     }
   }
 }

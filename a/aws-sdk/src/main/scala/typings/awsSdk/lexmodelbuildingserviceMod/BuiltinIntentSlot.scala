@@ -13,19 +13,15 @@ trait BuiltinIntentSlot extends StObject {
 }
 object BuiltinIntentSlot {
   
-  @scala.inline
-  def apply(): BuiltinIntentSlot = {
+  inline def apply(): BuiltinIntentSlot = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuiltinIntentSlot]
   }
   
-  @scala.inline
-  implicit class BuiltinIntentSlotMutableBuilder[Self <: BuiltinIntentSlot] (val x: Self) extends AnyVal {
+  extension [Self <: BuiltinIntentSlot](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

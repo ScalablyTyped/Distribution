@@ -119,8 +119,7 @@ object Printers {
         * @return Pointer to the context.
         */
       /* static member */
-      @scala.inline
-      def fromDeviceId(deviceId: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDeviceId")(deviceId.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def fromDeviceId(deviceId: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDeviceId")(deviceId.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     }
     
     /** Contains properties that allow a client to access and/or manipulate print event data and print device name information. */
@@ -224,16 +223,14 @@ object Printers {
       * @return A Print3DDevice object that corresponds to the specified 3D printer.
       */
     /* static member */
-    @scala.inline
-    def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Printers.Print3DDevice] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Printers.Print3DDevice]]
+    inline def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Printers.Print3DDevice] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Printers.Print3DDevice]]
     
     /**
       * Gets an Advanced Query Syntax (AQS) string that can be used to find all 3D printers that are connected to the device.
       * @return An AQS string that can be used to find all 3D printers connected to the device.
       */
     /* static member */
-    @scala.inline
-    def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
+    inline def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
   }
   
   /** Provides APIs to access a 3D printer's capabilities and print tickets. */

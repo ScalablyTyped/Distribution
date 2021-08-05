@@ -18,19 +18,15 @@ trait DraggableProps extends StObject {
 }
 object DraggableProps {
   
-  @scala.inline
-  def apply(children: /* argument */ DraggableCallbackArgument => Element, style: DraggableStyle): DraggableProps = {
+  inline def apply(children: /* argument */ DraggableCallbackArgument => Element, style: DraggableStyle): DraggableProps = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), style = style.asInstanceOf[js.Any])
     __obj.asInstanceOf[DraggableProps]
   }
   
-  @scala.inline
-  implicit class DraggablePropsMutableBuilder[Self <: DraggableProps] (val x: Self) extends AnyVal {
+  extension [Self <: DraggableProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: /* argument */ DraggableCallbackArgument => Element): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+    inline def setChildren(value: /* argument */ DraggableCallbackArgument => Element): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStyle(value: DraggableStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: DraggableStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }
 }

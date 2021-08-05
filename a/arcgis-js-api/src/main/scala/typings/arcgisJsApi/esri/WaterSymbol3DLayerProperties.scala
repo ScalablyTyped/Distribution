@@ -45,40 +45,29 @@ trait WaterSymbol3DLayerProperties
 }
 object WaterSymbol3DLayerProperties {
   
-  @scala.inline
-  def apply(): WaterSymbol3DLayerProperties = {
+  inline def apply(): WaterSymbol3DLayerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WaterSymbol3DLayerProperties]
   }
   
-  @scala.inline
-  implicit class WaterSymbol3DLayerPropertiesMutableBuilder[Self <: WaterSymbol3DLayerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: WaterSymbol3DLayerProperties](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
     
-    @scala.inline
-    def setWaterbodySize(value: small | medium | large): Self = StObject.set(x, "waterbodySize", value.asInstanceOf[js.Any])
+    inline def setWaterbodySize(value: small | medium | large): Self = StObject.set(x, "waterbodySize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaterbodySizeUndefined: Self = StObject.set(x, "waterbodySize", js.undefined)
+    inline def setWaterbodySizeUndefined: Self = StObject.set(x, "waterbodySize", js.undefined)
     
-    @scala.inline
-    def setWaveDirection(value: Double): Self = StObject.set(x, "waveDirection", value.asInstanceOf[js.Any])
+    inline def setWaveDirection(value: Double): Self = StObject.set(x, "waveDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaveDirectionUndefined: Self = StObject.set(x, "waveDirection", js.undefined)
+    inline def setWaveDirectionUndefined: Self = StObject.set(x, "waveDirection", js.undefined)
     
-    @scala.inline
-    def setWaveStrength(value: calm | rippled | slight | moderate): Self = StObject.set(x, "waveStrength", value.asInstanceOf[js.Any])
+    inline def setWaveStrength(value: calm | rippled | slight | moderate): Self = StObject.set(x, "waveStrength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWaveStrengthUndefined: Self = StObject.set(x, "waveStrength", js.undefined)
+    inline def setWaveStrengthUndefined: Self = StObject.set(x, "waveStrength", js.undefined)
   }
 }

@@ -41,8 +41,7 @@ object ruMod extends Shortcut {
   }
   object Locale {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       long: Duration,
       `long-convenient`: Duration,
       `long-time`: Duration,
@@ -61,38 +60,27 @@ object ruMod extends Shortcut {
       __obj.asInstanceOf[Locale]
     }
     
-    @scala.inline
-    implicit class LocaleMutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
+    extension [Self <: Locale](x: Self) {
       
-      @scala.inline
-      def setLocale(value: ru): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: ru): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLong(value: Duration): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
+      inline def setLong(value: Duration): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setLong-convenient`(value: Duration): Self = StObject.set(x, "long-convenient", value.asInstanceOf[js.Any])
+      inline def `setLong-convenient`(value: Duration): Self = StObject.set(x, "long-convenient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setLong-time`(value: Duration): Self = StObject.set(x, "long-time", value.asInstanceOf[js.Any])
+      inline def `setLong-time`(value: Duration): Self = StObject.set(x, "long-time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNarrow(value: Duration): Self = StObject.set(x, "narrow", value.asInstanceOf[js.Any])
+      inline def setNarrow(value: Duration): Self = StObject.set(x, "narrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuantify(value: Double => one | two | few | other): Self = StObject.set(x, "quantify", js.Any.fromFunction1(value))
+      inline def setQuantify(value: Double => one | two | few | other): Self = StObject.set(x, "quantify", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShort(value: Duration): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
+      inline def setShort(value: Duration): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setShort-convenient`(value: Duration): Self = StObject.set(x, "short-convenient", value.asInstanceOf[js.Any])
+      inline def `setShort-convenient`(value: Duration): Self = StObject.set(x, "short-convenient", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setShort-time`(value: Duration): Self = StObject.set(x, "short-time", value.asInstanceOf[js.Any])
+      inline def `setShort-time`(value: Duration): Self = StObject.set(x, "short-time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTiny(value: Duration): Self = StObject.set(x, "tiny", value.asInstanceOf[js.Any])
+      inline def setTiny(value: Duration): Self = StObject.set(x, "tiny", value.asInstanceOf[js.Any])
     }
   }
   

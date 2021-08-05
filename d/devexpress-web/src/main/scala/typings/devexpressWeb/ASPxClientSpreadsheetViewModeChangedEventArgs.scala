@@ -18,16 +18,13 @@ trait ASPxClientSpreadsheetViewModeChangedEventArgs
 }
 object ASPxClientSpreadsheetViewModeChangedEventArgs {
   
-  @scala.inline
-  def apply(oldViewMode: ASPxClientSpreadsheetViewMode): ASPxClientSpreadsheetViewModeChangedEventArgs = {
+  inline def apply(oldViewMode: ASPxClientSpreadsheetViewMode): ASPxClientSpreadsheetViewModeChangedEventArgs = {
     val __obj = js.Dynamic.literal(oldViewMode = oldViewMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientSpreadsheetViewModeChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientSpreadsheetViewModeChangedEventArgsMutableBuilder[Self <: ASPxClientSpreadsheetViewModeChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientSpreadsheetViewModeChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setOldViewMode(value: ASPxClientSpreadsheetViewMode): Self = StObject.set(x, "oldViewMode", value.asInstanceOf[js.Any])
+    inline def setOldViewMode(value: ASPxClientSpreadsheetViewMode): Self = StObject.set(x, "oldViewMode", value.asInstanceOf[js.Any])
   }
 }

@@ -10,6 +10,5 @@ object classHelper {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def classNames(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def classNames(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("classNames")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

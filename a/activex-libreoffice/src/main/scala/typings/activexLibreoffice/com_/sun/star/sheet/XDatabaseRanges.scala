@@ -24,8 +24,7 @@ trait XDatabaseRanges
 }
 object XDatabaseRanges {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementNames: SafeArray[String],
     ElementType: `type`,
     acquire: () => Unit,
@@ -43,13 +42,10 @@ object XDatabaseRanges {
     __obj.asInstanceOf[XDatabaseRanges]
   }
   
-  @scala.inline
-  implicit class XDatabaseRangesMutableBuilder[Self <: XDatabaseRanges] (val x: Self) extends AnyVal {
+  extension [Self <: XDatabaseRanges](x: Self) {
     
-    @scala.inline
-    def setAddNewByName(value: (String, CellRangeAddress) => Unit): Self = StObject.set(x, "addNewByName", js.Any.fromFunction2(value))
+    inline def setAddNewByName(value: (String, CellRangeAddress) => Unit): Self = StObject.set(x, "addNewByName", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveByName(value: String => Unit): Self = StObject.set(x, "removeByName", js.Any.fromFunction1(value))
+    inline def setRemoveByName(value: String => Unit): Self = StObject.set(x, "removeByName", js.Any.fromFunction1(value))
   }
 }

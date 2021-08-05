@@ -10,19 +10,15 @@ trait ChannelModeratedByAppInstanceUserSummary extends StObject {
 }
 object ChannelModeratedByAppInstanceUserSummary {
   
-  @scala.inline
-  def apply(): ChannelModeratedByAppInstanceUserSummary = {
+  inline def apply(): ChannelModeratedByAppInstanceUserSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChannelModeratedByAppInstanceUserSummary]
   }
   
-  @scala.inline
-  implicit class ChannelModeratedByAppInstanceUserSummaryMutableBuilder[Self <: ChannelModeratedByAppInstanceUserSummary] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelModeratedByAppInstanceUserSummary](x: Self) {
     
-    @scala.inline
-    def setChannelSummary(value: ChannelSummary): Self = StObject.set(x, "ChannelSummary", value.asInstanceOf[js.Any])
+    inline def setChannelSummary(value: ChannelSummary): Self = StObject.set(x, "ChannelSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelSummaryUndefined: Self = StObject.set(x, "ChannelSummary", js.undefined)
+    inline def setChannelSummaryUndefined: Self = StObject.set(x, "ChannelSummary", js.undefined)
   }
 }

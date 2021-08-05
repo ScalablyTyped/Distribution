@@ -16,18 +16,12 @@ object concurrentMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def executeConcurrent(client: Client, queries: js.Array[Params]): js.Promise[ResultSetGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeConcurrent")(client.asInstanceOf[js.Any], queries.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultSetGroup]]
-    @scala.inline
-    def executeConcurrent(client: Client, queries: js.Array[Params], options: Options): js.Promise[ResultSetGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeConcurrent")(client.asInstanceOf[js.Any], queries.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultSetGroup]]
-    @scala.inline
-    def executeConcurrent(client: Client, query: String, parameters: js.Array[js.Array[js.Any]]): js.Promise[ResultSetGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeConcurrent")(client.asInstanceOf[js.Any], query.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultSetGroup]]
-    @scala.inline
-    def executeConcurrent(client: Client, query: String, parameters: js.Array[js.Array[js.Any]], options: Options): js.Promise[ResultSetGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeConcurrent")(client.asInstanceOf[js.Any], query.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultSetGroup]]
-    @scala.inline
-    def executeConcurrent(client: Client, query: String, parameters: Readable): js.Promise[ResultSetGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeConcurrent")(client.asInstanceOf[js.Any], query.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultSetGroup]]
-    @scala.inline
-    def executeConcurrent(client: Client, query: String, parameters: Readable, options: Options): js.Promise[ResultSetGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeConcurrent")(client.asInstanceOf[js.Any], query.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultSetGroup]]
+    inline def executeConcurrent(client: Client, queries: js.Array[Params]): js.Promise[ResultSetGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeConcurrent")(client.asInstanceOf[js.Any], queries.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultSetGroup]]
+    inline def executeConcurrent(client: Client, queries: js.Array[Params], options: Options): js.Promise[ResultSetGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeConcurrent")(client.asInstanceOf[js.Any], queries.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultSetGroup]]
+    inline def executeConcurrent(client: Client, query: String, parameters: js.Array[js.Array[js.Any]]): js.Promise[ResultSetGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeConcurrent")(client.asInstanceOf[js.Any], query.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultSetGroup]]
+    inline def executeConcurrent(client: Client, query: String, parameters: js.Array[js.Array[js.Any]], options: Options): js.Promise[ResultSetGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeConcurrent")(client.asInstanceOf[js.Any], query.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultSetGroup]]
+    inline def executeConcurrent(client: Client, query: String, parameters: Readable): js.Promise[ResultSetGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeConcurrent")(client.asInstanceOf[js.Any], query.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultSetGroup]]
+    inline def executeConcurrent(client: Client, query: String, parameters: Readable, options: Options): js.Promise[ResultSetGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("executeConcurrent")(client.asInstanceOf[js.Any], query.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ResultSetGroup]]
     
     trait Options extends StObject {
       
@@ -43,44 +37,32 @@ object concurrentMod {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setCollectResults(value: Boolean): Self = StObject.set(x, "collectResults", value.asInstanceOf[js.Any])
+        inline def setCollectResults(value: Boolean): Self = StObject.set(x, "collectResults", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCollectResultsUndefined: Self = StObject.set(x, "collectResults", js.undefined)
+        inline def setCollectResultsUndefined: Self = StObject.set(x, "collectResults", js.undefined)
         
-        @scala.inline
-        def setConcurrencyLevel(value: Double): Self = StObject.set(x, "concurrencyLevel", value.asInstanceOf[js.Any])
+        inline def setConcurrencyLevel(value: Double): Self = StObject.set(x, "concurrencyLevel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConcurrencyLevelUndefined: Self = StObject.set(x, "concurrencyLevel", js.undefined)
+        inline def setConcurrencyLevelUndefined: Self = StObject.set(x, "concurrencyLevel", js.undefined)
         
-        @scala.inline
-        def setExecutionProfile(value: String): Self = StObject.set(x, "executionProfile", value.asInstanceOf[js.Any])
+        inline def setExecutionProfile(value: String): Self = StObject.set(x, "executionProfile", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExecutionProfileUndefined: Self = StObject.set(x, "executionProfile", js.undefined)
+        inline def setExecutionProfileUndefined: Self = StObject.set(x, "executionProfile", js.undefined)
         
-        @scala.inline
-        def setMaxErrors(value: Double): Self = StObject.set(x, "maxErrors", value.asInstanceOf[js.Any])
+        inline def setMaxErrors(value: Double): Self = StObject.set(x, "maxErrors", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxErrorsUndefined: Self = StObject.set(x, "maxErrors", js.undefined)
+        inline def setMaxErrorsUndefined: Self = StObject.set(x, "maxErrors", js.undefined)
         
-        @scala.inline
-        def setRaiseOnFirstError(value: Boolean): Self = StObject.set(x, "raiseOnFirstError", value.asInstanceOf[js.Any])
+        inline def setRaiseOnFirstError(value: Boolean): Self = StObject.set(x, "raiseOnFirstError", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRaiseOnFirstErrorUndefined: Self = StObject.set(x, "raiseOnFirstError", js.undefined)
+        inline def setRaiseOnFirstErrorUndefined: Self = StObject.set(x, "raiseOnFirstError", js.undefined)
       }
     }
     
@@ -94,29 +76,22 @@ object concurrentMod {
     }
     object ResultSetGroup {
       
-      @scala.inline
-      def apply(errors: js.Array[Error], resultItems: js.Array[js.Any], totalExecuted: Double): ResultSetGroup = {
+      inline def apply(errors: js.Array[Error], resultItems: js.Array[js.Any], totalExecuted: Double): ResultSetGroup = {
         val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], resultItems = resultItems.asInstanceOf[js.Any], totalExecuted = totalExecuted.asInstanceOf[js.Any])
         __obj.asInstanceOf[ResultSetGroup]
       }
       
-      @scala.inline
-      implicit class ResultSetGroupMutableBuilder[Self <: ResultSetGroup] (val x: Self) extends AnyVal {
+      extension [Self <: ResultSetGroup](x: Self) {
         
-        @scala.inline
-        def setErrors(value: js.Array[Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+        inline def setErrors(value: js.Array[Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setErrorsVarargs(value: Error*): Self = StObject.set(x, "errors", js.Array(value :_*))
+        inline def setErrorsVarargs(value: Error*): Self = StObject.set(x, "errors", js.Array(value :_*))
         
-        @scala.inline
-        def setResultItems(value: js.Array[js.Any]): Self = StObject.set(x, "resultItems", value.asInstanceOf[js.Any])
+        inline def setResultItems(value: js.Array[js.Any]): Self = StObject.set(x, "resultItems", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResultItemsVarargs(value: js.Any*): Self = StObject.set(x, "resultItems", js.Array(value :_*))
+        inline def setResultItemsVarargs(value: js.Any*): Self = StObject.set(x, "resultItems", js.Array(value :_*))
         
-        @scala.inline
-        def setTotalExecuted(value: Double): Self = StObject.set(x, "totalExecuted", value.asInstanceOf[js.Any])
+        inline def setTotalExecuted(value: Double): Self = StObject.set(x, "totalExecuted", value.asInstanceOf[js.Any])
       }
     }
   }

@@ -29,7 +29,7 @@ object subchannelPoolMod {
     /**
       * A timer of a task performing a periodic subchannel cleanup.
       */
-    var cleanupTimer: js.Any = js.native
+    /* private */ var cleanupTimer: js.Any = js.native
     
     /**
       * Ensures that the cleanup task is spawned.
@@ -51,9 +51,9 @@ object subchannelPoolMod {
       channelCredentials: ChannelCredentials
     ): Subchannel = js.native
     
-    var global: js.Any = js.native
+    /* private */ var global: js.Any = js.native
     
-    var pool: js.Any = js.native
+    /* private */ var pool: js.Any = js.native
     
     /**
       * Unrefs all unused subchannels and cancels the cleanup task if all
@@ -62,6 +62,5 @@ object subchannelPoolMod {
     def unrefUnusedSubchannels(): Unit = js.native
   }
   
-  @scala.inline
-  def getSubchannelPool(global: Boolean): SubchannelPool = ^.asInstanceOf[js.Dynamic].applyDynamic("getSubchannelPool")(global.asInstanceOf[js.Any]).asInstanceOf[SubchannelPool]
+  inline def getSubchannelPool(global: Boolean): SubchannelPool = ^.asInstanceOf[js.Dynamic].applyDynamic("getSubchannelPool")(global.asInstanceOf[js.Any]).asInstanceOf[SubchannelPool]
 }

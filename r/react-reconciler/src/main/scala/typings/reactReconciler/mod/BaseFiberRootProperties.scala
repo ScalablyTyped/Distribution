@@ -77,8 +77,7 @@ trait BaseFiberRootProperties extends StObject {
 }
 object BaseFiberRootProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     containerInfo: js.Any,
     current: Fiber,
     didError: Boolean,
@@ -98,85 +97,58 @@ object BaseFiberRootProperties {
     __obj.asInstanceOf[BaseFiberRootProperties]
   }
   
-  @scala.inline
-  implicit class BaseFiberRootPropertiesMutableBuilder[Self <: BaseFiberRootProperties] (val x: Self) extends AnyVal {
+  extension [Self <: BaseFiberRootProperties](x: Self) {
     
-    @scala.inline
-    def setContainerInfo(value: js.Any): Self = StObject.set(x, "containerInfo", value.asInstanceOf[js.Any])
+    inline def setContainerInfo(value: js.Any): Self = StObject.set(x, "containerInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextNull: Self = StObject.set(x, "context", null)
+    inline def setContextNull: Self = StObject.set(x, "context", null)
     
-    @scala.inline
-    def setCurrent(value: Fiber): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    inline def setCurrent(value: Fiber): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDidError(value: Boolean): Self = StObject.set(x, "didError", value.asInstanceOf[js.Any])
+    inline def setDidError(value: Boolean): Self = StObject.set(x, "didError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEarliestPendingTime(value: ExpirationTime): Self = StObject.set(x, "earliestPendingTime", value.asInstanceOf[js.Any])
+    inline def setEarliestPendingTime(value: ExpirationTime): Self = StObject.set(x, "earliestPendingTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEarliestSuspendedTime(value: ExpirationTime): Self = StObject.set(x, "earliestSuspendedTime", value.asInstanceOf[js.Any])
+    inline def setEarliestSuspendedTime(value: ExpirationTime): Self = StObject.set(x, "earliestSuspendedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationTime(value: ExpirationTime): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
+    inline def setExpirationTime(value: ExpirationTime): Self = StObject.set(x, "expirationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinishedWork(value: Fiber): Self = StObject.set(x, "finishedWork", value.asInstanceOf[js.Any])
+    inline def setFinishedWork(value: Fiber): Self = StObject.set(x, "finishedWork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinishedWorkNull: Self = StObject.set(x, "finishedWork", null)
+    inline def setFinishedWorkNull: Self = StObject.set(x, "finishedWork", null)
     
-    @scala.inline
-    def setFirstBatch(value: Batch): Self = StObject.set(x, "firstBatch", value.asInstanceOf[js.Any])
+    inline def setFirstBatch(value: Batch): Self = StObject.set(x, "firstBatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstBatchNull: Self = StObject.set(x, "firstBatch", null)
+    inline def setFirstBatchNull: Self = StObject.set(x, "firstBatch", null)
     
-    @scala.inline
-    def setHydrate(value: Boolean): Self = StObject.set(x, "hydrate", value.asInstanceOf[js.Any])
+    inline def setHydrate(value: Boolean): Self = StObject.set(x, "hydrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatestPendingTime(value: ExpirationTime): Self = StObject.set(x, "latestPendingTime", value.asInstanceOf[js.Any])
+    inline def setLatestPendingTime(value: ExpirationTime): Self = StObject.set(x, "latestPendingTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatestPingedTime(value: ExpirationTime): Self = StObject.set(x, "latestPingedTime", value.asInstanceOf[js.Any])
+    inline def setLatestPingedTime(value: ExpirationTime): Self = StObject.set(x, "latestPingedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatestSuspendedTime(value: ExpirationTime): Self = StObject.set(x, "latestSuspendedTime", value.asInstanceOf[js.Any])
+    inline def setLatestSuspendedTime(value: ExpirationTime): Self = StObject.set(x, "latestSuspendedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextExpirationTimeToWorkOn(value: ExpirationTime): Self = StObject.set(x, "nextExpirationTimeToWorkOn", value.asInstanceOf[js.Any])
+    inline def setNextExpirationTimeToWorkOn(value: ExpirationTime): Self = StObject.set(x, "nextExpirationTimeToWorkOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextScheduledRoot(value: FiberRoot): Self = StObject.set(x, "nextScheduledRoot", value.asInstanceOf[js.Any])
+    inline def setNextScheduledRoot(value: FiberRoot): Self = StObject.set(x, "nextScheduledRoot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextScheduledRootNull: Self = StObject.set(x, "nextScheduledRoot", null)
+    inline def setNextScheduledRootNull: Self = StObject.set(x, "nextScheduledRoot", null)
     
-    @scala.inline
-    def setPendingChildren(value: js.Any): Self = StObject.set(x, "pendingChildren", value.asInstanceOf[js.Any])
+    inline def setPendingChildren(value: js.Any): Self = StObject.set(x, "pendingChildren", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingCommitExpirationTime(value: ExpirationTime): Self = StObject.set(x, "pendingCommitExpirationTime", value.asInstanceOf[js.Any])
+    inline def setPendingCommitExpirationTime(value: ExpirationTime): Self = StObject.set(x, "pendingCommitExpirationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingContext(value: js.Object): Self = StObject.set(x, "pendingContext", value.asInstanceOf[js.Any])
+    inline def setPendingContext(value: js.Object): Self = StObject.set(x, "pendingContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingContextNull: Self = StObject.set(x, "pendingContext", null)
+    inline def setPendingContextNull: Self = StObject.set(x, "pendingContext", null)
     
-    @scala.inline
-    def setPingCache(value: (WeakMap[Thenable, Set[ExpirationTime]]) | (Map[Thenable, Set[ExpirationTime]])): Self = StObject.set(x, "pingCache", value.asInstanceOf[js.Any])
+    inline def setPingCache(value: (WeakMap[Thenable, Set[ExpirationTime]]) | (Map[Thenable, Set[ExpirationTime]])): Self = StObject.set(x, "pingCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPingCacheNull: Self = StObject.set(x, "pingCache", null)
+    inline def setPingCacheNull: Self = StObject.set(x, "pingCache", null)
     
-    @scala.inline
-    def setTimeoutHandle(value: js.Any): Self = StObject.set(x, "timeoutHandle", value.asInstanceOf[js.Any])
+    inline def setTimeoutHandle(value: js.Any): Self = StObject.set(x, "timeoutHandle", value.asInstanceOf[js.Any])
   }
 }

@@ -26,43 +26,31 @@ trait CreateLanguageModelParams extends StObject {
 }
 object CreateLanguageModelParams {
   
-  @scala.inline
-  def apply(base_model_name: BaseModelName | String, name: String): CreateLanguageModelParams = {
+  inline def apply(base_model_name: BaseModelName | String, name: String): CreateLanguageModelParams = {
     val __obj = js.Dynamic.literal(base_model_name = base_model_name.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateLanguageModelParams]
   }
   
-  @scala.inline
-  implicit class CreateLanguageModelParamsMutableBuilder[Self <: CreateLanguageModelParams] (val x: Self) extends AnyVal {
+  extension [Self <: CreateLanguageModelParams](x: Self) {
     
-    @scala.inline
-    def setBase_model_name(value: BaseModelName | String): Self = StObject.set(x, "base_model_name", value.asInstanceOf[js.Any])
+    inline def setBase_model_name(value: BaseModelName | String): Self = StObject.set(x, "base_model_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDialect(value: String): Self = StObject.set(x, "dialect", value.asInstanceOf[js.Any])
+    inline def setDialect(value: String): Self = StObject.set(x, "dialect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialectUndefined: Self = StObject.set(x, "dialect", js.undefined)
+    inline def setDialectUndefined: Self = StObject.set(x, "dialect", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
   }
 }

@@ -111,8 +111,7 @@ trait ClaimedSlipPrinter extends StObject {
 }
 object ClaimedSlipPrinter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changePrintSide: PosPrinterPrintSide => Unit,
     charactersPerLine: Double,
     closeJaws: () => Unit,
@@ -145,88 +144,60 @@ object ClaimedSlipPrinter {
     __obj.asInstanceOf[ClaimedSlipPrinter]
   }
   
-  @scala.inline
-  implicit class ClaimedSlipPrinterMutableBuilder[Self <: ClaimedSlipPrinter] (val x: Self) extends AnyVal {
+  extension [Self <: ClaimedSlipPrinter](x: Self) {
     
-    @scala.inline
-    def setChangePrintSide(value: PosPrinterPrintSide => Unit): Self = StObject.set(x, "changePrintSide", js.Any.fromFunction1(value))
+    inline def setChangePrintSide(value: PosPrinterPrintSide => Unit): Self = StObject.set(x, "changePrintSide", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCharactersPerLine(value: Double): Self = StObject.set(x, "charactersPerLine", value.asInstanceOf[js.Any])
+    inline def setCharactersPerLine(value: Double): Self = StObject.set(x, "charactersPerLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseJaws(value: () => Unit): Self = StObject.set(x, "closeJaws", js.Any.fromFunction0(value))
+    inline def setCloseJaws(value: () => Unit): Self = StObject.set(x, "closeJaws", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setColorCartridge(value: PosPrinterColorCartridge): Self = StObject.set(x, "colorCartridge", value.asInstanceOf[js.Any])
+    inline def setColorCartridge(value: PosPrinterColorCartridge): Self = StObject.set(x, "colorCartridge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateJob(value: () => SlipPrintJob): Self = StObject.set(x, "createJob", js.Any.fromFunction0(value))
+    inline def setCreateJob(value: () => SlipPrintJob): Self = StObject.set(x, "createJob", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInsertSlipAsync(value: Double => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "insertSlipAsync", js.Any.fromFunction1(value))
+    inline def setInsertSlipAsync(value: Double => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "insertSlipAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsCartridgeEmpty(value: Boolean): Self = StObject.set(x, "isCartridgeEmpty", value.asInstanceOf[js.Any])
+    inline def setIsCartridgeEmpty(value: Boolean): Self = StObject.set(x, "isCartridgeEmpty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCartridgeRemoved(value: Boolean): Self = StObject.set(x, "isCartridgeRemoved", value.asInstanceOf[js.Any])
+    inline def setIsCartridgeRemoved(value: Boolean): Self = StObject.set(x, "isCartridgeRemoved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCoverOpen(value: Boolean): Self = StObject.set(x, "isCoverOpen", value.asInstanceOf[js.Any])
+    inline def setIsCoverOpen(value: Boolean): Self = StObject.set(x, "isCoverOpen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsHeadCleaning(value: Boolean): Self = StObject.set(x, "isHeadCleaning", value.asInstanceOf[js.Any])
+    inline def setIsHeadCleaning(value: Boolean): Self = StObject.set(x, "isHeadCleaning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLetterQuality(value: Boolean): Self = StObject.set(x, "isLetterQuality", value.asInstanceOf[js.Any])
+    inline def setIsLetterQuality(value: Boolean): Self = StObject.set(x, "isLetterQuality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPaperEmpty(value: Boolean): Self = StObject.set(x, "isPaperEmpty", value.asInstanceOf[js.Any])
+    inline def setIsPaperEmpty(value: Boolean): Self = StObject.set(x, "isPaperEmpty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPaperNearEnd(value: Boolean): Self = StObject.set(x, "isPaperNearEnd", value.asInstanceOf[js.Any])
+    inline def setIsPaperNearEnd(value: Boolean): Self = StObject.set(x, "isPaperNearEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsReadyToPrint(value: Boolean): Self = StObject.set(x, "isReadyToPrint", value.asInstanceOf[js.Any])
+    inline def setIsReadyToPrint(value: Boolean): Self = StObject.set(x, "isReadyToPrint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+    inline def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineSpacing(value: Double): Self = StObject.set(x, "lineSpacing", value.asInstanceOf[js.Any])
+    inline def setLineSpacing(value: Double): Self = StObject.set(x, "lineSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinesNearEndToEnd(value: Double): Self = StObject.set(x, "linesNearEndToEnd", value.asInstanceOf[js.Any])
+    inline def setLinesNearEndToEnd(value: Double): Self = StObject.set(x, "linesNearEndToEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLines(value: Double): Self = StObject.set(x, "maxLines", value.asInstanceOf[js.Any])
+    inline def setMaxLines(value: Double): Self = StObject.set(x, "maxLines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenJaws(value: () => Unit): Self = StObject.set(x, "openJaws", js.Any.fromFunction0(value))
+    inline def setOpenJaws(value: () => Unit): Self = StObject.set(x, "openJaws", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPageSize(value: Size): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Size): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintArea(value: Rect): Self = StObject.set(x, "printArea", value.asInstanceOf[js.Any])
+    inline def setPrintArea(value: Rect): Self = StObject.set(x, "printArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintSide(value: PosPrinterPrintSide): Self = StObject.set(x, "printSide", value.asInstanceOf[js.Any])
+    inline def setPrintSide(value: PosPrinterPrintSide): Self = StObject.set(x, "printSide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveSlipAsync(value: Double => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "removeSlipAsync", js.Any.fromFunction1(value))
+    inline def setRemoveSlipAsync(value: Double => IPromiseWithIAsyncOperation[Boolean]): Self = StObject.set(x, "removeSlipAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSidewaysMaxChars(value: Double): Self = StObject.set(x, "sidewaysMaxChars", value.asInstanceOf[js.Any])
+    inline def setSidewaysMaxChars(value: Double): Self = StObject.set(x, "sidewaysMaxChars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSidewaysMaxLines(value: Double): Self = StObject.set(x, "sidewaysMaxLines", value.asInstanceOf[js.Any])
+    inline def setSidewaysMaxLines(value: Double): Self = StObject.set(x, "sidewaysMaxLines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateData(value: String => Boolean): Self = StObject.set(x, "validateData", js.Any.fromFunction1(value))
+    inline def setValidateData(value: String => Boolean): Self = StObject.set(x, "validateData", js.Any.fromFunction1(value))
   }
 }

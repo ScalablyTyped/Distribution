@@ -24,35 +24,25 @@ object mod {
     trait IAriaAttribute extends StObject
     object IAriaAttribute {
       
-      @scala.inline
-      def ariaChecked: typings.angularAria.angularAriaStrings.ariaChecked = "ariaChecked".asInstanceOf[typings.angularAria.angularAriaStrings.ariaChecked]
+      inline def ariaChecked: typings.angularAria.angularAriaStrings.ariaChecked = "ariaChecked".asInstanceOf[typings.angularAria.angularAriaStrings.ariaChecked]
       
-      @scala.inline
-      def ariaDisabled: typings.angularAria.angularAriaStrings.ariaDisabled = "ariaDisabled".asInstanceOf[typings.angularAria.angularAriaStrings.ariaDisabled]
+      inline def ariaDisabled: typings.angularAria.angularAriaStrings.ariaDisabled = "ariaDisabled".asInstanceOf[typings.angularAria.angularAriaStrings.ariaDisabled]
       
-      @scala.inline
-      def ariaHidden: typings.angularAria.angularAriaStrings.ariaHidden = "ariaHidden".asInstanceOf[typings.angularAria.angularAriaStrings.ariaHidden]
+      inline def ariaHidden: typings.angularAria.angularAriaStrings.ariaHidden = "ariaHidden".asInstanceOf[typings.angularAria.angularAriaStrings.ariaHidden]
       
-      @scala.inline
-      def ariaInvalid: typings.angularAria.angularAriaStrings.ariaInvalid = "ariaInvalid".asInstanceOf[typings.angularAria.angularAriaStrings.ariaInvalid]
+      inline def ariaInvalid: typings.angularAria.angularAriaStrings.ariaInvalid = "ariaInvalid".asInstanceOf[typings.angularAria.angularAriaStrings.ariaInvalid]
       
-      @scala.inline
-      def ariaReadonly: typings.angularAria.angularAriaStrings.ariaReadonly = "ariaReadonly".asInstanceOf[typings.angularAria.angularAriaStrings.ariaReadonly]
+      inline def ariaReadonly: typings.angularAria.angularAriaStrings.ariaReadonly = "ariaReadonly".asInstanceOf[typings.angularAria.angularAriaStrings.ariaReadonly]
       
-      @scala.inline
-      def ariaRequired: typings.angularAria.angularAriaStrings.ariaRequired = "ariaRequired".asInstanceOf[typings.angularAria.angularAriaStrings.ariaRequired]
+      inline def ariaRequired: typings.angularAria.angularAriaStrings.ariaRequired = "ariaRequired".asInstanceOf[typings.angularAria.angularAriaStrings.ariaRequired]
       
-      @scala.inline
-      def ariaValue: typings.angularAria.angularAriaStrings.ariaValue = "ariaValue".asInstanceOf[typings.angularAria.angularAriaStrings.ariaValue]
+      inline def ariaValue: typings.angularAria.angularAriaStrings.ariaValue = "ariaValue".asInstanceOf[typings.angularAria.angularAriaStrings.ariaValue]
       
-      @scala.inline
-      def bindKeydown: typings.angularAria.angularAriaStrings.bindKeydown = "bindKeydown".asInstanceOf[typings.angularAria.angularAriaStrings.bindKeydown]
+      inline def bindKeydown: typings.angularAria.angularAriaStrings.bindKeydown = "bindKeydown".asInstanceOf[typings.angularAria.angularAriaStrings.bindKeydown]
       
-      @scala.inline
-      def bindRoleForClick: typings.angularAria.angularAriaStrings.bindRoleForClick = "bindRoleForClick".asInstanceOf[typings.angularAria.angularAriaStrings.bindRoleForClick]
+      inline def bindRoleForClick: typings.angularAria.angularAriaStrings.bindRoleForClick = "bindRoleForClick".asInstanceOf[typings.angularAria.angularAriaStrings.bindRoleForClick]
       
-      @scala.inline
-      def tabindex: typings.angularAria.angularAriaStrings.tabindex = "tabindex".asInstanceOf[typings.angularAria.angularAriaStrings.tabindex]
+      inline def tabindex: typings.angularAria.angularAriaStrings.tabindex = "tabindex".asInstanceOf[typings.angularAria.angularAriaStrings.tabindex]
     }
     
     /**
@@ -64,17 +54,14 @@ object mod {
     }
     object IAriaProvider {
       
-      @scala.inline
-      def apply(config: IAriaProviderOptions => Unit): IAriaProvider = {
+      inline def apply(config: IAriaProviderOptions => Unit): IAriaProvider = {
         val __obj = js.Dynamic.literal(config = js.Any.fromFunction1(config))
         __obj.asInstanceOf[IAriaProvider]
       }
       
-      @scala.inline
-      implicit class IAriaProviderMutableBuilder[Self <: IAriaProvider] (val x: Self) extends AnyVal {
+      extension [Self <: IAriaProvider](x: Self) {
         
-        @scala.inline
-        def setConfig(value: IAriaProviderOptions => Unit): Self = StObject.set(x, "config", js.Any.fromFunction1(value))
+        inline def setConfig(value: IAriaProviderOptions => Unit): Self = StObject.set(x, "config", js.Any.fromFunction1(value))
       }
     }
     
@@ -103,74 +90,52 @@ object mod {
     }
     object IAriaProviderOptions {
       
-      @scala.inline
-      def apply(): IAriaProviderOptions = {
+      inline def apply(): IAriaProviderOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IAriaProviderOptions]
       }
       
-      @scala.inline
-      implicit class IAriaProviderOptionsMutableBuilder[Self <: IAriaProviderOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IAriaProviderOptions](x: Self) {
         
-        @scala.inline
-        def setAriaChecked(value: Boolean): Self = StObject.set(x, "ariaChecked", value.asInstanceOf[js.Any])
+        inline def setAriaChecked(value: Boolean): Self = StObject.set(x, "ariaChecked", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAriaCheckedUndefined: Self = StObject.set(x, "ariaChecked", js.undefined)
+        inline def setAriaCheckedUndefined: Self = StObject.set(x, "ariaChecked", js.undefined)
         
-        @scala.inline
-        def setAriaDisabled(value: Boolean): Self = StObject.set(x, "ariaDisabled", value.asInstanceOf[js.Any])
+        inline def setAriaDisabled(value: Boolean): Self = StObject.set(x, "ariaDisabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAriaDisabledUndefined: Self = StObject.set(x, "ariaDisabled", js.undefined)
+        inline def setAriaDisabledUndefined: Self = StObject.set(x, "ariaDisabled", js.undefined)
         
-        @scala.inline
-        def setAriaHidden(value: Boolean): Self = StObject.set(x, "ariaHidden", value.asInstanceOf[js.Any])
+        inline def setAriaHidden(value: Boolean): Self = StObject.set(x, "ariaHidden", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAriaHiddenUndefined: Self = StObject.set(x, "ariaHidden", js.undefined)
+        inline def setAriaHiddenUndefined: Self = StObject.set(x, "ariaHidden", js.undefined)
         
-        @scala.inline
-        def setAriaInvalid(value: Boolean): Self = StObject.set(x, "ariaInvalid", value.asInstanceOf[js.Any])
+        inline def setAriaInvalid(value: Boolean): Self = StObject.set(x, "ariaInvalid", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAriaInvalidUndefined: Self = StObject.set(x, "ariaInvalid", js.undefined)
+        inline def setAriaInvalidUndefined: Self = StObject.set(x, "ariaInvalid", js.undefined)
         
-        @scala.inline
-        def setAriaReadonly(value: Boolean): Self = StObject.set(x, "ariaReadonly", value.asInstanceOf[js.Any])
+        inline def setAriaReadonly(value: Boolean): Self = StObject.set(x, "ariaReadonly", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAriaReadonlyUndefined: Self = StObject.set(x, "ariaReadonly", js.undefined)
+        inline def setAriaReadonlyUndefined: Self = StObject.set(x, "ariaReadonly", js.undefined)
         
-        @scala.inline
-        def setAriaRequired(value: Boolean): Self = StObject.set(x, "ariaRequired", value.asInstanceOf[js.Any])
+        inline def setAriaRequired(value: Boolean): Self = StObject.set(x, "ariaRequired", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAriaRequiredUndefined: Self = StObject.set(x, "ariaRequired", js.undefined)
+        inline def setAriaRequiredUndefined: Self = StObject.set(x, "ariaRequired", js.undefined)
         
-        @scala.inline
-        def setAriaValue(value: Boolean): Self = StObject.set(x, "ariaValue", value.asInstanceOf[js.Any])
+        inline def setAriaValue(value: Boolean): Self = StObject.set(x, "ariaValue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAriaValueUndefined: Self = StObject.set(x, "ariaValue", js.undefined)
+        inline def setAriaValueUndefined: Self = StObject.set(x, "ariaValue", js.undefined)
         
-        @scala.inline
-        def setBindKeydown(value: Boolean): Self = StObject.set(x, "bindKeydown", value.asInstanceOf[js.Any])
+        inline def setBindKeydown(value: Boolean): Self = StObject.set(x, "bindKeydown", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBindKeydownUndefined: Self = StObject.set(x, "bindKeydown", js.undefined)
+        inline def setBindKeydownUndefined: Self = StObject.set(x, "bindKeydown", js.undefined)
         
-        @scala.inline
-        def setBindRoleForClick(value: Boolean): Self = StObject.set(x, "bindRoleForClick", value.asInstanceOf[js.Any])
+        inline def setBindRoleForClick(value: Boolean): Self = StObject.set(x, "bindRoleForClick", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBindRoleForClickUndefined: Self = StObject.set(x, "bindRoleForClick", js.undefined)
+        inline def setBindRoleForClickUndefined: Self = StObject.set(x, "bindRoleForClick", js.undefined)
         
-        @scala.inline
-        def setTabindex(value: Boolean): Self = StObject.set(x, "tabindex", value.asInstanceOf[js.Any])
+        inline def setTabindex(value: Boolean): Self = StObject.set(x, "tabindex", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTabindexUndefined: Self = StObject.set(x, "tabindex", js.undefined)
+        inline def setTabindexUndefined: Self = StObject.set(x, "tabindex", js.undefined)
       }
     }
     
@@ -183,17 +148,14 @@ object mod {
     }
     object IAriaService {
       
-      @scala.inline
-      def apply(config: IAriaAttribute => Boolean): IAriaService = {
+      inline def apply(config: IAriaAttribute => Boolean): IAriaService = {
         val __obj = js.Dynamic.literal(config = js.Any.fromFunction1(config))
         __obj.asInstanceOf[IAriaService]
       }
       
-      @scala.inline
-      implicit class IAriaServiceMutableBuilder[Self <: IAriaService] (val x: Self) extends AnyVal {
+      extension [Self <: IAriaService](x: Self) {
         
-        @scala.inline
-        def setConfig(value: IAriaAttribute => Boolean): Self = StObject.set(x, "config", js.Any.fromFunction1(value))
+        inline def setConfig(value: IAriaAttribute => Boolean): Self = StObject.set(x, "config", js.Any.fromFunction1(value))
       }
     }
   }

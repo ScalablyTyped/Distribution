@@ -23,34 +23,25 @@ trait DescribeWorkspaceImagePermissionsResult extends StObject {
 }
 object DescribeWorkspaceImagePermissionsResult {
   
-  @scala.inline
-  def apply(): DescribeWorkspaceImagePermissionsResult = {
+  inline def apply(): DescribeWorkspaceImagePermissionsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeWorkspaceImagePermissionsResult]
   }
   
-  @scala.inline
-  implicit class DescribeWorkspaceImagePermissionsResultMutableBuilder[Self <: DescribeWorkspaceImagePermissionsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeWorkspaceImagePermissionsResult](x: Self) {
     
-    @scala.inline
-    def setImageId(value: WorkspaceImageId): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
+    inline def setImageId(value: WorkspaceImageId): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageIdUndefined: Self = StObject.set(x, "ImageId", js.undefined)
+    inline def setImageIdUndefined: Self = StObject.set(x, "ImageId", js.undefined)
     
-    @scala.inline
-    def setImagePermissions(value: ImagePermissions): Self = StObject.set(x, "ImagePermissions", value.asInstanceOf[js.Any])
+    inline def setImagePermissions(value: ImagePermissions): Self = StObject.set(x, "ImagePermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagePermissionsUndefined: Self = StObject.set(x, "ImagePermissions", js.undefined)
+    inline def setImagePermissionsUndefined: Self = StObject.set(x, "ImagePermissions", js.undefined)
     
-    @scala.inline
-    def setImagePermissionsVarargs(value: ImagePermission*): Self = StObject.set(x, "ImagePermissions", js.Array(value :_*))
+    inline def setImagePermissionsVarargs(value: ImagePermission*): Self = StObject.set(x, "ImagePermissions", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

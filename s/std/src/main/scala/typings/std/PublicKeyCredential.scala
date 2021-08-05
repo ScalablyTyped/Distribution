@@ -16,8 +16,7 @@ trait PublicKeyCredential
 }
 object PublicKeyCredential {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getClientExtensionResults: () => AuthenticationExtensionsClientOutputs,
     id: java.lang.String,
     rawId: ArrayBuffer,
@@ -29,16 +28,12 @@ object PublicKeyCredential {
     __obj.asInstanceOf[PublicKeyCredential]
   }
   
-  @scala.inline
-  implicit class PublicKeyCredentialMutableBuilder[Self <: PublicKeyCredential] (val x: Self) extends AnyVal {
+  extension [Self <: PublicKeyCredential](x: Self) {
     
-    @scala.inline
-    def setGetClientExtensionResults(value: () => AuthenticationExtensionsClientOutputs): Self = StObject.set(x, "getClientExtensionResults", js.Any.fromFunction0(value))
+    inline def setGetClientExtensionResults(value: () => AuthenticationExtensionsClientOutputs): Self = StObject.set(x, "getClientExtensionResults", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRawId(value: ArrayBuffer): Self = StObject.set(x, "rawId", value.asInstanceOf[js.Any])
+    inline def setRawId(value: ArrayBuffer): Self = StObject.set(x, "rawId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: AuthenticatorResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: AuthenticatorResponse): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

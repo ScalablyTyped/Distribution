@@ -8,6 +8,5 @@ object delayStrings {
   
   @js.native
   sealed trait abort extends StObject
-  @scala.inline
-  def abort: abort = "abort".asInstanceOf[abort]
+  inline def abort: abort = "abort".asInstanceOf[abort]
 }

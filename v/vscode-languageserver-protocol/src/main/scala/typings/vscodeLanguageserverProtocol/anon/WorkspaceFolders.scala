@@ -13,19 +13,15 @@ trait WorkspaceFolders extends StObject {
 }
 object WorkspaceFolders {
   
-  @scala.inline
-  def apply(): WorkspaceFolders = {
+  inline def apply(): WorkspaceFolders = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkspaceFolders]
   }
   
-  @scala.inline
-  implicit class WorkspaceFoldersMutableBuilder[Self <: WorkspaceFolders] (val x: Self) extends AnyVal {
+  extension [Self <: WorkspaceFolders](x: Self) {
     
-    @scala.inline
-    def setWorkspaceFolders(value: Boolean): Self = StObject.set(x, "workspaceFolders", value.asInstanceOf[js.Any])
+    inline def setWorkspaceFolders(value: Boolean): Self = StObject.set(x, "workspaceFolders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceFoldersUndefined: Self = StObject.set(x, "workspaceFolders", js.undefined)
+    inline def setWorkspaceFoldersUndefined: Self = StObject.set(x, "workspaceFolders", js.undefined)
   }
 }

@@ -25,8 +25,7 @@ trait RenderContextForm
 }
 object RenderContextForm {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CurrentItem: Item,
     FieldControlModes: StringDictionary[ClientControlMode],
     FormContext: ClientFormContext,
@@ -38,31 +37,22 @@ object RenderContextForm {
     __obj.asInstanceOf[RenderContextForm]
   }
   
-  @scala.inline
-  implicit class RenderContextFormMutableBuilder[Self <: RenderContextForm] (val x: Self) extends AnyVal {
+  extension [Self <: RenderContextForm](x: Self) {
     
-    @scala.inline
-    def setCSRCustomLayout(value: Boolean): Self = StObject.set(x, "CSRCustomLayout", value.asInstanceOf[js.Any])
+    inline def setCSRCustomLayout(value: Boolean): Self = StObject.set(x, "CSRCustomLayout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCSRCustomLayoutUndefined: Self = StObject.set(x, "CSRCustomLayout", js.undefined)
+    inline def setCSRCustomLayoutUndefined: Self = StObject.set(x, "CSRCustomLayout", js.undefined)
     
-    @scala.inline
-    def setCurrentItem(value: Item): Self = StObject.set(x, "CurrentItem", value.asInstanceOf[js.Any])
+    inline def setCurrentItem(value: Item): Self = StObject.set(x, "CurrentItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldControlModes(value: StringDictionary[ClientControlMode]): Self = StObject.set(x, "FieldControlModes", value.asInstanceOf[js.Any])
+    inline def setFieldControlModes(value: StringDictionary[ClientControlMode]): Self = StObject.set(x, "FieldControlModes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormContext(value: ClientFormContext): Self = StObject.set(x, "FormContext", value.asInstanceOf[js.Any])
+    inline def setFormContext(value: ClientFormContext): Self = StObject.set(x, "FormContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormUniqueId(value: String): Self = StObject.set(x, "FormUniqueId", value.asInstanceOf[js.Any])
+    inline def setFormUniqueId(value: String): Self = StObject.set(x, "FormUniqueId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListData(value: ListDataInForm): Self = StObject.set(x, "ListData", value.asInstanceOf[js.Any])
+    inline def setListData(value: ListDataInForm): Self = StObject.set(x, "ListData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListSchema(value: ListSchemaInForm): Self = StObject.set(x, "ListSchema", value.asInstanceOf[js.Any])
+    inline def setListSchema(value: ListSchemaInForm): Self = StObject.set(x, "ListSchema", value.asInstanceOf[js.Any])
   }
 }

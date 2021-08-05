@@ -33,8 +33,7 @@ trait PhotoImportStorageMedium extends StObject {
 }
 object PhotoImportStorageMedium {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     availableSpaceInBytes: Double,
     capacityInBytes: Double,
     description: String,
@@ -48,31 +47,22 @@ object PhotoImportStorageMedium {
     __obj.asInstanceOf[PhotoImportStorageMedium]
   }
   
-  @scala.inline
-  implicit class PhotoImportStorageMediumMutableBuilder[Self <: PhotoImportStorageMedium] (val x: Self) extends AnyVal {
+  extension [Self <: PhotoImportStorageMedium](x: Self) {
     
-    @scala.inline
-    def setAvailableSpaceInBytes(value: Double): Self = StObject.set(x, "availableSpaceInBytes", value.asInstanceOf[js.Any])
+    inline def setAvailableSpaceInBytes(value: Double): Self = StObject.set(x, "availableSpaceInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapacityInBytes(value: Double): Self = StObject.set(x, "capacityInBytes", value.asInstanceOf[js.Any])
+    inline def setCapacityInBytes(value: Double): Self = StObject.set(x, "capacityInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
+    inline def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
+    inline def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageMediumType(value: PhotoImportStorageMediumType): Self = StObject.set(x, "storageMediumType", value.asInstanceOf[js.Any])
+    inline def setStorageMediumType(value: PhotoImportStorageMediumType): Self = StObject.set(x, "storageMediumType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedAccessMode(value: PhotoImportAccessMode): Self = StObject.set(x, "supportedAccessMode", value.asInstanceOf[js.Any])
+    inline def setSupportedAccessMode(value: PhotoImportAccessMode): Self = StObject.set(x, "supportedAccessMode", value.asInstanceOf[js.Any])
   }
 }

@@ -88,109 +88,75 @@ trait PostContentResponse extends StObject {
 }
 object PostContentResponse {
   
-  @scala.inline
-  def apply(): PostContentResponse = {
+  inline def apply(): PostContentResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PostContentResponse]
   }
   
-  @scala.inline
-  implicit class PostContentResponseMutableBuilder[Self <: PostContentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PostContentResponse](x: Self) {
     
-    @scala.inline
-    def setActiveContexts(value: ActiveContextsString): Self = StObject.set(x, "activeContexts", value.asInstanceOf[js.Any])
+    inline def setActiveContexts(value: ActiveContextsString): Self = StObject.set(x, "activeContexts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveContextsUndefined: Self = StObject.set(x, "activeContexts", js.undefined)
+    inline def setActiveContextsUndefined: Self = StObject.set(x, "activeContexts", js.undefined)
     
-    @scala.inline
-    def setAlternativeIntents(value: String): Self = StObject.set(x, "alternativeIntents", value.asInstanceOf[js.Any])
+    inline def setAlternativeIntents(value: String): Self = StObject.set(x, "alternativeIntents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternativeIntentsUndefined: Self = StObject.set(x, "alternativeIntents", js.undefined)
+    inline def setAlternativeIntentsUndefined: Self = StObject.set(x, "alternativeIntents", js.undefined)
     
-    @scala.inline
-    def setAudioStream(value: BlobStream): Self = StObject.set(x, "audioStream", value.asInstanceOf[js.Any])
+    inline def setAudioStream(value: BlobStream): Self = StObject.set(x, "audioStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioStreamUndefined: Self = StObject.set(x, "audioStream", js.undefined)
+    inline def setAudioStreamUndefined: Self = StObject.set(x, "audioStream", js.undefined)
     
-    @scala.inline
-    def setBotVersion(value: BotVersion): Self = StObject.set(x, "botVersion", value.asInstanceOf[js.Any])
+    inline def setBotVersion(value: BotVersion): Self = StObject.set(x, "botVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBotVersionUndefined: Self = StObject.set(x, "botVersion", js.undefined)
+    inline def setBotVersionUndefined: Self = StObject.set(x, "botVersion", js.undefined)
     
-    @scala.inline
-    def setContentType(value: HttpContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: HttpContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setDialogState(value: DialogState): Self = StObject.set(x, "dialogState", value.asInstanceOf[js.Any])
+    inline def setDialogState(value: DialogState): Self = StObject.set(x, "dialogState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialogStateUndefined: Self = StObject.set(x, "dialogState", js.undefined)
+    inline def setDialogStateUndefined: Self = StObject.set(x, "dialogState", js.undefined)
     
-    @scala.inline
-    def setInputTranscript(value: String): Self = StObject.set(x, "inputTranscript", value.asInstanceOf[js.Any])
+    inline def setInputTranscript(value: String): Self = StObject.set(x, "inputTranscript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputTranscriptUndefined: Self = StObject.set(x, "inputTranscript", js.undefined)
+    inline def setInputTranscriptUndefined: Self = StObject.set(x, "inputTranscript", js.undefined)
     
-    @scala.inline
-    def setIntentName(value: IntentName): Self = StObject.set(x, "intentName", value.asInstanceOf[js.Any])
+    inline def setIntentName(value: IntentName): Self = StObject.set(x, "intentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntentNameUndefined: Self = StObject.set(x, "intentName", js.undefined)
+    inline def setIntentNameUndefined: Self = StObject.set(x, "intentName", js.undefined)
     
-    @scala.inline
-    def setMessage(value: Text): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Text): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageFormat(value: MessageFormatType): Self = StObject.set(x, "messageFormat", value.asInstanceOf[js.Any])
+    inline def setMessageFormat(value: MessageFormatType): Self = StObject.set(x, "messageFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageFormatUndefined: Self = StObject.set(x, "messageFormat", js.undefined)
+    inline def setMessageFormatUndefined: Self = StObject.set(x, "messageFormat", js.undefined)
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setNluIntentConfidence(value: String): Self = StObject.set(x, "nluIntentConfidence", value.asInstanceOf[js.Any])
+    inline def setNluIntentConfidence(value: String): Self = StObject.set(x, "nluIntentConfidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNluIntentConfidenceUndefined: Self = StObject.set(x, "nluIntentConfidence", js.undefined)
+    inline def setNluIntentConfidenceUndefined: Self = StObject.set(x, "nluIntentConfidence", js.undefined)
     
-    @scala.inline
-    def setSentimentResponse(value: String): Self = StObject.set(x, "sentimentResponse", value.asInstanceOf[js.Any])
+    inline def setSentimentResponse(value: String): Self = StObject.set(x, "sentimentResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentimentResponseUndefined: Self = StObject.set(x, "sentimentResponse", js.undefined)
+    inline def setSentimentResponseUndefined: Self = StObject.set(x, "sentimentResponse", js.undefined)
     
-    @scala.inline
-    def setSessionAttributes(value: String): Self = StObject.set(x, "sessionAttributes", value.asInstanceOf[js.Any])
+    inline def setSessionAttributes(value: String): Self = StObject.set(x, "sessionAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionAttributesUndefined: Self = StObject.set(x, "sessionAttributes", js.undefined)
+    inline def setSessionAttributesUndefined: Self = StObject.set(x, "sessionAttributes", js.undefined)
     
-    @scala.inline
-    def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
+    inline def setSessionId(value: String): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
+    inline def setSessionIdUndefined: Self = StObject.set(x, "sessionId", js.undefined)
     
-    @scala.inline
-    def setSlotToElicit(value: String): Self = StObject.set(x, "slotToElicit", value.asInstanceOf[js.Any])
+    inline def setSlotToElicit(value: String): Self = StObject.set(x, "slotToElicit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlotToElicitUndefined: Self = StObject.set(x, "slotToElicit", js.undefined)
+    inline def setSlotToElicitUndefined: Self = StObject.set(x, "slotToElicit", js.undefined)
     
-    @scala.inline
-    def setSlots(value: String): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
+    inline def setSlots(value: String): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
+    inline def setSlotsUndefined: Self = StObject.set(x, "slots", js.undefined)
   }
 }

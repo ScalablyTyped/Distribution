@@ -16,31 +16,23 @@ trait DataTypeField extends StObject {
 }
 object DataTypeField {
   
-  @scala.inline
-  def apply(): DataTypeField = {
+  inline def apply(): DataTypeField = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataTypeField]
   }
   
-  @scala.inline
-  implicit class DataTypeFieldMutableBuilder[Self <: DataTypeField] (val x: Self) extends AnyVal {
+  extension [Self <: DataTypeField](x: Self) {
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
+    inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
   }
 }

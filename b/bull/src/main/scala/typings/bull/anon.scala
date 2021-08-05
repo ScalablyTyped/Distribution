@@ -37,8 +37,7 @@ object anon {
   }
   object AttemptsMade {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       attemptsMade: Double,
       data: T,
       delay: Double,
@@ -54,59 +53,41 @@ object anon {
       __obj.asInstanceOf[AttemptsMade[T]]
     }
     
-    @scala.inline
-    implicit class AttemptsMadeMutableBuilder[Self <: AttemptsMade[?], T] (val x: Self & AttemptsMade[T]) extends AnyVal {
+    extension [Self <: AttemptsMade[?], T](x: Self & AttemptsMade[T]) {
       
-      @scala.inline
-      def setAttemptsMade(value: Double): Self = StObject.set(x, "attemptsMade", value.asInstanceOf[js.Any])
+      inline def setAttemptsMade(value: Double): Self = StObject.set(x, "attemptsMade", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailedReason(value: js.Any): Self = StObject.set(x, "failedReason", value.asInstanceOf[js.Any])
+      inline def setFailedReason(value: js.Any): Self = StObject.set(x, "failedReason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFinishedOn(value: Double): Self = StObject.set(x, "finishedOn", value.asInstanceOf[js.Any])
+      inline def setFinishedOn(value: Double): Self = StObject.set(x, "finishedOn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFinishedOnNull: Self = StObject.set(x, "finishedOn", null)
+      inline def setFinishedOnNull: Self = StObject.set(x, "finishedOn", null)
       
-      @scala.inline
-      def setId(value: typings.bull.mod.JobId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: typings.bull.mod.JobId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpts(value: JobOptions): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
+      inline def setOpts(value: JobOptions): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessedOn(value: Double): Self = StObject.set(x, "processedOn", value.asInstanceOf[js.Any])
+      inline def setProcessedOn(value: Double): Self = StObject.set(x, "processedOn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessedOnNull: Self = StObject.set(x, "processedOn", null)
+      inline def setProcessedOnNull: Self = StObject.set(x, "processedOn", null)
       
-      @scala.inline
-      def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+      inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReturnvalue(value: js.Any): Self = StObject.set(x, "returnvalue", value.asInstanceOf[js.Any])
+      inline def setReturnvalue(value: js.Any): Self = StObject.set(x, "returnvalue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStacktrace(value: js.Array[String]): Self = StObject.set(x, "stacktrace", value.asInstanceOf[js.Any])
+      inline def setStacktrace(value: js.Array[String]): Self = StObject.set(x, "stacktrace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStacktraceNull: Self = StObject.set(x, "stacktrace", null)
+      inline def setStacktraceNull: Self = StObject.set(x, "stacktrace", null)
       
-      @scala.inline
-      def setStacktraceVarargs(value: String*): Self = StObject.set(x, "stacktrace", js.Array(value :_*))
+      inline def setStacktraceVarargs(value: String*): Self = StObject.set(x, "stacktrace", js.Array(value :_*))
       
-      @scala.inline
-      def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -118,23 +99,18 @@ object anon {
   }
   object Count {
     
-    @scala.inline
-    def apply(count: Double, logs: js.Array[String]): Count = {
+    inline def apply(count: Double, logs: js.Array[String]): Count = {
       val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], logs = logs.asInstanceOf[js.Any])
       __obj.asInstanceOf[Count]
     }
     
-    @scala.inline
-    implicit class CountMutableBuilder[Self <: Count] (val x: Self) extends AnyVal {
+    extension [Self <: Count](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogs(value: js.Array[String]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
+      inline def setLogs(value: js.Array[String]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogsVarargs(value: String*): Self = StObject.set(x, "logs", js.Array(value :_*))
+      inline def setLogsVarargs(value: String*): Self = StObject.set(x, "logs", js.Array(value :_*))
     }
   }
   
@@ -148,29 +124,22 @@ object anon {
   }
   object Data {
     
-    @scala.inline
-    def apply[T](data: T): Data[T] = {
+    inline def apply[T](data: T): Data[T] = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[Data[T]]
     }
     
-    @scala.inline
-    implicit class DataMutableBuilder[Self <: Data[?], T] (val x: Self & Data[T]) extends AnyVal {
+    extension [Self <: Data[?], T](x: Self & Data[T]) {
       
-      @scala.inline
-      def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOpts(value: JobOptions): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
+      inline def setOpts(value: JobOptions): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptsUndefined: Self = StObject.set(x, "opts", js.undefined)
+      inline def setOptsUndefined: Self = StObject.set(x, "opts", js.undefined)
     }
   }
   
@@ -180,20 +149,16 @@ object anon {
   }
   object JobId {
     
-    @scala.inline
-    def apply(): JobId = {
+    inline def apply(): JobId = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JobId]
     }
     
-    @scala.inline
-    implicit class JobIdMutableBuilder[Self <: JobId] (val x: Self) extends AnyVal {
+    extension [Self <: JobId](x: Self) {
       
-      @scala.inline
-      def setJobId(value: typings.bull.mod.JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+      inline def setJobId(value: typings.bull.mod.JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
+      inline def setJobIdUndefined: Self = StObject.set(x, "jobId", js.undefined)
     }
   }
   
@@ -203,17 +168,14 @@ object anon {
   }
   object Message {
     
-    @scala.inline
-    def apply(message: String): Message = {
+    inline def apply(message: String): Message = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[Message]
     }
     
-    @scala.inline
-    implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+    extension [Self <: Message](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
 }

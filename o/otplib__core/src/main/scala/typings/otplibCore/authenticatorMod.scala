@@ -50,37 +50,29 @@ object authenticatorMod {
     def generateSecret(numberOfBytes: Double): Base32SecretKey = js.native
   }
   
-  @scala.inline
-  def authenticatorCheckWithWindow[T /* <: AuthenticatorOptions_[String] */](token: String, secret: Base32SecretKey, options: T): Double | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticatorCheckWithWindow")(token.asInstanceOf[js.Any], secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double | Null]
+  inline def authenticatorCheckWithWindow[T /* <: AuthenticatorOptions_[String] */](token: String, secret: Base32SecretKey, options: T): Double | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticatorCheckWithWindow")(token.asInstanceOf[js.Any], secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double | Null]
   
-  @scala.inline
-  def authenticatorDecoder[T /* <: AuthenticatorOptions_[js.Any] */](secret: Base32SecretKey, options: Pick[T, keyDecoder | encoding]): ReturnType[
+  inline def authenticatorDecoder[T /* <: AuthenticatorOptions_[js.Any] */](secret: Base32SecretKey, options: Pick[T, keyDecoder | encoding]): ReturnType[
     /* import warning: importer.ImportType#apply Failed type conversion: T['keyDecoder'] */ js.Any
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticatorDecoder")(secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReturnType[
     /* import warning: importer.ImportType#apply Failed type conversion: T['keyDecoder'] */ js.Any
   ]]
   
-  @scala.inline
-  def authenticatorDefaultOptions[T /* <: AuthenticatorOptions_[js.Any] */](): Partial[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticatorDefaultOptions")().asInstanceOf[Partial[T]]
+  inline def authenticatorDefaultOptions[T /* <: AuthenticatorOptions_[js.Any] */](): Partial[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticatorDefaultOptions")().asInstanceOf[Partial[T]]
   
-  @scala.inline
-  def authenticatorEncoder[T /* <: AuthenticatorOptions_[js.Any] */](secret: SecretKey, options: Pick[T, keyEncoder | encoding]): ReturnType[
+  inline def authenticatorEncoder[T /* <: AuthenticatorOptions_[js.Any] */](secret: SecretKey, options: Pick[T, keyEncoder | encoding]): ReturnType[
     /* import warning: importer.ImportType#apply Failed type conversion: T['keyEncoder'] */ js.Any
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticatorEncoder")(secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReturnType[
     /* import warning: importer.ImportType#apply Failed type conversion: T['keyEncoder'] */ js.Any
   ]]
   
-  @scala.inline
-  def authenticatorGenerateSecret[T /* <: AuthenticatorOptions_[String] */](numberOfBytes: Double, options: Pick[T, keyEncoder | encoding | createRandomBytes]): Base32SecretKey = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticatorGenerateSecret")(numberOfBytes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Base32SecretKey]
+  inline def authenticatorGenerateSecret[T /* <: AuthenticatorOptions_[String] */](numberOfBytes: Double, options: Pick[T, keyEncoder | encoding | createRandomBytes]): Base32SecretKey = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticatorGenerateSecret")(numberOfBytes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Base32SecretKey]
   
-  @scala.inline
-  def authenticatorOptionValidator[T /* <: AuthenticatorOptions_[js.Any] */](options: Partial[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticatorOptionValidator")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def authenticatorOptionValidator[T /* <: AuthenticatorOptions_[js.Any] */](options: Partial[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticatorOptionValidator")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def authenticatorOptions[T /* <: AuthenticatorOptions_[js.Any] */](opt: Partial[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticatorOptions")(opt.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def authenticatorOptions[T /* <: AuthenticatorOptions_[js.Any] */](opt: Partial[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticatorOptions")(opt.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @scala.inline
-  def authenticatorToken[T /* <: AuthenticatorOptions_[String] */](secret: Base32SecretKey, options: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticatorToken")(secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def authenticatorToken[T /* <: AuthenticatorOptions_[String] */](secret: Base32SecretKey, options: T): String = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticatorToken")(secret.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait AuthenticatorOptions_[T]
     extends StObject
@@ -122,8 +114,7 @@ object authenticatorMod {
   }
   object AuthenticatorOptions_ {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       algorithm: HashAlgorithms,
       createDigest: (/* algorithm */ HashAlgorithms, /* hmacKey */ HexString, /* counter */ HexString) => T,
       createHmacKey: (/* algorithm */ HashAlgorithms, /* secret */ SecretKey, /* encoding */ KeyEncodings) => T,
@@ -140,17 +131,13 @@ object authenticatorMod {
       __obj.asInstanceOf[AuthenticatorOptions_[T]]
     }
     
-    @scala.inline
-    implicit class AuthenticatorOptions_MutableBuilder[Self <: AuthenticatorOptions_[?], T] (val x: Self & AuthenticatorOptions_[T]) extends AnyVal {
+    extension [Self <: AuthenticatorOptions_[?], T](x: Self & AuthenticatorOptions_[T]) {
       
-      @scala.inline
-      def setCreateRandomBytes(value: (/* size */ Double, /* encoding */ KeyEncodings) => T): Self = StObject.set(x, "createRandomBytes", js.Any.fromFunction2(value))
+      inline def setCreateRandomBytes(value: (/* size */ Double, /* encoding */ KeyEncodings) => T): Self = StObject.set(x, "createRandomBytes", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setKeyDecoder(value: (/* encodedSecret */ Base32SecretKey, /* encoding */ KeyEncodings) => T): Self = StObject.set(x, "keyDecoder", js.Any.fromFunction2(value))
+      inline def setKeyDecoder(value: (/* encodedSecret */ Base32SecretKey, /* encoding */ KeyEncodings) => T): Self = StObject.set(x, "keyDecoder", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setKeyEncoder(value: (/* secret */ SecretKey, /* encoding */ KeyEncodings) => T): Self = StObject.set(x, "keyEncoder", js.Any.fromFunction2(value))
+      inline def setKeyEncoder(value: (/* secret */ SecretKey, /* encoding */ KeyEncodings) => T): Self = StObject.set(x, "keyEncoder", js.Any.fromFunction2(value))
     }
   }
   

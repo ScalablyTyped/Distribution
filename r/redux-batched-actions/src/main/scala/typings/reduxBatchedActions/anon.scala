@@ -13,17 +13,14 @@ object anon {
   }
   object Batch {
     
-    @scala.inline
-    def apply(): Batch = {
+    inline def apply(): Batch = {
       val __obj = js.Dynamic.literal(batch = true)
       __obj.asInstanceOf[Batch]
     }
     
-    @scala.inline
-    implicit class BatchMutableBuilder[Self <: Batch] (val x: Self) extends AnyVal {
+    extension [Self <: Batch](x: Self) {
       
-      @scala.inline
-      def setBatch(value: `true`): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
+      inline def setBatch(value: `true`): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
     }
   }
 }

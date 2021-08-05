@@ -18,19 +18,15 @@ trait DescribeResourceRequest extends StObject {
 }
 object DescribeResourceRequest {
   
-  @scala.inline
-  def apply(OrganizationId: OrganizationId, ResourceId: ResourceId): DescribeResourceRequest = {
+  inline def apply(OrganizationId: OrganizationId, ResourceId: ResourceId): DescribeResourceRequest = {
     val __obj = js.Dynamic.literal(OrganizationId = OrganizationId.asInstanceOf[js.Any], ResourceId = ResourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeResourceRequest]
   }
   
-  @scala.inline
-  implicit class DescribeResourceRequestMutableBuilder[Self <: DescribeResourceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeResourceRequest](x: Self) {
     
-    @scala.inline
-    def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
+    inline def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceId(value: ResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
   }
 }

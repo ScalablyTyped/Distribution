@@ -44,8 +44,7 @@ object libButtonMod {
     @JSImport("office-ui-fabric-react/lib/Button", "BaseButton.defaultProps")
     @js.native
     def defaultProps: PartialIBaseButtonProps = js.native
-    @scala.inline
-    def defaultProps_=(x: PartialIBaseButtonProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PartialIBaseButtonProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("office-ui-fabric-react/lib/Button", "Button")
@@ -170,10 +169,8 @@ object libButtonMod {
     def this(props: IButtonProps, context: js.Any) = this()
   }
   
-  @scala.inline
-  def getSplitButtonClassNames(styles: IButtonStyles, disabled: Boolean, expanded: Boolean, checked: Boolean): ISplitButtonClassNames = (^.asInstanceOf[js.Dynamic].applyDynamic("getSplitButtonClassNames")(styles.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], expanded.asInstanceOf[js.Any], checked.asInstanceOf[js.Any])).asInstanceOf[ISplitButtonClassNames]
-  @scala.inline
-  def getSplitButtonClassNames(
+  inline def getSplitButtonClassNames(styles: IButtonStyles, disabled: Boolean, expanded: Boolean, checked: Boolean): ISplitButtonClassNames = (^.asInstanceOf[js.Dynamic].applyDynamic("getSplitButtonClassNames")(styles.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], expanded.asInstanceOf[js.Any], checked.asInstanceOf[js.Any])).asInstanceOf[ISplitButtonClassNames]
+  inline def getSplitButtonClassNames(
     styles: IButtonStyles,
     disabled: Boolean,
     expanded: Boolean,

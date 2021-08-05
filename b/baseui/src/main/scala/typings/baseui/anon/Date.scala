@@ -10,19 +10,15 @@ trait Date extends StObject {
 }
 object Date {
   
-  @scala.inline
-  def apply(date: typings.std.Date | js.Array[typings.std.Date]): Date = {
+  inline def apply(date: typings.std.Date | js.Array[typings.std.Date]): Date = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any])
     __obj.asInstanceOf[Date]
   }
   
-  @scala.inline
-  implicit class DateMutableBuilder[Self <: Date] (val x: Self) extends AnyVal {
+  extension [Self <: Date](x: Self) {
     
-    @scala.inline
-    def setDate(value: typings.std.Date | js.Array[typings.std.Date]): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: typings.std.Date | js.Array[typings.std.Date]): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateVarargs(value: typings.std.Date*): Self = StObject.set(x, "date", js.Array(value :_*))
+    inline def setDateVarargs(value: typings.std.Date*): Self = StObject.set(x, "date", js.Array(value :_*))
   }
 }

@@ -33,8 +33,7 @@ trait GetNetworkInterfaceAssociation extends StObject {
 }
 object GetNetworkInterfaceAssociation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allocationId: String,
     associationId: String,
     ipOwnerId: String,
@@ -45,22 +44,16 @@ object GetNetworkInterfaceAssociation {
     __obj.asInstanceOf[GetNetworkInterfaceAssociation]
   }
   
-  @scala.inline
-  implicit class GetNetworkInterfaceAssociationMutableBuilder[Self <: GetNetworkInterfaceAssociation] (val x: Self) extends AnyVal {
+  extension [Self <: GetNetworkInterfaceAssociation](x: Self) {
     
-    @scala.inline
-    def setAllocationId(value: String): Self = StObject.set(x, "allocationId", value.asInstanceOf[js.Any])
+    inline def setAllocationId(value: String): Self = StObject.set(x, "allocationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationId(value: String): Self = StObject.set(x, "associationId", value.asInstanceOf[js.Any])
+    inline def setAssociationId(value: String): Self = StObject.set(x, "associationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpOwnerId(value: String): Self = StObject.set(x, "ipOwnerId", value.asInstanceOf[js.Any])
+    inline def setIpOwnerId(value: String): Self = StObject.set(x, "ipOwnerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicDnsName(value: String): Self = StObject.set(x, "publicDnsName", value.asInstanceOf[js.Any])
+    inline def setPublicDnsName(value: String): Self = StObject.set(x, "publicDnsName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicIp(value: String): Self = StObject.set(x, "publicIp", value.asInstanceOf[js.Any])
+    inline def setPublicIp(value: String): Self = StObject.set(x, "publicIp", value.asInstanceOf[js.Any])
   }
 }

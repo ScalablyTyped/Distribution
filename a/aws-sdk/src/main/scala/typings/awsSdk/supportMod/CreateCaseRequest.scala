@@ -53,64 +53,45 @@ trait CreateCaseRequest extends StObject {
 }
 object CreateCaseRequest {
   
-  @scala.inline
-  def apply(communicationBody: CommunicationBody, subject: Subject): CreateCaseRequest = {
+  inline def apply(communicationBody: CommunicationBody, subject: Subject): CreateCaseRequest = {
     val __obj = js.Dynamic.literal(communicationBody = communicationBody.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCaseRequest]
   }
   
-  @scala.inline
-  implicit class CreateCaseRequestMutableBuilder[Self <: CreateCaseRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCaseRequest](x: Self) {
     
-    @scala.inline
-    def setAttachmentSetId(value: AttachmentSetId): Self = StObject.set(x, "attachmentSetId", value.asInstanceOf[js.Any])
+    inline def setAttachmentSetId(value: AttachmentSetId): Self = StObject.set(x, "attachmentSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentSetIdUndefined: Self = StObject.set(x, "attachmentSetId", js.undefined)
+    inline def setAttachmentSetIdUndefined: Self = StObject.set(x, "attachmentSetId", js.undefined)
     
-    @scala.inline
-    def setCategoryCode(value: CategoryCode): Self = StObject.set(x, "categoryCode", value.asInstanceOf[js.Any])
+    inline def setCategoryCode(value: CategoryCode): Self = StObject.set(x, "categoryCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryCodeUndefined: Self = StObject.set(x, "categoryCode", js.undefined)
+    inline def setCategoryCodeUndefined: Self = StObject.set(x, "categoryCode", js.undefined)
     
-    @scala.inline
-    def setCcEmailAddresses(value: CcEmailAddressList): Self = StObject.set(x, "ccEmailAddresses", value.asInstanceOf[js.Any])
+    inline def setCcEmailAddresses(value: CcEmailAddressList): Self = StObject.set(x, "ccEmailAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCcEmailAddressesUndefined: Self = StObject.set(x, "ccEmailAddresses", js.undefined)
+    inline def setCcEmailAddressesUndefined: Self = StObject.set(x, "ccEmailAddresses", js.undefined)
     
-    @scala.inline
-    def setCcEmailAddressesVarargs(value: CcEmailAddress*): Self = StObject.set(x, "ccEmailAddresses", js.Array(value :_*))
+    inline def setCcEmailAddressesVarargs(value: CcEmailAddress*): Self = StObject.set(x, "ccEmailAddresses", js.Array(value :_*))
     
-    @scala.inline
-    def setCommunicationBody(value: CommunicationBody): Self = StObject.set(x, "communicationBody", value.asInstanceOf[js.Any])
+    inline def setCommunicationBody(value: CommunicationBody): Self = StObject.set(x, "communicationBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssueType(value: IssueType): Self = StObject.set(x, "issueType", value.asInstanceOf[js.Any])
+    inline def setIssueType(value: IssueType): Self = StObject.set(x, "issueType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssueTypeUndefined: Self = StObject.set(x, "issueType", js.undefined)
+    inline def setIssueTypeUndefined: Self = StObject.set(x, "issueType", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: Language): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: Language): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setServiceCode(value: ServiceCode): Self = StObject.set(x, "serviceCode", value.asInstanceOf[js.Any])
+    inline def setServiceCode(value: ServiceCode): Self = StObject.set(x, "serviceCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceCodeUndefined: Self = StObject.set(x, "serviceCode", js.undefined)
+    inline def setServiceCodeUndefined: Self = StObject.set(x, "serviceCode", js.undefined)
     
-    @scala.inline
-    def setSeverityCode(value: SeverityCode): Self = StObject.set(x, "severityCode", value.asInstanceOf[js.Any])
+    inline def setSeverityCode(value: SeverityCode): Self = StObject.set(x, "severityCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverityCodeUndefined: Self = StObject.set(x, "severityCode", js.undefined)
+    inline def setSeverityCodeUndefined: Self = StObject.set(x, "severityCode", js.undefined)
     
-    @scala.inline
-    def setSubject(value: Subject): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: Subject): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
   }
 }

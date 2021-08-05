@@ -14,26 +14,20 @@ object anon {
   }
   object Argv {
     
-    @scala.inline
-    def apply(argv: js.Array[String]): Argv = {
+    inline def apply(argv: js.Array[String]): Argv = {
       val __obj = js.Dynamic.literal(argv = argv.asInstanceOf[js.Any], command = null)
       __obj.asInstanceOf[Argv]
     }
     
-    @scala.inline
-    implicit class ArgvMutableBuilder[Self <: Argv] (val x: Self) extends AnyVal {
+    extension [Self <: Argv](x: Self) {
       
-      @scala.inline
-      def setArgv(value: js.Array[String]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
+      inline def setArgv(value: js.Array[String]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgvVarargs(value: String*): Self = StObject.set(x, "argv", js.Array(value :_*))
+      inline def setArgvVarargs(value: String*): Self = StObject.set(x, "argv", js.Array(value :_*))
       
-      @scala.inline
-      def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+      inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommandNull: Self = StObject.set(x, "command", null)
+      inline def setCommandNull: Self = StObject.set(x, "command", null)
     }
   }
 }

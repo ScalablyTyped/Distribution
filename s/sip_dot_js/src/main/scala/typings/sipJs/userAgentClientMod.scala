@@ -36,7 +36,7 @@ object userAgentClientMod {
       delegate: OutgoingRequestDelegate
     ) = this()
     
-    var _transaction: js.Any = js.native
+    /* private */ var _transaction: js.Any = js.native
     
     /**
       * If a 401 (Unauthorized) or 407 (Proxy Authentication Required)
@@ -63,15 +63,15 @@ object userAgentClientMod {
     /* protected */ def authenticationGuard(message: IncomingResponseMessage): Boolean = js.native
     /* protected */ def authenticationGuard(message: IncomingResponseMessage, dialog: Dialog): Boolean = js.native
     
-    var challenged: js.Any = js.native
+    /* private */ var challenged: js.Any = js.native
     
-    var core: UserAgentCore = js.native
+    /* protected */ var core: UserAgentCore = js.native
     
-    var credentials: js.Any = js.native
+    /* private */ var credentials: js.Any = js.native
     
-    var init: js.Any = js.native
+    /* private */ var init: js.Any = js.native
     
-    var logger: Logger = js.native
+    /* protected */ var logger: Logger = js.native
     
     def loggerFactory: LoggerFactory = js.native
     
@@ -113,12 +113,12 @@ object userAgentClientMod {
       */
     /* protected */ def receiveResponse(message: IncomingResponseMessage): Unit = js.native
     
-    var stale: js.Any = js.native
+    /* private */ var stale: js.Any = js.native
     
     /** The transaction associated with this request. */
     def transaction: ClientTransaction = js.native
     
-    var transactionConstructor: js.Any = js.native
+    /* private */ var transactionConstructor: js.Any = js.native
   }
   
   type ClientTransactionConstructor = Instantiable3[

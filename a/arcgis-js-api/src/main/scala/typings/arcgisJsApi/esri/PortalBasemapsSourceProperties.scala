@@ -38,37 +38,27 @@ trait PortalBasemapsSourceProperties
 }
 object PortalBasemapsSourceProperties {
   
-  @scala.inline
-  def apply(): PortalBasemapsSourceProperties = {
+  inline def apply(): PortalBasemapsSourceProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PortalBasemapsSourceProperties]
   }
   
-  @scala.inline
-  implicit class PortalBasemapsSourcePropertiesMutableBuilder[Self <: PortalBasemapsSourceProperties] (val x: Self) extends AnyVal {
+  extension [Self <: PortalBasemapsSourceProperties](x: Self) {
     
-    @scala.inline
-    def setFilterFunction(value: (/* item */ Basemap, /* index */ Double, /* array */ js.Array[Basemap]) => Boolean): Self = StObject.set(x, "filterFunction", js.Any.fromFunction3(value))
+    inline def setFilterFunction(value: (/* item */ Basemap, /* index */ Double, /* array */ js.Array[Basemap]) => Boolean): Self = StObject.set(x, "filterFunction", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setFilterFunctionUndefined: Self = StObject.set(x, "filterFunction", js.undefined)
+    inline def setFilterFunctionUndefined: Self = StObject.set(x, "filterFunction", js.undefined)
     
-    @scala.inline
-    def setPortal(value: PortalProperties): Self = StObject.set(x, "portal", value.asInstanceOf[js.Any])
+    inline def setPortal(value: PortalProperties): Self = StObject.set(x, "portal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortalUndefined: Self = StObject.set(x, "portal", js.undefined)
+    inline def setPortalUndefined: Self = StObject.set(x, "portal", js.undefined)
     
-    @scala.inline
-    def setQuery(value: js.Any | String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: js.Any | String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setUpdateBasemapsCallback(value: /* items */ js.Array[Basemap] => js.Array[Basemap]): Self = StObject.set(x, "updateBasemapsCallback", js.Any.fromFunction1(value))
+    inline def setUpdateBasemapsCallback(value: /* items */ js.Array[Basemap] => js.Array[Basemap]): Self = StObject.set(x, "updateBasemapsCallback", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateBasemapsCallbackUndefined: Self = StObject.set(x, "updateBasemapsCallback", js.undefined)
+    inline def setUpdateBasemapsCallbackUndefined: Self = StObject.set(x, "updateBasemapsCallback", js.undefined)
   }
 }

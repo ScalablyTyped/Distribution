@@ -36,8 +36,7 @@ trait TeamsUpdateDiscussionCommentLegacyResponseData extends StObject {
 }
 object TeamsUpdateDiscussionCommentLegacyResponseData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     author: Avatarurl,
     body: String,
     body_html: String,
@@ -56,46 +55,32 @@ object TeamsUpdateDiscussionCommentLegacyResponseData {
     __obj.asInstanceOf[TeamsUpdateDiscussionCommentLegacyResponseData]
   }
   
-  @scala.inline
-  implicit class TeamsUpdateDiscussionCommentLegacyResponseDataMutableBuilder[Self <: TeamsUpdateDiscussionCommentLegacyResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: TeamsUpdateDiscussionCommentLegacyResponseData](x: Self) {
     
-    @scala.inline
-    def setAuthor(value: Avatarurl): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: Avatarurl): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBody_html(value: String): Self = StObject.set(x, "body_html", value.asInstanceOf[js.Any])
+    inline def setBody_html(value: String): Self = StObject.set(x, "body_html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBody_version(value: String): Self = StObject.set(x, "body_version", value.asInstanceOf[js.Any])
+    inline def setBody_version(value: String): Self = StObject.set(x, "body_version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+    inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscussion_url(value: String): Self = StObject.set(x, "discussion_url", value.asInstanceOf[js.Any])
+    inline def setDiscussion_url(value: String): Self = StObject.set(x, "discussion_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
+    inline def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast_edited_at(value: String): Self = StObject.set(x, "last_edited_at", value.asInstanceOf[js.Any])
+    inline def setLast_edited_at(value: String): Self = StObject.set(x, "last_edited_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
+    inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReactions(value: `1`): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
+    inline def setReactions(value: `1`): Self = StObject.set(x, "reactions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
+    inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

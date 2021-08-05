@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SVGLength extends StObject {
   
-  @JSName("MSHTML.SVGLength_typekey")
+  /* private */ @JSName("MSHTML.SVGLength_typekey")
   var MSHTMLDotSVGLength_typekey: SVGLength
   
   def convertToSpecifiedUnits(unitType: Double): Unit
@@ -23,8 +23,7 @@ trait SVGLength extends StObject {
 }
 object SVGLength {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotSVGLength_typekey: SVGLength,
     convertToSpecifiedUnits: Double => Unit,
     newValueSpecifiedUnits: (Double, Double) => Unit,
@@ -38,28 +37,20 @@ object SVGLength {
     __obj.asInstanceOf[SVGLength]
   }
   
-  @scala.inline
-  implicit class SVGLengthMutableBuilder[Self <: SVGLength] (val x: Self) extends AnyVal {
+  extension [Self <: SVGLength](x: Self) {
     
-    @scala.inline
-    def setConvertToSpecifiedUnits(value: Double => Unit): Self = StObject.set(x, "convertToSpecifiedUnits", js.Any.fromFunction1(value))
+    inline def setConvertToSpecifiedUnits(value: Double => Unit): Self = StObject.set(x, "convertToSpecifiedUnits", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMSHTMLDotSVGLength_typekey(value: SVGLength): Self = StObject.set(x, "MSHTML.SVGLength_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotSVGLength_typekey(value: SVGLength): Self = StObject.set(x, "MSHTML.SVGLength_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewValueSpecifiedUnits(value: (Double, Double) => Unit): Self = StObject.set(x, "newValueSpecifiedUnits", js.Any.fromFunction2(value))
+    inline def setNewValueSpecifiedUnits(value: (Double, Double) => Unit): Self = StObject.set(x, "newValueSpecifiedUnits", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUnitType(value: Double): Self = StObject.set(x, "unitType", value.asInstanceOf[js.Any])
+    inline def setUnitType(value: Double): Self = StObject.set(x, "unitType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueAsString(value: String): Self = StObject.set(x, "valueAsString", value.asInstanceOf[js.Any])
+    inline def setValueAsString(value: String): Self = StObject.set(x, "valueAsString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueInSpecifiedUnits(value: Double): Self = StObject.set(x, "valueInSpecifiedUnits", value.asInstanceOf[js.Any])
+    inline def setValueInSpecifiedUnits(value: Double): Self = StObject.set(x, "valueInSpecifiedUnits", value.asInstanceOf[js.Any])
   }
 }

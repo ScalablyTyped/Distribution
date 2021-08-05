@@ -14,8 +14,7 @@ trait IMediaEncodingProfile extends StObject {
 }
 object IMediaEncodingProfile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     audio: AudioEncodingProperties,
     container: ContainerEncodingProperties,
     video: VideoEncodingProperties
@@ -24,16 +23,12 @@ object IMediaEncodingProfile {
     __obj.asInstanceOf[IMediaEncodingProfile]
   }
   
-  @scala.inline
-  implicit class IMediaEncodingProfileMutableBuilder[Self <: IMediaEncodingProfile] (val x: Self) extends AnyVal {
+  extension [Self <: IMediaEncodingProfile](x: Self) {
     
-    @scala.inline
-    def setAudio(value: AudioEncodingProperties): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+    inline def setAudio(value: AudioEncodingProperties): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainer(value: ContainerEncodingProperties): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: ContainerEncodingProperties): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideo(value: VideoEncodingProperties): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+    inline def setVideo(value: VideoEncodingProperties): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
   }
 }

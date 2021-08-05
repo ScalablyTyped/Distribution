@@ -186,8 +186,7 @@ object ViewEngine {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def inject(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")().asInstanceOf[js.Any]
+  inline def inject(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")().asInstanceOf[js.Any]
   
   /**
     * The metadata key for storing requires declared in a ViewModel.
@@ -195,6 +194,5 @@ object ViewEngine {
   @JSImport("aurelia-templating", "ViewEngine.viewModelRequireMetadataKey")
   @js.native
   def viewModelRequireMetadataKey: js.Any = js.native
-  @scala.inline
-  def viewModelRequireMetadataKey_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("viewModelRequireMetadataKey")(x.asInstanceOf[js.Any])
+  inline def viewModelRequireMetadataKey_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("viewModelRequireMetadataKey")(x.asInstanceOf[js.Any])
 }

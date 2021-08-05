@@ -31,31 +31,23 @@ trait SchemaRunPipelineRequest extends StObject {
 }
 object SchemaRunPipelineRequest {
   
-  @scala.inline
-  def apply(): SchemaRunPipelineRequest = {
+  inline def apply(): SchemaRunPipelineRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRunPipelineRequest]
   }
   
-  @scala.inline
-  implicit class SchemaRunPipelineRequestMutableBuilder[Self <: SchemaRunPipelineRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRunPipelineRequest](x: Self) {
     
-    @scala.inline
-    def setEphemeralPipeline(value: SchemaPipeline): Self = StObject.set(x, "ephemeralPipeline", value.asInstanceOf[js.Any])
+    inline def setEphemeralPipeline(value: SchemaPipeline): Self = StObject.set(x, "ephemeralPipeline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEphemeralPipelineUndefined: Self = StObject.set(x, "ephemeralPipeline", js.undefined)
+    inline def setEphemeralPipelineUndefined: Self = StObject.set(x, "ephemeralPipeline", js.undefined)
     
-    @scala.inline
-    def setPipelineArgs(value: SchemaRunPipelineArgs): Self = StObject.set(x, "pipelineArgs", value.asInstanceOf[js.Any])
+    inline def setPipelineArgs(value: SchemaRunPipelineArgs): Self = StObject.set(x, "pipelineArgs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineArgsUndefined: Self = StObject.set(x, "pipelineArgs", js.undefined)
+    inline def setPipelineArgsUndefined: Self = StObject.set(x, "pipelineArgs", js.undefined)
     
-    @scala.inline
-    def setPipelineId(value: String): Self = StObject.set(x, "pipelineId", value.asInstanceOf[js.Any])
+    inline def setPipelineId(value: String): Self = StObject.set(x, "pipelineId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineIdUndefined: Self = StObject.set(x, "pipelineId", js.undefined)
+    inline def setPipelineIdUndefined: Self = StObject.set(x, "pipelineId", js.undefined)
   }
 }

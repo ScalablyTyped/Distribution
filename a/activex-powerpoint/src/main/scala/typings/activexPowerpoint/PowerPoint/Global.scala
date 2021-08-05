@@ -35,7 +35,7 @@ trait Global extends StObject {
   
   val IsSandboxed: Boolean
   
-  @JSName("PowerPoint.Global_typekey")
+  /* private */ @JSName("PowerPoint.Global_typekey")
   var PowerPointDotGlobal_typekey: Global
   
   val Presentations: typings.activexPowerpoint.PowerPoint.Presentations
@@ -48,8 +48,7 @@ trait Global extends StObject {
 }
 object Global {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActivePresentation: Presentation,
     ActiveProtectedViewWindow: ProtectedViewWindow,
     ActiveWindow: DocumentWindow,
@@ -72,55 +71,38 @@ object Global {
     __obj.asInstanceOf[Global]
   }
   
-  @scala.inline
-  implicit class GlobalMutableBuilder[Self <: Global] (val x: Self) extends AnyVal {
+  extension [Self <: Global](x: Self) {
     
-    @scala.inline
-    def setActivePresentation(value: Presentation): Self = StObject.set(x, "ActivePresentation", value.asInstanceOf[js.Any])
+    inline def setActivePresentation(value: Presentation): Self = StObject.set(x, "ActivePresentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveProtectedViewWindow(value: ProtectedViewWindow): Self = StObject.set(x, "ActiveProtectedViewWindow", value.asInstanceOf[js.Any])
+    inline def setActiveProtectedViewWindow(value: ProtectedViewWindow): Self = StObject.set(x, "ActiveProtectedViewWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveWindow(value: DocumentWindow): Self = StObject.set(x, "ActiveWindow", value.asInstanceOf[js.Any])
+    inline def setActiveWindow(value: DocumentWindow): Self = StObject.set(x, "ActiveWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddIns(value: AddIns): Self = StObject.set(x, "AddIns", value.asInstanceOf[js.Any])
+    inline def setAddIns(value: AddIns): Self = StObject.set(x, "AddIns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnswerWizard(value: AnswerWizard): Self = StObject.set(x, "AnswerWizard", value.asInstanceOf[js.Any])
+    inline def setAnswerWizard(value: AnswerWizard): Self = StObject.set(x, "AnswerWizard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssistant(value: Assistant): Self = StObject.set(x, "Assistant", value.asInstanceOf[js.Any])
+    inline def setAssistant(value: Assistant): Self = StObject.set(x, "Assistant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandBars(value: CommandBars): Self = StObject.set(x, "CommandBars", value.asInstanceOf[js.Any])
+    inline def setCommandBars(value: CommandBars): Self = StObject.set(x, "CommandBars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialogs(value: js.Any): Self = StObject.set(x, "Dialogs", value.asInstanceOf[js.Any])
+    inline def setDialogs(value: js.Any): Self = StObject.set(x, "Dialogs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileConverters(value: FileConverters): Self = StObject.set(x, "FileConverters", value.asInstanceOf[js.Any])
+    inline def setFileConverters(value: FileConverters): Self = StObject.set(x, "FileConverters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSandboxed(value: Boolean): Self = StObject.set(x, "IsSandboxed", value.asInstanceOf[js.Any])
+    inline def setIsSandboxed(value: Boolean): Self = StObject.set(x, "IsSandboxed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotGlobal_typekey(value: Global): Self = StObject.set(x, "PowerPoint.Global_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotGlobal_typekey(value: Global): Self = StObject.set(x, "PowerPoint.Global_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresentations(value: Presentations): Self = StObject.set(x, "Presentations", value.asInstanceOf[js.Any])
+    inline def setPresentations(value: Presentations): Self = StObject.set(x, "Presentations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtectedViewWindows(value: ProtectedViewWindows): Self = StObject.set(x, "ProtectedViewWindows", value.asInstanceOf[js.Any])
+    inline def setProtectedViewWindows(value: ProtectedViewWindows): Self = StObject.set(x, "ProtectedViewWindows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlideShowWindows(value: SlideShowWindows): Self = StObject.set(x, "SlideShowWindows", value.asInstanceOf[js.Any])
+    inline def setSlideShowWindows(value: SlideShowWindows): Self = StObject.set(x, "SlideShowWindows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindows(value: DocumentWindows): Self = StObject.set(x, "Windows", value.asInstanceOf[js.Any])
+    inline def setWindows(value: DocumentWindows): Self = StObject.set(x, "Windows", value.asInstanceOf[js.Any])
   }
 }

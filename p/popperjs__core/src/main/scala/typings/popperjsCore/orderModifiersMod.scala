@@ -11,6 +11,5 @@ object orderModifiersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(modifiers: js.Array[Modifier[js.Any, js.Any]]): js.Array[Modifier[js.Any, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(modifiers.asInstanceOf[js.Any]).asInstanceOf[js.Array[Modifier[js.Any, js.Any]]]
+  inline def default(modifiers: js.Array[Modifier[js.Any, js.Any]]): js.Array[Modifier[js.Any, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(modifiers.asInstanceOf[js.Any]).asInstanceOf[js.Array[Modifier[js.Any, js.Any]]]
 }

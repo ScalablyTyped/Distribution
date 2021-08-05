@@ -10,8 +10,7 @@ object mergeScanMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def mergeScan[T, R](
+  inline def mergeScan[T, R](
     accumulator: js.Function2[
       /* acc */ R, 
       /* value */ T, 
@@ -19,8 +18,7 @@ object mergeScanMod {
     ],
     seed: R
   ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeScan")(accumulator.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def mergeScan[T, R](
+  inline def mergeScan[T, R](
     accumulator: js.Function2[
       /* acc */ R, 
       /* value */ T, 

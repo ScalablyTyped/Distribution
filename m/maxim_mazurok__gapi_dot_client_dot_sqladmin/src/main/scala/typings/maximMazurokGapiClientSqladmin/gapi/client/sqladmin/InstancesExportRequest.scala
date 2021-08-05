@@ -11,19 +11,15 @@ trait InstancesExportRequest extends StObject {
 }
 object InstancesExportRequest {
   
-  @scala.inline
-  def apply(): InstancesExportRequest = {
+  inline def apply(): InstancesExportRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstancesExportRequest]
   }
   
-  @scala.inline
-  implicit class InstancesExportRequestMutableBuilder[Self <: InstancesExportRequest] (val x: Self) extends AnyVal {
+  extension [Self <: InstancesExportRequest](x: Self) {
     
-    @scala.inline
-    def setExportContext(value: ExportContext): Self = StObject.set(x, "exportContext", value.asInstanceOf[js.Any])
+    inline def setExportContext(value: ExportContext): Self = StObject.set(x, "exportContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportContextUndefined: Self = StObject.set(x, "exportContext", js.undefined)
+    inline def setExportContextUndefined: Self = StObject.set(x, "exportContext", js.undefined)
   }
 }

@@ -19,37 +19,27 @@ trait LockManagerRequestOptions extends StObject {
 }
 object LockManagerRequestOptions {
   
-  @scala.inline
-  def apply(): LockManagerRequestOptions = {
+  inline def apply(): LockManagerRequestOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LockManagerRequestOptions]
   }
   
-  @scala.inline
-  implicit class LockManagerRequestOptionsMutableBuilder[Self <: LockManagerRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LockManagerRequestOptions](x: Self) {
     
-    @scala.inline
-    def setIfAvailable(value: Boolean): Self = StObject.set(x, "ifAvailable", value.asInstanceOf[js.Any])
+    inline def setIfAvailable(value: Boolean): Self = StObject.set(x, "ifAvailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfAvailableUndefined: Self = StObject.set(x, "ifAvailable", js.undefined)
+    inline def setIfAvailableUndefined: Self = StObject.set(x, "ifAvailable", js.undefined)
     
-    @scala.inline
-    def setMode(value: exclusive | shared): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: exclusive | shared): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
-    @scala.inline
-    def setSteal(value: Boolean): Self = StObject.set(x, "steal", value.asInstanceOf[js.Any])
+    inline def setSteal(value: Boolean): Self = StObject.set(x, "steal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStealUndefined: Self = StObject.set(x, "steal", js.undefined)
+    inline def setStealUndefined: Self = StObject.set(x, "steal", js.undefined)
   }
 }

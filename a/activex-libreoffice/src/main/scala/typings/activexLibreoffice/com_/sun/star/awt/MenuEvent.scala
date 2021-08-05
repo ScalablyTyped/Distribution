@@ -16,16 +16,13 @@ trait MenuEvent
 }
 object MenuEvent {
   
-  @scala.inline
-  def apply(MenuId: Double, Source: XInterface): MenuEvent = {
+  inline def apply(MenuId: Double, Source: XInterface): MenuEvent = {
     val __obj = js.Dynamic.literal(MenuId = MenuId.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[MenuEvent]
   }
   
-  @scala.inline
-  implicit class MenuEventMutableBuilder[Self <: MenuEvent] (val x: Self) extends AnyVal {
+  extension [Self <: MenuEvent](x: Self) {
     
-    @scala.inline
-    def setMenuId(value: Double): Self = StObject.set(x, "MenuId", value.asInstanceOf[js.Any])
+    inline def setMenuId(value: Double): Self = StObject.set(x, "MenuId", value.asInstanceOf[js.Any])
   }
 }

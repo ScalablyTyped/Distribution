@@ -19,25 +19,19 @@ trait RowsRenderingEventUIParam extends StObject {
 }
 object RowsRenderingEventUIParam {
   
-  @scala.inline
-  def apply(): RowsRenderingEventUIParam = {
+  inline def apply(): RowsRenderingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RowsRenderingEventUIParam]
   }
   
-  @scala.inline
-  implicit class RowsRenderingEventUIParamMutableBuilder[Self <: RowsRenderingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: RowsRenderingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setTbody(value: Element): Self = StObject.set(x, "tbody", value.asInstanceOf[js.Any])
+    inline def setTbody(value: Element): Self = StObject.set(x, "tbody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTbodyUndefined: Self = StObject.set(x, "tbody", js.undefined)
+    inline def setTbodyUndefined: Self = StObject.set(x, "tbody", js.undefined)
   }
 }

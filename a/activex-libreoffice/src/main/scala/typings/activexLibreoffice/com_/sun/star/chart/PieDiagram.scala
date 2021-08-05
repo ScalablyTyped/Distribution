@@ -21,8 +21,7 @@ trait PieDiagram
      with Dim3DDiagram
 object PieDiagram {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AutomaticPosition: Boolean,
     AutomaticSize: Boolean,
     DataCaption: Double,

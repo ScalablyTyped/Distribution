@@ -16,17 +16,14 @@ object typesInvalidSortByExceptionMod {
   }
   object InvalidSortByException {
     
-    @scala.inline
-    def apply(): InvalidSortByException = {
+    inline def apply(): InvalidSortByException = {
       val __obj = js.Dynamic.literal(name = "InvalidSortByException")
       __obj.asInstanceOf[InvalidSortByException]
     }
     
-    @scala.inline
-    implicit class InvalidSortByExceptionMutableBuilder[Self <: InvalidSortByException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidSortByException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidSortByException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidSortByException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

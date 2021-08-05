@@ -10,19 +10,15 @@ trait StrictHtmlInputrops extends StObject {
 }
 object StrictHtmlInputrops {
   
-  @scala.inline
-  def apply(): StrictHtmlInputrops = {
+  inline def apply(): StrictHtmlInputrops = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StrictHtmlInputrops]
   }
   
-  @scala.inline
-  implicit class StrictHtmlInputropsMutableBuilder[Self <: StrictHtmlInputrops] (val x: Self) extends AnyVal {
+  extension [Self <: StrictHtmlInputrops](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

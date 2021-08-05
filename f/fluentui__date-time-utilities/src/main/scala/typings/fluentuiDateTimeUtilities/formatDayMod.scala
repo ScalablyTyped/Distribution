@@ -11,6 +11,5 @@ object formatDayMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def formatDay(date: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatDay")(date.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def formatDay(date: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatDay")(date.asInstanceOf[js.Any]).asInstanceOf[String]
 }

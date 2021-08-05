@@ -19,17 +19,14 @@ object externalMod {
   }
   object Attachment {
     
-    @scala.inline
-    def apply(get: String => js.Any): Attachment = {
+    inline def apply(get: String => js.Any): Attachment = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
       __obj.asInstanceOf[Attachment]
     }
     
-    @scala.inline
-    implicit class AttachmentMutableBuilder[Self <: Attachment] (val x: Self) extends AnyVal {
+    extension [Self <: Attachment](x: Self) {
       
-      @scala.inline
-      def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     }
   }
   
@@ -42,20 +39,16 @@ object externalMod {
   }
   object Cropper {
     
-    @scala.inline
-    def apply(get: String => js.Any, set: (String, js.Any) => Unit): Cropper = {
+    inline def apply(get: String => js.Any, set: (String, js.Any) => Unit): Cropper = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), set = js.Any.fromFunction2(set))
       __obj.asInstanceOf[Cropper]
     }
     
-    @scala.inline
-    implicit class CropperMutableBuilder[Self <: Cropper] (val x: Self) extends AnyVal {
+    extension [Self <: Cropper](x: Self) {
       
-      @scala.inline
-      def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet(value: (String, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (String, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     }
   }
   
@@ -71,26 +64,20 @@ object externalMod {
   }
   object Theme {
     
-    @scala.inline
-    def apply(_canInstall: Boolean, _filesystemCredentialsNeeded: Boolean, id: String, name: String): Theme = {
+    inline def apply(_canInstall: Boolean, _filesystemCredentialsNeeded: Boolean, id: String, name: String): Theme = {
       val __obj = js.Dynamic.literal(_canInstall = _canInstall.asInstanceOf[js.Any], _filesystemCredentialsNeeded = _filesystemCredentialsNeeded.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Theme]
     }
     
-    @scala.inline
-    implicit class ThemeMutableBuilder[Self <: Theme] (val x: Self) extends AnyVal {
+    extension [Self <: Theme](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_canInstall(value: Boolean): Self = StObject.set(x, "_canInstall", value.asInstanceOf[js.Any])
+      inline def set_canInstall(value: Boolean): Self = StObject.set(x, "_canInstall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_filesystemCredentialsNeeded(value: Boolean): Self = StObject.set(x, "_filesystemCredentialsNeeded", value.asInstanceOf[js.Any])
+      inline def set_filesystemCredentialsNeeded(value: Boolean): Self = StObject.set(x, "_filesystemCredentialsNeeded", value.asInstanceOf[js.Any])
     }
   }
 }

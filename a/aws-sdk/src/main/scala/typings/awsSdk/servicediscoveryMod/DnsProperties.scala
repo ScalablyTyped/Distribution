@@ -13,19 +13,15 @@ trait DnsProperties extends StObject {
 }
 object DnsProperties {
   
-  @scala.inline
-  def apply(): DnsProperties = {
+  inline def apply(): DnsProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DnsProperties]
   }
   
-  @scala.inline
-  implicit class DnsPropertiesMutableBuilder[Self <: DnsProperties] (val x: Self) extends AnyVal {
+  extension [Self <: DnsProperties](x: Self) {
     
-    @scala.inline
-    def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
+    inline def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostedZoneIdUndefined: Self = StObject.set(x, "HostedZoneId", js.undefined)
+    inline def setHostedZoneIdUndefined: Self = StObject.set(x, "HostedZoneId", js.undefined)
   }
 }

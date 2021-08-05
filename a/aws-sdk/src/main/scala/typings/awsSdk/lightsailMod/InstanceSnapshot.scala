@@ -88,115 +88,79 @@ trait InstanceSnapshot extends StObject {
 }
 object InstanceSnapshot {
   
-  @scala.inline
-  def apply(): InstanceSnapshot = {
+  inline def apply(): InstanceSnapshot = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceSnapshot]
   }
   
-  @scala.inline
-  implicit class InstanceSnapshotMutableBuilder[Self <: InstanceSnapshot] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceSnapshot](x: Self) {
     
-    @scala.inline
-    def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
-    @scala.inline
-    def setFromAttachedDisks(value: DiskList): Self = StObject.set(x, "fromAttachedDisks", value.asInstanceOf[js.Any])
+    inline def setFromAttachedDisks(value: DiskList): Self = StObject.set(x, "fromAttachedDisks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromAttachedDisksUndefined: Self = StObject.set(x, "fromAttachedDisks", js.undefined)
+    inline def setFromAttachedDisksUndefined: Self = StObject.set(x, "fromAttachedDisks", js.undefined)
     
-    @scala.inline
-    def setFromAttachedDisksVarargs(value: Disk*): Self = StObject.set(x, "fromAttachedDisks", js.Array(value :_*))
+    inline def setFromAttachedDisksVarargs(value: Disk*): Self = StObject.set(x, "fromAttachedDisks", js.Array(value :_*))
     
-    @scala.inline
-    def setFromBlueprintId(value: String): Self = StObject.set(x, "fromBlueprintId", value.asInstanceOf[js.Any])
+    inline def setFromBlueprintId(value: String): Self = StObject.set(x, "fromBlueprintId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromBlueprintIdUndefined: Self = StObject.set(x, "fromBlueprintId", js.undefined)
+    inline def setFromBlueprintIdUndefined: Self = StObject.set(x, "fromBlueprintId", js.undefined)
     
-    @scala.inline
-    def setFromBundleId(value: String): Self = StObject.set(x, "fromBundleId", value.asInstanceOf[js.Any])
+    inline def setFromBundleId(value: String): Self = StObject.set(x, "fromBundleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromBundleIdUndefined: Self = StObject.set(x, "fromBundleId", js.undefined)
+    inline def setFromBundleIdUndefined: Self = StObject.set(x, "fromBundleId", js.undefined)
     
-    @scala.inline
-    def setFromInstanceArn(value: NonEmptyString): Self = StObject.set(x, "fromInstanceArn", value.asInstanceOf[js.Any])
+    inline def setFromInstanceArn(value: NonEmptyString): Self = StObject.set(x, "fromInstanceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromInstanceArnUndefined: Self = StObject.set(x, "fromInstanceArn", js.undefined)
+    inline def setFromInstanceArnUndefined: Self = StObject.set(x, "fromInstanceArn", js.undefined)
     
-    @scala.inline
-    def setFromInstanceName(value: ResourceName): Self = StObject.set(x, "fromInstanceName", value.asInstanceOf[js.Any])
+    inline def setFromInstanceName(value: ResourceName): Self = StObject.set(x, "fromInstanceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromInstanceNameUndefined: Self = StObject.set(x, "fromInstanceName", js.undefined)
+    inline def setFromInstanceNameUndefined: Self = StObject.set(x, "fromInstanceName", js.undefined)
     
-    @scala.inline
-    def setIsFromAutoSnapshot(value: Boolean): Self = StObject.set(x, "isFromAutoSnapshot", value.asInstanceOf[js.Any])
+    inline def setIsFromAutoSnapshot(value: Boolean): Self = StObject.set(x, "isFromAutoSnapshot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFromAutoSnapshotUndefined: Self = StObject.set(x, "isFromAutoSnapshot", js.undefined)
+    inline def setIsFromAutoSnapshotUndefined: Self = StObject.set(x, "isFromAutoSnapshot", js.undefined)
     
-    @scala.inline
-    def setLocation(value: ResourceLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: ResourceLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setProgress(value: String): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: String): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+    inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
     
-    @scala.inline
-    def setSizeInGb(value: integer): Self = StObject.set(x, "sizeInGb", value.asInstanceOf[js.Any])
+    inline def setSizeInGb(value: integer): Self = StObject.set(x, "sizeInGb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeInGbUndefined: Self = StObject.set(x, "sizeInGb", js.undefined)
+    inline def setSizeInGbUndefined: Self = StObject.set(x, "sizeInGb", js.undefined)
     
-    @scala.inline
-    def setState(value: InstanceSnapshotState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: InstanceSnapshotState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setSupportCode(value: String): Self = StObject.set(x, "supportCode", value.asInstanceOf[js.Any])
+    inline def setSupportCode(value: String): Self = StObject.set(x, "supportCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportCodeUndefined: Self = StObject.set(x, "supportCode", js.undefined)
+    inline def setSupportCodeUndefined: Self = StObject.set(x, "supportCode", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

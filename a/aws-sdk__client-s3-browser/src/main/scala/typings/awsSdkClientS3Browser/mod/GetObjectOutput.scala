@@ -10,8 +10,7 @@ trait GetObjectOutput[StreamType]
      with typings.awsSdkClientS3Browser.typesGetObjectOutputMod.GetObjectOutput[StreamType]
 object GetObjectOutput {
   
-  @scala.inline
-  def apply[StreamType]($metadata: ResponseMetadata): GetObjectOutput[StreamType] = {
+  inline def apply[StreamType]($metadata: ResponseMetadata): GetObjectOutput[StreamType] = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetObjectOutput[StreamType]]
   }

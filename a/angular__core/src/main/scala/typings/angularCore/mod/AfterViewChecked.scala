@@ -15,16 +15,13 @@ trait AfterViewChecked extends StObject {
 }
 object AfterViewChecked {
   
-  @scala.inline
-  def apply(ngAfterViewChecked: () => Unit): AfterViewChecked = {
+  inline def apply(ngAfterViewChecked: () => Unit): AfterViewChecked = {
     val __obj = js.Dynamic.literal(ngAfterViewChecked = js.Any.fromFunction0(ngAfterViewChecked))
     __obj.asInstanceOf[AfterViewChecked]
   }
   
-  @scala.inline
-  implicit class AfterViewCheckedMutableBuilder[Self <: AfterViewChecked] (val x: Self) extends AnyVal {
+  extension [Self <: AfterViewChecked](x: Self) {
     
-    @scala.inline
-    def setNgAfterViewChecked(value: () => Unit): Self = StObject.set(x, "ngAfterViewChecked", js.Any.fromFunction0(value))
+    inline def setNgAfterViewChecked(value: () => Unit): Self = StObject.set(x, "ngAfterViewChecked", js.Any.fromFunction0(value))
   }
 }

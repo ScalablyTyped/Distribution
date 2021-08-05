@@ -23,43 +23,31 @@ trait CropProperties extends StObject {
 }
 object CropProperties {
   
-  @scala.inline
-  def apply(): CropProperties = {
+  inline def apply(): CropProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CropProperties]
   }
   
-  @scala.inline
-  implicit class CropPropertiesMutableBuilder[Self <: CropProperties] (val x: Self) extends AnyVal {
+  extension [Self <: CropProperties](x: Self) {
     
-    @scala.inline
-    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+    inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
-    @scala.inline
-    def setBottomOffset(value: Double): Self = StObject.set(x, "bottomOffset", value.asInstanceOf[js.Any])
+    inline def setBottomOffset(value: Double): Self = StObject.set(x, "bottomOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBottomOffsetUndefined: Self = StObject.set(x, "bottomOffset", js.undefined)
+    inline def setBottomOffsetUndefined: Self = StObject.set(x, "bottomOffset", js.undefined)
     
-    @scala.inline
-    def setLeftOffset(value: Double): Self = StObject.set(x, "leftOffset", value.asInstanceOf[js.Any])
+    inline def setLeftOffset(value: Double): Self = StObject.set(x, "leftOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftOffsetUndefined: Self = StObject.set(x, "leftOffset", js.undefined)
+    inline def setLeftOffsetUndefined: Self = StObject.set(x, "leftOffset", js.undefined)
     
-    @scala.inline
-    def setRightOffset(value: Double): Self = StObject.set(x, "rightOffset", value.asInstanceOf[js.Any])
+    inline def setRightOffset(value: Double): Self = StObject.set(x, "rightOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightOffsetUndefined: Self = StObject.set(x, "rightOffset", js.undefined)
+    inline def setRightOffsetUndefined: Self = StObject.set(x, "rightOffset", js.undefined)
     
-    @scala.inline
-    def setTopOffset(value: Double): Self = StObject.set(x, "topOffset", value.asInstanceOf[js.Any])
+    inline def setTopOffset(value: Double): Self = StObject.set(x, "topOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopOffsetUndefined: Self = StObject.set(x, "topOffset", js.undefined)
+    inline def setTopOffsetUndefined: Self = StObject.set(x, "topOffset", js.undefined)
   }
 }

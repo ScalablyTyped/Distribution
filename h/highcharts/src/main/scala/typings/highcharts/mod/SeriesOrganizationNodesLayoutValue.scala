@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SeriesOrganizationNodesLayoutValue extends StObject
 object SeriesOrganizationNodesLayoutValue {
   
-  @scala.inline
-  def hanging: typings.highcharts.highchartsStrings.hanging = "hanging".asInstanceOf[typings.highcharts.highchartsStrings.hanging]
+  inline def hanging: typings.highcharts.highchartsStrings.hanging = "hanging".asInstanceOf[typings.highcharts.highchartsStrings.hanging]
   
-  @scala.inline
-  def normal: typings.highcharts.highchartsStrings.normal = "normal".asInstanceOf[typings.highcharts.highchartsStrings.normal]
+  inline def normal: typings.highcharts.highchartsStrings.normal = "normal".asInstanceOf[typings.highcharts.highchartsStrings.normal]
 }

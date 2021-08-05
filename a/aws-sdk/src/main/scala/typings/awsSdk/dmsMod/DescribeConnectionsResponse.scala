@@ -18,28 +18,21 @@ trait DescribeConnectionsResponse extends StObject {
 }
 object DescribeConnectionsResponse {
   
-  @scala.inline
-  def apply(): DescribeConnectionsResponse = {
+  inline def apply(): DescribeConnectionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeConnectionsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeConnectionsResponseMutableBuilder[Self <: DescribeConnectionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeConnectionsResponse](x: Self) {
     
-    @scala.inline
-    def setConnections(value: ConnectionList): Self = StObject.set(x, "Connections", value.asInstanceOf[js.Any])
+    inline def setConnections(value: ConnectionList): Self = StObject.set(x, "Connections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionsUndefined: Self = StObject.set(x, "Connections", js.undefined)
+    inline def setConnectionsUndefined: Self = StObject.set(x, "Connections", js.undefined)
     
-    @scala.inline
-    def setConnectionsVarargs(value: Connection*): Self = StObject.set(x, "Connections", js.Array(value :_*))
+    inline def setConnectionsVarargs(value: Connection*): Self = StObject.set(x, "Connections", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

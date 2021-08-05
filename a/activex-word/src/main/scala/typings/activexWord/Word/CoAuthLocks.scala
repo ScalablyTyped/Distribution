@@ -23,6 +23,6 @@ trait CoAuthLocks extends StObject {
   
   def RemoveEphemeralLocks(): Unit = js.native
   
-  @JSName("Word.CoAuthLocks_typekey")
+  /* private */ @JSName("Word.CoAuthLocks_typekey")
   var WordDotCoAuthLocks_typekey: CoAuthLocks = js.native
 }

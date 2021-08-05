@@ -18,22 +18,17 @@ trait AutoScalingPolicy extends StObject {
 }
 object AutoScalingPolicy {
   
-  @scala.inline
-  def apply(Constraints: ScalingConstraints, Rules: ScalingRuleList): AutoScalingPolicy = {
+  inline def apply(Constraints: ScalingConstraints, Rules: ScalingRuleList): AutoScalingPolicy = {
     val __obj = js.Dynamic.literal(Constraints = Constraints.asInstanceOf[js.Any], Rules = Rules.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutoScalingPolicy]
   }
   
-  @scala.inline
-  implicit class AutoScalingPolicyMutableBuilder[Self <: AutoScalingPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: AutoScalingPolicy](x: Self) {
     
-    @scala.inline
-    def setConstraints(value: ScalingConstraints): Self = StObject.set(x, "Constraints", value.asInstanceOf[js.Any])
+    inline def setConstraints(value: ScalingConstraints): Self = StObject.set(x, "Constraints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRules(value: ScalingRuleList): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: ScalingRuleList): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesVarargs(value: ScalingRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: ScalingRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
   }
 }

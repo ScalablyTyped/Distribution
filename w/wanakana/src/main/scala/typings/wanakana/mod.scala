@@ -13,61 +13,40 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def bind(el: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bind")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def bind(el: HTMLElement, options: WanakanaOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(el.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def bind(el: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("bind")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def bind(el: HTMLElement, options: WanakanaOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(el.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def isHiragana(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHiragana")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isHiragana(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHiragana")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isJapanese(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJapanese")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isJapanese(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isJapanese")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isKana(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKana")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isKana(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKana")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isKanji(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKanji")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isKanji(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKanji")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isKatakana(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKatakana")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isKatakana(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKatakana")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isRomaji(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRomaji")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isRomaji(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRomaji")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def stripOkurigana(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stripOkurigana")(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def stripOkurigana(input: String, options: StripOkuriganaOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stripOkurigana")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def stripOkurigana(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stripOkurigana")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def stripOkurigana(input: String, options: StripOkuriganaOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stripOkurigana")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def toHiragana(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHiragana")(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def toHiragana(input: String, options: WanakanaOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toHiragana")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toHiragana(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHiragana")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toHiragana(input: String, options: WanakanaOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toHiragana")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def toKana(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toKana")(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def toKana(input: String, options: WanakanaOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toKana")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toKana(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toKana")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toKana(input: String, options: WanakanaOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toKana")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def toKatakana(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toKatakana")(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def toKatakana(input: String, options: WanakanaOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toKatakana")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toKatakana(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toKatakana")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toKatakana(input: String, options: WanakanaOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toKatakana")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def toRomaji(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toRomaji")(input.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def toRomaji(input: String, options: WanakanaOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toRomaji")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toRomaji(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toRomaji")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toRomaji(input: String, options: WanakanaOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toRomaji")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def tokenize(input: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
-  @scala.inline
-  def tokenize(input: String, options: TokenizeOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def tokenize(input: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def tokenize(input: String, options: TokenizeOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def unbind(el: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def unbind(el: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.wanakana.wanakanaBooleans.`true`
@@ -78,17 +57,13 @@ object mod {
   trait IMEModes extends StObject
   object IMEModes {
     
-    @scala.inline
-    def `false`: typings.wanakana.wanakanaBooleans.`false` = false.asInstanceOf[typings.wanakana.wanakanaBooleans.`false`]
+    inline def `false`: typings.wanakana.wanakanaBooleans.`false` = false.asInstanceOf[typings.wanakana.wanakanaBooleans.`false`]
     
-    @scala.inline
-    def toHiragana: typings.wanakana.wanakanaStrings.toHiragana = "toHiragana".asInstanceOf[typings.wanakana.wanakanaStrings.toHiragana]
+    inline def toHiragana: typings.wanakana.wanakanaStrings.toHiragana = "toHiragana".asInstanceOf[typings.wanakana.wanakanaStrings.toHiragana]
     
-    @scala.inline
-    def toKatakana: typings.wanakana.wanakanaStrings.toKatakana = "toKatakana".asInstanceOf[typings.wanakana.wanakanaStrings.toKatakana]
+    inline def toKatakana: typings.wanakana.wanakanaStrings.toKatakana = "toKatakana".asInstanceOf[typings.wanakana.wanakanaStrings.toKatakana]
     
-    @scala.inline
-    def `true`: typings.wanakana.wanakanaBooleans.`true` = true.asInstanceOf[typings.wanakana.wanakanaBooleans.`true`]
+    inline def `true`: typings.wanakana.wanakanaBooleans.`true` = true.asInstanceOf[typings.wanakana.wanakanaBooleans.`true`]
   }
   
   trait StripOkuriganaOptions extends StObject {
@@ -99,26 +74,20 @@ object mod {
   }
   object StripOkuriganaOptions {
     
-    @scala.inline
-    def apply(): StripOkuriganaOptions = {
+    inline def apply(): StripOkuriganaOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StripOkuriganaOptions]
     }
     
-    @scala.inline
-    implicit class StripOkuriganaOptionsMutableBuilder[Self <: StripOkuriganaOptions] (val x: Self) extends AnyVal {
+    extension [Self <: StripOkuriganaOptions](x: Self) {
       
-      @scala.inline
-      def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
+      inline def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
+      inline def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
       
-      @scala.inline
-      def setMatchKanji(value: String): Self = StObject.set(x, "matchKanji", value.asInstanceOf[js.Any])
+      inline def setMatchKanji(value: String): Self = StObject.set(x, "matchKanji", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchKanjiUndefined: Self = StObject.set(x, "matchKanji", js.undefined)
+      inline def setMatchKanjiUndefined: Self = StObject.set(x, "matchKanji", js.undefined)
     }
   }
   
@@ -130,26 +99,20 @@ object mod {
   }
   object TokenizeOptions {
     
-    @scala.inline
-    def apply(): TokenizeOptions = {
+    inline def apply(): TokenizeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TokenizeOptions]
     }
     
-    @scala.inline
-    implicit class TokenizeOptionsMutableBuilder[Self <: TokenizeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TokenizeOptions](x: Self) {
       
-      @scala.inline
-      def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+      inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
+      inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
       
-      @scala.inline
-      def setDetailed(value: Boolean): Self = StObject.set(x, "detailed", value.asInstanceOf[js.Any])
+      inline def setDetailed(value: Boolean): Self = StObject.set(x, "detailed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetailedUndefined: Self = StObject.set(x, "detailed", js.undefined)
+      inline def setDetailedUndefined: Self = StObject.set(x, "detailed", js.undefined)
     }
   }
   
@@ -171,56 +134,40 @@ object mod {
   }
   object WanakanaOptions {
     
-    @scala.inline
-    def apply(): WanakanaOptions = {
+    inline def apply(): WanakanaOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WanakanaOptions]
     }
     
-    @scala.inline
-    implicit class WanakanaOptionsMutableBuilder[Self <: WanakanaOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WanakanaOptions](x: Self) {
       
-      @scala.inline
-      def setCustomKanaMapping(value: Record[String, String]): Self = StObject.set(x, "customKanaMapping", value.asInstanceOf[js.Any])
+      inline def setCustomKanaMapping(value: Record[String, String]): Self = StObject.set(x, "customKanaMapping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomKanaMappingUndefined: Self = StObject.set(x, "customKanaMapping", js.undefined)
+      inline def setCustomKanaMappingUndefined: Self = StObject.set(x, "customKanaMapping", js.undefined)
       
-      @scala.inline
-      def setCustomRomajiMapping(value: Record[String, String]): Self = StObject.set(x, "customRomajiMapping", value.asInstanceOf[js.Any])
+      inline def setCustomRomajiMapping(value: Record[String, String]): Self = StObject.set(x, "customRomajiMapping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomRomajiMappingUndefined: Self = StObject.set(x, "customRomajiMapping", js.undefined)
+      inline def setCustomRomajiMappingUndefined: Self = StObject.set(x, "customRomajiMapping", js.undefined)
       
-      @scala.inline
-      def setIMEMode(value: IMEModes): Self = StObject.set(x, "IMEMode", value.asInstanceOf[js.Any])
+      inline def setIMEMode(value: IMEModes): Self = StObject.set(x, "IMEMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIMEModeUndefined: Self = StObject.set(x, "IMEMode", js.undefined)
+      inline def setIMEModeUndefined: Self = StObject.set(x, "IMEMode", js.undefined)
       
-      @scala.inline
-      def setPassRomaji(value: Boolean): Self = StObject.set(x, "passRomaji", value.asInstanceOf[js.Any])
+      inline def setPassRomaji(value: Boolean): Self = StObject.set(x, "passRomaji", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassRomajiUndefined: Self = StObject.set(x, "passRomaji", js.undefined)
+      inline def setPassRomajiUndefined: Self = StObject.set(x, "passRomaji", js.undefined)
       
-      @scala.inline
-      def setRomanization(value: hepburn): Self = StObject.set(x, "romanization", value.asInstanceOf[js.Any])
+      inline def setRomanization(value: hepburn): Self = StObject.set(x, "romanization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRomanizationUndefined: Self = StObject.set(x, "romanization", js.undefined)
+      inline def setRomanizationUndefined: Self = StObject.set(x, "romanization", js.undefined)
       
-      @scala.inline
-      def setUpcaseKatakana(value: Boolean): Self = StObject.set(x, "upcaseKatakana", value.asInstanceOf[js.Any])
+      inline def setUpcaseKatakana(value: Boolean): Self = StObject.set(x, "upcaseKatakana", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpcaseKatakanaUndefined: Self = StObject.set(x, "upcaseKatakana", js.undefined)
+      inline def setUpcaseKatakanaUndefined: Self = StObject.set(x, "upcaseKatakana", js.undefined)
       
-      @scala.inline
-      def setUseObsoleteKana(value: Boolean): Self = StObject.set(x, "useObsoleteKana", value.asInstanceOf[js.Any])
+      inline def setUseObsoleteKana(value: Boolean): Self = StObject.set(x, "useObsoleteKana", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseObsoleteKanaUndefined: Self = StObject.set(x, "useObsoleteKana", js.undefined)
+      inline def setUseObsoleteKanaUndefined: Self = StObject.set(x, "useObsoleteKana", js.undefined)
     }
   }
 }

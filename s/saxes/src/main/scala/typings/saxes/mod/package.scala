@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def EVENTS: js.Tuple13[
+inline def EVENTS: js.Tuple13[
 typings.saxes.saxesStrings.xmldecl, 
 typings.saxes.saxesStrings.text, 
 typings.saxes.saxesStrings.processinginstruction, 

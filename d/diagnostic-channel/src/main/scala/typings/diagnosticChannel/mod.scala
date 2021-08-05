@@ -16,8 +16,7 @@ object mod {
   @js.native
   val channel: IChannel = js.native
   
-  @scala.inline
-  def makePatchingRequire(knownPatches: IModulePatchMap): js.Function1[/* moduleId */ String, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePatchingRequire")(knownPatches.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* moduleId */ String, js.Any]]
+  inline def makePatchingRequire(knownPatches: IModulePatchMap): js.Function1[/* moduleId */ String, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePatchingRequire")(knownPatches.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* moduleId */ String, js.Any]]
   
   @js.native
   trait IChannel extends StObject {
@@ -55,32 +54,24 @@ object mod {
   }
   object ISpanContext {
     
-    @scala.inline
-    def apply(spanId: String, traceId: String): ISpanContext = {
+    inline def apply(spanId: String, traceId: String): ISpanContext = {
       val __obj = js.Dynamic.literal(spanId = spanId.asInstanceOf[js.Any], traceId = traceId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISpanContext]
     }
     
-    @scala.inline
-    implicit class ISpanContextMutableBuilder[Self <: ISpanContext] (val x: Self) extends AnyVal {
+    extension [Self <: ISpanContext](x: Self) {
       
-      @scala.inline
-      def setSpanId(value: String): Self = StObject.set(x, "spanId", value.asInstanceOf[js.Any])
+      inline def setSpanId(value: String): Self = StObject.set(x, "spanId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraceFlags(value: String): Self = StObject.set(x, "traceFlags", value.asInstanceOf[js.Any])
+      inline def setTraceFlags(value: String): Self = StObject.set(x, "traceFlags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraceFlagsUndefined: Self = StObject.set(x, "traceFlags", js.undefined)
+      inline def setTraceFlagsUndefined: Self = StObject.set(x, "traceFlags", js.undefined)
       
-      @scala.inline
-      def setTraceId(value: String): Self = StObject.set(x, "traceId", value.asInstanceOf[js.Any])
+      inline def setTraceId(value: String): Self = StObject.set(x, "traceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTracestate(value: String): Self = StObject.set(x, "tracestate", value.asInstanceOf[js.Any])
+      inline def setTracestate(value: String): Self = StObject.set(x, "tracestate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTracestateUndefined: Self = StObject.set(x, "tracestate", js.undefined)
+      inline def setTracestateUndefined: Self = StObject.set(x, "tracestate", js.undefined)
     }
   }
   
@@ -92,20 +83,16 @@ object mod {
   }
   object IStandardEvent {
     
-    @scala.inline
-    def apply[T](data: T, timestamp: Double): IStandardEvent[T] = {
+    inline def apply[T](data: T, timestamp: Double): IStandardEvent[T] = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[IStandardEvent[T]]
     }
     
-    @scala.inline
-    implicit class IStandardEventMutableBuilder[Self <: IStandardEvent[?], T] (val x: Self & IStandardEvent[T]) extends AnyVal {
+    extension [Self <: IStandardEvent[?], T](x: Self & IStandardEvent[T]) {
       
-      @scala.inline
-      def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
   }
   

@@ -39,25 +39,19 @@ trait IntermediateAddress extends StObject {
 }
 object IntermediateAddress {
   
-  @scala.inline
-  def apply(administrativeArea: String, countryCode: String, locality: String, postalCode: String): IntermediateAddress = {
+  inline def apply(administrativeArea: String, countryCode: String, locality: String, postalCode: String): IntermediateAddress = {
     val __obj = js.Dynamic.literal(administrativeArea = administrativeArea.asInstanceOf[js.Any], countryCode = countryCode.asInstanceOf[js.Any], locality = locality.asInstanceOf[js.Any], postalCode = postalCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntermediateAddress]
   }
   
-  @scala.inline
-  implicit class IntermediateAddressMutableBuilder[Self <: IntermediateAddress] (val x: Self) extends AnyVal {
+  extension [Self <: IntermediateAddress](x: Self) {
     
-    @scala.inline
-    def setAdministrativeArea(value: String): Self = StObject.set(x, "administrativeArea", value.asInstanceOf[js.Any])
+    inline def setAdministrativeArea(value: String): Self = StObject.set(x, "administrativeArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
+    inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocality(value: String): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
+    inline def setLocality(value: String): Self = StObject.set(x, "locality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
+    inline def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
   }
 }

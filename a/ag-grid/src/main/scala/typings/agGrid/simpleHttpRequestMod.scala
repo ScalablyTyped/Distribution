@@ -11,8 +11,7 @@ object simpleHttpRequestMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def simpleHttpRequest(params: SimpleHttpRequestParams): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleHttpRequest")(params.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
+  inline def simpleHttpRequest(params: SimpleHttpRequestParams): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("simpleHttpRequest")(params.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
   
   trait SimpleHttpRequestParams extends StObject {
     
@@ -20,17 +19,14 @@ object simpleHttpRequestMod {
   }
   object SimpleHttpRequestParams {
     
-    @scala.inline
-    def apply(url: String): SimpleHttpRequestParams = {
+    inline def apply(url: String): SimpleHttpRequestParams = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[SimpleHttpRequestParams]
     }
     
-    @scala.inline
-    implicit class SimpleHttpRequestParamsMutableBuilder[Self <: SimpleHttpRequestParams] (val x: Self) extends AnyVal {
+    extension [Self <: SimpleHttpRequestParams](x: Self) {
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

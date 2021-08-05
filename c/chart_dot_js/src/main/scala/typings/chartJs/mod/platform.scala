@@ -14,6 +14,5 @@ object platform {
   @JSImport("chart.js", "platform.disableCSSInjection")
   @js.native
   def disableCSSInjection: Boolean = js.native
-  @scala.inline
-  def disableCSSInjection_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableCSSInjection")(x.asInstanceOf[js.Any])
+  inline def disableCSSInjection_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableCSSInjection")(x.asInstanceOf[js.Any])
 }

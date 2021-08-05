@@ -23,25 +23,19 @@ trait SchemaPhotoResponse extends StObject {
 }
 object SchemaPhotoResponse {
   
-  @scala.inline
-  def apply(): SchemaPhotoResponse = {
+  inline def apply(): SchemaPhotoResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPhotoResponse]
   }
   
-  @scala.inline
-  implicit class SchemaPhotoResponseMutableBuilder[Self <: SchemaPhotoResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPhotoResponse](x: Self) {
     
-    @scala.inline
-    def setPhoto(value: SchemaPhoto): Self = StObject.set(x, "photo", value.asInstanceOf[js.Any])
+    inline def setPhoto(value: SchemaPhoto): Self = StObject.set(x, "photo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotoUndefined: Self = StObject.set(x, "photo", js.undefined)
+    inline def setPhotoUndefined: Self = StObject.set(x, "photo", js.undefined)
     
-    @scala.inline
-    def setStatus(value: SchemaStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: SchemaStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

@@ -26,8 +26,7 @@ trait ChannelDialplan
 }
 object ChannelDialplan {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     application: String,
     channel: Channel,
     dialplan_app: String,
@@ -40,16 +39,12 @@ object ChannelDialplan {
     __obj.asInstanceOf[ChannelDialplan]
   }
   
-  @scala.inline
-  implicit class ChannelDialplanMutableBuilder[Self <: ChannelDialplan] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelDialplan](x: Self) {
     
-    @scala.inline
-    def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialplan_app(value: String): Self = StObject.set(x, "dialplan_app", value.asInstanceOf[js.Any])
+    inline def setDialplan_app(value: String): Self = StObject.set(x, "dialplan_app", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialplan_app_data(value: String): Self = StObject.set(x, "dialplan_app_data", value.asInstanceOf[js.Any])
+    inline def setDialplan_app_data(value: String): Self = StObject.set(x, "dialplan_app_data", value.asInstanceOf[js.Any])
   }
 }

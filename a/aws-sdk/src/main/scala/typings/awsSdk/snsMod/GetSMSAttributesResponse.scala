@@ -13,19 +13,15 @@ trait GetSMSAttributesResponse extends StObject {
 }
 object GetSMSAttributesResponse {
   
-  @scala.inline
-  def apply(): GetSMSAttributesResponse = {
+  inline def apply(): GetSMSAttributesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSMSAttributesResponse]
   }
   
-  @scala.inline
-  implicit class GetSMSAttributesResponseMutableBuilder[Self <: GetSMSAttributesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetSMSAttributesResponse](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: MapStringToString): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: MapStringToString): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
   }
 }

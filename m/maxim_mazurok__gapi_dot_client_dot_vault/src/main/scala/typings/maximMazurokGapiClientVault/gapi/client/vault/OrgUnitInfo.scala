@@ -11,19 +11,15 @@ trait OrgUnitInfo extends StObject {
 }
 object OrgUnitInfo {
   
-  @scala.inline
-  def apply(): OrgUnitInfo = {
+  inline def apply(): OrgUnitInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrgUnitInfo]
   }
   
-  @scala.inline
-  implicit class OrgUnitInfoMutableBuilder[Self <: OrgUnitInfo] (val x: Self) extends AnyVal {
+  extension [Self <: OrgUnitInfo](x: Self) {
     
-    @scala.inline
-    def setOrgUnitId(value: String): Self = StObject.set(x, "orgUnitId", value.asInstanceOf[js.Any])
+    inline def setOrgUnitId(value: String): Self = StObject.set(x, "orgUnitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrgUnitIdUndefined: Self = StObject.set(x, "orgUnitId", js.undefined)
+    inline def setOrgUnitIdUndefined: Self = StObject.set(x, "orgUnitId", js.undefined)
   }
 }

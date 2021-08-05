@@ -23,19 +23,15 @@ trait ASPxClientCrosshairFreePosition
 }
 object ASPxClientCrosshairFreePosition {
   
-  @scala.inline
-  def apply(dockPosition: String, offsetX: Double, offsetY: Double, paneID: Double): ASPxClientCrosshairFreePosition = {
+  inline def apply(dockPosition: String, offsetX: Double, offsetY: Double, paneID: Double): ASPxClientCrosshairFreePosition = {
     val __obj = js.Dynamic.literal(dockPosition = dockPosition.asInstanceOf[js.Any], offsetX = offsetX.asInstanceOf[js.Any], offsetY = offsetY.asInstanceOf[js.Any], paneID = paneID.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientCrosshairFreePosition]
   }
   
-  @scala.inline
-  implicit class ASPxClientCrosshairFreePositionMutableBuilder[Self <: ASPxClientCrosshairFreePosition] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientCrosshairFreePosition](x: Self) {
     
-    @scala.inline
-    def setDockPosition(value: String): Self = StObject.set(x, "dockPosition", value.asInstanceOf[js.Any])
+    inline def setDockPosition(value: String): Self = StObject.set(x, "dockPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaneID(value: Double): Self = StObject.set(x, "paneID", value.asInstanceOf[js.Any])
+    inline def setPaneID(value: Double): Self = StObject.set(x, "paneID", value.asInstanceOf[js.Any])
   }
 }

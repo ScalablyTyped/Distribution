@@ -16,19 +16,15 @@ trait Permission
 }
 object Permission {
   
-  @scala.inline
-  def apply(id: String, permissionMode: PermissionMode, resource: String): Permission = {
+  inline def apply(id: String, permissionMode: PermissionMode, resource: String): Permission = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], permissionMode = permissionMode.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[Permission]
   }
   
-  @scala.inline
-  implicit class PermissionMutableBuilder[Self <: Permission] (val x: Self) extends AnyVal {
+  extension [Self <: Permission](x: Self) {
     
-    @scala.inline
-    def setPermissionMode(value: PermissionMode): Self = StObject.set(x, "permissionMode", value.asInstanceOf[js.Any])
+    inline def setPermissionMode(value: PermissionMode): Self = StObject.set(x, "permissionMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait StartOnDemandAuditTaskRequest extends StObject {
 }
 object StartOnDemandAuditTaskRequest {
   
-  @scala.inline
-  def apply(targetCheckNames: TargetAuditCheckNames): StartOnDemandAuditTaskRequest = {
+  inline def apply(targetCheckNames: TargetAuditCheckNames): StartOnDemandAuditTaskRequest = {
     val __obj = js.Dynamic.literal(targetCheckNames = targetCheckNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartOnDemandAuditTaskRequest]
   }
   
-  @scala.inline
-  implicit class StartOnDemandAuditTaskRequestMutableBuilder[Self <: StartOnDemandAuditTaskRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartOnDemandAuditTaskRequest](x: Self) {
     
-    @scala.inline
-    def setTargetCheckNames(value: TargetAuditCheckNames): Self = StObject.set(x, "targetCheckNames", value.asInstanceOf[js.Any])
+    inline def setTargetCheckNames(value: TargetAuditCheckNames): Self = StObject.set(x, "targetCheckNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetCheckNamesVarargs(value: AuditCheckName*): Self = StObject.set(x, "targetCheckNames", js.Array(value :_*))
+    inline def setTargetCheckNamesVarargs(value: AuditCheckName*): Self = StObject.set(x, "targetCheckNames", js.Array(value :_*))
   }
 }

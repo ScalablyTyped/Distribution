@@ -10,16 +10,13 @@ trait State extends StObject {
 }
 object State {
   
-  @scala.inline
-  def apply(router: Location): State = {
+  inline def apply(router: Location): State = {
     val __obj = js.Dynamic.literal(router = router.asInstanceOf[js.Any])
     __obj.asInstanceOf[State]
   }
   
-  @scala.inline
-  implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+  extension [Self <: State](x: Self) {
     
-    @scala.inline
-    def setRouter(value: Location): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
+    inline def setRouter(value: Location): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
   }
 }

@@ -17,16 +17,12 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](classes: Classes[T], activations: js.Any*): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(classes.asInstanceOf[js.Any], activations.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def default[T](classes: Classes[T], activations: js.Any*): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(classes.asInstanceOf[js.Any], activations.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @scala.inline
-  def hover[A](component: ComponentClass[A, ComponentState]): ComponentClass[A, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("hover")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[A, ComponentState]]
-  @scala.inline
-  def hover[A](component: StatelessComponent[A]): ComponentClass[A, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("hover")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[A, ComponentState]]
+  inline def hover[A](component: ComponentClass[A, ComponentState]): ComponentClass[A, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("hover")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[A, ComponentState]]
+  inline def hover[A](component: StatelessComponent[A]): ComponentClass[A, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("hover")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[A, ComponentState]]
   
-  @scala.inline
-  def loop(index: Double, length: Double): LoopableProps = (^.asInstanceOf[js.Dynamic].applyDynamic("loop")(index.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[LoopableProps]
+  inline def loop(index: Double, length: Double): LoopableProps = (^.asInstanceOf[js.Dynamic].applyDynamic("loop")(index.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[LoopableProps]
   
   type CSS = CSSProperties
   
@@ -38,17 +34,14 @@ object mod {
   }
   object Classes {
     
-    @scala.inline
-    def apply[T](default: Partial[T]): Classes[T] = {
+    inline def apply[T](default: Partial[T]): Classes[T] = {
       val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
       __obj.asInstanceOf[Classes[T]]
     }
     
-    @scala.inline
-    implicit class ClassesMutableBuilder[Self <: Classes[?], T] (val x: Self & Classes[T]) extends AnyVal {
+    extension [Self <: Classes[?], T](x: Self & Classes[T]) {
       
-      @scala.inline
-      def setDefault(value: Partial[T]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: Partial[T]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     }
   }
   
@@ -60,20 +53,16 @@ object mod {
   }
   object HoverProps {
     
-    @scala.inline
-    def apply[T](): HoverProps[T] = {
+    inline def apply[T](): HoverProps[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HoverProps[T]]
     }
     
-    @scala.inline
-    implicit class HoverPropsMutableBuilder[Self <: HoverProps[?], T] (val x: Self & HoverProps[T]) extends AnyVal {
+    extension [Self <: HoverProps[?], T](x: Self & HoverProps[T]) {
       
-      @scala.inline
-      def setHover(value: Boolean): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+      inline def setHover(value: Boolean): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
+      inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     }
   }
   
@@ -93,42 +82,31 @@ object mod {
   }
   object LoopableProps {
     
-    @scala.inline
-    def apply(`nth-child`: Double): LoopableProps = {
+    inline def apply(`nth-child`: Double): LoopableProps = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("nth-child")(`nth-child`.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoopableProps]
     }
     
-    @scala.inline
-    implicit class LoopablePropsMutableBuilder[Self <: LoopableProps] (val x: Self) extends AnyVal {
+    extension [Self <: LoopableProps](x: Self) {
       
-      @scala.inline
-      def setEven(value: Boolean): Self = StObject.set(x, "even", value.asInstanceOf[js.Any])
+      inline def setEven(value: Boolean): Self = StObject.set(x, "even", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvenUndefined: Self = StObject.set(x, "even", js.undefined)
+      inline def setEvenUndefined: Self = StObject.set(x, "even", js.undefined)
       
-      @scala.inline
-      def `setFirst-child`(value: Boolean): Self = StObject.set(x, "first-child", value.asInstanceOf[js.Any])
+      inline def `setFirst-child`(value: Boolean): Self = StObject.set(x, "first-child", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setFirst-childUndefined`: Self = StObject.set(x, "first-child", js.undefined)
+      inline def `setFirst-childUndefined`: Self = StObject.set(x, "first-child", js.undefined)
       
-      @scala.inline
-      def `setLast-child`(value: Boolean): Self = StObject.set(x, "last-child", value.asInstanceOf[js.Any])
+      inline def `setLast-child`(value: Boolean): Self = StObject.set(x, "last-child", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setLast-childUndefined`: Self = StObject.set(x, "last-child", js.undefined)
+      inline def `setLast-childUndefined`: Self = StObject.set(x, "last-child", js.undefined)
       
-      @scala.inline
-      def `setNth-child`(value: Double): Self = StObject.set(x, "nth-child", value.asInstanceOf[js.Any])
+      inline def `setNth-child`(value: Double): Self = StObject.set(x, "nth-child", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOdd(value: Boolean): Self = StObject.set(x, "odd", value.asInstanceOf[js.Any])
+      inline def setOdd(value: Boolean): Self = StObject.set(x, "odd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOddUndefined: Self = StObject.set(x, "odd", js.undefined)
+      inline def setOddUndefined: Self = StObject.set(x, "odd", js.undefined)
     }
   }
 }

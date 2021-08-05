@@ -12,8 +12,7 @@ object mod {
     *
     * It will spit out all the messages to the console the first time and only the first time the method is called.
     */
-  @scala.inline
-  def apply(methodName: String, message: String*): Unit = (^.asInstanceOf[js.Dynamic].apply(methodName.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(methodName: String, message: String*): Unit = (^.asInstanceOf[js.Dynamic].apply(methodName.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("deprecate", JSImport.Namespace)
   @js.native
@@ -25,8 +24,7 @@ object mod {
   @JSImport("deprecate", "color")
   @js.native
   def color: String = js.native
-  @scala.inline
-  def color_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("color")(x.asInstanceOf[js.Any])
+  inline def color_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("color")(x.asInstanceOf[js.Any])
   
   /**
     * Set to false to do nothing at all when the deprecate method is called. Useful in tests of the library you're deprecating things within.
@@ -34,8 +32,7 @@ object mod {
   @JSImport("deprecate", "silence")
   @js.native
   def silence: Boolean = js.native
-  @scala.inline
-  def silence_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("silence")(x.asInstanceOf[js.Any])
+  inline def silence_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("silence")(x.asInstanceOf[js.Any])
   
   /**
     * The stream to which output is written. Defaults to process.stderr
@@ -43,6 +40,5 @@ object mod {
   @JSImport("deprecate", "stream")
   @js.native
   def stream: WriteStream = js.native
-  @scala.inline
-  def stream_=(x: WriteStream): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stream")(x.asInstanceOf[js.Any])
+  inline def stream_=(x: WriteStream): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stream")(x.asInstanceOf[js.Any])
 }

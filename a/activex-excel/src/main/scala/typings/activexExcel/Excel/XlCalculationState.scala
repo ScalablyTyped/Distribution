@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlCalculationState extends StObject
 object XlCalculationState {
   
-  @scala.inline
-  def xlCalculating: `1` = 1.asInstanceOf[`1`]
+  inline def xlCalculating: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlDone: `0` = 0.asInstanceOf[`0`]
+  inline def xlDone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlPending: `2` = 2.asInstanceOf[`2`]
+  inline def xlPending: `2` = 2.asInstanceOf[`2`]
 }

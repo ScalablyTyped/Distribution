@@ -17,8 +17,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "NavigationBar")
 @js.native
-class NavigationBar_ protected () extends NativeObject {
-  protected def this(properties: Properties[NavigationBar_, OmitNavigationBarset]) = this()
+/* private */ class NavigationBar_ () extends NativeObject {
+  /* private */ def this(properties: Properties[NavigationBar_, OmitNavigationBarset]) = this()
   
   /**
     * Background color of the navigation bar.

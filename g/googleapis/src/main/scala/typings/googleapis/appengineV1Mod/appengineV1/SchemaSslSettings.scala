@@ -40,31 +40,23 @@ trait SchemaSslSettings extends StObject {
 }
 object SchemaSslSettings {
   
-  @scala.inline
-  def apply(): SchemaSslSettings = {
+  inline def apply(): SchemaSslSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSslSettings]
   }
   
-  @scala.inline
-  implicit class SchemaSslSettingsMutableBuilder[Self <: SchemaSslSettings] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSslSettings](x: Self) {
     
-    @scala.inline
-    def setCertificateId(value: String): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
+    inline def setCertificateId(value: String): Self = StObject.set(x, "certificateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateIdUndefined: Self = StObject.set(x, "certificateId", js.undefined)
+    inline def setCertificateIdUndefined: Self = StObject.set(x, "certificateId", js.undefined)
     
-    @scala.inline
-    def setPendingManagedCertificateId(value: String): Self = StObject.set(x, "pendingManagedCertificateId", value.asInstanceOf[js.Any])
+    inline def setPendingManagedCertificateId(value: String): Self = StObject.set(x, "pendingManagedCertificateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingManagedCertificateIdUndefined: Self = StObject.set(x, "pendingManagedCertificateId", js.undefined)
+    inline def setPendingManagedCertificateIdUndefined: Self = StObject.set(x, "pendingManagedCertificateId", js.undefined)
     
-    @scala.inline
-    def setSslManagementType(value: String): Self = StObject.set(x, "sslManagementType", value.asInstanceOf[js.Any])
+    inline def setSslManagementType(value: String): Self = StObject.set(x, "sslManagementType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslManagementTypeUndefined: Self = StObject.set(x, "sslManagementType", js.undefined)
+    inline def setSslManagementTypeUndefined: Self = StObject.set(x, "sslManagementType", js.undefined)
   }
 }

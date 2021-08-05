@@ -11,19 +11,15 @@ trait ClipByValueInputs extends StObject {
 }
 object ClipByValueInputs {
   
-  @scala.inline
-  def apply(): ClipByValueInputs = {
+  inline def apply(): ClipByValueInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClipByValueInputs]
   }
   
-  @scala.inline
-  implicit class ClipByValueInputsMutableBuilder[Self <: ClipByValueInputs] (val x: Self) extends AnyVal {
+  extension [Self <: ClipByValueInputs](x: Self) {
     
-    @scala.inline
-    def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }
 }

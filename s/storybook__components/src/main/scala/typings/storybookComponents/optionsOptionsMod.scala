@@ -22,8 +22,7 @@ object optionsOptionsMod {
        with OptionsConfig
   object OptionsProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       name: String,
       onChange: OptionsSelection => OptionsSelection | Unit,
       options: Options,

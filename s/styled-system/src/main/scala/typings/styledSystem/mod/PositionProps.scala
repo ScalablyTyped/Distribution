@@ -39,31 +39,25 @@ trait PositionProps[ThemeType /* <: Theme[TLengthStyledSystem] */]
 }
 object PositionProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): PositionProps[ThemeType] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): PositionProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PositionProps[ThemeType]]
   }
   
-  @scala.inline
-  implicit class PositionPropsMutableBuilder[Self <: PositionProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & PositionProps[ThemeType]) extends AnyVal {
+  extension [Self <: PositionProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & PositionProps[ThemeType]) {
     
-    @scala.inline
-    def setPosition(
+    inline def setPosition(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Position */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionNull: Self = StObject.set(x, "position", null)
+    inline def setPositionNull: Self = StObject.set(x, "position", null)
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setPositionVarargs(
+    inline def setPositionVarargs(
       value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Position */ js.Any) | Null)*
     ): Self = StObject.set(x, "position", js.Array(value :_*))
   }

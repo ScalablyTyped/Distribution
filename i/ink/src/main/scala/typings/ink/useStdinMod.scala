@@ -11,6 +11,5 @@ object useStdinMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Props = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Props]
+  inline def default(): Props = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Props]
 }

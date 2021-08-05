@@ -23,31 +23,23 @@ trait StreamSelection extends StObject {
 }
 object StreamSelection {
   
-  @scala.inline
-  def apply(): StreamSelection = {
+  inline def apply(): StreamSelection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StreamSelection]
   }
   
-  @scala.inline
-  implicit class StreamSelectionMutableBuilder[Self <: StreamSelection] (val x: Self) extends AnyVal {
+  extension [Self <: StreamSelection](x: Self) {
     
-    @scala.inline
-    def setMaxVideoBitsPerSecond(value: integer): Self = StObject.set(x, "MaxVideoBitsPerSecond", value.asInstanceOf[js.Any])
+    inline def setMaxVideoBitsPerSecond(value: integer): Self = StObject.set(x, "MaxVideoBitsPerSecond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxVideoBitsPerSecondUndefined: Self = StObject.set(x, "MaxVideoBitsPerSecond", js.undefined)
+    inline def setMaxVideoBitsPerSecondUndefined: Self = StObject.set(x, "MaxVideoBitsPerSecond", js.undefined)
     
-    @scala.inline
-    def setMinVideoBitsPerSecond(value: integer): Self = StObject.set(x, "MinVideoBitsPerSecond", value.asInstanceOf[js.Any])
+    inline def setMinVideoBitsPerSecond(value: integer): Self = StObject.set(x, "MinVideoBitsPerSecond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinVideoBitsPerSecondUndefined: Self = StObject.set(x, "MinVideoBitsPerSecond", js.undefined)
+    inline def setMinVideoBitsPerSecondUndefined: Self = StObject.set(x, "MinVideoBitsPerSecond", js.undefined)
     
-    @scala.inline
-    def setStreamOrder(value: StreamOrder): Self = StObject.set(x, "StreamOrder", value.asInstanceOf[js.Any])
+    inline def setStreamOrder(value: StreamOrder): Self = StObject.set(x, "StreamOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamOrderUndefined: Self = StObject.set(x, "StreamOrder", js.undefined)
+    inline def setStreamOrderUndefined: Self = StObject.set(x, "StreamOrder", js.undefined)
   }
 }

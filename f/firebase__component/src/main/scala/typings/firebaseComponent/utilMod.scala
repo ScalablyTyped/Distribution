@@ -18,100 +18,78 @@ object utilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getFakeApp(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeApp")().asInstanceOf[js.Any]
-  @scala.inline
-  def getFakeApp(appName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeApp")(appName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getFakeApp(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeApp")().asInstanceOf[js.Any]
+  inline def getFakeApp(appName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getFakeApp")(appName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def getFakeComponent_badtest(name: badtest, factory: InstanceFactory[badtest]): Component[badtest] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[Component[badtest]]
-  @scala.inline
-  def getFakeComponent_badtest(name: badtest, factory: InstanceFactory[badtest], multipleInstance: Boolean): Component[badtest] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], multipleInstance.asInstanceOf[js.Any])).asInstanceOf[Component[badtest]]
-  @scala.inline
-  def getFakeComponent_badtest(
+  inline def getFakeComponent_badtest(name: badtest, factory: InstanceFactory[badtest]): Component[badtest] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[Component[badtest]]
+  inline def getFakeComponent_badtest(name: badtest, factory: InstanceFactory[badtest], multipleInstance: Boolean): Component[badtest] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], multipleInstance.asInstanceOf[js.Any])).asInstanceOf[Component[badtest]]
+  inline def getFakeComponent_badtest(
     name: badtest,
     factory: InstanceFactory[badtest],
     multipleInstance: Boolean,
     instantiationMode: InstantiationMode
   ): Component[badtest] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], multipleInstance.asInstanceOf[js.Any], instantiationMode.asInstanceOf[js.Any])).asInstanceOf[Component[badtest]]
-  @scala.inline
-  def getFakeComponent_badtest(
+  inline def getFakeComponent_badtest(
     name: badtest,
     factory: InstanceFactory[badtest],
     multipleInstance: Unit,
     instantiationMode: InstantiationMode
   ): Component[badtest] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], multipleInstance.asInstanceOf[js.Any], instantiationMode.asInstanceOf[js.Any])).asInstanceOf[Component[badtest]]
   
-  @scala.inline
-  def getFakeComponent_fireball(name: fireball, factory: InstanceFactory[fireball]): Component[fireball] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[Component[fireball]]
-  @scala.inline
-  def getFakeComponent_fireball(name: fireball, factory: InstanceFactory[fireball], multipleInstance: Boolean): Component[fireball] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], multipleInstance.asInstanceOf[js.Any])).asInstanceOf[Component[fireball]]
-  @scala.inline
-  def getFakeComponent_fireball(
+  inline def getFakeComponent_fireball(name: fireball, factory: InstanceFactory[fireball]): Component[fireball] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[Component[fireball]]
+  inline def getFakeComponent_fireball(name: fireball, factory: InstanceFactory[fireball], multipleInstance: Boolean): Component[fireball] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], multipleInstance.asInstanceOf[js.Any])).asInstanceOf[Component[fireball]]
+  inline def getFakeComponent_fireball(
     name: fireball,
     factory: InstanceFactory[fireball],
     multipleInstance: Boolean,
     instantiationMode: InstantiationMode
   ): Component[fireball] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], multipleInstance.asInstanceOf[js.Any], instantiationMode.asInstanceOf[js.Any])).asInstanceOf[Component[fireball]]
-  @scala.inline
-  def getFakeComponent_fireball(
+  inline def getFakeComponent_fireball(
     name: fireball,
     factory: InstanceFactory[fireball],
     multipleInstance: Unit,
     instantiationMode: InstantiationMode
   ): Component[fireball] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], multipleInstance.asInstanceOf[js.Any], instantiationMode.asInstanceOf[js.Any])).asInstanceOf[Component[fireball]]
   
-  @scala.inline
-  def getFakeComponent_rocket(name: rocket, factory: InstanceFactory[rocket]): Component[rocket] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[Component[rocket]]
-  @scala.inline
-  def getFakeComponent_rocket(name: rocket, factory: InstanceFactory[rocket], multipleInstance: Boolean): Component[rocket] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], multipleInstance.asInstanceOf[js.Any])).asInstanceOf[Component[rocket]]
-  @scala.inline
-  def getFakeComponent_rocket(
+  inline def getFakeComponent_rocket(name: rocket, factory: InstanceFactory[rocket]): Component[rocket] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[Component[rocket]]
+  inline def getFakeComponent_rocket(name: rocket, factory: InstanceFactory[rocket], multipleInstance: Boolean): Component[rocket] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], multipleInstance.asInstanceOf[js.Any])).asInstanceOf[Component[rocket]]
+  inline def getFakeComponent_rocket(
     name: rocket,
     factory: InstanceFactory[rocket],
     multipleInstance: Boolean,
     instantiationMode: InstantiationMode
   ): Component[rocket] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], multipleInstance.asInstanceOf[js.Any], instantiationMode.asInstanceOf[js.Any])).asInstanceOf[Component[rocket]]
-  @scala.inline
-  def getFakeComponent_rocket(
+  inline def getFakeComponent_rocket(
     name: rocket,
     factory: InstanceFactory[rocket],
     multipleInstance: Unit,
     instantiationMode: InstantiationMode
   ): Component[rocket] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], multipleInstance.asInstanceOf[js.Any], instantiationMode.asInstanceOf[js.Any])).asInstanceOf[Component[rocket]]
   
-  @scala.inline
-  def getFakeComponent_ship(name: ship, factory: InstanceFactory[ship]): Component[ship] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[Component[ship]]
-  @scala.inline
-  def getFakeComponent_ship(name: ship, factory: InstanceFactory[ship], multipleInstance: Boolean): Component[ship] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], multipleInstance.asInstanceOf[js.Any])).asInstanceOf[Component[ship]]
-  @scala.inline
-  def getFakeComponent_ship(
+  inline def getFakeComponent_ship(name: ship, factory: InstanceFactory[ship]): Component[ship] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[Component[ship]]
+  inline def getFakeComponent_ship(name: ship, factory: InstanceFactory[ship], multipleInstance: Boolean): Component[ship] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], multipleInstance.asInstanceOf[js.Any])).asInstanceOf[Component[ship]]
+  inline def getFakeComponent_ship(
     name: ship,
     factory: InstanceFactory[ship],
     multipleInstance: Boolean,
     instantiationMode: InstantiationMode
   ): Component[ship] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], multipleInstance.asInstanceOf[js.Any], instantiationMode.asInstanceOf[js.Any])).asInstanceOf[Component[ship]]
-  @scala.inline
-  def getFakeComponent_ship(
+  inline def getFakeComponent_ship(
     name: ship,
     factory: InstanceFactory[ship],
     multipleInstance: Unit,
     instantiationMode: InstantiationMode
   ): Component[ship] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], multipleInstance.asInstanceOf[js.Any], instantiationMode.asInstanceOf[js.Any])).asInstanceOf[Component[ship]]
   
-  @scala.inline
-  def getFakeComponent_test(name: test, factory: InstanceFactory[test]): Component[test] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[Component[test]]
-  @scala.inline
-  def getFakeComponent_test(name: test, factory: InstanceFactory[test], multipleInstance: Boolean): Component[test] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], multipleInstance.asInstanceOf[js.Any])).asInstanceOf[Component[test]]
-  @scala.inline
-  def getFakeComponent_test(
+  inline def getFakeComponent_test(name: test, factory: InstanceFactory[test]): Component[test] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any])).asInstanceOf[Component[test]]
+  inline def getFakeComponent_test(name: test, factory: InstanceFactory[test], multipleInstance: Boolean): Component[test] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], multipleInstance.asInstanceOf[js.Any])).asInstanceOf[Component[test]]
+  inline def getFakeComponent_test(
     name: test,
     factory: InstanceFactory[test],
     multipleInstance: Boolean,
     instantiationMode: InstantiationMode
   ): Component[test] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFakeComponent")(name.asInstanceOf[js.Any], factory.asInstanceOf[js.Any], multipleInstance.asInstanceOf[js.Any], instantiationMode.asInstanceOf[js.Any])).asInstanceOf[Component[test]]
-  @scala.inline
-  def getFakeComponent_test(
+  inline def getFakeComponent_test(
     name: test,
     factory: InstanceFactory[test],
     multipleInstance: Unit,

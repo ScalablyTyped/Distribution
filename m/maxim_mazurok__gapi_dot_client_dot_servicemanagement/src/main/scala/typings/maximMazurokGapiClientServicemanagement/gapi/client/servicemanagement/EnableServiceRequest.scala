@@ -14,19 +14,15 @@ trait EnableServiceRequest extends StObject {
 }
 object EnableServiceRequest {
   
-  @scala.inline
-  def apply(): EnableServiceRequest = {
+  inline def apply(): EnableServiceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnableServiceRequest]
   }
   
-  @scala.inline
-  implicit class EnableServiceRequestMutableBuilder[Self <: EnableServiceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: EnableServiceRequest](x: Self) {
     
-    @scala.inline
-    def setConsumerId(value: String): Self = StObject.set(x, "consumerId", value.asInstanceOf[js.Any])
+    inline def setConsumerId(value: String): Self = StObject.set(x, "consumerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumerIdUndefined: Self = StObject.set(x, "consumerId", js.undefined)
+    inline def setConsumerIdUndefined: Self = StObject.set(x, "consumerId", js.undefined)
   }
 }

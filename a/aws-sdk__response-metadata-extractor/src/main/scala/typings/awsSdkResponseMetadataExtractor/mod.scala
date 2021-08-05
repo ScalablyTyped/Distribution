@@ -12,6 +12,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def extractMetadata(httpResponse: HttpResponse): ResponseMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("extractMetadata")(httpResponse.asInstanceOf[js.Any]).asInstanceOf[ResponseMetadata]
+  inline def extractMetadata(httpResponse: HttpResponse): ResponseMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("extractMetadata")(httpResponse.asInstanceOf[js.Any]).asInstanceOf[ResponseMetadata]
 }

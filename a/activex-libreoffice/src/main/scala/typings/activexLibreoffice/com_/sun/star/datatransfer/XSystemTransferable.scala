@@ -25,8 +25,7 @@ trait XSystemTransferable
 }
 object XSystemTransferable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getData: SeqEquiv[Double] => js.Any,
     queryInterface: `type` => js.Any,
@@ -36,10 +35,8 @@ object XSystemTransferable {
     __obj.asInstanceOf[XSystemTransferable]
   }
   
-  @scala.inline
-  implicit class XSystemTransferableMutableBuilder[Self <: XSystemTransferable] (val x: Self) extends AnyVal {
+  extension [Self <: XSystemTransferable](x: Self) {
     
-    @scala.inline
-    def setGetData(value: SeqEquiv[Double] => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
+    inline def setGetData(value: SeqEquiv[Double] => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
   }
 }

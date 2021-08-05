@@ -198,241 +198,163 @@ trait GetSystemInfoResult extends StObject {
 }
 object GetSystemInfoResult {
   
-  @scala.inline
-  def apply(): GetSystemInfoResult = {
+  inline def apply(): GetSystemInfoResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSystemInfoResult]
   }
   
-  @scala.inline
-  implicit class GetSystemInfoResultMutableBuilder[Self <: GetSystemInfoResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetSystemInfoResult](x: Self) {
     
-    @scala.inline
-    def setAlbumAuthorized(value: Boolean): Self = StObject.set(x, "albumAuthorized", value.asInstanceOf[js.Any])
+    inline def setAlbumAuthorized(value: Boolean): Self = StObject.set(x, "albumAuthorized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlbumAuthorizedUndefined: Self = StObject.set(x, "albumAuthorized", js.undefined)
+    inline def setAlbumAuthorizedUndefined: Self = StObject.set(x, "albumAuthorized", js.undefined)
     
-    @scala.inline
-    def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+    inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
+    inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppNameUndefined: Self = StObject.set(x, "appName", js.undefined)
+    inline def setAppNameUndefined: Self = StObject.set(x, "appName", js.undefined)
     
-    @scala.inline
-    def setAppPlatform(value: String): Self = StObject.set(x, "AppPlatform", value.asInstanceOf[js.Any])
+    inline def setAppPlatform(value: String): Self = StObject.set(x, "AppPlatform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppPlatformUndefined: Self = StObject.set(x, "AppPlatform", js.undefined)
+    inline def setAppPlatformUndefined: Self = StObject.set(x, "AppPlatform", js.undefined)
     
-    @scala.inline
-    def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
+    inline def setAppUndefined: Self = StObject.set(x, "app", js.undefined)
     
-    @scala.inline
-    def setBluetoothEnabled(value: Boolean): Self = StObject.set(x, "bluetoothEnabled", value.asInstanceOf[js.Any])
+    inline def setBluetoothEnabled(value: Boolean): Self = StObject.set(x, "bluetoothEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBluetoothEnabledUndefined: Self = StObject.set(x, "bluetoothEnabled", js.undefined)
+    inline def setBluetoothEnabledUndefined: Self = StObject.set(x, "bluetoothEnabled", js.undefined)
     
-    @scala.inline
-    def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
+    inline def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrandUndefined: Self = StObject.set(x, "brand", js.undefined)
+    inline def setBrandUndefined: Self = StObject.set(x, "brand", js.undefined)
     
-    @scala.inline
-    def setCacheLocation(value: js.Any): Self = StObject.set(x, "cacheLocation", value.asInstanceOf[js.Any])
+    inline def setCacheLocation(value: js.Any): Self = StObject.set(x, "cacheLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheLocationUndefined: Self = StObject.set(x, "cacheLocation", js.undefined)
+    inline def setCacheLocationUndefined: Self = StObject.set(x, "cacheLocation", js.undefined)
     
-    @scala.inline
-    def setCameraAuthorized(value: Boolean): Self = StObject.set(x, "cameraAuthorized", value.asInstanceOf[js.Any])
+    inline def setCameraAuthorized(value: Boolean): Self = StObject.set(x, "cameraAuthorized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCameraAuthorizedUndefined: Self = StObject.set(x, "cameraAuthorized", js.undefined)
+    inline def setCameraAuthorizedUndefined: Self = StObject.set(x, "cameraAuthorized", js.undefined)
     
-    @scala.inline
-    def setCurrentBattery(value: String): Self = StObject.set(x, "currentBattery", value.asInstanceOf[js.Any])
+    inline def setCurrentBattery(value: String): Self = StObject.set(x, "currentBattery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentBatteryUndefined: Self = StObject.set(x, "currentBattery", js.undefined)
+    inline def setCurrentBatteryUndefined: Self = StObject.set(x, "currentBattery", js.undefined)
     
-    @scala.inline
-    def setFontSizeSetting(value: Double): Self = StObject.set(x, "fontSizeSetting", value.asInstanceOf[js.Any])
+    inline def setFontSizeSetting(value: Double): Self = StObject.set(x, "fontSizeSetting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSizeSettingUndefined: Self = StObject.set(x, "fontSizeSetting", js.undefined)
+    inline def setFontSizeSettingUndefined: Self = StObject.set(x, "fontSizeSetting", js.undefined)
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setLocationAuthorized(value: Boolean): Self = StObject.set(x, "locationAuthorized", value.asInstanceOf[js.Any])
+    inline def setLocationAuthorized(value: Boolean): Self = StObject.set(x, "locationAuthorized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationAuthorizedUndefined: Self = StObject.set(x, "locationAuthorized", js.undefined)
+    inline def setLocationAuthorizedUndefined: Self = StObject.set(x, "locationAuthorized", js.undefined)
     
-    @scala.inline
-    def setLocationEnabled(value: Boolean): Self = StObject.set(x, "locationEnabled", value.asInstanceOf[js.Any])
+    inline def setLocationEnabled(value: Boolean): Self = StObject.set(x, "locationEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationEnabledUndefined: Self = StObject.set(x, "locationEnabled", js.undefined)
+    inline def setLocationEnabledUndefined: Self = StObject.set(x, "locationEnabled", js.undefined)
     
-    @scala.inline
-    def setMicrophoneAuthorized(value: Boolean): Self = StObject.set(x, "microphoneAuthorized", value.asInstanceOf[js.Any])
+    inline def setMicrophoneAuthorized(value: Boolean): Self = StObject.set(x, "microphoneAuthorized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMicrophoneAuthorizedUndefined: Self = StObject.set(x, "microphoneAuthorized", js.undefined)
+    inline def setMicrophoneAuthorizedUndefined: Self = StObject.set(x, "microphoneAuthorized", js.undefined)
     
-    @scala.inline
-    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setNavigationBarHeight(value: Double): Self = StObject.set(x, "navigationBarHeight", value.asInstanceOf[js.Any])
+    inline def setNavigationBarHeight(value: Double): Self = StObject.set(x, "navigationBarHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigationBarHeightUndefined: Self = StObject.set(x, "navigationBarHeight", js.undefined)
+    inline def setNavigationBarHeightUndefined: Self = StObject.set(x, "navigationBarHeight", js.undefined)
     
-    @scala.inline
-    def setNotificationAlertAuthorized(value: Boolean): Self = StObject.set(x, "notificationAlertAuthorized", value.asInstanceOf[js.Any])
+    inline def setNotificationAlertAuthorized(value: Boolean): Self = StObject.set(x, "notificationAlertAuthorized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationAlertAuthorizedUndefined: Self = StObject.set(x, "notificationAlertAuthorized", js.undefined)
+    inline def setNotificationAlertAuthorizedUndefined: Self = StObject.set(x, "notificationAlertAuthorized", js.undefined)
     
-    @scala.inline
-    def setNotificationAuthorized(value: Boolean): Self = StObject.set(x, "notificationAuthorized", value.asInstanceOf[js.Any])
+    inline def setNotificationAuthorized(value: Boolean): Self = StObject.set(x, "notificationAuthorized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationAuthorizedUndefined: Self = StObject.set(x, "notificationAuthorized", js.undefined)
+    inline def setNotificationAuthorizedUndefined: Self = StObject.set(x, "notificationAuthorized", js.undefined)
     
-    @scala.inline
-    def setNotificationBadgeAuthorized(value: Boolean): Self = StObject.set(x, "notificationBadgeAuthorized", value.asInstanceOf[js.Any])
+    inline def setNotificationBadgeAuthorized(value: Boolean): Self = StObject.set(x, "notificationBadgeAuthorized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationBadgeAuthorizedUndefined: Self = StObject.set(x, "notificationBadgeAuthorized", js.undefined)
+    inline def setNotificationBadgeAuthorizedUndefined: Self = StObject.set(x, "notificationBadgeAuthorized", js.undefined)
     
-    @scala.inline
-    def setNotificationSoundAuthorized(value: Boolean): Self = StObject.set(x, "notificationSoundAuthorized", value.asInstanceOf[js.Any])
+    inline def setNotificationSoundAuthorized(value: Boolean): Self = StObject.set(x, "notificationSoundAuthorized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationSoundAuthorizedUndefined: Self = StObject.set(x, "notificationSoundAuthorized", js.undefined)
+    inline def setNotificationSoundAuthorizedUndefined: Self = StObject.set(x, "notificationSoundAuthorized", js.undefined)
     
-    @scala.inline
-    def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
+    inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
+    inline def setPixelRatioUndefined: Self = StObject.set(x, "pixelRatio", js.undefined)
     
-    @scala.inline
-    def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+    inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
-    @scala.inline
-    def setSDKVersion(value: String): Self = StObject.set(x, "SDKVersion", value.asInstanceOf[js.Any])
+    inline def setSDKVersion(value: String): Self = StObject.set(x, "SDKVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSDKVersionUndefined: Self = StObject.set(x, "SDKVersion", js.undefined)
+    inline def setSDKVersionUndefined: Self = StObject.set(x, "SDKVersion", js.undefined)
     
-    @scala.inline
-    def setSafeArea(value: SafeAreaResult): Self = StObject.set(x, "safeArea", value.asInstanceOf[js.Any])
+    inline def setSafeArea(value: SafeAreaResult): Self = StObject.set(x, "safeArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSafeAreaUndefined: Self = StObject.set(x, "safeArea", js.undefined)
+    inline def setSafeAreaUndefined: Self = StObject.set(x, "safeArea", js.undefined)
     
-    @scala.inline
-    def setScreenHeight(value: Double): Self = StObject.set(x, "screenHeight", value.asInstanceOf[js.Any])
+    inline def setScreenHeight(value: Double): Self = StObject.set(x, "screenHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenHeightUndefined: Self = StObject.set(x, "screenHeight", js.undefined)
+    inline def setScreenHeightUndefined: Self = StObject.set(x, "screenHeight", js.undefined)
     
-    @scala.inline
-    def setScreenWidth(value: Double): Self = StObject.set(x, "screenWidth", value.asInstanceOf[js.Any])
+    inline def setScreenWidth(value: Double): Self = StObject.set(x, "screenWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenWidthUndefined: Self = StObject.set(x, "screenWidth", js.undefined)
+    inline def setScreenWidthUndefined: Self = StObject.set(x, "screenWidth", js.undefined)
     
-    @scala.inline
-    def setStatusBarHeight(value: Double): Self = StObject.set(x, "statusBarHeight", value.asInstanceOf[js.Any])
+    inline def setStatusBarHeight(value: Double): Self = StObject.set(x, "statusBarHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusBarHeightUndefined: Self = StObject.set(x, "statusBarHeight", js.undefined)
+    inline def setStatusBarHeightUndefined: Self = StObject.set(x, "statusBarHeight", js.undefined)
     
-    @scala.inline
-    def setStorage(value: String): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+    inline def setStorage(value: String): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
+    inline def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
     
-    @scala.inline
-    def setSwanNativeVersion(value: String): Self = StObject.set(x, "swanNativeVersion", value.asInstanceOf[js.Any])
+    inline def setSwanNativeVersion(value: String): Self = StObject.set(x, "swanNativeVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwanNativeVersionUndefined: Self = StObject.set(x, "swanNativeVersion", js.undefined)
+    inline def setSwanNativeVersionUndefined: Self = StObject.set(x, "swanNativeVersion", js.undefined)
     
-    @scala.inline
-    def setSystem(value: String): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
+    inline def setSystem(value: String): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
+    inline def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
     
-    @scala.inline
-    def setTitleBarHeight(value: Double): Self = StObject.set(x, "titleBarHeight", value.asInstanceOf[js.Any])
+    inline def setTitleBarHeight(value: Double): Self = StObject.set(x, "titleBarHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleBarHeightUndefined: Self = StObject.set(x, "titleBarHeight", js.undefined)
+    inline def setTitleBarHeightUndefined: Self = StObject.set(x, "titleBarHeight", js.undefined)
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     
-    @scala.inline
-    def setWifiEnabled(value: Boolean): Self = StObject.set(x, "wifiEnabled", value.asInstanceOf[js.Any])
+    inline def setWifiEnabled(value: Boolean): Self = StObject.set(x, "wifiEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWifiEnabledUndefined: Self = StObject.set(x, "wifiEnabled", js.undefined)
+    inline def setWifiEnabledUndefined: Self = StObject.set(x, "wifiEnabled", js.undefined)
     
-    @scala.inline
-    def setWindowBottom(value: Double): Self = StObject.set(x, "windowBottom", value.asInstanceOf[js.Any])
+    inline def setWindowBottom(value: Double): Self = StObject.set(x, "windowBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowBottomUndefined: Self = StObject.set(x, "windowBottom", js.undefined)
+    inline def setWindowBottomUndefined: Self = StObject.set(x, "windowBottom", js.undefined)
     
-    @scala.inline
-    def setWindowHeight(value: Double): Self = StObject.set(x, "windowHeight", value.asInstanceOf[js.Any])
+    inline def setWindowHeight(value: Double): Self = StObject.set(x, "windowHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowHeightUndefined: Self = StObject.set(x, "windowHeight", js.undefined)
+    inline def setWindowHeightUndefined: Self = StObject.set(x, "windowHeight", js.undefined)
     
-    @scala.inline
-    def setWindowTop(value: Double): Self = StObject.set(x, "windowTop", value.asInstanceOf[js.Any])
+    inline def setWindowTop(value: Double): Self = StObject.set(x, "windowTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowTopUndefined: Self = StObject.set(x, "windowTop", js.undefined)
+    inline def setWindowTopUndefined: Self = StObject.set(x, "windowTop", js.undefined)
     
-    @scala.inline
-    def setWindowWidth(value: Double): Self = StObject.set(x, "windowWidth", value.asInstanceOf[js.Any])
+    inline def setWindowWidth(value: Double): Self = StObject.set(x, "windowWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowWidthUndefined: Self = StObject.set(x, "windowWidth", js.undefined)
+    inline def setWindowWidthUndefined: Self = StObject.set(x, "windowWidth", js.undefined)
   }
 }

@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Trendline")
 @js.native
-class Trendline protected ()
+/* private */ class Trendline ()
   extends StObject
      with typings.activexExcel.Excel.Trendline {
   
@@ -42,7 +42,7 @@ class Trendline protected ()
   /* CompleteClass */
   var DisplayRSquared: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.Trendline_typekey")
   var ExcelDotTrendline_typekey: typings.activexExcel.Excel.Trendline = js.native
   

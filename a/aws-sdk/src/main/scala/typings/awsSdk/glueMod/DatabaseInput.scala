@@ -38,49 +38,35 @@ trait DatabaseInput extends StObject {
 }
 object DatabaseInput {
   
-  @scala.inline
-  def apply(Name: NameString): DatabaseInput = {
+  inline def apply(Name: NameString): DatabaseInput = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatabaseInput]
   }
   
-  @scala.inline
-  implicit class DatabaseInputMutableBuilder[Self <: DatabaseInput] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseInput](x: Self) {
     
-    @scala.inline
-    def setCreateTableDefaultPermissions(value: PrincipalPermissionsList): Self = StObject.set(x, "CreateTableDefaultPermissions", value.asInstanceOf[js.Any])
+    inline def setCreateTableDefaultPermissions(value: PrincipalPermissionsList): Self = StObject.set(x, "CreateTableDefaultPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTableDefaultPermissionsUndefined: Self = StObject.set(x, "CreateTableDefaultPermissions", js.undefined)
+    inline def setCreateTableDefaultPermissionsUndefined: Self = StObject.set(x, "CreateTableDefaultPermissions", js.undefined)
     
-    @scala.inline
-    def setCreateTableDefaultPermissionsVarargs(value: PrincipalPermissions*): Self = StObject.set(x, "CreateTableDefaultPermissions", js.Array(value :_*))
+    inline def setCreateTableDefaultPermissionsVarargs(value: PrincipalPermissions*): Self = StObject.set(x, "CreateTableDefaultPermissions", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setLocationUri(value: URI): Self = StObject.set(x, "LocationUri", value.asInstanceOf[js.Any])
+    inline def setLocationUri(value: URI): Self = StObject.set(x, "LocationUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUriUndefined: Self = StObject.set(x, "LocationUri", js.undefined)
+    inline def setLocationUriUndefined: Self = StObject.set(x, "LocationUri", js.undefined)
     
-    @scala.inline
-    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameters(value: ParametersMap): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ParametersMap): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
-    @scala.inline
-    def setTargetDatabase(value: DatabaseIdentifier): Self = StObject.set(x, "TargetDatabase", value.asInstanceOf[js.Any])
+    inline def setTargetDatabase(value: DatabaseIdentifier): Self = StObject.set(x, "TargetDatabase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetDatabaseUndefined: Self = StObject.set(x, "TargetDatabase", js.undefined)
+    inline def setTargetDatabaseUndefined: Self = StObject.set(x, "TargetDatabase", js.undefined)
   }
 }

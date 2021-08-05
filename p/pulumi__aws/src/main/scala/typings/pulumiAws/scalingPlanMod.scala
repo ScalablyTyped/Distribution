@@ -62,21 +62,16 @@ object scalingPlanMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ScalingPlan = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ScalingPlan]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ScalingPlan = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ScalingPlan]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ScalingPlanState): ScalingPlan = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ScalingPlan]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ScalingPlanState, opts: CustomResourceOptions): ScalingPlan = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ScalingPlan]
+    inline def get(name: String, id: Input[ID]): ScalingPlan = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ScalingPlan]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ScalingPlan = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ScalingPlan]
+    inline def get(name: String, id: Input[ID], state: ScalingPlanState): ScalingPlan = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ScalingPlan]
+    inline def get(name: String, id: Input[ID], state: ScalingPlanState, opts: CustomResourceOptions): ScalingPlan = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ScalingPlan]
     
     /**
       * Returns true if the given object is an instance of ScalingPlan.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscalingplans/scalingPlan.ScalingPlan */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/autoscalingplans/scalingPlan.ScalingPlan */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscalingplans/scalingPlan.ScalingPlan */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/autoscalingplans/scalingPlan.ScalingPlan */ Boolean]
   }
   
   trait ScalingPlanArgs extends StObject {
@@ -100,8 +95,7 @@ object scalingPlanMod {
   }
   object ScalingPlanArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       applicationSource: Input[typings.pulumiAws.inputMod.autoscalingplans.ScalingPlanApplicationSource],
       scalingInstructions: Input[
           js.Array[Input[typings.pulumiAws.inputMod.autoscalingplans.ScalingPlanScalingInstruction]]
@@ -111,27 +105,21 @@ object scalingPlanMod {
       __obj.asInstanceOf[ScalingPlanArgs]
     }
     
-    @scala.inline
-    implicit class ScalingPlanArgsMutableBuilder[Self <: ScalingPlanArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ScalingPlanArgs](x: Self) {
       
-      @scala.inline
-      def setApplicationSource(value: Input[typings.pulumiAws.inputMod.autoscalingplans.ScalingPlanApplicationSource]): Self = StObject.set(x, "applicationSource", value.asInstanceOf[js.Any])
+      inline def setApplicationSource(value: Input[typings.pulumiAws.inputMod.autoscalingplans.ScalingPlanApplicationSource]): Self = StObject.set(x, "applicationSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setScalingInstructions(
+      inline def setScalingInstructions(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.autoscalingplans.ScalingPlanScalingInstruction]]
             ]
       ): Self = StObject.set(x, "scalingInstructions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScalingInstructionsVarargs(value: Input[typings.pulumiAws.inputMod.autoscalingplans.ScalingPlanScalingInstruction]*): Self = StObject.set(x, "scalingInstructions", js.Array(value :_*))
+      inline def setScalingInstructionsVarargs(value: Input[typings.pulumiAws.inputMod.autoscalingplans.ScalingPlanScalingInstruction]*): Self = StObject.set(x, "scalingInstructions", js.Array(value :_*))
     }
   }
   
@@ -163,45 +151,34 @@ object scalingPlanMod {
   }
   object ScalingPlanState {
     
-    @scala.inline
-    def apply(): ScalingPlanState = {
+    inline def apply(): ScalingPlanState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ScalingPlanState]
     }
     
-    @scala.inline
-    implicit class ScalingPlanStateMutableBuilder[Self <: ScalingPlanState] (val x: Self) extends AnyVal {
+    extension [Self <: ScalingPlanState](x: Self) {
       
-      @scala.inline
-      def setApplicationSource(value: Input[typings.pulumiAws.inputMod.autoscalingplans.ScalingPlanApplicationSource]): Self = StObject.set(x, "applicationSource", value.asInstanceOf[js.Any])
+      inline def setApplicationSource(value: Input[typings.pulumiAws.inputMod.autoscalingplans.ScalingPlanApplicationSource]): Self = StObject.set(x, "applicationSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationSourceUndefined: Self = StObject.set(x, "applicationSource", js.undefined)
+      inline def setApplicationSourceUndefined: Self = StObject.set(x, "applicationSource", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setScalingInstructions(
+      inline def setScalingInstructions(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.autoscalingplans.ScalingPlanScalingInstruction]]
             ]
       ): Self = StObject.set(x, "scalingInstructions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScalingInstructionsUndefined: Self = StObject.set(x, "scalingInstructions", js.undefined)
+      inline def setScalingInstructionsUndefined: Self = StObject.set(x, "scalingInstructions", js.undefined)
       
-      @scala.inline
-      def setScalingInstructionsVarargs(value: Input[typings.pulumiAws.inputMod.autoscalingplans.ScalingPlanScalingInstruction]*): Self = StObject.set(x, "scalingInstructions", js.Array(value :_*))
+      inline def setScalingInstructionsVarargs(value: Input[typings.pulumiAws.inputMod.autoscalingplans.ScalingPlanScalingInstruction]*): Self = StObject.set(x, "scalingInstructions", js.Array(value :_*))
       
-      @scala.inline
-      def setScalingPlanVersion(value: Input[Double]): Self = StObject.set(x, "scalingPlanVersion", value.asInstanceOf[js.Any])
+      inline def setScalingPlanVersion(value: Input[Double]): Self = StObject.set(x, "scalingPlanVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScalingPlanVersionUndefined: Self = StObject.set(x, "scalingPlanVersion", js.undefined)
+      inline def setScalingPlanVersionUndefined: Self = StObject.set(x, "scalingPlanVersion", js.undefined)
     }
   }
 }

@@ -15,19 +15,15 @@ trait DeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOption exten
 }
 object DeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOption {
   
-  @scala.inline
-  def apply(): DeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOption = {
+  inline def apply(): DeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOption]
   }
   
-  @scala.inline
-  implicit class DeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOptionMutableBuilder[Self <: DeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOption] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentGroupBlueGreenDeploymentConfigGreenFleetProvisioningOption](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
   }
 }

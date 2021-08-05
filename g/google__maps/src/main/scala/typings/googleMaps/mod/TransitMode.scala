@@ -18,18 +18,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TransitMode extends StObject
 object TransitMode {
   
-  @scala.inline
-  def bus: bus_ = "bus".asInstanceOf[bus_]
+  inline def bus: bus_ = "bus".asInstanceOf[bus_]
   
-  @scala.inline
-  def rail: rail_ = "rail".asInstanceOf[rail_]
+  inline def rail: rail_ = "rail".asInstanceOf[rail_]
   
-  @scala.inline
-  def subway: subway_ = "subway".asInstanceOf[subway_]
+  inline def subway: subway_ = "subway".asInstanceOf[subway_]
   
-  @scala.inline
-  def train: typings.googleMaps.googleMapsStrings.train = "train".asInstanceOf[typings.googleMaps.googleMapsStrings.train]
+  inline def train: typings.googleMaps.googleMapsStrings.train = "train".asInstanceOf[typings.googleMaps.googleMapsStrings.train]
   
-  @scala.inline
-  def tram: tram_ = "tram".asInstanceOf[tram_]
+  inline def tram: tram_ = "tram".asInstanceOf[tram_]
 }

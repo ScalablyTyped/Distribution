@@ -23,25 +23,19 @@ trait MarkerRecordedEventAttributes extends StObject {
 }
 object MarkerRecordedEventAttributes {
   
-  @scala.inline
-  def apply(decisionTaskCompletedEventId: EventId, markerName: MarkerName): MarkerRecordedEventAttributes = {
+  inline def apply(decisionTaskCompletedEventId: EventId, markerName: MarkerName): MarkerRecordedEventAttributes = {
     val __obj = js.Dynamic.literal(decisionTaskCompletedEventId = decisionTaskCompletedEventId.asInstanceOf[js.Any], markerName = markerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarkerRecordedEventAttributes]
   }
   
-  @scala.inline
-  implicit class MarkerRecordedEventAttributesMutableBuilder[Self <: MarkerRecordedEventAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: MarkerRecordedEventAttributes](x: Self) {
     
-    @scala.inline
-    def setDecisionTaskCompletedEventId(value: EventId): Self = StObject.set(x, "decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
+    inline def setDecisionTaskCompletedEventId(value: EventId): Self = StObject.set(x, "decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetails(value: Data): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: Data): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    @scala.inline
-    def setMarkerName(value: MarkerName): Self = StObject.set(x, "markerName", value.asInstanceOf[js.Any])
+    inline def setMarkerName(value: MarkerName): Self = StObject.set(x, "markerName", value.asInstanceOf[js.Any])
   }
 }

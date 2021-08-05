@@ -16,28 +16,21 @@ trait View extends StObject {
 }
 object View {
   
-  @scala.inline
-  def apply(isEventPerspective: Boolean, showAgenda: Boolean, viewType: ViewTypes): View = {
+  inline def apply(isEventPerspective: Boolean, showAgenda: Boolean, viewType: ViewTypes): View = {
     val __obj = js.Dynamic.literal(isEventPerspective = isEventPerspective.asInstanceOf[js.Any], showAgenda = showAgenda.asInstanceOf[js.Any], viewType = viewType.asInstanceOf[js.Any])
     __obj.asInstanceOf[View]
   }
   
-  @scala.inline
-  implicit class ViewMutableBuilder[Self <: View] (val x: Self) extends AnyVal {
+  extension [Self <: View](x: Self) {
     
-    @scala.inline
-    def setIsEventPerspective(value: Boolean): Self = StObject.set(x, "isEventPerspective", value.asInstanceOf[js.Any])
+    inline def setIsEventPerspective(value: Boolean): Self = StObject.set(x, "isEventPerspective", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowAgenda(value: Boolean): Self = StObject.set(x, "showAgenda", value.asInstanceOf[js.Any])
+    inline def setShowAgenda(value: Boolean): Self = StObject.set(x, "showAgenda", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewName(value: String): Self = StObject.set(x, "viewName", value.asInstanceOf[js.Any])
+    inline def setViewName(value: String): Self = StObject.set(x, "viewName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewNameUndefined: Self = StObject.set(x, "viewName", js.undefined)
+    inline def setViewNameUndefined: Self = StObject.set(x, "viewName", js.undefined)
     
-    @scala.inline
-    def setViewType(value: ViewTypes): Self = StObject.set(x, "viewType", value.asInstanceOf[js.Any])
+    inline def setViewType(value: ViewTypes): Self = StObject.set(x, "viewType", value.asInstanceOf[js.Any])
   }
 }

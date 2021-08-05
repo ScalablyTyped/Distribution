@@ -18,28 +18,21 @@ trait RevokeSecurityGroupIngressResult extends StObject {
 }
 object RevokeSecurityGroupIngressResult {
   
-  @scala.inline
-  def apply(): RevokeSecurityGroupIngressResult = {
+  inline def apply(): RevokeSecurityGroupIngressResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RevokeSecurityGroupIngressResult]
   }
   
-  @scala.inline
-  implicit class RevokeSecurityGroupIngressResultMutableBuilder[Self <: RevokeSecurityGroupIngressResult] (val x: Self) extends AnyVal {
+  extension [Self <: RevokeSecurityGroupIngressResult](x: Self) {
     
-    @scala.inline
-    def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
+    inline def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnUndefined: Self = StObject.set(x, "Return", js.undefined)
+    inline def setReturnUndefined: Self = StObject.set(x, "Return", js.undefined)
     
-    @scala.inline
-    def setUnknownIpPermissions(value: IpPermissionList): Self = StObject.set(x, "UnknownIpPermissions", value.asInstanceOf[js.Any])
+    inline def setUnknownIpPermissions(value: IpPermissionList): Self = StObject.set(x, "UnknownIpPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnknownIpPermissionsUndefined: Self = StObject.set(x, "UnknownIpPermissions", js.undefined)
+    inline def setUnknownIpPermissionsUndefined: Self = StObject.set(x, "UnknownIpPermissions", js.undefined)
     
-    @scala.inline
-    def setUnknownIpPermissionsVarargs(value: IpPermission*): Self = StObject.set(x, "UnknownIpPermissions", js.Array(value :_*))
+    inline def setUnknownIpPermissionsVarargs(value: IpPermission*): Self = StObject.set(x, "UnknownIpPermissions", js.Array(value :_*))
   }
 }

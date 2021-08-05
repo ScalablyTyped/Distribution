@@ -12,19 +12,15 @@ trait Fret extends StObject {
 }
 object Fret {
   
-  @scala.inline
-  def apply(fret: Double, str: Double): Fret = {
+  inline def apply(fret: Double, str: Double): Fret = {
     val __obj = js.Dynamic.literal(fret = fret.asInstanceOf[js.Any], str = str.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fret]
   }
   
-  @scala.inline
-  implicit class FretMutableBuilder[Self <: Fret] (val x: Self) extends AnyVal {
+  extension [Self <: Fret](x: Self) {
     
-    @scala.inline
-    def setFret(value: Double): Self = StObject.set(x, "fret", value.asInstanceOf[js.Any])
+    inline def setFret(value: Double): Self = StObject.set(x, "fret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStr(value: Double): Self = StObject.set(x, "str", value.asInstanceOf[js.Any])
+    inline def setStr(value: Double): Self = StObject.set(x, "str", value.asInstanceOf[js.Any])
   }
 }

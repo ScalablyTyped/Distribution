@@ -10,16 +10,13 @@ trait ResourceClientCreate[T /* <: js.Object */, U /* <: js.Object */] extends S
 }
 object ResourceClientCreate {
   
-  @scala.inline
-  def apply[T /* <: js.Object */, U /* <: js.Object */](create: U => js.Promise[T]): ResourceClientCreate[T, U] = {
+  inline def apply[T /* <: js.Object */, U /* <: js.Object */](create: U => js.Promise[T]): ResourceClientCreate[T, U] = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
     __obj.asInstanceOf[ResourceClientCreate[T, U]]
   }
   
-  @scala.inline
-  implicit class ResourceClientCreateMutableBuilder[Self <: ResourceClientCreate[?, ?], T /* <: js.Object */, U /* <: js.Object */] (val x: Self & (ResourceClientCreate[T, U])) extends AnyVal {
+  extension [Self <: ResourceClientCreate[?, ?], T /* <: js.Object */, U /* <: js.Object */](x: Self & (ResourceClientCreate[T, U])) {
     
-    @scala.inline
-    def setCreate(value: U => js.Promise[T]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: U => js.Promise[T]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }
 }

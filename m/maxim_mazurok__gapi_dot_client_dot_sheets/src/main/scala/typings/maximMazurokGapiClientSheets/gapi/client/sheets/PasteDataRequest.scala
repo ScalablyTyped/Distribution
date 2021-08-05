@@ -23,43 +23,31 @@ trait PasteDataRequest extends StObject {
 }
 object PasteDataRequest {
   
-  @scala.inline
-  def apply(): PasteDataRequest = {
+  inline def apply(): PasteDataRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PasteDataRequest]
   }
   
-  @scala.inline
-  implicit class PasteDataRequestMutableBuilder[Self <: PasteDataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PasteDataRequest](x: Self) {
     
-    @scala.inline
-    def setCoordinate(value: GridCoordinate): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
+    inline def setCoordinate(value: GridCoordinate): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoordinateUndefined: Self = StObject.set(x, "coordinate", js.undefined)
+    inline def setCoordinateUndefined: Self = StObject.set(x, "coordinate", js.undefined)
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+    inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+    inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
     
-    @scala.inline
-    def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+    inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

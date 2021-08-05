@@ -17,43 +17,31 @@ trait IGraphDef extends StObject {
 }
 object IGraphDef {
   
-  @scala.inline
-  def apply(): IGraphDef = {
+  inline def apply(): IGraphDef = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGraphDef]
   }
   
-  @scala.inline
-  implicit class IGraphDefMutableBuilder[Self <: IGraphDef] (val x: Self) extends AnyVal {
+  extension [Self <: IGraphDef](x: Self) {
     
-    @scala.inline
-    def setLibrary(value: IFunctionDefLibrary): Self = StObject.set(x, "library", value.asInstanceOf[js.Any])
+    inline def setLibrary(value: IFunctionDefLibrary): Self = StObject.set(x, "library", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLibraryNull: Self = StObject.set(x, "library", null)
+    inline def setLibraryNull: Self = StObject.set(x, "library", null)
     
-    @scala.inline
-    def setLibraryUndefined: Self = StObject.set(x, "library", js.undefined)
+    inline def setLibraryUndefined: Self = StObject.set(x, "library", js.undefined)
     
-    @scala.inline
-    def setNode(value: js.Array[INodeDef]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: js.Array[INodeDef]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeNull: Self = StObject.set(x, "node", null)
+    inline def setNodeNull: Self = StObject.set(x, "node", null)
     
-    @scala.inline
-    def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+    inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
     
-    @scala.inline
-    def setNodeVarargs(value: INodeDef*): Self = StObject.set(x, "node", js.Array(value :_*))
+    inline def setNodeVarargs(value: INodeDef*): Self = StObject.set(x, "node", js.Array(value :_*))
     
-    @scala.inline
-    def setVersions(value: IVersionDef): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
+    inline def setVersions(value: IVersionDef): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionsNull: Self = StObject.set(x, "versions", null)
+    inline def setVersionsNull: Self = StObject.set(x, "versions", null)
     
-    @scala.inline
-    def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
+    inline def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
   }
 }

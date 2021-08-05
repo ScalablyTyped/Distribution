@@ -17,13 +17,10 @@ object MissingValueTreatment {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def CONTINUE: `2` = 2.asInstanceOf[`2`]
+    inline def CONTINUE: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def LEAVE_GAP: `0` = 0.asInstanceOf[`0`]
+    inline def LEAVE_GAP: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def USE_ZERO: `1` = 1.asInstanceOf[`1`]
+    inline def USE_ZERO: `1` = 1.asInstanceOf[`1`]
   }
 }

@@ -204,10 +204,8 @@ object mlParserLexerMod {
     var tokens: js.Array[Token] = js.native
   }
   
-  @scala.inline
-  def tokenize(source: String, url: String, getTagDefinition: js.Function1[/* tagName */ String, TagDefinition]): TokenizeResult = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(source.asInstanceOf[js.Any], url.asInstanceOf[js.Any], getTagDefinition.asInstanceOf[js.Any])).asInstanceOf[TokenizeResult]
-  @scala.inline
-  def tokenize(
+  inline def tokenize(source: String, url: String, getTagDefinition: js.Function1[/* tagName */ String, TagDefinition]): TokenizeResult = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(source.asInstanceOf[js.Any], url.asInstanceOf[js.Any], getTagDefinition.asInstanceOf[js.Any])).asInstanceOf[TokenizeResult]
+  inline def tokenize(
     source: String,
     url: String,
     getTagDefinition: js.Function1[/* tagName */ String, TagDefinition],
@@ -259,26 +257,20 @@ object mlParserLexerMod {
   }
   object LexerRange {
     
-    @scala.inline
-    def apply(endPos: Double, startCol: Double, startLine: Double, startPos: Double): LexerRange = {
+    inline def apply(endPos: Double, startCol: Double, startLine: Double, startPos: Double): LexerRange = {
       val __obj = js.Dynamic.literal(endPos = endPos.asInstanceOf[js.Any], startCol = startCol.asInstanceOf[js.Any], startLine = startLine.asInstanceOf[js.Any], startPos = startPos.asInstanceOf[js.Any])
       __obj.asInstanceOf[LexerRange]
     }
     
-    @scala.inline
-    implicit class LexerRangeMutableBuilder[Self <: LexerRange] (val x: Self) extends AnyVal {
+    extension [Self <: LexerRange](x: Self) {
       
-      @scala.inline
-      def setEndPos(value: Double): Self = StObject.set(x, "endPos", value.asInstanceOf[js.Any])
+      inline def setEndPos(value: Double): Self = StObject.set(x, "endPos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartCol(value: Double): Self = StObject.set(x, "startCol", value.asInstanceOf[js.Any])
+      inline def setStartCol(value: Double): Self = StObject.set(x, "startCol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartLine(value: Double): Self = StObject.set(x, "startLine", value.asInstanceOf[js.Any])
+      inline def setStartLine(value: Double): Self = StObject.set(x, "startLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartPos(value: Double): Self = StObject.set(x, "startPos", value.asInstanceOf[js.Any])
+      inline def setStartPos(value: Double): Self = StObject.set(x, "startPos", value.asInstanceOf[js.Any])
     }
   }
   
@@ -345,59 +337,42 @@ object mlParserLexerMod {
   }
   object TokenizeOptions {
     
-    @scala.inline
-    def apply(): TokenizeOptions = {
+    inline def apply(): TokenizeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TokenizeOptions]
     }
     
-    @scala.inline
-    implicit class TokenizeOptionsMutableBuilder[Self <: TokenizeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TokenizeOptions](x: Self) {
       
-      @scala.inline
-      def setEscapedString(value: Boolean): Self = StObject.set(x, "escapedString", value.asInstanceOf[js.Any])
+      inline def setEscapedString(value: Boolean): Self = StObject.set(x, "escapedString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapedStringUndefined: Self = StObject.set(x, "escapedString", js.undefined)
+      inline def setEscapedStringUndefined: Self = StObject.set(x, "escapedString", js.undefined)
       
-      @scala.inline
-      def setI18nNormalizeLineEndingsInICUs(value: Boolean): Self = StObject.set(x, "i18nNormalizeLineEndingsInICUs", value.asInstanceOf[js.Any])
+      inline def setI18nNormalizeLineEndingsInICUs(value: Boolean): Self = StObject.set(x, "i18nNormalizeLineEndingsInICUs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setI18nNormalizeLineEndingsInICUsUndefined: Self = StObject.set(x, "i18nNormalizeLineEndingsInICUs", js.undefined)
+      inline def setI18nNormalizeLineEndingsInICUsUndefined: Self = StObject.set(x, "i18nNormalizeLineEndingsInICUs", js.undefined)
       
-      @scala.inline
-      def setInterpolationConfig(value: InterpolationConfig): Self = StObject.set(x, "interpolationConfig", value.asInstanceOf[js.Any])
+      inline def setInterpolationConfig(value: InterpolationConfig): Self = StObject.set(x, "interpolationConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterpolationConfigUndefined: Self = StObject.set(x, "interpolationConfig", js.undefined)
+      inline def setInterpolationConfigUndefined: Self = StObject.set(x, "interpolationConfig", js.undefined)
       
-      @scala.inline
-      def setLeadingTriviaChars(value: js.Array[String]): Self = StObject.set(x, "leadingTriviaChars", value.asInstanceOf[js.Any])
+      inline def setLeadingTriviaChars(value: js.Array[String]): Self = StObject.set(x, "leadingTriviaChars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeadingTriviaCharsUndefined: Self = StObject.set(x, "leadingTriviaChars", js.undefined)
+      inline def setLeadingTriviaCharsUndefined: Self = StObject.set(x, "leadingTriviaChars", js.undefined)
       
-      @scala.inline
-      def setLeadingTriviaCharsVarargs(value: String*): Self = StObject.set(x, "leadingTriviaChars", js.Array(value :_*))
+      inline def setLeadingTriviaCharsVarargs(value: String*): Self = StObject.set(x, "leadingTriviaChars", js.Array(value :_*))
       
-      @scala.inline
-      def setPreserveLineEndings(value: Boolean): Self = StObject.set(x, "preserveLineEndings", value.asInstanceOf[js.Any])
+      inline def setPreserveLineEndings(value: Boolean): Self = StObject.set(x, "preserveLineEndings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveLineEndingsUndefined: Self = StObject.set(x, "preserveLineEndings", js.undefined)
+      inline def setPreserveLineEndingsUndefined: Self = StObject.set(x, "preserveLineEndings", js.undefined)
       
-      @scala.inline
-      def setRange(value: LexerRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: LexerRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+      inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
       
-      @scala.inline
-      def setTokenizeExpansionForms(value: Boolean): Self = StObject.set(x, "tokenizeExpansionForms", value.asInstanceOf[js.Any])
+      inline def setTokenizeExpansionForms(value: Boolean): Self = StObject.set(x, "tokenizeExpansionForms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenizeExpansionFormsUndefined: Self = StObject.set(x, "tokenizeExpansionForms", js.undefined)
+      inline def setTokenizeExpansionFormsUndefined: Self = StObject.set(x, "tokenizeExpansionForms", js.undefined)
     }
   }
 }

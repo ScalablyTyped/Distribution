@@ -26,22 +26,17 @@ trait Cloud extends StObject {
 }
 object Cloud {
   
-  @scala.inline
-  def apply(collection: String => js.Object, database: Env => js.Object, init: InitCloudOptions => Unit): Cloud = {
+  inline def apply(collection: String => js.Object, database: Env => js.Object, init: InitCloudOptions => Unit): Cloud = {
     val __obj = js.Dynamic.literal(collection = js.Any.fromFunction1(collection), database = js.Any.fromFunction1(database), init = js.Any.fromFunction1(init))
     __obj.asInstanceOf[Cloud]
   }
   
-  @scala.inline
-  implicit class CloudMutableBuilder[Self <: Cloud] (val x: Self) extends AnyVal {
+  extension [Self <: Cloud](x: Self) {
     
-    @scala.inline
-    def setCollection(value: String => js.Object): Self = StObject.set(x, "collection", js.Any.fromFunction1(value))
+    inline def setCollection(value: String => js.Object): Self = StObject.set(x, "collection", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDatabase(value: Env => js.Object): Self = StObject.set(x, "database", js.Any.fromFunction1(value))
+    inline def setDatabase(value: Env => js.Object): Self = StObject.set(x, "database", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInit(value: InitCloudOptions => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+    inline def setInit(value: InitCloudOptions => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
   }
 }

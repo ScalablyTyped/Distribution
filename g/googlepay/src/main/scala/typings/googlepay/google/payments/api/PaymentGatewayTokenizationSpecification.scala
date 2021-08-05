@@ -28,20 +28,16 @@ trait PaymentGatewayTokenizationSpecification
 }
 object PaymentGatewayTokenizationSpecification {
   
-  @scala.inline
-  def apply(parameters: PaymentGatewayTokenizationParameters): PaymentGatewayTokenizationSpecification = {
+  inline def apply(parameters: PaymentGatewayTokenizationParameters): PaymentGatewayTokenizationSpecification = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("PAYMENT_GATEWAY")
     __obj.asInstanceOf[PaymentGatewayTokenizationSpecification]
   }
   
-  @scala.inline
-  implicit class PaymentGatewayTokenizationSpecificationMutableBuilder[Self <: PaymentGatewayTokenizationSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: PaymentGatewayTokenizationSpecification](x: Self) {
     
-    @scala.inline
-    def setParameters(value: PaymentGatewayTokenizationParameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: PaymentGatewayTokenizationParameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: PAYMENT_GATEWAY): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: PAYMENT_GATEWAY): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

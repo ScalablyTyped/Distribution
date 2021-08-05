@@ -22,20 +22,16 @@ object Profile {
   }
   object AnalyticsVersionInfo {
     
-    @scala.inline
-    def apply(deviceFamily: String, deviceFamilyVersion: String): AnalyticsVersionInfo = {
+    inline def apply(deviceFamily: String, deviceFamilyVersion: String): AnalyticsVersionInfo = {
       val __obj = js.Dynamic.literal(deviceFamily = deviceFamily.asInstanceOf[js.Any], deviceFamilyVersion = deviceFamilyVersion.asInstanceOf[js.Any])
       __obj.asInstanceOf[AnalyticsVersionInfo]
     }
     
-    @scala.inline
-    implicit class AnalyticsVersionInfoMutableBuilder[Self <: AnalyticsVersionInfo] (val x: Self) extends AnyVal {
+    extension [Self <: AnalyticsVersionInfo](x: Self) {
       
-      @scala.inline
-      def setDeviceFamily(value: String): Self = StObject.set(x, "deviceFamily", value.asInstanceOf[js.Any])
+      inline def setDeviceFamily(value: String): Self = StObject.set(x, "deviceFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeviceFamilyVersion(value: String): Self = StObject.set(x, "deviceFamilyVersion", value.asInstanceOf[js.Any])
+      inline def setDeviceFamilyVersion(value: String): Self = StObject.set(x, "deviceFamilyVersion", value.asInstanceOf[js.Any])
     }
   }
   
@@ -56,23 +52,18 @@ object Profile {
   }
   object HardwareToken {
     
-    @scala.inline
-    def apply(certificate: IBuffer, id: IBuffer, signature: IBuffer): HardwareToken = {
+    inline def apply(certificate: IBuffer, id: IBuffer, signature: IBuffer): HardwareToken = {
       val __obj = js.Dynamic.literal(certificate = certificate.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
       __obj.asInstanceOf[HardwareToken]
     }
     
-    @scala.inline
-    implicit class HardwareTokenMutableBuilder[Self <: HardwareToken] (val x: Self) extends AnyVal {
+    extension [Self <: HardwareToken](x: Self) {
       
-      @scala.inline
-      def setCertificate(value: IBuffer): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+      inline def setCertificate(value: IBuffer): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: IBuffer): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: IBuffer): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignature(value: IBuffer): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+      inline def setSignature(value: IBuffer): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     }
   }
   

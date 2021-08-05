@@ -26,8 +26,7 @@ trait ReelsTrayFeedResponseBroadcastOwner extends StObject {
 }
 object ReelsTrayFeedResponseBroadcastOwner {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     friendship_status: ReelsTrayFeedResponseFriendshipStatus,
     full_name: String,
     is_private: Boolean,
@@ -42,34 +41,24 @@ object ReelsTrayFeedResponseBroadcastOwner {
     __obj.asInstanceOf[ReelsTrayFeedResponseBroadcastOwner]
   }
   
-  @scala.inline
-  implicit class ReelsTrayFeedResponseBroadcastOwnerMutableBuilder[Self <: ReelsTrayFeedResponseBroadcastOwner] (val x: Self) extends AnyVal {
+  extension [Self <: ReelsTrayFeedResponseBroadcastOwner](x: Self) {
     
-    @scala.inline
-    def setFriendship_status(value: ReelsTrayFeedResponseFriendshipStatus): Self = StObject.set(x, "friendship_status", value.asInstanceOf[js.Any])
+    inline def setFriendship_status(value: ReelsTrayFeedResponseFriendshipStatus): Self = StObject.set(x, "friendship_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
+    inline def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
+    inline def setIs_private(value: Boolean): Self = StObject.set(x, "is_private", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
+    inline def setIs_verified(value: Boolean): Self = StObject.set(x, "is_verified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLive_subscription_status(value: String): Self = StObject.set(x, "live_subscription_status", value.asInstanceOf[js.Any])
+    inline def setLive_subscription_status(value: String): Self = StObject.set(x, "live_subscription_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+    inline def setPk(value: Double): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
+    inline def setProfile_pic_id(value: String): Self = StObject.set(x, "profile_pic_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
+    inline def setProfile_pic_url(value: String): Self = StObject.set(x, "profile_pic_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

@@ -12,9 +12,7 @@ object utilsReactMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createRendererWithDriver(driverFactory: js.Any): js.Function2[/* jsx */ ReactElement, /* dataHook */ js.UndefOr[String], AsFragment] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRendererWithDriver")(driverFactory.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* jsx */ ReactElement, /* dataHook */ js.UndefOr[String], AsFragment]]
+  inline def createRendererWithDriver(driverFactory: js.Any): js.Function2[/* jsx */ ReactElement, /* dataHook */ js.UndefOr[String], AsFragment] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRendererWithDriver")(driverFactory.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* jsx */ ReactElement, /* dataHook */ js.UndefOr[String], AsFragment]]
   
-  @scala.inline
-  def createRendererWithUniDriver(driverFactory: js.Any): js.Function2[/* jsx */ ReactElement, /* dataHook */ js.UndefOr[String], AsFragment] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRendererWithUniDriver")(driverFactory.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* jsx */ ReactElement, /* dataHook */ js.UndefOr[String], AsFragment]]
+  inline def createRendererWithUniDriver(driverFactory: js.Any): js.Function2[/* jsx */ ReactElement, /* dataHook */ js.UndefOr[String], AsFragment] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRendererWithUniDriver")(driverFactory.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* jsx */ ReactElement, /* dataHook */ js.UndefOr[String], AsFragment]]
 }

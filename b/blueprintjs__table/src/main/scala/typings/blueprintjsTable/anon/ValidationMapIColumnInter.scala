@@ -12,19 +12,15 @@ trait ValidationMapIColumnInter extends StObject {
 }
 object ValidationMapIColumnInter {
   
-  @scala.inline
-  def apply(): ValidationMapIColumnInter = {
+  inline def apply(): ValidationMapIColumnInter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValidationMapIColumnInter]
   }
   
-  @scala.inline
-  implicit class ValidationMapIColumnInterMutableBuilder[Self <: ValidationMapIColumnInter] (val x: Self) extends AnyVal {
+  extension [Self <: ValidationMapIColumnInter](x: Self) {
     
-    @scala.inline
-    def setEnableColumnInteractionBar(value: Validator[Boolean]): Self = StObject.set(x, "enableColumnInteractionBar", value.asInstanceOf[js.Any])
+    inline def setEnableColumnInteractionBar(value: Validator[Boolean]): Self = StObject.set(x, "enableColumnInteractionBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableColumnInteractionBarUndefined: Self = StObject.set(x, "enableColumnInteractionBar", js.undefined)
+    inline def setEnableColumnInteractionBarUndefined: Self = StObject.set(x, "enableColumnInteractionBar", js.undefined)
   }
 }

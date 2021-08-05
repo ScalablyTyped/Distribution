@@ -16,17 +16,14 @@ object typesUnsupportedMediaTypeExceptionMod {
   }
   object UnsupportedMediaTypeException {
     
-    @scala.inline
-    def apply(): UnsupportedMediaTypeException = {
+    inline def apply(): UnsupportedMediaTypeException = {
       val __obj = js.Dynamic.literal(name = "UnsupportedMediaTypeException")
       __obj.asInstanceOf[UnsupportedMediaTypeException]
     }
     
-    @scala.inline
-    implicit class UnsupportedMediaTypeExceptionMutableBuilder[Self <: UnsupportedMediaTypeException] (val x: Self) extends AnyVal {
+    extension [Self <: UnsupportedMediaTypeException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.UnsupportedMediaTypeException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.UnsupportedMediaTypeException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -44,26 +41,20 @@ object typesUnsupportedMediaTypeExceptionMod {
   }
   object UnsupportedMediaTypeExceptionDetails {
     
-    @scala.inline
-    def apply(): UnsupportedMediaTypeExceptionDetails = {
+    inline def apply(): UnsupportedMediaTypeExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnsupportedMediaTypeExceptionDetails]
     }
     
-    @scala.inline
-    implicit class UnsupportedMediaTypeExceptionDetailsMutableBuilder[Self <: UnsupportedMediaTypeExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: UnsupportedMediaTypeExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     }
   }
 }

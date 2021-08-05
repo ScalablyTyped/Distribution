@@ -12,15 +12,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def read(pth: String): js.Promise[VinylFile] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(pth.asInstanceOf[js.Any]).asInstanceOf[js.Promise[VinylFile]]
-  @scala.inline
-  def read(pth: String, opts: VinylFileOptions): js.Promise[VinylFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(pth.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[VinylFile]]
+  inline def read(pth: String): js.Promise[VinylFile] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(pth.asInstanceOf[js.Any]).asInstanceOf[js.Promise[VinylFile]]
+  inline def read(pth: String, opts: VinylFileOptions): js.Promise[VinylFile] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(pth.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[VinylFile]]
   
-  @scala.inline
-  def readSync(pth: String): VinylFile = ^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(pth.asInstanceOf[js.Any]).asInstanceOf[VinylFile]
-  @scala.inline
-  def readSync(pth: String, opts: VinylFileOptions): VinylFile = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(pth.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VinylFile]
+  inline def readSync(pth: String): VinylFile = ^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(pth.asInstanceOf[js.Any]).asInstanceOf[VinylFile]
+  inline def readSync(pth: String, opts: VinylFileOptions): VinylFile = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(pth.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VinylFile]
   
   @js.native
   trait VinylFile
@@ -50,38 +46,28 @@ object mod {
   }
   object VinylFileOptions {
     
-    @scala.inline
-    def apply(): VinylFileOptions = {
+    inline def apply(): VinylFileOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VinylFileOptions]
     }
     
-    @scala.inline
-    implicit class VinylFileOptionsMutableBuilder[Self <: VinylFileOptions] (val x: Self) extends AnyVal {
+    extension [Self <: VinylFileOptions](x: Self) {
       
-      @scala.inline
-      def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+      inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
       
-      @scala.inline
-      def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
+      inline def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+      inline def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+      inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
     }
   }
 }

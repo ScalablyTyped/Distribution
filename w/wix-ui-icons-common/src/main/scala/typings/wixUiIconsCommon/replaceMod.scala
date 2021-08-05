@@ -22,20 +22,16 @@ object replaceMod extends Shortcut {
   }
   object ReplaceProps {
     
-    @scala.inline
-    def apply(): ReplaceProps = {
+    inline def apply(): ReplaceProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReplaceProps]
     }
     
-    @scala.inline
-    implicit class ReplacePropsMutableBuilder[Self <: ReplaceProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReplaceProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

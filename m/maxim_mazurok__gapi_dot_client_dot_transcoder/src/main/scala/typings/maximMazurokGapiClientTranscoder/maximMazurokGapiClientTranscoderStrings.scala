@@ -8,11 +8,9 @@ object maximMazurokGapiClientTranscoderStrings {
   
   @js.native
   sealed trait transcoder extends StObject
-  @scala.inline
-  def transcoder: transcoder = "transcoder".asInstanceOf[transcoder]
+  inline def transcoder: transcoder = "transcoder".asInstanceOf[transcoder]
   
   @js.native
   sealed trait v1beta1 extends StObject
-  @scala.inline
-  def v1beta1: v1beta1 = "v1beta1".asInstanceOf[v1beta1]
+  inline def v1beta1: v1beta1 = "v1beta1".asInstanceOf[v1beta1]
 }

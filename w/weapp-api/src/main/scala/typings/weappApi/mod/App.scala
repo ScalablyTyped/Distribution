@@ -17,10 +17,8 @@ object App {
   @js.native
   val ^ : AppConstructor = js.native
   
-  @scala.inline
-  implicit class AppMutableBuilder[Self <: App] (val x: Self) extends AnyVal {
+  extension [Self <: App](x: Self) {
     
-    @scala.inline
-    def setGetCurrentPage(value: () => Page): Self = StObject.set(x, "getCurrentPage", js.Any.fromFunction0(value))
+    inline def setGetCurrentPage(value: () => Page): Self = StObject.set(x, "getCurrentPage", js.Any.fromFunction0(value))
   }
 }

@@ -94,8 +94,7 @@ object LayoutData {
     * including `null`, the method throws.
     * @param layoutDataValue The value to create
     */
-  @scala.inline
-  def from(layoutDataValue: LayoutDataValue): LayoutData = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(layoutDataValue.asInstanceOf[js.Any]).asInstanceOf[LayoutData]
+  inline def from(layoutDataValue: LayoutDataValue): LayoutData = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(layoutDataValue.asInstanceOf[js.Any]).asInstanceOf[LayoutData]
   
   /**
     * A [SiblingReference](../types.md#siblingreference) indicating the next widget in the list of children

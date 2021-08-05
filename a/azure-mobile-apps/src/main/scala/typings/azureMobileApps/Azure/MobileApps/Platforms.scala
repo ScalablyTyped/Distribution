@@ -16,21 +16,17 @@ object Platforms {
     }
     object Api {
       
-      @scala.inline
-      def apply(add: (String, ApiDefinition) => Unit, `import`: String => Unit): Api = {
+      inline def apply(add: (String, ApiDefinition) => Unit, `import`: String => Unit): Api = {
         val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add))
         __obj.updateDynamic("import")(js.Any.fromFunction1(`import`))
         __obj.asInstanceOf[Api]
       }
       
-      @scala.inline
-      implicit class ApiMutableBuilder[Self <: Api] (val x: Self) extends AnyVal {
+      extension [Self <: Api](x: Self) {
         
-        @scala.inline
-        def setAdd(value: (String, ApiDefinition) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+        inline def setAdd(value: (String, ApiDefinition) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setImport(value: String => Unit): Self = StObject.set(x, "import", js.Any.fromFunction1(value))
+        inline def setImport(value: String => Unit): Self = StObject.set(x, "import", js.Any.fromFunction1(value))
       }
     }
     

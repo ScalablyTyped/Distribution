@@ -137,6 +137,5 @@ trait Dispatcher extends StObject {
 }
 object Dispatcher {
   
-  @scala.inline
-  def apply: DispatcherStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("Dispatcher").asInstanceOf[DispatcherStatic]
+  inline def apply: DispatcherStatic = ^.asInstanceOf[js.Dynamic].selectDynamic("Dispatcher").asInstanceOf[DispatcherStatic]
 }

@@ -16,8 +16,7 @@ trait LocalQueueEvent[T]
 }
 object LocalQueueEvent {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     queued: (EntityId, Change[T], js.Array[LocalQueuedChange[T]]) => Unit,
     send: Change[T] => Unit,
     wait_ : EntityId => Unit
@@ -27,16 +26,12 @@ object LocalQueueEvent {
     __obj.asInstanceOf[LocalQueueEvent[T]]
   }
   
-  @scala.inline
-  implicit class LocalQueueEventMutableBuilder[Self <: LocalQueueEvent[?], T] (val x: Self & LocalQueueEvent[T]) extends AnyVal {
+  extension [Self <: LocalQueueEvent[?], T](x: Self & LocalQueueEvent[T]) {
     
-    @scala.inline
-    def setQueued(value: (EntityId, Change[T], js.Array[LocalQueuedChange[T]]) => Unit): Self = StObject.set(x, "queued", js.Any.fromFunction3(value))
+    inline def setQueued(value: (EntityId, Change[T], js.Array[LocalQueuedChange[T]]) => Unit): Self = StObject.set(x, "queued", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSend(value: Change[T] => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
+    inline def setSend(value: Change[T] => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWait_(value: EntityId => Unit): Self = StObject.set(x, "wait", js.Any.fromFunction1(value))
+    inline def setWait_(value: EntityId => Unit): Self = StObject.set(x, "wait", js.Any.fromFunction1(value))
   }
 }

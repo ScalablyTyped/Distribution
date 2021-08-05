@@ -28,31 +28,23 @@ trait SchemaSshPublicKey extends StObject {
 }
 object SchemaSshPublicKey {
   
-  @scala.inline
-  def apply(): SchemaSshPublicKey = {
+  inline def apply(): SchemaSshPublicKey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSshPublicKey]
   }
   
-  @scala.inline
-  implicit class SchemaSshPublicKeyMutableBuilder[Self <: SchemaSshPublicKey] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSshPublicKey](x: Self) {
     
-    @scala.inline
-    def setExpirationTimeUsec(value: String): Self = StObject.set(x, "expirationTimeUsec", value.asInstanceOf[js.Any])
+    inline def setExpirationTimeUsec(value: String): Self = StObject.set(x, "expirationTimeUsec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationTimeUsecUndefined: Self = StObject.set(x, "expirationTimeUsec", js.undefined)
+    inline def setExpirationTimeUsecUndefined: Self = StObject.set(x, "expirationTimeUsec", js.undefined)
     
-    @scala.inline
-    def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+    inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
+    inline def setFingerprintUndefined: Self = StObject.set(x, "fingerprint", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
   }
 }

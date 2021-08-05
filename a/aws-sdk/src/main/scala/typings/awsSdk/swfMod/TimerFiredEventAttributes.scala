@@ -18,19 +18,15 @@ trait TimerFiredEventAttributes extends StObject {
 }
 object TimerFiredEventAttributes {
   
-  @scala.inline
-  def apply(startedEventId: EventId, timerId: TimerId): TimerFiredEventAttributes = {
+  inline def apply(startedEventId: EventId, timerId: TimerId): TimerFiredEventAttributes = {
     val __obj = js.Dynamic.literal(startedEventId = startedEventId.asInstanceOf[js.Any], timerId = timerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimerFiredEventAttributes]
   }
   
-  @scala.inline
-  implicit class TimerFiredEventAttributesMutableBuilder[Self <: TimerFiredEventAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: TimerFiredEventAttributes](x: Self) {
     
-    @scala.inline
-    def setStartedEventId(value: EventId): Self = StObject.set(x, "startedEventId", value.asInstanceOf[js.Any])
+    inline def setStartedEventId(value: EventId): Self = StObject.set(x, "startedEventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimerId(value: TimerId): Self = StObject.set(x, "timerId", value.asInstanceOf[js.Any])
+    inline def setTimerId(value: TimerId): Self = StObject.set(x, "timerId", value.asInstanceOf[js.Any])
   }
 }

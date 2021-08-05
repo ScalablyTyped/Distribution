@@ -12,19 +12,15 @@ trait FSyncOptions
 }
 object FSyncOptions {
   
-  @scala.inline
-  def apply(): FSyncOptions = {
+  inline def apply(): FSyncOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FSyncOptions]
   }
   
-  @scala.inline
-  implicit class FSyncOptionsMutableBuilder[Self <: FSyncOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FSyncOptions](x: Self) {
     
-    @scala.inline
-    def setFsync(value: Boolean): Self = StObject.set(x, "fsync", value.asInstanceOf[js.Any])
+    inline def setFsync(value: Boolean): Self = StObject.set(x, "fsync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFsyncUndefined: Self = StObject.set(x, "fsync", js.undefined)
+    inline def setFsyncUndefined: Self = StObject.set(x, "fsync", js.undefined)
   }
 }

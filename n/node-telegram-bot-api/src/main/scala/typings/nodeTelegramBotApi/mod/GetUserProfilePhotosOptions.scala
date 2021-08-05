@@ -12,25 +12,19 @@ trait GetUserProfilePhotosOptions extends StObject {
 }
 object GetUserProfilePhotosOptions {
   
-  @scala.inline
-  def apply(): GetUserProfilePhotosOptions = {
+  inline def apply(): GetUserProfilePhotosOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetUserProfilePhotosOptions]
   }
   
-  @scala.inline
-  implicit class GetUserProfilePhotosOptionsMutableBuilder[Self <: GetUserProfilePhotosOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetUserProfilePhotosOptions](x: Self) {
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
   }
 }

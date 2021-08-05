@@ -33,31 +33,23 @@ trait BundleLink
 }
 object BundleLink {
   
-  @scala.inline
-  def apply(relation: String, url: uri): BundleLink = {
+  inline def apply(relation: String, url: uri): BundleLink = {
     val __obj = js.Dynamic.literal(relation = relation.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[BundleLink]
   }
   
-  @scala.inline
-  implicit class BundleLinkMutableBuilder[Self <: BundleLink] (val x: Self) extends AnyVal {
+  extension [Self <: BundleLink](x: Self) {
     
-    @scala.inline
-    def setRelation(value: String): Self = StObject.set(x, "relation", value.asInstanceOf[js.Any])
+    inline def setRelation(value: String): Self = StObject.set(x, "relation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: uri): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: uri): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_relation(value: Element): Self = StObject.set(x, "_relation", value.asInstanceOf[js.Any])
+    inline def set_relation(value: Element): Self = StObject.set(x, "_relation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_relationUndefined: Self = StObject.set(x, "_relation", js.undefined)
+    inline def set_relationUndefined: Self = StObject.set(x, "_relation", js.undefined)
     
-    @scala.inline
-    def set_url(value: Element): Self = StObject.set(x, "_url", value.asInstanceOf[js.Any])
+    inline def set_url(value: Element): Self = StObject.set(x, "_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_urlUndefined: Self = StObject.set(x, "_url", js.undefined)
+    inline def set_urlUndefined: Self = StObject.set(x, "_url", js.undefined)
   }
 }

@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XRReferenceSpaceType extends StObject
 object XRReferenceSpaceType {
   
-  @scala.inline
-  def `bounded-floor`: typings.three.threeStrings.`bounded-floor` = "bounded-floor".asInstanceOf[typings.three.threeStrings.`bounded-floor`]
+  inline def `bounded-floor`: typings.three.threeStrings.`bounded-floor` = "bounded-floor".asInstanceOf[typings.three.threeStrings.`bounded-floor`]
   
-  @scala.inline
-  def local: typings.three.threeStrings.local = "local".asInstanceOf[typings.three.threeStrings.local]
+  inline def local: typings.three.threeStrings.local = "local".asInstanceOf[typings.three.threeStrings.local]
   
-  @scala.inline
-  def `local-floor`: typings.three.threeStrings.`local-floor` = "local-floor".asInstanceOf[typings.three.threeStrings.`local-floor`]
+  inline def `local-floor`: typings.three.threeStrings.`local-floor` = "local-floor".asInstanceOf[typings.three.threeStrings.`local-floor`]
   
-  @scala.inline
-  def unbounded: typings.three.threeStrings.unbounded = "unbounded".asInstanceOf[typings.three.threeStrings.unbounded]
+  inline def unbounded: typings.three.threeStrings.unbounded = "unbounded".asInstanceOf[typings.three.threeStrings.unbounded]
   
-  @scala.inline
-  def viewer: typings.three.threeStrings.viewer = "viewer".asInstanceOf[typings.three.threeStrings.viewer]
+  inline def viewer: typings.three.threeStrings.viewer = "viewer".asInstanceOf[typings.three.threeStrings.viewer]
 }

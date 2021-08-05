@@ -53,8 +53,7 @@ trait BuildDefinitionStep extends StObject {
 }
 object BuildDefinitionStep {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alwaysRun: Boolean,
     condition: String,
     continueOnError: Boolean,
@@ -70,37 +69,26 @@ object BuildDefinitionStep {
     __obj.asInstanceOf[BuildDefinitionStep]
   }
   
-  @scala.inline
-  implicit class BuildDefinitionStepMutableBuilder[Self <: BuildDefinitionStep] (val x: Self) extends AnyVal {
+  extension [Self <: BuildDefinitionStep](x: Self) {
     
-    @scala.inline
-    def setAlwaysRun(value: Boolean): Self = StObject.set(x, "alwaysRun", value.asInstanceOf[js.Any])
+    inline def setAlwaysRun(value: Boolean): Self = StObject.set(x, "alwaysRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinueOnError(value: Boolean): Self = StObject.set(x, "continueOnError", value.asInstanceOf[js.Any])
+    inline def setContinueOnError(value: Boolean): Self = StObject.set(x, "continueOnError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironment(value: StringDictionary[String]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: StringDictionary[String]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputs(value: StringDictionary[String]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: StringDictionary[String]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefName(value: String): Self = StObject.set(x, "refName", value.asInstanceOf[js.Any])
+    inline def setRefName(value: String): Self = StObject.set(x, "refName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTask(value: TaskDefinitionReference): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
+    inline def setTask(value: TaskDefinitionReference): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutInMinutes(value: Double): Self = StObject.set(x, "timeoutInMinutes", value.asInstanceOf[js.Any])
+    inline def setTimeoutInMinutes(value: Double): Self = StObject.set(x, "timeoutInMinutes", value.asInstanceOf[js.Any])
   }
 }

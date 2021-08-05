@@ -34,8 +34,7 @@ trait LocationSchemeForPolyline
 }
 object LocationSchemeForPolyline {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     color: Color_,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -47,16 +46,12 @@ object LocationSchemeForPolyline {
     __obj.asInstanceOf[LocationSchemeForPolyline]
   }
   
-  @scala.inline
-  implicit class LocationSchemeForPolylineMutableBuilder[Self <: LocationSchemeForPolyline] (val x: Self) extends AnyVal {
+  extension [Self <: LocationSchemeForPolyline](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(ms: Double): String = ^.asInstanceOf[js.Dynamic].apply(ms.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(ms: Double, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(ms.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(ms: Double): String = ^.asInstanceOf[js.Dynamic].apply(ms.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(ms: Double, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(ms.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("humanize-duration", JSImport.Namespace)
   @js.native
@@ -19,13 +17,10 @@ object mod {
   /**
     * This function won't return any new languages you define; it will only return the defaults supported by the library.
     */
-  @scala.inline
-  def getSupportedLanguages(): js.Array[LanguageCode] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedLanguages")().asInstanceOf[js.Array[LanguageCode]]
+  inline def getSupportedLanguages(): js.Array[LanguageCode] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedLanguages")().asInstanceOf[js.Array[LanguageCode]]
   
-  @scala.inline
-  def humanizer(): Humanizer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("humanizer")().asInstanceOf[Humanizer_]
-  @scala.inline
-  def humanizer(options: HumanizerOptions): Humanizer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("humanizer")(options.asInstanceOf[js.Any]).asInstanceOf[Humanizer_]
+  inline def humanizer(): Humanizer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("humanizer")().asInstanceOf[Humanizer_]
+  inline def humanizer(options: HumanizerOptions): Humanizer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("humanizer")(options.asInstanceOf[js.Any]).asInstanceOf[Humanizer_]
   
   trait HumanizerOptions
     extends StObject
@@ -35,20 +30,16 @@ object mod {
   }
   object HumanizerOptions {
     
-    @scala.inline
-    def apply(): HumanizerOptions = {
+    inline def apply(): HumanizerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HumanizerOptions]
     }
     
-    @scala.inline
-    implicit class HumanizerOptionsMutableBuilder[Self <: HumanizerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HumanizerOptions](x: Self) {
       
-      @scala.inline
-      def setLanguages(value: StringDictionary[UnitTranslationOptions]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
+      inline def setLanguages(value: StringDictionary[UnitTranslationOptions]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
+      inline def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
     }
   }
   
@@ -103,116 +94,79 @@ object mod {
   trait LanguageCode extends StObject
   object LanguageCode {
     
-    @scala.inline
-    def ar: typings.humanizeDuration.humanizeDurationStrings.ar = "ar".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.ar]
+    inline def ar: typings.humanizeDuration.humanizeDurationStrings.ar = "ar".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.ar]
     
-    @scala.inline
-    def bg: typings.humanizeDuration.humanizeDurationStrings.bg = "bg".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.bg]
+    inline def bg: typings.humanizeDuration.humanizeDurationStrings.bg = "bg".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.bg]
     
-    @scala.inline
-    def ca: typings.humanizeDuration.humanizeDurationStrings.ca = "ca".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.ca]
+    inline def ca: typings.humanizeDuration.humanizeDurationStrings.ca = "ca".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.ca]
     
-    @scala.inline
-    def cs: typings.humanizeDuration.humanizeDurationStrings.cs = "cs".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.cs]
+    inline def cs: typings.humanizeDuration.humanizeDurationStrings.cs = "cs".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.cs]
     
-    @scala.inline
-    def da: typings.humanizeDuration.humanizeDurationStrings.da = "da".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.da]
+    inline def da: typings.humanizeDuration.humanizeDurationStrings.da = "da".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.da]
     
-    @scala.inline
-    def de: typings.humanizeDuration.humanizeDurationStrings.de = "de".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.de]
+    inline def de: typings.humanizeDuration.humanizeDurationStrings.de = "de".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.de]
     
-    @scala.inline
-    def el: typings.humanizeDuration.humanizeDurationStrings.el = "el".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.el]
+    inline def el: typings.humanizeDuration.humanizeDurationStrings.el = "el".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.el]
     
-    @scala.inline
-    def en: typings.humanizeDuration.humanizeDurationStrings.en = "en".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.en]
+    inline def en: typings.humanizeDuration.humanizeDurationStrings.en = "en".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.en]
     
-    @scala.inline
-    def es: typings.humanizeDuration.humanizeDurationStrings.es = "es".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.es]
+    inline def es: typings.humanizeDuration.humanizeDurationStrings.es = "es".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.es]
     
-    @scala.inline
-    def fa: typings.humanizeDuration.humanizeDurationStrings.fa = "fa".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.fa]
+    inline def fa: typings.humanizeDuration.humanizeDurationStrings.fa = "fa".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.fa]
     
-    @scala.inline
-    def fi: typings.humanizeDuration.humanizeDurationStrings.fi = "fi".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.fi]
+    inline def fi: typings.humanizeDuration.humanizeDurationStrings.fi = "fi".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.fi]
     
-    @scala.inline
-    def fr: typings.humanizeDuration.humanizeDurationStrings.fr = "fr".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.fr]
+    inline def fr: typings.humanizeDuration.humanizeDurationStrings.fr = "fr".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.fr]
     
-    @scala.inline
-    def hr: typings.humanizeDuration.humanizeDurationStrings.hr = "hr".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.hr]
+    inline def hr: typings.humanizeDuration.humanizeDurationStrings.hr = "hr".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.hr]
     
-    @scala.inline
-    def hu: typings.humanizeDuration.humanizeDurationStrings.hu = "hu".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.hu]
+    inline def hu: typings.humanizeDuration.humanizeDurationStrings.hu = "hu".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.hu]
     
-    @scala.inline
-    def id: typings.humanizeDuration.humanizeDurationStrings.id = "id".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.id]
+    inline def id: typings.humanizeDuration.humanizeDurationStrings.id = "id".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.id]
     
-    @scala.inline
-    def is: typings.humanizeDuration.humanizeDurationStrings.is = "is".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.is]
+    inline def is: typings.humanizeDuration.humanizeDurationStrings.is = "is".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.is]
     
-    @scala.inline
-    def it: typings.humanizeDuration.humanizeDurationStrings.it = "it".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.it]
+    inline def it: typings.humanizeDuration.humanizeDurationStrings.it = "it".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.it]
     
-    @scala.inline
-    def ja: typings.humanizeDuration.humanizeDurationStrings.ja = "ja".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.ja]
+    inline def ja: typings.humanizeDuration.humanizeDurationStrings.ja = "ja".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.ja]
     
-    @scala.inline
-    def ko: typings.humanizeDuration.humanizeDurationStrings.ko = "ko".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.ko]
+    inline def ko: typings.humanizeDuration.humanizeDurationStrings.ko = "ko".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.ko]
     
-    @scala.inline
-    def lo: typings.humanizeDuration.humanizeDurationStrings.lo = "lo".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.lo]
+    inline def lo: typings.humanizeDuration.humanizeDurationStrings.lo = "lo".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.lo]
     
-    @scala.inline
-    def lt: typings.humanizeDuration.humanizeDurationStrings.lt = "lt".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.lt]
+    inline def lt: typings.humanizeDuration.humanizeDurationStrings.lt = "lt".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.lt]
     
-    @scala.inline
-    def ms: typings.humanizeDuration.humanizeDurationStrings.ms = "ms".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.ms]
+    inline def ms: typings.humanizeDuration.humanizeDurationStrings.ms = "ms".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.ms]
     
-    @scala.inline
-    def nl: typings.humanizeDuration.humanizeDurationStrings.nl = "nl".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.nl]
+    inline def nl: typings.humanizeDuration.humanizeDurationStrings.nl = "nl".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.nl]
     
-    @scala.inline
-    def no: typings.humanizeDuration.humanizeDurationStrings.no = "no".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.no]
+    inline def no: typings.humanizeDuration.humanizeDurationStrings.no = "no".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.no]
     
-    @scala.inline
-    def pl: typings.humanizeDuration.humanizeDurationStrings.pl = "pl".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.pl]
+    inline def pl: typings.humanizeDuration.humanizeDurationStrings.pl = "pl".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.pl]
     
-    @scala.inline
-    def pt: typings.humanizeDuration.humanizeDurationStrings.pt = "pt".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.pt]
+    inline def pt: typings.humanizeDuration.humanizeDurationStrings.pt = "pt".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.pt]
     
-    @scala.inline
-    def ro: typings.humanizeDuration.humanizeDurationStrings.ro = "ro".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.ro]
+    inline def ro: typings.humanizeDuration.humanizeDurationStrings.ro = "ro".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.ro]
     
-    @scala.inline
-    def ru: typings.humanizeDuration.humanizeDurationStrings.ru = "ru".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.ru]
+    inline def ru: typings.humanizeDuration.humanizeDurationStrings.ru = "ru".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.ru]
     
-    @scala.inline
-    def sk: typings.humanizeDuration.humanizeDurationStrings.sk = "sk".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.sk]
+    inline def sk: typings.humanizeDuration.humanizeDurationStrings.sk = "sk".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.sk]
     
-    @scala.inline
-    def sv: typings.humanizeDuration.humanizeDurationStrings.sv = "sv".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.sv]
+    inline def sv: typings.humanizeDuration.humanizeDurationStrings.sv = "sv".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.sv]
     
-    @scala.inline
-    def th: typings.humanizeDuration.humanizeDurationStrings.th = "th".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.th]
+    inline def th: typings.humanizeDuration.humanizeDurationStrings.th = "th".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.th]
     
-    @scala.inline
-    def tr: typings.humanizeDuration.humanizeDurationStrings.tr = "tr".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.tr]
+    inline def tr: typings.humanizeDuration.humanizeDurationStrings.tr = "tr".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.tr]
     
-    @scala.inline
-    def uk: typings.humanizeDuration.humanizeDurationStrings.uk = "uk".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.uk]
+    inline def uk: typings.humanizeDuration.humanizeDurationStrings.uk = "uk".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.uk]
     
-    @scala.inline
-    def ur: typings.humanizeDuration.humanizeDurationStrings.ur = "ur".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.ur]
+    inline def ur: typings.humanizeDuration.humanizeDurationStrings.ur = "ur".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.ur]
     
-    @scala.inline
-    def vi: typings.humanizeDuration.humanizeDurationStrings.vi = "vi".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.vi]
+    inline def vi: typings.humanizeDuration.humanizeDurationStrings.vi = "vi".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.vi]
     
-    @scala.inline
-    def zh_CN: typings.humanizeDuration.humanizeDurationStrings.zh_CN = "zh_CN".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.zh_CN]
+    inline def zh_CN: typings.humanizeDuration.humanizeDurationStrings.zh_CN = "zh_CN".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.zh_CN]
     
-    @scala.inline
-    def zh_TW: typings.humanizeDuration.humanizeDurationStrings.zh_TW = "zh_TW".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.zh_TW]
+    inline def zh_TW: typings.humanizeDuration.humanizeDurationStrings.zh_TW = "zh_TW".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.zh_TW]
   }
   
   trait Options extends StObject {
@@ -276,92 +230,64 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setConjunction(value: String): Self = StObject.set(x, "conjunction", value.asInstanceOf[js.Any])
+      inline def setConjunction(value: String): Self = StObject.set(x, "conjunction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConjunctionUndefined: Self = StObject.set(x, "conjunction", js.undefined)
+      inline def setConjunctionUndefined: Self = StObject.set(x, "conjunction", js.undefined)
       
-      @scala.inline
-      def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
+      inline def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecimalUndefined: Self = StObject.set(x, "decimal", js.undefined)
+      inline def setDecimalUndefined: Self = StObject.set(x, "decimal", js.undefined)
       
-      @scala.inline
-      def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+      inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+      inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
       
-      @scala.inline
-      def setFallbacks(value: js.Array[String]): Self = StObject.set(x, "fallbacks", value.asInstanceOf[js.Any])
+      inline def setFallbacks(value: js.Array[String]): Self = StObject.set(x, "fallbacks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbacksUndefined: Self = StObject.set(x, "fallbacks", js.undefined)
+      inline def setFallbacksUndefined: Self = StObject.set(x, "fallbacks", js.undefined)
       
-      @scala.inline
-      def setFallbacksVarargs(value: String*): Self = StObject.set(x, "fallbacks", js.Array(value :_*))
+      inline def setFallbacksVarargs(value: String*): Self = StObject.set(x, "fallbacks", js.Array(value :_*))
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+      inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
       
-      @scala.inline
-      def setLargest(value: Double): Self = StObject.set(x, "largest", value.asInstanceOf[js.Any])
+      inline def setLargest(value: Double): Self = StObject.set(x, "largest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLargestUndefined: Self = StObject.set(x, "largest", js.undefined)
+      inline def setLargestUndefined: Self = StObject.set(x, "largest", js.undefined)
       
-      @scala.inline
-      def setMaxDecimalPoints(value: Double): Self = StObject.set(x, "maxDecimalPoints", value.asInstanceOf[js.Any])
+      inline def setMaxDecimalPoints(value: Double): Self = StObject.set(x, "maxDecimalPoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDecimalPointsUndefined: Self = StObject.set(x, "maxDecimalPoints", js.undefined)
+      inline def setMaxDecimalPointsUndefined: Self = StObject.set(x, "maxDecimalPoints", js.undefined)
       
-      @scala.inline
-      def setRound(value: Boolean): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
+      inline def setRound(value: Boolean): Self = StObject.set(x, "round", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
+      inline def setRoundUndefined: Self = StObject.set(x, "round", js.undefined)
       
-      @scala.inline
-      def setSerialComma(value: Boolean): Self = StObject.set(x, "serialComma", value.asInstanceOf[js.Any])
+      inline def setSerialComma(value: Boolean): Self = StObject.set(x, "serialComma", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerialCommaUndefined: Self = StObject.set(x, "serialComma", js.undefined)
+      inline def setSerialCommaUndefined: Self = StObject.set(x, "serialComma", js.undefined)
       
-      @scala.inline
-      def setSpacer(value: String): Self = StObject.set(x, "spacer", value.asInstanceOf[js.Any])
+      inline def setSpacer(value: String): Self = StObject.set(x, "spacer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpacerUndefined: Self = StObject.set(x, "spacer", js.undefined)
+      inline def setSpacerUndefined: Self = StObject.set(x, "spacer", js.undefined)
       
-      @scala.inline
-      def setUnitMeasures(value: UnitMeasuresOptions): Self = StObject.set(x, "unitMeasures", value.asInstanceOf[js.Any])
+      inline def setUnitMeasures(value: UnitMeasuresOptions): Self = StObject.set(x, "unitMeasures", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnitMeasuresUndefined: Self = StObject.set(x, "unitMeasures", js.undefined)
+      inline def setUnitMeasuresUndefined: Self = StObject.set(x, "unitMeasures", js.undefined)
       
-      @scala.inline
-      def setUnits(value: js.Array[Unit]): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+      inline def setUnits(value: js.Array[Unit]): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
+      inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
       
-      @scala.inline
-      def setUnitsVarargs(value: Unit*): Self = StObject.set(x, "units", js.Array(value :_*))
+      inline def setUnitsVarargs(value: Unit*): Self = StObject.set(x, "units", js.Array(value :_*))
     }
   }
   
@@ -378,29 +304,21 @@ object mod {
   trait Unit extends StObject
   object Unit {
     
-    @scala.inline
-    def d: typings.humanizeDuration.humanizeDurationStrings.d = "d".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.d]
+    inline def d: typings.humanizeDuration.humanizeDurationStrings.d = "d".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.d]
     
-    @scala.inline
-    def h: typings.humanizeDuration.humanizeDurationStrings.h = "h".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.h]
+    inline def h: typings.humanizeDuration.humanizeDurationStrings.h = "h".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.h]
     
-    @scala.inline
-    def m: typings.humanizeDuration.humanizeDurationStrings.m = "m".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.m]
+    inline def m: typings.humanizeDuration.humanizeDurationStrings.m = "m".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.m]
     
-    @scala.inline
-    def mo: typings.humanizeDuration.humanizeDurationStrings.mo = "mo".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.mo]
+    inline def mo: typings.humanizeDuration.humanizeDurationStrings.mo = "mo".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.mo]
     
-    @scala.inline
-    def ms: typings.humanizeDuration.humanizeDurationStrings.ms = "ms".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.ms]
+    inline def ms: typings.humanizeDuration.humanizeDurationStrings.ms = "ms".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.ms]
     
-    @scala.inline
-    def s: typings.humanizeDuration.humanizeDurationStrings.s = "s".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.s]
+    inline def s: typings.humanizeDuration.humanizeDurationStrings.s = "s".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.s]
     
-    @scala.inline
-    def w: typings.humanizeDuration.humanizeDurationStrings.w = "w".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.w]
+    inline def w: typings.humanizeDuration.humanizeDurationStrings.w = "w".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.w]
     
-    @scala.inline
-    def y: typings.humanizeDuration.humanizeDurationStrings.y = "y".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.y]
+    inline def y: typings.humanizeDuration.humanizeDurationStrings.y = "y".asInstanceOf[typings.humanizeDuration.humanizeDurationStrings.y]
   }
   
   trait UnitMeasuresOptions extends StObject {
@@ -423,62 +341,44 @@ object mod {
   }
   object UnitMeasuresOptions {
     
-    @scala.inline
-    def apply(): UnitMeasuresOptions = {
+    inline def apply(): UnitMeasuresOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnitMeasuresOptions]
     }
     
-    @scala.inline
-    implicit class UnitMeasuresOptionsMutableBuilder[Self <: UnitMeasuresOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UnitMeasuresOptions](x: Self) {
       
-      @scala.inline
-      def setD(value: Double): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+      inline def setD(value: Double): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDUndefined: Self = StObject.set(x, "d", js.undefined)
+      inline def setDUndefined: Self = StObject.set(x, "d", js.undefined)
       
-      @scala.inline
-      def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+      inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHUndefined: Self = StObject.set(x, "h", js.undefined)
+      inline def setHUndefined: Self = StObject.set(x, "h", js.undefined)
       
-      @scala.inline
-      def setM(value: Double): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
+      inline def setM(value: Double): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMUndefined: Self = StObject.set(x, "m", js.undefined)
+      inline def setMUndefined: Self = StObject.set(x, "m", js.undefined)
       
-      @scala.inline
-      def setMo(value: Double): Self = StObject.set(x, "mo", value.asInstanceOf[js.Any])
+      inline def setMo(value: Double): Self = StObject.set(x, "mo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoUndefined: Self = StObject.set(x, "mo", js.undefined)
+      inline def setMoUndefined: Self = StObject.set(x, "mo", js.undefined)
       
-      @scala.inline
-      def setMs(value: Double): Self = StObject.set(x, "ms", value.asInstanceOf[js.Any])
+      inline def setMs(value: Double): Self = StObject.set(x, "ms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsUndefined: Self = StObject.set(x, "ms", js.undefined)
+      inline def setMsUndefined: Self = StObject.set(x, "ms", js.undefined)
       
-      @scala.inline
-      def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+      inline def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSUndefined: Self = StObject.set(x, "s", js.undefined)
+      inline def setSUndefined: Self = StObject.set(x, "s", js.undefined)
       
-      @scala.inline
-      def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+      inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWUndefined: Self = StObject.set(x, "w", js.undefined)
+      inline def setWUndefined: Self = StObject.set(x, "w", js.undefined)
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
   
@@ -502,62 +402,44 @@ object mod {
   }
   object UnitTranslationOptions {
     
-    @scala.inline
-    def apply(): UnitTranslationOptions = {
+    inline def apply(): UnitTranslationOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnitTranslationOptions]
     }
     
-    @scala.inline
-    implicit class UnitTranslationOptionsMutableBuilder[Self <: UnitTranslationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UnitTranslationOptions](x: Self) {
       
-      @scala.inline
-      def setD(value: /* count */ js.UndefOr[Double] => String): Self = StObject.set(x, "d", js.Any.fromFunction1(value))
+      inline def setD(value: /* count */ js.UndefOr[Double] => String): Self = StObject.set(x, "d", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDUndefined: Self = StObject.set(x, "d", js.undefined)
+      inline def setDUndefined: Self = StObject.set(x, "d", js.undefined)
       
-      @scala.inline
-      def setH(value: /* count */ js.UndefOr[Double] => String): Self = StObject.set(x, "h", js.Any.fromFunction1(value))
+      inline def setH(value: /* count */ js.UndefOr[Double] => String): Self = StObject.set(x, "h", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHUndefined: Self = StObject.set(x, "h", js.undefined)
+      inline def setHUndefined: Self = StObject.set(x, "h", js.undefined)
       
-      @scala.inline
-      def setM(value: /* count */ js.UndefOr[Double] => String): Self = StObject.set(x, "m", js.Any.fromFunction1(value))
+      inline def setM(value: /* count */ js.UndefOr[Double] => String): Self = StObject.set(x, "m", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMUndefined: Self = StObject.set(x, "m", js.undefined)
+      inline def setMUndefined: Self = StObject.set(x, "m", js.undefined)
       
-      @scala.inline
-      def setMo(value: /* count */ js.UndefOr[Double] => String): Self = StObject.set(x, "mo", js.Any.fromFunction1(value))
+      inline def setMo(value: /* count */ js.UndefOr[Double] => String): Self = StObject.set(x, "mo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMoUndefined: Self = StObject.set(x, "mo", js.undefined)
+      inline def setMoUndefined: Self = StObject.set(x, "mo", js.undefined)
       
-      @scala.inline
-      def setMs(value: /* count */ js.UndefOr[Double] => String): Self = StObject.set(x, "ms", js.Any.fromFunction1(value))
+      inline def setMs(value: /* count */ js.UndefOr[Double] => String): Self = StObject.set(x, "ms", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMsUndefined: Self = StObject.set(x, "ms", js.undefined)
+      inline def setMsUndefined: Self = StObject.set(x, "ms", js.undefined)
       
-      @scala.inline
-      def setS(value: /* count */ js.UndefOr[Double] => String): Self = StObject.set(x, "s", js.Any.fromFunction1(value))
+      inline def setS(value: /* count */ js.UndefOr[Double] => String): Self = StObject.set(x, "s", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSUndefined: Self = StObject.set(x, "s", js.undefined)
+      inline def setSUndefined: Self = StObject.set(x, "s", js.undefined)
       
-      @scala.inline
-      def setW(value: /* count */ js.UndefOr[Double] => String): Self = StObject.set(x, "w", js.Any.fromFunction1(value))
+      inline def setW(value: /* count */ js.UndefOr[Double] => String): Self = StObject.set(x, "w", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWUndefined: Self = StObject.set(x, "w", js.undefined)
+      inline def setWUndefined: Self = StObject.set(x, "w", js.undefined)
       
-      @scala.inline
-      def setY(value: /* count */ js.UndefOr[Double] => String): Self = StObject.set(x, "y", js.Any.fromFunction1(value))
+      inline def setY(value: /* count */ js.UndefOr[Double] => String): Self = StObject.set(x, "y", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
 }

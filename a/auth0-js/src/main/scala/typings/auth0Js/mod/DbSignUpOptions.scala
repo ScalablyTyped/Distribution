@@ -25,40 +25,29 @@ trait DbSignUpOptions extends StObject {
 }
 object DbSignUpOptions {
   
-  @scala.inline
-  def apply(connection: String, email: String, password: String): DbSignUpOptions = {
+  inline def apply(connection: String, email: String, password: String): DbSignUpOptions = {
     val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], password = password.asInstanceOf[js.Any])
     __obj.asInstanceOf[DbSignUpOptions]
   }
   
-  @scala.inline
-  implicit class DbSignUpOptionsMutableBuilder[Self <: DbSignUpOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DbSignUpOptions](x: Self) {
     
-    @scala.inline
-    def setConnection(value: String): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: String): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    @scala.inline
-    def setUserMetadata(value: js.Any): Self = StObject.set(x, "userMetadata", value.asInstanceOf[js.Any])
+    inline def setUserMetadata(value: js.Any): Self = StObject.set(x, "userMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserMetadataUndefined: Self = StObject.set(x, "userMetadata", js.undefined)
+    inline def setUserMetadataUndefined: Self = StObject.set(x, "userMetadata", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

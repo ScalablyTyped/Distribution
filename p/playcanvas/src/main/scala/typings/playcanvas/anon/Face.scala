@@ -12,25 +12,19 @@ trait Face extends StObject {
 }
 object Face {
   
-  @scala.inline
-  def apply(): Face = {
+  inline def apply(): Face = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Face]
   }
   
-  @scala.inline
-  implicit class FaceMutableBuilder[Self <: Face] (val x: Self) extends AnyVal {
+  extension [Self <: Face](x: Self) {
     
-    @scala.inline
-    def setFace(value: Double): Self = StObject.set(x, "face", value.asInstanceOf[js.Any])
+    inline def setFace(value: Double): Self = StObject.set(x, "face", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceUndefined: Self = StObject.set(x, "face", js.undefined)
+    inline def setFaceUndefined: Self = StObject.set(x, "face", js.undefined)
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
   }
 }

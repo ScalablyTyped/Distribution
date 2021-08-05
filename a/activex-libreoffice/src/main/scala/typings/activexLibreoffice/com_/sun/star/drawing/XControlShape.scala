@@ -37,8 +37,7 @@ trait XControlShape
 }
 object XControlShape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Control: XControlModel,
     Position: Point,
     ShapeType: String,
@@ -58,16 +57,12 @@ object XControlShape {
     __obj.asInstanceOf[XControlShape]
   }
   
-  @scala.inline
-  implicit class XControlShapeMutableBuilder[Self <: XControlShape] (val x: Self) extends AnyVal {
+  extension [Self <: XControlShape](x: Self) {
     
-    @scala.inline
-    def setControl(value: XControlModel): Self = StObject.set(x, "Control", value.asInstanceOf[js.Any])
+    inline def setControl(value: XControlModel): Self = StObject.set(x, "Control", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetControl(value: () => XControlModel): Self = StObject.set(x, "getControl", js.Any.fromFunction0(value))
+    inline def setGetControl(value: () => XControlModel): Self = StObject.set(x, "getControl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetControl(value: XControlModel => Unit): Self = StObject.set(x, "setControl", js.Any.fromFunction1(value))
+    inline def setSetControl(value: XControlModel => Unit): Self = StObject.set(x, "setControl", js.Any.fromFunction1(value))
   }
 }

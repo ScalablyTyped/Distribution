@@ -18,19 +18,15 @@ trait GetRecoveryPointRestoreMetadataInput extends StObject {
 }
 object GetRecoveryPointRestoreMetadataInput {
   
-  @scala.inline
-  def apply(BackupVaultName: BackupVaultName, RecoveryPointArn: ARN): GetRecoveryPointRestoreMetadataInput = {
+  inline def apply(BackupVaultName: BackupVaultName, RecoveryPointArn: ARN): GetRecoveryPointRestoreMetadataInput = {
     val __obj = js.Dynamic.literal(BackupVaultName = BackupVaultName.asInstanceOf[js.Any], RecoveryPointArn = RecoveryPointArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRecoveryPointRestoreMetadataInput]
   }
   
-  @scala.inline
-  implicit class GetRecoveryPointRestoreMetadataInputMutableBuilder[Self <: GetRecoveryPointRestoreMetadataInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetRecoveryPointRestoreMetadataInput](x: Self) {
     
-    @scala.inline
-    def setBackupVaultName(value: BackupVaultName): Self = StObject.set(x, "BackupVaultName", value.asInstanceOf[js.Any])
+    inline def setBackupVaultName(value: BackupVaultName): Self = StObject.set(x, "BackupVaultName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecoveryPointArn(value: ARN): Self = StObject.set(x, "RecoveryPointArn", value.asInstanceOf[js.Any])
+    inline def setRecoveryPointArn(value: ARN): Self = StObject.set(x, "RecoveryPointArn", value.asInstanceOf[js.Any])
   }
 }

@@ -18,22 +18,17 @@ trait SchemaUrlCrawlErrorsCountsQueryResponse extends StObject {
 }
 object SchemaUrlCrawlErrorsCountsQueryResponse {
   
-  @scala.inline
-  def apply(): SchemaUrlCrawlErrorsCountsQueryResponse = {
+  inline def apply(): SchemaUrlCrawlErrorsCountsQueryResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUrlCrawlErrorsCountsQueryResponse]
   }
   
-  @scala.inline
-  implicit class SchemaUrlCrawlErrorsCountsQueryResponseMutableBuilder[Self <: SchemaUrlCrawlErrorsCountsQueryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUrlCrawlErrorsCountsQueryResponse](x: Self) {
     
-    @scala.inline
-    def setCountPerTypes(value: js.Array[SchemaUrlCrawlErrorCountsPerType]): Self = StObject.set(x, "countPerTypes", value.asInstanceOf[js.Any])
+    inline def setCountPerTypes(value: js.Array[SchemaUrlCrawlErrorCountsPerType]): Self = StObject.set(x, "countPerTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountPerTypesUndefined: Self = StObject.set(x, "countPerTypes", js.undefined)
+    inline def setCountPerTypesUndefined: Self = StObject.set(x, "countPerTypes", js.undefined)
     
-    @scala.inline
-    def setCountPerTypesVarargs(value: SchemaUrlCrawlErrorCountsPerType*): Self = StObject.set(x, "countPerTypes", js.Array(value :_*))
+    inline def setCountPerTypesVarargs(value: SchemaUrlCrawlErrorCountsPerType*): Self = StObject.set(x, "countPerTypes", js.Array(value :_*))
   }
 }

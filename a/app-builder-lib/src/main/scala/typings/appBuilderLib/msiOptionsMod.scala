@@ -26,29 +26,22 @@ object msiOptionsMod {
   }
   object MsiOptions {
     
-    @scala.inline
-    def apply(): MsiOptions = {
+    inline def apply(): MsiOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MsiOptions]
     }
     
-    @scala.inline
-    implicit class MsiOptionsMutableBuilder[Self <: MsiOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MsiOptions](x: Self) {
       
-      @scala.inline
-      def setUpgradeCode(value: String): Self = StObject.set(x, "upgradeCode", value.asInstanceOf[js.Any])
+      inline def setUpgradeCode(value: String): Self = StObject.set(x, "upgradeCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpgradeCodeNull: Self = StObject.set(x, "upgradeCode", null)
+      inline def setUpgradeCodeNull: Self = StObject.set(x, "upgradeCode", null)
       
-      @scala.inline
-      def setUpgradeCodeUndefined: Self = StObject.set(x, "upgradeCode", js.undefined)
+      inline def setUpgradeCodeUndefined: Self = StObject.set(x, "upgradeCode", js.undefined)
       
-      @scala.inline
-      def setWarningsAsErrors(value: Boolean): Self = StObject.set(x, "warningsAsErrors", value.asInstanceOf[js.Any])
+      inline def setWarningsAsErrors(value: Boolean): Self = StObject.set(x, "warningsAsErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarningsAsErrorsUndefined: Self = StObject.set(x, "warningsAsErrors", js.undefined)
+      inline def setWarningsAsErrorsUndefined: Self = StObject.set(x, "warningsAsErrors", js.undefined)
     }
   }
 }

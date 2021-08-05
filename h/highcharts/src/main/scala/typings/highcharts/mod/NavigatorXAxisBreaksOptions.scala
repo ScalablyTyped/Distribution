@@ -32,37 +32,27 @@ trait NavigatorXAxisBreaksOptions extends StObject {
 }
 object NavigatorXAxisBreaksOptions {
   
-  @scala.inline
-  def apply(): NavigatorXAxisBreaksOptions = {
+  inline def apply(): NavigatorXAxisBreaksOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigatorXAxisBreaksOptions]
   }
   
-  @scala.inline
-  implicit class NavigatorXAxisBreaksOptionsMutableBuilder[Self <: NavigatorXAxisBreaksOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NavigatorXAxisBreaksOptions](x: Self) {
     
-    @scala.inline
-    def setBreakSize(value: Double): Self = StObject.set(x, "breakSize", value.asInstanceOf[js.Any])
+    inline def setBreakSize(value: Double): Self = StObject.set(x, "breakSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreakSizeUndefined: Self = StObject.set(x, "breakSize", js.undefined)
+    inline def setBreakSizeUndefined: Self = StObject.set(x, "breakSize", js.undefined)
     
-    @scala.inline
-    def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    @scala.inline
-    def setRepeat(value: Double): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
+    inline def setRepeat(value: Double): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
+    inline def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
     
-    @scala.inline
-    def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToUndefined: Self = StObject.set(x, "to", js.undefined)
+    inline def setToUndefined: Self = StObject.set(x, "to", js.undefined)
   }
 }

@@ -28,8 +28,7 @@ trait DataPlanStatus extends StObject {
 }
 object DataPlanStatus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dataLimitInMegabytes: Double,
     dataPlanUsage: DataPlanUsage,
     inboundBitsPerSecond: Double,
@@ -41,25 +40,18 @@ object DataPlanStatus {
     __obj.asInstanceOf[DataPlanStatus]
   }
   
-  @scala.inline
-  implicit class DataPlanStatusMutableBuilder[Self <: DataPlanStatus] (val x: Self) extends AnyVal {
+  extension [Self <: DataPlanStatus](x: Self) {
     
-    @scala.inline
-    def setDataLimitInMegabytes(value: Double): Self = StObject.set(x, "dataLimitInMegabytes", value.asInstanceOf[js.Any])
+    inline def setDataLimitInMegabytes(value: Double): Self = StObject.set(x, "dataLimitInMegabytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataPlanUsage(value: DataPlanUsage): Self = StObject.set(x, "dataPlanUsage", value.asInstanceOf[js.Any])
+    inline def setDataPlanUsage(value: DataPlanUsage): Self = StObject.set(x, "dataPlanUsage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInboundBitsPerSecond(value: Double): Self = StObject.set(x, "inboundBitsPerSecond", value.asInstanceOf[js.Any])
+    inline def setInboundBitsPerSecond(value: Double): Self = StObject.set(x, "inboundBitsPerSecond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxTransferSizeInMegabytes(value: Double): Self = StObject.set(x, "maxTransferSizeInMegabytes", value.asInstanceOf[js.Any])
+    inline def setMaxTransferSizeInMegabytes(value: Double): Self = StObject.set(x, "maxTransferSizeInMegabytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextBillingCycle(value: Date): Self = StObject.set(x, "nextBillingCycle", value.asInstanceOf[js.Any])
+    inline def setNextBillingCycle(value: Date): Self = StObject.set(x, "nextBillingCycle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutboundBitsPerSecond(value: Double): Self = StObject.set(x, "outboundBitsPerSecond", value.asInstanceOf[js.Any])
+    inline def setOutboundBitsPerSecond(value: Double): Self = StObject.set(x, "outboundBitsPerSecond", value.asInstanceOf[js.Any])
   }
 }

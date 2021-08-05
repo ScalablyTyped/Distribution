@@ -21,35 +21,26 @@ trait Target
 }
 object Target {
   
-  @scala.inline
-  def apply(): Target = {
+  inline def apply(): Target = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("RESET")
     __obj.asInstanceOf[Target]
   }
   
-  @scala.inline
-  implicit class TargetMutableBuilder[Self <: Target] (val x: Self) extends AnyVal {
+  extension [Self <: Target](x: Self) {
     
-    @scala.inline
-    def setPayload(value: ResetState): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: ResetState): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    @scala.inline
-    def setType(value: RESET): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: RESET): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

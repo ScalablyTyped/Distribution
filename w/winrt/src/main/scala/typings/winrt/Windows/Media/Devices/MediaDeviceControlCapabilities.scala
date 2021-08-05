@@ -9,8 +9,7 @@ trait MediaDeviceControlCapabilities
      with IMediaDeviceControlCapabilities
 object MediaDeviceControlCapabilities {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autoModeSupported: Boolean,
     default: Double,
     max: Double,

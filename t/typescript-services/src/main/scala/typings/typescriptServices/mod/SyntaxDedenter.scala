@@ -22,34 +22,34 @@ class SyntaxDedenter protected ()
     options: FormattingOptions
   ) = this()
   
-  /* CompleteClass */
-  /* private */ override def abort(): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def abort(): js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def dedentMultiLineComment(trivia: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def dedentMultiLineComment(trivia: js.Any): js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def dedentSegment(segment: js.Any, hasFollowingNewLineTrivia: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def dedentSegment(segment: js.Any, hasFollowingNewLineTrivia: js.Any): js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def dedentTriviaList(triviaList: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def dedentTriviaList(triviaList: js.Any): js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def dedentWhitespace(trivia: js.Any, hasFollowingNewLineTrivia: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def dedentWhitespace(trivia: js.Any, hasFollowingNewLineTrivia: js.Any): js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var dedentationAmount: js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def isAborted(): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def isAborted(): js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var lastTriviaWasNewLine: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var minimumIndent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var options: js.Any = js.native
   
   /* CompleteClass */
@@ -329,8 +329,7 @@ object SyntaxDedenter {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def dedentNode(
+  inline def dedentNode(
     node: ISyntaxNode,
     dedentFirstToken: Boolean,
     dedentAmount: Double,

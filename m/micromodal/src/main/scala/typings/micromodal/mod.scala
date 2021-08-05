@@ -19,29 +19,23 @@ object mod {
     /**
       * Closes the active modal
       */
-    @scala.inline
-    def close(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[Unit]
-    @scala.inline
-    def close(targetModal: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(targetModal.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def close(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[Unit]
+    inline def close(targetModal: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(targetModal.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Binds click handlers to all modal triggers
       * @param config configuration options
       */
-    @scala.inline
-    def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
-    @scala.inline
-    def init(config: MicroModalConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
+    inline def init(config: MicroModalConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Shows a particular modal
       * @param targetModal The id of the modal to display
       * @param config configuration options
       */
-    @scala.inline
-    def show(targetModal: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(targetModal.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def show(targetModal: String, config: MicroModalConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(targetModal.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def show(targetModal: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(targetModal.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def show(targetModal: String, config: MicroModalConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(targetModal.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   /**
@@ -89,74 +83,52 @@ object mod {
   }
   object MicroModalConfig {
     
-    @scala.inline
-    def apply(): MicroModalConfig = {
+    inline def apply(): MicroModalConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MicroModalConfig]
     }
     
-    @scala.inline
-    implicit class MicroModalConfigMutableBuilder[Self <: MicroModalConfig] (val x: Self) extends AnyVal {
+    extension [Self <: MicroModalConfig](x: Self) {
       
-      @scala.inline
-      def setAwaitCloseAnimation(value: Boolean): Self = StObject.set(x, "awaitCloseAnimation", value.asInstanceOf[js.Any])
+      inline def setAwaitCloseAnimation(value: Boolean): Self = StObject.set(x, "awaitCloseAnimation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAwaitCloseAnimationUndefined: Self = StObject.set(x, "awaitCloseAnimation", js.undefined)
+      inline def setAwaitCloseAnimationUndefined: Self = StObject.set(x, "awaitCloseAnimation", js.undefined)
       
-      @scala.inline
-      def setAwaitOpenAnimation(value: Boolean): Self = StObject.set(x, "awaitOpenAnimation", value.asInstanceOf[js.Any])
+      inline def setAwaitOpenAnimation(value: Boolean): Self = StObject.set(x, "awaitOpenAnimation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAwaitOpenAnimationUndefined: Self = StObject.set(x, "awaitOpenAnimation", js.undefined)
+      inline def setAwaitOpenAnimationUndefined: Self = StObject.set(x, "awaitOpenAnimation", js.undefined)
       
-      @scala.inline
-      def setCloseTrigger(value: String): Self = StObject.set(x, "closeTrigger", value.asInstanceOf[js.Any])
+      inline def setCloseTrigger(value: String): Self = StObject.set(x, "closeTrigger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseTriggerUndefined: Self = StObject.set(x, "closeTrigger", js.undefined)
+      inline def setCloseTriggerUndefined: Self = StObject.set(x, "closeTrigger", js.undefined)
       
-      @scala.inline
-      def setDebugMode(value: Boolean): Self = StObject.set(x, "debugMode", value.asInstanceOf[js.Any])
+      inline def setDebugMode(value: Boolean): Self = StObject.set(x, "debugMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugModeUndefined: Self = StObject.set(x, "debugMode", js.undefined)
+      inline def setDebugModeUndefined: Self = StObject.set(x, "debugMode", js.undefined)
       
-      @scala.inline
-      def setDisableFocus(value: Boolean): Self = StObject.set(x, "disableFocus", value.asInstanceOf[js.Any])
+      inline def setDisableFocus(value: Boolean): Self = StObject.set(x, "disableFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableFocusUndefined: Self = StObject.set(x, "disableFocus", js.undefined)
+      inline def setDisableFocusUndefined: Self = StObject.set(x, "disableFocus", js.undefined)
       
-      @scala.inline
-      def setDisableScroll(value: Boolean): Self = StObject.set(x, "disableScroll", value.asInstanceOf[js.Any])
+      inline def setDisableScroll(value: Boolean): Self = StObject.set(x, "disableScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableScrollUndefined: Self = StObject.set(x, "disableScroll", js.undefined)
+      inline def setDisableScrollUndefined: Self = StObject.set(x, "disableScroll", js.undefined)
       
-      @scala.inline
-      def setOnClose(value: /* modal */ js.UndefOr[HTMLElement] => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+      inline def setOnClose(value: /* modal */ js.UndefOr[HTMLElement] => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setOnShow(value: /* modal */ js.UndefOr[HTMLElement] => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
+      inline def setOnShow(value: /* modal */ js.UndefOr[HTMLElement] => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
+      inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
       
-      @scala.inline
-      def setOpenClass(value: String): Self = StObject.set(x, "openClass", value.asInstanceOf[js.Any])
+      inline def setOpenClass(value: String): Self = StObject.set(x, "openClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenClassUndefined: Self = StObject.set(x, "openClass", js.undefined)
+      inline def setOpenClassUndefined: Self = StObject.set(x, "openClass", js.undefined)
       
-      @scala.inline
-      def setOpenTrigger(value: String): Self = StObject.set(x, "openTrigger", value.asInstanceOf[js.Any])
+      inline def setOpenTrigger(value: String): Self = StObject.set(x, "openTrigger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenTriggerUndefined: Self = StObject.set(x, "openTrigger", js.undefined)
+      inline def setOpenTriggerUndefined: Self = StObject.set(x, "openTrigger", js.undefined)
     }
   }
 }

@@ -37,8 +37,7 @@ trait Navigate[TEntity] extends StObject {
 }
 object Navigate {
   
-  @scala.inline
-  def apply[TEntity](
+  inline def apply[TEntity](
     navigate: (IScope, navigateHandler[TEntity]) => Unit,
     viewPortKeyDown: (IScope, viewportKeyDownHandler[TEntity]) => Unit,
     viewPortKeyPress: (IScope, viewportKeyPressHandler[TEntity]) => Unit
@@ -47,16 +46,12 @@ object Navigate {
     __obj.asInstanceOf[Navigate[TEntity]]
   }
   
-  @scala.inline
-  implicit class NavigateMutableBuilder[Self <: Navigate[?], TEntity] (val x: Self & Navigate[TEntity]) extends AnyVal {
+  extension [Self <: Navigate[?], TEntity](x: Self & Navigate[TEntity]) {
     
-    @scala.inline
-    def setNavigate(value: (IScope, navigateHandler[TEntity]) => Unit): Self = StObject.set(x, "navigate", js.Any.fromFunction2(value))
+    inline def setNavigate(value: (IScope, navigateHandler[TEntity]) => Unit): Self = StObject.set(x, "navigate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setViewPortKeyDown(value: (IScope, viewportKeyDownHandler[TEntity]) => Unit): Self = StObject.set(x, "viewPortKeyDown", js.Any.fromFunction2(value))
+    inline def setViewPortKeyDown(value: (IScope, viewportKeyDownHandler[TEntity]) => Unit): Self = StObject.set(x, "viewPortKeyDown", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setViewPortKeyPress(value: (IScope, viewportKeyPressHandler[TEntity]) => Unit): Self = StObject.set(x, "viewPortKeyPress", js.Any.fromFunction2(value))
+    inline def setViewPortKeyPress(value: (IScope, viewportKeyPressHandler[TEntity]) => Unit): Self = StObject.set(x, "viewPortKeyPress", js.Any.fromFunction2(value))
   }
 }

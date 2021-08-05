@@ -20,8 +20,7 @@ trait ChoiceSupportOption[Value]
 }
 object ChoiceSupportOption {
   
-  @scala.inline
-  def apply[Value](
+  inline def apply[Value](
     category: String,
     choices: js.Array[Description[Value]],
     default: Value | js.Array[Since[Value]],
@@ -33,22 +32,16 @@ object ChoiceSupportOption {
     __obj.asInstanceOf[ChoiceSupportOption[Value]]
   }
   
-  @scala.inline
-  implicit class ChoiceSupportOptionMutableBuilder[Self <: ChoiceSupportOption[?], Value] (val x: Self & ChoiceSupportOption[Value]) extends AnyVal {
+  extension [Self <: ChoiceSupportOption[?], Value](x: Self & ChoiceSupportOption[Value]) {
     
-    @scala.inline
-    def setChoices(value: js.Array[Description[Value]]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
+    inline def setChoices(value: js.Array[Description[Value]]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChoicesVarargs(value: Description[Value]*): Self = StObject.set(x, "choices", js.Array(value :_*))
+    inline def setChoicesVarargs(value: Description[Value]*): Self = StObject.set(x, "choices", js.Array(value :_*))
     
-    @scala.inline
-    def setDefault(value: Value | js.Array[Since[Value]]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: Value | js.Array[Since[Value]]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultVarargs(value: Since[Value]*): Self = StObject.set(x, "default", js.Array(value :_*))
+    inline def setDefaultVarargs(value: Since[Value]*): Self = StObject.set(x, "default", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
   }
 }

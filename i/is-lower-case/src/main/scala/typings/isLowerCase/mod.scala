@@ -10,6 +10,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isLowerCase(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLowerCase")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isLowerCase(input: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLowerCase")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

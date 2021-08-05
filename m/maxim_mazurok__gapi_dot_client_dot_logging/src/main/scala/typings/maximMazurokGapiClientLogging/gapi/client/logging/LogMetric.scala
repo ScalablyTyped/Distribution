@@ -74,77 +74,55 @@ trait LogMetric extends StObject {
 }
 object LogMetric {
   
-  @scala.inline
-  def apply(): LogMetric = {
+  inline def apply(): LogMetric = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LogMetric]
   }
   
-  @scala.inline
-  implicit class LogMetricMutableBuilder[Self <: LogMetric] (val x: Self) extends AnyVal {
+  extension [Self <: LogMetric](x: Self) {
     
-    @scala.inline
-    def setBucketOptions(value: BucketOptions): Self = StObject.set(x, "bucketOptions", value.asInstanceOf[js.Any])
+    inline def setBucketOptions(value: BucketOptions): Self = StObject.set(x, "bucketOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketOptionsUndefined: Self = StObject.set(x, "bucketOptions", js.undefined)
+    inline def setBucketOptionsUndefined: Self = StObject.set(x, "bucketOptions", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setLabelExtractors(
+    inline def setLabelExtractors(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientLogging.maximMazurokGapiClientLoggingStrings.LogMetric & TopLevel[js.Any]
     ): Self = StObject.set(x, "labelExtractors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelExtractorsUndefined: Self = StObject.set(x, "labelExtractors", js.undefined)
+    inline def setLabelExtractorsUndefined: Self = StObject.set(x, "labelExtractors", js.undefined)
     
-    @scala.inline
-    def setMetricDescriptor(value: MetricDescriptor): Self = StObject.set(x, "metricDescriptor", value.asInstanceOf[js.Any])
+    inline def setMetricDescriptor(value: MetricDescriptor): Self = StObject.set(x, "metricDescriptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricDescriptorUndefined: Self = StObject.set(x, "metricDescriptor", js.undefined)
+    inline def setMetricDescriptorUndefined: Self = StObject.set(x, "metricDescriptor", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
     
-    @scala.inline
-    def setValueExtractor(value: String): Self = StObject.set(x, "valueExtractor", value.asInstanceOf[js.Any])
+    inline def setValueExtractor(value: String): Self = StObject.set(x, "valueExtractor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueExtractorUndefined: Self = StObject.set(x, "valueExtractor", js.undefined)
+    inline def setValueExtractorUndefined: Self = StObject.set(x, "valueExtractor", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

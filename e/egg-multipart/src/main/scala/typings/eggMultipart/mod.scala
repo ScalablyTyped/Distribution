@@ -49,17 +49,14 @@ object mod {
   }
   object EggAppConfig {
     
-    @scala.inline
-    def apply(multipart: AutoFields): EggAppConfig = {
+    inline def apply(multipart: AutoFields): EggAppConfig = {
       val __obj = js.Dynamic.literal(multipart = multipart.asInstanceOf[js.Any])
       __obj.asInstanceOf[EggAppConfig]
     }
     
-    @scala.inline
-    implicit class EggAppConfigMutableBuilder[Self <: EggAppConfig] (val x: Self) extends AnyVal {
+    extension [Self <: EggAppConfig](x: Self) {
       
-      @scala.inline
-      def setMultipart(value: AutoFields): Self = StObject.set(x, "multipart", value.asInstanceOf[js.Any])
+      inline def setMultipart(value: AutoFields): Self = StObject.set(x, "multipart", value.asInstanceOf[js.Any])
     }
   }
   
@@ -74,20 +71,16 @@ object mod {
   }
   object Request {
     
-    @scala.inline
-    def apply(files: js.Array[EggFile]): Request = {
+    inline def apply(files: js.Array[EggFile]): Request = {
       val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any])
       __obj.asInstanceOf[Request]
     }
     
-    @scala.inline
-    implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+    extension [Self <: Request](x: Self) {
       
-      @scala.inline
-      def setFiles(value: js.Array[EggFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: js.Array[EggFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesVarargs(value: EggFile*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: EggFile*): Self = StObject.set(x, "files", js.Array(value :_*))
     }
   }
 }

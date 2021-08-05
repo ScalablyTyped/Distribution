@@ -10,16 +10,13 @@ trait CreateAppRequest extends StObject {
 }
 object CreateAppRequest {
   
-  @scala.inline
-  def apply(CreateApplicationRequest: CreateApplicationRequest): CreateAppRequest = {
+  inline def apply(CreateApplicationRequest: CreateApplicationRequest): CreateAppRequest = {
     val __obj = js.Dynamic.literal(CreateApplicationRequest = CreateApplicationRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAppRequest]
   }
   
-  @scala.inline
-  implicit class CreateAppRequestMutableBuilder[Self <: CreateAppRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAppRequest](x: Self) {
     
-    @scala.inline
-    def setCreateApplicationRequest(value: CreateApplicationRequest): Self = StObject.set(x, "CreateApplicationRequest", value.asInstanceOf[js.Any])
+    inline def setCreateApplicationRequest(value: CreateApplicationRequest): Self = StObject.set(x, "CreateApplicationRequest", value.asInstanceOf[js.Any])
   }
 }

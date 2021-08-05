@@ -38,49 +38,35 @@ trait ListTypeVersionsInput extends StObject {
 }
 object ListTypeVersionsInput {
   
-  @scala.inline
-  def apply(): ListTypeVersionsInput = {
+  inline def apply(): ListTypeVersionsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTypeVersionsInput]
   }
   
-  @scala.inline
-  implicit class ListTypeVersionsInputMutableBuilder[Self <: ListTypeVersionsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListTypeVersionsInput](x: Self) {
     
-    @scala.inline
-    def setArn(value: PrivateTypeArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: PrivateTypeArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setDeprecatedStatus(value: DeprecatedStatus): Self = StObject.set(x, "DeprecatedStatus", value.asInstanceOf[js.Any])
+    inline def setDeprecatedStatus(value: DeprecatedStatus): Self = StObject.set(x, "DeprecatedStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprecatedStatusUndefined: Self = StObject.set(x, "DeprecatedStatus", js.undefined)
+    inline def setDeprecatedStatusUndefined: Self = StObject.set(x, "DeprecatedStatus", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setType(value: RegistryType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: RegistryType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeName(value: TypeName): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
+    inline def setTypeName(value: TypeName): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeNameUndefined: Self = StObject.set(x, "TypeName", js.undefined)
+    inline def setTypeNameUndefined: Self = StObject.set(x, "TypeName", js.undefined)
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

@@ -15,8 +15,7 @@ object selectControlMod {
   
   object default {
     
-    @scala.inline
-    def apply[T /* <: String | js.Array[String] */](// tslint:disable-next-line:no-unnecessary-generics
+    inline def apply[T /* <: String | js.Array[String] */](// tslint:disable-next-line:no-unnecessary-generics
     props: Props[T]): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@wordpress/components/select-control", JSImport.Default)
@@ -41,20 +40,16 @@ object selectControlMod {
     }
     object Option {
       
-      @scala.inline
-      def apply(label: String, value: String): Option = {
+      inline def apply(label: String, value: String): Option = {
         val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
         __obj.asInstanceOf[Option]
       }
       
-      @scala.inline
-      implicit class OptionMutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
+      extension [Self <: Option](x: Self) {
         
-        @scala.inline
-        def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       }
     }
     

@@ -13,19 +13,15 @@ trait StatisticalThreshold extends StObject {
 }
 object StatisticalThreshold {
   
-  @scala.inline
-  def apply(): StatisticalThreshold = {
+  inline def apply(): StatisticalThreshold = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StatisticalThreshold]
   }
   
-  @scala.inline
-  implicit class StatisticalThresholdMutableBuilder[Self <: StatisticalThreshold] (val x: Self) extends AnyVal {
+  extension [Self <: StatisticalThreshold](x: Self) {
     
-    @scala.inline
-    def setStatistic(value: EvaluationStatistic): Self = StObject.set(x, "statistic", value.asInstanceOf[js.Any])
+    inline def setStatistic(value: EvaluationStatistic): Self = StObject.set(x, "statistic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatisticUndefined: Self = StObject.set(x, "statistic", js.undefined)
+    inline def setStatisticUndefined: Self = StObject.set(x, "statistic", js.undefined)
   }
 }

@@ -21,25 +21,19 @@ trait GoogleActionsV2SpeechResponse extends StObject {
 }
 object GoogleActionsV2SpeechResponse {
   
-  @scala.inline
-  def apply(): GoogleActionsV2SpeechResponse = {
+  inline def apply(): GoogleActionsV2SpeechResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2SpeechResponse]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2SpeechResponseMutableBuilder[Self <: GoogleActionsV2SpeechResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2SpeechResponse](x: Self) {
     
-    @scala.inline
-    def setSsml(value: String): Self = StObject.set(x, "ssml", value.asInstanceOf[js.Any])
+    inline def setSsml(value: String): Self = StObject.set(x, "ssml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSsmlUndefined: Self = StObject.set(x, "ssml", js.undefined)
+    inline def setSsmlUndefined: Self = StObject.set(x, "ssml", js.undefined)
     
-    @scala.inline
-    def setTextToSpeech(value: String): Self = StObject.set(x, "textToSpeech", value.asInstanceOf[js.Any])
+    inline def setTextToSpeech(value: String): Self = StObject.set(x, "textToSpeech", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextToSpeechUndefined: Self = StObject.set(x, "textToSpeech", js.undefined)
+    inline def setTextToSpeechUndefined: Self = StObject.set(x, "textToSpeech", js.undefined)
   }
 }

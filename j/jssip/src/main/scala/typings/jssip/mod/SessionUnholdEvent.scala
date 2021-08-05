@@ -10,16 +10,13 @@ trait SessionUnholdEvent extends StObject {
 }
 object SessionUnholdEvent {
   
-  @scala.inline
-  def apply(originator: String): SessionUnholdEvent = {
+  inline def apply(originator: String): SessionUnholdEvent = {
     val __obj = js.Dynamic.literal(originator = originator.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionUnholdEvent]
   }
   
-  @scala.inline
-  implicit class SessionUnholdEventMutableBuilder[Self <: SessionUnholdEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SessionUnholdEvent](x: Self) {
     
-    @scala.inline
-    def setOriginator(value: String): Self = StObject.set(x, "originator", value.asInstanceOf[js.Any])
+    inline def setOriginator(value: String): Self = StObject.set(x, "originator", value.asInstanceOf[js.Any])
   }
 }

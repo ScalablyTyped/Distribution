@@ -6,11 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 
 // Global variable with Figma's plugin API.
-@scala.inline
-def figma: typings.figma.mod.global.PluginAPI = js.Dynamic.global.selectDynamic("figma").asInstanceOf[typings.figma.mod.global.PluginAPI]
+inline def figma: typings.figma.mod.global.PluginAPI = js.Dynamic.global.selectDynamic("figma").asInstanceOf[typings.figma.mod.global.PluginAPI]
 
-@scala.inline
-def html: java.lang.String = js.Dynamic.global.selectDynamic("__html__").asInstanceOf[java.lang.String]
+inline def html: java.lang.String = js.Dynamic.global.selectDynamic("__html__").asInstanceOf[java.lang.String]
 
 type MessageEventHandler = js.Function2[
 /* pluginMessage */ js.Any, 

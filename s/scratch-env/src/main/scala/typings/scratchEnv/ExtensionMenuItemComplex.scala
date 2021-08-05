@@ -15,19 +15,15 @@ trait ExtensionMenuItemComplex extends StObject {
 }
 object ExtensionMenuItemComplex {
   
-  @scala.inline
-  def apply(text: String, value: js.Any): ExtensionMenuItemComplex = {
+  inline def apply(text: String, value: js.Any): ExtensionMenuItemComplex = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionMenuItemComplex]
   }
   
-  @scala.inline
-  implicit class ExtensionMenuItemComplexMutableBuilder[Self <: ExtensionMenuItemComplex] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionMenuItemComplex](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

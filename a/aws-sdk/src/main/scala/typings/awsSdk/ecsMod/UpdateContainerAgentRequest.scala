@@ -18,22 +18,17 @@ trait UpdateContainerAgentRequest extends StObject {
 }
 object UpdateContainerAgentRequest {
   
-  @scala.inline
-  def apply(containerInstance: String): UpdateContainerAgentRequest = {
+  inline def apply(containerInstance: String): UpdateContainerAgentRequest = {
     val __obj = js.Dynamic.literal(containerInstance = containerInstance.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateContainerAgentRequest]
   }
   
-  @scala.inline
-  implicit class UpdateContainerAgentRequestMutableBuilder[Self <: UpdateContainerAgentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateContainerAgentRequest](x: Self) {
     
-    @scala.inline
-    def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
+    inline def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
+    inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
     
-    @scala.inline
-    def setContainerInstance(value: String): Self = StObject.set(x, "containerInstance", value.asInstanceOf[js.Any])
+    inline def setContainerInstance(value: String): Self = StObject.set(x, "containerInstance", value.asInstanceOf[js.Any])
   }
 }

@@ -33,43 +33,31 @@ trait ConfigurationTag extends StObject {
 }
 object ConfigurationTag {
   
-  @scala.inline
-  def apply(): ConfigurationTag = {
+  inline def apply(): ConfigurationTag = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfigurationTag]
   }
   
-  @scala.inline
-  implicit class ConfigurationTagMutableBuilder[Self <: ConfigurationTag] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigurationTag](x: Self) {
     
-    @scala.inline
-    def setConfigurationId(value: ConfigurationId): Self = StObject.set(x, "configurationId", value.asInstanceOf[js.Any])
+    inline def setConfigurationId(value: ConfigurationId): Self = StObject.set(x, "configurationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationIdUndefined: Self = StObject.set(x, "configurationId", js.undefined)
+    inline def setConfigurationIdUndefined: Self = StObject.set(x, "configurationId", js.undefined)
     
-    @scala.inline
-    def setConfigurationType(value: ConfigurationItemType): Self = StObject.set(x, "configurationType", value.asInstanceOf[js.Any])
+    inline def setConfigurationType(value: ConfigurationItemType): Self = StObject.set(x, "configurationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigurationTypeUndefined: Self = StObject.set(x, "configurationType", js.undefined)
+    inline def setConfigurationTypeUndefined: Self = StObject.set(x, "configurationType", js.undefined)
     
-    @scala.inline
-    def setKey(value: TagKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: TagKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setTimeOfCreation(value: TimeStamp): Self = StObject.set(x, "timeOfCreation", value.asInstanceOf[js.Any])
+    inline def setTimeOfCreation(value: TimeStamp): Self = StObject.set(x, "timeOfCreation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeOfCreationUndefined: Self = StObject.set(x, "timeOfCreation", js.undefined)
+    inline def setTimeOfCreationUndefined: Self = StObject.set(x, "timeOfCreation", js.undefined)
     
-    @scala.inline
-    def setValue(value: TagValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: TagValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

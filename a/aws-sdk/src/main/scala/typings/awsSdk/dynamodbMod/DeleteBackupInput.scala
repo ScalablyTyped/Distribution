@@ -13,16 +13,13 @@ trait DeleteBackupInput extends StObject {
 }
 object DeleteBackupInput {
   
-  @scala.inline
-  def apply(BackupArn: BackupArn): DeleteBackupInput = {
+  inline def apply(BackupArn: BackupArn): DeleteBackupInput = {
     val __obj = js.Dynamic.literal(BackupArn = BackupArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteBackupInput]
   }
   
-  @scala.inline
-  implicit class DeleteBackupInputMutableBuilder[Self <: DeleteBackupInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteBackupInput](x: Self) {
     
-    @scala.inline
-    def setBackupArn(value: BackupArn): Self = StObject.set(x, "BackupArn", value.asInstanceOf[js.Any])
+    inline def setBackupArn(value: BackupArn): Self = StObject.set(x, "BackupArn", value.asInstanceOf[js.Any])
   }
 }

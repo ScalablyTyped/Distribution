@@ -13,19 +13,15 @@ trait UpdateGameServerOutput extends StObject {
 }
 object UpdateGameServerOutput {
   
-  @scala.inline
-  def apply(): UpdateGameServerOutput = {
+  inline def apply(): UpdateGameServerOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateGameServerOutput]
   }
   
-  @scala.inline
-  implicit class UpdateGameServerOutputMutableBuilder[Self <: UpdateGameServerOutput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateGameServerOutput](x: Self) {
     
-    @scala.inline
-    def setGameServer(value: GameServer): Self = StObject.set(x, "GameServer", value.asInstanceOf[js.Any])
+    inline def setGameServer(value: GameServer): Self = StObject.set(x, "GameServer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameServerUndefined: Self = StObject.set(x, "GameServer", js.undefined)
+    inline def setGameServerUndefined: Self = StObject.set(x, "GameServer", js.undefined)
   }
 }

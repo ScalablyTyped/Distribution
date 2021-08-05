@@ -35,65 +35,46 @@ object mod {
   }
   object PercentageCircleProps {
     
-    @scala.inline
-    def apply(): PercentageCircleProps = {
+    inline def apply(): PercentageCircleProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PercentageCircleProps]
     }
     
-    @scala.inline
-    implicit class PercentageCirclePropsMutableBuilder[Self <: PercentageCircleProps] (val x: Self) extends AnyVal {
+    extension [Self <: PercentageCircleProps](x: Self) {
       
-      @scala.inline
-      def setBgcolor(value: String): Self = StObject.set(x, "bgcolor", value.asInstanceOf[js.Any])
+      inline def setBgcolor(value: String): Self = StObject.set(x, "bgcolor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgcolorUndefined: Self = StObject.set(x, "bgcolor", js.undefined)
+      inline def setBgcolorUndefined: Self = StObject.set(x, "bgcolor", js.undefined)
       
-      @scala.inline
-      def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
+      inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
+      inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setInnerColor(value: String): Self = StObject.set(x, "innerColor", value.asInstanceOf[js.Any])
+      inline def setInnerColor(value: String): Self = StObject.set(x, "innerColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerColorUndefined: Self = StObject.set(x, "innerColor", js.undefined)
+      inline def setInnerColorUndefined: Self = StObject.set(x, "innerColor", js.undefined)
       
-      @scala.inline
-      def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+      inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
+      inline def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
       
-      @scala.inline
-      def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+      inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
       
-      @scala.inline
-      def setTextStyle(value: js.Array[TextStyle]): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+      inline def setTextStyle(value: js.Array[TextStyle]): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+      inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
       
-      @scala.inline
-      def setTextStyleVarargs(value: TextStyle*): Self = StObject.set(x, "textStyle", js.Array(value :_*))
+      inline def setTextStyleVarargs(value: TextStyle*): Self = StObject.set(x, "textStyle", js.Array(value :_*))
     }
   }
 }

@@ -58,73 +58,51 @@ trait PresetWatermark extends StObject {
 }
 object PresetWatermark {
   
-  @scala.inline
-  def apply(): PresetWatermark = {
+  inline def apply(): PresetWatermark = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PresetWatermark]
   }
   
-  @scala.inline
-  implicit class PresetWatermarkMutableBuilder[Self <: PresetWatermark] (val x: Self) extends AnyVal {
+  extension [Self <: PresetWatermark](x: Self) {
     
-    @scala.inline
-    def setHorizontalAlign(value: HorizontalAlign): Self = StObject.set(x, "HorizontalAlign", value.asInstanceOf[js.Any])
+    inline def setHorizontalAlign(value: HorizontalAlign): Self = StObject.set(x, "HorizontalAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalAlignUndefined: Self = StObject.set(x, "HorizontalAlign", js.undefined)
+    inline def setHorizontalAlignUndefined: Self = StObject.set(x, "HorizontalAlign", js.undefined)
     
-    @scala.inline
-    def setHorizontalOffset(value: PixelsOrPercent): Self = StObject.set(x, "HorizontalOffset", value.asInstanceOf[js.Any])
+    inline def setHorizontalOffset(value: PixelsOrPercent): Self = StObject.set(x, "HorizontalOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalOffsetUndefined: Self = StObject.set(x, "HorizontalOffset", js.undefined)
+    inline def setHorizontalOffsetUndefined: Self = StObject.set(x, "HorizontalOffset", js.undefined)
     
-    @scala.inline
-    def setId(value: PresetWatermarkId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: PresetWatermarkId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setMaxHeight(value: PixelsOrPercent): Self = StObject.set(x, "MaxHeight", value.asInstanceOf[js.Any])
+    inline def setMaxHeight(value: PixelsOrPercent): Self = StObject.set(x, "MaxHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxHeightUndefined: Self = StObject.set(x, "MaxHeight", js.undefined)
+    inline def setMaxHeightUndefined: Self = StObject.set(x, "MaxHeight", js.undefined)
     
-    @scala.inline
-    def setMaxWidth(value: PixelsOrPercent): Self = StObject.set(x, "MaxWidth", value.asInstanceOf[js.Any])
+    inline def setMaxWidth(value: PixelsOrPercent): Self = StObject.set(x, "MaxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxWidthUndefined: Self = StObject.set(x, "MaxWidth", js.undefined)
+    inline def setMaxWidthUndefined: Self = StObject.set(x, "MaxWidth", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: Opacity): Self = StObject.set(x, "Opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Opacity): Self = StObject.set(x, "Opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "Opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "Opacity", js.undefined)
     
-    @scala.inline
-    def setSizingPolicy(value: WatermarkSizingPolicy): Self = StObject.set(x, "SizingPolicy", value.asInstanceOf[js.Any])
+    inline def setSizingPolicy(value: WatermarkSizingPolicy): Self = StObject.set(x, "SizingPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizingPolicyUndefined: Self = StObject.set(x, "SizingPolicy", js.undefined)
+    inline def setSizingPolicyUndefined: Self = StObject.set(x, "SizingPolicy", js.undefined)
     
-    @scala.inline
-    def setTarget(value: Target): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Target): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "Target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "Target", js.undefined)
     
-    @scala.inline
-    def setVerticalAlign(value: VerticalAlign): Self = StObject.set(x, "VerticalAlign", value.asInstanceOf[js.Any])
+    inline def setVerticalAlign(value: VerticalAlign): Self = StObject.set(x, "VerticalAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalAlignUndefined: Self = StObject.set(x, "VerticalAlign", js.undefined)
+    inline def setVerticalAlignUndefined: Self = StObject.set(x, "VerticalAlign", js.undefined)
     
-    @scala.inline
-    def setVerticalOffset(value: PixelsOrPercent): Self = StObject.set(x, "VerticalOffset", value.asInstanceOf[js.Any])
+    inline def setVerticalOffset(value: PixelsOrPercent): Self = StObject.set(x, "VerticalOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalOffsetUndefined: Self = StObject.set(x, "VerticalOffset", js.undefined)
+    inline def setVerticalOffsetUndefined: Self = StObject.set(x, "VerticalOffset", js.undefined)
   }
 }

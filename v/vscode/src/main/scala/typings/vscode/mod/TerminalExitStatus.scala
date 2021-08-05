@@ -17,19 +17,15 @@ trait TerminalExitStatus extends StObject {
 }
 object TerminalExitStatus {
   
-  @scala.inline
-  def apply(): TerminalExitStatus = {
+  inline def apply(): TerminalExitStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TerminalExitStatus]
   }
   
-  @scala.inline
-  implicit class TerminalExitStatusMutableBuilder[Self <: TerminalExitStatus] (val x: Self) extends AnyVal {
+  extension [Self <: TerminalExitStatus](x: Self) {
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
   }
 }

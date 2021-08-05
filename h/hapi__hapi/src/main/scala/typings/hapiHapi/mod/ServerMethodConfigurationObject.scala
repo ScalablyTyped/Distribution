@@ -28,25 +28,19 @@ trait ServerMethodConfigurationObject extends StObject {
 }
 object ServerMethodConfigurationObject {
   
-  @scala.inline
-  def apply(method: ServerMethod, name: String): ServerMethodConfigurationObject = {
+  inline def apply(method: ServerMethod, name: String): ServerMethodConfigurationObject = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerMethodConfigurationObject]
   }
   
-  @scala.inline
-  implicit class ServerMethodConfigurationObjectMutableBuilder[Self <: ServerMethodConfigurationObject] (val x: Self) extends AnyVal {
+  extension [Self <: ServerMethodConfigurationObject](x: Self) {
     
-    @scala.inline
-    def setMethod(value: ServerMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: ServerMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: ServerMethodOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: ServerMethodOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

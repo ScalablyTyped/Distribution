@@ -22,9 +22,9 @@ object loadBalancerCdsMod {
        with LoadBalancer {
     def this(channelControlHelper: ChannelControlHelper) = this()
     
-    val channelControlHelper: js.Any = js.native
+    /* private */ val channelControlHelper: js.Any = js.native
     
-    var childBalancer: js.Any = js.native
+    /* private */ var childBalancer: js.Any = js.native
     
     /**
       * The load balancer unrefs all of its subchannels and stops calling methods
@@ -47,13 +47,13 @@ object loadBalancerCdsMod {
     /* CompleteClass */
     override def getTypeName(): String = js.native
     
-    var isWatcherActive: js.Any = js.native
+    /* private */ var isWatcherActive: js.Any = js.native
     
-    var latestAttributes: js.Any = js.native
+    /* private */ var latestAttributes: js.Any = js.native
     
-    var latestCdsUpdate: js.Any = js.native
+    /* private */ var latestCdsUpdate: js.Any = js.native
     
-    var latestConfig: js.Any = js.native
+    /* private */ var latestConfig: js.Any = js.native
     
     /**
       * If the load balancer is currently in the CONNECTING or TRANSIENT_FAILURE
@@ -79,11 +79,10 @@ object loadBalancerCdsMod {
       attributes: StringDictionary[js.Any]
     ): Unit = js.native
     
-    var watcher: js.Any = js.native
+    /* private */ var watcher: js.Any = js.native
     
-    var xdsClient: js.Any = js.native
+    /* private */ var xdsClient: js.Any = js.native
   }
   
-  @scala.inline
-  def setup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")().asInstanceOf[Unit]
+  inline def setup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")().asInstanceOf[Unit]
 }

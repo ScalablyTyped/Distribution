@@ -47,55 +47,39 @@ trait CreditCardInformation extends StObject {
 }
 object CreditCardInformation {
   
-  @scala.inline
-  def apply(): CreditCardInformation = {
+  inline def apply(): CreditCardInformation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreditCardInformation]
   }
   
-  @scala.inline
-  implicit class CreditCardInformationMutableBuilder[Self <: CreditCardInformation] (val x: Self) extends AnyVal {
+  extension [Self <: CreditCardInformation](x: Self) {
     
-    @scala.inline
-    def setAddress(value: /* Contains address information. */ AddressInformation): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: /* Contains address information. */ AddressInformation): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setCardNumber(value: String): Self = StObject.set(x, "cardNumber", value.asInstanceOf[js.Any])
+    inline def setCardNumber(value: String): Self = StObject.set(x, "cardNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardNumberUndefined: Self = StObject.set(x, "cardNumber", js.undefined)
+    inline def setCardNumberUndefined: Self = StObject.set(x, "cardNumber", js.undefined)
     
-    @scala.inline
-    def setCardType(value: String): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
+    inline def setCardType(value: String): Self = StObject.set(x, "cardType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardTypeUndefined: Self = StObject.set(x, "cardType", js.undefined)
+    inline def setCardTypeUndefined: Self = StObject.set(x, "cardType", js.undefined)
     
-    @scala.inline
-    def setCvNumber(value: String): Self = StObject.set(x, "cvNumber", value.asInstanceOf[js.Any])
+    inline def setCvNumber(value: String): Self = StObject.set(x, "cvNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCvNumberUndefined: Self = StObject.set(x, "cvNumber", js.undefined)
+    inline def setCvNumberUndefined: Self = StObject.set(x, "cvNumber", js.undefined)
     
-    @scala.inline
-    def setExpirationMonth(value: String): Self = StObject.set(x, "expirationMonth", value.asInstanceOf[js.Any])
+    inline def setExpirationMonth(value: String): Self = StObject.set(x, "expirationMonth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationMonthUndefined: Self = StObject.set(x, "expirationMonth", js.undefined)
+    inline def setExpirationMonthUndefined: Self = StObject.set(x, "expirationMonth", js.undefined)
     
-    @scala.inline
-    def setExpirationYear(value: String): Self = StObject.set(x, "expirationYear", value.asInstanceOf[js.Any])
+    inline def setExpirationYear(value: String): Self = StObject.set(x, "expirationYear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationYearUndefined: Self = StObject.set(x, "expirationYear", js.undefined)
+    inline def setExpirationYearUndefined: Self = StObject.set(x, "expirationYear", js.undefined)
     
-    @scala.inline
-    def setNameOnCard(value: String): Self = StObject.set(x, "nameOnCard", value.asInstanceOf[js.Any])
+    inline def setNameOnCard(value: String): Self = StObject.set(x, "nameOnCard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameOnCardUndefined: Self = StObject.set(x, "nameOnCard", js.undefined)
+    inline def setNameOnCardUndefined: Self = StObject.set(x, "nameOnCard", js.undefined)
   }
 }

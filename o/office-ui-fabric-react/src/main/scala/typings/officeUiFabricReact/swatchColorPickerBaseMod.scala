@@ -17,9 +17,9 @@ object swatchColorPickerBaseMod {
     @JSName("UNSAFE_componentWillReceiveProps")
     def UNSAFE_componentWillReceiveProps_MSwatchColorPickerBase(newProps: ISwatchColorPickerProps): Unit = js.native
     
-    var _cellFocused: js.Any = js.native
+    /* private */ var _cellFocused: js.Any = js.native
     
-    var _getItemsWithIndex: js.Any = js.native
+    /* private */ var _getItemsWithIndex: js.Any = js.native
     
     /**
       * Get the selected item's index
@@ -27,83 +27,83 @@ object swatchColorPickerBaseMod {
       * @param selectedId - The selected item's id to find
       * @returns - The index of the selected item's id, -1 if there was no match
       */
-    var _getSelectedIndex: js.Any = js.native
+    /* private */ var _getSelectedIndex: js.Any = js.native
     
-    var _id: js.Any = js.native
+    /* private */ var _id: js.Any = js.native
     
     /**
       * Handle the click on a cell
       * @param item - The cell that the click was fired against
       */
-    var _onCellClick: js.Any = js.native
+    /* private */ var _onCellClick: js.Any = js.native
     
     /**
       * Callback passed to the GridCell class that will trigger the onCellFocus callback of the SwatchColorPicker
       */
-    var _onGridCellFocused: js.Any = js.native
+    /* private */ var _onGridCellFocused: js.Any = js.native
     
     /**
       * Callback passed to the GridCell class that will trigger the onCellHovered callback of the SwatchColorPicker
       * NOTE: This will not be triggered if shouldFocusOnHover === true
       */
-    var _onGridCellHovered: js.Any = js.native
+    /* private */ var _onGridCellHovered: js.Any = js.native
     
     /**
       * Callback that
       */
-    var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: js.Any = js.native
     
     /**
       * Callback passed to the GridCell that will manage triggering the onCellHovered callback for mouseEnter
       */
-    var _onMouseEnter: js.Any = js.native
+    /* private */ var _onMouseEnter: js.Any = js.native
     
     /**
       * Callback passed to the GridCell that will manage Hover/Focus updates
       */
-    var _onMouseLeave: js.Any = js.native
+    /* private */ var _onMouseLeave: js.Any = js.native
     
     /**
       * Callback passed to the GridCell that will manage Hover/Focus updates
       */
-    var _onMouseMove: js.Any = js.native
+    /* private */ var _onMouseMove: js.Any = js.native
     
-    var _onRenderItem: js.Any = js.native
+    /* private */ var _onRenderItem: js.Any = js.native
     
     /**
       * When the whole swatchColorPicker is blurred,
       * make sure to clear the pending focused stated
       */
-    var _onSwatchColorPickerBlur: js.Any = js.native
+    /* private */ var _onSwatchColorPickerBlur: js.Any = js.native
     
     /**
       * Callback to make sure we don't update the hovered element during mouse wheel
       */
-    var _onWheel: js.Any = js.native
+    /* private */ var _onWheel: js.Any = js.native
     
     /**
       * Render a color cell
       * @param item - The item to render
       * @returns - Element representing the item
       */
-    var _renderOption: js.Any = js.native
+    /* private */ var _renderOption: js.Any = js.native
     
     /**
       * Sets a timeout so we won't process any mouse "hover" events
       * while navigating (via mouseWheel or arrowKeys)
       */
-    var _setNavigationTimeout: js.Any = js.native
+    /* private */ var _setNavigationTimeout: js.Any = js.native
     
-    var async: js.Any = js.native
+    /* private */ var async: js.Any = js.native
     
     @JSName("componentWillUnmount")
     def componentWillUnmount_MSwatchColorPickerBase(): Unit = js.native
     
-    var isNavigationIdle: js.Any = js.native
+    /* private */ var isNavigationIdle: js.Any = js.native
     
-    val navigationIdleDelay: js.Any = js.native
+    /* private */ val navigationIdleDelay: js.Any = js.native
     
-    var navigationIdleTimeoutId: js.Any = js.native
+    /* private */ var navigationIdleTimeoutId: js.Any = js.native
   }
   /* static members */
   object SwatchColorPickerBase {
@@ -115,8 +115,7 @@ object swatchColorPickerBaseMod {
     @JSImport("office-ui-fabric-react/lib/components/SwatchColorPicker/SwatchColorPicker.base", "SwatchColorPickerBase.defaultProps")
     @js.native
     def defaultProps: ISwatchColorPickerProps = js.native
-    @scala.inline
-    def defaultProps_=(x: ISwatchColorPickerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: ISwatchColorPickerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait ISwatchColorPickerState extends StObject {
@@ -125,20 +124,16 @@ object swatchColorPickerBaseMod {
   }
   object ISwatchColorPickerState {
     
-    @scala.inline
-    def apply(): ISwatchColorPickerState = {
+    inline def apply(): ISwatchColorPickerState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISwatchColorPickerState]
     }
     
-    @scala.inline
-    implicit class ISwatchColorPickerStateMutableBuilder[Self <: ISwatchColorPickerState] (val x: Self) extends AnyVal {
+    extension [Self <: ISwatchColorPickerState](x: Self) {
       
-      @scala.inline
-      def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
+      inline def setSelectedIndex(value: Double): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedIndexUndefined: Self = StObject.set(x, "selectedIndex", js.undefined)
+      inline def setSelectedIndexUndefined: Self = StObject.set(x, "selectedIndex", js.undefined)
     }
   }
 }

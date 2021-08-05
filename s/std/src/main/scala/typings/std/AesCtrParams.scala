@@ -14,8 +14,7 @@ trait AesCtrParams
 }
 object AesCtrParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     counter: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer,
     length: Double,
     name: java.lang.String
@@ -24,15 +23,12 @@ object AesCtrParams {
     __obj.asInstanceOf[AesCtrParams]
   }
   
-  @scala.inline
-  implicit class AesCtrParamsMutableBuilder[Self <: AesCtrParams] (val x: Self) extends AnyVal {
+  extension [Self <: AesCtrParams](x: Self) {
     
-    @scala.inline
-    def setCounter(
+    inline def setCounter(
       value: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer
     ): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }
 }

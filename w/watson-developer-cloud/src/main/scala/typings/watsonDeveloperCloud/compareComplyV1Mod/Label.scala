@@ -15,19 +15,15 @@ trait Label extends StObject {
 }
 object Label {
   
-  @scala.inline
-  def apply(nature: String, party: String): Label = {
+  inline def apply(nature: String, party: String): Label = {
     val __obj = js.Dynamic.literal(nature = nature.asInstanceOf[js.Any], party = party.asInstanceOf[js.Any])
     __obj.asInstanceOf[Label]
   }
   
-  @scala.inline
-  implicit class LabelMutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
+  extension [Self <: Label](x: Self) {
     
-    @scala.inline
-    def setNature(value: String): Self = StObject.set(x, "nature", value.asInstanceOf[js.Any])
+    inline def setNature(value: String): Self = StObject.set(x, "nature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParty(value: String): Self = StObject.set(x, "party", value.asInstanceOf[js.Any])
+    inline def setParty(value: String): Self = StObject.set(x, "party", value.asInstanceOf[js.Any])
   }
 }

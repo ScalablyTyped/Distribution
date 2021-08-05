@@ -16,22 +16,17 @@ trait IsRefreshMap extends StObject {
 }
 object IsRefreshMap {
   
-  @scala.inline
-  def apply(IsRefresh: Boolean, Map: XmlMap, Result: XlXmlImportResult): IsRefreshMap = {
+  inline def apply(IsRefresh: Boolean, Map: XmlMap, Result: XlXmlImportResult): IsRefreshMap = {
     val __obj = js.Dynamic.literal(IsRefresh = IsRefresh.asInstanceOf[js.Any], Map = Map.asInstanceOf[js.Any], Result = Result.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsRefreshMap]
   }
   
-  @scala.inline
-  implicit class IsRefreshMapMutableBuilder[Self <: IsRefreshMap] (val x: Self) extends AnyVal {
+  extension [Self <: IsRefreshMap](x: Self) {
     
-    @scala.inline
-    def setIsRefresh(value: Boolean): Self = StObject.set(x, "IsRefresh", value.asInstanceOf[js.Any])
+    inline def setIsRefresh(value: Boolean): Self = StObject.set(x, "IsRefresh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMap(value: XmlMap): Self = StObject.set(x, "Map", value.asInstanceOf[js.Any])
+    inline def setMap(value: XmlMap): Self = StObject.set(x, "Map", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: XlXmlImportResult): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
+    inline def setResult(value: XlXmlImportResult): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
   }
 }

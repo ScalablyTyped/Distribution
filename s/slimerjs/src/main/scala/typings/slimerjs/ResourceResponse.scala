@@ -40,8 +40,7 @@ trait ResourceResponse extends StObject {
 }
 object ResourceResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     body: js.Any,
     bodySize: Double,
     contentCharset: String,
@@ -60,58 +59,40 @@ object ResourceResponse {
     __obj.asInstanceOf[ResourceResponse]
   }
   
-  @scala.inline
-  implicit class ResourceResponseMutableBuilder[Self <: ResourceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceResponse](x: Self) {
     
-    @scala.inline
-    def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodySize(value: Double): Self = StObject.set(x, "bodySize", value.asInstanceOf[js.Any])
+    inline def setBodySize(value: Double): Self = StObject.set(x, "bodySize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentCharset(value: String): Self = StObject.set(x, "contentCharset", value.asInstanceOf[js.Any])
+    inline def setContentCharset(value: String): Self = StObject.set(x, "contentCharset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpVersion(value: HttpVersion): Self = StObject.set(x, "httpVersion", value.asInstanceOf[js.Any])
+    inline def setHttpVersion(value: HttpVersion): Self = StObject.set(x, "httpVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFileDownloading(value: Boolean): Self = StObject.set(x, "isFileDownloading", value.asInstanceOf[js.Any])
+    inline def setIsFileDownloading(value: Boolean): Self = StObject.set(x, "isFileDownloading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectURL(value: String): Self = StObject.set(x, "redirectURL", value.asInstanceOf[js.Any])
+    inline def setRedirectURL(value: String): Self = StObject.set(x, "redirectURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectURLUndefined: Self = StObject.set(x, "redirectURL", js.undefined)
+    inline def setRedirectURLUndefined: Self = StObject.set(x, "redirectURL", js.undefined)
     
-    @scala.inline
-    def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
+    inline def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
+    inline def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+    inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime(value: Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Date): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

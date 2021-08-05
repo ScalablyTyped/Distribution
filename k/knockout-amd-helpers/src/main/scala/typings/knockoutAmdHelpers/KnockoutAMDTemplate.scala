@@ -14,22 +14,17 @@ trait KnockoutAMDTemplate extends StObject {
 }
 object KnockoutAMDTemplate {
   
-  @scala.inline
-  def apply(defaultPath: String, defaultRequireTextPluginName: String, defaultSuffix: String): KnockoutAMDTemplate = {
+  inline def apply(defaultPath: String, defaultRequireTextPluginName: String, defaultSuffix: String): KnockoutAMDTemplate = {
     val __obj = js.Dynamic.literal(defaultPath = defaultPath.asInstanceOf[js.Any], defaultRequireTextPluginName = defaultRequireTextPluginName.asInstanceOf[js.Any], defaultSuffix = defaultSuffix.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnockoutAMDTemplate]
   }
   
-  @scala.inline
-  implicit class KnockoutAMDTemplateMutableBuilder[Self <: KnockoutAMDTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutAMDTemplate](x: Self) {
     
-    @scala.inline
-    def setDefaultPath(value: String): Self = StObject.set(x, "defaultPath", value.asInstanceOf[js.Any])
+    inline def setDefaultPath(value: String): Self = StObject.set(x, "defaultPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultRequireTextPluginName(value: String): Self = StObject.set(x, "defaultRequireTextPluginName", value.asInstanceOf[js.Any])
+    inline def setDefaultRequireTextPluginName(value: String): Self = StObject.set(x, "defaultRequireTextPluginName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultSuffix(value: String): Self = StObject.set(x, "defaultSuffix", value.asInstanceOf[js.Any])
+    inline def setDefaultSuffix(value: String): Self = StObject.set(x, "defaultSuffix", value.asInstanceOf[js.Any])
   }
 }

@@ -18,19 +18,15 @@ trait ApplicationMetaData extends StObject {
 }
 object ApplicationMetaData {
   
-  @scala.inline
-  def apply(key: String, value: String): ApplicationMetaData = {
+  inline def apply(key: String, value: String): ApplicationMetaData = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationMetaData]
   }
   
-  @scala.inline
-  implicit class ApplicationMetaDataMutableBuilder[Self <: ApplicationMetaData] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationMetaData](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

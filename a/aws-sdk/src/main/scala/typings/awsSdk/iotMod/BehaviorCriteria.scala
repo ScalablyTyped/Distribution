@@ -38,49 +38,35 @@ trait BehaviorCriteria extends StObject {
 }
 object BehaviorCriteria {
   
-  @scala.inline
-  def apply(): BehaviorCriteria = {
+  inline def apply(): BehaviorCriteria = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BehaviorCriteria]
   }
   
-  @scala.inline
-  implicit class BehaviorCriteriaMutableBuilder[Self <: BehaviorCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: BehaviorCriteria](x: Self) {
     
-    @scala.inline
-    def setComparisonOperator(value: ComparisonOperator): Self = StObject.set(x, "comparisonOperator", value.asInstanceOf[js.Any])
+    inline def setComparisonOperator(value: ComparisonOperator): Self = StObject.set(x, "comparisonOperator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComparisonOperatorUndefined: Self = StObject.set(x, "comparisonOperator", js.undefined)
+    inline def setComparisonOperatorUndefined: Self = StObject.set(x, "comparisonOperator", js.undefined)
     
-    @scala.inline
-    def setConsecutiveDatapointsToAlarm(value: ConsecutiveDatapointsToAlarm): Self = StObject.set(x, "consecutiveDatapointsToAlarm", value.asInstanceOf[js.Any])
+    inline def setConsecutiveDatapointsToAlarm(value: ConsecutiveDatapointsToAlarm): Self = StObject.set(x, "consecutiveDatapointsToAlarm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsecutiveDatapointsToAlarmUndefined: Self = StObject.set(x, "consecutiveDatapointsToAlarm", js.undefined)
+    inline def setConsecutiveDatapointsToAlarmUndefined: Self = StObject.set(x, "consecutiveDatapointsToAlarm", js.undefined)
     
-    @scala.inline
-    def setConsecutiveDatapointsToClear(value: ConsecutiveDatapointsToClear): Self = StObject.set(x, "consecutiveDatapointsToClear", value.asInstanceOf[js.Any])
+    inline def setConsecutiveDatapointsToClear(value: ConsecutiveDatapointsToClear): Self = StObject.set(x, "consecutiveDatapointsToClear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsecutiveDatapointsToClearUndefined: Self = StObject.set(x, "consecutiveDatapointsToClear", js.undefined)
+    inline def setConsecutiveDatapointsToClearUndefined: Self = StObject.set(x, "consecutiveDatapointsToClear", js.undefined)
     
-    @scala.inline
-    def setDurationSeconds(value: DurationSeconds): Self = StObject.set(x, "durationSeconds", value.asInstanceOf[js.Any])
+    inline def setDurationSeconds(value: DurationSeconds): Self = StObject.set(x, "durationSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationSecondsUndefined: Self = StObject.set(x, "durationSeconds", js.undefined)
+    inline def setDurationSecondsUndefined: Self = StObject.set(x, "durationSeconds", js.undefined)
     
-    @scala.inline
-    def setStatisticalThreshold(value: StatisticalThreshold): Self = StObject.set(x, "statisticalThreshold", value.asInstanceOf[js.Any])
+    inline def setStatisticalThreshold(value: StatisticalThreshold): Self = StObject.set(x, "statisticalThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatisticalThresholdUndefined: Self = StObject.set(x, "statisticalThreshold", js.undefined)
+    inline def setStatisticalThresholdUndefined: Self = StObject.set(x, "statisticalThreshold", js.undefined)
     
-    @scala.inline
-    def setValue(value: MetricValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: MetricValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

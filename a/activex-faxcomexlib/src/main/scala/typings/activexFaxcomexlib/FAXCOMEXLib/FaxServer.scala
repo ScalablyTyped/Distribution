@@ -16,7 +16,7 @@ trait FaxServer
   /** FaxAccount for the current connection */
   val CurrentAccount: FaxAccount
   
-  @JSName("FAXCOMEXLib.FaxServer_typekey")
+  /* private */ @JSName("FAXCOMEXLib.FaxServer_typekey")
   var FAXCOMEXLibDotFaxServer_typekey: FaxServer
   
   /** The FaxAccountSet configuration object */
@@ -27,8 +27,7 @@ trait FaxServer
 }
 object FaxServer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     APIVersion: FAX_SERVER_APIVERSION_ENUM,
     Activity: FaxActivity,
     Configuration: FaxConfiguration,
@@ -66,22 +65,16 @@ object FaxServer {
     __obj.asInstanceOf[FaxServer]
   }
   
-  @scala.inline
-  implicit class FaxServerMutableBuilder[Self <: FaxServer] (val x: Self) extends AnyVal {
+  extension [Self <: FaxServer](x: Self) {
     
-    @scala.inline
-    def setConfiguration(value: FaxConfiguration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: FaxConfiguration): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentAccount(value: FaxAccount): Self = StObject.set(x, "CurrentAccount", value.asInstanceOf[js.Any])
+    inline def setCurrentAccount(value: FaxAccount): Self = StObject.set(x, "CurrentAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFAXCOMEXLibDotFaxServer_typekey(value: FaxServer): Self = StObject.set(x, "FAXCOMEXLib.FaxServer_typekey", value.asInstanceOf[js.Any])
+    inline def setFAXCOMEXLibDotFaxServer_typekey(value: FaxServer): Self = StObject.set(x, "FAXCOMEXLib.FaxServer_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaxAccountSet(value: FaxAccountSet): Self = StObject.set(x, "FaxAccountSet", value.asInstanceOf[js.Any])
+    inline def setFaxAccountSet(value: FaxAccountSet): Self = StObject.set(x, "FaxAccountSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurity2(value: FaxSecurity2): Self = StObject.set(x, "Security2", value.asInstanceOf[js.Any])
+    inline def setSecurity2(value: FaxSecurity2): Self = StObject.set(x, "Security2", value.asInstanceOf[js.Any])
   }
 }

@@ -77,76 +77,53 @@ trait ChecksCreateEndpoint
 }
 object ChecksCreateEndpoint {
   
-  @scala.inline
-  def apply(head_sha: String, mediaType: `0`[antiope], name: String, owner: String, repo: String): ChecksCreateEndpoint = {
+  inline def apply(head_sha: String, mediaType: `0`[antiope], name: String, owner: String, repo: String): ChecksCreateEndpoint = {
     val __obj = js.Dynamic.literal(head_sha = head_sha.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChecksCreateEndpoint]
   }
   
-  @scala.inline
-  implicit class ChecksCreateEndpointMutableBuilder[Self <: ChecksCreateEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ChecksCreateEndpoint](x: Self) {
     
-    @scala.inline
-    def setActions(value: js.Array[ChecksCreateParamsActions]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[ChecksCreateParamsActions]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+    inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    @scala.inline
-    def setActionsVarargs(value: ChecksCreateParamsActions*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: ChecksCreateParamsActions*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
-    @scala.inline
-    def setCompleted_at(value: String): Self = StObject.set(x, "completed_at", value.asInstanceOf[js.Any])
+    inline def setCompleted_at(value: String): Self = StObject.set(x, "completed_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompleted_atUndefined: Self = StObject.set(x, "completed_at", js.undefined)
+    inline def setCompleted_atUndefined: Self = StObject.set(x, "completed_at", js.undefined)
     
-    @scala.inline
-    def setConclusion(value: success | failure | neutral | cancelled | skipped | timed_out | action_required): Self = StObject.set(x, "conclusion", value.asInstanceOf[js.Any])
+    inline def setConclusion(value: success | failure | neutral | cancelled | skipped | timed_out | action_required): Self = StObject.set(x, "conclusion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConclusionUndefined: Self = StObject.set(x, "conclusion", js.undefined)
+    inline def setConclusionUndefined: Self = StObject.set(x, "conclusion", js.undefined)
     
-    @scala.inline
-    def setDetails_url(value: String): Self = StObject.set(x, "details_url", value.asInstanceOf[js.Any])
+    inline def setDetails_url(value: String): Self = StObject.set(x, "details_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetails_urlUndefined: Self = StObject.set(x, "details_url", js.undefined)
+    inline def setDetails_urlUndefined: Self = StObject.set(x, "details_url", js.undefined)
     
-    @scala.inline
-    def setExternal_id(value: String): Self = StObject.set(x, "external_id", value.asInstanceOf[js.Any])
+    inline def setExternal_id(value: String): Self = StObject.set(x, "external_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternal_idUndefined: Self = StObject.set(x, "external_id", js.undefined)
+    inline def setExternal_idUndefined: Self = StObject.set(x, "external_id", js.undefined)
     
-    @scala.inline
-    def setHead_sha(value: String): Self = StObject.set(x, "head_sha", value.asInstanceOf[js.Any])
+    inline def setHead_sha(value: String): Self = StObject.set(x, "head_sha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutput(value: ChecksCreateParamsOutput): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: ChecksCreateParamsOutput): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+    inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStarted_at(value: String): Self = StObject.set(x, "started_at", value.asInstanceOf[js.Any])
+    inline def setStarted_at(value: String): Self = StObject.set(x, "started_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStarted_atUndefined: Self = StObject.set(x, "started_at", js.undefined)
+    inline def setStarted_atUndefined: Self = StObject.set(x, "started_at", js.undefined)
     
-    @scala.inline
-    def setStatus(value: queued | in_progress | completed): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: queued | in_progress | completed): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

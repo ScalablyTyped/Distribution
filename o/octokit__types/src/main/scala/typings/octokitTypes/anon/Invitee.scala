@@ -24,8 +24,7 @@ trait Invitee extends StObject {
 }
 object Invitee {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     created_at: String,
     html_url: String,
     id: Double,
@@ -39,31 +38,22 @@ object Invitee {
     __obj.asInstanceOf[Invitee]
   }
   
-  @scala.inline
-  implicit class InviteeMutableBuilder[Self <: Invitee] (val x: Self) extends AnyVal {
+  extension [Self <: Invitee](x: Self) {
     
-    @scala.inline
-    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+    inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
+    inline def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitee(value: Avatarurl): Self = StObject.set(x, "invitee", value.asInstanceOf[js.Any])
+    inline def setInvitee(value: Avatarurl): Self = StObject.set(x, "invitee", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInviter(value: Avatarurl): Self = StObject.set(x, "inviter", value.asInstanceOf[js.Any])
+    inline def setInviter(value: Avatarurl): Self = StObject.set(x, "inviter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissions(value: String): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: String): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepository(value: Archiveurl): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: Archiveurl): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

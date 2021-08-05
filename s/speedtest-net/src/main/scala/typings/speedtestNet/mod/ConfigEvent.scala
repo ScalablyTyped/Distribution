@@ -28,32 +28,24 @@ trait ConfigEvent
 }
 object ConfigEvent {
   
-  @scala.inline
-  def apply(app: AppData, progress: Double, servers: js.Array[ServerData], suite: SuiteData): ConfigEvent = {
+  inline def apply(app: AppData, progress: Double, servers: js.Array[ServerData], suite: SuiteData): ConfigEvent = {
     val __obj = js.Dynamic.literal(app = app.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], servers = servers.asInstanceOf[js.Any], suite = suite.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("config")
     __obj.asInstanceOf[ConfigEvent]
   }
   
-  @scala.inline
-  implicit class ConfigEventMutableBuilder[Self <: ConfigEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigEvent](x: Self) {
     
-    @scala.inline
-    def setApp(value: AppData): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
+    inline def setApp(value: AppData): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServers(value: js.Array[ServerData]): Self = StObject.set(x, "servers", value.asInstanceOf[js.Any])
+    inline def setServers(value: js.Array[ServerData]): Self = StObject.set(x, "servers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServersVarargs(value: ServerData*): Self = StObject.set(x, "servers", js.Array(value :_*))
+    inline def setServersVarargs(value: ServerData*): Self = StObject.set(x, "servers", js.Array(value :_*))
     
-    @scala.inline
-    def setSuite(value: SuiteData): Self = StObject.set(x, "suite", value.asInstanceOf[js.Any])
+    inline def setSuite(value: SuiteData): Self = StObject.set(x, "suite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: config): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: config): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

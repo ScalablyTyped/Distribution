@@ -80,78 +80,55 @@ trait Question[T /* <: Answers */] extends StObject {
 }
 object Question {
   
-  @scala.inline
-  def apply[T /* <: Answers */](): Question[T] = {
+  inline def apply[T /* <: Answers */](): Question[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Question[T]]
   }
   
-  @scala.inline
-  implicit class QuestionMutableBuilder[Self <: Question[?], T /* <: Answers */] (val x: Self & Question[T]) extends AnyVal {
+  extension [Self <: Question[?], T /* <: Answers */](x: Self & Question[T]) {
     
-    @scala.inline
-    def setDefault(value: AsyncDynamicQuestionProperty[js.Any, T]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: AsyncDynamicQuestionProperty[js.Any, T]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultFunction1(value: T => js.Any | js.Promise[js.Any]): Self = StObject.set(x, "default", js.Any.fromFunction1(value))
+    inline def setDefaultFunction1(value: T => js.Any | js.Promise[js.Any]): Self = StObject.set(x, "default", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
-    @scala.inline
-    def setFilter(value: (/* input */ js.Any, /* answers */ T) => js.Any): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
+    inline def setFilter(value: (/* input */ js.Any, /* answers */ T) => js.Any): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setMessage(value: AsyncDynamicQuestionProperty[String, T]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: AsyncDynamicQuestionProperty[String, T]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageFunction1(value: T => String | js.Promise[String]): Self = StObject.set(x, "message", js.Any.fromFunction1(value))
+    inline def setMessageFunction1(value: T => String | js.Promise[String]): Self = StObject.set(x, "message", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setName(value: KeyUnion[T]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: KeyUnion[T]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
-    @scala.inline
-    def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+    inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+    inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setValidate(
+    inline def setValidate(
       value: (/* input */ js.Any, /* answers */ js.UndefOr[T]) => Boolean | String | (js.Promise[Boolean | String])
     ): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+    inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
     
-    @scala.inline
-    def setWhen(value: AsyncDynamicQuestionProperty[Boolean, T]): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
+    inline def setWhen(value: AsyncDynamicQuestionProperty[Boolean, T]): Self = StObject.set(x, "when", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhenFunction1(value: T => Boolean | js.Promise[Boolean]): Self = StObject.set(x, "when", js.Any.fromFunction1(value))
+    inline def setWhenFunction1(value: T => Boolean | js.Promise[Boolean]): Self = StObject.set(x, "when", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
+    inline def setWhenUndefined: Self = StObject.set(x, "when", js.undefined)
   }
 }

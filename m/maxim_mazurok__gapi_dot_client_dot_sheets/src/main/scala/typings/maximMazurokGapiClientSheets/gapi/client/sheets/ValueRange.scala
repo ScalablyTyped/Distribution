@@ -28,34 +28,25 @@ trait ValueRange extends StObject {
 }
 object ValueRange {
   
-  @scala.inline
-  def apply(): ValueRange = {
+  inline def apply(): ValueRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValueRange]
   }
   
-  @scala.inline
-  implicit class ValueRangeMutableBuilder[Self <: ValueRange] (val x: Self) extends AnyVal {
+  extension [Self <: ValueRange](x: Self) {
     
-    @scala.inline
-    def setMajorDimension(value: String): Self = StObject.set(x, "majorDimension", value.asInstanceOf[js.Any])
+    inline def setMajorDimension(value: String): Self = StObject.set(x, "majorDimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMajorDimensionUndefined: Self = StObject.set(x, "majorDimension", js.undefined)
+    inline def setMajorDimensionUndefined: Self = StObject.set(x, "majorDimension", js.undefined)
     
-    @scala.inline
-    def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: String): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    @scala.inline
-    def setValues(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

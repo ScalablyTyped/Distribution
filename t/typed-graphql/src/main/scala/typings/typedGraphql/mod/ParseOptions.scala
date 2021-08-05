@@ -13,25 +13,19 @@ trait ParseOptions extends StObject {
 }
 object ParseOptions {
   
-  @scala.inline
-  def apply(): ParseOptions = {
+  inline def apply(): ParseOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParseOptions]
   }
   
-  @scala.inline
-  implicit class ParseOptionsMutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ParseOptions](x: Self) {
     
-    @scala.inline
-    def setNoLocation(value: Boolean): Self = StObject.set(x, "noLocation", value.asInstanceOf[js.Any])
+    inline def setNoLocation(value: Boolean): Self = StObject.set(x, "noLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoLocationUndefined: Self = StObject.set(x, "noLocation", js.undefined)
+    inline def setNoLocationUndefined: Self = StObject.set(x, "noLocation", js.undefined)
     
-    @scala.inline
-    def setNoSource(value: Boolean): Self = StObject.set(x, "noSource", value.asInstanceOf[js.Any])
+    inline def setNoSource(value: Boolean): Self = StObject.set(x, "noSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoSourceUndefined: Self = StObject.set(x, "noSource", js.undefined)
+    inline def setNoSourceUndefined: Self = StObject.set(x, "noSource", js.undefined)
   }
 }

@@ -50,55 +50,38 @@ object TSConstructSignatureDeclaration {
   @js.native
   val ^ : Type[TSConstructSignatureDeclaration] = js.native
   
-  @scala.inline
-  implicit class TSConstructSignatureDeclarationMutableBuilder[Self <: TSConstructSignatureDeclaration] (val x: Self) extends AnyVal {
+  extension [Self <: TSConstructSignatureDeclaration](x: Self) {
     
-    @scala.inline
-    def setComments(value: js.Array[CommentKind]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: js.Array[CommentKind]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentsNull: Self = StObject.set(x, "comments", null)
+    inline def setCommentsNull: Self = StObject.set(x, "comments", null)
     
-    @scala.inline
-    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+    inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
-    @scala.inline
-    def setCommentsVarargs(value: CommentKind*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: CommentKind*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
-    @scala.inline
-    def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
+    inline def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocNull: Self = StObject.set(x, "loc", null)
+    inline def setLocNull: Self = StObject.set(x, "loc", null)
     
-    @scala.inline
-    def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
+    inline def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
     
-    @scala.inline
-    def setParameters(value: js.Array[IdentifierKind | RestElementKind | ArrayPatternKind | ObjectPatternKind]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: js.Array[IdentifierKind | RestElementKind | ArrayPatternKind | ObjectPatternKind]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersVarargs(value: (IdentifierKind | RestElementKind | ArrayPatternKind | ObjectPatternKind)*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: (IdentifierKind | RestElementKind | ArrayPatternKind | ObjectPatternKind)*): Self = StObject.set(x, "parameters", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: typings.astTypes.astTypesStrings.TSConstructSignatureDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.astTypes.astTypesStrings.TSConstructSignatureDeclaration): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAnnotation(value: TSTypeAnnotationKind): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
+    inline def setTypeAnnotation(value: TSTypeAnnotationKind): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAnnotationNull: Self = StObject.set(x, "typeAnnotation", null)
+    inline def setTypeAnnotationNull: Self = StObject.set(x, "typeAnnotation", null)
     
-    @scala.inline
-    def setTypeAnnotationUndefined: Self = StObject.set(x, "typeAnnotation", js.undefined)
+    inline def setTypeAnnotationUndefined: Self = StObject.set(x, "typeAnnotation", js.undefined)
     
-    @scala.inline
-    def setTypeParameters(value: TSTypeParameterDeclarationKind): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
+    inline def setTypeParameters(value: TSTypeParameterDeclarationKind): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeParametersNull: Self = StObject.set(x, "typeParameters", null)
+    inline def setTypeParametersNull: Self = StObject.set(x, "typeParameters", null)
     
-    @scala.inline
-    def setTypeParametersUndefined: Self = StObject.set(x, "typeParameters", js.undefined)
+    inline def setTypeParametersUndefined: Self = StObject.set(x, "typeParameters", js.undefined)
   }
 }

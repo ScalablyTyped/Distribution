@@ -13,16 +13,13 @@ trait NamedRequest extends StObject {
 }
 object NamedRequest {
   
-  @scala.inline
-  def apply(name: String): NamedRequest = {
+  inline def apply(name: String): NamedRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[NamedRequest]
   }
   
-  @scala.inline
-  implicit class NamedRequestMutableBuilder[Self <: NamedRequest] (val x: Self) extends AnyVal {
+  extension [Self <: NamedRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

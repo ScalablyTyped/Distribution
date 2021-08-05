@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLPopup")
 @js.native
-class HTMLPopup protected ()
+/* private */ class HTMLPopup ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLPopup {
   
   /* CompleteClass */
   override def Hide(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.HTMLPopup_typekey")
   var MSHTMLDotHTMLPopup_typekey: typings.activexMshtml.MSHTML.HTMLPopup = js.native
   

@@ -43,28 +43,20 @@ object ruleMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def appendText(start: Double, text: String): Replacement = (^.asInstanceOf[js.Dynamic].applyDynamic("appendText")(start.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Replacement]
+    inline def appendText(start: Double, text: String): Replacement = (^.asInstanceOf[js.Dynamic].applyDynamic("appendText")(start.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Replacement]
     
-    @scala.inline
-    def applyAll(content: String, replacements: js.Array[Replacement]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("applyAll")(content.asInstanceOf[js.Any], replacements.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def applyAll(content: String, replacements: js.Array[Replacement]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("applyAll")(content.asInstanceOf[js.Any], replacements.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def applyFixes(content: String, fixes: js.Array[Fix]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("applyFixes")(content.asInstanceOf[js.Any], fixes.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def applyFixes(content: String, fixes: js.Array[Fix]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("applyFixes")(content.asInstanceOf[js.Any], fixes.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def deleteFromTo(start: Double, end: Double): Replacement = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteFromTo")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Replacement]
+    inline def deleteFromTo(start: Double, end: Double): Replacement = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteFromTo")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Replacement]
     
-    @scala.inline
-    def deleteText(start: Double, length: Double): Replacement = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteText")(start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Replacement]
+    inline def deleteText(start: Double, length: Double): Replacement = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteText")(start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Replacement]
     
-    @scala.inline
-    def replaceFromTo(start: Double, end: Double, text: String): Replacement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceFromTo")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Replacement]
+    inline def replaceFromTo(start: Double, end: Double, text: String): Replacement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceFromTo")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Replacement]
     
-    @scala.inline
-    def replaceNode(node: Node, text: String): Replacement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceNode")(node.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Replacement]
-    @scala.inline
-    def replaceNode(node: Node, text: String, sourceFile: SourceFile): Replacement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceNode")(node.asInstanceOf[js.Any], text.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any])).asInstanceOf[Replacement]
+    inline def replaceNode(node: Node, text: String): Replacement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceNode")(node.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Replacement]
+    inline def replaceNode(node: Node, text: String, sourceFile: SourceFile): Replacement = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceNode")(node.asInstanceOf[js.Any], text.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any])).asInstanceOf[Replacement]
   }
   
   @JSImport("tslint/lib/language/rule/rule", "RuleFailure")
@@ -88,17 +80,17 @@ object ruleMod {
       fix: Replacement
     ) = this()
     
-    var createFailurePosition: js.Any = js.native
+    /* private */ var createFailurePosition: js.Any = js.native
     
-    val endPosition: js.Any = js.native
+    /* private */ val endPosition: js.Any = js.native
     
     def equals(ruleFailure: RuleFailure): Boolean = js.native
     
-    val failure: js.Any = js.native
+    /* private */ val failure: js.Any = js.native
     
-    val fileName: js.Any = js.native
+    /* private */ val fileName: js.Any = js.native
     
-    val fix: js.Any = js.native
+    /* private */ val fix: js.Any = js.native
     
     def getEndPosition(): RuleFailurePosition = js.native
     
@@ -118,17 +110,17 @@ object ruleMod {
     
     def hasFix(): Boolean = js.native
     
-    val rawLines: js.Any = js.native
+    /* private */ val rawLines: js.Any = js.native
     
-    val ruleName: js.Any = js.native
+    /* private */ val ruleName: js.Any = js.native
     
-    var ruleSeverity: js.Any = js.native
+    /* private */ var ruleSeverity: js.Any = js.native
     
     def setRuleSeverity(value: RuleSeverity): Unit = js.native
     
-    val sourceFile: js.Any = js.native
+    /* private */ val sourceFile: js.Any = js.native
     
-    val startPosition: js.Any = js.native
+    /* private */ val startPosition: js.Any = js.native
     
     def toJson(): IRuleFailureJson = js.native
   }
@@ -139,8 +131,7 @@ object ruleMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def compare(a: RuleFailure, b: RuleFailure): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def compare(a: RuleFailure, b: RuleFailure): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
   @JSImport("tslint/lib/language/rule/rule", "RuleFailurePosition")
@@ -154,15 +145,14 @@ object ruleMod {
     
     def getPosition(): Double = js.native
     
-    val lineAndCharacter: js.Any = js.native
+    /* private */ val lineAndCharacter: js.Any = js.native
     
-    val position: js.Any = js.native
+    /* private */ val position: js.Any = js.native
     
     def toJson(): IRuleFailurePositionJson = js.native
   }
   
-  @scala.inline
-  def isTypedRule(rule: IRule): /* is tslint.tslint/lib/language/rule/rule.ITypedRule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypedRule")(rule.asInstanceOf[js.Any]).asInstanceOf[/* is tslint.tslint/lib/language/rule/rule.ITypedRule */ Boolean]
+  inline def isTypedRule(rule: IRule): /* is tslint.tslint/lib/language/rule/rule.ITypedRule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTypedRule")(rule.asInstanceOf[js.Any]).asInstanceOf[/* is tslint.tslint/lib/language/rule/rule.ITypedRule */ Boolean]
   
   type Fix = Replacement | js.Array[Replacement]
   
@@ -180,29 +170,22 @@ object ruleMod {
   }
   object ICodeExample {
     
-    @scala.inline
-    def apply(config: String, description: String, pass: String): ICodeExample = {
+    inline def apply(config: String, description: String, pass: String): ICodeExample = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], pass = pass.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICodeExample]
     }
     
-    @scala.inline
-    implicit class ICodeExampleMutableBuilder[Self <: ICodeExample] (val x: Self) extends AnyVal {
+    extension [Self <: ICodeExample](x: Self) {
       
-      @scala.inline
-      def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFail(value: String): Self = StObject.set(x, "fail", value.asInstanceOf[js.Any])
+      inline def setFail(value: String): Self = StObject.set(x, "fail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+      inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
       
-      @scala.inline
-      def setPass(value: String): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
+      inline def setPass(value: String): Self = StObject.set(x, "pass", value.asInstanceOf[js.Any])
     }
   }
   
@@ -214,20 +197,16 @@ object ruleMod {
   }
   object IDisabledInterval {
     
-    @scala.inline
-    def apply(endPosition: Double, startPosition: Double): IDisabledInterval = {
+    inline def apply(endPosition: Double, startPosition: Double): IDisabledInterval = {
       val __obj = js.Dynamic.literal(endPosition = endPosition.asInstanceOf[js.Any], startPosition = startPosition.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDisabledInterval]
     }
     
-    @scala.inline
-    implicit class IDisabledIntervalMutableBuilder[Self <: IDisabledInterval] (val x: Self) extends AnyVal {
+    extension [Self <: IDisabledInterval](x: Self) {
       
-      @scala.inline
-      def setEndPosition(value: Double): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
+      inline def setEndPosition(value: Double): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartPosition(value: Double): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
+      inline def setStartPosition(value: Double): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
     }
   }
   
@@ -248,8 +227,7 @@ object ruleMod {
   }
   object IOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       disabledIntervals: js.Array[IDisabledInterval],
       ruleArguments: js.Array[js.Any],
       ruleName: String,
@@ -259,26 +237,19 @@ object ruleMod {
       __obj.asInstanceOf[IOptions]
     }
     
-    @scala.inline
-    implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IOptions](x: Self) {
       
-      @scala.inline
-      def setDisabledIntervals(value: js.Array[IDisabledInterval]): Self = StObject.set(x, "disabledIntervals", value.asInstanceOf[js.Any])
+      inline def setDisabledIntervals(value: js.Array[IDisabledInterval]): Self = StObject.set(x, "disabledIntervals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledIntervalsVarargs(value: IDisabledInterval*): Self = StObject.set(x, "disabledIntervals", js.Array(value :_*))
+      inline def setDisabledIntervalsVarargs(value: IDisabledInterval*): Self = StObject.set(x, "disabledIntervals", js.Array(value :_*))
       
-      @scala.inline
-      def setRuleArguments(value: js.Array[js.Any]): Self = StObject.set(x, "ruleArguments", value.asInstanceOf[js.Any])
+      inline def setRuleArguments(value: js.Array[js.Any]): Self = StObject.set(x, "ruleArguments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuleArgumentsVarargs(value: js.Any*): Self = StObject.set(x, "ruleArguments", js.Array(value :_*))
+      inline def setRuleArgumentsVarargs(value: js.Any*): Self = StObject.set(x, "ruleArguments", js.Array(value :_*))
       
-      @scala.inline
-      def setRuleName(value: String): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
+      inline def setRuleName(value: String): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuleSeverity(value: RuleSeverity): Self = StObject.set(x, "ruleSeverity", value.asInstanceOf[js.Any])
+      inline def setRuleSeverity(value: RuleSeverity): Self = StObject.set(x, "ruleSeverity", value.asInstanceOf[js.Any])
     }
   }
   
@@ -295,8 +266,7 @@ object ruleMod {
   }
   object IRule {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       apply: SourceFile => js.Array[RuleFailure],
       applyWithWalker: IWalker => js.Array[RuleFailure],
       getOptions: () => IOptions,
@@ -306,20 +276,15 @@ object ruleMod {
       __obj.asInstanceOf[IRule]
     }
     
-    @scala.inline
-    implicit class IRuleMutableBuilder[Self <: IRule] (val x: Self) extends AnyVal {
+    extension [Self <: IRule](x: Self) {
       
-      @scala.inline
-      def setApply(value: SourceFile => js.Array[RuleFailure]): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+      inline def setApply(value: SourceFile => js.Array[RuleFailure]): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setApplyWithWalker(value: IWalker => js.Array[RuleFailure]): Self = StObject.set(x, "applyWithWalker", js.Any.fromFunction1(value))
+      inline def setApplyWithWalker(value: IWalker => js.Array[RuleFailure]): Self = StObject.set(x, "applyWithWalker", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetOptions(value: () => IOptions): Self = StObject.set(x, "getOptions", js.Any.fromFunction0(value))
+      inline def setGetOptions(value: () => IOptions): Self = StObject.set(x, "getOptions", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsEnabled(value: () => Boolean): Self = StObject.set(x, "isEnabled", js.Any.fromFunction0(value))
+      inline def setIsEnabled(value: () => Boolean): Self = StObject.set(x, "isEnabled", js.Any.fromFunction0(value))
     }
   }
   
@@ -341,8 +306,7 @@ object ruleMod {
   }
   object IRuleFailureJson {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       endPosition: IRuleFailurePositionJson,
       failure: String,
       name: String,
@@ -354,35 +318,25 @@ object ruleMod {
       __obj.asInstanceOf[IRuleFailureJson]
     }
     
-    @scala.inline
-    implicit class IRuleFailureJsonMutableBuilder[Self <: IRuleFailureJson] (val x: Self) extends AnyVal {
+    extension [Self <: IRuleFailureJson](x: Self) {
       
-      @scala.inline
-      def setEndPosition(value: IRuleFailurePositionJson): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
+      inline def setEndPosition(value: IRuleFailurePositionJson): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailure(value: String): Self = StObject.set(x, "failure", value.asInstanceOf[js.Any])
+      inline def setFailure(value: String): Self = StObject.set(x, "failure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFix(value: FixJson): Self = StObject.set(x, "fix", value.asInstanceOf[js.Any])
+      inline def setFix(value: FixJson): Self = StObject.set(x, "fix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixUndefined: Self = StObject.set(x, "fix", js.undefined)
+      inline def setFixUndefined: Self = StObject.set(x, "fix", js.undefined)
       
-      @scala.inline
-      def setFixVarargs(value: ReplacementJson*): Self = StObject.set(x, "fix", js.Array(value :_*))
+      inline def setFixVarargs(value: ReplacementJson*): Self = StObject.set(x, "fix", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuleName(value: String): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
+      inline def setRuleName(value: String): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuleSeverity(value: String): Self = StObject.set(x, "ruleSeverity", value.asInstanceOf[js.Any])
+      inline def setRuleSeverity(value: String): Self = StObject.set(x, "ruleSeverity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartPosition(value: IRuleFailurePositionJson): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
+      inline def setStartPosition(value: IRuleFailurePositionJson): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
     }
   }
   
@@ -396,23 +350,18 @@ object ruleMod {
   }
   object IRuleFailurePositionJson {
     
-    @scala.inline
-    def apply(character: Double, line: Double, position: Double): IRuleFailurePositionJson = {
+    inline def apply(character: Double, line: Double, position: Double): IRuleFailurePositionJson = {
       val __obj = js.Dynamic.literal(character = character.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
       __obj.asInstanceOf[IRuleFailurePositionJson]
     }
     
-    @scala.inline
-    implicit class IRuleFailurePositionJsonMutableBuilder[Self <: IRuleFailurePositionJson] (val x: Self) extends AnyVal {
+    extension [Self <: IRuleFailurePositionJson](x: Self) {
       
-      @scala.inline
-      def setCharacter(value: Double): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
+      inline def setCharacter(value: Double): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     }
   }
   
@@ -489,8 +438,7 @@ object ruleMod {
   }
   object IRuleMetadata {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       description: String,
       options: js.Any,
       optionsDescription: String,
@@ -503,74 +451,51 @@ object ruleMod {
       __obj.asInstanceOf[IRuleMetadata]
     }
     
-    @scala.inline
-    implicit class IRuleMetadataMutableBuilder[Self <: IRuleMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: IRuleMetadata](x: Self) {
       
-      @scala.inline
-      def setCodeExamples(value: js.Array[ICodeExample]): Self = StObject.set(x, "codeExamples", value.asInstanceOf[js.Any])
+      inline def setCodeExamples(value: js.Array[ICodeExample]): Self = StObject.set(x, "codeExamples", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeExamplesUndefined: Self = StObject.set(x, "codeExamples", js.undefined)
+      inline def setCodeExamplesUndefined: Self = StObject.set(x, "codeExamples", js.undefined)
       
-      @scala.inline
-      def setCodeExamplesVarargs(value: ICodeExample*): Self = StObject.set(x, "codeExamples", js.Array(value :_*))
+      inline def setCodeExamplesVarargs(value: ICodeExample*): Self = StObject.set(x, "codeExamples", js.Array(value :_*))
       
-      @scala.inline
-      def setDeprecationMessage(value: String): Self = StObject.set(x, "deprecationMessage", value.asInstanceOf[js.Any])
+      inline def setDeprecationMessage(value: String): Self = StObject.set(x, "deprecationMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeprecationMessageUndefined: Self = StObject.set(x, "deprecationMessage", js.undefined)
+      inline def setDeprecationMessageUndefined: Self = StObject.set(x, "deprecationMessage", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionDetails(value: String): Self = StObject.set(x, "descriptionDetails", value.asInstanceOf[js.Any])
+      inline def setDescriptionDetails(value: String): Self = StObject.set(x, "descriptionDetails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionDetailsUndefined: Self = StObject.set(x, "descriptionDetails", js.undefined)
+      inline def setDescriptionDetailsUndefined: Self = StObject.set(x, "descriptionDetails", js.undefined)
       
-      @scala.inline
-      def setHasFix(value: Boolean): Self = StObject.set(x, "hasFix", value.asInstanceOf[js.Any])
+      inline def setHasFix(value: Boolean): Self = StObject.set(x, "hasFix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasFixUndefined: Self = StObject.set(x, "hasFix", js.undefined)
+      inline def setHasFixUndefined: Self = StObject.set(x, "hasFix", js.undefined)
       
-      @scala.inline
-      def setOptionExamples(value: js.Array[`true` | js.Array[js.Any] | OptionsAny | String]): Self = StObject.set(x, "optionExamples", value.asInstanceOf[js.Any])
+      inline def setOptionExamples(value: js.Array[`true` | js.Array[js.Any] | OptionsAny | String]): Self = StObject.set(x, "optionExamples", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionExamplesUndefined: Self = StObject.set(x, "optionExamples", js.undefined)
+      inline def setOptionExamplesUndefined: Self = StObject.set(x, "optionExamples", js.undefined)
       
-      @scala.inline
-      def setOptionExamplesVarargs(value: (`true` | js.Array[js.Any] | OptionsAny | String)*): Self = StObject.set(x, "optionExamples", js.Array(value :_*))
+      inline def setOptionExamplesVarargs(value: (`true` | js.Array[js.Any] | OptionsAny | String)*): Self = StObject.set(x, "optionExamples", js.Array(value :_*))
       
-      @scala.inline
-      def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsDescription(value: String): Self = StObject.set(x, "optionsDescription", value.asInstanceOf[js.Any])
+      inline def setOptionsDescription(value: String): Self = StObject.set(x, "optionsDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRationale(value: String): Self = StObject.set(x, "rationale", value.asInstanceOf[js.Any])
+      inline def setRationale(value: String): Self = StObject.set(x, "rationale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRationaleUndefined: Self = StObject.set(x, "rationale", js.undefined)
+      inline def setRationaleUndefined: Self = StObject.set(x, "rationale", js.undefined)
       
-      @scala.inline
-      def setRequiresTypeInfo(value: Boolean): Self = StObject.set(x, "requiresTypeInfo", value.asInstanceOf[js.Any])
+      inline def setRequiresTypeInfo(value: Boolean): Self = StObject.set(x, "requiresTypeInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiresTypeInfoUndefined: Self = StObject.set(x, "requiresTypeInfo", js.undefined)
+      inline def setRequiresTypeInfoUndefined: Self = StObject.set(x, "requiresTypeInfo", js.undefined)
       
-      @scala.inline
-      def setRuleName(value: String): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
+      inline def setRuleName(value: String): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: RuleType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: RuleType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypescriptOnly(value: Boolean): Self = StObject.set(x, "typescriptOnly", value.asInstanceOf[js.Any])
+      inline def setTypescriptOnly(value: Boolean): Self = StObject.set(x, "typescriptOnly", value.asInstanceOf[js.Any])
     }
   }
   
@@ -582,8 +507,7 @@ object ruleMod {
   }
   object ITypedRule {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       apply: SourceFile => js.Array[RuleFailure],
       applyWithProgram: (SourceFile, Program) => js.Array[RuleFailure],
       applyWithWalker: IWalker => js.Array[RuleFailure],
@@ -594,11 +518,9 @@ object ruleMod {
       __obj.asInstanceOf[ITypedRule]
     }
     
-    @scala.inline
-    implicit class ITypedRuleMutableBuilder[Self <: ITypedRule] (val x: Self) extends AnyVal {
+    extension [Self <: ITypedRule](x: Self) {
       
-      @scala.inline
-      def setApplyWithProgram(value: (SourceFile, Program) => js.Array[RuleFailure]): Self = StObject.set(x, "applyWithProgram", js.Any.fromFunction2(value))
+      inline def setApplyWithProgram(value: (SourceFile, Program) => js.Array[RuleFailure]): Self = StObject.set(x, "applyWithProgram", js.Any.fromFunction2(value))
     }
   }
   
@@ -612,23 +534,18 @@ object ruleMod {
   }
   object ReplacementJson {
     
-    @scala.inline
-    def apply(innerLength: Double, innerStart: Double, innerText: String): ReplacementJson = {
+    inline def apply(innerLength: Double, innerStart: Double, innerText: String): ReplacementJson = {
       val __obj = js.Dynamic.literal(innerLength = innerLength.asInstanceOf[js.Any], innerStart = innerStart.asInstanceOf[js.Any], innerText = innerText.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReplacementJson]
     }
     
-    @scala.inline
-    implicit class ReplacementJsonMutableBuilder[Self <: ReplacementJson] (val x: Self) extends AnyVal {
+    extension [Self <: ReplacementJson](x: Self) {
       
-      @scala.inline
-      def setInnerLength(value: Double): Self = StObject.set(x, "innerLength", value.asInstanceOf[js.Any])
+      inline def setInnerLength(value: Double): Self = StObject.set(x, "innerLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerStart(value: Double): Self = StObject.set(x, "innerStart", value.asInstanceOf[js.Any])
+      inline def setInnerStart(value: Double): Self = StObject.set(x, "innerStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerText(value: String): Self = StObject.set(x, "innerText", value.asInstanceOf[js.Any])
+      inline def setInnerText(value: String): Self = StObject.set(x, "innerText", value.asInstanceOf[js.Any])
     }
   }
   
@@ -648,14 +565,11 @@ object ruleMod {
   trait RuleSeverity extends StObject
   object RuleSeverity {
     
-    @scala.inline
-    def error: typings.tslint.tslintStrings.error = "error".asInstanceOf[typings.tslint.tslintStrings.error]
+    inline def error: typings.tslint.tslintStrings.error = "error".asInstanceOf[typings.tslint.tslintStrings.error]
     
-    @scala.inline
-    def off: typings.tslint.tslintStrings.off = "off".asInstanceOf[typings.tslint.tslintStrings.off]
+    inline def off: typings.tslint.tslintStrings.off = "off".asInstanceOf[typings.tslint.tslintStrings.off]
     
-    @scala.inline
-    def warning: typings.tslint.tslintStrings.warning = "warning".asInstanceOf[typings.tslint.tslintStrings.warning]
+    inline def warning: typings.tslint.tslintStrings.warning = "warning".asInstanceOf[typings.tslint.tslintStrings.warning]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -668,19 +582,14 @@ object ruleMod {
   trait RuleType extends StObject
   object RuleType {
     
-    @scala.inline
-    def formatting: typings.tslint.tslintStrings.formatting = "formatting".asInstanceOf[typings.tslint.tslintStrings.formatting]
+    inline def formatting: typings.tslint.tslintStrings.formatting = "formatting".asInstanceOf[typings.tslint.tslintStrings.formatting]
     
-    @scala.inline
-    def functionality: typings.tslint.tslintStrings.functionality = "functionality".asInstanceOf[typings.tslint.tslintStrings.functionality]
+    inline def functionality: typings.tslint.tslintStrings.functionality = "functionality".asInstanceOf[typings.tslint.tslintStrings.functionality]
     
-    @scala.inline
-    def maintainability: typings.tslint.tslintStrings.maintainability = "maintainability".asInstanceOf[typings.tslint.tslintStrings.maintainability]
+    inline def maintainability: typings.tslint.tslintStrings.maintainability = "maintainability".asInstanceOf[typings.tslint.tslintStrings.maintainability]
     
-    @scala.inline
-    def style: typings.tslint.tslintStrings.style = "style".asInstanceOf[typings.tslint.tslintStrings.style]
+    inline def style: typings.tslint.tslintStrings.style = "style".asInstanceOf[typings.tslint.tslintStrings.style]
     
-    @scala.inline
-    def typescript: typings.tslint.tslintStrings.typescript = "typescript".asInstanceOf[typings.tslint.tslintStrings.typescript]
+    inline def typescript: typings.tslint.tslintStrings.typescript = "typescript".asInstanceOf[typings.tslint.tslintStrings.typescript]
   }
 }

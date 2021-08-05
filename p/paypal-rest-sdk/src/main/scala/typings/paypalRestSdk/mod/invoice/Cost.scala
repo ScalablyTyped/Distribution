@@ -13,25 +13,19 @@ trait Cost extends StObject {
 }
 object Cost {
   
-  @scala.inline
-  def apply(): Cost = {
+  inline def apply(): Cost = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Cost]
   }
   
-  @scala.inline
-  implicit class CostMutableBuilder[Self <: Cost] (val x: Self) extends AnyVal {
+  extension [Self <: Cost](x: Self) {
     
-    @scala.inline
-    def setAmount(value: Currency): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: Currency): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
+    inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
-    @scala.inline
-    def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+    inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
+    inline def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
   }
 }

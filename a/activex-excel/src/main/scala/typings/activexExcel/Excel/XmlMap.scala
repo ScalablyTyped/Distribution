@@ -19,7 +19,7 @@ trait XmlMap extends StObject {
   
   def Delete(): Unit = js.native
   
-  @JSName("Excel.XmlMap_typekey")
+  /* private */ @JSName("Excel.XmlMap_typekey")
   var ExcelDotXmlMap_typekey: XmlMap = js.native
   
   def Export(Url: String): XlXmlExportResult = js.native

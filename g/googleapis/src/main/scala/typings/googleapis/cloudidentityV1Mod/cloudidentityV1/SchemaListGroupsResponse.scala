@@ -22,28 +22,21 @@ trait SchemaListGroupsResponse extends StObject {
 }
 object SchemaListGroupsResponse {
   
-  @scala.inline
-  def apply(): SchemaListGroupsResponse = {
+  inline def apply(): SchemaListGroupsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListGroupsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListGroupsResponseMutableBuilder[Self <: SchemaListGroupsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListGroupsResponse](x: Self) {
     
-    @scala.inline
-    def setGroups(value: js.Array[SchemaGroup]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: js.Array[SchemaGroup]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
+    inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
-    @scala.inline
-    def setGroupsVarargs(value: SchemaGroup*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: SchemaGroup*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

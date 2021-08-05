@@ -19,43 +19,31 @@ trait PartialClassNameMapInputA extends StObject {
 }
 object PartialClassNameMapInputA {
   
-  @scala.inline
-  def apply(): PartialClassNameMapInputA = {
+  inline def apply(): PartialClassNameMapInputA = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapInputA]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapInputAMutableBuilder[Self <: PartialClassNameMapInputA] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapInputA](x: Self) {
     
-    @scala.inline
-    def setDisablePointerEvents(value: String): Self = StObject.set(x, "disablePointerEvents", value.asInstanceOf[js.Any])
+    inline def setDisablePointerEvents(value: String): Self = StObject.set(x, "disablePointerEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisablePointerEventsUndefined: Self = StObject.set(x, "disablePointerEvents", js.undefined)
+    inline def setDisablePointerEventsUndefined: Self = StObject.set(x, "disablePointerEvents", js.undefined)
     
-    @scala.inline
-    def setFilled(value: String): Self = StObject.set(x, "filled", value.asInstanceOf[js.Any])
+    inline def setFilled(value: String): Self = StObject.set(x, "filled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilledUndefined: Self = StObject.set(x, "filled", js.undefined)
+    inline def setFilledUndefined: Self = StObject.set(x, "filled", js.undefined)
     
-    @scala.inline
-    def setPositionEnd(value: String): Self = StObject.set(x, "positionEnd", value.asInstanceOf[js.Any])
+    inline def setPositionEnd(value: String): Self = StObject.set(x, "positionEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionEndUndefined: Self = StObject.set(x, "positionEnd", js.undefined)
+    inline def setPositionEndUndefined: Self = StObject.set(x, "positionEnd", js.undefined)
     
-    @scala.inline
-    def setPositionStart(value: String): Self = StObject.set(x, "positionStart", value.asInstanceOf[js.Any])
+    inline def setPositionStart(value: String): Self = StObject.set(x, "positionStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionStartUndefined: Self = StObject.set(x, "positionStart", js.undefined)
+    inline def setPositionStartUndefined: Self = StObject.set(x, "positionStart", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

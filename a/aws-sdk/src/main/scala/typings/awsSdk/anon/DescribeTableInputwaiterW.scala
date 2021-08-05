@@ -19,22 +19,17 @@ trait DescribeTableInputwaiterW extends StObject {
 }
 object DescribeTableInputwaiterW {
   
-  @scala.inline
-  def apply(TableName: TableName): DescribeTableInputwaiterW = {
+  inline def apply(TableName: TableName): DescribeTableInputwaiterW = {
     val __obj = js.Dynamic.literal(TableName = TableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeTableInputwaiterW]
   }
   
-  @scala.inline
-  implicit class DescribeTableInputwaiterWMutableBuilder[Self <: DescribeTableInputwaiterW] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTableInputwaiterW](x: Self) {
     
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
+    inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    @scala.inline
-    def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
   }
 }

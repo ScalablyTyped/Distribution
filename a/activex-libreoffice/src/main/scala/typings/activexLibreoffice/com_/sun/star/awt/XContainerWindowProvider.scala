@@ -25,8 +25,7 @@ trait XContainerWindowProvider
 }
 object XContainerWindowProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     createContainerWindow: (String, String, XWindowPeer, XInterface) => XWindow,
     queryInterface: `type` => js.Any,
@@ -36,10 +35,8 @@ object XContainerWindowProvider {
     __obj.asInstanceOf[XContainerWindowProvider]
   }
   
-  @scala.inline
-  implicit class XContainerWindowProviderMutableBuilder[Self <: XContainerWindowProvider] (val x: Self) extends AnyVal {
+  extension [Self <: XContainerWindowProvider](x: Self) {
     
-    @scala.inline
-    def setCreateContainerWindow(value: (String, String, XWindowPeer, XInterface) => XWindow): Self = StObject.set(x, "createContainerWindow", js.Any.fromFunction4(value))
+    inline def setCreateContainerWindow(value: (String, String, XWindowPeer, XInterface) => XWindow): Self = StObject.set(x, "createContainerWindow", js.Any.fromFunction4(value))
   }
 }

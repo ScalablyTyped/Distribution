@@ -14,16 +14,13 @@ trait SheetsOnChange
 }
 object SheetsOnChange {
   
-  @scala.inline
-  def apply(authMode: AuthMode, changeType: SheetsOnChangeChangeType, triggerUid: String, user: User): SheetsOnChange = {
+  inline def apply(authMode: AuthMode, changeType: SheetsOnChangeChangeType, triggerUid: String, user: User): SheetsOnChange = {
     val __obj = js.Dynamic.literal(authMode = authMode.asInstanceOf[js.Any], changeType = changeType.asInstanceOf[js.Any], triggerUid = triggerUid.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[SheetsOnChange]
   }
   
-  @scala.inline
-  implicit class SheetsOnChangeMutableBuilder[Self <: SheetsOnChange] (val x: Self) extends AnyVal {
+  extension [Self <: SheetsOnChange](x: Self) {
     
-    @scala.inline
-    def setChangeType(value: SheetsOnChangeChangeType): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
+    inline def setChangeType(value: SheetsOnChangeChangeType): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
   }
 }

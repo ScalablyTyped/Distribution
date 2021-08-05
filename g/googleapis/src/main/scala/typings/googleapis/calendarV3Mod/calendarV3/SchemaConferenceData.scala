@@ -61,58 +61,41 @@ trait SchemaConferenceData extends StObject {
 }
 object SchemaConferenceData {
   
-  @scala.inline
-  def apply(): SchemaConferenceData = {
+  inline def apply(): SchemaConferenceData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaConferenceData]
   }
   
-  @scala.inline
-  implicit class SchemaConferenceDataMutableBuilder[Self <: SchemaConferenceData] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaConferenceData](x: Self) {
     
-    @scala.inline
-    def setConferenceId(value: String): Self = StObject.set(x, "conferenceId", value.asInstanceOf[js.Any])
+    inline def setConferenceId(value: String): Self = StObject.set(x, "conferenceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConferenceIdUndefined: Self = StObject.set(x, "conferenceId", js.undefined)
+    inline def setConferenceIdUndefined: Self = StObject.set(x, "conferenceId", js.undefined)
     
-    @scala.inline
-    def setConferenceSolution(value: SchemaConferenceSolution): Self = StObject.set(x, "conferenceSolution", value.asInstanceOf[js.Any])
+    inline def setConferenceSolution(value: SchemaConferenceSolution): Self = StObject.set(x, "conferenceSolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConferenceSolutionUndefined: Self = StObject.set(x, "conferenceSolution", js.undefined)
+    inline def setConferenceSolutionUndefined: Self = StObject.set(x, "conferenceSolution", js.undefined)
     
-    @scala.inline
-    def setCreateRequest(value: SchemaCreateConferenceRequest): Self = StObject.set(x, "createRequest", value.asInstanceOf[js.Any])
+    inline def setCreateRequest(value: SchemaCreateConferenceRequest): Self = StObject.set(x, "createRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateRequestUndefined: Self = StObject.set(x, "createRequest", js.undefined)
+    inline def setCreateRequestUndefined: Self = StObject.set(x, "createRequest", js.undefined)
     
-    @scala.inline
-    def setEntryPoints(value: js.Array[SchemaEntryPoint]): Self = StObject.set(x, "entryPoints", value.asInstanceOf[js.Any])
+    inline def setEntryPoints(value: js.Array[SchemaEntryPoint]): Self = StObject.set(x, "entryPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntryPointsUndefined: Self = StObject.set(x, "entryPoints", js.undefined)
+    inline def setEntryPointsUndefined: Self = StObject.set(x, "entryPoints", js.undefined)
     
-    @scala.inline
-    def setEntryPointsVarargs(value: SchemaEntryPoint*): Self = StObject.set(x, "entryPoints", js.Array(value :_*))
+    inline def setEntryPointsVarargs(value: SchemaEntryPoint*): Self = StObject.set(x, "entryPoints", js.Array(value :_*))
     
-    @scala.inline
-    def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+    inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+    inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
     
-    @scala.inline
-    def setParameters(value: SchemaConferenceParameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: SchemaConferenceParameters): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
+    inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
   }
 }

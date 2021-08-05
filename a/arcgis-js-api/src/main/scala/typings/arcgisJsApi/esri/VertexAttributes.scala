@@ -35,8 +35,7 @@ trait VertexAttributes
 }
 object VertexAttributes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     position: Float64Array,
@@ -46,22 +45,16 @@ object VertexAttributes {
     __obj.asInstanceOf[VertexAttributes]
   }
   
-  @scala.inline
-  implicit class VertexAttributesMutableBuilder[Self <: VertexAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: VertexAttributes](x: Self) {
     
-    @scala.inline
-    def setNormal(value: Float32Array): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
+    inline def setNormal(value: Float32Array): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalUndefined: Self = StObject.set(x, "normal", js.undefined)
+    inline def setNormalUndefined: Self = StObject.set(x, "normal", js.undefined)
     
-    @scala.inline
-    def setPosition(value: Float64Array): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Float64Array): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTangent(value: Float32Array): Self = StObject.set(x, "tangent", value.asInstanceOf[js.Any])
+    inline def setTangent(value: Float32Array): Self = StObject.set(x, "tangent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTangentUndefined: Self = StObject.set(x, "tangent", js.undefined)
+    inline def setTangentUndefined: Self = StObject.set(x, "tangent", js.undefined)
   }
 }

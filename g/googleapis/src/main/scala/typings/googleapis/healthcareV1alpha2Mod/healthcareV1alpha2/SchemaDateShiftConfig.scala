@@ -20,19 +20,15 @@ trait SchemaDateShiftConfig extends StObject {
 }
 object SchemaDateShiftConfig {
   
-  @scala.inline
-  def apply(): SchemaDateShiftConfig = {
+  inline def apply(): SchemaDateShiftConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDateShiftConfig]
   }
   
-  @scala.inline
-  implicit class SchemaDateShiftConfigMutableBuilder[Self <: SchemaDateShiftConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDateShiftConfig](x: Self) {
     
-    @scala.inline
-    def setCryptoKey(value: String): Self = StObject.set(x, "cryptoKey", value.asInstanceOf[js.Any])
+    inline def setCryptoKey(value: String): Self = StObject.set(x, "cryptoKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCryptoKeyUndefined: Self = StObject.set(x, "cryptoKey", js.undefined)
+    inline def setCryptoKeyUndefined: Self = StObject.set(x, "cryptoKey", js.undefined)
   }
 }

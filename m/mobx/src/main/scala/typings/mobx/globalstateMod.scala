@@ -132,23 +132,18 @@ object globalstateMod {
     var version: Double = js.native
   }
   
-  @scala.inline
-  def getGlobal(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlobal")().asInstanceOf[js.Any]
+  inline def getGlobal(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlobal")().asInstanceOf[js.Any]
   
-  @scala.inline
-  def getGlobalState(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalState")().asInstanceOf[js.Any]
+  inline def getGlobalState(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalState")().asInstanceOf[js.Any]
   
   @JSImport("mobx/lib/core/globalstate", "globalState")
   @js.native
   def globalState: MobXGlobals = js.native
-  @scala.inline
-  def globalState_=(x: MobXGlobals): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globalState")(x.asInstanceOf[js.Any])
+  inline def globalState_=(x: MobXGlobals): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globalState")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def isolateGlobalState(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isolateGlobalState")().asInstanceOf[Unit]
+  inline def isolateGlobalState(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isolateGlobalState")().asInstanceOf[Unit]
   
-  @scala.inline
-  def resetGlobalState(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetGlobalState")().asInstanceOf[Unit]
+  inline def resetGlobalState(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetGlobalState")().asInstanceOf[Unit]
   
   type IUNCHANGED = js.Object
 }

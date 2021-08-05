@@ -18,23 +18,18 @@ trait Property
 }
 object Property {
   
-  @scala.inline
-  def apply(key: ExpressionNode, loc: SourceLocation, value: JSChildNode): Property = {
+  inline def apply(key: ExpressionNode, loc: SourceLocation, value: JSChildNode): Property = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(16)
     __obj.asInstanceOf[Property]
   }
   
-  @scala.inline
-  implicit class PropertyMutableBuilder[Self <: Property] (val x: Self) extends AnyVal {
+  extension [Self <: Property](x: Self) {
     
-    @scala.inline
-    def setKey(value: ExpressionNode): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: ExpressionNode): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `16`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `16`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: JSChildNode): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: JSChildNode): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -12,8 +12,7 @@ trait RTCRtpReceiveParameters
 }
 object RTCRtpReceiveParameters {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     codecs: js.Array[RTCRtpCodecParameters],
     encodings: js.Array[RTCRtpDecodingParameters],
     headerExtensions: js.Array[RTCRtpHeaderExtensionParameters],
@@ -23,13 +22,10 @@ object RTCRtpReceiveParameters {
     __obj.asInstanceOf[RTCRtpReceiveParameters]
   }
   
-  @scala.inline
-  implicit class RTCRtpReceiveParametersMutableBuilder[Self <: RTCRtpReceiveParameters] (val x: Self) extends AnyVal {
+  extension [Self <: RTCRtpReceiveParameters](x: Self) {
     
-    @scala.inline
-    def setEncodings(value: js.Array[RTCRtpDecodingParameters]): Self = StObject.set(x, "encodings", value.asInstanceOf[js.Any])
+    inline def setEncodings(value: js.Array[RTCRtpDecodingParameters]): Self = StObject.set(x, "encodings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingsVarargs(value: RTCRtpDecodingParameters*): Self = StObject.set(x, "encodings", js.Array(value :_*))
+    inline def setEncodingsVarargs(value: RTCRtpDecodingParameters*): Self = StObject.set(x, "encodings", js.Array(value :_*))
   }
 }

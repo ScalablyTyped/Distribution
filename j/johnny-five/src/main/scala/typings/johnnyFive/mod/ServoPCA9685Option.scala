@@ -12,19 +12,15 @@ trait ServoPCA9685Option
 }
 object ServoPCA9685Option {
   
-  @scala.inline
-  def apply(pin: Double | String): ServoPCA9685Option = {
+  inline def apply(pin: Double | String): ServoPCA9685Option = {
     val __obj = js.Dynamic.literal(pin = pin.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServoPCA9685Option]
   }
   
-  @scala.inline
-  implicit class ServoPCA9685OptionMutableBuilder[Self <: ServoPCA9685Option] (val x: Self) extends AnyVal {
+  extension [Self <: ServoPCA9685Option](x: Self) {
     
-    @scala.inline
-    def setAddress(value: Double): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: Double): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
   }
 }

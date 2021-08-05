@@ -27,7 +27,7 @@ trait Table extends StObject {
   
   def MoveToStart(): Unit = js.native
   
-  @JSName("Outlook.Table_typekey")
+  /* private */ @JSName("Outlook.Table_typekey")
   var OutlookDotTable_typekey: Table = js.native
   
   val Parent: js.Any = js.native

@@ -22,8 +22,7 @@ object TextTrackMode {
   @JSGlobal("PlayerFramework.TextTrackMode.hidden")
   @js.native
   def hidden: String = js.native
-  @scala.inline
-  def hidden_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hidden")(x.asInstanceOf[js.Any])
+  inline def hidden_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hidden")(x.asInstanceOf[js.Any])
   
   /**
     * The track is disabled.
@@ -32,8 +31,7 @@ object TextTrackMode {
   @JSGlobal("PlayerFramework.TextTrackMode.off")
   @js.native
   def off: String = js.native
-  @scala.inline
-  def off_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("off")(x.asInstanceOf[js.Any])
+  inline def off_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("off")(x.asInstanceOf[js.Any])
   
   /**
     * The track is active and the player is actively displaying cues.
@@ -42,6 +40,5 @@ object TextTrackMode {
   @JSGlobal("PlayerFramework.TextTrackMode.showing")
   @js.native
   def showing: String = js.native
-  @scala.inline
-  def showing_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showing")(x.asInstanceOf[js.Any])
+  inline def showing_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showing")(x.asInstanceOf[js.Any])
 }

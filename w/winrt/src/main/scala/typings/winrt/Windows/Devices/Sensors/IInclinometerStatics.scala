@@ -10,16 +10,13 @@ trait IInclinometerStatics extends StObject {
 }
 object IInclinometerStatics {
   
-  @scala.inline
-  def apply(getDefault: () => Inclinometer): IInclinometerStatics = {
+  inline def apply(getDefault: () => Inclinometer): IInclinometerStatics = {
     val __obj = js.Dynamic.literal(getDefault = js.Any.fromFunction0(getDefault))
     __obj.asInstanceOf[IInclinometerStatics]
   }
   
-  @scala.inline
-  implicit class IInclinometerStaticsMutableBuilder[Self <: IInclinometerStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IInclinometerStatics](x: Self) {
     
-    @scala.inline
-    def setGetDefault(value: () => Inclinometer): Self = StObject.set(x, "getDefault", js.Any.fromFunction0(value))
+    inline def setGetDefault(value: () => Inclinometer): Self = StObject.set(x, "getDefault", js.Any.fromFunction0(value))
   }
 }

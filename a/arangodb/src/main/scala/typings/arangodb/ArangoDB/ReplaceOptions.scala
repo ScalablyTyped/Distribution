@@ -14,25 +14,19 @@ trait ReplaceOptions
 }
 object ReplaceOptions {
   
-  @scala.inline
-  def apply(): ReplaceOptions = {
+  inline def apply(): ReplaceOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReplaceOptions]
   }
   
-  @scala.inline
-  implicit class ReplaceOptionsMutableBuilder[Self <: ReplaceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReplaceOptions](x: Self) {
     
-    @scala.inline
-    def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+    inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
+    inline def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
     
-    @scala.inline
-    def setReturnOld(value: Boolean): Self = StObject.set(x, "returnOld", value.asInstanceOf[js.Any])
+    inline def setReturnOld(value: Boolean): Self = StObject.set(x, "returnOld", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnOldUndefined: Self = StObject.set(x, "returnOld", js.undefined)
+    inline def setReturnOldUndefined: Self = StObject.set(x, "returnOld", js.undefined)
   }
 }

@@ -24,34 +24,25 @@ trait ReferenceImage extends StObject {
 }
 object ReferenceImage {
   
-  @scala.inline
-  def apply(): ReferenceImage = {
+  inline def apply(): ReferenceImage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReferenceImage]
   }
   
-  @scala.inline
-  implicit class ReferenceImageMutableBuilder[Self <: ReferenceImage] (val x: Self) extends AnyVal {
+  extension [Self <: ReferenceImage](x: Self) {
     
-    @scala.inline
-    def setBoundingPolys(value: js.Array[BoundingPoly]): Self = StObject.set(x, "boundingPolys", value.asInstanceOf[js.Any])
+    inline def setBoundingPolys(value: js.Array[BoundingPoly]): Self = StObject.set(x, "boundingPolys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundingPolysUndefined: Self = StObject.set(x, "boundingPolys", js.undefined)
+    inline def setBoundingPolysUndefined: Self = StObject.set(x, "boundingPolys", js.undefined)
     
-    @scala.inline
-    def setBoundingPolysVarargs(value: BoundingPoly*): Self = StObject.set(x, "boundingPolys", js.Array(value :_*))
+    inline def setBoundingPolysVarargs(value: BoundingPoly*): Self = StObject.set(x, "boundingPolys", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

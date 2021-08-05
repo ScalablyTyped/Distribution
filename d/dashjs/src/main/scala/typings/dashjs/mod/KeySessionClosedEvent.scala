@@ -19,29 +19,22 @@ trait KeySessionClosedEvent
 }
 object KeySessionClosedEvent {
   
-  @scala.inline
-  def apply(`type`: public_keySessionClosed | public_keySessionRemoved): KeySessionClosedEvent = {
+  inline def apply(`type`: public_keySessionClosed | public_keySessionRemoved): KeySessionClosedEvent = {
     val __obj = js.Dynamic.literal(data = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeySessionClosedEvent]
   }
   
-  @scala.inline
-  implicit class KeySessionClosedEventMutableBuilder[Self <: KeySessionClosedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: KeySessionClosedEvent](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataNull: Self = StObject.set(x, "data", null)
+    inline def setDataNull: Self = StObject.set(x, "data", null)
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setType(value: public_keySessionClosed | public_keySessionRemoved): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: public_keySessionClosed | public_keySessionRemoved): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -10,16 +10,13 @@ trait KnockoutSubscription extends StObject {
 }
 object KnockoutSubscription {
   
-  @scala.inline
-  def apply(dispose: () => Unit): KnockoutSubscription = {
+  inline def apply(dispose: () => Unit): KnockoutSubscription = {
     val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose))
     __obj.asInstanceOf[KnockoutSubscription]
   }
   
-  @scala.inline
-  implicit class KnockoutSubscriptionMutableBuilder[Self <: KnockoutSubscription] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutSubscription](x: Self) {
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
   }
 }

@@ -22,8 +22,7 @@ trait Edge extends StObject {
 }
 object Edge {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     edge: Boolean,
     mozilla: Boolean,
     msie: Boolean,
@@ -36,28 +35,20 @@ object Edge {
     __obj.asInstanceOf[Edge]
   }
   
-  @scala.inline
-  implicit class EdgeMutableBuilder[Self <: Edge] (val x: Self) extends AnyVal {
+  extension [Self <: Edge](x: Self) {
     
-    @scala.inline
-    def setEdge(value: Boolean): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
+    inline def setEdge(value: Boolean): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMozilla(value: Boolean): Self = StObject.set(x, "mozilla", value.asInstanceOf[js.Any])
+    inline def setMozilla(value: Boolean): Self = StObject.set(x, "mozilla", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMsie(value: Boolean): Self = StObject.set(x, "msie", value.asInstanceOf[js.Any])
+    inline def setMsie(value: Boolean): Self = StObject.set(x, "msie", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpera(value: Boolean): Self = StObject.set(x, "opera", value.asInstanceOf[js.Any])
+    inline def setOpera(value: Boolean): Self = StObject.set(x, "opera", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSafari(value: Boolean): Self = StObject.set(x, "safari", value.asInstanceOf[js.Any])
+    inline def setSafari(value: Boolean): Self = StObject.set(x, "safari", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebkit(value: Boolean): Self = StObject.set(x, "webkit", value.asInstanceOf[js.Any])
+    inline def setWebkit(value: Boolean): Self = StObject.set(x, "webkit", value.asInstanceOf[js.Any])
   }
 }

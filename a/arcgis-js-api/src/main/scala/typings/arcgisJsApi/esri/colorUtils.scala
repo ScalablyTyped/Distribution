@@ -22,8 +22,7 @@ trait colorUtils extends StObject {
 }
 object colorUtils {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getBackgroundColor: MapView => js.Promise[Color_],
     getBackgroundColorTheme: MapView => js.Promise[String]
   ): colorUtils = {
@@ -31,13 +30,10 @@ object colorUtils {
     __obj.asInstanceOf[colorUtils]
   }
   
-  @scala.inline
-  implicit class colorUtilsMutableBuilder[Self <: colorUtils] (val x: Self) extends AnyVal {
+  extension [Self <: colorUtils](x: Self) {
     
-    @scala.inline
-    def setGetBackgroundColor(value: MapView => js.Promise[Color_]): Self = StObject.set(x, "getBackgroundColor", js.Any.fromFunction1(value))
+    inline def setGetBackgroundColor(value: MapView => js.Promise[Color_]): Self = StObject.set(x, "getBackgroundColor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetBackgroundColorTheme(value: MapView => js.Promise[String]): Self = StObject.set(x, "getBackgroundColorTheme", js.Any.fromFunction1(value))
+    inline def setGetBackgroundColorTheme(value: MapView => js.Promise[String]): Self = StObject.set(x, "getBackgroundColorTheme", js.Any.fromFunction1(value))
   }
 }

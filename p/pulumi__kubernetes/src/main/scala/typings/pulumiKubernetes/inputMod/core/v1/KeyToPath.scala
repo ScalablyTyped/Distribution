@@ -27,25 +27,19 @@ trait KeyToPath extends StObject {
 }
 object KeyToPath {
   
-  @scala.inline
-  def apply(key: Input[String], path: Input[String]): KeyToPath = {
+  inline def apply(key: Input[String], path: Input[String]): KeyToPath = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyToPath]
   }
   
-  @scala.inline
-  implicit class KeyToPathMutableBuilder[Self <: KeyToPath] (val x: Self) extends AnyVal {
+  extension [Self <: KeyToPath](x: Self) {
     
-    @scala.inline
-    def setKey(value: Input[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Input[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: Input[Double]): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: Input[Double]): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: Input[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

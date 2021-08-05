@@ -27,26 +27,20 @@ object typesGetObjectTaggingOutputMod {
   }
   object GetObjectTaggingOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, TagSet: js.Array[UnmarshalledTag]): GetObjectTaggingOutput = {
+    inline def apply($metadata: ResponseMetadata, TagSet: js.Array[UnmarshalledTag]): GetObjectTaggingOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], TagSet = TagSet.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetObjectTaggingOutput]
     }
     
-    @scala.inline
-    implicit class GetObjectTaggingOutputMutableBuilder[Self <: GetObjectTaggingOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetObjectTaggingOutput](x: Self) {
       
-      @scala.inline
-      def setTagSet(value: js.Array[UnmarshalledTag]): Self = StObject.set(x, "TagSet", value.asInstanceOf[js.Any])
+      inline def setTagSet(value: js.Array[UnmarshalledTag]): Self = StObject.set(x, "TagSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagSetVarargs(value: UnmarshalledTag*): Self = StObject.set(x, "TagSet", js.Array(value :_*))
+      inline def setTagSetVarargs(value: UnmarshalledTag*): Self = StObject.set(x, "TagSet", js.Array(value :_*))
       
-      @scala.inline
-      def setVersionId(value: String): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
+      inline def setVersionId(value: String): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
+      inline def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
     }
   }
 }

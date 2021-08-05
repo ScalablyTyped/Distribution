@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(url: String, arg: js.Array[String], opt: StringDictionary[String]): Youtubedl = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], arg.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Youtubedl]
+  inline def apply(url: String, arg: js.Array[String], opt: StringDictionary[String]): Youtubedl = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], arg.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Youtubedl]
   
   @JSImport("youtube-dl", JSImport.Namespace)
   @js.native
@@ -22,57 +21,46 @@ object mod {
   /**
     * Call `youtube-dl` with whatever arguments you like.
     */
-  @scala.inline
-  def exec(
+  inline def exec(
     url: String,
     args: js.Array[String],
     options: Options,
     callback: js.Function2[/* err */ js.Any, /* output */ js.Array[String], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exec")(url.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def getExtractors(callback: js.Function2[/* err */ js.Any, /* output */ js.Array[String], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtractors")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def getExtractors(
+  inline def getExtractors(callback: js.Function2[/* err */ js.Any, /* output */ js.Array[String], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtractors")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getExtractors(
     descriptions: Boolean,
     callback: js.Function2[/* err */ js.Any, /* output */ js.Array[String], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getExtractors")(descriptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def getExtractors(
+  inline def getExtractors(
     descriptions: Boolean,
     options: Options,
     callback: js.Function2[/* err */ js.Any, /* output */ js.Array[String], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getExtractors")(descriptions.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def getInfo(
+  inline def getInfo(
     url: String,
     args: js.Array[String],
     callback: js.Function2[/* err */ js.Any, /* output */ Info, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(url.asInstanceOf[js.Any], args.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def getInfo(
+  inline def getInfo(
     url: String,
     args: js.Array[String],
     options: Options,
     callback: js.Function2[/* err */ js.Any, /* output */ Info, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(url.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def getInfo(url: String, callback: js.Function2[/* err */ js.Any, /* output */ Info, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getInfo(url: String, callback: js.Function2[/* err */ js.Any, /* output */ Info, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getInfo")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def getSubs(url: String, callback: js.Function2[/* err */ js.Any, /* output */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getSubs")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def getSubs(
+  inline def getSubs(url: String, callback: js.Function2[/* err */ js.Any, /* output */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getSubs")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getSubs(
     url: String,
     options: Options,
     callback: js.Function2[/* err */ js.Any, /* output */ js.Array[String], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getSubs")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def getThumbs(url: String, callback: js.Function2[/* err */ js.Any, /* output */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getThumbs")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def getThumbs(
+  inline def getThumbs(url: String, callback: js.Function2[/* err */ js.Any, /* output */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getThumbs")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def getThumbs(
     url: String,
     options: Options,
     callback: js.Function2[/* err */ js.Any, /* output */ js.Array[String], Unit]
@@ -94,8 +82,7 @@ object mod {
   }
   object Info {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _duration_hms: String,
       _duration_raw: Double,
       _filename: String,
@@ -107,26 +94,19 @@ object mod {
       __obj.asInstanceOf[Info]
     }
     
-    @scala.inline
-    implicit class InfoMutableBuilder[Self <: Info] (val x: Self) extends AnyVal {
+    extension [Self <: Info](x: Self) {
       
-      @scala.inline
-      def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_duration_hms(value: String): Self = StObject.set(x, "_duration_hms", value.asInstanceOf[js.Any])
+      inline def set_duration_hms(value: String): Self = StObject.set(x, "_duration_hms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_duration_raw(value: Double): Self = StObject.set(x, "_duration_raw", value.asInstanceOf[js.Any])
+      inline def set_duration_raw(value: Double): Self = StObject.set(x, "_duration_raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_filename(value: String): Self = StObject.set(x, "_filename", value.asInstanceOf[js.Any])
+      inline def set_filename(value: String): Self = StObject.set(x, "_filename", value.asInstanceOf[js.Any])
     }
   }
   
@@ -142,38 +122,28 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+      inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
+      inline def setAllUndefined: Self = StObject.set(x, "all", js.undefined)
       
-      @scala.inline
-      def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
+      inline def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
+      inline def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+      inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+      inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     }
   }
   

@@ -14,19 +14,15 @@ trait MUISortOptions extends StObject {
 }
 object MUISortOptions {
   
-  @scala.inline
-  def apply(direction: asc | desc, name: String): MUISortOptions = {
+  inline def apply(direction: asc | desc, name: String): MUISortOptions = {
     val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[MUISortOptions]
   }
   
-  @scala.inline
-  implicit class MUISortOptionsMutableBuilder[Self <: MUISortOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MUISortOptions](x: Self) {
     
-    @scala.inline
-    def setDirection(value: asc | desc): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: asc | desc): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

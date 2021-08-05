@@ -17,17 +17,14 @@ object importer {
   }
   object IGridImporterApi {
     
-    @scala.inline
-    def apply(importFile: File => Unit): IGridImporterApi = {
+    inline def apply(importFile: File => Unit): IGridImporterApi = {
       val __obj = js.Dynamic.literal(importFile = js.Any.fromFunction1(importFile))
       __obj.asInstanceOf[IGridImporterApi]
     }
     
-    @scala.inline
-    implicit class IGridImporterApiMutableBuilder[Self <: IGridImporterApi] (val x: Self) extends AnyVal {
+    extension [Self <: IGridImporterApi](x: Self) {
       
-      @scala.inline
-      def setImportFile(value: File => Unit): Self = StObject.set(x, "importFile", js.Any.fromFunction1(value))
+      inline def setImportFile(value: File => Unit): Self = StObject.set(x, "importFile", js.Any.fromFunction1(value))
     }
   }
   
@@ -147,66 +144,48 @@ object importer {
   }
   object IGridOptions {
     
-    @scala.inline
-    def apply[TEntity](): typings.uiGrid.mod.importer.IGridOptions[TEntity] = {
+    inline def apply[TEntity](): typings.uiGrid.mod.importer.IGridOptions[TEntity] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.uiGrid.mod.importer.IGridOptions[TEntity]]
     }
     
-    @scala.inline
-    implicit class IGridOptionsMutableBuilder[Self <: typings.uiGrid.mod.importer.IGridOptions[?], TEntity] (val x: Self & typings.uiGrid.mod.importer.IGridOptions[TEntity]) extends AnyVal {
+    extension [Self <: typings.uiGrid.mod.importer.IGridOptions[?], TEntity](x: Self & typings.uiGrid.mod.importer.IGridOptions[TEntity]) {
       
-      @scala.inline
-      def setEnableImporter(value: Boolean): Self = StObject.set(x, "enableImporter", value.asInstanceOf[js.Any])
+      inline def setEnableImporter(value: Boolean): Self = StObject.set(x, "enableImporter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableImporterUndefined: Self = StObject.set(x, "enableImporter", js.undefined)
+      inline def setEnableImporterUndefined: Self = StObject.set(x, "enableImporter", js.undefined)
       
-      @scala.inline
-      def setImporterDataAddCallback(value: (/* grid */ IGridInstanceOf[TEntity], /* newObjects */ js.Array[TEntity]) => Unit): Self = StObject.set(x, "importerDataAddCallback", js.Any.fromFunction2(value))
+      inline def setImporterDataAddCallback(value: (/* grid */ IGridInstanceOf[TEntity], /* newObjects */ js.Array[TEntity]) => Unit): Self = StObject.set(x, "importerDataAddCallback", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setImporterDataAddCallbackUndefined: Self = StObject.set(x, "importerDataAddCallback", js.undefined)
+      inline def setImporterDataAddCallbackUndefined: Self = StObject.set(x, "importerDataAddCallback", js.undefined)
       
-      @scala.inline
-      def setImporterErrorCallback(
+      inline def setImporterErrorCallback(
         value: (/* grid */ IGridInstanceOf[TEntity], /* errorKey */ String, /* consoleMessage */ String, /* context */ js.Any) => Unit
       ): Self = StObject.set(x, "importerErrorCallback", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setImporterErrorCallbackUndefined: Self = StObject.set(x, "importerErrorCallback", js.undefined)
+      inline def setImporterErrorCallbackUndefined: Self = StObject.set(x, "importerErrorCallback", js.undefined)
       
-      @scala.inline
-      def setImporterHeaderFilter(value: /* displayName */ String => String): Self = StObject.set(x, "importerHeaderFilter", js.Any.fromFunction1(value))
+      inline def setImporterHeaderFilter(value: /* displayName */ String => String): Self = StObject.set(x, "importerHeaderFilter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setImporterHeaderFilterUndefined: Self = StObject.set(x, "importerHeaderFilter", js.undefined)
+      inline def setImporterHeaderFilterUndefined: Self = StObject.set(x, "importerHeaderFilter", js.undefined)
       
-      @scala.inline
-      def setImporterNewObject(value: js.Function): Self = StObject.set(x, "importerNewObject", value.asInstanceOf[js.Any])
+      inline def setImporterNewObject(value: js.Function): Self = StObject.set(x, "importerNewObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImporterNewObjectUndefined: Self = StObject.set(x, "importerNewObject", js.undefined)
+      inline def setImporterNewObjectUndefined: Self = StObject.set(x, "importerNewObject", js.undefined)
       
-      @scala.inline
-      def setImporterObjectCallback(value: (/* grid */ IGridInstanceOf[TEntity], /* newObject */ TEntity) => TEntity): Self = StObject.set(x, "importerObjectCallback", js.Any.fromFunction2(value))
+      inline def setImporterObjectCallback(value: (/* grid */ IGridInstanceOf[TEntity], /* newObject */ TEntity) => TEntity): Self = StObject.set(x, "importerObjectCallback", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setImporterObjectCallbackUndefined: Self = StObject.set(x, "importerObjectCallback", js.undefined)
+      inline def setImporterObjectCallbackUndefined: Self = StObject.set(x, "importerObjectCallback", js.undefined)
       
-      @scala.inline
-      def setImporterProcessHeaders(
+      inline def setImporterProcessHeaders(
         value: (/* grid */ IGridInstanceOf[TEntity], /* headerArray */ js.Array[String]) => js.Array[String]
       ): Self = StObject.set(x, "importerProcessHeaders", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setImporterProcessHeadersUndefined: Self = StObject.set(x, "importerProcessHeaders", js.undefined)
+      inline def setImporterProcessHeadersUndefined: Self = StObject.set(x, "importerProcessHeaders", js.undefined)
       
-      @scala.inline
-      def setImporterShowMenu(value: Boolean): Self = StObject.set(x, "importerShowMenu", value.asInstanceOf[js.Any])
+      inline def setImporterShowMenu(value: Boolean): Self = StObject.set(x, "importerShowMenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImporterShowMenuUndefined: Self = StObject.set(x, "importerShowMenu", js.undefined)
+      inline def setImporterShowMenuUndefined: Self = StObject.set(x, "importerShowMenu", js.undefined)
     }
   }
   
@@ -216,17 +195,14 @@ object importer {
   }
   object IUiGridImporterConstants {
     
-    @scala.inline
-    def apply(featureName: String): IUiGridImporterConstants = {
+    inline def apply(featureName: String): IUiGridImporterConstants = {
       val __obj = js.Dynamic.literal(featureName = featureName.asInstanceOf[js.Any])
       __obj.asInstanceOf[IUiGridImporterConstants]
     }
     
-    @scala.inline
-    implicit class IUiGridImporterConstantsMutableBuilder[Self <: IUiGridImporterConstants] (val x: Self) extends AnyVal {
+    extension [Self <: IUiGridImporterConstants](x: Self) {
       
-      @scala.inline
-      def setFeatureName(value: String): Self = StObject.set(x, "featureName", value.asInstanceOf[js.Any])
+      inline def setFeatureName(value: String): Self = StObject.set(x, "featureName", value.asInstanceOf[js.Any])
     }
   }
 }

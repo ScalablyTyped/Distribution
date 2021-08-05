@@ -13,25 +13,19 @@ trait UserTeamwork
 }
 object UserTeamwork {
   
-  @scala.inline
-  def apply(): UserTeamwork = {
+  inline def apply(): UserTeamwork = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserTeamwork]
   }
   
-  @scala.inline
-  implicit class UserTeamworkMutableBuilder[Self <: UserTeamwork] (val x: Self) extends AnyVal {
+  extension [Self <: UserTeamwork](x: Self) {
     
-    @scala.inline
-    def setInstalledApps(value: NullableOption[js.Array[UserScopeTeamsAppInstallation]]): Self = StObject.set(x, "installedApps", value.asInstanceOf[js.Any])
+    inline def setInstalledApps(value: NullableOption[js.Array[UserScopeTeamsAppInstallation]]): Self = StObject.set(x, "installedApps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstalledAppsNull: Self = StObject.set(x, "installedApps", null)
+    inline def setInstalledAppsNull: Self = StObject.set(x, "installedApps", null)
     
-    @scala.inline
-    def setInstalledAppsUndefined: Self = StObject.set(x, "installedApps", js.undefined)
+    inline def setInstalledAppsUndefined: Self = StObject.set(x, "installedApps", js.undefined)
     
-    @scala.inline
-    def setInstalledAppsVarargs(value: UserScopeTeamsAppInstallation*): Self = StObject.set(x, "installedApps", js.Array(value :_*))
+    inline def setInstalledAppsVarargs(value: UserScopeTeamsAppInstallation*): Self = StObject.set(x, "installedApps", js.Array(value :_*))
   }
 }

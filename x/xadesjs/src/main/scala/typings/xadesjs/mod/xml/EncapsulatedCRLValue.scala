@@ -13,6 +13,5 @@ class EncapsulatedCRLValue ()
   extends typings.xadesjs.xmlMod.EncapsulatedCRLValue
 object EncapsulatedCRLValue {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.EncapsulatedCRLValue] = ^.asInstanceOf[js.Dynamic].selectDynamic("EncapsulatedCRLValue").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.EncapsulatedCRLValue]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.EncapsulatedCRLValue] = ^.asInstanceOf[js.Dynamic].selectDynamic("EncapsulatedCRLValue").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.EncapsulatedCRLValue]]
 }

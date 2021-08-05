@@ -13,10 +13,8 @@ object frequentlyMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def add(emoji: PickEmojiDataid): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(emoji.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def add(emoji: PickEmojiDataid): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(emoji.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def get(perLine: Double): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(perLine.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    inline def get(perLine: Double): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(perLine.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   }
 }

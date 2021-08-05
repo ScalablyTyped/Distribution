@@ -13,19 +13,15 @@ trait RemoteLocation extends StObject {
 }
 object RemoteLocation {
   
-  @scala.inline
-  def apply(host: String, port: integer): RemoteLocation = {
+  inline def apply(host: String, port: integer): RemoteLocation = {
     val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoteLocation]
   }
   
-  @scala.inline
-  implicit class RemoteLocationMutableBuilder[Self <: RemoteLocation] (val x: Self) extends AnyVal {
+  extension [Self <: RemoteLocation](x: Self) {
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPort(value: integer): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: integer): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
   }
 }

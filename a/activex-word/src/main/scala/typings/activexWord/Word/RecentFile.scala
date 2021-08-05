@@ -24,13 +24,12 @@ trait RecentFile extends StObject {
   
   var ReadOnly: Boolean
   
-  @JSName("Word.RecentFile_typekey")
+  /* private */ @JSName("Word.RecentFile_typekey")
   var WordDotRecentFile_typekey: RecentFile
 }
 object RecentFile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: Double,
     Delete: () => Unit,
@@ -47,37 +46,26 @@ object RecentFile {
     __obj.asInstanceOf[RecentFile]
   }
   
-  @scala.inline
-  implicit class RecentFileMutableBuilder[Self <: RecentFile] (val x: Self) extends AnyVal {
+  extension [Self <: RecentFile](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpen(value: () => Document): Self = StObject.set(x, "Open", js.Any.fromFunction0(value))
+    inline def setOpen(value: () => Document): Self = StObject.set(x, "Open", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "ReadOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "ReadOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotRecentFile_typekey(value: RecentFile): Self = StObject.set(x, "Word.RecentFile_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotRecentFile_typekey(value: RecentFile): Self = StObject.set(x, "Word.RecentFile_typekey", value.asInstanceOf[js.Any])
   }
 }

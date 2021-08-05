@@ -18,25 +18,19 @@ trait RootDirectory extends StObject {
 }
 object RootDirectory {
   
-  @scala.inline
-  def apply(): RootDirectory = {
+  inline def apply(): RootDirectory = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RootDirectory]
   }
   
-  @scala.inline
-  implicit class RootDirectoryMutableBuilder[Self <: RootDirectory] (val x: Self) extends AnyVal {
+  extension [Self <: RootDirectory](x: Self) {
     
-    @scala.inline
-    def setCreationInfo(value: CreationInfo): Self = StObject.set(x, "CreationInfo", value.asInstanceOf[js.Any])
+    inline def setCreationInfo(value: CreationInfo): Self = StObject.set(x, "CreationInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationInfoUndefined: Self = StObject.set(x, "CreationInfo", js.undefined)
+    inline def setCreationInfoUndefined: Self = StObject.set(x, "CreationInfo", js.undefined)
     
-    @scala.inline
-    def setPath(value: Path): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: Path): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "Path", js.undefined)
   }
 }

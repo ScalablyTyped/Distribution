@@ -19,46 +19,33 @@ trait Items extends StObject {
 }
 object Items {
   
-  @scala.inline
-  def apply(): Items = {
+  inline def apply(): Items = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Items]
   }
   
-  @scala.inline
-  implicit class ItemsMutableBuilder[Self <: Items] (val x: Self) extends AnyVal {
+  extension [Self <: Items](x: Self) {
     
-    @scala.inline
-    def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setSort(value: String): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: String): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    @scala.inline
-    def setTpl(value: js.Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
+    inline def setTpl(value: js.Any): Self = StObject.set(x, "tpl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
+    inline def setTplUndefined: Self = StObject.set(x, "tpl", js.undefined)
     
-    @scala.inline
-    def setViewport(value: String): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
+    inline def setViewport(value: String): Self = StObject.set(x, "viewport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewportUndefined: Self = StObject.set(x, "viewport", js.undefined)
+    inline def setViewportUndefined: Self = StObject.set(x, "viewport", js.undefined)
   }
 }

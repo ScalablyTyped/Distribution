@@ -34,20 +34,16 @@ object actionBarMod {
   }
   object ActionBarProps {
     
-    @scala.inline
-    def apply(actionItems: js.Array[ActionItem]): ActionBarProps = {
+    inline def apply(actionItems: js.Array[ActionItem]): ActionBarProps = {
       val __obj = js.Dynamic.literal(actionItems = actionItems.asInstanceOf[js.Any])
       __obj.asInstanceOf[ActionBarProps]
     }
     
-    @scala.inline
-    implicit class ActionBarPropsMutableBuilder[Self <: ActionBarProps] (val x: Self) extends AnyVal {
+    extension [Self <: ActionBarProps](x: Self) {
       
-      @scala.inline
-      def setActionItems(value: js.Array[ActionItem]): Self = StObject.set(x, "actionItems", value.asInstanceOf[js.Any])
+      inline def setActionItems(value: js.Array[ActionItem]): Self = StObject.set(x, "actionItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionItemsVarargs(value: ActionItem*): Self = StObject.set(x, "actionItems", js.Array(value :_*))
+      inline def setActionItemsVarargs(value: ActionItem*): Self = StObject.set(x, "actionItems", js.Array(value :_*))
     }
   }
   
@@ -61,26 +57,20 @@ object actionBarMod {
   }
   object ActionItem {
     
-    @scala.inline
-    def apply(onClick: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit, title: String | Element): ActionItem = {
+    inline def apply(onClick: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit, title: String | Element): ActionItem = {
       val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction1(onClick), title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[ActionItem]
     }
     
-    @scala.inline
-    implicit class ActionItemMutableBuilder[Self <: ActionItem] (val x: Self) extends AnyVal {
+    extension [Self <: ActionItem](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTitle(value: String | Element): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String | Element): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -31,38 +31,28 @@ object styledNestableListMod {
   }
   object StyledNestableListItem {
     
-    @scala.inline
-    def apply(id: String | Double, options: js.Array[TableListItemColumn]): StyledNestableListItem = {
+    inline def apply(id: String | Double, options: js.Array[TableListItemColumn]): StyledNestableListItem = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[StyledNestableListItem]
     }
     
-    @scala.inline
-    implicit class StyledNestableListItemMutableBuilder[Self <: StyledNestableListItem] (val x: Self) extends AnyVal {
+    extension [Self <: StyledNestableListItem](x: Self) {
       
-      @scala.inline
-      def setAddItemLabel(value: String): Self = StObject.set(x, "addItemLabel", value.asInstanceOf[js.Any])
+      inline def setAddItemLabel(value: String): Self = StObject.set(x, "addItemLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddItemLabelUndefined: Self = StObject.set(x, "addItemLabel", js.undefined)
+      inline def setAddItemLabelUndefined: Self = StObject.set(x, "addItemLabel", js.undefined)
       
-      @scala.inline
-      def setChildren(value: js.Array[StyledNestableListItem]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[StyledNestableListItem]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: StyledNestableListItem*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: StyledNestableListItem*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCollapsed(value: Boolean): Self = StObject.set(x, "isCollapsed", value.asInstanceOf[js.Any])
+      inline def setIsCollapsed(value: Boolean): Self = StObject.set(x, "isCollapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCollapsedUndefined: Self = StObject.set(x, "isCollapsed", js.undefined)
+      inline def setIsCollapsedUndefined: Self = StObject.set(x, "isCollapsed", js.undefined)
     }
   }
   
@@ -88,68 +78,48 @@ object styledNestableListMod {
   }
   object StyledNestableListProps {
     
-    @scala.inline
-    def apply(items: js.Array[StyledNestableListItem]): StyledNestableListProps = {
+    inline def apply(items: js.Array[StyledNestableListItem]): StyledNestableListProps = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
       __obj.asInstanceOf[StyledNestableListProps]
     }
     
-    @scala.inline
-    implicit class StyledNestableListPropsMutableBuilder[Self <: StyledNestableListProps] (val x: Self) extends AnyVal {
+    extension [Self <: StyledNestableListProps](x: Self) {
       
-      @scala.inline
-      def setAddItemLabel(value: String): Self = StObject.set(x, "addItemLabel", value.asInstanceOf[js.Any])
+      inline def setAddItemLabel(value: String): Self = StObject.set(x, "addItemLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddItemLabelUndefined: Self = StObject.set(x, "addItemLabel", js.undefined)
+      inline def setAddItemLabelUndefined: Self = StObject.set(x, "addItemLabel", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setItems(value: js.Array[StyledNestableListItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[StyledNestableListItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: StyledNestableListItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: StyledNestableListItem*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
+      inline def setMaxDepth(value: Double): Self = StObject.set(x, "maxDepth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxDepthUndefined: Self = StObject.set(x, "maxDepth", js.undefined)
+      inline def setMaxDepthUndefined: Self = StObject.set(x, "maxDepth", js.undefined)
       
-      @scala.inline
-      def setOnAddItem(value: /* item */ StyledNestableListItem => Unit): Self = StObject.set(x, "onAddItem", js.Any.fromFunction1(value))
+      inline def setOnAddItem(value: /* item */ StyledNestableListItem => Unit): Self = StObject.set(x, "onAddItem", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnAddItemUndefined: Self = StObject.set(x, "onAddItem", js.undefined)
+      inline def setOnAddItemUndefined: Self = StObject.set(x, "onAddItem", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* data */ ItemsArray => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* data */ ItemsArray => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setPreventChangeDepth(value: Boolean): Self = StObject.set(x, "preventChangeDepth", value.asInstanceOf[js.Any])
+      inline def setPreventChangeDepth(value: Boolean): Self = StObject.set(x, "preventChangeDepth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventChangeDepthUndefined: Self = StObject.set(x, "preventChangeDepth", js.undefined)
+      inline def setPreventChangeDepthUndefined: Self = StObject.set(x, "preventChangeDepth", js.undefined)
       
-      @scala.inline
-      def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+      inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+      inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     }
   }
 }

@@ -15,22 +15,22 @@ class ISeparatedSyntaxList2 protected ()
     _separatorCount: Double
   ) = this()
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _astID: js.Any = js.native
   
   /* CompleteClass */
   var _end: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _fileName: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _postComments: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _preComments: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var _separatorCount: js.Any = js.native
   
   /* CompleteClass */
@@ -51,7 +51,7 @@ class ISeparatedSyntaxList2 protected ()
   /* CompleteClass */
   override def kind(): typings.typescriptServices.TypeScript.SyntaxKind = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var members: js.Any = js.native
   
   /* CompleteClass */

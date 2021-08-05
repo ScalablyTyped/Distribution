@@ -14,15 +14,14 @@ trait IMsoChartData extends StObject {
   
   val IsLinked: Boolean
   
-  @JSName("Office.IMsoChartData_typekey")
+  /* private */ @JSName("Office.IMsoChartData_typekey")
   var OfficeDotIMsoChartData_typekey: IMsoChartData
   
   val Workbook: js.Any
 }
 object IMsoChartData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Activate: () => Unit,
     ActivateChartDataWindow: () => Unit,
     BreakLink: () => Unit,
@@ -35,25 +34,18 @@ object IMsoChartData {
     __obj.asInstanceOf[IMsoChartData]
   }
   
-  @scala.inline
-  implicit class IMsoChartDataMutableBuilder[Self <: IMsoChartData] (val x: Self) extends AnyVal {
+  extension [Self <: IMsoChartData](x: Self) {
     
-    @scala.inline
-    def setActivate(value: () => Unit): Self = StObject.set(x, "Activate", js.Any.fromFunction0(value))
+    inline def setActivate(value: () => Unit): Self = StObject.set(x, "Activate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setActivateChartDataWindow(value: () => Unit): Self = StObject.set(x, "ActivateChartDataWindow", js.Any.fromFunction0(value))
+    inline def setActivateChartDataWindow(value: () => Unit): Self = StObject.set(x, "ActivateChartDataWindow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBreakLink(value: () => Unit): Self = StObject.set(x, "BreakLink", js.Any.fromFunction0(value))
+    inline def setBreakLink(value: () => Unit): Self = StObject.set(x, "BreakLink", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsLinked(value: Boolean): Self = StObject.set(x, "IsLinked", value.asInstanceOf[js.Any])
+    inline def setIsLinked(value: Boolean): Self = StObject.set(x, "IsLinked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotIMsoChartData_typekey(value: IMsoChartData): Self = StObject.set(x, "Office.IMsoChartData_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotIMsoChartData_typekey(value: IMsoChartData): Self = StObject.set(x, "Office.IMsoChartData_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkbook(value: js.Any): Self = StObject.set(x, "Workbook", value.asInstanceOf[js.Any])
+    inline def setWorkbook(value: js.Any): Self = StObject.set(x, "Workbook", value.asInstanceOf[js.Any])
   }
 }

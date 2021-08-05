@@ -11,20 +11,17 @@ object webpackMergeStrings {
   sealed trait append
     extends StObject
        with MergeStrategy
-  @scala.inline
-  def append: append = "append".asInstanceOf[append]
+  inline def append: append = "append".asInstanceOf[append]
   
   @js.native
   sealed trait prepend
     extends StObject
        with MergeStrategy
-  @scala.inline
-  def prepend: prepend = "prepend".asInstanceOf[prepend]
+  inline def prepend: prepend = "prepend".asInstanceOf[prepend]
   
   @js.native
   sealed trait replace
     extends StObject
        with MergeStrategy
-  @scala.inline
-  def replace: replace = "replace".asInstanceOf[replace]
+  inline def replace: replace = "replace".asInstanceOf[replace]
 }

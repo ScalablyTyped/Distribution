@@ -19,7 +19,6 @@ object odataHelperMod {
       * @param obj The object array on which the filter is applied.
       * @return The filtered object array.
       */
-    @scala.inline
-    def evaluate[T](filter: String, obj: js.Array[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluate")(filter.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+    inline def evaluate[T](filter: String, obj: js.Array[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluate")(filter.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   }
 }

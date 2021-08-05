@@ -18,40 +18,29 @@ trait AjaxWithCredentials extends StObject {
 }
 object AjaxWithCredentials {
   
-  @scala.inline
-  def apply(url: String): AjaxWithCredentials = {
+  inline def apply(url: String): AjaxWithCredentials = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[AjaxWithCredentials]
   }
   
-  @scala.inline
-  implicit class AjaxWithCredentialsMutableBuilder[Self <: AjaxWithCredentials] (val x: Self) extends AnyVal {
+  extension [Self <: AjaxWithCredentials](x: Self) {
     
-    @scala.inline
-    def setAjaxWithCredentials(value: String | Boolean): Self = StObject.set(x, "ajaxWithCredentials", value.asInstanceOf[js.Any])
+    inline def setAjaxWithCredentials(value: String | Boolean): Self = StObject.set(x, "ajaxWithCredentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAjaxWithCredentialsUndefined: Self = StObject.set(x, "ajaxWithCredentials", js.undefined)
+    inline def setAjaxWithCredentialsUndefined: Self = StObject.set(x, "ajaxWithCredentials", js.undefined)
     
-    @scala.inline
-    def setBuildPyramid(value: Boolean): Self = StObject.set(x, "buildPyramid", value.asInstanceOf[js.Any])
+    inline def setBuildPyramid(value: Boolean): Self = StObject.set(x, "buildPyramid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildPyramidUndefined: Self = StObject.set(x, "buildPyramid", js.undefined)
+    inline def setBuildPyramidUndefined: Self = StObject.set(x, "buildPyramid", js.undefined)
     
-    @scala.inline
-    def setCrossOriginPolicy(value: String | Boolean): Self = StObject.set(x, "crossOriginPolicy", value.asInstanceOf[js.Any])
+    inline def setCrossOriginPolicy(value: String | Boolean): Self = StObject.set(x, "crossOriginPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossOriginPolicyUndefined: Self = StObject.set(x, "crossOriginPolicy", js.undefined)
+    inline def setCrossOriginPolicyUndefined: Self = StObject.set(x, "crossOriginPolicy", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseCanvas(value: Boolean): Self = StObject.set(x, "useCanvas", value.asInstanceOf[js.Any])
+    inline def setUseCanvas(value: Boolean): Self = StObject.set(x, "useCanvas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseCanvasUndefined: Self = StObject.set(x, "useCanvas", js.undefined)
+    inline def setUseCanvasUndefined: Self = StObject.set(x, "useCanvas", js.undefined)
   }
 }

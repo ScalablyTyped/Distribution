@@ -14,7 +14,7 @@ trait HTMLImage extends StObject {
   
   var HTMLType: String
   
-  @JSName("MSForms.HTMLImage_typekey")
+  /* private */ @JSName("MSForms.HTMLImage_typekey")
   var MSFormsDotHTMLImage_typekey: HTMLImage
   
   var Method: String
@@ -23,8 +23,7 @@ trait HTMLImage extends StObject {
 }
 object HTMLImage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Action: String,
     Encoding: String,
     HTMLName: String,
@@ -38,28 +37,20 @@ object HTMLImage {
     __obj.asInstanceOf[HTMLImage]
   }
   
-  @scala.inline
-  implicit class HTMLImageMutableBuilder[Self <: HTMLImage] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLImage](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncoding(value: String): Self = StObject.set(x, "Encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: String): Self = StObject.set(x, "Encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHTMLName(value: String): Self = StObject.set(x, "HTMLName", value.asInstanceOf[js.Any])
+    inline def setHTMLName(value: String): Self = StObject.set(x, "HTMLName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHTMLType(value: String): Self = StObject.set(x, "HTMLType", value.asInstanceOf[js.Any])
+    inline def setHTMLType(value: String): Self = StObject.set(x, "HTMLType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSFormsDotHTMLImage_typekey(value: HTMLImage): Self = StObject.set(x, "MSForms.HTMLImage_typekey", value.asInstanceOf[js.Any])
+    inline def setMSFormsDotHTMLImage_typekey(value: HTMLImage): Self = StObject.set(x, "MSForms.HTMLImage_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "Method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "Method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
   }
 }

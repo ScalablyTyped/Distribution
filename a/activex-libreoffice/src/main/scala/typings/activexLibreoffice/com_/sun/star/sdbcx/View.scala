@@ -48,8 +48,7 @@ trait View
 }
 object View {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CatalogName: String,
     CheckOption: Double,
     Command: String,
@@ -73,22 +72,16 @@ object View {
     __obj.asInstanceOf[View]
   }
   
-  @scala.inline
-  implicit class ViewMutableBuilder[Self <: View] (val x: Self) extends AnyVal {
+  extension [Self <: View](x: Self) {
     
-    @scala.inline
-    def setCatalogName(value: String): Self = StObject.set(x, "CatalogName", value.asInstanceOf[js.Any])
+    inline def setCatalogName(value: String): Self = StObject.set(x, "CatalogName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckOption(value: Double): Self = StObject.set(x, "CheckOption", value.asInstanceOf[js.Any])
+    inline def setCheckOption(value: Double): Self = StObject.set(x, "CheckOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaName(value: String): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
+    inline def setSchemaName(value: String): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
   }
 }

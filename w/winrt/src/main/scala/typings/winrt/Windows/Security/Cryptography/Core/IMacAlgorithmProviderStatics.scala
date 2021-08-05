@@ -10,16 +10,13 @@ trait IMacAlgorithmProviderStatics extends StObject {
 }
 object IMacAlgorithmProviderStatics {
   
-  @scala.inline
-  def apply(openAlgorithm: String => MacAlgorithmProvider): IMacAlgorithmProviderStatics = {
+  inline def apply(openAlgorithm: String => MacAlgorithmProvider): IMacAlgorithmProviderStatics = {
     val __obj = js.Dynamic.literal(openAlgorithm = js.Any.fromFunction1(openAlgorithm))
     __obj.asInstanceOf[IMacAlgorithmProviderStatics]
   }
   
-  @scala.inline
-  implicit class IMacAlgorithmProviderStaticsMutableBuilder[Self <: IMacAlgorithmProviderStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IMacAlgorithmProviderStatics](x: Self) {
     
-    @scala.inline
-    def setOpenAlgorithm(value: String => MacAlgorithmProvider): Self = StObject.set(x, "openAlgorithm", js.Any.fromFunction1(value))
+    inline def setOpenAlgorithm(value: String => MacAlgorithmProvider): Self = StObject.set(x, "openAlgorithm", js.Any.fromFunction1(value))
   }
 }

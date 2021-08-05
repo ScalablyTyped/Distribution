@@ -44,8 +44,7 @@ trait XDropTargetDropContext
 }
 object XDropTargetDropContext {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acceptDrop: Double => Unit,
     acquire: () => Unit,
     dropComplete: Boolean => Unit,
@@ -57,16 +56,12 @@ object XDropTargetDropContext {
     __obj.asInstanceOf[XDropTargetDropContext]
   }
   
-  @scala.inline
-  implicit class XDropTargetDropContextMutableBuilder[Self <: XDropTargetDropContext] (val x: Self) extends AnyVal {
+  extension [Self <: XDropTargetDropContext](x: Self) {
     
-    @scala.inline
-    def setAcceptDrop(value: Double => Unit): Self = StObject.set(x, "acceptDrop", js.Any.fromFunction1(value))
+    inline def setAcceptDrop(value: Double => Unit): Self = StObject.set(x, "acceptDrop", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDropComplete(value: Boolean => Unit): Self = StObject.set(x, "dropComplete", js.Any.fromFunction1(value))
+    inline def setDropComplete(value: Boolean => Unit): Self = StObject.set(x, "dropComplete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRejectDrop(value: () => Unit): Self = StObject.set(x, "rejectDrop", js.Any.fromFunction0(value))
+    inline def setRejectDrop(value: () => Unit): Self = StObject.set(x, "rejectDrop", js.Any.fromFunction0(value))
   }
 }

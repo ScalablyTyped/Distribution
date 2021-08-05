@@ -13,19 +13,15 @@ trait CreateEventBusResponse extends StObject {
 }
 object CreateEventBusResponse {
   
-  @scala.inline
-  def apply(): CreateEventBusResponse = {
+  inline def apply(): CreateEventBusResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateEventBusResponse]
   }
   
-  @scala.inline
-  implicit class CreateEventBusResponseMutableBuilder[Self <: CreateEventBusResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateEventBusResponse](x: Self) {
     
-    @scala.inline
-    def setEventBusArn(value: String): Self = StObject.set(x, "EventBusArn", value.asInstanceOf[js.Any])
+    inline def setEventBusArn(value: String): Self = StObject.set(x, "EventBusArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventBusArnUndefined: Self = StObject.set(x, "EventBusArn", js.undefined)
+    inline def setEventBusArnUndefined: Self = StObject.set(x, "EventBusArn", js.undefined)
   }
 }

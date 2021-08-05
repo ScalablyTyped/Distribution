@@ -24,8 +24,7 @@ trait H extends StObject {
 }
 object H {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     __type: String,
     a: Double,
     column: Double,
@@ -39,31 +38,22 @@ object H {
     __obj.asInstanceOf[H]
   }
   
-  @scala.inline
-  implicit class HMutableBuilder[Self <: H] (val x: Self) extends AnyVal {
+  extension [Self <: H](x: Self) {
     
-    @scala.inline
-    def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+    inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+    inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setL(value: Double): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
+    inline def setL(value: Double): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineno(value: Double): Self = StObject.set(x, "lineno", value.asInstanceOf[js.Any])
+    inline def setLineno(value: Double): Self = StObject.set(x, "lineno", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
+    inline def setS(value: Double): Self = StObject.set(x, "s", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__type(value: String): Self = StObject.set(x, "__type", value.asInstanceOf[js.Any])
+    inline def set__type(value: String): Self = StObject.set(x, "__type", value.asInstanceOf[js.Any])
   }
 }

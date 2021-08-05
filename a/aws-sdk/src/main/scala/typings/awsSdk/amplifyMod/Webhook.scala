@@ -43,8 +43,7 @@ trait Webhook extends StObject {
 }
 object Webhook {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     branchName: BranchName,
     createTime: CreateTime,
     description: Description,
@@ -57,28 +56,20 @@ object Webhook {
     __obj.asInstanceOf[Webhook]
   }
   
-  @scala.inline
-  implicit class WebhookMutableBuilder[Self <: Webhook] (val x: Self) extends AnyVal {
+  extension [Self <: Webhook](x: Self) {
     
-    @scala.inline
-    def setBranchName(value: BranchName): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
+    inline def setBranchName(value: BranchName): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTime(value: CreateTime): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: CreateTime): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTime(value: UpdateTime): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: UpdateTime): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebhookArn(value: WebhookArn): Self = StObject.set(x, "webhookArn", value.asInstanceOf[js.Any])
+    inline def setWebhookArn(value: WebhookArn): Self = StObject.set(x, "webhookArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebhookId(value: WebhookId): Self = StObject.set(x, "webhookId", value.asInstanceOf[js.Any])
+    inline def setWebhookId(value: WebhookId): Self = StObject.set(x, "webhookId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebhookUrl(value: WebhookUrl): Self = StObject.set(x, "webhookUrl", value.asInstanceOf[js.Any])
+    inline def setWebhookUrl(value: WebhookUrl): Self = StObject.set(x, "webhookUrl", value.asInstanceOf[js.Any])
   }
 }

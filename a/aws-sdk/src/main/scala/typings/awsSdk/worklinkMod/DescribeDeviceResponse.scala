@@ -53,67 +53,47 @@ trait DescribeDeviceResponse extends StObject {
 }
 object DescribeDeviceResponse {
   
-  @scala.inline
-  def apply(): DescribeDeviceResponse = {
+  inline def apply(): DescribeDeviceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeDeviceResponse]
   }
   
-  @scala.inline
-  implicit class DescribeDeviceResponseMutableBuilder[Self <: DescribeDeviceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDeviceResponse](x: Self) {
     
-    @scala.inline
-    def setFirstAccessedTime(value: DateTime): Self = StObject.set(x, "FirstAccessedTime", value.asInstanceOf[js.Any])
+    inline def setFirstAccessedTime(value: DateTime): Self = StObject.set(x, "FirstAccessedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstAccessedTimeUndefined: Self = StObject.set(x, "FirstAccessedTime", js.undefined)
+    inline def setFirstAccessedTimeUndefined: Self = StObject.set(x, "FirstAccessedTime", js.undefined)
     
-    @scala.inline
-    def setLastAccessedTime(value: DateTime): Self = StObject.set(x, "LastAccessedTime", value.asInstanceOf[js.Any])
+    inline def setLastAccessedTime(value: DateTime): Self = StObject.set(x, "LastAccessedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastAccessedTimeUndefined: Self = StObject.set(x, "LastAccessedTime", js.undefined)
+    inline def setLastAccessedTimeUndefined: Self = StObject.set(x, "LastAccessedTime", js.undefined)
     
-    @scala.inline
-    def setManufacturer(value: DeviceManufacturer): Self = StObject.set(x, "Manufacturer", value.asInstanceOf[js.Any])
+    inline def setManufacturer(value: DeviceManufacturer): Self = StObject.set(x, "Manufacturer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManufacturerUndefined: Self = StObject.set(x, "Manufacturer", js.undefined)
+    inline def setManufacturerUndefined: Self = StObject.set(x, "Manufacturer", js.undefined)
     
-    @scala.inline
-    def setModel(value: DeviceModel): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
+    inline def setModel(value: DeviceModel): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "Model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "Model", js.undefined)
     
-    @scala.inline
-    def setOperatingSystem(value: DeviceOperatingSystemName): Self = StObject.set(x, "OperatingSystem", value.asInstanceOf[js.Any])
+    inline def setOperatingSystem(value: DeviceOperatingSystemName): Self = StObject.set(x, "OperatingSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatingSystemUndefined: Self = StObject.set(x, "OperatingSystem", js.undefined)
+    inline def setOperatingSystemUndefined: Self = StObject.set(x, "OperatingSystem", js.undefined)
     
-    @scala.inline
-    def setOperatingSystemVersion(value: DeviceOperatingSystemVersion): Self = StObject.set(x, "OperatingSystemVersion", value.asInstanceOf[js.Any])
+    inline def setOperatingSystemVersion(value: DeviceOperatingSystemVersion): Self = StObject.set(x, "OperatingSystemVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatingSystemVersionUndefined: Self = StObject.set(x, "OperatingSystemVersion", js.undefined)
+    inline def setOperatingSystemVersionUndefined: Self = StObject.set(x, "OperatingSystemVersion", js.undefined)
     
-    @scala.inline
-    def setPatchLevel(value: DevicePatchLevel): Self = StObject.set(x, "PatchLevel", value.asInstanceOf[js.Any])
+    inline def setPatchLevel(value: DevicePatchLevel): Self = StObject.set(x, "PatchLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchLevelUndefined: Self = StObject.set(x, "PatchLevel", js.undefined)
+    inline def setPatchLevelUndefined: Self = StObject.set(x, "PatchLevel", js.undefined)
     
-    @scala.inline
-    def setStatus(value: DeviceStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: DeviceStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setUsername(value: Username): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: Username): Self = StObject.set(x, "Username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "Username", js.undefined)
   }
 }

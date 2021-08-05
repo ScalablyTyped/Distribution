@@ -12,19 +12,15 @@ trait ChildrenShowTooltip extends StObject {
 }
 object ChildrenShowTooltip {
   
-  @scala.inline
-  def apply(children: js.Any => typings.react.mod.global.JSX.Element, showTooltip: Boolean): ChildrenShowTooltip = {
+  inline def apply(children: js.Any => typings.react.mod.global.JSX.Element, showTooltip: Boolean): ChildrenShowTooltip = {
     val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), showTooltip = showTooltip.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChildrenShowTooltip]
   }
   
-  @scala.inline
-  implicit class ChildrenShowTooltipMutableBuilder[Self <: ChildrenShowTooltip] (val x: Self) extends AnyVal {
+  extension [Self <: ChildrenShowTooltip](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Any => typings.react.mod.global.JSX.Element): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+    inline def setChildren(value: js.Any => typings.react.mod.global.JSX.Element): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowTooltip(value: Boolean): Self = StObject.set(x, "showTooltip", value.asInstanceOf[js.Any])
+    inline def setShowTooltip(value: Boolean): Self = StObject.set(x, "showTooltip", value.asInstanceOf[js.Any])
   }
 }

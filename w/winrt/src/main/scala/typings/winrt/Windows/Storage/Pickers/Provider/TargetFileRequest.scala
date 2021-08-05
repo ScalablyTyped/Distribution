@@ -10,8 +10,7 @@ trait TargetFileRequest
      with ITargetFileRequest
 object TargetFileRequest {
   
-  @scala.inline
-  def apply(getDeferral: () => TargetFileRequestDeferral, targetFile: IStorageFile): TargetFileRequest = {
+  inline def apply(getDeferral: () => TargetFileRequestDeferral, targetFile: IStorageFile): TargetFileRequest = {
     val __obj = js.Dynamic.literal(getDeferral = js.Any.fromFunction0(getDeferral), targetFile = targetFile.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetFileRequest]
   }

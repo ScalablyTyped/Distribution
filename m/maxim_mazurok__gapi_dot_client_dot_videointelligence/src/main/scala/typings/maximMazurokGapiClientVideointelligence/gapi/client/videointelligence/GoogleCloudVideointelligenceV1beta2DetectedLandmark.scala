@@ -17,31 +17,23 @@ trait GoogleCloudVideointelligenceV1beta2DetectedLandmark extends StObject {
 }
 object GoogleCloudVideointelligenceV1beta2DetectedLandmark {
   
-  @scala.inline
-  def apply(): GoogleCloudVideointelligenceV1beta2DetectedLandmark = {
+  inline def apply(): GoogleCloudVideointelligenceV1beta2DetectedLandmark = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1beta2DetectedLandmark]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVideointelligenceV1beta2DetectedLandmarkMutableBuilder[Self <: GoogleCloudVideointelligenceV1beta2DetectedLandmark] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVideointelligenceV1beta2DetectedLandmark](x: Self) {
     
-    @scala.inline
-    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPoint(value: GoogleCloudVideointelligenceV1beta2NormalizedVertex): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    inline def setPoint(value: GoogleCloudVideointelligenceV1beta2NormalizedVertex): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
+    inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
   }
 }

@@ -17,25 +17,19 @@ trait RepricingRuleRestriction extends StObject {
 }
 object RepricingRuleRestriction {
   
-  @scala.inline
-  def apply(): RepricingRuleRestriction = {
+  inline def apply(): RepricingRuleRestriction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RepricingRuleRestriction]
   }
   
-  @scala.inline
-  implicit class RepricingRuleRestrictionMutableBuilder[Self <: RepricingRuleRestriction] (val x: Self) extends AnyVal {
+  extension [Self <: RepricingRuleRestriction](x: Self) {
     
-    @scala.inline
-    def setFloor(value: RepricingRuleRestrictionBoundary): Self = StObject.set(x, "floor", value.asInstanceOf[js.Any])
+    inline def setFloor(value: RepricingRuleRestrictionBoundary): Self = StObject.set(x, "floor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloorUndefined: Self = StObject.set(x, "floor", js.undefined)
+    inline def setFloorUndefined: Self = StObject.set(x, "floor", js.undefined)
     
-    @scala.inline
-    def setUseAutoPricingMinPrice(value: Boolean): Self = StObject.set(x, "useAutoPricingMinPrice", value.asInstanceOf[js.Any])
+    inline def setUseAutoPricingMinPrice(value: Boolean): Self = StObject.set(x, "useAutoPricingMinPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseAutoPricingMinPriceUndefined: Self = StObject.set(x, "useAutoPricingMinPrice", js.undefined)
+    inline def setUseAutoPricingMinPriceUndefined: Self = StObject.set(x, "useAutoPricingMinPrice", js.undefined)
   }
 }

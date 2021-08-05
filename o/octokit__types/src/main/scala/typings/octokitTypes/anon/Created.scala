@@ -16,25 +16,19 @@ trait Created extends StObject {
 }
 object Created {
   
-  @scala.inline
-  def apply(created: String, lastModified: String, location: String, resourceType: String): Created = {
+  inline def apply(created: String, lastModified: String, location: String, resourceType: String): Created = {
     val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], lastModified = lastModified.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[Created]
   }
   
-  @scala.inline
-  implicit class CreatedMutableBuilder[Self <: Created] (val x: Self) extends AnyVal {
+  extension [Self <: Created](x: Self) {
     
-    @scala.inline
-    def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModified(value: String): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: String): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
   }
 }

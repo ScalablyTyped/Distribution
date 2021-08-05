@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "angular-aria"
-version := "1.7-dt-20200515Z-c10a79"
+version := "1.7-dt-20200515Z-b9f0b8"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

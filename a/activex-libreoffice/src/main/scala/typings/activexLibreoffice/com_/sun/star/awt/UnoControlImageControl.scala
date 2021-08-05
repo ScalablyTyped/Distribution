@@ -15,8 +15,7 @@ trait UnoControlImageControl
      with XLayoutConstrains
 object UnoControlImageControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleContext: XAccessibleContext,
     Context: XInterface,
     Graphics: XGraphics,

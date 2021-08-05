@@ -13,19 +13,15 @@ trait PlotAroonParamsOptions extends StObject {
 }
 object PlotAroonParamsOptions {
   
-  @scala.inline
-  def apply(): PlotAroonParamsOptions = {
+  inline def apply(): PlotAroonParamsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotAroonParamsOptions]
   }
   
-  @scala.inline
-  implicit class PlotAroonParamsOptionsMutableBuilder[Self <: PlotAroonParamsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotAroonParamsOptions](x: Self) {
     
-    @scala.inline
-    def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
   }
 }

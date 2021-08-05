@@ -18,16 +18,13 @@ trait ASPxClientDropDownCommandEventArgs
 }
 object ASPxClientDropDownCommandEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, commandName: String): ASPxClientDropDownCommandEventArgs = {
+  inline def apply(cancel: Boolean, commandName: String): ASPxClientDropDownCommandEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], commandName = commandName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientDropDownCommandEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientDropDownCommandEventArgsMutableBuilder[Self <: ASPxClientDropDownCommandEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDropDownCommandEventArgs](x: Self) {
     
-    @scala.inline
-    def setCommandName(value: String): Self = StObject.set(x, "commandName", value.asInstanceOf[js.Any])
+    inline def setCommandName(value: String): Self = StObject.set(x, "commandName", value.asInstanceOf[js.Any])
   }
 }

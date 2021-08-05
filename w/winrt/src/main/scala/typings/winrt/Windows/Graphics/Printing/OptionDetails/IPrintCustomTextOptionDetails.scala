@@ -12,8 +12,7 @@ trait IPrintCustomTextOptionDetails
 }
 object IPrintCustomTextOptionDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     displayName: String,
     errorText: String,
     maxCharacters: Double,
@@ -27,10 +26,8 @@ object IPrintCustomTextOptionDetails {
     __obj.asInstanceOf[IPrintCustomTextOptionDetails]
   }
   
-  @scala.inline
-  implicit class IPrintCustomTextOptionDetailsMutableBuilder[Self <: IPrintCustomTextOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: IPrintCustomTextOptionDetails](x: Self) {
     
-    @scala.inline
-    def setMaxCharacters(value: Double): Self = StObject.set(x, "maxCharacters", value.asInstanceOf[js.Any])
+    inline def setMaxCharacters(value: Double): Self = StObject.set(x, "maxCharacters", value.asInstanceOf[js.Any])
   }
 }

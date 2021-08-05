@@ -36,17 +36,14 @@ object mod extends Shortcut {
       }
       object Assert {
         
-        @scala.inline
-        def apply(roughly: Roughly): Assert = {
+        inline def apply(roughly: Roughly): Assert = {
           val __obj = js.Dynamic.literal(roughly = roughly.asInstanceOf[js.Any])
           __obj.asInstanceOf[Assert]
         }
         
-        @scala.inline
-        implicit class AssertMutableBuilder[Self <: Assert] (val x: Self) extends AnyVal {
+        extension [Self <: Assert](x: Self) {
           
-          @scala.inline
-          def setRoughly(value: Roughly): Self = StObject.set(x, "roughly", value.asInstanceOf[js.Any])
+          inline def setRoughly(value: Roughly): Self = StObject.set(x, "roughly", value.asInstanceOf[js.Any])
         }
       }
       

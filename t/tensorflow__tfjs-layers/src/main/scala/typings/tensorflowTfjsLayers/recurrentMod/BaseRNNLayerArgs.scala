@@ -107,64 +107,45 @@ trait BaseRNNLayerArgs
 }
 object BaseRNNLayerArgs {
   
-  @scala.inline
-  def apply(): BaseRNNLayerArgs = {
+  inline def apply(): BaseRNNLayerArgs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BaseRNNLayerArgs]
   }
   
-  @scala.inline
-  implicit class BaseRNNLayerArgsMutableBuilder[Self <: BaseRNNLayerArgs] (val x: Self) extends AnyVal {
+  extension [Self <: BaseRNNLayerArgs](x: Self) {
     
-    @scala.inline
-    def setCell(value: RNNCell | js.Array[RNNCell]): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+    inline def setCell(value: RNNCell | js.Array[RNNCell]): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
+    inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
     
-    @scala.inline
-    def setCellVarargs(value: RNNCell*): Self = StObject.set(x, "cell", js.Array(value :_*))
+    inline def setCellVarargs(value: RNNCell*): Self = StObject.set(x, "cell", js.Array(value :_*))
     
-    @scala.inline
-    def setGoBackwards(value: Boolean): Self = StObject.set(x, "goBackwards", value.asInstanceOf[js.Any])
+    inline def setGoBackwards(value: Boolean): Self = StObject.set(x, "goBackwards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoBackwardsUndefined: Self = StObject.set(x, "goBackwards", js.undefined)
+    inline def setGoBackwardsUndefined: Self = StObject.set(x, "goBackwards", js.undefined)
     
-    @scala.inline
-    def setInputDim(value: Double): Self = StObject.set(x, "inputDim", value.asInstanceOf[js.Any])
+    inline def setInputDim(value: Double): Self = StObject.set(x, "inputDim", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputDimUndefined: Self = StObject.set(x, "inputDim", js.undefined)
+    inline def setInputDimUndefined: Self = StObject.set(x, "inputDim", js.undefined)
     
-    @scala.inline
-    def setInputLength(value: Double): Self = StObject.set(x, "inputLength", value.asInstanceOf[js.Any])
+    inline def setInputLength(value: Double): Self = StObject.set(x, "inputLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputLengthUndefined: Self = StObject.set(x, "inputLength", js.undefined)
+    inline def setInputLengthUndefined: Self = StObject.set(x, "inputLength", js.undefined)
     
-    @scala.inline
-    def setReturnSequences(value: Boolean): Self = StObject.set(x, "returnSequences", value.asInstanceOf[js.Any])
+    inline def setReturnSequences(value: Boolean): Self = StObject.set(x, "returnSequences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnSequencesUndefined: Self = StObject.set(x, "returnSequences", js.undefined)
+    inline def setReturnSequencesUndefined: Self = StObject.set(x, "returnSequences", js.undefined)
     
-    @scala.inline
-    def setReturnState(value: Boolean): Self = StObject.set(x, "returnState", value.asInstanceOf[js.Any])
+    inline def setReturnState(value: Boolean): Self = StObject.set(x, "returnState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnStateUndefined: Self = StObject.set(x, "returnState", js.undefined)
+    inline def setReturnStateUndefined: Self = StObject.set(x, "returnState", js.undefined)
     
-    @scala.inline
-    def setStateful(value: Boolean): Self = StObject.set(x, "stateful", value.asInstanceOf[js.Any])
+    inline def setStateful(value: Boolean): Self = StObject.set(x, "stateful", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatefulUndefined: Self = StObject.set(x, "stateful", js.undefined)
+    inline def setStatefulUndefined: Self = StObject.set(x, "stateful", js.undefined)
     
-    @scala.inline
-    def setUnroll(value: Boolean): Self = StObject.set(x, "unroll", value.asInstanceOf[js.Any])
+    inline def setUnroll(value: Boolean): Self = StObject.set(x, "unroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnrollUndefined: Self = StObject.set(x, "unroll", js.undefined)
+    inline def setUnrollUndefined: Self = StObject.set(x, "unroll", js.undefined)
   }
 }

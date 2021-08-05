@@ -28,10 +28,10 @@ object rejectPromiseMethodStubMod {
     /* CompleteClass */
     override def isApplicable(args: js.Array[js.Any]): Boolean = js.native
     
-    var matchers: js.Any = js.native
+    /* private */ var matchers: js.Any = js.native
     
-    var validator: js.Any = js.native
+    /* private */ var validator: js.Any = js.native
     
-    var value: js.Any = js.native
+    /* private */ var value: js.Any = js.native
   }
 }

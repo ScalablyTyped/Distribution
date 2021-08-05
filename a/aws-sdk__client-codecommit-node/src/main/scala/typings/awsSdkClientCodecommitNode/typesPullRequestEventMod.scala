@@ -65,64 +65,46 @@ object typesPullRequestEventMod {
   }
   object PullRequestEvent {
     
-    @scala.inline
-    def apply(): PullRequestEvent = {
+    inline def apply(): PullRequestEvent = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PullRequestEvent]
     }
     
-    @scala.inline
-    implicit class PullRequestEventMutableBuilder[Self <: PullRequestEvent] (val x: Self) extends AnyVal {
+    extension [Self <: PullRequestEvent](x: Self) {
       
-      @scala.inline
-      def setActorArn(value: String): Self = StObject.set(x, "actorArn", value.asInstanceOf[js.Any])
+      inline def setActorArn(value: String): Self = StObject.set(x, "actorArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActorArnUndefined: Self = StObject.set(x, "actorArn", js.undefined)
+      inline def setActorArnUndefined: Self = StObject.set(x, "actorArn", js.undefined)
       
-      @scala.inline
-      def setEventDate(value: Date | String | Double): Self = StObject.set(x, "eventDate", value.asInstanceOf[js.Any])
+      inline def setEventDate(value: Date | String | Double): Self = StObject.set(x, "eventDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventDateUndefined: Self = StObject.set(x, "eventDate", js.undefined)
+      inline def setEventDateUndefined: Self = StObject.set(x, "eventDate", js.undefined)
       
-      @scala.inline
-      def setPullRequestCreatedEventMetadata(value: PullRequestCreatedEventMetadata): Self = StObject.set(x, "pullRequestCreatedEventMetadata", value.asInstanceOf[js.Any])
+      inline def setPullRequestCreatedEventMetadata(value: PullRequestCreatedEventMetadata): Self = StObject.set(x, "pullRequestCreatedEventMetadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPullRequestCreatedEventMetadataUndefined: Self = StObject.set(x, "pullRequestCreatedEventMetadata", js.undefined)
+      inline def setPullRequestCreatedEventMetadataUndefined: Self = StObject.set(x, "pullRequestCreatedEventMetadata", js.undefined)
       
-      @scala.inline
-      def setPullRequestEventType(
+      inline def setPullRequestEventType(
         value: PULL_REQUEST_CREATED | PULL_REQUEST_STATUS_CHANGED | PULL_REQUEST_SOURCE_REFERENCE_UPDATED | PULL_REQUEST_MERGE_STATE_CHANGED | String
       ): Self = StObject.set(x, "pullRequestEventType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPullRequestEventTypeUndefined: Self = StObject.set(x, "pullRequestEventType", js.undefined)
+      inline def setPullRequestEventTypeUndefined: Self = StObject.set(x, "pullRequestEventType", js.undefined)
       
-      @scala.inline
-      def setPullRequestId(value: String): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
+      inline def setPullRequestId(value: String): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPullRequestIdUndefined: Self = StObject.set(x, "pullRequestId", js.undefined)
+      inline def setPullRequestIdUndefined: Self = StObject.set(x, "pullRequestId", js.undefined)
       
-      @scala.inline
-      def setPullRequestMergedStateChangedEventMetadata(value: PullRequestMergedStateChangedEventMetadata): Self = StObject.set(x, "pullRequestMergedStateChangedEventMetadata", value.asInstanceOf[js.Any])
+      inline def setPullRequestMergedStateChangedEventMetadata(value: PullRequestMergedStateChangedEventMetadata): Self = StObject.set(x, "pullRequestMergedStateChangedEventMetadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPullRequestMergedStateChangedEventMetadataUndefined: Self = StObject.set(x, "pullRequestMergedStateChangedEventMetadata", js.undefined)
+      inline def setPullRequestMergedStateChangedEventMetadataUndefined: Self = StObject.set(x, "pullRequestMergedStateChangedEventMetadata", js.undefined)
       
-      @scala.inline
-      def setPullRequestSourceReferenceUpdatedEventMetadata(value: PullRequestSourceReferenceUpdatedEventMetadata): Self = StObject.set(x, "pullRequestSourceReferenceUpdatedEventMetadata", value.asInstanceOf[js.Any])
+      inline def setPullRequestSourceReferenceUpdatedEventMetadata(value: PullRequestSourceReferenceUpdatedEventMetadata): Self = StObject.set(x, "pullRequestSourceReferenceUpdatedEventMetadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPullRequestSourceReferenceUpdatedEventMetadataUndefined: Self = StObject.set(x, "pullRequestSourceReferenceUpdatedEventMetadata", js.undefined)
+      inline def setPullRequestSourceReferenceUpdatedEventMetadataUndefined: Self = StObject.set(x, "pullRequestSourceReferenceUpdatedEventMetadata", js.undefined)
       
-      @scala.inline
-      def setPullRequestStatusChangedEventMetadata(value: PullRequestStatusChangedEventMetadata): Self = StObject.set(x, "pullRequestStatusChangedEventMetadata", value.asInstanceOf[js.Any])
+      inline def setPullRequestStatusChangedEventMetadata(value: PullRequestStatusChangedEventMetadata): Self = StObject.set(x, "pullRequestStatusChangedEventMetadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPullRequestStatusChangedEventMetadataUndefined: Self = StObject.set(x, "pullRequestStatusChangedEventMetadata", js.undefined)
+      inline def setPullRequestStatusChangedEventMetadataUndefined: Self = StObject.set(x, "pullRequestStatusChangedEventMetadata", js.undefined)
     }
   }
   
@@ -162,44 +144,32 @@ object typesPullRequestEventMod {
   }
   object UnmarshalledPullRequestEvent {
     
-    @scala.inline
-    def apply(): UnmarshalledPullRequestEvent = {
+    inline def apply(): UnmarshalledPullRequestEvent = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledPullRequestEvent]
     }
     
-    @scala.inline
-    implicit class UnmarshalledPullRequestEventMutableBuilder[Self <: UnmarshalledPullRequestEvent] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledPullRequestEvent](x: Self) {
       
-      @scala.inline
-      def setEventDate(value: Date): Self = StObject.set(x, "eventDate", value.asInstanceOf[js.Any])
+      inline def setEventDate(value: Date): Self = StObject.set(x, "eventDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventDateUndefined: Self = StObject.set(x, "eventDate", js.undefined)
+      inline def setEventDateUndefined: Self = StObject.set(x, "eventDate", js.undefined)
       
-      @scala.inline
-      def setPullRequestCreatedEventMetadata(value: UnmarshalledPullRequestCreatedEventMetadata): Self = StObject.set(x, "pullRequestCreatedEventMetadata", value.asInstanceOf[js.Any])
+      inline def setPullRequestCreatedEventMetadata(value: UnmarshalledPullRequestCreatedEventMetadata): Self = StObject.set(x, "pullRequestCreatedEventMetadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPullRequestCreatedEventMetadataUndefined: Self = StObject.set(x, "pullRequestCreatedEventMetadata", js.undefined)
+      inline def setPullRequestCreatedEventMetadataUndefined: Self = StObject.set(x, "pullRequestCreatedEventMetadata", js.undefined)
       
-      @scala.inline
-      def setPullRequestMergedStateChangedEventMetadata(value: UnmarshalledPullRequestMergedStateChangedEventMetadata): Self = StObject.set(x, "pullRequestMergedStateChangedEventMetadata", value.asInstanceOf[js.Any])
+      inline def setPullRequestMergedStateChangedEventMetadata(value: UnmarshalledPullRequestMergedStateChangedEventMetadata): Self = StObject.set(x, "pullRequestMergedStateChangedEventMetadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPullRequestMergedStateChangedEventMetadataUndefined: Self = StObject.set(x, "pullRequestMergedStateChangedEventMetadata", js.undefined)
+      inline def setPullRequestMergedStateChangedEventMetadataUndefined: Self = StObject.set(x, "pullRequestMergedStateChangedEventMetadata", js.undefined)
       
-      @scala.inline
-      def setPullRequestSourceReferenceUpdatedEventMetadata(value: UnmarshalledPullRequestSourceReferenceUpdatedEventMetadata): Self = StObject.set(x, "pullRequestSourceReferenceUpdatedEventMetadata", value.asInstanceOf[js.Any])
+      inline def setPullRequestSourceReferenceUpdatedEventMetadata(value: UnmarshalledPullRequestSourceReferenceUpdatedEventMetadata): Self = StObject.set(x, "pullRequestSourceReferenceUpdatedEventMetadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPullRequestSourceReferenceUpdatedEventMetadataUndefined: Self = StObject.set(x, "pullRequestSourceReferenceUpdatedEventMetadata", js.undefined)
+      inline def setPullRequestSourceReferenceUpdatedEventMetadataUndefined: Self = StObject.set(x, "pullRequestSourceReferenceUpdatedEventMetadata", js.undefined)
       
-      @scala.inline
-      def setPullRequestStatusChangedEventMetadata(value: UnmarshalledPullRequestStatusChangedEventMetadata): Self = StObject.set(x, "pullRequestStatusChangedEventMetadata", value.asInstanceOf[js.Any])
+      inline def setPullRequestStatusChangedEventMetadata(value: UnmarshalledPullRequestStatusChangedEventMetadata): Self = StObject.set(x, "pullRequestStatusChangedEventMetadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPullRequestStatusChangedEventMetadataUndefined: Self = StObject.set(x, "pullRequestStatusChangedEventMetadata", js.undefined)
+      inline def setPullRequestStatusChangedEventMetadataUndefined: Self = StObject.set(x, "pullRequestStatusChangedEventMetadata", js.undefined)
     }
   }
 }

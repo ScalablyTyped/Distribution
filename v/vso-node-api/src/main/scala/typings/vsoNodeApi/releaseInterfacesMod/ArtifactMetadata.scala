@@ -18,19 +18,15 @@ trait ArtifactMetadata extends StObject {
 }
 object ArtifactMetadata {
   
-  @scala.inline
-  def apply(alias: String, instanceReference: BuildVersion): ArtifactMetadata = {
+  inline def apply(alias: String, instanceReference: BuildVersion): ArtifactMetadata = {
     val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], instanceReference = instanceReference.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArtifactMetadata]
   }
   
-  @scala.inline
-  implicit class ArtifactMetadataMutableBuilder[Self <: ArtifactMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ArtifactMetadata](x: Self) {
     
-    @scala.inline
-    def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+    inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceReference(value: BuildVersion): Self = StObject.set(x, "instanceReference", value.asInstanceOf[js.Any])
+    inline def setInstanceReference(value: BuildVersion): Self = StObject.set(x, "instanceReference", value.asInstanceOf[js.Any])
   }
 }

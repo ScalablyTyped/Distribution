@@ -26,8 +26,7 @@ object mod {
     * @param callback will be called after the message has been sent
     */
   /* static member */
-  @scala.inline
-  def sendSingleMessage(port: Double, host: String, message: js.Any, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendSingleMessage")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def sendSingleMessage(port: Double, host: String, message: js.Any, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendSingleMessage")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], message.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * sends a single message, waits for a single response message from the server and closes the connection right after.
@@ -39,8 +38,7 @@ object mod {
     * @param callback will be called when the response message has been received
     */
   /* static member */
-  @scala.inline
-  def sendSingleMessageAndReceive(
+  inline def sendSingleMessageAndReceive(
     port: Double,
     host: String,
     message: js.Any,

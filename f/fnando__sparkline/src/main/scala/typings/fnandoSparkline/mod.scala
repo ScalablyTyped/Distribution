@@ -14,19 +14,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[TEntry /* <: SparklineNativeEntry */](svg: SVGSVGElement, entries: js.Array[TEntry]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(svg.asInstanceOf[js.Any], entries.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def default[TEntry /* <: SparklineNativeEntry */](svg: SVGSVGElement, entries: js.Array[TEntry], options: SparklineNativeOptions[TEntry]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(svg.asInstanceOf[js.Any], entries.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def default[TEntry](svg: SVGSVGElement, entries: js.Array[TEntry], options: SparklineNonNativeOptions[TEntry]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(svg.asInstanceOf[js.Any], entries.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default[TEntry /* <: SparklineNativeEntry */](svg: SVGSVGElement, entries: js.Array[TEntry]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(svg.asInstanceOf[js.Any], entries.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default[TEntry /* <: SparklineNativeEntry */](svg: SVGSVGElement, entries: js.Array[TEntry], options: SparklineNativeOptions[TEntry]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(svg.asInstanceOf[js.Any], entries.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default[TEntry](svg: SVGSVGElement, entries: js.Array[TEntry], options: SparklineNonNativeOptions[TEntry]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(svg.asInstanceOf[js.Any], entries.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def sparkline[TEntry /* <: SparklineNativeEntry */](svg: SVGSVGElement, entries: js.Array[TEntry]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sparkline")(svg.asInstanceOf[js.Any], entries.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def sparkline[TEntry /* <: SparklineNativeEntry */](svg: SVGSVGElement, entries: js.Array[TEntry], options: SparklineNativeOptions[TEntry]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sparkline")(svg.asInstanceOf[js.Any], entries.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def sparkline[TEntry](svg: SVGSVGElement, entries: js.Array[TEntry], options: SparklineNonNativeOptions[TEntry]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sparkline")(svg.asInstanceOf[js.Any], entries.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def sparkline[TEntry /* <: SparklineNativeEntry */](svg: SVGSVGElement, entries: js.Array[TEntry]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sparkline")(svg.asInstanceOf[js.Any], entries.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def sparkline[TEntry /* <: SparklineNativeEntry */](svg: SVGSVGElement, entries: js.Array[TEntry], options: SparklineNativeOptions[TEntry]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sparkline")(svg.asInstanceOf[js.Any], entries.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def sparkline[TEntry](svg: SVGSVGElement, entries: js.Array[TEntry], options: SparklineNonNativeOptions[TEntry]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sparkline")(svg.asInstanceOf[js.Any], entries.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type SparklineNativeEntry = Double | Value
   
@@ -39,14 +33,12 @@ object mod {
   trait SparklineNonNativeOptions[TEntry] extends StObject
   object SparklineNonNativeOptions {
     
-    @scala.inline
-    def SparklineOptions(): typings.fnandoSparkline.mod.SparklineOptions = {
+    inline def SparklineOptions(): typings.fnandoSparkline.mod.SparklineOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.fnandoSparkline.mod.SparklineOptions]
     }
     
-    @scala.inline
-    def SparklineOptionsFetch[TEntry](fetch: TEntry => Double): typings.fnandoSparkline.mod.SparklineOptionsFetch[TEntry] = {
+    inline def SparklineOptionsFetch[TEntry](fetch: TEntry => Double): typings.fnandoSparkline.mod.SparklineOptionsFetch[TEntry] = {
       val __obj = js.Dynamic.literal(fetch = js.Any.fromFunction1(fetch))
       __obj.asInstanceOf[typings.fnandoSparkline.mod.SparklineOptionsFetch[TEntry]]
     }
@@ -83,44 +75,32 @@ object mod {
   }
   object SparklineOptions {
     
-    @scala.inline
-    def apply(): SparklineOptions = {
+    inline def apply(): SparklineOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SparklineOptions]
     }
     
-    @scala.inline
-    implicit class SparklineOptionsMutableBuilder[Self <: SparklineOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SparklineOptions](x: Self) {
       
-      @scala.inline
-      def setCursorwidth(value: Double): Self = StObject.set(x, "cursorwidth", value.asInstanceOf[js.Any])
+      inline def setCursorwidth(value: Double): Self = StObject.set(x, "cursorwidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCursorwidthUndefined: Self = StObject.set(x, "cursorwidth", js.undefined)
+      inline def setCursorwidthUndefined: Self = StObject.set(x, "cursorwidth", js.undefined)
       
-      @scala.inline
-      def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
+      inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
+      inline def setInteractiveUndefined: Self = StObject.set(x, "interactive", js.undefined)
       
-      @scala.inline
-      def setOnmousemove(value: /* event */ MouseEvent => Unit): Self = StObject.set(x, "onmousemove", js.Any.fromFunction1(value))
+      inline def setOnmousemove(value: /* event */ MouseEvent => Unit): Self = StObject.set(x, "onmousemove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnmousemoveUndefined: Self = StObject.set(x, "onmousemove", js.undefined)
+      inline def setOnmousemoveUndefined: Self = StObject.set(x, "onmousemove", js.undefined)
       
-      @scala.inline
-      def setOnmouseout(value: /* event */ MouseEvent => Unit): Self = StObject.set(x, "onmouseout", js.Any.fromFunction1(value))
+      inline def setOnmouseout(value: /* event */ MouseEvent => Unit): Self = StObject.set(x, "onmouseout", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnmouseoutUndefined: Self = StObject.set(x, "onmouseout", js.undefined)
+      inline def setOnmouseoutUndefined: Self = StObject.set(x, "onmouseout", js.undefined)
       
-      @scala.inline
-      def setSpotRadius(value: Double): Self = StObject.set(x, "spotRadius", value.asInstanceOf[js.Any])
+      inline def setSpotRadius(value: Double): Self = StObject.set(x, "spotRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpotRadiusUndefined: Self = StObject.set(x, "spotRadius", js.undefined)
+      inline def setSpotRadiusUndefined: Self = StObject.set(x, "spotRadius", js.undefined)
     }
   }
   
@@ -135,17 +115,14 @@ object mod {
   }
   object SparklineOptionsFetch {
     
-    @scala.inline
-    def apply[TEntry](fetch: TEntry => Double): SparklineOptionsFetch[TEntry] = {
+    inline def apply[TEntry](fetch: TEntry => Double): SparklineOptionsFetch[TEntry] = {
       val __obj = js.Dynamic.literal(fetch = js.Any.fromFunction1(fetch))
       __obj.asInstanceOf[SparklineOptionsFetch[TEntry]]
     }
     
-    @scala.inline
-    implicit class SparklineOptionsFetchMutableBuilder[Self <: SparklineOptionsFetch[?], TEntry] (val x: Self & SparklineOptionsFetch[TEntry]) extends AnyVal {
+    extension [Self <: SparklineOptionsFetch[?], TEntry](x: Self & SparklineOptionsFetch[TEntry]) {
       
-      @scala.inline
-      def setFetch(value: TEntry => Double): Self = StObject.set(x, "fetch", js.Any.fromFunction1(value))
+      inline def setFetch(value: TEntry => Double): Self = StObject.set(x, "fetch", js.Any.fromFunction1(value))
     }
   }
 }

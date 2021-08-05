@@ -12,19 +12,15 @@ trait ActionsCreateRemoveTokenForRepoResponseData extends StObject {
 }
 object ActionsCreateRemoveTokenForRepoResponseData {
   
-  @scala.inline
-  def apply(expires_at: String, token: String): ActionsCreateRemoveTokenForRepoResponseData = {
+  inline def apply(expires_at: String, token: String): ActionsCreateRemoveTokenForRepoResponseData = {
     val __obj = js.Dynamic.literal(expires_at = expires_at.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionsCreateRemoveTokenForRepoResponseData]
   }
   
-  @scala.inline
-  implicit class ActionsCreateRemoveTokenForRepoResponseDataMutableBuilder[Self <: ActionsCreateRemoveTokenForRepoResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: ActionsCreateRemoveTokenForRepoResponseData](x: Self) {
     
-    @scala.inline
-    def setExpires_at(value: String): Self = StObject.set(x, "expires_at", value.asInstanceOf[js.Any])
+    inline def setExpires_at(value: String): Self = StObject.set(x, "expires_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
   }
 }

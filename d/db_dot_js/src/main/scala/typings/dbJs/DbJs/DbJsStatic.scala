@@ -14,8 +14,7 @@ trait DbJsStatic extends StObject {
 }
 object DbJsStatic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cmp: (js.Any, js.Any) => Double,
     delete: String => js.Promise[Unit],
     open: OpenOptions => js.Promise[Server]
@@ -24,16 +23,12 @@ object DbJsStatic {
     __obj.asInstanceOf[DbJsStatic]
   }
   
-  @scala.inline
-  implicit class DbJsStaticMutableBuilder[Self <: DbJsStatic] (val x: Self) extends AnyVal {
+  extension [Self <: DbJsStatic](x: Self) {
     
-    @scala.inline
-    def setCmp(value: (js.Any, js.Any) => Double): Self = StObject.set(x, "cmp", js.Any.fromFunction2(value))
+    inline def setCmp(value: (js.Any, js.Any) => Double): Self = StObject.set(x, "cmp", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDelete(value: String => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+    inline def setDelete(value: String => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOpen(value: OpenOptions => js.Promise[Server]): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
+    inline def setOpen(value: OpenOptions => js.Promise[Server]): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
   }
 }

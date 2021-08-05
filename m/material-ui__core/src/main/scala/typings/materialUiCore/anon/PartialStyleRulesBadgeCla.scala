@@ -22,49 +22,35 @@ trait PartialStyleRulesBadgeCla extends StObject {
 }
 object PartialStyleRulesBadgeCla {
   
-  @scala.inline
-  def apply(): PartialStyleRulesBadgeCla = {
+  inline def apply(): PartialStyleRulesBadgeCla = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesBadgeCla]
   }
   
-  @scala.inline
-  implicit class PartialStyleRulesBadgeClaMutableBuilder[Self <: PartialStyleRulesBadgeCla] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleRulesBadgeCla](x: Self) {
     
-    @scala.inline
-    def setBadge(value: CSSProperties): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+    inline def setBadge(value: CSSProperties): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
+    inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
     
-    @scala.inline
-    def setColorPrimary(value: CSSProperties): Self = StObject.set(x, "colorPrimary", value.asInstanceOf[js.Any])
+    inline def setColorPrimary(value: CSSProperties): Self = StObject.set(x, "colorPrimary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorPrimaryUndefined: Self = StObject.set(x, "colorPrimary", js.undefined)
+    inline def setColorPrimaryUndefined: Self = StObject.set(x, "colorPrimary", js.undefined)
     
-    @scala.inline
-    def setColorSecondary(value: CSSProperties): Self = StObject.set(x, "colorSecondary", value.asInstanceOf[js.Any])
+    inline def setColorSecondary(value: CSSProperties): Self = StObject.set(x, "colorSecondary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorSecondaryUndefined: Self = StObject.set(x, "colorSecondary", js.undefined)
+    inline def setColorSecondaryUndefined: Self = StObject.set(x, "colorSecondary", js.undefined)
     
-    @scala.inline
-    def setDot(value: CSSProperties): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
+    inline def setDot(value: CSSProperties): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDotUndefined: Self = StObject.set(x, "dot", js.undefined)
+    inline def setDotUndefined: Self = StObject.set(x, "dot", js.undefined)
     
-    @scala.inline
-    def setInvisible(value: CSSProperties): Self = StObject.set(x, "invisible", value.asInstanceOf[js.Any])
+    inline def setInvisible(value: CSSProperties): Self = StObject.set(x, "invisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvisibleUndefined: Self = StObject.set(x, "invisible", js.undefined)
+    inline def setInvisibleUndefined: Self = StObject.set(x, "invisible", js.undefined)
     
-    @scala.inline
-    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

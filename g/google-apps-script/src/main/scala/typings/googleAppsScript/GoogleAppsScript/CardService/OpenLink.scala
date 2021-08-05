@@ -35,22 +35,17 @@ trait OpenLink extends StObject {
 }
 object OpenLink {
   
-  @scala.inline
-  def apply(setOnClose: OnClose => OpenLink, setOpenAs: OpenAs => OpenLink, setUrl: String => OpenLink): OpenLink = {
+  inline def apply(setOnClose: OnClose => OpenLink, setOpenAs: OpenAs => OpenLink, setUrl: String => OpenLink): OpenLink = {
     val __obj = js.Dynamic.literal(setOnClose = js.Any.fromFunction1(setOnClose), setOpenAs = js.Any.fromFunction1(setOpenAs), setUrl = js.Any.fromFunction1(setUrl))
     __obj.asInstanceOf[OpenLink]
   }
   
-  @scala.inline
-  implicit class OpenLinkMutableBuilder[Self <: OpenLink] (val x: Self) extends AnyVal {
+  extension [Self <: OpenLink](x: Self) {
     
-    @scala.inline
-    def setSetOnClose(value: OnClose => OpenLink): Self = StObject.set(x, "setOnClose", js.Any.fromFunction1(value))
+    inline def setSetOnClose(value: OnClose => OpenLink): Self = StObject.set(x, "setOnClose", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOpenAs(value: OpenAs => OpenLink): Self = StObject.set(x, "setOpenAs", js.Any.fromFunction1(value))
+    inline def setSetOpenAs(value: OpenAs => OpenLink): Self = StObject.set(x, "setOpenAs", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetUrl(value: String => OpenLink): Self = StObject.set(x, "setUrl", js.Any.fromFunction1(value))
+    inline def setSetUrl(value: String => OpenLink): Self = StObject.set(x, "setUrl", js.Any.fromFunction1(value))
   }
 }

@@ -33,40 +33,29 @@ trait INewContact extends StObject {
 }
 object INewContact {
   
-  @scala.inline
-  def apply(): INewContact = {
+  inline def apply(): INewContact = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[INewContact]
   }
   
-  @scala.inline
-  implicit class INewContactMutableBuilder[Self <: INewContact] (val x: Self) extends AnyVal {
+  extension [Self <: INewContact](x: Self) {
     
-    @scala.inline
-    def setEmails(value: Business): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
+    inline def setEmails(value: Business): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailsUndefined: Self = StObject.set(x, "emails", js.undefined)
+    inline def setEmailsUndefined: Self = StObject.set(x, "emails", js.undefined)
     
-    @scala.inline
-    def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
+    inline def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirst_nameUndefined: Self = StObject.set(x, "first_name", js.undefined)
+    inline def setFirst_nameUndefined: Self = StObject.set(x, "first_name", js.undefined)
     
-    @scala.inline
-    def setLast_name(value: String): Self = StObject.set(x, "last_name", value.asInstanceOf[js.Any])
+    inline def setLast_name(value: String): Self = StObject.set(x, "last_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast_nameUndefined: Self = StObject.set(x, "last_name", js.undefined)
+    inline def setLast_nameUndefined: Self = StObject.set(x, "last_name", js.undefined)
     
-    @scala.inline
-    def setWork(value: js.Array[Employer]): Self = StObject.set(x, "work", value.asInstanceOf[js.Any])
+    inline def setWork(value: js.Array[Employer]): Self = StObject.set(x, "work", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkUndefined: Self = StObject.set(x, "work", js.undefined)
+    inline def setWorkUndefined: Self = StObject.set(x, "work", js.undefined)
     
-    @scala.inline
-    def setWorkVarargs(value: Employer*): Self = StObject.set(x, "work", js.Array(value :_*))
+    inline def setWorkVarargs(value: Employer*): Self = StObject.set(x, "work", js.Array(value :_*))
   }
 }

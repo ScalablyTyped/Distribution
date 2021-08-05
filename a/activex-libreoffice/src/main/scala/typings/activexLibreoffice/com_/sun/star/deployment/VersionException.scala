@@ -31,8 +31,7 @@ trait VersionException
 }
 object VersionException {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Context: XInterface,
     Deployed: XPackage,
     Message: String,
@@ -43,16 +42,12 @@ object VersionException {
     __obj.asInstanceOf[VersionException]
   }
   
-  @scala.inline
-  implicit class VersionExceptionMutableBuilder[Self <: VersionException] (val x: Self) extends AnyVal {
+  extension [Self <: VersionException](x: Self) {
     
-    @scala.inline
-    def setDeployed(value: XPackage): Self = StObject.set(x, "Deployed", value.asInstanceOf[js.Any])
+    inline def setDeployed(value: XPackage): Self = StObject.set(x, "Deployed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewDisplayName(value: String): Self = StObject.set(x, "NewDisplayName", value.asInstanceOf[js.Any])
+    inline def setNewDisplayName(value: String): Self = StObject.set(x, "NewDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewVersion(value: String): Self = StObject.set(x, "NewVersion", value.asInstanceOf[js.Any])
+    inline def setNewVersion(value: String): Self = StObject.set(x, "NewVersion", value.asInstanceOf[js.Any])
   }
 }

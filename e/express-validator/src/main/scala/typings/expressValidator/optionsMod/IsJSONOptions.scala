@@ -10,19 +10,15 @@ trait IsJSONOptions extends StObject {
 }
 object IsJSONOptions {
   
-  @scala.inline
-  def apply(): IsJSONOptions = {
+  inline def apply(): IsJSONOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IsJSONOptions]
   }
   
-  @scala.inline
-  implicit class IsJSONOptionsMutableBuilder[Self <: IsJSONOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IsJSONOptions](x: Self) {
     
-    @scala.inline
-    def setAllow_primitives(value: Boolean): Self = StObject.set(x, "allow_primitives", value.asInstanceOf[js.Any])
+    inline def setAllow_primitives(value: Boolean): Self = StObject.set(x, "allow_primitives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllow_primitivesUndefined: Self = StObject.set(x, "allow_primitives", js.undefined)
+    inline def setAllow_primitivesUndefined: Self = StObject.set(x, "allow_primitives", js.undefined)
   }
 }

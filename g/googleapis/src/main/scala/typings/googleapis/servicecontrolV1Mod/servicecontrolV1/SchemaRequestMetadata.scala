@@ -62,43 +62,31 @@ trait SchemaRequestMetadata extends StObject {
 }
 object SchemaRequestMetadata {
   
-  @scala.inline
-  def apply(): SchemaRequestMetadata = {
+  inline def apply(): SchemaRequestMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRequestMetadata]
   }
   
-  @scala.inline
-  implicit class SchemaRequestMetadataMutableBuilder[Self <: SchemaRequestMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRequestMetadata](x: Self) {
     
-    @scala.inline
-    def setCallerIp(value: String): Self = StObject.set(x, "callerIp", value.asInstanceOf[js.Any])
+    inline def setCallerIp(value: String): Self = StObject.set(x, "callerIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallerIpUndefined: Self = StObject.set(x, "callerIp", js.undefined)
+    inline def setCallerIpUndefined: Self = StObject.set(x, "callerIp", js.undefined)
     
-    @scala.inline
-    def setCallerNetwork(value: String): Self = StObject.set(x, "callerNetwork", value.asInstanceOf[js.Any])
+    inline def setCallerNetwork(value: String): Self = StObject.set(x, "callerNetwork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallerNetworkUndefined: Self = StObject.set(x, "callerNetwork", js.undefined)
+    inline def setCallerNetworkUndefined: Self = StObject.set(x, "callerNetwork", js.undefined)
     
-    @scala.inline
-    def setCallerSuppliedUserAgent(value: String): Self = StObject.set(x, "callerSuppliedUserAgent", value.asInstanceOf[js.Any])
+    inline def setCallerSuppliedUserAgent(value: String): Self = StObject.set(x, "callerSuppliedUserAgent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallerSuppliedUserAgentUndefined: Self = StObject.set(x, "callerSuppliedUserAgent", js.undefined)
+    inline def setCallerSuppliedUserAgentUndefined: Self = StObject.set(x, "callerSuppliedUserAgent", js.undefined)
     
-    @scala.inline
-    def setDestinationAttributes(value: SchemaPeer): Self = StObject.set(x, "destinationAttributes", value.asInstanceOf[js.Any])
+    inline def setDestinationAttributes(value: SchemaPeer): Self = StObject.set(x, "destinationAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationAttributesUndefined: Self = StObject.set(x, "destinationAttributes", js.undefined)
+    inline def setDestinationAttributesUndefined: Self = StObject.set(x, "destinationAttributes", js.undefined)
     
-    @scala.inline
-    def setRequestAttributes(value: SchemaRequest): Self = StObject.set(x, "requestAttributes", value.asInstanceOf[js.Any])
+    inline def setRequestAttributes(value: SchemaRequest): Self = StObject.set(x, "requestAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestAttributesUndefined: Self = StObject.set(x, "requestAttributes", js.undefined)
+    inline def setRequestAttributesUndefined: Self = StObject.set(x, "requestAttributes", js.undefined)
   }
 }

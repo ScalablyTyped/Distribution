@@ -10,16 +10,13 @@ trait IsVDevice extends StObject {
 }
 object IsVDevice {
   
-  @scala.inline
-  def apply(isVDevice: Boolean): IsVDevice = {
+  inline def apply(isVDevice: Boolean): IsVDevice = {
     val __obj = js.Dynamic.literal(isVDevice = isVDevice.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsVDevice]
   }
   
-  @scala.inline
-  implicit class IsVDeviceMutableBuilder[Self <: IsVDevice] (val x: Self) extends AnyVal {
+  extension [Self <: IsVDevice](x: Self) {
     
-    @scala.inline
-    def setIsVDevice(value: Boolean): Self = StObject.set(x, "isVDevice", value.asInstanceOf[js.Any])
+    inline def setIsVDevice(value: Boolean): Self = StObject.set(x, "isVDevice", value.asInstanceOf[js.Any])
   }
 }

@@ -23,31 +23,23 @@ trait LocalVolumeResourceData extends StObject {
 }
 object LocalVolumeResourceData {
   
-  @scala.inline
-  def apply(): LocalVolumeResourceData = {
+  inline def apply(): LocalVolumeResourceData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocalVolumeResourceData]
   }
   
-  @scala.inline
-  implicit class LocalVolumeResourceDataMutableBuilder[Self <: LocalVolumeResourceData] (val x: Self) extends AnyVal {
+  extension [Self <: LocalVolumeResourceData](x: Self) {
     
-    @scala.inline
-    def setDestinationPath(value: string): Self = StObject.set(x, "DestinationPath", value.asInstanceOf[js.Any])
+    inline def setDestinationPath(value: string): Self = StObject.set(x, "DestinationPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationPathUndefined: Self = StObject.set(x, "DestinationPath", js.undefined)
+    inline def setDestinationPathUndefined: Self = StObject.set(x, "DestinationPath", js.undefined)
     
-    @scala.inline
-    def setGroupOwnerSetting(value: GroupOwnerSetting): Self = StObject.set(x, "GroupOwnerSetting", value.asInstanceOf[js.Any])
+    inline def setGroupOwnerSetting(value: GroupOwnerSetting): Self = StObject.set(x, "GroupOwnerSetting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupOwnerSettingUndefined: Self = StObject.set(x, "GroupOwnerSetting", js.undefined)
+    inline def setGroupOwnerSettingUndefined: Self = StObject.set(x, "GroupOwnerSetting", js.undefined)
     
-    @scala.inline
-    def setSourcePath(value: string): Self = StObject.set(x, "SourcePath", value.asInstanceOf[js.Any])
+    inline def setSourcePath(value: string): Self = StObject.set(x, "SourcePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcePathUndefined: Self = StObject.set(x, "SourcePath", js.undefined)
+    inline def setSourcePathUndefined: Self = StObject.set(x, "SourcePath", js.undefined)
   }
 }

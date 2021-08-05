@@ -18,19 +18,19 @@ object testSchedulerMod {
   class TestScheduler protected () extends Scheduler {
     def this(isReset: Boolean) = this()
     
-    var _clock: js.Any = js.native
+    /* private */ var _clock: js.Any = js.native
     
-    var _disposedTime: js.Any = js.native
+    /* private */ var _disposedTime: js.Any = js.native
     
     /* private */ def _exec(time: js.Any, map: js.Any): js.Any = js.native
     
     /* private */ def _getMinAndMaxTime(): js.Any = js.native
     
-    var _isDisposed: js.Any = js.native
+    /* private */ var _isDisposed: js.Any = js.native
     
-    var _isReset: js.Any = js.native
+    /* private */ var _isReset: js.Any = js.native
     
-    var _observer: js.Any = js.native
+    /* private */ var _observer: js.Any = js.native
     
     /* private */ def _runAt(time: js.Any, callback: js.Any): js.Any = js.native
     
@@ -38,13 +38,13 @@ object testSchedulerMod {
     
     /* private */ def _setClock(): js.Any = js.native
     
-    var _streamMap: js.Any = js.native
+    /* private */ var _streamMap: js.Any = js.native
     
-    var _subscribedTime: js.Any = js.native
+    /* private */ var _subscribedTime: js.Any = js.native
     
     /* private */ def _tick(time: js.Any): js.Any = js.native
     
-    var _timerMap: js.Any = js.native
+    /* private */ var _timerMap: js.Any = js.native
     
     var clock: Double = js.native
     
@@ -81,18 +81,13 @@ object testSchedulerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def completed(tick: js.Any): Record = ^.asInstanceOf[js.Dynamic].applyDynamic("completed")(tick.asInstanceOf[js.Any]).asInstanceOf[Record]
+    inline def completed(tick: js.Any): Record = ^.asInstanceOf[js.Dynamic].applyDynamic("completed")(tick.asInstanceOf[js.Any]).asInstanceOf[Record]
     
-    @scala.inline
-    def create(): TestScheduler = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TestScheduler]
-    @scala.inline
-    def create(isReset: Boolean): TestScheduler = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(isReset.asInstanceOf[js.Any]).asInstanceOf[TestScheduler]
+    inline def create(): TestScheduler = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TestScheduler]
+    inline def create(isReset: Boolean): TestScheduler = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(isReset.asInstanceOf[js.Any]).asInstanceOf[TestScheduler]
     
-    @scala.inline
-    def error(tick: js.Any, error: js.Any): Record = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(tick.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Record]
+    inline def error(tick: js.Any, error: js.Any): Record = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(tick.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Record]
     
-    @scala.inline
-    def next(tick: js.Any, value: js.Any): Record = (^.asInstanceOf[js.Dynamic].applyDynamic("next")(tick.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Record]
+    inline def next(tick: js.Any, value: js.Any): Record = (^.asInstanceOf[js.Dynamic].applyDynamic("next")(tick.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Record]
   }
 }

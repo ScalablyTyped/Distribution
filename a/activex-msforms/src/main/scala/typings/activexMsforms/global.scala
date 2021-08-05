@@ -35,7 +35,7 @@ object global {
     
     @JSGlobal("MSForms.CheckBox")
     @js.native
-    class CheckBox protected ()
+    /* private */ class CheckBox ()
       extends StObject
          with typings.activexMsforms.MSForms.CheckBox {
       
@@ -99,7 +99,7 @@ object global {
       /* CompleteClass */
       var Locked: Boolean = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSForms.CheckBox_typekey")
       var MSFormsDotCheckBox_typekey: typings.activexMsforms.MSForms.CheckBox = js.native
       
@@ -142,13 +142,13 @@ object global {
     
     @JSGlobal("MSForms.ComboBox")
     @js.native
-    class ComboBox protected ()
+    /* private */ class ComboBox ()
       extends StObject
          with typings.activexMsforms.MSForms.ComboBox
     
     @JSGlobal("MSForms.CommandButton")
     @js.native
-    class CommandButton protected ()
+    /* private */ class CommandButton ()
       extends StObject
          with typings.activexMsforms.MSForms.CommandButton {
       
@@ -200,7 +200,7 @@ object global {
       /* CompleteClass */
       var Locked: Boolean = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSForms.CommandButton_typekey")
       var MSFormsDotCommandButton_typekey: typings.activexMsforms.MSForms.CommandButton = js.native
       
@@ -231,25 +231,25 @@ object global {
     
     @JSGlobal("MSForms.Control")
     @js.native
-    class Control protected ()
+    /* private */ class Control ()
       extends StObject
          with typings.activexMsforms.MSForms.Control
     
     @JSGlobal("MSForms.DataObject")
     @js.native
-    class DataObject protected ()
+    /* private */ class DataObject ()
       extends StObject
          with typings.activexMsforms.MSForms.DataObject
     
     @JSGlobal("MSForms.Frame")
     @js.native
-    class Frame protected ()
+    /* private */ class Frame ()
       extends StObject
          with typings.activexMsforms.MSForms.Frame
     
     @JSGlobal("MSForms.HTMLCheckbox")
     @js.native
-    class HTMLCheckbox protected ()
+    /* private */ class HTMLCheckbox ()
       extends StObject
          with typings.activexMsforms.MSForms.HTMLCheckbox {
       
@@ -262,7 +262,7 @@ object global {
       /* CompleteClass */
       var HTMLType: String = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSForms.HTMLCheckbox_typekey")
       var MSFormsDotHTMLCheckbox_typekey: typings.activexMsforms.MSForms.HTMLCheckbox = js.native
       
@@ -272,7 +272,7 @@ object global {
     
     @JSGlobal("MSForms.HTMLHidden")
     @js.native
-    class HTMLHidden protected ()
+    /* private */ class HTMLHidden ()
       extends StObject
          with typings.activexMsforms.MSForms.HTMLHidden {
       
@@ -282,7 +282,7 @@ object global {
       /* CompleteClass */
       var HTMLType: String = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSForms.HTMLHidden_typekey")
       var MSFormsDotHTMLHidden_typekey: typings.activexMsforms.MSForms.HTMLHidden = js.native
       
@@ -292,7 +292,7 @@ object global {
     
     @JSGlobal("MSForms.HTMLImage")
     @js.native
-    class HTMLImage protected ()
+    /* private */ class HTMLImage ()
       extends StObject
          with typings.activexMsforms.MSForms.HTMLImage {
       
@@ -308,7 +308,7 @@ object global {
       /* CompleteClass */
       var HTMLType: String = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSForms.HTMLImage_typekey")
       var MSFormsDotHTMLImage_typekey: typings.activexMsforms.MSForms.HTMLImage = js.native
       
@@ -321,7 +321,7 @@ object global {
     
     @JSGlobal("MSForms.HTMLOption")
     @js.native
-    class HTMLOption protected ()
+    /* private */ class HTMLOption ()
       extends StObject
          with typings.activexMsforms.MSForms.HTMLOption {
       
@@ -337,7 +337,7 @@ object global {
       /* CompleteClass */
       var HTMLType: String = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSForms.HTMLOption_typekey")
       var MSFormsDotHTMLOption_typekey: typings.activexMsforms.MSForms.HTMLOption = js.native
       
@@ -347,7 +347,7 @@ object global {
     
     @JSGlobal("MSForms.HTMLPassword")
     @js.native
-    class HTMLPassword protected ()
+    /* private */ class HTMLPassword ()
       extends StObject
          with typings.activexMsforms.MSForms.HTMLPassword {
       
@@ -357,7 +357,7 @@ object global {
       /* CompleteClass */
       var HTMLType: String = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSForms.HTMLPassword_typekey")
       var MSFormsDotHTMLPassword_typekey: typings.activexMsforms.MSForms.HTMLPassword = js.native
       
@@ -373,7 +373,7 @@ object global {
     
     @JSGlobal("MSForms.HTMLReset")
     @js.native
-    class HTMLReset protected ()
+    /* private */ class HTMLReset ()
       extends StObject
          with typings.activexMsforms.MSForms.HTMLReset {
       
@@ -386,14 +386,14 @@ object global {
       /* CompleteClass */
       var HTMLType: String = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSForms.HTMLReset_typekey")
       var MSFormsDotHTMLReset_typekey: typings.activexMsforms.MSForms.HTMLReset = js.native
     }
     
     @JSGlobal("MSForms.HTMLSelect")
     @js.native
-    class HTMLSelect protected ()
+    /* private */ class HTMLSelect ()
       extends StObject
          with typings.activexMsforms.MSForms.HTMLSelect {
       
@@ -403,7 +403,7 @@ object global {
       /* CompleteClass */
       var HTMLName: String = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSForms.HTMLSelect_typekey")
       var MSFormsDotHTMLSelect_typekey: typings.activexMsforms.MSForms.HTMLSelect = js.native
       
@@ -422,7 +422,7 @@ object global {
     
     @JSGlobal("MSForms.HTMLSubmit")
     @js.native
-    class HTMLSubmit protected ()
+    /* private */ class HTMLSubmit ()
       extends StObject
          with typings.activexMsforms.MSForms.HTMLSubmit {
       
@@ -441,7 +441,7 @@ object global {
       /* CompleteClass */
       var HTMLType: String = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSForms.HTMLSubmit_typekey")
       var MSFormsDotHTMLSubmit_typekey: typings.activexMsforms.MSForms.HTMLSubmit = js.native
       
@@ -451,7 +451,7 @@ object global {
     
     @JSGlobal("MSForms.HTMLText")
     @js.native
-    class HTMLText protected ()
+    /* private */ class HTMLText ()
       extends StObject
          with typings.activexMsforms.MSForms.HTMLText {
       
@@ -461,7 +461,7 @@ object global {
       /* CompleteClass */
       var HTMLType: String = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSForms.HTMLText_typekey")
       var MSFormsDotHTMLText_typekey: typings.activexMsforms.MSForms.HTMLText = js.native
       
@@ -477,7 +477,7 @@ object global {
     
     @JSGlobal("MSForms.HTMLTextArea")
     @js.native
-    class HTMLTextArea protected ()
+    /* private */ class HTMLTextArea ()
       extends StObject
          with typings.activexMsforms.MSForms.HTMLTextArea {
       
@@ -487,7 +487,7 @@ object global {
       /* CompleteClass */
       var HTMLName: String = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSForms.HTMLTextArea_typekey")
       var MSFormsDotHTMLTextArea_typekey: typings.activexMsforms.MSForms.HTMLTextArea = js.native
       
@@ -503,7 +503,7 @@ object global {
     
     @JSGlobal("MSForms.Image")
     @js.native
-    class Image protected ()
+    /* private */ class Image ()
       extends StObject
          with typings.activexMsforms.MSForms.Image {
       
@@ -525,7 +525,7 @@ object global {
       /* CompleteClass */
       var Enabled: Boolean = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSForms.Image_typekey")
       var MSFormsDotImage_typekey: typings.activexMsforms.MSForms.Image = js.native
       
@@ -553,7 +553,7 @@ object global {
     
     @JSGlobal("MSForms.Label")
     @js.native
-    class Label protected ()
+    /* private */ class Label ()
       extends StObject
          with typings.activexMsforms.MSForms.Label {
       
@@ -608,7 +608,7 @@ object global {
       /* CompleteClass */
       var ForeColor: Double = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSForms.Label_typekey")
       var MSFormsDotLabel_typekey: typings.activexMsforms.MSForms.Label = js.native
       
@@ -642,13 +642,13 @@ object global {
     
     @JSGlobal("MSForms.ListBox")
     @js.native
-    class ListBox protected ()
+    /* private */ class ListBox ()
       extends StObject
          with typings.activexMsforms.MSForms.ListBox
     
     @JSGlobal("MSForms.MultiPage")
     @js.native
-    class MultiPage protected ()
+    /* private */ class MultiPage ()
       extends StObject
          with typings.activexMsforms.MSForms.MultiPage {
       
@@ -685,7 +685,7 @@ object global {
       /* CompleteClass */
       var ForeColor: Double = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSForms.MultiPage_typekey")
       var MSFormsDotMultiPage_typekey: typings.activexMsforms.MSForms.MultiPage = js.native
       
@@ -734,7 +734,7 @@ object global {
     
     @JSGlobal("MSForms.NewFont")
     @js.native
-    class NewFont protected ()
+    /* private */ class NewFont ()
       extends StObject
          with typings.activexMsforms.MSForms.NewFont {
       
@@ -747,7 +747,7 @@ object global {
       /* CompleteClass */
       override val Italic: Boolean = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSForms.NewFont_typekey")
       var MSFormsDotNewFont_typekey: typings.activexMsforms.MSForms.NewFont = js.native
       
@@ -769,7 +769,7 @@ object global {
     
     @JSGlobal("MSForms.OptionButton")
     @js.native
-    class OptionButton protected ()
+    /* private */ class OptionButton ()
       extends StObject
          with typings.activexMsforms.MSForms.OptionButton {
       
@@ -833,7 +833,7 @@ object global {
       /* CompleteClass */
       var Locked: Boolean = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSForms.OptionButton_typekey")
       var MSFormsDotOptionButton_typekey: typings.activexMsforms.MSForms.OptionButton = js.native
       
@@ -876,17 +876,17 @@ object global {
     
     @JSGlobal("MSForms.Page")
     @js.native
-    class Page protected ()
+    /* private */ class Page ()
       extends StObject
          with typings.activexMsforms.MSForms.Page
     
     @JSGlobal("MSForms.ReturnBoolean")
     @js.native
-    class ReturnBoolean protected ()
+    /* private */ class ReturnBoolean ()
       extends StObject
          with typings.activexMsforms.MSForms.ReturnBoolean {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSForms.ReturnBoolean_typekey")
       var MSFormsDotReturnBoolean_typekey: typings.activexMsforms.MSForms.ReturnBoolean = js.native
       
@@ -896,11 +896,11 @@ object global {
     
     @JSGlobal("MSForms.ReturnEffect")
     @js.native
-    class ReturnEffect protected ()
+    /* private */ class ReturnEffect ()
       extends StObject
          with typings.activexMsforms.MSForms.ReturnEffect {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSForms.ReturnEffect_typekey")
       var MSFormsDotReturnEffect_typekey: typings.activexMsforms.MSForms.ReturnEffect = js.native
       
@@ -910,11 +910,11 @@ object global {
     
     @JSGlobal("MSForms.ReturnInteger")
     @js.native
-    class ReturnInteger protected ()
+    /* private */ class ReturnInteger ()
       extends StObject
          with typings.activexMsforms.MSForms.ReturnInteger {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSForms.ReturnInteger_typekey")
       var MSFormsDotReturnInteger_typekey: typings.activexMsforms.MSForms.ReturnInteger = js.native
       
@@ -924,11 +924,11 @@ object global {
     
     @JSGlobal("MSForms.ReturnSingle")
     @js.native
-    class ReturnSingle protected ()
+    /* private */ class ReturnSingle ()
       extends StObject
          with typings.activexMsforms.MSForms.ReturnSingle {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSForms.ReturnSingle_typekey")
       var MSFormsDotReturnSingle_typekey: typings.activexMsforms.MSForms.ReturnSingle = js.native
       
@@ -938,11 +938,11 @@ object global {
     
     @JSGlobal("MSForms.ReturnString")
     @js.native
-    class ReturnString protected ()
+    /* private */ class ReturnString ()
       extends StObject
          with typings.activexMsforms.MSForms.ReturnString {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSForms.ReturnString_typekey")
       var MSFormsDotReturnString_typekey: typings.activexMsforms.MSForms.ReturnString = js.native
       
@@ -952,7 +952,7 @@ object global {
     
     @JSGlobal("MSForms.ScrollBar")
     @js.native
-    class ScrollBar protected ()
+    /* private */ class ScrollBar ()
       extends StObject
          with typings.activexMsforms.MSForms.ScrollBar {
       
@@ -971,7 +971,7 @@ object global {
       /* CompleteClass */
       var LargeChange: Double = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSForms.ScrollBar_typekey")
       var MSFormsDotScrollBar_typekey: typings.activexMsforms.MSForms.ScrollBar = js.native
       
@@ -1002,7 +1002,7 @@ object global {
     
     @JSGlobal("MSForms.SpinButton")
     @js.native
-    class SpinButton protected ()
+    /* private */ class SpinButton ()
       extends StObject
          with typings.activexMsforms.MSForms.SpinButton {
       
@@ -1018,7 +1018,7 @@ object global {
       /* CompleteClass */
       var ForeColor: Double = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSForms.SpinButton_typekey")
       var MSFormsDotSpinButton_typekey: typings.activexMsforms.MSForms.SpinButton = js.native
       
@@ -1046,7 +1046,7 @@ object global {
     
     @JSGlobal("MSForms.Tab")
     @js.native
-    class Tab protected ()
+    /* private */ class Tab ()
       extends StObject
          with typings.activexMsforms.MSForms.Tab {
       
@@ -1065,7 +1065,7 @@ object global {
       /* CompleteClass */
       var Index: Double = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSForms.Tab_typekey")
       var MSFormsDotTab_typekey: typings.activexMsforms.MSForms.Tab = js.native
       
@@ -1081,7 +1081,7 @@ object global {
     
     @JSGlobal("MSForms.TabStrip")
     @js.native
-    class TabStrip protected ()
+    /* private */ class TabStrip ()
       extends StObject
          with typings.activexMsforms.MSForms.TabStrip {
       
@@ -1130,7 +1130,7 @@ object global {
       /* CompleteClass */
       var ForeColor: Double = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSForms.TabStrip_typekey")
       var MSFormsDotTabStrip_typekey: typings.activexMsforms.MSForms.TabStrip = js.native
       
@@ -1197,7 +1197,7 @@ object global {
     
     @JSGlobal("MSForms.TextBox")
     @js.native
-    class TextBox protected ()
+    /* private */ class TextBox ()
       extends StObject
          with typings.activexMsforms.MSForms.TextBox {
       
@@ -1309,7 +1309,7 @@ object global {
       /* CompleteClass */
       var Locked: Boolean = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSForms.TextBox_typekey")
       var MSFormsDotTextBox_typekey: typings.activexMsforms.MSForms.TextBox = js.native
       
@@ -1379,7 +1379,7 @@ object global {
     
     @JSGlobal("MSForms.ToggleButton")
     @js.native
-    class ToggleButton protected ()
+    /* private */ class ToggleButton ()
       extends StObject
          with typings.activexMsforms.MSForms.ToggleButton {
       
@@ -1443,7 +1443,7 @@ object global {
       /* CompleteClass */
       var Locked: Boolean = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("MSForms.ToggleButton_typekey")
       var MSFormsDotToggleButton_typekey: typings.activexMsforms.MSForms.ToggleButton = js.native
       
@@ -1486,7 +1486,7 @@ object global {
     
     @JSGlobal("MSForms.UserForm")
     @js.native
-    class UserForm protected ()
+    /* private */ class UserForm ()
       extends StObject
          with typings.activexMsforms.MSForms.UserForm
   }

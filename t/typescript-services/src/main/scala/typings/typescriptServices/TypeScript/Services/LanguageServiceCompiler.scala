@@ -22,7 +22,7 @@ trait LanguageServiceCompiler extends StObject {
   
   def compilationSettings(): ImmutableCompilationSettings
   
-  var compiler: js.Any
+  /* private */ var compiler: js.Any
   
   def emit(fileName: String, resolvePath: js.Function1[/* path */ String, String]): EmitOutput
   
@@ -56,11 +56,11 @@ trait LanguageServiceCompiler extends StObject {
   
   def getVisibleMemberSymbolsFromAST(ast: AST, document: Document): PullVisibleSymbolsInfo
   
-  var host: js.Any
+  /* private */ var host: js.Any
   
-  var hostCache: js.Any
+  /* private */ var hostCache: js.Any
   
-  var logger: js.Any
+  /* private */ var logger: js.Any
   
   def pullGetDeclInformation(decl: PullDecl, ast: AST, document: Document): PullSymbolInfo
   
@@ -74,8 +74,7 @@ trait LanguageServiceCompiler extends StObject {
 }
 object LanguageServiceCompiler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canEmitDeclarations: String => Boolean,
     cleanupSemanticCache: () => Unit,
     compilationSettings: () => ImmutableCompilationSettings,
@@ -109,91 +108,62 @@ object LanguageServiceCompiler {
     __obj.asInstanceOf[LanguageServiceCompiler]
   }
   
-  @scala.inline
-  implicit class LanguageServiceCompilerMutableBuilder[Self <: LanguageServiceCompiler] (val x: Self) extends AnyVal {
+  extension [Self <: LanguageServiceCompiler](x: Self) {
     
-    @scala.inline
-    def setCanEmitDeclarations(value: String => Boolean): Self = StObject.set(x, "canEmitDeclarations", js.Any.fromFunction1(value))
+    inline def setCanEmitDeclarations(value: String => Boolean): Self = StObject.set(x, "canEmitDeclarations", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCleanupSemanticCache(value: () => Unit): Self = StObject.set(x, "cleanupSemanticCache", js.Any.fromFunction0(value))
+    inline def setCleanupSemanticCache(value: () => Unit): Self = StObject.set(x, "cleanupSemanticCache", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCompilationSettings(value: () => ImmutableCompilationSettings): Self = StObject.set(x, "compilationSettings", js.Any.fromFunction0(value))
+    inline def setCompilationSettings(value: () => ImmutableCompilationSettings): Self = StObject.set(x, "compilationSettings", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCompiler(value: js.Any): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
+    inline def setCompiler(value: js.Any): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmit(value: (String, js.Function1[/* path */ String, String]) => EmitOutput): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+    inline def setEmit(value: (String, js.Function1[/* path */ String, String]) => EmitOutput): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEmitDeclarations(value: (String, js.Function1[/* path */ String, String]) => EmitOutput): Self = StObject.set(x, "emitDeclarations", js.Any.fromFunction2(value))
+    inline def setEmitDeclarations(value: (String, js.Function1[/* path */ String, String]) => EmitOutput): Self = StObject.set(x, "emitDeclarations", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFileNames(value: () => js.Array[String]): Self = StObject.set(x, "fileNames", js.Any.fromFunction0(value))
+    inline def setFileNames(value: () => js.Array[String]): Self = StObject.set(x, "fileNames", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCachedHostFileName(value: String => String): Self = StObject.set(x, "getCachedHostFileName", js.Any.fromFunction1(value))
+    inline def setGetCachedHostFileName(value: String => String): Self = StObject.set(x, "getCachedHostFileName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCachedTopLevelDeclaration(value: String => PullDecl): Self = StObject.set(x, "getCachedTopLevelDeclaration", js.Any.fromFunction1(value))
+    inline def setGetCachedTopLevelDeclaration(value: String => PullDecl): Self = StObject.set(x, "getCachedTopLevelDeclaration", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCallInformationFromAST(value: (AST, Document) => PullCallSymbolInfo): Self = StObject.set(x, "getCallInformationFromAST", js.Any.fromFunction2(value))
+    inline def setGetCallInformationFromAST(value: (AST, Document) => PullCallSymbolInfo): Self = StObject.set(x, "getCallInformationFromAST", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetCompilerOptionsDiagnostics(value: js.Function1[/* path */ String, String] => js.Array[Diagnostic]): Self = StObject.set(x, "getCompilerOptionsDiagnostics", js.Any.fromFunction1(value))
+    inline def setGetCompilerOptionsDiagnostics(value: js.Function1[/* path */ String, String] => js.Array[Diagnostic]): Self = StObject.set(x, "getCompilerOptionsDiagnostics", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetContextualMembersFromAST(value: (AST, Document) => PullVisibleSymbolsInfo): Self = StObject.set(x, "getContextualMembersFromAST", js.Any.fromFunction2(value))
+    inline def setGetContextualMembersFromAST(value: (AST, Document) => PullVisibleSymbolsInfo): Self = StObject.set(x, "getContextualMembersFromAST", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetDeclForAST(value: AST => PullDecl): Self = StObject.set(x, "getDeclForAST", js.Any.fromFunction1(value))
+    inline def setGetDeclForAST(value: AST => PullDecl): Self = StObject.set(x, "getDeclForAST", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDocument(value: String => Document): Self = StObject.set(x, "getDocument", js.Any.fromFunction1(value))
+    inline def setGetDocument(value: String => Document): Self = StObject.set(x, "getDocument", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetScriptSnapshot(value: String => IScriptSnapshot): Self = StObject.set(x, "getScriptSnapshot", js.Any.fromFunction1(value))
+    inline def setGetScriptSnapshot(value: String => IScriptSnapshot): Self = StObject.set(x, "getScriptSnapshot", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSemanticDiagnostics(value: String => js.Array[Diagnostic]): Self = StObject.set(x, "getSemanticDiagnostics", js.Any.fromFunction1(value))
+    inline def setGetSemanticDiagnostics(value: String => js.Array[Diagnostic]): Self = StObject.set(x, "getSemanticDiagnostics", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSymbolInformationFromAST(value: (AST, Document) => PullSymbolInfo): Self = StObject.set(x, "getSymbolInformationFromAST", js.Any.fromFunction2(value))
+    inline def setGetSymbolInformationFromAST(value: (AST, Document) => PullSymbolInfo): Self = StObject.set(x, "getSymbolInformationFromAST", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetSyntacticDiagnostics(value: String => js.Array[Diagnostic]): Self = StObject.set(x, "getSyntacticDiagnostics", js.Any.fromFunction1(value))
+    inline def setGetSyntacticDiagnostics(value: String => js.Array[Diagnostic]): Self = StObject.set(x, "getSyntacticDiagnostics", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetVisibleDeclsFromAST(value: (AST, Document) => js.Array[PullDecl]): Self = StObject.set(x, "getVisibleDeclsFromAST", js.Any.fromFunction2(value))
+    inline def setGetVisibleDeclsFromAST(value: (AST, Document) => js.Array[PullDecl]): Self = StObject.set(x, "getVisibleDeclsFromAST", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetVisibleMemberSymbolsFromAST(value: (AST, Document) => PullVisibleSymbolsInfo): Self = StObject.set(x, "getVisibleMemberSymbolsFromAST", js.Any.fromFunction2(value))
+    inline def setGetVisibleMemberSymbolsFromAST(value: (AST, Document) => PullVisibleSymbolsInfo): Self = StObject.set(x, "getVisibleMemberSymbolsFromAST", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHost(value: js.Any): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: js.Any): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostCache(value: js.Any): Self = StObject.set(x, "hostCache", value.asInstanceOf[js.Any])
+    inline def setHostCache(value: js.Any): Self = StObject.set(x, "hostCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogger(value: js.Any): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+    inline def setLogger(value: js.Any): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullGetDeclInformation(value: (PullDecl, AST, Document) => PullSymbolInfo): Self = StObject.set(x, "pullGetDeclInformation", js.Any.fromFunction3(value))
+    inline def setPullGetDeclInformation(value: (PullDecl, AST, Document) => PullSymbolInfo): Self = StObject.set(x, "pullGetDeclInformation", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSynchronizeHostData(value: () => js.Any): Self = StObject.set(x, "synchronizeHostData", js.Any.fromFunction0(value))
+    inline def setSynchronizeHostData(value: () => js.Any): Self = StObject.set(x, "synchronizeHostData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSynchronizeHostDataWorker(value: () => js.Any): Self = StObject.set(x, "synchronizeHostDataWorker", js.Any.fromFunction0(value))
+    inline def setSynchronizeHostDataWorker(value: () => js.Any): Self = StObject.set(x, "synchronizeHostDataWorker", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTopLevelDeclaration(value: String => PullDecl): Self = StObject.set(x, "topLevelDeclaration", js.Any.fromFunction1(value))
+    inline def setTopLevelDeclaration(value: String => PullDecl): Self = StObject.set(x, "topLevelDeclaration", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTryUpdateFile(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "tryUpdateFile", js.Any.fromFunction2(value))
+    inline def setTryUpdateFile(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "tryUpdateFile", js.Any.fromFunction2(value))
   }
 }

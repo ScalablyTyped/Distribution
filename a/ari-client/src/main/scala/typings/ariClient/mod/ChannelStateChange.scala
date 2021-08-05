@@ -16,17 +16,14 @@ trait ChannelStateChange
 }
 object ChannelStateChange {
   
-  @scala.inline
-  def apply(application: String, channel: Channel, timestamp: Date, `type`: String): ChannelStateChange = {
+  inline def apply(application: String, channel: Channel, timestamp: Date, `type`: String): ChannelStateChange = {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any], channel = channel.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelStateChange]
   }
   
-  @scala.inline
-  implicit class ChannelStateChangeMutableBuilder[Self <: ChannelStateChange] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelStateChange](x: Self) {
     
-    @scala.inline
-    def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
   }
 }

@@ -16,10 +16,8 @@ object mod {
   /**
     * @param {import("./lib/core").ClientOptions} options
     */
-  @scala.inline
-  def apply(): Block = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Block]
-  @scala.inline
-  def apply(options: ClientOptions): Block = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Block]
+  inline def apply(): Block = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Block]
+  inline def apply(options: ClientOptions): Block = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Block]
   
   @JSImport("ipfs-http-client/dist/src", JSImport.Namespace)
   @js.native
@@ -41,26 +39,20 @@ object mod {
   }
   object AbortOptions {
     
-    @scala.inline
-    def apply(): AbortOptions = {
+    inline def apply(): AbortOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AbortOptions]
     }
     
-    @scala.inline
-    implicit class AbortOptionsMutableBuilder[Self <: AbortOptions] (val x: Self) extends AnyVal {
+    extension [Self <: AbortOptions](x: Self) {
       
-      @scala.inline
-      def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+      inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -78,26 +70,20 @@ object mod {
   }
   object HttpOptions {
     
-    @scala.inline
-    def apply(): HttpOptions = {
+    inline def apply(): HttpOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HttpOptions]
     }
     
-    @scala.inline
-    implicit class HttpOptionsMutableBuilder[Self <: HttpOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HttpOptions](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: Headers | (Record[String, String])): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Headers | (Record[String, String])): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setSearchParams(value: (Record[String, String]) | URLSearchParams): Self = StObject.set(x, "searchParams", value.asInstanceOf[js.Any])
+      inline def setSearchParams(value: (Record[String, String]) | URLSearchParams): Self = StObject.set(x, "searchParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchParamsUndefined: Self = StObject.set(x, "searchParams", js.undefined)
+      inline def setSearchParamsUndefined: Self = StObject.set(x, "searchParams", js.undefined)
     }
   }
   

@@ -38,49 +38,35 @@ trait AudioNormalizationSettings extends StObject {
 }
 object AudioNormalizationSettings {
   
-  @scala.inline
-  def apply(): AudioNormalizationSettings = {
+  inline def apply(): AudioNormalizationSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AudioNormalizationSettings]
   }
   
-  @scala.inline
-  implicit class AudioNormalizationSettingsMutableBuilder[Self <: AudioNormalizationSettings] (val x: Self) extends AnyVal {
+  extension [Self <: AudioNormalizationSettings](x: Self) {
     
-    @scala.inline
-    def setAlgorithm(value: AudioNormalizationAlgorithm): Self = StObject.set(x, "Algorithm", value.asInstanceOf[js.Any])
+    inline def setAlgorithm(value: AudioNormalizationAlgorithm): Self = StObject.set(x, "Algorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithmControl(value: AudioNormalizationAlgorithmControl): Self = StObject.set(x, "AlgorithmControl", value.asInstanceOf[js.Any])
+    inline def setAlgorithmControl(value: AudioNormalizationAlgorithmControl): Self = StObject.set(x, "AlgorithmControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithmControlUndefined: Self = StObject.set(x, "AlgorithmControl", js.undefined)
+    inline def setAlgorithmControlUndefined: Self = StObject.set(x, "AlgorithmControl", js.undefined)
     
-    @scala.inline
-    def setAlgorithmUndefined: Self = StObject.set(x, "Algorithm", js.undefined)
+    inline def setAlgorithmUndefined: Self = StObject.set(x, "Algorithm", js.undefined)
     
-    @scala.inline
-    def setCorrectionGateLevel(value: integerMinNegative70Max0): Self = StObject.set(x, "CorrectionGateLevel", value.asInstanceOf[js.Any])
+    inline def setCorrectionGateLevel(value: integerMinNegative70Max0): Self = StObject.set(x, "CorrectionGateLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorrectionGateLevelUndefined: Self = StObject.set(x, "CorrectionGateLevel", js.undefined)
+    inline def setCorrectionGateLevelUndefined: Self = StObject.set(x, "CorrectionGateLevel", js.undefined)
     
-    @scala.inline
-    def setLoudnessLogging(value: AudioNormalizationLoudnessLogging): Self = StObject.set(x, "LoudnessLogging", value.asInstanceOf[js.Any])
+    inline def setLoudnessLogging(value: AudioNormalizationLoudnessLogging): Self = StObject.set(x, "LoudnessLogging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoudnessLoggingUndefined: Self = StObject.set(x, "LoudnessLogging", js.undefined)
+    inline def setLoudnessLoggingUndefined: Self = StObject.set(x, "LoudnessLogging", js.undefined)
     
-    @scala.inline
-    def setPeakCalculation(value: AudioNormalizationPeakCalculation): Self = StObject.set(x, "PeakCalculation", value.asInstanceOf[js.Any])
+    inline def setPeakCalculation(value: AudioNormalizationPeakCalculation): Self = StObject.set(x, "PeakCalculation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeakCalculationUndefined: Self = StObject.set(x, "PeakCalculation", js.undefined)
+    inline def setPeakCalculationUndefined: Self = StObject.set(x, "PeakCalculation", js.undefined)
     
-    @scala.inline
-    def setTargetLkfs(value: doubleMinNegative59Max0): Self = StObject.set(x, "TargetLkfs", value.asInstanceOf[js.Any])
+    inline def setTargetLkfs(value: doubleMinNegative59Max0): Self = StObject.set(x, "TargetLkfs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetLkfsUndefined: Self = StObject.set(x, "TargetLkfs", js.undefined)
+    inline def setTargetLkfsUndefined: Self = StObject.set(x, "TargetLkfs", js.undefined)
   }
 }

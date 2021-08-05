@@ -23,37 +23,27 @@ trait GetResourcesResponse extends StObject {
 }
 object GetResourcesResponse {
   
-  @scala.inline
-  def apply(): GetResourcesResponse = {
+  inline def apply(): GetResourcesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetResourcesResponse]
   }
   
-  @scala.inline
-  implicit class GetResourcesResponseMutableBuilder[Self <: GetResourcesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetResourcesResponse](x: Self) {
     
-    @scala.inline
-    def setDocuments(value: DocumentMetadataList): Self = StObject.set(x, "Documents", value.asInstanceOf[js.Any])
+    inline def setDocuments(value: DocumentMetadataList): Self = StObject.set(x, "Documents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentsUndefined: Self = StObject.set(x, "Documents", js.undefined)
+    inline def setDocumentsUndefined: Self = StObject.set(x, "Documents", js.undefined)
     
-    @scala.inline
-    def setDocumentsVarargs(value: DocumentMetadata*): Self = StObject.set(x, "Documents", js.Array(value :_*))
+    inline def setDocumentsVarargs(value: DocumentMetadata*): Self = StObject.set(x, "Documents", js.Array(value :_*))
     
-    @scala.inline
-    def setFolders(value: FolderMetadataList): Self = StObject.set(x, "Folders", value.asInstanceOf[js.Any])
+    inline def setFolders(value: FolderMetadataList): Self = StObject.set(x, "Folders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFoldersUndefined: Self = StObject.set(x, "Folders", js.undefined)
+    inline def setFoldersUndefined: Self = StObject.set(x, "Folders", js.undefined)
     
-    @scala.inline
-    def setFoldersVarargs(value: FolderMetadata*): Self = StObject.set(x, "Folders", js.Array(value :_*))
+    inline def setFoldersVarargs(value: FolderMetadata*): Self = StObject.set(x, "Folders", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: PageMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: PageMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

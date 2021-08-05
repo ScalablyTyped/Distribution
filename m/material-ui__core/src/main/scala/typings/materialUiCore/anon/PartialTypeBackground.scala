@@ -13,25 +13,19 @@ trait PartialTypeBackground extends StObject {
 }
 object PartialTypeBackground {
   
-  @scala.inline
-  def apply(): PartialTypeBackground = {
+  inline def apply(): PartialTypeBackground = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialTypeBackground]
   }
   
-  @scala.inline
-  implicit class PartialTypeBackgroundMutableBuilder[Self <: PartialTypeBackground] (val x: Self) extends AnyVal {
+  extension [Self <: PartialTypeBackground](x: Self) {
     
-    @scala.inline
-    def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
-    @scala.inline
-    def setPaper(value: String): Self = StObject.set(x, "paper", value.asInstanceOf[js.Any])
+    inline def setPaper(value: String): Self = StObject.set(x, "paper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaperUndefined: Self = StObject.set(x, "paper", js.undefined)
+    inline def setPaperUndefined: Self = StObject.set(x, "paper", js.undefined)
   }
 }

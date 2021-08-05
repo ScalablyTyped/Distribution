@@ -18,19 +18,15 @@ trait DeleteDeviceRequest extends StObject {
 }
 object DeleteDeviceRequest {
   
-  @scala.inline
-  def apply(DeviceId: String, GlobalNetworkId: String): DeleteDeviceRequest = {
+  inline def apply(DeviceId: String, GlobalNetworkId: String): DeleteDeviceRequest = {
     val __obj = js.Dynamic.literal(DeviceId = DeviceId.asInstanceOf[js.Any], GlobalNetworkId = GlobalNetworkId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDeviceRequest]
   }
   
-  @scala.inline
-  implicit class DeleteDeviceRequestMutableBuilder[Self <: DeleteDeviceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDeviceRequest](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
+    inline def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
   }
 }

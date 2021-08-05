@@ -14,8 +14,7 @@ trait YogaConfig extends StObject {
 }
 object YogaConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isExperimentalFeatureEnabled: YogaExperimentalFeature => Boolean,
     setExperimentalFeatureEnabled: (YogaExperimentalFeature, Boolean) => Unit,
     setPointScaleFactor: Double => Unit
@@ -24,16 +23,12 @@ object YogaConfig {
     __obj.asInstanceOf[YogaConfig]
   }
   
-  @scala.inline
-  implicit class YogaConfigMutableBuilder[Self <: YogaConfig] (val x: Self) extends AnyVal {
+  extension [Self <: YogaConfig](x: Self) {
     
-    @scala.inline
-    def setIsExperimentalFeatureEnabled(value: YogaExperimentalFeature => Boolean): Self = StObject.set(x, "isExperimentalFeatureEnabled", js.Any.fromFunction1(value))
+    inline def setIsExperimentalFeatureEnabled(value: YogaExperimentalFeature => Boolean): Self = StObject.set(x, "isExperimentalFeatureEnabled", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetExperimentalFeatureEnabled(value: (YogaExperimentalFeature, Boolean) => Unit): Self = StObject.set(x, "setExperimentalFeatureEnabled", js.Any.fromFunction2(value))
+    inline def setSetExperimentalFeatureEnabled(value: (YogaExperimentalFeature, Boolean) => Unit): Self = StObject.set(x, "setExperimentalFeatureEnabled", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetPointScaleFactor(value: Double => Unit): Self = StObject.set(x, "setPointScaleFactor", js.Any.fromFunction1(value))
+    inline def setSetPointScaleFactor(value: Double => Unit): Self = StObject.set(x, "setPointScaleFactor", js.Any.fromFunction1(value))
   }
 }

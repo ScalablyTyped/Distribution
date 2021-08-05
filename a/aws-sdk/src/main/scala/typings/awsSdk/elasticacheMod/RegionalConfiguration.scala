@@ -23,8 +23,7 @@ trait RegionalConfiguration extends StObject {
 }
 object RegionalConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ReplicationGroupId: String,
     ReplicationGroupRegion: String,
     ReshardingConfiguration: ReshardingConfigurationList
@@ -33,19 +32,14 @@ object RegionalConfiguration {
     __obj.asInstanceOf[RegionalConfiguration]
   }
   
-  @scala.inline
-  implicit class RegionalConfigurationMutableBuilder[Self <: RegionalConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: RegionalConfiguration](x: Self) {
     
-    @scala.inline
-    def setReplicationGroupId(value: String): Self = StObject.set(x, "ReplicationGroupId", value.asInstanceOf[js.Any])
+    inline def setReplicationGroupId(value: String): Self = StObject.set(x, "ReplicationGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationGroupRegion(value: String): Self = StObject.set(x, "ReplicationGroupRegion", value.asInstanceOf[js.Any])
+    inline def setReplicationGroupRegion(value: String): Self = StObject.set(x, "ReplicationGroupRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReshardingConfiguration(value: ReshardingConfigurationList): Self = StObject.set(x, "ReshardingConfiguration", value.asInstanceOf[js.Any])
+    inline def setReshardingConfiguration(value: ReshardingConfigurationList): Self = StObject.set(x, "ReshardingConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReshardingConfigurationVarargs(value: ReshardingConfiguration*): Self = StObject.set(x, "ReshardingConfiguration", js.Array(value :_*))
+    inline def setReshardingConfigurationVarargs(value: ReshardingConfiguration*): Self = StObject.set(x, "ReshardingConfiguration", js.Array(value :_*))
   }
 }

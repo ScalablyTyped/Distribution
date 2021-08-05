@@ -20,23 +20,18 @@ object anon {
   }
   object Typeofgeometry {
     
-    @scala.inline
-    def apply(encoding: js.Any, poly: js.Any, spherical: js.Any): Typeofgeometry = {
+    inline def apply(encoding: js.Any, poly: js.Any, spherical: js.Any): Typeofgeometry = {
       val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any], poly = poly.asInstanceOf[js.Any], spherical = spherical.asInstanceOf[js.Any])
       __obj.asInstanceOf[Typeofgeometry]
     }
     
-    @scala.inline
-    implicit class TypeofgeometryMutableBuilder[Self <: Typeofgeometry] (val x: Self) extends AnyVal {
+    extension [Self <: Typeofgeometry](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: js.Any): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: js.Any): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoly(value: js.Any): Self = StObject.set(x, "poly", value.asInstanceOf[js.Any])
+      inline def setPoly(value: js.Any): Self = StObject.set(x, "poly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpherical(value: js.Any): Self = StObject.set(x, "spherical", value.asInstanceOf[js.Any])
+      inline def setSpherical(value: js.Any): Self = StObject.set(x, "spherical", value.asInstanceOf[js.Any])
     }
   }
 }

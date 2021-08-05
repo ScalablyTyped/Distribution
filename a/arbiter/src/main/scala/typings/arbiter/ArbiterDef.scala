@@ -105,32 +105,24 @@ object ArbiterDef {
   }
   object PublishOptions {
     
-    @scala.inline
-    def apply(): PublishOptions = {
+    inline def apply(): PublishOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PublishOptions]
     }
     
-    @scala.inline
-    implicit class PublishOptionsMutableBuilder[Self <: PublishOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PublishOptions](x: Self) {
       
-      @scala.inline
-      def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
-      @scala.inline
-      def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
+      inline def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelableUndefined: Self = StObject.set(x, "cancelable", js.undefined)
+      inline def setCancelableUndefined: Self = StObject.set(x, "cancelable", js.undefined)
       
-      @scala.inline
-      def setPersist(value: Boolean): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
+      inline def setPersist(value: Boolean): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
+      inline def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
     }
   }
   
@@ -157,32 +149,24 @@ object ArbiterDef {
   }
   object SubscribeOptions {
     
-    @scala.inline
-    def apply(): SubscribeOptions = {
+    inline def apply(): SubscribeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SubscribeOptions]
     }
     
-    @scala.inline
-    implicit class SubscribeOptionsMutableBuilder[Self <: SubscribeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SubscribeOptions](x: Self) {
       
-      @scala.inline
-      def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
-      @scala.inline
-      def setPersist(value: Boolean): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
+      inline def setPersist(value: Boolean): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
+      inline def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+      inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     }
   }
 }

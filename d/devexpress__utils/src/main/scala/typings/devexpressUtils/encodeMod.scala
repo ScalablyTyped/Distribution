@@ -16,19 +16,14 @@ object encodeMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def decodeHtml(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeHtml")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def decodeHtml(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeHtml")(text.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def decodeViaTextArea(html: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeViaTextArea")(html.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def decodeViaTextArea(html: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeViaTextArea")(html.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def encodeHtml(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeHtml")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def encodeHtml(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeHtml")(text.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def prepareTextForCallBackRequest(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prepareTextForCallBackRequest")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def prepareTextForCallBackRequest(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prepareTextForCallBackRequest")(text.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def prepareTextForRequest(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prepareTextForRequest")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def prepareTextForRequest(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prepareTextForRequest")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

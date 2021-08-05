@@ -36,21 +36,17 @@ object v03Mod {
   }
   object CloudEventV03 {
     
-    @scala.inline
-    def apply(id: String, source: String, specversion: String, `type`: String): CloudEventV03 = {
+    inline def apply(id: String, source: String, specversion: String, `type`: String): CloudEventV03 = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], specversion = specversion.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[CloudEventV03]
     }
     
-    @scala.inline
-    implicit class CloudEventV03MutableBuilder[Self <: CloudEventV03] (val x: Self) extends AnyVal {
+    extension [Self <: CloudEventV03](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpecversion(value: String): Self = StObject.set(x, "specversion", value.asInstanceOf[js.Any])
+      inline def setSpecversion(value: String): Self = StObject.set(x, "specversion", value.asInstanceOf[js.Any])
     }
   }
   
@@ -169,60 +165,43 @@ object v03Mod {
   }
   object CloudEventV03Attributes {
     
-    @scala.inline
-    def apply(source: String, `type`: String): CloudEventV03Attributes = {
+    inline def apply(source: String, `type`: String): CloudEventV03Attributes = {
       val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[CloudEventV03Attributes]
     }
     
-    @scala.inline
-    implicit class CloudEventV03AttributesMutableBuilder[Self <: CloudEventV03Attributes] (val x: Self) extends AnyVal {
+    extension [Self <: CloudEventV03Attributes](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any | String | Double | Boolean): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any | String | Double | Boolean): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataContentEncoding(value: String): Self = StObject.set(x, "dataContentEncoding", value.asInstanceOf[js.Any])
+      inline def setDataContentEncoding(value: String): Self = StObject.set(x, "dataContentEncoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataContentEncodingUndefined: Self = StObject.set(x, "dataContentEncoding", js.undefined)
+      inline def setDataContentEncodingUndefined: Self = StObject.set(x, "dataContentEncoding", js.undefined)
       
-      @scala.inline
-      def setDataContentType(value: String): Self = StObject.set(x, "dataContentType", value.asInstanceOf[js.Any])
+      inline def setDataContentType(value: String): Self = StObject.set(x, "dataContentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataContentTypeUndefined: Self = StObject.set(x, "dataContentType", js.undefined)
+      inline def setDataContentTypeUndefined: Self = StObject.set(x, "dataContentType", js.undefined)
       
-      @scala.inline
-      def setDataNull: Self = StObject.set(x, "data", null)
+      inline def setDataNull: Self = StObject.set(x, "data", null)
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setSchemaURL(value: String): Self = StObject.set(x, "schemaURL", value.asInstanceOf[js.Any])
+      inline def setSchemaURL(value: String): Self = StObject.set(x, "schemaURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaURLUndefined: Self = StObject.set(x, "schemaURL", js.undefined)
+      inline def setSchemaURLUndefined: Self = StObject.set(x, "schemaURL", js.undefined)
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+      inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+      inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
       
-      @scala.inline
-      def setTime(value: Date | String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Date | String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
+      inline def setTimeUndefined: Self = StObject.set(x, "time", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

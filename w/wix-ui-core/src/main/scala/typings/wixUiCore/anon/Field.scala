@@ -14,25 +14,19 @@ trait Field extends StObject {
 }
 object Field {
   
-  @scala.inline
-  def apply(field: js.Any, value: js.Any): Field = {
+  inline def apply(field: js.Any, value: js.Any): Field = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Field]
   }
   
-  @scala.inline
-  implicit class FieldMutableBuilder[Self <: Field] (val x: Self) extends AnyVal {
+  extension [Self <: Field](x: Self) {
     
-    @scala.inline
-    def setField(value: js.Any): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: js.Any): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

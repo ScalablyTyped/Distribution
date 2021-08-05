@@ -10,19 +10,15 @@ trait GetCodeBindingSourceResponse extends StObject {
 }
 object GetCodeBindingSourceResponse {
   
-  @scala.inline
-  def apply(): GetCodeBindingSourceResponse = {
+  inline def apply(): GetCodeBindingSourceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetCodeBindingSourceResponse]
   }
   
-  @scala.inline
-  implicit class GetCodeBindingSourceResponseMutableBuilder[Self <: GetCodeBindingSourceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetCodeBindingSourceResponse](x: Self) {
     
-    @scala.inline
-    def setBody(value: Body): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Body): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "Body", js.undefined)
   }
 }

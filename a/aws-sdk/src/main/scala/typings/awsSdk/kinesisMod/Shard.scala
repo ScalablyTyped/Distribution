@@ -33,34 +33,25 @@ trait Shard extends StObject {
 }
 object Shard {
   
-  @scala.inline
-  def apply(HashKeyRange: HashKeyRange, SequenceNumberRange: SequenceNumberRange, ShardId: ShardId): Shard = {
+  inline def apply(HashKeyRange: HashKeyRange, SequenceNumberRange: SequenceNumberRange, ShardId: ShardId): Shard = {
     val __obj = js.Dynamic.literal(HashKeyRange = HashKeyRange.asInstanceOf[js.Any], SequenceNumberRange = SequenceNumberRange.asInstanceOf[js.Any], ShardId = ShardId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Shard]
   }
   
-  @scala.inline
-  implicit class ShardMutableBuilder[Self <: Shard] (val x: Self) extends AnyVal {
+  extension [Self <: Shard](x: Self) {
     
-    @scala.inline
-    def setAdjacentParentShardId(value: ShardId): Self = StObject.set(x, "AdjacentParentShardId", value.asInstanceOf[js.Any])
+    inline def setAdjacentParentShardId(value: ShardId): Self = StObject.set(x, "AdjacentParentShardId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdjacentParentShardIdUndefined: Self = StObject.set(x, "AdjacentParentShardId", js.undefined)
+    inline def setAdjacentParentShardIdUndefined: Self = StObject.set(x, "AdjacentParentShardId", js.undefined)
     
-    @scala.inline
-    def setHashKeyRange(value: HashKeyRange): Self = StObject.set(x, "HashKeyRange", value.asInstanceOf[js.Any])
+    inline def setHashKeyRange(value: HashKeyRange): Self = StObject.set(x, "HashKeyRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentShardId(value: ShardId): Self = StObject.set(x, "ParentShardId", value.asInstanceOf[js.Any])
+    inline def setParentShardId(value: ShardId): Self = StObject.set(x, "ParentShardId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentShardIdUndefined: Self = StObject.set(x, "ParentShardId", js.undefined)
+    inline def setParentShardIdUndefined: Self = StObject.set(x, "ParentShardId", js.undefined)
     
-    @scala.inline
-    def setSequenceNumberRange(value: SequenceNumberRange): Self = StObject.set(x, "SequenceNumberRange", value.asInstanceOf[js.Any])
+    inline def setSequenceNumberRange(value: SequenceNumberRange): Self = StObject.set(x, "SequenceNumberRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShardId(value: ShardId): Self = StObject.set(x, "ShardId", value.asInstanceOf[js.Any])
+    inline def setShardId(value: ShardId): Self = StObject.set(x, "ShardId", value.asInstanceOf[js.Any])
   }
 }

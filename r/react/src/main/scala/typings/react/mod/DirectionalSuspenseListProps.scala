@@ -27,22 +27,17 @@ trait DirectionalSuspenseListProps
 }
 object DirectionalSuspenseListProps {
   
-  @scala.inline
-  def apply(children: ReactElement | Iterable[ReactElement], revealOrder: forwards | backwards): DirectionalSuspenseListProps = {
+  inline def apply(children: ReactElement | Iterable[ReactElement], revealOrder: forwards | backwards): DirectionalSuspenseListProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], revealOrder = revealOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectionalSuspenseListProps]
   }
   
-  @scala.inline
-  implicit class DirectionalSuspenseListPropsMutableBuilder[Self <: DirectionalSuspenseListProps] (val x: Self) extends AnyVal {
+  extension [Self <: DirectionalSuspenseListProps](x: Self) {
     
-    @scala.inline
-    def setRevealOrder(value: forwards | backwards): Self = StObject.set(x, "revealOrder", value.asInstanceOf[js.Any])
+    inline def setRevealOrder(value: forwards | backwards): Self = StObject.set(x, "revealOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTail(value: typings.react.experimentalMod.reactAugmentingMod.SuspenseListTailMode): Self = StObject.set(x, "tail", value.asInstanceOf[js.Any])
+    inline def setTail(value: typings.react.experimentalMod.reactAugmentingMod.SuspenseListTailMode): Self = StObject.set(x, "tail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTailUndefined: Self = StObject.set(x, "tail", js.undefined)
+    inline def setTailUndefined: Self = StObject.set(x, "tail", js.undefined)
   }
 }

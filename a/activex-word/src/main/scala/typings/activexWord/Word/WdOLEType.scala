@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdOLEType extends StObject
 object WdOLEType {
   
-  @scala.inline
-  def wdOLEControl: `2` = 2.asInstanceOf[`2`]
+  inline def wdOLEControl: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdOLEEmbed: `1` = 1.asInstanceOf[`1`]
+  inline def wdOLEEmbed: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdOLELink: `0` = 0.asInstanceOf[`0`]
+  inline def wdOLELink: `0` = 0.asInstanceOf[`0`]
 }

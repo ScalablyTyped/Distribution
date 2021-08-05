@@ -17,8 +17,7 @@ trait Response extends StObject {
 }
 object Response {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: AppsDeleteAuthorizationEndpoint,
     request: AppsDeleteAuthorizationRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object Response {
     __obj.asInstanceOf[Response]
   }
   
-  @scala.inline
-  implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+  extension [Self <: Response](x: Self) {
     
-    @scala.inline
-    def setParameters(value: AppsDeleteAuthorizationEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: AppsDeleteAuthorizationEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: AppsDeleteAuthorizationRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: AppsDeleteAuthorizationRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

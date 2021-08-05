@@ -10,8 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object BlockFormatControls {
   
-  @scala.inline
-  def apply(props: Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def apply(props: Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@wordpress/block-editor/components", "BlockFormatControls")
   @js.native
@@ -20,6 +19,5 @@ object BlockFormatControls {
   @JSImport("@wordpress/block-editor/components", "BlockFormatControls.Slot")
   @js.native
   def Slot: FC[OmitPropsname] = js.native
-  @scala.inline
-  def Slot_=(x: FC[OmitPropsname]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Slot")(x.asInstanceOf[js.Any])
+  inline def Slot_=(x: FC[OmitPropsname]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Slot")(x.asInstanceOf[js.Any])
 }

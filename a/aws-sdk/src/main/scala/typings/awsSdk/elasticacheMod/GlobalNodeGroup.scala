@@ -18,25 +18,19 @@ trait GlobalNodeGroup extends StObject {
 }
 object GlobalNodeGroup {
   
-  @scala.inline
-  def apply(): GlobalNodeGroup = {
+  inline def apply(): GlobalNodeGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GlobalNodeGroup]
   }
   
-  @scala.inline
-  implicit class GlobalNodeGroupMutableBuilder[Self <: GlobalNodeGroup] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalNodeGroup](x: Self) {
     
-    @scala.inline
-    def setGlobalNodeGroupId(value: String): Self = StObject.set(x, "GlobalNodeGroupId", value.asInstanceOf[js.Any])
+    inline def setGlobalNodeGroupId(value: String): Self = StObject.set(x, "GlobalNodeGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalNodeGroupIdUndefined: Self = StObject.set(x, "GlobalNodeGroupId", js.undefined)
+    inline def setGlobalNodeGroupIdUndefined: Self = StObject.set(x, "GlobalNodeGroupId", js.undefined)
     
-    @scala.inline
-    def setSlots(value: String): Self = StObject.set(x, "Slots", value.asInstanceOf[js.Any])
+    inline def setSlots(value: String): Self = StObject.set(x, "Slots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlotsUndefined: Self = StObject.set(x, "Slots", js.undefined)
+    inline def setSlotsUndefined: Self = StObject.set(x, "Slots", js.undefined)
   }
 }

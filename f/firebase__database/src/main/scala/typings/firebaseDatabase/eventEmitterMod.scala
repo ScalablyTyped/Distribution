@@ -14,7 +14,7 @@ object eventEmitterMod {
       */
     def this(allowedEvents_ : js.Array[String]) = this()
     
-    var allowedEvents_ : js.Any = js.native
+    /* private */ var allowedEvents_ : js.Any = js.native
     
     /**
       * To be overridden by derived classes in order to fire an initial event when
@@ -25,7 +25,7 @@ object eventEmitterMod {
       */
     def getInitialEvent(eventType: String): js.Array[js.Any] = js.native
     
-    var listeners_ : js.Any = js.native
+    /* private */ var listeners_ : js.Any = js.native
     
     def off(eventType: String, callback: js.Function1[/* a */ js.Any, Unit], context: js.Any): Unit = js.native
     
@@ -38,6 +38,6 @@ object eventEmitterMod {
       */
     /* protected */ def trigger(eventType: String, varArgs: js.Any*): Unit = js.native
     
-    var validateEventType_ : js.Any = js.native
+    /* private */ var validateEventType_ : js.Any = js.native
   }
 }

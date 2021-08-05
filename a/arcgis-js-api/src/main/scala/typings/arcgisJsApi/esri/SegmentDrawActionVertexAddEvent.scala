@@ -19,8 +19,7 @@ trait SegmentDrawActionVertexAddEvent extends StObject {
 }
 object SegmentDrawActionVertexAddEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     defaultPrevented: Boolean,
     preventDefault: js.Function,
     vertexIndex: Double,
@@ -31,25 +30,18 @@ object SegmentDrawActionVertexAddEvent {
     __obj.asInstanceOf[SegmentDrawActionVertexAddEvent]
   }
   
-  @scala.inline
-  implicit class SegmentDrawActionVertexAddEventMutableBuilder[Self <: SegmentDrawActionVertexAddEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SegmentDrawActionVertexAddEvent](x: Self) {
     
-    @scala.inline
-    def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
+    inline def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
+    inline def setPreventDefault(value: js.Function): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `vertex-add`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `vertex-add`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertexIndex(value: Double): Self = StObject.set(x, "vertexIndex", value.asInstanceOf[js.Any])
+    inline def setVertexIndex(value: Double): Self = StObject.set(x, "vertexIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertices(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
+    inline def setVertices(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticesVarargs(value: js.Array[Double]*): Self = StObject.set(x, "vertices", js.Array(value :_*))
+    inline def setVerticesVarargs(value: js.Array[Double]*): Self = StObject.set(x, "vertices", js.Array(value :_*))
   }
 }

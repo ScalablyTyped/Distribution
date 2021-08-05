@@ -25,38 +25,29 @@ trait SideInputInfo extends StObject {
 }
 object SideInputInfo {
   
-  @scala.inline
-  def apply(): SideInputInfo = {
+  inline def apply(): SideInputInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SideInputInfo]
   }
   
-  @scala.inline
-  implicit class SideInputInfoMutableBuilder[Self <: SideInputInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SideInputInfo](x: Self) {
     
-    @scala.inline
-    def setKind(
+    inline def setKind(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.SideInputInfo & TopLevel[js.Any]
     ): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setSources(value: js.Array[Source]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+    inline def setSources(value: js.Array[Source]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
+    inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    @scala.inline
-    def setSourcesVarargs(value: Source*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: Source*): Self = StObject.set(x, "sources", js.Array(value :_*))
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
   }
 }

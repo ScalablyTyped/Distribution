@@ -8,16 +8,13 @@ object brainhubeuReactCarouselStrings {
   
   @js.native
   sealed trait img extends StObject
-  @scala.inline
-  def img: img = "img".asInstanceOf[img]
+  inline def img: img = "img".asInstanceOf[img]
   
   @js.native
   sealed trait key extends StObject
-  @scala.inline
-  def key: key = "key".asInstanceOf[key]
+  inline def key: key = "key".asInstanceOf[key]
   
   @js.native
   sealed trait ref extends StObject
-  @scala.inline
-  def ref: ref = "ref".asInstanceOf[ref]
+  inline def ref: ref = "ref".asInstanceOf[ref]
 }

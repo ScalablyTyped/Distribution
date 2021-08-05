@@ -36,11 +36,9 @@ object Option {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def deserializeBinary(bytes: Uint8Array): Option = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Option]
+  inline def deserializeBinary(bytes: Uint8Array): Option = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Option]
   
-  @scala.inline
-  def deserializeBinaryFromReader(message: Option, reader: BinaryReader): Option = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Option]
+  inline def deserializeBinaryFromReader(message: Option, reader: BinaryReader): Option = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Option]
   
   @JSImport("google-protobuf/google/protobuf/type_pb", "Option.extensions")
   @js.native
@@ -49,17 +47,13 @@ object Option {
   @JSImport("google-protobuf/google/protobuf/type_pb", "Option.extensionsBinary")
   @js.native
   def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-  @scala.inline
-  def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+  inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+  inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def serializeBinaryToWriter(message: Option, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def serializeBinaryToWriter(message: Option, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def toObject(includeInstance: Boolean, msg: Option): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+  inline def toObject(includeInstance: Boolean, msg: Option): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
   trait AsObject extends StObject {
     
@@ -69,23 +63,18 @@ object Option {
   }
   object AsObject {
     
-    @scala.inline
-    def apply(name: String): AsObject = {
+    inline def apply(name: String): AsObject = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[AsObject]
     }
     
-    @scala.inline
-    implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+    extension [Self <: AsObject](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: typings.googleProtobuf.anyPbMod.Any.AsObject): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: typings.googleProtobuf.anyPbMod.Any.AsObject): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

@@ -24,61 +24,43 @@ trait ParagraphStyle extends StObject {
 }
 object ParagraphStyle {
   
-  @scala.inline
-  def apply(): ParagraphStyle = {
+  inline def apply(): ParagraphStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParagraphStyle]
   }
   
-  @scala.inline
-  implicit class ParagraphStyleMutableBuilder[Self <: ParagraphStyle] (val x: Self) extends AnyVal {
+  extension [Self <: ParagraphStyle](x: Self) {
     
-    @scala.inline
-    def setDisableHinting(value: Boolean): Self = StObject.set(x, "disableHinting", value.asInstanceOf[js.Any])
+    inline def setDisableHinting(value: Boolean): Self = StObject.set(x, "disableHinting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableHintingUndefined: Self = StObject.set(x, "disableHinting", js.undefined)
+    inline def setDisableHintingUndefined: Self = StObject.set(x, "disableHinting", js.undefined)
     
-    @scala.inline
-    def setEllipsis(value: String): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
+    inline def setEllipsis(value: String): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
+    inline def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
     
-    @scala.inline
-    def setHeightMultiplier(value: Double): Self = StObject.set(x, "heightMultiplier", value.asInstanceOf[js.Any])
+    inline def setHeightMultiplier(value: Double): Self = StObject.set(x, "heightMultiplier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightMultiplierUndefined: Self = StObject.set(x, "heightMultiplier", js.undefined)
+    inline def setHeightMultiplierUndefined: Self = StObject.set(x, "heightMultiplier", js.undefined)
     
-    @scala.inline
-    def setMaxLines(value: Double): Self = StObject.set(x, "maxLines", value.asInstanceOf[js.Any])
+    inline def setMaxLines(value: Double): Self = StObject.set(x, "maxLines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLinesUndefined: Self = StObject.set(x, "maxLines", js.undefined)
+    inline def setMaxLinesUndefined: Self = StObject.set(x, "maxLines", js.undefined)
     
-    @scala.inline
-    def setStrutStyle(value: StrutStyle): Self = StObject.set(x, "strutStyle", value.asInstanceOf[js.Any])
+    inline def setStrutStyle(value: StrutStyle): Self = StObject.set(x, "strutStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrutStyleUndefined: Self = StObject.set(x, "strutStyle", js.undefined)
+    inline def setStrutStyleUndefined: Self = StObject.set(x, "strutStyle", js.undefined)
     
-    @scala.inline
-    def setTextAlign(value: TextAlign): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+    inline def setTextAlign(value: TextAlign): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
+    inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
     
-    @scala.inline
-    def setTextDirection(value: TextDirection): Self = StObject.set(x, "textDirection", value.asInstanceOf[js.Any])
+    inline def setTextDirection(value: TextDirection): Self = StObject.set(x, "textDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextDirectionUndefined: Self = StObject.set(x, "textDirection", js.undefined)
+    inline def setTextDirectionUndefined: Self = StObject.set(x, "textDirection", js.undefined)
     
-    @scala.inline
-    def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
+    inline def setTextStyle(value: TextStyle): Self = StObject.set(x, "textStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
+    inline def setTextStyleUndefined: Self = StObject.set(x, "textStyle", js.undefined)
   }
 }

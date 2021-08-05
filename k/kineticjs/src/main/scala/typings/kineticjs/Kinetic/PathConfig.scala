@@ -13,16 +13,13 @@ trait PathConfig
 }
 object PathConfig {
   
-  @scala.inline
-  def apply(data: String): PathConfig = {
+  inline def apply(data: String): PathConfig = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[PathConfig]
   }
   
-  @scala.inline
-  implicit class PathConfigMutableBuilder[Self <: PathConfig] (val x: Self) extends AnyVal {
+  extension [Self <: PathConfig](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

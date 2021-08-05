@@ -26,8 +26,7 @@ trait PolicyRulesWithSubjects extends StObject {
 }
 object PolicyRulesWithSubjects {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     nonResourceRules: js.Array[NonResourcePolicyRule],
     resourceRules: js.Array[ResourcePolicyRule],
     subjects: js.Array[Subject]
@@ -36,25 +35,18 @@ object PolicyRulesWithSubjects {
     __obj.asInstanceOf[PolicyRulesWithSubjects]
   }
   
-  @scala.inline
-  implicit class PolicyRulesWithSubjectsMutableBuilder[Self <: PolicyRulesWithSubjects] (val x: Self) extends AnyVal {
+  extension [Self <: PolicyRulesWithSubjects](x: Self) {
     
-    @scala.inline
-    def setNonResourceRules(value: js.Array[NonResourcePolicyRule]): Self = StObject.set(x, "nonResourceRules", value.asInstanceOf[js.Any])
+    inline def setNonResourceRules(value: js.Array[NonResourcePolicyRule]): Self = StObject.set(x, "nonResourceRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonResourceRulesVarargs(value: NonResourcePolicyRule*): Self = StObject.set(x, "nonResourceRules", js.Array(value :_*))
+    inline def setNonResourceRulesVarargs(value: NonResourcePolicyRule*): Self = StObject.set(x, "nonResourceRules", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceRules(value: js.Array[ResourcePolicyRule]): Self = StObject.set(x, "resourceRules", value.asInstanceOf[js.Any])
+    inline def setResourceRules(value: js.Array[ResourcePolicyRule]): Self = StObject.set(x, "resourceRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceRulesVarargs(value: ResourcePolicyRule*): Self = StObject.set(x, "resourceRules", js.Array(value :_*))
+    inline def setResourceRulesVarargs(value: ResourcePolicyRule*): Self = StObject.set(x, "resourceRules", js.Array(value :_*))
     
-    @scala.inline
-    def setSubjects(value: js.Array[Subject]): Self = StObject.set(x, "subjects", value.asInstanceOf[js.Any])
+    inline def setSubjects(value: js.Array[Subject]): Self = StObject.set(x, "subjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectsVarargs(value: Subject*): Self = StObject.set(x, "subjects", js.Array(value :_*))
+    inline def setSubjectsVarargs(value: Subject*): Self = StObject.set(x, "subjects", js.Array(value :_*))
   }
 }

@@ -28,31 +28,23 @@ trait SchemaResourcePolicySnapshotSchedulePolicyRetentionPolicy extends StObject
 }
 object SchemaResourcePolicySnapshotSchedulePolicyRetentionPolicy {
   
-  @scala.inline
-  def apply(): SchemaResourcePolicySnapshotSchedulePolicyRetentionPolicy = {
+  inline def apply(): SchemaResourcePolicySnapshotSchedulePolicyRetentionPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaResourcePolicySnapshotSchedulePolicyRetentionPolicy]
   }
   
-  @scala.inline
-  implicit class SchemaResourcePolicySnapshotSchedulePolicyRetentionPolicyMutableBuilder[Self <: SchemaResourcePolicySnapshotSchedulePolicyRetentionPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaResourcePolicySnapshotSchedulePolicyRetentionPolicy](x: Self) {
     
-    @scala.inline
-    def setMaxRetentionDays(value: Double): Self = StObject.set(x, "maxRetentionDays", value.asInstanceOf[js.Any])
+    inline def setMaxRetentionDays(value: Double): Self = StObject.set(x, "maxRetentionDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRetentionDaysUndefined: Self = StObject.set(x, "maxRetentionDays", js.undefined)
+    inline def setMaxRetentionDaysUndefined: Self = StObject.set(x, "maxRetentionDays", js.undefined)
     
-    @scala.inline
-    def setOnPolicySwitch(value: String): Self = StObject.set(x, "onPolicySwitch", value.asInstanceOf[js.Any])
+    inline def setOnPolicySwitch(value: String): Self = StObject.set(x, "onPolicySwitch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnPolicySwitchUndefined: Self = StObject.set(x, "onPolicySwitch", js.undefined)
+    inline def setOnPolicySwitchUndefined: Self = StObject.set(x, "onPolicySwitch", js.undefined)
     
-    @scala.inline
-    def setOnSourceDiskDelete(value: String): Self = StObject.set(x, "onSourceDiskDelete", value.asInstanceOf[js.Any])
+    inline def setOnSourceDiskDelete(value: String): Self = StObject.set(x, "onSourceDiskDelete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnSourceDiskDeleteUndefined: Self = StObject.set(x, "onSourceDiskDelete", js.undefined)
+    inline def setOnSourceDiskDeleteUndefined: Self = StObject.set(x, "onSourceDiskDelete", js.undefined)
   }
 }

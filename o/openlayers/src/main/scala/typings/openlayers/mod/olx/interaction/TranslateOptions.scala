@@ -15,31 +15,23 @@ trait TranslateOptions extends StObject {
 }
 object TranslateOptions {
   
-  @scala.inline
-  def apply(): TranslateOptions = {
+  inline def apply(): TranslateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TranslateOptions]
   }
   
-  @scala.inline
-  implicit class TranslateOptionsMutableBuilder[Self <: TranslateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TranslateOptions](x: Self) {
     
-    @scala.inline
-    def setFeatures(value: Collection[Feature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+    inline def setFeatures(value: Collection[Feature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
+    inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
     
-    @scala.inline
-    def setLayers(value: js.Array[Layer] | (js.Function1[/* layer */ Layer, Boolean])): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
+    inline def setLayers(value: js.Array[Layer] | (js.Function1[/* layer */ Layer, Boolean])): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayersFunction1(value: /* layer */ Layer => Boolean): Self = StObject.set(x, "layers", js.Any.fromFunction1(value))
+    inline def setLayersFunction1(value: /* layer */ Layer => Boolean): Self = StObject.set(x, "layers", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
+    inline def setLayersUndefined: Self = StObject.set(x, "layers", js.undefined)
     
-    @scala.inline
-    def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value :_*))
+    inline def setLayersVarargs(value: Layer*): Self = StObject.set(x, "layers", js.Array(value :_*))
   }
 }

@@ -33,50 +33,36 @@ object mod {
   }
   object TreeProps {
     
-    @scala.inline
-    def apply(): TreeProps = {
+    inline def apply(): TreeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TreeProps]
     }
     
-    @scala.inline
-    implicit class TreePropsMutableBuilder[Self <: TreeProps] (val x: Self) extends AnyVal {
+    extension [Self <: TreeProps](x: Self) {
       
-      @scala.inline
-      def setChildrenClassName(value: String): Self = StObject.set(x, "childrenClassName", value.asInstanceOf[js.Any])
+      inline def setChildrenClassName(value: String): Self = StObject.set(x, "childrenClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenClassNameUndefined: Self = StObject.set(x, "childrenClassName", js.undefined)
+      inline def setChildrenClassNameUndefined: Self = StObject.set(x, "childrenClassName", js.undefined)
       
-      @scala.inline
-      def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+      inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+      inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
       
-      @scala.inline
-      def setDefaultCollapsed(value: Boolean): Self = StObject.set(x, "defaultCollapsed", value.asInstanceOf[js.Any])
+      inline def setDefaultCollapsed(value: Boolean): Self = StObject.set(x, "defaultCollapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultCollapsedUndefined: Self = StObject.set(x, "defaultCollapsed", js.undefined)
+      inline def setDefaultCollapsedUndefined: Self = StObject.set(x, "defaultCollapsed", js.undefined)
       
-      @scala.inline
-      def setItemClassName(value: String): Self = StObject.set(x, "itemClassName", value.asInstanceOf[js.Any])
+      inline def setItemClassName(value: String): Self = StObject.set(x, "itemClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemClassNameUndefined: Self = StObject.set(x, "itemClassName", js.undefined)
+      inline def setItemClassNameUndefined: Self = StObject.set(x, "itemClassName", js.undefined)
       
-      @scala.inline
-      def setNodeLabel(value: ReactNode): Self = StObject.set(x, "nodeLabel", value.asInstanceOf[js.Any])
+      inline def setNodeLabel(value: ReactNode): Self = StObject.set(x, "nodeLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeLabelUndefined: Self = StObject.set(x, "nodeLabel", js.undefined)
+      inline def setNodeLabelUndefined: Self = StObject.set(x, "nodeLabel", js.undefined)
       
-      @scala.inline
-      def setTreeViewClassName(value: String): Self = StObject.set(x, "treeViewClassName", value.asInstanceOf[js.Any])
+      inline def setTreeViewClassName(value: String): Self = StObject.set(x, "treeViewClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreeViewClassNameUndefined: Self = StObject.set(x, "treeViewClassName", js.undefined)
+      inline def setTreeViewClassNameUndefined: Self = StObject.set(x, "treeViewClassName", js.undefined)
     }
   }
   

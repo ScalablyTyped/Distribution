@@ -13,16 +13,13 @@ trait IndexedDBListUpdatedEvent extends StObject {
 }
 object IndexedDBListUpdatedEvent {
   
-  @scala.inline
-  def apply(origin: String): IndexedDBListUpdatedEvent = {
+  inline def apply(origin: String): IndexedDBListUpdatedEvent = {
     val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any])
     __obj.asInstanceOf[IndexedDBListUpdatedEvent]
   }
   
-  @scala.inline
-  implicit class IndexedDBListUpdatedEventMutableBuilder[Self <: IndexedDBListUpdatedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: IndexedDBListUpdatedEvent](x: Self) {
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
   }
 }

@@ -95,7 +95,7 @@ trait PostItem extends StObject {
   
   var NoAging: Boolean = js.native
   
-  @JSName("Outlook.PostItem_typekey")
+  /* private */ @JSName("Outlook.PostItem_typekey")
   var OutlookDotPostItem_typekey: PostItem = js.native
   
   val OutlookInternalVersion: Double = js.native

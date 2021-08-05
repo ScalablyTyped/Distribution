@@ -14,27 +14,21 @@ trait GradientColorStopObject extends StObject {
 }
 object GradientColorStopObject {
   
-  @scala.inline
-  def apply(`0`: Double, `1`: ColorString): GradientColorStopObject = {
+  inline def apply(`0`: Double, `1`: ColorString): GradientColorStopObject = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("0")(`0`.asInstanceOf[js.Any])
     __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GradientColorStopObject]
   }
   
-  @scala.inline
-  implicit class GradientColorStopObjectMutableBuilder[Self <: GradientColorStopObject] (val x: Self) extends AnyVal {
+  extension [Self <: GradientColorStopObject](x: Self) {
     
-    @scala.inline
-    def set0(value: Double): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
+    inline def set0(value: Double): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set1(value: ColorString): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
+    inline def set1(value: ColorString): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
   }
 }

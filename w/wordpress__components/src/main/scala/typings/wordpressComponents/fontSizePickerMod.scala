@@ -43,23 +43,18 @@ object fontSizePickerMod {
     }
     object FontSize {
       
-      @scala.inline
-      def apply(name: String, size: Double, slug: String): FontSize = {
+      inline def apply(name: String, size: Double, slug: String): FontSize = {
         val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
         __obj.asInstanceOf[FontSize]
       }
       
-      @scala.inline
-      implicit class FontSizeMutableBuilder[Self <: FontSize] (val x: Self) extends AnyVal {
+      extension [Self <: FontSize](x: Self) {
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+        inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
+        inline def setSlug(value: String): Self = StObject.set(x, "slug", value.asInstanceOf[js.Any])
       }
     }
     

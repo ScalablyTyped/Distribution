@@ -28,25 +28,19 @@ trait ChunkData extends StObject {
 }
 object ChunkData {
   
-  @scala.inline
-  def apply(endByte: Double, partIndex: Double, startByte: Double, totalParts: Double): ChunkData = {
+  inline def apply(endByte: Double, partIndex: Double, startByte: Double, totalParts: Double): ChunkData = {
     val __obj = js.Dynamic.literal(endByte = endByte.asInstanceOf[js.Any], partIndex = partIndex.asInstanceOf[js.Any], startByte = startByte.asInstanceOf[js.Any], totalParts = totalParts.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChunkData]
   }
   
-  @scala.inline
-  implicit class ChunkDataMutableBuilder[Self <: ChunkData] (val x: Self) extends AnyVal {
+  extension [Self <: ChunkData](x: Self) {
     
-    @scala.inline
-    def setEndByte(value: Double): Self = StObject.set(x, "endByte", value.asInstanceOf[js.Any])
+    inline def setEndByte(value: Double): Self = StObject.set(x, "endByte", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartIndex(value: Double): Self = StObject.set(x, "partIndex", value.asInstanceOf[js.Any])
+    inline def setPartIndex(value: Double): Self = StObject.set(x, "partIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartByte(value: Double): Self = StObject.set(x, "startByte", value.asInstanceOf[js.Any])
+    inline def setStartByte(value: Double): Self = StObject.set(x, "startByte", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalParts(value: Double): Self = StObject.set(x, "totalParts", value.asInstanceOf[js.Any])
+    inline def setTotalParts(value: Double): Self = StObject.set(x, "totalParts", value.asInstanceOf[js.Any])
   }
 }

@@ -51,8 +51,7 @@ object Pnp {
       * @return The PnpObject created from the previously saved DeviceInformation ID.
       */
     /* static member */
-    @scala.inline
-    def createFromIdAsync(`type`: PnpObjectType, id: String, requestedProperties: IIterable[String]): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromIdAsync")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], requestedProperties.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObject]]
+    inline def createFromIdAsync(`type`: PnpObjectType, id: String, requestedProperties: IIterable[String]): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromIdAsync")(`type`.asInstanceOf[js.Any], id.asInstanceOf[js.Any], requestedProperties.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObject]]
     
     /**
       * Returns a PnpObjectWatcher object that is used to enumerate the PnP objects in the collection using events.
@@ -61,8 +60,7 @@ object Pnp {
       * @return A PnpObjectWatcher object used to enumerate the collection by registering event notification delegates and by issuing start and stop event notifications.
       */
     /* static member */
-    @scala.inline
-    def createWatcher(`type`: PnpObjectType, requestedProperties: IIterable[String]): typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("createWatcher")(`type`.asInstanceOf[js.Any], requestedProperties.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectWatcher]
+    inline def createWatcher(`type`: PnpObjectType, requestedProperties: IIterable[String]): typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("createWatcher")(`type`.asInstanceOf[js.Any], requestedProperties.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectWatcher]
     /**
       * Returns a PnpObjectWatcher object that is used to enumerate a filtered collection of PnP objects using events.
       * @param type The type of the PnpObject .
@@ -71,8 +69,7 @@ object Pnp {
       * @return A PnpObjectWatcher object used to enumerate the collection by registering event notification delegates and by issuing start and stop event notifications.
       */
     /* static member */
-    @scala.inline
-    def createWatcher(`type`: PnpObjectType, requestedProperties: IIterable[String], aqsFilter: String): typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("createWatcher")(`type`.asInstanceOf[js.Any], requestedProperties.asInstanceOf[js.Any], aqsFilter.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectWatcher]
+    inline def createWatcher(`type`: PnpObjectType, requestedProperties: IIterable[String], aqsFilter: String): typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectWatcher = (^.asInstanceOf[js.Dynamic].applyDynamic("createWatcher")(`type`.asInstanceOf[js.Any], requestedProperties.asInstanceOf[js.Any], aqsFilter.asInstanceOf[js.Any])).asInstanceOf[typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectWatcher]
     
     /**
       * Returns all of the PnP objects of a specified type that match the specified criteria.
@@ -81,8 +78,7 @@ object Pnp {
       * @return An object that represents the asynchronous operation.
       */
     /* static member */
-    @scala.inline
-    def findAllAsync(`type`: PnpObjectType, requestedProperties: IIterable[String]): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectCollection] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")(`type`.asInstanceOf[js.Any], requestedProperties.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectCollection]]
+    inline def findAllAsync(`type`: PnpObjectType, requestedProperties: IIterable[String]): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectCollection] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")(`type`.asInstanceOf[js.Any], requestedProperties.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectCollection]]
     /**
       * Returns all of the PnP objects of a specified type that match the specified filter.
       * @param type The type of the PnpObject .
@@ -91,8 +87,7 @@ object Pnp {
       * @return An object that represents the asynchronous operation.
       */
     /* static member */
-    @scala.inline
-    def findAllAsync(`type`: PnpObjectType, requestedProperties: IIterable[String], aqsFilter: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectCollection] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")(`type`.asInstanceOf[js.Any], requestedProperties.asInstanceOf[js.Any], aqsFilter.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectCollection]]
+    inline def findAllAsync(`type`: PnpObjectType, requestedProperties: IIterable[String], aqsFilter: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectCollection] = (^.asInstanceOf[js.Dynamic].applyDynamic("findAllAsync")(`type`.asInstanceOf[js.Any], requestedProperties.asInstanceOf[js.Any], aqsFilter.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Enumeration.Pnp.PnpObjectCollection]]
   }
   
   /** Represents an iterable collection of Pnp device objects. */

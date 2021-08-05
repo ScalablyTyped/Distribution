@@ -61,8 +61,7 @@ trait LayerInfo
 }
 object LayerInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     layer: FeatureLayer,
@@ -72,49 +71,34 @@ object LayerInfo {
     __obj.asInstanceOf[LayerInfo]
   }
   
-  @scala.inline
-  implicit class LayerInfoMutableBuilder[Self <: LayerInfo] (val x: Self) extends AnyVal {
+  extension [Self <: LayerInfo](x: Self) {
     
-    @scala.inline
-    def setAddEnabled(value: Boolean): Self = StObject.set(x, "addEnabled", value.asInstanceOf[js.Any])
+    inline def setAddEnabled(value: Boolean): Self = StObject.set(x, "addEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddEnabledUndefined: Self = StObject.set(x, "addEnabled", js.undefined)
+    inline def setAddEnabledUndefined: Self = StObject.set(x, "addEnabled", js.undefined)
     
-    @scala.inline
-    def setAllowAttachments(value: Boolean): Self = StObject.set(x, "allowAttachments", value.asInstanceOf[js.Any])
+    inline def setAllowAttachments(value: Boolean): Self = StObject.set(x, "allowAttachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowAttachmentsUndefined: Self = StObject.set(x, "allowAttachments", js.undefined)
+    inline def setAllowAttachmentsUndefined: Self = StObject.set(x, "allowAttachments", js.undefined)
     
-    @scala.inline
-    def setDeleteEnabled(value: Boolean): Self = StObject.set(x, "deleteEnabled", value.asInstanceOf[js.Any])
+    inline def setDeleteEnabled(value: Boolean): Self = StObject.set(x, "deleteEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteEnabledUndefined: Self = StObject.set(x, "deleteEnabled", js.undefined)
+    inline def setDeleteEnabledUndefined: Self = StObject.set(x, "deleteEnabled", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setFieldConfig(value: js.Array[FieldConfig]): Self = StObject.set(x, "fieldConfig", value.asInstanceOf[js.Any])
+    inline def setFieldConfig(value: js.Array[FieldConfig]): Self = StObject.set(x, "fieldConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldConfigUndefined: Self = StObject.set(x, "fieldConfig", js.undefined)
+    inline def setFieldConfigUndefined: Self = StObject.set(x, "fieldConfig", js.undefined)
     
-    @scala.inline
-    def setFieldConfigVarargs(value: FieldConfig*): Self = StObject.set(x, "fieldConfig", js.Array(value :_*))
+    inline def setFieldConfigVarargs(value: FieldConfig*): Self = StObject.set(x, "fieldConfig", js.Array(value :_*))
     
-    @scala.inline
-    def setLayer(value: FeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateEnabled(value: Boolean): Self = StObject.set(x, "updateEnabled", value.asInstanceOf[js.Any])
+    inline def setUpdateEnabled(value: Boolean): Self = StObject.set(x, "updateEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateEnabledUndefined: Self = StObject.set(x, "updateEnabled", js.undefined)
+    inline def setUpdateEnabledUndefined: Self = StObject.set(x, "updateEnabled", js.undefined)
   }
 }

@@ -24,8 +24,7 @@ object testingTestingMod {
     @JSImport("@angular/animations/browser/testing/testing", "MockAnimationDriver.log")
     @js.native
     def log: js.Array[AnimationPlayer] = js.native
-    @scala.inline
-    def log_=(x: js.Array[AnimationPlayer]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("log")(x.asInstanceOf[js.Any])
+    inline def log_=(x: js.Array[AnimationPlayer]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("log")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@angular/animations/browser/testing/testing", "MockAnimationPlayer")
@@ -40,11 +39,11 @@ object testingTestingMod {
       previousPlayers: js.Array[js.Any]
     ) = this()
     
-    var __finished: js.Any = js.native
+    /* private */ var __finished: js.Any = js.native
     
-    var __started: js.Any = js.native
+    /* private */ var __started: js.Any = js.native
     
-    var _onInitFns: js.Any = js.native
+    /* private */ var _onInitFns: js.Any = js.native
     
     @JSName("beforeDestroy")
     def beforeDestroy_MMockAnimationPlayer(): Unit = js.native

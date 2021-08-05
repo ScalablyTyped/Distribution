@@ -16,8 +16,7 @@ object headerRowMod {
   
   object default {
     
-    @scala.inline
-    def apply[RecordType](hasCellsStickyOffsetsFlattenColumnsRowComponentCellComponentOnHeaderRowIndex: RowProps[RecordType]): Element = ^.asInstanceOf[js.Dynamic].apply(hasCellsStickyOffsetsFlattenColumnsRowComponentCellComponentOnHeaderRowIndex.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply[RecordType](hasCellsStickyOffsetsFlattenColumnsRowComponentCellComponentOnHeaderRowIndex: RowProps[RecordType]): Element = ^.asInstanceOf[js.Dynamic].apply(hasCellsStickyOffsetsFlattenColumnsRowComponentCellComponentOnHeaderRowIndex.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("rc-table/lib/Header/HeaderRow", JSImport.Default)
     @js.native
@@ -26,8 +25,7 @@ object headerRowMod {
     @JSImport("rc-table/lib/Header/HeaderRow", "default.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   trait RowProps[RecordType] extends StObject {
@@ -48,8 +46,7 @@ object headerRowMod {
   }
   object RowProps {
     
-    @scala.inline
-    def apply[RecordType](
+    inline def apply[RecordType](
       cellComponent: CustomizeComponent,
       cells: js.Array[CellType[RecordType]],
       flattenColumns: js.Array[ColumnType[RecordType]],
@@ -62,37 +59,27 @@ object headerRowMod {
       __obj.asInstanceOf[RowProps[RecordType]]
     }
     
-    @scala.inline
-    implicit class RowPropsMutableBuilder[Self <: RowProps[?], RecordType] (val x: Self & RowProps[RecordType]) extends AnyVal {
+    extension [Self <: RowProps[?], RecordType](x: Self & RowProps[RecordType]) {
       
-      @scala.inline
-      def setCellComponent(value: CustomizeComponent): Self = StObject.set(x, "cellComponent", value.asInstanceOf[js.Any])
+      inline def setCellComponent(value: CustomizeComponent): Self = StObject.set(x, "cellComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCells(value: js.Array[CellType[RecordType]]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
+      inline def setCells(value: js.Array[CellType[RecordType]]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellsVarargs(value: CellType[RecordType]*): Self = StObject.set(x, "cells", js.Array(value :_*))
+      inline def setCellsVarargs(value: CellType[RecordType]*): Self = StObject.set(x, "cells", js.Array(value :_*))
       
-      @scala.inline
-      def setFlattenColumns(value: js.Array[ColumnType[RecordType]]): Self = StObject.set(x, "flattenColumns", value.asInstanceOf[js.Any])
+      inline def setFlattenColumns(value: js.Array[ColumnType[RecordType]]): Self = StObject.set(x, "flattenColumns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlattenColumnsVarargs(value: ColumnType[RecordType]*): Self = StObject.set(x, "flattenColumns", js.Array(value :_*))
+      inline def setFlattenColumnsVarargs(value: ColumnType[RecordType]*): Self = StObject.set(x, "flattenColumns", js.Array(value :_*))
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnHeaderRow(
+      inline def setOnHeaderRow(
         value: (js.Array[ColumnType[RecordType]], /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement]
       ): Self = StObject.set(x, "onHeaderRow", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRowComponent(value: CustomizeComponent): Self = StObject.set(x, "rowComponent", value.asInstanceOf[js.Any])
+      inline def setRowComponent(value: CustomizeComponent): Self = StObject.set(x, "rowComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStickyOffsets(value: StickyOffsets): Self = StObject.set(x, "stickyOffsets", value.asInstanceOf[js.Any])
+      inline def setStickyOffsets(value: StickyOffsets): Self = StObject.set(x, "stickyOffsets", value.asInstanceOf[js.Any])
     }
   }
 }

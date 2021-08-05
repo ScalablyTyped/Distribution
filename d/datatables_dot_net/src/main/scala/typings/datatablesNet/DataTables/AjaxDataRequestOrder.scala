@@ -12,19 +12,15 @@ trait AjaxDataRequestOrder extends StObject {
 }
 object AjaxDataRequestOrder {
   
-  @scala.inline
-  def apply(column: Double, dir: String): AjaxDataRequestOrder = {
+  inline def apply(column: Double, dir: String): AjaxDataRequestOrder = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], dir = dir.asInstanceOf[js.Any])
     __obj.asInstanceOf[AjaxDataRequestOrder]
   }
   
-  @scala.inline
-  implicit class AjaxDataRequestOrderMutableBuilder[Self <: AjaxDataRequestOrder] (val x: Self) extends AnyVal {
+  extension [Self <: AjaxDataRequestOrder](x: Self) {
     
-    @scala.inline
-    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+    inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
   }
 }

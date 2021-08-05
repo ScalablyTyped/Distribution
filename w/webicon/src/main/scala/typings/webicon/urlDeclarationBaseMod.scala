@@ -20,26 +20,20 @@ object urlDeclarationBaseMod {
   }
   object UrlDeclarationBase {
     
-    @scala.inline
-    def apply(): UrlDeclarationBase = {
+    inline def apply(): UrlDeclarationBase = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UrlDeclarationBase]
     }
     
-    @scala.inline
-    implicit class UrlDeclarationBaseMutableBuilder[Self <: UrlDeclarationBase] (val x: Self) extends AnyVal {
+    extension [Self <: UrlDeclarationBase](x: Self) {
       
-      @scala.inline
-      def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setUrl(value: js.Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: js.Any): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
 }

@@ -14,8 +14,7 @@ trait GuardMeta[TContext, TEvent /* <: EventObject */]
 }
 object GuardMeta {
   
-  @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](
+  inline def apply[TContext, TEvent /* <: EventObject */](
     _event: typings.xstate.typesMod.SCXML.Event[TEvent],
     cond: Guard[TContext, TEvent],
     state: State[TContext, TEvent, js.Any, ContextTContext[TContext]]
@@ -24,10 +23,8 @@ object GuardMeta {
     __obj.asInstanceOf[GuardMeta[TContext, TEvent]]
   }
   
-  @scala.inline
-  implicit class GuardMetaMutableBuilder[Self <: GuardMeta[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (GuardMeta[TContext, TEvent])) extends AnyVal {
+  extension [Self <: GuardMeta[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (GuardMeta[TContext, TEvent])) {
     
-    @scala.inline
-    def setCond(value: Guard[TContext, TEvent]): Self = StObject.set(x, "cond", value.asInstanceOf[js.Any])
+    inline def setCond(value: Guard[TContext, TEvent]): Self = StObject.set(x, "cond", value.asInstanceOf[js.Any])
   }
 }

@@ -14,16 +14,13 @@ trait RuleGroupRuleStatementOrStatementStatementByteMatchStatementFieldToMatchSi
 }
 object RuleGroupRuleStatementOrStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument {
   
-  @scala.inline
-  def apply(name: Input[String]): RuleGroupRuleStatementOrStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument = {
+  inline def apply(name: Input[String]): RuleGroupRuleStatementOrStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleGroupRuleStatementOrStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleStatementOrStatementStatementByteMatchStatementFieldToMatchSingleQueryArgumentMutableBuilder[Self <: RuleGroupRuleStatementOrStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleStatementOrStatementStatementByteMatchStatementFieldToMatchSingleQueryArgument](x: Self) {
     
-    @scala.inline
-    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

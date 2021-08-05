@@ -11,16 +11,13 @@ trait HTMLCanvasElement extends StObject {
 }
 object HTMLCanvasElement {
   
-  @scala.inline
-  def apply(transferControlToOffscreen: () => OffscreenCanvas): HTMLCanvasElement = {
+  inline def apply(transferControlToOffscreen: () => OffscreenCanvas): HTMLCanvasElement = {
     val __obj = js.Dynamic.literal(transferControlToOffscreen = js.Any.fromFunction0(transferControlToOffscreen))
     __obj.asInstanceOf[HTMLCanvasElement]
   }
   
-  @scala.inline
-  implicit class HTMLCanvasElementMutableBuilder[Self <: HTMLCanvasElement] (val x: Self) extends AnyVal {
+  extension [Self <: HTMLCanvasElement](x: Self) {
     
-    @scala.inline
-    def setTransferControlToOffscreen(value: () => OffscreenCanvas): Self = StObject.set(x, "transferControlToOffscreen", js.Any.fromFunction0(value))
+    inline def setTransferControlToOffscreen(value: () => OffscreenCanvas): Self = StObject.set(x, "transferControlToOffscreen", js.Any.fromFunction0(value))
   }
 }

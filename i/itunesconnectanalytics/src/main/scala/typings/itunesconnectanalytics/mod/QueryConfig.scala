@@ -22,55 +22,39 @@ trait QueryConfig extends StObject {
 }
 object QueryConfig {
   
-  @scala.inline
-  def apply(): QueryConfig = {
+  inline def apply(): QueryConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryConfig]
   }
   
-  @scala.inline
-  implicit class QueryConfigMutableBuilder[Self <: QueryConfig] (val x: Self) extends AnyVal {
+  extension [Self <: QueryConfig](x: Self) {
     
-    @scala.inline
-    def setDimensionFilters(value: js.Array[DimensionFilters]): Self = StObject.set(x, "dimensionFilters", value.asInstanceOf[js.Any])
+    inline def setDimensionFilters(value: js.Array[DimensionFilters]): Self = StObject.set(x, "dimensionFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionFiltersUndefined: Self = StObject.set(x, "dimensionFilters", js.undefined)
+    inline def setDimensionFiltersUndefined: Self = StObject.set(x, "dimensionFilters", js.undefined)
     
-    @scala.inline
-    def setDimensionFiltersVarargs(value: DimensionFilters*): Self = StObject.set(x, "dimensionFilters", js.Array(value :_*))
+    inline def setDimensionFiltersVarargs(value: DimensionFilters*): Self = StObject.set(x, "dimensionFilters", js.Array(value :_*))
     
-    @scala.inline
-    def setEnd(value: QueryDateTypes): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: QueryDateTypes): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setFrequency(value: frequency): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
+    inline def setFrequency(value: frequency): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
+    inline def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
     
-    @scala.inline
-    def setGroup(value: QueryGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: QueryGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    @scala.inline
-    def setMeasures(value: measures | js.Array[measures]): Self = StObject.set(x, "measures", value.asInstanceOf[js.Any])
+    inline def setMeasures(value: measures | js.Array[measures]): Self = StObject.set(x, "measures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasuresUndefined: Self = StObject.set(x, "measures", js.undefined)
+    inline def setMeasuresUndefined: Self = StObject.set(x, "measures", js.undefined)
     
-    @scala.inline
-    def setMeasuresVarargs(value: measures*): Self = StObject.set(x, "measures", js.Array(value :_*))
+    inline def setMeasuresVarargs(value: measures*): Self = StObject.set(x, "measures", js.Array(value :_*))
     
-    @scala.inline
-    def setStart(value: QueryDateTypes): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: QueryDateTypes): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

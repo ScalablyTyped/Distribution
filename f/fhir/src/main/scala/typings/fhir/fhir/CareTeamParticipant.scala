@@ -33,37 +33,27 @@ trait CareTeamParticipant
 }
 object CareTeamParticipant {
   
-  @scala.inline
-  def apply(): CareTeamParticipant = {
+  inline def apply(): CareTeamParticipant = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CareTeamParticipant]
   }
   
-  @scala.inline
-  implicit class CareTeamParticipantMutableBuilder[Self <: CareTeamParticipant] (val x: Self) extends AnyVal {
+  extension [Self <: CareTeamParticipant](x: Self) {
     
-    @scala.inline
-    def setMember(value: Reference): Self = StObject.set(x, "member", value.asInstanceOf[js.Any])
+    inline def setMember(value: Reference): Self = StObject.set(x, "member", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberUndefined: Self = StObject.set(x, "member", js.undefined)
+    inline def setMemberUndefined: Self = StObject.set(x, "member", js.undefined)
     
-    @scala.inline
-    def setOnBehalfOf(value: Reference): Self = StObject.set(x, "onBehalfOf", value.asInstanceOf[js.Any])
+    inline def setOnBehalfOf(value: Reference): Self = StObject.set(x, "onBehalfOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnBehalfOfUndefined: Self = StObject.set(x, "onBehalfOf", js.undefined)
+    inline def setOnBehalfOfUndefined: Self = StObject.set(x, "onBehalfOf", js.undefined)
     
-    @scala.inline
-    def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
-    @scala.inline
-    def setRole(value: CodeableConcept): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: CodeableConcept): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
   }
 }

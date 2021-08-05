@@ -18,25 +18,19 @@ trait ListHumanLoopsResponse extends StObject {
 }
 object ListHumanLoopsResponse {
   
-  @scala.inline
-  def apply(HumanLoopSummaries: HumanLoopSummaries): ListHumanLoopsResponse = {
+  inline def apply(HumanLoopSummaries: HumanLoopSummaries): ListHumanLoopsResponse = {
     val __obj = js.Dynamic.literal(HumanLoopSummaries = HumanLoopSummaries.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListHumanLoopsResponse]
   }
   
-  @scala.inline
-  implicit class ListHumanLoopsResponseMutableBuilder[Self <: ListHumanLoopsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListHumanLoopsResponse](x: Self) {
     
-    @scala.inline
-    def setHumanLoopSummaries(value: HumanLoopSummaries): Self = StObject.set(x, "HumanLoopSummaries", value.asInstanceOf[js.Any])
+    inline def setHumanLoopSummaries(value: HumanLoopSummaries): Self = StObject.set(x, "HumanLoopSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHumanLoopSummariesVarargs(value: HumanLoopSummary*): Self = StObject.set(x, "HumanLoopSummaries", js.Array(value :_*))
+    inline def setHumanLoopSummariesVarargs(value: HumanLoopSummary*): Self = StObject.set(x, "HumanLoopSummaries", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

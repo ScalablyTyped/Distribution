@@ -18,20 +18,16 @@ trait IpSetIpSetDescriptor extends StObject {
 }
 object IpSetIpSetDescriptor {
   
-  @scala.inline
-  def apply(`type`: String, value: String): IpSetIpSetDescriptor = {
+  inline def apply(`type`: String, value: String): IpSetIpSetDescriptor = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IpSetIpSetDescriptor]
   }
   
-  @scala.inline
-  implicit class IpSetIpSetDescriptorMutableBuilder[Self <: IpSetIpSetDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: IpSetIpSetDescriptor](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

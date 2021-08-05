@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Hyperlink")
 @js.native
-class Hyperlink protected ()
+/* private */ class Hyperlink ()
   extends StObject
      with typings.activexExcel.Excel.Hyperlink

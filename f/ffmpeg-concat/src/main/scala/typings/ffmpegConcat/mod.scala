@@ -9,8 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(concatOptions: ConcatOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(concatOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def apply(concatOptions: ConcatOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(concatOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   @JSImport("ffmpeg-concat", JSImport.Namespace)
   @js.native
@@ -40,74 +39,52 @@ object mod {
   }
   object ConcatOptions {
     
-    @scala.inline
-    def apply(output: String, videos: js.Array[String]): ConcatOptions = {
+    inline def apply(output: String, videos: js.Array[String]): ConcatOptions = {
       val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any], videos = videos.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConcatOptions]
     }
     
-    @scala.inline
-    implicit class ConcatOptionsMutableBuilder[Self <: ConcatOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConcatOptions](x: Self) {
       
-      @scala.inline
-      def setAudio(value: String): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+      inline def setAudio(value: String): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
+      inline def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
       
-      @scala.inline
-      def setCleanupFrames(value: Boolean): Self = StObject.set(x, "cleanupFrames", value.asInstanceOf[js.Any])
+      inline def setCleanupFrames(value: Boolean): Self = StObject.set(x, "cleanupFrames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCleanupFramesUndefined: Self = StObject.set(x, "cleanupFrames", js.undefined)
+      inline def setCleanupFramesUndefined: Self = StObject.set(x, "cleanupFrames", js.undefined)
       
-      @scala.inline
-      def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
+      inline def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
+      inline def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
       
-      @scala.inline
-      def setFrameFormat(value: jpg | png | raw): Self = StObject.set(x, "frameFormat", value.asInstanceOf[js.Any])
+      inline def setFrameFormat(value: jpg | png | raw): Self = StObject.set(x, "frameFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrameFormatUndefined: Self = StObject.set(x, "frameFormat", js.undefined)
+      inline def setFrameFormatUndefined: Self = StObject.set(x, "frameFormat", js.undefined)
       
-      @scala.inline
-      def setLog(value: /* stdout */ String => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+      inline def setLog(value: /* stdout */ String => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+      inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
       
-      @scala.inline
-      def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTempDir(value: String): Self = StObject.set(x, "tempDir", value.asInstanceOf[js.Any])
+      inline def setTempDir(value: String): Self = StObject.set(x, "tempDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTempDirUndefined: Self = StObject.set(x, "tempDir", js.undefined)
+      inline def setTempDirUndefined: Self = StObject.set(x, "tempDir", js.undefined)
       
-      @scala.inline
-      def setTransition(value: Transition): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+      inline def setTransition(value: Transition): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+      inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
       
-      @scala.inline
-      def setTransitions(value: js.Array[Transition]): Self = StObject.set(x, "transitions", value.asInstanceOf[js.Any])
+      inline def setTransitions(value: js.Array[Transition]): Self = StObject.set(x, "transitions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionsUndefined: Self = StObject.set(x, "transitions", js.undefined)
+      inline def setTransitionsUndefined: Self = StObject.set(x, "transitions", js.undefined)
       
-      @scala.inline
-      def setTransitionsVarargs(value: Transition*): Self = StObject.set(x, "transitions", js.Array(value :_*))
+      inline def setTransitionsVarargs(value: Transition*): Self = StObject.set(x, "transitions", js.Array(value :_*))
       
-      @scala.inline
-      def setVideos(value: js.Array[String]): Self = StObject.set(x, "videos", value.asInstanceOf[js.Any])
+      inline def setVideos(value: js.Array[String]): Self = StObject.set(x, "videos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVideosVarargs(value: String*): Self = StObject.set(x, "videos", js.Array(value :_*))
+      inline def setVideosVarargs(value: String*): Self = StObject.set(x, "videos", js.Array(value :_*))
     }
   }
   
@@ -121,26 +98,20 @@ object mod {
   }
   object Transition {
     
-    @scala.inline
-    def apply(duration: Double, name: String): Transition = {
+    inline def apply(duration: Double, name: String): Transition = {
       val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Transition]
     }
     
-    @scala.inline
-    implicit class TransitionMutableBuilder[Self <: Transition] (val x: Self) extends AnyVal {
+    extension [Self <: Transition](x: Self) {
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     }
   }
 }

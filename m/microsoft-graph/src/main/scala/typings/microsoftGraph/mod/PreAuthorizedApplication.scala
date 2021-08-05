@@ -14,31 +14,23 @@ trait PreAuthorizedApplication extends StObject {
 }
 object PreAuthorizedApplication {
   
-  @scala.inline
-  def apply(): PreAuthorizedApplication = {
+  inline def apply(): PreAuthorizedApplication = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PreAuthorizedApplication]
   }
   
-  @scala.inline
-  implicit class PreAuthorizedApplicationMutableBuilder[Self <: PreAuthorizedApplication] (val x: Self) extends AnyVal {
+  extension [Self <: PreAuthorizedApplication](x: Self) {
     
-    @scala.inline
-    def setAppId(value: NullableOption[String]): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: NullableOption[String]): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppIdNull: Self = StObject.set(x, "appId", null)
+    inline def setAppIdNull: Self = StObject.set(x, "appId", null)
     
-    @scala.inline
-    def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
+    inline def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
     
-    @scala.inline
-    def setDelegatedPermissionIds(value: js.Array[String]): Self = StObject.set(x, "delegatedPermissionIds", value.asInstanceOf[js.Any])
+    inline def setDelegatedPermissionIds(value: js.Array[String]): Self = StObject.set(x, "delegatedPermissionIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelegatedPermissionIdsUndefined: Self = StObject.set(x, "delegatedPermissionIds", js.undefined)
+    inline def setDelegatedPermissionIdsUndefined: Self = StObject.set(x, "delegatedPermissionIds", js.undefined)
     
-    @scala.inline
-    def setDelegatedPermissionIdsVarargs(value: String*): Self = StObject.set(x, "delegatedPermissionIds", js.Array(value :_*))
+    inline def setDelegatedPermissionIdsVarargs(value: String*): Self = StObject.set(x, "delegatedPermissionIds", js.Array(value :_*))
   }
 }

@@ -54,6 +54,5 @@ object filesRmMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasHasIpfsPathRecursiveTimeout: CtxPath): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPathRecursiveTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def handler(hasHasIpfsPathRecursiveTimeout: CtxPath): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPathRecursiveTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

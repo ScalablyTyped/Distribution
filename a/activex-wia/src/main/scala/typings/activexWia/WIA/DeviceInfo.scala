@@ -27,13 +27,12 @@ trait DeviceInfo extends StObject {
   /** Returns the Type of Device */
   val Type: WiaDeviceType
   
-  @JSName("WIA.DeviceInfo_typekey")
+  /* private */ @JSName("WIA.DeviceInfo_typekey")
   var WIADotDeviceInfo_typekey: DeviceInfo
 }
 object DeviceInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Connect: () => Device,
     DeviceID: String,
     Properties: Properties,
@@ -45,22 +44,16 @@ object DeviceInfo {
     __obj.asInstanceOf[DeviceInfo]
   }
   
-  @scala.inline
-  implicit class DeviceInfoMutableBuilder[Self <: DeviceInfo] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceInfo](x: Self) {
     
-    @scala.inline
-    def setConnect(value: () => Device): Self = StObject.set(x, "Connect", js.Any.fromFunction0(value))
+    inline def setConnect(value: () => Device): Self = StObject.set(x, "Connect", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDeviceID(value: String): Self = StObject.set(x, "DeviceID", value.asInstanceOf[js.Any])
+    inline def setDeviceID(value: String): Self = StObject.set(x, "DeviceID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: Properties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Properties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: WiaDeviceType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: WiaDeviceType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWIADotDeviceInfo_typekey(value: DeviceInfo): Self = StObject.set(x, "WIA.DeviceInfo_typekey", value.asInstanceOf[js.Any])
+    inline def setWIADotDeviceInfo_typekey(value: DeviceInfo): Self = StObject.set(x, "WIA.DeviceInfo_typekey", value.asInstanceOf[js.Any])
   }
 }

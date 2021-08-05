@@ -23,37 +23,27 @@ trait BasePanelRenderPropsdocsO extends StObject {
 }
 object BasePanelRenderPropsdocsO {
   
-  @scala.inline
-  def apply(animate: Boolean, docsOnly: Boolean, isToolshown: Boolean, position: Bounds): BasePanelRenderPropsdocsO = {
+  inline def apply(animate: Boolean, docsOnly: Boolean, isToolshown: Boolean, position: Bounds): BasePanelRenderPropsdocsO = {
     val __obj = js.Dynamic.literal(animate = animate.asInstanceOf[js.Any], docsOnly = docsOnly.asInstanceOf[js.Any], isToolshown = isToolshown.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[BasePanelRenderPropsdocsO]
   }
   
-  @scala.inline
-  implicit class BasePanelRenderPropsdocsOMutableBuilder[Self <: BasePanelRenderPropsdocsO] (val x: Self) extends AnyVal {
+  extension [Self <: BasePanelRenderPropsdocsO](x: Self) {
     
-    @scala.inline
-    def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocsOnly(value: Boolean): Self = StObject.set(x, "docsOnly", value.asInstanceOf[js.Any])
+    inline def setDocsOnly(value: Boolean): Self = StObject.set(x, "docsOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFullscreen(value: Boolean): Self = StObject.set(x, "isFullscreen", value.asInstanceOf[js.Any])
+    inline def setIsFullscreen(value: Boolean): Self = StObject.set(x, "isFullscreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFullscreenUndefined: Self = StObject.set(x, "isFullscreen", js.undefined)
+    inline def setIsFullscreenUndefined: Self = StObject.set(x, "isFullscreen", js.undefined)
     
-    @scala.inline
-    def setIsToolshown(value: Boolean): Self = StObject.set(x, "isToolshown", value.asInstanceOf[js.Any])
+    inline def setIsToolshown(value: Boolean): Self = StObject.set(x, "isToolshown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Bounds): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Bounds): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewMode(value: ViewMode & js.UndefOr[String]): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
+    inline def setViewMode(value: ViewMode & js.UndefOr[String]): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModeUndefined: Self = StObject.set(x, "viewMode", js.undefined)
+    inline def setViewModeUndefined: Self = StObject.set(x, "viewMode", js.undefined)
   }
 }

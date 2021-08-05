@@ -29,37 +29,27 @@ trait SecondDerivativeElevationGrid extends StObject {
 }
 object SecondDerivativeElevationGrid {
   
-  @scala.inline
-  def apply(): SecondDerivativeElevationGrid = {
+  inline def apply(): SecondDerivativeElevationGrid = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SecondDerivativeElevationGrid]
   }
   
-  @scala.inline
-  implicit class SecondDerivativeElevationGridMutableBuilder[Self <: SecondDerivativeElevationGrid] (val x: Self) extends AnyVal {
+  extension [Self <: SecondDerivativeElevationGrid](x: Self) {
     
-    @scala.inline
-    def setAltitudeMultiplier(value: Double): Self = StObject.set(x, "altitudeMultiplier", value.asInstanceOf[js.Any])
+    inline def setAltitudeMultiplier(value: Double): Self = StObject.set(x, "altitudeMultiplier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltitudeMultiplierUndefined: Self = StObject.set(x, "altitudeMultiplier", js.undefined)
+    inline def setAltitudeMultiplierUndefined: Self = StObject.set(x, "altitudeMultiplier", js.undefined)
     
-    @scala.inline
-    def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
+    inline def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnCountUndefined: Self = StObject.set(x, "columnCount", js.undefined)
+    inline def setColumnCountUndefined: Self = StObject.set(x, "columnCount", js.undefined)
     
-    @scala.inline
-    def setEncodedData(value: String): Self = StObject.set(x, "encodedData", value.asInstanceOf[js.Any])
+    inline def setEncodedData(value: String): Self = StObject.set(x, "encodedData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodedDataUndefined: Self = StObject.set(x, "encodedData", js.undefined)
+    inline def setEncodedDataUndefined: Self = StObject.set(x, "encodedData", js.undefined)
     
-    @scala.inline
-    def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
+    inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
+    inline def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
   }
 }

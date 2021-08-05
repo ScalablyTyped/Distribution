@@ -20,49 +20,35 @@ trait Label extends StObject {
 }
 object Label {
   
-  @scala.inline
-  def apply(): Label = {
+  inline def apply(): Label = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Label]
   }
   
-  @scala.inline
-  implicit class LabelMutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
+  extension [Self <: Label](x: Self) {
     
-    @scala.inline
-    def setLabel(value: CustomizeTextFormat): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: CustomizeTextFormat): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setSeparatorHeight(value: Double): Self = StObject.set(x, "separatorHeight", value.asInstanceOf[js.Any])
+    inline def setSeparatorHeight(value: Double): Self = StObject.set(x, "separatorHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparatorHeightUndefined: Self = StObject.set(x, "separatorHeight", js.undefined)
+    inline def setSeparatorHeightUndefined: Self = StObject.set(x, "separatorHeight", js.undefined)
     
-    @scala.inline
-    def setTextLeftIndent(value: Double): Self = StObject.set(x, "textLeftIndent", value.asInstanceOf[js.Any])
+    inline def setTextLeftIndent(value: Double): Self = StObject.set(x, "textLeftIndent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextLeftIndentUndefined: Self = StObject.set(x, "textLeftIndent", js.undefined)
+    inline def setTextLeftIndentUndefined: Self = StObject.set(x, "textLeftIndent", js.undefined)
     
-    @scala.inline
-    def setTextTopIndent(value: Double): Self = StObject.set(x, "textTopIndent", value.asInstanceOf[js.Any])
+    inline def setTextTopIndent(value: Double): Self = StObject.set(x, "textTopIndent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextTopIndentUndefined: Self = StObject.set(x, "textTopIndent", js.undefined)
+    inline def setTextTopIndentUndefined: Self = StObject.set(x, "textTopIndent", js.undefined)
     
-    @scala.inline
-    def setTopIndent(value: Double): Self = StObject.set(x, "topIndent", value.asInstanceOf[js.Any])
+    inline def setTopIndent(value: Double): Self = StObject.set(x, "topIndent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopIndentUndefined: Self = StObject.set(x, "topIndent", js.undefined)
+    inline def setTopIndentUndefined: Self = StObject.set(x, "topIndent", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

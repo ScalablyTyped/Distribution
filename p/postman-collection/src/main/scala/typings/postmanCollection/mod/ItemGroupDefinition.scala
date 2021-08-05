@@ -16,37 +16,27 @@ trait ItemGroupDefinition
 }
 object ItemGroupDefinition {
   
-  @scala.inline
-  def apply(): ItemGroupDefinition = {
+  inline def apply(): ItemGroupDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ItemGroupDefinition]
   }
   
-  @scala.inline
-  implicit class ItemGroupDefinitionMutableBuilder[Self <: ItemGroupDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ItemGroupDefinition](x: Self) {
     
-    @scala.inline
-    def setAuth(value: RequestAuthDefinition): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: RequestAuthDefinition): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setEvent(value: js.Array[EventDefinition]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: js.Array[EventDefinition]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    @scala.inline
-    def setEventVarargs(value: EventDefinition*): Self = StObject.set(x, "event", js.Array(value :_*))
+    inline def setEventVarargs(value: EventDefinition*): Self = StObject.set(x, "event", js.Array(value :_*))
     
-    @scala.inline
-    def setItem(value: js.Array[ItemDefinition | ItemGroupDefinition]): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: js.Array[ItemDefinition | ItemGroupDefinition]): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     
-    @scala.inline
-    def setItemVarargs(value: (ItemDefinition | ItemGroupDefinition)*): Self = StObject.set(x, "item", js.Array(value :_*))
+    inline def setItemVarargs(value: (ItemDefinition | ItemGroupDefinition)*): Self = StObject.set(x, "item", js.Array(value :_*))
   }
 }

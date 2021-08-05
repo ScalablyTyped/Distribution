@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** FaxRecipient Class */
 @JSGlobal("FAXCOMEXLib.FaxRecipient")
 @js.native
-class FaxRecipient protected ()
+/* private */ class FaxRecipient ()
   extends StObject
      with typings.activexFaxcomexlib.FAXCOMEXLib.FaxRecipient {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("FAXCOMEXLib.FaxRecipient_typekey")
   var FAXCOMEXLibDotFaxRecipient_typekey: typings.activexFaxcomexlib.FAXCOMEXLib.FaxRecipient = js.native
   

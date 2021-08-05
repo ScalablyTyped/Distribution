@@ -68,107 +68,74 @@ object mod {
   }
   object Props {
     
-    @scala.inline
-    def apply(src: String | js.Array[String]): Props = {
+    inline def apply(src: String | js.Array[String]): Props = {
       val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setFormat(value: js.Array[String]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: js.Array[String]): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setFormatVarargs(value: String*): Self = StObject.set(x, "format", js.Array(value :_*))
+      inline def setFormatVarargs(value: String*): Self = StObject.set(x, "format", js.Array(value :_*))
       
-      @scala.inline
-      def setHtml5(value: Boolean): Self = StObject.set(x, "html5", value.asInstanceOf[js.Any])
+      inline def setHtml5(value: Boolean): Self = StObject.set(x, "html5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtml5Undefined: Self = StObject.set(x, "html5", js.undefined)
+      inline def setHtml5Undefined: Self = StObject.set(x, "html5", js.undefined)
       
-      @scala.inline
-      def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
+      inline def setLoop(value: Boolean): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
+      inline def setLoopUndefined: Self = StObject.set(x, "loop", js.undefined)
       
-      @scala.inline
-      def setMute(value: Boolean): Self = StObject.set(x, "mute", value.asInstanceOf[js.Any])
+      inline def setMute(value: Boolean): Self = StObject.set(x, "mute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMuteUndefined: Self = StObject.set(x, "mute", js.undefined)
+      inline def setMuteUndefined: Self = StObject.set(x, "mute", js.undefined)
       
-      @scala.inline
-      def setOnEnd(value: () => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction0(value))
+      inline def setOnEnd(value: () => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
+      inline def setOnEndUndefined: Self = StObject.set(x, "onEnd", js.undefined)
       
-      @scala.inline
-      def setOnLoad(value: () => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
+      inline def setOnLoad(value: () => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnLoadError(value: /* id */ Double => Unit): Self = StObject.set(x, "onLoadError", js.Any.fromFunction1(value))
+      inline def setOnLoadError(value: /* id */ Double => Unit): Self = StObject.set(x, "onLoadError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnLoadErrorUndefined: Self = StObject.set(x, "onLoadError", js.undefined)
+      inline def setOnLoadErrorUndefined: Self = StObject.set(x, "onLoadError", js.undefined)
       
-      @scala.inline
-      def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
+      inline def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
       
-      @scala.inline
-      def setOnPause(value: () => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction0(value))
+      inline def setOnPause(value: () => Unit): Self = StObject.set(x, "onPause", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnPauseUndefined: Self = StObject.set(x, "onPause", js.undefined)
+      inline def setOnPauseUndefined: Self = StObject.set(x, "onPause", js.undefined)
       
-      @scala.inline
-      def setOnPlay(value: /* id */ Double => Unit): Self = StObject.set(x, "onPlay", js.Any.fromFunction1(value))
+      inline def setOnPlay(value: /* id */ Double => Unit): Self = StObject.set(x, "onPlay", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPlayUndefined: Self = StObject.set(x, "onPlay", js.undefined)
+      inline def setOnPlayUndefined: Self = StObject.set(x, "onPlay", js.undefined)
       
-      @scala.inline
-      def setOnStop(value: /* id */ Double => Unit): Self = StObject.set(x, "onStop", js.Any.fromFunction1(value))
+      inline def setOnStop(value: /* id */ Double => Unit): Self = StObject.set(x, "onStop", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnStopUndefined: Self = StObject.set(x, "onStop", js.undefined)
+      inline def setOnStopUndefined: Self = StObject.set(x, "onStop", js.undefined)
       
-      @scala.inline
-      def setOnVolume(value: /* id */ Double => Unit): Self = StObject.set(x, "onVolume", js.Any.fromFunction1(value))
+      inline def setOnVolume(value: /* id */ Double => Unit): Self = StObject.set(x, "onVolume", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnVolumeUndefined: Self = StObject.set(x, "onVolume", js.undefined)
+      inline def setOnVolumeUndefined: Self = StObject.set(x, "onVolume", js.undefined)
       
-      @scala.inline
-      def setPlaying(value: Boolean): Self = StObject.set(x, "playing", value.asInstanceOf[js.Any])
+      inline def setPlaying(value: Boolean): Self = StObject.set(x, "playing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlayingUndefined: Self = StObject.set(x, "playing", js.undefined)
+      inline def setPlayingUndefined: Self = StObject.set(x, "playing", js.undefined)
       
-      @scala.inline
-      def setPreload(value: Boolean): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
+      inline def setPreload(value: Boolean): Self = StObject.set(x, "preload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
+      inline def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
       
-      @scala.inline
-      def setSrc(value: String | js.Array[String]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String | js.Array[String]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcVarargs(value: String*): Self = StObject.set(x, "src", js.Array(value :_*))
+      inline def setSrcVarargs(value: String*): Self = StObject.set(x, "src", js.Array(value :_*))
       
-      @scala.inline
-      def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+      inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
+      inline def setVolumeUndefined: Self = StObject.set(x, "volume", js.undefined)
     }
   }
   

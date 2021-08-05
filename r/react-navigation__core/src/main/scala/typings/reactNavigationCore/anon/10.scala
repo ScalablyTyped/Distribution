@@ -10,16 +10,13 @@ trait `10` extends StObject {
 }
 object `10` {
   
-  @scala.inline
-  def apply(key: String): `10` = {
+  inline def apply(key: String): `10` = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[`10`]
   }
   
-  @scala.inline
-  implicit class `10MutableBuilder`[Self <: `10`] (val x: Self) extends AnyVal {
+  extension [Self <: `10`](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

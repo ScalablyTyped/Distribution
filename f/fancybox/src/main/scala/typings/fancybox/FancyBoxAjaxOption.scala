@@ -14,16 +14,13 @@ trait FancyBoxAjaxOption extends StObject {
 }
 object FancyBoxAjaxOption {
   
-  @scala.inline
-  def apply(settings: JQueryAjaxSettings): FancyBoxAjaxOption = {
+  inline def apply(settings: JQueryAjaxSettings): FancyBoxAjaxOption = {
     val __obj = js.Dynamic.literal(settings = settings.asInstanceOf[js.Any])
     __obj.asInstanceOf[FancyBoxAjaxOption]
   }
   
-  @scala.inline
-  implicit class FancyBoxAjaxOptionMutableBuilder[Self <: FancyBoxAjaxOption] (val x: Self) extends AnyVal {
+  extension [Self <: FancyBoxAjaxOption](x: Self) {
     
-    @scala.inline
-    def setSettings(value: JQueryAjaxSettings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+    inline def setSettings(value: JQueryAjaxSettings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
   }
 }

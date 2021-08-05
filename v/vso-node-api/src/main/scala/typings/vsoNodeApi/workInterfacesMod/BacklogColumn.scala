@@ -13,19 +13,15 @@ trait BacklogColumn extends StObject {
 }
 object BacklogColumn {
   
-  @scala.inline
-  def apply(columnFieldReference: WorkItemFieldReference, width: Double): BacklogColumn = {
+  inline def apply(columnFieldReference: WorkItemFieldReference, width: Double): BacklogColumn = {
     val __obj = js.Dynamic.literal(columnFieldReference = columnFieldReference.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[BacklogColumn]
   }
   
-  @scala.inline
-  implicit class BacklogColumnMutableBuilder[Self <: BacklogColumn] (val x: Self) extends AnyVal {
+  extension [Self <: BacklogColumn](x: Self) {
     
-    @scala.inline
-    def setColumnFieldReference(value: WorkItemFieldReference): Self = StObject.set(x, "columnFieldReference", value.asInstanceOf[js.Any])
+    inline def setColumnFieldReference(value: WorkItemFieldReference): Self = StObject.set(x, "columnFieldReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

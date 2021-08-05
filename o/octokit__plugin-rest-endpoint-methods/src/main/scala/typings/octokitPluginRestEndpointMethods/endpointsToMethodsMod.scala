@@ -13,6 +13,5 @@ object endpointsToMethodsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def endpointsToMethods(octokit: Octokit, endpointsMap: EndpointsDefaultsAndDecorations): RestEndpointMethods = (^.asInstanceOf[js.Dynamic].applyDynamic("endpointsToMethods")(octokit.asInstanceOf[js.Any], endpointsMap.asInstanceOf[js.Any])).asInstanceOf[RestEndpointMethods]
+  inline def endpointsToMethods(octokit: Octokit, endpointsMap: EndpointsDefaultsAndDecorations): RestEndpointMethods = (^.asInstanceOf[js.Dynamic].applyDynamic("endpointsToMethods")(octokit.asInstanceOf[js.Any], endpointsMap.asInstanceOf[js.Any])).asInstanceOf[RestEndpointMethods]
 }

@@ -24,8 +24,7 @@ trait Commits extends StObject {
 }
 object Commits {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     comments: HrefString,
     commits: HrefString,
     html: HrefString,
@@ -39,31 +38,22 @@ object Commits {
     __obj.asInstanceOf[Commits]
   }
   
-  @scala.inline
-  implicit class CommitsMutableBuilder[Self <: Commits] (val x: Self) extends AnyVal {
+  extension [Self <: Commits](x: Self) {
     
-    @scala.inline
-    def setComments(value: HrefString): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: HrefString): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommits(value: HrefString): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
+    inline def setCommits(value: HrefString): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtml(value: HrefString): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: HrefString): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssue(value: HrefString): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
+    inline def setIssue(value: HrefString): Self = StObject.set(x, "issue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReview_comment(value: HrefString): Self = StObject.set(x, "review_comment", value.asInstanceOf[js.Any])
+    inline def setReview_comment(value: HrefString): Self = StObject.set(x, "review_comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReview_comments(value: HrefString): Self = StObject.set(x, "review_comments", value.asInstanceOf[js.Any])
+    inline def setReview_comments(value: HrefString): Self = StObject.set(x, "review_comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelf(value: HrefString): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
+    inline def setSelf(value: HrefString): Self = StObject.set(x, "self", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatuses(value: HrefString): Self = StObject.set(x, "statuses", value.asInstanceOf[js.Any])
+    inline def setStatuses(value: HrefString): Self = StObject.set(x, "statuses", value.asInstanceOf[js.Any])
   }
 }

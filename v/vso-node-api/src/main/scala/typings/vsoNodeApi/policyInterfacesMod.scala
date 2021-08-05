@@ -82,20 +82,17 @@ object policyInterfacesMod {
     @JSImport("vso-node-api/interfaces/PolicyInterfaces", "TypeInfo.PolicyConfiguration")
     @js.native
     def PolicyConfiguration: js.Any = js.native
-    @scala.inline
-    def PolicyConfiguration_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PolicyConfiguration")(x.asInstanceOf[js.Any])
+    inline def PolicyConfiguration_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PolicyConfiguration")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/PolicyInterfaces", "TypeInfo.PolicyEvaluationRecord")
     @js.native
     def PolicyEvaluationRecord: js.Any = js.native
-    @scala.inline
-    def PolicyEvaluationRecord_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PolicyEvaluationRecord")(x.asInstanceOf[js.Any])
+    inline def PolicyEvaluationRecord_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PolicyEvaluationRecord")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/PolicyInterfaces", "TypeInfo.PolicyEvaluationStatus")
     @js.native
     def PolicyEvaluationStatus: EnumValuesBroken = js.native
-    @scala.inline
-    def PolicyEvaluationStatus_=(x: EnumValuesBroken): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PolicyEvaluationStatus")(x.asInstanceOf[js.Any])
+    inline def PolicyEvaluationStatus_=(x: EnumValuesBroken): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PolicyEvaluationStatus")(x.asInstanceOf[js.Any])
   }
   
   trait PolicyConfiguration
@@ -139,8 +136,7 @@ object policyInterfacesMod {
   }
   object PolicyConfiguration {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _links: js.Any,
       createdBy: IdentityRef,
       createdDate: Date,
@@ -158,29 +154,21 @@ object policyInterfacesMod {
       __obj.asInstanceOf[PolicyConfiguration]
     }
     
-    @scala.inline
-    implicit class PolicyConfigurationMutableBuilder[Self <: PolicyConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: PolicyConfiguration](x: Self) {
       
-      @scala.inline
-      def setCreatedBy(value: IdentityRef): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
+      inline def setCreatedBy(value: IdentityRef): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+      inline def setCreatedDate(value: Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBlocking(value: Boolean): Self = StObject.set(x, "isBlocking", value.asInstanceOf[js.Any])
+      inline def setIsBlocking(value: Boolean): Self = StObject.set(x, "isBlocking", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDeleted(value: Boolean): Self = StObject.set(x, "isDeleted", value.asInstanceOf[js.Any])
+      inline def setIsDeleted(value: Boolean): Self = StObject.set(x, "isDeleted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+      inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSettings(value: js.Any): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: js.Any): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+      inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
     }
   }
   
@@ -203,24 +191,19 @@ object policyInterfacesMod {
   }
   object PolicyConfigurationRef {
     
-    @scala.inline
-    def apply(id: Double, `type`: PolicyTypeRef, url: String): PolicyConfigurationRef = {
+    inline def apply(id: Double, `type`: PolicyTypeRef, url: String): PolicyConfigurationRef = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[PolicyConfigurationRef]
     }
     
-    @scala.inline
-    implicit class PolicyConfigurationRefMutableBuilder[Self <: PolicyConfigurationRef] (val x: Self) extends AnyVal {
+    extension [Self <: PolicyConfigurationRef](x: Self) {
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: PolicyTypeRef): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: PolicyTypeRef): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -268,8 +251,7 @@ object policyInterfacesMod {
   }
   object PolicyEvaluationRecord {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _links: js.Any,
       artifactId: String,
       completedDate: Date,
@@ -283,32 +265,23 @@ object policyInterfacesMod {
       __obj.asInstanceOf[PolicyEvaluationRecord]
     }
     
-    @scala.inline
-    implicit class PolicyEvaluationRecordMutableBuilder[Self <: PolicyEvaluationRecord] (val x: Self) extends AnyVal {
+    extension [Self <: PolicyEvaluationRecord](x: Self) {
       
-      @scala.inline
-      def setArtifactId(value: String): Self = StObject.set(x, "artifactId", value.asInstanceOf[js.Any])
+      inline def setArtifactId(value: String): Self = StObject.set(x, "artifactId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompletedDate(value: Date): Self = StObject.set(x, "completedDate", value.asInstanceOf[js.Any])
+      inline def setCompletedDate(value: Date): Self = StObject.set(x, "completedDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfiguration(value: PolicyConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
+      inline def setConfiguration(value: PolicyConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvaluationId(value: String): Self = StObject.set(x, "evaluationId", value.asInstanceOf[js.Any])
+      inline def setEvaluationId(value: String): Self = StObject.set(x, "evaluationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartedDate(value: Date): Self = StObject.set(x, "startedDate", value.asInstanceOf[js.Any])
+      inline def setStartedDate(value: Date): Self = StObject.set(x, "startedDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: PolicyEvaluationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: PolicyEvaluationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+      inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
     }
   }
   
@@ -328,20 +301,16 @@ object policyInterfacesMod {
   }
   object PolicyType {
     
-    @scala.inline
-    def apply(_links: js.Any, description: String, displayName: String, id: String, url: String): PolicyType = {
+    inline def apply(_links: js.Any, description: String, displayName: String, id: String, url: String): PolicyType = {
       val __obj = js.Dynamic.literal(_links = _links.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[PolicyType]
     }
     
-    @scala.inline
-    implicit class PolicyTypeMutableBuilder[Self <: PolicyType] (val x: Self) extends AnyVal {
+    extension [Self <: PolicyType](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+      inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
     }
   }
   
@@ -364,23 +333,18 @@ object policyInterfacesMod {
   }
   object PolicyTypeRef {
     
-    @scala.inline
-    def apply(displayName: String, id: String, url: String): PolicyTypeRef = {
+    inline def apply(displayName: String, id: String, url: String): PolicyTypeRef = {
       val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[PolicyTypeRef]
     }
     
-    @scala.inline
-    implicit class PolicyTypeRefMutableBuilder[Self <: PolicyTypeRef] (val x: Self) extends AnyVal {
+    extension [Self <: PolicyTypeRef](x: Self) {
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -395,18 +359,15 @@ object policyInterfacesMod {
   }
   object VersionedPolicyConfigurationRef {
     
-    @scala.inline
-    def apply(id: Double, revision: Double, `type`: PolicyTypeRef, url: String): VersionedPolicyConfigurationRef = {
+    inline def apply(id: Double, revision: Double, `type`: PolicyTypeRef, url: String): VersionedPolicyConfigurationRef = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], revision = revision.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[VersionedPolicyConfigurationRef]
     }
     
-    @scala.inline
-    implicit class VersionedPolicyConfigurationRefMutableBuilder[Self <: VersionedPolicyConfigurationRef] (val x: Self) extends AnyVal {
+    extension [Self <: VersionedPolicyConfigurationRef](x: Self) {
       
-      @scala.inline
-      def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+      inline def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     }
   }
 }

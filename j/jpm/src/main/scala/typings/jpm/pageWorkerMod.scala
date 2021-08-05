@@ -20,8 +20,7 @@ object pageWorkerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Page(options: Allow): PageWorker = ^.asInstanceOf[js.Dynamic].applyDynamic("Page")(options.asInstanceOf[js.Any]).asInstanceOf[PageWorker]
+  inline def Page(options: Allow): PageWorker = ^.asInstanceOf[js.Dynamic].applyDynamic("Page")(options.asInstanceOf[js.Any]).asInstanceOf[PageWorker]
   
   @js.native
   trait PageWorker extends StObject {

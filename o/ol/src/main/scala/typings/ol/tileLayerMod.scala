@@ -78,17 +78,17 @@ object tileLayerMod {
       opt_tileCallback: js.Function0[Unit]
     ): Unit = js.native
     
-    var renderedPixelRatio: Double = js.native
+    /* protected */ var renderedPixelRatio: Double = js.native
     
-    var renderedProjection: typings.ol.projectionMod.default = js.native
+    /* protected */ var renderedProjection: typings.ol.projectionMod.default = js.native
     
-    var renderedRevision: Double = js.native
+    /* protected */ var renderedRevision: Double = js.native
     
-    var renderedTiles: js.Array[typings.ol.olTileMod.default] = js.native
+    /* protected */ var renderedTiles: js.Array[typings.ol.olTileMod.default] = js.native
     
     /* protected */ def scheduleExpireCache(frameState: FrameState, tileSource: typings.ol.sourceTileMod.default): Unit = js.native
     
-    var tmpExtent: Extent = js.native
+    /* protected */ var tmpExtent: Extent = js.native
     
     /* protected */ def updateUsedTiles(
       usedTiles: StringDictionary[StringDictionary[Boolean]],

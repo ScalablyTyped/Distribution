@@ -12,20 +12,16 @@ object anon {
   }
   object Prefix {
     
-    @scala.inline
-    def apply(): Prefix = {
+    inline def apply(): Prefix = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Prefix]
     }
     
-    @scala.inline
-    implicit class PrefixMutableBuilder[Self <: Prefix] (val x: Self) extends AnyVal {
+    extension [Self <: Prefix](x: Self) {
       
-      @scala.inline
-      def setPrefix(value: Boolean): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: Boolean): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     }
   }
 }

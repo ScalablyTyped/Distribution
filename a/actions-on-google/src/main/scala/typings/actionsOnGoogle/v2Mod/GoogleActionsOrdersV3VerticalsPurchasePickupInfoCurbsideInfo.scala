@@ -22,25 +22,19 @@ trait GoogleActionsOrdersV3VerticalsPurchasePickupInfoCurbsideInfo extends StObj
 }
 object GoogleActionsOrdersV3VerticalsPurchasePickupInfoCurbsideInfo {
   
-  @scala.inline
-  def apply(): GoogleActionsOrdersV3VerticalsPurchasePickupInfoCurbsideInfo = {
+  inline def apply(): GoogleActionsOrdersV3VerticalsPurchasePickupInfoCurbsideInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsPurchasePickupInfoCurbsideInfo]
   }
   
-  @scala.inline
-  implicit class GoogleActionsOrdersV3VerticalsPurchasePickupInfoCurbsideInfoMutableBuilder[Self <: GoogleActionsOrdersV3VerticalsPurchasePickupInfoCurbsideInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsOrdersV3VerticalsPurchasePickupInfoCurbsideInfo](x: Self) {
     
-    @scala.inline
-    def setCurbsideFulfillmentType(value: GoogleActionsOrdersV3VerticalsPurchasePickupInfoCurbsideInfoCurbsideFulfillmentType): Self = StObject.set(x, "curbsideFulfillmentType", value.asInstanceOf[js.Any])
+    inline def setCurbsideFulfillmentType(value: GoogleActionsOrdersV3VerticalsPurchasePickupInfoCurbsideInfoCurbsideFulfillmentType): Self = StObject.set(x, "curbsideFulfillmentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurbsideFulfillmentTypeUndefined: Self = StObject.set(x, "curbsideFulfillmentType", js.undefined)
+    inline def setCurbsideFulfillmentTypeUndefined: Self = StObject.set(x, "curbsideFulfillmentType", js.undefined)
     
-    @scala.inline
-    def setUserVehicle(value: GoogleActionsOrdersV3VerticalsCommonVehicle): Self = StObject.set(x, "userVehicle", value.asInstanceOf[js.Any])
+    inline def setUserVehicle(value: GoogleActionsOrdersV3VerticalsCommonVehicle): Self = StObject.set(x, "userVehicle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserVehicleUndefined: Self = StObject.set(x, "userVehicle", js.undefined)
+    inline def setUserVehicleUndefined: Self = StObject.set(x, "userVehicle", js.undefined)
   }
 }

@@ -19,16 +19,13 @@ trait CorruptedFilterConfigurationException
 }
 object CorruptedFilterConfigurationException {
   
-  @scala.inline
-  def apply(Context: XInterface, Details: String, Message: String): CorruptedFilterConfigurationException = {
+  inline def apply(Context: XInterface, Details: String, Message: String): CorruptedFilterConfigurationException = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], Details = Details.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[CorruptedFilterConfigurationException]
   }
   
-  @scala.inline
-  implicit class CorruptedFilterConfigurationExceptionMutableBuilder[Self <: CorruptedFilterConfigurationException] (val x: Self) extends AnyVal {
+  extension [Self <: CorruptedFilterConfigurationException](x: Self) {
     
-    @scala.inline
-    def setDetails(value: String): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: String): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
   }
 }

@@ -12,14 +12,10 @@ object utilTextMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def charAtLength(str: String, i: Double): `1` | `2` = (^.asInstanceOf[js.Dynamic].applyDynamic("charAtLength")(str.asInstanceOf[js.Any], i.asInstanceOf[js.Any])).asInstanceOf[`1` | `2`]
+  inline def charAtLength(str: String, i: Double): `1` | `2` = (^.asInstanceOf[js.Dynamic].applyDynamic("charAtLength")(str.asInstanceOf[js.Any], i.asInstanceOf[js.Any])).asInstanceOf[`1` | `2`]
   
-  @scala.inline
-  def ellipsisString(str: String, reseveLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ellipsisString")(str.asInstanceOf[js.Any], reseveLength.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def ellipsisString(str: String, reseveLength: Double, position: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ellipsisString")(str.asInstanceOf[js.Any], reseveLength.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def ellipsisString(str: String, reseveLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ellipsisString")(str.asInstanceOf[js.Any], reseveLength.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def ellipsisString(str: String, reseveLength: Double, position: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ellipsisString")(str.asInstanceOf[js.Any], reseveLength.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def strLen(str: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("strLen")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def strLen(str: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("strLen")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

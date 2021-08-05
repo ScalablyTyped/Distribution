@@ -26,8 +26,7 @@ trait ObjectExplorerNodeProvider
 }
 object ObjectExplorerNodeProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     expandNode: ExpandNodeInfo => Thenable[Boolean],
     findNodes: FindNodesInfo => Thenable[ObjectExplorerFindNodesResponse],
     handleSessionClose: ObjectExplorerCloseSessionInfo => Unit,
@@ -41,22 +40,16 @@ object ObjectExplorerNodeProvider {
     __obj.asInstanceOf[ObjectExplorerNodeProvider]
   }
   
-  @scala.inline
-  implicit class ObjectExplorerNodeProviderMutableBuilder[Self <: ObjectExplorerNodeProvider] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectExplorerNodeProvider](x: Self) {
     
-    @scala.inline
-    def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    @scala.inline
-    def setHandleSessionClose(value: ObjectExplorerCloseSessionInfo => Unit): Self = StObject.set(x, "handleSessionClose", js.Any.fromFunction1(value))
+    inline def setHandleSessionClose(value: ObjectExplorerCloseSessionInfo => Unit): Self = StObject.set(x, "handleSessionClose", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHandleSessionOpen(value: ObjectExplorerSession => Thenable[Boolean]): Self = StObject.set(x, "handleSessionOpen", js.Any.fromFunction1(value))
+    inline def setHandleSessionOpen(value: ObjectExplorerSession => Thenable[Boolean]): Self = StObject.set(x, "handleSessionOpen", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSupportedProviderId(value: String): Self = StObject.set(x, "supportedProviderId", value.asInstanceOf[js.Any])
+    inline def setSupportedProviderId(value: String): Self = StObject.set(x, "supportedProviderId", value.asInstanceOf[js.Any])
   }
 }

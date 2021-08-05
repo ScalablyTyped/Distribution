@@ -20,14 +20,11 @@ trait SearchRecursion extends StObject
 object SearchRecursion {
   
   /** Searches through the complete hierarchy of all sub-objects. */
-  @scala.inline
-  def DEEP: `2` = 2.asInstanceOf[`2`]
+  inline def DEEP: `2` = 2.asInstanceOf[`2`]
   
   /** Does not search through any sub-objects. */
-  @scala.inline
-  def NONE: `0` = 0.asInstanceOf[`0`]
+  inline def NONE: `0` = 0.asInstanceOf[`0`]
   
   /** Only searches through sub-objects of the first hierarchy level. */
-  @scala.inline
-  def ONE_LEVEL: `1` = 1.asInstanceOf[`1`]
+  inline def ONE_LEVEL: `1` = 1.asInstanceOf[`1`]
 }

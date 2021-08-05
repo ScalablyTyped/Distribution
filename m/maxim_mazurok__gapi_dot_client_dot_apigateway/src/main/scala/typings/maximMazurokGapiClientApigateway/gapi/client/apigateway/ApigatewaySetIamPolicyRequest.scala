@@ -20,25 +20,19 @@ trait ApigatewaySetIamPolicyRequest extends StObject {
 }
 object ApigatewaySetIamPolicyRequest {
   
-  @scala.inline
-  def apply(): ApigatewaySetIamPolicyRequest = {
+  inline def apply(): ApigatewaySetIamPolicyRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApigatewaySetIamPolicyRequest]
   }
   
-  @scala.inline
-  implicit class ApigatewaySetIamPolicyRequestMutableBuilder[Self <: ApigatewaySetIamPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ApigatewaySetIamPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setPolicy(value: ApigatewayPolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: ApigatewayPolicy): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+    inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
     
-    @scala.inline
-    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

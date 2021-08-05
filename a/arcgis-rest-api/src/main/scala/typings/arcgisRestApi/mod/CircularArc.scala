@@ -12,16 +12,13 @@ trait CircularArc
 }
 object CircularArc {
   
-  @scala.inline
-  def apply(c: js.Tuple2[Position, Position2D]): CircularArc = {
+  inline def apply(c: js.Tuple2[Position, Position2D]): CircularArc = {
     val __obj = js.Dynamic.literal(c = c.asInstanceOf[js.Any])
     __obj.asInstanceOf[CircularArc]
   }
   
-  @scala.inline
-  implicit class CircularArcMutableBuilder[Self <: CircularArc] (val x: Self) extends AnyVal {
+  extension [Self <: CircularArc](x: Self) {
     
-    @scala.inline
-    def setC(value: js.Tuple2[Position, Position2D]): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
+    inline def setC(value: js.Tuple2[Position, Position2D]): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
   }
 }

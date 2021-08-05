@@ -11,8 +11,7 @@ object modifiersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](`object`: T): T & Modifiers = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(`object`.asInstanceOf[js.Any]).asInstanceOf[T & Modifiers]
+  inline def default[T](`object`: T): T & Modifiers = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(`object`.asInstanceOf[js.Any]).asInstanceOf[T & Modifiers]
   
   trait Modifiers extends StObject {
     
@@ -23,17 +22,14 @@ object modifiersMod {
   }
   object Modifiers {
     
-    @scala.inline
-    def apply(optional: Predicates): Modifiers = {
+    inline def apply(optional: Predicates): Modifiers = {
       val __obj = js.Dynamic.literal(optional = optional.asInstanceOf[js.Any])
       __obj.asInstanceOf[Modifiers]
     }
     
-    @scala.inline
-    implicit class ModifiersMutableBuilder[Self <: Modifiers] (val x: Self) extends AnyVal {
+    extension [Self <: Modifiers](x: Self) {
       
-      @scala.inline
-      def setOptional(value: Predicates): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+      inline def setOptional(value: Predicates): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     }
   }
 }

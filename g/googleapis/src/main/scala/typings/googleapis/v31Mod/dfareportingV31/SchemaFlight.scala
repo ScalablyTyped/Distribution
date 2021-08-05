@@ -31,37 +31,27 @@ trait SchemaFlight extends StObject {
 }
 object SchemaFlight {
   
-  @scala.inline
-  def apply(): SchemaFlight = {
+  inline def apply(): SchemaFlight = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFlight]
   }
   
-  @scala.inline
-  implicit class SchemaFlightMutableBuilder[Self <: SchemaFlight] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFlight](x: Self) {
     
-    @scala.inline
-    def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+    inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
-    @scala.inline
-    def setRateOrCost(value: String): Self = StObject.set(x, "rateOrCost", value.asInstanceOf[js.Any])
+    inline def setRateOrCost(value: String): Self = StObject.set(x, "rateOrCost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRateOrCostUndefined: Self = StObject.set(x, "rateOrCost", js.undefined)
+    inline def setRateOrCostUndefined: Self = StObject.set(x, "rateOrCost", js.undefined)
     
-    @scala.inline
-    def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+    inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
     
-    @scala.inline
-    def setUnits(value: String): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+    inline def setUnits(value: String): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
+    inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
   }
 }

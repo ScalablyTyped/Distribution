@@ -13,19 +13,15 @@ trait GetAccessPointPolicyStatusResult extends StObject {
 }
 object GetAccessPointPolicyStatusResult {
   
-  @scala.inline
-  def apply(): GetAccessPointPolicyStatusResult = {
+  inline def apply(): GetAccessPointPolicyStatusResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAccessPointPolicyStatusResult]
   }
   
-  @scala.inline
-  implicit class GetAccessPointPolicyStatusResultMutableBuilder[Self <: GetAccessPointPolicyStatusResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetAccessPointPolicyStatusResult](x: Self) {
     
-    @scala.inline
-    def setPolicyStatus(value: PolicyStatus): Self = StObject.set(x, "PolicyStatus", value.asInstanceOf[js.Any])
+    inline def setPolicyStatus(value: PolicyStatus): Self = StObject.set(x, "PolicyStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyStatusUndefined: Self = StObject.set(x, "PolicyStatus", js.undefined)
+    inline def setPolicyStatusUndefined: Self = StObject.set(x, "PolicyStatus", js.undefined)
   }
 }

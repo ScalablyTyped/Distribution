@@ -15,21 +15,17 @@ object events {
   }
   object Event {
     
-    @scala.inline
-    def apply(name: String, `type`: EventType): Event = {
+    inline def apply(name: String, `type`: EventType): Event = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Event]
     }
     
-    @scala.inline
-    implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+    extension [Self <: Event](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: EventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: EventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -45,8 +41,7 @@ object events {
   }
   object RecordEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getKey: () => js.Any,
       getStoreName: () => String,
       getValue: () => js.Any,
@@ -58,17 +53,13 @@ object events {
       __obj.asInstanceOf[RecordEvent]
     }
     
-    @scala.inline
-    implicit class RecordEventMutableBuilder[Self <: RecordEvent] (val x: Self) extends AnyVal {
+    extension [Self <: RecordEvent](x: Self) {
       
-      @scala.inline
-      def setGetKey(value: () => js.Any): Self = StObject.set(x, "getKey", js.Any.fromFunction0(value))
+      inline def setGetKey(value: () => js.Any): Self = StObject.set(x, "getKey", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStoreName(value: () => String): Self = StObject.set(x, "getStoreName", js.Any.fromFunction0(value))
+      inline def setGetStoreName(value: () => String): Self = StObject.set(x, "getStoreName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+      inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     }
   }
   
@@ -84,8 +75,7 @@ object events {
   }
   object StorageEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getError: () => Error,
       getOldVersion: () => Double,
       getVersion: () => Double,
@@ -97,17 +87,13 @@ object events {
       __obj.asInstanceOf[StorageEvent]
     }
     
-    @scala.inline
-    implicit class StorageEventMutableBuilder[Self <: StorageEvent] (val x: Self) extends AnyVal {
+    extension [Self <: StorageEvent](x: Self) {
       
-      @scala.inline
-      def setGetError(value: () => Error): Self = StObject.set(x, "getError", js.Any.fromFunction0(value))
+      inline def setGetError(value: () => Error): Self = StObject.set(x, "getError", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetOldVersion(value: () => Double): Self = StObject.set(x, "getOldVersion", js.Any.fromFunction0(value))
+      inline def setGetOldVersion(value: () => Double): Self = StObject.set(x, "getOldVersion", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetVersion(value: () => Double): Self = StObject.set(x, "getVersion", js.Any.fromFunction0(value))
+      inline def setGetVersion(value: () => Double): Self = StObject.set(x, "getVersion", js.Any.fromFunction0(value))
     }
   }
   
@@ -123,8 +109,7 @@ object events {
   }
   object StoreEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getKeys: () => js.Array[js.Any],
       getStoreName: () => String,
       getValues: () => js.Array[js.Any],
@@ -136,17 +121,13 @@ object events {
       __obj.asInstanceOf[StoreEvent]
     }
     
-    @scala.inline
-    implicit class StoreEventMutableBuilder[Self <: StoreEvent] (val x: Self) extends AnyVal {
+    extension [Self <: StoreEvent](x: Self) {
       
-      @scala.inline
-      def setGetKeys(value: () => js.Array[js.Any]): Self = StObject.set(x, "getKeys", js.Any.fromFunction0(value))
+      inline def setGetKeys(value: () => js.Array[js.Any]): Self = StObject.set(x, "getKeys", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStoreName(value: () => String): Self = StObject.set(x, "getStoreName", js.Any.fromFunction0(value))
+      inline def setGetStoreName(value: () => String): Self = StObject.set(x, "getStoreName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValues(value: () => js.Array[js.Any]): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
+      inline def setGetValues(value: () => js.Array[js.Any]): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
     }
   }
 }

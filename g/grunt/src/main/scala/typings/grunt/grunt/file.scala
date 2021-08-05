@@ -241,32 +241,24 @@ object file {
   }
   object IExpandedFilesConfig {
     
-    @scala.inline
-    def apply(): IExpandedFilesConfig = {
+    inline def apply(): IExpandedFilesConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IExpandedFilesConfig]
     }
     
-    @scala.inline
-    implicit class IExpandedFilesConfigMutableBuilder[Self <: IExpandedFilesConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IExpandedFilesConfig](x: Self) {
       
-      @scala.inline
-      def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+      inline def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
+      inline def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)
       
-      @scala.inline
-      def setFlatten(value: Boolean): Self = StObject.set(x, "flatten", value.asInstanceOf[js.Any])
+      inline def setFlatten(value: Boolean): Self = StObject.set(x, "flatten", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlattenUndefined: Self = StObject.set(x, "flatten", js.undefined)
+      inline def setFlattenUndefined: Self = StObject.set(x, "flatten", js.undefined)
       
-      @scala.inline
-      def setRename(value: js.Function): Self = StObject.set(x, "rename", value.asInstanceOf[js.Any])
+      inline def setRename(value: js.Function): Self = StObject.set(x, "rename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenameUndefined: Self = StObject.set(x, "rename", js.undefined)
+      inline def setRenameUndefined: Self = StObject.set(x, "rename", js.undefined)
     }
   }
   
@@ -279,17 +271,14 @@ object file {
   }
   object IFileEncodedOption {
     
-    @scala.inline
-    def apply(encoding: String): IFileEncodedOption = {
+    inline def apply(encoding: String): IFileEncodedOption = {
       val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
       __obj.asInstanceOf[IFileEncodedOption]
     }
     
-    @scala.inline
-    implicit class IFileEncodedOptionMutableBuilder[Self <: IFileEncodedOption] (val x: Self) extends AnyVal {
+    extension [Self <: IFileEncodedOption](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     }
   }
   
@@ -310,23 +299,18 @@ object file {
   }
   object IFileMap {
     
-    @scala.inline
-    def apply(dest: String, src: js.Array[String]): IFileMap = {
+    inline def apply(dest: String, src: js.Array[String]): IFileMap = {
       val __obj = js.Dynamic.literal(dest = dest.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
       __obj.asInstanceOf[IFileMap]
     }
     
-    @scala.inline
-    implicit class IFileMapMutableBuilder[Self <: IFileMap] (val x: Self) extends AnyVal {
+    extension [Self <: IFileMap](x: Self) {
       
-      @scala.inline
-      def setDest(value: String): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
+      inline def setDest(value: String): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrc(value: js.Array[String]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: js.Array[String]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcVarargs(value: String*): Self = StObject.set(x, "src", js.Array(value :_*))
+      inline def setSrcVarargs(value: String*): Self = StObject.set(x, "src", js.Array(value :_*))
     }
   }
   
@@ -346,20 +330,16 @@ object file {
   }
   object IFileWriteBufferOption {
     
-    @scala.inline
-    def apply(encoding: String): IFileWriteBufferOption = {
+    inline def apply(encoding: String): IFileWriteBufferOption = {
       val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
       __obj.asInstanceOf[IFileWriteBufferOption]
     }
     
-    @scala.inline
-    implicit class IFileWriteBufferOptionMutableBuilder[Self <: IFileWriteBufferOption] (val x: Self) extends AnyVal {
+    extension [Self <: IFileWriteBufferOption](x: Self) {
       
-      @scala.inline
-      def setProcess(value: /* buffer */ Buffer => Boolean): Self = StObject.set(x, "process", js.Any.fromFunction1(value))
+      inline def setProcess(value: /* buffer */ Buffer => Boolean): Self = StObject.set(x, "process", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProcessUndefined: Self = StObject.set(x, "process", js.undefined)
+      inline def setProcessUndefined: Self = StObject.set(x, "process", js.undefined)
     }
   }
   
@@ -385,20 +365,16 @@ object file {
   }
   object IFileWriteOptions {
     
-    @scala.inline
-    def apply(encoding: String): IFileWriteOptions = {
+    inline def apply(encoding: String): IFileWriteOptions = {
       val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
       __obj.asInstanceOf[IFileWriteOptions]
     }
     
-    @scala.inline
-    implicit class IFileWriteOptionsMutableBuilder[Self <: IFileWriteOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IFileWriteOptions](x: Self) {
       
-      @scala.inline
-      def setNoProcess(value: js.Any): Self = StObject.set(x, "noProcess", value.asInstanceOf[js.Any])
+      inline def setNoProcess(value: js.Any): Self = StObject.set(x, "noProcess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoProcessUndefined: Self = StObject.set(x, "noProcess", js.undefined)
+      inline def setNoProcessUndefined: Self = StObject.set(x, "noProcess", js.undefined)
     }
   }
   
@@ -433,20 +409,16 @@ object file {
   }
   object IFileWriteStringOption {
     
-    @scala.inline
-    def apply(encoding: String): IFileWriteStringOption = {
+    inline def apply(encoding: String): IFileWriteStringOption = {
       val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
       __obj.asInstanceOf[IFileWriteStringOption]
     }
     
-    @scala.inline
-    implicit class IFileWriteStringOptionMutableBuilder[Self <: IFileWriteStringOption] (val x: Self) extends AnyVal {
+    extension [Self <: IFileWriteStringOption](x: Self) {
       
-      @scala.inline
-      def setProcess(value: (/* contents */ String, /* srcpath */ String, /* destpath */ String) => String | Boolean): Self = StObject.set(x, "process", js.Any.fromFunction3(value))
+      inline def setProcess(value: (/* contents */ String, /* srcpath */ String, /* destpath */ String) => String | Boolean): Self = StObject.set(x, "process", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setProcessUndefined: Self = StObject.set(x, "process", js.undefined)
+      inline def setProcessUndefined: Self = StObject.set(x, "process", js.undefined)
     }
   }
   
@@ -508,47 +480,34 @@ object file {
   }
   object IFilesConfig {
     
-    @scala.inline
-    def apply(): IFilesConfig = {
+    inline def apply(): IFilesConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IFilesConfig]
     }
     
-    @scala.inline
-    implicit class IFilesConfigMutableBuilder[Self <: IFilesConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IFilesConfig](x: Self) {
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setDest(value: String): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
+      inline def setDest(value: String): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestUndefined: Self = StObject.set(x, "dest", js.undefined)
+      inline def setDestUndefined: Self = StObject.set(x, "dest", js.undefined)
       
-      @scala.inline
-      def setExpand(value: Boolean): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
+      inline def setExpand(value: Boolean): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+      inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
       
-      @scala.inline
-      def setFilter(value: js.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: js.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setSrc(value: js.Array[String]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: js.Array[String]): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+      inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
       
-      @scala.inline
-      def setSrcVarargs(value: String*): Self = StObject.set(x, "src", js.Array(value :_*))
+      inline def setSrcVarargs(value: String*): Self = StObject.set(x, "src", js.Array(value :_*))
     }
   }
 }

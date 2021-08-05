@@ -10,8 +10,7 @@ trait DividerProps
      with typings.wixStyleReact.tableToolbarMod.DividerProps
 object DividerProps {
   
-  @scala.inline
-  def apply(): DividerProps = {
+  inline def apply(): DividerProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DividerProps]
   }

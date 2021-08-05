@@ -18,43 +18,31 @@ trait SchemaTargetingValueDayPartTargetingDayPart extends StObject {
 }
 object SchemaTargetingValueDayPartTargetingDayPart {
   
-  @scala.inline
-  def apply(): SchemaTargetingValueDayPartTargetingDayPart = {
+  inline def apply(): SchemaTargetingValueDayPartTargetingDayPart = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTargetingValueDayPartTargetingDayPart]
   }
   
-  @scala.inline
-  implicit class SchemaTargetingValueDayPartTargetingDayPartMutableBuilder[Self <: SchemaTargetingValueDayPartTargetingDayPart] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTargetingValueDayPartTargetingDayPart](x: Self) {
     
-    @scala.inline
-    def setDayOfWeek(value: String): Self = StObject.set(x, "dayOfWeek", value.asInstanceOf[js.Any])
+    inline def setDayOfWeek(value: String): Self = StObject.set(x, "dayOfWeek", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayOfWeekUndefined: Self = StObject.set(x, "dayOfWeek", js.undefined)
+    inline def setDayOfWeekUndefined: Self = StObject.set(x, "dayOfWeek", js.undefined)
     
-    @scala.inline
-    def setEndHour(value: Double): Self = StObject.set(x, "endHour", value.asInstanceOf[js.Any])
+    inline def setEndHour(value: Double): Self = StObject.set(x, "endHour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndHourUndefined: Self = StObject.set(x, "endHour", js.undefined)
+    inline def setEndHourUndefined: Self = StObject.set(x, "endHour", js.undefined)
     
-    @scala.inline
-    def setEndMinute(value: Double): Self = StObject.set(x, "endMinute", value.asInstanceOf[js.Any])
+    inline def setEndMinute(value: Double): Self = StObject.set(x, "endMinute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndMinuteUndefined: Self = StObject.set(x, "endMinute", js.undefined)
+    inline def setEndMinuteUndefined: Self = StObject.set(x, "endMinute", js.undefined)
     
-    @scala.inline
-    def setStartHour(value: Double): Self = StObject.set(x, "startHour", value.asInstanceOf[js.Any])
+    inline def setStartHour(value: Double): Self = StObject.set(x, "startHour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartHourUndefined: Self = StObject.set(x, "startHour", js.undefined)
+    inline def setStartHourUndefined: Self = StObject.set(x, "startHour", js.undefined)
     
-    @scala.inline
-    def setStartMinute(value: Double): Self = StObject.set(x, "startMinute", value.asInstanceOf[js.Any])
+    inline def setStartMinute(value: Double): Self = StObject.set(x, "startMinute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartMinuteUndefined: Self = StObject.set(x, "startMinute", js.undefined)
+    inline def setStartMinuteUndefined: Self = StObject.set(x, "startMinute", js.undefined)
   }
 }

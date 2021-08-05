@@ -17,25 +17,19 @@ trait AwsS3Data extends StObject {
 }
 object AwsS3Data {
   
-  @scala.inline
-  def apply(): AwsS3Data = {
+  inline def apply(): AwsS3Data = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsS3Data]
   }
   
-  @scala.inline
-  implicit class AwsS3DataMutableBuilder[Self <: AwsS3Data] (val x: Self) extends AnyVal {
+  extension [Self <: AwsS3Data](x: Self) {
     
-    @scala.inline
-    def setAwsAccessKey(value: AwsAccessKey): Self = StObject.set(x, "awsAccessKey", value.asInstanceOf[js.Any])
+    inline def setAwsAccessKey(value: AwsAccessKey): Self = StObject.set(x, "awsAccessKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsAccessKeyUndefined: Self = StObject.set(x, "awsAccessKey", js.undefined)
+    inline def setAwsAccessKeyUndefined: Self = StObject.set(x, "awsAccessKey", js.undefined)
     
-    @scala.inline
-    def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
+    inline def setBucketName(value: String): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketNameUndefined: Self = StObject.set(x, "bucketName", js.undefined)
+    inline def setBucketNameUndefined: Self = StObject.set(x, "bucketName", js.undefined)
   }
 }

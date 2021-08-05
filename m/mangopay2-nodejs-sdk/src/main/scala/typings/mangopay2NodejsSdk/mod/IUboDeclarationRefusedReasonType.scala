@@ -27,22 +27,17 @@ trait IUboDeclarationRefusedReasonType extends StObject {
 }
 object IUboDeclarationRefusedReasonType {
   
-  @scala.inline
-  def apply(): IUboDeclarationRefusedReasonType = {
+  inline def apply(): IUboDeclarationRefusedReasonType = {
     val __obj = js.Dynamic.literal(InvalidDeclaredUbo = "INVALID_DECLARED_UBO", InvalidUboDetails = "INVALID_UBO_DETAILS", MissingUbo = "MISSING_UBO")
     __obj.asInstanceOf[IUboDeclarationRefusedReasonType]
   }
   
-  @scala.inline
-  implicit class IUboDeclarationRefusedReasonTypeMutableBuilder[Self <: IUboDeclarationRefusedReasonType] (val x: Self) extends AnyVal {
+  extension [Self <: IUboDeclarationRefusedReasonType](x: Self) {
     
-    @scala.inline
-    def setInvalidDeclaredUbo(value: INVALID_DECLARED_UBO): Self = StObject.set(x, "InvalidDeclaredUbo", value.asInstanceOf[js.Any])
+    inline def setInvalidDeclaredUbo(value: INVALID_DECLARED_UBO): Self = StObject.set(x, "InvalidDeclaredUbo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidUboDetails(value: INVALID_UBO_DETAILS): Self = StObject.set(x, "InvalidUboDetails", value.asInstanceOf[js.Any])
+    inline def setInvalidUboDetails(value: INVALID_UBO_DETAILS): Self = StObject.set(x, "InvalidUboDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMissingUbo(value: MISSING_UBO): Self = StObject.set(x, "MissingUbo", value.asInstanceOf[js.Any])
+    inline def setMissingUbo(value: MISSING_UBO): Self = StObject.set(x, "MissingUbo", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait PlotFunnel3dDragDropGuideBoxOptions extends StObject {
 }
 object PlotFunnel3dDragDropGuideBoxOptions {
   
-  @scala.inline
-  def apply(): PlotFunnel3dDragDropGuideBoxOptions = {
+  inline def apply(): PlotFunnel3dDragDropGuideBoxOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotFunnel3dDragDropGuideBoxOptions]
   }
   
-  @scala.inline
-  implicit class PlotFunnel3dDragDropGuideBoxOptionsMutableBuilder[Self <: PlotFunnel3dDragDropGuideBoxOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotFunnel3dDragDropGuideBoxOptions](x: Self) {
     
-    @scala.inline
-    def setDefault(value: DragDropGuideBoxOptionsObject): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: DragDropGuideBoxOptionsObject): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
   }
 }

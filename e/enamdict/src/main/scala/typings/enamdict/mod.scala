@@ -10,14 +10,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def find(romajiName: String): Entries = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(romajiName.asInstanceOf[js.Any]).asInstanceOf[Entries]
+  inline def find(romajiName: String): Entries = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(romajiName.asInstanceOf[js.Any]).asInstanceOf[Entries]
   
-  @scala.inline
-  def findKanji(kanjiName: String): Entries = ^.asInstanceOf[js.Dynamic].applyDynamic("findKanji")(kanjiName.asInstanceOf[js.Any]).asInstanceOf[Entries]
+  inline def findKanji(kanjiName: String): Entries = ^.asInstanceOf[js.Dynamic].applyDynamic("findKanji")(kanjiName.asInstanceOf[js.Any]).asInstanceOf[Entries]
   
-  @scala.inline
-  def init(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def init(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait Entries extends StObject {
     
@@ -56,8 +53,7 @@ object mod {
   }
   object Entries {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       entries: () => js.Array[Entry],
       kana: () => String | js.Array[String],
       kanji: () => String | js.Array[String],
@@ -69,23 +65,17 @@ object mod {
       __obj.asInstanceOf[Entries]
     }
     
-    @scala.inline
-    implicit class EntriesMutableBuilder[Self <: Entries] (val x: Self) extends AnyVal {
+    extension [Self <: Entries](x: Self) {
       
-      @scala.inline
-      def setEntries(value: () => js.Array[Entry]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
+      inline def setEntries(value: () => js.Array[Entry]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setKana(value: () => String | js.Array[String]): Self = StObject.set(x, "kana", js.Any.fromFunction0(value))
+      inline def setKana(value: () => String | js.Array[String]): Self = StObject.set(x, "kana", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setKanji(value: () => String | js.Array[String]): Self = StObject.set(x, "kanji", js.Any.fromFunction0(value))
+      inline def setKanji(value: () => String | js.Array[String]): Self = StObject.set(x, "kanji", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRomaji(value: () => String | js.Array[String]): Self = StObject.set(x, "romaji", js.Any.fromFunction0(value))
+      inline def setRomaji(value: () => String | js.Array[String]): Self = StObject.set(x, "romaji", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setType(value: () => NameType): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
+      inline def setType(value: () => NameType): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
     }
   }
   
@@ -113,8 +103,7 @@ object mod {
   }
   object Entry {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       kana: String | js.Array[String],
       kanji: String | js.Array[String],
       romaji: String | js.Array[String],
@@ -125,29 +114,21 @@ object mod {
       __obj.asInstanceOf[Entry]
     }
     
-    @scala.inline
-    implicit class EntryMutableBuilder[Self <: Entry] (val x: Self) extends AnyVal {
+    extension [Self <: Entry](x: Self) {
       
-      @scala.inline
-      def setKana(value: String | js.Array[String]): Self = StObject.set(x, "kana", value.asInstanceOf[js.Any])
+      inline def setKana(value: String | js.Array[String]): Self = StObject.set(x, "kana", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKanaVarargs(value: String*): Self = StObject.set(x, "kana", js.Array(value :_*))
+      inline def setKanaVarargs(value: String*): Self = StObject.set(x, "kana", js.Array(value :_*))
       
-      @scala.inline
-      def setKanji(value: String | js.Array[String]): Self = StObject.set(x, "kanji", value.asInstanceOf[js.Any])
+      inline def setKanji(value: String | js.Array[String]): Self = StObject.set(x, "kanji", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKanjiVarargs(value: String*): Self = StObject.set(x, "kanji", js.Array(value :_*))
+      inline def setKanjiVarargs(value: String*): Self = StObject.set(x, "kanji", js.Array(value :_*))
       
-      @scala.inline
-      def setRomaji(value: String | js.Array[String]): Self = StObject.set(x, "romaji", value.asInstanceOf[js.Any])
+      inline def setRomaji(value: String | js.Array[String]): Self = StObject.set(x, "romaji", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRomajiVarargs(value: String*): Self = StObject.set(x, "romaji", js.Array(value :_*))
+      inline def setRomajiVarargs(value: String*): Self = StObject.set(x, "romaji", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: NameType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: NameType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -159,13 +140,10 @@ object mod {
   trait NameType extends StObject
   object NameType {
     
-    @scala.inline
-    def `given`: typings.enamdict.enamdictStrings.`given` = "given".asInstanceOf[typings.enamdict.enamdictStrings.`given`]
+    inline def `given`: typings.enamdict.enamdictStrings.`given` = "given".asInstanceOf[typings.enamdict.enamdictStrings.`given`]
     
-    @scala.inline
-    def surname: typings.enamdict.enamdictStrings.surname = "surname".asInstanceOf[typings.enamdict.enamdictStrings.surname]
+    inline def surname: typings.enamdict.enamdictStrings.surname = "surname".asInstanceOf[typings.enamdict.enamdictStrings.surname]
     
-    @scala.inline
-    def unknown: typings.enamdict.enamdictStrings.unknown = "unknown".asInstanceOf[typings.enamdict.enamdictStrings.unknown]
+    inline def unknown: typings.enamdict.enamdictStrings.unknown = "unknown".asInstanceOf[typings.enamdict.enamdictStrings.unknown]
   }
 }

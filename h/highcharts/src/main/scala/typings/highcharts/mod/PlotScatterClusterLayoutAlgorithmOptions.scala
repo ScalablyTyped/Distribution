@@ -87,43 +87,31 @@ trait PlotScatterClusterLayoutAlgorithmOptions extends StObject {
 }
 object PlotScatterClusterLayoutAlgorithmOptions {
   
-  @scala.inline
-  def apply(): PlotScatterClusterLayoutAlgorithmOptions = {
+  inline def apply(): PlotScatterClusterLayoutAlgorithmOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotScatterClusterLayoutAlgorithmOptions]
   }
   
-  @scala.inline
-  implicit class PlotScatterClusterLayoutAlgorithmOptionsMutableBuilder[Self <: PlotScatterClusterLayoutAlgorithmOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotScatterClusterLayoutAlgorithmOptions](x: Self) {
     
-    @scala.inline
-    def setDistance(value: Double | String): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double | String): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+    inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     
-    @scala.inline
-    def setGridSize(value: Double | String): Self = StObject.set(x, "gridSize", value.asInstanceOf[js.Any])
+    inline def setGridSize(value: Double | String): Self = StObject.set(x, "gridSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridSizeUndefined: Self = StObject.set(x, "gridSize", js.undefined)
+    inline def setGridSizeUndefined: Self = StObject.set(x, "gridSize", js.undefined)
     
-    @scala.inline
-    def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
+    inline def setIterations(value: Double): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
+    inline def setIterationsUndefined: Self = StObject.set(x, "iterations", js.undefined)
     
-    @scala.inline
-    def setKmeansThreshold(value: Double): Self = StObject.set(x, "kmeansThreshold", value.asInstanceOf[js.Any])
+    inline def setKmeansThreshold(value: Double): Self = StObject.set(x, "kmeansThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmeansThresholdUndefined: Self = StObject.set(x, "kmeansThreshold", js.undefined)
+    inline def setKmeansThresholdUndefined: Self = StObject.set(x, "kmeansThreshold", js.undefined)
     
-    @scala.inline
-    def setType(value: String | js.Function): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String | js.Function): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -21,33 +21,27 @@ trait `4` extends StObject {
 }
 object `4` {
   
-  @scala.inline
-  def apply(): `4` = {
+  inline def apply(): `4` = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`4`]
   }
   
-  @scala.inline
-  implicit class `4MutableBuilder`[Self <: `4`] (val x: Self) extends AnyVal {
+  extension [Self <: `4`](x: Self) {
     
-    @scala.inline
-    def setMax(
+    inline def setMax(
       value: Double | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in c3.c3.AxisName ]:? number}
       */ typings.c3.c3Strings.`4` & TopLevel[js.Any])
     ): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(
+    inline def setMin(
       value: Double | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in c3.c3.AxisName ]:? number}
       */ typings.c3.c3Strings.`4` & TopLevel[js.Any])
     ): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
   }
 }

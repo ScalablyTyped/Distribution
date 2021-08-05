@@ -11,19 +11,15 @@ trait RequestMirrorPolicy extends StObject {
 }
 object RequestMirrorPolicy {
   
-  @scala.inline
-  def apply(): RequestMirrorPolicy = {
+  inline def apply(): RequestMirrorPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RequestMirrorPolicy]
   }
   
-  @scala.inline
-  implicit class RequestMirrorPolicyMutableBuilder[Self <: RequestMirrorPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: RequestMirrorPolicy](x: Self) {
     
-    @scala.inline
-    def setBackendService(value: String): Self = StObject.set(x, "backendService", value.asInstanceOf[js.Any])
+    inline def setBackendService(value: String): Self = StObject.set(x, "backendService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackendServiceUndefined: Self = StObject.set(x, "backendService", js.undefined)
+    inline def setBackendServiceUndefined: Self = StObject.set(x, "backendService", js.undefined)
   }
 }

@@ -16,16 +16,13 @@ object helpersMod {
     * Validates the SocksClientChainOptions
     * @param options { SocksClientChainOptions }
     */
-  @scala.inline
-  def validateSocksClientChainOptions(options: SocksClientChainOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateSocksClientChainOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def validateSocksClientChainOptions(options: SocksClientChainOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateSocksClientChainOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Validates the provided SocksClientOptions
     * @param options { SocksClientOptions }
     * @param acceptedCommands { string[] } A list of accepted SocksProxy commands.
     */
-  @scala.inline
-  def validateSocksClientOptions(options: SocksClientOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateSocksClientOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def validateSocksClientOptions(options: SocksClientOptions, acceptedCommands: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateSocksClientOptions")(options.asInstanceOf[js.Any], acceptedCommands.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def validateSocksClientOptions(options: SocksClientOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateSocksClientOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def validateSocksClientOptions(options: SocksClientOptions, acceptedCommands: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateSocksClientOptions")(options.asInstanceOf[js.Any], acceptedCommands.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

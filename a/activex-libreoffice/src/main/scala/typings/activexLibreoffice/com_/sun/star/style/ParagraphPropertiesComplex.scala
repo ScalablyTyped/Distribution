@@ -12,16 +12,13 @@ trait ParagraphPropertiesComplex extends StObject {
 }
 object ParagraphPropertiesComplex {
   
-  @scala.inline
-  def apply(WritingMode: Double): ParagraphPropertiesComplex = {
+  inline def apply(WritingMode: Double): ParagraphPropertiesComplex = {
     val __obj = js.Dynamic.literal(WritingMode = WritingMode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParagraphPropertiesComplex]
   }
   
-  @scala.inline
-  implicit class ParagraphPropertiesComplexMutableBuilder[Self <: ParagraphPropertiesComplex] (val x: Self) extends AnyVal {
+  extension [Self <: ParagraphPropertiesComplex](x: Self) {
     
-    @scala.inline
-    def setWritingMode(value: Double): Self = StObject.set(x, "WritingMode", value.asInstanceOf[js.Any])
+    inline def setWritingMode(value: Double): Self = StObject.set(x, "WritingMode", value.asInstanceOf[js.Any])
   }
 }

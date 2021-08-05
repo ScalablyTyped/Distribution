@@ -86,97 +86,67 @@ trait OlapXmlaDataSourceOptions
 }
 object OlapXmlaDataSourceOptions {
   
-  @scala.inline
-  def apply(): OlapXmlaDataSourceOptions = {
+  inline def apply(): OlapXmlaDataSourceOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OlapXmlaDataSourceOptions]
   }
   
-  @scala.inline
-  implicit class OlapXmlaDataSourceOptionsMutableBuilder[Self <: OlapXmlaDataSourceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OlapXmlaDataSourceOptions](x: Self) {
     
-    @scala.inline
-    def setCatalog(value: String): Self = StObject.set(x, "catalog", value.asInstanceOf[js.Any])
+    inline def setCatalog(value: String): Self = StObject.set(x, "catalog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogUndefined: Self = StObject.set(x, "catalog", js.undefined)
+    inline def setCatalogUndefined: Self = StObject.set(x, "catalog", js.undefined)
     
-    @scala.inline
-    def setColumns(value: String): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: String): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    @scala.inline
-    def setCube(value: String): Self = StObject.set(x, "cube", value.asInstanceOf[js.Any])
+    inline def setCube(value: String): Self = StObject.set(x, "cube", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCubeUndefined: Self = StObject.set(x, "cube", js.undefined)
+    inline def setCubeUndefined: Self = StObject.set(x, "cube", js.undefined)
     
-    @scala.inline
-    def setDiscoverProperties(value: js.Any): Self = StObject.set(x, "discoverProperties", value.asInstanceOf[js.Any])
+    inline def setDiscoverProperties(value: js.Any): Self = StObject.set(x, "discoverProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscoverPropertiesUndefined: Self = StObject.set(x, "discoverProperties", js.undefined)
+    inline def setDiscoverPropertiesUndefined: Self = StObject.set(x, "discoverProperties", js.undefined)
     
-    @scala.inline
-    def setEnableResultCache(value: Boolean): Self = StObject.set(x, "enableResultCache", value.asInstanceOf[js.Any])
+    inline def setEnableResultCache(value: Boolean): Self = StObject.set(x, "enableResultCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableResultCacheUndefined: Self = StObject.set(x, "enableResultCache", js.undefined)
+    inline def setEnableResultCacheUndefined: Self = StObject.set(x, "enableResultCache", js.undefined)
     
-    @scala.inline
-    def setExecuteProperties(value: js.Any): Self = StObject.set(x, "executeProperties", value.asInstanceOf[js.Any])
+    inline def setExecuteProperties(value: js.Any): Self = StObject.set(x, "executeProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutePropertiesUndefined: Self = StObject.set(x, "executeProperties", js.undefined)
+    inline def setExecutePropertiesUndefined: Self = StObject.set(x, "executeProperties", js.undefined)
     
-    @scala.inline
-    def setFilters(value: String): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: String): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setIsRemote(value: Boolean): Self = StObject.set(x, "isRemote", value.asInstanceOf[js.Any])
+    inline def setIsRemote(value: Boolean): Self = StObject.set(x, "isRemote", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRemoteUndefined: Self = StObject.set(x, "isRemote", js.undefined)
+    inline def setIsRemoteUndefined: Self = StObject.set(x, "isRemote", js.undefined)
     
-    @scala.inline
-    def setMdxSettings(value: OlapXmlaDataSourceOptionsMdxSettings): Self = StObject.set(x, "mdxSettings", value.asInstanceOf[js.Any])
+    inline def setMdxSettings(value: OlapXmlaDataSourceOptionsMdxSettings): Self = StObject.set(x, "mdxSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMdxSettingsUndefined: Self = StObject.set(x, "mdxSettings", js.undefined)
+    inline def setMdxSettingsUndefined: Self = StObject.set(x, "mdxSettings", js.undefined)
     
-    @scala.inline
-    def setMeasureGroup(value: String): Self = StObject.set(x, "measureGroup", value.asInstanceOf[js.Any])
+    inline def setMeasureGroup(value: String): Self = StObject.set(x, "measureGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasureGroupUndefined: Self = StObject.set(x, "measureGroup", js.undefined)
+    inline def setMeasureGroupUndefined: Self = StObject.set(x, "measureGroup", js.undefined)
     
-    @scala.inline
-    def setMeasures(value: String): Self = StObject.set(x, "measures", value.asInstanceOf[js.Any])
+    inline def setMeasures(value: String): Self = StObject.set(x, "measures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasuresUndefined: Self = StObject.set(x, "measures", js.undefined)
+    inline def setMeasuresUndefined: Self = StObject.set(x, "measures", js.undefined)
     
-    @scala.inline
-    def setRequestOptions(value: OlapXmlaDataSourceOptionsRequestOptions): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
+    inline def setRequestOptions(value: OlapXmlaDataSourceOptionsRequestOptions): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestOptionsUndefined: Self = StObject.set(x, "requestOptions", js.undefined)
+    inline def setRequestOptionsUndefined: Self = StObject.set(x, "requestOptions", js.undefined)
     
-    @scala.inline
-    def setRows(value: String): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: String): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    @scala.inline
-    def setServerUrl(value: String): Self = StObject.set(x, "serverUrl", value.asInstanceOf[js.Any])
+    inline def setServerUrl(value: String): Self = StObject.set(x, "serverUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerUrlUndefined: Self = StObject.set(x, "serverUrl", js.undefined)
+    inline def setServerUrlUndefined: Self = StObject.set(x, "serverUrl", js.undefined)
   }
 }

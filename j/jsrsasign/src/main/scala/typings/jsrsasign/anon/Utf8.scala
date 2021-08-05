@@ -10,16 +10,13 @@ trait Utf8 extends StObject {
 }
 object Utf8 {
   
-  @scala.inline
-  def apply(utf8: String): Utf8 = {
+  inline def apply(utf8: String): Utf8 = {
     val __obj = js.Dynamic.literal(utf8 = utf8.asInstanceOf[js.Any])
     __obj.asInstanceOf[Utf8]
   }
   
-  @scala.inline
-  implicit class Utf8MutableBuilder[Self <: Utf8] (val x: Self) extends AnyVal {
+  extension [Self <: Utf8](x: Self) {
     
-    @scala.inline
-    def setUtf8(value: String): Self = StObject.set(x, "utf8", value.asInstanceOf[js.Any])
+    inline def setUtf8(value: String): Self = StObject.set(x, "utf8", value.asInstanceOf[js.Any])
   }
 }

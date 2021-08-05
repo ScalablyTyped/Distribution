@@ -23,31 +23,23 @@ trait DescribeBrokerEngineTypesRequest extends StObject {
 }
 object DescribeBrokerEngineTypesRequest {
   
-  @scala.inline
-  def apply(): DescribeBrokerEngineTypesRequest = {
+  inline def apply(): DescribeBrokerEngineTypesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeBrokerEngineTypesRequest]
   }
   
-  @scala.inline
-  implicit class DescribeBrokerEngineTypesRequestMutableBuilder[Self <: DescribeBrokerEngineTypesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeBrokerEngineTypesRequest](x: Self) {
     
-    @scala.inline
-    def setEngineType(value: string): Self = StObject.set(x, "EngineType", value.asInstanceOf[js.Any])
+    inline def setEngineType(value: string): Self = StObject.set(x, "EngineType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineTypeUndefined: Self = StObject.set(x, "EngineType", js.undefined)
+    inline def setEngineTypeUndefined: Self = StObject.set(x, "EngineType", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

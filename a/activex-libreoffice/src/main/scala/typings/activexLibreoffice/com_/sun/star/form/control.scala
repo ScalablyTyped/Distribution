@@ -74,8 +74,7 @@ object control {
        with XBoundControl
   object CheckBox {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AccessibleContext: XAccessibleContext,
       Context: XInterface,
       Graphics: XGraphics,
@@ -173,8 +172,7 @@ object control {
        with XApproveActionBroadcaster
   object CommandButton {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AccessibleContext: XAccessibleContext,
       Context: XInterface,
       Graphics: XGraphics,
@@ -280,8 +278,7 @@ object control {
   }
   object FilterControl {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Context: XInterface,
       Model: XControlModel,
       Peer: XWindowPeer,
@@ -308,11 +305,9 @@ object control {
       __obj.asInstanceOf[FilterControl]
     }
     
-    @scala.inline
-    implicit class FilterControlMutableBuilder[Self <: FilterControl] (val x: Self) extends AnyVal {
+    extension [Self <: FilterControl](x: Self) {
       
-      @scala.inline
-      def setCreateWithFormat(value: (XWindow, XNumberFormatter, XPropertySet) => Unit): Self = StObject.set(x, "createWithFormat", js.Any.fromFunction3(value))
+      inline def setCreateWithFormat(value: (XWindow, XNumberFormatter, XPropertySet) => Unit): Self = StObject.set(x, "createWithFormat", js.Any.fromFunction3(value))
     }
   }
   
@@ -354,8 +349,7 @@ object control {
        with XDispatchProviderInterception
   object GridControl {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AccessibleContext: XAccessibleContext,
       Context: XInterface,
       Count: Double,
@@ -466,8 +460,7 @@ object control {
        with XApproveActionBroadcaster
   object ImageButton {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AccessibleContext: XAccessibleContext,
       Context: XInterface,
       Graphics: XGraphics,
@@ -544,8 +537,7 @@ object control {
        with XBoundControl
   object ImageControl {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AccessibleContext: XAccessibleContext,
       Context: XInterface,
       Graphics: XGraphics,
@@ -614,8 +606,7 @@ object control {
        with XDispatch
   object InteractionGridControl {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AccessibleContext: XAccessibleContext,
       Context: XInterface,
       Count: Double,
@@ -764,8 +755,7 @@ object control {
        with XBoundControl
   object RadioButton {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AccessibleContext: XAccessibleContext,
       Context: XInterface,
       Graphics: XGraphics,

@@ -61,8 +61,7 @@ object log {
   }
   object CommonLogging {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       error: String => T,
       errorlns: String => T,
       ok: String => T,
@@ -77,35 +76,25 @@ object log {
       __obj.asInstanceOf[CommonLogging[T]]
     }
     
-    @scala.inline
-    implicit class CommonLoggingMutableBuilder[Self <: CommonLogging[?], T] (val x: Self & CommonLogging[T]) extends AnyVal {
+    extension [Self <: CommonLogging[?], T](x: Self & CommonLogging[T]) {
       
-      @scala.inline
-      def setError(value: String => T): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: String => T): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorlns(value: String => T): Self = StObject.set(x, "errorlns", js.Any.fromFunction1(value))
+      inline def setErrorlns(value: String => T): Self = StObject.set(x, "errorlns", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOk(value: String => T): Self = StObject.set(x, "ok", js.Any.fromFunction1(value))
+      inline def setOk(value: String => T): Self = StObject.set(x, "ok", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOklns(value: String => T): Self = StObject.set(x, "oklns", js.Any.fromFunction1(value))
+      inline def setOklns(value: String => T): Self = StObject.set(x, "oklns", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSubhead(value: String => T): Self = StObject.set(x, "subhead", js.Any.fromFunction1(value))
+      inline def setSubhead(value: String => T): Self = StObject.set(x, "subhead", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWarn(value: String => T): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+      inline def setWarn(value: String => T): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWrite(value: String => T): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+      inline def setWrite(value: String => T): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteflags(value: js.Any => T): Self = StObject.set(x, "writeflags", js.Any.fromFunction1(value))
+      inline def setWriteflags(value: js.Any => T): Self = StObject.set(x, "writeflags", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteln(value: String => T): Self = StObject.set(x, "writeln", js.Any.fromFunction1(value))
+      inline def setWriteln(value: String => T): Self = StObject.set(x, "writeln", js.Any.fromFunction1(value))
     }
   }
   
@@ -122,8 +111,7 @@ object log {
   }
   object LogModule {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       error: String => LogModule,
       errorlns: String => LogModule,
       notverbose: NotVerboseLogModule,
@@ -140,14 +128,11 @@ object log {
       __obj.asInstanceOf[LogModule]
     }
     
-    @scala.inline
-    implicit class LogModuleMutableBuilder[Self <: LogModule] (val x: Self) extends AnyVal {
+    extension [Self <: LogModule](x: Self) {
       
-      @scala.inline
-      def setNotverbose(value: NotVerboseLogModule): Self = StObject.set(x, "notverbose", value.asInstanceOf[js.Any])
+      inline def setNotverbose(value: NotVerboseLogModule): Self = StObject.set(x, "notverbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerbose(value: VerboseLogModule): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: VerboseLogModule): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     }
   }
   
@@ -163,8 +148,7 @@ object log {
   }
   object NotVerboseLogModule {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       error: String => NotVerboseLogModule,
       errorlns: String => NotVerboseLogModule,
       ok: String => NotVerboseLogModule,
@@ -180,11 +164,9 @@ object log {
       __obj.asInstanceOf[NotVerboseLogModule]
     }
     
-    @scala.inline
-    implicit class NotVerboseLogModuleMutableBuilder[Self <: NotVerboseLogModule] (val x: Self) extends AnyVal {
+    extension [Self <: NotVerboseLogModule](x: Self) {
       
-      @scala.inline
-      def setOr(value: VerboseLogModule): Self = StObject.set(x, "or", value.asInstanceOf[js.Any])
+      inline def setOr(value: VerboseLogModule): Self = StObject.set(x, "or", value.asInstanceOf[js.Any])
     }
   }
   
@@ -200,8 +182,7 @@ object log {
   }
   object VerboseLogModule {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       error: String => VerboseLogModule,
       errorlns: String => VerboseLogModule,
       ok: String => VerboseLogModule,
@@ -217,11 +198,9 @@ object log {
       __obj.asInstanceOf[VerboseLogModule]
     }
     
-    @scala.inline
-    implicit class VerboseLogModuleMutableBuilder[Self <: VerboseLogModule] (val x: Self) extends AnyVal {
+    extension [Self <: VerboseLogModule](x: Self) {
       
-      @scala.inline
-      def setOr(value: NotVerboseLogModule): Self = StObject.set(x, "or", value.asInstanceOf[js.Any])
+      inline def setOr(value: NotVerboseLogModule): Self = StObject.set(x, "or", value.asInstanceOf[js.Any])
     }
   }
 }

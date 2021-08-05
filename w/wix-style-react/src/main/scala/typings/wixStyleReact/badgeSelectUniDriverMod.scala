@@ -15,8 +15,7 @@ object badgeSelectUniDriverMod {
   }
   object BadgeSelectUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       clickAtOption: Double => js.Promise[Unit],
       element: () => js.Promise[js.Any],
@@ -26,11 +25,9 @@ object badgeSelectUniDriverMod {
       __obj.asInstanceOf[BadgeSelectUniDriver]
     }
     
-    @scala.inline
-    implicit class BadgeSelectUniDriverMutableBuilder[Self <: BadgeSelectUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: BadgeSelectUniDriver](x: Self) {
       
-      @scala.inline
-      def setClickAtOption(value: Double => js.Promise[Unit]): Self = StObject.set(x, "clickAtOption", js.Any.fromFunction1(value))
+      inline def setClickAtOption(value: Double => js.Promise[Unit]): Self = StObject.set(x, "clickAtOption", js.Any.fromFunction1(value))
     }
   }
 }

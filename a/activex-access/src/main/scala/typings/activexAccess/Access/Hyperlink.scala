@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Hyperlink extends StObject {
   
-  @JSName("Access.Hyperlink_typekey")
+  /* private */ @JSName("Access.Hyperlink_typekey")
   var AccessDotHyperlink_typekey: Hyperlink = js.native
   
   def AddToFavorites(): Unit = js.native

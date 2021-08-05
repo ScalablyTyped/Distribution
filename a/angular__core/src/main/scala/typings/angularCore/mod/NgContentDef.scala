@@ -16,16 +16,13 @@ trait NgContentDef extends StObject {
 }
 object NgContentDef {
   
-  @scala.inline
-  def apply(index: Double): NgContentDef = {
+  inline def apply(index: Double): NgContentDef = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[NgContentDef]
   }
   
-  @scala.inline
-  implicit class NgContentDefMutableBuilder[Self <: NgContentDef] (val x: Self) extends AnyVal {
+  extension [Self <: NgContentDef](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
   }
 }

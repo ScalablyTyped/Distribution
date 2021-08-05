@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object repeatMod {
   
   /* was `typeof core.String.repeat` */
-  @scala.inline
-  def apply(text: java.lang.String, count: Double): java.lang.String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
+  inline def apply(text: java.lang.String, count: Double): java.lang.String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[java.lang.String]
   
   @JSImport("core-js/fn/string/repeat", JSImport.Namespace)
   @js.native

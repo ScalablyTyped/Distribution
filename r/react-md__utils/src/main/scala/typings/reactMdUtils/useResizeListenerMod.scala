@@ -13,8 +13,7 @@ object useResizeListenerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useResizeListener(hasOnResizeOptionsImmediateEnabled: ResizeListenerOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useResizeListener")(hasOnResizeOptionsImmediateEnabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def useResizeListener(hasOnResizeOptionsImmediateEnabled: ResizeListenerOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useResizeListener")(hasOnResizeOptionsImmediateEnabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait ResizeListenerOptions extends StObject {
     
@@ -45,35 +44,26 @@ object useResizeListenerMod {
   }
   object ResizeListenerOptions {
     
-    @scala.inline
-    def apply(onResize: /* evt */ Event => Unit): ResizeListenerOptions = {
+    inline def apply(onResize: /* evt */ Event => Unit): ResizeListenerOptions = {
       val __obj = js.Dynamic.literal(onResize = js.Any.fromFunction1(onResize))
       __obj.asInstanceOf[ResizeListenerOptions]
     }
     
-    @scala.inline
-    implicit class ResizeListenerOptionsMutableBuilder[Self <: ResizeListenerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ResizeListenerOptions](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
+      inline def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImmediateUndefined: Self = StObject.set(x, "immediate", js.undefined)
+      inline def setImmediateUndefined: Self = StObject.set(x, "immediate", js.undefined)
       
-      @scala.inline
-      def setOnResize(value: /* evt */ Event => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      inline def setOnResize(value: /* evt */ Event => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOptions(value: Boolean | AddEventListenerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Boolean | AddEventListenerOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     }
   }
 }

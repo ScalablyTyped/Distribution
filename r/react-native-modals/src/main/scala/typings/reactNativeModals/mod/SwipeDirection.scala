@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SwipeDirection extends StObject
 object SwipeDirection {
   
-  @scala.inline
-  def down: typings.reactNativeModals.reactNativeModalsStrings.down = "down".asInstanceOf[typings.reactNativeModals.reactNativeModalsStrings.down]
+  inline def down: typings.reactNativeModals.reactNativeModalsStrings.down = "down".asInstanceOf[typings.reactNativeModals.reactNativeModalsStrings.down]
   
-  @scala.inline
-  def left: typings.reactNativeModals.reactNativeModalsStrings.left = "left".asInstanceOf[typings.reactNativeModals.reactNativeModalsStrings.left]
+  inline def left: typings.reactNativeModals.reactNativeModalsStrings.left = "left".asInstanceOf[typings.reactNativeModals.reactNativeModalsStrings.left]
   
-  @scala.inline
-  def right: typings.reactNativeModals.reactNativeModalsStrings.right = "right".asInstanceOf[typings.reactNativeModals.reactNativeModalsStrings.right]
+  inline def right: typings.reactNativeModals.reactNativeModalsStrings.right = "right".asInstanceOf[typings.reactNativeModals.reactNativeModalsStrings.right]
   
-  @scala.inline
-  def up: typings.reactNativeModals.reactNativeModalsStrings.up = "up".asInstanceOf[typings.reactNativeModals.reactNativeModalsStrings.up]
+  inline def up: typings.reactNativeModals.reactNativeModalsStrings.up = "up".asInstanceOf[typings.reactNativeModals.reactNativeModalsStrings.up]
 }

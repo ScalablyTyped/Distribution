@@ -12,6 +12,5 @@ object pushMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def menuPushAnimation(menu: MenuI): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("menuPushAnimation")(menu.asInstanceOf[js.Any]).asInstanceOf[Animation]
+  inline def menuPushAnimation(menu: MenuI): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("menuPushAnimation")(menu.asInstanceOf[js.Any]).asInstanceOf[Animation]
 }

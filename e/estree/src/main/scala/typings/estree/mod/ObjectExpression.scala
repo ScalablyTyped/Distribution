@@ -16,23 +16,18 @@ trait ObjectExpression
 }
 object ObjectExpression {
   
-  @scala.inline
-  def apply(properties: js.Array[Property | SpreadElement]): ObjectExpression = {
+  inline def apply(properties: js.Array[Property | SpreadElement]): ObjectExpression = {
     val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ObjectExpression")
     __obj.asInstanceOf[ObjectExpression]
   }
   
-  @scala.inline
-  implicit class ObjectExpressionMutableBuilder[Self <: ObjectExpression] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectExpression](x: Self) {
     
-    @scala.inline
-    def setProperties(value: js.Array[Property | SpreadElement]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Array[Property | SpreadElement]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesVarargs(value: (Property | SpreadElement)*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: (Property | SpreadElement)*): Self = StObject.set(x, "properties", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.ObjectExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estree.estreeStrings.ObjectExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

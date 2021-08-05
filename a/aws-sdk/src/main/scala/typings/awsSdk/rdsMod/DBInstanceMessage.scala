@@ -18,28 +18,21 @@ trait DBInstanceMessage extends StObject {
 }
 object DBInstanceMessage {
   
-  @scala.inline
-  def apply(): DBInstanceMessage = {
+  inline def apply(): DBInstanceMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DBInstanceMessage]
   }
   
-  @scala.inline
-  implicit class DBInstanceMessageMutableBuilder[Self <: DBInstanceMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DBInstanceMessage](x: Self) {
     
-    @scala.inline
-    def setDBInstances(value: DBInstanceList): Self = StObject.set(x, "DBInstances", value.asInstanceOf[js.Any])
+    inline def setDBInstances(value: DBInstanceList): Self = StObject.set(x, "DBInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBInstancesUndefined: Self = StObject.set(x, "DBInstances", js.undefined)
+    inline def setDBInstancesUndefined: Self = StObject.set(x, "DBInstances", js.undefined)
     
-    @scala.inline
-    def setDBInstancesVarargs(value: DBInstance*): Self = StObject.set(x, "DBInstances", js.Array(value :_*))
+    inline def setDBInstancesVarargs(value: DBInstance*): Self = StObject.set(x, "DBInstances", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

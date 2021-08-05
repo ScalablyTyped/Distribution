@@ -15,13 +15,11 @@ object paginationLocaleSvSEMod {
     @JSImport("antd-mobile-rn/lib/pagination/locale/sv_SE", "default.nextText")
     @js.native
     def nextText: String = js.native
-    @scala.inline
-    def nextText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nextText")(x.asInstanceOf[js.Any])
+    inline def nextText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nextText")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile-rn/lib/pagination/locale/sv_SE", "default.prevText")
     @js.native
     def prevText: String = js.native
-    @scala.inline
-    def prevText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prevText")(x.asInstanceOf[js.Any])
+    inline def prevText_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("prevText")(x.asInstanceOf[js.Any])
   }
 }

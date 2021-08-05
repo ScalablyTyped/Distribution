@@ -73,8 +73,7 @@ trait XLogger extends StObject {
 }
 object XLogger {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Level: Double,
     Name: String,
     addLogHandler: XLogHandler => Unit,
@@ -87,28 +86,20 @@ object XLogger {
     __obj.asInstanceOf[XLogger]
   }
   
-  @scala.inline
-  implicit class XLoggerMutableBuilder[Self <: XLogger] (val x: Self) extends AnyVal {
+  extension [Self <: XLogger](x: Self) {
     
-    @scala.inline
-    def setAddLogHandler(value: XLogHandler => Unit): Self = StObject.set(x, "addLogHandler", js.Any.fromFunction1(value))
+    inline def setAddLogHandler(value: XLogHandler => Unit): Self = StObject.set(x, "addLogHandler", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsLoggable(value: Double => Boolean): Self = StObject.set(x, "isLoggable", js.Any.fromFunction1(value))
+    inline def setIsLoggable(value: Double => Boolean): Self = StObject.set(x, "isLoggable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "Level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "Level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLog(value: (Double, String) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
+    inline def setLog(value: (Double, String) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLogp(value: (Double, String, String, String) => Unit): Self = StObject.set(x, "logp", js.Any.fromFunction4(value))
+    inline def setLogp(value: (Double, String, String, String) => Unit): Self = StObject.set(x, "logp", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveLogHandler(value: XLogHandler => Unit): Self = StObject.set(x, "removeLogHandler", js.Any.fromFunction1(value))
+    inline def setRemoveLogHandler(value: XLogHandler => Unit): Self = StObject.set(x, "removeLogHandler", js.Any.fromFunction1(value))
   }
 }

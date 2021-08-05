@@ -62,61 +62,43 @@ trait Config extends StObject {
 }
 object Config {
   
-  @scala.inline
-  def apply(clientApiKey: String, clientId: String): Config = {
+  inline def apply(clientApiKey: String, clientId: String): Config = {
     val __obj = js.Dynamic.literal(clientApiKey = clientApiKey.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Config]
   }
   
-  @scala.inline
-  implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+  extension [Self <: Config](x: Self) {
     
-    @scala.inline
-    def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+    inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     
-    @scala.inline
-    def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+    inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
+    inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
     
-    @scala.inline
-    def setClientApiKey(value: String): Self = StObject.set(x, "clientApiKey", value.asInstanceOf[js.Any])
+    inline def setClientApiKey(value: String): Self = StObject.set(x, "clientApiKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionTimeout(value: Double): Self = StObject.set(x, "connectionTimeout", value.asInstanceOf[js.Any])
+    inline def setConnectionTimeout(value: Double): Self = StObject.set(x, "connectionTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionTimeoutUndefined: Self = StObject.set(x, "connectionTimeout", js.undefined)
+    inline def setConnectionTimeoutUndefined: Self = StObject.set(x, "connectionTimeout", js.undefined)
     
-    @scala.inline
-    def setDebugMode(value: Boolean): Self = StObject.set(x, "debugMode", value.asInstanceOf[js.Any])
+    inline def setDebugMode(value: Boolean): Self = StObject.set(x, "debugMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugModeUndefined: Self = StObject.set(x, "debugMode", js.undefined)
+    inline def setDebugModeUndefined: Self = StObject.set(x, "debugMode", js.undefined)
     
-    @scala.inline
-    def setErrorHandler(value: (/* options */ js.Any, /* err */ js.Any) => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction2(value))
+    inline def setErrorHandler(value: (/* options */ js.Any, /* err */ js.Any) => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
+    inline def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)
     
-    @scala.inline
-    def setLogClass(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "logClass", js.Any.fromFunction1(value))
+    inline def setLogClass(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "logClass", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLogClassUndefined: Self = StObject.set(x, "logClass", js.undefined)
+    inline def setLogClassUndefined: Self = StObject.set(x, "logClass", js.undefined)
     
-    @scala.inline
-    def setResponseTimeout(value: Double): Self = StObject.set(x, "responseTimeout", value.asInstanceOf[js.Any])
+    inline def setResponseTimeout(value: Double): Self = StObject.set(x, "responseTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseTimeoutUndefined: Self = StObject.set(x, "responseTimeout", js.undefined)
+    inline def setResponseTimeoutUndefined: Self = StObject.set(x, "responseTimeout", js.undefined)
   }
 }

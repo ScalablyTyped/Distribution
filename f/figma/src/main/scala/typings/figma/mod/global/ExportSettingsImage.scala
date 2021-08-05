@@ -21,34 +21,25 @@ trait ExportSettingsImage
 }
 object ExportSettingsImage {
   
-  @scala.inline
-  def apply(format: JPG | PNG): ExportSettingsImage = {
+  inline def apply(format: JPG | PNG): ExportSettingsImage = {
     val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportSettingsImage]
   }
   
-  @scala.inline
-  implicit class ExportSettingsImageMutableBuilder[Self <: ExportSettingsImage] (val x: Self) extends AnyVal {
+  extension [Self <: ExportSettingsImage](x: Self) {
     
-    @scala.inline
-    def setConstraint(value: ExportSettingsConstraints): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
+    inline def setConstraint(value: ExportSettingsConstraints): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstraintUndefined: Self = StObject.set(x, "constraint", js.undefined)
+    inline def setConstraintUndefined: Self = StObject.set(x, "constraint", js.undefined)
     
-    @scala.inline
-    def setContentsOnly(value: Boolean): Self = StObject.set(x, "contentsOnly", value.asInstanceOf[js.Any])
+    inline def setContentsOnly(value: Boolean): Self = StObject.set(x, "contentsOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentsOnlyUndefined: Self = StObject.set(x, "contentsOnly", js.undefined)
+    inline def setContentsOnlyUndefined: Self = StObject.set(x, "contentsOnly", js.undefined)
     
-    @scala.inline
-    def setFormat(value: JPG | PNG): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: JPG | PNG): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+    inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+    inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
   }
 }

@@ -16,23 +16,18 @@ trait ImageId extends StObject {
 }
 object ImageId {
   
-  @scala.inline
-  def apply(imageId: String, range: ImageRange): ImageId = {
+  inline def apply(imageId: String, range: ImageRange): ImageId = {
     val __obj = js.Dynamic.literal(imageId = imageId.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("image")
     __obj.asInstanceOf[ImageId]
   }
   
-  @scala.inline
-  implicit class ImageIdMutableBuilder[Self <: ImageId] (val x: Self) extends AnyVal {
+  extension [Self <: ImageId](x: Self) {
     
-    @scala.inline
-    def setImageId(value: String): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
+    inline def setImageId(value: String): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: ImageRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: ImageRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: image): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: image): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

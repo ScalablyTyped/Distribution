@@ -19,23 +19,18 @@ trait EventType extends StObject {
 }
 object EventType {
   
-  @scala.inline
-  def apply(data: js.Object, event: set | delete, `type`: uuid | channel | membership): EventType = {
+  inline def apply(data: js.Object, event: set | delete, `type`: uuid | channel | membership): EventType = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventType]
   }
   
-  @scala.inline
-  implicit class EventTypeMutableBuilder[Self <: EventType] (val x: Self) extends AnyVal {
+  extension [Self <: EventType](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent(value: set | delete): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: set | delete): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: uuid | channel | membership): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: uuid | channel | membership): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

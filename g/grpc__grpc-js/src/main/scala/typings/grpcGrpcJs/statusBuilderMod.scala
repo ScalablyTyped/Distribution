@@ -18,11 +18,11 @@ object statusBuilderMod {
       */
     def build(): PartialStatusObject = js.native
     
-    var code: js.Any = js.native
+    /* private */ var code: js.Any = js.native
     
-    var details: js.Any = js.native
+    /* private */ var details: js.Any = js.native
     
-    var metadata: js.Any = js.native
+    /* private */ var metadata: js.Any = js.native
     
     /**
       * Adds a status code to the builder.

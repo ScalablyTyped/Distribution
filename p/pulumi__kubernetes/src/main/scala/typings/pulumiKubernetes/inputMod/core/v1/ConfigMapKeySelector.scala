@@ -27,28 +27,21 @@ trait ConfigMapKeySelector extends StObject {
 }
 object ConfigMapKeySelector {
   
-  @scala.inline
-  def apply(key: Input[String]): ConfigMapKeySelector = {
+  inline def apply(key: Input[String]): ConfigMapKeySelector = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigMapKeySelector]
   }
   
-  @scala.inline
-  implicit class ConfigMapKeySelectorMutableBuilder[Self <: ConfigMapKeySelector] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigMapKeySelector](x: Self) {
     
-    @scala.inline
-    def setKey(value: Input[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Input[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOptional(value: Input[Boolean]): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: Input[Boolean]): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
+    inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
   }
 }

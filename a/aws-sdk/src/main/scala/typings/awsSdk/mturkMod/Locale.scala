@@ -18,22 +18,17 @@ trait Locale extends StObject {
 }
 object Locale {
   
-  @scala.inline
-  def apply(Country: CountryParameters): Locale = {
+  inline def apply(Country: CountryParameters): Locale = {
     val __obj = js.Dynamic.literal(Country = Country.asInstanceOf[js.Any])
     __obj.asInstanceOf[Locale]
   }
   
-  @scala.inline
-  implicit class LocaleMutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
+  extension [Self <: Locale](x: Self) {
     
-    @scala.inline
-    def setCountry(value: CountryParameters): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: CountryParameters): Self = StObject.set(x, "Country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubdivision(value: CountryParameters): Self = StObject.set(x, "Subdivision", value.asInstanceOf[js.Any])
+    inline def setSubdivision(value: CountryParameters): Self = StObject.set(x, "Subdivision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubdivisionUndefined: Self = StObject.set(x, "Subdivision", js.undefined)
+    inline def setSubdivisionUndefined: Self = StObject.set(x, "Subdivision", js.undefined)
   }
 }

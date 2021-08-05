@@ -14,28 +14,21 @@ trait ElectionsQueryResponse extends StObject {
 }
 object ElectionsQueryResponse {
   
-  @scala.inline
-  def apply(): ElectionsQueryResponse = {
+  inline def apply(): ElectionsQueryResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ElectionsQueryResponse]
   }
   
-  @scala.inline
-  implicit class ElectionsQueryResponseMutableBuilder[Self <: ElectionsQueryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ElectionsQueryResponse](x: Self) {
     
-    @scala.inline
-    def setElections(value: js.Array[Election]): Self = StObject.set(x, "elections", value.asInstanceOf[js.Any])
+    inline def setElections(value: js.Array[Election]): Self = StObject.set(x, "elections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElectionsUndefined: Self = StObject.set(x, "elections", js.undefined)
+    inline def setElectionsUndefined: Self = StObject.set(x, "elections", js.undefined)
     
-    @scala.inline
-    def setElectionsVarargs(value: Election*): Self = StObject.set(x, "elections", js.Array(value :_*))
+    inline def setElectionsVarargs(value: Election*): Self = StObject.set(x, "elections", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

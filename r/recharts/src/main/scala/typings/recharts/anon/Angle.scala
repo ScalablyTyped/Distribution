@@ -34,79 +34,55 @@ trait Angle extends StObject {
 }
 object Angle {
   
-  @scala.inline
-  def apply(): Angle = {
+  inline def apply(): Angle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Angle]
   }
   
-  @scala.inline
-  implicit class AngleMutableBuilder[Self <: Angle] (val x: Self) extends AnyVal {
+  extension [Self <: Angle](x: Self) {
     
-    @scala.inline
-    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+    inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
-    @scala.inline
-    def setChildren(value: js.Array[ReactNode] | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[ReactNode] | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setClockWise(value: Boolean): Self = StObject.set(x, "clockWise", value.asInstanceOf[js.Any])
+    inline def setClockWise(value: Boolean): Self = StObject.set(x, "clockWise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClockWiseUndefined: Self = StObject.set(x, "clockWise", js.undefined)
+    inline def setClockWiseUndefined: Self = StObject.set(x, "clockWise", js.undefined)
     
-    @scala.inline
-    def setContent(value: ReactElement | ContentRenderer[LabelProps]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: ReactElement | ContentRenderer[LabelProps]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentFunction1(value: LabelProps => ReactNode): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
+    inline def setContentFunction1(value: LabelProps => ReactNode): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setData(value: Double): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Double): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setFormatter(value: /* label */ String | Double => ReactNode): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
+    inline def setFormatter(value: /* label */ String | Double => ReactNode): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+    inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setPosition(value: PositionType): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: PositionType): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

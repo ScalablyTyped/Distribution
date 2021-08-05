@@ -59,59 +59,42 @@ trait Type extends StObject {
 }
 object Type {
   
-  @scala.inline
-  def apply(byteSize: Double, isCompatible: js.Any => Boolean, name: String, size: Double, `type`: String): Type = {
+  inline def apply(byteSize: Double, isCompatible: js.Any => Boolean, name: String, size: Double, `type`: String): Type = {
     val __obj = js.Dynamic.literal(byteSize = byteSize.asInstanceOf[js.Any], isCompatible = js.Any.fromFunction1(isCompatible), name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Type]
   }
   
-  @scala.inline
-  implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+  extension [Self <: Type](x: Self) {
     
-    @scala.inline
-    def setByteSize(value: Double): Self = StObject.set(x, "byteSize", value.asInstanceOf[js.Any])
+    inline def setByteSize(value: Double): Self = StObject.set(x, "byteSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setFromJni(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "fromJni", js.Any.fromFunction1(value))
+    inline def setFromJni(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "fromJni", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFromJniUndefined: Self = StObject.set(x, "fromJni", js.undefined)
+    inline def setFromJniUndefined: Self = StObject.set(x, "fromJni", js.undefined)
     
-    @scala.inline
-    def setIsCompatible(value: js.Any => Boolean): Self = StObject.set(x, "isCompatible", js.Any.fromFunction1(value))
+    inline def setIsCompatible(value: js.Any => Boolean): Self = StObject.set(x, "isCompatible", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRead(value: /* address */ NativePointerValue => js.Any): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+    inline def setRead(value: /* address */ NativePointerValue => js.Any): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+    inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToJni(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "toJni", js.Any.fromFunction1(value))
+    inline def setToJni(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "toJni", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToJniUndefined: Self = StObject.set(x, "toJni", js.undefined)
+    inline def setToJniUndefined: Self = StObject.set(x, "toJni", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWrite(value: (/* address */ NativePointerValue, /* value */ js.Any) => Unit): Self = StObject.set(x, "write", js.Any.fromFunction2(value))
+    inline def setWrite(value: (/* address */ NativePointerValue, /* value */ js.Any) => Unit): Self = StObject.set(x, "write", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
+    inline def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
   }
 }

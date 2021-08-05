@@ -12,19 +12,15 @@ trait CollectionBeforeEvent[T] extends StObject {
 }
 object CollectionBeforeEvent {
   
-  @scala.inline
-  def apply[T](item: T, preventDefault: () => Unit): CollectionBeforeEvent[T] = {
+  inline def apply[T](item: T, preventDefault: () => Unit): CollectionBeforeEvent[T] = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault))
     __obj.asInstanceOf[CollectionBeforeEvent[T]]
   }
   
-  @scala.inline
-  implicit class CollectionBeforeEventMutableBuilder[Self <: CollectionBeforeEvent[?], T] (val x: Self & CollectionBeforeEvent[T]) extends AnyVal {
+  extension [Self <: CollectionBeforeEvent[?], T](x: Self & CollectionBeforeEvent[T]) {
     
-    @scala.inline
-    def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+    inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
   }
 }

@@ -38,8 +38,7 @@ trait MemberAccountStatus extends StObject {
 }
 object MemberAccountStatus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccountId: AccountId,
     ConfigRuleName: StringWithCharLimit64,
     MemberAccountRuleStatus: MemberAccountRuleStatus
@@ -48,34 +47,24 @@ object MemberAccountStatus {
     __obj.asInstanceOf[MemberAccountStatus]
   }
   
-  @scala.inline
-  implicit class MemberAccountStatusMutableBuilder[Self <: MemberAccountStatus] (val x: Self) extends AnyVal {
+  extension [Self <: MemberAccountStatus](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigRuleName(value: StringWithCharLimit64): Self = StObject.set(x, "ConfigRuleName", value.asInstanceOf[js.Any])
+    inline def setConfigRuleName(value: StringWithCharLimit64): Self = StObject.set(x, "ConfigRuleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCode(value: String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
-    @scala.inline
-    def setLastUpdateTime(value: Date): Self = StObject.set(x, "LastUpdateTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdateTime(value: Date): Self = StObject.set(x, "LastUpdateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdateTimeUndefined: Self = StObject.set(x, "LastUpdateTime", js.undefined)
+    inline def setLastUpdateTimeUndefined: Self = StObject.set(x, "LastUpdateTime", js.undefined)
     
-    @scala.inline
-    def setMemberAccountRuleStatus(value: MemberAccountRuleStatus): Self = StObject.set(x, "MemberAccountRuleStatus", value.asInstanceOf[js.Any])
+    inline def setMemberAccountRuleStatus(value: MemberAccountRuleStatus): Self = StObject.set(x, "MemberAccountRuleStatus", value.asInstanceOf[js.Any])
   }
 }

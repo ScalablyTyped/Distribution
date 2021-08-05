@@ -12,10 +12,8 @@ object getContainerDefinitionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getContainerDefinition(args: GetContainerDefinitionArgs): js.Promise[GetContainerDefinitionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getContainerDefinition")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetContainerDefinitionResult]]
-  @scala.inline
-  def getContainerDefinition(args: GetContainerDefinitionArgs, opts: InvokeOptions): js.Promise[GetContainerDefinitionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getContainerDefinition")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetContainerDefinitionResult]]
+  inline def getContainerDefinition(args: GetContainerDefinitionArgs): js.Promise[GetContainerDefinitionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getContainerDefinition")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetContainerDefinitionResult]]
+  inline def getContainerDefinition(args: GetContainerDefinitionArgs, opts: InvokeOptions): js.Promise[GetContainerDefinitionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getContainerDefinition")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetContainerDefinitionResult]]
   
   trait GetContainerDefinitionArgs extends StObject {
     
@@ -31,20 +29,16 @@ object getContainerDefinitionMod {
   }
   object GetContainerDefinitionArgs {
     
-    @scala.inline
-    def apply(containerName: String, taskDefinition: String): GetContainerDefinitionArgs = {
+    inline def apply(containerName: String, taskDefinition: String): GetContainerDefinitionArgs = {
       val __obj = js.Dynamic.literal(containerName = containerName.asInstanceOf[js.Any], taskDefinition = taskDefinition.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetContainerDefinitionArgs]
     }
     
-    @scala.inline
-    implicit class GetContainerDefinitionArgsMutableBuilder[Self <: GetContainerDefinitionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetContainerDefinitionArgs](x: Self) {
       
-      @scala.inline
-      def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
+      inline def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaskDefinition(value: String): Self = StObject.set(x, "taskDefinition", value.asInstanceOf[js.Any])
+      inline def setTaskDefinition(value: String): Self = StObject.set(x, "taskDefinition", value.asInstanceOf[js.Any])
     }
   }
   
@@ -101,8 +95,7 @@ object getContainerDefinitionMod {
   }
   object GetContainerDefinitionResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       containerName: String,
       cpu: Double,
       disableNetworking: Boolean,
@@ -119,41 +112,29 @@ object getContainerDefinitionMod {
       __obj.asInstanceOf[GetContainerDefinitionResult]
     }
     
-    @scala.inline
-    implicit class GetContainerDefinitionResultMutableBuilder[Self <: GetContainerDefinitionResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetContainerDefinitionResult](x: Self) {
       
-      @scala.inline
-      def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
+      inline def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCpu(value: Double): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
+      inline def setCpu(value: Double): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableNetworking(value: Boolean): Self = StObject.set(x, "disableNetworking", value.asInstanceOf[js.Any])
+      inline def setDisableNetworking(value: Boolean): Self = StObject.set(x, "disableNetworking", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDockerLabels(value: StringDictionary[String]): Self = StObject.set(x, "dockerLabels", value.asInstanceOf[js.Any])
+      inline def setDockerLabels(value: StringDictionary[String]): Self = StObject.set(x, "dockerLabels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvironment(value: StringDictionary[String]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+      inline def setEnvironment(value: StringDictionary[String]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageDigest(value: String): Self = StObject.set(x, "imageDigest", value.asInstanceOf[js.Any])
+      inline def setImageDigest(value: String): Self = StObject.set(x, "imageDigest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemory(value: Double): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
+      inline def setMemory(value: Double): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemoryReservation(value: Double): Self = StObject.set(x, "memoryReservation", value.asInstanceOf[js.Any])
+      inline def setMemoryReservation(value: Double): Self = StObject.set(x, "memoryReservation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaskDefinition(value: String): Self = StObject.set(x, "taskDefinition", value.asInstanceOf[js.Any])
+      inline def setTaskDefinition(value: String): Self = StObject.set(x, "taskDefinition", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -11,8 +11,6 @@ object equalMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Equal[T](value: T): FindOperator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("Equal")(value.asInstanceOf[js.Any]).asInstanceOf[FindOperator[T]]
-  @scala.inline
-  def Equal[T](value: FindOperator[T]): FindOperator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("Equal")(value.asInstanceOf[js.Any]).asInstanceOf[FindOperator[T]]
+  inline def Equal[T](value: T): FindOperator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("Equal")(value.asInstanceOf[js.Any]).asInstanceOf[FindOperator[T]]
+  inline def Equal[T](value: FindOperator[T]): FindOperator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("Equal")(value.asInstanceOf[js.Any]).asInstanceOf[FindOperator[T]]
 }

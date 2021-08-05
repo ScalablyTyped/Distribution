@@ -113,139 +113,95 @@ trait Eac3Settings extends StObject {
 }
 object Eac3Settings {
   
-  @scala.inline
-  def apply(): Eac3Settings = {
+  inline def apply(): Eac3Settings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Eac3Settings]
   }
   
-  @scala.inline
-  implicit class Eac3SettingsMutableBuilder[Self <: Eac3Settings] (val x: Self) extends AnyVal {
+  extension [Self <: Eac3Settings](x: Self) {
     
-    @scala.inline
-    def setAttenuationControl(value: Eac3AttenuationControl): Self = StObject.set(x, "AttenuationControl", value.asInstanceOf[js.Any])
+    inline def setAttenuationControl(value: Eac3AttenuationControl): Self = StObject.set(x, "AttenuationControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttenuationControlUndefined: Self = StObject.set(x, "AttenuationControl", js.undefined)
+    inline def setAttenuationControlUndefined: Self = StObject.set(x, "AttenuationControl", js.undefined)
     
-    @scala.inline
-    def setBitrate(value: integerMin64000Max640000): Self = StObject.set(x, "Bitrate", value.asInstanceOf[js.Any])
+    inline def setBitrate(value: integerMin64000Max640000): Self = StObject.set(x, "Bitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitrateUndefined: Self = StObject.set(x, "Bitrate", js.undefined)
+    inline def setBitrateUndefined: Self = StObject.set(x, "Bitrate", js.undefined)
     
-    @scala.inline
-    def setBitstreamMode(value: Eac3BitstreamMode): Self = StObject.set(x, "BitstreamMode", value.asInstanceOf[js.Any])
+    inline def setBitstreamMode(value: Eac3BitstreamMode): Self = StObject.set(x, "BitstreamMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitstreamModeUndefined: Self = StObject.set(x, "BitstreamMode", js.undefined)
+    inline def setBitstreamModeUndefined: Self = StObject.set(x, "BitstreamMode", js.undefined)
     
-    @scala.inline
-    def setCodingMode(value: Eac3CodingMode): Self = StObject.set(x, "CodingMode", value.asInstanceOf[js.Any])
+    inline def setCodingMode(value: Eac3CodingMode): Self = StObject.set(x, "CodingMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodingModeUndefined: Self = StObject.set(x, "CodingMode", js.undefined)
+    inline def setCodingModeUndefined: Self = StObject.set(x, "CodingMode", js.undefined)
     
-    @scala.inline
-    def setDcFilter(value: Eac3DcFilter): Self = StObject.set(x, "DcFilter", value.asInstanceOf[js.Any])
+    inline def setDcFilter(value: Eac3DcFilter): Self = StObject.set(x, "DcFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDcFilterUndefined: Self = StObject.set(x, "DcFilter", js.undefined)
+    inline def setDcFilterUndefined: Self = StObject.set(x, "DcFilter", js.undefined)
     
-    @scala.inline
-    def setDialnorm(value: integerMin1Max31): Self = StObject.set(x, "Dialnorm", value.asInstanceOf[js.Any])
+    inline def setDialnorm(value: integerMin1Max31): Self = StObject.set(x, "Dialnorm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialnormUndefined: Self = StObject.set(x, "Dialnorm", js.undefined)
+    inline def setDialnormUndefined: Self = StObject.set(x, "Dialnorm", js.undefined)
     
-    @scala.inline
-    def setDynamicRangeCompressionLine(value: Eac3DynamicRangeCompressionLine): Self = StObject.set(x, "DynamicRangeCompressionLine", value.asInstanceOf[js.Any])
+    inline def setDynamicRangeCompressionLine(value: Eac3DynamicRangeCompressionLine): Self = StObject.set(x, "DynamicRangeCompressionLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicRangeCompressionLineUndefined: Self = StObject.set(x, "DynamicRangeCompressionLine", js.undefined)
+    inline def setDynamicRangeCompressionLineUndefined: Self = StObject.set(x, "DynamicRangeCompressionLine", js.undefined)
     
-    @scala.inline
-    def setDynamicRangeCompressionRf(value: Eac3DynamicRangeCompressionRf): Self = StObject.set(x, "DynamicRangeCompressionRf", value.asInstanceOf[js.Any])
+    inline def setDynamicRangeCompressionRf(value: Eac3DynamicRangeCompressionRf): Self = StObject.set(x, "DynamicRangeCompressionRf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicRangeCompressionRfUndefined: Self = StObject.set(x, "DynamicRangeCompressionRf", js.undefined)
+    inline def setDynamicRangeCompressionRfUndefined: Self = StObject.set(x, "DynamicRangeCompressionRf", js.undefined)
     
-    @scala.inline
-    def setLfeControl(value: Eac3LfeControl): Self = StObject.set(x, "LfeControl", value.asInstanceOf[js.Any])
+    inline def setLfeControl(value: Eac3LfeControl): Self = StObject.set(x, "LfeControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLfeControlUndefined: Self = StObject.set(x, "LfeControl", js.undefined)
+    inline def setLfeControlUndefined: Self = StObject.set(x, "LfeControl", js.undefined)
     
-    @scala.inline
-    def setLfeFilter(value: Eac3LfeFilter): Self = StObject.set(x, "LfeFilter", value.asInstanceOf[js.Any])
+    inline def setLfeFilter(value: Eac3LfeFilter): Self = StObject.set(x, "LfeFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLfeFilterUndefined: Self = StObject.set(x, "LfeFilter", js.undefined)
+    inline def setLfeFilterUndefined: Self = StObject.set(x, "LfeFilter", js.undefined)
     
-    @scala.inline
-    def setLoRoCenterMixLevel(value: doubleMinNegative60Max3): Self = StObject.set(x, "LoRoCenterMixLevel", value.asInstanceOf[js.Any])
+    inline def setLoRoCenterMixLevel(value: doubleMinNegative60Max3): Self = StObject.set(x, "LoRoCenterMixLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoRoCenterMixLevelUndefined: Self = StObject.set(x, "LoRoCenterMixLevel", js.undefined)
+    inline def setLoRoCenterMixLevelUndefined: Self = StObject.set(x, "LoRoCenterMixLevel", js.undefined)
     
-    @scala.inline
-    def setLoRoSurroundMixLevel(value: doubleMinNegative60MaxNegative1): Self = StObject.set(x, "LoRoSurroundMixLevel", value.asInstanceOf[js.Any])
+    inline def setLoRoSurroundMixLevel(value: doubleMinNegative60MaxNegative1): Self = StObject.set(x, "LoRoSurroundMixLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoRoSurroundMixLevelUndefined: Self = StObject.set(x, "LoRoSurroundMixLevel", js.undefined)
+    inline def setLoRoSurroundMixLevelUndefined: Self = StObject.set(x, "LoRoSurroundMixLevel", js.undefined)
     
-    @scala.inline
-    def setLtRtCenterMixLevel(value: doubleMinNegative60Max3): Self = StObject.set(x, "LtRtCenterMixLevel", value.asInstanceOf[js.Any])
+    inline def setLtRtCenterMixLevel(value: doubleMinNegative60Max3): Self = StObject.set(x, "LtRtCenterMixLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLtRtCenterMixLevelUndefined: Self = StObject.set(x, "LtRtCenterMixLevel", js.undefined)
+    inline def setLtRtCenterMixLevelUndefined: Self = StObject.set(x, "LtRtCenterMixLevel", js.undefined)
     
-    @scala.inline
-    def setLtRtSurroundMixLevel(value: doubleMinNegative60MaxNegative1): Self = StObject.set(x, "LtRtSurroundMixLevel", value.asInstanceOf[js.Any])
+    inline def setLtRtSurroundMixLevel(value: doubleMinNegative60MaxNegative1): Self = StObject.set(x, "LtRtSurroundMixLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLtRtSurroundMixLevelUndefined: Self = StObject.set(x, "LtRtSurroundMixLevel", js.undefined)
+    inline def setLtRtSurroundMixLevelUndefined: Self = StObject.set(x, "LtRtSurroundMixLevel", js.undefined)
     
-    @scala.inline
-    def setMetadataControl(value: Eac3MetadataControl): Self = StObject.set(x, "MetadataControl", value.asInstanceOf[js.Any])
+    inline def setMetadataControl(value: Eac3MetadataControl): Self = StObject.set(x, "MetadataControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataControlUndefined: Self = StObject.set(x, "MetadataControl", js.undefined)
+    inline def setMetadataControlUndefined: Self = StObject.set(x, "MetadataControl", js.undefined)
     
-    @scala.inline
-    def setPassthroughControl(value: Eac3PassthroughControl): Self = StObject.set(x, "PassthroughControl", value.asInstanceOf[js.Any])
+    inline def setPassthroughControl(value: Eac3PassthroughControl): Self = StObject.set(x, "PassthroughControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassthroughControlUndefined: Self = StObject.set(x, "PassthroughControl", js.undefined)
+    inline def setPassthroughControlUndefined: Self = StObject.set(x, "PassthroughControl", js.undefined)
     
-    @scala.inline
-    def setPhaseControl(value: Eac3PhaseControl): Self = StObject.set(x, "PhaseControl", value.asInstanceOf[js.Any])
+    inline def setPhaseControl(value: Eac3PhaseControl): Self = StObject.set(x, "PhaseControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhaseControlUndefined: Self = StObject.set(x, "PhaseControl", js.undefined)
+    inline def setPhaseControlUndefined: Self = StObject.set(x, "PhaseControl", js.undefined)
     
-    @scala.inline
-    def setSampleRate(value: integerMin48000Max48000): Self = StObject.set(x, "SampleRate", value.asInstanceOf[js.Any])
+    inline def setSampleRate(value: integerMin48000Max48000): Self = StObject.set(x, "SampleRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleRateUndefined: Self = StObject.set(x, "SampleRate", js.undefined)
+    inline def setSampleRateUndefined: Self = StObject.set(x, "SampleRate", js.undefined)
     
-    @scala.inline
-    def setStereoDownmix(value: Eac3StereoDownmix): Self = StObject.set(x, "StereoDownmix", value.asInstanceOf[js.Any])
+    inline def setStereoDownmix(value: Eac3StereoDownmix): Self = StObject.set(x, "StereoDownmix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStereoDownmixUndefined: Self = StObject.set(x, "StereoDownmix", js.undefined)
+    inline def setStereoDownmixUndefined: Self = StObject.set(x, "StereoDownmix", js.undefined)
     
-    @scala.inline
-    def setSurroundExMode(value: Eac3SurroundExMode): Self = StObject.set(x, "SurroundExMode", value.asInstanceOf[js.Any])
+    inline def setSurroundExMode(value: Eac3SurroundExMode): Self = StObject.set(x, "SurroundExMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSurroundExModeUndefined: Self = StObject.set(x, "SurroundExMode", js.undefined)
+    inline def setSurroundExModeUndefined: Self = StObject.set(x, "SurroundExMode", js.undefined)
     
-    @scala.inline
-    def setSurroundMode(value: Eac3SurroundMode): Self = StObject.set(x, "SurroundMode", value.asInstanceOf[js.Any])
+    inline def setSurroundMode(value: Eac3SurroundMode): Self = StObject.set(x, "SurroundMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSurroundModeUndefined: Self = StObject.set(x, "SurroundMode", js.undefined)
+    inline def setSurroundModeUndefined: Self = StObject.set(x, "SurroundMode", js.undefined)
   }
 }

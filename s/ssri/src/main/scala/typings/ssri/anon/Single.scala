@@ -12,25 +12,19 @@ trait Single extends StObject {
 }
 object Single {
   
-  @scala.inline
-  def apply(): Single = {
+  inline def apply(): Single = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Single]
   }
   
-  @scala.inline
-  implicit class SingleMutableBuilder[Self <: Single] (val x: Self) extends AnyVal {
+  extension [Self <: Single](x: Self) {
     
-    @scala.inline
-    def setSingle(value: Boolean): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
+    inline def setSingle(value: Boolean): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleUndefined: Self = StObject.set(x, "single", js.undefined)
+    inline def setSingleUndefined: Self = StObject.set(x, "single", js.undefined)
     
-    @scala.inline
-    def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+    inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+    inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
   }
 }

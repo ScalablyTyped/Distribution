@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoPictureCompress extends StObject
 object MsoPictureCompress {
   
-  @scala.inline
-  def msoPictureCompressDocDefault: `-1` = -1.asInstanceOf[`-1`]
+  inline def msoPictureCompressDocDefault: `-1` = -1.asInstanceOf[`-1`]
   
-  @scala.inline
-  def msoPictureCompressFalse: `0` = 0.asInstanceOf[`0`]
+  inline def msoPictureCompressFalse: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def msoPictureCompressTrue: `1` = 1.asInstanceOf[`1`]
+  inline def msoPictureCompressTrue: `1` = 1.asInstanceOf[`1`]
 }

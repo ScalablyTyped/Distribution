@@ -22,28 +22,21 @@ trait SchemaConversionList extends StObject {
 }
 object SchemaConversionList {
   
-  @scala.inline
-  def apply(): SchemaConversionList = {
+  inline def apply(): SchemaConversionList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaConversionList]
   }
   
-  @scala.inline
-  implicit class SchemaConversionListMutableBuilder[Self <: SchemaConversionList] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaConversionList](x: Self) {
     
-    @scala.inline
-    def setConversion(value: js.Array[SchemaConversion]): Self = StObject.set(x, "conversion", value.asInstanceOf[js.Any])
+    inline def setConversion(value: js.Array[SchemaConversion]): Self = StObject.set(x, "conversion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversionUndefined: Self = StObject.set(x, "conversion", js.undefined)
+    inline def setConversionUndefined: Self = StObject.set(x, "conversion", js.undefined)
     
-    @scala.inline
-    def setConversionVarargs(value: SchemaConversion*): Self = StObject.set(x, "conversion", js.Array(value :_*))
+    inline def setConversionVarargs(value: SchemaConversion*): Self = StObject.set(x, "conversion", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

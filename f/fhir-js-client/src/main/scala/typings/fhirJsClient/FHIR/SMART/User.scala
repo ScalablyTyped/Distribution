@@ -16,16 +16,13 @@ trait User extends StObject {
 }
 object User {
   
-  @scala.inline
-  def apply(read: () => js.Promise[Response]): User = {
+  inline def apply(read: () => js.Promise[Response]): User = {
     val __obj = js.Dynamic.literal(read = js.Any.fromFunction0(read))
     __obj.asInstanceOf[User]
   }
   
-  @scala.inline
-  implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
+  extension [Self <: User](x: Self) {
     
-    @scala.inline
-    def setRead(value: () => js.Promise[Response]): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
+    inline def setRead(value: () => js.Promise[Response]): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
   }
 }

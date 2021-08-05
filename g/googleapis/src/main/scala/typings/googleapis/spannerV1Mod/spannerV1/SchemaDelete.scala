@@ -23,25 +23,19 @@ trait SchemaDelete extends StObject {
 }
 object SchemaDelete {
   
-  @scala.inline
-  def apply(): SchemaDelete = {
+  inline def apply(): SchemaDelete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDelete]
   }
   
-  @scala.inline
-  implicit class SchemaDeleteMutableBuilder[Self <: SchemaDelete] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDelete](x: Self) {
     
-    @scala.inline
-    def setKeySet(value: SchemaKeySet): Self = StObject.set(x, "keySet", value.asInstanceOf[js.Any])
+    inline def setKeySet(value: SchemaKeySet): Self = StObject.set(x, "keySet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeySetUndefined: Self = StObject.set(x, "keySet", js.undefined)
+    inline def setKeySetUndefined: Self = StObject.set(x, "keySet", js.undefined)
     
-    @scala.inline
-    def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+    inline def setTable(value: String): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+    inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
   }
 }

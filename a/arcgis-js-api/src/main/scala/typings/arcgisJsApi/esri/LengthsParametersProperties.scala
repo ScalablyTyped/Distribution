@@ -39,40 +39,29 @@ trait LengthsParametersProperties extends StObject {
 }
 object LengthsParametersProperties {
   
-  @scala.inline
-  def apply(): LengthsParametersProperties = {
+  inline def apply(): LengthsParametersProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LengthsParametersProperties]
   }
   
-  @scala.inline
-  implicit class LengthsParametersPropertiesMutableBuilder[Self <: LengthsParametersProperties] (val x: Self) extends AnyVal {
+  extension [Self <: LengthsParametersProperties](x: Self) {
     
-    @scala.inline
-    def setCalculationType(value: planar | geodesic | `preserve-shape`): Self = StObject.set(x, "calculationType", value.asInstanceOf[js.Any])
+    inline def setCalculationType(value: planar | geodesic | `preserve-shape`): Self = StObject.set(x, "calculationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalculationTypeUndefined: Self = StObject.set(x, "calculationType", js.undefined)
+    inline def setCalculationTypeUndefined: Self = StObject.set(x, "calculationType", js.undefined)
     
-    @scala.inline
-    def setGeodesic(value: Boolean): Self = StObject.set(x, "geodesic", value.asInstanceOf[js.Any])
+    inline def setGeodesic(value: Boolean): Self = StObject.set(x, "geodesic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeodesicUndefined: Self = StObject.set(x, "geodesic", js.undefined)
+    inline def setGeodesicUndefined: Self = StObject.set(x, "geodesic", js.undefined)
     
-    @scala.inline
-    def setLengthUnit(value: Double | String): Self = StObject.set(x, "lengthUnit", value.asInstanceOf[js.Any])
+    inline def setLengthUnit(value: Double | String): Self = StObject.set(x, "lengthUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUnitUndefined: Self = StObject.set(x, "lengthUnit", js.undefined)
+    inline def setLengthUnitUndefined: Self = StObject.set(x, "lengthUnit", js.undefined)
     
-    @scala.inline
-    def setPolylines(value: js.Array[PolylineProperties]): Self = StObject.set(x, "polylines", value.asInstanceOf[js.Any])
+    inline def setPolylines(value: js.Array[PolylineProperties]): Self = StObject.set(x, "polylines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolylinesUndefined: Self = StObject.set(x, "polylines", js.undefined)
+    inline def setPolylinesUndefined: Self = StObject.set(x, "polylines", js.undefined)
     
-    @scala.inline
-    def setPolylinesVarargs(value: PolylineProperties*): Self = StObject.set(x, "polylines", js.Array(value :_*))
+    inline def setPolylinesVarargs(value: PolylineProperties*): Self = StObject.set(x, "polylines", js.Array(value :_*))
   }
 }

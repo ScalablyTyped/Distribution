@@ -35,37 +35,27 @@ trait SchemaShape extends StObject {
 }
 object SchemaShape {
   
-  @scala.inline
-  def apply(): SchemaShape = {
+  inline def apply(): SchemaShape = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaShape]
   }
   
-  @scala.inline
-  implicit class SchemaShapeMutableBuilder[Self <: SchemaShape] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaShape](x: Self) {
     
-    @scala.inline
-    def setPlaceholder(value: SchemaPlaceholder): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: SchemaPlaceholder): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
-    @scala.inline
-    def setShapeProperties(value: SchemaShapeProperties): Self = StObject.set(x, "shapeProperties", value.asInstanceOf[js.Any])
+    inline def setShapeProperties(value: SchemaShapeProperties): Self = StObject.set(x, "shapeProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapePropertiesUndefined: Self = StObject.set(x, "shapeProperties", js.undefined)
+    inline def setShapePropertiesUndefined: Self = StObject.set(x, "shapeProperties", js.undefined)
     
-    @scala.inline
-    def setShapeType(value: String): Self = StObject.set(x, "shapeType", value.asInstanceOf[js.Any])
+    inline def setShapeType(value: String): Self = StObject.set(x, "shapeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapeTypeUndefined: Self = StObject.set(x, "shapeType", js.undefined)
+    inline def setShapeTypeUndefined: Self = StObject.set(x, "shapeType", js.undefined)
     
-    @scala.inline
-    def setText(value: SchemaTextContent): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: SchemaTextContent): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

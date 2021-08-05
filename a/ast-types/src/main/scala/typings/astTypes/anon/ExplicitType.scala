@@ -13,22 +13,17 @@ trait ExplicitType extends StObject {
 }
 object ExplicitType {
   
-  @scala.inline
-  def apply(explicitType: Boolean, members: js.Array[EnumBooleanMemberKind]): ExplicitType = {
+  inline def apply(explicitType: Boolean, members: js.Array[EnumBooleanMemberKind]): ExplicitType = {
     val __obj = js.Dynamic.literal(explicitType = explicitType.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExplicitType]
   }
   
-  @scala.inline
-  implicit class ExplicitTypeMutableBuilder[Self <: ExplicitType] (val x: Self) extends AnyVal {
+  extension [Self <: ExplicitType](x: Self) {
     
-    @scala.inline
-    def setExplicitType(value: Boolean): Self = StObject.set(x, "explicitType", value.asInstanceOf[js.Any])
+    inline def setExplicitType(value: Boolean): Self = StObject.set(x, "explicitType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembers(value: js.Array[EnumBooleanMemberKind]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: js.Array[EnumBooleanMemberKind]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembersVarargs(value: EnumBooleanMemberKind*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: EnumBooleanMemberKind*): Self = StObject.set(x, "members", js.Array(value :_*))
   }
 }

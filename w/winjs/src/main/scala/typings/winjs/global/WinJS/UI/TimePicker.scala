@@ -34,10 +34,8 @@ object TimePicker {
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code. Use render instead.
     **/
   /* static member */
-  @scala.inline
-  def getInformation(clock: js.Any, minuteIncrement: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getInformation")(clock.asInstanceOf[js.Any], minuteIncrement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def getInformation(clock: js.Any, minuteIncrement: js.Any, timerPatterns: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getInformation")(clock.asInstanceOf[js.Any], minuteIncrement.asInstanceOf[js.Any], timerPatterns.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getInformation(clock: js.Any, minuteIncrement: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getInformation")(clock.asInstanceOf[js.Any], minuteIncrement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getInformation(clock: js.Any, minuteIncrement: js.Any, timerPatterns: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getInformation")(clock.asInstanceOf[js.Any], minuteIncrement.asInstanceOf[js.Any], timerPatterns.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Indicates that the object is compatibile with declarative processing.
@@ -46,6 +44,5 @@ object TimePicker {
   @JSGlobal("WinJS.UI.TimePicker.supportedForProcessing")
   @js.native
   def supportedForProcessing: Boolean = js.native
-  @scala.inline
-  def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
+  inline def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
 }

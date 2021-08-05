@@ -94,10 +94,8 @@ object PropertySignatureSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(propertyName: ISyntaxToken): typings.typescriptServices.TypeScript.PropertySignatureSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(propertyName.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.PropertySignatureSyntax]
+  inline def create(propertyName: ISyntaxToken): typings.typescriptServices.TypeScript.PropertySignatureSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(propertyName.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.PropertySignatureSyntax]
   
   /* static member */
-  @scala.inline
-  def create1(propertyName: ISyntaxToken): typings.typescriptServices.TypeScript.PropertySignatureSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(propertyName.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.PropertySignatureSyntax]
+  inline def create1(propertyName: ISyntaxToken): typings.typescriptServices.TypeScript.PropertySignatureSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(propertyName.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.PropertySignatureSyntax]
 }

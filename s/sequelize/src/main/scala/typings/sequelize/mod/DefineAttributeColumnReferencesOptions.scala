@@ -32,30 +32,23 @@ trait DefineAttributeColumnReferencesOptions extends StObject {
 }
 object DefineAttributeColumnReferencesOptions {
   
-  @scala.inline
-  def apply(model: String | (Model[js.Any, js.Any, js.Any])): DefineAttributeColumnReferencesOptions = {
+  inline def apply(model: String | (Model[js.Any, js.Any, js.Any])): DefineAttributeColumnReferencesOptions = {
     val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefineAttributeColumnReferencesOptions]
   }
   
-  @scala.inline
-  implicit class DefineAttributeColumnReferencesOptionsMutableBuilder[Self <: DefineAttributeColumnReferencesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DefineAttributeColumnReferencesOptions](x: Self) {
     
-    @scala.inline
-    def setDeferrable(
+    inline def setDeferrable(
       value: DeferrableInitiallyDeferred | DeferrableInitiallyImmediate | DeferrableNot | DeferrableSetDeferred | DeferrableSetImmediate
     ): Self = StObject.set(x, "deferrable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferrableUndefined: Self = StObject.set(x, "deferrable", js.undefined)
+    inline def setDeferrableUndefined: Self = StObject.set(x, "deferrable", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setModel(value: String | (Model[js.Any, js.Any, js.Any])): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String | (Model[js.Any, js.Any, js.Any])): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
   }
 }

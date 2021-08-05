@@ -19,8 +19,7 @@ trait WebMapSaveOptions
 }
 object WebMapSaveOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -29,13 +28,10 @@ object WebMapSaveOptions {
     __obj.asInstanceOf[WebMapSaveOptions]
   }
   
-  @scala.inline
-  implicit class WebMapSaveOptionsMutableBuilder[Self <: WebMapSaveOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WebMapSaveOptions](x: Self) {
     
-    @scala.inline
-    def setIgnoreUnsupported(value: Boolean): Self = StObject.set(x, "ignoreUnsupported", value.asInstanceOf[js.Any])
+    inline def setIgnoreUnsupported(value: Boolean): Self = StObject.set(x, "ignoreUnsupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreUnsupportedUndefined: Self = StObject.set(x, "ignoreUnsupported", js.undefined)
+    inline def setIgnoreUnsupportedUndefined: Self = StObject.set(x, "ignoreUnsupported", js.undefined)
   }
 }

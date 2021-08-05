@@ -26,25 +26,19 @@ trait ExtensionEvent extends StObject {
 }
 object ExtensionEvent {
   
-  @scala.inline
-  def apply(id: Double, properties: js.Any, statisticDate: Date, version: String): ExtensionEvent = {
+  inline def apply(id: Double, properties: js.Any, statisticDate: Date, version: String): ExtensionEvent = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], statisticDate = statisticDate.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionEvent]
   }
   
-  @scala.inline
-  implicit class ExtensionEventMutableBuilder[Self <: ExtensionEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionEvent](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatisticDate(value: Date): Self = StObject.set(x, "statisticDate", value.asInstanceOf[js.Any])
+    inline def setStatisticDate(value: Date): Self = StObject.set(x, "statisticDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

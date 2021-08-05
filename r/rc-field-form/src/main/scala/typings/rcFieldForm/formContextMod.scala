@@ -30,23 +30,18 @@ object formContextMod extends Shortcut {
   }
   object FormChangeInfo {
     
-    @scala.inline
-    def apply(changedFields: js.Array[FieldData], forms: Forms): FormChangeInfo = {
+    inline def apply(changedFields: js.Array[FieldData], forms: Forms): FormChangeInfo = {
       val __obj = js.Dynamic.literal(changedFields = changedFields.asInstanceOf[js.Any], forms = forms.asInstanceOf[js.Any])
       __obj.asInstanceOf[FormChangeInfo]
     }
     
-    @scala.inline
-    implicit class FormChangeInfoMutableBuilder[Self <: FormChangeInfo] (val x: Self) extends AnyVal {
+    extension [Self <: FormChangeInfo](x: Self) {
       
-      @scala.inline
-      def setChangedFields(value: js.Array[FieldData]): Self = StObject.set(x, "changedFields", value.asInstanceOf[js.Any])
+      inline def setChangedFields(value: js.Array[FieldData]): Self = StObject.set(x, "changedFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangedFieldsVarargs(value: FieldData*): Self = StObject.set(x, "changedFields", js.Array(value :_*))
+      inline def setChangedFieldsVarargs(value: FieldData*): Self = StObject.set(x, "changedFields", js.Array(value :_*))
       
-      @scala.inline
-      def setForms(value: Forms): Self = StObject.set(x, "forms", value.asInstanceOf[js.Any])
+      inline def setForms(value: Forms): Self = StObject.set(x, "forms", value.asInstanceOf[js.Any])
     }
   }
   
@@ -64,8 +59,7 @@ object formContextMod extends Shortcut {
   }
   object FormContextProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       registerForm: (String, FormInstance[js.Any]) => Unit,
       triggerFormChange: (String, js.Array[FieldData]) => Unit,
       triggerFormFinish: (String, Store) => Unit,
@@ -75,20 +69,15 @@ object formContextMod extends Shortcut {
       __obj.asInstanceOf[FormContextProps]
     }
     
-    @scala.inline
-    implicit class FormContextPropsMutableBuilder[Self <: FormContextProps] (val x: Self) extends AnyVal {
+    extension [Self <: FormContextProps](x: Self) {
       
-      @scala.inline
-      def setRegisterForm(value: (String, FormInstance[js.Any]) => Unit): Self = StObject.set(x, "registerForm", js.Any.fromFunction2(value))
+      inline def setRegisterForm(value: (String, FormInstance[js.Any]) => Unit): Self = StObject.set(x, "registerForm", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTriggerFormChange(value: (String, js.Array[FieldData]) => Unit): Self = StObject.set(x, "triggerFormChange", js.Any.fromFunction2(value))
+      inline def setTriggerFormChange(value: (String, js.Array[FieldData]) => Unit): Self = StObject.set(x, "triggerFormChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTriggerFormFinish(value: (String, Store) => Unit): Self = StObject.set(x, "triggerFormFinish", js.Any.fromFunction2(value))
+      inline def setTriggerFormFinish(value: (String, Store) => Unit): Self = StObject.set(x, "triggerFormFinish", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUnregisterForm(value: String => Unit): Self = StObject.set(x, "unregisterForm", js.Any.fromFunction1(value))
+      inline def setUnregisterForm(value: String => Unit): Self = StObject.set(x, "unregisterForm", js.Any.fromFunction1(value))
     }
   }
   
@@ -100,20 +89,16 @@ object formContextMod extends Shortcut {
   }
   object FormFinishInfo {
     
-    @scala.inline
-    def apply(forms: Forms, values: Store): FormFinishInfo = {
+    inline def apply(forms: Forms, values: Store): FormFinishInfo = {
       val __obj = js.Dynamic.literal(forms = forms.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[FormFinishInfo]
     }
     
-    @scala.inline
-    implicit class FormFinishInfoMutableBuilder[Self <: FormFinishInfo] (val x: Self) extends AnyVal {
+    extension [Self <: FormFinishInfo](x: Self) {
       
-      @scala.inline
-      def setForms(value: Forms): Self = StObject.set(x, "forms", value.asInstanceOf[js.Any])
+      inline def setForms(value: Forms): Self = StObject.set(x, "forms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: Store): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: Store): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     }
   }
   
@@ -127,32 +112,24 @@ object formContextMod extends Shortcut {
   }
   object FormProviderProps {
     
-    @scala.inline
-    def apply(): FormProviderProps = {
+    inline def apply(): FormProviderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FormProviderProps]
     }
     
-    @scala.inline
-    implicit class FormProviderPropsMutableBuilder[Self <: FormProviderProps] (val x: Self) extends AnyVal {
+    extension [Self <: FormProviderProps](x: Self) {
       
-      @scala.inline
-      def setOnFormChange(value: (/* name */ String, /* info */ FormChangeInfo) => Unit): Self = StObject.set(x, "onFormChange", js.Any.fromFunction2(value))
+      inline def setOnFormChange(value: (/* name */ String, /* info */ FormChangeInfo) => Unit): Self = StObject.set(x, "onFormChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnFormChangeUndefined: Self = StObject.set(x, "onFormChange", js.undefined)
+      inline def setOnFormChangeUndefined: Self = StObject.set(x, "onFormChange", js.undefined)
       
-      @scala.inline
-      def setOnFormFinish(value: (/* name */ String, /* info */ FormFinishInfo) => Unit): Self = StObject.set(x, "onFormFinish", js.Any.fromFunction2(value))
+      inline def setOnFormFinish(value: (/* name */ String, /* info */ FormFinishInfo) => Unit): Self = StObject.set(x, "onFormFinish", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnFormFinishUndefined: Self = StObject.set(x, "onFormFinish", js.undefined)
+      inline def setOnFormFinishUndefined: Self = StObject.set(x, "onFormFinish", js.undefined)
       
-      @scala.inline
-      def setValidateMessages(value: ValidateMessages): Self = StObject.set(x, "validateMessages", value.asInstanceOf[js.Any])
+      inline def setValidateMessages(value: ValidateMessages): Self = StObject.set(x, "validateMessages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateMessagesUndefined: Self = StObject.set(x, "validateMessages", js.undefined)
+      inline def setValidateMessagesUndefined: Self = StObject.set(x, "validateMessages", js.undefined)
     }
   }
   

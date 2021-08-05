@@ -14,25 +14,19 @@ trait UniqueConstraint extends StObject {
 }
 object UniqueConstraint {
   
-  @scala.inline
-  def apply(): UniqueConstraint = {
+  inline def apply(): UniqueConstraint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UniqueConstraint]
   }
   
-  @scala.inline
-  implicit class UniqueConstraintMutableBuilder[Self <: UniqueConstraint] (val x: Self) extends AnyVal {
+  extension [Self <: UniqueConstraint](x: Self) {
     
-    @scala.inline
-    def setForeignKey(value: ForeignKeyMetadata): Self = StObject.set(x, "foreignKey", value.asInstanceOf[js.Any])
+    inline def setForeignKey(value: ForeignKeyMetadata): Self = StObject.set(x, "foreignKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForeignKeyUndefined: Self = StObject.set(x, "foreignKey", js.undefined)
+    inline def setForeignKeyUndefined: Self = StObject.set(x, "foreignKey", js.undefined)
     
-    @scala.inline
-    def setUniqueConstraint(value: UniqueMetadata): Self = StObject.set(x, "uniqueConstraint", value.asInstanceOf[js.Any])
+    inline def setUniqueConstraint(value: UniqueMetadata): Self = StObject.set(x, "uniqueConstraint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUniqueConstraintUndefined: Self = StObject.set(x, "uniqueConstraint", js.undefined)
+    inline def setUniqueConstraintUndefined: Self = StObject.set(x, "uniqueConstraint", js.undefined)
   }
 }

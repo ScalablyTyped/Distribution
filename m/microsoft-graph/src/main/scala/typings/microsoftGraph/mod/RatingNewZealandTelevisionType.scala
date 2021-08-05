@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RatingNewZealandTelevisionType extends StObject
 object RatingNewZealandTelevisionType {
   
-  @scala.inline
-  def adults: typings.microsoftGraph.microsoftGraphStrings.adults = "adults".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.adults]
+  inline def adults: typings.microsoftGraph.microsoftGraphStrings.adults = "adults".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.adults]
   
-  @scala.inline
-  def allAllowed: typings.microsoftGraph.microsoftGraphStrings.allAllowed = "allAllowed".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allAllowed]
+  inline def allAllowed: typings.microsoftGraph.microsoftGraphStrings.allAllowed = "allAllowed".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allAllowed]
   
-  @scala.inline
-  def allBlocked: typings.microsoftGraph.microsoftGraphStrings.allBlocked = "allBlocked".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allBlocked]
+  inline def allBlocked: typings.microsoftGraph.microsoftGraphStrings.allBlocked = "allBlocked".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allBlocked]
   
-  @scala.inline
-  def general: typings.microsoftGraph.microsoftGraphStrings.general = "general".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.general]
+  inline def general: typings.microsoftGraph.microsoftGraphStrings.general = "general".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.general]
   
-  @scala.inline
-  def parentalGuidance: typings.microsoftGraph.microsoftGraphStrings.parentalGuidance = "parentalGuidance".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.parentalGuidance]
+  inline def parentalGuidance: typings.microsoftGraph.microsoftGraphStrings.parentalGuidance = "parentalGuidance".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.parentalGuidance]
 }

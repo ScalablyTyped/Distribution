@@ -20,7 +20,7 @@ trait Player extends StObject {
   
   def Play(): Unit
   
-  @JSName("PowerPoint.Player_typekey")
+  /* private */ @JSName("PowerPoint.Player_typekey")
   var PowerPointDotPlayer_typekey: Player
   
   val State: PpPlayerState
@@ -29,8 +29,7 @@ trait Player extends StObject {
 }
 object Player {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     CurrentPosition: Double,
     GoToNextBookmark: () => Unit,
@@ -47,37 +46,26 @@ object Player {
     __obj.asInstanceOf[Player]
   }
   
-  @scala.inline
-  implicit class PlayerMutableBuilder[Self <: Player] (val x: Self) extends AnyVal {
+  extension [Self <: Player](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentPosition(value: Double): Self = StObject.set(x, "CurrentPosition", value.asInstanceOf[js.Any])
+    inline def setCurrentPosition(value: Double): Self = StObject.set(x, "CurrentPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoToNextBookmark(value: () => Unit): Self = StObject.set(x, "GoToNextBookmark", js.Any.fromFunction0(value))
+    inline def setGoToNextBookmark(value: () => Unit): Self = StObject.set(x, "GoToNextBookmark", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGoToPreviousBookmark(value: () => Unit): Self = StObject.set(x, "GoToPreviousBookmark", js.Any.fromFunction0(value))
+    inline def setGoToPreviousBookmark(value: () => Unit): Self = StObject.set(x, "GoToPreviousBookmark", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPause(value: () => Unit): Self = StObject.set(x, "Pause", js.Any.fromFunction0(value))
+    inline def setPause(value: () => Unit): Self = StObject.set(x, "Pause", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPlay(value: () => Unit): Self = StObject.set(x, "Play", js.Any.fromFunction0(value))
+    inline def setPlay(value: () => Unit): Self = StObject.set(x, "Play", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPowerPointDotPlayer_typekey(value: Player): Self = StObject.set(x, "PowerPoint.Player_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotPlayer_typekey(value: Player): Self = StObject.set(x, "PowerPoint.Player_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: PpPlayerState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: PpPlayerState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStop(value: () => Unit): Self = StObject.set(x, "Stop", js.Any.fromFunction0(value))
+    inline def setStop(value: () => Unit): Self = StObject.set(x, "Stop", js.Any.fromFunction0(value))
   }
 }

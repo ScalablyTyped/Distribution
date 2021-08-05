@@ -28,37 +28,27 @@ trait EventTypeSummary extends StObject {
 }
 object EventTypeSummary {
   
-  @scala.inline
-  def apply(): EventTypeSummary = {
+  inline def apply(): EventTypeSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventTypeSummary]
   }
   
-  @scala.inline
-  implicit class EventTypeSummaryMutableBuilder[Self <: EventTypeSummary] (val x: Self) extends AnyVal {
+  extension [Self <: EventTypeSummary](x: Self) {
     
-    @scala.inline
-    def setEventTypeId(value: EventTypeId): Self = StObject.set(x, "EventTypeId", value.asInstanceOf[js.Any])
+    inline def setEventTypeId(value: EventTypeId): Self = StObject.set(x, "EventTypeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTypeIdUndefined: Self = StObject.set(x, "EventTypeId", js.undefined)
+    inline def setEventTypeIdUndefined: Self = StObject.set(x, "EventTypeId", js.undefined)
     
-    @scala.inline
-    def setEventTypeName(value: EventTypeName): Self = StObject.set(x, "EventTypeName", value.asInstanceOf[js.Any])
+    inline def setEventTypeName(value: EventTypeName): Self = StObject.set(x, "EventTypeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTypeNameUndefined: Self = StObject.set(x, "EventTypeName", js.undefined)
+    inline def setEventTypeNameUndefined: Self = StObject.set(x, "EventTypeName", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
     
-    @scala.inline
-    def setServiceName(value: ServiceName): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: ServiceName): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNameUndefined: Self = StObject.set(x, "ServiceName", js.undefined)
+    inline def setServiceNameUndefined: Self = StObject.set(x, "ServiceName", js.undefined)
   }
 }

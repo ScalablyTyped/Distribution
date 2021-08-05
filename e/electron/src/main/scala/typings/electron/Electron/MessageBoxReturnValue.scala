@@ -18,19 +18,15 @@ trait MessageBoxReturnValue extends StObject {
 }
 object MessageBoxReturnValue {
   
-  @scala.inline
-  def apply(checkboxChecked: Boolean, response: Double): MessageBoxReturnValue = {
+  inline def apply(checkboxChecked: Boolean, response: Double): MessageBoxReturnValue = {
     val __obj = js.Dynamic.literal(checkboxChecked = checkboxChecked.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageBoxReturnValue]
   }
   
-  @scala.inline
-  implicit class MessageBoxReturnValueMutableBuilder[Self <: MessageBoxReturnValue] (val x: Self) extends AnyVal {
+  extension [Self <: MessageBoxReturnValue](x: Self) {
     
-    @scala.inline
-    def setCheckboxChecked(value: Boolean): Self = StObject.set(x, "checkboxChecked", value.asInstanceOf[js.Any])
+    inline def setCheckboxChecked(value: Boolean): Self = StObject.set(x, "checkboxChecked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: Double): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: Double): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

@@ -19,31 +19,23 @@ trait AnimateOptions
 }
 object AnimateOptions {
   
-  @scala.inline
-  def apply(): AnimateOptions = {
+  inline def apply(): AnimateOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnimateOptions]
   }
   
-  @scala.inline
-  implicit class AnimateOptionsMutableBuilder[Self <: AnimateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnimateOptions](x: Self) {
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    @scala.inline
-    def setQueue(value: Boolean): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+    inline def setQueue(value: Boolean): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
+    inline def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
     
-    @scala.inline
-    def setStep(value: () => Unit): Self = StObject.set(x, "step", js.Any.fromFunction0(value))
+    inline def setStep(value: () => Unit): Self = StObject.set(x, "step", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait DeleteConfigurationAggregatorRequest extends StObject {
 }
 object DeleteConfigurationAggregatorRequest {
   
-  @scala.inline
-  def apply(ConfigurationAggregatorName: ConfigurationAggregatorName): DeleteConfigurationAggregatorRequest = {
+  inline def apply(ConfigurationAggregatorName: ConfigurationAggregatorName): DeleteConfigurationAggregatorRequest = {
     val __obj = js.Dynamic.literal(ConfigurationAggregatorName = ConfigurationAggregatorName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteConfigurationAggregatorRequest]
   }
   
-  @scala.inline
-  implicit class DeleteConfigurationAggregatorRequestMutableBuilder[Self <: DeleteConfigurationAggregatorRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteConfigurationAggregatorRequest](x: Self) {
     
-    @scala.inline
-    def setConfigurationAggregatorName(value: ConfigurationAggregatorName): Self = StObject.set(x, "ConfigurationAggregatorName", value.asInstanceOf[js.Any])
+    inline def setConfigurationAggregatorName(value: ConfigurationAggregatorName): Self = StObject.set(x, "ConfigurationAggregatorName", value.asInstanceOf[js.Any])
   }
 }

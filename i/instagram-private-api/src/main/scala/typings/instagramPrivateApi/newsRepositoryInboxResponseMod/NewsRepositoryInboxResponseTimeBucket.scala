@@ -12,25 +12,19 @@ trait NewsRepositoryInboxResponseTimeBucket extends StObject {
 }
 object NewsRepositoryInboxResponseTimeBucket {
   
-  @scala.inline
-  def apply(headers: js.Array[String], indices: js.Array[Double]): NewsRepositoryInboxResponseTimeBucket = {
+  inline def apply(headers: js.Array[String], indices: js.Array[Double]): NewsRepositoryInboxResponseTimeBucket = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], indices = indices.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewsRepositoryInboxResponseTimeBucket]
   }
   
-  @scala.inline
-  implicit class NewsRepositoryInboxResponseTimeBucketMutableBuilder[Self <: NewsRepositoryInboxResponseTimeBucket] (val x: Self) extends AnyVal {
+  extension [Self <: NewsRepositoryInboxResponseTimeBucket](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Array[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value :_*))
+    inline def setHeadersVarargs(value: String*): Self = StObject.set(x, "headers", js.Array(value :_*))
     
-    @scala.inline
-    def setIndices(value: js.Array[Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+    inline def setIndices(value: js.Array[Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value :_*))
+    inline def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value :_*))
   }
 }

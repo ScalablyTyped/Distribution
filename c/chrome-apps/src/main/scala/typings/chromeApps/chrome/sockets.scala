@@ -46,17 +46,14 @@ object sockets {
   }
   object CreateInfo {
     
-    @scala.inline
-    def apply(socketId: integer): CreateInfo = {
+    inline def apply(socketId: integer): CreateInfo = {
       val __obj = js.Dynamic.literal(socketId = socketId.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateInfo]
     }
     
-    @scala.inline
-    implicit class CreateInfoMutableBuilder[Self <: CreateInfo] (val x: Self) extends AnyVal {
+    extension [Self <: CreateInfo](x: Self) {
       
-      @scala.inline
-      def setSocketId(value: integer): Self = StObject.set(x, "socketId", value.asInstanceOf[js.Any])
+      inline def setSocketId(value: integer): Self = StObject.set(x, "socketId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -70,20 +67,16 @@ object sockets {
   }
   object ReceiveErrorEventArgs {
     
-    @scala.inline
-    def apply(resultCode: integer, socketId: integer): ReceiveErrorEventArgs = {
+    inline def apply(resultCode: integer, socketId: integer): ReceiveErrorEventArgs = {
       val __obj = js.Dynamic.literal(resultCode = resultCode.asInstanceOf[js.Any], socketId = socketId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReceiveErrorEventArgs]
     }
     
-    @scala.inline
-    implicit class ReceiveErrorEventArgsMutableBuilder[Self <: ReceiveErrorEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ReceiveErrorEventArgs](x: Self) {
       
-      @scala.inline
-      def setResultCode(value: integer): Self = StObject.set(x, "resultCode", value.asInstanceOf[js.Any])
+      inline def setResultCode(value: integer): Self = StObject.set(x, "resultCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocketId(value: integer): Self = StObject.set(x, "socketId", value.asInstanceOf[js.Any])
+      inline def setSocketId(value: integer): Self = StObject.set(x, "socketId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -97,20 +90,16 @@ object sockets {
   }
   object ReceiveEventArgs {
     
-    @scala.inline
-    def apply(data: ArrayBuffer, socketId: integer): ReceiveEventArgs = {
+    inline def apply(data: ArrayBuffer, socketId: integer): ReceiveEventArgs = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], socketId = socketId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReceiveEventArgs]
     }
     
-    @scala.inline
-    implicit class ReceiveEventArgsMutableBuilder[Self <: ReceiveEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ReceiveEventArgs](x: Self) {
       
-      @scala.inline
-      def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocketId(value: integer): Self = StObject.set(x, "socketId", value.asInstanceOf[js.Any])
+      inline def setSocketId(value: integer): Self = StObject.set(x, "socketId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -124,23 +113,18 @@ object sockets {
   }
   object SendInfo {
     
-    @scala.inline
-    def apply(resultCode: integer): SendInfo = {
+    inline def apply(resultCode: integer): SendInfo = {
       val __obj = js.Dynamic.literal(resultCode = resultCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[SendInfo]
     }
     
-    @scala.inline
-    implicit class SendInfoMutableBuilder[Self <: SendInfo] (val x: Self) extends AnyVal {
+    extension [Self <: SendInfo](x: Self) {
       
-      @scala.inline
-      def setBytesSent(value: integer): Self = StObject.set(x, "bytesSent", value.asInstanceOf[js.Any])
+      inline def setBytesSent(value: integer): Self = StObject.set(x, "bytesSent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBytesSentUndefined: Self = StObject.set(x, "bytesSent", js.undefined)
+      inline def setBytesSentUndefined: Self = StObject.set(x, "bytesSent", js.undefined)
       
-      @scala.inline
-      def setResultCode(value: integer): Self = StObject.set(x, "resultCode", value.asInstanceOf[js.Any])
+      inline def setResultCode(value: integer): Self = StObject.set(x, "resultCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -178,62 +162,44 @@ object sockets {
   }
   object SocketInfo {
     
-    @scala.inline
-    def apply(connected: Boolean, paused: Boolean, persistent: Boolean, socketId: integer): SocketInfo = {
+    inline def apply(connected: Boolean, paused: Boolean, persistent: Boolean, socketId: integer): SocketInfo = {
       val __obj = js.Dynamic.literal(connected = connected.asInstanceOf[js.Any], paused = paused.asInstanceOf[js.Any], persistent = persistent.asInstanceOf[js.Any], socketId = socketId.asInstanceOf[js.Any])
       __obj.asInstanceOf[SocketInfo]
     }
     
-    @scala.inline
-    implicit class SocketInfoMutableBuilder[Self <: SocketInfo] (val x: Self) extends AnyVal {
+    extension [Self <: SocketInfo](x: Self) {
       
-      @scala.inline
-      def setBufferSize(value: integer): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
+      inline def setBufferSize(value: integer): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBufferSizeUndefined: Self = StObject.set(x, "bufferSize", js.undefined)
+      inline def setBufferSizeUndefined: Self = StObject.set(x, "bufferSize", js.undefined)
       
-      @scala.inline
-      def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
+      inline def setConnected(value: Boolean): Self = StObject.set(x, "connected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
+      inline def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
+      inline def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
       
-      @scala.inline
-      def setLocalPort(value: integer): Self = StObject.set(x, "localPort", value.asInstanceOf[js.Any])
+      inline def setLocalPort(value: integer): Self = StObject.set(x, "localPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalPortUndefined: Self = StObject.set(x, "localPort", js.undefined)
+      inline def setLocalPortUndefined: Self = StObject.set(x, "localPort", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
+      inline def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeerAddress(value: String): Self = StObject.set(x, "peerAddress", value.asInstanceOf[js.Any])
+      inline def setPeerAddress(value: String): Self = StObject.set(x, "peerAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeerAddressUndefined: Self = StObject.set(x, "peerAddress", js.undefined)
+      inline def setPeerAddressUndefined: Self = StObject.set(x, "peerAddress", js.undefined)
       
-      @scala.inline
-      def setPeerPort(value: integer): Self = StObject.set(x, "peerPort", value.asInstanceOf[js.Any])
+      inline def setPeerPort(value: integer): Self = StObject.set(x, "peerPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeerPortUndefined: Self = StObject.set(x, "peerPort", js.undefined)
+      inline def setPeerPortUndefined: Self = StObject.set(x, "peerPort", js.undefined)
       
-      @scala.inline
-      def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
+      inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocketId(value: integer): Self = StObject.set(x, "socketId", value.asInstanceOf[js.Any])
+      inline def setSocketId(value: integer): Self = StObject.set(x, "socketId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -258,32 +224,24 @@ object sockets {
   }
   object SocketProperties {
     
-    @scala.inline
-    def apply(): SocketProperties = {
+    inline def apply(): SocketProperties = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SocketProperties]
     }
     
-    @scala.inline
-    implicit class SocketPropertiesMutableBuilder[Self <: SocketProperties] (val x: Self) extends AnyVal {
+    extension [Self <: SocketProperties](x: Self) {
       
-      @scala.inline
-      def setBufferSize(value: integer): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
+      inline def setBufferSize(value: integer): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBufferSizeUndefined: Self = StObject.set(x, "bufferSize", js.undefined)
+      inline def setBufferSizeUndefined: Self = StObject.set(x, "bufferSize", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
+      inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
+      inline def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
     }
   }
   
@@ -308,20 +266,16 @@ object sockets {
     }
     object SecureOptions {
       
-      @scala.inline
-      def apply(): SecureOptions = {
+      inline def apply(): SecureOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SecureOptions]
       }
       
-      @scala.inline
-      implicit class SecureOptionsMutableBuilder[Self <: SecureOptions] (val x: Self) extends AnyVal {
+      extension [Self <: SecureOptions](x: Self) {
         
-        @scala.inline
-        def setTlsVersion(value: Max): Self = StObject.set(x, "tlsVersion", value.asInstanceOf[js.Any])
+        inline def setTlsVersion(value: Max): Self = StObject.set(x, "tlsVersion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTlsVersionUndefined: Self = StObject.set(x, "tlsVersion", js.undefined)
+        inline def setTlsVersionUndefined: Self = StObject.set(x, "tlsVersion", js.undefined)
       }
     }
   }
@@ -369,41 +323,30 @@ object sockets {
     }
     object SocketInfo {
       
-      @scala.inline
-      def apply(paused: Boolean, persistent: Boolean, socketId: integer): typings.chromeApps.chrome.sockets.tcpServer.SocketInfo = {
+      inline def apply(paused: Boolean, persistent: Boolean, socketId: integer): typings.chromeApps.chrome.sockets.tcpServer.SocketInfo = {
         val __obj = js.Dynamic.literal(paused = paused.asInstanceOf[js.Any], persistent = persistent.asInstanceOf[js.Any], socketId = socketId.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.chromeApps.chrome.sockets.tcpServer.SocketInfo]
       }
       
-      @scala.inline
-      implicit class SocketInfoMutableBuilder[Self <: typings.chromeApps.chrome.sockets.tcpServer.SocketInfo] (val x: Self) extends AnyVal {
+      extension [Self <: typings.chromeApps.chrome.sockets.tcpServer.SocketInfo](x: Self) {
         
-        @scala.inline
-        def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
+        inline def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
+        inline def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
         
-        @scala.inline
-        def setLocalPort(value: integer): Self = StObject.set(x, "localPort", value.asInstanceOf[js.Any])
+        inline def setLocalPort(value: integer): Self = StObject.set(x, "localPort", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLocalPortUndefined: Self = StObject.set(x, "localPort", js.undefined)
+        inline def setLocalPortUndefined: Self = StObject.set(x, "localPort", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
+        inline def setPaused(value: Boolean): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
+        inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSocketId(value: integer): Self = StObject.set(x, "socketId", value.asInstanceOf[js.Any])
+        inline def setSocketId(value: integer): Self = StObject.set(x, "socketId", value.asInstanceOf[js.Any])
       }
     }
     
@@ -427,26 +370,20 @@ object sockets {
     }
     object SocketProperties {
       
-      @scala.inline
-      def apply(): typings.chromeApps.chrome.sockets.tcpServer.SocketProperties = {
+      inline def apply(): typings.chromeApps.chrome.sockets.tcpServer.SocketProperties = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[typings.chromeApps.chrome.sockets.tcpServer.SocketProperties]
       }
       
-      @scala.inline
-      implicit class SocketPropertiesMutableBuilder[Self <: typings.chromeApps.chrome.sockets.tcpServer.SocketProperties] (val x: Self) extends AnyVal {
+      extension [Self <: typings.chromeApps.chrome.sockets.tcpServer.SocketProperties](x: Self) {
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
+        inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
+        inline def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
       }
     }
   }

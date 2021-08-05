@@ -44,20 +44,16 @@ object indexEntryMod {
   }
   object IndexTime {
     
-    @scala.inline
-    def apply(nanoseconds: () => Double, seconds: () => Double): IndexTime = {
+    inline def apply(nanoseconds: () => Double, seconds: () => Double): IndexTime = {
       val __obj = js.Dynamic.literal(nanoseconds = js.Any.fromFunction0(nanoseconds), seconds = js.Any.fromFunction0(seconds))
       __obj.asInstanceOf[IndexTime]
     }
     
-    @scala.inline
-    implicit class IndexTimeMutableBuilder[Self <: IndexTime] (val x: Self) extends AnyVal {
+    extension [Self <: IndexTime](x: Self) {
       
-      @scala.inline
-      def setNanoseconds(value: () => Double): Self = StObject.set(x, "nanoseconds", js.Any.fromFunction0(value))
+      inline def setNanoseconds(value: () => Double): Self = StObject.set(x, "nanoseconds", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSeconds(value: () => Double): Self = StObject.set(x, "seconds", js.Any.fromFunction0(value))
+      inline def setSeconds(value: () => Double): Self = StObject.set(x, "seconds", js.Any.fromFunction0(value))
     }
   }
 }

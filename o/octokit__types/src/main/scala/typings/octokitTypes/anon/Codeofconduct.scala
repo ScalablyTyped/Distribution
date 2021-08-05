@@ -20,8 +20,7 @@ trait Codeofconduct extends StObject {
 }
 object Codeofconduct {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     code_of_conduct: HtmlurlKey,
     contributing: HtmlurlUrl,
     issue_template: HtmlurlUrl,
@@ -33,25 +32,18 @@ object Codeofconduct {
     __obj.asInstanceOf[Codeofconduct]
   }
   
-  @scala.inline
-  implicit class CodeofconductMutableBuilder[Self <: Codeofconduct] (val x: Self) extends AnyVal {
+  extension [Self <: Codeofconduct](x: Self) {
     
-    @scala.inline
-    def setCode_of_conduct(value: HtmlurlKey): Self = StObject.set(x, "code_of_conduct", value.asInstanceOf[js.Any])
+    inline def setCode_of_conduct(value: HtmlurlKey): Self = StObject.set(x, "code_of_conduct", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContributing(value: HtmlurlUrl): Self = StObject.set(x, "contributing", value.asInstanceOf[js.Any])
+    inline def setContributing(value: HtmlurlUrl): Self = StObject.set(x, "contributing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssue_template(value: HtmlurlUrl): Self = StObject.set(x, "issue_template", value.asInstanceOf[js.Any])
+    inline def setIssue_template(value: HtmlurlUrl): Self = StObject.set(x, "issue_template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicense(value: Spdxid): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
+    inline def setLicense(value: Spdxid): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPull_request_template(value: HtmlurlUrl): Self = StObject.set(x, "pull_request_template", value.asInstanceOf[js.Any])
+    inline def setPull_request_template(value: HtmlurlUrl): Self = StObject.set(x, "pull_request_template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadme(value: HtmlurlUrl): Self = StObject.set(x, "readme", value.asInstanceOf[js.Any])
+    inline def setReadme(value: HtmlurlUrl): Self = StObject.set(x, "readme", value.asInstanceOf[js.Any])
   }
 }

@@ -48,8 +48,7 @@ trait TrainingSpecification extends StObject {
 }
 object TrainingSpecification {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SupportedTrainingInstanceTypes: TrainingInstanceTypes,
     TrainingChannels: ChannelSpecifications,
     TrainingImage: ContainerImage
@@ -58,61 +57,42 @@ object TrainingSpecification {
     __obj.asInstanceOf[TrainingSpecification]
   }
   
-  @scala.inline
-  implicit class TrainingSpecificationMutableBuilder[Self <: TrainingSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: TrainingSpecification](x: Self) {
     
-    @scala.inline
-    def setMetricDefinitions(value: MetricDefinitionList): Self = StObject.set(x, "MetricDefinitions", value.asInstanceOf[js.Any])
+    inline def setMetricDefinitions(value: MetricDefinitionList): Self = StObject.set(x, "MetricDefinitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricDefinitionsUndefined: Self = StObject.set(x, "MetricDefinitions", js.undefined)
+    inline def setMetricDefinitionsUndefined: Self = StObject.set(x, "MetricDefinitions", js.undefined)
     
-    @scala.inline
-    def setMetricDefinitionsVarargs(value: MetricDefinition*): Self = StObject.set(x, "MetricDefinitions", js.Array(value :_*))
+    inline def setMetricDefinitionsVarargs(value: MetricDefinition*): Self = StObject.set(x, "MetricDefinitions", js.Array(value :_*))
     
-    @scala.inline
-    def setSupportedHyperParameters(value: HyperParameterSpecifications): Self = StObject.set(x, "SupportedHyperParameters", value.asInstanceOf[js.Any])
+    inline def setSupportedHyperParameters(value: HyperParameterSpecifications): Self = StObject.set(x, "SupportedHyperParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedHyperParametersUndefined: Self = StObject.set(x, "SupportedHyperParameters", js.undefined)
+    inline def setSupportedHyperParametersUndefined: Self = StObject.set(x, "SupportedHyperParameters", js.undefined)
     
-    @scala.inline
-    def setSupportedHyperParametersVarargs(value: HyperParameterSpecification*): Self = StObject.set(x, "SupportedHyperParameters", js.Array(value :_*))
+    inline def setSupportedHyperParametersVarargs(value: HyperParameterSpecification*): Self = StObject.set(x, "SupportedHyperParameters", js.Array(value :_*))
     
-    @scala.inline
-    def setSupportedTrainingInstanceTypes(value: TrainingInstanceTypes): Self = StObject.set(x, "SupportedTrainingInstanceTypes", value.asInstanceOf[js.Any])
+    inline def setSupportedTrainingInstanceTypes(value: TrainingInstanceTypes): Self = StObject.set(x, "SupportedTrainingInstanceTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedTrainingInstanceTypesVarargs(value: TrainingInstanceType*): Self = StObject.set(x, "SupportedTrainingInstanceTypes", js.Array(value :_*))
+    inline def setSupportedTrainingInstanceTypesVarargs(value: TrainingInstanceType*): Self = StObject.set(x, "SupportedTrainingInstanceTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setSupportedTuningJobObjectiveMetrics(value: HyperParameterTuningJobObjectives): Self = StObject.set(x, "SupportedTuningJobObjectiveMetrics", value.asInstanceOf[js.Any])
+    inline def setSupportedTuningJobObjectiveMetrics(value: HyperParameterTuningJobObjectives): Self = StObject.set(x, "SupportedTuningJobObjectiveMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedTuningJobObjectiveMetricsUndefined: Self = StObject.set(x, "SupportedTuningJobObjectiveMetrics", js.undefined)
+    inline def setSupportedTuningJobObjectiveMetricsUndefined: Self = StObject.set(x, "SupportedTuningJobObjectiveMetrics", js.undefined)
     
-    @scala.inline
-    def setSupportedTuningJobObjectiveMetricsVarargs(value: HyperParameterTuningJobObjective*): Self = StObject.set(x, "SupportedTuningJobObjectiveMetrics", js.Array(value :_*))
+    inline def setSupportedTuningJobObjectiveMetricsVarargs(value: HyperParameterTuningJobObjective*): Self = StObject.set(x, "SupportedTuningJobObjectiveMetrics", js.Array(value :_*))
     
-    @scala.inline
-    def setSupportsDistributedTraining(value: Boolean): Self = StObject.set(x, "SupportsDistributedTraining", value.asInstanceOf[js.Any])
+    inline def setSupportsDistributedTraining(value: Boolean): Self = StObject.set(x, "SupportsDistributedTraining", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsDistributedTrainingUndefined: Self = StObject.set(x, "SupportsDistributedTraining", js.undefined)
+    inline def setSupportsDistributedTrainingUndefined: Self = StObject.set(x, "SupportsDistributedTraining", js.undefined)
     
-    @scala.inline
-    def setTrainingChannels(value: ChannelSpecifications): Self = StObject.set(x, "TrainingChannels", value.asInstanceOf[js.Any])
+    inline def setTrainingChannels(value: ChannelSpecifications): Self = StObject.set(x, "TrainingChannels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrainingChannelsVarargs(value: ChannelSpecification*): Self = StObject.set(x, "TrainingChannels", js.Array(value :_*))
+    inline def setTrainingChannelsVarargs(value: ChannelSpecification*): Self = StObject.set(x, "TrainingChannels", js.Array(value :_*))
     
-    @scala.inline
-    def setTrainingImage(value: ContainerImage): Self = StObject.set(x, "TrainingImage", value.asInstanceOf[js.Any])
+    inline def setTrainingImage(value: ContainerImage): Self = StObject.set(x, "TrainingImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrainingImageDigest(value: ImageDigest): Self = StObject.set(x, "TrainingImageDigest", value.asInstanceOf[js.Any])
+    inline def setTrainingImageDigest(value: ImageDigest): Self = StObject.set(x, "TrainingImageDigest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrainingImageDigestUndefined: Self = StObject.set(x, "TrainingImageDigest", js.undefined)
+    inline def setTrainingImageDigestUndefined: Self = StObject.set(x, "TrainingImageDigest", js.undefined)
   }
 }

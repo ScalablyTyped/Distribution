@@ -18,31 +18,23 @@ trait UpdateActionResultsMessage extends StObject {
 }
 object UpdateActionResultsMessage {
   
-  @scala.inline
-  def apply(): UpdateActionResultsMessage = {
+  inline def apply(): UpdateActionResultsMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateActionResultsMessage]
   }
   
-  @scala.inline
-  implicit class UpdateActionResultsMessageMutableBuilder[Self <: UpdateActionResultsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateActionResultsMessage](x: Self) {
     
-    @scala.inline
-    def setProcessedUpdateActions(value: ProcessedUpdateActionList): Self = StObject.set(x, "ProcessedUpdateActions", value.asInstanceOf[js.Any])
+    inline def setProcessedUpdateActions(value: ProcessedUpdateActionList): Self = StObject.set(x, "ProcessedUpdateActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessedUpdateActionsUndefined: Self = StObject.set(x, "ProcessedUpdateActions", js.undefined)
+    inline def setProcessedUpdateActionsUndefined: Self = StObject.set(x, "ProcessedUpdateActions", js.undefined)
     
-    @scala.inline
-    def setProcessedUpdateActionsVarargs(value: ProcessedUpdateAction*): Self = StObject.set(x, "ProcessedUpdateActions", js.Array(value :_*))
+    inline def setProcessedUpdateActionsVarargs(value: ProcessedUpdateAction*): Self = StObject.set(x, "ProcessedUpdateActions", js.Array(value :_*))
     
-    @scala.inline
-    def setUnprocessedUpdateActions(value: UnprocessedUpdateActionList): Self = StObject.set(x, "UnprocessedUpdateActions", value.asInstanceOf[js.Any])
+    inline def setUnprocessedUpdateActions(value: UnprocessedUpdateActionList): Self = StObject.set(x, "UnprocessedUpdateActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnprocessedUpdateActionsUndefined: Self = StObject.set(x, "UnprocessedUpdateActions", js.undefined)
+    inline def setUnprocessedUpdateActionsUndefined: Self = StObject.set(x, "UnprocessedUpdateActions", js.undefined)
     
-    @scala.inline
-    def setUnprocessedUpdateActionsVarargs(value: UnprocessedUpdateAction*): Self = StObject.set(x, "UnprocessedUpdateActions", js.Array(value :_*))
+    inline def setUnprocessedUpdateActionsVarargs(value: UnprocessedUpdateAction*): Self = StObject.set(x, "UnprocessedUpdateActions", js.Array(value :_*))
   }
 }

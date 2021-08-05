@@ -13,7 +13,7 @@ object githubRefMod {
   class GitHubRef protected ()
     extends StObject
        with OptionsOrRef {
-    protected def this(options: OptionsOrRef) = this()
+    /* protected */ def this(options: OptionsOrRef) = this()
     
     def getAllPagesAsync[T](uri: String): js.Promise[js.Array[T] | Null] = js.native
     
@@ -21,7 +21,7 @@ object githubRefMod {
     
     def getPreviewAsync[T](uri: String): js.Promise[Response[T] | Null] = js.native
     
-    val options: Options = js.native
+    /* protected */ val options: Options = js.native
   }
   
   /* Rewritten from type alias, can be one of: 

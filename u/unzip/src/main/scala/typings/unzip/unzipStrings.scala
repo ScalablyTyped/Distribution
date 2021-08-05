@@ -8,11 +8,9 @@ object unzipStrings {
   
   @js.native
   sealed trait Directory extends StObject
-  @scala.inline
-  def Directory: Directory = "Directory".asInstanceOf[Directory]
+  inline def Directory: Directory = "Directory".asInstanceOf[Directory]
   
   @js.native
   sealed trait File extends StObject
-  @scala.inline
-  def File: File = "File".asInstanceOf[File]
+  inline def File: File = "File".asInstanceOf[File]
 }

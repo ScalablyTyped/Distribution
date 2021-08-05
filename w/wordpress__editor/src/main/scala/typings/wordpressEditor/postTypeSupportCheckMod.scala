@@ -32,26 +32,20 @@ object postTypeSupportCheckMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(supportKeys: String | js.Array[String]): Props = {
+      inline def apply(supportKeys: String | js.Array[String]): Props = {
         val __obj = js.Dynamic.literal(supportKeys = supportKeys.asInstanceOf[js.Any])
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+        inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+        inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
         
-        @scala.inline
-        def setSupportKeys(value: String | js.Array[String]): Self = StObject.set(x, "supportKeys", value.asInstanceOf[js.Any])
+        inline def setSupportKeys(value: String | js.Array[String]): Self = StObject.set(x, "supportKeys", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSupportKeysVarargs(value: String*): Self = StObject.set(x, "supportKeys", js.Array(value :_*))
+        inline def setSupportKeysVarargs(value: String*): Self = StObject.set(x, "supportKeys", js.Array(value :_*))
       }
     }
   }

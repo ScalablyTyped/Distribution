@@ -12,19 +12,15 @@ trait LineSeriesCanvasProps
 }
 object LineSeriesCanvasProps {
   
-  @scala.inline
-  def apply(): LineSeriesCanvasProps = {
+  inline def apply(): LineSeriesCanvasProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LineSeriesCanvasProps]
   }
   
-  @scala.inline
-  implicit class LineSeriesCanvasPropsMutableBuilder[Self <: LineSeriesCanvasProps] (val x: Self) extends AnyVal {
+  extension [Self <: LineSeriesCanvasProps](x: Self) {
     
-    @scala.inline
-    def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+    inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+    inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
   }
 }

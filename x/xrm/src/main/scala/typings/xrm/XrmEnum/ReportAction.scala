@@ -17,9 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ReportAction extends StObject
 object ReportAction {
   
-  @scala.inline
-  def Filter: filter = "filter".asInstanceOf[filter]
+  inline def Filter: filter = "filter".asInstanceOf[filter]
   
-  @scala.inline
-  def Run: run = "run".asInstanceOf[run]
+  inline def Run: run = "run".asInstanceOf[run]
 }

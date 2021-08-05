@@ -12,6 +12,5 @@ object shimmerCircleStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(props: IShimmerCircleStyleProps): IShimmerCircleStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IShimmerCircleStyles]
+  inline def getStyles(props: IShimmerCircleStyleProps): IShimmerCircleStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IShimmerCircleStyles]
 }

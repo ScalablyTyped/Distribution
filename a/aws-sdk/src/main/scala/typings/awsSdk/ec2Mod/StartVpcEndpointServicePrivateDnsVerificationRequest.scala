@@ -18,22 +18,17 @@ trait StartVpcEndpointServicePrivateDnsVerificationRequest extends StObject {
 }
 object StartVpcEndpointServicePrivateDnsVerificationRequest {
   
-  @scala.inline
-  def apply(ServiceId: VpcEndpointServiceId): StartVpcEndpointServicePrivateDnsVerificationRequest = {
+  inline def apply(ServiceId: VpcEndpointServiceId): StartVpcEndpointServicePrivateDnsVerificationRequest = {
     val __obj = js.Dynamic.literal(ServiceId = ServiceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartVpcEndpointServicePrivateDnsVerificationRequest]
   }
   
-  @scala.inline
-  implicit class StartVpcEndpointServicePrivateDnsVerificationRequestMutableBuilder[Self <: StartVpcEndpointServicePrivateDnsVerificationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StartVpcEndpointServicePrivateDnsVerificationRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setServiceId(value: VpcEndpointServiceId): Self = StObject.set(x, "ServiceId", value.asInstanceOf[js.Any])
+    inline def setServiceId(value: VpcEndpointServiceId): Self = StObject.set(x, "ServiceId", value.asInstanceOf[js.Any])
   }
 }

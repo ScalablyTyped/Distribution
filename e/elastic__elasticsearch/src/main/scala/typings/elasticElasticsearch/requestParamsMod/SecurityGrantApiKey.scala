@@ -15,22 +15,17 @@ trait SecurityGrantApiKey[T]
 }
 object SecurityGrantApiKey {
   
-  @scala.inline
-  def apply[T](body: T): SecurityGrantApiKey[T] = {
+  inline def apply[T](body: T): SecurityGrantApiKey[T] = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecurityGrantApiKey[T]]
   }
   
-  @scala.inline
-  implicit class SecurityGrantApiKeyMutableBuilder[Self <: SecurityGrantApiKey[?], T] (val x: Self & SecurityGrantApiKey[T]) extends AnyVal {
+  extension [Self <: SecurityGrantApiKey[?], T](x: Self & SecurityGrantApiKey[T]) {
     
-    @scala.inline
-    def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefresh(value: wait_for | Boolean): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
+    inline def setRefresh(value: wait_for | Boolean): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
+    inline def setRefreshUndefined: Self = StObject.set(x, "refresh", js.undefined)
   }
 }

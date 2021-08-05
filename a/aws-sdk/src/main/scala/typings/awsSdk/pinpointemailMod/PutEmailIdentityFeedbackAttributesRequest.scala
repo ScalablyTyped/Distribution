@@ -18,22 +18,17 @@ trait PutEmailIdentityFeedbackAttributesRequest extends StObject {
 }
 object PutEmailIdentityFeedbackAttributesRequest {
   
-  @scala.inline
-  def apply(EmailIdentity: Identity): PutEmailIdentityFeedbackAttributesRequest = {
+  inline def apply(EmailIdentity: Identity): PutEmailIdentityFeedbackAttributesRequest = {
     val __obj = js.Dynamic.literal(EmailIdentity = EmailIdentity.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutEmailIdentityFeedbackAttributesRequest]
   }
   
-  @scala.inline
-  implicit class PutEmailIdentityFeedbackAttributesRequestMutableBuilder[Self <: PutEmailIdentityFeedbackAttributesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutEmailIdentityFeedbackAttributesRequest](x: Self) {
     
-    @scala.inline
-    def setEmailForwardingEnabled(value: Enabled): Self = StObject.set(x, "EmailForwardingEnabled", value.asInstanceOf[js.Any])
+    inline def setEmailForwardingEnabled(value: Enabled): Self = StObject.set(x, "EmailForwardingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailForwardingEnabledUndefined: Self = StObject.set(x, "EmailForwardingEnabled", js.undefined)
+    inline def setEmailForwardingEnabledUndefined: Self = StObject.set(x, "EmailForwardingEnabled", js.undefined)
     
-    @scala.inline
-    def setEmailIdentity(value: Identity): Self = StObject.set(x, "EmailIdentity", value.asInstanceOf[js.Any])
+    inline def setEmailIdentity(value: Identity): Self = StObject.set(x, "EmailIdentity", value.asInstanceOf[js.Any])
   }
 }

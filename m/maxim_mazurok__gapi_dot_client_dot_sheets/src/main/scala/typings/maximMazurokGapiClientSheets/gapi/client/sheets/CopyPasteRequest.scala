@@ -23,37 +23,27 @@ trait CopyPasteRequest extends StObject {
 }
 object CopyPasteRequest {
   
-  @scala.inline
-  def apply(): CopyPasteRequest = {
+  inline def apply(): CopyPasteRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CopyPasteRequest]
   }
   
-  @scala.inline
-  implicit class CopyPasteRequestMutableBuilder[Self <: CopyPasteRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CopyPasteRequest](x: Self) {
     
-    @scala.inline
-    def setDestination(value: GridRange): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: GridRange): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+    inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
-    @scala.inline
-    def setPasteOrientation(value: String): Self = StObject.set(x, "pasteOrientation", value.asInstanceOf[js.Any])
+    inline def setPasteOrientation(value: String): Self = StObject.set(x, "pasteOrientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasteOrientationUndefined: Self = StObject.set(x, "pasteOrientation", js.undefined)
+    inline def setPasteOrientationUndefined: Self = StObject.set(x, "pasteOrientation", js.undefined)
     
-    @scala.inline
-    def setPasteType(value: String): Self = StObject.set(x, "pasteType", value.asInstanceOf[js.Any])
+    inline def setPasteType(value: String): Self = StObject.set(x, "pasteType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasteTypeUndefined: Self = StObject.set(x, "pasteType", js.undefined)
+    inline def setPasteTypeUndefined: Self = StObject.set(x, "pasteType", js.undefined)
     
-    @scala.inline
-    def setSource(value: GridRange): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: GridRange): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

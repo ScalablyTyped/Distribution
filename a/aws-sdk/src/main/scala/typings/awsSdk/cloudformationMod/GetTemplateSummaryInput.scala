@@ -28,37 +28,27 @@ trait GetTemplateSummaryInput extends StObject {
 }
 object GetTemplateSummaryInput {
   
-  @scala.inline
-  def apply(): GetTemplateSummaryInput = {
+  inline def apply(): GetTemplateSummaryInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetTemplateSummaryInput]
   }
   
-  @scala.inline
-  implicit class GetTemplateSummaryInputMutableBuilder[Self <: GetTemplateSummaryInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetTemplateSummaryInput](x: Self) {
     
-    @scala.inline
-    def setStackName(value: StackNameOrId): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
+    inline def setStackName(value: StackNameOrId): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackNameUndefined: Self = StObject.set(x, "StackName", js.undefined)
+    inline def setStackNameUndefined: Self = StObject.set(x, "StackName", js.undefined)
     
-    @scala.inline
-    def setStackSetName(value: StackSetNameOrId): Self = StObject.set(x, "StackSetName", value.asInstanceOf[js.Any])
+    inline def setStackSetName(value: StackSetNameOrId): Self = StObject.set(x, "StackSetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackSetNameUndefined: Self = StObject.set(x, "StackSetName", js.undefined)
+    inline def setStackSetNameUndefined: Self = StObject.set(x, "StackSetName", js.undefined)
     
-    @scala.inline
-    def setTemplateBody(value: TemplateBody): Self = StObject.set(x, "TemplateBody", value.asInstanceOf[js.Any])
+    inline def setTemplateBody(value: TemplateBody): Self = StObject.set(x, "TemplateBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateBodyUndefined: Self = StObject.set(x, "TemplateBody", js.undefined)
+    inline def setTemplateBodyUndefined: Self = StObject.set(x, "TemplateBody", js.undefined)
     
-    @scala.inline
-    def setTemplateURL(value: TemplateURL): Self = StObject.set(x, "TemplateURL", value.asInstanceOf[js.Any])
+    inline def setTemplateURL(value: TemplateURL): Self = StObject.set(x, "TemplateURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateURLUndefined: Self = StObject.set(x, "TemplateURL", js.undefined)
+    inline def setTemplateURLUndefined: Self = StObject.set(x, "TemplateURL", js.undefined)
   }
 }

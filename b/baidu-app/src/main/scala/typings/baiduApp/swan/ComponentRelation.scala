@@ -27,41 +27,30 @@ trait ComponentRelation[D, P] extends StObject {
 }
 object ComponentRelation {
   
-  @scala.inline
-  def apply[D, P](`type`: parent | child | ancestor | descendant): ComponentRelation[D, P] = {
+  inline def apply[D, P](`type`: parent | child | ancestor | descendant): ComponentRelation[D, P] = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentRelation[D, P]]
   }
   
-  @scala.inline
-  implicit class ComponentRelationMutableBuilder[Self <: ComponentRelation[?, ?], D, P] (val x: Self & (ComponentRelation[D, P])) extends AnyVal {
+  extension [Self <: ComponentRelation[?, ?], D, P](x: Self & (ComponentRelation[D, P])) {
     
-    @scala.inline
-    def setLinkChanged(value: /* target */ Component[D, P] => Unit): Self = StObject.set(x, "linkChanged", js.Any.fromFunction1(value))
+    inline def setLinkChanged(value: /* target */ Component[D, P] => Unit): Self = StObject.set(x, "linkChanged", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLinkChangedUndefined: Self = StObject.set(x, "linkChanged", js.undefined)
+    inline def setLinkChangedUndefined: Self = StObject.set(x, "linkChanged", js.undefined)
     
-    @scala.inline
-    def setLinked(value: /* target */ Component[D, P] => Unit): Self = StObject.set(x, "linked", js.Any.fromFunction1(value))
+    inline def setLinked(value: /* target */ Component[D, P] => Unit): Self = StObject.set(x, "linked", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLinkedUndefined: Self = StObject.set(x, "linked", js.undefined)
+    inline def setLinkedUndefined: Self = StObject.set(x, "linked", js.undefined)
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    @scala.inline
-    def setType(value: parent | child | ancestor | descendant): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: parent | child | ancestor | descendant): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnlinked(value: /* target */ Component[D, P] => Unit): Self = StObject.set(x, "unlinked", js.Any.fromFunction1(value))
+    inline def setUnlinked(value: /* target */ Component[D, P] => Unit): Self = StObject.set(x, "unlinked", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnlinkedUndefined: Self = StObject.set(x, "unlinked", js.undefined)
+    inline def setUnlinkedUndefined: Self = StObject.set(x, "unlinked", js.undefined)
   }
 }

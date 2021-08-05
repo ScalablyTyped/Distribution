@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.HangulHanjaConversionDictionaries")
 @js.native
-class HangulHanjaConversionDictionaries protected ()
+/* private */ class HangulHanjaConversionDictionaries ()
   extends StObject
      with typings.activexWord.Word.HangulHanjaConversionDictionaries {
   
@@ -40,7 +40,7 @@ class HangulHanjaConversionDictionaries protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.HangulHanjaConversionDictionaries_typekey")
   var WordDotHangulHanjaConversionDictionaries_typekey: typings.activexWord.Word.HangulHanjaConversionDictionaries = js.native
 }

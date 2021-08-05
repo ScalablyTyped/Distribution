@@ -12,20 +12,16 @@ trait Node2 extends StObject {
 }
 object Node2 {
   
-  @scala.inline
-  def apply(loc: SourceLocation, `type`: NodeTypes): Node2 = {
+  inline def apply(loc: SourceLocation, `type`: NodeTypes): Node2 = {
     val __obj = js.Dynamic.literal(loc = loc.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node2]
   }
   
-  @scala.inline
-  implicit class Node2MutableBuilder[Self <: Node2] (val x: Self) extends AnyVal {
+  extension [Self <: Node2](x: Self) {
     
-    @scala.inline
-    def setLoc(value: SourceLocation): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
+    inline def setLoc(value: SourceLocation): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: NodeTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NodeTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -10,19 +10,15 @@ trait MapControlsZoom extends StObject {
 }
 object MapControlsZoom {
   
-  @scala.inline
-  def apply(): MapControlsZoom = {
+  inline def apply(): MapControlsZoom = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapControlsZoom]
   }
   
-  @scala.inline
-  implicit class MapControlsZoomMutableBuilder[Self <: MapControlsZoom] (val x: Self) extends AnyVal {
+  extension [Self <: MapControlsZoom](x: Self) {
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

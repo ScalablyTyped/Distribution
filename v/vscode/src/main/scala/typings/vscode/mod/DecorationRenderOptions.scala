@@ -37,43 +37,31 @@ trait DecorationRenderOptions
 }
 object DecorationRenderOptions {
   
-  @scala.inline
-  def apply(): DecorationRenderOptions = {
+  inline def apply(): DecorationRenderOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DecorationRenderOptions]
   }
   
-  @scala.inline
-  implicit class DecorationRenderOptionsMutableBuilder[Self <: DecorationRenderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DecorationRenderOptions](x: Self) {
     
-    @scala.inline
-    def setDark(value: ThemableDecorationRenderOptions): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
+    inline def setDark(value: ThemableDecorationRenderOptions): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDarkUndefined: Self = StObject.set(x, "dark", js.undefined)
+    inline def setDarkUndefined: Self = StObject.set(x, "dark", js.undefined)
     
-    @scala.inline
-    def setIsWholeLine(value: Boolean): Self = StObject.set(x, "isWholeLine", value.asInstanceOf[js.Any])
+    inline def setIsWholeLine(value: Boolean): Self = StObject.set(x, "isWholeLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsWholeLineUndefined: Self = StObject.set(x, "isWholeLine", js.undefined)
+    inline def setIsWholeLineUndefined: Self = StObject.set(x, "isWholeLine", js.undefined)
     
-    @scala.inline
-    def setLight(value: ThemableDecorationRenderOptions): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
+    inline def setLight(value: ThemableDecorationRenderOptions): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLightUndefined: Self = StObject.set(x, "light", js.undefined)
+    inline def setLightUndefined: Self = StObject.set(x, "light", js.undefined)
     
-    @scala.inline
-    def setOverviewRulerLane(value: OverviewRulerLane): Self = StObject.set(x, "overviewRulerLane", value.asInstanceOf[js.Any])
+    inline def setOverviewRulerLane(value: OverviewRulerLane): Self = StObject.set(x, "overviewRulerLane", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverviewRulerLaneUndefined: Self = StObject.set(x, "overviewRulerLane", js.undefined)
+    inline def setOverviewRulerLaneUndefined: Self = StObject.set(x, "overviewRulerLane", js.undefined)
     
-    @scala.inline
-    def setRangeBehavior(value: DecorationRangeBehavior): Self = StObject.set(x, "rangeBehavior", value.asInstanceOf[js.Any])
+    inline def setRangeBehavior(value: DecorationRangeBehavior): Self = StObject.set(x, "rangeBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeBehaviorUndefined: Self = StObject.set(x, "rangeBehavior", js.undefined)
+    inline def setRangeBehaviorUndefined: Self = StObject.set(x, "rangeBehavior", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait ExecutionTrigger extends StObject {
 }
 object ExecutionTrigger {
   
-  @scala.inline
-  def apply(): ExecutionTrigger = {
+  inline def apply(): ExecutionTrigger = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExecutionTrigger]
   }
   
-  @scala.inline
-  implicit class ExecutionTriggerMutableBuilder[Self <: ExecutionTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: ExecutionTrigger](x: Self) {
     
-    @scala.inline
-    def setTriggerDetail(value: TriggerDetail): Self = StObject.set(x, "triggerDetail", value.asInstanceOf[js.Any])
+    inline def setTriggerDetail(value: TriggerDetail): Self = StObject.set(x, "triggerDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerDetailUndefined: Self = StObject.set(x, "triggerDetail", js.undefined)
+    inline def setTriggerDetailUndefined: Self = StObject.set(x, "triggerDetail", js.undefined)
     
-    @scala.inline
-    def setTriggerType(value: TriggerType): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
+    inline def setTriggerType(value: TriggerType): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerTypeUndefined: Self = StObject.set(x, "triggerType", js.undefined)
+    inline def setTriggerTypeUndefined: Self = StObject.set(x, "triggerType", js.undefined)
   }
 }

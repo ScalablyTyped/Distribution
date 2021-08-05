@@ -21,6 +21,5 @@ object ModalBase {
   @JSImport("office-ui-fabric-react", "ModalBase.defaultProps")
   @js.native
   def defaultProps: IModalProps = js.native
-  @scala.inline
-  def defaultProps_=(x: IModalProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: IModalProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

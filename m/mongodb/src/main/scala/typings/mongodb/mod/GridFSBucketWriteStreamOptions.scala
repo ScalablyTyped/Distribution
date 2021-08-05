@@ -25,31 +25,23 @@ trait GridFSBucketWriteStreamOptions
 }
 object GridFSBucketWriteStreamOptions {
   
-  @scala.inline
-  def apply(): GridFSBucketWriteStreamOptions = {
+  inline def apply(): GridFSBucketWriteStreamOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridFSBucketWriteStreamOptions]
   }
   
-  @scala.inline
-  implicit class GridFSBucketWriteStreamOptionsMutableBuilder[Self <: GridFSBucketWriteStreamOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GridFSBucketWriteStreamOptions](x: Self) {
     
-    @scala.inline
-    def setChunkSizeBytes(value: scala.Double): Self = StObject.set(x, "chunkSizeBytes", value.asInstanceOf[js.Any])
+    inline def setChunkSizeBytes(value: scala.Double): Self = StObject.set(x, "chunkSizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChunkSizeBytesUndefined: Self = StObject.set(x, "chunkSizeBytes", js.undefined)
+    inline def setChunkSizeBytesUndefined: Self = StObject.set(x, "chunkSizeBytes", js.undefined)
     
-    @scala.inline
-    def setDisableMD5(value: Boolean): Self = StObject.set(x, "disableMD5", value.asInstanceOf[js.Any])
+    inline def setDisableMD5(value: Boolean): Self = StObject.set(x, "disableMD5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableMD5Undefined: Self = StObject.set(x, "disableMD5", js.undefined)
+    inline def setDisableMD5Undefined: Self = StObject.set(x, "disableMD5", js.undefined)
     
-    @scala.inline
-    def setId(value: GridFSBucketWriteStreamId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: GridFSBucketWriteStreamId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

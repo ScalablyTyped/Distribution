@@ -23,22 +23,17 @@ trait ResetPasswordRequest extends StObject {
 }
 object ResetPasswordRequest {
   
-  @scala.inline
-  def apply(OrganizationId: OrganizationId, Password: Password, UserId: WorkMailIdentifier): ResetPasswordRequest = {
+  inline def apply(OrganizationId: OrganizationId, Password: Password, UserId: WorkMailIdentifier): ResetPasswordRequest = {
     val __obj = js.Dynamic.literal(OrganizationId = OrganizationId.asInstanceOf[js.Any], Password = Password.asInstanceOf[js.Any], UserId = UserId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResetPasswordRequest]
   }
   
-  @scala.inline
-  implicit class ResetPasswordRequestMutableBuilder[Self <: ResetPasswordRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ResetPasswordRequest](x: Self) {
     
-    @scala.inline
-    def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
+    inline def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassword(value: Password): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: Password): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserId(value: WorkMailIdentifier): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: WorkMailIdentifier): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
   }
 }

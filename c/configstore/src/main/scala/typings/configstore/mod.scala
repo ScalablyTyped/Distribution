@@ -83,26 +83,20 @@ object mod {
   }
   object ConfigstoreOptions {
     
-    @scala.inline
-    def apply(): ConfigstoreOptions = {
+    inline def apply(): ConfigstoreOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigstoreOptions]
     }
     
-    @scala.inline
-    implicit class ConfigstoreOptionsMutableBuilder[Self <: ConfigstoreOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigstoreOptions](x: Self) {
       
-      @scala.inline
-      def setConfigPath(value: String): Self = StObject.set(x, "configPath", value.asInstanceOf[js.Any])
+      inline def setConfigPath(value: String): Self = StObject.set(x, "configPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigPathUndefined: Self = StObject.set(x, "configPath", js.undefined)
+      inline def setConfigPathUndefined: Self = StObject.set(x, "configPath", js.undefined)
       
-      @scala.inline
-      def setGlobalConfigPath(value: Boolean): Self = StObject.set(x, "globalConfigPath", value.asInstanceOf[js.Any])
+      inline def setGlobalConfigPath(value: Boolean): Self = StObject.set(x, "globalConfigPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobalConfigPathUndefined: Self = StObject.set(x, "globalConfigPath", js.undefined)
+      inline def setGlobalConfigPathUndefined: Self = StObject.set(x, "globalConfigPath", js.undefined)
     }
   }
 }

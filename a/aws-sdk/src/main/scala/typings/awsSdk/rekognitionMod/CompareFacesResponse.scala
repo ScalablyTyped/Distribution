@@ -33,49 +33,35 @@ trait CompareFacesResponse extends StObject {
 }
 object CompareFacesResponse {
   
-  @scala.inline
-  def apply(): CompareFacesResponse = {
+  inline def apply(): CompareFacesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CompareFacesResponse]
   }
   
-  @scala.inline
-  implicit class CompareFacesResponseMutableBuilder[Self <: CompareFacesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CompareFacesResponse](x: Self) {
     
-    @scala.inline
-    def setFaceMatches(value: CompareFacesMatchList): Self = StObject.set(x, "FaceMatches", value.asInstanceOf[js.Any])
+    inline def setFaceMatches(value: CompareFacesMatchList): Self = StObject.set(x, "FaceMatches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaceMatchesUndefined: Self = StObject.set(x, "FaceMatches", js.undefined)
+    inline def setFaceMatchesUndefined: Self = StObject.set(x, "FaceMatches", js.undefined)
     
-    @scala.inline
-    def setFaceMatchesVarargs(value: CompareFacesMatch*): Self = StObject.set(x, "FaceMatches", js.Array(value :_*))
+    inline def setFaceMatchesVarargs(value: CompareFacesMatch*): Self = StObject.set(x, "FaceMatches", js.Array(value :_*))
     
-    @scala.inline
-    def setSourceImageFace(value: ComparedSourceImageFace): Self = StObject.set(x, "SourceImageFace", value.asInstanceOf[js.Any])
+    inline def setSourceImageFace(value: ComparedSourceImageFace): Self = StObject.set(x, "SourceImageFace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceImageFaceUndefined: Self = StObject.set(x, "SourceImageFace", js.undefined)
+    inline def setSourceImageFaceUndefined: Self = StObject.set(x, "SourceImageFace", js.undefined)
     
-    @scala.inline
-    def setSourceImageOrientationCorrection(value: OrientationCorrection): Self = StObject.set(x, "SourceImageOrientationCorrection", value.asInstanceOf[js.Any])
+    inline def setSourceImageOrientationCorrection(value: OrientationCorrection): Self = StObject.set(x, "SourceImageOrientationCorrection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceImageOrientationCorrectionUndefined: Self = StObject.set(x, "SourceImageOrientationCorrection", js.undefined)
+    inline def setSourceImageOrientationCorrectionUndefined: Self = StObject.set(x, "SourceImageOrientationCorrection", js.undefined)
     
-    @scala.inline
-    def setTargetImageOrientationCorrection(value: OrientationCorrection): Self = StObject.set(x, "TargetImageOrientationCorrection", value.asInstanceOf[js.Any])
+    inline def setTargetImageOrientationCorrection(value: OrientationCorrection): Self = StObject.set(x, "TargetImageOrientationCorrection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetImageOrientationCorrectionUndefined: Self = StObject.set(x, "TargetImageOrientationCorrection", js.undefined)
+    inline def setTargetImageOrientationCorrectionUndefined: Self = StObject.set(x, "TargetImageOrientationCorrection", js.undefined)
     
-    @scala.inline
-    def setUnmatchedFaces(value: CompareFacesUnmatchList): Self = StObject.set(x, "UnmatchedFaces", value.asInstanceOf[js.Any])
+    inline def setUnmatchedFaces(value: CompareFacesUnmatchList): Self = StObject.set(x, "UnmatchedFaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnmatchedFacesUndefined: Self = StObject.set(x, "UnmatchedFaces", js.undefined)
+    inline def setUnmatchedFacesUndefined: Self = StObject.set(x, "UnmatchedFaces", js.undefined)
     
-    @scala.inline
-    def setUnmatchedFacesVarargs(value: ComparedFace*): Self = StObject.set(x, "UnmatchedFaces", js.Array(value :_*))
+    inline def setUnmatchedFacesVarargs(value: ComparedFace*): Self = StObject.set(x, "UnmatchedFaces", js.Array(value :_*))
   }
 }

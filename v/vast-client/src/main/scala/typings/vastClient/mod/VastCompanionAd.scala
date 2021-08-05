@@ -32,8 +32,7 @@ trait VastCompanionAd extends StObject {
 }
 object VastCompanionAd {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     companionClickTrackingURLTemplates: js.Array[String],
     height: String,
     trackingEvents: VastCompanionTrackingEvents,
@@ -44,73 +43,50 @@ object VastCompanionAd {
     __obj.asInstanceOf[VastCompanionAd]
   }
   
-  @scala.inline
-  implicit class VastCompanionAdMutableBuilder[Self <: VastCompanionAd] (val x: Self) extends AnyVal {
+  extension [Self <: VastCompanionAd](x: Self) {
     
-    @scala.inline
-    def setAltText(value: String): Self = StObject.set(x, "altText", value.asInstanceOf[js.Any])
+    inline def setAltText(value: String): Self = StObject.set(x, "altText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltTextNull: Self = StObject.set(x, "altText", null)
+    inline def setAltTextNull: Self = StObject.set(x, "altText", null)
     
-    @scala.inline
-    def setCompanionClickThroughURLTemplate(value: String): Self = StObject.set(x, "companionClickThroughURLTemplate", value.asInstanceOf[js.Any])
+    inline def setCompanionClickThroughURLTemplate(value: String): Self = StObject.set(x, "companionClickThroughURLTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompanionClickThroughURLTemplateNull: Self = StObject.set(x, "companionClickThroughURLTemplate", null)
+    inline def setCompanionClickThroughURLTemplateNull: Self = StObject.set(x, "companionClickThroughURLTemplate", null)
     
-    @scala.inline
-    def setCompanionClickTrackingURLTemplate(value: String): Self = StObject.set(x, "companionClickTrackingURLTemplate", value.asInstanceOf[js.Any])
+    inline def setCompanionClickTrackingURLTemplate(value: String): Self = StObject.set(x, "companionClickTrackingURLTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompanionClickTrackingURLTemplateNull: Self = StObject.set(x, "companionClickTrackingURLTemplate", null)
+    inline def setCompanionClickTrackingURLTemplateNull: Self = StObject.set(x, "companionClickTrackingURLTemplate", null)
     
-    @scala.inline
-    def setCompanionClickTrackingURLTemplateUndefined: Self = StObject.set(x, "companionClickTrackingURLTemplate", js.undefined)
+    inline def setCompanionClickTrackingURLTemplateUndefined: Self = StObject.set(x, "companionClickTrackingURLTemplate", js.undefined)
     
-    @scala.inline
-    def setCompanionClickTrackingURLTemplates(value: js.Array[String]): Self = StObject.set(x, "companionClickTrackingURLTemplates", value.asInstanceOf[js.Any])
+    inline def setCompanionClickTrackingURLTemplates(value: js.Array[String]): Self = StObject.set(x, "companionClickTrackingURLTemplates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompanionClickTrackingURLTemplatesVarargs(value: String*): Self = StObject.set(x, "companionClickTrackingURLTemplates", js.Array(value :_*))
+    inline def setCompanionClickTrackingURLTemplatesVarargs(value: String*): Self = StObject.set(x, "companionClickTrackingURLTemplates", js.Array(value :_*))
     
-    @scala.inline
-    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlResource(value: String): Self = StObject.set(x, "htmlResource", value.asInstanceOf[js.Any])
+    inline def setHtmlResource(value: String): Self = StObject.set(x, "htmlResource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlResourceNull: Self = StObject.set(x, "htmlResource", null)
+    inline def setHtmlResourceNull: Self = StObject.set(x, "htmlResource", null)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdNull: Self = StObject.set(x, "id", null)
+    inline def setIdNull: Self = StObject.set(x, "id", null)
     
-    @scala.inline
-    def setIframeResource(value: String): Self = StObject.set(x, "iframeResource", value.asInstanceOf[js.Any])
+    inline def setIframeResource(value: String): Self = StObject.set(x, "iframeResource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIframeResourceNull: Self = StObject.set(x, "iframeResource", null)
+    inline def setIframeResourceNull: Self = StObject.set(x, "iframeResource", null)
     
-    @scala.inline
-    def setStaticResource(value: String): Self = StObject.set(x, "staticResource", value.asInstanceOf[js.Any])
+    inline def setStaticResource(value: String): Self = StObject.set(x, "staticResource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticResourceNull: Self = StObject.set(x, "staticResource", null)
+    inline def setStaticResourceNull: Self = StObject.set(x, "staticResource", null)
     
-    @scala.inline
-    def setTrackingEvents(value: VastCompanionTrackingEvents): Self = StObject.set(x, "trackingEvents", value.asInstanceOf[js.Any])
+    inline def setTrackingEvents(value: VastCompanionTrackingEvents): Self = StObject.set(x, "trackingEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeNull: Self = StObject.set(x, "type", null)
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
     
-    @scala.inline
-    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

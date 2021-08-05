@@ -5,22 +5,18 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def DamerauLevenshteinDistance(source: java.lang.String, target: java.lang.String): scala.Double = (typings.natural.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DamerauLevenshteinDistance")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-@scala.inline
-def DamerauLevenshteinDistance(
+inline def DamerauLevenshteinDistance(source: java.lang.String, target: java.lang.String): scala.Double = (typings.natural.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DamerauLevenshteinDistance")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
+inline def DamerauLevenshteinDistance(
   source: java.lang.String,
   target: java.lang.String,
   options: typings.natural.anon.DamerauLevenshteinDistanc
 ): typings.natural.mod.SubstringDistanceResult = (typings.natural.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DamerauLevenshteinDistance")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.natural.mod.SubstringDistanceResult]
-@scala.inline
-def DamerauLevenshteinDistance(
+inline def DamerauLevenshteinDistance(
   source: java.lang.String,
   target: java.lang.String,
   options: typings.natural.anon.DamerauLevenshteinDistancDeletioncost
 ): scala.Double = (typings.natural.mod.^.asInstanceOf[js.Dynamic].applyDynamic("DamerauLevenshteinDistance")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Double]
-@scala.inline
-def DamerauLevenshteinDistance(
+inline def DamerauLevenshteinDistance(
   source: java.lang.String,
   target: java.lang.String,
   options: typings.natural.anon.DamerauLevenshteinDistancInsertioncost

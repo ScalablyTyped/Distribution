@@ -11,41 +11,35 @@ object fscreenStrings {
   sealed trait exitFullscreen
     extends StObject
        with EventName
-  @scala.inline
-  def exitFullscreen: exitFullscreen = "exitFullscreen".asInstanceOf[exitFullscreen]
+  inline def exitFullscreen: exitFullscreen = "exitFullscreen".asInstanceOf[exitFullscreen]
   
   @js.native
   sealed trait fullscreenElement
     extends StObject
        with EventName
-  @scala.inline
-  def fullscreenElement: fullscreenElement = "fullscreenElement".asInstanceOf[fullscreenElement]
+  inline def fullscreenElement: fullscreenElement = "fullscreenElement".asInstanceOf[fullscreenElement]
   
   @js.native
   sealed trait fullscreenEnabled
     extends StObject
        with EventName
-  @scala.inline
-  def fullscreenEnabled: fullscreenEnabled = "fullscreenEnabled".asInstanceOf[fullscreenEnabled]
+  inline def fullscreenEnabled: fullscreenEnabled = "fullscreenEnabled".asInstanceOf[fullscreenEnabled]
   
   @js.native
   sealed trait fullscreenchange
     extends StObject
        with EventName
-  @scala.inline
-  def fullscreenchange: fullscreenchange = "fullscreenchange".asInstanceOf[fullscreenchange]
+  inline def fullscreenchange: fullscreenchange = "fullscreenchange".asInstanceOf[fullscreenchange]
   
   @js.native
   sealed trait fullscreenerror
     extends StObject
        with EventName
-  @scala.inline
-  def fullscreenerror: fullscreenerror = "fullscreenerror".asInstanceOf[fullscreenerror]
+  inline def fullscreenerror: fullscreenerror = "fullscreenerror".asInstanceOf[fullscreenerror]
   
   @js.native
   sealed trait requestFullscreen
     extends StObject
        with EventName
-  @scala.inline
-  def requestFullscreen: requestFullscreen = "requestFullscreen".asInstanceOf[requestFullscreen]
+  inline def requestFullscreen: requestFullscreen = "requestFullscreen".asInstanceOf[requestFullscreen]
 }

@@ -27,31 +27,23 @@ trait SchemaShieldedVmIdentity extends StObject {
 }
 object SchemaShieldedVmIdentity {
   
-  @scala.inline
-  def apply(): SchemaShieldedVmIdentity = {
+  inline def apply(): SchemaShieldedVmIdentity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaShieldedVmIdentity]
   }
   
-  @scala.inline
-  implicit class SchemaShieldedVmIdentityMutableBuilder[Self <: SchemaShieldedVmIdentity] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaShieldedVmIdentity](x: Self) {
     
-    @scala.inline
-    def setEncryptionKey(value: SchemaShieldedVmIdentityEntry): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
+    inline def setEncryptionKey(value: SchemaShieldedVmIdentityEntry): Self = StObject.set(x, "encryptionKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionKeyUndefined: Self = StObject.set(x, "encryptionKey", js.undefined)
+    inline def setEncryptionKeyUndefined: Self = StObject.set(x, "encryptionKey", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setSigningKey(value: SchemaShieldedVmIdentityEntry): Self = StObject.set(x, "signingKey", value.asInstanceOf[js.Any])
+    inline def setSigningKey(value: SchemaShieldedVmIdentityEntry): Self = StObject.set(x, "signingKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigningKeyUndefined: Self = StObject.set(x, "signingKey", js.undefined)
+    inline def setSigningKeyUndefined: Self = StObject.set(x, "signingKey", js.undefined)
   }
 }

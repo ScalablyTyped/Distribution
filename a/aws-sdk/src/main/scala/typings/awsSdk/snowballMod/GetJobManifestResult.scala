@@ -13,19 +13,15 @@ trait GetJobManifestResult extends StObject {
 }
 object GetJobManifestResult {
   
-  @scala.inline
-  def apply(): GetJobManifestResult = {
+  inline def apply(): GetJobManifestResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetJobManifestResult]
   }
   
-  @scala.inline
-  implicit class GetJobManifestResultMutableBuilder[Self <: GetJobManifestResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetJobManifestResult](x: Self) {
     
-    @scala.inline
-    def setManifestURI(value: String): Self = StObject.set(x, "ManifestURI", value.asInstanceOf[js.Any])
+    inline def setManifestURI(value: String): Self = StObject.set(x, "ManifestURI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManifestURIUndefined: Self = StObject.set(x, "ManifestURI", js.undefined)
+    inline def setManifestURIUndefined: Self = StObject.set(x, "ManifestURI", js.undefined)
   }
 }

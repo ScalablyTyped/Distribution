@@ -50,8 +50,7 @@ trait XConnectionPointContainer
 }
 object XConnectionPointContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ConnectionPointTypes: SafeArray[`type`],
     acquire: () => Unit,
     advise: (`type`, XInterface) => Unit,
@@ -65,22 +64,16 @@ object XConnectionPointContainer {
     __obj.asInstanceOf[XConnectionPointContainer]
   }
   
-  @scala.inline
-  implicit class XConnectionPointContainerMutableBuilder[Self <: XConnectionPointContainer] (val x: Self) extends AnyVal {
+  extension [Self <: XConnectionPointContainer](x: Self) {
     
-    @scala.inline
-    def setAdvise(value: (`type`, XInterface) => Unit): Self = StObject.set(x, "advise", js.Any.fromFunction2(value))
+    inline def setAdvise(value: (`type`, XInterface) => Unit): Self = StObject.set(x, "advise", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setConnectionPointTypes(value: SafeArray[`type`]): Self = StObject.set(x, "ConnectionPointTypes", value.asInstanceOf[js.Any])
+    inline def setConnectionPointTypes(value: SafeArray[`type`]): Self = StObject.set(x, "ConnectionPointTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetConnectionPointTypes(value: () => SafeArray[`type`]): Self = StObject.set(x, "getConnectionPointTypes", js.Any.fromFunction0(value))
+    inline def setGetConnectionPointTypes(value: () => SafeArray[`type`]): Self = StObject.set(x, "getConnectionPointTypes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setQueryConnectionPoint(value: `type` => XConnectionPoint): Self = StObject.set(x, "queryConnectionPoint", js.Any.fromFunction1(value))
+    inline def setQueryConnectionPoint(value: `type` => XConnectionPoint): Self = StObject.set(x, "queryConnectionPoint", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnadvise(value: (`type`, XInterface) => Unit): Self = StObject.set(x, "unadvise", js.Any.fromFunction2(value))
+    inline def setUnadvise(value: (`type`, XInterface) => Unit): Self = StObject.set(x, "unadvise", js.Any.fromFunction2(value))
   }
 }

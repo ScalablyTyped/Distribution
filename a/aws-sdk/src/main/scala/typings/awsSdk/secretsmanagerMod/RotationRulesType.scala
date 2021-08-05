@@ -13,19 +13,15 @@ trait RotationRulesType extends StObject {
 }
 object RotationRulesType {
   
-  @scala.inline
-  def apply(): RotationRulesType = {
+  inline def apply(): RotationRulesType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RotationRulesType]
   }
   
-  @scala.inline
-  implicit class RotationRulesTypeMutableBuilder[Self <: RotationRulesType] (val x: Self) extends AnyVal {
+  extension [Self <: RotationRulesType](x: Self) {
     
-    @scala.inline
-    def setAutomaticallyAfterDays(value: AutomaticallyRotateAfterDaysType): Self = StObject.set(x, "AutomaticallyAfterDays", value.asInstanceOf[js.Any])
+    inline def setAutomaticallyAfterDays(value: AutomaticallyRotateAfterDaysType): Self = StObject.set(x, "AutomaticallyAfterDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutomaticallyAfterDaysUndefined: Self = StObject.set(x, "AutomaticallyAfterDays", js.undefined)
+    inline def setAutomaticallyAfterDaysUndefined: Self = StObject.set(x, "AutomaticallyAfterDays", js.undefined)
   }
 }

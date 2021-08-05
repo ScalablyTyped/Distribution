@@ -22,6 +22,5 @@ object TextareaItem {
   @JSImport("antd-mobile-rn", "TextareaItem.defaultProps")
   @js.native
   def defaultProps: AutoHeight = js.native
-  @scala.inline
-  def defaultProps_=(x: AutoHeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: AutoHeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

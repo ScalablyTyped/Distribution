@@ -10,16 +10,13 @@ trait DefineIndexFieldResponse extends StObject {
 }
 object DefineIndexFieldResponse {
   
-  @scala.inline
-  def apply(IndexField: IndexFieldStatus): DefineIndexFieldResponse = {
+  inline def apply(IndexField: IndexFieldStatus): DefineIndexFieldResponse = {
     val __obj = js.Dynamic.literal(IndexField = IndexField.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefineIndexFieldResponse]
   }
   
-  @scala.inline
-  implicit class DefineIndexFieldResponseMutableBuilder[Self <: DefineIndexFieldResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DefineIndexFieldResponse](x: Self) {
     
-    @scala.inline
-    def setIndexField(value: IndexFieldStatus): Self = StObject.set(x, "IndexField", value.asInstanceOf[js.Any])
+    inline def setIndexField(value: IndexFieldStatus): Self = StObject.set(x, "IndexField", value.asInstanceOf[js.Any])
   }
 }

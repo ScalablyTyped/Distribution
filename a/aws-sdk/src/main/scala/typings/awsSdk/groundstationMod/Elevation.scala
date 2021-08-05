@@ -18,19 +18,15 @@ trait Elevation extends StObject {
 }
 object Elevation {
   
-  @scala.inline
-  def apply(unit: AngleUnits, value: Double): Elevation = {
+  inline def apply(unit: AngleUnits, value: Double): Elevation = {
     val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Elevation]
   }
   
-  @scala.inline
-  implicit class ElevationMutableBuilder[Self <: Elevation] (val x: Self) extends AnyVal {
+  extension [Self <: Elevation](x: Self) {
     
-    @scala.inline
-    def setUnit(value: AngleUnits): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: AngleUnits): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

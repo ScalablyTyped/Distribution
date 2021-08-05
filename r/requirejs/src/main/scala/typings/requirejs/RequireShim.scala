@@ -28,34 +28,25 @@ trait RequireShim extends StObject {
 }
 object RequireShim {
   
-  @scala.inline
-  def apply(): RequireShim = {
+  inline def apply(): RequireShim = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RequireShim]
   }
   
-  @scala.inline
-  implicit class RequireShimMutableBuilder[Self <: RequireShim] (val x: Self) extends AnyVal {
+  extension [Self <: RequireShim](x: Self) {
     
-    @scala.inline
-    def setDeps(value: js.Array[String]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
+    inline def setDeps(value: js.Array[String]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepsUndefined: Self = StObject.set(x, "deps", js.undefined)
+    inline def setDepsUndefined: Self = StObject.set(x, "deps", js.undefined)
     
-    @scala.inline
-    def setDepsVarargs(value: String*): Self = StObject.set(x, "deps", js.Array(value :_*))
+    inline def setDepsVarargs(value: String*): Self = StObject.set(x, "deps", js.Array(value :_*))
     
-    @scala.inline
-    def setExports(value: String): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
+    inline def setExports(value: String): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportsUndefined: Self = StObject.set(x, "exports", js.undefined)
+    inline def setExportsUndefined: Self = StObject.set(x, "exports", js.undefined)
     
-    @scala.inline
-    def setInit(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+    inline def setInit(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+    inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
   }
 }

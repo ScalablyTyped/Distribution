@@ -14,16 +14,13 @@ trait Window extends StObject {
 }
 object Window {
   
-  @scala.inline
-  def apply(chrome: Typeofchrome): Window = {
+  inline def apply(chrome: Typeofchrome): Window = {
     val __obj = js.Dynamic.literal(chrome = chrome.asInstanceOf[js.Any])
     __obj.asInstanceOf[Window]
   }
   
-  @scala.inline
-  implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+  extension [Self <: Window](x: Self) {
     
-    @scala.inline
-    def setChrome(value: Typeofchrome): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
+    inline def setChrome(value: Typeofchrome): Self = StObject.set(x, "chrome", value.asInstanceOf[js.Any])
   }
 }

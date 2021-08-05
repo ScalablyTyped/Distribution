@@ -25,8 +25,7 @@ trait CopyOptionGroupMessage extends StObject {
 }
 object CopyOptionGroupMessage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SourceOptionGroupIdentifier: String,
     TargetOptionGroupDescription: String,
     TargetOptionGroupIdentifier: String
@@ -35,25 +34,18 @@ object CopyOptionGroupMessage {
     __obj.asInstanceOf[CopyOptionGroupMessage]
   }
   
-  @scala.inline
-  implicit class CopyOptionGroupMessageMutableBuilder[Self <: CopyOptionGroupMessage] (val x: Self) extends AnyVal {
+  extension [Self <: CopyOptionGroupMessage](x: Self) {
     
-    @scala.inline
-    def setSourceOptionGroupIdentifier(value: String): Self = StObject.set(x, "SourceOptionGroupIdentifier", value.asInstanceOf[js.Any])
+    inline def setSourceOptionGroupIdentifier(value: String): Self = StObject.set(x, "SourceOptionGroupIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTargetOptionGroupDescription(value: String): Self = StObject.set(x, "TargetOptionGroupDescription", value.asInstanceOf[js.Any])
+    inline def setTargetOptionGroupDescription(value: String): Self = StObject.set(x, "TargetOptionGroupDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetOptionGroupIdentifier(value: String): Self = StObject.set(x, "TargetOptionGroupIdentifier", value.asInstanceOf[js.Any])
+    inline def setTargetOptionGroupIdentifier(value: String): Self = StObject.set(x, "TargetOptionGroupIdentifier", value.asInstanceOf[js.Any])
   }
 }

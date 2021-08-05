@@ -32,8 +32,7 @@ trait TopicalExploreFeedResponseChannelsItem extends StObject {
 }
 object TopicalExploreFeedResponseChannelsItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     approx_total_videos: Null,
     cover_photo_url: Null,
     description: Null,
@@ -52,46 +51,32 @@ object TopicalExploreFeedResponseChannelsItem {
     __obj.asInstanceOf[TopicalExploreFeedResponseChannelsItem]
   }
   
-  @scala.inline
-  implicit class TopicalExploreFeedResponseChannelsItemMutableBuilder[Self <: TopicalExploreFeedResponseChannelsItem] (val x: Self) extends AnyVal {
+  extension [Self <: TopicalExploreFeedResponseChannelsItem](x: Self) {
     
-    @scala.inline
-    def setApprox_total_videos(value: Null): Self = StObject.set(x, "approx_total_videos", value.asInstanceOf[js.Any])
+    inline def setApprox_total_videos(value: Null): Self = StObject.set(x, "approx_total_videos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCover_photo_url(value: Null): Self = StObject.set(x, "cover_photo_url", value.asInstanceOf[js.Any])
+    inline def setCover_photo_url(value: Null): Self = StObject.set(x, "cover_photo_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: Null): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Null): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestination_client_configs(value: Null): Self = StObject.set(x, "destination_client_configs", value.asInstanceOf[js.Any])
+    inline def setDestination_client_configs(value: Null): Self = StObject.set(x, "destination_client_configs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: js.Array[TopicalExploreFeedResponseItemsItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[TopicalExploreFeedResponseItemsItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: TopicalExploreFeedResponseItemsItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: TopicalExploreFeedResponseItemsItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setMax_id(value: String): Self = StObject.set(x, "max_id", value.asInstanceOf[js.Any])
+    inline def setMax_id(value: String): Self = StObject.set(x, "max_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMore_available(value: Boolean): Self = StObject.set(x, "more_available", value.asInstanceOf[js.Any])
+    inline def setMore_available(value: Boolean): Self = StObject.set(x, "more_available", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeen_state(value: TopicalExploreFeedResponseSeenState): Self = StObject.set(x, "seen_state", value.asInstanceOf[js.Any])
+    inline def setSeen_state(value: TopicalExploreFeedResponseSeenState): Self = StObject.set(x, "seen_state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser_dict(value: Null): Self = StObject.set(x, "user_dict", value.asInstanceOf[js.Any])
+    inline def setUser_dict(value: Null): Self = StObject.set(x, "user_dict", value.asInstanceOf[js.Any])
   }
 }

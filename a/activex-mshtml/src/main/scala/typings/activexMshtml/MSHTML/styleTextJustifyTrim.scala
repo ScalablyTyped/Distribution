@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait styleTextJustifyTrim extends StObject
 object styleTextJustifyTrim {
   
-  @scala.inline
-  def styleTextJustifyTrimNone: `1` = 1.asInstanceOf[`1`]
+  inline def styleTextJustifyTrimNone: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def styleTextJustifyTrimNotSet: `0` = 0.asInstanceOf[`0`]
+  inline def styleTextJustifyTrimNotSet: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def styleTextJustifyTrimPunctAndKana: `3` = 3.asInstanceOf[`3`]
+  inline def styleTextJustifyTrimPunctAndKana: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def styleTextJustifyTrimPunctuation: `2` = 2.asInstanceOf[`2`]
+  inline def styleTextJustifyTrimPunctuation: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def styleTextJustifyTrim_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def styleTextJustifyTrim_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

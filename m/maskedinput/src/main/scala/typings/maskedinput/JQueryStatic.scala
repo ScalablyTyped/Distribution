@@ -10,16 +10,13 @@ trait JQueryStatic extends StObject {
 }
 object JQueryStatic {
   
-  @scala.inline
-  def apply(mask: MaskedInputStatic): JQueryStatic = {
+  inline def apply(mask: MaskedInputStatic): JQueryStatic = {
     val __obj = js.Dynamic.literal(mask = mask.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  @scala.inline
-  implicit class JQueryStaticMutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryStatic](x: Self) {
     
-    @scala.inline
-    def setMask(value: MaskedInputStatic): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+    inline def setMask(value: MaskedInputStatic): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
   }
 }

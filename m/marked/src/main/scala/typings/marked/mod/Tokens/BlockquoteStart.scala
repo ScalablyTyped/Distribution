@@ -16,20 +16,16 @@ trait BlockquoteStart
 }
 object BlockquoteStart {
   
-  @scala.inline
-  def apply(raw: String): BlockquoteStart = {
+  inline def apply(raw: String): BlockquoteStart = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("blockquote_start")
     __obj.asInstanceOf[BlockquoteStart]
   }
   
-  @scala.inline
-  implicit class BlockquoteStartMutableBuilder[Self <: BlockquoteStart] (val x: Self) extends AnyVal {
+  extension [Self <: BlockquoteStart](x: Self) {
     
-    @scala.inline
-    def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+    inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: blockquote_start): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: blockquote_start): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

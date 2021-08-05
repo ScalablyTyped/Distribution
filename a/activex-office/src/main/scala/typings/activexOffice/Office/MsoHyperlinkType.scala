@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoHyperlinkType extends StObject
 object MsoHyperlinkType {
   
-  @scala.inline
-  def msoHyperlinkInlineShape: `2` = 2.asInstanceOf[`2`]
+  inline def msoHyperlinkInlineShape: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoHyperlinkRange: `0` = 0.asInstanceOf[`0`]
+  inline def msoHyperlinkRange: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def msoHyperlinkShape: `1` = 1.asInstanceOf[`1`]
+  inline def msoHyperlinkShape: `1` = 1.asInstanceOf[`1`]
 }

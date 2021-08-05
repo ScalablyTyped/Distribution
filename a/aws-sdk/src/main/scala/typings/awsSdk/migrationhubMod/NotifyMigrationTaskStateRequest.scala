@@ -38,8 +38,7 @@ trait NotifyMigrationTaskStateRequest extends StObject {
 }
 object NotifyMigrationTaskStateRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MigrationTaskName: MigrationTaskName,
     NextUpdateSeconds: NextUpdateSeconds,
     ProgressUpdateStream: ProgressUpdateStream,
@@ -50,28 +49,20 @@ object NotifyMigrationTaskStateRequest {
     __obj.asInstanceOf[NotifyMigrationTaskStateRequest]
   }
   
-  @scala.inline
-  implicit class NotifyMigrationTaskStateRequestMutableBuilder[Self <: NotifyMigrationTaskStateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: NotifyMigrationTaskStateRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: DryRun): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: DryRun): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setMigrationTaskName(value: MigrationTaskName): Self = StObject.set(x, "MigrationTaskName", value.asInstanceOf[js.Any])
+    inline def setMigrationTaskName(value: MigrationTaskName): Self = StObject.set(x, "MigrationTaskName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextUpdateSeconds(value: NextUpdateSeconds): Self = StObject.set(x, "NextUpdateSeconds", value.asInstanceOf[js.Any])
+    inline def setNextUpdateSeconds(value: NextUpdateSeconds): Self = StObject.set(x, "NextUpdateSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressUpdateStream(value: ProgressUpdateStream): Self = StObject.set(x, "ProgressUpdateStream", value.asInstanceOf[js.Any])
+    inline def setProgressUpdateStream(value: ProgressUpdateStream): Self = StObject.set(x, "ProgressUpdateStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTask(value: Task): Self = StObject.set(x, "Task", value.asInstanceOf[js.Any])
+    inline def setTask(value: Task): Self = StObject.set(x, "Task", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateDateTime(value: UpdateDateTime): Self = StObject.set(x, "UpdateDateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateDateTime(value: UpdateDateTime): Self = StObject.set(x, "UpdateDateTime", value.asInstanceOf[js.Any])
   }
 }

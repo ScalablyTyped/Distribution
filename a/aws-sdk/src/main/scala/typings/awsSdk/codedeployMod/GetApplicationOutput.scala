@@ -13,19 +13,15 @@ trait GetApplicationOutput extends StObject {
 }
 object GetApplicationOutput {
   
-  @scala.inline
-  def apply(): GetApplicationOutput = {
+  inline def apply(): GetApplicationOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetApplicationOutput]
   }
   
-  @scala.inline
-  implicit class GetApplicationOutputMutableBuilder[Self <: GetApplicationOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetApplicationOutput](x: Self) {
     
-    @scala.inline
-    def setApplication(value: ApplicationInfo): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: ApplicationInfo): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
+    inline def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
   }
 }

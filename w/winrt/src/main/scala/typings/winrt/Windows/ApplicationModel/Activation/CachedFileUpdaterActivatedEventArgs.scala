@@ -10,8 +10,7 @@ trait CachedFileUpdaterActivatedEventArgs
      with ICachedFileUpdaterActivatedEventArgs
 object CachedFileUpdaterActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cachedFileUpdaterUI: CachedFileUpdaterUI,
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,

@@ -13,25 +13,19 @@ trait AndroidCustomConfiguration
 }
 object AndroidCustomConfiguration {
   
-  @scala.inline
-  def apply(): AndroidCustomConfiguration = {
+  inline def apply(): AndroidCustomConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AndroidCustomConfiguration]
   }
   
-  @scala.inline
-  implicit class AndroidCustomConfigurationMutableBuilder[Self <: AndroidCustomConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: AndroidCustomConfiguration](x: Self) {
     
-    @scala.inline
-    def setOmaSettings(value: NullableOption[js.Array[OmaSetting]]): Self = StObject.set(x, "omaSettings", value.asInstanceOf[js.Any])
+    inline def setOmaSettings(value: NullableOption[js.Array[OmaSetting]]): Self = StObject.set(x, "omaSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOmaSettingsNull: Self = StObject.set(x, "omaSettings", null)
+    inline def setOmaSettingsNull: Self = StObject.set(x, "omaSettings", null)
     
-    @scala.inline
-    def setOmaSettingsUndefined: Self = StObject.set(x, "omaSettings", js.undefined)
+    inline def setOmaSettingsUndefined: Self = StObject.set(x, "omaSettings", js.undefined)
     
-    @scala.inline
-    def setOmaSettingsVarargs(value: OmaSetting*): Self = StObject.set(x, "omaSettings", js.Array(value :_*))
+    inline def setOmaSettingsVarargs(value: OmaSetting*): Self = StObject.set(x, "omaSettings", js.Array(value :_*))
   }
 }

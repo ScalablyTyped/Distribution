@@ -11,6 +11,5 @@ object subscribeToPromiseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def subscribeToPromise[T](promise: js.Thenable[T]): js.Function1[/* subscriber */ Subscriber[T], Subscriber[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("subscribeToPromise")(promise.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* subscriber */ Subscriber[T], Subscriber[T]]]
+  inline def subscribeToPromise[T](promise: js.Thenable[T]): js.Function1[/* subscriber */ Subscriber[T], Subscriber[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("subscribeToPromise")(promise.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* subscriber */ Subscriber[T], Subscriber[T]]]
 }

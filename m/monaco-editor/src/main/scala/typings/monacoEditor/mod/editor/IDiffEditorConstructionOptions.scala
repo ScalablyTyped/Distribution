@@ -25,25 +25,19 @@ trait IDiffEditorConstructionOptions
 }
 object IDiffEditorConstructionOptions {
   
-  @scala.inline
-  def apply(): IDiffEditorConstructionOptions = {
+  inline def apply(): IDiffEditorConstructionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDiffEditorConstructionOptions]
   }
   
-  @scala.inline
-  implicit class IDiffEditorConstructionOptionsMutableBuilder[Self <: IDiffEditorConstructionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IDiffEditorConstructionOptions](x: Self) {
     
-    @scala.inline
-    def setOverflowWidgetsDomNode(value: HTMLElement): Self = StObject.set(x, "overflowWidgetsDomNode", value.asInstanceOf[js.Any])
+    inline def setOverflowWidgetsDomNode(value: HTMLElement): Self = StObject.set(x, "overflowWidgetsDomNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverflowWidgetsDomNodeUndefined: Self = StObject.set(x, "overflowWidgetsDomNode", js.undefined)
+    inline def setOverflowWidgetsDomNodeUndefined: Self = StObject.set(x, "overflowWidgetsDomNode", js.undefined)
     
-    @scala.inline
-    def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

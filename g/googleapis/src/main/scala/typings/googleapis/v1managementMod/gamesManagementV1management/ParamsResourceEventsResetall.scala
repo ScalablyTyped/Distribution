@@ -19,19 +19,15 @@ trait ParamsResourceEventsResetall
 }
 object ParamsResourceEventsResetall {
   
-  @scala.inline
-  def apply(): ParamsResourceEventsResetall = {
+  inline def apply(): ParamsResourceEventsResetall = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceEventsResetall]
   }
   
-  @scala.inline
-  implicit class ParamsResourceEventsResetallMutableBuilder[Self <: ParamsResourceEventsResetall] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceEventsResetall](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
   }
 }

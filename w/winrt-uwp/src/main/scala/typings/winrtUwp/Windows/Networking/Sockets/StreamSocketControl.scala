@@ -36,8 +36,7 @@ trait StreamSocketControl extends StObject {
 }
 object StreamSocketControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clientCertificate: Certificate,
     ignorableServerCertificateErrors: IVector[ChainValidationResult],
     keepAlive: Boolean,
@@ -51,31 +50,22 @@ object StreamSocketControl {
     __obj.asInstanceOf[StreamSocketControl]
   }
   
-  @scala.inline
-  implicit class StreamSocketControlMutableBuilder[Self <: StreamSocketControl] (val x: Self) extends AnyVal {
+  extension [Self <: StreamSocketControl](x: Self) {
     
-    @scala.inline
-    def setClientCertificate(value: Certificate): Self = StObject.set(x, "clientCertificate", value.asInstanceOf[js.Any])
+    inline def setClientCertificate(value: Certificate): Self = StObject.set(x, "clientCertificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnorableServerCertificateErrors(value: IVector[ChainValidationResult]): Self = StObject.set(x, "ignorableServerCertificateErrors", value.asInstanceOf[js.Any])
+    inline def setIgnorableServerCertificateErrors(value: IVector[ChainValidationResult]): Self = StObject.set(x, "ignorableServerCertificateErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeepAlive(value: Boolean): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
+    inline def setKeepAlive(value: Boolean): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoDelay(value: Boolean): Self = StObject.set(x, "noDelay", value.asInstanceOf[js.Any])
+    inline def setNoDelay(value: Boolean): Self = StObject.set(x, "noDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutboundBufferSizeInBytes(value: Double): Self = StObject.set(x, "outboundBufferSizeInBytes", value.asInstanceOf[js.Any])
+    inline def setOutboundBufferSizeInBytes(value: Double): Self = StObject.set(x, "outboundBufferSizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutboundUnicastHopLimit(value: Double): Self = StObject.set(x, "outboundUnicastHopLimit", value.asInstanceOf[js.Any])
+    inline def setOutboundUnicastHopLimit(value: Double): Self = StObject.set(x, "outboundUnicastHopLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualityOfService(value: SocketQualityOfService): Self = StObject.set(x, "qualityOfService", value.asInstanceOf[js.Any])
+    inline def setQualityOfService(value: SocketQualityOfService): Self = StObject.set(x, "qualityOfService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerializeConnectionAttempts(value: Boolean): Self = StObject.set(x, "serializeConnectionAttempts", value.asInstanceOf[js.Any])
+    inline def setSerializeConnectionAttempts(value: Boolean): Self = StObject.set(x, "serializeConnectionAttempts", value.asInstanceOf[js.Any])
   }
 }

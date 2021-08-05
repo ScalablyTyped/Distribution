@@ -57,84 +57,57 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CollatingOrderEnum extends StObject
 object CollatingOrderEnum {
   
-  @scala.inline
-  def dbSortArabic: `1025` = 1025.asInstanceOf[`1025`]
+  inline def dbSortArabic: `1025` = 1025.asInstanceOf[`1025`]
   
-  @scala.inline
-  def dbSortChineseSimplified: `2052` = 2052.asInstanceOf[`2052`]
+  inline def dbSortChineseSimplified: `2052` = 2052.asInstanceOf[`2052`]
   
-  @scala.inline
-  def dbSortChineseTraditional: `1028` = 1028.asInstanceOf[`1028`]
+  inline def dbSortChineseTraditional: `1028` = 1028.asInstanceOf[`1028`]
   
-  @scala.inline
-  def dbSortCyrillic: `1049` = 1049.asInstanceOf[`1049`]
+  inline def dbSortCyrillic: `1049` = 1049.asInstanceOf[`1049`]
   
-  @scala.inline
-  def dbSortCzech: `1029` = 1029.asInstanceOf[`1029`]
+  inline def dbSortCzech: `1029` = 1029.asInstanceOf[`1029`]
   
-  @scala.inline
-  def dbSortDutch: `1043` = 1043.asInstanceOf[`1043`]
+  inline def dbSortDutch: `1043` = 1043.asInstanceOf[`1043`]
   
-  @scala.inline
-  def dbSortGeneral: `1033` = 1033.asInstanceOf[`1033`]
+  inline def dbSortGeneral: `1033` = 1033.asInstanceOf[`1033`]
   
-  @scala.inline
-  def dbSortGreek: `1032` = 1032.asInstanceOf[`1032`]
+  inline def dbSortGreek: `1032` = 1032.asInstanceOf[`1032`]
   
-  @scala.inline
-  def dbSortHebrew: `1037` = 1037.asInstanceOf[`1037`]
+  inline def dbSortHebrew: `1037` = 1037.asInstanceOf[`1037`]
   
-  @scala.inline
-  def dbSortHindi: `1081` = 1081.asInstanceOf[`1081`]
+  inline def dbSortHindi: `1081` = 1081.asInstanceOf[`1081`]
   
-  @scala.inline
-  def dbSortHungarian: `1038` = 1038.asInstanceOf[`1038`]
+  inline def dbSortHungarian: `1038` = 1038.asInstanceOf[`1038`]
   
-  @scala.inline
-  def dbSortIcelandic: `1039` = 1039.asInstanceOf[`1039`]
+  inline def dbSortIcelandic: `1039` = 1039.asInstanceOf[`1039`]
   
-  @scala.inline
-  def dbSortJapanese: `1041` = 1041.asInstanceOf[`1041`]
+  inline def dbSortJapanese: `1041` = 1041.asInstanceOf[`1041`]
   
-  @scala.inline
-  def dbSortJapaneseRadicalStrokeCount: `263185` = 263185.asInstanceOf[`263185`]
+  inline def dbSortJapaneseRadicalStrokeCount: `263185` = 263185.asInstanceOf[`263185`]
   
-  @scala.inline
-  def dbSortKorean: `1042` = 1042.asInstanceOf[`1042`]
+  inline def dbSortKorean: `1042` = 1042.asInstanceOf[`1042`]
   
-  @scala.inline
-  def dbSortNeutral: `1024` = 1024.asInstanceOf[`1024`]
+  inline def dbSortNeutral: `1024` = 1024.asInstanceOf[`1024`]
   
-  @scala.inline
-  def dbSortNorwdan: `1030` = 1030.asInstanceOf[`1030`]
+  inline def dbSortNorwdan: `1030` = 1030.asInstanceOf[`1030`]
   
-  @scala.inline
-  def dbSortPDXIntl: `1033` = 1033.asInstanceOf[`1033`]
+  inline def dbSortPDXIntl: `1033` = 1033.asInstanceOf[`1033`]
   
-  @scala.inline
-  def dbSortPDXNor: `1030` = 1030.asInstanceOf[`1030`]
+  inline def dbSortPDXNor: `1030` = 1030.asInstanceOf[`1030`]
   
-  @scala.inline
-  def dbSortPDXSwe: `1053` = 1053.asInstanceOf[`1053`]
+  inline def dbSortPDXSwe: `1053` = 1053.asInstanceOf[`1053`]
   
-  @scala.inline
-  def dbSortPolish: `1045` = 1045.asInstanceOf[`1045`]
+  inline def dbSortPolish: `1045` = 1045.asInstanceOf[`1045`]
   
-  @scala.inline
-  def dbSortSlovenian: `1060` = 1060.asInstanceOf[`1060`]
+  inline def dbSortSlovenian: `1060` = 1060.asInstanceOf[`1060`]
   
-  @scala.inline
-  def dbSortSpanish: `1034` = 1034.asInstanceOf[`1034`]
+  inline def dbSortSpanish: `1034` = 1034.asInstanceOf[`1034`]
   
-  @scala.inline
-  def dbSortSwedFin: `1053` = 1053.asInstanceOf[`1053`]
+  inline def dbSortSwedFin: `1053` = 1053.asInstanceOf[`1053`]
   
-  @scala.inline
-  def dbSortThai: `1054` = 1054.asInstanceOf[`1054`]
+  inline def dbSortThai: `1054` = 1054.asInstanceOf[`1054`]
   
-  @scala.inline
-  def dbSortTurkish: `1055` = 1055.asInstanceOf[`1055`]
+  inline def dbSortTurkish: `1055` = 1055.asInstanceOf[`1055`]
   
-  @scala.inline
-  def dbSortUndefined: `-1` = -1.asInstanceOf[`-1`]
+  inline def dbSortUndefined: `-1` = -1.asInstanceOf[`-1`]
 }

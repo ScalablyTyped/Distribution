@@ -11,16 +11,13 @@ trait TypeoftopSites extends StObject {
 }
 object TypeoftopSites {
   
-  @scala.inline
-  def apply(get: js.Function1[/* data */ js.Array[MostVisitedURL], Unit] => Unit): TypeoftopSites = {
+  inline def apply(get: js.Function1[/* data */ js.Array[MostVisitedURL], Unit] => Unit): TypeoftopSites = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get))
     __obj.asInstanceOf[TypeoftopSites]
   }
   
-  @scala.inline
-  implicit class TypeoftopSitesMutableBuilder[Self <: TypeoftopSites] (val x: Self) extends AnyVal {
+  extension [Self <: TypeoftopSites](x: Self) {
     
-    @scala.inline
-    def setGet(value: js.Function1[/* data */ js.Array[MostVisitedURL], Unit] => Unit): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: js.Function1[/* data */ js.Array[MostVisitedURL], Unit] => Unit): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
   }
 }

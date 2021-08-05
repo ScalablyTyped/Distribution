@@ -107,109 +107,75 @@ trait IIndividualShared extends StObject {
 }
 object IIndividualShared {
   
-  @scala.inline
-  def apply(): IIndividualShared = {
+  inline def apply(): IIndividualShared = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IIndividualShared]
   }
   
-  @scala.inline
-  implicit class IIndividualSharedMutableBuilder[Self <: IIndividualShared] (val x: Self) extends AnyVal {
+  extension [Self <: IIndividualShared](x: Self) {
     
-    @scala.inline
-    def setAddress(value: IAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: IAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setAddress_kana(value: IAddressKana): Self = StObject.set(x, "address_kana", value.asInstanceOf[js.Any])
+    inline def setAddress_kana(value: IAddressKana): Self = StObject.set(x, "address_kana", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddress_kanaUndefined: Self = StObject.set(x, "address_kana", js.undefined)
+    inline def setAddress_kanaUndefined: Self = StObject.set(x, "address_kana", js.undefined)
     
-    @scala.inline
-    def setAddress_kanji(value: IAddressKanji): Self = StObject.set(x, "address_kanji", value.asInstanceOf[js.Any])
+    inline def setAddress_kanji(value: IAddressKanji): Self = StObject.set(x, "address_kanji", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddress_kanjiUndefined: Self = StObject.set(x, "address_kanji", js.undefined)
+    inline def setAddress_kanjiUndefined: Self = StObject.set(x, "address_kanji", js.undefined)
     
-    @scala.inline
-    def setDob(value: Day): Self = StObject.set(x, "dob", value.asInstanceOf[js.Any])
+    inline def setDob(value: Day): Self = StObject.set(x, "dob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDobUndefined: Self = StObject.set(x, "dob", js.undefined)
+    inline def setDobUndefined: Self = StObject.set(x, "dob", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
+    inline def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirst_nameUndefined: Self = StObject.set(x, "first_name", js.undefined)
+    inline def setFirst_nameUndefined: Self = StObject.set(x, "first_name", js.undefined)
     
-    @scala.inline
-    def setFirst_name_kana(value: String): Self = StObject.set(x, "first_name_kana", value.asInstanceOf[js.Any])
+    inline def setFirst_name_kana(value: String): Self = StObject.set(x, "first_name_kana", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirst_name_kanaUndefined: Self = StObject.set(x, "first_name_kana", js.undefined)
+    inline def setFirst_name_kanaUndefined: Self = StObject.set(x, "first_name_kana", js.undefined)
     
-    @scala.inline
-    def setFirst_name_kanji(value: String): Self = StObject.set(x, "first_name_kanji", value.asInstanceOf[js.Any])
+    inline def setFirst_name_kanji(value: String): Self = StObject.set(x, "first_name_kanji", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirst_name_kanjiUndefined: Self = StObject.set(x, "first_name_kanji", js.undefined)
+    inline def setFirst_name_kanjiUndefined: Self = StObject.set(x, "first_name_kanji", js.undefined)
     
-    @scala.inline
-    def setGender(value: male | female): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
+    inline def setGender(value: male | female): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenderUndefined: Self = StObject.set(x, "gender", js.undefined)
+    inline def setGenderUndefined: Self = StObject.set(x, "gender", js.undefined)
     
-    @scala.inline
-    def setLast_name(value: String): Self = StObject.set(x, "last_name", value.asInstanceOf[js.Any])
+    inline def setLast_name(value: String): Self = StObject.set(x, "last_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast_nameUndefined: Self = StObject.set(x, "last_name", js.undefined)
+    inline def setLast_nameUndefined: Self = StObject.set(x, "last_name", js.undefined)
     
-    @scala.inline
-    def setLast_name_kana(value: String): Self = StObject.set(x, "last_name_kana", value.asInstanceOf[js.Any])
+    inline def setLast_name_kana(value: String): Self = StObject.set(x, "last_name_kana", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast_name_kanaUndefined: Self = StObject.set(x, "last_name_kana", js.undefined)
+    inline def setLast_name_kanaUndefined: Self = StObject.set(x, "last_name_kana", js.undefined)
     
-    @scala.inline
-    def setLast_name_kanji(value: String): Self = StObject.set(x, "last_name_kanji", value.asInstanceOf[js.Any])
+    inline def setLast_name_kanji(value: String): Self = StObject.set(x, "last_name_kanji", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast_name_kanjiUndefined: Self = StObject.set(x, "last_name_kanji", js.undefined)
+    inline def setLast_name_kanjiUndefined: Self = StObject.set(x, "last_name_kanji", js.undefined)
     
-    @scala.inline
-    def setMaiden_name(value: String): Self = StObject.set(x, "maiden_name", value.asInstanceOf[js.Any])
+    inline def setMaiden_name(value: String): Self = StObject.set(x, "maiden_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaiden_nameUndefined: Self = StObject.set(x, "maiden_name", js.undefined)
+    inline def setMaiden_nameUndefined: Self = StObject.set(x, "maiden_name", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: StringDictionary[String]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: StringDictionary[String]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
+    inline def setPhone(value: String): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
+    inline def setPhoneUndefined: Self = StObject.set(x, "phone", js.undefined)
     
-    @scala.inline
-    def setVerification(value: Details): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
+    inline def setVerification(value: Details): Self = StObject.set(x, "verification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerificationUndefined: Self = StObject.set(x, "verification", js.undefined)
+    inline def setVerificationUndefined: Self = StObject.set(x, "verification", js.undefined)
   }
 }

@@ -10,17 +10,13 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def hex(a: String, b: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("hex")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def hex(a: String, b: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("hex")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def luminance(a: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("luminance")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def luminance(a: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("luminance")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def rgb(a: RGBColor, b: RGBColor): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def rgb(a: RGBColor, b: RGBColor): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def score(contrast: Double): Score_ = ^.asInstanceOf[js.Dynamic].applyDynamic("score")(contrast.asInstanceOf[js.Any]).asInstanceOf[Score_]
+  inline def score(contrast: Double): Score_ = ^.asInstanceOf[js.Dynamic].applyDynamic("score")(contrast.asInstanceOf[js.Any]).asInstanceOf[Score_]
   
   type RGBColor = js.Tuple3[Double, Double, Double]
   
@@ -33,16 +29,12 @@ object mod {
   trait Score_ extends StObject
   object Score_ {
     
-    @scala.inline
-    def AA: typings.wcagContrast.wcagContrastStrings.AA = "AA".asInstanceOf[typings.wcagContrast.wcagContrastStrings.AA]
+    inline def AA: typings.wcagContrast.wcagContrastStrings.AA = "AA".asInstanceOf[typings.wcagContrast.wcagContrastStrings.AA]
     
-    @scala.inline
-    def `AA Large`: typings.wcagContrast.wcagContrastStrings.`AA Large` = ("AA Large").asInstanceOf[typings.wcagContrast.wcagContrastStrings.`AA Large`]
+    inline def `AA Large`: typings.wcagContrast.wcagContrastStrings.`AA Large` = ("AA Large").asInstanceOf[typings.wcagContrast.wcagContrastStrings.`AA Large`]
     
-    @scala.inline
-    def AAA: typings.wcagContrast.wcagContrastStrings.AAA = "AAA".asInstanceOf[typings.wcagContrast.wcagContrastStrings.AAA]
+    inline def AAA: typings.wcagContrast.wcagContrastStrings.AAA = "AAA".asInstanceOf[typings.wcagContrast.wcagContrastStrings.AAA]
     
-    @scala.inline
-    def Fail: typings.wcagContrast.wcagContrastStrings.Fail = "Fail".asInstanceOf[typings.wcagContrast.wcagContrastStrings.Fail]
+    inline def Fail: typings.wcagContrast.wcagContrastStrings.Fail = "Fail".asInstanceOf[typings.wcagContrast.wcagContrastStrings.Fail]
   }
 }

@@ -20,8 +20,7 @@ trait ASPxClientValidationSummary
 }
 object ASPxClientValidationSummary {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     GetClientVisible: () => Boolean,
     GetHeight: () => Double,
@@ -45,11 +44,9 @@ object ASPxClientValidationSummary {
     __obj.asInstanceOf[ASPxClientValidationSummary]
   }
   
-  @scala.inline
-  implicit class ASPxClientValidationSummaryMutableBuilder[Self <: ASPxClientValidationSummary] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientValidationSummary](x: Self) {
     
-    @scala.inline
-    def setVisibilityChanged(
+    inline def setVisibilityChanged(
       value: ASPxClientEvent[
           ASPxClientValidationSummaryVisibilityChangedEventHandler[ASPxClientValidationSummary]
         ]

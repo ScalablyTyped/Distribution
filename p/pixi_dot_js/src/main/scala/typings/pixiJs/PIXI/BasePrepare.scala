@@ -80,7 +80,7 @@ trait BasePrepare extends StObject {
     * @type {PIXI.AbstractRenderer}
     * @protected
     */
-  var renderer: AbstractRenderer = js.native
+  /* protected */ var renderer: AbstractRenderer = js.native
   
   /**
     * Upload all the textures and graphics to the GPU.
@@ -114,5 +114,5 @@ trait BasePrepare extends StObject {
     * @type {object}
     * @protected
     */
-  var uploadHookHelper: js.Any = js.native
+  /* protected */ var uploadHookHelper: js.Any = js.native
 }

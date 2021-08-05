@@ -16,19 +16,15 @@ trait SchemaResellernotifyResource extends StObject {
 }
 object SchemaResellernotifyResource {
   
-  @scala.inline
-  def apply(): SchemaResellernotifyResource = {
+  inline def apply(): SchemaResellernotifyResource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaResellernotifyResource]
   }
   
-  @scala.inline
-  implicit class SchemaResellernotifyResourceMutableBuilder[Self <: SchemaResellernotifyResource] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaResellernotifyResource](x: Self) {
     
-    @scala.inline
-    def setTopicName(value: String): Self = StObject.set(x, "topicName", value.asInstanceOf[js.Any])
+    inline def setTopicName(value: String): Self = StObject.set(x, "topicName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicNameUndefined: Self = StObject.set(x, "topicName", js.undefined)
+    inline def setTopicNameUndefined: Self = StObject.set(x, "topicName", js.undefined)
   }
 }

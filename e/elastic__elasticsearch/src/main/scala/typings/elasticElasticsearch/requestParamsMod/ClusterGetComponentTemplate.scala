@@ -16,34 +16,25 @@ trait ClusterGetComponentTemplate
 }
 object ClusterGetComponentTemplate {
   
-  @scala.inline
-  def apply(): ClusterGetComponentTemplate = {
+  inline def apply(): ClusterGetComponentTemplate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClusterGetComponentTemplate]
   }
   
-  @scala.inline
-  implicit class ClusterGetComponentTemplateMutableBuilder[Self <: ClusterGetComponentTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterGetComponentTemplate](x: Self) {
     
-    @scala.inline
-    def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+    inline def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
+    inline def setLocalUndefined: Self = StObject.set(x, "local", js.undefined)
     
-    @scala.inline
-    def setMaster_timeout(value: String): Self = StObject.set(x, "master_timeout", value.asInstanceOf[js.Any])
+    inline def setMaster_timeout(value: String): Self = StObject.set(x, "master_timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaster_timeoutUndefined: Self = StObject.set(x, "master_timeout", js.undefined)
+    inline def setMaster_timeoutUndefined: Self = StObject.set(x, "master_timeout", js.undefined)
     
-    @scala.inline
-    def setName(value: String | js.Array[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String | js.Array[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value :_*))
+    inline def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value :_*))
   }
 }

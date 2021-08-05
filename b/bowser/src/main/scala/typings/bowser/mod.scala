@@ -39,18 +39,15 @@ object mod {
     * @param {string} UA - User agent string
     * @param {boolean} skipParsing
     */
-  @scala.inline
-  def getParser(UA: String): Parser = ^.asInstanceOf[js.Dynamic].applyDynamic("getParser")(UA.asInstanceOf[js.Any]).asInstanceOf[Parser]
-  @scala.inline
-  def getParser(UA: String, skipParsing: Boolean): Parser = (^.asInstanceOf[js.Dynamic].applyDynamic("getParser")(UA.asInstanceOf[js.Any], skipParsing.asInstanceOf[js.Any])).asInstanceOf[Parser]
+  inline def getParser(UA: String): Parser = ^.asInstanceOf[js.Dynamic].applyDynamic("getParser")(UA.asInstanceOf[js.Any]).asInstanceOf[Parser]
+  inline def getParser(UA: String, skipParsing: Boolean): Parser = (^.asInstanceOf[js.Dynamic].applyDynamic("getParser")(UA.asInstanceOf[js.Any], skipParsing.asInstanceOf[js.Any])).asInstanceOf[Parser]
   
   /**
     * Creates a Parser instance and runs Parser.getResult immediately
     * @param UA - User agent string
     * @returns {Parser.ParsedResult}
     */
-  @scala.inline
-  def parse(UA: String): ParsedResult = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(UA.asInstanceOf[js.Any]).asInstanceOf[ParsedResult]
+  inline def parse(UA: String): ParsedResult = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(UA.asInstanceOf[js.Any]).asInstanceOf[ParsedResult]
   
   object Parser {
     
@@ -64,26 +61,20 @@ object mod {
     }
     object Details {
       
-      @scala.inline
-      def apply(): Details = {
+      inline def apply(): Details = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Details]
       }
       
-      @scala.inline
-      implicit class DetailsMutableBuilder[Self <: Details] (val x: Self) extends AnyVal {
+      extension [Self <: Details](x: Self) {
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+        inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+        inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
       }
     }
     
@@ -97,20 +88,16 @@ object mod {
     }
     object OSDetails {
       
-      @scala.inline
-      def apply(): OSDetails = {
+      inline def apply(): OSDetails = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[OSDetails]
       }
       
-      @scala.inline
-      implicit class OSDetailsMutableBuilder[Self <: OSDetails] (val x: Self) extends AnyVal {
+      extension [Self <: OSDetails](x: Self) {
         
-        @scala.inline
-        def setVersionName(value: String): Self = StObject.set(x, "versionName", value.asInstanceOf[js.Any])
+        inline def setVersionName(value: String): Self = StObject.set(x, "versionName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVersionNameUndefined: Self = StObject.set(x, "versionName", js.undefined)
+        inline def setVersionNameUndefined: Self = StObject.set(x, "versionName", js.undefined)
       }
     }
     
@@ -126,26 +113,20 @@ object mod {
     }
     object ParsedResult {
       
-      @scala.inline
-      def apply(browser: BrowserDetails, engine: EngineDetails, os: OSDetails, platform: PlatformDetails): ParsedResult = {
+      inline def apply(browser: BrowserDetails, engine: EngineDetails, os: OSDetails, platform: PlatformDetails): ParsedResult = {
         val __obj = js.Dynamic.literal(browser = browser.asInstanceOf[js.Any], engine = engine.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any], platform = platform.asInstanceOf[js.Any])
         __obj.asInstanceOf[ParsedResult]
       }
       
-      @scala.inline
-      implicit class ParsedResultMutableBuilder[Self <: ParsedResult] (val x: Self) extends AnyVal {
+      extension [Self <: ParsedResult](x: Self) {
         
-        @scala.inline
-        def setBrowser(value: BrowserDetails): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+        inline def setBrowser(value: BrowserDetails): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEngine(value: EngineDetails): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+        inline def setEngine(value: EngineDetails): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOs(value: OSDetails): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+        inline def setOs(value: OSDetails): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPlatform(value: PlatformDetails): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+        inline def setPlatform(value: PlatformDetails): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       }
     }
     
@@ -327,32 +308,24 @@ object mod {
     }
     object PlatformDetails {
       
-      @scala.inline
-      def apply(): PlatformDetails = {
+      inline def apply(): PlatformDetails = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[PlatformDetails]
       }
       
-      @scala.inline
-      implicit class PlatformDetailsMutableBuilder[Self <: PlatformDetails] (val x: Self) extends AnyVal {
+      extension [Self <: PlatformDetails](x: Self) {
         
-        @scala.inline
-        def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+        inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+        inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
         
-        @scala.inline
-        def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
+        inline def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVendorUndefined: Self = StObject.set(x, "vendor", js.undefined)
+        inline def setVendorUndefined: Self = StObject.set(x, "vendor", js.undefined)
       }
     }
     

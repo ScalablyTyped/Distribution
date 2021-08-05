@@ -69,6 +69,5 @@ object Email {
     * @param {() => void} callback Called after the e-mail is sent or the sending faile
     */
   /* static member */
-  @scala.inline
-  def send(callback: js.Function0[Unit], options: From): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def send(callback: js.Function0[Unit], options: From): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

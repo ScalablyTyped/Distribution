@@ -23,14 +23,10 @@ object mod {
     def this(app: App, options: PartialOptions) = this()
   }
   
-  @scala.inline
-  def getWindowPosition(tray: Tray): WindowPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("getWindowPosition")(tray.asInstanceOf[js.Any]).asInstanceOf[WindowPosition]
+  inline def getWindowPosition(tray: Tray): WindowPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("getWindowPosition")(tray.asInstanceOf[js.Any]).asInstanceOf[WindowPosition]
   
-  @scala.inline
-  def menubar(): Menubar = ^.asInstanceOf[js.Dynamic].applyDynamic("menubar")().asInstanceOf[Menubar]
-  @scala.inline
-  def menubar(options: PartialOptions): Menubar = ^.asInstanceOf[js.Dynamic].applyDynamic("menubar")(options.asInstanceOf[js.Any]).asInstanceOf[Menubar]
+  inline def menubar(): Menubar = ^.asInstanceOf[js.Dynamic].applyDynamic("menubar")().asInstanceOf[Menubar]
+  inline def menubar(options: PartialOptions): Menubar = ^.asInstanceOf[js.Dynamic].applyDynamic("menubar")(options.asInstanceOf[js.Any]).asInstanceOf[Menubar]
   
-  @scala.inline
-  def taskbarLocation(tray: Tray): TaskbarLocation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("taskbarLocation")(tray.asInstanceOf[js.Any]).asInstanceOf[TaskbarLocation_]
+  inline def taskbarLocation(tray: Tray): TaskbarLocation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("taskbarLocation")(tray.asInstanceOf[js.Any]).asInstanceOf[TaskbarLocation_]
 }

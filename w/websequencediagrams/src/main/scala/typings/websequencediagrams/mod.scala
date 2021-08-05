@@ -12,39 +12,23 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def diagram(description: String, style: Null, format: Null, callback: diagramCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def diagram(description: String, style: Null, format: OutputType, callback: diagramCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def diagram(description: String, style: Style, format: Null, callback: diagramCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def diagram(description: String, style: Style, format: OutputType, callback: diagramCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def diagram(description: Buffer, style: Null, format: Null, callback: diagramCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def diagram(description: Buffer, style: Null, format: OutputType, callback: diagramCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def diagram(description: Buffer, style: Style, format: Null, callback: diagramCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def diagram(description: Buffer, style: Style, format: OutputType, callback: diagramCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def diagram(description: String, style: Null, format: Null, callback: diagramCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def diagram(description: String, style: Null, format: OutputType, callback: diagramCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def diagram(description: String, style: Style, format: Null, callback: diagramCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def diagram(description: String, style: Style, format: OutputType, callback: diagramCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def diagram(description: Buffer, style: Null, format: Null, callback: diagramCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def diagram(description: Buffer, style: Null, format: OutputType, callback: diagramCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def diagram(description: Buffer, style: Style, format: Null, callback: diagramCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def diagram(description: Buffer, style: Style, format: OutputType, callback: diagramCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def diagramUrl(description: String, style: Null, format: Null, callback: diagramUrlCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram_url")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def diagramUrl(description: String, style: Null, format: OutputType, callback: diagramUrlCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram_url")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def diagramUrl(description: String, style: Style, format: Null, callback: diagramUrlCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram_url")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def diagramUrl(description: String, style: Style, format: OutputType, callback: diagramUrlCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram_url")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def diagramUrl(description: Buffer, style: Null, format: Null, callback: diagramUrlCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram_url")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def diagramUrl(description: Buffer, style: Null, format: OutputType, callback: diagramUrlCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram_url")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def diagramUrl(description: Buffer, style: Style, format: Null, callback: diagramUrlCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram_url")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def diagramUrl(description: Buffer, style: Style, format: OutputType, callback: diagramUrlCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram_url")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def diagramUrl(description: String, style: Null, format: Null, callback: diagramUrlCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram_url")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def diagramUrl(description: String, style: Null, format: OutputType, callback: diagramUrlCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram_url")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def diagramUrl(description: String, style: Style, format: Null, callback: diagramUrlCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram_url")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def diagramUrl(description: String, style: Style, format: OutputType, callback: diagramUrlCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram_url")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def diagramUrl(description: Buffer, style: Null, format: Null, callback: diagramUrlCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram_url")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def diagramUrl(description: Buffer, style: Null, format: OutputType, callback: diagramUrlCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram_url")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def diagramUrl(description: Buffer, style: Style, format: Null, callback: diagramUrlCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram_url")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def diagramUrl(description: Buffer, style: Style, format: OutputType, callback: diagramUrlCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram_url")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("websequencediagrams", "root")
   @js.native
@@ -62,14 +46,11 @@ object mod {
   trait OutputType extends StObject
   object OutputType {
     
-    @scala.inline
-    def pdf: typings.websequencediagrams.websequencediagramsStrings.pdf = "pdf".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.pdf]
+    inline def pdf: typings.websequencediagrams.websequencediagramsStrings.pdf = "pdf".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.pdf]
     
-    @scala.inline
-    def png: typings.websequencediagrams.websequencediagramsStrings.png = "png".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.png]
+    inline def png: typings.websequencediagrams.websequencediagramsStrings.png = "png".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.png]
     
-    @scala.inline
-    def svg: typings.websequencediagrams.websequencediagramsStrings.svg = "svg".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.svg]
+    inline def svg: typings.websequencediagrams.websequencediagramsStrings.svg = "svg".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.svg]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -89,41 +70,29 @@ object mod {
   trait Style extends StObject
   object Style {
     
-    @scala.inline
-    def default: typings.websequencediagrams.websequencediagramsStrings.default = "default".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.default]
+    inline def default: typings.websequencediagrams.websequencediagramsStrings.default = "default".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.default]
     
-    @scala.inline
-    def earth: typings.websequencediagrams.websequencediagramsStrings.earth = "earth".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.earth]
+    inline def earth: typings.websequencediagrams.websequencediagramsStrings.earth = "earth".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.earth]
     
-    @scala.inline
-    def magazine: typings.websequencediagrams.websequencediagramsStrings.magazine = "magazine".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.magazine]
+    inline def magazine: typings.websequencediagrams.websequencediagramsStrings.magazine = "magazine".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.magazine]
     
-    @scala.inline
-    def `modern-blue`: typings.websequencediagrams.websequencediagramsStrings.`modern-blue` = "modern-blue".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.`modern-blue`]
+    inline def `modern-blue`: typings.websequencediagrams.websequencediagramsStrings.`modern-blue` = "modern-blue".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.`modern-blue`]
     
-    @scala.inline
-    def mscgen: typings.websequencediagrams.websequencediagramsStrings.mscgen = "mscgen".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.mscgen]
+    inline def mscgen: typings.websequencediagrams.websequencediagramsStrings.mscgen = "mscgen".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.mscgen]
     
-    @scala.inline
-    def napkin: typings.websequencediagrams.websequencediagramsStrings.napkin = "napkin".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.napkin]
+    inline def napkin: typings.websequencediagrams.websequencediagramsStrings.napkin = "napkin".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.napkin]
     
-    @scala.inline
-    def omegapple: typings.websequencediagrams.websequencediagramsStrings.omegapple = "omegapple".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.omegapple]
+    inline def omegapple: typings.websequencediagrams.websequencediagramsStrings.omegapple = "omegapple".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.omegapple]
     
-    @scala.inline
-    def patent: typings.websequencediagrams.websequencediagramsStrings.patent = "patent".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.patent]
+    inline def patent: typings.websequencediagrams.websequencediagramsStrings.patent = "patent".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.patent]
     
-    @scala.inline
-    def qsd: typings.websequencediagrams.websequencediagramsStrings.qsd = "qsd".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.qsd]
+    inline def qsd: typings.websequencediagrams.websequencediagramsStrings.qsd = "qsd".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.qsd]
     
-    @scala.inline
-    def rose: typings.websequencediagrams.websequencediagramsStrings.rose = "rose".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.rose]
+    inline def rose: typings.websequencediagrams.websequencediagramsStrings.rose = "rose".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.rose]
     
-    @scala.inline
-    def roundgreen: typings.websequencediagrams.websequencediagramsStrings.roundgreen = "roundgreen".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.roundgreen]
+    inline def roundgreen: typings.websequencediagrams.websequencediagramsStrings.roundgreen = "roundgreen".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.roundgreen]
     
-    @scala.inline
-    def vs2010: typings.websequencediagrams.websequencediagramsStrings.vs2010 = "vs2010".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.vs2010]
+    inline def vs2010: typings.websequencediagrams.websequencediagramsStrings.vs2010 = "vs2010".asInstanceOf[typings.websequencediagrams.websequencediagramsStrings.vs2010]
   }
   
   type diagramCallback = js.Function3[

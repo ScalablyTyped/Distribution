@@ -23,31 +23,23 @@ trait SAMLProviderListEntry extends StObject {
 }
 object SAMLProviderListEntry {
   
-  @scala.inline
-  def apply(): SAMLProviderListEntry = {
+  inline def apply(): SAMLProviderListEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SAMLProviderListEntry]
   }
   
-  @scala.inline
-  implicit class SAMLProviderListEntryMutableBuilder[Self <: SAMLProviderListEntry] (val x: Self) extends AnyVal {
+  extension [Self <: SAMLProviderListEntry](x: Self) {
     
-    @scala.inline
-    def setArn(value: arnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: arnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setCreateDate(value: dateType): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
+    inline def setCreateDate(value: dateType): Self = StObject.set(x, "CreateDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
+    inline def setCreateDateUndefined: Self = StObject.set(x, "CreateDate", js.undefined)
     
-    @scala.inline
-    def setValidUntil(value: dateType): Self = StObject.set(x, "ValidUntil", value.asInstanceOf[js.Any])
+    inline def setValidUntil(value: dateType): Self = StObject.set(x, "ValidUntil", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidUntilUndefined: Self = StObject.set(x, "ValidUntil", js.undefined)
+    inline def setValidUntilUndefined: Self = StObject.set(x, "ValidUntil", js.undefined)
   }
 }

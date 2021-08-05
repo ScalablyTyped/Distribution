@@ -33,10 +33,8 @@ object customErrorUmdMinMod {
     var name: String = js.native
   }
   
-  @scala.inline
-  def customErrorFactory[Properties](fn: js.ThisFunction1[/* this */ Properties, /* repeated */ js.Any, Unit]): CustomErrorConstructor[Properties] = ^.asInstanceOf[js.Dynamic].applyDynamic("customErrorFactory")(fn.asInstanceOf[js.Any]).asInstanceOf[CustomErrorConstructor[Properties]]
-  @scala.inline
-  def customErrorFactory[Properties](
+  inline def customErrorFactory[Properties](fn: js.ThisFunction1[/* this */ Properties, /* repeated */ js.Any, Unit]): CustomErrorConstructor[Properties] = ^.asInstanceOf[js.Dynamic].applyDynamic("customErrorFactory")(fn.asInstanceOf[js.Any]).asInstanceOf[CustomErrorConstructor[Properties]]
+  inline def customErrorFactory[Properties](
     fn: js.ThisFunction1[/* this */ Properties, /* repeated */ js.Any, Unit],
     parent: GenericErrorConstructor
   ): CustomErrorConstructor[Properties] = (^.asInstanceOf[js.Dynamic].applyDynamic("customErrorFactory")(fn.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[CustomErrorConstructor[Properties]]

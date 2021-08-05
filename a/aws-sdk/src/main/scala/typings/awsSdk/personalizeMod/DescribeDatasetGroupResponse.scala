@@ -13,19 +13,15 @@ trait DescribeDatasetGroupResponse extends StObject {
 }
 object DescribeDatasetGroupResponse {
   
-  @scala.inline
-  def apply(): DescribeDatasetGroupResponse = {
+  inline def apply(): DescribeDatasetGroupResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeDatasetGroupResponse]
   }
   
-  @scala.inline
-  implicit class DescribeDatasetGroupResponseMutableBuilder[Self <: DescribeDatasetGroupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeDatasetGroupResponse](x: Self) {
     
-    @scala.inline
-    def setDatasetGroup(value: DatasetGroup): Self = StObject.set(x, "datasetGroup", value.asInstanceOf[js.Any])
+    inline def setDatasetGroup(value: DatasetGroup): Self = StObject.set(x, "datasetGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetGroupUndefined: Self = StObject.set(x, "datasetGroup", js.undefined)
+    inline def setDatasetGroupUndefined: Self = StObject.set(x, "datasetGroup", js.undefined)
   }
 }

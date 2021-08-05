@@ -18,28 +18,21 @@ trait ListConfigurationHistoryResponse extends StObject {
 }
 object ListConfigurationHistoryResponse {
   
-  @scala.inline
-  def apply(): ListConfigurationHistoryResponse = {
+  inline def apply(): ListConfigurationHistoryResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListConfigurationHistoryResponse]
   }
   
-  @scala.inline
-  implicit class ListConfigurationHistoryResponseMutableBuilder[Self <: ListConfigurationHistoryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListConfigurationHistoryResponse](x: Self) {
     
-    @scala.inline
-    def setEventList(value: ConfigurationEventList): Self = StObject.set(x, "EventList", value.asInstanceOf[js.Any])
+    inline def setEventList(value: ConfigurationEventList): Self = StObject.set(x, "EventList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventListUndefined: Self = StObject.set(x, "EventList", js.undefined)
+    inline def setEventListUndefined: Self = StObject.set(x, "EventList", js.undefined)
     
-    @scala.inline
-    def setEventListVarargs(value: ConfigurationEvent*): Self = StObject.set(x, "EventList", js.Array(value :_*))
+    inline def setEventListVarargs(value: ConfigurationEvent*): Self = StObject.set(x, "EventList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

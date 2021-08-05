@@ -13,16 +13,13 @@ trait DidChangeConfigurationParams extends StObject {
 }
 object DidChangeConfigurationParams {
   
-  @scala.inline
-  def apply(settings: js.Any): DidChangeConfigurationParams = {
+  inline def apply(settings: js.Any): DidChangeConfigurationParams = {
     val __obj = js.Dynamic.literal(settings = settings.asInstanceOf[js.Any])
     __obj.asInstanceOf[DidChangeConfigurationParams]
   }
   
-  @scala.inline
-  implicit class DidChangeConfigurationParamsMutableBuilder[Self <: DidChangeConfigurationParams] (val x: Self) extends AnyVal {
+  extension [Self <: DidChangeConfigurationParams](x: Self) {
     
-    @scala.inline
-    def setSettings(value: js.Any): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+    inline def setSettings(value: js.Any): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
   }
 }

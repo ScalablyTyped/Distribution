@@ -20,8 +20,7 @@ trait Column extends StObject {
 }
 object Column {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getDataType: () => String,
     getFieldName: () => String,
     getIndex: () => Double,
@@ -31,19 +30,14 @@ object Column {
     __obj.asInstanceOf[Column]
   }
   
-  @scala.inline
-  implicit class ColumnMutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
+  extension [Self <: Column](x: Self) {
     
-    @scala.inline
-    def setGetDataType(value: () => String): Self = StObject.set(x, "getDataType", js.Any.fromFunction0(value))
+    inline def setGetDataType(value: () => String): Self = StObject.set(x, "getDataType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFieldName(value: () => String): Self = StObject.set(x, "getFieldName", js.Any.fromFunction0(value))
+    inline def setGetFieldName(value: () => String): Self = StObject.set(x, "getFieldName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIndex(value: () => Double): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
+    inline def setGetIndex(value: () => Double): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIsReferenced(value: () => Boolean): Self = StObject.set(x, "getIsReferenced", js.Any.fromFunction0(value))
+    inline def setGetIsReferenced(value: () => Boolean): Self = StObject.set(x, "getIsReferenced", js.Any.fromFunction0(value))
   }
 }

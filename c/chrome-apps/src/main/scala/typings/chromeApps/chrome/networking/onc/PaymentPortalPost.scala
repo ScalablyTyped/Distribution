@@ -18,28 +18,21 @@ trait PaymentPortalPost extends StObject {
 }
 object PaymentPortalPost {
   
-  @scala.inline
-  def apply(): PaymentPortalPost = {
+  inline def apply(): PaymentPortalPost = {
     val __obj = js.Dynamic.literal(Method = "POST")
     __obj.asInstanceOf[PaymentPortalPost]
   }
   
-  @scala.inline
-  implicit class PaymentPortalPostMutableBuilder[Self <: PaymentPortalPost] (val x: Self) extends AnyVal {
+  extension [Self <: PaymentPortalPost](x: Self) {
     
-    @scala.inline
-    def setMethod(value: POST): Self = StObject.set(x, "Method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: POST): Self = StObject.set(x, "Method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostData(value: String): Self = StObject.set(x, "PostData", value.asInstanceOf[js.Any])
+    inline def setPostData(value: String): Self = StObject.set(x, "PostData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostDataUndefined: Self = StObject.set(x, "PostData", js.undefined)
+    inline def setPostDataUndefined: Self = StObject.set(x, "PostData", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
   }
 }

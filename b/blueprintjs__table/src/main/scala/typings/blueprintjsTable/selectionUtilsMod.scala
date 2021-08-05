@@ -13,8 +13,6 @@ object selectionUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def resizeRegion(region: IRegion, direction: Direction): IRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeRegion")(region.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[IRegion]
-  @scala.inline
-  def resizeRegion(region: IRegion, direction: Direction, focusedCell: IFocusedCellCoordinates): IRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeRegion")(region.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], focusedCell.asInstanceOf[js.Any])).asInstanceOf[IRegion]
+  inline def resizeRegion(region: IRegion, direction: Direction): IRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeRegion")(region.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[IRegion]
+  inline def resizeRegion(region: IRegion, direction: Direction, focusedCell: IFocusedCellCoordinates): IRegion = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeRegion")(region.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], focusedCell.asInstanceOf[js.Any])).asInstanceOf[IRegion]
 }

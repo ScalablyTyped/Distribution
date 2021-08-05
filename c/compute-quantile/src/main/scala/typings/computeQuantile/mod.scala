@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(array: ArrayLike[Double], quantile: Double): Double = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], quantile.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def apply(array: ArrayLike[Double], quantile: Double, options: Options): Double = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], quantile.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def apply(array: ArrayLike[Double], quantile: Double): Double = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], quantile.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def apply(array: ArrayLike[Double], quantile: Double, options: Options): Double = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], quantile.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   @JSImport("compute-quantile", JSImport.Namespace)
   @js.native
@@ -28,20 +26,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setSorted(value: Boolean): Self = StObject.set(x, "sorted", value.asInstanceOf[js.Any])
+      inline def setSorted(value: Boolean): Self = StObject.set(x, "sorted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortedUndefined: Self = StObject.set(x, "sorted", js.undefined)
+      inline def setSortedUndefined: Self = StObject.set(x, "sorted", js.undefined)
     }
   }
 }

@@ -15,8 +15,7 @@ trait ClientValueObjectCollection[T]
 }
 object ClientValueObjectCollection {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -29,10 +28,8 @@ object ClientValueObjectCollection {
     __obj.asInstanceOf[ClientValueObjectCollection[T]]
   }
   
-  @scala.inline
-  implicit class ClientValueObjectCollectionMutableBuilder[Self <: ClientValueObjectCollection[?], T] (val x: Self & ClientValueObjectCollection[T]) extends AnyVal {
+  extension [Self <: ClientValueObjectCollection[?], T](x: Self & ClientValueObjectCollection[T]) {
     
-    @scala.inline
-    def setGet_count(value: () => Double): Self = StObject.set(x, "get_count", js.Any.fromFunction0(value))
+    inline def setGet_count(value: () => Double): Self = StObject.set(x, "get_count", js.Any.fromFunction0(value))
   }
 }

@@ -20,43 +20,31 @@ trait FromDataItemData extends StObject {
 }
 object FromDataItemData {
   
-  @scala.inline
-  def apply(): FromDataItemData = {
+  inline def apply(): FromDataItemData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FromDataItemData]
   }
   
-  @scala.inline
-  implicit class FromDataItemDataMutableBuilder[Self <: FromDataItemData] (val x: Self) extends AnyVal {
+  extension [Self <: FromDataItemData](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
-    @scala.inline
-    def setEvent(value: event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: event): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    @scala.inline
-    def setFromData(value: js.Any): Self = StObject.set(x, "fromData", value.asInstanceOf[js.Any])
+    inline def setFromData(value: js.Any): Self = StObject.set(x, "fromData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromDataUndefined: Self = StObject.set(x, "fromData", js.undefined)
+    inline def setFromDataUndefined: Self = StObject.set(x, "fromData", js.undefined)
     
-    @scala.inline
-    def setItemData(value: js.Any): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
+    inline def setItemData(value: js.Any): Self = StObject.set(x, "itemData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemDataUndefined: Self = StObject.set(x, "itemData", js.undefined)
+    inline def setItemDataUndefined: Self = StObject.set(x, "itemData", js.undefined)
     
-    @scala.inline
-    def setItemElement(value: dxElement): Self = StObject.set(x, "itemElement", value.asInstanceOf[js.Any])
+    inline def setItemElement(value: dxElement): Self = StObject.set(x, "itemElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemElementUndefined: Self = StObject.set(x, "itemElement", js.undefined)
+    inline def setItemElementUndefined: Self = StObject.set(x, "itemElement", js.undefined)
   }
 }

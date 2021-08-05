@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DirectionsMode extends StObject
 object DirectionsMode {
   
-  @scala.inline
-  def cycling: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.cycling = "cycling".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.cycling]
+  inline def cycling: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.cycling = "cycling".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.cycling]
   
-  @scala.inline
-  def driving: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.driving = "driving".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.driving]
+  inline def driving: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.driving = "driving".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.driving]
   
-  @scala.inline
-  def ferry: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.ferry = "ferry".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.ferry]
+  inline def ferry: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.ferry = "ferry".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.ferry]
   
-  @scala.inline
-  def train: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.train = "train".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.train]
+  inline def train: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.train = "train".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.train]
   
-  @scala.inline
-  def unaccessible: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.unaccessible = "unaccessible".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.unaccessible]
+  inline def unaccessible: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.unaccessible = "unaccessible".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.unaccessible]
   
-  @scala.inline
-  def walking: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.walking = "walking".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.walking]
+  inline def walking: typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.walking = "walking".asInstanceOf[typings.mapboxMapboxSdk.mapboxMapboxSdkStrings.walking]
 }

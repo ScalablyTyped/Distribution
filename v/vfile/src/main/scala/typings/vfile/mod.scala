@@ -39,35 +39,25 @@ object mod extends Shortcut {
   trait BufferEncoding extends StObject
   object BufferEncoding {
     
-    @scala.inline
-    def ascii: typings.vfile.vfileStrings.ascii = "ascii".asInstanceOf[typings.vfile.vfileStrings.ascii]
+    inline def ascii: typings.vfile.vfileStrings.ascii = "ascii".asInstanceOf[typings.vfile.vfileStrings.ascii]
     
-    @scala.inline
-    def base64: typings.vfile.vfileStrings.base64 = "base64".asInstanceOf[typings.vfile.vfileStrings.base64]
+    inline def base64: typings.vfile.vfileStrings.base64 = "base64".asInstanceOf[typings.vfile.vfileStrings.base64]
     
-    @scala.inline
-    def binary: typings.vfile.vfileStrings.binary = "binary".asInstanceOf[typings.vfile.vfileStrings.binary]
+    inline def binary: typings.vfile.vfileStrings.binary = "binary".asInstanceOf[typings.vfile.vfileStrings.binary]
     
-    @scala.inline
-    def hex: typings.vfile.vfileStrings.hex = "hex".asInstanceOf[typings.vfile.vfileStrings.hex]
+    inline def hex: typings.vfile.vfileStrings.hex = "hex".asInstanceOf[typings.vfile.vfileStrings.hex]
     
-    @scala.inline
-    def latin1: typings.vfile.vfileStrings.latin1 = "latin1".asInstanceOf[typings.vfile.vfileStrings.latin1]
+    inline def latin1: typings.vfile.vfileStrings.latin1 = "latin1".asInstanceOf[typings.vfile.vfileStrings.latin1]
     
-    @scala.inline
-    def `ucs-2`: typings.vfile.vfileStrings.`ucs-2` = "ucs-2".asInstanceOf[typings.vfile.vfileStrings.`ucs-2`]
+    inline def `ucs-2`: typings.vfile.vfileStrings.`ucs-2` = "ucs-2".asInstanceOf[typings.vfile.vfileStrings.`ucs-2`]
     
-    @scala.inline
-    def ucs2: typings.vfile.vfileStrings.ucs2 = "ucs2".asInstanceOf[typings.vfile.vfileStrings.ucs2]
+    inline def ucs2: typings.vfile.vfileStrings.ucs2 = "ucs2".asInstanceOf[typings.vfile.vfileStrings.ucs2]
     
-    @scala.inline
-    def `utf-8`: typings.vfile.vfileStrings.`utf-8` = "utf-8".asInstanceOf[typings.vfile.vfileStrings.`utf-8`]
+    inline def `utf-8`: typings.vfile.vfileStrings.`utf-8` = "utf-8".asInstanceOf[typings.vfile.vfileStrings.`utf-8`]
     
-    @scala.inline
-    def utf16le: typings.vfile.vfileStrings.utf16le = "utf16le".asInstanceOf[typings.vfile.vfileStrings.utf16le]
+    inline def utf16le: typings.vfile.vfileStrings.utf16le = "utf16le".asInstanceOf[typings.vfile.vfileStrings.utf16le]
     
-    @scala.inline
-    def utf8: typings.vfile.vfileStrings.utf8 = "utf8".asInstanceOf[typings.vfile.vfileStrings.utf8]
+    inline def utf8: typings.vfile.vfileStrings.utf8 = "utf8".asInstanceOf[typings.vfile.vfileStrings.utf8]
   }
   
   type Settings = StringDictionary[js.Any]
@@ -241,62 +231,44 @@ object mod extends Shortcut {
   }
   object VFileOptions {
     
-    @scala.inline
-    def apply(): VFileOptions = {
+    inline def apply(): VFileOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VFileOptions]
     }
     
-    @scala.inline
-    implicit class VFileOptionsMutableBuilder[Self <: VFileOptions] (val x: Self) extends AnyVal {
+    extension [Self <: VFileOptions](x: Self) {
       
-      @scala.inline
-      def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
+      inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasenameUndefined: Self = StObject.set(x, "basename", js.undefined)
+      inline def setBasenameUndefined: Self = StObject.set(x, "basename", js.undefined)
       
-      @scala.inline
-      def setContents(value: VFileContents): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+      inline def setContents(value: VFileContents): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
+      inline def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDirname(value: String): Self = StObject.set(x, "dirname", value.asInstanceOf[js.Any])
+      inline def setDirname(value: String): Self = StObject.set(x, "dirname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirnameUndefined: Self = StObject.set(x, "dirname", js.undefined)
+      inline def setDirnameUndefined: Self = StObject.set(x, "dirname", js.undefined)
       
-      @scala.inline
-      def setExtname(value: String): Self = StObject.set(x, "extname", value.asInstanceOf[js.Any])
+      inline def setExtname(value: String): Self = StObject.set(x, "extname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtnameUndefined: Self = StObject.set(x, "extname", js.undefined)
+      inline def setExtnameUndefined: Self = StObject.set(x, "extname", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setStem(value: String): Self = StObject.set(x, "stem", value.asInstanceOf[js.Any])
+      inline def setStem(value: String): Self = StObject.set(x, "stem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStemUndefined: Self = StObject.set(x, "stem", js.undefined)
+      inline def setStemUndefined: Self = StObject.set(x, "stem", js.undefined)
     }
   }
   

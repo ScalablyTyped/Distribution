@@ -16,22 +16,17 @@ trait X
 }
 object X {
   
-  @scala.inline
-  def apply(y: DomainTuple): X = {
+  inline def apply(y: DomainTuple): X = {
     val __obj = js.Dynamic.literal(y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[X]
   }
   
-  @scala.inline
-  implicit class XMutableBuilder[Self <: X] (val x: Self) extends AnyVal {
+  extension [Self <: X](x: Self) {
     
-    @scala.inline
-    def setX(value: DomainTuple): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: DomainTuple): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: DomainTuple): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: DomainTuple): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

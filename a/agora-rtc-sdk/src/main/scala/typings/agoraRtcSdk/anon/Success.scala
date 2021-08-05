@@ -24,22 +24,17 @@ trait Success extends StObject {
 }
 object Success {
   
-  @scala.inline
-  def apply(reason: String, success: Boolean, uid: Double | String): Success = {
+  inline def apply(reason: String, success: Boolean, uid: Double | String): Success = {
     val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Success]
   }
   
-  @scala.inline
-  implicit class SuccessMutableBuilder[Self <: Success] (val x: Self) extends AnyVal {
+  extension [Self <: Success](x: Self) {
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUid(value: Double | String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+    inline def setUid(value: Double | String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
   }
 }

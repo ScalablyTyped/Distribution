@@ -49,7 +49,7 @@ object webApiMod {
     
     /* private */ def _readTaskLibSecrets(lookupKey: js.Any): js.Any = js.native
     
-    var _resourceAreas: js.Any = js.native
+    /* private */ var _resourceAreas: js.Any = js.native
     
     var authHandler: IRequestHandler = js.native
     
@@ -189,30 +189,20 @@ object webApiMod {
       * @param defaultServerUrl default server url to use when creating new apis from factory methods
       * @param defaultAuthHandler default authentication credentials to use when creating new apis from factory methods
       */
-    @scala.inline
-    def createWithBearerToken(defaultUrl: String, token: String): WebApi = (^.asInstanceOf[js.Dynamic].applyDynamic("createWithBearerToken")(defaultUrl.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[WebApi]
-    @scala.inline
-    def createWithBearerToken(defaultUrl: String, token: String, options: IRequestOptions): WebApi = (^.asInstanceOf[js.Dynamic].applyDynamic("createWithBearerToken")(defaultUrl.asInstanceOf[js.Any], token.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WebApi]
+    inline def createWithBearerToken(defaultUrl: String, token: String): WebApi = (^.asInstanceOf[js.Dynamic].applyDynamic("createWithBearerToken")(defaultUrl.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[WebApi]
+    inline def createWithBearerToken(defaultUrl: String, token: String, options: IRequestOptions): WebApi = (^.asInstanceOf[js.Dynamic].applyDynamic("createWithBearerToken")(defaultUrl.asInstanceOf[js.Any], token.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WebApi]
   }
   
-  @scala.inline
-  def getBasicHandler(username: String, password: String): IRequestHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("getBasicHandler")(username.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[IRequestHandler]
+  inline def getBasicHandler(username: String, password: String): IRequestHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("getBasicHandler")(username.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[IRequestHandler]
   
-  @scala.inline
-  def getBearerHandler(token: String): IRequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("getBearerHandler")(token.asInstanceOf[js.Any]).asInstanceOf[IRequestHandler]
+  inline def getBearerHandler(token: String): IRequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("getBearerHandler")(token.asInstanceOf[js.Any]).asInstanceOf[IRequestHandler]
   
-  @scala.inline
-  def getHandlerFromToken(token: String): IRequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("getHandlerFromToken")(token.asInstanceOf[js.Any]).asInstanceOf[IRequestHandler]
+  inline def getHandlerFromToken(token: String): IRequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("getHandlerFromToken")(token.asInstanceOf[js.Any]).asInstanceOf[IRequestHandler]
   
-  @scala.inline
-  def getNtlmHandler(username: String, password: String): IRequestHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("getNtlmHandler")(username.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[IRequestHandler]
-  @scala.inline
-  def getNtlmHandler(username: String, password: String, workstation: String): IRequestHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("getNtlmHandler")(username.asInstanceOf[js.Any], password.asInstanceOf[js.Any], workstation.asInstanceOf[js.Any])).asInstanceOf[IRequestHandler]
-  @scala.inline
-  def getNtlmHandler(username: String, password: String, workstation: String, domain: String): IRequestHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("getNtlmHandler")(username.asInstanceOf[js.Any], password.asInstanceOf[js.Any], workstation.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[IRequestHandler]
-  @scala.inline
-  def getNtlmHandler(username: String, password: String, workstation: Unit, domain: String): IRequestHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("getNtlmHandler")(username.asInstanceOf[js.Any], password.asInstanceOf[js.Any], workstation.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[IRequestHandler]
+  inline def getNtlmHandler(username: String, password: String): IRequestHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("getNtlmHandler")(username.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[IRequestHandler]
+  inline def getNtlmHandler(username: String, password: String, workstation: String): IRequestHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("getNtlmHandler")(username.asInstanceOf[js.Any], password.asInstanceOf[js.Any], workstation.asInstanceOf[js.Any])).asInstanceOf[IRequestHandler]
+  inline def getNtlmHandler(username: String, password: String, workstation: String, domain: String): IRequestHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("getNtlmHandler")(username.asInstanceOf[js.Any], password.asInstanceOf[js.Any], workstation.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[IRequestHandler]
+  inline def getNtlmHandler(username: String, password: String, workstation: Unit, domain: String): IRequestHandler = (^.asInstanceOf[js.Dynamic].applyDynamic("getNtlmHandler")(username.asInstanceOf[js.Any], password.asInstanceOf[js.Any], workstation.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[IRequestHandler]
   
-  @scala.inline
-  def getPersonalAccessTokenHandler(token: String): IRequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("getPersonalAccessTokenHandler")(token.asInstanceOf[js.Any]).asInstanceOf[IRequestHandler]
+  inline def getPersonalAccessTokenHandler(token: String): IRequestHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("getPersonalAccessTokenHandler")(token.asInstanceOf[js.Any]).asInstanceOf[IRequestHandler]
 }

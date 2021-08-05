@@ -14,25 +14,19 @@ trait ApiUrl extends StObject {
 }
 object ApiUrl {
   
-  @scala.inline
-  def apply(): ApiUrl = {
+  inline def apply(): ApiUrl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApiUrl]
   }
   
-  @scala.inline
-  implicit class ApiUrlMutableBuilder[Self <: ApiUrl] (val x: Self) extends AnyVal {
+  extension [Self <: ApiUrl](x: Self) {
     
-    @scala.inline
-    def setApiUrl(value: String): Self = StObject.set(x, "apiUrl", value.asInstanceOf[js.Any])
+    inline def setApiUrl(value: String): Self = StObject.set(x, "apiUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiUrlUndefined: Self = StObject.set(x, "apiUrl", js.undefined)
+    inline def setApiUrlUndefined: Self = StObject.set(x, "apiUrl", js.undefined)
     
-    @scala.inline
-    def setBrowserUrl(value: String): Self = StObject.set(x, "browserUrl", value.asInstanceOf[js.Any])
+    inline def setBrowserUrl(value: String): Self = StObject.set(x, "browserUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowserUrlUndefined: Self = StObject.set(x, "browserUrl", js.undefined)
+    inline def setBrowserUrlUndefined: Self = StObject.set(x, "browserUrl", js.undefined)
   }
 }

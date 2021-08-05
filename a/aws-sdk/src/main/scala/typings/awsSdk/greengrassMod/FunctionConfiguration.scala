@@ -43,55 +43,39 @@ trait FunctionConfiguration extends StObject {
 }
 object FunctionConfiguration {
   
-  @scala.inline
-  def apply(): FunctionConfiguration = {
+  inline def apply(): FunctionConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FunctionConfiguration]
   }
   
-  @scala.inline
-  implicit class FunctionConfigurationMutableBuilder[Self <: FunctionConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: FunctionConfiguration](x: Self) {
     
-    @scala.inline
-    def setEncodingType(value: EncodingType): Self = StObject.set(x, "EncodingType", value.asInstanceOf[js.Any])
+    inline def setEncodingType(value: EncodingType): Self = StObject.set(x, "EncodingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingTypeUndefined: Self = StObject.set(x, "EncodingType", js.undefined)
+    inline def setEncodingTypeUndefined: Self = StObject.set(x, "EncodingType", js.undefined)
     
-    @scala.inline
-    def setEnvironment(value: FunctionConfigurationEnvironment): Self = StObject.set(x, "Environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: FunctionConfigurationEnvironment): Self = StObject.set(x, "Environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentUndefined: Self = StObject.set(x, "Environment", js.undefined)
+    inline def setEnvironmentUndefined: Self = StObject.set(x, "Environment", js.undefined)
     
-    @scala.inline
-    def setExecArgs(value: string): Self = StObject.set(x, "ExecArgs", value.asInstanceOf[js.Any])
+    inline def setExecArgs(value: string): Self = StObject.set(x, "ExecArgs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecArgsUndefined: Self = StObject.set(x, "ExecArgs", js.undefined)
+    inline def setExecArgsUndefined: Self = StObject.set(x, "ExecArgs", js.undefined)
     
-    @scala.inline
-    def setExecutable(value: string): Self = StObject.set(x, "Executable", value.asInstanceOf[js.Any])
+    inline def setExecutable(value: string): Self = StObject.set(x, "Executable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutableUndefined: Self = StObject.set(x, "Executable", js.undefined)
+    inline def setExecutableUndefined: Self = StObject.set(x, "Executable", js.undefined)
     
-    @scala.inline
-    def setMemorySize(value: integer): Self = StObject.set(x, "MemorySize", value.asInstanceOf[js.Any])
+    inline def setMemorySize(value: integer): Self = StObject.set(x, "MemorySize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemorySizeUndefined: Self = StObject.set(x, "MemorySize", js.undefined)
+    inline def setMemorySizeUndefined: Self = StObject.set(x, "MemorySize", js.undefined)
     
-    @scala.inline
-    def setPinned(value: boolean): Self = StObject.set(x, "Pinned", value.asInstanceOf[js.Any])
+    inline def setPinned(value: boolean): Self = StObject.set(x, "Pinned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPinnedUndefined: Self = StObject.set(x, "Pinned", js.undefined)
+    inline def setPinnedUndefined: Self = StObject.set(x, "Pinned", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: integer): Self = StObject.set(x, "Timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: integer): Self = StObject.set(x, "Timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "Timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "Timeout", js.undefined)
   }
 }

@@ -15,20 +15,16 @@ trait ColumnRequestEvent
 }
 object ColumnRequestEvent {
   
-  @scala.inline
-  def apply(api: GridApi, columnApi: ColumnApi, columns: js.Array[Column], `type`: String): ColumnRequestEvent = {
+  inline def apply(api: GridApi, columnApi: ColumnApi, columns: js.Array[Column], `type`: String): ColumnRequestEvent = {
     val __obj = js.Dynamic.literal(api = api.asInstanceOf[js.Any], columnApi = columnApi.asInstanceOf[js.Any], columns = columns.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnRequestEvent]
   }
   
-  @scala.inline
-  implicit class ColumnRequestEventMutableBuilder[Self <: ColumnRequestEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnRequestEvent](x: Self) {
     
-    @scala.inline
-    def setColumns(value: js.Array[Column]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[Column]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsVarargs(value: Column*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: Column*): Self = StObject.set(x, "columns", js.Array(value :_*))
   }
 }

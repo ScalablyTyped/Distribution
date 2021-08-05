@@ -16,28 +16,21 @@ trait SchemaSeries extends StObject {
 }
 object SchemaSeries {
   
-  @scala.inline
-  def apply(): SchemaSeries = {
+  inline def apply(): SchemaSeries = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSeries]
   }
   
-  @scala.inline
-  implicit class SchemaSeriesMutableBuilder[Self <: SchemaSeries] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSeries](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setSeries(value: js.Array[BannerImageUrl]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
+    inline def setSeries(value: js.Array[BannerImageUrl]): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
+    inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    @scala.inline
-    def setSeriesVarargs(value: BannerImageUrl*): Self = StObject.set(x, "series", js.Array(value :_*))
+    inline def setSeriesVarargs(value: BannerImageUrl*): Self = StObject.set(x, "series", js.Array(value :_*))
   }
 }

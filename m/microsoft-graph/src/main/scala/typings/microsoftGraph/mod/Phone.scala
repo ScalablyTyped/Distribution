@@ -21,49 +21,35 @@ trait Phone extends StObject {
 }
 object Phone {
   
-  @scala.inline
-  def apply(): Phone = {
+  inline def apply(): Phone = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Phone]
   }
   
-  @scala.inline
-  implicit class PhoneMutableBuilder[Self <: Phone] (val x: Self) extends AnyVal {
+  extension [Self <: Phone](x: Self) {
     
-    @scala.inline
-    def setLanguage(value: NullableOption[String]): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: NullableOption[String]): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageNull: Self = StObject.set(x, "language", null)
+    inline def setLanguageNull: Self = StObject.set(x, "language", null)
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setNumber(value: NullableOption[String]): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: NullableOption[String]): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberNull: Self = StObject.set(x, "number", null)
+    inline def setNumberNull: Self = StObject.set(x, "number", null)
     
-    @scala.inline
-    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+    inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
-    @scala.inline
-    def setRegion(value: NullableOption[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: NullableOption[String]): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionNull: Self = StObject.set(x, "region", null)
+    inline def setRegionNull: Self = StObject.set(x, "region", null)
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
-    @scala.inline
-    def setType(value: NullableOption[PhoneType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NullableOption[PhoneType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeNull: Self = StObject.set(x, "type", null)
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

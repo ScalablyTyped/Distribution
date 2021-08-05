@@ -31,8 +31,7 @@ trait GetBackgroundAudioPlayerStateSuccessCallbackResult extends StObject {
 }
 object GetBackgroundAudioPlayerStateSuccessCallbackResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currentPosition: Double,
     dataUrl: String,
     downloadPercent: Double,
@@ -43,22 +42,16 @@ object GetBackgroundAudioPlayerStateSuccessCallbackResult {
     __obj.asInstanceOf[GetBackgroundAudioPlayerStateSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class GetBackgroundAudioPlayerStateSuccessCallbackResultMutableBuilder[Self <: GetBackgroundAudioPlayerStateSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetBackgroundAudioPlayerStateSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setCurrentPosition(value: Double): Self = StObject.set(x, "currentPosition", value.asInstanceOf[js.Any])
+    inline def setCurrentPosition(value: Double): Self = StObject.set(x, "currentPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUrl(value: String): Self = StObject.set(x, "dataUrl", value.asInstanceOf[js.Any])
+    inline def setDataUrl(value: String): Self = StObject.set(x, "dataUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadPercent(value: Double): Self = StObject.set(x, "downloadPercent", value.asInstanceOf[js.Any])
+    inline def setDownloadPercent(value: Double): Self = StObject.set(x, "downloadPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: `0` | `1` | `2`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: `0` | `1` | `2`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

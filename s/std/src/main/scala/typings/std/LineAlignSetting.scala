@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LineAlignSetting extends StObject
 object LineAlignSetting {
   
-  @scala.inline
-  def center: typings.std.stdStrings.center = "center".asInstanceOf[typings.std.stdStrings.center]
+  inline def center: typings.std.stdStrings.center = "center".asInstanceOf[typings.std.stdStrings.center]
   
-  @scala.inline
-  def end: typings.std.stdStrings.end = "end".asInstanceOf[typings.std.stdStrings.end]
+  inline def end: typings.std.stdStrings.end = "end".asInstanceOf[typings.std.stdStrings.end]
   
-  @scala.inline
-  def start: typings.std.stdStrings.start = "start".asInstanceOf[typings.std.stdStrings.start]
+  inline def start: typings.std.stdStrings.start = "start".asInstanceOf[typings.std.stdStrings.start]
 }

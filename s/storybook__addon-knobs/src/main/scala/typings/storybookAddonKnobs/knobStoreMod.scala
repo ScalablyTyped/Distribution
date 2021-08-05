@@ -81,8 +81,7 @@ object knobStoreMod {
   }
   object KnobStore {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       callbacks: js.Array[Callback],
       get: String => typeanygroupIdstringundef | DefaultValue,
       getAll: () => Record[String, KnobStoreKnob],
@@ -99,50 +98,35 @@ object knobStoreMod {
       __obj.asInstanceOf[KnobStore]
     }
     
-    @scala.inline
-    implicit class KnobStoreMutableBuilder[Self <: KnobStore] (val x: Self) extends AnyVal {
+    extension [Self <: KnobStore](x: Self) {
       
-      @scala.inline
-      def setCallbacks(value: js.Array[Callback]): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
+      inline def setCallbacks(value: js.Array[Callback]): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallbacksVarargs(value: Callback*): Self = StObject.set(x, "callbacks", js.Array(value :_*))
+      inline def setCallbacksVarargs(value: Callback*): Self = StObject.set(x, "callbacks", js.Array(value :_*))
       
-      @scala.inline
-      def setGet(value: String => typeanygroupIdstringundef | DefaultValue): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => typeanygroupIdstringundef | DefaultValue): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetAll(value: () => Record[String, KnobStoreKnob]): Self = StObject.set(x, "getAll", js.Any.fromFunction0(value))
+      inline def setGetAll(value: () => Record[String, KnobStoreKnob]): Self = StObject.set(x, "getAll", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+      inline def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMarkAllUnused(value: () => Unit): Self = StObject.set(x, "markAllUnused", js.Any.fromFunction0(value))
+      inline def setMarkAllUnused(value: () => Unit): Self = StObject.set(x, "markAllUnused", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSet(value: (String, KnobStoreKnob) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (String, KnobStoreKnob) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setStore(value: Record[String, KnobStoreKnob]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: Record[String, KnobStoreKnob]): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscribe(value: Callback => Unit): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
+      inline def setSubscribe(value: Callback => Unit): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTimer(value: Double): Self = StObject.set(x, "timer", value.asInstanceOf[js.Any])
+      inline def setTimer(value: Double): Self = StObject.set(x, "timer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimerUndefined: Self = StObject.set(x, "timer", js.undefined)
+      inline def setTimerUndefined: Self = StObject.set(x, "timer", js.undefined)
       
-      @scala.inline
-      def setUnsubscribe(value: Callback => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction1(value))
+      inline def setUnsubscribe(value: Callback => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdate(value: (String, Partial[KnobStoreKnob]) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+      inline def setUpdate(value: (String, Partial[KnobStoreKnob]) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
     }
   }
   

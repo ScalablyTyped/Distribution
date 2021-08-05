@@ -17,25 +17,19 @@ trait CommuteInfo extends StObject {
 }
 object CommuteInfo {
   
-  @scala.inline
-  def apply(): CommuteInfo = {
+  inline def apply(): CommuteInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommuteInfo]
   }
   
-  @scala.inline
-  implicit class CommuteInfoMutableBuilder[Self <: CommuteInfo] (val x: Self) extends AnyVal {
+  extension [Self <: CommuteInfo](x: Self) {
     
-    @scala.inline
-    def setJobLocation(value: Location): Self = StObject.set(x, "jobLocation", value.asInstanceOf[js.Any])
+    inline def setJobLocation(value: Location): Self = StObject.set(x, "jobLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobLocationUndefined: Self = StObject.set(x, "jobLocation", js.undefined)
+    inline def setJobLocationUndefined: Self = StObject.set(x, "jobLocation", js.undefined)
     
-    @scala.inline
-    def setTravelDuration(value: String): Self = StObject.set(x, "travelDuration", value.asInstanceOf[js.Any])
+    inline def setTravelDuration(value: String): Self = StObject.set(x, "travelDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTravelDurationUndefined: Self = StObject.set(x, "travelDuration", js.undefined)
+    inline def setTravelDurationUndefined: Self = StObject.set(x, "travelDuration", js.undefined)
   }
 }

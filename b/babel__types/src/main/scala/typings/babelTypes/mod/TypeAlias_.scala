@@ -25,29 +25,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object TypeAlias_ {
   
-  @scala.inline
-  def apply(id: Identifier_, right: FlowType): TypeAlias_ = {
+  inline def apply(id: Identifier_, right: FlowType): TypeAlias_ = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeParameters = null)
     __obj.updateDynamic("type")("TypeAlias")
     __obj.asInstanceOf[TypeAlias_]
   }
   
-  @scala.inline
-  implicit class TypeAlias_MutableBuilder[Self <: TypeAlias_] (val x: Self) extends AnyVal {
+  extension [Self <: TypeAlias_](x: Self) {
     
-    @scala.inline
-    def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: FlowType): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: FlowType): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: TypeAlias): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TypeAlias): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeParameters(value: TypeParameterDeclaration_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
+    inline def setTypeParameters(value: TypeParameterDeclaration_): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeParametersNull: Self = StObject.set(x, "typeParameters", null)
+    inline def setTypeParametersNull: Self = StObject.set(x, "typeParameters", null)
   }
 }

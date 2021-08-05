@@ -18,25 +18,19 @@ trait S3AccessControlPolicy extends StObject {
 }
 object S3AccessControlPolicy {
   
-  @scala.inline
-  def apply(): S3AccessControlPolicy = {
+  inline def apply(): S3AccessControlPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[S3AccessControlPolicy]
   }
   
-  @scala.inline
-  implicit class S3AccessControlPolicyMutableBuilder[Self <: S3AccessControlPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: S3AccessControlPolicy](x: Self) {
     
-    @scala.inline
-    def setAccessControlList(value: S3AccessControlList): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
+    inline def setAccessControlList(value: S3AccessControlList): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessControlListUndefined: Self = StObject.set(x, "AccessControlList", js.undefined)
+    inline def setAccessControlListUndefined: Self = StObject.set(x, "AccessControlList", js.undefined)
     
-    @scala.inline
-    def setCannedAccessControlList(value: S3CannedAccessControlList): Self = StObject.set(x, "CannedAccessControlList", value.asInstanceOf[js.Any])
+    inline def setCannedAccessControlList(value: S3CannedAccessControlList): Self = StObject.set(x, "CannedAccessControlList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCannedAccessControlListUndefined: Self = StObject.set(x, "CannedAccessControlList", js.undefined)
+    inline def setCannedAccessControlListUndefined: Self = StObject.set(x, "CannedAccessControlList", js.undefined)
   }
 }

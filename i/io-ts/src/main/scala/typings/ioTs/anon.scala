@@ -17,17 +17,14 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(): `0` = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal(length = 3)
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setLength(value: typings.ioTs.ioTsNumbers.`3`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: typings.ioTs.ioTsNumbers.`3`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -37,17 +34,14 @@ object anon {
   }
   object `1` {
     
-    @scala.inline
-    def apply(): `1` = {
+    inline def apply(): `1` = {
       val __obj = js.Dynamic.literal(length = 4)
       __obj.asInstanceOf[`1`]
     }
     
-    @scala.inline
-    implicit class `1MutableBuilder`[Self <: `1`] (val x: Self) extends AnyVal {
+    extension [Self <: `1`](x: Self) {
       
-      @scala.inline
-      def setLength(value: `4`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: `4`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -57,17 +51,14 @@ object anon {
   }
   object `2` {
     
-    @scala.inline
-    def apply(): `2` = {
+    inline def apply(): `2` = {
       val __obj = js.Dynamic.literal(length = 5)
       __obj.asInstanceOf[`2`]
     }
     
-    @scala.inline
-    implicit class `2MutableBuilder`[Self <: `2`] (val x: Self) extends AnyVal {
+    extension [Self <: `2`](x: Self) {
       
-      @scala.inline
-      def setLength(value: `5`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: `5`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -77,17 +68,14 @@ object anon {
   }
   object `3` {
     
-    @scala.inline
-    def apply(): `3` = {
+    inline def apply(): `3` = {
       val __obj = js.Dynamic.literal(length = 1)
       __obj.asInstanceOf[`3`]
     }
     
-    @scala.inline
-    implicit class `3MutableBuilder`[Self <: `3`] (val x: Self) extends AnyVal {
+    extension [Self <: `3`](x: Self) {
       
-      @scala.inline
-      def setLength(value: typings.ioTs.ioTsNumbers.`1`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: typings.ioTs.ioTsNumbers.`1`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -107,8 +95,7 @@ object anon {
   }
   object Index {
     
-    @scala.inline
-    def apply[E, R](
+    inline def apply[E, R](
       Index: (Double, Kind, FreeSemigroup[DecodeError[E]]) => R,
       Key: (String, Kind, FreeSemigroup[DecodeError[E]]) => R,
       Lazy: (String, FreeSemigroup[DecodeError[E]]) => R,
@@ -120,26 +107,19 @@ object anon {
       __obj.asInstanceOf[Index[E, R]]
     }
     
-    @scala.inline
-    implicit class IndexMutableBuilder[Self <: Index[?, ?], E, R] (val x: Self & (Index[E, R])) extends AnyVal {
+    extension [Self <: Index[?, ?], E, R](x: Self & (Index[E, R])) {
       
-      @scala.inline
-      def setIndex(value: (Double, Kind, FreeSemigroup[DecodeError[E]]) => R): Self = StObject.set(x, "Index", js.Any.fromFunction3(value))
+      inline def setIndex(value: (Double, Kind, FreeSemigroup[DecodeError[E]]) => R): Self = StObject.set(x, "Index", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setKey(value: (String, Kind, FreeSemigroup[DecodeError[E]]) => R): Self = StObject.set(x, "Key", js.Any.fromFunction3(value))
+      inline def setKey(value: (String, Kind, FreeSemigroup[DecodeError[E]]) => R): Self = StObject.set(x, "Key", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setLazy(value: (String, FreeSemigroup[DecodeError[E]]) => R): Self = StObject.set(x, "Lazy", js.Any.fromFunction2(value))
+      inline def setLazy(value: (String, FreeSemigroup[DecodeError[E]]) => R): Self = StObject.set(x, "Lazy", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLeaf(value: (js.Any, E) => R): Self = StObject.set(x, "Leaf", js.Any.fromFunction2(value))
+      inline def setLeaf(value: (js.Any, E) => R): Self = StObject.set(x, "Leaf", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMember(value: (Double, FreeSemigroup[DecodeError[E]]) => R): Self = StObject.set(x, "Member", js.Any.fromFunction2(value))
+      inline def setMember(value: (Double, FreeSemigroup[DecodeError[E]]) => R): Self = StObject.set(x, "Member", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWrap(value: (E, FreeSemigroup[DecodeError[E]]) => R): Self = StObject.set(x, "Wrap", js.Any.fromFunction2(value))
+      inline def setWrap(value: (E, FreeSemigroup[DecodeError[E]]) => R): Self = StObject.set(x, "Wrap", js.Any.fromFunction2(value))
     }
   }
   
@@ -149,17 +129,14 @@ object anon {
   }
   object Length {
     
-    @scala.inline
-    def apply(): Length = {
+    inline def apply(): Length = {
       val __obj = js.Dynamic.literal(length = 2)
       __obj.asInstanceOf[Length]
     }
     
-    @scala.inline
-    implicit class LengthMutableBuilder[Self <: Length] (val x: Self) extends AnyVal {
+    extension [Self <: Length](x: Self) {
       
-      @scala.inline
-      def setLength(value: typings.ioTs.ioTsNumbers.`2`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: typings.ioTs.ioTsNumbers.`2`): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -169,17 +146,14 @@ object anon {
   }
   object Props {
     
-    @scala.inline
-    def apply(props: js.Any): Props = {
+    inline def apply(props: js.Any): Props = {
       val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setProps(value: js.Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      inline def setProps(value: js.Any): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }
   }
 }

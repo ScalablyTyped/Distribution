@@ -233,8 +233,7 @@ object callMod {
     def serialize(value: RequestType): Buffer = js.native
   }
   
-  @scala.inline
-  def callErrorFromStatus(status: StatusObject): ServiceError = ^.asInstanceOf[js.Dynamic].applyDynamic("callErrorFromStatus")(status.asInstanceOf[js.Any]).asInstanceOf[ServiceError]
+  inline def callErrorFromStatus(status: StatusObject): ServiceError = ^.asInstanceOf[js.Dynamic].applyDynamic("callErrorFromStatus")(status.asInstanceOf[js.Any]).asInstanceOf[ServiceError]
   
   /* Inlined @grpc/grpc-js.@grpc/grpc-js/build/src/call.ClientWritableStream<RequestType> & @grpc/grpc-js.@grpc/grpc-js/build/src/call.ClientReadableStream<ResponseType> */
   @js.native
@@ -1175,8 +1174,7 @@ object callMod {
        with Error
   object ServiceError {
     
-    @scala.inline
-    def apply(code: Status, details: String, message: String, metadata: Metadata, name: String): ServiceError = {
+    inline def apply(code: Status, details: String, message: String, metadata: Metadata, name: String): ServiceError = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServiceError]
     }

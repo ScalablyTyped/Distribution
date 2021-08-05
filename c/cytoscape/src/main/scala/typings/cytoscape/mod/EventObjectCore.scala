@@ -14,8 +14,7 @@ trait EventObjectCore
 }
 object EventObjectCore {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cy: Core,
     isDefaultPrevented: () => Boolean,
     isImmediatePropagationStopped: () => Boolean,
@@ -37,10 +36,8 @@ object EventObjectCore {
     __obj.asInstanceOf[EventObjectCore]
   }
   
-  @scala.inline
-  implicit class EventObjectCoreMutableBuilder[Self <: EventObjectCore] (val x: Self) extends AnyVal {
+  extension [Self <: EventObjectCore](x: Self) {
     
-    @scala.inline
-    def setTarget(value: Core): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Core): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

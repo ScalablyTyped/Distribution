@@ -22,8 +22,7 @@ object drawerMod {
     @JSImport("@ant-design/react-native/lib/drawer", "default.defaultProps")
     @js.native
     def defaultProps: DrawerWidth = js.native
-    @scala.inline
-    def defaultProps_=(x: DrawerWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: DrawerWidth): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -55,32 +54,24 @@ object drawerMod {
   }
   object DrawerNativeProps {
     
-    @scala.inline
-    def apply(): DrawerNativeProps = {
+    inline def apply(): DrawerNativeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DrawerNativeProps]
     }
     
-    @scala.inline
-    implicit class DrawerNativePropsMutableBuilder[Self <: DrawerNativeProps] (val x: Self) extends AnyVal {
+    extension [Self <: DrawerNativeProps](x: Self) {
       
-      @scala.inline
-      def setDrawerBackgroundColor(value: String): Self = StObject.set(x, "drawerBackgroundColor", value.asInstanceOf[js.Any])
+      inline def setDrawerBackgroundColor(value: String): Self = StObject.set(x, "drawerBackgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawerBackgroundColorUndefined: Self = StObject.set(x, "drawerBackgroundColor", js.undefined)
+      inline def setDrawerBackgroundColorUndefined: Self = StObject.set(x, "drawerBackgroundColor", js.undefined)
       
-      @scala.inline
-      def setDrawerRef(value: /* el */ typings.bang88ReactNativeDrawerLayout.mod.default | Null => Unit): Self = StObject.set(x, "drawerRef", js.Any.fromFunction1(value))
+      inline def setDrawerRef(value: /* el */ typings.bang88ReactNativeDrawerLayout.mod.default | Null => Unit): Self = StObject.set(x, "drawerRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDrawerRefUndefined: Self = StObject.set(x, "drawerRef", js.undefined)
+      inline def setDrawerRefUndefined: Self = StObject.set(x, "drawerRef", js.undefined)
       
-      @scala.inline
-      def setDrawerWidth(value: Double): Self = StObject.set(x, "drawerWidth", value.asInstanceOf[js.Any])
+      inline def setDrawerWidth(value: Double): Self = StObject.set(x, "drawerWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawerWidthUndefined: Self = StObject.set(x, "drawerWidth", js.undefined)
+      inline def setDrawerWidthUndefined: Self = StObject.set(x, "drawerWidth", js.undefined)
     }
   }
 }

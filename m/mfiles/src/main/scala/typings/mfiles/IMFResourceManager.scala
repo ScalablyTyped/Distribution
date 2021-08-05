@@ -14,8 +14,7 @@ trait IMFResourceManager extends StObject {
 }
 object IMFResourceManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetLocaleSpecificDateFormat: () => String,
     GetUICultures: () => IStrings,
     LoadResourceString: (Double, Double) => String
@@ -24,16 +23,12 @@ object IMFResourceManager {
     __obj.asInstanceOf[IMFResourceManager]
   }
   
-  @scala.inline
-  implicit class IMFResourceManagerMutableBuilder[Self <: IMFResourceManager] (val x: Self) extends AnyVal {
+  extension [Self <: IMFResourceManager](x: Self) {
     
-    @scala.inline
-    def setGetLocaleSpecificDateFormat(value: () => String): Self = StObject.set(x, "GetLocaleSpecificDateFormat", js.Any.fromFunction0(value))
+    inline def setGetLocaleSpecificDateFormat(value: () => String): Self = StObject.set(x, "GetLocaleSpecificDateFormat", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUICultures(value: () => IStrings): Self = StObject.set(x, "GetUICultures", js.Any.fromFunction0(value))
+    inline def setGetUICultures(value: () => IStrings): Self = StObject.set(x, "GetUICultures", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLoadResourceString(value: (Double, Double) => String): Self = StObject.set(x, "LoadResourceString", js.Any.fromFunction2(value))
+    inline def setLoadResourceString(value: (Double, Double) => String): Self = StObject.set(x, "LoadResourceString", js.Any.fromFunction2(value))
   }
 }

@@ -25,19 +25,19 @@ object celleditorMod {
     */
   class BooleanCellEditor () extends CellEditor {
     
-    var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: js.Any = js.native
     
-    var _createWidget: js.Any = js.native
+    /* private */ var _createWidget: js.Any = js.native
     
-    var _deserialize: js.Any = js.native
+    /* private */ var _deserialize: js.Any = js.native
     
-    var _input: js.Any = js.native
+    /* private */ var _input: js.Any = js.native
     
-    var _onBlur: js.Any = js.native
+    /* private */ var _onBlur: js.Any = js.native
     
-    var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: js.Any = js.native
     
-    var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: js.Any = js.native
     
     /**
       * Handle the DOM events for the editor.
@@ -61,27 +61,27 @@ object celleditorMod {
       * Create container elements needed to prevent editor widget overflow
       * beyond viewport and to position cell editor widget.
       */
-    var _addContainer: js.Any = js.native
+    /* private */ var _addContainer: js.Any = js.native
     
     /**
       * Remove validity notification popup.
       */
-    var _closeValidityNotification: js.Any = js.native
+    /* private */ var _closeValidityNotification: js.Any = js.native
     
     /**
       * Whether the cell editor is disposed.
       */
-    var _disposed: js.Any = js.native
+    /* private */ var _disposed: js.Any = js.native
     
     /**
       * Whether the value input is valid.
       */
-    var _validInput: js.Any = js.native
+    /* private */ var _validInput: js.Any = js.native
     
     /**
       * Cell configuration data for the cell being edited.
       */
-    var cell: CellConfig = js.native
+    /* protected */ var cell: CellConfig = js.native
     
     /**
       * Commit the edited value.
@@ -116,7 +116,7 @@ object celleditorMod {
     /**
       * The div element used to contain and position editor widget.
       */
-    var editorContainer: HTMLDivElement = js.native
+    /* protected */ var editorContainer: HTMLDivElement = js.native
     
     /**
       * Compute cell rectangle and return with other cell properties.
@@ -132,7 +132,7 @@ object celleditorMod {
     /**
       * A signal emitted when input changes.
       */
-    var inputChanged: Signal[this.type, Unit] = js.native
+    /* protected */ var inputChanged: Signal[this.type, Unit] = js.native
     
     /**
       * Test whether the object has been disposed.
@@ -146,12 +146,12 @@ object celleditorMod {
     /**
       * Callback method to call on cell edit cancel.
       */
-    var onCancel: js.UndefOr[js.Function0[Unit]] = js.native
+    /* protected */ var onCancel: js.UndefOr[js.Function0[Unit]] = js.native
     
     /**
       * Callback method to call on cell edit commit.
       */
-    var onCommit: js.UndefOr[js.Function1[/* response */ ICellEditResponse, Unit]] = js.native
+    /* protected */ var onCommit: js.UndefOr[js.Function1[/* response */ ICellEditResponse, Unit]] = js.native
     
     /**
       * Set validity flag.
@@ -180,7 +180,7 @@ object celleditorMod {
     /**
       * Whether the value input is valid.
       */
-    val validInput: Boolean = js.native
+    /* protected */ val validInput: Boolean = js.native
     
     /**
       * Validate the cell input. Shows validation error notification when input is invalid.
@@ -190,17 +190,17 @@ object celleditorMod {
     /**
       * Cell input validator to use for the cell being edited.
       */
-    var validator: js.UndefOr[ICellInputValidator] = js.native
+    /* protected */ var validator: js.UndefOr[ICellInputValidator] = js.native
     
     /**
       * Notification popup used to show validation error messages.
       */
-    var validityNotification: Notification | Null = js.native
+    /* protected */ var validityNotification: Notification | Null = js.native
     
     /**
       * The div element used to prevent editor widget overflow beyond grid viewport.
       */
-    var viewportOccluder: HTMLDivElement = js.native
+    /* protected */ var viewportOccluder: HTMLDivElement = js.native
   }
   object CellEditor {
     
@@ -226,23 +226,18 @@ object celleditorMod {
     }
     object CellConfig {
       
-      @scala.inline
-      def apply(column: Double, grid: DataGrid, row: Double): CellConfig = {
+      inline def apply(column: Double, grid: DataGrid, row: Double): CellConfig = {
         val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], grid = grid.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any])
         __obj.asInstanceOf[CellConfig]
       }
       
-      @scala.inline
-      implicit class CellConfigMutableBuilder[Self <: CellConfig] (val x: Self) extends AnyVal {
+      extension [Self <: CellConfig](x: Self) {
         
-        @scala.inline
-        def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+        inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGrid(value: DataGrid): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+        inline def setGrid(value: DataGrid): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+        inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -254,19 +249,19 @@ object celleditorMod {
     */
   class DateCellEditor () extends CellEditor {
     
-    var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: js.Any = js.native
     
-    var _createWidget: js.Any = js.native
+    /* private */ var _createWidget: js.Any = js.native
     
-    var _deserialize: js.Any = js.native
+    /* private */ var _deserialize: js.Any = js.native
     
-    var _input: js.Any = js.native
+    /* private */ var _input: js.Any = js.native
     
-    var _onBlur: js.Any = js.native
+    /* private */ var _onBlur: js.Any = js.native
     
-    var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: js.Any = js.native
     
-    var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: js.Any = js.native
     
     /**
       * Handle the DOM events for the editor.
@@ -283,19 +278,19 @@ object celleditorMod {
     */
   class DynamicOptionCellEditor () extends CellEditor {
     
-    var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: js.Any = js.native
     
-    var _createWidget: js.Any = js.native
+    /* private */ var _createWidget: js.Any = js.native
     
-    var _deserialize: js.Any = js.native
+    /* private */ var _deserialize: js.Any = js.native
     
-    var _input: js.Any = js.native
+    /* private */ var _input: js.Any = js.native
     
-    var _onBlur: js.Any = js.native
+    /* private */ var _onBlur: js.Any = js.native
     
-    var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: js.Any = js.native
     
-    var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: js.Any = js.native
     
     /**
       * Handle the DOM events for the editor.
@@ -312,13 +307,13 @@ object celleditorMod {
     */
   abstract class InputCellEditor () extends CellEditor {
     
-    var _onBlur: js.Any = js.native
+    /* private */ var _onBlur: js.Any = js.native
     
-    var _onInput: js.Any = js.native
+    /* private */ var _onInput: js.Any = js.native
     
-    var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: js.Any = js.native
     
-    var _unbindEvents: js.Any = js.native
+    /* private */ var _unbindEvents: js.Any = js.native
     
     /* protected */ def bindEvents(): Unit = js.native
     
@@ -333,9 +328,9 @@ object celleditorMod {
       */
     def handleEvent(event: Event): Unit = js.native
     
-    var input: HTMLInputElement = js.native
+    /* protected */ var input: HTMLInputElement = js.native
     
-    var inputType: String = js.native
+    /* protected */ var inputType: String = js.native
   }
   
   @JSImport("@lumino/datagrid/lib/celleditor", "IntegerCellEditor")
@@ -445,19 +440,19 @@ object celleditorMod {
     */
   class OptionCellEditor () extends CellEditor {
     
-    var _bindEvents: js.Any = js.native
+    /* private */ var _bindEvents: js.Any = js.native
     
-    var _createWidget: js.Any = js.native
+    /* private */ var _createWidget: js.Any = js.native
     
-    var _deserialize: js.Any = js.native
+    /* private */ var _deserialize: js.Any = js.native
     
-    var _isMultiSelect: js.Any = js.native
+    /* private */ var _isMultiSelect: js.Any = js.native
     
-    var _onBlur: js.Any = js.native
+    /* private */ var _onBlur: js.Any = js.native
     
-    var _onKeyDown: js.Any = js.native
+    /* private */ var _onKeyDown: js.Any = js.native
     
-    var _select: js.Any = js.native
+    /* private */ var _select: js.Any = js.native
   }
   
   @JSImport("@lumino/datagrid/lib/celleditor", "PassInputValidator")
@@ -556,44 +551,31 @@ object celleditorMod {
        with _EditorOverrideIdentifier
   object CellDataType {
     
-    @scala.inline
-    def boolean: typings.luminoDatagrid.luminoDatagridStrings.boolean = "boolean".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.boolean]
+    inline def boolean: typings.luminoDatagrid.luminoDatagridStrings.boolean = "boolean".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.boolean]
     
-    @scala.inline
-    def date: typings.luminoDatagrid.luminoDatagridStrings.date = "date".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.date]
+    inline def date: typings.luminoDatagrid.luminoDatagridStrings.date = "date".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.date]
     
-    @scala.inline
-    def `dateColondynamic-option`: typings.luminoDatagrid.luminoDatagridStrings.`dateColondynamic-option` = "date:dynamic-option".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.`dateColondynamic-option`]
+    inline def `dateColondynamic-option`: typings.luminoDatagrid.luminoDatagridStrings.`dateColondynamic-option` = "date:dynamic-option".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.`dateColondynamic-option`]
     
-    @scala.inline
-    def dateColonoption: typings.luminoDatagrid.luminoDatagridStrings.dateColonoption = "date:option".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.dateColonoption]
+    inline def dateColonoption: typings.luminoDatagrid.luminoDatagridStrings.dateColonoption = "date:option".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.dateColonoption]
     
-    @scala.inline
-    def integer: typings.luminoDatagrid.luminoDatagridStrings.integer = "integer".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.integer]
+    inline def integer: typings.luminoDatagrid.luminoDatagridStrings.integer = "integer".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.integer]
     
-    @scala.inline
-    def `integerColondynamic-option`: typings.luminoDatagrid.luminoDatagridStrings.`integerColondynamic-option` = "integer:dynamic-option".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.`integerColondynamic-option`]
+    inline def `integerColondynamic-option`: typings.luminoDatagrid.luminoDatagridStrings.`integerColondynamic-option` = "integer:dynamic-option".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.`integerColondynamic-option`]
     
-    @scala.inline
-    def integerColonoption: typings.luminoDatagrid.luminoDatagridStrings.integerColonoption = "integer:option".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.integerColonoption]
+    inline def integerColonoption: typings.luminoDatagrid.luminoDatagridStrings.integerColonoption = "integer:option".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.integerColonoption]
     
-    @scala.inline
-    def number: typings.luminoDatagrid.luminoDatagridStrings.number = "number".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.number]
+    inline def number: typings.luminoDatagrid.luminoDatagridStrings.number = "number".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.number]
     
-    @scala.inline
-    def `numberColondynamic-option`: typings.luminoDatagrid.luminoDatagridStrings.`numberColondynamic-option` = "number:dynamic-option".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.`numberColondynamic-option`]
+    inline def `numberColondynamic-option`: typings.luminoDatagrid.luminoDatagridStrings.`numberColondynamic-option` = "number:dynamic-option".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.`numberColondynamic-option`]
     
-    @scala.inline
-    def numberColonoption: typings.luminoDatagrid.luminoDatagridStrings.numberColonoption = "number:option".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.numberColonoption]
+    inline def numberColonoption: typings.luminoDatagrid.luminoDatagridStrings.numberColonoption = "number:option".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.numberColonoption]
     
-    @scala.inline
-    def string: typings.luminoDatagrid.luminoDatagridStrings.string = "string".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.string]
+    inline def string: typings.luminoDatagrid.luminoDatagridStrings.string = "string".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.string]
     
-    @scala.inline
-    def `stringColondynamic-option`: typings.luminoDatagrid.luminoDatagridStrings.`stringColondynamic-option` = "string:dynamic-option".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.`stringColondynamic-option`]
+    inline def `stringColondynamic-option`: typings.luminoDatagrid.luminoDatagridStrings.`stringColondynamic-option` = "string:dynamic-option".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.`stringColondynamic-option`]
     
-    @scala.inline
-    def stringColonoption: typings.luminoDatagrid.luminoDatagridStrings.stringColonoption = "string:option".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.stringColonoption]
+    inline def stringColonoption: typings.luminoDatagrid.luminoDatagridStrings.stringColonoption = "string:option".asInstanceOf[typings.luminoDatagrid.luminoDatagridStrings.stringColonoption]
   }
   
   trait ICellEditOptions extends StObject {
@@ -625,38 +607,28 @@ object celleditorMod {
   }
   object ICellEditOptions {
     
-    @scala.inline
-    def apply(): ICellEditOptions = {
+    inline def apply(): ICellEditOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICellEditOptions]
     }
     
-    @scala.inline
-    implicit class ICellEditOptionsMutableBuilder[Self <: ICellEditOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ICellEditOptions](x: Self) {
       
-      @scala.inline
-      def setEditor(value: ICellEditor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+      inline def setEditor(value: ICellEditor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
+      inline def setEditorUndefined: Self = StObject.set(x, "editor", js.undefined)
       
-      @scala.inline
-      def setOnCancel(value: () => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction0(value))
+      inline def setOnCancel(value: () => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
+      inline def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
       
-      @scala.inline
-      def setOnCommit(value: /* response */ ICellEditResponse => Unit): Self = StObject.set(x, "onCommit", js.Any.fromFunction1(value))
+      inline def setOnCommit(value: /* response */ ICellEditResponse => Unit): Self = StObject.set(x, "onCommit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCommitUndefined: Self = StObject.set(x, "onCommit", js.undefined)
+      inline def setOnCommitUndefined: Self = StObject.set(x, "onCommit", js.undefined)
       
-      @scala.inline
-      def setValidator(value: ICellInputValidator): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
+      inline def setValidator(value: ICellInputValidator): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
+      inline def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
     }
   }
   
@@ -679,23 +651,18 @@ object celleditorMod {
   }
   object ICellEditResponse {
     
-    @scala.inline
-    def apply(cell: CellConfig, cursorMovement: CursorMoveDirection, value: js.Any): ICellEditResponse = {
+    inline def apply(cell: CellConfig, cursorMovement: CursorMoveDirection, value: js.Any): ICellEditResponse = {
       val __obj = js.Dynamic.literal(cell = cell.asInstanceOf[js.Any], cursorMovement = cursorMovement.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICellEditResponse]
     }
     
-    @scala.inline
-    implicit class ICellEditResponseMutableBuilder[Self <: ICellEditResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ICellEditResponse](x: Self) {
       
-      @scala.inline
-      def setCell(value: CellConfig): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+      inline def setCell(value: CellConfig): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCursorMovement(value: CursorMoveDirection): Self = StObject.set(x, "cursorMovement", value.asInstanceOf[js.Any])
+      inline def setCursorMovement(value: CursorMoveDirection): Self = StObject.set(x, "cursorMovement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -733,17 +700,14 @@ object celleditorMod {
   }
   object ICellInputValidator {
     
-    @scala.inline
-    def apply(validate: (CellConfig, js.Any) => ICellInputValidatorResponse): ICellInputValidator = {
+    inline def apply(validate: (CellConfig, js.Any) => ICellInputValidatorResponse): ICellInputValidator = {
       val __obj = js.Dynamic.literal(validate = js.Any.fromFunction2(validate))
       __obj.asInstanceOf[ICellInputValidator]
     }
     
-    @scala.inline
-    implicit class ICellInputValidatorMutableBuilder[Self <: ICellInputValidator] (val x: Self) extends AnyVal {
+    extension [Self <: ICellInputValidator](x: Self) {
       
-      @scala.inline
-      def setValidate(value: (CellConfig, js.Any) => ICellInputValidatorResponse): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
+      inline def setValidate(value: (CellConfig, js.Any) => ICellInputValidatorResponse): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
     }
   }
   
@@ -761,23 +725,18 @@ object celleditorMod {
   }
   object ICellInputValidatorResponse {
     
-    @scala.inline
-    def apply(valid: Boolean): ICellInputValidatorResponse = {
+    inline def apply(valid: Boolean): ICellInputValidatorResponse = {
       val __obj = js.Dynamic.literal(valid = valid.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICellInputValidatorResponse]
     }
     
-    @scala.inline
-    implicit class ICellInputValidatorResponseMutableBuilder[Self <: ICellInputValidatorResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ICellInputValidatorResponse](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -809,8 +768,7 @@ object celleditorMod {
     }
     object ICellInfo {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         column: Double,
         data: js.Any,
         grid: DataGrid,
@@ -824,32 +782,23 @@ object celleditorMod {
         __obj.asInstanceOf[ICellInfo]
       }
       
-      @scala.inline
-      implicit class ICellInfoMutableBuilder[Self <: ICellInfo] (val x: Self) extends AnyVal {
+      extension [Self <: ICellInfo](x: Self) {
         
-        @scala.inline
-        def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+        inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGrid(value: DataGrid): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+        inline def setGrid(value: DataGrid): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+        inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+        inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+        inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+        inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+        inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       }
     }
   }

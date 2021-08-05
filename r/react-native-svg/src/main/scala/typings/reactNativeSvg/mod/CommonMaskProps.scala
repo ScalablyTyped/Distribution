@@ -10,19 +10,15 @@ trait CommonMaskProps extends StObject {
 }
 object CommonMaskProps {
   
-  @scala.inline
-  def apply(): CommonMaskProps = {
+  inline def apply(): CommonMaskProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommonMaskProps]
   }
   
-  @scala.inline
-  implicit class CommonMaskPropsMutableBuilder[Self <: CommonMaskProps] (val x: Self) extends AnyVal {
+  extension [Self <: CommonMaskProps](x: Self) {
     
-    @scala.inline
-    def setMask(value: String): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+    inline def setMask(value: String): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+    inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
   }
 }

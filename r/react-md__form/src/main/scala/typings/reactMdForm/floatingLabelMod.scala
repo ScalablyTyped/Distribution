@@ -35,29 +35,22 @@ object floatingLabelMod {
   }
   object FloatingLabelProps {
     
-    @scala.inline
-    def apply(htmlFor: String, valued: Boolean): FloatingLabelProps = {
+    inline def apply(htmlFor: String, valued: Boolean): FloatingLabelProps = {
       val __obj = js.Dynamic.literal(htmlFor = htmlFor.asInstanceOf[js.Any], valued = valued.asInstanceOf[js.Any])
       __obj.asInstanceOf[FloatingLabelProps]
     }
     
-    @scala.inline
-    implicit class FloatingLabelPropsMutableBuilder[Self <: FloatingLabelProps] (val x: Self) extends AnyVal {
+    extension [Self <: FloatingLabelProps](x: Self) {
       
-      @scala.inline
-      def setDense(value: Boolean): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
+      inline def setDense(value: Boolean): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
+      inline def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
       
-      @scala.inline
-      def setFloating(value: Boolean): Self = StObject.set(x, "floating", value.asInstanceOf[js.Any])
+      inline def setFloating(value: Boolean): Self = StObject.set(x, "floating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFloatingUndefined: Self = StObject.set(x, "floating", js.undefined)
+      inline def setFloatingUndefined: Self = StObject.set(x, "floating", js.undefined)
       
-      @scala.inline
-      def setValued(value: Boolean): Self = StObject.set(x, "valued", value.asInstanceOf[js.Any])
+      inline def setValued(value: Boolean): Self = StObject.set(x, "valued", value.asInstanceOf[js.Any])
     }
   }
 }

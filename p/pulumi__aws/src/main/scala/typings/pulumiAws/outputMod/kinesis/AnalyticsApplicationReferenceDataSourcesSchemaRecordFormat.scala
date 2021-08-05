@@ -19,22 +19,17 @@ trait AnalyticsApplicationReferenceDataSourcesSchemaRecordFormat extends StObjec
 }
 object AnalyticsApplicationReferenceDataSourcesSchemaRecordFormat {
   
-  @scala.inline
-  def apply(recordFormatType: String): AnalyticsApplicationReferenceDataSourcesSchemaRecordFormat = {
+  inline def apply(recordFormatType: String): AnalyticsApplicationReferenceDataSourcesSchemaRecordFormat = {
     val __obj = js.Dynamic.literal(recordFormatType = recordFormatType.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsApplicationReferenceDataSourcesSchemaRecordFormat]
   }
   
-  @scala.inline
-  implicit class AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMutableBuilder[Self <: AnalyticsApplicationReferenceDataSourcesSchemaRecordFormat] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyticsApplicationReferenceDataSourcesSchemaRecordFormat](x: Self) {
     
-    @scala.inline
-    def setMappingParameters(value: AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParameters): Self = StObject.set(x, "mappingParameters", value.asInstanceOf[js.Any])
+    inline def setMappingParameters(value: AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParameters): Self = StObject.set(x, "mappingParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMappingParametersUndefined: Self = StObject.set(x, "mappingParameters", js.undefined)
+    inline def setMappingParametersUndefined: Self = StObject.set(x, "mappingParameters", js.undefined)
     
-    @scala.inline
-    def setRecordFormatType(value: String): Self = StObject.set(x, "recordFormatType", value.asInstanceOf[js.Any])
+    inline def setRecordFormatType(value: String): Self = StObject.set(x, "recordFormatType", value.asInstanceOf[js.Any])
   }
 }

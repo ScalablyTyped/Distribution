@@ -38,46 +38,33 @@ trait CreateQueueRequest extends StObject {
 }
 object CreateQueueRequest {
   
-  @scala.inline
-  def apply(Name: string): CreateQueueRequest = {
+  inline def apply(Name: string): CreateQueueRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateQueueRequest]
   }
   
-  @scala.inline
-  implicit class CreateQueueRequestMutableBuilder[Self <: CreateQueueRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateQueueRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPricingPlan(value: PricingPlan): Self = StObject.set(x, "PricingPlan", value.asInstanceOf[js.Any])
+    inline def setPricingPlan(value: PricingPlan): Self = StObject.set(x, "PricingPlan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPricingPlanUndefined: Self = StObject.set(x, "PricingPlan", js.undefined)
+    inline def setPricingPlanUndefined: Self = StObject.set(x, "PricingPlan", js.undefined)
     
-    @scala.inline
-    def setReservationPlanSettings(value: ReservationPlanSettings): Self = StObject.set(x, "ReservationPlanSettings", value.asInstanceOf[js.Any])
+    inline def setReservationPlanSettings(value: ReservationPlanSettings): Self = StObject.set(x, "ReservationPlanSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservationPlanSettingsUndefined: Self = StObject.set(x, "ReservationPlanSettings", js.undefined)
+    inline def setReservationPlanSettingsUndefined: Self = StObject.set(x, "ReservationPlanSettings", js.undefined)
     
-    @scala.inline
-    def setStatus(value: QueueStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: QueueStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setTags(value: mapOfString): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: mapOfString): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

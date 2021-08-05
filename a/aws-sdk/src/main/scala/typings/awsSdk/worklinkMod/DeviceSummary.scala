@@ -18,25 +18,19 @@ trait DeviceSummary extends StObject {
 }
 object DeviceSummary {
   
-  @scala.inline
-  def apply(): DeviceSummary = {
+  inline def apply(): DeviceSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceSummary]
   }
   
-  @scala.inline
-  implicit class DeviceSummaryMutableBuilder[Self <: DeviceSummary] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceSummary](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: Id): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: Id): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceIdUndefined: Self = StObject.set(x, "DeviceId", js.undefined)
+    inline def setDeviceIdUndefined: Self = StObject.set(x, "DeviceId", js.undefined)
     
-    @scala.inline
-    def setDeviceStatus(value: DeviceStatus): Self = StObject.set(x, "DeviceStatus", value.asInstanceOf[js.Any])
+    inline def setDeviceStatus(value: DeviceStatus): Self = StObject.set(x, "DeviceStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceStatusUndefined: Self = StObject.set(x, "DeviceStatus", js.undefined)
+    inline def setDeviceStatusUndefined: Self = StObject.set(x, "DeviceStatus", js.undefined)
   }
 }

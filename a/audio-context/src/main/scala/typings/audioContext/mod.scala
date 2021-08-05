@@ -12,12 +12,9 @@ object mod {
     * @param options Takes an Options object or just provide a sample rate.
     * @returns the audio context or null if there was an error or not a web browser.
     */
-  @scala.inline
-  def apply(): AudioContext | Null = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[AudioContext | Null]
-  @scala.inline
-  def apply(options: Double): AudioContext | Null = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[AudioContext | Null]
-  @scala.inline
-  def apply(options: Options): AudioContext | Null = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[AudioContext | Null]
+  inline def apply(): AudioContext | Null = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[AudioContext | Null]
+  inline def apply(options: Double): AudioContext | Null = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[AudioContext | Null]
+  inline def apply(options: Options): AudioContext | Null = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[AudioContext | Null]
   
   @JSImport("audio-context", JSImport.Namespace)
   @js.native
@@ -39,50 +36,36 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setChannels(value: Double): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+      inline def setChannels(value: Double): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
+      inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
       
-      @scala.inline
-      def setContextAttributes(value: js.Object): Self = StObject.set(x, "contextAttributes", value.asInstanceOf[js.Any])
+      inline def setContextAttributes(value: js.Object): Self = StObject.set(x, "contextAttributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextAttributesUndefined: Self = StObject.set(x, "contextAttributes", js.undefined)
+      inline def setContextAttributesUndefined: Self = StObject.set(x, "contextAttributes", js.undefined)
       
-      @scala.inline
-      def setLatencyHint(value: String | Double): Self = StObject.set(x, "latencyHint", value.asInstanceOf[js.Any])
+      inline def setLatencyHint(value: String | Double): Self = StObject.set(x, "latencyHint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatencyHintUndefined: Self = StObject.set(x, "latencyHint", js.undefined)
+      inline def setLatencyHintUndefined: Self = StObject.set(x, "latencyHint", js.undefined)
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
       
-      @scala.inline
-      def setOffline(value: Boolean): Self = StObject.set(x, "offline", value.asInstanceOf[js.Any])
+      inline def setOffline(value: Boolean): Self = StObject.set(x, "offline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOfflineUndefined: Self = StObject.set(x, "offline", js.undefined)
+      inline def setOfflineUndefined: Self = StObject.set(x, "offline", js.undefined)
       
-      @scala.inline
-      def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
+      inline def setSampleRate(value: Double): Self = StObject.set(x, "sampleRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
+      inline def setSampleRateUndefined: Self = StObject.set(x, "sampleRate", js.undefined)
     }
   }
 }

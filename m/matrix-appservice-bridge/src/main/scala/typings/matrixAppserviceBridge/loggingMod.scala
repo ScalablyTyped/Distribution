@@ -26,27 +26,21 @@ object loggingMod {
     @JSImport("matrix-appservice-bridge/lib/components/logging", "default.configure")
     @js.native
     def configure: js.Function1[/* config */ LoggerConfig, Unit] = js.native
-    @scala.inline
-    def configure(config: LoggerConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def configure_=(x: js.Function1[/* config */ LoggerConfig, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("configure")(x.asInstanceOf[js.Any])
+    inline def configure(config: LoggerConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def configure_=(x: js.Function1[/* config */ LoggerConfig, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("configure")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def configured(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("configured")().asInstanceOf[Boolean]
+    inline def configured(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("configured")().asInstanceOf[Boolean]
     @JSImport("matrix-appservice-bridge/lib/components/logging", "default.configured")
     @js.native
     def configured_Fdefault: js.Function0[Boolean] = js.native
     
-    @scala.inline
-    def configured_Fdefault_=(x: js.Function0[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("configured")(x.asInstanceOf[js.Any])
+    inline def configured_Fdefault_=(x: js.Function0[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("configured")(x.asInstanceOf[js.Any])
     
     @JSImport("matrix-appservice-bridge/lib/components/logging", "default.get")
     @js.native
     def get: js.Function1[/* name */ String, LogWrapper] = js.native
-    @scala.inline
-    def get(name: String): LogWrapper = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any]).asInstanceOf[LogWrapper]
-    @scala.inline
-    def get_=(x: js.Function1[/* name */ String, LogWrapper]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("get")(x.asInstanceOf[js.Any])
+    inline def get(name: String): LogWrapper = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any]).asInstanceOf[LogWrapper]
+    inline def get_=(x: js.Function1[/* name */ String, LogWrapper]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("get")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("matrix-appservice-bridge/lib/components/logging", "LogWrapper")
@@ -59,29 +53,26 @@ object loggingMod {
     
     def error(messageParts: MessagePart*): Unit = js.native
     
-    var formatParts: js.Any = js.native
+    /* private */ var formatParts: js.Any = js.native
     
     def info(messageParts: MessagePart*): Unit = js.native
     
-    var log: js.Any = js.native
+    /* private */ var log: js.Any = js.native
     
-    var logger: js.Any = js.native
+    /* private */ var logger: js.Any = js.native
     
-    var messages: js.Any = js.native
+    /* private */ var messages: js.Any = js.native
     
     def setLogger(logger: Logger): Unit = js.native
     
     def warn(messageParts: MessagePart*): Unit = js.native
   }
   
-  @scala.inline
-  def configure(config: LoggerConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def configure(config: LoggerConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def configured(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("configured")().asInstanceOf[Boolean]
+  inline def configured(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("configured")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def get(name: String): LogWrapper = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any]).asInstanceOf[LogWrapper]
+  inline def get(name: String): LogWrapper = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any]).asInstanceOf[LogWrapper]
   
   trait LoggerConfig extends StObject {
     
@@ -97,44 +88,32 @@ object loggingMod {
   }
   object LoggerConfig {
     
-    @scala.inline
-    def apply(): LoggerConfig = {
+    inline def apply(): LoggerConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoggerConfig]
     }
     
-    @scala.inline
-    implicit class LoggerConfigMutableBuilder[Self <: LoggerConfig] (val x: Self) extends AnyVal {
+    extension [Self <: LoggerConfig](x: Self) {
       
-      @scala.inline
-      def setConsole(value: error | warn | info | debug | off): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
+      inline def setConsole(value: error | warn | info | debug | off): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsoleUndefined: Self = StObject.set(x, "console", js.undefined)
+      inline def setConsoleUndefined: Self = StObject.set(x, "console", js.undefined)
       
-      @scala.inline
-      def setFileDatePattern(value: String): Self = StObject.set(x, "fileDatePattern", value.asInstanceOf[js.Any])
+      inline def setFileDatePattern(value: String): Self = StObject.set(x, "fileDatePattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileDatePatternUndefined: Self = StObject.set(x, "fileDatePattern", js.undefined)
+      inline def setFileDatePatternUndefined: Self = StObject.set(x, "fileDatePattern", js.undefined)
       
-      @scala.inline
-      def setFiles(value: StringDictionary[error | warn | info | debug | off]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: StringDictionary[error | warn | info | debug | off]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      @scala.inline
-      def setMaxFiles(value: Double): Self = StObject.set(x, "maxFiles", value.asInstanceOf[js.Any])
+      inline def setMaxFiles(value: Double): Self = StObject.set(x, "maxFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxFilesUndefined: Self = StObject.set(x, "maxFiles", js.undefined)
+      inline def setMaxFilesUndefined: Self = StObject.set(x, "maxFiles", js.undefined)
       
-      @scala.inline
-      def setTimestampFormat(value: String): Self = StObject.set(x, "timestampFormat", value.asInstanceOf[js.Any])
+      inline def setTimestampFormat(value: String): Self = StObject.set(x, "timestampFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestampFormatUndefined: Self = StObject.set(x, "timestampFormat", js.undefined)
+      inline def setTimestampFormatUndefined: Self = StObject.set(x, "timestampFormat", js.undefined)
     }
   }
   

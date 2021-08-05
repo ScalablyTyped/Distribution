@@ -17,35 +17,26 @@ object anon {
   }
   object Indent {
     
-    @scala.inline
-    def apply(): Indent = {
+    inline def apply(): Indent = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Indent]
     }
     
-    @scala.inline
-    implicit class IndentMutableBuilder[Self <: Indent] (val x: Self) extends AnyVal {
+    extension [Self <: Indent](x: Self) {
       
-      @scala.inline
-      def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+      inline def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+      inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
       
-      @scala.inline
-      def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+      inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+      inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
       
-      @scala.inline
-      def setParams(value: StringDictionary[String] | js.Array[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: StringDictionary[String] | js.Array[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setParamsVarargs(value: String*): Self = StObject.set(x, "params", js.Array(value :_*))
+      inline def setParamsVarargs(value: String*): Self = StObject.set(x, "params", js.Array(value :_*))
     }
   }
 }

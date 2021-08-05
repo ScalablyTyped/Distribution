@@ -18,22 +18,17 @@ trait UpdateParameterGroupRequest extends StObject {
 }
 object UpdateParameterGroupRequest {
   
-  @scala.inline
-  def apply(ParameterGroupName: String, ParameterNameValues: ParameterNameValueList): UpdateParameterGroupRequest = {
+  inline def apply(ParameterGroupName: String, ParameterNameValues: ParameterNameValueList): UpdateParameterGroupRequest = {
     val __obj = js.Dynamic.literal(ParameterGroupName = ParameterGroupName.asInstanceOf[js.Any], ParameterNameValues = ParameterNameValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateParameterGroupRequest]
   }
   
-  @scala.inline
-  implicit class UpdateParameterGroupRequestMutableBuilder[Self <: UpdateParameterGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateParameterGroupRequest](x: Self) {
     
-    @scala.inline
-    def setParameterGroupName(value: String): Self = StObject.set(x, "ParameterGroupName", value.asInstanceOf[js.Any])
+    inline def setParameterGroupName(value: String): Self = StObject.set(x, "ParameterGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterNameValues(value: ParameterNameValueList): Self = StObject.set(x, "ParameterNameValues", value.asInstanceOf[js.Any])
+    inline def setParameterNameValues(value: ParameterNameValueList): Self = StObject.set(x, "ParameterNameValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterNameValuesVarargs(value: ParameterNameValue*): Self = StObject.set(x, "ParameterNameValues", js.Array(value :_*))
+    inline def setParameterNameValuesVarargs(value: ParameterNameValue*): Self = StObject.set(x, "ParameterNameValues", js.Array(value :_*))
   }
 }

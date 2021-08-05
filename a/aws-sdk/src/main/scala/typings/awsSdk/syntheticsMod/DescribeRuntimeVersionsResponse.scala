@@ -18,28 +18,21 @@ trait DescribeRuntimeVersionsResponse extends StObject {
 }
 object DescribeRuntimeVersionsResponse {
   
-  @scala.inline
-  def apply(): DescribeRuntimeVersionsResponse = {
+  inline def apply(): DescribeRuntimeVersionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeRuntimeVersionsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeRuntimeVersionsResponseMutableBuilder[Self <: DescribeRuntimeVersionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRuntimeVersionsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRuntimeVersions(value: RuntimeVersionList): Self = StObject.set(x, "RuntimeVersions", value.asInstanceOf[js.Any])
+    inline def setRuntimeVersions(value: RuntimeVersionList): Self = StObject.set(x, "RuntimeVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuntimeVersionsUndefined: Self = StObject.set(x, "RuntimeVersions", js.undefined)
+    inline def setRuntimeVersionsUndefined: Self = StObject.set(x, "RuntimeVersions", js.undefined)
     
-    @scala.inline
-    def setRuntimeVersionsVarargs(value: RuntimeVersion*): Self = StObject.set(x, "RuntimeVersions", js.Array(value :_*))
+    inline def setRuntimeVersionsVarargs(value: RuntimeVersion*): Self = StObject.set(x, "RuntimeVersions", js.Array(value :_*))
   }
 }

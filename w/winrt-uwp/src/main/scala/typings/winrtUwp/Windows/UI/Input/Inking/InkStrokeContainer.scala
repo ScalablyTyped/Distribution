@@ -111,8 +111,7 @@ trait InkStrokeContainer extends StObject {
 }
 object InkStrokeContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addStroke: InkStroke => Unit,
     addStrokes: IIterable[InkStroke] => Unit,
     boundingRect: Rect,
@@ -134,55 +133,38 @@ object InkStrokeContainer {
     __obj.asInstanceOf[InkStrokeContainer]
   }
   
-  @scala.inline
-  implicit class InkStrokeContainerMutableBuilder[Self <: InkStrokeContainer] (val x: Self) extends AnyVal {
+  extension [Self <: InkStrokeContainer](x: Self) {
     
-    @scala.inline
-    def setAddStroke(value: InkStroke => Unit): Self = StObject.set(x, "addStroke", js.Any.fromFunction1(value))
+    inline def setAddStroke(value: InkStroke => Unit): Self = StObject.set(x, "addStroke", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddStrokes(value: IIterable[InkStroke] => Unit): Self = StObject.set(x, "addStrokes", js.Any.fromFunction1(value))
+    inline def setAddStrokes(value: IIterable[InkStroke] => Unit): Self = StObject.set(x, "addStrokes", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBoundingRect(value: Rect): Self = StObject.set(x, "boundingRect", value.asInstanceOf[js.Any])
+    inline def setBoundingRect(value: Rect): Self = StObject.set(x, "boundingRect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanPasteFromClipboard(value: () => Boolean): Self = StObject.set(x, "canPasteFromClipboard", js.Any.fromFunction0(value))
+    inline def setCanPasteFromClipboard(value: () => Boolean): Self = StObject.set(x, "canPasteFromClipboard", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCopySelectedToClipboard(value: () => Unit): Self = StObject.set(x, "copySelectedToClipboard", js.Any.fromFunction0(value))
+    inline def setCopySelectedToClipboard(value: () => Unit): Self = StObject.set(x, "copySelectedToClipboard", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDeleteSelected(value: () => Rect): Self = StObject.set(x, "deleteSelected", js.Any.fromFunction0(value))
+    inline def setDeleteSelected(value: () => Rect): Self = StObject.set(x, "deleteSelected", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRecognitionResults(value: () => IVectorView[InkRecognitionResult]): Self = StObject.set(x, "getRecognitionResults", js.Any.fromFunction0(value))
+    inline def setGetRecognitionResults(value: () => IVectorView[InkRecognitionResult]): Self = StObject.set(x, "getRecognitionResults", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStrokes(value: () => IVectorView[InkStroke]): Self = StObject.set(x, "getStrokes", js.Any.fromFunction0(value))
+    inline def setGetStrokes(value: () => IVectorView[InkStroke]): Self = StObject.set(x, "getStrokes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLoadAsync(value: IInputStream => IPromiseWithIAsyncActionWithProgress[Double]): Self = StObject.set(x, "loadAsync", js.Any.fromFunction1(value))
+    inline def setLoadAsync(value: IInputStream => IPromiseWithIAsyncActionWithProgress[Double]): Self = StObject.set(x, "loadAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMoveSelected(value: Point => Rect): Self = StObject.set(x, "moveSelected", js.Any.fromFunction1(value))
+    inline def setMoveSelected(value: Point => Rect): Self = StObject.set(x, "moveSelected", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPasteFromClipboard(value: Point => Rect): Self = StObject.set(x, "pasteFromClipboard", js.Any.fromFunction1(value))
+    inline def setPasteFromClipboard(value: Point => Rect): Self = StObject.set(x, "pasteFromClipboard", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSaveAsync(value: IOutputStream => IPromiseWithIAsyncOperationWithProgress[Double, Double]): Self = StObject.set(x, "saveAsync", js.Any.fromFunction1(value))
+    inline def setSaveAsync(value: IOutputStream => IPromiseWithIAsyncOperationWithProgress[Double, Double]): Self = StObject.set(x, "saveAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelectWithLine(value: (Point, Point) => Rect): Self = StObject.set(x, "selectWithLine", js.Any.fromFunction2(value))
+    inline def setSelectWithLine(value: (Point, Point) => Rect): Self = StObject.set(x, "selectWithLine", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSelectWithPolyLine(value: IIterable[Point] => Rect): Self = StObject.set(x, "selectWithPolyLine", js.Any.fromFunction1(value))
+    inline def setSelectWithPolyLine(value: IIterable[Point] => Rect): Self = StObject.set(x, "selectWithPolyLine", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateRecognitionResults(value: IVectorView[InkRecognitionResult] => Unit): Self = StObject.set(x, "updateRecognitionResults", js.Any.fromFunction1(value))
+    inline def setUpdateRecognitionResults(value: IVectorView[InkRecognitionResult] => Unit): Self = StObject.set(x, "updateRecognitionResults", js.Any.fromFunction1(value))
   }
 }

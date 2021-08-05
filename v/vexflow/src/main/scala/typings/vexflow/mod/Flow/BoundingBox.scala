@@ -18,6 +18,5 @@ object BoundingBox {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def copy(that: typings.vexflow.Vex.Flow.BoundingBox): typings.vexflow.Vex.Flow.BoundingBox = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(that.asInstanceOf[js.Any]).asInstanceOf[typings.vexflow.Vex.Flow.BoundingBox]
+  inline def copy(that: typings.vexflow.Vex.Flow.BoundingBox): typings.vexflow.Vex.Flow.BoundingBox = ^.asInstanceOf[js.Dynamic].applyDynamic("copy")(that.asInstanceOf[js.Any]).asInstanceOf[typings.vexflow.Vex.Flow.BoundingBox]
 }

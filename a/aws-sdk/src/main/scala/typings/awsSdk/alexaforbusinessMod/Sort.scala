@@ -18,19 +18,15 @@ trait Sort extends StObject {
 }
 object Sort {
   
-  @scala.inline
-  def apply(Key: SortKey, Value: SortValue): Sort = {
+  inline def apply(Key: SortKey, Value: SortValue): Sort = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sort]
   }
   
-  @scala.inline
-  implicit class SortMutableBuilder[Self <: Sort] (val x: Self) extends AnyVal {
+  extension [Self <: Sort](x: Self) {
     
-    @scala.inline
-    def setKey(value: SortKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: SortKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: SortValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: SortValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

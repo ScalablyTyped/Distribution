@@ -17,8 +17,7 @@ trait TextEncoderStream
 }
 object TextEncoderStream {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     encoding: java.lang.String,
     readable: ReadableStream[Uint8Array],
     writable: WritableStream[java.lang.String]
@@ -27,13 +26,10 @@ object TextEncoderStream {
     __obj.asInstanceOf[TextEncoderStream]
   }
   
-  @scala.inline
-  implicit class TextEncoderStreamMutableBuilder[Self <: TextEncoderStream] (val x: Self) extends AnyVal {
+  extension [Self <: TextEncoderStream](x: Self) {
     
-    @scala.inline
-    def setReadable(value: ReadableStream[Uint8Array]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
+    inline def setReadable(value: ReadableStream[Uint8Array]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWritable(value: WritableStream[java.lang.String]): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
+    inline def setWritable(value: WritableStream[java.lang.String]): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
   }
 }

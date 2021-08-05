@@ -10,19 +10,15 @@ trait DiskGb extends StObject {
 }
 object DiskGb {
   
-  @scala.inline
-  def apply(): DiskGb = {
+  inline def apply(): DiskGb = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DiskGb]
   }
   
-  @scala.inline
-  implicit class DiskGbMutableBuilder[Self <: DiskGb] (val x: Self) extends AnyVal {
+  extension [Self <: DiskGb](x: Self) {
     
-    @scala.inline
-    def setDiskGb(value: Double): Self = StObject.set(x, "diskGb", value.asInstanceOf[js.Any])
+    inline def setDiskGb(value: Double): Self = StObject.set(x, "diskGb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskGbUndefined: Self = StObject.set(x, "diskGb", js.undefined)
+    inline def setDiskGbUndefined: Self = StObject.set(x, "diskGb", js.undefined)
   }
 }

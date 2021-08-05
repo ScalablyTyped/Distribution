@@ -13,19 +13,15 @@ trait GetInvitationsCountResponse extends StObject {
 }
 object GetInvitationsCountResponse {
   
-  @scala.inline
-  def apply(): GetInvitationsCountResponse = {
+  inline def apply(): GetInvitationsCountResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetInvitationsCountResponse]
   }
   
-  @scala.inline
-  implicit class GetInvitationsCountResponseMutableBuilder[Self <: GetInvitationsCountResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetInvitationsCountResponse](x: Self) {
     
-    @scala.inline
-    def setInvitationsCount(value: Integer): Self = StObject.set(x, "InvitationsCount", value.asInstanceOf[js.Any])
+    inline def setInvitationsCount(value: Integer): Self = StObject.set(x, "InvitationsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitationsCountUndefined: Self = StObject.set(x, "InvitationsCount", js.undefined)
+    inline def setInvitationsCountUndefined: Self = StObject.set(x, "InvitationsCount", js.undefined)
   }
 }

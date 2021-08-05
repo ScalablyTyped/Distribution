@@ -33,37 +33,27 @@ trait ParamsResourceVpntunnelsGet
 }
 object ParamsResourceVpntunnelsGet {
   
-  @scala.inline
-  def apply(): ParamsResourceVpntunnelsGet = {
+  inline def apply(): ParamsResourceVpntunnelsGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceVpntunnelsGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceVpntunnelsGetMutableBuilder[Self <: ParamsResourceVpntunnelsGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceVpntunnelsGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+    inline def setProject(value: String): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+    inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
-    @scala.inline
-    def setVpnTunnel(value: String): Self = StObject.set(x, "vpnTunnel", value.asInstanceOf[js.Any])
+    inline def setVpnTunnel(value: String): Self = StObject.set(x, "vpnTunnel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpnTunnelUndefined: Self = StObject.set(x, "vpnTunnel", js.undefined)
+    inline def setVpnTunnelUndefined: Self = StObject.set(x, "vpnTunnel", js.undefined)
   }
 }

@@ -20,8 +20,7 @@ trait Abandoned extends StObject {
 }
 object Abandoned {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abandoned: scala.Double,
     canceled: scala.Double,
     failed: scala.Double,
@@ -33,25 +32,18 @@ object Abandoned {
     __obj.asInstanceOf[Abandoned]
   }
   
-  @scala.inline
-  implicit class AbandonedMutableBuilder[Self <: Abandoned] (val x: Self) extends AnyVal {
+  extension [Self <: Abandoned](x: Self) {
     
-    @scala.inline
-    def setAbandoned(value: scala.Double): Self = StObject.set(x, "abandoned", value.asInstanceOf[js.Any])
+    inline def setAbandoned(value: scala.Double): Self = StObject.set(x, "abandoned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanceled(value: scala.Double): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
+    inline def setCanceled(value: scala.Double): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailed(value: scala.Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
+    inline def setFailed(value: scala.Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipped(value: scala.Double): Self = StObject.set(x, "skipped", value.asInstanceOf[js.Any])
+    inline def setSkipped(value: scala.Double): Self = StObject.set(x, "skipped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSucceeded(value: scala.Double): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
+    inline def setSucceeded(value: scala.Double): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSucceededWithIssues(value: scala.Double): Self = StObject.set(x, "succeededWithIssues", value.asInstanceOf[js.Any])
+    inline def setSucceededWithIssues(value: scala.Double): Self = StObject.set(x, "succeededWithIssues", value.asInstanceOf[js.Any])
   }
 }

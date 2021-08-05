@@ -34,8 +34,7 @@ object lang {
       * KJUR.lang.String.isBase64("YW_=") → false
       * KJUR.lang.String.isBase64("YWE") → false -- length shall be multiples of 4
       */
-    @scala.inline
-    def isBase64(s: java.lang.String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBase64")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isBase64(s: java.lang.String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBase64")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * check whether a string is a base64url encoded string or not
@@ -47,8 +46,7 @@ object lang {
       * KJUR.lang.String.isBase64URL("YW-") → true
       * KJUR.lang.String.isBase64URL("YW+") → false
       */
-    @scala.inline
-    def isBase64URL(s: java.lang.String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBase64URL")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isBase64URL(s: java.lang.String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBase64URL")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * check whether a string is an hexadecimal string or not
@@ -61,8 +59,7 @@ object lang {
       * KJUR.lang.String.isHex("12ZY") → false
       * KJUR.lang.String.isHex("121") → false -- odd length
       */
-    @scala.inline
-    def isHex(s: java.lang.String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHex")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isHex(s: java.lang.String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHex")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * check whether a string is an integer string or not
@@ -72,8 +69,7 @@ object lang {
       * KJUR.lang.String.isInteger("12345") → true
       * KJUR.lang.String.isInteger("123ab") → false
       */
-    @scala.inline
-    def isInteger(s: java.lang.String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInteger")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isInteger(s: java.lang.String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInteger")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * check whether a string is a string of integer array or not
@@ -85,7 +81,6 @@ object lang {
       * KJUR.lang.String.isIntegerArray("  [1, 2, 3  ] ") → true
       * KJUR.lang.String.isIntegerArray("[a,2]") → false
       */
-    @scala.inline
-    def isIntegerArray(s: java.lang.String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIntegerArray")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isIntegerArray(s: java.lang.String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIntegerArray")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

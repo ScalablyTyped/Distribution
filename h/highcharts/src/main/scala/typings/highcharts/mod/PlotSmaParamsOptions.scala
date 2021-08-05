@@ -22,25 +22,19 @@ trait PlotSmaParamsOptions extends StObject {
 }
 object PlotSmaParamsOptions {
   
-  @scala.inline
-  def apply(): PlotSmaParamsOptions = {
+  inline def apply(): PlotSmaParamsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotSmaParamsOptions]
   }
   
-  @scala.inline
-  implicit class PlotSmaParamsOptionsMutableBuilder[Self <: PlotSmaParamsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotSmaParamsOptions](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
   }
 }

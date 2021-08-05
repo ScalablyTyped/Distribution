@@ -37,100 +37,69 @@ trait NotificationOptions extends StObject {
 }
 object NotificationOptions {
   
-  @scala.inline
-  def apply(): NotificationOptions = {
+  inline def apply(): NotificationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NotificationOptions]
   }
   
-  @scala.inline
-  implicit class NotificationOptionsMutableBuilder[Self <: NotificationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationOptions](x: Self) {
     
-    @scala.inline
-    def setAllowHideAfter(value: Double): Self = StObject.set(x, "allowHideAfter", value.asInstanceOf[js.Any])
+    inline def setAllowHideAfter(value: Double): Self = StObject.set(x, "allowHideAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowHideAfterUndefined: Self = StObject.set(x, "allowHideAfter", js.undefined)
+    inline def setAllowHideAfterUndefined: Self = StObject.set(x, "allowHideAfter", js.undefined)
     
-    @scala.inline
-    def setAnimation(value: js.Any | Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: js.Any | Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    @scala.inline
-    def setAppendTo(value: String | JQuery): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+    inline def setAppendTo(value: String | JQuery): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
+    inline def setAppendToUndefined: Self = StObject.set(x, "appendTo", js.undefined)
     
-    @scala.inline
-    def setAutoHideAfter(value: Double): Self = StObject.set(x, "autoHideAfter", value.asInstanceOf[js.Any])
+    inline def setAutoHideAfter(value: Double): Self = StObject.set(x, "autoHideAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoHideAfterUndefined: Self = StObject.set(x, "autoHideAfter", js.undefined)
+    inline def setAutoHideAfterUndefined: Self = StObject.set(x, "autoHideAfter", js.undefined)
     
-    @scala.inline
-    def setButton(value: Boolean): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: Boolean): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
+    inline def setButtonUndefined: Self = StObject.set(x, "button", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setHide(value: /* e */ NotificationHideEvent => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
+    inline def setHide(value: /* e */ NotificationHideEvent => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHideOnClick(value: Boolean): Self = StObject.set(x, "hideOnClick", value.asInstanceOf[js.Any])
+    inline def setHideOnClick(value: Boolean): Self = StObject.set(x, "hideOnClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideOnClickUndefined: Self = StObject.set(x, "hideOnClick", js.undefined)
+    inline def setHideOnClickUndefined: Self = StObject.set(x, "hideOnClick", js.undefined)
     
-    @scala.inline
-    def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
+    inline def setHideUndefined: Self = StObject.set(x, "hide", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPosition(value: NotificationPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: NotificationPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setShow(value: /* e */ NotificationShowEvent => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
+    inline def setShow(value: /* e */ NotificationShowEvent => Unit): Self = StObject.set(x, "show", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
-    @scala.inline
-    def setStacking(value: String): Self = StObject.set(x, "stacking", value.asInstanceOf[js.Any])
+    inline def setStacking(value: String): Self = StObject.set(x, "stacking", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackingUndefined: Self = StObject.set(x, "stacking", js.undefined)
+    inline def setStackingUndefined: Self = StObject.set(x, "stacking", js.undefined)
     
-    @scala.inline
-    def setTemplates(value: js.Array[NotificationTemplate]): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
+    inline def setTemplates(value: js.Array[NotificationTemplate]): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplatesUndefined: Self = StObject.set(x, "templates", js.undefined)
+    inline def setTemplatesUndefined: Self = StObject.set(x, "templates", js.undefined)
     
-    @scala.inline
-    def setTemplatesVarargs(value: NotificationTemplate*): Self = StObject.set(x, "templates", js.Array(value :_*))
+    inline def setTemplatesVarargs(value: NotificationTemplate*): Self = StObject.set(x, "templates", js.Array(value :_*))
     
-    @scala.inline
-    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

@@ -16,7 +16,7 @@ object bufferContainerMod {
   abstract class BufferContainer protected () extends StObject {
     def this(entityObject: GameObject) = this()
     
-    var container: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<Buffer> */ js.Any = js.native
+    /* protected */ var container: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Hash<Buffer> */ js.Any = js.native
     
     def createBuffersFromGeometryData(): Unit = js.native
     
@@ -80,7 +80,7 @@ object bufferContainerMod {
     
     def dispose(): Unit = js.native
     
-    var entityObject: GameObject = js.native
+    /* protected */ var entityObject: GameObject = js.native
     
     var geometryData: GeometryData = js.native
     

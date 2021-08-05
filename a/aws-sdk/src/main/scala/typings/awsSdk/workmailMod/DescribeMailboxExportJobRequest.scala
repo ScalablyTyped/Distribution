@@ -18,19 +18,15 @@ trait DescribeMailboxExportJobRequest extends StObject {
 }
 object DescribeMailboxExportJobRequest {
   
-  @scala.inline
-  def apply(JobId: MailboxExportJobId, OrganizationId: OrganizationId): DescribeMailboxExportJobRequest = {
+  inline def apply(JobId: MailboxExportJobId, OrganizationId: OrganizationId): DescribeMailboxExportJobRequest = {
     val __obj = js.Dynamic.literal(JobId = JobId.asInstanceOf[js.Any], OrganizationId = OrganizationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeMailboxExportJobRequest]
   }
   
-  @scala.inline
-  implicit class DescribeMailboxExportJobRequestMutableBuilder[Self <: DescribeMailboxExportJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeMailboxExportJobRequest](x: Self) {
     
-    @scala.inline
-    def setJobId(value: MailboxExportJobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: MailboxExportJobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
+    inline def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
   }
 }

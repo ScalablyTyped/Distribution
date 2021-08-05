@@ -36,52 +36,37 @@ trait ColumnDescription extends StObject {
 }
 object ColumnDescription {
   
-  @scala.inline
-  def apply(): ColumnDescription = {
+  inline def apply(): ColumnDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColumnDescription]
   }
   
-  @scala.inline
-  implicit class ColumnDescriptionMutableBuilder[Self <: ColumnDescription] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnDescription](x: Self) {
     
-    @scala.inline
-    def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
+    inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLabels(value: js.Array[LabeledItem]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: js.Array[LabeledItem]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setLabelsVarargs(value: LabeledItem*): Self = StObject.set(x, "labels", js.Array(value :_*))
+    inline def setLabelsVarargs(value: LabeledItem*): Self = StObject.set(x, "labels", js.Array(value :_*))
     
-    @scala.inline
-    def setLookupDetails(value: LookupDetails): Self = StObject.set(x, "lookupDetails", value.asInstanceOf[js.Any])
+    inline def setLookupDetails(value: LookupDetails): Self = StObject.set(x, "lookupDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLookupDetailsUndefined: Self = StObject.set(x, "lookupDetails", js.undefined)
+    inline def setLookupDetailsUndefined: Self = StObject.set(x, "lookupDetails", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRelationshipDetails(value: RelationshipDetails): Self = StObject.set(x, "relationshipDetails", value.asInstanceOf[js.Any])
+    inline def setRelationshipDetails(value: RelationshipDetails): Self = StObject.set(x, "relationshipDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationshipDetailsUndefined: Self = StObject.set(x, "relationshipDetails", js.undefined)
+    inline def setRelationshipDetailsUndefined: Self = StObject.set(x, "relationshipDetails", js.undefined)
   }
 }

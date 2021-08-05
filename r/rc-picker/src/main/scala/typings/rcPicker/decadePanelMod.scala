@@ -12,8 +12,7 @@ object decadePanelMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[DateType](props: DecadePanelProps[DateType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def default[DateType](props: DecadePanelProps[DateType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("rc-picker/es/panels/DecadePanel", "DECADE_DISTANCE_COUNT")
   @js.native

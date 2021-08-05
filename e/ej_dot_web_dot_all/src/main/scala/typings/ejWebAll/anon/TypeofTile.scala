@@ -15,19 +15,15 @@ trait TypeofTile extends StObject {
 }
 object TypeofTile {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: Tile): TypeofTile = {
+  inline def apply(Locale: js.Any, fn: Tile): TypeofTile = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofTile]
   }
   
-  @scala.inline
-  implicit class TypeofTileMutableBuilder[Self <: TypeofTile] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofTile](x: Self) {
     
-    @scala.inline
-    def setFn(value: Tile): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Tile): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

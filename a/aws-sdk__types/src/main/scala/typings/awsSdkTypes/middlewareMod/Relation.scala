@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Relation extends StObject
 object Relation {
   
-  @scala.inline
-  def after: typings.awsSdkTypes.awsSdkTypesStrings.after = "after".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.after]
+  inline def after: typings.awsSdkTypes.awsSdkTypesStrings.after = "after".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.after]
   
-  @scala.inline
-  def before: typings.awsSdkTypes.awsSdkTypesStrings.before = "before".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.before]
+  inline def before: typings.awsSdkTypes.awsSdkTypesStrings.before = "before".asInstanceOf[typings.awsSdkTypes.awsSdkTypesStrings.before]
 }

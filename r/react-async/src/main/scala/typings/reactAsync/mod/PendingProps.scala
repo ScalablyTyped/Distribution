@@ -13,28 +13,21 @@ trait PendingProps[T] extends StObject {
 }
 object PendingProps {
   
-  @scala.inline
-  def apply[T](): PendingProps[T] = {
+  inline def apply[T](): PendingProps[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PendingProps[T]]
   }
   
-  @scala.inline
-  implicit class PendingPropsMutableBuilder[Self <: PendingProps[?], T] (val x: Self & PendingProps[T]) extends AnyVal {
+  extension [Self <: PendingProps[?], T](x: Self & PendingProps[T]) {
     
-    @scala.inline
-    def setChildren(value: PendingChildren[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: PendingChildren[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenFunction1(value: /* state */ AsyncPending[T, AbstractState[T]] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+    inline def setChildrenFunction1(value: /* state */ AsyncPending[T, AbstractState[T]] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setInitial(value: Boolean): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
+    inline def setInitial(value: Boolean): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
+    inline def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
   }
 }

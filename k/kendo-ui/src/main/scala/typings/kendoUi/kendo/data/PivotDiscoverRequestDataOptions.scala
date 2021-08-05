@@ -12,19 +12,15 @@ trait PivotDiscoverRequestDataOptions extends StObject {
 }
 object PivotDiscoverRequestDataOptions {
   
-  @scala.inline
-  def apply(command: String, restrictions: PivotDiscoverRequestRestrictionOptions): PivotDiscoverRequestDataOptions = {
+  inline def apply(command: String, restrictions: PivotDiscoverRequestRestrictionOptions): PivotDiscoverRequestDataOptions = {
     val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], restrictions = restrictions.asInstanceOf[js.Any])
     __obj.asInstanceOf[PivotDiscoverRequestDataOptions]
   }
   
-  @scala.inline
-  implicit class PivotDiscoverRequestDataOptionsMutableBuilder[Self <: PivotDiscoverRequestDataOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PivotDiscoverRequestDataOptions](x: Self) {
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictions(value: PivotDiscoverRequestRestrictionOptions): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
+    inline def setRestrictions(value: PivotDiscoverRequestRestrictionOptions): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
   }
 }

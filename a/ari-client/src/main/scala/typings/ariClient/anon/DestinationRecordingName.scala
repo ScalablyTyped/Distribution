@@ -12,19 +12,15 @@ trait DestinationRecordingName extends StObject {
 }
 object DestinationRecordingName {
   
-  @scala.inline
-  def apply(destinationRecordingName: String, recordingName: String): DestinationRecordingName = {
+  inline def apply(destinationRecordingName: String, recordingName: String): DestinationRecordingName = {
     val __obj = js.Dynamic.literal(destinationRecordingName = destinationRecordingName.asInstanceOf[js.Any], recordingName = recordingName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DestinationRecordingName]
   }
   
-  @scala.inline
-  implicit class DestinationRecordingNameMutableBuilder[Self <: DestinationRecordingName] (val x: Self) extends AnyVal {
+  extension [Self <: DestinationRecordingName](x: Self) {
     
-    @scala.inline
-    def setDestinationRecordingName(value: String): Self = StObject.set(x, "destinationRecordingName", value.asInstanceOf[js.Any])
+    inline def setDestinationRecordingName(value: String): Self = StObject.set(x, "destinationRecordingName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordingName(value: String): Self = StObject.set(x, "recordingName", value.asInstanceOf[js.Any])
+    inline def setRecordingName(value: String): Self = StObject.set(x, "recordingName", value.asInstanceOf[js.Any])
   }
 }

@@ -324,8 +324,7 @@ object Utilities {
     @JSGlobal("WinJS.Utilities.QueryCollection.supportedForProcessing")
     @js.native
     def supportedForProcessing: Boolean = js.native
-    @scala.inline
-    def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
+    inline def supportedForProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("supportedForProcessing")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -369,8 +368,7 @@ object Utilities {
       * Creates and returns a new IOwnerToken which can be set to the owner property of one or more jobs.
       * @returns A new IOwnerToken which can be set to the owner property of one or more jobs.
       **/
-    @scala.inline
-    def createOwnerToken(): IOwnerToken = ^.asInstanceOf[js.Dynamic].applyDynamic("createOwnerToken")().asInstanceOf[IOwnerToken]
+    inline def createOwnerToken(): IOwnerToken = ^.asInstanceOf[js.Dynamic].applyDynamic("createOwnerToken")().asInstanceOf[IOwnerToken]
     
     //#endregion Interfaces
     //#region Properties
@@ -380,16 +378,14 @@ object Utilities {
     @JSGlobal("WinJS.Utilities.Scheduler.currentPriority")
     @js.native
     def currentPriority: Priority = js.native
-    @scala.inline
-    def currentPriority_=(x: Priority): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("currentPriority")(x.asInstanceOf[js.Any])
+    inline def currentPriority_=(x: Priority): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("currentPriority")(x.asInstanceOf[js.Any])
     
     /**
       * Runs the specified callback in a high priority context.
       * @param callback The callback to run in a high priority callback.
       * @returns The return value of the callback.
       **/
-    @scala.inline
-    def execHigh[U](callback: js.Function0[U]): U = ^.asInstanceOf[js.Dynamic].applyDynamic("execHigh")(callback.asInstanceOf[js.Any]).asInstanceOf[U]
+    inline def execHigh[U](callback: js.Function0[U]): U = ^.asInstanceOf[js.Dynamic].applyDynamic("execHigh")(callback.asInstanceOf[js.Any]).asInstanceOf[U]
     
     /**
       * Runs jobs in the scheduler without timeslicing until all jobs at the specified priority and higher have executed.
@@ -397,21 +393,16 @@ object Utilities {
       * @param name An optional description of the drain request for diagnostics.
       * @returns A Promise which completes when the drain has finished. Canceling this Promise cancels the drain request. This Promise will never enter an error state.
       **/
-    @scala.inline
-    def requestDrain(): typings.winjs.WinJS.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestDrain")().asInstanceOf[typings.winjs.WinJS.Promise[js.Any]]
-    @scala.inline
-    def requestDrain(priority: Unit, name: String): typings.winjs.WinJS.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestDrain")(priority.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[js.Any]]
-    @scala.inline
-    def requestDrain(priority: Priority): typings.winjs.WinJS.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestDrain")(priority.asInstanceOf[js.Any]).asInstanceOf[typings.winjs.WinJS.Promise[js.Any]]
-    @scala.inline
-    def requestDrain(priority: Priority, name: String): typings.winjs.WinJS.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestDrain")(priority.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[js.Any]]
+    inline def requestDrain(): typings.winjs.WinJS.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestDrain")().asInstanceOf[typings.winjs.WinJS.Promise[js.Any]]
+    inline def requestDrain(priority: Unit, name: String): typings.winjs.WinJS.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestDrain")(priority.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[js.Any]]
+    inline def requestDrain(priority: Priority): typings.winjs.WinJS.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestDrain")(priority.asInstanceOf[js.Any]).asInstanceOf[typings.winjs.WinJS.Promise[js.Any]]
+    inline def requestDrain(priority: Priority, name: String): typings.winjs.WinJS.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestDrain")(priority.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[js.Any]]
     
     /**
       * Returns a string representation of the scheduler's state for diagnostic purposes. The jobs and drain requests are displayed in the order in which they are currently expected to be processed. The current job and drain request are marked by an asterisk.
       * @returns A string representation of the scheduler's state for diagnostic purposes. The jobs and drain requests are displayed in the order in which they are currently expected to be processed. The current job and drain request are marked by an asterisk.
       **/
-    @scala.inline
-    def retrieveState(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("retrieveState")().asInstanceOf[String]
+    inline def retrieveState(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("retrieveState")().asInstanceOf[String]
     
     /**
       * Schedules the specified function to execute asynchronously.
@@ -421,27 +412,19 @@ object Utilities {
       * @param name A description of the work item for diagnostics. The default value is an empty string.
       * @returns The job instance that represents this work item.
       **/
-    @scala.inline
-    def schedule(work: js.Function1[/* jobInfo */ IJobInfo, js.Any]): IJob = ^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(work.asInstanceOf[js.Any]).asInstanceOf[IJob]
-    @scala.inline
-    def schedule(work: js.Function1[/* jobInfo */ IJobInfo, js.Any], priority: Unit, thisArg: js.Any): IJob = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(work.asInstanceOf[js.Any], priority.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[IJob]
-    @scala.inline
-    def schedule(work: js.Function1[/* jobInfo */ IJobInfo, js.Any], priority: Unit, thisArg: js.Any, name: String): IJob = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(work.asInstanceOf[js.Any], priority.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[IJob]
-    @scala.inline
-    def schedule(work: js.Function1[/* jobInfo */ IJobInfo, js.Any], priority: Unit, thisArg: Unit, name: String): IJob = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(work.asInstanceOf[js.Any], priority.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[IJob]
-    @scala.inline
-    def schedule(work: js.Function1[/* jobInfo */ IJobInfo, js.Any], priority: Priority): IJob = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(work.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[IJob]
-    @scala.inline
-    def schedule(work: js.Function1[/* jobInfo */ IJobInfo, js.Any], priority: Priority, thisArg: js.Any): IJob = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(work.asInstanceOf[js.Any], priority.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[IJob]
-    @scala.inline
-    def schedule(
+    inline def schedule(work: js.Function1[/* jobInfo */ IJobInfo, js.Any]): IJob = ^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(work.asInstanceOf[js.Any]).asInstanceOf[IJob]
+    inline def schedule(work: js.Function1[/* jobInfo */ IJobInfo, js.Any], priority: Unit, thisArg: js.Any): IJob = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(work.asInstanceOf[js.Any], priority.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[IJob]
+    inline def schedule(work: js.Function1[/* jobInfo */ IJobInfo, js.Any], priority: Unit, thisArg: js.Any, name: String): IJob = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(work.asInstanceOf[js.Any], priority.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[IJob]
+    inline def schedule(work: js.Function1[/* jobInfo */ IJobInfo, js.Any], priority: Unit, thisArg: Unit, name: String): IJob = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(work.asInstanceOf[js.Any], priority.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[IJob]
+    inline def schedule(work: js.Function1[/* jobInfo */ IJobInfo, js.Any], priority: Priority): IJob = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(work.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[IJob]
+    inline def schedule(work: js.Function1[/* jobInfo */ IJobInfo, js.Any], priority: Priority, thisArg: js.Any): IJob = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(work.asInstanceOf[js.Any], priority.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[IJob]
+    inline def schedule(
       work: js.Function1[/* jobInfo */ IJobInfo, js.Any],
       priority: Priority,
       thisArg: js.Any,
       name: String
     ): IJob = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(work.asInstanceOf[js.Any], priority.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[IJob]
-    @scala.inline
-    def schedule(
+    inline def schedule(
       work: js.Function1[/* jobInfo */ IJobInfo, js.Any],
       priority: Priority,
       thisArg: Unit,
@@ -454,14 +437,10 @@ object Utilities {
       * @param jobName A string that describes the job for diagnostic purposes.
       * @returns A Promise that completes within a job of aboveNormal priority.
       **/
-    @scala.inline
-    def schedulePromiseAboveNormal[U](): typings.winjs.WinJS.Promise[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseAboveNormal")().asInstanceOf[typings.winjs.WinJS.Promise[U]]
-    @scala.inline
-    def schedulePromiseAboveNormal[U](promiseValue: U): typings.winjs.WinJS.Promise[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseAboveNormal")(promiseValue.asInstanceOf[js.Any]).asInstanceOf[typings.winjs.WinJS.Promise[U]]
-    @scala.inline
-    def schedulePromiseAboveNormal[U](promiseValue: U, jobName: String): typings.winjs.WinJS.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseAboveNormal")(promiseValue.asInstanceOf[js.Any], jobName.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[U]]
-    @scala.inline
-    def schedulePromiseAboveNormal[U](promiseValue: Unit, jobName: String): typings.winjs.WinJS.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseAboveNormal")(promiseValue.asInstanceOf[js.Any], jobName.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[U]]
+    inline def schedulePromiseAboveNormal[U](): typings.winjs.WinJS.Promise[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseAboveNormal")().asInstanceOf[typings.winjs.WinJS.Promise[U]]
+    inline def schedulePromiseAboveNormal[U](promiseValue: U): typings.winjs.WinJS.Promise[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseAboveNormal")(promiseValue.asInstanceOf[js.Any]).asInstanceOf[typings.winjs.WinJS.Promise[U]]
+    inline def schedulePromiseAboveNormal[U](promiseValue: U, jobName: String): typings.winjs.WinJS.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseAboveNormal")(promiseValue.asInstanceOf[js.Any], jobName.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[U]]
+    inline def schedulePromiseAboveNormal[U](promiseValue: Unit, jobName: String): typings.winjs.WinJS.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseAboveNormal")(promiseValue.asInstanceOf[js.Any], jobName.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[U]]
     
     /**
       * Schedules a job to complete the returned Promise at WinJS.Utilities.Scheduler.Priority.belowNormal priority.
@@ -469,14 +448,10 @@ object Utilities {
       * @param jobName A string that describes the job for diagnostic purposes.
       * @returns A Promise that completes within a job of belowNormal priority.
       **/
-    @scala.inline
-    def schedulePromiseBelowNormal[U](): typings.winjs.WinJS.Promise[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseBelowNormal")().asInstanceOf[typings.winjs.WinJS.Promise[U]]
-    @scala.inline
-    def schedulePromiseBelowNormal[U](promiseValue: U): typings.winjs.WinJS.Promise[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseBelowNormal")(promiseValue.asInstanceOf[js.Any]).asInstanceOf[typings.winjs.WinJS.Promise[U]]
-    @scala.inline
-    def schedulePromiseBelowNormal[U](promiseValue: U, jobName: String): typings.winjs.WinJS.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseBelowNormal")(promiseValue.asInstanceOf[js.Any], jobName.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[U]]
-    @scala.inline
-    def schedulePromiseBelowNormal[U](promiseValue: Unit, jobName: String): typings.winjs.WinJS.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseBelowNormal")(promiseValue.asInstanceOf[js.Any], jobName.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[U]]
+    inline def schedulePromiseBelowNormal[U](): typings.winjs.WinJS.Promise[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseBelowNormal")().asInstanceOf[typings.winjs.WinJS.Promise[U]]
+    inline def schedulePromiseBelowNormal[U](promiseValue: U): typings.winjs.WinJS.Promise[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseBelowNormal")(promiseValue.asInstanceOf[js.Any]).asInstanceOf[typings.winjs.WinJS.Promise[U]]
+    inline def schedulePromiseBelowNormal[U](promiseValue: U, jobName: String): typings.winjs.WinJS.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseBelowNormal")(promiseValue.asInstanceOf[js.Any], jobName.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[U]]
+    inline def schedulePromiseBelowNormal[U](promiseValue: Unit, jobName: String): typings.winjs.WinJS.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseBelowNormal")(promiseValue.asInstanceOf[js.Any], jobName.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[U]]
     
     /**
       * Schedules a job to complete the returned Promise at WinJS.Utilities.Scheduler.Priority.high priority.
@@ -484,14 +459,10 @@ object Utilities {
       * @param jobName A string that describes the job for diagnostic purposes.
       * @returns A Promise that completes within a job of high priority.
       **/
-    @scala.inline
-    def schedulePromiseHigh[U](): typings.winjs.WinJS.Promise[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseHigh")().asInstanceOf[typings.winjs.WinJS.Promise[U]]
-    @scala.inline
-    def schedulePromiseHigh[U](promiseValue: U): typings.winjs.WinJS.Promise[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseHigh")(promiseValue.asInstanceOf[js.Any]).asInstanceOf[typings.winjs.WinJS.Promise[U]]
-    @scala.inline
-    def schedulePromiseHigh[U](promiseValue: U, jobName: String): typings.winjs.WinJS.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseHigh")(promiseValue.asInstanceOf[js.Any], jobName.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[U]]
-    @scala.inline
-    def schedulePromiseHigh[U](promiseValue: Unit, jobName: String): typings.winjs.WinJS.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseHigh")(promiseValue.asInstanceOf[js.Any], jobName.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[U]]
+    inline def schedulePromiseHigh[U](): typings.winjs.WinJS.Promise[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseHigh")().asInstanceOf[typings.winjs.WinJS.Promise[U]]
+    inline def schedulePromiseHigh[U](promiseValue: U): typings.winjs.WinJS.Promise[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseHigh")(promiseValue.asInstanceOf[js.Any]).asInstanceOf[typings.winjs.WinJS.Promise[U]]
+    inline def schedulePromiseHigh[U](promiseValue: U, jobName: String): typings.winjs.WinJS.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseHigh")(promiseValue.asInstanceOf[js.Any], jobName.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[U]]
+    inline def schedulePromiseHigh[U](promiseValue: Unit, jobName: String): typings.winjs.WinJS.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseHigh")(promiseValue.asInstanceOf[js.Any], jobName.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[U]]
     
     /**
       * Schedules a job to complete the returned Promise at WinJS.Utilities.Scheduler.Priority.Idle priority.
@@ -499,14 +470,10 @@ object Utilities {
       * @param jobName A string that describes the job for diagnostic purposes.
       * @returns A Promise that completes within a job of idle priority.
       **/
-    @scala.inline
-    def schedulePromiseIdle[U](): typings.winjs.WinJS.Promise[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseIdle")().asInstanceOf[typings.winjs.WinJS.Promise[U]]
-    @scala.inline
-    def schedulePromiseIdle[U](promiseValue: U): typings.winjs.WinJS.Promise[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseIdle")(promiseValue.asInstanceOf[js.Any]).asInstanceOf[typings.winjs.WinJS.Promise[U]]
-    @scala.inline
-    def schedulePromiseIdle[U](promiseValue: U, jobName: String): typings.winjs.WinJS.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseIdle")(promiseValue.asInstanceOf[js.Any], jobName.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[U]]
-    @scala.inline
-    def schedulePromiseIdle[U](promiseValue: Unit, jobName: String): typings.winjs.WinJS.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseIdle")(promiseValue.asInstanceOf[js.Any], jobName.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[U]]
+    inline def schedulePromiseIdle[U](): typings.winjs.WinJS.Promise[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseIdle")().asInstanceOf[typings.winjs.WinJS.Promise[U]]
+    inline def schedulePromiseIdle[U](promiseValue: U): typings.winjs.WinJS.Promise[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseIdle")(promiseValue.asInstanceOf[js.Any]).asInstanceOf[typings.winjs.WinJS.Promise[U]]
+    inline def schedulePromiseIdle[U](promiseValue: U, jobName: String): typings.winjs.WinJS.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseIdle")(promiseValue.asInstanceOf[js.Any], jobName.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[U]]
+    inline def schedulePromiseIdle[U](promiseValue: Unit, jobName: String): typings.winjs.WinJS.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseIdle")(promiseValue.asInstanceOf[js.Any], jobName.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[U]]
     
     /**
       * Schedules a job to complete the returned Promise at WinJS.Utilities.Scheduler.Priority.normal priority.
@@ -514,14 +481,10 @@ object Utilities {
       * @param jobName A string that describes the job for diagnostic purposes.
       * @returns A Promise that completes within a job of normal priority.
       **/
-    @scala.inline
-    def schedulePromiseNormal[U](): typings.winjs.WinJS.Promise[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseNormal")().asInstanceOf[typings.winjs.WinJS.Promise[U]]
-    @scala.inline
-    def schedulePromiseNormal[U](promiseValue: U): typings.winjs.WinJS.Promise[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseNormal")(promiseValue.asInstanceOf[js.Any]).asInstanceOf[typings.winjs.WinJS.Promise[U]]
-    @scala.inline
-    def schedulePromiseNormal[U](promiseValue: U, jobName: String): typings.winjs.WinJS.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseNormal")(promiseValue.asInstanceOf[js.Any], jobName.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[U]]
-    @scala.inline
-    def schedulePromiseNormal[U](promiseValue: Unit, jobName: String): typings.winjs.WinJS.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseNormal")(promiseValue.asInstanceOf[js.Any], jobName.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[U]]
+    inline def schedulePromiseNormal[U](): typings.winjs.WinJS.Promise[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseNormal")().asInstanceOf[typings.winjs.WinJS.Promise[U]]
+    inline def schedulePromiseNormal[U](promiseValue: U): typings.winjs.WinJS.Promise[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseNormal")(promiseValue.asInstanceOf[js.Any]).asInstanceOf[typings.winjs.WinJS.Promise[U]]
+    inline def schedulePromiseNormal[U](promiseValue: U, jobName: String): typings.winjs.WinJS.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseNormal")(promiseValue.asInstanceOf[js.Any], jobName.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[U]]
+    inline def schedulePromiseNormal[U](promiseValue: Unit, jobName: String): typings.winjs.WinJS.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("schedulePromiseNormal")(promiseValue.asInstanceOf[js.Any], jobName.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[U]]
   }
   
   //#endregion Objects
@@ -532,16 +495,14 @@ object Utilities {
     * @param name The name of the class to add.
     * @returns The element.
     **/
-  @scala.inline
-  def addClass[T /* <: HTMLElement */](e: T, name: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("addClass")(e.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def addClass[T /* <: HTMLElement */](e: T, name: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("addClass")(e.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[T]
   
   /**
     * Gets a collection of elements that are the direct children of the specified element.
     * @param element The parent element.
     * @returns The collection of children of the element.
     **/
-  @scala.inline
-  def children(element: HTMLElement): typings.winjs.WinJS.Utilities.QueryCollection[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("children")(element.asInstanceOf[js.Any]).asInstanceOf[typings.winjs.WinJS.Utilities.QueryCollection[HTMLElement]]
+  inline def children(element: HTMLElement): typings.winjs.WinJS.Utilities.QueryCollection[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("children")(element.asInstanceOf[js.Any]).asInstanceOf[typings.winjs.WinJS.Utilities.QueryCollection[HTMLElement]]
   
   /**
     * Converts a CSS positioning string for the specified element to pixels.
@@ -549,39 +510,34 @@ object Utilities {
     * @param value The CSS positioning string.
     * @returns The number of pixels.
     **/
-  @scala.inline
-  def convertToPixels(element: HTMLElement, value: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToPixels")(element.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def convertToPixels(element: HTMLElement, value: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToPixels")(element.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Creates an object that has one event for each name passed to the function.
     * @param events A variable list of property names.
     * @returns The object with the specified properties. The names of the properties are prefixed with 'on'.
     **/
-  @scala.inline
-  def createEventProperties(events: String*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createEventProperties")(events.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def createEventProperties(events: String*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createEventProperties")(events.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Gets the data value associated with the specified element.
     * @param element The element.
     * @returns The value associated with the element.
     **/
-  @scala.inline
-  def data(element: HTMLElement): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("data")(element.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def data(element: HTMLElement): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("data")(element.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Disposes all first-generation disposable elements that are descendents of the specified element. The specified element itself is not disposed.
     * @param element The root element whose sub-tree is to be disposed.
     **/
-  @scala.inline
-  def disposeSubTree(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disposeSubTree")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def disposeSubTree(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disposeSubTree")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Removes all the child nodes from the specified element.
     * @param element The element.
     * @returns The element.
     **/
-  @scala.inline
-  def empty[T /* <: HTMLElement */](element: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")(element.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def empty[T /* <: HTMLElement */](element: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")(element.asInstanceOf[js.Any]).asInstanceOf[T]
   
   //#endregion Enumerations
   //#region Objects
@@ -601,10 +557,8 @@ object Utilities {
       * @param listener The listener to invoke when the event gets raised.
       * @param useCapture If true, initiates capture, otherwise false.
       **/
-    @scala.inline
-    def addEventListener(`type`: String, listener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def addEventListener(`type`: String, listener: js.Function, useCapture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener(`type`: String, listener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener(`type`: String, listener: js.Function, useCapture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Raises an event of the specified type and with the specified additional properties.
@@ -612,8 +566,7 @@ object Utilities {
       * @param eventProperties The set of additional properties to be attached to the event object when the event is raised.
       * @returns true if preventDefault was called on the event.
       **/
-    @scala.inline
-    def dispatchEvent(`type`: String, eventProperties: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(`type`.asInstanceOf[js.Any], eventProperties.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def dispatchEvent(`type`: String, eventProperties: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(`type`.asInstanceOf[js.Any], eventProperties.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Removes an event listener from the control.
@@ -621,10 +574,8 @@ object Utilities {
       * @param listener The listener to remove.
       * @param useCapture true if capture is to be initiated, otherwise false.
       **/
-    @scala.inline
-    def removeEventListener(`type`: String, listener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def removeEventListener(`type`: String, listener: js.Function, useCapture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener(`type`: String, listener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener(`type`: String, listener: js.Function, useCapture: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any], useCapture.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   /**
@@ -633,8 +584,7 @@ object Utilities {
     * @param event The event.
     * @returns true if the event occurred within the element; otherwise, false.
     **/
-  @scala.inline
-  def eventWithinElement(element: HTMLElement, event: Event): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eventWithinElement")(element.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def eventWithinElement(element: HTMLElement, event: Event): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eventWithinElement")(element.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Adds tags and type to a logging message.
@@ -643,24 +593,21 @@ object Utilities {
     * @param type The type of the message.
     * @returns The formatted message.
     **/
-  @scala.inline
-  def formatLog(message: String, tag: String, `type`: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatLog")(message.asInstanceOf[js.Any], tag.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatLog(message: String, tag: String, `type`: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatLog")(message.asInstanceOf[js.Any], tag.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Gets the height of the content of the specified element. The content height does not include borders or padding.
     * @param element The element.
     * @returns The content height of the element.
     **/
-  @scala.inline
-  def getContentHeight(element: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getContentHeight")(element.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getContentHeight(element: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getContentHeight")(element.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Gets the width of the content of the specified element. The content width does not include borders or padding.
     * @param element The element.
     * @returns The content width of the element.
     **/
-  @scala.inline
-  def getContentWidth(element: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getContentWidth")(element.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getContentWidth(element: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getContentWidth")(element.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Gets the leaf-level type or namespace specified by the name parameter.
@@ -668,18 +615,15 @@ object Utilities {
     * @param root The root to start in. Defaults to the global object.
     * @returns The leaf-level type or namespace in the specified parent namespace.
     **/
-  @scala.inline
-  def getMember(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getMember")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def getMember(name: String, root: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getMember")(name.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def getMember(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getMember")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getMember(name: String, root: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getMember")(name.asInstanceOf[js.Any], root.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Gets the position of the specified element.
     * @param element The element.
     * @returns An object that contains the left, top, width and height properties of the element.
     **/
-  @scala.inline
-  def getPosition(element: HTMLElement): IPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(element.asInstanceOf[js.Any]).asInstanceOf[IPosition]
+  inline def getPosition(element: HTMLElement): IPosition = ^.asInstanceOf[js.Dynamic].applyDynamic("getPosition")(element.asInstanceOf[js.Any]).asInstanceOf[IPosition]
   
   /**
     * Gets the left coordinate of the specified element relative to the specified parent.
@@ -687,14 +631,10 @@ object Utilities {
     * @param parent The parent element.
     * @returns The relative left coordinate.
     **/
-  @scala.inline
-  def getRelativeLeft(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getRelativeLeft")().asInstanceOf[Double]
-  @scala.inline
-  def getRelativeLeft(element: Unit, parent: HTMLElement): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getRelativeLeft")(element.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def getRelativeLeft(element: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getRelativeLeft")(element.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def getRelativeLeft(element: HTMLElement, parent: HTMLElement): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getRelativeLeft")(element.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getRelativeLeft(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getRelativeLeft")().asInstanceOf[Double]
+  inline def getRelativeLeft(element: Unit, parent: HTMLElement): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getRelativeLeft")(element.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getRelativeLeft(element: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getRelativeLeft")(element.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getRelativeLeft(element: HTMLElement, parent: HTMLElement): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getRelativeLeft")(element.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Gets the top coordinate of the element relative to the specified parent.
@@ -702,46 +642,38 @@ object Utilities {
     * @param parent The parent element.
     * @returns The relative top coordinate.
     **/
-  @scala.inline
-  def getRelativeTop(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getRelativeTop")().asInstanceOf[Double]
-  @scala.inline
-  def getRelativeTop(element: Unit, parent: HTMLElement): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getRelativeTop")(element.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def getRelativeTop(element: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getRelativeTop")(element.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def getRelativeTop(element: HTMLElement, parent: HTMLElement): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getRelativeTop")(element.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getRelativeTop(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getRelativeTop")().asInstanceOf[Double]
+  inline def getRelativeTop(element: Unit, parent: HTMLElement): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getRelativeTop")(element.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getRelativeTop(element: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getRelativeTop")(element.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getRelativeTop(element: HTMLElement, parent: HTMLElement): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getRelativeTop")(element.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Gets the scrollLeft and scrollTop of the specified element, adjusting the scrollLeft to change from browser specific coordinates to logical coordinates when in RTL.
     * @param element The element.
     * @returns An object with two properties: scrollLeft and scrollTop
     **/
-  @scala.inline
-  def getScrollPosition(element: HTMLElement): ScrollLeft = ^.asInstanceOf[js.Dynamic].applyDynamic("getScrollPosition")(element.asInstanceOf[js.Any]).asInstanceOf[ScrollLeft]
+  inline def getScrollPosition(element: HTMLElement): ScrollLeft = ^.asInstanceOf[js.Dynamic].applyDynamic("getScrollPosition")(element.asInstanceOf[js.Any]).asInstanceOf[ScrollLeft]
   
   /**
     * Gets the tab index of the specified element.
     * @param element The element
     * @returns The tabIndex of the element. Returns -1 if the element cannot be tabbed to.
     **/
-  @scala.inline
-  def getTabIndex(element: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTabIndex")(element.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getTabIndex(element: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTabIndex")(element.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Gets the height of the element, including its margins.
     * @param element The element.
     * @returns The height of the element including margins.
     **/
-  @scala.inline
-  def getTotalHeight(element: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTotalHeight")(element.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getTotalHeight(element: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTotalHeight")(element.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Gets the width of the element, including margins.
     * @param element The element.
     * @returns The width of the element including margins.
     **/
-  @scala.inline
-  def getTotalWidth(element: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTotalWidth")(element.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def getTotalWidth(element: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTotalWidth")(element.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Determines whether the specified element has the specified class.
@@ -749,8 +681,7 @@ object Utilities {
     * @param name The name of the class.
     * @returns true if the element has the class, otherwise false.
     **/
-  @scala.inline
-  def hasClass(e: HTMLElement, name: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasClass")(e.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def hasClass(e: HTMLElement, name: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasClass")(e.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   //#endregion Functions
   //#region Properties
@@ -760,16 +691,14 @@ object Utilities {
   @JSGlobal("WinJS.Utilities.hasWinRT")
   @js.native
   def hasWinRT: Boolean = js.native
-  @scala.inline
-  def hasWinRT_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hasWinRT")(x.asInstanceOf[js.Any])
+  inline def hasWinRT_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hasWinRT")(x.asInstanceOf[js.Any])
   
   /**
     * Returns a collection with zero or one elements matching the specified id.
     * @param id The ID of the element (or elements).
     * @returns A collection of elements whose id matches the id parameter.
     **/
-  @scala.inline
-  def id(id: String): typings.winjs.WinJS.Utilities.QueryCollection[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("id")(id.asInstanceOf[js.Any]).asInstanceOf[typings.winjs.WinJS.Utilities.QueryCollection[HTMLElement]]
+  inline def id(id: String): typings.winjs.WinJS.Utilities.QueryCollection[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("id")(id.asInstanceOf[js.Any]).asInstanceOf[typings.winjs.WinJS.Utilities.QueryCollection[HTMLElement]]
   
   /**
     * Calls insertAdjacentHTML on the specified element.
@@ -777,8 +706,7 @@ object Utilities {
     * @param position The position relative to the element at which to insert the HTML. Possible values are: beforebegin, afterbegin, beforeend, afterend.
     * @param text The text to insert.
     **/
-  @scala.inline
-  def insertAdjacentHTML(element: HTMLElement, position: String, text: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertAdjacentHTML")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def insertAdjacentHTML(element: HTMLElement, position: String, text: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertAdjacentHTML")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Calls insertAdjacentHTML on the specified element in the context of MSApp.execUnsafeLocalFunction.
@@ -786,26 +714,22 @@ object Utilities {
     * @param position The position relative to the element at which to insert the HTML. Possible values are: beforebegin, afterbegin, beforeend, afterend.
     * @param text Value to be provided to insertAdjacentHTML.
     **/
-  @scala.inline
-  def insertAdjacentHTMLUnsafe(element: HTMLElement, position: String, text: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertAdjacentHTMLUnsafe")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def insertAdjacentHTMLUnsafe(element: HTMLElement, position: String, text: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertAdjacentHTMLUnsafe")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Attaches the default dispose API wrapping the dispose implementation to the specified element.
     * @param element The element to mark as disposable.
     * @param disposeImpl The function containing the element-specific dispose logic, called by the dispose function that markDisposable attaches.
     **/
-  @scala.inline
-  def markDisposable(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("markDisposable")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def markDisposable(element: HTMLElement, disposeImpl: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("markDisposable")(element.asInstanceOf[js.Any], disposeImpl.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def markDisposable(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("markDisposable")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def markDisposable(element: HTMLElement, disposeImpl: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("markDisposable")(element.asInstanceOf[js.Any], disposeImpl.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Marks a function as being compatible with declarative processing. Declarative processing is performed by WinJS.UI.processAll or WinJS.Binding.processAll.
     * @param func The function to be marked as compatible with declarative processing.
     * @returns The input function, marked as compatible with declarative processing.
     **/
-  @scala.inline
-  def markSupportedForProcessing[U /* <: js.Function */](func: U): U = ^.asInstanceOf[js.Dynamic].applyDynamic("markSupportedForProcessing")(func.asInstanceOf[js.Any]).asInstanceOf[U]
+  inline def markSupportedForProcessing[U /* <: js.Function */](func: U): U = ^.asInstanceOf[js.Dynamic].applyDynamic("markSupportedForProcessing")(func.asInstanceOf[js.Any]).asInstanceOf[U]
   
   /**
     * Returns a QueryCollection with zero or one elements matching the specified selector query.
@@ -813,10 +737,8 @@ object Utilities {
     * @param element Optional. The root element at which to start the query. If this parameter is omitted, the scope of the query is the entire document.
     * @returns A QueryCollection with zero or one elements matching the specified selector query.
     **/
-  @scala.inline
-  def query(query: js.Any): typings.winjs.WinJS.Utilities.QueryCollection[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(query.asInstanceOf[js.Any]).asInstanceOf[typings.winjs.WinJS.Utilities.QueryCollection[HTMLElement]]
-  @scala.inline
-  def query(query: js.Any, element: HTMLElement): typings.winjs.WinJS.Utilities.QueryCollection[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(query.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Utilities.QueryCollection[HTMLElement]]
+  inline def query(query: js.Any): typings.winjs.WinJS.Utilities.QueryCollection[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("query")(query.asInstanceOf[js.Any]).asInstanceOf[typings.winjs.WinJS.Utilities.QueryCollection[HTMLElement]]
+  inline def query(query: js.Any, element: HTMLElement): typings.winjs.WinJS.Utilities.QueryCollection[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(query.asInstanceOf[js.Any], element.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Utilities.QueryCollection[HTMLElement]]
   
   /**
     * Ensures that the specified function executes only after the DOMContentLoaded event has fired for the current page. The DOMContentLoaded event occurs after the page has been parsed but before all the resources are loaded.
@@ -824,14 +746,10 @@ object Utilities {
     * @param async If true, the callback should be executed asynchronously.
     * @returns A promise that completes after the DOMContentLoaded event has occurred.
     **/
-  @scala.inline
-  def ready(): typings.winjs.WinJS.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("ready")().asInstanceOf[typings.winjs.WinJS.Promise[js.Any]]
-  @scala.inline
-  def ready(callback: js.Function): typings.winjs.WinJS.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("ready")(callback.asInstanceOf[js.Any]).asInstanceOf[typings.winjs.WinJS.Promise[js.Any]]
-  @scala.inline
-  def ready(callback: js.Function, async: Boolean): typings.winjs.WinJS.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("ready")(callback.asInstanceOf[js.Any], async.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[js.Any]]
-  @scala.inline
-  def ready(callback: Unit, async: Boolean): typings.winjs.WinJS.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("ready")(callback.asInstanceOf[js.Any], async.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[js.Any]]
+  inline def ready(): typings.winjs.WinJS.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("ready")().asInstanceOf[typings.winjs.WinJS.Promise[js.Any]]
+  inline def ready(callback: js.Function): typings.winjs.WinJS.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("ready")(callback.asInstanceOf[js.Any]).asInstanceOf[typings.winjs.WinJS.Promise[js.Any]]
+  inline def ready(callback: js.Function, async: Boolean): typings.winjs.WinJS.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("ready")(callback.asInstanceOf[js.Any], async.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[js.Any]]
+  inline def ready(callback: Unit, async: Boolean): typings.winjs.WinJS.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("ready")(callback.asInstanceOf[js.Any], async.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[js.Any]]
   
   /**
     * Removes the specified class from the specified element.
@@ -839,73 +757,62 @@ object Utilities {
     * @param name The name of the class to remove.
     * @returns The element.
     **/
-  @scala.inline
-  def removeClass[T /* <: HTMLElement */](e: T, name: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("removeClass")(e.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def removeClass[T /* <: HTMLElement */](e: T, name: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("removeClass")(e.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[T]
   
   /**
     * Asserts that the value is compatible with declarative processing. Declarative processing is performed by WinJS.UI.processAll or WinJS.Binding.processAll. If the value is not compatible, and strictProcessing is on, an exception is thrown. All functions that have been declared using WinJS.Class.define, WinJS.Class.derive, WinJS.UI.Pages.define, or WinJS.Binding.converter are automatically marked as supported for declarative processing. Any other function that you use from a declarative context (that is, a context in which an HTML element has a data-win-control or data-win-options attribute) must be marked manually by calling this function. When you mark a function as supported for declarative processing, you are guaranteeing that the code in the function is secure from injection of third-party content.
     * @param value The value to be tested for compatibility with declarative processing. If the value is a function it must be marked with a property supportedForProcessing with a value of true when strictProcessing is on. For more information, see WinJS.Utilities.markSupportedForProcessing.
     * @returns The input value.
     **/
-  @scala.inline
-  def requireSupportedForProcessing[T](value: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("requireSupportedForProcessing")(value.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def requireSupportedForProcessing[T](value: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("requireSupportedForProcessing")(value.asInstanceOf[js.Any]).asInstanceOf[T]
   
   /**
     * Sets the innerHTML property of the specified element to the specified text.
     * @param element The element on which the innerHTML property is to be set.
     * @param text The value to be set to the innerHTML property.
     **/
-  @scala.inline
-  def setInnerHTML(element: HTMLElement, text: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setInnerHTML")(element.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setInnerHTML(element: HTMLElement, text: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setInnerHTML")(element.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the innerHTML property of the specified element to the specified text.
     * @param element The element on which the innerHTML property is to be set.
     * @param text The value to be set to the innerHTML property.
     **/
-  @scala.inline
-  def setInnerHTMLUnsafe(element: HTMLElement, text: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setInnerHTMLUnsafe")(element.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setInnerHTMLUnsafe(element: HTMLElement, text: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setInnerHTMLUnsafe")(element.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the outerHTML property of the specified element to the specified text.
     * @param element The element on which the outerHTML property is to be set.
     * @param text The value to be set to the outerHTML property.
     **/
-  @scala.inline
-  def setOuterHTML(element: HTMLElement, text: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setOuterHTML")(element.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setOuterHTML(element: HTMLElement, text: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setOuterHTML")(element.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the outerHTML property of the specified element to the specified text in the context of MSApp.execUnsafeLocalFunction.
     * @param element The element on which the outerHTML property is to be set.
     * @param text The value to be set to the outerHTML property.
     **/
-  @scala.inline
-  def setOuterHTMLUnsafe(element: HTMLElement, text: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setOuterHTMLUnsafe")(element.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setOuterHTMLUnsafe(element: HTMLElement, text: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setOuterHTMLUnsafe")(element.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the scrollLeft and scrollTop of the specified element, changing the scrollLeft from logical coordinates to browser-specific coordinates when in RTL.
     * @param element The element.
     * @param position An object describing the position to set.
     **/
-  @scala.inline
-  def setScrollPosition(element: HTMLElement, position: ScrollLeft): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setScrollPosition")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def setScrollPosition(element: HTMLElement, position: ScrollLeft): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setScrollPosition")(element.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Configures a logger that writes messages containing the specified tags to the JavaScript console.
     * @param options The tags for messages to log. Multiple tags should be separated by spaces. May contain type, tags, excludeTags and action properties.
     **/
-  @scala.inline
-  def startLog(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startLog")().asInstanceOf[Unit]
-  @scala.inline
-  def startLog(options: ILogOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startLog")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def startLog(tags: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startLog")(tags.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def startLog(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startLog")().asInstanceOf[Unit]
+  inline def startLog(options: ILogOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startLog")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def startLog(tags: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startLog")(tags.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Removes the WinJS logger that had previously been set up.
     **/
-  @scala.inline
-  def stopLog(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopLog")().asInstanceOf[Unit]
+  inline def stopLog(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopLog")().asInstanceOf[Unit]
   
   /**
     * Determines if strict declarative processing is enabled in this script context.
@@ -913,8 +820,7 @@ object Utilities {
   @JSGlobal("WinJS.Utilities.strictProcessing")
   @js.native
   def strictProcessing: Boolean = js.native
-  @scala.inline
-  def strictProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("strictProcessing")(x.asInstanceOf[js.Any])
+  inline def strictProcessing_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("strictProcessing")(x.asInstanceOf[js.Any])
   
   /**
     * Toggles (adds or removes) the specified class on the specified element. If the class is present, it is removed; if it is absent, it is added.
@@ -922,6 +828,5 @@ object Utilities {
     * @param name The name of the class to toggle.
     * @returns The element.
     **/
-  @scala.inline
-  def toggleClass[T /* <: HTMLElement */](e: T, name: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("toggleClass")(e.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[T]
+  inline def toggleClass[T /* <: HTMLElement */](e: T, name: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("toggleClass")(e.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[T]
 }

@@ -24,8 +24,7 @@ trait SelectionWrapper extends StObject {
 }
 object SelectionWrapper {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     execCommand: (js.Object, js.Object) => Unit,
     focus: () => Unit,
     getSelectedItem: () => Unit,
@@ -39,31 +38,22 @@ object SelectionWrapper {
     __obj.asInstanceOf[SelectionWrapper]
   }
   
-  @scala.inline
-  implicit class SelectionWrapperMutableBuilder[Self <: SelectionWrapper] (val x: Self) extends AnyVal {
+  extension [Self <: SelectionWrapper](x: Self) {
     
-    @scala.inline
-    def setExecCommand(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "execCommand", js.Any.fromFunction2(value))
+    inline def setExecCommand(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "execCommand", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+    inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSelectedItem(value: () => Unit): Self = StObject.set(x, "getSelectedItem", js.Any.fromFunction0(value))
+    inline def setGetSelectedItem(value: () => Unit): Self = StObject.set(x, "getSelectedItem", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSelectionAsText(value: () => Unit): Self = StObject.set(x, "getSelectionAsText", js.Any.fromFunction0(value))
+    inline def setGetSelectionAsText(value: () => Unit): Self = StObject.set(x, "getSelectionAsText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInsertElement(value: js.Object => Unit): Self = StObject.set(x, "insertElement", js.Any.fromFunction1(value))
+    inline def setInsertElement(value: js.Object => Unit): Self = StObject.set(x, "insertElement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInsertTable(value: js.Object => Unit): Self = StObject.set(x, "insertTable", js.Any.fromFunction1(value))
+    inline def setInsertTable(value: js.Object => Unit): Self = StObject.set(x, "insertTable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReplaceNode(value: js.Object => Unit): Self = StObject.set(x, "replaceNode", js.Any.fromFunction1(value))
+    inline def setReplaceNode(value: js.Object => Unit): Self = StObject.set(x, "replaceNode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelect(value: js.Object => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+    inline def setSelect(value: js.Object => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
   }
 }

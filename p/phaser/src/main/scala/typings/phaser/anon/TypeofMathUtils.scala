@@ -50,8 +50,7 @@ trait TypeofMathUtils extends StObject {
 }
 object TypeofMathUtils {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PI: Double,
     PI2: Double,
     cbrt: Double => Double,
@@ -71,49 +70,34 @@ object TypeofMathUtils {
     __obj.asInstanceOf[TypeofMathUtils]
   }
   
-  @scala.inline
-  implicit class TypeofMathUtilsMutableBuilder[Self <: TypeofMathUtils] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofMathUtils](x: Self) {
     
-    @scala.inline
-    def setCbrt(value: Double => Double): Self = StObject.set(x, "cbrt", js.Any.fromFunction1(value))
+    inline def setCbrt(value: Double => Double): Self = StObject.set(x, "cbrt", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClamp(value: (Double, Double, Double) => Double): Self = StObject.set(x, "clamp", js.Any.fromFunction3(value))
+    inline def setClamp(value: (Double, Double, Double) => Double): Self = StObject.set(x, "clamp", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCosDeg(value: Double => Double): Self = StObject.set(x, "cosDeg", js.Any.fromFunction1(value))
+    inline def setCosDeg(value: Double => Double): Self = StObject.set(x, "cosDeg", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDegRad(value: Double): Self = StObject.set(x, "degRad", value.asInstanceOf[js.Any])
+    inline def setDegRad(value: Double): Self = StObject.set(x, "degRad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDegreesToRadians(value: Double): Self = StObject.set(x, "degreesToRadians", value.asInstanceOf[js.Any])
+    inline def setDegreesToRadians(value: Double): Self = StObject.set(x, "degreesToRadians", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPI(value: Double): Self = StObject.set(x, "PI", value.asInstanceOf[js.Any])
+    inline def setPI(value: Double): Self = StObject.set(x, "PI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPI2(value: Double): Self = StObject.set(x, "PI2", value.asInstanceOf[js.Any])
+    inline def setPI2(value: Double): Self = StObject.set(x, "PI2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadDeg(value: Double): Self = StObject.set(x, "radDeg", value.asInstanceOf[js.Any])
+    inline def setRadDeg(value: Double): Self = StObject.set(x, "radDeg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiansToDegrees(value: Double): Self = StObject.set(x, "radiansToDegrees", value.asInstanceOf[js.Any])
+    inline def setRadiansToDegrees(value: Double): Self = StObject.set(x, "radiansToDegrees", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRandomTriangular(value: (Double, Double) => Double): Self = StObject.set(x, "randomTriangular", js.Any.fromFunction2(value))
+    inline def setRandomTriangular(value: (Double, Double) => Double): Self = StObject.set(x, "randomTriangular", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRandomTriangularWith(value: (Double, Double, Double) => Double): Self = StObject.set(x, "randomTriangularWith", js.Any.fromFunction3(value))
+    inline def setRandomTriangularWith(value: (Double, Double, Double) => Double): Self = StObject.set(x, "randomTriangularWith", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSignum(value: Double => Double): Self = StObject.set(x, "signum", js.Any.fromFunction1(value))
+    inline def setSignum(value: Double => Double): Self = StObject.set(x, "signum", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSinDeg(value: Double => Double): Self = StObject.set(x, "sinDeg", js.Any.fromFunction1(value))
+    inline def setSinDeg(value: Double => Double): Self = StObject.set(x, "sinDeg", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToInt(value: Double => Double): Self = StObject.set(x, "toInt", js.Any.fromFunction1(value))
+    inline def setToInt(value: Double => Double): Self = StObject.set(x, "toInt", js.Any.fromFunction1(value))
   }
 }

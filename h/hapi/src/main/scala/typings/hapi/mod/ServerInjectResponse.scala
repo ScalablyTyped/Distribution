@@ -25,8 +25,7 @@ trait ServerInjectResponse
 }
 object ServerInjectResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     headers: Headers,
     payload: String,
     raw: Req,
@@ -40,16 +39,12 @@ object ServerInjectResponse {
     __obj.asInstanceOf[ServerInjectResponse]
   }
   
-  @scala.inline
-  implicit class ServerInjectResponseMutableBuilder[Self <: ServerInjectResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ServerInjectResponse](x: Self) {
     
-    @scala.inline
-    def setRequest(value: Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: js.Object): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: js.Object): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
   }
 }

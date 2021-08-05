@@ -22,34 +22,25 @@ trait LifecycleRule extends StObject {
 }
 object LifecycleRule {
   
-  @scala.inline
-  def apply(date: String, prefix: String, status: RuleStatusType): LifecycleRule = {
+  inline def apply(date: String, prefix: String, status: RuleStatusType): LifecycleRule = {
     val __obj = js.Dynamic.literal(date = date.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[LifecycleRule]
   }
   
-  @scala.inline
-  implicit class LifecycleRuleMutableBuilder[Self <: LifecycleRule] (val x: Self) extends AnyVal {
+  extension [Self <: LifecycleRule](x: Self) {
     
-    @scala.inline
-    def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDays(value: Double | String): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
+    inline def setDays(value: Double | String): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDaysUndefined: Self = StObject.set(x, "days", js.undefined)
+    inline def setDaysUndefined: Self = StObject.set(x, "days", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: RuleStatusType): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: RuleStatusType): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

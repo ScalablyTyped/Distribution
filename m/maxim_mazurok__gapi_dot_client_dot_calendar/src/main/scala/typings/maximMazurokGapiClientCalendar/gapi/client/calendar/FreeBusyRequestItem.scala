@@ -11,19 +11,15 @@ trait FreeBusyRequestItem extends StObject {
 }
 object FreeBusyRequestItem {
   
-  @scala.inline
-  def apply(): FreeBusyRequestItem = {
+  inline def apply(): FreeBusyRequestItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FreeBusyRequestItem]
   }
   
-  @scala.inline
-  implicit class FreeBusyRequestItemMutableBuilder[Self <: FreeBusyRequestItem] (val x: Self) extends AnyVal {
+  extension [Self <: FreeBusyRequestItem](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

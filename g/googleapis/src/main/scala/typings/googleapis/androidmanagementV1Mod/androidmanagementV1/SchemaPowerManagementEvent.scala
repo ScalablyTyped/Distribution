@@ -26,31 +26,23 @@ trait SchemaPowerManagementEvent extends StObject {
 }
 object SchemaPowerManagementEvent {
   
-  @scala.inline
-  def apply(): SchemaPowerManagementEvent = {
+  inline def apply(): SchemaPowerManagementEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPowerManagementEvent]
   }
   
-  @scala.inline
-  implicit class SchemaPowerManagementEventMutableBuilder[Self <: SchemaPowerManagementEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPowerManagementEvent](x: Self) {
     
-    @scala.inline
-    def setBatteryLevel(value: Double): Self = StObject.set(x, "batteryLevel", value.asInstanceOf[js.Any])
+    inline def setBatteryLevel(value: Double): Self = StObject.set(x, "batteryLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatteryLevelUndefined: Self = StObject.set(x, "batteryLevel", js.undefined)
+    inline def setBatteryLevelUndefined: Self = StObject.set(x, "batteryLevel", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
+    inline def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
   }
 }

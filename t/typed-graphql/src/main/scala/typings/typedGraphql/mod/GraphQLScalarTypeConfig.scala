@@ -18,37 +18,27 @@ trait GraphQLScalarTypeConfig extends StObject {
 }
 object GraphQLScalarTypeConfig {
   
-  @scala.inline
-  def apply(name: String, serialize: js.Any => js.Any): GraphQLScalarTypeConfig = {
+  inline def apply(name: String, serialize: js.Any => js.Any): GraphQLScalarTypeConfig = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], serialize = js.Any.fromFunction1(serialize))
     __obj.asInstanceOf[GraphQLScalarTypeConfig]
   }
   
-  @scala.inline
-  implicit class GraphQLScalarTypeConfigMutableBuilder[Self <: GraphQLScalarTypeConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GraphQLScalarTypeConfig](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParseLiteral(value: /* valueAST */ Value => js.Any): Self = StObject.set(x, "parseLiteral", js.Any.fromFunction1(value))
+    inline def setParseLiteral(value: /* valueAST */ Value => js.Any): Self = StObject.set(x, "parseLiteral", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParseLiteralUndefined: Self = StObject.set(x, "parseLiteral", js.undefined)
+    inline def setParseLiteralUndefined: Self = StObject.set(x, "parseLiteral", js.undefined)
     
-    @scala.inline
-    def setParseValue(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "parseValue", js.Any.fromFunction1(value))
+    inline def setParseValue(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "parseValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParseValueUndefined: Self = StObject.set(x, "parseValue", js.undefined)
+    inline def setParseValueUndefined: Self = StObject.set(x, "parseValue", js.undefined)
     
-    @scala.inline
-    def setSerialize(value: js.Any => js.Any): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
+    inline def setSerialize(value: js.Any => js.Any): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
   }
 }

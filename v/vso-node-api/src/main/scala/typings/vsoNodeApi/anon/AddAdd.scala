@@ -38,8 +38,7 @@ trait AddAdd extends StObject {
 }
 object AddAdd {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addAdd: scala.Double,
     addRename: scala.Double,
     deleteEdit: scala.Double,
@@ -60,52 +59,36 @@ object AddAdd {
     __obj.asInstanceOf[AddAdd]
   }
   
-  @scala.inline
-  implicit class AddAddMutableBuilder[Self <: AddAdd] (val x: Self) extends AnyVal {
+  extension [Self <: AddAdd](x: Self) {
     
-    @scala.inline
-    def setAddAdd(value: scala.Double): Self = StObject.set(x, "addAdd", value.asInstanceOf[js.Any])
+    inline def setAddAdd(value: scala.Double): Self = StObject.set(x, "addAdd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddRename(value: scala.Double): Self = StObject.set(x, "addRename", value.asInstanceOf[js.Any])
+    inline def setAddRename(value: scala.Double): Self = StObject.set(x, "addRename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteEdit(value: scala.Double): Self = StObject.set(x, "deleteEdit", value.asInstanceOf[js.Any])
+    inline def setDeleteEdit(value: scala.Double): Self = StObject.set(x, "deleteEdit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteRename(value: scala.Double): Self = StObject.set(x, "deleteRename", value.asInstanceOf[js.Any])
+    inline def setDeleteRename(value: scala.Double): Self = StObject.set(x, "deleteRename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryChild(value: scala.Double): Self = StObject.set(x, "directoryChild", value.asInstanceOf[js.Any])
+    inline def setDirectoryChild(value: scala.Double): Self = StObject.set(x, "directoryChild", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryFile(value: scala.Double): Self = StObject.set(x, "directoryFile", value.asInstanceOf[js.Any])
+    inline def setDirectoryFile(value: scala.Double): Self = StObject.set(x, "directoryFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditDelete(value: scala.Double): Self = StObject.set(x, "editDelete", value.asInstanceOf[js.Any])
+    inline def setEditDelete(value: scala.Double): Self = StObject.set(x, "editDelete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditEdit(value: scala.Double): Self = StObject.set(x, "editEdit", value.asInstanceOf[js.Any])
+    inline def setEditEdit(value: scala.Double): Self = StObject.set(x, "editEdit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileDirectory(value: scala.Double): Self = StObject.set(x, "fileDirectory", value.asInstanceOf[js.Any])
+    inline def setFileDirectory(value: scala.Double): Self = StObject.set(x, "fileDirectory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRename1to2(value: scala.Double): Self = StObject.set(x, "rename1to2", value.asInstanceOf[js.Any])
+    inline def setRename1to2(value: scala.Double): Self = StObject.set(x, "rename1to2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRename2to1(value: scala.Double): Self = StObject.set(x, "rename2to1", value.asInstanceOf[js.Any])
+    inline def setRename2to1(value: scala.Double): Self = StObject.set(x, "rename2to1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenameAdd(value: scala.Double): Self = StObject.set(x, "renameAdd", value.asInstanceOf[js.Any])
+    inline def setRenameAdd(value: scala.Double): Self = StObject.set(x, "renameAdd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenameDelete(value: scala.Double): Self = StObject.set(x, "renameDelete", value.asInstanceOf[js.Any])
+    inline def setRenameDelete(value: scala.Double): Self = StObject.set(x, "renameDelete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenameRename(value: scala.Double): Self = StObject.set(x, "renameRename", value.asInstanceOf[js.Any])
+    inline def setRenameRename(value: scala.Double): Self = StObject.set(x, "renameRename", value.asInstanceOf[js.Any])
   }
 }

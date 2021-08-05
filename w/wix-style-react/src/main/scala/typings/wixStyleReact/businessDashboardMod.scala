@@ -11,10 +11,8 @@ object businessDashboardMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def theme(): ThemeInterface = ^.asInstanceOf[js.Dynamic].applyDynamic("theme")().asInstanceOf[ThemeInterface]
-  @scala.inline
-  def theme(options: ThemeOptions): ThemeInterface = ^.asInstanceOf[js.Dynamic].applyDynamic("theme")(options.asInstanceOf[js.Any]).asInstanceOf[ThemeInterface]
+  inline def theme(): ThemeInterface = ^.asInstanceOf[js.Dynamic].applyDynamic("theme")().asInstanceOf[ThemeInterface]
+  inline def theme(options: ThemeOptions): ThemeInterface = ^.asInstanceOf[js.Dynamic].applyDynamic("theme")(options.asInstanceOf[js.Any]).asInstanceOf[ThemeInterface]
   
   trait ThemeOptions extends StObject {
     
@@ -22,20 +20,16 @@ object businessDashboardMod {
   }
   object ThemeOptions {
     
-    @scala.inline
-    def apply(): ThemeOptions = {
+    inline def apply(): ThemeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ThemeOptions]
     }
     
-    @scala.inline
-    implicit class ThemeOptionsMutableBuilder[Self <: ThemeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ThemeOptions](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     }
   }
 }

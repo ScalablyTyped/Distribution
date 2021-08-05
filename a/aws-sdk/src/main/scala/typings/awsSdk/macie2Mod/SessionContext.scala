@@ -18,25 +18,19 @@ trait SessionContext extends StObject {
 }
 object SessionContext {
   
-  @scala.inline
-  def apply(): SessionContext = {
+  inline def apply(): SessionContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SessionContext]
   }
   
-  @scala.inline
-  implicit class SessionContextMutableBuilder[Self <: SessionContext] (val x: Self) extends AnyVal {
+  extension [Self <: SessionContext](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: SessionContextAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: SessionContextAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setSessionIssuer(value: SessionIssuer): Self = StObject.set(x, "sessionIssuer", value.asInstanceOf[js.Any])
+    inline def setSessionIssuer(value: SessionIssuer): Self = StObject.set(x, "sessionIssuer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionIssuerUndefined: Self = StObject.set(x, "sessionIssuer", js.undefined)
+    inline def setSessionIssuerUndefined: Self = StObject.set(x, "sessionIssuer", js.undefined)
   }
 }

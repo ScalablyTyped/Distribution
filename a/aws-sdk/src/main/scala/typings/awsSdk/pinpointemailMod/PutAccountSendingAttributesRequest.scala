@@ -13,19 +13,15 @@ trait PutAccountSendingAttributesRequest extends StObject {
 }
 object PutAccountSendingAttributesRequest {
   
-  @scala.inline
-  def apply(): PutAccountSendingAttributesRequest = {
+  inline def apply(): PutAccountSendingAttributesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutAccountSendingAttributesRequest]
   }
   
-  @scala.inline
-  implicit class PutAccountSendingAttributesRequestMutableBuilder[Self <: PutAccountSendingAttributesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutAccountSendingAttributesRequest](x: Self) {
     
-    @scala.inline
-    def setSendingEnabled(value: Enabled): Self = StObject.set(x, "SendingEnabled", value.asInstanceOf[js.Any])
+    inline def setSendingEnabled(value: Enabled): Self = StObject.set(x, "SendingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendingEnabledUndefined: Self = StObject.set(x, "SendingEnabled", js.undefined)
+    inline def setSendingEnabledUndefined: Self = StObject.set(x, "SendingEnabled", js.undefined)
   }
 }

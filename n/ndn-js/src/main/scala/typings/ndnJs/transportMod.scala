@@ -36,8 +36,7 @@ object transportMod {
     @JSImport("ndn-js/transport", "Transport.ConnectionInfo")
     @js.native
     def ConnectionInfo: TransportConnectionInfo = js.native
-    @scala.inline
-    def ConnectionInfo_=(x: TransportConnectionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConnectionInfo")(x.asInstanceOf[js.Any])
+    inline def ConnectionInfo_=(x: TransportConnectionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConnectionInfo")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ndn-js/transport", "TransportConnectionInfo")

@@ -36,22 +36,15 @@ object vectorMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def angleBetween(a: Vector, b: Vector): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("angleBetween")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def angleBetween(a: Vector, b: Vector): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("angleBetween")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @scala.inline
-    def fromPoints(begin: Point, end: Point): Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(begin.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Vector]
+    inline def fromPoints(begin: Point, end: Point): Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(begin.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Vector]
     
-    @scala.inline
-    def fromSegment(segment: Segment[Point]): Vector = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSegment")(segment.asInstanceOf[js.Any]).asInstanceOf[Vector]
+    inline def fromSegment(segment: Segment[Point]): Vector = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSegment")(segment.asInstanceOf[js.Any]).asInstanceOf[Vector]
     
-    @scala.inline
-    def scalarProduct(a: Point, b: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("scalarProduct")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def scalarProduct(a: Point, b: Vector): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("scalarProduct")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def scalarProduct(a: Vector, b: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("scalarProduct")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
-    @scala.inline
-    def scalarProduct(a: Vector, b: Vector): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("scalarProduct")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def scalarProduct(a: Point, b: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("scalarProduct")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def scalarProduct(a: Point, b: Vector): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("scalarProduct")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def scalarProduct(a: Vector, b: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("scalarProduct")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def scalarProduct(a: Vector, b: Vector): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("scalarProduct")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
 }

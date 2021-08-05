@@ -19,20 +19,16 @@ trait GitSuggestion extends StObject {
 }
 object GitSuggestion {
   
-  @scala.inline
-  def apply(properties: StringDictionary[js.Any], `type`: String): GitSuggestion = {
+  inline def apply(properties: StringDictionary[js.Any], `type`: String): GitSuggestion = {
     val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitSuggestion]
   }
   
-  @scala.inline
-  implicit class GitSuggestionMutableBuilder[Self <: GitSuggestion] (val x: Self) extends AnyVal {
+  extension [Self <: GitSuggestion](x: Self) {
     
-    @scala.inline
-    def setProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: StringDictionary[js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

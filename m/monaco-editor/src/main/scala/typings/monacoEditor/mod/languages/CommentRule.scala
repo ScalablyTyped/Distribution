@@ -18,31 +18,23 @@ trait CommentRule extends StObject {
 }
 object CommentRule {
   
-  @scala.inline
-  def apply(): CommentRule = {
+  inline def apply(): CommentRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommentRule]
   }
   
-  @scala.inline
-  implicit class CommentRuleMutableBuilder[Self <: CommentRule] (val x: Self) extends AnyVal {
+  extension [Self <: CommentRule](x: Self) {
     
-    @scala.inline
-    def setBlockComment(value: CharacterPair): Self = StObject.set(x, "blockComment", value.asInstanceOf[js.Any])
+    inline def setBlockComment(value: CharacterPair): Self = StObject.set(x, "blockComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockCommentNull: Self = StObject.set(x, "blockComment", null)
+    inline def setBlockCommentNull: Self = StObject.set(x, "blockComment", null)
     
-    @scala.inline
-    def setBlockCommentUndefined: Self = StObject.set(x, "blockComment", js.undefined)
+    inline def setBlockCommentUndefined: Self = StObject.set(x, "blockComment", js.undefined)
     
-    @scala.inline
-    def setLineComment(value: String): Self = StObject.set(x, "lineComment", value.asInstanceOf[js.Any])
+    inline def setLineComment(value: String): Self = StObject.set(x, "lineComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineCommentNull: Self = StObject.set(x, "lineComment", null)
+    inline def setLineCommentNull: Self = StObject.set(x, "lineComment", null)
     
-    @scala.inline
-    def setLineCommentUndefined: Self = StObject.set(x, "lineComment", js.undefined)
+    inline def setLineCommentUndefined: Self = StObject.set(x, "lineComment", js.undefined)
   }
 }

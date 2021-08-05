@@ -12,17 +12,14 @@ object anon {
   }
   object Name {
     
-    @scala.inline
-    def apply(name: () => String): Name = {
+    inline def apply(name: () => String): Name = {
       val __obj = js.Dynamic.literal(name = js.Any.fromFunction0(name))
       __obj.asInstanceOf[Name]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+    extension [Self <: Name](x: Self) {
       
-      @scala.inline
-      def setName(value: () => String): Self = StObject.set(x, "name", js.Any.fromFunction0(value))
+      inline def setName(value: () => String): Self = StObject.set(x, "name", js.Any.fromFunction0(value))
     }
   }
 }

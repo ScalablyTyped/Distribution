@@ -10,16 +10,13 @@ trait LetExpression extends StObject {
 }
 object LetExpression {
   
-  @scala.inline
-  def apply(createBinding: () => LetBinding): LetExpression = {
+  inline def apply(createBinding: () => LetBinding): LetExpression = {
     val __obj = js.Dynamic.literal(createBinding = js.Any.fromFunction0(createBinding))
     __obj.asInstanceOf[LetExpression]
   }
   
-  @scala.inline
-  implicit class LetExpressionMutableBuilder[Self <: LetExpression] (val x: Self) extends AnyVal {
+  extension [Self <: LetExpression](x: Self) {
     
-    @scala.inline
-    def setCreateBinding(value: () => LetBinding): Self = StObject.set(x, "createBinding", js.Any.fromFunction0(value))
+    inline def setCreateBinding(value: () => LetBinding): Self = StObject.set(x, "createBinding", js.Any.fromFunction0(value))
   }
 }

@@ -12,6 +12,5 @@ object safeAreaViewMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def SafeAreaView(hasStyleModeEdgesRest: NativeSafeAreaViewProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SafeAreaView")(hasStyleModeEdgesRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  inline def SafeAreaView(hasStyleModeEdgesRest: NativeSafeAreaViewProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SafeAreaView")(hasStyleModeEdgesRest.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

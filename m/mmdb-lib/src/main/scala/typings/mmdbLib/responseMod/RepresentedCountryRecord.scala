@@ -12,17 +12,14 @@ trait RepresentedCountryRecord
 }
 object RepresentedCountryRecord {
   
-  @scala.inline
-  def apply(geoname_id: Double, iso_code: String, names: Names, `type`: String): RepresentedCountryRecord = {
+  inline def apply(geoname_id: Double, iso_code: String, names: Names, `type`: String): RepresentedCountryRecord = {
     val __obj = js.Dynamic.literal(geoname_id = geoname_id.asInstanceOf[js.Any], iso_code = iso_code.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[RepresentedCountryRecord]
   }
   
-  @scala.inline
-  implicit class RepresentedCountryRecordMutableBuilder[Self <: RepresentedCountryRecord] (val x: Self) extends AnyVal {
+  extension [Self <: RepresentedCountryRecord](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

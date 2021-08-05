@@ -12,17 +12,14 @@ trait IBodyEvent
 }
 object IBodyEvent {
   
-  @scala.inline
-  def apply(body: Body, `type`: String): IBodyEvent = {
+  inline def apply(body: Body, `type`: String): IBodyEvent = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IBodyEvent]
   }
   
-  @scala.inline
-  implicit class IBodyEventMutableBuilder[Self <: IBodyEvent] (val x: Self) extends AnyVal {
+  extension [Self <: IBodyEvent](x: Self) {
     
-    @scala.inline
-    def setBody(value: Body): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: Body): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }
 }

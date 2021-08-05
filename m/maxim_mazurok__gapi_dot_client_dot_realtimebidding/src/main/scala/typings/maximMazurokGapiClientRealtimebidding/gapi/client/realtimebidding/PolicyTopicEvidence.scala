@@ -29,55 +29,39 @@ trait PolicyTopicEvidence extends StObject {
 }
 object PolicyTopicEvidence {
   
-  @scala.inline
-  def apply(): PolicyTopicEvidence = {
+  inline def apply(): PolicyTopicEvidence = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PolicyTopicEvidence]
   }
   
-  @scala.inline
-  implicit class PolicyTopicEvidenceMutableBuilder[Self <: PolicyTopicEvidence] (val x: Self) extends AnyVal {
+  extension [Self <: PolicyTopicEvidence](x: Self) {
     
-    @scala.inline
-    def setDestinationNotCrawlable(value: DestinationNotCrawlableEvidence): Self = StObject.set(x, "destinationNotCrawlable", value.asInstanceOf[js.Any])
+    inline def setDestinationNotCrawlable(value: DestinationNotCrawlableEvidence): Self = StObject.set(x, "destinationNotCrawlable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationNotCrawlableUndefined: Self = StObject.set(x, "destinationNotCrawlable", js.undefined)
+    inline def setDestinationNotCrawlableUndefined: Self = StObject.set(x, "destinationNotCrawlable", js.undefined)
     
-    @scala.inline
-    def setDestinationNotWorking(value: DestinationNotWorkingEvidence): Self = StObject.set(x, "destinationNotWorking", value.asInstanceOf[js.Any])
+    inline def setDestinationNotWorking(value: DestinationNotWorkingEvidence): Self = StObject.set(x, "destinationNotWorking", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationNotWorkingUndefined: Self = StObject.set(x, "destinationNotWorking", js.undefined)
+    inline def setDestinationNotWorkingUndefined: Self = StObject.set(x, "destinationNotWorking", js.undefined)
     
-    @scala.inline
-    def setDestinationUrl(value: DestinationUrlEvidence): Self = StObject.set(x, "destinationUrl", value.asInstanceOf[js.Any])
+    inline def setDestinationUrl(value: DestinationUrlEvidence): Self = StObject.set(x, "destinationUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationUrlUndefined: Self = StObject.set(x, "destinationUrl", js.undefined)
+    inline def setDestinationUrlUndefined: Self = StObject.set(x, "destinationUrl", js.undefined)
     
-    @scala.inline
-    def setDomainCall(value: DomainCallEvidence): Self = StObject.set(x, "domainCall", value.asInstanceOf[js.Any])
+    inline def setDomainCall(value: DomainCallEvidence): Self = StObject.set(x, "domainCall", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainCallUndefined: Self = StObject.set(x, "domainCall", js.undefined)
+    inline def setDomainCallUndefined: Self = StObject.set(x, "domainCall", js.undefined)
     
-    @scala.inline
-    def setDownloadSize(value: DownloadSizeEvidence): Self = StObject.set(x, "downloadSize", value.asInstanceOf[js.Any])
+    inline def setDownloadSize(value: DownloadSizeEvidence): Self = StObject.set(x, "downloadSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadSizeUndefined: Self = StObject.set(x, "downloadSize", js.undefined)
+    inline def setDownloadSizeUndefined: Self = StObject.set(x, "downloadSize", js.undefined)
     
-    @scala.inline
-    def setHttpCall(value: HttpCallEvidence): Self = StObject.set(x, "httpCall", value.asInstanceOf[js.Any])
+    inline def setHttpCall(value: HttpCallEvidence): Self = StObject.set(x, "httpCall", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpCallUndefined: Self = StObject.set(x, "httpCall", js.undefined)
+    inline def setHttpCallUndefined: Self = StObject.set(x, "httpCall", js.undefined)
     
-    @scala.inline
-    def setHttpCookie(value: HttpCookieEvidence): Self = StObject.set(x, "httpCookie", value.asInstanceOf[js.Any])
+    inline def setHttpCookie(value: HttpCookieEvidence): Self = StObject.set(x, "httpCookie", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpCookieUndefined: Self = StObject.set(x, "httpCookie", js.undefined)
+    inline def setHttpCookieUndefined: Self = StObject.set(x, "httpCookie", js.undefined)
   }
 }

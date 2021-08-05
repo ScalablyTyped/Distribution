@@ -30,19 +30,15 @@ trait InkStrokePointer extends StObject {
 }
 object InkStrokePointer {
   
-  @scala.inline
-  def apply(contentId: String, inkStrokeId: String): InkStrokePointer = {
+  inline def apply(contentId: String, inkStrokeId: String): InkStrokePointer = {
     val __obj = js.Dynamic.literal(contentId = contentId.asInstanceOf[js.Any], inkStrokeId = inkStrokeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[InkStrokePointer]
   }
   
-  @scala.inline
-  implicit class InkStrokePointerMutableBuilder[Self <: InkStrokePointer] (val x: Self) extends AnyVal {
+  extension [Self <: InkStrokePointer](x: Self) {
     
-    @scala.inline
-    def setContentId(value: String): Self = StObject.set(x, "contentId", value.asInstanceOf[js.Any])
+    inline def setContentId(value: String): Self = StObject.set(x, "contentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInkStrokeId(value: String): Self = StObject.set(x, "inkStrokeId", value.asInstanceOf[js.Any])
+    inline def setInkStrokeId(value: String): Self = StObject.set(x, "inkStrokeId", value.asInstanceOf[js.Any])
   }
 }

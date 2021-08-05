@@ -12,23 +12,17 @@ object messagesClientMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def forwardMessage(conversationId: String, message: String, data: js.Any): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("forwardMessage")(conversationId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
+  inline def forwardMessage(conversationId: String, message: String, data: js.Any): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("forwardMessage")(conversationId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
   
-  @scala.inline
-  def getAttachment(streamId: String, attachmentId: String, messageId: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAttachment")(streamId.asInstanceOf[js.Any], attachmentId.asInstanceOf[js.Any], messageId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def getAttachment(streamId: String, attachmentId: String, messageId: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAttachment")(streamId.asInstanceOf[js.Any], attachmentId.asInstanceOf[js.Any], messageId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def getMessage(messageId: String): js.Promise[Message] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMessage")(messageId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Message]]
+  inline def getMessage(messageId: String): js.Promise[Message] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMessage")(messageId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Message]]
   
-  @scala.inline
-  def getMessages(streamId: String, since: Double, skip: Double, limit: Double): js.Promise[js.Array[Message]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMessages")(streamId.asInstanceOf[js.Any], since.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Message]]]
+  inline def getMessages(streamId: String, since: Double, skip: Double, limit: Double): js.Promise[js.Array[Message]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getMessages")(streamId.asInstanceOf[js.Any], since.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Message]]]
   
-  @scala.inline
-  def sendMessage(conversationId: String, message: String, data: js.Any, format: String, sessionToken: String): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(conversationId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], format.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
+  inline def sendMessage(conversationId: String, message: String, data: js.Any, format: String, sessionToken: String): js.Promise[Message] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(conversationId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], data.asInstanceOf[js.Any], format.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Message]]
   
-  @scala.inline
-  def sendMessageWithAttachment(
+  inline def sendMessageWithAttachment(
     conversationId: String,
     message: String,
     data: js.Any,
@@ -50,29 +44,22 @@ object messagesClientMod {
   }
   object Attachment {
     
-    @scala.inline
-    def apply(id: String, images: js.Array[Image], name: String, size: Double): Attachment = {
+    inline def apply(id: String, images: js.Array[Image], name: String, size: Double): Attachment = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[Attachment]
     }
     
-    @scala.inline
-    implicit class AttachmentMutableBuilder[Self <: Attachment] (val x: Self) extends AnyVal {
+    extension [Self <: Attachment](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImages(value: js.Array[Image]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+      inline def setImages(value: js.Array[Image]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImagesVarargs(value: Image*): Self = StObject.set(x, "images", js.Array(value :_*))
+      inline def setImagesVarargs(value: Image*): Self = StObject.set(x, "images", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
   
@@ -84,20 +71,16 @@ object messagesClientMod {
   }
   object Image {
     
-    @scala.inline
-    def apply(dimension: String, id: String): Image = {
+    inline def apply(dimension: String, id: String): Image = {
       val __obj = js.Dynamic.literal(dimension = dimension.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[Image]
     }
     
-    @scala.inline
-    implicit class ImageMutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
+    extension [Self <: Image](x: Self) {
       
-      @scala.inline
-      def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
+      inline def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -127,8 +110,7 @@ object messagesClientMod {
   }
   object Message {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       message: String,
       messageId: String,
       originalFormat: String,
@@ -141,56 +123,39 @@ object messagesClientMod {
       __obj.asInstanceOf[Message]
     }
     
-    @scala.inline
-    implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+    extension [Self <: Message](x: Self) {
       
-      @scala.inline
-      def setAttachments(value: js.Array[Attachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+      inline def setAttachments(value: js.Array[Attachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
+      inline def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
       
-      @scala.inline
-      def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
+      inline def setAttachmentsVarargs(value: Attachment*): Self = StObject.set(x, "attachments", js.Array(value :_*))
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+      inline def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalFormat(value: String): Self = StObject.set(x, "originalFormat", value.asInstanceOf[js.Any])
+      inline def setOriginalFormat(value: String): Self = StObject.set(x, "originalFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSharedMessage(value: Message): Self = StObject.set(x, "sharedMessage", value.asInstanceOf[js.Any])
+      inline def setSharedMessage(value: Message): Self = StObject.set(x, "sharedMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSharedMessageUndefined: Self = StObject.set(x, "sharedMessage", js.undefined)
+      inline def setSharedMessageUndefined: Self = StObject.set(x, "sharedMessage", js.undefined)
       
-      @scala.inline
-      def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
+      inline def setSid(value: String): Self = StObject.set(x, "sid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStream(value: Stream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: Stream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+      inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
+      inline def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
     }
   }
   
@@ -202,20 +167,16 @@ object messagesClientMod {
   }
   object Stream {
     
-    @scala.inline
-    def apply(streamId: String, streamType: StreamType): Stream = {
+    inline def apply(streamId: String, streamType: StreamType): Stream = {
       val __obj = js.Dynamic.literal(streamId = streamId.asInstanceOf[js.Any], streamType = streamType.asInstanceOf[js.Any])
       __obj.asInstanceOf[Stream]
     }
     
-    @scala.inline
-    implicit class StreamMutableBuilder[Self <: Stream] (val x: Self) extends AnyVal {
+    extension [Self <: Stream](x: Self) {
       
-      @scala.inline
-      def setStreamId(value: String): Self = StObject.set(x, "streamId", value.asInstanceOf[js.Any])
+      inline def setStreamId(value: String): Self = StObject.set(x, "streamId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamType(value: StreamType): Self = StObject.set(x, "streamType", value.asInstanceOf[js.Any])
+      inline def setStreamType(value: StreamType): Self = StObject.set(x, "streamType", value.asInstanceOf[js.Any])
     }
   }
 }

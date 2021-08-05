@@ -61,49 +61,35 @@ trait PlusOrientationRotation extends StObject {
 }
 object PlusOrientationRotation {
   
-  @scala.inline
-  def apply(): PlusOrientationRotation = {
+  inline def apply(): PlusOrientationRotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusOrientationRotation]
   }
   
-  @scala.inline
-  implicit class PlusOrientationRotationMutableBuilder[Self <: PlusOrientationRotation] (val x: Self) extends AnyVal {
+  extension [Self <: PlusOrientationRotation](x: Self) {
     
-    @scala.inline
-    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+    inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
-    @scala.inline
-    def setBeta(value: Double): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
+    inline def setBeta(value: Double): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBetaUndefined: Self = StObject.set(x, "beta", js.undefined)
+    inline def setBetaUndefined: Self = StObject.set(x, "beta", js.undefined)
     
-    @scala.inline
-    def setGamma(value: Double): Self = StObject.set(x, "gamma", value.asInstanceOf[js.Any])
+    inline def setGamma(value: Double): Self = StObject.set(x, "gamma", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGammaUndefined: Self = StObject.set(x, "gamma", js.undefined)
+    inline def setGammaUndefined: Self = StObject.set(x, "gamma", js.undefined)
     
-    @scala.inline
-    def setHeadingAccuracy(value: Double): Self = StObject.set(x, "headingAccuracy", value.asInstanceOf[js.Any])
+    inline def setHeadingAccuracy(value: Double): Self = StObject.set(x, "headingAccuracy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadingAccuracyUndefined: Self = StObject.set(x, "headingAccuracy", js.undefined)
+    inline def setHeadingAccuracyUndefined: Self = StObject.set(x, "headingAccuracy", js.undefined)
     
-    @scala.inline
-    def setMagneticHeading(value: Double): Self = StObject.set(x, "magneticHeading", value.asInstanceOf[js.Any])
+    inline def setMagneticHeading(value: Double): Self = StObject.set(x, "magneticHeading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMagneticHeadingUndefined: Self = StObject.set(x, "magneticHeading", js.undefined)
+    inline def setMagneticHeadingUndefined: Self = StObject.set(x, "magneticHeading", js.undefined)
     
-    @scala.inline
-    def setTrueHeading(value: Double): Self = StObject.set(x, "trueHeading", value.asInstanceOf[js.Any])
+    inline def setTrueHeading(value: Double): Self = StObject.set(x, "trueHeading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrueHeadingUndefined: Self = StObject.set(x, "trueHeading", js.undefined)
+    inline def setTrueHeadingUndefined: Self = StObject.set(x, "trueHeading", js.undefined)
   }
 }

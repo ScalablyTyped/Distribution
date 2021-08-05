@@ -13,9 +13,9 @@ object formatterDiskLoggerMod {
     
     def log(logText: String): Unit = js.native
     
-    var logs: js.Any = js.native
+    /* private */ var logs: js.Any = js.native
     
-    var path: js.Any = js.native
+    /* private */ var path: js.Any = js.native
     
     def save(): Unit = js.native
   }

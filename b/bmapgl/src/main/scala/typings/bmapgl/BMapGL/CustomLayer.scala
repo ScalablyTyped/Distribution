@@ -13,8 +13,7 @@ trait CustomLayer
 }
 object CustomLayer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getCopyright: () => Copyright,
     getTilesUrl: (Pixel, Double) => String,
     isTransparentPng: () => Boolean,
@@ -24,10 +23,8 @@ object CustomLayer {
     __obj.asInstanceOf[CustomLayer]
   }
   
-  @scala.inline
-  implicit class CustomLayerMutableBuilder[Self <: CustomLayer] (val x: Self) extends AnyVal {
+  extension [Self <: CustomLayer](x: Self) {
     
-    @scala.inline
-    def setOnhotspotclick(value: Content => Unit): Self = StObject.set(x, "onhotspotclick", js.Any.fromFunction1(value))
+    inline def setOnhotspotclick(value: Content => Unit): Self = StObject.set(x, "onhotspotclick", js.Any.fromFunction1(value))
   }
 }

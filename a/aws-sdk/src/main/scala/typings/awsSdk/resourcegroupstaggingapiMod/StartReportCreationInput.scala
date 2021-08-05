@@ -13,16 +13,13 @@ trait StartReportCreationInput extends StObject {
 }
 object StartReportCreationInput {
   
-  @scala.inline
-  def apply(S3Bucket: S3Bucket): StartReportCreationInput = {
+  inline def apply(S3Bucket: S3Bucket): StartReportCreationInput = {
     val __obj = js.Dynamic.literal(S3Bucket = S3Bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartReportCreationInput]
   }
   
-  @scala.inline
-  implicit class StartReportCreationInputMutableBuilder[Self <: StartReportCreationInput] (val x: Self) extends AnyVal {
+  extension [Self <: StartReportCreationInput](x: Self) {
     
-    @scala.inline
-    def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
+    inline def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
   }
 }

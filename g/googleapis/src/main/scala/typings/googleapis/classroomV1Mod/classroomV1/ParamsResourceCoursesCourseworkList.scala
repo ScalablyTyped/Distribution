@@ -55,52 +55,37 @@ trait ParamsResourceCoursesCourseworkList
 }
 object ParamsResourceCoursesCourseworkList {
   
-  @scala.inline
-  def apply(): ParamsResourceCoursesCourseworkList = {
+  inline def apply(): ParamsResourceCoursesCourseworkList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceCoursesCourseworkList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceCoursesCourseworkListMutableBuilder[Self <: ParamsResourceCoursesCourseworkList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceCoursesCourseworkList](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCourseId(value: String): Self = StObject.set(x, "courseId", value.asInstanceOf[js.Any])
+    inline def setCourseId(value: String): Self = StObject.set(x, "courseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCourseIdUndefined: Self = StObject.set(x, "courseId", js.undefined)
+    inline def setCourseIdUndefined: Self = StObject.set(x, "courseId", js.undefined)
     
-    @scala.inline
-    def setCourseWorkStates(value: js.Array[String]): Self = StObject.set(x, "courseWorkStates", value.asInstanceOf[js.Any])
+    inline def setCourseWorkStates(value: js.Array[String]): Self = StObject.set(x, "courseWorkStates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCourseWorkStatesUndefined: Self = StObject.set(x, "courseWorkStates", js.undefined)
+    inline def setCourseWorkStatesUndefined: Self = StObject.set(x, "courseWorkStates", js.undefined)
     
-    @scala.inline
-    def setCourseWorkStatesVarargs(value: String*): Self = StObject.set(x, "courseWorkStates", js.Array(value :_*))
+    inline def setCourseWorkStatesVarargs(value: String*): Self = StObject.set(x, "courseWorkStates", js.Array(value :_*))
     
-    @scala.inline
-    def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
+    inline def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
+    inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
   }
 }

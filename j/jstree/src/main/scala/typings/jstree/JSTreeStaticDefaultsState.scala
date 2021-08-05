@@ -43,28 +43,21 @@ trait JSTreeStaticDefaultsState extends StObject {
 }
 object JSTreeStaticDefaultsState {
   
-  @scala.inline
-  def apply(events: String, filter: js.Any, key: String, preserve_loaded: Boolean, ttl: js.Any): JSTreeStaticDefaultsState = {
+  inline def apply(events: String, filter: js.Any, key: String, preserve_loaded: Boolean, ttl: js.Any): JSTreeStaticDefaultsState = {
     val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], filter = filter.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], preserve_loaded = preserve_loaded.asInstanceOf[js.Any], ttl = ttl.asInstanceOf[js.Any])
     __obj.asInstanceOf[JSTreeStaticDefaultsState]
   }
   
-  @scala.inline
-  implicit class JSTreeStaticDefaultsStateMutableBuilder[Self <: JSTreeStaticDefaultsState] (val x: Self) extends AnyVal {
+  extension [Self <: JSTreeStaticDefaultsState](x: Self) {
     
-    @scala.inline
-    def setEvents(value: String): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: String): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilter(value: js.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: js.Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserve_loaded(value: Boolean): Self = StObject.set(x, "preserve_loaded", value.asInstanceOf[js.Any])
+    inline def setPreserve_loaded(value: Boolean): Self = StObject.set(x, "preserve_loaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTtl(value: js.Any): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+    inline def setTtl(value: js.Any): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
   }
 }

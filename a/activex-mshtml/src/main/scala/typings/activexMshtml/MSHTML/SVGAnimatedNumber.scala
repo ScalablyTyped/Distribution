@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SVGAnimatedNumber extends StObject {
   
-  @JSName("MSHTML.SVGAnimatedNumber_typekey")
+  /* private */ @JSName("MSHTML.SVGAnimatedNumber_typekey")
   var MSHTMLDotSVGAnimatedNumber_typekey: SVGAnimatedNumber
   
   var animVal: Double
@@ -15,23 +15,18 @@ trait SVGAnimatedNumber extends StObject {
 }
 object SVGAnimatedNumber {
   
-  @scala.inline
-  def apply(MSHTMLDotSVGAnimatedNumber_typekey: SVGAnimatedNumber, animVal: Double, baseVal: Double): SVGAnimatedNumber = {
+  inline def apply(MSHTMLDotSVGAnimatedNumber_typekey: SVGAnimatedNumber, animVal: Double, baseVal: Double): SVGAnimatedNumber = {
     val __obj = js.Dynamic.literal(animVal = animVal.asInstanceOf[js.Any], baseVal = baseVal.asInstanceOf[js.Any])
     __obj.updateDynamic("MSHTML.SVGAnimatedNumber_typekey")(MSHTMLDotSVGAnimatedNumber_typekey.asInstanceOf[js.Any])
     __obj.asInstanceOf[SVGAnimatedNumber]
   }
   
-  @scala.inline
-  implicit class SVGAnimatedNumberMutableBuilder[Self <: SVGAnimatedNumber] (val x: Self) extends AnyVal {
+  extension [Self <: SVGAnimatedNumber](x: Self) {
     
-    @scala.inline
-    def setAnimVal(value: Double): Self = StObject.set(x, "animVal", value.asInstanceOf[js.Any])
+    inline def setAnimVal(value: Double): Self = StObject.set(x, "animVal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseVal(value: Double): Self = StObject.set(x, "baseVal", value.asInstanceOf[js.Any])
+    inline def setBaseVal(value: Double): Self = StObject.set(x, "baseVal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotSVGAnimatedNumber_typekey(value: SVGAnimatedNumber): Self = StObject.set(x, "MSHTML.SVGAnimatedNumber_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotSVGAnimatedNumber_typekey(value: SVGAnimatedNumber): Self = StObject.set(x, "MSHTML.SVGAnimatedNumber_typekey", value.asInstanceOf[js.Any])
   }
 }

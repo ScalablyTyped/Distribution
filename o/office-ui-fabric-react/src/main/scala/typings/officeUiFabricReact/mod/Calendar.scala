@@ -20,6 +20,5 @@ object Calendar {
   @JSImport("office-ui-fabric-react", "Calendar.defaultProps")
   @js.native
   def defaultProps: typings.officeUiFabricReact.calendarTypesMod.ICalendarProps = js.native
-  @scala.inline
-  def defaultProps_=(x: typings.officeUiFabricReact.calendarTypesMod.ICalendarProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: typings.officeUiFabricReact.calendarTypesMod.ICalendarProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

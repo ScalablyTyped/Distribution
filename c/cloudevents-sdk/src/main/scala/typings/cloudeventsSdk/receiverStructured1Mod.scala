@@ -45,8 +45,7 @@ object receiverStructured1Mod {
   }
   object Receiver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Spec: Instantiable0[typings.cloudeventsSdk.spec1Mod.^],
       allowedContentTypes: js.Array[js.Any],
       parserByMime: NumberDictionary[js.Any],
@@ -57,23 +56,17 @@ object receiverStructured1Mod {
       __obj.asInstanceOf[Receiver]
     }
     
-    @scala.inline
-    implicit class ReceiverMutableBuilder[Self <: Receiver] (val x: Self) extends AnyVal {
+    extension [Self <: Receiver](x: Self) {
       
-      @scala.inline
-      def setAllowedContentTypes(value: js.Array[js.Any]): Self = StObject.set(x, "allowedContentTypes", value.asInstanceOf[js.Any])
+      inline def setAllowedContentTypes(value: js.Array[js.Any]): Self = StObject.set(x, "allowedContentTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedContentTypesVarargs(value: js.Any*): Self = StObject.set(x, "allowedContentTypes", js.Array(value :_*))
+      inline def setAllowedContentTypesVarargs(value: js.Any*): Self = StObject.set(x, "allowedContentTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setParserByMime(value: NumberDictionary[js.Any]): Self = StObject.set(x, "parserByMime", value.asInstanceOf[js.Any])
+      inline def setParserByMime(value: NumberDictionary[js.Any]): Self = StObject.set(x, "parserByMime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParserMap(value: Map[js.Any, js.Any]): Self = StObject.set(x, "parserMap", value.asInstanceOf[js.Any])
+      inline def setParserMap(value: Map[js.Any, js.Any]): Self = StObject.set(x, "parserMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpec(value: Instantiable0[typings.cloudeventsSdk.spec1Mod.^]): Self = StObject.set(x, "Spec", value.asInstanceOf[js.Any])
+      inline def setSpec(value: Instantiable0[typings.cloudeventsSdk.spec1Mod.^]): Self = StObject.set(x, "Spec", value.asInstanceOf[js.Any])
     }
   }
 }

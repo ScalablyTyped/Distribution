@@ -13,22 +13,17 @@ trait TestMetricFilterResponse extends StObject {
 }
 object TestMetricFilterResponse {
   
-  @scala.inline
-  def apply(): TestMetricFilterResponse = {
+  inline def apply(): TestMetricFilterResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TestMetricFilterResponse]
   }
   
-  @scala.inline
-  implicit class TestMetricFilterResponseMutableBuilder[Self <: TestMetricFilterResponse] (val x: Self) extends AnyVal {
+  extension [Self <: TestMetricFilterResponse](x: Self) {
     
-    @scala.inline
-    def setMatches(value: MetricFilterMatches): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+    inline def setMatches(value: MetricFilterMatches): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
+    inline def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
     
-    @scala.inline
-    def setMatchesVarargs(value: MetricFilterMatchRecord*): Self = StObject.set(x, "matches", js.Array(value :_*))
+    inline def setMatchesVarargs(value: MetricFilterMatchRecord*): Self = StObject.set(x, "matches", js.Array(value :_*))
   }
 }

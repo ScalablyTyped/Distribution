@@ -16,26 +16,19 @@ object hapticMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def hapticAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hapticAvailable")().asInstanceOf[Boolean]
+  inline def hapticAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hapticAvailable")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def hapticImpact(options: HapticImpactOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hapticImpact")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def hapticImpact(options: HapticImpactOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hapticImpact")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def hapticNotification(options: HapticNotificationOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hapticNotification")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def hapticNotification(options: HapticNotificationOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hapticNotification")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def hapticSelection(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hapticSelection")().asInstanceOf[Unit]
+  inline def hapticSelection(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hapticSelection")().asInstanceOf[Unit]
   
-  @scala.inline
-  def hapticSelectionChanged(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hapticSelectionChanged")().asInstanceOf[Unit]
+  inline def hapticSelectionChanged(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hapticSelectionChanged")().asInstanceOf[Unit]
   
-  @scala.inline
-  def hapticSelectionEnd(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hapticSelectionEnd")().asInstanceOf[Unit]
+  inline def hapticSelectionEnd(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hapticSelectionEnd")().asInstanceOf[Unit]
   
-  @scala.inline
-  def hapticSelectionStart(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hapticSelectionStart")().asInstanceOf[Unit]
+  inline def hapticSelectionStart(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hapticSelectionStart")().asInstanceOf[Unit]
   
   trait HapticImpactOptions extends StObject {
     
@@ -43,17 +36,14 @@ object hapticMod {
   }
   object HapticImpactOptions {
     
-    @scala.inline
-    def apply(style: light | medium | heavy): HapticImpactOptions = {
+    inline def apply(style: light | medium | heavy): HapticImpactOptions = {
       val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
       __obj.asInstanceOf[HapticImpactOptions]
     }
     
-    @scala.inline
-    implicit class HapticImpactOptionsMutableBuilder[Self <: HapticImpactOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HapticImpactOptions](x: Self) {
       
-      @scala.inline
-      def setStyle(value: light | medium | heavy): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: light | medium | heavy): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }
   }
   
@@ -63,17 +53,14 @@ object hapticMod {
   }
   object HapticNotificationOptions {
     
-    @scala.inline
-    def apply(style: success | warning | error): HapticNotificationOptions = {
+    inline def apply(style: success | warning | error): HapticNotificationOptions = {
       val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
       __obj.asInstanceOf[HapticNotificationOptions]
     }
     
-    @scala.inline
-    implicit class HapticNotificationOptionsMutableBuilder[Self <: HapticNotificationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HapticNotificationOptions](x: Self) {
       
-      @scala.inline
-      def setStyle(value: success | warning | error): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: success | warning | error): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }
   }
 }

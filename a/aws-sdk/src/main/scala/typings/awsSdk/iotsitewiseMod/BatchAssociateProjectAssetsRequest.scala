@@ -23,28 +23,21 @@ trait BatchAssociateProjectAssetsRequest extends StObject {
 }
 object BatchAssociateProjectAssetsRequest {
   
-  @scala.inline
-  def apply(assetIds: IDs, projectId: ID): BatchAssociateProjectAssetsRequest = {
+  inline def apply(assetIds: IDs, projectId: ID): BatchAssociateProjectAssetsRequest = {
     val __obj = js.Dynamic.literal(assetIds = assetIds.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchAssociateProjectAssetsRequest]
   }
   
-  @scala.inline
-  implicit class BatchAssociateProjectAssetsRequestMutableBuilder[Self <: BatchAssociateProjectAssetsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchAssociateProjectAssetsRequest](x: Self) {
     
-    @scala.inline
-    def setAssetIds(value: IDs): Self = StObject.set(x, "assetIds", value.asInstanceOf[js.Any])
+    inline def setAssetIds(value: IDs): Self = StObject.set(x, "assetIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetIdsVarargs(value: ID*): Self = StObject.set(x, "assetIds", js.Array(value :_*))
+    inline def setAssetIdsVarargs(value: ID*): Self = StObject.set(x, "assetIds", js.Array(value :_*))
     
-    @scala.inline
-    def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: ID): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: ID): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
   }
 }

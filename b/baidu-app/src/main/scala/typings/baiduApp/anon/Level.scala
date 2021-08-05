@@ -15,16 +15,13 @@ trait Level extends StObject {
 }
 object Level {
   
-  @scala.inline
-  def apply(level: Double): Level = {
+  inline def apply(level: Double): Level = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
     __obj.asInstanceOf[Level]
   }
   
-  @scala.inline
-  implicit class LevelMutableBuilder[Self <: Level] (val x: Self) extends AnyVal {
+  extension [Self <: Level](x: Self) {
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
   }
 }

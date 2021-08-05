@@ -104,28 +104,21 @@ trait LaunchOptions extends StObject {
 }
 object LaunchOptions {
   
-  @scala.inline
-  def apply(path: String, query: js.Object, referrerInfo: ExtraData, scene: SceneValues, shareTicket: String): LaunchOptions = {
+  inline def apply(path: String, query: js.Object, referrerInfo: ExtraData, scene: SceneValues, shareTicket: String): LaunchOptions = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], referrerInfo = referrerInfo.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any], shareTicket = shareTicket.asInstanceOf[js.Any])
     __obj.asInstanceOf[LaunchOptions]
   }
   
-  @scala.inline
-  implicit class LaunchOptionsMutableBuilder[Self <: LaunchOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchOptions](x: Self) {
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: js.Object): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: js.Object): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferrerInfo(value: ExtraData): Self = StObject.set(x, "referrerInfo", value.asInstanceOf[js.Any])
+    inline def setReferrerInfo(value: ExtraData): Self = StObject.set(x, "referrerInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScene(value: SceneValues): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
+    inline def setScene(value: SceneValues): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShareTicket(value: String): Self = StObject.set(x, "shareTicket", value.asInstanceOf[js.Any])
+    inline def setShareTicket(value: String): Self = StObject.set(x, "shareTicket", value.asInstanceOf[js.Any])
   }
 }

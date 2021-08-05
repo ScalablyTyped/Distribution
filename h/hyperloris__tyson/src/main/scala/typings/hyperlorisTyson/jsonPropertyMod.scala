@@ -41,12 +41,9 @@ object jsonPropertyMod {
     /* "TOJSON_ONLY" */ val TOJSON_ONLY: typings.hyperlorisTyson.jsonPropertyMod.Access.TOJSON_ONLY & String = js.native
   }
   
-  @scala.inline
-  def JsonProperty(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("JsonProperty")().asInstanceOf[js.Any]
-  @scala.inline
-  def JsonProperty(options: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("JsonProperty")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def JsonProperty(options: JsonPropertyOptions): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("JsonProperty")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def JsonProperty(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("JsonProperty")().asInstanceOf[js.Any]
+  inline def JsonProperty(options: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("JsonProperty")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def JsonProperty(options: JsonPropertyOptions): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("JsonProperty")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   trait JsonPropertyOptions extends StObject {
     
@@ -89,47 +86,34 @@ object jsonPropertyMod {
   }
   object JsonPropertyOptions {
     
-    @scala.inline
-    def apply(): JsonPropertyOptions = {
+    inline def apply(): JsonPropertyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JsonPropertyOptions]
     }
     
-    @scala.inline
-    implicit class JsonPropertyOptionsMutableBuilder[Self <: JsonPropertyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: JsonPropertyOptions](x: Self) {
       
-      @scala.inline
-      def setAccess(value: Access): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
+      inline def setAccess(value: Access): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
+      inline def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
       
-      @scala.inline
-      def setIgnoreType(value: Boolean): Self = StObject.set(x, "ignoreType", value.asInstanceOf[js.Any])
+      inline def setIgnoreType(value: Boolean): Self = StObject.set(x, "ignoreType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreTypeUndefined: Self = StObject.set(x, "ignoreType", js.undefined)
+      inline def setIgnoreTypeUndefined: Self = StObject.set(x, "ignoreType", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
-      @scala.inline
-      def setType(value: ClassType[js.Any] | js.Array[js.Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ClassType[js.Any] | js.Array[js.Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setTypeVarargs(value: js.Any*): Self = StObject.set(x, "type", js.Array(value :_*))
+      inline def setTypeVarargs(value: js.Any*): Self = StObject.set(x, "type", js.Array(value :_*))
     }
   }
 }

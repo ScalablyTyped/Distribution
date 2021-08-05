@@ -135,176 +135,154 @@ object Advertisement {
     @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementDataTypes.advertisingInterval")
     @js.native
     def advertisingInterval: Double = js.native
-    @scala.inline
-    def advertisingInterval_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("advertisingInterval")(x.asInstanceOf[js.Any])
+    inline def advertisingInterval_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("advertisingInterval")(x.asInstanceOf[js.Any])
     
     /** Section data type for the Bluetooth LE advertising appearance. */
     /* static member */
     @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementDataTypes.appearance")
     @js.native
     def appearance: Double = js.native
-    @scala.inline
-    def appearance_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("appearance")(x.asInstanceOf[js.Any])
+    inline def appearance_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("appearance")(x.asInstanceOf[js.Any])
     
     /** Section data type for the Bluetooth LE complete local name. */
     /* static member */
     @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementDataTypes.completeLocalName")
     @js.native
     def completeLocalName: Double = js.native
-    @scala.inline
-    def completeLocalName_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("completeLocalName")(x.asInstanceOf[js.Any])
+    inline def completeLocalName_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("completeLocalName")(x.asInstanceOf[js.Any])
     
     /** Section data type for the complete list of 128-bit Bluetooth LE service UUIDs */
     /* static member */
     @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementDataTypes.completeService128BitUuids")
     @js.native
     def completeService128BitUuids: Double = js.native
-    @scala.inline
-    def completeService128BitUuids_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("completeService128BitUuids")(x.asInstanceOf[js.Any])
+    inline def completeService128BitUuids_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("completeService128BitUuids")(x.asInstanceOf[js.Any])
     
     /** Section data type for the complete list of 16-bit Bluetooth LE service UUIDs */
     /* static member */
     @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementDataTypes.completeService16BitUuids")
     @js.native
     def completeService16BitUuids: Double = js.native
-    @scala.inline
-    def completeService16BitUuids_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("completeService16BitUuids")(x.asInstanceOf[js.Any])
+    inline def completeService16BitUuids_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("completeService16BitUuids")(x.asInstanceOf[js.Any])
     
     /** Section data type for the complete list of 32-bit Bluetooth LE service UUIDs */
     /* static member */
     @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementDataTypes.completeService32BitUuids")
     @js.native
     def completeService32BitUuids: Double = js.native
-    @scala.inline
-    def completeService32BitUuids_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("completeService32BitUuids")(x.asInstanceOf[js.Any])
+    inline def completeService32BitUuids_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("completeService32BitUuids")(x.asInstanceOf[js.Any])
     
     /** Section data type for a set of flags for internal use. */
     /* static member */
     @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementDataTypes.flags")
     @js.native
     def flags: Double = js.native
-    @scala.inline
-    def flags_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flags")(x.asInstanceOf[js.Any])
+    inline def flags_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flags")(x.asInstanceOf[js.Any])
     
     /** Section data type for an incomplete list of 128-bit Bluetooth LE service UUIDs. */
     /* static member */
     @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementDataTypes.incompleteService128BitUuids")
     @js.native
     def incompleteService128BitUuids: Double = js.native
-    @scala.inline
-    def incompleteService128BitUuids_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("incompleteService128BitUuids")(x.asInstanceOf[js.Any])
+    inline def incompleteService128BitUuids_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("incompleteService128BitUuids")(x.asInstanceOf[js.Any])
     
     /** Section data type for an incomplete list of 16-bit Bluetooth LE service UUIDs. */
     /* static member */
     @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementDataTypes.incompleteService16BitUuids")
     @js.native
     def incompleteService16BitUuids: Double = js.native
-    @scala.inline
-    def incompleteService16BitUuids_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("incompleteService16BitUuids")(x.asInstanceOf[js.Any])
+    inline def incompleteService16BitUuids_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("incompleteService16BitUuids")(x.asInstanceOf[js.Any])
     
     /** Section data type for an incomplete list of 32-bit Bluetooth LE service UUIDs. */
     /* static member */
     @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementDataTypes.incompleteService32BitUuids")
     @js.native
     def incompleteService32BitUuids: Double = js.native
-    @scala.inline
-    def incompleteService32BitUuids_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("incompleteService32BitUuids")(x.asInstanceOf[js.Any])
+    inline def incompleteService32BitUuids_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("incompleteService32BitUuids")(x.asInstanceOf[js.Any])
     
     /** Section data type for manufacturer-specific data for a Bluetooth LE advertisements. */
     /* static member */
     @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementDataTypes.manufacturerSpecificData")
     @js.native
     def manufacturerSpecificData: Double = js.native
-    @scala.inline
-    def manufacturerSpecificData_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("manufacturerSpecificData")(x.asInstanceOf[js.Any])
+    inline def manufacturerSpecificData_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("manufacturerSpecificData")(x.asInstanceOf[js.Any])
     
     /** Section data type for a list of public Bluetooth LE target addresses. */
     /* static member */
     @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementDataTypes.publicTargetAddress")
     @js.native
     def publicTargetAddress: Double = js.native
-    @scala.inline
-    def publicTargetAddress_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("publicTargetAddress")(x.asInstanceOf[js.Any])
+    inline def publicTargetAddress_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("publicTargetAddress")(x.asInstanceOf[js.Any])
     
     /** Section data type for a list of random Bluetooth LE target addresses. */
     /* static member */
     @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementDataTypes.randomTargetAddress")
     @js.native
     def randomTargetAddress: Double = js.native
-    @scala.inline
-    def randomTargetAddress_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("randomTargetAddress")(x.asInstanceOf[js.Any])
+    inline def randomTargetAddress_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("randomTargetAddress")(x.asInstanceOf[js.Any])
     
     /** Section data type for service data for 128-bit Bluetooth LE UUIDs. */
     /* static member */
     @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementDataTypes.serviceData128BitUuids")
     @js.native
     def serviceData128BitUuids: Double = js.native
-    @scala.inline
-    def serviceData128BitUuids_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serviceData128BitUuids")(x.asInstanceOf[js.Any])
+    inline def serviceData128BitUuids_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serviceData128BitUuids")(x.asInstanceOf[js.Any])
     
     /** Section data type for service data for 16-bit Bluetooth LE UUIDs. */
     /* static member */
     @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementDataTypes.serviceData16BitUuids")
     @js.native
     def serviceData16BitUuids: Double = js.native
-    @scala.inline
-    def serviceData16BitUuids_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serviceData16BitUuids")(x.asInstanceOf[js.Any])
+    inline def serviceData16BitUuids_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serviceData16BitUuids")(x.asInstanceOf[js.Any])
     
     /** Section data type for service data for 32-bit Bluetooth LE UUIDs.. */
     /* static member */
     @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementDataTypes.serviceData32BitUuids")
     @js.native
     def serviceData32BitUuids: Double = js.native
-    @scala.inline
-    def serviceData32BitUuids_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serviceData32BitUuids")(x.asInstanceOf[js.Any])
+    inline def serviceData32BitUuids_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serviceData32BitUuids")(x.asInstanceOf[js.Any])
     
     /** Section data type for a list of 128-bit Bluetooth LE service solicitation UUIDs. */
     /* static member */
     @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementDataTypes.serviceSolicitation128BitUuids")
     @js.native
     def serviceSolicitation128BitUuids: Double = js.native
-    @scala.inline
-    def serviceSolicitation128BitUuids_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serviceSolicitation128BitUuids")(x.asInstanceOf[js.Any])
+    inline def serviceSolicitation128BitUuids_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serviceSolicitation128BitUuids")(x.asInstanceOf[js.Any])
     
     /** Section data type for a list of 16-bit Bluetooth LE service solicitation UUIDs. */
     /* static member */
     @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementDataTypes.serviceSolicitation16BitUuids")
     @js.native
     def serviceSolicitation16BitUuids: Double = js.native
-    @scala.inline
-    def serviceSolicitation16BitUuids_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serviceSolicitation16BitUuids")(x.asInstanceOf[js.Any])
+    inline def serviceSolicitation16BitUuids_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serviceSolicitation16BitUuids")(x.asInstanceOf[js.Any])
     
     /** Section data type for a list of 32-bit Bluetooth LE service solicitation UUIDs. */
     /* static member */
     @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementDataTypes.serviceSolicitation32BitUuids")
     @js.native
     def serviceSolicitation32BitUuids: Double = js.native
-    @scala.inline
-    def serviceSolicitation32BitUuids_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serviceSolicitation32BitUuids")(x.asInstanceOf[js.Any])
+    inline def serviceSolicitation32BitUuids_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serviceSolicitation32BitUuids")(x.asInstanceOf[js.Any])
     
     /** Section data type for a shortened local name. */
     /* static member */
     @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementDataTypes.shortenedLocalName")
     @js.native
     def shortenedLocalName: Double = js.native
-    @scala.inline
-    def shortenedLocalName_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shortenedLocalName")(x.asInstanceOf[js.Any])
+    inline def shortenedLocalName_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shortenedLocalName")(x.asInstanceOf[js.Any])
     
     /** Section data type for the slave connection interval range. */
     /* static member */
     @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementDataTypes.slaveConnectionIntervalRange")
     @js.native
     def slaveConnectionIntervalRange: Double = js.native
-    @scala.inline
-    def slaveConnectionIntervalRange_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("slaveConnectionIntervalRange")(x.asInstanceOf[js.Any])
+    inline def slaveConnectionIntervalRange_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("slaveConnectionIntervalRange")(x.asInstanceOf[js.Any])
     
     /** Section data type for the Bluetooth LE transmit power level. */
     /* static member */
     @JSGlobal("Windows.Devices.Bluetooth.Advertisement.BluetoothLEAdvertisementDataTypes.txPowerLevel")
     @js.native
     def txPowerLevel: Double = js.native
-    @scala.inline
-    def txPowerLevel_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("txPowerLevel")(x.asInstanceOf[js.Any])
+    inline def txPowerLevel_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("txPowerLevel")(x.asInstanceOf[js.Any])
   }
   
   /** Groups parameters used to configure payload-based filtering of received Bluetooth LE advertisements. */

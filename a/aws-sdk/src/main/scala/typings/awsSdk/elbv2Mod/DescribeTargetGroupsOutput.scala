@@ -18,28 +18,21 @@ trait DescribeTargetGroupsOutput extends StObject {
 }
 object DescribeTargetGroupsOutput {
   
-  @scala.inline
-  def apply(): DescribeTargetGroupsOutput = {
+  inline def apply(): DescribeTargetGroupsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeTargetGroupsOutput]
   }
   
-  @scala.inline
-  implicit class DescribeTargetGroupsOutputMutableBuilder[Self <: DescribeTargetGroupsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTargetGroupsOutput](x: Self) {
     
-    @scala.inline
-    def setNextMarker(value: Marker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: Marker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
+    inline def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
     
-    @scala.inline
-    def setTargetGroups(value: TargetGroups): Self = StObject.set(x, "TargetGroups", value.asInstanceOf[js.Any])
+    inline def setTargetGroups(value: TargetGroups): Self = StObject.set(x, "TargetGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetGroupsUndefined: Self = StObject.set(x, "TargetGroups", js.undefined)
+    inline def setTargetGroupsUndefined: Self = StObject.set(x, "TargetGroups", js.undefined)
     
-    @scala.inline
-    def setTargetGroupsVarargs(value: TargetGroup*): Self = StObject.set(x, "TargetGroups", js.Array(value :_*))
+    inline def setTargetGroupsVarargs(value: TargetGroup*): Self = StObject.set(x, "TargetGroups", js.Array(value :_*))
   }
 }

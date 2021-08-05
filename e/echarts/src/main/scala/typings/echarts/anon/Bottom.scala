@@ -122,67 +122,47 @@ trait Bottom extends StObject {
 }
 object Bottom {
   
-  @scala.inline
-  def apply(): Bottom = {
+  inline def apply(): Bottom = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Bottom]
   }
   
-  @scala.inline
-  implicit class BottomMutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
+  extension [Self <: Bottom](x: Self) {
     
-    @scala.inline
-    def setBottom(value: Double | String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    inline def setBottom(value: Double | String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+    inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
-    @scala.inline
-    def setEmphasis(value: `26`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
+    inline def setEmphasis(value: `26`): Self = StObject.set(x, "emphasis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
+    inline def setEmphasisUndefined: Self = StObject.set(x, "emphasis", js.undefined)
     
-    @scala.inline
-    def setEmptyItemWidth(value: Double): Self = StObject.set(x, "emptyItemWidth", value.asInstanceOf[js.Any])
+    inline def setEmptyItemWidth(value: Double): Self = StObject.set(x, "emptyItemWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmptyItemWidthUndefined: Self = StObject.set(x, "emptyItemWidth", js.undefined)
+    inline def setEmptyItemWidthUndefined: Self = StObject.set(x, "emptyItemWidth", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setItemStyle(value: TextStyle): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
+    inline def setItemStyle(value: TextStyle): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
+    inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
     
-    @scala.inline
-    def setLeft(value: Double | String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double | String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    @scala.inline
-    def setRight(value: Double | String): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Double | String): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+    inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     
-    @scala.inline
-    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
-    @scala.inline
-    def setTop(value: Double | String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double | String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
   }
 }

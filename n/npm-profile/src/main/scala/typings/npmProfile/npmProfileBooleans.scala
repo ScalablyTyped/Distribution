@@ -11,6 +11,5 @@ object npmProfileBooleans {
   sealed trait `false`
     extends StObject
        with _TFAStatus
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
+  inline def `false`: `false` = false.asInstanceOf[`false`]
 }

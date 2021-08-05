@@ -13,22 +13,17 @@ trait DescribeLifecycleHookTypesAnswer extends StObject {
 }
 object DescribeLifecycleHookTypesAnswer {
   
-  @scala.inline
-  def apply(): DescribeLifecycleHookTypesAnswer = {
+  inline def apply(): DescribeLifecycleHookTypesAnswer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeLifecycleHookTypesAnswer]
   }
   
-  @scala.inline
-  implicit class DescribeLifecycleHookTypesAnswerMutableBuilder[Self <: DescribeLifecycleHookTypesAnswer] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeLifecycleHookTypesAnswer](x: Self) {
     
-    @scala.inline
-    def setLifecycleHookTypes(value: AutoScalingNotificationTypes): Self = StObject.set(x, "LifecycleHookTypes", value.asInstanceOf[js.Any])
+    inline def setLifecycleHookTypes(value: AutoScalingNotificationTypes): Self = StObject.set(x, "LifecycleHookTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifecycleHookTypesUndefined: Self = StObject.set(x, "LifecycleHookTypes", js.undefined)
+    inline def setLifecycleHookTypesUndefined: Self = StObject.set(x, "LifecycleHookTypes", js.undefined)
     
-    @scala.inline
-    def setLifecycleHookTypesVarargs(value: XmlStringMaxLen255*): Self = StObject.set(x, "LifecycleHookTypes", js.Array(value :_*))
+    inline def setLifecycleHookTypesVarargs(value: XmlStringMaxLen255*): Self = StObject.set(x, "LifecycleHookTypes", js.Array(value :_*))
   }
 }

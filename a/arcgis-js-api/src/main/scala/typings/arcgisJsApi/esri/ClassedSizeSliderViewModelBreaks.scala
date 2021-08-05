@@ -33,8 +33,7 @@ trait ClassedSizeSliderViewModelBreaks
 }
 object ClassedSizeSliderViewModelBreaks {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     max: Double,
@@ -46,16 +45,12 @@ object ClassedSizeSliderViewModelBreaks {
     __obj.asInstanceOf[ClassedSizeSliderViewModelBreaks]
   }
   
-  @scala.inline
-  implicit class ClassedSizeSliderViewModelBreaksMutableBuilder[Self <: ClassedSizeSliderViewModelBreaks] (val x: Self) extends AnyVal {
+  extension [Self <: ClassedSizeSliderViewModelBreaks](x: Self) {
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

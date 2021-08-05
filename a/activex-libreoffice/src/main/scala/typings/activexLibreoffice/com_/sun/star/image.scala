@@ -25,8 +25,7 @@ object image {
        with XIndexContainer
   object ImageMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Count: Double,
       ElementType: `type`,
       Name: String,
@@ -65,8 +64,7 @@ object image {
   }
   object ImageMapCircleObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Center: Point,
       Description: String,
       Events: XNameReplace,
@@ -92,14 +90,11 @@ object image {
       __obj.asInstanceOf[ImageMapCircleObject]
     }
     
-    @scala.inline
-    implicit class ImageMapCircleObjectMutableBuilder[Self <: ImageMapCircleObject] (val x: Self) extends AnyVal {
+    extension [Self <: ImageMapCircleObject](x: Self) {
       
-      @scala.inline
-      def setCenter(value: Point): Self = StObject.set(x, "Center", value.asInstanceOf[js.Any])
+      inline def setCenter(value: Point): Self = StObject.set(x, "Center", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadius(value: Double): Self = StObject.set(x, "Radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: Double): Self = StObject.set(x, "Radius", value.asInstanceOf[js.Any])
     }
   }
   
@@ -132,8 +127,7 @@ object image {
   }
   object ImageMapObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Description: String,
       Events: XNameReplace,
       IsActive: Boolean,
@@ -157,23 +151,17 @@ object image {
       __obj.asInstanceOf[ImageMapObject]
     }
     
-    @scala.inline
-    implicit class ImageMapObjectMutableBuilder[Self <: ImageMapObject] (val x: Self) extends AnyVal {
+    extension [Self <: ImageMapObject](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsActive(value: Boolean): Self = StObject.set(x, "IsActive", value.asInstanceOf[js.Any])
+      inline def setIsActive(value: Boolean): Self = StObject.set(x, "IsActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+      inline def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
     }
   }
   
@@ -191,8 +179,7 @@ object image {
   }
   object ImageMapPolygonObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Description: String,
       Events: XNameReplace,
       IsActive: Boolean,
@@ -217,14 +204,11 @@ object image {
       __obj.asInstanceOf[ImageMapPolygonObject]
     }
     
-    @scala.inline
-    implicit class ImageMapPolygonObjectMutableBuilder[Self <: ImageMapPolygonObject] (val x: Self) extends AnyVal {
+    extension [Self <: ImageMapPolygonObject](x: Self) {
       
-      @scala.inline
-      def setPolygon(value: PointSequence): Self = StObject.set(x, "Polygon", value.asInstanceOf[js.Any])
+      inline def setPolygon(value: PointSequence): Self = StObject.set(x, "Polygon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolygonVarargs(value: Point*): Self = StObject.set(x, "Polygon", js.Array(value :_*))
+      inline def setPolygonVarargs(value: Point*): Self = StObject.set(x, "Polygon", js.Array(value :_*))
     }
   }
   
@@ -242,8 +226,7 @@ object image {
   }
   object ImageMapRectangleObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Boundary: Rectangle,
       Description: String,
       Events: XNameReplace,
@@ -268,11 +251,9 @@ object image {
       __obj.asInstanceOf[ImageMapRectangleObject]
     }
     
-    @scala.inline
-    implicit class ImageMapRectangleObjectMutableBuilder[Self <: ImageMapRectangleObject] (val x: Self) extends AnyVal {
+    extension [Self <: ImageMapRectangleObject](x: Self) {
       
-      @scala.inline
-      def setBoundary(value: Rectangle): Self = StObject.set(x, "Boundary", value.asInstanceOf[js.Any])
+      inline def setBoundary(value: Rectangle): Self = StObject.set(x, "Boundary", value.asInstanceOf[js.Any])
     }
   }
 }

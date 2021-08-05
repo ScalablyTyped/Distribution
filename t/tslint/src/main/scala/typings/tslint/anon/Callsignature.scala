@@ -18,8 +18,7 @@ trait Callsignature extends StObject {
 }
 object Callsignature {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `call-signature`: String,
     `index-signature`: String,
     parameter: String,
@@ -34,22 +33,16 @@ object Callsignature {
     __obj.asInstanceOf[Callsignature]
   }
   
-  @scala.inline
-  implicit class CallsignatureMutableBuilder[Self <: Callsignature] (val x: Self) extends AnyVal {
+  extension [Self <: Callsignature](x: Self) {
     
-    @scala.inline
-    def `setCall-signature`(value: String): Self = StObject.set(x, "call-signature", value.asInstanceOf[js.Any])
+    inline def `setCall-signature`(value: String): Self = StObject.set(x, "call-signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setIndex-signature`(value: String): Self = StObject.set(x, "index-signature", value.asInstanceOf[js.Any])
+    inline def `setIndex-signature`(value: String): Self = StObject.set(x, "index-signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameter(value: String): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+    inline def setParameter(value: String): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setProperty-declaration`(value: String): Self = StObject.set(x, "property-declaration", value.asInstanceOf[js.Any])
+    inline def `setProperty-declaration`(value: String): Self = StObject.set(x, "property-declaration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setVariable-declaration`(value: String): Self = StObject.set(x, "variable-declaration", value.asInstanceOf[js.Any])
+    inline def `setVariable-declaration`(value: String): Self = StObject.set(x, "variable-declaration", value.asInstanceOf[js.Any])
   }
 }

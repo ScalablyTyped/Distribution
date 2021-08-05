@@ -18,28 +18,21 @@ trait ListSipRulesResponse extends StObject {
 }
 object ListSipRulesResponse {
   
-  @scala.inline
-  def apply(): ListSipRulesResponse = {
+  inline def apply(): ListSipRulesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSipRulesResponse]
   }
   
-  @scala.inline
-  implicit class ListSipRulesResponseMutableBuilder[Self <: ListSipRulesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListSipRulesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSipRules(value: SipRuleList): Self = StObject.set(x, "SipRules", value.asInstanceOf[js.Any])
+    inline def setSipRules(value: SipRuleList): Self = StObject.set(x, "SipRules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSipRulesUndefined: Self = StObject.set(x, "SipRules", js.undefined)
+    inline def setSipRulesUndefined: Self = StObject.set(x, "SipRules", js.undefined)
     
-    @scala.inline
-    def setSipRulesVarargs(value: SipRule*): Self = StObject.set(x, "SipRules", js.Array(value :_*))
+    inline def setSipRulesVarargs(value: SipRule*): Self = StObject.set(x, "SipRules", js.Array(value :_*))
   }
 }

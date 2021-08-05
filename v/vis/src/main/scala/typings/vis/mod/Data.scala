@@ -12,31 +12,23 @@ trait Data extends StObject {
 }
 object Data {
   
-  @scala.inline
-  def apply(): Data = {
+  inline def apply(): Data = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Data]
   }
   
-  @scala.inline
-  implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+  extension [Self <: Data](x: Self) {
     
-    @scala.inline
-    def setEdges(value: js.Array[Edge] | DataSet[Edge]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
+    inline def setEdges(value: js.Array[Edge] | DataSet[Edge]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdgesUndefined: Self = StObject.set(x, "edges", js.undefined)
+    inline def setEdgesUndefined: Self = StObject.set(x, "edges", js.undefined)
     
-    @scala.inline
-    def setEdgesVarargs(value: Edge*): Self = StObject.set(x, "edges", js.Array(value :_*))
+    inline def setEdgesVarargs(value: Edge*): Self = StObject.set(x, "edges", js.Array(value :_*))
     
-    @scala.inline
-    def setNodes(value: js.Array[Node] | DataSet[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[Node] | DataSet[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
+    inline def setNodesUndefined: Self = StObject.set(x, "nodes", js.undefined)
     
-    @scala.inline
-    def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: Node*): Self = StObject.set(x, "nodes", js.Array(value :_*))
   }
 }

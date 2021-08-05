@@ -18,19 +18,15 @@ trait Navigator extends StObject {
 }
 object Navigator {
   
-  @scala.inline
-  def apply(connection: Connection, network: typings.cordovaPluginNetworkInformation.anon.Connection): Navigator = {
+  inline def apply(connection: Connection, network: typings.cordovaPluginNetworkInformation.anon.Connection): Navigator = {
     val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], network = network.asInstanceOf[js.Any])
     __obj.asInstanceOf[Navigator]
   }
   
-  @scala.inline
-  implicit class NavigatorMutableBuilder[Self <: Navigator] (val x: Self) extends AnyVal {
+  extension [Self <: Navigator](x: Self) {
     
-    @scala.inline
-    def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetwork(value: typings.cordovaPluginNetworkInformation.anon.Connection): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+    inline def setNetwork(value: typings.cordovaPluginNetworkInformation.anon.Connection): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
   }
 }

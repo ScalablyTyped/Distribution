@@ -18,22 +18,17 @@ trait RespondActivityTaskCanceledInput extends StObject {
 }
 object RespondActivityTaskCanceledInput {
   
-  @scala.inline
-  def apply(taskToken: TaskToken): RespondActivityTaskCanceledInput = {
+  inline def apply(taskToken: TaskToken): RespondActivityTaskCanceledInput = {
     val __obj = js.Dynamic.literal(taskToken = taskToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[RespondActivityTaskCanceledInput]
   }
   
-  @scala.inline
-  implicit class RespondActivityTaskCanceledInputMutableBuilder[Self <: RespondActivityTaskCanceledInput] (val x: Self) extends AnyVal {
+  extension [Self <: RespondActivityTaskCanceledInput](x: Self) {
     
-    @scala.inline
-    def setDetails(value: Data): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: Data): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "details", js.undefined)
     
-    @scala.inline
-    def setTaskToken(value: TaskToken): Self = StObject.set(x, "taskToken", value.asInstanceOf[js.Any])
+    inline def setTaskToken(value: TaskToken): Self = StObject.set(x, "taskToken", value.asInstanceOf[js.Any])
   }
 }

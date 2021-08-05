@@ -47,8 +47,7 @@ trait PrintOptions extends StObject {
 }
 object PrintOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Collate: Boolean,
     CopyCount: Double,
     DuplexMode: Double,
@@ -62,31 +61,22 @@ object PrintOptions {
     __obj.asInstanceOf[PrintOptions]
   }
   
-  @scala.inline
-  implicit class PrintOptionsMutableBuilder[Self <: PrintOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PrintOptions](x: Self) {
     
-    @scala.inline
-    def setCollate(value: Boolean): Self = StObject.set(x, "Collate", value.asInstanceOf[js.Any])
+    inline def setCollate(value: Boolean): Self = StObject.set(x, "Collate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyCount(value: Double): Self = StObject.set(x, "CopyCount", value.asInstanceOf[js.Any])
+    inline def setCopyCount(value: Double): Self = StObject.set(x, "CopyCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuplexMode(value: Double): Self = StObject.set(x, "DuplexMode", value.asInstanceOf[js.Any])
+    inline def setDuplexMode(value: Double): Self = StObject.set(x, "DuplexMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "FileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "FileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPages(value: String): Self = StObject.set(x, "Pages", value.asInstanceOf[js.Any])
+    inline def setPages(value: String): Self = StObject.set(x, "Pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrinterName(value: String): Self = StObject.set(x, "PrinterName", value.asInstanceOf[js.Any])
+    inline def setPrinterName(value: String): Self = StObject.set(x, "PrinterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSort(value: Boolean): Self = StObject.set(x, "Sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: Boolean): Self = StObject.set(x, "Sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWait(value: Boolean): Self = StObject.set(x, "Wait", value.asInstanceOf[js.Any])
+    inline def setWait(value: Boolean): Self = StObject.set(x, "Wait", value.asInstanceOf[js.Any])
   }
 }

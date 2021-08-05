@@ -66,21 +66,16 @@ object deliveryChannelMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): DeliveryChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DeliveryChannel]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DeliveryChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DeliveryChannel]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DeliveryChannelState): DeliveryChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DeliveryChannel]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: DeliveryChannelState, opts: CustomResourceOptions): DeliveryChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DeliveryChannel]
+    inline def get(name: String, id: Input[ID]): DeliveryChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DeliveryChannel]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DeliveryChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DeliveryChannel]
+    inline def get(name: String, id: Input[ID], state: DeliveryChannelState): DeliveryChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DeliveryChannel]
+    inline def get(name: String, id: Input[ID], state: DeliveryChannelState, opts: CustomResourceOptions): DeliveryChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DeliveryChannel]
     
     /**
       * Returns true if the given object is an instance of DeliveryChannel.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/deliveryChannel.DeliveryChannel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cfg/deliveryChannel.DeliveryChannel */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/deliveryChannel.DeliveryChannel */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cfg/deliveryChannel.DeliveryChannel */ Boolean]
   }
   
   trait DeliveryChannelArgs extends StObject {
@@ -112,41 +107,30 @@ object deliveryChannelMod {
   }
   object DeliveryChannelArgs {
     
-    @scala.inline
-    def apply(s3BucketName: Input[String]): DeliveryChannelArgs = {
+    inline def apply(s3BucketName: Input[String]): DeliveryChannelArgs = {
       val __obj = js.Dynamic.literal(s3BucketName = s3BucketName.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeliveryChannelArgs]
     }
     
-    @scala.inline
-    implicit class DeliveryChannelArgsMutableBuilder[Self <: DeliveryChannelArgs] (val x: Self) extends AnyVal {
+    extension [Self <: DeliveryChannelArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setS3BucketName(value: Input[String]): Self = StObject.set(x, "s3BucketName", value.asInstanceOf[js.Any])
+      inline def setS3BucketName(value: Input[String]): Self = StObject.set(x, "s3BucketName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3KeyPrefix(value: Input[String]): Self = StObject.set(x, "s3KeyPrefix", value.asInstanceOf[js.Any])
+      inline def setS3KeyPrefix(value: Input[String]): Self = StObject.set(x, "s3KeyPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3KeyPrefixUndefined: Self = StObject.set(x, "s3KeyPrefix", js.undefined)
+      inline def setS3KeyPrefixUndefined: Self = StObject.set(x, "s3KeyPrefix", js.undefined)
       
-      @scala.inline
-      def setSnapshotDeliveryProperties(value: Input[typings.pulumiAws.inputMod.cfg.DeliveryChannelSnapshotDeliveryProperties]): Self = StObject.set(x, "snapshotDeliveryProperties", value.asInstanceOf[js.Any])
+      inline def setSnapshotDeliveryProperties(value: Input[typings.pulumiAws.inputMod.cfg.DeliveryChannelSnapshotDeliveryProperties]): Self = StObject.set(x, "snapshotDeliveryProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapshotDeliveryPropertiesUndefined: Self = StObject.set(x, "snapshotDeliveryProperties", js.undefined)
+      inline def setSnapshotDeliveryPropertiesUndefined: Self = StObject.set(x, "snapshotDeliveryProperties", js.undefined)
       
-      @scala.inline
-      def setSnsTopicArn(value: Input[String]): Self = StObject.set(x, "snsTopicArn", value.asInstanceOf[js.Any])
+      inline def setSnsTopicArn(value: Input[String]): Self = StObject.set(x, "snsTopicArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnsTopicArnUndefined: Self = StObject.set(x, "snsTopicArn", js.undefined)
+      inline def setSnsTopicArnUndefined: Self = StObject.set(x, "snsTopicArn", js.undefined)
     }
   }
   
@@ -179,44 +163,32 @@ object deliveryChannelMod {
   }
   object DeliveryChannelState {
     
-    @scala.inline
-    def apply(): DeliveryChannelState = {
+    inline def apply(): DeliveryChannelState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeliveryChannelState]
     }
     
-    @scala.inline
-    implicit class DeliveryChannelStateMutableBuilder[Self <: DeliveryChannelState] (val x: Self) extends AnyVal {
+    extension [Self <: DeliveryChannelState](x: Self) {
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setS3BucketName(value: Input[String]): Self = StObject.set(x, "s3BucketName", value.asInstanceOf[js.Any])
+      inline def setS3BucketName(value: Input[String]): Self = StObject.set(x, "s3BucketName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3BucketNameUndefined: Self = StObject.set(x, "s3BucketName", js.undefined)
+      inline def setS3BucketNameUndefined: Self = StObject.set(x, "s3BucketName", js.undefined)
       
-      @scala.inline
-      def setS3KeyPrefix(value: Input[String]): Self = StObject.set(x, "s3KeyPrefix", value.asInstanceOf[js.Any])
+      inline def setS3KeyPrefix(value: Input[String]): Self = StObject.set(x, "s3KeyPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setS3KeyPrefixUndefined: Self = StObject.set(x, "s3KeyPrefix", js.undefined)
+      inline def setS3KeyPrefixUndefined: Self = StObject.set(x, "s3KeyPrefix", js.undefined)
       
-      @scala.inline
-      def setSnapshotDeliveryProperties(value: Input[typings.pulumiAws.inputMod.cfg.DeliveryChannelSnapshotDeliveryProperties]): Self = StObject.set(x, "snapshotDeliveryProperties", value.asInstanceOf[js.Any])
+      inline def setSnapshotDeliveryProperties(value: Input[typings.pulumiAws.inputMod.cfg.DeliveryChannelSnapshotDeliveryProperties]): Self = StObject.set(x, "snapshotDeliveryProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnapshotDeliveryPropertiesUndefined: Self = StObject.set(x, "snapshotDeliveryProperties", js.undefined)
+      inline def setSnapshotDeliveryPropertiesUndefined: Self = StObject.set(x, "snapshotDeliveryProperties", js.undefined)
       
-      @scala.inline
-      def setSnsTopicArn(value: Input[String]): Self = StObject.set(x, "snsTopicArn", value.asInstanceOf[js.Any])
+      inline def setSnsTopicArn(value: Input[String]): Self = StObject.set(x, "snsTopicArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnsTopicArnUndefined: Self = StObject.set(x, "snsTopicArn", js.undefined)
+      inline def setSnsTopicArnUndefined: Self = StObject.set(x, "snsTopicArn", js.undefined)
     }
   }
 }

@@ -28,9 +28,9 @@ object repoMod {
       authTokenProvider_ : AuthTokenProvider
     ) = this()
     
-    var __database: js.Any = js.native
+    /* private */ var __database: js.Any = js.native
     
-    var abortTransactions_ : js.Any = js.native
+    /* private */ var abortTransactions_ : js.Any = js.native
     
     def addEventCallbackForQuery(query: Query, eventRegistration: EventRegistration): Unit = js.native
     
@@ -54,16 +54,16 @@ object repoMod {
     
     def database: Database = js.native
     
-    var eventQueue_ : js.Any = js.native
+    /* private */ var eventQueue_ : js.Any = js.native
     
-    var forceRestClient_ : js.Any = js.native
+    /* private */ var forceRestClient_ : js.Any = js.native
     
     /**
       * Generate ServerValues using some variables from the repo object.
       */
     def generateServerValues(): Indexable = js.native
     
-    var getNextWriteId_ : js.Any = js.native
+    /* private */ var getNextWriteId_ : js.Any = js.native
     
     /**
       * The purpose of `getValue` is to return the latest known value
@@ -93,11 +93,11 @@ object repoMod {
       */
     def getValue(query: Query): js.Promise[DataSnapshot] = js.native
     
-    var infoData_ : js.Any = js.native
+    /* private */ var infoData_ : js.Any = js.native
     
-    var infoSyncTree_ : js.Any = js.native
+    /* private */ var infoSyncTree_ : js.Any = js.native
     
-    var interceptServerDataCallback_ : js.Any = js.native
+    /* private */ var interceptServerDataCallback_ : js.Any = js.native
     
     def interceptServerData_(): Unit = js.native
     def interceptServerData_(callback: js.Function2[/* a */ String, /* b */ js.Any, js.Any]): Unit = js.native
@@ -107,21 +107,21 @@ object repoMod {
     /** Key for uniquely identifying this repo, used in RepoManager */
     val key: String = js.native
     
-    var log_ : js.Any = js.native
+    /* private */ var log_ : js.Any = js.native
     
     /**
       * @return The namespace represented by the repo.
       */
     def name(): String = js.native
     
-    var nextWriteId_ : js.Any = js.native
+    /* private */ var nextWriteId_ : js.Any = js.native
     
-    var onConnectStatus_ : js.Any = js.native
+    /* private */ var onConnectStatus_ : js.Any = js.native
     
     /**
       * Called by realtime when we get new messages from the server.
       */
-    var onDataUpdate_ : js.Any = js.native
+    /* private */ var onDataUpdate_ : js.Any = js.native
     
     def onDisconnectCancel(path: Path): Unit = js.native
     def onDisconnectCancel(
@@ -152,9 +152,9 @@ object repoMod {
     ): Unit = js.native
     
     /** A list of data pieces and paths to be set when this client disconnects. */
-    var onDisconnect_ : js.Any = js.native
+    /* private */ var onDisconnect_ : js.Any = js.native
     
-    var onServerInfoUpdate_ : js.Any = js.native
+    /* private */ var onServerInfoUpdate_ : js.Any = js.native
     
     var persistentConnection_ : PersistentConnection | Null = js.native
     
@@ -162,23 +162,23 @@ object repoMod {
     
     var repoInfo_ : RepoInfo = js.native
     
-    var rerunTransactions_ : js.Any = js.native
+    /* private */ var rerunTransactions_ : js.Any = js.native
     
     def resume(): Unit = js.native
     
     /**
       * Applies all of the changes stored up in the onDisconnect_ tree.
       */
-    var runOnDisconnectEvents_ : js.Any = js.native
+    /* private */ var runOnDisconnectEvents_ : js.Any = js.native
     
-    var serverSyncTree_ : js.Any = js.native
+    /* private */ var serverSyncTree_ : js.Any = js.native
     
     /**
       * @return The time in milliseconds, taking the server offset into account if we have one.
       */
     def serverTime(): Double = js.native
     
-    var server_ : js.Any = js.native
+    /* private */ var server_ : js.Any = js.native
     
     def setWithPriority(path: Path, newVal: js.Any): Unit = js.native
     def setWithPriority(path: Path, newVal: js.Any, newPriority: String): Unit = js.native
@@ -222,13 +222,13 @@ object repoMod {
     
     def statsIncrementCounter(metric: String): Unit = js.native
     
-    var statsListener_ : js.Any = js.native
+    /* private */ var statsListener_ : js.Any = js.native
     
-    var statsReporter_ : js.Any = js.native
+    /* private */ var statsReporter_ : js.Any = js.native
     
-    var stats_ : js.Any = js.native
+    /* private */ var stats_ : js.Any = js.native
     
-    var transactionsInit_ : js.Any = js.native
+    /* private */ var transactionsInit_ : js.Any = js.native
     
     def update(path: Path, childrenToMerge: StringDictionary[js.Any]): Unit = js.native
     def update(
@@ -237,6 +237,6 @@ object repoMod {
       onComplete: js.Function2[/* status */ Error | Null, /* errorReason */ js.UndefOr[String], Unit]
     ): Unit = js.native
     
-    var updateInfo_ : js.Any = js.native
+    /* private */ var updateInfo_ : js.Any = js.native
   }
 }

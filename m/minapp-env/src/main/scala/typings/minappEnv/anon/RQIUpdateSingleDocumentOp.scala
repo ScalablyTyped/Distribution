@@ -15,22 +15,17 @@ trait RQIUpdateSingleDocumentOp extends StObject {
 }
 object RQIUpdateSingleDocumentOp {
   
-  @scala.inline
-  def apply(data: IUpdateCondition): RQIUpdateSingleDocumentOp = {
+  inline def apply(data: IUpdateCondition): RQIUpdateSingleDocumentOp = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[RQIUpdateSingleDocumentOp]
   }
   
-  @scala.inline
-  implicit class RQIUpdateSingleDocumentOpMutableBuilder[Self <: RQIUpdateSingleDocumentOp] (val x: Self) extends AnyVal {
+  extension [Self <: RQIUpdateSingleDocumentOp](x: Self) {
     
-    @scala.inline
-    def setConfig(value: ICloudConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: ICloudConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setData(value: IUpdateCondition): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: IUpdateCondition): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

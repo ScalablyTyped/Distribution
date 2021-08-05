@@ -33,43 +33,31 @@ trait Node extends StObject {
 }
 object Node {
   
-  @scala.inline
-  def apply(id: String): Node = {
+  inline def apply(id: String): Node = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Node]
   }
   
-  @scala.inline
-  implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
+  extension [Self <: Node](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[Node]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[Node]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setChildrenVarargs(value: Node*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: Node*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: Message): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: Message): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }
 }

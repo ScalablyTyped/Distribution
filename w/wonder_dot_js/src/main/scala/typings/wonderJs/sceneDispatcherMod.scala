@@ -30,7 +30,6 @@ object sceneDispatcherMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): SceneDispatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SceneDispatcher]
+    inline def create(): SceneDispatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SceneDispatcher]
   }
 }

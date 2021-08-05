@@ -23,40 +23,29 @@ trait BackgroundAudioPlayerState extends StObject {
 }
 object BackgroundAudioPlayerState {
   
-  @scala.inline
-  def apply(status: Double): BackgroundAudioPlayerState = {
+  inline def apply(status: Double): BackgroundAudioPlayerState = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackgroundAudioPlayerState]
   }
   
-  @scala.inline
-  implicit class BackgroundAudioPlayerStateMutableBuilder[Self <: BackgroundAudioPlayerState] (val x: Self) extends AnyVal {
+  extension [Self <: BackgroundAudioPlayerState](x: Self) {
     
-    @scala.inline
-    def setCurrentPosition(value: Double): Self = StObject.set(x, "currentPosition", value.asInstanceOf[js.Any])
+    inline def setCurrentPosition(value: Double): Self = StObject.set(x, "currentPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentPositionUndefined: Self = StObject.set(x, "currentPosition", js.undefined)
+    inline def setCurrentPositionUndefined: Self = StObject.set(x, "currentPosition", js.undefined)
     
-    @scala.inline
-    def setDataUrl(value: String): Self = StObject.set(x, "dataUrl", value.asInstanceOf[js.Any])
+    inline def setDataUrl(value: String): Self = StObject.set(x, "dataUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUrlUndefined: Self = StObject.set(x, "dataUrl", js.undefined)
+    inline def setDataUrlUndefined: Self = StObject.set(x, "dataUrl", js.undefined)
     
-    @scala.inline
-    def setDownloadPercent(value: Double): Self = StObject.set(x, "downloadPercent", value.asInstanceOf[js.Any])
+    inline def setDownloadPercent(value: Double): Self = StObject.set(x, "downloadPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownloadPercentUndefined: Self = StObject.set(x, "downloadPercent", js.undefined)
+    inline def setDownloadPercentUndefined: Self = StObject.set(x, "downloadPercent", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

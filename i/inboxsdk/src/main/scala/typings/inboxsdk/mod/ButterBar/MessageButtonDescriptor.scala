@@ -12,19 +12,15 @@ trait MessageButtonDescriptor extends StObject {
 }
 object MessageButtonDescriptor {
   
-  @scala.inline
-  def apply(onClick: js.Any => Unit, title: String): MessageButtonDescriptor = {
+  inline def apply(onClick: js.Any => Unit, title: String): MessageButtonDescriptor = {
     val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction1(onClick), title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageButtonDescriptor]
   }
   
-  @scala.inline
-  implicit class MessageButtonDescriptorMutableBuilder[Self <: MessageButtonDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: MessageButtonDescriptor](x: Self) {
     
-    @scala.inline
-    def setOnClick(value: js.Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: js.Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

@@ -25,8 +25,7 @@ trait ArangoSearchViewProperties extends StObject {
 }
 object ArangoSearchViewProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cleanupIntervalStep: Double,
     consolidationIntervalMsec: Double,
     consolidationPolicy: SegmentThreshold,
@@ -39,28 +38,20 @@ object ArangoSearchViewProperties {
     __obj.asInstanceOf[ArangoSearchViewProperties]
   }
   
-  @scala.inline
-  implicit class ArangoSearchViewPropertiesMutableBuilder[Self <: ArangoSearchViewProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ArangoSearchViewProperties](x: Self) {
     
-    @scala.inline
-    def setCleanupIntervalStep(value: Double): Self = StObject.set(x, "cleanupIntervalStep", value.asInstanceOf[js.Any])
+    inline def setCleanupIntervalStep(value: Double): Self = StObject.set(x, "cleanupIntervalStep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsolidationIntervalMsec(value: Double): Self = StObject.set(x, "consolidationIntervalMsec", value.asInstanceOf[js.Any])
+    inline def setConsolidationIntervalMsec(value: Double): Self = StObject.set(x, "consolidationIntervalMsec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsolidationPolicy(value: SegmentThreshold): Self = StObject.set(x, "consolidationPolicy", value.asInstanceOf[js.Any])
+    inline def setConsolidationPolicy(value: SegmentThreshold): Self = StObject.set(x, "consolidationPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinks(value: StringDictionary[js.UndefOr[ArangoSearchViewCollectionLink]]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: StringDictionary[js.UndefOr[ArangoSearchViewCollectionLink]]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: arangosearch): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: arangosearch): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

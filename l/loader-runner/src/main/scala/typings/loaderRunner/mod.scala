@@ -13,11 +13,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getContext(resource: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(resource.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getContext(resource: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(resource.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def runLoaders(
+  inline def runLoaders(
     options: RunLoaderOption,
     callback: js.Function2[/* err */ ErrnoException | Null, /* result */ RunLoaderResult, js.Any]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("runLoaders")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -68,8 +66,7 @@ object mod {
   }
   object ExtendedLoaderContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addContextDependency: String => Unit,
       addDependency: String => Unit,
       cacheable: Boolean => Unit,
@@ -91,89 +88,61 @@ object mod {
       __obj.asInstanceOf[ExtendedLoaderContext]
     }
     
-    @scala.inline
-    implicit class ExtendedLoaderContextMutableBuilder[Self <: ExtendedLoaderContext] (val x: Self) extends AnyVal {
+    extension [Self <: ExtendedLoaderContext](x: Self) {
       
-      @scala.inline
-      def setAddContextDependency(value: String => Unit): Self = StObject.set(x, "addContextDependency", js.Any.fromFunction1(value))
+      inline def setAddContextDependency(value: String => Unit): Self = StObject.set(x, "addContextDependency", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddDependency(value: String => Unit): Self = StObject.set(x, "addDependency", js.Any.fromFunction1(value))
+      inline def setAddDependency(value: String => Unit): Self = StObject.set(x, "addDependency", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAsync(value: () => js.UndefOr[js.Function0[Unit]]): Self = StObject.set(x, "async", js.Any.fromFunction0(value))
+      inline def setAsync(value: () => js.UndefOr[js.Function0[Unit]]): Self = StObject.set(x, "async", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAsyncNull: Self = StObject.set(x, "async", null)
+      inline def setAsyncNull: Self = StObject.set(x, "async", null)
       
-      @scala.inline
-      def setCacheable(value: Boolean => Unit): Self = StObject.set(x, "cacheable", js.Any.fromFunction1(value))
+      inline def setCacheable(value: Boolean => Unit): Self = StObject.set(x, "cacheable", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+      inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCallbackNull: Self = StObject.set(x, "callback", null)
+      inline def setCallbackNull: Self = StObject.set(x, "callback", null)
       
-      @scala.inline
-      def setClearDependencies(value: () => Unit): Self = StObject.set(x, "clearDependencies", js.Any.fromFunction0(value))
+      inline def setClearDependencies(value: () => Unit): Self = StObject.set(x, "clearDependencies", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextNull: Self = StObject.set(x, "context", null)
+      inline def setContextNull: Self = StObject.set(x, "context", null)
       
-      @scala.inline
-      def setCurrentRequest(value: String): Self = StObject.set(x, "currentRequest", value.asInstanceOf[js.Any])
+      inline def setCurrentRequest(value: String): Self = StObject.set(x, "currentRequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDependency(value: String => Unit): Self = StObject.set(x, "dependency", js.Any.fromFunction1(value))
+      inline def setDependency(value: String => Unit): Self = StObject.set(x, "dependency", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetContextDependencies(value: () => js.Array[String]): Self = StObject.set(x, "getContextDependencies", js.Any.fromFunction0(value))
+      inline def setGetContextDependencies(value: () => js.Array[String]): Self = StObject.set(x, "getContextDependencies", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDependencies(value: () => js.Array[String]): Self = StObject.set(x, "getDependencies", js.Any.fromFunction0(value))
+      inline def setGetDependencies(value: () => js.Array[String]): Self = StObject.set(x, "getDependencies", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLoaderIndex(value: Double): Self = StObject.set(x, "loaderIndex", value.asInstanceOf[js.Any])
+      inline def setLoaderIndex(value: Double): Self = StObject.set(x, "loaderIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoaders(value: js.Array[Loader]): Self = StObject.set(x, "loaders", value.asInstanceOf[js.Any])
+      inline def setLoaders(value: js.Array[Loader]): Self = StObject.set(x, "loaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadersVarargs(value: Loader*): Self = StObject.set(x, "loaders", js.Array(value :_*))
+      inline def setLoadersVarargs(value: Loader*): Self = StObject.set(x, "loaders", js.Array(value :_*))
       
-      @scala.inline
-      def setPreviousRequest(value: String): Self = StObject.set(x, "previousRequest", value.asInstanceOf[js.Any])
+      inline def setPreviousRequest(value: String): Self = StObject.set(x, "previousRequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuery(value: StringDictionary[js.Any] | String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: StringDictionary[js.Any] | String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemainingRequest(value: String): Self = StObject.set(x, "remainingRequest", value.asInstanceOf[js.Any])
+      inline def setRemainingRequest(value: String): Self = StObject.set(x, "remainingRequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: String): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: String): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourcePath(value: String): Self = StObject.set(x, "resourcePath", value.asInstanceOf[js.Any])
+      inline def setResourcePath(value: String): Self = StObject.set(x, "resourcePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourcePathUndefined: Self = StObject.set(x, "resourcePath", js.undefined)
+      inline def setResourcePathUndefined: Self = StObject.set(x, "resourcePath", js.undefined)
       
-      @scala.inline
-      def setResourceQuery(value: String): Self = StObject.set(x, "resourceQuery", value.asInstanceOf[js.Any])
+      inline def setResourceQuery(value: String): Self = StObject.set(x, "resourceQuery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceQueryUndefined: Self = StObject.set(x, "resourceQuery", js.undefined)
+      inline def setResourceQueryUndefined: Self = StObject.set(x, "resourceQuery", js.undefined)
     }
   }
   
@@ -201,8 +170,7 @@ object mod {
   }
   object Loader {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       data: js.Any,
       normalExecuted: Boolean,
       options: js.Any,
@@ -216,44 +184,31 @@ object mod {
       __obj.asInstanceOf[Loader]
     }
     
-    @scala.inline
-    implicit class LoaderMutableBuilder[Self <: Loader] (val x: Self) extends AnyVal {
+    extension [Self <: Loader](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormal(value: /* request */ String => String): Self = StObject.set(x, "normal", js.Any.fromFunction1(value))
+      inline def setNormal(value: /* request */ String => String): Self = StObject.set(x, "normal", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNormalExecuted(value: Boolean): Self = StObject.set(x, "normalExecuted", value.asInstanceOf[js.Any])
+      inline def setNormalExecuted(value: Boolean): Self = StObject.set(x, "normalExecuted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalNull: Self = StObject.set(x, "normal", null)
+      inline def setNormalNull: Self = StObject.set(x, "normal", null)
       
-      @scala.inline
-      def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPitch(value: /* request */ String => String): Self = StObject.set(x, "pitch", js.Any.fromFunction1(value))
+      inline def setPitch(value: /* request */ String => String): Self = StObject.set(x, "pitch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPitchExecuted(value: Boolean): Self = StObject.set(x, "pitchExecuted", value.asInstanceOf[js.Any])
+      inline def setPitchExecuted(value: Boolean): Self = StObject.set(x, "pitchExecuted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPitchNull: Self = StObject.set(x, "pitch", null)
+      inline def setPitchNull: Self = StObject.set(x, "pitch", null)
       
-      @scala.inline
-      def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
+      inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: String): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: String): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     }
   }
   
@@ -272,8 +227,7 @@ object mod {
   }
   object RunLoaderOption {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       context: js.Any,
       loaders: js.Array[js.Any],
       readResource: (String, js.Function2[/* err */ ErrnoException | Null, /* data */ Buffer | Null, Unit]) => Unit,
@@ -283,25 +237,19 @@ object mod {
       __obj.asInstanceOf[RunLoaderOption]
     }
     
-    @scala.inline
-    implicit class RunLoaderOptionMutableBuilder[Self <: RunLoaderOption] (val x: Self) extends AnyVal {
+    extension [Self <: RunLoaderOption](x: Self) {
       
-      @scala.inline
-      def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoaders(value: js.Array[js.Any]): Self = StObject.set(x, "loaders", value.asInstanceOf[js.Any])
+      inline def setLoaders(value: js.Array[js.Any]): Self = StObject.set(x, "loaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadersVarargs(value: js.Any*): Self = StObject.set(x, "loaders", js.Array(value :_*))
+      inline def setLoadersVarargs(value: js.Any*): Self = StObject.set(x, "loaders", js.Array(value :_*))
       
-      @scala.inline
-      def setReadResource(
+      inline def setReadResource(
         value: (String, js.Function2[/* err */ ErrnoException | Null, /* data */ Buffer | Null, Unit]) => Unit
       ): Self = StObject.set(x, "readResource", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+      inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     }
   }
   
@@ -319,47 +267,34 @@ object mod {
   }
   object RunLoaderResult {
     
-    @scala.inline
-    def apply(cacheable: Boolean, contextDependencies: js.Array[String], fileDependencies: js.Array[String]): RunLoaderResult = {
+    inline def apply(cacheable: Boolean, contextDependencies: js.Array[String], fileDependencies: js.Array[String]): RunLoaderResult = {
       val __obj = js.Dynamic.literal(cacheable = cacheable.asInstanceOf[js.Any], contextDependencies = contextDependencies.asInstanceOf[js.Any], fileDependencies = fileDependencies.asInstanceOf[js.Any])
       __obj.asInstanceOf[RunLoaderResult]
     }
     
-    @scala.inline
-    implicit class RunLoaderResultMutableBuilder[Self <: RunLoaderResult] (val x: Self) extends AnyVal {
+    extension [Self <: RunLoaderResult](x: Self) {
       
-      @scala.inline
-      def setCacheable(value: Boolean): Self = StObject.set(x, "cacheable", value.asInstanceOf[js.Any])
+      inline def setCacheable(value: Boolean): Self = StObject.set(x, "cacheable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextDependencies(value: js.Array[String]): Self = StObject.set(x, "contextDependencies", value.asInstanceOf[js.Any])
+      inline def setContextDependencies(value: js.Array[String]): Self = StObject.set(x, "contextDependencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextDependenciesVarargs(value: String*): Self = StObject.set(x, "contextDependencies", js.Array(value :_*))
+      inline def setContextDependenciesVarargs(value: String*): Self = StObject.set(x, "contextDependencies", js.Array(value :_*))
       
-      @scala.inline
-      def setFileDependencies(value: js.Array[String]): Self = StObject.set(x, "fileDependencies", value.asInstanceOf[js.Any])
+      inline def setFileDependencies(value: js.Array[String]): Self = StObject.set(x, "fileDependencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileDependenciesVarargs(value: String*): Self = StObject.set(x, "fileDependencies", js.Array(value :_*))
+      inline def setFileDependenciesVarargs(value: String*): Self = StObject.set(x, "fileDependencies", js.Array(value :_*))
       
-      @scala.inline
-      def setResourceBuffer(value: Buffer): Self = StObject.set(x, "resourceBuffer", value.asInstanceOf[js.Any])
+      inline def setResourceBuffer(value: Buffer): Self = StObject.set(x, "resourceBuffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceBufferNull: Self = StObject.set(x, "resourceBuffer", null)
+      inline def setResourceBufferNull: Self = StObject.set(x, "resourceBuffer", null)
       
-      @scala.inline
-      def setResourceBufferUndefined: Self = StObject.set(x, "resourceBuffer", js.undefined)
+      inline def setResourceBufferUndefined: Self = StObject.set(x, "resourceBuffer", js.undefined)
       
-      @scala.inline
-      def setResult(value: js.Array[Buffer | Null]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: js.Array[Buffer | Null]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+      inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
       
-      @scala.inline
-      def setResultVarargs(value: (Buffer | Null)*): Self = StObject.set(x, "result", js.Array(value :_*))
+      inline def setResultVarargs(value: (Buffer | Null)*): Self = StObject.set(x, "result", js.Array(value :_*))
     }
   }
 }

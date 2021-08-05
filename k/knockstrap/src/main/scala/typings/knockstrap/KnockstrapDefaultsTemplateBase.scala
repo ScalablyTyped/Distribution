@@ -12,19 +12,15 @@ trait KnockstrapDefaultsTemplateBase extends StObject {
 }
 object KnockstrapDefaultsTemplateBase {
   
-  @scala.inline
-  def apply(name: String, templateEngine: KnockstrapStringTemplateEngine): KnockstrapDefaultsTemplateBase = {
+  inline def apply(name: String, templateEngine: KnockstrapStringTemplateEngine): KnockstrapDefaultsTemplateBase = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], templateEngine = templateEngine.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnockstrapDefaultsTemplateBase]
   }
   
-  @scala.inline
-  implicit class KnockstrapDefaultsTemplateBaseMutableBuilder[Self <: KnockstrapDefaultsTemplateBase] (val x: Self) extends AnyVal {
+  extension [Self <: KnockstrapDefaultsTemplateBase](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateEngine(value: KnockstrapStringTemplateEngine): Self = StObject.set(x, "templateEngine", value.asInstanceOf[js.Any])
+    inline def setTemplateEngine(value: KnockstrapStringTemplateEngine): Self = StObject.set(x, "templateEngine", value.asInstanceOf[js.Any])
   }
 }

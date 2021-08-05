@@ -18,37 +18,27 @@ trait Offset extends StObject {
 }
 object Offset {
   
-  @scala.inline
-  def apply(): Offset = {
+  inline def apply(): Offset = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Offset]
   }
   
-  @scala.inline
-  implicit class OffsetMutableBuilder[Self <: Offset] (val x: Self) extends AnyVal {
+  extension [Self <: Offset](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setOffset(value: ChartOffset): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: ChartOffset): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    @scala.inline
-    def setXAxis(value: XAxisProps): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
+    inline def setXAxis(value: XAxisProps): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
+    inline def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
   }
 }

@@ -90,8 +90,7 @@ trait LViewDebug extends StObject {
 }
 object LViewDebug {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     childViews: js.Array[LViewDebug | LContainerDebug],
     decls: LViewDebugRange,
     expando: LViewDebugRange,
@@ -106,64 +105,44 @@ object LViewDebug {
     __obj.asInstanceOf[LViewDebug]
   }
   
-  @scala.inline
-  implicit class LViewDebugMutableBuilder[Self <: LViewDebug] (val x: Self) extends AnyVal {
+  extension [Self <: LViewDebug](x: Self) {
     
-    @scala.inline
-    def setChildViews(value: js.Array[LViewDebug | LContainerDebug]): Self = StObject.set(x, "childViews", value.asInstanceOf[js.Any])
+    inline def setChildViews(value: js.Array[LViewDebug | LContainerDebug]): Self = StObject.set(x, "childViews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildViewsVarargs(value: (LViewDebug | LContainerDebug)*): Self = StObject.set(x, "childViews", js.Array(value :_*))
+    inline def setChildViewsVarargs(value: (LViewDebug | LContainerDebug)*): Self = StObject.set(x, "childViews", js.Array(value :_*))
     
-    @scala.inline
-    def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextNull: Self = StObject.set(x, "context", null)
+    inline def setContextNull: Self = StObject.set(x, "context", null)
     
-    @scala.inline
-    def setDecls(value: LViewDebugRange): Self = StObject.set(x, "decls", value.asInstanceOf[js.Any])
+    inline def setDecls(value: LViewDebugRange): Self = StObject.set(x, "decls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpando(value: LViewDebugRange): Self = StObject.set(x, "expando", value.asInstanceOf[js.Any])
+    inline def setExpando(value: LViewDebugRange): Self = StObject.set(x, "expando", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlags(value: Attached): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: Attached): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostHTML(value: String): Self = StObject.set(x, "hostHTML", value.asInstanceOf[js.Any])
+    inline def setHostHTML(value: String): Self = StObject.set(x, "hostHTML", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostHTMLNull: Self = StObject.set(x, "hostHTML", null)
+    inline def setHostHTMLNull: Self = StObject.set(x, "hostHTML", null)
     
-    @scala.inline
-    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext(value: LViewDebug | LContainerDebug): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: LViewDebug | LContainerDebug): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextNull: Self = StObject.set(x, "next", null)
+    inline def setNextNull: Self = StObject.set(x, "next", null)
     
-    @scala.inline
-    def setNodes(value: js.Array[DebugNode2]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+    inline def setNodes(value: js.Array[DebugNode2]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodesVarargs(value: DebugNode2*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    inline def setNodesVarargs(value: DebugNode2*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     
-    @scala.inline
-    def setParent(value: LViewDebug | LContainerDebug): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: LViewDebug | LContainerDebug): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNull: Self = StObject.set(x, "parent", null)
+    inline def setParentNull: Self = StObject.set(x, "parent", null)
     
-    @scala.inline
-    def setTView(value: TView): Self = StObject.set(x, "tView", value.asInstanceOf[js.Any])
+    inline def setTView(value: TView): Self = StObject.set(x, "tView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVars(value: LViewDebugRange): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
+    inline def setVars(value: LViewDebugRange): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
   }
 }

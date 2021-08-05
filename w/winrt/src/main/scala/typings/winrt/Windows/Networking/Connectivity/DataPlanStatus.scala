@@ -10,8 +10,7 @@ trait DataPlanStatus
      with IDataPlanStatus
 object DataPlanStatus {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dataLimitInMegabytes: Double,
     dataPlanUsage: DataPlanUsage,
     inboundBitsPerSecond: Double,

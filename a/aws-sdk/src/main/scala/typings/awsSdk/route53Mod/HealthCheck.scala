@@ -38,8 +38,7 @@ trait HealthCheck extends StObject {
 }
 object HealthCheck {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CallerReference: HealthCheckNonce,
     HealthCheckConfig: HealthCheckConfig,
     HealthCheckVersion: HealthCheckVersion,
@@ -49,31 +48,22 @@ object HealthCheck {
     __obj.asInstanceOf[HealthCheck]
   }
   
-  @scala.inline
-  implicit class HealthCheckMutableBuilder[Self <: HealthCheck] (val x: Self) extends AnyVal {
+  extension [Self <: HealthCheck](x: Self) {
     
-    @scala.inline
-    def setCallerReference(value: HealthCheckNonce): Self = StObject.set(x, "CallerReference", value.asInstanceOf[js.Any])
+    inline def setCallerReference(value: HealthCheckNonce): Self = StObject.set(x, "CallerReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudWatchAlarmConfiguration(value: CloudWatchAlarmConfiguration): Self = StObject.set(x, "CloudWatchAlarmConfiguration", value.asInstanceOf[js.Any])
+    inline def setCloudWatchAlarmConfiguration(value: CloudWatchAlarmConfiguration): Self = StObject.set(x, "CloudWatchAlarmConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudWatchAlarmConfigurationUndefined: Self = StObject.set(x, "CloudWatchAlarmConfiguration", js.undefined)
+    inline def setCloudWatchAlarmConfigurationUndefined: Self = StObject.set(x, "CloudWatchAlarmConfiguration", js.undefined)
     
-    @scala.inline
-    def setHealthCheckConfig(value: HealthCheckConfig): Self = StObject.set(x, "HealthCheckConfig", value.asInstanceOf[js.Any])
+    inline def setHealthCheckConfig(value: HealthCheckConfig): Self = StObject.set(x, "HealthCheckConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthCheckVersion(value: HealthCheckVersion): Self = StObject.set(x, "HealthCheckVersion", value.asInstanceOf[js.Any])
+    inline def setHealthCheckVersion(value: HealthCheckVersion): Self = StObject.set(x, "HealthCheckVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: HealthCheckId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: HealthCheckId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkedService(value: LinkedService): Self = StObject.set(x, "LinkedService", value.asInstanceOf[js.Any])
+    inline def setLinkedService(value: LinkedService): Self = StObject.set(x, "LinkedService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkedServiceUndefined: Self = StObject.set(x, "LinkedService", js.undefined)
+    inline def setLinkedServiceUndefined: Self = StObject.set(x, "LinkedService", js.undefined)
   }
 }

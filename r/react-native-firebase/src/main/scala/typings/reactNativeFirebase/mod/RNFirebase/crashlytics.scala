@@ -85,41 +85,30 @@ object crashlytics {
   }
   object customError {
     
-    @scala.inline
-    def apply(fileName: String): customError = {
+    inline def apply(fileName: String): customError = {
       val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any])
       __obj.asInstanceOf[customError]
     }
     
-    @scala.inline
-    implicit class customErrorMutableBuilder[Self <: customError] (val x: Self) extends AnyVal {
+    extension [Self <: customError](x: Self) {
       
-      @scala.inline
-      def setAdditional(value: js.Object): Self = StObject.set(x, "additional", value.asInstanceOf[js.Any])
+      inline def setAdditional(value: js.Object): Self = StObject.set(x, "additional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalUndefined: Self = StObject.set(x, "additional", js.undefined)
+      inline def setAdditionalUndefined: Self = StObject.set(x, "additional", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+      inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
+      inline def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
+      inline def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
       
-      @scala.inline
-      def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+      inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
+      inline def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
     }
   }
 }

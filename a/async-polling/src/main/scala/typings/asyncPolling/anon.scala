@@ -17,23 +17,18 @@ object anon {
   }
   object On {
     
-    @scala.inline
-    def apply(on: (EventName, js.Function) => js.Any, run: () => js.Any, stop: () => js.Any): On = {
+    inline def apply(on: (EventName, js.Function) => js.Any, run: () => js.Any, stop: () => js.Any): On = {
       val __obj = js.Dynamic.literal(on = js.Any.fromFunction2(on), run = js.Any.fromFunction0(run), stop = js.Any.fromFunction0(stop))
       __obj.asInstanceOf[On]
     }
     
-    @scala.inline
-    implicit class OnMutableBuilder[Self <: On] (val x: Self) extends AnyVal {
+    extension [Self <: On](x: Self) {
       
-      @scala.inline
-      def setOn(value: (EventName, js.Function) => js.Any): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      inline def setOn(value: (EventName, js.Function) => js.Any): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRun(value: () => js.Any): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
+      inline def setRun(value: () => js.Any): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStop(value: () => js.Any): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => js.Any): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     }
   }
 }

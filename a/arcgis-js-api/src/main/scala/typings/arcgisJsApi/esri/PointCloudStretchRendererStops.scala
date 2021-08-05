@@ -33,8 +33,7 @@ trait PointCloudStretchRendererStops
 }
 object PointCloudStretchRendererStops {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     color: Color_,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -45,19 +44,14 @@ object PointCloudStretchRendererStops {
     __obj.asInstanceOf[PointCloudStretchRendererStops]
   }
   
-  @scala.inline
-  implicit class PointCloudStretchRendererStopsMutableBuilder[Self <: PointCloudStretchRendererStops] (val x: Self) extends AnyVal {
+  extension [Self <: PointCloudStretchRendererStops](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

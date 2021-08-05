@@ -28,37 +28,27 @@ trait Layer extends StObject {
 }
 object Layer {
   
-  @scala.inline
-  def apply(): Layer = {
+  inline def apply(): Layer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Layer]
   }
   
-  @scala.inline
-  implicit class LayerMutableBuilder[Self <: Layer] (val x: Self) extends AnyVal {
+  extension [Self <: Layer](x: Self) {
     
-    @scala.inline
-    def setLayerAvailability(value: LayerAvailability): Self = StObject.set(x, "layerAvailability", value.asInstanceOf[js.Any])
+    inline def setLayerAvailability(value: LayerAvailability): Self = StObject.set(x, "layerAvailability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerAvailabilityUndefined: Self = StObject.set(x, "layerAvailability", js.undefined)
+    inline def setLayerAvailabilityUndefined: Self = StObject.set(x, "layerAvailability", js.undefined)
     
-    @scala.inline
-    def setLayerDigest(value: LayerDigest): Self = StObject.set(x, "layerDigest", value.asInstanceOf[js.Any])
+    inline def setLayerDigest(value: LayerDigest): Self = StObject.set(x, "layerDigest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerDigestUndefined: Self = StObject.set(x, "layerDigest", js.undefined)
+    inline def setLayerDigestUndefined: Self = StObject.set(x, "layerDigest", js.undefined)
     
-    @scala.inline
-    def setLayerSize(value: LayerSizeInBytes): Self = StObject.set(x, "layerSize", value.asInstanceOf[js.Any])
+    inline def setLayerSize(value: LayerSizeInBytes): Self = StObject.set(x, "layerSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerSizeUndefined: Self = StObject.set(x, "layerSize", js.undefined)
+    inline def setLayerSizeUndefined: Self = StObject.set(x, "layerSize", js.undefined)
     
-    @scala.inline
-    def setMediaType(value: MediaType): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: MediaType): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
+    inline def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)
   }
 }

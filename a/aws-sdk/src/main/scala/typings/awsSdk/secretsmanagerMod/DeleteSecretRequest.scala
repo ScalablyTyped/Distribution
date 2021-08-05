@@ -23,28 +23,21 @@ trait DeleteSecretRequest extends StObject {
 }
 object DeleteSecretRequest {
   
-  @scala.inline
-  def apply(SecretId: SecretIdType): DeleteSecretRequest = {
+  inline def apply(SecretId: SecretIdType): DeleteSecretRequest = {
     val __obj = js.Dynamic.literal(SecretId = SecretId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSecretRequest]
   }
   
-  @scala.inline
-  implicit class DeleteSecretRequestMutableBuilder[Self <: DeleteSecretRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSecretRequest](x: Self) {
     
-    @scala.inline
-    def setForceDeleteWithoutRecovery(value: BooleanType): Self = StObject.set(x, "ForceDeleteWithoutRecovery", value.asInstanceOf[js.Any])
+    inline def setForceDeleteWithoutRecovery(value: BooleanType): Self = StObject.set(x, "ForceDeleteWithoutRecovery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceDeleteWithoutRecoveryUndefined: Self = StObject.set(x, "ForceDeleteWithoutRecovery", js.undefined)
+    inline def setForceDeleteWithoutRecoveryUndefined: Self = StObject.set(x, "ForceDeleteWithoutRecovery", js.undefined)
     
-    @scala.inline
-    def setRecoveryWindowInDays(value: RecoveryWindowInDaysType): Self = StObject.set(x, "RecoveryWindowInDays", value.asInstanceOf[js.Any])
+    inline def setRecoveryWindowInDays(value: RecoveryWindowInDaysType): Self = StObject.set(x, "RecoveryWindowInDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecoveryWindowInDaysUndefined: Self = StObject.set(x, "RecoveryWindowInDays", js.undefined)
+    inline def setRecoveryWindowInDaysUndefined: Self = StObject.set(x, "RecoveryWindowInDays", js.undefined)
     
-    @scala.inline
-    def setSecretId(value: SecretIdType): Self = StObject.set(x, "SecretId", value.asInstanceOf[js.Any])
+    inline def setSecretId(value: SecretIdType): Self = StObject.set(x, "SecretId", value.asInstanceOf[js.Any])
   }
 }

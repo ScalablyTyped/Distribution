@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.WebOptions")
 @js.native
-class WebOptions protected ()
+/* private */ class WebOptions ()
   extends StObject
      with typings.activexExcel.Excel.WebOptions {
   
@@ -29,7 +29,7 @@ class WebOptions protected ()
   /* CompleteClass */
   var Encoding: MsoEncoding = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.WebOptions_typekey")
   var ExcelDotWebOptions_typekey: typings.activexExcel.Excel.WebOptions = js.native
   

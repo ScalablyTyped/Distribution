@@ -13,19 +13,15 @@ trait ProgressUpdateStreamSummary extends StObject {
 }
 object ProgressUpdateStreamSummary {
   
-  @scala.inline
-  def apply(): ProgressUpdateStreamSummary = {
+  inline def apply(): ProgressUpdateStreamSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProgressUpdateStreamSummary]
   }
   
-  @scala.inline
-  implicit class ProgressUpdateStreamSummaryMutableBuilder[Self <: ProgressUpdateStreamSummary] (val x: Self) extends AnyVal {
+  extension [Self <: ProgressUpdateStreamSummary](x: Self) {
     
-    @scala.inline
-    def setProgressUpdateStreamName(value: ProgressUpdateStream): Self = StObject.set(x, "ProgressUpdateStreamName", value.asInstanceOf[js.Any])
+    inline def setProgressUpdateStreamName(value: ProgressUpdateStream): Self = StObject.set(x, "ProgressUpdateStreamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressUpdateStreamNameUndefined: Self = StObject.set(x, "ProgressUpdateStreamName", js.undefined)
+    inline def setProgressUpdateStreamNameUndefined: Self = StObject.set(x, "ProgressUpdateStreamName", js.undefined)
   }
 }

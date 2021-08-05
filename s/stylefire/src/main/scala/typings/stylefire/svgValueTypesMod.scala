@@ -11,6 +11,5 @@ object svgValueTypesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(key: String): ValueType = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(key.asInstanceOf[js.Any]).asInstanceOf[ValueType]
+  inline def default(key: String): ValueType = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(key.asInstanceOf[js.Any]).asInstanceOf[ValueType]
 }

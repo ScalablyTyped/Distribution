@@ -17,17 +17,14 @@ object mod extends Shortcut {
   }
   object Less2Sass {
     
-    @scala.inline
-    def apply(convert: String => String): Less2Sass = {
+    inline def apply(convert: String => String): Less2Sass = {
       val __obj = js.Dynamic.literal(convert = js.Any.fromFunction1(convert))
       __obj.asInstanceOf[Less2Sass]
     }
     
-    @scala.inline
-    implicit class Less2SassMutableBuilder[Self <: Less2Sass] (val x: Self) extends AnyVal {
+    extension [Self <: Less2Sass](x: Self) {
       
-      @scala.inline
-      def setConvert(value: String => String): Self = StObject.set(x, "convert", js.Any.fromFunction1(value))
+      inline def setConvert(value: String => String): Self = StObject.set(x, "convert", js.Any.fromFunction1(value))
     }
   }
   

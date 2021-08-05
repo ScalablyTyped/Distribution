@@ -52,8 +52,7 @@ trait XDragSourceListener
 }
 object XDragSourceListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     dragDropEnd: DragSourceDropEvent => Unit,
@@ -68,22 +67,16 @@ object XDragSourceListener {
     __obj.asInstanceOf[XDragSourceListener]
   }
   
-  @scala.inline
-  implicit class XDragSourceListenerMutableBuilder[Self <: XDragSourceListener] (val x: Self) extends AnyVal {
+  extension [Self <: XDragSourceListener](x: Self) {
     
-    @scala.inline
-    def setDragDropEnd(value: DragSourceDropEvent => Unit): Self = StObject.set(x, "dragDropEnd", js.Any.fromFunction1(value))
+    inline def setDragDropEnd(value: DragSourceDropEvent => Unit): Self = StObject.set(x, "dragDropEnd", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDragEnter(value: DragSourceDragEvent => Unit): Self = StObject.set(x, "dragEnter", js.Any.fromFunction1(value))
+    inline def setDragEnter(value: DragSourceDragEvent => Unit): Self = StObject.set(x, "dragEnter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDragExit(value: DragSourceEvent => Unit): Self = StObject.set(x, "dragExit", js.Any.fromFunction1(value))
+    inline def setDragExit(value: DragSourceEvent => Unit): Self = StObject.set(x, "dragExit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDragOver(value: DragSourceDragEvent => Unit): Self = StObject.set(x, "dragOver", js.Any.fromFunction1(value))
+    inline def setDragOver(value: DragSourceDragEvent => Unit): Self = StObject.set(x, "dragOver", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDropActionChanged(value: DragSourceDragEvent => Unit): Self = StObject.set(x, "dropActionChanged", js.Any.fromFunction1(value))
+    inline def setDropActionChanged(value: DragSourceDragEvent => Unit): Self = StObject.set(x, "dropActionChanged", js.Any.fromFunction1(value))
   }
 }

@@ -32,32 +32,24 @@ object formTextMod {
   }
   object FormTextProps {
     
-    @scala.inline
-    def apply(): FormTextProps = {
+    inline def apply(): FormTextProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FormTextProps]
     }
     
-    @scala.inline
-    implicit class FormTextPropsMutableBuilder[Self <: FormTextProps] (val x: Self) extends AnyVal {
+    extension [Self <: FormTextProps](x: Self) {
       
-      @scala.inline
-      def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
+      inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
+      inline def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
       
-      @scala.inline
-      def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+      inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
+      inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
       
-      @scala.inline
-      def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     }
   }
 }

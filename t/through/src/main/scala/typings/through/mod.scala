@@ -8,22 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): ThroughStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ThroughStream]
-  @scala.inline
-  def apply(write: js.Function1[/* data */ js.Any, Unit]): ThroughStream = ^.asInstanceOf[js.Dynamic].apply(write.asInstanceOf[js.Any]).asInstanceOf[ThroughStream]
-  @scala.inline
-  def apply(write: js.Function1[/* data */ js.Any, Unit], end: js.Function0[Unit]): ThroughStream = (^.asInstanceOf[js.Dynamic].apply(write.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[ThroughStream]
-  @scala.inline
-  def apply(write: js.Function1[/* data */ js.Any, Unit], end: js.Function0[Unit], opts: AutoDestroy): ThroughStream = (^.asInstanceOf[js.Dynamic].apply(write.asInstanceOf[js.Any], end.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ThroughStream]
-  @scala.inline
-  def apply(write: js.Function1[/* data */ js.Any, Unit], end: Unit, opts: AutoDestroy): ThroughStream = (^.asInstanceOf[js.Dynamic].apply(write.asInstanceOf[js.Any], end.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ThroughStream]
-  @scala.inline
-  def apply(write: Unit, end: js.Function0[Unit]): ThroughStream = (^.asInstanceOf[js.Dynamic].apply(write.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[ThroughStream]
-  @scala.inline
-  def apply(write: Unit, end: js.Function0[Unit], opts: AutoDestroy): ThroughStream = (^.asInstanceOf[js.Dynamic].apply(write.asInstanceOf[js.Any], end.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ThroughStream]
-  @scala.inline
-  def apply(write: Unit, end: Unit, opts: AutoDestroy): ThroughStream = (^.asInstanceOf[js.Dynamic].apply(write.asInstanceOf[js.Any], end.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ThroughStream]
+  inline def apply(): ThroughStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ThroughStream]
+  inline def apply(write: js.Function1[/* data */ js.Any, Unit]): ThroughStream = ^.asInstanceOf[js.Dynamic].apply(write.asInstanceOf[js.Any]).asInstanceOf[ThroughStream]
+  inline def apply(write: js.Function1[/* data */ js.Any, Unit], end: js.Function0[Unit]): ThroughStream = (^.asInstanceOf[js.Dynamic].apply(write.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[ThroughStream]
+  inline def apply(write: js.Function1[/* data */ js.Any, Unit], end: js.Function0[Unit], opts: AutoDestroy): ThroughStream = (^.asInstanceOf[js.Dynamic].apply(write.asInstanceOf[js.Any], end.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ThroughStream]
+  inline def apply(write: js.Function1[/* data */ js.Any, Unit], end: Unit, opts: AutoDestroy): ThroughStream = (^.asInstanceOf[js.Dynamic].apply(write.asInstanceOf[js.Any], end.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ThroughStream]
+  inline def apply(write: Unit, end: js.Function0[Unit]): ThroughStream = (^.asInstanceOf[js.Dynamic].apply(write.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[ThroughStream]
+  inline def apply(write: Unit, end: js.Function0[Unit], opts: AutoDestroy): ThroughStream = (^.asInstanceOf[js.Dynamic].apply(write.asInstanceOf[js.Any], end.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ThroughStream]
+  inline def apply(write: Unit, end: Unit, opts: AutoDestroy): ThroughStream = (^.asInstanceOf[js.Dynamic].apply(write.asInstanceOf[js.Any], end.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ThroughStream]
   
   @JSImport("through", JSImport.Namespace)
   @js.native

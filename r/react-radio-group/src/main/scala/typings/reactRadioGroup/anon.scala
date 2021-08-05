@@ -21,32 +21,24 @@ object anon {
   }
   object Component {
     
-    @scala.inline
-    def apply(): Component = {
+    inline def apply(): Component = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Component]
     }
     
-    @scala.inline
-    implicit class ComponentMutableBuilder[Self <: Component] (val x: Self) extends AnyVal {
+    extension [Self <: Component](x: Self) {
       
-      @scala.inline
-      def setComponent(value: ReactType[Omit[HTMLProps[js.Any], onChange | role]]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ReactType[Omit[HTMLProps[js.Any], onChange | role]]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "Component", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* value */ js.Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* value */ js.Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setSelectedValue(value: js.Any): Self = StObject.set(x, "selectedValue", value.asInstanceOf[js.Any])
+      inline def setSelectedValue(value: js.Any): Self = StObject.set(x, "selectedValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedValueUndefined: Self = StObject.set(x, "selectedValue", js.undefined)
+      inline def setSelectedValueUndefined: Self = StObject.set(x, "selectedValue", js.undefined)
     }
   }
   
@@ -56,17 +48,14 @@ object anon {
   }
   object Value {
     
-    @scala.inline
-    def apply(value: js.Any): Value = {
+    inline def apply(value: js.Any): Value = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Value]
     }
     
-    @scala.inline
-    implicit class ValueMutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
+    extension [Self <: Value](x: Self) {
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

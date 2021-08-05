@@ -20,43 +20,31 @@ trait EllipseProps
 }
 object EllipseProps {
   
-  @scala.inline
-  def apply(): EllipseProps = {
+  inline def apply(): EllipseProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EllipseProps]
   }
   
-  @scala.inline
-  implicit class EllipsePropsMutableBuilder[Self <: EllipseProps] (val x: Self) extends AnyVal {
+  extension [Self <: EllipseProps](x: Self) {
     
-    @scala.inline
-    def setCx(value: NumberProp): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
+    inline def setCx(value: NumberProp): Self = StObject.set(x, "cx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCxUndefined: Self = StObject.set(x, "cx", js.undefined)
+    inline def setCxUndefined: Self = StObject.set(x, "cx", js.undefined)
     
-    @scala.inline
-    def setCy(value: NumberProp): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
+    inline def setCy(value: NumberProp): Self = StObject.set(x, "cy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCyUndefined: Self = StObject.set(x, "cy", js.undefined)
+    inline def setCyUndefined: Self = StObject.set(x, "cy", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: NumberProp): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: NumberProp): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    @scala.inline
-    def setRx(value: NumberProp): Self = StObject.set(x, "rx", value.asInstanceOf[js.Any])
+    inline def setRx(value: NumberProp): Self = StObject.set(x, "rx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRxUndefined: Self = StObject.set(x, "rx", js.undefined)
+    inline def setRxUndefined: Self = StObject.set(x, "rx", js.undefined)
     
-    @scala.inline
-    def setRy(value: NumberProp): Self = StObject.set(x, "ry", value.asInstanceOf[js.Any])
+    inline def setRy(value: NumberProp): Self = StObject.set(x, "ry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRyUndefined: Self = StObject.set(x, "ry", js.undefined)
+    inline def setRyUndefined: Self = StObject.set(x, "ry", js.undefined)
   }
 }

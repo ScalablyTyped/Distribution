@@ -17,31 +17,23 @@ trait GetSkewOption extends StObject {
 }
 object GetSkewOption {
   
-  @scala.inline
-  def apply(): GetSkewOption = {
+  inline def apply(): GetSkewOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSkewOption]
   }
   
-  @scala.inline
-  implicit class GetSkewOptionMutableBuilder[Self <: GetSkewOption] (val x: Self) extends AnyVal {
+  extension [Self <: GetSkewOption](x: Self) {
     
-    @scala.inline
-    def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    @scala.inline
-    def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
+    inline def setFail(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: /* result */ GetSkewSuccessCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* result */ GetSkewSuccessCallbackResult => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

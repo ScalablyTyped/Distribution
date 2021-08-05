@@ -40,20 +40,16 @@ object Stamplay {
   }
   object StamplayObject {
     
-    @scala.inline
-    def apply(Collection: js.Any, Model: Model): StamplayObject = {
+    inline def apply(Collection: js.Any, Model: Model): StamplayObject = {
       val __obj = js.Dynamic.literal(Collection = Collection.asInstanceOf[js.Any], Model = Model.asInstanceOf[js.Any])
       __obj.asInstanceOf[StamplayObject]
     }
     
-    @scala.inline
-    implicit class StamplayObjectMutableBuilder[Self <: StamplayObject] (val x: Self) extends AnyVal {
+    extension [Self <: StamplayObject](x: Self) {
       
-      @scala.inline
-      def setCollection(value: js.Any): Self = StObject.set(x, "Collection", value.asInstanceOf[js.Any])
+      inline def setCollection(value: js.Any): Self = StObject.set(x, "Collection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModel(value: Model): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
+      inline def setModel(value: Model): Self = StObject.set(x, "Model", value.asInstanceOf[js.Any])
     }
   }
 }

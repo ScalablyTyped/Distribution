@@ -13,16 +13,13 @@ trait DeleteQualificationTypeRequest extends StObject {
 }
 object DeleteQualificationTypeRequest {
   
-  @scala.inline
-  def apply(QualificationTypeId: EntityId): DeleteQualificationTypeRequest = {
+  inline def apply(QualificationTypeId: EntityId): DeleteQualificationTypeRequest = {
     val __obj = js.Dynamic.literal(QualificationTypeId = QualificationTypeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteQualificationTypeRequest]
   }
   
-  @scala.inline
-  implicit class DeleteQualificationTypeRequestMutableBuilder[Self <: DeleteQualificationTypeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteQualificationTypeRequest](x: Self) {
     
-    @scala.inline
-    def setQualificationTypeId(value: EntityId): Self = StObject.set(x, "QualificationTypeId", value.asInstanceOf[js.Any])
+    inline def setQualificationTypeId(value: EntityId): Self = StObject.set(x, "QualificationTypeId", value.asInstanceOf[js.Any])
   }
 }

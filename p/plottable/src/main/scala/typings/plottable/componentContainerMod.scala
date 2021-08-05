@@ -13,7 +13,7 @@ object componentContainerMod {
     
     /* protected */ def _adoptAndAnchor(component: Component): Unit = js.native
     
-    var _detachCallback: js.Any = js.native
+    /* private */ var _detachCallback: js.Any = js.native
     
     /**
       * Invokes a callback on each Component in the ComponentContainer.

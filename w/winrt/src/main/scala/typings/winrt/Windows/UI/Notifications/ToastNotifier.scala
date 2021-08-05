@@ -10,8 +10,7 @@ trait ToastNotifier
      with IToastNotifier
 object ToastNotifier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addToSchedule: ScheduledToastNotification => Unit,
     getScheduledToastNotifications: () => IVectorView[ScheduledToastNotification],
     hide: ToastNotification => Unit,

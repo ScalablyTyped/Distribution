@@ -12,25 +12,19 @@ trait TooltipAnimation extends StObject {
 }
 object TooltipAnimation {
   
-  @scala.inline
-  def apply(): TooltipAnimation = {
+  inline def apply(): TooltipAnimation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TooltipAnimation]
   }
   
-  @scala.inline
-  implicit class TooltipAnimationMutableBuilder[Self <: TooltipAnimation] (val x: Self) extends AnyVal {
+  extension [Self <: TooltipAnimation](x: Self) {
     
-    @scala.inline
-    def setClose(value: TooltipAnimationClose): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+    inline def setClose(value: TooltipAnimationClose): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+    inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
     
-    @scala.inline
-    def setOpen(value: TooltipAnimationOpen): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: TooltipAnimationOpen): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+    inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
   }
 }

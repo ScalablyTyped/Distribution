@@ -35,49 +35,35 @@ trait RDSMetadata extends StObject {
 }
 object RDSMetadata {
   
-  @scala.inline
-  def apply(): RDSMetadata = {
+  inline def apply(): RDSMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RDSMetadata]
   }
   
-  @scala.inline
-  implicit class RDSMetadataMutableBuilder[Self <: RDSMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: RDSMetadata](x: Self) {
     
-    @scala.inline
-    def setDataPipelineId(value: EDPPipelineId): Self = StObject.set(x, "DataPipelineId", value.asInstanceOf[js.Any])
+    inline def setDataPipelineId(value: EDPPipelineId): Self = StObject.set(x, "DataPipelineId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataPipelineIdUndefined: Self = StObject.set(x, "DataPipelineId", js.undefined)
+    inline def setDataPipelineIdUndefined: Self = StObject.set(x, "DataPipelineId", js.undefined)
     
-    @scala.inline
-    def setDatabase(value: RDSDatabase): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
+    inline def setDatabase(value: RDSDatabase): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseUndefined: Self = StObject.set(x, "Database", js.undefined)
+    inline def setDatabaseUndefined: Self = StObject.set(x, "Database", js.undefined)
     
-    @scala.inline
-    def setDatabaseUserName(value: RDSDatabaseUsername): Self = StObject.set(x, "DatabaseUserName", value.asInstanceOf[js.Any])
+    inline def setDatabaseUserName(value: RDSDatabaseUsername): Self = StObject.set(x, "DatabaseUserName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseUserNameUndefined: Self = StObject.set(x, "DatabaseUserName", js.undefined)
+    inline def setDatabaseUserNameUndefined: Self = StObject.set(x, "DatabaseUserName", js.undefined)
     
-    @scala.inline
-    def setResourceRole(value: EDPResourceRole): Self = StObject.set(x, "ResourceRole", value.asInstanceOf[js.Any])
+    inline def setResourceRole(value: EDPResourceRole): Self = StObject.set(x, "ResourceRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceRoleUndefined: Self = StObject.set(x, "ResourceRole", js.undefined)
+    inline def setResourceRoleUndefined: Self = StObject.set(x, "ResourceRole", js.undefined)
     
-    @scala.inline
-    def setSelectSqlQuery(value: RDSSelectSqlQuery): Self = StObject.set(x, "SelectSqlQuery", value.asInstanceOf[js.Any])
+    inline def setSelectSqlQuery(value: RDSSelectSqlQuery): Self = StObject.set(x, "SelectSqlQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectSqlQueryUndefined: Self = StObject.set(x, "SelectSqlQuery", js.undefined)
+    inline def setSelectSqlQueryUndefined: Self = StObject.set(x, "SelectSqlQuery", js.undefined)
     
-    @scala.inline
-    def setServiceRole(value: EDPServiceRole): Self = StObject.set(x, "ServiceRole", value.asInstanceOf[js.Any])
+    inline def setServiceRole(value: EDPServiceRole): Self = StObject.set(x, "ServiceRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceRoleUndefined: Self = StObject.set(x, "ServiceRole", js.undefined)
+    inline def setServiceRoleUndefined: Self = StObject.set(x, "ServiceRole", js.undefined)
   }
 }

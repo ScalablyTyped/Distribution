@@ -27,20 +27,16 @@ object formMod {
   }
   object FormProps {
     
-    @scala.inline
-    def apply(): FormProps = {
+    inline def apply(): FormProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FormProps]
     }
     
-    @scala.inline
-    implicit class FormPropsMutableBuilder[Self <: FormProps] (val x: Self) extends AnyVal {
+    extension [Self <: FormProps](x: Self) {
       
-      @scala.inline
-      def setDisablePreventDefault(value: Boolean): Self = StObject.set(x, "disablePreventDefault", value.asInstanceOf[js.Any])
+      inline def setDisablePreventDefault(value: Boolean): Self = StObject.set(x, "disablePreventDefault", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisablePreventDefaultUndefined: Self = StObject.set(x, "disablePreventDefault", js.undefined)
+      inline def setDisablePreventDefaultUndefined: Self = StObject.set(x, "disablePreventDefault", js.undefined)
     }
   }
 }

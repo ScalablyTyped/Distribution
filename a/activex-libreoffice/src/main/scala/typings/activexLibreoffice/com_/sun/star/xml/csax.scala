@@ -39,8 +39,7 @@ object csax {
   }
   object XCompressedDocumentHandler {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => Unit,
       compressedCharacters: String => Unit,
       compressedEndDocument: () => Unit,
@@ -57,32 +56,23 @@ object csax {
       __obj.asInstanceOf[XCompressedDocumentHandler]
     }
     
-    @scala.inline
-    implicit class XCompressedDocumentHandlerMutableBuilder[Self <: XCompressedDocumentHandler] (val x: Self) extends AnyVal {
+    extension [Self <: XCompressedDocumentHandler](x: Self) {
       
-      @scala.inline
-      def setCompressedCharacters(value: String => Unit): Self = StObject.set(x, "compressedCharacters", js.Any.fromFunction1(value))
+      inline def setCompressedCharacters(value: String => Unit): Self = StObject.set(x, "compressedCharacters", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCompressedEndDocument(value: () => Unit): Self = StObject.set(x, "compressedEndDocument", js.Any.fromFunction0(value))
+      inline def setCompressedEndDocument(value: () => Unit): Self = StObject.set(x, "compressedEndDocument", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCompressedEndElement(value: String => Unit): Self = StObject.set(x, "compressedEndElement", js.Any.fromFunction1(value))
+      inline def setCompressedEndElement(value: String => Unit): Self = StObject.set(x, "compressedEndElement", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCompressedIgnorableWhitespace(value: String => Unit): Self = StObject.set(x, "compressedIgnorableWhitespace", js.Any.fromFunction1(value))
+      inline def setCompressedIgnorableWhitespace(value: String => Unit): Self = StObject.set(x, "compressedIgnorableWhitespace", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCompressedProcessingInstruction(value: (String, String) => Unit): Self = StObject.set(x, "compressedProcessingInstruction", js.Any.fromFunction2(value))
+      inline def setCompressedProcessingInstruction(value: (String, String) => Unit): Self = StObject.set(x, "compressedProcessingInstruction", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCompressedSetDocumentLocator(value: (Double, Double, String, String) => Unit): Self = StObject.set(x, "compressedSetDocumentLocator", js.Any.fromFunction4(value))
+      inline def setCompressedSetDocumentLocator(value: (Double, Double, String, String) => Unit): Self = StObject.set(x, "compressedSetDocumentLocator", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setCompressedStartDocument(value: () => Unit): Self = StObject.set(x, "compressedStartDocument", js.Any.fromFunction0(value))
+      inline def setCompressedStartDocument(value: () => Unit): Self = StObject.set(x, "compressedStartDocument", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCompressedStartElement(value: (String, SeqEquiv[XMLAttribute]) => Unit): Self = StObject.set(x, "compressedStartElement", js.Any.fromFunction2(value))
+      inline def setCompressedStartElement(value: (String, SeqEquiv[XMLAttribute]) => Unit): Self = StObject.set(x, "compressedStartElement", js.Any.fromFunction2(value))
     }
   }
   
@@ -97,20 +87,16 @@ object csax {
   }
   object XMLAttribute {
     
-    @scala.inline
-    def apply(sName: String, sValue: String): XMLAttribute = {
+    inline def apply(sName: String, sValue: String): XMLAttribute = {
       val __obj = js.Dynamic.literal(sName = sName.asInstanceOf[js.Any], sValue = sValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[XMLAttribute]
     }
     
-    @scala.inline
-    implicit class XMLAttributeMutableBuilder[Self <: XMLAttribute] (val x: Self) extends AnyVal {
+    extension [Self <: XMLAttribute](x: Self) {
       
-      @scala.inline
-      def setSName(value: String): Self = StObject.set(x, "sName", value.asInstanceOf[js.Any])
+      inline def setSName(value: String): Self = StObject.set(x, "sName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSValue(value: String): Self = StObject.set(x, "sValue", value.asInstanceOf[js.Any])
+      inline def setSValue(value: String): Self = StObject.set(x, "sValue", value.asInstanceOf[js.Any])
     }
   }
 }

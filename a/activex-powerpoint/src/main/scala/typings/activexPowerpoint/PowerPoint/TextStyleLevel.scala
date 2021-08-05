@@ -14,13 +14,12 @@ trait TextStyleLevel extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.TextStyleLevel_typekey")
+  /* private */ @JSName("PowerPoint.TextStyleLevel_typekey")
   var PowerPointDotTextStyleLevel_typekey: TextStyleLevel
 }
 object TextStyleLevel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Font: Font,
     ParagraphFormat: ParagraphFormat,
@@ -32,22 +31,16 @@ object TextStyleLevel {
     __obj.asInstanceOf[TextStyleLevel]
   }
   
-  @scala.inline
-  implicit class TextStyleLevelMutableBuilder[Self <: TextStyleLevel] (val x: Self) extends AnyVal {
+  extension [Self <: TextStyleLevel](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFont(value: Font): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
+    inline def setFont(value: Font): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParagraphFormat(value: ParagraphFormat): Self = StObject.set(x, "ParagraphFormat", value.asInstanceOf[js.Any])
+    inline def setParagraphFormat(value: ParagraphFormat): Self = StObject.set(x, "ParagraphFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotTextStyleLevel_typekey(value: TextStyleLevel): Self = StObject.set(x, "PowerPoint.TextStyleLevel_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotTextStyleLevel_typekey(value: TextStyleLevel): Self = StObject.set(x, "PowerPoint.TextStyleLevel_typekey", value.asInstanceOf[js.Any])
   }
 }

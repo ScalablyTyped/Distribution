@@ -16,8 +16,7 @@ trait Camelize extends StObject {
 }
 object Camelize {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     camelize: String => String,
     hexStringToBinString: String => String,
     hexStringToNumber: String => js.Array[Double],
@@ -27,19 +26,14 @@ object Camelize {
     __obj.asInstanceOf[Camelize]
   }
   
-  @scala.inline
-  implicit class CamelizeMutableBuilder[Self <: Camelize] (val x: Self) extends AnyVal {
+  extension [Self <: Camelize](x: Self) {
     
-    @scala.inline
-    def setCamelize(value: String => String): Self = StObject.set(x, "camelize", js.Any.fromFunction1(value))
+    inline def setCamelize(value: String => String): Self = StObject.set(x, "camelize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHexStringToBinString(value: String => String): Self = StObject.set(x, "hexStringToBinString", js.Any.fromFunction1(value))
+    inline def setHexStringToBinString(value: String => String): Self = StObject.set(x, "hexStringToBinString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHexStringToNumber(value: String => js.Array[Double]): Self = StObject.set(x, "hexStringToNumber", js.Any.fromFunction1(value))
+    inline def setHexStringToNumber(value: String => js.Array[Double]): Self = StObject.set(x, "hexStringToNumber", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStrToHexString(value: String => String): Self = StObject.set(x, "strToHexString", js.Any.fromFunction1(value))
+    inline def setStrToHexString(value: String => String): Self = StObject.set(x, "strToHexString", js.Any.fromFunction1(value))
   }
 }

@@ -68,85 +68,59 @@ trait CommandPlugin extends StObject {
 }
 object CommandPlugin {
   
-  @scala.inline
-  def apply(): CommandPlugin = {
+  inline def apply(): CommandPlugin = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommandPlugin]
   }
   
-  @scala.inline
-  implicit class CommandPluginMutableBuilder[Self <: CommandPlugin] (val x: Self) extends AnyVal {
+  extension [Self <: CommandPlugin](x: Self) {
     
-    @scala.inline
-    def setName(value: CommandPluginName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: CommandPluginName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setOutput(value: CommandPluginOutput): Self = StObject.set(x, "Output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: CommandPluginOutput): Self = StObject.set(x, "Output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputS3BucketName(value: S3BucketName): Self = StObject.set(x, "OutputS3BucketName", value.asInstanceOf[js.Any])
+    inline def setOutputS3BucketName(value: S3BucketName): Self = StObject.set(x, "OutputS3BucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputS3BucketNameUndefined: Self = StObject.set(x, "OutputS3BucketName", js.undefined)
+    inline def setOutputS3BucketNameUndefined: Self = StObject.set(x, "OutputS3BucketName", js.undefined)
     
-    @scala.inline
-    def setOutputS3KeyPrefix(value: S3KeyPrefix): Self = StObject.set(x, "OutputS3KeyPrefix", value.asInstanceOf[js.Any])
+    inline def setOutputS3KeyPrefix(value: S3KeyPrefix): Self = StObject.set(x, "OutputS3KeyPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputS3KeyPrefixUndefined: Self = StObject.set(x, "OutputS3KeyPrefix", js.undefined)
+    inline def setOutputS3KeyPrefixUndefined: Self = StObject.set(x, "OutputS3KeyPrefix", js.undefined)
     
-    @scala.inline
-    def setOutputS3Region(value: S3Region): Self = StObject.set(x, "OutputS3Region", value.asInstanceOf[js.Any])
+    inline def setOutputS3Region(value: S3Region): Self = StObject.set(x, "OutputS3Region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputS3RegionUndefined: Self = StObject.set(x, "OutputS3Region", js.undefined)
+    inline def setOutputS3RegionUndefined: Self = StObject.set(x, "OutputS3Region", js.undefined)
     
-    @scala.inline
-    def setOutputUndefined: Self = StObject.set(x, "Output", js.undefined)
+    inline def setOutputUndefined: Self = StObject.set(x, "Output", js.undefined)
     
-    @scala.inline
-    def setResponseCode(value: ResponseCode): Self = StObject.set(x, "ResponseCode", value.asInstanceOf[js.Any])
+    inline def setResponseCode(value: ResponseCode): Self = StObject.set(x, "ResponseCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseCodeUndefined: Self = StObject.set(x, "ResponseCode", js.undefined)
+    inline def setResponseCodeUndefined: Self = StObject.set(x, "ResponseCode", js.undefined)
     
-    @scala.inline
-    def setResponseFinishDateTime(value: DateTime): Self = StObject.set(x, "ResponseFinishDateTime", value.asInstanceOf[js.Any])
+    inline def setResponseFinishDateTime(value: DateTime): Self = StObject.set(x, "ResponseFinishDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseFinishDateTimeUndefined: Self = StObject.set(x, "ResponseFinishDateTime", js.undefined)
+    inline def setResponseFinishDateTimeUndefined: Self = StObject.set(x, "ResponseFinishDateTime", js.undefined)
     
-    @scala.inline
-    def setResponseStartDateTime(value: DateTime): Self = StObject.set(x, "ResponseStartDateTime", value.asInstanceOf[js.Any])
+    inline def setResponseStartDateTime(value: DateTime): Self = StObject.set(x, "ResponseStartDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseStartDateTimeUndefined: Self = StObject.set(x, "ResponseStartDateTime", js.undefined)
+    inline def setResponseStartDateTimeUndefined: Self = StObject.set(x, "ResponseStartDateTime", js.undefined)
     
-    @scala.inline
-    def setStandardErrorUrl(value: Url): Self = StObject.set(x, "StandardErrorUrl", value.asInstanceOf[js.Any])
+    inline def setStandardErrorUrl(value: Url): Self = StObject.set(x, "StandardErrorUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardErrorUrlUndefined: Self = StObject.set(x, "StandardErrorUrl", js.undefined)
+    inline def setStandardErrorUrlUndefined: Self = StObject.set(x, "StandardErrorUrl", js.undefined)
     
-    @scala.inline
-    def setStandardOutputUrl(value: Url): Self = StObject.set(x, "StandardOutputUrl", value.asInstanceOf[js.Any])
+    inline def setStandardOutputUrl(value: Url): Self = StObject.set(x, "StandardOutputUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardOutputUrlUndefined: Self = StObject.set(x, "StandardOutputUrl", js.undefined)
+    inline def setStandardOutputUrlUndefined: Self = StObject.set(x, "StandardOutputUrl", js.undefined)
     
-    @scala.inline
-    def setStatus(value: CommandPluginStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: CommandPluginStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusDetails(value: StatusDetails): Self = StObject.set(x, "StatusDetails", value.asInstanceOf[js.Any])
+    inline def setStatusDetails(value: StatusDetails): Self = StObject.set(x, "StatusDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusDetailsUndefined: Self = StObject.set(x, "StatusDetails", js.undefined)
+    inline def setStatusDetailsUndefined: Self = StObject.set(x, "StatusDetails", js.undefined)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

@@ -26,34 +26,25 @@ trait StartBluetoothDevicesDiscoveryOptions
 }
 object StartBluetoothDevicesDiscoveryOptions {
   
-  @scala.inline
-  def apply(): StartBluetoothDevicesDiscoveryOptions = {
+  inline def apply(): StartBluetoothDevicesDiscoveryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartBluetoothDevicesDiscoveryOptions]
   }
   
-  @scala.inline
-  implicit class StartBluetoothDevicesDiscoveryOptionsMutableBuilder[Self <: StartBluetoothDevicesDiscoveryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StartBluetoothDevicesDiscoveryOptions](x: Self) {
     
-    @scala.inline
-    def setAllowDuplicatesKey(value: Boolean): Self = StObject.set(x, "allowDuplicatesKey", value.asInstanceOf[js.Any])
+    inline def setAllowDuplicatesKey(value: Boolean): Self = StObject.set(x, "allowDuplicatesKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowDuplicatesKeyUndefined: Self = StObject.set(x, "allowDuplicatesKey", js.undefined)
+    inline def setAllowDuplicatesKeyUndefined: Self = StObject.set(x, "allowDuplicatesKey", js.undefined)
     
-    @scala.inline
-    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
-    @scala.inline
-    def setServices(value: js.Array[String]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
+    inline def setServices(value: js.Array[String]): Self = StObject.set(x, "services", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
+    inline def setServicesUndefined: Self = StObject.set(x, "services", js.undefined)
     
-    @scala.inline
-    def setServicesVarargs(value: String*): Self = StObject.set(x, "services", js.Array(value :_*))
+    inline def setServicesVarargs(value: String*): Self = StObject.set(x, "services", js.Array(value :_*))
   }
 }

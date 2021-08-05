@@ -29,8 +29,7 @@ trait Layer
 }
 object Layer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Timestamp: String,
     URL: String,
     acquire: () => Unit,
@@ -45,10 +44,8 @@ object Layer {
     __obj.asInstanceOf[Layer]
   }
   
-  @scala.inline
-  implicit class LayerMutableBuilder[Self <: Layer] (val x: Self) extends AnyVal {
+  extension [Self <: Layer](x: Self) {
     
-    @scala.inline
-    def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+    inline def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
   }
 }

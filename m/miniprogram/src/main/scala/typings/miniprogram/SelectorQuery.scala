@@ -59,8 +59,7 @@ trait SelectorQuery extends StObject {
 }
 object SelectorQuery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     boundingClientRect: () => SelectorQuery,
     exec: SelectorQueryExecCallback => Unit,
     scrollOffset: () => SelectorQuery,
@@ -72,25 +71,18 @@ object SelectorQuery {
     __obj.asInstanceOf[SelectorQuery]
   }
   
-  @scala.inline
-  implicit class SelectorQueryMutableBuilder[Self <: SelectorQuery] (val x: Self) extends AnyVal {
+  extension [Self <: SelectorQuery](x: Self) {
     
-    @scala.inline
-    def setBoundingClientRect(value: () => SelectorQuery): Self = StObject.set(x, "boundingClientRect", js.Any.fromFunction0(value))
+    inline def setBoundingClientRect(value: () => SelectorQuery): Self = StObject.set(x, "boundingClientRect", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExec(value: SelectorQueryExecCallback => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
+    inline def setExec(value: SelectorQueryExecCallback => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setScrollOffset(value: () => SelectorQuery): Self = StObject.set(x, "scrollOffset", js.Any.fromFunction0(value))
+    inline def setScrollOffset(value: () => SelectorQuery): Self = StObject.set(x, "scrollOffset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSelect(value: String => SelectorQuery): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+    inline def setSelect(value: String => SelectorQuery): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelectAll(value: String => SelectorQuery): Self = StObject.set(x, "selectAll", js.Any.fromFunction1(value))
+    inline def setSelectAll(value: String => SelectorQuery): Self = StObject.set(x, "selectAll", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelectViewport(value: () => SelectorQuery): Self = StObject.set(x, "selectViewport", js.Any.fromFunction0(value))
+    inline def setSelectViewport(value: () => SelectorQuery): Self = StObject.set(x, "selectViewport", js.Any.fromFunction0(value))
   }
 }

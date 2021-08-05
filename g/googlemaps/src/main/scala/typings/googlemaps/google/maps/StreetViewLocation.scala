@@ -16,37 +16,27 @@ trait StreetViewLocation extends StObject {
 }
 object StreetViewLocation {
   
-  @scala.inline
-  def apply(): StreetViewLocation = {
+  inline def apply(): StreetViewLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StreetViewLocation]
   }
   
-  @scala.inline
-  implicit class StreetViewLocationMutableBuilder[Self <: StreetViewLocation] (val x: Self) extends AnyVal {
+  extension [Self <: StreetViewLocation](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setLatLng(value: LatLng): Self = StObject.set(x, "latLng", value.asInstanceOf[js.Any])
+    inline def setLatLng(value: LatLng): Self = StObject.set(x, "latLng", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatLngUndefined: Self = StObject.set(x, "latLng", js.undefined)
+    inline def setLatLngUndefined: Self = StObject.set(x, "latLng", js.undefined)
     
-    @scala.inline
-    def setPano(value: String): Self = StObject.set(x, "pano", value.asInstanceOf[js.Any])
+    inline def setPano(value: String): Self = StObject.set(x, "pano", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPanoUndefined: Self = StObject.set(x, "pano", js.undefined)
+    inline def setPanoUndefined: Self = StObject.set(x, "pano", js.undefined)
     
-    @scala.inline
-    def setShortDescription(value: String): Self = StObject.set(x, "shortDescription", value.asInstanceOf[js.Any])
+    inline def setShortDescription(value: String): Self = StObject.set(x, "shortDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortDescriptionUndefined: Self = StObject.set(x, "shortDescription", js.undefined)
+    inline def setShortDescriptionUndefined: Self = StObject.set(x, "shortDescription", js.undefined)
   }
 }

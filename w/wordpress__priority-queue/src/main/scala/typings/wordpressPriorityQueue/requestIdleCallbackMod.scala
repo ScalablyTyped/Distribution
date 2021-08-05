@@ -10,16 +10,14 @@ object requestIdleCallbackMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     callback: js.Function1[
       /* timeOrDeadline */ Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IdleDeadline */ js.Any), 
       Unit
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def createRequestIdleCallback(): js.Function1[
+  inline def createRequestIdleCallback(): js.Function1[
     /* callback */ js.Function1[
       /* timeOrDeadline */ Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IdleDeadline */ js.Any), 
       Unit

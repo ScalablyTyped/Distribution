@@ -16,8 +16,7 @@ trait IMetadataCardCommentHistoryItem extends StObject {
 }
 object IMetadataCardCommentHistoryItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetCommentAuthor: () => String,
     GetCommentText: () => String,
     GetCommentTimestamp: () => js.Any,
@@ -27,19 +26,14 @@ object IMetadataCardCommentHistoryItem {
     __obj.asInstanceOf[IMetadataCardCommentHistoryItem]
   }
   
-  @scala.inline
-  implicit class IMetadataCardCommentHistoryItemMutableBuilder[Self <: IMetadataCardCommentHistoryItem] (val x: Self) extends AnyVal {
+  extension [Self <: IMetadataCardCommentHistoryItem](x: Self) {
     
-    @scala.inline
-    def setGetCommentAuthor(value: () => String): Self = StObject.set(x, "GetCommentAuthor", js.Any.fromFunction0(value))
+    inline def setGetCommentAuthor(value: () => String): Self = StObject.set(x, "GetCommentAuthor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCommentText(value: () => String): Self = StObject.set(x, "GetCommentText", js.Any.fromFunction0(value))
+    inline def setGetCommentText(value: () => String): Self = StObject.set(x, "GetCommentText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCommentTimestamp(value: () => js.Any): Self = StObject.set(x, "GetCommentTimestamp", js.Any.fromFunction0(value))
+    inline def setGetCommentTimestamp(value: () => js.Any): Self = StObject.set(x, "GetCommentTimestamp", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCommentVersion(value: () => Double): Self = StObject.set(x, "GetCommentVersion", js.Any.fromFunction0(value))
+    inline def setGetCommentVersion(value: () => Double): Self = StObject.set(x, "GetCommentVersion", js.Any.fromFunction0(value))
   }
 }

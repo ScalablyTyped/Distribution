@@ -38,40 +38,29 @@ trait DescribeUserProfileResult extends StObject {
 }
 object DescribeUserProfileResult {
   
-  @scala.inline
-  def apply(createdTimestamp: CreatedTimestamp, lastModifiedTimestamp: LastModifiedTimestamp, userArn: UserArn): DescribeUserProfileResult = {
+  inline def apply(createdTimestamp: CreatedTimestamp, lastModifiedTimestamp: LastModifiedTimestamp, userArn: UserArn): DescribeUserProfileResult = {
     val __obj = js.Dynamic.literal(createdTimestamp = createdTimestamp.asInstanceOf[js.Any], lastModifiedTimestamp = lastModifiedTimestamp.asInstanceOf[js.Any], userArn = userArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeUserProfileResult]
   }
   
-  @scala.inline
-  implicit class DescribeUserProfileResultMutableBuilder[Self <: DescribeUserProfileResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeUserProfileResult](x: Self) {
     
-    @scala.inline
-    def setCreatedTimestamp(value: CreatedTimestamp): Self = StObject.set(x, "createdTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimestamp(value: CreatedTimestamp): Self = StObject.set(x, "createdTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayName(value: UserProfileDisplayName): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: UserProfileDisplayName): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setEmailAddress(value: Email): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
+    inline def setEmailAddress(value: Email): Self = StObject.set(x, "emailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
+    inline def setEmailAddressUndefined: Self = StObject.set(x, "emailAddress", js.undefined)
     
-    @scala.inline
-    def setLastModifiedTimestamp(value: LastModifiedTimestamp): Self = StObject.set(x, "lastModifiedTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTimestamp(value: LastModifiedTimestamp): Self = StObject.set(x, "lastModifiedTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSshPublicKey(value: SshPublicKey): Self = StObject.set(x, "sshPublicKey", value.asInstanceOf[js.Any])
+    inline def setSshPublicKey(value: SshPublicKey): Self = StObject.set(x, "sshPublicKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSshPublicKeyUndefined: Self = StObject.set(x, "sshPublicKey", js.undefined)
+    inline def setSshPublicKeyUndefined: Self = StObject.set(x, "sshPublicKey", js.undefined)
     
-    @scala.inline
-    def setUserArn(value: UserArn): Self = StObject.set(x, "userArn", value.asInstanceOf[js.Any])
+    inline def setUserArn(value: UserArn): Self = StObject.set(x, "userArn", value.asInstanceOf[js.Any])
   }
 }

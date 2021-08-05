@@ -71,21 +71,16 @@ object webhookMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Webhook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Webhook]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Webhook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Webhook]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: WebhookState): Webhook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Webhook]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: WebhookState, opts: CustomResourceOptions): Webhook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Webhook]
+    inline def get(name: String, id: Input[ID]): Webhook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Webhook]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Webhook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Webhook]
+    inline def get(name: String, id: Input[ID], state: WebhookState): Webhook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Webhook]
+    inline def get(name: String, id: Input[ID], state: WebhookState, opts: CustomResourceOptions): Webhook = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Webhook]
     
     /**
       * Returns true if the given object is an instance of Webhook.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codebuild/webhook.Webhook */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codebuild/webhook.Webhook */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codebuild/webhook.Webhook */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codebuild/webhook.Webhook */ Boolean]
   }
   
   trait WebhookArgs extends StObject {
@@ -107,32 +102,24 @@ object webhookMod {
   }
   object WebhookArgs {
     
-    @scala.inline
-    def apply(projectName: Input[String]): WebhookArgs = {
+    inline def apply(projectName: Input[String]): WebhookArgs = {
       val __obj = js.Dynamic.literal(projectName = projectName.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebhookArgs]
     }
     
-    @scala.inline
-    implicit class WebhookArgsMutableBuilder[Self <: WebhookArgs] (val x: Self) extends AnyVal {
+    extension [Self <: WebhookArgs](x: Self) {
       
-      @scala.inline
-      def setBranchFilter(value: Input[String]): Self = StObject.set(x, "branchFilter", value.asInstanceOf[js.Any])
+      inline def setBranchFilter(value: Input[String]): Self = StObject.set(x, "branchFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBranchFilterUndefined: Self = StObject.set(x, "branchFilter", js.undefined)
+      inline def setBranchFilterUndefined: Self = StObject.set(x, "branchFilter", js.undefined)
       
-      @scala.inline
-      def setFilterGroups(value: Input[js.Array[Input[typings.pulumiAws.inputMod.codebuild.WebhookFilterGroup]]]): Self = StObject.set(x, "filterGroups", value.asInstanceOf[js.Any])
+      inline def setFilterGroups(value: Input[js.Array[Input[typings.pulumiAws.inputMod.codebuild.WebhookFilterGroup]]]): Self = StObject.set(x, "filterGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterGroupsUndefined: Self = StObject.set(x, "filterGroups", js.undefined)
+      inline def setFilterGroupsUndefined: Self = StObject.set(x, "filterGroups", js.undefined)
       
-      @scala.inline
-      def setFilterGroupsVarargs(value: Input[typings.pulumiAws.inputMod.codebuild.WebhookFilterGroup]*): Self = StObject.set(x, "filterGroups", js.Array(value :_*))
+      inline def setFilterGroupsVarargs(value: Input[typings.pulumiAws.inputMod.codebuild.WebhookFilterGroup]*): Self = StObject.set(x, "filterGroups", js.Array(value :_*))
       
-      @scala.inline
-      def setProjectName(value: Input[String]): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
+      inline def setProjectName(value: Input[String]): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -170,53 +157,38 @@ object webhookMod {
   }
   object WebhookState {
     
-    @scala.inline
-    def apply(): WebhookState = {
+    inline def apply(): WebhookState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WebhookState]
     }
     
-    @scala.inline
-    implicit class WebhookStateMutableBuilder[Self <: WebhookState] (val x: Self) extends AnyVal {
+    extension [Self <: WebhookState](x: Self) {
       
-      @scala.inline
-      def setBranchFilter(value: Input[String]): Self = StObject.set(x, "branchFilter", value.asInstanceOf[js.Any])
+      inline def setBranchFilter(value: Input[String]): Self = StObject.set(x, "branchFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBranchFilterUndefined: Self = StObject.set(x, "branchFilter", js.undefined)
+      inline def setBranchFilterUndefined: Self = StObject.set(x, "branchFilter", js.undefined)
       
-      @scala.inline
-      def setFilterGroups(value: Input[js.Array[Input[typings.pulumiAws.inputMod.codebuild.WebhookFilterGroup]]]): Self = StObject.set(x, "filterGroups", value.asInstanceOf[js.Any])
+      inline def setFilterGroups(value: Input[js.Array[Input[typings.pulumiAws.inputMod.codebuild.WebhookFilterGroup]]]): Self = StObject.set(x, "filterGroups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterGroupsUndefined: Self = StObject.set(x, "filterGroups", js.undefined)
+      inline def setFilterGroupsUndefined: Self = StObject.set(x, "filterGroups", js.undefined)
       
-      @scala.inline
-      def setFilterGroupsVarargs(value: Input[typings.pulumiAws.inputMod.codebuild.WebhookFilterGroup]*): Self = StObject.set(x, "filterGroups", js.Array(value :_*))
+      inline def setFilterGroupsVarargs(value: Input[typings.pulumiAws.inputMod.codebuild.WebhookFilterGroup]*): Self = StObject.set(x, "filterGroups", js.Array(value :_*))
       
-      @scala.inline
-      def setPayloadUrl(value: Input[String]): Self = StObject.set(x, "payloadUrl", value.asInstanceOf[js.Any])
+      inline def setPayloadUrl(value: Input[String]): Self = StObject.set(x, "payloadUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadUrlUndefined: Self = StObject.set(x, "payloadUrl", js.undefined)
+      inline def setPayloadUrlUndefined: Self = StObject.set(x, "payloadUrl", js.undefined)
       
-      @scala.inline
-      def setProjectName(value: Input[String]): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
+      inline def setProjectName(value: Input[String]): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectNameUndefined: Self = StObject.set(x, "projectName", js.undefined)
+      inline def setProjectNameUndefined: Self = StObject.set(x, "projectName", js.undefined)
       
-      @scala.inline
-      def setSecret(value: Input[String]): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+      inline def setSecret(value: Input[String]): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
+      inline def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
       
-      @scala.inline
-      def setUrl(value: Input[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: Input[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
 }

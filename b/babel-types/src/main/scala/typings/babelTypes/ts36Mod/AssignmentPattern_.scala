@@ -20,23 +20,18 @@ trait AssignmentPattern_
 }
 object AssignmentPattern_ {
   
-  @scala.inline
-  def apply(end: Double, left: Identifier_, loc: SourceLocation, right: Expression, start: Double): AssignmentPattern_ = {
+  inline def apply(end: Double, left: Identifier_, loc: SourceLocation, right: Expression, start: Double): AssignmentPattern_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("AssignmentPattern")
     __obj.asInstanceOf[AssignmentPattern_]
   }
   
-  @scala.inline
-  implicit class AssignmentPattern_MutableBuilder[Self <: AssignmentPattern_] (val x: Self) extends AnyVal {
+  extension [Self <: AssignmentPattern_](x: Self) {
     
-    @scala.inline
-    def setLeft(value: Identifier_): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Identifier_): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: Expression): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Expression): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: AssignmentPattern): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: AssignmentPattern): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

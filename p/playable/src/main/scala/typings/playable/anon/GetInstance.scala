@@ -11,16 +11,13 @@ trait GetInstance extends StObject {
 }
 object GetInstance {
   
-  @scala.inline
-  def apply(getInstance: () => CastContext): GetInstance = {
+  inline def apply(getInstance: () => CastContext): GetInstance = {
     val __obj = js.Dynamic.literal(getInstance = js.Any.fromFunction0(getInstance))
     __obj.asInstanceOf[GetInstance]
   }
   
-  @scala.inline
-  implicit class GetInstanceMutableBuilder[Self <: GetInstance] (val x: Self) extends AnyVal {
+  extension [Self <: GetInstance](x: Self) {
     
-    @scala.inline
-    def setGetInstance(value: () => CastContext): Self = StObject.set(x, "getInstance", js.Any.fromFunction0(value))
+    inline def setGetInstance(value: () => CastContext): Self = StObject.set(x, "getInstance", js.Any.fromFunction0(value))
   }
 }

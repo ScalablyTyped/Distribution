@@ -25,21 +25,14 @@ object mod {
   @js.native
   def GrammarError: js.Any = js.native
   type GrammarError = PegjsError
-  @scala.inline
-  def GrammarError_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GrammarError")(x.asInstanceOf[js.Any])
+  inline def GrammarError_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GrammarError")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def generate(grammar: String): Parser_ = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(grammar.asInstanceOf[js.Any]).asInstanceOf[Parser_]
-  @scala.inline
-  def generate(grammar: String, options: OutputFormatAmdCommonjs): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(grammar.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def generate(grammar: String, options: OutputFormatBare): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(grammar.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def generate(grammar: String, options: OutputFormatGlobals): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(grammar.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def generate(grammar: String, options: OutputFormatUmd): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(grammar.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def generate(grammar: String, options: ParserBuildOptions): Parser_ = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(grammar.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Parser_]
+  inline def generate(grammar: String): Parser_ = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(grammar.asInstanceOf[js.Any]).asInstanceOf[Parser_]
+  inline def generate(grammar: String, options: OutputFormatAmdCommonjs): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(grammar.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def generate(grammar: String, options: OutputFormatBare): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(grammar.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def generate(grammar: String, options: OutputFormatGlobals): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(grammar.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def generate(grammar: String, options: OutputFormatUmd): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(grammar.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def generate(grammar: String, options: ParserBuildOptions): Parser_ = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(grammar.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Parser_]
   
   object parser {
     
@@ -51,8 +44,7 @@ object mod {
     @js.native
     def SyntaxError: js.Any = js.native
     type SyntaxError = PegjsError
-    @scala.inline
-    def SyntaxError_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SyntaxError")(x.asInstanceOf[js.Any])
+    inline def SyntaxError_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SyntaxError")(x.asInstanceOf[js.Any])
   }
   
   trait BuildOptionsBase extends StObject {
@@ -74,50 +66,36 @@ object mod {
   }
   object BuildOptionsBase {
     
-    @scala.inline
-    def apply(): BuildOptionsBase = {
+    inline def apply(): BuildOptionsBase = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BuildOptionsBase]
     }
     
-    @scala.inline
-    implicit class BuildOptionsBaseMutableBuilder[Self <: BuildOptionsBase] (val x: Self) extends AnyVal {
+    extension [Self <: BuildOptionsBase](x: Self) {
       
-      @scala.inline
-      def setAllowedStartRules(value: js.Array[String]): Self = StObject.set(x, "allowedStartRules", value.asInstanceOf[js.Any])
+      inline def setAllowedStartRules(value: js.Array[String]): Self = StObject.set(x, "allowedStartRules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedStartRulesUndefined: Self = StObject.set(x, "allowedStartRules", js.undefined)
+      inline def setAllowedStartRulesUndefined: Self = StObject.set(x, "allowedStartRules", js.undefined)
       
-      @scala.inline
-      def setAllowedStartRulesVarargs(value: String*): Self = StObject.set(x, "allowedStartRules", js.Array(value :_*))
+      inline def setAllowedStartRulesVarargs(value: String*): Self = StObject.set(x, "allowedStartRules", js.Array(value :_*))
       
-      @scala.inline
-      def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setOptimize(value: speed | size): Self = StObject.set(x, "optimize", value.asInstanceOf[js.Any])
+      inline def setOptimize(value: speed | size): Self = StObject.set(x, "optimize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptimizeUndefined: Self = StObject.set(x, "optimize", js.undefined)
+      inline def setOptimizeUndefined: Self = StObject.set(x, "optimize", js.undefined)
       
-      @scala.inline
-      def setPlugins(value: js.Array[js.Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Array[js.Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      @scala.inline
-      def setPluginsVarargs(value: js.Any*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: js.Any*): Self = StObject.set(x, "plugins", js.Array(value :_*))
       
-      @scala.inline
-      def setTrace(value: Boolean): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
+      inline def setTrace(value: Boolean): Self = StObject.set(x, "trace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
+      inline def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
     }
   }
   
@@ -131,27 +109,21 @@ object mod {
   }
   object ExpectedItem {
     
-    @scala.inline
-    def apply(description: String, `type`: String): ExpectedItem = {
+    inline def apply(description: String, `type`: String): ExpectedItem = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExpectedItem]
     }
     
-    @scala.inline
-    implicit class ExpectedItemMutableBuilder[Self <: ExpectedItem] (val x: Self) extends AnyVal {
+    extension [Self <: ExpectedItem](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -174,26 +146,20 @@ object mod {
   }
   object OutputFormatAmdCommonjs {
     
-    @scala.inline
-    def apply(format: amd | commonjs): OutputFormatAmdCommonjs = {
+    inline def apply(format: amd | commonjs): OutputFormatAmdCommonjs = {
       val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], output = "source")
       __obj.asInstanceOf[OutputFormatAmdCommonjs]
     }
     
-    @scala.inline
-    implicit class OutputFormatAmdCommonjsMutableBuilder[Self <: OutputFormatAmdCommonjs] (val x: Self) extends AnyVal {
+    extension [Self <: OutputFormatAmdCommonjs](x: Self) {
       
-      @scala.inline
-      def setDependencies(value: js.Any): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+      inline def setDependencies(value: js.Any): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
+      inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
       
-      @scala.inline
-      def setFormat(value: amd | commonjs): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: amd | commonjs): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutput(value: source): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: source): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     }
   }
   
@@ -209,23 +175,18 @@ object mod {
   }
   object OutputFormatBare {
     
-    @scala.inline
-    def apply(): OutputFormatBare = {
+    inline def apply(): OutputFormatBare = {
       val __obj = js.Dynamic.literal(output = "source")
       __obj.asInstanceOf[OutputFormatBare]
     }
     
-    @scala.inline
-    implicit class OutputFormatBareMutableBuilder[Self <: OutputFormatBare] (val x: Self) extends AnyVal {
+    extension [Self <: OutputFormatBare](x: Self) {
       
-      @scala.inline
-      def setFormat(value: bare): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: bare): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setOutput(value: source): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: source): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     }
   }
   
@@ -244,26 +205,20 @@ object mod {
   }
   object OutputFormatGlobals {
     
-    @scala.inline
-    def apply(): OutputFormatGlobals = {
+    inline def apply(): OutputFormatGlobals = {
       val __obj = js.Dynamic.literal(format = "globals", output = "source")
       __obj.asInstanceOf[OutputFormatGlobals]
     }
     
-    @scala.inline
-    implicit class OutputFormatGlobalsMutableBuilder[Self <: OutputFormatGlobals] (val x: Self) extends AnyVal {
+    extension [Self <: OutputFormatGlobals](x: Self) {
       
-      @scala.inline
-      def setExportVar(value: js.Any): Self = StObject.set(x, "exportVar", value.asInstanceOf[js.Any])
+      inline def setExportVar(value: js.Any): Self = StObject.set(x, "exportVar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportVarUndefined: Self = StObject.set(x, "exportVar", js.undefined)
+      inline def setExportVarUndefined: Self = StObject.set(x, "exportVar", js.undefined)
       
-      @scala.inline
-      def setFormat(value: globals): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: globals): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutput(value: source): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: source): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     }
   }
   
@@ -285,32 +240,24 @@ object mod {
   }
   object OutputFormatUmd {
     
-    @scala.inline
-    def apply(): OutputFormatUmd = {
+    inline def apply(): OutputFormatUmd = {
       val __obj = js.Dynamic.literal(format = "umd", output = "source")
       __obj.asInstanceOf[OutputFormatUmd]
     }
     
-    @scala.inline
-    implicit class OutputFormatUmdMutableBuilder[Self <: OutputFormatUmd] (val x: Self) extends AnyVal {
+    extension [Self <: OutputFormatUmd](x: Self) {
       
-      @scala.inline
-      def setDependencies(value: js.Any): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+      inline def setDependencies(value: js.Any): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
+      inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
       
-      @scala.inline
-      def setExportVar(value: js.Any): Self = StObject.set(x, "exportVar", value.asInstanceOf[js.Any])
+      inline def setExportVar(value: js.Any): Self = StObject.set(x, "exportVar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportVarUndefined: Self = StObject.set(x, "exportVar", js.undefined)
+      inline def setExportVarUndefined: Self = StObject.set(x, "exportVar", js.undefined)
       
-      @scala.inline
-      def setFormat(value: umd): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: umd): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutput(value: source): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: source): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     }
   }
   
@@ -326,23 +273,18 @@ object mod {
     }
     object Location {
       
-      @scala.inline
-      def apply(column: Double, line: Double, offset: Double): typings.pegjs.mod.PEG.Location = {
+      inline def apply(column: Double, line: Double, offset: Double): typings.pegjs.mod.PEG.Location = {
         val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.pegjs.mod.PEG.Location]
       }
       
-      @scala.inline
-      implicit class LocationMutableBuilder[Self <: typings.pegjs.mod.PEG.Location] (val x: Self) extends AnyVal {
+      extension [Self <: typings.pegjs.mod.PEG.Location](x: Self) {
         
-        @scala.inline
-        def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+        inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+        inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+        inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       }
     }
     
@@ -354,20 +296,16 @@ object mod {
     }
     object LocationRange {
       
-      @scala.inline
-      def apply(end: typings.pegjs.mod.PEG.Location, start: typings.pegjs.mod.PEG.Location): typings.pegjs.mod.PEG.LocationRange = {
+      inline def apply(end: typings.pegjs.mod.PEG.Location, start: typings.pegjs.mod.PEG.Location): typings.pegjs.mod.PEG.LocationRange = {
         val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.pegjs.mod.PEG.LocationRange]
       }
       
-      @scala.inline
-      implicit class LocationRangeMutableBuilder[Self <: typings.pegjs.mod.PEG.LocationRange] (val x: Self) extends AnyVal {
+      extension [Self <: typings.pegjs.mod.PEG.LocationRange](x: Self) {
         
-        @scala.inline
-        def setEnd(value: typings.pegjs.mod.PEG.Location): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+        inline def setEnd(value: typings.pegjs.mod.PEG.Location): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStart(value: typings.pegjs.mod.PEG.Location): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+        inline def setStart(value: typings.pegjs.mod.PEG.Location): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       }
     }
     
@@ -391,8 +329,7 @@ object mod {
     }
     object SyntaxError {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         column: Double,
         expected: js.Array[js.Any],
         found: js.Any,
@@ -406,35 +343,25 @@ object mod {
         __obj.asInstanceOf[SyntaxError]
       }
       
-      @scala.inline
-      implicit class SyntaxErrorMutableBuilder[Self <: SyntaxError] (val x: Self) extends AnyVal {
+      extension [Self <: SyntaxError](x: Self) {
         
-        @scala.inline
-        def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+        inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExpected(value: js.Array[js.Any]): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
+        inline def setExpected(value: js.Array[js.Any]): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExpectedVarargs(value: js.Any*): Self = StObject.set(x, "expected", js.Array(value :_*))
+        inline def setExpectedVarargs(value: js.Any*): Self = StObject.set(x, "expected", js.Array(value :_*))
         
-        @scala.inline
-        def setFound(value: js.Any): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
+        inline def setFound(value: js.Any): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+        inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLocation(value: typings.pegjs.mod.PEG.LocationRange): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+        inline def setLocation(value: typings.pegjs.mod.PEG.LocationRange): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+        inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+        inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -448,20 +375,16 @@ object mod {
   }
   object ParserBuildOptions {
     
-    @scala.inline
-    def apply(): ParserBuildOptions = {
+    inline def apply(): ParserBuildOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParserBuildOptions]
     }
     
-    @scala.inline
-    implicit class ParserBuildOptionsMutableBuilder[Self <: ParserBuildOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParserBuildOptions](x: Self) {
       
-      @scala.inline
-      def setOutput(value: parser): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: parser): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+      inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
     }
   }
   
@@ -475,26 +398,20 @@ object mod {
   }
   object ParserOptions {
     
-    @scala.inline
-    def apply(): ParserOptions = {
+    inline def apply(): ParserOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ParserOptions]
     }
     
-    @scala.inline
-    implicit class ParserOptionsMutableBuilder[Self <: ParserOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ParserOptions](x: Self) {
       
-      @scala.inline
-      def setStartRule(value: String): Self = StObject.set(x, "startRule", value.asInstanceOf[js.Any])
+      inline def setStartRule(value: String): Self = StObject.set(x, "startRule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartRuleUndefined: Self = StObject.set(x, "startRule", js.undefined)
+      inline def setStartRuleUndefined: Self = StObject.set(x, "startRule", js.undefined)
       
-      @scala.inline
-      def setTracer(value: js.Any): Self = StObject.set(x, "tracer", value.asInstanceOf[js.Any])
+      inline def setTracer(value: js.Any): Self = StObject.set(x, "tracer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTracerUndefined: Self = StObject.set(x, "tracer", js.undefined)
+      inline def setTracerUndefined: Self = StObject.set(x, "tracer", js.undefined)
     }
   }
   
@@ -522,38 +439,28 @@ object mod {
   }
   object PegjsError {
     
-    @scala.inline
-    def apply(location: LocationRange, message: String, name: String): PegjsError = {
+    inline def apply(location: LocationRange, message: String, name: String): PegjsError = {
       val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[PegjsError]
     }
     
-    @scala.inline
-    implicit class PegjsErrorMutableBuilder[Self <: PegjsError] (val x: Self) extends AnyVal {
+    extension [Self <: PegjsError](x: Self) {
       
-      @scala.inline
-      def setExpected(value: js.Array[ExpectedItem]): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
+      inline def setExpected(value: js.Array[ExpectedItem]): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpectedUndefined: Self = StObject.set(x, "expected", js.undefined)
+      inline def setExpectedUndefined: Self = StObject.set(x, "expected", js.undefined)
       
-      @scala.inline
-      def setExpectedVarargs(value: ExpectedItem*): Self = StObject.set(x, "expected", js.Array(value :_*))
+      inline def setExpectedVarargs(value: ExpectedItem*): Self = StObject.set(x, "expected", js.Array(value :_*))
       
-      @scala.inline
-      def setFound(value: js.Any): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
+      inline def setFound(value: js.Any): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFoundUndefined: Self = StObject.set(x, "found", js.undefined)
+      inline def setFoundUndefined: Self = StObject.set(x, "found", js.undefined)
       
-      @scala.inline
-      def setLocation(value: LocationRange): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: LocationRange): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStack(value: js.Any): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: js.Any): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
+      inline def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     }
   }
 }

@@ -26,31 +26,23 @@ trait SchemaDynamicLinkWarning extends StObject {
 }
 object SchemaDynamicLinkWarning {
   
-  @scala.inline
-  def apply(): SchemaDynamicLinkWarning = {
+  inline def apply(): SchemaDynamicLinkWarning = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDynamicLinkWarning]
   }
   
-  @scala.inline
-  implicit class SchemaDynamicLinkWarningMutableBuilder[Self <: SchemaDynamicLinkWarning] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDynamicLinkWarning](x: Self) {
     
-    @scala.inline
-    def setWarningCode(value: String): Self = StObject.set(x, "warningCode", value.asInstanceOf[js.Any])
+    inline def setWarningCode(value: String): Self = StObject.set(x, "warningCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningCodeUndefined: Self = StObject.set(x, "warningCode", js.undefined)
+    inline def setWarningCodeUndefined: Self = StObject.set(x, "warningCode", js.undefined)
     
-    @scala.inline
-    def setWarningDocumentLink(value: String): Self = StObject.set(x, "warningDocumentLink", value.asInstanceOf[js.Any])
+    inline def setWarningDocumentLink(value: String): Self = StObject.set(x, "warningDocumentLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningDocumentLinkUndefined: Self = StObject.set(x, "warningDocumentLink", js.undefined)
+    inline def setWarningDocumentLinkUndefined: Self = StObject.set(x, "warningDocumentLink", js.undefined)
     
-    @scala.inline
-    def setWarningMessage(value: String): Self = StObject.set(x, "warningMessage", value.asInstanceOf[js.Any])
+    inline def setWarningMessage(value: String): Self = StObject.set(x, "warningMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningMessageUndefined: Self = StObject.set(x, "warningMessage", js.undefined)
+    inline def setWarningMessageUndefined: Self = StObject.set(x, "warningMessage", js.undefined)
   }
 }

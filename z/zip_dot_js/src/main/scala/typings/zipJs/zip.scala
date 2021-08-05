@@ -93,44 +93,32 @@ object zip {
   }
   object WriteOptions {
     
-    @scala.inline
-    def apply(): WriteOptions = {
+    inline def apply(): WriteOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WriteOptions]
     }
     
-    @scala.inline
-    implicit class WriteOptionsMutableBuilder[Self <: WriteOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WriteOptions](x: Self) {
       
-      @scala.inline
-      def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setDirectory(value: Boolean): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
+      inline def setDirectory(value: Boolean): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectoryUndefined: Self = StObject.set(x, "directory", js.undefined)
+      inline def setDirectoryUndefined: Self = StObject.set(x, "directory", js.undefined)
       
-      @scala.inline
-      def setLastModDate(value: Date): Self = StObject.set(x, "lastModDate", value.asInstanceOf[js.Any])
+      inline def setLastModDate(value: Date): Self = StObject.set(x, "lastModDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastModDateUndefined: Self = StObject.set(x, "lastModDate", js.undefined)
+      inline def setLastModDateUndefined: Self = StObject.set(x, "lastModDate", js.undefined)
       
-      @scala.inline
-      def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   

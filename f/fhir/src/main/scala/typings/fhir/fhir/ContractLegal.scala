@@ -23,25 +23,19 @@ trait ContractLegal
 }
 object ContractLegal {
   
-  @scala.inline
-  def apply(): ContractLegal = {
+  inline def apply(): ContractLegal = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContractLegal]
   }
   
-  @scala.inline
-  implicit class ContractLegalMutableBuilder[Self <: ContractLegal] (val x: Self) extends AnyVal {
+  extension [Self <: ContractLegal](x: Self) {
     
-    @scala.inline
-    def setContentAttachment(value: Attachment): Self = StObject.set(x, "contentAttachment", value.asInstanceOf[js.Any])
+    inline def setContentAttachment(value: Attachment): Self = StObject.set(x, "contentAttachment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentAttachmentUndefined: Self = StObject.set(x, "contentAttachment", js.undefined)
+    inline def setContentAttachmentUndefined: Self = StObject.set(x, "contentAttachment", js.undefined)
     
-    @scala.inline
-    def setContentReference(value: Reference): Self = StObject.set(x, "contentReference", value.asInstanceOf[js.Any])
+    inline def setContentReference(value: Reference): Self = StObject.set(x, "contentReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentReferenceUndefined: Self = StObject.set(x, "contentReference", js.undefined)
+    inline def setContentReferenceUndefined: Self = StObject.set(x, "contentReference", js.undefined)
   }
 }

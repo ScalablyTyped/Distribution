@@ -23,28 +23,21 @@ trait EntitySpecification extends StObject {
 }
 object EntitySpecification {
   
-  @scala.inline
-  def apply(db: Database, loader: String, name: String, path: String, schema: String): EntitySpecification = {
+  inline def apply(db: Database, loader: String, name: String, path: String, schema: String): EntitySpecification = {
     val __obj = js.Dynamic.literal(db = db.asInstanceOf[js.Any], loader = loader.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], schema = schema.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntitySpecification]
   }
   
-  @scala.inline
-  implicit class EntitySpecificationMutableBuilder[Self <: EntitySpecification] (val x: Self) extends AnyVal {
+  extension [Self <: EntitySpecification](x: Self) {
     
-    @scala.inline
-    def setDb(value: Database): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
+    inline def setDb(value: Database): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoader(value: String): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
+    inline def setLoader(value: String): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: String): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
   }
 }

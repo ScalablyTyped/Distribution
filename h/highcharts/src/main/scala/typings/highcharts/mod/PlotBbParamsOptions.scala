@@ -27,31 +27,23 @@ trait PlotBbParamsOptions extends StObject {
 }
 object PlotBbParamsOptions {
   
-  @scala.inline
-  def apply(): PlotBbParamsOptions = {
+  inline def apply(): PlotBbParamsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotBbParamsOptions]
   }
   
-  @scala.inline
-  implicit class PlotBbParamsOptionsMutableBuilder[Self <: PlotBbParamsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotBbParamsOptions](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Double): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+    inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     
-    @scala.inline
-    def setStandardDeviation(value: Double): Self = StObject.set(x, "standardDeviation", value.asInstanceOf[js.Any])
+    inline def setStandardDeviation(value: Double): Self = StObject.set(x, "standardDeviation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardDeviationUndefined: Self = StObject.set(x, "standardDeviation", js.undefined)
+    inline def setStandardDeviationUndefined: Self = StObject.set(x, "standardDeviation", js.undefined)
   }
 }

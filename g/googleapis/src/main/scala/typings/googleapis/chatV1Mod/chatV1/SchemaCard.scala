@@ -31,43 +31,31 @@ trait SchemaCard extends StObject {
 }
 object SchemaCard {
   
-  @scala.inline
-  def apply(): SchemaCard = {
+  inline def apply(): SchemaCard = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCard]
   }
   
-  @scala.inline
-  implicit class SchemaCardMutableBuilder[Self <: SchemaCard] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCard](x: Self) {
     
-    @scala.inline
-    def setCardActions(value: js.Array[SchemaCardAction]): Self = StObject.set(x, "cardActions", value.asInstanceOf[js.Any])
+    inline def setCardActions(value: js.Array[SchemaCardAction]): Self = StObject.set(x, "cardActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardActionsUndefined: Self = StObject.set(x, "cardActions", js.undefined)
+    inline def setCardActionsUndefined: Self = StObject.set(x, "cardActions", js.undefined)
     
-    @scala.inline
-    def setCardActionsVarargs(value: SchemaCardAction*): Self = StObject.set(x, "cardActions", js.Array(value :_*))
+    inline def setCardActionsVarargs(value: SchemaCardAction*): Self = StObject.set(x, "cardActions", js.Array(value :_*))
     
-    @scala.inline
-    def setHeader(value: SchemaCardHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: SchemaCardHeader): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+    inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSections(value: js.Array[SchemaSection]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
+    inline def setSections(value: js.Array[SchemaSection]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionsUndefined: Self = StObject.set(x, "sections", js.undefined)
+    inline def setSectionsUndefined: Self = StObject.set(x, "sections", js.undefined)
     
-    @scala.inline
-    def setSectionsVarargs(value: SchemaSection*): Self = StObject.set(x, "sections", js.Array(value :_*))
+    inline def setSectionsVarargs(value: SchemaSection*): Self = StObject.set(x, "sections", js.Array(value :_*))
   }
 }

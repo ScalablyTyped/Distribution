@@ -16,16 +16,13 @@ trait SQLErrorEvent
 }
 object SQLErrorEvent {
   
-  @scala.inline
-  def apply(Reason: js.Any, Source: XInterface): SQLErrorEvent = {
+  inline def apply(Reason: js.Any, Source: XInterface): SQLErrorEvent = {
     val __obj = js.Dynamic.literal(Reason = Reason.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[SQLErrorEvent]
   }
   
-  @scala.inline
-  implicit class SQLErrorEventMutableBuilder[Self <: SQLErrorEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SQLErrorEvent](x: Self) {
     
-    @scala.inline
-    def setReason(value: js.Any): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: js.Any): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
   }
 }

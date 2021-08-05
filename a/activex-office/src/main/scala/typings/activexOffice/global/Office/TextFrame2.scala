@@ -14,7 +14,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.TextFrame2")
 @js.native
-class TextFrame2 protected ()
+/* private */ class TextFrame2 ()
   extends StObject
      with typings.activexOffice.Office.TextFrame2 {
   
@@ -54,7 +54,7 @@ class TextFrame2 protected ()
   /* CompleteClass */
   var NoTextRotation: MsoTriState = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.TextFrame2_typekey")
   var OfficeDotTextFrame2_typekey: typings.activexOffice.Office.TextFrame2 = js.native
   

@@ -23,28 +23,21 @@ trait SetIdentityMailFromDomainRequest extends StObject {
 }
 object SetIdentityMailFromDomainRequest {
   
-  @scala.inline
-  def apply(Identity: Identity): SetIdentityMailFromDomainRequest = {
+  inline def apply(Identity: Identity): SetIdentityMailFromDomainRequest = {
     val __obj = js.Dynamic.literal(Identity = Identity.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetIdentityMailFromDomainRequest]
   }
   
-  @scala.inline
-  implicit class SetIdentityMailFromDomainRequestMutableBuilder[Self <: SetIdentityMailFromDomainRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetIdentityMailFromDomainRequest](x: Self) {
     
-    @scala.inline
-    def setBehaviorOnMXFailure(value: BehaviorOnMXFailure): Self = StObject.set(x, "BehaviorOnMXFailure", value.asInstanceOf[js.Any])
+    inline def setBehaviorOnMXFailure(value: BehaviorOnMXFailure): Self = StObject.set(x, "BehaviorOnMXFailure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBehaviorOnMXFailureUndefined: Self = StObject.set(x, "BehaviorOnMXFailure", js.undefined)
+    inline def setBehaviorOnMXFailureUndefined: Self = StObject.set(x, "BehaviorOnMXFailure", js.undefined)
     
-    @scala.inline
-    def setIdentity(value: Identity): Self = StObject.set(x, "Identity", value.asInstanceOf[js.Any])
+    inline def setIdentity(value: Identity): Self = StObject.set(x, "Identity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMailFromDomain(value: MailFromDomainName): Self = StObject.set(x, "MailFromDomain", value.asInstanceOf[js.Any])
+    inline def setMailFromDomain(value: MailFromDomainName): Self = StObject.set(x, "MailFromDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMailFromDomainUndefined: Self = StObject.set(x, "MailFromDomain", js.undefined)
+    inline def setMailFromDomainUndefined: Self = StObject.set(x, "MailFromDomain", js.undefined)
   }
 }

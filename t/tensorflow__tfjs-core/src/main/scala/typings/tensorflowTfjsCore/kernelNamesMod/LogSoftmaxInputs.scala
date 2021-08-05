@@ -11,19 +11,15 @@ trait LogSoftmaxInputs extends StObject {
 }
 object LogSoftmaxInputs {
   
-  @scala.inline
-  def apply(): LogSoftmaxInputs = {
+  inline def apply(): LogSoftmaxInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LogSoftmaxInputs]
   }
   
-  @scala.inline
-  implicit class LogSoftmaxInputsMutableBuilder[Self <: LogSoftmaxInputs] (val x: Self) extends AnyVal {
+  extension [Self <: LogSoftmaxInputs](x: Self) {
     
-    @scala.inline
-    def setLogits(value: js.Any): Self = StObject.set(x, "logits", value.asInstanceOf[js.Any])
+    inline def setLogits(value: js.Any): Self = StObject.set(x, "logits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogitsUndefined: Self = StObject.set(x, "logits", js.undefined)
+    inline def setLogitsUndefined: Self = StObject.set(x, "logits", js.undefined)
   }
 }

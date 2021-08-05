@@ -73,91 +73,63 @@ trait CertificateAuthority extends StObject {
 }
 object CertificateAuthority {
   
-  @scala.inline
-  def apply(): CertificateAuthority = {
+  inline def apply(): CertificateAuthority = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CertificateAuthority]
   }
   
-  @scala.inline
-  implicit class CertificateAuthorityMutableBuilder[Self <: CertificateAuthority] (val x: Self) extends AnyVal {
+  extension [Self <: CertificateAuthority](x: Self) {
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setCertificateAuthorityConfiguration(value: CertificateAuthorityConfiguration): Self = StObject.set(x, "CertificateAuthorityConfiguration", value.asInstanceOf[js.Any])
+    inline def setCertificateAuthorityConfiguration(value: CertificateAuthorityConfiguration): Self = StObject.set(x, "CertificateAuthorityConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateAuthorityConfigurationUndefined: Self = StObject.set(x, "CertificateAuthorityConfiguration", js.undefined)
+    inline def setCertificateAuthorityConfigurationUndefined: Self = StObject.set(x, "CertificateAuthorityConfiguration", js.undefined)
     
-    @scala.inline
-    def setCreatedAt(value: TStamp): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: TStamp): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
-    @scala.inline
-    def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
+    inline def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
+    inline def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
     
-    @scala.inline
-    def setLastStateChangeAt(value: TStamp): Self = StObject.set(x, "LastStateChangeAt", value.asInstanceOf[js.Any])
+    inline def setLastStateChangeAt(value: TStamp): Self = StObject.set(x, "LastStateChangeAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastStateChangeAtUndefined: Self = StObject.set(x, "LastStateChangeAt", js.undefined)
+    inline def setLastStateChangeAtUndefined: Self = StObject.set(x, "LastStateChangeAt", js.undefined)
     
-    @scala.inline
-    def setNotAfter(value: TStamp): Self = StObject.set(x, "NotAfter", value.asInstanceOf[js.Any])
+    inline def setNotAfter(value: TStamp): Self = StObject.set(x, "NotAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotAfterUndefined: Self = StObject.set(x, "NotAfter", js.undefined)
+    inline def setNotAfterUndefined: Self = StObject.set(x, "NotAfter", js.undefined)
     
-    @scala.inline
-    def setNotBefore(value: TStamp): Self = StObject.set(x, "NotBefore", value.asInstanceOf[js.Any])
+    inline def setNotBefore(value: TStamp): Self = StObject.set(x, "NotBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotBeforeUndefined: Self = StObject.set(x, "NotBefore", js.undefined)
+    inline def setNotBeforeUndefined: Self = StObject.set(x, "NotBefore", js.undefined)
     
-    @scala.inline
-    def setOwnerAccount(value: AccountId): Self = StObject.set(x, "OwnerAccount", value.asInstanceOf[js.Any])
+    inline def setOwnerAccount(value: AccountId): Self = StObject.set(x, "OwnerAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerAccountUndefined: Self = StObject.set(x, "OwnerAccount", js.undefined)
+    inline def setOwnerAccountUndefined: Self = StObject.set(x, "OwnerAccount", js.undefined)
     
-    @scala.inline
-    def setRestorableUntil(value: TStamp): Self = StObject.set(x, "RestorableUntil", value.asInstanceOf[js.Any])
+    inline def setRestorableUntil(value: TStamp): Self = StObject.set(x, "RestorableUntil", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestorableUntilUndefined: Self = StObject.set(x, "RestorableUntil", js.undefined)
+    inline def setRestorableUntilUndefined: Self = StObject.set(x, "RestorableUntil", js.undefined)
     
-    @scala.inline
-    def setRevocationConfiguration(value: RevocationConfiguration): Self = StObject.set(x, "RevocationConfiguration", value.asInstanceOf[js.Any])
+    inline def setRevocationConfiguration(value: RevocationConfiguration): Self = StObject.set(x, "RevocationConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevocationConfigurationUndefined: Self = StObject.set(x, "RevocationConfiguration", js.undefined)
+    inline def setRevocationConfigurationUndefined: Self = StObject.set(x, "RevocationConfiguration", js.undefined)
     
-    @scala.inline
-    def setSerial(value: String): Self = StObject.set(x, "Serial", value.asInstanceOf[js.Any])
+    inline def setSerial(value: String): Self = StObject.set(x, "Serial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerialUndefined: Self = StObject.set(x, "Serial", js.undefined)
+    inline def setSerialUndefined: Self = StObject.set(x, "Serial", js.undefined)
     
-    @scala.inline
-    def setStatus(value: CertificateAuthorityStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: CertificateAuthorityStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setType(value: CertificateAuthorityType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: CertificateAuthorityType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

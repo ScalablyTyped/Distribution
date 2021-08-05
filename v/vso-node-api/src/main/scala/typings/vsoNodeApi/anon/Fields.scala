@@ -10,16 +10,13 @@ trait Fields extends StObject {
 }
 object Fields {
   
-  @scala.inline
-  def apply(fields: js.Any): Fields = {
+  inline def apply(fields: js.Any): Fields = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fields]
   }
   
-  @scala.inline
-  implicit class FieldsMutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
+  extension [Self <: Fields](x: Self) {
     
-    @scala.inline
-    def setFields(value: js.Any): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Any): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
   }
 }

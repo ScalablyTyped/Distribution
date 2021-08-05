@@ -126,139 +126,99 @@ trait Action extends StObject {
 }
 object Action {
   
-  @scala.inline
-  def apply(): Action = {
+  inline def apply(): Action = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Action]
   }
   
-  @scala.inline
-  implicit class ActionMutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
+  extension [Self <: Action](x: Self) {
     
-    @scala.inline
-    def setAlwaysRun(value: Boolean): Self = StObject.set(x, "alwaysRun", value.asInstanceOf[js.Any])
+    inline def setAlwaysRun(value: Boolean): Self = StObject.set(x, "alwaysRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlwaysRunUndefined: Self = StObject.set(x, "alwaysRun", js.undefined)
+    inline def setAlwaysRunUndefined: Self = StObject.set(x, "alwaysRun", js.undefined)
     
-    @scala.inline
-    def setCommands(value: js.Array[String]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+    inline def setCommands(value: js.Array[String]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
+    inline def setCommandsUndefined: Self = StObject.set(x, "commands", js.undefined)
     
-    @scala.inline
-    def setCommandsVarargs(value: String*): Self = StObject.set(x, "commands", js.Array(value :_*))
+    inline def setCommandsVarargs(value: String*): Self = StObject.set(x, "commands", js.Array(value :_*))
     
-    @scala.inline
-    def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
+    inline def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
+    inline def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
     
-    @scala.inline
-    def setCredentials(value: Secret): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+    inline def setCredentials(value: Secret): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+    inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
     
-    @scala.inline
-    def setDisableImagePrefetch(value: Boolean): Self = StObject.set(x, "disableImagePrefetch", value.asInstanceOf[js.Any])
+    inline def setDisableImagePrefetch(value: Boolean): Self = StObject.set(x, "disableImagePrefetch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableImagePrefetchUndefined: Self = StObject.set(x, "disableImagePrefetch", js.undefined)
+    inline def setDisableImagePrefetchUndefined: Self = StObject.set(x, "disableImagePrefetch", js.undefined)
     
-    @scala.inline
-    def setDisableStandardErrorCapture(value: Boolean): Self = StObject.set(x, "disableStandardErrorCapture", value.asInstanceOf[js.Any])
+    inline def setDisableStandardErrorCapture(value: Boolean): Self = StObject.set(x, "disableStandardErrorCapture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableStandardErrorCaptureUndefined: Self = StObject.set(x, "disableStandardErrorCapture", js.undefined)
+    inline def setDisableStandardErrorCaptureUndefined: Self = StObject.set(x, "disableStandardErrorCapture", js.undefined)
     
-    @scala.inline
-    def setEnableFuse(value: Boolean): Self = StObject.set(x, "enableFuse", value.asInstanceOf[js.Any])
+    inline def setEnableFuse(value: Boolean): Self = StObject.set(x, "enableFuse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableFuseUndefined: Self = StObject.set(x, "enableFuse", js.undefined)
+    inline def setEnableFuseUndefined: Self = StObject.set(x, "enableFuse", js.undefined)
     
-    @scala.inline
-    def setEntrypoint(value: String): Self = StObject.set(x, "entrypoint", value.asInstanceOf[js.Any])
+    inline def setEntrypoint(value: String): Self = StObject.set(x, "entrypoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntrypointUndefined: Self = StObject.set(x, "entrypoint", js.undefined)
+    inline def setEntrypointUndefined: Self = StObject.set(x, "entrypoint", js.undefined)
     
-    @scala.inline
-    def setEnvironment(
+    inline def setEnvironment(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Action & TopLevel[js.Any]
     ): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+    inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
-    @scala.inline
-    def setIgnoreExitStatus(value: Boolean): Self = StObject.set(x, "ignoreExitStatus", value.asInstanceOf[js.Any])
+    inline def setIgnoreExitStatus(value: Boolean): Self = StObject.set(x, "ignoreExitStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreExitStatusUndefined: Self = StObject.set(x, "ignoreExitStatus", js.undefined)
+    inline def setIgnoreExitStatusUndefined: Self = StObject.set(x, "ignoreExitStatus", js.undefined)
     
-    @scala.inline
-    def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
+    inline def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUriUndefined: Self = StObject.set(x, "imageUri", js.undefined)
+    inline def setImageUriUndefined: Self = StObject.set(x, "imageUri", js.undefined)
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Action & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setMounts(value: js.Array[Mount]): Self = StObject.set(x, "mounts", value.asInstanceOf[js.Any])
+    inline def setMounts(value: js.Array[Mount]): Self = StObject.set(x, "mounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMountsUndefined: Self = StObject.set(x, "mounts", js.undefined)
+    inline def setMountsUndefined: Self = StObject.set(x, "mounts", js.undefined)
     
-    @scala.inline
-    def setMountsVarargs(value: Mount*): Self = StObject.set(x, "mounts", js.Array(value :_*))
+    inline def setMountsVarargs(value: Mount*): Self = StObject.set(x, "mounts", js.Array(value :_*))
     
-    @scala.inline
-    def setPidNamespace(value: String): Self = StObject.set(x, "pidNamespace", value.asInstanceOf[js.Any])
+    inline def setPidNamespace(value: String): Self = StObject.set(x, "pidNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPidNamespaceUndefined: Self = StObject.set(x, "pidNamespace", js.undefined)
+    inline def setPidNamespaceUndefined: Self = StObject.set(x, "pidNamespace", js.undefined)
     
-    @scala.inline
-    def setPortMappings(
+    inline def setPortMappings(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: number}
       */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Action & TopLevel[js.Any]
     ): Self = StObject.set(x, "portMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortMappingsUndefined: Self = StObject.set(x, "portMappings", js.undefined)
+    inline def setPortMappingsUndefined: Self = StObject.set(x, "portMappings", js.undefined)
     
-    @scala.inline
-    def setPublishExposedPorts(value: Boolean): Self = StObject.set(x, "publishExposedPorts", value.asInstanceOf[js.Any])
+    inline def setPublishExposedPorts(value: Boolean): Self = StObject.set(x, "publishExposedPorts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishExposedPortsUndefined: Self = StObject.set(x, "publishExposedPorts", js.undefined)
+    inline def setPublishExposedPortsUndefined: Self = StObject.set(x, "publishExposedPorts", js.undefined)
     
-    @scala.inline
-    def setRunInBackground(value: Boolean): Self = StObject.set(x, "runInBackground", value.asInstanceOf[js.Any])
+    inline def setRunInBackground(value: Boolean): Self = StObject.set(x, "runInBackground", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunInBackgroundUndefined: Self = StObject.set(x, "runInBackground", js.undefined)
+    inline def setRunInBackgroundUndefined: Self = StObject.set(x, "runInBackground", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

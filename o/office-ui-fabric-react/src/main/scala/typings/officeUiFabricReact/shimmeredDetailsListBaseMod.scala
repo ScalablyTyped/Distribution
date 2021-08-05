@@ -14,12 +14,12 @@ object shimmeredDetailsListBaseMod {
     extends Component[IShimmeredDetailsListProps, js.Object, js.Any] {
     def this(props: IShimmeredDetailsListProps) = this()
     
-    var _classNames: js.Any = js.native
+    /* private */ var _classNames: js.Any = js.native
     
-    var _onRenderShimmerPlaceholder: js.Any = js.native
+    /* private */ var _onRenderShimmerPlaceholder: js.Any = js.native
     
-    var _renderDefaultShimmerPlaceholder: js.Any = js.native
+    /* private */ var _renderDefaultShimmerPlaceholder: js.Any = js.native
     
-    var _shimmerItems: js.Any = js.native
+    /* private */ var _shimmerItems: js.Any = js.native
   }
 }

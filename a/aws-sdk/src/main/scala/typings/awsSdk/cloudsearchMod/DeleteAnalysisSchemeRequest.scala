@@ -15,19 +15,15 @@ trait DeleteAnalysisSchemeRequest extends StObject {
 }
 object DeleteAnalysisSchemeRequest {
   
-  @scala.inline
-  def apply(AnalysisSchemeName: StandardName, DomainName: DomainName): DeleteAnalysisSchemeRequest = {
+  inline def apply(AnalysisSchemeName: StandardName, DomainName: DomainName): DeleteAnalysisSchemeRequest = {
     val __obj = js.Dynamic.literal(AnalysisSchemeName = AnalysisSchemeName.asInstanceOf[js.Any], DomainName = DomainName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteAnalysisSchemeRequest]
   }
   
-  @scala.inline
-  implicit class DeleteAnalysisSchemeRequestMutableBuilder[Self <: DeleteAnalysisSchemeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteAnalysisSchemeRequest](x: Self) {
     
-    @scala.inline
-    def setAnalysisSchemeName(value: StandardName): Self = StObject.set(x, "AnalysisSchemeName", value.asInstanceOf[js.Any])
+    inline def setAnalysisSchemeName(value: StandardName): Self = StObject.set(x, "AnalysisSchemeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
   }
 }

@@ -12,22 +12,17 @@ trait ILockWorkingCopyResponse extends StObject {
 }
 object ILockWorkingCopyResponse {
   
-  @scala.inline
-  def apply(merge: ILockData): ILockWorkingCopyResponse = {
+  inline def apply(merge: ILockData): ILockWorkingCopyResponse = {
     val __obj = js.Dynamic.literal(merge = merge.asInstanceOf[js.Any], previousMerge = null)
     __obj.asInstanceOf[ILockWorkingCopyResponse]
   }
   
-  @scala.inline
-  implicit class ILockWorkingCopyResponseMutableBuilder[Self <: ILockWorkingCopyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ILockWorkingCopyResponse](x: Self) {
     
-    @scala.inline
-    def setMerge(value: ILockData): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
+    inline def setMerge(value: ILockData): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousMerge(value: ILockData): Self = StObject.set(x, "previousMerge", value.asInstanceOf[js.Any])
+    inline def setPreviousMerge(value: ILockData): Self = StObject.set(x, "previousMerge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousMergeNull: Self = StObject.set(x, "previousMerge", null)
+    inline def setPreviousMergeNull: Self = StObject.set(x, "previousMerge", null)
   }
 }

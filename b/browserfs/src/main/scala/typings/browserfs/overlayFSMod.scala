@@ -38,8 +38,7 @@ object overlayFSMod {
     /**
       * Constructs and initializes an OverlayFS instance with the given options.
       */
-    @scala.inline
-    def Create(opts: OverlayFSOptions, cb: BFSCallback[OverlayFS]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Create(opts: OverlayFSOptions, cb: BFSCallback[OverlayFS]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("browserfs/dist/node/backend/OverlayFS", "default.Name")
     @js.native
@@ -49,8 +48,7 @@ object overlayFSMod {
     @js.native
     val Options: FileSystemOptions = js.native
     
-    @scala.inline
-    def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
+    inline def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
   }
   
   @JSImport("browserfs/dist/node/backend/OverlayFS", "UnlockedOverlayFS")
@@ -60,21 +58,21 @@ object overlayFSMod {
        with FileSystem {
     def this(writable: FileSystem, readable: FileSystem) = this()
     
-    var _deleteLog: js.Any = js.native
+    /* private */ var _deleteLog: js.Any = js.native
     
-    var _deleteLogError: js.Any = js.native
+    /* private */ var _deleteLogError: js.Any = js.native
     
-    var _deleteLogUpdateNeeded: js.Any = js.native
+    /* private */ var _deleteLogUpdateNeeded: js.Any = js.native
     
-    var _deleteLogUpdatePending: js.Any = js.native
+    /* private */ var _deleteLogUpdatePending: js.Any = js.native
     
-    var _deletedFiles: js.Any = js.native
+    /* private */ var _deletedFiles: js.Any = js.native
     
-    var _initializeCallbacks: js.Any = js.native
+    /* private */ var _initializeCallbacks: js.Any = js.native
     
-    var _isInitialized: js.Any = js.native
+    /* private */ var _isInitialized: js.Any = js.native
     
-    var _readable: js.Any = js.native
+    /* private */ var _readable: js.Any = js.native
     
     /* private */ def _reparseDeletionLog(): js.Any = js.native
     
@@ -82,7 +80,7 @@ object overlayFSMod {
     
     def _syncSync(file: typings.browserfs.preloadFileMod.default[UnlockedOverlayFS]): Unit = js.native
     
-    var _writable: js.Any = js.native
+    /* private */ var _writable: js.Any = js.native
     
     /* private */ def checkInitAsync(cb: js.Any): js.Any = js.native
     
@@ -258,8 +256,7 @@ object overlayFSMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
+    inline def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
   }
   
   @js.native
@@ -281,20 +278,16 @@ object overlayFSMod {
   }
   object OverlayFSOptions {
     
-    @scala.inline
-    def apply(readable: FileSystem, writable: FileSystem): OverlayFSOptions = {
+    inline def apply(readable: FileSystem, writable: FileSystem): OverlayFSOptions = {
       val __obj = js.Dynamic.literal(readable = readable.asInstanceOf[js.Any], writable = writable.asInstanceOf[js.Any])
       __obj.asInstanceOf[OverlayFSOptions]
     }
     
-    @scala.inline
-    implicit class OverlayFSOptionsMutableBuilder[Self <: OverlayFSOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OverlayFSOptions](x: Self) {
       
-      @scala.inline
-      def setReadable(value: FileSystem): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
+      inline def setReadable(value: FileSystem): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWritable(value: FileSystem): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
+      inline def setWritable(value: FileSystem): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
     }
   }
 }

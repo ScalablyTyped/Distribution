@@ -19,7 +19,7 @@ trait ActionSetting extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.ActionSetting_typekey")
+  /* private */ @JSName("PowerPoint.ActionSetting_typekey")
   var PowerPointDotActionSetting_typekey: ActionSetting
   
   var Run: String
@@ -32,8 +32,7 @@ trait ActionSetting extends StObject {
 }
 object ActionSetting {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Action: PpActionType,
     ActionVerb: String,
     AnimateAction: MsoTriState,
@@ -51,40 +50,28 @@ object ActionSetting {
     __obj.asInstanceOf[ActionSetting]
   }
   
-  @scala.inline
-  implicit class ActionSettingMutableBuilder[Self <: ActionSetting] (val x: Self) extends AnyVal {
+  extension [Self <: ActionSetting](x: Self) {
     
-    @scala.inline
-    def setAction(value: PpActionType): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: PpActionType): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionVerb(value: String): Self = StObject.set(x, "ActionVerb", value.asInstanceOf[js.Any])
+    inline def setActionVerb(value: String): Self = StObject.set(x, "ActionVerb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimateAction(value: MsoTriState): Self = StObject.set(x, "AnimateAction", value.asInstanceOf[js.Any])
+    inline def setAnimateAction(value: MsoTriState): Self = StObject.set(x, "AnimateAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHyperlink(value: Hyperlink): Self = StObject.set(x, "Hyperlink", value.asInstanceOf[js.Any])
+    inline def setHyperlink(value: Hyperlink): Self = StObject.set(x, "Hyperlink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotActionSetting_typekey(value: ActionSetting): Self = StObject.set(x, "PowerPoint.ActionSetting_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotActionSetting_typekey(value: ActionSetting): Self = StObject.set(x, "PowerPoint.ActionSetting_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRun(value: String): Self = StObject.set(x, "Run", value.asInstanceOf[js.Any])
+    inline def setRun(value: String): Self = StObject.set(x, "Run", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowAndReturn(value: MsoTriState): Self = StObject.set(x, "ShowAndReturn", value.asInstanceOf[js.Any])
+    inline def setShowAndReturn(value: MsoTriState): Self = StObject.set(x, "ShowAndReturn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlideShowName(value: String): Self = StObject.set(x, "SlideShowName", value.asInstanceOf[js.Any])
+    inline def setSlideShowName(value: String): Self = StObject.set(x, "SlideShowName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoundEffect(value: SoundEffect): Self = StObject.set(x, "SoundEffect", value.asInstanceOf[js.Any])
+    inline def setSoundEffect(value: SoundEffect): Self = StObject.set(x, "SoundEffect", value.asInstanceOf[js.Any])
   }
 }

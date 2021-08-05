@@ -14,15 +14,11 @@ object decoratorGeneratedMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Generated(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Generated")().asInstanceOf[PropertyDecorator]
+  inline def Generated(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Generated")().asInstanceOf[PropertyDecorator]
   
-  @scala.inline
-  def Generated_increment(strategy: increment): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Generated")(strategy.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  inline def Generated_increment(strategy: increment): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Generated")(strategy.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @scala.inline
-  def Generated_rowid(strategy: rowid): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Generated")(strategy.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  inline def Generated_rowid(strategy: rowid): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Generated")(strategy.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
   
-  @scala.inline
-  def Generated_uuid(strategy: uuid): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Generated")(strategy.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  inline def Generated_uuid(strategy: uuid): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Generated")(strategy.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
 }

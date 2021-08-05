@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OrderedListType extends StObject
 object OrderedListType {
   
-  @scala.inline
-  def `lower-alpha`: typings.pdfmake.pdfmakeStrings.`lower-alpha` = "lower-alpha".asInstanceOf[typings.pdfmake.pdfmakeStrings.`lower-alpha`]
+  inline def `lower-alpha`: typings.pdfmake.pdfmakeStrings.`lower-alpha` = "lower-alpha".asInstanceOf[typings.pdfmake.pdfmakeStrings.`lower-alpha`]
   
-  @scala.inline
-  def `lower-roman`: typings.pdfmake.pdfmakeStrings.`lower-roman` = "lower-roman".asInstanceOf[typings.pdfmake.pdfmakeStrings.`lower-roman`]
+  inline def `lower-roman`: typings.pdfmake.pdfmakeStrings.`lower-roman` = "lower-roman".asInstanceOf[typings.pdfmake.pdfmakeStrings.`lower-roman`]
   
-  @scala.inline
-  def none: typings.pdfmake.pdfmakeStrings.none = "none".asInstanceOf[typings.pdfmake.pdfmakeStrings.none]
+  inline def none: typings.pdfmake.pdfmakeStrings.none = "none".asInstanceOf[typings.pdfmake.pdfmakeStrings.none]
   
-  @scala.inline
-  def `upper-alpha`: typings.pdfmake.pdfmakeStrings.`upper-alpha` = "upper-alpha".asInstanceOf[typings.pdfmake.pdfmakeStrings.`upper-alpha`]
+  inline def `upper-alpha`: typings.pdfmake.pdfmakeStrings.`upper-alpha` = "upper-alpha".asInstanceOf[typings.pdfmake.pdfmakeStrings.`upper-alpha`]
   
-  @scala.inline
-  def `upper-roman`: typings.pdfmake.pdfmakeStrings.`upper-roman` = "upper-roman".asInstanceOf[typings.pdfmake.pdfmakeStrings.`upper-roman`]
+  inline def `upper-roman`: typings.pdfmake.pdfmakeStrings.`upper-roman` = "upper-roman".asInstanceOf[typings.pdfmake.pdfmakeStrings.`upper-roman`]
 }

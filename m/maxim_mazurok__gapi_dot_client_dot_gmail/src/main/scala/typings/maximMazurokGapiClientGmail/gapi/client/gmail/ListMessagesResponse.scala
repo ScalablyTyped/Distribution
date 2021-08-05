@@ -17,34 +17,25 @@ trait ListMessagesResponse extends StObject {
 }
 object ListMessagesResponse {
   
-  @scala.inline
-  def apply(): ListMessagesResponse = {
+  inline def apply(): ListMessagesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListMessagesResponse]
   }
   
-  @scala.inline
-  implicit class ListMessagesResponseMutableBuilder[Self <: ListMessagesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListMessagesResponse](x: Self) {
     
-    @scala.inline
-    def setMessages(value: js.Array[Message]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: js.Array[Message]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
-    @scala.inline
-    def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setResultSizeEstimate(value: Double): Self = StObject.set(x, "resultSizeEstimate", value.asInstanceOf[js.Any])
+    inline def setResultSizeEstimate(value: Double): Self = StObject.set(x, "resultSizeEstimate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultSizeEstimateUndefined: Self = StObject.set(x, "resultSizeEstimate", js.undefined)
+    inline def setResultSizeEstimateUndefined: Self = StObject.set(x, "resultSizeEstimate", js.undefined)
   }
 }

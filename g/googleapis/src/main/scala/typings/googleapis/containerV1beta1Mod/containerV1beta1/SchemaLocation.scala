@@ -28,31 +28,23 @@ trait SchemaLocation extends StObject {
 }
 object SchemaLocation {
   
-  @scala.inline
-  def apply(): SchemaLocation = {
+  inline def apply(): SchemaLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLocation]
   }
   
-  @scala.inline
-  implicit class SchemaLocationMutableBuilder[Self <: SchemaLocation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLocation](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRecommended(value: Boolean): Self = StObject.set(x, "recommended", value.asInstanceOf[js.Any])
+    inline def setRecommended(value: Boolean): Self = StObject.set(x, "recommended", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendedUndefined: Self = StObject.set(x, "recommended", js.undefined)
+    inline def setRecommendedUndefined: Self = StObject.set(x, "recommended", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

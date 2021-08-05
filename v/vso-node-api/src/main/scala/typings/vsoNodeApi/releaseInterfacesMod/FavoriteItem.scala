@@ -28,26 +28,20 @@ trait FavoriteItem extends StObject {
 }
 object FavoriteItem {
   
-  @scala.inline
-  def apply(data: String, id: String, name: String, `type`: String): FavoriteItem = {
+  inline def apply(data: String, id: String, name: String, `type`: String): FavoriteItem = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FavoriteItem]
   }
   
-  @scala.inline
-  implicit class FavoriteItemMutableBuilder[Self <: FavoriteItem] (val x: Self) extends AnyVal {
+  extension [Self <: FavoriteItem](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

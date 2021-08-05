@@ -16,8 +16,7 @@ object providerMod {
   
   object Provider {
     
-    @scala.inline
-    def apply(props: ProviderProps): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(props: ProviderProps): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("mobx-react/dist/Provider", "Provider")
     @js.native
@@ -26,8 +25,7 @@ object providerMod {
     @JSImport("mobx-react/dist/Provider", "Provider.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -37,20 +35,16 @@ object providerMod {
   }
   object ProviderProps {
     
-    @scala.inline
-    def apply(): ProviderProps = {
+    inline def apply(): ProviderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProviderProps]
     }
     
-    @scala.inline
-    implicit class ProviderPropsMutableBuilder[Self <: ProviderProps] (val x: Self) extends AnyVal {
+    extension [Self <: ProviderProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
 }

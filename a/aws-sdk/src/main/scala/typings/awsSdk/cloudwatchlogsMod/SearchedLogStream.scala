@@ -18,25 +18,19 @@ trait SearchedLogStream extends StObject {
 }
 object SearchedLogStream {
   
-  @scala.inline
-  def apply(): SearchedLogStream = {
+  inline def apply(): SearchedLogStream = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchedLogStream]
   }
   
-  @scala.inline
-  implicit class SearchedLogStreamMutableBuilder[Self <: SearchedLogStream] (val x: Self) extends AnyVal {
+  extension [Self <: SearchedLogStream](x: Self) {
     
-    @scala.inline
-    def setLogStreamName(value: LogStreamName): Self = StObject.set(x, "logStreamName", value.asInstanceOf[js.Any])
+    inline def setLogStreamName(value: LogStreamName): Self = StObject.set(x, "logStreamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogStreamNameUndefined: Self = StObject.set(x, "logStreamName", js.undefined)
+    inline def setLogStreamNameUndefined: Self = StObject.set(x, "logStreamName", js.undefined)
     
-    @scala.inline
-    def setSearchedCompletely(value: LogStreamSearchedCompletely): Self = StObject.set(x, "searchedCompletely", value.asInstanceOf[js.Any])
+    inline def setSearchedCompletely(value: LogStreamSearchedCompletely): Self = StObject.set(x, "searchedCompletely", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchedCompletelyUndefined: Self = StObject.set(x, "searchedCompletely", js.undefined)
+    inline def setSearchedCompletelyUndefined: Self = StObject.set(x, "searchedCompletely", js.undefined)
   }
 }

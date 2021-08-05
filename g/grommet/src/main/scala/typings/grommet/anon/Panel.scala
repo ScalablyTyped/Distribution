@@ -19,46 +19,33 @@ trait Panel extends StObject {
 }
 object Panel {
   
-  @scala.inline
-  def apply(): Panel = {
+  inline def apply(): Panel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Panel]
   }
   
-  @scala.inline
-  implicit class PanelMutableBuilder[Self <: Panel] (val x: Self) extends AnyVal {
+  extension [Self <: Panel](x: Self) {
     
-    @scala.inline
-    def setBorder(value: BorderType): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: BorderType): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
-    @scala.inline
-    def setBorderVarargs(value: Error*): Self = StObject.set(x, "border", js.Array(value :_*))
+    inline def setBorderVarargs(value: Error*): Self = StObject.set(x, "border", js.Array(value :_*))
     
-    @scala.inline
-    def setHeading(value: Level): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
+    inline def setHeading(value: Level): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
+    inline def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
     
-    @scala.inline
-    def setHover(value: Heading): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    inline def setHover(value: Heading): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
+    inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     
-    @scala.inline
-    def setIcons(value: Collapse): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
+    inline def setIcons(value: Collapse): Self = StObject.set(x, "icons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
+    inline def setIconsUndefined: Self = StObject.set(x, "icons", js.undefined)
     
-    @scala.inline
-    def setPanel(value: `4`): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
+    inline def setPanel(value: `4`): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
+    inline def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
   }
 }

@@ -11,19 +11,15 @@ trait PartialMountOptions extends StObject {
 }
 object PartialMountOptions {
   
-  @scala.inline
-  def apply(): PartialMountOptions = {
+  inline def apply(): PartialMountOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialMountOptions]
   }
   
-  @scala.inline
-  implicit class PartialMountOptionsMutableBuilder[Self <: PartialMountOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartialMountOptions](x: Self) {
     
-    @scala.inline
-    def setMount(value: FnCallNodeOptions): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
+    inline def setMount(value: FnCallNodeOptions): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMountUndefined: Self = StObject.set(x, "mount", js.undefined)
+    inline def setMountUndefined: Self = StObject.set(x, "mount", js.undefined)
   }
 }

@@ -25,19 +25,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object InstanceResource {
   
-  @scala.inline
-  def apply(delete: RestMethod, get: RestMethod, post: RestMethod, update: RestMethod): InstanceResource = {
+  inline def apply(delete: RestMethod, get: RestMethod, post: RestMethod, update: RestMethod): InstanceResource = {
     val __obj = js.Dynamic.literal(delete = delete.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], post = post.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstanceResource]
   }
   
-  @scala.inline
-  implicit class InstanceResourceMutableBuilder[Self <: InstanceResource] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceResource](x: Self) {
     
-    @scala.inline
-    def setDelete(value: RestMethod): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: RestMethod): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: RestMethod): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: RestMethod): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
   }
 }

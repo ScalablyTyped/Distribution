@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.DOMCompositionEvent")
 @js.native
-class DOMCompositionEvent protected ()
+/* private */ class DOMCompositionEvent ()
   extends StObject
      with typings.activexMshtml.MSHTML.DOMCompositionEvent {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.DOMCompositionEvent_typekey")
   var MSHTMLDotDOMCompositionEvent_typekey: typings.activexMshtml.MSHTML.DOMCompositionEvent = js.native
   

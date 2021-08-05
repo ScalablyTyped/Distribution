@@ -11,22 +11,17 @@ trait BindingCollectionUpdateData extends StObject {
 }
 object BindingCollectionUpdateData {
   
-  @scala.inline
-  def apply(): BindingCollectionUpdateData = {
+  inline def apply(): BindingCollectionUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BindingCollectionUpdateData]
   }
   
-  @scala.inline
-  implicit class BindingCollectionUpdateDataMutableBuilder[Self <: BindingCollectionUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: BindingCollectionUpdateData](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[BindingData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[BindingData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: BindingData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: BindingData*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

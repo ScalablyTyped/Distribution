@@ -22,8 +22,7 @@ trait WebAclRuleStatementNotStatementStatementAndStatementStatementNotStatementS
 }
 object WebAclRuleStatementNotStatementStatementAndStatementStatementNotStatementStatementSqliMatchStatement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     textTransformations: js.Array[
       WebAclRuleStatementNotStatementStatementAndStatementStatementNotStatementStatementSqliMatchStatementTextTransformation
     ]
@@ -32,26 +31,21 @@ object WebAclRuleStatementNotStatementStatementAndStatementStatementNotStatement
     __obj.asInstanceOf[WebAclRuleStatementNotStatementStatementAndStatementStatementNotStatementStatementSqliMatchStatement]
   }
   
-  @scala.inline
-  implicit class WebAclRuleStatementNotStatementStatementAndStatementStatementNotStatementStatementSqliMatchStatementMutableBuilder[Self <: WebAclRuleStatementNotStatementStatementAndStatementStatementNotStatementStatementSqliMatchStatement] (val x: Self) extends AnyVal {
+  extension [Self <: WebAclRuleStatementNotStatementStatementAndStatementStatementNotStatementStatementSqliMatchStatement](x: Self) {
     
-    @scala.inline
-    def setFieldToMatch(
+    inline def setFieldToMatch(
       value: WebAclRuleStatementNotStatementStatementAndStatementStatementNotStatementStatementSqliMatchStatementFieldToMatch
     ): Self = StObject.set(x, "fieldToMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldToMatchUndefined: Self = StObject.set(x, "fieldToMatch", js.undefined)
+    inline def setFieldToMatchUndefined: Self = StObject.set(x, "fieldToMatch", js.undefined)
     
-    @scala.inline
-    def setTextTransformations(
+    inline def setTextTransformations(
       value: js.Array[
           WebAclRuleStatementNotStatementStatementAndStatementStatementNotStatementStatementSqliMatchStatementTextTransformation
         ]
     ): Self = StObject.set(x, "textTransformations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextTransformationsVarargs(
+    inline def setTextTransformationsVarargs(
       value: WebAclRuleStatementNotStatementStatementAndStatementStatementNotStatementStatementSqliMatchStatementTextTransformation*
     ): Self = StObject.set(x, "textTransformations", js.Array(value :_*))
   }

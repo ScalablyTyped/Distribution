@@ -30,49 +30,35 @@ trait OmitCompletePrivateRouteI
 }
 object OmitCompletePrivateRouteI {
   
-  @scala.inline
-  def apply(Component: ComponentType[js.Object]): OmitCompletePrivateRouteI = {
+  inline def apply(Component: ComponentType[js.Object]): OmitCompletePrivateRouteI = {
     val __obj = js.Dynamic.literal(Component = Component.asInstanceOf[js.Any], initial = true)
     __obj.asInstanceOf[OmitCompletePrivateRouteI]
   }
   
-  @scala.inline
-  implicit class OmitCompletePrivateRouteIMutableBuilder[Self <: OmitCompletePrivateRouteI] (val x: Self) extends AnyVal {
+  extension [Self <: OmitCompletePrivateRouteI](x: Self) {
     
-    @scala.inline
-    def setComponent(value: ComponentType[js.Object]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: ComponentType[js.Object]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErr(value: Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
+    inline def setErr(value: Error): Self = StObject.set(x, "err", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
+    inline def setErrUndefined: Self = StObject.set(x, "err", js.undefined)
     
-    @scala.inline
-    def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setInitial(value: `true`): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
+    inline def setInitial(value: `true`): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProps(value: Record[String, js.Any]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: Record[String, js.Any]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
+    inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
     
-    @scala.inline
-    def set__N_SSG(value: Boolean): Self = StObject.set(x, "__N_SSG", value.asInstanceOf[js.Any])
+    inline def set__N_SSG(value: Boolean): Self = StObject.set(x, "__N_SSG", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__N_SSGUndefined: Self = StObject.set(x, "__N_SSG", js.undefined)
+    inline def set__N_SSGUndefined: Self = StObject.set(x, "__N_SSG", js.undefined)
     
-    @scala.inline
-    def set__N_SSP(value: Boolean): Self = StObject.set(x, "__N_SSP", value.asInstanceOf[js.Any])
+    inline def set__N_SSP(value: Boolean): Self = StObject.set(x, "__N_SSP", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set__N_SSPUndefined: Self = StObject.set(x, "__N_SSP", js.undefined)
+    inline def set__N_SSPUndefined: Self = StObject.set(x, "__N_SSP", js.undefined)
   }
 }

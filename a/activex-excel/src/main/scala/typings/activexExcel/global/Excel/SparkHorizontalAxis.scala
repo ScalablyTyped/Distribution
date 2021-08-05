@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.SparkHorizontalAxis")
 @js.native
-class SparkHorizontalAxis protected ()
+/* private */ class SparkHorizontalAxis ()
   extends StObject
      with typings.activexExcel.Excel.SparkHorizontalAxis {
   
@@ -20,7 +20,7 @@ class SparkHorizontalAxis protected ()
   /* CompleteClass */
   override val Creator: XlCreator = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.SparkHorizontalAxis_typekey")
   var ExcelDotSparkHorizontalAxis_typekey: typings.activexExcel.Excel.SparkHorizontalAxis = js.native
   

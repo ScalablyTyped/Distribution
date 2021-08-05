@@ -18,22 +18,17 @@ trait GetDiscoveredSchemaRequest extends StObject {
 }
 object GetDiscoveredSchemaRequest {
   
-  @scala.inline
-  def apply(Events: listOfGetDiscoveredSchemaVersionItemInput, Type: Type): GetDiscoveredSchemaRequest = {
+  inline def apply(Events: listOfGetDiscoveredSchemaVersionItemInput, Type: Type): GetDiscoveredSchemaRequest = {
     val __obj = js.Dynamic.literal(Events = Events.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDiscoveredSchemaRequest]
   }
   
-  @scala.inline
-  implicit class GetDiscoveredSchemaRequestMutableBuilder[Self <: GetDiscoveredSchemaRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDiscoveredSchemaRequest](x: Self) {
     
-    @scala.inline
-    def setEvents(value: listOfGetDiscoveredSchemaVersionItemInput): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: listOfGetDiscoveredSchemaVersionItemInput): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsVarargs(value: GetDiscoveredSchemaVersionItemInput*): Self = StObject.set(x, "Events", js.Array(value :_*))
+    inline def setEventsVarargs(value: GetDiscoveredSchemaVersionItemInput*): Self = StObject.set(x, "Events", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: Type): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: Type): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

@@ -15,31 +15,23 @@ trait PartialClassNameMapAvatar extends StObject {
 }
 object PartialClassNameMapAvatar {
   
-  @scala.inline
-  def apply(): PartialClassNameMapAvatar = {
+  inline def apply(): PartialClassNameMapAvatar = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapAvatar]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapAvatarMutableBuilder[Self <: PartialClassNameMapAvatar] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapAvatar](x: Self) {
     
-    @scala.inline
-    def setColorDefault(value: String): Self = StObject.set(x, "colorDefault", value.asInstanceOf[js.Any])
+    inline def setColorDefault(value: String): Self = StObject.set(x, "colorDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorDefaultUndefined: Self = StObject.set(x, "colorDefault", js.undefined)
+    inline def setColorDefaultUndefined: Self = StObject.set(x, "colorDefault", js.undefined)
     
-    @scala.inline
-    def setImg(value: String): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
+    inline def setImg(value: String): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImgUndefined: Self = StObject.set(x, "img", js.undefined)
+    inline def setImgUndefined: Self = StObject.set(x, "img", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

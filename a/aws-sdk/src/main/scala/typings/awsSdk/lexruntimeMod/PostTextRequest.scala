@@ -43,46 +43,33 @@ trait PostTextRequest extends StObject {
 }
 object PostTextRequest {
   
-  @scala.inline
-  def apply(botAlias: BotAlias, botName: BotName, inputText: Text, userId: UserId): PostTextRequest = {
+  inline def apply(botAlias: BotAlias, botName: BotName, inputText: Text, userId: UserId): PostTextRequest = {
     val __obj = js.Dynamic.literal(botAlias = botAlias.asInstanceOf[js.Any], botName = botName.asInstanceOf[js.Any], inputText = inputText.asInstanceOf[js.Any], userId = userId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostTextRequest]
   }
   
-  @scala.inline
-  implicit class PostTextRequestMutableBuilder[Self <: PostTextRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PostTextRequest](x: Self) {
     
-    @scala.inline
-    def setActiveContexts(value: ActiveContextsList): Self = StObject.set(x, "activeContexts", value.asInstanceOf[js.Any])
+    inline def setActiveContexts(value: ActiveContextsList): Self = StObject.set(x, "activeContexts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveContextsUndefined: Self = StObject.set(x, "activeContexts", js.undefined)
+    inline def setActiveContextsUndefined: Self = StObject.set(x, "activeContexts", js.undefined)
     
-    @scala.inline
-    def setActiveContextsVarargs(value: ActiveContext*): Self = StObject.set(x, "activeContexts", js.Array(value :_*))
+    inline def setActiveContextsVarargs(value: ActiveContext*): Self = StObject.set(x, "activeContexts", js.Array(value :_*))
     
-    @scala.inline
-    def setBotAlias(value: BotAlias): Self = StObject.set(x, "botAlias", value.asInstanceOf[js.Any])
+    inline def setBotAlias(value: BotAlias): Self = StObject.set(x, "botAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBotName(value: BotName): Self = StObject.set(x, "botName", value.asInstanceOf[js.Any])
+    inline def setBotName(value: BotName): Self = StObject.set(x, "botName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputText(value: Text): Self = StObject.set(x, "inputText", value.asInstanceOf[js.Any])
+    inline def setInputText(value: Text): Self = StObject.set(x, "inputText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestAttributes(value: StringMap): Self = StObject.set(x, "requestAttributes", value.asInstanceOf[js.Any])
+    inline def setRequestAttributes(value: StringMap): Self = StObject.set(x, "requestAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestAttributesUndefined: Self = StObject.set(x, "requestAttributes", js.undefined)
+    inline def setRequestAttributesUndefined: Self = StObject.set(x, "requestAttributes", js.undefined)
     
-    @scala.inline
-    def setSessionAttributes(value: StringMap): Self = StObject.set(x, "sessionAttributes", value.asInstanceOf[js.Any])
+    inline def setSessionAttributes(value: StringMap): Self = StObject.set(x, "sessionAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionAttributesUndefined: Self = StObject.set(x, "sessionAttributes", js.undefined)
+    inline def setSessionAttributesUndefined: Self = StObject.set(x, "sessionAttributes", js.undefined)
     
-    @scala.inline
-    def setUserId(value: UserId): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: UserId): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
   }
 }

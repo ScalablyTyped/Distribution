@@ -38,8 +38,7 @@ trait CreateCustomVerificationEmailTemplateRequest extends StObject {
 }
 object CreateCustomVerificationEmailTemplateRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FailureRedirectionURL: FailureRedirectionURL,
     FromEmailAddress: FromAddress,
     SuccessRedirectionURL: SuccessRedirectionURL,
@@ -51,25 +50,18 @@ object CreateCustomVerificationEmailTemplateRequest {
     __obj.asInstanceOf[CreateCustomVerificationEmailTemplateRequest]
   }
   
-  @scala.inline
-  implicit class CreateCustomVerificationEmailTemplateRequestMutableBuilder[Self <: CreateCustomVerificationEmailTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCustomVerificationEmailTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setFailureRedirectionURL(value: FailureRedirectionURL): Self = StObject.set(x, "FailureRedirectionURL", value.asInstanceOf[js.Any])
+    inline def setFailureRedirectionURL(value: FailureRedirectionURL): Self = StObject.set(x, "FailureRedirectionURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromEmailAddress(value: FromAddress): Self = StObject.set(x, "FromEmailAddress", value.asInstanceOf[js.Any])
+    inline def setFromEmailAddress(value: FromAddress): Self = StObject.set(x, "FromEmailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessRedirectionURL(value: SuccessRedirectionURL): Self = StObject.set(x, "SuccessRedirectionURL", value.asInstanceOf[js.Any])
+    inline def setSuccessRedirectionURL(value: SuccessRedirectionURL): Self = StObject.set(x, "SuccessRedirectionURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateContent(value: TemplateContent): Self = StObject.set(x, "TemplateContent", value.asInstanceOf[js.Any])
+    inline def setTemplateContent(value: TemplateContent): Self = StObject.set(x, "TemplateContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateName(value: TemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
+    inline def setTemplateName(value: TemplateName): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateSubject(value: Subject): Self = StObject.set(x, "TemplateSubject", value.asInstanceOf[js.Any])
+    inline def setTemplateSubject(value: Subject): Self = StObject.set(x, "TemplateSubject", value.asInstanceOf[js.Any])
   }
 }

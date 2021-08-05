@@ -10,19 +10,15 @@ trait PropertyBaseDefinition extends StObject {
 }
 object PropertyBaseDefinition {
   
-  @scala.inline
-  def apply(): PropertyBaseDefinition = {
+  inline def apply(): PropertyBaseDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PropertyBaseDefinition]
   }
   
-  @scala.inline
-  implicit class PropertyBaseDefinitionMutableBuilder[Self <: PropertyBaseDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyBaseDefinition](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String | DescriptionDefinition): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String | DescriptionDefinition): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
   }
 }

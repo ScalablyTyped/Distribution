@@ -11,19 +11,15 @@ trait AddSecretVersionRequest extends StObject {
 }
 object AddSecretVersionRequest {
   
-  @scala.inline
-  def apply(): AddSecretVersionRequest = {
+  inline def apply(): AddSecretVersionRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddSecretVersionRequest]
   }
   
-  @scala.inline
-  implicit class AddSecretVersionRequestMutableBuilder[Self <: AddSecretVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AddSecretVersionRequest](x: Self) {
     
-    @scala.inline
-    def setPayload(value: SecretPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: SecretPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
   }
 }

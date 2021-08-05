@@ -49,51 +49,32 @@ object cloneMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def clone[T](sourceInstance: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(sourceInstance.asInstanceOf[js.Any]).asInstanceOf[T]
-    @scala.inline
-    def clone[T](sourceInstance: T, cloneData: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(sourceInstance.asInstanceOf[js.Any], cloneData.asInstanceOf[js.Any])).asInstanceOf[T]
-    @scala.inline
-    def clone[T](sourceInstance: T, cloneData: js.Any, createDataArr: js.Array[js.Any]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(sourceInstance.asInstanceOf[js.Any], cloneData.asInstanceOf[js.Any], createDataArr.asInstanceOf[js.Any])).asInstanceOf[T]
-    @scala.inline
-    def clone[T](sourceInstance: T, cloneData: js.Any, createDataArr: js.Array[js.Any], target: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(sourceInstance.asInstanceOf[js.Any], cloneData.asInstanceOf[js.Any], createDataArr.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[T]
-    @scala.inline
-    def clone[T](sourceInstance: T, cloneData: js.Any, createDataArr: Unit, target: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(sourceInstance.asInstanceOf[js.Any], cloneData.asInstanceOf[js.Any], createDataArr.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[T]
-    @scala.inline
-    def clone[T](sourceInstance: T, cloneData: Unit, createDataArr: js.Array[js.Any]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(sourceInstance.asInstanceOf[js.Any], cloneData.asInstanceOf[js.Any], createDataArr.asInstanceOf[js.Any])).asInstanceOf[T]
-    @scala.inline
-    def clone[T](sourceInstance: T, cloneData: Unit, createDataArr: js.Array[js.Any], target: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(sourceInstance.asInstanceOf[js.Any], cloneData.asInstanceOf[js.Any], createDataArr.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[T]
-    @scala.inline
-    def clone[T](sourceInstance: T, cloneData: Unit, createDataArr: Unit, target: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(sourceInstance.asInstanceOf[js.Any], cloneData.asInstanceOf[js.Any], createDataArr.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def clone[T](sourceInstance: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(sourceInstance.asInstanceOf[js.Any]).asInstanceOf[T]
+    inline def clone[T](sourceInstance: T, cloneData: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(sourceInstance.asInstanceOf[js.Any], cloneData.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def clone[T](sourceInstance: T, cloneData: js.Any, createDataArr: js.Array[js.Any]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(sourceInstance.asInstanceOf[js.Any], cloneData.asInstanceOf[js.Any], createDataArr.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def clone[T](sourceInstance: T, cloneData: js.Any, createDataArr: js.Array[js.Any], target: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(sourceInstance.asInstanceOf[js.Any], cloneData.asInstanceOf[js.Any], createDataArr.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def clone[T](sourceInstance: T, cloneData: js.Any, createDataArr: Unit, target: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(sourceInstance.asInstanceOf[js.Any], cloneData.asInstanceOf[js.Any], createDataArr.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def clone[T](sourceInstance: T, cloneData: Unit, createDataArr: js.Array[js.Any]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(sourceInstance.asInstanceOf[js.Any], cloneData.asInstanceOf[js.Any], createDataArr.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def clone[T](sourceInstance: T, cloneData: Unit, createDataArr: js.Array[js.Any], target: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(sourceInstance.asInstanceOf[js.Any], cloneData.asInstanceOf[js.Any], createDataArr.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def clone[T](sourceInstance: T, cloneData: Unit, createDataArr: Unit, target: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(sourceInstance.asInstanceOf[js.Any], cloneData.asInstanceOf[js.Any], createDataArr.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[T]
     
-    @scala.inline
-    def cloneArray(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneArray")().asInstanceOf[js.Any]
-    @scala.inline
-    def cloneArray(arr: js.Array[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneArray")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-    @scala.inline
-    def cloneArray(arr: js.Array[js.Any], isDeep: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneArray")(arr.asInstanceOf[js.Any], isDeep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def cloneArray(arr: Null, isDeep: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneArray")(arr.asInstanceOf[js.Any], isDeep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def cloneArray(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneArray")().asInstanceOf[js.Any]
+    inline def cloneArray(arr: js.Array[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneArray")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def cloneArray(arr: js.Array[js.Any], isDeep: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneArray")(arr.asInstanceOf[js.Any], isDeep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def cloneArray(arr: Null, isDeep: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneArray")(arr.asInstanceOf[js.Any], isDeep.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @scala.inline
-    def isNotClone(entityObject: EntityObject): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotClone")(entityObject.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def isNotClone(entityObject: EntityObject): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotClone")(entityObject.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def markNotClone(entityObject: EntityObject): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("markNotClone")(entityObject.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def markNotClone(entityObject: EntityObject): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("markNotClone")(entityObject.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @scala.inline
-  def cloneAttributeAsBasicType(): js.Function2[/* target */ js.Any, /* memberName */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneAttributeAsBasicType")().asInstanceOf[js.Function2[/* target */ js.Any, /* memberName */ String | js.Symbol, Unit]]
-  @scala.inline
-  def cloneAttributeAsBasicType(configData: CloneAttributeAsBasicTypeConfigData): js.Function2[/* target */ js.Any, /* memberName */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneAttributeAsBasicType")(configData.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Any, /* memberName */ String | js.Symbol, Unit]]
+  inline def cloneAttributeAsBasicType(): js.Function2[/* target */ js.Any, /* memberName */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneAttributeAsBasicType")().asInstanceOf[js.Function2[/* target */ js.Any, /* memberName */ String | js.Symbol, Unit]]
+  inline def cloneAttributeAsBasicType(configData: CloneAttributeAsBasicTypeConfigData): js.Function2[/* target */ js.Any, /* memberName */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneAttributeAsBasicType")(configData.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Any, /* memberName */ String | js.Symbol, Unit]]
   
-  @scala.inline
-  def cloneAttributeAsCloneable(): js.Function2[/* target */ js.Any, /* memberName */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneAttributeAsCloneable")().asInstanceOf[js.Function2[/* target */ js.Any, /* memberName */ String | js.Symbol, Unit]]
-  @scala.inline
-  def cloneAttributeAsCloneable(configData: CloneAttributeAsCloneableConfigData): js.Function2[/* target */ js.Any, /* memberName */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneAttributeAsCloneable")(configData.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Any, /* memberName */ String | js.Symbol, Unit]]
+  inline def cloneAttributeAsCloneable(): js.Function2[/* target */ js.Any, /* memberName */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneAttributeAsCloneable")().asInstanceOf[js.Function2[/* target */ js.Any, /* memberName */ String | js.Symbol, Unit]]
+  inline def cloneAttributeAsCloneable(configData: CloneAttributeAsCloneableConfigData): js.Function2[/* target */ js.Any, /* memberName */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneAttributeAsCloneable")(configData.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Any, /* memberName */ String | js.Symbol, Unit]]
   
-  @scala.inline
-  def cloneAttributeAsCustomType(
+  inline def cloneAttributeAsCustomType(
     cloneFunc: js.Function4[
       /* source */ js.Any, 
       /* target */ js.Any, 
@@ -102,8 +83,7 @@ object cloneMod {
       Unit
     ]
   ): js.Function2[/* target */ js.Any, /* memberName */ String | js.Symbol, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneAttributeAsCustomType")(cloneFunc.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Any, /* memberName */ String | js.Symbol, Unit]]
-  @scala.inline
-  def cloneAttributeAsCustomType(
+  inline def cloneAttributeAsCustomType(
     cloneFunc: js.Function4[
       /* source */ js.Any, 
       /* target */ js.Any, 
@@ -120,20 +100,16 @@ object cloneMod {
   }
   object CloneAttributeAsBasicTypeConfigData {
     
-    @scala.inline
-    def apply(): CloneAttributeAsBasicTypeConfigData = {
+    inline def apply(): CloneAttributeAsBasicTypeConfigData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CloneAttributeAsBasicTypeConfigData]
     }
     
-    @scala.inline
-    implicit class CloneAttributeAsBasicTypeConfigDataMutableBuilder[Self <: CloneAttributeAsBasicTypeConfigData] (val x: Self) extends AnyVal {
+    extension [Self <: CloneAttributeAsBasicTypeConfigData](x: Self) {
       
-      @scala.inline
-      def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     }
   }
   
@@ -143,20 +119,16 @@ object cloneMod {
   }
   object CloneAttributeAsCloneableConfigData {
     
-    @scala.inline
-    def apply(): CloneAttributeAsCloneableConfigData = {
+    inline def apply(): CloneAttributeAsCloneableConfigData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CloneAttributeAsCloneableConfigData]
     }
     
-    @scala.inline
-    implicit class CloneAttributeAsCloneableConfigDataMutableBuilder[Self <: CloneAttributeAsCloneableConfigData] (val x: Self) extends AnyVal {
+    extension [Self <: CloneAttributeAsCloneableConfigData](x: Self) {
       
-      @scala.inline
-      def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     }
   }
   
@@ -166,20 +138,16 @@ object cloneMod {
   }
   object CloneAttributeAsCustomTypeConfigData {
     
-    @scala.inline
-    def apply(): CloneAttributeAsCustomTypeConfigData = {
+    inline def apply(): CloneAttributeAsCustomTypeConfigData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CloneAttributeAsCustomTypeConfigData]
     }
     
-    @scala.inline
-    implicit class CloneAttributeAsCustomTypeConfigDataMutableBuilder[Self <: CloneAttributeAsCustomTypeConfigData] (val x: Self) extends AnyVal {
+    extension [Self <: CloneAttributeAsCustomTypeConfigData](x: Self) {
       
-      @scala.inline
-      def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     }
   }
 }

@@ -13,9 +13,9 @@ object propagationMod {
   @JSImport("@opentelemetry/api/build/src/api/propagation", "PropagationAPI")
   @js.native
   /** Empty private constructor prevents end users from constructing a new instance of the API */
-  class PropagationAPI protected () extends StObject {
+  /* private */ class PropagationAPI () extends StObject {
     
-    var _getGlobalPropagator: js.Any = js.native
+    /* private */ var _getGlobalPropagator: js.Any = js.native
     
     /** Remove the global propagator */
     def disable(): Unit = js.native
@@ -59,11 +59,9 @@ object propagationMod {
     @JSImport("@opentelemetry/api/build/src/api/propagation", "PropagationAPI._instance")
     @js.native
     def _instance: js.Any = js.native
-    @scala.inline
-    def _instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
+    inline def _instance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_instance")(x.asInstanceOf[js.Any])
     
     /** Get the singleton instance of the Propagator API */
-    @scala.inline
-    def getInstance(): PropagationAPI = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[PropagationAPI]
+    inline def getInstance(): PropagationAPI = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[PropagationAPI]
   }
 }

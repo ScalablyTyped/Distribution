@@ -27,47 +27,34 @@ object selectMod {
   }
   object PluralForms {
     
-    @scala.inline
-    def apply(other: String | MessageDescriptor): PluralForms = {
+    inline def apply(other: String | MessageDescriptor): PluralForms = {
       val __obj = js.Dynamic.literal(other = other.asInstanceOf[js.Any])
       __obj.asInstanceOf[PluralForms]
     }
     
-    @scala.inline
-    implicit class PluralFormsMutableBuilder[Self <: PluralForms] (val x: Self) extends AnyVal {
+    extension [Self <: PluralForms](x: Self) {
       
-      @scala.inline
-      def setFew(value: String | MessageDescriptor): Self = StObject.set(x, "few", value.asInstanceOf[js.Any])
+      inline def setFew(value: String | MessageDescriptor): Self = StObject.set(x, "few", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFewUndefined: Self = StObject.set(x, "few", js.undefined)
+      inline def setFewUndefined: Self = StObject.set(x, "few", js.undefined)
       
-      @scala.inline
-      def setMany(value: String | MessageDescriptor): Self = StObject.set(x, "many", value.asInstanceOf[js.Any])
+      inline def setMany(value: String | MessageDescriptor): Self = StObject.set(x, "many", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManyUndefined: Self = StObject.set(x, "many", js.undefined)
+      inline def setManyUndefined: Self = StObject.set(x, "many", js.undefined)
       
-      @scala.inline
-      def setOne(value: String | MessageDescriptor): Self = StObject.set(x, "one", value.asInstanceOf[js.Any])
+      inline def setOne(value: String | MessageDescriptor): Self = StObject.set(x, "one", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOneUndefined: Self = StObject.set(x, "one", js.undefined)
+      inline def setOneUndefined: Self = StObject.set(x, "one", js.undefined)
       
-      @scala.inline
-      def setOther(value: String | MessageDescriptor): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+      inline def setOther(value: String | MessageDescriptor): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTwo(value: String | MessageDescriptor): Self = StObject.set(x, "two", value.asInstanceOf[js.Any])
+      inline def setTwo(value: String | MessageDescriptor): Self = StObject.set(x, "two", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTwoUndefined: Self = StObject.set(x, "two", js.undefined)
+      inline def setTwoUndefined: Self = StObject.set(x, "two", js.undefined)
       
-      @scala.inline
-      def setZero(value: String | MessageDescriptor): Self = StObject.set(x, "zero", value.asInstanceOf[js.Any])
+      inline def setZero(value: String | MessageDescriptor): Self = StObject.set(x, "zero", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZeroUndefined: Self = StObject.set(x, "zero", js.undefined)
+      inline def setZeroUndefined: Self = StObject.set(x, "zero", js.undefined)
     }
   }
   
@@ -81,23 +68,18 @@ object selectMod {
   }
   object PluralProps {
     
-    @scala.inline
-    def apply(other: String | MessageDescriptor, value: Double): PluralProps = {
+    inline def apply(other: String | MessageDescriptor, value: Double): PluralProps = {
       val __obj = js.Dynamic.literal(other = other.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[PluralProps]
     }
     
-    @scala.inline
-    implicit class PluralPropsMutableBuilder[Self <: PluralProps] (val x: Self) extends AnyVal {
+    extension [Self <: PluralProps](x: Self) {
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -111,20 +93,16 @@ object selectMod {
   }
   object SelectProps {
     
-    @scala.inline
-    def apply(other: String | MessageDescriptor, value: String): SelectProps = {
+    inline def apply(other: String | MessageDescriptor, value: String): SelectProps = {
       val __obj = js.Dynamic.literal(other = other.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelectProps]
     }
     
-    @scala.inline
-    implicit class SelectPropsMutableBuilder[Self <: SelectProps] (val x: Self) extends AnyVal {
+    extension [Self <: SelectProps](x: Self) {
       
-      @scala.inline
-      def setOther(value: String | MessageDescriptor): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+      inline def setOther(value: String | MessageDescriptor): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

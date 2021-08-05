@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RoutingType extends StObject
 object RoutingType {
   
-  @scala.inline
-  def forwarded: typings.microsoftGraph.microsoftGraphStrings.forwarded = "forwarded".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.forwarded]
+  inline def forwarded: typings.microsoftGraph.microsoftGraphStrings.forwarded = "forwarded".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.forwarded]
   
-  @scala.inline
-  def lookup: typings.microsoftGraph.microsoftGraphStrings.lookup = "lookup".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.lookup]
+  inline def lookup: typings.microsoftGraph.microsoftGraphStrings.lookup = "lookup".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.lookup]
   
-  @scala.inline
-  def selfFork: typings.microsoftGraph.microsoftGraphStrings.selfFork = "selfFork".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.selfFork]
+  inline def selfFork: typings.microsoftGraph.microsoftGraphStrings.selfFork = "selfFork".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.selfFork]
   
-  @scala.inline
-  def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
+  inline def unknownFutureValue: typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue = "unknownFutureValue".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.unknownFutureValue]
 }

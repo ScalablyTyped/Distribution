@@ -18,37 +18,27 @@ trait IndividualOutcome extends StObject {
 }
 object IndividualOutcome {
   
-  @scala.inline
-  def apply(): IndividualOutcome = {
+  inline def apply(): IndividualOutcome = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IndividualOutcome]
   }
   
-  @scala.inline
-  implicit class IndividualOutcomeMutableBuilder[Self <: IndividualOutcome] (val x: Self) extends AnyVal {
+  extension [Self <: IndividualOutcome](x: Self) {
     
-    @scala.inline
-    def setMultistepNumber(value: Double): Self = StObject.set(x, "multistepNumber", value.asInstanceOf[js.Any])
+    inline def setMultistepNumber(value: Double): Self = StObject.set(x, "multistepNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultistepNumberUndefined: Self = StObject.set(x, "multistepNumber", js.undefined)
+    inline def setMultistepNumberUndefined: Self = StObject.set(x, "multistepNumber", js.undefined)
     
-    @scala.inline
-    def setOutcomeSummary(value: String): Self = StObject.set(x, "outcomeSummary", value.asInstanceOf[js.Any])
+    inline def setOutcomeSummary(value: String): Self = StObject.set(x, "outcomeSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutcomeSummaryUndefined: Self = StObject.set(x, "outcomeSummary", js.undefined)
+    inline def setOutcomeSummaryUndefined: Self = StObject.set(x, "outcomeSummary", js.undefined)
     
-    @scala.inline
-    def setRunDuration(value: Duration): Self = StObject.set(x, "runDuration", value.asInstanceOf[js.Any])
+    inline def setRunDuration(value: Duration): Self = StObject.set(x, "runDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunDurationUndefined: Self = StObject.set(x, "runDuration", js.undefined)
+    inline def setRunDurationUndefined: Self = StObject.set(x, "runDuration", js.undefined)
     
-    @scala.inline
-    def setStepId(value: String): Self = StObject.set(x, "stepId", value.asInstanceOf[js.Any])
+    inline def setStepId(value: String): Self = StObject.set(x, "stepId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepIdUndefined: Self = StObject.set(x, "stepId", js.undefined)
+    inline def setStepIdUndefined: Self = StObject.set(x, "stepId", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait DeleteFileEntry extends StObject {
 }
 object DeleteFileEntry {
   
-  @scala.inline
-  def apply(filePath: Path): DeleteFileEntry = {
+  inline def apply(filePath: Path): DeleteFileEntry = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFileEntry]
   }
   
-  @scala.inline
-  implicit class DeleteFileEntryMutableBuilder[Self <: DeleteFileEntry] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFileEntry](x: Self) {
     
-    @scala.inline
-    def setFilePath(value: Path): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: Path): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
   }
 }

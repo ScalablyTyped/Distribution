@@ -53,8 +53,7 @@ object accountFriendshipsBestiesFeedResponseMod {
   }
   object BestiesFeedResponse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       big_list: Boolean,
       next_max_id: Null,
       page_size: Double,
@@ -66,29 +65,21 @@ object accountFriendshipsBestiesFeedResponseMod {
       __obj.asInstanceOf[BestiesFeedResponse]
     }
     
-    @scala.inline
-    implicit class BestiesFeedResponseMutableBuilder[Self <: BestiesFeedResponse] (val x: Self) extends AnyVal {
+    extension [Self <: BestiesFeedResponse](x: Self) {
       
-      @scala.inline
-      def setBig_list(value: Boolean): Self = StObject.set(x, "big_list", value.asInstanceOf[js.Any])
+      inline def setBig_list(value: Boolean): Self = StObject.set(x, "big_list", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNext_max_id(value: Null): Self = StObject.set(x, "next_max_id", value.asInstanceOf[js.Any])
+      inline def setNext_max_id(value: Null): Self = StObject.set(x, "next_max_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPage_size(value: Double): Self = StObject.set(x, "page_size", value.asInstanceOf[js.Any])
+      inline def setPage_size(value: Double): Self = StObject.set(x, "page_size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSections(value: Null): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
+      inline def setSections(value: Null): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsers(value: js.Array[BestiesFeedResponseUsersItem]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+      inline def setUsers(value: js.Array[BestiesFeedResponseUsersItem]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsersVarargs(value: BestiesFeedResponseUsersItem*): Self = StObject.set(x, "users", js.Array(value :_*))
+      inline def setUsersVarargs(value: BestiesFeedResponseUsersItem*): Self = StObject.set(x, "users", js.Array(value :_*))
     }
   }
 }

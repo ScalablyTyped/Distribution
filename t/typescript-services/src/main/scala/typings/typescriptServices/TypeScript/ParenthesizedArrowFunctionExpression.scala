@@ -16,8 +16,7 @@ trait ParenthesizedArrowFunctionExpression
 }
 object ParenthesizedArrowFunctionExpression {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -46,16 +45,12 @@ object ParenthesizedArrowFunctionExpression {
     __obj.asInstanceOf[ParenthesizedArrowFunctionExpression]
   }
   
-  @scala.inline
-  implicit class ParenthesizedArrowFunctionExpressionMutableBuilder[Self <: ParenthesizedArrowFunctionExpression] (val x: Self) extends AnyVal {
+  extension [Self <: ParenthesizedArrowFunctionExpression](x: Self) {
     
-    @scala.inline
-    def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    inline def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallSignature(value: CallSignature): Self = StObject.set(x, "callSignature", value.asInstanceOf[js.Any])
+    inline def setCallSignature(value: CallSignature): Self = StObject.set(x, "callSignature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpression(value: AST): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: AST): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
   }
 }

@@ -22,25 +22,19 @@ trait StatusBarPropsAndroid extends StObject {
 }
 object StatusBarPropsAndroid {
   
-  @scala.inline
-  def apply(): StatusBarPropsAndroid = {
+  inline def apply(): StatusBarPropsAndroid = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StatusBarPropsAndroid]
   }
   
-  @scala.inline
-  implicit class StatusBarPropsAndroidMutableBuilder[Self <: StatusBarPropsAndroid] (val x: Self) extends AnyVal {
+  extension [Self <: StatusBarPropsAndroid](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: ColorValue): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: ColorValue): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setTranslucent(value: Boolean): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
+    inline def setTranslucent(value: Boolean): Self = StObject.set(x, "translucent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranslucentUndefined: Self = StObject.set(x, "translucent", js.undefined)
+    inline def setTranslucentUndefined: Self = StObject.set(x, "translucent", js.undefined)
   }
 }

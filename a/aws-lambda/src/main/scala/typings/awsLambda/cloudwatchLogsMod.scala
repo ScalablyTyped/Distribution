@@ -24,8 +24,7 @@ object cloudwatchLogsMod {
   }
   object CloudWatchLogsDecodedData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       logEvents: js.Array[CloudWatchLogsLogEvent],
       logGroup: String,
       logStream: String,
@@ -37,32 +36,23 @@ object cloudwatchLogsMod {
       __obj.asInstanceOf[CloudWatchLogsDecodedData]
     }
     
-    @scala.inline
-    implicit class CloudWatchLogsDecodedDataMutableBuilder[Self <: CloudWatchLogsDecodedData] (val x: Self) extends AnyVal {
+    extension [Self <: CloudWatchLogsDecodedData](x: Self) {
       
-      @scala.inline
-      def setLogEvents(value: js.Array[CloudWatchLogsLogEvent]): Self = StObject.set(x, "logEvents", value.asInstanceOf[js.Any])
+      inline def setLogEvents(value: js.Array[CloudWatchLogsLogEvent]): Self = StObject.set(x, "logEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogEventsVarargs(value: CloudWatchLogsLogEvent*): Self = StObject.set(x, "logEvents", js.Array(value :_*))
+      inline def setLogEventsVarargs(value: CloudWatchLogsLogEvent*): Self = StObject.set(x, "logEvents", js.Array(value :_*))
       
-      @scala.inline
-      def setLogGroup(value: String): Self = StObject.set(x, "logGroup", value.asInstanceOf[js.Any])
+      inline def setLogGroup(value: String): Self = StObject.set(x, "logGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogStream(value: String): Self = StObject.set(x, "logStream", value.asInstanceOf[js.Any])
+      inline def setLogStream(value: String): Self = StObject.set(x, "logStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageType(value: String): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
+      inline def setMessageType(value: String): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+      inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscriptionFilters(value: js.Array[String]): Self = StObject.set(x, "subscriptionFilters", value.asInstanceOf[js.Any])
+      inline def setSubscriptionFilters(value: js.Array[String]): Self = StObject.set(x, "subscriptionFilters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscriptionFiltersVarargs(value: String*): Self = StObject.set(x, "subscriptionFilters", js.Array(value :_*))
+      inline def setSubscriptionFiltersVarargs(value: String*): Self = StObject.set(x, "subscriptionFilters", js.Array(value :_*))
     }
   }
   
@@ -72,17 +62,14 @@ object cloudwatchLogsMod {
   }
   object CloudWatchLogsEvent {
     
-    @scala.inline
-    def apply(awslogs: CloudWatchLogsEventData): CloudWatchLogsEvent = {
+    inline def apply(awslogs: CloudWatchLogsEventData): CloudWatchLogsEvent = {
       val __obj = js.Dynamic.literal(awslogs = awslogs.asInstanceOf[js.Any])
       __obj.asInstanceOf[CloudWatchLogsEvent]
     }
     
-    @scala.inline
-    implicit class CloudWatchLogsEventMutableBuilder[Self <: CloudWatchLogsEvent] (val x: Self) extends AnyVal {
+    extension [Self <: CloudWatchLogsEvent](x: Self) {
       
-      @scala.inline
-      def setAwslogs(value: CloudWatchLogsEventData): Self = StObject.set(x, "awslogs", value.asInstanceOf[js.Any])
+      inline def setAwslogs(value: CloudWatchLogsEventData): Self = StObject.set(x, "awslogs", value.asInstanceOf[js.Any])
     }
   }
   
@@ -92,17 +79,14 @@ object cloudwatchLogsMod {
   }
   object CloudWatchLogsEventData {
     
-    @scala.inline
-    def apply(data: String): CloudWatchLogsEventData = {
+    inline def apply(data: String): CloudWatchLogsEventData = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[CloudWatchLogsEventData]
     }
     
-    @scala.inline
-    implicit class CloudWatchLogsEventDataMutableBuilder[Self <: CloudWatchLogsEventData] (val x: Self) extends AnyVal {
+    extension [Self <: CloudWatchLogsEventData](x: Self) {
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
   }
   
@@ -120,29 +104,22 @@ object cloudwatchLogsMod {
   }
   object CloudWatchLogsLogEvent {
     
-    @scala.inline
-    def apply(id: String, message: String, timestamp: Double): CloudWatchLogsLogEvent = {
+    inline def apply(id: String, message: String, timestamp: Double): CloudWatchLogsLogEvent = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[CloudWatchLogsLogEvent]
     }
     
-    @scala.inline
-    implicit class CloudWatchLogsLogEventMutableBuilder[Self <: CloudWatchLogsLogEvent] (val x: Self) extends AnyVal {
+    extension [Self <: CloudWatchLogsLogEvent](x: Self) {
       
-      @scala.inline
-      def setExtractedFields(value: StringDictionary[String]): Self = StObject.set(x, "extractedFields", value.asInstanceOf[js.Any])
+      inline def setExtractedFields(value: StringDictionary[String]): Self = StObject.set(x, "extractedFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtractedFieldsUndefined: Self = StObject.set(x, "extractedFields", js.undefined)
+      inline def setExtractedFieldsUndefined: Self = StObject.set(x, "extractedFields", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
   }
 }

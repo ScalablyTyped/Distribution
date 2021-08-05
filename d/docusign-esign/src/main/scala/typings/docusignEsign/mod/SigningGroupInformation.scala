@@ -13,22 +13,17 @@ trait SigningGroupInformation extends StObject {
 }
 object SigningGroupInformation {
   
-  @scala.inline
-  def apply(): SigningGroupInformation = {
+  inline def apply(): SigningGroupInformation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SigningGroupInformation]
   }
   
-  @scala.inline
-  implicit class SigningGroupInformationMutableBuilder[Self <: SigningGroupInformation] (val x: Self) extends AnyVal {
+  extension [Self <: SigningGroupInformation](x: Self) {
     
-    @scala.inline
-    def setGroups(value: js.Array[SigningGroup]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: js.Array[SigningGroup]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
+    inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
-    @scala.inline
-    def setGroupsVarargs(value: SigningGroup*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: SigningGroup*): Self = StObject.set(x, "groups", js.Array(value :_*))
   }
 }

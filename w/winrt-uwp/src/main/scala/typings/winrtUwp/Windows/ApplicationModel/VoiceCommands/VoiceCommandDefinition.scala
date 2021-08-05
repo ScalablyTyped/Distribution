@@ -25,8 +25,7 @@ trait VoiceCommandDefinition extends StObject {
 }
 object VoiceCommandDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     language: String,
     name: String,
     setPhraseListAsync: (String, IIterable[String]) => IPromiseWithIAsyncAction
@@ -35,16 +34,12 @@ object VoiceCommandDefinition {
     __obj.asInstanceOf[VoiceCommandDefinition]
   }
   
-  @scala.inline
-  implicit class VoiceCommandDefinitionMutableBuilder[Self <: VoiceCommandDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: VoiceCommandDefinition](x: Self) {
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetPhraseListAsync(value: (String, IIterable[String]) => IPromiseWithIAsyncAction): Self = StObject.set(x, "setPhraseListAsync", js.Any.fromFunction2(value))
+    inline def setSetPhraseListAsync(value: (String, IIterable[String]) => IPromiseWithIAsyncAction): Self = StObject.set(x, "setPhraseListAsync", js.Any.fromFunction2(value))
   }
 }

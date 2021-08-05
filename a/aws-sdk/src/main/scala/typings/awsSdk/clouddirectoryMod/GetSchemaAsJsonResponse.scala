@@ -18,25 +18,19 @@ trait GetSchemaAsJsonResponse extends StObject {
 }
 object GetSchemaAsJsonResponse {
   
-  @scala.inline
-  def apply(): GetSchemaAsJsonResponse = {
+  inline def apply(): GetSchemaAsJsonResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSchemaAsJsonResponse]
   }
   
-  @scala.inline
-  implicit class GetSchemaAsJsonResponseMutableBuilder[Self <: GetSchemaAsJsonResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetSchemaAsJsonResponse](x: Self) {
     
-    @scala.inline
-    def setDocument(value: SchemaJsonDocument): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: SchemaJsonDocument): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentUndefined: Self = StObject.set(x, "Document", js.undefined)
+    inline def setDocumentUndefined: Self = StObject.set(x, "Document", js.undefined)
     
-    @scala.inline
-    def setName(value: SchemaName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: SchemaName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

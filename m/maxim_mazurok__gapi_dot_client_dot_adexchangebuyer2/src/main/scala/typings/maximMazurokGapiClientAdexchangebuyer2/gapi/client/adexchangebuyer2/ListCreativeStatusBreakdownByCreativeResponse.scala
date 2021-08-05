@@ -17,28 +17,21 @@ trait ListCreativeStatusBreakdownByCreativeResponse extends StObject {
 }
 object ListCreativeStatusBreakdownByCreativeResponse {
   
-  @scala.inline
-  def apply(): ListCreativeStatusBreakdownByCreativeResponse = {
+  inline def apply(): ListCreativeStatusBreakdownByCreativeResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListCreativeStatusBreakdownByCreativeResponse]
   }
   
-  @scala.inline
-  implicit class ListCreativeStatusBreakdownByCreativeResponseMutableBuilder[Self <: ListCreativeStatusBreakdownByCreativeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListCreativeStatusBreakdownByCreativeResponse](x: Self) {
     
-    @scala.inline
-    def setFilteredBidCreativeRows(value: js.Array[FilteredBidCreativeRow]): Self = StObject.set(x, "filteredBidCreativeRows", value.asInstanceOf[js.Any])
+    inline def setFilteredBidCreativeRows(value: js.Array[FilteredBidCreativeRow]): Self = StObject.set(x, "filteredBidCreativeRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilteredBidCreativeRowsUndefined: Self = StObject.set(x, "filteredBidCreativeRows", js.undefined)
+    inline def setFilteredBidCreativeRowsUndefined: Self = StObject.set(x, "filteredBidCreativeRows", js.undefined)
     
-    @scala.inline
-    def setFilteredBidCreativeRowsVarargs(value: FilteredBidCreativeRow*): Self = StObject.set(x, "filteredBidCreativeRows", js.Array(value :_*))
+    inline def setFilteredBidCreativeRowsVarargs(value: FilteredBidCreativeRow*): Self = StObject.set(x, "filteredBidCreativeRows", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

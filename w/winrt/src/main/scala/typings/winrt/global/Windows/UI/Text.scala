@@ -95,68 +95,57 @@ object Text {
     @JSGlobal("Windows.UI.Text.FontWeights.black")
     @js.native
     def black: FontWeight = js.native
-    @scala.inline
-    def black_=(x: FontWeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("black")(x.asInstanceOf[js.Any])
+    inline def black_=(x: FontWeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("black")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.UI.Text.FontWeights.bold")
     @js.native
     def bold: FontWeight = js.native
-    @scala.inline
-    def bold_=(x: FontWeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bold")(x.asInstanceOf[js.Any])
+    inline def bold_=(x: FontWeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bold")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.UI.Text.FontWeights.extraBlack")
     @js.native
     def extraBlack: FontWeight = js.native
-    @scala.inline
-    def extraBlack_=(x: FontWeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extraBlack")(x.asInstanceOf[js.Any])
+    inline def extraBlack_=(x: FontWeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extraBlack")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.UI.Text.FontWeights.extraBold")
     @js.native
     def extraBold: FontWeight = js.native
-    @scala.inline
-    def extraBold_=(x: FontWeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extraBold")(x.asInstanceOf[js.Any])
+    inline def extraBold_=(x: FontWeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extraBold")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.UI.Text.FontWeights.extraLight")
     @js.native
     def extraLight: FontWeight = js.native
-    @scala.inline
-    def extraLight_=(x: FontWeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extraLight")(x.asInstanceOf[js.Any])
+    inline def extraLight_=(x: FontWeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extraLight")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.UI.Text.FontWeights.light")
     @js.native
     def light: FontWeight = js.native
-    @scala.inline
-    def light_=(x: FontWeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("light")(x.asInstanceOf[js.Any])
+    inline def light_=(x: FontWeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("light")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.UI.Text.FontWeights.medium")
     @js.native
     def medium: FontWeight = js.native
-    @scala.inline
-    def medium_=(x: FontWeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("medium")(x.asInstanceOf[js.Any])
+    inline def medium_=(x: FontWeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("medium")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.UI.Text.FontWeights.normal")
     @js.native
     def normal: FontWeight = js.native
-    @scala.inline
-    def normal_=(x: FontWeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normal")(x.asInstanceOf[js.Any])
+    inline def normal_=(x: FontWeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normal")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.UI.Text.FontWeights.semiBold")
     @js.native
     def semiBold: FontWeight = js.native
-    @scala.inline
-    def semiBold_=(x: FontWeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("semiBold")(x.asInstanceOf[js.Any])
+    inline def semiBold_=(x: FontWeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("semiBold")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.UI.Text.FontWeights.semiLight")
     @js.native
     def semiLight: FontWeight = js.native
-    @scala.inline
-    def semiLight_=(x: FontWeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("semiLight")(x.asInstanceOf[js.Any])
+    inline def semiLight_=(x: FontWeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("semiLight")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.UI.Text.FontWeights.thin")
     @js.native
     def thin: FontWeight = js.native
-    @scala.inline
-    def thin_=(x: FontWeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("thin")(x.asInstanceOf[js.Any])
+    inline def thin_=(x: FontWeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("thin")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.UI.Text.FormatEffect")
@@ -529,50 +518,42 @@ object Text {
     @JSGlobal("Windows.UI.Text.TextConstants.autoColor")
     @js.native
     def autoColor: Color = js.native
-    @scala.inline
-    def autoColor_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("autoColor")(x.asInstanceOf[js.Any])
+    inline def autoColor_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("autoColor")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.UI.Text.TextConstants.maxUnitCount")
     @js.native
     def maxUnitCount: Double = js.native
-    @scala.inline
-    def maxUnitCount_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxUnitCount")(x.asInstanceOf[js.Any])
+    inline def maxUnitCount_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maxUnitCount")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.UI.Text.TextConstants.minUnitCount")
     @js.native
     def minUnitCount: Double = js.native
-    @scala.inline
-    def minUnitCount_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minUnitCount")(x.asInstanceOf[js.Any])
+    inline def minUnitCount_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("minUnitCount")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.UI.Text.TextConstants.undefinedColor")
     @js.native
     def undefinedColor: Color = js.native
-    @scala.inline
-    def undefinedColor_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("undefinedColor")(x.asInstanceOf[js.Any])
+    inline def undefinedColor_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("undefinedColor")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.UI.Text.TextConstants.undefinedFloatValue")
     @js.native
     def undefinedFloatValue: Double = js.native
-    @scala.inline
-    def undefinedFloatValue_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("undefinedFloatValue")(x.asInstanceOf[js.Any])
+    inline def undefinedFloatValue_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("undefinedFloatValue")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.UI.Text.TextConstants.undefinedFontStretch")
     @js.native
     def undefinedFontStretch: FontStretch = js.native
-    @scala.inline
-    def undefinedFontStretch_=(x: FontStretch): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("undefinedFontStretch")(x.asInstanceOf[js.Any])
+    inline def undefinedFontStretch_=(x: FontStretch): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("undefinedFontStretch")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.UI.Text.TextConstants.undefinedFontStyle")
     @js.native
     def undefinedFontStyle: FontStyle = js.native
-    @scala.inline
-    def undefinedFontStyle_=(x: FontStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("undefinedFontStyle")(x.asInstanceOf[js.Any])
+    inline def undefinedFontStyle_=(x: FontStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("undefinedFontStyle")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.UI.Text.TextConstants.undefinedInt32Value")
     @js.native
     def undefinedInt32Value: Double = js.native
-    @scala.inline
-    def undefinedInt32Value_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("undefinedInt32Value")(x.asInstanceOf[js.Any])
+    inline def undefinedInt32Value_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("undefinedInt32Value")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.UI.Text.TextGetOptions")

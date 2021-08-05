@@ -35,20 +35,16 @@ object mod extends Shortcut {
   }
   object Dragster {
     
-    @scala.inline
-    def apply(removeListeners: () => Unit, reset: () => Unit): Dragster = {
+    inline def apply(removeListeners: () => Unit, reset: () => Unit): Dragster = {
       val __obj = js.Dynamic.literal(removeListeners = js.Any.fromFunction0(removeListeners), reset = js.Any.fromFunction0(reset))
       __obj.asInstanceOf[Dragster]
     }
     
-    @scala.inline
-    implicit class DragsterMutableBuilder[Self <: Dragster] (val x: Self) extends AnyVal {
+    extension [Self <: Dragster](x: Self) {
       
-      @scala.inline
-      def setRemoveListeners(value: () => Unit): Self = StObject.set(x, "removeListeners", js.Any.fromFunction0(value))
+      inline def setRemoveListeners(value: () => Unit): Self = StObject.set(x, "removeListeners", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     }
   }
   
@@ -75,17 +71,14 @@ object mod extends Shortcut {
     }
     object Window {
       
-      @scala.inline
-      def apply(Dragster: DragsterStatic): Window = {
+      inline def apply(Dragster: DragsterStatic): Window = {
         val __obj = js.Dynamic.literal(Dragster = Dragster.asInstanceOf[js.Any])
         __obj.asInstanceOf[Window]
       }
       
-      @scala.inline
-      implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+      extension [Self <: Window](x: Self) {
         
-        @scala.inline
-        def setDragster(value: DragsterStatic): Self = StObject.set(x, "Dragster", value.asInstanceOf[js.Any])
+        inline def setDragster(value: DragsterStatic): Self = StObject.set(x, "Dragster", value.asInstanceOf[js.Any])
       }
     }
   }

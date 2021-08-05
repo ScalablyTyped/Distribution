@@ -29,67 +29,47 @@ trait IShellPaneContainerEvents
 }
 object IShellPaneContainerEvents {
   
-  @scala.inline
-  def apply(Register: (Event, js.Function) => Double, Unregister: Double => Unit): IShellPaneContainerEvents = {
+  inline def apply(Register: (Event, js.Function) => Double, Unregister: Double => Unit): IShellPaneContainerEvents = {
     val __obj = js.Dynamic.literal(Register = js.Any.fromFunction2(Register), Unregister = js.Any.fromFunction1(Unregister))
     __obj.asInstanceOf[IShellPaneContainerEvents]
   }
   
-  @scala.inline
-  implicit class IShellPaneContainerEventsMutableBuilder[Self <: IShellPaneContainerEvents] (val x: Self) extends AnyVal {
+  extension [Self <: IShellPaneContainerEvents](x: Self) {
     
-    @scala.inline
-    def setOnHidePane(value: () => Unit): Self = StObject.set(x, "OnHidePane", js.Any.fromFunction0(value))
+    inline def setOnHidePane(value: () => Unit): Self = StObject.set(x, "OnHidePane", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnHidePaneUndefined: Self = StObject.set(x, "OnHidePane", js.undefined)
+    inline def setOnHidePaneUndefined: Self = StObject.set(x, "OnHidePane", js.undefined)
     
-    @scala.inline
-    def setOnMinimizedStateChanged(value: () => Unit): Self = StObject.set(x, "OnMinimizedStateChanged", js.Any.fromFunction0(value))
+    inline def setOnMinimizedStateChanged(value: () => Unit): Self = StObject.set(x, "OnMinimizedStateChanged", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnMinimizedStateChangedUndefined: Self = StObject.set(x, "OnMinimizedStateChanged", js.undefined)
+    inline def setOnMinimizedStateChangedUndefined: Self = StObject.set(x, "OnMinimizedStateChanged", js.undefined)
     
-    @scala.inline
-    def setOnNewTab(value: /* tab */ IShellPaneTab => Unit): Self = StObject.set(x, "OnNewTab", js.Any.fromFunction1(value))
+    inline def setOnNewTab(value: /* tab */ IShellPaneTab => Unit): Self = StObject.set(x, "OnNewTab", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnNewTabUndefined: Self = StObject.set(x, "OnNewTab", js.undefined)
+    inline def setOnNewTabUndefined: Self = StObject.set(x, "OnNewTab", js.undefined)
     
-    @scala.inline
-    def setOnPaneResized(value: () => Unit): Self = StObject.set(x, "OnPaneResized", js.Any.fromFunction0(value))
+    inline def setOnPaneResized(value: () => Unit): Self = StObject.set(x, "OnPaneResized", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnPaneResizedUndefined: Self = StObject.set(x, "OnPaneResized", js.undefined)
+    inline def setOnPaneResizedUndefined: Self = StObject.set(x, "OnPaneResized", js.undefined)
     
-    @scala.inline
-    def setOnShowPane(value: () => Unit): Self = StObject.set(x, "OnShowPane", js.Any.fromFunction0(value))
+    inline def setOnShowPane(value: () => Unit): Self = StObject.set(x, "OnShowPane", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnShowPaneUndefined: Self = StObject.set(x, "OnShowPane", js.undefined)
+    inline def setOnShowPaneUndefined: Self = StObject.set(x, "OnShowPane", js.undefined)
     
-    @scala.inline
-    def setOnStarted(value: () => Unit): Self = StObject.set(x, "OnStarted", js.Any.fromFunction0(value))
+    inline def setOnStarted(value: () => Unit): Self = StObject.set(x, "OnStarted", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnStartedUndefined: Self = StObject.set(x, "OnStarted", js.undefined)
+    inline def setOnStartedUndefined: Self = StObject.set(x, "OnStarted", js.undefined)
     
-    @scala.inline
-    def setOnStop(value: () => Unit): Self = StObject.set(x, "OnStop", js.Any.fromFunction0(value))
+    inline def setOnStop(value: () => Unit): Self = StObject.set(x, "OnStop", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnStopUndefined: Self = StObject.set(x, "OnStop", js.undefined)
+    inline def setOnStopUndefined: Self = StObject.set(x, "OnStop", js.undefined)
     
-    @scala.inline
-    def setOnTabSelected(value: () => Unit): Self = StObject.set(x, "OnTabSelected", js.Any.fromFunction0(value))
+    inline def setOnTabSelected(value: () => Unit): Self = StObject.set(x, "OnTabSelected", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnTabSelectedUndefined: Self = StObject.set(x, "OnTabSelected", js.undefined)
+    inline def setOnTabSelectedUndefined: Self = StObject.set(x, "OnTabSelected", js.undefined)
     
-    @scala.inline
-    def setOnTabUnselected(value: () => Unit): Self = StObject.set(x, "OnTabUnselected", js.Any.fromFunction0(value))
+    inline def setOnTabUnselected(value: () => Unit): Self = StObject.set(x, "OnTabUnselected", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnTabUnselectedUndefined: Self = StObject.set(x, "OnTabUnselected", js.undefined)
+    inline def setOnTabUnselectedUndefined: Self = StObject.set(x, "OnTabUnselected", js.undefined)
   }
 }

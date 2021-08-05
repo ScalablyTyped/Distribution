@@ -18,25 +18,19 @@ trait AwsApiGatewayAccessLogSettings extends StObject {
 }
 object AwsApiGatewayAccessLogSettings {
   
-  @scala.inline
-  def apply(): AwsApiGatewayAccessLogSettings = {
+  inline def apply(): AwsApiGatewayAccessLogSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsApiGatewayAccessLogSettings]
   }
   
-  @scala.inline
-  implicit class AwsApiGatewayAccessLogSettingsMutableBuilder[Self <: AwsApiGatewayAccessLogSettings] (val x: Self) extends AnyVal {
+  extension [Self <: AwsApiGatewayAccessLogSettings](x: Self) {
     
-    @scala.inline
-    def setDestinationArn(value: NonEmptyString): Self = StObject.set(x, "DestinationArn", value.asInstanceOf[js.Any])
+    inline def setDestinationArn(value: NonEmptyString): Self = StObject.set(x, "DestinationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationArnUndefined: Self = StObject.set(x, "DestinationArn", js.undefined)
+    inline def setDestinationArnUndefined: Self = StObject.set(x, "DestinationArn", js.undefined)
     
-    @scala.inline
-    def setFormat(value: NonEmptyString): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: NonEmptyString): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
   }
 }

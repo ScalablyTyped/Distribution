@@ -23,31 +23,23 @@ trait ColumnUnfixingEventUIParam extends StObject {
 }
 object ColumnUnfixingEventUIParam {
   
-  @scala.inline
-  def apply(): ColumnUnfixingEventUIParam = {
+  inline def apply(): ColumnUnfixingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColumnUnfixingEventUIParam]
   }
   
-  @scala.inline
-  implicit class ColumnUnfixingEventUIParamMutableBuilder[Self <: ColumnUnfixingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnUnfixingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setColumnIdentifier(value: js.Any): Self = StObject.set(x, "columnIdentifier", value.asInstanceOf[js.Any])
+    inline def setColumnIdentifier(value: js.Any): Self = StObject.set(x, "columnIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnIdentifierUndefined: Self = StObject.set(x, "columnIdentifier", js.undefined)
+    inline def setColumnIdentifierUndefined: Self = StObject.set(x, "columnIdentifier", js.undefined)
     
-    @scala.inline
-    def setIsGroupHeader(value: Boolean): Self = StObject.set(x, "isGroupHeader", value.asInstanceOf[js.Any])
+    inline def setIsGroupHeader(value: Boolean): Self = StObject.set(x, "isGroupHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsGroupHeaderUndefined: Self = StObject.set(x, "isGroupHeader", js.undefined)
+    inline def setIsGroupHeaderUndefined: Self = StObject.set(x, "isGroupHeader", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

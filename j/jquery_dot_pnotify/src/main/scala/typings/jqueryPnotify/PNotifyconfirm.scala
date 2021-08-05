@@ -43,58 +43,41 @@ trait PNotifyconfirm extends StObject {
 }
 object PNotifyconfirm {
   
-  @scala.inline
-  def apply(): PNotifyconfirm = {
+  inline def apply(): PNotifyconfirm = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PNotifyconfirm]
   }
   
-  @scala.inline
-  implicit class PNotifyconfirmMutableBuilder[Self <: PNotifyconfirm] (val x: Self) extends AnyVal {
+  extension [Self <: PNotifyconfirm](x: Self) {
     
-    @scala.inline
-    def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    @scala.inline
-    def setButtons(value: js.Array[PNotifyconfirmButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: js.Array[PNotifyconfirmButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+    inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    @scala.inline
-    def setButtonsVarargs(value: PNotifyconfirmButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: PNotifyconfirmButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
-    @scala.inline
-    def setConfirm(value: Boolean): Self = StObject.set(x, "confirm", value.asInstanceOf[js.Any])
+    inline def setConfirm(value: Boolean): Self = StObject.set(x, "confirm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfirmUndefined: Self = StObject.set(x, "confirm", js.undefined)
+    inline def setConfirmUndefined: Self = StObject.set(x, "confirm", js.undefined)
     
-    @scala.inline
-    def setPrompt(value: Boolean): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+    inline def setPrompt(value: Boolean): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
+    inline def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
     
-    @scala.inline
-    def setPrompt_class(value: String): Self = StObject.set(x, "prompt_class", value.asInstanceOf[js.Any])
+    inline def setPrompt_class(value: String): Self = StObject.set(x, "prompt_class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrompt_classUndefined: Self = StObject.set(x, "prompt_class", js.undefined)
+    inline def setPrompt_classUndefined: Self = StObject.set(x, "prompt_class", js.undefined)
     
-    @scala.inline
-    def setPrompt_default(value: String): Self = StObject.set(x, "prompt_default", value.asInstanceOf[js.Any])
+    inline def setPrompt_default(value: String): Self = StObject.set(x, "prompt_default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrompt_defaultUndefined: Self = StObject.set(x, "prompt_default", js.undefined)
+    inline def setPrompt_defaultUndefined: Self = StObject.set(x, "prompt_default", js.undefined)
     
-    @scala.inline
-    def setPrompt_multi_line(value: Boolean): Self = StObject.set(x, "prompt_multi_line", value.asInstanceOf[js.Any])
+    inline def setPrompt_multi_line(value: Boolean): Self = StObject.set(x, "prompt_multi_line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrompt_multi_lineUndefined: Self = StObject.set(x, "prompt_multi_line", js.undefined)
+    inline def setPrompt_multi_lineUndefined: Self = StObject.set(x, "prompt_multi_line", js.undefined)
   }
 }

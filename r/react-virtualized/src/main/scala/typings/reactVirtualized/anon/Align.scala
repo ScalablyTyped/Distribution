@@ -24,8 +24,7 @@ trait Align extends StObject {
 }
 object Align {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     align: auto | start | end | center,
     cellIndex: Double,
     height: Double,
@@ -37,25 +36,18 @@ object Align {
     __obj.asInstanceOf[Align]
   }
   
-  @scala.inline
-  implicit class AlignMutableBuilder[Self <: Align] (val x: Self) extends AnyVal {
+  extension [Self <: Align](x: Self) {
     
-    @scala.inline
-    def setAlign(value: auto | start | end | center): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: auto | start | end | center): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellIndex(value: Double): Self = StObject.set(x, "cellIndex", value.asInstanceOf[js.Any])
+    inline def setCellIndex(value: Double): Self = StObject.set(x, "cellIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
+    inline def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
+    inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

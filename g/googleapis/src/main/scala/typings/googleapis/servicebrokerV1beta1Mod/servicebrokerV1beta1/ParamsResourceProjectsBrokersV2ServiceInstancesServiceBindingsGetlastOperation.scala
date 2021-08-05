@@ -41,43 +41,31 @@ trait ParamsResourceProjectsBrokersV2ServiceInstancesServiceBindingsGetlastOpera
 }
 object ParamsResourceProjectsBrokersV2ServiceInstancesServiceBindingsGetlastOperation {
   
-  @scala.inline
-  def apply(): ParamsResourceProjectsBrokersV2ServiceInstancesServiceBindingsGetlastOperation = {
+  inline def apply(): ParamsResourceProjectsBrokersV2ServiceInstancesServiceBindingsGetlastOperation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceProjectsBrokersV2ServiceInstancesServiceBindingsGetlastOperation]
   }
   
-  @scala.inline
-  implicit class ParamsResourceProjectsBrokersV2ServiceInstancesServiceBindingsGetlastOperationMutableBuilder[Self <: ParamsResourceProjectsBrokersV2ServiceInstancesServiceBindingsGetlastOperation] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceProjectsBrokersV2ServiceInstancesServiceBindingsGetlastOperation](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+    inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
-    @scala.inline
-    def setPlanId(value: String): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
+    inline def setPlanId(value: String): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlanIdUndefined: Self = StObject.set(x, "planId", js.undefined)
+    inline def setPlanIdUndefined: Self = StObject.set(x, "planId", js.undefined)
     
-    @scala.inline
-    def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
+    inline def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceIdUndefined: Self = StObject.set(x, "serviceId", js.undefined)
+    inline def setServiceIdUndefined: Self = StObject.set(x, "serviceId", js.undefined)
   }
 }

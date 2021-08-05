@@ -12,16 +12,13 @@ trait AdditionalPropertiesParams
 }
 object AdditionalPropertiesParams {
   
-  @scala.inline
-  def apply(additionalProperty: String): AdditionalPropertiesParams = {
+  inline def apply(additionalProperty: String): AdditionalPropertiesParams = {
     val __obj = js.Dynamic.literal(additionalProperty = additionalProperty.asInstanceOf[js.Any])
     __obj.asInstanceOf[AdditionalPropertiesParams]
   }
   
-  @scala.inline
-  implicit class AdditionalPropertiesParamsMutableBuilder[Self <: AdditionalPropertiesParams] (val x: Self) extends AnyVal {
+  extension [Self <: AdditionalPropertiesParams](x: Self) {
     
-    @scala.inline
-    def setAdditionalProperty(value: String): Self = StObject.set(x, "additionalProperty", value.asInstanceOf[js.Any])
+    inline def setAdditionalProperty(value: String): Self = StObject.set(x, "additionalProperty", value.asInstanceOf[js.Any])
   }
 }

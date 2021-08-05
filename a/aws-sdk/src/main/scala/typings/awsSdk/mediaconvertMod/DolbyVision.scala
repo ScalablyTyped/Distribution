@@ -23,31 +23,23 @@ trait DolbyVision extends StObject {
 }
 object DolbyVision {
   
-  @scala.inline
-  def apply(): DolbyVision = {
+  inline def apply(): DolbyVision = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DolbyVision]
   }
   
-  @scala.inline
-  implicit class DolbyVisionMutableBuilder[Self <: DolbyVision] (val x: Self) extends AnyVal {
+  extension [Self <: DolbyVision](x: Self) {
     
-    @scala.inline
-    def setL6Metadata(value: DolbyVisionLevel6Metadata): Self = StObject.set(x, "L6Metadata", value.asInstanceOf[js.Any])
+    inline def setL6Metadata(value: DolbyVisionLevel6Metadata): Self = StObject.set(x, "L6Metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setL6MetadataUndefined: Self = StObject.set(x, "L6Metadata", js.undefined)
+    inline def setL6MetadataUndefined: Self = StObject.set(x, "L6Metadata", js.undefined)
     
-    @scala.inline
-    def setL6Mode(value: DolbyVisionLevel6Mode): Self = StObject.set(x, "L6Mode", value.asInstanceOf[js.Any])
+    inline def setL6Mode(value: DolbyVisionLevel6Mode): Self = StObject.set(x, "L6Mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setL6ModeUndefined: Self = StObject.set(x, "L6Mode", js.undefined)
+    inline def setL6ModeUndefined: Self = StObject.set(x, "L6Mode", js.undefined)
     
-    @scala.inline
-    def setProfile(value: DolbyVisionProfile): Self = StObject.set(x, "Profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: DolbyVisionProfile): Self = StObject.set(x, "Profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileUndefined: Self = StObject.set(x, "Profile", js.undefined)
+    inline def setProfileUndefined: Self = StObject.set(x, "Profile", js.undefined)
   }
 }

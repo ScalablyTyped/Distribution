@@ -14,22 +14,17 @@ trait ReturnTypeGetRelayoutBoundaryResponse extends StObject {
 }
 object ReturnTypeGetRelayoutBoundaryResponse {
   
-  @scala.inline
-  def apply(paramsType: js.Array[GetRelayoutBoundaryRequest], returnType: GetRelayoutBoundaryResponse): ReturnTypeGetRelayoutBoundaryResponse = {
+  inline def apply(paramsType: js.Array[GetRelayoutBoundaryRequest], returnType: GetRelayoutBoundaryResponse): ReturnTypeGetRelayoutBoundaryResponse = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnTypeGetRelayoutBoundaryResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeGetRelayoutBoundaryResponseMutableBuilder[Self <: ReturnTypeGetRelayoutBoundaryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeGetRelayoutBoundaryResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[GetRelayoutBoundaryRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[GetRelayoutBoundaryRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: GetRelayoutBoundaryRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: GetRelayoutBoundaryRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: GetRelayoutBoundaryResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: GetRelayoutBoundaryResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

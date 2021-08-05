@@ -17,31 +17,23 @@ trait IStylesOptions extends StObject {
 }
 object IStylesOptions {
   
-  @scala.inline
-  def apply(): IStylesOptions = {
+  inline def apply(): IStylesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IStylesOptions]
   }
   
-  @scala.inline
-  implicit class IStylesOptionsMutableBuilder[Self <: IStylesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IStylesOptions](x: Self) {
     
-    @scala.inline
-    def setPolygonOptions(value: IPolygonOptions): Self = StObject.set(x, "polygonOptions", value.asInstanceOf[js.Any])
+    inline def setPolygonOptions(value: IPolygonOptions): Self = StObject.set(x, "polygonOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolygonOptionsUndefined: Self = StObject.set(x, "polygonOptions", js.undefined)
+    inline def setPolygonOptionsUndefined: Self = StObject.set(x, "polygonOptions", js.undefined)
     
-    @scala.inline
-    def setPolylineOptions(value: IPolylineOptions): Self = StObject.set(x, "polylineOptions", value.asInstanceOf[js.Any])
+    inline def setPolylineOptions(value: IPolylineOptions): Self = StObject.set(x, "polylineOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolylineOptionsUndefined: Self = StObject.set(x, "polylineOptions", js.undefined)
+    inline def setPolylineOptionsUndefined: Self = StObject.set(x, "polylineOptions", js.undefined)
     
-    @scala.inline
-    def setPushpinOptions(value: IPushpinOptions): Self = StObject.set(x, "pushpinOptions", value.asInstanceOf[js.Any])
+    inline def setPushpinOptions(value: IPushpinOptions): Self = StObject.set(x, "pushpinOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPushpinOptionsUndefined: Self = StObject.set(x, "pushpinOptions", js.undefined)
+    inline def setPushpinOptionsUndefined: Self = StObject.set(x, "pushpinOptions", js.undefined)
   }
 }

@@ -15,6 +15,5 @@ object ThreeDTransform {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(): typings.wonderJs.threeDTransformMod.ThreeDTransform = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.threeDTransformMod.ThreeDTransform]
+  inline def create(): typings.wonderJs.threeDTransformMod.ThreeDTransform = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.threeDTransformMod.ThreeDTransform]
 }

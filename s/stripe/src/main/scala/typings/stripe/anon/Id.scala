@@ -21,28 +21,21 @@ trait Id extends StObject {
 }
 object Id {
   
-  @scala.inline
-  def apply(): Id = {
+  inline def apply(): Id = {
     val __obj = js.Dynamic.literal(id = null)
     __obj.asInstanceOf[Id]
   }
   
-  @scala.inline
-  implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
+  extension [Self <: Id](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdNull: Self = StObject.set(x, "id", null)
+    inline def setIdNull: Self = StObject.set(x, "id", null)
     
-    @scala.inline
-    def setIdempotency_key(value: String): Self = StObject.set(x, "idempotency_key", value.asInstanceOf[js.Any])
+    inline def setIdempotency_key(value: String): Self = StObject.set(x, "idempotency_key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdempotency_keyNull: Self = StObject.set(x, "idempotency_key", null)
+    inline def setIdempotency_keyNull: Self = StObject.set(x, "idempotency_key", null)
     
-    @scala.inline
-    def setIdempotency_keyUndefined: Self = StObject.set(x, "idempotency_key", js.undefined)
+    inline def setIdempotency_keyUndefined: Self = StObject.set(x, "idempotency_key", js.undefined)
   }
 }

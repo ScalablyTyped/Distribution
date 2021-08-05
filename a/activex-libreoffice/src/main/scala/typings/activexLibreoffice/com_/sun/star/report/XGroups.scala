@@ -31,8 +31,7 @@ trait XGroups
 }
 object XGroups {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementType: `type`,
     Parent: XInterface,
@@ -60,13 +59,10 @@ object XGroups {
     __obj.asInstanceOf[XGroups]
   }
   
-  @scala.inline
-  implicit class XGroupsMutableBuilder[Self <: XGroups] (val x: Self) extends AnyVal {
+  extension [Self <: XGroups](x: Self) {
     
-    @scala.inline
-    def setCreateGroup(value: () => XGroup): Self = StObject.set(x, "createGroup", js.Any.fromFunction0(value))
+    inline def setCreateGroup(value: () => XGroup): Self = StObject.set(x, "createGroup", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReportDefinition(value: XReportDefinition): Self = StObject.set(x, "ReportDefinition", value.asInstanceOf[js.Any])
+    inline def setReportDefinition(value: XReportDefinition): Self = StObject.set(x, "ReportDefinition", value.asInstanceOf[js.Any])
   }
 }

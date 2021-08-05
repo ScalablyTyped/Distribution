@@ -13,22 +13,17 @@ trait DescribeElasticLoadBalancersResult extends StObject {
 }
 object DescribeElasticLoadBalancersResult {
   
-  @scala.inline
-  def apply(): DescribeElasticLoadBalancersResult = {
+  inline def apply(): DescribeElasticLoadBalancersResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeElasticLoadBalancersResult]
   }
   
-  @scala.inline
-  implicit class DescribeElasticLoadBalancersResultMutableBuilder[Self <: DescribeElasticLoadBalancersResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeElasticLoadBalancersResult](x: Self) {
     
-    @scala.inline
-    def setElasticLoadBalancers(value: ElasticLoadBalancers): Self = StObject.set(x, "ElasticLoadBalancers", value.asInstanceOf[js.Any])
+    inline def setElasticLoadBalancers(value: ElasticLoadBalancers): Self = StObject.set(x, "ElasticLoadBalancers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElasticLoadBalancersUndefined: Self = StObject.set(x, "ElasticLoadBalancers", js.undefined)
+    inline def setElasticLoadBalancersUndefined: Self = StObject.set(x, "ElasticLoadBalancers", js.undefined)
     
-    @scala.inline
-    def setElasticLoadBalancersVarargs(value: ElasticLoadBalancer*): Self = StObject.set(x, "ElasticLoadBalancers", js.Array(value :_*))
+    inline def setElasticLoadBalancersVarargs(value: ElasticLoadBalancer*): Self = StObject.set(x, "ElasticLoadBalancers", js.Array(value :_*))
   }
 }

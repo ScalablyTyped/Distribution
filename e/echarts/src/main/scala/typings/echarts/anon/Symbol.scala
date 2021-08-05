@@ -260,124 +260,85 @@ trait Symbol extends StObject {
 }
 object Symbol {
   
-  @scala.inline
-  def apply(): Symbol = {
+  inline def apply(): Symbol = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Symbol]
   }
   
-  @scala.inline
-  implicit class SymbolMutableBuilder[Self <: Symbol] (val x: Self) extends AnyVal {
+  extension [Self <: Symbol](x: Self) {
     
-    @scala.inline
-    def setCoord(value: js.Array[js.Any]): Self = StObject.set(x, "coord", value.asInstanceOf[js.Any])
+    inline def setCoord(value: js.Array[js.Any]): Self = StObject.set(x, "coord", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoordUndefined: Self = StObject.set(x, "coord", js.undefined)
+    inline def setCoordUndefined: Self = StObject.set(x, "coord", js.undefined)
     
-    @scala.inline
-    def setCoordVarargs(value: js.Any*): Self = StObject.set(x, "coord", js.Array(value :_*))
+    inline def setCoordVarargs(value: js.Any*): Self = StObject.set(x, "coord", js.Array(value :_*))
     
-    @scala.inline
-    def setLabel(value: Position): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: Position): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setLineStyle(value: ShadowOffsetX): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
+    inline def setLineStyle(value: ShadowOffsetX): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
+    inline def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolKeepAspect(value: Boolean): Self = StObject.set(x, "symbolKeepAspect", value.asInstanceOf[js.Any])
+    inline def setSymbolKeepAspect(value: Boolean): Self = StObject.set(x, "symbolKeepAspect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolKeepAspectUndefined: Self = StObject.set(x, "symbolKeepAspect", js.undefined)
+    inline def setSymbolKeepAspectUndefined: Self = StObject.set(x, "symbolKeepAspect", js.undefined)
     
-    @scala.inline
-    def setSymbolOffset(value: js.Array[js.Any]): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
+    inline def setSymbolOffset(value: js.Array[js.Any]): Self = StObject.set(x, "symbolOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolOffsetUndefined: Self = StObject.set(x, "symbolOffset", js.undefined)
+    inline def setSymbolOffsetUndefined: Self = StObject.set(x, "symbolOffset", js.undefined)
     
-    @scala.inline
-    def setSymbolOffsetVarargs(value: js.Any*): Self = StObject.set(x, "symbolOffset", js.Array(value :_*))
+    inline def setSymbolOffsetVarargs(value: js.Any*): Self = StObject.set(x, "symbolOffset", js.Array(value :_*))
     
-    @scala.inline
-    def setSymbolRotate(value: Double): Self = StObject.set(x, "symbolRotate", value.asInstanceOf[js.Any])
+    inline def setSymbolRotate(value: Double): Self = StObject.set(x, "symbolRotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolRotateUndefined: Self = StObject.set(x, "symbolRotate", js.undefined)
+    inline def setSymbolRotateUndefined: Self = StObject.set(x, "symbolRotate", js.undefined)
     
-    @scala.inline
-    def setSymbolSize(value: js.Array[js.Any] | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
+    inline def setSymbolSize(value: js.Array[js.Any] | Double): Self = StObject.set(x, "symbolSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbolSizeUndefined: Self = StObject.set(x, "symbolSize", js.undefined)
+    inline def setSymbolSizeUndefined: Self = StObject.set(x, "symbolSize", js.undefined)
     
-    @scala.inline
-    def setSymbolSizeVarargs(value: js.Any*): Self = StObject.set(x, "symbolSize", js.Array(value :_*))
+    inline def setSymbolSizeVarargs(value: js.Any*): Self = StObject.set(x, "symbolSize", js.Array(value :_*))
     
-    @scala.inline
-    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+    inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueDim(value: String): Self = StObject.set(x, "valueDim", value.asInstanceOf[js.Any])
+    inline def setValueDim(value: String): Self = StObject.set(x, "valueDim", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueDimUndefined: Self = StObject.set(x, "valueDim", js.undefined)
+    inline def setValueDimUndefined: Self = StObject.set(x, "valueDim", js.undefined)
     
-    @scala.inline
-    def setValueIndex(value: Double): Self = StObject.set(x, "valueIndex", value.asInstanceOf[js.Any])
+    inline def setValueIndex(value: Double): Self = StObject.set(x, "valueIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueIndexUndefined: Self = StObject.set(x, "valueIndex", js.undefined)
+    inline def setValueIndexUndefined: Self = StObject.set(x, "valueIndex", js.undefined)
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXAxis(value: Double): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
+    inline def setXAxis(value: Double): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
+    inline def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYAxis(value: Double): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
+    inline def setYAxis(value: Double): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
+    inline def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

@@ -12,16 +12,13 @@ trait PickImplrequired extends StObject {
 }
 object PickImplrequired {
   
-  @scala.inline
-  def apply(required: RegExp): PickImplrequired = {
+  inline def apply(required: RegExp): PickImplrequired = {
     val __obj = js.Dynamic.literal(required = required.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplrequired]
   }
   
-  @scala.inline
-  implicit class PickImplrequiredMutableBuilder[Self <: PickImplrequired] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplrequired](x: Self) {
     
-    @scala.inline
-    def setRequired(value: RegExp): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: RegExp): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
   }
 }

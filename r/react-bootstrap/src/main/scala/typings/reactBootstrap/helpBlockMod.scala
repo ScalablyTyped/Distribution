@@ -25,20 +25,16 @@ object helpBlockMod {
   }
   object HelpBlockProps {
     
-    @scala.inline
-    def apply(): HelpBlockProps = {
+    inline def apply(): HelpBlockProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HelpBlockProps]
     }
     
-    @scala.inline
-    implicit class HelpBlockPropsMutableBuilder[Self <: HelpBlockProps] (val x: Self) extends AnyVal {
+    extension [Self <: HelpBlockProps](x: Self) {
       
-      @scala.inline
-      def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
+      inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
+      inline def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
     }
   }
 }

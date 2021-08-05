@@ -13,16 +13,13 @@ trait GetIdentityNotificationAttributesResponse extends StObject {
 }
 object GetIdentityNotificationAttributesResponse {
   
-  @scala.inline
-  def apply(NotificationAttributes: NotificationAttributes): GetIdentityNotificationAttributesResponse = {
+  inline def apply(NotificationAttributes: NotificationAttributes): GetIdentityNotificationAttributesResponse = {
     val __obj = js.Dynamic.literal(NotificationAttributes = NotificationAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetIdentityNotificationAttributesResponse]
   }
   
-  @scala.inline
-  implicit class GetIdentityNotificationAttributesResponseMutableBuilder[Self <: GetIdentityNotificationAttributesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetIdentityNotificationAttributesResponse](x: Self) {
     
-    @scala.inline
-    def setNotificationAttributes(value: NotificationAttributes): Self = StObject.set(x, "NotificationAttributes", value.asInstanceOf[js.Any])
+    inline def setNotificationAttributes(value: NotificationAttributes): Self = StObject.set(x, "NotificationAttributes", value.asInstanceOf[js.Any])
   }
 }

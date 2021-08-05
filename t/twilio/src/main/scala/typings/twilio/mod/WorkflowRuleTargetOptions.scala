@@ -16,34 +16,25 @@ trait WorkflowRuleTargetOptions extends StObject {
 }
 object WorkflowRuleTargetOptions {
   
-  @scala.inline
-  def apply(queue: String): WorkflowRuleTargetOptions = {
+  inline def apply(queue: String): WorkflowRuleTargetOptions = {
     val __obj = js.Dynamic.literal(queue = queue.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkflowRuleTargetOptions]
   }
   
-  @scala.inline
-  implicit class WorkflowRuleTargetOptionsMutableBuilder[Self <: WorkflowRuleTargetOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WorkflowRuleTargetOptions](x: Self) {
     
-    @scala.inline
-    def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
+    inline def setExpressionUndefined: Self = StObject.set(x, "expression", js.undefined)
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
+    inline def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
     
-    @scala.inline
-    def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+    inline def setQueue(value: String): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
   }
 }

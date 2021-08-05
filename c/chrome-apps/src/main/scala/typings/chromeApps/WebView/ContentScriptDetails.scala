@@ -70,85 +70,59 @@ trait ContentScriptDetails extends StObject {
 }
 object ContentScriptDetails {
   
-  @scala.inline
-  def apply(matches: js.Array[String], name: String): ContentScriptDetails = {
+  inline def apply(matches: js.Array[String], name: String): ContentScriptDetails = {
     val __obj = js.Dynamic.literal(matches = matches.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentScriptDetails]
   }
   
-  @scala.inline
-  implicit class ContentScriptDetailsMutableBuilder[Self <: ContentScriptDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ContentScriptDetails](x: Self) {
     
-    @scala.inline
-    def setAll_frames(value: Boolean): Self = StObject.set(x, "all_frames", value.asInstanceOf[js.Any])
+    inline def setAll_frames(value: Boolean): Self = StObject.set(x, "all_frames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAll_framesUndefined: Self = StObject.set(x, "all_frames", js.undefined)
+    inline def setAll_framesUndefined: Self = StObject.set(x, "all_frames", js.undefined)
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setCss(value: InjectionItems): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: InjectionItems): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
+    inline def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
-    @scala.inline
-    def setExclude_globs(value: js.Array[String]): Self = StObject.set(x, "exclude_globs", value.asInstanceOf[js.Any])
+    inline def setExclude_globs(value: js.Array[String]): Self = StObject.set(x, "exclude_globs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclude_globsUndefined: Self = StObject.set(x, "exclude_globs", js.undefined)
+    inline def setExclude_globsUndefined: Self = StObject.set(x, "exclude_globs", js.undefined)
     
-    @scala.inline
-    def setExclude_globsVarargs(value: String*): Self = StObject.set(x, "exclude_globs", js.Array(value :_*))
+    inline def setExclude_globsVarargs(value: String*): Self = StObject.set(x, "exclude_globs", js.Array(value :_*))
     
-    @scala.inline
-    def setExclude_matches(value: js.Array[String]): Self = StObject.set(x, "exclude_matches", value.asInstanceOf[js.Any])
+    inline def setExclude_matches(value: js.Array[String]): Self = StObject.set(x, "exclude_matches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclude_matchesUndefined: Self = StObject.set(x, "exclude_matches", js.undefined)
+    inline def setExclude_matchesUndefined: Self = StObject.set(x, "exclude_matches", js.undefined)
     
-    @scala.inline
-    def setExclude_matchesVarargs(value: String*): Self = StObject.set(x, "exclude_matches", js.Array(value :_*))
+    inline def setExclude_matchesVarargs(value: String*): Self = StObject.set(x, "exclude_matches", js.Array(value :_*))
     
-    @scala.inline
-    def setInclude_globs(value: js.Array[String]): Self = StObject.set(x, "include_globs", value.asInstanceOf[js.Any])
+    inline def setInclude_globs(value: js.Array[String]): Self = StObject.set(x, "include_globs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInclude_globsUndefined: Self = StObject.set(x, "include_globs", js.undefined)
+    inline def setInclude_globsUndefined: Self = StObject.set(x, "include_globs", js.undefined)
     
-    @scala.inline
-    def setInclude_globsVarargs(value: String*): Self = StObject.set(x, "include_globs", js.Array(value :_*))
+    inline def setInclude_globsVarargs(value: String*): Self = StObject.set(x, "include_globs", js.Array(value :_*))
     
-    @scala.inline
-    def setJs_(value: InjectionItems): Self = StObject.set(x, "js", value.asInstanceOf[js.Any])
+    inline def setJs_(value: InjectionItems): Self = StObject.set(x, "js", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJs_Undefined: Self = StObject.set(x, "js", js.undefined)
+    inline def setJs_Undefined: Self = StObject.set(x, "js", js.undefined)
     
-    @scala.inline
-    def setMatch_about_blank(value: Boolean): Self = StObject.set(x, "match_about_blank", value.asInstanceOf[js.Any])
+    inline def setMatch_about_blank(value: Boolean): Self = StObject.set(x, "match_about_blank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatch_about_blankUndefined: Self = StObject.set(x, "match_about_blank", js.undefined)
+    inline def setMatch_about_blankUndefined: Self = StObject.set(x, "match_about_blank", js.undefined)
     
-    @scala.inline
-    def setMatches(value: js.Array[String]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
+    inline def setMatches(value: js.Array[String]): Self = StObject.set(x, "matches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchesVarargs(value: String*): Self = StObject.set(x, "matches", js.Array(value :_*))
+    inline def setMatchesVarargs(value: String*): Self = StObject.set(x, "matches", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRun_at(value: RunAt): Self = StObject.set(x, "run_at", value.asInstanceOf[js.Any])
+    inline def setRun_at(value: RunAt): Self = StObject.set(x, "run_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRun_atUndefined: Self = StObject.set(x, "run_at", js.undefined)
+    inline def setRun_atUndefined: Self = StObject.set(x, "run_at", js.undefined)
   }
 }

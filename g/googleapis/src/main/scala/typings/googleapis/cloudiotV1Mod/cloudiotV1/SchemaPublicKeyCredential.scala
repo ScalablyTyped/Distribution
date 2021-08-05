@@ -21,25 +21,19 @@ trait SchemaPublicKeyCredential extends StObject {
 }
 object SchemaPublicKeyCredential {
   
-  @scala.inline
-  def apply(): SchemaPublicKeyCredential = {
+  inline def apply(): SchemaPublicKeyCredential = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPublicKeyCredential]
   }
   
-  @scala.inline
-  implicit class SchemaPublicKeyCredentialMutableBuilder[Self <: SchemaPublicKeyCredential] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPublicKeyCredential](x: Self) {
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
   }
 }

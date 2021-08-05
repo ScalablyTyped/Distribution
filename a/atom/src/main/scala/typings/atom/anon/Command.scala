@@ -17,31 +17,23 @@ trait Command extends StObject {
 }
 object Command {
   
-  @scala.inline
-  def apply(): Command = {
+  inline def apply(): Command = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Command]
   }
   
-  @scala.inline
-  implicit class CommandMutableBuilder[Self <: Command] (val x: Self) extends AnyVal {
+  extension [Self <: Command](x: Self) {
     
-    @scala.inline
-    def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
+    inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     
-    @scala.inline
-    def setKeystrokes(value: String): Self = StObject.set(x, "keystrokes", value.asInstanceOf[js.Any])
+    inline def setKeystrokes(value: String): Self = StObject.set(x, "keystrokes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeystrokesUndefined: Self = StObject.set(x, "keystrokes", js.undefined)
+    inline def setKeystrokesUndefined: Self = StObject.set(x, "keystrokes", js.undefined)
     
-    @scala.inline
-    def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

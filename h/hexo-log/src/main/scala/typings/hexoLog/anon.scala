@@ -16,32 +16,24 @@ object anon {
   }
   object Debug {
     
-    @scala.inline
-    def apply(): Debug = {
+    inline def apply(): Debug = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Debug]
     }
     
-    @scala.inline
-    implicit class DebugMutableBuilder[Self <: Debug] (val x: Self) extends AnyVal {
+    extension [Self <: Debug](x: Self) {
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+      inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     }
   }
 }

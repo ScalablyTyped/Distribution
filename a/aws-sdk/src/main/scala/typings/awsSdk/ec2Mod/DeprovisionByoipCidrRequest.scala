@@ -18,22 +18,17 @@ trait DeprovisionByoipCidrRequest extends StObject {
 }
 object DeprovisionByoipCidrRequest {
   
-  @scala.inline
-  def apply(Cidr: String): DeprovisionByoipCidrRequest = {
+  inline def apply(Cidr: String): DeprovisionByoipCidrRequest = {
     val __obj = js.Dynamic.literal(Cidr = Cidr.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeprovisionByoipCidrRequest]
   }
   
-  @scala.inline
-  implicit class DeprovisionByoipCidrRequestMutableBuilder[Self <: DeprovisionByoipCidrRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeprovisionByoipCidrRequest](x: Self) {
     
-    @scala.inline
-    def setCidr(value: String): Self = StObject.set(x, "Cidr", value.asInstanceOf[js.Any])
+    inline def setCidr(value: String): Self = StObject.set(x, "Cidr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
   }
 }

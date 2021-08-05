@@ -59,58 +59,41 @@ trait SchemaErrorProto extends StObject {
 }
 object SchemaErrorProto {
   
-  @scala.inline
-  def apply(): SchemaErrorProto = {
+  inline def apply(): SchemaErrorProto = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaErrorProto]
   }
   
-  @scala.inline
-  implicit class SchemaErrorProtoMutableBuilder[Self <: SchemaErrorProto] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaErrorProto](x: Self) {
     
-    @scala.inline
-    def setArgument(value: js.Array[String]): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+    inline def setArgument(value: js.Array[String]): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgumentUndefined: Self = StObject.set(x, "argument", js.undefined)
+    inline def setArgumentUndefined: Self = StObject.set(x, "argument", js.undefined)
     
-    @scala.inline
-    def setArgumentVarargs(value: String*): Self = StObject.set(x, "argument", js.Array(value :_*))
+    inline def setArgumentVarargs(value: String*): Self = StObject.set(x, "argument", js.Array(value :_*))
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setDebugInfo(value: String): Self = StObject.set(x, "debugInfo", value.asInstanceOf[js.Any])
+    inline def setDebugInfo(value: String): Self = StObject.set(x, "debugInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugInfoUndefined: Self = StObject.set(x, "debugInfo", js.undefined)
+    inline def setDebugInfoUndefined: Self = StObject.set(x, "debugInfo", js.undefined)
     
-    @scala.inline
-    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
-    @scala.inline
-    def setExternalErrorMessage(value: String): Self = StObject.set(x, "externalErrorMessage", value.asInstanceOf[js.Any])
+    inline def setExternalErrorMessage(value: String): Self = StObject.set(x, "externalErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalErrorMessageUndefined: Self = StObject.set(x, "externalErrorMessage", js.undefined)
+    inline def setExternalErrorMessageUndefined: Self = StObject.set(x, "externalErrorMessage", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationType(value: String): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
+    inline def setLocationType(value: String): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationTypeUndefined: Self = StObject.set(x, "locationType", js.undefined)
+    inline def setLocationTypeUndefined: Self = StObject.set(x, "locationType", js.undefined)
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
   }
 }

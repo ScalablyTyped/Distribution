@@ -53,8 +53,7 @@ trait XUIConfigurationPersistence
 }
 object XUIConfigurationPersistence {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     isModified: () => Boolean,
     isReadOnly: () => Boolean,
@@ -68,22 +67,16 @@ object XUIConfigurationPersistence {
     __obj.asInstanceOf[XUIConfigurationPersistence]
   }
   
-  @scala.inline
-  implicit class XUIConfigurationPersistenceMutableBuilder[Self <: XUIConfigurationPersistence] (val x: Self) extends AnyVal {
+  extension [Self <: XUIConfigurationPersistence](x: Self) {
     
-    @scala.inline
-    def setIsModified(value: () => Boolean): Self = StObject.set(x, "isModified", js.Any.fromFunction0(value))
+    inline def setIsModified(value: () => Boolean): Self = StObject.set(x, "isModified", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsReadOnly(value: () => Boolean): Self = StObject.set(x, "isReadOnly", js.Any.fromFunction0(value))
+    inline def setIsReadOnly(value: () => Boolean): Self = StObject.set(x, "isReadOnly", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReload(value: () => Unit): Self = StObject.set(x, "reload", js.Any.fromFunction0(value))
+    inline def setReload(value: () => Unit): Self = StObject.set(x, "reload", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStore(value: () => Unit): Self = StObject.set(x, "store", js.Any.fromFunction0(value))
+    inline def setStore(value: () => Unit): Self = StObject.set(x, "store", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStoreToStorage(value: XStorage => Unit): Self = StObject.set(x, "storeToStorage", js.Any.fromFunction1(value))
+    inline def setStoreToStorage(value: XStorage => Unit): Self = StObject.set(x, "storeToStorage", js.Any.fromFunction1(value))
   }
 }

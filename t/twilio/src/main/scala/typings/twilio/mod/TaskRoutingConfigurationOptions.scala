@@ -14,31 +14,23 @@ trait TaskRoutingConfigurationOptions extends StObject {
 }
 object TaskRoutingConfigurationOptions {
   
-  @scala.inline
-  def apply(filters: js.Array[WorkflowRuleOptions]): TaskRoutingConfigurationOptions = {
+  inline def apply(filters: js.Array[WorkflowRuleOptions]): TaskRoutingConfigurationOptions = {
     val __obj = js.Dynamic.literal(filters = filters.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskRoutingConfigurationOptions]
   }
   
-  @scala.inline
-  implicit class TaskRoutingConfigurationOptionsMutableBuilder[Self <: TaskRoutingConfigurationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TaskRoutingConfigurationOptions](x: Self) {
     
-    @scala.inline
-    def setDefaultFilter(value: WorkflowRuleOptions): Self = StObject.set(x, "defaultFilter", value.asInstanceOf[js.Any])
+    inline def setDefaultFilter(value: WorkflowRuleOptions): Self = StObject.set(x, "defaultFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultFilterUndefined: Self = StObject.set(x, "defaultFilter", js.undefined)
+    inline def setDefaultFilterUndefined: Self = StObject.set(x, "defaultFilter", js.undefined)
     
-    @scala.inline
-    def setDefault_filter(value: WorkflowRuleOptions): Self = StObject.set(x, "default_filter", value.asInstanceOf[js.Any])
+    inline def setDefault_filter(value: WorkflowRuleOptions): Self = StObject.set(x, "default_filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefault_filterUndefined: Self = StObject.set(x, "default_filter", js.undefined)
+    inline def setDefault_filterUndefined: Self = StObject.set(x, "default_filter", js.undefined)
     
-    @scala.inline
-    def setFilters(value: js.Array[WorkflowRuleOptions]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: js.Array[WorkflowRuleOptions]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersVarargs(value: WorkflowRuleOptions*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: WorkflowRuleOptions*): Self = StObject.set(x, "filters", js.Array(value :_*))
   }
 }

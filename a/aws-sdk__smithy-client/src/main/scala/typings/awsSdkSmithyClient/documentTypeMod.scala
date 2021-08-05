@@ -24,8 +24,7 @@ object documentTypeMod {
          with _Value
     object Structure {
       
-      @scala.inline
-      def apply(): Structure = {
+      inline def apply(): Structure = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Structure]
       }

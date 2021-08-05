@@ -16,19 +16,15 @@ trait SchemaAddDealAssociationRequest extends StObject {
 }
 object SchemaAddDealAssociationRequest {
   
-  @scala.inline
-  def apply(): SchemaAddDealAssociationRequest = {
+  inline def apply(): SchemaAddDealAssociationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAddDealAssociationRequest]
   }
   
-  @scala.inline
-  implicit class SchemaAddDealAssociationRequestMutableBuilder[Self <: SchemaAddDealAssociationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAddDealAssociationRequest](x: Self) {
     
-    @scala.inline
-    def setAssociation(value: SchemaCreativeDealAssociation): Self = StObject.set(x, "association", value.asInstanceOf[js.Any])
+    inline def setAssociation(value: SchemaCreativeDealAssociation): Self = StObject.set(x, "association", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationUndefined: Self = StObject.set(x, "association", js.undefined)
+    inline def setAssociationUndefined: Self = StObject.set(x, "association", js.undefined)
   }
 }

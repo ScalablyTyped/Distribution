@@ -12,48 +12,41 @@ object rsocketCoreStrings {
   sealed trait Accept
     extends StObject
        with EventType
-  @scala.inline
-  def Accept: Accept = "Accept".asInstanceOf[Accept]
+  inline def Accept: Accept = "Accept".asInstanceOf[Accept]
   
   @js.native
   sealed trait Reject
     extends StObject
        with EventType
-  @scala.inline
-  def Reject: Reject = "Reject".asInstanceOf[Reject]
+  inline def Reject: Reject = "Reject".asInstanceOf[Reject]
   
   @js.native
   sealed trait Terminate
     extends StObject
        with EventType
-  @scala.inline
-  def Terminate: Terminate = "Terminate".asInstanceOf[Terminate]
+  inline def Terminate: Terminate = "Terminate".asInstanceOf[Terminate]
   
   @js.native
   sealed trait ascii
     extends StObject
        with Encoding
-  @scala.inline
-  def ascii: ascii = "ascii".asInstanceOf[ascii]
+  inline def ascii: ascii = "ascii".asInstanceOf[ascii]
   
   @js.native
   sealed trait base64
     extends StObject
        with Encoding
-  @scala.inline
-  def base64: base64 = "base64".asInstanceOf[base64]
+  inline def base64: base64 = "base64".asInstanceOf[base64]
   
   @js.native
   sealed trait hex
     extends StObject
        with Encoding
-  @scala.inline
-  def hex: hex = "hex".asInstanceOf[hex]
+  inline def hex: hex = "hex".asInstanceOf[hex]
   
   @js.native
   sealed trait utf8
     extends StObject
        with Encoding
-  @scala.inline
-  def utf8: utf8 = "utf8".asInstanceOf[utf8]
+  inline def utf8: utf8 = "utf8".asInstanceOf[utf8]
 }

@@ -10,24 +10,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(dir: String): String = ^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(dir: String, options: Pg): String = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(dir: String): String = ^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(dir: String, options: Pg): String = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("yesql", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def mysql[TParams /* <: js.Object */](query: String): js.Function1[/* params */ TParams, Sql[TParams]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mysql")(query.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* params */ TParams, Sql[TParams]]]
-  @scala.inline
-  def mysql[TParams /* <: js.Object */](query: String, options: Options): js.Function1[/* params */ TParams, Sql[TParams]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mysql")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* params */ TParams, Sql[TParams]]]
+  inline def mysql[TParams /* <: js.Object */](query: String): js.Function1[/* params */ TParams, Sql[TParams]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mysql")(query.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* params */ TParams, Sql[TParams]]]
+  inline def mysql[TParams /* <: js.Object */](query: String, options: Options): js.Function1[/* params */ TParams, Sql[TParams]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mysql")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* params */ TParams, Sql[TParams]]]
   
-  @scala.inline
-  def pg[TParams /* <: js.Object */](query: String): js.Function1[/* params */ TParams, Text[TParams]] = ^.asInstanceOf[js.Dynamic].applyDynamic("pg")(query.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* params */ TParams, Text[TParams]]]
-  @scala.inline
-  def pg[TParams /* <: js.Object */](query: String, options: Options): js.Function1[/* params */ TParams, Text[TParams]] = (^.asInstanceOf[js.Dynamic].applyDynamic("pg")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* params */ TParams, Text[TParams]]]
+  inline def pg[TParams /* <: js.Object */](query: String): js.Function1[/* params */ TParams, Text[TParams]] = ^.asInstanceOf[js.Dynamic].applyDynamic("pg")(query.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* params */ TParams, Text[TParams]]]
+  inline def pg[TParams /* <: js.Object */](query: String, options: Options): js.Function1[/* params */ TParams, Text[TParams]] = (^.asInstanceOf[js.Dynamic].applyDynamic("pg")(query.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* params */ TParams, Text[TParams]]]
   
   type AnyParams = Record[String, js.Any]
   
@@ -37,20 +31,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setUseNullForMissing(value: Boolean): Self = StObject.set(x, "useNullForMissing", value.asInstanceOf[js.Any])
+      inline def setUseNullForMissing(value: Boolean): Self = StObject.set(x, "useNullForMissing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseNullForMissingUndefined: Self = StObject.set(x, "useNullForMissing", js.undefined)
+      inline def setUseNullForMissingUndefined: Self = StObject.set(x, "useNullForMissing", js.undefined)
     }
   }
 }

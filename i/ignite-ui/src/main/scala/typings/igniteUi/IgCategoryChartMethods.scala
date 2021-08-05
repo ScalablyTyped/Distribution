@@ -116,8 +116,7 @@ trait IgCategoryChartMethods extends StObject {
 }
 object IgCategoryChartMethods {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addItem: js.Object => js.Object,
     chart: () => js.Object,
     dataBind: () => Unit,
@@ -140,58 +139,40 @@ object IgCategoryChartMethods {
     __obj.asInstanceOf[IgCategoryChartMethods]
   }
   
-  @scala.inline
-  implicit class IgCategoryChartMethodsMutableBuilder[Self <: IgCategoryChartMethods] (val x: Self) extends AnyVal {
+  extension [Self <: IgCategoryChartMethods](x: Self) {
     
-    @scala.inline
-    def setAddItem(value: js.Object => js.Object): Self = StObject.set(x, "addItem", js.Any.fromFunction1(value))
+    inline def setAddItem(value: js.Object => js.Object): Self = StObject.set(x, "addItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChart(value: () => js.Object): Self = StObject.set(x, "chart", js.Any.fromFunction0(value))
+    inline def setChart(value: () => js.Object): Self = StObject.set(x, "chart", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDataBind(value: () => Unit): Self = StObject.set(x, "dataBind", js.Any.fromFunction0(value))
+    inline def setDataBind(value: () => Unit): Self = StObject.set(x, "dataBind", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExportVisualData(value: () => Unit): Self = StObject.set(x, "exportVisualData", js.Any.fromFunction0(value))
+    inline def setExportVisualData(value: () => Unit): Self = StObject.set(x, "exportVisualData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFindIndexOfItem(value: js.Object => Double): Self = StObject.set(x, "findIndexOfItem", js.Any.fromFunction1(value))
+    inline def setFindIndexOfItem(value: js.Object => Double): Self = StObject.set(x, "findIndexOfItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+    inline def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetData(value: () => js.Array[js.Any]): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+    inline def setGetData(value: () => js.Array[js.Any]): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDataItem(value: js.Object => js.Object): Self = StObject.set(x, "getDataItem", js.Any.fromFunction1(value))
+    inline def setGetDataItem(value: js.Object => js.Object): Self = StObject.set(x, "getDataItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setId(value: () => Unit): Self = StObject.set(x, "id", js.Any.fromFunction0(value))
+    inline def setId(value: () => Unit): Self = StObject.set(x, "id", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInsertItem(value: (js.Object, Double) => js.Object): Self = StObject.set(x, "insertItem", js.Any.fromFunction2(value))
+    inline def setInsertItem(value: (js.Object, Double) => js.Object): Self = StObject.set(x, "insertItem", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setNotifyClearItems(value: js.Object => js.Object): Self = StObject.set(x, "notifyClearItems", js.Any.fromFunction1(value))
+    inline def setNotifyClearItems(value: js.Object => js.Object): Self = StObject.set(x, "notifyClearItems", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNotifyInsertItem(value: (js.Object, Double, js.Object) => js.Object): Self = StObject.set(x, "notifyInsertItem", js.Any.fromFunction3(value))
+    inline def setNotifyInsertItem(value: (js.Object, Double, js.Object) => js.Object): Self = StObject.set(x, "notifyInsertItem", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setNotifyRemoveItem(value: (js.Object, Double, js.Object) => js.Object): Self = StObject.set(x, "notifyRemoveItem", js.Any.fromFunction3(value))
+    inline def setNotifyRemoveItem(value: (js.Object, Double, js.Object) => js.Object): Self = StObject.set(x, "notifyRemoveItem", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setNotifySetItem(value: (js.Object, Double, js.Object, js.Object) => js.Object): Self = StObject.set(x, "notifySetItem", js.Any.fromFunction4(value))
+    inline def setNotifySetItem(value: (js.Object, Double, js.Object, js.Object) => js.Object): Self = StObject.set(x, "notifySetItem", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setRemoveItem(value: Double => js.Object): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
+    inline def setRemoveItem(value: Double => js.Object): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetItem(value: (Double, js.Object) => js.Object): Self = StObject.set(x, "setItem", js.Any.fromFunction2(value))
+    inline def setSetItem(value: (Double, js.Object) => js.Object): Self = StObject.set(x, "setItem", js.Any.fromFunction2(value))
   }
 }

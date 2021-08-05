@@ -11,16 +11,13 @@ trait PickImplmenuIcon extends StObject {
 }
 object PickImplmenuIcon {
   
-  @scala.inline
-  def apply(menuIcon: String): PickImplmenuIcon = {
+  inline def apply(menuIcon: String): PickImplmenuIcon = {
     val __obj = js.Dynamic.literal(menuIcon = menuIcon.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplmenuIcon]
   }
   
-  @scala.inline
-  implicit class PickImplmenuIconMutableBuilder[Self <: PickImplmenuIcon] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplmenuIcon](x: Self) {
     
-    @scala.inline
-    def setMenuIcon(value: String): Self = StObject.set(x, "menuIcon", value.asInstanceOf[js.Any])
+    inline def setMenuIcon(value: String): Self = StObject.set(x, "menuIcon", value.asInstanceOf[js.Any])
   }
 }

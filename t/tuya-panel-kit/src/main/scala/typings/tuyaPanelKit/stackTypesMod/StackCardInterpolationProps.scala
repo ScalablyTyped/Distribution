@@ -53,8 +53,7 @@ trait StackCardInterpolationProps extends StObject {
 }
 object StackCardInterpolationProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     closing: AnimatedInterpolation,
     current: Progress,
     index: Double,
@@ -67,34 +66,24 @@ object StackCardInterpolationProps {
     __obj.asInstanceOf[StackCardInterpolationProps]
   }
   
-  @scala.inline
-  implicit class StackCardInterpolationPropsMutableBuilder[Self <: StackCardInterpolationProps] (val x: Self) extends AnyVal {
+  extension [Self <: StackCardInterpolationProps](x: Self) {
     
-    @scala.inline
-    def setClosing(value: AnimatedInterpolation): Self = StObject.set(x, "closing", value.asInstanceOf[js.Any])
+    inline def setClosing(value: AnimatedInterpolation): Self = StObject.set(x, "closing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrent(value: Progress): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    inline def setCurrent(value: Progress): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsets(value: Left): Self = StObject.set(x, "insets", value.asInstanceOf[js.Any])
+    inline def setInsets(value: Left): Self = StObject.set(x, "insets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInverted(value: AnimatedInterpolation): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
+    inline def setInverted(value: AnimatedInterpolation): Self = StObject.set(x, "inverted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayouts(value: Screen): Self = StObject.set(x, "layouts", value.asInstanceOf[js.Any])
+    inline def setLayouts(value: Screen): Self = StObject.set(x, "layouts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext(value: Progress): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: Progress): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+    inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
-    @scala.inline
-    def setSwiping(value: AnimatedInterpolation): Self = StObject.set(x, "swiping", value.asInstanceOf[js.Any])
+    inline def setSwiping(value: AnimatedInterpolation): Self = StObject.set(x, "swiping", value.asInstanceOf[js.Any])
   }
 }

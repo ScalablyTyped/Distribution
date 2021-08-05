@@ -16,22 +16,17 @@ trait StrokeCapEnumValues
 }
 object StrokeCapEnumValues {
   
-  @scala.inline
-  def apply(Butt: StrokeCap, Round: StrokeCap, Square: StrokeCap, values: js.Array[Double]): StrokeCapEnumValues = {
+  inline def apply(Butt: StrokeCap, Round: StrokeCap, Square: StrokeCap, values: js.Array[Double]): StrokeCapEnumValues = {
     val __obj = js.Dynamic.literal(Butt = Butt.asInstanceOf[js.Any], Round = Round.asInstanceOf[js.Any], Square = Square.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[StrokeCapEnumValues]
   }
   
-  @scala.inline
-  implicit class StrokeCapEnumValuesMutableBuilder[Self <: StrokeCapEnumValues] (val x: Self) extends AnyVal {
+  extension [Self <: StrokeCapEnumValues](x: Self) {
     
-    @scala.inline
-    def setButt(value: StrokeCap): Self = StObject.set(x, "Butt", value.asInstanceOf[js.Any])
+    inline def setButt(value: StrokeCap): Self = StObject.set(x, "Butt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRound(value: StrokeCap): Self = StObject.set(x, "Round", value.asInstanceOf[js.Any])
+    inline def setRound(value: StrokeCap): Self = StObject.set(x, "Round", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSquare(value: StrokeCap): Self = StObject.set(x, "Square", value.asInstanceOf[js.Any])
+    inline def setSquare(value: StrokeCap): Self = StObject.set(x, "Square", value.asInstanceOf[js.Any])
   }
 }

@@ -16,30 +16,23 @@ trait ObjectObserveChange[T] extends StObject {
 }
 object ObjectObserveChange {
   
-  @scala.inline
-  def apply[T](name: String, `object`: T, `type`: String): ObjectObserveChange[T] = {
+  inline def apply[T](name: String, `object`: T, `type`: String): ObjectObserveChange[T] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectObserveChange[T]]
   }
   
-  @scala.inline
-  implicit class ObjectObserveChangeMutableBuilder[Self <: ObjectObserveChange[?], T] (val x: Self & ObjectObserveChange[T]) extends AnyVal {
+  extension [Self <: ObjectObserveChange[?], T](x: Self & ObjectObserveChange[T]) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObject(value: T): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: T): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValue(value: js.Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: js.Any): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
+    inline def setOldValueUndefined: Self = StObject.set(x, "oldValue", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

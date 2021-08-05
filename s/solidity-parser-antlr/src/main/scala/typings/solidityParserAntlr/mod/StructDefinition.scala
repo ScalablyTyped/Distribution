@@ -18,26 +18,20 @@ trait StructDefinition
 }
 object StructDefinition {
   
-  @scala.inline
-  def apply(members: js.Array[VariableDeclaration], name: String): StructDefinition = {
+  inline def apply(members: js.Array[VariableDeclaration], name: String): StructDefinition = {
     val __obj = js.Dynamic.literal(members = members.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("StructDefinition")
     __obj.asInstanceOf[StructDefinition]
   }
   
-  @scala.inline
-  implicit class StructDefinitionMutableBuilder[Self <: StructDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: StructDefinition](x: Self) {
     
-    @scala.inline
-    def setMembers(value: js.Array[VariableDeclaration]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: js.Array[VariableDeclaration]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembersVarargs(value: VariableDeclaration*): Self = StObject.set(x, "members", js.Array(value :_*))
+    inline def setMembersVarargs(value: VariableDeclaration*): Self = StObject.set(x, "members", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.StructDefinition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.StructDefinition): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

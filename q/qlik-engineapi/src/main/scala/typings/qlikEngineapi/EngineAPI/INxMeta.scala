@@ -17,19 +17,15 @@ trait INxMeta extends StObject {
 }
 object INxMeta {
   
-  @scala.inline
-  def apply(): INxMeta = {
+  inline def apply(): INxMeta = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[INxMeta]
   }
   
-  @scala.inline
-  implicit class INxMetaMutableBuilder[Self <: INxMeta] (val x: Self) extends AnyVal {
+  extension [Self <: INxMeta](x: Self) {
     
-    @scala.inline
-    def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
+    inline def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQNameUndefined: Self = StObject.set(x, "qName", js.undefined)
+    inline def setQNameUndefined: Self = StObject.set(x, "qName", js.undefined)
   }
 }

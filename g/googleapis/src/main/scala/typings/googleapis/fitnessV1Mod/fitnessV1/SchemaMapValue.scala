@@ -17,19 +17,15 @@ trait SchemaMapValue extends StObject {
 }
 object SchemaMapValue {
   
-  @scala.inline
-  def apply(): SchemaMapValue = {
+  inline def apply(): SchemaMapValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMapValue]
   }
   
-  @scala.inline
-  implicit class SchemaMapValueMutableBuilder[Self <: SchemaMapValue] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMapValue](x: Self) {
     
-    @scala.inline
-    def setFpVal(value: Double): Self = StObject.set(x, "fpVal", value.asInstanceOf[js.Any])
+    inline def setFpVal(value: Double): Self = StObject.set(x, "fpVal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFpValUndefined: Self = StObject.set(x, "fpVal", js.undefined)
+    inline def setFpValUndefined: Self = StObject.set(x, "fpVal", js.undefined)
   }
 }

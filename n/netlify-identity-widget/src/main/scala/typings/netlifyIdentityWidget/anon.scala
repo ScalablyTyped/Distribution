@@ -17,26 +17,20 @@ object anon {
   }
   object ApiURL {
     
-    @scala.inline
-    def apply(apiURL: String, defaultHeaders: StringDictionary[js.UndefOr[String | js.Array[String]]]): ApiURL = {
+    inline def apply(apiURL: String, defaultHeaders: StringDictionary[js.UndefOr[String | js.Array[String]]]): ApiURL = {
       val __obj = js.Dynamic.literal(apiURL = apiURL.asInstanceOf[js.Any], defaultHeaders = defaultHeaders.asInstanceOf[js.Any])
       __obj.asInstanceOf[ApiURL]
     }
     
-    @scala.inline
-    implicit class ApiURLMutableBuilder[Self <: ApiURL] (val x: Self) extends AnyVal {
+    extension [Self <: ApiURL](x: Self) {
       
-      @scala.inline
-      def setApiURL(value: String): Self = StObject.set(x, "apiURL", value.asInstanceOf[js.Any])
+      inline def setApiURL(value: String): Self = StObject.set(x, "apiURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultHeaders(value: StringDictionary[js.UndefOr[String | js.Array[String]]]): Self = StObject.set(x, "defaultHeaders", value.asInstanceOf[js.Any])
+      inline def setDefaultHeaders(value: StringDictionary[js.UndefOr[String | js.Array[String]]]): Self = StObject.set(x, "defaultHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_sameOrigin(value: Boolean): Self = StObject.set(x, "_sameOrigin", value.asInstanceOf[js.Any])
+      inline def set_sameOrigin(value: Boolean): Self = StObject.set(x, "_sameOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_sameOriginUndefined: Self = StObject.set(x, "_sameOrigin", js.undefined)
+      inline def set_sameOriginUndefined: Self = StObject.set(x, "_sameOrigin", js.undefined)
     }
   }
   
@@ -48,20 +42,16 @@ object anon {
   }
   object Avatarurl {
     
-    @scala.inline
-    def apply(avatar_url: String, full_name: String): Avatarurl = {
+    inline def apply(avatar_url: String, full_name: String): Avatarurl = {
       val __obj = js.Dynamic.literal(avatar_url = avatar_url.asInstanceOf[js.Any], full_name = full_name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Avatarurl]
     }
     
-    @scala.inline
-    implicit class AvatarurlMutableBuilder[Self <: Avatarurl] (val x: Self) extends AnyVal {
+    extension [Self <: Avatarurl](x: Self) {
       
-      @scala.inline
-      def setAvatar_url(value: String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
+      inline def setAvatar_url(value: String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
+      inline def setFull_name(value: String): Self = StObject.set(x, "full_name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -73,23 +63,18 @@ object anon {
   }
   object Provider {
     
-    @scala.inline
-    def apply(provider: String, roles: js.Array[String]): Provider = {
+    inline def apply(provider: String, roles: js.Array[String]): Provider = {
       val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any], roles = roles.asInstanceOf[js.Any])
       __obj.asInstanceOf[Provider]
     }
     
-    @scala.inline
-    implicit class ProviderMutableBuilder[Self <: Provider] (val x: Self) extends AnyVal {
+    extension [Self <: Provider](x: Self) {
       
-      @scala.inline
-      def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+      inline def setProvider(value: String): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
+      inline def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
+      inline def setRolesVarargs(value: String*): Self = StObject.set(x, "roles", js.Array(value :_*))
     }
   }
 }

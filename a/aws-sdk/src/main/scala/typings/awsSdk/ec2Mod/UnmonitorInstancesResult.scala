@@ -13,22 +13,17 @@ trait UnmonitorInstancesResult extends StObject {
 }
 object UnmonitorInstancesResult {
   
-  @scala.inline
-  def apply(): UnmonitorInstancesResult = {
+  inline def apply(): UnmonitorInstancesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UnmonitorInstancesResult]
   }
   
-  @scala.inline
-  implicit class UnmonitorInstancesResultMutableBuilder[Self <: UnmonitorInstancesResult] (val x: Self) extends AnyVal {
+  extension [Self <: UnmonitorInstancesResult](x: Self) {
     
-    @scala.inline
-    def setInstanceMonitorings(value: InstanceMonitoringList): Self = StObject.set(x, "InstanceMonitorings", value.asInstanceOf[js.Any])
+    inline def setInstanceMonitorings(value: InstanceMonitoringList): Self = StObject.set(x, "InstanceMonitorings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceMonitoringsUndefined: Self = StObject.set(x, "InstanceMonitorings", js.undefined)
+    inline def setInstanceMonitoringsUndefined: Self = StObject.set(x, "InstanceMonitorings", js.undefined)
     
-    @scala.inline
-    def setInstanceMonitoringsVarargs(value: InstanceMonitoring*): Self = StObject.set(x, "InstanceMonitorings", js.Array(value :_*))
+    inline def setInstanceMonitoringsVarargs(value: InstanceMonitoring*): Self = StObject.set(x, "InstanceMonitorings", js.Array(value :_*))
   }
 }

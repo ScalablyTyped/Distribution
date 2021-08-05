@@ -12,19 +12,15 @@ trait Info extends StObject {
 }
 object Info {
   
-  @scala.inline
-  def apply(error: Unit, info: ComponentStackString): Info = {
+  inline def apply(error: Unit, info: ComponentStackString): Info = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any])
     __obj.asInstanceOf[Info]
   }
   
-  @scala.inline
-  implicit class InfoMutableBuilder[Self <: Info] (val x: Self) extends AnyVal {
+  extension [Self <: Info](x: Self) {
     
-    @scala.inline
-    def setError(value: Unit): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Unit): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfo(value: ComponentStackString): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: ComponentStackString): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
   }
 }

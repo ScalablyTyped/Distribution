@@ -11,6 +11,5 @@ object cloneWithRefMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def cloneWithRef(element: js.Any, newRef: js.Any): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneWithRef")(element.asInstanceOf[js.Any], newRef.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+  inline def cloneWithRef(element: js.Any, newRef: js.Any): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneWithRef")(element.asInstanceOf[js.Any], newRef.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
 }

@@ -20,8 +20,7 @@ trait XDocumentAuditing
 }
 object XDocumentAuditing {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     refreshArrows: () => Unit,
@@ -31,10 +30,8 @@ object XDocumentAuditing {
     __obj.asInstanceOf[XDocumentAuditing]
   }
   
-  @scala.inline
-  implicit class XDocumentAuditingMutableBuilder[Self <: XDocumentAuditing] (val x: Self) extends AnyVal {
+  extension [Self <: XDocumentAuditing](x: Self) {
     
-    @scala.inline
-    def setRefreshArrows(value: () => Unit): Self = StObject.set(x, "refreshArrows", js.Any.fromFunction0(value))
+    inline def setRefreshArrows(value: () => Unit): Self = StObject.set(x, "refreshArrows", js.Any.fromFunction0(value))
   }
 }

@@ -23,24 +23,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlViewType extends StObject
 object OlViewType {
   
-  @scala.inline
-  def olBusinessCardView: `5` = 5.asInstanceOf[`5`]
+  inline def olBusinessCardView: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def olCalendarView: `2` = 2.asInstanceOf[`2`]
+  inline def olCalendarView: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olCardView: `1` = 1.asInstanceOf[`1`]
+  inline def olCardView: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olDailyTaskListView: `6` = 6.asInstanceOf[`6`]
+  inline def olDailyTaskListView: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def olIconView: `3` = 3.asInstanceOf[`3`]
+  inline def olIconView: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def olTableView: `0` = 0.asInstanceOf[`0`]
+  inline def olTableView: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def olTimelineView: `4` = 4.asInstanceOf[`4`]
+  inline def olTimelineView: `4` = 4.asInstanceOf[`4`]
 }

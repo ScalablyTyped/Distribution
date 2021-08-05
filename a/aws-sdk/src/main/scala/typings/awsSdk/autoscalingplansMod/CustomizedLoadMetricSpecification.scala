@@ -33,37 +33,27 @@ trait CustomizedLoadMetricSpecification extends StObject {
 }
 object CustomizedLoadMetricSpecification {
   
-  @scala.inline
-  def apply(MetricName: MetricName, Namespace: MetricNamespace, Statistic: MetricStatistic): CustomizedLoadMetricSpecification = {
+  inline def apply(MetricName: MetricName, Namespace: MetricNamespace, Statistic: MetricStatistic): CustomizedLoadMetricSpecification = {
     val __obj = js.Dynamic.literal(MetricName = MetricName.asInstanceOf[js.Any], Namespace = Namespace.asInstanceOf[js.Any], Statistic = Statistic.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomizedLoadMetricSpecification]
   }
   
-  @scala.inline
-  implicit class CustomizedLoadMetricSpecificationMutableBuilder[Self <: CustomizedLoadMetricSpecification] (val x: Self) extends AnyVal {
+  extension [Self <: CustomizedLoadMetricSpecification](x: Self) {
     
-    @scala.inline
-    def setDimensions(value: MetricDimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: MetricDimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
+    inline def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
     
-    @scala.inline
-    def setDimensionsVarargs(value: MetricDimension*): Self = StObject.set(x, "Dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: MetricDimension*): Self = StObject.set(x, "Dimensions", js.Array(value :_*))
     
-    @scala.inline
-    def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespace(value: MetricNamespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: MetricNamespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatistic(value: MetricStatistic): Self = StObject.set(x, "Statistic", value.asInstanceOf[js.Any])
+    inline def setStatistic(value: MetricStatistic): Self = StObject.set(x, "Statistic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnit(value: MetricUnit): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: MetricUnit): Self = StObject.set(x, "Unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "Unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "Unit", js.undefined)
   }
 }

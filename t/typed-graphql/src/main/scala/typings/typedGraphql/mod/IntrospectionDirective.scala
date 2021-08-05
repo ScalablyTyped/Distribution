@@ -16,34 +16,25 @@ trait IntrospectionDirective extends StObject {
 }
 object IntrospectionDirective {
   
-  @scala.inline
-  def apply(args: js.Array[IntrospectionInputValue], locations: js.Array[DirectiveLocationEnum], name: String): IntrospectionDirective = {
+  inline def apply(args: js.Array[IntrospectionInputValue], locations: js.Array[DirectiveLocationEnum], name: String): IntrospectionDirective = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], locations = locations.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionDirective]
   }
   
-  @scala.inline
-  implicit class IntrospectionDirectiveMutableBuilder[Self <: IntrospectionDirective] (val x: Self) extends AnyVal {
+  extension [Self <: IntrospectionDirective](x: Self) {
     
-    @scala.inline
-    def setArgs(value: js.Array[IntrospectionInputValue]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[IntrospectionInputValue]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsVarargs(value: IntrospectionInputValue*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: IntrospectionInputValue*): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setLocations(value: js.Array[DirectiveLocationEnum]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+    inline def setLocations(value: js.Array[DirectiveLocationEnum]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationsVarargs(value: DirectiveLocationEnum*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: DirectiveLocationEnum*): Self = StObject.set(x, "locations", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

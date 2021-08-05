@@ -33,58 +33,41 @@ trait Occurrences extends StObject {
 }
 object Occurrences {
   
-  @scala.inline
-  def apply(): Occurrences = {
+  inline def apply(): Occurrences = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Occurrences]
   }
   
-  @scala.inline
-  implicit class OccurrencesMutableBuilder[Self <: Occurrences] (val x: Self) extends AnyVal {
+  extension [Self <: Occurrences](x: Self) {
     
-    @scala.inline
-    def setCells(value: Cells): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
+    inline def setCells(value: Cells): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
+    inline def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
     
-    @scala.inline
-    def setCellsVarargs(value: Cell*): Self = StObject.set(x, "cells", js.Array(value :_*))
+    inline def setCellsVarargs(value: Cell*): Self = StObject.set(x, "cells", js.Array(value :_*))
     
-    @scala.inline
-    def setLineRanges(value: Ranges): Self = StObject.set(x, "lineRanges", value.asInstanceOf[js.Any])
+    inline def setLineRanges(value: Ranges): Self = StObject.set(x, "lineRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineRangesUndefined: Self = StObject.set(x, "lineRanges", js.undefined)
+    inline def setLineRangesUndefined: Self = StObject.set(x, "lineRanges", js.undefined)
     
-    @scala.inline
-    def setLineRangesVarargs(value: Range*): Self = StObject.set(x, "lineRanges", js.Array(value :_*))
+    inline def setLineRangesVarargs(value: Range*): Self = StObject.set(x, "lineRanges", js.Array(value :_*))
     
-    @scala.inline
-    def setOffsetRanges(value: Ranges): Self = StObject.set(x, "offsetRanges", value.asInstanceOf[js.Any])
+    inline def setOffsetRanges(value: Ranges): Self = StObject.set(x, "offsetRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetRangesUndefined: Self = StObject.set(x, "offsetRanges", js.undefined)
+    inline def setOffsetRangesUndefined: Self = StObject.set(x, "offsetRanges", js.undefined)
     
-    @scala.inline
-    def setOffsetRangesVarargs(value: Range*): Self = StObject.set(x, "offsetRanges", js.Array(value :_*))
+    inline def setOffsetRangesVarargs(value: Range*): Self = StObject.set(x, "offsetRanges", js.Array(value :_*))
     
-    @scala.inline
-    def setPages(value: Pages): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
+    inline def setPages(value: Pages): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
+    inline def setPagesUndefined: Self = StObject.set(x, "pages", js.undefined)
     
-    @scala.inline
-    def setPagesVarargs(value: Page*): Self = StObject.set(x, "pages", js.Array(value :_*))
+    inline def setPagesVarargs(value: Page*): Self = StObject.set(x, "pages", js.Array(value :_*))
     
-    @scala.inline
-    def setRecords(value: Records): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
+    inline def setRecords(value: Records): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordsUndefined: Self = StObject.set(x, "records", js.undefined)
+    inline def setRecordsUndefined: Self = StObject.set(x, "records", js.undefined)
     
-    @scala.inline
-    def setRecordsVarargs(value: Record*): Self = StObject.set(x, "records", js.Array(value :_*))
+    inline def setRecordsVarargs(value: Record*): Self = StObject.set(x, "records", js.Array(value :_*))
   }
 }

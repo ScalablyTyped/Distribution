@@ -20,25 +20,19 @@ trait BASIC extends StObject {
 }
 object BASIC {
   
-  @scala.inline
-  def apply(): BASIC = {
+  inline def apply(): BASIC = {
     val __obj = js.Dynamic.literal(BASIC = "basic", IMAGE = "image", LIST = "list", PROGRESS = "progress")
     __obj.asInstanceOf[BASIC]
   }
   
-  @scala.inline
-  implicit class BASICMutableBuilder[Self <: BASIC] (val x: Self) extends AnyVal {
+  extension [Self <: BASIC](x: Self) {
     
-    @scala.inline
-    def setBASIC(value: basic_): Self = StObject.set(x, "BASIC", value.asInstanceOf[js.Any])
+    inline def setBASIC(value: basic_): Self = StObject.set(x, "BASIC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIMAGE(value: image_): Self = StObject.set(x, "IMAGE", value.asInstanceOf[js.Any])
+    inline def setIMAGE(value: image_): Self = StObject.set(x, "IMAGE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLIST(value: list_): Self = StObject.set(x, "LIST", value.asInstanceOf[js.Any])
+    inline def setLIST(value: list_): Self = StObject.set(x, "LIST", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPROGRESS(value: progress_): Self = StObject.set(x, "PROGRESS", value.asInstanceOf[js.Any])
+    inline def setPROGRESS(value: progress_): Self = StObject.set(x, "PROGRESS", value.asInstanceOf[js.Any])
   }
 }

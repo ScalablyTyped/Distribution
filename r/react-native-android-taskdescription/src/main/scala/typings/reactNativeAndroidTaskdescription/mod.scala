@@ -22,26 +22,20 @@ object mod {
   }
   object ReactNativeAndroidTaskDescriptionProps {
     
-    @scala.inline
-    def apply(): ReactNativeAndroidTaskDescriptionProps = {
+    inline def apply(): ReactNativeAndroidTaskDescriptionProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReactNativeAndroidTaskDescriptionProps]
     }
     
-    @scala.inline
-    implicit class ReactNativeAndroidTaskDescriptionPropsMutableBuilder[Self <: ReactNativeAndroidTaskDescriptionProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReactNativeAndroidTaskDescriptionProps](x: Self) {
       
-      @scala.inline
-      def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     }
   }
 }

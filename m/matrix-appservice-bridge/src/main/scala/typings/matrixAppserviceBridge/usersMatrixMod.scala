@@ -23,9 +23,9 @@ object usersMatrixMod {
     def this(userId: String, _data: Unit, escape: Boolean) = this()
     def this(userId: String, _data: Record[String, js.Any], escape: Boolean) = this()
     
-    val _data: js.Any = js.native
+    /* private */ val _data: js.Any = js.native
     
-    var _localpart: js.Any = js.native
+    /* private */ var _localpart: js.Any = js.native
     
     /**
       * Make a userId conform to the matrix spec using QP escaping.
@@ -92,7 +92,6 @@ object usersMatrixMod {
     @JSImport("matrix-appservice-bridge/lib/models/users/matrix", "MatrixUser.ESCAPE_DEFAULT")
     @js.native
     def ESCAPE_DEFAULT: Boolean = js.native
-    @scala.inline
-    def ESCAPE_DEFAULT_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ESCAPE_DEFAULT")(x.asInstanceOf[js.Any])
+    inline def ESCAPE_DEFAULT_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ESCAPE_DEFAULT")(x.asInstanceOf[js.Any])
   }
 }

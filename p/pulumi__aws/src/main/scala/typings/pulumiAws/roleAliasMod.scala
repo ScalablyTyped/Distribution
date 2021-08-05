@@ -60,21 +60,16 @@ object roleAliasMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): RoleAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RoleAlias]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RoleAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RoleAlias]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: RoleAliasState): RoleAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RoleAlias]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: RoleAliasState, opts: CustomResourceOptions): RoleAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RoleAlias]
+    inline def get(name: String, id: Input[ID]): RoleAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RoleAlias]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RoleAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RoleAlias]
+    inline def get(name: String, id: Input[ID], state: RoleAliasState): RoleAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RoleAlias]
+    inline def get(name: String, id: Input[ID], state: RoleAliasState, opts: CustomResourceOptions): RoleAlias = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RoleAlias]
     
     /**
       * Returns true if the given object is an instance of RoleAlias.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iot/roleAlias.RoleAlias */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iot/roleAlias.RoleAlias */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iot/roleAlias.RoleAlias */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iot/roleAlias.RoleAlias */ Boolean]
   }
   
   trait RoleAliasArgs extends StObject {
@@ -96,26 +91,20 @@ object roleAliasMod {
   }
   object RoleAliasArgs {
     
-    @scala.inline
-    def apply(alias: Input[String], roleArn: Input[String]): RoleAliasArgs = {
+    inline def apply(alias: Input[String], roleArn: Input[String]): RoleAliasArgs = {
       val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[RoleAliasArgs]
     }
     
-    @scala.inline
-    implicit class RoleAliasArgsMutableBuilder[Self <: RoleAliasArgs] (val x: Self) extends AnyVal {
+    extension [Self <: RoleAliasArgs](x: Self) {
       
-      @scala.inline
-      def setAlias(value: Input[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: Input[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentialDuration(value: Input[Double]): Self = StObject.set(x, "credentialDuration", value.asInstanceOf[js.Any])
+      inline def setCredentialDuration(value: Input[Double]): Self = StObject.set(x, "credentialDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentialDurationUndefined: Self = StObject.set(x, "credentialDuration", js.undefined)
+      inline def setCredentialDurationUndefined: Self = StObject.set(x, "credentialDuration", js.undefined)
       
-      @scala.inline
-      def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -143,38 +132,28 @@ object roleAliasMod {
   }
   object RoleAliasState {
     
-    @scala.inline
-    def apply(): RoleAliasState = {
+    inline def apply(): RoleAliasState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RoleAliasState]
     }
     
-    @scala.inline
-    implicit class RoleAliasStateMutableBuilder[Self <: RoleAliasState] (val x: Self) extends AnyVal {
+    extension [Self <: RoleAliasState](x: Self) {
       
-      @scala.inline
-      def setAlias(value: Input[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: Input[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+      inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setCredentialDuration(value: Input[Double]): Self = StObject.set(x, "credentialDuration", value.asInstanceOf[js.Any])
+      inline def setCredentialDuration(value: Input[Double]): Self = StObject.set(x, "credentialDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentialDurationUndefined: Self = StObject.set(x, "credentialDuration", js.undefined)
+      inline def setCredentialDurationUndefined: Self = StObject.set(x, "credentialDuration", js.undefined)
       
-      @scala.inline
-      def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+      inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+      inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
     }
   }
 }

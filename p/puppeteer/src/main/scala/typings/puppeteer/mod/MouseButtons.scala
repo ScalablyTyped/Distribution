@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MouseButtons extends StObject
 object MouseButtons {
   
-  @scala.inline
-  def left: typings.puppeteer.puppeteerStrings.left = "left".asInstanceOf[typings.puppeteer.puppeteerStrings.left]
+  inline def left: typings.puppeteer.puppeteerStrings.left = "left".asInstanceOf[typings.puppeteer.puppeteerStrings.left]
   
-  @scala.inline
-  def middle: typings.puppeteer.puppeteerStrings.middle = "middle".asInstanceOf[typings.puppeteer.puppeteerStrings.middle]
+  inline def middle: typings.puppeteer.puppeteerStrings.middle = "middle".asInstanceOf[typings.puppeteer.puppeteerStrings.middle]
   
-  @scala.inline
-  def right: typings.puppeteer.puppeteerStrings.right = "right".asInstanceOf[typings.puppeteer.puppeteerStrings.right]
+  inline def right: typings.puppeteer.puppeteerStrings.right = "right".asInstanceOf[typings.puppeteer.puppeteerStrings.right]
 }

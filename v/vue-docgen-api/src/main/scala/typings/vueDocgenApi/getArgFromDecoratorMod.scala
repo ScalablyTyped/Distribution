@@ -15,6 +15,5 @@ object getArgFromDecoratorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(path: NodePath[Decorator_, js.Any]): Null | (NodePath[Expression | SpreadElement_ | JSXNamespacedName_, js.Any]) = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any]).asInstanceOf[Null | (NodePath[Expression | SpreadElement_ | JSXNamespacedName_, js.Any])]
+  inline def default(path: NodePath[Decorator_, js.Any]): Null | (NodePath[Expression | SpreadElement_ | JSXNamespacedName_, js.Any]) = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any]).asInstanceOf[Null | (NodePath[Expression | SpreadElement_ | JSXNamespacedName_, js.Any])]
 }

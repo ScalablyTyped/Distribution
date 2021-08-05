@@ -13,19 +13,15 @@ trait KubernetesNetworkConfigRequest extends StObject {
 }
 object KubernetesNetworkConfigRequest {
   
-  @scala.inline
-  def apply(): KubernetesNetworkConfigRequest = {
+  inline def apply(): KubernetesNetworkConfigRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KubernetesNetworkConfigRequest]
   }
   
-  @scala.inline
-  implicit class KubernetesNetworkConfigRequestMutableBuilder[Self <: KubernetesNetworkConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: KubernetesNetworkConfigRequest](x: Self) {
     
-    @scala.inline
-    def setServiceIpv4Cidr(value: String): Self = StObject.set(x, "serviceIpv4Cidr", value.asInstanceOf[js.Any])
+    inline def setServiceIpv4Cidr(value: String): Self = StObject.set(x, "serviceIpv4Cidr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceIpv4CidrUndefined: Self = StObject.set(x, "serviceIpv4Cidr", js.undefined)
+    inline def setServiceIpv4CidrUndefined: Self = StObject.set(x, "serviceIpv4Cidr", js.undefined)
   }
 }

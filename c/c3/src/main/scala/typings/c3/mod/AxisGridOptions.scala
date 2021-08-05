@@ -22,34 +22,25 @@ trait AxisGridOptions extends StObject {
 }
 object AxisGridOptions {
   
-  @scala.inline
-  def apply(): AxisGridOptions = {
+  inline def apply(): AxisGridOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AxisGridOptions]
   }
   
-  @scala.inline
-  implicit class AxisGridOptionsMutableBuilder[Self <: AxisGridOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AxisGridOptions](x: Self) {
     
-    @scala.inline
-    def setLines(value: js.Array[GridLineOptions]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
+    inline def setLines(value: js.Array[GridLineOptions]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
+    inline def setLinesUndefined: Self = StObject.set(x, "lines", js.undefined)
     
-    @scala.inline
-    def setLinesVarargs(value: GridLineOptions*): Self = StObject.set(x, "lines", js.Array(value :_*))
+    inline def setLinesVarargs(value: GridLineOptions*): Self = StObject.set(x, "lines", js.Array(value :_*))
     
-    @scala.inline
-    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

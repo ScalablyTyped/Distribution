@@ -44,14 +44,14 @@ object iconMod {
       */
     var icon: js.UndefOr[js.Any] = js.native
     
-    var io: js.Any = js.native
+    /* private */ var io: js.Any = js.native
     
     /**
       * Specifies which icon to use on `ios` mode.
       */
     var ios: js.UndefOr[String] = js.native
     
-    var isVisible: js.Any = js.native
+    /* private */ var isVisible: js.Any = js.native
     
     /**
       * If enabled, ion-icon will be loaded lazily when it's visible in the viewport.
@@ -97,8 +97,8 @@ object iconMod {
       */
     var src: js.UndefOr[String] = js.native
     
-    var svgContent: js.Any = js.native
+    /* private */ var svgContent: js.Any = js.native
     
-    var waitUntilVisible: js.Any = js.native
+    /* private */ var waitUntilVisible: js.Any = js.native
   }
 }

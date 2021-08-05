@@ -38,49 +38,35 @@ trait AlarmHistoryItem extends StObject {
 }
 object AlarmHistoryItem {
   
-  @scala.inline
-  def apply(): AlarmHistoryItem = {
+  inline def apply(): AlarmHistoryItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AlarmHistoryItem]
   }
   
-  @scala.inline
-  implicit class AlarmHistoryItemMutableBuilder[Self <: AlarmHistoryItem] (val x: Self) extends AnyVal {
+  extension [Self <: AlarmHistoryItem](x: Self) {
     
-    @scala.inline
-    def setAlarmName(value: AlarmName): Self = StObject.set(x, "AlarmName", value.asInstanceOf[js.Any])
+    inline def setAlarmName(value: AlarmName): Self = StObject.set(x, "AlarmName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlarmNameUndefined: Self = StObject.set(x, "AlarmName", js.undefined)
+    inline def setAlarmNameUndefined: Self = StObject.set(x, "AlarmName", js.undefined)
     
-    @scala.inline
-    def setAlarmType(value: AlarmType): Self = StObject.set(x, "AlarmType", value.asInstanceOf[js.Any])
+    inline def setAlarmType(value: AlarmType): Self = StObject.set(x, "AlarmType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlarmTypeUndefined: Self = StObject.set(x, "AlarmType", js.undefined)
+    inline def setAlarmTypeUndefined: Self = StObject.set(x, "AlarmType", js.undefined)
     
-    @scala.inline
-    def setHistoryData(value: HistoryData): Self = StObject.set(x, "HistoryData", value.asInstanceOf[js.Any])
+    inline def setHistoryData(value: HistoryData): Self = StObject.set(x, "HistoryData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoryDataUndefined: Self = StObject.set(x, "HistoryData", js.undefined)
+    inline def setHistoryDataUndefined: Self = StObject.set(x, "HistoryData", js.undefined)
     
-    @scala.inline
-    def setHistoryItemType(value: HistoryItemType): Self = StObject.set(x, "HistoryItemType", value.asInstanceOf[js.Any])
+    inline def setHistoryItemType(value: HistoryItemType): Self = StObject.set(x, "HistoryItemType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoryItemTypeUndefined: Self = StObject.set(x, "HistoryItemType", js.undefined)
+    inline def setHistoryItemTypeUndefined: Self = StObject.set(x, "HistoryItemType", js.undefined)
     
-    @scala.inline
-    def setHistorySummary(value: HistorySummary): Self = StObject.set(x, "HistorySummary", value.asInstanceOf[js.Any])
+    inline def setHistorySummary(value: HistorySummary): Self = StObject.set(x, "HistorySummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistorySummaryUndefined: Self = StObject.set(x, "HistorySummary", js.undefined)
+    inline def setHistorySummaryUndefined: Self = StObject.set(x, "HistorySummary", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Timestamp): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "Timestamp", js.undefined)
   }
 }

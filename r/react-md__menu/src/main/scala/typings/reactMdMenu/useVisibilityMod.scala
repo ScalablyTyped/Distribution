@@ -10,10 +10,8 @@ object useVisibilityMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useVisibility(): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useVisibility")().asInstanceOf[ReturnValue]
-  @scala.inline
-  def useVisibility(hasDefaultVisibleDefaultFocusValueOnVisibilityChange: VisibilityOptions): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useVisibility")(hasDefaultVisibleDefaultFocusValueOnVisibilityChange.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
+  inline def useVisibility(): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useVisibility")().asInstanceOf[ReturnValue]
+  inline def useVisibility(hasDefaultVisibleDefaultFocusValueOnVisibilityChange: VisibilityOptions): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useVisibility")(hasDefaultVisibleDefaultFocusValueOnVisibilityChange.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactMdMenu.reactMdMenuStrings.first
@@ -22,11 +20,9 @@ object useVisibilityMod {
   trait FocusType extends StObject
   object FocusType {
     
-    @scala.inline
-    def first: typings.reactMdMenu.reactMdMenuStrings.first = "first".asInstanceOf[typings.reactMdMenu.reactMdMenuStrings.first]
+    inline def first: typings.reactMdMenu.reactMdMenuStrings.first = "first".asInstanceOf[typings.reactMdMenu.reactMdMenuStrings.first]
     
-    @scala.inline
-    def last: typings.reactMdMenu.reactMdMenuStrings.last = "last".asInstanceOf[typings.reactMdMenu.reactMdMenuStrings.last]
+    inline def last: typings.reactMdMenu.reactMdMenuStrings.last = "last".asInstanceOf[typings.reactMdMenu.reactMdMenuStrings.last]
   }
   
   trait ReturnValue extends StObject {
@@ -45,8 +41,7 @@ object useVisibilityMod {
   }
   object ReturnValue {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       defaultFocus: FocusType,
       hide: () => Unit,
       show: () => Unit,
@@ -58,26 +53,19 @@ object useVisibilityMod {
       __obj.asInstanceOf[ReturnValue]
     }
     
-    @scala.inline
-    implicit class ReturnValueMutableBuilder[Self <: ReturnValue] (val x: Self) extends AnyVal {
+    extension [Self <: ReturnValue](x: Self) {
       
-      @scala.inline
-      def setDefaultFocus(value: FocusType): Self = StObject.set(x, "defaultFocus", value.asInstanceOf[js.Any])
+      inline def setDefaultFocus(value: FocusType): Self = StObject.set(x, "defaultFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShowWithFocus(value: FocusType => Unit): Self = StObject.set(x, "showWithFocus", js.Any.fromFunction1(value))
+      inline def setShowWithFocus(value: FocusType => Unit): Self = StObject.set(x, "showWithFocus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
+      inline def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
   
@@ -91,32 +79,24 @@ object useVisibilityMod {
   }
   object VisibilityOptions {
     
-    @scala.inline
-    def apply(): VisibilityOptions = {
+    inline def apply(): VisibilityOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VisibilityOptions]
     }
     
-    @scala.inline
-    implicit class VisibilityOptionsMutableBuilder[Self <: VisibilityOptions] (val x: Self) extends AnyVal {
+    extension [Self <: VisibilityOptions](x: Self) {
       
-      @scala.inline
-      def setDefaultFocus(value: FocusType): Self = StObject.set(x, "defaultFocus", value.asInstanceOf[js.Any])
+      inline def setDefaultFocus(value: FocusType): Self = StObject.set(x, "defaultFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultFocusUndefined: Self = StObject.set(x, "defaultFocus", js.undefined)
+      inline def setDefaultFocusUndefined: Self = StObject.set(x, "defaultFocus", js.undefined)
       
-      @scala.inline
-      def setDefaultVisible(value: Boolean): Self = StObject.set(x, "defaultVisible", value.asInstanceOf[js.Any])
+      inline def setDefaultVisible(value: Boolean): Self = StObject.set(x, "defaultVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultVisibleUndefined: Self = StObject.set(x, "defaultVisible", js.undefined)
+      inline def setDefaultVisibleUndefined: Self = StObject.set(x, "defaultVisible", js.undefined)
       
-      @scala.inline
-      def setOnVisibilityChange(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "onVisibilityChange", js.Any.fromFunction1(value))
+      inline def setOnVisibilityChange(value: /* visible */ Boolean => Unit): Self = StObject.set(x, "onVisibilityChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnVisibilityChangeUndefined: Self = StObject.set(x, "onVisibilityChange", js.undefined)
+      inline def setOnVisibilityChangeUndefined: Self = StObject.set(x, "onVisibilityChange", js.undefined)
     }
   }
   
@@ -128,20 +108,16 @@ object useVisibilityMod {
   }
   object VisibilityState {
     
-    @scala.inline
-    def apply(defaultFocus: FocusType, visible: Boolean): VisibilityState = {
+    inline def apply(defaultFocus: FocusType, visible: Boolean): VisibilityState = {
       val __obj = js.Dynamic.literal(defaultFocus = defaultFocus.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
       __obj.asInstanceOf[VisibilityState]
     }
     
-    @scala.inline
-    implicit class VisibilityStateMutableBuilder[Self <: VisibilityState] (val x: Self) extends AnyVal {
+    extension [Self <: VisibilityState](x: Self) {
       
-      @scala.inline
-      def setDefaultFocus(value: FocusType): Self = StObject.set(x, "defaultFocus", value.asInstanceOf[js.Any])
+      inline def setDefaultFocus(value: FocusType): Self = StObject.set(x, "defaultFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
 }

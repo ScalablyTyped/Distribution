@@ -92,117 +92,81 @@ trait IConnection
 }
 object IConnection {
   
-  @scala.inline
-  def apply(): IConnection = {
+  inline def apply(): IConnection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IConnection]
   }
   
-  @scala.inline
-  implicit class IConnectionMutableBuilder[Self <: IConnection] (val x: Self) extends AnyVal {
+  extension [Self <: IConnection](x: Self) {
     
-    @scala.inline
-    def setAbort(value: /* request */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction1(value))
+    inline def setAbort(value: /* request */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAbortAll(value: () => Unit): Self = StObject.set(x, "abortAll", js.Any.fromFunction0(value))
+    inline def setAbortAll(value: () => Unit): Self = StObject.set(x, "abortAll", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAbortAllUndefined: Self = StObject.set(x, "abortAll", js.undefined)
+    inline def setAbortAllUndefined: Self = StObject.set(x, "abortAll", js.undefined)
     
-    @scala.inline
-    def setAbortUndefined: Self = StObject.set(x, "abort", js.undefined)
+    inline def setAbortUndefined: Self = StObject.set(x, "abort", js.undefined)
     
-    @scala.inline
-    def setAutoAbort(value: Boolean): Self = StObject.set(x, "autoAbort", value.asInstanceOf[js.Any])
+    inline def setAutoAbort(value: Boolean): Self = StObject.set(x, "autoAbort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoAbortUndefined: Self = StObject.set(x, "autoAbort", js.undefined)
+    inline def setAutoAbortUndefined: Self = StObject.set(x, "autoAbort", js.undefined)
     
-    @scala.inline
-    def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
+    inline def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
+    inline def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
     
-    @scala.inline
-    def setCors(value: Boolean): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
+    inline def setCors(value: Boolean): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
+    inline def setCorsUndefined: Self = StObject.set(x, "cors", js.undefined)
     
-    @scala.inline
-    def setDefaultHeaders(value: js.Any): Self = StObject.set(x, "defaultHeaders", value.asInstanceOf[js.Any])
+    inline def setDefaultHeaders(value: js.Any): Self = StObject.set(x, "defaultHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultHeadersUndefined: Self = StObject.set(x, "defaultHeaders", js.undefined)
+    inline def setDefaultHeadersUndefined: Self = StObject.set(x, "defaultHeaders", js.undefined)
     
-    @scala.inline
-    def setDisableCaching(value: Boolean): Self = StObject.set(x, "disableCaching", value.asInstanceOf[js.Any])
+    inline def setDisableCaching(value: Boolean): Self = StObject.set(x, "disableCaching", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableCachingParam(value: String): Self = StObject.set(x, "disableCachingParam", value.asInstanceOf[js.Any])
+    inline def setDisableCachingParam(value: String): Self = StObject.set(x, "disableCachingParam", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableCachingParamUndefined: Self = StObject.set(x, "disableCachingParam", js.undefined)
+    inline def setDisableCachingParamUndefined: Self = StObject.set(x, "disableCachingParam", js.undefined)
     
-    @scala.inline
-    def setDisableCachingUndefined: Self = StObject.set(x, "disableCaching", js.undefined)
+    inline def setDisableCachingUndefined: Self = StObject.set(x, "disableCaching", js.undefined)
     
-    @scala.inline
-    def setExtraParams(value: js.Any): Self = StObject.set(x, "extraParams", value.asInstanceOf[js.Any])
+    inline def setExtraParams(value: js.Any): Self = StObject.set(x, "extraParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraParamsUndefined: Self = StObject.set(x, "extraParams", js.undefined)
+    inline def setExtraParamsUndefined: Self = StObject.set(x, "extraParams", js.undefined)
     
-    @scala.inline
-    def setIsLoading(value: /* request */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "isLoading", js.Any.fromFunction1(value))
+    inline def setIsLoading(value: /* request */ js.UndefOr[js.Any] => Boolean): Self = StObject.set(x, "isLoading", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsLoadingUndefined: Self = StObject.set(x, "isLoading", js.undefined)
+    inline def setIsLoadingUndefined: Self = StObject.set(x, "isLoading", js.undefined)
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setParseStatus(value: /* status */ js.UndefOr[Double] => js.Any): Self = StObject.set(x, "parseStatus", js.Any.fromFunction1(value))
+    inline def setParseStatus(value: /* status */ js.UndefOr[Double] => js.Any): Self = StObject.set(x, "parseStatus", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParseStatusUndefined: Self = StObject.set(x, "parseStatus", js.undefined)
+    inline def setParseStatusUndefined: Self = StObject.set(x, "parseStatus", js.undefined)
     
-    @scala.inline
-    def setRequest(value: /* options */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
+    inline def setRequest(value: /* options */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+    inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
     
-    @scala.inline
-    def setSetOptions(value: (/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "setOptions", js.Any.fromFunction2(value))
+    inline def setSetOptions(value: (/* options */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "setOptions", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetOptionsUndefined: Self = StObject.set(x, "setOptions", js.undefined)
+    inline def setSetOptionsUndefined: Self = StObject.set(x, "setOptions", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setUpload(
+    inline def setUpload(
       value: (/* form */ js.UndefOr[js.Any], /* url */ js.UndefOr[String], /* params */ js.UndefOr[String], /* options */ js.UndefOr[js.Any]) => Unit
     ): Self = StObject.set(x, "upload", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
+    inline def setUploadUndefined: Self = StObject.set(x, "upload", js.undefined)
     
-    @scala.inline
-    def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+    inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
+    inline def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
   }
 }

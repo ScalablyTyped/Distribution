@@ -106,26 +106,20 @@ object HeatmapLayer {
   }
   object BandwidthStop {
     
-    @scala.inline
-    def apply(value: Double, zoom: Double): BandwidthStop = {
+    inline def apply(value: Double, zoom: Double): BandwidthStop = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
       __obj.asInstanceOf[BandwidthStop]
     }
     
-    @scala.inline
-    implicit class BandwidthStopMutableBuilder[Self <: BandwidthStop] (val x: Self) extends AnyVal {
+    extension [Self <: BandwidthStop](x: Self) {
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+      inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomIncrementFactor(value: Double): Self = StObject.set(x, "zoomIncrementFactor", value.asInstanceOf[js.Any])
+      inline def setZoomIncrementFactor(value: Double): Self = StObject.set(x, "zoomIncrementFactor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomIncrementFactorUndefined: Self = StObject.set(x, "zoomIncrementFactor", js.undefined)
+      inline def setZoomIncrementFactorUndefined: Self = StObject.set(x, "zoomIncrementFactor", js.undefined)
     }
   }
   
@@ -200,73 +194,52 @@ object HeatmapLayer {
   }
   object Options {
     
-    @scala.inline
-    def apply(rowToTilePoint: (Row, X, Y) => TilePoint): Options = {
+    inline def apply(rowToTilePoint: (Row, X, Y) => TilePoint): Options = {
       val __obj = js.Dynamic.literal(rowToTilePoint = js.Any.fromFunction3(rowToTilePoint))
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAggregation(value: Aggregation): Self = StObject.set(x, "aggregation", value.asInstanceOf[js.Any])
+      inline def setAggregation(value: Aggregation): Self = StObject.set(x, "aggregation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAggregationUndefined: Self = StObject.set(x, "aggregation", js.undefined)
+      inline def setAggregationUndefined: Self = StObject.set(x, "aggregation", js.undefined)
       
-      @scala.inline
-      def setAlphaScale(value: /* scale */ Double => Double): Self = StObject.set(x, "alphaScale", js.Any.fromFunction1(value))
+      inline def setAlphaScale(value: /* scale */ Double => Double): Self = StObject.set(x, "alphaScale", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAlphaScaleUndefined: Self = StObject.set(x, "alphaScale", js.undefined)
+      inline def setAlphaScaleUndefined: Self = StObject.set(x, "alphaScale", js.undefined)
       
-      @scala.inline
-      def setBandwidth(value: Bandwidth | BandwidthStop | js.Array[BandwidthStop] | BandwidthCallback): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
+      inline def setBandwidth(value: Bandwidth | BandwidthStop | js.Array[BandwidthStop] | BandwidthCallback): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBandwidthFunction0(value: () => Unit): Self = StObject.set(x, "bandwidth", js.Any.fromFunction0(value))
+      inline def setBandwidthFunction0(value: () => Unit): Self = StObject.set(x, "bandwidth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setBandwidthUndefined: Self = StObject.set(x, "bandwidth", js.undefined)
+      inline def setBandwidthUndefined: Self = StObject.set(x, "bandwidth", js.undefined)
       
-      @scala.inline
-      def setBandwidthVarargs(value: BandwidthStop*): Self = StObject.set(x, "bandwidth", js.Array(value :_*))
+      inline def setBandwidthVarargs(value: BandwidthStop*): Self = StObject.set(x, "bandwidth", js.Array(value :_*))
       
-      @scala.inline
-      def setColorScale(value: /* scale */ Double => String): Self = StObject.set(x, "colorScale", js.Any.fromFunction1(value))
+      inline def setColorScale(value: /* scale */ Double => String): Self = StObject.set(x, "colorScale", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setColorScaleUndefined: Self = StObject.set(x, "colorScale", js.undefined)
+      inline def setColorScaleUndefined: Self = StObject.set(x, "colorScale", js.undefined)
       
-      @scala.inline
-      def setCountRange(value: /* zoom */ Zoom => js.Array[Double]): Self = StObject.set(x, "countRange", js.Any.fromFunction1(value))
+      inline def setCountRange(value: /* zoom */ Zoom => js.Array[Double]): Self = StObject.set(x, "countRange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCountRangeUndefined: Self = StObject.set(x, "countRange", js.undefined)
+      inline def setCountRangeUndefined: Self = StObject.set(x, "countRange", js.undefined)
       
-      @scala.inline
-      def setDataToRows(
+      inline def setDataToRows(
         value: (/* data */ Data, /* x */ typings.heredatalens.H.datalens.QueryTileProvider.X, /* y */ typings.heredatalens.H.datalens.QueryTileProvider.Y, /* zoom */ Zoom) => js.Array[Row]
       ): Self = StObject.set(x, "dataToRows", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setDataToRowsUndefined: Self = StObject.set(x, "dataToRows", js.undefined)
+      inline def setDataToRowsUndefined: Self = StObject.set(x, "dataToRows", js.undefined)
       
-      @scala.inline
-      def setInputScale(value: InputScale): Self = StObject.set(x, "inputScale", value.asInstanceOf[js.Any])
+      inline def setInputScale(value: InputScale): Self = StObject.set(x, "inputScale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputScaleUndefined: Self = StObject.set(x, "inputScale", js.undefined)
+      inline def setInputScaleUndefined: Self = StObject.set(x, "inputScale", js.undefined)
       
-      @scala.inline
-      def setRowToTilePoint(value: (Row, X, Y) => TilePoint): Self = StObject.set(x, "rowToTilePoint", js.Any.fromFunction3(value))
+      inline def setRowToTilePoint(value: (Row, X, Y) => TilePoint): Self = StObject.set(x, "rowToTilePoint", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setValueRange(value: /* zoom */ Zoom => js.Array[Double]): Self = StObject.set(x, "valueRange", js.Any.fromFunction1(value))
+      inline def setValueRange(value: /* zoom */ Zoom => js.Array[Double]): Self = StObject.set(x, "valueRange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValueRangeUndefined: Self = StObject.set(x, "valueRange", js.undefined)
+      inline def setValueRangeUndefined: Self = StObject.set(x, "valueRange", js.undefined)
     }
   }
   
@@ -285,32 +258,24 @@ object HeatmapLayer {
   }
   object Row {
     
-    @scala.inline
-    def apply(): Row = {
+    inline def apply(): Row = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Row]
     }
     
-    @scala.inline
-    implicit class RowMutableBuilder[Self <: Row] (val x: Self) extends AnyVal {
+    extension [Self <: Row](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      @scala.inline
-      def setTx(value: Double): Self = StObject.set(x, "tx", value.asInstanceOf[js.Any])
+      inline def setTx(value: Double): Self = StObject.set(x, "tx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTxUndefined: Self = StObject.set(x, "tx", js.undefined)
+      inline def setTxUndefined: Self = StObject.set(x, "tx", js.undefined)
       
-      @scala.inline
-      def setTy(value: Double): Self = StObject.set(x, "ty", value.asInstanceOf[js.Any])
+      inline def setTy(value: Double): Self = StObject.set(x, "ty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTyUndefined: Self = StObject.set(x, "ty", js.undefined)
+      inline def setTyUndefined: Self = StObject.set(x, "ty", js.undefined)
     }
   }
   
@@ -337,32 +302,24 @@ object HeatmapLayer {
   }
   object TilePoint {
     
-    @scala.inline
-    def apply(count: Double, value: Double, x: Double, y: Double): TilePoint = {
+    inline def apply(count: Double, value: Double, x: Double, y: Double): TilePoint = {
       val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[TilePoint]
     }
     
-    @scala.inline
-    implicit class TilePointMutableBuilder[Self <: TilePoint] (val x: Self) extends AnyVal {
+    extension [Self <: TilePoint](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: Row): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Row): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   

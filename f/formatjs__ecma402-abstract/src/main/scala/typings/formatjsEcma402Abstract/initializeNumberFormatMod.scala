@@ -13,43 +13,37 @@ object initializeNumberFormatMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def InitializeNumberFormat(
+  inline def InitializeNumberFormat(
     nf: NumberFormat,
     locales: String,
     opts: Unit,
     hasGetInternalSlotsLocaleDataAvailableLocalesNumberingSystemNamesGetDefaultLocaleCurrencyDigitsData: NumberingSystemNames
   ): NumberFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeNumberFormat")(nf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], hasGetInternalSlotsLocaleDataAvailableLocalesNumberingSystemNamesGetDefaultLocaleCurrencyDigitsData.asInstanceOf[js.Any])).asInstanceOf[NumberFormat]
-  @scala.inline
-  def InitializeNumberFormat(
+  inline def InitializeNumberFormat(
     nf: NumberFormat,
     locales: String,
     opts: NumberFormatOptions,
     hasGetInternalSlotsLocaleDataAvailableLocalesNumberingSystemNamesGetDefaultLocaleCurrencyDigitsData: NumberingSystemNames
   ): NumberFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeNumberFormat")(nf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], hasGetInternalSlotsLocaleDataAvailableLocalesNumberingSystemNamesGetDefaultLocaleCurrencyDigitsData.asInstanceOf[js.Any])).asInstanceOf[NumberFormat]
-  @scala.inline
-  def InitializeNumberFormat(
+  inline def InitializeNumberFormat(
     nf: NumberFormat,
     locales: js.Array[String],
     opts: Unit,
     hasGetInternalSlotsLocaleDataAvailableLocalesNumberingSystemNamesGetDefaultLocaleCurrencyDigitsData: NumberingSystemNames
   ): NumberFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeNumberFormat")(nf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], hasGetInternalSlotsLocaleDataAvailableLocalesNumberingSystemNamesGetDefaultLocaleCurrencyDigitsData.asInstanceOf[js.Any])).asInstanceOf[NumberFormat]
-  @scala.inline
-  def InitializeNumberFormat(
+  inline def InitializeNumberFormat(
     nf: NumberFormat,
     locales: js.Array[String],
     opts: NumberFormatOptions,
     hasGetInternalSlotsLocaleDataAvailableLocalesNumberingSystemNamesGetDefaultLocaleCurrencyDigitsData: NumberingSystemNames
   ): NumberFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeNumberFormat")(nf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], hasGetInternalSlotsLocaleDataAvailableLocalesNumberingSystemNamesGetDefaultLocaleCurrencyDigitsData.asInstanceOf[js.Any])).asInstanceOf[NumberFormat]
-  @scala.inline
-  def InitializeNumberFormat(
+  inline def InitializeNumberFormat(
     nf: NumberFormat,
     locales: Unit,
     opts: Unit,
     hasGetInternalSlotsLocaleDataAvailableLocalesNumberingSystemNamesGetDefaultLocaleCurrencyDigitsData: NumberingSystemNames
   ): NumberFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeNumberFormat")(nf.asInstanceOf[js.Any], locales.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], hasGetInternalSlotsLocaleDataAvailableLocalesNumberingSystemNamesGetDefaultLocaleCurrencyDigitsData.asInstanceOf[js.Any])).asInstanceOf[NumberFormat]
-  @scala.inline
-  def InitializeNumberFormat(
+  inline def InitializeNumberFormat(
     nf: NumberFormat,
     locales: Unit,
     opts: NumberFormatOptions,

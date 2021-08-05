@@ -21,28 +21,21 @@ trait SynthesizedComment
 }
 object SynthesizedComment {
   
-  @scala.inline
-  def apply(kind: CommentKind, text: java.lang.String): SynthesizedComment = {
+  inline def apply(kind: CommentKind, text: java.lang.String): SynthesizedComment = {
     val __obj = js.Dynamic.literal(end = -1, kind = kind.asInstanceOf[js.Any], pos = -1, text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[SynthesizedComment]
   }
   
-  @scala.inline
-  implicit class SynthesizedCommentMutableBuilder[Self <: SynthesizedComment] (val x: Self) extends AnyVal {
+  extension [Self <: SynthesizedComment](x: Self) {
     
-    @scala.inline
-    def setEnd(value: `-1`): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: `-1`): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasLeadingNewline(value: Boolean): Self = StObject.set(x, "hasLeadingNewline", value.asInstanceOf[js.Any])
+    inline def setHasLeadingNewline(value: Boolean): Self = StObject.set(x, "hasLeadingNewline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasLeadingNewlineUndefined: Self = StObject.set(x, "hasLeadingNewline", js.undefined)
+    inline def setHasLeadingNewlineUndefined: Self = StObject.set(x, "hasLeadingNewline", js.undefined)
     
-    @scala.inline
-    def setPos(value: `-1`): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+    inline def setPos(value: `-1`): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: java.lang.String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: java.lang.String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

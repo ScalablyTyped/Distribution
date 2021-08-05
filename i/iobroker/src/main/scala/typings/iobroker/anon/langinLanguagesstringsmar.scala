@@ -35,91 +35,63 @@ trait langinLanguagesstringsmar extends StObject {
 }
 object langinLanguagesstringsmar {
   
-  @scala.inline
-  def apply(): langinLanguagesstringsmar = {
+  inline def apply(): langinLanguagesstringsmar = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[langinLanguagesstringsmar]
   }
   
-  @scala.inline
-  implicit class langinLanguagesstringsmarMutableBuilder[Self <: langinLanguagesstringsmar] (val x: Self) extends AnyVal {
+  extension [Self <: langinLanguagesstringsmar](x: Self) {
     
-    @scala.inline
-    def setByOn(value: String): Self = StObject.set(x, "byOn", value.asInstanceOf[js.Any])
+    inline def setByOn(value: String): Self = StObject.set(x, "byOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setByOnNull: Self = StObject.set(x, "byOn", null)
+    inline def setByOnNull: Self = StObject.set(x, "byOn", null)
     
-    @scala.inline
-    def setByOnUndefined: Self = StObject.set(x, "byOn", js.undefined)
+    inline def setByOnUndefined: Self = StObject.set(x, "byOn", js.undefined)
     
-    @scala.inline
-    def setDe(value: String): Self = StObject.set(x, "de", value.asInstanceOf[js.Any])
+    inline def setDe(value: String): Self = StObject.set(x, "de", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeUndefined: Self = StObject.set(x, "de", js.undefined)
+    inline def setDeUndefined: Self = StObject.set(x, "de", js.undefined)
     
-    @scala.inline
-    def setEn(value: String): Self = StObject.set(x, "en", value.asInstanceOf[js.Any])
+    inline def setEn(value: String): Self = StObject.set(x, "en", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnUndefined: Self = StObject.set(x, "en", js.undefined)
+    inline def setEnUndefined: Self = StObject.set(x, "en", js.undefined)
     
-    @scala.inline
-    def setEs(value: String): Self = StObject.set(x, "es", value.asInstanceOf[js.Any])
+    inline def setEs(value: String): Self = StObject.set(x, "es", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEsUndefined: Self = StObject.set(x, "es", js.undefined)
+    inline def setEsUndefined: Self = StObject.set(x, "es", js.undefined)
     
-    @scala.inline
-    def setFr(value: String): Self = StObject.set(x, "fr", value.asInstanceOf[js.Any])
+    inline def setFr(value: String): Self = StObject.set(x, "fr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrUndefined: Self = StObject.set(x, "fr", js.undefined)
+    inline def setFrUndefined: Self = StObject.set(x, "fr", js.undefined)
     
-    @scala.inline
-    def setIt(value: String): Self = StObject.set(x, "it", value.asInstanceOf[js.Any])
+    inline def setIt(value: String): Self = StObject.set(x, "it", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItUndefined: Self = StObject.set(x, "it", js.undefined)
+    inline def setItUndefined: Self = StObject.set(x, "it", js.undefined)
     
-    @scala.inline
-    def setNl(value: String): Self = StObject.set(x, "nl", value.asInstanceOf[js.Any])
+    inline def setNl(value: String): Self = StObject.set(x, "nl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNlUndefined: Self = StObject.set(x, "nl", js.undefined)
+    inline def setNlUndefined: Self = StObject.set(x, "nl", js.undefined)
     
-    @scala.inline
-    def setPl(value: String): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
+    inline def setPl(value: String): Self = StObject.set(x, "pl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlUndefined: Self = StObject.set(x, "pl", js.undefined)
+    inline def setPlUndefined: Self = StObject.set(x, "pl", js.undefined)
     
-    @scala.inline
-    def setPt(value: String): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
+    inline def setPt(value: String): Self = StObject.set(x, "pt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
+    inline def setPtUndefined: Self = StObject.set(x, "pt", js.undefined)
     
-    @scala.inline
-    def setRu(value: String): Self = StObject.set(x, "ru", value.asInstanceOf[js.Any])
+    inline def setRu(value: String): Self = StObject.set(x, "ru", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuUndefined: Self = StObject.set(x, "ru", js.undefined)
+    inline def setRuUndefined: Self = StObject.set(x, "ru", js.undefined)
     
-    @scala.inline
-    def setSmartType(value: String): Self = StObject.set(x, "smartType", value.asInstanceOf[js.Any])
+    inline def setSmartType(value: String): Self = StObject.set(x, "smartType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmartTypeNull: Self = StObject.set(x, "smartType", null)
+    inline def setSmartTypeNull: Self = StObject.set(x, "smartType", null)
     
-    @scala.inline
-    def setSmartTypeUndefined: Self = StObject.set(x, "smartType", js.undefined)
+    inline def setSmartTypeUndefined: Self = StObject.set(x, "smartType", js.undefined)
     
-    @scala.inline
-    def `setZh-cn`(value: String): Self = StObject.set(x, "zh-cn", value.asInstanceOf[js.Any])
+    inline def `setZh-cn`(value: String): Self = StObject.set(x, "zh-cn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setZh-cnUndefined`: Self = StObject.set(x, "zh-cn", js.undefined)
+    inline def `setZh-cnUndefined`: Self = StObject.set(x, "zh-cn", js.undefined)
   }
 }

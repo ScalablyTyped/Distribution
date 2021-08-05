@@ -10,19 +10,15 @@ trait GcmSenderId extends StObject {
 }
 object GcmSenderId {
   
-  @scala.inline
-  def apply(): GcmSenderId = {
+  inline def apply(): GcmSenderId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GcmSenderId]
   }
   
-  @scala.inline
-  implicit class GcmSenderIdMutableBuilder[Self <: GcmSenderId] (val x: Self) extends AnyVal {
+  extension [Self <: GcmSenderId](x: Self) {
     
-    @scala.inline
-    def setGcmSenderId(value: String): Self = StObject.set(x, "gcmSenderId", value.asInstanceOf[js.Any])
+    inline def setGcmSenderId(value: String): Self = StObject.set(x, "gcmSenderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcmSenderIdUndefined: Self = StObject.set(x, "gcmSenderId", js.undefined)
+    inline def setGcmSenderIdUndefined: Self = StObject.set(x, "gcmSenderId", js.undefined)
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "mime-types"
-version := "2.1-dt-20200515Z-ee5c4b"
+version := "2.1-dt-20200515Z-0e0828"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

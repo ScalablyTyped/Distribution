@@ -63,79 +63,55 @@ trait Suite extends StObject {
 }
 object Suite {
   
-  @scala.inline
-  def apply(): Suite = {
+  inline def apply(): Suite = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Suite]
   }
   
-  @scala.inline
-  implicit class SuiteMutableBuilder[Self <: Suite] (val x: Self) extends AnyVal {
+  extension [Self <: Suite](x: Self) {
     
-    @scala.inline
-    def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setCounters(value: Counters): Self = StObject.set(x, "counters", value.asInstanceOf[js.Any])
+    inline def setCounters(value: Counters): Self = StObject.set(x, "counters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountersUndefined: Self = StObject.set(x, "counters", js.undefined)
+    inline def setCountersUndefined: Self = StObject.set(x, "counters", js.undefined)
     
-    @scala.inline
-    def setCreated(value: DateTime): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: DateTime): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+    inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
-    @scala.inline
-    def setDeviceMinutes(value: DeviceMinutes): Self = StObject.set(x, "deviceMinutes", value.asInstanceOf[js.Any])
+    inline def setDeviceMinutes(value: DeviceMinutes): Self = StObject.set(x, "deviceMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceMinutesUndefined: Self = StObject.set(x, "deviceMinutes", js.undefined)
+    inline def setDeviceMinutesUndefined: Self = StObject.set(x, "deviceMinutes", js.undefined)
     
-    @scala.inline
-    def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setResult(value: ExecutionResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: ExecutionResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
-    @scala.inline
-    def setStarted(value: DateTime): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
+    inline def setStarted(value: DateTime): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartedUndefined: Self = StObject.set(x, "started", js.undefined)
+    inline def setStartedUndefined: Self = StObject.set(x, "started", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ExecutionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ExecutionStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setStopped(value: DateTime): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
+    inline def setStopped(value: DateTime): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoppedUndefined: Self = StObject.set(x, "stopped", js.undefined)
+    inline def setStoppedUndefined: Self = StObject.set(x, "stopped", js.undefined)
     
-    @scala.inline
-    def setType(value: TestType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TestType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

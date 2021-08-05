@@ -9,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class MediaStream protected () extends StObject {
   def this(arg: js.Any) = this()
   
-  var _reactTag: String = js.native
+  /* private */ var _reactTag: String = js.native
   
-  var _tracks: js.Array[MediaStreamTrack] = js.native
+  /* private */ var _tracks: js.Array[MediaStreamTrack] = js.native
   
   var active: Boolean = js.native
   

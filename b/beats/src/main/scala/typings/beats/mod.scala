@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(bins: js.Array[Bin]): js.Function2[
+  inline def apply(bins: js.Array[Bin]): js.Function2[
     /* frequencies */ Uint8Array | Float32Array | js.Array[Double], 
     /* dt */ js.UndefOr[Double], 
     Float32Array
@@ -18,8 +17,7 @@ object mod {
     /* dt */ js.UndefOr[Double], 
     Float32Array
   ]]
-  @scala.inline
-  def apply(bins: js.Array[Bin], minSeparation: Double): js.Function2[
+  inline def apply(bins: js.Array[Bin], minSeparation: Double): js.Function2[
     /* frequencies */ Uint8Array | Float32Array | js.Array[Double], 
     /* dt */ js.UndefOr[Double], 
     Float32Array
@@ -45,26 +43,20 @@ object mod {
   }
   object Bin {
     
-    @scala.inline
-    def apply(decay: Double, hi: Double, lo: Double, threshold: Double): Bin = {
+    inline def apply(decay: Double, hi: Double, lo: Double, threshold: Double): Bin = {
       val __obj = js.Dynamic.literal(decay = decay.asInstanceOf[js.Any], hi = hi.asInstanceOf[js.Any], lo = lo.asInstanceOf[js.Any], threshold = threshold.asInstanceOf[js.Any])
       __obj.asInstanceOf[Bin]
     }
     
-    @scala.inline
-    implicit class BinMutableBuilder[Self <: Bin] (val x: Self) extends AnyVal {
+    extension [Self <: Bin](x: Self) {
       
-      @scala.inline
-      def setDecay(value: Double): Self = StObject.set(x, "decay", value.asInstanceOf[js.Any])
+      inline def setDecay(value: Double): Self = StObject.set(x, "decay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHi(value: Double): Self = StObject.set(x, "hi", value.asInstanceOf[js.Any])
+      inline def setHi(value: Double): Self = StObject.set(x, "hi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLo(value: Double): Self = StObject.set(x, "lo", value.asInstanceOf[js.Any])
+      inline def setLo(value: Double): Self = StObject.set(x, "lo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     }
   }
 }

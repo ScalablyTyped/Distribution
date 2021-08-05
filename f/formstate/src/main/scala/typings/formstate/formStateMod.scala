@@ -31,7 +31,7 @@ object formStateMod {
     @JSName("$")
     var $: TValue = js.native
     
-    var _error: js.UndefOr[String | Null] = js.native
+    /* protected */ var _error: js.UndefOr[String | Null] = js.native
     
     /* CompleteClass */
     @JSName("_on$Reinit")
@@ -46,12 +46,12 @@ object formStateMod {
     /* CompleteClass */
     override def _setCompositionParent(config: OnReinit): Unit = js.native
     
-    var _validators: js.Array[Validator[TValue]] = js.native
+    /* protected */ var _validators: js.Array[Validator[TValue]] = js.native
     
     /**
       * Auto validation
       */
-    var autoValidationEnabled: Boolean = js.native
+    /* protected */ var autoValidationEnabled: Boolean = js.native
     
     /**
       * Call it when you are `reinit`ing child fields
@@ -108,7 +108,7 @@ object formStateMod {
       */
     def hasFormError: Boolean = js.native
     
-    var mode: `object` | array | map = js.native
+    /* protected */ var mode: `object` | array | map = js.native
     
     /** Allows a convinient reset for all fields */
     /* CompleteClass */

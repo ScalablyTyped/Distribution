@@ -18,22 +18,17 @@ trait BatchDeleteScheduledActionType extends StObject {
 }
 object BatchDeleteScheduledActionType {
   
-  @scala.inline
-  def apply(AutoScalingGroupName: ResourceName, ScheduledActionNames: ScheduledActionNames): BatchDeleteScheduledActionType = {
+  inline def apply(AutoScalingGroupName: ResourceName, ScheduledActionNames: ScheduledActionNames): BatchDeleteScheduledActionType = {
     val __obj = js.Dynamic.literal(AutoScalingGroupName = AutoScalingGroupName.asInstanceOf[js.Any], ScheduledActionNames = ScheduledActionNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchDeleteScheduledActionType]
   }
   
-  @scala.inline
-  implicit class BatchDeleteScheduledActionTypeMutableBuilder[Self <: BatchDeleteScheduledActionType] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDeleteScheduledActionType](x: Self) {
     
-    @scala.inline
-    def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledActionNames(value: ScheduledActionNames): Self = StObject.set(x, "ScheduledActionNames", value.asInstanceOf[js.Any])
+    inline def setScheduledActionNames(value: ScheduledActionNames): Self = StObject.set(x, "ScheduledActionNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledActionNamesVarargs(value: ResourceName*): Self = StObject.set(x, "ScheduledActionNames", js.Array(value :_*))
+    inline def setScheduledActionNamesVarargs(value: ResourceName*): Self = StObject.set(x, "ScheduledActionNames", js.Array(value :_*))
   }
 }

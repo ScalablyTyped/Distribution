@@ -31,8 +31,7 @@ object mod {
       }
       object IRepeatExpression {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           filters: String,
           itemName: String,
           keyName: String,
@@ -45,29 +44,21 @@ object mod {
           __obj.asInstanceOf[IRepeatExpression]
         }
         
-        @scala.inline
-        implicit class IRepeatExpressionMutableBuilder[Self <: IRepeatExpression] (val x: Self) extends AnyVal {
+        extension [Self <: IRepeatExpression](x: Self) {
           
-          @scala.inline
-          def setFilters(value: String): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+          inline def setFilters(value: String): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setItemName(value: String): Self = StObject.set(x, "itemName", value.asInstanceOf[js.Any])
+          inline def setItemName(value: String): Self = StObject.set(x, "itemName", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setKeyName(value: String): Self = StObject.set(x, "keyName", value.asInstanceOf[js.Any])
+          inline def setKeyName(value: String): Self = StObject.set(x, "keyName", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setModelMapper(value: String): Self = StObject.set(x, "modelMapper", value.asInstanceOf[js.Any])
+          inline def setModelMapper(value: String): Self = StObject.set(x, "modelMapper", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRepeatExpression(value: Boolean => String): Self = StObject.set(x, "repeatExpression", js.Any.fromFunction1(value))
+          inline def setRepeatExpression(value: Boolean => String): Self = StObject.set(x, "repeatExpression", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+          inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTrackByExp(value: String): Self = StObject.set(x, "trackByExp", value.asInstanceOf[js.Any])
+          inline def setTrackByExp(value: String): Self = StObject.set(x, "trackByExp", value.asInstanceOf[js.Any])
         }
       }
       
@@ -107,8 +98,7 @@ object mod {
       }
       object ISelectConfig {
         
-        @scala.inline
-        def apply(
+        inline def apply(
           appendToBody: Boolean,
           backspaceReset: Boolean,
           closeOnSelect: Boolean,
@@ -129,59 +119,41 @@ object mod {
           __obj.asInstanceOf[ISelectConfig]
         }
         
-        @scala.inline
-        implicit class ISelectConfigMutableBuilder[Self <: ISelectConfig] (val x: Self) extends AnyVal {
+        extension [Self <: ISelectConfig](x: Self) {
           
-          @scala.inline
-          def setAppendToBody(value: Boolean): Self = StObject.set(x, "appendToBody", value.asInstanceOf[js.Any])
+          inline def setAppendToBody(value: Boolean): Self = StObject.set(x, "appendToBody", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setBackspaceReset(value: Boolean): Self = StObject.set(x, "backspaceReset", value.asInstanceOf[js.Any])
+          inline def setBackspaceReset(value: Boolean): Self = StObject.set(x, "backspaceReset", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCloseOnSelect(value: Boolean): Self = StObject.set(x, "closeOnSelect", value.asInstanceOf[js.Any])
+          inline def setCloseOnSelect(value: Boolean): Self = StObject.set(x, "closeOnSelect", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDropdownPosition(value: String): Self = StObject.set(x, "dropdownPosition", value.asInstanceOf[js.Any])
+          inline def setDropdownPosition(value: String): Self = StObject.set(x, "dropdownPosition", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setGenerateId(value: () => Double): Self = StObject.set(x, "generateId", js.Any.fromFunction0(value))
+          inline def setGenerateId(value: () => Double): Self = StObject.set(x, "generateId", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setPaste(value: /* data */ String => Unit): Self = StObject.set(x, "paste", js.Any.fromFunction1(value))
+          inline def setPaste(value: /* data */ String => Unit): Self = StObject.set(x, "paste", js.Any.fromFunction1(value))
           
-          @scala.inline
-          def setPasteUndefined: Self = StObject.set(x, "paste", js.undefined)
+          inline def setPasteUndefined: Self = StObject.set(x, "paste", js.undefined)
           
-          @scala.inline
-          def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+          inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRefreshDelay(value: Double): Self = StObject.set(x, "refreshDelay", value.asInstanceOf[js.Any])
+          inline def setRefreshDelay(value: Double): Self = StObject.set(x, "refreshDelay", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRemoveSelected(value: Boolean): Self = StObject.set(x, "removeSelected", value.asInstanceOf[js.Any])
+          inline def setRemoveSelected(value: Boolean): Self = StObject.set(x, "removeSelected", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setResetSearchInput(value: Boolean): Self = StObject.set(x, "resetSearchInput", value.asInstanceOf[js.Any])
+          inline def setResetSearchInput(value: Boolean): Self = StObject.set(x, "resetSearchInput", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSearchEnabled(value: Boolean): Self = StObject.set(x, "searchEnabled", value.asInstanceOf[js.Any])
+          inline def setSearchEnabled(value: Boolean): Self = StObject.set(x, "searchEnabled", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSkipFocusser(value: Boolean): Self = StObject.set(x, "skipFocusser", value.asInstanceOf[js.Any])
+          inline def setSkipFocusser(value: Boolean): Self = StObject.set(x, "skipFocusser", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSortable(value: Boolean): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
+          inline def setSortable(value: Boolean): Self = StObject.set(x, "sortable", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSpinnerClass(value: String): Self = StObject.set(x, "spinnerClass", value.asInstanceOf[js.Any])
+          inline def setSpinnerClass(value: String): Self = StObject.set(x, "spinnerClass", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSpinnerEnabled(value: Boolean): Self = StObject.set(x, "spinnerEnabled", value.asInstanceOf[js.Any])
+          inline def setSpinnerEnabled(value: Boolean): Self = StObject.set(x, "spinnerEnabled", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+          inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
         }
       }
       

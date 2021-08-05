@@ -18,31 +18,23 @@ trait MetricTokenAggregationResult extends StObject {
 }
 object MetricTokenAggregationResult {
   
-  @scala.inline
-  def apply(): MetricTokenAggregationResult = {
+  inline def apply(): MetricTokenAggregationResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MetricTokenAggregationResult]
   }
   
-  @scala.inline
-  implicit class MetricTokenAggregationResultMutableBuilder[Self <: MetricTokenAggregationResult] (val x: Self) extends AnyVal {
+  extension [Self <: MetricTokenAggregationResult](x: Self) {
     
-    @scala.inline
-    def setEvent_rate(value: Double): Self = StObject.set(x, "event_rate", value.asInstanceOf[js.Any])
+    inline def setEvent_rate(value: Double): Self = StObject.set(x, "event_rate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent_rateUndefined: Self = StObject.set(x, "event_rate", js.undefined)
+    inline def setEvent_rateUndefined: Self = StObject.set(x, "event_rate", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setMatching_results(value: Double): Self = StObject.set(x, "matching_results", value.asInstanceOf[js.Any])
+    inline def setMatching_results(value: Double): Self = StObject.set(x, "matching_results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatching_resultsUndefined: Self = StObject.set(x, "matching_results", js.undefined)
+    inline def setMatching_resultsUndefined: Self = StObject.set(x, "matching_results", js.undefined)
   }
 }

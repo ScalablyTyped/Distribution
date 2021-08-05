@@ -15,19 +15,15 @@ trait PlayToConnectionTransferredEventArgs extends StObject {
 }
 object PlayToConnectionTransferredEventArgs {
   
-  @scala.inline
-  def apply(currentSource: PlayToSource, previousSource: PlayToSource): PlayToConnectionTransferredEventArgs = {
+  inline def apply(currentSource: PlayToSource, previousSource: PlayToSource): PlayToConnectionTransferredEventArgs = {
     val __obj = js.Dynamic.literal(currentSource = currentSource.asInstanceOf[js.Any], previousSource = previousSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayToConnectionTransferredEventArgs]
   }
   
-  @scala.inline
-  implicit class PlayToConnectionTransferredEventArgsMutableBuilder[Self <: PlayToConnectionTransferredEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: PlayToConnectionTransferredEventArgs](x: Self) {
     
-    @scala.inline
-    def setCurrentSource(value: PlayToSource): Self = StObject.set(x, "currentSource", value.asInstanceOf[js.Any])
+    inline def setCurrentSource(value: PlayToSource): Self = StObject.set(x, "currentSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousSource(value: PlayToSource): Self = StObject.set(x, "previousSource", value.asInstanceOf[js.Any])
+    inline def setPreviousSource(value: PlayToSource): Self = StObject.set(x, "previousSource", value.asInstanceOf[js.Any])
   }
 }

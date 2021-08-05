@@ -15,16 +15,13 @@ trait DeleteEntryRequestedEventOptions
 }
 object DeleteEntryRequestedEventOptions {
   
-  @scala.inline
-  def apply(entryPath: String, fileSystemId: String, recursive: Boolean, requestId: integer): DeleteEntryRequestedEventOptions = {
+  inline def apply(entryPath: String, fileSystemId: String, recursive: Boolean, requestId: integer): DeleteEntryRequestedEventOptions = {
     val __obj = js.Dynamic.literal(entryPath = entryPath.asInstanceOf[js.Any], fileSystemId = fileSystemId.asInstanceOf[js.Any], recursive = recursive.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteEntryRequestedEventOptions]
   }
   
-  @scala.inline
-  implicit class DeleteEntryRequestedEventOptionsMutableBuilder[Self <: DeleteEntryRequestedEventOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteEntryRequestedEventOptions](x: Self) {
     
-    @scala.inline
-    def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
   }
 }

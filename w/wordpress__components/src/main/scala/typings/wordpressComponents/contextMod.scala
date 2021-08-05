@@ -36,8 +36,7 @@ object contextMod extends Shortcut {
   }
   object SlotFillContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getFills: (String, Component[js.Object, js.Object, js.Any]) => js.Array[Componentanyoccurrencenum],
       getSlot: String => Component[js.Object, js.Object, js.Any],
       registerFill: (String, Component[js.Object, js.Object, js.Any]) => Unit,
@@ -49,26 +48,19 @@ object contextMod extends Shortcut {
       __obj.asInstanceOf[SlotFillContext]
     }
     
-    @scala.inline
-    implicit class SlotFillContextMutableBuilder[Self <: SlotFillContext] (val x: Self) extends AnyVal {
+    extension [Self <: SlotFillContext](x: Self) {
       
-      @scala.inline
-      def setGetFills(value: (String, Component[js.Object, js.Object, js.Any]) => js.Array[Componentanyoccurrencenum]): Self = StObject.set(x, "getFills", js.Any.fromFunction2(value))
+      inline def setGetFills(value: (String, Component[js.Object, js.Object, js.Any]) => js.Array[Componentanyoccurrencenum]): Self = StObject.set(x, "getFills", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetSlot(value: String => Component[js.Object, js.Object, js.Any]): Self = StObject.set(x, "getSlot", js.Any.fromFunction1(value))
+      inline def setGetSlot(value: String => Component[js.Object, js.Object, js.Any]): Self = StObject.set(x, "getSlot", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegisterFill(value: (String, Component[js.Object, js.Object, js.Any]) => Unit): Self = StObject.set(x, "registerFill", js.Any.fromFunction2(value))
+      inline def setRegisterFill(value: (String, Component[js.Object, js.Object, js.Any]) => Unit): Self = StObject.set(x, "registerFill", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRegisterSlot(value: (String, Component[js.Object, js.Object, js.Any]) => Unit): Self = StObject.set(x, "registerSlot", js.Any.fromFunction2(value))
+      inline def setRegisterSlot(value: (String, Component[js.Object, js.Object, js.Any]) => Unit): Self = StObject.set(x, "registerSlot", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUnregisterFill(value: (String, Component[js.Object, js.Object, js.Any]) => Unit): Self = StObject.set(x, "unregisterFill", js.Any.fromFunction2(value))
+      inline def setUnregisterFill(value: (String, Component[js.Object, js.Object, js.Any]) => Unit): Self = StObject.set(x, "unregisterFill", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUnregisterSlot(value: (String, Component[js.Object, js.Object, js.Any]) => Unit): Self = StObject.set(x, "unregisterSlot", js.Any.fromFunction2(value))
+      inline def setUnregisterSlot(value: (String, Component[js.Object, js.Object, js.Any]) => Unit): Self = StObject.set(x, "unregisterSlot", js.Any.fromFunction2(value))
     }
   }
   

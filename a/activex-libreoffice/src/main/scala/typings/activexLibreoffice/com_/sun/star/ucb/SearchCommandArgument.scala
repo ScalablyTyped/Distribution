@@ -20,19 +20,15 @@ trait SearchCommandArgument extends StObject {
 }
 object SearchCommandArgument {
   
-  @scala.inline
-  def apply(Info: SearchInfo, Properties: SafeArray[Property]): SearchCommandArgument = {
+  inline def apply(Info: SearchInfo, Properties: SafeArray[Property]): SearchCommandArgument = {
     val __obj = js.Dynamic.literal(Info = Info.asInstanceOf[js.Any], Properties = Properties.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchCommandArgument]
   }
   
-  @scala.inline
-  implicit class SearchCommandArgumentMutableBuilder[Self <: SearchCommandArgument] (val x: Self) extends AnyVal {
+  extension [Self <: SearchCommandArgument](x: Self) {
     
-    @scala.inline
-    def setInfo(value: SearchInfo): Self = StObject.set(x, "Info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: SearchInfo): Self = StObject.set(x, "Info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: SafeArray[Property]): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: SafeArray[Property]): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
   }
 }

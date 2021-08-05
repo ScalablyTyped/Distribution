@@ -21,29 +21,22 @@ object preloadScriptMod {
   }
   object PreloadScript {
     
-    @scala.inline
-    def apply(url: String): PreloadScript = {
+    inline def apply(url: String): PreloadScript = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[PreloadScript]
     }
     
-    @scala.inline
-    implicit class PreloadScriptMutableBuilder[Self <: PreloadScript] (val x: Self) extends AnyVal {
+    extension [Self <: PreloadScript](x: Self) {
       
-      @scala.inline
-      def setMandatory(value: Boolean): Self = StObject.set(x, "mandatory", value.asInstanceOf[js.Any])
+      inline def setMandatory(value: Boolean): Self = StObject.set(x, "mandatory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMandatoryUndefined: Self = StObject.set(x, "mandatory", js.undefined)
+      inline def setMandatoryUndefined: Self = StObject.set(x, "mandatory", js.undefined)
       
-      @scala.inline
-      def setState(value: `load-started` | `load-failed` | `load-succeeded` | failed | succeeded): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: `load-started` | `load-failed` | `load-succeeded` | failed | succeeded): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

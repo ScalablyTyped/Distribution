@@ -22,8 +22,7 @@ trait Bounce extends StObject {
 }
 object Bounce {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Bounce: BounceWebhookTrigger,
     Click: WebhookTrigger,
     Delivery: WebhookTrigger,
@@ -34,22 +33,16 @@ object Bounce {
     __obj.asInstanceOf[Bounce]
   }
   
-  @scala.inline
-  implicit class BounceMutableBuilder[Self <: Bounce] (val x: Self) extends AnyVal {
+  extension [Self <: Bounce](x: Self) {
     
-    @scala.inline
-    def setBounce(value: BounceWebhookTrigger): Self = StObject.set(x, "Bounce", value.asInstanceOf[js.Any])
+    inline def setBounce(value: BounceWebhookTrigger): Self = StObject.set(x, "Bounce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClick(value: WebhookTrigger): Self = StObject.set(x, "Click", value.asInstanceOf[js.Any])
+    inline def setClick(value: WebhookTrigger): Self = StObject.set(x, "Click", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelivery(value: WebhookTrigger): Self = StObject.set(x, "Delivery", value.asInstanceOf[js.Any])
+    inline def setDelivery(value: WebhookTrigger): Self = StObject.set(x, "Delivery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpen(value: OpenWebhookTrigger): Self = StObject.set(x, "Open", value.asInstanceOf[js.Any])
+    inline def setOpen(value: OpenWebhookTrigger): Self = StObject.set(x, "Open", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpamComplaint(value: SpamWebhookTrigger): Self = StObject.set(x, "SpamComplaint", value.asInstanceOf[js.Any])
+    inline def setSpamComplaint(value: SpamWebhookTrigger): Self = StObject.set(x, "SpamComplaint", value.asInstanceOf[js.Any])
   }
 }

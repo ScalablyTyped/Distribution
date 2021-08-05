@@ -24,14 +24,11 @@ trait DictionaryType extends StObject
 object DictionaryType {
   
   /** @deprecated Deprecated */
-  @scala.inline
-  def MIXED: `2` = 2.asInstanceOf[`2`]
+  inline def MIXED: `2` = 2.asInstanceOf[`2`]
   
   /** all entries in the dictionary are negative. */
-  @scala.inline
-  def NEGATIVE: `1` = 1.asInstanceOf[`1`]
+  inline def NEGATIVE: `1` = 1.asInstanceOf[`1`]
   
   /** all entries in the dictionary are positive. */
-  @scala.inline
-  def POSITIVE: `0` = 0.asInstanceOf[`0`]
+  inline def POSITIVE: `0` = 0.asInstanceOf[`0`]
 }

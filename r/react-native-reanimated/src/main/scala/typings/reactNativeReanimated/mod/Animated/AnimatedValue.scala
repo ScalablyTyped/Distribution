@@ -14,8 +14,7 @@ trait AnimatedValue[T /* <: Value */]
 }
 object AnimatedValue {
   
-  @scala.inline
-  def apply[T /* <: Value */](
+  inline def apply[T /* <: Value */](
     Space__value: T,
     interpolate: InterpolationConfig => AnimatedNode[Double],
     isNativelyInitialized: () => Boolean,
@@ -26,13 +25,10 @@ object AnimatedValue {
     __obj.asInstanceOf[AnimatedValue[T]]
   }
   
-  @scala.inline
-  implicit class AnimatedValueMutableBuilder[Self <: AnimatedValue[?], T /* <: Value */] (val x: Self & AnimatedValue[T]) extends AnyVal {
+  extension [Self <: AnimatedValue[?], T /* <: Value */](x: Self & AnimatedValue[T]) {
     
-    @scala.inline
-    def setInterpolate(value: InterpolationConfig => AnimatedNode[Double]): Self = StObject.set(x, "interpolate", js.Any.fromFunction1(value))
+    inline def setInterpolate(value: InterpolationConfig => AnimatedNode[Double]): Self = StObject.set(x, "interpolate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValue(value: Adaptable[T] => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: Adaptable[T] => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
   }
 }

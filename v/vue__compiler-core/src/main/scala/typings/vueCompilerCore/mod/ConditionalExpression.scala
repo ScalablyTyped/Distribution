@@ -23,8 +23,7 @@ trait ConditionalExpression
 }
 object ConditionalExpression {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alternate: JSChildNode,
     consequent: JSChildNode,
     loc: SourceLocation,
@@ -36,22 +35,16 @@ object ConditionalExpression {
     __obj.asInstanceOf[ConditionalExpression]
   }
   
-  @scala.inline
-  implicit class ConditionalExpressionMutableBuilder[Self <: ConditionalExpression] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalExpression](x: Self) {
     
-    @scala.inline
-    def setAlternate(value: JSChildNode): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
+    inline def setAlternate(value: JSChildNode): Self = StObject.set(x, "alternate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsequent(value: JSChildNode): Self = StObject.set(x, "consequent", value.asInstanceOf[js.Any])
+    inline def setConsequent(value: JSChildNode): Self = StObject.set(x, "consequent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewline(value: Boolean): Self = StObject.set(x, "newline", value.asInstanceOf[js.Any])
+    inline def setNewline(value: Boolean): Self = StObject.set(x, "newline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTest(value: JSChildNode): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+    inline def setTest(value: JSChildNode): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `19`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `19`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

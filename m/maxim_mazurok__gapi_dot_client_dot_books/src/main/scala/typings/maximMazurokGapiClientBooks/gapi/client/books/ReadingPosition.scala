@@ -29,55 +29,39 @@ trait ReadingPosition extends StObject {
 }
 object ReadingPosition {
   
-  @scala.inline
-  def apply(): ReadingPosition = {
+  inline def apply(): ReadingPosition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReadingPosition]
   }
   
-  @scala.inline
-  implicit class ReadingPositionMutableBuilder[Self <: ReadingPosition] (val x: Self) extends AnyVal {
+  extension [Self <: ReadingPosition](x: Self) {
     
-    @scala.inline
-    def setEpubCfiPosition(value: String): Self = StObject.set(x, "epubCfiPosition", value.asInstanceOf[js.Any])
+    inline def setEpubCfiPosition(value: String): Self = StObject.set(x, "epubCfiPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEpubCfiPositionUndefined: Self = StObject.set(x, "epubCfiPosition", js.undefined)
+    inline def setEpubCfiPositionUndefined: Self = StObject.set(x, "epubCfiPosition", js.undefined)
     
-    @scala.inline
-    def setGbImagePosition(value: String): Self = StObject.set(x, "gbImagePosition", value.asInstanceOf[js.Any])
+    inline def setGbImagePosition(value: String): Self = StObject.set(x, "gbImagePosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGbImagePositionUndefined: Self = StObject.set(x, "gbImagePosition", js.undefined)
+    inline def setGbImagePositionUndefined: Self = StObject.set(x, "gbImagePosition", js.undefined)
     
-    @scala.inline
-    def setGbTextPosition(value: String): Self = StObject.set(x, "gbTextPosition", value.asInstanceOf[js.Any])
+    inline def setGbTextPosition(value: String): Self = StObject.set(x, "gbTextPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGbTextPositionUndefined: Self = StObject.set(x, "gbTextPosition", js.undefined)
+    inline def setGbTextPositionUndefined: Self = StObject.set(x, "gbTextPosition", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPdfPosition(value: String): Self = StObject.set(x, "pdfPosition", value.asInstanceOf[js.Any])
+    inline def setPdfPosition(value: String): Self = StObject.set(x, "pdfPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPdfPositionUndefined: Self = StObject.set(x, "pdfPosition", js.undefined)
+    inline def setPdfPositionUndefined: Self = StObject.set(x, "pdfPosition", js.undefined)
     
-    @scala.inline
-    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+    inline def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
+    inline def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
     
-    @scala.inline
-    def setVolumeId(value: String): Self = StObject.set(x, "volumeId", value.asInstanceOf[js.Any])
+    inline def setVolumeId(value: String): Self = StObject.set(x, "volumeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeIdUndefined: Self = StObject.set(x, "volumeId", js.undefined)
+    inline def setVolumeIdUndefined: Self = StObject.set(x, "volumeId", js.undefined)
   }
 }

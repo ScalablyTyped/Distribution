@@ -17,34 +17,25 @@ trait KeyUsage extends StObject {
 }
 object KeyUsage {
   
-  @scala.inline
-  def apply(): KeyUsage = {
+  inline def apply(): KeyUsage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KeyUsage]
   }
   
-  @scala.inline
-  implicit class KeyUsageMutableBuilder[Self <: KeyUsage] (val x: Self) extends AnyVal {
+  extension [Self <: KeyUsage](x: Self) {
     
-    @scala.inline
-    def setBaseKeyUsage(value: KeyUsageOptions): Self = StObject.set(x, "baseKeyUsage", value.asInstanceOf[js.Any])
+    inline def setBaseKeyUsage(value: KeyUsageOptions): Self = StObject.set(x, "baseKeyUsage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseKeyUsageUndefined: Self = StObject.set(x, "baseKeyUsage", js.undefined)
+    inline def setBaseKeyUsageUndefined: Self = StObject.set(x, "baseKeyUsage", js.undefined)
     
-    @scala.inline
-    def setExtendedKeyUsage(value: ExtendedKeyUsageOptions): Self = StObject.set(x, "extendedKeyUsage", value.asInstanceOf[js.Any])
+    inline def setExtendedKeyUsage(value: ExtendedKeyUsageOptions): Self = StObject.set(x, "extendedKeyUsage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendedKeyUsageUndefined: Self = StObject.set(x, "extendedKeyUsage", js.undefined)
+    inline def setExtendedKeyUsageUndefined: Self = StObject.set(x, "extendedKeyUsage", js.undefined)
     
-    @scala.inline
-    def setUnknownExtendedKeyUsages(value: js.Array[ObjectId]): Self = StObject.set(x, "unknownExtendedKeyUsages", value.asInstanceOf[js.Any])
+    inline def setUnknownExtendedKeyUsages(value: js.Array[ObjectId]): Self = StObject.set(x, "unknownExtendedKeyUsages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnknownExtendedKeyUsagesUndefined: Self = StObject.set(x, "unknownExtendedKeyUsages", js.undefined)
+    inline def setUnknownExtendedKeyUsagesUndefined: Self = StObject.set(x, "unknownExtendedKeyUsages", js.undefined)
     
-    @scala.inline
-    def setUnknownExtendedKeyUsagesVarargs(value: ObjectId*): Self = StObject.set(x, "unknownExtendedKeyUsages", js.Array(value :_*))
+    inline def setUnknownExtendedKeyUsagesVarargs(value: ObjectId*): Self = StObject.set(x, "unknownExtendedKeyUsages", js.Array(value :_*))
   }
 }

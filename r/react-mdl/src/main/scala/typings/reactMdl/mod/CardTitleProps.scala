@@ -13,19 +13,15 @@ trait CardTitleProps
 }
 object CardTitleProps {
   
-  @scala.inline
-  def apply(): CardTitleProps = {
+  inline def apply(): CardTitleProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CardTitleProps]
   }
   
-  @scala.inline
-  implicit class CardTitlePropsMutableBuilder[Self <: CardTitleProps] (val x: Self) extends AnyVal {
+  extension [Self <: CardTitleProps](x: Self) {
     
-    @scala.inline
-    def setExpand(value: Boolean): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
+    inline def setExpand(value: Boolean): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+    inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
   }
 }

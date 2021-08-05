@@ -15,8 +15,7 @@ trait WorkItemDelete
 }
 object WorkItemDelete {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     code: Double,
     deletedBy: String,
     deletedDate: String,
@@ -33,10 +32,8 @@ object WorkItemDelete {
     __obj.asInstanceOf[WorkItemDelete]
   }
   
-  @scala.inline
-  implicit class WorkItemDeleteMutableBuilder[Self <: WorkItemDelete] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItemDelete](x: Self) {
     
-    @scala.inline
-    def setResource(value: WorkItem): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: WorkItem): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
   }
 }

@@ -11,19 +11,15 @@ trait LocationMetadata extends StObject {
 }
 object LocationMetadata {
   
-  @scala.inline
-  def apply(): LocationMetadata = {
+  inline def apply(): LocationMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocationMetadata]
   }
   
-  @scala.inline
-  implicit class LocationMetadataMutableBuilder[Self <: LocationMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: LocationMetadata](x: Self) {
     
-    @scala.inline
-    def setLegacyLocationId(value: String): Self = StObject.set(x, "legacyLocationId", value.asInstanceOf[js.Any])
+    inline def setLegacyLocationId(value: String): Self = StObject.set(x, "legacyLocationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegacyLocationIdUndefined: Self = StObject.set(x, "legacyLocationId", js.undefined)
+    inline def setLegacyLocationIdUndefined: Self = StObject.set(x, "legacyLocationId", js.undefined)
   }
 }

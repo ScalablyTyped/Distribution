@@ -10,19 +10,15 @@ trait LeftWidth extends StObject {
 }
 object LeftWidth {
   
-  @scala.inline
-  def apply(): LeftWidth = {
+  inline def apply(): LeftWidth = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LeftWidth]
   }
   
-  @scala.inline
-  implicit class LeftWidthMutableBuilder[Self <: LeftWidth] (val x: Self) extends AnyVal {
+  extension [Self <: LeftWidth](x: Self) {
     
-    @scala.inline
-    def setLeftWidth(value: String): Self = StObject.set(x, "leftWidth", value.asInstanceOf[js.Any])
+    inline def setLeftWidth(value: String): Self = StObject.set(x, "leftWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftWidthUndefined: Self = StObject.set(x, "leftWidth", js.undefined)
+    inline def setLeftWidthUndefined: Self = StObject.set(x, "leftWidth", js.undefined)
   }
 }

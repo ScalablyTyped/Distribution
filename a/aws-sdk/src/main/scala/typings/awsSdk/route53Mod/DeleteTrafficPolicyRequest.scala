@@ -18,19 +18,15 @@ trait DeleteTrafficPolicyRequest extends StObject {
 }
 object DeleteTrafficPolicyRequest {
   
-  @scala.inline
-  def apply(Id: TrafficPolicyId, Version: TrafficPolicyVersion): DeleteTrafficPolicyRequest = {
+  inline def apply(Id: TrafficPolicyId, Version: TrafficPolicyVersion): DeleteTrafficPolicyRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTrafficPolicyRequest]
   }
   
-  @scala.inline
-  implicit class DeleteTrafficPolicyRequestMutableBuilder[Self <: DeleteTrafficPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteTrafficPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: TrafficPolicyId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: TrafficPolicyId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: TrafficPolicyVersion): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: TrafficPolicyVersion): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
   }
 }

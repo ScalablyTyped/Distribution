@@ -35,80 +35,56 @@ object anon {
   }
   object PartialSettings {
     
-    @scala.inline
-    def apply(): PartialSettings = {
+    inline def apply(): PartialSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialSettings]
     }
     
-    @scala.inline
-    implicit class PartialSettingsMutableBuilder[Self <: PartialSettings] (val x: Self) extends AnyVal {
+    extension [Self <: PartialSettings](x: Self) {
       
-      @scala.inline
-      def setAstralRegExp(value: RegExp): Self = StObject.set(x, "astralRegExp", value.asInstanceOf[js.Any])
+      inline def setAstralRegExp(value: RegExp): Self = StObject.set(x, "astralRegExp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAstralRegExpUndefined: Self = StObject.set(x, "astralRegExp", js.undefined)
+      inline def setAstralRegExpUndefined: Self = StObject.set(x, "astralRegExp", js.undefined)
       
-      @scala.inline
-      def setCharacters_excluding_spacesRegExp(value: RegExp): Self = StObject.set(x, "characters_excluding_spacesRegExp", value.asInstanceOf[js.Any])
+      inline def setCharacters_excluding_spacesRegExp(value: RegExp): Self = StObject.set(x, "characters_excluding_spacesRegExp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharacters_excluding_spacesRegExpUndefined: Self = StObject.set(x, "characters_excluding_spacesRegExp", js.undefined)
+      inline def setCharacters_excluding_spacesRegExpUndefined: Self = StObject.set(x, "characters_excluding_spacesRegExp", js.undefined)
       
-      @scala.inline
-      def setCharacters_including_spacesRegExp(value: RegExp): Self = StObject.set(x, "characters_including_spacesRegExp", value.asInstanceOf[js.Any])
+      inline def setCharacters_including_spacesRegExp(value: RegExp): Self = StObject.set(x, "characters_including_spacesRegExp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharacters_including_spacesRegExpUndefined: Self = StObject.set(x, "characters_including_spacesRegExp", js.undefined)
+      inline def setCharacters_including_spacesRegExpUndefined: Self = StObject.set(x, "characters_including_spacesRegExp", js.undefined)
       
-      @scala.inline
-      def setConnectorRegExp(value: RegExp): Self = StObject.set(x, "connectorRegExp", value.asInstanceOf[js.Any])
+      inline def setConnectorRegExp(value: RegExp): Self = StObject.set(x, "connectorRegExp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectorRegExpUndefined: Self = StObject.set(x, "connectorRegExp", js.undefined)
+      inline def setConnectorRegExpUndefined: Self = StObject.set(x, "connectorRegExp", js.undefined)
       
-      @scala.inline
-      def setHTMLEntityRegExp(value: RegExp): Self = StObject.set(x, "HTMLEntityRegExp", value.asInstanceOf[js.Any])
+      inline def setHTMLEntityRegExp(value: RegExp): Self = StObject.set(x, "HTMLEntityRegExp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHTMLEntityRegExpUndefined: Self = StObject.set(x, "HTMLEntityRegExp", js.undefined)
+      inline def setHTMLEntityRegExpUndefined: Self = StObject.set(x, "HTMLEntityRegExp", js.undefined)
       
-      @scala.inline
-      def setHTMLRegExp(value: RegExp): Self = StObject.set(x, "HTMLRegExp", value.asInstanceOf[js.Any])
+      inline def setHTMLRegExp(value: RegExp): Self = StObject.set(x, "HTMLRegExp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHTMLRegExpUndefined: Self = StObject.set(x, "HTMLRegExp", js.undefined)
+      inline def setHTMLRegExpUndefined: Self = StObject.set(x, "HTMLRegExp", js.undefined)
       
-      @scala.inline
-      def setHTMLcommentRegExp(value: RegExp): Self = StObject.set(x, "HTMLcommentRegExp", value.asInstanceOf[js.Any])
+      inline def setHTMLcommentRegExp(value: RegExp): Self = StObject.set(x, "HTMLcommentRegExp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHTMLcommentRegExpUndefined: Self = StObject.set(x, "HTMLcommentRegExp", js.undefined)
+      inline def setHTMLcommentRegExpUndefined: Self = StObject.set(x, "HTMLcommentRegExp", js.undefined)
       
-      @scala.inline
-      def setL10n(value: Shortcodes): Self = StObject.set(x, "l10n", value.asInstanceOf[js.Any])
+      inline def setL10n(value: Shortcodes): Self = StObject.set(x, "l10n", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setL10nUndefined: Self = StObject.set(x, "l10n", js.undefined)
+      inline def setL10nUndefined: Self = StObject.set(x, "l10n", js.undefined)
       
-      @scala.inline
-      def setRemoveRegExp(value: RegExp): Self = StObject.set(x, "removeRegExp", value.asInstanceOf[js.Any])
+      inline def setRemoveRegExp(value: RegExp): Self = StObject.set(x, "removeRegExp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveRegExpUndefined: Self = StObject.set(x, "removeRegExp", js.undefined)
+      inline def setRemoveRegExpUndefined: Self = StObject.set(x, "removeRegExp", js.undefined)
       
-      @scala.inline
-      def setSpaceRegExp(value: RegExp): Self = StObject.set(x, "spaceRegExp", value.asInstanceOf[js.Any])
+      inline def setSpaceRegExp(value: RegExp): Self = StObject.set(x, "spaceRegExp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpaceRegExpUndefined: Self = StObject.set(x, "spaceRegExp", js.undefined)
+      inline def setSpaceRegExpUndefined: Self = StObject.set(x, "spaceRegExp", js.undefined)
       
-      @scala.inline
-      def setWordsRegExp(value: RegExp): Self = StObject.set(x, "wordsRegExp", value.asInstanceOf[js.Any])
+      inline def setWordsRegExp(value: RegExp): Self = StObject.set(x, "wordsRegExp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWordsRegExpUndefined: Self = StObject.set(x, "wordsRegExp", js.undefined)
+      inline def setWordsRegExpUndefined: Self = StObject.set(x, "wordsRegExp", js.undefined)
     }
   }
   
@@ -121,29 +97,22 @@ object anon {
   }
   object Shortcodes {
     
-    @scala.inline
-    def apply(): Shortcodes = {
+    inline def apply(): Shortcodes = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Shortcodes]
     }
     
-    @scala.inline
-    implicit class ShortcodesMutableBuilder[Self <: Shortcodes] (val x: Self) extends AnyVal {
+    extension [Self <: Shortcodes](x: Self) {
       
-      @scala.inline
-      def setShortcodes(value: js.Array[String]): Self = StObject.set(x, "shortcodes", value.asInstanceOf[js.Any])
+      inline def setShortcodes(value: js.Array[String]): Self = StObject.set(x, "shortcodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortcodesUndefined: Self = StObject.set(x, "shortcodes", js.undefined)
+      inline def setShortcodesUndefined: Self = StObject.set(x, "shortcodes", js.undefined)
       
-      @scala.inline
-      def setShortcodesVarargs(value: String*): Self = StObject.set(x, "shortcodes", js.Array(value :_*))
+      inline def setShortcodesVarargs(value: String*): Self = StObject.set(x, "shortcodes", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: CountType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: CountType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

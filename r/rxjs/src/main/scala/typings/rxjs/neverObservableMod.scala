@@ -18,7 +18,6 @@ object neverObservableMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Any]
+    inline def create[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Any]
   }
 }

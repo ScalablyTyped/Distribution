@@ -9,6 +9,5 @@ object global {
   @JSGlobal("Flipsnap")
   @js.native
   def Flipsnap: FlipsnapStatic = js.native
-  @scala.inline
-  def Flipsnap_=(x: FlipsnapStatic): Unit = js.Dynamic.global.updateDynamic("Flipsnap")(x.asInstanceOf[js.Any])
+  inline def Flipsnap_=(x: FlipsnapStatic): Unit = js.Dynamic.global.updateDynamic("Flipsnap")(x.asInstanceOf[js.Any])
 }

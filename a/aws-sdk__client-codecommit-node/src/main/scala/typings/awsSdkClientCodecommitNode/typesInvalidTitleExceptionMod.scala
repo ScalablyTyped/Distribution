@@ -18,17 +18,14 @@ object typesInvalidTitleExceptionMod {
   }
   object InvalidTitleException {
     
-    @scala.inline
-    def apply(): InvalidTitleException = {
+    inline def apply(): InvalidTitleException = {
       val __obj = js.Dynamic.literal(name = "InvalidTitleException")
       __obj.asInstanceOf[InvalidTitleException]
     }
     
-    @scala.inline
-    implicit class InvalidTitleExceptionMutableBuilder[Self <: InvalidTitleException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidTitleException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidTitleException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidTitleException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

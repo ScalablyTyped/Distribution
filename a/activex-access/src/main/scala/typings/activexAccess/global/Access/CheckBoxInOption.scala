@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access._CheckBoxInOption")
 @js.native
-class CheckBoxInOption protected ()
+/* private */ class CheckBoxInOption ()
   extends StObject
      with typings.activexAccess.Access.CheckBoxInOption

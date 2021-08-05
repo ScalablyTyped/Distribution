@@ -15,18 +15,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait InspectMode extends StObject
 object InspectMode {
   
-  @scala.inline
-  def captureAreaScreenshot: typings.devtoolsProtocol.devtoolsProtocolStrings.captureAreaScreenshot = "captureAreaScreenshot".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.captureAreaScreenshot]
+  inline def captureAreaScreenshot: typings.devtoolsProtocol.devtoolsProtocolStrings.captureAreaScreenshot = "captureAreaScreenshot".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.captureAreaScreenshot]
   
-  @scala.inline
-  def none: none_ = "none".asInstanceOf[none_]
+  inline def none: none_ = "none".asInstanceOf[none_]
   
-  @scala.inline
-  def searchForNode: typings.devtoolsProtocol.devtoolsProtocolStrings.searchForNode = "searchForNode".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.searchForNode]
+  inline def searchForNode: typings.devtoolsProtocol.devtoolsProtocolStrings.searchForNode = "searchForNode".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.searchForNode]
   
-  @scala.inline
-  def searchForUAShadowDOM: typings.devtoolsProtocol.devtoolsProtocolStrings.searchForUAShadowDOM = "searchForUAShadowDOM".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.searchForUAShadowDOM]
+  inline def searchForUAShadowDOM: typings.devtoolsProtocol.devtoolsProtocolStrings.searchForUAShadowDOM = "searchForUAShadowDOM".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.searchForUAShadowDOM]
   
-  @scala.inline
-  def showDistances: typings.devtoolsProtocol.devtoolsProtocolStrings.showDistances = "showDistances".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.showDistances]
+  inline def showDistances: typings.devtoolsProtocol.devtoolsProtocolStrings.showDistances = "showDistances".asInstanceOf[typings.devtoolsProtocol.devtoolsProtocolStrings.showDistances]
 }

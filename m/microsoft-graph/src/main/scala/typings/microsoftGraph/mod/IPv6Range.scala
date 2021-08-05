@@ -16,25 +16,19 @@ trait IPv6Range
 }
 object IPv6Range {
   
-  @scala.inline
-  def apply(): IPv6Range = {
+  inline def apply(): IPv6Range = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPv6Range]
   }
   
-  @scala.inline
-  implicit class IPv6RangeMutableBuilder[Self <: IPv6Range] (val x: Self) extends AnyVal {
+  extension [Self <: IPv6Range](x: Self) {
     
-    @scala.inline
-    def setLowerAddress(value: String): Self = StObject.set(x, "lowerAddress", value.asInstanceOf[js.Any])
+    inline def setLowerAddress(value: String): Self = StObject.set(x, "lowerAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowerAddressUndefined: Self = StObject.set(x, "lowerAddress", js.undefined)
+    inline def setLowerAddressUndefined: Self = StObject.set(x, "lowerAddress", js.undefined)
     
-    @scala.inline
-    def setUpperAddress(value: String): Self = StObject.set(x, "upperAddress", value.asInstanceOf[js.Any])
+    inline def setUpperAddress(value: String): Self = StObject.set(x, "upperAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpperAddressUndefined: Self = StObject.set(x, "upperAddress", js.undefined)
+    inline def setUpperAddressUndefined: Self = StObject.set(x, "upperAddress", js.undefined)
   }
 }

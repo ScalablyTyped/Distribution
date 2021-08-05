@@ -45,8 +45,7 @@ trait FileSystemInfo extends StObject {
 }
 object FileSystemInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     displayName: String,
     fileSystemId: String,
     openedFiles: js.Array[OpenedFileInfo],
@@ -58,37 +57,26 @@ object FileSystemInfo {
     __obj.asInstanceOf[FileSystemInfo]
   }
   
-  @scala.inline
-  implicit class FileSystemInfoMutableBuilder[Self <: FileSystemInfo] (val x: Self) extends AnyVal {
+  extension [Self <: FileSystemInfo](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSystemId(value: String): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
+    inline def setFileSystemId(value: String): Self = StObject.set(x, "fileSystemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenedFiles(value: js.Array[OpenedFileInfo]): Self = StObject.set(x, "openedFiles", value.asInstanceOf[js.Any])
+    inline def setOpenedFiles(value: js.Array[OpenedFileInfo]): Self = StObject.set(x, "openedFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenedFilesLimit(value: integer): Self = StObject.set(x, "openedFilesLimit", value.asInstanceOf[js.Any])
+    inline def setOpenedFilesLimit(value: integer): Self = StObject.set(x, "openedFilesLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenedFilesVarargs(value: OpenedFileInfo*): Self = StObject.set(x, "openedFiles", js.Array(value :_*))
+    inline def setOpenedFilesVarargs(value: OpenedFileInfo*): Self = StObject.set(x, "openedFiles", js.Array(value :_*))
     
-    @scala.inline
-    def setSupportsNotifyTag(value: Boolean): Self = StObject.set(x, "supportsNotifyTag", value.asInstanceOf[js.Any])
+    inline def setSupportsNotifyTag(value: Boolean): Self = StObject.set(x, "supportsNotifyTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsNotifyTagUndefined: Self = StObject.set(x, "supportsNotifyTag", js.undefined)
+    inline def setSupportsNotifyTagUndefined: Self = StObject.set(x, "supportsNotifyTag", js.undefined)
     
-    @scala.inline
-    def setWatchers(value: js.Array[FileWatchersInfo]): Self = StObject.set(x, "watchers", value.asInstanceOf[js.Any])
+    inline def setWatchers(value: js.Array[FileWatchersInfo]): Self = StObject.set(x, "watchers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWatchersVarargs(value: FileWatchersInfo*): Self = StObject.set(x, "watchers", js.Array(value :_*))
+    inline def setWatchersVarargs(value: FileWatchersInfo*): Self = StObject.set(x, "watchers", js.Array(value :_*))
     
-    @scala.inline
-    def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
+    inline def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
   }
 }

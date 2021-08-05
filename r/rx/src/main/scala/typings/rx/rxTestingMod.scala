@@ -142,8 +142,7 @@ object rxTestingMod {
     override def toNotifier(): js.Function1[/* notification */ Notification[T], Unit] = js.native
   }
   
-  @scala.inline
-  def AnonymousObserver_=(x: AnonymousObserverStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AnonymousObserver")(x.asInstanceOf[js.Any])
+  inline def AnonymousObserver_=(x: AnonymousObserverStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AnonymousObserver")(x.asInstanceOf[js.Any])
   
   @JSImport("rx.testing", "AnonymousSubject")
   @js.native
@@ -217,8 +216,7 @@ object rxTestingMod {
     override def toNotifier(): js.Function1[/* notification */ Notification[T], Unit] = js.native
   }
   
-  @scala.inline
-  def AnonymousSubject_=(x: AnonymousSubjectStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AnonymousSubject")(x.asInstanceOf[js.Any])
+  inline def AnonymousSubject_=(x: AnonymousSubjectStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AnonymousSubject")(x.asInstanceOf[js.Any])
   
   @JSImport("rx.testing", "AsyncSubject")
   @js.native
@@ -292,8 +290,7 @@ object rxTestingMod {
     override def toNotifier(): js.Function1[/* notification */ Notification[T], Unit] = js.native
   }
   
-  @scala.inline
-  def AsyncSubject_=(x: AsyncSubjectStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AsyncSubject")(x.asInstanceOf[js.Any])
+  inline def AsyncSubject_=(x: AsyncSubjectStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AsyncSubject")(x.asInstanceOf[js.Any])
   
   @JSImport("rx.testing", "BehaviorSubject")
   @js.native
@@ -368,8 +365,7 @@ object rxTestingMod {
     override def toNotifier(): js.Function1[/* notification */ Notification[T], Unit] = js.native
   }
   
-  @scala.inline
-  def BehaviorSubject_=(x: BehaviorSubjectStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BehaviorSubject")(x.asInstanceOf[js.Any])
+  inline def BehaviorSubject_=(x: BehaviorSubjectStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("BehaviorSubject")(x.asInstanceOf[js.Any])
   
   @JSImport("rx.testing", "CompositeDisposable")
   @js.native
@@ -411,8 +407,7 @@ object rxTestingMod {
     override def remove(item: IDisposable): Unit = js.native
   }
   
-  @scala.inline
-  def CompositeDisposable_=(x: CompositeDisposableStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CompositeDisposable")(x.asInstanceOf[js.Any])
+  inline def CompositeDisposable_=(x: CompositeDisposableStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CompositeDisposable")(x.asInstanceOf[js.Any])
   
   @JSImport("rx.testing", "Disposable")
   @js.native
@@ -434,8 +429,7 @@ object rxTestingMod {
     override def dispose(): Unit = js.native
   }
   
-  @scala.inline
-  def Disposable_=(x: DisposableStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Disposable")(x.asInstanceOf[js.Any])
+  inline def Disposable_=(x: DisposableStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Disposable")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("rx.testing", "HistoricalScheduler")
@@ -521,8 +515,7 @@ object rxTestingMod {
     override def toNotifier(): js.Function1[/* notification */ Notification[T], Unit] = js.native
   }
   
-  @scala.inline
-  def MockObserver_=(x: MockObserverStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MockObserver")(x.asInstanceOf[js.Any])
+  inline def MockObserver_=(x: MockObserverStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MockObserver")(x.asInstanceOf[js.Any])
   
   @JSImport("rx.testing", "Notification")
   @js.native
@@ -544,20 +537,17 @@ object rxTestingMod {
     ) = this()
   }
   
-  @scala.inline
-  def Notification_=(x: NotificationStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Notification")(x.asInstanceOf[js.Any])
+  inline def Notification_=(x: NotificationStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Notification")(x.asInstanceOf[js.Any])
   
   @JSImport("rx.testing", "Observable")
   @js.native
   def Observable: ObservableStatic = js.native
-  @scala.inline
-  def Observable_=(x: ObservableStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Observable")(x.asInstanceOf[js.Any])
+  inline def Observable_=(x: ObservableStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Observable")(x.asInstanceOf[js.Any])
   
   @JSImport("rx.testing", "Observer")
   @js.native
   def Observer: ObserverStatic = js.native
-  @scala.inline
-  def Observer_=(x: ObserverStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Observer")(x.asInstanceOf[js.Any])
+  inline def Observer_=(x: ObserverStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Observer")(x.asInstanceOf[js.Any])
   
   @JSImport("rx.testing", "Plan")
   @js.native
@@ -575,15 +565,13 @@ object rxTestingMod {
     @JSImport("rx.testing", "ReactiveTest.created")
     @js.native
     def created: Double = js.native
-    @scala.inline
-    def created_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("created")(x.asInstanceOf[js.Any])
+    inline def created_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("created")(x.asInstanceOf[js.Any])
     
     /** Default virtual time used to dispose subscriptions in unit tests. */
     @JSImport("rx.testing", "ReactiveTest.disposed")
     @js.native
     def disposed: Double = js.native
-    @scala.inline
-    def disposed_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disposed")(x.asInstanceOf[js.Any])
+    inline def disposed_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disposed")(x.asInstanceOf[js.Any])
     
     /**
       * Factory method for an OnCompleted notification record at a given time.
@@ -591,8 +579,7 @@ object rxTestingMod {
       * @param ticks Recorded virtual time the OnCompleted notification occurs.
       * @return Recorded OnCompleted notification.
       */
-    @scala.inline
-    def onCompleted(ticks: Double): Recorded = ^.asInstanceOf[js.Dynamic].applyDynamic("onCompleted")(ticks.asInstanceOf[js.Any]).asInstanceOf[Recorded]
+    inline def onCompleted(ticks: Double): Recorded = ^.asInstanceOf[js.Dynamic].applyDynamic("onCompleted")(ticks.asInstanceOf[js.Any]).asInstanceOf[Recorded]
     
     /**
       * Factory method for an OnError notification record at a given time with a given error.
@@ -604,8 +591,7 @@ object rxTestingMod {
       * @param exception Recorded exception stored in the OnError notification.
       * @return Recorded OnError notification.
       */
-    @scala.inline
-    def onError(ticks: Double, exception: js.Any): Recorded = (^.asInstanceOf[js.Dynamic].applyDynamic("onError")(ticks.asInstanceOf[js.Any], exception.asInstanceOf[js.Any])).asInstanceOf[Recorded]
+    inline def onError(ticks: Double, exception: js.Any): Recorded = (^.asInstanceOf[js.Dynamic].applyDynamic("onError")(ticks.asInstanceOf[js.Any], exception.asInstanceOf[js.Any])).asInstanceOf[Recorded]
     /**
       * Factory method for an OnError notification record at a given time with a given error.
       *
@@ -616,8 +602,7 @@ object rxTestingMod {
       * @param exception Recorded exception stored in the OnError notification.
       * @return Recorded OnError notification.
       */
-    @scala.inline
-    def onError(ticks: Double, predicate: js.Function1[/* exception */ js.Any, Boolean]): Recorded = (^.asInstanceOf[js.Dynamic].applyDynamic("onError")(ticks.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Recorded]
+    inline def onError(ticks: Double, predicate: js.Function1[/* exception */ js.Any, Boolean]): Recorded = (^.asInstanceOf[js.Dynamic].applyDynamic("onError")(ticks.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Recorded]
     
     /**
       * Factory method for an OnNext notification record at a given time with a given value or a predicate function.
@@ -629,8 +614,7 @@ object rxTestingMod {
       * @param value Recorded value stored in the OnNext notification or a predicate.
       * @return Recorded OnNext notification.
       */
-    @scala.inline
-    def onNext(ticks: Double, predicate: js.Function1[/* value */ js.Any, Boolean]): Recorded = (^.asInstanceOf[js.Dynamic].applyDynamic("onNext")(ticks.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Recorded]
+    inline def onNext(ticks: Double, predicate: js.Function1[/* value */ js.Any, Boolean]): Recorded = (^.asInstanceOf[js.Dynamic].applyDynamic("onNext")(ticks.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Recorded]
     /**
       * Factory method for an OnNext notification record at a given time with a given value or a predicate function.
       *
@@ -641,8 +625,7 @@ object rxTestingMod {
       * @param value Recorded value stored in the OnNext notification or a predicate.
       * @return Recorded OnNext notification.
       */
-    @scala.inline
-    def onNext(ticks: Double, value: js.Any): Recorded = (^.asInstanceOf[js.Dynamic].applyDynamic("onNext")(ticks.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Recorded]
+    inline def onNext(ticks: Double, value: js.Any): Recorded = (^.asInstanceOf[js.Dynamic].applyDynamic("onNext")(ticks.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Recorded]
     
     /**
       * Factory method for a subscription record based on a given subscription and disposal time.
@@ -651,17 +634,14 @@ object rxTestingMod {
       * @param end Virtual time indicating when the subscription was disposed.
       * @return Subscription object.
       */
-    @scala.inline
-    def subscribe(subscribeAt: Double): Subscription = ^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(subscribeAt.asInstanceOf[js.Any]).asInstanceOf[Subscription]
-    @scala.inline
-    def subscribe(subscribeAt: Double, unsubscribeAt: Double): Subscription = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(subscribeAt.asInstanceOf[js.Any], unsubscribeAt.asInstanceOf[js.Any])).asInstanceOf[Subscription]
+    inline def subscribe(subscribeAt: Double): Subscription = ^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(subscribeAt.asInstanceOf[js.Any]).asInstanceOf[Subscription]
+    inline def subscribe(subscribeAt: Double, unsubscribeAt: Double): Subscription = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribe")(subscribeAt.asInstanceOf[js.Any], unsubscribeAt.asInstanceOf[js.Any])).asInstanceOf[Subscription]
     
     /** Default virtual time used to subscribe to observable sequences in unit tests. */
     @JSImport("rx.testing", "ReactiveTest.subscribed")
     @js.native
     def subscribed: Double = js.native
-    @scala.inline
-    def subscribed_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("subscribed")(x.asInstanceOf[js.Any])
+    inline def subscribed_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("subscribed")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("rx.testing", "Recorded")
@@ -701,8 +681,7 @@ object rxTestingMod {
     var value: js.Any = js.native
   }
   
-  @scala.inline
-  def Recorded_=(x: RecordedStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Recorded")(x.asInstanceOf[js.Any])
+  inline def Recorded_=(x: RecordedStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Recorded")(x.asInstanceOf[js.Any])
   
   @JSImport("rx.testing", "RefCountDisposable")
   @js.native
@@ -737,8 +716,7 @@ object rxTestingMod {
     var isDisposed_RefCountDisposable: Boolean = js.native
   }
   
-  @scala.inline
-  def RefCountDisposable_=(x: RefCountDisposableStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RefCountDisposable")(x.asInstanceOf[js.Any])
+  inline def RefCountDisposable_=(x: RefCountDisposableStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RefCountDisposable")(x.asInstanceOf[js.Any])
   
   @JSImport("rx.testing", "ReplaySubject")
   @js.native
@@ -821,14 +799,12 @@ object rxTestingMod {
     override def toNotifier(): js.Function1[/* notification */ Notification[T], Unit] = js.native
   }
   
-  @scala.inline
-  def ReplaySubject_=(x: ReplaySubjectStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReplaySubject")(x.asInstanceOf[js.Any])
+  inline def ReplaySubject_=(x: ReplaySubjectStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ReplaySubject")(x.asInstanceOf[js.Any])
   
   @JSImport("rx.testing", "Scheduler")
   @js.native
   def Scheduler: SchedulerStatic = js.native
-  @scala.inline
-  def Scheduler_=(x: SchedulerStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Scheduler")(x.asInstanceOf[js.Any])
+  inline def Scheduler_=(x: SchedulerStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Scheduler")(x.asInstanceOf[js.Any])
   
   @JSImport("rx.testing", "SerialDisposable")
   @js.native
@@ -856,8 +832,7 @@ object rxTestingMod {
     override def setDisposable(value: IDisposable): Unit = js.native
   }
   
-  @scala.inline
-  def SerialDisposable_=(x: SerialDisposableStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SerialDisposable")(x.asInstanceOf[js.Any])
+  inline def SerialDisposable_=(x: SerialDisposableStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SerialDisposable")(x.asInstanceOf[js.Any])
   
   @JSImport("rx.testing", "SingleAssignmentDisposable")
   @js.native
@@ -885,8 +860,7 @@ object rxTestingMod {
     override def setDisposable(value: IDisposable): Unit = js.native
   }
   
-  @scala.inline
-  def SingleAssignmentDisposable_=(x: SingleAssignmentDisposableStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SingleAssignmentDisposable")(x.asInstanceOf[js.Any])
+  inline def SingleAssignmentDisposable_=(x: SingleAssignmentDisposableStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SingleAssignmentDisposable")(x.asInstanceOf[js.Any])
   
   @JSImport("rx.testing", "Subject")
   @js.native
@@ -959,8 +933,7 @@ object rxTestingMod {
     override def toNotifier(): js.Function1[/* notification */ Notification[T], Unit] = js.native
   }
   
-  @scala.inline
-  def Subject_=(x: SubjectStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Subject")(x.asInstanceOf[js.Any])
+  inline def Subject_=(x: SubjectStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Subject")(x.asInstanceOf[js.Any])
   
   @JSImport("rx.testing", "Subscription")
   @js.native
@@ -991,8 +964,7 @@ object rxTestingMod {
     override def equals(other: Subscription): Boolean = js.native
   }
   
-  @scala.inline
-  def Subscription_=(x: SubscriptionStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Subscription")(x.asInstanceOf[js.Any])
+  inline def Subscription_=(x: SubscriptionStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Subscription")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("rx.testing", "TestScheduler")
@@ -1026,62 +998,52 @@ object rxTestingMod {
     @JSImport("rx.testing", "helpers.asArray")
     @js.native
     def asArray: js.Function1[/* repeated */ js.Any, js.Array[js.Any]] = js.native
-    @scala.inline
-    def asArray_=(x: js.Function1[/* repeated */ js.Any, js.Array[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("asArray")(x.asInstanceOf[js.Any])
+    inline def asArray_=(x: js.Function1[/* repeated */ js.Any, js.Array[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("asArray")(x.asInstanceOf[js.Any])
     
     @JSImport("rx.testing", "helpers.defaultComparer")
     @js.native
     def defaultComparer: js.Function2[/* left */ js.Any, /* right */ js.Any, Boolean] = js.native
-    @scala.inline
-    def defaultComparer_=(x: js.Function2[/* left */ js.Any, /* right */ js.Any, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultComparer")(x.asInstanceOf[js.Any])
+    inline def defaultComparer_=(x: js.Function2[/* left */ js.Any, /* right */ js.Any, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultComparer")(x.asInstanceOf[js.Any])
     
     @JSImport("rx.testing", "helpers.defaultError")
     @js.native
     def defaultError: js.Function1[/* err */ js.Any, Unit] = js.native
-    @scala.inline
-    def defaultError_=(x: js.Function1[/* err */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultError")(x.asInstanceOf[js.Any])
+    inline def defaultError_=(x: js.Function1[/* err */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultError")(x.asInstanceOf[js.Any])
     
     @JSImport("rx.testing", "helpers.defaultKeySerializer")
     @js.native
     def defaultKeySerializer: js.Function1[/* key */ js.Any, String] = js.native
-    @scala.inline
-    def defaultKeySerializer_=(x: js.Function1[/* key */ js.Any, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultKeySerializer")(x.asInstanceOf[js.Any])
+    inline def defaultKeySerializer_=(x: js.Function1[/* key */ js.Any, String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultKeySerializer")(x.asInstanceOf[js.Any])
     
     @JSImport("rx.testing", "helpers.defaultNow")
     @js.native
     def defaultNow: js.Function0[Double] = js.native
-    @scala.inline
-    def defaultNow_=(x: js.Function0[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultNow")(x.asInstanceOf[js.Any])
+    inline def defaultNow_=(x: js.Function0[Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultNow")(x.asInstanceOf[js.Any])
     
     @JSImport("rx.testing", "helpers.defaultSubComparer")
     @js.native
     def defaultSubComparer: js.Function2[/* left */ js.Any, /* right */ js.Any, Double] = js.native
-    @scala.inline
-    def defaultSubComparer_=(x: js.Function2[/* left */ js.Any, /* right */ js.Any, Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultSubComparer")(x.asInstanceOf[js.Any])
+    inline def defaultSubComparer_=(x: js.Function2[/* left */ js.Any, /* right */ js.Any, Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultSubComparer")(x.asInstanceOf[js.Any])
     
     @JSImport("rx.testing", "helpers.identity")
     @js.native
     def identity: js.Function1[/* value */ js.Any, js.Any] = js.native
-    @scala.inline
-    def identity_=(x: js.Function1[/* value */ js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("identity")(x.asInstanceOf[js.Any])
+    inline def identity_=(x: js.Function1[/* value */ js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("identity")(x.asInstanceOf[js.Any])
     
     @JSImport("rx.testing", "helpers.isFunction")
     @js.native
     def isFunction: js.Function1[/* value */ js.Any, Boolean] = js.native
-    @scala.inline
-    def isFunction_=(x: js.Function1[/* value */ js.Any, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isFunction")(x.asInstanceOf[js.Any])
+    inline def isFunction_=(x: js.Function1[/* value */ js.Any, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isFunction")(x.asInstanceOf[js.Any])
     
     @JSImport("rx.testing", "helpers.isPromise")
     @js.native
     def isPromise: js.Function1[/* p */ js.Any, Boolean] = js.native
-    @scala.inline
-    def isPromise_=(x: js.Function1[/* p */ js.Any, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isPromise")(x.asInstanceOf[js.Any])
+    inline def isPromise_=(x: js.Function1[/* p */ js.Any, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isPromise")(x.asInstanceOf[js.Any])
     
     @JSImport("rx.testing", "helpers.noop")
     @js.native
     def noop: js.Function0[Unit] = js.native
-    @scala.inline
-    def noop_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noop")(x.asInstanceOf[js.Any])
+    inline def noop_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("noop")(x.asInstanceOf[js.Any])
     
     @JSImport("rx.testing", "helpers.not")
     @js.native
@@ -1090,23 +1052,19 @@ object rxTestingMod {
     @JSImport("rx.testing", "helpers.notDefined")
     @js.native
     def notDefined: js.Function1[/* value */ js.Any, Boolean] = js.native
-    @scala.inline
-    def notDefined_=(x: js.Function1[/* value */ js.Any, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("notDefined")(x.asInstanceOf[js.Any])
+    inline def notDefined_=(x: js.Function1[/* value */ js.Any, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("notDefined")(x.asInstanceOf[js.Any])
     
     @JSImport("rx.testing", "helpers.notImplemented")
     @js.native
     def notImplemented: js.Function0[NotImplementedError] = js.native
-    @scala.inline
-    def notImplemented_=(x: js.Function0[NotImplementedError]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("notImplemented")(x.asInstanceOf[js.Any])
+    inline def notImplemented_=(x: js.Function0[NotImplementedError]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("notImplemented")(x.asInstanceOf[js.Any])
     
     @JSImport("rx.testing", "helpers.notSupported")
     @js.native
     def notSupported: js.Function0[NotSupportedError] = js.native
-    @scala.inline
-    def notSupported_=(x: js.Function0[NotSupportedError]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("notSupported")(x.asInstanceOf[js.Any])
+    inline def notSupported_=(x: js.Function0[NotSupportedError]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("notSupported")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def not_=(x: js.Function1[/* value */ js.Any, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("not")(x.asInstanceOf[js.Any])
+    inline def not_=(x: js.Function1[/* value */ js.Any, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("not")(x.asInstanceOf[js.Any])
   }
   
   object internals {
@@ -1166,8 +1124,7 @@ object rxTestingMod {
       override def onNext(value: T): Unit = js.native
     }
     
-    @scala.inline
-    def AbstractObserver_=(x: AbstractObserverStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AbstractObserver")(x.asInstanceOf[js.Any])
+    inline def AbstractObserver_=(x: AbstractObserverStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AbstractObserver")(x.asInstanceOf[js.Any])
     
     @JSImport("rx.testing", "internals.PriorityQueue")
     @js.native
@@ -1213,8 +1170,7 @@ object rxTestingMod {
       override def removeAt(index: Double): Unit = js.native
     }
     
-    @scala.inline
-    def PriorityQueue_=(x: PriorityQueueStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PriorityQueue")(x.asInstanceOf[js.Any])
+    inline def PriorityQueue_=(x: PriorityQueueStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PriorityQueue")(x.asInstanceOf[js.Any])
     
     @JSImport("rx.testing", "internals.SchedulePeriodicRecursive")
     @js.native
@@ -1232,8 +1188,7 @@ object rxTestingMod {
       override def start(): IDisposable = js.native
     }
     
-    @scala.inline
-    def SchedulePeriodicRecursive_=(x: SchedulePeriodicRecursiveStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SchedulePeriodicRecursive")(x.asInstanceOf[js.Any])
+    inline def SchedulePeriodicRecursive_=(x: SchedulePeriodicRecursiveStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SchedulePeriodicRecursive")(x.asInstanceOf[js.Any])
     
     @JSImport("rx.testing", "internals.ScheduledItem")
     @js.native
@@ -1290,37 +1245,31 @@ object rxTestingMod {
       var state: TTime = js.native
     }
     
-    @scala.inline
-    def ScheduledItem_=(x: ScheduledItemStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ScheduledItem")(x.asInstanceOf[js.Any])
+    inline def ScheduledItem_=(x: ScheduledItemStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ScheduledItem")(x.asInstanceOf[js.Any])
     
     @JSImport("rx.testing", "internals.addProperties")
     @js.native
     def addProperties: js.Function2[/* obj */ js.Any, /* repeated */ js.Any, Unit] = js.native
-    @scala.inline
-    def addProperties_=(x: js.Function2[/* obj */ js.Any, /* repeated */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addProperties")(x.asInstanceOf[js.Any])
+    inline def addProperties_=(x: js.Function2[/* obj */ js.Any, /* repeated */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addProperties")(x.asInstanceOf[js.Any])
     
     @JSImport("rx.testing", "internals.addRef")
     @js.native
     def addRef: js.Function2[/* xs */ Observable[js.Any], /* r */ GetDisposable, Observable[js.Any]] = js.native
-    @scala.inline
-    def addRef_=(x: js.Function2[/* xs */ Observable[js.Any], /* r */ GetDisposable, Observable[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addRef")(x.asInstanceOf[js.Any])
+    inline def addRef_=(x: js.Function2[/* xs */ Observable[js.Any], /* r */ GetDisposable, Observable[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addRef")(x.asInstanceOf[js.Any])
     
     @JSImport("rx.testing", "internals.bindCallback")
     @js.native
     def bindCallback: js.Function3[/* func */ js.Function, /* thisArg */ js.Any, /* argCount */ Double, js.Function] = js.native
-    @scala.inline
-    def bindCallback_=(x: js.Function3[/* func */ js.Function, /* thisArg */ js.Any, /* argCount */ Double, js.Function]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bindCallback")(x.asInstanceOf[js.Any])
+    inline def bindCallback_=(x: js.Function3[/* func */ js.Function, /* thisArg */ js.Any, /* argCount */ Double, js.Function]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bindCallback")(x.asInstanceOf[js.Any])
     
     @JSImport("rx.testing", "internals.inherits")
     @js.native
     def inherits: js.Function2[/* child */ js.Any, /* parent */ js.Any, Unit] = js.native
-    @scala.inline
-    def inherits_=(x: js.Function2[/* child */ js.Any, /* parent */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inherits")(x.asInstanceOf[js.Any])
+    inline def inherits_=(x: js.Function2[/* child */ js.Any, /* parent */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inherits")(x.asInstanceOf[js.Any])
     
     @JSImport("rx.testing", "internals.isEqual")
     @js.native
     def isEqual: js.Function2[/* left */ js.Any, /* right */ js.Any, Boolean] = js.native
-    @scala.inline
-    def isEqual_=(x: js.Function2[/* left */ js.Any, /* right */ js.Any, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isEqual")(x.asInstanceOf[js.Any])
+    inline def isEqual_=(x: js.Function2[/* left */ js.Any, /* right */ js.Any, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isEqual")(x.asInstanceOf[js.Any])
   }
 }

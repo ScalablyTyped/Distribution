@@ -12,22 +12,17 @@ trait DefaultMessageId extends StObject {
 }
 object DefaultMessageId {
   
-  @scala.inline
-  def apply(id: String): DefaultMessageId = {
+  inline def apply(id: String): DefaultMessageId = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultMessageId]
   }
   
-  @scala.inline
-  implicit class DefaultMessageIdMutableBuilder[Self <: DefaultMessageId] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultMessageId](x: Self) {
     
-    @scala.inline
-    def setDefaultMessage(value: String): Self = StObject.set(x, "defaultMessage", value.asInstanceOf[js.Any])
+    inline def setDefaultMessage(value: String): Self = StObject.set(x, "defaultMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultMessageUndefined: Self = StObject.set(x, "defaultMessage", js.undefined)
+    inline def setDefaultMessageUndefined: Self = StObject.set(x, "defaultMessage", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

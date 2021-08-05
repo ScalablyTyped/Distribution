@@ -18,28 +18,21 @@ trait BatchUpdatePartitionFailureEntry extends StObject {
 }
 object BatchUpdatePartitionFailureEntry {
   
-  @scala.inline
-  def apply(): BatchUpdatePartitionFailureEntry = {
+  inline def apply(): BatchUpdatePartitionFailureEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchUpdatePartitionFailureEntry]
   }
   
-  @scala.inline
-  implicit class BatchUpdatePartitionFailureEntryMutableBuilder[Self <: BatchUpdatePartitionFailureEntry] (val x: Self) extends AnyVal {
+  extension [Self <: BatchUpdatePartitionFailureEntry](x: Self) {
     
-    @scala.inline
-    def setErrorDetail(value: ErrorDetail): Self = StObject.set(x, "ErrorDetail", value.asInstanceOf[js.Any])
+    inline def setErrorDetail(value: ErrorDetail): Self = StObject.set(x, "ErrorDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorDetailUndefined: Self = StObject.set(x, "ErrorDetail", js.undefined)
+    inline def setErrorDetailUndefined: Self = StObject.set(x, "ErrorDetail", js.undefined)
     
-    @scala.inline
-    def setPartitionValueList(value: BoundedPartitionValueList): Self = StObject.set(x, "PartitionValueList", value.asInstanceOf[js.Any])
+    inline def setPartitionValueList(value: BoundedPartitionValueList): Self = StObject.set(x, "PartitionValueList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionValueListUndefined: Self = StObject.set(x, "PartitionValueList", js.undefined)
+    inline def setPartitionValueListUndefined: Self = StObject.set(x, "PartitionValueList", js.undefined)
     
-    @scala.inline
-    def setPartitionValueListVarargs(value: ValueString*): Self = StObject.set(x, "PartitionValueList", js.Array(value :_*))
+    inline def setPartitionValueListVarargs(value: ValueString*): Self = StObject.set(x, "PartitionValueList", js.Array(value :_*))
   }
 }

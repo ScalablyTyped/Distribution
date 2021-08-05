@@ -13,19 +13,15 @@ trait CloudWatchDashboard extends StObject {
 }
 object CloudWatchDashboard {
   
-  @scala.inline
-  def apply(): CloudWatchDashboard = {
+  inline def apply(): CloudWatchDashboard = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CloudWatchDashboard]
   }
   
-  @scala.inline
-  implicit class CloudWatchDashboardMutableBuilder[Self <: CloudWatchDashboard] (val x: Self) extends AnyVal {
+  extension [Self <: CloudWatchDashboard](x: Self) {
     
-    @scala.inline
-    def setName(value: CloudWatchDashboardName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: CloudWatchDashboardName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

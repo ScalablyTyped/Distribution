@@ -11,16 +11,13 @@ trait KnockoutComputedStatic extends StObject {
 }
 object KnockoutComputedStatic {
   
-  @scala.inline
-  def apply(deferUpdates: Boolean): KnockoutComputedStatic = {
+  inline def apply(deferUpdates: Boolean): KnockoutComputedStatic = {
     val __obj = js.Dynamic.literal(deferUpdates = deferUpdates.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnockoutComputedStatic]
   }
   
-  @scala.inline
-  implicit class KnockoutComputedStaticMutableBuilder[Self <: KnockoutComputedStatic] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutComputedStatic](x: Self) {
     
-    @scala.inline
-    def setDeferUpdates(value: Boolean): Self = StObject.set(x, "deferUpdates", value.asInstanceOf[js.Any])
+    inline def setDeferUpdates(value: Boolean): Self = StObject.set(x, "deferUpdates", value.asInstanceOf[js.Any])
   }
 }

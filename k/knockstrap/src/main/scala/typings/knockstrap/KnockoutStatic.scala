@@ -11,16 +11,13 @@ trait KnockoutStatic extends StObject {
 }
 object KnockoutStatic {
   
-  @scala.inline
-  def apply(stringTemplateEngine: Instance): KnockoutStatic = {
+  inline def apply(stringTemplateEngine: Instance): KnockoutStatic = {
     val __obj = js.Dynamic.literal(stringTemplateEngine = stringTemplateEngine.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnockoutStatic]
   }
   
-  @scala.inline
-  implicit class KnockoutStaticMutableBuilder[Self <: KnockoutStatic] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutStatic](x: Self) {
     
-    @scala.inline
-    def setStringTemplateEngine(value: Instance): Self = StObject.set(x, "stringTemplateEngine", value.asInstanceOf[js.Any])
+    inline def setStringTemplateEngine(value: Instance): Self = StObject.set(x, "stringTemplateEngine", value.asInstanceOf[js.Any])
   }
 }

@@ -17,31 +17,23 @@ trait GoogleAppsCloudidentityDevicesV1CustomAttributeValue extends StObject {
 }
 object GoogleAppsCloudidentityDevicesV1CustomAttributeValue {
   
-  @scala.inline
-  def apply(): GoogleAppsCloudidentityDevicesV1CustomAttributeValue = {
+  inline def apply(): GoogleAppsCloudidentityDevicesV1CustomAttributeValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAppsCloudidentityDevicesV1CustomAttributeValue]
   }
   
-  @scala.inline
-  implicit class GoogleAppsCloudidentityDevicesV1CustomAttributeValueMutableBuilder[Self <: GoogleAppsCloudidentityDevicesV1CustomAttributeValue] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAppsCloudidentityDevicesV1CustomAttributeValue](x: Self) {
     
-    @scala.inline
-    def setBoolValue(value: Boolean): Self = StObject.set(x, "boolValue", value.asInstanceOf[js.Any])
+    inline def setBoolValue(value: Boolean): Self = StObject.set(x, "boolValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoolValueUndefined: Self = StObject.set(x, "boolValue", js.undefined)
+    inline def setBoolValueUndefined: Self = StObject.set(x, "boolValue", js.undefined)
     
-    @scala.inline
-    def setNumberValue(value: Double): Self = StObject.set(x, "numberValue", value.asInstanceOf[js.Any])
+    inline def setNumberValue(value: Double): Self = StObject.set(x, "numberValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberValueUndefined: Self = StObject.set(x, "numberValue", js.undefined)
+    inline def setNumberValueUndefined: Self = StObject.set(x, "numberValue", js.undefined)
     
-    @scala.inline
-    def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
+    inline def setStringValue(value: String): Self = StObject.set(x, "stringValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
+    inline def setStringValueUndefined: Self = StObject.set(x, "stringValue", js.undefined)
   }
 }

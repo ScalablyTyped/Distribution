@@ -33,7 +33,7 @@ object tensorArrayMod {
     
     val closed: Boolean = js.native
     
-    var closed_ : js.Any = js.native
+    /* private */ var closed_ : js.Any = js.native
     
     /**
       * Return the values in the TensorArray as a concatenated Tensor.
@@ -45,7 +45,7 @@ object tensorArrayMod {
     
     val dynamicSize: Boolean = js.native
     
-    var elementShape: js.Any = js.native
+    /* private */ var elementShape: js.Any = js.native
     
     /**
       * Return selected values in the TensorArray as a packed Tensor. All of
@@ -66,7 +66,7 @@ object tensorArrayMod {
     
     val identicalElementShapes: Boolean = js.native
     
-    var maxSize: js.Any = js.native
+    /* private */ var maxSize: js.Any = js.native
     
     val name: String = js.native
     
@@ -99,7 +99,7 @@ object tensorArrayMod {
       */
     def split(length: js.Array[Double], tensor: Tensor[Rank]): Unit = js.native
     
-    var tensors: js.Any = js.native
+    /* private */ var tensors: js.Any = js.native
     
     /**
       * Write value into the index of the TensorArray.
@@ -126,38 +126,28 @@ object tensorArrayMod {
   }
   object TensorWithState {
     
-    @scala.inline
-    def apply(): TensorWithState = {
+    inline def apply(): TensorWithState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TensorWithState]
     }
     
-    @scala.inline
-    implicit class TensorWithStateMutableBuilder[Self <: TensorWithState] (val x: Self) extends AnyVal {
+    extension [Self <: TensorWithState](x: Self) {
       
-      @scala.inline
-      def setCleared(value: Boolean): Self = StObject.set(x, "cleared", value.asInstanceOf[js.Any])
+      inline def setCleared(value: Boolean): Self = StObject.set(x, "cleared", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearedUndefined: Self = StObject.set(x, "cleared", js.undefined)
+      inline def setClearedUndefined: Self = StObject.set(x, "cleared", js.undefined)
       
-      @scala.inline
-      def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+      inline def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+      inline def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
       
-      @scala.inline
-      def setTensor(value: Tensor[Rank]): Self = StObject.set(x, "tensor", value.asInstanceOf[js.Any])
+      inline def setTensor(value: Tensor[Rank]): Self = StObject.set(x, "tensor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTensorUndefined: Self = StObject.set(x, "tensor", js.undefined)
+      inline def setTensorUndefined: Self = StObject.set(x, "tensor", js.undefined)
       
-      @scala.inline
-      def setWritten(value: Boolean): Self = StObject.set(x, "written", value.asInstanceOf[js.Any])
+      inline def setWritten(value: Boolean): Self = StObject.set(x, "written", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrittenUndefined: Self = StObject.set(x, "written", js.undefined)
+      inline def setWrittenUndefined: Self = StObject.set(x, "written", js.undefined)
     }
   }
 }

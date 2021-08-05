@@ -13,19 +13,15 @@ trait CryptoBox extends StObject {
 }
 object CryptoBox {
   
-  @scala.inline
-  def apply(ciphertext: Uint8Array, mac: Uint8Array): CryptoBox = {
+  inline def apply(ciphertext: Uint8Array, mac: Uint8Array): CryptoBox = {
     val __obj = js.Dynamic.literal(ciphertext = ciphertext.asInstanceOf[js.Any], mac = mac.asInstanceOf[js.Any])
     __obj.asInstanceOf[CryptoBox]
   }
   
-  @scala.inline
-  implicit class CryptoBoxMutableBuilder[Self <: CryptoBox] (val x: Self) extends AnyVal {
+  extension [Self <: CryptoBox](x: Self) {
     
-    @scala.inline
-    def setCiphertext(value: Uint8Array): Self = StObject.set(x, "ciphertext", value.asInstanceOf[js.Any])
+    inline def setCiphertext(value: Uint8Array): Self = StObject.set(x, "ciphertext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMac(value: Uint8Array): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
+    inline def setMac(value: Uint8Array): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
   }
 }

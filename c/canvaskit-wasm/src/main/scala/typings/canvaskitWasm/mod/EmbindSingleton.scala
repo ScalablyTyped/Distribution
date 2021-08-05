@@ -12,16 +12,13 @@ trait EmbindSingleton extends StObject {
 }
 object EmbindSingleton {
   
-  @scala.inline
-  def apply(isAliasOf: js.Any => Boolean): EmbindSingleton = {
+  inline def apply(isAliasOf: js.Any => Boolean): EmbindSingleton = {
     val __obj = js.Dynamic.literal(isAliasOf = js.Any.fromFunction1(isAliasOf))
     __obj.asInstanceOf[EmbindSingleton]
   }
   
-  @scala.inline
-  implicit class EmbindSingletonMutableBuilder[Self <: EmbindSingleton] (val x: Self) extends AnyVal {
+  extension [Self <: EmbindSingleton](x: Self) {
     
-    @scala.inline
-    def setIsAliasOf(value: js.Any => Boolean): Self = StObject.set(x, "isAliasOf", js.Any.fromFunction1(value))
+    inline def setIsAliasOf(value: js.Any => Boolean): Self = StObject.set(x, "isAliasOf", js.Any.fromFunction1(value))
   }
 }

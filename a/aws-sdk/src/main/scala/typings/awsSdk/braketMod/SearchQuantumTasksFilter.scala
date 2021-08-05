@@ -23,8 +23,7 @@ trait SearchQuantumTasksFilter extends StObject {
 }
 object SearchQuantumTasksFilter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     name: String64,
     operator: SearchQuantumTasksFilterOperator,
     values: SearchQuantumTasksFilterValuesList
@@ -33,19 +32,14 @@ object SearchQuantumTasksFilter {
     __obj.asInstanceOf[SearchQuantumTasksFilter]
   }
   
-  @scala.inline
-  implicit class SearchQuantumTasksFilterMutableBuilder[Self <: SearchQuantumTasksFilter] (val x: Self) extends AnyVal {
+  extension [Self <: SearchQuantumTasksFilter](x: Self) {
     
-    @scala.inline
-    def setName(value: String64): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String64): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperator(value: SearchQuantumTasksFilterOperator): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: SearchQuantumTasksFilterOperator): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: SearchQuantumTasksFilterValuesList): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: SearchQuantumTasksFilterValuesList): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: String256*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String256*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

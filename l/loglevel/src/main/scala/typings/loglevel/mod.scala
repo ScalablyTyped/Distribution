@@ -43,32 +43,24 @@ object mod extends Shortcut {
   }
   object LogLevel {
     
-    @scala.inline
-    def apply(): LogLevel = {
+    inline def apply(): LogLevel = {
       val __obj = js.Dynamic.literal(DEBUG = 1, ERROR = 4, INFO = 2, SILENT = 5, TRACE = 0, WARN = 3)
       __obj.asInstanceOf[LogLevel]
     }
     
-    @scala.inline
-    implicit class LogLevelMutableBuilder[Self <: LogLevel] (val x: Self) extends AnyVal {
+    extension [Self <: LogLevel](x: Self) {
       
-      @scala.inline
-      def setDEBUG(value: `1`): Self = StObject.set(x, "DEBUG", value.asInstanceOf[js.Any])
+      inline def setDEBUG(value: `1`): Self = StObject.set(x, "DEBUG", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setERROR(value: `4`): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
+      inline def setERROR(value: `4`): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setINFO(value: `2`): Self = StObject.set(x, "INFO", value.asInstanceOf[js.Any])
+      inline def setINFO(value: `2`): Self = StObject.set(x, "INFO", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSILENT(value: `5`): Self = StObject.set(x, "SILENT", value.asInstanceOf[js.Any])
+      inline def setSILENT(value: `5`): Self = StObject.set(x, "SILENT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTRACE(value: `0`): Self = StObject.set(x, "TRACE", value.asInstanceOf[js.Any])
+      inline def setTRACE(value: `0`): Self = StObject.set(x, "TRACE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWARN(value: `3`): Self = StObject.set(x, "WARN", value.asInstanceOf[js.Any])
+      inline def setWARN(value: `3`): Self = StObject.set(x, "WARN", value.asInstanceOf[js.Any])
     }
   }
   
@@ -99,59 +91,41 @@ object mod extends Shortcut {
   trait LogLevelDesc extends StObject
   object LogLevelDesc {
     
-    @scala.inline
-    def `0`: typings.loglevel.loglevelNumbers.`0` = 0.asInstanceOf[typings.loglevel.loglevelNumbers.`0`]
+    inline def `0`: typings.loglevel.loglevelNumbers.`0` = 0.asInstanceOf[typings.loglevel.loglevelNumbers.`0`]
     
-    @scala.inline
-    def `1`: typings.loglevel.loglevelNumbers.`1` = 1.asInstanceOf[typings.loglevel.loglevelNumbers.`1`]
+    inline def `1`: typings.loglevel.loglevelNumbers.`1` = 1.asInstanceOf[typings.loglevel.loglevelNumbers.`1`]
     
-    @scala.inline
-    def `2`: typings.loglevel.loglevelNumbers.`2` = 2.asInstanceOf[typings.loglevel.loglevelNumbers.`2`]
+    inline def `2`: typings.loglevel.loglevelNumbers.`2` = 2.asInstanceOf[typings.loglevel.loglevelNumbers.`2`]
     
-    @scala.inline
-    def `3`: typings.loglevel.loglevelNumbers.`3` = 3.asInstanceOf[typings.loglevel.loglevelNumbers.`3`]
+    inline def `3`: typings.loglevel.loglevelNumbers.`3` = 3.asInstanceOf[typings.loglevel.loglevelNumbers.`3`]
     
-    @scala.inline
-    def `4`: typings.loglevel.loglevelNumbers.`4` = 4.asInstanceOf[typings.loglevel.loglevelNumbers.`4`]
+    inline def `4`: typings.loglevel.loglevelNumbers.`4` = 4.asInstanceOf[typings.loglevel.loglevelNumbers.`4`]
     
-    @scala.inline
-    def `5`: typings.loglevel.loglevelNumbers.`5` = 5.asInstanceOf[typings.loglevel.loglevelNumbers.`5`]
+    inline def `5`: typings.loglevel.loglevelNumbers.`5` = 5.asInstanceOf[typings.loglevel.loglevelNumbers.`5`]
     
-    @scala.inline
-    def DEBUG: typings.loglevel.loglevelStrings.DEBUG = "DEBUG".asInstanceOf[typings.loglevel.loglevelStrings.DEBUG]
+    inline def DEBUG: typings.loglevel.loglevelStrings.DEBUG = "DEBUG".asInstanceOf[typings.loglevel.loglevelStrings.DEBUG]
     
-    @scala.inline
-    def ERROR: typings.loglevel.loglevelStrings.ERROR = "ERROR".asInstanceOf[typings.loglevel.loglevelStrings.ERROR]
+    inline def ERROR: typings.loglevel.loglevelStrings.ERROR = "ERROR".asInstanceOf[typings.loglevel.loglevelStrings.ERROR]
     
-    @scala.inline
-    def INFO: typings.loglevel.loglevelStrings.INFO = "INFO".asInstanceOf[typings.loglevel.loglevelStrings.INFO]
+    inline def INFO: typings.loglevel.loglevelStrings.INFO = "INFO".asInstanceOf[typings.loglevel.loglevelStrings.INFO]
     
-    @scala.inline
-    def SILENT: typings.loglevel.loglevelStrings.SILENT = "SILENT".asInstanceOf[typings.loglevel.loglevelStrings.SILENT]
+    inline def SILENT: typings.loglevel.loglevelStrings.SILENT = "SILENT".asInstanceOf[typings.loglevel.loglevelStrings.SILENT]
     
-    @scala.inline
-    def TRACE: typings.loglevel.loglevelStrings.TRACE = "TRACE".asInstanceOf[typings.loglevel.loglevelStrings.TRACE]
+    inline def TRACE: typings.loglevel.loglevelStrings.TRACE = "TRACE".asInstanceOf[typings.loglevel.loglevelStrings.TRACE]
     
-    @scala.inline
-    def WARN: typings.loglevel.loglevelStrings.WARN = "WARN".asInstanceOf[typings.loglevel.loglevelStrings.WARN]
+    inline def WARN: typings.loglevel.loglevelStrings.WARN = "WARN".asInstanceOf[typings.loglevel.loglevelStrings.WARN]
     
-    @scala.inline
-    def debug: debug_ = "debug".asInstanceOf[debug_]
+    inline def debug: debug_ = "debug".asInstanceOf[debug_]
     
-    @scala.inline
-    def error: error_ = "error".asInstanceOf[error_]
+    inline def error: error_ = "error".asInstanceOf[error_]
     
-    @scala.inline
-    def info: info_ = "info".asInstanceOf[info_]
+    inline def info: info_ = "info".asInstanceOf[info_]
     
-    @scala.inline
-    def silent: silent_ = "silent".asInstanceOf[silent_]
+    inline def silent: silent_ = "silent".asInstanceOf[silent_]
     
-    @scala.inline
-    def trace: trace_ = "trace".asInstanceOf[trace_]
+    inline def trace: trace_ = "trace".asInstanceOf[trace_]
     
-    @scala.inline
-    def warn: warn_ = "warn".asInstanceOf[warn_]
+    inline def warn: warn_ = "warn".asInstanceOf[warn_]
   }
   
   /**
@@ -169,23 +143,17 @@ object mod extends Shortcut {
   trait LogLevelNumbers extends StObject
   object LogLevelNumbers {
     
-    @scala.inline
-    def `0`: typings.loglevel.loglevelNumbers.`0` = 0.asInstanceOf[typings.loglevel.loglevelNumbers.`0`]
+    inline def `0`: typings.loglevel.loglevelNumbers.`0` = 0.asInstanceOf[typings.loglevel.loglevelNumbers.`0`]
     
-    @scala.inline
-    def `1`: typings.loglevel.loglevelNumbers.`1` = 1.asInstanceOf[typings.loglevel.loglevelNumbers.`1`]
+    inline def `1`: typings.loglevel.loglevelNumbers.`1` = 1.asInstanceOf[typings.loglevel.loglevelNumbers.`1`]
     
-    @scala.inline
-    def `2`: typings.loglevel.loglevelNumbers.`2` = 2.asInstanceOf[typings.loglevel.loglevelNumbers.`2`]
+    inline def `2`: typings.loglevel.loglevelNumbers.`2` = 2.asInstanceOf[typings.loglevel.loglevelNumbers.`2`]
     
-    @scala.inline
-    def `3`: typings.loglevel.loglevelNumbers.`3` = 3.asInstanceOf[typings.loglevel.loglevelNumbers.`3`]
+    inline def `3`: typings.loglevel.loglevelNumbers.`3` = 3.asInstanceOf[typings.loglevel.loglevelNumbers.`3`]
     
-    @scala.inline
-    def `4`: typings.loglevel.loglevelNumbers.`4` = 4.asInstanceOf[typings.loglevel.loglevelNumbers.`4`]
+    inline def `4`: typings.loglevel.loglevelNumbers.`4` = 4.asInstanceOf[typings.loglevel.loglevelNumbers.`4`]
     
-    @scala.inline
-    def `5`: typings.loglevel.loglevelNumbers.`5` = 5.asInstanceOf[typings.loglevel.loglevelNumbers.`5`]
+    inline def `5`: typings.loglevel.loglevelNumbers.`5` = 5.asInstanceOf[typings.loglevel.loglevelNumbers.`5`]
   }
   
   @js.native

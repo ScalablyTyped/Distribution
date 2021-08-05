@@ -20,20 +20,16 @@ trait UploadRawData extends StObject {
 }
 object UploadRawData {
   
-  @scala.inline
-  def apply(bytes: Buffer, `type`: String): UploadRawData = {
+  inline def apply(bytes: Buffer, `type`: String): UploadRawData = {
     val __obj = js.Dynamic.literal(bytes = bytes.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadRawData]
   }
   
-  @scala.inline
-  implicit class UploadRawDataMutableBuilder[Self <: UploadRawData] (val x: Self) extends AnyVal {
+  extension [Self <: UploadRawData](x: Self) {
     
-    @scala.inline
-    def setBytes(value: Buffer): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
+    inline def setBytes(value: Buffer): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

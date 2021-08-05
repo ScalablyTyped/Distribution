@@ -9,8 +9,7 @@ object mod {
   /**
     * minifies blocks of JSON-like content into valid JSON by removing all whitespace and comments.
     */
-  @scala.inline
-  def apply(json: String): String = ^.asInstanceOf[js.Dynamic].apply(json.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(json: String): String = ^.asInstanceOf[js.Dynamic].apply(json.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("jsonminify", JSImport.Namespace)
   @js.native
@@ -27,17 +26,14 @@ object mod {
     }
     object JSON {
       
-      @scala.inline
-      def apply(minify: String => String): JSON = {
+      inline def apply(minify: String => String): JSON = {
         val __obj = js.Dynamic.literal(minify = js.Any.fromFunction1(minify))
         __obj.asInstanceOf[JSON]
       }
       
-      @scala.inline
-      implicit class JSONMutableBuilder[Self <: JSON] (val x: Self) extends AnyVal {
+      extension [Self <: JSON](x: Self) {
         
-        @scala.inline
-        def setMinify(value: String => String): Self = StObject.set(x, "minify", js.Any.fromFunction1(value))
+        inline def setMinify(value: String => String): Self = StObject.set(x, "minify", js.Any.fromFunction1(value))
       }
     }
   }

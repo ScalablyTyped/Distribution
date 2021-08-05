@@ -15,19 +15,15 @@ trait SemanticTokens extends StObject {
 }
 object SemanticTokens {
   
-  @scala.inline
-  def apply(): SemanticTokens = {
+  inline def apply(): SemanticTokens = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SemanticTokens]
   }
   
-  @scala.inline
-  implicit class SemanticTokensMutableBuilder[Self <: SemanticTokens] (val x: Self) extends AnyVal {
+  extension [Self <: SemanticTokens](x: Self) {
     
-    @scala.inline
-    def setSemanticTokens(value: TokenModifiers): Self = StObject.set(x, "semanticTokens", value.asInstanceOf[js.Any])
+    inline def setSemanticTokens(value: TokenModifiers): Self = StObject.set(x, "semanticTokens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSemanticTokensUndefined: Self = StObject.set(x, "semanticTokens", js.undefined)
+    inline def setSemanticTokensUndefined: Self = StObject.set(x, "semanticTokens", js.undefined)
   }
 }

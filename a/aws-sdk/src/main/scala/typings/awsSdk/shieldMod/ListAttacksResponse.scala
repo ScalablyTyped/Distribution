@@ -18,28 +18,21 @@ trait ListAttacksResponse extends StObject {
 }
 object ListAttacksResponse {
   
-  @scala.inline
-  def apply(): ListAttacksResponse = {
+  inline def apply(): ListAttacksResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAttacksResponse]
   }
   
-  @scala.inline
-  implicit class ListAttacksResponseMutableBuilder[Self <: ListAttacksResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListAttacksResponse](x: Self) {
     
-    @scala.inline
-    def setAttackSummaries(value: AttackSummaries): Self = StObject.set(x, "AttackSummaries", value.asInstanceOf[js.Any])
+    inline def setAttackSummaries(value: AttackSummaries): Self = StObject.set(x, "AttackSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttackSummariesUndefined: Self = StObject.set(x, "AttackSummaries", js.undefined)
+    inline def setAttackSummariesUndefined: Self = StObject.set(x, "AttackSummaries", js.undefined)
     
-    @scala.inline
-    def setAttackSummariesVarargs(value: AttackSummary*): Self = StObject.set(x, "AttackSummaries", js.Array(value :_*))
+    inline def setAttackSummariesVarargs(value: AttackSummary*): Self = StObject.set(x, "AttackSummaries", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

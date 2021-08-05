@@ -18,19 +18,15 @@ trait DataSourceSyncJobMetricTarget extends StObject {
 }
 object DataSourceSyncJobMetricTarget {
   
-  @scala.inline
-  def apply(DataSourceId: DataSourceId, DataSourceSyncJobId: DataSourceSyncJobId): DataSourceSyncJobMetricTarget = {
+  inline def apply(DataSourceId: DataSourceId, DataSourceSyncJobId: DataSourceSyncJobId): DataSourceSyncJobMetricTarget = {
     val __obj = js.Dynamic.literal(DataSourceId = DataSourceId.asInstanceOf[js.Any], DataSourceSyncJobId = DataSourceSyncJobId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceSyncJobMetricTarget]
   }
   
-  @scala.inline
-  implicit class DataSourceSyncJobMetricTargetMutableBuilder[Self <: DataSourceSyncJobMetricTarget] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceSyncJobMetricTarget](x: Self) {
     
-    @scala.inline
-    def setDataSourceId(value: DataSourceId): Self = StObject.set(x, "DataSourceId", value.asInstanceOf[js.Any])
+    inline def setDataSourceId(value: DataSourceId): Self = StObject.set(x, "DataSourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceSyncJobId(value: DataSourceSyncJobId): Self = StObject.set(x, "DataSourceSyncJobId", value.asInstanceOf[js.Any])
+    inline def setDataSourceSyncJobId(value: DataSourceSyncJobId): Self = StObject.set(x, "DataSourceSyncJobId", value.asInstanceOf[js.Any])
   }
 }

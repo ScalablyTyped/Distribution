@@ -43,12 +43,12 @@ object communicatorBaseMod {
     /**
       * @hidden
       */
-    var binary_invoke_ : js.Any = js.native
+    /* private */ var binary_invoke_ : js.Any = js.native
     
     /**
       * @hidden
       */
-    var binary_parameters_ : js.Any = js.native
+    /* private */ var binary_parameters_ : js.Any = js.native
     
     /**
       * Close connection.
@@ -59,7 +59,7 @@ object communicatorBaseMod {
     /**
       * @hidden
       */
-    var connected_ : Boolean = js.native
+    /* protected */ var connected_ : Boolean = js.native
     
     /**
       * Test connection.
@@ -76,7 +76,7 @@ object communicatorBaseMod {
     /**
       * @hidden
       */
-    var listener_ : IProtocol = js.native
+    /* protected */ var listener_ : IProtocol = js.native
     
     /**
       * Callback function for connection closed.
@@ -107,6 +107,6 @@ object communicatorBaseMod {
     /**
       * @hidden
       */
-    var unhandled_invokes_ : js.Any = js.native
+    /* private */ var unhandled_invokes_ : js.Any = js.native
   }
 }

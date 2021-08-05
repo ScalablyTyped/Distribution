@@ -22,46 +22,33 @@ trait LocationRecord extends StObject {
 }
 object LocationRecord {
   
-  @scala.inline
-  def apply(accuracy_radius: Double, latitude: Double, longitude: Double): LocationRecord = {
+  inline def apply(accuracy_radius: Double, latitude: Double, longitude: Double): LocationRecord = {
     val __obj = js.Dynamic.literal(accuracy_radius = accuracy_radius.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationRecord]
   }
   
-  @scala.inline
-  implicit class LocationRecordMutableBuilder[Self <: LocationRecord] (val x: Self) extends AnyVal {
+  extension [Self <: LocationRecord](x: Self) {
     
-    @scala.inline
-    def setAccuracy_radius(value: Double): Self = StObject.set(x, "accuracy_radius", value.asInstanceOf[js.Any])
+    inline def setAccuracy_radius(value: Double): Self = StObject.set(x, "accuracy_radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAverage_income(value: Double): Self = StObject.set(x, "average_income", value.asInstanceOf[js.Any])
+    inline def setAverage_income(value: Double): Self = StObject.set(x, "average_income", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAverage_incomeUndefined: Self = StObject.set(x, "average_income", js.undefined)
+    inline def setAverage_incomeUndefined: Self = StObject.set(x, "average_income", js.undefined)
     
-    @scala.inline
-    def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+    inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+    inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetro_code(value: Double): Self = StObject.set(x, "metro_code", value.asInstanceOf[js.Any])
+    inline def setMetro_code(value: Double): Self = StObject.set(x, "metro_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetro_codeUndefined: Self = StObject.set(x, "metro_code", js.undefined)
+    inline def setMetro_codeUndefined: Self = StObject.set(x, "metro_code", js.undefined)
     
-    @scala.inline
-    def setPopulation_density(value: Double): Self = StObject.set(x, "population_density", value.asInstanceOf[js.Any])
+    inline def setPopulation_density(value: Double): Self = StObject.set(x, "population_density", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopulation_densityUndefined: Self = StObject.set(x, "population_density", js.undefined)
+    inline def setPopulation_densityUndefined: Self = StObject.set(x, "population_density", js.undefined)
     
-    @scala.inline
-    def setTime_zone(value: String): Self = StObject.set(x, "time_zone", value.asInstanceOf[js.Any])
+    inline def setTime_zone(value: String): Self = StObject.set(x, "time_zone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime_zoneUndefined: Self = StObject.set(x, "time_zone", js.undefined)
+    inline def setTime_zoneUndefined: Self = StObject.set(x, "time_zone", js.undefined)
   }
 }

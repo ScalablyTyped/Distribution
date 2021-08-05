@@ -19,16 +19,12 @@ object AuthorDisplayFormat {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def FIRST_NAME: `2` = 2.asInstanceOf[`2`]
+    inline def FIRST_NAME: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def FULL: `0` = 0.asInstanceOf[`0`]
+    inline def FULL: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def INITIALS: `3` = 3.asInstanceOf[`3`]
+    inline def INITIALS: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def LAST_NAME: `1` = 1.asInstanceOf[`1`]
+    inline def LAST_NAME: `1` = 1.asInstanceOf[`1`]
   }
 }

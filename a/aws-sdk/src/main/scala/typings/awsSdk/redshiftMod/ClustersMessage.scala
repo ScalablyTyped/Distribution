@@ -18,28 +18,21 @@ trait ClustersMessage extends StObject {
 }
 object ClustersMessage {
   
-  @scala.inline
-  def apply(): ClustersMessage = {
+  inline def apply(): ClustersMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClustersMessage]
   }
   
-  @scala.inline
-  implicit class ClustersMessageMutableBuilder[Self <: ClustersMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ClustersMessage](x: Self) {
     
-    @scala.inline
-    def setClusters(value: ClusterList): Self = StObject.set(x, "Clusters", value.asInstanceOf[js.Any])
+    inline def setClusters(value: ClusterList): Self = StObject.set(x, "Clusters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClustersUndefined: Self = StObject.set(x, "Clusters", js.undefined)
+    inline def setClustersUndefined: Self = StObject.set(x, "Clusters", js.undefined)
     
-    @scala.inline
-    def setClustersVarargs(value: Cluster*): Self = StObject.set(x, "Clusters", js.Array(value :_*))
+    inline def setClustersVarargs(value: Cluster*): Self = StObject.set(x, "Clusters", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

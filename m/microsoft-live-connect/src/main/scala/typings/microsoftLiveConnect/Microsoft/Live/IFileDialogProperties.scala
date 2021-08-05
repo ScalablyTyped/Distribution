@@ -33,28 +33,21 @@ trait IFileDialogProperties extends StObject {
 }
 object IFileDialogProperties {
   
-  @scala.inline
-  def apply(mode: String): IFileDialogProperties = {
+  inline def apply(mode: String): IFileDialogProperties = {
     val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFileDialogProperties]
   }
   
-  @scala.inline
-  implicit class IFileDialogPropertiesMutableBuilder[Self <: IFileDialogProperties] (val x: Self) extends AnyVal {
+  extension [Self <: IFileDialogProperties](x: Self) {
     
-    @scala.inline
-    def setLightbox(value: String): Self = StObject.set(x, "lightbox", value.asInstanceOf[js.Any])
+    inline def setLightbox(value: String): Self = StObject.set(x, "lightbox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLightboxUndefined: Self = StObject.set(x, "lightbox", js.undefined)
+    inline def setLightboxUndefined: Self = StObject.set(x, "lightbox", js.undefined)
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelect(value: String): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    inline def setSelect(value: String): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
   }
 }

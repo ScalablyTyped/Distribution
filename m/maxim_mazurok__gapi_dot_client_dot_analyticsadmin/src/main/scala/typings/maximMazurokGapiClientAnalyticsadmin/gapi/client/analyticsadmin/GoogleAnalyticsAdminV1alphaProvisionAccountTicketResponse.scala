@@ -11,19 +11,15 @@ trait GoogleAnalyticsAdminV1alphaProvisionAccountTicketResponse extends StObject
 }
 object GoogleAnalyticsAdminV1alphaProvisionAccountTicketResponse {
   
-  @scala.inline
-  def apply(): GoogleAnalyticsAdminV1alphaProvisionAccountTicketResponse = {
+  inline def apply(): GoogleAnalyticsAdminV1alphaProvisionAccountTicketResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaProvisionAccountTicketResponse]
   }
   
-  @scala.inline
-  implicit class GoogleAnalyticsAdminV1alphaProvisionAccountTicketResponseMutableBuilder[Self <: GoogleAnalyticsAdminV1alphaProvisionAccountTicketResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAnalyticsAdminV1alphaProvisionAccountTicketResponse](x: Self) {
     
-    @scala.inline
-    def setAccountTicketId(value: String): Self = StObject.set(x, "accountTicketId", value.asInstanceOf[js.Any])
+    inline def setAccountTicketId(value: String): Self = StObject.set(x, "accountTicketId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountTicketIdUndefined: Self = StObject.set(x, "accountTicketId", js.undefined)
+    inline def setAccountTicketIdUndefined: Self = StObject.set(x, "accountTicketId", js.undefined)
   }
 }

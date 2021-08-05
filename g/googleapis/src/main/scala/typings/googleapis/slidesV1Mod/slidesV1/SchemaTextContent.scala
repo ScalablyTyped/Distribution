@@ -24,28 +24,21 @@ trait SchemaTextContent extends StObject {
 }
 object SchemaTextContent {
   
-  @scala.inline
-  def apply(): SchemaTextContent = {
+  inline def apply(): SchemaTextContent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTextContent]
   }
   
-  @scala.inline
-  implicit class SchemaTextContentMutableBuilder[Self <: SchemaTextContent] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTextContent](x: Self) {
     
-    @scala.inline
-    def setLists(value: StringDictionary[SchemaList]): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
+    inline def setLists(value: StringDictionary[SchemaList]): Self = StObject.set(x, "lists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListsUndefined: Self = StObject.set(x, "lists", js.undefined)
+    inline def setListsUndefined: Self = StObject.set(x, "lists", js.undefined)
     
-    @scala.inline
-    def setTextElements(value: js.Array[SchemaTextElement]): Self = StObject.set(x, "textElements", value.asInstanceOf[js.Any])
+    inline def setTextElements(value: js.Array[SchemaTextElement]): Self = StObject.set(x, "textElements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextElementsUndefined: Self = StObject.set(x, "textElements", js.undefined)
+    inline def setTextElementsUndefined: Self = StObject.set(x, "textElements", js.undefined)
     
-    @scala.inline
-    def setTextElementsVarargs(value: SchemaTextElement*): Self = StObject.set(x, "textElements", js.Array(value :_*))
+    inline def setTextElementsVarargs(value: SchemaTextElement*): Self = StObject.set(x, "textElements", js.Array(value :_*))
   }
 }

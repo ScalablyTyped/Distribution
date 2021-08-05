@@ -63,79 +63,55 @@ trait CreateDeliveryStreamInput extends StObject {
 }
 object CreateDeliveryStreamInput {
   
-  @scala.inline
-  def apply(DeliveryStreamName: DeliveryStreamName): CreateDeliveryStreamInput = {
+  inline def apply(DeliveryStreamName: DeliveryStreamName): CreateDeliveryStreamInput = {
     val __obj = js.Dynamic.literal(DeliveryStreamName = DeliveryStreamName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDeliveryStreamInput]
   }
   
-  @scala.inline
-  implicit class CreateDeliveryStreamInputMutableBuilder[Self <: CreateDeliveryStreamInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDeliveryStreamInput](x: Self) {
     
-    @scala.inline
-    def setDeliveryStreamEncryptionConfigurationInput(value: DeliveryStreamEncryptionConfigurationInput): Self = StObject.set(x, "DeliveryStreamEncryptionConfigurationInput", value.asInstanceOf[js.Any])
+    inline def setDeliveryStreamEncryptionConfigurationInput(value: DeliveryStreamEncryptionConfigurationInput): Self = StObject.set(x, "DeliveryStreamEncryptionConfigurationInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryStreamEncryptionConfigurationInputUndefined: Self = StObject.set(x, "DeliveryStreamEncryptionConfigurationInput", js.undefined)
+    inline def setDeliveryStreamEncryptionConfigurationInputUndefined: Self = StObject.set(x, "DeliveryStreamEncryptionConfigurationInput", js.undefined)
     
-    @scala.inline
-    def setDeliveryStreamName(value: DeliveryStreamName): Self = StObject.set(x, "DeliveryStreamName", value.asInstanceOf[js.Any])
+    inline def setDeliveryStreamName(value: DeliveryStreamName): Self = StObject.set(x, "DeliveryStreamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryStreamType(value: DeliveryStreamType): Self = StObject.set(x, "DeliveryStreamType", value.asInstanceOf[js.Any])
+    inline def setDeliveryStreamType(value: DeliveryStreamType): Self = StObject.set(x, "DeliveryStreamType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryStreamTypeUndefined: Self = StObject.set(x, "DeliveryStreamType", js.undefined)
+    inline def setDeliveryStreamTypeUndefined: Self = StObject.set(x, "DeliveryStreamType", js.undefined)
     
-    @scala.inline
-    def setElasticsearchDestinationConfiguration(value: ElasticsearchDestinationConfiguration): Self = StObject.set(x, "ElasticsearchDestinationConfiguration", value.asInstanceOf[js.Any])
+    inline def setElasticsearchDestinationConfiguration(value: ElasticsearchDestinationConfiguration): Self = StObject.set(x, "ElasticsearchDestinationConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElasticsearchDestinationConfigurationUndefined: Self = StObject.set(x, "ElasticsearchDestinationConfiguration", js.undefined)
+    inline def setElasticsearchDestinationConfigurationUndefined: Self = StObject.set(x, "ElasticsearchDestinationConfiguration", js.undefined)
     
-    @scala.inline
-    def setExtendedS3DestinationConfiguration(value: ExtendedS3DestinationConfiguration): Self = StObject.set(x, "ExtendedS3DestinationConfiguration", value.asInstanceOf[js.Any])
+    inline def setExtendedS3DestinationConfiguration(value: ExtendedS3DestinationConfiguration): Self = StObject.set(x, "ExtendedS3DestinationConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendedS3DestinationConfigurationUndefined: Self = StObject.set(x, "ExtendedS3DestinationConfiguration", js.undefined)
+    inline def setExtendedS3DestinationConfigurationUndefined: Self = StObject.set(x, "ExtendedS3DestinationConfiguration", js.undefined)
     
-    @scala.inline
-    def setHttpEndpointDestinationConfiguration(value: HttpEndpointDestinationConfiguration): Self = StObject.set(x, "HttpEndpointDestinationConfiguration", value.asInstanceOf[js.Any])
+    inline def setHttpEndpointDestinationConfiguration(value: HttpEndpointDestinationConfiguration): Self = StObject.set(x, "HttpEndpointDestinationConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpEndpointDestinationConfigurationUndefined: Self = StObject.set(x, "HttpEndpointDestinationConfiguration", js.undefined)
+    inline def setHttpEndpointDestinationConfigurationUndefined: Self = StObject.set(x, "HttpEndpointDestinationConfiguration", js.undefined)
     
-    @scala.inline
-    def setKinesisStreamSourceConfiguration(value: KinesisStreamSourceConfiguration): Self = StObject.set(x, "KinesisStreamSourceConfiguration", value.asInstanceOf[js.Any])
+    inline def setKinesisStreamSourceConfiguration(value: KinesisStreamSourceConfiguration): Self = StObject.set(x, "KinesisStreamSourceConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKinesisStreamSourceConfigurationUndefined: Self = StObject.set(x, "KinesisStreamSourceConfiguration", js.undefined)
+    inline def setKinesisStreamSourceConfigurationUndefined: Self = StObject.set(x, "KinesisStreamSourceConfiguration", js.undefined)
     
-    @scala.inline
-    def setRedshiftDestinationConfiguration(value: RedshiftDestinationConfiguration): Self = StObject.set(x, "RedshiftDestinationConfiguration", value.asInstanceOf[js.Any])
+    inline def setRedshiftDestinationConfiguration(value: RedshiftDestinationConfiguration): Self = StObject.set(x, "RedshiftDestinationConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedshiftDestinationConfigurationUndefined: Self = StObject.set(x, "RedshiftDestinationConfiguration", js.undefined)
+    inline def setRedshiftDestinationConfigurationUndefined: Self = StObject.set(x, "RedshiftDestinationConfiguration", js.undefined)
     
-    @scala.inline
-    def setS3DestinationConfiguration(value: S3DestinationConfiguration): Self = StObject.set(x, "S3DestinationConfiguration", value.asInstanceOf[js.Any])
+    inline def setS3DestinationConfiguration(value: S3DestinationConfiguration): Self = StObject.set(x, "S3DestinationConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3DestinationConfigurationUndefined: Self = StObject.set(x, "S3DestinationConfiguration", js.undefined)
+    inline def setS3DestinationConfigurationUndefined: Self = StObject.set(x, "S3DestinationConfiguration", js.undefined)
     
-    @scala.inline
-    def setSplunkDestinationConfiguration(value: SplunkDestinationConfiguration): Self = StObject.set(x, "SplunkDestinationConfiguration", value.asInstanceOf[js.Any])
+    inline def setSplunkDestinationConfiguration(value: SplunkDestinationConfiguration): Self = StObject.set(x, "SplunkDestinationConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplunkDestinationConfigurationUndefined: Self = StObject.set(x, "SplunkDestinationConfiguration", js.undefined)
+    inline def setSplunkDestinationConfigurationUndefined: Self = StObject.set(x, "SplunkDestinationConfiguration", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagDeliveryStreamInputTagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagDeliveryStreamInputTagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

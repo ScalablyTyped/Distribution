@@ -16,10 +16,8 @@ object ClientUtility {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def getOrCreateObjectPathForConstructor(context: typings.sharepoint.SP.ClientRuntimeContext, typeId: String, args: js.Array[js.Any]): typings.sharepoint.SP.ObjectPath = (^.asInstanceOf[js.Dynamic].applyDynamic("getOrCreateObjectPathForConstructor")(context.asInstanceOf[js.Any], typeId.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.ObjectPath]
+  inline def getOrCreateObjectPathForConstructor(context: typings.sharepoint.SP.ClientRuntimeContext, typeId: String, args: js.Array[js.Any]): typings.sharepoint.SP.ObjectPath = (^.asInstanceOf[js.Dynamic].applyDynamic("getOrCreateObjectPathForConstructor")(context.asInstanceOf[js.Any], typeId.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.ObjectPath]
   
   /* static member */
-  @scala.inline
-  def urlPathEncodeForXmlHttpRequest(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlPathEncodeForXmlHttpRequest")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def urlPathEncodeForXmlHttpRequest(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlPathEncodeForXmlHttpRequest")(url.asInstanceOf[js.Any]).asInstanceOf[String]
 }

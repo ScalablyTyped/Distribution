@@ -9,6 +9,5 @@ object global {
   @JSGlobal("pinkySwear")
   @js.native
   def pinkySwear: PinkySwearStatic = js.native
-  @scala.inline
-  def pinkySwear_=(x: PinkySwearStatic): Unit = js.Dynamic.global.updateDynamic("pinkySwear")(x.asInstanceOf[js.Any])
+  inline def pinkySwear_=(x: PinkySwearStatic): Unit = js.Dynamic.global.updateDynamic("pinkySwear")(x.asInstanceOf[js.Any])
 }

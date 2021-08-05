@@ -75,8 +75,7 @@ trait RequestInterceptedEvent extends StObject {
 }
 object RequestInterceptedEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     frameId: FrameId,
     interceptionId: InterceptionId,
     isNavigationRequest: Boolean,
@@ -87,64 +86,44 @@ object RequestInterceptedEvent {
     __obj.asInstanceOf[RequestInterceptedEvent]
   }
   
-  @scala.inline
-  implicit class RequestInterceptedEventMutableBuilder[Self <: RequestInterceptedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: RequestInterceptedEvent](x: Self) {
     
-    @scala.inline
-    def setAuthChallenge(value: AuthChallenge): Self = StObject.set(x, "authChallenge", value.asInstanceOf[js.Any])
+    inline def setAuthChallenge(value: AuthChallenge): Self = StObject.set(x, "authChallenge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthChallengeUndefined: Self = StObject.set(x, "authChallenge", js.undefined)
+    inline def setAuthChallengeUndefined: Self = StObject.set(x, "authChallenge", js.undefined)
     
-    @scala.inline
-    def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+    inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterceptionId(value: InterceptionId): Self = StObject.set(x, "interceptionId", value.asInstanceOf[js.Any])
+    inline def setInterceptionId(value: InterceptionId): Self = StObject.set(x, "interceptionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDownload(value: Boolean): Self = StObject.set(x, "isDownload", value.asInstanceOf[js.Any])
+    inline def setIsDownload(value: Boolean): Self = StObject.set(x, "isDownload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDownloadUndefined: Self = StObject.set(x, "isDownload", js.undefined)
+    inline def setIsDownloadUndefined: Self = StObject.set(x, "isDownload", js.undefined)
     
-    @scala.inline
-    def setIsNavigationRequest(value: Boolean): Self = StObject.set(x, "isNavigationRequest", value.asInstanceOf[js.Any])
+    inline def setIsNavigationRequest(value: Boolean): Self = StObject.set(x, "isNavigationRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectUrl(value: String): Self = StObject.set(x, "redirectUrl", value.asInstanceOf[js.Any])
+    inline def setRedirectUrl(value: String): Self = StObject.set(x, "redirectUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectUrlUndefined: Self = StObject.set(x, "redirectUrl", js.undefined)
+    inline def setRedirectUrlUndefined: Self = StObject.set(x, "redirectUrl", js.undefined)
     
-    @scala.inline
-    def setRequest(value: Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
+    inline def setRequestIdUndefined: Self = StObject.set(x, "requestId", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseErrorReason(value: ErrorReason): Self = StObject.set(x, "responseErrorReason", value.asInstanceOf[js.Any])
+    inline def setResponseErrorReason(value: ErrorReason): Self = StObject.set(x, "responseErrorReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseErrorReasonUndefined: Self = StObject.set(x, "responseErrorReason", js.undefined)
+    inline def setResponseErrorReasonUndefined: Self = StObject.set(x, "responseErrorReason", js.undefined)
     
-    @scala.inline
-    def setResponseHeaders(value: Headers): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
+    inline def setResponseHeaders(value: Headers): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
+    inline def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
     
-    @scala.inline
-    def setResponseStatusCode(value: integer): Self = StObject.set(x, "responseStatusCode", value.asInstanceOf[js.Any])
+    inline def setResponseStatusCode(value: integer): Self = StObject.set(x, "responseStatusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseStatusCodeUndefined: Self = StObject.set(x, "responseStatusCode", js.undefined)
+    inline def setResponseStatusCodeUndefined: Self = StObject.set(x, "responseStatusCode", js.undefined)
   }
 }

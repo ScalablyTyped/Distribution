@@ -20,22 +20,17 @@ trait deletePromisevoidtoPlainO extends StObject {
 }
 object deletePromisevoidtoPlainO {
   
-  @scala.inline
-  def apply(delete: () => js.Promise[Unit], sys: MetaSysProps, toPlainObject: () => UploadProps): deletePromisevoidtoPlainO = {
+  inline def apply(delete: () => js.Promise[Unit], sys: MetaSysProps, toPlainObject: () => UploadProps): deletePromisevoidtoPlainO = {
     val __obj = js.Dynamic.literal(delete = js.Any.fromFunction0(delete), sys = sys.asInstanceOf[js.Any], toPlainObject = js.Any.fromFunction0(toPlainObject))
     __obj.asInstanceOf[deletePromisevoidtoPlainO]
   }
   
-  @scala.inline
-  implicit class deletePromisevoidtoPlainOMutableBuilder[Self <: deletePromisevoidtoPlainO] (val x: Self) extends AnyVal {
+  extension [Self <: deletePromisevoidtoPlainO](x: Self) {
     
-    @scala.inline
-    def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSys(value: MetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
+    inline def setSys(value: MetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToPlainObject(value: () => UploadProps): Self = StObject.set(x, "toPlainObject", js.Any.fromFunction0(value))
+    inline def setToPlainObject(value: () => UploadProps): Self = StObject.set(x, "toPlainObject", js.Any.fromFunction0(value))
   }
 }

@@ -12,19 +12,15 @@ trait IModalStackedMapKeyValuePair extends StObject {
 }
 object IModalStackedMapKeyValuePair {
   
-  @scala.inline
-  def apply(key: IModalInstanceService, value: js.Any): IModalStackedMapKeyValuePair = {
+  inline def apply(key: IModalInstanceService, value: js.Any): IModalStackedMapKeyValuePair = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IModalStackedMapKeyValuePair]
   }
   
-  @scala.inline
-  implicit class IModalStackedMapKeyValuePairMutableBuilder[Self <: IModalStackedMapKeyValuePair] (val x: Self) extends AnyVal {
+  extension [Self <: IModalStackedMapKeyValuePair](x: Self) {
     
-    @scala.inline
-    def setKey(value: IModalInstanceService): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: IModalInstanceService): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

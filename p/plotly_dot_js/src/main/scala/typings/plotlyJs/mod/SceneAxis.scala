@@ -69,8 +69,7 @@ trait SceneAxis
 }
 object SceneAxis {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autorange: `true` | `false` | reversed,
     backgroundcolor: Color,
     calendar: Calendar,
@@ -135,22 +134,16 @@ object SceneAxis {
     __obj.asInstanceOf[SceneAxis]
   }
   
-  @scala.inline
-  implicit class SceneAxisMutableBuilder[Self <: SceneAxis] (val x: Self) extends AnyVal {
+  extension [Self <: SceneAxis](x: Self) {
     
-    @scala.inline
-    def setBackgroundcolor(value: Color): Self = StObject.set(x, "backgroundcolor", value.asInstanceOf[js.Any])
+    inline def setBackgroundcolor(value: Color): Self = StObject.set(x, "backgroundcolor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "backgroundcolor", js.Array(value :_*))
+    inline def setBackgroundcolorVarargs(value: (js.UndefOr[(js.Array[js.UndefOr[String | Double | Null]]) | Double | Null | String])*): Self = StObject.set(x, "backgroundcolor", js.Array(value :_*))
     
-    @scala.inline
-    def setShowaxeslabels(value: Boolean): Self = StObject.set(x, "showaxeslabels", value.asInstanceOf[js.Any])
+    inline def setShowaxeslabels(value: Boolean): Self = StObject.set(x, "showaxeslabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowbackground(value: Boolean): Self = StObject.set(x, "showbackground", value.asInstanceOf[js.Any])
+    inline def setShowbackground(value: Boolean): Self = StObject.set(x, "showbackground", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpikesides(value: Boolean): Self = StObject.set(x, "spikesides", value.asInstanceOf[js.Any])
+    inline def setSpikesides(value: Boolean): Self = StObject.set(x, "spikesides", value.asInstanceOf[js.Any])
   }
 }

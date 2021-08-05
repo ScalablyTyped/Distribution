@@ -28,37 +28,27 @@ trait AwsRdsDbClusterMember extends StObject {
 }
 object AwsRdsDbClusterMember {
   
-  @scala.inline
-  def apply(): AwsRdsDbClusterMember = {
+  inline def apply(): AwsRdsDbClusterMember = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsRdsDbClusterMember]
   }
   
-  @scala.inline
-  implicit class AwsRdsDbClusterMemberMutableBuilder[Self <: AwsRdsDbClusterMember] (val x: Self) extends AnyVal {
+  extension [Self <: AwsRdsDbClusterMember](x: Self) {
     
-    @scala.inline
-    def setDbClusterParameterGroupStatus(value: NonEmptyString): Self = StObject.set(x, "DbClusterParameterGroupStatus", value.asInstanceOf[js.Any])
+    inline def setDbClusterParameterGroupStatus(value: NonEmptyString): Self = StObject.set(x, "DbClusterParameterGroupStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbClusterParameterGroupStatusUndefined: Self = StObject.set(x, "DbClusterParameterGroupStatus", js.undefined)
+    inline def setDbClusterParameterGroupStatusUndefined: Self = StObject.set(x, "DbClusterParameterGroupStatus", js.undefined)
     
-    @scala.inline
-    def setDbInstanceIdentifier(value: NonEmptyString): Self = StObject.set(x, "DbInstanceIdentifier", value.asInstanceOf[js.Any])
+    inline def setDbInstanceIdentifier(value: NonEmptyString): Self = StObject.set(x, "DbInstanceIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDbInstanceIdentifierUndefined: Self = StObject.set(x, "DbInstanceIdentifier", js.undefined)
+    inline def setDbInstanceIdentifierUndefined: Self = StObject.set(x, "DbInstanceIdentifier", js.undefined)
     
-    @scala.inline
-    def setIsClusterWriter(value: Boolean): Self = StObject.set(x, "IsClusterWriter", value.asInstanceOf[js.Any])
+    inline def setIsClusterWriter(value: Boolean): Self = StObject.set(x, "IsClusterWriter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsClusterWriterUndefined: Self = StObject.set(x, "IsClusterWriter", js.undefined)
+    inline def setIsClusterWriterUndefined: Self = StObject.set(x, "IsClusterWriter", js.undefined)
     
-    @scala.inline
-    def setPromotionTier(value: Integer): Self = StObject.set(x, "PromotionTier", value.asInstanceOf[js.Any])
+    inline def setPromotionTier(value: Integer): Self = StObject.set(x, "PromotionTier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromotionTierUndefined: Self = StObject.set(x, "PromotionTier", js.undefined)
+    inline def setPromotionTierUndefined: Self = StObject.set(x, "PromotionTier", js.undefined)
   }
 }

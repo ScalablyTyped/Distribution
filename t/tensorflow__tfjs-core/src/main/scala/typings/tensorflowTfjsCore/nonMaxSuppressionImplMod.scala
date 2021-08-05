@@ -13,8 +13,7 @@ object nonMaxSuppressionImplMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def nonMaxSuppressionV3Impl(
+  inline def nonMaxSuppressionV3Impl(
     boxes: TypedArray,
     scores: TypedArray,
     maxOutputSize: Double,
@@ -22,8 +21,7 @@ object nonMaxSuppressionImplMod {
     scoreThreshold: Double
   ): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("nonMaxSuppressionV3Impl")(boxes.asInstanceOf[js.Any], scores.asInstanceOf[js.Any], maxOutputSize.asInstanceOf[js.Any], iouThreshold.asInstanceOf[js.Any], scoreThreshold.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
   
-  @scala.inline
-  def nonMaxSuppressionV4Impl(
+  inline def nonMaxSuppressionV4Impl(
     boxes: TypedArray,
     scores: TypedArray,
     maxOutputSize: Double,
@@ -32,8 +30,7 @@ object nonMaxSuppressionImplMod {
     padToMaxOutputSize: Boolean
   ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("nonMaxSuppressionV4Impl")(boxes.asInstanceOf[js.Any], scores.asInstanceOf[js.Any], maxOutputSize.asInstanceOf[js.Any], iouThreshold.asInstanceOf[js.Any], scoreThreshold.asInstanceOf[js.Any], padToMaxOutputSize.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
   
-  @scala.inline
-  def nonMaxSuppressionV5Impl(
+  inline def nonMaxSuppressionV5Impl(
     boxes: TypedArray,
     scores: TypedArray,
     maxOutputSize: Double,

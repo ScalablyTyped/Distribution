@@ -17,19 +17,15 @@ trait SchemaMaintenancePolicy extends StObject {
 }
 object SchemaMaintenancePolicy {
   
-  @scala.inline
-  def apply(): SchemaMaintenancePolicy = {
+  inline def apply(): SchemaMaintenancePolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMaintenancePolicy]
   }
   
-  @scala.inline
-  implicit class SchemaMaintenancePolicyMutableBuilder[Self <: SchemaMaintenancePolicy] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMaintenancePolicy](x: Self) {
     
-    @scala.inline
-    def setWindow(value: SchemaMaintenanceWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+    inline def setWindow(value: SchemaMaintenanceWindow): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
+    inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
   }
 }

@@ -21,8 +21,7 @@ trait AppStateStatic extends StObject {
 }
 object AppStateStatic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addEventListener: (AppStateEvent, js.Function1[/* state */ AppStateStatus, Unit]) => Unit,
     currentState: AppStateStatus,
     removeEventListener: (AppStateEvent, js.Function1[/* state */ AppStateStatus, Unit]) => Unit
@@ -31,16 +30,12 @@ object AppStateStatic {
     __obj.asInstanceOf[AppStateStatic]
   }
   
-  @scala.inline
-  implicit class AppStateStaticMutableBuilder[Self <: AppStateStatic] (val x: Self) extends AnyVal {
+  extension [Self <: AppStateStatic](x: Self) {
     
-    @scala.inline
-    def setAddEventListener(value: (AppStateEvent, js.Function1[/* state */ AppStateStatus, Unit]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
+    inline def setAddEventListener(value: (AppStateEvent, js.Function1[/* state */ AppStateStatus, Unit]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCurrentState(value: AppStateStatus): Self = StObject.set(x, "currentState", value.asInstanceOf[js.Any])
+    inline def setCurrentState(value: AppStateStatus): Self = StObject.set(x, "currentState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveEventListener(value: (AppStateEvent, js.Function1[/* state */ AppStateStatus, Unit]) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
+    inline def setRemoveEventListener(value: (AppStateEvent, js.Function1[/* state */ AppStateStatus, Unit]) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
   }
 }

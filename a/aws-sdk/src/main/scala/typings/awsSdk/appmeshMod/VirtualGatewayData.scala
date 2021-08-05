@@ -30,8 +30,7 @@ trait VirtualGatewayData extends StObject {
 }
 object VirtualGatewayData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     meshName: ResourceName,
     metadata: ResourceMetadata,
     spec: VirtualGatewaySpec,
@@ -42,22 +41,16 @@ object VirtualGatewayData {
     __obj.asInstanceOf[VirtualGatewayData]
   }
   
-  @scala.inline
-  implicit class VirtualGatewayDataMutableBuilder[Self <: VirtualGatewayData] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualGatewayData](x: Self) {
     
-    @scala.inline
-    def setMeshName(value: ResourceName): Self = StObject.set(x, "meshName", value.asInstanceOf[js.Any])
+    inline def setMeshName(value: ResourceName): Self = StObject.set(x, "meshName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: ResourceMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: ResourceMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpec(value: VirtualGatewaySpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+    inline def setSpec(value: VirtualGatewaySpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: VirtualGatewayStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: VirtualGatewayStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualGatewayName(value: ResourceName): Self = StObject.set(x, "virtualGatewayName", value.asInstanceOf[js.Any])
+    inline def setVirtualGatewayName(value: ResourceName): Self = StObject.set(x, "virtualGatewayName", value.asInstanceOf[js.Any])
   }
 }

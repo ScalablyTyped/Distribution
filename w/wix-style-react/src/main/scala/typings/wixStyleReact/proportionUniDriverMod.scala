@@ -17,8 +17,7 @@ object proportionUniDriverMod {
   }
   object ProportionUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -29,14 +28,11 @@ object proportionUniDriverMod {
       __obj.asInstanceOf[ProportionUniDriver]
     }
     
-    @scala.inline
-    implicit class ProportionUniDriverMutableBuilder[Self <: ProportionUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: ProportionUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetAspectRatio(value: () => js.Promise[Double]): Self = StObject.set(x, "getAspectRatio", js.Any.fromFunction0(value))
+      inline def setGetAspectRatio(value: () => js.Promise[Double]): Self = StObject.set(x, "getAspectRatio", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsAspectRatioDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isAspectRatioDisabled", js.Any.fromFunction0(value))
+      inline def setIsAspectRatioDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isAspectRatioDisabled", js.Any.fromFunction0(value))
     }
   }
 }

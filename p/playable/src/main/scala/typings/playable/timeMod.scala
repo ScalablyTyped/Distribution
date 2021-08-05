@@ -18,55 +18,55 @@ object timeMod {
        with TimeControl {
     def this(hasEventEmitterEngineTheme: EngineEventEmitter) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _bindCallbacks: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _bindEvents: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _engine: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _eventEmitter: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _initUI: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _processLiveStateChange: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _setCurrentTime: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _setDurationTime: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _startIntervalUpdates: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _stopIntervalUpdates: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _theme: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _toggleIntervalUpdates: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _unbindEvents: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _updateControlInterval: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _updateCurrentTime: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _updateDurationTime: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _updateTimeFromPreview: js.Any = js.native
     
     /* CompleteClass */
@@ -100,20 +100,17 @@ object timeMod {
     @JSImport("playable/dist/src/modules/ui/controls/time/time", "default.View")
     @js.native
     def View: Instantiable1[/* config */ ITimeViewConfig, typings.playable.timeViewMod.default] = js.native
-    @scala.inline
-    def View_=(x: Instantiable1[/* config */ ITimeViewConfig, typings.playable.timeViewMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("View")(x.asInstanceOf[js.Any])
+    inline def View_=(x: Instantiable1[/* config */ ITimeViewConfig, typings.playable.timeViewMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("View")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/modules/ui/controls/time/time", "default.dependencies")
     @js.native
     def dependencies: js.Array[String] = js.native
-    @scala.inline
-    def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
+    inline def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/modules/ui/controls/time/time", "default.moduleName")
     @js.native
     def moduleName: String = js.native
-    @scala.inline
-    def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
+    inline def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("playable/dist/src/modules/ui/controls/time/time", "UPDATE_TIME_INTERVAL_DELAY")
@@ -124,39 +121,39 @@ object timeMod {
     extends StObject
        with ITimeControl {
     
-    var _bindCallbacks: js.Any
+    /* private */ var _bindCallbacks: js.Any
     
-    var _bindEvents: js.Any
+    /* private */ var _bindEvents: js.Any
     
-    var _engine: js.Any
+    /* private */ var _engine: js.Any
     
-    var _eventEmitter: js.Any
+    /* private */ var _eventEmitter: js.Any
     
-    var _initUI: js.Any
+    /* private */ var _initUI: js.Any
     
-    var _processLiveStateChange: js.Any
+    /* private */ var _processLiveStateChange: js.Any
     
-    var _setCurrentTime: js.Any
+    /* private */ var _setCurrentTime: js.Any
     
-    var _setDurationTime: js.Any
+    /* private */ var _setDurationTime: js.Any
     
-    var _startIntervalUpdates: js.Any
+    /* private */ var _startIntervalUpdates: js.Any
     
-    var _stopIntervalUpdates: js.Any
+    /* private */ var _stopIntervalUpdates: js.Any
     
-    var _theme: js.Any
+    /* private */ var _theme: js.Any
     
-    var _toggleIntervalUpdates: js.Any
+    /* private */ var _toggleIntervalUpdates: js.Any
     
-    var _unbindEvents: js.Any
+    /* private */ var _unbindEvents: js.Any
     
-    var _updateControlInterval: js.Any
+    /* private */ var _updateControlInterval: js.Any
     
-    var _updateCurrentTime: js.Any
+    /* private */ var _updateCurrentTime: js.Any
     
-    var _updateDurationTime: js.Any
+    /* private */ var _updateDurationTime: js.Any
     
-    var _updateTimeFromPreview: js.Any
+    /* private */ var _updateTimeFromPreview: js.Any
     
     var isHidden: Boolean
     
@@ -164,8 +161,7 @@ object timeMod {
   }
   object TimeControl {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _bindCallbacks: js.Any,
       _bindEvents: js.Any,
       _engine: js.Any,
@@ -195,65 +191,45 @@ object timeMod {
       __obj.asInstanceOf[TimeControl]
     }
     
-    @scala.inline
-    implicit class TimeControlMutableBuilder[Self <: TimeControl] (val x: Self) extends AnyVal {
+    extension [Self <: TimeControl](x: Self) {
       
-      @scala.inline
-      def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
+      inline def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setView(value: typings.playable.timeViewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+      inline def setView(value: typings.playable.timeViewMod.default): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_bindCallbacks(value: js.Any): Self = StObject.set(x, "_bindCallbacks", value.asInstanceOf[js.Any])
+      inline def set_bindCallbacks(value: js.Any): Self = StObject.set(x, "_bindCallbacks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_bindEvents(value: js.Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
+      inline def set_bindEvents(value: js.Any): Self = StObject.set(x, "_bindEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_engine(value: js.Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
+      inline def set_engine(value: js.Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_eventEmitter(value: js.Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
+      inline def set_eventEmitter(value: js.Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_initUI(value: js.Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
+      inline def set_initUI(value: js.Any): Self = StObject.set(x, "_initUI", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_processLiveStateChange(value: js.Any): Self = StObject.set(x, "_processLiveStateChange", value.asInstanceOf[js.Any])
+      inline def set_processLiveStateChange(value: js.Any): Self = StObject.set(x, "_processLiveStateChange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_setCurrentTime(value: js.Any): Self = StObject.set(x, "_setCurrentTime", value.asInstanceOf[js.Any])
+      inline def set_setCurrentTime(value: js.Any): Self = StObject.set(x, "_setCurrentTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_setDurationTime(value: js.Any): Self = StObject.set(x, "_setDurationTime", value.asInstanceOf[js.Any])
+      inline def set_setDurationTime(value: js.Any): Self = StObject.set(x, "_setDurationTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_startIntervalUpdates(value: js.Any): Self = StObject.set(x, "_startIntervalUpdates", value.asInstanceOf[js.Any])
+      inline def set_startIntervalUpdates(value: js.Any): Self = StObject.set(x, "_startIntervalUpdates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_stopIntervalUpdates(value: js.Any): Self = StObject.set(x, "_stopIntervalUpdates", value.asInstanceOf[js.Any])
+      inline def set_stopIntervalUpdates(value: js.Any): Self = StObject.set(x, "_stopIntervalUpdates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_theme(value: js.Any): Self = StObject.set(x, "_theme", value.asInstanceOf[js.Any])
+      inline def set_theme(value: js.Any): Self = StObject.set(x, "_theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_toggleIntervalUpdates(value: js.Any): Self = StObject.set(x, "_toggleIntervalUpdates", value.asInstanceOf[js.Any])
+      inline def set_toggleIntervalUpdates(value: js.Any): Self = StObject.set(x, "_toggleIntervalUpdates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_unbindEvents(value: js.Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
+      inline def set_unbindEvents(value: js.Any): Self = StObject.set(x, "_unbindEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_updateControlInterval(value: js.Any): Self = StObject.set(x, "_updateControlInterval", value.asInstanceOf[js.Any])
+      inline def set_updateControlInterval(value: js.Any): Self = StObject.set(x, "_updateControlInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_updateCurrentTime(value: js.Any): Self = StObject.set(x, "_updateCurrentTime", value.asInstanceOf[js.Any])
+      inline def set_updateCurrentTime(value: js.Any): Self = StObject.set(x, "_updateCurrentTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_updateDurationTime(value: js.Any): Self = StObject.set(x, "_updateDurationTime", value.asInstanceOf[js.Any])
+      inline def set_updateDurationTime(value: js.Any): Self = StObject.set(x, "_updateDurationTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_updateTimeFromPreview(value: js.Any): Self = StObject.set(x, "_updateTimeFromPreview", value.asInstanceOf[js.Any])
+      inline def set_updateTimeFromPreview(value: js.Any): Self = StObject.set(x, "_updateTimeFromPreview", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -14,28 +14,21 @@ trait DownloadSizeEvidence extends StObject {
 }
 object DownloadSizeEvidence {
   
-  @scala.inline
-  def apply(): DownloadSizeEvidence = {
+  inline def apply(): DownloadSizeEvidence = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DownloadSizeEvidence]
   }
   
-  @scala.inline
-  implicit class DownloadSizeEvidenceMutableBuilder[Self <: DownloadSizeEvidence] (val x: Self) extends AnyVal {
+  extension [Self <: DownloadSizeEvidence](x: Self) {
     
-    @scala.inline
-    def setTopUrlDownloadSizeBreakdowns(value: js.Array[UrlDownloadSize]): Self = StObject.set(x, "topUrlDownloadSizeBreakdowns", value.asInstanceOf[js.Any])
+    inline def setTopUrlDownloadSizeBreakdowns(value: js.Array[UrlDownloadSize]): Self = StObject.set(x, "topUrlDownloadSizeBreakdowns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopUrlDownloadSizeBreakdownsUndefined: Self = StObject.set(x, "topUrlDownloadSizeBreakdowns", js.undefined)
+    inline def setTopUrlDownloadSizeBreakdownsUndefined: Self = StObject.set(x, "topUrlDownloadSizeBreakdowns", js.undefined)
     
-    @scala.inline
-    def setTopUrlDownloadSizeBreakdownsVarargs(value: UrlDownloadSize*): Self = StObject.set(x, "topUrlDownloadSizeBreakdowns", js.Array(value :_*))
+    inline def setTopUrlDownloadSizeBreakdownsVarargs(value: UrlDownloadSize*): Self = StObject.set(x, "topUrlDownloadSizeBreakdowns", js.Array(value :_*))
     
-    @scala.inline
-    def setTotalDownloadSizeKb(value: Double): Self = StObject.set(x, "totalDownloadSizeKb", value.asInstanceOf[js.Any])
+    inline def setTotalDownloadSizeKb(value: Double): Self = StObject.set(x, "totalDownloadSizeKb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalDownloadSizeKbUndefined: Self = StObject.set(x, "totalDownloadSizeKb", js.undefined)
+    inline def setTotalDownloadSizeKbUndefined: Self = StObject.set(x, "totalDownloadSizeKb", js.undefined)
   }
 }

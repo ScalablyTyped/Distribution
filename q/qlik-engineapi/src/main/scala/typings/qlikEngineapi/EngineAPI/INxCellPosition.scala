@@ -21,19 +21,15 @@ trait INxCellPosition extends StObject {
 }
 object INxCellPosition {
   
-  @scala.inline
-  def apply(qx: Double, qy: Double): INxCellPosition = {
+  inline def apply(qx: Double, qy: Double): INxCellPosition = {
     val __obj = js.Dynamic.literal(qx = qx.asInstanceOf[js.Any], qy = qy.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxCellPosition]
   }
   
-  @scala.inline
-  implicit class INxCellPositionMutableBuilder[Self <: INxCellPosition] (val x: Self) extends AnyVal {
+  extension [Self <: INxCellPosition](x: Self) {
     
-    @scala.inline
-    def setQx(value: Double): Self = StObject.set(x, "qx", value.asInstanceOf[js.Any])
+    inline def setQx(value: Double): Self = StObject.set(x, "qx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQy(value: Double): Self = StObject.set(x, "qy", value.asInstanceOf[js.Any])
+    inline def setQy(value: Double): Self = StObject.set(x, "qy", value.asInstanceOf[js.Any])
   }
 }

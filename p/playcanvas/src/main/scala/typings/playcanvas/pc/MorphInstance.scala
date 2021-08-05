@@ -36,8 +36,7 @@ trait MorphInstance extends StObject {
 }
 object MorphInstance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroy: () => Unit,
     getWeight: Double => Double,
     setWeight: (Double, Double) => Unit,
@@ -47,19 +46,14 @@ object MorphInstance {
     __obj.asInstanceOf[MorphInstance]
   }
   
-  @scala.inline
-  implicit class MorphInstanceMutableBuilder[Self <: MorphInstance] (val x: Self) extends AnyVal {
+  extension [Self <: MorphInstance](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWeight(value: Double => Double): Self = StObject.set(x, "getWeight", js.Any.fromFunction1(value))
+    inline def setGetWeight(value: Double => Double): Self = StObject.set(x, "getWeight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetWeight(value: (Double, Double) => Unit): Self = StObject.set(x, "setWeight", js.Any.fromFunction2(value))
+    inline def setSetWeight(value: (Double, Double) => Unit): Self = StObject.set(x, "setWeight", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+    inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
   }
 }

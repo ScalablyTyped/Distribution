@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NotificationPermission extends StObject
 object NotificationPermission {
   
-  @scala.inline
-  def default: typings.std.stdStrings.default = "default".asInstanceOf[typings.std.stdStrings.default]
+  inline def default: typings.std.stdStrings.default = "default".asInstanceOf[typings.std.stdStrings.default]
   
-  @scala.inline
-  def denied: typings.std.stdStrings.denied = "denied".asInstanceOf[typings.std.stdStrings.denied]
+  inline def denied: typings.std.stdStrings.denied = "denied".asInstanceOf[typings.std.stdStrings.denied]
   
-  @scala.inline
-  def granted: typings.std.stdStrings.granted = "granted".asInstanceOf[typings.std.stdStrings.granted]
+  inline def granted: typings.std.stdStrings.granted = "granted".asInstanceOf[typings.std.stdStrings.granted]
 }

@@ -14,16 +14,13 @@ trait UpdatableMessageFrontEndTemplateInfo extends StObject {
 }
 object UpdatableMessageFrontEndTemplateInfo {
   
-  @scala.inline
-  def apply(parameterList: UpdatableMessageFrontEndParameter): UpdatableMessageFrontEndTemplateInfo = {
+  inline def apply(parameterList: UpdatableMessageFrontEndParameter): UpdatableMessageFrontEndTemplateInfo = {
     val __obj = js.Dynamic.literal(parameterList = parameterList.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatableMessageFrontEndTemplateInfo]
   }
   
-  @scala.inline
-  implicit class UpdatableMessageFrontEndTemplateInfoMutableBuilder[Self <: UpdatableMessageFrontEndTemplateInfo] (val x: Self) extends AnyVal {
+  extension [Self <: UpdatableMessageFrontEndTemplateInfo](x: Self) {
     
-    @scala.inline
-    def setParameterList(value: UpdatableMessageFrontEndParameter): Self = StObject.set(x, "parameterList", value.asInstanceOf[js.Any])
+    inline def setParameterList(value: UpdatableMessageFrontEndParameter): Self = StObject.set(x, "parameterList", value.asInstanceOf[js.Any])
   }
 }

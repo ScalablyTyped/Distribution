@@ -50,8 +50,7 @@ object mod extends Shortcut {
   }
   object CommentNode {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       data: String,
       next: Node,
       nextSibling: Node,
@@ -68,23 +67,17 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CommentNode]
     }
     
-    @scala.inline
-    implicit class CommentNodeMutableBuilder[Self <: CommentNode] (val x: Self) extends AnyVal {
+    extension [Self <: CommentNode](x: Self) {
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: comment): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: comment): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeValue(value: String): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
+      inline def setNodeValue(value: String): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceCodeLocation(value: Location): Self = StObject.set(x, "sourceCodeLocation", value.asInstanceOf[js.Any])
+      inline def setSourceCodeLocation(value: Location): Self = StObject.set(x, "sourceCodeLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceCodeLocationUndefined: Self = StObject.set(x, "sourceCodeLocation", js.undefined)
+      inline def setSourceCodeLocationUndefined: Self = StObject.set(x, "sourceCodeLocation", js.undefined)
     }
   }
   
@@ -113,8 +106,7 @@ object mod extends Shortcut {
   }
   object Document {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       childNodes: js.Array[Node],
       children: js.Array[Node],
       firstChild: Node,
@@ -134,17 +126,13 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Document]
     }
     
-    @scala.inline
-    implicit class DocumentMutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
+    extension [Self <: Document](x: Self) {
       
-      @scala.inline
-      def setName(value: root): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: root): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: root): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: root): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setX-mode`(value: DocumentMode): Self = StObject.set(x, "x-mode", value.asInstanceOf[js.Any])
+      inline def `setX-mode`(value: DocumentMode): Self = StObject.set(x, "x-mode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -168,8 +156,7 @@ object mod extends Shortcut {
   }
   object DocumentFragment {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       childNodes: js.Array[Node],
       children: js.Array[Node],
       firstChild: Node,
@@ -187,14 +174,11 @@ object mod extends Shortcut {
       __obj.asInstanceOf[DocumentFragment]
     }
     
-    @scala.inline
-    implicit class DocumentFragmentMutableBuilder[Self <: DocumentFragment] (val x: Self) extends AnyVal {
+    extension [Self <: DocumentFragment](x: Self) {
       
-      @scala.inline
-      def setName(value: root): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: root): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: root): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: root): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -238,8 +222,7 @@ object mod extends Shortcut {
   }
   object DocumentType {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       data: String,
       next: Node,
       nextSibling: Node,
@@ -260,26 +243,19 @@ object mod extends Shortcut {
       __obj.asInstanceOf[DocumentType]
     }
     
-    @scala.inline
-    implicit class DocumentTypeMutableBuilder[Self <: DocumentType] (val x: Self) extends AnyVal {
+    extension [Self <: DocumentType](x: Self) {
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Exclamationmarkdoctype): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Exclamationmarkdoctype): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: directive): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: directive): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setX-name`(value: String): Self = StObject.set(x, "x-name", value.asInstanceOf[js.Any])
+      inline def `setX-name`(value: String): Self = StObject.set(x, "x-name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setX-publicId`(value: String): Self = StObject.set(x, "x-publicId", value.asInstanceOf[js.Any])
+      inline def `setX-publicId`(value: String): Self = StObject.set(x, "x-publicId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setX-systemId`(value: String): Self = StObject.set(x, "x-systemId", value.asInstanceOf[js.Any])
+      inline def `setX-systemId`(value: String): Self = StObject.set(x, "x-systemId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -327,8 +303,7 @@ object mod extends Shortcut {
   }
   object Element {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attribs: StringDictionary[String],
       childNodes: js.Array[Node],
       children: js.Array[Node],
@@ -355,32 +330,23 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Element]
     }
     
-    @scala.inline
-    implicit class ElementMutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
+    extension [Self <: Element](x: Self) {
       
-      @scala.inline
-      def setAttribs(value: StringDictionary[String]): Self = StObject.set(x, "attribs", value.asInstanceOf[js.Any])
+      inline def setAttribs(value: StringDictionary[String]): Self = StObject.set(x, "attribs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceCodeLocation(value: ElementLocation): Self = StObject.set(x, "sourceCodeLocation", value.asInstanceOf[js.Any])
+      inline def setSourceCodeLocation(value: ElementLocation): Self = StObject.set(x, "sourceCodeLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceCodeLocationUndefined: Self = StObject.set(x, "sourceCodeLocation", js.undefined)
+      inline def setSourceCodeLocationUndefined: Self = StObject.set(x, "sourceCodeLocation", js.undefined)
       
-      @scala.inline
-      def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+      inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setX-attribsNamespace`(value: StringDictionary[String]): Self = StObject.set(x, "x-attribsNamespace", value.asInstanceOf[js.Any])
+      inline def `setX-attribsNamespace`(value: StringDictionary[String]): Self = StObject.set(x, "x-attribsNamespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setX-attribsPrefix`(value: StringDictionary[String]): Self = StObject.set(x, "x-attribsPrefix", value.asInstanceOf[js.Any])
+      inline def `setX-attribsPrefix`(value: StringDictionary[String]): Self = StObject.set(x, "x-attribsPrefix", value.asInstanceOf[js.Any])
     }
   }
   
@@ -431,8 +397,7 @@ object mod extends Shortcut {
   }
   object Node {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       next: Node,
       nextSibling: Node,
       nodeType: Double,
@@ -447,32 +412,23 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Node]
     }
     
-    @scala.inline
-    implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
+    extension [Self <: Node](x: Self) {
       
-      @scala.inline
-      def setNext(value: Node): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      inline def setNext(value: Node): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextSibling(value: Node): Self = StObject.set(x, "nextSibling", value.asInstanceOf[js.Any])
+      inline def setNextSibling(value: Node): Self = StObject.set(x, "nextSibling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeType(value: Double): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
+      inline def setNodeType(value: Double): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: ParentNode): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: ParentNode): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentNode(value: ParentNode): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
+      inline def setParentNode(value: ParentNode): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrev(value: Node): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+      inline def setPrev(value: Node): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousSibling(value: Node): Self = StObject.set(x, "previousSibling", value.asInstanceOf[js.Any])
+      inline def setPreviousSibling(value: Node): Self = StObject.set(x, "previousSibling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -505,8 +461,7 @@ object mod extends Shortcut {
   }
   object ParentNode {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       childNodes: js.Array[Node],
       children: js.Array[Node],
       firstChild: Node,
@@ -525,26 +480,19 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ParentNode]
     }
     
-    @scala.inline
-    implicit class ParentNodeMutableBuilder[Self <: ParentNode] (val x: Self) extends AnyVal {
+    extension [Self <: ParentNode](x: Self) {
       
-      @scala.inline
-      def setChildNodes(value: js.Array[Node]): Self = StObject.set(x, "childNodes", value.asInstanceOf[js.Any])
+      inline def setChildNodes(value: js.Array[Node]): Self = StObject.set(x, "childNodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildNodesVarargs(value: Node*): Self = StObject.set(x, "childNodes", js.Array(value :_*))
+      inline def setChildNodesVarargs(value: Node*): Self = StObject.set(x, "childNodes", js.Array(value :_*))
       
-      @scala.inline
-      def setChildren(value: js.Array[Node]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[Node]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenVarargs(value: Node*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: Node*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setFirstChild(value: Node): Self = StObject.set(x, "firstChild", value.asInstanceOf[js.Any])
+      inline def setFirstChild(value: Node): Self = StObject.set(x, "firstChild", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastChild(value: Node): Self = StObject.set(x, "lastChild", value.asInstanceOf[js.Any])
+      inline def setLastChild(value: Node): Self = StObject.set(x, "lastChild", value.asInstanceOf[js.Any])
     }
   }
   
@@ -577,8 +525,7 @@ object mod extends Shortcut {
   }
   object TextNode {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       data: String,
       next: Node,
       nextSibling: Node,
@@ -595,23 +542,17 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TextNode]
     }
     
-    @scala.inline
-    implicit class TextNodeMutableBuilder[Self <: TextNode] (val x: Self) extends AnyVal {
+    extension [Self <: TextNode](x: Self) {
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: text): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: text): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeValue(value: String): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
+      inline def setNodeValue(value: String): Self = StObject.set(x, "nodeValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceCodeLocation(value: Location): Self = StObject.set(x, "sourceCodeLocation", value.asInstanceOf[js.Any])
+      inline def setSourceCodeLocation(value: Location): Self = StObject.set(x, "sourceCodeLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceCodeLocationUndefined: Self = StObject.set(x, "sourceCodeLocation", js.undefined)
+      inline def setSourceCodeLocationUndefined: Self = StObject.set(x, "sourceCodeLocation", js.undefined)
     }
   }
   

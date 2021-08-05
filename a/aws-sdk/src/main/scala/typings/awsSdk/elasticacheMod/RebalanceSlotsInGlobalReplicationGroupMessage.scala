@@ -18,19 +18,15 @@ trait RebalanceSlotsInGlobalReplicationGroupMessage extends StObject {
 }
 object RebalanceSlotsInGlobalReplicationGroupMessage {
   
-  @scala.inline
-  def apply(ApplyImmediately: Boolean, GlobalReplicationGroupId: String): RebalanceSlotsInGlobalReplicationGroupMessage = {
+  inline def apply(ApplyImmediately: Boolean, GlobalReplicationGroupId: String): RebalanceSlotsInGlobalReplicationGroupMessage = {
     val __obj = js.Dynamic.literal(ApplyImmediately = ApplyImmediately.asInstanceOf[js.Any], GlobalReplicationGroupId = GlobalReplicationGroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RebalanceSlotsInGlobalReplicationGroupMessage]
   }
   
-  @scala.inline
-  implicit class RebalanceSlotsInGlobalReplicationGroupMessageMutableBuilder[Self <: RebalanceSlotsInGlobalReplicationGroupMessage] (val x: Self) extends AnyVal {
+  extension [Self <: RebalanceSlotsInGlobalReplicationGroupMessage](x: Self) {
     
-    @scala.inline
-    def setApplyImmediately(value: Boolean): Self = StObject.set(x, "ApplyImmediately", value.asInstanceOf[js.Any])
+    inline def setApplyImmediately(value: Boolean): Self = StObject.set(x, "ApplyImmediately", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalReplicationGroupId(value: String): Self = StObject.set(x, "GlobalReplicationGroupId", value.asInstanceOf[js.Any])
+    inline def setGlobalReplicationGroupId(value: String): Self = StObject.set(x, "GlobalReplicationGroupId", value.asInstanceOf[js.Any])
   }
 }

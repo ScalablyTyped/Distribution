@@ -18,22 +18,17 @@ trait GroupFilter extends StObject {
 }
 object GroupFilter {
   
-  @scala.inline
-  def apply(Name: GroupFilterName, Values: GroupFilterValues): GroupFilter = {
+  inline def apply(Name: GroupFilterName, Values: GroupFilterValues): GroupFilter = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Values = Values.asInstanceOf[js.Any])
     __obj.asInstanceOf[GroupFilter]
   }
   
-  @scala.inline
-  implicit class GroupFilterMutableBuilder[Self <: GroupFilter] (val x: Self) extends AnyVal {
+  extension [Self <: GroupFilter](x: Self) {
     
-    @scala.inline
-    def setName(value: GroupFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: GroupFilterName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: GroupFilterValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: GroupFilterValues): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: GroupFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: GroupFilterValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

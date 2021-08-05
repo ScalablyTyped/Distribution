@@ -13,19 +13,15 @@ trait PoolCidrBlock extends StObject {
 }
 object PoolCidrBlock {
   
-  @scala.inline
-  def apply(): PoolCidrBlock = {
+  inline def apply(): PoolCidrBlock = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PoolCidrBlock]
   }
   
-  @scala.inline
-  implicit class PoolCidrBlockMutableBuilder[Self <: PoolCidrBlock] (val x: Self) extends AnyVal {
+  extension [Self <: PoolCidrBlock](x: Self) {
     
-    @scala.inline
-    def setCidr(value: String): Self = StObject.set(x, "Cidr", value.asInstanceOf[js.Any])
+    inline def setCidr(value: String): Self = StObject.set(x, "Cidr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrUndefined: Self = StObject.set(x, "Cidr", js.undefined)
+    inline def setCidrUndefined: Self = StObject.set(x, "Cidr", js.undefined)
   }
 }

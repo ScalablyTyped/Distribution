@@ -46,55 +46,39 @@ trait TouchBarButtonConstructorOptions extends StObject {
 }
 object TouchBarButtonConstructorOptions {
   
-  @scala.inline
-  def apply(): TouchBarButtonConstructorOptions = {
+  inline def apply(): TouchBarButtonConstructorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TouchBarButtonConstructorOptions]
   }
   
-  @scala.inline
-  implicit class TouchBarButtonConstructorOptionsMutableBuilder[Self <: TouchBarButtonConstructorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TouchBarButtonConstructorOptions](x: Self) {
     
-    @scala.inline
-    def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
+    inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
+    inline def setAccessibilityLabelUndefined: Self = StObject.set(x, "accessibilityLabel", js.undefined)
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setClick(value: () => Unit): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
+    inline def setClick(value: () => Unit): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
+    inline def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setIcon(value: NativeImage_ | String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: NativeImage_ | String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconPosition(value: left | right | overlay): Self = StObject.set(x, "iconPosition", value.asInstanceOf[js.Any])
+    inline def setIconPosition(value: left | right | overlay): Self = StObject.set(x, "iconPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconPositionUndefined: Self = StObject.set(x, "iconPosition", js.undefined)
+    inline def setIconPositionUndefined: Self = StObject.set(x, "iconPosition", js.undefined)
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }
 }

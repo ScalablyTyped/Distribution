@@ -33,14 +33,12 @@ object srcComponentsInputWithOptionsInputWithOptionsMod {
     @JSImport("wix-ui-core/src/components/input-with-options/InputWithOptions", "DataHooks.emptyState")
     @js.native
     def emptyState: String = js.native
-    @scala.inline
-    def emptyState_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("emptyState")(x.asInstanceOf[js.Any])
+    inline def emptyState_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("emptyState")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/src/components/input-with-options/InputWithOptions", "DataHooks.input")
     @js.native
     def input: String = js.native
-    @scala.inline
-    def input_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("input")(x.asInstanceOf[js.Any])
+    inline def input_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("input")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("wix-ui-core/src/components/input-with-options/InputWithOptions", "InputWithOptions")
@@ -95,20 +93,17 @@ object srcComponentsInputWithOptionsInputWithOptionsMod {
     @JSImport("wix-ui-core/src/components/input-with-options/InputWithOptions", "InputWithOptions.bypassDefaultPropsTypecheck")
     @js.native
     def bypassDefaultPropsTypecheck: js.Any = js.native
-    @scala.inline
-    def bypassDefaultPropsTypecheck_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bypassDefaultPropsTypecheck")(x.asInstanceOf[js.Any])
+    inline def bypassDefaultPropsTypecheck_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bypassDefaultPropsTypecheck")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/src/components/input-with-options/InputWithOptions", "InputWithOptions.defaultProps")
     @js.native
     def defaultProps: FilterPredicate = js.native
-    @scala.inline
-    def defaultProps_=(x: FilterPredicate): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: FilterPredicate): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-ui-core/src/components/input-with-options/InputWithOptions", "InputWithOptions.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   /* Inlined std.Pick<wix-ui-core.wix-ui-core/src/components/popover.PopoverProps, 'fixed' | 'flip' | 'moveBy'> & std.Pick<wix-ui-core.wix-ui-core/src/components/dropdown.DropdownProps, 'onContentMouseDown'> & {  data-hook :string | undefined,   placement :wix-ui-core.wix-ui-core/src/components/popover.Placement | undefined,   options :std.Array<wix-ui-core.wix-ui-core/src/components/dropdown-option.Option>,   openTrigger :/ * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OPEN_TRIGGER_TYPE * / any | undefined,   onSelect :(option : wix-ui-core.wix-ui-core/src/components/dropdown-option.Option): void | undefined,   onDeselect :(option : wix-ui-core.wix-ui-core/src/components/dropdown-option.Option): void | undefined,   initialSelectedIds :std.Array<string | number> | undefined,   onInitialSelectedOptionsSet :(options : std.Array<wix-ui-core.wix-ui-core/src/components/dropdown-option.Option>): void | undefined,   multi :boolean | undefined,   fixedHeader :react.react.ReactNode | undefined,   fixedFooter :react.react.ReactNode | undefined,   timeout :number | undefined,   onManualInput :(value : string): void | undefined,   highlightMatches :boolean | undefined,   forceContentElementVisibility :boolean | undefined,   inputProps :wix-ui-core.wix-ui-core/src/components/input.InputProps | undefined,   style :object | undefined,   id :string | undefined,   allowReselect :boolean | undefined,   filterPredicate :(inputValue : string, optionValue : string): std.Boolean | undefined,   emptyStateMessage :string | undefined,   emptyStateStyle :react.react.CSSProperties | undefined,   optionsContainerZIndex :number | undefined,   className :string | undefined} */
@@ -197,187 +192,128 @@ object srcComponentsInputWithOptionsInputWithOptionsMod {
   }
   object InputWithOptionsProps {
     
-    @scala.inline
-    def apply(options: js.Array[Option]): InputWithOptionsProps = {
+    inline def apply(options: js.Array[Option]): InputWithOptionsProps = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[InputWithOptionsProps]
     }
     
-    @scala.inline
-    implicit class InputWithOptionsPropsMutableBuilder[Self <: InputWithOptionsProps] (val x: Self) extends AnyVal {
+    extension [Self <: InputWithOptionsProps](x: Self) {
       
-      @scala.inline
-      def setAllowReselect(value: Boolean): Self = StObject.set(x, "allowReselect", value.asInstanceOf[js.Any])
+      inline def setAllowReselect(value: Boolean): Self = StObject.set(x, "allowReselect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowReselectUndefined: Self = StObject.set(x, "allowReselect", js.undefined)
+      inline def setAllowReselectUndefined: Self = StObject.set(x, "allowReselect", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def `setData-hook`(value: String): Self = StObject.set(x, "data-hook", value.asInstanceOf[js.Any])
+      inline def `setData-hook`(value: String): Self = StObject.set(x, "data-hook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setData-hookUndefined`: Self = StObject.set(x, "data-hook", js.undefined)
+      inline def `setData-hookUndefined`: Self = StObject.set(x, "data-hook", js.undefined)
       
-      @scala.inline
-      def setEmptyStateMessage(value: String): Self = StObject.set(x, "emptyStateMessage", value.asInstanceOf[js.Any])
+      inline def setEmptyStateMessage(value: String): Self = StObject.set(x, "emptyStateMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmptyStateMessageUndefined: Self = StObject.set(x, "emptyStateMessage", js.undefined)
+      inline def setEmptyStateMessageUndefined: Self = StObject.set(x, "emptyStateMessage", js.undefined)
       
-      @scala.inline
-      def setEmptyStateStyle(value: CSSProperties): Self = StObject.set(x, "emptyStateStyle", value.asInstanceOf[js.Any])
+      inline def setEmptyStateStyle(value: CSSProperties): Self = StObject.set(x, "emptyStateStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmptyStateStyleUndefined: Self = StObject.set(x, "emptyStateStyle", js.undefined)
+      inline def setEmptyStateStyleUndefined: Self = StObject.set(x, "emptyStateStyle", js.undefined)
       
-      @scala.inline
-      def setFilterPredicate(value: (/* inputValue */ String, /* optionValue */ String) => Boolean): Self = StObject.set(x, "filterPredicate", js.Any.fromFunction2(value))
+      inline def setFilterPredicate(value: (/* inputValue */ String, /* optionValue */ String) => Boolean): Self = StObject.set(x, "filterPredicate", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFilterPredicateUndefined: Self = StObject.set(x, "filterPredicate", js.undefined)
+      inline def setFilterPredicateUndefined: Self = StObject.set(x, "filterPredicate", js.undefined)
       
-      @scala.inline
-      def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+      inline def setFixed(value: Boolean): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedFooter(value: ReactNode): Self = StObject.set(x, "fixedFooter", value.asInstanceOf[js.Any])
+      inline def setFixedFooter(value: ReactNode): Self = StObject.set(x, "fixedFooter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedFooterUndefined: Self = StObject.set(x, "fixedFooter", js.undefined)
+      inline def setFixedFooterUndefined: Self = StObject.set(x, "fixedFooter", js.undefined)
       
-      @scala.inline
-      def setFixedHeader(value: ReactNode): Self = StObject.set(x, "fixedHeader", value.asInstanceOf[js.Any])
+      inline def setFixedHeader(value: ReactNode): Self = StObject.set(x, "fixedHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixedHeaderUndefined: Self = StObject.set(x, "fixedHeader", js.undefined)
+      inline def setFixedHeaderUndefined: Self = StObject.set(x, "fixedHeader", js.undefined)
       
-      @scala.inline
-      def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
+      inline def setFixedUndefined: Self = StObject.set(x, "fixed", js.undefined)
       
-      @scala.inline
-      def setFlip(value: Boolean): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
+      inline def setFlip(value: Boolean): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlipUndefined: Self = StObject.set(x, "flip", js.undefined)
+      inline def setFlipUndefined: Self = StObject.set(x, "flip", js.undefined)
       
-      @scala.inline
-      def setForceContentElementVisibility(value: Boolean): Self = StObject.set(x, "forceContentElementVisibility", value.asInstanceOf[js.Any])
+      inline def setForceContentElementVisibility(value: Boolean): Self = StObject.set(x, "forceContentElementVisibility", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceContentElementVisibilityUndefined: Self = StObject.set(x, "forceContentElementVisibility", js.undefined)
+      inline def setForceContentElementVisibilityUndefined: Self = StObject.set(x, "forceContentElementVisibility", js.undefined)
       
-      @scala.inline
-      def setHighlightMatches(value: Boolean): Self = StObject.set(x, "highlightMatches", value.asInstanceOf[js.Any])
+      inline def setHighlightMatches(value: Boolean): Self = StObject.set(x, "highlightMatches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHighlightMatchesUndefined: Self = StObject.set(x, "highlightMatches", js.undefined)
+      inline def setHighlightMatchesUndefined: Self = StObject.set(x, "highlightMatches", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setInitialSelectedIds(value: js.Array[String | Double]): Self = StObject.set(x, "initialSelectedIds", value.asInstanceOf[js.Any])
+      inline def setInitialSelectedIds(value: js.Array[String | Double]): Self = StObject.set(x, "initialSelectedIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialSelectedIdsUndefined: Self = StObject.set(x, "initialSelectedIds", js.undefined)
+      inline def setInitialSelectedIdsUndefined: Self = StObject.set(x, "initialSelectedIds", js.undefined)
       
-      @scala.inline
-      def setInitialSelectedIdsVarargs(value: (String | Double)*): Self = StObject.set(x, "initialSelectedIds", js.Array(value :_*))
+      inline def setInitialSelectedIdsVarargs(value: (String | Double)*): Self = StObject.set(x, "initialSelectedIds", js.Array(value :_*))
       
-      @scala.inline
-      def setInputProps(value: InputProps): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
+      inline def setInputProps(value: InputProps): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
+      inline def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
       
-      @scala.inline
-      def setMoveBy(value: MoveBy): Self = StObject.set(x, "moveBy", value.asInstanceOf[js.Any])
+      inline def setMoveBy(value: MoveBy): Self = StObject.set(x, "moveBy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoveByUndefined: Self = StObject.set(x, "moveBy", js.undefined)
+      inline def setMoveByUndefined: Self = StObject.set(x, "moveBy", js.undefined)
       
-      @scala.inline
-      def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
+      inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
+      inline def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
       
-      @scala.inline
-      def setOnContentMouseDown(value: /* e */ MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContentMouseDown", js.Any.fromFunction1(value))
+      inline def setOnContentMouseDown(value: /* e */ MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "onContentMouseDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnContentMouseDownUndefined: Self = StObject.set(x, "onContentMouseDown", js.undefined)
+      inline def setOnContentMouseDownUndefined: Self = StObject.set(x, "onContentMouseDown", js.undefined)
       
-      @scala.inline
-      def setOnDeselect(value: /* option */ Option => Unit): Self = StObject.set(x, "onDeselect", js.Any.fromFunction1(value))
+      inline def setOnDeselect(value: /* option */ Option => Unit): Self = StObject.set(x, "onDeselect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDeselectUndefined: Self = StObject.set(x, "onDeselect", js.undefined)
+      inline def setOnDeselectUndefined: Self = StObject.set(x, "onDeselect", js.undefined)
       
-      @scala.inline
-      def setOnInitialSelectedOptionsSet(value: /* options */ js.Array[Option] => Unit): Self = StObject.set(x, "onInitialSelectedOptionsSet", js.Any.fromFunction1(value))
+      inline def setOnInitialSelectedOptionsSet(value: /* options */ js.Array[Option] => Unit): Self = StObject.set(x, "onInitialSelectedOptionsSet", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnInitialSelectedOptionsSetUndefined: Self = StObject.set(x, "onInitialSelectedOptionsSet", js.undefined)
+      inline def setOnInitialSelectedOptionsSetUndefined: Self = StObject.set(x, "onInitialSelectedOptionsSet", js.undefined)
       
-      @scala.inline
-      def setOnManualInput(value: /* value */ String => Unit): Self = StObject.set(x, "onManualInput", js.Any.fromFunction1(value))
+      inline def setOnManualInput(value: /* value */ String => Unit): Self = StObject.set(x, "onManualInput", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnManualInputUndefined: Self = StObject.set(x, "onManualInput", js.undefined)
+      inline def setOnManualInputUndefined: Self = StObject.set(x, "onManualInput", js.undefined)
       
-      @scala.inline
-      def setOnSelect(value: /* option */ Option => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+      inline def setOnSelect(value: /* option */ Option => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
+      inline def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
-      @scala.inline
-      def setOpenTrigger(
+      inline def setOpenTrigger(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OPEN_TRIGGER_TYPE */ js.Any
       ): Self = StObject.set(x, "openTrigger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenTriggerUndefined: Self = StObject.set(x, "openTrigger", js.undefined)
+      inline def setOpenTriggerUndefined: Self = StObject.set(x, "openTrigger", js.undefined)
       
-      @scala.inline
-      def setOptions(value: js.Array[Option]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Array[Option]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsContainerZIndex(value: Double): Self = StObject.set(x, "optionsContainerZIndex", value.asInstanceOf[js.Any])
+      inline def setOptionsContainerZIndex(value: Double): Self = StObject.set(x, "optionsContainerZIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsContainerZIndexUndefined: Self = StObject.set(x, "optionsContainerZIndex", js.undefined)
+      inline def setOptionsContainerZIndexUndefined: Self = StObject.set(x, "optionsContainerZIndex", js.undefined)
       
-      @scala.inline
-      def setOptionsVarargs(value: Option*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: Option*): Self = StObject.set(x, "options", js.Array(value :_*))
       
-      @scala.inline
-      def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+      inline def setPlacement(value: Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
+      inline def setPlacementUndefined: Self = StObject.set(x, "placement", js.undefined)
       
-      @scala.inline
-      def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -389,23 +325,18 @@ object srcComponentsInputWithOptionsInputWithOptionsMod {
   }
   object InputWithOptionsState {
     
-    @scala.inline
-    def apply(ariaExpanded: Boolean): InputWithOptionsState = {
+    inline def apply(ariaExpanded: Boolean): InputWithOptionsState = {
       val __obj = js.Dynamic.literal(ariaExpanded = ariaExpanded.asInstanceOf[js.Any], ariaActivedescendant = null)
       __obj.asInstanceOf[InputWithOptionsState]
     }
     
-    @scala.inline
-    implicit class InputWithOptionsStateMutableBuilder[Self <: InputWithOptionsState] (val x: Self) extends AnyVal {
+    extension [Self <: InputWithOptionsState](x: Self) {
       
-      @scala.inline
-      def setAriaActivedescendant(value: String): Self = StObject.set(x, "ariaActivedescendant", value.asInstanceOf[js.Any])
+      inline def setAriaActivedescendant(value: String): Self = StObject.set(x, "ariaActivedescendant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaActivedescendantNull: Self = StObject.set(x, "ariaActivedescendant", null)
+      inline def setAriaActivedescendantNull: Self = StObject.set(x, "ariaActivedescendant", null)
       
-      @scala.inline
-      def setAriaExpanded(value: Boolean): Self = StObject.set(x, "ariaExpanded", value.asInstanceOf[js.Any])
+      inline def setAriaExpanded(value: Boolean): Self = StObject.set(x, "ariaExpanded", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -62,6 +62,5 @@ class Ruin protected ()
 }
 object Ruin {
   
-  @scala.inline
-  def apply: RuinConstructor = js.Dynamic.global.selectDynamic("Ruin").asInstanceOf[RuinConstructor]
+  inline def apply: RuinConstructor = js.Dynamic.global.selectDynamic("Ruin").asInstanceOf[RuinConstructor]
 }

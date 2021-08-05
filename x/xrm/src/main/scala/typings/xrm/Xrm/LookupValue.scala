@@ -26,25 +26,19 @@ trait LookupValue extends StObject {
 }
 object LookupValue {
   
-  @scala.inline
-  def apply(entityType: String, id: String): LookupValue = {
+  inline def apply(entityType: String, id: String): LookupValue = {
     val __obj = js.Dynamic.literal(entityType = entityType.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[LookupValue]
   }
   
-  @scala.inline
-  implicit class LookupValueMutableBuilder[Self <: LookupValue] (val x: Self) extends AnyVal {
+  extension [Self <: LookupValue](x: Self) {
     
-    @scala.inline
-    def setEntityType(value: String): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
+    inline def setEntityType(value: String): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

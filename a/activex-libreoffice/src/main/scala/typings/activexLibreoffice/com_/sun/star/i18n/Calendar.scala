@@ -27,8 +27,7 @@ trait Calendar extends StObject {
 }
 object Calendar {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Days: SafeArray[CalendarItem],
     Default: Boolean,
     Eras: SafeArray[CalendarItem],
@@ -41,28 +40,20 @@ object Calendar {
     __obj.asInstanceOf[Calendar]
   }
   
-  @scala.inline
-  implicit class CalendarMutableBuilder[Self <: Calendar] (val x: Self) extends AnyVal {
+  extension [Self <: Calendar](x: Self) {
     
-    @scala.inline
-    def setDays(value: SafeArray[CalendarItem]): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
+    inline def setDays(value: SafeArray[CalendarItem]): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefault(value: Boolean): Self = StObject.set(x, "Default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: Boolean): Self = StObject.set(x, "Default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEras(value: SafeArray[CalendarItem]): Self = StObject.set(x, "Eras", value.asInstanceOf[js.Any])
+    inline def setEras(value: SafeArray[CalendarItem]): Self = StObject.set(x, "Eras", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumNumberOfDaysForFirstWeek(value: Double): Self = StObject.set(x, "MinimumNumberOfDaysForFirstWeek", value.asInstanceOf[js.Any])
+    inline def setMinimumNumberOfDaysForFirstWeek(value: Double): Self = StObject.set(x, "MinimumNumberOfDaysForFirstWeek", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonths(value: SafeArray[CalendarItem]): Self = StObject.set(x, "Months", value.asInstanceOf[js.Any])
+    inline def setMonths(value: SafeArray[CalendarItem]): Self = StObject.set(x, "Months", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartOfWeek(value: String): Self = StObject.set(x, "StartOfWeek", value.asInstanceOf[js.Any])
+    inline def setStartOfWeek(value: String): Self = StObject.set(x, "StartOfWeek", value.asInstanceOf[js.Any])
   }
 }

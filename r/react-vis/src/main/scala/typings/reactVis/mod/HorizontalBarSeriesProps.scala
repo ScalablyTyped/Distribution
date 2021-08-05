@@ -12,16 +12,13 @@ trait HorizontalBarSeriesProps
 }
 object HorizontalBarSeriesProps {
   
-  @scala.inline
-  def apply(barWidth: Double): HorizontalBarSeriesProps = {
+  inline def apply(barWidth: Double): HorizontalBarSeriesProps = {
     val __obj = js.Dynamic.literal(barWidth = barWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[HorizontalBarSeriesProps]
   }
   
-  @scala.inline
-  implicit class HorizontalBarSeriesPropsMutableBuilder[Self <: HorizontalBarSeriesProps] (val x: Self) extends AnyVal {
+  extension [Self <: HorizontalBarSeriesProps](x: Self) {
     
-    @scala.inline
-    def setBarWidth(value: Double): Self = StObject.set(x, "barWidth", value.asInstanceOf[js.Any])
+    inline def setBarWidth(value: Double): Self = StObject.set(x, "barWidth", value.asInstanceOf[js.Any])
   }
 }

@@ -18,37 +18,27 @@ trait CardMenuStyle extends StObject {
 }
 object CardMenuStyle {
   
-  @scala.inline
-  def apply(): CardMenuStyle = {
+  inline def apply(): CardMenuStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CardMenuStyle]
   }
   
-  @scala.inline
-  implicit class CardMenuStyleMutableBuilder[Self <: CardMenuStyle] (val x: Self) extends AnyVal {
+  extension [Self <: CardMenuStyle](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setPosition(value: absolute | relative): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: absolute | relative): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+    inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
   }
 }

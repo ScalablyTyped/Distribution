@@ -30,8 +30,7 @@ trait Channel extends StObject {
 }
 object Channel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     channel: typings.vegaLite.channelMod.Channel,
     config: typings.vegaLite.srcConfigMod.Config[SignalRef],
     fieldDef: (typings.vegaLite.channeldefMod.FieldDef[String, js.Any]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]),
@@ -42,36 +41,26 @@ object Channel {
     __obj.asInstanceOf[Channel]
   }
   
-  @scala.inline
-  implicit class ChannelMutableBuilder[Self <: Channel] (val x: Self) extends AnyVal {
+  extension [Self <: Channel](x: Self) {
     
-    @scala.inline
-    def setChannel(value: typings.vegaLite.channelMod.Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: typings.vegaLite.channelMod.Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfig(value: typings.vegaLite.srcConfigMod.Config[SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: typings.vegaLite.srcConfigMod.Config[SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldDef(
+    inline def setFieldDef(
       value: (typings.vegaLite.channeldefMod.FieldDef[String, js.Any]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef])
     ): Self = StObject.set(x, "fieldDef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldDef2(value: SecondaryChannelDef[String]): Self = StObject.set(x, "fieldDef2", value.asInstanceOf[js.Any])
+    inline def setFieldDef2(value: SecondaryChannelDef[String]): Self = StObject.set(x, "fieldDef2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldDef2Undefined: Self = StObject.set(x, "fieldDef2", js.undefined)
+    inline def setFieldDef2Undefined: Self = StObject.set(x, "fieldDef2", js.undefined)
     
-    @scala.inline
-    def setIsMidPoint(value: Boolean): Self = StObject.set(x, "isMidPoint", value.asInstanceOf[js.Any])
+    inline def setIsMidPoint(value: Boolean): Self = StObject.set(x, "isMidPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMidPointUndefined: Self = StObject.set(x, "isMidPoint", js.undefined)
+    inline def setIsMidPointUndefined: Self = StObject.set(x, "isMidPoint", js.undefined)
     
-    @scala.inline
-    def setMarkDef(value: typings.vegaLite.srcMarkMod.MarkDef[Mark, SignalRef]): Self = StObject.set(x, "markDef", value.asInstanceOf[js.Any])
+    inline def setMarkDef(value: typings.vegaLite.srcMarkMod.MarkDef[Mark, SignalRef]): Self = StObject.set(x, "markDef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStack(value: StackProperties): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    inline def setStack(value: StackProperties): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
   }
 }

@@ -47,17 +47,14 @@ object anon {
   }
   object TypeofMissingRefError {
     
-    @scala.inline
-    def apply(message: (/* baseId */ String, /* ref */ String) => String): TypeofMissingRefError = {
+    inline def apply(message: (/* baseId */ String, /* ref */ String) => String): TypeofMissingRefError = {
       val __obj = js.Dynamic.literal(message = js.Any.fromFunction2(message))
       __obj.asInstanceOf[TypeofMissingRefError]
     }
     
-    @scala.inline
-    implicit class TypeofMissingRefErrorMutableBuilder[Self <: TypeofMissingRefError] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofMissingRefError](x: Self) {
       
-      @scala.inline
-      def setMessage(value: (/* baseId */ String, /* ref */ String) => String): Self = StObject.set(x, "message", js.Any.fromFunction2(value))
+      inline def setMessage(value: (/* baseId */ String, /* ref */ String) => String): Self = StObject.set(x, "message", js.Any.fromFunction2(value))
     }
   }
 }

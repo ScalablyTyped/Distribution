@@ -12,17 +12,14 @@ object anon {
   }
   object Framerate {
     
-    @scala.inline
-    def apply(framerate: Double): Framerate = {
+    inline def apply(framerate: Double): Framerate = {
       val __obj = js.Dynamic.literal(framerate = framerate.asInstanceOf[js.Any])
       __obj.asInstanceOf[Framerate]
     }
     
-    @scala.inline
-    implicit class FramerateMutableBuilder[Self <: Framerate] (val x: Self) extends AnyVal {
+    extension [Self <: Framerate](x: Self) {
       
-      @scala.inline
-      def setFramerate(value: Double): Self = StObject.set(x, "framerate", value.asInstanceOf[js.Any])
+      inline def setFramerate(value: Double): Self = StObject.set(x, "framerate", value.asInstanceOf[js.Any])
     }
   }
 }

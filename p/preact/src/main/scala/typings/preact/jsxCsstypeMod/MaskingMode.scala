@@ -15,12 +15,9 @@ trait MaskingMode
      with _MaskModeProperty
 object MaskingMode {
   
-  @scala.inline
-  def alpha: typings.preact.preactStrings.alpha = "alpha".asInstanceOf[typings.preact.preactStrings.alpha]
+  inline def alpha: typings.preact.preactStrings.alpha = "alpha".asInstanceOf[typings.preact.preactStrings.alpha]
   
-  @scala.inline
-  def luminance: typings.preact.preactStrings.luminance = "luminance".asInstanceOf[typings.preact.preactStrings.luminance]
+  inline def luminance: typings.preact.preactStrings.luminance = "luminance".asInstanceOf[typings.preact.preactStrings.luminance]
   
-  @scala.inline
-  def `match-source`: typings.preact.preactStrings.`match-source` = "match-source".asInstanceOf[typings.preact.preactStrings.`match-source`]
+  inline def `match-source`: typings.preact.preactStrings.`match-source` = "match-source".asInstanceOf[typings.preact.preactStrings.`match-source`]
 }

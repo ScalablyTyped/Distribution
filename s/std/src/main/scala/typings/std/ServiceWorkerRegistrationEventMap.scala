@@ -10,16 +10,13 @@ trait ServiceWorkerRegistrationEventMap extends StObject {
 }
 object ServiceWorkerRegistrationEventMap {
   
-  @scala.inline
-  def apply(updatefound: Event): ServiceWorkerRegistrationEventMap = {
+  inline def apply(updatefound: Event): ServiceWorkerRegistrationEventMap = {
     val __obj = js.Dynamic.literal(updatefound = updatefound.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServiceWorkerRegistrationEventMap]
   }
   
-  @scala.inline
-  implicit class ServiceWorkerRegistrationEventMapMutableBuilder[Self <: ServiceWorkerRegistrationEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: ServiceWorkerRegistrationEventMap](x: Self) {
     
-    @scala.inline
-    def setUpdatefound(value: Event): Self = StObject.set(x, "updatefound", value.asInstanceOf[js.Any])
+    inline def setUpdatefound(value: Event): Self = StObject.set(x, "updatefound", value.asInstanceOf[js.Any])
   }
 }

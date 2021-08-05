@@ -14,8 +14,7 @@ trait LookaroundAssertion
      with BranchNode
 object LookaroundAssertion {
   
-  @scala.inline
-  def LookaheadAssertion(
+  inline def LookaheadAssertion(
     alternatives: js.Array[Alternative],
     end: Double,
     negate: Boolean,
@@ -28,8 +27,7 @@ object LookaroundAssertion {
     __obj.asInstanceOf[typings.regexpp.astMod.LookaheadAssertion]
   }
   
-  @scala.inline
-  def LookbehindAssertion(
+  inline def LookbehindAssertion(
     alternatives: js.Array[Alternative],
     end: Double,
     negate: Boolean,

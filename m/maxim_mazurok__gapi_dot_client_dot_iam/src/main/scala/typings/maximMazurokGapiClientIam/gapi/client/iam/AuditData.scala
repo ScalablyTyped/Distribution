@@ -11,19 +11,15 @@ trait AuditData extends StObject {
 }
 object AuditData {
   
-  @scala.inline
-  def apply(): AuditData = {
+  inline def apply(): AuditData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuditData]
   }
   
-  @scala.inline
-  implicit class AuditDataMutableBuilder[Self <: AuditData] (val x: Self) extends AnyVal {
+  extension [Self <: AuditData](x: Self) {
     
-    @scala.inline
-    def setPolicyDelta(value: PolicyDelta): Self = StObject.set(x, "policyDelta", value.asInstanceOf[js.Any])
+    inline def setPolicyDelta(value: PolicyDelta): Self = StObject.set(x, "policyDelta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyDeltaUndefined: Self = StObject.set(x, "policyDelta", js.undefined)
+    inline def setPolicyDeltaUndefined: Self = StObject.set(x, "policyDelta", js.undefined)
   }
 }

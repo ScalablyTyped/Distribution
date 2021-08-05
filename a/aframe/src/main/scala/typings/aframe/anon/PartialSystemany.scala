@@ -28,55 +28,39 @@ trait PartialSystemany extends StObject {
 }
 object PartialSystemany {
   
-  @scala.inline
-  def apply(): PartialSystemany = {
+  inline def apply(): PartialSystemany = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialSystemany]
   }
   
-  @scala.inline
-  implicit class PartialSystemanyMutableBuilder[Self <: PartialSystemany] (val x: Self) extends AnyVal {
+  extension [Self <: PartialSystemany](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setEl(value: Entity[ObjectMap[Component[js.Any, System[js.Any]]]]): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+    inline def setEl(value: Entity[ObjectMap[Component[js.Any, System[js.Any]]]]): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElUndefined: Self = StObject.set(x, "el", js.undefined)
+    inline def setElUndefined: Self = StObject.set(x, "el", js.undefined)
     
-    @scala.inline
-    def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+    inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+    inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
-    @scala.inline
-    def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+    inline def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPauseUndefined: Self = StObject.set(x, "pause", js.undefined)
+    inline def setPauseUndefined: Self = StObject.set(x, "pause", js.undefined)
     
-    @scala.inline
-    def setPlay(value: () => Unit): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
+    inline def setPlay(value: () => Unit): Self = StObject.set(x, "play", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPlayUndefined: Self = StObject.set(x, "play", js.undefined)
+    inline def setPlayUndefined: Self = StObject.set(x, "play", js.undefined)
     
-    @scala.inline
-    def setSchema(value: Schema_[js.Any]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: Schema_[js.Any]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+    inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
-    @scala.inline
-    def setTick(value: (/* t */ Double, /* dt */ Double) => Unit): Self = StObject.set(x, "tick", js.Any.fromFunction2(value))
+    inline def setTick(value: (/* t */ Double, /* dt */ Double) => Unit): Self = StObject.set(x, "tick", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTickUndefined: Self = StObject.set(x, "tick", js.undefined)
+    inline def setTickUndefined: Self = StObject.set(x, "tick", js.undefined)
   }
 }

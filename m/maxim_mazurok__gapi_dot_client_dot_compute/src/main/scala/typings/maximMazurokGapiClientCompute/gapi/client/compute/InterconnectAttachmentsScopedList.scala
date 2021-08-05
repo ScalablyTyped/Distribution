@@ -15,28 +15,21 @@ trait InterconnectAttachmentsScopedList extends StObject {
 }
 object InterconnectAttachmentsScopedList {
   
-  @scala.inline
-  def apply(): InterconnectAttachmentsScopedList = {
+  inline def apply(): InterconnectAttachmentsScopedList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InterconnectAttachmentsScopedList]
   }
   
-  @scala.inline
-  implicit class InterconnectAttachmentsScopedListMutableBuilder[Self <: InterconnectAttachmentsScopedList] (val x: Self) extends AnyVal {
+  extension [Self <: InterconnectAttachmentsScopedList](x: Self) {
     
-    @scala.inline
-    def setInterconnectAttachments(value: js.Array[InterconnectAttachment]): Self = StObject.set(x, "interconnectAttachments", value.asInstanceOf[js.Any])
+    inline def setInterconnectAttachments(value: js.Array[InterconnectAttachment]): Self = StObject.set(x, "interconnectAttachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterconnectAttachmentsUndefined: Self = StObject.set(x, "interconnectAttachments", js.undefined)
+    inline def setInterconnectAttachmentsUndefined: Self = StObject.set(x, "interconnectAttachments", js.undefined)
     
-    @scala.inline
-    def setInterconnectAttachmentsVarargs(value: InterconnectAttachment*): Self = StObject.set(x, "interconnectAttachments", js.Array(value :_*))
+    inline def setInterconnectAttachmentsVarargs(value: InterconnectAttachment*): Self = StObject.set(x, "interconnectAttachments", js.Array(value :_*))
     
-    @scala.inline
-    def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: Code): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+    inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
   }
 }

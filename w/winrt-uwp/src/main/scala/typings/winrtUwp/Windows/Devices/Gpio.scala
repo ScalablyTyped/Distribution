@@ -253,17 +253,14 @@ object Gpio {
   }
   object GpioPinValueChangedEventArgs {
     
-    @scala.inline
-    def apply(edge: GpioPinEdge): GpioPinValueChangedEventArgs = {
+    inline def apply(edge: GpioPinEdge): GpioPinValueChangedEventArgs = {
       val __obj = js.Dynamic.literal(edge = edge.asInstanceOf[js.Any])
       __obj.asInstanceOf[GpioPinValueChangedEventArgs]
     }
     
-    @scala.inline
-    implicit class GpioPinValueChangedEventArgsMutableBuilder[Self <: GpioPinValueChangedEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GpioPinValueChangedEventArgs](x: Self) {
       
-      @scala.inline
-      def setEdge(value: GpioPinEdge): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
+      inline def setEdge(value: GpioPinEdge): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
     }
   }
   
@@ -276,17 +273,14 @@ object Gpio {
     }
     object GpioPinProviderValueChangedEventArgs {
       
-      @scala.inline
-      def apply(edge: js.Any): GpioPinProviderValueChangedEventArgs = {
+      inline def apply(edge: js.Any): GpioPinProviderValueChangedEventArgs = {
         val __obj = js.Dynamic.literal(edge = edge.asInstanceOf[js.Any])
         __obj.asInstanceOf[GpioPinProviderValueChangedEventArgs]
       }
       
-      @scala.inline
-      implicit class GpioPinProviderValueChangedEventArgsMutableBuilder[Self <: GpioPinProviderValueChangedEventArgs] (val x: Self) extends AnyVal {
+      extension [Self <: GpioPinProviderValueChangedEventArgs](x: Self) {
         
-        @scala.inline
-        def setEdge(value: js.Any): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
+        inline def setEdge(value: js.Any): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
       }
     }
     
@@ -297,17 +291,14 @@ object Gpio {
     }
     object IGpioProvider {
       
-      @scala.inline
-      def apply(getControllers: js.Any): IGpioProvider = {
+      inline def apply(getControllers: js.Any): IGpioProvider = {
         val __obj = js.Dynamic.literal(getControllers = getControllers.asInstanceOf[js.Any])
         __obj.asInstanceOf[IGpioProvider]
       }
       
-      @scala.inline
-      implicit class IGpioProviderMutableBuilder[Self <: IGpioProvider] (val x: Self) extends AnyVal {
+      extension [Self <: IGpioProvider](x: Self) {
         
-        @scala.inline
-        def setGetControllers(value: js.Any): Self = StObject.set(x, "getControllers", value.asInstanceOf[js.Any])
+        inline def setGetControllers(value: js.Any): Self = StObject.set(x, "getControllers", value.asInstanceOf[js.Any])
       }
     }
   }

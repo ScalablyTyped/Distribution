@@ -13,19 +13,15 @@ trait JobExecutionProperty extends StObject {
 }
 object JobExecutionProperty {
   
-  @scala.inline
-  def apply(): JobExecutionProperty = {
+  inline def apply(): JobExecutionProperty = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobExecutionProperty]
   }
   
-  @scala.inline
-  implicit class JobExecutionPropertyMutableBuilder[Self <: JobExecutionProperty] (val x: Self) extends AnyVal {
+  extension [Self <: JobExecutionProperty](x: Self) {
     
-    @scala.inline
-    def setMaxConcurrentRuns(value: Double): Self = StObject.set(x, "maxConcurrentRuns", value.asInstanceOf[js.Any])
+    inline def setMaxConcurrentRuns(value: Double): Self = StObject.set(x, "maxConcurrentRuns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxConcurrentRunsUndefined: Self = StObject.set(x, "maxConcurrentRuns", js.undefined)
+    inline def setMaxConcurrentRunsUndefined: Self = StObject.set(x, "maxConcurrentRuns", js.undefined)
   }
 }

@@ -14,22 +14,17 @@ trait EsSpecCompliant extends StObject {
 }
 object EsSpecCompliant {
   
-  @scala.inline
-  def apply(esSpecCompliant: Boolean, multiline: String, singleline: String): EsSpecCompliant = {
+  inline def apply(esSpecCompliant: Boolean, multiline: String, singleline: String): EsSpecCompliant = {
     val __obj = js.Dynamic.literal(esSpecCompliant = esSpecCompliant.asInstanceOf[js.Any], multiline = multiline.asInstanceOf[js.Any], singleline = singleline.asInstanceOf[js.Any])
     __obj.asInstanceOf[EsSpecCompliant]
   }
   
-  @scala.inline
-  implicit class EsSpecCompliantMutableBuilder[Self <: EsSpecCompliant] (val x: Self) extends AnyVal {
+  extension [Self <: EsSpecCompliant](x: Self) {
     
-    @scala.inline
-    def setEsSpecCompliant(value: Boolean): Self = StObject.set(x, "esSpecCompliant", value.asInstanceOf[js.Any])
+    inline def setEsSpecCompliant(value: Boolean): Self = StObject.set(x, "esSpecCompliant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiline(value: String): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
+    inline def setMultiline(value: String): Self = StObject.set(x, "multiline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingleline(value: String): Self = StObject.set(x, "singleline", value.asInstanceOf[js.Any])
+    inline def setSingleline(value: String): Self = StObject.set(x, "singleline", value.asInstanceOf[js.Any])
   }
 }

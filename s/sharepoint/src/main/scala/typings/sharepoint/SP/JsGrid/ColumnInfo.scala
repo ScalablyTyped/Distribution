@@ -85,8 +85,7 @@ trait ColumnInfo extends StObject {
 }
 object ColumnInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ColumnType: () => String,
     bOpenMenuOnContentClick: Boolean,
     columnKey: String,
@@ -114,76 +113,52 @@ object ColumnInfo {
     __obj.asInstanceOf[ColumnInfo]
   }
   
-  @scala.inline
-  implicit class ColumnInfoMutableBuilder[Self <: ColumnInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnInfo](x: Self) {
     
-    @scala.inline
-    def setBOpenMenuOnContentClick(value: Boolean): Self = StObject.set(x, "bOpenMenuOnContentClick", value.asInstanceOf[js.Any])
+    inline def setBOpenMenuOnContentClick(value: Boolean): Self = StObject.set(x, "bOpenMenuOnContentClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
+    inline def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnType(value: () => String): Self = StObject.set(x, "ColumnType", js.Any.fromFunction0(value))
+    inline def setColumnType(value: () => String): Self = StObject.set(x, "ColumnType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFieldKeys(value: js.Array[String]): Self = StObject.set(x, "fieldKeys", value.asInstanceOf[js.Any])
+    inline def setFieldKeys(value: js.Array[String]): Self = StObject.set(x, "fieldKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldKeysVarargs(value: String*): Self = StObject.set(x, "fieldKeys", js.Array(value :_*))
+    inline def setFieldKeysVarargs(value: String*): Self = StObject.set(x, "fieldKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setFnGetCellEditMode(value: (IRecord, String) => EditMode): Self = StObject.set(x, "fnGetCellEditMode", js.Any.fromFunction2(value))
+    inline def setFnGetCellEditMode(value: (IRecord, String) => EditMode): Self = StObject.set(x, "fnGetCellEditMode", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFnGetCellStyleId(value: (IRecord, String, js.Any) => String): Self = StObject.set(x, "fnGetCellStyleId", js.Any.fromFunction3(value))
+    inline def setFnGetCellStyleId(value: (IRecord, String, js.Any) => String): Self = StObject.set(x, "fnGetCellStyleId", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setFnGetDisplayControlName(value: (IRecord, String) => String): Self = StObject.set(x, "fnGetDisplayControlName", js.Any.fromFunction2(value))
+    inline def setFnGetDisplayControlName(value: (IRecord, String) => String): Self = StObject.set(x, "fnGetDisplayControlName", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFnGetEditControlName(value: (IRecord, String) => String): Self = StObject.set(x, "fnGetEditControlName", js.Any.fromFunction2(value))
+    inline def setFnGetEditControlName(value: (IRecord, String) => String): Self = StObject.set(x, "fnGetEditControlName", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFnGetSingleValueTooltip(value: (IRecord, String, js.Any, js.Any) => String): Self = StObject.set(x, "fnGetSingleValueTooltip", js.Any.fromFunction4(value))
+    inline def setFnGetSingleValueTooltip(value: (IRecord, String, js.Any, js.Any) => String): Self = StObject.set(x, "fnGetSingleValueTooltip", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setFnGetWidgetControlNames(value: (IRecord, String) => js.Array[String]): Self = StObject.set(x, "fnGetWidgetControlNames", js.Any.fromFunction2(value))
+    inline def setFnGetWidgetControlNames(value: (IRecord, String) => js.Array[String]): Self = StObject.set(x, "fnGetWidgetControlNames", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFnShouldLinkSingleValue(value: (IRecord, String, js.Any, js.Any) => Boolean): Self = StObject.set(x, "fnShouldLinkSingleValue", js.Any.fromFunction4(value))
+    inline def setFnShouldLinkSingleValue(value: (IRecord, String, js.Any, js.Any) => Boolean): Self = StObject.set(x, "fnShouldLinkSingleValue", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setFnSingleValueClicked(value: (IRecord, String, js.Any, js.Any) => Unit): Self = StObject.set(x, "fnSingleValueClicked", js.Any.fromFunction4(value))
+    inline def setFnSingleValueClicked(value: (IRecord, String, js.Any, js.Any) => Unit): Self = StObject.set(x, "fnSingleValueClicked", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setImgRawSrc(value: String): Self = StObject.set(x, "imgRawSrc", value.asInstanceOf[js.Any])
+    inline def setImgRawSrc(value: String): Self = StObject.set(x, "imgRawSrc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImgSrc(value: String): Self = StObject.set(x, "imgSrc", value.asInstanceOf[js.Any])
+    inline def setImgSrc(value: String): Self = StObject.set(x, "imgSrc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAutoFilterable(value: Boolean): Self = StObject.set(x, "isAutoFilterable", value.asInstanceOf[js.Any])
+    inline def setIsAutoFilterable(value: Boolean): Self = StObject.set(x, "isAutoFilterable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFooter(value: Boolean): Self = StObject.set(x, "isFooter", value.asInstanceOf[js.Any])
+    inline def setIsFooter(value: Boolean): Self = StObject.set(x, "isFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsHidable(value: Boolean): Self = StObject.set(x, "isHidable", value.asInstanceOf[js.Any])
+    inline def setIsHidable(value: Boolean): Self = StObject.set(x, "isHidable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsResizable(value: Boolean): Self = StObject.set(x, "isResizable", value.asInstanceOf[js.Any])
+    inline def setIsResizable(value: Boolean): Self = StObject.set(x, "isResizable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSortable(value: Boolean): Self = StObject.set(x, "isSortable", value.asInstanceOf[js.Any])
+    inline def setIsSortable(value: Boolean): Self = StObject.set(x, "isSortable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
+    inline def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

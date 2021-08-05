@@ -18,16 +18,13 @@ trait CapitalizeEachWordTextCaseCommand
 }
 object CapitalizeEachWordTextCaseCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): CapitalizeEachWordTextCaseCommand = {
+  inline def apply(execute: () => Boolean, getState: () => SimpleCommandState): CapitalizeEachWordTextCaseCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[CapitalizeEachWordTextCaseCommand]
   }
   
-  @scala.inline
-  implicit class CapitalizeEachWordTextCaseCommandMutableBuilder[Self <: CapitalizeEachWordTextCaseCommand] (val x: Self) extends AnyVal {
+  extension [Self <: CapitalizeEachWordTextCaseCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

@@ -23,31 +23,23 @@ trait DeleteSecurityGroupRequest extends StObject {
 }
 object DeleteSecurityGroupRequest {
   
-  @scala.inline
-  def apply(): DeleteSecurityGroupRequest = {
+  inline def apply(): DeleteSecurityGroupRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteSecurityGroupRequest]
   }
   
-  @scala.inline
-  implicit class DeleteSecurityGroupRequestMutableBuilder[Self <: DeleteSecurityGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSecurityGroupRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setGroupId(value: SecurityGroupId): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: SecurityGroupId): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupIdUndefined: Self = StObject.set(x, "GroupId", js.undefined)
+    inline def setGroupIdUndefined: Self = StObject.set(x, "GroupId", js.undefined)
     
-    @scala.inline
-    def setGroupName(value: SecurityGroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: SecurityGroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
+    inline def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
   }
 }

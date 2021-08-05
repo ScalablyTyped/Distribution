@@ -53,8 +53,7 @@ trait StartReplicationTaskAssessmentRunMessage extends StObject {
 }
 object StartReplicationTaskAssessmentRunMessage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AssessmentRunName: String,
     ReplicationTaskArn: String,
     ResultLocationBucket: String,
@@ -64,55 +63,38 @@ object StartReplicationTaskAssessmentRunMessage {
     __obj.asInstanceOf[StartReplicationTaskAssessmentRunMessage]
   }
   
-  @scala.inline
-  implicit class StartReplicationTaskAssessmentRunMessageMutableBuilder[Self <: StartReplicationTaskAssessmentRunMessage] (val x: Self) extends AnyVal {
+  extension [Self <: StartReplicationTaskAssessmentRunMessage](x: Self) {
     
-    @scala.inline
-    def setAssessmentRunName(value: String): Self = StObject.set(x, "AssessmentRunName", value.asInstanceOf[js.Any])
+    inline def setAssessmentRunName(value: String): Self = StObject.set(x, "AssessmentRunName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclude(value: ExcludeTestList): Self = StObject.set(x, "Exclude", value.asInstanceOf[js.Any])
+    inline def setExclude(value: ExcludeTestList): Self = StObject.set(x, "Exclude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeUndefined: Self = StObject.set(x, "Exclude", js.undefined)
+    inline def setExcludeUndefined: Self = StObject.set(x, "Exclude", js.undefined)
     
-    @scala.inline
-    def setExcludeVarargs(value: String*): Self = StObject.set(x, "Exclude", js.Array(value :_*))
+    inline def setExcludeVarargs(value: String*): Self = StObject.set(x, "Exclude", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludeOnly(value: IncludeTestList): Self = StObject.set(x, "IncludeOnly", value.asInstanceOf[js.Any])
+    inline def setIncludeOnly(value: IncludeTestList): Self = StObject.set(x, "IncludeOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeOnlyUndefined: Self = StObject.set(x, "IncludeOnly", js.undefined)
+    inline def setIncludeOnlyUndefined: Self = StObject.set(x, "IncludeOnly", js.undefined)
     
-    @scala.inline
-    def setIncludeOnlyVarargs(value: String*): Self = StObject.set(x, "IncludeOnly", js.Array(value :_*))
+    inline def setIncludeOnlyVarargs(value: String*): Self = StObject.set(x, "IncludeOnly", js.Array(value :_*))
     
-    @scala.inline
-    def setReplicationTaskArn(value: String): Self = StObject.set(x, "ReplicationTaskArn", value.asInstanceOf[js.Any])
+    inline def setReplicationTaskArn(value: String): Self = StObject.set(x, "ReplicationTaskArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultEncryptionMode(value: String): Self = StObject.set(x, "ResultEncryptionMode", value.asInstanceOf[js.Any])
+    inline def setResultEncryptionMode(value: String): Self = StObject.set(x, "ResultEncryptionMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultEncryptionModeUndefined: Self = StObject.set(x, "ResultEncryptionMode", js.undefined)
+    inline def setResultEncryptionModeUndefined: Self = StObject.set(x, "ResultEncryptionMode", js.undefined)
     
-    @scala.inline
-    def setResultKmsKeyArn(value: String): Self = StObject.set(x, "ResultKmsKeyArn", value.asInstanceOf[js.Any])
+    inline def setResultKmsKeyArn(value: String): Self = StObject.set(x, "ResultKmsKeyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultKmsKeyArnUndefined: Self = StObject.set(x, "ResultKmsKeyArn", js.undefined)
+    inline def setResultKmsKeyArnUndefined: Self = StObject.set(x, "ResultKmsKeyArn", js.undefined)
     
-    @scala.inline
-    def setResultLocationBucket(value: String): Self = StObject.set(x, "ResultLocationBucket", value.asInstanceOf[js.Any])
+    inline def setResultLocationBucket(value: String): Self = StObject.set(x, "ResultLocationBucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultLocationFolder(value: String): Self = StObject.set(x, "ResultLocationFolder", value.asInstanceOf[js.Any])
+    inline def setResultLocationFolder(value: String): Self = StObject.set(x, "ResultLocationFolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultLocationFolderUndefined: Self = StObject.set(x, "ResultLocationFolder", js.undefined)
+    inline def setResultLocationFolderUndefined: Self = StObject.set(x, "ResultLocationFolder", js.undefined)
     
-    @scala.inline
-    def setServiceAccessRoleArn(value: String): Self = StObject.set(x, "ServiceAccessRoleArn", value.asInstanceOf[js.Any])
+    inline def setServiceAccessRoleArn(value: String): Self = StObject.set(x, "ServiceAccessRoleArn", value.asInstanceOf[js.Any])
   }
 }

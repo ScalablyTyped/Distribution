@@ -18,25 +18,19 @@ trait FilterRule extends StObject {
 }
 object FilterRule {
   
-  @scala.inline
-  def apply(): FilterRule = {
+  inline def apply(): FilterRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FilterRule]
   }
   
-  @scala.inline
-  implicit class FilterRuleMutableBuilder[Self <: FilterRule] (val x: Self) extends AnyVal {
+  extension [Self <: FilterRule](x: Self) {
     
-    @scala.inline
-    def setFilterType(value: FilterType): Self = StObject.set(x, "FilterType", value.asInstanceOf[js.Any])
+    inline def setFilterType(value: FilterType): Self = StObject.set(x, "FilterType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterTypeUndefined: Self = StObject.set(x, "FilterType", js.undefined)
+    inline def setFilterTypeUndefined: Self = StObject.set(x, "FilterType", js.undefined)
     
-    @scala.inline
-    def setValue(value: FilterValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: FilterValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

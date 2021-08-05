@@ -18,19 +18,15 @@ trait SchemaMoveFolderRequest extends StObject {
 }
 object SchemaMoveFolderRequest {
   
-  @scala.inline
-  def apply(): SchemaMoveFolderRequest = {
+  inline def apply(): SchemaMoveFolderRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMoveFolderRequest]
   }
   
-  @scala.inline
-  implicit class SchemaMoveFolderRequestMutableBuilder[Self <: SchemaMoveFolderRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMoveFolderRequest](x: Self) {
     
-    @scala.inline
-    def setDestinationParent(value: String): Self = StObject.set(x, "destinationParent", value.asInstanceOf[js.Any])
+    inline def setDestinationParent(value: String): Self = StObject.set(x, "destinationParent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationParentUndefined: Self = StObject.set(x, "destinationParent", js.undefined)
+    inline def setDestinationParentUndefined: Self = StObject.set(x, "destinationParent", js.undefined)
   }
 }

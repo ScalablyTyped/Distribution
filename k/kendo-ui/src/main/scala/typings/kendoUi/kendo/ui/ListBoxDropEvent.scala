@@ -14,25 +14,19 @@ trait ListBoxDropEvent
 }
 object ListBoxDropEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: ListBox): ListBoxDropEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: ListBox): ListBoxDropEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListBoxDropEvent]
   }
   
-  @scala.inline
-  implicit class ListBoxDropEventMutableBuilder[Self <: ListBoxDropEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ListBoxDropEvent](x: Self) {
     
-    @scala.inline
-    def setDataItems(value: js.Any): Self = StObject.set(x, "dataItems", value.asInstanceOf[js.Any])
+    inline def setDataItems(value: js.Any): Self = StObject.set(x, "dataItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataItemsUndefined: Self = StObject.set(x, "dataItems", js.undefined)
+    inline def setDataItemsUndefined: Self = StObject.set(x, "dataItems", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
   }
 }

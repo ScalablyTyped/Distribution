@@ -19,8 +19,7 @@ trait OpticalImageStabilizationControl extends StObject {
 }
 object OpticalImageStabilizationControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     mode: OpticalImageStabilizationMode,
     supported: Boolean,
     supportedModes: IVectorView[OpticalImageStabilizationMode]
@@ -29,16 +28,12 @@ object OpticalImageStabilizationControl {
     __obj.asInstanceOf[OpticalImageStabilizationControl]
   }
   
-  @scala.inline
-  implicit class OpticalImageStabilizationControlMutableBuilder[Self <: OpticalImageStabilizationControl] (val x: Self) extends AnyVal {
+  extension [Self <: OpticalImageStabilizationControl](x: Self) {
     
-    @scala.inline
-    def setMode(value: OpticalImageStabilizationMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: OpticalImageStabilizationMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
+    inline def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedModes(value: IVectorView[OpticalImageStabilizationMode]): Self = StObject.set(x, "supportedModes", value.asInstanceOf[js.Any])
+    inline def setSupportedModes(value: IVectorView[OpticalImageStabilizationMode]): Self = StObject.set(x, "supportedModes", value.asInstanceOf[js.Any])
   }
 }

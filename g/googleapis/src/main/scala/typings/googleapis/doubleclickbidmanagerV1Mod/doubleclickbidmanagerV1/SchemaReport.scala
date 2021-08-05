@@ -26,31 +26,23 @@ trait SchemaReport extends StObject {
 }
 object SchemaReport {
   
-  @scala.inline
-  def apply(): SchemaReport = {
+  inline def apply(): SchemaReport = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaReport]
   }
   
-  @scala.inline
-  implicit class SchemaReportMutableBuilder[Self <: SchemaReport] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaReport](x: Self) {
     
-    @scala.inline
-    def setKey(value: SchemaReportKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: SchemaReportKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: SchemaReportMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: SchemaReportMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setParams(value: SchemaParameters): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: SchemaParameters): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
   }
 }

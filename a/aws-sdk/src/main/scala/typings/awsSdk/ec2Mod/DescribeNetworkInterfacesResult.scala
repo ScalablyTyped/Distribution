@@ -18,28 +18,21 @@ trait DescribeNetworkInterfacesResult extends StObject {
 }
 object DescribeNetworkInterfacesResult {
   
-  @scala.inline
-  def apply(): DescribeNetworkInterfacesResult = {
+  inline def apply(): DescribeNetworkInterfacesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeNetworkInterfacesResult]
   }
   
-  @scala.inline
-  implicit class DescribeNetworkInterfacesResultMutableBuilder[Self <: DescribeNetworkInterfacesResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeNetworkInterfacesResult](x: Self) {
     
-    @scala.inline
-    def setNetworkInterfaces(value: NetworkInterfaceList): Self = StObject.set(x, "NetworkInterfaces", value.asInstanceOf[js.Any])
+    inline def setNetworkInterfaces(value: NetworkInterfaceList): Self = StObject.set(x, "NetworkInterfaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkInterfacesUndefined: Self = StObject.set(x, "NetworkInterfaces", js.undefined)
+    inline def setNetworkInterfacesUndefined: Self = StObject.set(x, "NetworkInterfaces", js.undefined)
     
-    @scala.inline
-    def setNetworkInterfacesVarargs(value: NetworkInterface*): Self = StObject.set(x, "NetworkInterfaces", js.Array(value :_*))
+    inline def setNetworkInterfacesVarargs(value: NetworkInterface*): Self = StObject.set(x, "NetworkInterfaces", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

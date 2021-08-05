@@ -23,22 +23,17 @@ trait LightboxOptions extends StObject {
 }
 object LightboxOptions {
   
-  @scala.inline
-  def apply(height: Double, resizable: Boolean, width: Double): LightboxOptions = {
+  inline def apply(height: Double, resizable: Boolean, width: Double): LightboxOptions = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], resizable = resizable.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[LightboxOptions]
   }
   
-  @scala.inline
-  implicit class LightboxOptionsMutableBuilder[Self <: LightboxOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LightboxOptions](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
+    inline def setResizable(value: Boolean): Self = StObject.set(x, "resizable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

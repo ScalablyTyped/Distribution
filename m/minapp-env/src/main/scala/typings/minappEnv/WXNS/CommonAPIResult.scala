@@ -10,16 +10,13 @@ trait CommonAPIResult extends StObject {
 }
 object CommonAPIResult {
   
-  @scala.inline
-  def apply(errMsg: String): CommonAPIResult = {
+  inline def apply(errMsg: String): CommonAPIResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommonAPIResult]
   }
   
-  @scala.inline
-  implicit class CommonAPIResultMutableBuilder[Self <: CommonAPIResult] (val x: Self) extends AnyVal {
+  extension [Self <: CommonAPIResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

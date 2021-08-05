@@ -37,8 +37,7 @@ trait ContinuousAxisChannelDef[MD /* <: GenericCompositeMarkDef[M] & (ErrorBarDe
 }
 object ContinuousAxisChannelDef {
   
-  @scala.inline
-  def apply[MD /* <: GenericCompositeMarkDef[M] & (ErrorBarDef | ErrorBandDef) */, M /* <: ErrorBar | ErrorBand */](
+  inline def apply[MD /* <: GenericCompositeMarkDef[M] & (ErrorBarDef | ErrorBandDef) */, M /* <: ErrorBar | ErrorBand */](
     continuousAxis: x | y,
     continuousAxisChannelDef: PositionFieldDef[String],
     encodingWithoutContinuousAxis: ErrorEncoding[String],
@@ -53,40 +52,28 @@ object ContinuousAxisChannelDef {
     __obj.asInstanceOf[ContinuousAxisChannelDef[MD, M]]
   }
   
-  @scala.inline
-  implicit class ContinuousAxisChannelDefMutableBuilder[Self <: ContinuousAxisChannelDef[?, ?], MD /* <: GenericCompositeMarkDef[M] & (ErrorBarDef | ErrorBandDef) */, M /* <: ErrorBar | ErrorBand */] (val x: Self & (ContinuousAxisChannelDef[MD, M])) extends AnyVal {
+  extension [Self <: ContinuousAxisChannelDef[?, ?], MD /* <: GenericCompositeMarkDef[M] & (ErrorBarDef | ErrorBandDef) */, M /* <: ErrorBar | ErrorBand */](x: Self & (ContinuousAxisChannelDef[MD, M])) {
     
-    @scala.inline
-    def setContinuousAxis(value: typings.vegaLite.vegaLiteStrings.x | y): Self = StObject.set(x, "continuousAxis", value.asInstanceOf[js.Any])
+    inline def setContinuousAxis(value: typings.vegaLite.vegaLiteStrings.x | y): Self = StObject.set(x, "continuousAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinuousAxisChannelDef(value: PositionFieldDef[String]): Self = StObject.set(x, "continuousAxisChannelDef", value.asInstanceOf[js.Any])
+    inline def setContinuousAxisChannelDef(value: PositionFieldDef[String]): Self = StObject.set(x, "continuousAxisChannelDef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingWithoutContinuousAxis(value: ErrorEncoding[String]): Self = StObject.set(x, "encodingWithoutContinuousAxis", value.asInstanceOf[js.Any])
+    inline def setEncodingWithoutContinuousAxis(value: ErrorEncoding[String]): Self = StObject.set(x, "encodingWithoutContinuousAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupby(value: js.Array[String]): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
+    inline def setGroupby(value: js.Array[String]): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupbyVarargs(value: String*): Self = StObject.set(x, "groupby", js.Array(value :_*))
+    inline def setGroupbyVarargs(value: String*): Self = StObject.set(x, "groupby", js.Array(value :_*))
     
-    @scala.inline
-    def setMarkDef(value: MD): Self = StObject.set(x, "markDef", value.asInstanceOf[js.Any])
+    inline def setMarkDef(value: MD): Self = StObject.set(x, "markDef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOuterSpec(value: Height): Self = StObject.set(x, "outerSpec", value.asInstanceOf[js.Any])
+    inline def setOuterSpec(value: Height): Self = StObject.set(x, "outerSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTicksOrient(value: Orientation): Self = StObject.set(x, "ticksOrient", value.asInstanceOf[js.Any])
+    inline def setTicksOrient(value: Orientation): Self = StObject.set(x, "ticksOrient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipEncoding(value: ErrorEncoding[String]): Self = StObject.set(x, "tooltipEncoding", value.asInstanceOf[js.Any])
+    inline def setTooltipEncoding(value: ErrorEncoding[String]): Self = StObject.set(x, "tooltipEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransform(value: js.Array[Transform]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    inline def setTransform(value: js.Array[Transform]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformVarargs(value: Transform*): Self = StObject.set(x, "transform", js.Array(value :_*))
+    inline def setTransformVarargs(value: Transform*): Self = StObject.set(x, "transform", js.Array(value :_*))
   }
 }

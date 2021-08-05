@@ -14,22 +14,17 @@ trait ReturnTypeGetOuterHTMLResponse extends StObject {
 }
 object ReturnTypeGetOuterHTMLResponse {
   
-  @scala.inline
-  def apply(paramsType: js.Array[js.UndefOr[GetOuterHTMLRequest]], returnType: GetOuterHTMLResponse): ReturnTypeGetOuterHTMLResponse = {
+  inline def apply(paramsType: js.Array[js.UndefOr[GetOuterHTMLRequest]], returnType: GetOuterHTMLResponse): ReturnTypeGetOuterHTMLResponse = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnTypeGetOuterHTMLResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeGetOuterHTMLResponseMutableBuilder[Self <: ReturnTypeGetOuterHTMLResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeGetOuterHTMLResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[js.UndefOr[GetOuterHTMLRequest]]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[js.UndefOr[GetOuterHTMLRequest]]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: js.UndefOr[GetOuterHTMLRequest]*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: js.UndefOr[GetOuterHTMLRequest]*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: GetOuterHTMLResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: GetOuterHTMLResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

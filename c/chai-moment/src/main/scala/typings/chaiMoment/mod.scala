@@ -71,26 +71,19 @@ object mod extends Shortcut {
       trait Granularity extends StObject
       object Granularity {
         
-        @scala.inline
-        def day: typings.chaiMoment.chaiMomentStrings.day = "day".asInstanceOf[typings.chaiMoment.chaiMomentStrings.day]
+        inline def day: typings.chaiMoment.chaiMomentStrings.day = "day".asInstanceOf[typings.chaiMoment.chaiMomentStrings.day]
         
-        @scala.inline
-        def hour: typings.chaiMoment.chaiMomentStrings.hour = "hour".asInstanceOf[typings.chaiMoment.chaiMomentStrings.hour]
+        inline def hour: typings.chaiMoment.chaiMomentStrings.hour = "hour".asInstanceOf[typings.chaiMoment.chaiMomentStrings.hour]
         
-        @scala.inline
-        def minute: typings.chaiMoment.chaiMomentStrings.minute = "minute".asInstanceOf[typings.chaiMoment.chaiMomentStrings.minute]
+        inline def minute: typings.chaiMoment.chaiMomentStrings.minute = "minute".asInstanceOf[typings.chaiMoment.chaiMomentStrings.minute]
         
-        @scala.inline
-        def month: typings.chaiMoment.chaiMomentStrings.month = "month".asInstanceOf[typings.chaiMoment.chaiMomentStrings.month]
+        inline def month: typings.chaiMoment.chaiMomentStrings.month = "month".asInstanceOf[typings.chaiMoment.chaiMomentStrings.month]
         
-        @scala.inline
-        def second: typings.chaiMoment.chaiMomentStrings.second = "second".asInstanceOf[typings.chaiMoment.chaiMomentStrings.second]
+        inline def second: typings.chaiMoment.chaiMomentStrings.second = "second".asInstanceOf[typings.chaiMoment.chaiMomentStrings.second]
         
-        @scala.inline
-        def week: typings.chaiMoment.chaiMomentStrings.week = "week".asInstanceOf[typings.chaiMoment.chaiMomentStrings.week]
+        inline def week: typings.chaiMoment.chaiMomentStrings.week = "week".asInstanceOf[typings.chaiMoment.chaiMomentStrings.week]
         
-        @scala.inline
-        def year: typings.chaiMoment.chaiMomentStrings.year = "year".asInstanceOf[typings.chaiMoment.chaiMomentStrings.year]
+        inline def year: typings.chaiMoment.chaiMomentStrings.year = "year".asInstanceOf[typings.chaiMoment.chaiMomentStrings.year]
       }
     }
   }

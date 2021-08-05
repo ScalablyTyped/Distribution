@@ -12,8 +12,7 @@ object normaliseContentBrowserMod {
     * @param {import('./normalise-input').ToContent} input
     * @returns {Promise<Blob>}
     */
-  @scala.inline
-  def apply(input: ToContent): js.Promise[Blob] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Blob]]
+  inline def apply(input: ToContent): js.Promise[Blob] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Blob]]
   
   @JSImport("ipfs-core-utils/dist/src/files/normalise-input/normalise-content.browser", JSImport.Namespace)
   @js.native

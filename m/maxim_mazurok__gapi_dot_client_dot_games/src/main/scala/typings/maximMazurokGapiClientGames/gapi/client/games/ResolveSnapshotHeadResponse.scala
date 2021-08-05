@@ -11,19 +11,15 @@ trait ResolveSnapshotHeadResponse extends StObject {
 }
 object ResolveSnapshotHeadResponse {
   
-  @scala.inline
-  def apply(): ResolveSnapshotHeadResponse = {
+  inline def apply(): ResolveSnapshotHeadResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResolveSnapshotHeadResponse]
   }
   
-  @scala.inline
-  implicit class ResolveSnapshotHeadResponseMutableBuilder[Self <: ResolveSnapshotHeadResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ResolveSnapshotHeadResponse](x: Self) {
     
-    @scala.inline
-    def setSnapshot(value: SnapshotExtended): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
+    inline def setSnapshot(value: SnapshotExtended): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotUndefined: Self = StObject.set(x, "snapshot", js.undefined)
+    inline def setSnapshotUndefined: Self = StObject.set(x, "snapshot", js.undefined)
   }
 }

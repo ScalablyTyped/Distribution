@@ -12,19 +12,15 @@ trait Background extends StObject {
 }
 object Background {
   
-  @scala.inline
-  def apply(background: String, textDecorationSkip: String): Background = {
+  inline def apply(background: String, textDecorationSkip: String): Background = {
     val __obj = js.Dynamic.literal(background = background.asInstanceOf[js.Any], textDecorationSkip = textDecorationSkip.asInstanceOf[js.Any])
     __obj.asInstanceOf[Background]
   }
   
-  @scala.inline
-  implicit class BackgroundMutableBuilder[Self <: Background] (val x: Self) extends AnyVal {
+  extension [Self <: Background](x: Self) {
     
-    @scala.inline
-    def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextDecorationSkip(value: String): Self = StObject.set(x, "textDecorationSkip", value.asInstanceOf[js.Any])
+    inline def setTextDecorationSkip(value: String): Self = StObject.set(x, "textDecorationSkip", value.asInstanceOf[js.Any])
   }
 }

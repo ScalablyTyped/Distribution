@@ -46,64 +46,45 @@ trait DataSource extends StObject {
 }
 object DataSource {
   
-  @scala.inline
-  def apply(): DataSource = {
+  inline def apply(): DataSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSource]
   }
   
-  @scala.inline
-  implicit class DataSourceMutableBuilder[Self <: DataSource] (val x: Self) extends AnyVal {
+  extension [Self <: DataSource](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
+    inline def setApplicationUndefined: Self = StObject.set(x, "application", js.undefined)
     
-    @scala.inline
-    def setDataQualityStandard(value: js.Array[String]): Self = StObject.set(x, "dataQualityStandard", value.asInstanceOf[js.Any])
+    inline def setDataQualityStandard(value: js.Array[String]): Self = StObject.set(x, "dataQualityStandard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataQualityStandardUndefined: Self = StObject.set(x, "dataQualityStandard", js.undefined)
+    inline def setDataQualityStandardUndefined: Self = StObject.set(x, "dataQualityStandard", js.undefined)
     
-    @scala.inline
-    def setDataQualityStandardVarargs(value: String*): Self = StObject.set(x, "dataQualityStandard", js.Array(value :_*))
+    inline def setDataQualityStandardVarargs(value: String*): Self = StObject.set(x, "dataQualityStandard", js.Array(value :_*))
     
-    @scala.inline
-    def setDataStreamId(value: String): Self = StObject.set(x, "dataStreamId", value.asInstanceOf[js.Any])
+    inline def setDataStreamId(value: String): Self = StObject.set(x, "dataStreamId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataStreamIdUndefined: Self = StObject.set(x, "dataStreamId", js.undefined)
+    inline def setDataStreamIdUndefined: Self = StObject.set(x, "dataStreamId", js.undefined)
     
-    @scala.inline
-    def setDataStreamName(value: String): Self = StObject.set(x, "dataStreamName", value.asInstanceOf[js.Any])
+    inline def setDataStreamName(value: String): Self = StObject.set(x, "dataStreamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataStreamNameUndefined: Self = StObject.set(x, "dataStreamName", js.undefined)
+    inline def setDataStreamNameUndefined: Self = StObject.set(x, "dataStreamName", js.undefined)
     
-    @scala.inline
-    def setDataType(value: DataType): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
+    inline def setDataType(value: DataType): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
+    inline def setDataTypeUndefined: Self = StObject.set(x, "dataType", js.undefined)
     
-    @scala.inline
-    def setDevice(value: Device): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: Device): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
+    inline def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

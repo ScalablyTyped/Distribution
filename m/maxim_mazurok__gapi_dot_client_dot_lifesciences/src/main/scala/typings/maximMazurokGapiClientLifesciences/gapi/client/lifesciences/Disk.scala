@@ -27,37 +27,27 @@ trait Disk extends StObject {
 }
 object Disk {
   
-  @scala.inline
-  def apply(): Disk = {
+  inline def apply(): Disk = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Disk]
   }
   
-  @scala.inline
-  implicit class DiskMutableBuilder[Self <: Disk] (val x: Self) extends AnyVal {
+  extension [Self <: Disk](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSizeGb(value: Double): Self = StObject.set(x, "sizeGb", value.asInstanceOf[js.Any])
+    inline def setSizeGb(value: Double): Self = StObject.set(x, "sizeGb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeGbUndefined: Self = StObject.set(x, "sizeGb", js.undefined)
+    inline def setSizeGbUndefined: Self = StObject.set(x, "sizeGb", js.undefined)
     
-    @scala.inline
-    def setSourceImage(value: String): Self = StObject.set(x, "sourceImage", value.asInstanceOf[js.Any])
+    inline def setSourceImage(value: String): Self = StObject.set(x, "sourceImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceImageUndefined: Self = StObject.set(x, "sourceImage", js.undefined)
+    inline def setSourceImageUndefined: Self = StObject.set(x, "sourceImage", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -13,20 +13,15 @@ object windowsCodeSignMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def doSign(configuration: CustomWindowsSignTaskConfiguration, packager: WinPackager): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("doSign")(configuration.asInstanceOf[js.Any], packager.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def doSign(configuration: CustomWindowsSignTaskConfiguration, packager: WinPackager): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("doSign")(configuration.asInstanceOf[js.Any], packager.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @scala.inline
-  def getCertInfo(file: String, password: String): js.Promise[CertificateInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCertInfo")(file.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CertificateInfo]]
+  inline def getCertInfo(file: String, password: String): js.Promise[CertificateInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCertInfo")(file.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CertificateInfo]]
   
-  @scala.inline
-  def getCertificateFromStoreInfo(options: WindowsConfiguration, vm: VmManager): js.Promise[CertificateFromStoreInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCertificateFromStoreInfo")(options.asInstanceOf[js.Any], vm.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CertificateFromStoreInfo]]
+  inline def getCertificateFromStoreInfo(options: WindowsConfiguration, vm: VmManager): js.Promise[CertificateFromStoreInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCertificateFromStoreInfo")(options.asInstanceOf[js.Any], vm.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CertificateFromStoreInfo]]
   
-  @scala.inline
-  def getSignVendorPath(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSignVendorPath")().asInstanceOf[js.Promise[String]]
+  inline def getSignVendorPath(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSignVendorPath")().asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def sign(options: WindowsSignOptions, packager: WinPackager): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(options.asInstanceOf[js.Any], packager.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def sign(options: WindowsSignOptions, packager: WinPackager): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(options.asInstanceOf[js.Any], packager.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   trait CertificateFromStoreInfo extends StObject {
     
@@ -40,26 +35,20 @@ object windowsCodeSignMod {
   }
   object CertificateFromStoreInfo {
     
-    @scala.inline
-    def apply(isLocalMachineStore: Boolean, store: String, subject: String, thumbprint: String): CertificateFromStoreInfo = {
+    inline def apply(isLocalMachineStore: Boolean, store: String, subject: String, thumbprint: String): CertificateFromStoreInfo = {
       val __obj = js.Dynamic.literal(isLocalMachineStore = isLocalMachineStore.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], thumbprint = thumbprint.asInstanceOf[js.Any])
       __obj.asInstanceOf[CertificateFromStoreInfo]
     }
     
-    @scala.inline
-    implicit class CertificateFromStoreInfoMutableBuilder[Self <: CertificateFromStoreInfo] (val x: Self) extends AnyVal {
+    extension [Self <: CertificateFromStoreInfo](x: Self) {
       
-      @scala.inline
-      def setIsLocalMachineStore(value: Boolean): Self = StObject.set(x, "isLocalMachineStore", value.asInstanceOf[js.Any])
+      inline def setIsLocalMachineStore(value: Boolean): Self = StObject.set(x, "isLocalMachineStore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStore(value: String): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      inline def setStore(value: String): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+      inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbprint(value: String): Self = StObject.set(x, "thumbprint", value.asInstanceOf[js.Any])
+      inline def setThumbprint(value: String): Self = StObject.set(x, "thumbprint", value.asInstanceOf[js.Any])
     }
   }
   
@@ -71,20 +60,16 @@ object windowsCodeSignMod {
   }
   object CertificateInfo {
     
-    @scala.inline
-    def apply(bloodyMicrosoftSubjectDn: String, commonName: String): CertificateInfo = {
+    inline def apply(bloodyMicrosoftSubjectDn: String, commonName: String): CertificateInfo = {
       val __obj = js.Dynamic.literal(bloodyMicrosoftSubjectDn = bloodyMicrosoftSubjectDn.asInstanceOf[js.Any], commonName = commonName.asInstanceOf[js.Any])
       __obj.asInstanceOf[CertificateInfo]
     }
     
-    @scala.inline
-    implicit class CertificateInfoMutableBuilder[Self <: CertificateInfo] (val x: Self) extends AnyVal {
+    extension [Self <: CertificateInfo](x: Self) {
       
-      @scala.inline
-      def setBloodyMicrosoftSubjectDn(value: String): Self = StObject.set(x, "bloodyMicrosoftSubjectDn", value.asInstanceOf[js.Any])
+      inline def setBloodyMicrosoftSubjectDn(value: String): Self = StObject.set(x, "bloodyMicrosoftSubjectDn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
+      inline def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
     }
   }
   
@@ -102,8 +87,7 @@ object windowsCodeSignMod {
   }
   object CustomWindowsSignTaskConfiguration {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       computeSignToolArgs: Boolean => js.Array[String],
       hash: String,
       isNest: Boolean,
@@ -114,11 +98,9 @@ object windowsCodeSignMod {
       __obj.asInstanceOf[CustomWindowsSignTaskConfiguration]
     }
     
-    @scala.inline
-    implicit class CustomWindowsSignTaskConfigurationMutableBuilder[Self <: CustomWindowsSignTaskConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: CustomWindowsSignTaskConfiguration](x: Self) {
       
-      @scala.inline
-      def setComputeSignToolArgs(value: Boolean => js.Array[String]): Self = StObject.set(x, "computeSignToolArgs", js.Any.fromFunction1(value))
+      inline def setComputeSignToolArgs(value: Boolean => js.Array[String]): Self = StObject.set(x, "computeSignToolArgs", js.Any.fromFunction1(value))
     }
   }
   
@@ -130,23 +112,18 @@ object windowsCodeSignMod {
   }
   object FileCodeSigningInfo {
     
-    @scala.inline
-    def apply(file: String): FileCodeSigningInfo = {
+    inline def apply(file: String): FileCodeSigningInfo = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], password = null)
       __obj.asInstanceOf[FileCodeSigningInfo]
     }
     
-    @scala.inline
-    implicit class FileCodeSigningInfoMutableBuilder[Self <: FileCodeSigningInfo] (val x: Self) extends AnyVal {
+    extension [Self <: FileCodeSigningInfo](x: Self) {
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordNull: Self = StObject.set(x, "password", null)
+      inline def setPasswordNull: Self = StObject.set(x, "password", null)
     }
   }
   
@@ -164,47 +141,34 @@ object windowsCodeSignMod {
   }
   object WindowsSignOptions {
     
-    @scala.inline
-    def apply(options: WindowsConfiguration, path: String): WindowsSignOptions = {
+    inline def apply(options: WindowsConfiguration, path: String): WindowsSignOptions = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[WindowsSignOptions]
     }
     
-    @scala.inline
-    implicit class WindowsSignOptionsMutableBuilder[Self <: WindowsSignOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WindowsSignOptions](x: Self) {
       
-      @scala.inline
-      def setCscInfo(value: FileCodeSigningInfo | CertificateFromStoreInfo): Self = StObject.set(x, "cscInfo", value.asInstanceOf[js.Any])
+      inline def setCscInfo(value: FileCodeSigningInfo | CertificateFromStoreInfo): Self = StObject.set(x, "cscInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCscInfoNull: Self = StObject.set(x, "cscInfo", null)
+      inline def setCscInfoNull: Self = StObject.set(x, "cscInfo", null)
       
-      @scala.inline
-      def setCscInfoUndefined: Self = StObject.set(x, "cscInfo", js.undefined)
+      inline def setCscInfoUndefined: Self = StObject.set(x, "cscInfo", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameNull: Self = StObject.set(x, "name", null)
+      inline def setNameNull: Self = StObject.set(x, "name", null)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOptions(value: WindowsConfiguration): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: WindowsConfiguration): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSite(value: String): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
+      inline def setSite(value: String): Self = StObject.set(x, "site", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSiteNull: Self = StObject.set(x, "site", null)
+      inline def setSiteNull: Self = StObject.set(x, "site", null)
       
-      @scala.inline
-      def setSiteUndefined: Self = StObject.set(x, "site", js.undefined)
+      inline def setSiteUndefined: Self = StObject.set(x, "site", js.undefined)
     }
   }
   
@@ -220,26 +184,20 @@ object windowsCodeSignMod {
   }
   object WindowsSignTaskConfiguration {
     
-    @scala.inline
-    def apply(hash: String, isNest: Boolean, options: WindowsConfiguration, path: String): WindowsSignTaskConfiguration = {
+    inline def apply(hash: String, isNest: Boolean, options: WindowsConfiguration, path: String): WindowsSignTaskConfiguration = {
       val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], isNest = isNest.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[WindowsSignTaskConfiguration]
     }
     
-    @scala.inline
-    implicit class WindowsSignTaskConfigurationMutableBuilder[Self <: WindowsSignTaskConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: WindowsSignTaskConfiguration](x: Self) {
       
-      @scala.inline
-      def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsNest(value: Boolean): Self = StObject.set(x, "isNest", value.asInstanceOf[js.Any])
+      inline def setIsNest(value: Boolean): Self = StObject.set(x, "isNest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultOutputPath(value: String): Self = StObject.set(x, "resultOutputPath", value.asInstanceOf[js.Any])
+      inline def setResultOutputPath(value: String): Self = StObject.set(x, "resultOutputPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultOutputPathUndefined: Self = StObject.set(x, "resultOutputPath", js.undefined)
+      inline def setResultOutputPathUndefined: Self = StObject.set(x, "resultOutputPath", js.undefined)
     }
   }
 }

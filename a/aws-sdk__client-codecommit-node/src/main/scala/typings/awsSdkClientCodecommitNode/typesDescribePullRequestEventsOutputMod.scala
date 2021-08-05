@@ -31,29 +31,22 @@ object typesDescribePullRequestEventsOutputMod {
   }
   object DescribePullRequestEventsOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, pullRequestEvents: js.Array[UnmarshalledPullRequestEvent]): DescribePullRequestEventsOutput = {
+    inline def apply($metadata: ResponseMetadata, pullRequestEvents: js.Array[UnmarshalledPullRequestEvent]): DescribePullRequestEventsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], pullRequestEvents = pullRequestEvents.asInstanceOf[js.Any])
       __obj.asInstanceOf[DescribePullRequestEventsOutput]
     }
     
-    @scala.inline
-    implicit class DescribePullRequestEventsOutputMutableBuilder[Self <: DescribePullRequestEventsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: DescribePullRequestEventsOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
       
-      @scala.inline
-      def setPullRequestEvents(value: js.Array[UnmarshalledPullRequestEvent]): Self = StObject.set(x, "pullRequestEvents", value.asInstanceOf[js.Any])
+      inline def setPullRequestEvents(value: js.Array[UnmarshalledPullRequestEvent]): Self = StObject.set(x, "pullRequestEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPullRequestEventsVarargs(value: UnmarshalledPullRequestEvent*): Self = StObject.set(x, "pullRequestEvents", js.Array(value :_*))
+      inline def setPullRequestEventsVarargs(value: UnmarshalledPullRequestEvent*): Self = StObject.set(x, "pullRequestEvents", js.Array(value :_*))
     }
   }
 }

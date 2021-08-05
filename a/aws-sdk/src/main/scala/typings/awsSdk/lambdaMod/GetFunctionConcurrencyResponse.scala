@@ -13,19 +13,15 @@ trait GetFunctionConcurrencyResponse extends StObject {
 }
 object GetFunctionConcurrencyResponse {
   
-  @scala.inline
-  def apply(): GetFunctionConcurrencyResponse = {
+  inline def apply(): GetFunctionConcurrencyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetFunctionConcurrencyResponse]
   }
   
-  @scala.inline
-  implicit class GetFunctionConcurrencyResponseMutableBuilder[Self <: GetFunctionConcurrencyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetFunctionConcurrencyResponse](x: Self) {
     
-    @scala.inline
-    def setReservedConcurrentExecutions(value: ReservedConcurrentExecutions): Self = StObject.set(x, "ReservedConcurrentExecutions", value.asInstanceOf[js.Any])
+    inline def setReservedConcurrentExecutions(value: ReservedConcurrentExecutions): Self = StObject.set(x, "ReservedConcurrentExecutions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedConcurrentExecutionsUndefined: Self = StObject.set(x, "ReservedConcurrentExecutions", js.undefined)
+    inline def setReservedConcurrentExecutionsUndefined: Self = StObject.set(x, "ReservedConcurrentExecutions", js.undefined)
   }
 }

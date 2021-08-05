@@ -36,8 +36,7 @@ trait XCustomShapeEngine
 }
 object XCustomShapeEngine {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Interaction: SafeArray[XCustomShapeHandle],
     LineGeometry: PolyPolygonBezierCoords,
     TextBounds: Rectangle,
@@ -53,28 +52,20 @@ object XCustomShapeEngine {
     __obj.asInstanceOf[XCustomShapeEngine]
   }
   
-  @scala.inline
-  implicit class XCustomShapeEngineMutableBuilder[Self <: XCustomShapeEngine] (val x: Self) extends AnyVal {
+  extension [Self <: XCustomShapeEngine](x: Self) {
     
-    @scala.inline
-    def setGetInteraction(value: () => SafeArray[XCustomShapeHandle]): Self = StObject.set(x, "getInteraction", js.Any.fromFunction0(value))
+    inline def setGetInteraction(value: () => SafeArray[XCustomShapeHandle]): Self = StObject.set(x, "getInteraction", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLineGeometry(value: () => PolyPolygonBezierCoords): Self = StObject.set(x, "getLineGeometry", js.Any.fromFunction0(value))
+    inline def setGetLineGeometry(value: () => PolyPolygonBezierCoords): Self = StObject.set(x, "getLineGeometry", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTextBounds(value: () => Rectangle): Self = StObject.set(x, "getTextBounds", js.Any.fromFunction0(value))
+    inline def setGetTextBounds(value: () => Rectangle): Self = StObject.set(x, "getTextBounds", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInteraction(value: SafeArray[XCustomShapeHandle]): Self = StObject.set(x, "Interaction", value.asInstanceOf[js.Any])
+    inline def setInteraction(value: SafeArray[XCustomShapeHandle]): Self = StObject.set(x, "Interaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineGeometry(value: PolyPolygonBezierCoords): Self = StObject.set(x, "LineGeometry", value.asInstanceOf[js.Any])
+    inline def setLineGeometry(value: PolyPolygonBezierCoords): Self = StObject.set(x, "LineGeometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRender(value: () => XShape): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
+    inline def setRender(value: () => XShape): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTextBounds(value: Rectangle): Self = StObject.set(x, "TextBounds", value.asInstanceOf[js.Any])
+    inline def setTextBounds(value: Rectangle): Self = StObject.set(x, "TextBounds", value.asInstanceOf[js.Any])
   }
 }

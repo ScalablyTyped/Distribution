@@ -22,9 +22,7 @@ object AnalyticsQuery {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def metrics(appId: String, config: QueryConfig): AnalyticsQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("metrics")(appId.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[AnalyticsQuery]
+  inline def metrics(appId: String, config: QueryConfig): AnalyticsQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("metrics")(appId.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[AnalyticsQuery]
   
-  @scala.inline
-  def sources(appId: String, config: QueryConfig): AnalyticsQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("sources")(appId.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[AnalyticsQuery]
+  inline def sources(appId: String, config: QueryConfig): AnalyticsQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("sources")(appId.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[AnalyticsQuery]
 }

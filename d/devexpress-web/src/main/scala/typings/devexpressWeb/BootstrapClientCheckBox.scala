@@ -51,8 +51,7 @@ trait BootstrapClientCheckBox
 }
 object BootstrapClientCheckBox {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     CheckedChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[BootstrapClientCheckBox]],
     Focus: () => Unit,
@@ -99,28 +98,20 @@ object BootstrapClientCheckBox {
     __obj.asInstanceOf[BootstrapClientCheckBox]
   }
   
-  @scala.inline
-  implicit class BootstrapClientCheckBoxMutableBuilder[Self <: BootstrapClientCheckBox] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapClientCheckBox](x: Self) {
     
-    @scala.inline
-    def setCheckedChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[BootstrapClientCheckBox]]): Self = StObject.set(x, "CheckedChanged", value.asInstanceOf[js.Any])
+    inline def setCheckedChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[BootstrapClientCheckBox]]): Self = StObject.set(x, "CheckedChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCheckState(value: () => String): Self = StObject.set(x, "GetCheckState", js.Any.fromFunction0(value))
+    inline def setGetCheckState(value: () => String): Self = StObject.set(x, "GetCheckState", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetChecked(value: () => Boolean): Self = StObject.set(x, "GetChecked", js.Any.fromFunction0(value))
+    inline def setGetChecked(value: () => Boolean): Self = StObject.set(x, "GetChecked", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetText(value: () => String): Self = StObject.set(x, "GetText", js.Any.fromFunction0(value))
+    inline def setGetText(value: () => String): Self = StObject.set(x, "GetText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetCheckState(value: String => Unit): Self = StObject.set(x, "SetCheckState", js.Any.fromFunction1(value))
+    inline def setSetCheckState(value: String => Unit): Self = StObject.set(x, "SetCheckState", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetChecked(value: Boolean => Unit): Self = StObject.set(x, "SetChecked", js.Any.fromFunction1(value))
+    inline def setSetChecked(value: Boolean => Unit): Self = StObject.set(x, "SetChecked", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetText(value: String => Unit): Self = StObject.set(x, "SetText", js.Any.fromFunction1(value))
+    inline def setSetText(value: String => Unit): Self = StObject.set(x, "SetText", js.Any.fromFunction1(value))
   }
 }

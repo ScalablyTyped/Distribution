@@ -101,73 +101,52 @@ object WaitMe {
   }
   object WaitMeOptions {
     
-    @scala.inline
-    def apply(): WaitMeOptions = {
+    inline def apply(): WaitMeOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WaitMeOptions]
     }
     
-    @scala.inline
-    implicit class WaitMeOptionsMutableBuilder[Self <: WaitMeOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WaitMeOptions](x: Self) {
       
-      @scala.inline
-      def setBg(value: String): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
+      inline def setBg(value: String): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgUndefined: Self = StObject.set(x, "bg", js.undefined)
+      inline def setBgUndefined: Self = StObject.set(x, "bg", js.undefined)
       
-      @scala.inline
-      def setColor(value: String | js.Array[String]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String | js.Array[String]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setColorVarargs(value: String*): Self = StObject.set(x, "color", js.Array(value :_*))
+      inline def setColorVarargs(value: String*): Self = StObject.set(x, "color", js.Array(value :_*))
       
-      @scala.inline
-      def setEffect(
+      inline def setEffect(
         value: none | bounce | rotateplane | stretch | orbit | roundBounce | win8 | win8_linear | ios | facebook | rotation | timer | pulse | progressBar | bouncePulse | img
       ): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
+      inline def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
       
-      @scala.inline
-      def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+      inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
-      @scala.inline
-      def setMaxSize(value: Double | String): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+      inline def setMaxSize(value: Double | String): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
+      inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
       
-      @scala.inline
-      def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+      inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextPos(value: vertical | horizontal): Self = StObject.set(x, "textPos", value.asInstanceOf[js.Any])
+      inline def setTextPos(value: vertical | horizontal): Self = StObject.set(x, "textPos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextPosUndefined: Self = StObject.set(x, "textPos", js.undefined)
+      inline def setTextPosUndefined: Self = StObject.set(x, "textPos", js.undefined)
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     }
   }
   

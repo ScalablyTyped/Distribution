@@ -26,8 +26,7 @@ trait PixelBlockAddDataPlaneData
 }
 object PixelBlockAddDataPlaneData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     pixels: js.Array[js.Array[Double]],
@@ -38,19 +37,14 @@ object PixelBlockAddDataPlaneData {
     __obj.asInstanceOf[PixelBlockAddDataPlaneData]
   }
   
-  @scala.inline
-  implicit class PixelBlockAddDataPlaneDataMutableBuilder[Self <: PixelBlockAddDataPlaneData] (val x: Self) extends AnyVal {
+  extension [Self <: PixelBlockAddDataPlaneData](x: Self) {
     
-    @scala.inline
-    def setPixels(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "pixels", value.asInstanceOf[js.Any])
+    inline def setPixels(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "pixels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "pixels", js.Array(value :_*))
+    inline def setPixelsVarargs(value: js.Array[Double]*): Self = StObject.set(x, "pixels", js.Array(value :_*))
     
-    @scala.inline
-    def setStatistics(value: js.Array[js.Any]): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
+    inline def setStatistics(value: js.Array[js.Any]): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatisticsVarargs(value: js.Any*): Self = StObject.set(x, "statistics", js.Array(value :_*))
+    inline def setStatisticsVarargs(value: js.Any*): Self = StObject.set(x, "statistics", js.Array(value :_*))
   }
 }

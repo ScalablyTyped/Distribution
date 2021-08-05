@@ -13,19 +13,15 @@ trait GitConfigForUpdate extends StObject {
 }
 object GitConfigForUpdate {
   
-  @scala.inline
-  def apply(): GitConfigForUpdate = {
+  inline def apply(): GitConfigForUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GitConfigForUpdate]
   }
   
-  @scala.inline
-  implicit class GitConfigForUpdateMutableBuilder[Self <: GitConfigForUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: GitConfigForUpdate](x: Self) {
     
-    @scala.inline
-    def setSecretArn(value: SecretArn): Self = StObject.set(x, "SecretArn", value.asInstanceOf[js.Any])
+    inline def setSecretArn(value: SecretArn): Self = StObject.set(x, "SecretArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretArnUndefined: Self = StObject.set(x, "SecretArn", js.undefined)
+    inline def setSecretArnUndefined: Self = StObject.set(x, "SecretArn", js.undefined)
   }
 }

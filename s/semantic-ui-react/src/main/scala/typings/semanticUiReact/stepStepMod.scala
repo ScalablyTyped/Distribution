@@ -58,8 +58,7 @@ object stepStepMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object StepProps {
     
-    @scala.inline
-    def apply(): StepProps = {
+    inline def apply(): StepProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StepProps]
     }
@@ -123,113 +122,80 @@ object stepStepMod extends Shortcut {
   }
   object StrictStepProps {
     
-    @scala.inline
-    def apply(): StrictStepProps = {
+    inline def apply(): StrictStepProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictStepProps]
     }
     
-    @scala.inline
-    implicit class StrictStepPropsMutableBuilder[Self <: StrictStepProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictStepProps](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCompleted(value: Boolean): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
+      inline def setCompleted(value: Boolean): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompletedUndefined: Self = StObject.set(x, "completed", js.undefined)
+      inline def setCompletedUndefined: Self = StObject.set(x, "completed", js.undefined)
       
-      @scala.inline
-      def setContent(value: SemanticShorthandContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: SemanticShorthandContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setDescription(value: SemanticShorthandItem[StepDescriptionProps]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: SemanticShorthandItem[StepDescriptionProps]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionFunction3(
+      inline def setDescriptionFunction3(
         value: (/* component */ ElementType[StepDescriptionProps], StepDescriptionProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "description", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+      inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
       
-      @scala.inline
-      def setIcon(value: SemanticShorthandItem[IconProps]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: SemanticShorthandItem[IconProps]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconFunction3(
+      inline def setIconFunction3(
         value: (/* component */ ElementType[IconProps], IconProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "icon", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setLink(value: Boolean): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      inline def setLink(value: Boolean): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+      inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: (/* event */ MouseEvent[HTMLAnchorElement, NativeMouseEvent], /* data */ StepProps) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
+      inline def setOnClick(value: (/* event */ MouseEvent[HTMLAnchorElement, NativeMouseEvent], /* data */ StepProps) => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOrdered(value: Boolean): Self = StObject.set(x, "ordered", value.asInstanceOf[js.Any])
+      inline def setOrdered(value: Boolean): Self = StObject.set(x, "ordered", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderedUndefined: Self = StObject.set(x, "ordered", js.undefined)
+      inline def setOrderedUndefined: Self = StObject.set(x, "ordered", js.undefined)
       
-      @scala.inline
-      def setTitle(value: SemanticShorthandItem[StepTitleProps]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: SemanticShorthandItem[StepTitleProps]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleFunction3(
+      inline def setTitleFunction3(
         value: (/* component */ ElementType[StepTitleProps], StepTitleProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "title", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   

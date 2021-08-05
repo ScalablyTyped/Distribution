@@ -56,8 +56,7 @@ trait TagUniDriverisCloseButton extends StObject {
 }
 object TagUniDriverisCloseButton {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: () => js.Promise[Unit],
     element: () => js.Promise[js.Any],
     exists: () => js.Promise[Boolean],
@@ -84,70 +83,48 @@ object TagUniDriverisCloseButton {
     __obj.asInstanceOf[TagUniDriverisCloseButton]
   }
   
-  @scala.inline
-  implicit class TagUniDriverisCloseButtonMutableBuilder[Self <: TagUniDriverisCloseButton] (val x: Self) extends AnyVal {
+  extension [Self <: TagUniDriverisCloseButton](x: Self) {
     
-    @scala.inline
-    def setClick(value: () => js.Promise[Unit]): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
+    inline def setClick(value: () => js.Promise[Unit]): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setElement(value: () => js.Promise[js.Any]): Self = StObject.set(x, "element", js.Any.fromFunction0(value))
+    inline def setElement(value: () => js.Promise[js.Any]): Self = StObject.set(x, "element", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
+    inline def setExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLabel(value: () => js.Promise[String]): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
+    inline def setGetLabel(value: () => js.Promise[String]): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTextSize(value: () => TextSize): Self = StObject.set(x, "getTextSize", js.Any.fromFunction0(value))
+    inline def setGetTextSize(value: () => TextSize): Self = StObject.set(x, "getTextSize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTextWeight(value: () => TextWeight): Self = StObject.set(x, "getTextWeight", js.Any.fromFunction0(value))
+    inline def setGetTextWeight(value: () => TextWeight): Self = StObject.set(x, "getTextWeight", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsClickable(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isClickable", js.Any.fromFunction0(value))
+    inline def setIsClickable(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isClickable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsCloseButtonLarge(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isCloseButtonLarge", js.Any.fromFunction0(value))
+    inline def setIsCloseButtonLarge(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isCloseButtonLarge", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsCloseButtonSmall(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isCloseButtonSmall", js.Any.fromFunction0(value))
+    inline def setIsCloseButtonSmall(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isCloseButtonSmall", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsDarkTheme(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDarkTheme", js.Any.fromFunction0(value))
+    inline def setIsDarkTheme(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDarkTheme", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
+    inline def setIsDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsErrorTheme(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isErrorTheme", js.Any.fromFunction0(value))
+    inline def setIsErrorTheme(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isErrorTheme", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsLarge(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isLarge", js.Any.fromFunction0(value))
+    inline def setIsLarge(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isLarge", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsMedium(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isMedium", js.Any.fromFunction0(value))
+    inline def setIsMedium(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isMedium", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsRemovable(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isRemovable", js.Any.fromFunction0(value))
+    inline def setIsRemovable(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isRemovable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsSmall(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isSmall", js.Any.fromFunction0(value))
+    inline def setIsSmall(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isSmall", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsStandardTheme(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isStandardTheme", js.Any.fromFunction0(value))
+    inline def setIsStandardTheme(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isStandardTheme", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsThumbExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isThumbExists", js.Any.fromFunction0(value))
+    inline def setIsThumbExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isThumbExists", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsTiny(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isTiny", js.Any.fromFunction0(value))
+    inline def setIsTiny(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isTiny", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsWarningTheme(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isWarningTheme", js.Any.fromFunction0(value))
+    inline def setIsWarningTheme(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isWarningTheme", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveTag(value: () => js.Promise[Unit]): Self = StObject.set(x, "removeTag", js.Any.fromFunction0(value))
+    inline def setRemoveTag(value: () => js.Promise[Unit]): Self = StObject.set(x, "removeTag", js.Any.fromFunction0(value))
   }
 }

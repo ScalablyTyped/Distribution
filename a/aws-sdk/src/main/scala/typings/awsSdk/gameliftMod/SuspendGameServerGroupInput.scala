@@ -18,22 +18,17 @@ trait SuspendGameServerGroupInput extends StObject {
 }
 object SuspendGameServerGroupInput {
   
-  @scala.inline
-  def apply(GameServerGroupName: GameServerGroupNameOrArn, SuspendActions: GameServerGroupActions): SuspendGameServerGroupInput = {
+  inline def apply(GameServerGroupName: GameServerGroupNameOrArn, SuspendActions: GameServerGroupActions): SuspendGameServerGroupInput = {
     val __obj = js.Dynamic.literal(GameServerGroupName = GameServerGroupName.asInstanceOf[js.Any], SuspendActions = SuspendActions.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuspendGameServerGroupInput]
   }
   
-  @scala.inline
-  implicit class SuspendGameServerGroupInputMutableBuilder[Self <: SuspendGameServerGroupInput] (val x: Self) extends AnyVal {
+  extension [Self <: SuspendGameServerGroupInput](x: Self) {
     
-    @scala.inline
-    def setGameServerGroupName(value: GameServerGroupNameOrArn): Self = StObject.set(x, "GameServerGroupName", value.asInstanceOf[js.Any])
+    inline def setGameServerGroupName(value: GameServerGroupNameOrArn): Self = StObject.set(x, "GameServerGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuspendActions(value: GameServerGroupActions): Self = StObject.set(x, "SuspendActions", value.asInstanceOf[js.Any])
+    inline def setSuspendActions(value: GameServerGroupActions): Self = StObject.set(x, "SuspendActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuspendActionsVarargs(value: GameServerGroupAction*): Self = StObject.set(x, "SuspendActions", js.Array(value :_*))
+    inline def setSuspendActionsVarargs(value: GameServerGroupAction*): Self = StObject.set(x, "SuspendActions", js.Array(value :_*))
   }
 }

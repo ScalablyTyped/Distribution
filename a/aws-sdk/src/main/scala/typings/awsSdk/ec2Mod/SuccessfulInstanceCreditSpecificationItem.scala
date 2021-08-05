@@ -13,19 +13,15 @@ trait SuccessfulInstanceCreditSpecificationItem extends StObject {
 }
 object SuccessfulInstanceCreditSpecificationItem {
   
-  @scala.inline
-  def apply(): SuccessfulInstanceCreditSpecificationItem = {
+  inline def apply(): SuccessfulInstanceCreditSpecificationItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SuccessfulInstanceCreditSpecificationItem]
   }
   
-  @scala.inline
-  implicit class SuccessfulInstanceCreditSpecificationItemMutableBuilder[Self <: SuccessfulInstanceCreditSpecificationItem] (val x: Self) extends AnyVal {
+  extension [Self <: SuccessfulInstanceCreditSpecificationItem](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
   }
 }

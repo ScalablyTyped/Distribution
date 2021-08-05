@@ -10,16 +10,13 @@ trait CordovaPlugins extends StObject {
 }
 object CordovaPlugins {
   
-  @scala.inline
-  def apply(fileOpener2: CordovaPluginsFileOpener2): CordovaPlugins = {
+  inline def apply(fileOpener2: CordovaPluginsFileOpener2): CordovaPlugins = {
     val __obj = js.Dynamic.literal(fileOpener2 = fileOpener2.asInstanceOf[js.Any])
     __obj.asInstanceOf[CordovaPlugins]
   }
   
-  @scala.inline
-  implicit class CordovaPluginsMutableBuilder[Self <: CordovaPlugins] (val x: Self) extends AnyVal {
+  extension [Self <: CordovaPlugins](x: Self) {
     
-    @scala.inline
-    def setFileOpener2(value: CordovaPluginsFileOpener2): Self = StObject.set(x, "fileOpener2", value.asInstanceOf[js.Any])
+    inline def setFileOpener2(value: CordovaPluginsFileOpener2): Self = StObject.set(x, "fileOpener2", value.asInstanceOf[js.Any])
   }
 }

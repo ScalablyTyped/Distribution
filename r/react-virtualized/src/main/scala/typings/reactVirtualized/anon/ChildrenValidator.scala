@@ -13,16 +13,13 @@ trait ChildrenValidator extends StObject {
 }
 object ChildrenValidator {
   
-  @scala.inline
-  def apply(children: Validator[js.Function1[/* props */ ScrollSyncChildProps, ReactNode]]): ChildrenValidator = {
+  inline def apply(children: Validator[js.Function1[/* props */ ScrollSyncChildProps, ReactNode]]): ChildrenValidator = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChildrenValidator]
   }
   
-  @scala.inline
-  implicit class ChildrenValidatorMutableBuilder[Self <: ChildrenValidator] (val x: Self) extends AnyVal {
+  extension [Self <: ChildrenValidator](x: Self) {
     
-    @scala.inline
-    def setChildren(value: Validator[js.Function1[/* props */ ScrollSyncChildProps, ReactNode]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: Validator[js.Function1[/* props */ ScrollSyncChildProps, ReactNode]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
   }
 }

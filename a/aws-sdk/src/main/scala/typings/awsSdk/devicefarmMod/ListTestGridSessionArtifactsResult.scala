@@ -18,28 +18,21 @@ trait ListTestGridSessionArtifactsResult extends StObject {
 }
 object ListTestGridSessionArtifactsResult {
   
-  @scala.inline
-  def apply(): ListTestGridSessionArtifactsResult = {
+  inline def apply(): ListTestGridSessionArtifactsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTestGridSessionArtifactsResult]
   }
   
-  @scala.inline
-  implicit class ListTestGridSessionArtifactsResultMutableBuilder[Self <: ListTestGridSessionArtifactsResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListTestGridSessionArtifactsResult](x: Self) {
     
-    @scala.inline
-    def setArtifacts(value: TestGridSessionArtifacts): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
+    inline def setArtifacts(value: TestGridSessionArtifacts): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtifactsUndefined: Self = StObject.set(x, "artifacts", js.undefined)
+    inline def setArtifactsUndefined: Self = StObject.set(x, "artifacts", js.undefined)
     
-    @scala.inline
-    def setArtifactsVarargs(value: TestGridSessionArtifact*): Self = StObject.set(x, "artifacts", js.Array(value :_*))
+    inline def setArtifactsVarargs(value: TestGridSessionArtifact*): Self = StObject.set(x, "artifacts", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

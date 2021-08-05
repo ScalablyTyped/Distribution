@@ -10,6 +10,5 @@ object modMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def mod(x: Double, y: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def mod(x: Double, y: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

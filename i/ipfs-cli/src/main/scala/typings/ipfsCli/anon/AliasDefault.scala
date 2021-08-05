@@ -14,22 +14,17 @@ trait AliasDefault extends StObject {
 }
 object AliasDefault {
   
-  @scala.inline
-  def apply(alias: String, default: String, describe: String): AliasDefault = {
+  inline def apply(alias: String, default: String, describe: String): AliasDefault = {
     val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], describe = describe.asInstanceOf[js.Any])
     __obj.asInstanceOf[AliasDefault]
   }
   
-  @scala.inline
-  implicit class AliasDefaultMutableBuilder[Self <: AliasDefault] (val x: Self) extends AnyVal {
+  extension [Self <: AliasDefault](x: Self) {
     
-    @scala.inline
-    def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+    inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescribe(value: String): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
+    inline def setDescribe(value: String): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
   }
 }

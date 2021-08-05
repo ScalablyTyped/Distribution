@@ -15,16 +15,13 @@ trait BoltCircle
 }
 object BoltCircle {
   
-  @scala.inline
-  def apply(paths: IPathMap): BoltCircle = {
+  inline def apply(paths: IPathMap): BoltCircle = {
     val __obj = js.Dynamic.literal(paths = paths.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoltCircle]
   }
   
-  @scala.inline
-  implicit class BoltCircleMutableBuilder[Self <: BoltCircle] (val x: Self) extends AnyVal {
+  extension [Self <: BoltCircle](x: Self) {
     
-    @scala.inline
-    def setPaths(value: IPathMap): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: IPathMap): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait GanttPdfExportEvent
 }
 object GanttPdfExportEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Gantt): GanttPdfExportEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Gantt): GanttPdfExportEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[GanttPdfExportEvent]
   }
   
-  @scala.inline
-  implicit class GanttPdfExportEventMutableBuilder[Self <: GanttPdfExportEvent] (val x: Self) extends AnyVal {
+  extension [Self <: GanttPdfExportEvent](x: Self) {
     
-    @scala.inline
-    def setPromise(value: JQueryPromise[js.Any]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+    inline def setPromise(value: JQueryPromise[js.Any]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
+    inline def setPromiseUndefined: Self = StObject.set(x, "promise", js.undefined)
   }
 }

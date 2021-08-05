@@ -38,43 +38,31 @@ trait SchemaTask extends StObject {
 }
 object SchemaTask {
   
-  @scala.inline
-  def apply(): SchemaTask = {
+  inline def apply(): SchemaTask = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTask]
   }
   
-  @scala.inline
-  implicit class SchemaTaskMutableBuilder[Self <: SchemaTask] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTask](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setProgress(value: String): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: String): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+    inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
-    @scala.inline
-    def setStarted(value: Boolean): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
+    inline def setStarted(value: Boolean): Self = StObject.set(x, "started", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartedUndefined: Self = StObject.set(x, "started", js.undefined)
+    inline def setStartedUndefined: Self = StObject.set(x, "started", js.undefined)
     
-    @scala.inline
-    def setTaskId(value: String): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
+    inline def setTaskId(value: String): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskIdUndefined: Self = StObject.set(x, "taskId", js.undefined)
+    inline def setTaskIdUndefined: Self = StObject.set(x, "taskId", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

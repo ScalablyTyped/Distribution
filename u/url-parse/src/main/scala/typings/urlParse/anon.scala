@@ -20,20 +20,16 @@ object anon {
   }
   object Parse {
     
-    @scala.inline
-    def apply(parse: /* query */ String => js.Object, stringify: /* query */ js.Object => String): Parse = {
+    inline def apply(parse: /* query */ String => js.Object, stringify: /* query */ js.Object => String): Parse = {
       val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), stringify = js.Any.fromFunction1(stringify))
       __obj.asInstanceOf[Parse]
     }
     
-    @scala.inline
-    implicit class ParseMutableBuilder[Self <: Parse] (val x: Self) extends AnyVal {
+    extension [Self <: Parse](x: Self) {
       
-      @scala.inline
-      def setParse(value: /* query */ String => js.Object): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+      inline def setParse(value: /* query */ String => js.Object): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStringify(value: /* query */ js.Object => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
+      inline def setStringify(value: /* query */ js.Object => String): Self = StObject.set(x, "stringify", js.Any.fromFunction1(value))
     }
   }
   
@@ -47,23 +43,18 @@ object anon {
   }
   object Protocol {
     
-    @scala.inline
-    def apply(protocol: String, rest: String, slashes: Boolean): Protocol = {
+    inline def apply(protocol: String, rest: String, slashes: Boolean): Protocol = {
       val __obj = js.Dynamic.literal(protocol = protocol.asInstanceOf[js.Any], rest = rest.asInstanceOf[js.Any], slashes = slashes.asInstanceOf[js.Any])
       __obj.asInstanceOf[Protocol]
     }
     
-    @scala.inline
-    implicit class ProtocolMutableBuilder[Self <: Protocol] (val x: Self) extends AnyVal {
+    extension [Self <: Protocol](x: Self) {
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRest(value: String): Self = StObject.set(x, "rest", value.asInstanceOf[js.Any])
+      inline def setRest(value: String): Self = StObject.set(x, "rest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlashes(value: Boolean): Self = StObject.set(x, "slashes", value.asInstanceOf[js.Any])
+      inline def setSlashes(value: Boolean): Self = StObject.set(x, "slashes", value.asInstanceOf[js.Any])
     }
   }
 }

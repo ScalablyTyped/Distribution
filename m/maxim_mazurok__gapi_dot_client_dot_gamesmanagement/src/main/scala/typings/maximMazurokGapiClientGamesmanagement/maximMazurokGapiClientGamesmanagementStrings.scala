@@ -8,11 +8,9 @@ object maximMazurokGapiClientGamesmanagementStrings {
   
   @js.native
   sealed trait gamesmanagement extends StObject
-  @scala.inline
-  def gamesmanagement: gamesmanagement = "gamesmanagement".asInstanceOf[gamesmanagement]
+  inline def gamesmanagement: gamesmanagement = "gamesmanagement".asInstanceOf[gamesmanagement]
   
   @js.native
   sealed trait v1management extends StObject
-  @scala.inline
-  def v1management: v1management = "v1management".asInstanceOf[v1management]
+  inline def v1management: v1management = "v1management".asInstanceOf[v1management]
 }

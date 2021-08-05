@@ -19,6 +19,5 @@ object Stepper {
   @JSImport("antd-mobile", "Stepper.defaultProps")
   @js.native
   def defaultProps: FocusOnUpDown = js.native
-  @scala.inline
-  def defaultProps_=(x: FocusOnUpDown): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: FocusOnUpDown): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

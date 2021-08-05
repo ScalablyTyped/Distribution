@@ -22,8 +22,7 @@ trait TableChart
      with XNamed
 object TableChart {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EmbeddedObject: XComponent,
     HasColumnHeaders: Boolean,
     HasRowHeaders: Boolean,

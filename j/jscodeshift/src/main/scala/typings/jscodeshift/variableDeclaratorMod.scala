@@ -15,8 +15,7 @@ object variableDeclaratorMod {
   @js.native
   val filters: FilterMethods = js.native
   
-  @scala.inline
-  def register(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")().asInstanceOf[Unit]
+  inline def register(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")().asInstanceOf[Unit]
   
   type ASTPath[N] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.NodePath<N, N> */ js.Any
   
@@ -59,17 +58,14 @@ object variableDeclaratorMod {
   }
   object TransformMethods {
     
-    @scala.inline
-    def apply[N](renameTo: String => Collection[N]): TransformMethods[N] = {
+    inline def apply[N](renameTo: String => Collection[N]): TransformMethods[N] = {
       val __obj = js.Dynamic.literal(renameTo = js.Any.fromFunction1(renameTo))
       __obj.asInstanceOf[TransformMethods[N]]
     }
     
-    @scala.inline
-    implicit class TransformMethodsMutableBuilder[Self <: TransformMethods[?], N] (val x: Self & TransformMethods[N]) extends AnyVal {
+    extension [Self <: TransformMethods[?], N](x: Self & TransformMethods[N]) {
       
-      @scala.inline
-      def setRenameTo(value: String => Collection[N]): Self = StObject.set(x, "renameTo", js.Any.fromFunction1(value))
+      inline def setRenameTo(value: String => Collection[N]): Self = StObject.set(x, "renameTo", js.Any.fromFunction1(value))
     }
   }
 }

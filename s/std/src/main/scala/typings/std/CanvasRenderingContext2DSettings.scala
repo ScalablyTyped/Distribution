@@ -12,25 +12,19 @@ trait CanvasRenderingContext2DSettings extends StObject {
 }
 object CanvasRenderingContext2DSettings {
   
-  @scala.inline
-  def apply(): CanvasRenderingContext2DSettings = {
+  inline def apply(): CanvasRenderingContext2DSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CanvasRenderingContext2DSettings]
   }
   
-  @scala.inline
-  implicit class CanvasRenderingContext2DSettingsMutableBuilder[Self <: CanvasRenderingContext2DSettings] (val x: Self) extends AnyVal {
+  extension [Self <: CanvasRenderingContext2DSettings](x: Self) {
     
-    @scala.inline
-    def setAlpha(value: scala.Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: scala.Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+    inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     
-    @scala.inline
-    def setDesynchronized(value: scala.Boolean): Self = StObject.set(x, "desynchronized", value.asInstanceOf[js.Any])
+    inline def setDesynchronized(value: scala.Boolean): Self = StObject.set(x, "desynchronized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesynchronizedUndefined: Self = StObject.set(x, "desynchronized", js.undefined)
+    inline def setDesynchronizedUndefined: Self = StObject.set(x, "desynchronized", js.undefined)
   }
 }

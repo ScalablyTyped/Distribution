@@ -23,31 +23,23 @@ trait EventDimensions extends StObject {
 }
 object EventDimensions {
   
-  @scala.inline
-  def apply(): EventDimensions = {
+  inline def apply(): EventDimensions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventDimensions]
   }
   
-  @scala.inline
-  implicit class EventDimensionsMutableBuilder[Self <: EventDimensions] (val x: Self) extends AnyVal {
+  extension [Self <: EventDimensions](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: MapOfAttributeDimension): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: MapOfAttributeDimension): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
-    @scala.inline
-    def setEventType(value: SetDimension): Self = StObject.set(x, "EventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: SetDimension): Self = StObject.set(x, "EventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTypeUndefined: Self = StObject.set(x, "EventType", js.undefined)
+    inline def setEventTypeUndefined: Self = StObject.set(x, "EventType", js.undefined)
     
-    @scala.inline
-    def setMetrics(value: MapOfMetricDimension): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: MapOfMetricDimension): Self = StObject.set(x, "Metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
+    inline def setMetricsUndefined: Self = StObject.set(x, "Metrics", js.undefined)
   }
 }

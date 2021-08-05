@@ -18,8 +18,7 @@ trait Createdat extends StObject {
 }
 object Createdat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     created_at: String,
     name: String,
     selected_repositories_url: String,
@@ -30,22 +29,16 @@ object Createdat {
     __obj.asInstanceOf[Createdat]
   }
   
-  @scala.inline
-  implicit class CreatedatMutableBuilder[Self <: Createdat] (val x: Self) extends AnyVal {
+  extension [Self <: Createdat](x: Self) {
     
-    @scala.inline
-    def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+    inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelected_repositories_url(value: String): Self = StObject.set(x, "selected_repositories_url", value.asInstanceOf[js.Any])
+    inline def setSelected_repositories_url(value: String): Self = StObject.set(x, "selected_repositories_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
+    inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    inline def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
   }
 }

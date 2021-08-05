@@ -29,8 +29,7 @@ trait ReadBLECharacteristicValueOptions
 }
 object ReadBLECharacteristicValueOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     characteristicId: String,
     deviceId: String,
     serviceId: String,
@@ -40,19 +39,14 @@ object ReadBLECharacteristicValueOptions {
     __obj.asInstanceOf[ReadBLECharacteristicValueOptions]
   }
   
-  @scala.inline
-  implicit class ReadBLECharacteristicValueOptionsMutableBuilder[Self <: ReadBLECharacteristicValueOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReadBLECharacteristicValueOptions](x: Self) {
     
-    @scala.inline
-    def setCharacteristicId(value: String): Self = StObject.set(x, "characteristicId", value.asInstanceOf[js.Any])
+    inline def setCharacteristicId(value: String): Self = StObject.set(x, "characteristicId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
+    inline def setServiceId(value: String): Self = StObject.set(x, "serviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: characteristiccharacteris => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: characteristiccharacteris => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

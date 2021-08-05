@@ -41,8 +41,7 @@ trait Addin extends StObject {
 }
 object Addin {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getStartupBehavior: () => js.Promise[StartupBehavior],
     hide: () => js.Promise[Unit],
     onVisibilityModeChanged: js.Function1[/* message */ VisibilityModeChangedMessage, Unit] => js.Promise[RemoveEventListener],
@@ -53,24 +52,18 @@ object Addin {
     __obj.asInstanceOf[Addin]
   }
   
-  @scala.inline
-  implicit class AddinMutableBuilder[Self <: Addin] (val x: Self) extends AnyVal {
+  extension [Self <: Addin](x: Self) {
     
-    @scala.inline
-    def setGetStartupBehavior(value: () => js.Promise[StartupBehavior]): Self = StObject.set(x, "getStartupBehavior", js.Any.fromFunction0(value))
+    inline def setGetStartupBehavior(value: () => js.Promise[StartupBehavior]): Self = StObject.set(x, "getStartupBehavior", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHide(value: () => js.Promise[Unit]): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => js.Promise[Unit]): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnVisibilityModeChanged(
+    inline def setOnVisibilityModeChanged(
       value: js.Function1[/* message */ VisibilityModeChangedMessage, Unit] => js.Promise[RemoveEventListener]
     ): Self = StObject.set(x, "onVisibilityModeChanged", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetStartupBehavior(value: StartupBehavior => js.Promise[Unit]): Self = StObject.set(x, "setStartupBehavior", js.Any.fromFunction1(value))
+    inline def setSetStartupBehavior(value: StartupBehavior => js.Promise[Unit]): Self = StObject.set(x, "setStartupBehavior", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowAsTaskpane(value: () => js.Promise[Unit]): Self = StObject.set(x, "showAsTaskpane", js.Any.fromFunction0(value))
+    inline def setShowAsTaskpane(value: () => js.Promise[Unit]): Self = StObject.set(x, "showAsTaskpane", js.Any.fromFunction0(value))
   }
 }

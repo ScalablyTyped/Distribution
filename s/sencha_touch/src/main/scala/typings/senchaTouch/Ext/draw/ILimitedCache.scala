@@ -61,79 +61,55 @@ trait ILimitedCache
 }
 object ILimitedCache {
   
-  @scala.inline
-  def apply(): ILimitedCache = {
+  inline def apply(): ILimitedCache = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ILimitedCache]
   }
   
-  @scala.inline
-  implicit class ILimitedCacheMutableBuilder[Self <: ILimitedCache] (val x: Self) extends AnyVal {
+  extension [Self <: ILimitedCache](x: Self) {
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+    inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
     
-    @scala.inline
-    def setFeeder(value: js.Any): Self = StObject.set(x, "feeder", value.asInstanceOf[js.Any])
+    inline def setFeeder(value: js.Any): Self = StObject.set(x, "feeder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeederUndefined: Self = StObject.set(x, "feeder", js.undefined)
+    inline def setFeederUndefined: Self = StObject.set(x, "feeder", js.undefined)
     
-    @scala.inline
-    def setGet(value: (/* id */ String, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+    inline def setGet(value: (/* id */ String, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetFeeder(value: () => js.Any): Self = StObject.set(x, "getFeeder", js.Any.fromFunction0(value))
+    inline def setGetFeeder(value: () => js.Any): Self = StObject.set(x, "getFeeder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFeederUndefined: Self = StObject.set(x, "getFeeder", js.undefined)
+    inline def setGetFeederUndefined: Self = StObject.set(x, "getFeeder", js.undefined)
     
-    @scala.inline
-    def setGetLimit(value: () => Double): Self = StObject.set(x, "getLimit", js.Any.fromFunction0(value))
+    inline def setGetLimit(value: () => Double): Self = StObject.set(x, "getLimit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLimitUndefined: Self = StObject.set(x, "getLimit", js.undefined)
+    inline def setGetLimitUndefined: Self = StObject.set(x, "getLimit", js.undefined)
     
-    @scala.inline
-    def setGetScope(value: () => js.Any): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
+    inline def setGetScope(value: () => js.Any): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetScopeUndefined: Self = StObject.set(x, "getScope", js.undefined)
+    inline def setGetScopeUndefined: Self = StObject.set(x, "getScope", js.undefined)
     
-    @scala.inline
-    def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
+    inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    @scala.inline
-    def setSetFeeder(value: /* feeder */ js.UndefOr[js.Any] => Double): Self = StObject.set(x, "setFeeder", js.Any.fromFunction1(value))
+    inline def setSetFeeder(value: /* feeder */ js.UndefOr[js.Any] => Double): Self = StObject.set(x, "setFeeder", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFeederUndefined: Self = StObject.set(x, "setFeeder", js.undefined)
+    inline def setSetFeederUndefined: Self = StObject.set(x, "setFeeder", js.undefined)
     
-    @scala.inline
-    def setSetLimit(value: /* limit */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setLimit", js.Any.fromFunction1(value))
+    inline def setSetLimit(value: /* limit */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setLimit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLimitUndefined: Self = StObject.set(x, "setLimit", js.undefined)
+    inline def setSetLimitUndefined: Self = StObject.set(x, "setLimit", js.undefined)
     
-    @scala.inline
-    def setSetScope(value: /* scope */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setScope", js.Any.fromFunction1(value))
+    inline def setSetScope(value: /* scope */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setScope", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetScopeUndefined: Self = StObject.set(x, "setScope", js.undefined)
+    inline def setSetScopeUndefined: Self = StObject.set(x, "setScope", js.undefined)
   }
 }

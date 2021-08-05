@@ -48,61 +48,43 @@ trait Instance extends StObject {
 }
 object Instance {
   
-  @scala.inline
-  def apply(): Instance = {
+  inline def apply(): Instance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Instance]
   }
   
-  @scala.inline
-  implicit class InstanceMutableBuilder[Self <: Instance] (val x: Self) extends AnyVal {
+  extension [Self <: Instance](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
-    @scala.inline
-    def setDnsName(value: DnsName): Self = StObject.set(x, "DnsName", value.asInstanceOf[js.Any])
+    inline def setDnsName(value: DnsName): Self = StObject.set(x, "DnsName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDnsNameUndefined: Self = StObject.set(x, "DnsName", js.undefined)
+    inline def setDnsNameUndefined: Self = StObject.set(x, "DnsName", js.undefined)
     
-    @scala.inline
-    def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
+    inline def setFleetId(value: FleetId): Self = StObject.set(x, "FleetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFleetIdUndefined: Self = StObject.set(x, "FleetId", js.undefined)
+    inline def setFleetIdUndefined: Self = StObject.set(x, "FleetId", js.undefined)
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
-    @scala.inline
-    def setIpAddress(value: IpAddress): Self = StObject.set(x, "IpAddress", value.asInstanceOf[js.Any])
+    inline def setIpAddress(value: IpAddress): Self = StObject.set(x, "IpAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddressUndefined: Self = StObject.set(x, "IpAddress", js.undefined)
+    inline def setIpAddressUndefined: Self = StObject.set(x, "IpAddress", js.undefined)
     
-    @scala.inline
-    def setOperatingSystem(value: OperatingSystem): Self = StObject.set(x, "OperatingSystem", value.asInstanceOf[js.Any])
+    inline def setOperatingSystem(value: OperatingSystem): Self = StObject.set(x, "OperatingSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatingSystemUndefined: Self = StObject.set(x, "OperatingSystem", js.undefined)
+    inline def setOperatingSystemUndefined: Self = StObject.set(x, "OperatingSystem", js.undefined)
     
-    @scala.inline
-    def setStatus(value: InstanceStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: InstanceStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setType(value: EC2InstanceType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: EC2InstanceType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

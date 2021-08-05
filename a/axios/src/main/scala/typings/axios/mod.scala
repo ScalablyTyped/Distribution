@@ -72,20 +72,16 @@ object mod {
   }
   object AxiosBasicCredentials {
     
-    @scala.inline
-    def apply(password: String, username: String): AxiosBasicCredentials = {
+    inline def apply(password: String, username: String): AxiosBasicCredentials = {
       val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[AxiosBasicCredentials]
     }
     
-    @scala.inline
-    implicit class AxiosBasicCredentialsMutableBuilder[Self <: AxiosBasicCredentials] (val x: Self) extends AnyVal {
+    extension [Self <: AxiosBasicCredentials](x: Self) {
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
   
@@ -107,8 +103,7 @@ object mod {
   }
   object AxiosError {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       config: AxiosRequestConfig,
       isAxiosError: Boolean,
       message: String,
@@ -119,35 +114,25 @@ object mod {
       __obj.asInstanceOf[AxiosError[T]]
     }
     
-    @scala.inline
-    implicit class AxiosErrorMutableBuilder[Self <: AxiosError[?], T] (val x: Self & AxiosError[T]) extends AnyVal {
+    extension [Self <: AxiosError[?], T](x: Self & AxiosError[T]) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      @scala.inline
-      def setConfig(value: AxiosRequestConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: AxiosRequestConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsAxiosError(value: Boolean): Self = StObject.set(x, "isAxiosError", value.asInstanceOf[js.Any])
+      inline def setIsAxiosError(value: Boolean): Self = StObject.set(x, "isAxiosError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+      inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
       
-      @scala.inline
-      def setResponse(value: AxiosResponse[T]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: AxiosResponse[T]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+      inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
       
-      @scala.inline
-      def setToJSON(value: () => js.Object): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => js.Object): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     }
   }
   
@@ -223,32 +208,24 @@ object mod {
   }
   object AxiosProxyConfig {
     
-    @scala.inline
-    def apply(host: String, port: Double): AxiosProxyConfig = {
+    inline def apply(host: String, port: Double): AxiosProxyConfig = {
       val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any])
       __obj.asInstanceOf[AxiosProxyConfig]
     }
     
-    @scala.inline
-    implicit class AxiosProxyConfigMutableBuilder[Self <: AxiosProxyConfig] (val x: Self) extends AnyVal {
+    extension [Self <: AxiosProxyConfig](x: Self) {
       
-      @scala.inline
-      def setAuth(value: Password): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: Password): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+      inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+      inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     }
   }
   
@@ -314,206 +291,140 @@ object mod {
   }
   object AxiosRequestConfig {
     
-    @scala.inline
-    def apply(): AxiosRequestConfig = {
+    inline def apply(): AxiosRequestConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AxiosRequestConfig]
     }
     
-    @scala.inline
-    implicit class AxiosRequestConfigMutableBuilder[Self <: AxiosRequestConfig] (val x: Self) extends AnyVal {
+    extension [Self <: AxiosRequestConfig](x: Self) {
       
-      @scala.inline
-      def setAdapter(value: /* config */ AxiosRequestConfig => AxiosPromise[js.Any]): Self = StObject.set(x, "adapter", js.Any.fromFunction1(value))
+      inline def setAdapter(value: /* config */ AxiosRequestConfig => AxiosPromise[js.Any]): Self = StObject.set(x, "adapter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAdapterUndefined: Self = StObject.set(x, "adapter", js.undefined)
+      inline def setAdapterUndefined: Self = StObject.set(x, "adapter", js.undefined)
       
-      @scala.inline
-      def setAuth(value: AxiosBasicCredentials): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+      inline def setAuth(value: AxiosBasicCredentials): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+      inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
       
-      @scala.inline
-      def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
+      inline def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseURLUndefined: Self = StObject.set(x, "baseURL", js.undefined)
+      inline def setBaseURLUndefined: Self = StObject.set(x, "baseURL", js.undefined)
       
-      @scala.inline
-      def setCancelToken(value: CancelToken): Self = StObject.set(x, "cancelToken", value.asInstanceOf[js.Any])
+      inline def setCancelToken(value: CancelToken): Self = StObject.set(x, "cancelToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelTokenUndefined: Self = StObject.set(x, "cancelToken", js.undefined)
+      inline def setCancelTokenUndefined: Self = StObject.set(x, "cancelToken", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDecompress(value: Boolean): Self = StObject.set(x, "decompress", value.asInstanceOf[js.Any])
+      inline def setDecompress(value: Boolean): Self = StObject.set(x, "decompress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecompressUndefined: Self = StObject.set(x, "decompress", js.undefined)
+      inline def setDecompressUndefined: Self = StObject.set(x, "decompress", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setHttpAgent(value: js.Any): Self = StObject.set(x, "httpAgent", value.asInstanceOf[js.Any])
+      inline def setHttpAgent(value: js.Any): Self = StObject.set(x, "httpAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpAgentUndefined: Self = StObject.set(x, "httpAgent", js.undefined)
+      inline def setHttpAgentUndefined: Self = StObject.set(x, "httpAgent", js.undefined)
       
-      @scala.inline
-      def setHttpsAgent(value: js.Any): Self = StObject.set(x, "httpsAgent", value.asInstanceOf[js.Any])
+      inline def setHttpsAgent(value: js.Any): Self = StObject.set(x, "httpsAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpsAgentUndefined: Self = StObject.set(x, "httpsAgent", js.undefined)
+      inline def setHttpsAgentUndefined: Self = StObject.set(x, "httpsAgent", js.undefined)
       
-      @scala.inline
-      def setMaxBodyLength(value: Double): Self = StObject.set(x, "maxBodyLength", value.asInstanceOf[js.Any])
+      inline def setMaxBodyLength(value: Double): Self = StObject.set(x, "maxBodyLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxBodyLengthUndefined: Self = StObject.set(x, "maxBodyLength", js.undefined)
+      inline def setMaxBodyLengthUndefined: Self = StObject.set(x, "maxBodyLength", js.undefined)
       
-      @scala.inline
-      def setMaxContentLength(value: Double): Self = StObject.set(x, "maxContentLength", value.asInstanceOf[js.Any])
+      inline def setMaxContentLength(value: Double): Self = StObject.set(x, "maxContentLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxContentLengthUndefined: Self = StObject.set(x, "maxContentLength", js.undefined)
+      inline def setMaxContentLengthUndefined: Self = StObject.set(x, "maxContentLength", js.undefined)
       
-      @scala.inline
-      def setMaxRedirects(value: Double): Self = StObject.set(x, "maxRedirects", value.asInstanceOf[js.Any])
+      inline def setMaxRedirects(value: Double): Self = StObject.set(x, "maxRedirects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRedirectsUndefined: Self = StObject.set(x, "maxRedirects", js.undefined)
+      inline def setMaxRedirectsUndefined: Self = StObject.set(x, "maxRedirects", js.undefined)
       
-      @scala.inline
-      def setMethod(value: Method): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: Method): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setOnDownloadProgress(value: /* progressEvent */ js.Any => Unit): Self = StObject.set(x, "onDownloadProgress", js.Any.fromFunction1(value))
+      inline def setOnDownloadProgress(value: /* progressEvent */ js.Any => Unit): Self = StObject.set(x, "onDownloadProgress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDownloadProgressUndefined: Self = StObject.set(x, "onDownloadProgress", js.undefined)
+      inline def setOnDownloadProgressUndefined: Self = StObject.set(x, "onDownloadProgress", js.undefined)
       
-      @scala.inline
-      def setOnUploadProgress(value: /* progressEvent */ js.Any => Unit): Self = StObject.set(x, "onUploadProgress", js.Any.fromFunction1(value))
+      inline def setOnUploadProgress(value: /* progressEvent */ js.Any => Unit): Self = StObject.set(x, "onUploadProgress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnUploadProgressUndefined: Self = StObject.set(x, "onUploadProgress", js.undefined)
+      inline def setOnUploadProgressUndefined: Self = StObject.set(x, "onUploadProgress", js.undefined)
       
-      @scala.inline
-      def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsSerializer(value: /* params */ js.Any => String): Self = StObject.set(x, "paramsSerializer", js.Any.fromFunction1(value))
+      inline def setParamsSerializer(value: /* params */ js.Any => String): Self = StObject.set(x, "paramsSerializer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setParamsSerializerUndefined: Self = StObject.set(x, "paramsSerializer", js.undefined)
+      inline def setParamsSerializerUndefined: Self = StObject.set(x, "paramsSerializer", js.undefined)
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setProxy(value: AxiosProxyConfig | `false`): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+      inline def setProxy(value: AxiosProxyConfig | `false`): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
+      inline def setProxyUndefined: Self = StObject.set(x, "proxy", js.undefined)
       
-      @scala.inline
-      def setResponseType(value: ResponseType): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+      inline def setResponseType(value: ResponseType): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
+      inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
       
-      @scala.inline
-      def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
+      inline def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocketPathNull: Self = StObject.set(x, "socketPath", null)
+      inline def setSocketPathNull: Self = StObject.set(x, "socketPath", null)
       
-      @scala.inline
-      def setSocketPathUndefined: Self = StObject.set(x, "socketPath", js.undefined)
+      inline def setSocketPathUndefined: Self = StObject.set(x, "socketPath", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutErrorMessage(value: String): Self = StObject.set(x, "timeoutErrorMessage", value.asInstanceOf[js.Any])
+      inline def setTimeoutErrorMessage(value: String): Self = StObject.set(x, "timeoutErrorMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutErrorMessageUndefined: Self = StObject.set(x, "timeoutErrorMessage", js.undefined)
+      inline def setTimeoutErrorMessageUndefined: Self = StObject.set(x, "timeoutErrorMessage", js.undefined)
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setTransformRequest(value: AxiosTransformer | js.Array[AxiosTransformer]): Self = StObject.set(x, "transformRequest", value.asInstanceOf[js.Any])
+      inline def setTransformRequest(value: AxiosTransformer | js.Array[AxiosTransformer]): Self = StObject.set(x, "transformRequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformRequestFunction2(value: (/* data */ js.Any, /* headers */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "transformRequest", js.Any.fromFunction2(value))
+      inline def setTransformRequestFunction2(value: (/* data */ js.Any, /* headers */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "transformRequest", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTransformRequestUndefined: Self = StObject.set(x, "transformRequest", js.undefined)
+      inline def setTransformRequestUndefined: Self = StObject.set(x, "transformRequest", js.undefined)
       
-      @scala.inline
-      def setTransformRequestVarargs(value: AxiosTransformer*): Self = StObject.set(x, "transformRequest", js.Array(value :_*))
+      inline def setTransformRequestVarargs(value: AxiosTransformer*): Self = StObject.set(x, "transformRequest", js.Array(value :_*))
       
-      @scala.inline
-      def setTransformResponse(value: AxiosTransformer | js.Array[AxiosTransformer]): Self = StObject.set(x, "transformResponse", value.asInstanceOf[js.Any])
+      inline def setTransformResponse(value: AxiosTransformer | js.Array[AxiosTransformer]): Self = StObject.set(x, "transformResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformResponseFunction2(value: (/* data */ js.Any, /* headers */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "transformResponse", js.Any.fromFunction2(value))
+      inline def setTransformResponseFunction2(value: (/* data */ js.Any, /* headers */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "transformResponse", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTransformResponseUndefined: Self = StObject.set(x, "transformResponse", js.undefined)
+      inline def setTransformResponseUndefined: Self = StObject.set(x, "transformResponse", js.undefined)
       
-      @scala.inline
-      def setTransformResponseVarargs(value: AxiosTransformer*): Self = StObject.set(x, "transformResponse", js.Array(value :_*))
+      inline def setTransformResponseVarargs(value: AxiosTransformer*): Self = StObject.set(x, "transformResponse", js.Array(value :_*))
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      @scala.inline
-      def setValidateStatus(value: /* status */ Double => Boolean): Self = StObject.set(x, "validateStatus", js.Any.fromFunction1(value))
+      inline def setValidateStatus(value: /* status */ Double => Boolean): Self = StObject.set(x, "validateStatus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValidateStatusNull: Self = StObject.set(x, "validateStatus", null)
+      inline def setValidateStatusNull: Self = StObject.set(x, "validateStatus", null)
       
-      @scala.inline
-      def setValidateStatusUndefined: Self = StObject.set(x, "validateStatus", js.undefined)
+      inline def setValidateStatusUndefined: Self = StObject.set(x, "validateStatus", js.undefined)
       
-      @scala.inline
-      def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+      inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
+      inline def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
       
-      @scala.inline
-      def setXsrfCookieName(value: String): Self = StObject.set(x, "xsrfCookieName", value.asInstanceOf[js.Any])
+      inline def setXsrfCookieName(value: String): Self = StObject.set(x, "xsrfCookieName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXsrfCookieNameUndefined: Self = StObject.set(x, "xsrfCookieName", js.undefined)
+      inline def setXsrfCookieNameUndefined: Self = StObject.set(x, "xsrfCookieName", js.undefined)
       
-      @scala.inline
-      def setXsrfHeaderName(value: String): Self = StObject.set(x, "xsrfHeaderName", value.asInstanceOf[js.Any])
+      inline def setXsrfHeaderName(value: String): Self = StObject.set(x, "xsrfHeaderName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXsrfHeaderNameUndefined: Self = StObject.set(x, "xsrfHeaderName", js.undefined)
+      inline def setXsrfHeaderNameUndefined: Self = StObject.set(x, "xsrfHeaderName", js.undefined)
     }
   }
   
@@ -533,35 +444,26 @@ object mod {
   }
   object AxiosResponse {
     
-    @scala.inline
-    def apply[T](config: AxiosRequestConfig, data: T, headers: js.Any, status: Double, statusText: String): AxiosResponse[T] = {
+    inline def apply[T](config: AxiosRequestConfig, data: T, headers: js.Any, status: Double, statusText: String): AxiosResponse[T] = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any])
       __obj.asInstanceOf[AxiosResponse[T]]
     }
     
-    @scala.inline
-    implicit class AxiosResponseMutableBuilder[Self <: AxiosResponse[?], T] (val x: Self & AxiosResponse[T]) extends AnyVal {
+    extension [Self <: AxiosResponse[?], T](x: Self & AxiosResponse[T]) {
       
-      @scala.inline
-      def setConfig(value: AxiosRequestConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: AxiosRequestConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
+      inline def setRequestUndefined: Self = StObject.set(x, "request", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
+      inline def setStatusText(value: String): Self = StObject.set(x, "statusText", value.asInstanceOf[js.Any])
     }
   }
   
@@ -592,17 +494,14 @@ object mod {
   }
   object Cancel {
     
-    @scala.inline
-    def apply(message: String): Cancel = {
+    inline def apply(message: String): Cancel = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[Cancel]
     }
     
-    @scala.inline
-    implicit class CancelMutableBuilder[Self <: Cancel] (val x: Self) extends AnyVal {
+    extension [Self <: Cancel](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -622,26 +521,20 @@ object mod {
   }
   object CancelToken {
     
-    @scala.inline
-    def apply(promise: js.Promise[Cancel], throwIfRequested: () => Unit): CancelToken = {
+    inline def apply(promise: js.Promise[Cancel], throwIfRequested: () => Unit): CancelToken = {
       val __obj = js.Dynamic.literal(promise = promise.asInstanceOf[js.Any], throwIfRequested = js.Any.fromFunction0(throwIfRequested))
       __obj.asInstanceOf[CancelToken]
     }
     
-    @scala.inline
-    implicit class CancelTokenMutableBuilder[Self <: CancelToken] (val x: Self) extends AnyVal {
+    extension [Self <: CancelToken](x: Self) {
       
-      @scala.inline
-      def setPromise(value: js.Promise[Cancel]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: js.Promise[Cancel]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReason(value: Cancel): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      inline def setReason(value: Cancel): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+      inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
       
-      @scala.inline
-      def setThrowIfRequested(value: () => Unit): Self = StObject.set(x, "throwIfRequested", js.Any.fromFunction0(value))
+      inline def setThrowIfRequested(value: () => Unit): Self = StObject.set(x, "throwIfRequested", js.Any.fromFunction0(value))
     }
   }
   
@@ -656,20 +549,16 @@ object mod {
   }
   object CancelTokenSource {
     
-    @scala.inline
-    def apply(cancel: /* message */ js.UndefOr[String] => Unit, token: CancelToken): CancelTokenSource = {
+    inline def apply(cancel: /* message */ js.UndefOr[String] => Unit, token: CancelToken): CancelTokenSource = {
       val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel), token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[CancelTokenSource]
     }
     
-    @scala.inline
-    implicit class CancelTokenSourceMutableBuilder[Self <: CancelTokenSource] (val x: Self) extends AnyVal {
+    extension [Self <: CancelTokenSource](x: Self) {
       
-      @scala.inline
-      def setCancel(value: /* message */ js.UndefOr[String] => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
+      inline def setCancel(value: /* message */ js.UndefOr[String] => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToken(value: CancelToken): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: CancelToken): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
   }
   
@@ -708,65 +597,45 @@ object mod {
   trait Method extends StObject
   object Method {
     
-    @scala.inline
-    def DELETE: typings.axios.axiosStrings.DELETE = "DELETE".asInstanceOf[typings.axios.axiosStrings.DELETE]
+    inline def DELETE: typings.axios.axiosStrings.DELETE = "DELETE".asInstanceOf[typings.axios.axiosStrings.DELETE]
     
-    @scala.inline
-    def GET: typings.axios.axiosStrings.GET = "GET".asInstanceOf[typings.axios.axiosStrings.GET]
+    inline def GET: typings.axios.axiosStrings.GET = "GET".asInstanceOf[typings.axios.axiosStrings.GET]
     
-    @scala.inline
-    def HEAD: typings.axios.axiosStrings.HEAD = "HEAD".asInstanceOf[typings.axios.axiosStrings.HEAD]
+    inline def HEAD: typings.axios.axiosStrings.HEAD = "HEAD".asInstanceOf[typings.axios.axiosStrings.HEAD]
     
-    @scala.inline
-    def LINK: typings.axios.axiosStrings.LINK = "LINK".asInstanceOf[typings.axios.axiosStrings.LINK]
+    inline def LINK: typings.axios.axiosStrings.LINK = "LINK".asInstanceOf[typings.axios.axiosStrings.LINK]
     
-    @scala.inline
-    def OPTIONS: typings.axios.axiosStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.axios.axiosStrings.OPTIONS]
+    inline def OPTIONS: typings.axios.axiosStrings.OPTIONS = "OPTIONS".asInstanceOf[typings.axios.axiosStrings.OPTIONS]
     
-    @scala.inline
-    def PATCH: typings.axios.axiosStrings.PATCH = "PATCH".asInstanceOf[typings.axios.axiosStrings.PATCH]
+    inline def PATCH: typings.axios.axiosStrings.PATCH = "PATCH".asInstanceOf[typings.axios.axiosStrings.PATCH]
     
-    @scala.inline
-    def POST: typings.axios.axiosStrings.POST = "POST".asInstanceOf[typings.axios.axiosStrings.POST]
+    inline def POST: typings.axios.axiosStrings.POST = "POST".asInstanceOf[typings.axios.axiosStrings.POST]
     
-    @scala.inline
-    def PURGE: typings.axios.axiosStrings.PURGE = "PURGE".asInstanceOf[typings.axios.axiosStrings.PURGE]
+    inline def PURGE: typings.axios.axiosStrings.PURGE = "PURGE".asInstanceOf[typings.axios.axiosStrings.PURGE]
     
-    @scala.inline
-    def PUT: typings.axios.axiosStrings.PUT = "PUT".asInstanceOf[typings.axios.axiosStrings.PUT]
+    inline def PUT: typings.axios.axiosStrings.PUT = "PUT".asInstanceOf[typings.axios.axiosStrings.PUT]
     
-    @scala.inline
-    def UNLINK: typings.axios.axiosStrings.UNLINK = "UNLINK".asInstanceOf[typings.axios.axiosStrings.UNLINK]
+    inline def UNLINK: typings.axios.axiosStrings.UNLINK = "UNLINK".asInstanceOf[typings.axios.axiosStrings.UNLINK]
     
-    @scala.inline
-    def delete: delete_ = "delete".asInstanceOf[delete_]
+    inline def delete: delete_ = "delete".asInstanceOf[delete_]
     
-    @scala.inline
-    def get: get_ = "get".asInstanceOf[get_]
+    inline def get: get_ = "get".asInstanceOf[get_]
     
-    @scala.inline
-    def head: head_ = "head".asInstanceOf[head_]
+    inline def head: head_ = "head".asInstanceOf[head_]
     
-    @scala.inline
-    def link: link_ = "link".asInstanceOf[link_]
+    inline def link: link_ = "link".asInstanceOf[link_]
     
-    @scala.inline
-    def options: options_ = "options".asInstanceOf[options_]
+    inline def options: options_ = "options".asInstanceOf[options_]
     
-    @scala.inline
-    def patch: patch_ = "patch".asInstanceOf[patch_]
+    inline def patch: patch_ = "patch".asInstanceOf[patch_]
     
-    @scala.inline
-    def post: post_ = "post".asInstanceOf[post_]
+    inline def post: post_ = "post".asInstanceOf[post_]
     
-    @scala.inline
-    def purge: purge_ = "purge".asInstanceOf[purge_]
+    inline def purge: purge_ = "purge".asInstanceOf[purge_]
     
-    @scala.inline
-    def put: put_ = "put".asInstanceOf[put_]
+    inline def put: put_ = "put".asInstanceOf[put_]
     
-    @scala.inline
-    def unlink: unlink_ = "unlink".asInstanceOf[unlink_]
+    inline def unlink: unlink_ = "unlink".asInstanceOf[unlink_]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -780,22 +649,16 @@ object mod {
   trait ResponseType extends StObject
   object ResponseType {
     
-    @scala.inline
-    def arraybuffer: typings.axios.axiosStrings.arraybuffer = "arraybuffer".asInstanceOf[typings.axios.axiosStrings.arraybuffer]
+    inline def arraybuffer: typings.axios.axiosStrings.arraybuffer = "arraybuffer".asInstanceOf[typings.axios.axiosStrings.arraybuffer]
     
-    @scala.inline
-    def blob: typings.axios.axiosStrings.blob = "blob".asInstanceOf[typings.axios.axiosStrings.blob]
+    inline def blob: typings.axios.axiosStrings.blob = "blob".asInstanceOf[typings.axios.axiosStrings.blob]
     
-    @scala.inline
-    def document: typings.axios.axiosStrings.document = "document".asInstanceOf[typings.axios.axiosStrings.document]
+    inline def document: typings.axios.axiosStrings.document = "document".asInstanceOf[typings.axios.axiosStrings.document]
     
-    @scala.inline
-    def json: typings.axios.axiosStrings.json = "json".asInstanceOf[typings.axios.axiosStrings.json]
+    inline def json: typings.axios.axiosStrings.json = "json".asInstanceOf[typings.axios.axiosStrings.json]
     
-    @scala.inline
-    def stream: typings.axios.axiosStrings.stream = "stream".asInstanceOf[typings.axios.axiosStrings.stream]
+    inline def stream: typings.axios.axiosStrings.stream = "stream".asInstanceOf[typings.axios.axiosStrings.stream]
     
-    @scala.inline
-    def text: typings.axios.axiosStrings.text = "text".asInstanceOf[typings.axios.axiosStrings.text]
+    inline def text: typings.axios.axiosStrings.text = "text".asInstanceOf[typings.axios.axiosStrings.text]
   }
 }

@@ -64,59 +64,42 @@ object hmacKeyMod {
   }
   object HmacKeyMetadata {
     
-    @scala.inline
-    def apply(accessId: String): HmacKeyMetadata = {
+    inline def apply(accessId: String): HmacKeyMetadata = {
       val __obj = js.Dynamic.literal(accessId = accessId.asInstanceOf[js.Any])
       __obj.asInstanceOf[HmacKeyMetadata]
     }
     
-    @scala.inline
-    implicit class HmacKeyMetadataMutableBuilder[Self <: HmacKeyMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: HmacKeyMetadata](x: Self) {
       
-      @scala.inline
-      def setAccessId(value: String): Self = StObject.set(x, "accessId", value.asInstanceOf[js.Any])
+      inline def setAccessId(value: String): Self = StObject.set(x, "accessId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+      inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+      inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+      inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+      inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
       
-      @scala.inline
-      def setServiceAccountEmail(value: String): Self = StObject.set(x, "serviceAccountEmail", value.asInstanceOf[js.Any])
+      inline def setServiceAccountEmail(value: String): Self = StObject.set(x, "serviceAccountEmail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceAccountEmailUndefined: Self = StObject.set(x, "serviceAccountEmail", js.undefined)
+      inline def setServiceAccountEmailUndefined: Self = StObject.set(x, "serviceAccountEmail", js.undefined)
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
       
-      @scala.inline
-      def setTimeCreated(value: String): Self = StObject.set(x, "timeCreated", value.asInstanceOf[js.Any])
+      inline def setTimeCreated(value: String): Self = StObject.set(x, "timeCreated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeCreatedUndefined: Self = StObject.set(x, "timeCreated", js.undefined)
+      inline def setTimeCreatedUndefined: Self = StObject.set(x, "timeCreated", js.undefined)
       
-      @scala.inline
-      def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+      inline def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
+      inline def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
     }
   }
   
@@ -135,20 +118,16 @@ object hmacKeyMod {
   }
   object HmacKeyOptions {
     
-    @scala.inline
-    def apply(): HmacKeyOptions = {
+    inline def apply(): HmacKeyOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HmacKeyOptions]
     }
     
-    @scala.inline
-    implicit class HmacKeyOptionsMutableBuilder[Self <: HmacKeyOptions] (val x: Self) extends AnyVal {
+    extension [Self <: HmacKeyOptions](x: Self) {
       
-      @scala.inline
-      def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+      inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+      inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     }
   }
   
@@ -160,26 +139,20 @@ object hmacKeyMod {
   }
   object SetHmacKeyMetadata {
     
-    @scala.inline
-    def apply(): SetHmacKeyMetadata = {
+    inline def apply(): SetHmacKeyMetadata = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SetHmacKeyMetadata]
     }
     
-    @scala.inline
-    implicit class SetHmacKeyMetadataMutableBuilder[Self <: SetHmacKeyMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: SetHmacKeyMetadata](x: Self) {
       
-      @scala.inline
-      def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+      inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+      inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
       
-      @scala.inline
-      def setState(value: ACTIVE | INACTIVE): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: ACTIVE | INACTIVE): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+      inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     }
   }
   
@@ -192,20 +165,16 @@ object hmacKeyMod {
   }
   object SetHmacKeyMetadataOptions {
     
-    @scala.inline
-    def apply(): SetHmacKeyMetadataOptions = {
+    inline def apply(): SetHmacKeyMetadataOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SetHmacKeyMetadataOptions]
     }
     
-    @scala.inline
-    implicit class SetHmacKeyMetadataOptionsMutableBuilder[Self <: SetHmacKeyMetadataOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SetHmacKeyMetadataOptions](x: Self) {
       
-      @scala.inline
-      def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+      inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+      inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
     }
   }
 }

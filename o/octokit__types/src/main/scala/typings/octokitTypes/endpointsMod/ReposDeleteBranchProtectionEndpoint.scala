@@ -14,22 +14,17 @@ trait ReposDeleteBranchProtectionEndpoint extends StObject {
 }
 object ReposDeleteBranchProtectionEndpoint {
   
-  @scala.inline
-  def apply(branch: String, owner: String, repo: String): ReposDeleteBranchProtectionEndpoint = {
+  inline def apply(branch: String, owner: String, repo: String): ReposDeleteBranchProtectionEndpoint = {
     val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposDeleteBranchProtectionEndpoint]
   }
   
-  @scala.inline
-  implicit class ReposDeleteBranchProtectionEndpointMutableBuilder[Self <: ReposDeleteBranchProtectionEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReposDeleteBranchProtectionEndpoint](x: Self) {
     
-    @scala.inline
-    def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+    inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

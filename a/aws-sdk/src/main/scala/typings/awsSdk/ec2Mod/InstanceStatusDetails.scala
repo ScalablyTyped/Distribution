@@ -23,31 +23,23 @@ trait InstanceStatusDetails extends StObject {
 }
 object InstanceStatusDetails {
   
-  @scala.inline
-  def apply(): InstanceStatusDetails = {
+  inline def apply(): InstanceStatusDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceStatusDetails]
   }
   
-  @scala.inline
-  implicit class InstanceStatusDetailsMutableBuilder[Self <: InstanceStatusDetails] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceStatusDetails](x: Self) {
     
-    @scala.inline
-    def setImpairedSince(value: DateTime): Self = StObject.set(x, "ImpairedSince", value.asInstanceOf[js.Any])
+    inline def setImpairedSince(value: DateTime): Self = StObject.set(x, "ImpairedSince", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImpairedSinceUndefined: Self = StObject.set(x, "ImpairedSince", js.undefined)
+    inline def setImpairedSinceUndefined: Self = StObject.set(x, "ImpairedSince", js.undefined)
     
-    @scala.inline
-    def setName(value: StatusName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: StatusName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setStatus(value: StatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: StatusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

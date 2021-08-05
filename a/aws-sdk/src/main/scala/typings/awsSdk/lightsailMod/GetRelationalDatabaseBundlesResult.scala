@@ -18,28 +18,21 @@ trait GetRelationalDatabaseBundlesResult extends StObject {
 }
 object GetRelationalDatabaseBundlesResult {
   
-  @scala.inline
-  def apply(): GetRelationalDatabaseBundlesResult = {
+  inline def apply(): GetRelationalDatabaseBundlesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetRelationalDatabaseBundlesResult]
   }
   
-  @scala.inline
-  implicit class GetRelationalDatabaseBundlesResultMutableBuilder[Self <: GetRelationalDatabaseBundlesResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetRelationalDatabaseBundlesResult](x: Self) {
     
-    @scala.inline
-    def setBundles(value: RelationalDatabaseBundleList): Self = StObject.set(x, "bundles", value.asInstanceOf[js.Any])
+    inline def setBundles(value: RelationalDatabaseBundleList): Self = StObject.set(x, "bundles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBundlesUndefined: Self = StObject.set(x, "bundles", js.undefined)
+    inline def setBundlesUndefined: Self = StObject.set(x, "bundles", js.undefined)
     
-    @scala.inline
-    def setBundlesVarargs(value: RelationalDatabaseBundle*): Self = StObject.set(x, "bundles", js.Array(value :_*))
+    inline def setBundlesVarargs(value: RelationalDatabaseBundle*): Self = StObject.set(x, "bundles", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

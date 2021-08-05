@@ -33,8 +33,7 @@ trait XCloseBroadcaster
 }
 object XCloseBroadcaster {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addCloseListener: XCloseListener => Unit,
     queryInterface: `type` => js.Any,
@@ -45,13 +44,10 @@ object XCloseBroadcaster {
     __obj.asInstanceOf[XCloseBroadcaster]
   }
   
-  @scala.inline
-  implicit class XCloseBroadcasterMutableBuilder[Self <: XCloseBroadcaster] (val x: Self) extends AnyVal {
+  extension [Self <: XCloseBroadcaster](x: Self) {
     
-    @scala.inline
-    def setAddCloseListener(value: XCloseListener => Unit): Self = StObject.set(x, "addCloseListener", js.Any.fromFunction1(value))
+    inline def setAddCloseListener(value: XCloseListener => Unit): Self = StObject.set(x, "addCloseListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveCloseListener(value: XCloseListener => Unit): Self = StObject.set(x, "removeCloseListener", js.Any.fromFunction1(value))
+    inline def setRemoveCloseListener(value: XCloseListener => Unit): Self = StObject.set(x, "removeCloseListener", js.Any.fromFunction1(value))
   }
 }

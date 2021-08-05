@@ -40,8 +40,7 @@ trait VariablePhotoSequenceController extends StObject {
 }
 object VariablePhotoSequenceController {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     desiredFrameControllers: IVector[FrameController],
     frameCapabilities: FrameControlCapabilities,
     getCurrentFrameRate: () => MediaRatio,
@@ -54,28 +53,20 @@ object VariablePhotoSequenceController {
     __obj.asInstanceOf[VariablePhotoSequenceController]
   }
   
-  @scala.inline
-  implicit class VariablePhotoSequenceControllerMutableBuilder[Self <: VariablePhotoSequenceController] (val x: Self) extends AnyVal {
+  extension [Self <: VariablePhotoSequenceController](x: Self) {
     
-    @scala.inline
-    def setDesiredFrameControllers(value: IVector[FrameController]): Self = StObject.set(x, "desiredFrameControllers", value.asInstanceOf[js.Any])
+    inline def setDesiredFrameControllers(value: IVector[FrameController]): Self = StObject.set(x, "desiredFrameControllers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameCapabilities(value: FrameControlCapabilities): Self = StObject.set(x, "frameCapabilities", value.asInstanceOf[js.Any])
+    inline def setFrameCapabilities(value: FrameControlCapabilities): Self = StObject.set(x, "frameCapabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCurrentFrameRate(value: () => MediaRatio): Self = StObject.set(x, "getCurrentFrameRate", js.Any.fromFunction0(value))
+    inline def setGetCurrentFrameRate(value: () => MediaRatio): Self = StObject.set(x, "getCurrentFrameRate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHighestConcurrentFrameRate(value: IMediaEncodingProperties => MediaRatio): Self = StObject.set(x, "getHighestConcurrentFrameRate", js.Any.fromFunction1(value))
+    inline def setGetHighestConcurrentFrameRate(value: IMediaEncodingProperties => MediaRatio): Self = StObject.set(x, "getHighestConcurrentFrameRate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMaxPhotosPerSecond(value: Double): Self = StObject.set(x, "maxPhotosPerSecond", value.asInstanceOf[js.Any])
+    inline def setMaxPhotosPerSecond(value: Double): Self = StObject.set(x, "maxPhotosPerSecond", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhotosPerSecondLimit(value: Double): Self = StObject.set(x, "photosPerSecondLimit", value.asInstanceOf[js.Any])
+    inline def setPhotosPerSecondLimit(value: Double): Self = StObject.set(x, "photosPerSecondLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
+    inline def setSupported(value: Boolean): Self = StObject.set(x, "supported", value.asInstanceOf[js.Any])
   }
 }

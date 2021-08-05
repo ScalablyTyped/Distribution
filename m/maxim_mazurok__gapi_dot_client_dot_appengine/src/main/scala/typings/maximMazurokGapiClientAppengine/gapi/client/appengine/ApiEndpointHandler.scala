@@ -11,19 +11,15 @@ trait ApiEndpointHandler extends StObject {
 }
 object ApiEndpointHandler {
   
-  @scala.inline
-  def apply(): ApiEndpointHandler = {
+  inline def apply(): ApiEndpointHandler = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApiEndpointHandler]
   }
   
-  @scala.inline
-  implicit class ApiEndpointHandlerMutableBuilder[Self <: ApiEndpointHandler] (val x: Self) extends AnyVal {
+  extension [Self <: ApiEndpointHandler](x: Self) {
     
-    @scala.inline
-    def setScriptPath(value: String): Self = StObject.set(x, "scriptPath", value.asInstanceOf[js.Any])
+    inline def setScriptPath(value: String): Self = StObject.set(x, "scriptPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScriptPathUndefined: Self = StObject.set(x, "scriptPath", js.undefined)
+    inline def setScriptPathUndefined: Self = StObject.set(x, "scriptPath", js.undefined)
   }
 }

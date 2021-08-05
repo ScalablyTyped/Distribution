@@ -27,30 +27,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PropertyPreviewType extends StObject
 object PropertyPreviewType {
   
-  @scala.inline
-  def Accessor: accessor = "accessor".asInstanceOf[accessor]
+  inline def Accessor: accessor = "accessor".asInstanceOf[accessor]
   
-  @scala.inline
-  def Bigint: bigint = "bigint".asInstanceOf[bigint]
+  inline def Bigint: bigint = "bigint".asInstanceOf[bigint]
   
-  @scala.inline
-  def Boolean: boolean = "boolean".asInstanceOf[boolean]
+  inline def Boolean: boolean = "boolean".asInstanceOf[boolean]
   
-  @scala.inline
-  def Function: function = "function".asInstanceOf[function]
+  inline def Function: function = "function".asInstanceOf[function]
   
-  @scala.inline
-  def Number: number = "number".asInstanceOf[number]
+  inline def Number: number = "number".asInstanceOf[number]
   
-  @scala.inline
-  def Object: `object` = "object".asInstanceOf[`object`]
+  inline def Object: `object` = "object".asInstanceOf[`object`]
   
-  @scala.inline
-  def String: string = "string".asInstanceOf[string]
+  inline def String: string = "string".asInstanceOf[string]
   
-  @scala.inline
-  def Symbol: symbol = "symbol".asInstanceOf[symbol]
+  inline def Symbol: symbol = "symbol".asInstanceOf[symbol]
   
-  @scala.inline
-  def Undefined: undefined = "undefined".asInstanceOf[undefined]
+  inline def Undefined: undefined = "undefined".asInstanceOf[undefined]
 }

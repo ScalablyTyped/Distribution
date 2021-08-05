@@ -20,34 +20,25 @@ trait ListUserAssetsResponse extends StObject {
 }
 object ListUserAssetsResponse {
   
-  @scala.inline
-  def apply(): ListUserAssetsResponse = {
+  inline def apply(): ListUserAssetsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListUserAssetsResponse]
   }
   
-  @scala.inline
-  implicit class ListUserAssetsResponseMutableBuilder[Self <: ListUserAssetsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListUserAssetsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
+    inline def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
+    inline def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
     
-    @scala.inline
-    def setUserAssets(value: js.Array[UserAsset]): Self = StObject.set(x, "userAssets", value.asInstanceOf[js.Any])
+    inline def setUserAssets(value: js.Array[UserAsset]): Self = StObject.set(x, "userAssets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserAssetsUndefined: Self = StObject.set(x, "userAssets", js.undefined)
+    inline def setUserAssetsUndefined: Self = StObject.set(x, "userAssets", js.undefined)
     
-    @scala.inline
-    def setUserAssetsVarargs(value: UserAsset*): Self = StObject.set(x, "userAssets", js.Array(value :_*))
+    inline def setUserAssetsVarargs(value: UserAsset*): Self = StObject.set(x, "userAssets", js.Array(value :_*))
   }
 }

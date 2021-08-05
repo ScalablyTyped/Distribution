@@ -23,8 +23,7 @@ trait AssociationExecutionFilter extends StObject {
 }
 object AssociationExecutionFilter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Key: AssociationExecutionFilterKey,
     Type: AssociationFilterOperatorType,
     Value: AssociationExecutionFilterValue
@@ -33,16 +32,12 @@ object AssociationExecutionFilter {
     __obj.asInstanceOf[AssociationExecutionFilter]
   }
   
-  @scala.inline
-  implicit class AssociationExecutionFilterMutableBuilder[Self <: AssociationExecutionFilter] (val x: Self) extends AnyVal {
+  extension [Self <: AssociationExecutionFilter](x: Self) {
     
-    @scala.inline
-    def setKey(value: AssociationExecutionFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: AssociationExecutionFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: AssociationFilterOperatorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: AssociationFilterOperatorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: AssociationExecutionFilterValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: AssociationExecutionFilterValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

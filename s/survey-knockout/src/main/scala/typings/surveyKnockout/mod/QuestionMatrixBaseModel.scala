@@ -28,13 +28,13 @@ class QuestionMatrixBaseModel[TRow, TColumn] protected () extends Question {
   
   /* protected */ def filterItems(): Boolean = js.native
   
-  var filteredColumns: js.Array[TColumn] = js.native
+  /* protected */ var filteredColumns: js.Array[TColumn] = js.native
   
-  var filteredRows: js.Array[ItemValue] = js.native
+  /* protected */ var filteredRows: js.Array[ItemValue] = js.native
   
-  var generatedTotalRow: TRow = js.native
+  /* protected */ var generatedTotalRow: TRow = js.native
   
-  var generatedVisibleRows: js.Array[TRow] = js.native
+  /* protected */ var generatedVisibleRows: js.Array[TRow] = js.native
   
   /* protected */ def getVisibleRows(): js.Array[TRow] = js.native
   

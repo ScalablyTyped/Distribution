@@ -13,19 +13,15 @@ trait SchemaGoogleCloudPrivatecatalogproducerV1beta1CopyProductRequest extends S
 }
 object SchemaGoogleCloudPrivatecatalogproducerV1beta1CopyProductRequest {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudPrivatecatalogproducerV1beta1CopyProductRequest = {
+  inline def apply(): SchemaGoogleCloudPrivatecatalogproducerV1beta1CopyProductRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudPrivatecatalogproducerV1beta1CopyProductRequest]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudPrivatecatalogproducerV1beta1CopyProductRequestMutableBuilder[Self <: SchemaGoogleCloudPrivatecatalogproducerV1beta1CopyProductRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudPrivatecatalogproducerV1beta1CopyProductRequest](x: Self) {
     
-    @scala.inline
-    def setDestinationProductName(value: String): Self = StObject.set(x, "destinationProductName", value.asInstanceOf[js.Any])
+    inline def setDestinationProductName(value: String): Self = StObject.set(x, "destinationProductName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationProductNameUndefined: Self = StObject.set(x, "destinationProductName", js.undefined)
+    inline def setDestinationProductNameUndefined: Self = StObject.set(x, "destinationProductName", js.undefined)
   }
 }

@@ -13,8 +13,7 @@ object createUniDriverFactoryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createUniDriverFactory[TDriver /* <: BaseUniDriver */](driverFactory: UniDriverFactory[TDriver]): js.Function1[/* Component */ ReactElement, TDriver] = ^.asInstanceOf[js.Dynamic].applyDynamic("createUniDriverFactory")(driverFactory.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* Component */ ReactElement, TDriver]]
+  inline def createUniDriverFactory[TDriver /* <: BaseUniDriver */](driverFactory: UniDriverFactory[TDriver]): js.Function1[/* Component */ ReactElement, TDriver] = ^.asInstanceOf[js.Dynamic].applyDynamic("createUniDriverFactory")(driverFactory.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* Component */ ReactElement, TDriver]]
   
   type UniDriverFactory[TDriver /* <: BaseUniDriver */] = js.Function2[/* base */ UniDriver[js.Any], /* body */ js.UndefOr[UniDriver[js.Any]], TDriver]
 }

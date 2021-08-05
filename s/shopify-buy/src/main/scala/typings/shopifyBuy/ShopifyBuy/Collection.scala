@@ -32,8 +32,7 @@ trait Collection extends StObject {
 }
 object Collection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     body_html: String,
     handle: String,
     id: String,
@@ -51,46 +50,32 @@ object Collection {
     __obj.asInstanceOf[Collection]
   }
   
-  @scala.inline
-  implicit class CollectionMutableBuilder[Self <: Collection] (val x: Self) extends AnyVal {
+  extension [Self <: Collection](x: Self) {
     
-    @scala.inline
-    def setBody_html(value: String): Self = StObject.set(x, "body_html", value.asInstanceOf[js.Any])
+    inline def setBody_html(value: String): Self = StObject.set(x, "body_html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+    inline def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetafields(value: js.Array[js.Any]): Self = StObject.set(x, "metafields", value.asInstanceOf[js.Any])
+    inline def setMetafields(value: js.Array[js.Any]): Self = StObject.set(x, "metafields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetafieldsVarargs(value: js.Any*): Self = StObject.set(x, "metafields", js.Array(value :_*))
+    inline def setMetafieldsVarargs(value: js.Any*): Self = StObject.set(x, "metafields", js.Array(value :_*))
     
-    @scala.inline
-    def setPublished(value: Boolean): Self = StObject.set(x, "published", value.asInstanceOf[js.Any])
+    inline def setPublished(value: Boolean): Self = StObject.set(x, "published", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublished_at(value: String): Self = StObject.set(x, "published_at", value.asInstanceOf[js.Any])
+    inline def setPublished_at(value: String): Self = StObject.set(x, "published_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublished_scope(value: String): Self = StObject.set(x, "published_scope", value.asInstanceOf[js.Any])
+    inline def setPublished_scope(value: String): Self = StObject.set(x, "published_scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSort_order(value: String): Self = StObject.set(x, "sort_order", value.asInstanceOf[js.Any])
+    inline def setSort_order(value: String): Self = StObject.set(x, "sort_order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplate_suffix(value: String): Self = StObject.set(x, "template_suffix", value.asInstanceOf[js.Any])
+    inline def setTemplate_suffix(value: String): Self = StObject.set(x, "template_suffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
+    inline def setUpdated_at(value: String): Self = StObject.set(x, "updated_at", value.asInstanceOf[js.Any])
   }
 }

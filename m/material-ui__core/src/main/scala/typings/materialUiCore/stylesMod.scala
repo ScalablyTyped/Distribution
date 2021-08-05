@@ -27,24 +27,17 @@ object stylesMod {
   @js.native
   val MuiThemeProvider: ComponentType[MuiThemeProviderProps] = js.native
   
-  @scala.inline
-  def createGenerateClassName(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createGenerateClassName")().asInstanceOf[js.Any]
-  @scala.inline
-  def createGenerateClassName(options: GenerateClassNameOptions): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createGenerateClassName")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def createGenerateClassName(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createGenerateClassName")().asInstanceOf[js.Any]
+  inline def createGenerateClassName(options: GenerateClassNameOptions): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createGenerateClassName")(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def createMuiTheme(): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("createMuiTheme")().asInstanceOf[Theme]
-  @scala.inline
-  def createMuiTheme(options: ThemeOptions): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("createMuiTheme")(options.asInstanceOf[js.Any]).asInstanceOf[Theme]
+  inline def createMuiTheme(): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("createMuiTheme")().asInstanceOf[Theme]
+  inline def createMuiTheme(options: ThemeOptions): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("createMuiTheme")(options.asInstanceOf[js.Any]).asInstanceOf[Theme]
   
-  @scala.inline
-  def createStyles[C /* <: String */](styles: StyleRules[C]): StyleRules[C] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[StyleRules[C]]
+  inline def createStyles[C /* <: String */](styles: StyleRules[C]): StyleRules[C] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[StyleRules[C]]
   
-  @scala.inline
-  def jssPreset(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("jssPreset")().asInstanceOf[js.Any]
+  inline def jssPreset(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("jssPreset")().asInstanceOf[js.Any]
   
-  @scala.inline
-  def withStyles[ClassKey /* <: String */, Options /* <: WithStylesOptions[ClassKey] */](style: StyleRules[ClassKey]): PropInjector[
+  inline def withStyles[ClassKey /* <: String */, Options /* <: WithStylesOptions[ClassKey] */](style: StyleRules[ClassKey]): PropInjector[
     WithStyles[
       ClassKey, 
       /* import warning: importer.ImportType#apply Failed type conversion: Options['withTheme'] */ js.Any
@@ -57,8 +50,7 @@ object stylesMod {
     ], 
     StyledComponentProps[ClassKey]
   ]]
-  @scala.inline
-  def withStyles[ClassKey /* <: String */, Options /* <: WithStylesOptions[ClassKey] */](style: StyleRulesCallback[ClassKey]): PropInjector[
+  inline def withStyles[ClassKey /* <: String */, Options /* <: WithStylesOptions[ClassKey] */](style: StyleRulesCallback[ClassKey]): PropInjector[
     WithStyles[
       ClassKey, 
       /* import warning: importer.ImportType#apply Failed type conversion: Options['withTheme'] */ js.Any
@@ -71,8 +63,7 @@ object stylesMod {
     ], 
     StyledComponentProps[ClassKey]
   ]]
-  @scala.inline
-  def withStyles[ClassKey /* <: String */, Options /* <: WithStylesOptions[ClassKey] */](style: StyleRulesCallback[ClassKey], options: Options): PropInjector[
+  inline def withStyles[ClassKey /* <: String */, Options /* <: WithStylesOptions[ClassKey] */](style: StyleRulesCallback[ClassKey], options: Options): PropInjector[
     WithStyles[
       ClassKey, 
       /* import warning: importer.ImportType#apply Failed type conversion: Options['withTheme'] */ js.Any
@@ -85,8 +76,7 @@ object stylesMod {
     ], 
     StyledComponentProps[ClassKey]
   ]]
-  @scala.inline
-  def withStyles[ClassKey /* <: String */, Options /* <: WithStylesOptions[ClassKey] */](style: StyleRules[ClassKey], options: Options): PropInjector[
+  inline def withStyles[ClassKey /* <: String */, Options /* <: WithStylesOptions[ClassKey] */](style: StyleRules[ClassKey], options: Options): PropInjector[
     WithStyles[
       ClassKey, 
       /* import warning: importer.ImportType#apply Failed type conversion: Options['withTheme'] */ js.Any
@@ -100,6 +90,5 @@ object stylesMod {
     StyledComponentProps[ClassKey]
   ]]
   
-  @scala.inline
-  def withTheme(): PropInjector[WithTheme, ThemedComponentProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("withTheme")().asInstanceOf[PropInjector[WithTheme, ThemedComponentProps]]
+  inline def withTheme(): PropInjector[WithTheme, ThemedComponentProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("withTheme")().asInstanceOf[PropInjector[WithTheme, ThemedComponentProps]]
 }

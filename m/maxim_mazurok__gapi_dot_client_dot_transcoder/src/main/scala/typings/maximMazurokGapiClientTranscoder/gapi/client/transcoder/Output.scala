@@ -11,19 +11,15 @@ trait Output extends StObject {
 }
 object Output {
   
-  @scala.inline
-  def apply(): Output = {
+  inline def apply(): Output = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Output]
   }
   
-  @scala.inline
-  implicit class OutputMutableBuilder[Self <: Output] (val x: Self) extends AnyVal {
+  extension [Self <: Output](x: Self) {
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

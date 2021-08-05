@@ -13,16 +13,13 @@ trait SendEmailResponse extends StObject {
 }
 object SendEmailResponse {
   
-  @scala.inline
-  def apply(MessageId: MessageId): SendEmailResponse = {
+  inline def apply(MessageId: MessageId): SendEmailResponse = {
     val __obj = js.Dynamic.literal(MessageId = MessageId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendEmailResponse]
   }
   
-  @scala.inline
-  implicit class SendEmailResponseMutableBuilder[Self <: SendEmailResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SendEmailResponse](x: Self) {
     
-    @scala.inline
-    def setMessageId(value: MessageId): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
+    inline def setMessageId(value: MessageId): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
   }
 }

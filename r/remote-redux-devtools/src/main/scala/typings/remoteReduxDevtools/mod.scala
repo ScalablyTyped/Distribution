@@ -16,23 +16,18 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): StoreEnhancer[js.Object, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[StoreEnhancer[js.Object, js.Object]]
-  @scala.inline
-  def default(options: RemoteReduxDevToolsOptions): StoreEnhancer[js.Object, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[StoreEnhancer[js.Object, js.Object]]
+  inline def default(): StoreEnhancer[js.Object, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[StoreEnhancer[js.Object, js.Object]]
+  inline def default(options: RemoteReduxDevToolsOptions): StoreEnhancer[js.Object, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[StoreEnhancer[js.Object, js.Object]]
   
-  @scala.inline
-  def composeWithDevTools(): js.Function1[
+  inline def composeWithDevTools(): js.Function1[
     /* repeated */ StoreEnhancer[js.Object, js.Object], 
     StoreEnhancer[js.Object, js.Object]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeWithDevTools")().asInstanceOf[js.Function1[
     /* repeated */ StoreEnhancer[js.Object, js.Object], 
     StoreEnhancer[js.Object, js.Object]
   ]]
-  @scala.inline
-  def composeWithDevTools(funcs: (StoreEnhancer[js.Object, js.Object])*): StoreEnhancer[js.Object, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeWithDevTools")(funcs.asInstanceOf[js.Any]).asInstanceOf[StoreEnhancer[js.Object, js.Object]]
-  @scala.inline
-  def composeWithDevTools(options: RemoteReduxDevToolsOptions): js.Function1[
+  inline def composeWithDevTools(funcs: (StoreEnhancer[js.Object, js.Object])*): StoreEnhancer[js.Object, js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeWithDevTools")(funcs.asInstanceOf[js.Any]).asInstanceOf[StoreEnhancer[js.Object, js.Object]]
+  inline def composeWithDevTools(options: RemoteReduxDevToolsOptions): js.Function1[
     /* repeated */ StoreEnhancer[js.Object, js.Object], 
     StoreEnhancer[js.Object, js.Object]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("composeWithDevTools")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -160,158 +155,108 @@ object mod {
   }
   object RemoteReduxDevToolsOptions {
     
-    @scala.inline
-    def apply(): RemoteReduxDevToolsOptions = {
+    inline def apply(): RemoteReduxDevToolsOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RemoteReduxDevToolsOptions]
     }
     
-    @scala.inline
-    implicit class RemoteReduxDevToolsOptionsMutableBuilder[Self <: RemoteReduxDevToolsOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RemoteReduxDevToolsOptions](x: Self) {
       
-      @scala.inline
-      def setActionCreators(value: js.Array[ActionCreator[js.Any]] | ActionCreatorsMapObject[js.Any]): Self = StObject.set(x, "actionCreators", value.asInstanceOf[js.Any])
+      inline def setActionCreators(value: js.Array[ActionCreator[js.Any]] | ActionCreatorsMapObject[js.Any]): Self = StObject.set(x, "actionCreators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionCreatorsUndefined: Self = StObject.set(x, "actionCreators", js.undefined)
+      inline def setActionCreatorsUndefined: Self = StObject.set(x, "actionCreators", js.undefined)
       
-      @scala.inline
-      def setActionCreatorsVarargs(value: ActionCreator[js.Any]*): Self = StObject.set(x, "actionCreators", js.Array(value :_*))
+      inline def setActionCreatorsVarargs(value: ActionCreator[js.Any]*): Self = StObject.set(x, "actionCreators", js.Array(value :_*))
       
-      @scala.inline
-      def setActionSanitizer(value: /* action */ js.Any => js.Any): Self = StObject.set(x, "actionSanitizer", js.Any.fromFunction1(value))
+      inline def setActionSanitizer(value: /* action */ js.Any => js.Any): Self = StObject.set(x, "actionSanitizer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setActionSanitizerUndefined: Self = StObject.set(x, "actionSanitizer", js.undefined)
+      inline def setActionSanitizerUndefined: Self = StObject.set(x, "actionSanitizer", js.undefined)
       
-      @scala.inline
-      def setActionsBlacklist(value: String | js.Array[String]): Self = StObject.set(x, "actionsBlacklist", value.asInstanceOf[js.Any])
+      inline def setActionsBlacklist(value: String | js.Array[String]): Self = StObject.set(x, "actionsBlacklist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsBlacklistUndefined: Self = StObject.set(x, "actionsBlacklist", js.undefined)
+      inline def setActionsBlacklistUndefined: Self = StObject.set(x, "actionsBlacklist", js.undefined)
       
-      @scala.inline
-      def setActionsBlacklistVarargs(value: String*): Self = StObject.set(x, "actionsBlacklist", js.Array(value :_*))
+      inline def setActionsBlacklistVarargs(value: String*): Self = StObject.set(x, "actionsBlacklist", js.Array(value :_*))
       
-      @scala.inline
-      def setActionsWhitelist(value: String | js.Array[String]): Self = StObject.set(x, "actionsWhitelist", value.asInstanceOf[js.Any])
+      inline def setActionsWhitelist(value: String | js.Array[String]): Self = StObject.set(x, "actionsWhitelist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsWhitelistUndefined: Self = StObject.set(x, "actionsWhitelist", js.undefined)
+      inline def setActionsWhitelistUndefined: Self = StObject.set(x, "actionsWhitelist", js.undefined)
       
-      @scala.inline
-      def setActionsWhitelistVarargs(value: String*): Self = StObject.set(x, "actionsWhitelist", js.Array(value :_*))
+      inline def setActionsWhitelistVarargs(value: String*): Self = StObject.set(x, "actionsWhitelist", js.Array(value :_*))
       
-      @scala.inline
-      def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+      inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+      inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setRealtime(value: Boolean): Self = StObject.set(x, "realtime", value.asInstanceOf[js.Any])
+      inline def setRealtime(value: Boolean): Self = StObject.set(x, "realtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRealtimeUndefined: Self = StObject.set(x, "realtime", js.undefined)
+      inline def setRealtimeUndefined: Self = StObject.set(x, "realtime", js.undefined)
       
-      @scala.inline
-      def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+      inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
+      inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
       
-      @scala.inline
-      def setSendOn(value: String | js.Array[String]): Self = StObject.set(x, "sendOn", value.asInstanceOf[js.Any])
+      inline def setSendOn(value: String | js.Array[String]): Self = StObject.set(x, "sendOn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSendOnError(value: `0` | `1` | `2`): Self = StObject.set(x, "sendOnError", value.asInstanceOf[js.Any])
+      inline def setSendOnError(value: `0` | `1` | `2`): Self = StObject.set(x, "sendOnError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSendOnErrorUndefined: Self = StObject.set(x, "sendOnError", js.undefined)
+      inline def setSendOnErrorUndefined: Self = StObject.set(x, "sendOnError", js.undefined)
       
-      @scala.inline
-      def setSendOnUndefined: Self = StObject.set(x, "sendOn", js.undefined)
+      inline def setSendOnUndefined: Self = StObject.set(x, "sendOn", js.undefined)
       
-      @scala.inline
-      def setSendOnVarargs(value: String*): Self = StObject.set(x, "sendOn", js.Array(value :_*))
+      inline def setSendOnVarargs(value: String*): Self = StObject.set(x, "sendOn", js.Array(value :_*))
       
-      @scala.inline
-      def setSendTo(value: String): Self = StObject.set(x, "sendTo", value.asInstanceOf[js.Any])
+      inline def setSendTo(value: String): Self = StObject.set(x, "sendTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSendToUndefined: Self = StObject.set(x, "sendTo", js.undefined)
+      inline def setSendToUndefined: Self = StObject.set(x, "sendTo", js.undefined)
       
-      @scala.inline
-      def setShouldCatchErrors(value: Boolean): Self = StObject.set(x, "shouldCatchErrors", value.asInstanceOf[js.Any])
+      inline def setShouldCatchErrors(value: Boolean): Self = StObject.set(x, "shouldCatchErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldCatchErrorsUndefined: Self = StObject.set(x, "shouldCatchErrors", js.undefined)
+      inline def setShouldCatchErrorsUndefined: Self = StObject.set(x, "shouldCatchErrors", js.undefined)
       
-      @scala.inline
-      def setShouldHotReload(value: Boolean): Self = StObject.set(x, "shouldHotReload", value.asInstanceOf[js.Any])
+      inline def setShouldHotReload(value: Boolean): Self = StObject.set(x, "shouldHotReload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldHotReloadUndefined: Self = StObject.set(x, "shouldHotReload", js.undefined)
+      inline def setShouldHotReloadUndefined: Self = StObject.set(x, "shouldHotReload", js.undefined)
       
-      @scala.inline
-      def setShouldRecordChanges(value: Boolean): Self = StObject.set(x, "shouldRecordChanges", value.asInstanceOf[js.Any])
+      inline def setShouldRecordChanges(value: Boolean): Self = StObject.set(x, "shouldRecordChanges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldRecordChangesUndefined: Self = StObject.set(x, "shouldRecordChanges", js.undefined)
+      inline def setShouldRecordChangesUndefined: Self = StObject.set(x, "shouldRecordChanges", js.undefined)
       
-      @scala.inline
-      def setShouldStartLocked(value: Boolean): Self = StObject.set(x, "shouldStartLocked", value.asInstanceOf[js.Any])
+      inline def setShouldStartLocked(value: Boolean): Self = StObject.set(x, "shouldStartLocked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldStartLockedUndefined: Self = StObject.set(x, "shouldStartLocked", js.undefined)
+      inline def setShouldStartLockedUndefined: Self = StObject.set(x, "shouldStartLocked", js.undefined)
       
-      @scala.inline
-      def setStartOn(value: String | js.Array[String]): Self = StObject.set(x, "startOn", value.asInstanceOf[js.Any])
+      inline def setStartOn(value: String | js.Array[String]): Self = StObject.set(x, "startOn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartOnUndefined: Self = StObject.set(x, "startOn", js.undefined)
+      inline def setStartOnUndefined: Self = StObject.set(x, "startOn", js.undefined)
       
-      @scala.inline
-      def setStartOnVarargs(value: String*): Self = StObject.set(x, "startOn", js.Array(value :_*))
+      inline def setStartOnVarargs(value: String*): Self = StObject.set(x, "startOn", js.Array(value :_*))
       
-      @scala.inline
-      def setStateSanitizer(value: /* state */ js.Any => js.Any): Self = StObject.set(x, "stateSanitizer", js.Any.fromFunction1(value))
+      inline def setStateSanitizer(value: /* state */ js.Any => js.Any): Self = StObject.set(x, "stateSanitizer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStateSanitizerUndefined: Self = StObject.set(x, "stateSanitizer", js.undefined)
+      inline def setStateSanitizerUndefined: Self = StObject.set(x, "stateSanitizer", js.undefined)
       
-      @scala.inline
-      def setStopOn(value: String | js.Array[String]): Self = StObject.set(x, "stopOn", value.asInstanceOf[js.Any])
+      inline def setStopOn(value: String | js.Array[String]): Self = StObject.set(x, "stopOn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopOnUndefined: Self = StObject.set(x, "stopOn", js.undefined)
+      inline def setStopOnUndefined: Self = StObject.set(x, "stopOn", js.undefined)
       
-      @scala.inline
-      def setStopOnVarargs(value: String*): Self = StObject.set(x, "stopOn", js.Array(value :_*))
+      inline def setStopOnVarargs(value: String*): Self = StObject.set(x, "stopOn", js.Array(value :_*))
     }
   }
 }

@@ -35,43 +35,31 @@ trait ShapeProperties extends StObject {
 }
 object ShapeProperties {
   
-  @scala.inline
-  def apply(): ShapeProperties = {
+  inline def apply(): ShapeProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShapeProperties]
   }
   
-  @scala.inline
-  implicit class ShapePropertiesMutableBuilder[Self <: ShapeProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ShapeProperties](x: Self) {
     
-    @scala.inline
-    def setContentAlignment(value: String): Self = StObject.set(x, "contentAlignment", value.asInstanceOf[js.Any])
+    inline def setContentAlignment(value: String): Self = StObject.set(x, "contentAlignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentAlignmentUndefined: Self = StObject.set(x, "contentAlignment", js.undefined)
+    inline def setContentAlignmentUndefined: Self = StObject.set(x, "contentAlignment", js.undefined)
     
-    @scala.inline
-    def setLink(value: Link): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: Link): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+    inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
-    @scala.inline
-    def setOutline(value: Outline): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
+    inline def setOutline(value: Outline): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
+    inline def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
     
-    @scala.inline
-    def setShadow(value: Shadow): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
+    inline def setShadow(value: Shadow): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
+    inline def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
     
-    @scala.inline
-    def setShapeBackgroundFill(value: ShapeBackgroundFill): Self = StObject.set(x, "shapeBackgroundFill", value.asInstanceOf[js.Any])
+    inline def setShapeBackgroundFill(value: ShapeBackgroundFill): Self = StObject.set(x, "shapeBackgroundFill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapeBackgroundFillUndefined: Self = StObject.set(x, "shapeBackgroundFill", js.undefined)
+    inline def setShapeBackgroundFillUndefined: Self = StObject.set(x, "shapeBackgroundFill", js.undefined)
   }
 }

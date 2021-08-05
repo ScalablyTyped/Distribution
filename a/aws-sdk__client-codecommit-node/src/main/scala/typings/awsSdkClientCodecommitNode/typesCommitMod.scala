@@ -48,59 +48,42 @@ object typesCommitMod {
   }
   object Commit {
     
-    @scala.inline
-    def apply(): Commit = {
+    inline def apply(): Commit = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Commit]
     }
     
-    @scala.inline
-    implicit class CommitMutableBuilder[Self <: Commit] (val x: Self) extends AnyVal {
+    extension [Self <: Commit](x: Self) {
       
-      @scala.inline
-      def setAdditionalData(value: String): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
+      inline def setAdditionalData(value: String): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalDataUndefined: Self = StObject.set(x, "additionalData", js.undefined)
+      inline def setAdditionalDataUndefined: Self = StObject.set(x, "additionalData", js.undefined)
       
-      @scala.inline
-      def setAuthor(value: UserInfo): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+      inline def setAuthor(value: UserInfo): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
+      inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
       
-      @scala.inline
-      def setCommitId(value: String): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
+      inline def setCommitId(value: String): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitIdUndefined: Self = StObject.set(x, "commitId", js.undefined)
+      inline def setCommitIdUndefined: Self = StObject.set(x, "commitId", js.undefined)
       
-      @scala.inline
-      def setCommitter(value: UserInfo): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
+      inline def setCommitter(value: UserInfo): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitterUndefined: Self = StObject.set(x, "committer", js.undefined)
+      inline def setCommitterUndefined: Self = StObject.set(x, "committer", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setParents(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
+      inline def setParents(value: js.Array[String] | Iterable[String]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentsUndefined: Self = StObject.set(x, "parents", js.undefined)
+      inline def setParentsUndefined: Self = StObject.set(x, "parents", js.undefined)
       
-      @scala.inline
-      def setParentsVarargs(value: String*): Self = StObject.set(x, "parents", js.Array(value :_*))
+      inline def setParentsVarargs(value: String*): Self = StObject.set(x, "parents", js.Array(value :_*))
       
-      @scala.inline
-      def setTreeId(value: String): Self = StObject.set(x, "treeId", value.asInstanceOf[js.Any])
+      inline def setTreeId(value: String): Self = StObject.set(x, "treeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreeIdUndefined: Self = StObject.set(x, "treeId", js.undefined)
+      inline def setTreeIdUndefined: Self = StObject.set(x, "treeId", js.undefined)
     }
   }
   
@@ -128,35 +111,26 @@ object typesCommitMod {
   }
   object UnmarshalledCommit {
     
-    @scala.inline
-    def apply(): UnmarshalledCommit = {
+    inline def apply(): UnmarshalledCommit = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledCommit]
     }
     
-    @scala.inline
-    implicit class UnmarshalledCommitMutableBuilder[Self <: UnmarshalledCommit] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledCommit](x: Self) {
       
-      @scala.inline
-      def setAuthor(value: UnmarshalledUserInfo): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+      inline def setAuthor(value: UnmarshalledUserInfo): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
+      inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
       
-      @scala.inline
-      def setCommitter(value: UnmarshalledUserInfo): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
+      inline def setCommitter(value: UnmarshalledUserInfo): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitterUndefined: Self = StObject.set(x, "committer", js.undefined)
+      inline def setCommitterUndefined: Self = StObject.set(x, "committer", js.undefined)
       
-      @scala.inline
-      def setParents(value: js.Array[String]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
+      inline def setParents(value: js.Array[String]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentsUndefined: Self = StObject.set(x, "parents", js.undefined)
+      inline def setParentsUndefined: Self = StObject.set(x, "parents", js.undefined)
       
-      @scala.inline
-      def setParentsVarargs(value: String*): Self = StObject.set(x, "parents", js.Array(value :_*))
+      inline def setParentsVarargs(value: String*): Self = StObject.set(x, "parents", js.Array(value :_*))
     }
   }
 }

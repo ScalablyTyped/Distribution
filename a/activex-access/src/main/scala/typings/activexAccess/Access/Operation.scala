@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait Operation extends StObject {
   
-  @JSName("Access.Operation_typekey")
+  /* private */ @JSName("Access.Operation_typekey")
   var AccessDotOperation_typekey: Operation = js.native
   
   /** @param bstrParameters [bstrParameters=''] */

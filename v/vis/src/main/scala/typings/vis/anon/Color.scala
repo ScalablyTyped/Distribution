@@ -18,43 +18,31 @@ trait Color extends StObject {
 }
 object Color {
   
-  @scala.inline
-  def apply(): Color = {
+  inline def apply(): Color = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Color]
   }
   
-  @scala.inline
-  implicit class ColorMutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
+  extension [Self <: Color](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setHighlight(value: String): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+    inline def setHighlight(value: String): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
+    inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
     
-    @scala.inline
-    def setHover(value: String): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    inline def setHover(value: String): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
+    inline def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
     
-    @scala.inline
-    def setInherit(value: Boolean | String): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
+    inline def setInherit(value: Boolean | String): Self = StObject.set(x, "inherit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
+    inline def setInheritUndefined: Self = StObject.set(x, "inherit", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
   }
 }

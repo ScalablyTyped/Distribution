@@ -5,45 +5,33 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def closeClient(clientObj: typings.grpc.mod.Client): scala.Unit = typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("closeClient")(clientObj.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def closeClient(clientObj: typings.grpc.mod.Client): scala.Unit = typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("closeClient")(clientObj.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
-@scala.inline
-def getClientChannel(client: typings.grpc.mod.Client): typings.grpc.mod.Channel = typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getClientChannel")(client.asInstanceOf[js.Any]).asInstanceOf[typings.grpc.mod.Channel]
+inline def getClientChannel(client: typings.grpc.mod.Client): typings.grpc.mod.Channel = typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("getClientChannel")(client.asInstanceOf[js.Any]).asInstanceOf[typings.grpc.mod.Channel]
 
-@scala.inline
-def load[T](filename: typings.grpc.mod.Filename): T = typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("load")(filename.asInstanceOf[js.Any]).asInstanceOf[T]
-@scala.inline
-def load[T](filename: typings.grpc.mod.Filename, format: scala.Unit, options: typings.grpc.mod.LoadOptions): T = (typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("load")(filename.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def load[T](filename: typings.grpc.mod.Filename): T = typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("load")(filename.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def load[T](filename: typings.grpc.mod.Filename, format: scala.Unit, options: typings.grpc.mod.LoadOptions): T = (typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("load")(filename.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
 
-@scala.inline
-def loadObject[T](value: js.Object): T = typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("loadObject")(value.asInstanceOf[js.Any]).asInstanceOf[T]
-@scala.inline
-def loadObject[T](value: js.Object, options: typings.grpc.mod.LoadObjectOptions): T = (typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("loadObject")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def loadObject[T](value: js.Object): T = typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("loadObject")(value.asInstanceOf[js.Any]).asInstanceOf[T]
+inline def loadObject[T](value: js.Object, options: typings.grpc.mod.LoadObjectOptions): T = (typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("loadObject")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
 
-@scala.inline
-def loadPackageDefinition(packageDefinition: typings.grpc.mod.PackageDefinition): typings.grpc.mod.GrpcObject = typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("loadPackageDefinition")(packageDefinition.asInstanceOf[js.Any]).asInstanceOf[typings.grpc.mod.GrpcObject]
+inline def loadPackageDefinition(packageDefinition: typings.grpc.mod.PackageDefinition): typings.grpc.mod.GrpcObject = typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("loadPackageDefinition")(packageDefinition.asInstanceOf[js.Any]).asInstanceOf[typings.grpc.mod.GrpcObject]
 
-@scala.inline
-def load_json[T](filename: typings.grpc.mod.Filename, format: typings.grpc.grpcStrings.json): T = (typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("load")(filename.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[T]
-@scala.inline
-def load_json[T](
+inline def load_json[T](filename: typings.grpc.mod.Filename, format: typings.grpc.grpcStrings.json): T = (typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("load")(filename.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def load_json[T](
   filename: typings.grpc.mod.Filename,
   format: typings.grpc.grpcStrings.json,
   options: typings.grpc.mod.LoadOptions
 ): T = (typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("load")(filename.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
 
-@scala.inline
-def load_proto[T](filename: typings.grpc.mod.Filename, format: typings.grpc.grpcStrings.proto): T = (typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("load")(filename.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[T]
-@scala.inline
-def load_proto[T](
+inline def load_proto[T](filename: typings.grpc.mod.Filename, format: typings.grpc.grpcStrings.proto): T = (typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("load")(filename.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[T]
+inline def load_proto[T](
   filename: typings.grpc.mod.Filename,
   format: typings.grpc.grpcStrings.proto,
   options: typings.grpc.mod.LoadOptions
 ): T = (typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("load")(filename.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
 
-@scala.inline
-def makeGenericClientConstructor(
+inline def makeGenericClientConstructor(
   methods: typings.grpc.mod.ServiceDefinition[js.Any],
   serviceName: java.lang.String,
   classOptions: typings.grpc.mod.GenericClientOptions
@@ -57,14 +45,11 @@ typings.grpc.mod.Client] = (typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDyn
 /* options */ js.UndefOr[js.Object], 
 typings.grpc.mod.Client]]
 
-@scala.inline
-def setLogVerbosity(verbosity: typings.grpc.mod.logVerbosity): scala.Unit = typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setLogVerbosity")(verbosity.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def setLogVerbosity(verbosity: typings.grpc.mod.logVerbosity): scala.Unit = typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setLogVerbosity")(verbosity.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
-@scala.inline
-def setLogger(logger: typings.std.Console): scala.Unit = typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setLogger")(logger.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def setLogger(logger: typings.std.Console): scala.Unit = typings.grpc.mod.^.asInstanceOf[js.Dynamic].applyDynamic("setLogger")(logger.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
 
-@scala.inline
-def waitForClientReady(
+inline def waitForClientReady(
   client: typings.grpc.mod.Client,
   deadline: typings.grpc.mod.Deadline,
   callback: js.Function1[/* error */ typings.std.Error | scala.Null, scala.Unit]

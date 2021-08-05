@@ -15,17 +15,14 @@ trait PointScale
 }
 object PointScale {
   
-  @scala.inline
-  def apply(name: String): PointScale = {
+  inline def apply(name: String): PointScale = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("point")
     __obj.asInstanceOf[PointScale]
   }
   
-  @scala.inline
-  implicit class PointScaleMutableBuilder[Self <: PointScale] (val x: Self) extends AnyVal {
+  extension [Self <: PointScale](x: Self) {
     
-    @scala.inline
-    def setType(value: point): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: point): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

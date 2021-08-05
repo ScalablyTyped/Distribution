@@ -14,28 +14,21 @@ trait ElementAnimation extends StObject {
 }
 object ElementAnimation {
   
-  @scala.inline
-  def apply(duration: Double): ElementAnimation = {
+  inline def apply(duration: Double): ElementAnimation = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementAnimation]
   }
   
-  @scala.inline
-  implicit class ElementAnimationMutableBuilder[Self <: ElementAnimation] (val x: Self) extends AnyVal {
+  extension [Self <: ElementAnimation](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterpolation(value: Interpolation): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
+    inline def setInterpolation(value: Interpolation): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
+    inline def setInterpolationUndefined: Self = StObject.set(x, "interpolation", js.undefined)
     
-    @scala.inline
-    def setStartDelay(value: Double): Self = StObject.set(x, "startDelay", value.asInstanceOf[js.Any])
+    inline def setStartDelay(value: Double): Self = StObject.set(x, "startDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDelayUndefined: Self = StObject.set(x, "startDelay", js.undefined)
+    inline def setStartDelayUndefined: Self = StObject.set(x, "startDelay", js.undefined)
   }
 }

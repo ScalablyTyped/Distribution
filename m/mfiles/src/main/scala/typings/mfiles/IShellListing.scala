@@ -75,8 +75,7 @@ trait IShellListing extends StObject {
 }
 object IShellListing {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActivateListing: () => Unit,
     ActivateSelected: () => Unit,
     AutoFitAllColumns: Boolean,
@@ -115,106 +114,72 @@ object IShellListing {
     __obj.asInstanceOf[IShellListing]
   }
   
-  @scala.inline
-  implicit class IShellListingMutableBuilder[Self <: IShellListing] (val x: Self) extends AnyVal {
+  extension [Self <: IShellListing](x: Self) {
     
-    @scala.inline
-    def setActivateListing(value: () => Unit): Self = StObject.set(x, "ActivateListing", js.Any.fromFunction0(value))
+    inline def setActivateListing(value: () => Unit): Self = StObject.set(x, "ActivateListing", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setActivateSelected(value: () => Unit): Self = StObject.set(x, "ActivateSelected", js.Any.fromFunction0(value))
+    inline def setActivateSelected(value: () => Unit): Self = StObject.set(x, "ActivateSelected", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAutoFitAllColumns(value: Boolean): Self = StObject.set(x, "AutoFitAllColumns", value.asInstanceOf[js.Any])
+    inline def setAutoFitAllColumns(value: Boolean): Self = StObject.set(x, "AutoFitAllColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoFitFirstColumn(value: Boolean): Self = StObject.set(x, "AutoFitFirstColumn", value.asInstanceOf[js.Any])
+    inline def setAutoFitFirstColumn(value: Boolean): Self = StObject.set(x, "AutoFitFirstColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnHeadersVisible(value: Boolean): Self = StObject.set(x, "ColumnHeadersVisible", value.asInstanceOf[js.Any])
+    inline def setColumnHeadersVisible(value: Boolean): Self = StObject.set(x, "ColumnHeadersVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentPath(value: String): Self = StObject.set(x, "CurrentPath", value.asInstanceOf[js.Any])
+    inline def setCurrentPath(value: String): Self = StObject.set(x, "CurrentPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentSelection(value: IShellItems): Self = StObject.set(x, "CurrentSelection", value.asInstanceOf[js.Any])
+    inline def setCurrentSelection(value: IShellItems): Self = StObject.set(x, "CurrentSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvents(value: IShellListingEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: IShellListingEvents): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupObjectsByObjectType(value: Boolean): Self = StObject.set(x, "GroupObjectsByObjectType", value.asInstanceOf[js.Any])
+    inline def setGroupObjectsByObjectType(value: Boolean): Self = StObject.set(x, "GroupObjectsByObjectType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupViewsAndFolders(value: Boolean): Self = StObject.set(x, "GroupViewsAndFolders", value.asInstanceOf[js.Any])
+    inline def setGroupViewsAndFolders(value: Boolean): Self = StObject.set(x, "GroupViewsAndFolders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsActive(value: Boolean): Self = StObject.set(x, "IsActive", value.asInstanceOf[js.Any])
+    inline def setIsActive(value: Boolean): Self = StObject.set(x, "IsActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: IShellItems): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
+    inline def setItems(value: IShellItems): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshListing(value: (Boolean, Boolean, Boolean) => Unit): Self = StObject.set(x, "RefreshListing", js.Any.fromFunction3(value))
+    inline def setRefreshListing(value: (Boolean, Boolean, Boolean) => Unit): Self = StObject.set(x, "RefreshListing", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRefreshListingAsync(value: () => Unit): Self = StObject.set(x, "RefreshListingAsync", js.Any.fromFunction0(value))
+    inline def setRefreshListingAsync(value: () => Unit): Self = StObject.set(x, "RefreshListingAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRefreshObject(value: (IObjID, Boolean, Boolean) => Unit): Self = StObject.set(x, "RefreshObject", js.Any.fromFunction3(value))
+    inline def setRefreshObject(value: (IObjID, Boolean, Boolean) => Unit): Self = StObject.set(x, "RefreshObject", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRefreshSelectedObjects(value: (Boolean, Boolean) => Unit): Self = StObject.set(x, "RefreshSelectedObjects", js.Any.fromFunction2(value))
+    inline def setRefreshSelectedObjects(value: (Boolean, Boolean) => Unit): Self = StObject.set(x, "RefreshSelectedObjects", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSelectFolder(value: IFolderDef => Unit): Self = StObject.set(x, "SelectFolder", js.Any.fromFunction1(value))
+    inline def setSelectFolder(value: IFolderDef => Unit): Self = StObject.set(x, "SelectFolder", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelectNextFolder(value: MFFolderDefType => Boolean): Self = StObject.set(x, "SelectNextFolder", js.Any.fromFunction1(value))
+    inline def setSelectNextFolder(value: MFFolderDefType => Boolean): Self = StObject.set(x, "SelectNextFolder", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelectNextObject(value: () => Boolean): Self = StObject.set(x, "SelectNextObject", js.Any.fromFunction0(value))
+    inline def setSelectNextObject(value: () => Boolean): Self = StObject.set(x, "SelectNextObject", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSelectNextObjectFile(value: Boolean => Boolean): Self = StObject.set(x, "SelectNextObjectFile", js.Any.fromFunction1(value))
+    inline def setSelectNextObjectFile(value: Boolean => Boolean): Self = StObject.set(x, "SelectNextObjectFile", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelectObjectFile(value: (IObjVer, IFileVer) => Unit): Self = StObject.set(x, "SelectObjectFile", js.Any.fromFunction2(value))
+    inline def setSelectObjectFile(value: (IObjVer, IFileVer) => Unit): Self = StObject.set(x, "SelectObjectFile", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSelectObjectOrObjectFileVersion(value: IObjOrFileVer => Unit): Self = StObject.set(x, "SelectObjectOrObjectFileVersion", js.Any.fromFunction1(value))
+    inline def setSelectObjectOrObjectFileVersion(value: IObjOrFileVer => Unit): Self = StObject.set(x, "SelectObjectOrObjectFileVersion", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelectObjectVersion(value: IObjVer => Unit): Self = StObject.set(x, "SelectObjectVersion", js.Any.fromFunction1(value))
+    inline def setSelectObjectVersion(value: IObjVer => Unit): Self = StObject.set(x, "SelectObjectVersion", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelectPrevFolder(value: MFFolderDefType => Boolean): Self = StObject.set(x, "SelectPrevFolder", js.Any.fromFunction1(value))
+    inline def setSelectPrevFolder(value: MFFolderDefType => Boolean): Self = StObject.set(x, "SelectPrevFolder", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelectPrevObject(value: () => Boolean): Self = StObject.set(x, "SelectPrevObject", js.Any.fromFunction0(value))
+    inline def setSelectPrevObject(value: () => Boolean): Self = StObject.set(x, "SelectPrevObject", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSelectPrevObjectFile(value: Boolean => Boolean): Self = StObject.set(x, "SelectPrevObjectFile", js.Any.fromFunction1(value))
+    inline def setSelectPrevObjectFile(value: Boolean => Boolean): Self = StObject.set(x, "SelectPrevObjectFile", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFolderSelectionStates(value: (IFolderDefs, Boolean) => Unit): Self = StObject.set(x, "SetFolderSelectionStates", js.Any.fromFunction2(value))
+    inline def setSetFolderSelectionStates(value: (IFolderDefs, Boolean) => Unit): Self = StObject.set(x, "SetFolderSelectionStates", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetObjectOrObjectFileVersionSelectionStates(value: (IObjOrFileVers, Boolean) => Unit): Self = StObject.set(x, "SetObjectOrObjectFileVersionSelectionStates", js.Any.fromFunction2(value))
+    inline def setSetObjectOrObjectFileVersionSelectionStates(value: (IObjOrFileVers, Boolean) => Unit): Self = StObject.set(x, "SetObjectOrObjectFileVersionSelectionStates", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetObjectVersionSelectionStates(value: (IObjVers, Boolean) => Unit): Self = StObject.set(x, "SetObjectVersionSelectionStates", js.Any.fromFunction2(value))
+    inline def setSetObjectVersionSelectionStates(value: (IObjVers, Boolean) => Unit): Self = StObject.set(x, "SetObjectVersionSelectionStates", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetTheme(value: ITheme => Unit): Self = StObject.set(x, "SetTheme", js.Any.fromFunction1(value))
+    inline def setSetTheme(value: ITheme => Unit): Self = StObject.set(x, "SetTheme", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetVirtualSelection(value: IObjOrFileVers => Unit): Self = StObject.set(x, "SetVirtualSelection", js.Any.fromFunction1(value))
+    inline def setSetVirtualSelection(value: IObjOrFileVers => Unit): Self = StObject.set(x, "SetVirtualSelection", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSumOfResultCounts(value: Double): Self = StObject.set(x, "SumOfResultCounts", value.asInstanceOf[js.Any])
+    inline def setSumOfResultCounts(value: Double): Self = StObject.set(x, "SumOfResultCounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnselectAll(value: () => Unit): Self = StObject.set(x, "UnselectAll", js.Any.fromFunction0(value))
+    inline def setUnselectAll(value: () => Unit): Self = StObject.set(x, "UnselectAll", js.Any.fromFunction0(value))
   }
 }

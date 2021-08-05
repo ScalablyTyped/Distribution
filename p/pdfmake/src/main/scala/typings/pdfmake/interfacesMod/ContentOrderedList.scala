@@ -21,43 +21,31 @@ trait ContentOrderedList
 }
 object ContentOrderedList {
   
-  @scala.inline
-  def apply(ol: js.Array[OrderedListElement]): ContentOrderedList = {
+  inline def apply(ol: js.Array[OrderedListElement]): ContentOrderedList = {
     val __obj = js.Dynamic.literal(ol = ol.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentOrderedList]
   }
   
-  @scala.inline
-  implicit class ContentOrderedListMutableBuilder[Self <: ContentOrderedList] (val x: Self) extends AnyVal {
+  extension [Self <: ContentOrderedList](x: Self) {
     
-    @scala.inline
-    def setOl(value: js.Array[OrderedListElement]): Self = StObject.set(x, "ol", value.asInstanceOf[js.Any])
+    inline def setOl(value: js.Array[OrderedListElement]): Self = StObject.set(x, "ol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOlVarargs(value: OrderedListElement*): Self = StObject.set(x, "ol", js.Array(value :_*))
+    inline def setOlVarargs(value: OrderedListElement*): Self = StObject.set(x, "ol", js.Array(value :_*))
     
-    @scala.inline
-    def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
+    inline def setReversed(value: Boolean): Self = StObject.set(x, "reversed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
+    inline def setReversedUndefined: Self = StObject.set(x, "reversed", js.undefined)
     
-    @scala.inline
-    def setSeparator(value: String | (js.Tuple2[String, String])): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+    inline def setSeparator(value: String | (js.Tuple2[String, String])): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+    inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     
-    @scala.inline
-    def setType(value: OrderedListType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: OrderedListType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

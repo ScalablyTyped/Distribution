@@ -15,8 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object TypeAlias {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     id: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Identifier */ js.Any,
     right: FlowTypeAnnotation
   ): TypeAlias = {
@@ -24,24 +23,18 @@ object TypeAlias {
     __obj.asInstanceOf[TypeAlias]
   }
   
-  @scala.inline
-  implicit class TypeAliasMutableBuilder[Self <: TypeAlias] (val x: Self) extends AnyVal {
+  extension [Self <: TypeAlias](x: Self) {
     
-    @scala.inline
-    def setId(
+    inline def setId(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Identifier */ js.Any
     ): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: FlowTypeAnnotation): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: FlowTypeAnnotation): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeParameters(value: TypeParameterDeclaration): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
+    inline def setTypeParameters(value: TypeParameterDeclaration): Self = StObject.set(x, "typeParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeParametersNull: Self = StObject.set(x, "typeParameters", null)
+    inline def setTypeParametersNull: Self = StObject.set(x, "typeParameters", null)
     
-    @scala.inline
-    def setTypeParametersUndefined: Self = StObject.set(x, "typeParameters", js.undefined)
+    inline def setTypeParametersUndefined: Self = StObject.set(x, "typeParameters", js.undefined)
   }
 }

@@ -37,23 +37,18 @@ object svgjs {
     }
     object DragDelta {
       
-      @scala.inline
-      def apply(x: Double, y: Double, zoom: Double): DragDelta = {
+      inline def apply(x: Double, y: Double, zoom: Double): DragDelta = {
         val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], zoom = zoom.asInstanceOf[js.Any])
         __obj.asInstanceOf[DragDelta]
       }
       
-      @scala.inline
-      implicit class DragDeltaMutableBuilder[Self <: DragDelta] (val x: Self) extends AnyVal {
+      extension [Self <: DragDelta](x: Self) {
         
-        @scala.inline
-        def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+        inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+        inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+        inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
       }
     }
   }

@@ -14,25 +14,19 @@ trait LanguageAriaSettings extends StObject {
 }
 object LanguageAriaSettings {
   
-  @scala.inline
-  def apply(sortAscending: String, sortDescending: String): LanguageAriaSettings = {
+  inline def apply(sortAscending: String, sortDescending: String): LanguageAriaSettings = {
     val __obj = js.Dynamic.literal(sortAscending = sortAscending.asInstanceOf[js.Any], sortDescending = sortDescending.asInstanceOf[js.Any])
     __obj.asInstanceOf[LanguageAriaSettings]
   }
   
-  @scala.inline
-  implicit class LanguageAriaSettingsMutableBuilder[Self <: LanguageAriaSettings] (val x: Self) extends AnyVal {
+  extension [Self <: LanguageAriaSettings](x: Self) {
     
-    @scala.inline
-    def setPaginate(value: LanguagePaginateSettings): Self = StObject.set(x, "paginate", value.asInstanceOf[js.Any])
+    inline def setPaginate(value: LanguagePaginateSettings): Self = StObject.set(x, "paginate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaginateUndefined: Self = StObject.set(x, "paginate", js.undefined)
+    inline def setPaginateUndefined: Self = StObject.set(x, "paginate", js.undefined)
     
-    @scala.inline
-    def setSortAscending(value: String): Self = StObject.set(x, "sortAscending", value.asInstanceOf[js.Any])
+    inline def setSortAscending(value: String): Self = StObject.set(x, "sortAscending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortDescending(value: String): Self = StObject.set(x, "sortDescending", value.asInstanceOf[js.Any])
+    inline def setSortDescending(value: String): Self = StObject.set(x, "sortDescending", value.asInstanceOf[js.Any])
   }
 }

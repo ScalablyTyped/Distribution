@@ -14,13 +14,12 @@ trait MediaBookmark extends StObject {
   
   val Position: Double
   
-  @JSName("PowerPoint.MediaBookmark_typekey")
+  /* private */ @JSName("PowerPoint.MediaBookmark_typekey")
   var PowerPointDotMediaBookmark_typekey: MediaBookmark
 }
 object MediaBookmark {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Delete: () => Unit,
     Index: Double,
     Name: String,
@@ -32,22 +31,16 @@ object MediaBookmark {
     __obj.asInstanceOf[MediaBookmark]
   }
   
-  @scala.inline
-  implicit class MediaBookmarkMutableBuilder[Self <: MediaBookmark] (val x: Self) extends AnyVal {
+  extension [Self <: MediaBookmark](x: Self) {
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotMediaBookmark_typekey(value: MediaBookmark): Self = StObject.set(x, "PowerPoint.MediaBookmark_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotMediaBookmark_typekey(value: MediaBookmark): Self = StObject.set(x, "PowerPoint.MediaBookmark_typekey", value.asInstanceOf[js.Any])
   }
 }

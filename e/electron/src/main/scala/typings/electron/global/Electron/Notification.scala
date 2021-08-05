@@ -24,6 +24,5 @@ object Notification {
     * Whether or not desktop notifications are supported on the current system
     */
   /* static member */
-  @scala.inline
-  def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
+  inline def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
 }

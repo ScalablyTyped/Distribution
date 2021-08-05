@@ -137,44 +137,32 @@ object anon {
   }
   object AsObject {
     
-    @scala.inline
-    def apply(): AsObject = {
+    inline def apply(): AsObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AsObject]
     }
     
-    @scala.inline
-    implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+    extension [Self <: AsObject](x: Self) {
       
-      @scala.inline
-      def setAsObject(value: Boolean): Self = StObject.set(x, "asObject", value.asInstanceOf[js.Any])
+      inline def setAsObject(value: Boolean): Self = StObject.set(x, "asObject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsObjectUndefined: Self = StObject.set(x, "asObject", js.undefined)
+      inline def setAsObjectUndefined: Self = StObject.set(x, "asObject", js.undefined)
       
-      @scala.inline
-      def setSerialize(value: Boolean | js.Array[String]): Self = StObject.set(x, "serialize", value.asInstanceOf[js.Any])
+      inline def setSerialize(value: Boolean | js.Array[String]): Self = StObject.set(x, "serialize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
+      inline def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
       
-      @scala.inline
-      def setSerializeVarargs(value: String*): Self = StObject.set(x, "serialize", js.Array(value :_*))
+      inline def setSerializeVarargs(value: String*): Self = StObject.set(x, "serialize", js.Array(value :_*))
       
-      @scala.inline
-      def setTransmit(value: Level): Self = StObject.set(x, "transmit", value.asInstanceOf[js.Any])
+      inline def setTransmit(value: Level): Self = StObject.set(x, "transmit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransmitUndefined: Self = StObject.set(x, "transmit", js.undefined)
+      inline def setTransmitUndefined: Self = StObject.set(x, "transmit", js.undefined)
       
-      @scala.inline
-      def setWrite(value: WriteFn | DictlogLevel): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
+      inline def setWrite(value: WriteFn | DictlogLevel): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWriteFunction1(value: /* o */ js.Object => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
+      inline def setWriteFunction1(value: /* o */ js.Object => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
+      inline def setWriteUndefined: Self = StObject.set(x, "write", js.undefined)
     }
   }
   
@@ -205,32 +193,24 @@ object anon {
   }
   object Bindings {
     
-    @scala.inline
-    def apply(): Bindings = {
+    inline def apply(): Bindings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Bindings]
     }
     
-    @scala.inline
-    implicit class BindingsMutableBuilder[Self <: Bindings] (val x: Self) extends AnyVal {
+    extension [Self <: Bindings](x: Self) {
       
-      @scala.inline
-      def setBindings(value: /* bindings */ typings.pino.mod.Bindings => js.Object): Self = StObject.set(x, "bindings", js.Any.fromFunction1(value))
+      inline def setBindings(value: /* bindings */ typings.pino.mod.Bindings => js.Object): Self = StObject.set(x, "bindings", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
+      inline def setBindingsUndefined: Self = StObject.set(x, "bindings", js.undefined)
       
-      @scala.inline
-      def setLevel(value: (/* level */ String, /* number */ Double) => js.Object): Self = StObject.set(x, "level", js.Any.fromFunction2(value))
+      inline def setLevel(value: (/* level */ String, /* number */ Double) => js.Object): Self = StObject.set(x, "level", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setLog(value: /* object */ js.Object => js.Object): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+      inline def setLog(value: /* object */ js.Object => js.Object): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+      inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
     }
   }
   
@@ -252,50 +232,36 @@ object anon {
   }
   object DictlogLevel {
     
-    @scala.inline
-    def apply(): DictlogLevel = {
+    inline def apply(): DictlogLevel = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DictlogLevel]
     }
     
-    @scala.inline
-    implicit class DictlogLevelMutableBuilder[Self <: DictlogLevel] (val x: Self) extends AnyVal {
+    extension [Self <: DictlogLevel](x: Self) {
       
-      @scala.inline
-      def setDebug(value: /* o */ js.Object => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+      inline def setDebug(value: /* o */ js.Object => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setError(value: /* o */ js.Object => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* o */ js.Object => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setFatal(value: /* o */ js.Object => Unit): Self = StObject.set(x, "fatal", js.Any.fromFunction1(value))
+      inline def setFatal(value: /* o */ js.Object => Unit): Self = StObject.set(x, "fatal", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFatalUndefined: Self = StObject.set(x, "fatal", js.undefined)
+      inline def setFatalUndefined: Self = StObject.set(x, "fatal", js.undefined)
       
-      @scala.inline
-      def setInfo(value: /* o */ js.Object => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
+      inline def setInfo(value: /* o */ js.Object => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+      inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
       
-      @scala.inline
-      def setTrace(value: /* o */ js.Object => Unit): Self = StObject.set(x, "trace", js.Any.fromFunction1(value))
+      inline def setTrace(value: /* o */ js.Object => Unit): Self = StObject.set(x, "trace", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
+      inline def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
       
-      @scala.inline
-      def setWarn(value: /* o */ js.Object => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+      inline def setWarn(value: /* o */ js.Object => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
+      inline def setWarnUndefined: Self = StObject.set(x, "warn", js.undefined)
     }
   }
   
@@ -307,20 +273,16 @@ object anon {
   }
   object Label {
     
-    @scala.inline
-    def apply(label: String, value: Double): Label = {
+    inline def apply(label: String, value: Double): Label = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Label]
     }
     
-    @scala.inline
-    implicit class LabelMutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
+    extension [Self <: Label](x: Self) {
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -342,23 +304,18 @@ object anon {
   }
   object Level {
     
-    @scala.inline
-    def apply(send: (typings.pino.mod.Level, LogEvent) => Unit): Level = {
+    inline def apply(send: (typings.pino.mod.Level, LogEvent) => Unit): Level = {
       val __obj = js.Dynamic.literal(send = js.Any.fromFunction2(send))
       __obj.asInstanceOf[Level]
     }
     
-    @scala.inline
-    implicit class LevelMutableBuilder[Self <: Level] (val x: Self) extends AnyVal {
+    extension [Self <: Level](x: Self) {
       
-      @scala.inline
-      def setLevel(value: typings.pino.mod.Level | String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: typings.pino.mod.Level | String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setSend(value: (typings.pino.mod.Level, LogEvent) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
+      inline def setSend(value: (typings.pino.mod.Level, LogEvent) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
     }
   }
   
@@ -374,20 +331,16 @@ object anon {
   }
   object LogMethod {
     
-    @scala.inline
-    def apply(): LogMethod = {
+    inline def apply(): LogMethod = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LogMethod]
     }
     
-    @scala.inline
-    implicit class LogMethodMutableBuilder[Self <: LogMethod] (val x: Self) extends AnyVal {
+    extension [Self <: LogMethod](x: Self) {
       
-      @scala.inline
-      def setLogMethod(value: (/* args */ js.Array[js.Any], /* method */ LogFn) => Unit): Self = StObject.set(x, "logMethod", js.Any.fromFunction2(value))
+      inline def setLogMethod(value: (/* args */ js.Array[js.Any], /* method */ LogFn) => Unit): Self = StObject.set(x, "logMethod", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLogMethodUndefined: Self = StObject.set(x, "logMethod", js.undefined)
+      inline def setLogMethodUndefined: Self = StObject.set(x, "logMethod", js.undefined)
     }
   }
 }

@@ -17,22 +17,17 @@ trait CodedValueDomainProperties
 }
 object CodedValueDomainProperties {
   
-  @scala.inline
-  def apply(): CodedValueDomainProperties = {
+  inline def apply(): CodedValueDomainProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CodedValueDomainProperties]
   }
   
-  @scala.inline
-  implicit class CodedValueDomainPropertiesMutableBuilder[Self <: CodedValueDomainProperties] (val x: Self) extends AnyVal {
+  extension [Self <: CodedValueDomainProperties](x: Self) {
     
-    @scala.inline
-    def setCodedValues(value: js.Array[CodedValueDomainCodedValues]): Self = StObject.set(x, "codedValues", value.asInstanceOf[js.Any])
+    inline def setCodedValues(value: js.Array[CodedValueDomainCodedValues]): Self = StObject.set(x, "codedValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodedValuesUndefined: Self = StObject.set(x, "codedValues", js.undefined)
+    inline def setCodedValuesUndefined: Self = StObject.set(x, "codedValues", js.undefined)
     
-    @scala.inline
-    def setCodedValuesVarargs(value: CodedValueDomainCodedValues*): Self = StObject.set(x, "codedValues", js.Array(value :_*))
+    inline def setCodedValuesVarargs(value: CodedValueDomainCodedValues*): Self = StObject.set(x, "codedValues", js.Array(value :_*))
   }
 }

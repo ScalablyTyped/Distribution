@@ -34,37 +34,27 @@ trait OlapTableViewOptions
 }
 object OlapTableViewOptions {
   
-  @scala.inline
-  def apply(): OlapTableViewOptions = {
+  inline def apply(): OlapTableViewOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OlapTableViewOptions]
   }
   
-  @scala.inline
-  implicit class OlapTableViewOptionsMutableBuilder[Self <: OlapTableViewOptions] (val x: Self) extends AnyVal {
+  extension [Self <: OlapTableViewOptions](x: Self) {
     
-    @scala.inline
-    def setHasColumns(value: Boolean): Self = StObject.set(x, "hasColumns", value.asInstanceOf[js.Any])
+    inline def setHasColumns(value: Boolean): Self = StObject.set(x, "hasColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasColumnsUndefined: Self = StObject.set(x, "hasColumns", js.undefined)
+    inline def setHasColumnsUndefined: Self = StObject.set(x, "hasColumns", js.undefined)
     
-    @scala.inline
-    def setHasRows(value: Boolean): Self = StObject.set(x, "hasRows", value.asInstanceOf[js.Any])
+    inline def setHasRows(value: Boolean): Self = StObject.set(x, "hasRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasRowsUndefined: Self = StObject.set(x, "hasRows", js.undefined)
+    inline def setHasRowsUndefined: Self = StObject.set(x, "hasRows", js.undefined)
     
-    @scala.inline
-    def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
-    @scala.inline
-    def setViewSettings(value: OlapTableViewOptionsViewSettings): Self = StObject.set(x, "viewSettings", value.asInstanceOf[js.Any])
+    inline def setViewSettings(value: OlapTableViewOptionsViewSettings): Self = StObject.set(x, "viewSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewSettingsUndefined: Self = StObject.set(x, "viewSettings", js.undefined)
+    inline def setViewSettingsUndefined: Self = StObject.set(x, "viewSettings", js.undefined)
   }
 }

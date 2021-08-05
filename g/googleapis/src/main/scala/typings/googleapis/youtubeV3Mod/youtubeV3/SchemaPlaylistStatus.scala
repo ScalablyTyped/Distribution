@@ -13,19 +13,15 @@ trait SchemaPlaylistStatus extends StObject {
 }
 object SchemaPlaylistStatus {
   
-  @scala.inline
-  def apply(): SchemaPlaylistStatus = {
+  inline def apply(): SchemaPlaylistStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPlaylistStatus]
   }
   
-  @scala.inline
-  implicit class SchemaPlaylistStatusMutableBuilder[Self <: SchemaPlaylistStatus] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPlaylistStatus](x: Self) {
     
-    @scala.inline
-    def setPrivacyStatus(value: String): Self = StObject.set(x, "privacyStatus", value.asInstanceOf[js.Any])
+    inline def setPrivacyStatus(value: String): Self = StObject.set(x, "privacyStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivacyStatusUndefined: Self = StObject.set(x, "privacyStatus", js.undefined)
+    inline def setPrivacyStatusUndefined: Self = StObject.set(x, "privacyStatus", js.undefined)
   }
 }

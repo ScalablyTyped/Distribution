@@ -21,25 +21,19 @@ trait SchemaGoogleAppsScriptTypeWebAppEntryPoint extends StObject {
 }
 object SchemaGoogleAppsScriptTypeWebAppEntryPoint {
   
-  @scala.inline
-  def apply(): SchemaGoogleAppsScriptTypeWebAppEntryPoint = {
+  inline def apply(): SchemaGoogleAppsScriptTypeWebAppEntryPoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleAppsScriptTypeWebAppEntryPoint]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleAppsScriptTypeWebAppEntryPointMutableBuilder[Self <: SchemaGoogleAppsScriptTypeWebAppEntryPoint] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleAppsScriptTypeWebAppEntryPoint](x: Self) {
     
-    @scala.inline
-    def setEntryPointConfig(value: SchemaGoogleAppsScriptTypeWebAppConfig): Self = StObject.set(x, "entryPointConfig", value.asInstanceOf[js.Any])
+    inline def setEntryPointConfig(value: SchemaGoogleAppsScriptTypeWebAppConfig): Self = StObject.set(x, "entryPointConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntryPointConfigUndefined: Self = StObject.set(x, "entryPointConfig", js.undefined)
+    inline def setEntryPointConfigUndefined: Self = StObject.set(x, "entryPointConfig", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

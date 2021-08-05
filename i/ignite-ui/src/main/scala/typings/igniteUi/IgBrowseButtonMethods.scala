@@ -17,22 +17,17 @@ trait IgBrowseButtonMethods extends StObject {
 }
 object IgBrowseButtonMethods {
   
-  @scala.inline
-  def apply(attachFilePicker: (js.Object, js.Object) => Unit, destroy: () => Unit, getFilePicker: () => Unit): IgBrowseButtonMethods = {
+  inline def apply(attachFilePicker: (js.Object, js.Object) => Unit, destroy: () => Unit, getFilePicker: () => Unit): IgBrowseButtonMethods = {
     val __obj = js.Dynamic.literal(attachFilePicker = js.Any.fromFunction2(attachFilePicker), destroy = js.Any.fromFunction0(destroy), getFilePicker = js.Any.fromFunction0(getFilePicker))
     __obj.asInstanceOf[IgBrowseButtonMethods]
   }
   
-  @scala.inline
-  implicit class IgBrowseButtonMethodsMutableBuilder[Self <: IgBrowseButtonMethods] (val x: Self) extends AnyVal {
+  extension [Self <: IgBrowseButtonMethods](x: Self) {
     
-    @scala.inline
-    def setAttachFilePicker(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "attachFilePicker", js.Any.fromFunction2(value))
+    inline def setAttachFilePicker(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "attachFilePicker", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFilePicker(value: () => Unit): Self = StObject.set(x, "getFilePicker", js.Any.fromFunction0(value))
+    inline def setGetFilePicker(value: () => Unit): Self = StObject.set(x, "getFilePicker", js.Any.fromFunction0(value))
   }
 }

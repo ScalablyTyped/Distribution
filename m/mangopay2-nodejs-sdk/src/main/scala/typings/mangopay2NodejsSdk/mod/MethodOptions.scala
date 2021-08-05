@@ -24,49 +24,35 @@ trait MethodOptions extends StObject {
 }
 object MethodOptions {
   
-  @scala.inline
-  def apply(): MethodOptions = {
+  inline def apply(): MethodOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MethodOptions]
   }
   
-  @scala.inline
-  implicit class MethodOptionsMutableBuilder[Self <: MethodOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MethodOptions](x: Self) {
     
-    @scala.inline
-    def setData(value: WithToJson[js.Object] | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: WithToJson[js.Object] | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: DeepPartialPartialHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: DeepPartialPartialHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setParameters(value: FilterOptions & PaginationOptions): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: FilterOptions & PaginationOptions): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setPath(value: DeepPartialclientIdstring): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: DeepPartialclientIdstring): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setRequestConfig(value: DeepPartialtimeoutnumber): Self = StObject.set(x, "requestConfig", value.asInstanceOf[js.Any])
+    inline def setRequestConfig(value: DeepPartialtimeoutnumber): Self = StObject.set(x, "requestConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestConfigUndefined: Self = StObject.set(x, "requestConfig", js.undefined)
+    inline def setRequestConfigUndefined: Self = StObject.set(x, "requestConfig", js.undefined)
     
-    @scala.inline
-    def setResponseConfig(value: DeepPartialtimeoutnumber): Self = StObject.set(x, "responseConfig", value.asInstanceOf[js.Any])
+    inline def setResponseConfig(value: DeepPartialtimeoutnumber): Self = StObject.set(x, "responseConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseConfigUndefined: Self = StObject.set(x, "responseConfig", js.undefined)
+    inline def setResponseConfigUndefined: Self = StObject.set(x, "responseConfig", js.undefined)
   }
 }

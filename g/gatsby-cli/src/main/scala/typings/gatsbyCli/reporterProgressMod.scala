@@ -13,8 +13,7 @@ object reporterProgressMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createProgressReporter(hasIdTextStartTotalSpanReporter: ICreateProgressReporterArguments): IProgressReporter = ^.asInstanceOf[js.Dynamic].applyDynamic("createProgressReporter")(hasIdTextStartTotalSpanReporter.asInstanceOf[js.Any]).asInstanceOf[IProgressReporter]
+  inline def createProgressReporter(hasIdTextStartTotalSpanReporter: ICreateProgressReporterArguments): IProgressReporter = ^.asInstanceOf[js.Dynamic].applyDynamic("createProgressReporter")(hasIdTextStartTotalSpanReporter.asInstanceOf[js.Any]).asInstanceOf[IProgressReporter]
   
   trait ICreateProgressReporterArguments extends StObject {
     
@@ -32,32 +31,24 @@ object reporterProgressMod {
   }
   object ICreateProgressReporterArguments {
     
-    @scala.inline
-    def apply(id: String, reporter: Reporter_, span: Span, start: Double, text: String, total: Double): ICreateProgressReporterArguments = {
+    inline def apply(id: String, reporter: Reporter_, span: Span, start: Double, text: String, total: Double): ICreateProgressReporterArguments = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], reporter = reporter.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICreateProgressReporterArguments]
     }
     
-    @scala.inline
-    implicit class ICreateProgressReporterArgumentsMutableBuilder[Self <: ICreateProgressReporterArguments] (val x: Self) extends AnyVal {
+    extension [Self <: ICreateProgressReporterArguments](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReporter(value: Reporter_): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
+      inline def setReporter(value: Reporter_): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpan(value: Span): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+      inline def setSpan(value: Span): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
   }
   

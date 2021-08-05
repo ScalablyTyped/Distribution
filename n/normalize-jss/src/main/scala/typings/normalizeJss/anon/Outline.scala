@@ -10,16 +10,13 @@ trait Outline extends StObject {
 }
 object Outline {
   
-  @scala.inline
-  def apply(outline: String): Outline = {
+  inline def apply(outline: String): Outline = {
     val __obj = js.Dynamic.literal(outline = outline.asInstanceOf[js.Any])
     __obj.asInstanceOf[Outline]
   }
   
-  @scala.inline
-  implicit class OutlineMutableBuilder[Self <: Outline] (val x: Self) extends AnyVal {
+  extension [Self <: Outline](x: Self) {
     
-    @scala.inline
-    def setOutline(value: String): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
+    inline def setOutline(value: String): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
   }
 }

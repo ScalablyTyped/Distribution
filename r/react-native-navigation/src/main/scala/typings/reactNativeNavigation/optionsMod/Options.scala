@@ -138,133 +138,91 @@ trait Options extends StObject {
 }
 object Options {
   
-  @scala.inline
-  def apply(): Options = {
+  inline def apply(): Options = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Options]
   }
   
-  @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+  extension [Self <: Options](x: Self) {
     
-    @scala.inline
-    def setAnimations(value: AnimationOptions): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
+    inline def setAnimations(value: AnimationOptions): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationsUndefined: Self = StObject.set(x, "animations", js.undefined)
+    inline def setAnimationsUndefined: Self = StObject.set(x, "animations", js.undefined)
     
-    @scala.inline
-    def setBackgroundImage(value: ImageResource): Self = StObject.set(x, "backgroundImage", value.asInstanceOf[js.Any])
+    inline def setBackgroundImage(value: ImageResource): Self = StObject.set(x, "backgroundImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundImageUndefined: Self = StObject.set(x, "backgroundImage", js.undefined)
+    inline def setBackgroundImageUndefined: Self = StObject.set(x, "backgroundImage", js.undefined)
     
-    @scala.inline
-    def setBlurOnUnmount(value: Boolean): Self = StObject.set(x, "blurOnUnmount", value.asInstanceOf[js.Any])
+    inline def setBlurOnUnmount(value: Boolean): Self = StObject.set(x, "blurOnUnmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlurOnUnmountUndefined: Self = StObject.set(x, "blurOnUnmount", js.undefined)
+    inline def setBlurOnUnmountUndefined: Self = StObject.set(x, "blurOnUnmount", js.undefined)
     
-    @scala.inline
-    def setBottomTab(value: OptionsBottomTab): Self = StObject.set(x, "bottomTab", value.asInstanceOf[js.Any])
+    inline def setBottomTab(value: OptionsBottomTab): Self = StObject.set(x, "bottomTab", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBottomTabUndefined: Self = StObject.set(x, "bottomTab", js.undefined)
+    inline def setBottomTabUndefined: Self = StObject.set(x, "bottomTab", js.undefined)
     
-    @scala.inline
-    def setBottomTabs(value: OptionsBottomTabs): Self = StObject.set(x, "bottomTabs", value.asInstanceOf[js.Any])
+    inline def setBottomTabs(value: OptionsBottomTabs): Self = StObject.set(x, "bottomTabs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBottomTabsUndefined: Self = StObject.set(x, "bottomTabs", js.undefined)
+    inline def setBottomTabsUndefined: Self = StObject.set(x, "bottomTabs", js.undefined)
     
-    @scala.inline
-    def setFab(value: OptionsFab): Self = StObject.set(x, "fab", value.asInstanceOf[js.Any])
+    inline def setFab(value: OptionsFab): Self = StObject.set(x, "fab", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFabUndefined: Self = StObject.set(x, "fab", js.undefined)
+    inline def setFabUndefined: Self = StObject.set(x, "fab", js.undefined)
     
-    @scala.inline
-    def setLayout(value: OptionsLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: OptionsLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
-    @scala.inline
-    def setModal(value: ModalOptions): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
+    inline def setModal(value: ModalOptions): Self = StObject.set(x, "modal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalPresentationStyle(value: OptionsModalPresentationStyle): Self = StObject.set(x, "modalPresentationStyle", value.asInstanceOf[js.Any])
+    inline def setModalPresentationStyle(value: OptionsModalPresentationStyle): Self = StObject.set(x, "modalPresentationStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalPresentationStyleUndefined: Self = StObject.set(x, "modalPresentationStyle", js.undefined)
+    inline def setModalPresentationStyleUndefined: Self = StObject.set(x, "modalPresentationStyle", js.undefined)
     
-    @scala.inline
-    def setModalTransitionStyle(value: OptionsModalTransitionStyle): Self = StObject.set(x, "modalTransitionStyle", value.asInstanceOf[js.Any])
+    inline def setModalTransitionStyle(value: OptionsModalTransitionStyle): Self = StObject.set(x, "modalTransitionStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModalTransitionStyleUndefined: Self = StObject.set(x, "modalTransitionStyle", js.undefined)
+    inline def setModalTransitionStyleUndefined: Self = StObject.set(x, "modalTransitionStyle", js.undefined)
     
-    @scala.inline
-    def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
+    inline def setModalUndefined: Self = StObject.set(x, "modal", js.undefined)
     
-    @scala.inline
-    def setNavigationBar(value: NavigationBarOptions): Self = StObject.set(x, "navigationBar", value.asInstanceOf[js.Any])
+    inline def setNavigationBar(value: NavigationBarOptions): Self = StObject.set(x, "navigationBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigationBarUndefined: Self = StObject.set(x, "navigationBar", js.undefined)
+    inline def setNavigationBarUndefined: Self = StObject.set(x, "navigationBar", js.undefined)
     
-    @scala.inline
-    def setOverlay(value: OverlayOptions): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+    inline def setOverlay(value: OverlayOptions): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
+    inline def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
     
-    @scala.inline
-    def setPopGesture(value: Boolean): Self = StObject.set(x, "popGesture", value.asInstanceOf[js.Any])
+    inline def setPopGesture(value: Boolean): Self = StObject.set(x, "popGesture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopGestureUndefined: Self = StObject.set(x, "popGesture", js.undefined)
+    inline def setPopGestureUndefined: Self = StObject.set(x, "popGesture", js.undefined)
     
-    @scala.inline
-    def setPreview(value: OptionsPreview): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+    inline def setPreview(value: OptionsPreview): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
+    inline def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
     
-    @scala.inline
-    def setRootBackgroundImage(value: ImageResource): Self = StObject.set(x, "rootBackgroundImage", value.asInstanceOf[js.Any])
+    inline def setRootBackgroundImage(value: ImageResource): Self = StObject.set(x, "rootBackgroundImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootBackgroundImageUndefined: Self = StObject.set(x, "rootBackgroundImage", js.undefined)
+    inline def setRootBackgroundImageUndefined: Self = StObject.set(x, "rootBackgroundImage", js.undefined)
     
-    @scala.inline
-    def setSideMenu(value: OptionsSideMenu): Self = StObject.set(x, "sideMenu", value.asInstanceOf[js.Any])
+    inline def setSideMenu(value: OptionsSideMenu): Self = StObject.set(x, "sideMenu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSideMenuUndefined: Self = StObject.set(x, "sideMenu", js.undefined)
+    inline def setSideMenuUndefined: Self = StObject.set(x, "sideMenu", js.undefined)
     
-    @scala.inline
-    def setSplitView(value: OptionsSplitView): Self = StObject.set(x, "splitView", value.asInstanceOf[js.Any])
+    inline def setSplitView(value: OptionsSplitView): Self = StObject.set(x, "splitView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplitViewUndefined: Self = StObject.set(x, "splitView", js.undefined)
+    inline def setSplitViewUndefined: Self = StObject.set(x, "splitView", js.undefined)
     
-    @scala.inline
-    def setStatusBar(value: OptionsStatusBar): Self = StObject.set(x, "statusBar", value.asInstanceOf[js.Any])
+    inline def setStatusBar(value: OptionsStatusBar): Self = StObject.set(x, "statusBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusBarUndefined: Self = StObject.set(x, "statusBar", js.undefined)
+    inline def setStatusBarUndefined: Self = StObject.set(x, "statusBar", js.undefined)
     
-    @scala.inline
-    def setTopBar(value: OptionsTopBar): Self = StObject.set(x, "topBar", value.asInstanceOf[js.Any])
+    inline def setTopBar(value: OptionsTopBar): Self = StObject.set(x, "topBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopBarUndefined: Self = StObject.set(x, "topBar", js.undefined)
+    inline def setTopBarUndefined: Self = StObject.set(x, "topBar", js.undefined)
     
-    @scala.inline
-    def setWindow(value: WindowOptions): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
+    inline def setWindow(value: WindowOptions): Self = StObject.set(x, "window", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
+    inline def setWindowUndefined: Self = StObject.set(x, "window", js.undefined)
   }
 }

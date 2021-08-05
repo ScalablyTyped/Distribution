@@ -76,9 +76,7 @@ object Uri {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def escapeComponent(toEscape: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeComponent")(toEscape.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def escapeComponent(toEscape: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeComponent")(toEscape.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def unescapeComponent(toUnescape: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapeComponent")(toUnescape.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def unescapeComponent(toUnescape: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapeComponent")(toUnescape.asInstanceOf[js.Any]).asInstanceOf[String]
 }

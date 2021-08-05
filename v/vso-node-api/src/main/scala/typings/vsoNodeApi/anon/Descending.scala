@@ -14,22 +14,17 @@ trait Descending extends StObject {
 }
 object Descending {
   
-  @scala.inline
-  def apply(ascending: scala.Double, descending: scala.Double, none: scala.Double): Descending = {
+  inline def apply(ascending: scala.Double, descending: scala.Double, none: scala.Double): Descending = {
     val __obj = js.Dynamic.literal(ascending = ascending.asInstanceOf[js.Any], descending = descending.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any])
     __obj.asInstanceOf[Descending]
   }
   
-  @scala.inline
-  implicit class DescendingMutableBuilder[Self <: Descending] (val x: Self) extends AnyVal {
+  extension [Self <: Descending](x: Self) {
     
-    @scala.inline
-    def setAscending(value: scala.Double): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
+    inline def setAscending(value: scala.Double): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescending(value: scala.Double): Self = StObject.set(x, "descending", value.asInstanceOf[js.Any])
+    inline def setDescending(value: scala.Double): Self = StObject.set(x, "descending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
   }
 }

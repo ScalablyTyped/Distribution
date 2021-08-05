@@ -65,8 +65,7 @@ trait XDispatchRecorderSupplier
 }
 object XDispatchRecorderSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DispatchRecorder: XDispatchRecorder,
     acquire: () => Unit,
     dispatchAndRecord: (URL, SeqEquiv[PropertyValue], XDispatch) => Unit,
@@ -79,19 +78,14 @@ object XDispatchRecorderSupplier {
     __obj.asInstanceOf[XDispatchRecorderSupplier]
   }
   
-  @scala.inline
-  implicit class XDispatchRecorderSupplierMutableBuilder[Self <: XDispatchRecorderSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XDispatchRecorderSupplier](x: Self) {
     
-    @scala.inline
-    def setDispatchAndRecord(value: (URL, SeqEquiv[PropertyValue], XDispatch) => Unit): Self = StObject.set(x, "dispatchAndRecord", js.Any.fromFunction3(value))
+    inline def setDispatchAndRecord(value: (URL, SeqEquiv[PropertyValue], XDispatch) => Unit): Self = StObject.set(x, "dispatchAndRecord", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDispatchRecorder(value: XDispatchRecorder): Self = StObject.set(x, "DispatchRecorder", value.asInstanceOf[js.Any])
+    inline def setDispatchRecorder(value: XDispatchRecorder): Self = StObject.set(x, "DispatchRecorder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDispatchRecorder(value: () => XDispatchRecorder): Self = StObject.set(x, "getDispatchRecorder", js.Any.fromFunction0(value))
+    inline def setGetDispatchRecorder(value: () => XDispatchRecorder): Self = StObject.set(x, "getDispatchRecorder", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDispatchRecorder(value: XDispatchRecorder => Unit): Self = StObject.set(x, "setDispatchRecorder", js.Any.fromFunction1(value))
+    inline def setSetDispatchRecorder(value: XDispatchRecorder => Unit): Self = StObject.set(x, "setDispatchRecorder", js.Any.fromFunction1(value))
   }
 }

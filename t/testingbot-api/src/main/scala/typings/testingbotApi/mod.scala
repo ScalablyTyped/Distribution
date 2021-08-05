@@ -22,11 +22,9 @@ object mod {
   trait BrowserType extends StObject
   object BrowserType {
     
-    @scala.inline
-    def rc: typings.testingbotApi.testingbotApiStrings.rc = "rc".asInstanceOf[typings.testingbotApi.testingbotApiStrings.rc]
+    inline def rc: typings.testingbotApi.testingbotApiStrings.rc = "rc".asInstanceOf[typings.testingbotApi.testingbotApiStrings.rc]
     
-    @scala.inline
-    def webdriver: typings.testingbotApi.testingbotApiStrings.webdriver = "webdriver".asInstanceOf[typings.testingbotApi.testingbotApiStrings.webdriver]
+    inline def webdriver: typings.testingbotApi.testingbotApiStrings.webdriver = "webdriver".asInstanceOf[typings.testingbotApi.testingbotApiStrings.webdriver]
   }
   
   trait TestData extends StObject {
@@ -45,50 +43,36 @@ object mod {
   }
   object TestData {
     
-    @scala.inline
-    def apply(): TestData = {
+    inline def apply(): TestData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TestData]
     }
     
-    @scala.inline
-    implicit class TestDataMutableBuilder[Self <: TestData] (val x: Self) extends AnyVal {
+    extension [Self <: TestData](x: Self) {
       
-      @scala.inline
-      def setBuild(value: String): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
+      inline def setBuild(value: String): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
+      inline def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
       
-      @scala.inline
-      def setGroups(value: String): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+      inline def setGroups(value: String): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
+      inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
       
-      @scala.inline
-      def `setTest[extra]`(value: String): Self = StObject.set(x, "test[extra]", value.asInstanceOf[js.Any])
+      inline def `setTest[extra]`(value: String): Self = StObject.set(x, "test[extra]", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTest[extra]Undefined`: Self = StObject.set(x, "test[extra]", js.undefined)
+      inline def `setTest[extra]Undefined`: Self = StObject.set(x, "test[extra]", js.undefined)
       
-      @scala.inline
-      def `setTest[name]`(value: String): Self = StObject.set(x, "test[name]", value.asInstanceOf[js.Any])
+      inline def `setTest[name]`(value: String): Self = StObject.set(x, "test[name]", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTest[name]Undefined`: Self = StObject.set(x, "test[name]", js.undefined)
+      inline def `setTest[name]Undefined`: Self = StObject.set(x, "test[name]", js.undefined)
       
-      @scala.inline
-      def `setTest[status_message]`(value: String): Self = StObject.set(x, "test[status_message]", value.asInstanceOf[js.Any])
+      inline def `setTest[status_message]`(value: String): Self = StObject.set(x, "test[status_message]", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTest[status_message]Undefined`: Self = StObject.set(x, "test[status_message]", js.undefined)
+      inline def `setTest[status_message]Undefined`: Self = StObject.set(x, "test[status_message]", js.undefined)
       
-      @scala.inline
-      def `setTest[success]`(value: TestSuccess): Self = StObject.set(x, "test[success]", value.asInstanceOf[js.Any])
+      inline def `setTest[success]`(value: TestSuccess): Self = StObject.set(x, "test[success]", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTest[success]Undefined`: Self = StObject.set(x, "test[success]", js.undefined)
+      inline def `setTest[success]Undefined`: Self = StObject.set(x, "test[success]", js.undefined)
     }
   }
   
@@ -104,38 +88,28 @@ object mod {
   }
   object TestLabData {
     
-    @scala.inline
-    def apply(): TestLabData = {
+    inline def apply(): TestLabData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TestLabData]
     }
     
-    @scala.inline
-    implicit class TestLabDataMutableBuilder[Self <: TestLabData] (val x: Self) extends AnyVal {
+    extension [Self <: TestLabData](x: Self) {
       
-      @scala.inline
-      def `setTest[cron]`(value: String): Self = StObject.set(x, "test[cron]", value.asInstanceOf[js.Any])
+      inline def `setTest[cron]`(value: String): Self = StObject.set(x, "test[cron]", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTest[cron]Undefined`: Self = StObject.set(x, "test[cron]", js.undefined)
+      inline def `setTest[cron]Undefined`: Self = StObject.set(x, "test[cron]", js.undefined)
       
-      @scala.inline
-      def `setTest[enabled]`(value: Boolean): Self = StObject.set(x, "test[enabled]", value.asInstanceOf[js.Any])
+      inline def `setTest[enabled]`(value: Boolean): Self = StObject.set(x, "test[enabled]", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTest[enabled]Undefined`: Self = StObject.set(x, "test[enabled]", js.undefined)
+      inline def `setTest[enabled]Undefined`: Self = StObject.set(x, "test[enabled]", js.undefined)
       
-      @scala.inline
-      def `setTest[name]`(value: String): Self = StObject.set(x, "test[name]", value.asInstanceOf[js.Any])
+      inline def `setTest[name]`(value: String): Self = StObject.set(x, "test[name]", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTest[name]Undefined`: Self = StObject.set(x, "test[name]", js.undefined)
+      inline def `setTest[name]Undefined`: Self = StObject.set(x, "test[name]", js.undefined)
       
-      @scala.inline
-      def `setTest[url]`(value: String): Self = StObject.set(x, "test[url]", value.asInstanceOf[js.Any])
+      inline def `setTest[url]`(value: String): Self = StObject.set(x, "test[url]", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTest[url]Undefined`: Self = StObject.set(x, "test[url]", js.undefined)
+      inline def `setTest[url]Undefined`: Self = StObject.set(x, "test[url]", js.undefined)
     }
   }
   
@@ -148,17 +122,13 @@ object mod {
   trait TestSuccess extends StObject
   object TestSuccess {
     
-    @scala.inline
-    def `0`: typings.testingbotApi.testingbotApiNumbers.`0` = 0.asInstanceOf[typings.testingbotApi.testingbotApiNumbers.`0`]
+    inline def `0`: typings.testingbotApi.testingbotApiNumbers.`0` = 0.asInstanceOf[typings.testingbotApi.testingbotApiNumbers.`0`]
     
-    @scala.inline
-    def `1`: typings.testingbotApi.testingbotApiNumbers.`1` = 1.asInstanceOf[typings.testingbotApi.testingbotApiNumbers.`1`]
+    inline def `1`: typings.testingbotApi.testingbotApiNumbers.`1` = 1.asInstanceOf[typings.testingbotApi.testingbotApiNumbers.`1`]
     
-    @scala.inline
-    def `false`: typings.testingbotApi.testingbotApiBooleans.`false` = false.asInstanceOf[typings.testingbotApi.testingbotApiBooleans.`false`]
+    inline def `false`: typings.testingbotApi.testingbotApiBooleans.`false` = false.asInstanceOf[typings.testingbotApi.testingbotApiBooleans.`false`]
     
-    @scala.inline
-    def `true`: typings.testingbotApi.testingbotApiBooleans.`true` = true.asInstanceOf[typings.testingbotApi.testingbotApiBooleans.`true`]
+    inline def `true`: typings.testingbotApi.testingbotApiBooleans.`true` = true.asInstanceOf[typings.testingbotApi.testingbotApiBooleans.`true`]
   }
   
   @js.native
@@ -247,26 +217,20 @@ object mod {
   }
   object TestingBotOptions {
     
-    @scala.inline
-    def apply(): TestingBotOptions = {
+    inline def apply(): TestingBotOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TestingBotOptions]
     }
     
-    @scala.inline
-    implicit class TestingBotOptionsMutableBuilder[Self <: TestingBotOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TestingBotOptions](x: Self) {
       
-      @scala.inline
-      def setApi_key(value: String): Self = StObject.set(x, "api_key", value.asInstanceOf[js.Any])
+      inline def setApi_key(value: String): Self = StObject.set(x, "api_key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApi_keyUndefined: Self = StObject.set(x, "api_key", js.undefined)
+      inline def setApi_keyUndefined: Self = StObject.set(x, "api_key", js.undefined)
       
-      @scala.inline
-      def setApi_secret(value: String): Self = StObject.set(x, "api_secret", value.asInstanceOf[js.Any])
+      inline def setApi_secret(value: String): Self = StObject.set(x, "api_secret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApi_secretUndefined: Self = StObject.set(x, "api_secret", js.undefined)
+      inline def setApi_secretUndefined: Self = StObject.set(x, "api_secret", js.undefined)
     }
   }
   
@@ -280,32 +244,24 @@ object mod {
   }
   object UserInfo {
     
-    @scala.inline
-    def apply(): UserInfo = {
+    inline def apply(): UserInfo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UserInfo]
     }
     
-    @scala.inline
-    implicit class UserInfoMutableBuilder[Self <: UserInfo] (val x: Self) extends AnyVal {
+    extension [Self <: UserInfo](x: Self) {
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
       
-      @scala.inline
-      def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
+      inline def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirst_nameUndefined: Self = StObject.set(x, "first_name", js.undefined)
+      inline def setFirst_nameUndefined: Self = StObject.set(x, "first_name", js.undefined)
       
-      @scala.inline
-      def setLast_name(value: String): Self = StObject.set(x, "last_name", value.asInstanceOf[js.Any])
+      inline def setLast_name(value: String): Self = StObject.set(x, "last_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLast_nameUndefined: Self = StObject.set(x, "last_name", js.undefined)
+      inline def setLast_nameUndefined: Self = StObject.set(x, "last_name", js.undefined)
     }
   }
 }

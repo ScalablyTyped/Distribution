@@ -14,25 +14,19 @@ trait SidePadding extends StObject {
 }
 object SidePadding {
   
-  @scala.inline
-  def apply(): SidePadding = {
+  inline def apply(): SidePadding = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SidePadding]
   }
   
-  @scala.inline
-  implicit class SidePaddingMutableBuilder[Self <: SidePadding] (val x: Self) extends AnyVal {
+  extension [Self <: SidePadding](x: Self) {
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    @scala.inline
-    def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+    inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
   }
 }

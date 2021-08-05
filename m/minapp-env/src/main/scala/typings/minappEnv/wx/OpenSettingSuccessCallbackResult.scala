@@ -13,16 +13,13 @@ trait OpenSettingSuccessCallbackResult extends StObject {
 }
 object OpenSettingSuccessCallbackResult {
   
-  @scala.inline
-  def apply(authSetting: AuthSetting): OpenSettingSuccessCallbackResult = {
+  inline def apply(authSetting: AuthSetting): OpenSettingSuccessCallbackResult = {
     val __obj = js.Dynamic.literal(authSetting = authSetting.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenSettingSuccessCallbackResult]
   }
   
-  @scala.inline
-  implicit class OpenSettingSuccessCallbackResultMutableBuilder[Self <: OpenSettingSuccessCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: OpenSettingSuccessCallbackResult](x: Self) {
     
-    @scala.inline
-    def setAuthSetting(value: AuthSetting): Self = StObject.set(x, "authSetting", value.asInstanceOf[js.Any])
+    inline def setAuthSetting(value: AuthSetting): Self = StObject.set(x, "authSetting", value.asInstanceOf[js.Any])
   }
 }

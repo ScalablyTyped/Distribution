@@ -78,8 +78,7 @@ trait OnCompletedDetails extends StObject {
 }
 object OnCompletedDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     frameId: Double,
     fromCache: Boolean,
     method: String,
@@ -101,91 +100,62 @@ object OnCompletedDetails {
     __obj.asInstanceOf[OnCompletedDetails]
   }
   
-  @scala.inline
-  implicit class OnCompletedDetailsMutableBuilder[Self <: OnCompletedDetails] (val x: Self) extends AnyVal {
+  extension [Self <: OnCompletedDetails](x: Self) {
     
-    @scala.inline
-    def setCookieStoreId(value: String): Self = StObject.set(x, "cookieStoreId", value.asInstanceOf[js.Any])
+    inline def setCookieStoreId(value: String): Self = StObject.set(x, "cookieStoreId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCookieStoreIdUndefined: Self = StObject.set(x, "cookieStoreId", js.undefined)
+    inline def setCookieStoreIdUndefined: Self = StObject.set(x, "cookieStoreId", js.undefined)
     
-    @scala.inline
-    def setDocumentUrl(value: String): Self = StObject.set(x, "documentUrl", value.asInstanceOf[js.Any])
+    inline def setDocumentUrl(value: String): Self = StObject.set(x, "documentUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentUrlUndefined: Self = StObject.set(x, "documentUrl", js.undefined)
+    inline def setDocumentUrlUndefined: Self = StObject.set(x, "documentUrl", js.undefined)
     
-    @scala.inline
-    def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+    inline def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromCache(value: Boolean): Self = StObject.set(x, "fromCache", value.asInstanceOf[js.Any])
+    inline def setFromCache(value: Boolean): Self = StObject.set(x, "fromCache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncognito(value: Boolean): Self = StObject.set(x, "incognito", value.asInstanceOf[js.Any])
+    inline def setIncognito(value: Boolean): Self = StObject.set(x, "incognito", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncognitoUndefined: Self = StObject.set(x, "incognito", js.undefined)
+    inline def setIncognitoUndefined: Self = StObject.set(x, "incognito", js.undefined)
     
-    @scala.inline
-    def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+    inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
+    inline def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginUrl(value: String): Self = StObject.set(x, "originUrl", value.asInstanceOf[js.Any])
+    inline def setOriginUrl(value: String): Self = StObject.set(x, "originUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginUrlUndefined: Self = StObject.set(x, "originUrl", js.undefined)
+    inline def setOriginUrlUndefined: Self = StObject.set(x, "originUrl", js.undefined)
     
-    @scala.inline
-    def setParentFrameId(value: Double): Self = StObject.set(x, "parentFrameId", value.asInstanceOf[js.Any])
+    inline def setParentFrameId(value: Double): Self = StObject.set(x, "parentFrameId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestSize(value: Double): Self = StObject.set(x, "requestSize", value.asInstanceOf[js.Any])
+    inline def setRequestSize(value: Double): Self = StObject.set(x, "requestSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseHeaders(value: HttpHeaders): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
+    inline def setResponseHeaders(value: HttpHeaders): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
+    inline def setResponseHeadersUndefined: Self = StObject.set(x, "responseHeaders", js.undefined)
     
-    @scala.inline
-    def setResponseHeadersVarargs(value: _HttpHeaders*): Self = StObject.set(x, "responseHeaders", js.Array(value :_*))
+    inline def setResponseHeadersVarargs(value: _HttpHeaders*): Self = StObject.set(x, "responseHeaders", js.Array(value :_*))
     
-    @scala.inline
-    def setResponseSize(value: Double): Self = StObject.set(x, "responseSize", value.asInstanceOf[js.Any])
+    inline def setResponseSize(value: Double): Self = StObject.set(x, "responseSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusLine(value: String): Self = StObject.set(x, "statusLine", value.asInstanceOf[js.Any])
+    inline def setStatusLine(value: String): Self = StObject.set(x, "statusLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+    inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThirdParty(value: Boolean): Self = StObject.set(x, "thirdParty", value.asInstanceOf[js.Any])
+    inline def setThirdParty(value: Boolean): Self = StObject.set(x, "thirdParty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+    inline def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ResourceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ResourceType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlClassification(value: UrlClassification): Self = StObject.set(x, "urlClassification", value.asInstanceOf[js.Any])
+    inline def setUrlClassification(value: UrlClassification): Self = StObject.set(x, "urlClassification", value.asInstanceOf[js.Any])
   }
 }

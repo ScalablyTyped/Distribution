@@ -17,19 +17,15 @@ trait HighDynamicRangeOutput extends StObject {
 }
 object HighDynamicRangeOutput {
   
-  @scala.inline
-  def apply(certainty: Double, frameControllers: IVectorView[FrameController]): HighDynamicRangeOutput = {
+  inline def apply(certainty: Double, frameControllers: IVectorView[FrameController]): HighDynamicRangeOutput = {
     val __obj = js.Dynamic.literal(certainty = certainty.asInstanceOf[js.Any], frameControllers = frameControllers.asInstanceOf[js.Any])
     __obj.asInstanceOf[HighDynamicRangeOutput]
   }
   
-  @scala.inline
-  implicit class HighDynamicRangeOutputMutableBuilder[Self <: HighDynamicRangeOutput] (val x: Self) extends AnyVal {
+  extension [Self <: HighDynamicRangeOutput](x: Self) {
     
-    @scala.inline
-    def setCertainty(value: Double): Self = StObject.set(x, "certainty", value.asInstanceOf[js.Any])
+    inline def setCertainty(value: Double): Self = StObject.set(x, "certainty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameControllers(value: IVectorView[FrameController]): Self = StObject.set(x, "frameControllers", value.asInstanceOf[js.Any])
+    inline def setFrameControllers(value: IVectorView[FrameController]): Self = StObject.set(x, "frameControllers", value.asInstanceOf[js.Any])
   }
 }

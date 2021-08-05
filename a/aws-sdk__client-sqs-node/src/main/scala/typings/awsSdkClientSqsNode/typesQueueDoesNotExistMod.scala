@@ -16,17 +16,14 @@ object typesQueueDoesNotExistMod {
   }
   object QueueDoesNotExist {
     
-    @scala.inline
-    def apply(): QueueDoesNotExist = {
+    inline def apply(): QueueDoesNotExist = {
       val __obj = js.Dynamic.literal(name = "QueueDoesNotExist")
       __obj.asInstanceOf[QueueDoesNotExist]
     }
     
-    @scala.inline
-    implicit class QueueDoesNotExistMutableBuilder[Self <: QueueDoesNotExist] (val x: Self) extends AnyVal {
+    extension [Self <: QueueDoesNotExist](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.QueueDoesNotExist): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.QueueDoesNotExist): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

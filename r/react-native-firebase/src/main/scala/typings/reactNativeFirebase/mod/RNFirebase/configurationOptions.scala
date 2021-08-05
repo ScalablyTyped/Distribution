@@ -86,85 +86,59 @@ trait configurationOptions extends StObject {
 }
 object configurationOptions {
   
-  @scala.inline
-  def apply(): configurationOptions = {
+  inline def apply(): configurationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[configurationOptions]
   }
   
-  @scala.inline
-  implicit class configurationOptionsMutableBuilder[Self <: configurationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: configurationOptions](x: Self) {
     
-    @scala.inline
-    def setAPIKey(value: String): Self = StObject.set(x, "APIKey", value.asInstanceOf[js.Any])
+    inline def setAPIKey(value: String): Self = StObject.set(x, "APIKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAPIKeyUndefined: Self = StObject.set(x, "APIKey", js.undefined)
+    inline def setAPIKeyUndefined: Self = StObject.set(x, "APIKey", js.undefined)
     
-    @scala.inline
-    def setAndroidClientID(value: String): Self = StObject.set(x, "androidClientID", value.asInstanceOf[js.Any])
+    inline def setAndroidClientID(value: String): Self = StObject.set(x, "androidClientID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidClientIDUndefined: Self = StObject.set(x, "androidClientID", js.undefined)
+    inline def setAndroidClientIDUndefined: Self = StObject.set(x, "androidClientID", js.undefined)
     
-    @scala.inline
-    def setBundleID(value: String): Self = StObject.set(x, "bundleID", value.asInstanceOf[js.Any])
+    inline def setBundleID(value: String): Self = StObject.set(x, "bundleID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBundleIDUndefined: Self = StObject.set(x, "bundleID", js.undefined)
+    inline def setBundleIDUndefined: Self = StObject.set(x, "bundleID", js.undefined)
     
-    @scala.inline
-    def setClientID(value: String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
+    inline def setClientID(value: String): Self = StObject.set(x, "clientID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIDUndefined: Self = StObject.set(x, "clientID", js.undefined)
+    inline def setClientIDUndefined: Self = StObject.set(x, "clientID", js.undefined)
     
-    @scala.inline
-    def setDatabaseURL(value: String): Self = StObject.set(x, "databaseURL", value.asInstanceOf[js.Any])
+    inline def setDatabaseURL(value: String): Self = StObject.set(x, "databaseURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseURLUndefined: Self = StObject.set(x, "databaseURL", js.undefined)
+    inline def setDatabaseURLUndefined: Self = StObject.set(x, "databaseURL", js.undefined)
     
-    @scala.inline
-    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    @scala.inline
-    def setDeepLinkURLScheme(value: String): Self = StObject.set(x, "deepLinkURLScheme", value.asInstanceOf[js.Any])
+    inline def setDeepLinkURLScheme(value: String): Self = StObject.set(x, "deepLinkURLScheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeepLinkURLSchemeUndefined: Self = StObject.set(x, "deepLinkURLScheme", js.undefined)
+    inline def setDeepLinkURLSchemeUndefined: Self = StObject.set(x, "deepLinkURLScheme", js.undefined)
     
-    @scala.inline
-    def setGCMSenderID(value: String): Self = StObject.set(x, "GCMSenderID", value.asInstanceOf[js.Any])
+    inline def setGCMSenderID(value: String): Self = StObject.set(x, "GCMSenderID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGCMSenderIDUndefined: Self = StObject.set(x, "GCMSenderID", js.undefined)
+    inline def setGCMSenderIDUndefined: Self = StObject.set(x, "GCMSenderID", js.undefined)
     
-    @scala.inline
-    def setGoogleAppID(value: String): Self = StObject.set(x, "googleAppID", value.asInstanceOf[js.Any])
+    inline def setGoogleAppID(value: String): Self = StObject.set(x, "googleAppID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogleAppIDUndefined: Self = StObject.set(x, "googleAppID", js.undefined)
+    inline def setGoogleAppIDUndefined: Self = StObject.set(x, "googleAppID", js.undefined)
     
-    @scala.inline
-    def setPersistence(value: Boolean): Self = StObject.set(x, "persistence", value.asInstanceOf[js.Any])
+    inline def setPersistence(value: Boolean): Self = StObject.set(x, "persistence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersistenceUndefined: Self = StObject.set(x, "persistence", js.undefined)
+    inline def setPersistenceUndefined: Self = StObject.set(x, "persistence", js.undefined)
     
-    @scala.inline
-    def setStorageBucket(value: String): Self = StObject.set(x, "storageBucket", value.asInstanceOf[js.Any])
+    inline def setStorageBucket(value: String): Self = StObject.set(x, "storageBucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageBucketUndefined: Self = StObject.set(x, "storageBucket", js.undefined)
+    inline def setStorageBucketUndefined: Self = StObject.set(x, "storageBucket", js.undefined)
     
-    @scala.inline
-    def setTrackingID(value: String): Self = StObject.set(x, "trackingID", value.asInstanceOf[js.Any])
+    inline def setTrackingID(value: String): Self = StObject.set(x, "trackingID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackingIDUndefined: Self = StObject.set(x, "trackingID", js.undefined)
+    inline def setTrackingIDUndefined: Self = StObject.set(x, "trackingID", js.undefined)
   }
 }

@@ -22,50 +22,36 @@ object switchPropsTypeMod {
   }
   object SwitchPropsType {
     
-    @scala.inline
-    def apply(): SwitchPropsType = {
+    inline def apply(): SwitchPropsType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SwitchPropsType]
     }
     
-    @scala.inline
-    implicit class SwitchPropsTypeMutableBuilder[Self <: SwitchPropsType] (val x: Self) extends AnyVal {
+    extension [Self <: SwitchPropsType](x: Self) {
       
-      @scala.inline
-      def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+      inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+      inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* checked */ Boolean => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* checked */ Boolean => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnPress(value: /* checked */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
+      inline def setOnPress(value: /* checked */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
+      inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     }
   }
 }

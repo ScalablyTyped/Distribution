@@ -11,8 +11,6 @@ object getTokenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getToken(dependencies: FirebaseDependencies): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getToken")(dependencies.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
-  @scala.inline
-  def getToken(dependencies: FirebaseDependencies, forceRefresh: Boolean): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getToken")(dependencies.asInstanceOf[js.Any], forceRefresh.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def getToken(dependencies: FirebaseDependencies): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getToken")(dependencies.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def getToken(dependencies: FirebaseDependencies, forceRefresh: Boolean): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getToken")(dependencies.asInstanceOf[js.Any], forceRefresh.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
 }

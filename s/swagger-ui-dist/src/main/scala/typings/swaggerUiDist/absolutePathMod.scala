@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object absolutePathMod {
   
-  @scala.inline
-  def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
+  inline def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
   
   @JSImport("swagger-ui-dist/absolute-path", JSImport.Namespace)
   @js.native

@@ -31,34 +31,25 @@ trait DescribeStreamInputwaiter extends StObject {
 }
 object DescribeStreamInputwaiter {
   
-  @scala.inline
-  def apply(StreamName: StreamName): DescribeStreamInputwaiter = {
+  inline def apply(StreamName: StreamName): DescribeStreamInputwaiter = {
     val __obj = js.Dynamic.literal(StreamName = StreamName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeStreamInputwaiter]
   }
   
-  @scala.inline
-  implicit class DescribeStreamInputwaiterMutableBuilder[Self <: DescribeStreamInputwaiter] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeStreamInputwaiter](x: Self) {
     
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
+    inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    @scala.inline
-    def setExclusiveStartShardId(value: ShardId): Self = StObject.set(x, "ExclusiveStartShardId", value.asInstanceOf[js.Any])
+    inline def setExclusiveStartShardId(value: ShardId): Self = StObject.set(x, "ExclusiveStartShardId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusiveStartShardIdUndefined: Self = StObject.set(x, "ExclusiveStartShardId", js.undefined)
+    inline def setExclusiveStartShardIdUndefined: Self = StObject.set(x, "ExclusiveStartShardId", js.undefined)
     
-    @scala.inline
-    def setLimit(value: DescribeStreamInputLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: DescribeStreamInputLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+    inline def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
   }
 }

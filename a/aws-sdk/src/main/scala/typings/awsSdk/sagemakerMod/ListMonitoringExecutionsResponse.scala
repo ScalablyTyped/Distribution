@@ -18,25 +18,19 @@ trait ListMonitoringExecutionsResponse extends StObject {
 }
 object ListMonitoringExecutionsResponse {
   
-  @scala.inline
-  def apply(MonitoringExecutionSummaries: MonitoringExecutionSummaryList): ListMonitoringExecutionsResponse = {
+  inline def apply(MonitoringExecutionSummaries: MonitoringExecutionSummaryList): ListMonitoringExecutionsResponse = {
     val __obj = js.Dynamic.literal(MonitoringExecutionSummaries = MonitoringExecutionSummaries.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListMonitoringExecutionsResponse]
   }
   
-  @scala.inline
-  implicit class ListMonitoringExecutionsResponseMutableBuilder[Self <: ListMonitoringExecutionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListMonitoringExecutionsResponse](x: Self) {
     
-    @scala.inline
-    def setMonitoringExecutionSummaries(value: MonitoringExecutionSummaryList): Self = StObject.set(x, "MonitoringExecutionSummaries", value.asInstanceOf[js.Any])
+    inline def setMonitoringExecutionSummaries(value: MonitoringExecutionSummaryList): Self = StObject.set(x, "MonitoringExecutionSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitoringExecutionSummariesVarargs(value: MonitoringExecutionSummary*): Self = StObject.set(x, "MonitoringExecutionSummaries", js.Array(value :_*))
+    inline def setMonitoringExecutionSummariesVarargs(value: MonitoringExecutionSummary*): Self = StObject.set(x, "MonitoringExecutionSummaries", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

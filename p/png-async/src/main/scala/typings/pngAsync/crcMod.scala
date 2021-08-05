@@ -16,13 +16,12 @@ object crcMod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def crc32(buf: Buffer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("crc32")(buf.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def crc32(buf: Buffer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("crc32")(buf.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @js.native
   trait CrcStream extends Writable {
     
-    var _crc: js.Any = js.native
+    /* private */ var _crc: js.Any = js.native
     
     def _write(data: js.Any, encoding: js.Any, cb: js.Any): Unit = js.native
     

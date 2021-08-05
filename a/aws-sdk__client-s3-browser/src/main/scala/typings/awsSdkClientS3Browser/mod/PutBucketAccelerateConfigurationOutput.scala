@@ -10,8 +10,7 @@ trait PutBucketAccelerateConfigurationOutput
      with typings.awsSdkClientS3Browser.typesPutBucketAccelerateConfigurationOutputMod.PutBucketAccelerateConfigurationOutput
 object PutBucketAccelerateConfigurationOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): PutBucketAccelerateConfigurationOutput = {
+  inline def apply($metadata: ResponseMetadata): PutBucketAccelerateConfigurationOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketAccelerateConfigurationOutput]
   }

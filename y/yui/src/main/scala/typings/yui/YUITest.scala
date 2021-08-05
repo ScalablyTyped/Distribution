@@ -214,23 +214,18 @@ object YUITest {
   }
   object YUITestStatic {
     
-    @scala.inline
-    def apply(Assert: IAssert, Case: TestCase, Runner: TestRunner): YUITestStatic = {
+    inline def apply(Assert: IAssert, Case: TestCase, Runner: TestRunner): YUITestStatic = {
       val __obj = js.Dynamic.literal(Assert = Assert.asInstanceOf[js.Any], Case = Case.asInstanceOf[js.Any], Runner = Runner.asInstanceOf[js.Any])
       __obj.asInstanceOf[YUITestStatic]
     }
     
-    @scala.inline
-    implicit class YUITestStaticMutableBuilder[Self <: YUITestStatic] (val x: Self) extends AnyVal {
+    extension [Self <: YUITestStatic](x: Self) {
       
-      @scala.inline
-      def setAssert(value: IAssert): Self = StObject.set(x, "Assert", value.asInstanceOf[js.Any])
+      inline def setAssert(value: IAssert): Self = StObject.set(x, "Assert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCase(value: TestCase): Self = StObject.set(x, "Case", value.asInstanceOf[js.Any])
+      inline def setCase(value: TestCase): Self = StObject.set(x, "Case", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRunner(value: TestRunner): Self = StObject.set(x, "Runner", value.asInstanceOf[js.Any])
+      inline def setRunner(value: TestRunner): Self = StObject.set(x, "Runner", value.asInstanceOf[js.Any])
     }
   }
 }

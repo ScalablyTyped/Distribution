@@ -18,19 +18,15 @@ trait ShapeViewData extends StObject {
 }
 object ShapeViewData {
   
-  @scala.inline
-  def apply(): ShapeViewData = {
+  inline def apply(): ShapeViewData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShapeViewData]
   }
   
-  @scala.inline
-  implicit class ShapeViewDataMutableBuilder[Self <: ShapeViewData] (val x: Self) extends AnyVal {
+  extension [Self <: ShapeViewData](x: Self) {
     
-    @scala.inline
-    def setHighlight(value: Highlight): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+    inline def setHighlight(value: Highlight): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
+    inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
   }
 }

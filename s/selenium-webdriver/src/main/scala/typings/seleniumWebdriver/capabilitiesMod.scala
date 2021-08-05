@@ -197,33 +197,28 @@ object capabilitiesMod {
     /**
       * @return {!Capabilities} A basic set of capabilities for Chrome.
       */
-    @scala.inline
-    def chrome(): Capabilities = ^.asInstanceOf[js.Dynamic].applyDynamic("chrome")().asInstanceOf[Capabilities]
+    inline def chrome(): Capabilities = ^.asInstanceOf[js.Dynamic].applyDynamic("chrome")().asInstanceOf[Capabilities]
     
     /**
       * @return {!Capabilities} A basic set of capabilities for Microsoft Edge.
       */
-    @scala.inline
-    def edge(): Capabilities = ^.asInstanceOf[js.Dynamic].applyDynamic("edge")().asInstanceOf[Capabilities]
+    inline def edge(): Capabilities = ^.asInstanceOf[js.Dynamic].applyDynamic("edge")().asInstanceOf[Capabilities]
     
     /**
       * @return {!Capabilities} A basic set of capabilities for Firefox.
       */
-    @scala.inline
-    def firefox(): Capabilities = ^.asInstanceOf[js.Dynamic].applyDynamic("firefox")().asInstanceOf[Capabilities]
+    inline def firefox(): Capabilities = ^.asInstanceOf[js.Dynamic].applyDynamic("firefox")().asInstanceOf[Capabilities]
     
     /**
       * @return {!Capabilities} A basic set of capabilities for
       *     Internet Explorer.
       */
-    @scala.inline
-    def ie(): Capabilities = ^.asInstanceOf[js.Dynamic].applyDynamic("ie")().asInstanceOf[Capabilities]
+    inline def ie(): Capabilities = ^.asInstanceOf[js.Dynamic].applyDynamic("ie")().asInstanceOf[Capabilities]
     
     /**
       * @return {!Capabilities} A basic set of capabilities for Safari.
       */
-    @scala.inline
-    def safari(): Capabilities = ^.asInstanceOf[js.Dynamic].applyDynamic("safari")().asInstanceOf[Capabilities]
+    inline def safari(): Capabilities = ^.asInstanceOf[js.Dynamic].applyDynamic("safari")().asInstanceOf[Capabilities]
   }
   
   @JSImport("selenium-webdriver/lib/capabilities", "Capability")
@@ -258,8 +253,7 @@ object capabilitiesMod {
   }
   object IBrowser {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       CHROME: String,
       EDGE: String,
       FIREFOX: String,
@@ -271,26 +265,19 @@ object capabilitiesMod {
       __obj.asInstanceOf[IBrowser]
     }
     
-    @scala.inline
-    implicit class IBrowserMutableBuilder[Self <: IBrowser] (val x: Self) extends AnyVal {
+    extension [Self <: IBrowser](x: Self) {
       
-      @scala.inline
-      def setCHROME(value: String): Self = StObject.set(x, "CHROME", value.asInstanceOf[js.Any])
+      inline def setCHROME(value: String): Self = StObject.set(x, "CHROME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEDGE(value: String): Self = StObject.set(x, "EDGE", value.asInstanceOf[js.Any])
+      inline def setEDGE(value: String): Self = StObject.set(x, "EDGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFIREFOX(value: String): Self = StObject.set(x, "FIREFOX", value.asInstanceOf[js.Any])
+      inline def setFIREFOX(value: String): Self = StObject.set(x, "FIREFOX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIE(value: String): Self = StObject.set(x, "IE", value.asInstanceOf[js.Any])
+      inline def setIE(value: String): Self = StObject.set(x, "IE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setINTERNET_EXPLORER(value: String): Self = StObject.set(x, "INTERNET_EXPLORER", value.asInstanceOf[js.Any])
+      inline def setINTERNET_EXPLORER(value: String): Self = StObject.set(x, "INTERNET_EXPLORER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSAFARI(value: String): Self = StObject.set(x, "SAFARI", value.asInstanceOf[js.Any])
+      inline def setSAFARI(value: String): Self = StObject.set(x, "SAFARI", value.asInstanceOf[js.Any])
     }
   }
   
@@ -361,8 +348,7 @@ object capabilitiesMod {
   }
   object ICapability {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ACCEPT_INSECURE_TLS_CERTS: String,
       BROWSER_NAME: String,
       BROWSER_VERSION: String,
@@ -378,38 +364,27 @@ object capabilitiesMod {
       __obj.asInstanceOf[ICapability]
     }
     
-    @scala.inline
-    implicit class ICapabilityMutableBuilder[Self <: ICapability] (val x: Self) extends AnyVal {
+    extension [Self <: ICapability](x: Self) {
       
-      @scala.inline
-      def setACCEPT_INSECURE_TLS_CERTS(value: String): Self = StObject.set(x, "ACCEPT_INSECURE_TLS_CERTS", value.asInstanceOf[js.Any])
+      inline def setACCEPT_INSECURE_TLS_CERTS(value: String): Self = StObject.set(x, "ACCEPT_INSECURE_TLS_CERTS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBROWSER_NAME(value: String): Self = StObject.set(x, "BROWSER_NAME", value.asInstanceOf[js.Any])
+      inline def setBROWSER_NAME(value: String): Self = StObject.set(x, "BROWSER_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBROWSER_VERSION(value: String): Self = StObject.set(x, "BROWSER_VERSION", value.asInstanceOf[js.Any])
+      inline def setBROWSER_VERSION(value: String): Self = StObject.set(x, "BROWSER_VERSION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLOGGING_PREFS(value: String): Self = StObject.set(x, "LOGGING_PREFS", value.asInstanceOf[js.Any])
+      inline def setLOGGING_PREFS(value: String): Self = StObject.set(x, "LOGGING_PREFS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPAGE_LOAD_STRATEGY(value: String): Self = StObject.set(x, "PAGE_LOAD_STRATEGY", value.asInstanceOf[js.Any])
+      inline def setPAGE_LOAD_STRATEGY(value: String): Self = StObject.set(x, "PAGE_LOAD_STRATEGY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPLATFORM_NAME(value: String): Self = StObject.set(x, "PLATFORM_NAME", value.asInstanceOf[js.Any])
+      inline def setPLATFORM_NAME(value: String): Self = StObject.set(x, "PLATFORM_NAME", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPROXY(value: String): Self = StObject.set(x, "PROXY", value.asInstanceOf[js.Any])
+      inline def setPROXY(value: String): Self = StObject.set(x, "PROXY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSET_WINDOW_RECT(value: String): Self = StObject.set(x, "SET_WINDOW_RECT", value.asInstanceOf[js.Any])
+      inline def setSET_WINDOW_RECT(value: String): Self = StObject.set(x, "SET_WINDOW_RECT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTIMEOUTS(value: String): Self = StObject.set(x, "TIMEOUTS", value.asInstanceOf[js.Any])
+      inline def setTIMEOUTS(value: String): Self = StObject.set(x, "TIMEOUTS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUNHANDLED_PROMPT_BEHAVIOR(value: String): Self = StObject.set(x, "UNHANDLED_PROMPT_BEHAVIOR", value.asInstanceOf[js.Any])
+      inline def setUNHANDLED_PROMPT_BEHAVIOR(value: String): Self = StObject.set(x, "UNHANDLED_PROMPT_BEHAVIOR", value.asInstanceOf[js.Any])
     }
   }
   
@@ -435,23 +410,18 @@ object capabilitiesMod {
   }
   object IPageLoadStrategy {
     
-    @scala.inline
-    def apply(EAGER: String, NONE: String, NORMAL: String): IPageLoadStrategy = {
+    inline def apply(EAGER: String, NONE: String, NORMAL: String): IPageLoadStrategy = {
       val __obj = js.Dynamic.literal(EAGER = EAGER.asInstanceOf[js.Any], NONE = NONE.asInstanceOf[js.Any], NORMAL = NORMAL.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPageLoadStrategy]
     }
     
-    @scala.inline
-    implicit class IPageLoadStrategyMutableBuilder[Self <: IPageLoadStrategy] (val x: Self) extends AnyVal {
+    extension [Self <: IPageLoadStrategy](x: Self) {
       
-      @scala.inline
-      def setEAGER(value: String): Self = StObject.set(x, "EAGER", value.asInstanceOf[js.Any])
+      inline def setEAGER(value: String): Self = StObject.set(x, "EAGER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNONE(value: String): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
+      inline def setNONE(value: String): Self = StObject.set(x, "NONE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNORMAL(value: String): Self = StObject.set(x, "NORMAL", value.asInstanceOf[js.Any])
+      inline def setNORMAL(value: String): Self = StObject.set(x, "NORMAL", value.asInstanceOf[js.Any])
     }
   }
   
@@ -465,23 +435,18 @@ object capabilitiesMod {
   }
   object IPlatform {
     
-    @scala.inline
-    def apply(LINUX: String, MAC: String, WINDOWS: String): IPlatform = {
+    inline def apply(LINUX: String, MAC: String, WINDOWS: String): IPlatform = {
       val __obj = js.Dynamic.literal(LINUX = LINUX.asInstanceOf[js.Any], MAC = MAC.asInstanceOf[js.Any], WINDOWS = WINDOWS.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPlatform]
     }
     
-    @scala.inline
-    implicit class IPlatformMutableBuilder[Self <: IPlatform] (val x: Self) extends AnyVal {
+    extension [Self <: IPlatform](x: Self) {
       
-      @scala.inline
-      def setLINUX(value: String): Self = StObject.set(x, "LINUX", value.asInstanceOf[js.Any])
+      inline def setLINUX(value: String): Self = StObject.set(x, "LINUX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMAC(value: String): Self = StObject.set(x, "MAC", value.asInstanceOf[js.Any])
+      inline def setMAC(value: String): Self = StObject.set(x, "MAC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWINDOWS(value: String): Self = StObject.set(x, "WINDOWS", value.asInstanceOf[js.Any])
+      inline def setWINDOWS(value: String): Self = StObject.set(x, "WINDOWS", value.asInstanceOf[js.Any])
     }
   }
   
@@ -508,32 +473,24 @@ object capabilitiesMod {
   }
   object ITimeouts {
     
-    @scala.inline
-    def apply(): ITimeouts = {
+    inline def apply(): ITimeouts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ITimeouts]
     }
     
-    @scala.inline
-    implicit class ITimeoutsMutableBuilder[Self <: ITimeouts] (val x: Self) extends AnyVal {
+    extension [Self <: ITimeouts](x: Self) {
       
-      @scala.inline
-      def setImplicit(value: Double): Self = StObject.set(x, "implicit", value.asInstanceOf[js.Any])
+      inline def setImplicit(value: Double): Self = StObject.set(x, "implicit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImplicitUndefined: Self = StObject.set(x, "implicit", js.undefined)
+      inline def setImplicitUndefined: Self = StObject.set(x, "implicit", js.undefined)
       
-      @scala.inline
-      def setPageLoad(value: Double): Self = StObject.set(x, "pageLoad", value.asInstanceOf[js.Any])
+      inline def setPageLoad(value: Double): Self = StObject.set(x, "pageLoad", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageLoadUndefined: Self = StObject.set(x, "pageLoad", js.undefined)
+      inline def setPageLoadUndefined: Self = StObject.set(x, "pageLoad", js.undefined)
       
-      @scala.inline
-      def setScript(value: Double): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+      inline def setScript(value: Double): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
+      inline def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
     }
   }
   
@@ -562,8 +519,7 @@ object capabilitiesMod {
   }
   object IUserPromptHandler {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ACCEPT: String,
       ACCEPT_AND_NOTIFY: String,
       DISMISS: String,
@@ -574,23 +530,17 @@ object capabilitiesMod {
       __obj.asInstanceOf[IUserPromptHandler]
     }
     
-    @scala.inline
-    implicit class IUserPromptHandlerMutableBuilder[Self <: IUserPromptHandler] (val x: Self) extends AnyVal {
+    extension [Self <: IUserPromptHandler](x: Self) {
       
-      @scala.inline
-      def setACCEPT(value: String): Self = StObject.set(x, "ACCEPT", value.asInstanceOf[js.Any])
+      inline def setACCEPT(value: String): Self = StObject.set(x, "ACCEPT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setACCEPT_AND_NOTIFY(value: String): Self = StObject.set(x, "ACCEPT_AND_NOTIFY", value.asInstanceOf[js.Any])
+      inline def setACCEPT_AND_NOTIFY(value: String): Self = StObject.set(x, "ACCEPT_AND_NOTIFY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDISMISS(value: String): Self = StObject.set(x, "DISMISS", value.asInstanceOf[js.Any])
+      inline def setDISMISS(value: String): Self = StObject.set(x, "DISMISS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDISMISS_AND_NOTIFY(value: String): Self = StObject.set(x, "DISMISS_AND_NOTIFY", value.asInstanceOf[js.Any])
+      inline def setDISMISS_AND_NOTIFY(value: String): Self = StObject.set(x, "DISMISS_AND_NOTIFY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIGNORE(value: String): Self = StObject.set(x, "IGNORE", value.asInstanceOf[js.Any])
+      inline def setIGNORE(value: String): Self = StObject.set(x, "IGNORE", value.asInstanceOf[js.Any])
     }
   }
 }

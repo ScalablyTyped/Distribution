@@ -18,22 +18,17 @@ trait DeleteVpnGatewayRequest extends StObject {
 }
 object DeleteVpnGatewayRequest {
   
-  @scala.inline
-  def apply(VpnGatewayId: VpnGatewayId): DeleteVpnGatewayRequest = {
+  inline def apply(VpnGatewayId: VpnGatewayId): DeleteVpnGatewayRequest = {
     val __obj = js.Dynamic.literal(VpnGatewayId = VpnGatewayId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteVpnGatewayRequest]
   }
   
-  @scala.inline
-  implicit class DeleteVpnGatewayRequestMutableBuilder[Self <: DeleteVpnGatewayRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteVpnGatewayRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setVpnGatewayId(value: VpnGatewayId): Self = StObject.set(x, "VpnGatewayId", value.asInstanceOf[js.Any])
+    inline def setVpnGatewayId(value: VpnGatewayId): Self = StObject.set(x, "VpnGatewayId", value.asInstanceOf[js.Any])
   }
 }

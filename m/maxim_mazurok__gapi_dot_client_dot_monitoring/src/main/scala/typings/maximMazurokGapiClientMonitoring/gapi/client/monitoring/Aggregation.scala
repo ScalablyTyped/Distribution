@@ -43,40 +43,29 @@ trait Aggregation extends StObject {
 }
 object Aggregation {
   
-  @scala.inline
-  def apply(): Aggregation = {
+  inline def apply(): Aggregation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Aggregation]
   }
   
-  @scala.inline
-  implicit class AggregationMutableBuilder[Self <: Aggregation] (val x: Self) extends AnyVal {
+  extension [Self <: Aggregation](x: Self) {
     
-    @scala.inline
-    def setAlignmentPeriod(value: String): Self = StObject.set(x, "alignmentPeriod", value.asInstanceOf[js.Any])
+    inline def setAlignmentPeriod(value: String): Self = StObject.set(x, "alignmentPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignmentPeriodUndefined: Self = StObject.set(x, "alignmentPeriod", js.undefined)
+    inline def setAlignmentPeriodUndefined: Self = StObject.set(x, "alignmentPeriod", js.undefined)
     
-    @scala.inline
-    def setCrossSeriesReducer(value: String): Self = StObject.set(x, "crossSeriesReducer", value.asInstanceOf[js.Any])
+    inline def setCrossSeriesReducer(value: String): Self = StObject.set(x, "crossSeriesReducer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossSeriesReducerUndefined: Self = StObject.set(x, "crossSeriesReducer", js.undefined)
+    inline def setCrossSeriesReducerUndefined: Self = StObject.set(x, "crossSeriesReducer", js.undefined)
     
-    @scala.inline
-    def setGroupByFields(value: js.Array[String]): Self = StObject.set(x, "groupByFields", value.asInstanceOf[js.Any])
+    inline def setGroupByFields(value: js.Array[String]): Self = StObject.set(x, "groupByFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupByFieldsUndefined: Self = StObject.set(x, "groupByFields", js.undefined)
+    inline def setGroupByFieldsUndefined: Self = StObject.set(x, "groupByFields", js.undefined)
     
-    @scala.inline
-    def setGroupByFieldsVarargs(value: String*): Self = StObject.set(x, "groupByFields", js.Array(value :_*))
+    inline def setGroupByFieldsVarargs(value: String*): Self = StObject.set(x, "groupByFields", js.Array(value :_*))
     
-    @scala.inline
-    def setPerSeriesAligner(value: String): Self = StObject.set(x, "perSeriesAligner", value.asInstanceOf[js.Any])
+    inline def setPerSeriesAligner(value: String): Self = StObject.set(x, "perSeriesAligner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerSeriesAlignerUndefined: Self = StObject.set(x, "perSeriesAligner", js.undefined)
+    inline def setPerSeriesAlignerUndefined: Self = StObject.set(x, "perSeriesAligner", js.undefined)
   }
 }

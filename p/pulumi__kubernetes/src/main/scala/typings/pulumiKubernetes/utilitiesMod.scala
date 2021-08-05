@@ -10,15 +10,11 @@ object utilitiesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getEnv(vars: String*): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnv")(vars.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def getEnv(vars: String*): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnv")(vars.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
-  @scala.inline
-  def getEnvBoolean(vars: String*): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnvBoolean")(vars.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Boolean]]
+  inline def getEnvBoolean(vars: String*): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnvBoolean")(vars.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Boolean]]
   
-  @scala.inline
-  def getEnvNumber(vars: String*): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnvNumber")(vars.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
+  inline def getEnvNumber(vars: String*): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnvNumber")(vars.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
   
-  @scala.inline
-  def getVersion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getVersion")().asInstanceOf[String]
+  inline def getVersion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getVersion")().asInstanceOf[String]
 }

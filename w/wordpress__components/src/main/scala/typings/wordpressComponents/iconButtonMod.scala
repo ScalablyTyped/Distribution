@@ -53,35 +53,26 @@ object iconButtonMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(icon: Icon | Element): Props = {
+      inline def apply(icon: Icon | Element): Props = {
         val __obj = js.Dynamic.literal(icon = icon.asInstanceOf[js.Any])
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setIcon(value: Icon | Element): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        inline def setIcon(value: Icon | Element): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLabelPosition(value: Position): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
+        inline def setLabelPosition(value: Position): Self = StObject.set(x, "labelPosition", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLabelPositionUndefined: Self = StObject.set(x, "labelPosition", js.undefined)
+        inline def setLabelPositionUndefined: Self = StObject.set(x, "labelPosition", js.undefined)
         
-        @scala.inline
-        def setShortcut(value: ShortcutType): Self = StObject.set(x, "shortcut", value.asInstanceOf[js.Any])
+        inline def setShortcut(value: ShortcutType): Self = StObject.set(x, "shortcut", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShortcutUndefined: Self = StObject.set(x, "shortcut", js.undefined)
+        inline def setShortcutUndefined: Self = StObject.set(x, "shortcut", js.undefined)
         
-        @scala.inline
-        def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+        inline def setTooltip(value: String): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+        inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
       }
     }
   }

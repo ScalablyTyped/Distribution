@@ -19,31 +19,23 @@ trait PublicKeyAuthMethodData
 }
 object PublicKeyAuthMethodData {
   
-  @scala.inline
-  def apply(key: Buffer, keyAlgo: String): PublicKeyAuthMethodData = {
+  inline def apply(key: Buffer, keyAlgo: String): PublicKeyAuthMethodData = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], keyAlgo = keyAlgo.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublicKeyAuthMethodData]
   }
   
-  @scala.inline
-  implicit class PublicKeyAuthMethodDataMutableBuilder[Self <: PublicKeyAuthMethodData] (val x: Self) extends AnyVal {
+  extension [Self <: PublicKeyAuthMethodData](x: Self) {
     
-    @scala.inline
-    def setBlob(value: Buffer): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
+    inline def setBlob(value: Buffer): Self = StObject.set(x, "blob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlobUndefined: Self = StObject.set(x, "blob", js.undefined)
+    inline def setBlobUndefined: Self = StObject.set(x, "blob", js.undefined)
     
-    @scala.inline
-    def setKey(value: Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyAlgo(value: String): Self = StObject.set(x, "keyAlgo", value.asInstanceOf[js.Any])
+    inline def setKeyAlgo(value: String): Self = StObject.set(x, "keyAlgo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignature(value: Buffer): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+    inline def setSignature(value: Buffer): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
+    inline def setSignatureUndefined: Self = StObject.set(x, "signature", js.undefined)
   }
 }

@@ -33,46 +33,33 @@ trait ListGroupResourcesInput extends StObject {
 }
 object ListGroupResourcesInput {
   
-  @scala.inline
-  def apply(): ListGroupResourcesInput = {
+  inline def apply(): ListGroupResourcesInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListGroupResourcesInput]
   }
   
-  @scala.inline
-  implicit class ListGroupResourcesInputMutableBuilder[Self <: ListGroupResourcesInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListGroupResourcesInput](x: Self) {
     
-    @scala.inline
-    def setFilters(value: ResourceFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: ResourceFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: ResourceFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: ResourceFilter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setGroup(value: GroupString): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: GroupString): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupName(value: GroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: GroupName): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
+    inline def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "Group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "Group", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

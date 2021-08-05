@@ -44,52 +44,37 @@ trait ReposCreateOrUpdateFileContentsEndpoint extends StObject {
 }
 object ReposCreateOrUpdateFileContentsEndpoint {
   
-  @scala.inline
-  def apply(content: String, message: String, owner: String, path: String, repo: String): ReposCreateOrUpdateFileContentsEndpoint = {
+  inline def apply(content: String, message: String, owner: String, path: String, repo: String): ReposCreateOrUpdateFileContentsEndpoint = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposCreateOrUpdateFileContentsEndpoint]
   }
   
-  @scala.inline
-  implicit class ReposCreateOrUpdateFileContentsEndpointMutableBuilder[Self <: ReposCreateOrUpdateFileContentsEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReposCreateOrUpdateFileContentsEndpoint](x: Self) {
     
-    @scala.inline
-    def setAuthor(value: ReposCreateOrUpdateFileContentsParamsAuthor): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: ReposCreateOrUpdateFileContentsParamsAuthor): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
+    inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
     
-    @scala.inline
-    def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+    inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
+    inline def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
     
-    @scala.inline
-    def setCommitter(value: ReposCreateOrUpdateFileContentsParamsCommitter): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
+    inline def setCommitter(value: ReposCreateOrUpdateFileContentsParamsCommitter): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitterUndefined: Self = StObject.set(x, "committer", js.undefined)
+    inline def setCommitterUndefined: Self = StObject.set(x, "committer", js.undefined)
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
+    inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShaUndefined: Self = StObject.set(x, "sha", js.undefined)
+    inline def setShaUndefined: Self = StObject.set(x, "sha", js.undefined)
   }
 }

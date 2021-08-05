@@ -30,9 +30,9 @@ object indexMapMod {
     
     def hasIndex(indexDefinition: Index): Boolean = js.native
     
-    var indexSet_ : js.Any = js.native
+    /* private */ var indexSet_ : js.Any = js.native
     
-    var indexes_ : js.Any = js.native
+    /* private */ var indexes_ : js.Any = js.native
     
     /**
       * Create a new IndexMap instance with the given value removed

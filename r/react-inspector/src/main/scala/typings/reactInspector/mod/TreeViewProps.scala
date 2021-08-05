@@ -31,46 +31,33 @@ trait TreeViewProps extends StObject {
 }
 object TreeViewProps {
   
-  @scala.inline
-  def apply(): TreeViewProps = {
+  inline def apply(): TreeViewProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TreeViewProps]
   }
   
-  @scala.inline
-  implicit class TreeViewPropsMutableBuilder[Self <: TreeViewProps] (val x: Self) extends AnyVal {
+  extension [Self <: TreeViewProps](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setExpandLevel(value: Double): Self = StObject.set(x, "expandLevel", value.asInstanceOf[js.Any])
+    inline def setExpandLevel(value: Double): Self = StObject.set(x, "expandLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandLevelUndefined: Self = StObject.set(x, "expandLevel", js.undefined)
+    inline def setExpandLevelUndefined: Self = StObject.set(x, "expandLevel", js.undefined)
     
-    @scala.inline
-    def setExpandPaths(value: String | js.Array[String]): Self = StObject.set(x, "expandPaths", value.asInstanceOf[js.Any])
+    inline def setExpandPaths(value: String | js.Array[String]): Self = StObject.set(x, "expandPaths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandPathsUndefined: Self = StObject.set(x, "expandPaths", js.undefined)
+    inline def setExpandPathsUndefined: Self = StObject.set(x, "expandPaths", js.undefined)
     
-    @scala.inline
-    def setExpandPathsVarargs(value: String*): Self = StObject.set(x, "expandPaths", js.Array(value :_*))
+    inline def setExpandPathsVarargs(value: String*): Self = StObject.set(x, "expandPaths", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNodeRenderer(value: /* params */ InspectorNodeParams => ReactNode): Self = StObject.set(x, "nodeRenderer", js.Any.fromFunction1(value))
+    inline def setNodeRenderer(value: /* params */ InspectorNodeParams => ReactNode): Self = StObject.set(x, "nodeRenderer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNodeRendererUndefined: Self = StObject.set(x, "nodeRenderer", js.undefined)
+    inline def setNodeRendererUndefined: Self = StObject.set(x, "nodeRenderer", js.undefined)
   }
 }

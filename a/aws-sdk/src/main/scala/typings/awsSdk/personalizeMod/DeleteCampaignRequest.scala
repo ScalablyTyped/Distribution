@@ -13,16 +13,13 @@ trait DeleteCampaignRequest extends StObject {
 }
 object DeleteCampaignRequest {
   
-  @scala.inline
-  def apply(campaignArn: Arn): DeleteCampaignRequest = {
+  inline def apply(campaignArn: Arn): DeleteCampaignRequest = {
     val __obj = js.Dynamic.literal(campaignArn = campaignArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteCampaignRequest]
   }
   
-  @scala.inline
-  implicit class DeleteCampaignRequestMutableBuilder[Self <: DeleteCampaignRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteCampaignRequest](x: Self) {
     
-    @scala.inline
-    def setCampaignArn(value: Arn): Self = StObject.set(x, "campaignArn", value.asInstanceOf[js.Any])
+    inline def setCampaignArn(value: Arn): Self = StObject.set(x, "campaignArn", value.asInstanceOf[js.Any])
   }
 }

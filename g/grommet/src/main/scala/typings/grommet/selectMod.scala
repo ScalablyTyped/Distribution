@@ -113,251 +113,170 @@ object selectMod {
   }
   object SelectProps {
     
-    @scala.inline
-    def apply(options: js.Array[String | Boolean | Double | Element | js.Object]): SelectProps = {
+    inline def apply(options: js.Array[String | Boolean | Double | Element | js.Object]): SelectProps = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[SelectProps]
     }
     
-    @scala.inline
-    implicit class SelectPropsMutableBuilder[Self <: SelectProps] (val x: Self) extends AnyVal {
+    extension [Self <: SelectProps](x: Self) {
       
-      @scala.inline
-      def setA11yTitle(value: A11yTitleType): Self = StObject.set(x, "a11yTitle", value.asInstanceOf[js.Any])
+      inline def setA11yTitle(value: A11yTitleType): Self = StObject.set(x, "a11yTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setA11yTitleUndefined: Self = StObject.set(x, "a11yTitle", js.undefined)
+      inline def setA11yTitleUndefined: Self = StObject.set(x, "a11yTitle", js.undefined)
       
-      @scala.inline
-      def setAlignSelf(value: AlignSelfType): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
+      inline def setAlignSelf(value: AlignSelfType): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
+      inline def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
       
-      @scala.inline
-      def setChildren(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setCloseOnChange(value: Boolean): Self = StObject.set(x, "closeOnChange", value.asInstanceOf[js.Any])
+      inline def setCloseOnChange(value: Boolean): Self = StObject.set(x, "closeOnChange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseOnChangeUndefined: Self = StObject.set(x, "closeOnChange", js.undefined)
+      inline def setCloseOnChangeUndefined: Self = StObject.set(x, "closeOnChange", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean | (js.Array[Double | String | js.Object])): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean | (js.Array[Double | String | js.Object])): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledKey(value: String | (js.Function1[/* repeated */ js.Any, js.Any])): Self = StObject.set(x, "disabledKey", value.asInstanceOf[js.Any])
+      inline def setDisabledKey(value: String | (js.Function1[/* repeated */ js.Any, js.Any])): Self = StObject.set(x, "disabledKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledKeyFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "disabledKey", js.Any.fromFunction1(value))
+      inline def setDisabledKeyFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "disabledKey", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDisabledKeyUndefined: Self = StObject.set(x, "disabledKey", js.undefined)
+      inline def setDisabledKeyUndefined: Self = StObject.set(x, "disabledKey", js.undefined)
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setDisabledVarargs(value: (Double | String | js.Object)*): Self = StObject.set(x, "disabled", js.Array(value :_*))
+      inline def setDisabledVarargs(value: (Double | String | js.Object)*): Self = StObject.set(x, "disabled", js.Array(value :_*))
       
-      @scala.inline
-      def setDropAlign(value: Bottom): Self = StObject.set(x, "dropAlign", value.asInstanceOf[js.Any])
+      inline def setDropAlign(value: Bottom): Self = StObject.set(x, "dropAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropAlignUndefined: Self = StObject.set(x, "dropAlign", js.undefined)
+      inline def setDropAlignUndefined: Self = StObject.set(x, "dropAlign", js.undefined)
       
-      @scala.inline
-      def setDropHeight(value: xsmall | small | medium | large | xlarge | String): Self = StObject.set(x, "dropHeight", value.asInstanceOf[js.Any])
+      inline def setDropHeight(value: xsmall | small | medium | large | xlarge | String): Self = StObject.set(x, "dropHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropHeightUndefined: Self = StObject.set(x, "dropHeight", js.undefined)
+      inline def setDropHeightUndefined: Self = StObject.set(x, "dropHeight", js.undefined)
       
-      @scala.inline
-      def setDropProps(value: DropProps): Self = StObject.set(x, "dropProps", value.asInstanceOf[js.Any])
+      inline def setDropProps(value: DropProps): Self = StObject.set(x, "dropProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropPropsUndefined: Self = StObject.set(x, "dropProps", js.undefined)
+      inline def setDropPropsUndefined: Self = StObject.set(x, "dropProps", js.undefined)
       
-      @scala.inline
-      def setDropTarget(value: js.Object): Self = StObject.set(x, "dropTarget", value.asInstanceOf[js.Any])
+      inline def setDropTarget(value: js.Object): Self = StObject.set(x, "dropTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropTargetUndefined: Self = StObject.set(x, "dropTarget", js.undefined)
+      inline def setDropTargetUndefined: Self = StObject.set(x, "dropTarget", js.undefined)
       
-      @scala.inline
-      def setEmptySearchMessage(value: String): Self = StObject.set(x, "emptySearchMessage", value.asInstanceOf[js.Any])
+      inline def setEmptySearchMessage(value: String): Self = StObject.set(x, "emptySearchMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmptySearchMessageUndefined: Self = StObject.set(x, "emptySearchMessage", js.undefined)
+      inline def setEmptySearchMessageUndefined: Self = StObject.set(x, "emptySearchMessage", js.undefined)
       
-      @scala.inline
-      def setFocusIndicator(value: Boolean): Self = StObject.set(x, "focusIndicator", value.asInstanceOf[js.Any])
+      inline def setFocusIndicator(value: Boolean): Self = StObject.set(x, "focusIndicator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusIndicatorUndefined: Self = StObject.set(x, "focusIndicator", js.undefined)
+      inline def setFocusIndicatorUndefined: Self = StObject.set(x, "focusIndicator", js.undefined)
       
-      @scala.inline
-      def setGridArea(value: GridAreaType): Self = StObject.set(x, "gridArea", value.asInstanceOf[js.Any])
+      inline def setGridArea(value: GridAreaType): Self = StObject.set(x, "gridArea", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridAreaUndefined: Self = StObject.set(x, "gridArea", js.undefined)
+      inline def setGridAreaUndefined: Self = StObject.set(x, "gridArea", js.undefined)
       
-      @scala.inline
-      def setIcon(value: Boolean | (js.Function1[/* repeated */ js.Any, js.Any]) | ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: Boolean | (js.Function1[/* repeated */ js.Any, js.Any]) | ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "icon", js.Any.fromFunction1(value))
+      inline def setIconFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "icon", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setLabelKey(value: String | (js.Function1[/* repeated */ js.Any, js.Any])): Self = StObject.set(x, "labelKey", value.asInstanceOf[js.Any])
+      inline def setLabelKey(value: String | (js.Function1[/* repeated */ js.Any, js.Any])): Self = StObject.set(x, "labelKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelKeyFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "labelKey", js.Any.fromFunction1(value))
+      inline def setLabelKeyFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "labelKey", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLabelKeyUndefined: Self = StObject.set(x, "labelKey", js.undefined)
+      inline def setLabelKeyUndefined: Self = StObject.set(x, "labelKey", js.undefined)
       
-      @scala.inline
-      def setMargin(value: MarginType): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: MarginType): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+      inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      @scala.inline
-      def setMessages(value: Multiple): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      inline def setMessages(value: Multiple): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+      inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
       
-      @scala.inline
-      def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+      inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+      inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnClose(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+      inline def setOnClose(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setOnMore(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onMore", js.Any.fromFunction1(value))
+      inline def setOnMore(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onMore", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMoreUndefined: Self = StObject.set(x, "onMore", js.undefined)
+      inline def setOnMoreUndefined: Self = StObject.set(x, "onMore", js.undefined)
       
-      @scala.inline
-      def setOnOpen(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
+      inline def setOnOpen(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
+      inline def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
       
-      @scala.inline
-      def setOnSearch(value: /* search */ String => Unit): Self = StObject.set(x, "onSearch", js.Any.fromFunction1(value))
+      inline def setOnSearch(value: /* search */ String => Unit): Self = StObject.set(x, "onSearch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSearchUndefined: Self = StObject.set(x, "onSearch", js.undefined)
+      inline def setOnSearchUndefined: Self = StObject.set(x, "onSearch", js.undefined)
       
-      @scala.inline
-      def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+      inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       
-      @scala.inline
-      def setOptions(value: js.Array[String | Boolean | Double | Element | js.Object]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Array[String | Boolean | Double | Element | js.Object]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsVarargs(value: (String | Boolean | Double | Element | js.Object)*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: (String | Boolean | Double | Element | js.Object)*): Self = StObject.set(x, "options", js.Array(value :_*))
       
-      @scala.inline
-      def setPlaceholder(value: PlaceHolderType): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: PlaceHolderType): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setPlain(value: Boolean): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
+      inline def setPlain(value: Boolean): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlainUndefined: Self = StObject.set(x, "plain", js.undefined)
+      inline def setPlainUndefined: Self = StObject.set(x, "plain", js.undefined)
       
-      @scala.inline
-      def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+      inline def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+      inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
       
-      @scala.inline
-      def setSearchPlaceholder(value: String): Self = StObject.set(x, "searchPlaceholder", value.asInstanceOf[js.Any])
+      inline def setSearchPlaceholder(value: String): Self = StObject.set(x, "searchPlaceholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchPlaceholderUndefined: Self = StObject.set(x, "searchPlaceholder", js.undefined)
+      inline def setSearchPlaceholderUndefined: Self = StObject.set(x, "searchPlaceholder", js.undefined)
       
-      @scala.inline
-      def setSelected(value: Double | js.Array[Double]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Double | js.Array[Double]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+      inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
       
-      @scala.inline
-      def setSelectedVarargs(value: Double*): Self = StObject.set(x, "selected", js.Array(value :_*))
+      inline def setSelectedVarargs(value: Double*): Self = StObject.set(x, "selected", js.Array(value :_*))
       
-      @scala.inline
-      def setSize(value: small | medium | large | xlarge | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: small | medium | large | xlarge | String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setValue(value: String | Element | js.Object | (js.Array[String | Double | js.Object])): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String | Element | js.Object | (js.Array[String | Double | js.Object])): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueKey(value: String | Key | (js.Function1[/* repeated */ js.Any, js.Any])): Self = StObject.set(x, "valueKey", value.asInstanceOf[js.Any])
+      inline def setValueKey(value: String | Key | (js.Function1[/* repeated */ js.Any, js.Any])): Self = StObject.set(x, "valueKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueKeyFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "valueKey", js.Any.fromFunction1(value))
+      inline def setValueKeyFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "valueKey", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValueKeyUndefined: Self = StObject.set(x, "valueKey", js.undefined)
+      inline def setValueKeyUndefined: Self = StObject.set(x, "valueKey", js.undefined)
       
-      @scala.inline
-      def setValueLabel(value: ReactNode): Self = StObject.set(x, "valueLabel", value.asInstanceOf[js.Any])
+      inline def setValueLabel(value: ReactNode): Self = StObject.set(x, "valueLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueLabelUndefined: Self = StObject.set(x, "valueLabel", js.undefined)
+      inline def setValueLabelUndefined: Self = StObject.set(x, "valueLabel", js.undefined)
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setValueVarargs(value: (String | Double | js.Object)*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: (String | Double | js.Object)*): Self = StObject.set(x, "value", js.Array(value :_*))
     }
   }
 }

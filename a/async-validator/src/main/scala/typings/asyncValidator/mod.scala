@@ -97,114 +97,80 @@ object mod {
   }
   object RuleItem {
     
-    @scala.inline
-    def apply(): RuleItem = {
+    inline def apply(): RuleItem = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RuleItem]
     }
     
-    @scala.inline
-    implicit class RuleItemMutableBuilder[Self <: RuleItem] (val x: Self) extends AnyVal {
+    extension [Self <: RuleItem](x: Self) {
       
-      @scala.inline
-      def setAsyncValidator(
+      inline def setAsyncValidator(
         value: (/* rule */ Rules, /* value */ js.Any, /* callback */ js.Function1[/* error */ String | js.Array[String] | Unit, Unit], /* source */ ValidateSource, /* options */ ValidateOption) => Unit | js.Promise[Unit]
       ): Self = StObject.set(x, "asyncValidator", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setAsyncValidatorUndefined: Self = StObject.set(x, "asyncValidator", js.undefined)
+      inline def setAsyncValidatorUndefined: Self = StObject.set(x, "asyncValidator", js.undefined)
       
-      @scala.inline
-      def setDefaultField(value: RuleItem): Self = StObject.set(x, "defaultField", value.asInstanceOf[js.Any])
+      inline def setDefaultField(value: RuleItem): Self = StObject.set(x, "defaultField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultFieldUndefined: Self = StObject.set(x, "defaultField", js.undefined)
+      inline def setDefaultFieldUndefined: Self = StObject.set(x, "defaultField", js.undefined)
       
-      @scala.inline
-      def setEnum(value: js.Array[js.UndefOr[String | Double | Boolean | Null]]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
+      inline def setEnum(value: js.Array[js.UndefOr[String | Double | Boolean | Null]]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
+      inline def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
       
-      @scala.inline
-      def setEnumVarargs(value: (js.UndefOr[String | Double | Boolean | Null])*): Self = StObject.set(x, "enum", js.Array(value :_*))
+      inline def setEnumVarargs(value: (js.UndefOr[String | Double | Boolean | Null])*): Self = StObject.set(x, "enum", js.Array(value :_*))
       
-      @scala.inline
-      def setFields(value: Rules): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: Rules): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      @scala.inline
-      def setLen(value: Double): Self = StObject.set(x, "len", value.asInstanceOf[js.Any])
+      inline def setLen(value: Double): Self = StObject.set(x, "len", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLenUndefined: Self = StObject.set(x, "len", js.undefined)
+      inline def setLenUndefined: Self = StObject.set(x, "len", js.undefined)
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String | js.Function0[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String | js.Function0[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageFunction0(value: () => String): Self = StObject.set(x, "message", js.Any.fromFunction0(value))
+      inline def setMessageFunction0(value: () => String): Self = StObject.set(x, "message", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      @scala.inline
-      def setOptions(value: ValidateOption): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: ValidateOption): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setPattern(value: RegExp | String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+      inline def setPattern(value: RegExp | String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+      inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
       
-      @scala.inline
-      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
-      @scala.inline
-      def setTransform(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+      inline def setTransform(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
-      @scala.inline
-      def setType(value: RuleType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: RuleType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setValidator(
+      inline def setValidator(
         value: (/* rule */ Rules, /* value */ js.Any, /* callback */ js.Function1[/* error */ String | js.Array[String] | Unit, Unit], /* source */ ValidateSource, /* options */ ValidateOption) => Unit
       ): Self = StObject.set(x, "validator", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
+      inline def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
       
-      @scala.inline
-      def setWhitespace(value: Boolean): Self = StObject.set(x, "whitespace", value.asInstanceOf[js.Any])
+      inline def setWhitespace(value: Boolean): Self = StObject.set(x, "whitespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhitespaceUndefined: Self = StObject.set(x, "whitespace", js.undefined)
+      inline def setWhitespaceUndefined: Self = StObject.set(x, "whitespace", js.undefined)
     }
   }
   
@@ -228,50 +194,35 @@ object mod {
   trait RuleType extends StObject
   object RuleType {
     
-    @scala.inline
-    def any: typings.asyncValidator.asyncValidatorStrings.any = "any".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.any]
+    inline def any: typings.asyncValidator.asyncValidatorStrings.any = "any".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.any]
     
-    @scala.inline
-    def array: typings.asyncValidator.asyncValidatorStrings.array = "array".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.array]
+    inline def array: typings.asyncValidator.asyncValidatorStrings.array = "array".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.array]
     
-    @scala.inline
-    def boolean: typings.asyncValidator.asyncValidatorStrings.boolean = "boolean".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.boolean]
+    inline def boolean: typings.asyncValidator.asyncValidatorStrings.boolean = "boolean".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.boolean]
     
-    @scala.inline
-    def date: typings.asyncValidator.asyncValidatorStrings.date = "date".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.date]
+    inline def date: typings.asyncValidator.asyncValidatorStrings.date = "date".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.date]
     
-    @scala.inline
-    def email: typings.asyncValidator.asyncValidatorStrings.email = "email".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.email]
+    inline def email: typings.asyncValidator.asyncValidatorStrings.email = "email".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.email]
     
-    @scala.inline
-    def `enum`: typings.asyncValidator.asyncValidatorStrings.`enum` = "enum".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.`enum`]
+    inline def `enum`: typings.asyncValidator.asyncValidatorStrings.`enum` = "enum".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.`enum`]
     
-    @scala.inline
-    def float: typings.asyncValidator.asyncValidatorStrings.float = "float".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.float]
+    inline def float: typings.asyncValidator.asyncValidatorStrings.float = "float".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.float]
     
-    @scala.inline
-    def hex: typings.asyncValidator.asyncValidatorStrings.hex = "hex".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.hex]
+    inline def hex: typings.asyncValidator.asyncValidatorStrings.hex = "hex".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.hex]
     
-    @scala.inline
-    def integer: typings.asyncValidator.asyncValidatorStrings.integer = "integer".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.integer]
+    inline def integer: typings.asyncValidator.asyncValidatorStrings.integer = "integer".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.integer]
     
-    @scala.inline
-    def method: typings.asyncValidator.asyncValidatorStrings.method = "method".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.method]
+    inline def method: typings.asyncValidator.asyncValidatorStrings.method = "method".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.method]
     
-    @scala.inline
-    def number: typings.asyncValidator.asyncValidatorStrings.number = "number".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.number]
+    inline def number: typings.asyncValidator.asyncValidatorStrings.number = "number".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.number]
     
-    @scala.inline
-    def `object`: typings.asyncValidator.asyncValidatorStrings.`object` = "object".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.`object`]
+    inline def `object`: typings.asyncValidator.asyncValidatorStrings.`object` = "object".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.`object`]
     
-    @scala.inline
-    def regexp: typings.asyncValidator.asyncValidatorStrings.regexp = "regexp".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.regexp]
+    inline def regexp: typings.asyncValidator.asyncValidatorStrings.regexp = "regexp".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.regexp]
     
-    @scala.inline
-    def string: typings.asyncValidator.asyncValidatorStrings.string = "string".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.string]
+    inline def string: typings.asyncValidator.asyncValidatorStrings.string = "string".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.string]
     
-    @scala.inline
-    def url: typings.asyncValidator.asyncValidatorStrings.url = "url".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.url]
+    inline def url: typings.asyncValidator.asyncValidatorStrings.url = "url".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.url]
   }
   
   type Rules = StringDictionary[RuleItem | js.Array[RuleItem]]
@@ -284,20 +235,16 @@ object mod {
   }
   object ValidateError {
     
-    @scala.inline
-    def apply(field: String, message: String): ValidateError = {
+    inline def apply(field: String, message: String): ValidateError = {
       val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValidateError]
     }
     
-    @scala.inline
-    implicit class ValidateErrorMutableBuilder[Self <: ValidateError] (val x: Self) extends AnyVal {
+    extension [Self <: ValidateError](x: Self) {
       
-      @scala.inline
-      def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+      inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
   
@@ -314,35 +261,26 @@ object mod {
   }
   object ValidateOption {
     
-    @scala.inline
-    def apply(): ValidateOption = {
+    inline def apply(): ValidateOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ValidateOption]
     }
     
-    @scala.inline
-    implicit class ValidateOptionMutableBuilder[Self <: ValidateOption] (val x: Self) extends AnyVal {
+    extension [Self <: ValidateOption](x: Self) {
       
-      @scala.inline
-      def setFirst(value: Boolean): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
+      inline def setFirst(value: Boolean): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstFields(value: Boolean | js.Array[String]): Self = StObject.set(x, "firstFields", value.asInstanceOf[js.Any])
+      inline def setFirstFields(value: Boolean | js.Array[String]): Self = StObject.set(x, "firstFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstFieldsUndefined: Self = StObject.set(x, "firstFields", js.undefined)
+      inline def setFirstFieldsUndefined: Self = StObject.set(x, "firstFields", js.undefined)
       
-      @scala.inline
-      def setFirstFieldsVarargs(value: String*): Self = StObject.set(x, "firstFields", js.Array(value :_*))
+      inline def setFirstFieldsVarargs(value: String*): Self = StObject.set(x, "firstFields", js.Array(value :_*))
       
-      @scala.inline
-      def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
+      inline def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
       
-      @scala.inline
-      def setSuppressWarning(value: Boolean): Self = StObject.set(x, "suppressWarning", value.asInstanceOf[js.Any])
+      inline def setSuppressWarning(value: Boolean): Self = StObject.set(x, "suppressWarning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressWarningUndefined: Self = StObject.set(x, "suppressWarning", js.undefined)
+      inline def setSuppressWarningUndefined: Self = StObject.set(x, "suppressWarning", js.undefined)
     }
   }
   

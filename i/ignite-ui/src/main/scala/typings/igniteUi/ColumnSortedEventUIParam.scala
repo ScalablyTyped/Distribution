@@ -28,37 +28,27 @@ trait ColumnSortedEventUIParam extends StObject {
 }
 object ColumnSortedEventUIParam {
   
-  @scala.inline
-  def apply(): ColumnSortedEventUIParam = {
+  inline def apply(): ColumnSortedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColumnSortedEventUIParam]
   }
   
-  @scala.inline
-  implicit class ColumnSortedEventUIParamMutableBuilder[Self <: ColumnSortedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnSortedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
+    inline def setColumnKey(value: String): Self = StObject.set(x, "columnKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
+    inline def setColumnKeyUndefined: Self = StObject.set(x, "columnKey", js.undefined)
     
-    @scala.inline
-    def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+    inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+    inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
     
-    @scala.inline
-    def setExpressions(value: js.Any): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
+    inline def setExpressions(value: js.Any): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionsUndefined: Self = StObject.set(x, "expressions", js.undefined)
+    inline def setExpressionsUndefined: Self = StObject.set(x, "expressions", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

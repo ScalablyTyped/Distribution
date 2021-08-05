@@ -22,8 +22,7 @@ trait Commits extends StObject {
 }
 object Commits {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     code: `1031`,
     commits: `1032`,
     issuesAndPullRequests: `1033`,
@@ -36,28 +35,20 @@ object Commits {
     __obj.asInstanceOf[Commits]
   }
   
-  @scala.inline
-  implicit class CommitsMutableBuilder[Self <: Commits] (val x: Self) extends AnyVal {
+  extension [Self <: Commits](x: Self) {
     
-    @scala.inline
-    def setCode(value: `1031`): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: `1031`): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommits(value: `1032`): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
+    inline def setCommits(value: `1032`): Self = StObject.set(x, "commits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuesAndPullRequests(value: `1033`): Self = StObject.set(x, "issuesAndPullRequests", value.asInstanceOf[js.Any])
+    inline def setIssuesAndPullRequests(value: `1033`): Self = StObject.set(x, "issuesAndPullRequests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabels(value: `1034`): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: `1034`): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepos(value: `1035`): Self = StObject.set(x, "repos", value.asInstanceOf[js.Any])
+    inline def setRepos(value: `1035`): Self = StObject.set(x, "repos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopics(value: `1036`): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
+    inline def setTopics(value: `1036`): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsers(value: `1037`): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: `1037`): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
   }
 }

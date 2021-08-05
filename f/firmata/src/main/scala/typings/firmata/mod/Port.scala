@@ -10,16 +10,13 @@ trait Port extends StObject {
 }
 object Port {
   
-  @scala.inline
-  def apply(comName: String): Port = {
+  inline def apply(comName: String): Port = {
     val __obj = js.Dynamic.literal(comName = comName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Port]
   }
   
-  @scala.inline
-  implicit class PortMutableBuilder[Self <: Port] (val x: Self) extends AnyVal {
+  extension [Self <: Port](x: Self) {
     
-    @scala.inline
-    def setComName(value: String): Self = StObject.set(x, "comName", value.asInstanceOf[js.Any])
+    inline def setComName(value: String): Self = StObject.set(x, "comName", value.asInstanceOf[js.Any])
   }
 }

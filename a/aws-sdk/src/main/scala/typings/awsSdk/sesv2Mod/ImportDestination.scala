@@ -18,25 +18,19 @@ trait ImportDestination extends StObject {
 }
 object ImportDestination {
   
-  @scala.inline
-  def apply(): ImportDestination = {
+  inline def apply(): ImportDestination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImportDestination]
   }
   
-  @scala.inline
-  implicit class ImportDestinationMutableBuilder[Self <: ImportDestination] (val x: Self) extends AnyVal {
+  extension [Self <: ImportDestination](x: Self) {
     
-    @scala.inline
-    def setContactListDestination(value: ContactListDestination): Self = StObject.set(x, "ContactListDestination", value.asInstanceOf[js.Any])
+    inline def setContactListDestination(value: ContactListDestination): Self = StObject.set(x, "ContactListDestination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactListDestinationUndefined: Self = StObject.set(x, "ContactListDestination", js.undefined)
+    inline def setContactListDestinationUndefined: Self = StObject.set(x, "ContactListDestination", js.undefined)
     
-    @scala.inline
-    def setSuppressionListDestination(value: SuppressionListDestination): Self = StObject.set(x, "SuppressionListDestination", value.asInstanceOf[js.Any])
+    inline def setSuppressionListDestination(value: SuppressionListDestination): Self = StObject.set(x, "SuppressionListDestination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuppressionListDestinationUndefined: Self = StObject.set(x, "SuppressionListDestination", js.undefined)
+    inline def setSuppressionListDestinationUndefined: Self = StObject.set(x, "SuppressionListDestination", js.undefined)
   }
 }

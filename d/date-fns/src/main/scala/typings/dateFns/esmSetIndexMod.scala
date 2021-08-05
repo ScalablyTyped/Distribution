@@ -10,10 +10,8 @@ object esmSetIndexMod {
   
   object default {
     
-    @scala.inline
-    def apply(date: Double, values: Hours): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Date]
-    @scala.inline
-    def apply(date: Date, values: Hours): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Date]
+    inline def apply(date: Double, values: Hours): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Date]
+    inline def apply(date: Date, values: Hours): Date = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Date]
     
     @JSImport("date-fns/esm/set/index", JSImport.Default)
     @js.native

@@ -25,8 +25,8 @@ object provideInSyntaxMod {
     extends StObject
        with typings.inversifyBindingDecorators.interfacesMod.interfaces.ProvideInSyntax[T] {
     
-    var _bindingInSyntax: js.Any = js.native
+    /* private */ var _bindingInSyntax: js.Any = js.native
     
-    var _provideDoneSyntax: js.Any = js.native
+    /* private */ var _provideDoneSyntax: js.Any = js.native
   }
 }

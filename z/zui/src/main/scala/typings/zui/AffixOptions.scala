@@ -12,28 +12,21 @@ trait AffixOptions extends StObject {
 }
 object AffixOptions {
   
-  @scala.inline
-  def apply(): AffixOptions = {
+  inline def apply(): AffixOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AffixOptions]
   }
   
-  @scala.inline
-  implicit class AffixOptionsMutableBuilder[Self <: AffixOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AffixOptions](x: Self) {
     
-    @scala.inline
-    def setOffset(value: Double | CallBack | js.Object): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double | CallBack | js.Object): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetFunction0(value: () => Unit): Self = StObject.set(x, "offset", js.Any.fromFunction0(value))
+    inline def setOffsetFunction0(value: () => Unit): Self = StObject.set(x, "offset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: js.Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

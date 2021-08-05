@@ -96,86 +96,61 @@ trait AttachedDiskInitializeParams extends StObject {
 }
 object AttachedDiskInitializeParams {
   
-  @scala.inline
-  def apply(): AttachedDiskInitializeParams = {
+  inline def apply(): AttachedDiskInitializeParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AttachedDiskInitializeParams]
   }
   
-  @scala.inline
-  implicit class AttachedDiskInitializeParamsMutableBuilder[Self <: AttachedDiskInitializeParams] (val x: Self) extends AnyVal {
+  extension [Self <: AttachedDiskInitializeParams](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDiskName(value: String): Self = StObject.set(x, "diskName", value.asInstanceOf[js.Any])
+    inline def setDiskName(value: String): Self = StObject.set(x, "diskName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskNameUndefined: Self = StObject.set(x, "diskName", js.undefined)
+    inline def setDiskNameUndefined: Self = StObject.set(x, "diskName", js.undefined)
     
-    @scala.inline
-    def setDiskSizeGb(value: String): Self = StObject.set(x, "diskSizeGb", value.asInstanceOf[js.Any])
+    inline def setDiskSizeGb(value: String): Self = StObject.set(x, "diskSizeGb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskSizeGbUndefined: Self = StObject.set(x, "diskSizeGb", js.undefined)
+    inline def setDiskSizeGbUndefined: Self = StObject.set(x, "diskSizeGb", js.undefined)
     
-    @scala.inline
-    def setDiskType(value: String): Self = StObject.set(x, "diskType", value.asInstanceOf[js.Any])
+    inline def setDiskType(value: String): Self = StObject.set(x, "diskType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskTypeUndefined: Self = StObject.set(x, "diskType", js.undefined)
+    inline def setDiskTypeUndefined: Self = StObject.set(x, "diskType", js.undefined)
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientCompute.maximMazurokGapiClientComputeStrings.AttachedDiskInitializeParams & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setOnUpdateAction(value: String): Self = StObject.set(x, "onUpdateAction", value.asInstanceOf[js.Any])
+    inline def setOnUpdateAction(value: String): Self = StObject.set(x, "onUpdateAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnUpdateActionUndefined: Self = StObject.set(x, "onUpdateAction", js.undefined)
+    inline def setOnUpdateActionUndefined: Self = StObject.set(x, "onUpdateAction", js.undefined)
     
-    @scala.inline
-    def setResourcePolicies(value: js.Array[String]): Self = StObject.set(x, "resourcePolicies", value.asInstanceOf[js.Any])
+    inline def setResourcePolicies(value: js.Array[String]): Self = StObject.set(x, "resourcePolicies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcePoliciesUndefined: Self = StObject.set(x, "resourcePolicies", js.undefined)
+    inline def setResourcePoliciesUndefined: Self = StObject.set(x, "resourcePolicies", js.undefined)
     
-    @scala.inline
-    def setResourcePoliciesVarargs(value: String*): Self = StObject.set(x, "resourcePolicies", js.Array(value :_*))
+    inline def setResourcePoliciesVarargs(value: String*): Self = StObject.set(x, "resourcePolicies", js.Array(value :_*))
     
-    @scala.inline
-    def setSourceImage(value: String): Self = StObject.set(x, "sourceImage", value.asInstanceOf[js.Any])
+    inline def setSourceImage(value: String): Self = StObject.set(x, "sourceImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceImageEncryptionKey(value: CustomerEncryptionKey): Self = StObject.set(x, "sourceImageEncryptionKey", value.asInstanceOf[js.Any])
+    inline def setSourceImageEncryptionKey(value: CustomerEncryptionKey): Self = StObject.set(x, "sourceImageEncryptionKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceImageEncryptionKeyUndefined: Self = StObject.set(x, "sourceImageEncryptionKey", js.undefined)
+    inline def setSourceImageEncryptionKeyUndefined: Self = StObject.set(x, "sourceImageEncryptionKey", js.undefined)
     
-    @scala.inline
-    def setSourceImageUndefined: Self = StObject.set(x, "sourceImage", js.undefined)
+    inline def setSourceImageUndefined: Self = StObject.set(x, "sourceImage", js.undefined)
     
-    @scala.inline
-    def setSourceSnapshot(value: String): Self = StObject.set(x, "sourceSnapshot", value.asInstanceOf[js.Any])
+    inline def setSourceSnapshot(value: String): Self = StObject.set(x, "sourceSnapshot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceSnapshotEncryptionKey(value: CustomerEncryptionKey): Self = StObject.set(x, "sourceSnapshotEncryptionKey", value.asInstanceOf[js.Any])
+    inline def setSourceSnapshotEncryptionKey(value: CustomerEncryptionKey): Self = StObject.set(x, "sourceSnapshotEncryptionKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceSnapshotEncryptionKeyUndefined: Self = StObject.set(x, "sourceSnapshotEncryptionKey", js.undefined)
+    inline def setSourceSnapshotEncryptionKeyUndefined: Self = StObject.set(x, "sourceSnapshotEncryptionKey", js.undefined)
     
-    @scala.inline
-    def setSourceSnapshotUndefined: Self = StObject.set(x, "sourceSnapshot", js.undefined)
+    inline def setSourceSnapshotUndefined: Self = StObject.set(x, "sourceSnapshot", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait ObjectReference extends StObject {
 }
 object ObjectReference {
   
-  @scala.inline
-  def apply(): ObjectReference = {
+  inline def apply(): ObjectReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObjectReference]
   }
   
-  @scala.inline
-  implicit class ObjectReferenceMutableBuilder[Self <: ObjectReference] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectReference](x: Self) {
     
-    @scala.inline
-    def setSelector(value: SelectorObjectReference): Self = StObject.set(x, "Selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: SelectorObjectReference): Self = StObject.set(x, "Selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorUndefined: Self = StObject.set(x, "Selector", js.undefined)
+    inline def setSelectorUndefined: Self = StObject.set(x, "Selector", js.undefined)
   }
 }

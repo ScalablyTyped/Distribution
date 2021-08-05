@@ -10,19 +10,15 @@ trait SchemaMessageSet extends StObject {
 }
 object SchemaMessageSet {
   
-  @scala.inline
-  def apply(): SchemaMessageSet = {
+  inline def apply(): SchemaMessageSet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMessageSet]
   }
   
-  @scala.inline
-  implicit class SchemaMessageSetMutableBuilder[Self <: SchemaMessageSet] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMessageSet](x: Self) {
     
-    @scala.inline
-    def setRecordMessageSetExt(value: SchemaLivegraphBacktraceRecordInfo): Self = StObject.set(x, "recordMessageSetExt", value.asInstanceOf[js.Any])
+    inline def setRecordMessageSetExt(value: SchemaLivegraphBacktraceRecordInfo): Self = StObject.set(x, "recordMessageSetExt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordMessageSetExtUndefined: Self = StObject.set(x, "recordMessageSetExt", js.undefined)
+    inline def setRecordMessageSetExtUndefined: Self = StObject.set(x, "recordMessageSetExt", js.undefined)
   }
 }

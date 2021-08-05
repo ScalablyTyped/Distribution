@@ -23,31 +23,23 @@ trait IPersonaCoinProps
 }
 object IPersonaCoinProps {
   
-  @scala.inline
-  def apply(): IPersonaCoinProps = {
+  inline def apply(): IPersonaCoinProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPersonaCoinProps]
   }
   
-  @scala.inline
-  implicit class IPersonaCoinPropsMutableBuilder[Self <: IPersonaCoinProps] (val x: Self) extends AnyVal {
+  extension [Self <: IPersonaCoinProps](x: Self) {
     
-    @scala.inline
-    def setComponentRef(value: IRefObject[js.Object]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+    inline def setComponentRef(value: IRefObject[js.Object]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentRefFunction1(value: /* ref */ js.Object | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+    inline def setComponentRefFunction1(value: /* ref */ js.Object | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+    inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
     
-    @scala.inline
-    def setStyles(value: IStyleFunctionOrObject[IPersonaCoinStyleProps, IPersonaCoinStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: IStyleFunctionOrObject[IPersonaCoinStyleProps, IPersonaCoinStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesFunction1(value: IPersonaCoinStyleProps => DeepPartial[IPersonaCoinStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+    inline def setStylesFunction1(value: IPersonaCoinStyleProps => DeepPartial[IPersonaCoinStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
   }
 }

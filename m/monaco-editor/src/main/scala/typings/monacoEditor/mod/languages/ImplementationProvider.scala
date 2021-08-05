@@ -16,19 +16,16 @@ trait ImplementationProvider extends StObject {
 }
 object ImplementationProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     provideImplementation: (ITextModel, Position, CancellationToken) => ProviderResult[Definition | js.Array[LocationLink]]
   ): ImplementationProvider = {
     val __obj = js.Dynamic.literal(provideImplementation = js.Any.fromFunction3(provideImplementation))
     __obj.asInstanceOf[ImplementationProvider]
   }
   
-  @scala.inline
-  implicit class ImplementationProviderMutableBuilder[Self <: ImplementationProvider] (val x: Self) extends AnyVal {
+  extension [Self <: ImplementationProvider](x: Self) {
     
-    @scala.inline
-    def setProvideImplementation(
+    inline def setProvideImplementation(
       value: (ITextModel, Position, CancellationToken) => ProviderResult[Definition | js.Array[LocationLink]]
     ): Self = StObject.set(x, "provideImplementation", js.Any.fromFunction3(value))
   }

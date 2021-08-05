@@ -11,19 +11,15 @@ trait TypeofSkeletonRendererQUADTRIANGLES extends StObject {
 }
 object TypeofSkeletonRendererQUADTRIANGLES {
   
-  @scala.inline
-  def apply(QUAD_TRIANGLES: js.Array[Double]): TypeofSkeletonRendererQUADTRIANGLES = {
+  inline def apply(QUAD_TRIANGLES: js.Array[Double]): TypeofSkeletonRendererQUADTRIANGLES = {
     val __obj = js.Dynamic.literal(QUAD_TRIANGLES = QUAD_TRIANGLES.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofSkeletonRendererQUADTRIANGLES]
   }
   
-  @scala.inline
-  implicit class TypeofSkeletonRendererQUADTRIANGLESMutableBuilder[Self <: TypeofSkeletonRendererQUADTRIANGLES] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofSkeletonRendererQUADTRIANGLES](x: Self) {
     
-    @scala.inline
-    def setQUAD_TRIANGLES(value: js.Array[Double]): Self = StObject.set(x, "QUAD_TRIANGLES", value.asInstanceOf[js.Any])
+    inline def setQUAD_TRIANGLES(value: js.Array[Double]): Self = StObject.set(x, "QUAD_TRIANGLES", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQUAD_TRIANGLESVarargs(value: Double*): Self = StObject.set(x, "QUAD_TRIANGLES", js.Array(value :_*))
+    inline def setQUAD_TRIANGLESVarargs(value: Double*): Self = StObject.set(x, "QUAD_TRIANGLES", js.Array(value :_*))
   }
 }

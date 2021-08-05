@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TextPathSpacing extends StObject
 object TextPathSpacing {
   
-  @scala.inline
-  def auto: typings.reactNativeSvg.reactNativeSvgStrings.auto = "auto".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.auto]
+  inline def auto: typings.reactNativeSvg.reactNativeSvgStrings.auto = "auto".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.auto]
   
-  @scala.inline
-  def exact: typings.reactNativeSvg.reactNativeSvgStrings.exact = "exact".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.exact]
+  inline def exact: typings.reactNativeSvg.reactNativeSvgStrings.exact = "exact".asInstanceOf[typings.reactNativeSvg.reactNativeSvgStrings.exact]
 }

@@ -14,31 +14,23 @@ trait TextProps
 }
 object TextProps {
   
-  @scala.inline
-  def apply(): TextProps = {
+  inline def apply(): TextProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextProps]
   }
   
-  @scala.inline
-  implicit class TextPropsMutableBuilder[Self <: TextProps] (val x: Self) extends AnyVal {
+  extension [Self <: TextProps](x: Self) {
     
-    @scala.inline
-    def setDx(value: NumberArrayProp): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
+    inline def setDx(value: NumberArrayProp): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDxUndefined: Self = StObject.set(x, "dx", js.undefined)
+    inline def setDxUndefined: Self = StObject.set(x, "dx", js.undefined)
     
-    @scala.inline
-    def setDxVarargs(value: NumberProp*): Self = StObject.set(x, "dx", js.Array(value :_*))
+    inline def setDxVarargs(value: NumberProp*): Self = StObject.set(x, "dx", js.Array(value :_*))
     
-    @scala.inline
-    def setDy(value: NumberArrayProp): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
+    inline def setDy(value: NumberArrayProp): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
+    inline def setDyUndefined: Self = StObject.set(x, "dy", js.undefined)
     
-    @scala.inline
-    def setDyVarargs(value: NumberProp*): Self = StObject.set(x, "dy", js.Array(value :_*))
+    inline def setDyVarargs(value: NumberProp*): Self = StObject.set(x, "dy", js.Array(value :_*))
   }
 }

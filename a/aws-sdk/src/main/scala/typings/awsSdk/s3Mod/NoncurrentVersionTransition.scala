@@ -18,25 +18,19 @@ trait NoncurrentVersionTransition extends StObject {
 }
 object NoncurrentVersionTransition {
   
-  @scala.inline
-  def apply(): NoncurrentVersionTransition = {
+  inline def apply(): NoncurrentVersionTransition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NoncurrentVersionTransition]
   }
   
-  @scala.inline
-  implicit class NoncurrentVersionTransitionMutableBuilder[Self <: NoncurrentVersionTransition] (val x: Self) extends AnyVal {
+  extension [Self <: NoncurrentVersionTransition](x: Self) {
     
-    @scala.inline
-    def setNoncurrentDays(value: Days): Self = StObject.set(x, "NoncurrentDays", value.asInstanceOf[js.Any])
+    inline def setNoncurrentDays(value: Days): Self = StObject.set(x, "NoncurrentDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoncurrentDaysUndefined: Self = StObject.set(x, "NoncurrentDays", js.undefined)
+    inline def setNoncurrentDaysUndefined: Self = StObject.set(x, "NoncurrentDays", js.undefined)
     
-    @scala.inline
-    def setStorageClass(value: TransitionStorageClass): Self = StObject.set(x, "StorageClass", value.asInstanceOf[js.Any])
+    inline def setStorageClass(value: TransitionStorageClass): Self = StObject.set(x, "StorageClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageClassUndefined: Self = StObject.set(x, "StorageClass", js.undefined)
+    inline def setStorageClassUndefined: Self = StObject.set(x, "StorageClass", js.undefined)
   }
 }

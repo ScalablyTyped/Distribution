@@ -18,8 +18,7 @@ trait ParametersAppsGetBySlugEndpoint extends StObject {
 }
 object ParametersAppsGetBySlugEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: AppsGetBySlugEndpoint,
     request: AppsGetBySlugRequestOptions,
     response: OctokitResponse[AppsGetBySlugResponseData]
@@ -28,16 +27,12 @@ object ParametersAppsGetBySlugEndpoint {
     __obj.asInstanceOf[ParametersAppsGetBySlugEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersAppsGetBySlugEndpointMutableBuilder[Self <: ParametersAppsGetBySlugEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersAppsGetBySlugEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: AppsGetBySlugEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: AppsGetBySlugEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: AppsGetBySlugRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: AppsGetBySlugRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[AppsGetBySlugResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[AppsGetBySlugResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

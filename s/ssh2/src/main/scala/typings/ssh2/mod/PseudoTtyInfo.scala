@@ -23,28 +23,21 @@ trait PseudoTtyInfo extends StObject {
 }
 object PseudoTtyInfo {
   
-  @scala.inline
-  def apply(cols: Double, height: Double, modes: TerminalModes, rows: Double, width: Double): PseudoTtyInfo = {
+  inline def apply(cols: Double, height: Double, modes: TerminalModes, rows: Double, width: Double): PseudoTtyInfo = {
     val __obj = js.Dynamic.literal(cols = cols.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], modes = modes.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[PseudoTtyInfo]
   }
   
-  @scala.inline
-  implicit class PseudoTtyInfoMutableBuilder[Self <: PseudoTtyInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PseudoTtyInfo](x: Self) {
     
-    @scala.inline
-    def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+    inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModes(value: TerminalModes): Self = StObject.set(x, "modes", value.asInstanceOf[js.Any])
+    inline def setModes(value: TerminalModes): Self = StObject.set(x, "modes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

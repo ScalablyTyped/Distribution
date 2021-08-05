@@ -28,34 +28,25 @@ trait DescribeEventAggregatesRequest extends StObject {
 }
 object DescribeEventAggregatesRequest {
   
-  @scala.inline
-  def apply(aggregateField: eventAggregateField): DescribeEventAggregatesRequest = {
+  inline def apply(aggregateField: eventAggregateField): DescribeEventAggregatesRequest = {
     val __obj = js.Dynamic.literal(aggregateField = aggregateField.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeEventAggregatesRequest]
   }
   
-  @scala.inline
-  implicit class DescribeEventAggregatesRequestMutableBuilder[Self <: DescribeEventAggregatesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEventAggregatesRequest](x: Self) {
     
-    @scala.inline
-    def setAggregateField(value: eventAggregateField): Self = StObject.set(x, "aggregateField", value.asInstanceOf[js.Any])
+    inline def setAggregateField(value: eventAggregateField): Self = StObject.set(x, "aggregateField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilter(value: EventFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: EventFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: maxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: maxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: nextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: nextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

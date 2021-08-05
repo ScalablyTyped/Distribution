@@ -21,19 +21,15 @@ trait Interval extends StObject {
 }
 object Interval {
   
-  @scala.inline
-  def apply(length: Double, start: Double): Interval = {
+  inline def apply(length: Double, start: Double): Interval = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.asInstanceOf[Interval]
   }
   
-  @scala.inline
-  implicit class IntervalMutableBuilder[Self <: Interval] (val x: Self) extends AnyVal {
+  extension [Self <: Interval](x: Self) {
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
   }
 }

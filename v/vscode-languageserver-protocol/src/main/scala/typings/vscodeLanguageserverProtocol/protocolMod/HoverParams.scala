@@ -12,8 +12,7 @@ trait HoverParams
      with WorkDoneProgressParams
 object HoverParams {
   
-  @scala.inline
-  def apply(position: Position, textDocument: TextDocumentIdentifier): HoverParams = {
+  inline def apply(position: Position, textDocument: TextDocumentIdentifier): HoverParams = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], textDocument = textDocument.asInstanceOf[js.Any])
     __obj.asInstanceOf[HoverParams]
   }

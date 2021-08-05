@@ -43,40 +43,29 @@ trait ElementDefinitionBase
 }
 object ElementDefinitionBase {
   
-  @scala.inline
-  def apply(max: String, min: unsignedInt, path: String): ElementDefinitionBase = {
+  inline def apply(max: String, min: unsignedInt, path: String): ElementDefinitionBase = {
     val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementDefinitionBase]
   }
   
-  @scala.inline
-  implicit class ElementDefinitionBaseMutableBuilder[Self <: ElementDefinitionBase] (val x: Self) extends AnyVal {
+  extension [Self <: ElementDefinitionBase](x: Self) {
     
-    @scala.inline
-    def setMax(value: String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: unsignedInt): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: unsignedInt): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_max(value: Element): Self = StObject.set(x, "_max", value.asInstanceOf[js.Any])
+    inline def set_max(value: Element): Self = StObject.set(x, "_max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_maxUndefined: Self = StObject.set(x, "_max", js.undefined)
+    inline def set_maxUndefined: Self = StObject.set(x, "_max", js.undefined)
     
-    @scala.inline
-    def set_min(value: Element): Self = StObject.set(x, "_min", value.asInstanceOf[js.Any])
+    inline def set_min(value: Element): Self = StObject.set(x, "_min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_minUndefined: Self = StObject.set(x, "_min", js.undefined)
+    inline def set_minUndefined: Self = StObject.set(x, "_min", js.undefined)
     
-    @scala.inline
-    def set_path(value: Element): Self = StObject.set(x, "_path", value.asInstanceOf[js.Any])
+    inline def set_path(value: Element): Self = StObject.set(x, "_path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_pathUndefined: Self = StObject.set(x, "_path", js.undefined)
+    inline def set_pathUndefined: Self = StObject.set(x, "_path", js.undefined)
   }
 }

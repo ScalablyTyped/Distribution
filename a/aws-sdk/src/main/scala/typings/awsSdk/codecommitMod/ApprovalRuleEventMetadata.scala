@@ -23,31 +23,23 @@ trait ApprovalRuleEventMetadata extends StObject {
 }
 object ApprovalRuleEventMetadata {
   
-  @scala.inline
-  def apply(): ApprovalRuleEventMetadata = {
+  inline def apply(): ApprovalRuleEventMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApprovalRuleEventMetadata]
   }
   
-  @scala.inline
-  implicit class ApprovalRuleEventMetadataMutableBuilder[Self <: ApprovalRuleEventMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ApprovalRuleEventMetadata](x: Self) {
     
-    @scala.inline
-    def setApprovalRuleContent(value: ApprovalRuleContent): Self = StObject.set(x, "approvalRuleContent", value.asInstanceOf[js.Any])
+    inline def setApprovalRuleContent(value: ApprovalRuleContent): Self = StObject.set(x, "approvalRuleContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovalRuleContentUndefined: Self = StObject.set(x, "approvalRuleContent", js.undefined)
+    inline def setApprovalRuleContentUndefined: Self = StObject.set(x, "approvalRuleContent", js.undefined)
     
-    @scala.inline
-    def setApprovalRuleId(value: ApprovalRuleId): Self = StObject.set(x, "approvalRuleId", value.asInstanceOf[js.Any])
+    inline def setApprovalRuleId(value: ApprovalRuleId): Self = StObject.set(x, "approvalRuleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovalRuleIdUndefined: Self = StObject.set(x, "approvalRuleId", js.undefined)
+    inline def setApprovalRuleIdUndefined: Self = StObject.set(x, "approvalRuleId", js.undefined)
     
-    @scala.inline
-    def setApprovalRuleName(value: ApprovalRuleName): Self = StObject.set(x, "approvalRuleName", value.asInstanceOf[js.Any])
+    inline def setApprovalRuleName(value: ApprovalRuleName): Self = StObject.set(x, "approvalRuleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovalRuleNameUndefined: Self = StObject.set(x, "approvalRuleName", js.undefined)
+    inline def setApprovalRuleNameUndefined: Self = StObject.set(x, "approvalRuleName", js.undefined)
   }
 }

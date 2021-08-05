@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParameterCollectionFormat extends StObject
 object ParameterCollectionFormat {
   
-  @scala.inline
-  def csv: typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.csv = "csv".asInstanceOf[typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.csv]
+  inline def csv: typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.csv = "csv".asInstanceOf[typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.csv]
   
-  @scala.inline
-  def multi: typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.multi = "multi".asInstanceOf[typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.multi]
+  inline def multi: typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.multi = "multi".asInstanceOf[typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.multi]
   
-  @scala.inline
-  def pipes: typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.pipes = "pipes".asInstanceOf[typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.pipes]
+  inline def pipes: typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.pipes = "pipes".asInstanceOf[typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.pipes]
   
-  @scala.inline
-  def ssv: typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.ssv = "ssv".asInstanceOf[typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.ssv]
+  inline def ssv: typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.ssv = "ssv".asInstanceOf[typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.ssv]
   
-  @scala.inline
-  def tsv: typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.tsv = "tsv".asInstanceOf[typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.tsv]
+  inline def tsv: typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.tsv = "tsv".asInstanceOf[typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.tsv]
 }

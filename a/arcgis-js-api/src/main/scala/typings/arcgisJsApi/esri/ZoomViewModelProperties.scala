@@ -29,31 +29,23 @@ trait ZoomViewModelProperties extends StObject {
 }
 object ZoomViewModelProperties {
   
-  @scala.inline
-  def apply(): ZoomViewModelProperties = {
+  inline def apply(): ZoomViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ZoomViewModelProperties]
   }
   
-  @scala.inline
-  implicit class ZoomViewModelPropertiesMutableBuilder[Self <: ZoomViewModelProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ZoomViewModelProperties](x: Self) {
     
-    @scala.inline
-    def setCanZoomIn(value: Boolean): Self = StObject.set(x, "canZoomIn", value.asInstanceOf[js.Any])
+    inline def setCanZoomIn(value: Boolean): Self = StObject.set(x, "canZoomIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanZoomInUndefined: Self = StObject.set(x, "canZoomIn", js.undefined)
+    inline def setCanZoomInUndefined: Self = StObject.set(x, "canZoomIn", js.undefined)
     
-    @scala.inline
-    def setCanZoomOut(value: Boolean): Self = StObject.set(x, "canZoomOut", value.asInstanceOf[js.Any])
+    inline def setCanZoomOut(value: Boolean): Self = StObject.set(x, "canZoomOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanZoomOutUndefined: Self = StObject.set(x, "canZoomOut", js.undefined)
+    inline def setCanZoomOutUndefined: Self = StObject.set(x, "canZoomOut", js.undefined)
     
-    @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

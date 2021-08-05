@@ -15,19 +15,15 @@ trait TypeofTagCloud extends StObject {
 }
 object TypeofTagCloud {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: TagCloud): TypeofTagCloud = {
+  inline def apply(Locale: js.Any, fn: TagCloud): TypeofTagCloud = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofTagCloud]
   }
   
-  @scala.inline
-  implicit class TypeofTagCloudMutableBuilder[Self <: TypeofTagCloud] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofTagCloud](x: Self) {
     
-    @scala.inline
-    def setFn(value: TagCloud): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: TagCloud): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

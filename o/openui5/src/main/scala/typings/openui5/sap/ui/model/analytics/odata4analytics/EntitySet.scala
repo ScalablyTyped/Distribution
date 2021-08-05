@@ -35,8 +35,7 @@ trait EntitySet extends StObject {
 }
 object EntitySet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getEntityType: () => js.Any,
     getQName: () => String,
     getSetDescription: () => js.Any,
@@ -46,19 +45,14 @@ object EntitySet {
     __obj.asInstanceOf[EntitySet]
   }
   
-  @scala.inline
-  implicit class EntitySetMutableBuilder[Self <: EntitySet] (val x: Self) extends AnyVal {
+  extension [Self <: EntitySet](x: Self) {
     
-    @scala.inline
-    def setGetEntityType(value: () => js.Any): Self = StObject.set(x, "getEntityType", js.Any.fromFunction0(value))
+    inline def setGetEntityType(value: () => js.Any): Self = StObject.set(x, "getEntityType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetQName(value: () => String): Self = StObject.set(x, "getQName", js.Any.fromFunction0(value))
+    inline def setGetQName(value: () => String): Self = StObject.set(x, "getQName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSetDescription(value: () => js.Any): Self = StObject.set(x, "getSetDescription", js.Any.fromFunction0(value))
+    inline def setGetSetDescription(value: () => js.Any): Self = StObject.set(x, "getSetDescription", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUpdatablePropertyNameSet(value: () => js.Any): Self = StObject.set(x, "getUpdatablePropertyNameSet", js.Any.fromFunction0(value))
+    inline def setGetUpdatablePropertyNameSet(value: () => js.Any): Self = StObject.set(x, "getUpdatablePropertyNameSet", js.Any.fromFunction0(value))
   }
 }

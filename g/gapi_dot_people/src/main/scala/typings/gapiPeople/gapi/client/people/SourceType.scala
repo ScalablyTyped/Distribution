@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SourceType extends StObject
 object SourceType {
   
-  @scala.inline
-  def ACCOUNT: typings.gapiPeople.gapiPeopleStrings.ACCOUNT = "ACCOUNT".asInstanceOf[typings.gapiPeople.gapiPeopleStrings.ACCOUNT]
+  inline def ACCOUNT: typings.gapiPeople.gapiPeopleStrings.ACCOUNT = "ACCOUNT".asInstanceOf[typings.gapiPeople.gapiPeopleStrings.ACCOUNT]
   
-  @scala.inline
-  def CONTACT: typings.gapiPeople.gapiPeopleStrings.CONTACT = "CONTACT".asInstanceOf[typings.gapiPeople.gapiPeopleStrings.CONTACT]
+  inline def CONTACT: typings.gapiPeople.gapiPeopleStrings.CONTACT = "CONTACT".asInstanceOf[typings.gapiPeople.gapiPeopleStrings.CONTACT]
   
-  @scala.inline
-  def DOMAIN_PROFILE: typings.gapiPeople.gapiPeopleStrings.DOMAIN_PROFILE = "DOMAIN_PROFILE".asInstanceOf[typings.gapiPeople.gapiPeopleStrings.DOMAIN_PROFILE]
+  inline def DOMAIN_PROFILE: typings.gapiPeople.gapiPeopleStrings.DOMAIN_PROFILE = "DOMAIN_PROFILE".asInstanceOf[typings.gapiPeople.gapiPeopleStrings.DOMAIN_PROFILE]
   
-  @scala.inline
-  def PROFILE: typings.gapiPeople.gapiPeopleStrings.PROFILE = "PROFILE".asInstanceOf[typings.gapiPeople.gapiPeopleStrings.PROFILE]
+  inline def PROFILE: typings.gapiPeople.gapiPeopleStrings.PROFILE = "PROFILE".asInstanceOf[typings.gapiPeople.gapiPeopleStrings.PROFILE]
   
-  @scala.inline
-  def SOURCE_TYPE_UNSPECIFIED: typings.gapiPeople.gapiPeopleStrings.SOURCE_TYPE_UNSPECIFIED = "SOURCE_TYPE_UNSPECIFIED".asInstanceOf[typings.gapiPeople.gapiPeopleStrings.SOURCE_TYPE_UNSPECIFIED]
+  inline def SOURCE_TYPE_UNSPECIFIED: typings.gapiPeople.gapiPeopleStrings.SOURCE_TYPE_UNSPECIFIED = "SOURCE_TYPE_UNSPECIFIED".asInstanceOf[typings.gapiPeople.gapiPeopleStrings.SOURCE_TYPE_UNSPECIFIED]
 }

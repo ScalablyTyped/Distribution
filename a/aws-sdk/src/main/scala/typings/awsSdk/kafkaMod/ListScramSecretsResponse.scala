@@ -22,28 +22,21 @@ trait ListScramSecretsResponse extends StObject {
 }
 object ListScramSecretsResponse {
   
-  @scala.inline
-  def apply(): ListScramSecretsResponse = {
+  inline def apply(): ListScramSecretsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListScramSecretsResponse]
   }
   
-  @scala.inline
-  implicit class ListScramSecretsResponseMutableBuilder[Self <: ListScramSecretsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListScramSecretsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSecretArnList(value: listOfString): Self = StObject.set(x, "SecretArnList", value.asInstanceOf[js.Any])
+    inline def setSecretArnList(value: listOfString): Self = StObject.set(x, "SecretArnList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretArnListUndefined: Self = StObject.set(x, "SecretArnList", js.undefined)
+    inline def setSecretArnListUndefined: Self = StObject.set(x, "SecretArnList", js.undefined)
     
-    @scala.inline
-    def setSecretArnListVarargs(value: string*): Self = StObject.set(x, "SecretArnList", js.Array(value :_*))
+    inline def setSecretArnListVarargs(value: string*): Self = StObject.set(x, "SecretArnList", js.Array(value :_*))
   }
 }

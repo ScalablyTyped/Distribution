@@ -22,23 +22,18 @@ trait LimitResponse extends StObject {
 }
 object LimitResponse {
   
-  @scala.inline
-  def apply(`type`: Input[String]): LimitResponse = {
+  inline def apply(`type`: Input[String]): LimitResponse = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LimitResponse]
   }
   
-  @scala.inline
-  implicit class LimitResponseMutableBuilder[Self <: LimitResponse] (val x: Self) extends AnyVal {
+  extension [Self <: LimitResponse](x: Self) {
     
-    @scala.inline
-    def setQueuing(value: Input[QueuingConfiguration]): Self = StObject.set(x, "queuing", value.asInstanceOf[js.Any])
+    inline def setQueuing(value: Input[QueuingConfiguration]): Self = StObject.set(x, "queuing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueuingUndefined: Self = StObject.set(x, "queuing", js.undefined)
+    inline def setQueuingUndefined: Self = StObject.set(x, "queuing", js.undefined)
     
-    @scala.inline
-    def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

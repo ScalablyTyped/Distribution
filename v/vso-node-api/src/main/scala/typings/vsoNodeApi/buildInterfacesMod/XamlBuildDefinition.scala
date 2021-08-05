@@ -66,8 +66,7 @@ trait XamlBuildDefinition
 }
 object XamlBuildDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     batchSize: Double,
     buildArgs: String,
@@ -96,43 +95,30 @@ object XamlBuildDefinition {
     __obj.asInstanceOf[XamlBuildDefinition]
   }
   
-  @scala.inline
-  implicit class XamlBuildDefinitionMutableBuilder[Self <: XamlBuildDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: XamlBuildDefinition](x: Self) {
     
-    @scala.inline
-    def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+    inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildArgs(value: String): Self = StObject.set(x, "buildArgs", value.asInstanceOf[js.Any])
+    inline def setBuildArgs(value: String): Self = StObject.set(x, "buildArgs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinuousIntegrationQuietPeriod(value: Double): Self = StObject.set(x, "continuousIntegrationQuietPeriod", value.asInstanceOf[js.Any])
+    inline def setContinuousIntegrationQuietPeriod(value: Double): Self = StObject.set(x, "continuousIntegrationQuietPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setController(value: BuildController): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
+    inline def setController(value: BuildController): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedOn(value: Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
+    inline def setCreatedOn(value: Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultDropLocation(value: String): Self = StObject.set(x, "defaultDropLocation", value.asInstanceOf[js.Any])
+    inline def setDefaultDropLocation(value: String): Self = StObject.set(x, "defaultDropLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastBuild(value: XamlBuildReference): Self = StObject.set(x, "lastBuild", value.asInstanceOf[js.Any])
+    inline def setLastBuild(value: XamlBuildReference): Self = StObject.set(x, "lastBuild", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepository(value: BuildRepository): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: BuildRepository): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedReasons(value: BuildReason): Self = StObject.set(x, "supportedReasons", value.asInstanceOf[js.Any])
+    inline def setSupportedReasons(value: BuildReason): Self = StObject.set(x, "supportedReasons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerType(value: DefinitionTriggerType): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
+    inline def setTriggerType(value: DefinitionTriggerType): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

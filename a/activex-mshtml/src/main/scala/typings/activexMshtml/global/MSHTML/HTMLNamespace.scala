@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.HTMLNamespace")
 @js.native
-class HTMLNamespace protected ()
+/* private */ class HTMLNamespace ()
   extends StObject
      with typings.activexMshtml.MSHTML.HTMLNamespace {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.HTMLNamespace_typekey")
   var MSHTMLDotHTMLNamespace_typekey: typings.activexMshtml.MSHTML.HTMLNamespace = js.native
   

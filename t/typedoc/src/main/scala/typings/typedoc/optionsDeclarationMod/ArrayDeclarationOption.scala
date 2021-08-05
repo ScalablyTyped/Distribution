@@ -18,26 +18,20 @@ trait ArrayDeclarationOption
 }
 object ArrayDeclarationOption {
   
-  @scala.inline
-  def apply(help: String, name: String, `type`: Array): ArrayDeclarationOption = {
+  inline def apply(help: String, name: String, `type`: Array): ArrayDeclarationOption = {
     val __obj = js.Dynamic.literal(help = help.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArrayDeclarationOption]
   }
   
-  @scala.inline
-  implicit class ArrayDeclarationOptionMutableBuilder[Self <: ArrayDeclarationOption] (val x: Self) extends AnyVal {
+  extension [Self <: ArrayDeclarationOption](x: Self) {
     
-    @scala.inline
-    def setDefaultValue(value: js.Array[String]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: js.Array[String]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+    inline def setDefaultValueVarargs(value: String*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: Array): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Array): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

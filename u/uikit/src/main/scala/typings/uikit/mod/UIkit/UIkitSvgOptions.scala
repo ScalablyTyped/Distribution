@@ -12,25 +12,19 @@ trait UIkitSvgOptions extends StObject {
 }
 object UIkitSvgOptions {
   
-  @scala.inline
-  def apply(): UIkitSvgOptions = {
+  inline def apply(): UIkitSvgOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UIkitSvgOptions]
   }
   
-  @scala.inline
-  implicit class UIkitSvgOptionsMutableBuilder[Self <: UIkitSvgOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UIkitSvgOptions](x: Self) {
     
-    @scala.inline
-    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+    inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
     
-    @scala.inline
-    def `setStroke-animation`(value: Boolean): Self = StObject.set(x, "stroke-animation", value.asInstanceOf[js.Any])
+    inline def `setStroke-animation`(value: Boolean): Self = StObject.set(x, "stroke-animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setStroke-animationUndefined`: Self = StObject.set(x, "stroke-animation", js.undefined)
+    inline def `setStroke-animationUndefined`: Self = StObject.set(x, "stroke-animation", js.undefined)
   }
 }

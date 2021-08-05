@@ -15,22 +15,17 @@ trait PointUpdateModel extends StObject {
 }
 object PointUpdateModel {
   
-  @scala.inline
-  def apply(outcome: String, resetToActive: Boolean, tester: IdentityRef): PointUpdateModel = {
+  inline def apply(outcome: String, resetToActive: Boolean, tester: IdentityRef): PointUpdateModel = {
     val __obj = js.Dynamic.literal(outcome = outcome.asInstanceOf[js.Any], resetToActive = resetToActive.asInstanceOf[js.Any], tester = tester.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointUpdateModel]
   }
   
-  @scala.inline
-  implicit class PointUpdateModelMutableBuilder[Self <: PointUpdateModel] (val x: Self) extends AnyVal {
+  extension [Self <: PointUpdateModel](x: Self) {
     
-    @scala.inline
-    def setOutcome(value: String): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
+    inline def setOutcome(value: String): Self = StObject.set(x, "outcome", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetToActive(value: Boolean): Self = StObject.set(x, "resetToActive", value.asInstanceOf[js.Any])
+    inline def setResetToActive(value: Boolean): Self = StObject.set(x, "resetToActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTester(value: IdentityRef): Self = StObject.set(x, "tester", value.asInstanceOf[js.Any])
+    inline def setTester(value: IdentityRef): Self = StObject.set(x, "tester", value.asInstanceOf[js.Any])
   }
 }

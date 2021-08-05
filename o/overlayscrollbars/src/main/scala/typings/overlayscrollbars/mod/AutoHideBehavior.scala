@@ -17,27 +17,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AutoHideBehavior extends StObject
 object AutoHideBehavior {
   
-  @scala.inline
-  def l: typings.overlayscrollbars.overlayscrollbarsStrings.l = "l".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.l]
+  inline def l: typings.overlayscrollbars.overlayscrollbarsStrings.l = "l".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.l]
   
-  @scala.inline
-  def leave: typings.overlayscrollbars.overlayscrollbarsStrings.leave = "leave".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.leave]
+  inline def leave: typings.overlayscrollbars.overlayscrollbarsStrings.leave = "leave".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.leave]
   
-  @scala.inline
-  def m: typings.overlayscrollbars.overlayscrollbarsStrings.m = "m".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.m]
+  inline def m: typings.overlayscrollbars.overlayscrollbarsStrings.m = "m".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.m]
   
-  @scala.inline
-  def move: typings.overlayscrollbars.overlayscrollbarsStrings.move = "move".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.move]
+  inline def move: typings.overlayscrollbars.overlayscrollbarsStrings.move = "move".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.move]
   
-  @scala.inline
-  def n: typings.overlayscrollbars.overlayscrollbarsStrings.n = "n".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.n]
+  inline def n: typings.overlayscrollbars.overlayscrollbarsStrings.n = "n".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.n]
   
-  @scala.inline
-  def never: typings.overlayscrollbars.overlayscrollbarsStrings.never = "never".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.never]
+  inline def never: typings.overlayscrollbars.overlayscrollbarsStrings.never = "never".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.never]
   
-  @scala.inline
-  def s: typings.overlayscrollbars.overlayscrollbarsStrings.s = "s".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.s]
+  inline def s: typings.overlayscrollbars.overlayscrollbarsStrings.s = "s".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.s]
   
-  @scala.inline
-  def scroll: typings.overlayscrollbars.overlayscrollbarsStrings.scroll = "scroll".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.scroll]
+  inline def scroll: typings.overlayscrollbars.overlayscrollbarsStrings.scroll = "scroll".asInstanceOf[typings.overlayscrollbars.overlayscrollbarsStrings.scroll]
 }

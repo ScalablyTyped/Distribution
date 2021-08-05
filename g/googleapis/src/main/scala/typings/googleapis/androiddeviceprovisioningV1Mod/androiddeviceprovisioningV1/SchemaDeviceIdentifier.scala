@@ -44,43 +44,31 @@ trait SchemaDeviceIdentifier extends StObject {
 }
 object SchemaDeviceIdentifier {
   
-  @scala.inline
-  def apply(): SchemaDeviceIdentifier = {
+  inline def apply(): SchemaDeviceIdentifier = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDeviceIdentifier]
   }
   
-  @scala.inline
-  implicit class SchemaDeviceIdentifierMutableBuilder[Self <: SchemaDeviceIdentifier] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDeviceIdentifier](x: Self) {
     
-    @scala.inline
-    def setImei(value: String): Self = StObject.set(x, "imei", value.asInstanceOf[js.Any])
+    inline def setImei(value: String): Self = StObject.set(x, "imei", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImeiUndefined: Self = StObject.set(x, "imei", js.undefined)
+    inline def setImeiUndefined: Self = StObject.set(x, "imei", js.undefined)
     
-    @scala.inline
-    def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
+    inline def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManufacturerUndefined: Self = StObject.set(x, "manufacturer", js.undefined)
+    inline def setManufacturerUndefined: Self = StObject.set(x, "manufacturer", js.undefined)
     
-    @scala.inline
-    def setMeid(value: String): Self = StObject.set(x, "meid", value.asInstanceOf[js.Any])
+    inline def setMeid(value: String): Self = StObject.set(x, "meid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeidUndefined: Self = StObject.set(x, "meid", js.undefined)
+    inline def setMeidUndefined: Self = StObject.set(x, "meid", js.undefined)
     
-    @scala.inline
-    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
+    inline def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerialNumberUndefined: Self = StObject.set(x, "serialNumber", js.undefined)
+    inline def setSerialNumberUndefined: Self = StObject.set(x, "serialNumber", js.undefined)
   }
 }

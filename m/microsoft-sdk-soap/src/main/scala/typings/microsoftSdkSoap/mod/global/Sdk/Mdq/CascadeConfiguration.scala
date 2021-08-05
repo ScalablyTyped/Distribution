@@ -22,8 +22,7 @@ trait CascadeConfiguration extends StObject {
 }
 object CascadeConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Assign: CascadeType,
     Delete: CascadeType,
     ExtensionData: CascadeType,
@@ -36,28 +35,20 @@ object CascadeConfiguration {
     __obj.asInstanceOf[CascadeConfiguration]
   }
   
-  @scala.inline
-  implicit class CascadeConfigurationMutableBuilder[Self <: CascadeConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: CascadeConfiguration](x: Self) {
     
-    @scala.inline
-    def setAssign(value: CascadeType): Self = StObject.set(x, "Assign", value.asInstanceOf[js.Any])
+    inline def setAssign(value: CascadeType): Self = StObject.set(x, "Assign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: CascadeType): Self = StObject.set(x, "Delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: CascadeType): Self = StObject.set(x, "Delete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionData(value: CascadeType): Self = StObject.set(x, "ExtensionData", value.asInstanceOf[js.Any])
+    inline def setExtensionData(value: CascadeType): Self = StObject.set(x, "ExtensionData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerge(value: CascadeType): Self = StObject.set(x, "Merge", value.asInstanceOf[js.Any])
+    inline def setMerge(value: CascadeType): Self = StObject.set(x, "Merge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReparent(value: CascadeType): Self = StObject.set(x, "Reparent", value.asInstanceOf[js.Any])
+    inline def setReparent(value: CascadeType): Self = StObject.set(x, "Reparent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShare(value: CascadeType): Self = StObject.set(x, "Share", value.asInstanceOf[js.Any])
+    inline def setShare(value: CascadeType): Self = StObject.set(x, "Share", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnshare(value: CascadeType): Self = StObject.set(x, "Unshare", value.asInstanceOf[js.Any])
+    inline def setUnshare(value: CascadeType): Self = StObject.set(x, "Unshare", value.asInstanceOf[js.Any])
   }
 }

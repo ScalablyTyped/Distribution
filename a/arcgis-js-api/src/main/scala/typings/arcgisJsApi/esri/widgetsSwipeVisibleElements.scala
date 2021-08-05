@@ -10,8 +10,7 @@ trait widgetsSwipeVisibleElements
      with SwipeVisibleElements
 object widgetsSwipeVisibleElements {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     divider: Boolean,
     handle: Boolean,

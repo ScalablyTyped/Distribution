@@ -33,6 +33,5 @@ object vmMod {
     def toVmFile(file: String): String = js.native
   }
   
-  @scala.inline
-  def getWindowsVm(debugLogger: DebugLogger): js.Promise[VmManager] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWindowsVm")(debugLogger.asInstanceOf[js.Any]).asInstanceOf[js.Promise[VmManager]]
+  inline def getWindowsVm(debugLogger: DebugLogger): js.Promise[VmManager] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWindowsVm")(debugLogger.asInstanceOf[js.Any]).asInstanceOf[js.Promise[VmManager]]
 }

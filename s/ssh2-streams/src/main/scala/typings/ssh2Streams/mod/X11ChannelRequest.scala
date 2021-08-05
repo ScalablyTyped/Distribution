@@ -25,8 +25,7 @@ trait X11ChannelRequest
 }
 object X11ChannelRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cookie: String,
     protocol: String,
     recipient: Double,
@@ -38,28 +37,20 @@ object X11ChannelRequest {
     __obj.asInstanceOf[X11ChannelRequest]
   }
   
-  @scala.inline
-  implicit class X11ChannelRequestMutableBuilder[Self <: X11ChannelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: X11ChannelRequest](x: Self) {
     
-    @scala.inline
-    def setCookie(value: String): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
+    inline def setCookie(value: String): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipient(value: Double): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
+    inline def setRecipient(value: Double): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: `x11-req`): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: `x11-req`): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreen(value: Double): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
+    inline def setScreen(value: Double): Self = StObject.set(x, "screen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSingle(value: Boolean): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
+    inline def setSingle(value: Boolean): Self = StObject.set(x, "single", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWantReply(value: Boolean): Self = StObject.set(x, "wantReply", value.asInstanceOf[js.Any])
+    inline def setWantReply(value: Boolean): Self = StObject.set(x, "wantReply", value.asInstanceOf[js.Any])
   }
 }

@@ -11,19 +11,15 @@ trait MobileFriendlyIssue extends StObject {
 }
 object MobileFriendlyIssue {
   
-  @scala.inline
-  def apply(): MobileFriendlyIssue = {
+  inline def apply(): MobileFriendlyIssue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MobileFriendlyIssue]
   }
   
-  @scala.inline
-  implicit class MobileFriendlyIssueMutableBuilder[Self <: MobileFriendlyIssue] (val x: Self) extends AnyVal {
+  extension [Self <: MobileFriendlyIssue](x: Self) {
     
-    @scala.inline
-    def setRule(value: String): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: String): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
+    inline def setRuleUndefined: Self = StObject.set(x, "rule", js.undefined)
   }
 }

@@ -18,15 +18,15 @@ object packerMod {
   @js.native
   trait Packer extends Readable {
     
-    var _option: js.Any = js.native
+    /* private */ var _option: js.Any = js.native
     
-    var _packChunk: js.Any = js.native
+    /* private */ var _packChunk: js.Any = js.native
     
-    var _packIDAT: js.Any = js.native
+    /* private */ var _packIDAT: js.Any = js.native
     
-    var _packIEND: js.Any = js.native
+    /* private */ var _packIEND: js.Any = js.native
     
-    var _packIHDR: js.Any = js.native
+    /* private */ var _packIHDR: js.Any = js.native
     
     def _read(): Unit = js.native
     

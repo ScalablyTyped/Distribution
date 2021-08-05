@@ -19,19 +19,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ExportJpgStringOptions {
   
-  @scala.inline
-  def apply(): ExportJpgStringOptions = {
+  inline def apply(): ExportJpgStringOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportJpgStringOptions]
   }
   
-  @scala.inline
-  implicit class ExportJpgStringOptionsMutableBuilder[Self <: ExportJpgStringOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ExportJpgStringOptions](x: Self) {
     
-    @scala.inline
-    def setOutput(value: base64uri | base64): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: base64uri | base64): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+    inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
   }
 }

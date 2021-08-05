@@ -15,23 +15,18 @@ trait ArrayFilterData
 }
 object ArrayFilterData {
   
-  @scala.inline
-  def apply(value: js.Array[Double | String]): ArrayFilterData = {
+  inline def apply(value: js.Array[Double | String]): ArrayFilterData = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ArrayFilter")
     __obj.asInstanceOf[ArrayFilterData]
   }
   
-  @scala.inline
-  implicit class ArrayFilterDataMutableBuilder[Self <: ArrayFilterData] (val x: Self) extends AnyVal {
+  extension [Self <: ArrayFilterData](x: Self) {
     
-    @scala.inline
-    def setType(value: ArrayFilter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ArrayFilter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Array[Double | String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[Double | String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueVarargs(value: (Double | String)*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: (Double | String)*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

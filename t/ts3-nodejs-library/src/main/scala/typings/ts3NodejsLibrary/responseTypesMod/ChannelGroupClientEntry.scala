@@ -17,31 +17,23 @@ trait ChannelGroupClientEntry
 }
 object ChannelGroupClientEntry {
   
-  @scala.inline
-  def apply(): ChannelGroupClientEntry = {
+  inline def apply(): ChannelGroupClientEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChannelGroupClientEntry]
   }
   
-  @scala.inline
-  implicit class ChannelGroupClientEntryMutableBuilder[Self <: ChannelGroupClientEntry] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelGroupClientEntry](x: Self) {
     
-    @scala.inline
-    def setCgid(value: String): Self = StObject.set(x, "cgid", value.asInstanceOf[js.Any])
+    inline def setCgid(value: String): Self = StObject.set(x, "cgid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCgidUndefined: Self = StObject.set(x, "cgid", js.undefined)
+    inline def setCgidUndefined: Self = StObject.set(x, "cgid", js.undefined)
     
-    @scala.inline
-    def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
+    inline def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidUndefined: Self = StObject.set(x, "cid", js.undefined)
+    inline def setCidUndefined: Self = StObject.set(x, "cid", js.undefined)
     
-    @scala.inline
-    def setCldbid(value: String): Self = StObject.set(x, "cldbid", value.asInstanceOf[js.Any])
+    inline def setCldbid(value: String): Self = StObject.set(x, "cldbid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCldbidUndefined: Self = StObject.set(x, "cldbid", js.undefined)
+    inline def setCldbidUndefined: Self = StObject.set(x, "cldbid", js.undefined)
   }
 }

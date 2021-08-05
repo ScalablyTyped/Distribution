@@ -13,16 +13,13 @@ trait ExistingObjectReplication extends StObject {
 }
 object ExistingObjectReplication {
   
-  @scala.inline
-  def apply(Status: ExistingObjectReplicationStatus): ExistingObjectReplication = {
+  inline def apply(Status: ExistingObjectReplicationStatus): ExistingObjectReplication = {
     val __obj = js.Dynamic.literal(Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExistingObjectReplication]
   }
   
-  @scala.inline
-  implicit class ExistingObjectReplicationMutableBuilder[Self <: ExistingObjectReplication] (val x: Self) extends AnyVal {
+  extension [Self <: ExistingObjectReplication](x: Self) {
     
-    @scala.inline
-    def setStatus(value: ExistingObjectReplicationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ExistingObjectReplicationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

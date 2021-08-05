@@ -17,20 +17,16 @@ trait IStdinMessage
 }
 object IStdinMessage {
   
-  @scala.inline
-  def apply(content: Password, header: IHeader, parent_header: IHeader | js.Object, `type`: Channel): IStdinMessage = {
+  inline def apply(content: Password, header: IHeader, parent_header: IHeader | js.Object, `type`: Channel): IStdinMessage = {
     val __obj = js.Dynamic.literal(channel = "stdin", content = content.asInstanceOf[js.Any], header = header.asInstanceOf[js.Any], parent_header = parent_header.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IStdinMessage]
   }
   
-  @scala.inline
-  implicit class IStdinMessageMutableBuilder[Self <: IStdinMessage] (val x: Self) extends AnyVal {
+  extension [Self <: IStdinMessage](x: Self) {
     
-    @scala.inline
-    def setChannel(value: stdin): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: stdin): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent(value: Password): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Password): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }
 }

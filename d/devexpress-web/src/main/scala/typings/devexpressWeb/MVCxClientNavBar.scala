@@ -19,8 +19,7 @@ trait MVCxClientNavBar
 }
 object MVCxClientNavBar {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     BeginCallback: ASPxClientEvent[MVCxClientBeginCallbackEventHandler[MVCxClientNavBar]],
     CallbackError: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientNavBar]],
@@ -58,10 +57,8 @@ object MVCxClientNavBar {
     __obj.asInstanceOf[MVCxClientNavBar]
   }
   
-  @scala.inline
-  implicit class MVCxClientNavBarMutableBuilder[Self <: MVCxClientNavBar] (val x: Self) extends AnyVal {
+  extension [Self <: MVCxClientNavBar](x: Self) {
     
-    @scala.inline
-    def setBeginCallback(value: ASPxClientEvent[MVCxClientBeginCallbackEventHandler[MVCxClientNavBar]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
+    inline def setBeginCallback(value: ASPxClientEvent[MVCxClientBeginCallbackEventHandler[MVCxClientNavBar]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
   }
 }

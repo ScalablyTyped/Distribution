@@ -23,31 +23,23 @@ trait TargetResource extends StObject {
 }
 object TargetResource {
   
-  @scala.inline
-  def apply(): TargetResource = {
+  inline def apply(): TargetResource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TargetResource]
   }
   
-  @scala.inline
-  implicit class TargetResourceMutableBuilder[Self <: TargetResource] (val x: Self) extends AnyVal {
+  extension [Self <: TargetResource](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
+    inline def setResourceName(value: String): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
+    inline def setResourceNameUndefined: Self = StObject.set(x, "resourceName", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "resourceType", js.undefined)
   }
 }

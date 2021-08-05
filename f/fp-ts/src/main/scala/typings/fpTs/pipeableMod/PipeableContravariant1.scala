@@ -13,8 +13,7 @@ trait PipeableContravariant1[F /* <: /* import warning: transforms.QualifyRefere
 }
 object PipeableContravariant1 {
   
-  @scala.inline
-  def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
+  inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
     contramap: js.Function1[js.Any, js.Any] => js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ /* fa */ js.Any, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, B> */ js.Any
@@ -24,11 +23,9 @@ object PipeableContravariant1 {
     __obj.asInstanceOf[PipeableContravariant1[F]]
   }
   
-  @scala.inline
-  implicit class PipeableContravariant1MutableBuilder[Self <: PipeableContravariant1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */] (val x: Self & PipeableContravariant1[F]) extends AnyVal {
+  extension [Self <: PipeableContravariant1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](x: Self & PipeableContravariant1[F]) {
     
-    @scala.inline
-    def setContramap(
+    inline def setContramap(
       value: js.Function1[js.Any, js.Any] => js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ /* fa */ js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, B> */ js.Any

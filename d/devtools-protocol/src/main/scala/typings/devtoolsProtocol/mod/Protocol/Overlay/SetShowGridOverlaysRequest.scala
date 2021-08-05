@@ -13,19 +13,15 @@ trait SetShowGridOverlaysRequest extends StObject {
 }
 object SetShowGridOverlaysRequest {
   
-  @scala.inline
-  def apply(gridNodeHighlightConfigs: js.Array[GridNodeHighlightConfig]): SetShowGridOverlaysRequest = {
+  inline def apply(gridNodeHighlightConfigs: js.Array[GridNodeHighlightConfig]): SetShowGridOverlaysRequest = {
     val __obj = js.Dynamic.literal(gridNodeHighlightConfigs = gridNodeHighlightConfigs.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetShowGridOverlaysRequest]
   }
   
-  @scala.inline
-  implicit class SetShowGridOverlaysRequestMutableBuilder[Self <: SetShowGridOverlaysRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetShowGridOverlaysRequest](x: Self) {
     
-    @scala.inline
-    def setGridNodeHighlightConfigs(value: js.Array[GridNodeHighlightConfig]): Self = StObject.set(x, "gridNodeHighlightConfigs", value.asInstanceOf[js.Any])
+    inline def setGridNodeHighlightConfigs(value: js.Array[GridNodeHighlightConfig]): Self = StObject.set(x, "gridNodeHighlightConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridNodeHighlightConfigsVarargs(value: GridNodeHighlightConfig*): Self = StObject.set(x, "gridNodeHighlightConfigs", js.Array(value :_*))
+    inline def setGridNodeHighlightConfigsVarargs(value: GridNodeHighlightConfig*): Self = StObject.set(x, "gridNodeHighlightConfigs", js.Array(value :_*))
   }
 }

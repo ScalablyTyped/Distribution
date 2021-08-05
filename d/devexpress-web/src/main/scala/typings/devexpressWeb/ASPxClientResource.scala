@@ -41,8 +41,7 @@ trait ASPxClientResource extends StObject {
 }
 object ASPxClientResource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetCaption: () => String,
     GetColor: () => String,
     GetId: () => String,
@@ -54,25 +53,18 @@ object ASPxClientResource {
     __obj.asInstanceOf[ASPxClientResource]
   }
   
-  @scala.inline
-  implicit class ASPxClientResourceMutableBuilder[Self <: ASPxClientResource] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientResource](x: Self) {
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCaption(value: () => String): Self = StObject.set(x, "GetCaption", js.Any.fromFunction0(value))
+    inline def setGetCaption(value: () => String): Self = StObject.set(x, "GetCaption", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetColor(value: () => String): Self = StObject.set(x, "GetColor", js.Any.fromFunction0(value))
+    inline def setGetColor(value: () => String): Self = StObject.set(x, "GetColor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetId(value: () => String): Self = StObject.set(x, "GetId", js.Any.fromFunction0(value))
+    inline def setGetId(value: () => String): Self = StObject.set(x, "GetId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
   }
 }

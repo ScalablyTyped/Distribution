@@ -11,19 +11,15 @@ trait ClientCertificateConfig extends StObject {
 }
 object ClientCertificateConfig {
   
-  @scala.inline
-  def apply(): ClientCertificateConfig = {
+  inline def apply(): ClientCertificateConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClientCertificateConfig]
   }
   
-  @scala.inline
-  implicit class ClientCertificateConfigMutableBuilder[Self <: ClientCertificateConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ClientCertificateConfig](x: Self) {
     
-    @scala.inline
-    def setIssueClientCertificate(value: Boolean): Self = StObject.set(x, "issueClientCertificate", value.asInstanceOf[js.Any])
+    inline def setIssueClientCertificate(value: Boolean): Self = StObject.set(x, "issueClientCertificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssueClientCertificateUndefined: Self = StObject.set(x, "issueClientCertificate", js.undefined)
+    inline def setIssueClientCertificateUndefined: Self = StObject.set(x, "issueClientCertificate", js.undefined)
   }
 }

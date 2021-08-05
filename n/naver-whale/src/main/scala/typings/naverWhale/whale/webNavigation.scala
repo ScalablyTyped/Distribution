@@ -23,17 +23,14 @@ object webNavigation {
   }
   object GetAllFrameDetails {
     
-    @scala.inline
-    def apply(tabId: Double): GetAllFrameDetails = {
+    inline def apply(tabId: Double): GetAllFrameDetails = {
       val __obj = js.Dynamic.literal(tabId = tabId.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetAllFrameDetails]
     }
     
-    @scala.inline
-    implicit class GetAllFrameDetailsMutableBuilder[Self <: GetAllFrameDetails] (val x: Self) extends AnyVal {
+    extension [Self <: GetAllFrameDetails](x: Self) {
       
-      @scala.inline
-      def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+      inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -49,20 +46,16 @@ object webNavigation {
   }
   object GetAllFrameResultDetails {
     
-    @scala.inline
-    def apply(errorOccurred: Boolean, frameId: Double, parentFrameId: Double, processId: Double, url: String): GetAllFrameResultDetails = {
+    inline def apply(errorOccurred: Boolean, frameId: Double, parentFrameId: Double, processId: Double, url: String): GetAllFrameResultDetails = {
       val __obj = js.Dynamic.literal(errorOccurred = errorOccurred.asInstanceOf[js.Any], frameId = frameId.asInstanceOf[js.Any], parentFrameId = parentFrameId.asInstanceOf[js.Any], processId = processId.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetAllFrameResultDetails]
     }
     
-    @scala.inline
-    implicit class GetAllFrameResultDetailsMutableBuilder[Self <: GetAllFrameResultDetails] (val x: Self) extends AnyVal {
+    extension [Self <: GetAllFrameResultDetails](x: Self) {
       
-      @scala.inline
-      def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+      inline def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessId(value: Double): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
+      inline def setProcessId(value: Double): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -83,26 +76,20 @@ object webNavigation {
   }
   object GetFrameDetails {
     
-    @scala.inline
-    def apply(frameId: Double, tabId: Double): GetFrameDetails = {
+    inline def apply(frameId: Double, tabId: Double): GetFrameDetails = {
       val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetFrameDetails]
     }
     
-    @scala.inline
-    implicit class GetFrameDetailsMutableBuilder[Self <: GetFrameDetails] (val x: Self) extends AnyVal {
+    extension [Self <: GetFrameDetails](x: Self) {
       
-      @scala.inline
-      def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+      inline def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessId(value: Double): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
+      inline def setProcessId(value: Double): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessIdUndefined: Self = StObject.set(x, "processId", js.undefined)
+      inline def setProcessIdUndefined: Self = StObject.set(x, "processId", js.undefined)
       
-      @scala.inline
-      def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+      inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -119,23 +106,18 @@ object webNavigation {
   }
   object GetFrameResultDetails {
     
-    @scala.inline
-    def apply(errorOccurred: Boolean, parentFrameId: Double, url: String): GetFrameResultDetails = {
+    inline def apply(errorOccurred: Boolean, parentFrameId: Double, url: String): GetFrameResultDetails = {
       val __obj = js.Dynamic.literal(errorOccurred = errorOccurred.asInstanceOf[js.Any], parentFrameId = parentFrameId.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetFrameResultDetails]
     }
     
-    @scala.inline
-    implicit class GetFrameResultDetailsMutableBuilder[Self <: GetFrameResultDetails] (val x: Self) extends AnyVal {
+    extension [Self <: GetFrameResultDetails](x: Self) {
       
-      @scala.inline
-      def setErrorOccurred(value: Boolean): Self = StObject.set(x, "errorOccurred", value.asInstanceOf[js.Any])
+      inline def setErrorOccurred(value: Boolean): Self = StObject.set(x, "errorOccurred", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentFrameId(value: Double): Self = StObject.set(x, "parentFrameId", value.asInstanceOf[js.Any])
+      inline def setParentFrameId(value: Double): Self = StObject.set(x, "parentFrameId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -149,20 +131,16 @@ object webNavigation {
   }
   object WebNavigationCallbackDetails {
     
-    @scala.inline
-    def apply(tabId: Double, timeStamp: Double): WebNavigationCallbackDetails = {
+    inline def apply(tabId: Double, timeStamp: Double): WebNavigationCallbackDetails = {
       val __obj = js.Dynamic.literal(tabId = tabId.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebNavigationCallbackDetails]
     }
     
-    @scala.inline
-    implicit class WebNavigationCallbackDetailsMutableBuilder[Self <: WebNavigationCallbackDetails] (val x: Self) extends AnyVal {
+    extension [Self <: WebNavigationCallbackDetails](x: Self) {
       
-      @scala.inline
-      def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+      inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+      inline def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -184,20 +162,16 @@ object webNavigation {
   }
   object WebNavigationEventFilter {
     
-    @scala.inline
-    def apply(url: js.Array[UrlFilter]): WebNavigationEventFilter = {
+    inline def apply(url: js.Array[UrlFilter]): WebNavigationEventFilter = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebNavigationEventFilter]
     }
     
-    @scala.inline
-    implicit class WebNavigationEventFilterMutableBuilder[Self <: WebNavigationEventFilter] (val x: Self) extends AnyVal {
+    extension [Self <: WebNavigationEventFilter](x: Self) {
       
-      @scala.inline
-      def setUrl(value: js.Array[UrlFilter]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: js.Array[UrlFilter]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlVarargs(value: UrlFilter*): Self = StObject.set(x, "url", js.Array(value :_*))
+      inline def setUrlVarargs(value: UrlFilter*): Self = StObject.set(x, "url", js.Array(value :_*))
     }
   }
   
@@ -216,20 +190,16 @@ object webNavigation {
   }
   object WebNavigationFramedCallbackDetails {
     
-    @scala.inline
-    def apply(frameId: Double, processId: Double, tabId: Double, timeStamp: Double, url: String): WebNavigationFramedCallbackDetails = {
+    inline def apply(frameId: Double, processId: Double, tabId: Double, timeStamp: Double, url: String): WebNavigationFramedCallbackDetails = {
       val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any], processId = processId.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebNavigationFramedCallbackDetails]
     }
     
-    @scala.inline
-    implicit class WebNavigationFramedCallbackDetailsMutableBuilder[Self <: WebNavigationFramedCallbackDetails] (val x: Self) extends AnyVal {
+    extension [Self <: WebNavigationFramedCallbackDetails](x: Self) {
       
-      @scala.inline
-      def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+      inline def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessId(value: Double): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
+      inline def setProcessId(value: Double): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -242,17 +212,14 @@ object webNavigation {
   }
   object WebNavigationFramedErrorCallbackDetails {
     
-    @scala.inline
-    def apply(error: String, frameId: Double, processId: Double, tabId: Double, timeStamp: Double, url: String): WebNavigationFramedErrorCallbackDetails = {
+    inline def apply(error: String, frameId: Double, processId: Double, tabId: Double, timeStamp: Double, url: String): WebNavigationFramedErrorCallbackDetails = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], frameId = frameId.asInstanceOf[js.Any], processId = processId.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebNavigationFramedErrorCallbackDetails]
     }
     
-    @scala.inline
-    implicit class WebNavigationFramedErrorCallbackDetailsMutableBuilder[Self <: WebNavigationFramedErrorCallbackDetails] (val x: Self) extends AnyVal {
+    extension [Self <: WebNavigationFramedErrorCallbackDetails](x: Self) {
       
-      @scala.inline
-      def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
   }
   
@@ -272,8 +239,7 @@ object webNavigation {
   }
   object WebNavigationParentedCallbackDetails {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       frameId: Double,
       parentFrameId: Double,
       processId: Double,
@@ -285,11 +251,9 @@ object webNavigation {
       __obj.asInstanceOf[WebNavigationParentedCallbackDetails]
     }
     
-    @scala.inline
-    implicit class WebNavigationParentedCallbackDetailsMutableBuilder[Self <: WebNavigationParentedCallbackDetails] (val x: Self) extends AnyVal {
+    extension [Self <: WebNavigationParentedCallbackDetails](x: Self) {
       
-      @scala.inline
-      def setParentFrameId(value: Double): Self = StObject.set(x, "parentFrameId", value.asInstanceOf[js.Any])
+      inline def setParentFrameId(value: Double): Self = StObject.set(x, "parentFrameId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -304,17 +268,14 @@ object webNavigation {
   }
   object WebNavigationReplacementCallbackDetails {
     
-    @scala.inline
-    def apply(replacedTabId: Double, tabId: Double, timeStamp: Double): WebNavigationReplacementCallbackDetails = {
+    inline def apply(replacedTabId: Double, tabId: Double, timeStamp: Double): WebNavigationReplacementCallbackDetails = {
       val __obj = js.Dynamic.literal(replacedTabId = replacedTabId.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebNavigationReplacementCallbackDetails]
     }
     
-    @scala.inline
-    implicit class WebNavigationReplacementCallbackDetailsMutableBuilder[Self <: WebNavigationReplacementCallbackDetails] (val x: Self) extends AnyVal {
+    extension [Self <: WebNavigationReplacementCallbackDetails](x: Self) {
       
-      @scala.inline
-      def setReplacedTabId(value: Double): Self = StObject.set(x, "replacedTabId", value.asInstanceOf[js.Any])
+      inline def setReplacedTabId(value: Double): Self = StObject.set(x, "replacedTabId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -338,8 +299,7 @@ object webNavigation {
   }
   object WebNavigationSourceCallbackDetails {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       sourceFrameId: Double,
       sourceProcessId: Double,
       sourceTabId: Double,
@@ -351,17 +311,13 @@ object webNavigation {
       __obj.asInstanceOf[WebNavigationSourceCallbackDetails]
     }
     
-    @scala.inline
-    implicit class WebNavigationSourceCallbackDetailsMutableBuilder[Self <: WebNavigationSourceCallbackDetails] (val x: Self) extends AnyVal {
+    extension [Self <: WebNavigationSourceCallbackDetails](x: Self) {
       
-      @scala.inline
-      def setSourceFrameId(value: Double): Self = StObject.set(x, "sourceFrameId", value.asInstanceOf[js.Any])
+      inline def setSourceFrameId(value: Double): Self = StObject.set(x, "sourceFrameId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceProcessId(value: Double): Self = StObject.set(x, "sourceProcessId", value.asInstanceOf[js.Any])
+      inline def setSourceProcessId(value: Double): Self = StObject.set(x, "sourceProcessId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceTabId(value: Double): Self = StObject.set(x, "sourceTabId", value.asInstanceOf[js.Any])
+      inline def setSourceTabId(value: Double): Self = StObject.set(x, "sourceTabId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -385,8 +341,7 @@ object webNavigation {
   }
   object WebNavigationTransitionCallbackDetails {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       frameId: Double,
       processId: Double,
       tabId: Double,
@@ -399,17 +354,13 @@ object webNavigation {
       __obj.asInstanceOf[WebNavigationTransitionCallbackDetails]
     }
     
-    @scala.inline
-    implicit class WebNavigationTransitionCallbackDetailsMutableBuilder[Self <: WebNavigationTransitionCallbackDetails] (val x: Self) extends AnyVal {
+    extension [Self <: WebNavigationTransitionCallbackDetails](x: Self) {
       
-      @scala.inline
-      def setTransitionQualifiers(value: js.Array[String]): Self = StObject.set(x, "transitionQualifiers", value.asInstanceOf[js.Any])
+      inline def setTransitionQualifiers(value: js.Array[String]): Self = StObject.set(x, "transitionQualifiers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionQualifiersVarargs(value: String*): Self = StObject.set(x, "transitionQualifiers", js.Array(value :_*))
+      inline def setTransitionQualifiersVarargs(value: String*): Self = StObject.set(x, "transitionQualifiers", js.Array(value :_*))
       
-      @scala.inline
-      def setTransitionType(value: String): Self = StObject.set(x, "transitionType", value.asInstanceOf[js.Any])
+      inline def setTransitionType(value: String): Self = StObject.set(x, "transitionType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -423,17 +374,14 @@ object webNavigation {
   }
   object WebNavigationUrlCallbackDetails {
     
-    @scala.inline
-    def apply(tabId: Double, timeStamp: Double, url: String): WebNavigationUrlCallbackDetails = {
+    inline def apply(tabId: Double, timeStamp: Double, url: String): WebNavigationUrlCallbackDetails = {
       val __obj = js.Dynamic.literal(tabId = tabId.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebNavigationUrlCallbackDetails]
     }
     
-    @scala.inline
-    implicit class WebNavigationUrlCallbackDetailsMutableBuilder[Self <: WebNavigationUrlCallbackDetails] (val x: Self) extends AnyVal {
+    extension [Self <: WebNavigationUrlCallbackDetails](x: Self) {
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

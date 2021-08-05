@@ -31,18 +31,18 @@ object powergraphMod {
     
     def greedyMerge(): Boolean = js.native
     
-    var initModulesFromGroup: js.Any = js.native
+    /* private */ var initModulesFromGroup: js.Any = js.native
     
-    var linkAccessor: js.Any = js.native
+    /* private */ var linkAccessor: js.Any = js.native
     
     def merge(a: Module, b: Module): Module = js.native
     def merge(a: Module, b: Module, k: Double): Module = js.native
     
     var modules: js.Array[Module] = js.native
     
-    var nEdges: js.Any = js.native
+    /* private */ var nEdges: js.Any = js.native
     
-    var rootMerges: js.Any = js.native
+    /* private */ var rootMerges: js.Any = js.native
     
     var roots: js.Array[ModuleSet] = js.native
   }
@@ -53,8 +53,7 @@ object powergraphMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getEdges(modules: ModuleSet, es: js.Array[PowerEdge]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getEdges")(modules.asInstanceOf[js.Any], es.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def getEdges(modules: ModuleSet, es: js.Array[PowerEdge]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getEdges")(modules.asInstanceOf[js.Any], es.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("webcola/dist/src/powergraph", "LinkSets")
@@ -156,10 +155,8 @@ object powergraphMod {
     var `type`: Double = js.native
   }
   
-  @scala.inline
-  def getGroups[Link](nodes: js.Array[js.Any], links: js.Array[Link], la: LinkTypeAccessor[Link]): Groups = (^.asInstanceOf[js.Dynamic].applyDynamic("getGroups")(nodes.asInstanceOf[js.Any], links.asInstanceOf[js.Any], la.asInstanceOf[js.Any])).asInstanceOf[Groups]
-  @scala.inline
-  def getGroups[Link](
+  inline def getGroups[Link](nodes: js.Array[js.Any], links: js.Array[Link], la: LinkTypeAccessor[Link]): Groups = (^.asInstanceOf[js.Dynamic].applyDynamic("getGroups")(nodes.asInstanceOf[js.Any], links.asInstanceOf[js.Any], la.asInstanceOf[js.Any])).asInstanceOf[Groups]
+  inline def getGroups[Link](
     nodes: js.Array[js.Any],
     links: js.Array[Link],
     la: LinkTypeAccessor[Link],
@@ -174,17 +171,14 @@ object powergraphMod {
   }
   object LinkTypeAccessor {
     
-    @scala.inline
-    def apply[Link](getSourceIndex: Link => Double, getTargetIndex: Link => Double, getType: Link => Double): LinkTypeAccessor[Link] = {
+    inline def apply[Link](getSourceIndex: Link => Double, getTargetIndex: Link => Double, getType: Link => Double): LinkTypeAccessor[Link] = {
       val __obj = js.Dynamic.literal(getSourceIndex = js.Any.fromFunction1(getSourceIndex), getTargetIndex = js.Any.fromFunction1(getTargetIndex), getType = js.Any.fromFunction1(getType))
       __obj.asInstanceOf[LinkTypeAccessor[Link]]
     }
     
-    @scala.inline
-    implicit class LinkTypeAccessorMutableBuilder[Self <: LinkTypeAccessor[?], Link] (val x: Self & LinkTypeAccessor[Link]) extends AnyVal {
+    extension [Self <: LinkTypeAccessor[?], Link](x: Self & LinkTypeAccessor[Link]) {
       
-      @scala.inline
-      def setGetType(value: Link => Double): Self = StObject.set(x, "getType", js.Any.fromFunction1(value))
+      inline def setGetType(value: Link => Double): Self = StObject.set(x, "getType", js.Any.fromFunction1(value))
     }
   }
 }

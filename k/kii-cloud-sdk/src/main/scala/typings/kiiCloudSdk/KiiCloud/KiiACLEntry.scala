@@ -65,8 +65,7 @@ trait KiiACLEntry extends StObject {
 }
 object KiiACLEntry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAction: () => KiiACLAction,
     getGrant: () => Boolean,
     getSubject: () => js.Any,
@@ -78,25 +77,18 @@ object KiiACLEntry {
     __obj.asInstanceOf[KiiACLEntry]
   }
   
-  @scala.inline
-  implicit class KiiACLEntryMutableBuilder[Self <: KiiACLEntry] (val x: Self) extends AnyVal {
+  extension [Self <: KiiACLEntry](x: Self) {
     
-    @scala.inline
-    def setGetAction(value: () => KiiACLAction): Self = StObject.set(x, "getAction", js.Any.fromFunction0(value))
+    inline def setGetAction(value: () => KiiACLAction): Self = StObject.set(x, "getAction", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetGrant(value: () => Boolean): Self = StObject.set(x, "getGrant", js.Any.fromFunction0(value))
+    inline def setGetGrant(value: () => Boolean): Self = StObject.set(x, "getGrant", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSubject(value: () => js.Any): Self = StObject.set(x, "getSubject", js.Any.fromFunction0(value))
+    inline def setGetSubject(value: () => js.Any): Self = StObject.set(x, "getSubject", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetAction(value: KiiACLAction => Unit): Self = StObject.set(x, "setAction", js.Any.fromFunction1(value))
+    inline def setSetAction(value: KiiACLAction => Unit): Self = StObject.set(x, "setAction", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetGrant(value: Boolean => Unit): Self = StObject.set(x, "setGrant", js.Any.fromFunction1(value))
+    inline def setSetGrant(value: Boolean => Unit): Self = StObject.set(x, "setGrant", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSubject(value: KiiACLSubject => Unit): Self = StObject.set(x, "setSubject", js.Any.fromFunction1(value))
+    inline def setSetSubject(value: KiiACLSubject => Unit): Self = StObject.set(x, "setSubject", js.Any.fromFunction1(value))
   }
 }

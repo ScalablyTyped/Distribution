@@ -28,7 +28,7 @@ object linkedDictionaryMod {
       */
     /* private */ def getLinkedDictionaryPair(key: js.Any): js.Any = js.native
     
-    var head: js.Any = js.native
+    /* private */ var head: js.Any = js.native
     
     /**
       * Internal function used when updating an existing KeyValue pair.
@@ -37,6 +37,6 @@ object linkedDictionaryMod {
       */
     /* private */ def replace(oldPair: js.Any, newPair: js.Any): js.Any = js.native
     
-    var tail: js.Any = js.native
+    /* private */ var tail: js.Any = js.native
   }
 }

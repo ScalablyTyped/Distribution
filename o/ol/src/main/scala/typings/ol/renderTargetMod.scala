@@ -99,8 +99,7 @@ object renderTargetMod {
   }
   object WebGLRenderTarget {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clearCachedData: () => Unit,
       getFramebuffer: () => WebGLFramebuffer,
       getSize: () => js.Array[Double],
@@ -113,29 +112,21 @@ object renderTargetMod {
       __obj.asInstanceOf[WebGLRenderTarget]
     }
     
-    @scala.inline
-    implicit class WebGLRenderTargetMutableBuilder[Self <: WebGLRenderTarget] (val x: Self) extends AnyVal {
+    extension [Self <: WebGLRenderTarget](x: Self) {
       
-      @scala.inline
-      def setClearCachedData(value: () => Unit): Self = StObject.set(x, "clearCachedData", js.Any.fromFunction0(value))
+      inline def setClearCachedData(value: () => Unit): Self = StObject.set(x, "clearCachedData", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFramebuffer(value: () => WebGLFramebuffer): Self = StObject.set(x, "getFramebuffer", js.Any.fromFunction0(value))
+      inline def setGetFramebuffer(value: () => WebGLFramebuffer): Self = StObject.set(x, "getFramebuffer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSize(value: () => js.Array[Double]): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
+      inline def setGetSize(value: () => js.Array[Double]): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTexture(value: () => WebGLTexture): Self = StObject.set(x, "getTexture", js.Any.fromFunction0(value))
+      inline def setGetTexture(value: () => WebGLTexture): Self = StObject.set(x, "getTexture", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReadAll(value: () => Uint8Array): Self = StObject.set(x, "readAll", js.Any.fromFunction0(value))
+      inline def setReadAll(value: () => Uint8Array): Self = StObject.set(x, "readAll", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReadPixel(value: (Double, Double) => Uint8Array): Self = StObject.set(x, "readPixel", js.Any.fromFunction2(value))
+      inline def setReadPixel(value: (Double, Double) => Uint8Array): Self = StObject.set(x, "readPixel", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetSize(value: js.Array[Double] => Unit): Self = StObject.set(x, "setSize", js.Any.fromFunction1(value))
+      inline def setSetSize(value: js.Array[Double] => Unit): Self = StObject.set(x, "setSize", js.Any.fromFunction1(value))
     }
   }
 }

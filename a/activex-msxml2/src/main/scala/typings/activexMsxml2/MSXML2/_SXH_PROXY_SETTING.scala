@@ -15,15 +15,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait _SXH_PROXY_SETTING extends StObject
 object _SXH_PROXY_SETTING {
   
-  @scala.inline
-  def SXH_PROXY_SET_DEFAULT: `0` = 0.asInstanceOf[`0`]
+  inline def SXH_PROXY_SET_DEFAULT: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def SXH_PROXY_SET_DIRECT: `1` = 1.asInstanceOf[`1`]
+  inline def SXH_PROXY_SET_DIRECT: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def SXH_PROXY_SET_PRECONFIG: `0` = 0.asInstanceOf[`0`]
+  inline def SXH_PROXY_SET_PRECONFIG: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def SXH_PROXY_SET_PROXY: `2` = 2.asInstanceOf[`2`]
+  inline def SXH_PROXY_SET_PROXY: `2` = 2.asInstanceOf[`2`]
 }

@@ -10,16 +10,13 @@ trait Normal extends StObject {
 }
 object Normal {
   
-  @scala.inline
-  def apply(normal: Map): Normal = {
+  inline def apply(normal: Map): Normal = {
     val __obj = js.Dynamic.literal(normal = normal.asInstanceOf[js.Any])
     __obj.asInstanceOf[Normal]
   }
   
-  @scala.inline
-  implicit class NormalMutableBuilder[Self <: Normal] (val x: Self) extends AnyVal {
+  extension [Self <: Normal](x: Self) {
     
-    @scala.inline
-    def setNormal(value: Map): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
+    inline def setNormal(value: Map): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
   }
 }

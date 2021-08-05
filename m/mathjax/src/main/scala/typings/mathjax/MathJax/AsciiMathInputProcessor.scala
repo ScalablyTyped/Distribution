@@ -20,25 +20,19 @@ trait AsciiMathInputProcessor extends StObject {
 }
 object AsciiMathInputProcessor {
   
-  @scala.inline
-  def apply(): AsciiMathInputProcessor = {
+  inline def apply(): AsciiMathInputProcessor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AsciiMathInputProcessor]
   }
   
-  @scala.inline
-  implicit class AsciiMathInputProcessorMutableBuilder[Self <: AsciiMathInputProcessor] (val x: Self) extends AnyVal {
+  extension [Self <: AsciiMathInputProcessor](x: Self) {
     
-    @scala.inline
-    def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
+    inline def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecimalUndefined: Self = StObject.set(x, "decimal", js.undefined)
+    inline def setDecimalUndefined: Self = StObject.set(x, "decimal", js.undefined)
     
-    @scala.inline
-    def setDisplaystyle(value: Boolean): Self = StObject.set(x, "displaystyle", value.asInstanceOf[js.Any])
+    inline def setDisplaystyle(value: Boolean): Self = StObject.set(x, "displaystyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplaystyleUndefined: Self = StObject.set(x, "displaystyle", js.undefined)
+    inline def setDisplaystyleUndefined: Self = StObject.set(x, "displaystyle", js.undefined)
   }
 }

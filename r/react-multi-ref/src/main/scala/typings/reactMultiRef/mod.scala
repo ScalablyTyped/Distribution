@@ -28,20 +28,16 @@ object mod {
   }
   object MultiRef {
     
-    @scala.inline
-    def apply[K, V](map: Map[K, V], ref: K => js.Function1[/* value */ V | Null, js.Any]): MultiRef[K, V] = {
+    inline def apply[K, V](map: Map[K, V], ref: K => js.Function1[/* value */ V | Null, js.Any]): MultiRef[K, V] = {
       val __obj = js.Dynamic.literal(map = map.asInstanceOf[js.Any], ref = js.Any.fromFunction1(ref))
       __obj.asInstanceOf[MultiRef[K, V]]
     }
     
-    @scala.inline
-    implicit class MultiRefMutableBuilder[Self <: MultiRef[?, ?], K, V] (val x: Self & (MultiRef[K, V])) extends AnyVal {
+    extension [Self <: MultiRef[?, ?], K, V](x: Self & (MultiRef[K, V])) {
       
-      @scala.inline
-      def setMap(value: Map[K, V]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: Map[K, V]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRef(value: K => js.Function1[/* value */ V | Null, js.Any]): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      inline def setRef(value: K => js.Function1[/* value */ V | Null, js.Any]): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     }
   }
 }

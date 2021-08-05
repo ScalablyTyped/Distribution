@@ -23,31 +23,23 @@ trait BudgetedAndActualAmounts extends StObject {
 }
 object BudgetedAndActualAmounts {
   
-  @scala.inline
-  def apply(): BudgetedAndActualAmounts = {
+  inline def apply(): BudgetedAndActualAmounts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BudgetedAndActualAmounts]
   }
   
-  @scala.inline
-  implicit class BudgetedAndActualAmountsMutableBuilder[Self <: BudgetedAndActualAmounts] (val x: Self) extends AnyVal {
+  extension [Self <: BudgetedAndActualAmounts](x: Self) {
     
-    @scala.inline
-    def setActualAmount(value: Spend): Self = StObject.set(x, "ActualAmount", value.asInstanceOf[js.Any])
+    inline def setActualAmount(value: Spend): Self = StObject.set(x, "ActualAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActualAmountUndefined: Self = StObject.set(x, "ActualAmount", js.undefined)
+    inline def setActualAmountUndefined: Self = StObject.set(x, "ActualAmount", js.undefined)
     
-    @scala.inline
-    def setBudgetedAmount(value: Spend): Self = StObject.set(x, "BudgetedAmount", value.asInstanceOf[js.Any])
+    inline def setBudgetedAmount(value: Spend): Self = StObject.set(x, "BudgetedAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBudgetedAmountUndefined: Self = StObject.set(x, "BudgetedAmount", js.undefined)
+    inline def setBudgetedAmountUndefined: Self = StObject.set(x, "BudgetedAmount", js.undefined)
     
-    @scala.inline
-    def setTimePeriod(value: TimePeriod): Self = StObject.set(x, "TimePeriod", value.asInstanceOf[js.Any])
+    inline def setTimePeriod(value: TimePeriod): Self = StObject.set(x, "TimePeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimePeriodUndefined: Self = StObject.set(x, "TimePeriod", js.undefined)
+    inline def setTimePeriodUndefined: Self = StObject.set(x, "TimePeriod", js.undefined)
   }
 }

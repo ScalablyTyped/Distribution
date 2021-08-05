@@ -18,8 +18,7 @@ trait Vector2 extends StObject {
 }
 object Vector2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     length: () => Double,
     normalize: () => Vector2,
     set: (Double, Double) => Vector2,
@@ -30,22 +29,16 @@ object Vector2 {
     __obj.asInstanceOf[Vector2]
   }
   
-  @scala.inline
-  implicit class Vector2MutableBuilder[Self <: Vector2] (val x: Self) extends AnyVal {
+  extension [Self <: Vector2](x: Self) {
     
-    @scala.inline
-    def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
+    inline def setLength(value: () => Double): Self = StObject.set(x, "length", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNormalize(value: () => Vector2): Self = StObject.set(x, "normalize", js.Any.fromFunction0(value))
+    inline def setNormalize(value: () => Vector2): Self = StObject.set(x, "normalize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet(value: (Double, Double) => Vector2): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+    inline def setSet(value: (Double, Double) => Vector2): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

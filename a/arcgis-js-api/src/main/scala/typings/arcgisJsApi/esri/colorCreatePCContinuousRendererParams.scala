@@ -69,8 +69,7 @@ trait colorCreatePCContinuousRendererParams
 }
 object colorCreatePCContinuousRendererParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     field: String,
     hasOwnProperty: PropertyKey => Boolean,
@@ -81,49 +80,34 @@ object colorCreatePCContinuousRendererParams {
     __obj.asInstanceOf[colorCreatePCContinuousRendererParams]
   }
   
-  @scala.inline
-  implicit class colorCreatePCContinuousRendererParamsMutableBuilder[Self <: colorCreatePCContinuousRendererParams] (val x: Self) extends AnyVal {
+  extension [Self <: colorCreatePCContinuousRendererParams](x: Self) {
     
-    @scala.inline
-    def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
+    inline def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
+    inline def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
     
-    @scala.inline
-    def setColorScheme(value: ColorScheme): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
+    inline def setColorScheme(value: ColorScheme): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorSchemeUndefined: Self = StObject.set(x, "colorScheme", js.undefined)
+    inline def setColorSchemeUndefined: Self = StObject.set(x, "colorScheme", js.undefined)
     
-    @scala.inline
-    def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
+    inline def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDensityUndefined: Self = StObject.set(x, "density", js.undefined)
+    inline def setDensityUndefined: Self = StObject.set(x, "density", js.undefined)
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayer(value: PointCloudLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: PointCloudLayer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
     
-    @scala.inline
-    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setStatistics(value: SummaryStatisticsResult): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
+    inline def setStatistics(value: SummaryStatisticsResult): Self = StObject.set(x, "statistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
+    inline def setStatisticsUndefined: Self = StObject.set(x, "statistics", js.undefined)
   }
 }

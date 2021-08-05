@@ -17,8 +17,7 @@ trait LineCap extends StObject
 object LineCap {
   
   /** the line will end without any additional shape */
-  @scala.inline
-  def BUTT: `0` = 0.asInstanceOf[`0`]
+  inline def BUTT: `0` = 0.asInstanceOf[`0`]
   
   /**
     * the dash is a point
@@ -27,14 +26,12 @@ object LineCap {
     *
     * the lines join with an arc
     */
-  @scala.inline
-  def ROUND: `1` = 1.asInstanceOf[`1`]
+  inline def ROUND: `1` = 1.asInstanceOf[`1`]
   
   /**
     * the line will get a half square as additional cap
     *
     * the line uses a square for the line end.
     */
-  @scala.inline
-  def SQUARE: `2` = 2.asInstanceOf[`2`]
+  inline def SQUARE: `2` = 2.asInstanceOf[`2`]
 }

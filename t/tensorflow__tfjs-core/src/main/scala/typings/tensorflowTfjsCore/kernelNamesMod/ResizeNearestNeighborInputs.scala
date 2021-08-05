@@ -11,19 +11,15 @@ trait ResizeNearestNeighborInputs extends StObject {
 }
 object ResizeNearestNeighborInputs {
   
-  @scala.inline
-  def apply(): ResizeNearestNeighborInputs = {
+  inline def apply(): ResizeNearestNeighborInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResizeNearestNeighborInputs]
   }
   
-  @scala.inline
-  implicit class ResizeNearestNeighborInputsMutableBuilder[Self <: ResizeNearestNeighborInputs] (val x: Self) extends AnyVal {
+  extension [Self <: ResizeNearestNeighborInputs](x: Self) {
     
-    @scala.inline
-    def setImages(value: js.Any): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+    inline def setImages(value: js.Any): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
+    inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
   }
 }

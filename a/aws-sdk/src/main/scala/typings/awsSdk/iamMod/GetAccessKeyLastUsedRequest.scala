@@ -13,16 +13,13 @@ trait GetAccessKeyLastUsedRequest extends StObject {
 }
 object GetAccessKeyLastUsedRequest {
   
-  @scala.inline
-  def apply(AccessKeyId: accessKeyIdType): GetAccessKeyLastUsedRequest = {
+  inline def apply(AccessKeyId: accessKeyIdType): GetAccessKeyLastUsedRequest = {
     val __obj = js.Dynamic.literal(AccessKeyId = AccessKeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAccessKeyLastUsedRequest]
   }
   
-  @scala.inline
-  implicit class GetAccessKeyLastUsedRequestMutableBuilder[Self <: GetAccessKeyLastUsedRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetAccessKeyLastUsedRequest](x: Self) {
     
-    @scala.inline
-    def setAccessKeyId(value: accessKeyIdType): Self = StObject.set(x, "AccessKeyId", value.asInstanceOf[js.Any])
+    inline def setAccessKeyId(value: accessKeyIdType): Self = StObject.set(x, "AccessKeyId", value.asInstanceOf[js.Any])
   }
 }

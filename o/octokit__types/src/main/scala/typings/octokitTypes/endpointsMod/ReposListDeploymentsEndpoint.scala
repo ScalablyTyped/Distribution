@@ -42,55 +42,39 @@ trait ReposListDeploymentsEndpoint extends StObject {
 }
 object ReposListDeploymentsEndpoint {
   
-  @scala.inline
-  def apply(owner: String, repo: String): ReposListDeploymentsEndpoint = {
+  inline def apply(owner: String, repo: String): ReposListDeploymentsEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposListDeploymentsEndpoint]
   }
   
-  @scala.inline
-  implicit class ReposListDeploymentsEndpointMutableBuilder[Self <: ReposListDeploymentsEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReposListDeploymentsEndpoint](x: Self) {
     
-    @scala.inline
-    def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+    inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
+    inline def setPageUndefined: Self = StObject.set(x, "page", js.undefined)
     
-    @scala.inline
-    def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
+    inline def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
+    inline def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
     
-    @scala.inline
-    def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+    inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
+    inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShaUndefined: Self = StObject.set(x, "sha", js.undefined)
+    inline def setShaUndefined: Self = StObject.set(x, "sha", js.undefined)
     
-    @scala.inline
-    def setTask(value: String): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
+    inline def setTask(value: String): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskUndefined: Self = StObject.set(x, "task", js.undefined)
+    inline def setTaskUndefined: Self = StObject.set(x, "task", js.undefined)
   }
 }

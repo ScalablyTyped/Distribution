@@ -10,8 +10,7 @@ trait CSSOthersObject
      with /* k */ StringDictionary[js.UndefOr[(StylePropertyValue[String | Double]) | Null]]
 object CSSOthersObject {
   
-  @scala.inline
-  def apply(): CSSOthersObject = {
+  inline def apply(): CSSOthersObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CSSOthersObject]
   }

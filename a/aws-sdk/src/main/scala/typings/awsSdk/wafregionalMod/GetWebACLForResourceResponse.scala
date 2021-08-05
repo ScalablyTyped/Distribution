@@ -13,19 +13,15 @@ trait GetWebACLForResourceResponse extends StObject {
 }
 object GetWebACLForResourceResponse {
   
-  @scala.inline
-  def apply(): GetWebACLForResourceResponse = {
+  inline def apply(): GetWebACLForResourceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetWebACLForResourceResponse]
   }
   
-  @scala.inline
-  implicit class GetWebACLForResourceResponseMutableBuilder[Self <: GetWebACLForResourceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetWebACLForResourceResponse](x: Self) {
     
-    @scala.inline
-    def setWebACLSummary(value: WebACLSummary): Self = StObject.set(x, "WebACLSummary", value.asInstanceOf[js.Any])
+    inline def setWebACLSummary(value: WebACLSummary): Self = StObject.set(x, "WebACLSummary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebACLSummaryUndefined: Self = StObject.set(x, "WebACLSummary", js.undefined)
+    inline def setWebACLSummaryUndefined: Self = StObject.set(x, "WebACLSummary", js.undefined)
   }
 }

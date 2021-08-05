@@ -23,58 +23,41 @@ trait DrawingToolOptions extends StObject {
 }
 object DrawingToolOptions {
   
-  @scala.inline
-  def apply(): DrawingToolOptions = {
+  inline def apply(): DrawingToolOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DrawingToolOptions]
   }
   
-  @scala.inline
-  implicit class DrawingToolOptionsMutableBuilder[Self <: DrawingToolOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DrawingToolOptions](x: Self) {
     
-    @scala.inline
-    def setAnchor(value: ControlAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+    inline def setAnchor(value: ControlAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+    inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
-    @scala.inline
-    def setCustomContainer(value: String | HTMLElement): Self = StObject.set(x, "customContainer", value.asInstanceOf[js.Any])
+    inline def setCustomContainer(value: String | HTMLElement): Self = StObject.set(x, "customContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomContainerUndefined: Self = StObject.set(x, "customContainer", js.undefined)
+    inline def setCustomContainerUndefined: Self = StObject.set(x, "customContainer", js.undefined)
     
-    @scala.inline
-    def setDrawingModes(value: js.Array[DrawingType]): Self = StObject.set(x, "drawingModes", value.asInstanceOf[js.Any])
+    inline def setDrawingModes(value: js.Array[DrawingType]): Self = StObject.set(x, "drawingModes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawingModesUndefined: Self = StObject.set(x, "drawingModes", js.undefined)
+    inline def setDrawingModesUndefined: Self = StObject.set(x, "drawingModes", js.undefined)
     
-    @scala.inline
-    def setDrawingModesVarargs(value: DrawingType*): Self = StObject.set(x, "drawingModes", js.Array(value :_*))
+    inline def setDrawingModesVarargs(value: DrawingType*): Self = StObject.set(x, "drawingModes", js.Array(value :_*))
     
-    @scala.inline
-    def setEnableTips(value: Boolean): Self = StObject.set(x, "enableTips", value.asInstanceOf[js.Any])
+    inline def setEnableTips(value: Boolean): Self = StObject.set(x, "enableTips", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableTipsUndefined: Self = StObject.set(x, "enableTips", js.undefined)
+    inline def setEnableTipsUndefined: Self = StObject.set(x, "enableTips", js.undefined)
     
-    @scala.inline
-    def setHasCustomStyle(value: Boolean): Self = StObject.set(x, "hasCustomStyle", value.asInstanceOf[js.Any])
+    inline def setHasCustomStyle(value: Boolean): Self = StObject.set(x, "hasCustomStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasCustomStyleUndefined: Self = StObject.set(x, "hasCustomStyle", js.undefined)
+    inline def setHasCustomStyleUndefined: Self = StObject.set(x, "hasCustomStyle", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Size): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Size): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
   }
 }

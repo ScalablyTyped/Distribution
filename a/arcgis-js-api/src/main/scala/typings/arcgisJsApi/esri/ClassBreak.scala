@@ -33,8 +33,7 @@ trait ClassBreak
 }
 object ClassBreak {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     label: String,
@@ -46,16 +45,12 @@ object ClassBreak {
     __obj.asInstanceOf[ClassBreak]
   }
   
-  @scala.inline
-  implicit class ClassBreakMutableBuilder[Self <: ClassBreak] (val x: Self) extends AnyVal {
+  extension [Self <: ClassBreak](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
   }
 }

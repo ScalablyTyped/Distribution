@@ -84,8 +84,7 @@ object VoidType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[VoidType]
+  inline def create(model: IModel): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[VoidType]
   
   /**
     * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -96,8 +95,7 @@ object VoidType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
+  inline def createInAppServiceActionParameterUnderParameterType(container: AppServiceActionParameter): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
   
   /**
     * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -108,8 +106,7 @@ object VoidType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
+  inline def createInAppServiceActionUnderActionReturnType(container: AppServiceAction): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAppServiceActionUnderActionReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
   
   /**
     * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -120,8 +117,7 @@ object VoidType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInConstantUnderType(container: Constant): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConstantUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
+  inline def createInConstantUnderType(container: Constant): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConstantUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
   
   /**
     * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -132,8 +128,7 @@ object VoidType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
+  inline def createInCreateVariableActionUnderVariableType(container: CreateVariableAction): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInCreateVariableActionUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
   
   /**
     * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -144,8 +139,7 @@ object VoidType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDataSetColumnUnderColumnType(container: DataSetColumn): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetColumnUnderColumnType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
+  inline def createInDataSetColumnUnderColumnType(container: DataSetColumn): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetColumnUnderColumnType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
   
   /**
     * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -156,8 +150,7 @@ object VoidType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDataSetParameterUnderParameterType(container: DataSetParameter): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
+  inline def createInDataSetParameterUnderParameterType(container: DataSetParameter): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataSetParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
   
   /**
     * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -168,8 +161,7 @@ object VoidType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
+  inline def createInDocumentTemplateParameterUnderParameterType(container: DocumentTemplateParameter): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDocumentTemplateParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
   
   /**
     * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -180,8 +172,7 @@ object VoidType {
     *  7.16.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInImportMappingUnderParameterType(container: ImportMapping): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
+  inline def createInImportMappingUnderParameterType(container: ImportMapping): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
   
   /**
     * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -192,8 +183,7 @@ object VoidType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderMicroflowReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
+  inline def createInMicroflowBaseUnderMicroflowReturnType(container: MicroflowBase): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowBaseUnderMicroflowReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
   
   /**
     * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -204,8 +194,7 @@ object VoidType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterBaseUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
+  inline def createInMicroflowParameterBaseUnderParameterType(container: MicroflowParameterBase): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterBaseUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
   
   /**
     * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -216,8 +205,7 @@ object VoidType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
+  inline def createInMicroflowParameterObjectUnderVariableType(container: MicroflowParameterObject): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMicroflowParameterObjectUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
   
   /**
     * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -228,8 +216,7 @@ object VoidType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedOperationUnderOperationReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
+  inline def createInPublishedOperationUnderOperationReturnType(container: PublishedOperation): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedOperationUnderOperationReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
   
   /**
     * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -240,8 +227,7 @@ object VoidType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInPublishedParameterUnderParameterType(container: PublishedParameter): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
+  inline def createInPublishedParameterUnderParameterType(container: PublishedParameter): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInPublishedParameterUnderParameterType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
   
   /**
     * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -252,8 +238,7 @@ object VoidType {
     *  7.17.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInRestOperationParameterUnderType(container: RestOperationParameter): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestOperationParameterUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
+  inline def createInRestOperationParameterUnderType(container: RestOperationParameter): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestOperationParameterUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
   
   /**
     * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -264,8 +249,7 @@ object VoidType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInResultHandlingUnderVariableType(container: ResultHandling): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
+  inline def createInResultHandlingUnderVariableType(container: ResultHandling): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInResultHandlingUnderVariableType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
   
   /**
     * Creates and returns a new VoidType instance in the SDK and on the server.
@@ -276,20 +260,17 @@ object VoidType {
     *  7.9.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInValueMappingElementUnderType(container: ValueMappingElement): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
+  inline def createInValueMappingElementUnderType(container: ValueMappingElement): VoidType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInValueMappingElementUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[VoidType]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.VoidType.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/datatypes", "datatypes.VoidType.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

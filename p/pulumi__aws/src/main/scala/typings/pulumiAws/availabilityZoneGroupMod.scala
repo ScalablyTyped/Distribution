@@ -50,21 +50,16 @@ object availabilityZoneGroupMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): AvailabilityZoneGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AvailabilityZoneGroup]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AvailabilityZoneGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AvailabilityZoneGroup]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AvailabilityZoneGroupState): AvailabilityZoneGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AvailabilityZoneGroup]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AvailabilityZoneGroupState, opts: CustomResourceOptions): AvailabilityZoneGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AvailabilityZoneGroup]
+    inline def get(name: String, id: Input[ID]): AvailabilityZoneGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AvailabilityZoneGroup]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AvailabilityZoneGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AvailabilityZoneGroup]
+    inline def get(name: String, id: Input[ID], state: AvailabilityZoneGroupState): AvailabilityZoneGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AvailabilityZoneGroup]
+    inline def get(name: String, id: Input[ID], state: AvailabilityZoneGroupState, opts: CustomResourceOptions): AvailabilityZoneGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AvailabilityZoneGroup]
     
     /**
       * Returns true if the given object is an instance of AvailabilityZoneGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/availabilityZoneGroup.AvailabilityZoneGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/availabilityZoneGroup.AvailabilityZoneGroup */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/availabilityZoneGroup.AvailabilityZoneGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/availabilityZoneGroup.AvailabilityZoneGroup */ Boolean]
   }
   
   trait AvailabilityZoneGroupArgs extends StObject {
@@ -81,20 +76,16 @@ object availabilityZoneGroupMod {
   }
   object AvailabilityZoneGroupArgs {
     
-    @scala.inline
-    def apply(groupName: Input[String], optInStatus: Input[String]): AvailabilityZoneGroupArgs = {
+    inline def apply(groupName: Input[String], optInStatus: Input[String]): AvailabilityZoneGroupArgs = {
       val __obj = js.Dynamic.literal(groupName = groupName.asInstanceOf[js.Any], optInStatus = optInStatus.asInstanceOf[js.Any])
       __obj.asInstanceOf[AvailabilityZoneGroupArgs]
     }
     
-    @scala.inline
-    implicit class AvailabilityZoneGroupArgsMutableBuilder[Self <: AvailabilityZoneGroupArgs] (val x: Self) extends AnyVal {
+    extension [Self <: AvailabilityZoneGroupArgs](x: Self) {
       
-      @scala.inline
-      def setGroupName(value: Input[String]): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
+      inline def setGroupName(value: Input[String]): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptInStatus(value: Input[String]): Self = StObject.set(x, "optInStatus", value.asInstanceOf[js.Any])
+      inline def setOptInStatus(value: Input[String]): Self = StObject.set(x, "optInStatus", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,26 +103,20 @@ object availabilityZoneGroupMod {
   }
   object AvailabilityZoneGroupState {
     
-    @scala.inline
-    def apply(): AvailabilityZoneGroupState = {
+    inline def apply(): AvailabilityZoneGroupState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AvailabilityZoneGroupState]
     }
     
-    @scala.inline
-    implicit class AvailabilityZoneGroupStateMutableBuilder[Self <: AvailabilityZoneGroupState] (val x: Self) extends AnyVal {
+    extension [Self <: AvailabilityZoneGroupState](x: Self) {
       
-      @scala.inline
-      def setGroupName(value: Input[String]): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
+      inline def setGroupName(value: Input[String]): Self = StObject.set(x, "groupName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupNameUndefined: Self = StObject.set(x, "groupName", js.undefined)
+      inline def setGroupNameUndefined: Self = StObject.set(x, "groupName", js.undefined)
       
-      @scala.inline
-      def setOptInStatus(value: Input[String]): Self = StObject.set(x, "optInStatus", value.asInstanceOf[js.Any])
+      inline def setOptInStatus(value: Input[String]): Self = StObject.set(x, "optInStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptInStatusUndefined: Self = StObject.set(x, "optInStatus", js.undefined)
+      inline def setOptInStatusUndefined: Self = StObject.set(x, "optInStatus", js.undefined)
     }
   }
 }

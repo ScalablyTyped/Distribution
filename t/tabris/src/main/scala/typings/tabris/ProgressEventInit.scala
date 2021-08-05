@@ -16,31 +16,23 @@ trait ProgressEventInit
 }
 object ProgressEventInit {
   
-  @scala.inline
-  def apply(): ProgressEventInit = {
+  inline def apply(): ProgressEventInit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProgressEventInit]
   }
   
-  @scala.inline
-  implicit class ProgressEventInitMutableBuilder[Self <: ProgressEventInit] (val x: Self) extends AnyVal {
+  extension [Self <: ProgressEventInit](x: Self) {
     
-    @scala.inline
-    def setLengthComputable(value: Boolean): Self = StObject.set(x, "lengthComputable", value.asInstanceOf[js.Any])
+    inline def setLengthComputable(value: Boolean): Self = StObject.set(x, "lengthComputable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthComputableUndefined: Self = StObject.set(x, "lengthComputable", js.undefined)
+    inline def setLengthComputableUndefined: Self = StObject.set(x, "lengthComputable", js.undefined)
     
-    @scala.inline
-    def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+    inline def setLoaded(value: Double): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
+    inline def setLoadedUndefined: Self = StObject.set(x, "loaded", js.undefined)
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+    inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
   }
 }

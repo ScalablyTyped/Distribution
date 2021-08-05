@@ -27,7 +27,7 @@ object legendBaseMod {
     
     /* protected */ def getDrawPoint(): Point = js.native
     
-    var resetDraw: js.Any = js.native
+    /* private */ var resetDraw: js.Any = js.native
     
     /* protected */ def resetLocation(): Unit = js.native
     

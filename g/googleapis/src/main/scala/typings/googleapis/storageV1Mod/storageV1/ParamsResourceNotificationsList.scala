@@ -30,31 +30,23 @@ trait ParamsResourceNotificationsList
 }
 object ParamsResourceNotificationsList {
   
-  @scala.inline
-  def apply(): ParamsResourceNotificationsList = {
+  inline def apply(): ParamsResourceNotificationsList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceNotificationsList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceNotificationsListMutableBuilder[Self <: ParamsResourceNotificationsList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceNotificationsList](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
+    inline def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
     
-    @scala.inline
-    def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+    inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+    inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
   }
 }

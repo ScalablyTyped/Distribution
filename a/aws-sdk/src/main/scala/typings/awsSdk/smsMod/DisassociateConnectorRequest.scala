@@ -13,16 +13,13 @@ trait DisassociateConnectorRequest extends StObject {
 }
 object DisassociateConnectorRequest {
   
-  @scala.inline
-  def apply(connectorId: ConnectorId): DisassociateConnectorRequest = {
+  inline def apply(connectorId: ConnectorId): DisassociateConnectorRequest = {
     val __obj = js.Dynamic.literal(connectorId = connectorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateConnectorRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateConnectorRequestMutableBuilder[Self <: DisassociateConnectorRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateConnectorRequest](x: Self) {
     
-    @scala.inline
-    def setConnectorId(value: ConnectorId): Self = StObject.set(x, "connectorId", value.asInstanceOf[js.Any])
+    inline def setConnectorId(value: ConnectorId): Self = StObject.set(x, "connectorId", value.asInstanceOf[js.Any])
   }
 }

@@ -17,25 +17,19 @@ trait GooglePrivacyDlpV2QuasiIdentifierField extends StObject {
 }
 object GooglePrivacyDlpV2QuasiIdentifierField {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2QuasiIdentifierField = {
+  inline def apply(): GooglePrivacyDlpV2QuasiIdentifierField = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2QuasiIdentifierField]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2QuasiIdentifierFieldMutableBuilder[Self <: GooglePrivacyDlpV2QuasiIdentifierField] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2QuasiIdentifierField](x: Self) {
     
-    @scala.inline
-    def setCustomTag(value: String): Self = StObject.set(x, "customTag", value.asInstanceOf[js.Any])
+    inline def setCustomTag(value: String): Self = StObject.set(x, "customTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomTagUndefined: Self = StObject.set(x, "customTag", js.undefined)
+    inline def setCustomTagUndefined: Self = StObject.set(x, "customTag", js.undefined)
     
-    @scala.inline
-    def setField(value: GooglePrivacyDlpV2FieldId): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: GooglePrivacyDlpV2FieldId): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
   }
 }

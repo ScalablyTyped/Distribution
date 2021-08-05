@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ZoomSettingsMode extends StObject
 object ZoomSettingsMode {
   
-  @scala.inline
-  def automatic: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.automatic = "automatic".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.automatic]
+  inline def automatic: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.automatic = "automatic".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.automatic]
   
-  @scala.inline
-  def disabled: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.disabled = "disabled".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.disabled]
+  inline def disabled: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.disabled = "disabled".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.disabled]
   
-  @scala.inline
-  def manual: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.manual = "manual".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.manual]
+  inline def manual: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.manual = "manual".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.manual]
 }

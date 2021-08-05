@@ -18,19 +18,15 @@ trait DisassociateCustomerGatewayRequest extends StObject {
 }
 object DisassociateCustomerGatewayRequest {
   
-  @scala.inline
-  def apply(CustomerGatewayArn: String, GlobalNetworkId: String): DisassociateCustomerGatewayRequest = {
+  inline def apply(CustomerGatewayArn: String, GlobalNetworkId: String): DisassociateCustomerGatewayRequest = {
     val __obj = js.Dynamic.literal(CustomerGatewayArn = CustomerGatewayArn.asInstanceOf[js.Any], GlobalNetworkId = GlobalNetworkId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateCustomerGatewayRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateCustomerGatewayRequestMutableBuilder[Self <: DisassociateCustomerGatewayRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateCustomerGatewayRequest](x: Self) {
     
-    @scala.inline
-    def setCustomerGatewayArn(value: String): Self = StObject.set(x, "CustomerGatewayArn", value.asInstanceOf[js.Any])
+    inline def setCustomerGatewayArn(value: String): Self = StObject.set(x, "CustomerGatewayArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
+    inline def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
   }
 }

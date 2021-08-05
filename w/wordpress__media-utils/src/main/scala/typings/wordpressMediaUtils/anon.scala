@@ -18,23 +18,18 @@ object anon {
   }
   object Code {
     
-    @scala.inline
-    def apply(code: UploadMediaErrorCode, file: File, message: String): Code = {
+    inline def apply(code: UploadMediaErrorCode, file: File, message: String): Code = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[Code]
     }
     
-    @scala.inline
-    implicit class CodeMutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
+    extension [Self <: Code](x: Self) {
       
-      @scala.inline
-      def setCode(value: UploadMediaErrorCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: UploadMediaErrorCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFile(value: File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
   }
 }

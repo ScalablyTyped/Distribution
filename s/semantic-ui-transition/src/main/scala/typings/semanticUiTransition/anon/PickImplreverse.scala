@@ -12,16 +12,13 @@ trait PickImplreverse extends StObject {
 }
 object PickImplreverse {
   
-  @scala.inline
-  def apply(reverse: auto | Boolean): PickImplreverse = {
+  inline def apply(reverse: auto | Boolean): PickImplreverse = {
     val __obj = js.Dynamic.literal(reverse = reverse.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplreverse]
   }
   
-  @scala.inline
-  implicit class PickImplreverseMutableBuilder[Self <: PickImplreverse] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplreverse](x: Self) {
     
-    @scala.inline
-    def setReverse(value: auto | Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
+    inline def setReverse(value: auto | Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
   }
 }

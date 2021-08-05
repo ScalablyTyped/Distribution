@@ -17,31 +17,23 @@ trait SubscriptionContentDetails extends StObject {
 }
 object SubscriptionContentDetails {
   
-  @scala.inline
-  def apply(): SubscriptionContentDetails = {
+  inline def apply(): SubscriptionContentDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SubscriptionContentDetails]
   }
   
-  @scala.inline
-  implicit class SubscriptionContentDetailsMutableBuilder[Self <: SubscriptionContentDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SubscriptionContentDetails](x: Self) {
     
-    @scala.inline
-    def setActivityType(value: String): Self = StObject.set(x, "activityType", value.asInstanceOf[js.Any])
+    inline def setActivityType(value: String): Self = StObject.set(x, "activityType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivityTypeUndefined: Self = StObject.set(x, "activityType", js.undefined)
+    inline def setActivityTypeUndefined: Self = StObject.set(x, "activityType", js.undefined)
     
-    @scala.inline
-    def setNewItemCount(value: Double): Self = StObject.set(x, "newItemCount", value.asInstanceOf[js.Any])
+    inline def setNewItemCount(value: Double): Self = StObject.set(x, "newItemCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewItemCountUndefined: Self = StObject.set(x, "newItemCount", js.undefined)
+    inline def setNewItemCountUndefined: Self = StObject.set(x, "newItemCount", js.undefined)
     
-    @scala.inline
-    def setTotalItemCount(value: Double): Self = StObject.set(x, "totalItemCount", value.asInstanceOf[js.Any])
+    inline def setTotalItemCount(value: Double): Self = StObject.set(x, "totalItemCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalItemCountUndefined: Self = StObject.set(x, "totalItemCount", js.undefined)
+    inline def setTotalItemCountUndefined: Self = StObject.set(x, "totalItemCount", js.undefined)
   }
 }

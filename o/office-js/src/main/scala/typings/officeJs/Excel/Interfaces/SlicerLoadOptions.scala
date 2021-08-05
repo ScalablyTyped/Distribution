@@ -112,85 +112,59 @@ trait SlicerLoadOptions extends StObject {
 }
 object SlicerLoadOptions {
   
-  @scala.inline
-  def apply(): SlicerLoadOptions = {
+  inline def apply(): SlicerLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SlicerLoadOptions]
   }
   
-  @scala.inline
-  implicit class SlicerLoadOptionsMutableBuilder[Self <: SlicerLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SlicerLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setCaption(value: Boolean): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: Boolean): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
+    inline def setCaptionUndefined: Self = StObject.set(x, "caption", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Boolean): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Boolean): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Boolean): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIsFilterCleared(value: Boolean): Self = StObject.set(x, "isFilterCleared", value.asInstanceOf[js.Any])
+    inline def setIsFilterCleared(value: Boolean): Self = StObject.set(x, "isFilterCleared", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsFilterClearedUndefined: Self = StObject.set(x, "isFilterCleared", js.undefined)
+    inline def setIsFilterClearedUndefined: Self = StObject.set(x, "isFilterCleared", js.undefined)
     
-    @scala.inline
-    def setLeft(value: Boolean): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Boolean): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    @scala.inline
-    def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSortBy(value: Boolean): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
+    inline def setSortBy(value: Boolean): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
+    inline def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
     
-    @scala.inline
-    def setStyle(value: Boolean): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: Boolean): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setTop(value: Boolean): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Boolean): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Boolean): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Boolean): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    @scala.inline
-    def setWorksheet(value: WorksheetLoadOptions): Self = StObject.set(x, "worksheet", value.asInstanceOf[js.Any])
+    inline def setWorksheet(value: WorksheetLoadOptions): Self = StObject.set(x, "worksheet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorksheetUndefined: Self = StObject.set(x, "worksheet", js.undefined)
+    inline def setWorksheetUndefined: Self = StObject.set(x, "worksheet", js.undefined)
   }
 }

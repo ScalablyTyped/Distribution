@@ -25,25 +25,19 @@ trait GoogleMapsPlayablelocationsV3SampleSpacingOptions extends StObject {
 }
 object GoogleMapsPlayablelocationsV3SampleSpacingOptions {
   
-  @scala.inline
-  def apply(): GoogleMapsPlayablelocationsV3SampleSpacingOptions = {
+  inline def apply(): GoogleMapsPlayablelocationsV3SampleSpacingOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleMapsPlayablelocationsV3SampleSpacingOptions]
   }
   
-  @scala.inline
-  implicit class GoogleMapsPlayablelocationsV3SampleSpacingOptionsMutableBuilder[Self <: GoogleMapsPlayablelocationsV3SampleSpacingOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleMapsPlayablelocationsV3SampleSpacingOptions](x: Self) {
     
-    @scala.inline
-    def setMinSpacingMeters(value: Double): Self = StObject.set(x, "minSpacingMeters", value.asInstanceOf[js.Any])
+    inline def setMinSpacingMeters(value: Double): Self = StObject.set(x, "minSpacingMeters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinSpacingMetersUndefined: Self = StObject.set(x, "minSpacingMeters", js.undefined)
+    inline def setMinSpacingMetersUndefined: Self = StObject.set(x, "minSpacingMeters", js.undefined)
     
-    @scala.inline
-    def setPointType(value: String): Self = StObject.set(x, "pointType", value.asInstanceOf[js.Any])
+    inline def setPointType(value: String): Self = StObject.set(x, "pointType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointTypeUndefined: Self = StObject.set(x, "pointType", js.undefined)
+    inline def setPointTypeUndefined: Self = StObject.set(x, "pointType", js.undefined)
   }
 }

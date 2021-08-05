@@ -15,6 +15,5 @@ object utilsMapPopperAppendToMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def mapPopperAppendTo(appendTo: AppendTo): window | Element | scrollParent | viewport = ^.asInstanceOf[js.Dynamic].applyDynamic("mapPopperAppendTo")(appendTo.asInstanceOf[js.Any]).asInstanceOf[window | Element | scrollParent | viewport]
+  inline def mapPopperAppendTo(appendTo: AppendTo): window | Element | scrollParent | viewport = ^.asInstanceOf[js.Dynamic].applyDynamic("mapPopperAppendTo")(appendTo.asInstanceOf[js.Any]).asInstanceOf[window | Element | scrollParent | viewport]
 }

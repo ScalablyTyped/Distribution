@@ -28,40 +28,29 @@ trait DescribeTrustsRequest extends StObject {
 }
 object DescribeTrustsRequest {
   
-  @scala.inline
-  def apply(): DescribeTrustsRequest = {
+  inline def apply(): DescribeTrustsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeTrustsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeTrustsRequestMutableBuilder[Self <: DescribeTrustsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTrustsRequest](x: Self) {
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
+    inline def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
     
-    @scala.inline
-    def setLimit(value: Limit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Limit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTrustIds(value: TrustIds): Self = StObject.set(x, "TrustIds", value.asInstanceOf[js.Any])
+    inline def setTrustIds(value: TrustIds): Self = StObject.set(x, "TrustIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrustIdsUndefined: Self = StObject.set(x, "TrustIds", js.undefined)
+    inline def setTrustIdsUndefined: Self = StObject.set(x, "TrustIds", js.undefined)
     
-    @scala.inline
-    def setTrustIdsVarargs(value: TrustId*): Self = StObject.set(x, "TrustIds", js.Array(value :_*))
+    inline def setTrustIdsVarargs(value: TrustId*): Self = StObject.set(x, "TrustIds", js.Array(value :_*))
   }
 }

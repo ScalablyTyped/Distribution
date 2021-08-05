@@ -22,10 +22,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def csv(url: String): DsvRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("csv")(url.asInstanceOf[js.Any]).asInstanceOf[DsvRequest]
-  @scala.inline
-  def csv(
+  inline def csv(url: String): DsvRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("csv")(url.asInstanceOf[js.Any]).asInstanceOf[DsvRequest]
+  inline def csv(
     url: String,
     callback: js.ThisFunction2[
       /* this */ DsvRequest, 
@@ -34,8 +32,7 @@ object mod {
       Unit
     ]
   ): DsvRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("csv")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[DsvRequest]
-  @scala.inline
-  def csv[ParsedRow /* <: js.Object */](
+  inline def csv[ParsedRow /* <: js.Object */](
     url: String,
     row: js.Function3[
       /* rawRow */ DSVRowString[String], 
@@ -46,42 +43,32 @@ object mod {
     callback: js.ThisFunction2[/* this */ DsvRequest, /* error */ js.Any, /* d */ DSVParsedArray[ParsedRow], Unit]
   ): DsvRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("csv")(url.asInstanceOf[js.Any], row.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[DsvRequest]
   
-  @scala.inline
-  def html(url: String): Request_ = ^.asInstanceOf[js.Dynamic].applyDynamic("html")(url.asInstanceOf[js.Any]).asInstanceOf[Request_]
-  @scala.inline
-  def html(
+  inline def html(url: String): Request_ = ^.asInstanceOf[js.Dynamic].applyDynamic("html")(url.asInstanceOf[js.Any]).asInstanceOf[Request_]
+  inline def html(
     url: String,
     callback: js.ThisFunction2[/* this */ Request_, /* error */ js.Any, /* d */ DocumentFragment, Unit]
   ): Request_ = (^.asInstanceOf[js.Dynamic].applyDynamic("html")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Request_]
   
-  @scala.inline
-  def json(url: String): Request_ = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any]).asInstanceOf[Request_]
-  @scala.inline
-  def json[ParsedObject /* <: StringDictionary[js.Any] */](
+  inline def json(url: String): Request_ = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any]).asInstanceOf[Request_]
+  inline def json[ParsedObject /* <: StringDictionary[js.Any] */](
     url: String,
     callback: js.ThisFunction2[/* this */ Request_, /* error */ js.Any, /* d */ ParsedObject, Unit]
   ): Request_ = (^.asInstanceOf[js.Dynamic].applyDynamic("json")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Request_]
   
-  @scala.inline
-  def request(url: String): Request_ = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any]).asInstanceOf[Request_]
-  @scala.inline
-  def request(
+  inline def request(url: String): Request_ = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any]).asInstanceOf[Request_]
+  inline def request(
     url: String,
     callback: js.ThisFunction2[/* this */ Request_, /* error */ js.Any, /* d */ XMLHttpRequest, Unit]
   ): Request_ = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Request_]
   
-  @scala.inline
-  def text(url: String): Request_ = ^.asInstanceOf[js.Dynamic].applyDynamic("text")(url.asInstanceOf[js.Any]).asInstanceOf[Request_]
-  @scala.inline
-  def text(
+  inline def text(url: String): Request_ = ^.asInstanceOf[js.Dynamic].applyDynamic("text")(url.asInstanceOf[js.Any]).asInstanceOf[Request_]
+  inline def text(
     url: String,
     callback: js.ThisFunction2[/* this */ Request_, /* error */ js.Any, /* d */ String, Unit]
   ): Request_ = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Request_]
   
-  @scala.inline
-  def tsv(url: String): DsvRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("tsv")(url.asInstanceOf[js.Any]).asInstanceOf[DsvRequest]
-  @scala.inline
-  def tsv(
+  inline def tsv(url: String): DsvRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("tsv")(url.asInstanceOf[js.Any]).asInstanceOf[DsvRequest]
+  inline def tsv(
     url: String,
     callback: js.ThisFunction2[
       /* this */ DsvRequest, 
@@ -90,8 +77,7 @@ object mod {
       Unit
     ]
   ): DsvRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("tsv")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[DsvRequest]
-  @scala.inline
-  def tsv[ParsedRow /* <: js.Object */](
+  inline def tsv[ParsedRow /* <: js.Object */](
     url: String,
     row: js.Function3[
       /* rawRow */ DSVRowString[String], 
@@ -102,10 +88,8 @@ object mod {
     callback: js.ThisFunction2[/* this */ DsvRequest, /* error */ js.Any, /* d */ DSVParsedArray[ParsedRow], Unit]
   ): DsvRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("tsv")(url.asInstanceOf[js.Any], row.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[DsvRequest]
   
-  @scala.inline
-  def xml(url: String): Request_ = ^.asInstanceOf[js.Dynamic].applyDynamic("xml")(url.asInstanceOf[js.Any]).asInstanceOf[Request_]
-  @scala.inline
-  def xml(
+  inline def xml(url: String): Request_ = ^.asInstanceOf[js.Dynamic].applyDynamic("xml")(url.asInstanceOf[js.Any]).asInstanceOf[Request_]
+  inline def xml(
     url: String,
     callback: js.ThisFunction2[/* this */ Request_, /* error */ js.Any, /* d */ js.Any, Unit]
   ): Request_ = (^.asInstanceOf[js.Dynamic].applyDynamic("xml")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Request_]

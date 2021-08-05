@@ -16,31 +16,23 @@ trait IntrospectionEnumValue extends StObject {
 }
 object IntrospectionEnumValue {
   
-  @scala.inline
-  def apply(isDeprecated: Boolean, name: String): IntrospectionEnumValue = {
+  inline def apply(isDeprecated: Boolean, name: String): IntrospectionEnumValue = {
     val __obj = js.Dynamic.literal(isDeprecated = isDeprecated.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionEnumValue]
   }
   
-  @scala.inline
-  implicit class IntrospectionEnumValueMutableBuilder[Self <: IntrospectionEnumValue] (val x: Self) extends AnyVal {
+  extension [Self <: IntrospectionEnumValue](x: Self) {
     
-    @scala.inline
-    def setDeprecationReason(value: String): Self = StObject.set(x, "deprecationReason", value.asInstanceOf[js.Any])
+    inline def setDeprecationReason(value: String): Self = StObject.set(x, "deprecationReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprecationReasonUndefined: Self = StObject.set(x, "deprecationReason", js.undefined)
+    inline def setDeprecationReasonUndefined: Self = StObject.set(x, "deprecationReason", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setIsDeprecated(value: Boolean): Self = StObject.set(x, "isDeprecated", value.asInstanceOf[js.Any])
+    inline def setIsDeprecated(value: Boolean): Self = StObject.set(x, "isDeprecated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

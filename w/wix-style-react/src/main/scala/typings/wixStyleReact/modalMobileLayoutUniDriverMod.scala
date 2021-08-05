@@ -26,8 +26,7 @@ object modalMobileLayoutUniDriverMod {
   }
   object ModalMobileLayoutUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       clickCloseButton: () => js.Promise[Unit],
       clickOverlay: () => js.Promise[Unit],
@@ -42,26 +41,19 @@ object modalMobileLayoutUniDriverMod {
       __obj.asInstanceOf[ModalMobileLayoutUniDriver]
     }
     
-    @scala.inline
-    implicit class ModalMobileLayoutUniDriverMutableBuilder[Self <: ModalMobileLayoutUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: ModalMobileLayoutUniDriver](x: Self) {
       
-      @scala.inline
-      def setClickCloseButton(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickCloseButton", js.Any.fromFunction0(value))
+      inline def setClickCloseButton(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickCloseButton", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickOverlay(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickOverlay", js.Any.fromFunction0(value))
+      inline def setClickOverlay(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickOverlay", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCloseButtonExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "closeButtonExists", js.Any.fromFunction0(value))
+      inline def setCloseButtonExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "closeButtonExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetContent(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
+      inline def setGetContent(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFooter(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getFooter", js.Any.fromFunction0(value))
+      inline def setGetFooter(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getFooter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTitle(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
+      inline def setGetTitle(value: () => UniDriver[js.Any]): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
     }
   }
 }

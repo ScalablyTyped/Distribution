@@ -14,25 +14,19 @@ trait StreamingApplianceSnapshotConfig extends StObject {
 }
 object StreamingApplianceSnapshotConfig {
   
-  @scala.inline
-  def apply(): StreamingApplianceSnapshotConfig = {
+  inline def apply(): StreamingApplianceSnapshotConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StreamingApplianceSnapshotConfig]
   }
   
-  @scala.inline
-  implicit class StreamingApplianceSnapshotConfigMutableBuilder[Self <: StreamingApplianceSnapshotConfig] (val x: Self) extends AnyVal {
+  extension [Self <: StreamingApplianceSnapshotConfig](x: Self) {
     
-    @scala.inline
-    def setImportStateEndpoint(value: String): Self = StObject.set(x, "importStateEndpoint", value.asInstanceOf[js.Any])
+    inline def setImportStateEndpoint(value: String): Self = StObject.set(x, "importStateEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportStateEndpointUndefined: Self = StObject.set(x, "importStateEndpoint", js.undefined)
+    inline def setImportStateEndpointUndefined: Self = StObject.set(x, "importStateEndpoint", js.undefined)
     
-    @scala.inline
-    def setSnapshotId(value: String): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
+    inline def setSnapshotId(value: String): Self = StObject.set(x, "snapshotId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotIdUndefined: Self = StObject.set(x, "snapshotId", js.undefined)
+    inline def setSnapshotIdUndefined: Self = StObject.set(x, "snapshotId", js.undefined)
   }
 }

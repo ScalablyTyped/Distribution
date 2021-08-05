@@ -21,15 +21,13 @@ trait LeafNode
      with Node
 object LeafNode {
   
-  @scala.inline
-  def AnyCharacterSet(end: Double, parent: Alternative | Quantifier, raw: String, start: Double): typings.regexpp.astMod.AnyCharacterSet = {
+  inline def AnyCharacterSet(end: Double, parent: Alternative | Quantifier, raw: String, start: Double): typings.regexpp.astMod.AnyCharacterSet = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], kind = "any", parent = parent.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CharacterSet")
     __obj.asInstanceOf[typings.regexpp.astMod.AnyCharacterSet]
   }
   
-  @scala.inline
-  def Backreference(
+  inline def Backreference(
     end: Double,
     parent: Alternative | Quantifier,
     raw: String,
@@ -42,8 +40,7 @@ object LeafNode {
     __obj.asInstanceOf[typings.regexpp.astMod.Backreference]
   }
   
-  @scala.inline
-  def Character(
+  inline def Character(
     end: Double,
     parent: Alternative | Quantifier | CharacterClass | CharacterClassRange,
     raw: String,
@@ -55,15 +52,13 @@ object LeafNode {
     __obj.asInstanceOf[typings.regexpp.astMod.Character]
   }
   
-  @scala.inline
-  def EdgeAssertion(end: Double, kind: start | end, parent: Alternative | Quantifier, raw: String, start: Double): typings.regexpp.astMod.EdgeAssertion = {
+  inline def EdgeAssertion(end: Double, kind: start | end, parent: Alternative | Quantifier, raw: String, start: Double): typings.regexpp.astMod.EdgeAssertion = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Assertion")
     __obj.asInstanceOf[typings.regexpp.astMod.EdgeAssertion]
   }
   
-  @scala.inline
-  def EscapeCharacterSet(
+  inline def EscapeCharacterSet(
     end: Double,
     kind: digit | space | word,
     negate: Boolean,
@@ -76,8 +71,7 @@ object LeafNode {
     __obj.asInstanceOf[typings.regexpp.astMod.EscapeCharacterSet]
   }
   
-  @scala.inline
-  def Flags(
+  inline def Flags(
     dotAll: Boolean,
     end: Double,
     global: Boolean,
@@ -93,8 +87,7 @@ object LeafNode {
     __obj.asInstanceOf[typings.regexpp.astMod.Flags]
   }
   
-  @scala.inline
-  def UnicodePropertyCharacterSet(
+  inline def UnicodePropertyCharacterSet(
     end: Double,
     key: String,
     negate: Boolean,
@@ -107,8 +100,7 @@ object LeafNode {
     __obj.asInstanceOf[typings.regexpp.astMod.UnicodePropertyCharacterSet]
   }
   
-  @scala.inline
-  def WordBoundaryAssertion(end: Double, negate: Boolean, parent: Alternative | Quantifier, raw: String, start: Double): typings.regexpp.astMod.WordBoundaryAssertion = {
+  inline def WordBoundaryAssertion(end: Double, negate: Boolean, parent: Alternative | Quantifier, raw: String, start: Double): typings.regexpp.astMod.WordBoundaryAssertion = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], kind = "word", negate = negate.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Assertion")
     __obj.asInstanceOf[typings.regexpp.astMod.WordBoundaryAssertion]

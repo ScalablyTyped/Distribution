@@ -23,31 +23,23 @@ trait StartSigningJobParameter extends StObject {
 }
 object StartSigningJobParameter {
   
-  @scala.inline
-  def apply(): StartSigningJobParameter = {
+  inline def apply(): StartSigningJobParameter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartSigningJobParameter]
   }
   
-  @scala.inline
-  implicit class StartSigningJobParameterMutableBuilder[Self <: StartSigningJobParameter] (val x: Self) extends AnyVal {
+  extension [Self <: StartSigningJobParameter](x: Self) {
     
-    @scala.inline
-    def setDestination(value: Destination): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: Destination): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+    inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
-    @scala.inline
-    def setSigningProfileName(value: SigningProfileName): Self = StObject.set(x, "signingProfileName", value.asInstanceOf[js.Any])
+    inline def setSigningProfileName(value: SigningProfileName): Self = StObject.set(x, "signingProfileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigningProfileNameUndefined: Self = StObject.set(x, "signingProfileName", js.undefined)
+    inline def setSigningProfileNameUndefined: Self = StObject.set(x, "signingProfileName", js.undefined)
     
-    @scala.inline
-    def setSigningProfileParameter(value: SigningProfileParameter): Self = StObject.set(x, "signingProfileParameter", value.asInstanceOf[js.Any])
+    inline def setSigningProfileParameter(value: SigningProfileParameter): Self = StObject.set(x, "signingProfileParameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigningProfileParameterUndefined: Self = StObject.set(x, "signingProfileParameter", js.undefined)
+    inline def setSigningProfileParameterUndefined: Self = StObject.set(x, "signingProfileParameter", js.undefined)
   }
 }

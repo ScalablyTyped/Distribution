@@ -11,16 +11,13 @@ trait Mode extends StObject {
 }
 object Mode {
   
-  @scala.inline
-  def apply(): Mode = {
+  inline def apply(): Mode = {
     val __obj = js.Dynamic.literal(mode = "INLINE")
     __obj.asInstanceOf[Mode]
   }
   
-  @scala.inline
-  implicit class ModeMutableBuilder[Self <: Mode] (val x: Self) extends AnyVal {
+  extension [Self <: Mode](x: Self) {
     
-    @scala.inline
-    def setMode(value: INLINE): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: INLINE): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
   }
 }

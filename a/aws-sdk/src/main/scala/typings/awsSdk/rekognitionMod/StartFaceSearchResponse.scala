@@ -13,19 +13,15 @@ trait StartFaceSearchResponse extends StObject {
 }
 object StartFaceSearchResponse {
   
-  @scala.inline
-  def apply(): StartFaceSearchResponse = {
+  inline def apply(): StartFaceSearchResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartFaceSearchResponse]
   }
   
-  @scala.inline
-  implicit class StartFaceSearchResponseMutableBuilder[Self <: StartFaceSearchResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StartFaceSearchResponse](x: Self) {
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
   }
 }

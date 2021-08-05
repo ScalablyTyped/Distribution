@@ -13,17 +13,14 @@ trait WindowAuthRequestedEvent
 }
 object WindowAuthRequestedEvent {
   
-  @scala.inline
-  def apply(authInfo: Host, name: String, `type`: OpenFinWindowEventType, uuid: String): WindowAuthRequestedEvent = {
+  inline def apply(authInfo: Host, name: String, `type`: OpenFinWindowEventType, uuid: String): WindowAuthRequestedEvent = {
     val __obj = js.Dynamic.literal(authInfo = authInfo.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], topic = "window", uuid = uuid.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowAuthRequestedEvent]
   }
   
-  @scala.inline
-  implicit class WindowAuthRequestedEventMutableBuilder[Self <: WindowAuthRequestedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: WindowAuthRequestedEvent](x: Self) {
     
-    @scala.inline
-    def setAuthInfo(value: Host): Self = StObject.set(x, "authInfo", value.asInstanceOf[js.Any])
+    inline def setAuthInfo(value: Host): Self = StObject.set(x, "authInfo", value.asInstanceOf[js.Any])
   }
 }

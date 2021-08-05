@@ -22,22 +22,17 @@ object styleStyleMod {
     def this(opt_options: Options) = this()
   }
   
-  @scala.inline
-  def createDefaultStyle(feature: FeatureLike, resolution: Double): js.Array[Style] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultStyle")(feature.asInstanceOf[js.Any], resolution.asInstanceOf[js.Any])).asInstanceOf[js.Array[Style]]
+  inline def createDefaultStyle(feature: FeatureLike, resolution: Double): js.Array[Style] = (^.asInstanceOf[js.Dynamic].applyDynamic("createDefaultStyle")(feature.asInstanceOf[js.Any], resolution.asInstanceOf[js.Any])).asInstanceOf[js.Array[Style]]
   
-  @scala.inline
-  def createEditingStyle(): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  inline def createEditingStyle(): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in ol.ol/geom/GeometryType.GeometryType ]: std.Array<ol.ol/style/Style.Style>}
     */ typings.ol.olStrings.createEditingStyle & TopLevel[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("createEditingStyle")().asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in ol.ol/geom/GeometryType.GeometryType ]: std.Array<ol.ol/style/Style.Style>}
     */ typings.ol.olStrings.createEditingStyle & TopLevel[js.Any]]
   
-  @scala.inline
-  def toFunction(obj: js.Array[Style]): StyleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("toFunction")(obj.asInstanceOf[js.Any]).asInstanceOf[StyleFunction]
-  @scala.inline
-  def toFunction(obj: Style): StyleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("toFunction")(obj.asInstanceOf[js.Any]).asInstanceOf[StyleFunction]
-  @scala.inline
-  def toFunction(obj: StyleFunction): StyleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("toFunction")(obj.asInstanceOf[js.Any]).asInstanceOf[StyleFunction]
+  inline def toFunction(obj: js.Array[Style]): StyleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("toFunction")(obj.asInstanceOf[js.Any]).asInstanceOf[StyleFunction]
+  inline def toFunction(obj: Style): StyleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("toFunction")(obj.asInstanceOf[js.Any]).asInstanceOf[StyleFunction]
+  inline def toFunction(obj: StyleFunction): StyleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("toFunction")(obj.asInstanceOf[js.Any]).asInstanceOf[StyleFunction]
   
   type GeometryFunction = js.Function1[
     /* p0 */ FeatureLike, 
@@ -62,63 +57,46 @@ object styleStyleMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setFill(value: typings.ol.fillMod.default): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: typings.ol.fillMod.default): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
-      @scala.inline
-      def setGeometry(value: String | typings.ol.geometryMod.default | GeometryFunction): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+      inline def setGeometry(value: String | typings.ol.geometryMod.default | GeometryFunction): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeometryFunction1(
+      inline def setGeometryFunction1(
         value: /* p0 */ FeatureLike => js.UndefOr[typings.ol.geometryMod.default | typings.ol.renderFeatureMod.default]
       ): Self = StObject.set(x, "geometry", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGeometryUndefined: Self = StObject.set(x, "geometry", js.undefined)
+      inline def setGeometryUndefined: Self = StObject.set(x, "geometry", js.undefined)
       
-      @scala.inline
-      def setImage(value: typings.ol.styleImageMod.default): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+      inline def setImage(value: typings.ol.styleImageMod.default): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+      inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
       
-      @scala.inline
-      def setRenderer(
+      inline def setRenderer(
         value: (/* p0 */ Coordinate | (js.Array[js.Array[Coordinate] | Coordinate]), /* p1 */ State) => Unit
       ): Self = StObject.set(x, "renderer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+      inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
       
-      @scala.inline
-      def setStroke(value: typings.ol.strokeMod.default): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+      inline def setStroke(value: typings.ol.strokeMod.default): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+      inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
       
-      @scala.inline
-      def setText(value: typings.ol.textMod.default): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: typings.ol.textMod.default): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+      inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+      inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     }
   }
   

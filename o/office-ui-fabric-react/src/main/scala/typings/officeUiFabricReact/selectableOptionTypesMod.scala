@@ -93,74 +93,52 @@ object selectableOptionTypesMod {
   }
   object ISelectableOption {
     
-    @scala.inline
-    def apply(key: String | Double, text: String): ISelectableOption = {
+    inline def apply(key: String | Double, text: String): ISelectableOption = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[ISelectableOption]
     }
     
-    @scala.inline
-    implicit class ISelectableOptionMutableBuilder[Self <: ISelectableOption] (val x: Self) extends AnyVal {
+    extension [Self <: ISelectableOption](x: Self) {
       
-      @scala.inline
-      def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+      inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
+      inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+      inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setItemType(value: SelectableOptionMenuItemType): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
+      inline def setItemType(value: SelectableOptionMenuItemType): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemTypeUndefined: Self = StObject.set(x, "itemType", js.undefined)
+      inline def setItemTypeUndefined: Self = StObject.set(x, "itemType", js.undefined)
       
-      @scala.inline
-      def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+      inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
 }

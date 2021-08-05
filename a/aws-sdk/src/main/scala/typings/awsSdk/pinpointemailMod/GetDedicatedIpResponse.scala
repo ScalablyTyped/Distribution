@@ -13,19 +13,15 @@ trait GetDedicatedIpResponse extends StObject {
 }
 object GetDedicatedIpResponse {
   
-  @scala.inline
-  def apply(): GetDedicatedIpResponse = {
+  inline def apply(): GetDedicatedIpResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDedicatedIpResponse]
   }
   
-  @scala.inline
-  implicit class GetDedicatedIpResponseMutableBuilder[Self <: GetDedicatedIpResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetDedicatedIpResponse](x: Self) {
     
-    @scala.inline
-    def setDedicatedIp(value: DedicatedIp): Self = StObject.set(x, "DedicatedIp", value.asInstanceOf[js.Any])
+    inline def setDedicatedIp(value: DedicatedIp): Self = StObject.set(x, "DedicatedIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDedicatedIpUndefined: Self = StObject.set(x, "DedicatedIp", js.undefined)
+    inline def setDedicatedIpUndefined: Self = StObject.set(x, "DedicatedIp", js.undefined)
   }
 }

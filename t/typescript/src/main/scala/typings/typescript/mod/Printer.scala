@@ -38,8 +38,7 @@ trait Printer extends StObject {
 }
 object Printer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     printBundle: Bundle => java.lang.String,
     printFile: SourceFile => java.lang.String,
     printList: (ListFormat, NodeArray[js.Any], SourceFile) => java.lang.String,
@@ -49,19 +48,14 @@ object Printer {
     __obj.asInstanceOf[Printer]
   }
   
-  @scala.inline
-  implicit class PrinterMutableBuilder[Self <: Printer] (val x: Self) extends AnyVal {
+  extension [Self <: Printer](x: Self) {
     
-    @scala.inline
-    def setPrintBundle(value: Bundle => java.lang.String): Self = StObject.set(x, "printBundle", js.Any.fromFunction1(value))
+    inline def setPrintBundle(value: Bundle => java.lang.String): Self = StObject.set(x, "printBundle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPrintFile(value: SourceFile => java.lang.String): Self = StObject.set(x, "printFile", js.Any.fromFunction1(value))
+    inline def setPrintFile(value: SourceFile => java.lang.String): Self = StObject.set(x, "printFile", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPrintList(value: (ListFormat, NodeArray[js.Any], SourceFile) => java.lang.String): Self = StObject.set(x, "printList", js.Any.fromFunction3(value))
+    inline def setPrintList(value: (ListFormat, NodeArray[js.Any], SourceFile) => java.lang.String): Self = StObject.set(x, "printList", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setPrintNode(value: (EmitHint, Node, SourceFile) => java.lang.String): Self = StObject.set(x, "printNode", js.Any.fromFunction3(value))
+    inline def setPrintNode(value: (EmitHint, Node, SourceFile) => java.lang.String): Self = StObject.set(x, "printNode", js.Any.fromFunction3(value))
   }
 }

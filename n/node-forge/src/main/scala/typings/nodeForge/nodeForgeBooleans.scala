@@ -11,6 +11,5 @@ object nodeForgeBooleans {
   sealed trait `true`
     extends StObject
        with Verified
-  @scala.inline
-  def `true`: `true` = true.asInstanceOf[`true`]
+  inline def `true`: `true` = true.asInstanceOf[`true`]
 }

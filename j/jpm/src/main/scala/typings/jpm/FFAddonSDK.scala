@@ -85,8 +85,7 @@ object FFAddonSDK {
   }
   object ActionButtonState {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       badge: String | Double,
       badgeColor: String,
       disabled: Boolean,
@@ -98,26 +97,19 @@ object FFAddonSDK {
       __obj.asInstanceOf[ActionButtonState]
     }
     
-    @scala.inline
-    implicit class ActionButtonStateMutableBuilder[Self <: ActionButtonState] (val x: Self) extends AnyVal {
+    extension [Self <: ActionButtonState](x: Self) {
       
-      @scala.inline
-      def setBadge(value: String | Double): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+      inline def setBadge(value: String | Double): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeColor(value: String): Self = StObject.set(x, "badgeColor", value.asInstanceOf[js.Any])
+      inline def setBadgeColor(value: String): Self = StObject.set(x, "badgeColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIcon(value: Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: Icon): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     }
   }
   
@@ -224,26 +216,20 @@ object FFAddonSDK {
   }
   object FrameEvent {
     
-    @scala.inline
-    def apply(origin: String, source: Frame): FrameEvent = {
+    inline def apply(origin: String, source: Frame): FrameEvent = {
       val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[FrameEvent]
     }
     
-    @scala.inline
-    implicit class FrameEventMutableBuilder[Self <: FrameEvent] (val x: Self) extends AnyVal {
+    extension [Self <: FrameEvent](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: Frame): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: Frame): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   
@@ -274,8 +260,7 @@ object FFAddonSDK {
   }
   object NSIException {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       columnNumber: Double,
       data: js.Any,
       filename: String,
@@ -288,41 +273,29 @@ object FFAddonSDK {
       __obj.asInstanceOf[NSIException]
     }
     
-    @scala.inline
-    implicit class NSIExceptionMutableBuilder[Self <: NSIException] (val x: Self) extends AnyVal {
+    extension [Self <: NSIException](x: Self) {
       
-      @scala.inline
-      def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
+      inline def setColumnNumber(value: Double): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInner(value: NSIException): Self = StObject.set(x, "inner", value.asInstanceOf[js.Any])
+      inline def setInner(value: NSIException): Self = StObject.set(x, "inner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerUndefined: Self = StObject.set(x, "inner", js.undefined)
+      inline def setInnerUndefined: Self = StObject.set(x, "inner", js.undefined)
       
-      @scala.inline
-      def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
+      inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: js.Any): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: js.Any): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }
   }
   
@@ -369,8 +342,7 @@ object FFAddonSDK {
   }
   object SDKURL {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       hash: String,
       host: String,
       hostname: String,
@@ -389,47 +361,33 @@ object FFAddonSDK {
       __obj.asInstanceOf[SDKURL]
     }
     
-    @scala.inline
-    implicit class SDKURLMutableBuilder[Self <: SDKURL] (val x: Self) extends AnyVal {
+    extension [Self <: SDKURL](x: Self) {
       
-      @scala.inline
-      def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+      inline def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+      inline def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToJSON(value: () => String): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => String): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUserPass(value: String): Self = StObject.set(x, "userPass", value.asInstanceOf[js.Any])
+      inline def setUserPass(value: String): Self = StObject.set(x, "userPass", value.asInstanceOf[js.Any])
     }
   }
   
@@ -536,29 +494,22 @@ object FFAddonSDK {
   }
   object ToggleButtonState {
     
-    @scala.inline
-    def apply(badge: String, checked: Boolean, disabled: Boolean, id: String, label: String): ToggleButtonState = {
+    inline def apply(badge: String, checked: Boolean, disabled: Boolean, id: String, label: String): ToggleButtonState = {
       val __obj = js.Dynamic.literal(badge = badge.asInstanceOf[js.Any], checked = checked.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[ToggleButtonState]
     }
     
-    @scala.inline
-    implicit class ToggleButtonStateMutableBuilder[Self <: ToggleButtonState] (val x: Self) extends AnyVal {
+    extension [Self <: ToggleButtonState](x: Self) {
       
-      @scala.inline
-      def setBadge(value: String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+      inline def setBadge(value: String): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+      inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     }
   }
   

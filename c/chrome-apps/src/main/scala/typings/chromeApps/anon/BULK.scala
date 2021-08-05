@@ -20,25 +20,19 @@ trait BULK extends StObject {
 }
 object BULK {
   
-  @scala.inline
-  def apply(): BULK = {
+  inline def apply(): BULK = {
     val __obj = js.Dynamic.literal(BULK = "bulk", CONTROL = "control", INTERRUPT = "interrupt", ISOCHRONOUS = "isochronous")
     __obj.asInstanceOf[BULK]
   }
   
-  @scala.inline
-  implicit class BULKMutableBuilder[Self <: BULK] (val x: Self) extends AnyVal {
+  extension [Self <: BULK](x: Self) {
     
-    @scala.inline
-    def setBULK(value: bulk_): Self = StObject.set(x, "BULK", value.asInstanceOf[js.Any])
+    inline def setBULK(value: bulk_): Self = StObject.set(x, "BULK", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCONTROL(value: control_): Self = StObject.set(x, "CONTROL", value.asInstanceOf[js.Any])
+    inline def setCONTROL(value: control_): Self = StObject.set(x, "CONTROL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setINTERRUPT(value: interrupt_): Self = StObject.set(x, "INTERRUPT", value.asInstanceOf[js.Any])
+    inline def setINTERRUPT(value: interrupt_): Self = StObject.set(x, "INTERRUPT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setISOCHRONOUS(value: isochronous_): Self = StObject.set(x, "ISOCHRONOUS", value.asInstanceOf[js.Any])
+    inline def setISOCHRONOUS(value: isochronous_): Self = StObject.set(x, "ISOCHRONOUS", value.asInstanceOf[js.Any])
   }
 }

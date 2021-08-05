@@ -17,25 +17,19 @@ trait UpdateInstanceRequest extends StObject {
 }
 object UpdateInstanceRequest {
   
-  @scala.inline
-  def apply(): UpdateInstanceRequest = {
+  inline def apply(): UpdateInstanceRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateInstanceRequest]
   }
   
-  @scala.inline
-  implicit class UpdateInstanceRequestMutableBuilder[Self <: UpdateInstanceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateInstanceRequest](x: Self) {
     
-    @scala.inline
-    def setFieldMask(value: String): Self = StObject.set(x, "fieldMask", value.asInstanceOf[js.Any])
+    inline def setFieldMask(value: String): Self = StObject.set(x, "fieldMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldMaskUndefined: Self = StObject.set(x, "fieldMask", js.undefined)
+    inline def setFieldMaskUndefined: Self = StObject.set(x, "fieldMask", js.undefined)
     
-    @scala.inline
-    def setInstance(value: Instance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: Instance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
+    inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
   }
 }

@@ -21,20 +21,17 @@ object urlParamsMod {
       @JSImport("msportalfx-mock/lib/src/ArmProxy/Controllers/urlParams", "UrlParams.Params.resourceGroupId")
       @js.native
       def resourceGroupId: String = js.native
-      @scala.inline
-      def resourceGroupId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("resourceGroupId")(x.asInstanceOf[js.Any])
+      inline def resourceGroupId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("resourceGroupId")(x.asInstanceOf[js.Any])
       
       @JSImport("msportalfx-mock/lib/src/ArmProxy/Controllers/urlParams", "UrlParams.Params.subscriptionId")
       @js.native
       def subscriptionId: String = js.native
-      @scala.inline
-      def subscriptionId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("subscriptionId")(x.asInstanceOf[js.Any])
+      inline def subscriptionId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("subscriptionId")(x.asInstanceOf[js.Any])
     }
     
     /**
       * Initializes the url param validations.
       */
-    @scala.inline
-    def init(app: typings.msportalfxMock.mod.Express): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(app.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def init(app: typings.msportalfxMock.mod.Express): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(app.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

@@ -10,16 +10,13 @@ trait AdWordsReportRow extends StObject {
 }
 object AdWordsReportRow {
   
-  @scala.inline
-  def apply(formatForUpload: () => js.Object): AdWordsReportRow = {
+  inline def apply(formatForUpload: () => js.Object): AdWordsReportRow = {
     val __obj = js.Dynamic.literal(formatForUpload = js.Any.fromFunction0(formatForUpload))
     __obj.asInstanceOf[AdWordsReportRow]
   }
   
-  @scala.inline
-  implicit class AdWordsReportRowMutableBuilder[Self <: AdWordsReportRow] (val x: Self) extends AnyVal {
+  extension [Self <: AdWordsReportRow](x: Self) {
     
-    @scala.inline
-    def setFormatForUpload(value: () => js.Object): Self = StObject.set(x, "formatForUpload", js.Any.fromFunction0(value))
+    inline def setFormatForUpload(value: () => js.Object): Self = StObject.set(x, "formatForUpload", js.Any.fromFunction0(value))
   }
 }

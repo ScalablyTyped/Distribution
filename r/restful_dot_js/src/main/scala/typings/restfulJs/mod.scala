@@ -12,8 +12,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(endpoint: String): Api = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(endpoint.asInstanceOf[js.Any]).asInstanceOf[Api]
+  inline def default(endpoint: String): Api = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(endpoint.asInstanceOf[js.Any]).asInstanceOf[Api]
   
   @js.native
   trait Api
@@ -166,8 +165,7 @@ object mod {
   }
   object Endpoint {
     
-    @scala.inline
-    def apply[Self](
+    inline def apply[Self](
       addFullRequestInterceptor: FullRequestInterceptor => Self,
       addFullResponseInterceptor: ResponseInterceptor => Self,
       addRequestInterceptor: RequestInterceptor => Self,
@@ -184,41 +182,29 @@ object mod {
       __obj.asInstanceOf[Endpoint[Self]]
     }
     
-    @scala.inline
-    implicit class EndpointMutableBuilder[Self_ <: Endpoint[?], Self] (val x: Self_ & Endpoint[Self]) extends AnyVal {
+    extension [Self_ <: Endpoint[?], Self](x: Self_ & Endpoint[Self]) {
       
-      @scala.inline
-      def setAddFullRequestInterceptor(value: FullRequestInterceptor => Self): Self_ = StObject.set(x, "addFullRequestInterceptor", js.Any.fromFunction1(value))
+      inline def setAddFullRequestInterceptor(value: FullRequestInterceptor => Self): Self_ = StObject.set(x, "addFullRequestInterceptor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddFullResponseInterceptor(value: ResponseInterceptor => Self): Self_ = StObject.set(x, "addFullResponseInterceptor", js.Any.fromFunction1(value))
+      inline def setAddFullResponseInterceptor(value: ResponseInterceptor => Self): Self_ = StObject.set(x, "addFullResponseInterceptor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddRequestInterceptor(value: RequestInterceptor => Self): Self_ = StObject.set(x, "addRequestInterceptor", js.Any.fromFunction1(value))
+      inline def setAddRequestInterceptor(value: RequestInterceptor => Self): Self_ = StObject.set(x, "addRequestInterceptor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddResponseInterceptor(value: ResponseInterceptor => Self): Self_ = StObject.set(x, "addResponseInterceptor", js.Any.fromFunction1(value))
+      inline def setAddResponseInterceptor(value: ResponseInterceptor => Self): Self_ = StObject.set(x, "addResponseInterceptor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFullRequestInterceptors(value: () => js.Array[FullRequestInterceptor]): Self_ = StObject.set(x, "fullRequestInterceptors", js.Any.fromFunction0(value))
+      inline def setFullRequestInterceptors(value: () => js.Array[FullRequestInterceptor]): Self_ = StObject.set(x, "fullRequestInterceptors", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFullResponseInterceptors(value: () => js.Array[ResponseInterceptor]): Self_ = StObject.set(x, "fullResponseInterceptors", js.Any.fromFunction0(value))
+      inline def setFullResponseInterceptors(value: () => js.Array[ResponseInterceptor]): Self_ = StObject.set(x, "fullResponseInterceptors", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHeader(value: (String, js.Any) => Self): Self_ = StObject.set(x, "header", js.Any.fromFunction2(value))
+      inline def setHeader(value: (String, js.Any) => Self): Self_ = StObject.set(x, "header", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHeaders(value: () => Headers): Self_ = StObject.set(x, "headers", js.Any.fromFunction0(value))
+      inline def setHeaders(value: () => Headers): Self_ = StObject.set(x, "headers", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRequestInterceptors(value: () => js.Array[RequestInterceptor]): Self_ = StObject.set(x, "requestInterceptors", js.Any.fromFunction0(value))
+      inline def setRequestInterceptors(value: () => js.Array[RequestInterceptor]): Self_ = StObject.set(x, "requestInterceptors", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setResponseInterceptors(value: () => js.Array[ResponseInterceptor]): Self_ = StObject.set(x, "responseInterceptors", js.Any.fromFunction0(value))
+      inline def setResponseInterceptors(value: () => js.Array[ResponseInterceptor]): Self_ = StObject.set(x, "responseInterceptors", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUrl(value: () => String): Self_ = StObject.set(x, "url", js.Any.fromFunction0(value))
+      inline def setUrl(value: () => String): Self_ = StObject.set(x, "url", js.Any.fromFunction0(value))
     }
   }
   
@@ -245,44 +231,32 @@ object mod {
   }
   object FullRequestInterceptorReturnValue {
     
-    @scala.inline
-    def apply(): FullRequestInterceptorReturnValue = {
+    inline def apply(): FullRequestInterceptorReturnValue = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FullRequestInterceptorReturnValue]
     }
     
-    @scala.inline
-    implicit class FullRequestInterceptorReturnValueMutableBuilder[Self <: FullRequestInterceptorReturnValue] (val x: Self) extends AnyVal {
+    extension [Self <: FullRequestInterceptorReturnValue](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -379,23 +353,18 @@ object mod {
   }
   object ResponseBase {
     
-    @scala.inline
-    def apply(config: () => js.Any, headers: () => Headers, status: () => Double): ResponseBase = {
+    inline def apply(config: () => js.Any, headers: () => Headers, status: () => Double): ResponseBase = {
       val __obj = js.Dynamic.literal(config = js.Any.fromFunction0(config), headers = js.Any.fromFunction0(headers), status = js.Any.fromFunction0(status))
       __obj.asInstanceOf[ResponseBase]
     }
     
-    @scala.inline
-    implicit class ResponseBaseMutableBuilder[Self <: ResponseBase] (val x: Self) extends AnyVal {
+    extension [Self <: ResponseBase](x: Self) {
       
-      @scala.inline
-      def setConfig(value: () => js.Any): Self = StObject.set(x, "config", js.Any.fromFunction0(value))
+      inline def setConfig(value: () => js.Any): Self = StObject.set(x, "config", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHeaders(value: () => Headers): Self = StObject.set(x, "headers", js.Any.fromFunction0(value))
+      inline def setHeaders(value: () => Headers): Self = StObject.set(x, "headers", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStatus(value: () => Double): Self = StObject.set(x, "status", js.Any.fromFunction0(value))
+      inline def setStatus(value: () => Double): Self = StObject.set(x, "status", js.Any.fromFunction0(value))
     }
   }
   
@@ -466,38 +435,28 @@ object mod {
   }
   object ResponseInterceptorReturnValue {
     
-    @scala.inline
-    def apply(): ResponseInterceptorReturnValue = {
+    inline def apply(): ResponseInterceptorReturnValue = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResponseInterceptorReturnValue]
     }
     
-    @scala.inline
-    implicit class ResponseInterceptorReturnValueMutableBuilder[Self <: ResponseInterceptorReturnValue] (val x: Self) extends AnyVal {
+    extension [Self <: ResponseInterceptorReturnValue](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
 }

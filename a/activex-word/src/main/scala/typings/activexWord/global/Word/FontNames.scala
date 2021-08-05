@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.FontNames")
 @js.native
-class FontNames protected ()
+/* private */ class FontNames ()
   extends StObject
      with typings.activexWord.Word.FontNames {
   
@@ -25,7 +25,7 @@ class FontNames protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.FontNames_typekey")
   var WordDotFontNames_typekey: typings.activexWord.Word.FontNames = js.native
 }

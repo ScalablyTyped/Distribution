@@ -36,31 +36,23 @@ trait SchemaRepeatCellRequest extends StObject {
 }
 object SchemaRepeatCellRequest {
   
-  @scala.inline
-  def apply(): SchemaRepeatCellRequest = {
+  inline def apply(): SchemaRepeatCellRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRepeatCellRequest]
   }
   
-  @scala.inline
-  implicit class SchemaRepeatCellRequestMutableBuilder[Self <: SchemaRepeatCellRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRepeatCellRequest](x: Self) {
     
-    @scala.inline
-    def setCell(value: SchemaCellData): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+    inline def setCell(value: SchemaCellData): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
+    inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
     
-    @scala.inline
-    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setRange(value: SchemaGridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: SchemaGridRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
   }
 }

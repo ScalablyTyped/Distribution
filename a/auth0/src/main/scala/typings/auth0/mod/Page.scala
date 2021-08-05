@@ -16,25 +16,19 @@ trait Page extends StObject {
 }
 object Page {
   
-  @scala.inline
-  def apply(length: Double, limit: Double, start: Double, total: Double): Page = {
+  inline def apply(length: Double, limit: Double, start: Double, total: Double): Page = {
     val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any], limit = limit.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
     __obj.asInstanceOf[Page]
   }
   
-  @scala.inline
-  implicit class PageMutableBuilder[Self <: Page] (val x: Self) extends AnyVal {
+  extension [Self <: Page](x: Self) {
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }
 }

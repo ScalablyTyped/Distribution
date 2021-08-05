@@ -14,28 +14,21 @@ trait PerformanceReportList extends StObject {
 }
 object PerformanceReportList {
   
-  @scala.inline
-  def apply(): PerformanceReportList = {
+  inline def apply(): PerformanceReportList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PerformanceReportList]
   }
   
-  @scala.inline
-  implicit class PerformanceReportListMutableBuilder[Self <: PerformanceReportList] (val x: Self) extends AnyVal {
+  extension [Self <: PerformanceReportList](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPerformanceReport(value: js.Array[PerformanceReport]): Self = StObject.set(x, "performanceReport", value.asInstanceOf[js.Any])
+    inline def setPerformanceReport(value: js.Array[PerformanceReport]): Self = StObject.set(x, "performanceReport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerformanceReportUndefined: Self = StObject.set(x, "performanceReport", js.undefined)
+    inline def setPerformanceReportUndefined: Self = StObject.set(x, "performanceReport", js.undefined)
     
-    @scala.inline
-    def setPerformanceReportVarargs(value: PerformanceReport*): Self = StObject.set(x, "performanceReport", js.Array(value :_*))
+    inline def setPerformanceReportVarargs(value: PerformanceReport*): Self = StObject.set(x, "performanceReport", js.Array(value :_*))
   }
 }

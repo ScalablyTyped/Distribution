@@ -23,31 +23,23 @@ trait ListDomainConfigurationsRequest extends StObject {
 }
 object ListDomainConfigurationsRequest {
   
-  @scala.inline
-  def apply(): ListDomainConfigurationsRequest = {
+  inline def apply(): ListDomainConfigurationsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDomainConfigurationsRequest]
   }
   
-  @scala.inline
-  implicit class ListDomainConfigurationsRequestMutableBuilder[Self <: ListDomainConfigurationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListDomainConfigurationsRequest](x: Self) {
     
-    @scala.inline
-    def setMarker(value: Marker): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: Marker): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: PageSize): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: PageSize): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    @scala.inline
-    def setServiceType(value: ServiceType): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
+    inline def setServiceType(value: ServiceType): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceTypeUndefined: Self = StObject.set(x, "serviceType", js.undefined)
+    inline def setServiceTypeUndefined: Self = StObject.set(x, "serviceType", js.undefined)
   }
 }

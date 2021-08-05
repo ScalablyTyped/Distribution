@@ -20,37 +20,27 @@ trait SyncRepoMetadata extends StObject {
 }
 object SyncRepoMetadata {
   
-  @scala.inline
-  def apply(): SyncRepoMetadata = {
+  inline def apply(): SyncRepoMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SyncRepoMetadata]
   }
   
-  @scala.inline
-  implicit class SyncRepoMetadataMutableBuilder[Self <: SyncRepoMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SyncRepoMetadata](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
     
-    @scala.inline
-    def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
+    inline def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

@@ -20,28 +20,21 @@ trait Trace extends StObject {
 }
 object Trace {
   
-  @scala.inline
-  def apply(): Trace = {
+  inline def apply(): Trace = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Trace]
   }
   
-  @scala.inline
-  implicit class TraceMutableBuilder[Self <: Trace] (val x: Self) extends AnyVal {
+  extension [Self <: Trace](x: Self) {
     
-    @scala.inline
-    def setEndpointInfo(value: EndpointInfo): Self = StObject.set(x, "endpointInfo", value.asInstanceOf[js.Any])
+    inline def setEndpointInfo(value: EndpointInfo): Self = StObject.set(x, "endpointInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointInfoUndefined: Self = StObject.set(x, "endpointInfo", js.undefined)
+    inline def setEndpointInfoUndefined: Self = StObject.set(x, "endpointInfo", js.undefined)
     
-    @scala.inline
-    def setSteps(value: js.Array[Step]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+    inline def setSteps(value: js.Array[Step]): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
+    inline def setStepsUndefined: Self = StObject.set(x, "steps", js.undefined)
     
-    @scala.inline
-    def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value :_*))
+    inline def setStepsVarargs(value: Step*): Self = StObject.set(x, "steps", js.Array(value :_*))
   }
 }

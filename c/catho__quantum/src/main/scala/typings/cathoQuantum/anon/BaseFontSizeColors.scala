@@ -14,31 +14,23 @@ trait BaseFontSizeColors extends StObject {
 }
 object BaseFontSizeColors {
   
-  @scala.inline
-  def apply(): BaseFontSizeColors = {
+  inline def apply(): BaseFontSizeColors = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BaseFontSizeColors]
   }
   
-  @scala.inline
-  implicit class BaseFontSizeColorsMutableBuilder[Self <: BaseFontSizeColors] (val x: Self) extends AnyVal {
+  extension [Self <: BaseFontSizeColors](x: Self) {
     
-    @scala.inline
-    def setBaseFontSize(value: Double): Self = StObject.set(x, "baseFontSize", value.asInstanceOf[js.Any])
+    inline def setBaseFontSize(value: Double): Self = StObject.set(x, "baseFontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseFontSizeUndefined: Self = StObject.set(x, "baseFontSize", js.undefined)
+    inline def setBaseFontSizeUndefined: Self = StObject.set(x, "baseFontSize", js.undefined)
     
-    @scala.inline
-    def setColors(value: js.Object): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    inline def setColors(value: js.Object): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+    inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    @scala.inline
-    def setSpacing(value: js.Object): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
+    inline def setSpacing(value: js.Object): Self = StObject.set(x, "spacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
+    inline def setSpacingUndefined: Self = StObject.set(x, "spacing", js.undefined)
   }
 }

@@ -43,58 +43,41 @@ trait LaunchTemplate extends StObject {
 }
 object LaunchTemplate {
   
-  @scala.inline
-  def apply(): LaunchTemplate = {
+  inline def apply(): LaunchTemplate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LaunchTemplate]
   }
   
-  @scala.inline
-  implicit class LaunchTemplateMutableBuilder[Self <: LaunchTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchTemplate](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: DateTime): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: DateTime): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "CreateTime", js.undefined)
     
-    @scala.inline
-    def setCreatedBy(value: String): Self = StObject.set(x, "CreatedBy", value.asInstanceOf[js.Any])
+    inline def setCreatedBy(value: String): Self = StObject.set(x, "CreatedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedByUndefined: Self = StObject.set(x, "CreatedBy", js.undefined)
+    inline def setCreatedByUndefined: Self = StObject.set(x, "CreatedBy", js.undefined)
     
-    @scala.inline
-    def setDefaultVersionNumber(value: Long): Self = StObject.set(x, "DefaultVersionNumber", value.asInstanceOf[js.Any])
+    inline def setDefaultVersionNumber(value: Long): Self = StObject.set(x, "DefaultVersionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultVersionNumberUndefined: Self = StObject.set(x, "DefaultVersionNumber", js.undefined)
+    inline def setDefaultVersionNumberUndefined: Self = StObject.set(x, "DefaultVersionNumber", js.undefined)
     
-    @scala.inline
-    def setLatestVersionNumber(value: Long): Self = StObject.set(x, "LatestVersionNumber", value.asInstanceOf[js.Any])
+    inline def setLatestVersionNumber(value: Long): Self = StObject.set(x, "LatestVersionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatestVersionNumberUndefined: Self = StObject.set(x, "LatestVersionNumber", js.undefined)
+    inline def setLatestVersionNumberUndefined: Self = StObject.set(x, "LatestVersionNumber", js.undefined)
     
-    @scala.inline
-    def setLaunchTemplateId(value: String): Self = StObject.set(x, "LaunchTemplateId", value.asInstanceOf[js.Any])
+    inline def setLaunchTemplateId(value: String): Self = StObject.set(x, "LaunchTemplateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchTemplateIdUndefined: Self = StObject.set(x, "LaunchTemplateId", js.undefined)
+    inline def setLaunchTemplateIdUndefined: Self = StObject.set(x, "LaunchTemplateId", js.undefined)
     
-    @scala.inline
-    def setLaunchTemplateName(value: LaunchTemplateName): Self = StObject.set(x, "LaunchTemplateName", value.asInstanceOf[js.Any])
+    inline def setLaunchTemplateName(value: LaunchTemplateName): Self = StObject.set(x, "LaunchTemplateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchTemplateNameUndefined: Self = StObject.set(x, "LaunchTemplateName", js.undefined)
+    inline def setLaunchTemplateNameUndefined: Self = StObject.set(x, "LaunchTemplateName", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

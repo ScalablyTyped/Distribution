@@ -22,41 +22,30 @@ trait InputMediaVideo
 }
 object InputMediaVideo {
   
-  @scala.inline
-  def apply(media: String): InputMediaVideo = {
+  inline def apply(media: String): InputMediaVideo = {
     val __obj = js.Dynamic.literal(media = media.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("video")
     __obj.asInstanceOf[InputMediaVideo]
   }
   
-  @scala.inline
-  implicit class InputMediaVideoMutableBuilder[Self <: InputMediaVideo] (val x: Self) extends AnyVal {
+  extension [Self <: InputMediaVideo](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setSupports_streaming(value: Boolean): Self = StObject.set(x, "supports_streaming", value.asInstanceOf[js.Any])
+    inline def setSupports_streaming(value: Boolean): Self = StObject.set(x, "supports_streaming", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupports_streamingUndefined: Self = StObject.set(x, "supports_streaming", js.undefined)
+    inline def setSupports_streamingUndefined: Self = StObject.set(x, "supports_streaming", js.undefined)
     
-    @scala.inline
-    def setType(value: video): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: video): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

@@ -22,25 +22,19 @@ trait DataCue extends StObject {
 }
 object DataCue {
   
-  @scala.inline
-  def apply(data: IBuffer, duration: Double, id: String, startTime: Double): DataCue = {
+  inline def apply(data: IBuffer, duration: Double, id: String, startTime: Double): DataCue = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataCue]
   }
   
-  @scala.inline
-  implicit class DataCueMutableBuilder[Self <: DataCue] (val x: Self) extends AnyVal {
+  extension [Self <: DataCue](x: Self) {
     
-    @scala.inline
-    def setData(value: IBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: IBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
   }
 }

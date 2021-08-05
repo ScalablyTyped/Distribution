@@ -11,15 +11,11 @@ object TextUtilities {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getLengthOfLineBreak(text: ICharacterSequence, index: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getLengthOfLineBreak")(text.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getLengthOfLineBreak(text: ICharacterSequence, index: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getLengthOfLineBreak")(text.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def getLengthOfLineBreakSlow(text: ICharacterSequence, index: Double, c: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getLengthOfLineBreakSlow")(text.asInstanceOf[js.Any], index.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def getLengthOfLineBreakSlow(text: ICharacterSequence, index: Double, c: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getLengthOfLineBreakSlow")(text.asInstanceOf[js.Any], index.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def isAnyLineBreakCharacter(c: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAnyLineBreakCharacter")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isAnyLineBreakCharacter(c: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAnyLineBreakCharacter")(c.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def parseLineStarts(text: ICharacterSequence): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLineStarts")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def parseLineStarts(text: ICharacterSequence): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseLineStarts")(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
 }

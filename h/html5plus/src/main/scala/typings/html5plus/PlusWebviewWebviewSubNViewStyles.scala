@@ -57,40 +57,29 @@ trait PlusWebviewWebviewSubNViewStyles extends StObject {
 }
 object PlusWebviewWebviewSubNViewStyles {
   
-  @scala.inline
-  def apply(): PlusWebviewWebviewSubNViewStyles = {
+  inline def apply(): PlusWebviewWebviewSubNViewStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusWebviewWebviewSubNViewStyles]
   }
   
-  @scala.inline
-  implicit class PlusWebviewWebviewSubNViewStylesMutableBuilder[Self <: PlusWebviewWebviewSubNViewStyles] (val x: Self) extends AnyVal {
+  extension [Self <: PlusWebviewWebviewSubNViewStyles](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setStyles(value: PlusNativeObjViewStyles): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: PlusNativeObjViewStyles): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
-    @scala.inline
-    def setTags(value: js.Array[js.Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[js.Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: js.Any*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: js.Any*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: NView | ImageSlider): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NView | ImageSlider): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

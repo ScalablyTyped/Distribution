@@ -11,9 +11,7 @@ object StringUtil {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ApplyStringTemplate(str: String, params: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyStringTemplate")(str.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def ApplyStringTemplate(str: String, params: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ApplyStringTemplate")(str.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def BuildParam(stPattern: String, params: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildParam")(stPattern.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def BuildParam(stPattern: String, params: js.Any*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildParam")(stPattern.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
 }

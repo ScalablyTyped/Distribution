@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OptionsStackingValue extends StObject
 object OptionsStackingValue {
   
-  @scala.inline
-  def normal: typings.highcharts.highchartsStrings.normal = "normal".asInstanceOf[typings.highcharts.highchartsStrings.normal]
+  inline def normal: typings.highcharts.highchartsStrings.normal = "normal".asInstanceOf[typings.highcharts.highchartsStrings.normal]
   
-  @scala.inline
-  def overlap: typings.highcharts.highchartsStrings.overlap = "overlap".asInstanceOf[typings.highcharts.highchartsStrings.overlap]
+  inline def overlap: typings.highcharts.highchartsStrings.overlap = "overlap".asInstanceOf[typings.highcharts.highchartsStrings.overlap]
   
-  @scala.inline
-  def percent: typings.highcharts.highchartsStrings.percent = "percent".asInstanceOf[typings.highcharts.highchartsStrings.percent]
+  inline def percent: typings.highcharts.highchartsStrings.percent = "percent".asInstanceOf[typings.highcharts.highchartsStrings.percent]
   
-  @scala.inline
-  def stream: typings.highcharts.highchartsStrings.stream = "stream".asInstanceOf[typings.highcharts.highchartsStrings.stream]
+  inline def stream: typings.highcharts.highchartsStrings.stream = "stream".asInstanceOf[typings.highcharts.highchartsStrings.stream]
 }

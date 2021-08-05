@@ -18,28 +18,21 @@ trait DialogNodeNextStep extends StObject {
 }
 object DialogNodeNextStep {
   
-  @scala.inline
-  def apply(behavior: String): DialogNodeNextStep = {
+  inline def apply(behavior: String): DialogNodeNextStep = {
     val __obj = js.Dynamic.literal(behavior = behavior.asInstanceOf[js.Any])
     __obj.asInstanceOf[DialogNodeNextStep]
   }
   
-  @scala.inline
-  implicit class DialogNodeNextStepMutableBuilder[Self <: DialogNodeNextStep] (val x: Self) extends AnyVal {
+  extension [Self <: DialogNodeNextStep](x: Self) {
     
-    @scala.inline
-    def setBehavior(value: String): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
+    inline def setBehavior(value: String): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialog_node(value: String): Self = StObject.set(x, "dialog_node", value.asInstanceOf[js.Any])
+    inline def setDialog_node(value: String): Self = StObject.set(x, "dialog_node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialog_nodeUndefined: Self = StObject.set(x, "dialog_node", js.undefined)
+    inline def setDialog_nodeUndefined: Self = StObject.set(x, "dialog_node", js.undefined)
     
-    @scala.inline
-    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+    inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
   }
 }

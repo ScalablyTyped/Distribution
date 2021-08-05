@@ -17,34 +17,25 @@ trait ListSecretVersionsResponse extends StObject {
 }
 object ListSecretVersionsResponse {
   
-  @scala.inline
-  def apply(): ListSecretVersionsResponse = {
+  inline def apply(): ListSecretVersionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListSecretVersionsResponse]
   }
   
-  @scala.inline
-  implicit class ListSecretVersionsResponseMutableBuilder[Self <: ListSecretVersionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListSecretVersionsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
+    inline def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
+    inline def setTotalSizeUndefined: Self = StObject.set(x, "totalSize", js.undefined)
     
-    @scala.inline
-    def setVersions(value: js.Array[SecretVersion]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
+    inline def setVersions(value: js.Array[SecretVersion]): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
+    inline def setVersionsUndefined: Self = StObject.set(x, "versions", js.undefined)
     
-    @scala.inline
-    def setVersionsVarargs(value: SecretVersion*): Self = StObject.set(x, "versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: SecretVersion*): Self = StObject.set(x, "versions", js.Array(value :_*))
   }
 }

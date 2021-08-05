@@ -20,7 +20,7 @@ object copyCellsMenuItemMod {
       */
     def this(props: ICopyCellsMenuItemProps, context: js.Any) = this()
     
-    var handleClick: js.Any = js.native
+    /* private */ var handleClick: js.Any = js.native
   }
   
   trait ICopyCellsMenuItemProps
@@ -52,26 +52,20 @@ object copyCellsMenuItemMod {
   }
   object ICopyCellsMenuItemProps {
     
-    @scala.inline
-    def apply(context: IMenuContext, getCellData: (Double, Double) => js.Any): ICopyCellsMenuItemProps = {
+    inline def apply(context: IMenuContext, getCellData: (Double, Double) => js.Any): ICopyCellsMenuItemProps = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], getCellData = js.Any.fromFunction2(getCellData))
       __obj.asInstanceOf[ICopyCellsMenuItemProps]
     }
     
-    @scala.inline
-    implicit class ICopyCellsMenuItemPropsMutableBuilder[Self <: ICopyCellsMenuItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: ICopyCellsMenuItemProps](x: Self) {
       
-      @scala.inline
-      def setContext(value: IMenuContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: IMenuContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetCellData(value: (Double, Double) => js.Any): Self = StObject.set(x, "getCellData", js.Any.fromFunction2(value))
+      inline def setGetCellData(value: (Double, Double) => js.Any): Self = StObject.set(x, "getCellData", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnCopy(value: /* success */ Boolean => Unit): Self = StObject.set(x, "onCopy", js.Any.fromFunction1(value))
+      inline def setOnCopy(value: /* success */ Boolean => Unit): Self = StObject.set(x, "onCopy", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCopyUndefined: Self = StObject.set(x, "onCopy", js.undefined)
+      inline def setOnCopyUndefined: Self = StObject.set(x, "onCopy", js.undefined)
     }
   }
 }

@@ -35,37 +35,27 @@ trait CreateProjectRequest extends StObject {
 }
 object CreateProjectRequest {
   
-  @scala.inline
-  def apply(DatasetName: DatasetName, Name: ProjectName, RecipeName: RecipeName, RoleArn: Arn): CreateProjectRequest = {
+  inline def apply(DatasetName: DatasetName, Name: ProjectName, RecipeName: RecipeName, RoleArn: Arn): CreateProjectRequest = {
     val __obj = js.Dynamic.literal(DatasetName = DatasetName.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], RecipeName = RecipeName.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateProjectRequest]
   }
   
-  @scala.inline
-  implicit class CreateProjectRequestMutableBuilder[Self <: CreateProjectRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateProjectRequest](x: Self) {
     
-    @scala.inline
-    def setDatasetName(value: DatasetName): Self = StObject.set(x, "DatasetName", value.asInstanceOf[js.Any])
+    inline def setDatasetName(value: DatasetName): Self = StObject.set(x, "DatasetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: ProjectName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ProjectName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipeName(value: RecipeName): Self = StObject.set(x, "RecipeName", value.asInstanceOf[js.Any])
+    inline def setRecipeName(value: RecipeName): Self = StObject.set(x, "RecipeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: Arn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: Arn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSample(value: Sample): Self = StObject.set(x, "Sample", value.asInstanceOf[js.Any])
+    inline def setSample(value: Sample): Self = StObject.set(x, "Sample", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleUndefined: Self = StObject.set(x, "Sample", js.undefined)
+    inline def setSampleUndefined: Self = StObject.set(x, "Sample", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

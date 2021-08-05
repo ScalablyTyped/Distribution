@@ -14,19 +14,15 @@ trait GooglePrivacyDlpV2PublishToPubSub extends StObject {
 }
 object GooglePrivacyDlpV2PublishToPubSub {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2PublishToPubSub = {
+  inline def apply(): GooglePrivacyDlpV2PublishToPubSub = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2PublishToPubSub]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2PublishToPubSubMutableBuilder[Self <: GooglePrivacyDlpV2PublishToPubSub] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2PublishToPubSub](x: Self) {
     
-    @scala.inline
-    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
+    inline def setTopicUndefined: Self = StObject.set(x, "topic", js.undefined)
   }
 }

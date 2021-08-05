@@ -36,8 +36,7 @@ trait Calls[Fn /* <: Func */] extends StObject {
 }
 object Calls {
   
-  @scala.inline
-  def apply[Fn /* <: Func */](
+  inline def apply[Fn /* <: Func */](
     all: () => js.Array[CallInfo[Fn]],
     allArgs: () => js.Array[Parameters[Fn]],
     any: () => Boolean,
@@ -52,34 +51,24 @@ object Calls {
     __obj.asInstanceOf[Calls[Fn]]
   }
   
-  @scala.inline
-  implicit class CallsMutableBuilder[Self <: Calls[?], Fn /* <: Func */] (val x: Self & Calls[Fn]) extends AnyVal {
+  extension [Self <: Calls[?], Fn /* <: Func */](x: Self & Calls[Fn]) {
     
-    @scala.inline
-    def setAll(value: () => js.Array[CallInfo[Fn]]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
+    inline def setAll(value: () => js.Array[CallInfo[Fn]]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAllArgs(value: () => js.Array[Parameters[Fn]]): Self = StObject.set(x, "allArgs", js.Any.fromFunction0(value))
+    inline def setAllArgs(value: () => js.Array[Parameters[Fn]]): Self = StObject.set(x, "allArgs", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAny(value: () => Boolean): Self = StObject.set(x, "any", js.Any.fromFunction0(value))
+    inline def setAny(value: () => Boolean): Self = StObject.set(x, "any", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setArgsFor(value: Double => Parameters[Fn]): Self = StObject.set(x, "argsFor", js.Any.fromFunction1(value))
+    inline def setArgsFor(value: Double => Parameters[Fn]): Self = StObject.set(x, "argsFor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
+    inline def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFirst(value: () => CallInfo[Fn]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
+    inline def setFirst(value: () => CallInfo[Fn]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMostRecent(value: () => CallInfo[Fn]): Self = StObject.set(x, "mostRecent", js.Any.fromFunction0(value))
+    inline def setMostRecent(value: () => CallInfo[Fn]): Self = StObject.set(x, "mostRecent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSaveArgumentsByValue(value: () => Unit): Self = StObject.set(x, "saveArgumentsByValue", js.Any.fromFunction0(value))
+    inline def setSaveArgumentsByValue(value: () => Unit): Self = StObject.set(x, "saveArgumentsByValue", js.Any.fromFunction0(value))
   }
 }

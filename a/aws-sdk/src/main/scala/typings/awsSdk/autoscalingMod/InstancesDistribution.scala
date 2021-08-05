@@ -38,49 +38,35 @@ trait InstancesDistribution extends StObject {
 }
 object InstancesDistribution {
   
-  @scala.inline
-  def apply(): InstancesDistribution = {
+  inline def apply(): InstancesDistribution = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstancesDistribution]
   }
   
-  @scala.inline
-  implicit class InstancesDistributionMutableBuilder[Self <: InstancesDistribution] (val x: Self) extends AnyVal {
+  extension [Self <: InstancesDistribution](x: Self) {
     
-    @scala.inline
-    def setOnDemandAllocationStrategy(value: XmlString): Self = StObject.set(x, "OnDemandAllocationStrategy", value.asInstanceOf[js.Any])
+    inline def setOnDemandAllocationStrategy(value: XmlString): Self = StObject.set(x, "OnDemandAllocationStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDemandAllocationStrategyUndefined: Self = StObject.set(x, "OnDemandAllocationStrategy", js.undefined)
+    inline def setOnDemandAllocationStrategyUndefined: Self = StObject.set(x, "OnDemandAllocationStrategy", js.undefined)
     
-    @scala.inline
-    def setOnDemandBaseCapacity(value: OnDemandBaseCapacity): Self = StObject.set(x, "OnDemandBaseCapacity", value.asInstanceOf[js.Any])
+    inline def setOnDemandBaseCapacity(value: OnDemandBaseCapacity): Self = StObject.set(x, "OnDemandBaseCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDemandBaseCapacityUndefined: Self = StObject.set(x, "OnDemandBaseCapacity", js.undefined)
+    inline def setOnDemandBaseCapacityUndefined: Self = StObject.set(x, "OnDemandBaseCapacity", js.undefined)
     
-    @scala.inline
-    def setOnDemandPercentageAboveBaseCapacity(value: OnDemandPercentageAboveBaseCapacity): Self = StObject.set(x, "OnDemandPercentageAboveBaseCapacity", value.asInstanceOf[js.Any])
+    inline def setOnDemandPercentageAboveBaseCapacity(value: OnDemandPercentageAboveBaseCapacity): Self = StObject.set(x, "OnDemandPercentageAboveBaseCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDemandPercentageAboveBaseCapacityUndefined: Self = StObject.set(x, "OnDemandPercentageAboveBaseCapacity", js.undefined)
+    inline def setOnDemandPercentageAboveBaseCapacityUndefined: Self = StObject.set(x, "OnDemandPercentageAboveBaseCapacity", js.undefined)
     
-    @scala.inline
-    def setSpotAllocationStrategy(value: XmlString): Self = StObject.set(x, "SpotAllocationStrategy", value.asInstanceOf[js.Any])
+    inline def setSpotAllocationStrategy(value: XmlString): Self = StObject.set(x, "SpotAllocationStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpotAllocationStrategyUndefined: Self = StObject.set(x, "SpotAllocationStrategy", js.undefined)
+    inline def setSpotAllocationStrategyUndefined: Self = StObject.set(x, "SpotAllocationStrategy", js.undefined)
     
-    @scala.inline
-    def setSpotInstancePools(value: SpotInstancePools): Self = StObject.set(x, "SpotInstancePools", value.asInstanceOf[js.Any])
+    inline def setSpotInstancePools(value: SpotInstancePools): Self = StObject.set(x, "SpotInstancePools", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpotInstancePoolsUndefined: Self = StObject.set(x, "SpotInstancePools", js.undefined)
+    inline def setSpotInstancePoolsUndefined: Self = StObject.set(x, "SpotInstancePools", js.undefined)
     
-    @scala.inline
-    def setSpotMaxPrice(value: MixedInstanceSpotPrice): Self = StObject.set(x, "SpotMaxPrice", value.asInstanceOf[js.Any])
+    inline def setSpotMaxPrice(value: MixedInstanceSpotPrice): Self = StObject.set(x, "SpotMaxPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpotMaxPriceUndefined: Self = StObject.set(x, "SpotMaxPrice", js.undefined)
+    inline def setSpotMaxPriceUndefined: Self = StObject.set(x, "SpotMaxPrice", js.undefined)
   }
 }

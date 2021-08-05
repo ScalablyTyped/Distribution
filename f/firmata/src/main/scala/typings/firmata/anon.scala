@@ -22,8 +22,7 @@ object anon {
   }
   object ACCEL {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ACCEL: STEPPER_RUN_STATE,
       DECEL: STEPPER_RUN_STATE,
       RUN: STEPPER_RUN_STATE,
@@ -33,20 +32,15 @@ object anon {
       __obj.asInstanceOf[ACCEL]
     }
     
-    @scala.inline
-    implicit class ACCELMutableBuilder[Self <: ACCEL] (val x: Self) extends AnyVal {
+    extension [Self <: ACCEL](x: Self) {
       
-      @scala.inline
-      def setACCEL(value: STEPPER_RUN_STATE): Self = StObject.set(x, "ACCEL", value.asInstanceOf[js.Any])
+      inline def setACCEL(value: STEPPER_RUN_STATE): Self = StObject.set(x, "ACCEL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDECEL(value: STEPPER_RUN_STATE): Self = StObject.set(x, "DECEL", value.asInstanceOf[js.Any])
+      inline def setDECEL(value: STEPPER_RUN_STATE): Self = StObject.set(x, "DECEL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRUN(value: STEPPER_RUN_STATE): Self = StObject.set(x, "RUN", value.asInstanceOf[js.Any])
+      inline def setRUN(value: STEPPER_RUN_STATE): Self = StObject.set(x, "RUN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSTOP(value: STEPPER_RUN_STATE): Self = StObject.set(x, "STOP", value.asInstanceOf[js.Any])
+      inline def setSTOP(value: STEPPER_RUN_STATE): Self = StObject.set(x, "STOP", value.asInstanceOf[js.Any])
     }
   }
   
@@ -58,20 +52,16 @@ object anon {
   }
   object Address {
     
-    @scala.inline
-    def apply(address: Double, bus: Double): Address = {
+    inline def apply(address: Double, bus: Double): Address = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], bus = bus.asInstanceOf[js.Any])
       __obj.asInstanceOf[Address]
     }
     
-    @scala.inline
-    implicit class AddressMutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
+    extension [Self <: Address](x: Self) {
       
-      @scala.inline
-      def setAddress(value: Double): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: Double): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBus(value: Double): Self = StObject.set(x, "bus", value.asInstanceOf[js.Any])
+      inline def setBus(value: Double): Self = StObject.set(x, "bus", value.asInstanceOf[js.Any])
     }
   }
   
@@ -87,32 +77,24 @@ object anon {
   }
   object Baud {
     
-    @scala.inline
-    def apply(baud: Double, portId: SERIAL_PORT_ID): Baud = {
+    inline def apply(baud: Double, portId: SERIAL_PORT_ID): Baud = {
       val __obj = js.Dynamic.literal(baud = baud.asInstanceOf[js.Any], portId = portId.asInstanceOf[js.Any])
       __obj.asInstanceOf[Baud]
     }
     
-    @scala.inline
-    implicit class BaudMutableBuilder[Self <: Baud] (val x: Self) extends AnyVal {
+    extension [Self <: Baud](x: Self) {
       
-      @scala.inline
-      def setBaud(value: Double): Self = StObject.set(x, "baud", value.asInstanceOf[js.Any])
+      inline def setBaud(value: Double): Self = StObject.set(x, "baud", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortId(value: SERIAL_PORT_ID): Self = StObject.set(x, "portId", value.asInstanceOf[js.Any])
+      inline def setPortId(value: SERIAL_PORT_ID): Self = StObject.set(x, "portId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRxPin(value: Double): Self = StObject.set(x, "rxPin", value.asInstanceOf[js.Any])
+      inline def setRxPin(value: Double): Self = StObject.set(x, "rxPin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRxPinUndefined: Self = StObject.set(x, "rxPin", js.undefined)
+      inline def setRxPinUndefined: Self = StObject.set(x, "rxPin", js.undefined)
       
-      @scala.inline
-      def setTxPin(value: Double): Self = StObject.set(x, "txPin", value.asInstanceOf[js.Any])
+      inline def setTxPin(value: Double): Self = StObject.set(x, "txPin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTxPinUndefined: Self = StObject.set(x, "txPin", js.undefined)
+      inline def setTxPinUndefined: Self = StObject.set(x, "txPin", js.undefined)
     }
   }
   
@@ -124,20 +106,16 @@ object anon {
   }
   object BaudRate {
     
-    @scala.inline
-    def apply(baudRate: Double, bufferSize: Double): BaudRate = {
+    inline def apply(baudRate: Double, bufferSize: Double): BaudRate = {
       val __obj = js.Dynamic.literal(baudRate = baudRate.asInstanceOf[js.Any], bufferSize = bufferSize.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaudRate]
     }
     
-    @scala.inline
-    implicit class BaudRateMutableBuilder[Self <: BaudRate] (val x: Self) extends AnyVal {
+    extension [Self <: BaudRate](x: Self) {
       
-      @scala.inline
-      def setBaudRate(value: Double): Self = StObject.set(x, "baudRate", value.asInstanceOf[js.Any])
+      inline def setBaudRate(value: Double): Self = StObject.set(x, "baudRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
+      inline def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
     }
   }
   
@@ -149,20 +127,16 @@ object anon {
   }
   object CCW {
     
-    @scala.inline
-    def apply(CCW: STEPPER_DIRECTION, CW: STEPPER_DIRECTION): CCW = {
+    inline def apply(CCW: STEPPER_DIRECTION, CW: STEPPER_DIRECTION): CCW = {
       val __obj = js.Dynamic.literal(CCW = CCW.asInstanceOf[js.Any], CW = CW.asInstanceOf[js.Any])
       __obj.asInstanceOf[CCW]
     }
     
-    @scala.inline
-    implicit class CCWMutableBuilder[Self <: CCW] (val x: Self) extends AnyVal {
+    extension [Self <: CCW](x: Self) {
       
-      @scala.inline
-      def setCCW(value: STEPPER_DIRECTION): Self = StObject.set(x, "CCW", value.asInstanceOf[js.Any])
+      inline def setCCW(value: STEPPER_DIRECTION): Self = StObject.set(x, "CCW", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCW(value: STEPPER_DIRECTION): Self = StObject.set(x, "CW", value.asInstanceOf[js.Any])
+      inline def setCW(value: STEPPER_DIRECTION): Self = StObject.set(x, "CW", value.asInstanceOf[js.Any])
     }
   }
   
@@ -176,23 +150,18 @@ object anon {
   }
   object DRIVER {
     
-    @scala.inline
-    def apply(DRIVER: STEPPER_TYPE, FOUR_WIRE: STEPPER_TYPE, TWO_WIRE: STEPPER_TYPE): DRIVER = {
+    inline def apply(DRIVER: STEPPER_TYPE, FOUR_WIRE: STEPPER_TYPE, TWO_WIRE: STEPPER_TYPE): DRIVER = {
       val __obj = js.Dynamic.literal(DRIVER = DRIVER.asInstanceOf[js.Any], FOUR_WIRE = FOUR_WIRE.asInstanceOf[js.Any], TWO_WIRE = TWO_WIRE.asInstanceOf[js.Any])
       __obj.asInstanceOf[DRIVER]
     }
     
-    @scala.inline
-    implicit class DRIVERMutableBuilder[Self <: DRIVER] (val x: Self) extends AnyVal {
+    extension [Self <: DRIVER](x: Self) {
       
-      @scala.inline
-      def setDRIVER(value: STEPPER_TYPE): Self = StObject.set(x, "DRIVER", value.asInstanceOf[js.Any])
+      inline def setDRIVER(value: STEPPER_TYPE): Self = StObject.set(x, "DRIVER", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFOUR_WIRE(value: STEPPER_TYPE): Self = StObject.set(x, "FOUR_WIRE", value.asInstanceOf[js.Any])
+      inline def setFOUR_WIRE(value: STEPPER_TYPE): Self = StObject.set(x, "FOUR_WIRE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTWO_WIRE(value: STEPPER_TYPE): Self = StObject.set(x, "TWO_WIRE", value.asInstanceOf[js.Any])
+      inline def setTWO_WIRE(value: STEPPER_TYPE): Self = StObject.set(x, "TWO_WIRE", value.asInstanceOf[js.Any])
     }
   }
   
@@ -202,17 +171,14 @@ object anon {
   }
   object Delay {
     
-    @scala.inline
-    def apply(delay: Double): Delay = {
+    inline def apply(delay: Double): Delay = {
       val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any])
       __obj.asInstanceOf[Delay]
     }
     
-    @scala.inline
-    implicit class DelayMutableBuilder[Self <: Delay] (val x: Self) extends AnyVal {
+    extension [Self <: Delay](x: Self) {
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     }
   }
 }

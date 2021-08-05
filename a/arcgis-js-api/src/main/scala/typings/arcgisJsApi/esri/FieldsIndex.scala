@@ -36,8 +36,7 @@ trait FieldsIndex extends StObject {
 }
 object FieldsIndex {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dateFields: js.Array[js.Any | Field],
     get: String => Field,
     has: String => Boolean,
@@ -47,22 +46,16 @@ object FieldsIndex {
     __obj.asInstanceOf[FieldsIndex]
   }
   
-  @scala.inline
-  implicit class FieldsIndexMutableBuilder[Self <: FieldsIndex] (val x: Self) extends AnyVal {
+  extension [Self <: FieldsIndex](x: Self) {
     
-    @scala.inline
-    def setDateFields(value: js.Array[js.Any | Field]): Self = StObject.set(x, "dateFields", value.asInstanceOf[js.Any])
+    inline def setDateFields(value: js.Array[js.Any | Field]): Self = StObject.set(x, "dateFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateFieldsVarargs(value: (js.Any | Field)*): Self = StObject.set(x, "dateFields", js.Array(value :_*))
+    inline def setDateFieldsVarargs(value: (js.Any | Field)*): Self = StObject.set(x, "dateFields", js.Array(value :_*))
     
-    @scala.inline
-    def setGet(value: String => Field): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: String => Field): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+    inline def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsDateField(value: String => Boolean): Self = StObject.set(x, "isDateField", js.Any.fromFunction1(value))
+    inline def setIsDateField(value: String => Boolean): Self = StObject.set(x, "isDateField", js.Any.fromFunction1(value))
   }
 }

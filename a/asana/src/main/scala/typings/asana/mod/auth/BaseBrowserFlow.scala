@@ -50,22 +50,16 @@ object BaseBrowserFlow {
   @js.native
   val ^ : BaseBrowserFlowStatic = js.native
   
-  @scala.inline
-  implicit class BaseBrowserFlowMutableBuilder[Self <: BaseBrowserFlow] (val x: Self) extends AnyVal {
+  extension [Self <: BaseBrowserFlow](x: Self) {
     
-    @scala.inline
-    def setAsanaBaseUrl(value: () => String): Self = StObject.set(x, "asanaBaseUrl", js.Any.fromFunction0(value))
+    inline def setAsanaBaseUrl(value: () => String): Self = StObject.set(x, "asanaBaseUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFinishAuthorization(value: String => Unit): Self = StObject.set(x, "finishAuthorization", js.Any.fromFunction1(value))
+    inline def setFinishAuthorization(value: String => Unit): Self = StObject.set(x, "finishAuthorization", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetStateParam(value: () => String): Self = StObject.set(x, "getStateParam", js.Any.fromFunction0(value))
+    inline def setGetStateParam(value: () => String): Self = StObject.set(x, "getStateParam", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReceiverUrl(value: () => String): Self = StObject.set(x, "receiverUrl", js.Any.fromFunction0(value))
+    inline def setReceiverUrl(value: () => String): Self = StObject.set(x, "receiverUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStartAuthorization(value: (String, String) => js.Any): Self = StObject.set(x, "startAuthorization", js.Any.fromFunction2(value))
+    inline def setStartAuthorization(value: (String, String) => js.Any): Self = StObject.set(x, "startAuthorization", js.Any.fromFunction2(value))
   }
 }

@@ -28,8 +28,7 @@ trait ColumnStatistics extends StObject {
 }
 object ColumnStatistics {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AnalyzedTime: Timestamp,
     ColumnName: NameString,
     ColumnType: TypeString,
@@ -39,19 +38,14 @@ object ColumnStatistics {
     __obj.asInstanceOf[ColumnStatistics]
   }
   
-  @scala.inline
-  implicit class ColumnStatisticsMutableBuilder[Self <: ColumnStatistics] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnStatistics](x: Self) {
     
-    @scala.inline
-    def setAnalyzedTime(value: Timestamp): Self = StObject.set(x, "AnalyzedTime", value.asInstanceOf[js.Any])
+    inline def setAnalyzedTime(value: Timestamp): Self = StObject.set(x, "AnalyzedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnName(value: NameString): Self = StObject.set(x, "ColumnName", value.asInstanceOf[js.Any])
+    inline def setColumnName(value: NameString): Self = StObject.set(x, "ColumnName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnType(value: TypeString): Self = StObject.set(x, "ColumnType", value.asInstanceOf[js.Any])
+    inline def setColumnType(value: TypeString): Self = StObject.set(x, "ColumnType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatisticsData(value: ColumnStatisticsData): Self = StObject.set(x, "StatisticsData", value.asInstanceOf[js.Any])
+    inline def setStatisticsData(value: ColumnStatisticsData): Self = StObject.set(x, "StatisticsData", value.asInstanceOf[js.Any])
   }
 }

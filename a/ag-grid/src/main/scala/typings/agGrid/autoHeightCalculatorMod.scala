@@ -12,18 +12,18 @@ object autoHeightCalculatorMod {
   @js.native
   class AutoHeightCalculator () extends StObject {
     
-    @JSName("$scope")
+    /* private */ @JSName("$scope")
     var $scope: js.Any = js.native
     
-    var beans: js.Any = js.native
+    /* private */ var beans: js.Any = js.native
     
-    var columnController: js.Any = js.native
+    /* private */ var columnController: js.Any = js.native
     
-    var eDummyContainer: js.Any = js.native
+    /* private */ var eDummyContainer: js.Any = js.native
     
     def getPreferredHeightForRow(rowNode: RowNode): Double = js.native
     
-    var gridPanel: js.Any = js.native
+    /* private */ var gridPanel: js.Any = js.native
     
     def registerGridComp(gridPanel: GridPanel): Unit = js.native
   }

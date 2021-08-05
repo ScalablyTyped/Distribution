@@ -14,19 +14,15 @@ trait BackendMathBackendCPU extends StObject {
 }
 object BackendMathBackendCPU {
   
-  @scala.inline
-  def apply(backend: MathBackendCPU, inputs: ComplexInputs): BackendMathBackendCPU = {
+  inline def apply(backend: MathBackendCPU, inputs: ComplexInputs): BackendMathBackendCPU = {
     val __obj = js.Dynamic.literal(backend = backend.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[BackendMathBackendCPU]
   }
   
-  @scala.inline
-  implicit class BackendMathBackendCPUMutableBuilder[Self <: BackendMathBackendCPU] (val x: Self) extends AnyVal {
+  extension [Self <: BackendMathBackendCPU](x: Self) {
     
-    @scala.inline
-    def setBackend(value: MathBackendCPU): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
+    inline def setBackend(value: MathBackendCPU): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputs(value: ComplexInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: ComplexInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
   }
 }

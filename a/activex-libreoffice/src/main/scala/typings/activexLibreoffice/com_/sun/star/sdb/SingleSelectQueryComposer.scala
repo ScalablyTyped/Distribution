@@ -139,8 +139,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object SingleSelectQueryComposer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Columns: XNameAccess,
     ElementaryQuery: String,
     Filter: String,
@@ -197,43 +196,30 @@ object SingleSelectQueryComposer {
     __obj.asInstanceOf[SingleSelectQueryComposer]
   }
   
-  @scala.inline
-  implicit class SingleSelectQueryComposerMutableBuilder[Self <: SingleSelectQueryComposer] (val x: Self) extends AnyVal {
+  extension [Self <: SingleSelectQueryComposer](x: Self) {
     
-    @scala.inline
-    def setAppendFilterByColumn(value: (XPropertySet, Boolean, Double) => Unit): Self = StObject.set(x, "appendFilterByColumn", js.Any.fromFunction3(value))
+    inline def setAppendFilterByColumn(value: (XPropertySet, Boolean, Double) => Unit): Self = StObject.set(x, "appendFilterByColumn", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAppendGroupByColumn(value: XPropertySet => Unit): Self = StObject.set(x, "appendGroupByColumn", js.Any.fromFunction1(value))
+    inline def setAppendGroupByColumn(value: XPropertySet => Unit): Self = StObject.set(x, "appendGroupByColumn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAppendHavingClauseByColumn(value: (XPropertySet, Boolean, Double) => Unit): Self = StObject.set(x, "appendHavingClauseByColumn", js.Any.fromFunction3(value))
+    inline def setAppendHavingClauseByColumn(value: (XPropertySet, Boolean, Double) => Unit): Self = StObject.set(x, "appendHavingClauseByColumn", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAppendOrderByColumn(value: (XPropertySet, Boolean) => Unit): Self = StObject.set(x, "appendOrderByColumn", js.Any.fromFunction2(value))
+    inline def setAppendOrderByColumn(value: (XPropertySet, Boolean) => Unit): Self = StObject.set(x, "appendOrderByColumn", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setElementaryQuery(value: String): Self = StObject.set(x, "ElementaryQuery", value.asInstanceOf[js.Any])
+    inline def setElementaryQuery(value: String): Self = StObject.set(x, "ElementaryQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginal(value: String): Self = StObject.set(x, "Original", value.asInstanceOf[js.Any])
+    inline def setOriginal(value: String): Self = StObject.set(x, "Original", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetFilter(value: String => Unit): Self = StObject.set(x, "setFilter", js.Any.fromFunction1(value))
+    inline def setSetFilter(value: String => Unit): Self = StObject.set(x, "setFilter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetGroup(value: String => Unit): Self = StObject.set(x, "setGroup", js.Any.fromFunction1(value))
+    inline def setSetGroup(value: String => Unit): Self = StObject.set(x, "setGroup", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHavingClause(value: String => Unit): Self = StObject.set(x, "setHavingClause", js.Any.fromFunction1(value))
+    inline def setSetHavingClause(value: String => Unit): Self = StObject.set(x, "setHavingClause", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOrder(value: String => Unit): Self = StObject.set(x, "setOrder", js.Any.fromFunction1(value))
+    inline def setSetOrder(value: String => Unit): Self = StObject.set(x, "setOrder", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetStructuredFilter(value: SeqEquiv[SeqEquiv[PropertyValue]] => Unit): Self = StObject.set(x, "setStructuredFilter", js.Any.fromFunction1(value))
+    inline def setSetStructuredFilter(value: SeqEquiv[SeqEquiv[PropertyValue]] => Unit): Self = StObject.set(x, "setStructuredFilter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetStructuredHavingClause(value: SeqEquiv[SeqEquiv[PropertyValue]] => Unit): Self = StObject.set(x, "setStructuredHavingClause", js.Any.fromFunction1(value))
+    inline def setSetStructuredHavingClause(value: SeqEquiv[SeqEquiv[PropertyValue]] => Unit): Self = StObject.set(x, "setStructuredHavingClause", js.Any.fromFunction1(value))
   }
 }

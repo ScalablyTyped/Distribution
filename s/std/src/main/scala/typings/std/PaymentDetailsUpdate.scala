@@ -14,25 +14,19 @@ trait PaymentDetailsUpdate
 }
 object PaymentDetailsUpdate {
   
-  @scala.inline
-  def apply(): PaymentDetailsUpdate = {
+  inline def apply(): PaymentDetailsUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PaymentDetailsUpdate]
   }
   
-  @scala.inline
-  implicit class PaymentDetailsUpdateMutableBuilder[Self <: PaymentDetailsUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: PaymentDetailsUpdate](x: Self) {
     
-    @scala.inline
-    def setError(value: java.lang.String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: java.lang.String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setTotal(value: PaymentItem): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: PaymentItem): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+    inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
   }
 }

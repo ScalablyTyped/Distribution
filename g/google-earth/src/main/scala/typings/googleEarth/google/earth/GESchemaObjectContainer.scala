@@ -51,8 +51,7 @@ trait GESchemaObjectContainer[T /* <: KmlObject */] extends StObject {
 }
 object GESchemaObjectContainer {
   
-  @scala.inline
-  def apply[T /* <: KmlObject */](
+  inline def apply[T /* <: KmlObject */](
     appendChild: T => Unit,
     getChildNodes: () => KmlObjectList[T],
     getFirstChild: () => T,
@@ -66,31 +65,22 @@ object GESchemaObjectContainer {
     __obj.asInstanceOf[GESchemaObjectContainer[T]]
   }
   
-  @scala.inline
-  implicit class GESchemaObjectContainerMutableBuilder[Self <: GESchemaObjectContainer[?], T /* <: KmlObject */] (val x: Self & GESchemaObjectContainer[T]) extends AnyVal {
+  extension [Self <: GESchemaObjectContainer[?], T /* <: KmlObject */](x: Self & GESchemaObjectContainer[T]) {
     
-    @scala.inline
-    def setAppendChild(value: T => Unit): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
+    inline def setAppendChild(value: T => Unit): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetChildNodes(value: () => KmlObjectList[T]): Self = StObject.set(x, "getChildNodes", js.Any.fromFunction0(value))
+    inline def setGetChildNodes(value: () => KmlObjectList[T]): Self = StObject.set(x, "getChildNodes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFirstChild(value: () => T): Self = StObject.set(x, "getFirstChild", js.Any.fromFunction0(value))
+    inline def setGetFirstChild(value: () => T): Self = StObject.set(x, "getFirstChild", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLastChild(value: () => T): Self = StObject.set(x, "getLastChild", js.Any.fromFunction0(value))
+    inline def setGetLastChild(value: () => T): Self = StObject.set(x, "getLastChild", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasChildNodes(value: () => Boolean): Self = StObject.set(x, "hasChildNodes", js.Any.fromFunction0(value))
+    inline def setHasChildNodes(value: () => Boolean): Self = StObject.set(x, "hasChildNodes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInsertBefore(value: (T, T) => Unit): Self = StObject.set(x, "insertBefore", js.Any.fromFunction2(value))
+    inline def setInsertBefore(value: (T, T) => Unit): Self = StObject.set(x, "insertBefore", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveChild(value: T => Unit): Self = StObject.set(x, "removeChild", js.Any.fromFunction1(value))
+    inline def setRemoveChild(value: T => Unit): Self = StObject.set(x, "removeChild", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReplaceChild(value: (T, T) => Unit): Self = StObject.set(x, "replaceChild", js.Any.fromFunction2(value))
+    inline def setReplaceChild(value: (T, T) => Unit): Self = StObject.set(x, "replaceChild", js.Any.fromFunction2(value))
   }
 }

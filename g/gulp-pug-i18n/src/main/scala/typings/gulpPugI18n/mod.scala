@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(options: Options): Transform = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  inline def apply(options: Options): Transform = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Transform]
   
   @JSImport("gulp-pug-i18n", JSImport.Namespace)
   @js.native
@@ -25,23 +24,18 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(i18n: Default): Options = {
+    inline def apply(i18n: Default): Options = {
       val __obj = js.Dynamic.literal(i18n = i18n.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setI18n(value: Default): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
+      inline def setI18n(value: Default): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
     }
   }
 }

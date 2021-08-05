@@ -15,7 +15,7 @@ object accountFriendshipsBestiesFeedMod {
   class BestiesFeed protected () extends Feed[BestiesFeedResponse, BestiesFeedResponseUsersItem] {
     def this(client: IgApiClient) = this()
     
-    var nextMaxId: js.Any = js.native
+    /* private */ var nextMaxId: js.Any = js.native
     
     def request(): js.Promise[BestiesFeedResponse] = js.native
   }

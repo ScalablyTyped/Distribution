@@ -35,8 +35,7 @@ trait WaterMarkOptions1 extends StObject {
 }
 object WaterMarkOptions1 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dissolve: Double,
     dx: Double,
     dy: Double,
@@ -47,25 +46,18 @@ object WaterMarkOptions1 {
     __obj.asInstanceOf[WaterMarkOptions1]
   }
   
-  @scala.inline
-  implicit class WaterMarkOptions1MutableBuilder[Self <: WaterMarkOptions1] (val x: Self) extends AnyVal {
+  extension [Self <: WaterMarkOptions1](x: Self) {
     
-    @scala.inline
-    def setDissolve(value: Double): Self = StObject.set(x, "dissolve", value.asInstanceOf[js.Any])
+    inline def setDissolve(value: Double): Self = StObject.set(x, "dissolve", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDx(value: Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
+    inline def setDx(value: Double): Self = StObject.set(x, "dx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDy(value: Double): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
+    inline def setDy(value: Double): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGravity(value: NorthWest | North | NorthEast | West | Center | East | SouthWest | South | SouthEast): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
+    inline def setGravity(value: NorthWest | North | NorthEast | West | Center | East | SouthWest | South | SouthEast): Self = StObject.set(x, "gravity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: `1`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: `1`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
   }
 }

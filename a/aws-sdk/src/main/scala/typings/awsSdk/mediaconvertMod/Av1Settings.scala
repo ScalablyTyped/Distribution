@@ -68,85 +68,59 @@ trait Av1Settings extends StObject {
 }
 object Av1Settings {
   
-  @scala.inline
-  def apply(): Av1Settings = {
+  inline def apply(): Av1Settings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Av1Settings]
   }
   
-  @scala.inline
-  implicit class Av1SettingsMutableBuilder[Self <: Av1Settings] (val x: Self) extends AnyVal {
+  extension [Self <: Av1Settings](x: Self) {
     
-    @scala.inline
-    def setAdaptiveQuantization(value: Av1AdaptiveQuantization): Self = StObject.set(x, "AdaptiveQuantization", value.asInstanceOf[js.Any])
+    inline def setAdaptiveQuantization(value: Av1AdaptiveQuantization): Self = StObject.set(x, "AdaptiveQuantization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdaptiveQuantizationUndefined: Self = StObject.set(x, "AdaptiveQuantization", js.undefined)
+    inline def setAdaptiveQuantizationUndefined: Self = StObject.set(x, "AdaptiveQuantization", js.undefined)
     
-    @scala.inline
-    def setFramerateControl(value: Av1FramerateControl): Self = StObject.set(x, "FramerateControl", value.asInstanceOf[js.Any])
+    inline def setFramerateControl(value: Av1FramerateControl): Self = StObject.set(x, "FramerateControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramerateControlUndefined: Self = StObject.set(x, "FramerateControl", js.undefined)
+    inline def setFramerateControlUndefined: Self = StObject.set(x, "FramerateControl", js.undefined)
     
-    @scala.inline
-    def setFramerateConversionAlgorithm(value: Av1FramerateConversionAlgorithm): Self = StObject.set(x, "FramerateConversionAlgorithm", value.asInstanceOf[js.Any])
+    inline def setFramerateConversionAlgorithm(value: Av1FramerateConversionAlgorithm): Self = StObject.set(x, "FramerateConversionAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramerateConversionAlgorithmUndefined: Self = StObject.set(x, "FramerateConversionAlgorithm", js.undefined)
+    inline def setFramerateConversionAlgorithmUndefined: Self = StObject.set(x, "FramerateConversionAlgorithm", js.undefined)
     
-    @scala.inline
-    def setFramerateDenominator(value: integerMin1Max2147483647): Self = StObject.set(x, "FramerateDenominator", value.asInstanceOf[js.Any])
+    inline def setFramerateDenominator(value: integerMin1Max2147483647): Self = StObject.set(x, "FramerateDenominator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramerateDenominatorUndefined: Self = StObject.set(x, "FramerateDenominator", js.undefined)
+    inline def setFramerateDenominatorUndefined: Self = StObject.set(x, "FramerateDenominator", js.undefined)
     
-    @scala.inline
-    def setFramerateNumerator(value: integerMin1Max2147483647): Self = StObject.set(x, "FramerateNumerator", value.asInstanceOf[js.Any])
+    inline def setFramerateNumerator(value: integerMin1Max2147483647): Self = StObject.set(x, "FramerateNumerator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramerateNumeratorUndefined: Self = StObject.set(x, "FramerateNumerator", js.undefined)
+    inline def setFramerateNumeratorUndefined: Self = StObject.set(x, "FramerateNumerator", js.undefined)
     
-    @scala.inline
-    def setGopSize(value: doubleMin0): Self = StObject.set(x, "GopSize", value.asInstanceOf[js.Any])
+    inline def setGopSize(value: doubleMin0): Self = StObject.set(x, "GopSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGopSizeUndefined: Self = StObject.set(x, "GopSize", js.undefined)
+    inline def setGopSizeUndefined: Self = StObject.set(x, "GopSize", js.undefined)
     
-    @scala.inline
-    def setMaxBitrate(value: integerMin1000Max1152000000): Self = StObject.set(x, "MaxBitrate", value.asInstanceOf[js.Any])
+    inline def setMaxBitrate(value: integerMin1000Max1152000000): Self = StObject.set(x, "MaxBitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxBitrateUndefined: Self = StObject.set(x, "MaxBitrate", js.undefined)
+    inline def setMaxBitrateUndefined: Self = StObject.set(x, "MaxBitrate", js.undefined)
     
-    @scala.inline
-    def setNumberBFramesBetweenReferenceFrames(value: integerMin7Max15): Self = StObject.set(x, "NumberBFramesBetweenReferenceFrames", value.asInstanceOf[js.Any])
+    inline def setNumberBFramesBetweenReferenceFrames(value: integerMin7Max15): Self = StObject.set(x, "NumberBFramesBetweenReferenceFrames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberBFramesBetweenReferenceFramesUndefined: Self = StObject.set(x, "NumberBFramesBetweenReferenceFrames", js.undefined)
+    inline def setNumberBFramesBetweenReferenceFramesUndefined: Self = StObject.set(x, "NumberBFramesBetweenReferenceFrames", js.undefined)
     
-    @scala.inline
-    def setQvbrSettings(value: Av1QvbrSettings): Self = StObject.set(x, "QvbrSettings", value.asInstanceOf[js.Any])
+    inline def setQvbrSettings(value: Av1QvbrSettings): Self = StObject.set(x, "QvbrSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQvbrSettingsUndefined: Self = StObject.set(x, "QvbrSettings", js.undefined)
+    inline def setQvbrSettingsUndefined: Self = StObject.set(x, "QvbrSettings", js.undefined)
     
-    @scala.inline
-    def setRateControlMode(value: Av1RateControlMode): Self = StObject.set(x, "RateControlMode", value.asInstanceOf[js.Any])
+    inline def setRateControlMode(value: Av1RateControlMode): Self = StObject.set(x, "RateControlMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRateControlModeUndefined: Self = StObject.set(x, "RateControlMode", js.undefined)
+    inline def setRateControlModeUndefined: Self = StObject.set(x, "RateControlMode", js.undefined)
     
-    @scala.inline
-    def setSlices(value: integerMin1Max32): Self = StObject.set(x, "Slices", value.asInstanceOf[js.Any])
+    inline def setSlices(value: integerMin1Max32): Self = StObject.set(x, "Slices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlicesUndefined: Self = StObject.set(x, "Slices", js.undefined)
+    inline def setSlicesUndefined: Self = StObject.set(x, "Slices", js.undefined)
     
-    @scala.inline
-    def setSpatialAdaptiveQuantization(value: Av1SpatialAdaptiveQuantization): Self = StObject.set(x, "SpatialAdaptiveQuantization", value.asInstanceOf[js.Any])
+    inline def setSpatialAdaptiveQuantization(value: Av1SpatialAdaptiveQuantization): Self = StObject.set(x, "SpatialAdaptiveQuantization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpatialAdaptiveQuantizationUndefined: Self = StObject.set(x, "SpatialAdaptiveQuantization", js.undefined)
+    inline def setSpatialAdaptiveQuantizationUndefined: Self = StObject.set(x, "SpatialAdaptiveQuantization", js.undefined)
   }
 }

@@ -11,10 +11,8 @@ object getLayerVersionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getLayerVersion(args: GetLayerVersionArgs): js.Promise[GetLayerVersionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLayerVersion")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetLayerVersionResult]]
-  @scala.inline
-  def getLayerVersion(args: GetLayerVersionArgs, opts: InvokeOptions): js.Promise[GetLayerVersionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLayerVersion")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLayerVersionResult]]
+  inline def getLayerVersion(args: GetLayerVersionArgs): js.Promise[GetLayerVersionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLayerVersion")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetLayerVersionResult]]
+  inline def getLayerVersion(args: GetLayerVersionArgs, opts: InvokeOptions): js.Promise[GetLayerVersionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLayerVersion")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLayerVersionResult]]
   
   trait GetLayerVersionArgs extends StObject {
     
@@ -35,29 +33,22 @@ object getLayerVersionMod {
   }
   object GetLayerVersionArgs {
     
-    @scala.inline
-    def apply(layerName: String): GetLayerVersionArgs = {
+    inline def apply(layerName: String): GetLayerVersionArgs = {
       val __obj = js.Dynamic.literal(layerName = layerName.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetLayerVersionArgs]
     }
     
-    @scala.inline
-    implicit class GetLayerVersionArgsMutableBuilder[Self <: GetLayerVersionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetLayerVersionArgs](x: Self) {
       
-      @scala.inline
-      def setCompatibleRuntime(value: String): Self = StObject.set(x, "compatibleRuntime", value.asInstanceOf[js.Any])
+      inline def setCompatibleRuntime(value: String): Self = StObject.set(x, "compatibleRuntime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompatibleRuntimeUndefined: Self = StObject.set(x, "compatibleRuntime", js.undefined)
+      inline def setCompatibleRuntimeUndefined: Self = StObject.set(x, "compatibleRuntime", js.undefined)
       
-      @scala.inline
-      def setLayerName(value: String): Self = StObject.set(x, "layerName", value.asInstanceOf[js.Any])
+      inline def setLayerName(value: String): Self = StObject.set(x, "layerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -119,8 +110,7 @@ object getLayerVersionMod {
   }
   object GetLayerVersionResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       compatibleRuntimes: js.Array[String],
       createdDate: String,
@@ -137,50 +127,35 @@ object getLayerVersionMod {
       __obj.asInstanceOf[GetLayerVersionResult]
     }
     
-    @scala.inline
-    implicit class GetLayerVersionResultMutableBuilder[Self <: GetLayerVersionResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetLayerVersionResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompatibleRuntime(value: String): Self = StObject.set(x, "compatibleRuntime", value.asInstanceOf[js.Any])
+      inline def setCompatibleRuntime(value: String): Self = StObject.set(x, "compatibleRuntime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompatibleRuntimeUndefined: Self = StObject.set(x, "compatibleRuntime", js.undefined)
+      inline def setCompatibleRuntimeUndefined: Self = StObject.set(x, "compatibleRuntime", js.undefined)
       
-      @scala.inline
-      def setCompatibleRuntimes(value: js.Array[String]): Self = StObject.set(x, "compatibleRuntimes", value.asInstanceOf[js.Any])
+      inline def setCompatibleRuntimes(value: js.Array[String]): Self = StObject.set(x, "compatibleRuntimes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompatibleRuntimesVarargs(value: String*): Self = StObject.set(x, "compatibleRuntimes", js.Array(value :_*))
+      inline def setCompatibleRuntimesVarargs(value: String*): Self = StObject.set(x, "compatibleRuntimes", js.Array(value :_*))
       
-      @scala.inline
-      def setCreatedDate(value: String): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
+      inline def setCreatedDate(value: String): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayerArn(value: String): Self = StObject.set(x, "layerArn", value.asInstanceOf[js.Any])
+      inline def setLayerArn(value: String): Self = StObject.set(x, "layerArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayerName(value: String): Self = StObject.set(x, "layerName", value.asInstanceOf[js.Any])
+      inline def setLayerName(value: String): Self = StObject.set(x, "layerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLicenseInfo(value: String): Self = StObject.set(x, "licenseInfo", value.asInstanceOf[js.Any])
+      inline def setLicenseInfo(value: String): Self = StObject.set(x, "licenseInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceCodeHash(value: String): Self = StObject.set(x, "sourceCodeHash", value.asInstanceOf[js.Any])
+      inline def setSourceCodeHash(value: String): Self = StObject.set(x, "sourceCodeHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceCodeSize(value: Double): Self = StObject.set(x, "sourceCodeSize", value.asInstanceOf[js.Any])
+      inline def setSourceCodeSize(value: Double): Self = StObject.set(x, "sourceCodeSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

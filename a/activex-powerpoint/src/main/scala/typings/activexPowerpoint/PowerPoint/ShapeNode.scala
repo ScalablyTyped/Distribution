@@ -18,15 +18,14 @@ trait ShapeNode extends StObject {
   
   val Points: js.Any
   
-  @JSName("PowerPoint.ShapeNode_typekey")
+  /* private */ @JSName("PowerPoint.ShapeNode_typekey")
   var PowerPointDotShapeNode_typekey: ShapeNode
   
   val SegmentType: MsoSegmentType
 }
 object ShapeNode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Creator: Double,
     EditingType: MsoEditingType,
@@ -40,28 +39,20 @@ object ShapeNode {
     __obj.asInstanceOf[ShapeNode]
   }
   
-  @scala.inline
-  implicit class ShapeNodeMutableBuilder[Self <: ShapeNode] (val x: Self) extends AnyVal {
+  extension [Self <: ShapeNode](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditingType(value: MsoEditingType): Self = StObject.set(x, "EditingType", value.asInstanceOf[js.Any])
+    inline def setEditingType(value: MsoEditingType): Self = StObject.set(x, "EditingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoints(value: js.Any): Self = StObject.set(x, "Points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: js.Any): Self = StObject.set(x, "Points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotShapeNode_typekey(value: ShapeNode): Self = StObject.set(x, "PowerPoint.ShapeNode_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotShapeNode_typekey(value: ShapeNode): Self = StObject.set(x, "PowerPoint.ShapeNode_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentType(value: MsoSegmentType): Self = StObject.set(x, "SegmentType", value.asInstanceOf[js.Any])
+    inline def setSegmentType(value: MsoSegmentType): Self = StObject.set(x, "SegmentType", value.asInstanceOf[js.Any])
   }
 }

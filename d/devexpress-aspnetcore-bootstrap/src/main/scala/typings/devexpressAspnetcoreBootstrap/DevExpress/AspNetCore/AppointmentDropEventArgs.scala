@@ -16,8 +16,7 @@ trait AppointmentDropEventArgs
 }
 object AppointmentDropEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dragInformation: js.Array[BootstrapSchedulerAppointmentDragInfo],
     handled: Boolean,
     operation: BootstrapSchedulerAppointmentOperation,
@@ -27,19 +26,14 @@ object AppointmentDropEventArgs {
     __obj.asInstanceOf[AppointmentDropEventArgs]
   }
   
-  @scala.inline
-  implicit class AppointmentDropEventArgsMutableBuilder[Self <: AppointmentDropEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: AppointmentDropEventArgs](x: Self) {
     
-    @scala.inline
-    def setDragInformation(value: js.Array[BootstrapSchedulerAppointmentDragInfo]): Self = StObject.set(x, "dragInformation", value.asInstanceOf[js.Any])
+    inline def setDragInformation(value: js.Array[BootstrapSchedulerAppointmentDragInfo]): Self = StObject.set(x, "dragInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragInformationVarargs(value: BootstrapSchedulerAppointmentDragInfo*): Self = StObject.set(x, "dragInformation", js.Array(value :_*))
+    inline def setDragInformationVarargs(value: BootstrapSchedulerAppointmentDragInfo*): Self = StObject.set(x, "dragInformation", js.Array(value :_*))
     
-    @scala.inline
-    def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
+    inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperation(value: BootstrapSchedulerAppointmentOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: BootstrapSchedulerAppointmentOperation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
   }
 }

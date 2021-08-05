@@ -12,16 +12,13 @@ trait GyrometerReadingChangedEventArgs extends StObject {
 }
 object GyrometerReadingChangedEventArgs {
   
-  @scala.inline
-  def apply(reading: GyrometerReading): GyrometerReadingChangedEventArgs = {
+  inline def apply(reading: GyrometerReading): GyrometerReadingChangedEventArgs = {
     val __obj = js.Dynamic.literal(reading = reading.asInstanceOf[js.Any])
     __obj.asInstanceOf[GyrometerReadingChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class GyrometerReadingChangedEventArgsMutableBuilder[Self <: GyrometerReadingChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: GyrometerReadingChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setReading(value: GyrometerReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
+    inline def setReading(value: GyrometerReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
   }
 }

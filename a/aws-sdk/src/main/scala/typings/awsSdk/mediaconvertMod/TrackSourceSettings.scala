@@ -13,19 +13,15 @@ trait TrackSourceSettings extends StObject {
 }
 object TrackSourceSettings {
   
-  @scala.inline
-  def apply(): TrackSourceSettings = {
+  inline def apply(): TrackSourceSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TrackSourceSettings]
   }
   
-  @scala.inline
-  implicit class TrackSourceSettingsMutableBuilder[Self <: TrackSourceSettings] (val x: Self) extends AnyVal {
+  extension [Self <: TrackSourceSettings](x: Self) {
     
-    @scala.inline
-    def setTrackNumber(value: integerMin1Max2147483647): Self = StObject.set(x, "TrackNumber", value.asInstanceOf[js.Any])
+    inline def setTrackNumber(value: integerMin1Max2147483647): Self = StObject.set(x, "TrackNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackNumberUndefined: Self = StObject.set(x, "TrackNumber", js.undefined)
+    inline def setTrackNumberUndefined: Self = StObject.set(x, "TrackNumber", js.undefined)
   }
 }

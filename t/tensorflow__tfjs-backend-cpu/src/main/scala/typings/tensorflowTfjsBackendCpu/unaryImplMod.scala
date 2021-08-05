@@ -12,6 +12,5 @@ object unaryImplMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createSimpleUnaryImpl(op: SimpleUnaryOperation): SimpleUnaryImpl = ^.asInstanceOf[js.Dynamic].applyDynamic("createSimpleUnaryImpl")(op.asInstanceOf[js.Any]).asInstanceOf[SimpleUnaryImpl]
+  inline def createSimpleUnaryImpl(op: SimpleUnaryOperation): SimpleUnaryImpl = ^.asInstanceOf[js.Dynamic].applyDynamic("createSimpleUnaryImpl")(op.asInstanceOf[js.Any]).asInstanceOf[SimpleUnaryImpl]
 }

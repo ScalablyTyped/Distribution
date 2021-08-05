@@ -142,8 +142,7 @@ object typesMappedColumnTypesMod {
   }
   object MappedColumnTypes {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cacheDuration: ColumnType,
       cacheId: ColumnType,
       cacheIdentifier: ColumnType,
@@ -172,95 +171,65 @@ object typesMappedColumnTypesMod {
       __obj.asInstanceOf[MappedColumnTypes]
     }
     
-    @scala.inline
-    implicit class MappedColumnTypesMutableBuilder[Self <: MappedColumnTypes] (val x: Self) extends AnyVal {
+    extension [Self <: MappedColumnTypes](x: Self) {
       
-      @scala.inline
-      def setCacheDuration(value: ColumnType): Self = StObject.set(x, "cacheDuration", value.asInstanceOf[js.Any])
+      inline def setCacheDuration(value: ColumnType): Self = StObject.set(x, "cacheDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheId(value: ColumnType): Self = StObject.set(x, "cacheId", value.asInstanceOf[js.Any])
+      inline def setCacheId(value: ColumnType): Self = StObject.set(x, "cacheId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheIdentifier(value: ColumnType): Self = StObject.set(x, "cacheIdentifier", value.asInstanceOf[js.Any])
+      inline def setCacheIdentifier(value: ColumnType): Self = StObject.set(x, "cacheIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheQuery(value: ColumnType): Self = StObject.set(x, "cacheQuery", value.asInstanceOf[js.Any])
+      inline def setCacheQuery(value: ColumnType): Self = StObject.set(x, "cacheQuery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheResult(value: ColumnType): Self = StObject.set(x, "cacheResult", value.asInstanceOf[js.Any])
+      inline def setCacheResult(value: ColumnType): Self = StObject.set(x, "cacheResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheTime(value: ColumnType): Self = StObject.set(x, "cacheTime", value.asInstanceOf[js.Any])
+      inline def setCacheTime(value: ColumnType): Self = StObject.set(x, "cacheTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateDate(value: ColumnType): Self = StObject.set(x, "createDate", value.asInstanceOf[js.Any])
+      inline def setCreateDate(value: ColumnType): Self = StObject.set(x, "createDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateDateDefault(value: String): Self = StObject.set(x, "createDateDefault", value.asInstanceOf[js.Any])
+      inline def setCreateDateDefault(value: String): Self = StObject.set(x, "createDateDefault", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateDatePrecision(value: Double): Self = StObject.set(x, "createDatePrecision", value.asInstanceOf[js.Any])
+      inline def setCreateDatePrecision(value: Double): Self = StObject.set(x, "createDatePrecision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateDatePrecisionUndefined: Self = StObject.set(x, "createDatePrecision", js.undefined)
+      inline def setCreateDatePrecisionUndefined: Self = StObject.set(x, "createDatePrecision", js.undefined)
       
-      @scala.inline
-      def setDeleteDate(value: ColumnType): Self = StObject.set(x, "deleteDate", value.asInstanceOf[js.Any])
+      inline def setDeleteDate(value: ColumnType): Self = StObject.set(x, "deleteDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteDateNullable(value: Boolean): Self = StObject.set(x, "deleteDateNullable", value.asInstanceOf[js.Any])
+      inline def setDeleteDateNullable(value: Boolean): Self = StObject.set(x, "deleteDateNullable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteDatePrecision(value: Double): Self = StObject.set(x, "deleteDatePrecision", value.asInstanceOf[js.Any])
+      inline def setDeleteDatePrecision(value: Double): Self = StObject.set(x, "deleteDatePrecision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeleteDatePrecisionUndefined: Self = StObject.set(x, "deleteDatePrecision", js.undefined)
+      inline def setDeleteDatePrecisionUndefined: Self = StObject.set(x, "deleteDatePrecision", js.undefined)
       
-      @scala.inline
-      def setMetadataDatabase(value: ColumnType): Self = StObject.set(x, "metadataDatabase", value.asInstanceOf[js.Any])
+      inline def setMetadataDatabase(value: ColumnType): Self = StObject.set(x, "metadataDatabase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataName(value: ColumnType): Self = StObject.set(x, "metadataName", value.asInstanceOf[js.Any])
+      inline def setMetadataName(value: ColumnType): Self = StObject.set(x, "metadataName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataSchema(value: ColumnType): Self = StObject.set(x, "metadataSchema", value.asInstanceOf[js.Any])
+      inline def setMetadataSchema(value: ColumnType): Self = StObject.set(x, "metadataSchema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataTable(value: ColumnType): Self = StObject.set(x, "metadataTable", value.asInstanceOf[js.Any])
+      inline def setMetadataTable(value: ColumnType): Self = StObject.set(x, "metadataTable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataType(value: ColumnType): Self = StObject.set(x, "metadataType", value.asInstanceOf[js.Any])
+      inline def setMetadataType(value: ColumnType): Self = StObject.set(x, "metadataType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataValue(value: ColumnType): Self = StObject.set(x, "metadataValue", value.asInstanceOf[js.Any])
+      inline def setMetadataValue(value: ColumnType): Self = StObject.set(x, "metadataValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMigrationId(value: ColumnType): Self = StObject.set(x, "migrationId", value.asInstanceOf[js.Any])
+      inline def setMigrationId(value: ColumnType): Self = StObject.set(x, "migrationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMigrationName(value: ColumnType): Self = StObject.set(x, "migrationName", value.asInstanceOf[js.Any])
+      inline def setMigrationName(value: ColumnType): Self = StObject.set(x, "migrationName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMigrationTimestamp(value: ColumnType): Self = StObject.set(x, "migrationTimestamp", value.asInstanceOf[js.Any])
+      inline def setMigrationTimestamp(value: ColumnType): Self = StObject.set(x, "migrationTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTreeLevel(value: ColumnType): Self = StObject.set(x, "treeLevel", value.asInstanceOf[js.Any])
+      inline def setTreeLevel(value: ColumnType): Self = StObject.set(x, "treeLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateDate(value: ColumnType): Self = StObject.set(x, "updateDate", value.asInstanceOf[js.Any])
+      inline def setUpdateDate(value: ColumnType): Self = StObject.set(x, "updateDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateDateDefault(value: String): Self = StObject.set(x, "updateDateDefault", value.asInstanceOf[js.Any])
+      inline def setUpdateDateDefault(value: String): Self = StObject.set(x, "updateDateDefault", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateDatePrecision(value: Double): Self = StObject.set(x, "updateDatePrecision", value.asInstanceOf[js.Any])
+      inline def setUpdateDatePrecision(value: Double): Self = StObject.set(x, "updateDatePrecision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateDatePrecisionUndefined: Self = StObject.set(x, "updateDatePrecision", js.undefined)
+      inline def setUpdateDatePrecisionUndefined: Self = StObject.set(x, "updateDatePrecision", js.undefined)
       
-      @scala.inline
-      def setVersion(value: ColumnType): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: ColumnType): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
 }

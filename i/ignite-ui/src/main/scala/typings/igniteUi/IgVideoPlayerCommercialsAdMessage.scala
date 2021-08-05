@@ -38,37 +38,27 @@ trait IgVideoPlayerCommercialsAdMessage
 }
 object IgVideoPlayerCommercialsAdMessage {
   
-  @scala.inline
-  def apply(): IgVideoPlayerCommercialsAdMessage = {
+  inline def apply(): IgVideoPlayerCommercialsAdMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgVideoPlayerCommercialsAdMessage]
   }
   
-  @scala.inline
-  implicit class IgVideoPlayerCommercialsAdMessageMutableBuilder[Self <: IgVideoPlayerCommercialsAdMessage] (val x: Self) extends AnyVal {
+  extension [Self <: IgVideoPlayerCommercialsAdMessage](x: Self) {
     
-    @scala.inline
-    def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+    inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
-    @scala.inline
-    def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
+    inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
+    inline def setAnimationDurationUndefined: Self = StObject.set(x, "animationDuration", js.undefined)
     
-    @scala.inline
-    def setAutoHide(value: Boolean): Self = StObject.set(x, "autoHide", value.asInstanceOf[js.Any])
+    inline def setAutoHide(value: Boolean): Self = StObject.set(x, "autoHide", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoHideUndefined: Self = StObject.set(x, "autoHide", js.undefined)
+    inline def setAutoHideUndefined: Self = StObject.set(x, "autoHide", js.undefined)
     
-    @scala.inline
-    def setHideDelay(value: Double): Self = StObject.set(x, "hideDelay", value.asInstanceOf[js.Any])
+    inline def setHideDelay(value: Double): Self = StObject.set(x, "hideDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideDelayUndefined: Self = StObject.set(x, "hideDelay", js.undefined)
+    inline def setHideDelayUndefined: Self = StObject.set(x, "hideDelay", js.undefined)
   }
 }

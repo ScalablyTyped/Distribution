@@ -25,28 +25,21 @@ trait FloatingInkData extends StObject {
 }
 object FloatingInkData {
   
-  @scala.inline
-  def apply(): FloatingInkData = {
+  inline def apply(): FloatingInkData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FloatingInkData]
   }
   
-  @scala.inline
-  implicit class FloatingInkDataMutableBuilder[Self <: FloatingInkData] (val x: Self) extends AnyVal {
+  extension [Self <: FloatingInkData](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setInkStrokes(value: js.Array[InkStrokeData]): Self = StObject.set(x, "inkStrokes", value.asInstanceOf[js.Any])
+    inline def setInkStrokes(value: js.Array[InkStrokeData]): Self = StObject.set(x, "inkStrokes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInkStrokesUndefined: Self = StObject.set(x, "inkStrokes", js.undefined)
+    inline def setInkStrokesUndefined: Self = StObject.set(x, "inkStrokes", js.undefined)
     
-    @scala.inline
-    def setInkStrokesVarargs(value: InkStrokeData*): Self = StObject.set(x, "inkStrokes", js.Array(value :_*))
+    inline def setInkStrokesVarargs(value: InkStrokeData*): Self = StObject.set(x, "inkStrokes", js.Array(value :_*))
   }
 }

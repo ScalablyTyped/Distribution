@@ -18,19 +18,15 @@ trait ExtraParam extends StObject {
 }
 object ExtraParam {
   
-  @scala.inline
-  def apply(Name: ExtraParamName, Value: ExtraParamValue): ExtraParam = {
+  inline def apply(Name: ExtraParamName, Value: ExtraParamValue): ExtraParam = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtraParam]
   }
   
-  @scala.inline
-  implicit class ExtraParamMutableBuilder[Self <: ExtraParam] (val x: Self) extends AnyVal {
+  extension [Self <: ExtraParam](x: Self) {
     
-    @scala.inline
-    def setName(value: ExtraParamName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ExtraParamName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: ExtraParamValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: ExtraParamValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

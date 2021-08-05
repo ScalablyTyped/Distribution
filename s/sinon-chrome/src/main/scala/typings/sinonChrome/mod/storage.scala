@@ -14,26 +14,22 @@ object storage {
   @JSImport("sinon-chrome", "storage.local")
   @js.native
   def local: StubbedStorageArea = js.native
-  @scala.inline
-  def local_=(x: StubbedStorageArea): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("local")(x.asInstanceOf[js.Any])
+  inline def local_=(x: StubbedStorageArea): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("local")(x.asInstanceOf[js.Any])
   
   @JSImport("sinon-chrome", "storage.managed")
   @js.native
   def managed: StubbedStorageArea = js.native
-  @scala.inline
-  def managed_=(x: StubbedStorageArea): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("managed")(x.asInstanceOf[js.Any])
+  inline def managed_=(x: StubbedStorageArea): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("managed")(x.asInstanceOf[js.Any])
   
   @JSImport("sinon-chrome", "storage.onChanged")
   @js.native
   def onChanged: Event = js.native
-  @scala.inline
-  def onChanged_=(x: Event): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onChanged")(x.asInstanceOf[js.Any])
+  inline def onChanged_=(x: Event): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onChanged")(x.asInstanceOf[js.Any])
   
   @JSImport("sinon-chrome", "storage.sync")
   @js.native
   def sync: StubbedStorageArea = js.native
-  @scala.inline
-  def sync_=(x: StubbedStorageArea): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sync")(x.asInstanceOf[js.Any])
+  inline def sync_=(x: StubbedStorageArea): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sync")(x.asInstanceOf[js.Any])
   
   trait StubbedStorageArea extends StObject {
     
@@ -75,8 +71,7 @@ object storage {
   }
   object StubbedStorageArea {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clear: SinonChromeStub,
       get: SinonChromeStub,
       getBytesInUse: SinonChromeStub,
@@ -87,23 +82,17 @@ object storage {
       __obj.asInstanceOf[StubbedStorageArea]
     }
     
-    @scala.inline
-    implicit class StubbedStorageAreaMutableBuilder[Self <: StubbedStorageArea] (val x: Self) extends AnyVal {
+    extension [Self <: StubbedStorageArea](x: Self) {
       
-      @scala.inline
-      def setClear(value: SinonChromeStub): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+      inline def setClear(value: SinonChromeStub): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGet(value: SinonChromeStub): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+      inline def setGet(value: SinonChromeStub): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetBytesInUse(value: SinonChromeStub): Self = StObject.set(x, "getBytesInUse", value.asInstanceOf[js.Any])
+      inline def setGetBytesInUse(value: SinonChromeStub): Self = StObject.set(x, "getBytesInUse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemove(value: SinonChromeStub): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+      inline def setRemove(value: SinonChromeStub): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSet(value: SinonChromeStub): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
+      inline def setSet(value: SinonChromeStub): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
     }
   }
 }

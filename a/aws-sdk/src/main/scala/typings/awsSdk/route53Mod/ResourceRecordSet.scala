@@ -73,88 +73,61 @@ trait ResourceRecordSet extends StObject {
 }
 object ResourceRecordSet {
   
-  @scala.inline
-  def apply(Name: DNSName, Type: RRType): ResourceRecordSet = {
+  inline def apply(Name: DNSName, Type: RRType): ResourceRecordSet = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceRecordSet]
   }
   
-  @scala.inline
-  implicit class ResourceRecordSetMutableBuilder[Self <: ResourceRecordSet] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceRecordSet](x: Self) {
     
-    @scala.inline
-    def setAliasTarget(value: AliasTarget): Self = StObject.set(x, "AliasTarget", value.asInstanceOf[js.Any])
+    inline def setAliasTarget(value: AliasTarget): Self = StObject.set(x, "AliasTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasTargetUndefined: Self = StObject.set(x, "AliasTarget", js.undefined)
+    inline def setAliasTargetUndefined: Self = StObject.set(x, "AliasTarget", js.undefined)
     
-    @scala.inline
-    def setFailover(value: ResourceRecordSetFailover): Self = StObject.set(x, "Failover", value.asInstanceOf[js.Any])
+    inline def setFailover(value: ResourceRecordSetFailover): Self = StObject.set(x, "Failover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailoverUndefined: Self = StObject.set(x, "Failover", js.undefined)
+    inline def setFailoverUndefined: Self = StObject.set(x, "Failover", js.undefined)
     
-    @scala.inline
-    def setGeoLocation(value: GeoLocation): Self = StObject.set(x, "GeoLocation", value.asInstanceOf[js.Any])
+    inline def setGeoLocation(value: GeoLocation): Self = StObject.set(x, "GeoLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeoLocationUndefined: Self = StObject.set(x, "GeoLocation", js.undefined)
+    inline def setGeoLocationUndefined: Self = StObject.set(x, "GeoLocation", js.undefined)
     
-    @scala.inline
-    def setHealthCheckId(value: HealthCheckId): Self = StObject.set(x, "HealthCheckId", value.asInstanceOf[js.Any])
+    inline def setHealthCheckId(value: HealthCheckId): Self = StObject.set(x, "HealthCheckId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthCheckIdUndefined: Self = StObject.set(x, "HealthCheckId", js.undefined)
+    inline def setHealthCheckIdUndefined: Self = StObject.set(x, "HealthCheckId", js.undefined)
     
-    @scala.inline
-    def setMultiValueAnswer(value: ResourceRecordSetMultiValueAnswer): Self = StObject.set(x, "MultiValueAnswer", value.asInstanceOf[js.Any])
+    inline def setMultiValueAnswer(value: ResourceRecordSetMultiValueAnswer): Self = StObject.set(x, "MultiValueAnswer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiValueAnswerUndefined: Self = StObject.set(x, "MultiValueAnswer", js.undefined)
+    inline def setMultiValueAnswerUndefined: Self = StObject.set(x, "MultiValueAnswer", js.undefined)
     
-    @scala.inline
-    def setName(value: DNSName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: DNSName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegion(value: ResourceRecordSetRegion): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: ResourceRecordSetRegion): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
     
-    @scala.inline
-    def setResourceRecords(value: ResourceRecords): Self = StObject.set(x, "ResourceRecords", value.asInstanceOf[js.Any])
+    inline def setResourceRecords(value: ResourceRecords): Self = StObject.set(x, "ResourceRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceRecordsUndefined: Self = StObject.set(x, "ResourceRecords", js.undefined)
+    inline def setResourceRecordsUndefined: Self = StObject.set(x, "ResourceRecords", js.undefined)
     
-    @scala.inline
-    def setResourceRecordsVarargs(value: ResourceRecord*): Self = StObject.set(x, "ResourceRecords", js.Array(value :_*))
+    inline def setResourceRecordsVarargs(value: ResourceRecord*): Self = StObject.set(x, "ResourceRecords", js.Array(value :_*))
     
-    @scala.inline
-    def setSetIdentifier(value: ResourceRecordSetIdentifier): Self = StObject.set(x, "SetIdentifier", value.asInstanceOf[js.Any])
+    inline def setSetIdentifier(value: ResourceRecordSetIdentifier): Self = StObject.set(x, "SetIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetIdentifierUndefined: Self = StObject.set(x, "SetIdentifier", js.undefined)
+    inline def setSetIdentifierUndefined: Self = StObject.set(x, "SetIdentifier", js.undefined)
     
-    @scala.inline
-    def setTTL(value: TTL): Self = StObject.set(x, "TTL", value.asInstanceOf[js.Any])
+    inline def setTTL(value: TTL): Self = StObject.set(x, "TTL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTTLUndefined: Self = StObject.set(x, "TTL", js.undefined)
+    inline def setTTLUndefined: Self = StObject.set(x, "TTL", js.undefined)
     
-    @scala.inline
-    def setTrafficPolicyInstanceId(value: TrafficPolicyInstanceId): Self = StObject.set(x, "TrafficPolicyInstanceId", value.asInstanceOf[js.Any])
+    inline def setTrafficPolicyInstanceId(value: TrafficPolicyInstanceId): Self = StObject.set(x, "TrafficPolicyInstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrafficPolicyInstanceIdUndefined: Self = StObject.set(x, "TrafficPolicyInstanceId", js.undefined)
+    inline def setTrafficPolicyInstanceIdUndefined: Self = StObject.set(x, "TrafficPolicyInstanceId", js.undefined)
     
-    @scala.inline
-    def setType(value: RRType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: RRType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeight(value: ResourceRecordSetWeight): Self = StObject.set(x, "Weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: ResourceRecordSetWeight): Self = StObject.set(x, "Weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightUndefined: Self = StObject.set(x, "Weight", js.undefined)
+    inline def setWeightUndefined: Self = StObject.set(x, "Weight", js.undefined)
   }
 }

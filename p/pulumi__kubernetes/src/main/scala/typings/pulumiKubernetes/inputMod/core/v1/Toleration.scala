@@ -37,43 +37,31 @@ trait Toleration extends StObject {
 }
 object Toleration {
   
-  @scala.inline
-  def apply(): Toleration = {
+  inline def apply(): Toleration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Toleration]
   }
   
-  @scala.inline
-  implicit class TolerationMutableBuilder[Self <: Toleration] (val x: Self) extends AnyVal {
+  extension [Self <: Toleration](x: Self) {
     
-    @scala.inline
-    def setEffect(value: Input[String]): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
+    inline def setEffect(value: Input[String]): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
+    inline def setEffectUndefined: Self = StObject.set(x, "effect", js.undefined)
     
-    @scala.inline
-    def setKey(value: Input[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Input[String]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setOperator(value: Input[String]): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: Input[String]): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+    inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
     
-    @scala.inline
-    def setTolerationSeconds(value: Input[Double]): Self = StObject.set(x, "tolerationSeconds", value.asInstanceOf[js.Any])
+    inline def setTolerationSeconds(value: Input[Double]): Self = StObject.set(x, "tolerationSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTolerationSecondsUndefined: Self = StObject.set(x, "tolerationSeconds", js.undefined)
+    inline def setTolerationSecondsUndefined: Self = StObject.set(x, "tolerationSeconds", js.undefined)
     
-    @scala.inline
-    def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Input[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

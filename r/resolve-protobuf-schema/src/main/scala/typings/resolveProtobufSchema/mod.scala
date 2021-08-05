@@ -8,8 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     file: String,
     callback: js.Function2[/* error */ Error | Null, /* schema */ js.UndefOr[Schema], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
@@ -18,6 +17,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def sync(file: String): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(file.asInstanceOf[js.Any]).asInstanceOf[Schema]
+  inline def sync(file: String): Schema = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(file.asInstanceOf[js.Any]).asInstanceOf[Schema]
 }

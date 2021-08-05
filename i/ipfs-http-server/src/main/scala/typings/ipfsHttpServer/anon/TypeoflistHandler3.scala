@@ -12,19 +12,15 @@ trait TypeoflistHandler3 extends StObject {
 }
 object TypeoflistHandler3 {
   
-  @scala.inline
-  def apply(handler_3: (js.Any, js.Any) => js.Promise[js.Any], options_10: Typeofoptions10): TypeoflistHandler3 = {
+  inline def apply(handler_3: (js.Any, js.Any) => js.Promise[js.Any], options_10: Typeofoptions10): TypeoflistHandler3 = {
     val __obj = js.Dynamic.literal(handler_3 = js.Any.fromFunction2(handler_3), options_10 = options_10.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeoflistHandler3]
   }
   
-  @scala.inline
-  implicit class TypeoflistHandler3MutableBuilder[Self <: TypeoflistHandler3] (val x: Self) extends AnyVal {
+  extension [Self <: TypeoflistHandler3](x: Self) {
     
-    @scala.inline
-    def setHandler_3(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "handler_3", js.Any.fromFunction2(value))
+    inline def setHandler_3(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "handler_3", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOptions_10(value: Typeofoptions10): Self = StObject.set(x, "options_10", value.asInstanceOf[js.Any])
+    inline def setOptions_10(value: Typeofoptions10): Self = StObject.set(x, "options_10", value.asInstanceOf[js.Any])
   }
 }

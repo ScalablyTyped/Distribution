@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EventType extends StObject
 object EventType {
   
-  @scala.inline
-  def action: typings.reactNavigation.reactNavigationStrings.action = "action".asInstanceOf[typings.reactNavigation.reactNavigationStrings.action]
+  inline def action: typings.reactNavigation.reactNavigationStrings.action = "action".asInstanceOf[typings.reactNavigation.reactNavigationStrings.action]
   
-  @scala.inline
-  def didBlur: typings.reactNavigation.reactNavigationStrings.didBlur = "didBlur".asInstanceOf[typings.reactNavigation.reactNavigationStrings.didBlur]
+  inline def didBlur: typings.reactNavigation.reactNavigationStrings.didBlur = "didBlur".asInstanceOf[typings.reactNavigation.reactNavigationStrings.didBlur]
   
-  @scala.inline
-  def didFocus: typings.reactNavigation.reactNavigationStrings.didFocus = "didFocus".asInstanceOf[typings.reactNavigation.reactNavigationStrings.didFocus]
+  inline def didFocus: typings.reactNavigation.reactNavigationStrings.didFocus = "didFocus".asInstanceOf[typings.reactNavigation.reactNavigationStrings.didFocus]
   
-  @scala.inline
-  def willBlur: typings.reactNavigation.reactNavigationStrings.willBlur = "willBlur".asInstanceOf[typings.reactNavigation.reactNavigationStrings.willBlur]
+  inline def willBlur: typings.reactNavigation.reactNavigationStrings.willBlur = "willBlur".asInstanceOf[typings.reactNavigation.reactNavigationStrings.willBlur]
   
-  @scala.inline
-  def willFocus: typings.reactNavigation.reactNavigationStrings.willFocus = "willFocus".asInstanceOf[typings.reactNavigation.reactNavigationStrings.willFocus]
+  inline def willFocus: typings.reactNavigation.reactNavigationStrings.willFocus = "willFocus".asInstanceOf[typings.reactNavigation.reactNavigationStrings.willFocus]
 }

@@ -95,8 +95,7 @@ object mod {
     def toDate(): js.Tuple2[Date, Date] = js.native
   }
   
-  @scala.inline
-  def extendMoment(momentClass: FnCall): MomentRangeNoneinpundefin = ^.asInstanceOf[js.Dynamic].applyDynamic("extendMoment")(momentClass.asInstanceOf[js.Any]).asInstanceOf[MomentRangeNoneinpundefin]
+  inline def extendMoment(momentClass: FnCall): MomentRangeNoneinpundefin = ^.asInstanceOf[js.Dynamic].applyDynamic("extendMoment")(momentClass.asInstanceOf[js.Any]).asInstanceOf[MomentRangeNoneinpundefin]
   
   @js.native
   trait MomentRange
@@ -141,20 +140,16 @@ object mod {
     }
     object Moment {
       
-      @scala.inline
-      def apply(isRange: js.Any => Boolean, within: DateRange => Boolean): typings.momentRange.mod.momentAugmentingMod.Moment = {
+      inline def apply(isRange: js.Any => Boolean, within: DateRange => Boolean): typings.momentRange.mod.momentAugmentingMod.Moment = {
         val __obj = js.Dynamic.literal(isRange = js.Any.fromFunction1(isRange), within = js.Any.fromFunction1(within))
         __obj.asInstanceOf[typings.momentRange.mod.momentAugmentingMod.Moment]
       }
       
-      @scala.inline
-      implicit class MomentMutableBuilder[Self <: typings.momentRange.mod.momentAugmentingMod.Moment] (val x: Self) extends AnyVal {
+      extension [Self <: typings.momentRange.mod.momentAugmentingMod.Moment](x: Self) {
         
-        @scala.inline
-        def setIsRange(value: js.Any => Boolean): Self = StObject.set(x, "isRange", js.Any.fromFunction1(value))
+        inline def setIsRange(value: js.Any => Boolean): Self = StObject.set(x, "isRange", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setWithin(value: DateRange => Boolean): Self = StObject.set(x, "within", js.Any.fromFunction1(value))
+        inline def setWithin(value: DateRange => Boolean): Self = StObject.set(x, "within", js.Any.fromFunction1(value))
       }
     }
   }

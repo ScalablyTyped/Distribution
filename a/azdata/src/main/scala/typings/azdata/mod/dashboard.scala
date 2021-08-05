@@ -10,6 +10,5 @@ object dashboard {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def registerWebviewProvider(widgetId: String, handler: js.Function1[/* webview */ DashboardWebview, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerWebviewProvider")(widgetId.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerWebviewProvider(widgetId: String, handler: js.Function1[/* webview */ DashboardWebview, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerWebviewProvider")(widgetId.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

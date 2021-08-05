@@ -31,25 +31,19 @@ trait DirectionsWaypoint extends StObject {
 }
 object DirectionsWaypoint {
   
-  @scala.inline
-  def apply(): DirectionsWaypoint = {
+  inline def apply(): DirectionsWaypoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DirectionsWaypoint]
   }
   
-  @scala.inline
-  implicit class DirectionsWaypointMutableBuilder[Self <: DirectionsWaypoint] (val x: Self) extends AnyVal {
+  extension [Self <: DirectionsWaypoint](x: Self) {
     
-    @scala.inline
-    def setLocation(value: String | LatLng | Place): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String | LatLng | Place): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setStopover(value: Boolean): Self = StObject.set(x, "stopover", value.asInstanceOf[js.Any])
+    inline def setStopover(value: Boolean): Self = StObject.set(x, "stopover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopoverUndefined: Self = StObject.set(x, "stopover", js.undefined)
+    inline def setStopoverUndefined: Self = StObject.set(x, "stopover", js.undefined)
   }
 }

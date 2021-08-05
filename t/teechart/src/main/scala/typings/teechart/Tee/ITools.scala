@@ -14,25 +14,19 @@ trait ITools extends StObject {
 }
 object ITools {
   
-  @scala.inline
-  def apply(add: ITool => ITool, chart: IChart, items: js.Array[ITool]): ITools = {
+  inline def apply(add: ITool => ITool, chart: IChart, items: js.Array[ITool]): ITools = {
     val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), chart = chart.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
     __obj.asInstanceOf[ITools]
   }
   
-  @scala.inline
-  implicit class IToolsMutableBuilder[Self <: ITools] (val x: Self) extends AnyVal {
+  extension [Self <: ITools](x: Self) {
     
-    @scala.inline
-    def setAdd(value: ITool => ITool): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: ITool => ITool): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChart(value: IChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
+    inline def setChart(value: IChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: js.Array[ITool]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[ITool]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: ITool*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ITool*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

@@ -13,25 +13,19 @@ trait NightwatchTestRunner extends StObject {
 }
 object NightwatchTestRunner {
   
-  @scala.inline
-  def apply(): NightwatchTestRunner = {
+  inline def apply(): NightwatchTestRunner = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NightwatchTestRunner]
   }
   
-  @scala.inline
-  implicit class NightwatchTestRunnerMutableBuilder[Self <: NightwatchTestRunner] (val x: Self) extends AnyVal {
+  extension [Self <: NightwatchTestRunner](x: Self) {
     
-    @scala.inline
-    def setOptions(value: Ui): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: Ui): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

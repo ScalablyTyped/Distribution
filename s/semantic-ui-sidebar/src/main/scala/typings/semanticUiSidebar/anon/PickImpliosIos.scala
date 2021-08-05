@@ -12,16 +12,13 @@ trait PickImpliosIos extends StObject {
 }
 object PickImpliosIos {
   
-  @scala.inline
-  def apply(ios: RegExp): PickImpliosIos = {
+  inline def apply(ios: RegExp): PickImpliosIos = {
     val __obj = js.Dynamic.literal(ios = ios.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpliosIos]
   }
   
-  @scala.inline
-  implicit class PickImpliosIosMutableBuilder[Self <: PickImpliosIos] (val x: Self) extends AnyVal {
+  extension [Self <: PickImpliosIos](x: Self) {
     
-    @scala.inline
-    def setIos(value: RegExp): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
+    inline def setIos(value: RegExp): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
   }
 }

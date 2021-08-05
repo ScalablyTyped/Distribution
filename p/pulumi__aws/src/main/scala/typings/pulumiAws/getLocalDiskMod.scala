@@ -11,10 +11,8 @@ object getLocalDiskMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getLocalDisk(args: GetLocalDiskArgs): js.Promise[GetLocalDiskResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalDisk")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetLocalDiskResult]]
-  @scala.inline
-  def getLocalDisk(args: GetLocalDiskArgs, opts: InvokeOptions): js.Promise[GetLocalDiskResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocalDisk")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLocalDiskResult]]
+  inline def getLocalDisk(args: GetLocalDiskArgs): js.Promise[GetLocalDiskResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalDisk")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetLocalDiskResult]]
+  inline def getLocalDisk(args: GetLocalDiskArgs, opts: InvokeOptions): js.Promise[GetLocalDiskResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocalDisk")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLocalDiskResult]]
   
   trait GetLocalDiskArgs extends StObject {
     
@@ -35,29 +33,22 @@ object getLocalDiskMod {
   }
   object GetLocalDiskArgs {
     
-    @scala.inline
-    def apply(gatewayArn: String): GetLocalDiskArgs = {
+    inline def apply(gatewayArn: String): GetLocalDiskArgs = {
       val __obj = js.Dynamic.literal(gatewayArn = gatewayArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetLocalDiskArgs]
     }
     
-    @scala.inline
-    implicit class GetLocalDiskArgsMutableBuilder[Self <: GetLocalDiskArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetLocalDiskArgs](x: Self) {
       
-      @scala.inline
-      def setDiskNode(value: String): Self = StObject.set(x, "diskNode", value.asInstanceOf[js.Any])
+      inline def setDiskNode(value: String): Self = StObject.set(x, "diskNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiskNodeUndefined: Self = StObject.set(x, "diskNode", js.undefined)
+      inline def setDiskNodeUndefined: Self = StObject.set(x, "diskNode", js.undefined)
       
-      @scala.inline
-      def setDiskPath(value: String): Self = StObject.set(x, "diskPath", value.asInstanceOf[js.Any])
+      inline def setDiskPath(value: String): Self = StObject.set(x, "diskPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiskPathUndefined: Self = StObject.set(x, "diskPath", js.undefined)
+      inline def setDiskPathUndefined: Self = StObject.set(x, "diskPath", js.undefined)
       
-      @scala.inline
-      def setGatewayArn(value: String): Self = StObject.set(x, "gatewayArn", value.asInstanceOf[js.Any])
+      inline def setGatewayArn(value: String): Self = StObject.set(x, "gatewayArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,35 +72,26 @@ object getLocalDiskMod {
   }
   object GetLocalDiskResult {
     
-    @scala.inline
-    def apply(diskId: String, gatewayArn: String, id: String): GetLocalDiskResult = {
+    inline def apply(diskId: String, gatewayArn: String, id: String): GetLocalDiskResult = {
       val __obj = js.Dynamic.literal(diskId = diskId.asInstanceOf[js.Any], gatewayArn = gatewayArn.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetLocalDiskResult]
     }
     
-    @scala.inline
-    implicit class GetLocalDiskResultMutableBuilder[Self <: GetLocalDiskResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetLocalDiskResult](x: Self) {
       
-      @scala.inline
-      def setDiskId(value: String): Self = StObject.set(x, "diskId", value.asInstanceOf[js.Any])
+      inline def setDiskId(value: String): Self = StObject.set(x, "diskId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiskNode(value: String): Self = StObject.set(x, "diskNode", value.asInstanceOf[js.Any])
+      inline def setDiskNode(value: String): Self = StObject.set(x, "diskNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiskNodeUndefined: Self = StObject.set(x, "diskNode", js.undefined)
+      inline def setDiskNodeUndefined: Self = StObject.set(x, "diskNode", js.undefined)
       
-      @scala.inline
-      def setDiskPath(value: String): Self = StObject.set(x, "diskPath", value.asInstanceOf[js.Any])
+      inline def setDiskPath(value: String): Self = StObject.set(x, "diskPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiskPathUndefined: Self = StObject.set(x, "diskPath", js.undefined)
+      inline def setDiskPathUndefined: Self = StObject.set(x, "diskPath", js.undefined)
       
-      @scala.inline
-      def setGatewayArn(value: String): Self = StObject.set(x, "gatewayArn", value.asInstanceOf[js.Any])
+      inline def setGatewayArn(value: String): Self = StObject.set(x, "gatewayArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -31,34 +31,25 @@ trait SchemaRevisionList extends StObject {
 }
 object SchemaRevisionList {
   
-  @scala.inline
-  def apply(): SchemaRevisionList = {
+  inline def apply(): SchemaRevisionList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRevisionList]
   }
   
-  @scala.inline
-  implicit class SchemaRevisionListMutableBuilder[Self <: SchemaRevisionList] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRevisionList](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setRevisions(value: js.Array[SchemaRevision]): Self = StObject.set(x, "revisions", value.asInstanceOf[js.Any])
+    inline def setRevisions(value: js.Array[SchemaRevision]): Self = StObject.set(x, "revisions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionsUndefined: Self = StObject.set(x, "revisions", js.undefined)
+    inline def setRevisionsUndefined: Self = StObject.set(x, "revisions", js.undefined)
     
-    @scala.inline
-    def setRevisionsVarargs(value: SchemaRevision*): Self = StObject.set(x, "revisions", js.Array(value :_*))
+    inline def setRevisionsVarargs(value: SchemaRevision*): Self = StObject.set(x, "revisions", js.Array(value :_*))
   }
 }

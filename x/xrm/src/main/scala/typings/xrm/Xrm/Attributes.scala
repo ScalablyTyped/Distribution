@@ -151,8 +151,7 @@ object Attributes {
   }
   object Attribute {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addOnChange: ContextSensitiveHandler => Unit,
       controls: ItemCollection[Control],
       fireOnChange: () => Unit,
@@ -174,56 +173,39 @@ object Attributes {
       __obj.asInstanceOf[Attribute]
     }
     
-    @scala.inline
-    implicit class AttributeMutableBuilder[Self <: Attribute] (val x: Self) extends AnyVal {
+    extension [Self <: Attribute](x: Self) {
       
-      @scala.inline
-      def setAddOnChange(value: ContextSensitiveHandler => Unit): Self = StObject.set(x, "addOnChange", js.Any.fromFunction1(value))
+      inline def setAddOnChange(value: ContextSensitiveHandler => Unit): Self = StObject.set(x, "addOnChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setControls(value: ItemCollection[Control]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+      inline def setControls(value: ItemCollection[Control]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFireOnChange(value: () => Unit): Self = StObject.set(x, "fireOnChange", js.Any.fromFunction0(value))
+      inline def setFireOnChange(value: () => Unit): Self = StObject.set(x, "fireOnChange", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAttributeType(value: () => AttributeType): Self = StObject.set(x, "getAttributeType", js.Any.fromFunction0(value))
+      inline def setGetAttributeType(value: () => AttributeType): Self = StObject.set(x, "getAttributeType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFormat(value: () => AttributeFormat): Self = StObject.set(x, "getFormat", js.Any.fromFunction0(value))
+      inline def setGetFormat(value: () => AttributeFormat): Self = StObject.set(x, "getFormat", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetIsDirty(value: () => Boolean): Self = StObject.set(x, "getIsDirty", js.Any.fromFunction0(value))
+      inline def setGetIsDirty(value: () => Boolean): Self = StObject.set(x, "getIsDirty", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+      inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetParent(value: () => Entity): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
+      inline def setGetParent(value: () => Entity): Self = StObject.set(x, "getParent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRequiredLevel(value: () => RequirementLevel): Self = StObject.set(x, "getRequiredLevel", js.Any.fromFunction0(value))
+      inline def setGetRequiredLevel(value: () => RequirementLevel): Self = StObject.set(x, "getRequiredLevel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSubmitMode(value: () => SubmitMode): Self = StObject.set(x, "getSubmitMode", js.Any.fromFunction0(value))
+      inline def setGetSubmitMode(value: () => SubmitMode): Self = StObject.set(x, "getSubmitMode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetUserPrivilege(value: () => Privilege): Self = StObject.set(x, "getUserPrivilege", js.Any.fromFunction0(value))
+      inline def setGetUserPrivilege(value: () => Privilege): Self = StObject.set(x, "getUserPrivilege", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+      inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemoveOnChange(value: ContextSensitiveHandler => Unit): Self = StObject.set(x, "removeOnChange", js.Any.fromFunction1(value))
+      inline def setRemoveOnChange(value: ContextSensitiveHandler => Unit): Self = StObject.set(x, "removeOnChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetRequiredLevel(value: RequirementLevel => Unit): Self = StObject.set(x, "setRequiredLevel", js.Any.fromFunction1(value))
+      inline def setSetRequiredLevel(value: RequirementLevel => Unit): Self = StObject.set(x, "setRequiredLevel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetSubmitMode(value: SubmitMode => Unit): Self = StObject.set(x, "setSubmitMode", js.Any.fromFunction1(value))
+      inline def setSetSubmitMode(value: SubmitMode => Unit): Self = StObject.set(x, "setSubmitMode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetValue(value: js.Any => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+      inline def setSetValue(value: js.Any => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     }
   }
   
@@ -251,41 +233,29 @@ object Attributes {
   trait AttributeFormat extends StObject
   object AttributeFormat {
     
-    @scala.inline
-    def date: typings.xrm.xrmStrings.date = "date".asInstanceOf[typings.xrm.xrmStrings.date]
+    inline def date: typings.xrm.xrmStrings.date = "date".asInstanceOf[typings.xrm.xrmStrings.date]
     
-    @scala.inline
-    def datetime: typings.xrm.xrmStrings.datetime = "datetime".asInstanceOf[typings.xrm.xrmStrings.datetime]
+    inline def datetime: typings.xrm.xrmStrings.datetime = "datetime".asInstanceOf[typings.xrm.xrmStrings.datetime]
     
-    @scala.inline
-    def duration: typings.xrm.xrmStrings.duration = "duration".asInstanceOf[typings.xrm.xrmStrings.duration]
+    inline def duration: typings.xrm.xrmStrings.duration = "duration".asInstanceOf[typings.xrm.xrmStrings.duration]
     
-    @scala.inline
-    def email: typings.xrm.xrmStrings.email = "email".asInstanceOf[typings.xrm.xrmStrings.email]
+    inline def email: typings.xrm.xrmStrings.email = "email".asInstanceOf[typings.xrm.xrmStrings.email]
     
-    @scala.inline
-    def language: typings.xrm.xrmStrings.language = "language".asInstanceOf[typings.xrm.xrmStrings.language]
+    inline def language: typings.xrm.xrmStrings.language = "language".asInstanceOf[typings.xrm.xrmStrings.language]
     
-    @scala.inline
-    def none: typings.xrm.xrmStrings.none = "none".asInstanceOf[typings.xrm.xrmStrings.none]
+    inline def none: typings.xrm.xrmStrings.none = "none".asInstanceOf[typings.xrm.xrmStrings.none]
     
-    @scala.inline
-    def phone: typings.xrm.xrmStrings.phone = "phone".asInstanceOf[typings.xrm.xrmStrings.phone]
+    inline def phone: typings.xrm.xrmStrings.phone = "phone".asInstanceOf[typings.xrm.xrmStrings.phone]
     
-    @scala.inline
-    def text: typings.xrm.xrmStrings.text = "text".asInstanceOf[typings.xrm.xrmStrings.text]
+    inline def text: typings.xrm.xrmStrings.text = "text".asInstanceOf[typings.xrm.xrmStrings.text]
     
-    @scala.inline
-    def textarea: typings.xrm.xrmStrings.textarea = "textarea".asInstanceOf[typings.xrm.xrmStrings.textarea]
+    inline def textarea: typings.xrm.xrmStrings.textarea = "textarea".asInstanceOf[typings.xrm.xrmStrings.textarea]
     
-    @scala.inline
-    def tickersymbol: typings.xrm.xrmStrings.tickersymbol = "tickersymbol".asInstanceOf[typings.xrm.xrmStrings.tickersymbol]
+    inline def tickersymbol: typings.xrm.xrmStrings.tickersymbol = "tickersymbol".asInstanceOf[typings.xrm.xrmStrings.tickersymbol]
     
-    @scala.inline
-    def timezone: typings.xrm.xrmStrings.timezone = "timezone".asInstanceOf[typings.xrm.xrmStrings.timezone]
+    inline def timezone: typings.xrm.xrmStrings.timezone = "timezone".asInstanceOf[typings.xrm.xrmStrings.timezone]
     
-    @scala.inline
-    def url: typings.xrm.xrmStrings.url = "url".asInstanceOf[typings.xrm.xrmStrings.url]
+    inline def url: typings.xrm.xrmStrings.url = "url".asInstanceOf[typings.xrm.xrmStrings.url]
   }
   
   /**
@@ -308,38 +278,27 @@ object Attributes {
   trait AttributeType extends StObject
   object AttributeType {
     
-    @scala.inline
-    def boolean: typings.xrm.xrmStrings.boolean = "boolean".asInstanceOf[typings.xrm.xrmStrings.boolean]
+    inline def boolean: typings.xrm.xrmStrings.boolean = "boolean".asInstanceOf[typings.xrm.xrmStrings.boolean]
     
-    @scala.inline
-    def datetime: typings.xrm.xrmStrings.datetime = "datetime".asInstanceOf[typings.xrm.xrmStrings.datetime]
+    inline def datetime: typings.xrm.xrmStrings.datetime = "datetime".asInstanceOf[typings.xrm.xrmStrings.datetime]
     
-    @scala.inline
-    def decimal: typings.xrm.xrmStrings.decimal = "decimal".asInstanceOf[typings.xrm.xrmStrings.decimal]
+    inline def decimal: typings.xrm.xrmStrings.decimal = "decimal".asInstanceOf[typings.xrm.xrmStrings.decimal]
     
-    @scala.inline
-    def double: typings.xrm.xrmStrings.double = "double".asInstanceOf[typings.xrm.xrmStrings.double]
+    inline def double: typings.xrm.xrmStrings.double = "double".asInstanceOf[typings.xrm.xrmStrings.double]
     
-    @scala.inline
-    def integer: typings.xrm.xrmStrings.integer = "integer".asInstanceOf[typings.xrm.xrmStrings.integer]
+    inline def integer: typings.xrm.xrmStrings.integer = "integer".asInstanceOf[typings.xrm.xrmStrings.integer]
     
-    @scala.inline
-    def lookup: typings.xrm.xrmStrings.lookup = "lookup".asInstanceOf[typings.xrm.xrmStrings.lookup]
+    inline def lookup: typings.xrm.xrmStrings.lookup = "lookup".asInstanceOf[typings.xrm.xrmStrings.lookup]
     
-    @scala.inline
-    def memo: typings.xrm.xrmStrings.memo = "memo".asInstanceOf[typings.xrm.xrmStrings.memo]
+    inline def memo: typings.xrm.xrmStrings.memo = "memo".asInstanceOf[typings.xrm.xrmStrings.memo]
     
-    @scala.inline
-    def money: typings.xrm.xrmStrings.money = "money".asInstanceOf[typings.xrm.xrmStrings.money]
+    inline def money: typings.xrm.xrmStrings.money = "money".asInstanceOf[typings.xrm.xrmStrings.money]
     
-    @scala.inline
-    def multiselectoptionset: typings.xrm.xrmStrings.multiselectoptionset = "multiselectoptionset".asInstanceOf[typings.xrm.xrmStrings.multiselectoptionset]
+    inline def multiselectoptionset: typings.xrm.xrmStrings.multiselectoptionset = "multiselectoptionset".asInstanceOf[typings.xrm.xrmStrings.multiselectoptionset]
     
-    @scala.inline
-    def optionset: typings.xrm.xrmStrings.optionset = "optionset".asInstanceOf[typings.xrm.xrmStrings.optionset]
+    inline def optionset: typings.xrm.xrmStrings.optionset = "optionset".asInstanceOf[typings.xrm.xrmStrings.optionset]
     
-    @scala.inline
-    def string: typings.xrm.xrmStrings.string = "string".asInstanceOf[typings.xrm.xrmStrings.string]
+    inline def string: typings.xrm.xrmStrings.string = "string".asInstanceOf[typings.xrm.xrmStrings.string]
   }
   
   /**
@@ -359,8 +318,7 @@ object Attributes {
   }
   object BooleanAttribute {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addOnChange: ContextSensitiveHandler => Unit,
       controls: ItemCollection[Control],
       fireOnChange: () => Unit,
@@ -383,11 +341,9 @@ object Attributes {
       __obj.asInstanceOf[BooleanAttribute]
     }
     
-    @scala.inline
-    implicit class BooleanAttributeMutableBuilder[Self <: BooleanAttribute] (val x: Self) extends AnyVal {
+    extension [Self <: BooleanAttribute](x: Self) {
       
-      @scala.inline
-      def setSetValue(value: Boolean => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+      inline def setSetValue(value: Boolean => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     }
   }
   
@@ -416,8 +372,7 @@ object Attributes {
   }
   object DateAttribute {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addOnChange: ContextSensitiveHandler => Unit,
       controls: ItemCollection[DateControl],
       fireOnChange: () => Unit,
@@ -439,14 +394,11 @@ object Attributes {
       __obj.asInstanceOf[DateAttribute]
     }
     
-    @scala.inline
-    implicit class DateAttributeMutableBuilder[Self <: DateAttribute] (val x: Self) extends AnyVal {
+    extension [Self <: DateAttribute](x: Self) {
       
-      @scala.inline
-      def setControls(value: ItemCollection[DateControl]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+      inline def setControls(value: ItemCollection[DateControl]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetValue(value: Date => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+      inline def setSetValue(value: Date => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     }
   }
   
@@ -461,11 +413,9 @@ object Attributes {
   trait DateAttributeFormat extends StObject
   object DateAttributeFormat {
     
-    @scala.inline
-    def date: typings.xrm.xrmStrings.date = "date".asInstanceOf[typings.xrm.xrmStrings.date]
+    inline def date: typings.xrm.xrmStrings.date = "date".asInstanceOf[typings.xrm.xrmStrings.date]
     
-    @scala.inline
-    def datetime: typings.xrm.xrmStrings.datetime = "datetime".asInstanceOf[typings.xrm.xrmStrings.datetime]
+    inline def datetime: typings.xrm.xrmStrings.datetime = "datetime".asInstanceOf[typings.xrm.xrmStrings.datetime]
   }
   
   /**
@@ -485,8 +435,7 @@ object Attributes {
   }
   object EnumAttribute {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addOnChange: ContextSensitiveHandler => Unit,
       controls: ItemCollection[Control],
       fireOnChange: () => Unit,
@@ -509,11 +458,9 @@ object Attributes {
       __obj.asInstanceOf[EnumAttribute]
     }
     
-    @scala.inline
-    implicit class EnumAttributeMutableBuilder[Self <: EnumAttribute] (val x: Self) extends AnyVal {
+    extension [Self <: EnumAttribute](x: Self) {
       
-      @scala.inline
-      def setGetInitialValue(value: () => Double | Boolean): Self = StObject.set(x, "getInitialValue", js.Any.fromFunction0(value))
+      inline def setGetInitialValue(value: () => Double | Boolean): Self = StObject.set(x, "getInitialValue", js.Any.fromFunction0(value))
     }
   }
   
@@ -528,11 +475,9 @@ object Attributes {
   trait IntegerAttributeFormat extends StObject
   object IntegerAttributeFormat {
     
-    @scala.inline
-    def duration: typings.xrm.xrmStrings.duration = "duration".asInstanceOf[typings.xrm.xrmStrings.duration]
+    inline def duration: typings.xrm.xrmStrings.duration = "duration".asInstanceOf[typings.xrm.xrmStrings.duration]
     
-    @scala.inline
-    def none: typings.xrm.xrmStrings.none = "none".asInstanceOf[typings.xrm.xrmStrings.none]
+    inline def none: typings.xrm.xrmStrings.none = "none".asInstanceOf[typings.xrm.xrmStrings.none]
   }
   
   /**
@@ -566,8 +511,7 @@ object Attributes {
   }
   object LookupAttribute {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addOnChange: ContextSensitiveHandler => Unit,
       controls: ItemCollection[LookupControl],
       fireOnChange: () => Unit,
@@ -590,17 +534,13 @@ object Attributes {
       __obj.asInstanceOf[LookupAttribute]
     }
     
-    @scala.inline
-    implicit class LookupAttributeMutableBuilder[Self <: LookupAttribute] (val x: Self) extends AnyVal {
+    extension [Self <: LookupAttribute](x: Self) {
       
-      @scala.inline
-      def setControls(value: ItemCollection[LookupControl]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+      inline def setControls(value: ItemCollection[LookupControl]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetIsPartyList(value: () => Boolean): Self = StObject.set(x, "getIsPartyList", js.Any.fromFunction0(value))
+      inline def setGetIsPartyList(value: () => Boolean): Self = StObject.set(x, "getIsPartyList", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetValue(value: js.Array[LookupValue] => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+      inline def setSetValue(value: js.Array[LookupValue] => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     }
   }
   
@@ -646,8 +586,7 @@ object Attributes {
   }
   object NumberAttribute {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addOnChange: ContextSensitiveHandler => Unit,
       controls: ItemCollection[NumberControl],
       fireOnChange: () => Unit,
@@ -672,23 +611,17 @@ object Attributes {
       __obj.asInstanceOf[NumberAttribute]
     }
     
-    @scala.inline
-    implicit class NumberAttributeMutableBuilder[Self <: NumberAttribute] (val x: Self) extends AnyVal {
+    extension [Self <: NumberAttribute](x: Self) {
       
-      @scala.inline
-      def setControls(value: ItemCollection[NumberControl]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+      inline def setControls(value: ItemCollection[NumberControl]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetMax(value: () => Double): Self = StObject.set(x, "getMax", js.Any.fromFunction0(value))
+      inline def setGetMax(value: () => Double): Self = StObject.set(x, "getMax", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMin(value: () => Double): Self = StObject.set(x, "getMin", js.Any.fromFunction0(value))
+      inline def setGetMin(value: () => Double): Self = StObject.set(x, "getMin", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPrecision(value: () => Double): Self = StObject.set(x, "getPrecision", js.Any.fromFunction0(value))
+      inline def setGetPrecision(value: () => Double): Self = StObject.set(x, "getPrecision", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetValue(value: Double => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+      inline def setSetValue(value: Double => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     }
   }
   
@@ -761,11 +694,9 @@ object Attributes {
   trait OptionSetAttributeFormat extends StObject
   object OptionSetAttributeFormat {
     
-    @scala.inline
-    def language: typings.xrm.xrmStrings.language = "language".asInstanceOf[typings.xrm.xrmStrings.language]
+    inline def language: typings.xrm.xrmStrings.language = "language".asInstanceOf[typings.xrm.xrmStrings.language]
     
-    @scala.inline
-    def timezone: typings.xrm.xrmStrings.timezone = "timezone".asInstanceOf[typings.xrm.xrmStrings.timezone]
+    inline def timezone: typings.xrm.xrmStrings.timezone = "timezone".asInstanceOf[typings.xrm.xrmStrings.timezone]
   }
   
   /**
@@ -781,14 +712,11 @@ object Attributes {
   trait RequirementLevel extends StObject
   object RequirementLevel {
     
-    @scala.inline
-    def none: typings.xrm.xrmStrings.none = "none".asInstanceOf[typings.xrm.xrmStrings.none]
+    inline def none: typings.xrm.xrmStrings.none = "none".asInstanceOf[typings.xrm.xrmStrings.none]
     
-    @scala.inline
-    def recommended: typings.xrm.xrmStrings.recommended = "recommended".asInstanceOf[typings.xrm.xrmStrings.recommended]
+    inline def recommended: typings.xrm.xrmStrings.recommended = "recommended".asInstanceOf[typings.xrm.xrmStrings.recommended]
     
-    @scala.inline
-    def required: typings.xrm.xrmStrings.required = "required".asInstanceOf[typings.xrm.xrmStrings.required]
+    inline def required: typings.xrm.xrmStrings.required = "required".asInstanceOf[typings.xrm.xrmStrings.required]
   }
   
   /**
@@ -824,8 +752,7 @@ object Attributes {
   }
   object StringAttribute {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addOnChange: ContextSensitiveHandler => Unit,
       controls: ItemCollection[StringControl],
       fireOnChange: () => Unit,
@@ -848,17 +775,13 @@ object Attributes {
       __obj.asInstanceOf[StringAttribute]
     }
     
-    @scala.inline
-    implicit class StringAttributeMutableBuilder[Self <: StringAttribute] (val x: Self) extends AnyVal {
+    extension [Self <: StringAttribute](x: Self) {
       
-      @scala.inline
-      def setControls(value: ItemCollection[StringControl]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
+      inline def setControls(value: ItemCollection[StringControl]): Self = StObject.set(x, "controls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetMaxLength(value: () => Double): Self = StObject.set(x, "getMaxLength", js.Any.fromFunction0(value))
+      inline def setGetMaxLength(value: () => Double): Self = StObject.set(x, "getMaxLength", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetValue(value: String => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+      inline def setSetValue(value: String => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     }
   }
   
@@ -877,22 +800,16 @@ object Attributes {
   trait StringAttributeFormat extends StObject
   object StringAttributeFormat {
     
-    @scala.inline
-    def email: typings.xrm.xrmStrings.email = "email".asInstanceOf[typings.xrm.xrmStrings.email]
+    inline def email: typings.xrm.xrmStrings.email = "email".asInstanceOf[typings.xrm.xrmStrings.email]
     
-    @scala.inline
-    def phone: typings.xrm.xrmStrings.phone = "phone".asInstanceOf[typings.xrm.xrmStrings.phone]
+    inline def phone: typings.xrm.xrmStrings.phone = "phone".asInstanceOf[typings.xrm.xrmStrings.phone]
     
-    @scala.inline
-    def text: typings.xrm.xrmStrings.text = "text".asInstanceOf[typings.xrm.xrmStrings.text]
+    inline def text: typings.xrm.xrmStrings.text = "text".asInstanceOf[typings.xrm.xrmStrings.text]
     
-    @scala.inline
-    def textarea: typings.xrm.xrmStrings.textarea = "textarea".asInstanceOf[typings.xrm.xrmStrings.textarea]
+    inline def textarea: typings.xrm.xrmStrings.textarea = "textarea".asInstanceOf[typings.xrm.xrmStrings.textarea]
     
-    @scala.inline
-    def tickersymbol: typings.xrm.xrmStrings.tickersymbol = "tickersymbol".asInstanceOf[typings.xrm.xrmStrings.tickersymbol]
+    inline def tickersymbol: typings.xrm.xrmStrings.tickersymbol = "tickersymbol".asInstanceOf[typings.xrm.xrmStrings.tickersymbol]
     
-    @scala.inline
-    def url: typings.xrm.xrmStrings.url = "url".asInstanceOf[typings.xrm.xrmStrings.url]
+    inline def url: typings.xrm.xrmStrings.url = "url".asInstanceOf[typings.xrm.xrmStrings.url]
   }
 }

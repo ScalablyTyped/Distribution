@@ -23,52 +23,37 @@ trait WindowsInformationProtectionApp extends StObject {
 }
 object WindowsInformationProtectionApp {
   
-  @scala.inline
-  def apply(): WindowsInformationProtectionApp = {
+  inline def apply(): WindowsInformationProtectionApp = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WindowsInformationProtectionApp]
   }
   
-  @scala.inline
-  implicit class WindowsInformationProtectionAppMutableBuilder[Self <: WindowsInformationProtectionApp] (val x: Self) extends AnyVal {
+  extension [Self <: WindowsInformationProtectionApp](x: Self) {
     
-    @scala.inline
-    def setDenied(value: Boolean): Self = StObject.set(x, "denied", value.asInstanceOf[js.Any])
+    inline def setDenied(value: Boolean): Self = StObject.set(x, "denied", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeniedUndefined: Self = StObject.set(x, "denied", js.undefined)
+    inline def setDeniedUndefined: Self = StObject.set(x, "denied", js.undefined)
     
-    @scala.inline
-    def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionNull: Self = StObject.set(x, "description", null)
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setProductName(value: NullableOption[String]): Self = StObject.set(x, "productName", value.asInstanceOf[js.Any])
+    inline def setProductName(value: NullableOption[String]): Self = StObject.set(x, "productName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductNameNull: Self = StObject.set(x, "productName", null)
+    inline def setProductNameNull: Self = StObject.set(x, "productName", null)
     
-    @scala.inline
-    def setProductNameUndefined: Self = StObject.set(x, "productName", js.undefined)
+    inline def setProductNameUndefined: Self = StObject.set(x, "productName", js.undefined)
     
-    @scala.inline
-    def setPublisherName(value: NullableOption[String]): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
+    inline def setPublisherName(value: NullableOption[String]): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisherNameNull: Self = StObject.set(x, "publisherName", null)
+    inline def setPublisherNameNull: Self = StObject.set(x, "publisherName", null)
     
-    @scala.inline
-    def setPublisherNameUndefined: Self = StObject.set(x, "publisherName", js.undefined)
+    inline def setPublisherNameUndefined: Self = StObject.set(x, "publisherName", js.undefined)
   }
 }

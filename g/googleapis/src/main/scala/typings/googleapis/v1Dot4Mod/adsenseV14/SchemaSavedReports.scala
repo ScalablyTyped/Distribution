@@ -30,40 +30,29 @@ trait SchemaSavedReports extends StObject {
 }
 object SchemaSavedReports {
   
-  @scala.inline
-  def apply(): SchemaSavedReports = {
+  inline def apply(): SchemaSavedReports = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSavedReports]
   }
   
-  @scala.inline
-  implicit class SchemaSavedReportsMutableBuilder[Self <: SchemaSavedReports] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSavedReports](x: Self) {
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Array[SchemaSavedReport]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[SchemaSavedReport]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: SchemaSavedReport*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: SchemaSavedReport*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

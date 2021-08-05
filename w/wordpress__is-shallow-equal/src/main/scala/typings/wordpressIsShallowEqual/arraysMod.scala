@@ -14,8 +14,7 @@ object arraysMod {
     *
     * @return {boolean} Whether the two arrays are shallow equal.
     */
-  @scala.inline
-  def apply(a: js.Array[js.Any], b: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(a: js.Array[js.Any], b: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("@wordpress/is-shallow-equal/build-types/arrays", JSImport.Namespace)
   @js.native

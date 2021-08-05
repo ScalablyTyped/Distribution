@@ -28,8 +28,7 @@ object loadingOverlayComponentMod {
     @JSImport("ag-grid/dist/lib/rendering/overlays/loadingOverlayComponent", "LoadingOverlayComponent.DEFAULT_LOADING_OVERLAY_TEMPLATE")
     @js.native
     def DEFAULT_LOADING_OVERLAY_TEMPLATE: js.Any = js.native
-    @scala.inline
-    def DEFAULT_LOADING_OVERLAY_TEMPLATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_LOADING_OVERLAY_TEMPLATE")(x.asInstanceOf[js.Any])
+    inline def DEFAULT_LOADING_OVERLAY_TEMPLATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_LOADING_OVERLAY_TEMPLATE")(x.asInstanceOf[js.Any])
   }
   
   type ILoadingOverlayComp = IComponent[ILoadingOverlayParams]

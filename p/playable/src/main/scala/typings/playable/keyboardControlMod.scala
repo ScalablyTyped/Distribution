@@ -16,25 +16,25 @@ object keyboardControlMod {
        with KeyboardControl {
     def this(hasConfigEventEmitterRootContainerEngine: EventEmitter) = this()
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _attachDefaultControls: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _destroyInterceptor: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _engine: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _eventEmitter: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _initInterceptor: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _isEnabled: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _keyboardInterceptor: js.Any = js.native
     
     /* CompleteClass */
@@ -53,14 +53,12 @@ object keyboardControlMod {
     @JSImport("playable/dist/src/modules/keyboard-control/keyboard-control", "default.dependencies")
     @js.native
     def dependencies: js.Array[String] = js.native
-    @scala.inline
-    def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
+    inline def dependencies_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dependencies")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/modules/keyboard-control/keyboard-control", "default.moduleName")
     @js.native
     def moduleName: String = js.native
-    @scala.inline
-    def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
+    inline def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("playable/dist/src/modules/keyboard-control/keyboard-control", "AMOUNT_TO_CHANGE_VOLUME")
@@ -75,24 +73,23 @@ object keyboardControlMod {
     extends StObject
        with IKeyboardControl {
     
-    var _attachDefaultControls: js.Any
+    /* private */ var _attachDefaultControls: js.Any
     
-    var _destroyInterceptor: js.Any
+    /* private */ var _destroyInterceptor: js.Any
     
-    var _engine: js.Any
+    /* private */ var _engine: js.Any
     
-    var _eventEmitter: js.Any
+    /* private */ var _eventEmitter: js.Any
     
-    var _initInterceptor: js.Any
+    /* private */ var _initInterceptor: js.Any
     
-    var _isEnabled: js.Any
+    /* private */ var _isEnabled: js.Any
     
-    var _keyboardInterceptor: js.Any
+    /* private */ var _keyboardInterceptor: js.Any
   }
   object KeyboardControl {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _attachDefaultControls: js.Any,
       _destroyInterceptor: js.Any,
       _engine: js.Any,
@@ -107,29 +104,21 @@ object keyboardControlMod {
       __obj.asInstanceOf[KeyboardControl]
     }
     
-    @scala.inline
-    implicit class KeyboardControlMutableBuilder[Self <: KeyboardControl] (val x: Self) extends AnyVal {
+    extension [Self <: KeyboardControl](x: Self) {
       
-      @scala.inline
-      def set_attachDefaultControls(value: js.Any): Self = StObject.set(x, "_attachDefaultControls", value.asInstanceOf[js.Any])
+      inline def set_attachDefaultControls(value: js.Any): Self = StObject.set(x, "_attachDefaultControls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_destroyInterceptor(value: js.Any): Self = StObject.set(x, "_destroyInterceptor", value.asInstanceOf[js.Any])
+      inline def set_destroyInterceptor(value: js.Any): Self = StObject.set(x, "_destroyInterceptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_engine(value: js.Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
+      inline def set_engine(value: js.Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_eventEmitter(value: js.Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
+      inline def set_eventEmitter(value: js.Any): Self = StObject.set(x, "_eventEmitter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_initInterceptor(value: js.Any): Self = StObject.set(x, "_initInterceptor", value.asInstanceOf[js.Any])
+      inline def set_initInterceptor(value: js.Any): Self = StObject.set(x, "_initInterceptor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_isEnabled(value: js.Any): Self = StObject.set(x, "_isEnabled", value.asInstanceOf[js.Any])
+      inline def set_isEnabled(value: js.Any): Self = StObject.set(x, "_isEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_keyboardInterceptor(value: js.Any): Self = StObject.set(x, "_keyboardInterceptor", value.asInstanceOf[js.Any])
+      inline def set_keyboardInterceptor(value: js.Any): Self = StObject.set(x, "_keyboardInterceptor", value.asInstanceOf[js.Any])
     }
   }
 }

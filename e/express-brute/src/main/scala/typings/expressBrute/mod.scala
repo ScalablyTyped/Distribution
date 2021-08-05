@@ -145,8 +145,7 @@ object mod {
   }
   object ExpressBrute {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getMiddleware: Middleware => RequestHandler[ParamsDictionary, js.Any, js.Any, Query],
       prevent: (Request_[ParamsDictionary, js.Any, js.Any, Query], Response_[js.Any], NextFunction) => RequestHandler[ParamsDictionary, js.Any, js.Any, Query],
       reset: (String, String, NextFunction) => RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
@@ -155,19 +154,15 @@ object mod {
       __obj.asInstanceOf[ExpressBrute]
     }
     
-    @scala.inline
-    implicit class ExpressBruteMutableBuilder[Self <: ExpressBrute] (val x: Self) extends AnyVal {
+    extension [Self <: ExpressBrute](x: Self) {
       
-      @scala.inline
-      def setGetMiddleware(value: Middleware => RequestHandler[ParamsDictionary, js.Any, js.Any, Query]): Self = StObject.set(x, "getMiddleware", js.Any.fromFunction1(value))
+      inline def setGetMiddleware(value: Middleware => RequestHandler[ParamsDictionary, js.Any, js.Any, Query]): Self = StObject.set(x, "getMiddleware", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPrevent(
+      inline def setPrevent(
         value: (Request_[ParamsDictionary, js.Any, js.Any, Query], Response_[js.Any], NextFunction) => RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
       ): Self = StObject.set(x, "prevent", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setReset(value: (String, String, NextFunction) => RequestHandler[ParamsDictionary, js.Any, js.Any, Query]): Self = StObject.set(x, "reset", js.Any.fromFunction3(value))
+      inline def setReset(value: (String, String, NextFunction) => RequestHandler[ParamsDictionary, js.Any, js.Any, Query]): Self = StObject.set(x, "reset", js.Any.fromFunction3(value))
     }
   }
   
@@ -189,17 +184,14 @@ object mod {
   }
   object MemoryStoreOptions {
     
-    @scala.inline
-    def apply(prefix: String): MemoryStoreOptions = {
+    inline def apply(prefix: String): MemoryStoreOptions = {
       val __obj = js.Dynamic.literal(prefix = prefix.asInstanceOf[js.Any])
       __obj.asInstanceOf[MemoryStoreOptions]
     }
     
-    @scala.inline
-    implicit class MemoryStoreOptionsMutableBuilder[Self <: MemoryStoreOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MemoryStoreOptions](x: Self) {
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     }
   }
   
@@ -232,36 +224,28 @@ object mod {
   }
   object Middleware {
     
-    @scala.inline
-    def apply(): Middleware = {
+    inline def apply(): Middleware = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Middleware]
     }
     
-    @scala.inline
-    implicit class MiddlewareMutableBuilder[Self <: Middleware] (val x: Self) extends AnyVal {
+    extension [Self <: Middleware](x: Self) {
       
-      @scala.inline
-      def setFailCallback(
+      inline def setFailCallback(
         value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any], /* next */ NextFunction, /* nextValidRequestDate */ Date) => Unit
       ): Self = StObject.set(x, "failCallback", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setFailCallbackUndefined: Self = StObject.set(x, "failCallback", js.undefined)
+      inline def setFailCallbackUndefined: Self = StObject.set(x, "failCallback", js.undefined)
       
-      @scala.inline
-      def setIgnoreIP(value: Boolean): Self = StObject.set(x, "ignoreIP", value.asInstanceOf[js.Any])
+      inline def setIgnoreIP(value: Boolean): Self = StObject.set(x, "ignoreIP", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreIPUndefined: Self = StObject.set(x, "ignoreIP", js.undefined)
+      inline def setIgnoreIPUndefined: Self = StObject.set(x, "ignoreIP", js.undefined)
       
-      @scala.inline
-      def setKey(
+      inline def setKey(
         value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "key", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     }
   }
   
@@ -309,64 +293,46 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAttachResetToRequest(value: Boolean): Self = StObject.set(x, "attachResetToRequest", value.asInstanceOf[js.Any])
+      inline def setAttachResetToRequest(value: Boolean): Self = StObject.set(x, "attachResetToRequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachResetToRequestUndefined: Self = StObject.set(x, "attachResetToRequest", js.undefined)
+      inline def setAttachResetToRequestUndefined: Self = StObject.set(x, "attachResetToRequest", js.undefined)
       
-      @scala.inline
-      def setFailCallback(
+      inline def setFailCallback(
         value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any], /* next */ NextFunction, /* nextValidRequestDate */ Date) => Unit
       ): Self = StObject.set(x, "failCallback", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setFailCallbackUndefined: Self = StObject.set(x, "failCallback", js.undefined)
+      inline def setFailCallbackUndefined: Self = StObject.set(x, "failCallback", js.undefined)
       
-      @scala.inline
-      def setFreeRetries(value: Double): Self = StObject.set(x, "freeRetries", value.asInstanceOf[js.Any])
+      inline def setFreeRetries(value: Double): Self = StObject.set(x, "freeRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFreeRetriesUndefined: Self = StObject.set(x, "freeRetries", js.undefined)
+      inline def setFreeRetriesUndefined: Self = StObject.set(x, "freeRetries", js.undefined)
       
-      @scala.inline
-      def setHandleStoreError(value: js.Function): Self = StObject.set(x, "handleStoreError", value.asInstanceOf[js.Any])
+      inline def setHandleStoreError(value: js.Function): Self = StObject.set(x, "handleStoreError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandleStoreErrorUndefined: Self = StObject.set(x, "handleStoreError", js.undefined)
+      inline def setHandleStoreErrorUndefined: Self = StObject.set(x, "handleStoreError", js.undefined)
       
-      @scala.inline
-      def setLifetime(value: Double): Self = StObject.set(x, "lifetime", value.asInstanceOf[js.Any])
+      inline def setLifetime(value: Double): Self = StObject.set(x, "lifetime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLifetimeUndefined: Self = StObject.set(x, "lifetime", js.undefined)
+      inline def setLifetimeUndefined: Self = StObject.set(x, "lifetime", js.undefined)
       
-      @scala.inline
-      def setMaxWait(value: Double): Self = StObject.set(x, "maxWait", value.asInstanceOf[js.Any])
+      inline def setMaxWait(value: Double): Self = StObject.set(x, "maxWait", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWaitUndefined: Self = StObject.set(x, "maxWait", js.undefined)
+      inline def setMaxWaitUndefined: Self = StObject.set(x, "maxWait", js.undefined)
       
-      @scala.inline
-      def setMinWait(value: Double): Self = StObject.set(x, "minWait", value.asInstanceOf[js.Any])
+      inline def setMinWait(value: Double): Self = StObject.set(x, "minWait", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinWaitUndefined: Self = StObject.set(x, "minWait", js.undefined)
+      inline def setMinWaitUndefined: Self = StObject.set(x, "minWait", js.undefined)
       
-      @scala.inline
-      def setRefreshTimeoutOnRequest(value: Boolean): Self = StObject.set(x, "refreshTimeoutOnRequest", value.asInstanceOf[js.Any])
+      inline def setRefreshTimeoutOnRequest(value: Boolean): Self = StObject.set(x, "refreshTimeoutOnRequest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefreshTimeoutOnRequestUndefined: Self = StObject.set(x, "refreshTimeoutOnRequest", js.undefined)
+      inline def setRefreshTimeoutOnRequestUndefined: Self = StObject.set(x, "refreshTimeoutOnRequest", js.undefined)
     }
   }
   
@@ -378,20 +344,16 @@ object mod {
     }
     object Request {
       
-      @scala.inline
-      def apply(): Request = {
+      inline def apply(): Request = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Request]
       }
       
-      @scala.inline
-      implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+      extension [Self <: Request](x: Self) {
         
-        @scala.inline
-        def setBrute(value: Reset): Self = StObject.set(x, "brute", value.asInstanceOf[js.Any])
+        inline def setBrute(value: Reset): Self = StObject.set(x, "brute", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBruteUndefined: Self = StObject.set(x, "brute", js.undefined)
+        inline def setBruteUndefined: Self = StObject.set(x, "brute", js.undefined)
       }
     }
   }

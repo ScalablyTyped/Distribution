@@ -23,14 +23,12 @@ object setDataMod {
     @js.native
     def cidBase: Choices = js.native
     
-    @scala.inline
-    def cidBase_=(x: Choices): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cid-base")(x.asInstanceOf[js.Any])
+    inline def cidBase_=(x: Choices): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cid-base")(x.asInstanceOf[js.Any])
     
     @JSImport("ipfs-cli/dist/src/commands/object/patch/set-data", "builder.timeout")
     @js.native
     def timeout: CoerceType = js.native
-    @scala.inline
-    def timeout_=(x: CoerceType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
+    inline def timeout_=(x: CoerceType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("timeout")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ipfs-cli/dist/src/commands/object/patch/set-data", "command")
@@ -41,6 +39,5 @@ object setDataMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasHasIpfsPrintGetStdinRootDataCidBaseTimeout: Data): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintGetStdinRootDataCidBaseTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(hasHasIpfsPrintGetStdinRootDataCidBaseTimeout: Data): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintGetStdinRootDataCidBaseTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

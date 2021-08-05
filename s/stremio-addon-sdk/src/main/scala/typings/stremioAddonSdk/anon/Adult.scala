@@ -22,25 +22,19 @@ trait Adult extends StObject {
 }
 object Adult {
   
-  @scala.inline
-  def apply(): Adult = {
+  inline def apply(): Adult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Adult]
   }
   
-  @scala.inline
-  implicit class AdultMutableBuilder[Self <: Adult] (val x: Self) extends AnyVal {
+  extension [Self <: Adult](x: Self) {
     
-    @scala.inline
-    def setAdult(value: Boolean): Self = StObject.set(x, "adult", value.asInstanceOf[js.Any])
+    inline def setAdult(value: Boolean): Self = StObject.set(x, "adult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdultUndefined: Self = StObject.set(x, "adult", js.undefined)
+    inline def setAdultUndefined: Self = StObject.set(x, "adult", js.undefined)
     
-    @scala.inline
-    def setP2p(value: Boolean): Self = StObject.set(x, "p2p", value.asInstanceOf[js.Any])
+    inline def setP2p(value: Boolean): Self = StObject.set(x, "p2p", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setP2pUndefined: Self = StObject.set(x, "p2p", js.undefined)
+    inline def setP2pUndefined: Self = StObject.set(x, "p2p", js.undefined)
   }
 }

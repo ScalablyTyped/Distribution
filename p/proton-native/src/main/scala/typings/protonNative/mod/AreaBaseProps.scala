@@ -56,67 +56,47 @@ trait AreaBaseProps
 }
 object AreaBaseProps {
   
-  @scala.inline
-  def apply(): AreaBaseProps = {
+  inline def apply(): AreaBaseProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AreaBaseProps]
   }
   
-  @scala.inline
-  implicit class AreaBasePropsMutableBuilder[Self <: AreaBaseProps] (val x: Self) extends AnyVal {
+  extension [Self <: AreaBaseProps](x: Self) {
     
-    @scala.inline
-    def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillOpacity(value: Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
+    inline def setFillOpacity(value: Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
+    inline def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    @scala.inline
-    def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    inline def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeLinecap(value: flat | round | bevel): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
+    inline def setStrokeLinecap(value: flat | round | bevel): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeLinecapUndefined: Self = StObject.set(x, "strokeLinecap", js.undefined)
+    inline def setStrokeLinecapUndefined: Self = StObject.set(x, "strokeLinecap", js.undefined)
     
-    @scala.inline
-    def setStrokeLinejoin(value: miter | round | bevel): Self = StObject.set(x, "strokeLinejoin", value.asInstanceOf[js.Any])
+    inline def setStrokeLinejoin(value: miter | round | bevel): Self = StObject.set(x, "strokeLinejoin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeLinejoinUndefined: Self = StObject.set(x, "strokeLinejoin", js.undefined)
+    inline def setStrokeLinejoinUndefined: Self = StObject.set(x, "strokeLinejoin", js.undefined)
     
-    @scala.inline
-    def setStrokeMiterlimit(value: Double): Self = StObject.set(x, "strokeMiterlimit", value.asInstanceOf[js.Any])
+    inline def setStrokeMiterlimit(value: Double): Self = StObject.set(x, "strokeMiterlimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeMiterlimitUndefined: Self = StObject.set(x, "strokeMiterlimit", js.undefined)
+    inline def setStrokeMiterlimitUndefined: Self = StObject.set(x, "strokeMiterlimit", js.undefined)
     
-    @scala.inline
-    def setStrokeOpacity(value: Double): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
+    inline def setStrokeOpacity(value: Double): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
+    inline def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
     
-    @scala.inline
-    def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
     
-    @scala.inline
-    def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+    inline def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+    inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
     
-    @scala.inline
-    def setTransform(value: String): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    inline def setTransform(value: String): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+    inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
   }
 }

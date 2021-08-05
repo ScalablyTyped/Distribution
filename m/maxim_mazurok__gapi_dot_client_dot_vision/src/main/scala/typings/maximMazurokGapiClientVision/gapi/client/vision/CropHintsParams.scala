@@ -15,22 +15,17 @@ trait CropHintsParams extends StObject {
 }
 object CropHintsParams {
   
-  @scala.inline
-  def apply(): CropHintsParams = {
+  inline def apply(): CropHintsParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CropHintsParams]
   }
   
-  @scala.inline
-  implicit class CropHintsParamsMutableBuilder[Self <: CropHintsParams] (val x: Self) extends AnyVal {
+  extension [Self <: CropHintsParams](x: Self) {
     
-    @scala.inline
-    def setAspectRatios(value: js.Array[Double]): Self = StObject.set(x, "aspectRatios", value.asInstanceOf[js.Any])
+    inline def setAspectRatios(value: js.Array[Double]): Self = StObject.set(x, "aspectRatios", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAspectRatiosUndefined: Self = StObject.set(x, "aspectRatios", js.undefined)
+    inline def setAspectRatiosUndefined: Self = StObject.set(x, "aspectRatios", js.undefined)
     
-    @scala.inline
-    def setAspectRatiosVarargs(value: Double*): Self = StObject.set(x, "aspectRatios", js.Array(value :_*))
+    inline def setAspectRatiosVarargs(value: Double*): Self = StObject.set(x, "aspectRatios", js.Array(value :_*))
   }
 }

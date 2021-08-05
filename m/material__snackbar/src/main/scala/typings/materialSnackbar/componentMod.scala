@@ -50,7 +50,6 @@ object componentMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def attachTo(root: Element): MDCSnackbar = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCSnackbar]
+    inline def attachTo(root: Element): MDCSnackbar = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCSnackbar]
   }
 }

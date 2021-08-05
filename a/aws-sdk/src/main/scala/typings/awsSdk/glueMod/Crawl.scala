@@ -38,49 +38,35 @@ trait Crawl extends StObject {
 }
 object Crawl {
   
-  @scala.inline
-  def apply(): Crawl = {
+  inline def apply(): Crawl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Crawl]
   }
   
-  @scala.inline
-  implicit class CrawlMutableBuilder[Self <: Crawl] (val x: Self) extends AnyVal {
+  extension [Self <: Crawl](x: Self) {
     
-    @scala.inline
-    def setCompletedOn(value: TimestampValue): Self = StObject.set(x, "CompletedOn", value.asInstanceOf[js.Any])
+    inline def setCompletedOn(value: TimestampValue): Self = StObject.set(x, "CompletedOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletedOnUndefined: Self = StObject.set(x, "CompletedOn", js.undefined)
+    inline def setCompletedOnUndefined: Self = StObject.set(x, "CompletedOn", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: DescriptionString): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: DescriptionString): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
-    @scala.inline
-    def setLogGroup(value: LogGroup): Self = StObject.set(x, "LogGroup", value.asInstanceOf[js.Any])
+    inline def setLogGroup(value: LogGroup): Self = StObject.set(x, "LogGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogGroupUndefined: Self = StObject.set(x, "LogGroup", js.undefined)
+    inline def setLogGroupUndefined: Self = StObject.set(x, "LogGroup", js.undefined)
     
-    @scala.inline
-    def setLogStream(value: LogStream): Self = StObject.set(x, "LogStream", value.asInstanceOf[js.Any])
+    inline def setLogStream(value: LogStream): Self = StObject.set(x, "LogStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogStreamUndefined: Self = StObject.set(x, "LogStream", js.undefined)
+    inline def setLogStreamUndefined: Self = StObject.set(x, "LogStream", js.undefined)
     
-    @scala.inline
-    def setStartedOn(value: TimestampValue): Self = StObject.set(x, "StartedOn", value.asInstanceOf[js.Any])
+    inline def setStartedOn(value: TimestampValue): Self = StObject.set(x, "StartedOn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartedOnUndefined: Self = StObject.set(x, "StartedOn", js.undefined)
+    inline def setStartedOnUndefined: Self = StObject.set(x, "StartedOn", js.undefined)
     
-    @scala.inline
-    def setState(value: CrawlState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: CrawlState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

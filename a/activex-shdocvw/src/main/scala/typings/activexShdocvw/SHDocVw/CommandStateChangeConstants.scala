@@ -17,12 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CommandStateChangeConstants extends StObject
 object CommandStateChangeConstants {
   
-  @scala.inline
-  def CSC_NAVIGATEBACK: `2` = 2.asInstanceOf[`2`]
+  inline def CSC_NAVIGATEBACK: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def CSC_NAVIGATEFORWARD: `1` = 1.asInstanceOf[`1`]
+  inline def CSC_NAVIGATEFORWARD: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def CSC_UPDATECOMMANDS: `-1` = -1.asInstanceOf[`-1`]
+  inline def CSC_UPDATECOMMANDS: `-1` = -1.asInstanceOf[`-1`]
 }

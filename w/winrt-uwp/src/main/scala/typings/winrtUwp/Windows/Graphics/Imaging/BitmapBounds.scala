@@ -21,25 +21,19 @@ trait BitmapBounds extends StObject {
 }
 object BitmapBounds {
   
-  @scala.inline
-  def apply(height: Double, width: Double, x: Double, y: Double): BitmapBounds = {
+  inline def apply(height: Double, width: Double, x: Double, y: Double): BitmapBounds = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[BitmapBounds]
   }
   
-  @scala.inline
-  implicit class BitmapBoundsMutableBuilder[Self <: BitmapBounds] (val x: Self) extends AnyVal {
+  extension [Self <: BitmapBounds](x: Self) {
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

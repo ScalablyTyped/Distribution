@@ -10,8 +10,7 @@ trait PasswordCredential
      with IPasswordCredential
 object PasswordCredential {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     password: String,
     properties: IPropertySet,
     resource: String,

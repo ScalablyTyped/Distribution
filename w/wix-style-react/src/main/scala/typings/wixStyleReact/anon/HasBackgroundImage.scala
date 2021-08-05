@@ -12,19 +12,15 @@ trait HasBackgroundImage extends StObject {
 }
 object HasBackgroundImage {
   
-  @scala.inline
-  def apply(hasBackgroundImage: Boolean, minimized: Boolean): HasBackgroundImage = {
+  inline def apply(hasBackgroundImage: Boolean, minimized: Boolean): HasBackgroundImage = {
     val __obj = js.Dynamic.literal(hasBackgroundImage = hasBackgroundImage.asInstanceOf[js.Any], minimized = minimized.asInstanceOf[js.Any])
     __obj.asInstanceOf[HasBackgroundImage]
   }
   
-  @scala.inline
-  implicit class HasBackgroundImageMutableBuilder[Self <: HasBackgroundImage] (val x: Self) extends AnyVal {
+  extension [Self <: HasBackgroundImage](x: Self) {
     
-    @scala.inline
-    def setHasBackgroundImage(value: Boolean): Self = StObject.set(x, "hasBackgroundImage", value.asInstanceOf[js.Any])
+    inline def setHasBackgroundImage(value: Boolean): Self = StObject.set(x, "hasBackgroundImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimized(value: Boolean): Self = StObject.set(x, "minimized", value.asInstanceOf[js.Any])
+    inline def setMinimized(value: Boolean): Self = StObject.set(x, "minimized", value.asInstanceOf[js.Any])
   }
 }

@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.ConversationHeader")
 @js.native
-class ConversationHeader protected ()
+/* private */ class ConversationHeader ()
   extends StObject
      with typings.activexOutlook.Outlook.ConversationHeader {
   
@@ -29,7 +29,7 @@ class ConversationHeader protected ()
   /* CompleteClass */
   override def GetItems(): typings.activexOutlook.Outlook.SimpleItems = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.ConversationHeader_typekey")
   var OutlookDotConversationHeader_typekey: typings.activexOutlook.Outlook.ConversationHeader = js.native
   

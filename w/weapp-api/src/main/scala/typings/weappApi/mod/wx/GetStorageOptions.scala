@@ -23,31 +23,23 @@ trait GetStorageOptions extends StObject {
 }
 object GetStorageOptions {
   
-  @scala.inline
-  def apply(key: String, success: /* res */ DataResponse => Unit): GetStorageOptions = {
+  inline def apply(key: String, success: /* res */ DataResponse => Unit): GetStorageOptions = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[GetStorageOptions]
   }
   
-  @scala.inline
-  implicit class GetStorageOptionsMutableBuilder[Self <: GetStorageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetStorageOptions](x: Self) {
     
-    @scala.inline
-    def setComplete(value: /* res */ js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+    inline def setComplete(value: /* res */ js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    @scala.inline
-    def setFail(value: /* res */ js.Any => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
+    inline def setFail(value: /* res */ js.Any => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: /* res */ DataResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ DataResponse => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

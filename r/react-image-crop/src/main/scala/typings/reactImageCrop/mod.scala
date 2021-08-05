@@ -25,11 +25,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def containCrop(prevCrop: Crop, crop: Crop, imageWidth: Double, imageHeight: Double): Crop = (^.asInstanceOf[js.Dynamic].applyDynamic("containCrop")(prevCrop.asInstanceOf[js.Any], crop.asInstanceOf[js.Any], imageWidth.asInstanceOf[js.Any], imageHeight.asInstanceOf[js.Any])).asInstanceOf[Crop]
+  inline def containCrop(prevCrop: Crop, crop: Crop, imageWidth: Double, imageHeight: Double): Crop = (^.asInstanceOf[js.Dynamic].applyDynamic("containCrop")(prevCrop.asInstanceOf[js.Any], crop.asInstanceOf[js.Any], imageWidth.asInstanceOf[js.Any], imageHeight.asInstanceOf[js.Any])).asInstanceOf[Crop]
   
-  @scala.inline
-  def makeAspectCrop(crop: Crop, imageWidth: Double, imageHeight: Double): Crop = (^.asInstanceOf[js.Dynamic].applyDynamic("makeAspectCrop")(crop.asInstanceOf[js.Any], imageWidth.asInstanceOf[js.Any], imageHeight.asInstanceOf[js.Any])).asInstanceOf[Crop]
+  inline def makeAspectCrop(crop: Crop, imageWidth: Double, imageHeight: Double): Crop = (^.asInstanceOf[js.Dynamic].applyDynamic("makeAspectCrop")(crop.asInstanceOf[js.Any], imageWidth.asInstanceOf[js.Any], imageHeight.asInstanceOf[js.Any])).asInstanceOf[Crop]
   
   trait Crop extends StObject {
     
@@ -47,50 +45,36 @@ object mod {
   }
   object Crop {
     
-    @scala.inline
-    def apply(): Crop = {
+    inline def apply(): Crop = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Crop]
     }
     
-    @scala.inline
-    implicit class CropMutableBuilder[Self <: Crop] (val x: Self) extends AnyVal {
+    extension [Self <: Crop](x: Self) {
       
-      @scala.inline
-      def setAspect(value: Double): Self = StObject.set(x, "aspect", value.asInstanceOf[js.Any])
+      inline def setAspect(value: Double): Self = StObject.set(x, "aspect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAspectUndefined: Self = StObject.set(x, "aspect", js.undefined)
+      inline def setAspectUndefined: Self = StObject.set(x, "aspect", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setUnit(value: px | Percentsign): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+      inline def setUnit(value: px | Percentsign): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+      inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+      inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+      inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
   
@@ -103,20 +87,16 @@ object mod {
   }
   object PercentCrop {
     
-    @scala.inline
-    def apply(): PercentCrop = {
+    inline def apply(): PercentCrop = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PercentCrop]
     }
     
-    @scala.inline
-    implicit class PercentCropMutableBuilder[Self <: PercentCrop] (val x: Self) extends AnyVal {
+    extension [Self <: PercentCrop](x: Self) {
       
-      @scala.inline
-      def setUnit(value: Percentsign): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+      inline def setUnit(value: Percentsign): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+      inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     }
   }
   
@@ -209,158 +189,108 @@ object mod {
   }
   object ReactCropProps {
     
-    @scala.inline
-    def apply(onChange: (Crop, PercentCrop) => Unit, src: String): ReactCropProps = {
+    inline def apply(onChange: (Crop, PercentCrop) => Unit, src: String): ReactCropProps = {
       val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction2(onChange), src = src.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactCropProps]
     }
     
-    @scala.inline
-    implicit class ReactCropPropsMutableBuilder[Self <: ReactCropProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReactCropProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setCircularCrop(value: Boolean): Self = StObject.set(x, "circularCrop", value.asInstanceOf[js.Any])
+      inline def setCircularCrop(value: Boolean): Self = StObject.set(x, "circularCrop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCircularCropUndefined: Self = StObject.set(x, "circularCrop", js.undefined)
+      inline def setCircularCropUndefined: Self = StObject.set(x, "circularCrop", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCrop(value: Crop): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
+      inline def setCrop(value: Crop): Self = StObject.set(x, "crop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
+      inline def setCropUndefined: Self = StObject.set(x, "crop", js.undefined)
       
-      @scala.inline
-      def setCrossorigin(value: anonymous | `use-credentials`): Self = StObject.set(x, "crossorigin", value.asInstanceOf[js.Any])
+      inline def setCrossorigin(value: anonymous | `use-credentials`): Self = StObject.set(x, "crossorigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrossoriginUndefined: Self = StObject.set(x, "crossorigin", js.undefined)
+      inline def setCrossoriginUndefined: Self = StObject.set(x, "crossorigin", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setImageAlt(value: String): Self = StObject.set(x, "imageAlt", value.asInstanceOf[js.Any])
+      inline def setImageAlt(value: String): Self = StObject.set(x, "imageAlt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageAltUndefined: Self = StObject.set(x, "imageAlt", js.undefined)
+      inline def setImageAltUndefined: Self = StObject.set(x, "imageAlt", js.undefined)
       
-      @scala.inline
-      def setImageStyle(value: CSSProperties): Self = StObject.set(x, "imageStyle", value.asInstanceOf[js.Any])
+      inline def setImageStyle(value: CSSProperties): Self = StObject.set(x, "imageStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageStyleUndefined: Self = StObject.set(x, "imageStyle", js.undefined)
+      inline def setImageStyleUndefined: Self = StObject.set(x, "imageStyle", js.undefined)
       
-      @scala.inline
-      def setKeepSelection(value: Boolean): Self = StObject.set(x, "keepSelection", value.asInstanceOf[js.Any])
+      inline def setKeepSelection(value: Boolean): Self = StObject.set(x, "keepSelection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeepSelectionUndefined: Self = StObject.set(x, "keepSelection", js.undefined)
+      inline def setKeepSelectionUndefined: Self = StObject.set(x, "keepSelection", js.undefined)
       
-      @scala.inline
-      def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
+      inline def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLockedUndefined: Self = StObject.set(x, "locked", js.undefined)
+      inline def setLockedUndefined: Self = StObject.set(x, "locked", js.undefined)
       
-      @scala.inline
-      def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+      inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
       
-      @scala.inline
-      def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+      inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      @scala.inline
-      def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+      inline def setMinHeight(value: Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
+      inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
       
-      @scala.inline
-      def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+      inline def setMinWidth(value: Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+      inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: (Crop, PercentCrop) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (Crop, PercentCrop) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnComplete(value: (/* crop */ Crop, /* percentCrop */ PercentCrop) => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction2(value))
+      inline def setOnComplete(value: (/* crop */ Crop, /* percentCrop */ PercentCrop) => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
+      inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
       
-      @scala.inline
-      def setOnDragEnd(value: () => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction0(value))
+      inline def setOnDragEnd(value: () => Unit): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
+      inline def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
       
-      @scala.inline
-      def setOnDragStart(value: () => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction0(value))
+      inline def setOnDragStart(value: () => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
+      inline def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
       
-      @scala.inline
-      def setOnImageError(value: /* event */ SyntheticEvent[HTMLImageElement, Event] => Unit): Self = StObject.set(x, "onImageError", js.Any.fromFunction1(value))
+      inline def setOnImageError(value: /* event */ SyntheticEvent[HTMLImageElement, Event] => Unit): Self = StObject.set(x, "onImageError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnImageErrorUndefined: Self = StObject.set(x, "onImageError", js.undefined)
+      inline def setOnImageErrorUndefined: Self = StObject.set(x, "onImageError", js.undefined)
       
-      @scala.inline
-      def setOnImageLoaded(value: /* target */ HTMLImageElement => Unit): Self = StObject.set(x, "onImageLoaded", js.Any.fromFunction1(value))
+      inline def setOnImageLoaded(value: /* target */ HTMLImageElement => Unit): Self = StObject.set(x, "onImageLoaded", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnImageLoadedUndefined: Self = StObject.set(x, "onImageLoaded", js.undefined)
+      inline def setOnImageLoadedUndefined: Self = StObject.set(x, "onImageLoaded", js.undefined)
       
-      @scala.inline
-      def setRenderComponent(value: ReactNode): Self = StObject.set(x, "renderComponent", value.asInstanceOf[js.Any])
+      inline def setRenderComponent(value: ReactNode): Self = StObject.set(x, "renderComponent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderComponentUndefined: Self = StObject.set(x, "renderComponent", js.undefined)
+      inline def setRenderComponentUndefined: Self = StObject.set(x, "renderComponent", js.undefined)
       
-      @scala.inline
-      def setRenderSelectionAddon(value: /* state */ js.Any => ReactNode): Self = StObject.set(x, "renderSelectionAddon", js.Any.fromFunction1(value))
+      inline def setRenderSelectionAddon(value: /* state */ js.Any => ReactNode): Self = StObject.set(x, "renderSelectionAddon", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderSelectionAddonUndefined: Self = StObject.set(x, "renderSelectionAddon", js.undefined)
+      inline def setRenderSelectionAddonUndefined: Self = StObject.set(x, "renderSelectionAddon", js.undefined)
       
-      @scala.inline
-      def setRuleOfThirds(value: Boolean): Self = StObject.set(x, "ruleOfThirds", value.asInstanceOf[js.Any])
+      inline def setRuleOfThirds(value: Boolean): Self = StObject.set(x, "ruleOfThirds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuleOfThirdsUndefined: Self = StObject.set(x, "ruleOfThirds", js.undefined)
+      inline def setRuleOfThirdsUndefined: Self = StObject.set(x, "ruleOfThirds", js.undefined)
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

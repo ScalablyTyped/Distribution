@@ -33,8 +33,7 @@ trait VertexAddEventInfoVertices
 }
 object VertexAddEventInfoVertices {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     componentIndex: Double,
     constructor: js.Function,
     coordinates: js.Array[Graphic],
@@ -46,19 +45,14 @@ object VertexAddEventInfoVertices {
     __obj.asInstanceOf[VertexAddEventInfoVertices]
   }
   
-  @scala.inline
-  implicit class VertexAddEventInfoVerticesMutableBuilder[Self <: VertexAddEventInfoVertices] (val x: Self) extends AnyVal {
+  extension [Self <: VertexAddEventInfoVertices](x: Self) {
     
-    @scala.inline
-    def setComponentIndex(value: Double): Self = StObject.set(x, "componentIndex", value.asInstanceOf[js.Any])
+    inline def setComponentIndex(value: Double): Self = StObject.set(x, "componentIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoordinates(value: js.Array[Graphic]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
+    inline def setCoordinates(value: js.Array[Graphic]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoordinatesVarargs(value: Graphic*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
+    inline def setCoordinatesVarargs(value: Graphic*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
     
-    @scala.inline
-    def setVertexIndex(value: Double): Self = StObject.set(x, "vertexIndex", value.asInstanceOf[js.Any])
+    inline def setVertexIndex(value: Double): Self = StObject.set(x, "vertexIndex", value.asInstanceOf[js.Any])
   }
 }

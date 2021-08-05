@@ -13,16 +13,13 @@ trait GetIsolateIdResponse extends StObject {
 }
 object GetIsolateIdResponse {
   
-  @scala.inline
-  def apply(id: String): GetIsolateIdResponse = {
+  inline def apply(id: String): GetIsolateIdResponse = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetIsolateIdResponse]
   }
   
-  @scala.inline
-  implicit class GetIsolateIdResponseMutableBuilder[Self <: GetIsolateIdResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetIsolateIdResponse](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

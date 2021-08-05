@@ -12,16 +12,13 @@ trait PaneItemOpenedEvent
 }
 object PaneItemOpenedEvent {
   
-  @scala.inline
-  def apply(index: Double, item: js.Object, pane: Pane, uri: String): PaneItemOpenedEvent = {
+  inline def apply(index: Double, item: js.Object, pane: Pane, uri: String): PaneItemOpenedEvent = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], pane = pane.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaneItemOpenedEvent]
   }
   
-  @scala.inline
-  implicit class PaneItemOpenedEventMutableBuilder[Self <: PaneItemOpenedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PaneItemOpenedEvent](x: Self) {
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

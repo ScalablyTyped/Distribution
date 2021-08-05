@@ -10,11 +10,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def autop(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("autop")(text.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def autop(text: String, br: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("autop")(text.asInstanceOf[js.Any], br.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def autop(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("autop")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def autop(text: String, br: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("autop")(text.asInstanceOf[js.Any], br.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def removep(html: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removep")(html.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def removep(html: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removep")(html.asInstanceOf[js.Any]).asInstanceOf[String]
 }

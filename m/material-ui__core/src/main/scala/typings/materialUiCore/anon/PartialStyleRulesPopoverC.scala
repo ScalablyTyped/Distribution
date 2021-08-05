@@ -12,19 +12,15 @@ trait PartialStyleRulesPopoverC extends StObject {
 }
 object PartialStyleRulesPopoverC {
   
-  @scala.inline
-  def apply(): PartialStyleRulesPopoverC = {
+  inline def apply(): PartialStyleRulesPopoverC = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesPopoverC]
   }
   
-  @scala.inline
-  implicit class PartialStyleRulesPopoverCMutableBuilder[Self <: PartialStyleRulesPopoverC] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleRulesPopoverC](x: Self) {
     
-    @scala.inline
-    def setPaper(value: CSSProperties): Self = StObject.set(x, "paper", value.asInstanceOf[js.Any])
+    inline def setPaper(value: CSSProperties): Self = StObject.set(x, "paper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaperUndefined: Self = StObject.set(x, "paper", js.undefined)
+    inline def setPaperUndefined: Self = StObject.set(x, "paper", js.undefined)
   }
 }

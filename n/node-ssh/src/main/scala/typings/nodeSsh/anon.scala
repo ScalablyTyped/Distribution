@@ -28,47 +28,34 @@ object anon {
   }
   object ExecOptionsstreamboth {
     
-    @scala.inline
-    def apply(): ExecOptionsstreamboth = {
+    inline def apply(): ExecOptionsstreamboth = {
       val __obj = js.Dynamic.literal(stream = "both")
       __obj.asInstanceOf[ExecOptionsstreamboth]
     }
     
-    @scala.inline
-    implicit class ExecOptionsstreambothMutableBuilder[Self <: ExecOptionsstreamboth] (val x: Self) extends AnyVal {
+    extension [Self <: ExecOptionsstreamboth](x: Self) {
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setOnStderr(value: /* chunk */ Buffer => Unit): Self = StObject.set(x, "onStderr", js.Any.fromFunction1(value))
+      inline def setOnStderr(value: /* chunk */ Buffer => Unit): Self = StObject.set(x, "onStderr", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnStderrUndefined: Self = StObject.set(x, "onStderr", js.undefined)
+      inline def setOnStderrUndefined: Self = StObject.set(x, "onStderr", js.undefined)
       
-      @scala.inline
-      def setOnStdout(value: /* chunk */ Buffer => Unit): Self = StObject.set(x, "onStdout", js.Any.fromFunction1(value))
+      inline def setOnStdout(value: /* chunk */ Buffer => Unit): Self = StObject.set(x, "onStdout", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnStdoutUndefined: Self = StObject.set(x, "onStdout", js.undefined)
+      inline def setOnStdoutUndefined: Self = StObject.set(x, "onStdout", js.undefined)
       
-      @scala.inline
-      def setOptions(value: ExecOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: ExecOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setStdin(value: String): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
+      inline def setStdin(value: String): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
+      inline def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
       
-      @scala.inline
-      def setStream(value: both): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: both): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     }
   }
   
@@ -89,50 +76,36 @@ object anon {
   }
   object ExecOptionsstreamstdoutst {
     
-    @scala.inline
-    def apply(): ExecOptionsstreamstdoutst = {
+    inline def apply(): ExecOptionsstreamstdoutst = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExecOptionsstreamstdoutst]
     }
     
-    @scala.inline
-    implicit class ExecOptionsstreamstdoutstMutableBuilder[Self <: ExecOptionsstreamstdoutst] (val x: Self) extends AnyVal {
+    extension [Self <: ExecOptionsstreamstdoutst](x: Self) {
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setOnStderr(value: /* chunk */ Buffer => Unit): Self = StObject.set(x, "onStderr", js.Any.fromFunction1(value))
+      inline def setOnStderr(value: /* chunk */ Buffer => Unit): Self = StObject.set(x, "onStderr", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnStderrUndefined: Self = StObject.set(x, "onStderr", js.undefined)
+      inline def setOnStderrUndefined: Self = StObject.set(x, "onStderr", js.undefined)
       
-      @scala.inline
-      def setOnStdout(value: /* chunk */ Buffer => Unit): Self = StObject.set(x, "onStdout", js.Any.fromFunction1(value))
+      inline def setOnStdout(value: /* chunk */ Buffer => Unit): Self = StObject.set(x, "onStdout", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnStdoutUndefined: Self = StObject.set(x, "onStdout", js.undefined)
+      inline def setOnStdoutUndefined: Self = StObject.set(x, "onStdout", js.undefined)
       
-      @scala.inline
-      def setOptions(value: ExecOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: ExecOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setStdin(value: String): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
+      inline def setStdin(value: String): Self = StObject.set(x, "stdin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
+      inline def setStdinUndefined: Self = StObject.set(x, "stdin", js.undefined)
       
-      @scala.inline
-      def setStream(value: stdout | stderr): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: stdout | stderr): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+      inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
     }
   }
   
@@ -144,20 +117,16 @@ object anon {
   }
   object Local {
     
-    @scala.inline
-    def apply(local: String, remote: String): Local = {
+    inline def apply(local: String, remote: String): Local = {
       val __obj = js.Dynamic.literal(local = local.asInstanceOf[js.Any], remote = remote.asInstanceOf[js.Any])
       __obj.asInstanceOf[Local]
     }
     
-    @scala.inline
-    implicit class LocalMutableBuilder[Self <: Local] (val x: Self) extends AnyVal {
+    extension [Self <: Local](x: Self) {
       
-      @scala.inline
-      def setLocal(value: String): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+      inline def setLocal(value: String): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemote(value: String): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
+      inline def setRemote(value: String): Self = StObject.set(x, "remote", value.asInstanceOf[js.Any])
     }
   }
 }

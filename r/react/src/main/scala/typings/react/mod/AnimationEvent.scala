@@ -17,8 +17,7 @@ trait AnimationEvent[T]
 }
 object AnimationEvent {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     animationName: String,
     bubbles: Boolean,
     cancelable: Boolean,
@@ -43,16 +42,12 @@ object AnimationEvent {
     __obj.asInstanceOf[AnimationEvent[T]]
   }
   
-  @scala.inline
-  implicit class AnimationEventMutableBuilder[Self <: AnimationEvent[?], T] (val x: Self & AnimationEvent[T]) extends AnyVal {
+  extension [Self <: AnimationEvent[?], T](x: Self & AnimationEvent[T]) {
     
-    @scala.inline
-    def setAnimationName(value: String): Self = StObject.set(x, "animationName", value.asInstanceOf[js.Any])
+    inline def setAnimationName(value: String): Self = StObject.set(x, "animationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElapsedTime(value: Double): Self = StObject.set(x, "elapsedTime", value.asInstanceOf[js.Any])
+    inline def setElapsedTime(value: Double): Self = StObject.set(x, "elapsedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPseudoElement(value: String): Self = StObject.set(x, "pseudoElement", value.asInstanceOf[js.Any])
+    inline def setPseudoElement(value: String): Self = StObject.set(x, "pseudoElement", value.asInstanceOf[js.Any])
   }
 }

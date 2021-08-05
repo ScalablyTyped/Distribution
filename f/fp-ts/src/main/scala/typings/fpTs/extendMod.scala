@@ -27,8 +27,7 @@ object extendMod {
   }
   object Extend {
     
-    @scala.inline
-    def apply[W](
+    inline def apply[W](
       URI: W,
       extend: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<W, A> */ js.Any, js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<W, A> */ /* wa */ js.Any, 
@@ -40,11 +39,9 @@ object extendMod {
       __obj.asInstanceOf[Extend[W]]
     }
     
-    @scala.inline
-    implicit class ExtendMutableBuilder[Self <: Extend[?], W] (val x: Self & Extend[W]) extends AnyVal {
+    extension [Self <: Extend[?], W](x: Self & Extend[W]) {
       
-      @scala.inline
-      def setExtend(
+      inline def setExtend(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<W, A> */ js.Any, js.Function1[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<W, A> */ /* wa */ js.Any, 
               js.Any
@@ -67,8 +64,7 @@ object extendMod {
   }
   object Extend1 {
     
-    @scala.inline
-    def apply[W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
+    inline def apply[W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](
       URI: W,
       extend: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<W, A> */ js.Any, js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<W, A> */ /* wa */ js.Any, 
@@ -80,11 +76,9 @@ object extendMod {
       __obj.asInstanceOf[Extend1[W]]
     }
     
-    @scala.inline
-    implicit class Extend1MutableBuilder[Self <: Extend1[?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */] (val x: Self & Extend1[W]) extends AnyVal {
+    extension [Self <: Extend1[?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](x: Self & Extend1[W]) {
       
-      @scala.inline
-      def setExtend(
+      inline def setExtend(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<W, A> */ js.Any, js.Function1[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<W, A> */ /* wa */ js.Any, 
               js.Any
@@ -107,8 +101,7 @@ object extendMod {
   }
   object Extend2 {
     
-    @scala.inline
-    def apply[W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
+    inline def apply[W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](
       URI: W,
       extend: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<W, E, A> */ js.Any, js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<W, E, A> */ /* wa */ js.Any, 
@@ -120,11 +113,9 @@ object extendMod {
       __obj.asInstanceOf[Extend2[W]]
     }
     
-    @scala.inline
-    implicit class Extend2MutableBuilder[Self <: Extend2[?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */] (val x: Self & Extend2[W]) extends AnyVal {
+    extension [Self <: Extend2[?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](x: Self & Extend2[W]) {
       
-      @scala.inline
-      def setExtend(
+      inline def setExtend(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<W, E, A> */ js.Any, js.Function1[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<W, E, A> */ /* wa */ js.Any, 
               js.Any
@@ -147,8 +138,7 @@ object extendMod {
   }
   object Extend2C {
     
-    @scala.inline
-    def apply[W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
+    inline def apply[W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](
       URI: W,
       _E: E,
       extend: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<W, E, A> */ js.Any, js.Function1[
@@ -161,11 +151,9 @@ object extendMod {
       __obj.asInstanceOf[Extend2C[W, E]]
     }
     
-    @scala.inline
-    implicit class Extend2CMutableBuilder[Self <: Extend2C[?, ?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E] (val x: Self & (Extend2C[W, E])) extends AnyVal {
+    extension [Self <: Extend2C[?, ?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](x: Self & (Extend2C[W, E])) {
       
-      @scala.inline
-      def setExtend(
+      inline def setExtend(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<W, E, A> */ js.Any, js.Function1[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<W, E, A> */ /* wa */ js.Any, 
               js.Any
@@ -188,8 +176,7 @@ object extendMod {
   }
   object Extend3 {
     
-    @scala.inline
-    def apply[W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
+    inline def apply[W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](
       URI: W,
       extend: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<W, R, E, A> */ js.Any, js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<W, R, E, A> */ /* wa */ js.Any, 
@@ -201,11 +188,9 @@ object extendMod {
       __obj.asInstanceOf[Extend3[W]]
     }
     
-    @scala.inline
-    implicit class Extend3MutableBuilder[Self <: Extend3[?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */] (val x: Self & Extend3[W]) extends AnyVal {
+    extension [Self <: Extend3[?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */](x: Self & Extend3[W]) {
       
-      @scala.inline
-      def setExtend(
+      inline def setExtend(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<W, R, E, A> */ js.Any, js.Function1[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<W, R, E, A> */ /* wa */ js.Any, 
               js.Any
@@ -228,8 +213,7 @@ object extendMod {
   }
   object Extend3C {
     
-    @scala.inline
-    def apply[W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](
+    inline def apply[W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](
       URI: W,
       _E: E,
       extend: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<W, R, E, A> */ js.Any, js.Function1[
@@ -242,11 +226,9 @@ object extendMod {
       __obj.asInstanceOf[Extend3C[W, E]]
     }
     
-    @scala.inline
-    implicit class Extend3CMutableBuilder[Self <: Extend3C[?, ?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E] (val x: Self & (Extend3C[W, E])) extends AnyVal {
+    extension [Self <: Extend3C[?, ?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](x: Self & (Extend3C[W, E])) {
       
-      @scala.inline
-      def setExtend(
+      inline def setExtend(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<W, R, E, A> */ js.Any, js.Function1[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<W, R, E, A> */ /* wa */ js.Any, 
               js.Any
@@ -269,8 +251,7 @@ object extendMod {
   }
   object Extend4 {
     
-    @scala.inline
-    def apply[W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](
+    inline def apply[W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](
       URI: W,
       extend: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<W, S, R, E, A> */ js.Any, js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<W, S, R, E, A> */ /* wa */ js.Any, 
@@ -282,11 +263,9 @@ object extendMod {
       __obj.asInstanceOf[Extend4[W]]
     }
     
-    @scala.inline
-    implicit class Extend4MutableBuilder[Self <: Extend4[?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */] (val x: Self & Extend4[W]) extends AnyVal {
+    extension [Self <: Extend4[?], W /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](x: Self & Extend4[W]) {
       
-      @scala.inline
-      def setExtend(
+      inline def setExtend(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<W, S, R, E, A> */ js.Any, js.Function1[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<W, S, R, E, A> */ /* wa */ js.Any, 
               js.Any

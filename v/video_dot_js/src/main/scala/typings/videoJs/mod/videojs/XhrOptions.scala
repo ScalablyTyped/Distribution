@@ -51,103 +51,71 @@ trait XhrOptions extends StObject {
 }
 object XhrOptions {
   
-  @scala.inline
-  def apply(): XhrOptions = {
+  inline def apply(): XhrOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[XhrOptions]
   }
   
-  @scala.inline
-  implicit class XhrOptionsMutableBuilder[Self <: XhrOptions] (val x: Self) extends AnyVal {
+  extension [Self <: XhrOptions](x: Self) {
     
-    @scala.inline
-    def setBeforeSend(value: /* xhrObject */ XMLHttpRequest => Unit): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1(value))
+    inline def setBeforeSend(value: /* xhrObject */ XMLHttpRequest => Unit): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
+    inline def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
     
-    @scala.inline
-    def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+    inline def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
+    inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
     
-    @scala.inline
-    def setMethod(value: DELETE | GET | HEAD | OPTIONS | POST | PUT): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: DELETE | GET | HEAD | OPTIONS | POST | PUT): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setResponseType(value: _empty | arraybuffer | blob | document | json | text): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+    inline def setResponseType(value: _empty | arraybuffer | blob | document | json | text): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
+    inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
     
-    @scala.inline
-    def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+    inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
+    inline def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setUseXDR(value: Boolean): Self = StObject.set(x, "useXDR", value.asInstanceOf[js.Any])
+    inline def setUseXDR(value: Boolean): Self = StObject.set(x, "useXDR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseXDRUndefined: Self = StObject.set(x, "useXDR", js.undefined)
+    inline def setUseXDRUndefined: Self = StObject.set(x, "useXDR", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     
-    @scala.inline
-    def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+    inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
+    inline def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
     
-    @scala.inline
-    def setXhr(value: XMLHttpRequest): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+    inline def setXhr(value: XMLHttpRequest): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
+    inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
   }
 }

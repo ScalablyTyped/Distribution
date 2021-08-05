@@ -50,7 +50,7 @@ trait RuleConditions extends StObject {
   
   val OnlyToMe: RuleCondition
   
-  @JSName("Outlook.RuleConditions_typekey")
+  /* private */ @JSName("Outlook.RuleConditions_typekey")
   var OutlookDotRuleConditions_typekey: RuleConditions
   
   val Parent: js.Any
@@ -73,8 +73,7 @@ trait RuleConditions extends StObject {
 }
 object RuleConditions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Account: AccountRuleCondition,
     AnyCategory: RuleCondition,
     Application: Application,
@@ -113,103 +112,70 @@ object RuleConditions {
     __obj.asInstanceOf[RuleConditions]
   }
   
-  @scala.inline
-  implicit class RuleConditionsMutableBuilder[Self <: RuleConditions] (val x: Self) extends AnyVal {
+  extension [Self <: RuleConditions](x: Self) {
     
-    @scala.inline
-    def setAccount(value: AccountRuleCondition): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: AccountRuleCondition): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnyCategory(value: RuleCondition): Self = StObject.set(x, "AnyCategory", value.asInstanceOf[js.Any])
+    inline def setAnyCategory(value: RuleCondition): Self = StObject.set(x, "AnyCategory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBody(value: TextRuleCondition): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
+    inline def setBody(value: TextRuleCondition): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyOrSubject(value: TextRuleCondition): Self = StObject.set(x, "BodyOrSubject", value.asInstanceOf[js.Any])
+    inline def setBodyOrSubject(value: TextRuleCondition): Self = StObject.set(x, "BodyOrSubject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCC(value: RuleCondition): Self = StObject.set(x, "CC", value.asInstanceOf[js.Any])
+    inline def setCC(value: RuleCondition): Self = StObject.set(x, "CC", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategory(value: CategoryRuleCondition): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: CategoryRuleCondition): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormName(value: FormNameRuleCondition): Self = StObject.set(x, "FormName", value.asInstanceOf[js.Any])
+    inline def setFormName(value: FormNameRuleCondition): Self = StObject.set(x, "FormName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrom(value: ToOrFromRuleCondition): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
+    inline def setFrom(value: ToOrFromRuleCondition): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromAnyRSSFeed(value: RuleCondition): Self = StObject.set(x, "FromAnyRSSFeed", value.asInstanceOf[js.Any])
+    inline def setFromAnyRSSFeed(value: RuleCondition): Self = StObject.set(x, "FromAnyRSSFeed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromRssFeed(value: FromRssFeedRuleCondition): Self = StObject.set(x, "FromRssFeed", value.asInstanceOf[js.Any])
+    inline def setFromRssFeed(value: FromRssFeedRuleCondition): Self = StObject.set(x, "FromRssFeed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasAttachment(value: RuleCondition): Self = StObject.set(x, "HasAttachment", value.asInstanceOf[js.Any])
+    inline def setHasAttachment(value: RuleCondition): Self = StObject.set(x, "HasAttachment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportance(value: ImportanceRuleCondition): Self = StObject.set(x, "Importance", value.asInstanceOf[js.Any])
+    inline def setImportance(value: ImportanceRuleCondition): Self = StObject.set(x, "Importance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItem(value: Double => RuleCondition): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => RuleCondition): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMeetingInviteOrUpdate(value: RuleCondition): Self = StObject.set(x, "MeetingInviteOrUpdate", value.asInstanceOf[js.Any])
+    inline def setMeetingInviteOrUpdate(value: RuleCondition): Self = StObject.set(x, "MeetingInviteOrUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageHeader(value: TextRuleCondition): Self = StObject.set(x, "MessageHeader", value.asInstanceOf[js.Any])
+    inline def setMessageHeader(value: TextRuleCondition): Self = StObject.set(x, "MessageHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotTo(value: RuleCondition): Self = StObject.set(x, "NotTo", value.asInstanceOf[js.Any])
+    inline def setNotTo(value: RuleCondition): Self = StObject.set(x, "NotTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnLocalMachine(value: RuleCondition): Self = StObject.set(x, "OnLocalMachine", value.asInstanceOf[js.Any])
+    inline def setOnLocalMachine(value: RuleCondition): Self = StObject.set(x, "OnLocalMachine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnOtherMachine(value: RuleCondition): Self = StObject.set(x, "OnOtherMachine", value.asInstanceOf[js.Any])
+    inline def setOnOtherMachine(value: RuleCondition): Self = StObject.set(x, "OnOtherMachine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyToMe(value: RuleCondition): Self = StObject.set(x, "OnlyToMe", value.asInstanceOf[js.Any])
+    inline def setOnlyToMe(value: RuleCondition): Self = StObject.set(x, "OnlyToMe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotRuleConditions_typekey(value: RuleConditions): Self = StObject.set(x, "Outlook.RuleConditions_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotRuleConditions_typekey(value: RuleConditions): Self = StObject.set(x, "Outlook.RuleConditions_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipientAddress(value: AddressRuleCondition): Self = StObject.set(x, "RecipientAddress", value.asInstanceOf[js.Any])
+    inline def setRecipientAddress(value: AddressRuleCondition): Self = StObject.set(x, "RecipientAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSenderAddress(value: AddressRuleCondition): Self = StObject.set(x, "SenderAddress", value.asInstanceOf[js.Any])
+    inline def setSenderAddress(value: AddressRuleCondition): Self = StObject.set(x, "SenderAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSenderInAddressList(value: SenderInAddressListRuleCondition): Self = StObject.set(x, "SenderInAddressList", value.asInstanceOf[js.Any])
+    inline def setSenderInAddressList(value: SenderInAddressListRuleCondition): Self = StObject.set(x, "SenderInAddressList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentTo(value: ToOrFromRuleCondition): Self = StObject.set(x, "SentTo", value.asInstanceOf[js.Any])
+    inline def setSentTo(value: ToOrFromRuleCondition): Self = StObject.set(x, "SentTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubject(value: TextRuleCondition): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: TextRuleCondition): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToMe(value: RuleCondition): Self = StObject.set(x, "ToMe", value.asInstanceOf[js.Any])
+    inline def setToMe(value: RuleCondition): Self = StObject.set(x, "ToMe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToOrCc(value: RuleCondition): Self = StObject.set(x, "ToOrCc", value.asInstanceOf[js.Any])
+    inline def setToOrCc(value: RuleCondition): Self = StObject.set(x, "ToOrCc", value.asInstanceOf[js.Any])
   }
 }

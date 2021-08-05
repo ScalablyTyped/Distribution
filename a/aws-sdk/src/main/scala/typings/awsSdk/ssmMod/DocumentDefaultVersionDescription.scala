@@ -23,31 +23,23 @@ trait DocumentDefaultVersionDescription extends StObject {
 }
 object DocumentDefaultVersionDescription {
   
-  @scala.inline
-  def apply(): DocumentDefaultVersionDescription = {
+  inline def apply(): DocumentDefaultVersionDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentDefaultVersionDescription]
   }
   
-  @scala.inline
-  implicit class DocumentDefaultVersionDescriptionMutableBuilder[Self <: DocumentDefaultVersionDescription] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentDefaultVersionDescription](x: Self) {
     
-    @scala.inline
-    def setDefaultVersion(value: DocumentVersion): Self = StObject.set(x, "DefaultVersion", value.asInstanceOf[js.Any])
+    inline def setDefaultVersion(value: DocumentVersion): Self = StObject.set(x, "DefaultVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultVersionName(value: DocumentVersionName): Self = StObject.set(x, "DefaultVersionName", value.asInstanceOf[js.Any])
+    inline def setDefaultVersionName(value: DocumentVersionName): Self = StObject.set(x, "DefaultVersionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultVersionNameUndefined: Self = StObject.set(x, "DefaultVersionName", js.undefined)
+    inline def setDefaultVersionNameUndefined: Self = StObject.set(x, "DefaultVersionName", js.undefined)
     
-    @scala.inline
-    def setDefaultVersionUndefined: Self = StObject.set(x, "DefaultVersion", js.undefined)
+    inline def setDefaultVersionUndefined: Self = StObject.set(x, "DefaultVersion", js.undefined)
     
-    @scala.inline
-    def setName(value: DocumentName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: DocumentName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

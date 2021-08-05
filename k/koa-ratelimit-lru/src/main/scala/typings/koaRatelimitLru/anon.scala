@@ -16,32 +16,24 @@ object anon {
   }
   object Remaining {
     
-    @scala.inline
-    def apply(): Remaining = {
+    inline def apply(): Remaining = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Remaining]
     }
     
-    @scala.inline
-    implicit class RemainingMutableBuilder[Self <: Remaining] (val x: Self) extends AnyVal {
+    extension [Self <: Remaining](x: Self) {
       
-      @scala.inline
-      def setRemaining(value: String): Self = StObject.set(x, "remaining", value.asInstanceOf[js.Any])
+      inline def setRemaining(value: String): Self = StObject.set(x, "remaining", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemainingUndefined: Self = StObject.set(x, "remaining", js.undefined)
+      inline def setRemainingUndefined: Self = StObject.set(x, "remaining", js.undefined)
       
-      @scala.inline
-      def setReset(value: String): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+      inline def setReset(value: String): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
+      inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
       
-      @scala.inline
-      def setTotal(value: String): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: String): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+      inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
     }
   }
 }

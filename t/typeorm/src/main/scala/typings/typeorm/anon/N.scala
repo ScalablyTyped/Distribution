@@ -12,25 +12,19 @@ trait N extends StObject {
 }
 object N {
   
-  @scala.inline
-  def apply(): N = {
+  inline def apply(): N = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[N]
   }
   
-  @scala.inline
-  implicit class NMutableBuilder[Self <: N] (val x: Self) extends AnyVal {
+  extension [Self <: N](x: Self) {
     
-    @scala.inline
-    def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+    inline def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNUndefined: Self = StObject.set(x, "n", js.undefined)
+    inline def setNUndefined: Self = StObject.set(x, "n", js.undefined)
     
-    @scala.inline
-    def setOk(value: Double): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+    inline def setOk(value: Double): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOkUndefined: Self = StObject.set(x, "ok", js.undefined)
+    inline def setOkUndefined: Self = StObject.set(x, "ok", js.undefined)
   }
 }

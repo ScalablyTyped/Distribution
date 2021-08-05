@@ -24,8 +24,7 @@ trait AppendTo extends StObject {
 }
 object AppendTo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     appendTo: String,
     children: js.Array[typings.react.mod.global.JSX.Element],
     `data-hook`: String,
@@ -40,34 +39,24 @@ object AppendTo {
     __obj.asInstanceOf[AppendTo]
   }
   
-  @scala.inline
-  implicit class AppendToMutableBuilder[Self <: AppendTo] (val x: Self) extends AnyVal {
+  extension [Self <: AppendTo](x: Self) {
     
-    @scala.inline
-    def setAppendTo(value: String): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
+    inline def setAppendTo(value: String): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildren(value: js.Array[typings.react.mod.global.JSX.Element]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[typings.react.mod.global.JSX.Element]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: typings.react.mod.global.JSX.Element*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: typings.react.mod.global.JSX.Element*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def `setData-hook`(value: String): Self = StObject.set(x, "data-hook", value.asInstanceOf[js.Any])
+    inline def `setData-hook`(value: String): Self = StObject.set(x, "data-hook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFluid(value: Boolean): Self = StObject.set(x, "fluid", value.asInstanceOf[js.Any])
+    inline def setFluid(value: Boolean): Self = StObject.set(x, "fluid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
+    inline def setPlacement(value: String): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowArrow(value: Boolean): Self = StObject.set(x, "showArrow", value.asInstanceOf[js.Any])
+    inline def setShowArrow(value: Boolean): Self = StObject.set(x, "showArrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShown(value: Boolean): Self = StObject.set(x, "shown", value.asInstanceOf[js.Any])
+    inline def setShown(value: Boolean): Self = StObject.set(x, "shown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

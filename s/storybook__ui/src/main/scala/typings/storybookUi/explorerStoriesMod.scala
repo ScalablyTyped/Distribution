@@ -23,31 +23,25 @@ object explorerStoriesMod {
     @JSImport("@storybook/ui/dist/components/sidebar/Explorer.stories", "default.component")
     @js.native
     def component: FunctionComponent[ExplorerProps] = js.native
-    @scala.inline
-    def component_=(x: FunctionComponent[ExplorerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("component")(x.asInstanceOf[js.Any])
+    inline def component_=(x: FunctionComponent[ExplorerProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("component")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/ui/dist/components/sidebar/Explorer.stories", "default.decorators")
     @js.native
     def decorators: js.Array[js.Function1[/* storyFn */ js.Any, Element]] = js.native
-    @scala.inline
-    def decorators_=(x: js.Array[js.Function1[/* storyFn */ js.Any, Element]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decorators")(x.asInstanceOf[js.Any])
+    inline def decorators_=(x: js.Array[js.Function1[/* storyFn */ js.Any, Element]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decorators")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/ui/dist/components/sidebar/Explorer.stories", "default.parameters")
     @js.native
     def parameters: Layout = js.native
-    @scala.inline
-    def parameters_=(x: Layout): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parameters")(x.asInstanceOf[js.Any])
+    inline def parameters_=(x: Layout): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parameters")(x.asInstanceOf[js.Any])
     
     @JSImport("@storybook/ui/dist/components/sidebar/Explorer.stories", "default.title")
     @js.native
     def title: String = js.native
-    @scala.inline
-    def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
+    inline def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def Simple(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Simple")().asInstanceOf[Element]
+  inline def Simple(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Simple")().asInstanceOf[Element]
   
-  @scala.inline
-  def WithRefs(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("WithRefs")().asInstanceOf[Element]
+  inline def WithRefs(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("WithRefs")().asInstanceOf[Element]
 }

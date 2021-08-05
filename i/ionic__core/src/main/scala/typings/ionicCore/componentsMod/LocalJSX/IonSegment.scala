@@ -48,58 +48,41 @@ trait IonSegment extends StObject {
 }
 object IonSegment {
   
-  @scala.inline
-  def apply(): IonSegment = {
+  inline def apply(): IonSegment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IonSegment]
   }
   
-  @scala.inline
-  implicit class IonSegmentMutableBuilder[Self <: IonSegment] (val x: Self) extends AnyVal {
+  extension [Self <: IonSegment](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setOnIonChange(value: /* event */ CustomEvent[SegmentChangeEventDetail] => Unit): Self = StObject.set(x, "onIonChange", js.Any.fromFunction1(value))
+    inline def setOnIonChange(value: /* event */ CustomEvent[SegmentChangeEventDetail] => Unit): Self = StObject.set(x, "onIonChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnIonChangeUndefined: Self = StObject.set(x, "onIonChange", js.undefined)
+    inline def setOnIonChangeUndefined: Self = StObject.set(x, "onIonChange", js.undefined)
     
-    @scala.inline
-    def setScrollable(value: Boolean): Self = StObject.set(x, "scrollable", value.asInstanceOf[js.Any])
+    inline def setScrollable(value: Boolean): Self = StObject.set(x, "scrollable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollableUndefined: Self = StObject.set(x, "scrollable", js.undefined)
+    inline def setScrollableUndefined: Self = StObject.set(x, "scrollable", js.undefined)
     
-    @scala.inline
-    def setSwipeGesture(value: Boolean): Self = StObject.set(x, "swipeGesture", value.asInstanceOf[js.Any])
+    inline def setSwipeGesture(value: Boolean): Self = StObject.set(x, "swipeGesture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwipeGestureUndefined: Self = StObject.set(x, "swipeGesture", js.undefined)
+    inline def setSwipeGestureUndefined: Self = StObject.set(x, "swipeGesture", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueNull: Self = StObject.set(x, "value", null)
+    inline def setValueNull: Self = StObject.set(x, "value", null)
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

@@ -23,28 +23,21 @@ trait UpdateAddressBookRequest extends StObject {
 }
 object UpdateAddressBookRequest {
   
-  @scala.inline
-  def apply(AddressBookArn: Arn): UpdateAddressBookRequest = {
+  inline def apply(AddressBookArn: Arn): UpdateAddressBookRequest = {
     val __obj = js.Dynamic.literal(AddressBookArn = AddressBookArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAddressBookRequest]
   }
   
-  @scala.inline
-  implicit class UpdateAddressBookRequestMutableBuilder[Self <: UpdateAddressBookRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateAddressBookRequest](x: Self) {
     
-    @scala.inline
-    def setAddressBookArn(value: Arn): Self = StObject.set(x, "AddressBookArn", value.asInstanceOf[js.Any])
+    inline def setAddressBookArn(value: Arn): Self = StObject.set(x, "AddressBookArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: AddressBookDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: AddressBookDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setName(value: AddressBookName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: AddressBookName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

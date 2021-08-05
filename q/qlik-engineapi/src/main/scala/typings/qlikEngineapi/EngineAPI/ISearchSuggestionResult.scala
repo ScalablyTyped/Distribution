@@ -21,25 +21,19 @@ trait ISearchSuggestionResult extends StObject {
 }
 object ISearchSuggestionResult {
   
-  @scala.inline
-  def apply(qFieldNames: js.Array[String], qSuggestions: js.Array[ISearchSuggestItem]): ISearchSuggestionResult = {
+  inline def apply(qFieldNames: js.Array[String], qSuggestions: js.Array[ISearchSuggestItem]): ISearchSuggestionResult = {
     val __obj = js.Dynamic.literal(qFieldNames = qFieldNames.asInstanceOf[js.Any], qSuggestions = qSuggestions.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISearchSuggestionResult]
   }
   
-  @scala.inline
-  implicit class ISearchSuggestionResultMutableBuilder[Self <: ISearchSuggestionResult] (val x: Self) extends AnyVal {
+  extension [Self <: ISearchSuggestionResult](x: Self) {
     
-    @scala.inline
-    def setQFieldNames(value: js.Array[String]): Self = StObject.set(x, "qFieldNames", value.asInstanceOf[js.Any])
+    inline def setQFieldNames(value: js.Array[String]): Self = StObject.set(x, "qFieldNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQFieldNamesVarargs(value: String*): Self = StObject.set(x, "qFieldNames", js.Array(value :_*))
+    inline def setQFieldNamesVarargs(value: String*): Self = StObject.set(x, "qFieldNames", js.Array(value :_*))
     
-    @scala.inline
-    def setQSuggestions(value: js.Array[ISearchSuggestItem]): Self = StObject.set(x, "qSuggestions", value.asInstanceOf[js.Any])
+    inline def setQSuggestions(value: js.Array[ISearchSuggestItem]): Self = StObject.set(x, "qSuggestions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSuggestionsVarargs(value: ISearchSuggestItem*): Self = StObject.set(x, "qSuggestions", js.Array(value :_*))
+    inline def setQSuggestionsVarargs(value: ISearchSuggestItem*): Self = StObject.set(x, "qSuggestions", js.Array(value :_*))
   }
 }

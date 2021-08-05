@@ -121,8 +121,7 @@ object mod extends Shortcut {
   }
   object pluginOptions {
     
-    @scala.inline
-    def apply(): pluginOptions = {
+    inline def apply(): pluginOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[pluginOptions]
     }
@@ -197,277 +196,188 @@ object mod extends Shortcut {
     }
     object features {
       
-      @scala.inline
-      def apply(): features = {
+      inline def apply(): features = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[features]
       }
       
-      @scala.inline
-      implicit class featuresMutableBuilder[Self <: features] (val x: Self) extends AnyVal {
+      extension [Self <: features](x: Self) {
         
-        @scala.inline
-        def `setAll-property`(value: Boolean | js.Object): Self = StObject.set(x, "all-property", value.asInstanceOf[js.Any])
+        inline def `setAll-property`(value: Boolean | js.Object): Self = StObject.set(x, "all-property", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setAll-propertyUndefined`: Self = StObject.set(x, "all-property", js.undefined)
+        inline def `setAll-propertyUndefined`: Self = StObject.set(x, "all-property", js.undefined)
         
-        @scala.inline
-        def `setAny-link-pseudo-class`(value: Boolean | js.Object): Self = StObject.set(x, "any-link-pseudo-class", value.asInstanceOf[js.Any])
+        inline def `setAny-link-pseudo-class`(value: Boolean | js.Object): Self = StObject.set(x, "any-link-pseudo-class", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setAny-link-pseudo-classUndefined`: Self = StObject.set(x, "any-link-pseudo-class", js.undefined)
+        inline def `setAny-link-pseudo-classUndefined`: Self = StObject.set(x, "any-link-pseudo-class", js.undefined)
         
-        @scala.inline
-        def `setBlank-pseudo-class`(value: Boolean | js.Object): Self = StObject.set(x, "blank-pseudo-class", value.asInstanceOf[js.Any])
+        inline def `setBlank-pseudo-class`(value: Boolean | js.Object): Self = StObject.set(x, "blank-pseudo-class", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setBlank-pseudo-classUndefined`: Self = StObject.set(x, "blank-pseudo-class", js.undefined)
+        inline def `setBlank-pseudo-classUndefined`: Self = StObject.set(x, "blank-pseudo-class", js.undefined)
         
-        @scala.inline
-        def `setBreak-properties`(value: Boolean | js.Object): Self = StObject.set(x, "break-properties", value.asInstanceOf[js.Any])
+        inline def `setBreak-properties`(value: Boolean | js.Object): Self = StObject.set(x, "break-properties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setBreak-propertiesUndefined`: Self = StObject.set(x, "break-properties", js.undefined)
+        inline def `setBreak-propertiesUndefined`: Self = StObject.set(x, "break-properties", js.undefined)
         
-        @scala.inline
-        def `setCase-insensitive-attributes`(value: Boolean | js.Object): Self = StObject.set(x, "case-insensitive-attributes", value.asInstanceOf[js.Any])
+        inline def `setCase-insensitive-attributes`(value: Boolean | js.Object): Self = StObject.set(x, "case-insensitive-attributes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setCase-insensitive-attributesUndefined`: Self = StObject.set(x, "case-insensitive-attributes", js.undefined)
+        inline def `setCase-insensitive-attributesUndefined`: Self = StObject.set(x, "case-insensitive-attributes", js.undefined)
         
-        @scala.inline
-        def `setColor-functional-notation`(value: Boolean | js.Object): Self = StObject.set(x, "color-functional-notation", value.asInstanceOf[js.Any])
+        inline def `setColor-functional-notation`(value: Boolean | js.Object): Self = StObject.set(x, "color-functional-notation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setColor-functional-notationUndefined`: Self = StObject.set(x, "color-functional-notation", js.undefined)
+        inline def `setColor-functional-notationUndefined`: Self = StObject.set(x, "color-functional-notation", js.undefined)
         
-        @scala.inline
-        def `setColor-mod-function`(value: Boolean | js.Object): Self = StObject.set(x, "color-mod-function", value.asInstanceOf[js.Any])
+        inline def `setColor-mod-function`(value: Boolean | js.Object): Self = StObject.set(x, "color-mod-function", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setColor-mod-functionUndefined`: Self = StObject.set(x, "color-mod-function", js.undefined)
+        inline def `setColor-mod-functionUndefined`: Self = StObject.set(x, "color-mod-function", js.undefined)
         
-        @scala.inline
-        def `setCustom-media-queries`(value: Boolean | js.Object): Self = StObject.set(x, "custom-media-queries", value.asInstanceOf[js.Any])
+        inline def `setCustom-media-queries`(value: Boolean | js.Object): Self = StObject.set(x, "custom-media-queries", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setCustom-media-queriesUndefined`: Self = StObject.set(x, "custom-media-queries", js.undefined)
+        inline def `setCustom-media-queriesUndefined`: Self = StObject.set(x, "custom-media-queries", js.undefined)
         
-        @scala.inline
-        def `setCustom-properties`(value: Boolean | js.Object): Self = StObject.set(x, "custom-properties", value.asInstanceOf[js.Any])
+        inline def `setCustom-properties`(value: Boolean | js.Object): Self = StObject.set(x, "custom-properties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setCustom-propertiesUndefined`: Self = StObject.set(x, "custom-properties", js.undefined)
+        inline def `setCustom-propertiesUndefined`: Self = StObject.set(x, "custom-properties", js.undefined)
         
-        @scala.inline
-        def `setCustom-selectors`(value: Boolean | js.Object): Self = StObject.set(x, "custom-selectors", value.asInstanceOf[js.Any])
+        inline def `setCustom-selectors`(value: Boolean | js.Object): Self = StObject.set(x, "custom-selectors", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setCustom-selectorsUndefined`: Self = StObject.set(x, "custom-selectors", js.undefined)
+        inline def `setCustom-selectorsUndefined`: Self = StObject.set(x, "custom-selectors", js.undefined)
         
-        @scala.inline
-        def `setDir-pseudo-class`(value: Boolean | js.Object): Self = StObject.set(x, "dir-pseudo-class", value.asInstanceOf[js.Any])
+        inline def `setDir-pseudo-class`(value: Boolean | js.Object): Self = StObject.set(x, "dir-pseudo-class", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setDir-pseudo-classUndefined`: Self = StObject.set(x, "dir-pseudo-class", js.undefined)
+        inline def `setDir-pseudo-classUndefined`: Self = StObject.set(x, "dir-pseudo-class", js.undefined)
         
-        @scala.inline
-        def `setDouble-position-gradients`(value: Boolean | js.Object): Self = StObject.set(x, "double-position-gradients", value.asInstanceOf[js.Any])
+        inline def `setDouble-position-gradients`(value: Boolean | js.Object): Self = StObject.set(x, "double-position-gradients", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setDouble-position-gradientsUndefined`: Self = StObject.set(x, "double-position-gradients", js.undefined)
+        inline def `setDouble-position-gradientsUndefined`: Self = StObject.set(x, "double-position-gradients", js.undefined)
         
-        @scala.inline
-        def `setEnvironment-variables`(value: Boolean | js.Object): Self = StObject.set(x, "environment-variables", value.asInstanceOf[js.Any])
+        inline def `setEnvironment-variables`(value: Boolean | js.Object): Self = StObject.set(x, "environment-variables", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setEnvironment-variablesUndefined`: Self = StObject.set(x, "environment-variables", js.undefined)
+        inline def `setEnvironment-variablesUndefined`: Self = StObject.set(x, "environment-variables", js.undefined)
         
-        @scala.inline
-        def `setFocus-visible-pseudo-class`(value: Boolean | js.Object): Self = StObject.set(x, "focus-visible-pseudo-class", value.asInstanceOf[js.Any])
+        inline def `setFocus-visible-pseudo-class`(value: Boolean | js.Object): Self = StObject.set(x, "focus-visible-pseudo-class", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setFocus-visible-pseudo-classUndefined`: Self = StObject.set(x, "focus-visible-pseudo-class", js.undefined)
+        inline def `setFocus-visible-pseudo-classUndefined`: Self = StObject.set(x, "focus-visible-pseudo-class", js.undefined)
         
-        @scala.inline
-        def `setFocus-within-pseudo-class`(value: Boolean | js.Object): Self = StObject.set(x, "focus-within-pseudo-class", value.asInstanceOf[js.Any])
+        inline def `setFocus-within-pseudo-class`(value: Boolean | js.Object): Self = StObject.set(x, "focus-within-pseudo-class", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setFocus-within-pseudo-classUndefined`: Self = StObject.set(x, "focus-within-pseudo-class", js.undefined)
+        inline def `setFocus-within-pseudo-classUndefined`: Self = StObject.set(x, "focus-within-pseudo-class", js.undefined)
         
-        @scala.inline
-        def `setFont-variant-property`(value: Boolean | js.Object): Self = StObject.set(x, "font-variant-property", value.asInstanceOf[js.Any])
+        inline def `setFont-variant-property`(value: Boolean | js.Object): Self = StObject.set(x, "font-variant-property", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setFont-variant-propertyUndefined`: Self = StObject.set(x, "font-variant-property", js.undefined)
+        inline def `setFont-variant-propertyUndefined`: Self = StObject.set(x, "font-variant-property", js.undefined)
         
-        @scala.inline
-        def `setGap-properties`(value: Boolean | js.Object): Self = StObject.set(x, "gap-properties", value.asInstanceOf[js.Any])
+        inline def `setGap-properties`(value: Boolean | js.Object): Self = StObject.set(x, "gap-properties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setGap-propertiesUndefined`: Self = StObject.set(x, "gap-properties", js.undefined)
+        inline def `setGap-propertiesUndefined`: Self = StObject.set(x, "gap-properties", js.undefined)
         
-        @scala.inline
-        def `setGray-function`(value: Boolean | js.Object): Self = StObject.set(x, "gray-function", value.asInstanceOf[js.Any])
+        inline def `setGray-function`(value: Boolean | js.Object): Self = StObject.set(x, "gray-function", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setGray-functionUndefined`: Self = StObject.set(x, "gray-function", js.undefined)
+        inline def `setGray-functionUndefined`: Self = StObject.set(x, "gray-function", js.undefined)
         
-        @scala.inline
-        def `setHas-pseudo-class`(value: Boolean | js.Object): Self = StObject.set(x, "has-pseudo-class", value.asInstanceOf[js.Any])
+        inline def `setHas-pseudo-class`(value: Boolean | js.Object): Self = StObject.set(x, "has-pseudo-class", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setHas-pseudo-classUndefined`: Self = StObject.set(x, "has-pseudo-class", js.undefined)
+        inline def `setHas-pseudo-classUndefined`: Self = StObject.set(x, "has-pseudo-class", js.undefined)
         
-        @scala.inline
-        def `setHexadecimal-alpha-notation`(value: Boolean | js.Object): Self = StObject.set(x, "hexadecimal-alpha-notation", value.asInstanceOf[js.Any])
+        inline def `setHexadecimal-alpha-notation`(value: Boolean | js.Object): Self = StObject.set(x, "hexadecimal-alpha-notation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setHexadecimal-alpha-notationUndefined`: Self = StObject.set(x, "hexadecimal-alpha-notation", js.undefined)
+        inline def `setHexadecimal-alpha-notationUndefined`: Self = StObject.set(x, "hexadecimal-alpha-notation", js.undefined)
         
-        @scala.inline
-        def `setImage-set-function`(value: Boolean | js.Object): Self = StObject.set(x, "image-set-function", value.asInstanceOf[js.Any])
+        inline def `setImage-set-function`(value: Boolean | js.Object): Self = StObject.set(x, "image-set-function", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setImage-set-functionUndefined`: Self = StObject.set(x, "image-set-function", js.undefined)
+        inline def `setImage-set-functionUndefined`: Self = StObject.set(x, "image-set-function", js.undefined)
         
-        @scala.inline
-        def `setLab-function`(value: Boolean | js.Object): Self = StObject.set(x, "lab-function", value.asInstanceOf[js.Any])
+        inline def `setLab-function`(value: Boolean | js.Object): Self = StObject.set(x, "lab-function", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setLab-functionUndefined`: Self = StObject.set(x, "lab-function", js.undefined)
+        inline def `setLab-functionUndefined`: Self = StObject.set(x, "lab-function", js.undefined)
         
-        @scala.inline
-        def `setLogical-properties-and-values`(value: Boolean | js.Object): Self = StObject.set(x, "logical-properties-and-values", value.asInstanceOf[js.Any])
+        inline def `setLogical-properties-and-values`(value: Boolean | js.Object): Self = StObject.set(x, "logical-properties-and-values", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setLogical-properties-and-valuesUndefined`: Self = StObject.set(x, "logical-properties-and-values", js.undefined)
+        inline def `setLogical-properties-and-valuesUndefined`: Self = StObject.set(x, "logical-properties-and-values", js.undefined)
         
-        @scala.inline
-        def `setMatches-pseudo-class`(value: Boolean | js.Object): Self = StObject.set(x, "matches-pseudo-class", value.asInstanceOf[js.Any])
+        inline def `setMatches-pseudo-class`(value: Boolean | js.Object): Self = StObject.set(x, "matches-pseudo-class", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setMatches-pseudo-classUndefined`: Self = StObject.set(x, "matches-pseudo-class", js.undefined)
+        inline def `setMatches-pseudo-classUndefined`: Self = StObject.set(x, "matches-pseudo-class", js.undefined)
         
-        @scala.inline
-        def `setMedia-query-ranges`(value: Boolean | js.Object): Self = StObject.set(x, "media-query-ranges", value.asInstanceOf[js.Any])
+        inline def `setMedia-query-ranges`(value: Boolean | js.Object): Self = StObject.set(x, "media-query-ranges", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setMedia-query-rangesUndefined`: Self = StObject.set(x, "media-query-ranges", js.undefined)
+        inline def `setMedia-query-rangesUndefined`: Self = StObject.set(x, "media-query-ranges", js.undefined)
         
-        @scala.inline
-        def `setNesting-rules`(value: Boolean | js.Object): Self = StObject.set(x, "nesting-rules", value.asInstanceOf[js.Any])
+        inline def `setNesting-rules`(value: Boolean | js.Object): Self = StObject.set(x, "nesting-rules", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setNesting-rulesUndefined`: Self = StObject.set(x, "nesting-rules", js.undefined)
+        inline def `setNesting-rulesUndefined`: Self = StObject.set(x, "nesting-rules", js.undefined)
         
-        @scala.inline
-        def `setNot-pseudo-class`(value: Boolean | js.Object): Self = StObject.set(x, "not-pseudo-class", value.asInstanceOf[js.Any])
+        inline def `setNot-pseudo-class`(value: Boolean | js.Object): Self = StObject.set(x, "not-pseudo-class", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setNot-pseudo-classUndefined`: Self = StObject.set(x, "not-pseudo-class", js.undefined)
+        inline def `setNot-pseudo-classUndefined`: Self = StObject.set(x, "not-pseudo-class", js.undefined)
         
-        @scala.inline
-        def `setOverflow-property`(value: Boolean | js.Object): Self = StObject.set(x, "overflow-property", value.asInstanceOf[js.Any])
+        inline def `setOverflow-property`(value: Boolean | js.Object): Self = StObject.set(x, "overflow-property", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setOverflow-propertyUndefined`: Self = StObject.set(x, "overflow-property", js.undefined)
+        inline def `setOverflow-propertyUndefined`: Self = StObject.set(x, "overflow-property", js.undefined)
         
-        @scala.inline
-        def `setOverflow-wrap-property`(value: Boolean | js.Object): Self = StObject.set(x, "overflow-wrap-property", value.asInstanceOf[js.Any])
+        inline def `setOverflow-wrap-property`(value: Boolean | js.Object): Self = StObject.set(x, "overflow-wrap-property", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setOverflow-wrap-propertyUndefined`: Self = StObject.set(x, "overflow-wrap-property", js.undefined)
+        inline def `setOverflow-wrap-propertyUndefined`: Self = StObject.set(x, "overflow-wrap-property", js.undefined)
         
-        @scala.inline
-        def `setPlace-properties`(value: Boolean | js.Object): Self = StObject.set(x, "place-properties", value.asInstanceOf[js.Any])
+        inline def `setPlace-properties`(value: Boolean | js.Object): Self = StObject.set(x, "place-properties", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setPlace-propertiesUndefined`: Self = StObject.set(x, "place-properties", js.undefined)
+        inline def `setPlace-propertiesUndefined`: Self = StObject.set(x, "place-properties", js.undefined)
         
-        @scala.inline
-        def `setPrefers-color-scheme-query`(value: Boolean | js.Object): Self = StObject.set(x, "prefers-color-scheme-query", value.asInstanceOf[js.Any])
+        inline def `setPrefers-color-scheme-query`(value: Boolean | js.Object): Self = StObject.set(x, "prefers-color-scheme-query", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setPrefers-color-scheme-queryUndefined`: Self = StObject.set(x, "prefers-color-scheme-query", js.undefined)
+        inline def `setPrefers-color-scheme-queryUndefined`: Self = StObject.set(x, "prefers-color-scheme-query", js.undefined)
         
-        @scala.inline
-        def `setRebeccapurple-color`(value: Boolean | js.Object): Self = StObject.set(x, "rebeccapurple-color", value.asInstanceOf[js.Any])
+        inline def `setRebeccapurple-color`(value: Boolean | js.Object): Self = StObject.set(x, "rebeccapurple-color", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setRebeccapurple-colorUndefined`: Self = StObject.set(x, "rebeccapurple-color", js.undefined)
+        inline def `setRebeccapurple-colorUndefined`: Self = StObject.set(x, "rebeccapurple-color", js.undefined)
         
-        @scala.inline
-        def `setSystem-ui-font-family`(value: Boolean | js.Object): Self = StObject.set(x, "system-ui-font-family", value.asInstanceOf[js.Any])
+        inline def `setSystem-ui-font-family`(value: Boolean | js.Object): Self = StObject.set(x, "system-ui-font-family", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def `setSystem-ui-font-familyUndefined`: Self = StObject.set(x, "system-ui-font-family", js.undefined)
+        inline def `setSystem-ui-font-familyUndefined`: Self = StObject.set(x, "system-ui-font-family", js.undefined)
       }
     }
     
-    @scala.inline
-    implicit class pluginOptionsMutableBuilder[Self <: pluginOptions] (val x: Self) extends AnyVal {
+    extension [Self <: pluginOptions](x: Self) {
       
-      @scala.inline
-      def setAutoprefixer(value: Boolean | Options): Self = StObject.set(x, "autoprefixer", value.asInstanceOf[js.Any])
+      inline def setAutoprefixer(value: Boolean | Options): Self = StObject.set(x, "autoprefixer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoprefixerUndefined: Self = StObject.set(x, "autoprefixer", js.undefined)
+      inline def setAutoprefixerUndefined: Self = StObject.set(x, "autoprefixer", js.undefined)
       
-      @scala.inline
-      def setBrowsers(value: String): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
+      inline def setBrowsers(value: String): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrowsersUndefined: Self = StObject.set(x, "browsers", js.undefined)
+      inline def setBrowsersUndefined: Self = StObject.set(x, "browsers", js.undefined)
       
-      @scala.inline
-      def setExportTo(value: String | js.Array[js.Any]): Self = StObject.set(x, "exportTo", value.asInstanceOf[js.Any])
+      inline def setExportTo(value: String | js.Array[js.Any]): Self = StObject.set(x, "exportTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportToUndefined: Self = StObject.set(x, "exportTo", js.undefined)
+      inline def setExportToUndefined: Self = StObject.set(x, "exportTo", js.undefined)
       
-      @scala.inline
-      def setExportToVarargs(value: js.Any*): Self = StObject.set(x, "exportTo", js.Array(value :_*))
+      inline def setExportToVarargs(value: js.Any*): Self = StObject.set(x, "exportTo", js.Array(value :_*))
       
-      @scala.inline
-      def setFeatures(value: features): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+      inline def setFeatures(value: features): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
+      inline def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
       
-      @scala.inline
-      def setImportFrom(value: String | js.Array[js.Any]): Self = StObject.set(x, "importFrom", value.asInstanceOf[js.Any])
+      inline def setImportFrom(value: String | js.Array[js.Any]): Self = StObject.set(x, "importFrom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportFromUndefined: Self = StObject.set(x, "importFrom", js.undefined)
+      inline def setImportFromUndefined: Self = StObject.set(x, "importFrom", js.undefined)
       
-      @scala.inline
-      def setImportFromVarargs(value: js.Any*): Self = StObject.set(x, "importFrom", js.Array(value :_*))
+      inline def setImportFromVarargs(value: js.Any*): Self = StObject.set(x, "importFrom", js.Array(value :_*))
       
-      @scala.inline
-      def setInsertAfter(value: js.Object): Self = StObject.set(x, "insertAfter", value.asInstanceOf[js.Any])
+      inline def setInsertAfter(value: js.Object): Self = StObject.set(x, "insertAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertAfterUndefined: Self = StObject.set(x, "insertAfter", js.undefined)
+      inline def setInsertAfterUndefined: Self = StObject.set(x, "insertAfter", js.undefined)
       
-      @scala.inline
-      def setInsertBefore(value: js.Object): Self = StObject.set(x, "insertBefore", value.asInstanceOf[js.Any])
+      inline def setInsertBefore(value: js.Object): Self = StObject.set(x, "insertBefore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertBeforeUndefined: Self = StObject.set(x, "insertBefore", js.undefined)
+      inline def setInsertBeforeUndefined: Self = StObject.set(x, "insertBefore", js.undefined)
       
-      @scala.inline
-      def setPreserve(value: Boolean): Self = StObject.set(x, "preserve", value.asInstanceOf[js.Any])
+      inline def setPreserve(value: Boolean): Self = StObject.set(x, "preserve", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveUndefined: Self = StObject.set(x, "preserve", js.undefined)
+      inline def setPreserveUndefined: Self = StObject.set(x, "preserve", js.undefined)
       
-      @scala.inline
-      def setStage(value: Double): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
+      inline def setStage(value: Double): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStageUndefined: Self = StObject.set(x, "stage", js.undefined)
+      inline def setStageUndefined: Self = StObject.set(x, "stage", js.undefined)
     }
   }
 }

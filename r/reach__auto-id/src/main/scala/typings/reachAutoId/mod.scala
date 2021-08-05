@@ -10,6 +10,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useId(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("useId")().asInstanceOf[Double]
+  inline def useId(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("useId")().asInstanceOf[Double]
 }

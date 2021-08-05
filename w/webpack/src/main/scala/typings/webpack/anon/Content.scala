@@ -50,52 +50,37 @@ trait Content
 }
 object Content {
   
-  @scala.inline
-  def apply(content: DllReferencePluginOptionsContent, name: String): Content = {
+  inline def apply(content: DllReferencePluginOptionsContent, name: String): Content = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Content]
   }
   
-  @scala.inline
-  implicit class ContentMutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
+  extension [Self <: Content](x: Self) {
     
-    @scala.inline
-    def setContent(value: DllReferencePluginOptionsContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: DllReferencePluginOptionsContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+    inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+    inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    @scala.inline
-    def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    @scala.inline
-    def setSourceType(value: DllReferencePluginOptionsSourceType): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
+    inline def setSourceType(value: DllReferencePluginOptionsSourceType): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
+    inline def setSourceTypeUndefined: Self = StObject.set(x, "sourceType", js.undefined)
     
-    @scala.inline
-    def setType(value: require | `object`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: require | `object`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

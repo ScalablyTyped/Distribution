@@ -16,8 +16,7 @@ trait ListDynamicSlotNode
 }
 object ListDynamicSlotNode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     arguments: js.Tuple2[ExpressionNode, ListDynamicSlotIterator],
     callee: js.Symbol,
     loc: SourceLocation
@@ -27,13 +26,10 @@ object ListDynamicSlotNode {
     __obj.asInstanceOf[ListDynamicSlotNode]
   }
   
-  @scala.inline
-  implicit class ListDynamicSlotNodeMutableBuilder[Self <: ListDynamicSlotNode] (val x: Self) extends AnyVal {
+  extension [Self <: ListDynamicSlotNode](x: Self) {
     
-    @scala.inline
-    def setArguments(value: js.Tuple2[ExpressionNode, ListDynamicSlotIterator]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: js.Tuple2[ExpressionNode, ListDynamicSlotIterator]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallee(value: js.Symbol): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
+    inline def setCallee(value: js.Symbol): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
   }
 }

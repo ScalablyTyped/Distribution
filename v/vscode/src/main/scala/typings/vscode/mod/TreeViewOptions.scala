@@ -25,28 +25,21 @@ trait TreeViewOptions[T] extends StObject {
 }
 object TreeViewOptions {
   
-  @scala.inline
-  def apply[T](treeDataProvider: TreeDataProvider[T]): TreeViewOptions[T] = {
+  inline def apply[T](treeDataProvider: TreeDataProvider[T]): TreeViewOptions[T] = {
     val __obj = js.Dynamic.literal(treeDataProvider = treeDataProvider.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeViewOptions[T]]
   }
   
-  @scala.inline
-  implicit class TreeViewOptionsMutableBuilder[Self <: TreeViewOptions[?], T] (val x: Self & TreeViewOptions[T]) extends AnyVal {
+  extension [Self <: TreeViewOptions[?], T](x: Self & TreeViewOptions[T]) {
     
-    @scala.inline
-    def setCanSelectMany(value: Boolean): Self = StObject.set(x, "canSelectMany", value.asInstanceOf[js.Any])
+    inline def setCanSelectMany(value: Boolean): Self = StObject.set(x, "canSelectMany", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanSelectManyUndefined: Self = StObject.set(x, "canSelectMany", js.undefined)
+    inline def setCanSelectManyUndefined: Self = StObject.set(x, "canSelectMany", js.undefined)
     
-    @scala.inline
-    def setShowCollapseAll(value: Boolean): Self = StObject.set(x, "showCollapseAll", value.asInstanceOf[js.Any])
+    inline def setShowCollapseAll(value: Boolean): Self = StObject.set(x, "showCollapseAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowCollapseAllUndefined: Self = StObject.set(x, "showCollapseAll", js.undefined)
+    inline def setShowCollapseAllUndefined: Self = StObject.set(x, "showCollapseAll", js.undefined)
     
-    @scala.inline
-    def setTreeDataProvider(value: TreeDataProvider[T]): Self = StObject.set(x, "treeDataProvider", value.asInstanceOf[js.Any])
+    inline def setTreeDataProvider(value: TreeDataProvider[T]): Self = StObject.set(x, "treeDataProvider", value.asInstanceOf[js.Any])
   }
 }

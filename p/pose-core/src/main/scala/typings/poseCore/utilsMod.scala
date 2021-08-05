@@ -10,6 +10,5 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def sortByReversePriority(priorityOrder: js.Array[String]): js.Function2[/* a */ String, /* b */ String, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("sortByReversePriority")(priorityOrder.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* a */ String, /* b */ String, Double]]
+  inline def sortByReversePriority(priorityOrder: js.Array[String]): js.Function2[/* a */ String, /* b */ String, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("sortByReversePriority")(priorityOrder.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* a */ String, /* b */ String, Double]]
 }

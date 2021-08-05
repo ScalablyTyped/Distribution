@@ -28,34 +28,25 @@ trait FacetAttribute extends StObject {
 }
 object FacetAttribute {
   
-  @scala.inline
-  def apply(Name: AttributeName): FacetAttribute = {
+  inline def apply(Name: AttributeName): FacetAttribute = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[FacetAttribute]
   }
   
-  @scala.inline
-  implicit class FacetAttributeMutableBuilder[Self <: FacetAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: FacetAttribute](x: Self) {
     
-    @scala.inline
-    def setAttributeDefinition(value: FacetAttributeDefinition): Self = StObject.set(x, "AttributeDefinition", value.asInstanceOf[js.Any])
+    inline def setAttributeDefinition(value: FacetAttributeDefinition): Self = StObject.set(x, "AttributeDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeDefinitionUndefined: Self = StObject.set(x, "AttributeDefinition", js.undefined)
+    inline def setAttributeDefinitionUndefined: Self = StObject.set(x, "AttributeDefinition", js.undefined)
     
-    @scala.inline
-    def setAttributeReference(value: FacetAttributeReference): Self = StObject.set(x, "AttributeReference", value.asInstanceOf[js.Any])
+    inline def setAttributeReference(value: FacetAttributeReference): Self = StObject.set(x, "AttributeReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeReferenceUndefined: Self = StObject.set(x, "AttributeReference", js.undefined)
+    inline def setAttributeReferenceUndefined: Self = StObject.set(x, "AttributeReference", js.undefined)
     
-    @scala.inline
-    def setName(value: AttributeName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: AttributeName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredBehavior(value: RequiredAttributeBehavior): Self = StObject.set(x, "RequiredBehavior", value.asInstanceOf[js.Any])
+    inline def setRequiredBehavior(value: RequiredAttributeBehavior): Self = StObject.set(x, "RequiredBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredBehaviorUndefined: Self = StObject.set(x, "RequiredBehavior", js.undefined)
+    inline def setRequiredBehaviorUndefined: Self = StObject.set(x, "RequiredBehavior", js.undefined)
   }
 }

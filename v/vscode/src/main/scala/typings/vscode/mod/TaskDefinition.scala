@@ -31,17 +31,14 @@ trait TaskDefinition
 }
 object TaskDefinition {
   
-  @scala.inline
-  def apply(`type`: String): TaskDefinition = {
+  inline def apply(`type`: String): TaskDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskDefinition]
   }
   
-  @scala.inline
-  implicit class TaskDefinitionMutableBuilder[Self <: TaskDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: TaskDefinition](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

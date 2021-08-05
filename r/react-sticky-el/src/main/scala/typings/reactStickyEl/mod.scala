@@ -148,98 +148,68 @@ object mod {
     }
     object Props {
       
-      @scala.inline
-      def apply[HolderProps /* <: js.Object */](): Props[HolderProps] = {
+      inline def apply[HolderProps /* <: js.Object */](): Props[HolderProps] = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Props[HolderProps]]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props[?], HolderProps /* <: js.Object */] (val x: Self & Props[HolderProps]) extends AnyVal {
+      extension [Self <: Props[?], HolderProps /* <: js.Object */](x: Self & Props[HolderProps]) {
         
-        @scala.inline
-        def setBottomOffset(value: Double): Self = StObject.set(x, "bottomOffset", value.asInstanceOf[js.Any])
+        inline def setBottomOffset(value: Double): Self = StObject.set(x, "bottomOffset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBottomOffsetUndefined: Self = StObject.set(x, "bottomOffset", js.undefined)
+        inline def setBottomOffsetUndefined: Self = StObject.set(x, "bottomOffset", js.undefined)
         
-        @scala.inline
-        def setBoundaryElement(value: String): Self = StObject.set(x, "boundaryElement", value.asInstanceOf[js.Any])
+        inline def setBoundaryElement(value: String): Self = StObject.set(x, "boundaryElement", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBoundaryElementUndefined: Self = StObject.set(x, "boundaryElement", js.undefined)
+        inline def setBoundaryElementUndefined: Self = StObject.set(x, "boundaryElement", js.undefined)
         
-        @scala.inline
-        def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+        inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+        inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
         
-        @scala.inline
-        def setHideOnBoundaryHit(value: Boolean): Self = StObject.set(x, "hideOnBoundaryHit", value.asInstanceOf[js.Any])
+        inline def setHideOnBoundaryHit(value: Boolean): Self = StObject.set(x, "hideOnBoundaryHit", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHideOnBoundaryHitUndefined: Self = StObject.set(x, "hideOnBoundaryHit", js.undefined)
+        inline def setHideOnBoundaryHitUndefined: Self = StObject.set(x, "hideOnBoundaryHit", js.undefined)
         
-        @scala.inline
-        def setHolderCmp(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ js.Any): Self = StObject.set(x, "holderCmp", value.asInstanceOf[js.Any])
+        inline def setHolderCmp(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ js.Any): Self = StObject.set(x, "holderCmp", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHolderCmpUndefined: Self = StObject.set(x, "holderCmp", js.undefined)
+        inline def setHolderCmpUndefined: Self = StObject.set(x, "holderCmp", js.undefined)
         
-        @scala.inline
-        def setHolderProps(value: HolderProps): Self = StObject.set(x, "holderProps", value.asInstanceOf[js.Any])
+        inline def setHolderProps(value: HolderProps): Self = StObject.set(x, "holderProps", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHolderPropsUndefined: Self = StObject.set(x, "holderProps", js.undefined)
+        inline def setHolderPropsUndefined: Self = StObject.set(x, "holderProps", js.undefined)
         
-        @scala.inline
-        def setMode(value: top | bottom): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+        inline def setMode(value: top | bottom): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+        inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
         
-        @scala.inline
-        def setOnFixedToggle(value: /* fixed */ Boolean => Unit): Self = StObject.set(x, "onFixedToggle", js.Any.fromFunction1(value))
+        inline def setOnFixedToggle(value: /* fixed */ Boolean => Unit): Self = StObject.set(x, "onFixedToggle", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnFixedToggleUndefined: Self = StObject.set(x, "onFixedToggle", js.undefined)
+        inline def setOnFixedToggleUndefined: Self = StObject.set(x, "onFixedToggle", js.undefined)
         
-        @scala.inline
-        def setPositionRecheckInterval(value: Double): Self = StObject.set(x, "positionRecheckInterval", value.asInstanceOf[js.Any])
+        inline def setPositionRecheckInterval(value: Double): Self = StObject.set(x, "positionRecheckInterval", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPositionRecheckIntervalUndefined: Self = StObject.set(x, "positionRecheckInterval", js.undefined)
+        inline def setPositionRecheckIntervalUndefined: Self = StObject.set(x, "positionRecheckInterval", js.undefined)
         
-        @scala.inline
-        def setScrollElement(value: String): Self = StObject.set(x, "scrollElement", value.asInstanceOf[js.Any])
+        inline def setScrollElement(value: String): Self = StObject.set(x, "scrollElement", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setScrollElementUndefined: Self = StObject.set(x, "scrollElement", js.undefined)
+        inline def setScrollElementUndefined: Self = StObject.set(x, "scrollElement", js.undefined)
         
-        @scala.inline
-        def setStickyClassName(value: String): Self = StObject.set(x, "stickyClassName", value.asInstanceOf[js.Any])
+        inline def setStickyClassName(value: String): Self = StObject.set(x, "stickyClassName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStickyClassNameUndefined: Self = StObject.set(x, "stickyClassName", js.undefined)
+        inline def setStickyClassNameUndefined: Self = StObject.set(x, "stickyClassName", js.undefined)
         
-        @scala.inline
-        def setStickyStyle(value: CSSProperties): Self = StObject.set(x, "stickyStyle", value.asInstanceOf[js.Any])
+        inline def setStickyStyle(value: CSSProperties): Self = StObject.set(x, "stickyStyle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStickyStyleUndefined: Self = StObject.set(x, "stickyStyle", js.undefined)
+        inline def setStickyStyleUndefined: Self = StObject.set(x, "stickyStyle", js.undefined)
         
-        @scala.inline
-        def setTopOffset(value: Double): Self = StObject.set(x, "topOffset", value.asInstanceOf[js.Any])
+        inline def setTopOffset(value: Double): Self = StObject.set(x, "topOffset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTopOffsetUndefined: Self = StObject.set(x, "topOffset", js.undefined)
+        inline def setTopOffsetUndefined: Self = StObject.set(x, "topOffset", js.undefined)
         
-        @scala.inline
-        def setWrapperCmp(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ js.Any): Self = StObject.set(x, "wrapperCmp", value.asInstanceOf[js.Any])
+        inline def setWrapperCmp(value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ js.Any): Self = StObject.set(x, "wrapperCmp", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWrapperCmpUndefined: Self = StObject.set(x, "wrapperCmp", js.undefined)
+        inline def setWrapperCmpUndefined: Self = StObject.set(x, "wrapperCmp", js.undefined)
       }
     }
   }

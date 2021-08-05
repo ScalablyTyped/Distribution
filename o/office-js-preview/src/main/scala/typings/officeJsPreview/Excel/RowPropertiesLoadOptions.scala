@@ -42,31 +42,23 @@ trait RowPropertiesLoadOptions
 }
 object RowPropertiesLoadOptions {
   
-  @scala.inline
-  def apply(): RowPropertiesLoadOptions = {
+  inline def apply(): RowPropertiesLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RowPropertiesLoadOptions]
   }
   
-  @scala.inline
-  implicit class RowPropertiesLoadOptionsMutableBuilder[Self <: RowPropertiesLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RowPropertiesLoadOptions](x: Self) {
     
-    @scala.inline
-    def setFormat(value: CellPropertiesFormatLoadO): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: CellPropertiesFormatLoadO): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setRowHidden(value: Boolean): Self = StObject.set(x, "rowHidden", value.asInstanceOf[js.Any])
+    inline def setRowHidden(value: Boolean): Self = StObject.set(x, "rowHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowHiddenUndefined: Self = StObject.set(x, "rowHidden", js.undefined)
+    inline def setRowHiddenUndefined: Self = StObject.set(x, "rowHidden", js.undefined)
     
-    @scala.inline
-    def setRowIndex(value: Boolean): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
+    inline def setRowIndex(value: Boolean): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
+    inline def setRowIndexUndefined: Self = StObject.set(x, "rowIndex", js.undefined)
   }
 }

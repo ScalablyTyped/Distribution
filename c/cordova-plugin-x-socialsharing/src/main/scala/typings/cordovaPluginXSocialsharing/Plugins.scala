@@ -10,16 +10,13 @@ trait Plugins extends StObject {
 }
 object Plugins {
   
-  @scala.inline
-  def apply(socialsharing: SocialSharing): Plugins = {
+  inline def apply(socialsharing: SocialSharing): Plugins = {
     val __obj = js.Dynamic.literal(socialsharing = socialsharing.asInstanceOf[js.Any])
     __obj.asInstanceOf[Plugins]
   }
   
-  @scala.inline
-  implicit class PluginsMutableBuilder[Self <: Plugins] (val x: Self) extends AnyVal {
+  extension [Self <: Plugins](x: Self) {
     
-    @scala.inline
-    def setSocialsharing(value: SocialSharing): Self = StObject.set(x, "socialsharing", value.asInstanceOf[js.Any])
+    inline def setSocialsharing(value: SocialSharing): Self = StObject.set(x, "socialsharing", value.asInstanceOf[js.Any])
   }
 }

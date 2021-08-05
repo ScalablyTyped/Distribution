@@ -10,23 +10,15 @@ object componentAnnotationsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Listener(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("Listener")().asInstanceOf[js.Function]
-  @scala.inline
-  def Listener(eventName: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("Listener")(eventName.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def Listener(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("Listener")().asInstanceOf[js.Function]
+  inline def Listener(eventName: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("Listener")(eventName.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
-  @scala.inline
-  def Method(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("Method")().asInstanceOf[js.Function]
-  @scala.inline
-  def Method(eventName: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("Method")(eventName.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def Method(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("Method")().asInstanceOf[js.Function]
+  inline def Method(eventName: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("Method")(eventName.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
-  @scala.inline
-  def QuerySelector(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("QuerySelector")().asInstanceOf[js.Function]
-  @scala.inline
-  def QuerySelector(selector: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("QuerySelector")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def QuerySelector(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("QuerySelector")().asInstanceOf[js.Function]
+  inline def QuerySelector(selector: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("QuerySelector")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
-  @scala.inline
-  def RefSelector(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("RefSelector")().asInstanceOf[js.Function]
-  @scala.inline
-  def RefSelector(ref: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("RefSelector")(ref.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def RefSelector(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("RefSelector")().asInstanceOf[js.Function]
+  inline def RefSelector(ref: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("RefSelector")(ref.asInstanceOf[js.Any]).asInstanceOf[js.Function]
 }

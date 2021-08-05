@@ -13,16 +13,13 @@ trait DescribeLocationNfsRequest extends StObject {
 }
 object DescribeLocationNfsRequest {
   
-  @scala.inline
-  def apply(LocationArn: LocationArn): DescribeLocationNfsRequest = {
+  inline def apply(LocationArn: LocationArn): DescribeLocationNfsRequest = {
     val __obj = js.Dynamic.literal(LocationArn = LocationArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeLocationNfsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeLocationNfsRequestMutableBuilder[Self <: DescribeLocationNfsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeLocationNfsRequest](x: Self) {
     
-    @scala.inline
-    def setLocationArn(value: LocationArn): Self = StObject.set(x, "LocationArn", value.asInstanceOf[js.Any])
+    inline def setLocationArn(value: LocationArn): Self = StObject.set(x, "LocationArn", value.asInstanceOf[js.Any])
   }
 }

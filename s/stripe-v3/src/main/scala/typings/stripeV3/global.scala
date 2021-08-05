@@ -11,8 +11,7 @@ object global {
   @js.native
   def Stripe_ : StripeStatic = js.native
   
-  @scala.inline
-  def Stripe__=(x: StripeStatic): Unit = js.Dynamic.global.updateDynamic("Stripe")(x.asInstanceOf[js.Any])
+  inline def Stripe__=(x: StripeStatic): Unit = js.Dynamic.global.updateDynamic("Stripe")(x.asInstanceOf[js.Any])
   
   object stripe {
     

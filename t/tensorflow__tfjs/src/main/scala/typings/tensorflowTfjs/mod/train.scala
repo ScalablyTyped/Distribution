@@ -13,56 +13,49 @@ object train {
   @JSImport("@tensorflow/tfjs", "train.adadelta")
   @js.native
   def adadelta: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof OptimizerConstructors.adadelta */ js.Any = js.native
-  @scala.inline
-  def adadelta_=(
+  inline def adadelta_=(
     x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof OptimizerConstructors.adadelta */ js.Any
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("adadelta")(x.asInstanceOf[js.Any])
   
   @JSImport("@tensorflow/tfjs", "train.adagrad")
   @js.native
   def adagrad: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof OptimizerConstructors.adagrad */ js.Any = js.native
-  @scala.inline
-  def adagrad_=(
+  inline def adagrad_=(
     x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof OptimizerConstructors.adagrad */ js.Any
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("adagrad")(x.asInstanceOf[js.Any])
   
   @JSImport("@tensorflow/tfjs", "train.adam")
   @js.native
   def adam: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof OptimizerConstructors.adam */ js.Any = js.native
-  @scala.inline
-  def adam_=(
+  inline def adam_=(
     x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof OptimizerConstructors.adam */ js.Any
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("adam")(x.asInstanceOf[js.Any])
   
   @JSImport("@tensorflow/tfjs", "train.adamax")
   @js.native
   def adamax: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof OptimizerConstructors.adamax */ js.Any = js.native
-  @scala.inline
-  def adamax_=(
+  inline def adamax_=(
     x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof OptimizerConstructors.adamax */ js.Any
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("adamax")(x.asInstanceOf[js.Any])
   
   @JSImport("@tensorflow/tfjs", "train.momentum")
   @js.native
   def momentum: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof OptimizerConstructors.momentum */ js.Any = js.native
-  @scala.inline
-  def momentum_=(
+  inline def momentum_=(
     x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof OptimizerConstructors.momentum */ js.Any
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("momentum")(x.asInstanceOf[js.Any])
   
   @JSImport("@tensorflow/tfjs", "train.rmsprop")
   @js.native
   def rmsprop: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof OptimizerConstructors.rmsprop */ js.Any = js.native
-  @scala.inline
-  def rmsprop_=(
+  inline def rmsprop_=(
     x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof OptimizerConstructors.rmsprop */ js.Any
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rmsprop")(x.asInstanceOf[js.Any])
   
   @JSImport("@tensorflow/tfjs", "train.sgd")
   @js.native
   def sgd: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof OptimizerConstructors.sgd */ js.Any = js.native
-  @scala.inline
-  def sgd_=(
+  inline def sgd_=(
     x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof OptimizerConstructors.sgd */ js.Any
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sgd")(x.asInstanceOf[js.Any])
 }

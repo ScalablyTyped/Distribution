@@ -17,11 +17,11 @@ object commonEventEmitterMod {
     extends StObject
        with CommonEventEmitter {
     
-    var emitter: js.Any = js.native
+    /* private */ var emitter: js.Any = js.native
     
-    var eventListenersCount: js.Any = js.native
+    /* private */ var eventListenersCount: js.Any = js.native
     
-    var eventsMap: js.Any = js.native
+    /* private */ var eventsMap: js.Any = js.native
     
     /**
       * Gets the number of listeners for a given event.

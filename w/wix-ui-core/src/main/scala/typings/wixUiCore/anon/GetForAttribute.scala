@@ -24,8 +24,7 @@ trait GetForAttribute extends StObject {
 }
 object GetForAttribute {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: () => js.Any,
     exists: () => Boolean,
     getForAttribute: () => js.Any,
@@ -39,31 +38,22 @@ object GetForAttribute {
     __obj.asInstanceOf[GetForAttribute]
   }
   
-  @scala.inline
-  implicit class GetForAttributeMutableBuilder[Self <: GetForAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: GetForAttribute](x: Self) {
     
-    @scala.inline
-    def setClick(value: () => js.Any): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
+    inline def setClick(value: () => js.Any): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExists(value: () => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
+    inline def setExists(value: () => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetForAttribute(value: () => js.Any): Self = StObject.set(x, "getForAttribute", js.Any.fromFunction0(value))
+    inline def setGetForAttribute(value: () => js.Any): Self = StObject.set(x, "getForAttribute", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetId(value: () => js.Any): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+    inline def setGetId(value: () => js.Any): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLabelText(value: () => js.Any): Self = StObject.set(x, "getLabelText", js.Any.fromFunction0(value))
+    inline def setGetLabelText(value: () => js.Any): Self = StObject.set(x, "getLabelText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasEllipsis(value: () => Boolean): Self = StObject.set(x, "hasEllipsis", js.Any.fromFunction0(value))
+    inline def setHasEllipsis(value: () => Boolean): Self = StObject.set(x, "hasEllipsis", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsDisabled(value: () => Boolean): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
+    inline def setIsDisabled(value: () => Boolean): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setKeyDown(value: js.Any => js.Any): Self = StObject.set(x, "keyDown", js.Any.fromFunction1(value))
+    inline def setKeyDown(value: js.Any => js.Any): Self = StObject.set(x, "keyDown", js.Any.fromFunction1(value))
   }
 }

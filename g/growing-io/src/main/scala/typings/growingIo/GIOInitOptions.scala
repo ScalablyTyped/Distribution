@@ -11,19 +11,15 @@ trait GIOInitOptions extends StObject {
 }
 object GIOInitOptions {
   
-  @scala.inline
-  def apply(): GIOInitOptions = {
+  inline def apply(): GIOInitOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GIOInitOptions]
   }
   
-  @scala.inline
-  implicit class GIOInitOptionsMutableBuilder[Self <: GIOInitOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GIOInitOptions](x: Self) {
     
-    @scala.inline
-    def setImp(value: Boolean): Self = StObject.set(x, "imp", value.asInstanceOf[js.Any])
+    inline def setImp(value: Boolean): Self = StObject.set(x, "imp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImpUndefined: Self = StObject.set(x, "imp", js.undefined)
+    inline def setImpUndefined: Self = StObject.set(x, "imp", js.undefined)
   }
 }

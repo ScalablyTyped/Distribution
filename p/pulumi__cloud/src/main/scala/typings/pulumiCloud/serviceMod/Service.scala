@@ -39,6 +39,5 @@ trait Service extends StObject {
 }
 object Service {
   
-  @scala.inline
-  def apply: ServiceConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("Service").asInstanceOf[ServiceConstructor]
+  inline def apply: ServiceConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("Service").asInstanceOf[ServiceConstructor]
 }

@@ -33,8 +33,7 @@ trait GitItemDescriptor extends StObject {
 }
 object GitItemDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     path: String,
     recursionLevel: VersionControlRecursionType,
     version: String,
@@ -45,22 +44,16 @@ object GitItemDescriptor {
     __obj.asInstanceOf[GitItemDescriptor]
   }
   
-  @scala.inline
-  implicit class GitItemDescriptorMutableBuilder[Self <: GitItemDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: GitItemDescriptor](x: Self) {
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursionLevel(value: VersionControlRecursionType): Self = StObject.set(x, "recursionLevel", value.asInstanceOf[js.Any])
+    inline def setRecursionLevel(value: VersionControlRecursionType): Self = StObject.set(x, "recursionLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionOptions(value: GitVersionOptions): Self = StObject.set(x, "versionOptions", value.asInstanceOf[js.Any])
+    inline def setVersionOptions(value: GitVersionOptions): Self = StObject.set(x, "versionOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionType(value: GitVersionType): Self = StObject.set(x, "versionType", value.asInstanceOf[js.Any])
+    inline def setVersionType(value: GitVersionType): Self = StObject.set(x, "versionType", value.asInstanceOf[js.Any])
   }
 }

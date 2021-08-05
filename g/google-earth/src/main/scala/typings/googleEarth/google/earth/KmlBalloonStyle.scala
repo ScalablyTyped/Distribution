@@ -30,8 +30,7 @@ trait KmlBalloonStyle
 }
 object KmlBalloonStyle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     equals_ : KmlObject => Boolean,
@@ -56,19 +55,14 @@ object KmlBalloonStyle {
     __obj.asInstanceOf[KmlBalloonStyle]
   }
   
-  @scala.inline
-  implicit class KmlBalloonStyleMutableBuilder[Self <: KmlBalloonStyle] (val x: Self) extends AnyVal {
+  extension [Self <: KmlBalloonStyle](x: Self) {
     
-    @scala.inline
-    def setGetBgColor(value: () => KmlColor): Self = StObject.set(x, "getBgColor", js.Any.fromFunction0(value))
+    inline def setGetBgColor(value: () => KmlColor): Self = StObject.set(x, "getBgColor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
+    inline def setGetText(value: () => String): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTextColor(value: () => KmlColor): Self = StObject.set(x, "getTextColor", js.Any.fromFunction0(value))
+    inline def setGetTextColor(value: () => KmlColor): Self = StObject.set(x, "getTextColor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetText(value: String => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
+    inline def setSetText(value: String => Unit): Self = StObject.set(x, "setText", js.Any.fromFunction1(value))
   }
 }

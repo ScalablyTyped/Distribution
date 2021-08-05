@@ -17,22 +17,17 @@ trait CONFLICTING extends StObject {
 }
 object CONFLICTING {
   
-  @scala.inline
-  def apply(): CONFLICTING = {
+  inline def apply(): CONFLICTING = {
     val __obj = js.Dynamic.literal(CONFLICTING = "conflicting", PENDING = "pending", SYNCED = "synced")
     __obj.asInstanceOf[CONFLICTING]
   }
   
-  @scala.inline
-  implicit class CONFLICTINGMutableBuilder[Self <: CONFLICTING] (val x: Self) extends AnyVal {
+  extension [Self <: CONFLICTING](x: Self) {
     
-    @scala.inline
-    def setCONFLICTING(value: conflicting_): Self = StObject.set(x, "CONFLICTING", value.asInstanceOf[js.Any])
+    inline def setCONFLICTING(value: conflicting_): Self = StObject.set(x, "CONFLICTING", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPENDING(value: pending_): Self = StObject.set(x, "PENDING", value.asInstanceOf[js.Any])
+    inline def setPENDING(value: pending_): Self = StObject.set(x, "PENDING", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSYNCED(value: synced_): Self = StObject.set(x, "SYNCED", value.asInstanceOf[js.Any])
+    inline def setSYNCED(value: synced_): Self = StObject.set(x, "SYNCED", value.asInstanceOf[js.Any])
   }
 }

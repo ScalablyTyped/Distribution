@@ -43,61 +43,43 @@ trait DescribeUsageLimitsMessage extends StObject {
 }
 object DescribeUsageLimitsMessage {
   
-  @scala.inline
-  def apply(): DescribeUsageLimitsMessage = {
+  inline def apply(): DescribeUsageLimitsMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeUsageLimitsMessage]
   }
   
-  @scala.inline
-  implicit class DescribeUsageLimitsMessageMutableBuilder[Self <: DescribeUsageLimitsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeUsageLimitsMessage](x: Self) {
     
-    @scala.inline
-    def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterIdentifierUndefined: Self = StObject.set(x, "ClusterIdentifier", js.undefined)
+    inline def setClusterIdentifierUndefined: Self = StObject.set(x, "ClusterIdentifier", js.undefined)
     
-    @scala.inline
-    def setFeatureType(value: UsageLimitFeatureType): Self = StObject.set(x, "FeatureType", value.asInstanceOf[js.Any])
+    inline def setFeatureType(value: UsageLimitFeatureType): Self = StObject.set(x, "FeatureType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureTypeUndefined: Self = StObject.set(x, "FeatureType", js.undefined)
+    inline def setFeatureTypeUndefined: Self = StObject.set(x, "FeatureType", js.undefined)
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
+    inline def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
+    inline def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
-    @scala.inline
-    def setTagKeys(value: TagKeyList): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
+    inline def setTagKeys(value: TagKeyList): Self = StObject.set(x, "TagKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagKeysUndefined: Self = StObject.set(x, "TagKeys", js.undefined)
+    inline def setTagKeysUndefined: Self = StObject.set(x, "TagKeys", js.undefined)
     
-    @scala.inline
-    def setTagKeysVarargs(value: String*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
+    inline def setTagKeysVarargs(value: String*): Self = StObject.set(x, "TagKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setTagValues(value: TagValueList): Self = StObject.set(x, "TagValues", value.asInstanceOf[js.Any])
+    inline def setTagValues(value: TagValueList): Self = StObject.set(x, "TagValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagValuesUndefined: Self = StObject.set(x, "TagValues", js.undefined)
+    inline def setTagValuesUndefined: Self = StObject.set(x, "TagValues", js.undefined)
     
-    @scala.inline
-    def setTagValuesVarargs(value: String*): Self = StObject.set(x, "TagValues", js.Array(value :_*))
+    inline def setTagValuesVarargs(value: String*): Self = StObject.set(x, "TagValues", js.Array(value :_*))
     
-    @scala.inline
-    def setUsageLimitId(value: String): Self = StObject.set(x, "UsageLimitId", value.asInstanceOf[js.Any])
+    inline def setUsageLimitId(value: String): Self = StObject.set(x, "UsageLimitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageLimitIdUndefined: Self = StObject.set(x, "UsageLimitId", js.undefined)
+    inline def setUsageLimitIdUndefined: Self = StObject.set(x, "UsageLimitId", js.undefined)
   }
 }

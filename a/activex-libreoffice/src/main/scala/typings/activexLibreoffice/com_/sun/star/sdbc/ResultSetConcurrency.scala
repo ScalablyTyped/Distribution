@@ -15,10 +15,8 @@ object ResultSetConcurrency {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def READ_ONLY: `1007` = 1007.asInstanceOf[`1007`]
+    inline def READ_ONLY: `1007` = 1007.asInstanceOf[`1007`]
     
-    @scala.inline
-    def UPDATABLE: `1008` = 1008.asInstanceOf[`1008`]
+    inline def UPDATABLE: `1008` = 1008.asInstanceOf[`1008`]
   }
 }

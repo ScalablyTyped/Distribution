@@ -12,19 +12,15 @@ trait PhononSidePanelComponent extends StObject {
 }
 object PhononSidePanelComponent {
   
-  @scala.inline
-  def apply(close: () => Unit, open: () => Unit): PhononSidePanelComponent = {
+  inline def apply(close: () => Unit, open: () => Unit): PhononSidePanelComponent = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), open = js.Any.fromFunction0(open))
     __obj.asInstanceOf[PhononSidePanelComponent]
   }
   
-  @scala.inline
-  implicit class PhononSidePanelComponentMutableBuilder[Self <: PhononSidePanelComponent] (val x: Self) extends AnyVal {
+  extension [Self <: PhononSidePanelComponent](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
+    inline def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
   }
 }

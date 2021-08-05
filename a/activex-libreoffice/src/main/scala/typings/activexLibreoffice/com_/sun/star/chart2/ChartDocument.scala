@@ -31,8 +31,7 @@ trait ChartDocument
      with XInitialization
 object ChartDocument {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Args: SafeArray[PropertyValue],
     ChartTypeManager: XChartTypeManager,
     CurrentController: XController,

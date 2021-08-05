@@ -23,28 +23,21 @@ trait SchemaFilterCriteria extends StObject {
 }
 object SchemaFilterCriteria {
   
-  @scala.inline
-  def apply(): SchemaFilterCriteria = {
+  inline def apply(): SchemaFilterCriteria = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFilterCriteria]
   }
   
-  @scala.inline
-  implicit class SchemaFilterCriteriaMutableBuilder[Self <: SchemaFilterCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFilterCriteria](x: Self) {
     
-    @scala.inline
-    def setCondition(value: SchemaBooleanCondition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: SchemaBooleanCondition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    @scala.inline
-    def setHiddenValues(value: js.Array[String]): Self = StObject.set(x, "hiddenValues", value.asInstanceOf[js.Any])
+    inline def setHiddenValues(value: js.Array[String]): Self = StObject.set(x, "hiddenValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenValuesUndefined: Self = StObject.set(x, "hiddenValues", js.undefined)
+    inline def setHiddenValuesUndefined: Self = StObject.set(x, "hiddenValues", js.undefined)
     
-    @scala.inline
-    def setHiddenValuesVarargs(value: String*): Self = StObject.set(x, "hiddenValues", js.Array(value :_*))
+    inline def setHiddenValuesVarargs(value: String*): Self = StObject.set(x, "hiddenValues", js.Array(value :_*))
   }
 }

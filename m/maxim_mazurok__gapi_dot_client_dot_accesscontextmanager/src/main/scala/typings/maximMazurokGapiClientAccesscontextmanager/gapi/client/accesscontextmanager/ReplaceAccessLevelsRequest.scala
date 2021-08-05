@@ -18,28 +18,21 @@ trait ReplaceAccessLevelsRequest extends StObject {
 }
 object ReplaceAccessLevelsRequest {
   
-  @scala.inline
-  def apply(): ReplaceAccessLevelsRequest = {
+  inline def apply(): ReplaceAccessLevelsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReplaceAccessLevelsRequest]
   }
   
-  @scala.inline
-  implicit class ReplaceAccessLevelsRequestMutableBuilder[Self <: ReplaceAccessLevelsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ReplaceAccessLevelsRequest](x: Self) {
     
-    @scala.inline
-    def setAccessLevels(value: js.Array[AccessLevel]): Self = StObject.set(x, "accessLevels", value.asInstanceOf[js.Any])
+    inline def setAccessLevels(value: js.Array[AccessLevel]): Self = StObject.set(x, "accessLevels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessLevelsUndefined: Self = StObject.set(x, "accessLevels", js.undefined)
+    inline def setAccessLevelsUndefined: Self = StObject.set(x, "accessLevels", js.undefined)
     
-    @scala.inline
-    def setAccessLevelsVarargs(value: AccessLevel*): Self = StObject.set(x, "accessLevels", js.Array(value :_*))
+    inline def setAccessLevelsVarargs(value: AccessLevel*): Self = StObject.set(x, "accessLevels", js.Array(value :_*))
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
   }
 }

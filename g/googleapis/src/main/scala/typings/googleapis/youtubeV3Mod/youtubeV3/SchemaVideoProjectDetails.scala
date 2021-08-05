@@ -16,22 +16,17 @@ trait SchemaVideoProjectDetails extends StObject {
 }
 object SchemaVideoProjectDetails {
   
-  @scala.inline
-  def apply(): SchemaVideoProjectDetails = {
+  inline def apply(): SchemaVideoProjectDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVideoProjectDetails]
   }
   
-  @scala.inline
-  implicit class SchemaVideoProjectDetailsMutableBuilder[Self <: SchemaVideoProjectDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaVideoProjectDetails](x: Self) {
     
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

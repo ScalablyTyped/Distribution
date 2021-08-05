@@ -26,40 +26,29 @@ trait Auth0LockAdditionalCheckboxSignUpField
 }
 object Auth0LockAdditionalCheckboxSignUpField {
   
-  @scala.inline
-  def apply(name: String, placeholder: String, prefill: `true` | `false`): Auth0LockAdditionalCheckboxSignUpField = {
+  inline def apply(name: String, placeholder: String, prefill: `true` | `false`): Auth0LockAdditionalCheckboxSignUpField = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], placeholder = placeholder.asInstanceOf[js.Any], prefill = prefill.asInstanceOf[js.Any])
     __obj.asInstanceOf[Auth0LockAdditionalCheckboxSignUpField]
   }
   
-  @scala.inline
-  implicit class Auth0LockAdditionalCheckboxSignUpFieldMutableBuilder[Self <: Auth0LockAdditionalCheckboxSignUpField] (val x: Self) extends AnyVal {
+  extension [Self <: Auth0LockAdditionalCheckboxSignUpField](x: Self) {
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefill(value: `true` | `false`): Self = StObject.set(x, "prefill", value.asInstanceOf[js.Any])
+    inline def setPrefill(value: `true` | `false`): Self = StObject.set(x, "prefill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: checkbox): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: checkbox): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setValidator(value: /* input */ String => Hint): Self = StObject.set(x, "validator", js.Any.fromFunction1(value))
+    inline def setValidator(value: /* input */ String => Hint): Self = StObject.set(x, "validator", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
+    inline def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
   }
 }

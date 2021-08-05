@@ -38,49 +38,35 @@ trait MotionImageInserter extends StObject {
 }
 object MotionImageInserter {
   
-  @scala.inline
-  def apply(): MotionImageInserter = {
+  inline def apply(): MotionImageInserter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MotionImageInserter]
   }
   
-  @scala.inline
-  implicit class MotionImageInserterMutableBuilder[Self <: MotionImageInserter] (val x: Self) extends AnyVal {
+  extension [Self <: MotionImageInserter](x: Self) {
     
-    @scala.inline
-    def setFramerate(value: MotionImageInsertionFramerate): Self = StObject.set(x, "Framerate", value.asInstanceOf[js.Any])
+    inline def setFramerate(value: MotionImageInsertionFramerate): Self = StObject.set(x, "Framerate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFramerateUndefined: Self = StObject.set(x, "Framerate", js.undefined)
+    inline def setFramerateUndefined: Self = StObject.set(x, "Framerate", js.undefined)
     
-    @scala.inline
-    def setInput(value: stringMin14Max1285PatternS3Mov09PngHttpsMov09Png): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
+    inline def setInput(value: stringMin14Max1285PatternS3Mov09PngHttpsMov09Png): Self = StObject.set(x, "Input", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputUndefined: Self = StObject.set(x, "Input", js.undefined)
+    inline def setInputUndefined: Self = StObject.set(x, "Input", js.undefined)
     
-    @scala.inline
-    def setInsertionMode(value: MotionImageInsertionMode): Self = StObject.set(x, "InsertionMode", value.asInstanceOf[js.Any])
+    inline def setInsertionMode(value: MotionImageInsertionMode): Self = StObject.set(x, "InsertionMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertionModeUndefined: Self = StObject.set(x, "InsertionMode", js.undefined)
+    inline def setInsertionModeUndefined: Self = StObject.set(x, "InsertionMode", js.undefined)
     
-    @scala.inline
-    def setOffset(value: MotionImageInsertionOffset): Self = StObject.set(x, "Offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: MotionImageInsertionOffset): Self = StObject.set(x, "Offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "Offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "Offset", js.undefined)
     
-    @scala.inline
-    def setPlayback(value: MotionImagePlayback): Self = StObject.set(x, "Playback", value.asInstanceOf[js.Any])
+    inline def setPlayback(value: MotionImagePlayback): Self = StObject.set(x, "Playback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaybackUndefined: Self = StObject.set(x, "Playback", js.undefined)
+    inline def setPlaybackUndefined: Self = StObject.set(x, "Playback", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: stringMin11Max11Pattern01D20305D205D): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: stringMin11Max11Pattern01D20305D205D): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "StartTime", js.undefined)
   }
 }

@@ -15,8 +15,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def cipher(
+  inline def cipher(
     algorithm: String,
     cipherDirection: CipherDirection,
     key: Buffer,
@@ -24,8 +23,7 @@ object mod {
     plaintext: Buffer,
     cb: js.Function2[/* error */ js.UndefOr[Error], /* ciphertext */ Buffer, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cipher")(algorithm.asInstanceOf[js.Any], cipherDirection.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any], plaintext.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def cipher(
+  inline def cipher(
     algorithm: String,
     cipherDirection: CipherDirection,
     key: Buffer,
@@ -42,14 +40,12 @@ object mod {
     cb: js.Function2[/* error */ js.UndefOr[Error], /* targetSize */ Double, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cipher")(algorithm.asInstanceOf[js.Any], cipherDirection.asInstanceOf[js.Any], key.asInstanceOf[js.Any], keyOffset.asInstanceOf[js.Any], keySize.asInstanceOf[js.Any], iv.asInstanceOf[js.Any], ivOffset.asInstanceOf[js.Any], ivSize.asInstanceOf[js.Any], source.asInstanceOf[js.Any], sourceOffset.asInstanceOf[js.Any], sourceSize.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetOffset.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def hash(
+  inline def hash(
     algorithm: String,
     source: Buffer,
     cb: js.Function2[/* error */ js.UndefOr[Error], /* hash */ Buffer, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(algorithm.asInstanceOf[js.Any], source.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def hash(
+  inline def hash(
     algorithm: String,
     source: Buffer,
     sourceOffset: Double,
@@ -59,8 +55,7 @@ object mod {
     cb: js.Function2[/* error */ js.UndefOr[Error], /* targetSize */ Double, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(algorithm.asInstanceOf[js.Any], source.asInstanceOf[js.Any], sourceOffset.asInstanceOf[js.Any], sourceSize.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetOffset.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def hmac(
+  inline def hmac(
     algorithm: String,
     key: Buffer,
     keyOffset: Double,
@@ -72,8 +67,7 @@ object mod {
     targetOffset: Double,
     cb: js.Function2[/* error */ js.UndefOr[Error], /* targetSize */ Double, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hmac")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], keyOffset.asInstanceOf[js.Any], keySize.asInstanceOf[js.Any], source.asInstanceOf[js.Any], sourceOffset.asInstanceOf[js.Any], sourceSize.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetOffset.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def hmac(
+  inline def hmac(
     algorithm: String,
     key: Buffer,
     source: Buffer,
@@ -87,10 +81,8 @@ object mod {
   trait CipherDirection extends StObject
   object CipherDirection {
     
-    @scala.inline
-    def Decrypt: `0` = 0.asInstanceOf[`0`]
+    inline def Decrypt: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def Encrypt: `1` = 1.asInstanceOf[`1`]
+    inline def Encrypt: `1` = 1.asInstanceOf[`1`]
   }
 }

@@ -16,8 +16,7 @@ trait AutoTextEntry
      with XText
 object AutoTextEntry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     End: XTextRange,
     Start: XTextRange,
     String: String,

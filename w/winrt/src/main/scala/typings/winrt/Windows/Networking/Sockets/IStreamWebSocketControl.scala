@@ -14,8 +14,7 @@ trait IStreamWebSocketControl
 }
 object IStreamWebSocketControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     noDelay: Boolean,
     outboundBufferSizeInBytes: Double,
     proxyCredential: PasswordCredential,
@@ -26,10 +25,8 @@ object IStreamWebSocketControl {
     __obj.asInstanceOf[IStreamWebSocketControl]
   }
   
-  @scala.inline
-  implicit class IStreamWebSocketControlMutableBuilder[Self <: IStreamWebSocketControl] (val x: Self) extends AnyVal {
+  extension [Self <: IStreamWebSocketControl](x: Self) {
     
-    @scala.inline
-    def setNoDelay(value: Boolean): Self = StObject.set(x, "noDelay", value.asInstanceOf[js.Any])
+    inline def setNoDelay(value: Boolean): Self = StObject.set(x, "noDelay", value.asInstanceOf[js.Any])
   }
 }

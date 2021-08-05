@@ -53,73 +53,51 @@ trait DescribeLaunchTemplateVersionsRequest extends StObject {
 }
 object DescribeLaunchTemplateVersionsRequest {
   
-  @scala.inline
-  def apply(): DescribeLaunchTemplateVersionsRequest = {
+  inline def apply(): DescribeLaunchTemplateVersionsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeLaunchTemplateVersionsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeLaunchTemplateVersionsRequestMutableBuilder[Self <: DescribeLaunchTemplateVersionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeLaunchTemplateVersionsRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setLaunchTemplateId(value: LaunchTemplateId): Self = StObject.set(x, "LaunchTemplateId", value.asInstanceOf[js.Any])
+    inline def setLaunchTemplateId(value: LaunchTemplateId): Self = StObject.set(x, "LaunchTemplateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchTemplateIdUndefined: Self = StObject.set(x, "LaunchTemplateId", js.undefined)
+    inline def setLaunchTemplateIdUndefined: Self = StObject.set(x, "LaunchTemplateId", js.undefined)
     
-    @scala.inline
-    def setLaunchTemplateName(value: LaunchTemplateName): Self = StObject.set(x, "LaunchTemplateName", value.asInstanceOf[js.Any])
+    inline def setLaunchTemplateName(value: LaunchTemplateName): Self = StObject.set(x, "LaunchTemplateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchTemplateNameUndefined: Self = StObject.set(x, "LaunchTemplateName", js.undefined)
+    inline def setLaunchTemplateNameUndefined: Self = StObject.set(x, "LaunchTemplateName", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: Integer): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Integer): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setMaxVersion(value: String): Self = StObject.set(x, "MaxVersion", value.asInstanceOf[js.Any])
+    inline def setMaxVersion(value: String): Self = StObject.set(x, "MaxVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxVersionUndefined: Self = StObject.set(x, "MaxVersion", js.undefined)
+    inline def setMaxVersionUndefined: Self = StObject.set(x, "MaxVersion", js.undefined)
     
-    @scala.inline
-    def setMinVersion(value: String): Self = StObject.set(x, "MinVersion", value.asInstanceOf[js.Any])
+    inline def setMinVersion(value: String): Self = StObject.set(x, "MinVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinVersionUndefined: Self = StObject.set(x, "MinVersion", js.undefined)
+    inline def setMinVersionUndefined: Self = StObject.set(x, "MinVersion", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setVersions(value: VersionStringList): Self = StObject.set(x, "Versions", value.asInstanceOf[js.Any])
+    inline def setVersions(value: VersionStringList): Self = StObject.set(x, "Versions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionsUndefined: Self = StObject.set(x, "Versions", js.undefined)
+    inline def setVersionsUndefined: Self = StObject.set(x, "Versions", js.undefined)
     
-    @scala.inline
-    def setVersionsVarargs(value: String*): Self = StObject.set(x, "Versions", js.Array(value :_*))
+    inline def setVersionsVarargs(value: String*): Self = StObject.set(x, "Versions", js.Array(value :_*))
   }
 }

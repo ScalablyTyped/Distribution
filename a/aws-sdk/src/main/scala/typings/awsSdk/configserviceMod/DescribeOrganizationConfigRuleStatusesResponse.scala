@@ -18,28 +18,21 @@ trait DescribeOrganizationConfigRuleStatusesResponse extends StObject {
 }
 object DescribeOrganizationConfigRuleStatusesResponse {
   
-  @scala.inline
-  def apply(): DescribeOrganizationConfigRuleStatusesResponse = {
+  inline def apply(): DescribeOrganizationConfigRuleStatusesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeOrganizationConfigRuleStatusesResponse]
   }
   
-  @scala.inline
-  implicit class DescribeOrganizationConfigRuleStatusesResponseMutableBuilder[Self <: DescribeOrganizationConfigRuleStatusesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeOrganizationConfigRuleStatusesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setOrganizationConfigRuleStatuses(value: OrganizationConfigRuleStatuses): Self = StObject.set(x, "OrganizationConfigRuleStatuses", value.asInstanceOf[js.Any])
+    inline def setOrganizationConfigRuleStatuses(value: OrganizationConfigRuleStatuses): Self = StObject.set(x, "OrganizationConfigRuleStatuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationConfigRuleStatusesUndefined: Self = StObject.set(x, "OrganizationConfigRuleStatuses", js.undefined)
+    inline def setOrganizationConfigRuleStatusesUndefined: Self = StObject.set(x, "OrganizationConfigRuleStatuses", js.undefined)
     
-    @scala.inline
-    def setOrganizationConfigRuleStatusesVarargs(value: OrganizationConfigRuleStatus*): Self = StObject.set(x, "OrganizationConfigRuleStatuses", js.Array(value :_*))
+    inline def setOrganizationConfigRuleStatusesVarargs(value: OrganizationConfigRuleStatus*): Self = StObject.set(x, "OrganizationConfigRuleStatuses", js.Array(value :_*))
   }
 }

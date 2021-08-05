@@ -33,43 +33,31 @@ trait UserProfile extends StObject {
 }
 object UserProfile {
   
-  @scala.inline
-  def apply(): UserProfile = {
+  inline def apply(): UserProfile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserProfile]
   }
   
-  @scala.inline
-  implicit class UserProfileMutableBuilder[Self <: UserProfile] (val x: Self) extends AnyVal {
+  extension [Self <: UserProfile](x: Self) {
     
-    @scala.inline
-    def setAllowSelfManagement(value: Boolean): Self = StObject.set(x, "AllowSelfManagement", value.asInstanceOf[js.Any])
+    inline def setAllowSelfManagement(value: Boolean): Self = StObject.set(x, "AllowSelfManagement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowSelfManagementUndefined: Self = StObject.set(x, "AllowSelfManagement", js.undefined)
+    inline def setAllowSelfManagementUndefined: Self = StObject.set(x, "AllowSelfManagement", js.undefined)
     
-    @scala.inline
-    def setIamUserArn(value: String): Self = StObject.set(x, "IamUserArn", value.asInstanceOf[js.Any])
+    inline def setIamUserArn(value: String): Self = StObject.set(x, "IamUserArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIamUserArnUndefined: Self = StObject.set(x, "IamUserArn", js.undefined)
+    inline def setIamUserArnUndefined: Self = StObject.set(x, "IamUserArn", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setSshPublicKey(value: String): Self = StObject.set(x, "SshPublicKey", value.asInstanceOf[js.Any])
+    inline def setSshPublicKey(value: String): Self = StObject.set(x, "SshPublicKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSshPublicKeyUndefined: Self = StObject.set(x, "SshPublicKey", js.undefined)
+    inline def setSshPublicKeyUndefined: Self = StObject.set(x, "SshPublicKey", js.undefined)
     
-    @scala.inline
-    def setSshUsername(value: String): Self = StObject.set(x, "SshUsername", value.asInstanceOf[js.Any])
+    inline def setSshUsername(value: String): Self = StObject.set(x, "SshUsername", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSshUsernameUndefined: Self = StObject.set(x, "SshUsername", js.undefined)
+    inline def setSshUsernameUndefined: Self = StObject.set(x, "SshUsername", js.undefined)
   }
 }

@@ -27,20 +27,15 @@ object callbackApiMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def connect(callback: js.Function2[/* err */ js.Any, /* connection */ Connection, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def connect(url: String, callback: js.Function2[/* err */ js.Any, /* connection */ Connection, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def connect(
+  inline def connect(callback: js.Function2[/* err */ js.Any, /* connection */ Connection, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def connect(url: String, callback: js.Function2[/* err */ js.Any, /* connection */ Connection, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def connect(
     url: String,
     socketOptions: js.Any,
     callback: js.Function2[/* err */ js.Any, /* connection */ Connection, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], socketOptions.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def connect(url: Connect, callback: js.Function2[/* err */ js.Any, /* connection */ Connection, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def connect(
+  inline def connect(url: Connect, callback: js.Function2[/* err */ js.Any, /* connection */ Connection, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def connect(
     url: Connect,
     socketOptions: js.Any,
     callback: js.Function2[/* err */ js.Any, /* connection */ Connection, Unit]
@@ -52,11 +47,9 @@ object callbackApiMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def external(): Mechanism = ^.asInstanceOf[js.Dynamic].applyDynamic("external")().asInstanceOf[Mechanism]
+    inline def external(): Mechanism = ^.asInstanceOf[js.Dynamic].applyDynamic("external")().asInstanceOf[Mechanism]
     
-    @scala.inline
-    def plain(username: String, password: String): Password = (^.asInstanceOf[js.Dynamic].applyDynamic("plain")(username.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Password]
+    inline def plain(username: String, password: String): Password = (^.asInstanceOf[js.Dynamic].applyDynamic("plain")(username.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Password]
   }
   
   @js.native

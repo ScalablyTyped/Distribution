@@ -14,16 +14,13 @@ trait BucketServerSideEncryptionConfiguration extends StObject {
 }
 object BucketServerSideEncryptionConfiguration {
   
-  @scala.inline
-  def apply(rule: Input[BucketServerSideEncryptionConfigurationRule]): BucketServerSideEncryptionConfiguration = {
+  inline def apply(rule: Input[BucketServerSideEncryptionConfigurationRule]): BucketServerSideEncryptionConfiguration = {
     val __obj = js.Dynamic.literal(rule = rule.asInstanceOf[js.Any])
     __obj.asInstanceOf[BucketServerSideEncryptionConfiguration]
   }
   
-  @scala.inline
-  implicit class BucketServerSideEncryptionConfigurationMutableBuilder[Self <: BucketServerSideEncryptionConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: BucketServerSideEncryptionConfiguration](x: Self) {
     
-    @scala.inline
-    def setRule(value: Input[BucketServerSideEncryptionConfigurationRule]): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: Input[BucketServerSideEncryptionConfigurationRule]): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
   }
 }

@@ -10,8 +10,6 @@ object l10nMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def get(identifier: String, count: Double, placeholder: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(identifier.asInstanceOf[js.Any], count.asInstanceOf[js.Any], placeholder.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def get(identifier: String, count: Unit, placeholder: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(identifier.asInstanceOf[js.Any], count.asInstanceOf[js.Any], placeholder.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def get(identifier: String, count: Double, placeholder: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(identifier.asInstanceOf[js.Any], count.asInstanceOf[js.Any], placeholder.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def get(identifier: String, count: Unit, placeholder: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(identifier.asInstanceOf[js.Any], count.asInstanceOf[js.Any], placeholder.asInstanceOf[js.Any])).asInstanceOf[String]
 }

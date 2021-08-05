@@ -45,23 +45,18 @@ object iserverMod {
   }
   object IServer {
     
-    @scala.inline
-    def apply(addClient: IClientDriver => Unit, close: () => Unit, open: Double => Unit): IServer = {
+    inline def apply(addClient: IClientDriver => Unit, close: () => Unit, open: Double => Unit): IServer = {
       val __obj = js.Dynamic.literal(addClient = js.Any.fromFunction1(addClient), close = js.Any.fromFunction0(close), open = js.Any.fromFunction1(open))
       __obj.asInstanceOf[IServer]
     }
     
-    @scala.inline
-    implicit class IServerMutableBuilder[Self <: IServer] (val x: Self) extends AnyVal {
+    extension [Self <: IServer](x: Self) {
       
-      @scala.inline
-      def setAddClient(value: IClientDriver => Unit): Self = StObject.set(x, "addClient", js.Any.fromFunction1(value))
+      inline def setAddClient(value: IClientDriver => Unit): Self = StObject.set(x, "addClient", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOpen(value: Double => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
+      inline def setOpen(value: Double => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
     }
   }
 }

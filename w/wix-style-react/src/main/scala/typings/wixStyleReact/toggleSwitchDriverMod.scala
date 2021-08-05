@@ -15,20 +15,16 @@ object toggleSwitchDriverMod {
   }
   object ToggleSwitchDriver {
     
-    @scala.inline
-    def apply(getSize: () => String, getSkin: () => String): ToggleSwitchDriver = {
+    inline def apply(getSize: () => String, getSkin: () => String): ToggleSwitchDriver = {
       val __obj = js.Dynamic.literal(getSize = js.Any.fromFunction0(getSize), getSkin = js.Any.fromFunction0(getSkin))
       __obj.asInstanceOf[ToggleSwitchDriver]
     }
     
-    @scala.inline
-    implicit class ToggleSwitchDriverMutableBuilder[Self <: ToggleSwitchDriver] (val x: Self) extends AnyVal {
+    extension [Self <: ToggleSwitchDriver](x: Self) {
       
-      @scala.inline
-      def setGetSize(value: () => String): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
+      inline def setGetSize(value: () => String): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSkin(value: () => String): Self = StObject.set(x, "getSkin", js.Any.fromFunction0(value))
+      inline def setGetSkin(value: () => String): Self = StObject.set(x, "getSkin", js.Any.fromFunction0(value))
     }
   }
 }

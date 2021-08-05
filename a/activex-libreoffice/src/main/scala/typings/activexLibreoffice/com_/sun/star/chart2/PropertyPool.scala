@@ -32,8 +32,7 @@ trait PropertyPool
 }
 object PropertyPool {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Defaults: XPropertySet,
     DisplayName: String,
     FollowStyle: String,
@@ -77,10 +76,8 @@ object PropertyPool {
     __obj.asInstanceOf[PropertyPool]
   }
   
-  @scala.inline
-  implicit class PropertyPoolMutableBuilder[Self <: PropertyPool] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyPool](x: Self) {
     
-    @scala.inline
-    def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
+    inline def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
   }
 }

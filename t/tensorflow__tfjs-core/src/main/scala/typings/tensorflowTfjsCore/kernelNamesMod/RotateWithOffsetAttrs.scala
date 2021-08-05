@@ -14,8 +14,7 @@ trait RotateWithOffsetAttrs extends StObject {
 }
 object RotateWithOffsetAttrs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     center: Double | (js.Tuple2[Double, Double]),
     fillValue: Double | (js.Tuple3[Double, Double, Double]),
     radians: Double
@@ -24,16 +23,12 @@ object RotateWithOffsetAttrs {
     __obj.asInstanceOf[RotateWithOffsetAttrs]
   }
   
-  @scala.inline
-  implicit class RotateWithOffsetAttrsMutableBuilder[Self <: RotateWithOffsetAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: RotateWithOffsetAttrs](x: Self) {
     
-    @scala.inline
-    def setCenter(value: Double | (js.Tuple2[Double, Double])): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: Double | (js.Tuple2[Double, Double])): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillValue(value: Double | (js.Tuple3[Double, Double, Double])): Self = StObject.set(x, "fillValue", value.asInstanceOf[js.Any])
+    inline def setFillValue(value: Double | (js.Tuple3[Double, Double, Double])): Self = StObject.set(x, "fillValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadians(value: Double): Self = StObject.set(x, "radians", value.asInstanceOf[js.Any])
+    inline def setRadians(value: Double): Self = StObject.set(x, "radians", value.asInstanceOf[js.Any])
   }
 }

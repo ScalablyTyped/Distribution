@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcPrintObjQuality extends StObject
 object AcPrintObjQuality {
   
-  @scala.inline
-  def acPRPQDraft: `-1` = -1.asInstanceOf[`-1`]
+  inline def acPRPQDraft: `-1` = -1.asInstanceOf[`-1`]
   
-  @scala.inline
-  def acPRPQHigh: `-4` = -4.asInstanceOf[`-4`]
+  inline def acPRPQHigh: `-4` = -4.asInstanceOf[`-4`]
   
-  @scala.inline
-  def acPRPQLow: `-2` = -2.asInstanceOf[`-2`]
+  inline def acPRPQLow: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def acPRPQMedium: `-3` = -3.asInstanceOf[`-3`]
+  inline def acPRPQMedium: `-3` = -3.asInstanceOf[`-3`]
 }

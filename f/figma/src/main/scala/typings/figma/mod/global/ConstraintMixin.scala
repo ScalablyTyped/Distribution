@@ -10,16 +10,13 @@ trait ConstraintMixin extends StObject {
 }
 object ConstraintMixin {
   
-  @scala.inline
-  def apply(constraints: Constraints): ConstraintMixin = {
+  inline def apply(constraints: Constraints): ConstraintMixin = {
     val __obj = js.Dynamic.literal(constraints = constraints.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConstraintMixin]
   }
   
-  @scala.inline
-  implicit class ConstraintMixinMutableBuilder[Self <: ConstraintMixin] (val x: Self) extends AnyVal {
+  extension [Self <: ConstraintMixin](x: Self) {
     
-    @scala.inline
-    def setConstraints(value: Constraints): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
+    inline def setConstraints(value: Constraints): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
   }
 }

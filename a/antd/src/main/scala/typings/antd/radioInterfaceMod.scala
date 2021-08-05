@@ -26,8 +26,7 @@ object radioInterfaceMod {
   }
   object RadioChangeEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       nativeEvent: MouseEvent,
       preventDefault: () => Unit,
       stopPropagation: () => Unit,
@@ -37,20 +36,15 @@ object radioInterfaceMod {
       __obj.asInstanceOf[RadioChangeEvent]
     }
     
-    @scala.inline
-    implicit class RadioChangeEventMutableBuilder[Self <: RadioChangeEvent] (val x: Self) extends AnyVal {
+    extension [Self <: RadioChangeEvent](x: Self) {
       
-      @scala.inline
-      def setNativeEvent(value: MouseEvent): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
+      inline def setNativeEvent(value: MouseEvent): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
+      inline def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
+      inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTarget(value: RadioChangeEventTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: RadioChangeEventTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
   
@@ -63,17 +57,14 @@ object radioInterfaceMod {
   }
   object RadioChangeEventTarget {
     
-    @scala.inline
-    def apply(checked: Boolean): RadioChangeEventTarget = {
+    inline def apply(checked: Boolean): RadioChangeEventTarget = {
       val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any])
       __obj.asInstanceOf[RadioChangeEventTarget]
     }
     
-    @scala.inline
-    implicit class RadioChangeEventTargetMutableBuilder[Self <: RadioChangeEventTarget] (val x: Self) extends AnyVal {
+    extension [Self <: RadioChangeEventTarget](x: Self) {
       
-      @scala.inline
-      def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+      inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     }
   }
   
@@ -84,11 +75,9 @@ object radioInterfaceMod {
   trait RadioGroupButtonStyle extends StObject
   object RadioGroupButtonStyle {
     
-    @scala.inline
-    def outline: typings.antd.antdStrings.outline = "outline".asInstanceOf[typings.antd.antdStrings.outline]
+    inline def outline: typings.antd.antdStrings.outline = "outline".asInstanceOf[typings.antd.antdStrings.outline]
     
-    @scala.inline
-    def solid: typings.antd.antdStrings.solid = "solid".asInstanceOf[typings.antd.antdStrings.solid]
+    inline def solid: typings.antd.antdStrings.solid = "solid".asInstanceOf[typings.antd.antdStrings.solid]
   }
   
   trait RadioGroupContextProps extends StObject {
@@ -103,32 +92,24 @@ object radioInterfaceMod {
   }
   object RadioGroupContextProps {
     
-    @scala.inline
-    def apply(onChange: RadioChangeEvent => Unit, value: js.Any): RadioGroupContextProps = {
+    inline def apply(onChange: RadioChangeEvent => Unit, value: js.Any): RadioGroupContextProps = {
       val __obj = js.Dynamic.literal(onChange = js.Any.fromFunction1(onChange), value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[RadioGroupContextProps]
     }
     
-    @scala.inline
-    implicit class RadioGroupContextPropsMutableBuilder[Self <: RadioGroupContextProps] (val x: Self) extends AnyVal {
+    extension [Self <: RadioGroupContextProps](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: RadioChangeEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: RadioChangeEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -139,11 +120,9 @@ object radioInterfaceMod {
   trait RadioGroupOptionType extends StObject
   object RadioGroupOptionType {
     
-    @scala.inline
-    def default: typings.antd.antdStrings.default = "default".asInstanceOf[typings.antd.antdStrings.default]
+    inline def default: typings.antd.antdStrings.default = "default".asInstanceOf[typings.antd.antdStrings.default]
     
-    @scala.inline
-    def button: typings.antd.antdStrings.button = "button".asInstanceOf[typings.antd.antdStrings.button]
+    inline def button: typings.antd.antdStrings.button = "button".asInstanceOf[typings.antd.antdStrings.button]
   }
   
   trait RadioGroupProps
@@ -174,80 +153,56 @@ object radioInterfaceMod {
   }
   object RadioGroupProps {
     
-    @scala.inline
-    def apply(): RadioGroupProps = {
+    inline def apply(): RadioGroupProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RadioGroupProps]
     }
     
-    @scala.inline
-    implicit class RadioGroupPropsMutableBuilder[Self <: RadioGroupProps] (val x: Self) extends AnyVal {
+    extension [Self <: RadioGroupProps](x: Self) {
       
-      @scala.inline
-      def setButtonStyle(value: RadioGroupButtonStyle): Self = StObject.set(x, "buttonStyle", value.asInstanceOf[js.Any])
+      inline def setButtonStyle(value: RadioGroupButtonStyle): Self = StObject.set(x, "buttonStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonStyleUndefined: Self = StObject.set(x, "buttonStyle", js.undefined)
+      inline def setButtonStyleUndefined: Self = StObject.set(x, "buttonStyle", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* e */ RadioChangeEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* e */ RadioChangeEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnMouseEnter(value: typings.react.mod.MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
+      inline def setOnMouseEnter(value: typings.react.mod.MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
+      inline def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
       
-      @scala.inline
-      def setOnMouseLeave(value: typings.react.mod.MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+      inline def setOnMouseLeave(value: typings.react.mod.MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
+      inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
       
-      @scala.inline
-      def setOptionType(value: RadioGroupOptionType): Self = StObject.set(x, "optionType", value.asInstanceOf[js.Any])
+      inline def setOptionType(value: RadioGroupOptionType): Self = StObject.set(x, "optionType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionTypeUndefined: Self = StObject.set(x, "optionType", js.undefined)
+      inline def setOptionTypeUndefined: Self = StObject.set(x, "optionType", js.undefined)
       
-      @scala.inline
-      def setSize(value: SizeType): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: SizeType): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   

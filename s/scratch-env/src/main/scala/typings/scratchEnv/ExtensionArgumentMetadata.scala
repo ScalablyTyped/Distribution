@@ -19,29 +19,22 @@ trait ExtensionArgumentMetadata extends StObject {
 }
 object ExtensionArgumentMetadata {
   
-  @scala.inline
-  def apply(`type`: ValueOf[ArgumentType]): ExtensionArgumentMetadata = {
+  inline def apply(`type`: ValueOf[ArgumentType]): ExtensionArgumentMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionArgumentMetadata]
   }
   
-  @scala.inline
-  implicit class ExtensionArgumentMetadataMutableBuilder[Self <: ExtensionArgumentMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionArgumentMetadata](x: Self) {
     
-    @scala.inline
-    def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setMenu(value: String): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+    inline def setMenu(value: String): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
+    inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
     
-    @scala.inline
-    def setType(value: ValueOf[ArgumentType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ValueOf[ArgumentType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

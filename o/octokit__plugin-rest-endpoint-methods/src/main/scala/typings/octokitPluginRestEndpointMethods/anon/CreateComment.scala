@@ -48,8 +48,7 @@ trait CreateComment extends StObject {
 }
 object CreateComment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     checkIsStarred: `677`,
     create: `678`,
     createComment: `679`,
@@ -75,67 +74,46 @@ object CreateComment {
     __obj.asInstanceOf[CreateComment]
   }
   
-  @scala.inline
-  implicit class CreateCommentMutableBuilder[Self <: CreateComment] (val x: Self) extends AnyVal {
+  extension [Self <: CreateComment](x: Self) {
     
-    @scala.inline
-    def setCheckIsStarred(value: `677`): Self = StObject.set(x, "checkIsStarred", value.asInstanceOf[js.Any])
+    inline def setCheckIsStarred(value: `677`): Self = StObject.set(x, "checkIsStarred", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreate(value: `678`): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+    inline def setCreate(value: `678`): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateComment(value: `679`): Self = StObject.set(x, "createComment", value.asInstanceOf[js.Any])
+    inline def setCreateComment(value: `679`): Self = StObject.set(x, "createComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: `680`): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: `680`): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteComment(value: `681`): Self = StObject.set(x, "deleteComment", value.asInstanceOf[js.Any])
+    inline def setDeleteComment(value: `681`): Self = StObject.set(x, "deleteComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFork(value: `682`): Self = StObject.set(x, "fork", value.asInstanceOf[js.Any])
+    inline def setFork(value: `682`): Self = StObject.set(x, "fork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGet(value: `683`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: `683`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetComment(value: `684`): Self = StObject.set(x, "getComment", value.asInstanceOf[js.Any])
+    inline def setGetComment(value: `684`): Self = StObject.set(x, "getComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetRevision(value: `685`): Self = StObject.set(x, "getRevision", value.asInstanceOf[js.Any])
+    inline def setGetRevision(value: `685`): Self = StObject.set(x, "getRevision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setList(value: `686`): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    inline def setList(value: `686`): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListComments(value: `687`): Self = StObject.set(x, "listComments", value.asInstanceOf[js.Any])
+    inline def setListComments(value: `687`): Self = StObject.set(x, "listComments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListCommits(value: `688`): Self = StObject.set(x, "listCommits", value.asInstanceOf[js.Any])
+    inline def setListCommits(value: `688`): Self = StObject.set(x, "listCommits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListForUser(value: `689`): Self = StObject.set(x, "listForUser", value.asInstanceOf[js.Any])
+    inline def setListForUser(value: `689`): Self = StObject.set(x, "listForUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListForks(value: `690`): Self = StObject.set(x, "listForks", value.asInstanceOf[js.Any])
+    inline def setListForks(value: `690`): Self = StObject.set(x, "listForks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListPublic(value: `691`): Self = StObject.set(x, "listPublic", value.asInstanceOf[js.Any])
+    inline def setListPublic(value: `691`): Self = StObject.set(x, "listPublic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListStarred(value: `692`): Self = StObject.set(x, "listStarred", value.asInstanceOf[js.Any])
+    inline def setListStarred(value: `692`): Self = StObject.set(x, "listStarred", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStar(value: `693`): Self = StObject.set(x, "star", value.asInstanceOf[js.Any])
+    inline def setStar(value: `693`): Self = StObject.set(x, "star", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnstar(value: `694`): Self = StObject.set(x, "unstar", value.asInstanceOf[js.Any])
+    inline def setUnstar(value: `694`): Self = StObject.set(x, "unstar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: `695`): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: `695`): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateComment(value: `696`): Self = StObject.set(x, "updateComment", value.asInstanceOf[js.Any])
+    inline def setUpdateComment(value: `696`): Self = StObject.set(x, "updateComment", value.asInstanceOf[js.Any])
   }
 }

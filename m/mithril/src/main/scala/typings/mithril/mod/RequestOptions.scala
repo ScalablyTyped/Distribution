@@ -74,115 +74,79 @@ trait RequestOptions[T] extends StObject {
 }
 object RequestOptions {
   
-  @scala.inline
-  def apply[T](): RequestOptions[T] = {
+  inline def apply[T](): RequestOptions[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RequestOptions[T]]
   }
   
-  @scala.inline
-  implicit class RequestOptionsMutableBuilder[Self <: RequestOptions[?], T] (val x: Self & RequestOptions[T]) extends AnyVal {
+  extension [Self <: RequestOptions[?], T](x: Self & RequestOptions[T]) {
     
-    @scala.inline
-    def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+    inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+    inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
     
-    @scala.inline
-    def setBackground(value: Boolean): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: Boolean): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    @scala.inline
-    def setBody(value: js.Any | (js.Object & StringDictionary[js.Any])): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: js.Any | (js.Object & StringDictionary[js.Any])): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setConfig(value: (/* xhr */ XMLHttpRequest, RequestOptions[T]) => XMLHttpRequest | Unit): Self = StObject.set(x, "config", js.Any.fromFunction2(value))
+    inline def setConfig(value: (/* xhr */ XMLHttpRequest, RequestOptions[T]) => XMLHttpRequest | Unit): Self = StObject.set(x, "config", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setDeserialize(value: /* data */ String => T): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
+    inline def setDeserialize(value: /* data */ String => T): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeserializeUndefined: Self = StObject.set(x, "deserialize", js.undefined)
+    inline def setDeserializeUndefined: Self = StObject.set(x, "deserialize", js.undefined)
     
-    @scala.inline
-    def setExtract(value: (/* xhr */ XMLHttpRequest, RequestOptions[T]) => T): Self = StObject.set(x, "extract", js.Any.fromFunction2(value))
+    inline def setExtract(value: (/* xhr */ XMLHttpRequest, RequestOptions[T]) => T): Self = StObject.set(x, "extract", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setExtractUndefined: Self = StObject.set(x, "extract", js.undefined)
+    inline def setExtractUndefined: Self = StObject.set(x, "extract", js.undefined)
     
-    @scala.inline
-    def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+    inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
     
-    @scala.inline
-    def setResponseType(value: _empty | arraybuffer | blob | document | json | text): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+    inline def setResponseType(value: _empty | arraybuffer | blob | document | json | text): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
+    inline def setResponseTypeUndefined: Self = StObject.set(x, "responseType", js.undefined)
     
-    @scala.inline
-    def setSerialize(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
+    inline def setSerialize(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "serialize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
+    inline def setSerializeUndefined: Self = StObject.set(x, "serialize", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setType(value: Instantiable1[/* o */ js.Any, js.Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Instantiable1[/* o */ js.Any, js.Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUseBody(value: Boolean): Self = StObject.set(x, "useBody", value.asInstanceOf[js.Any])
+    inline def setUseBody(value: Boolean): Self = StObject.set(x, "useBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseBodyUndefined: Self = StObject.set(x, "useBody", js.undefined)
+    inline def setUseBodyUndefined: Self = StObject.set(x, "useBody", js.undefined)
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     
-    @scala.inline
-    def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+    inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
+    inline def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
   }
 }

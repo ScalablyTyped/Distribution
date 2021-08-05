@@ -135,9 +135,7 @@ object matrix4Mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): Matrix4 = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Matrix4]
-    @scala.inline
-    def create(mat: Float32Array): Matrix4 = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(mat.asInstanceOf[js.Any]).asInstanceOf[Matrix4]
+    inline def create(): Matrix4 = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Matrix4]
+    inline def create(mat: Float32Array): Matrix4 = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(mat.asInstanceOf[js.Any]).asInstanceOf[Matrix4]
   }
 }

@@ -29,52 +29,37 @@ trait Membership extends StObject {
 }
 object Membership {
   
-  @scala.inline
-  def apply(): Membership = {
+  inline def apply(): Membership = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Membership]
   }
   
-  @scala.inline
-  implicit class MembershipMutableBuilder[Self <: Membership] (val x: Self) extends AnyVal {
+  extension [Self <: Membership](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPreferredMemberKey(value: EntityKey): Self = StObject.set(x, "preferredMemberKey", value.asInstanceOf[js.Any])
+    inline def setPreferredMemberKey(value: EntityKey): Self = StObject.set(x, "preferredMemberKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredMemberKeyUndefined: Self = StObject.set(x, "preferredMemberKey", js.undefined)
+    inline def setPreferredMemberKeyUndefined: Self = StObject.set(x, "preferredMemberKey", js.undefined)
     
-    @scala.inline
-    def setRoles(value: js.Array[MembershipRole]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
+    inline def setRoles(value: js.Array[MembershipRole]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
+    inline def setRolesUndefined: Self = StObject.set(x, "roles", js.undefined)
     
-    @scala.inline
-    def setRolesVarargs(value: MembershipRole*): Self = StObject.set(x, "roles", js.Array(value :_*))
+    inline def setRolesVarargs(value: MembershipRole*): Self = StObject.set(x, "roles", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

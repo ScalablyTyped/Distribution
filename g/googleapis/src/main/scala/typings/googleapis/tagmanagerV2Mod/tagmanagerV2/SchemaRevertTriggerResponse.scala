@@ -18,19 +18,15 @@ trait SchemaRevertTriggerResponse extends StObject {
 }
 object SchemaRevertTriggerResponse {
   
-  @scala.inline
-  def apply(): SchemaRevertTriggerResponse = {
+  inline def apply(): SchemaRevertTriggerResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRevertTriggerResponse]
   }
   
-  @scala.inline
-  implicit class SchemaRevertTriggerResponseMutableBuilder[Self <: SchemaRevertTriggerResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRevertTriggerResponse](x: Self) {
     
-    @scala.inline
-    def setTrigger(value: SchemaTrigger): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+    inline def setTrigger(value: SchemaTrigger): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
+    inline def setTriggerUndefined: Self = StObject.set(x, "trigger", js.undefined)
   }
 }

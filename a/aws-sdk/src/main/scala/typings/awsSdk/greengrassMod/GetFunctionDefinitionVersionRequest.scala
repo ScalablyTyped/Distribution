@@ -23,25 +23,19 @@ trait GetFunctionDefinitionVersionRequest extends StObject {
 }
 object GetFunctionDefinitionVersionRequest {
   
-  @scala.inline
-  def apply(FunctionDefinitionId: string, FunctionDefinitionVersionId: string): GetFunctionDefinitionVersionRequest = {
+  inline def apply(FunctionDefinitionId: string, FunctionDefinitionVersionId: string): GetFunctionDefinitionVersionRequest = {
     val __obj = js.Dynamic.literal(FunctionDefinitionId = FunctionDefinitionId.asInstanceOf[js.Any], FunctionDefinitionVersionId = FunctionDefinitionVersionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFunctionDefinitionVersionRequest]
   }
   
-  @scala.inline
-  implicit class GetFunctionDefinitionVersionRequestMutableBuilder[Self <: GetFunctionDefinitionVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetFunctionDefinitionVersionRequest](x: Self) {
     
-    @scala.inline
-    def setFunctionDefinitionId(value: string): Self = StObject.set(x, "FunctionDefinitionId", value.asInstanceOf[js.Any])
+    inline def setFunctionDefinitionId(value: string): Self = StObject.set(x, "FunctionDefinitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionDefinitionVersionId(value: string): Self = StObject.set(x, "FunctionDefinitionVersionId", value.asInstanceOf[js.Any])
+    inline def setFunctionDefinitionVersionId(value: string): Self = StObject.set(x, "FunctionDefinitionVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

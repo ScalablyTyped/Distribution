@@ -17,31 +17,23 @@ trait SourceLocation extends StObject {
 }
 object SourceLocation {
   
-  @scala.inline
-  def apply(): SourceLocation = {
+  inline def apply(): SourceLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceLocation]
   }
   
-  @scala.inline
-  implicit class SourceLocationMutableBuilder[Self <: SourceLocation] (val x: Self) extends AnyVal {
+  extension [Self <: SourceLocation](x: Self) {
     
-    @scala.inline
-    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+    inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     
-    @scala.inline
-    def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

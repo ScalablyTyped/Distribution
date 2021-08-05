@@ -10,16 +10,13 @@ trait EventArgs extends StObject {
 }
 object EventArgs {
   
-  @scala.inline
-  def apply(sender: Control): EventArgs = {
+  inline def apply(sender: Control): EventArgs = {
     val __obj = js.Dynamic.literal(sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventArgs]
   }
   
-  @scala.inline
-  implicit class EventArgsMutableBuilder[Self <: EventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: EventArgs](x: Self) {
     
-    @scala.inline
-    def setSender(value: Control): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
+    inline def setSender(value: Control): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
   }
 }

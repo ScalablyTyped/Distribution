@@ -19,19 +19,15 @@ trait SharedWorkerInfo extends StObject {
 }
 object SharedWorkerInfo {
   
-  @scala.inline
-  def apply(id: String, url: String): SharedWorkerInfo = {
+  inline def apply(id: String, url: String): SharedWorkerInfo = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[SharedWorkerInfo]
   }
   
-  @scala.inline
-  implicit class SharedWorkerInfoMutableBuilder[Self <: SharedWorkerInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SharedWorkerInfo](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

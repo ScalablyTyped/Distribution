@@ -12,16 +12,13 @@ trait ContextBridge extends StObject {
 }
 object ContextBridge {
   
-  @scala.inline
-  def apply(exposeInMainWorld: (String, Record[String, js.Any]) => Unit): ContextBridge = {
+  inline def apply(exposeInMainWorld: (String, Record[String, js.Any]) => Unit): ContextBridge = {
     val __obj = js.Dynamic.literal(exposeInMainWorld = js.Any.fromFunction2(exposeInMainWorld))
     __obj.asInstanceOf[ContextBridge]
   }
   
-  @scala.inline
-  implicit class ContextBridgeMutableBuilder[Self <: ContextBridge] (val x: Self) extends AnyVal {
+  extension [Self <: ContextBridge](x: Self) {
     
-    @scala.inline
-    def setExposeInMainWorld(value: (String, Record[String, js.Any]) => Unit): Self = StObject.set(x, "exposeInMainWorld", js.Any.fromFunction2(value))
+    inline def setExposeInMainWorld(value: (String, Record[String, js.Any]) => Unit): Self = StObject.set(x, "exposeInMainWorld", js.Any.fromFunction2(value))
   }
 }

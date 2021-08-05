@@ -12,17 +12,14 @@ trait MutationPayload
 }
 object MutationPayload {
   
-  @scala.inline
-  def apply(payload: js.Any, `type`: String): MutationPayload = {
+  inline def apply(payload: js.Any, `type`: String): MutationPayload = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MutationPayload]
   }
   
-  @scala.inline
-  implicit class MutationPayloadMutableBuilder[Self <: MutationPayload] (val x: Self) extends AnyVal {
+  extension [Self <: MutationPayload](x: Self) {
     
-    @scala.inline
-    def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
   }
 }

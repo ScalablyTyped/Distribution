@@ -58,20 +58,16 @@ object navTypesMod {
   }
   object INavButtonProps {
     
-    @scala.inline
-    def apply(): INavButtonProps = {
+    inline def apply(): INavButtonProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[INavButtonProps]
     }
     
-    @scala.inline
-    implicit class INavButtonPropsMutableBuilder[Self <: INavButtonProps] (val x: Self) extends AnyVal {
+    extension [Self <: INavButtonProps](x: Self) {
       
-      @scala.inline
-      def setLink(value: INavLink): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      inline def setLink(value: INavLink): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+      inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     }
   }
   
@@ -185,121 +181,84 @@ object navTypesMod {
   }
   object INavLink {
     
-    @scala.inline
-    def apply(name: String, url: String): INavLink = {
+    inline def apply(name: String, url: String): INavLink = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[INavLink]
     }
     
-    @scala.inline
-    implicit class INavLinkMutableBuilder[Self <: INavLink] (val x: Self) extends AnyVal {
+    extension [Self <: INavLink](x: Self) {
       
-      @scala.inline
-      def setAriaCurrent(value: page | step | location | date | time | `true`): Self = StObject.set(x, "ariaCurrent", value.asInstanceOf[js.Any])
+      inline def setAriaCurrent(value: page | step | location | date | time | `true`): Self = StObject.set(x, "ariaCurrent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaCurrentUndefined: Self = StObject.set(x, "ariaCurrent", js.undefined)
+      inline def setAriaCurrentUndefined: Self = StObject.set(x, "ariaCurrent", js.undefined)
       
-      @scala.inline
-      def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+      inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
+      inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
       
-      @scala.inline
-      def setAutomationId(value: String): Self = StObject.set(x, "automationId", value.asInstanceOf[js.Any])
+      inline def setAutomationId(value: String): Self = StObject.set(x, "automationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutomationIdUndefined: Self = StObject.set(x, "automationId", js.undefined)
+      inline def setAutomationIdUndefined: Self = StObject.set(x, "automationId", js.undefined)
       
-      @scala.inline
-      def setCollapseAriaLabel(value: String): Self = StObject.set(x, "collapseAriaLabel", value.asInstanceOf[js.Any])
+      inline def setCollapseAriaLabel(value: String): Self = StObject.set(x, "collapseAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapseAriaLabelUndefined: Self = StObject.set(x, "collapseAriaLabel", js.undefined)
+      inline def setCollapseAriaLabelUndefined: Self = StObject.set(x, "collapseAriaLabel", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setExpandAriaLabel(value: String): Self = StObject.set(x, "expandAriaLabel", value.asInstanceOf[js.Any])
+      inline def setExpandAriaLabel(value: String): Self = StObject.set(x, "expandAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandAriaLabelUndefined: Self = StObject.set(x, "expandAriaLabel", js.undefined)
+      inline def setExpandAriaLabelUndefined: Self = StObject.set(x, "expandAriaLabel", js.undefined)
       
-      @scala.inline
-      def setForceAnchor(value: Boolean): Self = StObject.set(x, "forceAnchor", value.asInstanceOf[js.Any])
+      inline def setForceAnchor(value: Boolean): Self = StObject.set(x, "forceAnchor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceAnchorUndefined: Self = StObject.set(x, "forceAnchor", js.undefined)
+      inline def setForceAnchorUndefined: Self = StObject.set(x, "forceAnchor", js.undefined)
       
-      @scala.inline
-      def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconClassName(value: String): Self = StObject.set(x, "iconClassName", value.asInstanceOf[js.Any])
+      inline def setIconClassName(value: String): Self = StObject.set(x, "iconClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconClassNameUndefined: Self = StObject.set(x, "iconClassName", js.undefined)
+      inline def setIconClassNameUndefined: Self = StObject.set(x, "iconClassName", js.undefined)
       
-      @scala.inline
-      def setIconProps(value: IIconProps): Self = StObject.set(x, "iconProps", value.asInstanceOf[js.Any])
+      inline def setIconProps(value: IIconProps): Self = StObject.set(x, "iconProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconPropsUndefined: Self = StObject.set(x, "iconProps", js.undefined)
+      inline def setIconPropsUndefined: Self = StObject.set(x, "iconProps", js.undefined)
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
+      inline def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
+      inline def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setLinks(value: js.Array[INavLink]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+      inline def setLinks(value: js.Array[INavLink]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+      inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
       
-      @scala.inline
-      def setLinksVarargs(value: INavLink*): Self = StObject.set(x, "links", js.Array(value :_*))
+      inline def setLinksVarargs(value: INavLink*): Self = StObject.set(x, "links", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClick(
+      inline def setOnClick(
         value: (/* ev */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]], /* item */ js.UndefOr[INavLink]) => Unit
       ): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -353,64 +312,46 @@ object navTypesMod {
   }
   object INavLinkGroup {
     
-    @scala.inline
-    def apply(links: js.Array[INavLink]): INavLinkGroup = {
+    inline def apply(links: js.Array[INavLink]): INavLinkGroup = {
       val __obj = js.Dynamic.literal(links = links.asInstanceOf[js.Any])
       __obj.asInstanceOf[INavLinkGroup]
     }
     
-    @scala.inline
-    implicit class INavLinkGroupMutableBuilder[Self <: INavLinkGroup] (val x: Self) extends AnyVal {
+    extension [Self <: INavLinkGroup](x: Self) {
       
-      @scala.inline
-      def setAutomationId(value: String): Self = StObject.set(x, "automationId", value.asInstanceOf[js.Any])
+      inline def setAutomationId(value: String): Self = StObject.set(x, "automationId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutomationIdUndefined: Self = StObject.set(x, "automationId", js.undefined)
+      inline def setAutomationIdUndefined: Self = StObject.set(x, "automationId", js.undefined)
       
-      @scala.inline
-      def setCollapseAriaLabel(value: String): Self = StObject.set(x, "collapseAriaLabel", value.asInstanceOf[js.Any])
+      inline def setCollapseAriaLabel(value: String): Self = StObject.set(x, "collapseAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapseAriaLabelUndefined: Self = StObject.set(x, "collapseAriaLabel", js.undefined)
+      inline def setCollapseAriaLabelUndefined: Self = StObject.set(x, "collapseAriaLabel", js.undefined)
       
-      @scala.inline
-      def setCollapseByDefault(value: Boolean): Self = StObject.set(x, "collapseByDefault", value.asInstanceOf[js.Any])
+      inline def setCollapseByDefault(value: Boolean): Self = StObject.set(x, "collapseByDefault", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapseByDefaultUndefined: Self = StObject.set(x, "collapseByDefault", js.undefined)
+      inline def setCollapseByDefaultUndefined: Self = StObject.set(x, "collapseByDefault", js.undefined)
       
-      @scala.inline
-      def setExpandAriaLabel(value: String): Self = StObject.set(x, "expandAriaLabel", value.asInstanceOf[js.Any])
+      inline def setExpandAriaLabel(value: String): Self = StObject.set(x, "expandAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandAriaLabelUndefined: Self = StObject.set(x, "expandAriaLabel", js.undefined)
+      inline def setExpandAriaLabelUndefined: Self = StObject.set(x, "expandAriaLabel", js.undefined)
       
-      @scala.inline
-      def setGroupData(value: js.Any): Self = StObject.set(x, "groupData", value.asInstanceOf[js.Any])
+      inline def setGroupData(value: js.Any): Self = StObject.set(x, "groupData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupDataUndefined: Self = StObject.set(x, "groupData", js.undefined)
+      inline def setGroupDataUndefined: Self = StObject.set(x, "groupData", js.undefined)
       
-      @scala.inline
-      def setLinks(value: js.Array[INavLink]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+      inline def setLinks(value: js.Array[INavLink]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinksVarargs(value: INavLink*): Self = StObject.set(x, "links", js.Array(value :_*))
+      inline def setLinksVarargs(value: INavLink*): Self = StObject.set(x, "links", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnHeaderClick(
+      inline def setOnHeaderClick(
         value: (/* ev */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]], /* isCollapsing */ js.UndefOr[Boolean]) => Unit
       ): Self = StObject.set(x, "onHeaderClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnHeaderClickUndefined: Self = StObject.set(x, "onHeaderClick", js.undefined)
+      inline def setOnHeaderClickUndefined: Self = StObject.set(x, "onHeaderClick", js.undefined)
     }
   }
   
@@ -519,127 +460,90 @@ object navTypesMod {
   }
   object INavProps {
     
-    @scala.inline
-    def apply(): INavProps = {
+    inline def apply(): INavProps = {
       val __obj = js.Dynamic.literal(groups = null)
       __obj.asInstanceOf[INavProps]
     }
     
-    @scala.inline
-    implicit class INavPropsMutableBuilder[Self <: INavProps] (val x: Self) extends AnyVal {
+    extension [Self <: INavProps](x: Self) {
       
-      @scala.inline
-      def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+      inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
+      inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[INav]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[INav]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ INav | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ INav | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setExpandButtonAriaLabel(value: String): Self = StObject.set(x, "expandButtonAriaLabel", value.asInstanceOf[js.Any])
+      inline def setExpandButtonAriaLabel(value: String): Self = StObject.set(x, "expandButtonAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandButtonAriaLabelUndefined: Self = StObject.set(x, "expandButtonAriaLabel", js.undefined)
+      inline def setExpandButtonAriaLabelUndefined: Self = StObject.set(x, "expandButtonAriaLabel", js.undefined)
       
-      @scala.inline
-      def setGroups(value: js.Array[INavLinkGroup]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+      inline def setGroups(value: js.Array[INavLinkGroup]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupsNull: Self = StObject.set(x, "groups", null)
+      inline def setGroupsNull: Self = StObject.set(x, "groups", null)
       
-      @scala.inline
-      def setGroupsVarargs(value: INavLinkGroup*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: INavLinkGroup*): Self = StObject.set(x, "groups", js.Array(value :_*))
       
-      @scala.inline
-      def setInitialSelectedKey(value: String): Self = StObject.set(x, "initialSelectedKey", value.asInstanceOf[js.Any])
+      inline def setInitialSelectedKey(value: String): Self = StObject.set(x, "initialSelectedKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialSelectedKeyUndefined: Self = StObject.set(x, "initialSelectedKey", js.undefined)
+      inline def setInitialSelectedKeyUndefined: Self = StObject.set(x, "initialSelectedKey", js.undefined)
       
-      @scala.inline
-      def setIsOnTop(value: Boolean): Self = StObject.set(x, "isOnTop", value.asInstanceOf[js.Any])
+      inline def setIsOnTop(value: Boolean): Self = StObject.set(x, "isOnTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOnTopUndefined: Self = StObject.set(x, "isOnTop", js.undefined)
+      inline def setIsOnTopUndefined: Self = StObject.set(x, "isOnTop", js.undefined)
       
-      @scala.inline
-      def setLinkAs(value: IComponentAs[INavButtonProps]): Self = StObject.set(x, "linkAs", value.asInstanceOf[js.Any])
+      inline def setLinkAs(value: IComponentAs[INavButtonProps]): Self = StObject.set(x, "linkAs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkAsUndefined: Self = StObject.set(x, "linkAs", js.undefined)
+      inline def setLinkAsUndefined: Self = StObject.set(x, "linkAs", js.undefined)
       
-      @scala.inline
-      def setOnLinkClick(
+      inline def setOnLinkClick(
         value: (/* ev */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]], /* item */ js.UndefOr[INavLink]) => Unit
       ): Self = StObject.set(x, "onLinkClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnLinkClickUndefined: Self = StObject.set(x, "onLinkClick", js.undefined)
+      inline def setOnLinkClickUndefined: Self = StObject.set(x, "onLinkClick", js.undefined)
       
-      @scala.inline
-      def setOnLinkExpandClick(
+      inline def setOnLinkExpandClick(
         value: (/* ev */ js.UndefOr[MouseEvent[HTMLElement, NativeMouseEvent]], /* item */ js.UndefOr[INavLink]) => Unit
       ): Self = StObject.set(x, "onLinkExpandClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnLinkExpandClickUndefined: Self = StObject.set(x, "onLinkExpandClick", js.undefined)
+      inline def setOnLinkExpandClickUndefined: Self = StObject.set(x, "onLinkExpandClick", js.undefined)
       
-      @scala.inline
-      def setOnRenderGroupHeader(
+      inline def setOnRenderGroupHeader(
         value: (/* props */ js.UndefOr[IRenderGroupHeaderProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IRenderGroupHeaderProps], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderGroupHeader", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRenderGroupHeaderUndefined: Self = StObject.set(x, "onRenderGroupHeader", js.undefined)
+      inline def setOnRenderGroupHeaderUndefined: Self = StObject.set(x, "onRenderGroupHeader", js.undefined)
       
-      @scala.inline
-      def setOnRenderLink(
+      inline def setOnRenderLink(
         value: (/* props */ js.UndefOr[INavLink], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[INavLink], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderLink", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRenderLinkUndefined: Self = StObject.set(x, "onRenderLink", js.undefined)
+      inline def setOnRenderLinkUndefined: Self = StObject.set(x, "onRenderLink", js.undefined)
       
-      @scala.inline
-      def setSelectedAriaLabel(value: String): Self = StObject.set(x, "selectedAriaLabel", value.asInstanceOf[js.Any])
+      inline def setSelectedAriaLabel(value: String): Self = StObject.set(x, "selectedAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedAriaLabelUndefined: Self = StObject.set(x, "selectedAriaLabel", js.undefined)
+      inline def setSelectedAriaLabelUndefined: Self = StObject.set(x, "selectedAriaLabel", js.undefined)
       
-      @scala.inline
-      def setSelectedKey(value: String): Self = StObject.set(x, "selectedKey", value.asInstanceOf[js.Any])
+      inline def setSelectedKey(value: String): Self = StObject.set(x, "selectedKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedKeyUndefined: Self = StObject.set(x, "selectedKey", js.undefined)
+      inline def setSelectedKeyUndefined: Self = StObject.set(x, "selectedKey", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[INavStyleProps, INavStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[INavStyleProps, INavStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: INavStyleProps => DeepPartial[INavStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: INavStyleProps => DeepPartial[INavStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -723,104 +627,72 @@ object navTypesMod {
   }
   object INavStyleProps {
     
-    @scala.inline
-    def apply(theme: ITheme): INavStyleProps = {
+    inline def apply(theme: ITheme): INavStyleProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any], groups = null)
       __obj.asInstanceOf[INavStyleProps]
     }
     
-    @scala.inline
-    implicit class INavStylePropsMutableBuilder[Self <: INavStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: INavStyleProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setGroups(value: js.Array[INavLinkGroup]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+      inline def setGroups(value: js.Array[INavLinkGroup]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupsNull: Self = StObject.set(x, "groups", null)
+      inline def setGroupsNull: Self = StObject.set(x, "groups", null)
       
-      @scala.inline
-      def setGroupsVarargs(value: INavLinkGroup*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: INavLinkGroup*): Self = StObject.set(x, "groups", js.Array(value :_*))
       
-      @scala.inline
-      def setIsButtonEntry(value: Boolean): Self = StObject.set(x, "isButtonEntry", value.asInstanceOf[js.Any])
+      inline def setIsButtonEntry(value: Boolean): Self = StObject.set(x, "isButtonEntry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsButtonEntryUndefined: Self = StObject.set(x, "isButtonEntry", js.undefined)
+      inline def setIsButtonEntryUndefined: Self = StObject.set(x, "isButtonEntry", js.undefined)
       
-      @scala.inline
-      def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
+      inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDisabledUndefined: Self = StObject.set(x, "isDisabled", js.undefined)
+      inline def setIsDisabledUndefined: Self = StObject.set(x, "isDisabled", js.undefined)
       
-      @scala.inline
-      def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
+      inline def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
+      inline def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
       
-      @scala.inline
-      def setIsGroup(value: Boolean): Self = StObject.set(x, "isGroup", value.asInstanceOf[js.Any])
+      inline def setIsGroup(value: Boolean): Self = StObject.set(x, "isGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsGroupUndefined: Self = StObject.set(x, "isGroup", js.undefined)
+      inline def setIsGroupUndefined: Self = StObject.set(x, "isGroup", js.undefined)
       
-      @scala.inline
-      def setIsLink(value: Boolean): Self = StObject.set(x, "isLink", value.asInstanceOf[js.Any])
+      inline def setIsLink(value: Boolean): Self = StObject.set(x, "isLink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLinkUndefined: Self = StObject.set(x, "isLink", js.undefined)
+      inline def setIsLinkUndefined: Self = StObject.set(x, "isLink", js.undefined)
       
-      @scala.inline
-      def setIsOnTop(value: Boolean): Self = StObject.set(x, "isOnTop", value.asInstanceOf[js.Any])
+      inline def setIsOnTop(value: Boolean): Self = StObject.set(x, "isOnTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOnTopUndefined: Self = StObject.set(x, "isOnTop", js.undefined)
+      inline def setIsOnTopUndefined: Self = StObject.set(x, "isOnTop", js.undefined)
       
-      @scala.inline
-      def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
+      inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
+      inline def setIsSelectedUndefined: Self = StObject.set(x, "isSelected", js.undefined)
       
-      @scala.inline
-      def setLeftPadding(value: Double): Self = StObject.set(x, "leftPadding", value.asInstanceOf[js.Any])
+      inline def setLeftPadding(value: Double): Self = StObject.set(x, "leftPadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftPaddingExpanded(value: Double): Self = StObject.set(x, "leftPaddingExpanded", value.asInstanceOf[js.Any])
+      inline def setLeftPaddingExpanded(value: Double): Self = StObject.set(x, "leftPaddingExpanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftPaddingExpandedUndefined: Self = StObject.set(x, "leftPaddingExpanded", js.undefined)
+      inline def setLeftPaddingExpandedUndefined: Self = StObject.set(x, "leftPaddingExpanded", js.undefined)
       
-      @scala.inline
-      def setLeftPaddingUndefined: Self = StObject.set(x, "leftPadding", js.undefined)
+      inline def setLeftPaddingUndefined: Self = StObject.set(x, "leftPadding", js.undefined)
       
-      @scala.inline
-      def setNavHeight(value: Double): Self = StObject.set(x, "navHeight", value.asInstanceOf[js.Any])
+      inline def setNavHeight(value: Double): Self = StObject.set(x, "navHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavHeightUndefined: Self = StObject.set(x, "navHeight", js.undefined)
+      inline def setNavHeightUndefined: Self = StObject.set(x, "navHeight", js.undefined)
       
-      @scala.inline
-      def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setRightPadding(value: Double): Self = StObject.set(x, "rightPadding", value.asInstanceOf[js.Any])
+      inline def setRightPadding(value: Double): Self = StObject.set(x, "rightPadding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightPaddingUndefined: Self = StObject.set(x, "rightPadding", js.undefined)
+      inline def setRightPaddingUndefined: Self = StObject.set(x, "rightPadding", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
   }
   
@@ -881,104 +753,72 @@ object navTypesMod {
   }
   object INavStyles {
     
-    @scala.inline
-    def apply(): INavStyles = {
+    inline def apply(): INavStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[INavStyles]
     }
     
-    @scala.inline
-    implicit class INavStylesMutableBuilder[Self <: INavStyles] (val x: Self) extends AnyVal {
+    extension [Self <: INavStyles](x: Self) {
       
-      @scala.inline
-      def setChevronButton(value: IStyle): Self = StObject.set(x, "chevronButton", value.asInstanceOf[js.Any])
+      inline def setChevronButton(value: IStyle): Self = StObject.set(x, "chevronButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChevronButtonNull: Self = StObject.set(x, "chevronButton", null)
+      inline def setChevronButtonNull: Self = StObject.set(x, "chevronButton", null)
       
-      @scala.inline
-      def setChevronButtonUndefined: Self = StObject.set(x, "chevronButton", js.undefined)
+      inline def setChevronButtonUndefined: Self = StObject.set(x, "chevronButton", js.undefined)
       
-      @scala.inline
-      def setChevronIcon(value: IStyle): Self = StObject.set(x, "chevronIcon", value.asInstanceOf[js.Any])
+      inline def setChevronIcon(value: IStyle): Self = StObject.set(x, "chevronIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChevronIconNull: Self = StObject.set(x, "chevronIcon", null)
+      inline def setChevronIconNull: Self = StObject.set(x, "chevronIcon", null)
       
-      @scala.inline
-      def setChevronIconUndefined: Self = StObject.set(x, "chevronIcon", js.undefined)
+      inline def setChevronIconUndefined: Self = StObject.set(x, "chevronIcon", js.undefined)
       
-      @scala.inline
-      def setCompositeLink(value: IStyle): Self = StObject.set(x, "compositeLink", value.asInstanceOf[js.Any])
+      inline def setCompositeLink(value: IStyle): Self = StObject.set(x, "compositeLink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompositeLinkNull: Self = StObject.set(x, "compositeLink", null)
+      inline def setCompositeLinkNull: Self = StObject.set(x, "compositeLink", null)
       
-      @scala.inline
-      def setCompositeLinkUndefined: Self = StObject.set(x, "compositeLink", js.undefined)
+      inline def setCompositeLinkUndefined: Self = StObject.set(x, "compositeLink", js.undefined)
       
-      @scala.inline
-      def setGroup(value: IStyle): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: IStyle): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupContent(value: IStyle): Self = StObject.set(x, "groupContent", value.asInstanceOf[js.Any])
+      inline def setGroupContent(value: IStyle): Self = StObject.set(x, "groupContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupContentNull: Self = StObject.set(x, "groupContent", null)
+      inline def setGroupContentNull: Self = StObject.set(x, "groupContent", null)
       
-      @scala.inline
-      def setGroupContentUndefined: Self = StObject.set(x, "groupContent", js.undefined)
+      inline def setGroupContentUndefined: Self = StObject.set(x, "groupContent", js.undefined)
       
-      @scala.inline
-      def setGroupNull: Self = StObject.set(x, "group", null)
+      inline def setGroupNull: Self = StObject.set(x, "group", null)
       
-      @scala.inline
-      def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+      inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
-      @scala.inline
-      def setLink(value: IStyle): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+      inline def setLink(value: IStyle): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkNull: Self = StObject.set(x, "link", null)
+      inline def setLinkNull: Self = StObject.set(x, "link", null)
       
-      @scala.inline
-      def setLinkText(value: IStyle): Self = StObject.set(x, "linkText", value.asInstanceOf[js.Any])
+      inline def setLinkText(value: IStyle): Self = StObject.set(x, "linkText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinkTextNull: Self = StObject.set(x, "linkText", null)
+      inline def setLinkTextNull: Self = StObject.set(x, "linkText", null)
       
-      @scala.inline
-      def setLinkTextUndefined: Self = StObject.set(x, "linkText", js.undefined)
+      inline def setLinkTextUndefined: Self = StObject.set(x, "linkText", js.undefined)
       
-      @scala.inline
-      def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+      inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
       
-      @scala.inline
-      def setNavItem(value: IStyle): Self = StObject.set(x, "navItem", value.asInstanceOf[js.Any])
+      inline def setNavItem(value: IStyle): Self = StObject.set(x, "navItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavItemNull: Self = StObject.set(x, "navItem", null)
+      inline def setNavItemNull: Self = StObject.set(x, "navItem", null)
       
-      @scala.inline
-      def setNavItemUndefined: Self = StObject.set(x, "navItem", js.undefined)
+      inline def setNavItemUndefined: Self = StObject.set(x, "navItem", js.undefined)
       
-      @scala.inline
-      def setNavItems(value: IStyle): Self = StObject.set(x, "navItems", value.asInstanceOf[js.Any])
+      inline def setNavItems(value: IStyle): Self = StObject.set(x, "navItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNavItemsNull: Self = StObject.set(x, "navItems", null)
+      inline def setNavItemsNull: Self = StObject.set(x, "navItems", null)
       
-      @scala.inline
-      def setNavItemsUndefined: Self = StObject.set(x, "navItems", js.undefined)
+      inline def setNavItemsUndefined: Self = StObject.set(x, "navItems", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
   
@@ -993,20 +833,16 @@ object navTypesMod {
   }
   object IRenderGroupHeaderProps {
     
-    @scala.inline
-    def apply(links: js.Array[INavLink]): IRenderGroupHeaderProps = {
+    inline def apply(links: js.Array[INavLink]): IRenderGroupHeaderProps = {
       val __obj = js.Dynamic.literal(links = links.asInstanceOf[js.Any])
       __obj.asInstanceOf[IRenderGroupHeaderProps]
     }
     
-    @scala.inline
-    implicit class IRenderGroupHeaderPropsMutableBuilder[Self <: IRenderGroupHeaderProps] (val x: Self) extends AnyVal {
+    extension [Self <: IRenderGroupHeaderProps](x: Self) {
       
-      @scala.inline
-      def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
+      inline def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
+      inline def setIsExpandedUndefined: Self = StObject.set(x, "isExpanded", js.undefined)
     }
   }
 }

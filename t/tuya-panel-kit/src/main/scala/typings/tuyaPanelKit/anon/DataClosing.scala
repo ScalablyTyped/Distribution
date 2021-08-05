@@ -10,16 +10,13 @@ trait DataClosing extends StObject {
 }
 object DataClosing {
   
-  @scala.inline
-  def apply(data: Closing): DataClosing = {
+  inline def apply(data: Closing): DataClosing = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataClosing]
   }
   
-  @scala.inline
-  implicit class DataClosingMutableBuilder[Self <: DataClosing] (val x: Self) extends AnyVal {
+  extension [Self <: DataClosing](x: Self) {
     
-    @scala.inline
-    def setData(value: Closing): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Closing): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

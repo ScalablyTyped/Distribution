@@ -19,6 +19,5 @@ class DropdownDivider protected ()
 }
 object DropdownDivider {
   
-  @scala.inline
-  def apply: ComponentClass[DropdownDividerProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("DropdownDivider").asInstanceOf[ComponentClass[DropdownDividerProps, ComponentState]]
+  inline def apply: ComponentClass[DropdownDividerProps, ComponentState] = ^.asInstanceOf[js.Dynamic].selectDynamic("DropdownDivider").asInstanceOf[ComponentClass[DropdownDividerProps, ComponentState]]
 }

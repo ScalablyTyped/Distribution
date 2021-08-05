@@ -18,19 +18,15 @@ trait CreateJsonClassifierRequest extends StObject {
 }
 object CreateJsonClassifierRequest {
   
-  @scala.inline
-  def apply(JsonPath: JsonPath, Name: NameString): CreateJsonClassifierRequest = {
+  inline def apply(JsonPath: JsonPath, Name: NameString): CreateJsonClassifierRequest = {
     val __obj = js.Dynamic.literal(JsonPath = JsonPath.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateJsonClassifierRequest]
   }
   
-  @scala.inline
-  implicit class CreateJsonClassifierRequestMutableBuilder[Self <: CreateJsonClassifierRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateJsonClassifierRequest](x: Self) {
     
-    @scala.inline
-    def setJsonPath(value: JsonPath): Self = StObject.set(x, "JsonPath", value.asInstanceOf[js.Any])
+    inline def setJsonPath(value: JsonPath): Self = StObject.set(x, "JsonPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

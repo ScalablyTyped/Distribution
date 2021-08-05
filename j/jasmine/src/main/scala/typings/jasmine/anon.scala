@@ -20,20 +20,16 @@ object anon {
   }
   object Random {
     
-    @scala.inline
-    def apply(random: Boolean, seed: String): Random = {
+    inline def apply(random: Boolean, seed: String): Random = {
       val __obj = js.Dynamic.literal(random = random.asInstanceOf[js.Any], seed = seed.asInstanceOf[js.Any])
       __obj.asInstanceOf[Random]
     }
     
-    @scala.inline
-    implicit class RandomMutableBuilder[Self <: Random] (val x: Self) extends AnyVal {
+    extension [Self <: Random](x: Self) {
       
-      @scala.inline
-      def setRandom(value: Boolean): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
+      inline def setRandom(value: Boolean): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeed(value: String): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+      inline def setSeed(value: String): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
     }
   }
 }

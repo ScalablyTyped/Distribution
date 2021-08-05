@@ -13,16 +13,13 @@ trait GetSoftwareUpdatesRequest extends StObject {
 }
 object GetSoftwareUpdatesRequest {
   
-  @scala.inline
-  def apply(JobId: JobId): GetSoftwareUpdatesRequest = {
+  inline def apply(JobId: JobId): GetSoftwareUpdatesRequest = {
     val __obj = js.Dynamic.literal(JobId = JobId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSoftwareUpdatesRequest]
   }
   
-  @scala.inline
-  implicit class GetSoftwareUpdatesRequestMutableBuilder[Self <: GetSoftwareUpdatesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetSoftwareUpdatesRequest](x: Self) {
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
   }
 }

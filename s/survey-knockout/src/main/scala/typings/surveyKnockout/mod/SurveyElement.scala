@@ -113,9 +113,9 @@ class SurveyElement protected ()
     */
   val survey: ISurvey = js.native
   
-  val surveyImpl: ISurveyImpl = js.native
+  /* protected */ val surveyImpl: ISurveyImpl = js.native
   
-  val textProcessor: ITextProcessor = js.native
+  /* protected */ val textProcessor: ITextProcessor = js.native
   
   def updateContainsErrors(): Unit = js.native
   
@@ -133,23 +133,16 @@ object SurveyElement {
   @JSImport("survey-knockout", "SurveyElement.CreateDisabledDesignElements")
   @js.native
   def CreateDisabledDesignElements: Boolean = js.native
-  @scala.inline
-  def CreateDisabledDesignElements_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreateDisabledDesignElements")(x.asInstanceOf[js.Any])
+  inline def CreateDisabledDesignElements_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CreateDisabledDesignElements")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def FocusElement(elementId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("FocusElement")(elementId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def FocusElement(elementId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("FocusElement")(elementId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def GetFirstNonTextElement(elements: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetFirstNonTextElement")(elements.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def GetFirstNonTextElement(elements: js.Any, removeSpaces: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirstNonTextElement")(elements.asInstanceOf[js.Any], removeSpaces.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def GetFirstNonTextElement(elements: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetFirstNonTextElement")(elements.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def GetFirstNonTextElement(elements: js.Any, removeSpaces: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("GetFirstNonTextElement")(elements.asInstanceOf[js.Any], removeSpaces.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def ScrollElementToTop(elementId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("ScrollElementToTop")(elementId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def ScrollElementToTop(elementId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("ScrollElementToTop")(elementId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def createProgressInfo(): IProgressInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createProgressInfo")().asInstanceOf[IProgressInfo]
+  inline def createProgressInfo(): IProgressInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createProgressInfo")().asInstanceOf[IProgressInfo]
   
-  @scala.inline
-  def getProgressInfoByElements(children: js.Array[SurveyElement], isRequired: Boolean): IProgressInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("getProgressInfoByElements")(children.asInstanceOf[js.Any], isRequired.asInstanceOf[js.Any])).asInstanceOf[IProgressInfo]
+  inline def getProgressInfoByElements(children: js.Array[SurveyElement], isRequired: Boolean): IProgressInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("getProgressInfoByElements")(children.asInstanceOf[js.Any], isRequired.asInstanceOf[js.Any])).asInstanceOf[IProgressInfo]
 }

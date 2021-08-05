@@ -20,8 +20,7 @@ trait TransitionProps extends StObject {
 }
 object TransitionProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dimensions: Dimensions,
     from: String | Double,
     key: String,
@@ -33,25 +32,18 @@ object TransitionProps {
     __obj.asInstanceOf[TransitionProps]
   }
   
-  @scala.inline
-  implicit class TransitionPropsMutableBuilder[Self <: TransitionProps] (val x: Self) extends AnyVal {
+  extension [Self <: TransitionProps](x: Self) {
     
-    @scala.inline
-    def setDimensions(value: Dimensions): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: Dimensions): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrom(value: String | Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: String | Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevPoseKey(value: String): Self = StObject.set(x, "prevPoseKey", value.asInstanceOf[js.Any])
+    inline def setPrevPoseKey(value: String): Self = StObject.set(x, "prevPoseKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTo(value: String | Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: String | Double): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVelocity(value: Double): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
+    inline def setVelocity(value: Double): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
   }
 }

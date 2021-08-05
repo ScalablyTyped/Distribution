@@ -19,10 +19,8 @@ object mod {
   @js.native
   val default: FC[RectProps] = js.native
   
-  @scala.inline
-  def useRect(ref: Ref[js.Any]): DOMRect = ^.asInstanceOf[js.Dynamic].applyDynamic("useRect")(ref.asInstanceOf[js.Any]).asInstanceOf[DOMRect]
-  @scala.inline
-  def useRect(ref: Ref[js.Any], isSelected: Boolean): DOMRect = (^.asInstanceOf[js.Dynamic].applyDynamic("useRect")(ref.asInstanceOf[js.Any], isSelected.asInstanceOf[js.Any])).asInstanceOf[DOMRect]
+  inline def useRect(ref: Ref[js.Any]): DOMRect = ^.asInstanceOf[js.Dynamic].applyDynamic("useRect")(ref.asInstanceOf[js.Any]).asInstanceOf[DOMRect]
+  inline def useRect(ref: Ref[js.Any], isSelected: Boolean): DOMRect = (^.asInstanceOf[js.Dynamic].applyDynamic("useRect")(ref.asInstanceOf[js.Any], isSelected.asInstanceOf[js.Any])).asInstanceOf[DOMRect]
   
   trait RectProps extends StObject {
     
@@ -34,32 +32,24 @@ object mod {
   }
   object RectProps {
     
-    @scala.inline
-    def apply(): RectProps = {
+    inline def apply(): RectProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RectProps]
     }
     
-    @scala.inline
-    implicit class RectPropsMutableBuilder[Self <: RectProps] (val x: Self) extends AnyVal {
+    extension [Self <: RectProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: /* args */ Rect => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: /* args */ Rect => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setObserve(value: Boolean): Self = StObject.set(x, "observe", value.asInstanceOf[js.Any])
+      inline def setObserve(value: Boolean): Self = StObject.set(x, "observe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObserveUndefined: Self = StObject.set(x, "observe", js.undefined)
+      inline def setObserveUndefined: Self = StObject.set(x, "observe", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* rect */ DOMRect => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* rect */ DOMRect => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     }
   }
 }

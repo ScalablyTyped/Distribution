@@ -28,28 +28,21 @@ trait PutCodeBindingRequest extends StObject {
 }
 object PutCodeBindingRequest {
   
-  @scala.inline
-  def apply(Language: string, RegistryName: string, SchemaName: string): PutCodeBindingRequest = {
+  inline def apply(Language: string, RegistryName: string, SchemaName: string): PutCodeBindingRequest = {
     val __obj = js.Dynamic.literal(Language = Language.asInstanceOf[js.Any], RegistryName = RegistryName.asInstanceOf[js.Any], SchemaName = SchemaName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutCodeBindingRequest]
   }
   
-  @scala.inline
-  implicit class PutCodeBindingRequestMutableBuilder[Self <: PutCodeBindingRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutCodeBindingRequest](x: Self) {
     
-    @scala.inline
-    def setLanguage(value: string): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: string): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryName(value: string): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
+    inline def setRegistryName(value: string): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaName(value: string): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
+    inline def setSchemaName(value: string): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaVersion(value: string): Self = StObject.set(x, "SchemaVersion", value.asInstanceOf[js.Any])
+    inline def setSchemaVersion(value: string): Self = StObject.set(x, "SchemaVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaVersionUndefined: Self = StObject.set(x, "SchemaVersion", js.undefined)
+    inline def setSchemaVersionUndefined: Self = StObject.set(x, "SchemaVersion", js.undefined)
   }
 }

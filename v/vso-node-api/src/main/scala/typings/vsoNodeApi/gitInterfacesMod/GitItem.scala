@@ -35,8 +35,7 @@ trait GitItem
 }
 object GitItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     commitId: String,
     contentMetadata: FileContentMetadata,
@@ -53,22 +52,16 @@ object GitItem {
     __obj.asInstanceOf[GitItem]
   }
   
-  @scala.inline
-  implicit class GitItemMutableBuilder[Self <: GitItem] (val x: Self) extends AnyVal {
+  extension [Self <: GitItem](x: Self) {
     
-    @scala.inline
-    def setCommitId(value: String): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
+    inline def setCommitId(value: String): Self = StObject.set(x, "commitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGitObjectType(value: GitObjectType): Self = StObject.set(x, "gitObjectType", value.asInstanceOf[js.Any])
+    inline def setGitObjectType(value: GitObjectType): Self = StObject.set(x, "gitObjectType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatestProcessedChange(value: GitCommitRef): Self = StObject.set(x, "latestProcessedChange", value.asInstanceOf[js.Any])
+    inline def setLatestProcessedChange(value: GitCommitRef): Self = StObject.set(x, "latestProcessedChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalObjectId(value: String): Self = StObject.set(x, "originalObjectId", value.asInstanceOf[js.Any])
+    inline def setOriginalObjectId(value: String): Self = StObject.set(x, "originalObjectId", value.asInstanceOf[js.Any])
   }
 }

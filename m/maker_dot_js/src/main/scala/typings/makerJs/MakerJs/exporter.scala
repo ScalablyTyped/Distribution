@@ -14,9 +14,9 @@ object exporter {
     */
   trait Exporter extends StObject {
     
-    var beginModel: js.Any
+    /* private */ var beginModel: js.Any
     
-    var endModel: js.Any
+    /* private */ var endModel: js.Any
     
     /**
       * Export an object.
@@ -42,16 +42,15 @@ object exporter {
       */
     def exportPath(id: String, pathToExport: IPath, offset: IPoint, layer: String): Unit
     
-    var fixPath: js.Any
+    /* private */ var fixPath: js.Any
     
-    var fixPoint: js.Any
+    /* private */ var fixPoint: js.Any
     
-    var map: js.Any
+    /* private */ var map: js.Any
   }
   object Exporter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       beginModel: js.Any,
       endModel: js.Any,
       exportItem: (String, js.Any, IPoint) => Unit,
@@ -65,32 +64,23 @@ object exporter {
       __obj.asInstanceOf[Exporter]
     }
     
-    @scala.inline
-    implicit class ExporterMutableBuilder[Self <: Exporter] (val x: Self) extends AnyVal {
+    extension [Self <: Exporter](x: Self) {
       
-      @scala.inline
-      def setBeginModel(value: js.Any): Self = StObject.set(x, "beginModel", value.asInstanceOf[js.Any])
+      inline def setBeginModel(value: js.Any): Self = StObject.set(x, "beginModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndModel(value: js.Any): Self = StObject.set(x, "endModel", value.asInstanceOf[js.Any])
+      inline def setEndModel(value: js.Any): Self = StObject.set(x, "endModel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportItem(value: (String, js.Any, IPoint) => Unit): Self = StObject.set(x, "exportItem", js.Any.fromFunction3(value))
+      inline def setExportItem(value: (String, js.Any, IPoint) => Unit): Self = StObject.set(x, "exportItem", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setExportModel(value: (String, IModel, IPoint) => Unit): Self = StObject.set(x, "exportModel", js.Any.fromFunction3(value))
+      inline def setExportModel(value: (String, IModel, IPoint) => Unit): Self = StObject.set(x, "exportModel", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setExportPath(value: (String, IPath, IPoint, String) => Unit): Self = StObject.set(x, "exportPath", js.Any.fromFunction4(value))
+      inline def setExportPath(value: (String, IPath, IPoint, String) => Unit): Self = StObject.set(x, "exportPath", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setFixPath(value: js.Any): Self = StObject.set(x, "fixPath", value.asInstanceOf[js.Any])
+      inline def setFixPath(value: js.Any): Self = StObject.set(x, "fixPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixPoint(value: js.Any): Self = StObject.set(x, "fixPoint", value.asInstanceOf[js.Any])
+      inline def setFixPoint(value: js.Any): Self = StObject.set(x, "fixPoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMap(value: js.Any): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: js.Any): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     }
   }
   
@@ -111,20 +101,16 @@ object exporter {
   }
   object IExportOptions {
     
-    @scala.inline
-    def apply(): IExportOptions = {
+    inline def apply(): IExportOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IExportOptions]
     }
     
-    @scala.inline
-    implicit class IExportOptionsMutableBuilder[Self <: IExportOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IExportOptions](x: Self) {
       
-      @scala.inline
-      def setUnits(value: String): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
+      inline def setUnits(value: String): Self = StObject.set(x, "units", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
+      inline def setUnitsUndefined: Self = StObject.set(x, "units", js.undefined)
     }
   }
   
@@ -157,38 +143,28 @@ object exporter {
   }
   object IOpenJsCadOptions {
     
-    @scala.inline
-    def apply(): IOpenJsCadOptions = {
+    inline def apply(): IOpenJsCadOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IOpenJsCadOptions]
     }
     
-    @scala.inline
-    implicit class IOpenJsCadOptionsMutableBuilder[Self <: IOpenJsCadOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IOpenJsCadOptions](x: Self) {
       
-      @scala.inline
-      def setExtrusion(value: Double): Self = StObject.set(x, "extrusion", value.asInstanceOf[js.Any])
+      inline def setExtrusion(value: Double): Self = StObject.set(x, "extrusion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtrusionUndefined: Self = StObject.set(x, "extrusion", js.undefined)
+      inline def setExtrusionUndefined: Self = StObject.set(x, "extrusion", js.undefined)
       
-      @scala.inline
-      def setFacetSize(value: Double): Self = StObject.set(x, "facetSize", value.asInstanceOf[js.Any])
+      inline def setFacetSize(value: Double): Self = StObject.set(x, "facetSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFacetSizeUndefined: Self = StObject.set(x, "facetSize", js.undefined)
+      inline def setFacetSizeUndefined: Self = StObject.set(x, "facetSize", js.undefined)
       
-      @scala.inline
-      def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
+      inline def setFunctionName(value: String): Self = StObject.set(x, "functionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
+      inline def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
       
-      @scala.inline
-      def setModelMap(value: IOpenJsCadOptionsMap): Self = StObject.set(x, "modelMap", value.asInstanceOf[js.Any])
+      inline def setModelMap(value: IOpenJsCadOptionsMap): Self = StObject.set(x, "modelMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelMapUndefined: Self = StObject.set(x, "modelMap", js.undefined)
+      inline def setModelMapUndefined: Self = StObject.set(x, "modelMap", js.undefined)
     }
   }
   
@@ -213,26 +189,20 @@ object exporter {
   }
   object IPDFRenderOptions {
     
-    @scala.inline
-    def apply(): IPDFRenderOptions = {
+    inline def apply(): IPDFRenderOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IPDFRenderOptions]
     }
     
-    @scala.inline
-    implicit class IPDFRenderOptionsMutableBuilder[Self <: IPDFRenderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IPDFRenderOptions](x: Self) {
       
-      @scala.inline
-      def setOrigin(value: IPoint): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: IPoint): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+      inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
       
-      @scala.inline
-      def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+      inline def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+      inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
     }
   }
   
@@ -300,74 +270,52 @@ object exporter {
   }
   object ISVGRenderOptions {
     
-    @scala.inline
-    def apply(): ISVGRenderOptions = {
+    inline def apply(): ISVGRenderOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISVGRenderOptions]
     }
     
-    @scala.inline
-    implicit class ISVGRenderOptionsMutableBuilder[Self <: ISVGRenderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ISVGRenderOptions](x: Self) {
       
-      @scala.inline
-      def setAnnotate(value: Boolean): Self = StObject.set(x, "annotate", value.asInstanceOf[js.Any])
+      inline def setAnnotate(value: Boolean): Self = StObject.set(x, "annotate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnnotateUndefined: Self = StObject.set(x, "annotate", js.undefined)
+      inline def setAnnotateUndefined: Self = StObject.set(x, "annotate", js.undefined)
       
-      @scala.inline
-      def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
-      @scala.inline
-      def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+      inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
-      @scala.inline
-      def setOrigin(value: IPoint): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: IPoint): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+      inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
       
-      @scala.inline
-      def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
-      @scala.inline
-      def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+      inline def setStroke(value: String): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+      inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
       
-      @scala.inline
-      def setStrokeWidth(value: String): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+      inline def setStrokeWidth(value: String): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+      inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
       
-      @scala.inline
-      def setSvgAttrs(value: IXmlTagAttrs): Self = StObject.set(x, "svgAttrs", value.asInstanceOf[js.Any])
+      inline def setSvgAttrs(value: IXmlTagAttrs): Self = StObject.set(x, "svgAttrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSvgAttrsUndefined: Self = StObject.set(x, "svgAttrs", js.undefined)
+      inline def setSvgAttrsUndefined: Self = StObject.set(x, "svgAttrs", js.undefined)
       
-      @scala.inline
-      def setUseSvgPathOnly(value: Boolean): Self = StObject.set(x, "useSvgPathOnly", value.asInstanceOf[js.Any])
+      inline def setUseSvgPathOnly(value: Boolean): Self = StObject.set(x, "useSvgPathOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseSvgPathOnlyUndefined: Self = StObject.set(x, "useSvgPathOnly", js.undefined)
+      inline def setUseSvgPathOnlyUndefined: Self = StObject.set(x, "useSvgPathOnly", js.undefined)
       
-      @scala.inline
-      def setViewBox(value: Boolean): Self = StObject.set(x, "viewBox", value.asInstanceOf[js.Any])
+      inline def setViewBox(value: Boolean): Self = StObject.set(x, "viewBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewBoxUndefined: Self = StObject.set(x, "viewBox", js.undefined)
+      inline def setViewBoxUndefined: Self = StObject.set(x, "viewBox", js.undefined)
     }
   }
   
@@ -416,8 +364,7 @@ object exporter {
   }
   object XmlTag {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attrs: IXmlTagAttrs,
       getClosingTag: () => String,
       getInnerText: () => String,
@@ -430,29 +377,21 @@ object exporter {
       __obj.asInstanceOf[XmlTag]
     }
     
-    @scala.inline
-    implicit class XmlTagMutableBuilder[Self <: XmlTag] (val x: Self) extends AnyVal {
+    extension [Self <: XmlTag](x: Self) {
       
-      @scala.inline
-      def setAttrs(value: IXmlTagAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      inline def setAttrs(value: IXmlTagAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetClosingTag(value: () => String): Self = StObject.set(x, "getClosingTag", js.Any.fromFunction0(value))
+      inline def setGetClosingTag(value: () => String): Self = StObject.set(x, "getClosingTag", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetInnerText(value: () => String): Self = StObject.set(x, "getInnerText", js.Any.fromFunction0(value))
+      inline def setGetInnerText(value: () => String): Self = StObject.set(x, "getInnerText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetOpeningTag(value: Boolean => String): Self = StObject.set(x, "getOpeningTag", js.Any.fromFunction1(value))
+      inline def setGetOpeningTag(value: Boolean => String): Self = StObject.set(x, "getOpeningTag", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInnerText(value: String): Self = StObject.set(x, "innerText", value.asInstanceOf[js.Any])
+      inline def setInnerText(value: String): Self = StObject.set(x, "innerText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerTextEscaped(value: Boolean): Self = StObject.set(x, "innerTextEscaped", value.asInstanceOf[js.Any])
+      inline def setInnerTextEscaped(value: Boolean): Self = StObject.set(x, "innerTextEscaped", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

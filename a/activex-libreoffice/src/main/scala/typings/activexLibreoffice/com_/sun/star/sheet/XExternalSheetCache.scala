@@ -59,8 +59,7 @@ trait XExternalSheetCache extends StObject {
 }
 object XExternalSheetCache {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllRows: SafeArray[Double],
     TokenIndex: Double,
     getAllColumns: Double => SafeArray[Double],
@@ -72,25 +71,18 @@ object XExternalSheetCache {
     __obj.asInstanceOf[XExternalSheetCache]
   }
   
-  @scala.inline
-  implicit class XExternalSheetCacheMutableBuilder[Self <: XExternalSheetCache] (val x: Self) extends AnyVal {
+  extension [Self <: XExternalSheetCache](x: Self) {
     
-    @scala.inline
-    def setAllRows(value: SafeArray[Double]): Self = StObject.set(x, "AllRows", value.asInstanceOf[js.Any])
+    inline def setAllRows(value: SafeArray[Double]): Self = StObject.set(x, "AllRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAllColumns(value: Double => SafeArray[Double]): Self = StObject.set(x, "getAllColumns", js.Any.fromFunction1(value))
+    inline def setGetAllColumns(value: Double => SafeArray[Double]): Self = StObject.set(x, "getAllColumns", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAllRows(value: () => SafeArray[Double]): Self = StObject.set(x, "getAllRows", js.Any.fromFunction0(value))
+    inline def setGetAllRows(value: () => SafeArray[Double]): Self = StObject.set(x, "getAllRows", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCellValue(value: (Double, Double) => js.Any): Self = StObject.set(x, "getCellValue", js.Any.fromFunction2(value))
+    inline def setGetCellValue(value: (Double, Double) => js.Any): Self = StObject.set(x, "getCellValue", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetCellValue(value: (Double, Double, js.Any) => Unit): Self = StObject.set(x, "setCellValue", js.Any.fromFunction3(value))
+    inline def setSetCellValue(value: (Double, Double, js.Any) => Unit): Self = StObject.set(x, "setCellValue", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setTokenIndex(value: Double): Self = StObject.set(x, "TokenIndex", value.asInstanceOf[js.Any])
+    inline def setTokenIndex(value: Double): Self = StObject.set(x, "TokenIndex", value.asInstanceOf[js.Any])
   }
 }

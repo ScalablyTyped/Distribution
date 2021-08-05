@@ -11,17 +11,14 @@ trait `214` extends StObject {
 }
 object `214` {
   
-  @scala.inline
-  def apply(): `214` = {
+  inline def apply(): `214` = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("UnionTypeAnnotation")
     __obj.asInstanceOf[`214`]
   }
   
-  @scala.inline
-  implicit class `214MutableBuilder`[Self <: `214`] (val x: Self) extends AnyVal {
+  extension [Self <: `214`](x: Self) {
     
-    @scala.inline
-    def setType(value: UnionTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: UnionTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

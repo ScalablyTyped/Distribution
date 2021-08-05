@@ -24,8 +24,7 @@ trait ChatMessageNotificationTriggerDetails extends StObject {
 }
 object ChatMessageNotificationTriggerDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     chatMessage: ChatMessage,
     shouldDisplayToast: Boolean,
     shouldUpdateActionCenter: Boolean,
@@ -36,22 +35,16 @@ object ChatMessageNotificationTriggerDetails {
     __obj.asInstanceOf[ChatMessageNotificationTriggerDetails]
   }
   
-  @scala.inline
-  implicit class ChatMessageNotificationTriggerDetailsMutableBuilder[Self <: ChatMessageNotificationTriggerDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ChatMessageNotificationTriggerDetails](x: Self) {
     
-    @scala.inline
-    def setChatMessage(value: ChatMessage): Self = StObject.set(x, "chatMessage", value.asInstanceOf[js.Any])
+    inline def setChatMessage(value: ChatMessage): Self = StObject.set(x, "chatMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShouldDisplayToast(value: Boolean): Self = StObject.set(x, "shouldDisplayToast", value.asInstanceOf[js.Any])
+    inline def setShouldDisplayToast(value: Boolean): Self = StObject.set(x, "shouldDisplayToast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShouldUpdateActionCenter(value: Boolean): Self = StObject.set(x, "shouldUpdateActionCenter", value.asInstanceOf[js.Any])
+    inline def setShouldUpdateActionCenter(value: Boolean): Self = StObject.set(x, "shouldUpdateActionCenter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShouldUpdateBadge(value: Boolean): Self = StObject.set(x, "shouldUpdateBadge", value.asInstanceOf[js.Any])
+    inline def setShouldUpdateBadge(value: Boolean): Self = StObject.set(x, "shouldUpdateBadge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShouldUpdateDetailText(value: Boolean): Self = StObject.set(x, "shouldUpdateDetailText", value.asInstanceOf[js.Any])
+    inline def setShouldUpdateDetailText(value: Boolean): Self = StObject.set(x, "shouldUpdateDetailText", value.asInstanceOf[js.Any])
   }
 }

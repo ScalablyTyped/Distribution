@@ -15,34 +15,25 @@ trait IListOperationsResponse extends StObject {
 }
 object IListOperationsResponse {
   
-  @scala.inline
-  def apply(): IListOperationsResponse = {
+  inline def apply(): IListOperationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IListOperationsResponse]
   }
   
-  @scala.inline
-  implicit class IListOperationsResponseMutableBuilder[Self <: IListOperationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: IListOperationsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
+    inline def setNextPageTokenNull: Self = StObject.set(x, "nextPageToken", null)
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setOperations(value: js.Array[IOperation]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: js.Array[IOperation]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationsNull: Self = StObject.set(x, "operations", null)
+    inline def setOperationsNull: Self = StObject.set(x, "operations", null)
     
-    @scala.inline
-    def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
+    inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
     
-    @scala.inline
-    def setOperationsVarargs(value: IOperation*): Self = StObject.set(x, "operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: IOperation*): Self = StObject.set(x, "operations", js.Array(value :_*))
   }
 }

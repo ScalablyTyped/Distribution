@@ -19,8 +19,7 @@ trait IBitmapDecoder extends StObject {
 }
 object IBitmapDecoder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bitmapContainerProperties: BitmapPropertiesView,
     decoderInformation: BitmapCodecInformation,
     frameCount: Double,
@@ -31,22 +30,16 @@ object IBitmapDecoder {
     __obj.asInstanceOf[IBitmapDecoder]
   }
   
-  @scala.inline
-  implicit class IBitmapDecoderMutableBuilder[Self <: IBitmapDecoder] (val x: Self) extends AnyVal {
+  extension [Self <: IBitmapDecoder](x: Self) {
     
-    @scala.inline
-    def setBitmapContainerProperties(value: BitmapPropertiesView): Self = StObject.set(x, "bitmapContainerProperties", value.asInstanceOf[js.Any])
+    inline def setBitmapContainerProperties(value: BitmapPropertiesView): Self = StObject.set(x, "bitmapContainerProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecoderInformation(value: BitmapCodecInformation): Self = StObject.set(x, "decoderInformation", value.asInstanceOf[js.Any])
+    inline def setDecoderInformation(value: BitmapCodecInformation): Self = StObject.set(x, "decoderInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameCount(value: Double): Self = StObject.set(x, "frameCount", value.asInstanceOf[js.Any])
+    inline def setFrameCount(value: Double): Self = StObject.set(x, "frameCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetFrameAsync(value: Double => IAsyncOperation[BitmapFrame]): Self = StObject.set(x, "getFrameAsync", js.Any.fromFunction1(value))
+    inline def setGetFrameAsync(value: Double => IAsyncOperation[BitmapFrame]): Self = StObject.set(x, "getFrameAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPreviewAsync(value: () => IAsyncOperation[ImageStream]): Self = StObject.set(x, "getPreviewAsync", js.Any.fromFunction0(value))
+    inline def setGetPreviewAsync(value: () => IAsyncOperation[ImageStream]): Self = StObject.set(x, "getPreviewAsync", js.Any.fromFunction0(value))
   }
 }

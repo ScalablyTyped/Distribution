@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TestStatus extends StObject
 object TestStatus {
   
-  @scala.inline
-  def done: typings.jestTypes.jestTypesStrings.done = "done".asInstanceOf[typings.jestTypes.jestTypesStrings.done]
+  inline def done: typings.jestTypes.jestTypesStrings.done = "done".asInstanceOf[typings.jestTypes.jestTypesStrings.done]
   
-  @scala.inline
-  def skip: typings.jestTypes.jestTypesStrings.skip = "skip".asInstanceOf[typings.jestTypes.jestTypesStrings.skip]
+  inline def skip: typings.jestTypes.jestTypesStrings.skip = "skip".asInstanceOf[typings.jestTypes.jestTypesStrings.skip]
   
-  @scala.inline
-  def todo: typings.jestTypes.jestTypesStrings.todo = "todo".asInstanceOf[typings.jestTypes.jestTypesStrings.todo]
+  inline def todo: typings.jestTypes.jestTypesStrings.todo = "todo".asInstanceOf[typings.jestTypes.jestTypesStrings.todo]
 }

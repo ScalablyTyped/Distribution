@@ -18,25 +18,19 @@ trait CellFormulaValue
 }
 object CellFormulaValue {
   
-  @scala.inline
-  def apply(date1904: Boolean, formula: String): CellFormulaValue = {
+  inline def apply(date1904: Boolean, formula: String): CellFormulaValue = {
     val __obj = js.Dynamic.literal(date1904 = date1904.asInstanceOf[js.Any], formula = formula.asInstanceOf[js.Any])
     __obj.asInstanceOf[CellFormulaValue]
   }
   
-  @scala.inline
-  implicit class CellFormulaValueMutableBuilder[Self <: CellFormulaValue] (val x: Self) extends AnyVal {
+  extension [Self <: CellFormulaValue](x: Self) {
     
-    @scala.inline
-    def setDate1904(value: Boolean): Self = StObject.set(x, "date1904", value.asInstanceOf[js.Any])
+    inline def setDate1904(value: Boolean): Self = StObject.set(x, "date1904", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormula(value: String): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
+    inline def setFormula(value: String): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: Double | String | Date | Error): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Double | String | Date | Error): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
   }
 }

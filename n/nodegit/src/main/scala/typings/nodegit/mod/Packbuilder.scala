@@ -15,6 +15,5 @@ object Packbuilder {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(repo: typings.nodegit.repositoryMod.Repository): typings.nodegit.packBuilderMod.Packbuilder = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any]).asInstanceOf[typings.nodegit.packBuilderMod.Packbuilder]
+  inline def create(repo: typings.nodegit.repositoryMod.Repository): typings.nodegit.packBuilderMod.Packbuilder = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any]).asInstanceOf[typings.nodegit.packBuilderMod.Packbuilder]
 }

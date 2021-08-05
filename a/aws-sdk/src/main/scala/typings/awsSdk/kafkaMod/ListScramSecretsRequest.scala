@@ -29,28 +29,21 @@ trait ListScramSecretsRequest extends StObject {
 }
 object ListScramSecretsRequest {
   
-  @scala.inline
-  def apply(ClusterArn: string): ListScramSecretsRequest = {
+  inline def apply(ClusterArn: string): ListScramSecretsRequest = {
     val __obj = js.Dynamic.literal(ClusterArn = ClusterArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListScramSecretsRequest]
   }
   
-  @scala.inline
-  implicit class ListScramSecretsRequestMutableBuilder[Self <: ListScramSecretsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListScramSecretsRequest](x: Self) {
     
-    @scala.inline
-    def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
+    inline def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -21,38 +21,28 @@ object mod {
   }
   object ColorOptions {
     
-    @scala.inline
-    def apply(): ColorOptions = {
+    inline def apply(): ColorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ColorOptions]
     }
     
-    @scala.inline
-    implicit class ColorOptionsMutableBuilder[Self <: ColorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ColorOptions](x: Self) {
       
-      @scala.inline
-      def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+      inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
       
-      @scala.inline
-      def setSuccess(value: String): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: String): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+      inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
       
-      @scala.inline
-      def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+      inline def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+      inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
     }
   }
   
@@ -65,20 +55,16 @@ object mod {
   }
   object ConfigOptions {
     
-    @scala.inline
-    def apply(): ConfigOptions = {
+    inline def apply(): ConfigOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    @scala.inline
-    implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigOptions](x: Self) {
       
-      @scala.inline
-      def setMochaReporter(value: MochaReporterOptions): Self = StObject.set(x, "mochaReporter", value.asInstanceOf[js.Any])
+      inline def setMochaReporter(value: MochaReporterOptions): Self = StObject.set(x, "mochaReporter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMochaReporterUndefined: Self = StObject.set(x, "mochaReporter", js.undefined)
+      inline def setMochaReporterUndefined: Self = StObject.set(x, "mochaReporter", js.undefined)
     }
   }
   
@@ -134,62 +120,44 @@ object mod {
   }
   object MochaReporterOptions {
     
-    @scala.inline
-    def apply(): MochaReporterOptions = {
+    inline def apply(): MochaReporterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MochaReporterOptions]
     }
     
-    @scala.inline
-    implicit class MochaReporterOptionsMutableBuilder[Self <: MochaReporterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MochaReporterOptions](x: Self) {
       
-      @scala.inline
-      def setColors(value: ColorOptions): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: ColorOptions): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+      inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
-      @scala.inline
-      def setDivider(value: String | `false`): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
+      inline def setDivider(value: String | `false`): Self = StObject.set(x, "divider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDividerUndefined: Self = StObject.set(x, "divider", js.undefined)
+      inline def setDividerUndefined: Self = StObject.set(x, "divider", js.undefined)
       
-      @scala.inline
-      def setIgnoreSkipped(value: Boolean): Self = StObject.set(x, "ignoreSkipped", value.asInstanceOf[js.Any])
+      inline def setIgnoreSkipped(value: Boolean): Self = StObject.set(x, "ignoreSkipped", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreSkippedUndefined: Self = StObject.set(x, "ignoreSkipped", js.undefined)
+      inline def setIgnoreSkippedUndefined: Self = StObject.set(x, "ignoreSkipped", js.undefined)
       
-      @scala.inline
-      def setMaxLogLines(value: Double): Self = StObject.set(x, "maxLogLines", value.asInstanceOf[js.Any])
+      inline def setMaxLogLines(value: Double): Self = StObject.set(x, "maxLogLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLogLinesUndefined: Self = StObject.set(x, "maxLogLines", js.undefined)
+      inline def setMaxLogLinesUndefined: Self = StObject.set(x, "maxLogLines", js.undefined)
       
-      @scala.inline
-      def setOutput(value: OutputOptions): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: OutputOptions): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+      inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
       
-      @scala.inline
-      def setPrintFirstSuccess(value: Boolean): Self = StObject.set(x, "printFirstSuccess", value.asInstanceOf[js.Any])
+      inline def setPrintFirstSuccess(value: Boolean): Self = StObject.set(x, "printFirstSuccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrintFirstSuccessUndefined: Self = StObject.set(x, "printFirstSuccess", js.undefined)
+      inline def setPrintFirstSuccessUndefined: Self = StObject.set(x, "printFirstSuccess", js.undefined)
       
-      @scala.inline
-      def setShowDiff(value: ShowDiffOptions): Self = StObject.set(x, "showDiff", value.asInstanceOf[js.Any])
+      inline def setShowDiff(value: ShowDiffOptions): Self = StObject.set(x, "showDiff", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowDiffUndefined: Self = StObject.set(x, "showDiff", js.undefined)
+      inline def setShowDiffUndefined: Self = StObject.set(x, "showDiff", js.undefined)
       
-      @scala.inline
-      def setSymbols(value: SymbolOptions): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
+      inline def setSymbols(value: SymbolOptions): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbolsUndefined: Self = StObject.set(x, "symbols", js.undefined)
+      inline def setSymbolsUndefined: Self = StObject.set(x, "symbols", js.undefined)
     }
   }
   
@@ -202,17 +170,13 @@ object mod {
   trait OutputOptions extends StObject
   object OutputOptions {
     
-    @scala.inline
-    def autowatch: typings.karmaMochaReporter.karmaMochaReporterStrings.autowatch = "autowatch".asInstanceOf[typings.karmaMochaReporter.karmaMochaReporterStrings.autowatch]
+    inline def autowatch: typings.karmaMochaReporter.karmaMochaReporterStrings.autowatch = "autowatch".asInstanceOf[typings.karmaMochaReporter.karmaMochaReporterStrings.autowatch]
     
-    @scala.inline
-    def full: typings.karmaMochaReporter.karmaMochaReporterStrings.full = "full".asInstanceOf[typings.karmaMochaReporter.karmaMochaReporterStrings.full]
+    inline def full: typings.karmaMochaReporter.karmaMochaReporterStrings.full = "full".asInstanceOf[typings.karmaMochaReporter.karmaMochaReporterStrings.full]
     
-    @scala.inline
-    def minimal: typings.karmaMochaReporter.karmaMochaReporterStrings.minimal = "minimal".asInstanceOf[typings.karmaMochaReporter.karmaMochaReporterStrings.minimal]
+    inline def minimal: typings.karmaMochaReporter.karmaMochaReporterStrings.minimal = "minimal".asInstanceOf[typings.karmaMochaReporter.karmaMochaReporterStrings.minimal]
     
-    @scala.inline
-    def noFailures: typings.karmaMochaReporter.karmaMochaReporterStrings.noFailures = "noFailures".asInstanceOf[typings.karmaMochaReporter.karmaMochaReporterStrings.noFailures]
+    inline def noFailures: typings.karmaMochaReporter.karmaMochaReporterStrings.noFailures = "noFailures".asInstanceOf[typings.karmaMochaReporter.karmaMochaReporterStrings.noFailures]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -224,17 +188,13 @@ object mod {
   trait ReporterColor extends StObject
   object ReporterColor {
     
-    @scala.inline
-    def error: typings.karmaMochaReporter.karmaMochaReporterStrings.error = "error".asInstanceOf[typings.karmaMochaReporter.karmaMochaReporterStrings.error]
+    inline def error: typings.karmaMochaReporter.karmaMochaReporterStrings.error = "error".asInstanceOf[typings.karmaMochaReporter.karmaMochaReporterStrings.error]
     
-    @scala.inline
-    def info: typings.karmaMochaReporter.karmaMochaReporterStrings.info = "info".asInstanceOf[typings.karmaMochaReporter.karmaMochaReporterStrings.info]
+    inline def info: typings.karmaMochaReporter.karmaMochaReporterStrings.info = "info".asInstanceOf[typings.karmaMochaReporter.karmaMochaReporterStrings.info]
     
-    @scala.inline
-    def success: typings.karmaMochaReporter.karmaMochaReporterStrings.success = "success".asInstanceOf[typings.karmaMochaReporter.karmaMochaReporterStrings.success]
+    inline def success: typings.karmaMochaReporter.karmaMochaReporterStrings.success = "success".asInstanceOf[typings.karmaMochaReporter.karmaMochaReporterStrings.success]
     
-    @scala.inline
-    def warning: typings.karmaMochaReporter.karmaMochaReporterStrings.warning = "warning".asInstanceOf[typings.karmaMochaReporter.karmaMochaReporterStrings.warning]
+    inline def warning: typings.karmaMochaReporter.karmaMochaReporterStrings.warning = "warning".asInstanceOf[typings.karmaMochaReporter.karmaMochaReporterStrings.warning]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -245,14 +205,11 @@ object mod {
   trait ShowDiffOptions extends StObject
   object ShowDiffOptions {
     
-    @scala.inline
-    def `inline`: typings.karmaMochaReporter.karmaMochaReporterStrings.`inline` = "inline".asInstanceOf[typings.karmaMochaReporter.karmaMochaReporterStrings.`inline`]
+    inline def `inline`: typings.karmaMochaReporter.karmaMochaReporterStrings.`inline` = "inline".asInstanceOf[typings.karmaMochaReporter.karmaMochaReporterStrings.`inline`]
     
-    @scala.inline
-    def `true`: typings.karmaMochaReporter.karmaMochaReporterBooleans.`true` = true.asInstanceOf[typings.karmaMochaReporter.karmaMochaReporterBooleans.`true`]
+    inline def `true`: typings.karmaMochaReporter.karmaMochaReporterBooleans.`true` = true.asInstanceOf[typings.karmaMochaReporter.karmaMochaReporterBooleans.`true`]
     
-    @scala.inline
-    def unified: typings.karmaMochaReporter.karmaMochaReporterStrings.unified = "unified".asInstanceOf[typings.karmaMochaReporter.karmaMochaReporterStrings.unified]
+    inline def unified: typings.karmaMochaReporter.karmaMochaReporterStrings.unified = "unified".asInstanceOf[typings.karmaMochaReporter.karmaMochaReporterStrings.unified]
   }
   
   /* Inlined {[ K in karma-mocha-reporter.karma.ReporterColor ]:? string} */
@@ -268,38 +225,28 @@ object mod {
   }
   object SymbolOptions {
     
-    @scala.inline
-    def apply(): SymbolOptions = {
+    inline def apply(): SymbolOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SymbolOptions]
     }
     
-    @scala.inline
-    implicit class SymbolOptionsMutableBuilder[Self <: SymbolOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SymbolOptions](x: Self) {
       
-      @scala.inline
-      def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+      inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
       
-      @scala.inline
-      def setSuccess(value: String): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: String): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+      inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
       
-      @scala.inline
-      def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
+      inline def setWarning(value: String): Self = StObject.set(x, "warning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
+      inline def setWarningUndefined: Self = StObject.set(x, "warning", js.undefined)
     }
   }
 }

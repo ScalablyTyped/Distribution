@@ -12,13 +12,10 @@ object mapUtilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def mapEntry(key: String, value: Expression): MapEntry_ = (^.asInstanceOf[js.Dynamic].applyDynamic("mapEntry")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[MapEntry_]
+  inline def mapEntry(key: String, value: Expression): MapEntry_ = (^.asInstanceOf[js.Dynamic].applyDynamic("mapEntry")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[MapEntry_]
   
-  @scala.inline
-  def mapLiteral(obj: StringDictionary[Expression]): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("mapLiteral")(obj.asInstanceOf[js.Any]).asInstanceOf[Expression]
-  @scala.inline
-  def mapLiteral(obj: StringDictionary[Expression], quoted: Boolean): Expression = (^.asInstanceOf[js.Dynamic].applyDynamic("mapLiteral")(obj.asInstanceOf[js.Any], quoted.asInstanceOf[js.Any])).asInstanceOf[Expression]
+  inline def mapLiteral(obj: StringDictionary[Expression]): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("mapLiteral")(obj.asInstanceOf[js.Any]).asInstanceOf[Expression]
+  inline def mapLiteral(obj: StringDictionary[Expression], quoted: Boolean): Expression = (^.asInstanceOf[js.Dynamic].applyDynamic("mapLiteral")(obj.asInstanceOf[js.Any], quoted.asInstanceOf[js.Any])).asInstanceOf[Expression]
   
   trait MapEntry_ extends StObject {
     
@@ -30,23 +27,18 @@ object mapUtilMod {
   }
   object MapEntry_ {
     
-    @scala.inline
-    def apply(key: String, quoted: Boolean, value: Expression): MapEntry_ = {
+    inline def apply(key: String, quoted: Boolean, value: Expression): MapEntry_ = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], quoted = quoted.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[MapEntry_]
     }
     
-    @scala.inline
-    implicit class MapEntry_MutableBuilder[Self <: MapEntry_] (val x: Self) extends AnyVal {
+    extension [Self <: MapEntry_](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuoted(value: Boolean): Self = StObject.set(x, "quoted", value.asInstanceOf[js.Any])
+      inline def setQuoted(value: Boolean): Self = StObject.set(x, "quoted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Expression): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Expression): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

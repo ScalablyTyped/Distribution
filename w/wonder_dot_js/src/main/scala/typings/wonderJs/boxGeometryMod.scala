@@ -30,7 +30,6 @@ object boxGeometryMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(): BoxGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BoxGeometry]
+    inline def create(): BoxGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[BoxGeometry]
   }
 }

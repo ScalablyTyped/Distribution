@@ -16,19 +16,15 @@ trait GetClientGrantsOptionsPaged
 }
 object GetClientGrantsOptionsPaged {
   
-  @scala.inline
-  def apply(): GetClientGrantsOptionsPaged = {
+  inline def apply(): GetClientGrantsOptionsPaged = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetClientGrantsOptionsPaged]
   }
   
-  @scala.inline
-  implicit class GetClientGrantsOptionsPagedMutableBuilder[Self <: GetClientGrantsOptionsPaged] (val x: Self) extends AnyVal {
+  extension [Self <: GetClientGrantsOptionsPaged](x: Self) {
     
-    @scala.inline
-    def setInclude_totals(value: Boolean): Self = StObject.set(x, "include_totals", value.asInstanceOf[js.Any])
+    inline def setInclude_totals(value: Boolean): Self = StObject.set(x, "include_totals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInclude_totalsUndefined: Self = StObject.set(x, "include_totals", js.undefined)
+    inline def setInclude_totalsUndefined: Self = StObject.set(x, "include_totals", js.undefined)
   }
 }

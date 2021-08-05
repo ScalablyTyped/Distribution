@@ -18,25 +18,19 @@ trait Line extends StObject {
 }
 object Line {
   
-  @scala.inline
-  def apply(): Line = {
+  inline def apply(): Line = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Line]
   }
   
-  @scala.inline
-  implicit class LineMutableBuilder[Self <: Line] (val x: Self) extends AnyVal {
+  extension [Self <: Line](x: Self) {
     
-    @scala.inline
-    def setVertexOffsets(value: Vertex2DList): Self = StObject.set(x, "vertexOffsets", value.asInstanceOf[js.Any])
+    inline def setVertexOffsets(value: Vertex2DList): Self = StObject.set(x, "vertexOffsets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertexOffsetsUndefined: Self = StObject.set(x, "vertexOffsets", js.undefined)
+    inline def setVertexOffsetsUndefined: Self = StObject.set(x, "vertexOffsets", js.undefined)
     
-    @scala.inline
-    def setZOrder(value: Double): Self = StObject.set(x, "zOrder", value.asInstanceOf[js.Any])
+    inline def setZOrder(value: Double): Self = StObject.set(x, "zOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZOrderUndefined: Self = StObject.set(x, "zOrder", js.undefined)
+    inline def setZOrderUndefined: Self = StObject.set(x, "zOrder", js.undefined)
   }
 }

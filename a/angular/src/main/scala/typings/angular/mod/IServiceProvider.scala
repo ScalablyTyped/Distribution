@@ -12,16 +12,13 @@ trait IServiceProvider extends StObject {
 }
 object IServiceProvider {
   
-  @scala.inline
-  def apply($get: js.Any): IServiceProvider = {
+  inline def apply($get: js.Any): IServiceProvider = {
     val __obj = js.Dynamic.literal($get = $get.asInstanceOf[js.Any])
     __obj.asInstanceOf[IServiceProvider]
   }
   
-  @scala.inline
-  implicit class IServiceProviderMutableBuilder[Self <: IServiceProvider] (val x: Self) extends AnyVal {
+  extension [Self <: IServiceProvider](x: Self) {
     
-    @scala.inline
-    def set$get(value: js.Any): Self = StObject.set(x, "$get", value.asInstanceOf[js.Any])
+    inline def set$get(value: js.Any): Self = StObject.set(x, "$get", value.asInstanceOf[js.Any])
   }
 }

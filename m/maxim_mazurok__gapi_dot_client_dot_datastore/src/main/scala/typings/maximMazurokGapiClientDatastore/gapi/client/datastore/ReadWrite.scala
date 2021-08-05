@@ -11,19 +11,15 @@ trait ReadWrite extends StObject {
 }
 object ReadWrite {
   
-  @scala.inline
-  def apply(): ReadWrite = {
+  inline def apply(): ReadWrite = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReadWrite]
   }
   
-  @scala.inline
-  implicit class ReadWriteMutableBuilder[Self <: ReadWrite] (val x: Self) extends AnyVal {
+  extension [Self <: ReadWrite](x: Self) {
     
-    @scala.inline
-    def setPreviousTransaction(value: String): Self = StObject.set(x, "previousTransaction", value.asInstanceOf[js.Any])
+    inline def setPreviousTransaction(value: String): Self = StObject.set(x, "previousTransaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousTransactionUndefined: Self = StObject.set(x, "previousTransaction", js.undefined)
+    inline def setPreviousTransactionUndefined: Self = StObject.set(x, "previousTransaction", js.undefined)
   }
 }

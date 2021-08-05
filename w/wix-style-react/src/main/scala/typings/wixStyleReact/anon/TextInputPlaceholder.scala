@@ -12,25 +12,19 @@ trait TextInputPlaceholder extends StObject {
 }
 object TextInputPlaceholder {
   
-  @scala.inline
-  def apply(): TextInputPlaceholder = {
+  inline def apply(): TextInputPlaceholder = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextInputPlaceholder]
   }
   
-  @scala.inline
-  implicit class TextInputPlaceholderMutableBuilder[Self <: TextInputPlaceholder] (val x: Self) extends AnyVal {
+  extension [Self <: TextInputPlaceholder](x: Self) {
     
-    @scala.inline
-    def setTextInputPlaceholder(value: String): Self = StObject.set(x, "textInputPlaceholder", value.asInstanceOf[js.Any])
+    inline def setTextInputPlaceholder(value: String): Self = StObject.set(x, "textInputPlaceholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextInputPlaceholderUndefined: Self = StObject.set(x, "textInputPlaceholder", js.undefined)
+    inline def setTextInputPlaceholderUndefined: Self = StObject.set(x, "textInputPlaceholder", js.undefined)
     
-    @scala.inline
-    def setUrlInputPlaceholder(value: String): Self = StObject.set(x, "urlInputPlaceholder", value.asInstanceOf[js.Any])
+    inline def setUrlInputPlaceholder(value: String): Self = StObject.set(x, "urlInputPlaceholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlInputPlaceholderUndefined: Self = StObject.set(x, "urlInputPlaceholder", js.undefined)
+    inline def setUrlInputPlaceholderUndefined: Self = StObject.set(x, "urlInputPlaceholder", js.undefined)
   }
 }

@@ -136,26 +136,20 @@ object ui {
     }
     object definition {
       
-      @scala.inline
-      def apply(): definition = {
+      inline def apply(): definition = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[definition]
       }
       
-      @scala.inline
-      implicit class definitionMutableBuilder[Self <: definition] (val x: Self) extends AnyVal {
+      extension [Self <: definition](x: Self) {
         
-        @scala.inline
-        def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+        inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+        inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       }
     }
     
@@ -177,56 +171,40 @@ object ui {
     }
     object parts {
       
-      @scala.inline
-      def apply(): parts = {
+      inline def apply(): parts = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[parts]
       }
       
-      @scala.inline
-      implicit class partsMutableBuilder[Self <: parts] (val x: Self) extends AnyVal {
+      extension [Self <: parts](x: Self) {
         
-        @scala.inline
-        def setClose(value: element): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+        inline def setClose(value: element): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+        inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
         
-        @scala.inline
-        def setContent(value: element): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+        inline def setContent(value: element): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+        inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
         
-        @scala.inline
-        def setPanel(value: element): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
+        inline def setPanel(value: element): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
+        inline def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
         
-        @scala.inline
-        def setTitle(value: element): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: element): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
         
-        @scala.inline
-        def setTriangle(value: element): Self = StObject.set(x, "triangle", value.asInstanceOf[js.Any])
+        inline def setTriangle(value: element): Self = StObject.set(x, "triangle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTriangleInner(value: element): Self = StObject.set(x, "triangleInner", value.asInstanceOf[js.Any])
+        inline def setTriangleInner(value: element): Self = StObject.set(x, "triangleInner", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTriangleInnerUndefined: Self = StObject.set(x, "triangleInner", js.undefined)
+        inline def setTriangleInnerUndefined: Self = StObject.set(x, "triangleInner", js.undefined)
         
-        @scala.inline
-        def setTriangleOuter(value: element): Self = StObject.set(x, "triangleOuter", value.asInstanceOf[js.Any])
+        inline def setTriangleOuter(value: element): Self = StObject.set(x, "triangleOuter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTriangleOuterUndefined: Self = StObject.set(x, "triangleOuter", js.undefined)
+        inline def setTriangleOuterUndefined: Self = StObject.set(x, "triangleOuter", js.undefined)
         
-        @scala.inline
-        def setTriangleUndefined: Self = StObject.set(x, "triangle", js.undefined)
+        inline def setTriangleUndefined: Self = StObject.set(x, "triangle", js.undefined)
       }
     }
     
@@ -244,44 +222,32 @@ object ui {
     }
     object rect {
       
-      @scala.inline
-      def apply(): rect = {
+      inline def apply(): rect = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[rect]
       }
       
-      @scala.inline
-      implicit class rectMutableBuilder[Self <: rect] (val x: Self) extends AnyVal {
+      extension [Self <: rect](x: Self) {
         
-        @scala.inline
-        def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+        inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+        inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
         
-        @scala.inline
-        def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+        inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+        inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
         
-        @scala.inline
-        def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+        inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+        inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
         
-        @scala.inline
-        def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+        inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+        inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
         
-        @scala.inline
-        def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+        inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+        inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       }
     }
     
@@ -303,56 +269,40 @@ object ui {
     }
     object templateDefinitions {
       
-      @scala.inline
-      def apply(): templateDefinitions = {
+      inline def apply(): templateDefinitions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[templateDefinitions]
       }
       
-      @scala.inline
-      implicit class templateDefinitionsMutableBuilder[Self <: templateDefinitions] (val x: Self) extends AnyVal {
+      extension [Self <: templateDefinitions](x: Self) {
         
-        @scala.inline
-        def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+        inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+        inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
         
-        @scala.inline
-        def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+        inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+        inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
         
-        @scala.inline
-        def setPanel(value: String): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
+        inline def setPanel(value: String): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
+        inline def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
         
-        @scala.inline
-        def setTriangle(value: String): Self = StObject.set(x, "triangle", value.asInstanceOf[js.Any])
+        inline def setTriangle(value: String): Self = StObject.set(x, "triangle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTriangleInner(value: String): Self = StObject.set(x, "triangleInner", value.asInstanceOf[js.Any])
+        inline def setTriangleInner(value: String): Self = StObject.set(x, "triangleInner", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTriangleInnerUndefined: Self = StObject.set(x, "triangleInner", js.undefined)
+        inline def setTriangleInnerUndefined: Self = StObject.set(x, "triangleInner", js.undefined)
         
-        @scala.inline
-        def setTriangleOuter(value: String): Self = StObject.set(x, "triangleOuter", value.asInstanceOf[js.Any])
+        inline def setTriangleOuter(value: String): Self = StObject.set(x, "triangleOuter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTriangleOuterUndefined: Self = StObject.set(x, "triangleOuter", js.undefined)
+        inline def setTriangleOuterUndefined: Self = StObject.set(x, "triangleOuter", js.undefined)
         
-        @scala.inline
-        def setTriangleUndefined: Self = StObject.set(x, "triangle", js.undefined)
+        inline def setTriangleUndefined: Self = StObject.set(x, "triangle", js.undefined)
       }
     }
     
@@ -374,56 +324,40 @@ object ui {
     }
     object templates {
       
-      @scala.inline
-      def apply(): templates = {
+      inline def apply(): templates = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[templates]
       }
       
-      @scala.inline
-      implicit class templatesMutableBuilder[Self <: templates] (val x: Self) extends AnyVal {
+      extension [Self <: templates](x: Self) {
         
-        @scala.inline
-        def setClose(value: template): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+        inline def setClose(value: template): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+        inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
         
-        @scala.inline
-        def setContent(value: template): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+        inline def setContent(value: template): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+        inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
         
-        @scala.inline
-        def setPanel(value: template): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
+        inline def setPanel(value: template): Self = StObject.set(x, "panel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
+        inline def setPanelUndefined: Self = StObject.set(x, "panel", js.undefined)
         
-        @scala.inline
-        def setTitle(value: template): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: template): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
         
-        @scala.inline
-        def setTriangle(value: template): Self = StObject.set(x, "triangle", value.asInstanceOf[js.Any])
+        inline def setTriangle(value: template): Self = StObject.set(x, "triangle", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTriangleInner(value: template): Self = StObject.set(x, "triangleInner", value.asInstanceOf[js.Any])
+        inline def setTriangleInner(value: template): Self = StObject.set(x, "triangleInner", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTriangleInnerUndefined: Self = StObject.set(x, "triangleInner", js.undefined)
+        inline def setTriangleInnerUndefined: Self = StObject.set(x, "triangleInner", js.undefined)
         
-        @scala.inline
-        def setTriangleOuter(value: template): Self = StObject.set(x, "triangleOuter", value.asInstanceOf[js.Any])
+        inline def setTriangleOuter(value: template): Self = StObject.set(x, "triangleOuter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTriangleOuterUndefined: Self = StObject.set(x, "triangleOuter", js.undefined)
+        inline def setTriangleOuterUndefined: Self = StObject.set(x, "triangleOuter", js.undefined)
         
-        @scala.inline
-        def setTriangleUndefined: Self = StObject.set(x, "triangle", js.undefined)
+        inline def setTriangleUndefined: Self = StObject.set(x, "triangle", js.undefined)
       }
     }
   }
@@ -461,8 +395,7 @@ object ui {
   }
   object button {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getState: () => Double,
       render: (editor, js.Array[String]) => Unit,
       setState: Double => Unit,
@@ -472,20 +405,15 @@ object ui {
       __obj.asInstanceOf[button]
     }
     
-    @scala.inline
-    implicit class buttonMutableBuilder[Self <: button] (val x: Self) extends AnyVal {
+    extension [Self <: button](x: Self) {
       
-      @scala.inline
-      def setGetState(value: () => Double): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+      inline def setGetState(value: () => Double): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRender(value: (editor, js.Array[String]) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+      inline def setRender(value: (editor, js.Array[String]) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetState(value: Double => Unit): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
+      inline def setSetState(value: Double => Unit): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToFeature(value: editor => feature): Self = StObject.set(x, "toFeature", js.Any.fromFunction1(value))
+      inline def setToFeature(value: editor => feature): Self = StObject.set(x, "toFeature", js.Any.fromFunction1(value))
     }
   }
   
@@ -503,8 +431,7 @@ object ui {
     }
     object button {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         accessKeyDown: () => Unit,
         accessKeyUp: () => Unit,
         click: () => js.Any,
@@ -528,17 +455,13 @@ object ui {
         __obj.asInstanceOf[typings.ckeditor.CKEDITOR.ui.dialog.button]
       }
       
-      @scala.inline
-      implicit class buttonMutableBuilder[Self <: typings.ckeditor.CKEDITOR.ui.dialog.button] (val x: Self) extends AnyVal {
+      extension [Self <: typings.ckeditor.CKEDITOR.ui.dialog.button](x: Self) {
         
-        @scala.inline
-        def setAccessKeyDown(value: () => Unit): Self = StObject.set(x, "accessKeyDown", js.Any.fromFunction0(value))
+        inline def setAccessKeyDown(value: () => Unit): Self = StObject.set(x, "accessKeyDown", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setAccessKeyUp(value: () => Unit): Self = StObject.set(x, "accessKeyUp", js.Any.fromFunction0(value))
+        inline def setAccessKeyUp(value: () => Unit): Self = StObject.set(x, "accessKeyUp", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setClick(value: () => js.Any): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
+        inline def setClick(value: () => js.Any): Self = StObject.set(x, "click", js.Any.fromFunction0(value))
       }
     }
     
@@ -552,8 +475,7 @@ object ui {
     }
     object checkbox {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         accessKeyDown: (typings.ckeditor.CKEDITOR.dialog, String) => Unit,
         accessKeyUp: () => Unit,
         disable: () => Unit,
@@ -576,14 +498,11 @@ object ui {
         __obj.asInstanceOf[checkbox]
       }
       
-      @scala.inline
-      implicit class checkboxMutableBuilder[Self <: checkbox] (val x: Self) extends AnyVal {
+      extension [Self <: checkbox](x: Self) {
         
-        @scala.inline
-        def setAccessKeyUp(value: () => Unit): Self = StObject.set(x, "accessKeyUp", js.Any.fromFunction0(value))
+        inline def setAccessKeyUp(value: () => Unit): Self = StObject.set(x, "accessKeyUp", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setSetValue(value: (Boolean, Boolean) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
+        inline def setSetValue(value: (Boolean, Boolean) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
       }
     }
     
@@ -597,23 +516,18 @@ object ui {
       }
       object button {
         
-        @scala.inline
-        def apply(label: String): typings.ckeditor.CKEDITOR.ui.dialog.definitions.button = {
+        inline def apply(label: String): typings.ckeditor.CKEDITOR.ui.dialog.definitions.button = {
           val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.ckeditor.CKEDITOR.ui.dialog.definitions.button]
         }
         
-        @scala.inline
-        implicit class buttonMutableBuilder[Self <: typings.ckeditor.CKEDITOR.ui.dialog.definitions.button] (val x: Self) extends AnyVal {
+        extension [Self <: typings.ckeditor.CKEDITOR.ui.dialog.definitions.button](x: Self) {
           
-          @scala.inline
-          def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+          inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+          inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
           
-          @scala.inline
-          def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+          inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         }
       }
       
@@ -627,32 +541,24 @@ object ui {
       }
       object checkbox {
         
-        @scala.inline
-        def apply(): typings.ckeditor.CKEDITOR.ui.dialog.definitions.checkbox = {
+        inline def apply(): typings.ckeditor.CKEDITOR.ui.dialog.definitions.checkbox = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[typings.ckeditor.CKEDITOR.ui.dialog.definitions.checkbox]
         }
         
-        @scala.inline
-        implicit class checkboxMutableBuilder[Self <: typings.ckeditor.CKEDITOR.ui.dialog.definitions.checkbox] (val x: Self) extends AnyVal {
+        extension [Self <: typings.ckeditor.CKEDITOR.ui.dialog.definitions.checkbox](x: Self) {
           
-          @scala.inline
-          def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+          inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+          inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
           
-          @scala.inline
-          def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+          inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+          inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
           
-          @scala.inline
-          def setValidate(value: () => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
+          inline def setValidate(value: () => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+          inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
         }
       }
       
@@ -664,26 +570,20 @@ object ui {
       }
       object fieldSet {
         
-        @scala.inline
-        def apply(children: js.Array[js.Any]): fieldSet = {
+        inline def apply(children: js.Array[js.Any]): fieldSet = {
           val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
           __obj.asInstanceOf[fieldSet]
         }
         
-        @scala.inline
-        implicit class fieldSetMutableBuilder[Self <: fieldSet] (val x: Self) extends AnyVal {
+        extension [Self <: fieldSet](x: Self) {
           
-          @scala.inline
-          def setChildren(value: js.Array[js.Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+          inline def setChildren(value: js.Array[js.Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setChildrenVarargs(value: js.Any*): Self = StObject.set(x, "children", js.Array(value :_*))
+          inline def setChildrenVarargs(value: js.Any*): Self = StObject.set(x, "children", js.Array(value :_*))
           
-          @scala.inline
-          def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+          inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+          inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
         }
       }
       
@@ -693,20 +593,16 @@ object ui {
       }
       object file {
         
-        @scala.inline
-        def apply(): typings.ckeditor.CKEDITOR.ui.dialog.definitions.file = {
+        inline def apply(): typings.ckeditor.CKEDITOR.ui.dialog.definitions.file = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[typings.ckeditor.CKEDITOR.ui.dialog.definitions.file]
         }
         
-        @scala.inline
-        implicit class fileMutableBuilder[Self <: typings.ckeditor.CKEDITOR.ui.dialog.definitions.file] (val x: Self) extends AnyVal {
+        extension [Self <: typings.ckeditor.CKEDITOR.ui.dialog.definitions.file](x: Self) {
           
-          @scala.inline
-          def setValidate(value: () => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
+          inline def setValidate(value: () => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+          inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
         }
       }
       
@@ -718,24 +614,19 @@ object ui {
       }
       object fileButton {
         
-        @scala.inline
-        def apply(`for`: String): typings.ckeditor.CKEDITOR.ui.dialog.definitions.fileButton = {
+        inline def apply(`for`: String): typings.ckeditor.CKEDITOR.ui.dialog.definitions.fileButton = {
           val __obj = js.Dynamic.literal()
           __obj.updateDynamic("for")(`for`.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.ckeditor.CKEDITOR.ui.dialog.definitions.fileButton]
         }
         
-        @scala.inline
-        implicit class fileButtonMutableBuilder[Self <: typings.ckeditor.CKEDITOR.ui.dialog.definitions.fileButton] (val x: Self) extends AnyVal {
+        extension [Self <: typings.ckeditor.CKEDITOR.ui.dialog.definitions.fileButton](x: Self) {
           
-          @scala.inline
-          def setFor(value: String): Self = StObject.set(x, "for", value.asInstanceOf[js.Any])
+          inline def setFor(value: String): Self = StObject.set(x, "for", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setValidate(value: () => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
+          inline def setValidate(value: () => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+          inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
         }
       }
       
@@ -751,41 +642,30 @@ object ui {
       }
       object hbox {
         
-        @scala.inline
-        def apply(): typings.ckeditor.CKEDITOR.ui.dialog.definitions.hbox = {
+        inline def apply(): typings.ckeditor.CKEDITOR.ui.dialog.definitions.hbox = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[typings.ckeditor.CKEDITOR.ui.dialog.definitions.hbox]
         }
         
-        @scala.inline
-        implicit class hboxMutableBuilder[Self <: typings.ckeditor.CKEDITOR.ui.dialog.definitions.hbox] (val x: Self) extends AnyVal {
+        extension [Self <: typings.ckeditor.CKEDITOR.ui.dialog.definitions.hbox](x: Self) {
           
-          @scala.inline
-          def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+          inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+          inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
           
-          @scala.inline
-          def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+          inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+          inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
           
-          @scala.inline
-          def setPadding(value: String): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+          inline def setPadding(value: String): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+          inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
           
-          @scala.inline
-          def setWidths(value: js.Array[String]): Self = StObject.set(x, "widths", value.asInstanceOf[js.Any])
+          inline def setWidths(value: js.Array[String]): Self = StObject.set(x, "widths", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setWidthsUndefined: Self = StObject.set(x, "widths", js.undefined)
+          inline def setWidthsUndefined: Self = StObject.set(x, "widths", js.undefined)
           
-          @scala.inline
-          def setWidthsVarargs(value: String*): Self = StObject.set(x, "widths", js.Array(value :_*))
+          inline def setWidthsVarargs(value: String*): Self = StObject.set(x, "widths", js.Array(value :_*))
         }
       }
       
@@ -795,17 +675,14 @@ object ui {
       }
       object html {
         
-        @scala.inline
-        def apply(html: String): typings.ckeditor.CKEDITOR.ui.dialog.definitions.html = {
+        inline def apply(html: String): typings.ckeditor.CKEDITOR.ui.dialog.definitions.html = {
           val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.ckeditor.CKEDITOR.ui.dialog.definitions.html]
         }
         
-        @scala.inline
-        implicit class htmlMutableBuilder[Self <: typings.ckeditor.CKEDITOR.ui.dialog.definitions.html] (val x: Self) extends AnyVal {
+        extension [Self <: typings.ckeditor.CKEDITOR.ui.dialog.definitions.html](x: Self) {
           
-          @scala.inline
-          def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+          inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
         }
       }
       
@@ -821,29 +698,22 @@ object ui {
       }
       object iframeElement {
         
-        @scala.inline
-        def apply(height: String, src: String, width: String): typings.ckeditor.CKEDITOR.ui.dialog.definitions.iframeElement = {
+        inline def apply(height: String, src: String, width: String): typings.ckeditor.CKEDITOR.ui.dialog.definitions.iframeElement = {
           val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.ckeditor.CKEDITOR.ui.dialog.definitions.iframeElement]
         }
         
-        @scala.inline
-        implicit class iframeElementMutableBuilder[Self <: typings.ckeditor.CKEDITOR.ui.dialog.definitions.iframeElement] (val x: Self) extends AnyVal {
+        extension [Self <: typings.ckeditor.CKEDITOR.ui.dialog.definitions.iframeElement](x: Self) {
           
-          @scala.inline
-          def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+          inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setOnContentLoad(value: () => Unit): Self = StObject.set(x, "onContentLoad", js.Any.fromFunction0(value))
+          inline def setOnContentLoad(value: () => Unit): Self = StObject.set(x, "onContentLoad", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setOnContentLoadUndefined: Self = StObject.set(x, "onContentLoad", js.undefined)
+          inline def setOnContentLoadUndefined: Self = StObject.set(x, "onContentLoad", js.undefined)
           
-          @scala.inline
-          def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+          inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+          inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
         }
       }
       
@@ -861,41 +731,30 @@ object ui {
       }
       object labeledElement {
         
-        @scala.inline
-        def apply(label: String): typings.ckeditor.CKEDITOR.ui.dialog.definitions.labeledElement = {
+        inline def apply(label: String): typings.ckeditor.CKEDITOR.ui.dialog.definitions.labeledElement = {
           val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.ckeditor.CKEDITOR.ui.dialog.definitions.labeledElement]
         }
         
-        @scala.inline
-        implicit class labeledElementMutableBuilder[Self <: typings.ckeditor.CKEDITOR.ui.dialog.definitions.labeledElement] (val x: Self) extends AnyVal {
+        extension [Self <: typings.ckeditor.CKEDITOR.ui.dialog.definitions.labeledElement](x: Self) {
           
-          @scala.inline
-          def setIncludeLabel(value: Boolean): Self = StObject.set(x, "includeLabel", value.asInstanceOf[js.Any])
+          inline def setIncludeLabel(value: Boolean): Self = StObject.set(x, "includeLabel", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIncludeLabelUndefined: Self = StObject.set(x, "includeLabel", js.undefined)
+          inline def setIncludeLabelUndefined: Self = StObject.set(x, "includeLabel", js.undefined)
           
-          @scala.inline
-          def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+          inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLabelLayout(value: horizontal | vertical): Self = StObject.set(x, "labelLayout", value.asInstanceOf[js.Any])
+          inline def setLabelLayout(value: horizontal | vertical): Self = StObject.set(x, "labelLayout", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLabelLayoutUndefined: Self = StObject.set(x, "labelLayout", js.undefined)
+          inline def setLabelLayoutUndefined: Self = StObject.set(x, "labelLayout", js.undefined)
           
-          @scala.inline
-          def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+          inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+          inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
           
-          @scala.inline
-          def setWidths(value: js.Tuple2[String, String]): Self = StObject.set(x, "widths", value.asInstanceOf[js.Any])
+          inline def setWidths(value: js.Tuple2[String, String]): Self = StObject.set(x, "widths", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setWidthsUndefined: Self = StObject.set(x, "widths", js.undefined)
+          inline def setWidthsUndefined: Self = StObject.set(x, "widths", js.undefined)
         }
       }
       
@@ -909,29 +768,22 @@ object ui {
       }
       object radio {
         
-        @scala.inline
-        def apply(default: js.Any, items: js.Array[(js.Tuple2[String, String]) | js.Array[String]]): typings.ckeditor.CKEDITOR.ui.dialog.definitions.radio = {
+        inline def apply(default: js.Any, items: js.Array[(js.Tuple2[String, String]) | js.Array[String]]): typings.ckeditor.CKEDITOR.ui.dialog.definitions.radio = {
           val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.ckeditor.CKEDITOR.ui.dialog.definitions.radio]
         }
         
-        @scala.inline
-        implicit class radioMutableBuilder[Self <: typings.ckeditor.CKEDITOR.ui.dialog.definitions.radio] (val x: Self) extends AnyVal {
+        extension [Self <: typings.ckeditor.CKEDITOR.ui.dialog.definitions.radio](x: Self) {
           
-          @scala.inline
-          def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+          inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setItems(value: js.Array[(js.Tuple2[String, String]) | js.Array[String]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+          inline def setItems(value: js.Array[(js.Tuple2[String, String]) | js.Array[String]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setItemsVarargs(value: ((js.Tuple2[String, String]) | js.Array[String])*): Self = StObject.set(x, "items", js.Array(value :_*))
+          inline def setItemsVarargs(value: ((js.Tuple2[String, String]) | js.Array[String])*): Self = StObject.set(x, "items", js.Array(value :_*))
           
-          @scala.inline
-          def setValidate(value: () => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
+          inline def setValidate(value: () => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+          inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
         }
       }
       
@@ -949,41 +801,30 @@ object ui {
       }
       object select {
         
-        @scala.inline
-        def apply(default: js.Any, items: js.Array[(js.Tuple2[String, String]) | js.Array[String]]): typings.ckeditor.CKEDITOR.ui.dialog.definitions.select = {
+        inline def apply(default: js.Any, items: js.Array[(js.Tuple2[String, String]) | js.Array[String]]): typings.ckeditor.CKEDITOR.ui.dialog.definitions.select = {
           val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.ckeditor.CKEDITOR.ui.dialog.definitions.select]
         }
         
-        @scala.inline
-        implicit class selectMutableBuilder[Self <: typings.ckeditor.CKEDITOR.ui.dialog.definitions.select] (val x: Self) extends AnyVal {
+        extension [Self <: typings.ckeditor.CKEDITOR.ui.dialog.definitions.select](x: Self) {
           
-          @scala.inline
-          def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+          inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setItems(value: js.Array[(js.Tuple2[String, String]) | js.Array[String]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+          inline def setItems(value: js.Array[(js.Tuple2[String, String]) | js.Array[String]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setItemsVarargs(value: ((js.Tuple2[String, String]) | js.Array[String])*): Self = StObject.set(x, "items", js.Array(value :_*))
+          inline def setItemsVarargs(value: ((js.Tuple2[String, String]) | js.Array[String])*): Self = StObject.set(x, "items", js.Array(value :_*))
           
-          @scala.inline
-          def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+          inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+          inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
           
-          @scala.inline
-          def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+          inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+          inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
           
-          @scala.inline
-          def setValidate(value: () => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
+          inline def setValidate(value: () => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+          inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
         }
       }
       
@@ -999,38 +840,28 @@ object ui {
       }
       object textInput {
         
-        @scala.inline
-        def apply(): typings.ckeditor.CKEDITOR.ui.dialog.definitions.textInput = {
+        inline def apply(): typings.ckeditor.CKEDITOR.ui.dialog.definitions.textInput = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[typings.ckeditor.CKEDITOR.ui.dialog.definitions.textInput]
         }
         
-        @scala.inline
-        implicit class textInputMutableBuilder[Self <: typings.ckeditor.CKEDITOR.ui.dialog.definitions.textInput] (val x: Self) extends AnyVal {
+        extension [Self <: typings.ckeditor.CKEDITOR.ui.dialog.definitions.textInput](x: Self) {
           
-          @scala.inline
-          def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+          inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+          inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
           
-          @scala.inline
-          def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+          inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+          inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
           
-          @scala.inline
-          def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+          inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+          inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
           
-          @scala.inline
-          def setValidate(value: () => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
+          inline def setValidate(value: () => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+          inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
         }
       }
       
@@ -1046,38 +877,28 @@ object ui {
       }
       object textarea {
         
-        @scala.inline
-        def apply(): typings.ckeditor.CKEDITOR.ui.dialog.definitions.textarea = {
+        inline def apply(): typings.ckeditor.CKEDITOR.ui.dialog.definitions.textarea = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[typings.ckeditor.CKEDITOR.ui.dialog.definitions.textarea]
         }
         
-        @scala.inline
-        implicit class textareaMutableBuilder[Self <: typings.ckeditor.CKEDITOR.ui.dialog.definitions.textarea] (val x: Self) extends AnyVal {
+        extension [Self <: typings.ckeditor.CKEDITOR.ui.dialog.definitions.textarea](x: Self) {
           
-          @scala.inline
-          def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+          inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
+          inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
           
-          @scala.inline
-          def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+          inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+          inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
           
-          @scala.inline
-          def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+          inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+          inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
           
-          @scala.inline
-          def setValidate(value: () => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
+          inline def setValidate(value: () => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+          inline def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
         }
       }
       
@@ -1099,51 +920,37 @@ object ui {
       }
       object uiElement {
         
-        @scala.inline
-        def apply(id: String, `type`: Double): typings.ckeditor.CKEDITOR.ui.dialog.definitions.uiElement = {
+        inline def apply(id: String, `type`: Double): typings.ckeditor.CKEDITOR.ui.dialog.definitions.uiElement = {
           val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
           __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.ckeditor.CKEDITOR.ui.dialog.definitions.uiElement]
         }
         
-        @scala.inline
-        implicit class uiElementMutableBuilder[Self <: typings.ckeditor.CKEDITOR.ui.dialog.definitions.uiElement] (val x: Self) extends AnyVal {
+        extension [Self <: typings.ckeditor.CKEDITOR.ui.dialog.definitions.uiElement](x: Self) {
           
-          @scala.inline
-          def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
+          inline def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
+          inline def setAccessKeyUndefined: Self = StObject.set(x, "accessKey", js.undefined)
           
-          @scala.inline
-          def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+          inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+          inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
           
-          @scala.inline
-          def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+          inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+          inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
           
-          @scala.inline
-          def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+          inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+          inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+          inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
           
-          @scala.inline
-          def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+          inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+          inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
           
-          @scala.inline
-          def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+          inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
         }
       }
       
@@ -1161,47 +968,34 @@ object ui {
       }
       object vbox {
         
-        @scala.inline
-        def apply(): typings.ckeditor.CKEDITOR.ui.dialog.definitions.vbox = {
+        inline def apply(): typings.ckeditor.CKEDITOR.ui.dialog.definitions.vbox = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[typings.ckeditor.CKEDITOR.ui.dialog.definitions.vbox]
         }
         
-        @scala.inline
-        implicit class vboxMutableBuilder[Self <: typings.ckeditor.CKEDITOR.ui.dialog.definitions.vbox] (val x: Self) extends AnyVal {
+        extension [Self <: typings.ckeditor.CKEDITOR.ui.dialog.definitions.vbox](x: Self) {
           
-          @scala.inline
-          def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+          inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+          inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
           
-          @scala.inline
-          def setExpand(value: Boolean): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
+          inline def setExpand(value: Boolean): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+          inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
           
-          @scala.inline
-          def setHeights(value: js.Array[String]): Self = StObject.set(x, "heights", value.asInstanceOf[js.Any])
+          inline def setHeights(value: js.Array[String]): Self = StObject.set(x, "heights", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setHeightsUndefined: Self = StObject.set(x, "heights", js.undefined)
+          inline def setHeightsUndefined: Self = StObject.set(x, "heights", js.undefined)
           
-          @scala.inline
-          def setHeightsVarargs(value: String*): Self = StObject.set(x, "heights", js.Array(value :_*))
+          inline def setHeightsVarargs(value: String*): Self = StObject.set(x, "heights", js.Array(value :_*))
           
-          @scala.inline
-          def setPadding(value: String): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+          inline def setPadding(value: String): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+          inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
           
-          @scala.inline
-          def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+          inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+          inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
         }
       }
     }
@@ -1224,8 +1018,7 @@ object ui {
     }
     object file {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         accessKeyDown: (typings.ckeditor.CKEDITOR.dialog, String) => Unit,
         accessKeyUp: (typings.ckeditor.CKEDITOR.dialog, String) => Unit,
         disable: () => Unit,
@@ -1254,23 +1047,17 @@ object ui {
         __obj.asInstanceOf[file]
       }
       
-      @scala.inline
-      implicit class fileMutableBuilder[Self <: file] (val x: Self) extends AnyVal {
+      extension [Self <: file](x: Self) {
         
-        @scala.inline
-        def setGetAction(value: () => String): Self = StObject.set(x, "getAction", js.Any.fromFunction0(value))
+        inline def setGetAction(value: () => String): Self = StObject.set(x, "getAction", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setRegisterEvents(value: StringDictionary[js.Any] => file): Self = StObject.set(x, "registerEvents", js.Any.fromFunction1(value))
+        inline def setRegisterEvents(value: StringDictionary[js.Any] => file): Self = StObject.set(x, "registerEvents", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+        inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setSetInitValue(value: () => Unit): Self = StObject.set(x, "setInitValue", js.Any.fromFunction0(value))
+        inline def setSetInitValue(value: () => Unit): Self = StObject.set(x, "setInitValue", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setSubmit(value: () => file): Self = StObject.set(x, "submit", js.Any.fromFunction0(value))
+        inline def setSubmit(value: () => file): Self = StObject.set(x, "submit", js.Any.fromFunction0(value))
       }
     }
     
@@ -1299,8 +1086,7 @@ object ui {
     }
     object labeledElement {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         accessKeyDown: (typings.ckeditor.CKEDITOR.dialog, String) => Unit,
         accessKeyUp: (typings.ckeditor.CKEDITOR.dialog, String) => Unit,
         disable: () => Unit,
@@ -1325,14 +1111,11 @@ object ui {
         __obj.asInstanceOf[labeledElement]
       }
       
-      @scala.inline
-      implicit class labeledElementMutableBuilder[Self <: labeledElement] (val x: Self) extends AnyVal {
+      extension [Self <: labeledElement](x: Self) {
         
-        @scala.inline
-        def setGetLabel(value: () => String): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
+        inline def setGetLabel(value: () => String): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setSetlabel(value: String => labeledElement): Self = StObject.set(x, "setlabel", js.Any.fromFunction1(value))
+        inline def setSetlabel(value: String => labeledElement): Self = StObject.set(x, "setlabel", js.Any.fromFunction1(value))
       }
     }
     
@@ -1346,8 +1129,7 @@ object ui {
     }
     object radio {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         accessKeyDown: (typings.ckeditor.CKEDITOR.dialog, String) => Unit,
         accessKeyUp: () => Unit,
         disable: () => Unit,
@@ -1372,14 +1154,11 @@ object ui {
         __obj.asInstanceOf[radio]
       }
       
-      @scala.inline
-      implicit class radioMutableBuilder[Self <: radio] (val x: Self) extends AnyVal {
+      extension [Self <: radio](x: Self) {
         
-        @scala.inline
-        def setAccessKeyUp(value: () => Unit): Self = StObject.set(x, "accessKeyUp", js.Any.fromFunction0(value))
+        inline def setAccessKeyUp(value: () => Unit): Self = StObject.set(x, "accessKeyUp", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setSetValue(value: (String, Boolean) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
+        inline def setSetValue(value: (String, Boolean) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
       }
     }
     
@@ -1414,8 +1193,7 @@ object ui {
     }
     object textInput {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         accessKeyDown: (typings.ckeditor.CKEDITOR.dialog, String) => Unit,
         accessKeyUp: () => Unit,
         disable: () => Unit,
@@ -1443,23 +1221,17 @@ object ui {
         __obj.asInstanceOf[textInput]
       }
       
-      @scala.inline
-      implicit class textInputMutableBuilder[Self <: textInput] (val x: Self) extends AnyVal {
+      extension [Self <: textInput](x: Self) {
         
-        @scala.inline
-        def setAccessKeyUp(value: () => Unit): Self = StObject.set(x, "accessKeyUp", js.Any.fromFunction0(value))
+        inline def setAccessKeyUp(value: () => Unit): Self = StObject.set(x, "accessKeyUp", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetDirectionMarker(value: () => String): Self = StObject.set(x, "getDirectionMarker", js.Any.fromFunction0(value))
+        inline def setGetDirectionMarker(value: () => String): Self = StObject.set(x, "getDirectionMarker", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setSelect(value: () => Unit): Self = StObject.set(x, "select", js.Any.fromFunction0(value))
+        inline def setSelect(value: () => Unit): Self = StObject.set(x, "select", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setSetDirectionMarker(value: String => Unit): Self = StObject.set(x, "setDirectionMarker", js.Any.fromFunction1(value))
+        inline def setSetDirectionMarker(value: String => Unit): Self = StObject.set(x, "setDirectionMarker", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetValue(value: (String, Boolean) => textInput): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
+        inline def setSetValue(value: (String, Boolean) => textInput): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
       }
     }
     
@@ -1503,8 +1275,7 @@ object ui {
     }
     object uiElement {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         accessKeyDown: (typings.ckeditor.CKEDITOR.dialog, String) => Unit,
         accessKeyUp: (typings.ckeditor.CKEDITOR.dialog, String) => Unit,
         disable: () => Unit,
@@ -1527,59 +1298,41 @@ object ui {
         __obj.asInstanceOf[uiElement]
       }
       
-      @scala.inline
-      implicit class uiElementMutableBuilder[Self <: uiElement] (val x: Self) extends AnyVal {
+      extension [Self <: uiElement](x: Self) {
         
-        @scala.inline
-        def setAccessKeyDown(value: (typings.ckeditor.CKEDITOR.dialog, String) => Unit): Self = StObject.set(x, "accessKeyDown", js.Any.fromFunction2(value))
+        inline def setAccessKeyDown(value: (typings.ckeditor.CKEDITOR.dialog, String) => Unit): Self = StObject.set(x, "accessKeyDown", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setAccessKeyUp(value: (typings.ckeditor.CKEDITOR.dialog, String) => Unit): Self = StObject.set(x, "accessKeyUp", js.Any.fromFunction2(value))
+        inline def setAccessKeyUp(value: (typings.ckeditor.CKEDITOR.dialog, String) => Unit): Self = StObject.set(x, "accessKeyUp", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
+        inline def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+        inline def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setEventProcessors(value: js.Any): Self = StObject.set(x, "eventProcessors", value.asInstanceOf[js.Any])
+        inline def setEventProcessors(value: js.Any): Self = StObject.set(x, "eventProcessors", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFocus(value: () => js.UndefOr[uiElement]): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+        inline def setFocus(value: () => js.UndefOr[uiElement]): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetDialog(value: () => typings.ckeditor.CKEDITOR.dialog): Self = StObject.set(x, "getDialog", js.Any.fromFunction0(value))
+        inline def setGetDialog(value: () => typings.ckeditor.CKEDITOR.dialog): Self = StObject.set(x, "getDialog", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetElement(value: () => element): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+        inline def setGetElement(value: () => element): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetInputElement(value: () => element): Self = StObject.set(x, "getInputElement", js.Any.fromFunction0(value))
+        inline def setGetInputElement(value: () => element): Self = StObject.set(x, "getInputElement", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+        inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setIsChanged(value: () => Boolean): Self = StObject.set(x, "isChanged", js.Any.fromFunction0(value))
+        inline def setIsChanged(value: () => Boolean): Self = StObject.set(x, "isChanged", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setIsEnabled(value: () => Boolean): Self = StObject.set(x, "isEnabled", js.Any.fromFunction0(value))
+        inline def setIsEnabled(value: () => Boolean): Self = StObject.set(x, "isEnabled", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setIsFocusable(value: () => Boolean): Self = StObject.set(x, "isFocusable", js.Any.fromFunction0(value))
+        inline def setIsFocusable(value: () => Boolean): Self = StObject.set(x, "isFocusable", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
+        inline def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setRegisterEvents(value: typings.ckeditor.CKEDITOR.dialog.definition.uiElement => uiElement): Self = StObject.set(x, "registerEvents", js.Any.fromFunction1(value))
+        inline def setRegisterEvents(value: typings.ckeditor.CKEDITOR.dialog.definition.uiElement => uiElement): Self = StObject.set(x, "registerEvents", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSelectParentTab(value: () => uiElement): Self = StObject.set(x, "selectParentTab", js.Any.fromFunction0(value))
+        inline def setSelectParentTab(value: () => uiElement): Self = StObject.set(x, "selectParentTab", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setSetValue(value: (js.Any, Boolean) => js.UndefOr[uiElement]): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
+        inline def setSetValue(value: (js.Any, Boolean) => js.UndefOr[uiElement]): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
       }
     }
     
@@ -1672,20 +1425,16 @@ object ui {
   }
   object handlerDefinition {
     
-    @scala.inline
-    def apply[T](contentsElement: element, create: StringDictionary[js.Any] => T): handlerDefinition[T] = {
+    inline def apply[T](contentsElement: element, create: StringDictionary[js.Any] => T): handlerDefinition[T] = {
       val __obj = js.Dynamic.literal(contentsElement = contentsElement.asInstanceOf[js.Any], create = js.Any.fromFunction1(create))
       __obj.asInstanceOf[handlerDefinition[T]]
     }
     
-    @scala.inline
-    implicit class handlerDefinitionMutableBuilder[Self <: handlerDefinition[?], T] (val x: Self & handlerDefinition[T]) extends AnyVal {
+    extension [Self <: handlerDefinition[?], T](x: Self & handlerDefinition[T]) {
       
-      @scala.inline
-      def setContentsElement(value: element): Self = StObject.set(x, "contentsElement", value.asInstanceOf[js.Any])
+      inline def setContentsElement(value: element): Self = StObject.set(x, "contentsElement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreate(value: StringDictionary[js.Any] => T): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      inline def setCreate(value: StringDictionary[js.Any] => T): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     }
   }
   
@@ -1713,20 +1462,16 @@ object ui {
     }
     object block {
       
-      @scala.inline
-      def apply(getItems: () => nodeList, markItem: Double => Unit): block = {
+      inline def apply(getItems: () => nodeList, markItem: Double => Unit): block = {
         val __obj = js.Dynamic.literal(getItems = js.Any.fromFunction0(getItems), markItem = js.Any.fromFunction1(markItem))
         __obj.asInstanceOf[block]
       }
       
-      @scala.inline
-      implicit class blockMutableBuilder[Self <: block] (val x: Self) extends AnyVal {
+      extension [Self <: block](x: Self) {
         
-        @scala.inline
-        def setGetItems(value: () => nodeList): Self = StObject.set(x, "getItems", js.Any.fromFunction0(value))
+        inline def setGetItems(value: () => nodeList): Self = StObject.set(x, "getItems", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setMarkItem(value: Double => Unit): Self = StObject.set(x, "markItem", js.Any.fromFunction1(value))
+        inline def setMarkItem(value: Double => Unit): Self = StObject.set(x, "markItem", js.Any.fromFunction1(value))
       }
     }
   }
@@ -1739,17 +1484,14 @@ object ui {
   }
   object richCombo {
     
-    @scala.inline
-    def apply(render: (editor, js.Array[String]) => Unit): richCombo = {
+    inline def apply(render: (editor, js.Array[String]) => Unit): richCombo = {
       val __obj = js.Dynamic.literal(render = js.Any.fromFunction2(render))
       __obj.asInstanceOf[richCombo]
     }
     
-    @scala.inline
-    implicit class richComboMutableBuilder[Self <: richCombo] (val x: Self) extends AnyVal {
+    extension [Self <: richCombo](x: Self) {
       
-      @scala.inline
-      def setRender(value: (editor, js.Array[String]) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+      inline def setRender(value: (editor, js.Array[String]) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
     }
   }
 }

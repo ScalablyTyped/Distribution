@@ -28,49 +28,35 @@ trait DeviceConfigurationUserStatus
 }
 object DeviceConfigurationUserStatus {
   
-  @scala.inline
-  def apply(): DeviceConfigurationUserStatus = {
+  inline def apply(): DeviceConfigurationUserStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceConfigurationUserStatus]
   }
   
-  @scala.inline
-  implicit class DeviceConfigurationUserStatusMutableBuilder[Self <: DeviceConfigurationUserStatus] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceConfigurationUserStatus](x: Self) {
     
-    @scala.inline
-    def setDevicesCount(value: Double): Self = StObject.set(x, "devicesCount", value.asInstanceOf[js.Any])
+    inline def setDevicesCount(value: Double): Self = StObject.set(x, "devicesCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevicesCountUndefined: Self = StObject.set(x, "devicesCount", js.undefined)
+    inline def setDevicesCountUndefined: Self = StObject.set(x, "devicesCount", js.undefined)
     
-    @scala.inline
-    def setLastReportedDateTime(value: String): Self = StObject.set(x, "lastReportedDateTime", value.asInstanceOf[js.Any])
+    inline def setLastReportedDateTime(value: String): Self = StObject.set(x, "lastReportedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastReportedDateTimeUndefined: Self = StObject.set(x, "lastReportedDateTime", js.undefined)
+    inline def setLastReportedDateTimeUndefined: Self = StObject.set(x, "lastReportedDateTime", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ComplianceStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ComplianceStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setUserDisplayName(value: NullableOption[String]): Self = StObject.set(x, "userDisplayName", value.asInstanceOf[js.Any])
+    inline def setUserDisplayName(value: NullableOption[String]): Self = StObject.set(x, "userDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserDisplayNameNull: Self = StObject.set(x, "userDisplayName", null)
+    inline def setUserDisplayNameNull: Self = StObject.set(x, "userDisplayName", null)
     
-    @scala.inline
-    def setUserDisplayNameUndefined: Self = StObject.set(x, "userDisplayName", js.undefined)
+    inline def setUserDisplayNameUndefined: Self = StObject.set(x, "userDisplayName", js.undefined)
     
-    @scala.inline
-    def setUserPrincipalName(value: NullableOption[String]): Self = StObject.set(x, "userPrincipalName", value.asInstanceOf[js.Any])
+    inline def setUserPrincipalName(value: NullableOption[String]): Self = StObject.set(x, "userPrincipalName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPrincipalNameNull: Self = StObject.set(x, "userPrincipalName", null)
+    inline def setUserPrincipalNameNull: Self = StObject.set(x, "userPrincipalName", null)
     
-    @scala.inline
-    def setUserPrincipalNameUndefined: Self = StObject.set(x, "userPrincipalName", js.undefined)
+    inline def setUserPrincipalNameUndefined: Self = StObject.set(x, "userPrincipalName", js.undefined)
   }
 }

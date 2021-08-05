@@ -21,19 +21,15 @@ trait DataResult extends StObject {
 }
 object DataResult {
   
-  @scala.inline
-  def apply(Flags: Double, Value: Double): DataResult = {
+  inline def apply(Flags: Double, Value: Double): DataResult = {
     val __obj = js.Dynamic.literal(Flags = Flags.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataResult]
   }
   
-  @scala.inline
-  implicit class DataResultMutableBuilder[Self <: DataResult] (val x: Self) extends AnyVal {
+  extension [Self <: DataResult](x: Self) {
     
-    @scala.inline
-    def setFlags(value: Double): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: Double): Self = StObject.set(x, "Flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

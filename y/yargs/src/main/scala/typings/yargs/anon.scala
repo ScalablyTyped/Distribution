@@ -89,38 +89,28 @@ object anon {
   }
   object Max {
     
-    @scala.inline
-    def apply(max: Double, min: Double): Max = {
+    inline def apply(max: Double, min: Double): Max = {
       val __obj = js.Dynamic.literal(max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
       __obj.asInstanceOf[Max]
     }
     
-    @scala.inline
-    implicit class MaxMutableBuilder[Self <: Max] (val x: Self) extends AnyVal {
+    extension [Self <: Max](x: Self) {
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxMsg(value: String): Self = StObject.set(x, "maxMsg", value.asInstanceOf[js.Any])
+      inline def setMaxMsg(value: String): Self = StObject.set(x, "maxMsg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxMsgNull: Self = StObject.set(x, "maxMsg", null)
+      inline def setMaxMsgNull: Self = StObject.set(x, "maxMsg", null)
       
-      @scala.inline
-      def setMaxMsgUndefined: Self = StObject.set(x, "maxMsg", js.undefined)
+      inline def setMaxMsgUndefined: Self = StObject.set(x, "maxMsg", js.undefined)
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinMsg(value: String): Self = StObject.set(x, "minMsg", value.asInstanceOf[js.Any])
+      inline def setMinMsg(value: String): Self = StObject.set(x, "minMsg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinMsgNull: Self = StObject.set(x, "minMsg", null)
+      inline def setMinMsgNull: Self = StObject.set(x, "minMsg", null)
       
-      @scala.inline
-      def setMinMsgUndefined: Self = StObject.set(x, "minMsg", js.undefined)
+      inline def setMinMsgUndefined: Self = StObject.set(x, "minMsg", js.undefined)
     }
   }
   
@@ -130,20 +120,16 @@ object anon {
   }
   object Name {
     
-    @scala.inline
-    def apply(): Name = {
+    inline def apply(): Name = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Name]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+    extension [Self <: Name](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -158,29 +144,22 @@ object anon {
   }
   object PartialArguments {
     
-    @scala.inline
-    def apply(): PartialArguments = {
+    inline def apply(): PartialArguments = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialArguments]
     }
     
-    @scala.inline
-    implicit class PartialArgumentsMutableBuilder[Self <: PartialArguments] (val x: Self) extends AnyVal {
+    extension [Self <: PartialArguments](x: Self) {
       
-      @scala.inline
-      def set$0(value: String): Self = StObject.set(x, "$0", value.asInstanceOf[js.Any])
+      inline def set$0(value: String): Self = StObject.set(x, "$0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$0Undefined: Self = StObject.set(x, "$0", js.undefined)
+      inline def set$0Undefined: Self = StObject.set(x, "$0", js.undefined)
       
-      @scala.inline
-      def set_underscore(value: js.Array[String]): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
+      inline def set_underscore(value: js.Array[String]): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_underscoreUndefined: Self = StObject.set(x, "_", js.undefined)
+      inline def set_underscoreUndefined: Self = StObject.set(x, "_", js.undefined)
       
-      @scala.inline
-      def set_underscoreVarargs(value: String*): Self = StObject.set(x, "_", js.Array(value :_*))
+      inline def set_underscoreVarargs(value: String*): Self = StObject.set(x, "_", js.Array(value :_*))
     }
   }
 }

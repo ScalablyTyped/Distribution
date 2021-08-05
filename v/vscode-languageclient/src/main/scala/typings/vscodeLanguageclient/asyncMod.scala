@@ -13,9 +13,9 @@ object asyncMod {
     
     def cancel(): Unit = js.native
     
-    var cancelTimeout: js.Any = js.native
+    /* private */ var cancelTimeout: js.Any = js.native
     
-    var completionPromise: js.Any = js.native
+    /* private */ var completionPromise: js.Any = js.native
     
     var defaultDelay: Double = js.native
     
@@ -23,11 +23,11 @@ object asyncMod {
     
     def isTriggered(): Boolean = js.native
     
-    var onSuccess: js.Any = js.native
+    /* private */ var onSuccess: js.Any = js.native
     
-    var task: js.Any = js.native
+    /* private */ var task: js.Any = js.native
     
-    var timeout: js.Any = js.native
+    /* private */ var timeout: js.Any = js.native
     
     def trigger(task: ITask[T]): js.Promise[T] = js.native
     def trigger(task: ITask[T], delay: Double): js.Promise[T] = js.native

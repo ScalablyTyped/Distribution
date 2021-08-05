@@ -58,8 +58,7 @@ trait ContentLeft extends StObject {
 }
 object ContentLeft {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     asCell: String,
     comment: String,
     content: String,
@@ -90,82 +89,56 @@ object ContentLeft {
     __obj.asInstanceOf[ContentLeft]
   }
   
-  @scala.inline
-  implicit class ContentLeftMutableBuilder[Self <: ContentLeft] (val x: Self) extends AnyVal {
+  extension [Self <: ContentLeft](x: Self) {
     
-    @scala.inline
-    def setAsCell(value: String): Self = StObject.set(x, "asCell", value.asInstanceOf[js.Any])
+    inline def setAsCell(value: String): Self = StObject.set(x, "asCell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentLeft(value: String): Self = StObject.set(x, "contentLeft", value.asInstanceOf[js.Any])
+    inline def setContentLeft(value: String): Self = StObject.set(x, "contentLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUnderInput(value: String): Self = StObject.set(x, "descriptionUnderInput", value.asInstanceOf[js.Any])
+    inline def setDescriptionUnderInput(value: String): Self = StObject.set(x, "descriptionUnderInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowRoot(value: String): Self = StObject.set(x, "flowRoot", value.asInstanceOf[js.Any])
+    inline def setFlowRoot(value: String): Self = StObject.set(x, "flowRoot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFooter(value: String): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+    inline def setFooter(value: String): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormGroup(value: String): Self = StObject.set(x, "formGroup", value.asInstanceOf[js.Any])
+    inline def setFormGroup(value: String): Self = StObject.set(x, "formGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasError(value: String): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
+    inline def setHasError(value: String): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+    inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderBottom(value: String): Self = StObject.set(x, "headerBottom", value.asInstanceOf[js.Any])
+    inline def setHeaderBottom(value: String): Self = StObject.set(x, "headerBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderLeft(value: String): Self = StObject.set(x, "headerLeft", value.asInstanceOf[js.Any])
+    inline def setHeaderLeft(value: String): Self = StObject.set(x, "headerLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderTop(value: String): Self = StObject.set(x, "headerTop", value.asInstanceOf[js.Any])
+    inline def setHeaderTop(value: String): Self = StObject.set(x, "headerTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+    inline def setIndent(value: Double): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMainRoot(value: String): Self = StObject.set(x, "mainRoot", value.asInstanceOf[js.Any])
+    inline def setMainRoot(value: String): Self = StObject.set(x, "mainRoot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequired(value: String): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: String): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredText(value: String): Self = StObject.set(x, "requiredText", value.asInstanceOf[js.Any])
+    inline def setRequiredText(value: String): Self = StObject.set(x, "requiredText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleLeftRoot(value: String): Self = StObject.set(x, "titleLeftRoot", value.asInstanceOf[js.Any])
+    inline def setTitleLeftRoot(value: String): Self = StObject.set(x, "titleLeftRoot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleOnAnswer(value: String): Self = StObject.set(x, "titleOnAnswer", value.asInstanceOf[js.Any])
+    inline def setTitleOnAnswer(value: String): Self = StObject.set(x, "titleOnAnswer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleOnError(value: String): Self = StObject.set(x, "titleOnError", value.asInstanceOf[js.Any])
+    inline def setTitleOnError(value: String): Self = StObject.set(x, "titleOnError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleRequired(value: String): Self = StObject.set(x, "titleRequired", value.asInstanceOf[js.Any])
+    inline def setTitleRequired(value: String): Self = StObject.set(x, "titleRequired", value.asInstanceOf[js.Any])
   }
 }

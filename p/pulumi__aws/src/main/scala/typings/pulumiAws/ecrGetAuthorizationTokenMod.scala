@@ -11,14 +11,10 @@ object ecrGetAuthorizationTokenMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getAuthorizationToken(): js.Promise[GetAuthorizationTokenResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAuthorizationToken")().asInstanceOf[js.Promise[GetAuthorizationTokenResult]]
-  @scala.inline
-  def getAuthorizationToken(args: Unit, opts: InvokeOptions): js.Promise[GetAuthorizationTokenResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAuthorizationToken")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAuthorizationTokenResult]]
-  @scala.inline
-  def getAuthorizationToken(args: GetAuthorizationTokenArgs): js.Promise[GetAuthorizationTokenResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAuthorizationToken")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetAuthorizationTokenResult]]
-  @scala.inline
-  def getAuthorizationToken(args: GetAuthorizationTokenArgs, opts: InvokeOptions): js.Promise[GetAuthorizationTokenResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAuthorizationToken")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAuthorizationTokenResult]]
+  inline def getAuthorizationToken(): js.Promise[GetAuthorizationTokenResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAuthorizationToken")().asInstanceOf[js.Promise[GetAuthorizationTokenResult]]
+  inline def getAuthorizationToken(args: Unit, opts: InvokeOptions): js.Promise[GetAuthorizationTokenResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAuthorizationToken")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAuthorizationTokenResult]]
+  inline def getAuthorizationToken(args: GetAuthorizationTokenArgs): js.Promise[GetAuthorizationTokenResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAuthorizationToken")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetAuthorizationTokenResult]]
+  inline def getAuthorizationToken(args: GetAuthorizationTokenArgs, opts: InvokeOptions): js.Promise[GetAuthorizationTokenResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAuthorizationToken")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAuthorizationTokenResult]]
   
   trait GetAuthorizationTokenArgs extends StObject {
     
@@ -29,20 +25,16 @@ object ecrGetAuthorizationTokenMod {
   }
   object GetAuthorizationTokenArgs {
     
-    @scala.inline
-    def apply(): GetAuthorizationTokenArgs = {
+    inline def apply(): GetAuthorizationTokenArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetAuthorizationTokenArgs]
     }
     
-    @scala.inline
-    implicit class GetAuthorizationTokenArgsMutableBuilder[Self <: GetAuthorizationTokenArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetAuthorizationTokenArgs](x: Self) {
       
-      @scala.inline
-      def setRegistryId(value: String): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
+      inline def setRegistryId(value: String): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
+      inline def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
     }
   }
   
@@ -82,8 +74,7 @@ object ecrGetAuthorizationTokenMod {
   }
   object GetAuthorizationTokenResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       authorizationToken: String,
       expiresAt: String,
       id: String,
@@ -95,32 +86,23 @@ object ecrGetAuthorizationTokenMod {
       __obj.asInstanceOf[GetAuthorizationTokenResult]
     }
     
-    @scala.inline
-    implicit class GetAuthorizationTokenResultMutableBuilder[Self <: GetAuthorizationTokenResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetAuthorizationTokenResult](x: Self) {
       
-      @scala.inline
-      def setAuthorizationToken(value: String): Self = StObject.set(x, "authorizationToken", value.asInstanceOf[js.Any])
+      inline def setAuthorizationToken(value: String): Self = StObject.set(x, "authorizationToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiresAt(value: String): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
+      inline def setExpiresAt(value: String): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyEndpoint(value: String): Self = StObject.set(x, "proxyEndpoint", value.asInstanceOf[js.Any])
+      inline def setProxyEndpoint(value: String): Self = StObject.set(x, "proxyEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegistryId(value: String): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
+      inline def setRegistryId(value: String): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
+      inline def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
       
-      @scala.inline
-      def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+      inline def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
     }
   }
 }

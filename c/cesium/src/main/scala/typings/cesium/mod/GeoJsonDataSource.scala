@@ -27,71 +27,57 @@ object GeoJsonDataSource {
   @JSImport("cesium", "GeoJsonDataSource.clampToGround")
   @js.native
   def clampToGround: Boolean = js.native
-  @scala.inline
-  def clampToGround_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clampToGround")(x.asInstanceOf[js.Any])
+  inline def clampToGround_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clampToGround")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("cesium", "GeoJsonDataSource.crsLinkHrefs")
   @js.native
   def crsLinkHrefs: js.Any = js.native
-  @scala.inline
-  def crsLinkHrefs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("crsLinkHrefs")(x.asInstanceOf[js.Any])
+  inline def crsLinkHrefs_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("crsLinkHrefs")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("cesium", "GeoJsonDataSource.crsLinkTypes")
   @js.native
   def crsLinkTypes: js.Any = js.native
-  @scala.inline
-  def crsLinkTypes_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("crsLinkTypes")(x.asInstanceOf[js.Any])
+  inline def crsLinkTypes_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("crsLinkTypes")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("cesium", "GeoJsonDataSource.crsNames")
   @js.native
   def crsNames: js.Any = js.native
-  @scala.inline
-  def crsNames_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("crsNames")(x.asInstanceOf[js.Any])
+  inline def crsNames_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("crsNames")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("cesium", "GeoJsonDataSource.fill")
   @js.native
   def fill: Color = js.native
-  @scala.inline
-  def fill_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fill")(x.asInstanceOf[js.Any])
+  inline def fill_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fill")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def load(data: String): js.Promise[GeoJsonDataSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GeoJsonDataSource]]
-  @scala.inline
-  def load(data: String, options: ClampToGround): js.Promise[GeoJsonDataSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GeoJsonDataSource]]
-  @scala.inline
-  def load(data: js.Object): js.Promise[GeoJsonDataSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GeoJsonDataSource]]
-  @scala.inline
-  def load(data: js.Object, options: ClampToGround): js.Promise[GeoJsonDataSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GeoJsonDataSource]]
+  inline def load(data: String): js.Promise[GeoJsonDataSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GeoJsonDataSource]]
+  inline def load(data: String, options: ClampToGround): js.Promise[GeoJsonDataSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GeoJsonDataSource]]
+  inline def load(data: js.Object): js.Promise[GeoJsonDataSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GeoJsonDataSource]]
+  inline def load(data: js.Object, options: ClampToGround): js.Promise[GeoJsonDataSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GeoJsonDataSource]]
   /* static member */
-  @scala.inline
-  def load(data: Resource): js.Promise[GeoJsonDataSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GeoJsonDataSource]]
-  @scala.inline
-  def load(data: Resource, options: ClampToGround): js.Promise[GeoJsonDataSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GeoJsonDataSource]]
+  inline def load(data: Resource): js.Promise[GeoJsonDataSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GeoJsonDataSource]]
+  inline def load(data: Resource, options: ClampToGround): js.Promise[GeoJsonDataSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GeoJsonDataSource]]
   
   /* static member */
   @JSImport("cesium", "GeoJsonDataSource.markerColor")
   @js.native
   def markerColor: Color = js.native
-  @scala.inline
-  def markerColor_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("markerColor")(x.asInstanceOf[js.Any])
+  inline def markerColor_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("markerColor")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("cesium", "GeoJsonDataSource.markerSize")
   @js.native
   def markerSize: Double = js.native
-  @scala.inline
-  def markerSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("markerSize")(x.asInstanceOf[js.Any])
+  inline def markerSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("markerSize")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("cesium", "GeoJsonDataSource.markerSymbol")
   @js.native
   def markerSymbol: String = js.native
-  @scala.inline
-  def markerSymbol_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("markerSymbol")(x.asInstanceOf[js.Any])
+  inline def markerSymbol_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("markerSymbol")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("cesium", "GeoJsonDataSource.stroke")
@@ -102,9 +88,7 @@ object GeoJsonDataSource {
   @JSImport("cesium", "GeoJsonDataSource.strokeWidth")
   @js.native
   def strokeWidth: Double = js.native
-  @scala.inline
-  def strokeWidth_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("strokeWidth")(x.asInstanceOf[js.Any])
+  inline def strokeWidth_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("strokeWidth")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def stroke_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stroke")(x.asInstanceOf[js.Any])
+  inline def stroke_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stroke")(x.asInstanceOf[js.Any])
 }

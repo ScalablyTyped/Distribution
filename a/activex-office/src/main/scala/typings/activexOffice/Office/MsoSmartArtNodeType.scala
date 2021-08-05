@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MsoSmartArtNodeType extends StObject
 object MsoSmartArtNodeType {
   
-  @scala.inline
-  def msoSmartArtNodeTypeAssistant: `2` = 2.asInstanceOf[`2`]
+  inline def msoSmartArtNodeTypeAssistant: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def msoSmartArtNodeTypeDefault: `1` = 1.asInstanceOf[`1`]
+  inline def msoSmartArtNodeTypeDefault: `1` = 1.asInstanceOf[`1`]
 }

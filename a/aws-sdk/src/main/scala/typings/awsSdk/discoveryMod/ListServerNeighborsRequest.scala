@@ -33,43 +33,31 @@ trait ListServerNeighborsRequest extends StObject {
 }
 object ListServerNeighborsRequest {
   
-  @scala.inline
-  def apply(configurationId: ConfigurationId): ListServerNeighborsRequest = {
+  inline def apply(configurationId: ConfigurationId): ListServerNeighborsRequest = {
     val __obj = js.Dynamic.literal(configurationId = configurationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListServerNeighborsRequest]
   }
   
-  @scala.inline
-  implicit class ListServerNeighborsRequestMutableBuilder[Self <: ListServerNeighborsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListServerNeighborsRequest](x: Self) {
     
-    @scala.inline
-    def setConfigurationId(value: ConfigurationId): Self = StObject.set(x, "configurationId", value.asInstanceOf[js.Any])
+    inline def setConfigurationId(value: ConfigurationId): Self = StObject.set(x, "configurationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: Integer): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Integer): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNeighborConfigurationIds(value: ConfigurationIdList): Self = StObject.set(x, "neighborConfigurationIds", value.asInstanceOf[js.Any])
+    inline def setNeighborConfigurationIds(value: ConfigurationIdList): Self = StObject.set(x, "neighborConfigurationIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeighborConfigurationIdsUndefined: Self = StObject.set(x, "neighborConfigurationIds", js.undefined)
+    inline def setNeighborConfigurationIdsUndefined: Self = StObject.set(x, "neighborConfigurationIds", js.undefined)
     
-    @scala.inline
-    def setNeighborConfigurationIdsVarargs(value: ConfigurationId*): Self = StObject.set(x, "neighborConfigurationIds", js.Array(value :_*))
+    inline def setNeighborConfigurationIdsVarargs(value: ConfigurationId*): Self = StObject.set(x, "neighborConfigurationIds", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setPortInformationNeeded(value: Boolean): Self = StObject.set(x, "portInformationNeeded", value.asInstanceOf[js.Any])
+    inline def setPortInformationNeeded(value: Boolean): Self = StObject.set(x, "portInformationNeeded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortInformationNeededUndefined: Self = StObject.set(x, "portInformationNeeded", js.undefined)
+    inline def setPortInformationNeededUndefined: Self = StObject.set(x, "portInformationNeeded", js.undefined)
   }
 }

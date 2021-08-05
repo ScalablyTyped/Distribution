@@ -22,37 +22,27 @@ trait AxesOptions extends StObject {
 }
 object AxesOptions {
   
-  @scala.inline
-  def apply(): AxesOptions = {
+  inline def apply(): AxesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AxesOptions]
   }
   
-  @scala.inline
-  implicit class AxesOptionsMutableBuilder[Self <: AxesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AxesOptions](x: Self) {
     
-    @scala.inline
-    def setRotated(value: Boolean): Self = StObject.set(x, "rotated", value.asInstanceOf[js.Any])
+    inline def setRotated(value: Boolean): Self = StObject.set(x, "rotated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotatedUndefined: Self = StObject.set(x, "rotated", js.undefined)
+    inline def setRotatedUndefined: Self = StObject.set(x, "rotated", js.undefined)
     
-    @scala.inline
-    def setX(value: XAxisConfiguration): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: XAxisConfiguration): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: YAxisConfigurationWithTime): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: YAxisConfigurationWithTime): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY2(value: YAxisConfiguration): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
+    inline def setY2(value: YAxisConfiguration): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY2Undefined: Self = StObject.set(x, "y2", js.undefined)
+    inline def setY2Undefined: Self = StObject.set(x, "y2", js.undefined)
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

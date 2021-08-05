@@ -39,8 +39,7 @@ trait DefaultLocale extends StObject {
 }
 object DefaultLocale {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     defaultFormats: CustomFormats,
     defaultLocale: String,
     formats: CustomFormats,
@@ -52,33 +51,24 @@ object DefaultLocale {
     __obj.asInstanceOf[DefaultLocale]
   }
   
-  @scala.inline
-  implicit class DefaultLocaleMutableBuilder[Self <: DefaultLocale] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultLocale](x: Self) {
     
-    @scala.inline
-    def setDefaultFormats(value: CustomFormats): Self = StObject.set(x, "defaultFormats", value.asInstanceOf[js.Any])
+    inline def setDefaultFormats(value: CustomFormats): Self = StObject.set(x, "defaultFormats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultLocale(value: String): Self = StObject.set(x, "defaultLocale", value.asInstanceOf[js.Any])
+    inline def setDefaultLocale(value: String): Self = StObject.set(x, "defaultLocale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormats(value: CustomFormats): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+    inline def setFormats(value: CustomFormats): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessages(value: Record[String, js.Array[MessageFormatElement] | String]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: Record[String, js.Array[MessageFormatElement] | String]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnError(
+    inline def setOnError(
       value: /* err */ MissingTranslationError | MessageFormatError | MissingDataError | InvalidConfigError | UnsupportedFormatterError | FormatError => Unit
     ): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
+    inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
+    inline def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
   }
 }

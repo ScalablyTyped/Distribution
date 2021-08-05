@@ -28,37 +28,27 @@ trait DataRepositoryTaskStatus extends StObject {
 }
 object DataRepositoryTaskStatus {
   
-  @scala.inline
-  def apply(): DataRepositoryTaskStatus = {
+  inline def apply(): DataRepositoryTaskStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataRepositoryTaskStatus]
   }
   
-  @scala.inline
-  implicit class DataRepositoryTaskStatusMutableBuilder[Self <: DataRepositoryTaskStatus] (val x: Self) extends AnyVal {
+  extension [Self <: DataRepositoryTaskStatus](x: Self) {
     
-    @scala.inline
-    def setFailedCount(value: FailedCount): Self = StObject.set(x, "FailedCount", value.asInstanceOf[js.Any])
+    inline def setFailedCount(value: FailedCount): Self = StObject.set(x, "FailedCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedCountUndefined: Self = StObject.set(x, "FailedCount", js.undefined)
+    inline def setFailedCountUndefined: Self = StObject.set(x, "FailedCount", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedTime(value: LastUpdatedTime): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: LastUpdatedTime): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
+    inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
     
-    @scala.inline
-    def setSucceededCount(value: SucceededCount): Self = StObject.set(x, "SucceededCount", value.asInstanceOf[js.Any])
+    inline def setSucceededCount(value: SucceededCount): Self = StObject.set(x, "SucceededCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSucceededCountUndefined: Self = StObject.set(x, "SucceededCount", js.undefined)
+    inline def setSucceededCountUndefined: Self = StObject.set(x, "SucceededCount", js.undefined)
     
-    @scala.inline
-    def setTotalCount(value: TotalCount): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
+    inline def setTotalCount(value: TotalCount): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalCountUndefined: Self = StObject.set(x, "TotalCount", js.undefined)
+    inline def setTotalCountUndefined: Self = StObject.set(x, "TotalCount", js.undefined)
   }
 }

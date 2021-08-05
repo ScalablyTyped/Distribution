@@ -58,73 +58,51 @@ trait LifecyclePolicy extends StObject {
 }
 object LifecyclePolicy {
   
-  @scala.inline
-  def apply(): LifecyclePolicy = {
+  inline def apply(): LifecyclePolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LifecyclePolicy]
   }
   
-  @scala.inline
-  implicit class LifecyclePolicyMutableBuilder[Self <: LifecyclePolicy] (val x: Self) extends AnyVal {
+  extension [Self <: LifecyclePolicy](x: Self) {
     
-    @scala.inline
-    def setDateCreated(value: Timestamp): Self = StObject.set(x, "DateCreated", value.asInstanceOf[js.Any])
+    inline def setDateCreated(value: Timestamp): Self = StObject.set(x, "DateCreated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateCreatedUndefined: Self = StObject.set(x, "DateCreated", js.undefined)
+    inline def setDateCreatedUndefined: Self = StObject.set(x, "DateCreated", js.undefined)
     
-    @scala.inline
-    def setDateModified(value: Timestamp): Self = StObject.set(x, "DateModified", value.asInstanceOf[js.Any])
+    inline def setDateModified(value: Timestamp): Self = StObject.set(x, "DateModified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateModifiedUndefined: Self = StObject.set(x, "DateModified", js.undefined)
+    inline def setDateModifiedUndefined: Self = StObject.set(x, "DateModified", js.undefined)
     
-    @scala.inline
-    def setDescription(value: PolicyDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: PolicyDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setExecutionRoleArn(value: ExecutionRoleArn): Self = StObject.set(x, "ExecutionRoleArn", value.asInstanceOf[js.Any])
+    inline def setExecutionRoleArn(value: ExecutionRoleArn): Self = StObject.set(x, "ExecutionRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionRoleArnUndefined: Self = StObject.set(x, "ExecutionRoleArn", js.undefined)
+    inline def setExecutionRoleArnUndefined: Self = StObject.set(x, "ExecutionRoleArn", js.undefined)
     
-    @scala.inline
-    def setPolicyArn(value: PolicyArn): Self = StObject.set(x, "PolicyArn", value.asInstanceOf[js.Any])
+    inline def setPolicyArn(value: PolicyArn): Self = StObject.set(x, "PolicyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyArnUndefined: Self = StObject.set(x, "PolicyArn", js.undefined)
+    inline def setPolicyArnUndefined: Self = StObject.set(x, "PolicyArn", js.undefined)
     
-    @scala.inline
-    def setPolicyDetails(value: PolicyDetails): Self = StObject.set(x, "PolicyDetails", value.asInstanceOf[js.Any])
+    inline def setPolicyDetails(value: PolicyDetails): Self = StObject.set(x, "PolicyDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyDetailsUndefined: Self = StObject.set(x, "PolicyDetails", js.undefined)
+    inline def setPolicyDetailsUndefined: Self = StObject.set(x, "PolicyDetails", js.undefined)
     
-    @scala.inline
-    def setPolicyId(value: PolicyId): Self = StObject.set(x, "PolicyId", value.asInstanceOf[js.Any])
+    inline def setPolicyId(value: PolicyId): Self = StObject.set(x, "PolicyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyIdUndefined: Self = StObject.set(x, "PolicyId", js.undefined)
+    inline def setPolicyIdUndefined: Self = StObject.set(x, "PolicyId", js.undefined)
     
-    @scala.inline
-    def setState(value: GettablePolicyStateValues): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: GettablePolicyStateValues): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
-    @scala.inline
-    def setStatusMessage(value: StatusMessage): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: StatusMessage): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
+    inline def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

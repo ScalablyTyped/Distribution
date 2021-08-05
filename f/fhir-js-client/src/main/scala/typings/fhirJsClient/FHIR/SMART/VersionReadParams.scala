@@ -18,17 +18,14 @@ trait VersionReadParams
 }
 object VersionReadParams {
   
-  @scala.inline
-  def apply(id: String, `type`: String, versionId: String): VersionReadParams = {
+  inline def apply(id: String, `type`: String, versionId: String): VersionReadParams = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], versionId = versionId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[VersionReadParams]
   }
   
-  @scala.inline
-  implicit class VersionReadParamsMutableBuilder[Self <: VersionReadParams] (val x: Self) extends AnyVal {
+  extension [Self <: VersionReadParams](x: Self) {
     
-    @scala.inline
-    def setVersionId(value: String): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
+    inline def setVersionId(value: String): Self = StObject.set(x, "versionId", value.asInstanceOf[js.Any])
   }
 }

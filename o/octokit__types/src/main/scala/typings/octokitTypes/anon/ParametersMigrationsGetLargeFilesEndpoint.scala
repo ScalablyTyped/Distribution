@@ -18,8 +18,7 @@ trait ParametersMigrationsGetLargeFilesEndpoint extends StObject {
 }
 object ParametersMigrationsGetLargeFilesEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: MigrationsGetLargeFilesEndpoint,
     request: MigrationsGetLargeFilesRequestOptions,
     response: OctokitResponse[MigrationsGetLargeFilesResponseData]
@@ -28,16 +27,12 @@ object ParametersMigrationsGetLargeFilesEndpoint {
     __obj.asInstanceOf[ParametersMigrationsGetLargeFilesEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersMigrationsGetLargeFilesEndpointMutableBuilder[Self <: ParametersMigrationsGetLargeFilesEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersMigrationsGetLargeFilesEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: MigrationsGetLargeFilesEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: MigrationsGetLargeFilesEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: MigrationsGetLargeFilesRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: MigrationsGetLargeFilesRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[MigrationsGetLargeFilesResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[MigrationsGetLargeFilesResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

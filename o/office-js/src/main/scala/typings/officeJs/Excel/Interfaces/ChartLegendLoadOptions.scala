@@ -92,73 +92,51 @@ trait ChartLegendLoadOptions extends StObject {
 }
 object ChartLegendLoadOptions {
   
-  @scala.inline
-  def apply(): ChartLegendLoadOptions = {
+  inline def apply(): ChartLegendLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartLegendLoadOptions]
   }
   
-  @scala.inline
-  implicit class ChartLegendLoadOptionsMutableBuilder[Self <: ChartLegendLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChartLegendLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setFormat(value: ChartLegendFormatLoadOptions): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: ChartLegendFormatLoadOptions): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Boolean): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Boolean): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setLeft(value: Boolean): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Boolean): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    @scala.inline
-    def setOverlay(value: Boolean): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
+    inline def setOverlay(value: Boolean): Self = StObject.set(x, "overlay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
+    inline def setOverlayUndefined: Self = StObject.set(x, "overlay", js.undefined)
     
-    @scala.inline
-    def setPosition(value: Boolean): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Boolean): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setShowShadow(value: Boolean): Self = StObject.set(x, "showShadow", value.asInstanceOf[js.Any])
+    inline def setShowShadow(value: Boolean): Self = StObject.set(x, "showShadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowShadowUndefined: Self = StObject.set(x, "showShadow", js.undefined)
+    inline def setShowShadowUndefined: Self = StObject.set(x, "showShadow", js.undefined)
     
-    @scala.inline
-    def setTop(value: Boolean): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Boolean): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Boolean): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Boolean): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

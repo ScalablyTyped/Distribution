@@ -12,6 +12,5 @@ object unsignedTxMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def encode(data: Transaction): KeyValue = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(data.asInstanceOf[js.Any]).asInstanceOf[KeyValue]
+  inline def encode(data: Transaction): KeyValue = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(data.asInstanceOf[js.Any]).asInstanceOf[KeyValue]
 }

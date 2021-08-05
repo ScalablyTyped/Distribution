@@ -54,55 +54,39 @@ trait SchemaUserLocation extends StObject {
 }
 object SchemaUserLocation {
   
-  @scala.inline
-  def apply(): SchemaUserLocation = {
+  inline def apply(): SchemaUserLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUserLocation]
   }
   
-  @scala.inline
-  implicit class SchemaUserLocationMutableBuilder[Self <: SchemaUserLocation] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUserLocation](x: Self) {
     
-    @scala.inline
-    def setArea(value: String): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
+    inline def setArea(value: String): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
+    inline def setAreaUndefined: Self = StObject.set(x, "area", js.undefined)
     
-    @scala.inline
-    def setBuildingId(value: String): Self = StObject.set(x, "buildingId", value.asInstanceOf[js.Any])
+    inline def setBuildingId(value: String): Self = StObject.set(x, "buildingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildingIdUndefined: Self = StObject.set(x, "buildingId", js.undefined)
+    inline def setBuildingIdUndefined: Self = StObject.set(x, "buildingId", js.undefined)
     
-    @scala.inline
-    def setCustomType(value: String): Self = StObject.set(x, "customType", value.asInstanceOf[js.Any])
+    inline def setCustomType(value: String): Self = StObject.set(x, "customType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomTypeUndefined: Self = StObject.set(x, "customType", js.undefined)
+    inline def setCustomTypeUndefined: Self = StObject.set(x, "customType", js.undefined)
     
-    @scala.inline
-    def setDeskCode(value: String): Self = StObject.set(x, "deskCode", value.asInstanceOf[js.Any])
+    inline def setDeskCode(value: String): Self = StObject.set(x, "deskCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeskCodeUndefined: Self = StObject.set(x, "deskCode", js.undefined)
+    inline def setDeskCodeUndefined: Self = StObject.set(x, "deskCode", js.undefined)
     
-    @scala.inline
-    def setFloorName(value: String): Self = StObject.set(x, "floorName", value.asInstanceOf[js.Any])
+    inline def setFloorName(value: String): Self = StObject.set(x, "floorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloorNameUndefined: Self = StObject.set(x, "floorName", js.undefined)
+    inline def setFloorNameUndefined: Self = StObject.set(x, "floorName", js.undefined)
     
-    @scala.inline
-    def setFloorSection(value: String): Self = StObject.set(x, "floorSection", value.asInstanceOf[js.Any])
+    inline def setFloorSection(value: String): Self = StObject.set(x, "floorSection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloorSectionUndefined: Self = StObject.set(x, "floorSection", js.undefined)
+    inline def setFloorSectionUndefined: Self = StObject.set(x, "floorSection", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

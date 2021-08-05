@@ -27,8 +27,7 @@ trait XEmbeddedClient
 }
 object XEmbeddedClient {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Component: XCloseable,
     acquire: () => Unit,
     getComponent: () => XCloseable,
@@ -41,13 +40,10 @@ object XEmbeddedClient {
     __obj.asInstanceOf[XEmbeddedClient]
   }
   
-  @scala.inline
-  implicit class XEmbeddedClientMutableBuilder[Self <: XEmbeddedClient] (val x: Self) extends AnyVal {
+  extension [Self <: XEmbeddedClient](x: Self) {
     
-    @scala.inline
-    def setSaveObject(value: () => Unit): Self = StObject.set(x, "saveObject", js.Any.fromFunction0(value))
+    inline def setSaveObject(value: () => Unit): Self = StObject.set(x, "saveObject", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setVisibilityChanged(value: Boolean => Unit): Self = StObject.set(x, "visibilityChanged", js.Any.fromFunction1(value))
+    inline def setVisibilityChanged(value: Boolean => Unit): Self = StObject.set(x, "visibilityChanged", js.Any.fromFunction1(value))
   }
 }

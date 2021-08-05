@@ -18,8 +18,7 @@ trait ParametersEnterpriseAdminSetInformationForProvisionedEnterpriseUserEndpoin
 }
 object ParametersEnterpriseAdminSetInformationForProvisionedEnterpriseUserEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: EnterpriseAdminSetInformationForProvisionedEnterpriseUserEndpoint,
     request: EnterpriseAdminSetInformationForProvisionedEnterpriseUserRequestOptions,
     response: OctokitResponse[EnterpriseAdminSetInformationForProvisionedEnterpriseUserResponseData]
@@ -28,16 +27,12 @@ object ParametersEnterpriseAdminSetInformationForProvisionedEnterpriseUserEndpoi
     __obj.asInstanceOf[ParametersEnterpriseAdminSetInformationForProvisionedEnterpriseUserEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersEnterpriseAdminSetInformationForProvisionedEnterpriseUserEndpointMutableBuilder[Self <: ParametersEnterpriseAdminSetInformationForProvisionedEnterpriseUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersEnterpriseAdminSetInformationForProvisionedEnterpriseUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: EnterpriseAdminSetInformationForProvisionedEnterpriseUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: EnterpriseAdminSetInformationForProvisionedEnterpriseUserEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: EnterpriseAdminSetInformationForProvisionedEnterpriseUserRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: EnterpriseAdminSetInformationForProvisionedEnterpriseUserRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[EnterpriseAdminSetInformationForProvisionedEnterpriseUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[EnterpriseAdminSetInformationForProvisionedEnterpriseUserResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

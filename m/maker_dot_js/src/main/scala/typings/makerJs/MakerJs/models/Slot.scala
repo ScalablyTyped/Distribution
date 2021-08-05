@@ -23,22 +23,17 @@ trait Slot
 }
 object Slot {
   
-  @scala.inline
-  def apply(models: IModelMap, origin: IPoint, paths: IPathMap): Slot = {
+  inline def apply(models: IModelMap, origin: IPoint, paths: IPathMap): Slot = {
     val __obj = js.Dynamic.literal(models = models.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], paths = paths.asInstanceOf[js.Any])
     __obj.asInstanceOf[Slot]
   }
   
-  @scala.inline
-  implicit class SlotMutableBuilder[Self <: Slot] (val x: Self) extends AnyVal {
+  extension [Self <: Slot](x: Self) {
     
-    @scala.inline
-    def setModels(value: IModelMap): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
+    inline def setModels(value: IModelMap): Self = StObject.set(x, "models", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigin(value: IPoint): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: IPoint): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaths(value: IPathMap): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+    inline def setPaths(value: IPathMap): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
   }
 }

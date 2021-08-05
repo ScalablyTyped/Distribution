@@ -18,19 +18,15 @@ trait TextEditorDecorationType extends StObject {
 }
 object TextEditorDecorationType {
   
-  @scala.inline
-  def apply(dispose: () => Unit, key: String): TextEditorDecorationType = {
+  inline def apply(dispose: () => Unit, key: String): TextEditorDecorationType = {
     val __obj = js.Dynamic.literal(dispose = js.Any.fromFunction0(dispose), key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextEditorDecorationType]
   }
   
-  @scala.inline
-  implicit class TextEditorDecorationTypeMutableBuilder[Self <: TextEditorDecorationType] (val x: Self) extends AnyVal {
+  extension [Self <: TextEditorDecorationType](x: Self) {
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

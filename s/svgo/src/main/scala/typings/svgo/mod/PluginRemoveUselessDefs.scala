@@ -12,16 +12,13 @@ trait PluginRemoveUselessDefs
 }
 object PluginRemoveUselessDefs {
   
-  @scala.inline
-  def apply(removeUselessDefs: Boolean | js.Object): PluginRemoveUselessDefs = {
+  inline def apply(removeUselessDefs: Boolean | js.Object): PluginRemoveUselessDefs = {
     val __obj = js.Dynamic.literal(removeUselessDefs = removeUselessDefs.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginRemoveUselessDefs]
   }
   
-  @scala.inline
-  implicit class PluginRemoveUselessDefsMutableBuilder[Self <: PluginRemoveUselessDefs] (val x: Self) extends AnyVal {
+  extension [Self <: PluginRemoveUselessDefs](x: Self) {
     
-    @scala.inline
-    def setRemoveUselessDefs(value: Boolean | js.Object): Self = StObject.set(x, "removeUselessDefs", value.asInstanceOf[js.Any])
+    inline def setRemoveUselessDefs(value: Boolean | js.Object): Self = StObject.set(x, "removeUselessDefs", value.asInstanceOf[js.Any])
   }
 }

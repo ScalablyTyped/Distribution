@@ -21,28 +21,21 @@ trait AggregateTransform
 }
 object AggregateTransform {
   
-  @scala.inline
-  def apply(aggregate: js.Array[AggregatedFieldDef]): AggregateTransform = {
+  inline def apply(aggregate: js.Array[AggregatedFieldDef]): AggregateTransform = {
     val __obj = js.Dynamic.literal(aggregate = aggregate.asInstanceOf[js.Any])
     __obj.asInstanceOf[AggregateTransform]
   }
   
-  @scala.inline
-  implicit class AggregateTransformMutableBuilder[Self <: AggregateTransform] (val x: Self) extends AnyVal {
+  extension [Self <: AggregateTransform](x: Self) {
     
-    @scala.inline
-    def setAggregate(value: js.Array[AggregatedFieldDef]): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
+    inline def setAggregate(value: js.Array[AggregatedFieldDef]): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregateVarargs(value: AggregatedFieldDef*): Self = StObject.set(x, "aggregate", js.Array(value :_*))
+    inline def setAggregateVarargs(value: AggregatedFieldDef*): Self = StObject.set(x, "aggregate", js.Array(value :_*))
     
-    @scala.inline
-    def setGroupby(value: js.Array[FieldName]): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
+    inline def setGroupby(value: js.Array[FieldName]): Self = StObject.set(x, "groupby", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
+    inline def setGroupbyUndefined: Self = StObject.set(x, "groupby", js.undefined)
     
-    @scala.inline
-    def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value :_*))
+    inline def setGroupbyVarargs(value: FieldName*): Self = StObject.set(x, "groupby", js.Array(value :_*))
   }
 }

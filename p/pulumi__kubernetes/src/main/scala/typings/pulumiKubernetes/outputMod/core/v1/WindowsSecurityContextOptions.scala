@@ -26,22 +26,17 @@ trait WindowsSecurityContextOptions extends StObject {
 }
 object WindowsSecurityContextOptions {
   
-  @scala.inline
-  def apply(gmsaCredentialSpec: String, gmsaCredentialSpecName: String, runAsUserName: String): WindowsSecurityContextOptions = {
+  inline def apply(gmsaCredentialSpec: String, gmsaCredentialSpecName: String, runAsUserName: String): WindowsSecurityContextOptions = {
     val __obj = js.Dynamic.literal(gmsaCredentialSpec = gmsaCredentialSpec.asInstanceOf[js.Any], gmsaCredentialSpecName = gmsaCredentialSpecName.asInstanceOf[js.Any], runAsUserName = runAsUserName.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowsSecurityContextOptions]
   }
   
-  @scala.inline
-  implicit class WindowsSecurityContextOptionsMutableBuilder[Self <: WindowsSecurityContextOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WindowsSecurityContextOptions](x: Self) {
     
-    @scala.inline
-    def setGmsaCredentialSpec(value: String): Self = StObject.set(x, "gmsaCredentialSpec", value.asInstanceOf[js.Any])
+    inline def setGmsaCredentialSpec(value: String): Self = StObject.set(x, "gmsaCredentialSpec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGmsaCredentialSpecName(value: String): Self = StObject.set(x, "gmsaCredentialSpecName", value.asInstanceOf[js.Any])
+    inline def setGmsaCredentialSpecName(value: String): Self = StObject.set(x, "gmsaCredentialSpecName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunAsUserName(value: String): Self = StObject.set(x, "runAsUserName", value.asInstanceOf[js.Any])
+    inline def setRunAsUserName(value: String): Self = StObject.set(x, "runAsUserName", value.asInstanceOf[js.Any])
   }
 }

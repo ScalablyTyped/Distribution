@@ -55,56 +55,40 @@ object typesRestoreRequestMod {
   }
   object RestoreRequest {
     
-    @scala.inline
-    def apply(): RestoreRequest = {
+    inline def apply(): RestoreRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RestoreRequest]
     }
     
-    @scala.inline
-    implicit class RestoreRequestMutableBuilder[Self <: RestoreRequest] (val x: Self) extends AnyVal {
+    extension [Self <: RestoreRequest](x: Self) {
       
-      @scala.inline
-      def setDays(value: Double): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
+      inline def setDays(value: Double): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDaysUndefined: Self = StObject.set(x, "Days", js.undefined)
+      inline def setDaysUndefined: Self = StObject.set(x, "Days", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
       
-      @scala.inline
-      def setGlacierJobParameters(value: GlacierJobParameters): Self = StObject.set(x, "GlacierJobParameters", value.asInstanceOf[js.Any])
+      inline def setGlacierJobParameters(value: GlacierJobParameters): Self = StObject.set(x, "GlacierJobParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlacierJobParametersUndefined: Self = StObject.set(x, "GlacierJobParameters", js.undefined)
+      inline def setGlacierJobParametersUndefined: Self = StObject.set(x, "GlacierJobParameters", js.undefined)
       
-      @scala.inline
-      def setOutputLocation(value: OutputLocation): Self = StObject.set(x, "OutputLocation", value.asInstanceOf[js.Any])
+      inline def setOutputLocation(value: OutputLocation): Self = StObject.set(x, "OutputLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputLocationUndefined: Self = StObject.set(x, "OutputLocation", js.undefined)
+      inline def setOutputLocationUndefined: Self = StObject.set(x, "OutputLocation", js.undefined)
       
-      @scala.inline
-      def setSelectParameters(value: SelectParameters): Self = StObject.set(x, "SelectParameters", value.asInstanceOf[js.Any])
+      inline def setSelectParameters(value: SelectParameters): Self = StObject.set(x, "SelectParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectParametersUndefined: Self = StObject.set(x, "SelectParameters", js.undefined)
+      inline def setSelectParametersUndefined: Self = StObject.set(x, "SelectParameters", js.undefined)
       
-      @scala.inline
-      def setTier(value: Standard_ | Bulk | Expedited | String): Self = StObject.set(x, "Tier", value.asInstanceOf[js.Any])
+      inline def setTier(value: Standard_ | Bulk | Expedited | String): Self = StObject.set(x, "Tier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTierUndefined: Self = StObject.set(x, "Tier", js.undefined)
+      inline def setTierUndefined: Self = StObject.set(x, "Tier", js.undefined)
       
-      @scala.inline
-      def setType(value: SELECT | String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: SELECT | String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     }
   }
   
@@ -132,32 +116,24 @@ object typesRestoreRequestMod {
   }
   object UnmarshalledRestoreRequest {
     
-    @scala.inline
-    def apply(): UnmarshalledRestoreRequest = {
+    inline def apply(): UnmarshalledRestoreRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledRestoreRequest]
     }
     
-    @scala.inline
-    implicit class UnmarshalledRestoreRequestMutableBuilder[Self <: UnmarshalledRestoreRequest] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledRestoreRequest](x: Self) {
       
-      @scala.inline
-      def setGlacierJobParameters(value: UnmarshalledGlacierJobParameters): Self = StObject.set(x, "GlacierJobParameters", value.asInstanceOf[js.Any])
+      inline def setGlacierJobParameters(value: UnmarshalledGlacierJobParameters): Self = StObject.set(x, "GlacierJobParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlacierJobParametersUndefined: Self = StObject.set(x, "GlacierJobParameters", js.undefined)
+      inline def setGlacierJobParametersUndefined: Self = StObject.set(x, "GlacierJobParameters", js.undefined)
       
-      @scala.inline
-      def setOutputLocation(value: UnmarshalledOutputLocation): Self = StObject.set(x, "OutputLocation", value.asInstanceOf[js.Any])
+      inline def setOutputLocation(value: UnmarshalledOutputLocation): Self = StObject.set(x, "OutputLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputLocationUndefined: Self = StObject.set(x, "OutputLocation", js.undefined)
+      inline def setOutputLocationUndefined: Self = StObject.set(x, "OutputLocation", js.undefined)
       
-      @scala.inline
-      def setSelectParameters(value: UnmarshalledSelectParameters): Self = StObject.set(x, "SelectParameters", value.asInstanceOf[js.Any])
+      inline def setSelectParameters(value: UnmarshalledSelectParameters): Self = StObject.set(x, "SelectParameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectParametersUndefined: Self = StObject.set(x, "SelectParameters", js.undefined)
+      inline def setSelectParametersUndefined: Self = StObject.set(x, "SelectParameters", js.undefined)
     }
   }
 }

@@ -25,29 +25,22 @@ trait MidiPitchBendChangeMessage extends StObject {
 }
 object MidiPitchBendChangeMessage {
   
-  @scala.inline
-  def apply(bend: Double, channel: Double, rawData: IBuffer, timestamp: Double, `type`: MidiMessageType): MidiPitchBendChangeMessage = {
+  inline def apply(bend: Double, channel: Double, rawData: IBuffer, timestamp: Double, `type`: MidiMessageType): MidiPitchBendChangeMessage = {
     val __obj = js.Dynamic.literal(bend = bend.asInstanceOf[js.Any], channel = channel.asInstanceOf[js.Any], rawData = rawData.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MidiPitchBendChangeMessage]
   }
   
-  @scala.inline
-  implicit class MidiPitchBendChangeMessageMutableBuilder[Self <: MidiPitchBendChangeMessage] (val x: Self) extends AnyVal {
+  extension [Self <: MidiPitchBendChangeMessage](x: Self) {
     
-    @scala.inline
-    def setBend(value: Double): Self = StObject.set(x, "bend", value.asInstanceOf[js.Any])
+    inline def setBend(value: Double): Self = StObject.set(x, "bend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannel(value: Double): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: Double): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRawData(value: IBuffer): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
+    inline def setRawData(value: IBuffer): Self = StObject.set(x, "rawData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: MidiMessageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: MidiMessageType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

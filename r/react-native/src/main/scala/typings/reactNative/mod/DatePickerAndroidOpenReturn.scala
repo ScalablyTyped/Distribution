@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DatePickerAndroidOpenReturn extends StObject
 object DatePickerAndroidOpenReturn {
   
-  @scala.inline
-  def DatePickerAndroidDateSetAction(day: Double, month: Double, year: Double): typings.reactNative.mod.DatePickerAndroidDateSetAction = {
+  inline def DatePickerAndroidDateSetAction(day: Double, month: Double, year: Double): typings.reactNative.mod.DatePickerAndroidDateSetAction = {
     val __obj = js.Dynamic.literal(action = "dateSetAction", day = day.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.reactNative.mod.DatePickerAndroidDateSetAction]
   }
   
-  @scala.inline
-  def DatePickerAndroidDismissedAction(): typings.reactNative.mod.DatePickerAndroidDismissedAction = {
+  inline def DatePickerAndroidDismissedAction(): typings.reactNative.mod.DatePickerAndroidDismissedAction = {
     val __obj = js.Dynamic.literal(action = "dismissedAction")
     __obj.asInstanceOf[typings.reactNative.mod.DatePickerAndroidDismissedAction]
   }

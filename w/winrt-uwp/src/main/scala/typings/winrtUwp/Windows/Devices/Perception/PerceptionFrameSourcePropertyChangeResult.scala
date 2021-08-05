@@ -15,19 +15,15 @@ trait PerceptionFrameSourcePropertyChangeResult extends StObject {
 }
 object PerceptionFrameSourcePropertyChangeResult {
   
-  @scala.inline
-  def apply(newValue: js.Any, status: PerceptionFrameSourcePropertyChangeStatus): PerceptionFrameSourcePropertyChangeResult = {
+  inline def apply(newValue: js.Any, status: PerceptionFrameSourcePropertyChangeStatus): PerceptionFrameSourcePropertyChangeResult = {
     val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[PerceptionFrameSourcePropertyChangeResult]
   }
   
-  @scala.inline
-  implicit class PerceptionFrameSourcePropertyChangeResultMutableBuilder[Self <: PerceptionFrameSourcePropertyChangeResult] (val x: Self) extends AnyVal {
+  extension [Self <: PerceptionFrameSourcePropertyChangeResult](x: Self) {
     
-    @scala.inline
-    def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: js.Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: PerceptionFrameSourcePropertyChangeStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: PerceptionFrameSourcePropertyChangeStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

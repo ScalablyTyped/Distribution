@@ -23,31 +23,23 @@ trait UpdateJobStatusResult extends StObject {
 }
 object UpdateJobStatusResult {
   
-  @scala.inline
-  def apply(): UpdateJobStatusResult = {
+  inline def apply(): UpdateJobStatusResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateJobStatusResult]
   }
   
-  @scala.inline
-  implicit class UpdateJobStatusResultMutableBuilder[Self <: UpdateJobStatusResult] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateJobStatusResult](x: Self) {
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
+    inline def setJobIdUndefined: Self = StObject.set(x, "JobId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: JobStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: JobStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setStatusUpdateReason(value: JobStatusUpdateReason): Self = StObject.set(x, "StatusUpdateReason", value.asInstanceOf[js.Any])
+    inline def setStatusUpdateReason(value: JobStatusUpdateReason): Self = StObject.set(x, "StatusUpdateReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUpdateReasonUndefined: Self = StObject.set(x, "StatusUpdateReason", js.undefined)
+    inline def setStatusUpdateReasonUndefined: Self = StObject.set(x, "StatusUpdateReason", js.undefined)
   }
 }

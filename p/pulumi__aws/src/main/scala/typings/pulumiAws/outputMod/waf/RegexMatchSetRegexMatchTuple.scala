@@ -26,8 +26,7 @@ trait RegexMatchSetRegexMatchTuple extends StObject {
 }
 object RegexMatchSetRegexMatchTuple {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fieldToMatch: RegexMatchSetRegexMatchTupleFieldToMatch,
     regexPatternSetId: String,
     textTransformation: String
@@ -36,16 +35,12 @@ object RegexMatchSetRegexMatchTuple {
     __obj.asInstanceOf[RegexMatchSetRegexMatchTuple]
   }
   
-  @scala.inline
-  implicit class RegexMatchSetRegexMatchTupleMutableBuilder[Self <: RegexMatchSetRegexMatchTuple] (val x: Self) extends AnyVal {
+  extension [Self <: RegexMatchSetRegexMatchTuple](x: Self) {
     
-    @scala.inline
-    def setFieldToMatch(value: RegexMatchSetRegexMatchTupleFieldToMatch): Self = StObject.set(x, "fieldToMatch", value.asInstanceOf[js.Any])
+    inline def setFieldToMatch(value: RegexMatchSetRegexMatchTupleFieldToMatch): Self = StObject.set(x, "fieldToMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegexPatternSetId(value: String): Self = StObject.set(x, "regexPatternSetId", value.asInstanceOf[js.Any])
+    inline def setRegexPatternSetId(value: String): Self = StObject.set(x, "regexPatternSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextTransformation(value: String): Self = StObject.set(x, "textTransformation", value.asInstanceOf[js.Any])
+    inline def setTextTransformation(value: String): Self = StObject.set(x, "textTransformation", value.asInstanceOf[js.Any])
   }
 }

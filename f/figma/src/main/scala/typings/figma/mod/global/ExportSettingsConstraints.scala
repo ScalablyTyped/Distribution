@@ -15,20 +15,16 @@ trait ExportSettingsConstraints extends StObject {
 }
 object ExportSettingsConstraints {
   
-  @scala.inline
-  def apply(`type`: SCALE | WIDTH | HEIGHT, value: Double): ExportSettingsConstraints = {
+  inline def apply(`type`: SCALE | WIDTH | HEIGHT, value: Double): ExportSettingsConstraints = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportSettingsConstraints]
   }
   
-  @scala.inline
-  implicit class ExportSettingsConstraintsMutableBuilder[Self <: ExportSettingsConstraints] (val x: Self) extends AnyVal {
+  extension [Self <: ExportSettingsConstraints](x: Self) {
     
-    @scala.inline
-    def setType(value: SCALE | WIDTH | HEIGHT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: SCALE | WIDTH | HEIGHT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

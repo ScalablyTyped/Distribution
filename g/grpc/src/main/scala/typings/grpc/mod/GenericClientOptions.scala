@@ -16,19 +16,15 @@ trait GenericClientOptions extends StObject {
 }
 object GenericClientOptions {
   
-  @scala.inline
-  def apply(): GenericClientOptions = {
+  inline def apply(): GenericClientOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GenericClientOptions]
   }
   
-  @scala.inline
-  implicit class GenericClientOptionsMutableBuilder[Self <: GenericClientOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GenericClientOptions](x: Self) {
     
-    @scala.inline
-    def setDeprecatedArgumentOrder(value: Boolean): Self = StObject.set(x, "deprecatedArgumentOrder", value.asInstanceOf[js.Any])
+    inline def setDeprecatedArgumentOrder(value: Boolean): Self = StObject.set(x, "deprecatedArgumentOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprecatedArgumentOrderUndefined: Self = StObject.set(x, "deprecatedArgumentOrder", js.undefined)
+    inline def setDeprecatedArgumentOrderUndefined: Self = StObject.set(x, "deprecatedArgumentOrder", js.undefined)
   }
 }

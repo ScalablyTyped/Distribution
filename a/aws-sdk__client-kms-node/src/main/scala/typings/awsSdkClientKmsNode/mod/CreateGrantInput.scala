@@ -19,8 +19,7 @@ trait CreateGrantInput
      with typings.awsSdkClientKmsNode.typesCreateGrantInputMod.CreateGrantInput
 object CreateGrantInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GranteePrincipal: String,
     KeyId: String,
     Operations: (js.Array[

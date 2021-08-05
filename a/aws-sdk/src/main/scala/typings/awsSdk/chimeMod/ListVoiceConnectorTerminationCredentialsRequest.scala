@@ -13,16 +13,13 @@ trait ListVoiceConnectorTerminationCredentialsRequest extends StObject {
 }
 object ListVoiceConnectorTerminationCredentialsRequest {
   
-  @scala.inline
-  def apply(VoiceConnectorId: NonEmptyString): ListVoiceConnectorTerminationCredentialsRequest = {
+  inline def apply(VoiceConnectorId: NonEmptyString): ListVoiceConnectorTerminationCredentialsRequest = {
     val __obj = js.Dynamic.literal(VoiceConnectorId = VoiceConnectorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListVoiceConnectorTerminationCredentialsRequest]
   }
   
-  @scala.inline
-  implicit class ListVoiceConnectorTerminationCredentialsRequestMutableBuilder[Self <: ListVoiceConnectorTerminationCredentialsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListVoiceConnectorTerminationCredentialsRequest](x: Self) {
     
-    @scala.inline
-    def setVoiceConnectorId(value: NonEmptyString): Self = StObject.set(x, "VoiceConnectorId", value.asInstanceOf[js.Any])
+    inline def setVoiceConnectorId(value: NonEmptyString): Self = StObject.set(x, "VoiceConnectorId", value.asInstanceOf[js.Any])
   }
 }

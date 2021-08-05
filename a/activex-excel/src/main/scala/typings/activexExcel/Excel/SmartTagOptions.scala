@@ -14,15 +14,14 @@ trait SmartTagOptions extends StObject {
   
   var EmbedSmartTags: Boolean
   
-  @JSName("Excel.SmartTagOptions_typekey")
+  /* private */ @JSName("Excel.SmartTagOptions_typekey")
   var ExcelDotSmartTagOptions_typekey: SmartTagOptions
   
   val Parent: js.Any
 }
 object SmartTagOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: XlCreator,
     DisplaySmartTags: XlSmartTagDisplayMode,
@@ -35,25 +34,18 @@ object SmartTagOptions {
     __obj.asInstanceOf[SmartTagOptions]
   }
   
-  @scala.inline
-  implicit class SmartTagOptionsMutableBuilder[Self <: SmartTagOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SmartTagOptions](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplaySmartTags(value: XlSmartTagDisplayMode): Self = StObject.set(x, "DisplaySmartTags", value.asInstanceOf[js.Any])
+    inline def setDisplaySmartTags(value: XlSmartTagDisplayMode): Self = StObject.set(x, "DisplaySmartTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbedSmartTags(value: Boolean): Self = StObject.set(x, "EmbedSmartTags", value.asInstanceOf[js.Any])
+    inline def setEmbedSmartTags(value: Boolean): Self = StObject.set(x, "EmbedSmartTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotSmartTagOptions_typekey(value: SmartTagOptions): Self = StObject.set(x, "Excel.SmartTagOptions_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotSmartTagOptions_typekey(value: SmartTagOptions): Self = StObject.set(x, "Excel.SmartTagOptions_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
   }
 }

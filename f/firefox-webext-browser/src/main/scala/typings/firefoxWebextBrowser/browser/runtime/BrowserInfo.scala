@@ -21,25 +21,19 @@ trait BrowserInfo extends StObject {
 }
 object BrowserInfo {
   
-  @scala.inline
-  def apply(buildID: String, name: String, vendor: String, version: String): BrowserInfo = {
+  inline def apply(buildID: String, name: String, vendor: String, version: String): BrowserInfo = {
     val __obj = js.Dynamic.literal(buildID = buildID.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], vendor = vendor.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[BrowserInfo]
   }
   
-  @scala.inline
-  implicit class BrowserInfoMutableBuilder[Self <: BrowserInfo] (val x: Self) extends AnyVal {
+  extension [Self <: BrowserInfo](x: Self) {
     
-    @scala.inline
-    def setBuildID(value: String): Self = StObject.set(x, "buildID", value.asInstanceOf[js.Any])
+    inline def setBuildID(value: String): Self = StObject.set(x, "buildID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
+    inline def setVendor(value: String): Self = StObject.set(x, "vendor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

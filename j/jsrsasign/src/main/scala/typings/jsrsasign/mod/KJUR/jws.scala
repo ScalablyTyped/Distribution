@@ -54,8 +54,7 @@ object jws {
       * - number - UNIX origin time (seconds from 1970-01-01 00:00:00) (ex. 1377714748)
       *
       */
-    @scala.inline
-    def get(s: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(s.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def get(s: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(s.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * get UNIX origin time of current time
@@ -65,8 +64,7 @@ object jws {
       * @example
       * KJUR.jws.IntDate.getNow() => 1478...
       */
-    @scala.inline
-    def getNow(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getNow")().asInstanceOf[Double]
+    inline def getNow(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getNow")().asInstanceOf[Double]
     
     /**
       * get UNIX origin time from Zulu time representation string
@@ -85,8 +83,7 @@ object jws {
       * KJUR.jws.IntDate.getZulu("20151012125959Z") => 1478...
       * KJUR.jws.IntDate.getZulu("151012125959Z") => 1478...
       */
-    @scala.inline
-    def getZulu(s: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getZulu")(s.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def getZulu(s: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getZulu")(s.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * get UTC time string from UNIX origin time value
@@ -97,8 +94,7 @@ object jws {
       * @example
       * KJUR.jws.IntDate.intDate2UTCString(1478...) => "2015 Oct ..."
       */
-    @scala.inline
-    def intDate2UTCString(intDate: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("intDate2UTCString")(intDate.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def intDate2UTCString(intDate: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("intDate2UTCString")(intDate.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * get UTC time string from UNIX origin time value
@@ -109,8 +105,7 @@ object jws {
       * @example
       * KJUR.jws.IntDate.intDate2UTCString(1478...) => "20151012...Z"
       */
-    @scala.inline
-    def intDate2Zulu(intDate: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("intDate2Zulu")(intDate.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def intDate2Zulu(intDate: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("intDate2Zulu")(intDate.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   /**
@@ -199,8 +194,7 @@ object jws {
       * @return string of Encoded Signature Value
       * @throws if sJWS is not comma separated string such like "Header.Payload.Signature".
       */
-    @scala.inline
-    def getEncodedSignatureValueFromJWS(sJWS: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getEncodedSignatureValueFromJWS")(sJWS.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getEncodedSignatureValueFromJWS(sJWS: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getEncodedSignatureValueFromJWS")(sJWS.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * get RFC 7638 JWK thumbprint from JWK object
@@ -216,8 +210,7 @@ object jws {
       * jwk = {"kty":"RSA", "n":"0vx...", "e":"AQAB", ...};
       * thumbprint = KJUR.jws.JWS.getJWKthumbprint(jwk);
       */
-    @scala.inline
-    def getJWKthumbprint(o: JsonWebKey): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getJWKthumbprint")(o.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getJWKthumbprint(o: JsonWebKey): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getJWKthumbprint")(o.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * check whether item is included by array
@@ -231,8 +224,7 @@ object jws {
       * KJUR.jws.JWS.inArray('a', ['b', 'c', 'a']) => true
       * KJUR.jws.JWS.inArray('a', ['b', 'c']) => false
       */
-    @scala.inline
-    def inArray(item: String, a: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("inArray")(item.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def inArray(item: String, a: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("inArray")(item.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * check whether array is included by another array
@@ -246,8 +238,7 @@ object jws {
       * KJUR.jws.JWS.includedArray(['a', 'b'], ['b', 'c', 'a']) => true
       * KJUR.jws.JWS.includedArray(['a', 'b'], ['b', 'c']) => false
       */
-    @scala.inline
-    def includedArray(a1: js.Array[String], a2: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("includedArray")(a1.asInstanceOf[js.Any], a2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def includedArray(a1: js.Array[String], a2: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("includedArray")(a1.asInstanceOf[js.Any], a2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * check whether a String "s" is a safe JSON string or not.
@@ -256,14 +247,10 @@ object jws {
       * @param s JSON string
       * @return 1 or 0
       */
-    @scala.inline
-    def isSafeJSONString(s: String): `0` | `1` = ^.asInstanceOf[js.Dynamic].applyDynamic("isSafeJSONString")(s.asInstanceOf[js.Any]).asInstanceOf[`0` | `1`]
-    @scala.inline
-    def isSafeJSONString(s: String, h: js.Object): `0` | `1` = (^.asInstanceOf[js.Dynamic].applyDynamic("isSafeJSONString")(s.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[`0` | `1`]
-    @scala.inline
-    def isSafeJSONString(s: String, h: js.Object, p: String): `0` | `1` = (^.asInstanceOf[js.Dynamic].applyDynamic("isSafeJSONString")(s.asInstanceOf[js.Any], h.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[`0` | `1`]
-    @scala.inline
-    def isSafeJSONString(s: String, h: Unit, p: String): `0` | `1` = (^.asInstanceOf[js.Dynamic].applyDynamic("isSafeJSONString")(s.asInstanceOf[js.Any], h.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[`0` | `1`]
+    inline def isSafeJSONString(s: String): `0` | `1` = ^.asInstanceOf[js.Dynamic].applyDynamic("isSafeJSONString")(s.asInstanceOf[js.Any]).asInstanceOf[`0` | `1`]
+    inline def isSafeJSONString(s: String, h: js.Object): `0` | `1` = (^.asInstanceOf[js.Dynamic].applyDynamic("isSafeJSONString")(s.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[`0` | `1`]
+    inline def isSafeJSONString(s: String, h: js.Object, p: String): `0` | `1` = (^.asInstanceOf[js.Dynamic].applyDynamic("isSafeJSONString")(s.asInstanceOf[js.Any], h.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[`0` | `1`]
+    inline def isSafeJSONString(s: String, h: Unit, p: String): `0` | `1` = (^.asInstanceOf[js.Dynamic].applyDynamic("isSafeJSONString")(s.asInstanceOf[js.Any], h.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[`0` | `1`]
     
     /** static associative array of general signature algorithm name from JWS algorithm name */
     object jwsalg2sigalg {
@@ -275,74 +262,62 @@ object jws {
       @JSImport("jsrsasign", "KJUR.jws.JWS.jwsalg2sigalg.ES256")
       @js.native
       def ES256: String = js.native
-      @scala.inline
-      def ES256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ES256")(x.asInstanceOf[js.Any])
+      inline def ES256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ES256")(x.asInstanceOf[js.Any])
       
       @JSImport("jsrsasign", "KJUR.jws.JWS.jwsalg2sigalg.ES384")
       @js.native
       def ES384: String = js.native
-      @scala.inline
-      def ES384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ES384")(x.asInstanceOf[js.Any])
+      inline def ES384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ES384")(x.asInstanceOf[js.Any])
       
       @JSImport("jsrsasign", "KJUR.jws.JWS.jwsalg2sigalg.HS256")
       @js.native
       def HS256: String = js.native
-      @scala.inline
-      def HS256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HS256")(x.asInstanceOf[js.Any])
+      inline def HS256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HS256")(x.asInstanceOf[js.Any])
       
       @JSImport("jsrsasign", "KJUR.jws.JWS.jwsalg2sigalg.HS384")
       @js.native
       def HS384: String = js.native
-      @scala.inline
-      def HS384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HS384")(x.asInstanceOf[js.Any])
+      inline def HS384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HS384")(x.asInstanceOf[js.Any])
       
       @JSImport("jsrsasign", "KJUR.jws.JWS.jwsalg2sigalg.HS512")
       @js.native
       def HS512: String = js.native
-      @scala.inline
-      def HS512_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HS512")(x.asInstanceOf[js.Any])
+      inline def HS512_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HS512")(x.asInstanceOf[js.Any])
       
       @JSImport("jsrsasign", "KJUR.jws.JWS.jwsalg2sigalg.PS256")
       @js.native
       def PS256: String = js.native
-      @scala.inline
-      def PS256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PS256")(x.asInstanceOf[js.Any])
+      inline def PS256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PS256")(x.asInstanceOf[js.Any])
       
       @JSImport("jsrsasign", "KJUR.jws.JWS.jwsalg2sigalg.PS384")
       @js.native
       def PS384: String = js.native
-      @scala.inline
-      def PS384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PS384")(x.asInstanceOf[js.Any])
+      inline def PS384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PS384")(x.asInstanceOf[js.Any])
       
       @JSImport("jsrsasign", "KJUR.jws.JWS.jwsalg2sigalg.PS512")
       @js.native
       def PS512: String = js.native
-      @scala.inline
-      def PS512_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PS512")(x.asInstanceOf[js.Any])
+      inline def PS512_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PS512")(x.asInstanceOf[js.Any])
       
       @JSImport("jsrsasign", "KJUR.jws.JWS.jwsalg2sigalg.RS256")
       @js.native
       def RS256: String = js.native
-      @scala.inline
-      def RS256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RS256")(x.asInstanceOf[js.Any])
+      inline def RS256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RS256")(x.asInstanceOf[js.Any])
       
       @JSImport("jsrsasign", "KJUR.jws.JWS.jwsalg2sigalg.RS384")
       @js.native
       def RS384: String = js.native
-      @scala.inline
-      def RS384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RS384")(x.asInstanceOf[js.Any])
+      inline def RS384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RS384")(x.asInstanceOf[js.Any])
       
       @JSImport("jsrsasign", "KJUR.jws.JWS.jwsalg2sigalg.RS512")
       @js.native
       def RS512: String = js.native
-      @scala.inline
-      def RS512_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RS512")(x.asInstanceOf[js.Any])
+      inline def RS512_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RS512")(x.asInstanceOf[js.Any])
       
       @JSImport("jsrsasign", "KJUR.jws.JWS.jwsalg2sigalg.none")
       @js.native
       def none: String = js.native
-      @scala.inline
-      def none_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
+      inline def none_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("none")(x.asInstanceOf[js.Any])
     }
     
     /**
@@ -378,8 +353,7 @@ object jws {
       *   sigHex: "91f3cd..."
       * }
       */
-    @scala.inline
-    def parse(sJWS: String): JWSResult = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sJWS.asInstanceOf[js.Any]).asInstanceOf[JWSResult]
+    inline def parse(sJWS: String): JWSResult = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(sJWS.asInstanceOf[js.Any]).asInstanceOf[JWSResult]
     
     /**
       * parse JWS string and set public property 'parsedJWS' dictionary.
@@ -387,10 +361,8 @@ object jws {
       * @throws if sJWS is not comma separated string such like "Header.Payload.Signature".
       * @throws if JWS Header is a malformed JSON string.
       */
-    @scala.inline
-    def parseJWS(sJWS: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("parseJWS")(sJWS.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def parseJWS(sJWS: String, sigValNotNeeded: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseJWS")(sJWS.asInstanceOf[js.Any], sigValNotNeeded.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def parseJWS(sJWS: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("parseJWS")(sJWS.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def parseJWS(sJWS: String, sigValNotNeeded: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseJWS")(sJWS.asInstanceOf[js.Any], sigValNotNeeded.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * read a String "s" as JSON object if it is safe.
@@ -399,8 +371,7 @@ object jws {
       * @param s JSON string
       * @return JSON object or null
       */
-    @scala.inline
-    def readSafeJSONString(s: String): js.Object | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("readSafeJSONString")(s.asInstanceOf[js.Any]).asInstanceOf[js.Object | Null]
+    inline def readSafeJSONString(s: String): js.Object | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("readSafeJSONString")(s.asInstanceOf[js.Any]).asInstanceOf[js.Object | Null]
     
     /**
       * generate JWS signature by specified key
@@ -463,54 +434,30 @@ object jws {
       * // header and payload can be passed by both string and object
       * sJWS = KJUR.jws.JWS.sign(null, '{alg:"HS256",cty:"JWT"}', '{age:21}', "aaa");
       */
-    @scala.inline
-    def sign(alg: String, spHead: String, spPayload: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def sign(alg: String, spHead: String, spPayload: String, pass: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def sign(alg: String, spHead: String, spPayload: String, pass: StringDictionary[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def sign(alg: String, spHead: String, spPayload: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def sign(alg: String, spHead: String, spPayload: js.Object, pass: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def sign(alg: String, spHead: String, spPayload: js.Object, pass: StringDictionary[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def sign(alg: String, spHead: AlgString, spPayload: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def sign(alg: String, spHead: AlgString, spPayload: String, pass: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def sign(alg: String, spHead: AlgString, spPayload: String, pass: StringDictionary[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def sign(alg: String, spHead: AlgString, spPayload: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def sign(alg: String, spHead: AlgString, spPayload: js.Object, pass: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def sign(alg: String, spHead: AlgString, spPayload: js.Object, pass: StringDictionary[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def sign(alg: Null, spHead: String, spPayload: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def sign(alg: Null, spHead: String, spPayload: String, pass: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def sign(alg: Null, spHead: String, spPayload: String, pass: StringDictionary[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def sign(alg: Null, spHead: String, spPayload: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def sign(alg: Null, spHead: String, spPayload: js.Object, pass: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def sign(alg: Null, spHead: String, spPayload: js.Object, pass: StringDictionary[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def sign(alg: Null, spHead: AlgString, spPayload: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def sign(alg: Null, spHead: AlgString, spPayload: String, pass: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def sign(alg: Null, spHead: AlgString, spPayload: String, pass: StringDictionary[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def sign(alg: Null, spHead: AlgString, spPayload: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def sign(alg: Null, spHead: AlgString, spPayload: js.Object, pass: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def sign(alg: Null, spHead: AlgString, spPayload: js.Object, pass: StringDictionary[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sign(alg: String, spHead: String, spPayload: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sign(alg: String, spHead: String, spPayload: String, pass: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sign(alg: String, spHead: String, spPayload: String, pass: StringDictionary[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sign(alg: String, spHead: String, spPayload: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sign(alg: String, spHead: String, spPayload: js.Object, pass: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sign(alg: String, spHead: String, spPayload: js.Object, pass: StringDictionary[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sign(alg: String, spHead: AlgString, spPayload: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sign(alg: String, spHead: AlgString, spPayload: String, pass: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sign(alg: String, spHead: AlgString, spPayload: String, pass: StringDictionary[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sign(alg: String, spHead: AlgString, spPayload: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sign(alg: String, spHead: AlgString, spPayload: js.Object, pass: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sign(alg: String, spHead: AlgString, spPayload: js.Object, pass: StringDictionary[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sign(alg: Null, spHead: String, spPayload: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sign(alg: Null, spHead: String, spPayload: String, pass: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sign(alg: Null, spHead: String, spPayload: String, pass: StringDictionary[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sign(alg: Null, spHead: String, spPayload: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sign(alg: Null, spHead: String, spPayload: js.Object, pass: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sign(alg: Null, spHead: String, spPayload: js.Object, pass: StringDictionary[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sign(alg: Null, spHead: AlgString, spPayload: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sign(alg: Null, spHead: AlgString, spPayload: String, pass: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sign(alg: Null, spHead: AlgString, spPayload: String, pass: StringDictionary[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sign(alg: Null, spHead: AlgString, spPayload: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sign(alg: Null, spHead: AlgString, spPayload: js.Object, pass: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def sign(alg: Null, spHead: AlgString, spPayload: js.Object, pass: StringDictionary[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(alg.asInstanceOf[js.Any], spHead.asInstanceOf[js.Any], spPayload.asInstanceOf[js.Any], pass.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * verify JWS signature by specified key or certificate
@@ -572,16 +519,11 @@ object jws {
       * var pubkey = KEYUTIL.getKey('-----BEGIN CERT...');
       * var isValid = KJUR.jws.JWS.verify('eyJh...', pubkey);
       */
-    @scala.inline
-    def verify(sJWS: String, key: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(sJWS.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def verify(sJWS: String, key: String, acceptAlgs: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(sJWS.asInstanceOf[js.Any], key.asInstanceOf[js.Any], acceptAlgs.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def verify(sJWS: String, key: String, acceptAlgs: B64): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(sJWS.asInstanceOf[js.Any], key.asInstanceOf[js.Any], acceptAlgs.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def verify(sJWS: String, key: String, acceptAlgs: Hex): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(sJWS.asInstanceOf[js.Any], key.asInstanceOf[js.Any], acceptAlgs.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def verify(sJWS: String, key: String, acceptAlgs: Utf8): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(sJWS.asInstanceOf[js.Any], key.asInstanceOf[js.Any], acceptAlgs.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def verify(sJWS: String, key: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(sJWS.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def verify(sJWS: String, key: String, acceptAlgs: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(sJWS.asInstanceOf[js.Any], key.asInstanceOf[js.Any], acceptAlgs.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def verify(sJWS: String, key: String, acceptAlgs: B64): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(sJWS.asInstanceOf[js.Any], key.asInstanceOf[js.Any], acceptAlgs.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def verify(sJWS: String, key: String, acceptAlgs: Hex): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(sJWS.asInstanceOf[js.Any], key.asInstanceOf[js.Any], acceptAlgs.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def verify(sJWS: String, key: String, acceptAlgs: Utf8): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(sJWS.asInstanceOf[js.Any], key.asInstanceOf[js.Any], acceptAlgs.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * @param sJWT string of JSON Web Token(JWT) to verify
@@ -663,9 +605,7 @@ object jws {
       *   gracePeriod: 1 * 60 * 60 // accept 1 hour slow or fast
       * });
       */
-    @scala.inline
-    def verifyJWT(sJWT: String, key: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyJWT")(sJWT.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def verifyJWT(sJWT: String, key: String, acceptField: Aud): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyJWT")(sJWT.asInstanceOf[js.Any], key.asInstanceOf[js.Any], acceptField.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def verifyJWT(sJWT: String, key: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyJWT")(sJWT.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def verifyJWT(sJWT: String, key: String, acceptField: Aud): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyJWT")(sJWT.asInstanceOf[js.Any], key.asInstanceOf[js.Any], acceptField.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
 }

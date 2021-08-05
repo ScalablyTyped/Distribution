@@ -68,71 +68,61 @@ object mod {
   @JSImport("dropzone", "ACCEPTED")
   @js.native
   def ACCEPTED: String = js.native
-  @scala.inline
-  def ACCEPTED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACCEPTED")(x.asInstanceOf[js.Any])
+  inline def ACCEPTED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ACCEPTED")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("dropzone", "ADDED")
   @js.native
   def ADDED: String = js.native
-  @scala.inline
-  def ADDED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ADDED")(x.asInstanceOf[js.Any])
+  inline def ADDED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ADDED")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("dropzone", "CANCELED")
   @js.native
   def CANCELED: String = js.native
-  @scala.inline
-  def CANCELED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CANCELED")(x.asInstanceOf[js.Any])
+  inline def CANCELED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CANCELED")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("dropzone", "ERROR")
   @js.native
   def ERROR: String = js.native
-  @scala.inline
-  def ERROR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERROR")(x.asInstanceOf[js.Any])
+  inline def ERROR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERROR")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("dropzone", "PROCESSING")
   @js.native
   def PROCESSING: String = js.native
-  @scala.inline
-  def PROCESSING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROCESSING")(x.asInstanceOf[js.Any])
+  inline def PROCESSING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROCESSING")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("dropzone", "QUEUED")
   @js.native
   def QUEUED: String = js.native
-  @scala.inline
-  def QUEUED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUEUED")(x.asInstanceOf[js.Any])
+  inline def QUEUED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("QUEUED")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("dropzone", "SUCCESS")
   @js.native
   def SUCCESS: String = js.native
-  @scala.inline
-  def SUCCESS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUCCESS")(x.asInstanceOf[js.Any])
+  inline def SUCCESS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SUCCESS")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("dropzone", "UPLOADING")
   @js.native
   def UPLOADING: String = js.native
-  @scala.inline
-  def UPLOADING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UPLOADING")(x.asInstanceOf[js.Any])
+  inline def UPLOADING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UPLOADING")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("dropzone", "autoDiscover")
   @js.native
   def autoDiscover: Boolean = js.native
-  @scala.inline
-  def autoDiscover_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("autoDiscover")(x.asInstanceOf[js.Any])
+  inline def autoDiscover_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("autoDiscover")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("dropzone", "blacklistedBrowsers")
   @js.native
   def blacklistedBrowsers: js.Array[RegExp] = js.native
-  @scala.inline
-  def blacklistedBrowsers_=(x: js.Array[RegExp]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("blacklistedBrowsers")(x.asInstanceOf[js.Any])
+  inline def blacklistedBrowsers_=(x: js.Array[RegExp]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("blacklistedBrowsers")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("dropzone", "confirm")
@@ -143,8 +133,7 @@ object mod {
     /* rejected */ js.UndefOr[js.Function0[Unit]], 
     Unit
   ] = js.native
-  @scala.inline
-  def confirm_=(
+  inline def confirm_=(
     x: js.Function3[
       /* question */ String, 
       /* accepted */ js.Function0[Unit], 
@@ -154,70 +143,52 @@ object mod {
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("confirm")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def createElement(string: String): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(string.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  inline def createElement(string: String): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(string.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
   
   /* static member */
-  @scala.inline
-  def dataURItoBlob(dataURI: String): Blob = ^.asInstanceOf[js.Dynamic].applyDynamic("dataURItoBlob")(dataURI.asInstanceOf[js.Any]).asInstanceOf[Blob]
+  inline def dataURItoBlob(dataURI: String): Blob = ^.asInstanceOf[js.Dynamic].applyDynamic("dataURItoBlob")(dataURI.asInstanceOf[js.Any]).asInstanceOf[Blob]
   
   /* static member */
-  @scala.inline
-  def discover(): js.Array[Dropzone] = ^.asInstanceOf[js.Dynamic].applyDynamic("discover")().asInstanceOf[js.Array[Dropzone]]
+  inline def discover(): js.Array[Dropzone] = ^.asInstanceOf[js.Dynamic].applyDynamic("discover")().asInstanceOf[js.Array[Dropzone]]
   
   /* static member */
-  @scala.inline
-  def elementInside(element: HTMLElement, container: HTMLElement): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("elementInside")(element.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def elementInside(element: HTMLElement, container: HTMLElement): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("elementInside")(element.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @scala.inline
-  def forElement(element: String): Dropzone = ^.asInstanceOf[js.Dynamic].applyDynamic("forElement")(element.asInstanceOf[js.Any]).asInstanceOf[Dropzone]
-  @scala.inline
-  def forElement(element: HTMLElement): Dropzone = ^.asInstanceOf[js.Dynamic].applyDynamic("forElement")(element.asInstanceOf[js.Any]).asInstanceOf[Dropzone]
+  inline def forElement(element: String): Dropzone = ^.asInstanceOf[js.Dynamic].applyDynamic("forElement")(element.asInstanceOf[js.Any]).asInstanceOf[Dropzone]
+  inline def forElement(element: HTMLElement): Dropzone = ^.asInstanceOf[js.Dynamic].applyDynamic("forElement")(element.asInstanceOf[js.Any]).asInstanceOf[Dropzone]
   
   /* static member */
-  @scala.inline
-  def getElement(element: String): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getElement")(element.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
-  @scala.inline
-  def getElement(element: String, name: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getElement")(element.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
-  @scala.inline
-  def getElement(element: HTMLElement): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getElement")(element.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
-  @scala.inline
-  def getElement(element: HTMLElement, name: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getElement")(element.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  inline def getElement(element: String): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getElement")(element.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  inline def getElement(element: String, name: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getElement")(element.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  inline def getElement(element: HTMLElement): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getElement")(element.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  inline def getElement(element: HTMLElement, name: String): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getElement")(element.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   
   /* static member */
-  @scala.inline
-  def getElements(elements: String): js.Array[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElements")(elements.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLElement]]
-  @scala.inline
-  def getElements(elements: js.Array[String | HTMLElement]): js.Array[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElements")(elements.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLElement]]
-  @scala.inline
-  def getElements(elements: HTMLElement): js.Array[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElements")(elements.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLElement]]
+  inline def getElements(elements: String): js.Array[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElements")(elements.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLElement]]
+  inline def getElements(elements: js.Array[String | HTMLElement]): js.Array[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElements")(elements.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLElement]]
+  inline def getElements(elements: HTMLElement): js.Array[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElements")(elements.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLElement]]
   
   /* static member */
   @JSImport("dropzone", "instances")
   @js.native
   def instances: js.Array[Dropzone] = js.native
-  @scala.inline
-  def instances_=(x: js.Array[Dropzone]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instances")(x.asInstanceOf[js.Any])
+  inline def instances_=(x: js.Array[Dropzone]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instances")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def isBrowserSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBrowserSupported")().asInstanceOf[Boolean]
+  inline def isBrowserSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBrowserSupported")().asInstanceOf[Boolean]
   
   /* static member */
-  @scala.inline
-  def isValidFile(file: File, acceptedFiles: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidFile")(file.asInstanceOf[js.Any], acceptedFiles.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isValidFile(file: File, acceptedFiles: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidFile")(file.asInstanceOf[js.Any], acceptedFiles.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @scala.inline
-  def optionsForElement(element: HTMLElement): js.UndefOr[DropzoneOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("optionsForElement")(element.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[DropzoneOptions]]
+  inline def optionsForElement(element: HTMLElement): js.UndefOr[DropzoneOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("optionsForElement")(element.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[DropzoneOptions]]
   
   /* static member */
   @JSImport("dropzone", "version")
   @js.native
   def version: String = js.native
-  @scala.inline
-  def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+  inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   
   @js.native
   trait Dropzone extends StObject {
@@ -747,44 +718,32 @@ object mod {
   }
   object DropzoneDictFileSizeUnits {
     
-    @scala.inline
-    def apply(): DropzoneDictFileSizeUnits = {
+    inline def apply(): DropzoneDictFileSizeUnits = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DropzoneDictFileSizeUnits]
     }
     
-    @scala.inline
-    implicit class DropzoneDictFileSizeUnitsMutableBuilder[Self <: DropzoneDictFileSizeUnits] (val x: Self) extends AnyVal {
+    extension [Self <: DropzoneDictFileSizeUnits](x: Self) {
       
-      @scala.inline
-      def setB(value: String): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      inline def setB(value: String): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBUndefined: Self = StObject.set(x, "b", js.undefined)
+      inline def setBUndefined: Self = StObject.set(x, "b", js.undefined)
       
-      @scala.inline
-      def setGb(value: String): Self = StObject.set(x, "gb", value.asInstanceOf[js.Any])
+      inline def setGb(value: String): Self = StObject.set(x, "gb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGbUndefined: Self = StObject.set(x, "gb", js.undefined)
+      inline def setGbUndefined: Self = StObject.set(x, "gb", js.undefined)
       
-      @scala.inline
-      def setKb(value: String): Self = StObject.set(x, "kb", value.asInstanceOf[js.Any])
+      inline def setKb(value: String): Self = StObject.set(x, "kb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKbUndefined: Self = StObject.set(x, "kb", js.undefined)
+      inline def setKbUndefined: Self = StObject.set(x, "kb", js.undefined)
       
-      @scala.inline
-      def setMb(value: String): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
+      inline def setMb(value: String): Self = StObject.set(x, "mb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMbUndefined: Self = StObject.set(x, "mb", js.undefined)
+      inline def setMbUndefined: Self = StObject.set(x, "mb", js.undefined)
       
-      @scala.inline
-      def setTb(value: String): Self = StObject.set(x, "tb", value.asInstanceOf[js.Any])
+      inline def setTb(value: String): Self = StObject.set(x, "tb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTbUndefined: Self = StObject.set(x, "tb", js.undefined)
+      inline def setTbUndefined: Self = StObject.set(x, "tb", js.undefined)
     }
   }
   
@@ -824,32 +783,24 @@ object mod {
   }
   object DropzoneFileUpload {
     
-    @scala.inline
-    def apply(bytesSent: Double, progress: Double, total: Double, uuid: String): DropzoneFileUpload = {
+    inline def apply(bytesSent: Double, progress: Double, total: Double, uuid: String): DropzoneFileUpload = {
       val __obj = js.Dynamic.literal(bytesSent = bytesSent.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
       __obj.asInstanceOf[DropzoneFileUpload]
     }
     
-    @scala.inline
-    implicit class DropzoneFileUploadMutableBuilder[Self <: DropzoneFileUpload] (val x: Self) extends AnyVal {
+    extension [Self <: DropzoneFileUpload](x: Self) {
       
-      @scala.inline
-      def setBytesSent(value: Double): Self = StObject.set(x, "bytesSent", value.asInstanceOf[js.Any])
+      inline def setBytesSent(value: Double): Self = StObject.set(x, "bytesSent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+      inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalChunkCount(value: Double): Self = StObject.set(x, "totalChunkCount", value.asInstanceOf[js.Any])
+      inline def setTotalChunkCount(value: Double): Self = StObject.set(x, "totalChunkCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotalChunkCountUndefined: Self = StObject.set(x, "totalChunkCount", js.undefined)
+      inline def setTotalChunkCountUndefined: Self = StObject.set(x, "totalChunkCount", js.undefined)
       
-      @scala.inline
-      def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -861,20 +812,16 @@ object mod {
   }
   object DropzoneListener {
     
-    @scala.inline
-    def apply(element: HTMLElement, events: StringDictionary[js.Function1[/* e */ Event, js.Any]]): DropzoneListener = {
+    inline def apply(element: HTMLElement, events: StringDictionary[js.Function1[/* e */ Event, js.Any]]): DropzoneListener = {
       val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any])
       __obj.asInstanceOf[DropzoneListener]
     }
     
-    @scala.inline
-    implicit class DropzoneListenerMutableBuilder[Self <: DropzoneListener] (val x: Self) extends AnyVal {
+    extension [Self <: DropzoneListener](x: Self) {
       
-      @scala.inline
-      def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvents(value: StringDictionary[js.Function1[/* e */ Event, js.Any]]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: StringDictionary[js.Function1[/* e */ Event, js.Any]]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     }
   }
   
@@ -888,20 +835,16 @@ object mod {
   }
   object DropzoneMockFile {
     
-    @scala.inline
-    def apply(name: String, size: Double): DropzoneMockFile = {
+    inline def apply(name: String, size: Double): DropzoneMockFile = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[DropzoneMockFile]
     }
     
-    @scala.inline
-    implicit class DropzoneMockFileMutableBuilder[Self <: DropzoneMockFile] (val x: Self) extends AnyVal {
+    extension [Self <: DropzoneMockFile](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1135,561 +1078,380 @@ object mod {
   }
   object DropzoneOptions {
     
-    @scala.inline
-    def apply(): DropzoneOptions = {
+    inline def apply(): DropzoneOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DropzoneOptions]
     }
     
-    @scala.inline
-    implicit class DropzoneOptionsMutableBuilder[Self <: DropzoneOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DropzoneOptions](x: Self) {
       
-      @scala.inline
-      def setAccept(
+      inline def setAccept(
         value: (/* file */ DropzoneFile, /* done */ js.Function1[/* error */ js.UndefOr[String | Error], Unit]) => Unit
       ): Self = StObject.set(x, "accept", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
+      inline def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
       
-      @scala.inline
-      def setAcceptedFiles(value: String): Self = StObject.set(x, "acceptedFiles", value.asInstanceOf[js.Any])
+      inline def setAcceptedFiles(value: String): Self = StObject.set(x, "acceptedFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAcceptedFilesUndefined: Self = StObject.set(x, "acceptedFiles", js.undefined)
+      inline def setAcceptedFilesUndefined: Self = StObject.set(x, "acceptedFiles", js.undefined)
       
-      @scala.inline
-      def setAddRemoveLinks(value: Boolean): Self = StObject.set(x, "addRemoveLinks", value.asInstanceOf[js.Any])
+      inline def setAddRemoveLinks(value: Boolean): Self = StObject.set(x, "addRemoveLinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddRemoveLinksUndefined: Self = StObject.set(x, "addRemoveLinks", js.undefined)
+      inline def setAddRemoveLinksUndefined: Self = StObject.set(x, "addRemoveLinks", js.undefined)
       
-      @scala.inline
-      def setAddedfile(value: /* file */ DropzoneFile => Unit): Self = StObject.set(x, "addedfile", js.Any.fromFunction1(value))
+      inline def setAddedfile(value: /* file */ DropzoneFile => Unit): Self = StObject.set(x, "addedfile", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddedfileUndefined: Self = StObject.set(x, "addedfile", js.undefined)
+      inline def setAddedfileUndefined: Self = StObject.set(x, "addedfile", js.undefined)
       
-      @scala.inline
-      def setAddedfiles(value: /* files */ js.Array[DropzoneFile] => Unit): Self = StObject.set(x, "addedfiles", js.Any.fromFunction1(value))
+      inline def setAddedfiles(value: /* files */ js.Array[DropzoneFile] => Unit): Self = StObject.set(x, "addedfiles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAddedfilesUndefined: Self = StObject.set(x, "addedfiles", js.undefined)
+      inline def setAddedfilesUndefined: Self = StObject.set(x, "addedfiles", js.undefined)
       
-      @scala.inline
-      def setAutoProcessQueue(value: Boolean): Self = StObject.set(x, "autoProcessQueue", value.asInstanceOf[js.Any])
+      inline def setAutoProcessQueue(value: Boolean): Self = StObject.set(x, "autoProcessQueue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoProcessQueueUndefined: Self = StObject.set(x, "autoProcessQueue", js.undefined)
+      inline def setAutoProcessQueueUndefined: Self = StObject.set(x, "autoProcessQueue", js.undefined)
       
-      @scala.inline
-      def setAutoQueue(value: Boolean): Self = StObject.set(x, "autoQueue", value.asInstanceOf[js.Any])
+      inline def setAutoQueue(value: Boolean): Self = StObject.set(x, "autoQueue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoQueueUndefined: Self = StObject.set(x, "autoQueue", js.undefined)
+      inline def setAutoQueueUndefined: Self = StObject.set(x, "autoQueue", js.undefined)
       
-      @scala.inline
-      def setCanceled(value: /* file */ DropzoneFile => Unit): Self = StObject.set(x, "canceled", js.Any.fromFunction1(value))
+      inline def setCanceled(value: /* file */ DropzoneFile => Unit): Self = StObject.set(x, "canceled", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCanceledUndefined: Self = StObject.set(x, "canceled", js.undefined)
+      inline def setCanceledUndefined: Self = StObject.set(x, "canceled", js.undefined)
       
-      @scala.inline
-      def setCanceledmultiple(value: /* file */ js.Array[DropzoneFile] => Unit): Self = StObject.set(x, "canceledmultiple", js.Any.fromFunction1(value))
+      inline def setCanceledmultiple(value: /* file */ js.Array[DropzoneFile] => Unit): Self = StObject.set(x, "canceledmultiple", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCanceledmultipleUndefined: Self = StObject.set(x, "canceledmultiple", js.undefined)
+      inline def setCanceledmultipleUndefined: Self = StObject.set(x, "canceledmultiple", js.undefined)
       
-      @scala.inline
-      def setCapture(value: String): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+      inline def setCapture(value: String): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
+      inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
       
-      @scala.inline
-      def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
+      inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
+      inline def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
       
-      @scala.inline
-      def setChunking(value: Boolean): Self = StObject.set(x, "chunking", value.asInstanceOf[js.Any])
+      inline def setChunking(value: Boolean): Self = StObject.set(x, "chunking", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChunkingUndefined: Self = StObject.set(x, "chunking", js.undefined)
+      inline def setChunkingUndefined: Self = StObject.set(x, "chunking", js.undefined)
       
-      @scala.inline
-      def setChunksUploaded(
+      inline def setChunksUploaded(
         value: (/* file */ DropzoneFile, /* done */ js.Function1[/* error */ js.UndefOr[String | Error], Unit]) => Unit
       ): Self = StObject.set(x, "chunksUploaded", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setChunksUploadedUndefined: Self = StObject.set(x, "chunksUploaded", js.undefined)
+      inline def setChunksUploadedUndefined: Self = StObject.set(x, "chunksUploaded", js.undefined)
       
-      @scala.inline
-      def setClickable(value: Boolean | String | HTMLElement | (js.Array[String | HTMLElement])): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
+      inline def setClickable(value: Boolean | String | HTMLElement | (js.Array[String | HTMLElement])): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClickableUndefined: Self = StObject.set(x, "clickable", js.undefined)
+      inline def setClickableUndefined: Self = StObject.set(x, "clickable", js.undefined)
       
-      @scala.inline
-      def setClickableVarargs(value: (String | HTMLElement)*): Self = StObject.set(x, "clickable", js.Array(value :_*))
+      inline def setClickableVarargs(value: (String | HTMLElement)*): Self = StObject.set(x, "clickable", js.Array(value :_*))
       
-      @scala.inline
-      def setComplete(value: /* file */ DropzoneFile => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
+      inline def setComplete(value: /* file */ DropzoneFile => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+      inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
       
-      @scala.inline
-      def setCompletemultiple(value: /* file */ js.Array[DropzoneFile] => Unit): Self = StObject.set(x, "completemultiple", js.Any.fromFunction1(value))
+      inline def setCompletemultiple(value: /* file */ js.Array[DropzoneFile] => Unit): Self = StObject.set(x, "completemultiple", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCompletemultipleUndefined: Self = StObject.set(x, "completemultiple", js.undefined)
+      inline def setCompletemultipleUndefined: Self = StObject.set(x, "completemultiple", js.undefined)
       
-      @scala.inline
-      def setCreateImageThumbnails(value: Boolean): Self = StObject.set(x, "createImageThumbnails", value.asInstanceOf[js.Any])
+      inline def setCreateImageThumbnails(value: Boolean): Self = StObject.set(x, "createImageThumbnails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateImageThumbnailsUndefined: Self = StObject.set(x, "createImageThumbnails", js.undefined)
+      inline def setCreateImageThumbnailsUndefined: Self = StObject.set(x, "createImageThumbnails", js.undefined)
       
-      @scala.inline
-      def setDictCancelUpload(value: String): Self = StObject.set(x, "dictCancelUpload", value.asInstanceOf[js.Any])
+      inline def setDictCancelUpload(value: String): Self = StObject.set(x, "dictCancelUpload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDictCancelUploadConfirmation(value: String): Self = StObject.set(x, "dictCancelUploadConfirmation", value.asInstanceOf[js.Any])
+      inline def setDictCancelUploadConfirmation(value: String): Self = StObject.set(x, "dictCancelUploadConfirmation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDictCancelUploadConfirmationUndefined: Self = StObject.set(x, "dictCancelUploadConfirmation", js.undefined)
+      inline def setDictCancelUploadConfirmationUndefined: Self = StObject.set(x, "dictCancelUploadConfirmation", js.undefined)
       
-      @scala.inline
-      def setDictCancelUploadUndefined: Self = StObject.set(x, "dictCancelUpload", js.undefined)
+      inline def setDictCancelUploadUndefined: Self = StObject.set(x, "dictCancelUpload", js.undefined)
       
-      @scala.inline
-      def setDictDefaultMessage(value: String): Self = StObject.set(x, "dictDefaultMessage", value.asInstanceOf[js.Any])
+      inline def setDictDefaultMessage(value: String): Self = StObject.set(x, "dictDefaultMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDictDefaultMessageUndefined: Self = StObject.set(x, "dictDefaultMessage", js.undefined)
+      inline def setDictDefaultMessageUndefined: Self = StObject.set(x, "dictDefaultMessage", js.undefined)
       
-      @scala.inline
-      def setDictFallbackMessage(value: String): Self = StObject.set(x, "dictFallbackMessage", value.asInstanceOf[js.Any])
+      inline def setDictFallbackMessage(value: String): Self = StObject.set(x, "dictFallbackMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDictFallbackMessageUndefined: Self = StObject.set(x, "dictFallbackMessage", js.undefined)
+      inline def setDictFallbackMessageUndefined: Self = StObject.set(x, "dictFallbackMessage", js.undefined)
       
-      @scala.inline
-      def setDictFallbackText(value: String): Self = StObject.set(x, "dictFallbackText", value.asInstanceOf[js.Any])
+      inline def setDictFallbackText(value: String): Self = StObject.set(x, "dictFallbackText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDictFallbackTextUndefined: Self = StObject.set(x, "dictFallbackText", js.undefined)
+      inline def setDictFallbackTextUndefined: Self = StObject.set(x, "dictFallbackText", js.undefined)
       
-      @scala.inline
-      def setDictFileSizeUnits(value: DropzoneDictFileSizeUnits): Self = StObject.set(x, "dictFileSizeUnits", value.asInstanceOf[js.Any])
+      inline def setDictFileSizeUnits(value: DropzoneDictFileSizeUnits): Self = StObject.set(x, "dictFileSizeUnits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDictFileSizeUnitsUndefined: Self = StObject.set(x, "dictFileSizeUnits", js.undefined)
+      inline def setDictFileSizeUnitsUndefined: Self = StObject.set(x, "dictFileSizeUnits", js.undefined)
       
-      @scala.inline
-      def setDictFileTooBig(value: String): Self = StObject.set(x, "dictFileTooBig", value.asInstanceOf[js.Any])
+      inline def setDictFileTooBig(value: String): Self = StObject.set(x, "dictFileTooBig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDictFileTooBigUndefined: Self = StObject.set(x, "dictFileTooBig", js.undefined)
+      inline def setDictFileTooBigUndefined: Self = StObject.set(x, "dictFileTooBig", js.undefined)
       
-      @scala.inline
-      def setDictInvalidFileType(value: String): Self = StObject.set(x, "dictInvalidFileType", value.asInstanceOf[js.Any])
+      inline def setDictInvalidFileType(value: String): Self = StObject.set(x, "dictInvalidFileType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDictInvalidFileTypeUndefined: Self = StObject.set(x, "dictInvalidFileType", js.undefined)
+      inline def setDictInvalidFileTypeUndefined: Self = StObject.set(x, "dictInvalidFileType", js.undefined)
       
-      @scala.inline
-      def setDictMaxFilesExceeded(value: String): Self = StObject.set(x, "dictMaxFilesExceeded", value.asInstanceOf[js.Any])
+      inline def setDictMaxFilesExceeded(value: String): Self = StObject.set(x, "dictMaxFilesExceeded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDictMaxFilesExceededUndefined: Self = StObject.set(x, "dictMaxFilesExceeded", js.undefined)
+      inline def setDictMaxFilesExceededUndefined: Self = StObject.set(x, "dictMaxFilesExceeded", js.undefined)
       
-      @scala.inline
-      def setDictRemoveFile(value: String): Self = StObject.set(x, "dictRemoveFile", value.asInstanceOf[js.Any])
+      inline def setDictRemoveFile(value: String): Self = StObject.set(x, "dictRemoveFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDictRemoveFileConfirmation(value: String): Self = StObject.set(x, "dictRemoveFileConfirmation", value.asInstanceOf[js.Any])
+      inline def setDictRemoveFileConfirmation(value: String): Self = StObject.set(x, "dictRemoveFileConfirmation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDictRemoveFileConfirmationUndefined: Self = StObject.set(x, "dictRemoveFileConfirmation", js.undefined)
+      inline def setDictRemoveFileConfirmationUndefined: Self = StObject.set(x, "dictRemoveFileConfirmation", js.undefined)
       
-      @scala.inline
-      def setDictRemoveFileUndefined: Self = StObject.set(x, "dictRemoveFile", js.undefined)
+      inline def setDictRemoveFileUndefined: Self = StObject.set(x, "dictRemoveFile", js.undefined)
       
-      @scala.inline
-      def setDictResponseError(value: String): Self = StObject.set(x, "dictResponseError", value.asInstanceOf[js.Any])
+      inline def setDictResponseError(value: String): Self = StObject.set(x, "dictResponseError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDictResponseErrorUndefined: Self = StObject.set(x, "dictResponseError", js.undefined)
+      inline def setDictResponseErrorUndefined: Self = StObject.set(x, "dictResponseError", js.undefined)
       
-      @scala.inline
-      def setDictUploadCanceled(value: String): Self = StObject.set(x, "dictUploadCanceled", value.asInstanceOf[js.Any])
+      inline def setDictUploadCanceled(value: String): Self = StObject.set(x, "dictUploadCanceled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDictUploadCanceledUndefined: Self = StObject.set(x, "dictUploadCanceled", js.undefined)
+      inline def setDictUploadCanceledUndefined: Self = StObject.set(x, "dictUploadCanceled", js.undefined)
       
-      @scala.inline
-      def setDragend(value: /* e */ DragEvent => Unit): Self = StObject.set(x, "dragend", js.Any.fromFunction1(value))
+      inline def setDragend(value: /* e */ DragEvent => Unit): Self = StObject.set(x, "dragend", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDragendUndefined: Self = StObject.set(x, "dragend", js.undefined)
+      inline def setDragendUndefined: Self = StObject.set(x, "dragend", js.undefined)
       
-      @scala.inline
-      def setDragenter(value: /* e */ DragEvent => Unit): Self = StObject.set(x, "dragenter", js.Any.fromFunction1(value))
+      inline def setDragenter(value: /* e */ DragEvent => Unit): Self = StObject.set(x, "dragenter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDragenterUndefined: Self = StObject.set(x, "dragenter", js.undefined)
+      inline def setDragenterUndefined: Self = StObject.set(x, "dragenter", js.undefined)
       
-      @scala.inline
-      def setDragleave(value: /* e */ DragEvent => Unit): Self = StObject.set(x, "dragleave", js.Any.fromFunction1(value))
+      inline def setDragleave(value: /* e */ DragEvent => Unit): Self = StObject.set(x, "dragleave", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDragleaveUndefined: Self = StObject.set(x, "dragleave", js.undefined)
+      inline def setDragleaveUndefined: Self = StObject.set(x, "dragleave", js.undefined)
       
-      @scala.inline
-      def setDragover(value: /* e */ DragEvent => Unit): Self = StObject.set(x, "dragover", js.Any.fromFunction1(value))
+      inline def setDragover(value: /* e */ DragEvent => Unit): Self = StObject.set(x, "dragover", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDragoverUndefined: Self = StObject.set(x, "dragover", js.undefined)
+      inline def setDragoverUndefined: Self = StObject.set(x, "dragover", js.undefined)
       
-      @scala.inline
-      def setDragstart(value: /* e */ DragEvent => Unit): Self = StObject.set(x, "dragstart", js.Any.fromFunction1(value))
+      inline def setDragstart(value: /* e */ DragEvent => Unit): Self = StObject.set(x, "dragstart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDragstartUndefined: Self = StObject.set(x, "dragstart", js.undefined)
+      inline def setDragstartUndefined: Self = StObject.set(x, "dragstart", js.undefined)
       
-      @scala.inline
-      def setDrop(value: /* e */ DragEvent => Unit): Self = StObject.set(x, "drop", js.Any.fromFunction1(value))
+      inline def setDrop(value: /* e */ DragEvent => Unit): Self = StObject.set(x, "drop", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
+      inline def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
       
-      @scala.inline
-      def setError(value: (/* file */ DropzoneFile, /* message */ String | Error, /* xhr */ XMLHttpRequest) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
+      inline def setError(value: (/* file */ DropzoneFile, /* message */ String | Error, /* xhr */ XMLHttpRequest) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setErrormultiple(
+      inline def setErrormultiple(
         value: (/* files */ js.Array[DropzoneFile], /* message */ String | Error, /* xhr */ XMLHttpRequest) => Unit
       ): Self = StObject.set(x, "errormultiple", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setErrormultipleUndefined: Self = StObject.set(x, "errormultiple", js.undefined)
+      inline def setErrormultipleUndefined: Self = StObject.set(x, "errormultiple", js.undefined)
       
-      @scala.inline
-      def setFallback(value: () => Unit): Self = StObject.set(x, "fallback", js.Any.fromFunction0(value))
+      inline def setFallback(value: () => Unit): Self = StObject.set(x, "fallback", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
-      @scala.inline
-      def setFilesizeBase(value: Double): Self = StObject.set(x, "filesizeBase", value.asInstanceOf[js.Any])
+      inline def setFilesizeBase(value: Double): Self = StObject.set(x, "filesizeBase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesizeBaseUndefined: Self = StObject.set(x, "filesizeBase", js.undefined)
+      inline def setFilesizeBaseUndefined: Self = StObject.set(x, "filesizeBase", js.undefined)
       
-      @scala.inline
-      def setForceChunking(value: Boolean): Self = StObject.set(x, "forceChunking", value.asInstanceOf[js.Any])
+      inline def setForceChunking(value: Boolean): Self = StObject.set(x, "forceChunking", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceChunkingUndefined: Self = StObject.set(x, "forceChunking", js.undefined)
+      inline def setForceChunkingUndefined: Self = StObject.set(x, "forceChunking", js.undefined)
       
-      @scala.inline
-      def setForceFallback(value: Boolean): Self = StObject.set(x, "forceFallback", value.asInstanceOf[js.Any])
+      inline def setForceFallback(value: Boolean): Self = StObject.set(x, "forceFallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceFallbackUndefined: Self = StObject.set(x, "forceFallback", js.undefined)
+      inline def setForceFallbackUndefined: Self = StObject.set(x, "forceFallback", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setHiddenInputContainer(value: HTMLElement): Self = StObject.set(x, "hiddenInputContainer", value.asInstanceOf[js.Any])
+      inline def setHiddenInputContainer(value: HTMLElement): Self = StObject.set(x, "hiddenInputContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHiddenInputContainerUndefined: Self = StObject.set(x, "hiddenInputContainer", js.undefined)
+      inline def setHiddenInputContainerUndefined: Self = StObject.set(x, "hiddenInputContainer", js.undefined)
       
-      @scala.inline
-      def setIgnoreHiddenFiles(value: Boolean): Self = StObject.set(x, "ignoreHiddenFiles", value.asInstanceOf[js.Any])
+      inline def setIgnoreHiddenFiles(value: Boolean): Self = StObject.set(x, "ignoreHiddenFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreHiddenFilesUndefined: Self = StObject.set(x, "ignoreHiddenFiles", js.undefined)
+      inline def setIgnoreHiddenFilesUndefined: Self = StObject.set(x, "ignoreHiddenFiles", js.undefined)
       
-      @scala.inline
-      def setInit(value: js.ThisFunction0[/* this */ Dropzone, Unit]): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+      inline def setInit(value: js.ThisFunction0[/* this */ Dropzone, Unit]): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+      inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
       
-      @scala.inline
-      def setMaxFiles(value: Double): Self = StObject.set(x, "maxFiles", value.asInstanceOf[js.Any])
+      inline def setMaxFiles(value: Double): Self = StObject.set(x, "maxFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxFilesUndefined: Self = StObject.set(x, "maxFiles", js.undefined)
+      inline def setMaxFilesUndefined: Self = StObject.set(x, "maxFiles", js.undefined)
       
-      @scala.inline
-      def setMaxFilesize(value: Double): Self = StObject.set(x, "maxFilesize", value.asInstanceOf[js.Any])
+      inline def setMaxFilesize(value: Double): Self = StObject.set(x, "maxFilesize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxFilesizeUndefined: Self = StObject.set(x, "maxFilesize", js.undefined)
+      inline def setMaxFilesizeUndefined: Self = StObject.set(x, "maxFilesize", js.undefined)
       
-      @scala.inline
-      def setMaxThumbnailFilesize(value: Double): Self = StObject.set(x, "maxThumbnailFilesize", value.asInstanceOf[js.Any])
+      inline def setMaxThumbnailFilesize(value: Double): Self = StObject.set(x, "maxThumbnailFilesize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxThumbnailFilesizeUndefined: Self = StObject.set(x, "maxThumbnailFilesize", js.undefined)
+      inline def setMaxThumbnailFilesizeUndefined: Self = StObject.set(x, "maxThumbnailFilesize", js.undefined)
       
-      @scala.inline
-      def setMaxfilesexceeded(value: /* file */ DropzoneFile => Unit): Self = StObject.set(x, "maxfilesexceeded", js.Any.fromFunction1(value))
+      inline def setMaxfilesexceeded(value: /* file */ DropzoneFile => Unit): Self = StObject.set(x, "maxfilesexceeded", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMaxfilesexceededUndefined: Self = StObject.set(x, "maxfilesexceeded", js.undefined)
+      inline def setMaxfilesexceededUndefined: Self = StObject.set(x, "maxfilesexceeded", js.undefined)
       
-      @scala.inline
-      def setMaxfilesreached(value: /* files */ js.Array[DropzoneFile] => Unit): Self = StObject.set(x, "maxfilesreached", js.Any.fromFunction1(value))
+      inline def setMaxfilesreached(value: /* files */ js.Array[DropzoneFile] => Unit): Self = StObject.set(x, "maxfilesreached", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMaxfilesreachedUndefined: Self = StObject.set(x, "maxfilesreached", js.undefined)
+      inline def setMaxfilesreachedUndefined: Self = StObject.set(x, "maxfilesreached", js.undefined)
       
-      @scala.inline
-      def setMethod(value: (js.Function1[/* files */ js.Array[DropzoneFile], String]) | String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: (js.Function1[/* files */ js.Array[DropzoneFile], String]) | String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodFunction1(value: /* files */ js.Array[DropzoneFile] => String): Self = StObject.set(x, "method", js.Any.fromFunction1(value))
+      inline def setMethodFunction1(value: /* files */ js.Array[DropzoneFile] => String): Self = StObject.set(x, "method", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setParallelChunkUploads(value: Boolean): Self = StObject.set(x, "parallelChunkUploads", value.asInstanceOf[js.Any])
+      inline def setParallelChunkUploads(value: Boolean): Self = StObject.set(x, "parallelChunkUploads", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParallelChunkUploadsUndefined: Self = StObject.set(x, "parallelChunkUploads", js.undefined)
+      inline def setParallelChunkUploadsUndefined: Self = StObject.set(x, "parallelChunkUploads", js.undefined)
       
-      @scala.inline
-      def setParallelUploads(value: Double): Self = StObject.set(x, "parallelUploads", value.asInstanceOf[js.Any])
+      inline def setParallelUploads(value: Double): Self = StObject.set(x, "parallelUploads", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParallelUploadsUndefined: Self = StObject.set(x, "parallelUploads", js.undefined)
+      inline def setParallelUploadsUndefined: Self = StObject.set(x, "parallelUploads", js.undefined)
       
-      @scala.inline
-      def setParamName(value: String): Self = StObject.set(x, "paramName", value.asInstanceOf[js.Any])
+      inline def setParamName(value: String): Self = StObject.set(x, "paramName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamNameUndefined: Self = StObject.set(x, "paramName", js.undefined)
+      inline def setParamNameUndefined: Self = StObject.set(x, "paramName", js.undefined)
       
-      @scala.inline
-      def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
-      @scala.inline
-      def setPaste(value: /* e */ DragEvent => Unit): Self = StObject.set(x, "paste", js.Any.fromFunction1(value))
+      inline def setPaste(value: /* e */ DragEvent => Unit): Self = StObject.set(x, "paste", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPasteUndefined: Self = StObject.set(x, "paste", js.undefined)
+      inline def setPasteUndefined: Self = StObject.set(x, "paste", js.undefined)
       
-      @scala.inline
-      def setPreviewTemplate(value: String): Self = StObject.set(x, "previewTemplate", value.asInstanceOf[js.Any])
+      inline def setPreviewTemplate(value: String): Self = StObject.set(x, "previewTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewTemplateUndefined: Self = StObject.set(x, "previewTemplate", js.undefined)
+      inline def setPreviewTemplateUndefined: Self = StObject.set(x, "previewTemplate", js.undefined)
       
-      @scala.inline
-      def setPreviewsContainer(value: Boolean | String | HTMLElement): Self = StObject.set(x, "previewsContainer", value.asInstanceOf[js.Any])
+      inline def setPreviewsContainer(value: Boolean | String | HTMLElement): Self = StObject.set(x, "previewsContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewsContainerUndefined: Self = StObject.set(x, "previewsContainer", js.undefined)
+      inline def setPreviewsContainerUndefined: Self = StObject.set(x, "previewsContainer", js.undefined)
       
-      @scala.inline
-      def setProcessing(value: /* file */ DropzoneFile => Unit): Self = StObject.set(x, "processing", js.Any.fromFunction1(value))
+      inline def setProcessing(value: /* file */ DropzoneFile => Unit): Self = StObject.set(x, "processing", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProcessingUndefined: Self = StObject.set(x, "processing", js.undefined)
+      inline def setProcessingUndefined: Self = StObject.set(x, "processing", js.undefined)
       
-      @scala.inline
-      def setProcessingmultiple(value: /* files */ js.Array[DropzoneFile] => Unit): Self = StObject.set(x, "processingmultiple", js.Any.fromFunction1(value))
+      inline def setProcessingmultiple(value: /* files */ js.Array[DropzoneFile] => Unit): Self = StObject.set(x, "processingmultiple", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setProcessingmultipleUndefined: Self = StObject.set(x, "processingmultiple", js.undefined)
+      inline def setProcessingmultipleUndefined: Self = StObject.set(x, "processingmultiple", js.undefined)
       
-      @scala.inline
-      def setQueuecomplete(value: () => Unit): Self = StObject.set(x, "queuecomplete", js.Any.fromFunction0(value))
+      inline def setQueuecomplete(value: () => Unit): Self = StObject.set(x, "queuecomplete", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setQueuecompleteUndefined: Self = StObject.set(x, "queuecomplete", js.undefined)
+      inline def setQueuecompleteUndefined: Self = StObject.set(x, "queuecomplete", js.undefined)
       
-      @scala.inline
-      def setRemovedfile(value: /* file */ DropzoneFile => Unit): Self = StObject.set(x, "removedfile", js.Any.fromFunction1(value))
+      inline def setRemovedfile(value: /* file */ DropzoneFile => Unit): Self = StObject.set(x, "removedfile", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemovedfileUndefined: Self = StObject.set(x, "removedfile", js.undefined)
+      inline def setRemovedfileUndefined: Self = StObject.set(x, "removedfile", js.undefined)
       
-      @scala.inline
-      def setRenameFilename(value: /* name */ String => String): Self = StObject.set(x, "renameFilename", js.Any.fromFunction1(value))
+      inline def setRenameFilename(value: /* name */ String => String): Self = StObject.set(x, "renameFilename", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenameFilenameUndefined: Self = StObject.set(x, "renameFilename", js.undefined)
+      inline def setRenameFilenameUndefined: Self = StObject.set(x, "renameFilename", js.undefined)
       
-      @scala.inline
-      def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+      inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
+      inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
       
-      @scala.inline
-      def setResize(
+      inline def setResize(
         value: (/* file */ DropzoneFile, /* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double], /* resizeMethod */ js.UndefOr[String]) => DropzoneResizeInfo
       ): Self = StObject.set(x, "resize", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setResizeHeight(value: Double): Self = StObject.set(x, "resizeHeight", value.asInstanceOf[js.Any])
+      inline def setResizeHeight(value: Double): Self = StObject.set(x, "resizeHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeHeightUndefined: Self = StObject.set(x, "resizeHeight", js.undefined)
+      inline def setResizeHeightUndefined: Self = StObject.set(x, "resizeHeight", js.undefined)
       
-      @scala.inline
-      def setResizeMethod(value: contain | crop): Self = StObject.set(x, "resizeMethod", value.asInstanceOf[js.Any])
+      inline def setResizeMethod(value: contain | crop): Self = StObject.set(x, "resizeMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeMethodUndefined: Self = StObject.set(x, "resizeMethod", js.undefined)
+      inline def setResizeMethodUndefined: Self = StObject.set(x, "resizeMethod", js.undefined)
       
-      @scala.inline
-      def setResizeMimeType(value: String): Self = StObject.set(x, "resizeMimeType", value.asInstanceOf[js.Any])
+      inline def setResizeMimeType(value: String): Self = StObject.set(x, "resizeMimeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeMimeTypeUndefined: Self = StObject.set(x, "resizeMimeType", js.undefined)
+      inline def setResizeMimeTypeUndefined: Self = StObject.set(x, "resizeMimeType", js.undefined)
       
-      @scala.inline
-      def setResizeQuality(value: Double): Self = StObject.set(x, "resizeQuality", value.asInstanceOf[js.Any])
+      inline def setResizeQuality(value: Double): Self = StObject.set(x, "resizeQuality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeQualityUndefined: Self = StObject.set(x, "resizeQuality", js.undefined)
+      inline def setResizeQualityUndefined: Self = StObject.set(x, "resizeQuality", js.undefined)
       
-      @scala.inline
-      def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+      inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
       
-      @scala.inline
-      def setResizeWidth(value: Double): Self = StObject.set(x, "resizeWidth", value.asInstanceOf[js.Any])
+      inline def setResizeWidth(value: Double): Self = StObject.set(x, "resizeWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeWidthUndefined: Self = StObject.set(x, "resizeWidth", js.undefined)
+      inline def setResizeWidthUndefined: Self = StObject.set(x, "resizeWidth", js.undefined)
       
-      @scala.inline
-      def setRetryChunks(value: Boolean): Self = StObject.set(x, "retryChunks", value.asInstanceOf[js.Any])
+      inline def setRetryChunks(value: Boolean): Self = StObject.set(x, "retryChunks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryChunksLimit(value: Double): Self = StObject.set(x, "retryChunksLimit", value.asInstanceOf[js.Any])
+      inline def setRetryChunksLimit(value: Double): Self = StObject.set(x, "retryChunksLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetryChunksLimitUndefined: Self = StObject.set(x, "retryChunksLimit", js.undefined)
+      inline def setRetryChunksLimitUndefined: Self = StObject.set(x, "retryChunksLimit", js.undefined)
       
-      @scala.inline
-      def setRetryChunksUndefined: Self = StObject.set(x, "retryChunks", js.undefined)
+      inline def setRetryChunksUndefined: Self = StObject.set(x, "retryChunks", js.undefined)
       
-      @scala.inline
-      def setSending(value: (/* file */ DropzoneFile, /* xhr */ XMLHttpRequest, /* formData */ FormData) => Unit): Self = StObject.set(x, "sending", js.Any.fromFunction3(value))
+      inline def setSending(value: (/* file */ DropzoneFile, /* xhr */ XMLHttpRequest, /* formData */ FormData) => Unit): Self = StObject.set(x, "sending", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSendingUndefined: Self = StObject.set(x, "sending", js.undefined)
+      inline def setSendingUndefined: Self = StObject.set(x, "sending", js.undefined)
       
-      @scala.inline
-      def setSendingmultiple(
+      inline def setSendingmultiple(
         value: (/* files */ js.Array[DropzoneFile], /* xhr */ XMLHttpRequest, /* formData */ FormData) => Unit
       ): Self = StObject.set(x, "sendingmultiple", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSendingmultipleUndefined: Self = StObject.set(x, "sendingmultiple", js.undefined)
+      inline def setSendingmultipleUndefined: Self = StObject.set(x, "sendingmultiple", js.undefined)
       
-      @scala.inline
-      def setSuccess(value: /* file */ DropzoneFile => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+      inline def setSuccess(value: /* file */ DropzoneFile => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+      inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
       
-      @scala.inline
-      def setSuccessmultiple(value: (/* files */ js.Array[DropzoneFile], /* responseText */ String) => Unit): Self = StObject.set(x, "successmultiple", js.Any.fromFunction2(value))
+      inline def setSuccessmultiple(value: (/* files */ js.Array[DropzoneFile], /* responseText */ String) => Unit): Self = StObject.set(x, "successmultiple", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSuccessmultipleUndefined: Self = StObject.set(x, "successmultiple", js.undefined)
+      inline def setSuccessmultipleUndefined: Self = StObject.set(x, "successmultiple", js.undefined)
       
-      @scala.inline
-      def setThumbnail(value: (/* file */ DropzoneFile, /* dataUrl */ String) => Unit): Self = StObject.set(x, "thumbnail", js.Any.fromFunction2(value))
+      inline def setThumbnail(value: (/* file */ DropzoneFile, /* dataUrl */ String) => Unit): Self = StObject.set(x, "thumbnail", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setThumbnailHeight(value: Double): Self = StObject.set(x, "thumbnailHeight", value.asInstanceOf[js.Any])
+      inline def setThumbnailHeight(value: Double): Self = StObject.set(x, "thumbnailHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnailHeightUndefined: Self = StObject.set(x, "thumbnailHeight", js.undefined)
+      inline def setThumbnailHeightUndefined: Self = StObject.set(x, "thumbnailHeight", js.undefined)
       
-      @scala.inline
-      def setThumbnailMethod(value: contain | crop): Self = StObject.set(x, "thumbnailMethod", value.asInstanceOf[js.Any])
+      inline def setThumbnailMethod(value: contain | crop): Self = StObject.set(x, "thumbnailMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnailMethodUndefined: Self = StObject.set(x, "thumbnailMethod", js.undefined)
+      inline def setThumbnailMethodUndefined: Self = StObject.set(x, "thumbnailMethod", js.undefined)
       
-      @scala.inline
-      def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
+      inline def setThumbnailUndefined: Self = StObject.set(x, "thumbnail", js.undefined)
       
-      @scala.inline
-      def setThumbnailWidth(value: Double): Self = StObject.set(x, "thumbnailWidth", value.asInstanceOf[js.Any])
+      inline def setThumbnailWidth(value: Double): Self = StObject.set(x, "thumbnailWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnailWidthUndefined: Self = StObject.set(x, "thumbnailWidth", js.undefined)
+      inline def setThumbnailWidthUndefined: Self = StObject.set(x, "thumbnailWidth", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
       
-      @scala.inline
-      def setTotaluploadprogress(value: (/* totalProgress */ Double, /* totalBytes */ Double, /* totalBytesSent */ Double) => Unit): Self = StObject.set(x, "totaluploadprogress", js.Any.fromFunction3(value))
+      inline def setTotaluploadprogress(value: (/* totalProgress */ Double, /* totalBytes */ Double, /* totalBytesSent */ Double) => Unit): Self = StObject.set(x, "totaluploadprogress", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setTotaluploadprogressUndefined: Self = StObject.set(x, "totaluploadprogress", js.undefined)
+      inline def setTotaluploadprogressUndefined: Self = StObject.set(x, "totaluploadprogress", js.undefined)
       
-      @scala.inline
-      def setTransformFile(value: (/* file */ DropzoneFile, /* done */ js.Function1[/* file */ String | Blob, Unit]) => Unit): Self = StObject.set(x, "transformFile", js.Any.fromFunction2(value))
+      inline def setTransformFile(value: (/* file */ DropzoneFile, /* done */ js.Function1[/* file */ String | Blob, Unit]) => Unit): Self = StObject.set(x, "transformFile", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setTransformFileUndefined: Self = StObject.set(x, "transformFile", js.undefined)
+      inline def setTransformFileUndefined: Self = StObject.set(x, "transformFile", js.undefined)
       
-      @scala.inline
-      def setUploadMultiple(value: Boolean): Self = StObject.set(x, "uploadMultiple", value.asInstanceOf[js.Any])
+      inline def setUploadMultiple(value: Boolean): Self = StObject.set(x, "uploadMultiple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUploadMultipleUndefined: Self = StObject.set(x, "uploadMultiple", js.undefined)
+      inline def setUploadMultipleUndefined: Self = StObject.set(x, "uploadMultiple", js.undefined)
       
-      @scala.inline
-      def setUploadprogress(value: (/* file */ DropzoneFile, /* progress */ Double, /* bytesSent */ Double) => Unit): Self = StObject.set(x, "uploadprogress", js.Any.fromFunction3(value))
+      inline def setUploadprogress(value: (/* file */ DropzoneFile, /* progress */ Double, /* bytesSent */ Double) => Unit): Self = StObject.set(x, "uploadprogress", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setUploadprogressUndefined: Self = StObject.set(x, "uploadprogress", js.undefined)
+      inline def setUploadprogressUndefined: Self = StObject.set(x, "uploadprogress", js.undefined)
       
-      @scala.inline
-      def setUrl(value: (js.Function1[/* files */ js.Array[DropzoneFile], String]) | String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: (js.Function1[/* files */ js.Array[DropzoneFile], String]) | String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlFunction1(value: /* files */ js.Array[DropzoneFile] => String): Self = StObject.set(x, "url", js.Any.fromFunction1(value))
+      inline def setUrlFunction1(value: /* files */ js.Array[DropzoneFile] => String): Self = StObject.set(x, "url", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
       
-      @scala.inline
-      def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
+      inline def setWithCredentials(value: Boolean): Self = StObject.set(x, "withCredentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
+      inline def setWithCredentialsUndefined: Self = StObject.set(x, "withCredentials", js.undefined)
     }
   }
   
@@ -1713,62 +1475,44 @@ object mod {
   }
   object DropzoneResizeInfo {
     
-    @scala.inline
-    def apply(): DropzoneResizeInfo = {
+    inline def apply(): DropzoneResizeInfo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DropzoneResizeInfo]
     }
     
-    @scala.inline
-    implicit class DropzoneResizeInfoMutableBuilder[Self <: DropzoneResizeInfo] (val x: Self) extends AnyVal {
+    extension [Self <: DropzoneResizeInfo](x: Self) {
       
-      @scala.inline
-      def setSrcHeight(value: Double): Self = StObject.set(x, "srcHeight", value.asInstanceOf[js.Any])
+      inline def setSrcHeight(value: Double): Self = StObject.set(x, "srcHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcHeightUndefined: Self = StObject.set(x, "srcHeight", js.undefined)
+      inline def setSrcHeightUndefined: Self = StObject.set(x, "srcHeight", js.undefined)
       
-      @scala.inline
-      def setSrcWidth(value: Double): Self = StObject.set(x, "srcWidth", value.asInstanceOf[js.Any])
+      inline def setSrcWidth(value: Double): Self = StObject.set(x, "srcWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcWidthUndefined: Self = StObject.set(x, "srcWidth", js.undefined)
+      inline def setSrcWidthUndefined: Self = StObject.set(x, "srcWidth", js.undefined)
       
-      @scala.inline
-      def setSrcX(value: Double): Self = StObject.set(x, "srcX", value.asInstanceOf[js.Any])
+      inline def setSrcX(value: Double): Self = StObject.set(x, "srcX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcXUndefined: Self = StObject.set(x, "srcX", js.undefined)
+      inline def setSrcXUndefined: Self = StObject.set(x, "srcX", js.undefined)
       
-      @scala.inline
-      def setSrcY(value: Double): Self = StObject.set(x, "srcY", value.asInstanceOf[js.Any])
+      inline def setSrcY(value: Double): Self = StObject.set(x, "srcY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcYUndefined: Self = StObject.set(x, "srcY", js.undefined)
+      inline def setSrcYUndefined: Self = StObject.set(x, "srcY", js.undefined)
       
-      @scala.inline
-      def setTrgHeight(value: Double): Self = StObject.set(x, "trgHeight", value.asInstanceOf[js.Any])
+      inline def setTrgHeight(value: Double): Self = StObject.set(x, "trgHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrgHeightUndefined: Self = StObject.set(x, "trgHeight", js.undefined)
+      inline def setTrgHeightUndefined: Self = StObject.set(x, "trgHeight", js.undefined)
       
-      @scala.inline
-      def setTrgWidth(value: Double): Self = StObject.set(x, "trgWidth", value.asInstanceOf[js.Any])
+      inline def setTrgWidth(value: Double): Self = StObject.set(x, "trgWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrgWidthUndefined: Self = StObject.set(x, "trgWidth", js.undefined)
+      inline def setTrgWidthUndefined: Self = StObject.set(x, "trgWidth", js.undefined)
       
-      @scala.inline
-      def setTrgX(value: Double): Self = StObject.set(x, "trgX", value.asInstanceOf[js.Any])
+      inline def setTrgX(value: Double): Self = StObject.set(x, "trgX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrgXUndefined: Self = StObject.set(x, "trgX", js.undefined)
+      inline def setTrgXUndefined: Self = StObject.set(x, "trgX", js.undefined)
       
-      @scala.inline
-      def setTrgY(value: Double): Self = StObject.set(x, "trgY", value.asInstanceOf[js.Any])
+      inline def setTrgY(value: Double): Self = StObject.set(x, "trgY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrgYUndefined: Self = StObject.set(x, "trgY", js.undefined)
+      inline def setTrgYUndefined: Self = StObject.set(x, "trgY", js.undefined)
     }
   }
   
@@ -1780,17 +1524,14 @@ object mod {
     }
     object HTMLElement {
       
-      @scala.inline
-      def apply(dropzone: Dropzone): HTMLElement = {
+      inline def apply(dropzone: Dropzone): HTMLElement = {
         val __obj = js.Dynamic.literal(dropzone = dropzone.asInstanceOf[js.Any])
         __obj.asInstanceOf[HTMLElement]
       }
       
-      @scala.inline
-      implicit class HTMLElementMutableBuilder[Self <: HTMLElement] (val x: Self) extends AnyVal {
+      extension [Self <: HTMLElement](x: Self) {
         
-        @scala.inline
-        def setDropzone(value: Dropzone): Self = StObject.set(x, "dropzone", value.asInstanceOf[js.Any])
+        inline def setDropzone(value: Dropzone): Self = StObject.set(x, "dropzone", value.asInstanceOf[js.Any])
       }
     }
     
@@ -1800,17 +1541,14 @@ object mod {
     }
     object JQuery {
       
-      @scala.inline
-      def apply(dropzone: DropzoneOptions => Dropzone): JQuery = {
+      inline def apply(dropzone: DropzoneOptions => Dropzone): JQuery = {
         val __obj = js.Dynamic.literal(dropzone = js.Any.fromFunction1(dropzone))
         __obj.asInstanceOf[JQuery]
       }
       
-      @scala.inline
-      implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+      extension [Self <: JQuery](x: Self) {
         
-        @scala.inline
-        def setDropzone(value: DropzoneOptions => Dropzone): Self = StObject.set(x, "dropzone", js.Any.fromFunction1(value))
+        inline def setDropzone(value: DropzoneOptions => Dropzone): Self = StObject.set(x, "dropzone", js.Any.fromFunction1(value))
       }
     }
   }

@@ -40,49 +40,35 @@ trait JobError extends StObject {
 }
 object JobError {
   
-  @scala.inline
-  def apply(Code: Code, Message: string): JobError = {
+  inline def apply(Code: Code, Message: string): JobError = {
     val __obj = js.Dynamic.literal(Code = Code.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobError]
   }
   
-  @scala.inline
-  implicit class JobErrorMutableBuilder[Self <: JobError] (val x: Self) extends AnyVal {
+  extension [Self <: JobError](x: Self) {
     
-    @scala.inline
-    def setCode(value: Code): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Code): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetails(value: Details): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
+    inline def setDetails(value: Details): Self = StObject.set(x, "Details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailsUndefined: Self = StObject.set(x, "Details", js.undefined)
+    inline def setDetailsUndefined: Self = StObject.set(x, "Details", js.undefined)
     
-    @scala.inline
-    def setLimitName(value: JobErrorLimitName): Self = StObject.set(x, "LimitName", value.asInstanceOf[js.Any])
+    inline def setLimitName(value: JobErrorLimitName): Self = StObject.set(x, "LimitName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitNameUndefined: Self = StObject.set(x, "LimitName", js.undefined)
+    inline def setLimitNameUndefined: Self = StObject.set(x, "LimitName", js.undefined)
     
-    @scala.inline
-    def setLimitValue(value: double): Self = StObject.set(x, "LimitValue", value.asInstanceOf[js.Any])
+    inline def setLimitValue(value: double): Self = StObject.set(x, "LimitValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitValueUndefined: Self = StObject.set(x, "LimitValue", js.undefined)
+    inline def setLimitValueUndefined: Self = StObject.set(x, "LimitValue", js.undefined)
     
-    @scala.inline
-    def setMessage(value: string): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: string): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceId(value: string): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: string): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: JobErrorResourceTypes): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: JobErrorResourceTypes): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
   }
 }

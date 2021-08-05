@@ -18,28 +18,21 @@ trait GetEnabledStandardsResponse extends StObject {
 }
 object GetEnabledStandardsResponse {
   
-  @scala.inline
-  def apply(): GetEnabledStandardsResponse = {
+  inline def apply(): GetEnabledStandardsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetEnabledStandardsResponse]
   }
   
-  @scala.inline
-  implicit class GetEnabledStandardsResponseMutableBuilder[Self <: GetEnabledStandardsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetEnabledStandardsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStandardsSubscriptions(value: StandardsSubscriptions): Self = StObject.set(x, "StandardsSubscriptions", value.asInstanceOf[js.Any])
+    inline def setStandardsSubscriptions(value: StandardsSubscriptions): Self = StObject.set(x, "StandardsSubscriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandardsSubscriptionsUndefined: Self = StObject.set(x, "StandardsSubscriptions", js.undefined)
+    inline def setStandardsSubscriptionsUndefined: Self = StObject.set(x, "StandardsSubscriptions", js.undefined)
     
-    @scala.inline
-    def setStandardsSubscriptionsVarargs(value: StandardsSubscription*): Self = StObject.set(x, "StandardsSubscriptions", js.Array(value :_*))
+    inline def setStandardsSubscriptionsVarargs(value: StandardsSubscription*): Self = StObject.set(x, "StandardsSubscriptions", js.Array(value :_*))
   }
 }

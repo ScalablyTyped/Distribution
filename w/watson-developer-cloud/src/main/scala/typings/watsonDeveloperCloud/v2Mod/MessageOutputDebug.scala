@@ -21,43 +21,31 @@ trait MessageOutputDebug extends StObject {
 }
 object MessageOutputDebug {
   
-  @scala.inline
-  def apply(): MessageOutputDebug = {
+  inline def apply(): MessageOutputDebug = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MessageOutputDebug]
   }
   
-  @scala.inline
-  implicit class MessageOutputDebugMutableBuilder[Self <: MessageOutputDebug] (val x: Self) extends AnyVal {
+  extension [Self <: MessageOutputDebug](x: Self) {
     
-    @scala.inline
-    def setBranch_exited(value: Boolean): Self = StObject.set(x, "branch_exited", value.asInstanceOf[js.Any])
+    inline def setBranch_exited(value: Boolean): Self = StObject.set(x, "branch_exited", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranch_exitedUndefined: Self = StObject.set(x, "branch_exited", js.undefined)
+    inline def setBranch_exitedUndefined: Self = StObject.set(x, "branch_exited", js.undefined)
     
-    @scala.inline
-    def setBranch_exited_reason(value: String): Self = StObject.set(x, "branch_exited_reason", value.asInstanceOf[js.Any])
+    inline def setBranch_exited_reason(value: String): Self = StObject.set(x, "branch_exited_reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranch_exited_reasonUndefined: Self = StObject.set(x, "branch_exited_reason", js.undefined)
+    inline def setBranch_exited_reasonUndefined: Self = StObject.set(x, "branch_exited_reason", js.undefined)
     
-    @scala.inline
-    def setLog_messages(value: js.Array[DialogLogMessage]): Self = StObject.set(x, "log_messages", value.asInstanceOf[js.Any])
+    inline def setLog_messages(value: js.Array[DialogLogMessage]): Self = StObject.set(x, "log_messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLog_messagesUndefined: Self = StObject.set(x, "log_messages", js.undefined)
+    inline def setLog_messagesUndefined: Self = StObject.set(x, "log_messages", js.undefined)
     
-    @scala.inline
-    def setLog_messagesVarargs(value: DialogLogMessage*): Self = StObject.set(x, "log_messages", js.Array(value :_*))
+    inline def setLog_messagesVarargs(value: DialogLogMessage*): Self = StObject.set(x, "log_messages", js.Array(value :_*))
     
-    @scala.inline
-    def setNodes_visited(value: js.Array[DialogNodesVisited]): Self = StObject.set(x, "nodes_visited", value.asInstanceOf[js.Any])
+    inline def setNodes_visited(value: js.Array[DialogNodesVisited]): Self = StObject.set(x, "nodes_visited", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodes_visitedUndefined: Self = StObject.set(x, "nodes_visited", js.undefined)
+    inline def setNodes_visitedUndefined: Self = StObject.set(x, "nodes_visited", js.undefined)
     
-    @scala.inline
-    def setNodes_visitedVarargs(value: DialogNodesVisited*): Self = StObject.set(x, "nodes_visited", js.Array(value :_*))
+    inline def setNodes_visitedVarargs(value: DialogNodesVisited*): Self = StObject.set(x, "nodes_visited", js.Array(value :_*))
   }
 }

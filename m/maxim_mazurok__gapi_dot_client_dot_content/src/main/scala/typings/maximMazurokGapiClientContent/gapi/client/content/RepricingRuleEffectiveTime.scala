@@ -11,22 +11,17 @@ trait RepricingRuleEffectiveTime extends StObject {
 }
 object RepricingRuleEffectiveTime {
   
-  @scala.inline
-  def apply(): RepricingRuleEffectiveTime = {
+  inline def apply(): RepricingRuleEffectiveTime = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RepricingRuleEffectiveTime]
   }
   
-  @scala.inline
-  implicit class RepricingRuleEffectiveTimeMutableBuilder[Self <: RepricingRuleEffectiveTime] (val x: Self) extends AnyVal {
+  extension [Self <: RepricingRuleEffectiveTime](x: Self) {
     
-    @scala.inline
-    def setFixedTimePeriods(value: js.Array[RepricingRuleEffectiveTimeFixedTimePeriod]): Self = StObject.set(x, "fixedTimePeriods", value.asInstanceOf[js.Any])
+    inline def setFixedTimePeriods(value: js.Array[RepricingRuleEffectiveTimeFixedTimePeriod]): Self = StObject.set(x, "fixedTimePeriods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedTimePeriodsUndefined: Self = StObject.set(x, "fixedTimePeriods", js.undefined)
+    inline def setFixedTimePeriodsUndefined: Self = StObject.set(x, "fixedTimePeriods", js.undefined)
     
-    @scala.inline
-    def setFixedTimePeriodsVarargs(value: RepricingRuleEffectiveTimeFixedTimePeriod*): Self = StObject.set(x, "fixedTimePeriods", js.Array(value :_*))
+    inline def setFixedTimePeriodsVarargs(value: RepricingRuleEffectiveTimeFixedTimePeriod*): Self = StObject.set(x, "fixedTimePeriods", js.Array(value :_*))
   }
 }

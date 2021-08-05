@@ -20,8 +20,7 @@ trait IPlayReadyLicenseAcquisitionServiceRequest
 }
 object IPlayReadyLicenseAcquisitionServiceRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     beginServiceRequest: () => IAsyncAction,
     challengeCustomData: String,
     contentHeader: PlayReadyContentHeader,
@@ -39,13 +38,10 @@ object IPlayReadyLicenseAcquisitionServiceRequest {
     __obj.asInstanceOf[IPlayReadyLicenseAcquisitionServiceRequest]
   }
   
-  @scala.inline
-  implicit class IPlayReadyLicenseAcquisitionServiceRequestMutableBuilder[Self <: IPlayReadyLicenseAcquisitionServiceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IPlayReadyLicenseAcquisitionServiceRequest](x: Self) {
     
-    @scala.inline
-    def setContentHeader(value: PlayReadyContentHeader): Self = StObject.set(x, "contentHeader", value.asInstanceOf[js.Any])
+    inline def setContentHeader(value: PlayReadyContentHeader): Self = StObject.set(x, "contentHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainServiceId(value: String): Self = StObject.set(x, "domainServiceId", value.asInstanceOf[js.Any])
+    inline def setDomainServiceId(value: String): Self = StObject.set(x, "domainServiceId", value.asInstanceOf[js.Any])
   }
 }

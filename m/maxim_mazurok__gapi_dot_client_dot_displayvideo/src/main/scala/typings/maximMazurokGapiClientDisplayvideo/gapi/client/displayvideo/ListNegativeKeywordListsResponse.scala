@@ -17,28 +17,21 @@ trait ListNegativeKeywordListsResponse extends StObject {
 }
 object ListNegativeKeywordListsResponse {
   
-  @scala.inline
-  def apply(): ListNegativeKeywordListsResponse = {
+  inline def apply(): ListNegativeKeywordListsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListNegativeKeywordListsResponse]
   }
   
-  @scala.inline
-  implicit class ListNegativeKeywordListsResponseMutableBuilder[Self <: ListNegativeKeywordListsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListNegativeKeywordListsResponse](x: Self) {
     
-    @scala.inline
-    def setNegativeKeywordLists(value: js.Array[NegativeKeywordList]): Self = StObject.set(x, "negativeKeywordLists", value.asInstanceOf[js.Any])
+    inline def setNegativeKeywordLists(value: js.Array[NegativeKeywordList]): Self = StObject.set(x, "negativeKeywordLists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegativeKeywordListsUndefined: Self = StObject.set(x, "negativeKeywordLists", js.undefined)
+    inline def setNegativeKeywordListsUndefined: Self = StObject.set(x, "negativeKeywordLists", js.undefined)
     
-    @scala.inline
-    def setNegativeKeywordListsVarargs(value: NegativeKeywordList*): Self = StObject.set(x, "negativeKeywordLists", js.Array(value :_*))
+    inline def setNegativeKeywordListsVarargs(value: NegativeKeywordList*): Self = StObject.set(x, "negativeKeywordLists", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

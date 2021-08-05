@@ -12,16 +12,13 @@ trait CcrPauseAutoFollowPattern
 }
 object CcrPauseAutoFollowPattern {
   
-  @scala.inline
-  def apply(name: String): CcrPauseAutoFollowPattern = {
+  inline def apply(name: String): CcrPauseAutoFollowPattern = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CcrPauseAutoFollowPattern]
   }
   
-  @scala.inline
-  implicit class CcrPauseAutoFollowPatternMutableBuilder[Self <: CcrPauseAutoFollowPattern] (val x: Self) extends AnyVal {
+  extension [Self <: CcrPauseAutoFollowPattern](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

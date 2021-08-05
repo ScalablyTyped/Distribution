@@ -23,31 +23,23 @@ trait RemixSettings extends StObject {
 }
 object RemixSettings {
   
-  @scala.inline
-  def apply(): RemixSettings = {
+  inline def apply(): RemixSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RemixSettings]
   }
   
-  @scala.inline
-  implicit class RemixSettingsMutableBuilder[Self <: RemixSettings] (val x: Self) extends AnyVal {
+  extension [Self <: RemixSettings](x: Self) {
     
-    @scala.inline
-    def setChannelMapping(value: ChannelMapping): Self = StObject.set(x, "ChannelMapping", value.asInstanceOf[js.Any])
+    inline def setChannelMapping(value: ChannelMapping): Self = StObject.set(x, "ChannelMapping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelMappingUndefined: Self = StObject.set(x, "ChannelMapping", js.undefined)
+    inline def setChannelMappingUndefined: Self = StObject.set(x, "ChannelMapping", js.undefined)
     
-    @scala.inline
-    def setChannelsIn(value: integerMin1Max64): Self = StObject.set(x, "ChannelsIn", value.asInstanceOf[js.Any])
+    inline def setChannelsIn(value: integerMin1Max64): Self = StObject.set(x, "ChannelsIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelsInUndefined: Self = StObject.set(x, "ChannelsIn", js.undefined)
+    inline def setChannelsInUndefined: Self = StObject.set(x, "ChannelsIn", js.undefined)
     
-    @scala.inline
-    def setChannelsOut(value: integerMin1Max64): Self = StObject.set(x, "ChannelsOut", value.asInstanceOf[js.Any])
+    inline def setChannelsOut(value: integerMin1Max64): Self = StObject.set(x, "ChannelsOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelsOutUndefined: Self = StObject.set(x, "ChannelsOut", js.undefined)
+    inline def setChannelsOutUndefined: Self = StObject.set(x, "ChannelsOut", js.undefined)
   }
 }

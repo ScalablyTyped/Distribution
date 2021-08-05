@@ -18,6 +18,5 @@ object global {
   @JSGlobal("Auth0Lock")
   @js.native
   def Auth0Lock: Auth0LockStatic = js.native
-  @scala.inline
-  def Auth0Lock_=(x: Auth0LockStatic): Unit = js.Dynamic.global.updateDynamic("Auth0Lock")(x.asInstanceOf[js.Any])
+  inline def Auth0Lock_=(x: Auth0LockStatic): Unit = js.Dynamic.global.updateDynamic("Auth0Lock")(x.asInstanceOf[js.Any])
 }

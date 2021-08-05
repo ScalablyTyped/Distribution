@@ -19,25 +19,19 @@ trait ReadonlySliderChangeEvent extends StObject {
 }
 object ReadonlySliderChangeEvent {
   
-  @scala.inline
-  def apply(interaction: Boolean, previousActive: Double, slider: Slider, step: SliderStep): ReadonlySliderChangeEvent = {
+  inline def apply(interaction: Boolean, previousActive: Double, slider: Slider, step: SliderStep): ReadonlySliderChangeEvent = {
     val __obj = js.Dynamic.literal(interaction = interaction.asInstanceOf[js.Any], previousActive = previousActive.asInstanceOf[js.Any], slider = slider.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlySliderChangeEvent]
   }
   
-  @scala.inline
-  implicit class ReadonlySliderChangeEventMutableBuilder[Self <: ReadonlySliderChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlySliderChangeEvent](x: Self) {
     
-    @scala.inline
-    def setInteraction(value: Boolean): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
+    inline def setInteraction(value: Boolean): Self = StObject.set(x, "interaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousActive(value: Double): Self = StObject.set(x, "previousActive", value.asInstanceOf[js.Any])
+    inline def setPreviousActive(value: Double): Self = StObject.set(x, "previousActive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlider(value: Slider): Self = StObject.set(x, "slider", value.asInstanceOf[js.Any])
+    inline def setSlider(value: Slider): Self = StObject.set(x, "slider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStep(value: SliderStep): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: SliderStep): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
   }
 }

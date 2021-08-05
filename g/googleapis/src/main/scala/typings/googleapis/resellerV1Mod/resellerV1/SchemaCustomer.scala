@@ -66,61 +66,43 @@ trait SchemaCustomer extends StObject {
 }
 object SchemaCustomer {
   
-  @scala.inline
-  def apply(): SchemaCustomer = {
+  inline def apply(): SchemaCustomer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCustomer]
   }
   
-  @scala.inline
-  implicit class SchemaCustomerMutableBuilder[Self <: SchemaCustomer] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCustomer](x: Self) {
     
-    @scala.inline
-    def setAlternateEmail(value: String): Self = StObject.set(x, "alternateEmail", value.asInstanceOf[js.Any])
+    inline def setAlternateEmail(value: String): Self = StObject.set(x, "alternateEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlternateEmailUndefined: Self = StObject.set(x, "alternateEmail", js.undefined)
+    inline def setAlternateEmailUndefined: Self = StObject.set(x, "alternateEmail", js.undefined)
     
-    @scala.inline
-    def setCustomerDomain(value: String): Self = StObject.set(x, "customerDomain", value.asInstanceOf[js.Any])
+    inline def setCustomerDomain(value: String): Self = StObject.set(x, "customerDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerDomainUndefined: Self = StObject.set(x, "customerDomain", js.undefined)
+    inline def setCustomerDomainUndefined: Self = StObject.set(x, "customerDomain", js.undefined)
     
-    @scala.inline
-    def setCustomerDomainVerified(value: Boolean): Self = StObject.set(x, "customerDomainVerified", value.asInstanceOf[js.Any])
+    inline def setCustomerDomainVerified(value: Boolean): Self = StObject.set(x, "customerDomainVerified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerDomainVerifiedUndefined: Self = StObject.set(x, "customerDomainVerified", js.undefined)
+    inline def setCustomerDomainVerifiedUndefined: Self = StObject.set(x, "customerDomainVerified", js.undefined)
     
-    @scala.inline
-    def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
+    inline def setCustomerId(value: String): Self = StObject.set(x, "customerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
+    inline def setCustomerIdUndefined: Self = StObject.set(x, "customerId", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
+    inline def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
+    inline def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
     
-    @scala.inline
-    def setPostalAddress(value: SchemaAddress): Self = StObject.set(x, "postalAddress", value.asInstanceOf[js.Any])
+    inline def setPostalAddress(value: SchemaAddress): Self = StObject.set(x, "postalAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostalAddressUndefined: Self = StObject.set(x, "postalAddress", js.undefined)
+    inline def setPostalAddressUndefined: Self = StObject.set(x, "postalAddress", js.undefined)
     
-    @scala.inline
-    def setResourceUiUrl(value: String): Self = StObject.set(x, "resourceUiUrl", value.asInstanceOf[js.Any])
+    inline def setResourceUiUrl(value: String): Self = StObject.set(x, "resourceUiUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUiUrlUndefined: Self = StObject.set(x, "resourceUiUrl", js.undefined)
+    inline def setResourceUiUrlUndefined: Self = StObject.set(x, "resourceUiUrl", js.undefined)
   }
 }

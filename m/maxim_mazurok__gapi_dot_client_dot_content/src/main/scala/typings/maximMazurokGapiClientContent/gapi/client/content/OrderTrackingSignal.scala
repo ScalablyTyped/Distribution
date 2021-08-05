@@ -41,82 +41,57 @@ trait OrderTrackingSignal extends StObject {
 }
 object OrderTrackingSignal {
   
-  @scala.inline
-  def apply(): OrderTrackingSignal = {
+  inline def apply(): OrderTrackingSignal = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrderTrackingSignal]
   }
   
-  @scala.inline
-  implicit class OrderTrackingSignalMutableBuilder[Self <: OrderTrackingSignal] (val x: Self) extends AnyVal {
+  extension [Self <: OrderTrackingSignal](x: Self) {
     
-    @scala.inline
-    def setCustomerShippingFee(value: PriceAmount): Self = StObject.set(x, "customerShippingFee", value.asInstanceOf[js.Any])
+    inline def setCustomerShippingFee(value: PriceAmount): Self = StObject.set(x, "customerShippingFee", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerShippingFeeUndefined: Self = StObject.set(x, "customerShippingFee", js.undefined)
+    inline def setCustomerShippingFeeUndefined: Self = StObject.set(x, "customerShippingFee", js.undefined)
     
-    @scala.inline
-    def setDeliveryPostalCode(value: String): Self = StObject.set(x, "deliveryPostalCode", value.asInstanceOf[js.Any])
+    inline def setDeliveryPostalCode(value: String): Self = StObject.set(x, "deliveryPostalCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryPostalCodeUndefined: Self = StObject.set(x, "deliveryPostalCode", js.undefined)
+    inline def setDeliveryPostalCodeUndefined: Self = StObject.set(x, "deliveryPostalCode", js.undefined)
     
-    @scala.inline
-    def setDeliveryRegionCode(value: String): Self = StObject.set(x, "deliveryRegionCode", value.asInstanceOf[js.Any])
+    inline def setDeliveryRegionCode(value: String): Self = StObject.set(x, "deliveryRegionCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryRegionCodeUndefined: Self = StObject.set(x, "deliveryRegionCode", js.undefined)
+    inline def setDeliveryRegionCodeUndefined: Self = StObject.set(x, "deliveryRegionCode", js.undefined)
     
-    @scala.inline
-    def setLineItems(value: js.Array[OrderTrackingSignalLineItemDetails]): Self = StObject.set(x, "lineItems", value.asInstanceOf[js.Any])
+    inline def setLineItems(value: js.Array[OrderTrackingSignalLineItemDetails]): Self = StObject.set(x, "lineItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineItemsUndefined: Self = StObject.set(x, "lineItems", js.undefined)
+    inline def setLineItemsUndefined: Self = StObject.set(x, "lineItems", js.undefined)
     
-    @scala.inline
-    def setLineItemsVarargs(value: OrderTrackingSignalLineItemDetails*): Self = StObject.set(x, "lineItems", js.Array(value :_*))
+    inline def setLineItemsVarargs(value: OrderTrackingSignalLineItemDetails*): Self = StObject.set(x, "lineItems", js.Array(value :_*))
     
-    @scala.inline
-    def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
+    inline def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
+    inline def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
     
-    @scala.inline
-    def setOrderCreatedTime(value: DateTime): Self = StObject.set(x, "orderCreatedTime", value.asInstanceOf[js.Any])
+    inline def setOrderCreatedTime(value: DateTime): Self = StObject.set(x, "orderCreatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderCreatedTimeUndefined: Self = StObject.set(x, "orderCreatedTime", js.undefined)
+    inline def setOrderCreatedTimeUndefined: Self = StObject.set(x, "orderCreatedTime", js.undefined)
     
-    @scala.inline
-    def setOrderId(value: String): Self = StObject.set(x, "orderId", value.asInstanceOf[js.Any])
+    inline def setOrderId(value: String): Self = StObject.set(x, "orderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderIdUndefined: Self = StObject.set(x, "orderId", js.undefined)
+    inline def setOrderIdUndefined: Self = StObject.set(x, "orderId", js.undefined)
     
-    @scala.inline
-    def setOrderTrackingSignalId(value: String): Self = StObject.set(x, "orderTrackingSignalId", value.asInstanceOf[js.Any])
+    inline def setOrderTrackingSignalId(value: String): Self = StObject.set(x, "orderTrackingSignalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderTrackingSignalIdUndefined: Self = StObject.set(x, "orderTrackingSignalId", js.undefined)
+    inline def setOrderTrackingSignalIdUndefined: Self = StObject.set(x, "orderTrackingSignalId", js.undefined)
     
-    @scala.inline
-    def setShipmentLineItemMapping(value: js.Array[OrderTrackingSignalShipmentLineItemMapping]): Self = StObject.set(x, "shipmentLineItemMapping", value.asInstanceOf[js.Any])
+    inline def setShipmentLineItemMapping(value: js.Array[OrderTrackingSignalShipmentLineItemMapping]): Self = StObject.set(x, "shipmentLineItemMapping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShipmentLineItemMappingUndefined: Self = StObject.set(x, "shipmentLineItemMapping", js.undefined)
+    inline def setShipmentLineItemMappingUndefined: Self = StObject.set(x, "shipmentLineItemMapping", js.undefined)
     
-    @scala.inline
-    def setShipmentLineItemMappingVarargs(value: OrderTrackingSignalShipmentLineItemMapping*): Self = StObject.set(x, "shipmentLineItemMapping", js.Array(value :_*))
+    inline def setShipmentLineItemMappingVarargs(value: OrderTrackingSignalShipmentLineItemMapping*): Self = StObject.set(x, "shipmentLineItemMapping", js.Array(value :_*))
     
-    @scala.inline
-    def setShippingInfo(value: js.Array[OrderTrackingSignalShippingInfo]): Self = StObject.set(x, "shippingInfo", value.asInstanceOf[js.Any])
+    inline def setShippingInfo(value: js.Array[OrderTrackingSignalShippingInfo]): Self = StObject.set(x, "shippingInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingInfoUndefined: Self = StObject.set(x, "shippingInfo", js.undefined)
+    inline def setShippingInfoUndefined: Self = StObject.set(x, "shippingInfo", js.undefined)
     
-    @scala.inline
-    def setShippingInfoVarargs(value: OrderTrackingSignalShippingInfo*): Self = StObject.set(x, "shippingInfo", js.Array(value :_*))
+    inline def setShippingInfoVarargs(value: OrderTrackingSignalShippingInfo*): Self = StObject.set(x, "shippingInfo", js.Array(value :_*))
   }
 }

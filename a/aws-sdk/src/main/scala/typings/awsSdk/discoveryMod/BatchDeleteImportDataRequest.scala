@@ -13,19 +13,15 @@ trait BatchDeleteImportDataRequest extends StObject {
 }
 object BatchDeleteImportDataRequest {
   
-  @scala.inline
-  def apply(importTaskIds: ToDeleteIdentifierList): BatchDeleteImportDataRequest = {
+  inline def apply(importTaskIds: ToDeleteIdentifierList): BatchDeleteImportDataRequest = {
     val __obj = js.Dynamic.literal(importTaskIds = importTaskIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchDeleteImportDataRequest]
   }
   
-  @scala.inline
-  implicit class BatchDeleteImportDataRequestMutableBuilder[Self <: BatchDeleteImportDataRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDeleteImportDataRequest](x: Self) {
     
-    @scala.inline
-    def setImportTaskIds(value: ToDeleteIdentifierList): Self = StObject.set(x, "importTaskIds", value.asInstanceOf[js.Any])
+    inline def setImportTaskIds(value: ToDeleteIdentifierList): Self = StObject.set(x, "importTaskIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportTaskIdsVarargs(value: ImportTaskIdentifier*): Self = StObject.set(x, "importTaskIds", js.Array(value :_*))
+    inline def setImportTaskIdsVarargs(value: ImportTaskIdentifier*): Self = StObject.set(x, "importTaskIds", js.Array(value :_*))
   }
 }

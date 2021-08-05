@@ -17,6 +17,5 @@ object declarativeWebRequest {
   @JSGlobal("chrome.declarativeWebRequest.onRequest")
   @js.native
   def onRequest: RequestedEvent = js.native
-  @scala.inline
-  def onRequest_=(x: RequestedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onRequest")(x.asInstanceOf[js.Any])
+  inline def onRequest_=(x: RequestedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onRequest")(x.asInstanceOf[js.Any])
 }

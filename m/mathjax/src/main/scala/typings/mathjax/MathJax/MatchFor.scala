@@ -17,31 +17,23 @@ trait MatchFor extends StObject {
 }
 object MatchFor {
   
-  @scala.inline
-  def apply(): MatchFor = {
+  inline def apply(): MatchFor = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MatchFor]
   }
   
-  @scala.inline
-  implicit class MatchForMutableBuilder[Self <: MatchFor] (val x: Self) extends AnyVal {
+  extension [Self <: MatchFor](x: Self) {
     
-    @scala.inline
-    def `setHTML-CSS`(value: Boolean): Self = StObject.set(x, "HTML-CSS", value.asInstanceOf[js.Any])
+    inline def `setHTML-CSS`(value: Boolean): Self = StObject.set(x, "HTML-CSS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setHTML-CSSUndefined`: Self = StObject.set(x, "HTML-CSS", js.undefined)
+    inline def `setHTML-CSSUndefined`: Self = StObject.set(x, "HTML-CSS", js.undefined)
     
-    @scala.inline
-    def setNativeMML(value: Boolean): Self = StObject.set(x, "NativeMML", value.asInstanceOf[js.Any])
+    inline def setNativeMML(value: Boolean): Self = StObject.set(x, "NativeMML", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNativeMMLUndefined: Self = StObject.set(x, "NativeMML", js.undefined)
+    inline def setNativeMMLUndefined: Self = StObject.set(x, "NativeMML", js.undefined)
     
-    @scala.inline
-    def setSVG(value: Boolean): Self = StObject.set(x, "SVG", value.asInstanceOf[js.Any])
+    inline def setSVG(value: Boolean): Self = StObject.set(x, "SVG", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSVGUndefined: Self = StObject.set(x, "SVG", js.undefined)
+    inline def setSVGUndefined: Self = StObject.set(x, "SVG", js.undefined)
   }
 }

@@ -17,33 +17,25 @@ trait ISourcesOrder extends StObject {
 }
 object ISourcesOrder {
   
-  @scala.inline
-  def apply(): ISourcesOrder = {
+  inline def apply(): ISourcesOrder = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISourcesOrder]
   }
   
-  @scala.inline
-  implicit class ISourcesOrderMutableBuilder[Self <: ISourcesOrder] (val x: Self) extends AnyVal {
+  extension [Self <: ISourcesOrder](x: Self) {
     
-    @scala.inline
-    def setSeed(
+    inline def setSeed(
       value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any)
     ): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeedNull: Self = StObject.set(x, "seed", null)
+    inline def setSeedNull: Self = StObject.set(x, "seed", null)
     
-    @scala.inline
-    def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
+    inline def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
     
-    @scala.inline
-    def setType(value: SourcesOrderType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: SourcesOrderType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeNull: Self = StObject.set(x, "type", null)
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

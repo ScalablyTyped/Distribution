@@ -11,19 +11,15 @@ trait Account extends StObject {
 }
 object Account {
   
-  @scala.inline
-  def apply(): Account = {
+  inline def apply(): Account = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Account]
   }
   
-  @scala.inline
-  implicit class AccountMutableBuilder[Self <: Account] (val x: Self) extends AnyVal {
+  extension [Self <: Account](x: Self) {
     
-    @scala.inline
-    def setGoogleAuto(value: js.Any): Self = StObject.set(x, "googleAuto", value.asInstanceOf[js.Any])
+    inline def setGoogleAuto(value: js.Any): Self = StObject.set(x, "googleAuto", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogleAutoUndefined: Self = StObject.set(x, "googleAuto", js.undefined)
+    inline def setGoogleAutoUndefined: Self = StObject.set(x, "googleAuto", js.undefined)
   }
 }

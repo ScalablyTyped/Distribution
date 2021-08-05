@@ -53,35 +53,35 @@ object subscriptionsMod {
       */
     def add(sid: String, entity: SyncEntity): Unit = js.native
     
-    var applyEventToSubscribedEntity: js.Any = js.native
+    /* private */ var applyEventToSubscribedEntity: js.Any = js.native
     
-    var applyNewSubscriptionUpdateBatch: js.Any = js.native
+    /* private */ var applyNewSubscriptionUpdateBatch: js.Any = js.native
     
-    var applySubscriptionCancelledMessage: js.Any = js.native
+    /* private */ var applySubscriptionCancelledMessage: js.Any = js.native
     
-    var applySubscriptionEstablishedMessage: js.Any = js.native
+    /* private */ var applySubscriptionEstablishedMessage: js.Any = js.native
     
-    var applySubscriptionFailedMessage: js.Any = js.native
+    /* private */ var applySubscriptionFailedMessage: js.Any = js.native
     
-    var backoff: js.Any = js.native
+    /* private */ var backoff: js.Any = js.native
     
-    var getSubscriptionUpdateBatch: js.Any = js.native
+    /* private */ var getSubscriptionUpdateBatch: js.Any = js.native
     
-    var isConnected: js.Any = js.native
+    /* private */ var isConnected: js.Any = js.native
     
-    var latestPokeResponseArrivalTimestampByCorrelationId: js.Any = js.native
+    /* private */ var latestPokeResponseArrivalTimestampByCorrelationId: js.Any = js.native
     
-    var maxBatchSize: js.Any = js.native
+    /* private */ var maxBatchSize: js.Any = js.native
     
     def onConnectionStateChanged(isConnected: Boolean): Unit = js.native
     
-    var onSubscriptionTtlElapsed: js.Any = js.native
+    /* private */ var onSubscriptionTtlElapsed: js.Any = js.native
     
-    var pendingPokeReason: js.Any = js.native
+    /* private */ var pendingPokeReason: js.Any = js.native
     
-    var persist: js.Any = js.native
+    /* private */ var persist: js.Any = js.native
     
-    var persisted: js.Any = js.native
+    /* private */ var persisted: js.Any = js.native
     
     /**
       * Prompts a playback of any missed changes made to any subscribed object. This method
@@ -90,13 +90,13 @@ object subscriptionsMod {
       * of this operation will result in calls to the _update() function of subscribed
       * Sync entities.
       */
-    var poke: js.Any = js.native
+    /* private */ var poke: js.Any = js.native
     
-    var processLocalActions: js.Any = js.native
+    /* private */ var processLocalActions: js.Any = js.native
     
-    var recordActionAttemptOn: js.Any = js.native
+    /* private */ var recordActionAttemptOn: js.Any = js.native
     
-    var recordActionFailureOn: js.Any = js.native
+    /* private */ var recordActionFailureOn: js.Any = js.native
     
     /**
       * Establishes the caller's intent to no longer be subscribed to this entity. Following this
@@ -111,20 +111,20 @@ object subscriptionsMod {
       */
     def remove(sid: String): Unit = js.native
     
-    var request: js.Any = js.native
+    /* private */ var request: js.Any = js.native
     
-    var services: js.Any = js.native
+    /* private */ var services: js.Any = js.native
     
     /**
       * Stops all communication, clears any subscription intent, and returns.
       */
     def shutdown(): Unit = js.native
     
-    var subscriptionTtlTimer: js.Any = js.native
+    /* private */ var subscriptionTtlTimer: js.Any = js.native
     
-    var subscriptions: js.Any = js.native
+    /* private */ var subscriptions: js.Any = js.native
     
-    var verifyPokeDelivery: js.Any = js.native
+    /* private */ var verifyPokeDelivery: js.Any = js.native
   }
   
   trait SubscriptionsServices extends StObject {
@@ -135,20 +135,16 @@ object subscriptionsMod {
   }
   object SubscriptionsServices {
     
-    @scala.inline
-    def apply(config: Configuration, network: Network): SubscriptionsServices = {
+    inline def apply(config: Configuration, network: Network): SubscriptionsServices = {
       val __obj = js.Dynamic.literal(config = config.asInstanceOf[js.Any], network = network.asInstanceOf[js.Any])
       __obj.asInstanceOf[SubscriptionsServices]
     }
     
-    @scala.inline
-    implicit class SubscriptionsServicesMutableBuilder[Self <: SubscriptionsServices] (val x: Self) extends AnyVal {
+    extension [Self <: SubscriptionsServices](x: Self) {
       
-      @scala.inline
-      def setConfig(value: Configuration): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      inline def setConfig(value: Configuration): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetwork(value: Network): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+      inline def setNetwork(value: Network): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -11,22 +11,17 @@ trait IConsensusBroadcastRequest extends StObject {
 }
 object IConsensusBroadcastRequest {
   
-  @scala.inline
-  def apply(): IConsensusBroadcastRequest = {
+  inline def apply(): IConsensusBroadcastRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IConsensusBroadcastRequest]
   }
   
-  @scala.inline
-  implicit class IConsensusBroadcastRequestMutableBuilder[Self <: IConsensusBroadcastRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IConsensusBroadcastRequest](x: Self) {
     
-    @scala.inline
-    def setMessage(value: IConsensusPeerMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: IConsensusPeerMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageNull: Self = StObject.set(x, "message", null)
+    inline def setMessageNull: Self = StObject.set(x, "message", null)
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

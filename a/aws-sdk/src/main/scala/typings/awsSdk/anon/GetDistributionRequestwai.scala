@@ -18,22 +18,17 @@ trait GetDistributionRequestwai extends StObject {
 }
 object GetDistributionRequestwai {
   
-  @scala.inline
-  def apply(Id: String): GetDistributionRequestwai = {
+  inline def apply(Id: String): GetDistributionRequestwai = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDistributionRequestwai]
   }
   
-  @scala.inline
-  implicit class GetDistributionRequestwaiMutableBuilder[Self <: GetDistributionRequestwai] (val x: Self) extends AnyVal {
+  extension [Self <: GetDistributionRequestwai](x: Self) {
     
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
+    inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

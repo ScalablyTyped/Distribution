@@ -12,19 +12,15 @@ trait ColumnDefsSettings
 }
 object ColumnDefsSettings {
   
-  @scala.inline
-  def apply(targets: String | Double | (js.Array[Double | String])): ColumnDefsSettings = {
+  inline def apply(targets: String | Double | (js.Array[Double | String])): ColumnDefsSettings = {
     val __obj = js.Dynamic.literal(targets = targets.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColumnDefsSettings]
   }
   
-  @scala.inline
-  implicit class ColumnDefsSettingsMutableBuilder[Self <: ColumnDefsSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnDefsSettings](x: Self) {
     
-    @scala.inline
-    def setTargets(value: String | Double | (js.Array[Double | String])): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
+    inline def setTargets(value: String | Double | (js.Array[Double | String])): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetsVarargs(value: (Double | String)*): Self = StObject.set(x, "targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: (Double | String)*): Self = StObject.set(x, "targets", js.Array(value :_*))
   }
 }

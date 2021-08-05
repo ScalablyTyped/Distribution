@@ -18,8 +18,7 @@ trait BusListResult extends StObject {
 }
 object BusListResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     city: String,
     getBusListItem: Double => BusListItem,
     getNumBusList: () => Double,
@@ -30,22 +29,16 @@ object BusListResult {
     __obj.asInstanceOf[BusListResult]
   }
   
-  @scala.inline
-  implicit class BusListResultMutableBuilder[Self <: BusListResult] (val x: Self) extends AnyVal {
+  extension [Self <: BusListResult](x: Self) {
     
-    @scala.inline
-    def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
+    inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetBusListItem(value: Double => BusListItem): Self = StObject.set(x, "getBusListItem", js.Any.fromFunction1(value))
+    inline def setGetBusListItem(value: Double => BusListItem): Self = StObject.set(x, "getBusListItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetNumBusList(value: () => Double): Self = StObject.set(x, "getNumBusList", js.Any.fromFunction0(value))
+    inline def setGetNumBusList(value: () => Double): Self = StObject.set(x, "getNumBusList", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
+    inline def setKeyword(value: String): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoreResultsUrl(value: String): Self = StObject.set(x, "moreResultsUrl", value.asInstanceOf[js.Any])
+    inline def setMoreResultsUrl(value: String): Self = StObject.set(x, "moreResultsUrl", value.asInstanceOf[js.Any])
   }
 }

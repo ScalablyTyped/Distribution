@@ -12,19 +12,15 @@ trait EnabledUrl extends StObject {
 }
 object EnabledUrl {
   
-  @scala.inline
-  def apply(enabled: Boolean, url: String): EnabledUrl = {
+  inline def apply(enabled: Boolean, url: String): EnabledUrl = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnabledUrl]
   }
   
-  @scala.inline
-  implicit class EnabledUrlMutableBuilder[Self <: EnabledUrl] (val x: Self) extends AnyVal {
+  extension [Self <: EnabledUrl](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

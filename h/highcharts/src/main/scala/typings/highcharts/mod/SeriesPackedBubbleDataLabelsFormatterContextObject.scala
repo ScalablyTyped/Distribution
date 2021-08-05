@@ -22,8 +22,7 @@ trait SeriesPackedBubbleDataLabelsFormatterContextObject
 }
 object SeriesPackedBubbleDataLabelsFormatterContextObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     color: ColorString,
     colorIndex: Double,
     key: String,
@@ -35,13 +34,10 @@ object SeriesPackedBubbleDataLabelsFormatterContextObject {
     __obj.asInstanceOf[SeriesPackedBubbleDataLabelsFormatterContextObject]
   }
   
-  @scala.inline
-  implicit class SeriesPackedBubbleDataLabelsFormatterContextObjectMutableBuilder[Self <: SeriesPackedBubbleDataLabelsFormatterContextObject] (val x: Self) extends AnyVal {
+  extension [Self <: SeriesPackedBubbleDataLabelsFormatterContextObject](x: Self) {
     
-    @scala.inline
-    def setColor(value: ColorString): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: ColorString): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

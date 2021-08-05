@@ -18,22 +18,17 @@ trait RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRu
 }
 object RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSourcePort {
   
-  @scala.inline
-  def apply(fromPort: Double): RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSourcePort = {
+  inline def apply(fromPort: Double): RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSourcePort = {
     val __obj = js.Dynamic.literal(fromPort = fromPort.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSourcePort]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSourcePortMutableBuilder[Self <: RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSourcePort] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSourcePort](x: Self) {
     
-    @scala.inline
-    def setFromPort(value: Double): Self = StObject.set(x, "fromPort", value.asInstanceOf[js.Any])
+    inline def setFromPort(value: Double): Self = StObject.set(x, "fromPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToPort(value: Double): Self = StObject.set(x, "toPort", value.asInstanceOf[js.Any])
+    inline def setToPort(value: Double): Self = StObject.set(x, "toPort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToPortUndefined: Self = StObject.set(x, "toPort", js.undefined)
+    inline def setToPortUndefined: Self = StObject.set(x, "toPort", js.undefined)
   }
 }

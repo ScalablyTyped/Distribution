@@ -12,16 +12,13 @@ trait PickImpldefaultTransition extends StObject {
 }
 object PickImpldefaultTransition {
   
-  @scala.inline
-  def apply(defaultTransition: DefaultTransitionSettings): PickImpldefaultTransition = {
+  inline def apply(defaultTransition: DefaultTransitionSettings): PickImpldefaultTransition = {
     val __obj = js.Dynamic.literal(defaultTransition = defaultTransition.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImpldefaultTransition]
   }
   
-  @scala.inline
-  implicit class PickImpldefaultTransitionMutableBuilder[Self <: PickImpldefaultTransition] (val x: Self) extends AnyVal {
+  extension [Self <: PickImpldefaultTransition](x: Self) {
     
-    @scala.inline
-    def setDefaultTransition(value: DefaultTransitionSettings): Self = StObject.set(x, "defaultTransition", value.asInstanceOf[js.Any])
+    inline def setDefaultTransition(value: DefaultTransitionSettings): Self = StObject.set(x, "defaultTransition", value.asInstanceOf[js.Any])
   }
 }

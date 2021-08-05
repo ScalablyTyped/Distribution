@@ -14,25 +14,19 @@ trait ApigatewayApiConfigFile extends StObject {
 }
 object ApigatewayApiConfigFile {
   
-  @scala.inline
-  def apply(): ApigatewayApiConfigFile = {
+  inline def apply(): ApigatewayApiConfigFile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApigatewayApiConfigFile]
   }
   
-  @scala.inline
-  implicit class ApigatewayApiConfigFileMutableBuilder[Self <: ApigatewayApiConfigFile] (val x: Self) extends AnyVal {
+  extension [Self <: ApigatewayApiConfigFile](x: Self) {
     
-    @scala.inline
-    def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+    inline def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
+    inline def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

@@ -76,91 +76,63 @@ trait StyleConstructorOptions extends StObject {
 }
 object StyleConstructorOptions {
   
-  @scala.inline
-  def apply(lineGradient: LineGradient): StyleConstructorOptions = {
+  inline def apply(lineGradient: LineGradient): StyleConstructorOptions = {
     val __obj = js.Dynamic.literal(lineGradient = lineGradient.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleConstructorOptions]
   }
   
-  @scala.inline
-  implicit class StyleConstructorOptionsMutableBuilder[Self <: StyleConstructorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StyleConstructorOptions](x: Self) {
     
-    @scala.inline
-    def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+    inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
+    inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
     
-    @scala.inline
-    def setFillOpacity(value: Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
+    inline def setFillOpacity(value: Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
+    inline def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
     
-    @scala.inline
-    def setFillRule(value: String): Self = StObject.set(x, "fillRule", value.asInstanceOf[js.Any])
+    inline def setFillRule(value: String): Self = StObject.set(x, "fillRule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillRuleUndefined: Self = StObject.set(x, "fillRule", js.undefined)
+    inline def setFillRuleUndefined: Self = StObject.set(x, "fillRule", js.undefined)
     
-    @scala.inline
-    def setLineCap(value: String): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])
+    inline def setLineCap(value: String): Self = StObject.set(x, "lineCap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineCapUndefined: Self = StObject.set(x, "lineCap", js.undefined)
+    inline def setLineCapUndefined: Self = StObject.set(x, "lineCap", js.undefined)
     
-    @scala.inline
-    def setLineDash(value: js.Array[Double]): Self = StObject.set(x, "lineDash", value.asInstanceOf[js.Any])
+    inline def setLineDash(value: js.Array[Double]): Self = StObject.set(x, "lineDash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineDashOffset(value: Double): Self = StObject.set(x, "lineDashOffset", value.asInstanceOf[js.Any])
+    inline def setLineDashOffset(value: Double): Self = StObject.set(x, "lineDashOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineDashOffsetUndefined: Self = StObject.set(x, "lineDashOffset", js.undefined)
+    inline def setLineDashOffsetUndefined: Self = StObject.set(x, "lineDashOffset", js.undefined)
     
-    @scala.inline
-    def setLineDashUndefined: Self = StObject.set(x, "lineDash", js.undefined)
+    inline def setLineDashUndefined: Self = StObject.set(x, "lineDash", js.undefined)
     
-    @scala.inline
-    def setLineDashVarargs(value: Double*): Self = StObject.set(x, "lineDash", js.Array(value :_*))
+    inline def setLineDashVarargs(value: Double*): Self = StObject.set(x, "lineDash", js.Array(value :_*))
     
-    @scala.inline
-    def setLineGradient(value: LineGradient): Self = StObject.set(x, "lineGradient", value.asInstanceOf[js.Any])
+    inline def setLineGradient(value: LineGradient): Self = StObject.set(x, "lineGradient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineJoin(value: String): Self = StObject.set(x, "lineJoin", value.asInstanceOf[js.Any])
+    inline def setLineJoin(value: String): Self = StObject.set(x, "lineJoin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineJoinUndefined: Self = StObject.set(x, "lineJoin", js.undefined)
+    inline def setLineJoinUndefined: Self = StObject.set(x, "lineJoin", js.undefined)
     
-    @scala.inline
-    def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
+    inline def setLineWidthUndefined: Self = StObject.set(x, "lineWidth", js.undefined)
     
-    @scala.inline
-    def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
+    inline def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
+    inline def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
     
-    @scala.inline
-    def setStrokeEnd(value: Double): Self = StObject.set(x, "strokeEnd", value.asInstanceOf[js.Any])
+    inline def setStrokeEnd(value: Double): Self = StObject.set(x, "strokeEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeEndUndefined: Self = StObject.set(x, "strokeEnd", js.undefined)
+    inline def setStrokeEndUndefined: Self = StObject.set(x, "strokeEnd", js.undefined)
     
-    @scala.inline
-    def setStrokeOpacity(value: Double): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
+    inline def setStrokeOpacity(value: Double): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
+    inline def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
     
-    @scala.inline
-    def setStrokeStart(value: Double): Self = StObject.set(x, "strokeStart", value.asInstanceOf[js.Any])
+    inline def setStrokeStart(value: Double): Self = StObject.set(x, "strokeStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeStartUndefined: Self = StObject.set(x, "strokeStart", js.undefined)
+    inline def setStrokeStartUndefined: Self = StObject.set(x, "strokeStart", js.undefined)
   }
 }

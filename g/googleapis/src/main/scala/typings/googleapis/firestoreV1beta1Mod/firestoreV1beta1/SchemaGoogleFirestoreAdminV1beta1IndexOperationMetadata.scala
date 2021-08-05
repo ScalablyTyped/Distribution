@@ -46,49 +46,35 @@ trait SchemaGoogleFirestoreAdminV1beta1IndexOperationMetadata extends StObject {
 }
 object SchemaGoogleFirestoreAdminV1beta1IndexOperationMetadata {
   
-  @scala.inline
-  def apply(): SchemaGoogleFirestoreAdminV1beta1IndexOperationMetadata = {
+  inline def apply(): SchemaGoogleFirestoreAdminV1beta1IndexOperationMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleFirestoreAdminV1beta1IndexOperationMetadata]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleFirestoreAdminV1beta1IndexOperationMetadataMutableBuilder[Self <: SchemaGoogleFirestoreAdminV1beta1IndexOperationMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleFirestoreAdminV1beta1IndexOperationMetadata](x: Self) {
     
-    @scala.inline
-    def setCancelled(value: Boolean): Self = StObject.set(x, "cancelled", value.asInstanceOf[js.Any])
+    inline def setCancelled(value: Boolean): Self = StObject.set(x, "cancelled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelledUndefined: Self = StObject.set(x, "cancelled", js.undefined)
+    inline def setCancelledUndefined: Self = StObject.set(x, "cancelled", js.undefined)
     
-    @scala.inline
-    def setDocumentProgress(value: SchemaGoogleFirestoreAdminV1beta1Progress): Self = StObject.set(x, "documentProgress", value.asInstanceOf[js.Any])
+    inline def setDocumentProgress(value: SchemaGoogleFirestoreAdminV1beta1Progress): Self = StObject.set(x, "documentProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentProgressUndefined: Self = StObject.set(x, "documentProgress", js.undefined)
+    inline def setDocumentProgressUndefined: Self = StObject.set(x, "documentProgress", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setOperationType(value: String): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
+    inline def setOperationType(value: String): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationTypeUndefined: Self = StObject.set(x, "operationType", js.undefined)
+    inline def setOperationTypeUndefined: Self = StObject.set(x, "operationType", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

@@ -31,29 +31,22 @@ trait TeamsAddOrUpdateProjectPermissionsInOrgEndpoint
 }
 object TeamsAddOrUpdateProjectPermissionsInOrgEndpoint {
   
-  @scala.inline
-  def apply(mediaType: `0`[inertia], org_ : String, project_id: Double, team_slug: String): TeamsAddOrUpdateProjectPermissionsInOrgEndpoint = {
+  inline def apply(mediaType: `0`[inertia], org_ : String, project_id: Double, team_slug: String): TeamsAddOrUpdateProjectPermissionsInOrgEndpoint = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], project_id = project_id.asInstanceOf[js.Any], team_slug = team_slug.asInstanceOf[js.Any])
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsAddOrUpdateProjectPermissionsInOrgEndpoint]
   }
   
-  @scala.inline
-  implicit class TeamsAddOrUpdateProjectPermissionsInOrgEndpointMutableBuilder[Self <: TeamsAddOrUpdateProjectPermissionsInOrgEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: TeamsAddOrUpdateProjectPermissionsInOrgEndpoint](x: Self) {
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermission(value: read | write | admin): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
+    inline def setPermission(value: read | write | admin): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
+    inline def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
     
-    @scala.inline
-    def setProject_id(value: Double): Self = StObject.set(x, "project_id", value.asInstanceOf[js.Any])
+    inline def setProject_id(value: Double): Self = StObject.set(x, "project_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeam_slug(value: String): Self = StObject.set(x, "team_slug", value.asInstanceOf[js.Any])
+    inline def setTeam_slug(value: String): Self = StObject.set(x, "team_slug", value.asInstanceOf[js.Any])
   }
 }

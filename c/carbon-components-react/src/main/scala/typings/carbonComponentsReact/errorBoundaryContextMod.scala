@@ -19,20 +19,16 @@ object errorBoundaryContextMod {
   }
   object ErrorBoundaryContextValue {
     
-    @scala.inline
-    def apply(): ErrorBoundaryContextValue = {
+    inline def apply(): ErrorBoundaryContextValue = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ErrorBoundaryContextValue]
     }
     
-    @scala.inline
-    implicit class ErrorBoundaryContextValueMutableBuilder[Self <: ErrorBoundaryContextValue] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorBoundaryContextValue](x: Self) {
       
-      @scala.inline
-      def setLog(value: (/* error */ Error, /* errorInfo */ ErrorInfo) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
+      inline def setLog(value: (/* error */ Error, /* errorInfo */ ErrorInfo) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+      inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
     }
   }
 }

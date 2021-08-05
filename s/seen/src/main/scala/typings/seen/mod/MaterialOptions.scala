@@ -18,43 +18,31 @@ trait MaterialOptions extends StObject {
 }
 object MaterialOptions {
   
-  @scala.inline
-  def apply(): MaterialOptions = {
+  inline def apply(): MaterialOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaterialOptions]
   }
   
-  @scala.inline
-  implicit class MaterialOptionsMutableBuilder[Self <: MaterialOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MaterialOptions](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setMetallic(value: Boolean): Self = StObject.set(x, "metallic", value.asInstanceOf[js.Any])
+    inline def setMetallic(value: Boolean): Self = StObject.set(x, "metallic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetallicUndefined: Self = StObject.set(x, "metallic", js.undefined)
+    inline def setMetallicUndefined: Self = StObject.set(x, "metallic", js.undefined)
     
-    @scala.inline
-    def setShader(value: Shader): Self = StObject.set(x, "shader", value.asInstanceOf[js.Any])
+    inline def setShader(value: Shader): Self = StObject.set(x, "shader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShaderUndefined: Self = StObject.set(x, "shader", js.undefined)
+    inline def setShaderUndefined: Self = StObject.set(x, "shader", js.undefined)
     
-    @scala.inline
-    def setSpecularColor(value: Color): Self = StObject.set(x, "specularColor", value.asInstanceOf[js.Any])
+    inline def setSpecularColor(value: Color): Self = StObject.set(x, "specularColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecularColorUndefined: Self = StObject.set(x, "specularColor", js.undefined)
+    inline def setSpecularColorUndefined: Self = StObject.set(x, "specularColor", js.undefined)
     
-    @scala.inline
-    def setSpecularExponent(value: Double): Self = StObject.set(x, "specularExponent", value.asInstanceOf[js.Any])
+    inline def setSpecularExponent(value: Double): Self = StObject.set(x, "specularExponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecularExponentUndefined: Self = StObject.set(x, "specularExponent", js.undefined)
+    inline def setSpecularExponentUndefined: Self = StObject.set(x, "specularExponent", js.undefined)
   }
 }

@@ -15,19 +15,15 @@ trait TypeofSplitter extends StObject {
 }
 object TypeofSplitter {
   
-  @scala.inline
-  def apply(extend: js.Object => Splitter, fn: Splitter): TypeofSplitter = {
+  inline def apply(extend: js.Object => Splitter, fn: Splitter): TypeofSplitter = {
     val __obj = js.Dynamic.literal(extend = js.Any.fromFunction1(extend), fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofSplitter]
   }
   
-  @scala.inline
-  implicit class TypeofSplitterMutableBuilder[Self <: TypeofSplitter] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofSplitter](x: Self) {
     
-    @scala.inline
-    def setExtend(value: js.Object => Splitter): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtend(value: js.Object => Splitter): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFn(value: Splitter): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Splitter): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
   }
 }

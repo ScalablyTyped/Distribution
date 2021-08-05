@@ -10,16 +10,13 @@ trait ResultPointCallback extends StObject {
 }
 object ResultPointCallback {
   
-  @scala.inline
-  def apply(foundPossibleResultPoint: FinderPattern => Unit): ResultPointCallback = {
+  inline def apply(foundPossibleResultPoint: FinderPattern => Unit): ResultPointCallback = {
     val __obj = js.Dynamic.literal(foundPossibleResultPoint = js.Any.fromFunction1(foundPossibleResultPoint))
     __obj.asInstanceOf[ResultPointCallback]
   }
   
-  @scala.inline
-  implicit class ResultPointCallbackMutableBuilder[Self <: ResultPointCallback] (val x: Self) extends AnyVal {
+  extension [Self <: ResultPointCallback](x: Self) {
     
-    @scala.inline
-    def setFoundPossibleResultPoint(value: FinderPattern => Unit): Self = StObject.set(x, "foundPossibleResultPoint", js.Any.fromFunction1(value))
+    inline def setFoundPossibleResultPoint(value: FinderPattern => Unit): Self = StObject.set(x, "foundPossibleResultPoint", js.Any.fromFunction1(value))
   }
 }

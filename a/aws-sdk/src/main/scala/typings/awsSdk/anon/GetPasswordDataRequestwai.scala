@@ -25,28 +25,21 @@ trait GetPasswordDataRequestwai extends StObject {
 }
 object GetPasswordDataRequestwai {
   
-  @scala.inline
-  def apply(InstanceId: InstanceId): GetPasswordDataRequestwai = {
+  inline def apply(InstanceId: InstanceId): GetPasswordDataRequestwai = {
     val __obj = js.Dynamic.literal(InstanceId = InstanceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPasswordDataRequestwai]
   }
   
-  @scala.inline
-  implicit class GetPasswordDataRequestwaiMutableBuilder[Self <: GetPasswordDataRequestwai] (val x: Self) extends AnyVal {
+  extension [Self <: GetPasswordDataRequestwai](x: Self) {
     
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
+    inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
   }
 }

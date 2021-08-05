@@ -17,28 +17,21 @@ trait ListAndroidAppsResponse extends StObject {
 }
 object ListAndroidAppsResponse {
   
-  @scala.inline
-  def apply(): ListAndroidAppsResponse = {
+  inline def apply(): ListAndroidAppsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAndroidAppsResponse]
   }
   
-  @scala.inline
-  implicit class ListAndroidAppsResponseMutableBuilder[Self <: ListAndroidAppsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListAndroidAppsResponse](x: Self) {
     
-    @scala.inline
-    def setApps(value: js.Array[AndroidApp]): Self = StObject.set(x, "apps", value.asInstanceOf[js.Any])
+    inline def setApps(value: js.Array[AndroidApp]): Self = StObject.set(x, "apps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppsUndefined: Self = StObject.set(x, "apps", js.undefined)
+    inline def setAppsUndefined: Self = StObject.set(x, "apps", js.undefined)
     
-    @scala.inline
-    def setAppsVarargs(value: AndroidApp*): Self = StObject.set(x, "apps", js.Array(value :_*))
+    inline def setAppsVarargs(value: AndroidApp*): Self = StObject.set(x, "apps", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

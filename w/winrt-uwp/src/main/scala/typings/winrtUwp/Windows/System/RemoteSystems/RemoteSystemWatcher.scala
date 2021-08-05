@@ -47,8 +47,7 @@ trait RemoteSystemWatcher extends StObject {
 }
 object RemoteSystemWatcher {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     onenumerationcompleted: /* ev */ RemoteSystemEnumerationCompletedEventArgs & WinRTEvent[RemoteSystemWatcher] => Unit,
     onerroroccured: /* ev */ RemoteSystemWatcherErrorOccurredEventArgs & WinRTEvent[RemoteSystemWatcher] => Unit,
     onremotesystemadded: /* ev */ RemoteSystemAddedEventArgs & WinRTEvent[RemoteSystemWatcher] => Unit,
@@ -61,32 +60,24 @@ object RemoteSystemWatcher {
     __obj.asInstanceOf[RemoteSystemWatcher]
   }
   
-  @scala.inline
-  implicit class RemoteSystemWatcherMutableBuilder[Self <: RemoteSystemWatcher] (val x: Self) extends AnyVal {
+  extension [Self <: RemoteSystemWatcher](x: Self) {
     
-    @scala.inline
-    def setOnenumerationcompleted(
+    inline def setOnenumerationcompleted(
       value: /* ev */ RemoteSystemEnumerationCompletedEventArgs & WinRTEvent[RemoteSystemWatcher] => Unit
     ): Self = StObject.set(x, "onenumerationcompleted", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnerroroccured(
+    inline def setOnerroroccured(
       value: /* ev */ RemoteSystemWatcherErrorOccurredEventArgs & WinRTEvent[RemoteSystemWatcher] => Unit
     ): Self = StObject.set(x, "onerroroccured", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnremotesystemadded(value: /* ev */ RemoteSystemAddedEventArgs & WinRTEvent[RemoteSystemWatcher] => Unit): Self = StObject.set(x, "onremotesystemadded", js.Any.fromFunction1(value))
+    inline def setOnremotesystemadded(value: /* ev */ RemoteSystemAddedEventArgs & WinRTEvent[RemoteSystemWatcher] => Unit): Self = StObject.set(x, "onremotesystemadded", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnremotesystemremoved(value: /* ev */ RemoteSystemRemovedEventArgs & WinRTEvent[RemoteSystemWatcher] => Unit): Self = StObject.set(x, "onremotesystemremoved", js.Any.fromFunction1(value))
+    inline def setOnremotesystemremoved(value: /* ev */ RemoteSystemRemovedEventArgs & WinRTEvent[RemoteSystemWatcher] => Unit): Self = StObject.set(x, "onremotesystemremoved", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnremotesystemupdated(value: /* ev */ RemoteSystemUpdatedEventArgs & WinRTEvent[RemoteSystemWatcher] => Unit): Self = StObject.set(x, "onremotesystemupdated", js.Any.fromFunction1(value))
+    inline def setOnremotesystemupdated(value: /* ev */ RemoteSystemUpdatedEventArgs & WinRTEvent[RemoteSystemWatcher] => Unit): Self = StObject.set(x, "onremotesystemupdated", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+    inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+    inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
   }
 }

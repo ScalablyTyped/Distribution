@@ -15,8 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(_moment: FnCall): Unit = ^.asInstanceOf[js.Dynamic].apply(_moment.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(_moment: FnCall): Unit = ^.asInstanceOf[js.Dynamic].apply(_moment.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("moment-duration-format", JSImport.Namespace)
   @js.native
@@ -72,128 +71,88 @@ object mod {
     }
     object DurationFormatSettings {
       
-      @scala.inline
-      def apply(): DurationFormatSettings = {
+      inline def apply(): DurationFormatSettings = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[DurationFormatSettings]
       }
       
-      @scala.inline
-      implicit class DurationFormatSettingsMutableBuilder[Self <: DurationFormatSettings] (val x: Self) extends AnyVal {
+      extension [Self <: DurationFormatSettings](x: Self) {
         
-        @scala.inline
-        def setDecimalSeparator(value: String): Self = StObject.set(x, "decimalSeparator", value.asInstanceOf[js.Any])
+        inline def setDecimalSeparator(value: String): Self = StObject.set(x, "decimalSeparator", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDecimalSeparatorUndefined: Self = StObject.set(x, "decimalSeparator", js.undefined)
+        inline def setDecimalSeparatorUndefined: Self = StObject.set(x, "decimalSeparator", js.undefined)
         
-        @scala.inline
-        def setForceLength(value: Boolean): Self = StObject.set(x, "forceLength", value.asInstanceOf[js.Any])
+        inline def setForceLength(value: Boolean): Self = StObject.set(x, "forceLength", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setForceLengthUndefined: Self = StObject.set(x, "forceLength", js.undefined)
+        inline def setForceLengthUndefined: Self = StObject.set(x, "forceLength", js.undefined)
         
-        @scala.inline
-        def setGrouping(value: js.Array[Double]): Self = StObject.set(x, "grouping", value.asInstanceOf[js.Any])
+        inline def setGrouping(value: js.Array[Double]): Self = StObject.set(x, "grouping", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGroupingSeparator(value: String): Self = StObject.set(x, "groupingSeparator", value.asInstanceOf[js.Any])
+        inline def setGroupingSeparator(value: String): Self = StObject.set(x, "groupingSeparator", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGroupingSeparatorUndefined: Self = StObject.set(x, "groupingSeparator", js.undefined)
+        inline def setGroupingSeparatorUndefined: Self = StObject.set(x, "groupingSeparator", js.undefined)
         
-        @scala.inline
-        def setGroupingUndefined: Self = StObject.set(x, "grouping", js.undefined)
+        inline def setGroupingUndefined: Self = StObject.set(x, "grouping", js.undefined)
         
-        @scala.inline
-        def setGroupingVarargs(value: Double*): Self = StObject.set(x, "grouping", js.Array(value :_*))
+        inline def setGroupingVarargs(value: Double*): Self = StObject.set(x, "grouping", js.Array(value :_*))
         
-        @scala.inline
-        def setLargest(value: Double): Self = StObject.set(x, "largest", value.asInstanceOf[js.Any])
+        inline def setLargest(value: Double): Self = StObject.set(x, "largest", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLargestUndefined: Self = StObject.set(x, "largest", js.undefined)
+        inline def setLargestUndefined: Self = StObject.set(x, "largest", js.undefined)
         
-        @scala.inline
-        def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+        inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+        inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
         
-        @scala.inline
-        def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+        inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
+        inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
         
-        @scala.inline
-        def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+        inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+        inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
         
-        @scala.inline
-        def setStopTrim(value: String): Self = StObject.set(x, "stopTrim", value.asInstanceOf[js.Any])
+        inline def setStopTrim(value: String): Self = StObject.set(x, "stopTrim", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStopTrimUndefined: Self = StObject.set(x, "stopTrim", js.undefined)
+        inline def setStopTrimUndefined: Self = StObject.set(x, "stopTrim", js.undefined)
         
-        @scala.inline
-        def setTemplate(value: String | TemplateFunction): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+        inline def setTemplate(value: String | TemplateFunction): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+        inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
         
-        @scala.inline
-        def setTrim(value: `false` | UnitOfTrimV1 | UnitOfTrim | String | (js.Array[UnitOfTrim | String])): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
+        inline def setTrim(value: `false` | UnitOfTrimV1 | UnitOfTrim | String | (js.Array[UnitOfTrim | String])): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
+        inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
         
-        @scala.inline
-        def setTrimVarargs(value: (UnitOfTrim | String)*): Self = StObject.set(x, "trim", js.Array(value :_*))
+        inline def setTrimVarargs(value: (UnitOfTrim | String)*): Self = StObject.set(x, "trim", js.Array(value :_*))
         
-        @scala.inline
-        def setTrunc(value: `true`): Self = StObject.set(x, "trunc", value.asInstanceOf[js.Any])
+        inline def setTrunc(value: `true`): Self = StObject.set(x, "trunc", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTruncUndefined: Self = StObject.set(x, "trunc", js.undefined)
+        inline def setTruncUndefined: Self = StObject.set(x, "trunc", js.undefined)
         
-        @scala.inline
-        def setUseGrouping(value: Boolean): Self = StObject.set(x, "useGrouping", value.asInstanceOf[js.Any])
+        inline def setUseGrouping(value: Boolean): Self = StObject.set(x, "useGrouping", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUseGroupingUndefined: Self = StObject.set(x, "useGrouping", js.undefined)
+        inline def setUseGroupingUndefined: Self = StObject.set(x, "useGrouping", js.undefined)
         
-        @scala.inline
-        def setUseLeftUnits(value: Boolean): Self = StObject.set(x, "useLeftUnits", value.asInstanceOf[js.Any])
+        inline def setUseLeftUnits(value: Boolean): Self = StObject.set(x, "useLeftUnits", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUseLeftUnitsUndefined: Self = StObject.set(x, "useLeftUnits", js.undefined)
+        inline def setUseLeftUnitsUndefined: Self = StObject.set(x, "useLeftUnits", js.undefined)
         
-        @scala.inline
-        def setUsePlural(value: Boolean): Self = StObject.set(x, "usePlural", value.asInstanceOf[js.Any])
+        inline def setUsePlural(value: Boolean): Self = StObject.set(x, "usePlural", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUsePluralUndefined: Self = StObject.set(x, "usePlural", js.undefined)
+        inline def setUsePluralUndefined: Self = StObject.set(x, "usePlural", js.undefined)
         
-        @scala.inline
-        def setUseSignificantDigits(value: `true`): Self = StObject.set(x, "useSignificantDigits", value.asInstanceOf[js.Any])
+        inline def setUseSignificantDigits(value: `true`): Self = StObject.set(x, "useSignificantDigits", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUseSignificantDigitsUndefined: Self = StObject.set(x, "useSignificantDigits", js.undefined)
+        inline def setUseSignificantDigitsUndefined: Self = StObject.set(x, "useSignificantDigits", js.undefined)
         
-        @scala.inline
-        def setUseToLocaleString(value: Boolean): Self = StObject.set(x, "useToLocaleString", value.asInstanceOf[js.Any])
+        inline def setUseToLocaleString(value: Boolean): Self = StObject.set(x, "useToLocaleString", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUseToLocaleStringUndefined: Self = StObject.set(x, "useToLocaleString", js.undefined)
+        inline def setUseToLocaleStringUndefined: Self = StObject.set(x, "useToLocaleString", js.undefined)
         
-        @scala.inline
-        def setUserLocale(value: String): Self = StObject.set(x, "userLocale", value.asInstanceOf[js.Any])
+        inline def setUserLocale(value: String): Self = StObject.set(x, "userLocale", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUserLocaleUndefined: Self = StObject.set(x, "userLocale", js.undefined)
+        inline def setUserLocaleUndefined: Self = StObject.set(x, "userLocale", js.undefined)
       }
     }
     
@@ -250,8 +209,7 @@ object mod {
     }
     object DurationLabelDef {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         M: String,
         MM: String,
         MMM: String,
@@ -281,62 +239,43 @@ object mod {
         __obj.asInstanceOf[DurationLabelDef]
       }
       
-      @scala.inline
-      implicit class DurationLabelDefMutableBuilder[Self <: DurationLabelDef] (val x: Self) extends AnyVal {
+      extension [Self <: DurationLabelDef](x: Self) {
         
-        @scala.inline
-        def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
+        inline def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDd(value: String): Self = StObject.set(x, "dd", value.asInstanceOf[js.Any])
+        inline def setDd(value: String): Self = StObject.set(x, "dd", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDdd(value: String): Self = StObject.set(x, "ddd", value.asInstanceOf[js.Any])
+        inline def setDdd(value: String): Self = StObject.set(x, "ddd", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setH(value: String): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+        inline def setH(value: String): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHh(value: String): Self = StObject.set(x, "hh", value.asInstanceOf[js.Any])
+        inline def setHh(value: String): Self = StObject.set(x, "hh", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHhh(value: String): Self = StObject.set(x, "hhh", value.asInstanceOf[js.Any])
+        inline def setHhh(value: String): Self = StObject.set(x, "hhh", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setM(value: String): Self = StObject.set(x, "M", value.asInstanceOf[js.Any])
+        inline def setM(value: String): Self = StObject.set(x, "M", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMM(value: String): Self = StObject.set(x, "MM", value.asInstanceOf[js.Any])
+        inline def setMM(value: String): Self = StObject.set(x, "MM", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMMM(value: String): Self = StObject.set(x, "MMM", value.asInstanceOf[js.Any])
+        inline def setMMM(value: String): Self = StObject.set(x, "MMM", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setS(value: String): Self = StObject.set(x, "S", value.asInstanceOf[js.Any])
+        inline def setS(value: String): Self = StObject.set(x, "S", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSS(value: String): Self = StObject.set(x, "SS", value.asInstanceOf[js.Any])
+        inline def setSS(value: String): Self = StObject.set(x, "SS", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSSS(value: String): Self = StObject.set(x, "SSS", value.asInstanceOf[js.Any])
+        inline def setSSS(value: String): Self = StObject.set(x, "SSS", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setW(value: String): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+        inline def setW(value: String): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWw(value: String): Self = StObject.set(x, "ww", value.asInstanceOf[js.Any])
+        inline def setWw(value: String): Self = StObject.set(x, "ww", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWww(value: String): Self = StObject.set(x, "www", value.asInstanceOf[js.Any])
+        inline def setWww(value: String): Self = StObject.set(x, "www", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setY(value: String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+        inline def setY(value: String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setYy(value: String): Self = StObject.set(x, "yy", value.asInstanceOf[js.Any])
+        inline def setYy(value: String): Self = StObject.set(x, "yy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setYyy(value: String): Self = StObject.set(x, "yyy", value.asInstanceOf[js.Any])
+        inline def setYyy(value: String): Self = StObject.set(x, "yyy", value.asInstanceOf[js.Any])
       }
     }
     
@@ -348,14 +287,11 @@ object mod {
     trait DurationLabelType extends StObject
     object DurationLabelType {
       
-      @scala.inline
-      def long: typings.momentDurationFormat.momentDurationFormatStrings.long = "long".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.long]
+      inline def long: typings.momentDurationFormat.momentDurationFormatStrings.long = "long".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.long]
       
-      @scala.inline
-      def short: typings.momentDurationFormat.momentDurationFormatStrings.short = "short".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.short]
+      inline def short: typings.momentDurationFormat.momentDurationFormatStrings.short = "short".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.short]
       
-      @scala.inline
-      def standard: typings.momentDurationFormat.momentDurationFormatStrings.standard = "standard".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.standard]
+      inline def standard: typings.momentDurationFormat.momentDurationFormatStrings.standard = "standard".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.standard]
     }
     
     trait DurationLabelTypeDef extends StObject {
@@ -366,21 +302,17 @@ object mod {
     }
     object DurationLabelTypeDef {
       
-      @scala.inline
-      def apply(string: String, `type`: DurationLabelType): DurationLabelTypeDef = {
+      inline def apply(string: String, `type`: DurationLabelType): DurationLabelTypeDef = {
         val __obj = js.Dynamic.literal(string = string.asInstanceOf[js.Any])
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[DurationLabelTypeDef]
       }
       
-      @scala.inline
-      implicit class DurationLabelTypeDefMutableBuilder[Self <: DurationLabelTypeDef] (val x: Self) extends AnyVal {
+      extension [Self <: DurationLabelTypeDef](x: Self) {
         
-        @scala.inline
-        def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+        inline def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setType(value: DurationLabelType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: DurationLabelType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -392,14 +324,11 @@ object mod {
     trait DurationTemplate extends StObject
     object DurationTemplate {
       
-      @scala.inline
-      def HM: typings.momentDurationFormat.momentDurationFormatStrings.HM = "HM".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.HM]
+      inline def HM: typings.momentDurationFormat.momentDurationFormatStrings.HM = "HM".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.HM]
       
-      @scala.inline
-      def HMS: typings.momentDurationFormat.momentDurationFormatStrings.HMS = "HMS".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.HMS]
+      inline def HMS: typings.momentDurationFormat.momentDurationFormatStrings.HMS = "HMS".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.HMS]
       
-      @scala.inline
-      def MS: typings.momentDurationFormat.momentDurationFormatStrings.MS = "MS".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.MS]
+      inline def MS: typings.momentDurationFormat.momentDurationFormatStrings.MS = "MS".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.MS]
     }
     
     /* Inlined {[ template in moment-duration-format.moment-duration-format.moment.DurationTemplate ]: string} */
@@ -413,23 +342,18 @@ object mod {
     }
     object DurationTimeDef {
       
-      @scala.inline
-      def apply(HM: String, HMS: String, MS: String): DurationTimeDef = {
+      inline def apply(HM: String, HMS: String, MS: String): DurationTimeDef = {
         val __obj = js.Dynamic.literal(HM = HM.asInstanceOf[js.Any], HMS = HMS.asInstanceOf[js.Any], MS = MS.asInstanceOf[js.Any])
         __obj.asInstanceOf[DurationTimeDef]
       }
       
-      @scala.inline
-      implicit class DurationTimeDefMutableBuilder[Self <: DurationTimeDef] (val x: Self) extends AnyVal {
+      extension [Self <: DurationTimeDef](x: Self) {
         
-        @scala.inline
-        def setHM(value: String): Self = StObject.set(x, "HM", value.asInstanceOf[js.Any])
+        inline def setHM(value: String): Self = StObject.set(x, "HM", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHMS(value: String): Self = StObject.set(x, "HMS", value.asInstanceOf[js.Any])
+        inline def setHMS(value: String): Self = StObject.set(x, "HMS", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMS(value: String): Self = StObject.set(x, "MS", value.asInstanceOf[js.Any])
+        inline def setMS(value: String): Self = StObject.set(x, "MS", value.asInstanceOf[js.Any])
       }
     }
     
@@ -462,77 +386,53 @@ object mod {
     trait DurationToken extends StObject
     object DurationToken {
       
-      @scala.inline
-      def M: typings.momentDurationFormat.momentDurationFormatStrings.M = "M".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.M]
+      inline def M: typings.momentDurationFormat.momentDurationFormatStrings.M = "M".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.M]
       
-      @scala.inline
-      def MM: typings.momentDurationFormat.momentDurationFormatStrings.MM = "MM".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.MM]
+      inline def MM: typings.momentDurationFormat.momentDurationFormatStrings.MM = "MM".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.MM]
       
-      @scala.inline
-      def MMM: typings.momentDurationFormat.momentDurationFormatStrings.MMM = "MMM".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.MMM]
+      inline def MMM: typings.momentDurationFormat.momentDurationFormatStrings.MMM = "MMM".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.MMM]
       
-      @scala.inline
-      def S: typings.momentDurationFormat.momentDurationFormatStrings.S = "S".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.S]
+      inline def S: typings.momentDurationFormat.momentDurationFormatStrings.S = "S".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.S]
       
-      @scala.inline
-      def SS: typings.momentDurationFormat.momentDurationFormatStrings.SS = "SS".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.SS]
+      inline def SS: typings.momentDurationFormat.momentDurationFormatStrings.SS = "SS".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.SS]
       
-      @scala.inline
-      def SSS: typings.momentDurationFormat.momentDurationFormatStrings.SSS = "SSS".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.SSS]
+      inline def SSS: typings.momentDurationFormat.momentDurationFormatStrings.SSS = "SSS".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.SSS]
       
-      @scala.inline
-      def d: typings.momentDurationFormat.momentDurationFormatStrings.d = "d".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.d]
+      inline def d: typings.momentDurationFormat.momentDurationFormatStrings.d = "d".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.d]
       
-      @scala.inline
-      def dd: typings.momentDurationFormat.momentDurationFormatStrings.dd = "dd".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.dd]
+      inline def dd: typings.momentDurationFormat.momentDurationFormatStrings.dd = "dd".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.dd]
       
-      @scala.inline
-      def ddd: typings.momentDurationFormat.momentDurationFormatStrings.ddd = "ddd".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.ddd]
+      inline def ddd: typings.momentDurationFormat.momentDurationFormatStrings.ddd = "ddd".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.ddd]
       
-      @scala.inline
-      def h: typings.momentDurationFormat.momentDurationFormatStrings.h = "h".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.h]
+      inline def h: typings.momentDurationFormat.momentDurationFormatStrings.h = "h".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.h]
       
-      @scala.inline
-      def hh: typings.momentDurationFormat.momentDurationFormatStrings.hh = "hh".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.hh]
+      inline def hh: typings.momentDurationFormat.momentDurationFormatStrings.hh = "hh".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.hh]
       
-      @scala.inline
-      def hhh: typings.momentDurationFormat.momentDurationFormatStrings.hhh = "hhh".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.hhh]
+      inline def hhh: typings.momentDurationFormat.momentDurationFormatStrings.hhh = "hhh".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.hhh]
       
-      @scala.inline
-      def m: m_ = "m".asInstanceOf[m_]
+      inline def m: m_ = "m".asInstanceOf[m_]
       
-      @scala.inline
-      def mm: mm_ = "mm".asInstanceOf[mm_]
+      inline def mm: mm_ = "mm".asInstanceOf[mm_]
       
-      @scala.inline
-      def mmm: mmm_ = "mmm".asInstanceOf[mmm_]
+      inline def mmm: mmm_ = "mmm".asInstanceOf[mmm_]
       
-      @scala.inline
-      def s: s_ = "s".asInstanceOf[s_]
+      inline def s: s_ = "s".asInstanceOf[s_]
       
-      @scala.inline
-      def ss: ss_ = "ss".asInstanceOf[ss_]
+      inline def ss: ss_ = "ss".asInstanceOf[ss_]
       
-      @scala.inline
-      def sss: sss_ = "sss".asInstanceOf[sss_]
+      inline def sss: sss_ = "sss".asInstanceOf[sss_]
       
-      @scala.inline
-      def w: typings.momentDurationFormat.momentDurationFormatStrings.w = "w".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.w]
+      inline def w: typings.momentDurationFormat.momentDurationFormatStrings.w = "w".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.w]
       
-      @scala.inline
-      def ww: typings.momentDurationFormat.momentDurationFormatStrings.ww = "ww".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.ww]
+      inline def ww: typings.momentDurationFormat.momentDurationFormatStrings.ww = "ww".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.ww]
       
-      @scala.inline
-      def www: typings.momentDurationFormat.momentDurationFormatStrings.www = "www".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.www]
+      inline def www: typings.momentDurationFormat.momentDurationFormatStrings.www = "www".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.www]
       
-      @scala.inline
-      def y: typings.momentDurationFormat.momentDurationFormatStrings.y = "y".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.y]
+      inline def y: typings.momentDurationFormat.momentDurationFormatStrings.y = "y".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.y]
       
-      @scala.inline
-      def yy: typings.momentDurationFormat.momentDurationFormatStrings.yy = "yy".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.yy]
+      inline def yy: typings.momentDurationFormat.momentDurationFormatStrings.yy = "yy".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.yy]
       
-      @scala.inline
-      def yyy: typings.momentDurationFormat.momentDurationFormatStrings.yyy = "yyy".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.yyy]
+      inline def yyy: typings.momentDurationFormat.momentDurationFormatStrings.yyy = "yyy".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.yyy]
     }
     
     trait Duration_ extends StObject {
@@ -552,17 +452,14 @@ object mod {
     }
     object Duration_ {
       
-      @scala.inline
-      def apply(format: Format): Duration_ = {
+      inline def apply(format: Format): Duration_ = {
         val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
         __obj.asInstanceOf[Duration_]
       }
       
-      @scala.inline
-      implicit class Duration_MutableBuilder[Self <: Duration_] (val x: Self) extends AnyVal {
+      extension [Self <: Duration_](x: Self) {
         
-        @scala.inline
-        def setFormat(value: Format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+        inline def setFormat(value: Format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       }
     }
     
@@ -601,53 +498,38 @@ object mod {
     }
     object LocaleSpecification {
       
-      @scala.inline
-      def apply(): LocaleSpecification = {
+      inline def apply(): LocaleSpecification = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[LocaleSpecification]
       }
       
-      @scala.inline
-      implicit class LocaleSpecificationMutableBuilder[Self <: LocaleSpecification] (val x: Self) extends AnyVal {
+      extension [Self <: LocaleSpecification](x: Self) {
         
-        @scala.inline
-        def setDurationLabelTypes(value: js.Array[DurationLabelTypeDef]): Self = StObject.set(x, "durationLabelTypes", value.asInstanceOf[js.Any])
+        inline def setDurationLabelTypes(value: js.Array[DurationLabelTypeDef]): Self = StObject.set(x, "durationLabelTypes", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDurationLabelTypesUndefined: Self = StObject.set(x, "durationLabelTypes", js.undefined)
+        inline def setDurationLabelTypesUndefined: Self = StObject.set(x, "durationLabelTypes", js.undefined)
         
-        @scala.inline
-        def setDurationLabelTypesVarargs(value: DurationLabelTypeDef*): Self = StObject.set(x, "durationLabelTypes", js.Array(value :_*))
+        inline def setDurationLabelTypesVarargs(value: DurationLabelTypeDef*): Self = StObject.set(x, "durationLabelTypes", js.Array(value :_*))
         
-        @scala.inline
-        def setDurationLabelsLong(value: DurationLabelDef): Self = StObject.set(x, "durationLabelsLong", value.asInstanceOf[js.Any])
+        inline def setDurationLabelsLong(value: DurationLabelDef): Self = StObject.set(x, "durationLabelsLong", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDurationLabelsLongUndefined: Self = StObject.set(x, "durationLabelsLong", js.undefined)
+        inline def setDurationLabelsLongUndefined: Self = StObject.set(x, "durationLabelsLong", js.undefined)
         
-        @scala.inline
-        def setDurationLabelsShort(value: DurationLabelDef): Self = StObject.set(x, "durationLabelsShort", value.asInstanceOf[js.Any])
+        inline def setDurationLabelsShort(value: DurationLabelDef): Self = StObject.set(x, "durationLabelsShort", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDurationLabelsShortUndefined: Self = StObject.set(x, "durationLabelsShort", js.undefined)
+        inline def setDurationLabelsShortUndefined: Self = StObject.set(x, "durationLabelsShort", js.undefined)
         
-        @scala.inline
-        def setDurationLabelsStandard(value: DurationLabelDef): Self = StObject.set(x, "durationLabelsStandard", value.asInstanceOf[js.Any])
+        inline def setDurationLabelsStandard(value: DurationLabelDef): Self = StObject.set(x, "durationLabelsStandard", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDurationLabelsStandardUndefined: Self = StObject.set(x, "durationLabelsStandard", js.undefined)
+        inline def setDurationLabelsStandardUndefined: Self = StObject.set(x, "durationLabelsStandard", js.undefined)
         
-        @scala.inline
-        def setDurationPluralKey(value: (/* token */ String, /* integerValue */ Double, /* decimalValue */ Double) => String): Self = StObject.set(x, "durationPluralKey", js.Any.fromFunction3(value))
+        inline def setDurationPluralKey(value: (/* token */ String, /* integerValue */ Double, /* decimalValue */ Double) => String): Self = StObject.set(x, "durationPluralKey", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setDurationPluralKeyUndefined: Self = StObject.set(x, "durationPluralKey", js.undefined)
+        inline def setDurationPluralKeyUndefined: Self = StObject.set(x, "durationPluralKey", js.undefined)
         
-        @scala.inline
-        def setDurationTimeTemplates(value: DurationTimeDef): Self = StObject.set(x, "durationTimeTemplates", value.asInstanceOf[js.Any])
+        inline def setDurationTimeTemplates(value: DurationTimeDef): Self = StObject.set(x, "durationTimeTemplates", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDurationTimeTemplatesUndefined: Self = StObject.set(x, "durationTimeTemplates", js.undefined)
+        inline def setDurationTimeTemplatesUndefined: Self = StObject.set(x, "durationTimeTemplates", js.undefined)
       }
     }
     
@@ -664,23 +546,17 @@ object mod {
     trait UnitOfTrim extends StObject
     object UnitOfTrim {
       
-      @scala.inline
-      def all: typings.momentDurationFormat.momentDurationFormatStrings.all = "all".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.all]
+      inline def all: typings.momentDurationFormat.momentDurationFormatStrings.all = "all".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.all]
       
-      @scala.inline
-      def both: typings.momentDurationFormat.momentDurationFormatStrings.both = "both".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.both]
+      inline def both: typings.momentDurationFormat.momentDurationFormatStrings.both = "both".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.both]
       
-      @scala.inline
-      def `final`: typings.momentDurationFormat.momentDurationFormatStrings.`final` = "final".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.`final`]
+      inline def `final`: typings.momentDurationFormat.momentDurationFormatStrings.`final` = "final".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.`final`]
       
-      @scala.inline
-      def large: typings.momentDurationFormat.momentDurationFormatStrings.large = "large".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.large]
+      inline def large: typings.momentDurationFormat.momentDurationFormatStrings.large = "large".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.large]
       
-      @scala.inline
-      def mid: typings.momentDurationFormat.momentDurationFormatStrings.mid = "mid".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.mid]
+      inline def mid: typings.momentDurationFormat.momentDurationFormatStrings.mid = "mid".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.mid]
       
-      @scala.inline
-      def small: typings.momentDurationFormat.momentDurationFormatStrings.small = "small".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.small]
+      inline def small: typings.momentDurationFormat.momentDurationFormatStrings.small = "small".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.small]
     }
     
     /* Rewritten from type alias, can be one of: 
@@ -690,11 +566,9 @@ object mod {
     trait UnitOfTrimV1 extends StObject
     object UnitOfTrimV1 {
       
-      @scala.inline
-      def left: typings.momentDurationFormat.momentDurationFormatStrings.left = "left".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.left]
+      inline def left: typings.momentDurationFormat.momentDurationFormatStrings.left = "left".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.left]
       
-      @scala.inline
-      def right: typings.momentDurationFormat.momentDurationFormatStrings.right = "right".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.right]
+      inline def right: typings.momentDurationFormat.momentDurationFormatStrings.right = "right".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.right]
     }
   }
 }

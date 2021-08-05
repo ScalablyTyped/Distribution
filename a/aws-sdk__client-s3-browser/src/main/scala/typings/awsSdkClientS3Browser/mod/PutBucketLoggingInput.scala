@@ -10,8 +10,7 @@ trait PutBucketLoggingInput
      with typings.awsSdkClientS3Browser.typesPutBucketLoggingInputMod.PutBucketLoggingInput
 object PutBucketLoggingInput {
   
-  @scala.inline
-  def apply(Bucket: String, BucketLoggingStatus: BucketLoggingStatus): PutBucketLoggingInput = {
+  inline def apply(Bucket: String, BucketLoggingStatus: BucketLoggingStatus): PutBucketLoggingInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], BucketLoggingStatus = BucketLoggingStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketLoggingInput]
   }

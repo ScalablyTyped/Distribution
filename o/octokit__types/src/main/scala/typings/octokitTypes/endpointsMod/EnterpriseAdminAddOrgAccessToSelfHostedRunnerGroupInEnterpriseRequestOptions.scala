@@ -20,26 +20,20 @@ trait EnterpriseAdminAddOrgAccessToSelfHostedRunnerGroupInEnterpriseRequestOptio
 }
 object EnterpriseAdminAddOrgAccessToSelfHostedRunnerGroupInEnterpriseRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): EnterpriseAdminAddOrgAccessToSelfHostedRunnerGroupInEnterpriseRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): EnterpriseAdminAddOrgAccessToSelfHostedRunnerGroupInEnterpriseRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "PUT", request = request.asInstanceOf[js.Any], url = "/enterprises/:enterprise/actions/runner-groups/:runner_group_id/organizations/:org_id")
     __obj.asInstanceOf[EnterpriseAdminAddOrgAccessToSelfHostedRunnerGroupInEnterpriseRequestOptions]
   }
   
-  @scala.inline
-  implicit class EnterpriseAdminAddOrgAccessToSelfHostedRunnerGroupInEnterpriseRequestOptionsMutableBuilder[Self <: EnterpriseAdminAddOrgAccessToSelfHostedRunnerGroupInEnterpriseRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EnterpriseAdminAddOrgAccessToSelfHostedRunnerGroupInEnterpriseRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: PUT): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: PUT): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(
+    inline def setUrl(
       value: `SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashorganizationsSlashColonorg_id`
     ): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }

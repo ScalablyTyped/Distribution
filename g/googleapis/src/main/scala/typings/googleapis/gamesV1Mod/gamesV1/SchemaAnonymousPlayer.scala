@@ -27,31 +27,23 @@ trait SchemaAnonymousPlayer extends StObject {
 }
 object SchemaAnonymousPlayer {
   
-  @scala.inline
-  def apply(): SchemaAnonymousPlayer = {
+  inline def apply(): SchemaAnonymousPlayer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAnonymousPlayer]
   }
   
-  @scala.inline
-  implicit class SchemaAnonymousPlayerMutableBuilder[Self <: SchemaAnonymousPlayer] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAnonymousPlayer](x: Self) {
     
-    @scala.inline
-    def setAvatarImageUrl(value: String): Self = StObject.set(x, "avatarImageUrl", value.asInstanceOf[js.Any])
+    inline def setAvatarImageUrl(value: String): Self = StObject.set(x, "avatarImageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvatarImageUrlUndefined: Self = StObject.set(x, "avatarImageUrl", js.undefined)
+    inline def setAvatarImageUrlUndefined: Self = StObject.set(x, "avatarImageUrl", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

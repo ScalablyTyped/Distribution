@@ -14,31 +14,23 @@ trait Thickness extends StObject {
 }
 object Thickness {
   
-  @scala.inline
-  def apply(): Thickness = {
+  inline def apply(): Thickness = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Thickness]
   }
   
-  @scala.inline
-  implicit class ThicknessMutableBuilder[Self <: Thickness] (val x: Self) extends AnyVal {
+  extension [Self <: Thickness](x: Self) {
     
-    @scala.inline
-    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setThickness(value: String): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
+    inline def setThickness(value: String): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThicknessUndefined: Self = StObject.set(x, "thickness", js.undefined)
+    inline def setThicknessUndefined: Self = StObject.set(x, "thickness", js.undefined)
     
-    @scala.inline
-    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

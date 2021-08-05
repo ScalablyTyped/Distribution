@@ -10,19 +10,15 @@ trait GetCertificateResponse extends StObject {
 }
 object GetCertificateResponse {
   
-  @scala.inline
-  def apply(tableNames: js.Array[String]): GetCertificateResponse = {
+  inline def apply(tableNames: js.Array[String]): GetCertificateResponse = {
     val __obj = js.Dynamic.literal(tableNames = tableNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCertificateResponse]
   }
   
-  @scala.inline
-  implicit class GetCertificateResponseMutableBuilder[Self <: GetCertificateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetCertificateResponse](x: Self) {
     
-    @scala.inline
-    def setTableNames(value: js.Array[String]): Self = StObject.set(x, "tableNames", value.asInstanceOf[js.Any])
+    inline def setTableNames(value: js.Array[String]): Self = StObject.set(x, "tableNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableNamesVarargs(value: String*): Self = StObject.set(x, "tableNames", js.Array(value :_*))
+    inline def setTableNamesVarargs(value: String*): Self = StObject.set(x, "tableNames", js.Array(value :_*))
   }
 }

@@ -18,25 +18,19 @@ trait Input extends StObject {
 }
 object Input {
   
-  @scala.inline
-  def apply(): Input = {
+  inline def apply(): Input = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Input]
   }
   
-  @scala.inline
-  implicit class InputMutableBuilder[Self <: Input] (val x: Self) extends AnyVal {
+  extension [Self <: Input](x: Self) {
     
-    @scala.inline
-    def setInputConfiguration(value: InputConfiguration): Self = StObject.set(x, "inputConfiguration", value.asInstanceOf[js.Any])
+    inline def setInputConfiguration(value: InputConfiguration): Self = StObject.set(x, "inputConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputConfigurationUndefined: Self = StObject.set(x, "inputConfiguration", js.undefined)
+    inline def setInputConfigurationUndefined: Self = StObject.set(x, "inputConfiguration", js.undefined)
     
-    @scala.inline
-    def setInputDefinition(value: InputDefinition): Self = StObject.set(x, "inputDefinition", value.asInstanceOf[js.Any])
+    inline def setInputDefinition(value: InputDefinition): Self = StObject.set(x, "inputDefinition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputDefinitionUndefined: Self = StObject.set(x, "inputDefinition", js.undefined)
+    inline def setInputDefinitionUndefined: Self = StObject.set(x, "inputDefinition", js.undefined)
   }
 }

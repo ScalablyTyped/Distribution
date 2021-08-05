@@ -25,8 +25,7 @@ trait CreateSoftwareUpdateJobRequest extends StObject {
 }
 object CreateSoftwareUpdateJobRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     S3UrlSignerRole: S3UrlSignerRole,
     SoftwareToUpdate: SoftwareToUpdate,
     UpdateTargets: UpdateTargets,
@@ -37,37 +36,26 @@ object CreateSoftwareUpdateJobRequest {
     __obj.asInstanceOf[CreateSoftwareUpdateJobRequest]
   }
   
-  @scala.inline
-  implicit class CreateSoftwareUpdateJobRequestMutableBuilder[Self <: CreateSoftwareUpdateJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateSoftwareUpdateJobRequest](x: Self) {
     
-    @scala.inline
-    def setAmznClientToken(value: string): Self = StObject.set(x, "AmznClientToken", value.asInstanceOf[js.Any])
+    inline def setAmznClientToken(value: string): Self = StObject.set(x, "AmznClientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmznClientTokenUndefined: Self = StObject.set(x, "AmznClientToken", js.undefined)
+    inline def setAmznClientTokenUndefined: Self = StObject.set(x, "AmznClientToken", js.undefined)
     
-    @scala.inline
-    def setS3UrlSignerRole(value: S3UrlSignerRole): Self = StObject.set(x, "S3UrlSignerRole", value.asInstanceOf[js.Any])
+    inline def setS3UrlSignerRole(value: S3UrlSignerRole): Self = StObject.set(x, "S3UrlSignerRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoftwareToUpdate(value: SoftwareToUpdate): Self = StObject.set(x, "SoftwareToUpdate", value.asInstanceOf[js.Any])
+    inline def setSoftwareToUpdate(value: SoftwareToUpdate): Self = StObject.set(x, "SoftwareToUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateAgentLogLevel(value: UpdateAgentLogLevel): Self = StObject.set(x, "UpdateAgentLogLevel", value.asInstanceOf[js.Any])
+    inline def setUpdateAgentLogLevel(value: UpdateAgentLogLevel): Self = StObject.set(x, "UpdateAgentLogLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateAgentLogLevelUndefined: Self = StObject.set(x, "UpdateAgentLogLevel", js.undefined)
+    inline def setUpdateAgentLogLevelUndefined: Self = StObject.set(x, "UpdateAgentLogLevel", js.undefined)
     
-    @scala.inline
-    def setUpdateTargets(value: UpdateTargets): Self = StObject.set(x, "UpdateTargets", value.asInstanceOf[js.Any])
+    inline def setUpdateTargets(value: UpdateTargets): Self = StObject.set(x, "UpdateTargets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTargetsArchitecture(value: UpdateTargetsArchitecture): Self = StObject.set(x, "UpdateTargetsArchitecture", value.asInstanceOf[js.Any])
+    inline def setUpdateTargetsArchitecture(value: UpdateTargetsArchitecture): Self = StObject.set(x, "UpdateTargetsArchitecture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTargetsOperatingSystem(value: UpdateTargetsOperatingSystem): Self = StObject.set(x, "UpdateTargetsOperatingSystem", value.asInstanceOf[js.Any])
+    inline def setUpdateTargetsOperatingSystem(value: UpdateTargetsOperatingSystem): Self = StObject.set(x, "UpdateTargetsOperatingSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTargetsVarargs(value: string*): Self = StObject.set(x, "UpdateTargets", js.Array(value :_*))
+    inline def setUpdateTargetsVarargs(value: string*): Self = StObject.set(x, "UpdateTargets", js.Array(value :_*))
   }
 }

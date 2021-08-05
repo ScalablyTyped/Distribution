@@ -70,8 +70,7 @@ trait ApplicationApplicationConfigurationSqlApplicationConfigurationInput extend
 }
 object ApplicationApplicationConfigurationSqlApplicationConfigurationInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     inputSchema: Input[ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchema],
     namePrefix: Input[String]
   ): ApplicationApplicationConfigurationSqlApplicationConfigurationInput = {
@@ -79,49 +78,37 @@ object ApplicationApplicationConfigurationSqlApplicationConfigurationInput {
     __obj.asInstanceOf[ApplicationApplicationConfigurationSqlApplicationConfigurationInput]
   }
   
-  @scala.inline
-  implicit class ApplicationApplicationConfigurationSqlApplicationConfigurationInputMutableBuilder[Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationInput] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationApplicationConfigurationSqlApplicationConfigurationInput](x: Self) {
     
-    @scala.inline
-    def setInAppStreamNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "inAppStreamNames", value.asInstanceOf[js.Any])
+    inline def setInAppStreamNames(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "inAppStreamNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInAppStreamNamesUndefined: Self = StObject.set(x, "inAppStreamNames", js.undefined)
+    inline def setInAppStreamNamesUndefined: Self = StObject.set(x, "inAppStreamNames", js.undefined)
     
-    @scala.inline
-    def setInAppStreamNamesVarargs(value: Input[String]*): Self = StObject.set(x, "inAppStreamNames", js.Array(value :_*))
+    inline def setInAppStreamNamesVarargs(value: Input[String]*): Self = StObject.set(x, "inAppStreamNames", js.Array(value :_*))
     
-    @scala.inline
-    def setInputId(value: Input[String]): Self = StObject.set(x, "inputId", value.asInstanceOf[js.Any])
+    inline def setInputId(value: Input[String]): Self = StObject.set(x, "inputId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputIdUndefined: Self = StObject.set(x, "inputId", js.undefined)
+    inline def setInputIdUndefined: Self = StObject.set(x, "inputId", js.undefined)
     
-    @scala.inline
-    def setInputParallelism(
+    inline def setInputParallelism(
       value: Input[
           ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputParallelism
         ]
     ): Self = StObject.set(x, "inputParallelism", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputParallelismUndefined: Self = StObject.set(x, "inputParallelism", js.undefined)
+    inline def setInputParallelismUndefined: Self = StObject.set(x, "inputParallelism", js.undefined)
     
-    @scala.inline
-    def setInputProcessingConfiguration(
+    inline def setInputProcessingConfiguration(
       value: Input[
           ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputProcessingConfiguration
         ]
     ): Self = StObject.set(x, "inputProcessingConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputProcessingConfigurationUndefined: Self = StObject.set(x, "inputProcessingConfiguration", js.undefined)
+    inline def setInputProcessingConfigurationUndefined: Self = StObject.set(x, "inputProcessingConfiguration", js.undefined)
     
-    @scala.inline
-    def setInputSchema(value: Input[ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchema]): Self = StObject.set(x, "inputSchema", value.asInstanceOf[js.Any])
+    inline def setInputSchema(value: Input[ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchema]): Self = StObject.set(x, "inputSchema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputStartingPositionConfigurations(
+    inline def setInputStartingPositionConfigurations(
       value: Input[
           js.Array[
             Input[
@@ -131,37 +118,30 @@ object ApplicationApplicationConfigurationSqlApplicationConfigurationInput {
         ]
     ): Self = StObject.set(x, "inputStartingPositionConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputStartingPositionConfigurationsUndefined: Self = StObject.set(x, "inputStartingPositionConfigurations", js.undefined)
+    inline def setInputStartingPositionConfigurationsUndefined: Self = StObject.set(x, "inputStartingPositionConfigurations", js.undefined)
     
-    @scala.inline
-    def setInputStartingPositionConfigurationsVarargs(
+    inline def setInputStartingPositionConfigurationsVarargs(
       value: (Input[
           ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputStartingPositionConfiguration
         ])*
     ): Self = StObject.set(x, "inputStartingPositionConfigurations", js.Array(value :_*))
     
-    @scala.inline
-    def setKinesisFirehoseInput(
+    inline def setKinesisFirehoseInput(
       value: Input[
           ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisFirehoseInput
         ]
     ): Self = StObject.set(x, "kinesisFirehoseInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKinesisFirehoseInputUndefined: Self = StObject.set(x, "kinesisFirehoseInput", js.undefined)
+    inline def setKinesisFirehoseInputUndefined: Self = StObject.set(x, "kinesisFirehoseInput", js.undefined)
     
-    @scala.inline
-    def setKinesisStreamsInput(
+    inline def setKinesisStreamsInput(
       value: Input[
           ApplicationApplicationConfigurationSqlApplicationConfigurationInputKinesisStreamsInput
         ]
     ): Self = StObject.set(x, "kinesisStreamsInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKinesisStreamsInputUndefined: Self = StObject.set(x, "kinesisStreamsInput", js.undefined)
+    inline def setKinesisStreamsInputUndefined: Self = StObject.set(x, "kinesisStreamsInput", js.undefined)
     
-    @scala.inline
-    def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
+    inline def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
   }
 }

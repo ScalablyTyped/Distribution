@@ -17,31 +17,23 @@ trait NamedStyleSuggestionState extends StObject {
 }
 object NamedStyleSuggestionState {
   
-  @scala.inline
-  def apply(): NamedStyleSuggestionState = {
+  inline def apply(): NamedStyleSuggestionState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NamedStyleSuggestionState]
   }
   
-  @scala.inline
-  implicit class NamedStyleSuggestionStateMutableBuilder[Self <: NamedStyleSuggestionState] (val x: Self) extends AnyVal {
+  extension [Self <: NamedStyleSuggestionState](x: Self) {
     
-    @scala.inline
-    def setNamedStyleType(value: String): Self = StObject.set(x, "namedStyleType", value.asInstanceOf[js.Any])
+    inline def setNamedStyleType(value: String): Self = StObject.set(x, "namedStyleType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamedStyleTypeUndefined: Self = StObject.set(x, "namedStyleType", js.undefined)
+    inline def setNamedStyleTypeUndefined: Self = StObject.set(x, "namedStyleType", js.undefined)
     
-    @scala.inline
-    def setParagraphStyleSuggestionState(value: ParagraphStyleSuggestionState): Self = StObject.set(x, "paragraphStyleSuggestionState", value.asInstanceOf[js.Any])
+    inline def setParagraphStyleSuggestionState(value: ParagraphStyleSuggestionState): Self = StObject.set(x, "paragraphStyleSuggestionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParagraphStyleSuggestionStateUndefined: Self = StObject.set(x, "paragraphStyleSuggestionState", js.undefined)
+    inline def setParagraphStyleSuggestionStateUndefined: Self = StObject.set(x, "paragraphStyleSuggestionState", js.undefined)
     
-    @scala.inline
-    def setTextStyleSuggestionState(value: TextStyleSuggestionState): Self = StObject.set(x, "textStyleSuggestionState", value.asInstanceOf[js.Any])
+    inline def setTextStyleSuggestionState(value: TextStyleSuggestionState): Self = StObject.set(x, "textStyleSuggestionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextStyleSuggestionStateUndefined: Self = StObject.set(x, "textStyleSuggestionState", js.undefined)
+    inline def setTextStyleSuggestionStateUndefined: Self = StObject.set(x, "textStyleSuggestionState", js.undefined)
   }
 }

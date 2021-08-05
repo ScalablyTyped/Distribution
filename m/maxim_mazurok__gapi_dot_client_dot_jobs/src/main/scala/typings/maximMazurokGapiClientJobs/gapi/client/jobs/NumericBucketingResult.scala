@@ -17,34 +17,25 @@ trait NumericBucketingResult extends StObject {
 }
 object NumericBucketingResult {
   
-  @scala.inline
-  def apply(): NumericBucketingResult = {
+  inline def apply(): NumericBucketingResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NumericBucketingResult]
   }
   
-  @scala.inline
-  implicit class NumericBucketingResultMutableBuilder[Self <: NumericBucketingResult] (val x: Self) extends AnyVal {
+  extension [Self <: NumericBucketingResult](x: Self) {
     
-    @scala.inline
-    def setCounts(value: js.Array[BucketizedCount]): Self = StObject.set(x, "counts", value.asInstanceOf[js.Any])
+    inline def setCounts(value: js.Array[BucketizedCount]): Self = StObject.set(x, "counts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountsUndefined: Self = StObject.set(x, "counts", js.undefined)
+    inline def setCountsUndefined: Self = StObject.set(x, "counts", js.undefined)
     
-    @scala.inline
-    def setCountsVarargs(value: BucketizedCount*): Self = StObject.set(x, "counts", js.Array(value :_*))
+    inline def setCountsVarargs(value: BucketizedCount*): Self = StObject.set(x, "counts", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+    inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
-    @scala.inline
-    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
+    inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
   }
 }

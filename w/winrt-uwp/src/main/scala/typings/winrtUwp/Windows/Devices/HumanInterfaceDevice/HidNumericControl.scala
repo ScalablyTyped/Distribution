@@ -30,8 +30,7 @@ trait HidNumericControl extends StObject {
 }
 object HidNumericControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     controlDescription: HidNumericControlDescription,
     id: Double,
     isGrouped: Boolean,
@@ -44,28 +43,20 @@ object HidNumericControl {
     __obj.asInstanceOf[HidNumericControl]
   }
   
-  @scala.inline
-  implicit class HidNumericControlMutableBuilder[Self <: HidNumericControl] (val x: Self) extends AnyVal {
+  extension [Self <: HidNumericControl](x: Self) {
     
-    @scala.inline
-    def setControlDescription(value: HidNumericControlDescription): Self = StObject.set(x, "controlDescription", value.asInstanceOf[js.Any])
+    inline def setControlDescription(value: HidNumericControlDescription): Self = StObject.set(x, "controlDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsGrouped(value: Boolean): Self = StObject.set(x, "isGrouped", value.asInstanceOf[js.Any])
+    inline def setIsGrouped(value: Boolean): Self = StObject.set(x, "isGrouped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaledValue(value: Double): Self = StObject.set(x, "scaledValue", value.asInstanceOf[js.Any])
+    inline def setScaledValue(value: Double): Self = StObject.set(x, "scaledValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageId(value: Double): Self = StObject.set(x, "usageId", value.asInstanceOf[js.Any])
+    inline def setUsageId(value: Double): Self = StObject.set(x, "usageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsagePage(value: Double): Self = StObject.set(x, "usagePage", value.asInstanceOf[js.Any])
+    inline def setUsagePage(value: Double): Self = StObject.set(x, "usagePage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

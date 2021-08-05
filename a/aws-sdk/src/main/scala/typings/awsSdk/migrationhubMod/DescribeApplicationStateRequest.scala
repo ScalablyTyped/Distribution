@@ -13,16 +13,13 @@ trait DescribeApplicationStateRequest extends StObject {
 }
 object DescribeApplicationStateRequest {
   
-  @scala.inline
-  def apply(ApplicationId: ApplicationId): DescribeApplicationStateRequest = {
+  inline def apply(ApplicationId: ApplicationId): DescribeApplicationStateRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeApplicationStateRequest]
   }
   
-  @scala.inline
-  implicit class DescribeApplicationStateRequestMutableBuilder[Self <: DescribeApplicationStateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeApplicationStateRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: ApplicationId): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: ApplicationId): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
   }
 }

@@ -18,28 +18,21 @@ trait ListTableMetadataOutput extends StObject {
 }
 object ListTableMetadataOutput {
   
-  @scala.inline
-  def apply(): ListTableMetadataOutput = {
+  inline def apply(): ListTableMetadataOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTableMetadataOutput]
   }
   
-  @scala.inline
-  implicit class ListTableMetadataOutputMutableBuilder[Self <: ListTableMetadataOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListTableMetadataOutput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTableMetadataList(value: TableMetadataList): Self = StObject.set(x, "TableMetadataList", value.asInstanceOf[js.Any])
+    inline def setTableMetadataList(value: TableMetadataList): Self = StObject.set(x, "TableMetadataList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableMetadataListUndefined: Self = StObject.set(x, "TableMetadataList", js.undefined)
+    inline def setTableMetadataListUndefined: Self = StObject.set(x, "TableMetadataList", js.undefined)
     
-    @scala.inline
-    def setTableMetadataListVarargs(value: TableMetadata*): Self = StObject.set(x, "TableMetadataList", js.Array(value :_*))
+    inline def setTableMetadataListVarargs(value: TableMetadata*): Self = StObject.set(x, "TableMetadataList", js.Array(value :_*))
   }
 }

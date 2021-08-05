@@ -71,7 +71,7 @@ trait DoNotUseMeFolder extends StObject {
   
   var Name: String = js.native
   
-  @JSName("Outlook.DoNotUseMeFolder_typekey")
+  /* private */ @JSName("Outlook.DoNotUseMeFolder_typekey")
   var OutlookDotDoNotUseMeFolder_typekey: DoNotUseMeFolder = js.native
   
   val Parent: js.Any = js.native

@@ -14,16 +14,13 @@ trait ClusterLoggingInfo extends StObject {
 }
 object ClusterLoggingInfo {
   
-  @scala.inline
-  def apply(brokerLogs: Input[ClusterLoggingInfoBrokerLogs]): ClusterLoggingInfo = {
+  inline def apply(brokerLogs: Input[ClusterLoggingInfoBrokerLogs]): ClusterLoggingInfo = {
     val __obj = js.Dynamic.literal(brokerLogs = brokerLogs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterLoggingInfo]
   }
   
-  @scala.inline
-  implicit class ClusterLoggingInfoMutableBuilder[Self <: ClusterLoggingInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterLoggingInfo](x: Self) {
     
-    @scala.inline
-    def setBrokerLogs(value: Input[ClusterLoggingInfoBrokerLogs]): Self = StObject.set(x, "brokerLogs", value.asInstanceOf[js.Any])
+    inline def setBrokerLogs(value: Input[ClusterLoggingInfoBrokerLogs]): Self = StObject.set(x, "brokerLogs", value.asInstanceOf[js.Any])
   }
 }

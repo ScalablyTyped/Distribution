@@ -11,7 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class CentralDirectory protected () extends StObject {
   def this(zipData: Buffer, data: Buffer) = this()
   
-  var _filename: js.Any = js.native
+  /* private */ var _filename: js.Any = js.native
   
   def compressedSize(): Double = js.native
   
@@ -19,7 +19,7 @@ class CentralDirectory protected () extends StObject {
   
   def crc32(): Double = js.native
   
-  var data: js.Any = js.native
+  /* private */ var data: js.Any = js.native
   
   def diskNumberStart(): Double = js.native
   
@@ -77,5 +77,5 @@ class CentralDirectory protected () extends StObject {
   
   def versionNeeded(): Double = js.native
   
-  var zipData: js.Any = js.native
+  /* private */ var zipData: js.Any = js.native
 }

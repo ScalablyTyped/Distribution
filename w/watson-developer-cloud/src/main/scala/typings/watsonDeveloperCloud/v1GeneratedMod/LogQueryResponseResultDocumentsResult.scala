@@ -24,43 +24,31 @@ trait LogQueryResponseResultDocumentsResult extends StObject {
 }
 object LogQueryResponseResultDocumentsResult {
   
-  @scala.inline
-  def apply(): LogQueryResponseResultDocumentsResult = {
+  inline def apply(): LogQueryResponseResultDocumentsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LogQueryResponseResultDocumentsResult]
   }
   
-  @scala.inline
-  implicit class LogQueryResponseResultDocumentsResultMutableBuilder[Self <: LogQueryResponseResultDocumentsResult] (val x: Self) extends AnyVal {
+  extension [Self <: LogQueryResponseResultDocumentsResult](x: Self) {
     
-    @scala.inline
-    def setCollection_id(value: String): Self = StObject.set(x, "collection_id", value.asInstanceOf[js.Any])
+    inline def setCollection_id(value: String): Self = StObject.set(x, "collection_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollection_idUndefined: Self = StObject.set(x, "collection_id", js.undefined)
+    inline def setCollection_idUndefined: Self = StObject.set(x, "collection_id", js.undefined)
     
-    @scala.inline
-    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
-    @scala.inline
-    def setDocument_id(value: String): Self = StObject.set(x, "document_id", value.asInstanceOf[js.Any])
+    inline def setDocument_id(value: String): Self = StObject.set(x, "document_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocument_idUndefined: Self = StObject.set(x, "document_id", js.undefined)
+    inline def setDocument_idUndefined: Self = StObject.set(x, "document_id", js.undefined)
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
+    inline def setScoreUndefined: Self = StObject.set(x, "score", js.undefined)
   }
 }

@@ -12,6 +12,5 @@ object srcGetInternalSlotsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(x: DateTimeFormat): IntlDateTimeFormatInternal = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(x.asInstanceOf[js.Any]).asInstanceOf[IntlDateTimeFormatInternal]
+  inline def default(x: DateTimeFormat): IntlDateTimeFormatInternal = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(x.asInstanceOf[js.Any]).asInstanceOf[IntlDateTimeFormatInternal]
 }

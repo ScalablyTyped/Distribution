@@ -19,31 +19,23 @@ trait WorkspaceEditMetadata extends StObject {
 }
 object WorkspaceEditMetadata {
   
-  @scala.inline
-  def apply(label: String, needsConfirmation: Boolean): WorkspaceEditMetadata = {
+  inline def apply(label: String, needsConfirmation: Boolean): WorkspaceEditMetadata = {
     val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any], needsConfirmation = needsConfirmation.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkspaceEditMetadata]
   }
   
-  @scala.inline
-  implicit class WorkspaceEditMetadataMutableBuilder[Self <: WorkspaceEditMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: WorkspaceEditMetadata](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setIconPath(value: Id | Uri | Dark): Self = StObject.set(x, "iconPath", value.asInstanceOf[js.Any])
+    inline def setIconPath(value: Id | Uri | Dark): Self = StObject.set(x, "iconPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconPathUndefined: Self = StObject.set(x, "iconPath", js.undefined)
+    inline def setIconPathUndefined: Self = StObject.set(x, "iconPath", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNeedsConfirmation(value: Boolean): Self = StObject.set(x, "needsConfirmation", value.asInstanceOf[js.Any])
+    inline def setNeedsConfirmation(value: Boolean): Self = StObject.set(x, "needsConfirmation", value.asInstanceOf[js.Any])
   }
 }

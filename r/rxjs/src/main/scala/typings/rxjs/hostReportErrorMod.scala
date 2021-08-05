@@ -10,6 +10,5 @@ object hostReportErrorMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def hostReportError(err: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hostReportError")(err.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def hostReportError(err: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hostReportError")(err.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

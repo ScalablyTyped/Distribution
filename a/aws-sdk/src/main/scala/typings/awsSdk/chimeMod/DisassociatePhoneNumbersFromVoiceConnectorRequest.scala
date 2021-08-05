@@ -18,22 +18,17 @@ trait DisassociatePhoneNumbersFromVoiceConnectorRequest extends StObject {
 }
 object DisassociatePhoneNumbersFromVoiceConnectorRequest {
   
-  @scala.inline
-  def apply(E164PhoneNumbers: E164PhoneNumberList, VoiceConnectorId: NonEmptyString): DisassociatePhoneNumbersFromVoiceConnectorRequest = {
+  inline def apply(E164PhoneNumbers: E164PhoneNumberList, VoiceConnectorId: NonEmptyString): DisassociatePhoneNumbersFromVoiceConnectorRequest = {
     val __obj = js.Dynamic.literal(E164PhoneNumbers = E164PhoneNumbers.asInstanceOf[js.Any], VoiceConnectorId = VoiceConnectorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociatePhoneNumbersFromVoiceConnectorRequest]
   }
   
-  @scala.inline
-  implicit class DisassociatePhoneNumbersFromVoiceConnectorRequestMutableBuilder[Self <: DisassociatePhoneNumbersFromVoiceConnectorRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociatePhoneNumbersFromVoiceConnectorRequest](x: Self) {
     
-    @scala.inline
-    def setE164PhoneNumbers(value: E164PhoneNumberList): Self = StObject.set(x, "E164PhoneNumbers", value.asInstanceOf[js.Any])
+    inline def setE164PhoneNumbers(value: E164PhoneNumberList): Self = StObject.set(x, "E164PhoneNumbers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setE164PhoneNumbersVarargs(value: E164PhoneNumber*): Self = StObject.set(x, "E164PhoneNumbers", js.Array(value :_*))
+    inline def setE164PhoneNumbersVarargs(value: E164PhoneNumber*): Self = StObject.set(x, "E164PhoneNumbers", js.Array(value :_*))
     
-    @scala.inline
-    def setVoiceConnectorId(value: NonEmptyString): Self = StObject.set(x, "VoiceConnectorId", value.asInstanceOf[js.Any])
+    inline def setVoiceConnectorId(value: NonEmptyString): Self = StObject.set(x, "VoiceConnectorId", value.asInstanceOf[js.Any])
   }
 }

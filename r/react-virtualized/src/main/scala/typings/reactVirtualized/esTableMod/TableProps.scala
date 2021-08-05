@@ -157,8 +157,7 @@ trait TableProps
 }
 object TableProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     headerHeight: Double,
     rowCount: Double,
     rowHeight: Double | (js.Function1[/* params */ Index, Double])
@@ -167,172 +166,116 @@ object TableProps {
     __obj.asInstanceOf[TableProps]
   }
   
-  @scala.inline
-  implicit class TablePropsMutableBuilder[Self <: TableProps] (val x: Self) extends AnyVal {
+  extension [Self <: TableProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setDisableHeader(value: Boolean): Self = StObject.set(x, "disableHeader", value.asInstanceOf[js.Any])
+    inline def setDisableHeader(value: Boolean): Self = StObject.set(x, "disableHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableHeaderUndefined: Self = StObject.set(x, "disableHeader", js.undefined)
+    inline def setDisableHeaderUndefined: Self = StObject.set(x, "disableHeader", js.undefined)
     
-    @scala.inline
-    def setGridClassName(value: String): Self = StObject.set(x, "gridClassName", value.asInstanceOf[js.Any])
+    inline def setGridClassName(value: String): Self = StObject.set(x, "gridClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridClassNameUndefined: Self = StObject.set(x, "gridClassName", js.undefined)
+    inline def setGridClassNameUndefined: Self = StObject.set(x, "gridClassName", js.undefined)
     
-    @scala.inline
-    def setGridStyle(value: js.Any): Self = StObject.set(x, "gridStyle", value.asInstanceOf[js.Any])
+    inline def setGridStyle(value: js.Any): Self = StObject.set(x, "gridStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridStyleUndefined: Self = StObject.set(x, "gridStyle", js.undefined)
+    inline def setGridStyleUndefined: Self = StObject.set(x, "gridStyle", js.undefined)
     
-    @scala.inline
-    def setHeaderClassName(value: String): Self = StObject.set(x, "headerClassName", value.asInstanceOf[js.Any])
+    inline def setHeaderClassName(value: String): Self = StObject.set(x, "headerClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderClassNameUndefined: Self = StObject.set(x, "headerClassName", js.undefined)
+    inline def setHeaderClassNameUndefined: Self = StObject.set(x, "headerClassName", js.undefined)
     
-    @scala.inline
-    def setHeaderHeight(value: Double): Self = StObject.set(x, "headerHeight", value.asInstanceOf[js.Any])
+    inline def setHeaderHeight(value: Double): Self = StObject.set(x, "headerHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderRowRenderer(value: /* props */ TableHeaderRowProps => ReactNode): Self = StObject.set(x, "headerRowRenderer", js.Any.fromFunction1(value))
+    inline def setHeaderRowRenderer(value: /* props */ TableHeaderRowProps => ReactNode): Self = StObject.set(x, "headerRowRenderer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHeaderRowRendererUndefined: Self = StObject.set(x, "headerRowRenderer", js.undefined)
+    inline def setHeaderRowRendererUndefined: Self = StObject.set(x, "headerRowRenderer", js.undefined)
     
-    @scala.inline
-    def setHeaderStyle(value: js.Any): Self = StObject.set(x, "headerStyle", value.asInstanceOf[js.Any])
+    inline def setHeaderStyle(value: js.Any): Self = StObject.set(x, "headerStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderStyleUndefined: Self = StObject.set(x, "headerStyle", js.undefined)
+    inline def setHeaderStyleUndefined: Self = StObject.set(x, "headerStyle", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setNoRowsRenderer(value: () => Element | Null): Self = StObject.set(x, "noRowsRenderer", js.Any.fromFunction0(value))
+    inline def setNoRowsRenderer(value: () => Element | Null): Self = StObject.set(x, "noRowsRenderer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNoRowsRendererUndefined: Self = StObject.set(x, "noRowsRenderer", js.undefined)
+    inline def setNoRowsRendererUndefined: Self = StObject.set(x, "noRowsRenderer", js.undefined)
     
-    @scala.inline
-    def setOnHeaderClick(value: /* params */ HeaderMouseEventHandlerParams => Unit): Self = StObject.set(x, "onHeaderClick", js.Any.fromFunction1(value))
+    inline def setOnHeaderClick(value: /* params */ HeaderMouseEventHandlerParams => Unit): Self = StObject.set(x, "onHeaderClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnHeaderClickUndefined: Self = StObject.set(x, "onHeaderClick", js.undefined)
+    inline def setOnHeaderClickUndefined: Self = StObject.set(x, "onHeaderClick", js.undefined)
     
-    @scala.inline
-    def setOnRowClick(value: /* info */ RowMouseEventHandlerParams => Unit): Self = StObject.set(x, "onRowClick", js.Any.fromFunction1(value))
+    inline def setOnRowClick(value: /* info */ RowMouseEventHandlerParams => Unit): Self = StObject.set(x, "onRowClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnRowClickUndefined: Self = StObject.set(x, "onRowClick", js.undefined)
+    inline def setOnRowClickUndefined: Self = StObject.set(x, "onRowClick", js.undefined)
     
-    @scala.inline
-    def setOnRowDoubleClick(value: /* info */ RowMouseEventHandlerParams => Unit): Self = StObject.set(x, "onRowDoubleClick", js.Any.fromFunction1(value))
+    inline def setOnRowDoubleClick(value: /* info */ RowMouseEventHandlerParams => Unit): Self = StObject.set(x, "onRowDoubleClick", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnRowDoubleClickUndefined: Self = StObject.set(x, "onRowDoubleClick", js.undefined)
+    inline def setOnRowDoubleClickUndefined: Self = StObject.set(x, "onRowDoubleClick", js.undefined)
     
-    @scala.inline
-    def setOnRowMouseOut(value: /* info */ RowMouseEventHandlerParams => Unit): Self = StObject.set(x, "onRowMouseOut", js.Any.fromFunction1(value))
+    inline def setOnRowMouseOut(value: /* info */ RowMouseEventHandlerParams => Unit): Self = StObject.set(x, "onRowMouseOut", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnRowMouseOutUndefined: Self = StObject.set(x, "onRowMouseOut", js.undefined)
+    inline def setOnRowMouseOutUndefined: Self = StObject.set(x, "onRowMouseOut", js.undefined)
     
-    @scala.inline
-    def setOnRowMouseOver(value: /* info */ RowMouseEventHandlerParams => Unit): Self = StObject.set(x, "onRowMouseOver", js.Any.fromFunction1(value))
+    inline def setOnRowMouseOver(value: /* info */ RowMouseEventHandlerParams => Unit): Self = StObject.set(x, "onRowMouseOver", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnRowMouseOverUndefined: Self = StObject.set(x, "onRowMouseOver", js.undefined)
+    inline def setOnRowMouseOverUndefined: Self = StObject.set(x, "onRowMouseOver", js.undefined)
     
-    @scala.inline
-    def setOnRowsRendered(value: /* info */ IndexRange & OverscanIndexRange => Unit): Self = StObject.set(x, "onRowsRendered", js.Any.fromFunction1(value))
+    inline def setOnRowsRendered(value: /* info */ IndexRange & OverscanIndexRange => Unit): Self = StObject.set(x, "onRowsRendered", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnRowsRenderedUndefined: Self = StObject.set(x, "onRowsRendered", js.undefined)
+    inline def setOnRowsRenderedUndefined: Self = StObject.set(x, "onRowsRendered", js.undefined)
     
-    @scala.inline
-    def setOnScroll(value: /* info */ ScrollEventData => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+    inline def setOnScroll(value: /* info */ ScrollEventData => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
+    inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
     
-    @scala.inline
-    def setRowClassName(value: String | (js.Function1[/* info */ Index, String])): Self = StObject.set(x, "rowClassName", value.asInstanceOf[js.Any])
+    inline def setRowClassName(value: String | (js.Function1[/* info */ Index, String])): Self = StObject.set(x, "rowClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowClassNameFunction1(value: /* info */ Index => String): Self = StObject.set(x, "rowClassName", js.Any.fromFunction1(value))
+    inline def setRowClassNameFunction1(value: /* info */ Index => String): Self = StObject.set(x, "rowClassName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRowClassNameUndefined: Self = StObject.set(x, "rowClassName", js.undefined)
+    inline def setRowClassNameUndefined: Self = StObject.set(x, "rowClassName", js.undefined)
     
-    @scala.inline
-    def setRowGetter(value: /* info */ Index => js.Any): Self = StObject.set(x, "rowGetter", js.Any.fromFunction1(value))
+    inline def setRowGetter(value: /* info */ Index => js.Any): Self = StObject.set(x, "rowGetter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRowGetterUndefined: Self = StObject.set(x, "rowGetter", js.undefined)
+    inline def setRowGetterUndefined: Self = StObject.set(x, "rowGetter", js.undefined)
     
-    @scala.inline
-    def setRowRenderer(value: /* props */ TableRowProps => ReactNode): Self = StObject.set(x, "rowRenderer", js.Any.fromFunction1(value))
+    inline def setRowRenderer(value: /* props */ TableRowProps => ReactNode): Self = StObject.set(x, "rowRenderer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRowRendererUndefined: Self = StObject.set(x, "rowRenderer", js.undefined)
+    inline def setRowRendererUndefined: Self = StObject.set(x, "rowRenderer", js.undefined)
     
-    @scala.inline
-    def setRowStyle(value: CSSProperties | (js.Function1[/* info */ Index, CSSProperties])): Self = StObject.set(x, "rowStyle", value.asInstanceOf[js.Any])
+    inline def setRowStyle(value: CSSProperties | (js.Function1[/* info */ Index, CSSProperties])): Self = StObject.set(x, "rowStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowStyleFunction1(value: /* info */ Index => CSSProperties): Self = StObject.set(x, "rowStyle", js.Any.fromFunction1(value))
+    inline def setRowStyleFunction1(value: /* info */ Index => CSSProperties): Self = StObject.set(x, "rowStyle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRowStyleUndefined: Self = StObject.set(x, "rowStyle", js.undefined)
+    inline def setRowStyleUndefined: Self = StObject.set(x, "rowStyle", js.undefined)
     
-    @scala.inline
-    def setScrollToAlignment(value: String): Self = StObject.set(x, "scrollToAlignment", value.asInstanceOf[js.Any])
+    inline def setScrollToAlignment(value: String): Self = StObject.set(x, "scrollToAlignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollToAlignmentUndefined: Self = StObject.set(x, "scrollToAlignment", js.undefined)
+    inline def setScrollToAlignmentUndefined: Self = StObject.set(x, "scrollToAlignment", js.undefined)
     
-    @scala.inline
-    def setScrollToIndex(value: Double): Self = StObject.set(x, "scrollToIndex", value.asInstanceOf[js.Any])
+    inline def setScrollToIndex(value: Double): Self = StObject.set(x, "scrollToIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollToIndexUndefined: Self = StObject.set(x, "scrollToIndex", js.undefined)
+    inline def setScrollToIndexUndefined: Self = StObject.set(x, "scrollToIndex", js.undefined)
     
-    @scala.inline
-    def setSort(value: /* info */ SortBy => Unit): Self = StObject.set(x, "sort", js.Any.fromFunction1(value))
+    inline def setSort(value: /* info */ SortBy => Unit): Self = StObject.set(x, "sort", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSortBy(value: String): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
+    inline def setSortBy(value: String): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
+    inline def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
     
-    @scala.inline
-    def setSortDirection(value: SortDirectionType): Self = StObject.set(x, "sortDirection", value.asInstanceOf[js.Any])
+    inline def setSortDirection(value: SortDirectionType): Self = StObject.set(x, "sortDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortDirectionUndefined: Self = StObject.set(x, "sortDirection", js.undefined)
+    inline def setSortDirectionUndefined: Self = StObject.set(x, "sortDirection", js.undefined)
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

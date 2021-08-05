@@ -17,34 +17,25 @@ trait ReleaseChannelConfig extends StObject {
 }
 object ReleaseChannelConfig {
   
-  @scala.inline
-  def apply(): ReleaseChannelConfig = {
+  inline def apply(): ReleaseChannelConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReleaseChannelConfig]
   }
   
-  @scala.inline
-  implicit class ReleaseChannelConfigMutableBuilder[Self <: ReleaseChannelConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ReleaseChannelConfig](x: Self) {
     
-    @scala.inline
-    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+    inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
     
-    @scala.inline
-    def setDefaultVersion(value: String): Self = StObject.set(x, "defaultVersion", value.asInstanceOf[js.Any])
+    inline def setDefaultVersion(value: String): Self = StObject.set(x, "defaultVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultVersionUndefined: Self = StObject.set(x, "defaultVersion", js.undefined)
+    inline def setDefaultVersionUndefined: Self = StObject.set(x, "defaultVersion", js.undefined)
     
-    @scala.inline
-    def setValidVersions(value: js.Array[String]): Self = StObject.set(x, "validVersions", value.asInstanceOf[js.Any])
+    inline def setValidVersions(value: js.Array[String]): Self = StObject.set(x, "validVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidVersionsUndefined: Self = StObject.set(x, "validVersions", js.undefined)
+    inline def setValidVersionsUndefined: Self = StObject.set(x, "validVersions", js.undefined)
     
-    @scala.inline
-    def setValidVersionsVarargs(value: String*): Self = StObject.set(x, "validVersions", js.Array(value :_*))
+    inline def setValidVersionsVarargs(value: String*): Self = StObject.set(x, "validVersions", js.Array(value :_*))
   }
 }

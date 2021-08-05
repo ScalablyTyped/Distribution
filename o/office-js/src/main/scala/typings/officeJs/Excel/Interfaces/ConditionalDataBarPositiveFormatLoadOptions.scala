@@ -45,37 +45,27 @@ trait ConditionalDataBarPositiveFormatLoadOptions extends StObject {
 }
 object ConditionalDataBarPositiveFormatLoadOptions {
   
-  @scala.inline
-  def apply(): ConditionalDataBarPositiveFormatLoadOptions = {
+  inline def apply(): ConditionalDataBarPositiveFormatLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConditionalDataBarPositiveFormatLoadOptions]
   }
   
-  @scala.inline
-  implicit class ConditionalDataBarPositiveFormatLoadOptionsMutableBuilder[Self <: ConditionalDataBarPositiveFormatLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalDataBarPositiveFormatLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setBorderColor(value: Boolean): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+    inline def setBorderColor(value: Boolean): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+    inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
     
-    @scala.inline
-    def setFillColor(value: Boolean): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
+    inline def setFillColor(value: Boolean): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
+    inline def setFillColorUndefined: Self = StObject.set(x, "fillColor", js.undefined)
     
-    @scala.inline
-    def setGradientFill(value: Boolean): Self = StObject.set(x, "gradientFill", value.asInstanceOf[js.Any])
+    inline def setGradientFill(value: Boolean): Self = StObject.set(x, "gradientFill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradientFillUndefined: Self = StObject.set(x, "gradientFill", js.undefined)
+    inline def setGradientFillUndefined: Self = StObject.set(x, "gradientFill", js.undefined)
   }
 }

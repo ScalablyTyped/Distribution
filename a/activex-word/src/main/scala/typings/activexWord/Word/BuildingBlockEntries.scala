@@ -28,6 +28,6 @@ trait BuildingBlockEntries extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("Word.BuildingBlockEntries_typekey")
+  /* private */ @JSName("Word.BuildingBlockEntries_typekey")
   var WordDotBuildingBlockEntries_typekey: BuildingBlockEntries = js.native
 }

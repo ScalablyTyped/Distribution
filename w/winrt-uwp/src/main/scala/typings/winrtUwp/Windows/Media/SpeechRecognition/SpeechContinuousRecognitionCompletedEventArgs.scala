@@ -12,16 +12,13 @@ trait SpeechContinuousRecognitionCompletedEventArgs extends StObject {
 }
 object SpeechContinuousRecognitionCompletedEventArgs {
   
-  @scala.inline
-  def apply(status: SpeechRecognitionResultStatus): SpeechContinuousRecognitionCompletedEventArgs = {
+  inline def apply(status: SpeechRecognitionResultStatus): SpeechContinuousRecognitionCompletedEventArgs = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpeechContinuousRecognitionCompletedEventArgs]
   }
   
-  @scala.inline
-  implicit class SpeechContinuousRecognitionCompletedEventArgsMutableBuilder[Self <: SpeechContinuousRecognitionCompletedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: SpeechContinuousRecognitionCompletedEventArgs](x: Self) {
     
-    @scala.inline
-    def setStatus(value: SpeechRecognitionResultStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: SpeechRecognitionResultStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

@@ -30,19 +30,15 @@ trait SchemaCourseAlias extends StObject {
 }
 object SchemaCourseAlias {
   
-  @scala.inline
-  def apply(): SchemaCourseAlias = {
+  inline def apply(): SchemaCourseAlias = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCourseAlias]
   }
   
-  @scala.inline
-  implicit class SchemaCourseAliasMutableBuilder[Self <: SchemaCourseAlias] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCourseAlias](x: Self) {
     
-    @scala.inline
-    def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+    inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+    inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
   }
 }

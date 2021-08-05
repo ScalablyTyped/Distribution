@@ -43,55 +43,39 @@ trait DBProxyTarget extends StObject {
 }
 object DBProxyTarget {
   
-  @scala.inline
-  def apply(): DBProxyTarget = {
+  inline def apply(): DBProxyTarget = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DBProxyTarget]
   }
   
-  @scala.inline
-  implicit class DBProxyTargetMutableBuilder[Self <: DBProxyTarget] (val x: Self) extends AnyVal {
+  extension [Self <: DBProxyTarget](x: Self) {
     
-    @scala.inline
-    def setEndpoint(value: String): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: String): Self = StObject.set(x, "Endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointUndefined: Self = StObject.set(x, "Endpoint", js.undefined)
+    inline def setEndpointUndefined: Self = StObject.set(x, "Endpoint", js.undefined)
     
-    @scala.inline
-    def setPort(value: Integer): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Integer): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
     
-    @scala.inline
-    def setRdsResourceId(value: String): Self = StObject.set(x, "RdsResourceId", value.asInstanceOf[js.Any])
+    inline def setRdsResourceId(value: String): Self = StObject.set(x, "RdsResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRdsResourceIdUndefined: Self = StObject.set(x, "RdsResourceId", js.undefined)
+    inline def setRdsResourceIdUndefined: Self = StObject.set(x, "RdsResourceId", js.undefined)
     
-    @scala.inline
-    def setTargetArn(value: String): Self = StObject.set(x, "TargetArn", value.asInstanceOf[js.Any])
+    inline def setTargetArn(value: String): Self = StObject.set(x, "TargetArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetArnUndefined: Self = StObject.set(x, "TargetArn", js.undefined)
+    inline def setTargetArnUndefined: Self = StObject.set(x, "TargetArn", js.undefined)
     
-    @scala.inline
-    def setTargetHealth(value: TargetHealth): Self = StObject.set(x, "TargetHealth", value.asInstanceOf[js.Any])
+    inline def setTargetHealth(value: TargetHealth): Self = StObject.set(x, "TargetHealth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetHealthUndefined: Self = StObject.set(x, "TargetHealth", js.undefined)
+    inline def setTargetHealthUndefined: Self = StObject.set(x, "TargetHealth", js.undefined)
     
-    @scala.inline
-    def setTrackedClusterId(value: String): Self = StObject.set(x, "TrackedClusterId", value.asInstanceOf[js.Any])
+    inline def setTrackedClusterId(value: String): Self = StObject.set(x, "TrackedClusterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackedClusterIdUndefined: Self = StObject.set(x, "TrackedClusterId", js.undefined)
+    inline def setTrackedClusterIdUndefined: Self = StObject.set(x, "TrackedClusterId", js.undefined)
     
-    @scala.inline
-    def setType(value: TargetType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: TargetType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

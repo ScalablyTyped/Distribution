@@ -13,19 +13,15 @@ trait RetentionPolicy extends StObject {
 }
 object RetentionPolicy {
   
-  @scala.inline
-  def apply(): RetentionPolicy = {
+  inline def apply(): RetentionPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RetentionPolicy]
   }
   
-  @scala.inline
-  implicit class RetentionPolicyMutableBuilder[Self <: RetentionPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: RetentionPolicy](x: Self) {
     
-    @scala.inline
-    def setHomeEfsFileSystem(value: RetentionType): Self = StObject.set(x, "HomeEfsFileSystem", value.asInstanceOf[js.Any])
+    inline def setHomeEfsFileSystem(value: RetentionType): Self = StObject.set(x, "HomeEfsFileSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHomeEfsFileSystemUndefined: Self = StObject.set(x, "HomeEfsFileSystem", js.undefined)
+    inline def setHomeEfsFileSystemUndefined: Self = StObject.set(x, "HomeEfsFileSystem", js.undefined)
   }
 }

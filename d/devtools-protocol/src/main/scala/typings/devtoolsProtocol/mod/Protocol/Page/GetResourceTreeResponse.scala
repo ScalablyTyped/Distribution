@@ -13,16 +13,13 @@ trait GetResourceTreeResponse extends StObject {
 }
 object GetResourceTreeResponse {
   
-  @scala.inline
-  def apply(frameTree: FrameResourceTree): GetResourceTreeResponse = {
+  inline def apply(frameTree: FrameResourceTree): GetResourceTreeResponse = {
     val __obj = js.Dynamic.literal(frameTree = frameTree.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResourceTreeResponse]
   }
   
-  @scala.inline
-  implicit class GetResourceTreeResponseMutableBuilder[Self <: GetResourceTreeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetResourceTreeResponse](x: Self) {
     
-    @scala.inline
-    def setFrameTree(value: FrameResourceTree): Self = StObject.set(x, "frameTree", value.asInstanceOf[js.Any])
+    inline def setFrameTree(value: FrameResourceTree): Self = StObject.set(x, "frameTree", value.asInstanceOf[js.Any])
   }
 }

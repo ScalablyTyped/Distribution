@@ -43,46 +43,33 @@ trait SnowflakeConnectorProfileProperties extends StObject {
 }
 object SnowflakeConnectorProfileProperties {
   
-  @scala.inline
-  def apply(bucketName: BucketName, stage: Stage, warehouse: Warehouse): SnowflakeConnectorProfileProperties = {
+  inline def apply(bucketName: BucketName, stage: Stage, warehouse: Warehouse): SnowflakeConnectorProfileProperties = {
     val __obj = js.Dynamic.literal(bucketName = bucketName.asInstanceOf[js.Any], stage = stage.asInstanceOf[js.Any], warehouse = warehouse.asInstanceOf[js.Any])
     __obj.asInstanceOf[SnowflakeConnectorProfileProperties]
   }
   
-  @scala.inline
-  implicit class SnowflakeConnectorProfilePropertiesMutableBuilder[Self <: SnowflakeConnectorProfileProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SnowflakeConnectorProfileProperties](x: Self) {
     
-    @scala.inline
-    def setAccountName(value: AccountName): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
+    inline def setAccountName(value: AccountName): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountNameUndefined: Self = StObject.set(x, "accountName", js.undefined)
+    inline def setAccountNameUndefined: Self = StObject.set(x, "accountName", js.undefined)
     
-    @scala.inline
-    def setBucketName(value: BucketName): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
+    inline def setBucketName(value: BucketName): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketPrefix(value: BucketPrefix): Self = StObject.set(x, "bucketPrefix", value.asInstanceOf[js.Any])
+    inline def setBucketPrefix(value: BucketPrefix): Self = StObject.set(x, "bucketPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketPrefixUndefined: Self = StObject.set(x, "bucketPrefix", js.undefined)
+    inline def setBucketPrefixUndefined: Self = StObject.set(x, "bucketPrefix", js.undefined)
     
-    @scala.inline
-    def setPrivateLinkServiceName(value: PrivateLinkServiceName): Self = StObject.set(x, "privateLinkServiceName", value.asInstanceOf[js.Any])
+    inline def setPrivateLinkServiceName(value: PrivateLinkServiceName): Self = StObject.set(x, "privateLinkServiceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateLinkServiceNameUndefined: Self = StObject.set(x, "privateLinkServiceName", js.undefined)
+    inline def setPrivateLinkServiceNameUndefined: Self = StObject.set(x, "privateLinkServiceName", js.undefined)
     
-    @scala.inline
-    def setRegion(value: Region): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: Region): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
-    @scala.inline
-    def setStage(value: Stage): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
+    inline def setStage(value: Stage): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarehouse(value: Warehouse): Self = StObject.set(x, "warehouse", value.asInstanceOf[js.Any])
+    inline def setWarehouse(value: Warehouse): Self = StObject.set(x, "warehouse", value.asInstanceOf[js.Any])
   }
 }

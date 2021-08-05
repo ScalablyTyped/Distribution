@@ -28,17 +28,14 @@ object mod {
   }
   object GoogleLoginInfo {
     
-    @scala.inline
-    def apply(getAuthResponse: () => Accesstoken): GoogleLoginInfo = {
+    inline def apply(getAuthResponse: () => Accesstoken): GoogleLoginInfo = {
       val __obj = js.Dynamic.literal(getAuthResponse = js.Any.fromFunction0(getAuthResponse))
       __obj.asInstanceOf[GoogleLoginInfo]
     }
     
-    @scala.inline
-    implicit class GoogleLoginInfoMutableBuilder[Self <: GoogleLoginInfo] (val x: Self) extends AnyVal {
+    extension [Self <: GoogleLoginInfo](x: Self) {
       
-      @scala.inline
-      def setGetAuthResponse(value: () => Accesstoken): Self = StObject.set(x, "getAuthResponse", js.Any.fromFunction0(value))
+      inline def setGetAuthResponse(value: () => Accesstoken): Self = StObject.set(x, "getAuthResponse", js.Any.fromFunction0(value))
     }
   }
   
@@ -60,44 +57,32 @@ object mod {
   }
   object GoogleLoginProps {
     
-    @scala.inline
-    def apply(responseHandler: GoogleLoginInfo => Unit, socialId: String): GoogleLoginProps = {
+    inline def apply(responseHandler: GoogleLoginInfo => Unit, socialId: String): GoogleLoginProps = {
       val __obj = js.Dynamic.literal(responseHandler = js.Any.fromFunction1(responseHandler), socialId = socialId.asInstanceOf[js.Any])
       __obj.asInstanceOf[GoogleLoginProps]
     }
     
-    @scala.inline
-    implicit class GoogleLoginPropsMutableBuilder[Self <: GoogleLoginProps] (val x: Self) extends AnyVal {
+    extension [Self <: GoogleLoginProps](x: Self) {
       
-      @scala.inline
-      def setButtonText(value: String): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
+      inline def setButtonText(value: String): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonTextUndefined: Self = StObject.set(x, "buttonText", js.undefined)
+      inline def setButtonTextUndefined: Self = StObject.set(x, "buttonText", js.undefined)
       
-      @scala.inline
-      def setFetchBasicProfile(value: Boolean): Self = StObject.set(x, "fetchBasicProfile", value.asInstanceOf[js.Any])
+      inline def setFetchBasicProfile(value: Boolean): Self = StObject.set(x, "fetchBasicProfile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFetchBasicProfileUndefined: Self = StObject.set(x, "fetchBasicProfile", js.undefined)
+      inline def setFetchBasicProfileUndefined: Self = StObject.set(x, "fetchBasicProfile", js.undefined)
       
-      @scala.inline
-      def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+      inline def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
+      inline def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
       
-      @scala.inline
-      def setResponseHandler(value: GoogleLoginInfo => Unit): Self = StObject.set(x, "responseHandler", js.Any.fromFunction1(value))
+      inline def setResponseHandler(value: GoogleLoginInfo => Unit): Self = StObject.set(x, "responseHandler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      @scala.inline
-      def setSocialId(value: String): Self = StObject.set(x, "socialId", value.asInstanceOf[js.Any])
+      inline def setSocialId(value: String): Self = StObject.set(x, "socialId", value.asInstanceOf[js.Any])
     }
   }
 }

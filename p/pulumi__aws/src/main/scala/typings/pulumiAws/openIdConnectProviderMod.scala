@@ -60,21 +60,16 @@ object openIdConnectProviderMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): OpenIdConnectProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[OpenIdConnectProvider]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): OpenIdConnectProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[OpenIdConnectProvider]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: OpenIdConnectProviderState): OpenIdConnectProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[OpenIdConnectProvider]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: OpenIdConnectProviderState, opts: CustomResourceOptions): OpenIdConnectProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[OpenIdConnectProvider]
+    inline def get(name: String, id: Input[ID]): OpenIdConnectProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[OpenIdConnectProvider]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): OpenIdConnectProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[OpenIdConnectProvider]
+    inline def get(name: String, id: Input[ID], state: OpenIdConnectProviderState): OpenIdConnectProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[OpenIdConnectProvider]
+    inline def get(name: String, id: Input[ID], state: OpenIdConnectProviderState, opts: CustomResourceOptions): OpenIdConnectProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[OpenIdConnectProvider]
     
     /**
       * Returns true if the given object is an instance of OpenIdConnectProvider.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/openIdConnectProvider.OpenIdConnectProvider */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/openIdConnectProvider.OpenIdConnectProvider */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/openIdConnectProvider.OpenIdConnectProvider */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/openIdConnectProvider.OpenIdConnectProvider */ Boolean]
   }
   
   trait OpenIdConnectProviderArgs extends StObject {
@@ -96,8 +91,7 @@ object openIdConnectProviderMod {
   }
   object OpenIdConnectProviderArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       clientIdLists: Input[js.Array[Input[String]]],
       thumbprintLists: Input[js.Array[Input[String]]],
       url: Input[String]
@@ -106,23 +100,17 @@ object openIdConnectProviderMod {
       __obj.asInstanceOf[OpenIdConnectProviderArgs]
     }
     
-    @scala.inline
-    implicit class OpenIdConnectProviderArgsMutableBuilder[Self <: OpenIdConnectProviderArgs] (val x: Self) extends AnyVal {
+    extension [Self <: OpenIdConnectProviderArgs](x: Self) {
       
-      @scala.inline
-      def setClientIdLists(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "clientIdLists", value.asInstanceOf[js.Any])
+      inline def setClientIdLists(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "clientIdLists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientIdListsVarargs(value: Input[String]*): Self = StObject.set(x, "clientIdLists", js.Array(value :_*))
+      inline def setClientIdListsVarargs(value: Input[String]*): Self = StObject.set(x, "clientIdLists", js.Array(value :_*))
       
-      @scala.inline
-      def setThumbprintLists(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "thumbprintLists", value.asInstanceOf[js.Any])
+      inline def setThumbprintLists(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "thumbprintLists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbprintListsVarargs(value: Input[String]*): Self = StObject.set(x, "thumbprintLists", js.Array(value :_*))
+      inline def setThumbprintListsVarargs(value: Input[String]*): Self = StObject.set(x, "thumbprintLists", js.Array(value :_*))
       
-      @scala.inline
-      def setUrl(value: Input[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: Input[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -150,44 +138,32 @@ object openIdConnectProviderMod {
   }
   object OpenIdConnectProviderState {
     
-    @scala.inline
-    def apply(): OpenIdConnectProviderState = {
+    inline def apply(): OpenIdConnectProviderState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OpenIdConnectProviderState]
     }
     
-    @scala.inline
-    implicit class OpenIdConnectProviderStateMutableBuilder[Self <: OpenIdConnectProviderState] (val x: Self) extends AnyVal {
+    extension [Self <: OpenIdConnectProviderState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setClientIdLists(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "clientIdLists", value.asInstanceOf[js.Any])
+      inline def setClientIdLists(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "clientIdLists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientIdListsUndefined: Self = StObject.set(x, "clientIdLists", js.undefined)
+      inline def setClientIdListsUndefined: Self = StObject.set(x, "clientIdLists", js.undefined)
       
-      @scala.inline
-      def setClientIdListsVarargs(value: Input[String]*): Self = StObject.set(x, "clientIdLists", js.Array(value :_*))
+      inline def setClientIdListsVarargs(value: Input[String]*): Self = StObject.set(x, "clientIdLists", js.Array(value :_*))
       
-      @scala.inline
-      def setThumbprintLists(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "thumbprintLists", value.asInstanceOf[js.Any])
+      inline def setThumbprintLists(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "thumbprintLists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbprintListsUndefined: Self = StObject.set(x, "thumbprintLists", js.undefined)
+      inline def setThumbprintListsUndefined: Self = StObject.set(x, "thumbprintLists", js.undefined)
       
-      @scala.inline
-      def setThumbprintListsVarargs(value: Input[String]*): Self = StObject.set(x, "thumbprintLists", js.Array(value :_*))
+      inline def setThumbprintListsVarargs(value: Input[String]*): Self = StObject.set(x, "thumbprintLists", js.Array(value :_*))
       
-      @scala.inline
-      def setUrl(value: Input[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: Input[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
 }

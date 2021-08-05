@@ -14,19 +14,15 @@ trait SchemaNodeGroupsSetNodeTemplateRequest extends StObject {
 }
 object SchemaNodeGroupsSetNodeTemplateRequest {
   
-  @scala.inline
-  def apply(): SchemaNodeGroupsSetNodeTemplateRequest = {
+  inline def apply(): SchemaNodeGroupsSetNodeTemplateRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNodeGroupsSetNodeTemplateRequest]
   }
   
-  @scala.inline
-  implicit class SchemaNodeGroupsSetNodeTemplateRequestMutableBuilder[Self <: SchemaNodeGroupsSetNodeTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaNodeGroupsSetNodeTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setNodeTemplate(value: String): Self = StObject.set(x, "nodeTemplate", value.asInstanceOf[js.Any])
+    inline def setNodeTemplate(value: String): Self = StObject.set(x, "nodeTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeTemplateUndefined: Self = StObject.set(x, "nodeTemplate", js.undefined)
+    inline def setNodeTemplateUndefined: Self = StObject.set(x, "nodeTemplate", js.undefined)
   }
 }

@@ -15,8 +15,7 @@ trait OptionFilterProp extends StObject {
 }
 object OptionFilterProp {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     filterOption: Boolean | (FilterFunc[
       /* import warning: importer.ImportType#apply Failed type conversion: rc-select.rc-select/lib/interface.OptionsType[number] */ js.Any
     ]),
@@ -26,24 +25,20 @@ object OptionFilterProp {
     __obj.asInstanceOf[OptionFilterProp]
   }
   
-  @scala.inline
-  implicit class OptionFilterPropMutableBuilder[Self <: OptionFilterProp] (val x: Self) extends AnyVal {
+  extension [Self <: OptionFilterProp](x: Self) {
     
-    @scala.inline
-    def setFilterOption(
+    inline def setFilterOption(
       value: Boolean | (FilterFunc[
           /* import warning: importer.ImportType#apply Failed type conversion: rc-select.rc-select/lib/interface.OptionsType[number] */ js.Any
         ])
     ): Self = StObject.set(x, "filterOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterOptionFunction2(
+    inline def setFilterOptionFunction2(
       value: (/* inputValue */ String, /* option */ js.UndefOr[
           /* import warning: importer.ImportType#apply Failed type conversion: rc-select.rc-select/lib/interface.OptionsType[number] */ js.Any
         ]) => Boolean
     ): Self = StObject.set(x, "filterOption", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOptionFilterProp(value: String): Self = StObject.set(x, "optionFilterProp", value.asInstanceOf[js.Any])
+    inline def setOptionFilterProp(value: String): Self = StObject.set(x, "optionFilterProp", value.asInstanceOf[js.Any])
   }
 }

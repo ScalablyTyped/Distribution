@@ -15,8 +15,7 @@ trait CommandInstanceInfo[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace
 }
 object CommandInstanceInfo {
   
-  @scala.inline
-  def apply[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](
+  inline def apply[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](
     env: ProcessEnv,
     executor: IExecutor[C, N, M, I, O],
     location: NamespaceLocateResult[C, N, M, I, O]
@@ -25,16 +24,12 @@ object CommandInstanceInfo {
     __obj.asInstanceOf[CommandInstanceInfo[C, N, M, I, O]]
   }
   
-  @scala.inline
-  implicit class CommandInstanceInfoMutableBuilder[Self <: CommandInstanceInfo[?, ?, ?, ?, ?], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] (val x: Self & (CommandInstanceInfo[C, N, M, I, O])) extends AnyVal {
+  extension [Self <: CommandInstanceInfo[?, ?, ?, ?, ?], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](x: Self & (CommandInstanceInfo[C, N, M, I, O])) {
     
-    @scala.inline
-    def setEnv(value: ProcessEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: ProcessEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutor(value: IExecutor[C, N, M, I, O]): Self = StObject.set(x, "executor", value.asInstanceOf[js.Any])
+    inline def setExecutor(value: IExecutor[C, N, M, I, O]): Self = StObject.set(x, "executor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: NamespaceLocateResult[C, N, M, I, O]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: NamespaceLocateResult[C, N, M, I, O]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
   }
 }

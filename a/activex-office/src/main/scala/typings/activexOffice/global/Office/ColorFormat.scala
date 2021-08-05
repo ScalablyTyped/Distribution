@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.ColorFormat")
 @js.native
-class ColorFormat protected ()
+/* private */ class ColorFormat ()
   extends StObject
      with typings.activexOffice.Office.ColorFormat {
   
@@ -24,7 +24,7 @@ class ColorFormat protected ()
   /* CompleteClass */
   var ObjectThemeColor: MsoThemeColorIndex = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.ColorFormat_typekey")
   var OfficeDotColorFormat_typekey: typings.activexOffice.Office.ColorFormat = js.native
   

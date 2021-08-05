@@ -16,8 +16,7 @@ trait HandleClickDate extends StObject {
 }
 object HandleClickDate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changeLastValidDate: String => Unit,
     handleClickDate: (typings.std.Date, String) => Unit,
     initDate: () => Unit,
@@ -27,19 +26,14 @@ object HandleClickDate {
     __obj.asInstanceOf[HandleClickDate]
   }
   
-  @scala.inline
-  implicit class HandleClickDateMutableBuilder[Self <: HandleClickDate] (val x: Self) extends AnyVal {
+  extension [Self <: HandleClickDate](x: Self) {
     
-    @scala.inline
-    def setChangeLastValidDate(value: String => Unit): Self = StObject.set(x, "changeLastValidDate", js.Any.fromFunction1(value))
+    inline def setChangeLastValidDate(value: String => Unit): Self = StObject.set(x, "changeLastValidDate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHandleClickDate(value: (typings.std.Date, String) => Unit): Self = StObject.set(x, "handleClickDate", js.Any.fromFunction2(value))
+    inline def setHandleClickDate(value: (typings.std.Date, String) => Unit): Self = StObject.set(x, "handleClickDate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInitDate(value: () => Unit): Self = StObject.set(x, "initDate", js.Any.fromFunction0(value))
+    inline def setInitDate(value: () => Unit): Self = StObject.set(x, "initDate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsValidAndSelectable(value: typings.std.Date => Boolean): Self = StObject.set(x, "isValidAndSelectable", js.Any.fromFunction1(value))
+    inline def setIsValidAndSelectable(value: typings.std.Date => Boolean): Self = StObject.set(x, "isValidAndSelectable", js.Any.fromFunction1(value))
   }
 }

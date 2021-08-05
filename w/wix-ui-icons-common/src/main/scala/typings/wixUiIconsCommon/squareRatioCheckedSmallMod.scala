@@ -22,20 +22,16 @@ object squareRatioCheckedSmallMod extends Shortcut {
   }
   object SquareRatioCheckedSmallProps {
     
-    @scala.inline
-    def apply(): SquareRatioCheckedSmallProps = {
+    inline def apply(): SquareRatioCheckedSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SquareRatioCheckedSmallProps]
     }
     
-    @scala.inline
-    implicit class SquareRatioCheckedSmallPropsMutableBuilder[Self <: SquareRatioCheckedSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: SquareRatioCheckedSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

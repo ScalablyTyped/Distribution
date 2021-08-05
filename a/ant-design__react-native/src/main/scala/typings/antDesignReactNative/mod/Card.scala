@@ -22,24 +22,20 @@ object Card {
   @JSImport("@ant-design/react-native", "Card.Body")
   @js.native
   def Body: TypeofCardBody = js.native
-  @scala.inline
-  def Body_=(x: TypeofCardBody): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Body")(x.asInstanceOf[js.Any])
+  inline def Body_=(x: TypeofCardBody): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Body")(x.asInstanceOf[js.Any])
   
   @JSImport("@ant-design/react-native", "Card.Footer")
   @js.native
   def Footer: TypeofCardFooter = js.native
-  @scala.inline
-  def Footer_=(x: TypeofCardFooter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Footer")(x.asInstanceOf[js.Any])
+  inline def Footer_=(x: TypeofCardFooter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Footer")(x.asInstanceOf[js.Any])
   
   @JSImport("@ant-design/react-native", "Card.Header")
   @js.native
   def Header: TypeofCardHeader = js.native
-  @scala.inline
-  def Header_=(x: TypeofCardHeader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Header")(x.asInstanceOf[js.Any])
+  inline def Header_=(x: TypeofCardHeader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Header")(x.asInstanceOf[js.Any])
   
   @JSImport("@ant-design/react-native", "Card.defaultProps")
   @js.native
   def defaultProps: Full = js.native
-  @scala.inline
-  def defaultProps_=(x: Full): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: Full): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

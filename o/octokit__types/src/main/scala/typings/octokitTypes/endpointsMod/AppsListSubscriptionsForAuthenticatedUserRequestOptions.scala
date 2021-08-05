@@ -20,25 +20,19 @@ trait AppsListSubscriptionsForAuthenticatedUserRequestOptions extends StObject {
 }
 object AppsListSubscriptionsForAuthenticatedUserRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): AppsListSubscriptionsForAuthenticatedUserRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): AppsListSubscriptionsForAuthenticatedUserRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "GET", request = request.asInstanceOf[js.Any], url = "/user/marketplace_purchases")
     __obj.asInstanceOf[AppsListSubscriptionsForAuthenticatedUserRequestOptions]
   }
   
-  @scala.inline
-  implicit class AppsListSubscriptionsForAuthenticatedUserRequestOptionsMutableBuilder[Self <: AppsListSubscriptionsForAuthenticatedUserRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AppsListSubscriptionsForAuthenticatedUserRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashuserSlashmarketplace_purchases): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashuserSlashmarketplace_purchases): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

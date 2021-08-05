@@ -22,79 +22,55 @@ trait ApiDefinition extends StObject {
 }
 object ApiDefinition {
   
-  @scala.inline
-  def apply(): ApiDefinition = {
+  inline def apply(): ApiDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApiDefinition]
   }
   
-  @scala.inline
-  implicit class ApiDefinitionMutableBuilder[Self <: ApiDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ApiDefinition](x: Self) {
     
-    @scala.inline
-    def setAuthorize(value: Boolean): Self = StObject.set(x, "authorize", value.asInstanceOf[js.Any])
+    inline def setAuthorize(value: Boolean): Self = StObject.set(x, "authorize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizeUndefined: Self = StObject.set(x, "authorize", js.undefined)
+    inline def setAuthorizeUndefined: Self = StObject.set(x, "authorize", js.undefined)
     
-    @scala.inline
-    def setDelete(value: Middleware | js.Array[Middleware]): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: Middleware | js.Array[Middleware]): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteFunction3(value: (/* req */ Request, /* res */ Response, /* next */ NextMiddleware) => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction3(value))
+    inline def setDeleteFunction3(value: (/* req */ Request, /* res */ Response, /* next */ NextMiddleware) => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
+    inline def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
     
-    @scala.inline
-    def setDeleteVarargs(value: Middleware*): Self = StObject.set(x, "delete", js.Array(value :_*))
+    inline def setDeleteVarargs(value: Middleware*): Self = StObject.set(x, "delete", js.Array(value :_*))
     
-    @scala.inline
-    def setGet(value: Middleware | js.Array[Middleware]): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: Middleware | js.Array[Middleware]): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetFunction3(value: (/* req */ Request, /* res */ Response, /* next */ NextMiddleware) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
+    inline def setGetFunction3(value: (/* req */ Request, /* res */ Response, /* next */ NextMiddleware) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
+    inline def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
     
-    @scala.inline
-    def setGetVarargs(value: Middleware*): Self = StObject.set(x, "get", js.Array(value :_*))
+    inline def setGetVarargs(value: Middleware*): Self = StObject.set(x, "get", js.Array(value :_*))
     
-    @scala.inline
-    def setPatch(value: Middleware | js.Array[Middleware]): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+    inline def setPatch(value: Middleware | js.Array[Middleware]): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchFunction3(value: (/* req */ Request, /* res */ Response, /* next */ NextMiddleware) => Unit): Self = StObject.set(x, "patch", js.Any.fromFunction3(value))
+    inline def setPatchFunction3(value: (/* req */ Request, /* res */ Response, /* next */ NextMiddleware) => Unit): Self = StObject.set(x, "patch", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setPatchUndefined: Self = StObject.set(x, "patch", js.undefined)
+    inline def setPatchUndefined: Self = StObject.set(x, "patch", js.undefined)
     
-    @scala.inline
-    def setPatchVarargs(value: Middleware*): Self = StObject.set(x, "patch", js.Array(value :_*))
+    inline def setPatchVarargs(value: Middleware*): Self = StObject.set(x, "patch", js.Array(value :_*))
     
-    @scala.inline
-    def setPost(value: Middleware | js.Array[Middleware]): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
+    inline def setPost(value: Middleware | js.Array[Middleware]): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostFunction3(value: (/* req */ Request, /* res */ Response, /* next */ NextMiddleware) => Unit): Self = StObject.set(x, "post", js.Any.fromFunction3(value))
+    inline def setPostFunction3(value: (/* req */ Request, /* res */ Response, /* next */ NextMiddleware) => Unit): Self = StObject.set(x, "post", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
+    inline def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
     
-    @scala.inline
-    def setPostVarargs(value: Middleware*): Self = StObject.set(x, "post", js.Array(value :_*))
+    inline def setPostVarargs(value: Middleware*): Self = StObject.set(x, "post", js.Array(value :_*))
     
-    @scala.inline
-    def setPut(value: Middleware | js.Array[Middleware]): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
+    inline def setPut(value: Middleware | js.Array[Middleware]): Self = StObject.set(x, "put", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPutFunction3(value: (/* req */ Request, /* res */ Response, /* next */ NextMiddleware) => Unit): Self = StObject.set(x, "put", js.Any.fromFunction3(value))
+    inline def setPutFunction3(value: (/* req */ Request, /* res */ Response, /* next */ NextMiddleware) => Unit): Self = StObject.set(x, "put", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setPutUndefined: Self = StObject.set(x, "put", js.undefined)
+    inline def setPutUndefined: Self = StObject.set(x, "put", js.undefined)
     
-    @scala.inline
-    def setPutVarargs(value: Middleware*): Self = StObject.set(x, "put", js.Array(value :_*))
+    inline def setPutVarargs(value: Middleware*): Self = StObject.set(x, "put", js.Array(value :_*))
   }
 }

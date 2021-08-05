@@ -20,22 +20,17 @@ trait ContactMatchReason extends StObject {
 }
 object ContactMatchReason {
   
-  @scala.inline
-  def apply(field: ContactMatchReasonKind, segments: IVectorView[TextSegment], text: String): ContactMatchReason = {
+  inline def apply(field: ContactMatchReasonKind, segments: IVectorView[TextSegment], text: String): ContactMatchReason = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], segments = segments.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContactMatchReason]
   }
   
-  @scala.inline
-  implicit class ContactMatchReasonMutableBuilder[Self <: ContactMatchReason] (val x: Self) extends AnyVal {
+  extension [Self <: ContactMatchReason](x: Self) {
     
-    @scala.inline
-    def setField(value: ContactMatchReasonKind): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: ContactMatchReasonKind): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegments(value: IVectorView[TextSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
+    inline def setSegments(value: IVectorView[TextSegment]): Self = StObject.set(x, "segments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

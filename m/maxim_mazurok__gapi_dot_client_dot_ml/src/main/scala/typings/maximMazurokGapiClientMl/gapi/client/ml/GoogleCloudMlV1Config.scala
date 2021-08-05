@@ -11,19 +11,15 @@ trait GoogleCloudMlV1Config extends StObject {
 }
 object GoogleCloudMlV1Config {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1Config = {
+  inline def apply(): GoogleCloudMlV1Config = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1Config]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1ConfigMutableBuilder[Self <: GoogleCloudMlV1Config] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1Config](x: Self) {
     
-    @scala.inline
-    def setTpuServiceAccount(value: String): Self = StObject.set(x, "tpuServiceAccount", value.asInstanceOf[js.Any])
+    inline def setTpuServiceAccount(value: String): Self = StObject.set(x, "tpuServiceAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTpuServiceAccountUndefined: Self = StObject.set(x, "tpuServiceAccount", js.undefined)
+    inline def setTpuServiceAccountUndefined: Self = StObject.set(x, "tpuServiceAccount", js.undefined)
   }
 }

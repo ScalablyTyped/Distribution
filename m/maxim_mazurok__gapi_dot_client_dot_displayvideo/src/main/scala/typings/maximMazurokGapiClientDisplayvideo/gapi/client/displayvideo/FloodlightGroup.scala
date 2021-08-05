@@ -41,59 +41,43 @@ trait FloodlightGroup extends StObject {
 }
 object FloodlightGroup {
   
-  @scala.inline
-  def apply(): FloodlightGroup = {
+  inline def apply(): FloodlightGroup = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FloodlightGroup]
   }
   
-  @scala.inline
-  implicit class FloodlightGroupMutableBuilder[Self <: FloodlightGroup] (val x: Self) extends AnyVal {
+  extension [Self <: FloodlightGroup](x: Self) {
     
-    @scala.inline
-    def setActiveViewConfig(value: ActiveViewVideoViewabilityMetricConfig): Self = StObject.set(x, "activeViewConfig", value.asInstanceOf[js.Any])
+    inline def setActiveViewConfig(value: ActiveViewVideoViewabilityMetricConfig): Self = StObject.set(x, "activeViewConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveViewConfigUndefined: Self = StObject.set(x, "activeViewConfig", js.undefined)
+    inline def setActiveViewConfigUndefined: Self = StObject.set(x, "activeViewConfig", js.undefined)
     
-    @scala.inline
-    def setCustomVariables(
+    inline def setCustomVariables(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientDisplayvideo.maximMazurokGapiClientDisplayvideoStrings.FloodlightGroup & TopLevel[js.Any]
     ): Self = StObject.set(x, "customVariables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomVariablesUndefined: Self = StObject.set(x, "customVariables", js.undefined)
+    inline def setCustomVariablesUndefined: Self = StObject.set(x, "customVariables", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setFloodlightGroupId(value: String): Self = StObject.set(x, "floodlightGroupId", value.asInstanceOf[js.Any])
+    inline def setFloodlightGroupId(value: String): Self = StObject.set(x, "floodlightGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloodlightGroupIdUndefined: Self = StObject.set(x, "floodlightGroupId", js.undefined)
+    inline def setFloodlightGroupIdUndefined: Self = StObject.set(x, "floodlightGroupId", js.undefined)
     
-    @scala.inline
-    def setLookbackWindow(value: LookbackWindow): Self = StObject.set(x, "lookbackWindow", value.asInstanceOf[js.Any])
+    inline def setLookbackWindow(value: LookbackWindow): Self = StObject.set(x, "lookbackWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLookbackWindowUndefined: Self = StObject.set(x, "lookbackWindow", js.undefined)
+    inline def setLookbackWindowUndefined: Self = StObject.set(x, "lookbackWindow", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setWebTagType(value: String): Self = StObject.set(x, "webTagType", value.asInstanceOf[js.Any])
+    inline def setWebTagType(value: String): Self = StObject.set(x, "webTagType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebTagTypeUndefined: Self = StObject.set(x, "webTagType", js.undefined)
+    inline def setWebTagTypeUndefined: Self = StObject.set(x, "webTagType", js.undefined)
   }
 }

@@ -23,31 +23,23 @@ trait DeploymentOperation extends StObject {
 }
 object DeploymentOperation {
   
-  @scala.inline
-  def apply(): DeploymentOperation = {
+  inline def apply(): DeploymentOperation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeploymentOperation]
   }
   
-  @scala.inline
-  implicit class DeploymentOperationMutableBuilder[Self <: DeploymentOperation] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentOperation](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
+    inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
+    inline def setOperationIdUndefined: Self = StObject.set(x, "operationId", js.undefined)
     
-    @scala.inline
-    def setProperties(value: DeploymentOperationProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: DeploymentOperationProperties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }
 }

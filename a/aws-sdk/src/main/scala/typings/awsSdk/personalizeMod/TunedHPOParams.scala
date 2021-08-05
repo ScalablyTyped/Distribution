@@ -13,19 +13,15 @@ trait TunedHPOParams extends StObject {
 }
 object TunedHPOParams {
   
-  @scala.inline
-  def apply(): TunedHPOParams = {
+  inline def apply(): TunedHPOParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TunedHPOParams]
   }
   
-  @scala.inline
-  implicit class TunedHPOParamsMutableBuilder[Self <: TunedHPOParams] (val x: Self) extends AnyVal {
+  extension [Self <: TunedHPOParams](x: Self) {
     
-    @scala.inline
-    def setAlgorithmHyperParameters(value: HyperParameters): Self = StObject.set(x, "algorithmHyperParameters", value.asInstanceOf[js.Any])
+    inline def setAlgorithmHyperParameters(value: HyperParameters): Self = StObject.set(x, "algorithmHyperParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithmHyperParametersUndefined: Self = StObject.set(x, "algorithmHyperParameters", js.undefined)
+    inline def setAlgorithmHyperParametersUndefined: Self = StObject.set(x, "algorithmHyperParameters", js.undefined)
   }
 }

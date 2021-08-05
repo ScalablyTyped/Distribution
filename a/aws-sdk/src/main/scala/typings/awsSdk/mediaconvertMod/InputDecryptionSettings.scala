@@ -28,37 +28,27 @@ trait InputDecryptionSettings extends StObject {
 }
 object InputDecryptionSettings {
   
-  @scala.inline
-  def apply(): InputDecryptionSettings = {
+  inline def apply(): InputDecryptionSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InputDecryptionSettings]
   }
   
-  @scala.inline
-  implicit class InputDecryptionSettingsMutableBuilder[Self <: InputDecryptionSettings] (val x: Self) extends AnyVal {
+  extension [Self <: InputDecryptionSettings](x: Self) {
     
-    @scala.inline
-    def setDecryptionMode(value: DecryptionMode): Self = StObject.set(x, "DecryptionMode", value.asInstanceOf[js.Any])
+    inline def setDecryptionMode(value: DecryptionMode): Self = StObject.set(x, "DecryptionMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecryptionModeUndefined: Self = StObject.set(x, "DecryptionMode", js.undefined)
+    inline def setDecryptionModeUndefined: Self = StObject.set(x, "DecryptionMode", js.undefined)
     
-    @scala.inline
-    def setEncryptedDecryptionKey(value: stringMin24Max512PatternAZaZ0902): Self = StObject.set(x, "EncryptedDecryptionKey", value.asInstanceOf[js.Any])
+    inline def setEncryptedDecryptionKey(value: stringMin24Max512PatternAZaZ0902): Self = StObject.set(x, "EncryptedDecryptionKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptedDecryptionKeyUndefined: Self = StObject.set(x, "EncryptedDecryptionKey", js.undefined)
+    inline def setEncryptedDecryptionKeyUndefined: Self = StObject.set(x, "EncryptedDecryptionKey", js.undefined)
     
-    @scala.inline
-    def setInitializationVector(value: stringMin16Max24PatternAZaZ0922AZaZ0916): Self = StObject.set(x, "InitializationVector", value.asInstanceOf[js.Any])
+    inline def setInitializationVector(value: stringMin16Max24PatternAZaZ0922AZaZ0916): Self = StObject.set(x, "InitializationVector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitializationVectorUndefined: Self = StObject.set(x, "InitializationVector", js.undefined)
+    inline def setInitializationVectorUndefined: Self = StObject.set(x, "InitializationVector", js.undefined)
     
-    @scala.inline
-    def setKmsKeyRegion(value: stringMin9Max19PatternAZ26EastWestCentralNorthSouthEastWest1912): Self = StObject.set(x, "KmsKeyRegion", value.asInstanceOf[js.Any])
+    inline def setKmsKeyRegion(value: stringMin9Max19PatternAZ26EastWestCentralNorthSouthEastWest1912): Self = StObject.set(x, "KmsKeyRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyRegionUndefined: Self = StObject.set(x, "KmsKeyRegion", js.undefined)
+    inline def setKmsKeyRegionUndefined: Self = StObject.set(x, "KmsKeyRegion", js.undefined)
   }
 }

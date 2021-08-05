@@ -13,16 +13,13 @@ trait GlacierJobParameters extends StObject {
 }
 object GlacierJobParameters {
   
-  @scala.inline
-  def apply(Tier: Tier): GlacierJobParameters = {
+  inline def apply(Tier: Tier): GlacierJobParameters = {
     val __obj = js.Dynamic.literal(Tier = Tier.asInstanceOf[js.Any])
     __obj.asInstanceOf[GlacierJobParameters]
   }
   
-  @scala.inline
-  implicit class GlacierJobParametersMutableBuilder[Self <: GlacierJobParameters] (val x: Self) extends AnyVal {
+  extension [Self <: GlacierJobParameters](x: Self) {
     
-    @scala.inline
-    def setTier(value: Tier): Self = StObject.set(x, "Tier", value.asInstanceOf[js.Any])
+    inline def setTier(value: Tier): Self = StObject.set(x, "Tier", value.asInstanceOf[js.Any])
   }
 }

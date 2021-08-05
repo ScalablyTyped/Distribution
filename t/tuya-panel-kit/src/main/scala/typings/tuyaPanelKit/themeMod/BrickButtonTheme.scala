@@ -22,8 +22,7 @@ trait BrickButtonTheme extends StObject {
 }
 object BrickButtonTheme {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bgBorder: String,
     bgBorderWidth: Double,
     bgRadius: Double,
@@ -36,28 +35,20 @@ object BrickButtonTheme {
     __obj.asInstanceOf[BrickButtonTheme]
   }
   
-  @scala.inline
-  implicit class BrickButtonThemeMutableBuilder[Self <: BrickButtonTheme] (val x: Self) extends AnyVal {
+  extension [Self <: BrickButtonTheme](x: Self) {
     
-    @scala.inline
-    def setBgBorder(value: String): Self = StObject.set(x, "bgBorder", value.asInstanceOf[js.Any])
+    inline def setBgBorder(value: String): Self = StObject.set(x, "bgBorder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBgBorderWidth(value: Double): Self = StObject.set(x, "bgBorderWidth", value.asInstanceOf[js.Any])
+    inline def setBgBorderWidth(value: Double): Self = StObject.set(x, "bgBorderWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBgRadius(value: Double): Self = StObject.set(x, "bgRadius", value.asInstanceOf[js.Any])
+    inline def setBgRadius(value: Double): Self = StObject.set(x, "bgRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
+    inline def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+    inline def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadingBackground(value: String): Self = StObject.set(x, "loadingBackground", value.asInstanceOf[js.Any])
+    inline def setLoadingBackground(value: String): Self = StObject.set(x, "loadingBackground", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadingColor(value: String): Self = StObject.set(x, "loadingColor", value.asInstanceOf[js.Any])
+    inline def setLoadingColor(value: String): Self = StObject.set(x, "loadingColor", value.asInstanceOf[js.Any])
   }
 }

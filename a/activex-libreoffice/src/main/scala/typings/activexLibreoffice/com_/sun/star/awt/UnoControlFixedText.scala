@@ -16,8 +16,7 @@ trait UnoControlFixedText
      with XLayoutConstrains
 object UnoControlFixedText {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessibleContext: XAccessibleContext,
     Alignment: Double,
     Context: XInterface,

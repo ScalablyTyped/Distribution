@@ -11,19 +11,15 @@ trait FileReference extends StObject {
 }
 object FileReference {
   
-  @scala.inline
-  def apply(): FileReference = {
+  inline def apply(): FileReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileReference]
   }
   
-  @scala.inline
-  implicit class FileReferenceMutableBuilder[Self <: FileReference] (val x: Self) extends AnyVal {
+  extension [Self <: FileReference](x: Self) {
     
-    @scala.inline
-    def setGcsPath(value: String): Self = StObject.set(x, "gcsPath", value.asInstanceOf[js.Any])
+    inline def setGcsPath(value: String): Self = StObject.set(x, "gcsPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsPathUndefined: Self = StObject.set(x, "gcsPath", js.undefined)
+    inline def setGcsPathUndefined: Self = StObject.set(x, "gcsPath", js.undefined)
   }
 }

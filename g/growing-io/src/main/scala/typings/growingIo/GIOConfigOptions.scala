@@ -14,25 +14,19 @@ trait GIOConfigOptions extends StObject {
 }
 object GIOConfigOptions {
   
-  @scala.inline
-  def apply(): GIOConfigOptions = {
+  inline def apply(): GIOConfigOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GIOConfigOptions]
   }
   
-  @scala.inline
-  implicit class GIOConfigOptionsMutableBuilder[Self <: GIOConfigOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GIOConfigOptions](x: Self) {
     
-    @scala.inline
-    def setDataCollect(value: Boolean): Self = StObject.set(x, "dataCollect", value.asInstanceOf[js.Any])
+    inline def setDataCollect(value: Boolean): Self = StObject.set(x, "dataCollect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataCollectUndefined: Self = StObject.set(x, "dataCollect", js.undefined)
+    inline def setDataCollectUndefined: Self = StObject.set(x, "dataCollect", js.undefined)
     
-    @scala.inline
-    def setHashtag(value: Boolean): Self = StObject.set(x, "hashtag", value.asInstanceOf[js.Any])
+    inline def setHashtag(value: Boolean): Self = StObject.set(x, "hashtag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashtagUndefined: Self = StObject.set(x, "hashtag", js.undefined)
+    inline def setHashtagUndefined: Self = StObject.set(x, "hashtag", js.undefined)
   }
 }

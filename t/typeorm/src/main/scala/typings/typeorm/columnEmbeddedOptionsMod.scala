@@ -16,20 +16,16 @@ object columnEmbeddedOptionsMod {
   }
   object ColumnEmbeddedOptions {
     
-    @scala.inline
-    def apply(): ColumnEmbeddedOptions = {
+    inline def apply(): ColumnEmbeddedOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ColumnEmbeddedOptions]
     }
     
-    @scala.inline
-    implicit class ColumnEmbeddedOptionsMutableBuilder[Self <: ColumnEmbeddedOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ColumnEmbeddedOptions](x: Self) {
       
-      @scala.inline
-      def setPrefix(value: String | Boolean): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String | Boolean): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     }
   }
 }

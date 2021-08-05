@@ -20,37 +20,27 @@ trait Link extends StObject {
 }
 object Link {
   
-  @scala.inline
-  def apply(): Link = {
+  inline def apply(): Link = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Link]
   }
   
-  @scala.inline
-  implicit class LinkMutableBuilder[Self <: Link] (val x: Self) extends AnyVal {
+  extension [Self <: Link](x: Self) {
     
-    @scala.inline
-    def setPageObjectId(value: String): Self = StObject.set(x, "pageObjectId", value.asInstanceOf[js.Any])
+    inline def setPageObjectId(value: String): Self = StObject.set(x, "pageObjectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageObjectIdUndefined: Self = StObject.set(x, "pageObjectId", js.undefined)
+    inline def setPageObjectIdUndefined: Self = StObject.set(x, "pageObjectId", js.undefined)
     
-    @scala.inline
-    def setRelativeLink(value: String): Self = StObject.set(x, "relativeLink", value.asInstanceOf[js.Any])
+    inline def setRelativeLink(value: String): Self = StObject.set(x, "relativeLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeLinkUndefined: Self = StObject.set(x, "relativeLink", js.undefined)
+    inline def setRelativeLinkUndefined: Self = StObject.set(x, "relativeLink", js.undefined)
     
-    @scala.inline
-    def setSlideIndex(value: Double): Self = StObject.set(x, "slideIndex", value.asInstanceOf[js.Any])
+    inline def setSlideIndex(value: Double): Self = StObject.set(x, "slideIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlideIndexUndefined: Self = StObject.set(x, "slideIndex", js.undefined)
+    inline def setSlideIndexUndefined: Self = StObject.set(x, "slideIndex", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

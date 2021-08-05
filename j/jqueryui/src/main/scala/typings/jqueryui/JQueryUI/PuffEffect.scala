@@ -10,19 +10,15 @@ trait PuffEffect extends StObject {
 }
 object PuffEffect {
   
-  @scala.inline
-  def apply(): PuffEffect = {
+  inline def apply(): PuffEffect = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PuffEffect]
   }
   
-  @scala.inline
-  implicit class PuffEffectMutableBuilder[Self <: PuffEffect] (val x: Self) extends AnyVal {
+  extension [Self <: PuffEffect](x: Self) {
     
-    @scala.inline
-    def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+    inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
+    inline def setPercentUndefined: Self = StObject.set(x, "percent", js.undefined)
   }
 }

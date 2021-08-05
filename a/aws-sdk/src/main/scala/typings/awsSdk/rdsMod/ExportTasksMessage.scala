@@ -18,28 +18,21 @@ trait ExportTasksMessage extends StObject {
 }
 object ExportTasksMessage {
   
-  @scala.inline
-  def apply(): ExportTasksMessage = {
+  inline def apply(): ExportTasksMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportTasksMessage]
   }
   
-  @scala.inline
-  implicit class ExportTasksMessageMutableBuilder[Self <: ExportTasksMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ExportTasksMessage](x: Self) {
     
-    @scala.inline
-    def setExportTasks(value: ExportTasksList): Self = StObject.set(x, "ExportTasks", value.asInstanceOf[js.Any])
+    inline def setExportTasks(value: ExportTasksList): Self = StObject.set(x, "ExportTasks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportTasksUndefined: Self = StObject.set(x, "ExportTasks", js.undefined)
+    inline def setExportTasksUndefined: Self = StObject.set(x, "ExportTasks", js.undefined)
     
-    @scala.inline
-    def setExportTasksVarargs(value: ExportTask*): Self = StObject.set(x, "ExportTasks", js.Array(value :_*))
+    inline def setExportTasksVarargs(value: ExportTask*): Self = StObject.set(x, "ExportTasks", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

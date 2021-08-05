@@ -22,7 +22,7 @@ object schemaBuilderMongoSchemaBuilderMod {
     /* CompleteClass */
     override def build(): js.Promise[Unit] = js.native
     
-    var connection: Connection = js.native
+    /* protected */ var connection: Connection = js.native
     
     /**
       * Returns queries to be executed by schema builder.

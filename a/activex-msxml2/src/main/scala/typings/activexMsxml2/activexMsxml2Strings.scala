@@ -8,11 +8,9 @@ object activexMsxml2Strings {
   
   @js.native
   sealed trait ondataavailable extends StObject
-  @scala.inline
-  def ondataavailable: ondataavailable = "ondataavailable".asInstanceOf[ondataavailable]
+  inline def ondataavailable: ondataavailable = "ondataavailable".asInstanceOf[ondataavailable]
   
   @js.native
   sealed trait onreadystatechange extends StObject
-  @scala.inline
-  def onreadystatechange: onreadystatechange = "onreadystatechange".asInstanceOf[onreadystatechange]
+  inline def onreadystatechange: onreadystatechange = "onreadystatechange".asInstanceOf[onreadystatechange]
 }

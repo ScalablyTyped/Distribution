@@ -46,74 +46,52 @@ object inputGroupMod extends Shortcut {
   }
   object GroupProps {
     
-    @scala.inline
-    def apply(): GroupProps = {
+    inline def apply(): GroupProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GroupProps]
     }
     
-    @scala.inline
-    implicit class GroupPropsMutableBuilder[Self <: GroupProps] (val x: Self) extends AnyVal {
+    extension [Self <: GroupProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+      inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
+      inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
       
-      @scala.inline
-      def setOnBlur(value: FocusEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: FocusEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+      inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      @scala.inline
-      def setOnFocus(value: FocusEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: FocusEvent[HTMLSpanElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+      inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      @scala.inline
-      def setOnMouseEnter(value: MouseEvent[HTMLSpanElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
+      inline def setOnMouseEnter(value: MouseEvent[HTMLSpanElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
+      inline def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
       
-      @scala.inline
-      def setOnMouseLeave(value: MouseEvent[HTMLSpanElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+      inline def setOnMouseLeave(value: MouseEvent[HTMLSpanElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
+      inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setSize(value: large | small | typings.antd.antdStrings.default): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: large | small | typings.antd.antdStrings.default): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   

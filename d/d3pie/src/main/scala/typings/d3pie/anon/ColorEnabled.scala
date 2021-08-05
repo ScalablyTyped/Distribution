@@ -14,31 +14,23 @@ trait ColorEnabled extends StObject {
 }
 object ColorEnabled {
   
-  @scala.inline
-  def apply(): ColorEnabled = {
+  inline def apply(): ColorEnabled = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColorEnabled]
   }
   
-  @scala.inline
-  implicit class ColorEnabledMutableBuilder[Self <: ColorEnabled] (val x: Self) extends AnyVal {
+  extension [Self <: ColorEnabled](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
+    inline def setPercentage(value: Double): Self = StObject.set(x, "percentage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
+    inline def setPercentageUndefined: Self = StObject.set(x, "percentage", js.undefined)
   }
 }

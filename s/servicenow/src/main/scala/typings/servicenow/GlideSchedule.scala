@@ -24,8 +24,7 @@ trait GlideSchedule extends StObject {
 }
 object GlideSchedule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: (GlideDateTime, GlideDuration) => GlideDateTime,
     duration: (GlideDateTime, GlideDateTime) => GlideDuration,
     getName: () => String,
@@ -39,31 +38,22 @@ object GlideSchedule {
     __obj.asInstanceOf[GlideSchedule]
   }
   
-  @scala.inline
-  implicit class GlideScheduleMutableBuilder[Self <: GlideSchedule] (val x: Self) extends AnyVal {
+  extension [Self <: GlideSchedule](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (GlideDateTime, GlideDuration) => GlideDateTime): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (GlideDateTime, GlideDuration) => GlideDateTime): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDuration(value: (GlideDateTime, GlideDateTime) => GlideDuration): Self = StObject.set(x, "duration", js.Any.fromFunction2(value))
+    inline def setDuration(value: (GlideDateTime, GlideDateTime) => GlideDuration): Self = StObject.set(x, "duration", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsInSchedule(value: GlideDateTime => String): Self = StObject.set(x, "isInSchedule", js.Any.fromFunction1(value))
+    inline def setIsInSchedule(value: GlideDateTime => String): Self = StObject.set(x, "isInSchedule", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
+    inline def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLoad(value: (String, String, String) => Unit): Self = StObject.set(x, "load", js.Any.fromFunction3(value))
+    inline def setLoad(value: (String, String, String) => Unit): Self = StObject.set(x, "load", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetTimeZone(value: String => Unit): Self = StObject.set(x, "setTimeZone", js.Any.fromFunction1(value))
+    inline def setSetTimeZone(value: String => Unit): Self = StObject.set(x, "setTimeZone", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWhenNext(value: (GlideDateTime, String) => Double): Self = StObject.set(x, "whenNext", js.Any.fromFunction2(value))
+    inline def setWhenNext(value: (GlideDateTime, String) => Double): Self = StObject.set(x, "whenNext", js.Any.fromFunction2(value))
   }
 }

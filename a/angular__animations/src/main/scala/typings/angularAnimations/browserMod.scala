@@ -27,8 +27,7 @@ object browserMod {
     @JSImport("@angular/animations/browser", "AnimationDriver.NOOP")
     @js.native
     def NOOP: typings.angularAnimations.browserBrowserMod.AnimationDriver = js.native
-    @scala.inline
-    def NOOP_=(x: typings.angularAnimations.browserBrowserMod.AnimationDriver): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOOP")(x.asInstanceOf[js.Any])
+    inline def NOOP_=(x: typings.angularAnimations.browserBrowserMod.AnimationDriver): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOOP")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@angular/animations/browser", "\u0275Animation")
@@ -125,8 +124,7 @@ object browserMod {
   class ɵWebAnimationsStyleNormalizer ()
     extends typings.angularAnimations.browserBrowserMod.ɵWebAnimationsStyleNormalizer
   
-  @scala.inline
-  def ɵallowPreviousPlayerStylesMerge(duration: Double, delay: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275allowPreviousPlayerStylesMerge")(duration.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def ɵallowPreviousPlayerStylesMerge(duration: Double, delay: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275allowPreviousPlayerStylesMerge")(duration.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("@angular/animations/browser", "\u0275angular_packages_animations_browser_browser_a")
   @js.native
@@ -147,22 +145,16 @@ object browserMod {
     @JSImport("@angular/animations/browser", "\u0275angular_packages_animations_browser_browser_a.initialStylesByElement")
     @js.native
     def initialStylesByElement: WeakMap[js.Any, StringDictionary[js.Any]] = js.native
-    @scala.inline
-    def initialStylesByElement_=(x: WeakMap[js.Any, StringDictionary[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("initialStylesByElement")(x.asInstanceOf[js.Any])
+    inline def initialStylesByElement_=(x: WeakMap[js.Any, StringDictionary[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("initialStylesByElement")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def ɵcontainsElement(elm1: js.Any, elm2: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275containsElement")(elm1.asInstanceOf[js.Any], elm2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def ɵcontainsElement(elm1: js.Any, elm2: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275containsElement")(elm1.asInstanceOf[js.Any], elm2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def ɵinvokeQuery(element: js.Any, selector: String, multi: Boolean): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275invokeQuery")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], multi.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def ɵinvokeQuery(element: js.Any, selector: String, multi: Boolean): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275invokeQuery")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], multi.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @scala.inline
-  def ɵmatchesElement(element: js.Any, selector: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275matchesElement")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def ɵmatchesElement(element: js.Any, selector: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275matchesElement")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def ɵsupportsWebAnimations(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275supportsWebAnimations")().asInstanceOf[Boolean]
+  inline def ɵsupportsWebAnimations(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275supportsWebAnimations")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def ɵvalidateStyleProperty(prop: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275validateStyleProperty")(prop.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def ɵvalidateStyleProperty(prop: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275validateStyleProperty")(prop.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

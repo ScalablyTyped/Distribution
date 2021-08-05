@@ -18,19 +18,15 @@ trait BoardChartReference extends StObject {
 }
 object BoardChartReference {
   
-  @scala.inline
-  def apply(name: String, url: String): BoardChartReference = {
+  inline def apply(name: String, url: String): BoardChartReference = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[BoardChartReference]
   }
   
-  @scala.inline
-  implicit class BoardChartReferenceMutableBuilder[Self <: BoardChartReference] (val x: Self) extends AnyVal {
+  extension [Self <: BoardChartReference](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

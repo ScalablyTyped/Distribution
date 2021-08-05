@@ -18,27 +18,21 @@ object mod {
   @JSImport("base64id", "bytesBufferIndex")
   @js.native
   def bytesBufferIndex: Double = js.native
-  @scala.inline
-  def bytesBufferIndex_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bytesBufferIndex")(x.asInstanceOf[js.Any])
+  inline def bytesBufferIndex_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bytesBufferIndex")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def bytesBuffer_=(x: Buffer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bytesBuffer")(x.asInstanceOf[js.Any])
+  inline def bytesBuffer_=(x: Buffer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bytesBuffer")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def generateId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateId")().asInstanceOf[String]
+  inline def generateId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateId")().asInstanceOf[String]
   
-  @scala.inline
-  def getRandomBytes(bytes: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomBytes")(bytes.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def getRandomBytes(bytes: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomBytes")(bytes.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
   @JSImport("base64id", "isGeneratingBytes")
   @js.native
   def isGeneratingBytes: Boolean = js.native
-  @scala.inline
-  def isGeneratingBytes_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isGeneratingBytes")(x.asInstanceOf[js.Any])
+  inline def isGeneratingBytes_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isGeneratingBytes")(x.asInstanceOf[js.Any])
   
   @JSImport("base64id", "sequenceNumber")
   @js.native
   def sequenceNumber: Double = js.native
-  @scala.inline
-  def sequenceNumber_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sequenceNumber")(x.asInstanceOf[js.Any])
+  inline def sequenceNumber_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sequenceNumber")(x.asInstanceOf[js.Any])
 }

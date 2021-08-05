@@ -20,28 +20,21 @@ trait ApigatewayApiConfigGrpcServiceDefinition extends StObject {
 }
 object ApigatewayApiConfigGrpcServiceDefinition {
   
-  @scala.inline
-  def apply(): ApigatewayApiConfigGrpcServiceDefinition = {
+  inline def apply(): ApigatewayApiConfigGrpcServiceDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ApigatewayApiConfigGrpcServiceDefinition]
   }
   
-  @scala.inline
-  implicit class ApigatewayApiConfigGrpcServiceDefinitionMutableBuilder[Self <: ApigatewayApiConfigGrpcServiceDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ApigatewayApiConfigGrpcServiceDefinition](x: Self) {
     
-    @scala.inline
-    def setFileDescriptorSet(value: ApigatewayApiConfigFile): Self = StObject.set(x, "fileDescriptorSet", value.asInstanceOf[js.Any])
+    inline def setFileDescriptorSet(value: ApigatewayApiConfigFile): Self = StObject.set(x, "fileDescriptorSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileDescriptorSetUndefined: Self = StObject.set(x, "fileDescriptorSet", js.undefined)
+    inline def setFileDescriptorSetUndefined: Self = StObject.set(x, "fileDescriptorSet", js.undefined)
     
-    @scala.inline
-    def setSource(value: js.Array[ApigatewayApiConfigFile]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: js.Array[ApigatewayApiConfigFile]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setSourceVarargs(value: ApigatewayApiConfigFile*): Self = StObject.set(x, "source", js.Array(value :_*))
+    inline def setSourceVarargs(value: ApigatewayApiConfigFile*): Self = StObject.set(x, "source", js.Array(value :_*))
   }
 }

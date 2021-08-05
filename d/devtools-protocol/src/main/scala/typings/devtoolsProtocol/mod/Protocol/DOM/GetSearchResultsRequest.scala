@@ -24,22 +24,17 @@ trait GetSearchResultsRequest extends StObject {
 }
 object GetSearchResultsRequest {
   
-  @scala.inline
-  def apply(fromIndex: integer, searchId: String, toIndex: integer): GetSearchResultsRequest = {
+  inline def apply(fromIndex: integer, searchId: String, toIndex: integer): GetSearchResultsRequest = {
     val __obj = js.Dynamic.literal(fromIndex = fromIndex.asInstanceOf[js.Any], searchId = searchId.asInstanceOf[js.Any], toIndex = toIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSearchResultsRequest]
   }
   
-  @scala.inline
-  implicit class GetSearchResultsRequestMutableBuilder[Self <: GetSearchResultsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetSearchResultsRequest](x: Self) {
     
-    @scala.inline
-    def setFromIndex(value: integer): Self = StObject.set(x, "fromIndex", value.asInstanceOf[js.Any])
+    inline def setFromIndex(value: integer): Self = StObject.set(x, "fromIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchId(value: String): Self = StObject.set(x, "searchId", value.asInstanceOf[js.Any])
+    inline def setSearchId(value: String): Self = StObject.set(x, "searchId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToIndex(value: integer): Self = StObject.set(x, "toIndex", value.asInstanceOf[js.Any])
+    inline def setToIndex(value: integer): Self = StObject.set(x, "toIndex", value.asInstanceOf[js.Any])
   }
 }

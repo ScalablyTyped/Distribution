@@ -14,28 +14,21 @@ trait PlayerScoreSubmissionList extends StObject {
 }
 object PlayerScoreSubmissionList {
   
-  @scala.inline
-  def apply(): PlayerScoreSubmissionList = {
+  inline def apply(): PlayerScoreSubmissionList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlayerScoreSubmissionList]
   }
   
-  @scala.inline
-  implicit class PlayerScoreSubmissionListMutableBuilder[Self <: PlayerScoreSubmissionList] (val x: Self) extends AnyVal {
+  extension [Self <: PlayerScoreSubmissionList](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setScores(value: js.Array[ScoreSubmission]): Self = StObject.set(x, "scores", value.asInstanceOf[js.Any])
+    inline def setScores(value: js.Array[ScoreSubmission]): Self = StObject.set(x, "scores", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScoresUndefined: Self = StObject.set(x, "scores", js.undefined)
+    inline def setScoresUndefined: Self = StObject.set(x, "scores", js.undefined)
     
-    @scala.inline
-    def setScoresVarargs(value: ScoreSubmission*): Self = StObject.set(x, "scores", js.Array(value :_*))
+    inline def setScoresVarargs(value: ScoreSubmission*): Self = StObject.set(x, "scores", js.Array(value :_*))
   }
 }

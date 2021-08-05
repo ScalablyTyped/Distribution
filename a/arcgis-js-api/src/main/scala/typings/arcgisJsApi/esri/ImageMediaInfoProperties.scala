@@ -24,25 +24,19 @@ trait ImageMediaInfoProperties
 }
 object ImageMediaInfoProperties {
   
-  @scala.inline
-  def apply(): ImageMediaInfoProperties = {
+  inline def apply(): ImageMediaInfoProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageMediaInfoProperties]
   }
   
-  @scala.inline
-  implicit class ImageMediaInfoPropertiesMutableBuilder[Self <: ImageMediaInfoProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ImageMediaInfoProperties](x: Self) {
     
-    @scala.inline
-    def setRefreshInterval(value: Double): Self = StObject.set(x, "refreshInterval", value.asInstanceOf[js.Any])
+    inline def setRefreshInterval(value: Double): Self = StObject.set(x, "refreshInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefreshIntervalUndefined: Self = StObject.set(x, "refreshInterval", js.undefined)
+    inline def setRefreshIntervalUndefined: Self = StObject.set(x, "refreshInterval", js.undefined)
     
-    @scala.inline
-    def setValue(value: ImageMediaInfoValueProperties): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: ImageMediaInfoValueProperties): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

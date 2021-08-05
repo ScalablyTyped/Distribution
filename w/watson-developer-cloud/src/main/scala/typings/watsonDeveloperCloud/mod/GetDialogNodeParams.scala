@@ -22,37 +22,27 @@ trait GetDialogNodeParams extends StObject {
 }
 object GetDialogNodeParams {
   
-  @scala.inline
-  def apply(dialog_node: String, workspace_id: String): GetDialogNodeParams = {
+  inline def apply(dialog_node: String, workspace_id: String): GetDialogNodeParams = {
     val __obj = js.Dynamic.literal(dialog_node = dialog_node.asInstanceOf[js.Any], workspace_id = workspace_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetDialogNodeParams]
   }
   
-  @scala.inline
-  implicit class GetDialogNodeParamsMutableBuilder[Self <: GetDialogNodeParams] (val x: Self) extends AnyVal {
+  extension [Self <: GetDialogNodeParams](x: Self) {
     
-    @scala.inline
-    def setDialog_node(value: String): Self = StObject.set(x, "dialog_node", value.asInstanceOf[js.Any])
+    inline def setDialog_node(value: String): Self = StObject.set(x, "dialog_node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setInclude_audit(value: Boolean): Self = StObject.set(x, "include_audit", value.asInstanceOf[js.Any])
+    inline def setInclude_audit(value: Boolean): Self = StObject.set(x, "include_audit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInclude_auditUndefined: Self = StObject.set(x, "include_audit", js.undefined)
+    inline def setInclude_auditUndefined: Self = StObject.set(x, "include_audit", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
     
-    @scala.inline
-    def setWorkspace_id(value: String): Self = StObject.set(x, "workspace_id", value.asInstanceOf[js.Any])
+    inline def setWorkspace_id(value: String): Self = StObject.set(x, "workspace_id", value.asInstanceOf[js.Any])
   }
 }

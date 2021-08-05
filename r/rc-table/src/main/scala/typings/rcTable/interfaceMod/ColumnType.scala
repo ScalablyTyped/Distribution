@@ -41,66 +41,47 @@ trait ColumnType[RecordType]
 }
 object ColumnType {
   
-  @scala.inline
-  def apply[RecordType](): ColumnType[RecordType] = {
+  inline def apply[RecordType](): ColumnType[RecordType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColumnType[RecordType]]
   }
   
-  @scala.inline
-  implicit class ColumnTypeMutableBuilder[Self <: ColumnType[?], RecordType] (val x: Self & ColumnType[RecordType]) extends AnyVal {
+  extension [Self <: ColumnType[?], RecordType](x: Self & ColumnType[RecordType]) {
     
-    @scala.inline
-    def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
+    inline def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
+    inline def setColSpanUndefined: Self = StObject.set(x, "colSpan", js.undefined)
     
-    @scala.inline
-    def setDataIndex(value: DataIndex): Self = StObject.set(x, "dataIndex", value.asInstanceOf[js.Any])
+    inline def setDataIndex(value: DataIndex): Self = StObject.set(x, "dataIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataIndexUndefined: Self = StObject.set(x, "dataIndex", js.undefined)
+    inline def setDataIndexUndefined: Self = StObject.set(x, "dataIndex", js.undefined)
     
-    @scala.inline
-    def setDataIndexVarargs(value: (String | Double)*): Self = StObject.set(x, "dataIndex", js.Array(value :_*))
+    inline def setDataIndexVarargs(value: (String | Double)*): Self = StObject.set(x, "dataIndex", js.Array(value :_*))
     
-    @scala.inline
-    def setOnCell(value: (RecordType, /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement]): Self = StObject.set(x, "onCell", js.Any.fromFunction2(value))
+    inline def setOnCell(value: (RecordType, /* index */ js.UndefOr[Double]) => HTMLAttributes[HTMLElement]): Self = StObject.set(x, "onCell", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnCellClick(value: (/* record */ RecordType, /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onCellClick", js.Any.fromFunction2(value))
+    inline def setOnCellClick(value: (/* record */ RecordType, /* e */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onCellClick", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnCellClickUndefined: Self = StObject.set(x, "onCellClick", js.undefined)
+    inline def setOnCellClickUndefined: Self = StObject.set(x, "onCellClick", js.undefined)
     
-    @scala.inline
-    def setOnCellUndefined: Self = StObject.set(x, "onCell", js.undefined)
+    inline def setOnCellUndefined: Self = StObject.set(x, "onCell", js.undefined)
     
-    @scala.inline
-    def setRender(
+    inline def setRender(
       value: (/* value */ js.Any, /* record */ RecordType, /* index */ Double) => ReactNode | RenderedCell[RecordType]
     ): Self = StObject.set(x, "render", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+    inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
     
-    @scala.inline
-    def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
+    inline def setRowSpan(value: Double): Self = StObject.set(x, "rowSpan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
+    inline def setRowSpanUndefined: Self = StObject.set(x, "rowSpan", js.undefined)
     
-    @scala.inline
-    def setShouldCellUpdate(value: (/* record */ RecordType, /* prevRecord */ RecordType) => Boolean): Self = StObject.set(x, "shouldCellUpdate", js.Any.fromFunction2(value))
+    inline def setShouldCellUpdate(value: (/* record */ RecordType, /* prevRecord */ RecordType) => Boolean): Self = StObject.set(x, "shouldCellUpdate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setShouldCellUpdateUndefined: Self = StObject.set(x, "shouldCellUpdate", js.undefined)
+    inline def setShouldCellUpdateUndefined: Self = StObject.set(x, "shouldCellUpdate", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

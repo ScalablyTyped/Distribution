@@ -12,19 +12,15 @@ trait AllowUnknown extends StObject {
 }
 object AllowUnknown {
   
-  @scala.inline
-  def apply(allowUnknown: Boolean, stripUnknown: Boolean): AllowUnknown = {
+  inline def apply(allowUnknown: Boolean, stripUnknown: Boolean): AllowUnknown = {
     val __obj = js.Dynamic.literal(allowUnknown = allowUnknown.asInstanceOf[js.Any], stripUnknown = stripUnknown.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllowUnknown]
   }
   
-  @scala.inline
-  implicit class AllowUnknownMutableBuilder[Self <: AllowUnknown] (val x: Self) extends AnyVal {
+  extension [Self <: AllowUnknown](x: Self) {
     
-    @scala.inline
-    def setAllowUnknown(value: Boolean): Self = StObject.set(x, "allowUnknown", value.asInstanceOf[js.Any])
+    inline def setAllowUnknown(value: Boolean): Self = StObject.set(x, "allowUnknown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStripUnknown(value: Boolean): Self = StObject.set(x, "stripUnknown", value.asInstanceOf[js.Any])
+    inline def setStripUnknown(value: Boolean): Self = StObject.set(x, "stripUnknown", value.asInstanceOf[js.Any])
   }
 }

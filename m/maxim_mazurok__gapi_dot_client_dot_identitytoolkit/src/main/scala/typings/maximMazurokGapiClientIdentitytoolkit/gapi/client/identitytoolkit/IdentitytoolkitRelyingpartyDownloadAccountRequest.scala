@@ -20,37 +20,27 @@ trait IdentitytoolkitRelyingpartyDownloadAccountRequest extends StObject {
 }
 object IdentitytoolkitRelyingpartyDownloadAccountRequest {
   
-  @scala.inline
-  def apply(): IdentitytoolkitRelyingpartyDownloadAccountRequest = {
+  inline def apply(): IdentitytoolkitRelyingpartyDownloadAccountRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IdentitytoolkitRelyingpartyDownloadAccountRequest]
   }
   
-  @scala.inline
-  implicit class IdentitytoolkitRelyingpartyDownloadAccountRequestMutableBuilder[Self <: IdentitytoolkitRelyingpartyDownloadAccountRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IdentitytoolkitRelyingpartyDownloadAccountRequest](x: Self) {
     
-    @scala.inline
-    def setDelegatedProjectNumber(value: String): Self = StObject.set(x, "delegatedProjectNumber", value.asInstanceOf[js.Any])
+    inline def setDelegatedProjectNumber(value: String): Self = StObject.set(x, "delegatedProjectNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelegatedProjectNumberUndefined: Self = StObject.set(x, "delegatedProjectNumber", js.undefined)
+    inline def setDelegatedProjectNumberUndefined: Self = StObject.set(x, "delegatedProjectNumber", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setTargetProjectId(value: String): Self = StObject.set(x, "targetProjectId", value.asInstanceOf[js.Any])
+    inline def setTargetProjectId(value: String): Self = StObject.set(x, "targetProjectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetProjectIdUndefined: Self = StObject.set(x, "targetProjectId", js.undefined)
+    inline def setTargetProjectIdUndefined: Self = StObject.set(x, "targetProjectId", js.undefined)
   }
 }

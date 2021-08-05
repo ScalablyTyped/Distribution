@@ -19,10 +19,8 @@ object mod {
   /**
     * Determines the great-circle distance between two points on a sphere given their longitudes and latitudes
     */
-  @scala.inline
-  def apply[OptionsT /* <: js.UndefOr[Options] */](start: ParamType[OptionsT], end: ParamType[OptionsT]): Return[OptionsT] = (^.asInstanceOf[js.Dynamic].apply(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Return[OptionsT]]
-  @scala.inline
-  def apply[OptionsT /* <: js.UndefOr[Options] */](start: ParamType[OptionsT], end: ParamType[OptionsT], options: OptionsT): Return[OptionsT] = (^.asInstanceOf[js.Dynamic].apply(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Return[OptionsT]]
+  inline def apply[OptionsT /* <: js.UndefOr[Options] */](start: ParamType[OptionsT], end: ParamType[OptionsT]): Return[OptionsT] = (^.asInstanceOf[js.Dynamic].apply(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Return[OptionsT]]
+  inline def apply[OptionsT /* <: js.UndefOr[Options] */](start: ParamType[OptionsT], end: ParamType[OptionsT], options: OptionsT): Return[OptionsT] = (^.asInstanceOf[js.Dynamic].apply(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Return[OptionsT]]
   
   @JSImport("haversine", JSImport.Namespace)
   @js.native
@@ -48,20 +46,16 @@ object mod {
   }
   object CoordinateLatLng {
     
-    @scala.inline
-    def apply(lat: Double, lng: Double): CoordinateLatLng = {
+    inline def apply(lat: Double, lng: Double): CoordinateLatLng = {
       val __obj = js.Dynamic.literal(lat = lat.asInstanceOf[js.Any], lng = lng.asInstanceOf[js.Any])
       __obj.asInstanceOf[CoordinateLatLng]
     }
     
-    @scala.inline
-    implicit class CoordinateLatLngMutableBuilder[Self <: CoordinateLatLng] (val x: Self) extends AnyVal {
+    extension [Self <: CoordinateLatLng](x: Self) {
       
-      @scala.inline
-      def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
+      inline def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLng(value: Double): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
+      inline def setLng(value: Double): Self = StObject.set(x, "lng", value.asInstanceOf[js.Any])
     }
   }
   
@@ -76,20 +70,16 @@ object mod {
   }
   object CoordinateLonLat {
     
-    @scala.inline
-    def apply(lat: Double, lon: Double): CoordinateLonLat = {
+    inline def apply(lat: Double, lon: Double): CoordinateLonLat = {
       val __obj = js.Dynamic.literal(lat = lat.asInstanceOf[js.Any], lon = lon.asInstanceOf[js.Any])
       __obj.asInstanceOf[CoordinateLonLat]
     }
     
-    @scala.inline
-    implicit class CoordinateLonLatMutableBuilder[Self <: CoordinateLonLat] (val x: Self) extends AnyVal {
+    extension [Self <: CoordinateLonLat](x: Self) {
       
-      @scala.inline
-      def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
+      inline def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLon(value: Double): Self = StObject.set(x, "lon", value.asInstanceOf[js.Any])
+      inline def setLon(value: Double): Self = StObject.set(x, "lon", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,20 +94,16 @@ object mod {
   }
   object CoordinateLongitudeLatitude {
     
-    @scala.inline
-    def apply(latitude: Double, longitude: Double): CoordinateLongitudeLatitude = {
+    inline def apply(latitude: Double, longitude: Double): CoordinateLongitudeLatitude = {
       val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
       __obj.asInstanceOf[CoordinateLongitudeLatitude]
     }
     
-    @scala.inline
-    implicit class CoordinateLongitudeLatitudeMutableBuilder[Self <: CoordinateLongitudeLatitude] (val x: Self) extends AnyVal {
+    extension [Self <: CoordinateLongitudeLatitude](x: Self) {
       
-      @scala.inline
-      def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+      inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+      inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     }
   }
   
@@ -130,17 +116,14 @@ object mod {
   }
   object GeoJSON {
     
-    @scala.inline
-    def apply(geometry: Coordinates): GeoJSON = {
+    inline def apply(geometry: Coordinates): GeoJSON = {
       val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any])
       __obj.asInstanceOf[GeoJSON]
     }
     
-    @scala.inline
-    implicit class GeoJSONMutableBuilder[Self <: GeoJSON] (val x: Self) extends AnyVal {
+    extension [Self <: GeoJSON](x: Self) {
       
-      @scala.inline
-      def setGeometry(value: Coordinates): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+      inline def setGeometry(value: Coordinates): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     }
   }
   
@@ -163,37 +146,28 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setFormat(
+      inline def setFormat(
         value: `[latCommalon]` | `[lonCommalat]` | LeftcurlybracketlonCommalatRightcurlybracket | LeftcurlybracketlatCommalngRightcurlybracket | geojson
       ): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+      inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
       
-      @scala.inline
-      def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+      inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThresholdNull: Self = StObject.set(x, "threshold", null)
+      inline def setThresholdNull: Self = StObject.set(x, "threshold", null)
       
-      @scala.inline
-      def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+      inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
       
-      @scala.inline
-      def setUnit(value: km | mile | meter | nmi): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+      inline def setUnit(value: km | mile | meter | nmi): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+      inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     }
   }
   
@@ -215,26 +189,22 @@ object mod {
        with _ParamType[js.Any]
   object _Coordinate {
     
-    @scala.inline
-    def CoordinateLatLng(lat: Double, lng: Double): typings.haversine.mod.CoordinateLatLng = {
+    inline def CoordinateLatLng(lat: Double, lng: Double): typings.haversine.mod.CoordinateLatLng = {
       val __obj = js.Dynamic.literal(lat = lat.asInstanceOf[js.Any], lng = lng.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.haversine.mod.CoordinateLatLng]
     }
     
-    @scala.inline
-    def CoordinateLonLat(lat: Double, lon: Double): typings.haversine.mod.CoordinateLonLat = {
+    inline def CoordinateLonLat(lat: Double, lon: Double): typings.haversine.mod.CoordinateLonLat = {
       val __obj = js.Dynamic.literal(lat = lat.asInstanceOf[js.Any], lon = lon.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.haversine.mod.CoordinateLonLat]
     }
     
-    @scala.inline
-    def CoordinateLongitudeLatitude(latitude: Double, longitude: Double): typings.haversine.mod.CoordinateLongitudeLatitude = {
+    inline def CoordinateLongitudeLatitude(latitude: Double, longitude: Double): typings.haversine.mod.CoordinateLongitudeLatitude = {
       val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.haversine.mod.CoordinateLongitudeLatitude]
     }
     
-    @scala.inline
-    def GeoJSON(geometry: Coordinates): typings.haversine.mod.GeoJSON = {
+    inline def GeoJSON(geometry: Coordinates): typings.haversine.mod.GeoJSON = {
       val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.haversine.mod.GeoJSON]
     }

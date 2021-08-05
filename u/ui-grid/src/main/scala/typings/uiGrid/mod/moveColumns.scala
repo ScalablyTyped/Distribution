@@ -16,20 +16,16 @@ object moveColumns {
   }
   object IColumnDef {
     
-    @scala.inline
-    def apply(): typings.uiGrid.mod.moveColumns.IColumnDef = {
+    inline def apply(): typings.uiGrid.mod.moveColumns.IColumnDef = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.uiGrid.mod.moveColumns.IColumnDef]
     }
     
-    @scala.inline
-    implicit class IColumnDefMutableBuilder[Self <: typings.uiGrid.mod.moveColumns.IColumnDef] (val x: Self) extends AnyVal {
+    extension [Self <: typings.uiGrid.mod.moveColumns.IColumnDef](x: Self) {
       
-      @scala.inline
-      def setEnableColumnMoving(value: Boolean): Self = StObject.set(x, "enableColumnMoving", value.asInstanceOf[js.Any])
+      inline def setEnableColumnMoving(value: Boolean): Self = StObject.set(x, "enableColumnMoving", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableColumnMovingUndefined: Self = StObject.set(x, "enableColumnMoving", js.undefined)
+      inline def setEnableColumnMovingUndefined: Self = StObject.set(x, "enableColumnMoving", js.undefined)
     }
   }
   
@@ -48,20 +44,16 @@ object moveColumns {
   }
   object IGridMoveColumnsApi {
     
-    @scala.inline
-    def apply(moveColumn: (Double, Double) => Unit, on: ColumnPositionChanged): IGridMoveColumnsApi = {
+    inline def apply(moveColumn: (Double, Double) => Unit, on: ColumnPositionChanged): IGridMoveColumnsApi = {
       val __obj = js.Dynamic.literal(moveColumn = js.Any.fromFunction2(moveColumn), on = on.asInstanceOf[js.Any])
       __obj.asInstanceOf[IGridMoveColumnsApi]
     }
     
-    @scala.inline
-    implicit class IGridMoveColumnsApiMutableBuilder[Self <: IGridMoveColumnsApi] (val x: Self) extends AnyVal {
+    extension [Self <: IGridMoveColumnsApi](x: Self) {
       
-      @scala.inline
-      def setMoveColumn(value: (Double, Double) => Unit): Self = StObject.set(x, "moveColumn", js.Any.fromFunction2(value))
+      inline def setMoveColumn(value: (Double, Double) => Unit): Self = StObject.set(x, "moveColumn", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOn(value: ColumnPositionChanged): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
+      inline def setOn(value: ColumnPositionChanged): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     }
   }
   
@@ -77,20 +69,16 @@ object moveColumns {
   }
   object IGridOptions {
     
-    @scala.inline
-    def apply(): typings.uiGrid.mod.moveColumns.IGridOptions = {
+    inline def apply(): typings.uiGrid.mod.moveColumns.IGridOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.uiGrid.mod.moveColumns.IGridOptions]
     }
     
-    @scala.inline
-    implicit class IGridOptionsMutableBuilder[Self <: typings.uiGrid.mod.moveColumns.IGridOptions] (val x: Self) extends AnyVal {
+    extension [Self <: typings.uiGrid.mod.moveColumns.IGridOptions](x: Self) {
       
-      @scala.inline
-      def setEnableColumnMoving(value: Boolean): Self = StObject.set(x, "enableColumnMoving", value.asInstanceOf[js.Any])
+      inline def setEnableColumnMoving(value: Boolean): Self = StObject.set(x, "enableColumnMoving", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableColumnMovingUndefined: Self = StObject.set(x, "enableColumnMoving", js.undefined)
+      inline def setEnableColumnMovingUndefined: Self = StObject.set(x, "enableColumnMoving", js.undefined)
     }
   }
   

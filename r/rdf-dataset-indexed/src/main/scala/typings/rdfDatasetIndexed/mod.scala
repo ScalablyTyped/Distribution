@@ -12,17 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[Q /* <: BaseQuad */](): DatasetIndexed[Q, Quad] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[DatasetIndexed[Q, Quad]]
-  @scala.inline
-  def apply[Q /* <: BaseQuad */](quads: js.Array[Q]): DatasetIndexed[Q, Quad] = ^.asInstanceOf[js.Dynamic].apply(quads.asInstanceOf[js.Any]).asInstanceOf[DatasetIndexed[Q, Quad]]
-  @scala.inline
-  def apply[Q /* <: BaseQuad */](
+  inline def apply[Q /* <: BaseQuad */](): DatasetIndexed[Q, Quad] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[DatasetIndexed[Q, Quad]]
+  inline def apply[Q /* <: BaseQuad */](quads: js.Array[Q]): DatasetIndexed[Q, Quad] = ^.asInstanceOf[js.Dynamic].apply(quads.asInstanceOf[js.Any]).asInstanceOf[DatasetIndexed[Q, Quad]]
+  inline def apply[Q /* <: BaseQuad */](
     quads: js.Array[Q],
     dataFactory: (DataFactory[Q, Q]) & (DatasetCoreFactory[Q, Q, DatasetCore[Q, Q]])
   ): DatasetIndexed[Q, Quad] = (^.asInstanceOf[js.Dynamic].apply(quads.asInstanceOf[js.Any], dataFactory.asInstanceOf[js.Any])).asInstanceOf[DatasetIndexed[Q, Quad]]
-  @scala.inline
-  def apply[Q /* <: BaseQuad */](quads: Unit, dataFactory: (DataFactory[Q, Q]) & (DatasetCoreFactory[Q, Q, DatasetCore[Q, Q]])): DatasetIndexed[Q, Quad] = (^.asInstanceOf[js.Dynamic].apply(quads.asInstanceOf[js.Any], dataFactory.asInstanceOf[js.Any])).asInstanceOf[DatasetIndexed[Q, Quad]]
+  inline def apply[Q /* <: BaseQuad */](quads: Unit, dataFactory: (DataFactory[Q, Q]) & (DatasetCoreFactory[Q, Q, DatasetCore[Q, Q]])): DatasetIndexed[Q, Quad] = (^.asInstanceOf[js.Dynamic].apply(quads.asInstanceOf[js.Any], dataFactory.asInstanceOf[js.Any])).asInstanceOf[DatasetIndexed[Q, Quad]]
   
   @JSImport("rdf-dataset-indexed", JSImport.Namespace)
   @js.native

@@ -27,23 +27,18 @@ object reactiveStreamTypesMod {
   }
   object ISubject {
     
-    @scala.inline
-    def apply[T](onComplete: () => Unit, onError: Error => Unit, onNext: T => Unit): ISubject[T] = {
+    inline def apply[T](onComplete: () => Unit, onError: Error => Unit, onNext: T => Unit): ISubject[T] = {
       val __obj = js.Dynamic.literal(onComplete = js.Any.fromFunction0(onComplete), onError = js.Any.fromFunction1(onError), onNext = js.Any.fromFunction1(onNext))
       __obj.asInstanceOf[ISubject[T]]
     }
     
-    @scala.inline
-    implicit class ISubjectMutableBuilder[Self <: ISubject[?], T] (val x: Self & ISubject[T]) extends AnyVal {
+    extension [Self <: ISubject[?], T](x: Self & ISubject[T]) {
       
-      @scala.inline
-      def setOnComplete(value: () => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
+      inline def setOnComplete(value: () => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnError(value: Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnNext(value: T => Unit): Self = StObject.set(x, "onNext", js.Any.fromFunction1(value))
+      inline def setOnNext(value: T => Unit): Self = StObject.set(x, "onNext", js.Any.fromFunction1(value))
     }
   }
   
@@ -59,8 +54,7 @@ object reactiveStreamTypesMod {
   }
   object ISubscriber {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       onComplete: () => Unit,
       onError: Error => Unit,
       onNext: T => Unit,
@@ -70,20 +64,15 @@ object reactiveStreamTypesMod {
       __obj.asInstanceOf[ISubscriber[T]]
     }
     
-    @scala.inline
-    implicit class ISubscriberMutableBuilder[Self <: ISubscriber[?], T] (val x: Self & ISubscriber[T]) extends AnyVal {
+    extension [Self <: ISubscriber[?], T](x: Self & ISubscriber[T]) {
       
-      @scala.inline
-      def setOnComplete(value: () => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
+      inline def setOnComplete(value: () => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnError(value: Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnNext(value: T => Unit): Self = StObject.set(x, "onNext", js.Any.fromFunction1(value))
+      inline def setOnNext(value: T => Unit): Self = StObject.set(x, "onNext", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSubscribe(value: ISubscription => Unit): Self = StObject.set(x, "onSubscribe", js.Any.fromFunction1(value))
+      inline def setOnSubscribe(value: ISubscription => Unit): Self = StObject.set(x, "onSubscribe", js.Any.fromFunction1(value))
     }
   }
   
@@ -95,20 +84,16 @@ object reactiveStreamTypesMod {
   }
   object ISubscription {
     
-    @scala.inline
-    def apply(cancel: () => Unit, request: Double => Unit): ISubscription = {
+    inline def apply(cancel: () => Unit, request: Double => Unit): ISubscription = {
       val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), request = js.Any.fromFunction1(request))
       __obj.asInstanceOf[ISubscription]
     }
     
-    @scala.inline
-    implicit class ISubscriptionMutableBuilder[Self <: ISubscription] (val x: Self) extends AnyVal {
+    extension [Self <: ISubscription](x: Self) {
       
-      @scala.inline
-      def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+      inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRequest(value: Double => Unit): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
+      inline def setRequest(value: Double => Unit): Self = StObject.set(x, "request", js.Any.fromFunction1(value))
     }
   }
 }

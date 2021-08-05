@@ -13,14 +13,10 @@ object getDirectConnectGatewayAttachmentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getDirectConnectGatewayAttachment(): js.Promise[GetDirectConnectGatewayAttachmentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirectConnectGatewayAttachment")().asInstanceOf[js.Promise[GetDirectConnectGatewayAttachmentResult]]
-  @scala.inline
-  def getDirectConnectGatewayAttachment(args: Unit, opts: InvokeOptions): js.Promise[GetDirectConnectGatewayAttachmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDirectConnectGatewayAttachment")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetDirectConnectGatewayAttachmentResult]]
-  @scala.inline
-  def getDirectConnectGatewayAttachment(args: GetDirectConnectGatewayAttachmentArgs): js.Promise[GetDirectConnectGatewayAttachmentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirectConnectGatewayAttachment")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetDirectConnectGatewayAttachmentResult]]
-  @scala.inline
-  def getDirectConnectGatewayAttachment(args: GetDirectConnectGatewayAttachmentArgs, opts: InvokeOptions): js.Promise[GetDirectConnectGatewayAttachmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDirectConnectGatewayAttachment")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetDirectConnectGatewayAttachmentResult]]
+  inline def getDirectConnectGatewayAttachment(): js.Promise[GetDirectConnectGatewayAttachmentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirectConnectGatewayAttachment")().asInstanceOf[js.Promise[GetDirectConnectGatewayAttachmentResult]]
+  inline def getDirectConnectGatewayAttachment(args: Unit, opts: InvokeOptions): js.Promise[GetDirectConnectGatewayAttachmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDirectConnectGatewayAttachment")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetDirectConnectGatewayAttachmentResult]]
+  inline def getDirectConnectGatewayAttachment(args: GetDirectConnectGatewayAttachmentArgs): js.Promise[GetDirectConnectGatewayAttachmentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirectConnectGatewayAttachment")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetDirectConnectGatewayAttachmentResult]]
+  inline def getDirectConnectGatewayAttachment(args: GetDirectConnectGatewayAttachmentArgs, opts: InvokeOptions): js.Promise[GetDirectConnectGatewayAttachmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDirectConnectGatewayAttachment")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetDirectConnectGatewayAttachmentResult]]
   
   trait GetDirectConnectGatewayAttachmentArgs extends StObject {
     
@@ -46,41 +42,30 @@ object getDirectConnectGatewayAttachmentMod {
   }
   object GetDirectConnectGatewayAttachmentArgs {
     
-    @scala.inline
-    def apply(): GetDirectConnectGatewayAttachmentArgs = {
+    inline def apply(): GetDirectConnectGatewayAttachmentArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetDirectConnectGatewayAttachmentArgs]
     }
     
-    @scala.inline
-    implicit class GetDirectConnectGatewayAttachmentArgsMutableBuilder[Self <: GetDirectConnectGatewayAttachmentArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetDirectConnectGatewayAttachmentArgs](x: Self) {
       
-      @scala.inline
-      def setDxGatewayId(value: String): Self = StObject.set(x, "dxGatewayId", value.asInstanceOf[js.Any])
+      inline def setDxGatewayId(value: String): Self = StObject.set(x, "dxGatewayId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDxGatewayIdUndefined: Self = StObject.set(x, "dxGatewayId", js.undefined)
+      inline def setDxGatewayIdUndefined: Self = StObject.set(x, "dxGatewayId", js.undefined)
       
-      @scala.inline
-      def setFilters(value: js.Array[GetDirectConnectGatewayAttachmentFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[GetDirectConnectGatewayAttachmentFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: GetDirectConnectGatewayAttachmentFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: GetDirectConnectGatewayAttachmentFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTransitGatewayId(value: String): Self = StObject.set(x, "transitGatewayId", value.asInstanceOf[js.Any])
+      inline def setTransitGatewayId(value: String): Self = StObject.set(x, "transitGatewayId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitGatewayIdUndefined: Self = StObject.set(x, "transitGatewayId", js.undefined)
+      inline def setTransitGatewayIdUndefined: Self = StObject.set(x, "transitGatewayId", js.undefined)
     }
   }
   
@@ -108,45 +93,34 @@ object getDirectConnectGatewayAttachmentMod {
   }
   object GetDirectConnectGatewayAttachmentResult {
     
-    @scala.inline
-    def apply(id: String, tags: StringDictionary[String]): GetDirectConnectGatewayAttachmentResult = {
+    inline def apply(id: String, tags: StringDictionary[String]): GetDirectConnectGatewayAttachmentResult = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetDirectConnectGatewayAttachmentResult]
     }
     
-    @scala.inline
-    implicit class GetDirectConnectGatewayAttachmentResultMutableBuilder[Self <: GetDirectConnectGatewayAttachmentResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetDirectConnectGatewayAttachmentResult](x: Self) {
       
-      @scala.inline
-      def setDxGatewayId(value: String): Self = StObject.set(x, "dxGatewayId", value.asInstanceOf[js.Any])
+      inline def setDxGatewayId(value: String): Self = StObject.set(x, "dxGatewayId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDxGatewayIdUndefined: Self = StObject.set(x, "dxGatewayId", js.undefined)
+      inline def setDxGatewayIdUndefined: Self = StObject.set(x, "dxGatewayId", js.undefined)
       
-      @scala.inline
-      def setFilters(
+      inline def setFilters(
         value: js.Array[
               typings.pulumiAws.outputMod.ec2transitgateway.GetDirectConnectGatewayAttachmentFilter
             ]
       ): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2transitgateway.GetDirectConnectGatewayAttachmentFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2transitgateway.GetDirectConnectGatewayAttachmentFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitGatewayId(value: String): Self = StObject.set(x, "transitGatewayId", value.asInstanceOf[js.Any])
+      inline def setTransitGatewayId(value: String): Self = StObject.set(x, "transitGatewayId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitGatewayIdUndefined: Self = StObject.set(x, "transitGatewayId", js.undefined)
+      inline def setTransitGatewayIdUndefined: Self = StObject.set(x, "transitGatewayId", js.undefined)
     }
   }
 }

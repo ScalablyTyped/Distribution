@@ -29,31 +29,23 @@ trait INxTreeValue extends StObject {
 }
 object INxTreeValue {
   
-  @scala.inline
-  def apply(qText: String, qValue: Double): INxTreeValue = {
+  inline def apply(qText: String, qValue: Double): INxTreeValue = {
     val __obj = js.Dynamic.literal(qText = qText.asInstanceOf[js.Any], qValue = qValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxTreeValue]
   }
   
-  @scala.inline
-  implicit class INxTreeValueMutableBuilder[Self <: INxTreeValue] (val x: Self) extends AnyVal {
+  extension [Self <: INxTreeValue](x: Self) {
     
-    @scala.inline
-    def setQAttrDims(value: INxAttributeDimValues): Self = StObject.set(x, "qAttrDims", value.asInstanceOf[js.Any])
+    inline def setQAttrDims(value: INxAttributeDimValues): Self = StObject.set(x, "qAttrDims", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQAttrDimsUndefined: Self = StObject.set(x, "qAttrDims", js.undefined)
+    inline def setQAttrDimsUndefined: Self = StObject.set(x, "qAttrDims", js.undefined)
     
-    @scala.inline
-    def setQAttrExps(value: INxAttributeExpressionValues): Self = StObject.set(x, "qAttrExps", value.asInstanceOf[js.Any])
+    inline def setQAttrExps(value: INxAttributeExpressionValues): Self = StObject.set(x, "qAttrExps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQAttrExpsUndefined: Self = StObject.set(x, "qAttrExps", js.undefined)
+    inline def setQAttrExpsUndefined: Self = StObject.set(x, "qAttrExps", js.undefined)
     
-    @scala.inline
-    def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
+    inline def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQValue(value: Double): Self = StObject.set(x, "qValue", value.asInstanceOf[js.Any])
+    inline def setQValue(value: Double): Self = StObject.set(x, "qValue", value.asInstanceOf[js.Any])
   }
 }

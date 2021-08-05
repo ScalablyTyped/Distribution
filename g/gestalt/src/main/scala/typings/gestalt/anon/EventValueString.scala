@@ -14,8 +14,7 @@ trait EventValueString extends StObject {
 }
 object EventValueString {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     event: FocusEvent[HTMLInputElement] | (typings.react.mod.SyntheticEvent[HTMLInputElement, typings.std.Event]),
     value: String
   ): EventValueString = {
@@ -23,15 +22,12 @@ object EventValueString {
     __obj.asInstanceOf[EventValueString]
   }
   
-  @scala.inline
-  implicit class EventValueStringMutableBuilder[Self <: EventValueString] (val x: Self) extends AnyVal {
+  extension [Self <: EventValueString](x: Self) {
     
-    @scala.inline
-    def setEvent(
+    inline def setEvent(
       value: FocusEvent[HTMLInputElement] | (typings.react.mod.SyntheticEvent[HTMLInputElement, typings.std.Event])
     ): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

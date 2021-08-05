@@ -13,22 +13,17 @@ trait IosStoreAppAssignmentSettings
 }
 object IosStoreAppAssignmentSettings {
   
-  @scala.inline
-  def apply(): IosStoreAppAssignmentSettings = {
+  inline def apply(): IosStoreAppAssignmentSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IosStoreAppAssignmentSettings]
   }
   
-  @scala.inline
-  implicit class IosStoreAppAssignmentSettingsMutableBuilder[Self <: IosStoreAppAssignmentSettings] (val x: Self) extends AnyVal {
+  extension [Self <: IosStoreAppAssignmentSettings](x: Self) {
     
-    @scala.inline
-    def setVpnConfigurationId(value: NullableOption[String]): Self = StObject.set(x, "vpnConfigurationId", value.asInstanceOf[js.Any])
+    inline def setVpnConfigurationId(value: NullableOption[String]): Self = StObject.set(x, "vpnConfigurationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpnConfigurationIdNull: Self = StObject.set(x, "vpnConfigurationId", null)
+    inline def setVpnConfigurationIdNull: Self = StObject.set(x, "vpnConfigurationId", null)
     
-    @scala.inline
-    def setVpnConfigurationIdUndefined: Self = StObject.set(x, "vpnConfigurationId", js.undefined)
+    inline def setVpnConfigurationIdUndefined: Self = StObject.set(x, "vpnConfigurationId", js.undefined)
   }
 }

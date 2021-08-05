@@ -53,8 +53,7 @@ trait XControlInformation
 }
 object XControlInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SupportedControls: SafeArray[String],
     acquire: () => Unit,
     getSupportedControlProperties: String => SafeArray[String],
@@ -68,22 +67,16 @@ object XControlInformation {
     __obj.asInstanceOf[XControlInformation]
   }
   
-  @scala.inline
-  implicit class XControlInformationMutableBuilder[Self <: XControlInformation] (val x: Self) extends AnyVal {
+  extension [Self <: XControlInformation](x: Self) {
     
-    @scala.inline
-    def setGetSupportedControlProperties(value: String => SafeArray[String]): Self = StObject.set(x, "getSupportedControlProperties", js.Any.fromFunction1(value))
+    inline def setGetSupportedControlProperties(value: String => SafeArray[String]): Self = StObject.set(x, "getSupportedControlProperties", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSupportedControls(value: () => SafeArray[String]): Self = StObject.set(x, "getSupportedControls", js.Any.fromFunction0(value))
+    inline def setGetSupportedControls(value: () => SafeArray[String]): Self = StObject.set(x, "getSupportedControls", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsControlPropertySupported(value: (String, String) => Boolean): Self = StObject.set(x, "isControlPropertySupported", js.Any.fromFunction2(value))
+    inline def setIsControlPropertySupported(value: (String, String) => Boolean): Self = StObject.set(x, "isControlPropertySupported", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setIsControlSupported(value: String => Boolean): Self = StObject.set(x, "isControlSupported", js.Any.fromFunction1(value))
+    inline def setIsControlSupported(value: String => Boolean): Self = StObject.set(x, "isControlSupported", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSupportedControls(value: SafeArray[String]): Self = StObject.set(x, "SupportedControls", value.asInstanceOf[js.Any])
+    inline def setSupportedControls(value: SafeArray[String]): Self = StObject.set(x, "SupportedControls", value.asInstanceOf[js.Any])
   }
 }

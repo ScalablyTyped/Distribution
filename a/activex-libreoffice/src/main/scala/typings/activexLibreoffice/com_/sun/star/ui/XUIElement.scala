@@ -49,8 +49,7 @@ trait XUIElement
 }
 object XUIElement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Frame: XFrame,
     RealInterface: XInterface,
     ResourceURL: String,
@@ -64,22 +63,16 @@ object XUIElement {
     __obj.asInstanceOf[XUIElement]
   }
   
-  @scala.inline
-  implicit class XUIElementMutableBuilder[Self <: XUIElement] (val x: Self) extends AnyVal {
+  extension [Self <: XUIElement](x: Self) {
     
-    @scala.inline
-    def setFrame(value: XFrame): Self = StObject.set(x, "Frame", value.asInstanceOf[js.Any])
+    inline def setFrame(value: XFrame): Self = StObject.set(x, "Frame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetRealInterface(value: () => XInterface): Self = StObject.set(x, "getRealInterface", js.Any.fromFunction0(value))
+    inline def setGetRealInterface(value: () => XInterface): Self = StObject.set(x, "getRealInterface", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRealInterface(value: XInterface): Self = StObject.set(x, "RealInterface", value.asInstanceOf[js.Any])
+    inline def setRealInterface(value: XInterface): Self = StObject.set(x, "RealInterface", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceURL(value: String): Self = StObject.set(x, "ResourceURL", value.asInstanceOf[js.Any])
+    inline def setResourceURL(value: String): Self = StObject.set(x, "ResourceURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

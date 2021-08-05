@@ -54,8 +54,7 @@ trait RelativeDateTimeFormatter extends StObject {
 }
 object RelativeDateTimeFormatter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     locale: String,
     string: (Date, Date) => String,
     useNamedDateTimeStyle: () => Unit,
@@ -65,19 +64,14 @@ object RelativeDateTimeFormatter {
     __obj.asInstanceOf[RelativeDateTimeFormatter]
   }
   
-  @scala.inline
-  implicit class RelativeDateTimeFormatterMutableBuilder[Self <: RelativeDateTimeFormatter] (val x: Self) extends AnyVal {
+  extension [Self <: RelativeDateTimeFormatter](x: Self) {
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setString(value: (Date, Date) => String): Self = StObject.set(x, "string", js.Any.fromFunction2(value))
+    inline def setString(value: (Date, Date) => String): Self = StObject.set(x, "string", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUseNamedDateTimeStyle(value: () => Unit): Self = StObject.set(x, "useNamedDateTimeStyle", js.Any.fromFunction0(value))
+    inline def setUseNamedDateTimeStyle(value: () => Unit): Self = StObject.set(x, "useNamedDateTimeStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUseNumericDateTimeStyle(value: () => Unit): Self = StObject.set(x, "useNumericDateTimeStyle", js.Any.fromFunction0(value))
+    inline def setUseNumericDateTimeStyle(value: () => Unit): Self = StObject.set(x, "useNumericDateTimeStyle", js.Any.fromFunction0(value))
   }
 }

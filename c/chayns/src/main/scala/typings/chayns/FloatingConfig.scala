@@ -23,37 +23,27 @@ trait FloatingConfig extends StObject {
 }
 object FloatingConfig {
   
-  @scala.inline
-  def apply(): FloatingConfig = {
+  inline def apply(): FloatingConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FloatingConfig]
   }
   
-  @scala.inline
-  implicit class FloatingConfigMutableBuilder[Self <: FloatingConfig] (val x: Self) extends AnyVal {
+  extension [Self <: FloatingConfig](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorText(value: String): Self = StObject.set(x, "colorText", value.asInstanceOf[js.Any])
+    inline def setColorText(value: String): Self = StObject.set(x, "colorText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorTextUndefined: Self = StObject.set(x, "colorText", js.undefined)
+    inline def setColorTextUndefined: Self = StObject.set(x, "colorText", js.undefined)
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+    inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+    inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

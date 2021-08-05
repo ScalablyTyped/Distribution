@@ -40,8 +40,7 @@ trait XFilter
 }
 object XFilter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     cancel: () => Unit,
     filter: SeqEquiv[PropertyValue] => Boolean,
@@ -52,13 +51,10 @@ object XFilter {
     __obj.asInstanceOf[XFilter]
   }
   
-  @scala.inline
-  implicit class XFilterMutableBuilder[Self <: XFilter] (val x: Self) extends AnyVal {
+  extension [Self <: XFilter](x: Self) {
     
-    @scala.inline
-    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+    inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFilter(value: SeqEquiv[PropertyValue] => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+    inline def setFilter(value: SeqEquiv[PropertyValue] => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
   }
 }

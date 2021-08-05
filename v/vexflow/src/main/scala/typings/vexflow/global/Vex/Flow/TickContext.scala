@@ -93,6 +93,5 @@ object TickContext {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def getNextContext(tContext: typings.vexflow.Vex.Flow.TickContext): typings.vexflow.Vex.Flow.TickContext = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextContext")(tContext.asInstanceOf[js.Any]).asInstanceOf[typings.vexflow.Vex.Flow.TickContext]
+  inline def getNextContext(tContext: typings.vexflow.Vex.Flow.TickContext): typings.vexflow.Vex.Flow.TickContext = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextContext")(tContext.asInstanceOf[js.Any]).asInstanceOf[typings.vexflow.Vex.Flow.TickContext]
 }

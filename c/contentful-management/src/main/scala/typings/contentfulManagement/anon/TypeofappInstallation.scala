@@ -17,8 +17,7 @@ trait TypeofappInstallation extends StObject {
 }
 object TypeofappInstallation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     wrapAppInstallation: (AxiosInstance, AppInstallationProps) => AppInstallation,
     wrapAppInstallationCollection: (AxiosInstance, CollectionProp[AppInstallationProps]) => Collection[AppInstallation, AppInstallationProps]
   ): TypeofappInstallation = {
@@ -26,14 +25,11 @@ object TypeofappInstallation {
     __obj.asInstanceOf[TypeofappInstallation]
   }
   
-  @scala.inline
-  implicit class TypeofappInstallationMutableBuilder[Self <: TypeofappInstallation] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofappInstallation](x: Self) {
     
-    @scala.inline
-    def setWrapAppInstallation(value: (AxiosInstance, AppInstallationProps) => AppInstallation): Self = StObject.set(x, "wrapAppInstallation", js.Any.fromFunction2(value))
+    inline def setWrapAppInstallation(value: (AxiosInstance, AppInstallationProps) => AppInstallation): Self = StObject.set(x, "wrapAppInstallation", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWrapAppInstallationCollection(
+    inline def setWrapAppInstallationCollection(
       value: (AxiosInstance, CollectionProp[AppInstallationProps]) => Collection[AppInstallation, AppInstallationProps]
     ): Self = StObject.set(x, "wrapAppInstallationCollection", js.Any.fromFunction2(value))
   }

@@ -28,28 +28,21 @@ trait GetInsightImpactGraphRequest extends StObject {
 }
 object GetInsightImpactGraphRequest {
   
-  @scala.inline
-  def apply(EndTime: Timestamp, InsightId: InsightId, StartTime: Timestamp): GetInsightImpactGraphRequest = {
+  inline def apply(EndTime: Timestamp, InsightId: InsightId, StartTime: Timestamp): GetInsightImpactGraphRequest = {
     val __obj = js.Dynamic.literal(EndTime = EndTime.asInstanceOf[js.Any], InsightId = InsightId.asInstanceOf[js.Any], StartTime = StartTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetInsightImpactGraphRequest]
   }
   
-  @scala.inline
-  implicit class GetInsightImpactGraphRequestMutableBuilder[Self <: GetInsightImpactGraphRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetInsightImpactGraphRequest](x: Self) {
     
-    @scala.inline
-    def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsightId(value: InsightId): Self = StObject.set(x, "InsightId", value.asInstanceOf[js.Any])
+    inline def setInsightId(value: InsightId): Self = StObject.set(x, "InsightId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Timestamp): Self = StObject.set(x, "StartTime", value.asInstanceOf[js.Any])
   }
 }

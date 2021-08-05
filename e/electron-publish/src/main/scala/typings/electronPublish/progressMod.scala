@@ -36,28 +36,28 @@ object progressMod {
     def this(format: String) = this()
     def this(format: String, options: js.Any) = this()
     
-    var chars: js.Any = js.native
+    /* private */ var chars: js.Any = js.native
     
-    var complete: js.Any = js.native
+    /* private */ var complete: js.Any = js.native
     
-    var current: js.Any = js.native
+    /* private */ var current: js.Any = js.native
     
     def currentAmount_=(value: Double): Unit = js.native
     
-    val format: js.Any = js.native
+    /* private */ val format: js.Any = js.native
     
     /**
       * "interrupt" the progress bar and write a message above it.
       */
     def interrupt(message: String): Unit = js.native
     
-    var lastDraw: js.Any = js.native
+    /* private */ var lastDraw: js.Any = js.native
     
     def render(): Unit = js.native
     
-    var start: js.Any = js.native
+    /* private */ var start: js.Any = js.native
     
-    var stream: js.Any = js.native
+    /* private */ var stream: js.Any = js.native
     
     def terminate(): Unit = js.native
     
@@ -66,7 +66,7 @@ object progressMod {
       */
     def tick(delta: Double): Unit = js.native
     
-    var tokens: js.Any = js.native
+    /* private */ var tokens: js.Any = js.native
     
     var total: Double = js.native
     
@@ -81,7 +81,7 @@ object progressMod {
       */
     def update(ratio: Double): Unit = js.native
     
-    var width: js.Any = js.native
+    /* private */ var width: js.Any = js.native
   }
   
   @JSImport("electron-publish/out/progress", "ProgressCallback")
@@ -89,11 +89,11 @@ object progressMod {
   class ProgressCallback protected () extends StObject {
     def this(progressBar: ProgressBar) = this()
     
-    var nextUpdate: js.Any = js.native
+    /* private */ var nextUpdate: js.Any = js.native
     
-    val progressBar: js.Any = js.native
+    /* private */ val progressBar: js.Any = js.native
     
-    var start: js.Any = js.native
+    /* private */ var start: js.Any = js.native
     
     def update(transferred: Double, total: Double): Unit = js.native
   }

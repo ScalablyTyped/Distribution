@@ -30,8 +30,7 @@ trait GraphicObject
 }
 object GraphicObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Graphic: XGraphic,
     UniqueID: String,
     acquire: () => Unit,
@@ -44,13 +43,10 @@ object GraphicObject {
     __obj.asInstanceOf[GraphicObject]
   }
   
-  @scala.inline
-  implicit class GraphicObjectMutableBuilder[Self <: GraphicObject] (val x: Self) extends AnyVal {
+  extension [Self <: GraphicObject](x: Self) {
     
-    @scala.inline
-    def setCreate(value: () => Unit): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
+    inline def setCreate(value: () => Unit): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreateWithId(value: String => Unit): Self = StObject.set(x, "createWithId", js.Any.fromFunction1(value))
+    inline def setCreateWithId(value: String => Unit): Self = StObject.set(x, "createWithId", js.Any.fromFunction1(value))
   }
 }

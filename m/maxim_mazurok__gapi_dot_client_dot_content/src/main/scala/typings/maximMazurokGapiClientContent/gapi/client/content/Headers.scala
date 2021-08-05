@@ -37,58 +37,41 @@ trait Headers extends StObject {
 }
 object Headers {
   
-  @scala.inline
-  def apply(): Headers = {
+  inline def apply(): Headers = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Headers]
   }
   
-  @scala.inline
-  implicit class HeadersMutableBuilder[Self <: Headers] (val x: Self) extends AnyVal {
+  extension [Self <: Headers](x: Self) {
     
-    @scala.inline
-    def setLocations(value: js.Array[LocationIdSet]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+    inline def setLocations(value: js.Array[LocationIdSet]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
+    inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
-    @scala.inline
-    def setLocationsVarargs(value: LocationIdSet*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: LocationIdSet*): Self = StObject.set(x, "locations", js.Array(value :_*))
     
-    @scala.inline
-    def setNumberOfItems(value: js.Array[String]): Self = StObject.set(x, "numberOfItems", value.asInstanceOf[js.Any])
+    inline def setNumberOfItems(value: js.Array[String]): Self = StObject.set(x, "numberOfItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfItemsUndefined: Self = StObject.set(x, "numberOfItems", js.undefined)
+    inline def setNumberOfItemsUndefined: Self = StObject.set(x, "numberOfItems", js.undefined)
     
-    @scala.inline
-    def setNumberOfItemsVarargs(value: String*): Self = StObject.set(x, "numberOfItems", js.Array(value :_*))
+    inline def setNumberOfItemsVarargs(value: String*): Self = StObject.set(x, "numberOfItems", js.Array(value :_*))
     
-    @scala.inline
-    def setPostalCodeGroupNames(value: js.Array[String]): Self = StObject.set(x, "postalCodeGroupNames", value.asInstanceOf[js.Any])
+    inline def setPostalCodeGroupNames(value: js.Array[String]): Self = StObject.set(x, "postalCodeGroupNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostalCodeGroupNamesUndefined: Self = StObject.set(x, "postalCodeGroupNames", js.undefined)
+    inline def setPostalCodeGroupNamesUndefined: Self = StObject.set(x, "postalCodeGroupNames", js.undefined)
     
-    @scala.inline
-    def setPostalCodeGroupNamesVarargs(value: String*): Self = StObject.set(x, "postalCodeGroupNames", js.Array(value :_*))
+    inline def setPostalCodeGroupNamesVarargs(value: String*): Self = StObject.set(x, "postalCodeGroupNames", js.Array(value :_*))
     
-    @scala.inline
-    def setPrices(value: js.Array[Price]): Self = StObject.set(x, "prices", value.asInstanceOf[js.Any])
+    inline def setPrices(value: js.Array[Price]): Self = StObject.set(x, "prices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPricesUndefined: Self = StObject.set(x, "prices", js.undefined)
+    inline def setPricesUndefined: Self = StObject.set(x, "prices", js.undefined)
     
-    @scala.inline
-    def setPricesVarargs(value: Price*): Self = StObject.set(x, "prices", js.Array(value :_*))
+    inline def setPricesVarargs(value: Price*): Self = StObject.set(x, "prices", js.Array(value :_*))
     
-    @scala.inline
-    def setWeights(value: js.Array[Weight]): Self = StObject.set(x, "weights", value.asInstanceOf[js.Any])
+    inline def setWeights(value: js.Array[Weight]): Self = StObject.set(x, "weights", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightsUndefined: Self = StObject.set(x, "weights", js.undefined)
+    inline def setWeightsUndefined: Self = StObject.set(x, "weights", js.undefined)
     
-    @scala.inline
-    def setWeightsVarargs(value: Weight*): Self = StObject.set(x, "weights", js.Array(value :_*))
+    inline def setWeightsVarargs(value: Weight*): Self = StObject.set(x, "weights", js.Array(value :_*))
   }
 }

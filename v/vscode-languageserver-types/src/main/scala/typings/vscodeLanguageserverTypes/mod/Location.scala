@@ -12,8 +12,7 @@ trait Location extends StObject {
 }
 object Location {
   
-  @scala.inline
-  def apply(range: Range, uri: DocumentUri): Location = {
+  inline def apply(range: Range, uri: DocumentUri): Location = {
     val __obj = js.Dynamic.literal(range = range.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[Location]
   }
@@ -27,22 +26,17 @@ object Location {
     * @param uri The location's uri.
     * @param range The location's range.
     */
-  @scala.inline
-  def create(uri: DocumentUri, range: Range): Location = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(uri.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Location]
+  inline def create(uri: DocumentUri, range: Range): Location = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(uri.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Location]
   
   /**
     * Checks whether the given literal conforms to the [Location](#Location) interface.
     */
-  @scala.inline
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Location */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Location */ Boolean]
+  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Location */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Location */ Boolean]
   
-  @scala.inline
-  implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
+  extension [Self <: Location](x: Self) {
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: DocumentUri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: DocumentUri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

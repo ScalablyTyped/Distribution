@@ -21,25 +21,19 @@ trait SchemaEnvironmentVariable extends StObject {
 }
 object SchemaEnvironmentVariable {
   
-  @scala.inline
-  def apply(): SchemaEnvironmentVariable = {
+  inline def apply(): SchemaEnvironmentVariable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEnvironmentVariable]
   }
   
-  @scala.inline
-  implicit class SchemaEnvironmentVariableMutableBuilder[Self <: SchemaEnvironmentVariable] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEnvironmentVariable](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

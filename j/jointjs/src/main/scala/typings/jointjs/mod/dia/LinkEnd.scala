@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LinkEnd extends StObject
 object LinkEnd {
   
-  @scala.inline
-  def source: typings.jointjs.jointjsStrings.source = "source".asInstanceOf[typings.jointjs.jointjsStrings.source]
+  inline def source: typings.jointjs.jointjsStrings.source = "source".asInstanceOf[typings.jointjs.jointjsStrings.source]
   
-  @scala.inline
-  def target: typings.jointjs.jointjsStrings.target = "target".asInstanceOf[typings.jointjs.jointjsStrings.target]
+  inline def target: typings.jointjs.jointjsStrings.target = "target".asInstanceOf[typings.jointjs.jointjsStrings.target]
 }

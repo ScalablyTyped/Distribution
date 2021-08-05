@@ -47,8 +47,7 @@ trait DocumentSymbol extends StObject {
 }
 object DocumentSymbol {
   
-  @scala.inline
-  def apply(kind: SymbolKind, name: String, range: Range, selectionRange: Range): DocumentSymbol = {
+  inline def apply(kind: SymbolKind, name: String, range: Range, selectionRange: Range): DocumentSymbol = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any], selectionRange = selectionRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentSymbol]
   }
@@ -67,10 +66,8 @@ object DocumentSymbol {
     * @param selectionRange The selectionRange of the symbol.
     * @param children Children of the symbol.
     */
-  @scala.inline
-  def create(name: String, detail: String, kind: SymbolKind, range: Range, selectionRange: Range): DocumentSymbol = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], detail.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], range.asInstanceOf[js.Any], selectionRange.asInstanceOf[js.Any])).asInstanceOf[DocumentSymbol]
-  @scala.inline
-  def create(
+  inline def create(name: String, detail: String, kind: SymbolKind, range: Range, selectionRange: Range): DocumentSymbol = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], detail.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], range.asInstanceOf[js.Any], selectionRange.asInstanceOf[js.Any])).asInstanceOf[DocumentSymbol]
+  inline def create(
     name: String,
     detail: String,
     kind: SymbolKind,
@@ -78,10 +75,8 @@ object DocumentSymbol {
     selectionRange: Range,
     children: js.Array[DocumentSymbol]
   ): DocumentSymbol = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], detail.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], range.asInstanceOf[js.Any], selectionRange.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DocumentSymbol]
-  @scala.inline
-  def create(name: String, detail: Unit, kind: SymbolKind, range: Range, selectionRange: Range): DocumentSymbol = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], detail.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], range.asInstanceOf[js.Any], selectionRange.asInstanceOf[js.Any])).asInstanceOf[DocumentSymbol]
-  @scala.inline
-  def create(
+  inline def create(name: String, detail: Unit, kind: SymbolKind, range: Range, selectionRange: Range): DocumentSymbol = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], detail.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], range.asInstanceOf[js.Any], selectionRange.asInstanceOf[js.Any])).asInstanceOf[DocumentSymbol]
+  inline def create(
     name: String,
     detail: Unit,
     kind: SymbolKind,
@@ -93,43 +88,30 @@ object DocumentSymbol {
   /**
     * Checks whether the given literal conforms to the [DocumentSymbol](#DocumentSymbol) interface.
     */
-  @scala.inline
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.DocumentSymbol */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.DocumentSymbol */ Boolean]
+  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.DocumentSymbol */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.DocumentSymbol */ Boolean]
   
-  @scala.inline
-  implicit class DocumentSymbolMutableBuilder[Self <: DocumentSymbol] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentSymbol](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[DocumentSymbol]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[DocumentSymbol]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setChildrenVarargs(value: DocumentSymbol*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: DocumentSymbol*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+    inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
+    inline def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
     
-    @scala.inline
-    def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+    inline def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
+    inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
     
-    @scala.inline
-    def setKind(value: SymbolKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: SymbolKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionRange(value: Range): Self = StObject.set(x, "selectionRange", value.asInstanceOf[js.Any])
+    inline def setSelectionRange(value: Range): Self = StObject.set(x, "selectionRange", value.asInstanceOf[js.Any])
   }
 }

@@ -30,28 +30,23 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def write(buffer: ConsoleBuffer, `type`: LogType, message: LogMessage): js.Array[LogEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(buffer.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[js.Array[LogEntry]]
-    @scala.inline
-    def write(buffer: ConsoleBuffer, `type`: LogType, message: LogMessage, level: Double): js.Array[LogEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(buffer.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[js.Array[LogEntry]]
-    @scala.inline
-    def write(
+    inline def write(buffer: ConsoleBuffer, `type`: LogType, message: LogMessage): js.Array[LogEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(buffer.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[js.Array[LogEntry]]
+    inline def write(buffer: ConsoleBuffer, `type`: LogType, message: LogMessage, level: Double): js.Array[LogEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(buffer.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[js.Array[LogEntry]]
+    inline def write(
       buffer: ConsoleBuffer,
       `type`: LogType,
       message: LogMessage,
       level: Double,
       sourceMaps: SourceMapRegistry
     ): js.Array[LogEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(buffer.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any], sourceMaps.asInstanceOf[js.Any])).asInstanceOf[js.Array[LogEntry]]
-    @scala.inline
-    def write(
+    inline def write(
       buffer: ConsoleBuffer,
       `type`: LogType,
       message: LogMessage,
       level: Null,
       sourceMaps: SourceMapRegistry
     ): js.Array[LogEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(buffer.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any], sourceMaps.asInstanceOf[js.Any])).asInstanceOf[js.Array[LogEntry]]
-    @scala.inline
-    def write(
+    inline def write(
       buffer: ConsoleBuffer,
       `type`: LogType,
       message: LogMessage,
@@ -73,6 +68,5 @@ object mod {
   class NullConsole ()
     extends typings.jestConsole.nullConsoleMod.default
   
-  @scala.inline
-  def getConsoleOutput(root: String, verbose: Boolean, buffer: js.Array[LogEntry]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getConsoleOutput")(root.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getConsoleOutput(root: String, verbose: Boolean, buffer: js.Array[LogEntry]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getConsoleOutput")(root.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[String]
 }

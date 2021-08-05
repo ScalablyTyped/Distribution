@@ -17,22 +17,17 @@ trait RemoveSavedFileOptions
 }
 object RemoveSavedFileOptions {
   
-  @scala.inline
-  def apply(filePath: String): RemoveSavedFileOptions = {
+  inline def apply(filePath: String): RemoveSavedFileOptions = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveSavedFileOptions]
   }
   
-  @scala.inline
-  implicit class RemoveSavedFileOptionsMutableBuilder[Self <: RemoveSavedFileOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveSavedFileOptions](x: Self) {
     
-    @scala.inline
-    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: /* res */ FilePath => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ FilePath => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

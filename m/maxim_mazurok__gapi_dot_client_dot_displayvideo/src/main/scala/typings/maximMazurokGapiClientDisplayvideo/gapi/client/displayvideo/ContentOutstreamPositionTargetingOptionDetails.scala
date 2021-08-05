@@ -11,19 +11,15 @@ trait ContentOutstreamPositionTargetingOptionDetails extends StObject {
 }
 object ContentOutstreamPositionTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): ContentOutstreamPositionTargetingOptionDetails = {
+  inline def apply(): ContentOutstreamPositionTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContentOutstreamPositionTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class ContentOutstreamPositionTargetingOptionDetailsMutableBuilder[Self <: ContentOutstreamPositionTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ContentOutstreamPositionTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setContentOutstreamPosition(value: String): Self = StObject.set(x, "contentOutstreamPosition", value.asInstanceOf[js.Any])
+    inline def setContentOutstreamPosition(value: String): Self = StObject.set(x, "contentOutstreamPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentOutstreamPositionUndefined: Self = StObject.set(x, "contentOutstreamPosition", js.undefined)
+    inline def setContentOutstreamPositionUndefined: Self = StObject.set(x, "contentOutstreamPosition", js.undefined)
   }
 }

@@ -11,16 +11,13 @@ trait SignalInfo extends StObject {
 }
 object SignalInfo {
   
-  @scala.inline
-  def apply(name: String): SignalInfo = {
+  inline def apply(name: String): SignalInfo = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignalInfo]
   }
   
-  @scala.inline
-  implicit class SignalInfoMutableBuilder[Self <: SignalInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SignalInfo](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

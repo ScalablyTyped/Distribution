@@ -31,7 +31,7 @@ trait BusinessCardView extends StObject {
   
   var Name: String
   
-  @JSName("Outlook.BusinessCardView_typekey")
+  /* private */ @JSName("Outlook.BusinessCardView_typekey")
   var OutlookDotBusinessCardView_typekey: BusinessCardView
   
   val Parent: js.Any
@@ -54,8 +54,7 @@ trait BusinessCardView extends StObject {
 }
 object BusinessCardView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Apply: () => Unit,
     CardSize: Double,
@@ -84,73 +83,50 @@ object BusinessCardView {
     __obj.asInstanceOf[BusinessCardView]
   }
   
-  @scala.inline
-  implicit class BusinessCardViewMutableBuilder[Self <: BusinessCardView] (val x: Self) extends AnyVal {
+  extension [Self <: BusinessCardView](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApply(value: () => Unit): Self = StObject.set(x, "Apply", js.Any.fromFunction0(value))
+    inline def setApply(value: () => Unit): Self = StObject.set(x, "Apply", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCardSize(value: Double): Self = StObject.set(x, "CardSize", value.asInstanceOf[js.Any])
+    inline def setCardSize(value: Double): Self = StObject.set(x, "CardSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopy(value: (String, OlViewSaveOption) => View): Self = StObject.set(x, "Copy", js.Any.fromFunction2(value))
+    inline def setCopy(value: (String, OlViewSaveOption) => View): Self = StObject.set(x, "Copy", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoToDate(value: VarDate => Unit): Self = StObject.set(x, "GoToDate", js.Any.fromFunction1(value))
+    inline def setGoToDate(value: VarDate => Unit): Self = StObject.set(x, "GoToDate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHeadingsFont(value: ViewFont): Self = StObject.set(x, "HeadingsFont", value.asInstanceOf[js.Any])
+    inline def setHeadingsFont(value: ViewFont): Self = StObject.set(x, "HeadingsFont", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "Language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockUserChanges(value: Boolean): Self = StObject.set(x, "LockUserChanges", value.asInstanceOf[js.Any])
+    inline def setLockUserChanges(value: Boolean): Self = StObject.set(x, "LockUserChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotBusinessCardView_typekey(value: BusinessCardView): Self = StObject.set(x, "Outlook.BusinessCardView_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotBusinessCardView_typekey(value: BusinessCardView): Self = StObject.set(x, "Outlook.BusinessCardView_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "Reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "Reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
+    inline def setSave(value: () => Unit): Self = StObject.set(x, "Save", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSaveOption(value: OlViewSaveOption): Self = StObject.set(x, "SaveOption", value.asInstanceOf[js.Any])
+    inline def setSaveOption(value: OlViewSaveOption): Self = StObject.set(x, "SaveOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortFields(value: OrderFields): Self = StObject.set(x, "SortFields", value.asInstanceOf[js.Any])
+    inline def setSortFields(value: OrderFields): Self = StObject.set(x, "SortFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandard(value: Boolean): Self = StObject.set(x, "Standard", value.asInstanceOf[js.Any])
+    inline def setStandard(value: Boolean): Self = StObject.set(x, "Standard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewType(value: OlViewType): Self = StObject.set(x, "ViewType", value.asInstanceOf[js.Any])
+    inline def setViewType(value: OlViewType): Self = StObject.set(x, "ViewType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXML(value: String): Self = StObject.set(x, "XML", value.asInstanceOf[js.Any])
+    inline def setXML(value: String): Self = StObject.set(x, "XML", value.asInstanceOf[js.Any])
   }
 }

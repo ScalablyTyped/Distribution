@@ -12,22 +12,17 @@ trait GetNetworkInterfaceFilter extends StObject {
 }
 object GetNetworkInterfaceFilter {
   
-  @scala.inline
-  def apply(name: String, values: js.Array[String]): GetNetworkInterfaceFilter = {
+  inline def apply(name: String, values: js.Array[String]): GetNetworkInterfaceFilter = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetNetworkInterfaceFilter]
   }
   
-  @scala.inline
-  implicit class GetNetworkInterfaceFilterMutableBuilder[Self <: GetNetworkInterfaceFilter] (val x: Self) extends AnyVal {
+  extension [Self <: GetNetworkInterfaceFilter](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

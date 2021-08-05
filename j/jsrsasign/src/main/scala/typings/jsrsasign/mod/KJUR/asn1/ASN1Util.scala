@@ -103,8 +103,7 @@ object ASN1Util {
     * -----END PRIVATE KEY-----
     */
   /* static member */
-  @scala.inline
-  def getPEMStringFromHex(dataHex: String, pemHeader: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPEMStringFromHex")(dataHex.asInstanceOf[js.Any], pemHeader.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getPEMStringFromHex(dataHex: String, pemHeader: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPEMStringFromHex")(dataHex.asInstanceOf[js.Any], pemHeader.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * get dot noted oid number string from hexadecimal value of OID
@@ -118,6 +117,5 @@ object ASN1Util {
     * KJUR.asn1.ASN1Util.oidHexToInt('550406') → "2.5.4.6"
     */
   /* static member */
-  @scala.inline
-  def oidHexToInt(hex: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("oidHexToInt")(hex.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def oidHexToInt(hex: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("oidHexToInt")(hex.asInstanceOf[js.Any]).asInstanceOf[String]
 }

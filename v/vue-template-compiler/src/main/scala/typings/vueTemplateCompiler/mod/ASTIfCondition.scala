@@ -12,22 +12,17 @@ trait ASTIfCondition extends StObject {
 }
 object ASTIfCondition {
   
-  @scala.inline
-  def apply(block: ASTElement): ASTIfCondition = {
+  inline def apply(block: ASTElement): ASTIfCondition = {
     val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASTIfCondition]
   }
   
-  @scala.inline
-  implicit class ASTIfConditionMutableBuilder[Self <: ASTIfCondition] (val x: Self) extends AnyVal {
+  extension [Self <: ASTIfCondition](x: Self) {
     
-    @scala.inline
-    def setBlock(value: ASTElement): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    inline def setBlock(value: ASTElement): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExp(value: String): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
+    inline def setExp(value: String): Self = StObject.set(x, "exp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpUndefined: Self = StObject.set(x, "exp", js.undefined)
+    inline def setExpUndefined: Self = StObject.set(x, "exp", js.undefined)
   }
 }

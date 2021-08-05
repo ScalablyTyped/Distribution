@@ -15,20 +15,16 @@ trait SetAction
 }
 object SetAction {
   
-  @scala.inline
-  def apply(fields: js.Object, `type`: SET): SetAction = {
+  inline def apply(fields: js.Object, `type`: SET): SetAction = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetAction]
   }
   
-  @scala.inline
-  implicit class SetActionMutableBuilder[Self <: SetAction] (val x: Self) extends AnyVal {
+  extension [Self <: SetAction](x: Self) {
     
-    @scala.inline
-    def setFields(value: js.Object): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Object): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: SET): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: SET): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

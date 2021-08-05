@@ -10,9 +10,7 @@ object uniformsUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def cloneUniforms(uniforms_src: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneUniforms")(uniforms_src.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def cloneUniforms(uniforms_src: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneUniforms")(uniforms_src.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def mergeUniforms(uniforms: js.Array[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeUniforms")(uniforms.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def mergeUniforms(uniforms: js.Array[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeUniforms")(uniforms.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

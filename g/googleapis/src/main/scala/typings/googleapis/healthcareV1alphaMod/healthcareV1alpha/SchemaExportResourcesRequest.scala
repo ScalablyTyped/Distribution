@@ -26,25 +26,19 @@ trait SchemaExportResourcesRequest extends StObject {
 }
 object SchemaExportResourcesRequest {
   
-  @scala.inline
-  def apply(): SchemaExportResourcesRequest = {
+  inline def apply(): SchemaExportResourcesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaExportResourcesRequest]
   }
   
-  @scala.inline
-  implicit class SchemaExportResourcesRequestMutableBuilder[Self <: SchemaExportResourcesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaExportResourcesRequest](x: Self) {
     
-    @scala.inline
-    def setBigqueryDestinationLocation(value: SchemaBigQueryLocation): Self = StObject.set(x, "bigqueryDestinationLocation", value.asInstanceOf[js.Any])
+    inline def setBigqueryDestinationLocation(value: SchemaBigQueryLocation): Self = StObject.set(x, "bigqueryDestinationLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBigqueryDestinationLocationUndefined: Self = StObject.set(x, "bigqueryDestinationLocation", js.undefined)
+    inline def setBigqueryDestinationLocationUndefined: Self = StObject.set(x, "bigqueryDestinationLocation", js.undefined)
     
-    @scala.inline
-    def setGcsDestinationLocation(value: SchemaGcsDataLocation): Self = StObject.set(x, "gcsDestinationLocation", value.asInstanceOf[js.Any])
+    inline def setGcsDestinationLocation(value: SchemaGcsDataLocation): Self = StObject.set(x, "gcsDestinationLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsDestinationLocationUndefined: Self = StObject.set(x, "gcsDestinationLocation", js.undefined)
+    inline def setGcsDestinationLocationUndefined: Self = StObject.set(x, "gcsDestinationLocation", js.undefined)
   }
 }

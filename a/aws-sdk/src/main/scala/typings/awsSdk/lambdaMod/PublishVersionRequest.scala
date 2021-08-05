@@ -28,34 +28,25 @@ trait PublishVersionRequest extends StObject {
 }
 object PublishVersionRequest {
   
-  @scala.inline
-  def apply(FunctionName: FunctionName): PublishVersionRequest = {
+  inline def apply(FunctionName: FunctionName): PublishVersionRequest = {
     val __obj = js.Dynamic.literal(FunctionName = FunctionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublishVersionRequest]
   }
   
-  @scala.inline
-  implicit class PublishVersionRequestMutableBuilder[Self <: PublishVersionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PublishVersionRequest](x: Self) {
     
-    @scala.inline
-    def setCodeSha256(value: String): Self = StObject.set(x, "CodeSha256", value.asInstanceOf[js.Any])
+    inline def setCodeSha256(value: String): Self = StObject.set(x, "CodeSha256", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeSha256Undefined: Self = StObject.set(x, "CodeSha256", js.undefined)
+    inline def setCodeSha256Undefined: Self = StObject.set(x, "CodeSha256", js.undefined)
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
+    inline def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionId(value: String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
+    inline def setRevisionId(value: String): Self = StObject.set(x, "RevisionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
+    inline def setRevisionIdUndefined: Self = StObject.set(x, "RevisionId", js.undefined)
   }
 }

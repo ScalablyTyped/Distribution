@@ -13,16 +13,13 @@ trait DeleteResourceDefinitionRequest extends StObject {
 }
 object DeleteResourceDefinitionRequest {
   
-  @scala.inline
-  def apply(ResourceDefinitionId: string): DeleteResourceDefinitionRequest = {
+  inline def apply(ResourceDefinitionId: string): DeleteResourceDefinitionRequest = {
     val __obj = js.Dynamic.literal(ResourceDefinitionId = ResourceDefinitionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteResourceDefinitionRequest]
   }
   
-  @scala.inline
-  implicit class DeleteResourceDefinitionRequestMutableBuilder[Self <: DeleteResourceDefinitionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteResourceDefinitionRequest](x: Self) {
     
-    @scala.inline
-    def setResourceDefinitionId(value: string): Self = StObject.set(x, "ResourceDefinitionId", value.asInstanceOf[js.Any])
+    inline def setResourceDefinitionId(value: string): Self = StObject.set(x, "ResourceDefinitionId", value.asInstanceOf[js.Any])
   }
 }

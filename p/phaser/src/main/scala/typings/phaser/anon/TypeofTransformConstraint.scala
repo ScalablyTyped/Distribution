@@ -38,8 +38,7 @@ trait TypeofTransformConstraint extends StObject {
 }
 object TypeofTransformConstraint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ENTRIES: Double,
     PREV_ROTATE: Double,
     PREV_SCALE: Double,
@@ -55,37 +54,26 @@ object TypeofTransformConstraint {
     __obj.asInstanceOf[TypeofTransformConstraint]
   }
   
-  @scala.inline
-  implicit class TypeofTransformConstraintMutableBuilder[Self <: TypeofTransformConstraint] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofTransformConstraint](x: Self) {
     
-    @scala.inline
-    def setENTRIES(value: Double): Self = StObject.set(x, "ENTRIES", value.asInstanceOf[js.Any])
+    inline def setENTRIES(value: Double): Self = StObject.set(x, "ENTRIES", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPREV_ROTATE(value: Double): Self = StObject.set(x, "PREV_ROTATE", value.asInstanceOf[js.Any])
+    inline def setPREV_ROTATE(value: Double): Self = StObject.set(x, "PREV_ROTATE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPREV_SCALE(value: Double): Self = StObject.set(x, "PREV_SCALE", value.asInstanceOf[js.Any])
+    inline def setPREV_SCALE(value: Double): Self = StObject.set(x, "PREV_SCALE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPREV_SHEAR(value: Double): Self = StObject.set(x, "PREV_SHEAR", value.asInstanceOf[js.Any])
+    inline def setPREV_SHEAR(value: Double): Self = StObject.set(x, "PREV_SHEAR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPREV_TIME(value: Double): Self = StObject.set(x, "PREV_TIME", value.asInstanceOf[js.Any])
+    inline def setPREV_TIME(value: Double): Self = StObject.set(x, "PREV_TIME", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPREV_TRANSLATE(value: Double): Self = StObject.set(x, "PREV_TRANSLATE", value.asInstanceOf[js.Any])
+    inline def setPREV_TRANSLATE(value: Double): Self = StObject.set(x, "PREV_TRANSLATE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setROTATE(value: Double): Self = StObject.set(x, "ROTATE", value.asInstanceOf[js.Any])
+    inline def setROTATE(value: Double): Self = StObject.set(x, "ROTATE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSCALE(value: Double): Self = StObject.set(x, "SCALE", value.asInstanceOf[js.Any])
+    inline def setSCALE(value: Double): Self = StObject.set(x, "SCALE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSHEAR(value: Double): Self = StObject.set(x, "SHEAR", value.asInstanceOf[js.Any])
+    inline def setSHEAR(value: Double): Self = StObject.set(x, "SHEAR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTRANSLATE(value: Double): Self = StObject.set(x, "TRANSLATE", value.asInstanceOf[js.Any])
+    inline def setTRANSLATE(value: Double): Self = StObject.set(x, "TRANSLATE", value.asInstanceOf[js.Any])
   }
 }

@@ -16,23 +16,18 @@ object anon {
   }
   object Name {
     
-    @scala.inline
-    def apply(name: String, nodes: js.Array[Identifier_ | ThisExpression_]): Name = {
+    inline def apply(name: String, nodes: js.Array[Identifier_ | ThisExpression_]): Name = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
       __obj.asInstanceOf[Name]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+    extension [Self <: Name](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodes(value: js.Array[Identifier_ | ThisExpression_]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
+      inline def setNodes(value: js.Array[Identifier_ | ThisExpression_]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodesVarargs(value: (Identifier_ | ThisExpression_)*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+      inline def setNodesVarargs(value: (Identifier_ | ThisExpression_)*): Self = StObject.set(x, "nodes", js.Array(value :_*))
     }
   }
 }

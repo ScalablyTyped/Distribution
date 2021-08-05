@@ -23,25 +23,19 @@ trait UpdateServerEngineAttributesRequest extends StObject {
 }
 object UpdateServerEngineAttributesRequest {
   
-  @scala.inline
-  def apply(AttributeName: AttributeName, ServerName: ServerName): UpdateServerEngineAttributesRequest = {
+  inline def apply(AttributeName: AttributeName, ServerName: ServerName): UpdateServerEngineAttributesRequest = {
     val __obj = js.Dynamic.literal(AttributeName = AttributeName.asInstanceOf[js.Any], ServerName = ServerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateServerEngineAttributesRequest]
   }
   
-  @scala.inline
-  implicit class UpdateServerEngineAttributesRequestMutableBuilder[Self <: UpdateServerEngineAttributesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateServerEngineAttributesRequest](x: Self) {
     
-    @scala.inline
-    def setAttributeName(value: AttributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
+    inline def setAttributeName(value: AttributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeValue(value: AttributeValue): Self = StObject.set(x, "AttributeValue", value.asInstanceOf[js.Any])
+    inline def setAttributeValue(value: AttributeValue): Self = StObject.set(x, "AttributeValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeValueUndefined: Self = StObject.set(x, "AttributeValue", js.undefined)
+    inline def setAttributeValueUndefined: Self = StObject.set(x, "AttributeValue", js.undefined)
     
-    @scala.inline
-    def setServerName(value: ServerName): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
+    inline def setServerName(value: ServerName): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
   }
 }

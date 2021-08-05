@@ -13,16 +13,13 @@ trait DeleteScheduledActionMessage extends StObject {
 }
 object DeleteScheduledActionMessage {
   
-  @scala.inline
-  def apply(ScheduledActionName: String): DeleteScheduledActionMessage = {
+  inline def apply(ScheduledActionName: String): DeleteScheduledActionMessage = {
     val __obj = js.Dynamic.literal(ScheduledActionName = ScheduledActionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteScheduledActionMessage]
   }
   
-  @scala.inline
-  implicit class DeleteScheduledActionMessageMutableBuilder[Self <: DeleteScheduledActionMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteScheduledActionMessage](x: Self) {
     
-    @scala.inline
-    def setScheduledActionName(value: String): Self = StObject.set(x, "ScheduledActionName", value.asInstanceOf[js.Any])
+    inline def setScheduledActionName(value: String): Self = StObject.set(x, "ScheduledActionName", value.asInstanceOf[js.Any])
   }
 }

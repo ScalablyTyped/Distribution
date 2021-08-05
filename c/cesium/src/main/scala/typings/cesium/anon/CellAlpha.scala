@@ -19,43 +19,31 @@ trait CellAlpha extends StObject {
 }
 object CellAlpha {
   
-  @scala.inline
-  def apply(): CellAlpha = {
+  inline def apply(): CellAlpha = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CellAlpha]
   }
   
-  @scala.inline
-  implicit class CellAlphaMutableBuilder[Self <: CellAlpha] (val x: Self) extends AnyVal {
+  extension [Self <: CellAlpha](x: Self) {
     
-    @scala.inline
-    def setCellAlpha(value: Property): Self = StObject.set(x, "cellAlpha", value.asInstanceOf[js.Any])
+    inline def setCellAlpha(value: Property): Self = StObject.set(x, "cellAlpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellAlphaUndefined: Self = StObject.set(x, "cellAlpha", js.undefined)
+    inline def setCellAlphaUndefined: Self = StObject.set(x, "cellAlpha", js.undefined)
     
-    @scala.inline
-    def setColor(value: Property): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Property): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setLineCount(value: Property): Self = StObject.set(x, "lineCount", value.asInstanceOf[js.Any])
+    inline def setLineCount(value: Property): Self = StObject.set(x, "lineCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineCountUndefined: Self = StObject.set(x, "lineCount", js.undefined)
+    inline def setLineCountUndefined: Self = StObject.set(x, "lineCount", js.undefined)
     
-    @scala.inline
-    def setLineOffset(value: Property): Self = StObject.set(x, "lineOffset", value.asInstanceOf[js.Any])
+    inline def setLineOffset(value: Property): Self = StObject.set(x, "lineOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineOffsetUndefined: Self = StObject.set(x, "lineOffset", js.undefined)
+    inline def setLineOffsetUndefined: Self = StObject.set(x, "lineOffset", js.undefined)
     
-    @scala.inline
-    def setLineThickness(value: Property): Self = StObject.set(x, "lineThickness", value.asInstanceOf[js.Any])
+    inline def setLineThickness(value: Property): Self = StObject.set(x, "lineThickness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineThicknessUndefined: Self = StObject.set(x, "lineThickness", js.undefined)
+    inline def setLineThicknessUndefined: Self = StObject.set(x, "lineThickness", js.undefined)
   }
 }

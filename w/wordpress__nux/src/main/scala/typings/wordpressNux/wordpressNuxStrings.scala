@@ -8,6 +8,5 @@ object wordpressNuxStrings {
   
   @js.native
   sealed trait coreSlashnux extends StObject
-  @scala.inline
-  def coreSlashnux: coreSlashnux = "core/nux".asInstanceOf[coreSlashnux]
+  inline def coreSlashnux: coreSlashnux = "core/nux".asInstanceOf[coreSlashnux]
 }

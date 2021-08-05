@@ -35,8 +35,7 @@ trait EnterpriseAdminProvisionAndInviteEnterpriseUserEndpoint extends StObject {
 }
 object EnterpriseAdminProvisionAndInviteEnterpriseUserEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     emails: js.Array[EnterpriseAdminProvisionAndInviteEnterpriseUserParamsEmails],
     enterprise: String,
     name: EnterpriseAdminProvisionAndInviteEnterpriseUserParamsName,
@@ -47,37 +46,26 @@ object EnterpriseAdminProvisionAndInviteEnterpriseUserEndpoint {
     __obj.asInstanceOf[EnterpriseAdminProvisionAndInviteEnterpriseUserEndpoint]
   }
   
-  @scala.inline
-  implicit class EnterpriseAdminProvisionAndInviteEnterpriseUserEndpointMutableBuilder[Self <: EnterpriseAdminProvisionAndInviteEnterpriseUserEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: EnterpriseAdminProvisionAndInviteEnterpriseUserEndpoint](x: Self) {
     
-    @scala.inline
-    def setEmails(value: js.Array[EnterpriseAdminProvisionAndInviteEnterpriseUserParamsEmails]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
+    inline def setEmails(value: js.Array[EnterpriseAdminProvisionAndInviteEnterpriseUserParamsEmails]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailsVarargs(value: EnterpriseAdminProvisionAndInviteEnterpriseUserParamsEmails*): Self = StObject.set(x, "emails", js.Array(value :_*))
+    inline def setEmailsVarargs(value: EnterpriseAdminProvisionAndInviteEnterpriseUserParamsEmails*): Self = StObject.set(x, "emails", js.Array(value :_*))
     
-    @scala.inline
-    def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
+    inline def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroups(value: js.Array[EnterpriseAdminProvisionAndInviteEnterpriseUserParamsGroups]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: js.Array[EnterpriseAdminProvisionAndInviteEnterpriseUserParamsGroups]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
+    inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
-    @scala.inline
-    def setGroupsVarargs(value: EnterpriseAdminProvisionAndInviteEnterpriseUserParamsGroups*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: EnterpriseAdminProvisionAndInviteEnterpriseUserParamsGroups*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: EnterpriseAdminProvisionAndInviteEnterpriseUserParamsName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: EnterpriseAdminProvisionAndInviteEnterpriseUserParamsName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemas(value: js.Array[String]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
+    inline def setSchemas(value: js.Array[String]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemasVarargs(value: String*): Self = StObject.set(x, "schemas", js.Array(value :_*))
+    inline def setSchemasVarargs(value: String*): Self = StObject.set(x, "schemas", js.Array(value :_*))
     
-    @scala.inline
-    def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
   }
 }

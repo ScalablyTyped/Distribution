@@ -44,8 +44,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object Materialbox {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     caption: String,
     close: () => Unit,
     doneAnimating: Boolean,
@@ -58,28 +57,20 @@ object Materialbox {
     __obj.asInstanceOf[Materialbox]
   }
   
-  @scala.inline
-  implicit class MaterialboxMutableBuilder[Self <: Materialbox] (val x: Self) extends AnyVal {
+  extension [Self <: Materialbox](x: Self) {
     
-    @scala.inline
-    def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDoneAnimating(value: Boolean): Self = StObject.set(x, "doneAnimating", value.asInstanceOf[js.Any])
+    inline def setDoneAnimating(value: Boolean): Self = StObject.set(x, "doneAnimating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
+    inline def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOriginalHeight(value: Double): Self = StObject.set(x, "originalHeight", value.asInstanceOf[js.Any])
+    inline def setOriginalHeight(value: Double): Self = StObject.set(x, "originalHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalWidth(value: Double): Self = StObject.set(x, "originalWidth", value.asInstanceOf[js.Any])
+    inline def setOriginalWidth(value: Double): Self = StObject.set(x, "originalWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverlayActive(value: Boolean): Self = StObject.set(x, "overlayActive", value.asInstanceOf[js.Any])
+    inline def setOverlayActive(value: Boolean): Self = StObject.set(x, "overlayActive", value.asInstanceOf[js.Any])
   }
 }

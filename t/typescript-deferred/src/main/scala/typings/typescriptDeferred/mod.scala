@@ -10,15 +10,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create[T](): DeferredInterface[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[DeferredInterface[T]]
+  inline def create[T](): DeferredInterface[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[DeferredInterface[T]]
   
-  @scala.inline
-  def when[T](): PromiseInterface[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("when")().asInstanceOf[PromiseInterface[T]]
-  @scala.inline
-  def when[T](value: T): PromiseInterface[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("when")(value.asInstanceOf[js.Any]).asInstanceOf[PromiseInterface[T]]
-  @scala.inline
-  def when[T](value: ThenableInterface[T]): PromiseInterface[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("when")(value.asInstanceOf[js.Any]).asInstanceOf[PromiseInterface[T]]
+  inline def when[T](): PromiseInterface[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("when")().asInstanceOf[PromiseInterface[T]]
+  inline def when[T](value: T): PromiseInterface[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("when")(value.asInstanceOf[js.Any]).asInstanceOf[PromiseInterface[T]]
+  inline def when[T](value: ThenableInterface[T]): PromiseInterface[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("when")(value.asInstanceOf[js.Any]).asInstanceOf[PromiseInterface[T]]
   
   type DeferredErrorCB[TP] = js.Function1[/* error */ js.Any, ThenableInterface[TP]]
   

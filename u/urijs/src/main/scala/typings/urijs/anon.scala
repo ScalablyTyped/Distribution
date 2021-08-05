@@ -18,38 +18,28 @@ object anon {
   }
   object Hostname {
     
-    @scala.inline
-    def apply(): Hostname = {
+    inline def apply(): Hostname = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Hostname]
     }
     
-    @scala.inline
-    implicit class HostnameMutableBuilder[Self <: Hostname] (val x: Self) extends AnyVal {
+    extension [Self <: Hostname](x: Self) {
       
-      @scala.inline
-      def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+      inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     }
   }
   
@@ -61,26 +51,20 @@ object anon {
   }
   object Password {
     
-    @scala.inline
-    def apply(): Password = {
+    inline def apply(): Password = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Password]
     }
     
-    @scala.inline
-    implicit class PasswordMutableBuilder[Self <: Password] (val x: Self) extends AnyVal {
+    extension [Self <: Password](x: Self) {
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
+      inline def setPasswordUndefined: Self = StObject.set(x, "password", js.undefined)
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     }
   }
   
@@ -92,26 +76,20 @@ object anon {
   }
   object Port {
     
-    @scala.inline
-    def apply(): Port = {
+    inline def apply(): Port = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Port]
     }
     
-    @scala.inline
-    implicit class PortMutableBuilder[Self <: Port] (val x: Self) extends AnyVal {
+    extension [Self <: Port](x: Self) {
       
-      @scala.inline
-      def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+      inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+      inline def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
       
-      @scala.inline
-      def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     }
   }
 }

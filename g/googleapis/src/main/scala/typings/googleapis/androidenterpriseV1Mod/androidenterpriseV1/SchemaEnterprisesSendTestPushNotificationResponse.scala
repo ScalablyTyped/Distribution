@@ -19,25 +19,19 @@ trait SchemaEnterprisesSendTestPushNotificationResponse extends StObject {
 }
 object SchemaEnterprisesSendTestPushNotificationResponse {
   
-  @scala.inline
-  def apply(): SchemaEnterprisesSendTestPushNotificationResponse = {
+  inline def apply(): SchemaEnterprisesSendTestPushNotificationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEnterprisesSendTestPushNotificationResponse]
   }
   
-  @scala.inline
-  implicit class SchemaEnterprisesSendTestPushNotificationResponseMutableBuilder[Self <: SchemaEnterprisesSendTestPushNotificationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEnterprisesSendTestPushNotificationResponse](x: Self) {
     
-    @scala.inline
-    def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+    inline def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
+    inline def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
     
-    @scala.inline
-    def setTopicName(value: String): Self = StObject.set(x, "topicName", value.asInstanceOf[js.Any])
+    inline def setTopicName(value: String): Self = StObject.set(x, "topicName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicNameUndefined: Self = StObject.set(x, "topicName", js.undefined)
+    inline def setTopicNameUndefined: Self = StObject.set(x, "topicName", js.undefined)
   }
 }

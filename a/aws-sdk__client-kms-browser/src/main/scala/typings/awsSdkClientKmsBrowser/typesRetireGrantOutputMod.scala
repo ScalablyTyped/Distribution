@@ -20,17 +20,14 @@ object typesRetireGrantOutputMod {
   }
   object RetireGrantOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): RetireGrantOutput = {
+    inline def apply($metadata: ResponseMetadata): RetireGrantOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[RetireGrantOutput]
     }
     
-    @scala.inline
-    implicit class RetireGrantOutputMutableBuilder[Self <: RetireGrantOutput] (val x: Self) extends AnyVal {
+    extension [Self <: RetireGrantOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
   }
 }

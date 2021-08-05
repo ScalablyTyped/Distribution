@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AuthorizeRequestStatus extends StObject
 object AuthorizeRequestStatus {
   
-  @scala.inline
-  def complete: typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.complete = "complete".asInstanceOf[typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.complete]
+  inline def complete: typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.complete = "complete".asInstanceOf[typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.complete]
   
-  @scala.inline
-  def in_progress: typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.in_progress = "in_progress".asInstanceOf[typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.in_progress]
+  inline def in_progress: typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.in_progress = "in_progress".asInstanceOf[typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.in_progress]
   
-  @scala.inline
-  def queued: typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.queued = "queued".asInstanceOf[typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.queued]
+  inline def queued: typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.queued = "queued".asInstanceOf[typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserStrings.queued]
 }

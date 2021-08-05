@@ -11,19 +11,15 @@ trait MenuUIParams extends StObject {
 }
 object MenuUIParams {
   
-  @scala.inline
-  def apply(): MenuUIParams = {
+  inline def apply(): MenuUIParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MenuUIParams]
   }
   
-  @scala.inline
-  implicit class MenuUIParamsMutableBuilder[Self <: MenuUIParams] (val x: Self) extends AnyVal {
+  extension [Self <: MenuUIParams](x: Self) {
     
-    @scala.inline
-    def setItem(value: JQuery): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: JQuery): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
+    inline def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
   }
 }

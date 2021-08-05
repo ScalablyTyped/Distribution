@@ -19,22 +19,17 @@ trait SchemaGooglePrivacyDlpV2InfoTypeTransformations extends StObject {
 }
 object SchemaGooglePrivacyDlpV2InfoTypeTransformations {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2InfoTypeTransformations = {
+  inline def apply(): SchemaGooglePrivacyDlpV2InfoTypeTransformations = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2InfoTypeTransformations]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2InfoTypeTransformationsMutableBuilder[Self <: SchemaGooglePrivacyDlpV2InfoTypeTransformations] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2InfoTypeTransformations](x: Self) {
     
-    @scala.inline
-    def setTransformations(value: js.Array[SchemaGooglePrivacyDlpV2InfoTypeTransformation]): Self = StObject.set(x, "transformations", value.asInstanceOf[js.Any])
+    inline def setTransformations(value: js.Array[SchemaGooglePrivacyDlpV2InfoTypeTransformation]): Self = StObject.set(x, "transformations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformationsUndefined: Self = StObject.set(x, "transformations", js.undefined)
+    inline def setTransformationsUndefined: Self = StObject.set(x, "transformations", js.undefined)
     
-    @scala.inline
-    def setTransformationsVarargs(value: SchemaGooglePrivacyDlpV2InfoTypeTransformation*): Self = StObject.set(x, "transformations", js.Array(value :_*))
+    inline def setTransformationsVarargs(value: SchemaGooglePrivacyDlpV2InfoTypeTransformation*): Self = StObject.set(x, "transformations", js.Array(value :_*))
   }
 }

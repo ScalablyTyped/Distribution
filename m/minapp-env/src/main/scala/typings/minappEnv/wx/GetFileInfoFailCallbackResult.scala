@@ -14,16 +14,13 @@ trait GetFileInfoFailCallbackResult extends StObject {
 }
 object GetFileInfoFailCallbackResult {
   
-  @scala.inline
-  def apply(errMsg: String): GetFileInfoFailCallbackResult = {
+  inline def apply(errMsg: String): GetFileInfoFailCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetFileInfoFailCallbackResult]
   }
   
-  @scala.inline
-  implicit class GetFileInfoFailCallbackResultMutableBuilder[Self <: GetFileInfoFailCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetFileInfoFailCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

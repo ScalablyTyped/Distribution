@@ -35,29 +35,22 @@ trait MessageStatus
 }
 object MessageStatus {
   
-  @scala.inline
-  def apply(id: String, message_id: String, `type`: MessageEventType): MessageStatus = {
+  inline def apply(id: String, message_id: String, `type`: MessageEventType): MessageStatus = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], message_id = message_id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[MessageStatus]
   }
   
-  @scala.inline
-  implicit class MessageStatusMutableBuilder[Self <: MessageStatus] (val x: Self) extends AnyVal {
+  extension [Self <: MessageStatus](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage_id(value: String): Self = StObject.set(x, "message_id", value.asInstanceOf[js.Any])
+    inline def setMessage_id(value: String): Self = StObject.set(x, "message_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
-    @scala.inline
-    def setType(value: MessageEventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: MessageEventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

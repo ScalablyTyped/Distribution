@@ -11,41 +11,35 @@ object seleniumWebdriverStrings {
   sealed trait DEBUG
     extends StObject
        with Level
-  @scala.inline
-  def DEBUG: DEBUG = "DEBUG".asInstanceOf[DEBUG]
+  inline def DEBUG: DEBUG = "DEBUG".asInstanceOf[DEBUG]
   
   @js.native
   sealed trait ERROR
     extends StObject
        with Level
-  @scala.inline
-  def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
+  inline def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
   
   @js.native
   sealed trait FATAL
     extends StObject
        with Level
-  @scala.inline
-  def FATAL: FATAL = "FATAL".asInstanceOf[FATAL]
+  inline def FATAL: FATAL = "FATAL".asInstanceOf[FATAL]
   
   @js.native
   sealed trait INFO
     extends StObject
        with Level
-  @scala.inline
-  def INFO: INFO = "INFO".asInstanceOf[INFO]
+  inline def INFO: INFO = "INFO".asInstanceOf[INFO]
   
   @js.native
   sealed trait TRACE
     extends StObject
        with Level
-  @scala.inline
-  def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
+  inline def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
   
   @js.native
   sealed trait WARN
     extends StObject
        with Level
-  @scala.inline
-  def WARN: WARN = "WARN".asInstanceOf[WARN]
+  inline def WARN: WARN = "WARN".asInstanceOf[WARN]
 }

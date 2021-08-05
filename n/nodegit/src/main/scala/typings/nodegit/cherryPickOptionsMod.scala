@@ -20,38 +20,28 @@ object cherryPickOptionsMod {
   }
   object CherrypickOptions {
     
-    @scala.inline
-    def apply(): CherrypickOptions = {
+    inline def apply(): CherrypickOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CherrypickOptions]
     }
     
-    @scala.inline
-    implicit class CherrypickOptionsMutableBuilder[Self <: CherrypickOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CherrypickOptions](x: Self) {
       
-      @scala.inline
-      def setCheckoutOpts(value: CheckoutOptions): Self = StObject.set(x, "checkoutOpts", value.asInstanceOf[js.Any])
+      inline def setCheckoutOpts(value: CheckoutOptions): Self = StObject.set(x, "checkoutOpts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckoutOptsUndefined: Self = StObject.set(x, "checkoutOpts", js.undefined)
+      inline def setCheckoutOptsUndefined: Self = StObject.set(x, "checkoutOpts", js.undefined)
       
-      @scala.inline
-      def setMainline(value: Double): Self = StObject.set(x, "mainline", value.asInstanceOf[js.Any])
+      inline def setMainline(value: Double): Self = StObject.set(x, "mainline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMainlineUndefined: Self = StObject.set(x, "mainline", js.undefined)
+      inline def setMainlineUndefined: Self = StObject.set(x, "mainline", js.undefined)
       
-      @scala.inline
-      def setMergeOpts(value: MergeOptions): Self = StObject.set(x, "mergeOpts", value.asInstanceOf[js.Any])
+      inline def setMergeOpts(value: MergeOptions): Self = StObject.set(x, "mergeOpts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMergeOptsUndefined: Self = StObject.set(x, "mergeOpts", js.undefined)
+      inline def setMergeOptsUndefined: Self = StObject.set(x, "mergeOpts", js.undefined)
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
 }

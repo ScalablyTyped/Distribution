@@ -25,9 +25,9 @@ object androidFilterMod {
     extends StObject
        with IFilter {
     
-    var filter: js.Any = js.native
+    /* private */ var filter: js.Any = js.native
     
-    val minPriority: js.Any = js.native
+    /* private */ val minPriority: js.Any = js.native
     
     def setCustomFilter(patterns: js.Array[String]): Unit = js.native
     

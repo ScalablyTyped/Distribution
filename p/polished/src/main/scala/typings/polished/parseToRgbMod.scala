@@ -12,6 +12,5 @@ object parseToRgbMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(color: String): RgbColor | RgbaColor = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(color.asInstanceOf[js.Any]).asInstanceOf[RgbColor | RgbaColor]
+  inline def default(color: String): RgbColor | RgbaColor = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(color.asInstanceOf[js.Any]).asInstanceOf[RgbColor | RgbaColor]
 }

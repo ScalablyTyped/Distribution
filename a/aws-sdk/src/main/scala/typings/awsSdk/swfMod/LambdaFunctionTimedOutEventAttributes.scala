@@ -23,25 +23,19 @@ trait LambdaFunctionTimedOutEventAttributes extends StObject {
 }
 object LambdaFunctionTimedOutEventAttributes {
   
-  @scala.inline
-  def apply(scheduledEventId: EventId, startedEventId: EventId): LambdaFunctionTimedOutEventAttributes = {
+  inline def apply(scheduledEventId: EventId, startedEventId: EventId): LambdaFunctionTimedOutEventAttributes = {
     val __obj = js.Dynamic.literal(scheduledEventId = scheduledEventId.asInstanceOf[js.Any], startedEventId = startedEventId.asInstanceOf[js.Any])
     __obj.asInstanceOf[LambdaFunctionTimedOutEventAttributes]
   }
   
-  @scala.inline
-  implicit class LambdaFunctionTimedOutEventAttributesMutableBuilder[Self <: LambdaFunctionTimedOutEventAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: LambdaFunctionTimedOutEventAttributes](x: Self) {
     
-    @scala.inline
-    def setScheduledEventId(value: EventId): Self = StObject.set(x, "scheduledEventId", value.asInstanceOf[js.Any])
+    inline def setScheduledEventId(value: EventId): Self = StObject.set(x, "scheduledEventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartedEventId(value: EventId): Self = StObject.set(x, "startedEventId", value.asInstanceOf[js.Any])
+    inline def setStartedEventId(value: EventId): Self = StObject.set(x, "startedEventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutType(value: LambdaFunctionTimeoutType): Self = StObject.set(x, "timeoutType", value.asInstanceOf[js.Any])
+    inline def setTimeoutType(value: LambdaFunctionTimeoutType): Self = StObject.set(x, "timeoutType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutTypeUndefined: Self = StObject.set(x, "timeoutType", js.undefined)
+    inline def setTimeoutTypeUndefined: Self = StObject.set(x, "timeoutType", js.undefined)
   }
 }

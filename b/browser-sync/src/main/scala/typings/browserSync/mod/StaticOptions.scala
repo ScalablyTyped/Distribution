@@ -12,25 +12,19 @@ trait StaticOptions extends StObject {
 }
 object StaticOptions {
   
-  @scala.inline
-  def apply(dir: String | js.Array[String], route: String | js.Array[String]): StaticOptions = {
+  inline def apply(dir: String | js.Array[String], route: String | js.Array[String]): StaticOptions = {
     val __obj = js.Dynamic.literal(dir = dir.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
     __obj.asInstanceOf[StaticOptions]
   }
   
-  @scala.inline
-  implicit class StaticOptionsMutableBuilder[Self <: StaticOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StaticOptions](x: Self) {
     
-    @scala.inline
-    def setDir(value: String | js.Array[String]): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+    inline def setDir(value: String | js.Array[String]): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirVarargs(value: String*): Self = StObject.set(x, "dir", js.Array(value :_*))
+    inline def setDirVarargs(value: String*): Self = StObject.set(x, "dir", js.Array(value :_*))
     
-    @scala.inline
-    def setRoute(value: String | js.Array[String]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+    inline def setRoute(value: String | js.Array[String]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRouteVarargs(value: String*): Self = StObject.set(x, "route", js.Array(value :_*))
+    inline def setRouteVarargs(value: String*): Self = StObject.set(x, "route", js.Array(value :_*))
   }
 }

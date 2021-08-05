@@ -15,26 +15,22 @@ object invokeAsyncExceptionsUnionMod {
   trait InvokeAsyncExceptionsUnion extends StObject
   object InvokeAsyncExceptionsUnion {
     
-    @scala.inline
-    def InvalidRequestContentException(): typings.awsSdkClientLambdaNode.typesInvalidRequestContentExceptionMod.InvalidRequestContentException = {
+    inline def InvalidRequestContentException(): typings.awsSdkClientLambdaNode.typesInvalidRequestContentExceptionMod.InvalidRequestContentException = {
       val __obj = js.Dynamic.literal(name = "InvalidRequestContentException")
       __obj.asInstanceOf[typings.awsSdkClientLambdaNode.typesInvalidRequestContentExceptionMod.InvalidRequestContentException]
     }
     
-    @scala.inline
-    def InvalidRuntimeException(): typings.awsSdkClientLambdaNode.typesInvalidRuntimeExceptionMod.InvalidRuntimeException = {
+    inline def InvalidRuntimeException(): typings.awsSdkClientLambdaNode.typesInvalidRuntimeExceptionMod.InvalidRuntimeException = {
       val __obj = js.Dynamic.literal(name = "InvalidRuntimeException")
       __obj.asInstanceOf[typings.awsSdkClientLambdaNode.typesInvalidRuntimeExceptionMod.InvalidRuntimeException]
     }
     
-    @scala.inline
-    def ResourceNotFoundException(): typings.awsSdkClientLambdaNode.typesResourceNotFoundExceptionMod.ResourceNotFoundException = {
+    inline def ResourceNotFoundException(): typings.awsSdkClientLambdaNode.typesResourceNotFoundExceptionMod.ResourceNotFoundException = {
       val __obj = js.Dynamic.literal(name = "ResourceNotFoundException")
       __obj.asInstanceOf[typings.awsSdkClientLambdaNode.typesResourceNotFoundExceptionMod.ResourceNotFoundException]
     }
     
-    @scala.inline
-    def ServiceException(): typings.awsSdkClientLambdaNode.typesServiceExceptionMod.ServiceException = {
+    inline def ServiceException(): typings.awsSdkClientLambdaNode.typesServiceExceptionMod.ServiceException = {
       val __obj = js.Dynamic.literal(name = "ServiceException")
       __obj.asInstanceOf[typings.awsSdkClientLambdaNode.typesServiceExceptionMod.ServiceException]
     }

@@ -18,8 +18,7 @@ trait GitConflictAddAdd
 }
 object GitConflictAddAdd {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     conflictId: Double,
     conflictPath: String,
@@ -41,16 +40,12 @@ object GitConflictAddAdd {
     __obj.asInstanceOf[GitConflictAddAdd]
   }
   
-  @scala.inline
-  implicit class GitConflictAddAddMutableBuilder[Self <: GitConflictAddAdd] (val x: Self) extends AnyVal {
+  extension [Self <: GitConflictAddAdd](x: Self) {
     
-    @scala.inline
-    def setResolution(value: GitResolutionMergeContent): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+    inline def setResolution(value: GitResolutionMergeContent): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceBlob(value: GitBlobRef): Self = StObject.set(x, "sourceBlob", value.asInstanceOf[js.Any])
+    inline def setSourceBlob(value: GitBlobRef): Self = StObject.set(x, "sourceBlob", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetBlob(value: GitBlobRef): Self = StObject.set(x, "targetBlob", value.asInstanceOf[js.Any])
+    inline def setTargetBlob(value: GitBlobRef): Self = StObject.set(x, "targetBlob", value.asInstanceOf[js.Any])
   }
 }

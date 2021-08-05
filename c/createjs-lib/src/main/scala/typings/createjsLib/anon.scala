@@ -12,17 +12,14 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(handleEvent: js.Object => Unit): `0` = {
+    inline def apply(handleEvent: js.Object => Unit): `0` = {
       val __obj = js.Dynamic.literal(handleEvent = js.Any.fromFunction1(handleEvent))
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setHandleEvent(value: js.Object => Unit): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
+      inline def setHandleEvent(value: js.Object => Unit): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
     }
   }
   
@@ -32,17 +29,14 @@ object anon {
   }
   object HandleEvent {
     
-    @scala.inline
-    def apply(handleEvent: js.Object => Boolean): HandleEvent = {
+    inline def apply(handleEvent: js.Object => Boolean): HandleEvent = {
       val __obj = js.Dynamic.literal(handleEvent = js.Any.fromFunction1(handleEvent))
       __obj.asInstanceOf[HandleEvent]
     }
     
-    @scala.inline
-    implicit class HandleEventMutableBuilder[Self <: HandleEvent] (val x: Self) extends AnyVal {
+    extension [Self <: HandleEvent](x: Self) {
       
-      @scala.inline
-      def setHandleEvent(value: js.Object => Boolean): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
+      inline def setHandleEvent(value: js.Object => Boolean): Self = StObject.set(x, "handleEvent", js.Any.fromFunction1(value))
     }
   }
 }

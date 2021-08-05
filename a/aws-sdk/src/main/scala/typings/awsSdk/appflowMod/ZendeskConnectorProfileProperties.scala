@@ -13,16 +13,13 @@ trait ZendeskConnectorProfileProperties extends StObject {
 }
 object ZendeskConnectorProfileProperties {
   
-  @scala.inline
-  def apply(instanceUrl: InstanceUrl): ZendeskConnectorProfileProperties = {
+  inline def apply(instanceUrl: InstanceUrl): ZendeskConnectorProfileProperties = {
     val __obj = js.Dynamic.literal(instanceUrl = instanceUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZendeskConnectorProfileProperties]
   }
   
-  @scala.inline
-  implicit class ZendeskConnectorProfilePropertiesMutableBuilder[Self <: ZendeskConnectorProfileProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ZendeskConnectorProfileProperties](x: Self) {
     
-    @scala.inline
-    def setInstanceUrl(value: InstanceUrl): Self = StObject.set(x, "instanceUrl", value.asInstanceOf[js.Any])
+    inline def setInstanceUrl(value: InstanceUrl): Self = StObject.set(x, "instanceUrl", value.asInstanceOf[js.Any])
   }
 }

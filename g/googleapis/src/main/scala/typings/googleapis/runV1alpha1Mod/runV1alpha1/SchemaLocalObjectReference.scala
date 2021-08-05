@@ -18,19 +18,15 @@ trait SchemaLocalObjectReference extends StObject {
 }
 object SchemaLocalObjectReference {
   
-  @scala.inline
-  def apply(): SchemaLocalObjectReference = {
+  inline def apply(): SchemaLocalObjectReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLocalObjectReference]
   }
   
-  @scala.inline
-  implicit class SchemaLocalObjectReferenceMutableBuilder[Self <: SchemaLocalObjectReference] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLocalObjectReference](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

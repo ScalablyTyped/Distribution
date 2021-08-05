@@ -91,8 +91,7 @@ trait XStarBasicLibraryInfo
 }
 object XStarBasicLibraryInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DialogContainer: XNameContainer,
     ExternalSourceURL: String,
     LinkTargetURL: String,
@@ -113,43 +112,30 @@ object XStarBasicLibraryInfo {
     __obj.asInstanceOf[XStarBasicLibraryInfo]
   }
   
-  @scala.inline
-  implicit class XStarBasicLibraryInfoMutableBuilder[Self <: XStarBasicLibraryInfo] (val x: Self) extends AnyVal {
+  extension [Self <: XStarBasicLibraryInfo](x: Self) {
     
-    @scala.inline
-    def setDialogContainer(value: XNameContainer): Self = StObject.set(x, "DialogContainer", value.asInstanceOf[js.Any])
+    inline def setDialogContainer(value: XNameContainer): Self = StObject.set(x, "DialogContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalSourceURL(value: String): Self = StObject.set(x, "ExternalSourceURL", value.asInstanceOf[js.Any])
+    inline def setExternalSourceURL(value: String): Self = StObject.set(x, "ExternalSourceURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDialogContainer(value: () => XNameContainer): Self = StObject.set(x, "getDialogContainer", js.Any.fromFunction0(value))
+    inline def setGetDialogContainer(value: () => XNameContainer): Self = StObject.set(x, "getDialogContainer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetExternalSourceURL(value: () => String): Self = StObject.set(x, "getExternalSourceURL", js.Any.fromFunction0(value))
+    inline def setGetExternalSourceURL(value: () => String): Self = StObject.set(x, "getExternalSourceURL", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLinkTargetURL(value: () => String): Self = StObject.set(x, "getLinkTargetURL", js.Any.fromFunction0(value))
+    inline def setGetLinkTargetURL(value: () => String): Self = StObject.set(x, "getLinkTargetURL", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetModuleContainer(value: () => XNameContainer): Self = StObject.set(x, "getModuleContainer", js.Any.fromFunction0(value))
+    inline def setGetModuleContainer(value: () => XNameContainer): Self = StObject.set(x, "getModuleContainer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPassword(value: () => String): Self = StObject.set(x, "getPassword", js.Any.fromFunction0(value))
+    inline def setGetPassword(value: () => String): Self = StObject.set(x, "getPassword", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLinkTargetURL(value: String): Self = StObject.set(x, "LinkTargetURL", value.asInstanceOf[js.Any])
+    inline def setLinkTargetURL(value: String): Self = StObject.set(x, "LinkTargetURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModuleContainer(value: XNameContainer): Self = StObject.set(x, "ModuleContainer", value.asInstanceOf[js.Any])
+    inline def setModuleContainer(value: XNameContainer): Self = StObject.set(x, "ModuleContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
   }
 }

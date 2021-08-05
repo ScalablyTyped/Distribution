@@ -33,8 +33,7 @@ trait AudioInfo extends StObject {
 }
 object AudioInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bit_rate: String,
     channels: Double,
     codec_name: String,
@@ -52,43 +51,30 @@ object AudioInfo {
     __obj.asInstanceOf[AudioInfo]
   }
   
-  @scala.inline
-  implicit class AudioInfoMutableBuilder[Self <: AudioInfo] (val x: Self) extends AnyVal {
+  extension [Self <: AudioInfo](x: Self) {
     
-    @scala.inline
-    def setBit_rate(value: String): Self = StObject.set(x, "bit_rate", value.asInstanceOf[js.Any])
+    inline def setBit_rate(value: String): Self = StObject.set(x, "bit_rate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannels(value: Double): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: Double): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodec_name(value: String): Self = StObject.set(x, "codec_name", value.asInstanceOf[js.Any])
+    inline def setCodec_name(value: String): Self = StObject.set(x, "codec_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodec_type(value: String): Self = StObject.set(x, "codec_type", value.asInstanceOf[js.Any])
+    inline def setCodec_type(value: String): Self = StObject.set(x, "codec_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNb_frames(value: String): Self = StObject.set(x, "nb_frames", value.asInstanceOf[js.Any])
+    inline def setNb_frames(value: String): Self = StObject.set(x, "nb_frames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR_frame_rate(value: String): Self = StObject.set(x, "r_frame_rate", value.asInstanceOf[js.Any])
+    inline def setR_frame_rate(value: String): Self = StObject.set(x, "r_frame_rate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSample_fmt(value: String): Self = StObject.set(x, "sample_fmt", value.asInstanceOf[js.Any])
+    inline def setSample_fmt(value: String): Self = StObject.set(x, "sample_fmt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSample_rate(value: String): Self = StObject.set(x, "sample_rate", value.asInstanceOf[js.Any])
+    inline def setSample_rate(value: String): Self = StObject.set(x, "sample_rate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart_time(value: String): Self = StObject.set(x, "start_time", value.asInstanceOf[js.Any])
+    inline def setStart_time(value: String): Self = StObject.set(x, "start_time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: Dictkey): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Dictkey): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
   }
 }

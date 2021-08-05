@@ -17,25 +17,19 @@ trait SuggestedDocumentStyle extends StObject {
 }
 object SuggestedDocumentStyle {
   
-  @scala.inline
-  def apply(): SuggestedDocumentStyle = {
+  inline def apply(): SuggestedDocumentStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SuggestedDocumentStyle]
   }
   
-  @scala.inline
-  implicit class SuggestedDocumentStyleMutableBuilder[Self <: SuggestedDocumentStyle] (val x: Self) extends AnyVal {
+  extension [Self <: SuggestedDocumentStyle](x: Self) {
     
-    @scala.inline
-    def setDocumentStyle(value: DocumentStyle): Self = StObject.set(x, "documentStyle", value.asInstanceOf[js.Any])
+    inline def setDocumentStyle(value: DocumentStyle): Self = StObject.set(x, "documentStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentStyleSuggestionState(value: DocumentStyleSuggestionState): Self = StObject.set(x, "documentStyleSuggestionState", value.asInstanceOf[js.Any])
+    inline def setDocumentStyleSuggestionState(value: DocumentStyleSuggestionState): Self = StObject.set(x, "documentStyleSuggestionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentStyleSuggestionStateUndefined: Self = StObject.set(x, "documentStyleSuggestionState", js.undefined)
+    inline def setDocumentStyleSuggestionStateUndefined: Self = StObject.set(x, "documentStyleSuggestionState", js.undefined)
     
-    @scala.inline
-    def setDocumentStyleUndefined: Self = StObject.set(x, "documentStyle", js.undefined)
+    inline def setDocumentStyleUndefined: Self = StObject.set(x, "documentStyle", js.undefined)
   }
 }

@@ -13,6 +13,5 @@ class EncapsulatedTimeStampCollection ()
   extends typings.xadesjs.xmlMod.EncapsulatedTimeStampCollection
 object EncapsulatedTimeStampCollection {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.EncapsulatedTimeStampCollection] = ^.asInstanceOf[js.Dynamic].selectDynamic("EncapsulatedTimeStampCollection").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.EncapsulatedTimeStampCollection]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.EncapsulatedTimeStampCollection] = ^.asInstanceOf[js.Dynamic].selectDynamic("EncapsulatedTimeStampCollection").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.EncapsulatedTimeStampCollection]]
 }

@@ -42,46 +42,33 @@ trait SchemaTenancyUnit extends StObject {
 }
 object SchemaTenancyUnit {
   
-  @scala.inline
-  def apply(): SchemaTenancyUnit = {
+  inline def apply(): SchemaTenancyUnit = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTenancyUnit]
   }
   
-  @scala.inline
-  implicit class SchemaTenancyUnitMutableBuilder[Self <: SchemaTenancyUnit] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTenancyUnit](x: Self) {
     
-    @scala.inline
-    def setConsumer(value: String): Self = StObject.set(x, "consumer", value.asInstanceOf[js.Any])
+    inline def setConsumer(value: String): Self = StObject.set(x, "consumer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumerUndefined: Self = StObject.set(x, "consumer", js.undefined)
+    inline def setConsumerUndefined: Self = StObject.set(x, "consumer", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
+    inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
+    inline def setServiceUndefined: Self = StObject.set(x, "service", js.undefined)
     
-    @scala.inline
-    def setTenantResources(value: js.Array[SchemaTenantResource]): Self = StObject.set(x, "tenantResources", value.asInstanceOf[js.Any])
+    inline def setTenantResources(value: js.Array[SchemaTenantResource]): Self = StObject.set(x, "tenantResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTenantResourcesUndefined: Self = StObject.set(x, "tenantResources", js.undefined)
+    inline def setTenantResourcesUndefined: Self = StObject.set(x, "tenantResources", js.undefined)
     
-    @scala.inline
-    def setTenantResourcesVarargs(value: SchemaTenantResource*): Self = StObject.set(x, "tenantResources", js.Array(value :_*))
+    inline def setTenantResourcesVarargs(value: SchemaTenantResource*): Self = StObject.set(x, "tenantResources", js.Array(value :_*))
   }
 }

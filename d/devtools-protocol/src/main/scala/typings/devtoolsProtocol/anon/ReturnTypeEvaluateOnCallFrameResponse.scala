@@ -14,22 +14,17 @@ trait ReturnTypeEvaluateOnCallFrameResponse extends StObject {
 }
 object ReturnTypeEvaluateOnCallFrameResponse {
   
-  @scala.inline
-  def apply(paramsType: js.Array[EvaluateOnCallFrameRequest], returnType: EvaluateOnCallFrameResponse): ReturnTypeEvaluateOnCallFrameResponse = {
+  inline def apply(paramsType: js.Array[EvaluateOnCallFrameRequest], returnType: EvaluateOnCallFrameResponse): ReturnTypeEvaluateOnCallFrameResponse = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnTypeEvaluateOnCallFrameResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeEvaluateOnCallFrameResponseMutableBuilder[Self <: ReturnTypeEvaluateOnCallFrameResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeEvaluateOnCallFrameResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[EvaluateOnCallFrameRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[EvaluateOnCallFrameRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: EvaluateOnCallFrameRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: EvaluateOnCallFrameRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: EvaluateOnCallFrameResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: EvaluateOnCallFrameResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

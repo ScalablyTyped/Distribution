@@ -32,8 +32,7 @@ object crypto {
       * @returns
       * @throws
       */
-    @scala.inline
-    def unwrap(key: String, data: String): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("unwrap")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    inline def unwrap(key: String, data: String): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("unwrap")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
     
     /**
       * AES key wrap
@@ -41,8 +40,7 @@ object crypto {
       * @param data
       * @returns
       */
-    @scala.inline
-    def wrap(key: String, data: String): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    inline def wrap(key: String, data: String): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   }
   
   object cfb {
@@ -51,11 +49,9 @@ object crypto {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def decrypt(algo: js.Any, key: js.Any, ciphertext: js.Any, iv: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(algo.asInstanceOf[js.Any], key.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    inline def decrypt(algo: js.Any, key: js.Any, ciphertext: js.Any, iv: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(algo.asInstanceOf[js.Any], key.asInstanceOf[js.Any], ciphertext.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
-    @scala.inline
-    def encrypt(algo: js.Any, key: js.Any, plaintext: js.Any, iv: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(algo.asInstanceOf[js.Any], key.asInstanceOf[js.Any], plaintext.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def encrypt(algo: js.Any, key: js.Any, plaintext: js.Any, iv: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(algo.asInstanceOf[js.Any], key.asInstanceOf[js.Any], plaintext.asInstanceOf[js.Any], iv.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   object cipher {
@@ -71,8 +67,7 @@ object crypto {
       * @see
       * @returns
       */
-    @scala.inline
-    def aes128(key: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("aes128")(key.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+    inline def aes128(key: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("aes128")(key.asInstanceOf[js.Any]).asInstanceOf[js.Object]
     
     /**
       * AES-128 Block Cipher (ID 8)
@@ -81,8 +76,7 @@ object crypto {
       * @see
       * @returns
       */
-    @scala.inline
-    def aes192(key: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("aes192")(key.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+    inline def aes192(key: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("aes192")(key.asInstanceOf[js.Any]).asInstanceOf[js.Object]
     
     /**
       * AES-128 Block Cipher (ID 9)
@@ -91,8 +85,7 @@ object crypto {
       * @see
       * @returns
       */
-    @scala.inline
-    def aes256(key: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("aes256")(key.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+    inline def aes256(key: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("aes256")(key.asInstanceOf[js.Any]).asInstanceOf[js.Object]
     
     /**
       * Blowfish Block Cipher (ID 4)
@@ -100,8 +93,7 @@ object crypto {
       * @see
       * @returns
       */
-    @scala.inline
-    def blowfish(key: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("blowfish")(key.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+    inline def blowfish(key: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("blowfish")(key.asInstanceOf[js.Any]).asInstanceOf[js.Object]
     
     /**
       * CAST-128 Block Cipher (ID 3)
@@ -109,15 +101,13 @@ object crypto {
       * @see
       * @returns
       */
-    @scala.inline
-    def cast5(key: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("cast5")(key.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+    inline def cast5(key: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("cast5")(key.asInstanceOf[js.Any]).asInstanceOf[js.Object]
     
     /**
       * Not implemented
       * @throws
       */
-    @scala.inline
-    def idea(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("idea")().asInstanceOf[Unit]
+    inline def idea(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("idea")().asInstanceOf[Unit]
     
     /**
       * Triple DES Block Cipher (ID 2)
@@ -125,8 +115,7 @@ object crypto {
       * @see
       * @returns
       */
-    @scala.inline
-    def tripledes(key: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("tripledes")(key.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+    inline def tripledes(key: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("tripledes")(key.asInstanceOf[js.Any]).asInstanceOf[js.Object]
     
     /**
       * Twofish Block Cipher (ID 10)
@@ -134,8 +123,7 @@ object crypto {
       * @see
       * @returns
       */
-    @scala.inline
-    def twofish(key: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("twofish")(key.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+    inline def twofish(key: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("twofish")(key.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   }
   
   object cmac {
@@ -167,8 +155,7 @@ object crypto {
       * @param data
       * @param padding
       */
-    @scala.inline
-    def rightXorMut(data: Uint8Array, padding: Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rightXorMut")(data.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def rightXorMut(data: Uint8Array, padding: Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rightXorMut")(data.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   object crypto {
@@ -184,8 +171,7 @@ object crypto {
       * @param oid Object identifier for ECC keys
       * @returns The array of parameters
       */
-    @scala.inline
-    def generateParams(algo: String, bits: Integer, oid: OID): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateParams")(algo.asInstanceOf[js.Any], bits.asInstanceOf[js.Any], oid.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def generateParams(algo: String, bits: Integer, oid: OID): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateParams")(algo.asInstanceOf[js.Any], bits.asInstanceOf[js.Any], oid.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
     
     /**
       * Generating a session key for the specified symmetric algorithm
@@ -193,16 +179,14 @@ object crypto {
       * @param algo Symmetric encryption algorithm
       * @returns Random bytes as a string to be used as a key
       */
-    @scala.inline
-    def generateSessionKey(algo: symmetric): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("generateSessionKey")(algo.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+    inline def generateSessionKey(algo: symmetric): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("generateSessionKey")(algo.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
     
     /**
       * Returns the types comprising the encrypted session key of an algorithm
       * @param algo The public key algorithm
       * @returns The array of types
       */
-    @scala.inline
-    def getEncSessionKeyParamTypes(algo: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEncSessionKeyParamTypes")(algo.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+    inline def getEncSessionKeyParamTypes(algo: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getEncSessionKeyParamTypes")(algo.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
     
     /**
       * Generates a random byte prefix for the specified algorithm
@@ -210,24 +194,21 @@ object crypto {
       * @param algo Symmetric encryption algorithm
       * @returns Random bytes with length equal to the block size of the cipher, plus the last two bytes repeated.
       */
-    @scala.inline
-    def getPrefixRandom(algo: symmetric): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrefixRandom")(algo.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+    inline def getPrefixRandom(algo: symmetric): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrefixRandom")(algo.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
     
     /**
       * Returns the types comprising the private key of an algorithm
       * @param algo The public key algorithm
       * @returns The array of types
       */
-    @scala.inline
-    def getPrivKeyParamTypes(algo: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrivKeyParamTypes")(algo.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+    inline def getPrivKeyParamTypes(algo: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrivKeyParamTypes")(algo.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
     
     /**
       * Returns the types comprising the public key of an algorithm
       * @param algo The public key algorithm
       * @returns The array of types
       */
-    @scala.inline
-    def getPubKeyParamTypes(algo: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPubKeyParamTypes")(algo.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+    inline def getPubKeyParamTypes(algo: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPubKeyParamTypes")(algo.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
     
     /**
       * Decrypts data using specified algorithm and private key parameters.
@@ -238,8 +219,7 @@ object crypto {
       * @param fingerprint Recipient fingerprint
       * @returns An MPI containing the decrypted data
       */
-    @scala.inline
-    def publicKeyDecrypt(
+    inline def publicKeyDecrypt(
       algo: publicKey,
       key_params: js.Array[MPI | OID | KDFParams],
       data_params: js.Array[MPI | OID | KDFParams],
@@ -255,8 +235,7 @@ object crypto {
       * @param fingerprint Recipient fingerprint
       * @returns encrypted session key parameters
       */
-    @scala.inline
-    def publicKeyEncrypt(algo: publicKey, pub_params: js.Array[MPI | OID | KDFParams], data: MPI, fingerprint: String): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyEncrypt")(algo.asInstanceOf[js.Any], pub_params.asInstanceOf[js.Any], data.asInstanceOf[js.Any], fingerprint.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    inline def publicKeyEncrypt(algo: publicKey, pub_params: js.Array[MPI | OID | KDFParams], data: MPI, fingerprint: String): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("publicKeyEncrypt")(algo.asInstanceOf[js.Any], pub_params.asInstanceOf[js.Any], data.asInstanceOf[js.Any], fingerprint.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   }
   
   object eax {
@@ -270,8 +249,7 @@ object crypto {
       * @param cipher The symmetric cipher algorithm to use e.g. 'aes128'
       * @param key The encryption key
       */
-    @scala.inline
-    def EAX(cipher: String, key: Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EAX")(cipher.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def EAX(cipher: String, key: Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("EAX")(cipher.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Decrypt ciphertext input.
@@ -280,8 +258,7 @@ object crypto {
       * @param adata Associated data to verify
       * @returns The plaintext output
       */
-    @scala.inline
-    def decrypt(ciphertext: Uint8Array, nonce: Uint8Array, adata: Uint8Array): js.Promise[Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], adata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Uint8Array]]
+    inline def decrypt(ciphertext: Uint8Array, nonce: Uint8Array, adata: Uint8Array): js.Promise[Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], adata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Uint8Array]]
     
     /**
       * Encrypt plaintext input.
@@ -290,8 +267,7 @@ object crypto {
       * @param adata Associated data to sign
       * @returns The ciphertext output
       */
-    @scala.inline
-    def encrypt(plaintext: Uint8Array, nonce: Uint8Array, adata: Uint8Array): js.Promise[Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(plaintext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], adata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Uint8Array]]
+    inline def encrypt(plaintext: Uint8Array, nonce: Uint8Array, adata: Uint8Array): js.Promise[Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(plaintext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], adata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Uint8Array]]
   }
   
   object gcm {
@@ -305,8 +281,7 @@ object crypto {
       * @param cipher The symmetric cipher algorithm to use e.g. 'aes128'
       * @param key The encryption key
       */
-    @scala.inline
-    def GCM(cipher: String, key: Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("GCM")(cipher.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def GCM(cipher: String, key: Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("GCM")(cipher.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   /**
@@ -325,16 +300,14 @@ object crypto {
       * @param data Data to be hashed
       * @returns hash value
       */
-    @scala.inline
-    def digest(algo: typings.openpgp.mod.enums.hash, data: Uint8Array): js.Promise[Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("digest")(algo.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Uint8Array]]
+    inline def digest(algo: typings.openpgp.mod.enums.hash, data: Uint8Array): js.Promise[Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("digest")(algo.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Uint8Array]]
     
     /**
       * Returns the hash size in bytes of the specified hash algorithm type
       * @param algo Hash algorithm type (See {@link https://tools.ietf.org/html/rfc4880#section-9.4|RFC 4880 9.4})
       * @returns Size in bytes of the resulting hash
       */
-    @scala.inline
-    def getHashByteLength(algo: typings.openpgp.mod.enums.hash): Integer = ^.asInstanceOf[js.Dynamic].applyDynamic("getHashByteLength")(algo.asInstanceOf[js.Any]).asInstanceOf[Integer]
+    inline def getHashByteLength(algo: typings.openpgp.mod.enums.hash): Integer = ^.asInstanceOf[js.Dynamic].applyDynamic("getHashByteLength")(algo.asInstanceOf[js.Any]).asInstanceOf[Integer]
     
     /**
       * @see module:md5
@@ -342,8 +315,7 @@ object crypto {
     @JSImport("openpgp", "crypto.hash.md5")
     @js.native
     def md5: js.Any = js.native
-    @scala.inline
-    def md5_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("md5")(x.asInstanceOf[js.Any])
+    inline def md5_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("md5")(x.asInstanceOf[js.Any])
     
     /**
       * @see hash.js
@@ -351,8 +323,7 @@ object crypto {
     @JSImport("openpgp", "crypto.hash.ripemd")
     @js.native
     def ripemd: js.Any = js.native
-    @scala.inline
-    def ripemd_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ripemd")(x.asInstanceOf[js.Any])
+    inline def ripemd_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ripemd")(x.asInstanceOf[js.Any])
     
     /**
       * @see asmCrypto
@@ -360,8 +331,7 @@ object crypto {
     @JSImport("openpgp", "crypto.hash.sha1")
     @js.native
     def sha1: js.Any = js.native
-    @scala.inline
-    def sha1_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha1")(x.asInstanceOf[js.Any])
+    inline def sha1_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha1")(x.asInstanceOf[js.Any])
     
     /**
       * @see hash.js
@@ -369,8 +339,7 @@ object crypto {
     @JSImport("openpgp", "crypto.hash.sha224")
     @js.native
     def sha224: js.Any = js.native
-    @scala.inline
-    def sha224_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha224")(x.asInstanceOf[js.Any])
+    inline def sha224_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha224")(x.asInstanceOf[js.Any])
     
     /**
       * @see asmCrypto
@@ -378,8 +347,7 @@ object crypto {
     @JSImport("openpgp", "crypto.hash.sha256")
     @js.native
     def sha256: js.Any = js.native
-    @scala.inline
-    def sha256_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha256")(x.asInstanceOf[js.Any])
+    inline def sha256_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha256")(x.asInstanceOf[js.Any])
     
     /**
       * @see hash.js
@@ -387,8 +355,7 @@ object crypto {
     @JSImport("openpgp", "crypto.hash.sha384")
     @js.native
     def sha384: js.Any = js.native
-    @scala.inline
-    def sha384_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha384")(x.asInstanceOf[js.Any])
+    inline def sha384_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha384")(x.asInstanceOf[js.Any])
     
     /**
       * @see asmCrypto
@@ -396,8 +363,7 @@ object crypto {
     @JSImport("openpgp", "crypto.hash.sha512")
     @js.native
     def sha512: js.Any = js.native
-    @scala.inline
-    def sha512_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha512")(x.asInstanceOf[js.Any])
+    inline def sha512_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sha512")(x.asInstanceOf[js.Any])
   }
   
   object ocb {
@@ -411,8 +377,7 @@ object crypto {
       * @param cipher The symmetric cipher algorithm to use e.g. 'aes128'
       * @param key The encryption key
       */
-    @scala.inline
-    def OCB(cipher: String, key: Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("OCB")(cipher.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def OCB(cipher: String, key: Uint8Array): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("OCB")(cipher.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Decrypt ciphertext input.
@@ -421,8 +386,7 @@ object crypto {
       * @param adata Associated data to sign
       * @returns The ciphertext output
       */
-    @scala.inline
-    def decrypt(ciphertext: Uint8Array, nonce: Uint8Array, adata: Uint8Array): js.Promise[Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], adata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Uint8Array]]
+    inline def decrypt(ciphertext: Uint8Array, nonce: Uint8Array, adata: Uint8Array): js.Promise[Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(ciphertext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], adata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Uint8Array]]
     
     /**
       * Encrypt plaintext input.
@@ -431,8 +395,7 @@ object crypto {
       * @param adata Associated data to sign
       * @returns The ciphertext output
       */
-    @scala.inline
-    def encrypt(plaintext: Uint8Array, nonce: Uint8Array, adata: Uint8Array): js.Promise[Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(plaintext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], adata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Uint8Array]]
+    inline def encrypt(plaintext: Uint8Array, nonce: Uint8Array, adata: Uint8Array): js.Promise[Uint8Array] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(plaintext.asInstanceOf[js.Any], nonce.asInstanceOf[js.Any], adata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Uint8Array]]
   }
   
   /**
@@ -454,8 +417,7 @@ object crypto {
         * @param EM encoded message, an octet string
         * @returns message, an octet string
         */
-      @scala.inline
-      def decode(EM: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(EM.asInstanceOf[js.Any]).asInstanceOf[String]
+      inline def decode(EM: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(EM.asInstanceOf[js.Any]).asInstanceOf[String]
       
       /**
         * Create a EME-PKCS1-v1_5 padded message
@@ -464,8 +426,7 @@ object crypto {
         * @param k the length in octets of the key modulus
         * @returns EME-PKCS1 padded message
         */
-      @scala.inline
-      def encode(M: String, k: Integer): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(M.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+      inline def encode(M: String, k: Integer): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(M.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
     }
     
     object emsa {
@@ -482,8 +443,7 @@ object crypto {
         * @param emLen intended length in octets of the encoded message
         * @returns encoded message
         */
-      @scala.inline
-      def encode(algo: Integer, hashed: Uint8Array, emLen: Integer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(algo.asInstanceOf[js.Any], hashed.asInstanceOf[js.Any], emLen.asInstanceOf[js.Any])).asInstanceOf[String]
+      inline def encode(algo: Integer, hashed: Uint8Array, emLen: Integer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(algo.asInstanceOf[js.Any], hashed.asInstanceOf[js.Any], emLen.asInstanceOf[js.Any])).asInstanceOf[String]
     }
     
     /**
@@ -509,16 +469,14 @@ object crypto {
       * @param msg Text to remove padding from
       * @returns Text with padding removed
       */
-    @scala.inline
-    def decode(msg: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(msg.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def decode(msg: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(msg.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Add pkcs5 padding to a text.
       * @param msg Text to add padding
       * @returns Text with padding added
       */
-    @scala.inline
-    def encode(msg: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(msg.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def encode(msg: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(msg.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   object publicKey {
@@ -539,8 +497,7 @@ object crypto {
         * @param x
         * @returns
         */
-      @scala.inline
-      def sign(
+      inline def sign(
         hash_algo: Integer,
         hashed: Uint8Array,
         g: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
@@ -561,8 +518,7 @@ object crypto {
         * @param y
         * @returns BN
         */
-      @scala.inline
-      def verify(
+      inline def verify(
         hash_algo: Integer,
         r: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         s: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
@@ -588,8 +544,7 @@ object crypto {
         * @param x
         * @returns BN
         */
-      @scala.inline
-      def decrypt(
+      inline def decrypt(
         c1: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         c2: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         p: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
@@ -604,8 +559,7 @@ object crypto {
         * @param y
         * @returns
         */
-      @scala.inline
-      def encrypt(
+      inline def encrypt(
         m: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         p: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         g: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
@@ -645,8 +599,7 @@ object crypto {
           * @param fingerprint Recipient fingerprint
           * @returns Value derived from session
           */
-        @scala.inline
-        def decrypt(
+        inline def decrypt(
           oid: OID,
           cipher_algo: symmetric,
           hash_algo: hash,
@@ -670,8 +623,7 @@ object crypto {
           * @param fingerprint Recipient fingerprint
           * @returns Returns public part of ephemeral key and encoded session key
           */
-        @scala.inline
-        def encrypt(oid: OID, cipher_algo: symmetric, hash_algo: hash, m: MPI, Q: Uint8Array, fingerprint: String): js.Promise[C] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(oid.asInstanceOf[js.Any], cipher_algo.asInstanceOf[js.Any], hash_algo.asInstanceOf[js.Any], m.asInstanceOf[js.Any], Q.asInstanceOf[js.Any], fingerprint.asInstanceOf[js.Any])).asInstanceOf[js.Promise[C]]
+        inline def encrypt(oid: OID, cipher_algo: symmetric, hash_algo: hash, m: MPI, Q: Uint8Array, fingerprint: String): js.Promise[C] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(oid.asInstanceOf[js.Any], cipher_algo.asInstanceOf[js.Any], hash_algo.asInstanceOf[js.Any], m.asInstanceOf[js.Any], Q.asInstanceOf[js.Any], fingerprint.asInstanceOf[js.Any])).asInstanceOf[js.Promise[C]]
         
         /**
           * Generate ECDHE secret from private key and public part of ephemeral key
@@ -680,8 +632,7 @@ object crypto {
           * @param d Recipient private key
           * @returns Generated ephemeral secret
           */
-        @scala.inline
-        def genPrivateEphemeralKey(curve: Curve, V: Uint8Array, d: Uint8Array): js.Promise[
+        inline def genPrivateEphemeralKey(curve: Curve, V: Uint8Array, d: Uint8Array): js.Promise[
                 /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
               ] = (^.asInstanceOf[js.Dynamic].applyDynamic("genPrivateEphemeralKey")(curve.asInstanceOf[js.Any], V.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
                 /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
@@ -693,8 +644,7 @@ object crypto {
           * @param Q Recipient public key
           * @returns Returns public part of ephemeral key and generated ephemeral secret
           */
-        @scala.inline
-        def genPublicEphemeralKey(curve: Curve, Q: Uint8Array): js.Promise[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("genPublicEphemeralKey")(curve.asInstanceOf[js.Any], Q.asInstanceOf[js.Any])).asInstanceOf[js.Promise[S]]
+        inline def genPublicEphemeralKey(curve: Curve, Q: Uint8Array): js.Promise[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("genPublicEphemeralKey")(curve.asInstanceOf[js.Any], Q.asInstanceOf[js.Any])).asInstanceOf[js.Promise[S]]
       }
       
       object ecdsa {
@@ -712,8 +662,7 @@ object crypto {
           * @param hashed The hashed message
           * @returns Signature of the message
           */
-        @scala.inline
-        def sign(oid: OID, hash_algo: hash, m: Uint8Array, d: Uint8Array, hashed: Uint8Array): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(oid.asInstanceOf[js.Any], hash_algo.asInstanceOf[js.Any], m.asInstanceOf[js.Any], d.asInstanceOf[js.Any], hashed.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+        inline def sign(oid: OID, hash_algo: hash, m: Uint8Array, d: Uint8Array, hashed: Uint8Array): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(oid.asInstanceOf[js.Any], hash_algo.asInstanceOf[js.Any], m.asInstanceOf[js.Any], d.asInstanceOf[js.Any], hashed.asInstanceOf[js.Any])).asInstanceOf[js.Object]
         
         /**
           * Verifies if a signature is valid for a message
@@ -725,8 +674,7 @@ object crypto {
           * @param hashed The hashed message
           * @returns
           */
-        @scala.inline
-        def verify(oid: OID, hash_algo: hash, signature: js.Object, m: Uint8Array, Q: Uint8Array, hashed: Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(oid.asInstanceOf[js.Any], hash_algo.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], m.asInstanceOf[js.Any], Q.asInstanceOf[js.Any], hashed.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+        inline def verify(oid: OID, hash_algo: hash, signature: js.Object, m: Uint8Array, Q: Uint8Array, hashed: Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(oid.asInstanceOf[js.Any], hash_algo.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], m.asInstanceOf[js.Any], Q.asInstanceOf[js.Any], hashed.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       }
       
       object eddsa {
@@ -744,8 +692,7 @@ object crypto {
           * @param hashed The hashed message
           * @returns Signature of the message
           */
-        @scala.inline
-        def sign(oid: OID, hash_algo: hash, m: Uint8Array, d: Uint8Array, hashed: Uint8Array): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(oid.asInstanceOf[js.Any], hash_algo.asInstanceOf[js.Any], m.asInstanceOf[js.Any], d.asInstanceOf[js.Any], hashed.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+        inline def sign(oid: OID, hash_algo: hash, m: Uint8Array, d: Uint8Array, hashed: Uint8Array): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(oid.asInstanceOf[js.Any], hash_algo.asInstanceOf[js.Any], m.asInstanceOf[js.Any], d.asInstanceOf[js.Any], hashed.asInstanceOf[js.Any])).asInstanceOf[js.Object]
         
         /**
           * Verifies if a signature is valid for a message
@@ -757,8 +704,7 @@ object crypto {
           * @param hashed The hashed message
           * @returns
           */
-        @scala.inline
-        def verify(oid: OID, hash_algo: hash, signature: js.Object, m: Uint8Array, Q: Uint8Array, hashed: Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(oid.asInstanceOf[js.Any], hash_algo.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], m.asInstanceOf[js.Any], Q.asInstanceOf[js.Any], hashed.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+        inline def verify(oid: OID, hash_algo: hash, signature: js.Object, m: Uint8Array, Q: Uint8Array, hashed: Uint8Array): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(oid.asInstanceOf[js.Any], hash_algo.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], m.asInstanceOf[js.Any], Q.asInstanceOf[js.Any], hashed.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       }
       
       object key {
@@ -782,8 +728,7 @@ object crypto {
         * @param b Optional Fermat test base
         * @returns
         */
-      @scala.inline
-      def fermat(
+      inline def fermat(
         n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         b: Integer
       ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("fermat")(n.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
@@ -795,8 +740,7 @@ object crypto {
         * @param k Optional number of iterations of Miller-Rabin test
         * @returns
         */
-      @scala.inline
-      def isProbablePrime(
+      inline def isProbablePrime(
         n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         k: Integer
@@ -810,8 +754,7 @@ object crypto {
         * @param rand Optional function to generate potential witnesses
         * @returns
         */
-      @scala.inline
-      def millerRabin(
+      inline def millerRabin(
         n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         k: Integer,
         rand: js.Function
@@ -824,8 +767,7 @@ object crypto {
         * @param k Optional number of iterations of Miller-Rabin test
         * @returns BN
         */
-      @scala.inline
-      def randomProbablePrime(
+      inline def randomProbablePrime(
         bits: Integer,
         e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         k: Integer
@@ -849,8 +791,7 @@ object crypto {
         * @param u RSA private inverse of prime q
         * @returns RSA Plaintext
         */
-      @scala.inline
-      def decrypt(
+      inline def decrypt(
         m: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
@@ -867,8 +808,7 @@ object crypto {
         * @param e RSA public exponent
         * @returns RSA Ciphertext
         */
-      @scala.inline
-      def encrypt(
+      inline def encrypt(
         m: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
@@ -884,8 +824,7 @@ object crypto {
         * @returns RSA public modulus, RSA public exponent, RSA private exponent,
         *          RSA private prime p, RSA private prime q, u = q ** -1 mod p
         */
-      @scala.inline
-      def generate(B: Integer, E: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(B.asInstanceOf[js.Any], E.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+      inline def generate(B: Integer, E: String): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(B.asInstanceOf[js.Any], E.asInstanceOf[js.Any])).asInstanceOf[js.Object]
       
       /**
         * Create signature
@@ -895,8 +834,7 @@ object crypto {
         * @param d RSA private exponent
         * @returns RSA Signature
         */
-      @scala.inline
-      def sign(
+      inline def sign(
         m: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
@@ -910,8 +848,7 @@ object crypto {
         * @param e RSA public exponent
         * @returns
         */
-      @scala.inline
-      def verify(
+      inline def verify(
         s: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         n: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
         e: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
@@ -928,8 +865,7 @@ object crypto {
     /**
       * Buffer for secure random numbers
       */
-    @scala.inline
-    def RandomBuffer(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("RandomBuffer")().asInstanceOf[Unit]
+    inline def RandomBuffer(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("RandomBuffer")().asInstanceOf[Unit]
     
     /**
       * Create a secure random MPI that is greater than or equal to min and less than max.
@@ -937,16 +873,14 @@ object crypto {
       * @param max Upper bound, excluded
       * @returns Random MPI
       */
-    @scala.inline
-    def getRandomBN(min: MPI, max: MPI): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getRandomBN")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def getRandomBN(min: MPI, max: MPI): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getRandomBN")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Retrieve secure random byte array of the specified length
       * @param length Length in bytes to generate
       * @returns Random byte array
       */
-    @scala.inline
-    def getRandomBytes(length: Integer): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomBytes")(length.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+    inline def getRandomBytes(length: Integer): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomBytes")(length.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
   }
   
   object signature {
@@ -967,8 +901,7 @@ object crypto {
       * @param hashed The hashed data
       * @returns Signature
       */
-    @scala.inline
-    def sign(algo: publicKey, hash_algo: hash, key_params: js.Array[MPI], data: Uint8Array, hashed: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(algo.asInstanceOf[js.Any], hash_algo.asInstanceOf[js.Any], key_params.asInstanceOf[js.Any], data.asInstanceOf[js.Any], hashed.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+    inline def sign(algo: publicKey, hash_algo: hash, key_params: js.Array[MPI], data: Uint8Array, hashed: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(algo.asInstanceOf[js.Any], hash_algo.asInstanceOf[js.Any], key_params.asInstanceOf[js.Any], data.asInstanceOf[js.Any], hashed.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
     
     /**
       * Verifies the signature provided for data using specified algorithms and public key parameters.
@@ -983,8 +916,7 @@ object crypto {
       * @param hashed The hashed data
       * @returns True if signature is valid
       */
-    @scala.inline
-    def verify(
+    inline def verify(
       algo: publicKey,
       hash_algo: hash,
       msg_MPIs: js.Array[MPI],

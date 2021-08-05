@@ -46,53 +46,38 @@ object iaccessiblepopuppropsMod {
   }
   object IAccessiblePopupProps {
     
-    @scala.inline
-    def apply(): IAccessiblePopupProps = {
+    inline def apply(): IAccessiblePopupProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IAccessiblePopupProps]
     }
     
-    @scala.inline
-    implicit class IAccessiblePopupPropsMutableBuilder[Self <: IAccessiblePopupProps] (val x: Self) extends AnyVal {
+    extension [Self <: IAccessiblePopupProps](x: Self) {
       
-      @scala.inline
-      def setCloseButtonAriaLabel(value: String): Self = StObject.set(x, "closeButtonAriaLabel", value.asInstanceOf[js.Any])
+      inline def setCloseButtonAriaLabel(value: String): Self = StObject.set(x, "closeButtonAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseButtonAriaLabelUndefined: Self = StObject.set(x, "closeButtonAriaLabel", js.undefined)
+      inline def setCloseButtonAriaLabelUndefined: Self = StObject.set(x, "closeButtonAriaLabel", js.undefined)
       
-      @scala.inline
-      def setElementToFocusOnDismiss(value: HTMLElement): Self = StObject.set(x, "elementToFocusOnDismiss", value.asInstanceOf[js.Any])
+      inline def setElementToFocusOnDismiss(value: HTMLElement): Self = StObject.set(x, "elementToFocusOnDismiss", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElementToFocusOnDismissUndefined: Self = StObject.set(x, "elementToFocusOnDismiss", js.undefined)
+      inline def setElementToFocusOnDismissUndefined: Self = StObject.set(x, "elementToFocusOnDismiss", js.undefined)
       
-      @scala.inline
-      def setFirstFocusableSelector(value: String | js.Function0[String]): Self = StObject.set(x, "firstFocusableSelector", value.asInstanceOf[js.Any])
+      inline def setFirstFocusableSelector(value: String | js.Function0[String]): Self = StObject.set(x, "firstFocusableSelector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstFocusableSelectorFunction0(value: () => String): Self = StObject.set(x, "firstFocusableSelector", js.Any.fromFunction0(value))
+      inline def setFirstFocusableSelectorFunction0(value: () => String): Self = StObject.set(x, "firstFocusableSelector", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFirstFocusableSelectorUndefined: Self = StObject.set(x, "firstFocusableSelector", js.undefined)
+      inline def setFirstFocusableSelectorUndefined: Self = StObject.set(x, "firstFocusableSelector", js.undefined)
       
-      @scala.inline
-      def setForceFocusInsideTrap(value: Boolean): Self = StObject.set(x, "forceFocusInsideTrap", value.asInstanceOf[js.Any])
+      inline def setForceFocusInsideTrap(value: Boolean): Self = StObject.set(x, "forceFocusInsideTrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceFocusInsideTrapUndefined: Self = StObject.set(x, "forceFocusInsideTrap", js.undefined)
+      inline def setForceFocusInsideTrapUndefined: Self = StObject.set(x, "forceFocusInsideTrap", js.undefined)
       
-      @scala.inline
-      def setIgnoreExternalFocusing(value: Boolean): Self = StObject.set(x, "ignoreExternalFocusing", value.asInstanceOf[js.Any])
+      inline def setIgnoreExternalFocusing(value: Boolean): Self = StObject.set(x, "ignoreExternalFocusing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreExternalFocusingUndefined: Self = StObject.set(x, "ignoreExternalFocusing", js.undefined)
+      inline def setIgnoreExternalFocusingUndefined: Self = StObject.set(x, "ignoreExternalFocusing", js.undefined)
       
-      @scala.inline
-      def setIsClickableOutsideFocusTrap(value: Boolean): Self = StObject.set(x, "isClickableOutsideFocusTrap", value.asInstanceOf[js.Any])
+      inline def setIsClickableOutsideFocusTrap(value: Boolean): Self = StObject.set(x, "isClickableOutsideFocusTrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsClickableOutsideFocusTrapUndefined: Self = StObject.set(x, "isClickableOutsideFocusTrap", js.undefined)
+      inline def setIsClickableOutsideFocusTrapUndefined: Self = StObject.set(x, "isClickableOutsideFocusTrap", js.undefined)
     }
   }
 }

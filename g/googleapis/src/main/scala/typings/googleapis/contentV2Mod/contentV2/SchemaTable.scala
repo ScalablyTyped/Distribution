@@ -30,40 +30,29 @@ trait SchemaTable extends StObject {
 }
 object SchemaTable {
   
-  @scala.inline
-  def apply(): SchemaTable = {
+  inline def apply(): SchemaTable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTable]
   }
   
-  @scala.inline
-  implicit class SchemaTableMutableBuilder[Self <: SchemaTable] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTable](x: Self) {
     
-    @scala.inline
-    def setColumnHeaders(value: SchemaHeaders): Self = StObject.set(x, "columnHeaders", value.asInstanceOf[js.Any])
+    inline def setColumnHeaders(value: SchemaHeaders): Self = StObject.set(x, "columnHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnHeadersUndefined: Self = StObject.set(x, "columnHeaders", js.undefined)
+    inline def setColumnHeadersUndefined: Self = StObject.set(x, "columnHeaders", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRowHeaders(value: SchemaHeaders): Self = StObject.set(x, "rowHeaders", value.asInstanceOf[js.Any])
+    inline def setRowHeaders(value: SchemaHeaders): Self = StObject.set(x, "rowHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowHeadersUndefined: Self = StObject.set(x, "rowHeaders", js.undefined)
+    inline def setRowHeadersUndefined: Self = StObject.set(x, "rowHeaders", js.undefined)
     
-    @scala.inline
-    def setRows(value: js.Array[SchemaRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[SchemaRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    @scala.inline
-    def setRowsVarargs(value: SchemaRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: SchemaRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
   }
 }

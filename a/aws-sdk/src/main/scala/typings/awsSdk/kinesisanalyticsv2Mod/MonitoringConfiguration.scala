@@ -23,28 +23,21 @@ trait MonitoringConfiguration extends StObject {
 }
 object MonitoringConfiguration {
   
-  @scala.inline
-  def apply(ConfigurationType: ConfigurationType): MonitoringConfiguration = {
+  inline def apply(ConfigurationType: ConfigurationType): MonitoringConfiguration = {
     val __obj = js.Dynamic.literal(ConfigurationType = ConfigurationType.asInstanceOf[js.Any])
     __obj.asInstanceOf[MonitoringConfiguration]
   }
   
-  @scala.inline
-  implicit class MonitoringConfigurationMutableBuilder[Self <: MonitoringConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: MonitoringConfiguration](x: Self) {
     
-    @scala.inline
-    def setConfigurationType(value: ConfigurationType): Self = StObject.set(x, "ConfigurationType", value.asInstanceOf[js.Any])
+    inline def setConfigurationType(value: ConfigurationType): Self = StObject.set(x, "ConfigurationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogLevel(value: LogLevel): Self = StObject.set(x, "LogLevel", value.asInstanceOf[js.Any])
+    inline def setLogLevel(value: LogLevel): Self = StObject.set(x, "LogLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogLevelUndefined: Self = StObject.set(x, "LogLevel", js.undefined)
+    inline def setLogLevelUndefined: Self = StObject.set(x, "LogLevel", js.undefined)
     
-    @scala.inline
-    def setMetricsLevel(value: MetricsLevel): Self = StObject.set(x, "MetricsLevel", value.asInstanceOf[js.Any])
+    inline def setMetricsLevel(value: MetricsLevel): Self = StObject.set(x, "MetricsLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsLevelUndefined: Self = StObject.set(x, "MetricsLevel", js.undefined)
+    inline def setMetricsLevelUndefined: Self = StObject.set(x, "MetricsLevel", js.undefined)
   }
 }

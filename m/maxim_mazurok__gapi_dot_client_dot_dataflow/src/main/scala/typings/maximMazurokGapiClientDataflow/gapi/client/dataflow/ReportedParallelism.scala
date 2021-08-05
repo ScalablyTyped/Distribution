@@ -17,25 +17,19 @@ trait ReportedParallelism extends StObject {
 }
 object ReportedParallelism {
   
-  @scala.inline
-  def apply(): ReportedParallelism = {
+  inline def apply(): ReportedParallelism = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReportedParallelism]
   }
   
-  @scala.inline
-  implicit class ReportedParallelismMutableBuilder[Self <: ReportedParallelism] (val x: Self) extends AnyVal {
+  extension [Self <: ReportedParallelism](x: Self) {
     
-    @scala.inline
-    def setIsInfinite(value: Boolean): Self = StObject.set(x, "isInfinite", value.asInstanceOf[js.Any])
+    inline def setIsInfinite(value: Boolean): Self = StObject.set(x, "isInfinite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsInfiniteUndefined: Self = StObject.set(x, "isInfinite", js.undefined)
+    inline def setIsInfiniteUndefined: Self = StObject.set(x, "isInfinite", js.undefined)
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

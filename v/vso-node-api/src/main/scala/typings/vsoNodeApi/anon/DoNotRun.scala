@@ -12,19 +12,15 @@ trait DoNotRun extends StObject {
 }
 object DoNotRun {
   
-  @scala.inline
-  def apply(doNotRun: scala.Double, none: scala.Double): DoNotRun = {
+  inline def apply(doNotRun: scala.Double, none: scala.Double): DoNotRun = {
     val __obj = js.Dynamic.literal(doNotRun = doNotRun.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any])
     __obj.asInstanceOf[DoNotRun]
   }
   
-  @scala.inline
-  implicit class DoNotRunMutableBuilder[Self <: DoNotRun] (val x: Self) extends AnyVal {
+  extension [Self <: DoNotRun](x: Self) {
     
-    @scala.inline
-    def setDoNotRun(value: scala.Double): Self = StObject.set(x, "doNotRun", value.asInstanceOf[js.Any])
+    inline def setDoNotRun(value: scala.Double): Self = StObject.set(x, "doNotRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
   }
 }

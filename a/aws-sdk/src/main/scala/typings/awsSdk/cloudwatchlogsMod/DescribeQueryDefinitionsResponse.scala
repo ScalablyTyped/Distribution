@@ -15,28 +15,21 @@ trait DescribeQueryDefinitionsResponse extends StObject {
 }
 object DescribeQueryDefinitionsResponse {
   
-  @scala.inline
-  def apply(): DescribeQueryDefinitionsResponse = {
+  inline def apply(): DescribeQueryDefinitionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeQueryDefinitionsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeQueryDefinitionsResponseMutableBuilder[Self <: DescribeQueryDefinitionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeQueryDefinitionsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setQueryDefinitions(value: QueryDefinitionList): Self = StObject.set(x, "queryDefinitions", value.asInstanceOf[js.Any])
+    inline def setQueryDefinitions(value: QueryDefinitionList): Self = StObject.set(x, "queryDefinitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryDefinitionsUndefined: Self = StObject.set(x, "queryDefinitions", js.undefined)
+    inline def setQueryDefinitionsUndefined: Self = StObject.set(x, "queryDefinitions", js.undefined)
     
-    @scala.inline
-    def setQueryDefinitionsVarargs(value: QueryDefinition*): Self = StObject.set(x, "queryDefinitions", js.Array(value :_*))
+    inline def setQueryDefinitionsVarargs(value: QueryDefinition*): Self = StObject.set(x, "queryDefinitions", js.Array(value :_*))
   }
 }

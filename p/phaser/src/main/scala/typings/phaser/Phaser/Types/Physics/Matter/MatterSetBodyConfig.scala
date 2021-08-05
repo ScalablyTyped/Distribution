@@ -78,100 +78,69 @@ trait MatterSetBodyConfig extends StObject {
 }
 object MatterSetBodyConfig {
   
-  @scala.inline
-  def apply(): MatterSetBodyConfig = {
+  inline def apply(): MatterSetBodyConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MatterSetBodyConfig]
   }
   
-  @scala.inline
-  implicit class MatterSetBodyConfigMutableBuilder[Self <: MatterSetBodyConfig] (val x: Self) extends AnyVal {
+  extension [Self <: MatterSetBodyConfig](x: Self) {
     
-    @scala.inline
-    def setAddToWorld(value: Boolean): Self = StObject.set(x, "addToWorld", value.asInstanceOf[js.Any])
+    inline def setAddToWorld(value: Boolean): Self = StObject.set(x, "addToWorld", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddToWorldUndefined: Self = StObject.set(x, "addToWorld", js.undefined)
+    inline def setAddToWorldUndefined: Self = StObject.set(x, "addToWorld", js.undefined)
     
-    @scala.inline
-    def setFlagInternal(value: Boolean): Self = StObject.set(x, "flagInternal", value.asInstanceOf[js.Any])
+    inline def setFlagInternal(value: Boolean): Self = StObject.set(x, "flagInternal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlagInternalUndefined: Self = StObject.set(x, "flagInternal", js.undefined)
+    inline def setFlagInternalUndefined: Self = StObject.set(x, "flagInternal", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setMaxSides(value: Double): Self = StObject.set(x, "maxSides", value.asInstanceOf[js.Any])
+    inline def setMaxSides(value: Double): Self = StObject.set(x, "maxSides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSidesUndefined: Self = StObject.set(x, "maxSides", js.undefined)
+    inline def setMaxSidesUndefined: Self = StObject.set(x, "maxSides", js.undefined)
     
-    @scala.inline
-    def setMinimumArea(value: Double): Self = StObject.set(x, "minimumArea", value.asInstanceOf[js.Any])
+    inline def setMinimumArea(value: Double): Self = StObject.set(x, "minimumArea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumAreaUndefined: Self = StObject.set(x, "minimumArea", js.undefined)
+    inline def setMinimumAreaUndefined: Self = StObject.set(x, "minimumArea", js.undefined)
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
-    @scala.inline
-    def setRemoveCollinear(value: Double): Self = StObject.set(x, "removeCollinear", value.asInstanceOf[js.Any])
+    inline def setRemoveCollinear(value: Double): Self = StObject.set(x, "removeCollinear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveCollinearUndefined: Self = StObject.set(x, "removeCollinear", js.undefined)
+    inline def setRemoveCollinearUndefined: Self = StObject.set(x, "removeCollinear", js.undefined)
     
-    @scala.inline
-    def setSides(value: Double): Self = StObject.set(x, "sides", value.asInstanceOf[js.Any])
+    inline def setSides(value: Double): Self = StObject.set(x, "sides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSidesUndefined: Self = StObject.set(x, "sides", js.undefined)
+    inline def setSidesUndefined: Self = StObject.set(x, "sides", js.undefined)
     
-    @scala.inline
-    def setSlope(value: Double): Self = StObject.set(x, "slope", value.asInstanceOf[js.Any])
+    inline def setSlope(value: Double): Self = StObject.set(x, "slope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlopeUndefined: Self = StObject.set(x, "slope", js.undefined)
+    inline def setSlopeUndefined: Self = StObject.set(x, "slope", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setVerts(value: String | js.Array[js.Any]): Self = StObject.set(x, "verts", value.asInstanceOf[js.Any])
+    inline def setVerts(value: String | js.Array[js.Any]): Self = StObject.set(x, "verts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVertsUndefined: Self = StObject.set(x, "verts", js.undefined)
+    inline def setVertsUndefined: Self = StObject.set(x, "verts", js.undefined)
     
-    @scala.inline
-    def setVertsVarargs(value: js.Any*): Self = StObject.set(x, "verts", js.Array(value :_*))
+    inline def setVertsVarargs(value: js.Any*): Self = StObject.set(x, "verts", js.Array(value :_*))
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

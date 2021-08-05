@@ -45,8 +45,7 @@ trait DocumentDefinition
 }
 object DocumentDefinition {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AsTemplate: Boolean,
     ContentType: String,
     HierarchicalName: String,
@@ -98,13 +97,10 @@ object DocumentDefinition {
     __obj.asInstanceOf[DocumentDefinition]
   }
   
-  @scala.inline
-  implicit class DocumentDefinitionMutableBuilder[Self <: DocumentDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentDefinition](x: Self) {
     
-    @scala.inline
-    def setAsTemplate(value: Boolean): Self = StObject.set(x, "AsTemplate", value.asInstanceOf[js.Any])
+    inline def setAsTemplate(value: Boolean): Self = StObject.set(x, "AsTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

@@ -14,22 +14,17 @@ trait StringParamtypegenundefin extends StObject {
 }
 object StringParamtypegenundefin {
   
-  @scala.inline
-  def apply(str: String): StringParamtypegenundefin = {
+  inline def apply(str: String): StringParamtypegenundefin = {
     val __obj = js.Dynamic.literal(str = str.asInstanceOf[js.Any])
     __obj.asInstanceOf[StringParamtypegenundefin]
   }
   
-  @scala.inline
-  implicit class StringParamtypegenundefinMutableBuilder[Self <: StringParamtypegenundefin] (val x: Self) extends AnyVal {
+  extension [Self <: StringParamtypegenundefin](x: Self) {
     
-    @scala.inline
-    def setStr(value: String): Self = StObject.set(x, "str", value.asInstanceOf[js.Any])
+    inline def setStr(value: String): Self = StObject.set(x, "str", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: gen): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: gen): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

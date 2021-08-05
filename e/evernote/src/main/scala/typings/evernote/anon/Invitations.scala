@@ -17,37 +17,27 @@ trait Invitations extends StObject {
 }
 object Invitations {
   
-  @scala.inline
-  def apply(): Invitations = {
+  inline def apply(): Invitations = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Invitations]
   }
   
-  @scala.inline
-  implicit class InvitationsMutableBuilder[Self <: Invitations] (val x: Self) extends AnyVal {
+  extension [Self <: Invitations](x: Self) {
     
-    @scala.inline
-    def setInvitationRestrictions(value: ShareRelationshipRestrictions): Self = StObject.set(x, "invitationRestrictions", value.asInstanceOf[js.Any])
+    inline def setInvitationRestrictions(value: ShareRelationshipRestrictions): Self = StObject.set(x, "invitationRestrictions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitationRestrictionsUndefined: Self = StObject.set(x, "invitationRestrictions", js.undefined)
+    inline def setInvitationRestrictionsUndefined: Self = StObject.set(x, "invitationRestrictions", js.undefined)
     
-    @scala.inline
-    def setInvitations(value: js.Array[InvitationShareRelationship]): Self = StObject.set(x, "invitations", value.asInstanceOf[js.Any])
+    inline def setInvitations(value: js.Array[InvitationShareRelationship]): Self = StObject.set(x, "invitations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitationsUndefined: Self = StObject.set(x, "invitations", js.undefined)
+    inline def setInvitationsUndefined: Self = StObject.set(x, "invitations", js.undefined)
     
-    @scala.inline
-    def setInvitationsVarargs(value: InvitationShareRelationship*): Self = StObject.set(x, "invitations", js.Array(value :_*))
+    inline def setInvitationsVarargs(value: InvitationShareRelationship*): Self = StObject.set(x, "invitations", js.Array(value :_*))
     
-    @scala.inline
-    def setMemberships(value: js.Array[MemberShareRelationship]): Self = StObject.set(x, "memberships", value.asInstanceOf[js.Any])
+    inline def setMemberships(value: js.Array[MemberShareRelationship]): Self = StObject.set(x, "memberships", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembershipsUndefined: Self = StObject.set(x, "memberships", js.undefined)
+    inline def setMembershipsUndefined: Self = StObject.set(x, "memberships", js.undefined)
     
-    @scala.inline
-    def setMembershipsVarargs(value: MemberShareRelationship*): Self = StObject.set(x, "memberships", js.Array(value :_*))
+    inline def setMembershipsVarargs(value: MemberShareRelationship*): Self = StObject.set(x, "memberships", js.Array(value :_*))
   }
 }

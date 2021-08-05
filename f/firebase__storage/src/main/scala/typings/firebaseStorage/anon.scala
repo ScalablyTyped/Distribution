@@ -18,17 +18,14 @@ object anon {
   }
   object AccessToken {
     
-    @scala.inline
-    def apply(accessToken: String): AccessToken = {
+    inline def apply(accessToken: String): AccessToken = {
       val __obj = js.Dynamic.literal(accessToken = accessToken.asInstanceOf[js.Any])
       __obj.asInstanceOf[AccessToken]
     }
     
-    @scala.inline
-    implicit class AccessTokenMutableBuilder[Self <: AccessToken] (val x: Self) extends AnyVal {
+    extension [Self <: AccessToken](x: Self) {
       
-      @scala.inline
-      def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+      inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     }
   }
   
@@ -44,26 +41,20 @@ object anon {
   }
   object BASE64 {
     
-    @scala.inline
-    def apply(BASE64: StringFormat, BASE64URL: StringFormat, DATA_URL: StringFormat, RAW: StringFormat): BASE64 = {
+    inline def apply(BASE64: StringFormat, BASE64URL: StringFormat, DATA_URL: StringFormat, RAW: StringFormat): BASE64 = {
       val __obj = js.Dynamic.literal(BASE64 = BASE64.asInstanceOf[js.Any], BASE64URL = BASE64URL.asInstanceOf[js.Any], DATA_URL = DATA_URL.asInstanceOf[js.Any], RAW = RAW.asInstanceOf[js.Any])
       __obj.asInstanceOf[BASE64]
     }
     
-    @scala.inline
-    implicit class BASE64MutableBuilder[Self <: BASE64] (val x: Self) extends AnyVal {
+    extension [Self <: BASE64](x: Self) {
       
-      @scala.inline
-      def setBASE64(value: StringFormat): Self = StObject.set(x, "BASE64", value.asInstanceOf[js.Any])
+      inline def setBASE64(value: StringFormat): Self = StObject.set(x, "BASE64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBASE64URL(value: StringFormat): Self = StObject.set(x, "BASE64URL", value.asInstanceOf[js.Any])
+      inline def setBASE64URL(value: StringFormat): Self = StObject.set(x, "BASE64URL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDATA_URL(value: StringFormat): Self = StObject.set(x, "DATA_URL", value.asInstanceOf[js.Any])
+      inline def setDATA_URL(value: StringFormat): Self = StObject.set(x, "DATA_URL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRAW(value: StringFormat): Self = StObject.set(x, "RAW", value.asInstanceOf[js.Any])
+      inline def setRAW(value: StringFormat): Self = StObject.set(x, "RAW", value.asInstanceOf[js.Any])
     }
   }
   
@@ -81,29 +72,22 @@ object anon {
   }
   object CANCELED {
     
-    @scala.inline
-    def apply(CANCELED: TaskState, ERROR: TaskState, PAUSED: TaskState, RUNNING: TaskState, SUCCESS: TaskState): CANCELED = {
+    inline def apply(CANCELED: TaskState, ERROR: TaskState, PAUSED: TaskState, RUNNING: TaskState, SUCCESS: TaskState): CANCELED = {
       val __obj = js.Dynamic.literal(CANCELED = CANCELED.asInstanceOf[js.Any], ERROR = ERROR.asInstanceOf[js.Any], PAUSED = PAUSED.asInstanceOf[js.Any], RUNNING = RUNNING.asInstanceOf[js.Any], SUCCESS = SUCCESS.asInstanceOf[js.Any])
       __obj.asInstanceOf[CANCELED]
     }
     
-    @scala.inline
-    implicit class CANCELEDMutableBuilder[Self <: CANCELED] (val x: Self) extends AnyVal {
+    extension [Self <: CANCELED](x: Self) {
       
-      @scala.inline
-      def setCANCELED(value: TaskState): Self = StObject.set(x, "CANCELED", value.asInstanceOf[js.Any])
+      inline def setCANCELED(value: TaskState): Self = StObject.set(x, "CANCELED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setERROR(value: TaskState): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
+      inline def setERROR(value: TaskState): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPAUSED(value: TaskState): Self = StObject.set(x, "PAUSED", value.asInstanceOf[js.Any])
+      inline def setPAUSED(value: TaskState): Self = StObject.set(x, "PAUSED", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRUNNING(value: TaskState): Self = StObject.set(x, "RUNNING", value.asInstanceOf[js.Any])
+      inline def setRUNNING(value: TaskState): Self = StObject.set(x, "RUNNING", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSUCCESS(value: TaskState): Self = StObject.set(x, "SUCCESS", value.asInstanceOf[js.Any])
+      inline def setSUCCESS(value: TaskState): Self = StObject.set(x, "SUCCESS", value.asInstanceOf[js.Any])
     }
   }
   
@@ -131,17 +115,14 @@ object anon {
   }
   object Delete {
     
-    @scala.inline
-    def apply(delete: () => js.Promise[Unit]): Delete = {
+    inline def apply(delete: () => js.Promise[Unit]): Delete = {
       val __obj = js.Dynamic.literal(delete = js.Any.fromFunction0(delete))
       __obj.asInstanceOf[Delete]
     }
     
-    @scala.inline
-    implicit class DeleteMutableBuilder[Self <: Delete] (val x: Self) extends AnyVal {
+    extension [Self <: Delete](x: Self) {
       
-      @scala.inline
-      def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
+      inline def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
     }
   }
   
@@ -151,17 +132,14 @@ object anon {
   }
   object STATECHANGED {
     
-    @scala.inline
-    def apply(STATE_CHANGED: TaskEvent): STATECHANGED = {
+    inline def apply(STATE_CHANGED: TaskEvent): STATECHANGED = {
       val __obj = js.Dynamic.literal(STATE_CHANGED = STATE_CHANGED.asInstanceOf[js.Any])
       __obj.asInstanceOf[STATECHANGED]
     }
     
-    @scala.inline
-    implicit class STATECHANGEDMutableBuilder[Self <: STATECHANGED] (val x: Self) extends AnyVal {
+    extension [Self <: STATECHANGED](x: Self) {
       
-      @scala.inline
-      def setSTATE_CHANGED(value: TaskEvent): Self = StObject.set(x, "STATE_CHANGED", value.asInstanceOf[js.Any])
+      inline def setSTATE_CHANGED(value: TaskEvent): Self = StObject.set(x, "STATE_CHANGED", value.asInstanceOf[js.Any])
     }
   }
   
@@ -171,20 +149,16 @@ object anon {
   }
   object ServerResponse {
     
-    @scala.inline
-    def apply(): ServerResponse = {
+    inline def apply(): ServerResponse = {
       val __obj = js.Dynamic.literal(serverResponse = null)
       __obj.asInstanceOf[ServerResponse]
     }
     
-    @scala.inline
-    implicit class ServerResponseMutableBuilder[Self <: ServerResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ServerResponse](x: Self) {
       
-      @scala.inline
-      def setServerResponse(value: String): Self = StObject.set(x, "serverResponse", value.asInstanceOf[js.Any])
+      inline def setServerResponse(value: String): Self = StObject.set(x, "serverResponse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerResponseNull: Self = StObject.set(x, "serverResponse", null)
+      inline def setServerResponseNull: Self = StObject.set(x, "serverResponse", null)
     }
   }
 }

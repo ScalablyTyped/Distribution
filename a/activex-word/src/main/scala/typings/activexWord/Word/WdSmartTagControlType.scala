@@ -41,51 +41,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdSmartTagControlType extends StObject
 object WdSmartTagControlType {
   
-  @scala.inline
-  def wdControlActiveX: `13` = 13.asInstanceOf[`13`]
+  inline def wdControlActiveX: `13` = 13.asInstanceOf[`13`]
   
-  @scala.inline
-  def wdControlButton: `6` = 6.asInstanceOf[`6`]
+  inline def wdControlButton: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def wdControlCheckbox: `9` = 9.asInstanceOf[`9`]
+  inline def wdControlCheckbox: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def wdControlCombo: `12` = 12.asInstanceOf[`12`]
+  inline def wdControlCombo: `12` = 12.asInstanceOf[`12`]
   
-  @scala.inline
-  def wdControlDocumentFragment: `14` = 14.asInstanceOf[`14`]
+  inline def wdControlDocumentFragment: `14` = 14.asInstanceOf[`14`]
   
-  @scala.inline
-  def wdControlDocumentFragmentURL: `15` = 15.asInstanceOf[`15`]
+  inline def wdControlDocumentFragmentURL: `15` = 15.asInstanceOf[`15`]
   
-  @scala.inline
-  def wdControlHelp: `3` = 3.asInstanceOf[`3`]
+  inline def wdControlHelp: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdControlHelpURL: `4` = 4.asInstanceOf[`4`]
+  inline def wdControlHelpURL: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def wdControlImage: `8` = 8.asInstanceOf[`8`]
+  inline def wdControlImage: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def wdControlLabel: `7` = 7.asInstanceOf[`7`]
+  inline def wdControlLabel: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def wdControlLink: `2` = 2.asInstanceOf[`2`]
+  inline def wdControlLink: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdControlListbox: `11` = 11.asInstanceOf[`11`]
+  inline def wdControlListbox: `11` = 11.asInstanceOf[`11`]
   
-  @scala.inline
-  def wdControlRadioGroup: `16` = 16.asInstanceOf[`16`]
+  inline def wdControlRadioGroup: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def wdControlSeparator: `5` = 5.asInstanceOf[`5`]
+  inline def wdControlSeparator: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def wdControlSmartTag: `1` = 1.asInstanceOf[`1`]
+  inline def wdControlSmartTag: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdControlTextbox: `10` = 10.asInstanceOf[`10`]
+  inline def wdControlTextbox: `10` = 10.asInstanceOf[`10`]
 }

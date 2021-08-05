@@ -12,16 +12,13 @@ trait MobileBroadbandAccountEventArgs extends StObject {
 }
 object MobileBroadbandAccountEventArgs {
   
-  @scala.inline
-  def apply(networkAccountId: String): MobileBroadbandAccountEventArgs = {
+  inline def apply(networkAccountId: String): MobileBroadbandAccountEventArgs = {
     val __obj = js.Dynamic.literal(networkAccountId = networkAccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[MobileBroadbandAccountEventArgs]
   }
   
-  @scala.inline
-  implicit class MobileBroadbandAccountEventArgsMutableBuilder[Self <: MobileBroadbandAccountEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: MobileBroadbandAccountEventArgs](x: Self) {
     
-    @scala.inline
-    def setNetworkAccountId(value: String): Self = StObject.set(x, "networkAccountId", value.asInstanceOf[js.Any])
+    inline def setNetworkAccountId(value: String): Self = StObject.set(x, "networkAccountId", value.asInstanceOf[js.Any])
   }
 }

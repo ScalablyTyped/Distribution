@@ -9,8 +9,7 @@ trait WordTokenizer
      with Tokenizer
 object WordTokenizer {
   
-  @scala.inline
-  def apply(tokenize: String => js.Array[String]): WordTokenizer = {
+  inline def apply(tokenize: String => js.Array[String]): WordTokenizer = {
     val __obj = js.Dynamic.literal(tokenize = js.Any.fromFunction1(tokenize))
     __obj.asInstanceOf[WordTokenizer]
   }

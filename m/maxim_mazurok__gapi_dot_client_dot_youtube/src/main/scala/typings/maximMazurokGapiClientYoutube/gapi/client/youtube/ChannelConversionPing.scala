@@ -18,25 +18,19 @@ trait ChannelConversionPing extends StObject {
 }
 object ChannelConversionPing {
   
-  @scala.inline
-  def apply(): ChannelConversionPing = {
+  inline def apply(): ChannelConversionPing = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChannelConversionPing]
   }
   
-  @scala.inline
-  implicit class ChannelConversionPingMutableBuilder[Self <: ChannelConversionPing] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelConversionPing](x: Self) {
     
-    @scala.inline
-    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setConversionUrl(value: String): Self = StObject.set(x, "conversionUrl", value.asInstanceOf[js.Any])
+    inline def setConversionUrl(value: String): Self = StObject.set(x, "conversionUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversionUrlUndefined: Self = StObject.set(x, "conversionUrl", js.undefined)
+    inline def setConversionUrlUndefined: Self = StObject.set(x, "conversionUrl", js.undefined)
   }
 }

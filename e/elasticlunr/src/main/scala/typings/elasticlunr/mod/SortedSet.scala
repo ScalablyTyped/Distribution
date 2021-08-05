@@ -40,6 +40,5 @@ object SortedSet {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def load[T](serialisedData: js.Array[T]): SortedSet[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(serialisedData.asInstanceOf[js.Any]).asInstanceOf[SortedSet[T]]
+  inline def load[T](serialisedData: js.Array[T]): SortedSet[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(serialisedData.asInstanceOf[js.Any]).asInstanceOf[SortedSet[T]]
 }

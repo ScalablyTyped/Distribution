@@ -27,8 +27,7 @@ trait RuleGroupRuleStatementOrStatementStatementAndStatementStatementRegexPatter
 }
 object RuleGroupRuleStatementOrStatementStatementAndStatementStatementRegexPatternSetReferenceStatement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     arn: String,
     textTransformations: js.Array[
       RuleGroupRuleStatementOrStatementStatementAndStatementStatementRegexPatternSetReferenceStatementTextTransformation
@@ -38,29 +37,23 @@ object RuleGroupRuleStatementOrStatementStatementAndStatementStatementRegexPatte
     __obj.asInstanceOf[RuleGroupRuleStatementOrStatementStatementAndStatementStatementRegexPatternSetReferenceStatement]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleStatementOrStatementStatementAndStatementStatementRegexPatternSetReferenceStatementMutableBuilder[Self <: RuleGroupRuleStatementOrStatementStatementAndStatementStatementRegexPatternSetReferenceStatement] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleStatementOrStatementStatementAndStatementStatementRegexPatternSetReferenceStatement](x: Self) {
     
-    @scala.inline
-    def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldToMatch(
+    inline def setFieldToMatch(
       value: RuleGroupRuleStatementOrStatementStatementAndStatementStatementRegexPatternSetReferenceStatementFieldToMatch
     ): Self = StObject.set(x, "fieldToMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldToMatchUndefined: Self = StObject.set(x, "fieldToMatch", js.undefined)
+    inline def setFieldToMatchUndefined: Self = StObject.set(x, "fieldToMatch", js.undefined)
     
-    @scala.inline
-    def setTextTransformations(
+    inline def setTextTransformations(
       value: js.Array[
           RuleGroupRuleStatementOrStatementStatementAndStatementStatementRegexPatternSetReferenceStatementTextTransformation
         ]
     ): Self = StObject.set(x, "textTransformations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextTransformationsVarargs(
+    inline def setTextTransformationsVarargs(
       value: RuleGroupRuleStatementOrStatementStatementAndStatementStatementRegexPatternSetReferenceStatementTextTransformation*
     ): Self = StObject.set(x, "textTransformations", js.Array(value :_*))
   }

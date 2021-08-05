@@ -9,8 +9,7 @@ trait AsyncValidator
      with Validator
 object AsyncValidator {
   
-  @scala.inline
-  def apply(validate: AbstractControl => ValidationErrors | Null): AsyncValidator = {
+  inline def apply(validate: AbstractControl => ValidationErrors | Null): AsyncValidator = {
     val __obj = js.Dynamic.literal(validate = js.Any.fromFunction1(validate))
     __obj.asInstanceOf[AsyncValidator]
   }

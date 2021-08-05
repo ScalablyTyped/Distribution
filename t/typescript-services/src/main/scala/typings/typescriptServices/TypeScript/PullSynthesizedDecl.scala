@@ -9,8 +9,7 @@ trait PullSynthesizedDecl
      with NormalPullDecl
 object PullSynthesizedDecl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _getEnclosingDeclFromParentDecl: () => PullDecl,
     _rootDecl: RootPullDecl,
     addChildDecl: PullDecl => Unit,

@@ -14,28 +14,21 @@ trait RecordingInfo extends StObject {
 }
 object RecordingInfo {
   
-  @scala.inline
-  def apply(): RecordingInfo = {
+  inline def apply(): RecordingInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecordingInfo]
   }
   
-  @scala.inline
-  implicit class RecordingInfoMutableBuilder[Self <: RecordingInfo] (val x: Self) extends AnyVal {
+  extension [Self <: RecordingInfo](x: Self) {
     
-    @scala.inline
-    def setInitiator(value: NullableOption[IdentitySet]): Self = StObject.set(x, "initiator", value.asInstanceOf[js.Any])
+    inline def setInitiator(value: NullableOption[IdentitySet]): Self = StObject.set(x, "initiator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitiatorNull: Self = StObject.set(x, "initiator", null)
+    inline def setInitiatorNull: Self = StObject.set(x, "initiator", null)
     
-    @scala.inline
-    def setInitiatorUndefined: Self = StObject.set(x, "initiator", js.undefined)
+    inline def setInitiatorUndefined: Self = StObject.set(x, "initiator", js.undefined)
     
-    @scala.inline
-    def setRecordingStatus(value: RecordingStatus): Self = StObject.set(x, "recordingStatus", value.asInstanceOf[js.Any])
+    inline def setRecordingStatus(value: RecordingStatus): Self = StObject.set(x, "recordingStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordingStatusUndefined: Self = StObject.set(x, "recordingStatus", js.undefined)
+    inline def setRecordingStatusUndefined: Self = StObject.set(x, "recordingStatus", js.undefined)
   }
 }

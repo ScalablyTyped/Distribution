@@ -15,19 +15,15 @@ trait TypeofDraggable extends StObject {
 }
 object TypeofDraggable {
   
-  @scala.inline
-  def apply(Locale: js.Any, fn: Draggable): TypeofDraggable = {
+  inline def apply(Locale: js.Any, fn: Draggable): TypeofDraggable = {
     val __obj = js.Dynamic.literal(Locale = Locale.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeofDraggable]
   }
   
-  @scala.inline
-  implicit class TypeofDraggableMutableBuilder[Self <: TypeofDraggable] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofDraggable](x: Self) {
     
-    @scala.inline
-    def setFn(value: Draggable): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
+    inline def setFn(value: Draggable): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: js.Any): Self = StObject.set(x, "Locale", value.asInstanceOf[js.Any])
   }
 }

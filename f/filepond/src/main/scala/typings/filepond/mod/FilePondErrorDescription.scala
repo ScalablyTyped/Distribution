@@ -14,23 +14,18 @@ trait FilePondErrorDescription extends StObject {
 }
 object FilePondErrorDescription {
   
-  @scala.inline
-  def apply(body: String, code: Double, `type`: String): FilePondErrorDescription = {
+  inline def apply(body: String, code: Double, `type`: String): FilePondErrorDescription = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilePondErrorDescription]
   }
   
-  @scala.inline
-  implicit class FilePondErrorDescriptionMutableBuilder[Self <: FilePondErrorDescription] (val x: Self) extends AnyVal {
+  extension [Self <: FilePondErrorDescription](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

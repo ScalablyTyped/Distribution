@@ -21,19 +21,14 @@ object ContentInfoAttribute {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def INSERT_WITH_INPUTSTREAM: `1` = 1.asInstanceOf[`1`]
+    inline def INSERT_WITH_INPUTSTREAM: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def KIND_DOCUMENT: `2` = 2.asInstanceOf[`2`]
+    inline def KIND_DOCUMENT: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def KIND_FOLDER: `4` = 4.asInstanceOf[`4`]
+    inline def KIND_FOLDER: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def KIND_LINK: `8` = 8.asInstanceOf[`8`]
+    inline def KIND_LINK: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def NONE: `0` = 0.asInstanceOf[`0`]
+    inline def NONE: `0` = 0.asInstanceOf[`0`]
   }
 }

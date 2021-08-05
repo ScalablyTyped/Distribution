@@ -18,19 +18,15 @@ trait GPSCoordinates extends StObject {
 }
 object GPSCoordinates {
   
-  @scala.inline
-  def apply(Latitude: double, Longitude: double): GPSCoordinates = {
+  inline def apply(Latitude: double, Longitude: double): GPSCoordinates = {
     val __obj = js.Dynamic.literal(Latitude = Latitude.asInstanceOf[js.Any], Longitude = Longitude.asInstanceOf[js.Any])
     __obj.asInstanceOf[GPSCoordinates]
   }
   
-  @scala.inline
-  implicit class GPSCoordinatesMutableBuilder[Self <: GPSCoordinates] (val x: Self) extends AnyVal {
+  extension [Self <: GPSCoordinates](x: Self) {
     
-    @scala.inline
-    def setLatitude(value: double): Self = StObject.set(x, "Latitude", value.asInstanceOf[js.Any])
+    inline def setLatitude(value: double): Self = StObject.set(x, "Latitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongitude(value: double): Self = StObject.set(x, "Longitude", value.asInstanceOf[js.Any])
+    inline def setLongitude(value: double): Self = StObject.set(x, "Longitude", value.asInstanceOf[js.Any])
   }
 }

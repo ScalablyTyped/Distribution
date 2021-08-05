@@ -15,25 +15,19 @@ trait RefinerStructure extends StObject {
 }
 object RefinerStructure {
   
-  @scala.inline
-  def apply(k: String, l: Double, r: js.Array[RefinementCategory]): RefinerStructure = {
+  inline def apply(k: String, l: Double, r: js.Array[RefinementCategory]): RefinerStructure = {
     val __obj = js.Dynamic.literal(k = k.asInstanceOf[js.Any], l = l.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
     __obj.asInstanceOf[RefinerStructure]
   }
   
-  @scala.inline
-  implicit class RefinerStructureMutableBuilder[Self <: RefinerStructure] (val x: Self) extends AnyVal {
+  extension [Self <: RefinerStructure](x: Self) {
     
-    @scala.inline
-    def setK(value: String): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
+    inline def setK(value: String): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setL(value: Double): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
+    inline def setL(value: Double): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR(value: js.Array[RefinementCategory]): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+    inline def setR(value: js.Array[RefinementCategory]): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRVarargs(value: RefinementCategory*): Self = StObject.set(x, "r", js.Array(value :_*))
+    inline def setRVarargs(value: RefinementCategory*): Self = StObject.set(x, "r", js.Array(value :_*))
   }
 }

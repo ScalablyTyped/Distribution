@@ -10,16 +10,13 @@ trait PanelState extends StObject {
 }
 object PanelState {
   
-  @scala.inline
-  def apply(expanded: Boolean): PanelState = {
+  inline def apply(expanded: Boolean): PanelState = {
     val __obj = js.Dynamic.literal(expanded = expanded.asInstanceOf[js.Any])
     __obj.asInstanceOf[PanelState]
   }
   
-  @scala.inline
-  implicit class PanelStateMutableBuilder[Self <: PanelState] (val x: Self) extends AnyVal {
+  extension [Self <: PanelState](x: Self) {
     
-    @scala.inline
-    def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+    inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
   }
 }

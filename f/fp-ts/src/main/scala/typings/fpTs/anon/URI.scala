@@ -10,16 +10,13 @@ trait URI[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef
 }
 object URI {
   
-  @scala.inline
-  def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](URI: F): URI[F] = {
+  inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](URI: F): URI[F] = {
     val __obj = js.Dynamic.literal(URI = URI.asInstanceOf[js.Any])
     __obj.asInstanceOf[URI[F]]
   }
   
-  @scala.inline
-  implicit class URIMutableBuilder[Self <: URI[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */] (val x: Self & URI[F]) extends AnyVal {
+  extension [Self <: URI[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](x: Self & URI[F]) {
     
-    @scala.inline
-    def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
+    inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
   }
 }

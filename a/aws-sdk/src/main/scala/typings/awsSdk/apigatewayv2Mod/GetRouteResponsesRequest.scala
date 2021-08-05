@@ -28,31 +28,23 @@ trait GetRouteResponsesRequest extends StObject {
 }
 object GetRouteResponsesRequest {
   
-  @scala.inline
-  def apply(ApiId: string, RouteId: string): GetRouteResponsesRequest = {
+  inline def apply(ApiId: string, RouteId: string): GetRouteResponsesRequest = {
     val __obj = js.Dynamic.literal(ApiId = ApiId.asInstanceOf[js.Any], RouteId = RouteId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetRouteResponsesRequest]
   }
   
-  @scala.inline
-  implicit class GetRouteResponsesRequestMutableBuilder[Self <: GetRouteResponsesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetRouteResponsesRequest](x: Self) {
     
-    @scala.inline
-    def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
+    inline def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: string): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: string): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRouteId(value: string): Self = StObject.set(x, "RouteId", value.asInstanceOf[js.Any])
+    inline def setRouteId(value: string): Self = StObject.set(x, "RouteId", value.asInstanceOf[js.Any])
   }
 }

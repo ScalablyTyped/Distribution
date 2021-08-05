@@ -10,6 +10,5 @@ object parsePathMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(p: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(p.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def default(p: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(p.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
 }

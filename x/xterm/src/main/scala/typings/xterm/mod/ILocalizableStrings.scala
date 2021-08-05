@@ -19,19 +19,15 @@ trait ILocalizableStrings extends StObject {
 }
 object ILocalizableStrings {
   
-  @scala.inline
-  def apply(promptLabel: String, tooMuchOutput: String): ILocalizableStrings = {
+  inline def apply(promptLabel: String, tooMuchOutput: String): ILocalizableStrings = {
     val __obj = js.Dynamic.literal(promptLabel = promptLabel.asInstanceOf[js.Any], tooMuchOutput = tooMuchOutput.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILocalizableStrings]
   }
   
-  @scala.inline
-  implicit class ILocalizableStringsMutableBuilder[Self <: ILocalizableStrings] (val x: Self) extends AnyVal {
+  extension [Self <: ILocalizableStrings](x: Self) {
     
-    @scala.inline
-    def setPromptLabel(value: String): Self = StObject.set(x, "promptLabel", value.asInstanceOf[js.Any])
+    inline def setPromptLabel(value: String): Self = StObject.set(x, "promptLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooMuchOutput(value: String): Self = StObject.set(x, "tooMuchOutput", value.asInstanceOf[js.Any])
+    inline def setTooMuchOutput(value: String): Self = StObject.set(x, "tooMuchOutput", value.asInstanceOf[js.Any])
   }
 }

@@ -61,8 +61,7 @@ trait IgDoughnutChartMethods extends StObject {
 }
 object IgDoughnutChartMethods {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addSeries: js.Object => Unit,
     destroy: () => Unit,
     exportVisualData: () => js.Object,
@@ -77,34 +76,24 @@ object IgDoughnutChartMethods {
     __obj.asInstanceOf[IgDoughnutChartMethods]
   }
   
-  @scala.inline
-  implicit class IgDoughnutChartMethodsMutableBuilder[Self <: IgDoughnutChartMethods] (val x: Self) extends AnyVal {
+  extension [Self <: IgDoughnutChartMethods](x: Self) {
     
-    @scala.inline
-    def setAddSeries(value: js.Object => Unit): Self = StObject.set(x, "addSeries", js.Any.fromFunction1(value))
+    inline def setAddSeries(value: js.Object => Unit): Self = StObject.set(x, "addSeries", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExportVisualData(value: () => js.Object): Self = StObject.set(x, "exportVisualData", js.Any.fromFunction0(value))
+    inline def setExportVisualData(value: () => js.Object): Self = StObject.set(x, "exportVisualData", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+    inline def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCenterCoordinates(value: () => js.Object): Self = StObject.set(x, "getCenterCoordinates", js.Any.fromFunction0(value))
+    inline def setGetCenterCoordinates(value: () => js.Object): Self = StObject.set(x, "getCenterCoordinates", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetData(value: String => js.Object): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
+    inline def setGetData(value: String => js.Object): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetHoleRadius(value: () => Double): Self = StObject.set(x, "getHoleRadius", js.Any.fromFunction0(value))
+    inline def setGetHoleRadius(value: () => Double): Self = StObject.set(x, "getHoleRadius", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveSeries(value: js.Object => Unit): Self = StObject.set(x, "removeSeries", js.Any.fromFunction1(value))
+    inline def setRemoveSeries(value: js.Object => Unit): Self = StObject.set(x, "removeSeries", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUpdateSeries(value: js.Object => Unit): Self = StObject.set(x, "updateSeries", js.Any.fromFunction1(value))
+    inline def setUpdateSeries(value: js.Object => Unit): Self = StObject.set(x, "updateSeries", js.Any.fromFunction1(value))
   }
 }

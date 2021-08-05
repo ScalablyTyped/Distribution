@@ -14,25 +14,19 @@ trait GenderAssignedTargetingOptionDetails extends StObject {
 }
 object GenderAssignedTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): GenderAssignedTargetingOptionDetails = {
+  inline def apply(): GenderAssignedTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GenderAssignedTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class GenderAssignedTargetingOptionDetailsMutableBuilder[Self <: GenderAssignedTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: GenderAssignedTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
+    inline def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenderUndefined: Self = StObject.set(x, "gender", js.undefined)
+    inline def setGenderUndefined: Self = StObject.set(x, "gender", js.undefined)
     
-    @scala.inline
-    def setTargetingOptionId(value: String): Self = StObject.set(x, "targetingOptionId", value.asInstanceOf[js.Any])
+    inline def setTargetingOptionId(value: String): Self = StObject.set(x, "targetingOptionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetingOptionIdUndefined: Self = StObject.set(x, "targetingOptionId", js.undefined)
+    inline def setTargetingOptionIdUndefined: Self = StObject.set(x, "targetingOptionId", js.undefined)
   }
 }

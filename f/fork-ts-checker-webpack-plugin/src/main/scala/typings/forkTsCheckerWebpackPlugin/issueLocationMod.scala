@@ -11,17 +11,12 @@ object issueLocationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def compareIssueLocations(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("compareIssueLocations")().asInstanceOf[Double]
-  @scala.inline
-  def compareIssueLocations(locationA: Unit, locationB: IssueLocation): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareIssueLocations")(locationA.asInstanceOf[js.Any], locationB.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def compareIssueLocations(locationA: IssueLocation): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("compareIssueLocations")(locationA.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def compareIssueLocations(locationA: IssueLocation, locationB: IssueLocation): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareIssueLocations")(locationA.asInstanceOf[js.Any], locationB.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def compareIssueLocations(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("compareIssueLocations")().asInstanceOf[Double]
+  inline def compareIssueLocations(locationA: Unit, locationB: IssueLocation): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareIssueLocations")(locationA.asInstanceOf[js.Any], locationB.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def compareIssueLocations(locationA: IssueLocation): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("compareIssueLocations")(locationA.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def compareIssueLocations(locationA: IssueLocation, locationB: IssueLocation): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareIssueLocations")(locationA.asInstanceOf[js.Any], locationB.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def formatIssueLocation(location: IssueLocation): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatIssueLocation")(location.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def formatIssueLocation(location: IssueLocation): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatIssueLocation")(location.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait IssueLocation extends StObject {
     
@@ -31,20 +26,16 @@ object issueLocationMod {
   }
   object IssueLocation {
     
-    @scala.inline
-    def apply(end: IssuePosition, start: IssuePosition): IssueLocation = {
+    inline def apply(end: IssuePosition, start: IssuePosition): IssueLocation = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[IssueLocation]
     }
     
-    @scala.inline
-    implicit class IssueLocationMutableBuilder[Self <: IssueLocation] (val x: Self) extends AnyVal {
+    extension [Self <: IssueLocation](x: Self) {
       
-      @scala.inline
-      def setEnd(value: IssuePosition): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: IssuePosition): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: IssuePosition): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: IssuePosition): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
 }

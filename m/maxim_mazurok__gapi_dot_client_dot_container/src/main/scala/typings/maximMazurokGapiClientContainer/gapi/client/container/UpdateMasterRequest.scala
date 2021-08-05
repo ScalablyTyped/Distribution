@@ -33,43 +33,31 @@ trait UpdateMasterRequest extends StObject {
 }
 object UpdateMasterRequest {
   
-  @scala.inline
-  def apply(): UpdateMasterRequest = {
+  inline def apply(): UpdateMasterRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateMasterRequest]
   }
   
-  @scala.inline
-  implicit class UpdateMasterRequestMutableBuilder[Self <: UpdateMasterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateMasterRequest](x: Self) {
     
-    @scala.inline
-    def setClusterId(value: String): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
+    inline def setClusterId(value: String): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterIdUndefined: Self = StObject.set(x, "clusterId", js.undefined)
+    inline def setClusterIdUndefined: Self = StObject.set(x, "clusterId", js.undefined)
     
-    @scala.inline
-    def setMasterVersion(value: String): Self = StObject.set(x, "masterVersion", value.asInstanceOf[js.Any])
+    inline def setMasterVersion(value: String): Self = StObject.set(x, "masterVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterVersionUndefined: Self = StObject.set(x, "masterVersion", js.undefined)
+    inline def setMasterVersionUndefined: Self = StObject.set(x, "masterVersion", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
-    @scala.inline
-    def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    inline def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
+    inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

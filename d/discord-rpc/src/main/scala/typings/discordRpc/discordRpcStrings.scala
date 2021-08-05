@@ -8,36 +8,29 @@ object discordRpcStrings {
   
   @js.native
   sealed trait audioinput extends StObject
-  @scala.inline
-  def audioinput: audioinput = "audioinput".asInstanceOf[audioinput]
+  inline def audioinput: audioinput = "audioinput".asInstanceOf[audioinput]
   
   @js.native
   sealed trait audiooutput extends StObject
-  @scala.inline
-  def audiooutput: audiooutput = "audiooutput".asInstanceOf[audiooutput]
+  inline def audiooutput: audiooutput = "audiooutput".asInstanceOf[audiooutput]
   
   @js.native
   sealed trait connected extends StObject
-  @scala.inline
-  def connected: connected = "connected".asInstanceOf[connected]
+  inline def connected: connected = "connected".asInstanceOf[connected]
   
   @js.native
   sealed trait ipc extends StObject
-  @scala.inline
-  def ipc: ipc = "ipc".asInstanceOf[ipc]
+  inline def ipc: ipc = "ipc".asInstanceOf[ipc]
   
   @js.native
   sealed trait ready extends StObject
-  @scala.inline
-  def ready: ready = "ready".asInstanceOf[ready]
+  inline def ready: ready = "ready".asInstanceOf[ready]
   
   @js.native
   sealed trait videoinput extends StObject
-  @scala.inline
-  def videoinput: videoinput = "videoinput".asInstanceOf[videoinput]
+  inline def videoinput: videoinput = "videoinput".asInstanceOf[videoinput]
   
   @js.native
   sealed trait websocket extends StObject
-  @scala.inline
-  def websocket: websocket = "websocket".asInstanceOf[websocket]
+  inline def websocket: websocket = "websocket".asInstanceOf[websocket]
 }

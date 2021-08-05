@@ -13,17 +13,14 @@ object typesObjectAlreadyInActiveTierErrorMod {
   }
   object ObjectAlreadyInActiveTierError {
     
-    @scala.inline
-    def apply(): ObjectAlreadyInActiveTierError = {
+    inline def apply(): ObjectAlreadyInActiveTierError = {
       val __obj = js.Dynamic.literal(name = "ObjectAlreadyInActiveTierError")
       __obj.asInstanceOf[ObjectAlreadyInActiveTierError]
     }
     
-    @scala.inline
-    implicit class ObjectAlreadyInActiveTierErrorMutableBuilder[Self <: ObjectAlreadyInActiveTierError] (val x: Self) extends AnyVal {
+    extension [Self <: ObjectAlreadyInActiveTierError](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.ObjectAlreadyInActiveTierError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.ObjectAlreadyInActiveTierError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

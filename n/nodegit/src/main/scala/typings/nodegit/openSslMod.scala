@@ -16,7 +16,6 @@ object openSslMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def setLocking(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("setLocking")().asInstanceOf[Double]
+    inline def setLocking(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("setLocking")().asInstanceOf[Double]
   }
 }

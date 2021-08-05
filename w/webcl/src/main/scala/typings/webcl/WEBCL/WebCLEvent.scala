@@ -17,8 +17,7 @@ trait WebCLEvent extends StObject {
 }
 object WebCLEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getInfo: EventInfo => js.Any,
     getProfilingInfo: ProfilingInfo => Double,
     release: () => Unit,
@@ -28,19 +27,14 @@ object WebCLEvent {
     __obj.asInstanceOf[WebCLEvent]
   }
   
-  @scala.inline
-  implicit class WebCLEventMutableBuilder[Self <: WebCLEvent] (val x: Self) extends AnyVal {
+  extension [Self <: WebCLEvent](x: Self) {
     
-    @scala.inline
-    def setGetInfo(value: EventInfo => js.Any): Self = StObject.set(x, "getInfo", js.Any.fromFunction1(value))
+    inline def setGetInfo(value: EventInfo => js.Any): Self = StObject.set(x, "getInfo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetProfilingInfo(value: ProfilingInfo => Double): Self = StObject.set(x, "getProfilingInfo", js.Any.fromFunction1(value))
+    inline def setGetProfilingInfo(value: ProfilingInfo => Double): Self = StObject.set(x, "getProfilingInfo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
+    inline def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetCallback(value: (CommandExecutionStatus, WebCLCallback) => Unit): Self = StObject.set(x, "setCallback", js.Any.fromFunction2(value))
+    inline def setSetCallback(value: (CommandExecutionStatus, WebCLCallback) => Unit): Self = StObject.set(x, "setCallback", js.Any.fromFunction2(value))
   }
 }

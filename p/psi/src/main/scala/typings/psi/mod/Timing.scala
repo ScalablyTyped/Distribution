@@ -10,16 +10,13 @@ trait Timing extends StObject {
 }
 object Timing {
   
-  @scala.inline
-  def apply(total: Double): Timing = {
+  inline def apply(total: Double): Timing = {
     val __obj = js.Dynamic.literal(total = total.asInstanceOf[js.Any])
     __obj.asInstanceOf[Timing]
   }
   
-  @scala.inline
-  implicit class TimingMutableBuilder[Self <: Timing] (val x: Self) extends AnyVal {
+  extension [Self <: Timing](x: Self) {
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
   }
 }

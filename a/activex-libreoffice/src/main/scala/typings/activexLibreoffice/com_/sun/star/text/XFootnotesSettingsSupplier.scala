@@ -20,8 +20,7 @@ trait XFootnotesSettingsSupplier
 }
 object XFootnotesSettingsSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FootnotesSettings: XPropertySet,
     acquire: () => Unit,
     getFootnotesSettings: () => XPropertySet,
@@ -32,13 +31,10 @@ object XFootnotesSettingsSupplier {
     __obj.asInstanceOf[XFootnotesSettingsSupplier]
   }
   
-  @scala.inline
-  implicit class XFootnotesSettingsSupplierMutableBuilder[Self <: XFootnotesSettingsSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XFootnotesSettingsSupplier](x: Self) {
     
-    @scala.inline
-    def setFootnotesSettings(value: XPropertySet): Self = StObject.set(x, "FootnotesSettings", value.asInstanceOf[js.Any])
+    inline def setFootnotesSettings(value: XPropertySet): Self = StObject.set(x, "FootnotesSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetFootnotesSettings(value: () => XPropertySet): Self = StObject.set(x, "getFootnotesSettings", js.Any.fromFunction0(value))
+    inline def setGetFootnotesSettings(value: () => XPropertySet): Self = StObject.set(x, "getFootnotesSettings", js.Any.fromFunction0(value))
   }
 }

@@ -36,8 +36,7 @@ object vaultMod {
     @JSImport("googleapis/build/src/apis/vault", "VERSIONS.v1")
     @js.native
     def v1: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Vault] = js.native
-    @scala.inline
-    def v1_=(x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Vault]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
+    inline def v1_=(x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Vault]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
   }
   
   object auth extends Shortcut {
@@ -73,8 +72,7 @@ object vaultMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -118,9 +116,7 @@ object vaultMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def vault(options: Options): Vault = ^.asInstanceOf[js.Dynamic].applyDynamic("vault")(options.asInstanceOf[js.Any]).asInstanceOf[Vault]
+  inline def vault(options: Options): Vault = ^.asInstanceOf[js.Dynamic].applyDynamic("vault")(options.asInstanceOf[js.Any]).asInstanceOf[Vault]
   
-  @scala.inline
-  def vault_v1(version: v1): Vault = ^.asInstanceOf[js.Dynamic].applyDynamic("vault")(version.asInstanceOf[js.Any]).asInstanceOf[Vault]
+  inline def vault_v1(version: v1): Vault = ^.asInstanceOf[js.Dynamic].applyDynamic("vault")(version.asInstanceOf[js.Any]).asInstanceOf[Vault]
 }

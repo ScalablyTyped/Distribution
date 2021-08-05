@@ -23,31 +23,23 @@ trait SchemaInstanceGroupManagersDeletePerInstanceConfigsReq extends StObject {
 }
 object SchemaInstanceGroupManagersDeletePerInstanceConfigsReq {
   
-  @scala.inline
-  def apply(): SchemaInstanceGroupManagersDeletePerInstanceConfigsReq = {
+  inline def apply(): SchemaInstanceGroupManagersDeletePerInstanceConfigsReq = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInstanceGroupManagersDeletePerInstanceConfigsReq]
   }
   
-  @scala.inline
-  implicit class SchemaInstanceGroupManagersDeletePerInstanceConfigsReqMutableBuilder[Self <: SchemaInstanceGroupManagersDeletePerInstanceConfigsReq] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInstanceGroupManagersDeletePerInstanceConfigsReq](x: Self) {
     
-    @scala.inline
-    def setInstances(value: js.Array[String]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+    inline def setInstances(value: js.Array[String]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
+    inline def setInstancesUndefined: Self = StObject.set(x, "instances", js.undefined)
     
-    @scala.inline
-    def setInstancesVarargs(value: String*): Self = StObject.set(x, "instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: String*): Self = StObject.set(x, "instances", js.Array(value :_*))
     
-    @scala.inline
-    def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+    inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
+    inline def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
     
-    @scala.inline
-    def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
   }
 }

@@ -32,8 +32,7 @@ trait XParagraphAppend
 }
 object XParagraphAppend {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     finishParagraph: PropertyValues => XTextRange,
     finishParagraphInsert: (PropertyValues, XTextRange) => XTextRange,
@@ -44,13 +43,10 @@ object XParagraphAppend {
     __obj.asInstanceOf[XParagraphAppend]
   }
   
-  @scala.inline
-  implicit class XParagraphAppendMutableBuilder[Self <: XParagraphAppend] (val x: Self) extends AnyVal {
+  extension [Self <: XParagraphAppend](x: Self) {
     
-    @scala.inline
-    def setFinishParagraph(value: PropertyValues => XTextRange): Self = StObject.set(x, "finishParagraph", js.Any.fromFunction1(value))
+    inline def setFinishParagraph(value: PropertyValues => XTextRange): Self = StObject.set(x, "finishParagraph", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFinishParagraphInsert(value: (PropertyValues, XTextRange) => XTextRange): Self = StObject.set(x, "finishParagraphInsert", js.Any.fromFunction2(value))
+    inline def setFinishParagraphInsert(value: (PropertyValues, XTextRange) => XTextRange): Self = StObject.set(x, "finishParagraphInsert", js.Any.fromFunction2(value))
   }
 }

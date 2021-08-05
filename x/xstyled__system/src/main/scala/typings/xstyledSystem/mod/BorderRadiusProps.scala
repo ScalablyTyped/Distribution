@@ -14,27 +14,22 @@ trait BorderRadiusProps[TLength] extends StObject {
 }
 object BorderRadiusProps {
   
-  @scala.inline
-  def apply[TLength](): BorderRadiusProps[TLength] = {
+  inline def apply[TLength](): BorderRadiusProps[TLength] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BorderRadiusProps[TLength]]
   }
   
-  @scala.inline
-  implicit class BorderRadiusPropsMutableBuilder[Self <: BorderRadiusProps[?], TLength] (val x: Self & BorderRadiusProps[TLength]) extends AnyVal {
+  extension [Self <: BorderRadiusProps[?], TLength](x: Self & BorderRadiusProps[TLength]) {
     
-    @scala.inline
-    def setBorderRadius(
+    inline def setBorderRadius(
       value: ResponsiveValue[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRadius<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
+    inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
     
-    @scala.inline
-    def setBorderRadiusVarargs(
+    inline def setBorderRadiusVarargs(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRadius<TLength> */ js.Any)*
     ): Self = StObject.set(x, "borderRadius", js.Array(value :_*))
   }

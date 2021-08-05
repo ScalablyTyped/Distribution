@@ -226,26 +226,20 @@ object SearchResults {
   }
   object Facet {
     
-    @scala.inline
-    def apply(data: js.Object, name: String): Facet = {
+    inline def apply(data: js.Object, name: String): Facet = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Facet]
     }
     
-    @scala.inline
-    implicit class FacetMutableBuilder[Self <: Facet] (val x: Self) extends AnyVal {
+    extension [Self <: Facet](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStats(value: Avg): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+      inline def setStats(value: Avg): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
+      inline def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
     }
   }
   
@@ -261,26 +255,20 @@ object SearchResults {
   }
   object FacetValue {
     
-    @scala.inline
-    def apply(count: Double, isExcluded: Boolean, isRefined: Boolean, name: String): FacetValue = {
+    inline def apply(count: Double, isExcluded: Boolean, isRefined: Boolean, name: String): FacetValue = {
       val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], isExcluded = isExcluded.asInstanceOf[js.Any], isRefined = isRefined.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[FacetValue]
     }
     
-    @scala.inline
-    implicit class FacetValueMutableBuilder[Self <: FacetValue] (val x: Self) extends AnyVal {
+    extension [Self <: FacetValue](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsExcluded(value: Boolean): Self = StObject.set(x, "isExcluded", value.asInstanceOf[js.Any])
+      inline def setIsExcluded(value: Boolean): Self = StObject.set(x, "isExcluded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRefined(value: Boolean): Self = StObject.set(x, "isRefined", value.asInstanceOf[js.Any])
+      inline def setIsRefined(value: Boolean): Self = StObject.set(x, "isRefined", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -298,32 +286,24 @@ object SearchResults {
   }
   object HierarchicalFacet {
     
-    @scala.inline
-    def apply(count: Double, data: js.Array[HierarchicalFacet], isRefined: Boolean, name: String, path: String): HierarchicalFacet = {
+    inline def apply(count: Double, data: js.Array[HierarchicalFacet], isRefined: Boolean, name: String, path: String): HierarchicalFacet = {
       val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any], isRefined = isRefined.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[HierarchicalFacet]
     }
     
-    @scala.inline
-    implicit class HierarchicalFacetMutableBuilder[Self <: HierarchicalFacet] (val x: Self) extends AnyVal {
+    extension [Self <: HierarchicalFacet](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: js.Array[HierarchicalFacet]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[HierarchicalFacet]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: HierarchicalFacet*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: HierarchicalFacet*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setIsRefined(value: Boolean): Self = StObject.set(x, "isRefined", value.asInstanceOf[js.Any])
+      inline def setIsRefined(value: Boolean): Self = StObject.set(x, "isRefined", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -345,8 +325,7 @@ object SearchResults {
   }
   object Refinement {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attributeName: String,
       count: Double,
       exhaustive: Boolean,
@@ -360,29 +339,21 @@ object SearchResults {
       __obj.asInstanceOf[Refinement]
     }
     
-    @scala.inline
-    implicit class RefinementMutableBuilder[Self <: Refinement] (val x: Self) extends AnyVal {
+    extension [Self <: Refinement](x: Self) {
       
-      @scala.inline
-      def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
+      inline def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExhaustive(value: Boolean): Self = StObject.set(x, "exhaustive", value.asInstanceOf[js.Any])
+      inline def setExhaustive(value: Boolean): Self = StObject.set(x, "exhaustive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumericValue(value: Double): Self = StObject.set(x, "numericValue", value.asInstanceOf[js.Any])
+      inline def setNumericValue(value: Double): Self = StObject.set(x, "numericValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+      inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: numeric | facet | exclude | disjunctive | hierarchical): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: numeric | facet | exclude | disjunctive | hierarchical): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -64,17 +64,14 @@ object secretListMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): SecretList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SecretList]
-    @scala.inline
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): SecretList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SecretList]
+    inline def get(name: String, id: Input[ID]): SecretList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SecretList]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): SecretList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SecretList]
     
     /**
       * Returns true if the given object is an instance of SecretList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/secretList.SecretList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/secretList.SecretList */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/secretList.SecretList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/secretList.SecretList */ Boolean]
   }
   
   trait SecretListArgs extends StObject {
@@ -101,38 +98,28 @@ object secretListMod {
   }
   object SecretListArgs {
     
-    @scala.inline
-    def apply(items: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.core.v1.Secret]]]): SecretListArgs = {
+    inline def apply(items: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.core.v1.Secret]]]): SecretListArgs = {
       val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
       __obj.asInstanceOf[SecretListArgs]
     }
     
-    @scala.inline
-    implicit class SecretListArgsMutableBuilder[Self <: SecretListArgs] (val x: Self) extends AnyVal {
+    extension [Self <: SecretListArgs](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: Input[v1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: Input[v1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
       
-      @scala.inline
-      def setItems(value: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.core.v1.Secret]]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.core.v1.Secret]]]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsVarargs(value: Input[typings.pulumiKubernetes.inputMod.core.v1.Secret]*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: Input[typings.pulumiKubernetes.inputMod.core.v1.Secret]*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.SecretList]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.SecretList]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+      inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: Input[typings.pulumiKubernetes.inputMod.meta.v1.ListMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Input[typings.pulumiKubernetes.inputMod.meta.v1.ListMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     }
   }
 }

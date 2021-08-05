@@ -12,8 +12,6 @@ object getRandomValuesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getRandomValues(buf: Uint32Array): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomValues")(buf.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def getRandomValues(buf: Uint8Array): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomValues")(buf.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getRandomValues(buf: Uint32Array): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomValues")(buf.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def getRandomValues(buf: Uint8Array): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomValues")(buf.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

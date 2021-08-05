@@ -17,17 +17,14 @@ trait BooleanTypeAnnotation_
 }
 object BooleanTypeAnnotation_ {
   
-  @scala.inline
-  def apply(end: Double, loc: SourceLocation, start: Double): BooleanTypeAnnotation_ = {
+  inline def apply(end: Double, loc: SourceLocation, start: Double): BooleanTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("BooleanTypeAnnotation")
     __obj.asInstanceOf[BooleanTypeAnnotation_]
   }
   
-  @scala.inline
-  implicit class BooleanTypeAnnotation_MutableBuilder[Self <: BooleanTypeAnnotation_] (val x: Self) extends AnyVal {
+  extension [Self <: BooleanTypeAnnotation_](x: Self) {
     
-    @scala.inline
-    def setType(value: BooleanTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: BooleanTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

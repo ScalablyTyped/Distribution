@@ -10,8 +10,7 @@ trait GetBucketAclOutput
      with typings.awsSdkClientS3Node.typesGetBucketAclOutputMod.GetBucketAclOutput
 object GetBucketAclOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): GetBucketAclOutput = {
+  inline def apply($metadata: ResponseMetadata): GetBucketAclOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBucketAclOutput]
   }

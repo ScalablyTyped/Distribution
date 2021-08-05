@@ -18,25 +18,19 @@ trait DeploymentConfiguration extends StObject {
 }
 object DeploymentConfiguration {
   
-  @scala.inline
-  def apply(): DeploymentConfiguration = {
+  inline def apply(): DeploymentConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeploymentConfiguration]
   }
   
-  @scala.inline
-  implicit class DeploymentConfigurationMutableBuilder[Self <: DeploymentConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentConfiguration](x: Self) {
     
-    @scala.inline
-    def setMaximumPercent(value: BoxedInteger): Self = StObject.set(x, "maximumPercent", value.asInstanceOf[js.Any])
+    inline def setMaximumPercent(value: BoxedInteger): Self = StObject.set(x, "maximumPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumPercentUndefined: Self = StObject.set(x, "maximumPercent", js.undefined)
+    inline def setMaximumPercentUndefined: Self = StObject.set(x, "maximumPercent", js.undefined)
     
-    @scala.inline
-    def setMinimumHealthyPercent(value: BoxedInteger): Self = StObject.set(x, "minimumHealthyPercent", value.asInstanceOf[js.Any])
+    inline def setMinimumHealthyPercent(value: BoxedInteger): Self = StObject.set(x, "minimumHealthyPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumHealthyPercentUndefined: Self = StObject.set(x, "minimumHealthyPercent", js.undefined)
+    inline def setMinimumHealthyPercentUndefined: Self = StObject.set(x, "minimumHealthyPercent", js.undefined)
   }
 }

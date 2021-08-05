@@ -38,8 +38,7 @@ trait CreateTransitGatewayPeeringAttachmentRequest extends StObject {
 }
 object CreateTransitGatewayPeeringAttachmentRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PeerAccountId: String,
     PeerRegion: String,
     PeerTransitGatewayId: TransitAssociationGatewayId,
@@ -49,34 +48,24 @@ object CreateTransitGatewayPeeringAttachmentRequest {
     __obj.asInstanceOf[CreateTransitGatewayPeeringAttachmentRequest]
   }
   
-  @scala.inline
-  implicit class CreateTransitGatewayPeeringAttachmentRequestMutableBuilder[Self <: CreateTransitGatewayPeeringAttachmentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTransitGatewayPeeringAttachmentRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setPeerAccountId(value: String): Self = StObject.set(x, "PeerAccountId", value.asInstanceOf[js.Any])
+    inline def setPeerAccountId(value: String): Self = StObject.set(x, "PeerAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeerRegion(value: String): Self = StObject.set(x, "PeerRegion", value.asInstanceOf[js.Any])
+    inline def setPeerRegion(value: String): Self = StObject.set(x, "PeerRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeerTransitGatewayId(value: TransitAssociationGatewayId): Self = StObject.set(x, "PeerTransitGatewayId", value.asInstanceOf[js.Any])
+    inline def setPeerTransitGatewayId(value: TransitAssociationGatewayId): Self = StObject.set(x, "PeerTransitGatewayId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagSpecifications(value: TagSpecificationList): Self = StObject.set(x, "TagSpecifications", value.asInstanceOf[js.Any])
+    inline def setTagSpecifications(value: TagSpecificationList): Self = StObject.set(x, "TagSpecifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
+    inline def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
     
-    @scala.inline
-    def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
+    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
     
-    @scala.inline
-    def setTransitGatewayId(value: TransitGatewayId): Self = StObject.set(x, "TransitGatewayId", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayId(value: TransitGatewayId): Self = StObject.set(x, "TransitGatewayId", value.asInstanceOf[js.Any])
   }
 }

@@ -35,79 +35,55 @@ trait RunRealtimeReportResponse extends StObject {
 }
 object RunRealtimeReportResponse {
   
-  @scala.inline
-  def apply(): RunRealtimeReportResponse = {
+  inline def apply(): RunRealtimeReportResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RunRealtimeReportResponse]
   }
   
-  @scala.inline
-  implicit class RunRealtimeReportResponseMutableBuilder[Self <: RunRealtimeReportResponse] (val x: Self) extends AnyVal {
+  extension [Self <: RunRealtimeReportResponse](x: Self) {
     
-    @scala.inline
-    def setDimensionHeaders(value: js.Array[DimensionHeader]): Self = StObject.set(x, "dimensionHeaders", value.asInstanceOf[js.Any])
+    inline def setDimensionHeaders(value: js.Array[DimensionHeader]): Self = StObject.set(x, "dimensionHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionHeadersUndefined: Self = StObject.set(x, "dimensionHeaders", js.undefined)
+    inline def setDimensionHeadersUndefined: Self = StObject.set(x, "dimensionHeaders", js.undefined)
     
-    @scala.inline
-    def setDimensionHeadersVarargs(value: DimensionHeader*): Self = StObject.set(x, "dimensionHeaders", js.Array(value :_*))
+    inline def setDimensionHeadersVarargs(value: DimensionHeader*): Self = StObject.set(x, "dimensionHeaders", js.Array(value :_*))
     
-    @scala.inline
-    def setMaximums(value: js.Array[Row]): Self = StObject.set(x, "maximums", value.asInstanceOf[js.Any])
+    inline def setMaximums(value: js.Array[Row]): Self = StObject.set(x, "maximums", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumsUndefined: Self = StObject.set(x, "maximums", js.undefined)
+    inline def setMaximumsUndefined: Self = StObject.set(x, "maximums", js.undefined)
     
-    @scala.inline
-    def setMaximumsVarargs(value: Row*): Self = StObject.set(x, "maximums", js.Array(value :_*))
+    inline def setMaximumsVarargs(value: Row*): Self = StObject.set(x, "maximums", js.Array(value :_*))
     
-    @scala.inline
-    def setMetricHeaders(value: js.Array[MetricHeader]): Self = StObject.set(x, "metricHeaders", value.asInstanceOf[js.Any])
+    inline def setMetricHeaders(value: js.Array[MetricHeader]): Self = StObject.set(x, "metricHeaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricHeadersUndefined: Self = StObject.set(x, "metricHeaders", js.undefined)
+    inline def setMetricHeadersUndefined: Self = StObject.set(x, "metricHeaders", js.undefined)
     
-    @scala.inline
-    def setMetricHeadersVarargs(value: MetricHeader*): Self = StObject.set(x, "metricHeaders", js.Array(value :_*))
+    inline def setMetricHeadersVarargs(value: MetricHeader*): Self = StObject.set(x, "metricHeaders", js.Array(value :_*))
     
-    @scala.inline
-    def setMinimums(value: js.Array[Row]): Self = StObject.set(x, "minimums", value.asInstanceOf[js.Any])
+    inline def setMinimums(value: js.Array[Row]): Self = StObject.set(x, "minimums", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumsUndefined: Self = StObject.set(x, "minimums", js.undefined)
+    inline def setMinimumsUndefined: Self = StObject.set(x, "minimums", js.undefined)
     
-    @scala.inline
-    def setMinimumsVarargs(value: Row*): Self = StObject.set(x, "minimums", js.Array(value :_*))
+    inline def setMinimumsVarargs(value: Row*): Self = StObject.set(x, "minimums", js.Array(value :_*))
     
-    @scala.inline
-    def setPropertyQuota(value: PropertyQuota): Self = StObject.set(x, "propertyQuota", value.asInstanceOf[js.Any])
+    inline def setPropertyQuota(value: PropertyQuota): Self = StObject.set(x, "propertyQuota", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyQuotaUndefined: Self = StObject.set(x, "propertyQuota", js.undefined)
+    inline def setPropertyQuotaUndefined: Self = StObject.set(x, "propertyQuota", js.undefined)
     
-    @scala.inline
-    def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
+    inline def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
+    inline def setRowCountUndefined: Self = StObject.set(x, "rowCount", js.undefined)
     
-    @scala.inline
-    def setRows(value: js.Array[Row]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[Row]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    @scala.inline
-    def setRowsVarargs(value: Row*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: Row*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
-    @scala.inline
-    def setTotals(value: js.Array[Row]): Self = StObject.set(x, "totals", value.asInstanceOf[js.Any])
+    inline def setTotals(value: js.Array[Row]): Self = StObject.set(x, "totals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalsUndefined: Self = StObject.set(x, "totals", js.undefined)
+    inline def setTotalsUndefined: Self = StObject.set(x, "totals", js.undefined)
     
-    @scala.inline
-    def setTotalsVarargs(value: Row*): Self = StObject.set(x, "totals", js.Array(value :_*))
+    inline def setTotalsVarargs(value: Row*): Self = StObject.set(x, "totals", js.Array(value :_*))
   }
 }

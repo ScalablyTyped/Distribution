@@ -18,10 +18,8 @@ object useButtonVisibilityMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useButtonVisibility(): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useButtonVisibility")().asInstanceOf[ReturnValue]
-  @scala.inline
-  def useButtonVisibility(
+  inline def useButtonVisibility(): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useButtonVisibility")().asInstanceOf[ReturnValue]
+  inline def useButtonVisibility(
     hasPropOnClickPropOnKeyDownDefaultVisiblePropDefaultFocusOnVisibilityChange: ButtonVisibilityOptions
   ): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useButtonVisibility")(hasPropOnClickPropOnKeyDownDefaultVisiblePropDefaultFocusOnVisibilityChange.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
   
@@ -35,26 +33,20 @@ object useButtonVisibilityMod {
   }
   object ButtonVisibilityOptions {
     
-    @scala.inline
-    def apply(): ButtonVisibilityOptions = {
+    inline def apply(): ButtonVisibilityOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ButtonVisibilityOptions]
     }
     
-    @scala.inline
-    implicit class ButtonVisibilityOptionsMutableBuilder[Self <: ButtonVisibilityOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ButtonVisibilityOptions](x: Self) {
       
-      @scala.inline
-      def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setOnKeyDown(value: KeyboardEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: KeyboardEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
     }
   }
   
@@ -73,8 +65,7 @@ object useButtonVisibilityMod {
   }
   object ReturnValue {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       defaultFocus: FocusType,
       hide: () => Unit,
       onClick: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit,
@@ -85,23 +76,17 @@ object useButtonVisibilityMod {
       __obj.asInstanceOf[ReturnValue]
     }
     
-    @scala.inline
-    implicit class ReturnValueMutableBuilder[Self <: ReturnValue] (val x: Self) extends AnyVal {
+    extension [Self <: ReturnValue](x: Self) {
       
-      @scala.inline
-      def setDefaultFocus(value: FocusType): Self = StObject.set(x, "defaultFocus", value.asInstanceOf[js.Any])
+      inline def setDefaultFocus(value: FocusType): Self = StObject.set(x, "defaultFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyDown(value: KeyboardEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: KeyboardEvent[HTMLButtonElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
 }

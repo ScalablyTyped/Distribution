@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlFileValidationPivotMode extends StObject
 object XlFileValidationPivotMode {
   
-  @scala.inline
-  def xlFileValidationPivotDefault: `0` = 0.asInstanceOf[`0`]
+  inline def xlFileValidationPivotDefault: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def xlFileValidationPivotRun: `1` = 1.asInstanceOf[`1`]
+  inline def xlFileValidationPivotRun: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlFileValidationPivotSkip: `2` = 2.asInstanceOf[`2`]
+  inline def xlFileValidationPivotSkip: `2` = 2.asInstanceOf[`2`]
 }

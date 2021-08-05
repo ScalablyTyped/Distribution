@@ -10,16 +10,13 @@ trait SuiteInfo extends StObject {
 }
 object SuiteInfo {
   
-  @scala.inline
-  def apply(totalSpecsDefined: Double): SuiteInfo = {
+  inline def apply(totalSpecsDefined: Double): SuiteInfo = {
     val __obj = js.Dynamic.literal(totalSpecsDefined = totalSpecsDefined.asInstanceOf[js.Any])
     __obj.asInstanceOf[SuiteInfo]
   }
   
-  @scala.inline
-  implicit class SuiteInfoMutableBuilder[Self <: SuiteInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SuiteInfo](x: Self) {
     
-    @scala.inline
-    def setTotalSpecsDefined(value: Double): Self = StObject.set(x, "totalSpecsDefined", value.asInstanceOf[js.Any])
+    inline def setTotalSpecsDefined(value: Double): Self = StObject.set(x, "totalSpecsDefined", value.asInstanceOf[js.Any])
   }
 }

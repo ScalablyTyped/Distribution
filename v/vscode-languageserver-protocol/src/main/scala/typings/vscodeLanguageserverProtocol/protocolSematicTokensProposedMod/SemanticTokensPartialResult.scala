@@ -10,19 +10,15 @@ trait SemanticTokensPartialResult extends StObject {
 }
 object SemanticTokensPartialResult {
   
-  @scala.inline
-  def apply(data: js.Array[Double]): SemanticTokensPartialResult = {
+  inline def apply(data: js.Array[Double]): SemanticTokensPartialResult = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[SemanticTokensPartialResult]
   }
   
-  @scala.inline
-  implicit class SemanticTokensPartialResultMutableBuilder[Self <: SemanticTokensPartialResult] (val x: Self) extends AnyVal {
+  extension [Self <: SemanticTokensPartialResult](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Array[Double]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[Double]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: Double*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Double*): Self = StObject.set(x, "data", js.Array(value :_*))
   }
 }

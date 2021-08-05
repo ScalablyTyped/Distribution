@@ -14,25 +14,19 @@ trait SplitCapacityCommitmentResponse extends StObject {
 }
 object SplitCapacityCommitmentResponse {
   
-  @scala.inline
-  def apply(): SplitCapacityCommitmentResponse = {
+  inline def apply(): SplitCapacityCommitmentResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SplitCapacityCommitmentResponse]
   }
   
-  @scala.inline
-  implicit class SplitCapacityCommitmentResponseMutableBuilder[Self <: SplitCapacityCommitmentResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SplitCapacityCommitmentResponse](x: Self) {
     
-    @scala.inline
-    def setFirst(value: CapacityCommitment): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
+    inline def setFirst(value: CapacityCommitment): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
+    inline def setFirstUndefined: Self = StObject.set(x, "first", js.undefined)
     
-    @scala.inline
-    def setSecond(value: CapacityCommitment): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
+    inline def setSecond(value: CapacityCommitment): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondUndefined: Self = StObject.set(x, "second", js.undefined)
+    inline def setSecondUndefined: Self = StObject.set(x, "second", js.undefined)
   }
 }

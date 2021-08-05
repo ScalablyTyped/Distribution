@@ -23,37 +23,27 @@ trait DKIM extends StObject {
 }
 object DKIM {
   
-  @scala.inline
-  def apply(public: String, selector: String): DKIM = {
+  inline def apply(public: String, selector: String): DKIM = {
     val __obj = js.Dynamic.literal(public = public.asInstanceOf[js.Any], selector = selector.asInstanceOf[js.Any])
     __obj.asInstanceOf[DKIM]
   }
   
-  @scala.inline
-  implicit class DKIMMutableBuilder[Self <: DKIM] (val x: Self) extends AnyVal {
+  extension [Self <: DKIM](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: String): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: String): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setPrivate(value: String): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
+    inline def setPrivate(value: String): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
+    inline def setPrivateUndefined: Self = StObject.set(x, "private", js.undefined)
     
-    @scala.inline
-    def setPublic(value: String): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+    inline def setPublic(value: String): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigning_domain(value: String): Self = StObject.set(x, "signing_domain", value.asInstanceOf[js.Any])
+    inline def setSigning_domain(value: String): Self = StObject.set(x, "signing_domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigning_domainUndefined: Self = StObject.set(x, "signing_domain", js.undefined)
+    inline def setSigning_domainUndefined: Self = StObject.set(x, "signing_domain", js.undefined)
   }
 }

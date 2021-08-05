@@ -38,38 +38,28 @@ object capacitorConfigMod {
   }
   object CapacitorConfigFile {
     
-    @scala.inline
-    def apply(): CapacitorConfigFile = {
+    inline def apply(): CapacitorConfigFile = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CapacitorConfigFile]
     }
     
-    @scala.inline
-    implicit class CapacitorConfigFileMutableBuilder[Self <: CapacitorConfigFile] (val x: Self) extends AnyVal {
+    extension [Self <: CapacitorConfigFile](x: Self) {
       
-      @scala.inline
-      def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+      inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
+      inline def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
       
-      @scala.inline
-      def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
+      inline def setAppName(value: String): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppNameUndefined: Self = StObject.set(x, "appName", js.undefined)
+      inline def setAppNameUndefined: Self = StObject.set(x, "appName", js.undefined)
       
-      @scala.inline
-      def setServer(value: OriginalUrl): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+      inline def setServer(value: OriginalUrl): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+      inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
       
-      @scala.inline
-      def setWebDir(value: String): Self = StObject.set(x, "webDir", value.asInstanceOf[js.Any])
+      inline def setWebDir(value: String): Self = StObject.set(x, "webDir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebDirUndefined: Self = StObject.set(x, "webDir", js.undefined)
+      inline def setWebDirUndefined: Self = StObject.set(x, "webDir", js.undefined)
     }
   }
 }

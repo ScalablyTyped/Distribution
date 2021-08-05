@@ -13,17 +13,14 @@ object anon {
   }
   object Payload {
     
-    @scala.inline
-    def apply(payload: js.Any): Payload = {
+    inline def apply(payload: js.Any): Payload = {
       val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
       __obj.asInstanceOf[Payload]
     }
     
-    @scala.inline
-    implicit class PayloadMutableBuilder[Self <: Payload] (val x: Self) extends AnyVal {
+    extension [Self <: Payload](x: Self) {
       
-      @scala.inline
-      def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     }
   }
   
@@ -33,18 +30,15 @@ object anon {
   }
   object Type {
     
-    @scala.inline
-    def apply[T /* <: String & (/* import warning: importer.ImportType#apply Failed type conversion: AppAction['type'] */ js.Any) */, AppAction /* <: Action[js.Any] */](`type`: T): Type[T, AppAction] = {
+    inline def apply[T /* <: String & (/* import warning: importer.ImportType#apply Failed type conversion: AppAction['type'] */ js.Any) */, AppAction /* <: Action[js.Any] */](`type`: T): Type[T, AppAction] = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Type[T, AppAction]]
     }
     
-    @scala.inline
-    implicit class TypeMutableBuilder[Self <: Type[?, ?], T /* <: String & (/* import warning: importer.ImportType#apply Failed type conversion: AppAction['type'] */ js.Any) */, AppAction /* <: Action[js.Any] */] (val x: Self & (Type[T, AppAction])) extends AnyVal {
+    extension [Self <: Type[?, ?], T /* <: String & (/* import warning: importer.ImportType#apply Failed type conversion: AppAction['type'] */ js.Any) */, AppAction /* <: Action[js.Any] */](x: Self & (Type[T, AppAction])) {
       
-      @scala.inline
-      def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

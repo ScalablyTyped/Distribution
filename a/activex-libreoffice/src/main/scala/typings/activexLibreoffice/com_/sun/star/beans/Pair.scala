@@ -18,19 +18,15 @@ trait Pair[T, U] extends StObject {
 }
 object Pair {
   
-  @scala.inline
-  def apply[T, U](First: T, Second: U): Pair[T, U] = {
+  inline def apply[T, U](First: T, Second: U): Pair[T, U] = {
     val __obj = js.Dynamic.literal(First = First.asInstanceOf[js.Any], Second = Second.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pair[T, U]]
   }
   
-  @scala.inline
-  implicit class PairMutableBuilder[Self <: Pair[?, ?], T, U] (val x: Self & (Pair[T, U])) extends AnyVal {
+  extension [Self <: Pair[?, ?], T, U](x: Self & (Pair[T, U])) {
     
-    @scala.inline
-    def setFirst(value: T): Self = StObject.set(x, "First", value.asInstanceOf[js.Any])
+    inline def setFirst(value: T): Self = StObject.set(x, "First", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecond(value: U): Self = StObject.set(x, "Second", value.asInstanceOf[js.Any])
+    inline def setSecond(value: U): Self = StObject.set(x, "Second", value.asInstanceOf[js.Any])
   }
 }

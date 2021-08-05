@@ -11,6 +11,5 @@ object tapClickMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def startTapClick(config: Config_): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startTapClick")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def startTapClick(config: Config_): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startTapClick")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

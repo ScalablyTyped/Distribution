@@ -25,23 +25,18 @@ object typesListDeadLetterSourceQueuesOutputMod {
   }
   object ListDeadLetterSourceQueuesOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, queueUrls: js.Array[String]): ListDeadLetterSourceQueuesOutput = {
+    inline def apply($metadata: ResponseMetadata, queueUrls: js.Array[String]): ListDeadLetterSourceQueuesOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], queueUrls = queueUrls.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListDeadLetterSourceQueuesOutput]
     }
     
-    @scala.inline
-    implicit class ListDeadLetterSourceQueuesOutputMutableBuilder[Self <: ListDeadLetterSourceQueuesOutput] (val x: Self) extends AnyVal {
+    extension [Self <: ListDeadLetterSourceQueuesOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueueUrls(value: js.Array[String]): Self = StObject.set(x, "queueUrls", value.asInstanceOf[js.Any])
+      inline def setQueueUrls(value: js.Array[String]): Self = StObject.set(x, "queueUrls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueueUrlsVarargs(value: String*): Self = StObject.set(x, "queueUrls", js.Array(value :_*))
+      inline def setQueueUrlsVarargs(value: String*): Self = StObject.set(x, "queueUrls", js.Array(value :_*))
     }
   }
 }

@@ -36,37 +36,27 @@ trait ViewpointProperties extends StObject {
 }
 object ViewpointProperties {
   
-  @scala.inline
-  def apply(): ViewpointProperties = {
+  inline def apply(): ViewpointProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ViewpointProperties]
   }
   
-  @scala.inline
-  implicit class ViewpointPropertiesMutableBuilder[Self <: ViewpointProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ViewpointProperties](x: Self) {
     
-    @scala.inline
-    def setCamera(value: CameraProperties): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
+    inline def setCamera(value: CameraProperties): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCameraUndefined: Self = StObject.set(x, "camera", js.undefined)
+    inline def setCameraUndefined: Self = StObject.set(x, "camera", js.undefined)
     
-    @scala.inline
-    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+    inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    @scala.inline
-    def setTargetGeometry(value: GeometryProperties): Self = StObject.set(x, "targetGeometry", value.asInstanceOf[js.Any])
+    inline def setTargetGeometry(value: GeometryProperties): Self = StObject.set(x, "targetGeometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetGeometryUndefined: Self = StObject.set(x, "targetGeometry", js.undefined)
+    inline def setTargetGeometryUndefined: Self = StObject.set(x, "targetGeometry", js.undefined)
   }
 }

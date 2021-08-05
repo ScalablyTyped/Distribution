@@ -26,20 +26,16 @@ object selectableAccordionMod {
   }
   object SelectableAccordionItemProps {
     
-    @scala.inline
-    def apply(): SelectableAccordionItemProps = {
+    inline def apply(): SelectableAccordionItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SelectableAccordionItemProps]
     }
     
-    @scala.inline
-    implicit class SelectableAccordionItemPropsMutableBuilder[Self <: SelectableAccordionItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: SelectableAccordionItemProps](x: Self) {
       
-      @scala.inline
-      def setInitiallyOpen(value: Boolean): Self = StObject.set(x, "initiallyOpen", value.asInstanceOf[js.Any])
+      inline def setInitiallyOpen(value: Boolean): Self = StObject.set(x, "initiallyOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitiallyOpenUndefined: Self = StObject.set(x, "initiallyOpen", js.undefined)
+      inline def setInitiallyOpenUndefined: Self = StObject.set(x, "initiallyOpen", js.undefined)
     }
   }
   
@@ -57,47 +53,34 @@ object selectableAccordionMod {
   }
   object SelectableAccordionProps {
     
-    @scala.inline
-    def apply(): SelectableAccordionProps = {
+    inline def apply(): SelectableAccordionProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SelectableAccordionProps]
     }
     
-    @scala.inline
-    implicit class SelectableAccordionPropsMutableBuilder[Self <: SelectableAccordionProps] (val x: Self) extends AnyVal {
+    extension [Self <: SelectableAccordionProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setItems(value: js.Array[SelectableAccordionItemProps]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Array[SelectableAccordionItemProps]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setItemsVarargs(value: SelectableAccordionItemProps*): Self = StObject.set(x, "items", js.Array(value :_*))
+      inline def setItemsVarargs(value: SelectableAccordionItemProps*): Self = StObject.set(x, "items", js.Array(value :_*))
       
-      @scala.inline
-      def setOnSelectionChanged(value: /* selectedIds */ js.Array[Double] => Unit): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction1(value))
+      inline def setOnSelectionChanged(value: /* selectedIds */ js.Array[Double] => Unit): Self = StObject.set(x, "onSelectionChanged", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnSelectionChangedUndefined: Self = StObject.set(x, "onSelectionChanged", js.undefined)
+      inline def setOnSelectionChangedUndefined: Self = StObject.set(x, "onSelectionChanged", js.undefined)
       
-      @scala.inline
-      def setType(value: radio | checkbox | toggle): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: radio | checkbox | toggle): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

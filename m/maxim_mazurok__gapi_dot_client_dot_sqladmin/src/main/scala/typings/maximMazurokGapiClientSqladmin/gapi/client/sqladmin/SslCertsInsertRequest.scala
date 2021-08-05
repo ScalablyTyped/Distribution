@@ -11,19 +11,15 @@ trait SslCertsInsertRequest extends StObject {
 }
 object SslCertsInsertRequest {
   
-  @scala.inline
-  def apply(): SslCertsInsertRequest = {
+  inline def apply(): SslCertsInsertRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SslCertsInsertRequest]
   }
   
-  @scala.inline
-  implicit class SslCertsInsertRequestMutableBuilder[Self <: SslCertsInsertRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SslCertsInsertRequest](x: Self) {
     
-    @scala.inline
-    def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
+    inline def setCommonName(value: String): Self = StObject.set(x, "commonName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommonNameUndefined: Self = StObject.set(x, "commonName", js.undefined)
+    inline def setCommonNameUndefined: Self = StObject.set(x, "commonName", js.undefined)
   }
 }

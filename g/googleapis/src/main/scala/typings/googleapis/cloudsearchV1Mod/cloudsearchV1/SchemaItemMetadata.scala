@@ -91,91 +91,63 @@ trait SchemaItemMetadata extends StObject {
 }
 object SchemaItemMetadata {
   
-  @scala.inline
-  def apply(): SchemaItemMetadata = {
+  inline def apply(): SchemaItemMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaItemMetadata]
   }
   
-  @scala.inline
-  implicit class SchemaItemMetadataMutableBuilder[Self <: SchemaItemMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaItemMetadata](x: Self) {
     
-    @scala.inline
-    def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
+    inline def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
+    inline def setContainerNameUndefined: Self = StObject.set(x, "containerName", js.undefined)
     
-    @scala.inline
-    def setContentLanguage(value: String): Self = StObject.set(x, "contentLanguage", value.asInstanceOf[js.Any])
+    inline def setContentLanguage(value: String): Self = StObject.set(x, "contentLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentLanguageUndefined: Self = StObject.set(x, "contentLanguage", js.undefined)
+    inline def setContentLanguageUndefined: Self = StObject.set(x, "contentLanguage", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+    inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
     
-    @scala.inline
-    def setInteractions(value: js.Array[SchemaInteraction]): Self = StObject.set(x, "interactions", value.asInstanceOf[js.Any])
+    inline def setInteractions(value: js.Array[SchemaInteraction]): Self = StObject.set(x, "interactions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInteractionsUndefined: Self = StObject.set(x, "interactions", js.undefined)
+    inline def setInteractionsUndefined: Self = StObject.set(x, "interactions", js.undefined)
     
-    @scala.inline
-    def setInteractionsVarargs(value: SchemaInteraction*): Self = StObject.set(x, "interactions", js.Array(value :_*))
+    inline def setInteractionsVarargs(value: SchemaInteraction*): Self = StObject.set(x, "interactions", js.Array(value :_*))
     
-    @scala.inline
-    def setKeywords(value: js.Array[String]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
+    inline def setKeywords(value: js.Array[String]): Self = StObject.set(x, "keywords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
+    inline def setKeywordsUndefined: Self = StObject.set(x, "keywords", js.undefined)
     
-    @scala.inline
-    def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
+    inline def setKeywordsVarargs(value: String*): Self = StObject.set(x, "keywords", js.Array(value :_*))
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
-    @scala.inline
-    def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
+    inline def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectTypeUndefined: Self = StObject.set(x, "objectType", js.undefined)
+    inline def setObjectTypeUndefined: Self = StObject.set(x, "objectType", js.undefined)
     
-    @scala.inline
-    def setSearchQualityMetadata(value: SchemaSearchQualityMetadata): Self = StObject.set(x, "searchQualityMetadata", value.asInstanceOf[js.Any])
+    inline def setSearchQualityMetadata(value: SchemaSearchQualityMetadata): Self = StObject.set(x, "searchQualityMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchQualityMetadataUndefined: Self = StObject.set(x, "searchQualityMetadata", js.undefined)
+    inline def setSearchQualityMetadataUndefined: Self = StObject.set(x, "searchQualityMetadata", js.undefined)
     
-    @scala.inline
-    def setSourceRepositoryUrl(value: String): Self = StObject.set(x, "sourceRepositoryUrl", value.asInstanceOf[js.Any])
+    inline def setSourceRepositoryUrl(value: String): Self = StObject.set(x, "sourceRepositoryUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceRepositoryUrlUndefined: Self = StObject.set(x, "sourceRepositoryUrl", js.undefined)
+    inline def setSourceRepositoryUrlUndefined: Self = StObject.set(x, "sourceRepositoryUrl", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

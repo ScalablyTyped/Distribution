@@ -21,32 +21,24 @@ trait ExcludeComponents extends StObject {
 }
 object ExcludeComponents {
   
-  @scala.inline
-  def apply(backgroundColor: String, pixelRatio: Double, `type`: String): ExcludeComponents = {
+  inline def apply(backgroundColor: String, pixelRatio: Double, `type`: String): ExcludeComponents = {
     val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], pixelRatio = pixelRatio.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExcludeComponents]
   }
   
-  @scala.inline
-  implicit class ExcludeComponentsMutableBuilder[Self <: ExcludeComponents] (val x: Self) extends AnyVal {
+  extension [Self <: ExcludeComponents](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeComponents(value: js.Array[String]): Self = StObject.set(x, "excludeComponents", value.asInstanceOf[js.Any])
+    inline def setExcludeComponents(value: js.Array[String]): Self = StObject.set(x, "excludeComponents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeComponentsUndefined: Self = StObject.set(x, "excludeComponents", js.undefined)
+    inline def setExcludeComponentsUndefined: Self = StObject.set(x, "excludeComponents", js.undefined)
     
-    @scala.inline
-    def setExcludeComponentsVarargs(value: String*): Self = StObject.set(x, "excludeComponents", js.Array(value :_*))
+    inline def setExcludeComponentsVarargs(value: String*): Self = StObject.set(x, "excludeComponents", js.Array(value :_*))
     
-    @scala.inline
-    def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
+    inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

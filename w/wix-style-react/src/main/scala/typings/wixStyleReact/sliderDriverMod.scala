@@ -30,8 +30,7 @@ object sliderDriverMod {
   }
   object SliderDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       exists: () => Boolean,
       getToolTipValue: () => String,
       hoverHandle: HandleIndex => Unit,
@@ -46,32 +45,23 @@ object sliderDriverMod {
       __obj.asInstanceOf[SliderDriver]
     }
     
-    @scala.inline
-    implicit class SliderDriverMutableBuilder[Self <: SliderDriver] (val x: Self) extends AnyVal {
+    extension [Self <: SliderDriver](x: Self) {
       
-      @scala.inline
-      def setGetToolTipValue(value: () => String): Self = StObject.set(x, "getToolTipValue", js.Any.fromFunction0(value))
+      inline def setGetToolTipValue(value: () => String): Self = StObject.set(x, "getToolTipValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHoverHandle(value: HandleIndex => Unit): Self = StObject.set(x, "hoverHandle", js.Any.fromFunction1(value))
+      inline def setHoverHandle(value: HandleIndex => Unit): Self = StObject.set(x, "hoverHandle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsDisabled(value: () => Boolean): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
+      inline def setIsDisabled(value: () => Boolean): Self = StObject.set(x, "isDisabled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDotSelected(value: Double => Boolean): Self = StObject.set(x, "isDotSelected", js.Any.fromFunction1(value))
+      inline def setIsDotSelected(value: Double => Boolean): Self = StObject.set(x, "isDotSelected", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNumOfSliderDots(value: () => Double): Self = StObject.set(x, "numOfSliderDots", js.Any.fromFunction0(value))
+      inline def setNumOfSliderDots(value: () => Double): Self = StObject.set(x, "numOfSliderDots", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNumOfSliderHandles(value: () => Double): Self = StObject.set(x, "numOfSliderHandles", js.Any.fromFunction0(value))
+      inline def setNumOfSliderHandles(value: () => Double): Self = StObject.set(x, "numOfSliderHandles", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setNumOfSliderMarksLabels(value: () => Double): Self = StObject.set(x, "numOfSliderMarksLabels", js.Any.fromFunction0(value))
+      inline def setNumOfSliderMarksLabels(value: () => Double): Self = StObject.set(x, "numOfSliderMarksLabels", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUnHoverHandle(value: HandleIndex => Unit): Self = StObject.set(x, "unHoverHandle", js.Any.fromFunction1(value))
+      inline def setUnHoverHandle(value: HandleIndex => Unit): Self = StObject.set(x, "unHoverHandle", js.Any.fromFunction1(value))
     }
   }
 }

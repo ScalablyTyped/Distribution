@@ -10,8 +10,7 @@ trait CameraCaptureUIPhotoCaptureSettings
      with ICameraCaptureUIPhotoCaptureSettings
 object CameraCaptureUIPhotoCaptureSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allowCropping: Boolean,
     croppedAspectRatio: Size,
     croppedSizeInPixels: Size,

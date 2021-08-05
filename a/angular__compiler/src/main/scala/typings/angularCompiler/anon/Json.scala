@@ -12,22 +12,17 @@ trait Json extends StObject {
 }
 object Json {
   
-  @scala.inline
-  def apply(exportAs: js.Array[ExportAs], json: String): Json = {
+  inline def apply(exportAs: js.Array[ExportAs], json: String): Json = {
     val __obj = js.Dynamic.literal(exportAs = exportAs.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any])
     __obj.asInstanceOf[Json]
   }
   
-  @scala.inline
-  implicit class JsonMutableBuilder[Self <: Json] (val x: Self) extends AnyVal {
+  extension [Self <: Json](x: Self) {
     
-    @scala.inline
-    def setExportAs(value: js.Array[ExportAs]): Self = StObject.set(x, "exportAs", value.asInstanceOf[js.Any])
+    inline def setExportAs(value: js.Array[ExportAs]): Self = StObject.set(x, "exportAs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportAsVarargs(value: ExportAs*): Self = StObject.set(x, "exportAs", js.Array(value :_*))
+    inline def setExportAsVarargs(value: ExportAs*): Self = StObject.set(x, "exportAs", js.Array(value :_*))
     
-    @scala.inline
-    def setJson(value: String): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+    inline def setJson(value: String): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
   }
 }

@@ -12,8 +12,7 @@ trait DisplayKeywordBuilder[DisplayKeyword]
 }
 object DisplayKeywordBuilder {
   
-  @scala.inline
-  def apply[DisplayKeyword](
+  inline def apply[DisplayKeyword](
     build: () => AdWordsOperation[DisplayKeywordBuilder[DisplayKeyword]],
     exclude: () => AdWordsOperation[DisplayKeywordBuilder[DisplayKeyword]],
     withCpc: Double => DisplayKeywordBuilder[DisplayKeyword],
@@ -24,10 +23,8 @@ object DisplayKeywordBuilder {
     __obj.asInstanceOf[DisplayKeywordBuilder[DisplayKeyword]]
   }
   
-  @scala.inline
-  implicit class DisplayKeywordBuilderMutableBuilder[Self <: DisplayKeywordBuilder[?], DisplayKeyword] (val x: Self & DisplayKeywordBuilder[DisplayKeyword]) extends AnyVal {
+  extension [Self <: DisplayKeywordBuilder[?], DisplayKeyword](x: Self & DisplayKeywordBuilder[DisplayKeyword]) {
     
-    @scala.inline
-    def setWithText(value: String => DisplayKeywordBuilder[DisplayKeyword]): Self = StObject.set(x, "withText", js.Any.fromFunction1(value))
+    inline def setWithText(value: String => DisplayKeywordBuilder[DisplayKeyword]): Self = StObject.set(x, "withText", js.Any.fromFunction1(value))
   }
 }

@@ -13,16 +13,13 @@ trait IonVoicePlayEnd
 }
 object IonVoicePlayEnd {
   
-  @scala.inline
-  def apply(success: Resouce => Unit): IonVoicePlayEnd = {
+  inline def apply(success: Resouce => Unit): IonVoicePlayEnd = {
     val __obj = js.Dynamic.literal(success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[IonVoicePlayEnd]
   }
   
-  @scala.inline
-  implicit class IonVoicePlayEndMutableBuilder[Self <: IonVoicePlayEnd] (val x: Self) extends AnyVal {
+  extension [Self <: IonVoicePlayEnd](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: Resouce => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: Resouce => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

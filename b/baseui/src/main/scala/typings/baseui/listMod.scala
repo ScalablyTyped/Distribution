@@ -31,17 +31,13 @@ object listMod {
     @js.native
     val ^ : ARTWORK_SIZES = js.native
     
-    @scala.inline
-    implicit class ARTWORK_SIZESMutableBuilder[Self <: ARTWORK_SIZES] (val x: Self) extends AnyVal {
+    extension [Self <: ARTWORK_SIZES](x: Self) {
       
-      @scala.inline
-      def setLARGE(value: LARGE): Self = StObject.set(x, "LARGE", value.asInstanceOf[js.Any])
+      inline def setLARGE(value: LARGE): Self = StObject.set(x, "LARGE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMEDIUM(value: MEDIUM): Self = StObject.set(x, "MEDIUM", value.asInstanceOf[js.Any])
+      inline def setMEDIUM(value: MEDIUM): Self = StObject.set(x, "MEDIUM", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSMALL(value: SMALL): Self = StObject.set(x, "SMALL", value.asInstanceOf[js.Any])
+      inline def setSMALL(value: SMALL): Self = StObject.set(x, "SMALL", value.asInstanceOf[js.Any])
     }
   }
   
@@ -82,14 +78,11 @@ object listMod {
   trait ArtworkSizesT extends StObject
   object ArtworkSizesT {
     
-    @scala.inline
-    def LARGE: typings.baseui.baseuiStrings.LARGE = "LARGE".asInstanceOf[typings.baseui.baseuiStrings.LARGE]
+    inline def LARGE: typings.baseui.baseuiStrings.LARGE = "LARGE".asInstanceOf[typings.baseui.baseuiStrings.LARGE]
     
-    @scala.inline
-    def MEDIUM: typings.baseui.baseuiStrings.MEDIUM = "MEDIUM".asInstanceOf[typings.baseui.baseuiStrings.MEDIUM]
+    inline def MEDIUM: typings.baseui.baseuiStrings.MEDIUM = "MEDIUM".asInstanceOf[typings.baseui.baseuiStrings.MEDIUM]
     
-    @scala.inline
-    def SMALL: typings.baseui.baseuiStrings.SMALL = "SMALL".asInstanceOf[typings.baseui.baseuiStrings.SMALL]
+    inline def SMALL: typings.baseui.baseuiStrings.SMALL = "SMALL".asInstanceOf[typings.baseui.baseuiStrings.SMALL]
   }
   
   trait LabelPropsT extends StObject {
@@ -102,32 +95,24 @@ object listMod {
   }
   object LabelPropsT {
     
-    @scala.inline
-    def apply(): LabelPropsT = {
+    inline def apply(): LabelPropsT = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LabelPropsT]
     }
     
-    @scala.inline
-    implicit class LabelPropsTMutableBuilder[Self <: LabelPropsT] (val x: Self) extends AnyVal {
+    extension [Self <: LabelPropsT](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDescription(value: ReactNode): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: ReactNode): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setSublist(value: Boolean): Self = StObject.set(x, "sublist", value.asInstanceOf[js.Any])
+      inline def setSublist(value: Boolean): Self = StObject.set(x, "sublist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSublistUndefined: Self = StObject.set(x, "sublist", js.undefined)
+      inline def setSublistUndefined: Self = StObject.set(x, "sublist", js.undefined)
     }
   }
   
@@ -151,46 +136,36 @@ object listMod {
   }
   object ListOverrides {
     
-    @scala.inline
-    def apply(): ListOverrides = {
+    inline def apply(): ListOverrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ListOverrides]
     }
     
-    @scala.inline
-    implicit class ListOverridesMutableBuilder[Self <: ListOverrides] (val x: Self) extends AnyVal {
+    extension [Self <: ListOverrides](x: Self) {
       
-      @scala.inline
-      def setArtworkContainer(
+      inline def setArtworkContainer(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<StyledArtworkContainerPropsT> */ js.Any
       ): Self = StObject.set(x, "ArtworkContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArtworkContainerUndefined: Self = StObject.set(x, "ArtworkContainer", js.undefined)
+      inline def setArtworkContainerUndefined: Self = StObject.set(x, "ArtworkContainer", js.undefined)
       
-      @scala.inline
-      def setContent(
+      inline def setContent(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<StyledContentPropsT> */ js.Any
       ): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
       
-      @scala.inline
-      def setEndEnhancerContainer(
+      inline def setEndEnhancerContainer(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any
       ): Self = StObject.set(x, "EndEnhancerContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndEnhancerContainerUndefined: Self = StObject.set(x, "EndEnhancerContainer", js.undefined)
+      inline def setEndEnhancerContainerUndefined: Self = StObject.set(x, "EndEnhancerContainer", js.undefined)
       
-      @scala.inline
-      def setRoot(
+      inline def setRoot(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<{}> */ js.Any
       ): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
     }
   }
   
@@ -216,8 +191,7 @@ object listMod {
   }
   object MenuAdapterPropsT {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       $disabled: Boolean,
       $isHighlighted: Boolean,
       $size: String,
@@ -229,26 +203,19 @@ object listMod {
       __obj.asInstanceOf[MenuAdapterPropsT]
     }
     
-    @scala.inline
-    implicit class MenuAdapterPropsTMutableBuilder[Self <: MenuAdapterPropsT] (val x: Self) extends AnyVal {
+    extension [Self <: MenuAdapterPropsT](x: Self) {
       
-      @scala.inline
-      def set$disabled(value: Boolean): Self = StObject.set(x, "$disabled", value.asInstanceOf[js.Any])
+      inline def set$disabled(value: Boolean): Self = StObject.set(x, "$disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$isHighlighted(value: Boolean): Self = StObject.set(x, "$isHighlighted", value.asInstanceOf[js.Any])
+      inline def set$isHighlighted(value: Boolean): Self = StObject.set(x, "$isHighlighted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$size(value: String): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
+      inline def set$size(value: String): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: js.Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClick(value: MouseEvent[HTMLLIElement, NativeMouseEvent] => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[HTMLLIElement, NativeMouseEvent] => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseEnter(value: MouseEvent[HTMLLIElement, NativeMouseEvent] => js.Any): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
+      inline def setOnMouseEnter(value: MouseEvent[HTMLLIElement, NativeMouseEvent] => js.Any): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
     }
   }
   
@@ -268,50 +235,36 @@ object listMod {
   }
   object PropsT {
     
-    @scala.inline
-    def apply(): PropsT = {
+    inline def apply(): PropsT = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PropsT]
     }
     
-    @scala.inline
-    implicit class PropsTMutableBuilder[Self <: PropsT] (val x: Self) extends AnyVal {
+    extension [Self <: PropsT](x: Self) {
       
-      @scala.inline
-      def setArtwork(value: ReactNode): Self = StObject.set(x, "artwork", value.asInstanceOf[js.Any])
+      inline def setArtwork(value: ReactNode): Self = StObject.set(x, "artwork", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArtworkSize(value: ArtworkSizesT | Double): Self = StObject.set(x, "artworkSize", value.asInstanceOf[js.Any])
+      inline def setArtworkSize(value: ArtworkSizesT | Double): Self = StObject.set(x, "artworkSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArtworkSizeUndefined: Self = StObject.set(x, "artworkSize", js.undefined)
+      inline def setArtworkSizeUndefined: Self = StObject.set(x, "artworkSize", js.undefined)
       
-      @scala.inline
-      def setArtworkUndefined: Self = StObject.set(x, "artwork", js.undefined)
+      inline def setArtworkUndefined: Self = StObject.set(x, "artwork", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setEndEnhancer(value: ReactNode): Self = StObject.set(x, "endEnhancer", value.asInstanceOf[js.Any])
+      inline def setEndEnhancer(value: ReactNode): Self = StObject.set(x, "endEnhancer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndEnhancerUndefined: Self = StObject.set(x, "endEnhancer", js.undefined)
+      inline def setEndEnhancerUndefined: Self = StObject.set(x, "endEnhancer", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: ListOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: ListOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setSublist(value: Boolean): Self = StObject.set(x, "sublist", value.asInstanceOf[js.Any])
+      inline def setSublist(value: Boolean): Self = StObject.set(x, "sublist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSublistUndefined: Self = StObject.set(x, "sublist", js.undefined)
+      inline def setSublistUndefined: Self = StObject.set(x, "sublist", js.undefined)
     }
   }
   
@@ -325,23 +278,18 @@ object listMod {
   }
   object StyledArtworkContainerPropsT {
     
-    @scala.inline
-    def apply($artworkSize: ArtworkSizesT): StyledArtworkContainerPropsT = {
+    inline def apply($artworkSize: ArtworkSizesT): StyledArtworkContainerPropsT = {
       val __obj = js.Dynamic.literal($artworkSize = $artworkSize.asInstanceOf[js.Any])
       __obj.asInstanceOf[StyledArtworkContainerPropsT]
     }
     
-    @scala.inline
-    implicit class StyledArtworkContainerPropsTMutableBuilder[Self <: StyledArtworkContainerPropsT] (val x: Self) extends AnyVal {
+    extension [Self <: StyledArtworkContainerPropsT](x: Self) {
       
-      @scala.inline
-      def set$artworkSize(value: ArtworkSizesT): Self = StObject.set(x, "$artworkSize", value.asInstanceOf[js.Any])
+      inline def set$artworkSize(value: ArtworkSizesT): Self = StObject.set(x, "$artworkSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$sublist(value: Boolean): Self = StObject.set(x, "$sublist", value.asInstanceOf[js.Any])
+      inline def set$sublist(value: Boolean): Self = StObject.set(x, "$sublist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$sublistUndefined: Self = StObject.set(x, "$sublist", js.undefined)
+      inline def set$sublistUndefined: Self = StObject.set(x, "$sublist", js.undefined)
     }
   }
   
@@ -355,20 +303,16 @@ object listMod {
   }
   object StyledContentPropsT {
     
-    @scala.inline
-    def apply($mLeft: Boolean, $sublist: Boolean): StyledContentPropsT = {
+    inline def apply($mLeft: Boolean, $sublist: Boolean): StyledContentPropsT = {
       val __obj = js.Dynamic.literal($mLeft = $mLeft.asInstanceOf[js.Any], $sublist = $sublist.asInstanceOf[js.Any])
       __obj.asInstanceOf[StyledContentPropsT]
     }
     
-    @scala.inline
-    implicit class StyledContentPropsTMutableBuilder[Self <: StyledContentPropsT] (val x: Self) extends AnyVal {
+    extension [Self <: StyledContentPropsT](x: Self) {
       
-      @scala.inline
-      def set$mLeft(value: Boolean): Self = StObject.set(x, "$mLeft", value.asInstanceOf[js.Any])
+      inline def set$mLeft(value: Boolean): Self = StObject.set(x, "$mLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$sublist(value: Boolean): Self = StObject.set(x, "$sublist", value.asInstanceOf[js.Any])
+      inline def set$sublist(value: Boolean): Self = StObject.set(x, "$sublist", value.asInstanceOf[js.Any])
     }
   }
 }

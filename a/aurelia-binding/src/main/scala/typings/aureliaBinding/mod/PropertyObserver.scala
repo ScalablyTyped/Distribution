@@ -13,16 +13,13 @@ trait PropertyObserver extends StObject {
 }
 object PropertyObserver {
   
-  @scala.inline
-  def apply(subscribe: js.Function2[/* newValue */ js.Any, /* oldValue */ js.Any, Unit] => Disposable): PropertyObserver = {
+  inline def apply(subscribe: js.Function2[/* newValue */ js.Any, /* oldValue */ js.Any, Unit] => Disposable): PropertyObserver = {
     val __obj = js.Dynamic.literal(subscribe = js.Any.fromFunction1(subscribe))
     __obj.asInstanceOf[PropertyObserver]
   }
   
-  @scala.inline
-  implicit class PropertyObserverMutableBuilder[Self <: PropertyObserver] (val x: Self) extends AnyVal {
+  extension [Self <: PropertyObserver](x: Self) {
     
-    @scala.inline
-    def setSubscribe(value: js.Function2[/* newValue */ js.Any, /* oldValue */ js.Any, Unit] => Disposable): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
+    inline def setSubscribe(value: js.Function2[/* newValue */ js.Any, /* oldValue */ js.Any, Unit] => Disposable): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
   }
 }

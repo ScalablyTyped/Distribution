@@ -18,19 +18,15 @@ trait GetBranchRequest extends StObject {
 }
 object GetBranchRequest {
   
-  @scala.inline
-  def apply(appId: AppId, branchName: BranchName): GetBranchRequest = {
+  inline def apply(appId: AppId, branchName: BranchName): GetBranchRequest = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any], branchName = branchName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBranchRequest]
   }
   
-  @scala.inline
-  implicit class GetBranchRequestMutableBuilder[Self <: GetBranchRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetBranchRequest](x: Self) {
     
-    @scala.inline
-    def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: AppId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchName(value: BranchName): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
+    inline def setBranchName(value: BranchName): Self = StObject.set(x, "branchName", value.asInstanceOf[js.Any])
   }
 }

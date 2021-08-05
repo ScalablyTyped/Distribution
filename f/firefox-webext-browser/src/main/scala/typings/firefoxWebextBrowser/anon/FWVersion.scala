@@ -20,8 +20,7 @@ trait FWVersion extends StObject {
 }
 object FWVersion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FWVersion: String,
     HWVersion: String,
     isLoggedIn: String,
@@ -33,25 +32,18 @@ object FWVersion {
     __obj.asInstanceOf[FWVersion]
   }
   
-  @scala.inline
-  implicit class FWVersionMutableBuilder[Self <: FWVersion] (val x: Self) extends AnyVal {
+  extension [Self <: FWVersion](x: Self) {
     
-    @scala.inline
-    def setFWVersion(value: String): Self = StObject.set(x, "FWVersion", value.asInstanceOf[js.Any])
+    inline def setFWVersion(value: String): Self = StObject.set(x, "FWVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHWVersion(value: String): Self = StObject.set(x, "HWVersion", value.asInstanceOf[js.Any])
+    inline def setHWVersion(value: String): Self = StObject.set(x, "HWVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLoggedIn(value: String): Self = StObject.set(x, "isLoggedIn", value.asInstanceOf[js.Any])
+    inline def setIsLoggedIn(value: String): Self = StObject.set(x, "isLoggedIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
+    inline def setManufacturer(value: String): Self = StObject.set(x, "manufacturer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerial(value: String): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
+    inline def setSerial(value: String): Self = StObject.set(x, "serial", value.asInstanceOf[js.Any])
   }
 }

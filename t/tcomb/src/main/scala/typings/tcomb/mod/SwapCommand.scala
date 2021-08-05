@@ -14,16 +14,13 @@ trait SwapCommand
 }
 object SwapCommand {
   
-  @scala.inline
-  def apply($swap: From): SwapCommand = {
+  inline def apply($swap: From): SwapCommand = {
     val __obj = js.Dynamic.literal($swap = $swap.asInstanceOf[js.Any])
     __obj.asInstanceOf[SwapCommand]
   }
   
-  @scala.inline
-  implicit class SwapCommandMutableBuilder[Self <: SwapCommand] (val x: Self) extends AnyVal {
+  extension [Self <: SwapCommand](x: Self) {
     
-    @scala.inline
-    def set$swap(value: From): Self = StObject.set(x, "$swap", value.asInstanceOf[js.Any])
+    inline def set$swap(value: From): Self = StObject.set(x, "$swap", value.asInstanceOf[js.Any])
   }
 }

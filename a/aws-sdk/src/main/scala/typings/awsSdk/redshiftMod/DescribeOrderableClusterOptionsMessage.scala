@@ -28,37 +28,27 @@ trait DescribeOrderableClusterOptionsMessage extends StObject {
 }
 object DescribeOrderableClusterOptionsMessage {
   
-  @scala.inline
-  def apply(): DescribeOrderableClusterOptionsMessage = {
+  inline def apply(): DescribeOrderableClusterOptionsMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeOrderableClusterOptionsMessage]
   }
   
-  @scala.inline
-  implicit class DescribeOrderableClusterOptionsMessageMutableBuilder[Self <: DescribeOrderableClusterOptionsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeOrderableClusterOptionsMessage](x: Self) {
     
-    @scala.inline
-    def setClusterVersion(value: String): Self = StObject.set(x, "ClusterVersion", value.asInstanceOf[js.Any])
+    inline def setClusterVersion(value: String): Self = StObject.set(x, "ClusterVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterVersionUndefined: Self = StObject.set(x, "ClusterVersion", js.undefined)
+    inline def setClusterVersionUndefined: Self = StObject.set(x, "ClusterVersion", js.undefined)
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
+    inline def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
+    inline def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
-    @scala.inline
-    def setNodeType(value: String): Self = StObject.set(x, "NodeType", value.asInstanceOf[js.Any])
+    inline def setNodeType(value: String): Self = StObject.set(x, "NodeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeTypeUndefined: Self = StObject.set(x, "NodeType", js.undefined)
+    inline def setNodeTypeUndefined: Self = StObject.set(x, "NodeType", js.undefined)
   }
 }

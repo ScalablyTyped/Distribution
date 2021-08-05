@@ -25,8 +25,7 @@ trait Viewporter extends StObject {
 }
 object Viewporter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ACTIVE: Boolean,
     READY: Boolean,
     change: EventListener => Unit,
@@ -40,28 +39,20 @@ object Viewporter {
     __obj.asInstanceOf[Viewporter]
   }
   
-  @scala.inline
-  implicit class ViewporterMutableBuilder[Self <: Viewporter] (val x: Self) extends AnyVal {
+  extension [Self <: Viewporter](x: Self) {
     
-    @scala.inline
-    def setACTIVE(value: Boolean): Self = StObject.set(x, "ACTIVE", value.asInstanceOf[js.Any])
+    inline def setACTIVE(value: Boolean): Self = StObject.set(x, "ACTIVE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChange(value: EventListener => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
+    inline def setChange(value: EventListener => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setForceDetection(value: Boolean): Self = StObject.set(x, "forceDetection", value.asInstanceOf[js.Any])
+    inline def setForceDetection(value: Boolean): Self = StObject.set(x, "forceDetection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLandscape(value: () => Boolean): Self = StObject.set(x, "isLandscape", js.Any.fromFunction0(value))
+    inline def setIsLandscape(value: () => Boolean): Self = StObject.set(x, "isLandscape", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPreventPageScroll(value: Boolean): Self = StObject.set(x, "preventPageScroll", value.asInstanceOf[js.Any])
+    inline def setPreventPageScroll(value: Boolean): Self = StObject.set(x, "preventPageScroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setREADY(value: Boolean): Self = StObject.set(x, "READY", value.asInstanceOf[js.Any])
+    inline def setREADY(value: Boolean): Self = StObject.set(x, "READY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
+    inline def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
   }
 }

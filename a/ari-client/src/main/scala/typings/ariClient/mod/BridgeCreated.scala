@@ -16,17 +16,14 @@ trait BridgeCreated
 }
 object BridgeCreated {
   
-  @scala.inline
-  def apply(application: String, bridge: Bridge, timestamp: Date, `type`: String): BridgeCreated = {
+  inline def apply(application: String, bridge: Bridge, timestamp: Date, `type`: String): BridgeCreated = {
     val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any], bridge = bridge.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BridgeCreated]
   }
   
-  @scala.inline
-  implicit class BridgeCreatedMutableBuilder[Self <: BridgeCreated] (val x: Self) extends AnyVal {
+  extension [Self <: BridgeCreated](x: Self) {
     
-    @scala.inline
-    def setBridge(value: Bridge): Self = StObject.set(x, "bridge", value.asInstanceOf[js.Any])
+    inline def setBridge(value: Bridge): Self = StObject.set(x, "bridge", value.asInstanceOf[js.Any])
   }
 }

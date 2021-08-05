@@ -35,43 +35,43 @@ object commandpaletteMod {
     /**
       * Activate the next enabled command item.
       */
-    var _activateNextItem: js.Any = js.native
+    /* private */ var _activateNextItem: js.Any = js.native
     
     /**
       * Activate the previous enabled command item.
       */
-    var _activatePreviousItem: js.Any = js.native
+    /* private */ var _activatePreviousItem: js.Any = js.native
     
-    var _activeIndex: js.Any = js.native
+    /* private */ var _activeIndex: js.Any = js.native
     
     /**
       * Handle the `'click'` event for the command palette.
       */
-    var _evtClick: js.Any = js.native
+    /* private */ var _evtClick: js.Any = js.native
     
     /**
       * Handle the `'keydown'` event for the command palette.
       */
-    var _evtKeyDown: js.Any = js.native
+    /* private */ var _evtKeyDown: js.Any = js.native
     
     /**
       * Execute the command item at the given index, if possible.
       */
-    var _execute: js.Any = js.native
+    /* private */ var _execute: js.Any = js.native
     
-    var _items: js.Any = js.native
+    /* private */ var _items: js.Any = js.native
     
     /**
       * A signal handler for generic command changes.
       */
-    var _onGenericChange: js.Any = js.native
+    /* private */ var _onGenericChange: js.Any = js.native
     
-    var _results: js.Any = js.native
+    /* private */ var _results: js.Any = js.native
     
     /**
       * Toggle the focused modifier based on the input node focus state.
       */
-    var _toggleFocused: js.Any = js.native
+    /* private */ var _toggleFocused: js.Any = js.native
     
     /**
       * Add a command item to the command palette.
@@ -356,17 +356,14 @@ object commandpaletteMod {
     }
     object IEmptyMessageRenderData {
       
-      @scala.inline
-      def apply(query: String): IEmptyMessageRenderData = {
+      inline def apply(query: String): IEmptyMessageRenderData = {
         val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
         __obj.asInstanceOf[IEmptyMessageRenderData]
       }
       
-      @scala.inline
-      implicit class IEmptyMessageRenderDataMutableBuilder[Self <: IEmptyMessageRenderData] (val x: Self) extends AnyVal {
+      extension [Self <: IEmptyMessageRenderData](x: Self) {
         
-        @scala.inline
-        def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+        inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       }
     }
     
@@ -387,26 +384,20 @@ object commandpaletteMod {
     }
     object IHeaderRenderData {
       
-      @scala.inline
-      def apply(category: String): IHeaderRenderData = {
+      inline def apply(category: String): IHeaderRenderData = {
         val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], indices = null)
         __obj.asInstanceOf[IHeaderRenderData]
       }
       
-      @scala.inline
-      implicit class IHeaderRenderDataMutableBuilder[Self <: IHeaderRenderData] (val x: Self) extends AnyVal {
+      extension [Self <: IHeaderRenderData](x: Self) {
         
-        @scala.inline
-        def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+        inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndices(value: js.Array[Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+        inline def setIndices(value: js.Array[Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndicesNull: Self = StObject.set(x, "indices", null)
+        inline def setIndicesNull: Self = StObject.set(x, "indices", null)
         
-        @scala.inline
-        def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value :_*))
+        inline def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value :_*))
       }
     }
     
@@ -495,8 +486,7 @@ object commandpaletteMod {
     }
     object IItem {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         args: ReadonlyJSONObject,
         caption: String,
         category: String,
@@ -515,59 +505,41 @@ object commandpaletteMod {
         __obj.asInstanceOf[IItem]
       }
       
-      @scala.inline
-      implicit class IItemMutableBuilder[Self <: IItem] (val x: Self) extends AnyVal {
+      extension [Self <: IItem](x: Self) {
         
-        @scala.inline
-        def setArgs(value: ReadonlyJSONObject): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+        inline def setArgs(value: ReadonlyJSONObject): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+        inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+        inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+        inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDataset(value: Dataset): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+        inline def setDataset(value: Dataset): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIcon(value: typings.luminoVirtualdom.mod.VirtualElement.IRenderer | String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        inline def setIcon(value: typings.luminoVirtualdom.mod.VirtualElement.IRenderer | String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+        inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIconLabel(value: String): Self = StObject.set(x, "iconLabel", value.asInstanceOf[js.Any])
+        inline def setIconLabel(value: String): Self = StObject.set(x, "iconLabel", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+        inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
         
-        @scala.inline
-        def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+        inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsToggled(value: Boolean): Self = StObject.set(x, "isToggled", value.asInstanceOf[js.Any])
+        inline def setIsToggled(value: Boolean): Self = StObject.set(x, "isToggled", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
+        inline def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeyBinding(value: IKeyBinding): Self = StObject.set(x, "keyBinding", value.asInstanceOf[js.Any])
+        inline def setKeyBinding(value: IKeyBinding): Self = StObject.set(x, "keyBinding", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeyBindingNull: Self = StObject.set(x, "keyBinding", null)
+        inline def setKeyBindingNull: Self = StObject.set(x, "keyBinding", null)
         
-        @scala.inline
-        def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+        inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+        inline def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
       }
     }
     
@@ -609,32 +581,24 @@ object commandpaletteMod {
     }
     object IItemOptions {
       
-      @scala.inline
-      def apply(category: String, command: String): IItemOptions = {
+      inline def apply(category: String, command: String): IItemOptions = {
         val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any])
         __obj.asInstanceOf[IItemOptions]
       }
       
-      @scala.inline
-      implicit class IItemOptionsMutableBuilder[Self <: IItemOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IItemOptions](x: Self) {
         
-        @scala.inline
-        def setArgs(value: ReadonlyJSONObject): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+        inline def setArgs(value: ReadonlyJSONObject): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+        inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
         
-        @scala.inline
-        def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+        inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+        inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+        inline def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
+        inline def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
       }
     }
     
@@ -660,29 +624,22 @@ object commandpaletteMod {
     }
     object IItemRenderData {
       
-      @scala.inline
-      def apply(active: Boolean, item: IItem): IItemRenderData = {
+      inline def apply(active: Boolean, item: IItem): IItemRenderData = {
         val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], indices = null)
         __obj.asInstanceOf[IItemRenderData]
       }
       
-      @scala.inline
-      implicit class IItemRenderDataMutableBuilder[Self <: IItemRenderData] (val x: Self) extends AnyVal {
+      extension [Self <: IItemRenderData](x: Self) {
         
-        @scala.inline
-        def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+        inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndices(value: js.Array[Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+        inline def setIndices(value: js.Array[Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndicesNull: Self = StObject.set(x, "indices", null)
+        inline def setIndicesNull: Self = StObject.set(x, "indices", null)
         
-        @scala.inline
-        def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value :_*))
+        inline def setIndicesVarargs(value: Double*): Self = StObject.set(x, "indices", js.Array(value :_*))
         
-        @scala.inline
-        def setItem(value: IItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+        inline def setItem(value: IItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       }
     }
     
@@ -705,23 +662,18 @@ object commandpaletteMod {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(commands: CommandRegistry): IOptions = {
+      inline def apply(commands: CommandRegistry): IOptions = {
         val __obj = js.Dynamic.literal(commands = commands.asInstanceOf[js.Any])
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setCommands(value: CommandRegistry): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
+        inline def setCommands(value: CommandRegistry): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRenderer(value: IRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
+        inline def setRenderer(value: IRenderer): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
+        inline def setRendererUndefined: Self = StObject.set(x, "renderer", js.undefined)
       }
     }
     
@@ -762,8 +714,7 @@ object commandpaletteMod {
     }
     object IRenderer {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         renderEmptyMessage: IEmptyMessageRenderData => VirtualElement,
         renderHeader: IHeaderRenderData => VirtualElement,
         renderItem: IItemRenderData => VirtualElement
@@ -772,17 +723,13 @@ object commandpaletteMod {
         __obj.asInstanceOf[IRenderer]
       }
       
-      @scala.inline
-      implicit class IRendererMutableBuilder[Self <: IRenderer] (val x: Self) extends AnyVal {
+      extension [Self <: IRenderer](x: Self) {
         
-        @scala.inline
-        def setRenderEmptyMessage(value: IEmptyMessageRenderData => VirtualElement): Self = StObject.set(x, "renderEmptyMessage", js.Any.fromFunction1(value))
+        inline def setRenderEmptyMessage(value: IEmptyMessageRenderData => VirtualElement): Self = StObject.set(x, "renderEmptyMessage", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setRenderHeader(value: IHeaderRenderData => VirtualElement): Self = StObject.set(x, "renderHeader", js.Any.fromFunction1(value))
+        inline def setRenderHeader(value: IHeaderRenderData => VirtualElement): Self = StObject.set(x, "renderHeader", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setRenderItem(value: IItemRenderData => VirtualElement): Self = StObject.set(x, "renderItem", js.Any.fromFunction1(value))
+        inline def setRenderItem(value: IItemRenderData => VirtualElement): Self = StObject.set(x, "renderItem", js.Any.fromFunction1(value))
       }
     }
   }

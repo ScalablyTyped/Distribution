@@ -18,22 +18,17 @@ trait PutDataCatalogEncryptionSettingsRequest extends StObject {
 }
 object PutDataCatalogEncryptionSettingsRequest {
   
-  @scala.inline
-  def apply(DataCatalogEncryptionSettings: DataCatalogEncryptionSettings): PutDataCatalogEncryptionSettingsRequest = {
+  inline def apply(DataCatalogEncryptionSettings: DataCatalogEncryptionSettings): PutDataCatalogEncryptionSettingsRequest = {
     val __obj = js.Dynamic.literal(DataCatalogEncryptionSettings = DataCatalogEncryptionSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutDataCatalogEncryptionSettingsRequest]
   }
   
-  @scala.inline
-  implicit class PutDataCatalogEncryptionSettingsRequestMutableBuilder[Self <: PutDataCatalogEncryptionSettingsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutDataCatalogEncryptionSettingsRequest](x: Self) {
     
-    @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
+    inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
+    inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
-    @scala.inline
-    def setDataCatalogEncryptionSettings(value: DataCatalogEncryptionSettings): Self = StObject.set(x, "DataCatalogEncryptionSettings", value.asInstanceOf[js.Any])
+    inline def setDataCatalogEncryptionSettings(value: DataCatalogEncryptionSettings): Self = StObject.set(x, "DataCatalogEncryptionSettings", value.asInstanceOf[js.Any])
   }
 }

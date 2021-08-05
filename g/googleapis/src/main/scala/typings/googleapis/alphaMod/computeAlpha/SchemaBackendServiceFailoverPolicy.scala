@@ -39,31 +39,23 @@ trait SchemaBackendServiceFailoverPolicy extends StObject {
 }
 object SchemaBackendServiceFailoverPolicy {
   
-  @scala.inline
-  def apply(): SchemaBackendServiceFailoverPolicy = {
+  inline def apply(): SchemaBackendServiceFailoverPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBackendServiceFailoverPolicy]
   }
   
-  @scala.inline
-  implicit class SchemaBackendServiceFailoverPolicyMutableBuilder[Self <: SchemaBackendServiceFailoverPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBackendServiceFailoverPolicy](x: Self) {
     
-    @scala.inline
-    def setDisableConnectionDrainOnFailover(value: Boolean): Self = StObject.set(x, "disableConnectionDrainOnFailover", value.asInstanceOf[js.Any])
+    inline def setDisableConnectionDrainOnFailover(value: Boolean): Self = StObject.set(x, "disableConnectionDrainOnFailover", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableConnectionDrainOnFailoverUndefined: Self = StObject.set(x, "disableConnectionDrainOnFailover", js.undefined)
+    inline def setDisableConnectionDrainOnFailoverUndefined: Self = StObject.set(x, "disableConnectionDrainOnFailover", js.undefined)
     
-    @scala.inline
-    def setDropTrafficIfUnhealthy(value: Boolean): Self = StObject.set(x, "dropTrafficIfUnhealthy", value.asInstanceOf[js.Any])
+    inline def setDropTrafficIfUnhealthy(value: Boolean): Self = StObject.set(x, "dropTrafficIfUnhealthy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropTrafficIfUnhealthyUndefined: Self = StObject.set(x, "dropTrafficIfUnhealthy", js.undefined)
+    inline def setDropTrafficIfUnhealthyUndefined: Self = StObject.set(x, "dropTrafficIfUnhealthy", js.undefined)
     
-    @scala.inline
-    def setFailoverRatio(value: Double): Self = StObject.set(x, "failoverRatio", value.asInstanceOf[js.Any])
+    inline def setFailoverRatio(value: Double): Self = StObject.set(x, "failoverRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailoverRatioUndefined: Self = StObject.set(x, "failoverRatio", js.undefined)
+    inline def setFailoverRatioUndefined: Self = StObject.set(x, "failoverRatio", js.undefined)
   }
 }

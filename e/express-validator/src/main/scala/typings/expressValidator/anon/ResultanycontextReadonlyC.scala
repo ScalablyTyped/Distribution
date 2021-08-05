@@ -18,11 +18,11 @@ trait ResultanycontextReadonlyC extends StObject {
   
   var context: ReadonlyContext = js.native
   
-  val errors: js.Any = js.native
+  /* private */ val errors: js.Any = js.native
   
   def formatWith[T2](formatter: ErrorFormatter[T2]): Result[T2] = js.native
   
-  var formatter: js.Any = js.native
+  /* private */ var formatter: js.Any = js.native
   
   def isEmpty(): Boolean = js.native
   

@@ -25,8 +25,7 @@ trait XTextViewCursor
 }
 object XTextViewCursor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     End: XTextRange,
     Position: Point,
     Start: XTextRange,
@@ -55,19 +54,14 @@ object XTextViewCursor {
     __obj.asInstanceOf[XTextViewCursor]
   }
   
-  @scala.inline
-  implicit class XTextViewCursorMutableBuilder[Self <: XTextViewCursor] (val x: Self) extends AnyVal {
+  extension [Self <: XTextViewCursor](x: Self) {
     
-    @scala.inline
-    def setGetPosition(value: () => Point): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
+    inline def setGetPosition(value: () => Point): Self = StObject.set(x, "getPosition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
+    inline def setIsVisible(value: () => Boolean): Self = StObject.set(x, "isVisible", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPosition(value: Point): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Point): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetVisible(value: Boolean => Unit): Self = StObject.set(x, "setVisible", js.Any.fromFunction1(value))
+    inline def setSetVisible(value: Boolean => Unit): Self = StObject.set(x, "setVisible", js.Any.fromFunction1(value))
   }
 }

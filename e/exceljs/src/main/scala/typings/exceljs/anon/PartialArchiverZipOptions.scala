@@ -19,43 +19,31 @@ trait PartialArchiverZipOptions extends StObject {
 }
 object PartialArchiverZipOptions {
   
-  @scala.inline
-  def apply(): PartialArchiverZipOptions = {
+  inline def apply(): PartialArchiverZipOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialArchiverZipOptions]
   }
   
-  @scala.inline
-  implicit class PartialArchiverZipOptionsMutableBuilder[Self <: PartialArchiverZipOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartialArchiverZipOptions](x: Self) {
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+    inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
-    @scala.inline
-    def setForceLocalTime(value: Boolean): Self = StObject.set(x, "forceLocalTime", value.asInstanceOf[js.Any])
+    inline def setForceLocalTime(value: Boolean): Self = StObject.set(x, "forceLocalTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceLocalTimeUndefined: Self = StObject.set(x, "forceLocalTime", js.undefined)
+    inline def setForceLocalTimeUndefined: Self = StObject.set(x, "forceLocalTime", js.undefined)
     
-    @scala.inline
-    def setForceZip64(value: Boolean): Self = StObject.set(x, "forceZip64", value.asInstanceOf[js.Any])
+    inline def setForceZip64(value: Boolean): Self = StObject.set(x, "forceZip64", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceZip64Undefined: Self = StObject.set(x, "forceZip64", js.undefined)
+    inline def setForceZip64Undefined: Self = StObject.set(x, "forceZip64", js.undefined)
     
-    @scala.inline
-    def setStore(value: Boolean): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+    inline def setStore(value: Boolean): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
+    inline def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
     
-    @scala.inline
-    def setZlib(value: PartialZlibOptions): Self = StObject.set(x, "zlib", value.asInstanceOf[js.Any])
+    inline def setZlib(value: PartialZlibOptions): Self = StObject.set(x, "zlib", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZlibUndefined: Self = StObject.set(x, "zlib", js.undefined)
+    inline def setZlibUndefined: Self = StObject.set(x, "zlib", js.undefined)
   }
 }

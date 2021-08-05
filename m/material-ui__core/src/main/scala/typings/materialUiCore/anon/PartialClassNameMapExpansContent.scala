@@ -21,49 +21,35 @@ trait PartialClassNameMapExpansContent extends StObject {
 }
 object PartialClassNameMapExpansContent {
   
-  @scala.inline
-  def apply(): PartialClassNameMapExpansContent = {
+  inline def apply(): PartialClassNameMapExpansContent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapExpansContent]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapExpansContentMutableBuilder[Self <: PartialClassNameMapExpansContent] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapExpansContent](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setExpandIcon(value: String): Self = StObject.set(x, "expandIcon", value.asInstanceOf[js.Any])
+    inline def setExpandIcon(value: String): Self = StObject.set(x, "expandIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandIconUndefined: Self = StObject.set(x, "expandIcon", js.undefined)
+    inline def setExpandIconUndefined: Self = StObject.set(x, "expandIcon", js.undefined)
     
-    @scala.inline
-    def setExpanded(value: String): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+    inline def setExpanded(value: String): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
+    inline def setExpandedUndefined: Self = StObject.set(x, "expanded", js.undefined)
     
-    @scala.inline
-    def setFocused(value: String): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
+    inline def setFocused(value: String): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusedUndefined: Self = StObject.set(x, "focused", js.undefined)
+    inline def setFocusedUndefined: Self = StObject.set(x, "focused", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

@@ -32,55 +32,39 @@ trait PrivateClusterConfig extends StObject {
 }
 object PrivateClusterConfig {
   
-  @scala.inline
-  def apply(): PrivateClusterConfig = {
+  inline def apply(): PrivateClusterConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PrivateClusterConfig]
   }
   
-  @scala.inline
-  implicit class PrivateClusterConfigMutableBuilder[Self <: PrivateClusterConfig] (val x: Self) extends AnyVal {
+  extension [Self <: PrivateClusterConfig](x: Self) {
     
-    @scala.inline
-    def setEnablePrivateEndpoint(value: Boolean): Self = StObject.set(x, "enablePrivateEndpoint", value.asInstanceOf[js.Any])
+    inline def setEnablePrivateEndpoint(value: Boolean): Self = StObject.set(x, "enablePrivateEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnablePrivateEndpointUndefined: Self = StObject.set(x, "enablePrivateEndpoint", js.undefined)
+    inline def setEnablePrivateEndpointUndefined: Self = StObject.set(x, "enablePrivateEndpoint", js.undefined)
     
-    @scala.inline
-    def setEnablePrivateNodes(value: Boolean): Self = StObject.set(x, "enablePrivateNodes", value.asInstanceOf[js.Any])
+    inline def setEnablePrivateNodes(value: Boolean): Self = StObject.set(x, "enablePrivateNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnablePrivateNodesUndefined: Self = StObject.set(x, "enablePrivateNodes", js.undefined)
+    inline def setEnablePrivateNodesUndefined: Self = StObject.set(x, "enablePrivateNodes", js.undefined)
     
-    @scala.inline
-    def setMasterGlobalAccessConfig(value: PrivateClusterMasterGlobalAccessConfig): Self = StObject.set(x, "masterGlobalAccessConfig", value.asInstanceOf[js.Any])
+    inline def setMasterGlobalAccessConfig(value: PrivateClusterMasterGlobalAccessConfig): Self = StObject.set(x, "masterGlobalAccessConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterGlobalAccessConfigUndefined: Self = StObject.set(x, "masterGlobalAccessConfig", js.undefined)
+    inline def setMasterGlobalAccessConfigUndefined: Self = StObject.set(x, "masterGlobalAccessConfig", js.undefined)
     
-    @scala.inline
-    def setMasterIpv4CidrBlock(value: String): Self = StObject.set(x, "masterIpv4CidrBlock", value.asInstanceOf[js.Any])
+    inline def setMasterIpv4CidrBlock(value: String): Self = StObject.set(x, "masterIpv4CidrBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterIpv4CidrBlockUndefined: Self = StObject.set(x, "masterIpv4CidrBlock", js.undefined)
+    inline def setMasterIpv4CidrBlockUndefined: Self = StObject.set(x, "masterIpv4CidrBlock", js.undefined)
     
-    @scala.inline
-    def setPeeringName(value: String): Self = StObject.set(x, "peeringName", value.asInstanceOf[js.Any])
+    inline def setPeeringName(value: String): Self = StObject.set(x, "peeringName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeeringNameUndefined: Self = StObject.set(x, "peeringName", js.undefined)
+    inline def setPeeringNameUndefined: Self = StObject.set(x, "peeringName", js.undefined)
     
-    @scala.inline
-    def setPrivateEndpoint(value: String): Self = StObject.set(x, "privateEndpoint", value.asInstanceOf[js.Any])
+    inline def setPrivateEndpoint(value: String): Self = StObject.set(x, "privateEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateEndpointUndefined: Self = StObject.set(x, "privateEndpoint", js.undefined)
+    inline def setPrivateEndpointUndefined: Self = StObject.set(x, "privateEndpoint", js.undefined)
     
-    @scala.inline
-    def setPublicEndpoint(value: String): Self = StObject.set(x, "publicEndpoint", value.asInstanceOf[js.Any])
+    inline def setPublicEndpoint(value: String): Self = StObject.set(x, "publicEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicEndpointUndefined: Self = StObject.set(x, "publicEndpoint", js.undefined)
+    inline def setPublicEndpointUndefined: Self = StObject.set(x, "publicEndpoint", js.undefined)
   }
 }

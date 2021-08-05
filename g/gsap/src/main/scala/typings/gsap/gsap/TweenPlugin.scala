@@ -10,16 +10,13 @@ trait TweenPlugin extends StObject {
 }
 object TweenPlugin {
   
-  @scala.inline
-  def apply(activate: js.Array[js.Any] => Boolean): TweenPlugin = {
+  inline def apply(activate: js.Array[js.Any] => Boolean): TweenPlugin = {
     val __obj = js.Dynamic.literal(activate = js.Any.fromFunction1(activate))
     __obj.asInstanceOf[TweenPlugin]
   }
   
-  @scala.inline
-  implicit class TweenPluginMutableBuilder[Self <: TweenPlugin] (val x: Self) extends AnyVal {
+  extension [Self <: TweenPlugin](x: Self) {
     
-    @scala.inline
-    def setActivate(value: js.Array[js.Any] => Boolean): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))
+    inline def setActivate(value: js.Array[js.Any] => Boolean): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))
   }
 }

@@ -18,28 +18,21 @@ trait ListBulkDeploymentDetailedReportsResponse extends StObject {
 }
 object ListBulkDeploymentDetailedReportsResponse {
   
-  @scala.inline
-  def apply(): ListBulkDeploymentDetailedReportsResponse = {
+  inline def apply(): ListBulkDeploymentDetailedReportsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListBulkDeploymentDetailedReportsResponse]
   }
   
-  @scala.inline
-  implicit class ListBulkDeploymentDetailedReportsResponseMutableBuilder[Self <: ListBulkDeploymentDetailedReportsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListBulkDeploymentDetailedReportsResponse](x: Self) {
     
-    @scala.inline
-    def setDeployments(value: BulkDeploymentResults): Self = StObject.set(x, "Deployments", value.asInstanceOf[js.Any])
+    inline def setDeployments(value: BulkDeploymentResults): Self = StObject.set(x, "Deployments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentsUndefined: Self = StObject.set(x, "Deployments", js.undefined)
+    inline def setDeploymentsUndefined: Self = StObject.set(x, "Deployments", js.undefined)
     
-    @scala.inline
-    def setDeploymentsVarargs(value: BulkDeploymentResult*): Self = StObject.set(x, "Deployments", js.Array(value :_*))
+    inline def setDeploymentsVarargs(value: BulkDeploymentResult*): Self = StObject.set(x, "Deployments", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

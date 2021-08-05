@@ -11,8 +11,7 @@ trait DecryptInput
      with typings.awsSdkClientKmsNode.typesDecryptInputMod.DecryptInput
 object DecryptInput {
   
-  @scala.inline
-  def apply(CiphertextBlob: ArrayBuffer | ArrayBufferView | String): DecryptInput = {
+  inline def apply(CiphertextBlob: ArrayBuffer | ArrayBufferView | String): DecryptInput = {
     val __obj = js.Dynamic.literal(CiphertextBlob = CiphertextBlob.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecryptInput]
   }

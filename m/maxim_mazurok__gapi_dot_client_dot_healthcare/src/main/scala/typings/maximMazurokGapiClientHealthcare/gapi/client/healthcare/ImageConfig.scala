@@ -11,19 +11,15 @@ trait ImageConfig extends StObject {
 }
 object ImageConfig {
   
-  @scala.inline
-  def apply(): ImageConfig = {
+  inline def apply(): ImageConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageConfig]
   }
   
-  @scala.inline
-  implicit class ImageConfigMutableBuilder[Self <: ImageConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ImageConfig](x: Self) {
     
-    @scala.inline
-    def setTextRedactionMode(value: String): Self = StObject.set(x, "textRedactionMode", value.asInstanceOf[js.Any])
+    inline def setTextRedactionMode(value: String): Self = StObject.set(x, "textRedactionMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextRedactionModeUndefined: Self = StObject.set(x, "textRedactionMode", js.undefined)
+    inline def setTextRedactionModeUndefined: Self = StObject.set(x, "textRedactionMode", js.undefined)
   }
 }

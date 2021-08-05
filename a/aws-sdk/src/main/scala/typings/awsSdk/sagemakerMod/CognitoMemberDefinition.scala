@@ -23,22 +23,17 @@ trait CognitoMemberDefinition extends StObject {
 }
 object CognitoMemberDefinition {
   
-  @scala.inline
-  def apply(ClientId: ClientId, UserGroup: CognitoUserGroup, UserPool: CognitoUserPool): CognitoMemberDefinition = {
+  inline def apply(ClientId: ClientId, UserGroup: CognitoUserGroup, UserPool: CognitoUserPool): CognitoMemberDefinition = {
     val __obj = js.Dynamic.literal(ClientId = ClientId.asInstanceOf[js.Any], UserGroup = UserGroup.asInstanceOf[js.Any], UserPool = UserPool.asInstanceOf[js.Any])
     __obj.asInstanceOf[CognitoMemberDefinition]
   }
   
-  @scala.inline
-  implicit class CognitoMemberDefinitionMutableBuilder[Self <: CognitoMemberDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: CognitoMemberDefinition](x: Self) {
     
-    @scala.inline
-    def setClientId(value: ClientId): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: ClientId): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserGroup(value: CognitoUserGroup): Self = StObject.set(x, "UserGroup", value.asInstanceOf[js.Any])
+    inline def setUserGroup(value: CognitoUserGroup): Self = StObject.set(x, "UserGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPool(value: CognitoUserPool): Self = StObject.set(x, "UserPool", value.asInstanceOf[js.Any])
+    inline def setUserPool(value: CognitoUserPool): Self = StObject.set(x, "UserPool", value.asInstanceOf[js.Any])
   }
 }

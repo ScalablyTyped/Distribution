@@ -23,31 +23,23 @@ trait BlueGreenDeploymentConfiguration extends StObject {
 }
 object BlueGreenDeploymentConfiguration {
   
-  @scala.inline
-  def apply(): BlueGreenDeploymentConfiguration = {
+  inline def apply(): BlueGreenDeploymentConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BlueGreenDeploymentConfiguration]
   }
   
-  @scala.inline
-  implicit class BlueGreenDeploymentConfigurationMutableBuilder[Self <: BlueGreenDeploymentConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: BlueGreenDeploymentConfiguration](x: Self) {
     
-    @scala.inline
-    def setDeploymentReadyOption(value: DeploymentReadyOption): Self = StObject.set(x, "deploymentReadyOption", value.asInstanceOf[js.Any])
+    inline def setDeploymentReadyOption(value: DeploymentReadyOption): Self = StObject.set(x, "deploymentReadyOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentReadyOptionUndefined: Self = StObject.set(x, "deploymentReadyOption", js.undefined)
+    inline def setDeploymentReadyOptionUndefined: Self = StObject.set(x, "deploymentReadyOption", js.undefined)
     
-    @scala.inline
-    def setGreenFleetProvisioningOption(value: GreenFleetProvisioningOption): Self = StObject.set(x, "greenFleetProvisioningOption", value.asInstanceOf[js.Any])
+    inline def setGreenFleetProvisioningOption(value: GreenFleetProvisioningOption): Self = StObject.set(x, "greenFleetProvisioningOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGreenFleetProvisioningOptionUndefined: Self = StObject.set(x, "greenFleetProvisioningOption", js.undefined)
+    inline def setGreenFleetProvisioningOptionUndefined: Self = StObject.set(x, "greenFleetProvisioningOption", js.undefined)
     
-    @scala.inline
-    def setTerminateBlueInstancesOnDeploymentSuccess(value: BlueInstanceTerminationOption): Self = StObject.set(x, "terminateBlueInstancesOnDeploymentSuccess", value.asInstanceOf[js.Any])
+    inline def setTerminateBlueInstancesOnDeploymentSuccess(value: BlueInstanceTerminationOption): Self = StObject.set(x, "terminateBlueInstancesOnDeploymentSuccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerminateBlueInstancesOnDeploymentSuccessUndefined: Self = StObject.set(x, "terminateBlueInstancesOnDeploymentSuccess", js.undefined)
+    inline def setTerminateBlueInstancesOnDeploymentSuccessUndefined: Self = StObject.set(x, "terminateBlueInstancesOnDeploymentSuccess", js.undefined)
   }
 }

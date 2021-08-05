@@ -18,15 +18,13 @@ trait CharacterSet
      with QuantifiableElement
 object CharacterSet {
   
-  @scala.inline
-  def AnyCharacterSet(end: Double, parent: Alternative | Quantifier, raw: String, start: Double): typings.regexpp.astMod.AnyCharacterSet = {
+  inline def AnyCharacterSet(end: Double, parent: Alternative | Quantifier, raw: String, start: Double): typings.regexpp.astMod.AnyCharacterSet = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], kind = "any", parent = parent.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CharacterSet")
     __obj.asInstanceOf[typings.regexpp.astMod.AnyCharacterSet]
   }
   
-  @scala.inline
-  def EscapeCharacterSet(
+  inline def EscapeCharacterSet(
     end: Double,
     kind: digit | space | word,
     negate: Boolean,
@@ -39,8 +37,7 @@ object CharacterSet {
     __obj.asInstanceOf[typings.regexpp.astMod.EscapeCharacterSet]
   }
   
-  @scala.inline
-  def UnicodePropertyCharacterSet(
+  inline def UnicodePropertyCharacterSet(
     end: Double,
     key: String,
     negate: Boolean,

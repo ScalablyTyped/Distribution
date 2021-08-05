@@ -28,37 +28,27 @@ trait Notifications extends StObject {
 }
 object Notifications {
   
-  @scala.inline
-  def apply(): Notifications = {
+  inline def apply(): Notifications = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Notifications]
   }
   
-  @scala.inline
-  implicit class NotificationsMutableBuilder[Self <: Notifications] (val x: Self) extends AnyVal {
+  extension [Self <: Notifications](x: Self) {
     
-    @scala.inline
-    def setCompleted(value: SnsTopic): Self = StObject.set(x, "Completed", value.asInstanceOf[js.Any])
+    inline def setCompleted(value: SnsTopic): Self = StObject.set(x, "Completed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletedUndefined: Self = StObject.set(x, "Completed", js.undefined)
+    inline def setCompletedUndefined: Self = StObject.set(x, "Completed", js.undefined)
     
-    @scala.inline
-    def setError(value: SnsTopic): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
+    inline def setError(value: SnsTopic): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
     
-    @scala.inline
-    def setProgressing(value: SnsTopic): Self = StObject.set(x, "Progressing", value.asInstanceOf[js.Any])
+    inline def setProgressing(value: SnsTopic): Self = StObject.set(x, "Progressing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressingUndefined: Self = StObject.set(x, "Progressing", js.undefined)
+    inline def setProgressingUndefined: Self = StObject.set(x, "Progressing", js.undefined)
     
-    @scala.inline
-    def setWarning(value: SnsTopic): Self = StObject.set(x, "Warning", value.asInstanceOf[js.Any])
+    inline def setWarning(value: SnsTopic): Self = StObject.set(x, "Warning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningUndefined: Self = StObject.set(x, "Warning", js.undefined)
+    inline def setWarningUndefined: Self = StObject.set(x, "Warning", js.undefined)
   }
 }

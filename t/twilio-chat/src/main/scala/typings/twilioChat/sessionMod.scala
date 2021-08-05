@@ -27,11 +27,11 @@ object sessionMod {
       */
     def addCommand(action: String, params: js.Object): js.Promise[js.Any] = js.native
     
-    var config: js.Any = js.native
+    /* private */ var config: js.Any = js.native
     
-    var currentContext: js.Any = js.native
+    /* private */ var currentContext: js.Any = js.native
     
-    var endpointPlatform: js.Any = js.native
+    /* private */ var endpointPlatform: js.Any = js.native
     
     def getChannelsId(): js.Promise[String] = js.native
     
@@ -43,37 +43,37 @@ object sessionMod {
     
     def getMyChannelsId(): js.Promise[String] = js.native
     
-    var getSessionContext: js.Any = js.native
+    /* private */ var getSessionContext: js.Any = js.native
     
     def getSessionLinks(): js.Promise[SessionLinks] = js.native
     
     def getUsersData(): js.Promise[Identity] = js.native
     
-    var handleContextUpdate: js.Any = js.native
+    /* private */ var handleContextUpdate: js.Any = js.native
     
     def identity: String = js.native
     
     def initialize(): js.Promise[Session] = js.native
     
-    var pendingCommands: js.Any = js.native
+    /* private */ var pendingCommands: js.Any = js.native
     
     /**
       * @private
       */
-    var processCommand: js.Any = js.native
+    /* private */ var processCommand: js.Any = js.native
     
     /**
       * @private
       */
-    var processCommandResponse: js.Any = js.native
+    /* private */ var processCommandResponse: js.Any = js.native
     
     def reachabilityEnabled: Boolean = js.native
     
     val services: SessionServices = js.native
     
-    val sessionInfo: js.Any = js.native
+    /* private */ val sessionInfo: js.Any = js.native
     
-    var sessionStreamPromise: js.Any = js.native
+    /* private */ var sessionStreamPromise: js.Any = js.native
   }
   
   trait SessionLinks extends StObject {
@@ -92,8 +92,7 @@ object sessionMod {
   }
   object SessionLinks {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       mediaServiceUrl: String,
       myChannelsUrl: String,
       publicChannelsUrl: String,
@@ -105,26 +104,19 @@ object sessionMod {
       __obj.asInstanceOf[SessionLinks]
     }
     
-    @scala.inline
-    implicit class SessionLinksMutableBuilder[Self <: SessionLinks] (val x: Self) extends AnyVal {
+    extension [Self <: SessionLinks](x: Self) {
       
-      @scala.inline
-      def setMediaServiceUrl(value: String): Self = StObject.set(x, "mediaServiceUrl", value.asInstanceOf[js.Any])
+      inline def setMediaServiceUrl(value: String): Self = StObject.set(x, "mediaServiceUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMyChannelsUrl(value: String): Self = StObject.set(x, "myChannelsUrl", value.asInstanceOf[js.Any])
+      inline def setMyChannelsUrl(value: String): Self = StObject.set(x, "myChannelsUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicChannelsUrl(value: String): Self = StObject.set(x, "publicChannelsUrl", value.asInstanceOf[js.Any])
+      inline def setPublicChannelsUrl(value: String): Self = StObject.set(x, "publicChannelsUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyncListUrl(value: String): Self = StObject.set(x, "syncListUrl", value.asInstanceOf[js.Any])
+      inline def setSyncListUrl(value: String): Self = StObject.set(x, "syncListUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypingUrl(value: String): Self = StObject.set(x, "typingUrl", value.asInstanceOf[js.Any])
+      inline def setTypingUrl(value: String): Self = StObject.set(x, "typingUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsersUrl(value: String): Self = StObject.set(x, "usersUrl", value.asInstanceOf[js.Any])
+      inline def setUsersUrl(value: String): Self = StObject.set(x, "usersUrl", value.asInstanceOf[js.Any])
     }
   }
   
@@ -134,17 +126,14 @@ object sessionMod {
   }
   object SessionServices {
     
-    @scala.inline
-    def apply(syncClient: SyncClient): SessionServices = {
+    inline def apply(syncClient: SyncClient): SessionServices = {
       val __obj = js.Dynamic.literal(syncClient = syncClient.asInstanceOf[js.Any])
       __obj.asInstanceOf[SessionServices]
     }
     
-    @scala.inline
-    implicit class SessionServicesMutableBuilder[Self <: SessionServices] (val x: Self) extends AnyVal {
+    extension [Self <: SessionServices](x: Self) {
       
-      @scala.inline
-      def setSyncClient(value: SyncClient): Self = StObject.set(x, "syncClient", value.asInstanceOf[js.Any])
+      inline def setSyncClient(value: SyncClient): Self = StObject.set(x, "syncClient", value.asInstanceOf[js.Any])
     }
   }
 }

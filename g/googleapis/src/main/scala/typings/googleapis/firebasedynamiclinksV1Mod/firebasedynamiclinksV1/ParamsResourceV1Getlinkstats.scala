@@ -34,37 +34,27 @@ trait ParamsResourceV1Getlinkstats
 }
 object ParamsResourceV1Getlinkstats {
   
-  @scala.inline
-  def apply(): ParamsResourceV1Getlinkstats = {
+  inline def apply(): ParamsResourceV1Getlinkstats = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceV1Getlinkstats]
   }
   
-  @scala.inline
-  implicit class ParamsResourceV1GetlinkstatsMutableBuilder[Self <: ParamsResourceV1Getlinkstats] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceV1Getlinkstats](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setDurationDays(value: String): Self = StObject.set(x, "durationDays", value.asInstanceOf[js.Any])
+    inline def setDurationDays(value: String): Self = StObject.set(x, "durationDays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationDaysUndefined: Self = StObject.set(x, "durationDays", js.undefined)
+    inline def setDurationDaysUndefined: Self = StObject.set(x, "durationDays", js.undefined)
     
-    @scala.inline
-    def setDynamicLink(value: String): Self = StObject.set(x, "dynamicLink", value.asInstanceOf[js.Any])
+    inline def setDynamicLink(value: String): Self = StObject.set(x, "dynamicLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicLinkUndefined: Self = StObject.set(x, "dynamicLink", js.undefined)
+    inline def setDynamicLinkUndefined: Self = StObject.set(x, "dynamicLink", js.undefined)
     
-    @scala.inline
-    def setSdkVersion(value: String): Self = StObject.set(x, "sdkVersion", value.asInstanceOf[js.Any])
+    inline def setSdkVersion(value: String): Self = StObject.set(x, "sdkVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSdkVersionUndefined: Self = StObject.set(x, "sdkVersion", js.undefined)
+    inline def setSdkVersionUndefined: Self = StObject.set(x, "sdkVersion", js.undefined)
   }
 }

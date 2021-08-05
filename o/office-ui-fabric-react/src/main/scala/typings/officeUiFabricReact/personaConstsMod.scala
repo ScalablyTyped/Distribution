@@ -103,9 +103,7 @@ object personaConstsMod {
     val size8: /* "20px" */ String = js.native
   }
   
-  @scala.inline
-  def presenceBoolean(presence: PersonaPresence): IsAvailable = ^.asInstanceOf[js.Dynamic].applyDynamic("presenceBoolean")(presence.asInstanceOf[js.Any]).asInstanceOf[IsAvailable]
+  inline def presenceBoolean(presence: PersonaPresence): IsAvailable = ^.asInstanceOf[js.Dynamic].applyDynamic("presenceBoolean")(presence.asInstanceOf[js.Any]).asInstanceOf[IsAvailable]
   
-  @scala.inline
-  def sizeBoolean(size: PersonaSize): IsSize10 = ^.asInstanceOf[js.Dynamic].applyDynamic("sizeBoolean")(size.asInstanceOf[js.Any]).asInstanceOf[IsSize10]
+  inline def sizeBoolean(size: PersonaSize): IsSize10 = ^.asInstanceOf[js.Dynamic].applyDynamic("sizeBoolean")(size.asInstanceOf[js.Any]).asInstanceOf[IsSize10]
 }

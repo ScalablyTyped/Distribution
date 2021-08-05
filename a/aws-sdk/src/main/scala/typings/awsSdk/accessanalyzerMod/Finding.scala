@@ -78,8 +78,7 @@ trait Finding extends StObject {
 }
 object Finding {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     analyzedAt: Timestamp,
     condition: ConditionKeyMap,
     createdAt: Timestamp,
@@ -93,73 +92,50 @@ object Finding {
     __obj.asInstanceOf[Finding]
   }
   
-  @scala.inline
-  implicit class FindingMutableBuilder[Self <: Finding] (val x: Self) extends AnyVal {
+  extension [Self <: Finding](x: Self) {
     
-    @scala.inline
-    def setAction(value: ActionList): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: ActionList): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setActionVarargs(value: String*): Self = StObject.set(x, "action", js.Array(value :_*))
+    inline def setActionVarargs(value: String*): Self = StObject.set(x, "action", js.Array(value :_*))
     
-    @scala.inline
-    def setAnalyzedAt(value: Timestamp): Self = StObject.set(x, "analyzedAt", value.asInstanceOf[js.Any])
+    inline def setAnalyzedAt(value: Timestamp): Self = StObject.set(x, "analyzedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCondition(value: ConditionKeyMap): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: ConditionKeyMap): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: Timestamp): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setId(value: FindingId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: FindingId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPublic(value: Boolean): Self = StObject.set(x, "isPublic", value.asInstanceOf[js.Any])
+    inline def setIsPublic(value: Boolean): Self = StObject.set(x, "isPublic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPublicUndefined: Self = StObject.set(x, "isPublic", js.undefined)
+    inline def setIsPublicUndefined: Self = StObject.set(x, "isPublic", js.undefined)
     
-    @scala.inline
-    def setPrincipal(value: PrincipalMap): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
+    inline def setPrincipal(value: PrincipalMap): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalUndefined: Self = StObject.set(x, "principal", js.undefined)
+    inline def setPrincipalUndefined: Self = StObject.set(x, "principal", js.undefined)
     
-    @scala.inline
-    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceOwnerAccount(value: String): Self = StObject.set(x, "resourceOwnerAccount", value.asInstanceOf[js.Any])
+    inline def setResourceOwnerAccount(value: String): Self = StObject.set(x, "resourceOwnerAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ResourceType): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
     
-    @scala.inline
-    def setSources(value: FindingSourceList): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+    inline def setSources(value: FindingSourceList): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
+    inline def setSourcesUndefined: Self = StObject.set(x, "sources", js.undefined)
     
-    @scala.inline
-    def setSourcesVarargs(value: FindingSource*): Self = StObject.set(x, "sources", js.Array(value :_*))
+    inline def setSourcesVarargs(value: FindingSource*): Self = StObject.set(x, "sources", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: FindingStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: FindingStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: Timestamp): Self = StObject.set(x, "updatedAt", value.asInstanceOf[js.Any])
   }
 }

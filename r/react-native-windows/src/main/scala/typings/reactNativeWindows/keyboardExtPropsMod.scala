@@ -79,47 +79,34 @@ object keyboardExtPropsMod {
   }
   object IHandledKeyboardEvent {
     
-    @scala.inline
-    def apply(code: String): IHandledKeyboardEvent = {
+    inline def apply(code: String): IHandledKeyboardEvent = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
       __obj.asInstanceOf[IHandledKeyboardEvent]
     }
     
-    @scala.inline
-    implicit class IHandledKeyboardEventMutableBuilder[Self <: IHandledKeyboardEvent] (val x: Self) extends AnyVal {
+    extension [Self <: IHandledKeyboardEvent](x: Self) {
       
-      @scala.inline
-      def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
+      inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAltKeyUndefined: Self = StObject.set(x, "altKey", js.undefined)
+      inline def setAltKeyUndefined: Self = StObject.set(x, "altKey", js.undefined)
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
+      inline def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtrlKeyUndefined: Self = StObject.set(x, "ctrlKey", js.undefined)
+      inline def setCtrlKeyUndefined: Self = StObject.set(x, "ctrlKey", js.undefined)
       
-      @scala.inline
-      def setHandledEventPhase(value: HandledEventPhase): Self = StObject.set(x, "handledEventPhase", value.asInstanceOf[js.Any])
+      inline def setHandledEventPhase(value: HandledEventPhase): Self = StObject.set(x, "handledEventPhase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandledEventPhaseUndefined: Self = StObject.set(x, "handledEventPhase", js.undefined)
+      inline def setHandledEventPhaseUndefined: Self = StObject.set(x, "handledEventPhase", js.undefined)
       
-      @scala.inline
-      def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
+      inline def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaKeyUndefined: Self = StObject.set(x, "metaKey", js.undefined)
+      inline def setMetaKeyUndefined: Self = StObject.set(x, "metaKey", js.undefined)
       
-      @scala.inline
-      def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
+      inline def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShiftKeyUndefined: Self = StObject.set(x, "shiftKey", js.undefined)
+      inline def setShiftKeyUndefined: Self = StObject.set(x, "shiftKey", js.undefined)
     }
   }
   
@@ -141,56 +128,40 @@ object keyboardExtPropsMod {
   }
   object IKeyboardProps {
     
-    @scala.inline
-    def apply(): IKeyboardProps = {
+    inline def apply(): IKeyboardProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IKeyboardProps]
     }
     
-    @scala.inline
-    implicit class IKeyboardPropsMutableBuilder[Self <: IKeyboardProps] (val x: Self) extends AnyVal {
+    extension [Self <: IKeyboardProps](x: Self) {
       
-      @scala.inline
-      def setKeyDownEvents(value: js.Array[IHandledKeyboardEvent]): Self = StObject.set(x, "keyDownEvents", value.asInstanceOf[js.Any])
+      inline def setKeyDownEvents(value: js.Array[IHandledKeyboardEvent]): Self = StObject.set(x, "keyDownEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyDownEventsUndefined: Self = StObject.set(x, "keyDownEvents", js.undefined)
+      inline def setKeyDownEventsUndefined: Self = StObject.set(x, "keyDownEvents", js.undefined)
       
-      @scala.inline
-      def setKeyDownEventsVarargs(value: IHandledKeyboardEvent*): Self = StObject.set(x, "keyDownEvents", js.Array(value :_*))
+      inline def setKeyDownEventsVarargs(value: IHandledKeyboardEvent*): Self = StObject.set(x, "keyDownEvents", js.Array(value :_*))
       
-      @scala.inline
-      def setKeyUpEvents(value: js.Array[IHandledKeyboardEvent]): Self = StObject.set(x, "keyUpEvents", value.asInstanceOf[js.Any])
+      inline def setKeyUpEvents(value: js.Array[IHandledKeyboardEvent]): Self = StObject.set(x, "keyUpEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUpEventsUndefined: Self = StObject.set(x, "keyUpEvents", js.undefined)
+      inline def setKeyUpEventsUndefined: Self = StObject.set(x, "keyUpEvents", js.undefined)
       
-      @scala.inline
-      def setKeyUpEventsVarargs(value: IHandledKeyboardEvent*): Self = StObject.set(x, "keyUpEvents", js.Array(value :_*))
+      inline def setKeyUpEventsVarargs(value: IHandledKeyboardEvent*): Self = StObject.set(x, "keyUpEvents", js.Array(value :_*))
       
-      @scala.inline
-      def setOnKeyDown(value: /* args */ IKeyboardEvent => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: /* args */ IKeyboardEvent => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyDownCapture(value: /* args */ IKeyboardEvent => Unit): Self = StObject.set(x, "onKeyDownCapture", js.Any.fromFunction1(value))
+      inline def setOnKeyDownCapture(value: /* args */ IKeyboardEvent => Unit): Self = StObject.set(x, "onKeyDownCapture", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyDownCaptureUndefined: Self = StObject.set(x, "onKeyDownCapture", js.undefined)
+      inline def setOnKeyDownCaptureUndefined: Self = StObject.set(x, "onKeyDownCapture", js.undefined)
       
-      @scala.inline
-      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      @scala.inline
-      def setOnKeyUp(value: /* args */ IKeyboardEvent => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
+      inline def setOnKeyUp(value: /* args */ IKeyboardEvent => Unit): Self = StObject.set(x, "onKeyUp", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyUpCapture(value: /* args */ IKeyboardEvent => Unit): Self = StObject.set(x, "onKeyUpCapture", js.Any.fromFunction1(value))
+      inline def setOnKeyUpCapture(value: /* args */ IKeyboardEvent => Unit): Self = StObject.set(x, "onKeyUpCapture", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyUpCaptureUndefined: Self = StObject.set(x, "onKeyUpCapture", js.undefined)
+      inline def setOnKeyUpCaptureUndefined: Self = StObject.set(x, "onKeyUpCapture", js.undefined)
       
-      @scala.inline
-      def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
+      inline def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
     }
   }
   
@@ -212,8 +183,7 @@ object keyboardExtPropsMod {
   }
   object INativeKeyboardEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       altKey: Boolean,
       code: String,
       ctrlKey: Boolean,
@@ -226,29 +196,21 @@ object keyboardExtPropsMod {
       __obj.asInstanceOf[INativeKeyboardEvent]
     }
     
-    @scala.inline
-    implicit class INativeKeyboardEventMutableBuilder[Self <: INativeKeyboardEvent] (val x: Self) extends AnyVal {
+    extension [Self <: INativeKeyboardEvent](x: Self) {
       
-      @scala.inline
-      def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
+      inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
+      inline def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventPhase(value: EventPhase): Self = StObject.set(x, "eventPhase", value.asInstanceOf[js.Any])
+      inline def setEventPhase(value: EventPhase): Self = StObject.set(x, "eventPhase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
+      inline def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
+      inline def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
     }
   }
 }

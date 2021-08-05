@@ -23,37 +23,27 @@ trait SearchIndexResponse extends StObject {
 }
 object SearchIndexResponse {
   
-  @scala.inline
-  def apply(): SearchIndexResponse = {
+  inline def apply(): SearchIndexResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchIndexResponse]
   }
   
-  @scala.inline
-  implicit class SearchIndexResponseMutableBuilder[Self <: SearchIndexResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SearchIndexResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setThingGroups(value: ThingGroupDocumentList): Self = StObject.set(x, "thingGroups", value.asInstanceOf[js.Any])
+    inline def setThingGroups(value: ThingGroupDocumentList): Self = StObject.set(x, "thingGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingGroupsUndefined: Self = StObject.set(x, "thingGroups", js.undefined)
+    inline def setThingGroupsUndefined: Self = StObject.set(x, "thingGroups", js.undefined)
     
-    @scala.inline
-    def setThingGroupsVarargs(value: ThingGroupDocument*): Self = StObject.set(x, "thingGroups", js.Array(value :_*))
+    inline def setThingGroupsVarargs(value: ThingGroupDocument*): Self = StObject.set(x, "thingGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setThings(value: ThingDocumentList): Self = StObject.set(x, "things", value.asInstanceOf[js.Any])
+    inline def setThings(value: ThingDocumentList): Self = StObject.set(x, "things", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThingsUndefined: Self = StObject.set(x, "things", js.undefined)
+    inline def setThingsUndefined: Self = StObject.set(x, "things", js.undefined)
     
-    @scala.inline
-    def setThingsVarargs(value: ThingDocument*): Self = StObject.set(x, "things", js.Array(value :_*))
+    inline def setThingsVarargs(value: ThingDocument*): Self = StObject.set(x, "things", js.Array(value :_*))
   }
 }

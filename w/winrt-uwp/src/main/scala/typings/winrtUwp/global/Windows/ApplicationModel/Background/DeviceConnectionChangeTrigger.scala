@@ -36,8 +36,7 @@ object DeviceConnectionChangeTrigger {
     * @return The DeviceConnectionChangeTrigger object associated with the specified device Id.
     */
   /* static member */
-  @scala.inline
-  def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[
+  inline def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[
     typings.winrtUwp.Windows.ApplicationModel.Background.DeviceConnectionChangeTrigger
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[
     typings.winrtUwp.Windows.ApplicationModel.Background.DeviceConnectionChangeTrigger

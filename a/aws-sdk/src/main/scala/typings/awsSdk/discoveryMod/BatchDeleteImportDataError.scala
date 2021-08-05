@@ -23,31 +23,23 @@ trait BatchDeleteImportDataError extends StObject {
 }
 object BatchDeleteImportDataError {
   
-  @scala.inline
-  def apply(): BatchDeleteImportDataError = {
+  inline def apply(): BatchDeleteImportDataError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchDeleteImportDataError]
   }
   
-  @scala.inline
-  implicit class BatchDeleteImportDataErrorMutableBuilder[Self <: BatchDeleteImportDataError] (val x: Self) extends AnyVal {
+  extension [Self <: BatchDeleteImportDataError](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: BatchDeleteImportDataErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: BatchDeleteImportDataErrorCode): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
     
-    @scala.inline
-    def setErrorDescription(value: BatchDeleteImportDataErrorDescription): Self = StObject.set(x, "errorDescription", value.asInstanceOf[js.Any])
+    inline def setErrorDescription(value: BatchDeleteImportDataErrorDescription): Self = StObject.set(x, "errorDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorDescriptionUndefined: Self = StObject.set(x, "errorDescription", js.undefined)
+    inline def setErrorDescriptionUndefined: Self = StObject.set(x, "errorDescription", js.undefined)
     
-    @scala.inline
-    def setImportTaskId(value: ImportTaskIdentifier): Self = StObject.set(x, "importTaskId", value.asInstanceOf[js.Any])
+    inline def setImportTaskId(value: ImportTaskIdentifier): Self = StObject.set(x, "importTaskId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportTaskIdUndefined: Self = StObject.set(x, "importTaskId", js.undefined)
+    inline def setImportTaskIdUndefined: Self = StObject.set(x, "importTaskId", js.undefined)
   }
 }

@@ -69,25 +69,19 @@ trait `22` extends StObject {
 }
 object `22` {
   
-  @scala.inline
-  def apply(): `22` = {
+  inline def apply(): `22` = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`22`]
   }
   
-  @scala.inline
-  implicit class `22MutableBuilder`[Self <: `22`] (val x: Self) extends AnyVal {
+  extension [Self <: `22`](x: Self) {
     
-    @scala.inline
-    def setItemStyle(value: BorderType): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
+    inline def setItemStyle(value: BorderType): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
+    inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
     
-    @scala.inline
-    def setLabel(value: MinAngle): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: MinAngle): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }
 }

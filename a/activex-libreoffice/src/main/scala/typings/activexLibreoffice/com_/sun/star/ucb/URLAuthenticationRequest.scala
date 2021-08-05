@@ -19,8 +19,7 @@ trait URLAuthenticationRequest
 }
 object URLAuthenticationRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Account: String,
     Classification: InteractionClassification,
     Context: XInterface,
@@ -40,10 +39,8 @@ object URLAuthenticationRequest {
     __obj.asInstanceOf[URLAuthenticationRequest]
   }
   
-  @scala.inline
-  implicit class URLAuthenticationRequestMutableBuilder[Self <: URLAuthenticationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: URLAuthenticationRequest](x: Self) {
     
-    @scala.inline
-    def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+    inline def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
   }
 }

@@ -13,22 +13,17 @@ trait BulkRecipientsRequest extends StObject {
 }
 object BulkRecipientsRequest {
   
-  @scala.inline
-  def apply(): BulkRecipientsRequest = {
+  inline def apply(): BulkRecipientsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BulkRecipientsRequest]
   }
   
-  @scala.inline
-  implicit class BulkRecipientsRequestMutableBuilder[Self <: BulkRecipientsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BulkRecipientsRequest](x: Self) {
     
-    @scala.inline
-    def setBulkRecipients(value: js.Array[BulkRecipient]): Self = StObject.set(x, "bulkRecipients", value.asInstanceOf[js.Any])
+    inline def setBulkRecipients(value: js.Array[BulkRecipient]): Self = StObject.set(x, "bulkRecipients", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulkRecipientsUndefined: Self = StObject.set(x, "bulkRecipients", js.undefined)
+    inline def setBulkRecipientsUndefined: Self = StObject.set(x, "bulkRecipients", js.undefined)
     
-    @scala.inline
-    def setBulkRecipientsVarargs(value: BulkRecipient*): Self = StObject.set(x, "bulkRecipients", js.Array(value :_*))
+    inline def setBulkRecipientsVarargs(value: BulkRecipient*): Self = StObject.set(x, "bulkRecipients", js.Array(value :_*))
   }
 }

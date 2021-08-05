@@ -17,13 +17,10 @@ object AnimationValueType {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def COLOR: `2` = 2.asInstanceOf[`2`]
+    inline def COLOR: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def NUMBER: `1` = 1.asInstanceOf[`1`]
+    inline def NUMBER: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def STRING: `0` = 0.asInstanceOf[`0`]
+    inline def STRING: `0` = 0.asInstanceOf[`0`]
   }
 }

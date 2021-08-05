@@ -20,23 +20,18 @@ object anon {
   }
   object Typeofgeometry {
     
-    @scala.inline
-    def apply(encoding: js.Any, poly: js.Any, spherical: js.Any): Typeofgeometry = {
+    inline def apply(encoding: js.Any, poly: js.Any, spherical: js.Any): Typeofgeometry = {
       val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any], poly = poly.asInstanceOf[js.Any], spherical = spherical.asInstanceOf[js.Any])
       __obj.asInstanceOf[Typeofgeometry]
     }
     
-    @scala.inline
-    implicit class TypeofgeometryMutableBuilder[Self <: Typeofgeometry] (val x: Self) extends AnyVal {
+    extension [Self <: Typeofgeometry](x: Self) {
       
-      @scala.inline
-      def setEncoding(value: js.Any): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: js.Any): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPoly(value: js.Any): Self = StObject.set(x, "poly", value.asInstanceOf[js.Any])
+      inline def setPoly(value: js.Any): Self = StObject.set(x, "poly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpherical(value: js.Any): Self = StObject.set(x, "spherical", value.asInstanceOf[js.Any])
+      inline def setSpherical(value: js.Any): Self = StObject.set(x, "spherical", value.asInstanceOf[js.Any])
     }
   }
   
@@ -46,17 +41,14 @@ object anon {
   }
   object Typeofgoogle {
     
-    @scala.inline
-    def apply(maps: Typeofmaps): Typeofgoogle = {
+    inline def apply(maps: Typeofmaps): Typeofgoogle = {
       val __obj = js.Dynamic.literal(maps = maps.asInstanceOf[js.Any])
       __obj.asInstanceOf[Typeofgoogle]
     }
     
-    @scala.inline
-    implicit class TypeofgoogleMutableBuilder[Self <: Typeofgoogle] (val x: Self) extends AnyVal {
+    extension [Self <: Typeofgoogle](x: Self) {
       
-      @scala.inline
-      def setMaps(value: Typeofmaps): Self = StObject.set(x, "maps", value.asInstanceOf[js.Any])
+      inline def setMaps(value: Typeofmaps): Self = StObject.set(x, "maps", value.asInstanceOf[js.Any])
     }
   }
   
@@ -83,8 +75,7 @@ object anon {
   }
   object Typeofmaps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Data: js.Any,
       Marker: js.Any,
       OverlayView: js.Any,
@@ -99,35 +90,25 @@ object anon {
       __obj.asInstanceOf[Typeofmaps]
     }
     
-    @scala.inline
-    implicit class TypeofmapsMutableBuilder[Self <: Typeofmaps] (val x: Self) extends AnyVal {
+    extension [Self <: Typeofmaps](x: Self) {
       
-      @scala.inline
-      def setAdsense(value: js.Any): Self = StObject.set(x, "adsense", value.asInstanceOf[js.Any])
+      inline def setAdsense(value: js.Any): Self = StObject.set(x, "adsense", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDrawing(value: js.Any): Self = StObject.set(x, "drawing", value.asInstanceOf[js.Any])
+      inline def setDrawing(value: js.Any): Self = StObject.set(x, "drawing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: js.Any): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGeometry(value: Typeofgeometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+      inline def setGeometry(value: Typeofgeometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarker(value: js.Any): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+      inline def setMarker(value: js.Any): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverlayView(value: js.Any): Self = StObject.set(x, "OverlayView", value.asInstanceOf[js.Any])
+      inline def setOverlayView(value: js.Any): Self = StObject.set(x, "OverlayView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaces(value: js.Any): Self = StObject.set(x, "places", value.asInstanceOf[js.Any])
+      inline def setPlaces(value: js.Any): Self = StObject.set(x, "places", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisualization(value: js.Any): Self = StObject.set(x, "visualization", value.asInstanceOf[js.Any])
+      inline def setVisualization(value: js.Any): Self = StObject.set(x, "visualization", value.asInstanceOf[js.Any])
     }
   }
 }

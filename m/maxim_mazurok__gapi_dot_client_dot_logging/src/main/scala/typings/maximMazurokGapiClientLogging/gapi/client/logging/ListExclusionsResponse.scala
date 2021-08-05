@@ -17,28 +17,21 @@ trait ListExclusionsResponse extends StObject {
 }
 object ListExclusionsResponse {
   
-  @scala.inline
-  def apply(): ListExclusionsResponse = {
+  inline def apply(): ListExclusionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListExclusionsResponse]
   }
   
-  @scala.inline
-  implicit class ListExclusionsResponseMutableBuilder[Self <: ListExclusionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListExclusionsResponse](x: Self) {
     
-    @scala.inline
-    def setExclusions(value: js.Array[LogExclusion]): Self = StObject.set(x, "exclusions", value.asInstanceOf[js.Any])
+    inline def setExclusions(value: js.Array[LogExclusion]): Self = StObject.set(x, "exclusions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusionsUndefined: Self = StObject.set(x, "exclusions", js.undefined)
+    inline def setExclusionsUndefined: Self = StObject.set(x, "exclusions", js.undefined)
     
-    @scala.inline
-    def setExclusionsVarargs(value: LogExclusion*): Self = StObject.set(x, "exclusions", js.Array(value :_*))
+    inline def setExclusionsVarargs(value: LogExclusion*): Self = StObject.set(x, "exclusions", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

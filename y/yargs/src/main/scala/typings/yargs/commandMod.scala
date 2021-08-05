@@ -23,32 +23,23 @@ object commandMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def command(yargs: YargsInstance, usage: UsageInstance, validation: ValidationInstance): CommandInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("command")(yargs.asInstanceOf[js.Any], usage.asInstanceOf[js.Any], validation.asInstanceOf[js.Any])).asInstanceOf[CommandInstance]
-  @scala.inline
-  def command(
+  inline def command(yargs: YargsInstance, usage: UsageInstance, validation: ValidationInstance): CommandInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("command")(yargs.asInstanceOf[js.Any], usage.asInstanceOf[js.Any], validation.asInstanceOf[js.Any])).asInstanceOf[CommandInstance]
+  inline def command(
     yargs: YargsInstance,
     usage: UsageInstance,
     validation: ValidationInstance,
     globalMiddleware: js.Array[Middleware]
   ): CommandInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("command")(yargs.asInstanceOf[js.Any], usage.asInstanceOf[js.Any], validation.asInstanceOf[js.Any], globalMiddleware.asInstanceOf[js.Any])).asInstanceOf[CommandInstance]
   
-  @scala.inline
-  def isCommandBuilderCallback(builder: CommandBuilder): /* is yargs.yargs/build/lib/command.CommandBuilderCallback */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCommandBuilderCallback")(builder.asInstanceOf[js.Any]).asInstanceOf[/* is yargs.yargs/build/lib/command.CommandBuilderCallback */ Boolean]
+  inline def isCommandBuilderCallback(builder: CommandBuilder): /* is yargs.yargs/build/lib/command.CommandBuilderCallback */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCommandBuilderCallback")(builder.asInstanceOf[js.Any]).asInstanceOf[/* is yargs.yargs/build/lib/command.CommandBuilderCallback */ Boolean]
   
-  @scala.inline
-  def isCommandBuilderDefinition(): /* is yargs.yargs/build/lib/command.CommandBuilderDefinition */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCommandBuilderDefinition")().asInstanceOf[/* is yargs.yargs/build/lib/command.CommandBuilderDefinition */ Boolean]
-  @scala.inline
-  def isCommandBuilderDefinition(builder: CommandBuilder): /* is yargs.yargs/build/lib/command.CommandBuilderDefinition */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCommandBuilderDefinition")(builder.asInstanceOf[js.Any]).asInstanceOf[/* is yargs.yargs/build/lib/command.CommandBuilderDefinition */ Boolean]
-  @scala.inline
-  def isCommandBuilderDefinition(builder: CommandBuilderDefinition): /* is yargs.yargs/build/lib/command.CommandBuilderDefinition */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCommandBuilderDefinition")(builder.asInstanceOf[js.Any]).asInstanceOf[/* is yargs.yargs/build/lib/command.CommandBuilderDefinition */ Boolean]
+  inline def isCommandBuilderDefinition(): /* is yargs.yargs/build/lib/command.CommandBuilderDefinition */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCommandBuilderDefinition")().asInstanceOf[/* is yargs.yargs/build/lib/command.CommandBuilderDefinition */ Boolean]
+  inline def isCommandBuilderDefinition(builder: CommandBuilder): /* is yargs.yargs/build/lib/command.CommandBuilderDefinition */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCommandBuilderDefinition")(builder.asInstanceOf[js.Any]).asInstanceOf[/* is yargs.yargs/build/lib/command.CommandBuilderDefinition */ Boolean]
+  inline def isCommandBuilderDefinition(builder: CommandBuilderDefinition): /* is yargs.yargs/build/lib/command.CommandBuilderDefinition */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCommandBuilderDefinition")(builder.asInstanceOf[js.Any]).asInstanceOf[/* is yargs.yargs/build/lib/command.CommandBuilderDefinition */ Boolean]
   
-  @scala.inline
-  def isCommandHandlerDefinition(cmd: String): /* is yargs.yargs/build/lib/command.CommandHandlerDefinition */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCommandHandlerDefinition")(cmd.asInstanceOf[js.Any]).asInstanceOf[/* is yargs.yargs/build/lib/command.CommandHandlerDefinition */ Boolean]
-  @scala.inline
-  def isCommandHandlerDefinition(cmd: js.Array[String]): /* is yargs.yargs/build/lib/command.CommandHandlerDefinition */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCommandHandlerDefinition")(cmd.asInstanceOf[js.Any]).asInstanceOf[/* is yargs.yargs/build/lib/command.CommandHandlerDefinition */ Boolean]
-  @scala.inline
-  def isCommandHandlerDefinition(cmd: CommandHandlerDefinition): /* is yargs.yargs/build/lib/command.CommandHandlerDefinition */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCommandHandlerDefinition")(cmd.asInstanceOf[js.Any]).asInstanceOf[/* is yargs.yargs/build/lib/command.CommandHandlerDefinition */ Boolean]
+  inline def isCommandHandlerDefinition(cmd: String): /* is yargs.yargs/build/lib/command.CommandHandlerDefinition */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCommandHandlerDefinition")(cmd.asInstanceOf[js.Any]).asInstanceOf[/* is yargs.yargs/build/lib/command.CommandHandlerDefinition */ Boolean]
+  inline def isCommandHandlerDefinition(cmd: js.Array[String]): /* is yargs.yargs/build/lib/command.CommandHandlerDefinition */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCommandHandlerDefinition")(cmd.asInstanceOf[js.Any]).asInstanceOf[/* is yargs.yargs/build/lib/command.CommandHandlerDefinition */ Boolean]
+  inline def isCommandHandlerDefinition(cmd: CommandHandlerDefinition): /* is yargs.yargs/build/lib/command.CommandHandlerDefinition */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCommandHandlerDefinition")(cmd.asInstanceOf[js.Any]).asInstanceOf[/* is yargs.yargs/build/lib/command.CommandHandlerDefinition */ Boolean]
   
   type CommandBuilder = CommandBuilderCallback | Dictionary[OptionDefinition]
   
@@ -68,41 +59,30 @@ object commandMod {
   }
   object CommandBuilderDefinition {
     
-    @scala.inline
-    def apply(handler: /* argv */ Arguments => js.Any): CommandBuilderDefinition = {
+    inline def apply(handler: /* argv */ Arguments => js.Any): CommandBuilderDefinition = {
       val __obj = js.Dynamic.literal(handler = js.Any.fromFunction1(handler))
       __obj.asInstanceOf[CommandBuilderDefinition]
     }
     
-    @scala.inline
-    implicit class CommandBuilderDefinitionMutableBuilder[Self <: CommandBuilderDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: CommandBuilderDefinition](x: Self) {
       
-      @scala.inline
-      def setBuilder(value: CommandBuilder): Self = StObject.set(x, "builder", value.asInstanceOf[js.Any])
+      inline def setBuilder(value: CommandBuilder): Self = StObject.set(x, "builder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuilderFunction1(value: /* y */ YargsInstance => YargsInstance | Unit): Self = StObject.set(x, "builder", js.Any.fromFunction1(value))
+      inline def setBuilderFunction1(value: /* y */ YargsInstance => YargsInstance | Unit): Self = StObject.set(x, "builder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBuilderUndefined: Self = StObject.set(x, "builder", js.undefined)
+      inline def setBuilderUndefined: Self = StObject.set(x, "builder", js.undefined)
       
-      @scala.inline
-      def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+      inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
+      inline def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
       
-      @scala.inline
-      def setHandler(value: /* argv */ Arguments => js.Any): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
+      inline def setHandler(value: /* argv */ Arguments => js.Any): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMiddlewares(value: js.Array[Middleware]): Self = StObject.set(x, "middlewares", value.asInstanceOf[js.Any])
+      inline def setMiddlewares(value: js.Array[Middleware]): Self = StObject.set(x, "middlewares", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMiddlewaresUndefined: Self = StObject.set(x, "middlewares", js.undefined)
+      inline def setMiddlewaresUndefined: Self = StObject.set(x, "middlewares", js.undefined)
       
-      @scala.inline
-      def setMiddlewaresVarargs(value: Middleware*): Self = StObject.set(x, "middlewares", js.Array(value :_*))
+      inline def setMiddlewaresVarargs(value: Middleware*): Self = StObject.set(x, "middlewares", js.Array(value :_*))
     }
   }
   
@@ -128,8 +108,7 @@ object commandMod {
   }
   object CommandHandler {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       builder: CommandBuilder,
       demanded: js.Array[Positional],
       handler: /* argv */ Arguments => js.Any,
@@ -141,50 +120,35 @@ object commandMod {
       __obj.asInstanceOf[CommandHandler]
     }
     
-    @scala.inline
-    implicit class CommandHandlerMutableBuilder[Self <: CommandHandler] (val x: Self) extends AnyVal {
+    extension [Self <: CommandHandler](x: Self) {
       
-      @scala.inline
-      def setBuilder(value: CommandBuilder): Self = StObject.set(x, "builder", value.asInstanceOf[js.Any])
+      inline def setBuilder(value: CommandBuilder): Self = StObject.set(x, "builder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuilderFunction1(value: /* y */ YargsInstance => YargsInstance | Unit): Self = StObject.set(x, "builder", js.Any.fromFunction1(value))
+      inline def setBuilderFunction1(value: /* y */ YargsInstance => YargsInstance | Unit): Self = StObject.set(x, "builder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDemanded(value: js.Array[Positional]): Self = StObject.set(x, "demanded", value.asInstanceOf[js.Any])
+      inline def setDemanded(value: js.Array[Positional]): Self = StObject.set(x, "demanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDemandedVarargs(value: Positional*): Self = StObject.set(x, "demanded", js.Array(value :_*))
+      inline def setDemandedVarargs(value: Positional*): Self = StObject.set(x, "demanded", js.Array(value :_*))
       
-      @scala.inline
-      def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+      inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
+      inline def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String | `false`): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String | `false`): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setHandler(value: /* argv */ Arguments => js.Any): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
+      inline def setHandler(value: /* argv */ Arguments => js.Any): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMiddlewares(value: js.Array[Middleware]): Self = StObject.set(x, "middlewares", value.asInstanceOf[js.Any])
+      inline def setMiddlewares(value: js.Array[Middleware]): Self = StObject.set(x, "middlewares", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMiddlewaresVarargs(value: Middleware*): Self = StObject.set(x, "middlewares", js.Array(value :_*))
+      inline def setMiddlewaresVarargs(value: Middleware*): Self = StObject.set(x, "middlewares", js.Array(value :_*))
       
-      @scala.inline
-      def setOptional(value: js.Array[Positional]): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+      inline def setOptional(value: js.Array[Positional]): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionalVarargs(value: Positional*): Self = StObject.set(x, "optional", js.Array(value :_*))
+      inline def setOptionalVarargs(value: Positional*): Self = StObject.set(x, "optional", js.Array(value :_*))
       
-      @scala.inline
-      def setOriginal(value: String): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
+      inline def setOriginal(value: String): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
     }
   }
   
@@ -213,80 +177,56 @@ object commandMod {
   }
   object CommandHandlerDefinition {
     
-    @scala.inline
-    def apply(): CommandHandlerDefinition = {
+    inline def apply(): CommandHandlerDefinition = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CommandHandlerDefinition]
     }
     
-    @scala.inline
-    implicit class CommandHandlerDefinitionMutableBuilder[Self <: CommandHandlerDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: CommandHandlerDefinition](x: Self) {
       
-      @scala.inline
-      def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
+      inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
+      inline def setAliasesUndefined: Self = StObject.set(x, "aliases", js.undefined)
       
-      @scala.inline
-      def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
+      inline def setAliasesVarargs(value: String*): Self = StObject.set(x, "aliases", js.Array(value :_*))
       
-      @scala.inline
-      def setBuilder(value: CommandBuilder | CommandBuilderDefinition): Self = StObject.set(x, "builder", value.asInstanceOf[js.Any])
+      inline def setBuilder(value: CommandBuilder | CommandBuilderDefinition): Self = StObject.set(x, "builder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuilderFunction1(value: /* y */ YargsInstance => YargsInstance | Unit): Self = StObject.set(x, "builder", js.Any.fromFunction1(value))
+      inline def setBuilderFunction1(value: /* y */ YargsInstance => YargsInstance | Unit): Self = StObject.set(x, "builder", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBuilderUndefined: Self = StObject.set(x, "builder", js.undefined)
+      inline def setBuilderUndefined: Self = StObject.set(x, "builder", js.undefined)
       
-      @scala.inline
-      def setCommand(value: String | js.Array[String]): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+      inline def setCommand(value: String | js.Array[String]): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
+      inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
       
-      @scala.inline
-      def setCommandVarargs(value: String*): Self = StObject.set(x, "command", js.Array(value :_*))
+      inline def setCommandVarargs(value: String*): Self = StObject.set(x, "command", js.Array(value :_*))
       
-      @scala.inline
-      def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+      inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
+      inline def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
       
-      @scala.inline
-      def setDesc(value: String | `false`): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+      inline def setDesc(value: String | `false`): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
+      inline def setDescUndefined: Self = StObject.set(x, "desc", js.undefined)
       
-      @scala.inline
-      def setDescribe(value: String | `false`): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
+      inline def setDescribe(value: String | `false`): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescribeUndefined: Self = StObject.set(x, "describe", js.undefined)
+      inline def setDescribeUndefined: Self = StObject.set(x, "describe", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String | `false`): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String | `false`): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setHandler(value: /* argv */ Arguments => js.Any): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
+      inline def setHandler(value: /* argv */ Arguments => js.Any): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
+      inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
       
-      @scala.inline
-      def setMiddlewares(value: js.Array[Middleware]): Self = StObject.set(x, "middlewares", value.asInstanceOf[js.Any])
+      inline def setMiddlewares(value: js.Array[Middleware]): Self = StObject.set(x, "middlewares", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMiddlewaresUndefined: Self = StObject.set(x, "middlewares", js.undefined)
+      inline def setMiddlewaresUndefined: Self = StObject.set(x, "middlewares", js.undefined)
       
-      @scala.inline
-      def setMiddlewaresVarargs(value: Middleware*): Self = StObject.set(x, "middlewares", js.Array(value :_*))
+      inline def setMiddlewaresVarargs(value: Middleware*): Self = StObject.set(x, "middlewares", js.Array(value :_*))
     }
   }
   
@@ -355,32 +295,24 @@ object commandMod {
   }
   object Positionals {
     
-    @scala.inline
-    def apply(alias: Dictionary[js.Array[String]], array: js.Array[String], demand: Dictionary[Boolean]): Positionals = {
+    inline def apply(alias: Dictionary[js.Array[String]], array: js.Array[String], demand: Dictionary[Boolean]): Positionals = {
       val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], array = array.asInstanceOf[js.Any], demand = demand.asInstanceOf[js.Any])
       __obj.asInstanceOf[Positionals]
     }
     
-    @scala.inline
-    implicit class PositionalsMutableBuilder[Self <: Positionals] (val x: Self) extends AnyVal {
+    extension [Self <: Positionals](x: Self) {
       
-      @scala.inline
-      def setAlias(value: Dictionary[js.Array[String]]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: Dictionary[js.Array[String]]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArray(value: js.Array[String]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+      inline def setArray(value: js.Array[String]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayVarargs(value: String*): Self = StObject.set(x, "array", js.Array(value :_*))
+      inline def setArrayVarargs(value: String*): Self = StObject.set(x, "array", js.Array(value :_*))
       
-      @scala.inline
-      def setDefault(value: StringDictionary[js.Any]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: StringDictionary[js.Any]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setDemand(value: Dictionary[Boolean]): Self = StObject.set(x, "demand", value.asInstanceOf[js.Any])
+      inline def setDemand(value: Dictionary[Boolean]): Self = StObject.set(x, "demand", value.asInstanceOf[js.Any])
     }
   }
 }

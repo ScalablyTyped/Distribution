@@ -12,25 +12,19 @@ trait KeyMapOptions extends StObject {
 }
 object KeyMapOptions {
   
-  @scala.inline
-  def apply(): KeyMapOptions = {
+  inline def apply(): KeyMapOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KeyMapOptions]
   }
   
-  @scala.inline
-  implicit class KeyMapOptionsMutableBuilder[Self <: KeyMapOptions] (val x: Self) extends AnyVal {
+  extension [Self <: KeyMapOptions](x: Self) {
     
-    @scala.inline
-    def setMac(value: KeyMapMacOptions): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
+    inline def setMac(value: KeyMapMacOptions): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMacUndefined: Self = StObject.set(x, "mac", js.undefined)
+    inline def setMacUndefined: Self = StObject.set(x, "mac", js.undefined)
     
-    @scala.inline
-    def setPc(value: KeyMapPcOptions): Self = StObject.set(x, "pc", value.asInstanceOf[js.Any])
+    inline def setPc(value: KeyMapPcOptions): Self = StObject.set(x, "pc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPcUndefined: Self = StObject.set(x, "pc", js.undefined)
+    inline def setPcUndefined: Self = StObject.set(x, "pc", js.undefined)
   }
 }

@@ -25,28 +25,21 @@ trait ParamsResourceDetectionsList
 }
 object ParamsResourceDetectionsList {
   
-  @scala.inline
-  def apply(): ParamsResourceDetectionsList = {
+  inline def apply(): ParamsResourceDetectionsList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceDetectionsList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceDetectionsListMutableBuilder[Self <: ParamsResourceDetectionsList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceDetectionsList](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setQ(value: js.Array[String]): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
+    inline def setQ(value: js.Array[String]): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQUndefined: Self = StObject.set(x, "q", js.undefined)
+    inline def setQUndefined: Self = StObject.set(x, "q", js.undefined)
     
-    @scala.inline
-    def setQVarargs(value: String*): Self = StObject.set(x, "q", js.Array(value :_*))
+    inline def setQVarargs(value: String*): Self = StObject.set(x, "q", js.Array(value :_*))
   }
 }

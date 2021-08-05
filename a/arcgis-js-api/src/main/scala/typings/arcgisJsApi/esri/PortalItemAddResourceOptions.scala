@@ -29,8 +29,7 @@ trait PortalItemAddResourceOptions
 }
 object PortalItemAddResourceOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -39,19 +38,14 @@ object PortalItemAddResourceOptions {
     __obj.asInstanceOf[PortalItemAddResourceOptions]
   }
   
-  @scala.inline
-  implicit class PortalItemAddResourceOptionsMutableBuilder[Self <: PortalItemAddResourceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PortalItemAddResourceOptions](x: Self) {
     
-    @scala.inline
-    def setAccess(value: inherit | `private`): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
+    inline def setAccess(value: inherit | `private`): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
+    inline def setAccessUndefined: Self = StObject.set(x, "access", js.undefined)
     
-    @scala.inline
-    def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+    inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
+    inline def setSignalUndefined: Self = StObject.set(x, "signal", js.undefined)
   }
 }

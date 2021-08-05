@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.Selection")
 @js.native
-class Selection protected ()
+/* private */ class Selection ()
   extends StObject
      with typings.activexOutlook.Outlook.Selection {
   
@@ -31,7 +31,7 @@ class Selection protected ()
   /* CompleteClass */
   override val Location: OlSelectionLocation = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.Selection_typekey")
   var OutlookDotSelection_typekey: typings.activexOutlook.Outlook.Selection = js.native
   

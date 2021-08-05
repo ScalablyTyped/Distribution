@@ -55,38 +55,28 @@ object flexMod {
     }
     object FlexProps {
       
-      @scala.inline
-      def apply(): FlexProps = {
+      inline def apply(): FlexProps = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[FlexProps]
       }
       
-      @scala.inline
-      implicit class FlexPropsMutableBuilder[Self <: FlexProps] (val x: Self) extends AnyVal {
+      extension [Self <: FlexProps](x: Self) {
         
-        @scala.inline
-        def setAlign(value: AlignItemsProperty | top | bottom): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+        inline def setAlign(value: AlignItemsProperty | top | bottom): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+        inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
         
-        @scala.inline
-        def setGap(value: Double): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
+        inline def setGap(value: Double): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
+        inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
         
-        @scala.inline
-        def setIsReversed(value: Boolean): Self = StObject.set(x, "isReversed", value.asInstanceOf[js.Any])
+        inline def setIsReversed(value: Boolean): Self = StObject.set(x, "isReversed", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsReversedUndefined: Self = StObject.set(x, "isReversed", js.undefined)
+        inline def setIsReversedUndefined: Self = StObject.set(x, "isReversed", js.undefined)
         
-        @scala.inline
-        def setJustify(value: JustifyContentProperty | left | right): Self = StObject.set(x, "justify", value.asInstanceOf[js.Any])
+        inline def setJustify(value: JustifyContentProperty | left | right): Self = StObject.set(x, "justify", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setJustifyUndefined: Self = StObject.set(x, "justify", js.undefined)
+        inline def setJustifyUndefined: Self = StObject.set(x, "justify", js.undefined)
       }
     }
     
@@ -96,8 +86,7 @@ object flexMod {
          with HTMLProps[HTMLDivElement]
     object Props {
       
-      @scala.inline
-      def apply(): Props = {
+      inline def apply(): Props = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Props]
       }

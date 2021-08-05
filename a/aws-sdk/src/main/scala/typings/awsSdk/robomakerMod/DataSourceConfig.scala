@@ -23,25 +23,19 @@ trait DataSourceConfig extends StObject {
 }
 object DataSourceConfig {
   
-  @scala.inline
-  def apply(name: Name, s3Bucket: S3Bucket, s3Keys: S3Keys): DataSourceConfig = {
+  inline def apply(name: Name, s3Bucket: S3Bucket, s3Keys: S3Keys): DataSourceConfig = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], s3Bucket = s3Bucket.asInstanceOf[js.Any], s3Keys = s3Keys.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceConfig]
   }
   
-  @scala.inline
-  implicit class DataSourceConfigMutableBuilder[Self <: DataSourceConfig] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceConfig](x: Self) {
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "s3Bucket", value.asInstanceOf[js.Any])
+    inline def setS3Bucket(value: S3Bucket): Self = StObject.set(x, "s3Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3Keys(value: S3Keys): Self = StObject.set(x, "s3Keys", value.asInstanceOf[js.Any])
+    inline def setS3Keys(value: S3Keys): Self = StObject.set(x, "s3Keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3KeysVarargs(value: S3Key*): Self = StObject.set(x, "s3Keys", js.Array(value :_*))
+    inline def setS3KeysVarargs(value: S3Key*): Self = StObject.set(x, "s3Keys", js.Array(value :_*))
   }
 }

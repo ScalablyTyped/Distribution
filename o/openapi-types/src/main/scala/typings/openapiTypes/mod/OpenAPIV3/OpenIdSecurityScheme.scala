@@ -17,26 +17,20 @@ trait OpenIdSecurityScheme
 }
 object OpenIdSecurityScheme {
   
-  @scala.inline
-  def apply(openIdConnectUrl: String): OpenIdSecurityScheme = {
+  inline def apply(openIdConnectUrl: String): OpenIdSecurityScheme = {
     val __obj = js.Dynamic.literal(openIdConnectUrl = openIdConnectUrl.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("openIdConnect")
     __obj.asInstanceOf[OpenIdSecurityScheme]
   }
   
-  @scala.inline
-  implicit class OpenIdSecuritySchemeMutableBuilder[Self <: OpenIdSecurityScheme] (val x: Self) extends AnyVal {
+  extension [Self <: OpenIdSecurityScheme](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setOpenIdConnectUrl(value: String): Self = StObject.set(x, "openIdConnectUrl", value.asInstanceOf[js.Any])
+    inline def setOpenIdConnectUrl(value: String): Self = StObject.set(x, "openIdConnectUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: openIdConnect): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: openIdConnect): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

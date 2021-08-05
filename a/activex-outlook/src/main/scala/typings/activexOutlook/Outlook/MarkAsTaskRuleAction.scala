@@ -18,7 +18,7 @@ trait MarkAsTaskRuleAction extends StObject {
   
   var MarkInterval: OlMarkInterval
   
-  @JSName("Outlook.MarkAsTaskRuleAction_typekey")
+  /* private */ @JSName("Outlook.MarkAsTaskRuleAction_typekey")
   var OutlookDotMarkAsTaskRuleAction_typekey: MarkAsTaskRuleAction
   
   val Parent: js.Any
@@ -27,8 +27,7 @@ trait MarkAsTaskRuleAction extends StObject {
 }
 object MarkAsTaskRuleAction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActionType: OlRuleActionType,
     Application: Application,
     Class: OlObjectClass,
@@ -44,34 +43,24 @@ object MarkAsTaskRuleAction {
     __obj.asInstanceOf[MarkAsTaskRuleAction]
   }
   
-  @scala.inline
-  implicit class MarkAsTaskRuleActionMutableBuilder[Self <: MarkAsTaskRuleAction] (val x: Self) extends AnyVal {
+  extension [Self <: MarkAsTaskRuleAction](x: Self) {
     
-    @scala.inline
-    def setActionType(value: OlRuleActionType): Self = StObject.set(x, "ActionType", value.asInstanceOf[js.Any])
+    inline def setActionType(value: OlRuleActionType): Self = StObject.set(x, "ActionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlagTo(value: String): Self = StObject.set(x, "FlagTo", value.asInstanceOf[js.Any])
+    inline def setFlagTo(value: String): Self = StObject.set(x, "FlagTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkInterval(value: OlMarkInterval): Self = StObject.set(x, "MarkInterval", value.asInstanceOf[js.Any])
+    inline def setMarkInterval(value: OlMarkInterval): Self = StObject.set(x, "MarkInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotMarkAsTaskRuleAction_typekey(value: MarkAsTaskRuleAction): Self = StObject.set(x, "Outlook.MarkAsTaskRuleAction_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotMarkAsTaskRuleAction_typekey(value: MarkAsTaskRuleAction): Self = StObject.set(x, "Outlook.MarkAsTaskRuleAction_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }
 }

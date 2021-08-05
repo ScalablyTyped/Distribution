@@ -20,7 +20,7 @@ object prioritizedTaskExecutorMod {
       */
     def this(maxPoolSize: Double) = this()
     
-    var currentPoolSize: js.Any = js.native
+    /* private */ var currentPoolSize: js.Any = js.native
     
     /**
       * Executes the task.
@@ -37,8 +37,8 @@ object prioritizedTaskExecutorMod {
       */
     def finished(): Boolean = js.native
     
-    var maxPoolSize: js.Any = js.native
+    /* private */ var maxPoolSize: js.Any = js.native
     
-    var queue: js.Any = js.native
+    /* private */ var queue: js.Any = js.native
   }
 }

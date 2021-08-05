@@ -138,22 +138,19 @@ object testAccessMod {
     @js.native
     def nextConnectionId: js.Any = js.native
     
-    @scala.inline
-    def nextConnectionId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nextConnectionId_")(x.asInstanceOf[js.Any])
+    inline def nextConnectionId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nextConnectionId_")(x.asInstanceOf[js.Any])
     
     @JSImport("@firebase/database/dist/src/api/test_access", "DataConnection.nextPersistentConnectionId_")
     @js.native
     def nextPersistentConnectionId: js.Any = js.native
     
-    @scala.inline
-    def nextPersistentConnectionId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nextPersistentConnectionId_")(x.asInstanceOf[js.Any])
+    inline def nextPersistentConnectionId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nextPersistentConnectionId_")(x.asInstanceOf[js.Any])
     
     @JSImport("@firebase/database/dist/src/api/test_access", "DataConnection.warnOnListenWarnings_")
     @js.native
     def warnOnListenWarnings: js.Any = js.native
     
-    @scala.inline
-    def warnOnListenWarnings_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warnOnListenWarnings_")(x.asInstanceOf[js.Any])
+    inline def warnOnListenWarnings_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warnOnListenWarnings_")(x.asInstanceOf[js.Any])
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -223,12 +220,9 @@ object testAccessMod {
     Connection
   ] = js.native
   
-  @scala.inline
-  def forceRestClient(forceRestClient: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forceRestClient")(forceRestClient.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def forceRestClient(forceRestClient: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forceRestClient")(forceRestClient.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def hijackHash(newHash: js.Function0[String]): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("hijackHash")(newHash.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+  inline def hijackHash(newHash: js.Function0[String]): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("hijackHash")(newHash.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
   
-  @scala.inline
-  def queryIdentifier(query: Query): String = ^.asInstanceOf[js.Dynamic].applyDynamic("queryIdentifier")(query.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def queryIdentifier(query: Query): String = ^.asInstanceOf[js.Dynamic].applyDynamic("queryIdentifier")(query.asInstanceOf[js.Any]).asInstanceOf[String]
 }

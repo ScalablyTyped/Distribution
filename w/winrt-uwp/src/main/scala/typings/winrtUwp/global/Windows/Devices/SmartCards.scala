@@ -253,15 +253,13 @@ object SmartCards {
       * @return An instance of SmartCardProvisioning , representing the smart card to be configured.
       */
     /* static member */
-    @scala.inline
-    def fromSmartCardAsync(card: typings.winrtUwp.Windows.Devices.SmartCards.SmartCard): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.SmartCards.SmartCardProvisioning] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSmartCardAsync")(card.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.SmartCards.SmartCardProvisioning]]
+    inline def fromSmartCardAsync(card: typings.winrtUwp.Windows.Devices.SmartCards.SmartCard): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.SmartCards.SmartCardProvisioning] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSmartCardAsync")(card.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.SmartCards.SmartCardProvisioning]]
     
     /* static member */
     @JSGlobal("Windows.Devices.SmartCards.SmartCardProvisioning.requestAttestedVirtualSmartCardCreationAsync")
     @js.native
     def requestAttestedVirtualSmartCardCreationAsync: js.Any = js.native
-    @scala.inline
-    def requestAttestedVirtualSmartCardCreationAsync_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("requestAttestedVirtualSmartCardCreationAsync")(x.asInstanceOf[js.Any])
+    inline def requestAttestedVirtualSmartCardCreationAsync_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("requestAttestedVirtualSmartCardCreationAsync")(x.asInstanceOf[js.Any])
     
     /**
       * Creates a Trusted Platform Module (TPM) virtual smart card with a given human-readable name, admin key, and personal identification number (PIN) rules set.
@@ -271,8 +269,7 @@ object SmartCards {
       * @return After the operation completes, returns an instance of SmartCardProvisioning , representing the configured TPM virtual smart card.
       */
     /* static member */
-    @scala.inline
-    def requestVirtualSmartCardCreationAsync(
+    inline def requestVirtualSmartCardCreationAsync(
       friendlyName: String,
       administrativeKey: IBuffer,
       pinPolicy: typings.winrtUwp.Windows.Devices.SmartCards.SmartCardPinPolicy
@@ -287,8 +284,7 @@ object SmartCards {
       * @return After the operation completes, returns an instance of SmartCardProvisioning , representing the configured TPM virtual smart card.
       */
     /* static member */
-    @scala.inline
-    def requestVirtualSmartCardCreationAsync(
+    inline def requestVirtualSmartCardCreationAsync(
       friendlyName: String,
       administrativeKey: IBuffer,
       pinPolicy: typings.winrtUwp.Windows.Devices.SmartCards.SmartCardPinPolicy,
@@ -301,8 +297,7 @@ object SmartCards {
       * @return After the deletion attempt completes, returns true if the TPM virtual smart card was successfully deleted; otherwise false.
       */
     /* static member */
-    @scala.inline
-    def requestVirtualSmartCardDeletionAsync(card: typings.winrtUwp.Windows.Devices.SmartCards.SmartCard): IPromiseWithIAsyncOperation[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestVirtualSmartCardDeletionAsync")(card.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
+    inline def requestVirtualSmartCardDeletionAsync(card: typings.winrtUwp.Windows.Devices.SmartCards.SmartCard): IPromiseWithIAsyncOperation[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestVirtualSmartCardDeletionAsync")(card.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
   }
   
   /** Represents info about a smart card reader. */
@@ -323,24 +318,21 @@ object SmartCards {
       * @return The matching smart card reader.
       */
     /* static member */
-    @scala.inline
-    def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.SmartCards.SmartCardReader] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.SmartCards.SmartCardReader]]
+    inline def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.SmartCards.SmartCardReader] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.SmartCards.SmartCardReader]]
     
     /**
       * Returns an Advanced Query Syntax (AQS) string representing all smart card readers connected to the device. This string is passed to the FindAllAsync method to enumerate the given set of smart card readers.
       * @return The Advanced Query Syntax (AQS) string representing all smart card readers connected to the device.
       */
     /* static member */
-    @scala.inline
-    def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
+    inline def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
     /**
       * Returns an Advanced Query Syntax (AQS) string representing a set of a specific type of smart card readers connected to the device. This string is passed to the FindAllAsync method to enumerate the given set of smart card readers.
       * @param kind One of the enumeration values, representing a specific smart card reader type.
       * @return The Advanced Query Syntax (AQS) string representing a set of the specified type of smart card readers connected to the device.
       */
     /* static member */
-    @scala.inline
-    def getDeviceSelector(kind: SmartCardReaderKind): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")(kind.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getDeviceSelector(kind: SmartCardReaderKind): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")(kind.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   /** Represents the smart card reader's type. */

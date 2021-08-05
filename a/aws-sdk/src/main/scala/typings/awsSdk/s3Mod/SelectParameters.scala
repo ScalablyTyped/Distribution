@@ -28,8 +28,7 @@ trait SelectParameters extends StObject {
 }
 object SelectParameters {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Expression: Expression,
     ExpressionType: ExpressionType,
     InputSerialization: InputSerialization,
@@ -39,19 +38,14 @@ object SelectParameters {
     __obj.asInstanceOf[SelectParameters]
   }
   
-  @scala.inline
-  implicit class SelectParametersMutableBuilder[Self <: SelectParameters] (val x: Self) extends AnyVal {
+  extension [Self <: SelectParameters](x: Self) {
     
-    @scala.inline
-    def setExpression(value: Expression): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: Expression): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionType(value: ExpressionType): Self = StObject.set(x, "ExpressionType", value.asInstanceOf[js.Any])
+    inline def setExpressionType(value: ExpressionType): Self = StObject.set(x, "ExpressionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputSerialization(value: InputSerialization): Self = StObject.set(x, "InputSerialization", value.asInstanceOf[js.Any])
+    inline def setInputSerialization(value: InputSerialization): Self = StObject.set(x, "InputSerialization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputSerialization(value: OutputSerialization): Self = StObject.set(x, "OutputSerialization", value.asInstanceOf[js.Any])
+    inline def setOutputSerialization(value: OutputSerialization): Self = StObject.set(x, "OutputSerialization", value.asInstanceOf[js.Any])
   }
 }

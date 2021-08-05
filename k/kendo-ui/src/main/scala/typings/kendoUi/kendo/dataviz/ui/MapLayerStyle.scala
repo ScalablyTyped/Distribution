@@ -12,25 +12,19 @@ trait MapLayerStyle extends StObject {
 }
 object MapLayerStyle {
   
-  @scala.inline
-  def apply(): MapLayerStyle = {
+  inline def apply(): MapLayerStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapLayerStyle]
   }
   
-  @scala.inline
-  implicit class MapLayerStyleMutableBuilder[Self <: MapLayerStyle] (val x: Self) extends AnyVal {
+  extension [Self <: MapLayerStyle](x: Self) {
     
-    @scala.inline
-    def setFill(value: MapLayerStyleFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: MapLayerStyleFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    @scala.inline
-    def setStroke(value: MapLayerStyleStroke): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    inline def setStroke(value: MapLayerStyleStroke): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
   }
 }

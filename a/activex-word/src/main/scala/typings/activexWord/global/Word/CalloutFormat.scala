@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.CalloutFormat")
 @js.native
-class CalloutFormat protected ()
+/* private */ class CalloutFormat ()
   extends StObject
      with typings.activexWord.Word.CalloutFormat {
   
@@ -65,7 +65,7 @@ class CalloutFormat protected ()
   /* CompleteClass */
   var Type: MsoCalloutType = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.CalloutFormat_typekey")
   var WordDotCalloutFormat_typekey: typings.activexWord.Word.CalloutFormat = js.native
 }

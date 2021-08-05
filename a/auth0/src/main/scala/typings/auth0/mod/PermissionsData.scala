@@ -10,19 +10,15 @@ trait PermissionsData extends StObject {
 }
 object PermissionsData {
   
-  @scala.inline
-  def apply(permissions: js.Array[PermissionData]): PermissionsData = {
+  inline def apply(permissions: js.Array[PermissionData]): PermissionsData = {
     val __obj = js.Dynamic.literal(permissions = permissions.asInstanceOf[js.Any])
     __obj.asInstanceOf[PermissionsData]
   }
   
-  @scala.inline
-  implicit class PermissionsDataMutableBuilder[Self <: PermissionsData] (val x: Self) extends AnyVal {
+  extension [Self <: PermissionsData](x: Self) {
     
-    @scala.inline
-    def setPermissions(value: js.Array[PermissionData]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: js.Array[PermissionData]): Self = StObject.set(x, "permissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionsVarargs(value: PermissionData*): Self = StObject.set(x, "permissions", js.Array(value :_*))
+    inline def setPermissionsVarargs(value: PermissionData*): Self = StObject.set(x, "permissions", js.Array(value :_*))
   }
 }

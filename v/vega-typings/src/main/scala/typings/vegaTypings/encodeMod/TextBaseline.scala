@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TextBaseline extends StObject
 object TextBaseline {
   
-  @scala.inline
-  def alphabetic: typings.vegaTypings.vegaTypingsStrings.alphabetic = "alphabetic".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.alphabetic]
+  inline def alphabetic: typings.vegaTypings.vegaTypingsStrings.alphabetic = "alphabetic".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.alphabetic]
   
-  @scala.inline
-  def bottom: typings.vegaTypings.vegaTypingsStrings.bottom = "bottom".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.bottom]
+  inline def bottom: typings.vegaTypings.vegaTypingsStrings.bottom = "bottom".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.bottom]
   
-  @scala.inline
-  def `line-bottom`: typings.vegaTypings.vegaTypingsStrings.`line-bottom` = "line-bottom".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`line-bottom`]
+  inline def `line-bottom`: typings.vegaTypings.vegaTypingsStrings.`line-bottom` = "line-bottom".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`line-bottom`]
   
-  @scala.inline
-  def `line-top`: typings.vegaTypings.vegaTypingsStrings.`line-top` = "line-top".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`line-top`]
+  inline def `line-top`: typings.vegaTypings.vegaTypingsStrings.`line-top` = "line-top".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.`line-top`]
   
-  @scala.inline
-  def middle: typings.vegaTypings.vegaTypingsStrings.middle = "middle".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.middle]
+  inline def middle: typings.vegaTypings.vegaTypingsStrings.middle = "middle".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.middle]
   
-  @scala.inline
-  def top: typings.vegaTypings.vegaTypingsStrings.top = "top".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.top]
+  inline def top: typings.vegaTypings.vegaTypingsStrings.top = "top".asInstanceOf[typings.vegaTypings.vegaTypingsStrings.top]
 }

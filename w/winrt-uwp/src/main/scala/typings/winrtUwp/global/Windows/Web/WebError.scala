@@ -22,6 +22,5 @@ object WebError {
     * @return The error status value for a web service operation.
     */
   /* static member */
-  @scala.inline
-  def getStatus(hresult: Double): typings.winrtUwp.Windows.Web.WebErrorStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatus")(hresult.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Web.WebErrorStatus]
+  inline def getStatus(hresult: Double): typings.winrtUwp.Windows.Web.WebErrorStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatus")(hresult.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.Web.WebErrorStatus]
 }

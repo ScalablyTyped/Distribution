@@ -15,6 +15,5 @@ object SceneDispatcher {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(): typings.wonderJs.sceneDispatcherMod.SceneDispatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.sceneDispatcherMod.SceneDispatcher]
+  inline def create(): typings.wonderJs.sceneDispatcherMod.SceneDispatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.sceneDispatcherMod.SceneDispatcher]
 }

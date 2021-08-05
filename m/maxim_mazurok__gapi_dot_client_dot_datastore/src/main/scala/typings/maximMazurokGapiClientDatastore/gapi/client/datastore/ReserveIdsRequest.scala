@@ -14,28 +14,21 @@ trait ReserveIdsRequest extends StObject {
 }
 object ReserveIdsRequest {
   
-  @scala.inline
-  def apply(): ReserveIdsRequest = {
+  inline def apply(): ReserveIdsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReserveIdsRequest]
   }
   
-  @scala.inline
-  implicit class ReserveIdsRequestMutableBuilder[Self <: ReserveIdsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ReserveIdsRequest](x: Self) {
     
-    @scala.inline
-    def setDatabaseId(value: String): Self = StObject.set(x, "databaseId", value.asInstanceOf[js.Any])
+    inline def setDatabaseId(value: String): Self = StObject.set(x, "databaseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatabaseIdUndefined: Self = StObject.set(x, "databaseId", js.undefined)
+    inline def setDatabaseIdUndefined: Self = StObject.set(x, "databaseId", js.undefined)
     
-    @scala.inline
-    def setKeys(value: js.Array[Key]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: js.Array[Key]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+    inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    @scala.inline
-    def setKeysVarargs(value: Key*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: Key*): Self = StObject.set(x, "keys", js.Array(value :_*))
   }
 }

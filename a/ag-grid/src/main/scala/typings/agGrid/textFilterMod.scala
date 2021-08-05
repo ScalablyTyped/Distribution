@@ -27,17 +27,17 @@ object textFilterMod {
     
     /* private */ def checkIndividualFilter(params: js.Any, filterType: js.Any, filterText: js.Any): js.Any = js.native
     
-    var comparator: js.Any = js.native
+    /* private */ var comparator: js.Any = js.native
     
-    var eFilterConditionTextField: js.Any = js.native
+    /* private */ var eFilterConditionTextField: js.Any = js.native
     
-    var eFilterTextField: js.Any = js.native
+    /* private */ var eFilterTextField: js.Any = js.native
     
-    var filterConditionText: js.Any = js.native
+    /* private */ var filterConditionText: js.Any = js.native
     
-    var filterText: js.Any = js.native
+    /* private */ var filterText: js.Any = js.native
     
-    var formatter: js.Any = js.native
+    /* private */ var formatter: js.Any = js.native
     
     def getFilter(): String = js.native
     
@@ -57,26 +57,20 @@ object textFilterMod {
     @JSImport("ag-grid/dist/lib/filter/textFilter", "TextFilter.DEFAULT_COMPARATOR")
     @js.native
     def DEFAULT_COMPARATOR: TextComparator = js.native
-    @scala.inline
-    def DEFAULT_COMPARATOR(filter: String, gridValue: js.Any, filterText: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("DEFAULT_COMPARATOR")(filter.asInstanceOf[js.Any], gridValue.asInstanceOf[js.Any], filterText.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-    @scala.inline
-    def DEFAULT_COMPARATOR_=(x: TextComparator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_COMPARATOR")(x.asInstanceOf[js.Any])
+    inline def DEFAULT_COMPARATOR(filter: String, gridValue: js.Any, filterText: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("DEFAULT_COMPARATOR")(filter.asInstanceOf[js.Any], gridValue.asInstanceOf[js.Any], filterText.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    inline def DEFAULT_COMPARATOR_=(x: TextComparator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_COMPARATOR")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/filter/textFilter", "TextFilter.DEFAULT_FORMATTER")
     @js.native
     def DEFAULT_FORMATTER: TextFormatter = js.native
-    @scala.inline
-    def DEFAULT_FORMATTER(from: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("DEFAULT_FORMATTER")(from.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def DEFAULT_FORMATTER_=(x: TextFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_FORMATTER")(x.asInstanceOf[js.Any])
+    inline def DEFAULT_FORMATTER(from: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("DEFAULT_FORMATTER")(from.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def DEFAULT_FORMATTER_=(x: TextFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_FORMATTER")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/filter/textFilter", "TextFilter.DEFAULT_LOWERCASE_FORMATTER")
     @js.native
     def DEFAULT_LOWERCASE_FORMATTER: TextFormatter = js.native
-    @scala.inline
-    def DEFAULT_LOWERCASE_FORMATTER(from: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("DEFAULT_LOWERCASE_FORMATTER")(from.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def DEFAULT_LOWERCASE_FORMATTER_=(x: TextFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_LOWERCASE_FORMATTER")(x.asInstanceOf[js.Any])
+    inline def DEFAULT_LOWERCASE_FORMATTER(from: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("DEFAULT_LOWERCASE_FORMATTER")(from.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def DEFAULT_LOWERCASE_FORMATTER_=(x: TextFormatter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_LOWERCASE_FORMATTER")(x.asInstanceOf[js.Any])
   }
   
   trait INumberFilterParams
@@ -87,8 +81,7 @@ object textFilterMod {
   }
   object INumberFilterParams {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       $scope: js.Any,
       colDef: ColDef,
       column: Column,
@@ -104,14 +97,11 @@ object textFilterMod {
       __obj.asInstanceOf[INumberFilterParams]
     }
     
-    @scala.inline
-    implicit class INumberFilterParamsMutableBuilder[Self <: INumberFilterParams] (val x: Self) extends AnyVal {
+    extension [Self <: INumberFilterParams](x: Self) {
       
-      @scala.inline
-      def setDebounceMs(value: Double): Self = StObject.set(x, "debounceMs", value.asInstanceOf[js.Any])
+      inline def setDebounceMs(value: Double): Self = StObject.set(x, "debounceMs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebounceMsUndefined: Self = StObject.set(x, "debounceMs", js.undefined)
+      inline def setDebounceMsUndefined: Self = StObject.set(x, "debounceMs", js.undefined)
     }
   }
   
@@ -127,8 +117,7 @@ object textFilterMod {
   }
   object ITextFilterParams {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       $scope: js.Any,
       colDef: ColDef,
       column: Column,
@@ -144,26 +133,19 @@ object textFilterMod {
       __obj.asInstanceOf[ITextFilterParams]
     }
     
-    @scala.inline
-    implicit class ITextFilterParamsMutableBuilder[Self <: ITextFilterParams] (val x: Self) extends AnyVal {
+    extension [Self <: ITextFilterParams](x: Self) {
       
-      @scala.inline
-      def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+      inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
+      inline def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
       
-      @scala.inline
-      def setDebounceMs(value: Double): Self = StObject.set(x, "debounceMs", value.asInstanceOf[js.Any])
+      inline def setDebounceMs(value: Double): Self = StObject.set(x, "debounceMs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebounceMsUndefined: Self = StObject.set(x, "debounceMs", js.undefined)
+      inline def setDebounceMsUndefined: Self = StObject.set(x, "debounceMs", js.undefined)
       
-      @scala.inline
-      def setTextCustomComparator(value: (/* filter */ String, /* gridValue */ js.Any, /* filterText */ String) => Boolean): Self = StObject.set(x, "textCustomComparator", js.Any.fromFunction3(value))
+      inline def setTextCustomComparator(value: (/* filter */ String, /* gridValue */ js.Any, /* filterText */ String) => Boolean): Self = StObject.set(x, "textCustomComparator", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setTextCustomComparatorUndefined: Self = StObject.set(x, "textCustomComparator", js.undefined)
+      inline def setTextCustomComparatorUndefined: Self = StObject.set(x, "textCustomComparator", js.undefined)
     }
   }
   
@@ -177,21 +159,17 @@ object textFilterMod {
   }
   object SerializedTextFilter {
     
-    @scala.inline
-    def apply(filter: String, filterType: String, `type`: String): SerializedTextFilter = {
+    inline def apply(filter: String, filterType: String, `type`: String): SerializedTextFilter = {
       val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], filterType = filterType.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[SerializedTextFilter]
     }
     
-    @scala.inline
-    implicit class SerializedTextFilterMutableBuilder[Self <: SerializedTextFilter] (val x: Self) extends AnyVal {
+    extension [Self <: SerializedTextFilter](x: Self) {
       
-      @scala.inline
-      def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   

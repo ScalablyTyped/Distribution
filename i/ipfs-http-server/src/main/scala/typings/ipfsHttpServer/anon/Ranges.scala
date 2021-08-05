@@ -10,16 +10,13 @@ trait Ranges extends StObject {
 }
 object Ranges {
   
-  @scala.inline
-  def apply(ranges: Boolean): Ranges = {
+  inline def apply(ranges: Boolean): Ranges = {
     val __obj = js.Dynamic.literal(ranges = ranges.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ranges]
   }
   
-  @scala.inline
-  implicit class RangesMutableBuilder[Self <: Ranges] (val x: Self) extends AnyVal {
+  extension [Self <: Ranges](x: Self) {
     
-    @scala.inline
-    def setRanges(value: Boolean): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
+    inline def setRanges(value: Boolean): Self = StObject.set(x, "ranges", value.asInstanceOf[js.Any])
   }
 }

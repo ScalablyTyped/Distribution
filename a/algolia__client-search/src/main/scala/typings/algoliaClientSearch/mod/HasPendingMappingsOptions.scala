@@ -24,25 +24,19 @@ trait HasPendingMappingsOptions extends StObject {
 }
 object HasPendingMappingsOptions {
   
-  @scala.inline
-  def apply(): HasPendingMappingsOptions = {
+  inline def apply(): HasPendingMappingsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HasPendingMappingsOptions]
   }
   
-  @scala.inline
-  implicit class HasPendingMappingsOptionsMutableBuilder[Self <: HasPendingMappingsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HasPendingMappingsOptions](x: Self) {
     
-    @scala.inline
-    def setGetClusters(value: Boolean): Self = StObject.set(x, "getClusters", value.asInstanceOf[js.Any])
+    inline def setGetClusters(value: Boolean): Self = StObject.set(x, "getClusters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetClustersUndefined: Self = StObject.set(x, "getClusters", js.undefined)
+    inline def setGetClustersUndefined: Self = StObject.set(x, "getClusters", js.undefined)
     
-    @scala.inline
-    def setRetrieveMappings(value: Boolean): Self = StObject.set(x, "retrieveMappings", value.asInstanceOf[js.Any])
+    inline def setRetrieveMappings(value: Boolean): Self = StObject.set(x, "retrieveMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetrieveMappingsUndefined: Self = StObject.set(x, "retrieveMappings", js.undefined)
+    inline def setRetrieveMappingsUndefined: Self = StObject.set(x, "retrieveMappings", js.undefined)
   }
 }

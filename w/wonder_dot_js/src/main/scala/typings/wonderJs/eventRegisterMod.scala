@@ -41,7 +41,7 @@ object eventRegisterMod {
     def getEventRegisterDataList(dom: HTMLElement, eventName: EEventName): js.Any = js.native
     def getEventRegisterDataList(eventName: EEventName): js.Any = js.native
     
-    var listenerMap: EventListenerMap = js.native
+    /* protected */ var listenerMap: EventListenerMap = js.native
     
     def register(args: js.Any*): Unit = js.native
     
@@ -60,26 +60,20 @@ object eventRegisterMod {
   }
   object EventRegisterData {
     
-    @scala.inline
-    def apply(domHandler: js.Function, handler: js.Function, originHandler: js.Function, priority: Double): EventRegisterData = {
+    inline def apply(domHandler: js.Function, handler: js.Function, originHandler: js.Function, priority: Double): EventRegisterData = {
       val __obj = js.Dynamic.literal(domHandler = domHandler.asInstanceOf[js.Any], handler = handler.asInstanceOf[js.Any], originHandler = originHandler.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventRegisterData]
     }
     
-    @scala.inline
-    implicit class EventRegisterDataMutableBuilder[Self <: EventRegisterData] (val x: Self) extends AnyVal {
+    extension [Self <: EventRegisterData](x: Self) {
       
-      @scala.inline
-      def setDomHandler(value: js.Function): Self = StObject.set(x, "domHandler", value.asInstanceOf[js.Any])
+      inline def setDomHandler(value: js.Function): Self = StObject.set(x, "domHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHandler(value: js.Function): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+      inline def setHandler(value: js.Function): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginHandler(value: js.Function): Self = StObject.set(x, "originHandler", value.asInstanceOf[js.Any])
+      inline def setOriginHandler(value: js.Function): Self = StObject.set(x, "originHandler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     }
   }
 }

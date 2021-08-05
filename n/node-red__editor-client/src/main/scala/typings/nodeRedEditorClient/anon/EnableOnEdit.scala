@@ -21,43 +21,31 @@ trait EnableOnEdit extends StObject {
 }
 object EnableOnEdit {
   
-  @scala.inline
-  def apply(id: String, name: String): EnableOnEdit = {
+  inline def apply(id: String, name: String): EnableOnEdit = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnableOnEdit]
   }
   
-  @scala.inline
-  implicit class EnableOnEditMutableBuilder[Self <: EnableOnEdit] (val x: Self) extends AnyVal {
+  extension [Self <: EnableOnEdit](x: Self) {
     
-    @scala.inline
-    def setEnableOnEdit(value: Boolean): Self = StObject.set(x, "enableOnEdit", value.asInstanceOf[js.Any])
+    inline def setEnableOnEdit(value: Boolean): Self = StObject.set(x, "enableOnEdit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableOnEditUndefined: Self = StObject.set(x, "enableOnEdit", js.undefined)
+    inline def setEnableOnEditUndefined: Self = StObject.set(x, "enableOnEdit", js.undefined)
     
-    @scala.inline
-    def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
+    inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
+    inline def setIconClassUndefined: Self = StObject.set(x, "iconClass", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolbar(value: HTMLElement): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
+    inline def setToolbar(value: HTMLElement): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
+    inline def setToolbarUndefined: Self = StObject.set(x, "toolbar", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

@@ -33,43 +33,31 @@ trait GetModelResponse extends StObject {
 }
 object GetModelResponse {
   
-  @scala.inline
-  def apply(): GetModelResponse = {
+  inline def apply(): GetModelResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetModelResponse]
   }
   
-  @scala.inline
-  implicit class GetModelResponseMutableBuilder[Self <: GetModelResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetModelResponse](x: Self) {
     
-    @scala.inline
-    def setContentType(value: StringWithLengthBetween1And256): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: StringWithLengthBetween1And256): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "ContentType", js.undefined)
     
-    @scala.inline
-    def setDescription(value: StringWithLengthBetween0And1024): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: StringWithLengthBetween0And1024): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setModelId(value: Id): Self = StObject.set(x, "ModelId", value.asInstanceOf[js.Any])
+    inline def setModelId(value: Id): Self = StObject.set(x, "ModelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelIdUndefined: Self = StObject.set(x, "ModelId", js.undefined)
+    inline def setModelIdUndefined: Self = StObject.set(x, "ModelId", js.undefined)
     
-    @scala.inline
-    def setName(value: StringWithLengthBetween1And128): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: StringWithLengthBetween1And128): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setSchema(value: StringWithLengthBetween0And32K): Self = StObject.set(x, "Schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: StringWithLengthBetween0And32K): Self = StObject.set(x, "Schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaUndefined: Self = StObject.set(x, "Schema", js.undefined)
+    inline def setSchemaUndefined: Self = StObject.set(x, "Schema", js.undefined)
   }
 }

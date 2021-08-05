@@ -13,22 +13,17 @@ trait CoreDefinitionVersion extends StObject {
 }
 object CoreDefinitionVersion {
   
-  @scala.inline
-  def apply(): CoreDefinitionVersion = {
+  inline def apply(): CoreDefinitionVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CoreDefinitionVersion]
   }
   
-  @scala.inline
-  implicit class CoreDefinitionVersionMutableBuilder[Self <: CoreDefinitionVersion] (val x: Self) extends AnyVal {
+  extension [Self <: CoreDefinitionVersion](x: Self) {
     
-    @scala.inline
-    def setCores(value: listOfCore): Self = StObject.set(x, "Cores", value.asInstanceOf[js.Any])
+    inline def setCores(value: listOfCore): Self = StObject.set(x, "Cores", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoresUndefined: Self = StObject.set(x, "Cores", js.undefined)
+    inline def setCoresUndefined: Self = StObject.set(x, "Cores", js.undefined)
     
-    @scala.inline
-    def setCoresVarargs(value: Core*): Self = StObject.set(x, "Cores", js.Array(value :_*))
+    inline def setCoresVarargs(value: Core*): Self = StObject.set(x, "Cores", js.Array(value :_*))
   }
 }

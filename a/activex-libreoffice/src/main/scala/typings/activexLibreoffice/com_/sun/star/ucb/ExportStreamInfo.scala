@@ -16,19 +16,15 @@ trait ExportStreamInfo extends StObject {
 }
 object ExportStreamInfo {
   
-  @scala.inline
-  def apply(ForceBodies: Boolean, Target: XOutputStream): ExportStreamInfo = {
+  inline def apply(ForceBodies: Boolean, Target: XOutputStream): ExportStreamInfo = {
     val __obj = js.Dynamic.literal(ForceBodies = ForceBodies.asInstanceOf[js.Any], Target = Target.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExportStreamInfo]
   }
   
-  @scala.inline
-  implicit class ExportStreamInfoMutableBuilder[Self <: ExportStreamInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ExportStreamInfo](x: Self) {
     
-    @scala.inline
-    def setForceBodies(value: Boolean): Self = StObject.set(x, "ForceBodies", value.asInstanceOf[js.Any])
+    inline def setForceBodies(value: Boolean): Self = StObject.set(x, "ForceBodies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: XOutputStream): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: XOutputStream): Self = StObject.set(x, "Target", value.asInstanceOf[js.Any])
   }
 }

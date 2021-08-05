@@ -20,25 +20,19 @@ trait AuthFileOptions extends StObject {
 }
 object AuthFileOptions {
   
-  @scala.inline
-  def apply(): AuthFileOptions = {
+  inline def apply(): AuthFileOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuthFileOptions]
   }
   
-  @scala.inline
-  implicit class AuthFileOptionsMutableBuilder[Self <: AuthFileOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AuthFileOptions](x: Self) {
     
-    @scala.inline
-    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
+    inline def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
     
-    @scala.inline
-    def setSubscriptionEnvVariableName(value: String): Self = StObject.set(x, "subscriptionEnvVariableName", value.asInstanceOf[js.Any])
+    inline def setSubscriptionEnvVariableName(value: String): Self = StObject.set(x, "subscriptionEnvVariableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionEnvVariableNameUndefined: Self = StObject.set(x, "subscriptionEnvVariableName", js.undefined)
+    inline def setSubscriptionEnvVariableNameUndefined: Self = StObject.set(x, "subscriptionEnvVariableName", js.undefined)
   }
 }

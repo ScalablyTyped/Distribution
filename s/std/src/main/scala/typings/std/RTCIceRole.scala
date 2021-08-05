@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RTCIceRole extends StObject
 object RTCIceRole {
   
-  @scala.inline
-  def controlled: typings.std.stdStrings.controlled = "controlled".asInstanceOf[typings.std.stdStrings.controlled]
+  inline def controlled: typings.std.stdStrings.controlled = "controlled".asInstanceOf[typings.std.stdStrings.controlled]
   
-  @scala.inline
-  def controlling: typings.std.stdStrings.controlling = "controlling".asInstanceOf[typings.std.stdStrings.controlling]
+  inline def controlling: typings.std.stdStrings.controlling = "controlling".asInstanceOf[typings.std.stdStrings.controlling]
   
-  @scala.inline
-  def unknown: typings.std.stdStrings.unknown = "unknown".asInstanceOf[typings.std.stdStrings.unknown]
+  inline def unknown: typings.std.stdStrings.unknown = "unknown".asInstanceOf[typings.std.stdStrings.unknown]
 }

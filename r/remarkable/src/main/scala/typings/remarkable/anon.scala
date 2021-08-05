@@ -16,17 +16,14 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(ruler: ^[BlockParsingRule]): `0` = {
+    inline def apply(ruler: ^[BlockParsingRule]): `0` = {
       val __obj = js.Dynamic.literal(ruler = ruler.asInstanceOf[js.Any])
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setRuler(value: ^[BlockParsingRule]): Self = StObject.set(x, "ruler", value.asInstanceOf[js.Any])
+      inline def setRuler(value: ^[BlockParsingRule]): Self = StObject.set(x, "ruler", value.asInstanceOf[js.Any])
     }
   }
   
@@ -36,17 +33,14 @@ object anon {
   }
   object `1` {
     
-    @scala.inline
-    def apply(ruler: ^[CoreParsingRule]): `1` = {
+    inline def apply(ruler: ^[CoreParsingRule]): `1` = {
       val __obj = js.Dynamic.literal(ruler = ruler.asInstanceOf[js.Any])
       __obj.asInstanceOf[`1`]
     }
     
-    @scala.inline
-    implicit class `1MutableBuilder`[Self <: `1`] (val x: Self) extends AnyVal {
+    extension [Self <: `1`](x: Self) {
       
-      @scala.inline
-      def setRuler(value: ^[CoreParsingRule]): Self = StObject.set(x, "ruler", value.asInstanceOf[js.Any])
+      inline def setRuler(value: ^[CoreParsingRule]): Self = StObject.set(x, "ruler", value.asInstanceOf[js.Any])
     }
   }
   
@@ -56,17 +50,14 @@ object anon {
   }
   object Ruler {
     
-    @scala.inline
-    def apply(ruler: ^[InlineParsingRule]): Ruler = {
+    inline def apply(ruler: ^[InlineParsingRule]): Ruler = {
       val __obj = js.Dynamic.literal(ruler = ruler.asInstanceOf[js.Any])
       __obj.asInstanceOf[Ruler]
     }
     
-    @scala.inline
-    implicit class RulerMutableBuilder[Self <: Ruler] (val x: Self) extends AnyVal {
+    extension [Self <: Ruler](x: Self) {
       
-      @scala.inline
-      def setRuler(value: ^[InlineParsingRule]): Self = StObject.set(x, "ruler", value.asInstanceOf[js.Any])
+      inline def setRuler(value: ^[InlineParsingRule]): Self = StObject.set(x, "ruler", value.asInstanceOf[js.Any])
     }
   }
   
@@ -76,17 +67,14 @@ object anon {
   }
   object Rules {
     
-    @scala.inline
-    def apply(rules: typings.remarkable.libMod.Rules): Rules = {
+    inline def apply(rules: typings.remarkable.libMod.Rules): Rules = {
       val __obj = js.Dynamic.literal(rules = rules.asInstanceOf[js.Any])
       __obj.asInstanceOf[Rules]
     }
     
-    @scala.inline
-    implicit class RulesMutableBuilder[Self <: Rules] (val x: Self) extends AnyVal {
+    extension [Self <: Rules](x: Self) {
       
-      @scala.inline
-      def setRules(value: typings.remarkable.libMod.Rules): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: typings.remarkable.libMod.Rules): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     }
   }
 }

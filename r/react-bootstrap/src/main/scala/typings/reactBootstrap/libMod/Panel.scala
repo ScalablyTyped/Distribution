@@ -24,8 +24,7 @@ object Panel {
   @JSImport("react-bootstrap/lib", "Panel.Body")
   @js.native
   def Body: Instantiable0[typings.reactBootstrap.panelBodyMod.^] = js.native
-  @scala.inline
-  def Body_=(x: Instantiable0[typings.reactBootstrap.panelBodyMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Body")(x.asInstanceOf[js.Any])
+  inline def Body_=(x: Instantiable0[typings.reactBootstrap.panelBodyMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Body")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib", "Panel.Collapse")
@@ -36,8 +35,7 @@ object Panel {
   @JSImport("react-bootstrap/lib", "Panel.Collapse")
   @js.native
   def Collapse: Instantiable0[typings.reactBootstrap.panelCollapseMod.^] = js.native
-  @scala.inline
-  def Collapse_=(x: Instantiable0[typings.reactBootstrap.panelCollapseMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Collapse")(x.asInstanceOf[js.Any])
+  inline def Collapse_=(x: Instantiable0[typings.reactBootstrap.panelCollapseMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Collapse")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib", "Panel.Footer")
@@ -48,8 +46,7 @@ object Panel {
   @JSImport("react-bootstrap/lib", "Panel.Footer")
   @js.native
   def Footer: Instantiable0[typings.reactBootstrap.panelFooterMod.^] = js.native
-  @scala.inline
-  def Footer_=(x: Instantiable0[typings.reactBootstrap.panelFooterMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Footer")(x.asInstanceOf[js.Any])
+  inline def Footer_=(x: Instantiable0[typings.reactBootstrap.panelFooterMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Footer")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib", "Panel.Heading")
@@ -60,8 +57,7 @@ object Panel {
   @JSImport("react-bootstrap/lib", "Panel.Heading")
   @js.native
   def Heading: Instantiable0[typings.reactBootstrap.panelHeadingMod.^] = js.native
-  @scala.inline
-  def Heading_=(x: Instantiable0[typings.reactBootstrap.panelHeadingMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Heading")(x.asInstanceOf[js.Any])
+  inline def Heading_=(x: Instantiable0[typings.reactBootstrap.panelHeadingMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Heading")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib", "Panel.Title")
@@ -72,8 +68,7 @@ object Panel {
   @JSImport("react-bootstrap/lib", "Panel.Title")
   @js.native
   def Title: Instantiable0[typings.reactBootstrap.panelTitleMod.^] = js.native
-  @scala.inline
-  def Title_=(x: Instantiable0[typings.reactBootstrap.panelTitleMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Title")(x.asInstanceOf[js.Any])
+  inline def Title_=(x: Instantiable0[typings.reactBootstrap.panelTitleMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Title")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap/lib", "Panel.Toggle")
@@ -84,6 +79,5 @@ object Panel {
   @JSImport("react-bootstrap/lib", "Panel.Toggle")
   @js.native
   def Toggle: Instantiable0[typings.reactBootstrap.panelToggleMod.^] = js.native
-  @scala.inline
-  def Toggle_=(x: Instantiable0[typings.reactBootstrap.panelToggleMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Toggle")(x.asInstanceOf[js.Any])
+  inline def Toggle_=(x: Instantiable0[typings.reactBootstrap.panelToggleMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Toggle")(x.asInstanceOf[js.Any])
 }

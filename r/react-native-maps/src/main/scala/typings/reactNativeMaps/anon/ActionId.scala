@@ -13,19 +13,15 @@ trait ActionId extends StObject {
 }
 object ActionId {
   
-  @scala.inline
-  def apply(id: String): ActionId = {
+  inline def apply(id: String): ActionId = {
     val __obj = js.Dynamic.literal(action = "marker-deselect", id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionId]
   }
   
-  @scala.inline
-  implicit class ActionIdMutableBuilder[Self <: ActionId] (val x: Self) extends AnyVal {
+  extension [Self <: ActionId](x: Self) {
     
-    @scala.inline
-    def setAction(value: `marker-deselect`): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: `marker-deselect`): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

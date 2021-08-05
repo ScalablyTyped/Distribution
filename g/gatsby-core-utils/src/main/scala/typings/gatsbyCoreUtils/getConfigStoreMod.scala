@@ -10,6 +10,5 @@ object getConfigStoreMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getConfigStore(): typings.configstore.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfigStore")().asInstanceOf[typings.configstore.mod.^]
+  inline def getConfigStore(): typings.configstore.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfigStore")().asInstanceOf[typings.configstore.mod.^]
 }

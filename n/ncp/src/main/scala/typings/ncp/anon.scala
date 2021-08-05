@@ -33,56 +33,40 @@ object anon {
   }
   object OptionserrsPathLike {
     
-    @scala.inline
-    def apply(errs: js.UndefOr[PathLike] & PathLike): OptionserrsPathLike = {
+    inline def apply(errs: js.UndefOr[PathLike] & PathLike): OptionserrsPathLike = {
       val __obj = js.Dynamic.literal(errs = errs.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionserrsPathLike]
     }
     
-    @scala.inline
-    implicit class OptionserrsPathLikeMutableBuilder[Self <: OptionserrsPathLike] (val x: Self) extends AnyVal {
+    extension [Self <: OptionserrsPathLike](x: Self) {
       
-      @scala.inline
-      def setClobber(value: Boolean): Self = StObject.set(x, "clobber", value.asInstanceOf[js.Any])
+      inline def setClobber(value: Boolean): Self = StObject.set(x, "clobber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClobberUndefined: Self = StObject.set(x, "clobber", js.undefined)
+      inline def setClobberUndefined: Self = StObject.set(x, "clobber", js.undefined)
       
-      @scala.inline
-      def setDereference(value: Boolean): Self = StObject.set(x, "dereference", value.asInstanceOf[js.Any])
+      inline def setDereference(value: Boolean): Self = StObject.set(x, "dereference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDereferenceUndefined: Self = StObject.set(x, "dereference", js.undefined)
+      inline def setDereferenceUndefined: Self = StObject.set(x, "dereference", js.undefined)
       
-      @scala.inline
-      def setErrs(value: js.UndefOr[PathLike] & PathLike): Self = StObject.set(x, "errs", value.asInstanceOf[js.Any])
+      inline def setErrs(value: js.UndefOr[PathLike] & PathLike): Self = StObject.set(x, "errs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter(value: RegExp | (js.Function1[/* filename */ String, Boolean])): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: RegExp | (js.Function1[/* filename */ String, Boolean])): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterFunction1(value: /* filename */ String => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilterFunction1(value: /* filename */ String => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setStopOnErr(value: Boolean): Self = StObject.set(x, "stopOnErr", value.asInstanceOf[js.Any])
+      inline def setStopOnErr(value: Boolean): Self = StObject.set(x, "stopOnErr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopOnErrUndefined: Self = StObject.set(x, "stopOnErr", js.undefined)
+      inline def setStopOnErrUndefined: Self = StObject.set(x, "stopOnErr", js.undefined)
       
-      @scala.inline
-      def setTransform(value: (/* read */ ReadableStream, /* write */ WritableStream, /* file */ File) => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))
+      inline def setTransform(value: (/* read */ ReadableStream, /* write */ WritableStream, /* file */ File) => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }
   }
   
@@ -107,56 +91,40 @@ object anon {
   }
   object Optionserrsundefined {
     
-    @scala.inline
-    def apply(errs: js.UndefOr[PathLike] & Unit): Optionserrsundefined = {
+    inline def apply(errs: js.UndefOr[PathLike] & Unit): Optionserrsundefined = {
       val __obj = js.Dynamic.literal(errs = errs.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionserrsundefined]
     }
     
-    @scala.inline
-    implicit class OptionserrsundefinedMutableBuilder[Self <: Optionserrsundefined] (val x: Self) extends AnyVal {
+    extension [Self <: Optionserrsundefined](x: Self) {
       
-      @scala.inline
-      def setClobber(value: Boolean): Self = StObject.set(x, "clobber", value.asInstanceOf[js.Any])
+      inline def setClobber(value: Boolean): Self = StObject.set(x, "clobber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClobberUndefined: Self = StObject.set(x, "clobber", js.undefined)
+      inline def setClobberUndefined: Self = StObject.set(x, "clobber", js.undefined)
       
-      @scala.inline
-      def setDereference(value: Boolean): Self = StObject.set(x, "dereference", value.asInstanceOf[js.Any])
+      inline def setDereference(value: Boolean): Self = StObject.set(x, "dereference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDereferenceUndefined: Self = StObject.set(x, "dereference", js.undefined)
+      inline def setDereferenceUndefined: Self = StObject.set(x, "dereference", js.undefined)
       
-      @scala.inline
-      def setErrs(value: js.UndefOr[PathLike] & Unit): Self = StObject.set(x, "errs", value.asInstanceOf[js.Any])
+      inline def setErrs(value: js.UndefOr[PathLike] & Unit): Self = StObject.set(x, "errs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilter(value: RegExp | (js.Function1[/* filename */ String, Boolean])): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: RegExp | (js.Function1[/* filename */ String, Boolean])): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterFunction1(value: /* filename */ String => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilterFunction1(value: /* filename */ String => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setStopOnErr(value: Boolean): Self = StObject.set(x, "stopOnErr", value.asInstanceOf[js.Any])
+      inline def setStopOnErr(value: Boolean): Self = StObject.set(x, "stopOnErr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopOnErrUndefined: Self = StObject.set(x, "stopOnErr", js.undefined)
+      inline def setStopOnErrUndefined: Self = StObject.set(x, "stopOnErr", js.undefined)
       
-      @scala.inline
-      def setTransform(value: (/* read */ ReadableStream, /* write */ WritableStream, /* file */ File) => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))
+      inline def setTransform(value: (/* read */ ReadableStream, /* write */ WritableStream, /* file */ File) => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }
   }
   
@@ -181,56 +149,40 @@ object anon {
   }
   object OptionsstopOnErrtrue {
     
-    @scala.inline
-    def apply(stopOnErr: js.UndefOr[Boolean] & `true`): OptionsstopOnErrtrue = {
+    inline def apply(stopOnErr: js.UndefOr[Boolean] & `true`): OptionsstopOnErrtrue = {
       val __obj = js.Dynamic.literal(stopOnErr = stopOnErr.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionsstopOnErrtrue]
     }
     
-    @scala.inline
-    implicit class OptionsstopOnErrtrueMutableBuilder[Self <: OptionsstopOnErrtrue] (val x: Self) extends AnyVal {
+    extension [Self <: OptionsstopOnErrtrue](x: Self) {
       
-      @scala.inline
-      def setClobber(value: Boolean): Self = StObject.set(x, "clobber", value.asInstanceOf[js.Any])
+      inline def setClobber(value: Boolean): Self = StObject.set(x, "clobber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClobberUndefined: Self = StObject.set(x, "clobber", js.undefined)
+      inline def setClobberUndefined: Self = StObject.set(x, "clobber", js.undefined)
       
-      @scala.inline
-      def setDereference(value: Boolean): Self = StObject.set(x, "dereference", value.asInstanceOf[js.Any])
+      inline def setDereference(value: Boolean): Self = StObject.set(x, "dereference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDereferenceUndefined: Self = StObject.set(x, "dereference", js.undefined)
+      inline def setDereferenceUndefined: Self = StObject.set(x, "dereference", js.undefined)
       
-      @scala.inline
-      def setErrs(value: PathLike): Self = StObject.set(x, "errs", value.asInstanceOf[js.Any])
+      inline def setErrs(value: PathLike): Self = StObject.set(x, "errs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrsUndefined: Self = StObject.set(x, "errs", js.undefined)
+      inline def setErrsUndefined: Self = StObject.set(x, "errs", js.undefined)
       
-      @scala.inline
-      def setFilter(value: RegExp | (js.Function1[/* filename */ String, Boolean])): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: RegExp | (js.Function1[/* filename */ String, Boolean])): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterFunction1(value: /* filename */ String => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilterFunction1(value: /* filename */ String => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setStopOnErr(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "stopOnErr", value.asInstanceOf[js.Any])
+      inline def setStopOnErr(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "stopOnErr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransform(value: (/* read */ ReadableStream, /* write */ WritableStream, /* file */ File) => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))
+      inline def setTransform(value: (/* read */ ReadableStream, /* write */ WritableStream, /* file */ File) => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }
   }
 }

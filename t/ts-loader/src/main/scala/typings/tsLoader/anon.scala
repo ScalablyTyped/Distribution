@@ -410,20 +410,16 @@ object anon {
   }
   object Character {
     
-    @scala.inline
-    def apply(character: Double, line: Double): Character = {
+    inline def apply(character: Double, line: Double): Character = {
       val __obj = js.Dynamic.literal(character = character.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
       __obj.asInstanceOf[Character]
     }
     
-    @scala.inline
-    implicit class CharacterMutableBuilder[Self <: Character] (val x: Self) extends AnyVal {
+    extension [Self <: Character](x: Self) {
       
-      @scala.inline
-      def setCharacter(value: Double): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
+      inline def setCharacter(value: Double): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     }
   }
   
@@ -439,35 +435,26 @@ object anon {
   }
   object Compiler {
     
-    @scala.inline
-    def apply(compilerCompatible: Boolean): Compiler = {
+    inline def apply(compilerCompatible: Boolean): Compiler = {
       val __obj = js.Dynamic.literal(compilerCompatible = compilerCompatible.asInstanceOf[js.Any])
       __obj.asInstanceOf[Compiler]
     }
     
-    @scala.inline
-    implicit class CompilerMutableBuilder[Self <: Compiler] (val x: Self) extends AnyVal {
+    extension [Self <: Compiler](x: Self) {
       
-      @scala.inline
-      def setCompiler(value: Typeoftypescript): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
+      inline def setCompiler(value: Typeoftypescript): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompilerCompatible(value: Boolean): Self = StObject.set(x, "compilerCompatible", value.asInstanceOf[js.Any])
+      inline def setCompilerCompatible(value: Boolean): Self = StObject.set(x, "compilerCompatible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompilerDetailsLogMessage(value: String): Self = StObject.set(x, "compilerDetailsLogMessage", value.asInstanceOf[js.Any])
+      inline def setCompilerDetailsLogMessage(value: String): Self = StObject.set(x, "compilerDetailsLogMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompilerDetailsLogMessageUndefined: Self = StObject.set(x, "compilerDetailsLogMessage", js.undefined)
+      inline def setCompilerDetailsLogMessageUndefined: Self = StObject.set(x, "compilerDetailsLogMessage", js.undefined)
       
-      @scala.inline
-      def setCompilerUndefined: Self = StObject.set(x, "compiler", js.undefined)
+      inline def setCompilerUndefined: Self = StObject.set(x, "compiler", js.undefined)
       
-      @scala.inline
-      def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+      inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+      inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     }
   }
   
@@ -481,29 +468,22 @@ object anon {
   }
   object ConfigFile {
     
-    @scala.inline
-    def apply(configFile: typings.tsLoader.configMod.ConfigFile): ConfigFile = {
+    inline def apply(configFile: typings.tsLoader.configMod.ConfigFile): ConfigFile = {
       val __obj = js.Dynamic.literal(configFile = configFile.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConfigFile]
     }
     
-    @scala.inline
-    implicit class ConfigFileMutableBuilder[Self <: ConfigFile] (val x: Self) extends AnyVal {
+    extension [Self <: ConfigFile](x: Self) {
       
-      @scala.inline
-      def setConfigFile(value: typings.tsLoader.configMod.ConfigFile): Self = StObject.set(x, "configFile", value.asInstanceOf[js.Any])
+      inline def setConfigFile(value: typings.tsLoader.configMod.ConfigFile): Self = StObject.set(x, "configFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigFileError(value: WebpackError): Self = StObject.set(x, "configFileError", value.asInstanceOf[js.Any])
+      inline def setConfigFileError(value: WebpackError): Self = StObject.set(x, "configFileError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigFileErrorUndefined: Self = StObject.set(x, "configFileError", js.undefined)
+      inline def setConfigFileErrorUndefined: Self = StObject.set(x, "configFileError", js.undefined)
       
-      @scala.inline
-      def setConfigFilePath(value: String): Self = StObject.set(x, "configFilePath", value.asInstanceOf[js.Any])
+      inline def setConfigFilePath(value: String): Self = StObject.set(x, "configFilePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConfigFilePathUndefined: Self = StObject.set(x, "configFilePath", js.undefined)
+      inline def setConfigFilePathUndefined: Self = StObject.set(x, "configFilePath", js.undefined)
     }
   }
   
@@ -515,26 +495,20 @@ object anon {
   }
   object Error {
     
-    @scala.inline
-    def apply(): Error = {
+    inline def apply(): Error = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Error]
     }
     
-    @scala.inline
-    implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+    extension [Self <: Error](x: Self) {
       
-      @scala.inline
-      def setError(value: WebpackError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: WebpackError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setInstance(value: TSInstance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+      inline def setInstance(value: TSInstance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
+      inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     }
   }
   
@@ -546,26 +520,20 @@ object anon {
   }
   object File {
     
-    @scala.inline
-    def apply(): File = {
+    inline def apply(): File = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[File]
     }
     
-    @scala.inline
-    implicit class FileMutableBuilder[Self <: File] (val x: Self) extends AnyVal {
+    extension [Self <: File](x: Self) {
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
-      @scala.inline
-      def setModule(value: WebpackModule): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+      inline def setModule(value: WebpackModule): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
+      inline def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
     }
   }
   
@@ -612,26 +580,20 @@ object anon {
   }
   object OutputFileName {
     
-    @scala.inline
-    def apply(): OutputFileName = {
+    inline def apply(): OutputFileName = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OutputFileName]
     }
     
-    @scala.inline
-    implicit class OutputFileNameMutableBuilder[Self <: OutputFileName] (val x: Self) extends AnyVal {
+    extension [Self <: OutputFileName](x: Self) {
       
-      @scala.inline
-      def setOutputFileName(value: String): Self = StObject.set(x, "outputFileName", value.asInstanceOf[js.Any])
+      inline def setOutputFileName(value: String): Self = StObject.set(x, "outputFileName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputFileNameUndefined: Self = StObject.set(x, "outputFileName", js.undefined)
+      inline def setOutputFileNameUndefined: Self = StObject.set(x, "outputFileName", js.undefined)
       
-      @scala.inline
-      def setProject(value: ResolvedProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: ResolvedProjectReference): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+      inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
     }
   }
   
@@ -643,23 +605,18 @@ object anon {
   }
   object TsLoaderDefinitionFileVersions {
     
-    @scala.inline
-    def apply(tsLoaderDefinitionFileVersions: js.Array[String], tsLoaderFileVersion: Double): TsLoaderDefinitionFileVersions = {
+    inline def apply(tsLoaderDefinitionFileVersions: js.Array[String], tsLoaderFileVersion: Double): TsLoaderDefinitionFileVersions = {
       val __obj = js.Dynamic.literal(tsLoaderDefinitionFileVersions = tsLoaderDefinitionFileVersions.asInstanceOf[js.Any], tsLoaderFileVersion = tsLoaderFileVersion.asInstanceOf[js.Any])
       __obj.asInstanceOf[TsLoaderDefinitionFileVersions]
     }
     
-    @scala.inline
-    implicit class TsLoaderDefinitionFileVersionsMutableBuilder[Self <: TsLoaderDefinitionFileVersions] (val x: Self) extends AnyVal {
+    extension [Self <: TsLoaderDefinitionFileVersions](x: Self) {
       
-      @scala.inline
-      def setTsLoaderDefinitionFileVersions(value: js.Array[String]): Self = StObject.set(x, "tsLoaderDefinitionFileVersions", value.asInstanceOf[js.Any])
+      inline def setTsLoaderDefinitionFileVersions(value: js.Array[String]): Self = StObject.set(x, "tsLoaderDefinitionFileVersions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTsLoaderDefinitionFileVersionsVarargs(value: String*): Self = StObject.set(x, "tsLoaderDefinitionFileVersions", js.Array(value :_*))
+      inline def setTsLoaderDefinitionFileVersionsVarargs(value: String*): Self = StObject.set(x, "tsLoaderDefinitionFileVersions", js.Array(value :_*))
       
-      @scala.inline
-      def setTsLoaderFileVersion(value: Double): Self = StObject.set(x, "tsLoaderFileVersion", value.asInstanceOf[js.Any])
+      inline def setTsLoaderFileVersion(value: Double): Self = StObject.set(x, "tsLoaderFileVersion", value.asInstanceOf[js.Any])
     }
   }
   
@@ -669,17 +626,14 @@ object anon {
   }
   object TypeofScriptSnapshot {
     
-    @scala.inline
-    def apply(fromString: String => IScriptSnapshot): TypeofScriptSnapshot = {
+    inline def apply(fromString: String => IScriptSnapshot): TypeofScriptSnapshot = {
       val __obj = js.Dynamic.literal(fromString = js.Any.fromFunction1(fromString))
       __obj.asInstanceOf[TypeofScriptSnapshot]
     }
     
-    @scala.inline
-    implicit class TypeofScriptSnapshotMutableBuilder[Self <: TypeofScriptSnapshot] (val x: Self) extends AnyVal {
+    extension [Self <: TypeofScriptSnapshot](x: Self) {
       
-      @scala.inline
-      def setFromString(value: String => IScriptSnapshot): Self = StObject.set(x, "fromString", js.Any.fromFunction1(value))
+      inline def setFromString(value: String => IScriptSnapshot): Self = StObject.set(x, "fromString", js.Any.fromFunction1(value))
     }
   }
   

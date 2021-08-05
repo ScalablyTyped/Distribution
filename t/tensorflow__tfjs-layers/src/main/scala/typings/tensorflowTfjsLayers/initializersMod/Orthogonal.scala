@@ -11,9 +11,9 @@ class Orthogonal () extends Initializer {
   
   val DEFAULT_GAIN: /* 1 */ Double = js.native
   
-  val gain: Double = js.native
+  /* protected */ val gain: Double = js.native
   
-  val seed: Double = js.native
+  /* protected */ val seed: Double = js.native
 }
 /* static members */
 object Orthogonal {
@@ -26,6 +26,5 @@ object Orthogonal {
   @JSImport("@tensorflow/tfjs-layers/dist/initializers", "Orthogonal.className")
   @js.native
   def className: String = js.native
-  @scala.inline
-  def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+  inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
 }

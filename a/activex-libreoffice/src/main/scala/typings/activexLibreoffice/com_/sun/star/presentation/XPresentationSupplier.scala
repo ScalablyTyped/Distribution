@@ -19,8 +19,7 @@ trait XPresentationSupplier
 }
 object XPresentationSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Presentation: XPresentation,
     acquire: () => Unit,
     getPresentation: () => XPresentation,
@@ -31,13 +30,10 @@ object XPresentationSupplier {
     __obj.asInstanceOf[XPresentationSupplier]
   }
   
-  @scala.inline
-  implicit class XPresentationSupplierMutableBuilder[Self <: XPresentationSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XPresentationSupplier](x: Self) {
     
-    @scala.inline
-    def setGetPresentation(value: () => XPresentation): Self = StObject.set(x, "getPresentation", js.Any.fromFunction0(value))
+    inline def setGetPresentation(value: () => XPresentation): Self = StObject.set(x, "getPresentation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPresentation(value: XPresentation): Self = StObject.set(x, "Presentation", value.asInstanceOf[js.Any])
+    inline def setPresentation(value: XPresentation): Self = StObject.set(x, "Presentation", value.asInstanceOf[js.Any])
   }
 }

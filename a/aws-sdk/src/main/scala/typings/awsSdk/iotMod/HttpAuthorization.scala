@@ -13,19 +13,15 @@ trait HttpAuthorization extends StObject {
 }
 object HttpAuthorization {
   
-  @scala.inline
-  def apply(): HttpAuthorization = {
+  inline def apply(): HttpAuthorization = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpAuthorization]
   }
   
-  @scala.inline
-  implicit class HttpAuthorizationMutableBuilder[Self <: HttpAuthorization] (val x: Self) extends AnyVal {
+  extension [Self <: HttpAuthorization](x: Self) {
     
-    @scala.inline
-    def setSigv4(value: SigV4Authorization): Self = StObject.set(x, "sigv4", value.asInstanceOf[js.Any])
+    inline def setSigv4(value: SigV4Authorization): Self = StObject.set(x, "sigv4", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigv4Undefined: Self = StObject.set(x, "sigv4", js.undefined)
+    inline def setSigv4Undefined: Self = StObject.set(x, "sigv4", js.undefined)
   }
 }

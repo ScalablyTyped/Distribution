@@ -24,8 +24,7 @@ trait Stats extends StObject {
 }
 object Stats {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     channels: js.Array[ChannelStats],
     dominant: B,
     entropy: Double,
@@ -36,25 +35,18 @@ object Stats {
     __obj.asInstanceOf[Stats]
   }
   
-  @scala.inline
-  implicit class StatsMutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
+  extension [Self <: Stats](x: Self) {
     
-    @scala.inline
-    def setChannels(value: js.Array[ChannelStats]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: js.Array[ChannelStats]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelsVarargs(value: ChannelStats*): Self = StObject.set(x, "channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: ChannelStats*): Self = StObject.set(x, "channels", js.Array(value :_*))
     
-    @scala.inline
-    def setDominant(value: B): Self = StObject.set(x, "dominant", value.asInstanceOf[js.Any])
+    inline def setDominant(value: B): Self = StObject.set(x, "dominant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntropy(value: Double): Self = StObject.set(x, "entropy", value.asInstanceOf[js.Any])
+    inline def setEntropy(value: Double): Self = StObject.set(x, "entropy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsOpaque(value: Boolean): Self = StObject.set(x, "isOpaque", value.asInstanceOf[js.Any])
+    inline def setIsOpaque(value: Boolean): Self = StObject.set(x, "isOpaque", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharpness(value: Double): Self = StObject.set(x, "sharpness", value.asInstanceOf[js.Any])
+    inline def setSharpness(value: Double): Self = StObject.set(x, "sharpness", value.asInstanceOf[js.Any])
   }
 }

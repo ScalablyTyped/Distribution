@@ -14,19 +14,15 @@ trait ClearCookiesRequest extends StObject {
 }
 object ClearCookiesRequest {
   
-  @scala.inline
-  def apply(): ClearCookiesRequest = {
+  inline def apply(): ClearCookiesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClearCookiesRequest]
   }
   
-  @scala.inline
-  implicit class ClearCookiesRequestMutableBuilder[Self <: ClearCookiesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ClearCookiesRequest](x: Self) {
     
-    @scala.inline
-    def setBrowserContextId(value: BrowserContextID): Self = StObject.set(x, "browserContextId", value.asInstanceOf[js.Any])
+    inline def setBrowserContextId(value: BrowserContextID): Self = StObject.set(x, "browserContextId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowserContextIdUndefined: Self = StObject.set(x, "browserContextId", js.undefined)
+    inline def setBrowserContextIdUndefined: Self = StObject.set(x, "browserContextId", js.undefined)
   }
 }

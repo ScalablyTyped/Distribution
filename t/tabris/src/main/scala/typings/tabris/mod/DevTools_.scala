@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "DevTools")
 @js.native
-class DevTools_ protected () extends NativeObject {
+/* private */ class DevTools_ () extends NativeObject {
   
   /**
     * Hides the developer tools UI if currently visible. Note that this can cause a re-layout since the

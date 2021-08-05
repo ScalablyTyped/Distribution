@@ -31,6 +31,6 @@ object sharedWorkerCommunicatorMod {
     /**
       * @hidden
       */
-    var port_ : MessagePort = js.native
+    /* protected */ var port_ : MessagePort = js.native
   }
 }

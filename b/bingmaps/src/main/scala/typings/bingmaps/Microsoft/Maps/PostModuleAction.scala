@@ -17,28 +17,21 @@ trait PostModuleAction extends StObject {
 }
 object PostModuleAction {
   
-  @scala.inline
-  def apply(addLayerFromUrl: String): PostModuleAction = {
+  inline def apply(addLayerFromUrl: String): PostModuleAction = {
     val __obj = js.Dynamic.literal(addLayerFromUrl = addLayerFromUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostModuleAction]
   }
   
-  @scala.inline
-  implicit class PostModuleActionMutableBuilder[Self <: PostModuleAction] (val x: Self) extends AnyVal {
+  extension [Self <: PostModuleAction](x: Self) {
     
-    @scala.inline
-    def setAddLayerFromUrl(value: String): Self = StObject.set(x, "addLayerFromUrl", value.asInstanceOf[js.Any])
+    inline def setAddLayerFromUrl(value: String): Self = StObject.set(x, "addLayerFromUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeoJsonOption(value: IGeoJsonReadOptions): Self = StObject.set(x, "geoJsonOption", value.asInstanceOf[js.Any])
+    inline def setGeoJsonOption(value: IGeoJsonReadOptions): Self = StObject.set(x, "geoJsonOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeoJsonOptionUndefined: Self = StObject.set(x, "geoJsonOption", js.undefined)
+    inline def setGeoJsonOptionUndefined: Self = StObject.set(x, "geoJsonOption", js.undefined)
     
-    @scala.inline
-    def setGeoXmlOption(value: IGeoXmlLayerOptions): Self = StObject.set(x, "geoXmlOption", value.asInstanceOf[js.Any])
+    inline def setGeoXmlOption(value: IGeoXmlLayerOptions): Self = StObject.set(x, "geoXmlOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeoXmlOptionUndefined: Self = StObject.set(x, "geoXmlOption", js.undefined)
+    inline def setGeoXmlOptionUndefined: Self = StObject.set(x, "geoXmlOption", js.undefined)
   }
 }

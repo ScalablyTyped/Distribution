@@ -21,22 +21,17 @@ trait RetrieveMultipleResult extends StObject {
 }
 object RetrieveMultipleResult {
   
-  @scala.inline
-  def apply(entities: js.Array[js.Any], nextLink: String): RetrieveMultipleResult = {
+  inline def apply(entities: js.Array[js.Any], nextLink: String): RetrieveMultipleResult = {
     val __obj = js.Dynamic.literal(entities = entities.asInstanceOf[js.Any], nextLink = nextLink.asInstanceOf[js.Any])
     __obj.asInstanceOf[RetrieveMultipleResult]
   }
   
-  @scala.inline
-  implicit class RetrieveMultipleResultMutableBuilder[Self <: RetrieveMultipleResult] (val x: Self) extends AnyVal {
+  extension [Self <: RetrieveMultipleResult](x: Self) {
     
-    @scala.inline
-    def setEntities(value: js.Array[js.Any]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+    inline def setEntities(value: js.Array[js.Any]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitiesVarargs(value: js.Any*): Self = StObject.set(x, "entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: js.Any*): Self = StObject.set(x, "entities", js.Array(value :_*))
     
-    @scala.inline
-    def setNextLink(value: String): Self = StObject.set(x, "nextLink", value.asInstanceOf[js.Any])
+    inline def setNextLink(value: String): Self = StObject.set(x, "nextLink", value.asInstanceOf[js.Any])
   }
 }

@@ -23,22 +23,17 @@ trait CreationInfo extends StObject {
 }
 object CreationInfo {
   
-  @scala.inline
-  def apply(OwnerGid: OwnerGid, OwnerUid: OwnerUid, Permissions: Permissions): CreationInfo = {
+  inline def apply(OwnerGid: OwnerGid, OwnerUid: OwnerUid, Permissions: Permissions): CreationInfo = {
     val __obj = js.Dynamic.literal(OwnerGid = OwnerGid.asInstanceOf[js.Any], OwnerUid = OwnerUid.asInstanceOf[js.Any], Permissions = Permissions.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreationInfo]
   }
   
-  @scala.inline
-  implicit class CreationInfoMutableBuilder[Self <: CreationInfo] (val x: Self) extends AnyVal {
+  extension [Self <: CreationInfo](x: Self) {
     
-    @scala.inline
-    def setOwnerGid(value: OwnerGid): Self = StObject.set(x, "OwnerGid", value.asInstanceOf[js.Any])
+    inline def setOwnerGid(value: OwnerGid): Self = StObject.set(x, "OwnerGid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUid(value: OwnerUid): Self = StObject.set(x, "OwnerUid", value.asInstanceOf[js.Any])
+    inline def setOwnerUid(value: OwnerUid): Self = StObject.set(x, "OwnerUid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissions(value: Permissions): Self = StObject.set(x, "Permissions", value.asInstanceOf[js.Any])
+    inline def setPermissions(value: Permissions): Self = StObject.set(x, "Permissions", value.asInstanceOf[js.Any])
   }
 }

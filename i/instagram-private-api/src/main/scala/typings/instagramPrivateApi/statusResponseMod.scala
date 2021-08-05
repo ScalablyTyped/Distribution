@@ -12,17 +12,14 @@ object statusResponseMod {
   }
   object StatusResponse {
     
-    @scala.inline
-    def apply(status: String): StatusResponse = {
+    inline def apply(status: String): StatusResponse = {
       val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[StatusResponse]
     }
     
-    @scala.inline
-    implicit class StatusResponseMutableBuilder[Self <: StatusResponse] (val x: Self) extends AnyVal {
+    extension [Self <: StatusResponse](x: Self) {
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
 }

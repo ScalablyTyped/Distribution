@@ -82,151 +82,103 @@ trait WhereLogic extends StObject {
 }
 object WhereLogic {
   
-  @scala.inline
-  def apply(): WhereLogic = {
+  inline def apply(): WhereLogic = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WhereLogic]
   }
   
-  @scala.inline
-  implicit class WhereLogicMutableBuilder[Self <: WhereLogic] (val x: Self) extends AnyVal {
+  extension [Self <: WhereLogic](x: Self) {
     
-    @scala.inline
-    def set$between(value: js.Tuple2[Date | Double, Date | Double]): Self = StObject.set(x, "$between", value.asInstanceOf[js.Any])
+    inline def set$between(value: js.Tuple2[Date | Double, Date | Double]): Self = StObject.set(x, "$between", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$betweenUndefined: Self = StObject.set(x, "$between", js.undefined)
+    inline def set$betweenUndefined: Self = StObject.set(x, "$between", js.undefined)
     
-    @scala.inline
-    def set$contained(value: js.Any): Self = StObject.set(x, "$contained", value.asInstanceOf[js.Any])
+    inline def set$contained(value: js.Any): Self = StObject.set(x, "$contained", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$containedUndefined: Self = StObject.set(x, "$contained", js.undefined)
+    inline def set$containedUndefined: Self = StObject.set(x, "$contained", js.undefined)
     
-    @scala.inline
-    def set$contains(value: js.Any): Self = StObject.set(x, "$contains", value.asInstanceOf[js.Any])
+    inline def set$contains(value: js.Any): Self = StObject.set(x, "$contains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$containsUndefined: Self = StObject.set(x, "$contains", js.undefined)
+    inline def set$containsUndefined: Self = StObject.set(x, "$contains", js.undefined)
     
-    @scala.inline
-    def set$gt(value: Double | String | Date): Self = StObject.set(x, "$gt", value.asInstanceOf[js.Any])
+    inline def set$gt(value: Double | String | Date): Self = StObject.set(x, "$gt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$gtUndefined: Self = StObject.set(x, "$gt", js.undefined)
+    inline def set$gtUndefined: Self = StObject.set(x, "$gt", js.undefined)
     
-    @scala.inline
-    def set$gte(value: Double | String | Date): Self = StObject.set(x, "$gte", value.asInstanceOf[js.Any])
+    inline def set$gte(value: Double | String | Date): Self = StObject.set(x, "$gte", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$gteUndefined: Self = StObject.set(x, "$gte", js.undefined)
+    inline def set$gteUndefined: Self = StObject.set(x, "$gte", js.undefined)
     
-    @scala.inline
-    def set$iLike(value: String | WherePGStatement): Self = StObject.set(x, "$iLike", value.asInstanceOf[js.Any])
+    inline def set$iLike(value: String | WherePGStatement): Self = StObject.set(x, "$iLike", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$iLikeUndefined: Self = StObject.set(x, "$iLike", js.undefined)
+    inline def set$iLikeUndefined: Self = StObject.set(x, "$iLike", js.undefined)
     
-    @scala.inline
-    def set$in(value: (js.Array[String | Double]) | literal): Self = StObject.set(x, "$in", value.asInstanceOf[js.Any])
+    inline def set$in(value: (js.Array[String | Double]) | literal): Self = StObject.set(x, "$in", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$inUndefined: Self = StObject.set(x, "$in", js.undefined)
+    inline def set$inUndefined: Self = StObject.set(x, "$in", js.undefined)
     
-    @scala.inline
-    def set$inVarargs(value: (String | Double)*): Self = StObject.set(x, "$in", js.Array(value :_*))
+    inline def set$inVarargs(value: (String | Double)*): Self = StObject.set(x, "$in", js.Array(value :_*))
     
-    @scala.inline
-    def set$like(value: String | WherePGStatement): Self = StObject.set(x, "$like", value.asInstanceOf[js.Any])
+    inline def set$like(value: String | WherePGStatement): Self = StObject.set(x, "$like", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$likeUndefined: Self = StObject.set(x, "$like", js.undefined)
+    inline def set$likeUndefined: Self = StObject.set(x, "$like", js.undefined)
     
-    @scala.inline
-    def set$lt(value: Double | String | Date): Self = StObject.set(x, "$lt", value.asInstanceOf[js.Any])
+    inline def set$lt(value: Double | String | Date): Self = StObject.set(x, "$lt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$ltUndefined: Self = StObject.set(x, "$lt", js.undefined)
+    inline def set$ltUndefined: Self = StObject.set(x, "$lt", js.undefined)
     
-    @scala.inline
-    def set$lte(value: Double | String | Date): Self = StObject.set(x, "$lte", value.asInstanceOf[js.Any])
+    inline def set$lte(value: Double | String | Date): Self = StObject.set(x, "$lte", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$lteUndefined: Self = StObject.set(x, "$lte", js.undefined)
+    inline def set$lteUndefined: Self = StObject.set(x, "$lte", js.undefined)
     
-    @scala.inline
-    def set$ne(value: String | Double | WhereLogic): Self = StObject.set(x, "$ne", value.asInstanceOf[js.Any])
+    inline def set$ne(value: String | Double | WhereLogic): Self = StObject.set(x, "$ne", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$neUndefined: Self = StObject.set(x, "$ne", js.undefined)
+    inline def set$neUndefined: Self = StObject.set(x, "$ne", js.undefined)
     
-    @scala.inline
-    def set$not(value: Boolean | String | Double | AnyWhereOptions): Self = StObject.set(x, "$not", value.asInstanceOf[js.Any])
+    inline def set$not(value: Boolean | String | Double | AnyWhereOptions): Self = StObject.set(x, "$not", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$notBetween(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "$notBetween", value.asInstanceOf[js.Any])
+    inline def set$notBetween(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "$notBetween", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$notBetweenUndefined: Self = StObject.set(x, "$notBetween", js.undefined)
+    inline def set$notBetweenUndefined: Self = StObject.set(x, "$notBetween", js.undefined)
     
-    @scala.inline
-    def set$notILike(value: String | WherePGStatement): Self = StObject.set(x, "$notILike", value.asInstanceOf[js.Any])
+    inline def set$notILike(value: String | WherePGStatement): Self = StObject.set(x, "$notILike", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$notILikeUndefined: Self = StObject.set(x, "$notILike", js.undefined)
+    inline def set$notILikeUndefined: Self = StObject.set(x, "$notILike", js.undefined)
     
-    @scala.inline
-    def set$notIn(value: (js.Array[String | Double]) | literal): Self = StObject.set(x, "$notIn", value.asInstanceOf[js.Any])
+    inline def set$notIn(value: (js.Array[String | Double]) | literal): Self = StObject.set(x, "$notIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$notInUndefined: Self = StObject.set(x, "$notIn", js.undefined)
+    inline def set$notInUndefined: Self = StObject.set(x, "$notIn", js.undefined)
     
-    @scala.inline
-    def set$notInVarargs(value: (String | Double)*): Self = StObject.set(x, "$notIn", js.Array(value :_*))
+    inline def set$notInVarargs(value: (String | Double)*): Self = StObject.set(x, "$notIn", js.Array(value :_*))
     
-    @scala.inline
-    def set$notLike(value: String | WherePGStatement): Self = StObject.set(x, "$notLike", value.asInstanceOf[js.Any])
+    inline def set$notLike(value: String | WherePGStatement): Self = StObject.set(x, "$notLike", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$notLikeUndefined: Self = StObject.set(x, "$notLike", js.undefined)
+    inline def set$notLikeUndefined: Self = StObject.set(x, "$notLike", js.undefined)
     
-    @scala.inline
-    def set$notUndefined: Self = StObject.set(x, "$not", js.undefined)
+    inline def set$notUndefined: Self = StObject.set(x, "$not", js.undefined)
     
-    @scala.inline
-    def set$overlap(value: js.Tuple2[Double | String, Double | String]): Self = StObject.set(x, "$overlap", value.asInstanceOf[js.Any])
+    inline def set$overlap(value: js.Tuple2[Double | String, Double | String]): Self = StObject.set(x, "$overlap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$overlapUndefined: Self = StObject.set(x, "$overlap", js.undefined)
+    inline def set$overlapUndefined: Self = StObject.set(x, "$overlap", js.undefined)
     
-    @scala.inline
-    def `set@Greaterthansign`(value: js.Any): Self = StObject.set(x, "@>", value.asInstanceOf[js.Any])
+    inline def `set@Greaterthansign`(value: js.Any): Self = StObject.set(x, "@>", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set@GreaterthansignUndefined`: Self = StObject.set(x, "@>", js.undefined)
+    inline def `set@GreaterthansignUndefined`: Self = StObject.set(x, "@>", js.undefined)
     
-    @scala.inline
-    def setAmpersandAmpersand(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "&&", value.asInstanceOf[js.Any])
+    inline def setAmpersandAmpersand(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "&&", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmpersandAmpersandUndefined: Self = StObject.set(x, "&&", js.undefined)
+    inline def setAmpersandAmpersandUndefined: Self = StObject.set(x, "&&", js.undefined)
     
-    @scala.inline
-    def setDotDot(value: js.Tuple2[Double | String, Double | String]): Self = StObject.set(x, "..", value.asInstanceOf[js.Any])
+    inline def setDotDot(value: js.Tuple2[Double | String, Double | String]): Self = StObject.set(x, "..", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDotDotUndefined: Self = StObject.set(x, "..", js.undefined)
+    inline def setDotDotUndefined: Self = StObject.set(x, "..", js.undefined)
     
-    @scala.inline
-    def setExclamationmarkDotDot(value: js.Tuple2[Double | String, Double | String]): Self = StObject.set(x, "!..", value.asInstanceOf[js.Any])
+    inline def setExclamationmarkDotDot(value: js.Tuple2[Double | String, Double | String]): Self = StObject.set(x, "!..", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclamationmarkDotDotUndefined: Self = StObject.set(x, "!..", js.undefined)
+    inline def setExclamationmarkDotDotUndefined: Self = StObject.set(x, "!..", js.undefined)
     
-    @scala.inline
-    def `setLessthansign@`(value: js.Any): Self = StObject.set(x, "<@", value.asInstanceOf[js.Any])
+    inline def `setLessthansign@`(value: js.Any): Self = StObject.set(x, "<@", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setLessthansign@Undefined`: Self = StObject.set(x, "<@", js.undefined)
+    inline def `setLessthansign@Undefined`: Self = StObject.set(x, "<@", js.undefined)
   }
 }

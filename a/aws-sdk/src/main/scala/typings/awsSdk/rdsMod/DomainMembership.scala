@@ -28,37 +28,27 @@ trait DomainMembership extends StObject {
 }
 object DomainMembership {
   
-  @scala.inline
-  def apply(): DomainMembership = {
+  inline def apply(): DomainMembership = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DomainMembership]
   }
   
-  @scala.inline
-  implicit class DomainMembershipMutableBuilder[Self <: DomainMembership] (val x: Self) extends AnyVal {
+  extension [Self <: DomainMembership](x: Self) {
     
-    @scala.inline
-    def setDomain(value: String): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: String): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "Domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "Domain", js.undefined)
     
-    @scala.inline
-    def setFQDN(value: String): Self = StObject.set(x, "FQDN", value.asInstanceOf[js.Any])
+    inline def setFQDN(value: String): Self = StObject.set(x, "FQDN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFQDNUndefined: Self = StObject.set(x, "FQDN", js.undefined)
+    inline def setFQDNUndefined: Self = StObject.set(x, "FQDN", js.undefined)
     
-    @scala.inline
-    def setIAMRoleName(value: String): Self = StObject.set(x, "IAMRoleName", value.asInstanceOf[js.Any])
+    inline def setIAMRoleName(value: String): Self = StObject.set(x, "IAMRoleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIAMRoleNameUndefined: Self = StObject.set(x, "IAMRoleName", js.undefined)
+    inline def setIAMRoleNameUndefined: Self = StObject.set(x, "IAMRoleName", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

@@ -85,8 +85,7 @@ trait ReceiptPrinterCapabilities extends StObject {
 }
 object ReceiptPrinterCapabilities {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canCutPaper: Boolean,
     cartridgeSensors: PosPrinterCartridgeSensors,
     colorCartridgeCapabilities: PosPrinterColorCapabilities,
@@ -117,82 +116,56 @@ object ReceiptPrinterCapabilities {
     __obj.asInstanceOf[ReceiptPrinterCapabilities]
   }
   
-  @scala.inline
-  implicit class ReceiptPrinterCapabilitiesMutableBuilder[Self <: ReceiptPrinterCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: ReceiptPrinterCapabilities](x: Self) {
     
-    @scala.inline
-    def setCanCutPaper(value: Boolean): Self = StObject.set(x, "canCutPaper", value.asInstanceOf[js.Any])
+    inline def setCanCutPaper(value: Boolean): Self = StObject.set(x, "canCutPaper", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCartridgeSensors(value: PosPrinterCartridgeSensors): Self = StObject.set(x, "cartridgeSensors", value.asInstanceOf[js.Any])
+    inline def setCartridgeSensors(value: PosPrinterCartridgeSensors): Self = StObject.set(x, "cartridgeSensors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorCartridgeCapabilities(value: PosPrinterColorCapabilities): Self = StObject.set(x, "colorCartridgeCapabilities", value.asInstanceOf[js.Any])
+    inline def setColorCartridgeCapabilities(value: PosPrinterColorCapabilities): Self = StObject.set(x, "colorCartridgeCapabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs180RotationSupported(value: Boolean): Self = StObject.set(x, "is180RotationSupported", value.asInstanceOf[js.Any])
+    inline def setIs180RotationSupported(value: Boolean): Self = StObject.set(x, "is180RotationSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBarcodeSupported(value: Boolean): Self = StObject.set(x, "isBarcodeSupported", value.asInstanceOf[js.Any])
+    inline def setIsBarcodeSupported(value: Boolean): Self = StObject.set(x, "isBarcodeSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBitmapSupported(value: Boolean): Self = StObject.set(x, "isBitmapSupported", value.asInstanceOf[js.Any])
+    inline def setIsBitmapSupported(value: Boolean): Self = StObject.set(x, "isBitmapSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBoldSupported(value: Boolean): Self = StObject.set(x, "isBoldSupported", value.asInstanceOf[js.Any])
+    inline def setIsBoldSupported(value: Boolean): Self = StObject.set(x, "isBoldSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDoubleHighDoubleWidePrintSupported(value: Boolean): Self = StObject.set(x, "isDoubleHighDoubleWidePrintSupported", value.asInstanceOf[js.Any])
+    inline def setIsDoubleHighDoubleWidePrintSupported(value: Boolean): Self = StObject.set(x, "isDoubleHighDoubleWidePrintSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDoubleHighPrintSupported(value: Boolean): Self = StObject.set(x, "isDoubleHighPrintSupported", value.asInstanceOf[js.Any])
+    inline def setIsDoubleHighPrintSupported(value: Boolean): Self = StObject.set(x, "isDoubleHighPrintSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDoubleWidePrintSupported(value: Boolean): Self = StObject.set(x, "isDoubleWidePrintSupported", value.asInstanceOf[js.Any])
+    inline def setIsDoubleWidePrintSupported(value: Boolean): Self = StObject.set(x, "isDoubleWidePrintSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDualColorSupported(value: Boolean): Self = StObject.set(x, "isDualColorSupported", value.asInstanceOf[js.Any])
+    inline def setIsDualColorSupported(value: Boolean): Self = StObject.set(x, "isDualColorSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsItalicSupported(value: Boolean): Self = StObject.set(x, "isItalicSupported", value.asInstanceOf[js.Any])
+    inline def setIsItalicSupported(value: Boolean): Self = StObject.set(x, "isItalicSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLeft90RotationSupported(value: Boolean): Self = StObject.set(x, "isLeft90RotationSupported", value.asInstanceOf[js.Any])
+    inline def setIsLeft90RotationSupported(value: Boolean): Self = StObject.set(x, "isLeft90RotationSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPaperEmptySensorSupported(value: Boolean): Self = StObject.set(x, "isPaperEmptySensorSupported", value.asInstanceOf[js.Any])
+    inline def setIsPaperEmptySensorSupported(value: Boolean): Self = StObject.set(x, "isPaperEmptySensorSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPaperNearEndSensorSupported(value: Boolean): Self = StObject.set(x, "isPaperNearEndSensorSupported", value.asInstanceOf[js.Any])
+    inline def setIsPaperNearEndSensorSupported(value: Boolean): Self = StObject.set(x, "isPaperNearEndSensorSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPrintAreaSupported(value: Boolean): Self = StObject.set(x, "isPrintAreaSupported", value.asInstanceOf[js.Any])
+    inline def setIsPrintAreaSupported(value: Boolean): Self = StObject.set(x, "isPrintAreaSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPrinterPresent(value: Boolean): Self = StObject.set(x, "isPrinterPresent", value.asInstanceOf[js.Any])
+    inline def setIsPrinterPresent(value: Boolean): Self = StObject.set(x, "isPrinterPresent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRight90RotationSupported(value: Boolean): Self = StObject.set(x, "isRight90RotationSupported", value.asInstanceOf[js.Any])
+    inline def setIsRight90RotationSupported(value: Boolean): Self = StObject.set(x, "isRight90RotationSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsStampSupported(value: Boolean): Self = StObject.set(x, "isStampSupported", value.asInstanceOf[js.Any])
+    inline def setIsStampSupported(value: Boolean): Self = StObject.set(x, "isStampSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsUnderlineSupported(value: Boolean): Self = StObject.set(x, "isUnderlineSupported", value.asInstanceOf[js.Any])
+    inline def setIsUnderlineSupported(value: Boolean): Self = StObject.set(x, "isUnderlineSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkFeedCapabilities(value: PosPrinterMarkFeedCapabilities): Self = StObject.set(x, "markFeedCapabilities", value.asInstanceOf[js.Any])
+    inline def setMarkFeedCapabilities(value: PosPrinterMarkFeedCapabilities): Self = StObject.set(x, "markFeedCapabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuledLineCapabilities(value: PosPrinterRuledLineCapabilities): Self = StObject.set(x, "ruledLineCapabilities", value.asInstanceOf[js.Any])
+    inline def setRuledLineCapabilities(value: PosPrinterRuledLineCapabilities): Self = StObject.set(x, "ruledLineCapabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedBarcodeRotations(value: IVectorView[PosPrinterRotation]): Self = StObject.set(x, "supportedBarcodeRotations", value.asInstanceOf[js.Any])
+    inline def setSupportedBarcodeRotations(value: IVectorView[PosPrinterRotation]): Self = StObject.set(x, "supportedBarcodeRotations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedBitmapRotations(value: IVectorView[PosPrinterRotation]): Self = StObject.set(x, "supportedBitmapRotations", value.asInstanceOf[js.Any])
+    inline def setSupportedBitmapRotations(value: IVectorView[PosPrinterRotation]): Self = StObject.set(x, "supportedBitmapRotations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedCharactersPerLine(value: IVectorView[Double]): Self = StObject.set(x, "supportedCharactersPerLine", value.asInstanceOf[js.Any])
+    inline def setSupportedCharactersPerLine(value: IVectorView[Double]): Self = StObject.set(x, "supportedCharactersPerLine", value.asInstanceOf[js.Any])
   }
 }

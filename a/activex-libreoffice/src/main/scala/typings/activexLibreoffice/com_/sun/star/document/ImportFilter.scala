@@ -25,8 +25,7 @@ trait ImportFilter
      with XNamed
 object ImportFilter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Name: String,
     acquire: () => Unit,
     cancel: () => Unit,

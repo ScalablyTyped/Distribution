@@ -9,8 +9,7 @@ object global {
   @JSGlobal("all")
   @js.native
   def all: JasmineDataDrivenTest = js.native
-  @scala.inline
-  def all_=(x: JasmineDataDrivenTest): Unit = js.Dynamic.global.updateDynamic("all")(x.asInstanceOf[js.Any])
+  inline def all_=(x: JasmineDataDrivenTest): Unit = js.Dynamic.global.updateDynamic("all")(x.asInstanceOf[js.Any])
   
   @JSGlobal("using")
   @js.native
@@ -19,12 +18,10 @@ object global {
   @JSGlobal("xall")
   @js.native
   def xall: JasmineDataDrivenTest = js.native
-  @scala.inline
-  def xall_=(x: JasmineDataDrivenTest): Unit = js.Dynamic.global.updateDynamic("xall")(x.asInstanceOf[js.Any])
+  inline def xall_=(x: JasmineDataDrivenTest): Unit = js.Dynamic.global.updateDynamic("xall")(x.asInstanceOf[js.Any])
   
   @JSGlobal("xusing")
   @js.native
   def xusing: JasmineDataDrivenTest = js.native
-  @scala.inline
-  def xusing_=(x: JasmineDataDrivenTest): Unit = js.Dynamic.global.updateDynamic("xusing")(x.asInstanceOf[js.Any])
+  inline def xusing_=(x: JasmineDataDrivenTest): Unit = js.Dynamic.global.updateDynamic("xusing")(x.asInstanceOf[js.Any])
 }

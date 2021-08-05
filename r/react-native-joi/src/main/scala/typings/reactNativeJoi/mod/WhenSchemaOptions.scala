@@ -18,31 +18,23 @@ trait WhenSchemaOptions extends StObject {
 }
 object WhenSchemaOptions {
   
-  @scala.inline
-  def apply(): WhenSchemaOptions = {
+  inline def apply(): WhenSchemaOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WhenSchemaOptions]
   }
   
-  @scala.inline
-  implicit class WhenSchemaOptionsMutableBuilder[Self <: WhenSchemaOptions] (val x: Self) extends AnyVal {
+  extension [Self <: WhenSchemaOptions](x: Self) {
     
-    @scala.inline
-    def setOtherwise(value: SchemaLike): Self = StObject.set(x, "otherwise", value.asInstanceOf[js.Any])
+    inline def setOtherwise(value: SchemaLike): Self = StObject.set(x, "otherwise", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOtherwiseNull: Self = StObject.set(x, "otherwise", null)
+    inline def setOtherwiseNull: Self = StObject.set(x, "otherwise", null)
     
-    @scala.inline
-    def setOtherwiseUndefined: Self = StObject.set(x, "otherwise", js.undefined)
+    inline def setOtherwiseUndefined: Self = StObject.set(x, "otherwise", js.undefined)
     
-    @scala.inline
-    def setThen(value: SchemaLike): Self = StObject.set(x, "then", value.asInstanceOf[js.Any])
+    inline def setThen(value: SchemaLike): Self = StObject.set(x, "then", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThenNull: Self = StObject.set(x, "then", null)
+    inline def setThenNull: Self = StObject.set(x, "then", null)
     
-    @scala.inline
-    def setThenUndefined: Self = StObject.set(x, "then", js.undefined)
+    inline def setThenUndefined: Self = StObject.set(x, "then", js.undefined)
   }
 }

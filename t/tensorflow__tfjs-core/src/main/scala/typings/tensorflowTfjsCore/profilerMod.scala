@@ -54,29 +54,24 @@ object profilerMod {
     def this(backendTimer: BackendTimer) = this()
     def this(backendTimer: BackendTimer, logger: Logger) = this()
     
-    var backendTimer: js.Any = js.native
+    /* private */ var backendTimer: js.Any = js.native
     
     def logKernelProfile(kernelProfile: KernelProfile): Unit = js.native
     
-    var logger: js.Any = js.native
+    /* private */ var logger: js.Any = js.native
     
     def profileKernel(kernelName: String, inputs: NamedTensorMap, f: js.Function0[js.Array[Tensor[Rank]]]): KernelProfile = js.native
   }
   
-  @scala.inline
-  def checkComputationForErrors_bool(vals: Uint8Array, dtype: bool, kernelName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkComputationForErrors")(vals.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], kernelName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def checkComputationForErrors_bool(vals: Uint8Array, dtype: bool, kernelName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkComputationForErrors")(vals.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], kernelName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def checkComputationForErrors_complex64(vals: Float32Array, dtype: complex64, kernelName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkComputationForErrors")(vals.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], kernelName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def checkComputationForErrors_complex64(vals: Float32Array, dtype: complex64, kernelName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkComputationForErrors")(vals.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], kernelName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def checkComputationForErrors_float32(vals: Float32Array, dtype: float32, kernelName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkComputationForErrors")(vals.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], kernelName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def checkComputationForErrors_float32(vals: Float32Array, dtype: float32, kernelName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkComputationForErrors")(vals.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], kernelName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def checkComputationForErrors_int32(vals: Int32Array, dtype: int32, kernelName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkComputationForErrors")(vals.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], kernelName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def checkComputationForErrors_int32(vals: Int32Array, dtype: int32, kernelName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkComputationForErrors")(vals.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], kernelName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def checkComputationForErrors_string(vals: js.Array[String], dtype: string, kernelName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkComputationForErrors")(vals.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], kernelName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def checkComputationForErrors_string(vals: js.Array[String], dtype: string, kernelName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("checkComputationForErrors")(vals.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], kernelName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   trait KernelProfile extends StObject {
     
@@ -92,8 +87,7 @@ object profilerMod {
   }
   object KernelProfile {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       extraInfo: js.Promise[String],
       inputs: NamedTensorMap,
       kernelName: String,
@@ -104,26 +98,19 @@ object profilerMod {
       __obj.asInstanceOf[KernelProfile]
     }
     
-    @scala.inline
-    implicit class KernelProfileMutableBuilder[Self <: KernelProfile] (val x: Self) extends AnyVal {
+    extension [Self <: KernelProfile](x: Self) {
       
-      @scala.inline
-      def setExtraInfo(value: js.Promise[String]): Self = StObject.set(x, "extraInfo", value.asInstanceOf[js.Any])
+      inline def setExtraInfo(value: js.Promise[String]): Self = StObject.set(x, "extraInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputs(value: NamedTensorMap): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+      inline def setInputs(value: NamedTensorMap): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKernelName(value: String): Self = StObject.set(x, "kernelName", value.asInstanceOf[js.Any])
+      inline def setKernelName(value: String): Self = StObject.set(x, "kernelName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputs(value: js.Array[Tensor[Rank]]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+      inline def setOutputs(value: js.Array[Tensor[Rank]]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputsVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "outputs", js.Array(value :_*))
+      inline def setOutputsVarargs(value: Tensor[Rank]*): Self = StObject.set(x, "outputs", js.Array(value :_*))
       
-      @scala.inline
-      def setTimeMs(value: js.Promise[Double | Error]): Self = StObject.set(x, "timeMs", value.asInstanceOf[js.Any])
+      inline def setTimeMs(value: js.Promise[Double | Error]): Self = StObject.set(x, "timeMs", value.asInstanceOf[js.Any])
     }
   }
 }

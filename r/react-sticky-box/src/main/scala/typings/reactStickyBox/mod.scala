@@ -48,8 +48,7 @@ object mod extends Shortcut {
   }
   object StickyBoxInstance {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       latestScrollY: Double,
       mode: StickyBoxMode,
       naturalTop: Double,
@@ -64,35 +63,25 @@ object mod extends Shortcut {
       __obj.asInstanceOf[StickyBoxInstance]
     }
     
-    @scala.inline
-    implicit class StickyBoxInstanceMutableBuilder[Self <: StickyBoxInstance] (val x: Self) extends AnyVal {
+    extension [Self <: StickyBoxInstance](x: Self) {
       
-      @scala.inline
-      def setLatestScrollY(value: Double): Self = StObject.set(x, "latestScrollY", value.asInstanceOf[js.Any])
+      inline def setLatestScrollY(value: Double): Self = StObject.set(x, "latestScrollY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMode(value: StickyBoxMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: StickyBoxMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNaturalTop(value: Double): Self = StObject.set(x, "naturalTop", value.asInstanceOf[js.Any])
+      inline def setNaturalTop(value: Double): Self = StObject.set(x, "naturalTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: HTMLElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: HTMLElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeHeight(value: Double): Self = StObject.set(x, "nodeHeight", value.asInstanceOf[js.Any])
+      inline def setNodeHeight(value: Double): Self = StObject.set(x, "nodeHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentHeight(value: Double): Self = StObject.set(x, "parentHeight", value.asInstanceOf[js.Any])
+      inline def setParentHeight(value: Double): Self = StObject.set(x, "parentHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollPane(value: HTMLElement | Window): Self = StObject.set(x, "scrollPane", value.asInstanceOf[js.Any])
+      inline def setScrollPane(value: HTMLElement | Window): Self = StObject.set(x, "scrollPane", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewportHeight(value: Double): Self = StObject.set(x, "viewportHeight", value.asInstanceOf[js.Any])
+      inline def setViewportHeight(value: Double): Self = StObject.set(x, "viewportHeight", value.asInstanceOf[js.Any])
     }
   }
   
@@ -104,14 +93,11 @@ object mod extends Shortcut {
   trait StickyBoxMode extends StObject
   object StickyBoxMode {
     
-    @scala.inline
-    def relative: typings.reactStickyBox.reactStickyBoxStrings.relative = "relative".asInstanceOf[typings.reactStickyBox.reactStickyBoxStrings.relative]
+    inline def relative: typings.reactStickyBox.reactStickyBoxStrings.relative = "relative".asInstanceOf[typings.reactStickyBox.reactStickyBoxStrings.relative]
     
-    @scala.inline
-    def stickyBottom: typings.reactStickyBox.reactStickyBoxStrings.stickyBottom = "stickyBottom".asInstanceOf[typings.reactStickyBox.reactStickyBoxStrings.stickyBottom]
+    inline def stickyBottom: typings.reactStickyBox.reactStickyBoxStrings.stickyBottom = "stickyBottom".asInstanceOf[typings.reactStickyBox.reactStickyBoxStrings.stickyBottom]
     
-    @scala.inline
-    def stickyTop: typings.reactStickyBox.reactStickyBoxStrings.stickyTop = "stickyTop".asInstanceOf[typings.reactStickyBox.reactStickyBoxStrings.stickyTop]
+    inline def stickyTop: typings.reactStickyBox.reactStickyBoxStrings.stickyTop = "stickyTop".asInstanceOf[typings.reactStickyBox.reactStickyBoxStrings.stickyTop]
   }
   
   trait StickyBoxProps extends StObject {
@@ -134,56 +120,40 @@ object mod extends Shortcut {
   }
   object StickyBoxProps {
     
-    @scala.inline
-    def apply(): StickyBoxProps = {
+    inline def apply(): StickyBoxProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StickyBoxProps]
     }
     
-    @scala.inline
-    implicit class StickyBoxPropsMutableBuilder[Self <: StickyBoxProps] (val x: Self) extends AnyVal {
+    extension [Self <: StickyBoxProps](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Boolean): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Boolean): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+      inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setOffsetBottom(value: Double): Self = StObject.set(x, "offsetBottom", value.asInstanceOf[js.Any])
+      inline def setOffsetBottom(value: Double): Self = StObject.set(x, "offsetBottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetBottomUndefined: Self = StObject.set(x, "offsetBottom", js.undefined)
+      inline def setOffsetBottomUndefined: Self = StObject.set(x, "offsetBottom", js.undefined)
       
-      @scala.inline
-      def setOffsetTop(value: Double): Self = StObject.set(x, "offsetTop", value.asInstanceOf[js.Any])
+      inline def setOffsetTop(value: Double): Self = StObject.set(x, "offsetTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetTopUndefined: Self = StObject.set(x, "offsetTop", js.undefined)
+      inline def setOffsetTopUndefined: Self = StObject.set(x, "offsetTop", js.undefined)
       
-      @scala.inline
-      def setOnChangeMode(value: (/* oldMode */ js.UndefOr[StickyBoxMode], /* newMode */ StickyBoxMode) => js.Any): Self = StObject.set(x, "onChangeMode", js.Any.fromFunction2(value))
+      inline def setOnChangeMode(value: (/* oldMode */ js.UndefOr[StickyBoxMode], /* newMode */ StickyBoxMode) => js.Any): Self = StObject.set(x, "onChangeMode", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnChangeModeUndefined: Self = StObject.set(x, "onChangeMode", js.undefined)
+      inline def setOnChangeModeUndefined: Self = StObject.set(x, "onChangeMode", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   

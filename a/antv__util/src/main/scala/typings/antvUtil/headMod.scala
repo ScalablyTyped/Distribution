@@ -10,6 +10,5 @@ object headMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(o: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(o.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def default(o: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(o.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

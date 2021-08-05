@@ -18,43 +18,31 @@ trait ControlgroupOptions extends StObject {
 }
 object ControlgroupOptions {
   
-  @scala.inline
-  def apply(): ControlgroupOptions = {
+  inline def apply(): ControlgroupOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ControlgroupOptions]
   }
   
-  @scala.inline
-  implicit class ControlgroupOptionsMutableBuilder[Self <: ControlgroupOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ControlgroupOptions](x: Self) {
     
-    @scala.inline
-    def setCorners(value: Boolean): Self = StObject.set(x, "corners", value.asInstanceOf[js.Any])
+    inline def setCorners(value: Boolean): Self = StObject.set(x, "corners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCornersUndefined: Self = StObject.set(x, "corners", js.undefined)
+    inline def setCornersUndefined: Self = StObject.set(x, "corners", js.undefined)
     
-    @scala.inline
-    def setExcludeInvisible(value: Boolean): Self = StObject.set(x, "excludeInvisible", value.asInstanceOf[js.Any])
+    inline def setExcludeInvisible(value: Boolean): Self = StObject.set(x, "excludeInvisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeInvisibleUndefined: Self = StObject.set(x, "excludeInvisible", js.undefined)
+    inline def setExcludeInvisibleUndefined: Self = StObject.set(x, "excludeInvisible", js.undefined)
     
-    @scala.inline
-    def setMini(value: Boolean): Self = StObject.set(x, "mini", value.asInstanceOf[js.Any])
+    inline def setMini(value: Boolean): Self = StObject.set(x, "mini", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMiniUndefined: Self = StObject.set(x, "mini", js.undefined)
+    inline def setMiniUndefined: Self = StObject.set(x, "mini", js.undefined)
     
-    @scala.inline
-    def setShadow(value: Boolean): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
+    inline def setShadow(value: Boolean): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
+    inline def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

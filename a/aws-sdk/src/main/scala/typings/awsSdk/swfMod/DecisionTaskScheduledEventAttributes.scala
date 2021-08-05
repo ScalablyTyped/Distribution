@@ -23,28 +23,21 @@ trait DecisionTaskScheduledEventAttributes extends StObject {
 }
 object DecisionTaskScheduledEventAttributes {
   
-  @scala.inline
-  def apply(taskList: TaskList): DecisionTaskScheduledEventAttributes = {
+  inline def apply(taskList: TaskList): DecisionTaskScheduledEventAttributes = {
     val __obj = js.Dynamic.literal(taskList = taskList.asInstanceOf[js.Any])
     __obj.asInstanceOf[DecisionTaskScheduledEventAttributes]
   }
   
-  @scala.inline
-  implicit class DecisionTaskScheduledEventAttributesMutableBuilder[Self <: DecisionTaskScheduledEventAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: DecisionTaskScheduledEventAttributes](x: Self) {
     
-    @scala.inline
-    def setStartToCloseTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "startToCloseTimeout", value.asInstanceOf[js.Any])
+    inline def setStartToCloseTimeout(value: DurationInSecondsOptional): Self = StObject.set(x, "startToCloseTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartToCloseTimeoutUndefined: Self = StObject.set(x, "startToCloseTimeout", js.undefined)
+    inline def setStartToCloseTimeoutUndefined: Self = StObject.set(x, "startToCloseTimeout", js.undefined)
     
-    @scala.inline
-    def setTaskList(value: TaskList): Self = StObject.set(x, "taskList", value.asInstanceOf[js.Any])
+    inline def setTaskList(value: TaskList): Self = StObject.set(x, "taskList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskPriority(value: TaskPriority): Self = StObject.set(x, "taskPriority", value.asInstanceOf[js.Any])
+    inline def setTaskPriority(value: TaskPriority): Self = StObject.set(x, "taskPriority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskPriorityUndefined: Self = StObject.set(x, "taskPriority", js.undefined)
+    inline def setTaskPriorityUndefined: Self = StObject.set(x, "taskPriority", js.undefined)
   }
 }

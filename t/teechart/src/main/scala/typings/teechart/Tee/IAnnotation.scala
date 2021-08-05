@@ -30,8 +30,7 @@ trait IAnnotation
 }
 object IAnnotation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     active: Boolean,
     add: String => IAnnotation,
     bounds: IRectangle,
@@ -53,40 +52,28 @@ object IAnnotation {
     __obj.asInstanceOf[IAnnotation]
   }
   
-  @scala.inline
-  implicit class IAnnotationMutableBuilder[Self <: IAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: IAnnotation](x: Self) {
     
-    @scala.inline
-    def setAdd(value: String => IAnnotation): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+    inline def setAdd(value: String => IAnnotation): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBounds(value: IRectangle): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: IRectangle): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: IFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: IFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: js.Array[IAnnotation]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[IAnnotation]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: IAnnotation*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: IAnnotation*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setMargins(value: IMargins): Self = StObject.set(x, "margins", value.asInstanceOf[js.Any])
+    inline def setMargins(value: IMargins): Self = StObject.set(x, "margins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: IPoint): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: IPoint): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResize(value: () => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction0(value))
+    inline def setResize(value: () => Unit): Self = StObject.set(x, "resize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
+    inline def setTransparent(value: Boolean): Self = StObject.set(x, "transparent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

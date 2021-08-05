@@ -9,8 +9,7 @@ trait DebuggerStatement
      with AST
 object DebuggerStatement {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,

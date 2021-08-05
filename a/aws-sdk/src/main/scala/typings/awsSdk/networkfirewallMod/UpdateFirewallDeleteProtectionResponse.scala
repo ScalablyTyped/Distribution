@@ -28,37 +28,27 @@ trait UpdateFirewallDeleteProtectionResponse extends StObject {
 }
 object UpdateFirewallDeleteProtectionResponse {
   
-  @scala.inline
-  def apply(): UpdateFirewallDeleteProtectionResponse = {
+  inline def apply(): UpdateFirewallDeleteProtectionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateFirewallDeleteProtectionResponse]
   }
   
-  @scala.inline
-  implicit class UpdateFirewallDeleteProtectionResponseMutableBuilder[Self <: UpdateFirewallDeleteProtectionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateFirewallDeleteProtectionResponse](x: Self) {
     
-    @scala.inline
-    def setDeleteProtection(value: Boolean): Self = StObject.set(x, "DeleteProtection", value.asInstanceOf[js.Any])
+    inline def setDeleteProtection(value: Boolean): Self = StObject.set(x, "DeleteProtection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteProtectionUndefined: Self = StObject.set(x, "DeleteProtection", js.undefined)
+    inline def setDeleteProtectionUndefined: Self = StObject.set(x, "DeleteProtection", js.undefined)
     
-    @scala.inline
-    def setFirewallArn(value: ResourceArn): Self = StObject.set(x, "FirewallArn", value.asInstanceOf[js.Any])
+    inline def setFirewallArn(value: ResourceArn): Self = StObject.set(x, "FirewallArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirewallArnUndefined: Self = StObject.set(x, "FirewallArn", js.undefined)
+    inline def setFirewallArnUndefined: Self = StObject.set(x, "FirewallArn", js.undefined)
     
-    @scala.inline
-    def setFirewallName(value: ResourceName): Self = StObject.set(x, "FirewallName", value.asInstanceOf[js.Any])
+    inline def setFirewallName(value: ResourceName): Self = StObject.set(x, "FirewallName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirewallNameUndefined: Self = StObject.set(x, "FirewallName", js.undefined)
+    inline def setFirewallNameUndefined: Self = StObject.set(x, "FirewallName", js.undefined)
     
-    @scala.inline
-    def setUpdateToken(value: UpdateToken): Self = StObject.set(x, "UpdateToken", value.asInstanceOf[js.Any])
+    inline def setUpdateToken(value: UpdateToken): Self = StObject.set(x, "UpdateToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTokenUndefined: Self = StObject.set(x, "UpdateToken", js.undefined)
+    inline def setUpdateTokenUndefined: Self = StObject.set(x, "UpdateToken", js.undefined)
   }
 }

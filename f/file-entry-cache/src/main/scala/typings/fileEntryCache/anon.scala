@@ -16,32 +16,24 @@ object anon {
   }
   object Hash {
     
-    @scala.inline
-    def apply(): Hash = {
+    inline def apply(): Hash = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Hash]
     }
     
-    @scala.inline
-    implicit class HashMutableBuilder[Self <: Hash] (val x: Self) extends AnyVal {
+    extension [Self <: Hash](x: Self) {
       
-      @scala.inline
-      def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
+      inline def setHashUndefined: Self = StObject.set(x, "hash", js.undefined)
       
-      @scala.inline
-      def setMtime(value: Double): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(value: Double): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
+      inline def setMtimeUndefined: Self = StObject.set(x, "mtime", js.undefined)
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
 }

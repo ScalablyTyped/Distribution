@@ -15,8 +15,7 @@ trait XHierarchicalNameReplace
 }
 object XHierarchicalNameReplace {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getByHierarchicalName: String => js.Any,
     hasByHierarchicalName: String => Boolean,
@@ -28,10 +27,8 @@ object XHierarchicalNameReplace {
     __obj.asInstanceOf[XHierarchicalNameReplace]
   }
   
-  @scala.inline
-  implicit class XHierarchicalNameReplaceMutableBuilder[Self <: XHierarchicalNameReplace] (val x: Self) extends AnyVal {
+  extension [Self <: XHierarchicalNameReplace](x: Self) {
     
-    @scala.inline
-    def setReplaceByHierarchicalName(value: (String, js.Any) => Unit): Self = StObject.set(x, "replaceByHierarchicalName", js.Any.fromFunction2(value))
+    inline def setReplaceByHierarchicalName(value: (String, js.Any) => Unit): Self = StObject.set(x, "replaceByHierarchicalName", js.Any.fromFunction2(value))
   }
 }

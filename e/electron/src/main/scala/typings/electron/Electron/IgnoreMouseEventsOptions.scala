@@ -17,19 +17,15 @@ trait IgnoreMouseEventsOptions extends StObject {
 }
 object IgnoreMouseEventsOptions {
   
-  @scala.inline
-  def apply(): IgnoreMouseEventsOptions = {
+  inline def apply(): IgnoreMouseEventsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgnoreMouseEventsOptions]
   }
   
-  @scala.inline
-  implicit class IgnoreMouseEventsOptionsMutableBuilder[Self <: IgnoreMouseEventsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IgnoreMouseEventsOptions](x: Self) {
     
-    @scala.inline
-    def setForward(value: Boolean): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
+    inline def setForward(value: Boolean): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardUndefined: Self = StObject.set(x, "forward", js.undefined)
+    inline def setForwardUndefined: Self = StObject.set(x, "forward", js.undefined)
   }
 }

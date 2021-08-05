@@ -17,19 +17,15 @@ trait Arm64WriterOptions extends StObject {
 }
 object Arm64WriterOptions {
   
-  @scala.inline
-  def apply(): Arm64WriterOptions = {
+  inline def apply(): Arm64WriterOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Arm64WriterOptions]
   }
   
-  @scala.inline
-  implicit class Arm64WriterOptionsMutableBuilder[Self <: Arm64WriterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: Arm64WriterOptions](x: Self) {
     
-    @scala.inline
-    def setPc(value: NativePointer): Self = StObject.set(x, "pc", value.asInstanceOf[js.Any])
+    inline def setPc(value: NativePointer): Self = StObject.set(x, "pc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPcUndefined: Self = StObject.set(x, "pc", js.undefined)
+    inline def setPcUndefined: Self = StObject.set(x, "pc", js.undefined)
   }
 }

@@ -24,6 +24,5 @@ object ɵangularPackagesCoreCoreD {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fromKey(key: ReflectiveKey): ɵangularPackagesCoreCoreD = ^.asInstanceOf[js.Dynamic].applyDynamic("fromKey")(key.asInstanceOf[js.Any]).asInstanceOf[ɵangularPackagesCoreCoreD]
+  inline def fromKey(key: ReflectiveKey): ɵangularPackagesCoreCoreD = ^.asInstanceOf[js.Dynamic].applyDynamic("fromKey")(key.asInstanceOf[js.Any]).asInstanceOf[ɵangularPackagesCoreCoreD]
 }

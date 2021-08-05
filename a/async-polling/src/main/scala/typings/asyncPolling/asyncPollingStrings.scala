@@ -11,48 +11,41 @@ object asyncPollingStrings {
   sealed trait end
     extends StObject
        with EventName
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
   sealed trait error
     extends StObject
        with EventName
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait result
     extends StObject
        with EventName
-  @scala.inline
-  def result: result = "result".asInstanceOf[result]
+  inline def result: result = "result".asInstanceOf[result]
   
   @js.native
   sealed trait run
     extends StObject
        with EventName
-  @scala.inline
-  def run: run = "run".asInstanceOf[run]
+  inline def run: run = "run".asInstanceOf[run]
   
   @js.native
   sealed trait schedule
     extends StObject
        with EventName
-  @scala.inline
-  def schedule: schedule = "schedule".asInstanceOf[schedule]
+  inline def schedule: schedule = "schedule".asInstanceOf[schedule]
   
   @js.native
   sealed trait start
     extends StObject
        with EventName
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
+  inline def start: start = "start".asInstanceOf[start]
   
   @js.native
   sealed trait stop
     extends StObject
        with EventName
-  @scala.inline
-  def stop: stop = "stop".asInstanceOf[stop]
+  inline def stop: stop = "stop".asInstanceOf[stop]
 }

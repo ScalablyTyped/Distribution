@@ -20,8 +20,7 @@ trait InterfaceTypeWithDeclaredMembers
 }
 object InterfaceTypeWithDeclaredMembers {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     declaredCallSignatures: js.Array[Signature],
     declaredConstructSignatures: js.Array[Signature],
     declaredProperties: js.Array[Symbol],
@@ -55,37 +54,26 @@ object InterfaceTypeWithDeclaredMembers {
     __obj.asInstanceOf[InterfaceTypeWithDeclaredMembers]
   }
   
-  @scala.inline
-  implicit class InterfaceTypeWithDeclaredMembersMutableBuilder[Self <: InterfaceTypeWithDeclaredMembers] (val x: Self) extends AnyVal {
+  extension [Self <: InterfaceTypeWithDeclaredMembers](x: Self) {
     
-    @scala.inline
-    def setDeclaredCallSignatures(value: js.Array[Signature]): Self = StObject.set(x, "declaredCallSignatures", value.asInstanceOf[js.Any])
+    inline def setDeclaredCallSignatures(value: js.Array[Signature]): Self = StObject.set(x, "declaredCallSignatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeclaredCallSignaturesVarargs(value: Signature*): Self = StObject.set(x, "declaredCallSignatures", js.Array(value :_*))
+    inline def setDeclaredCallSignaturesVarargs(value: Signature*): Self = StObject.set(x, "declaredCallSignatures", js.Array(value :_*))
     
-    @scala.inline
-    def setDeclaredConstructSignatures(value: js.Array[Signature]): Self = StObject.set(x, "declaredConstructSignatures", value.asInstanceOf[js.Any])
+    inline def setDeclaredConstructSignatures(value: js.Array[Signature]): Self = StObject.set(x, "declaredConstructSignatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeclaredConstructSignaturesVarargs(value: Signature*): Self = StObject.set(x, "declaredConstructSignatures", js.Array(value :_*))
+    inline def setDeclaredConstructSignaturesVarargs(value: Signature*): Self = StObject.set(x, "declaredConstructSignatures", js.Array(value :_*))
     
-    @scala.inline
-    def setDeclaredNumberIndexInfo(value: IndexInfo): Self = StObject.set(x, "declaredNumberIndexInfo", value.asInstanceOf[js.Any])
+    inline def setDeclaredNumberIndexInfo(value: IndexInfo): Self = StObject.set(x, "declaredNumberIndexInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeclaredNumberIndexInfoUndefined: Self = StObject.set(x, "declaredNumberIndexInfo", js.undefined)
+    inline def setDeclaredNumberIndexInfoUndefined: Self = StObject.set(x, "declaredNumberIndexInfo", js.undefined)
     
-    @scala.inline
-    def setDeclaredProperties(value: js.Array[Symbol]): Self = StObject.set(x, "declaredProperties", value.asInstanceOf[js.Any])
+    inline def setDeclaredProperties(value: js.Array[Symbol]): Self = StObject.set(x, "declaredProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeclaredPropertiesVarargs(value: Symbol*): Self = StObject.set(x, "declaredProperties", js.Array(value :_*))
+    inline def setDeclaredPropertiesVarargs(value: Symbol*): Self = StObject.set(x, "declaredProperties", js.Array(value :_*))
     
-    @scala.inline
-    def setDeclaredStringIndexInfo(value: IndexInfo): Self = StObject.set(x, "declaredStringIndexInfo", value.asInstanceOf[js.Any])
+    inline def setDeclaredStringIndexInfo(value: IndexInfo): Self = StObject.set(x, "declaredStringIndexInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeclaredStringIndexInfoUndefined: Self = StObject.set(x, "declaredStringIndexInfo", js.undefined)
+    inline def setDeclaredStringIndexInfoUndefined: Self = StObject.set(x, "declaredStringIndexInfo", js.undefined)
   }
 }

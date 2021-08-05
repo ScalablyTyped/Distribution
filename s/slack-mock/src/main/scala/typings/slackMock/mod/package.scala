@@ -5,15 +5,11 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def apply(): typings.slackMock.mod.Instance_ = typings.slackMock.mod.^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.slackMock.mod.Instance_]
-@scala.inline
-def apply(config: typings.slackMock.mod.ConfigOptions): typings.slackMock.mod.Instance_ = typings.slackMock.mod.^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[typings.slackMock.mod.Instance_]
+inline def apply(): typings.slackMock.mod.Instance_ = typings.slackMock.mod.^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.slackMock.mod.Instance_]
+inline def apply(config: typings.slackMock.mod.ConfigOptions): typings.slackMock.mod.Instance_ = typings.slackMock.mod.^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[typings.slackMock.mod.Instance_]
 
-@scala.inline
-def instance: typings.slackMock.mod.Instance_ = typings.slackMock.mod.^.asInstanceOf[js.Dynamic].selectDynamic("instance").asInstanceOf[typings.slackMock.mod.Instance_]
-@scala.inline
-def instance_=(x: typings.slackMock.mod.Instance_): scala.Unit = typings.slackMock.mod.^.asInstanceOf[js.Dynamic].updateDynamic("instance")(x.asInstanceOf[js.Any])
+inline def instance: typings.slackMock.mod.Instance_ = typings.slackMock.mod.^.asInstanceOf[js.Dynamic].selectDynamic("instance").asInstanceOf[typings.slackMock.mod.Instance_]
+inline def instance_=(x: typings.slackMock.mod.Instance_): scala.Unit = typings.slackMock.mod.^.asInstanceOf[js.Dynamic].updateDynamic("instance")(x.asInstanceOf[js.Any])
 
 type EventHttpHeaders = typings.node.httpMod.IncomingHttpHeaders
 

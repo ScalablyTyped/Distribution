@@ -18,25 +18,19 @@ trait CrawlerSchemaChangePolicy extends StObject {
 }
 object CrawlerSchemaChangePolicy {
   
-  @scala.inline
-  def apply(): CrawlerSchemaChangePolicy = {
+  inline def apply(): CrawlerSchemaChangePolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CrawlerSchemaChangePolicy]
   }
   
-  @scala.inline
-  implicit class CrawlerSchemaChangePolicyMutableBuilder[Self <: CrawlerSchemaChangePolicy] (val x: Self) extends AnyVal {
+  extension [Self <: CrawlerSchemaChangePolicy](x: Self) {
     
-    @scala.inline
-    def setDeleteBehavior(value: String): Self = StObject.set(x, "deleteBehavior", value.asInstanceOf[js.Any])
+    inline def setDeleteBehavior(value: String): Self = StObject.set(x, "deleteBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteBehaviorUndefined: Self = StObject.set(x, "deleteBehavior", js.undefined)
+    inline def setDeleteBehaviorUndefined: Self = StObject.set(x, "deleteBehavior", js.undefined)
     
-    @scala.inline
-    def setUpdateBehavior(value: String): Self = StObject.set(x, "updateBehavior", value.asInstanceOf[js.Any])
+    inline def setUpdateBehavior(value: String): Self = StObject.set(x, "updateBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateBehaviorUndefined: Self = StObject.set(x, "updateBehavior", js.undefined)
+    inline def setUpdateBehaviorUndefined: Self = StObject.set(x, "updateBehavior", js.undefined)
   }
 }

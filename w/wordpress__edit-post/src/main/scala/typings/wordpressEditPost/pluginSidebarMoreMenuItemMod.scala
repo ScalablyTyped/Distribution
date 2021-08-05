@@ -44,29 +44,22 @@ object pluginSidebarMoreMenuItemMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(target: String): Props = {
+      inline def apply(target: String): Props = {
         val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+        inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+        inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
         
-        @scala.inline
-        def setIcon(value: Icon | Element): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        inline def setIcon(value: Icon | Element): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+        inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
         
-        @scala.inline
-        def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+        inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       }
     }
   }

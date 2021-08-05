@@ -35,37 +35,27 @@ trait LoadOptions extends StObject {
 }
 object LoadOptions {
   
-  @scala.inline
-  def apply(): LoadOptions = {
+  inline def apply(): LoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LoadOptions]
   }
   
-  @scala.inline
-  implicit class LoadOptionsMutableBuilder[Self <: LoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LoadOptions](x: Self) {
     
-    @scala.inline
-    def setBinaryAsBase64(value: Boolean): Self = StObject.set(x, "binaryAsBase64", value.asInstanceOf[js.Any])
+    inline def setBinaryAsBase64(value: Boolean): Self = StObject.set(x, "binaryAsBase64", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinaryAsBase64Undefined: Self = StObject.set(x, "binaryAsBase64", js.undefined)
+    inline def setBinaryAsBase64Undefined: Self = StObject.set(x, "binaryAsBase64", js.undefined)
     
-    @scala.inline
-    def setConvertFieldsToCamelCase(value: Boolean): Self = StObject.set(x, "convertFieldsToCamelCase", value.asInstanceOf[js.Any])
+    inline def setConvertFieldsToCamelCase(value: Boolean): Self = StObject.set(x, "convertFieldsToCamelCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConvertFieldsToCamelCaseUndefined: Self = StObject.set(x, "convertFieldsToCamelCase", js.undefined)
+    inline def setConvertFieldsToCamelCaseUndefined: Self = StObject.set(x, "convertFieldsToCamelCase", js.undefined)
     
-    @scala.inline
-    def setDeprecatedArgumentOrder(value: Boolean): Self = StObject.set(x, "deprecatedArgumentOrder", value.asInstanceOf[js.Any])
+    inline def setDeprecatedArgumentOrder(value: Boolean): Self = StObject.set(x, "deprecatedArgumentOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprecatedArgumentOrderUndefined: Self = StObject.set(x, "deprecatedArgumentOrder", js.undefined)
+    inline def setDeprecatedArgumentOrderUndefined: Self = StObject.set(x, "deprecatedArgumentOrder", js.undefined)
     
-    @scala.inline
-    def setLongsAsStrings(value: Boolean): Self = StObject.set(x, "longsAsStrings", value.asInstanceOf[js.Any])
+    inline def setLongsAsStrings(value: Boolean): Self = StObject.set(x, "longsAsStrings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongsAsStringsUndefined: Self = StObject.set(x, "longsAsStrings", js.undefined)
+    inline def setLongsAsStringsUndefined: Self = StObject.set(x, "longsAsStrings", js.undefined)
   }
 }

@@ -27,8 +27,7 @@ trait MagneticStripeReaderErrorOccurredEventArgs extends StObject {
 }
 object MagneticStripeReaderErrorOccurredEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     errorData: UnifiedPosErrorData,
     partialInputData: MagneticStripeReaderReport,
     track1Status: MagneticStripeReaderTrackErrorType,
@@ -40,25 +39,18 @@ object MagneticStripeReaderErrorOccurredEventArgs {
     __obj.asInstanceOf[MagneticStripeReaderErrorOccurredEventArgs]
   }
   
-  @scala.inline
-  implicit class MagneticStripeReaderErrorOccurredEventArgsMutableBuilder[Self <: MagneticStripeReaderErrorOccurredEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: MagneticStripeReaderErrorOccurredEventArgs](x: Self) {
     
-    @scala.inline
-    def setErrorData(value: UnifiedPosErrorData): Self = StObject.set(x, "errorData", value.asInstanceOf[js.Any])
+    inline def setErrorData(value: UnifiedPosErrorData): Self = StObject.set(x, "errorData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartialInputData(value: MagneticStripeReaderReport): Self = StObject.set(x, "partialInputData", value.asInstanceOf[js.Any])
+    inline def setPartialInputData(value: MagneticStripeReaderReport): Self = StObject.set(x, "partialInputData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrack1Status(value: MagneticStripeReaderTrackErrorType): Self = StObject.set(x, "track1Status", value.asInstanceOf[js.Any])
+    inline def setTrack1Status(value: MagneticStripeReaderTrackErrorType): Self = StObject.set(x, "track1Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrack2Status(value: MagneticStripeReaderTrackErrorType): Self = StObject.set(x, "track2Status", value.asInstanceOf[js.Any])
+    inline def setTrack2Status(value: MagneticStripeReaderTrackErrorType): Self = StObject.set(x, "track2Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrack3Status(value: MagneticStripeReaderTrackErrorType): Self = StObject.set(x, "track3Status", value.asInstanceOf[js.Any])
+    inline def setTrack3Status(value: MagneticStripeReaderTrackErrorType): Self = StObject.set(x, "track3Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrack4Status(value: MagneticStripeReaderTrackErrorType): Self = StObject.set(x, "track4Status", value.asInstanceOf[js.Any])
+    inline def setTrack4Status(value: MagneticStripeReaderTrackErrorType): Self = StObject.set(x, "track4Status", value.asInstanceOf[js.Any])
   }
 }

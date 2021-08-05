@@ -30,38 +30,28 @@ trait DisplayNamesOptionsvalues extends StObject {
 }
 object DisplayNamesOptionsvalues {
   
-  @scala.inline
-  def apply(`type`: language | region | script | currency, value: String | Double | js.Object): DisplayNamesOptionsvalues = {
+  inline def apply(`type`: language | region | script | currency, value: String | Double | js.Object): DisplayNamesOptionsvalues = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisplayNamesOptionsvalues]
   }
   
-  @scala.inline
-  implicit class DisplayNamesOptionsvaluesMutableBuilder[Self <: DisplayNamesOptionsvalues] (val x: Self) extends AnyVal {
+  extension [Self <: DisplayNamesOptionsvalues](x: Self) {
     
-    @scala.inline
-    def setFallback(value: code | none): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+    inline def setFallback(value: code | none): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+    inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
     
-    @scala.inline
-    def setLocaleMatcher(value: lookup | (`best fit`)): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
+    inline def setLocaleMatcher(value: lookup | (`best fit`)): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
+    inline def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
     
-    @scala.inline
-    def setStyle(value: narrow | short | long): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: narrow | short | long): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setType(value: language | region | script | currency): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: language | region | script | currency): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String | Double | js.Object): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String | Double | js.Object): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

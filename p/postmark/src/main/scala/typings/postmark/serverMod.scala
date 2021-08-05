@@ -127,8 +127,7 @@ object serverMod {
   }
   object Server {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ApiTokens: js.Array[String],
       Color: String,
       EnableSmtpApiErrorHooks: Boolean,
@@ -148,95 +147,65 @@ object serverMod {
       __obj.asInstanceOf[Server]
     }
     
-    @scala.inline
-    implicit class ServerMutableBuilder[Self <: Server] (val x: Self) extends AnyVal {
+    extension [Self <: Server](x: Self) {
       
-      @scala.inline
-      def setApiTokens(value: js.Array[String]): Self = StObject.set(x, "ApiTokens", value.asInstanceOf[js.Any])
+      inline def setApiTokens(value: js.Array[String]): Self = StObject.set(x, "ApiTokens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiTokensVarargs(value: String*): Self = StObject.set(x, "ApiTokens", js.Array(value :_*))
+      inline def setApiTokensVarargs(value: String*): Self = StObject.set(x, "ApiTokens", js.Array(value :_*))
       
-      @scala.inline
-      def setBounceHookUrl(value: String): Self = StObject.set(x, "BounceHookUrl", value.asInstanceOf[js.Any])
+      inline def setBounceHookUrl(value: String): Self = StObject.set(x, "BounceHookUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBounceHookUrlUndefined: Self = StObject.set(x, "BounceHookUrl", js.undefined)
+      inline def setBounceHookUrlUndefined: Self = StObject.set(x, "BounceHookUrl", js.undefined)
       
-      @scala.inline
-      def setClickHookUrl(value: String): Self = StObject.set(x, "ClickHookUrl", value.asInstanceOf[js.Any])
+      inline def setClickHookUrl(value: String): Self = StObject.set(x, "ClickHookUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClickHookUrlUndefined: Self = StObject.set(x, "ClickHookUrl", js.undefined)
+      inline def setClickHookUrlUndefined: Self = StObject.set(x, "ClickHookUrl", js.undefined)
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeliveryHookUrl(value: String): Self = StObject.set(x, "DeliveryHookUrl", value.asInstanceOf[js.Any])
+      inline def setDeliveryHookUrl(value: String): Self = StObject.set(x, "DeliveryHookUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeliveryHookUrlUndefined: Self = StObject.set(x, "DeliveryHookUrl", js.undefined)
+      inline def setDeliveryHookUrlUndefined: Self = StObject.set(x, "DeliveryHookUrl", js.undefined)
       
-      @scala.inline
-      def setEnableSmtpApiErrorHooks(value: Boolean): Self = StObject.set(x, "EnableSmtpApiErrorHooks", value.asInstanceOf[js.Any])
+      inline def setEnableSmtpApiErrorHooks(value: Boolean): Self = StObject.set(x, "EnableSmtpApiErrorHooks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+      inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInboundAddress(value: String): Self = StObject.set(x, "InboundAddress", value.asInstanceOf[js.Any])
+      inline def setInboundAddress(value: String): Self = StObject.set(x, "InboundAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInboundDomain(value: String): Self = StObject.set(x, "InboundDomain", value.asInstanceOf[js.Any])
+      inline def setInboundDomain(value: String): Self = StObject.set(x, "InboundDomain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInboundDomainUndefined: Self = StObject.set(x, "InboundDomain", js.undefined)
+      inline def setInboundDomainUndefined: Self = StObject.set(x, "InboundDomain", js.undefined)
       
-      @scala.inline
-      def setInboundHash(value: String): Self = StObject.set(x, "InboundHash", value.asInstanceOf[js.Any])
+      inline def setInboundHash(value: String): Self = StObject.set(x, "InboundHash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInboundHookUrl(value: String): Self = StObject.set(x, "InboundHookUrl", value.asInstanceOf[js.Any])
+      inline def setInboundHookUrl(value: String): Self = StObject.set(x, "InboundHookUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInboundHookUrlUndefined: Self = StObject.set(x, "InboundHookUrl", js.undefined)
+      inline def setInboundHookUrlUndefined: Self = StObject.set(x, "InboundHookUrl", js.undefined)
       
-      @scala.inline
-      def setInboundSpamThreshold(value: Double): Self = StObject.set(x, "InboundSpamThreshold", value.asInstanceOf[js.Any])
+      inline def setInboundSpamThreshold(value: Double): Self = StObject.set(x, "InboundSpamThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeBounceContentInHook(value: Boolean): Self = StObject.set(x, "IncludeBounceContentInHook", value.asInstanceOf[js.Any])
+      inline def setIncludeBounceContentInHook(value: Boolean): Self = StObject.set(x, "IncludeBounceContentInHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenHookUrl(value: String): Self = StObject.set(x, "OpenHookUrl", value.asInstanceOf[js.Any])
+      inline def setOpenHookUrl(value: String): Self = StObject.set(x, "OpenHookUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenHookUrlUndefined: Self = StObject.set(x, "OpenHookUrl", js.undefined)
+      inline def setOpenHookUrlUndefined: Self = StObject.set(x, "OpenHookUrl", js.undefined)
       
-      @scala.inline
-      def setPostFirstOpenOnly(value: Boolean): Self = StObject.set(x, "PostFirstOpenOnly", value.asInstanceOf[js.Any])
+      inline def setPostFirstOpenOnly(value: Boolean): Self = StObject.set(x, "PostFirstOpenOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRawEmailEnabled(value: Boolean): Self = StObject.set(x, "RawEmailEnabled", value.asInstanceOf[js.Any])
+      inline def setRawEmailEnabled(value: Boolean): Self = StObject.set(x, "RawEmailEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerLink(value: String): Self = StObject.set(x, "ServerLink", value.asInstanceOf[js.Any])
+      inline def setServerLink(value: String): Self = StObject.set(x, "ServerLink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmtpApiActivated(value: Boolean): Self = StObject.set(x, "SmtpApiActivated", value.asInstanceOf[js.Any])
+      inline def setSmtpApiActivated(value: Boolean): Self = StObject.set(x, "SmtpApiActivated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackLinks(value: LinkTrackingOptions): Self = StObject.set(x, "TrackLinks", value.asInstanceOf[js.Any])
+      inline def setTrackLinks(value: LinkTrackingOptions): Self = StObject.set(x, "TrackLinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackOpens(value: Boolean): Self = StObject.set(x, "TrackOpens", value.asInstanceOf[js.Any])
+      inline def setTrackOpens(value: Boolean): Self = StObject.set(x, "TrackOpens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackOpensUndefined: Self = StObject.set(x, "TrackOpens", js.undefined)
+      inline def setTrackOpensUndefined: Self = StObject.set(x, "TrackOpens", js.undefined)
     }
   }
 }

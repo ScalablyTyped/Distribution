@@ -10,25 +10,19 @@ trait ColorStyleProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StO
 }
 object ColorStyleProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): ColorStyleProps[ThemeType] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */](): ColorStyleProps[ThemeType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColorStyleProps[ThemeType]]
   }
   
-  @scala.inline
-  implicit class ColorStylePropsMutableBuilder[Self <: ColorStyleProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & ColorStyleProps[ThemeType]) extends AnyVal {
+  extension [Self <: ColorStyleProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & ColorStyleProps[ThemeType]) {
     
-    @scala.inline
-    def setColors(value: ResponsiveValue[String, ThemeType]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    inline def setColors(value: ResponsiveValue[String, ThemeType]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorsNull: Self = StObject.set(x, "colors", null)
+    inline def setColorsNull: Self = StObject.set(x, "colors", null)
     
-    @scala.inline
-    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+    inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    @scala.inline
-    def setColorsVarargs(value: (String | Null)*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: (String | Null)*): Self = StObject.set(x, "colors", js.Array(value :_*))
   }
 }

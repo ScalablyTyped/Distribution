@@ -20,43 +20,31 @@ trait MlGetDataFrameAnalyticsStats
 }
 object MlGetDataFrameAnalyticsStats {
   
-  @scala.inline
-  def apply(): MlGetDataFrameAnalyticsStats = {
+  inline def apply(): MlGetDataFrameAnalyticsStats = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MlGetDataFrameAnalyticsStats]
   }
   
-  @scala.inline
-  implicit class MlGetDataFrameAnalyticsStatsMutableBuilder[Self <: MlGetDataFrameAnalyticsStats] (val x: Self) extends AnyVal {
+  extension [Self <: MlGetDataFrameAnalyticsStats](x: Self) {
     
-    @scala.inline
-    def setAllow_no_match(value: Boolean): Self = StObject.set(x, "allow_no_match", value.asInstanceOf[js.Any])
+    inline def setAllow_no_match(value: Boolean): Self = StObject.set(x, "allow_no_match", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllow_no_matchUndefined: Self = StObject.set(x, "allow_no_match", js.undefined)
+    inline def setAllow_no_matchUndefined: Self = StObject.set(x, "allow_no_match", js.undefined)
     
-    @scala.inline
-    def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+    inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+    inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
   }
 }

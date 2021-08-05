@@ -66,124 +66,85 @@ trait PublisherProfile extends StObject {
 }
 object PublisherProfile {
   
-  @scala.inline
-  def apply(): PublisherProfile = {
+  inline def apply(): PublisherProfile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PublisherProfile]
   }
   
-  @scala.inline
-  implicit class PublisherProfileMutableBuilder[Self <: PublisherProfile] (val x: Self) extends AnyVal {
+  extension [Self <: PublisherProfile](x: Self) {
     
-    @scala.inline
-    def setAudienceDescription(value: String): Self = StObject.set(x, "audienceDescription", value.asInstanceOf[js.Any])
+    inline def setAudienceDescription(value: String): Self = StObject.set(x, "audienceDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudienceDescriptionUndefined: Self = StObject.set(x, "audienceDescription", js.undefined)
+    inline def setAudienceDescriptionUndefined: Self = StObject.set(x, "audienceDescription", js.undefined)
     
-    @scala.inline
-    def setBuyerPitchStatement(value: String): Self = StObject.set(x, "buyerPitchStatement", value.asInstanceOf[js.Any])
+    inline def setBuyerPitchStatement(value: String): Self = StObject.set(x, "buyerPitchStatement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuyerPitchStatementUndefined: Self = StObject.set(x, "buyerPitchStatement", js.undefined)
+    inline def setBuyerPitchStatementUndefined: Self = StObject.set(x, "buyerPitchStatement", js.undefined)
     
-    @scala.inline
-    def setDirectDealsContact(value: String): Self = StObject.set(x, "directDealsContact", value.asInstanceOf[js.Any])
+    inline def setDirectDealsContact(value: String): Self = StObject.set(x, "directDealsContact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectDealsContactUndefined: Self = StObject.set(x, "directDealsContact", js.undefined)
+    inline def setDirectDealsContactUndefined: Self = StObject.set(x, "directDealsContact", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setDomains(value: js.Array[String]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
+    inline def setDomains(value: js.Array[String]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
+    inline def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
     
-    @scala.inline
-    def setDomainsVarargs(value: String*): Self = StObject.set(x, "domains", js.Array(value :_*))
+    inline def setDomainsVarargs(value: String*): Self = StObject.set(x, "domains", js.Array(value :_*))
     
-    @scala.inline
-    def setGooglePlusUrl(value: String): Self = StObject.set(x, "googlePlusUrl", value.asInstanceOf[js.Any])
+    inline def setGooglePlusUrl(value: String): Self = StObject.set(x, "googlePlusUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGooglePlusUrlUndefined: Self = StObject.set(x, "googlePlusUrl", js.undefined)
+    inline def setGooglePlusUrlUndefined: Self = StObject.set(x, "googlePlusUrl", js.undefined)
     
-    @scala.inline
-    def setIsParent(value: Boolean): Self = StObject.set(x, "isParent", value.asInstanceOf[js.Any])
+    inline def setIsParent(value: Boolean): Self = StObject.set(x, "isParent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsParentUndefined: Self = StObject.set(x, "isParent", js.undefined)
+    inline def setIsParentUndefined: Self = StObject.set(x, "isParent", js.undefined)
     
-    @scala.inline
-    def setLogoUrl(value: String): Self = StObject.set(x, "logoUrl", value.asInstanceOf[js.Any])
+    inline def setLogoUrl(value: String): Self = StObject.set(x, "logoUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogoUrlUndefined: Self = StObject.set(x, "logoUrl", js.undefined)
+    inline def setLogoUrlUndefined: Self = StObject.set(x, "logoUrl", js.undefined)
     
-    @scala.inline
-    def setMediaKitUrl(value: String): Self = StObject.set(x, "mediaKitUrl", value.asInstanceOf[js.Any])
+    inline def setMediaKitUrl(value: String): Self = StObject.set(x, "mediaKitUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaKitUrlUndefined: Self = StObject.set(x, "mediaKitUrl", js.undefined)
+    inline def setMediaKitUrlUndefined: Self = StObject.set(x, "mediaKitUrl", js.undefined)
     
-    @scala.inline
-    def setMobileApps(value: js.Array[PublisherProfileMobileApplication]): Self = StObject.set(x, "mobileApps", value.asInstanceOf[js.Any])
+    inline def setMobileApps(value: js.Array[PublisherProfileMobileApplication]): Self = StObject.set(x, "mobileApps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobileAppsUndefined: Self = StObject.set(x, "mobileApps", js.undefined)
+    inline def setMobileAppsUndefined: Self = StObject.set(x, "mobileApps", js.undefined)
     
-    @scala.inline
-    def setMobileAppsVarargs(value: PublisherProfileMobileApplication*): Self = StObject.set(x, "mobileApps", js.Array(value :_*))
+    inline def setMobileAppsVarargs(value: PublisherProfileMobileApplication*): Self = StObject.set(x, "mobileApps", js.Array(value :_*))
     
-    @scala.inline
-    def setOverview(value: String): Self = StObject.set(x, "overview", value.asInstanceOf[js.Any])
+    inline def setOverview(value: String): Self = StObject.set(x, "overview", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverviewUndefined: Self = StObject.set(x, "overview", js.undefined)
+    inline def setOverviewUndefined: Self = StObject.set(x, "overview", js.undefined)
     
-    @scala.inline
-    def setProgrammaticDealsContact(value: String): Self = StObject.set(x, "programmaticDealsContact", value.asInstanceOf[js.Any])
+    inline def setProgrammaticDealsContact(value: String): Self = StObject.set(x, "programmaticDealsContact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgrammaticDealsContactUndefined: Self = StObject.set(x, "programmaticDealsContact", js.undefined)
+    inline def setProgrammaticDealsContactUndefined: Self = StObject.set(x, "programmaticDealsContact", js.undefined)
     
-    @scala.inline
-    def setPublisherProfileId(value: String): Self = StObject.set(x, "publisherProfileId", value.asInstanceOf[js.Any])
+    inline def setPublisherProfileId(value: String): Self = StObject.set(x, "publisherProfileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisherProfileIdUndefined: Self = StObject.set(x, "publisherProfileId", js.undefined)
+    inline def setPublisherProfileIdUndefined: Self = StObject.set(x, "publisherProfileId", js.undefined)
     
-    @scala.inline
-    def setRateCardInfoUrl(value: String): Self = StObject.set(x, "rateCardInfoUrl", value.asInstanceOf[js.Any])
+    inline def setRateCardInfoUrl(value: String): Self = StObject.set(x, "rateCardInfoUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRateCardInfoUrlUndefined: Self = StObject.set(x, "rateCardInfoUrl", js.undefined)
+    inline def setRateCardInfoUrlUndefined: Self = StObject.set(x, "rateCardInfoUrl", js.undefined)
     
-    @scala.inline
-    def setSamplePageUrl(value: String): Self = StObject.set(x, "samplePageUrl", value.asInstanceOf[js.Any])
+    inline def setSamplePageUrl(value: String): Self = StObject.set(x, "samplePageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSamplePageUrlUndefined: Self = StObject.set(x, "samplePageUrl", js.undefined)
+    inline def setSamplePageUrlUndefined: Self = StObject.set(x, "samplePageUrl", js.undefined)
     
-    @scala.inline
-    def setSeller(value: Seller): Self = StObject.set(x, "seller", value.asInstanceOf[js.Any])
+    inline def setSeller(value: Seller): Self = StObject.set(x, "seller", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSellerUndefined: Self = StObject.set(x, "seller", js.undefined)
+    inline def setSellerUndefined: Self = StObject.set(x, "seller", js.undefined)
     
-    @scala.inline
-    def setTopHeadlines(value: js.Array[String]): Self = StObject.set(x, "topHeadlines", value.asInstanceOf[js.Any])
+    inline def setTopHeadlines(value: js.Array[String]): Self = StObject.set(x, "topHeadlines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopHeadlinesUndefined: Self = StObject.set(x, "topHeadlines", js.undefined)
+    inline def setTopHeadlinesUndefined: Self = StObject.set(x, "topHeadlines", js.undefined)
     
-    @scala.inline
-    def setTopHeadlinesVarargs(value: String*): Self = StObject.set(x, "topHeadlines", js.Array(value :_*))
+    inline def setTopHeadlinesVarargs(value: String*): Self = StObject.set(x, "topHeadlines", js.Array(value :_*))
   }
 }

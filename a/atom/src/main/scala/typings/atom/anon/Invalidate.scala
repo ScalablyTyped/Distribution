@@ -22,31 +22,23 @@ trait Invalidate extends StObject {
 }
 object Invalidate {
   
-  @scala.inline
-  def apply(): Invalidate = {
+  inline def apply(): Invalidate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Invalidate]
   }
   
-  @scala.inline
-  implicit class InvalidateMutableBuilder[Self <: Invalidate] (val x: Self) extends AnyVal {
+  extension [Self <: Invalidate](x: Self) {
     
-    @scala.inline
-    def setClipDirection(value: backward | forward | closest): Self = StObject.set(x, "clipDirection", value.asInstanceOf[js.Any])
+    inline def setClipDirection(value: backward | forward | closest): Self = StObject.set(x, "clipDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipDirectionUndefined: Self = StObject.set(x, "clipDirection", js.undefined)
+    inline def setClipDirectionUndefined: Self = StObject.set(x, "clipDirection", js.undefined)
     
-    @scala.inline
-    def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
+    inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
+    inline def setExclusiveUndefined: Self = StObject.set(x, "exclusive", js.undefined)
     
-    @scala.inline
-    def setInvalidate(value: never | surround | overlap | inside | touch): Self = StObject.set(x, "invalidate", value.asInstanceOf[js.Any])
+    inline def setInvalidate(value: never | surround | overlap | inside | touch): Self = StObject.set(x, "invalidate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidateUndefined: Self = StObject.set(x, "invalidate", js.undefined)
+    inline def setInvalidateUndefined: Self = StObject.set(x, "invalidate", js.undefined)
   }
 }

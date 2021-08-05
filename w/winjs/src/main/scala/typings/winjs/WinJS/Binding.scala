@@ -122,23 +122,18 @@ object Binding {
   }
   object IGroupKeyDataPair {
     
-    @scala.inline
-    def apply[T](data: T, firstItemIndexHint: Double, firstItemKey: String, groupSize: Double, key: String): IGroupKeyDataPair[T] = {
+    inline def apply[T](data: T, firstItemIndexHint: Double, firstItemKey: String, groupSize: Double, key: String): IGroupKeyDataPair[T] = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], firstItemIndexHint = firstItemIndexHint.asInstanceOf[js.Any], firstItemKey = firstItemKey.asInstanceOf[js.Any], groupSize = groupSize.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[IGroupKeyDataPair[T]]
     }
     
-    @scala.inline
-    implicit class IGroupKeyDataPairMutableBuilder[Self <: IGroupKeyDataPair[?], T] (val x: Self & IGroupKeyDataPair[T]) extends AnyVal {
+    extension [Self <: IGroupKeyDataPair[?], T](x: Self & IGroupKeyDataPair[T]) {
       
-      @scala.inline
-      def setFirstItemIndexHint(value: Double): Self = StObject.set(x, "firstItemIndexHint", value.asInstanceOf[js.Any])
+      inline def setFirstItemIndexHint(value: Double): Self = StObject.set(x, "firstItemIndexHint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstItemKey(value: String): Self = StObject.set(x, "firstItemKey", value.asInstanceOf[js.Any])
+      inline def setFirstItemKey(value: String): Self = StObject.set(x, "firstItemKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupSize(value: Double): Self = StObject.set(x, "groupSize", value.asInstanceOf[js.Any])
+      inline def setGroupSize(value: Double): Self = StObject.set(x, "groupSize", value.asInstanceOf[js.Any])
     }
   }
   
@@ -152,20 +147,16 @@ object Binding {
   }
   object IKeyDataPair {
     
-    @scala.inline
-    def apply[T](data: T, key: String): IKeyDataPair[T] = {
+    inline def apply[T](data: T, key: String): IKeyDataPair[T] = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[IKeyDataPair[T]]
     }
     
-    @scala.inline
-    implicit class IKeyDataPairMutableBuilder[Self <: IKeyDataPair[?], T] (val x: Self & IKeyDataPair[T]) extends AnyVal {
+    extension [Self <: IKeyDataPair[?], T](x: Self & IKeyDataPair[T]) {
       
-      @scala.inline
-      def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
   }
   

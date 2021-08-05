@@ -18,19 +18,15 @@ trait DeleteDeploymentGroupInput extends StObject {
 }
 object DeleteDeploymentGroupInput {
   
-  @scala.inline
-  def apply(applicationName: ApplicationName, deploymentGroupName: DeploymentGroupName): DeleteDeploymentGroupInput = {
+  inline def apply(applicationName: ApplicationName, deploymentGroupName: DeploymentGroupName): DeleteDeploymentGroupInput = {
     val __obj = js.Dynamic.literal(applicationName = applicationName.asInstanceOf[js.Any], deploymentGroupName = deploymentGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDeploymentGroupInput]
   }
   
-  @scala.inline
-  implicit class DeleteDeploymentGroupInputMutableBuilder[Self <: DeleteDeploymentGroupInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDeploymentGroupInput](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentGroupName(value: DeploymentGroupName): Self = StObject.set(x, "deploymentGroupName", value.asInstanceOf[js.Any])
+    inline def setDeploymentGroupName(value: DeploymentGroupName): Self = StObject.set(x, "deploymentGroupName", value.asInstanceOf[js.Any])
   }
 }

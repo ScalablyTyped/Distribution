@@ -29,31 +29,23 @@ trait SchemaAudienceSegment extends StObject {
 }
 object SchemaAudienceSegment {
   
-  @scala.inline
-  def apply(): SchemaAudienceSegment = {
+  inline def apply(): SchemaAudienceSegment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAudienceSegment]
   }
   
-  @scala.inline
-  implicit class SchemaAudienceSegmentMutableBuilder[Self <: SchemaAudienceSegment] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAudienceSegment](x: Self) {
     
-    @scala.inline
-    def setAllocation(value: Double): Self = StObject.set(x, "allocation", value.asInstanceOf[js.Any])
+    inline def setAllocation(value: Double): Self = StObject.set(x, "allocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllocationUndefined: Self = StObject.set(x, "allocation", js.undefined)
+    inline def setAllocationUndefined: Self = StObject.set(x, "allocation", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

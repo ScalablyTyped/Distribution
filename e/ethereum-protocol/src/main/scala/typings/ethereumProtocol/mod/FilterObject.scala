@@ -16,40 +16,29 @@ trait FilterObject extends StObject {
 }
 object FilterObject {
   
-  @scala.inline
-  def apply(): FilterObject = {
+  inline def apply(): FilterObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FilterObject]
   }
   
-  @scala.inline
-  implicit class FilterObjectMutableBuilder[Self <: FilterObject] (val x: Self) extends AnyVal {
+  extension [Self <: FilterObject](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setFromBlock(value: Double | String): Self = StObject.set(x, "fromBlock", value.asInstanceOf[js.Any])
+    inline def setFromBlock(value: Double | String): Self = StObject.set(x, "fromBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromBlockUndefined: Self = StObject.set(x, "fromBlock", js.undefined)
+    inline def setFromBlockUndefined: Self = StObject.set(x, "fromBlock", js.undefined)
     
-    @scala.inline
-    def setToBlock(value: Double | String): Self = StObject.set(x, "toBlock", value.asInstanceOf[js.Any])
+    inline def setToBlock(value: Double | String): Self = StObject.set(x, "toBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToBlockUndefined: Self = StObject.set(x, "toBlock", js.undefined)
+    inline def setToBlockUndefined: Self = StObject.set(x, "toBlock", js.undefined)
     
-    @scala.inline
-    def setTopics(value: js.Array[LogTopic]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
+    inline def setTopics(value: js.Array[LogTopic]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicsUndefined: Self = StObject.set(x, "topics", js.undefined)
+    inline def setTopicsUndefined: Self = StObject.set(x, "topics", js.undefined)
     
-    @scala.inline
-    def setTopicsVarargs(value: LogTopic*): Self = StObject.set(x, "topics", js.Array(value :_*))
+    inline def setTopicsVarargs(value: LogTopic*): Self = StObject.set(x, "topics", js.Array(value :_*))
   }
 }

@@ -38,46 +38,33 @@ trait GetAnomaliesRequest extends StObject {
 }
 object GetAnomaliesRequest {
   
-  @scala.inline
-  def apply(DateInterval: AnomalyDateInterval): GetAnomaliesRequest = {
+  inline def apply(DateInterval: AnomalyDateInterval): GetAnomaliesRequest = {
     val __obj = js.Dynamic.literal(DateInterval = DateInterval.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAnomaliesRequest]
   }
   
-  @scala.inline
-  implicit class GetAnomaliesRequestMutableBuilder[Self <: GetAnomaliesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetAnomaliesRequest](x: Self) {
     
-    @scala.inline
-    def setDateInterval(value: AnomalyDateInterval): Self = StObject.set(x, "DateInterval", value.asInstanceOf[js.Any])
+    inline def setDateInterval(value: AnomalyDateInterval): Self = StObject.set(x, "DateInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeedback(value: AnomalyFeedbackType): Self = StObject.set(x, "Feedback", value.asInstanceOf[js.Any])
+    inline def setFeedback(value: AnomalyFeedbackType): Self = StObject.set(x, "Feedback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeedbackUndefined: Self = StObject.set(x, "Feedback", js.undefined)
+    inline def setFeedbackUndefined: Self = StObject.set(x, "Feedback", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setMonitorArn(value: GenericString): Self = StObject.set(x, "MonitorArn", value.asInstanceOf[js.Any])
+    inline def setMonitorArn(value: GenericString): Self = StObject.set(x, "MonitorArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitorArnUndefined: Self = StObject.set(x, "MonitorArn", js.undefined)
+    inline def setMonitorArnUndefined: Self = StObject.set(x, "MonitorArn", js.undefined)
     
-    @scala.inline
-    def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: NextPageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
     
-    @scala.inline
-    def setTotalImpact(value: TotalImpactFilter): Self = StObject.set(x, "TotalImpact", value.asInstanceOf[js.Any])
+    inline def setTotalImpact(value: TotalImpactFilter): Self = StObject.set(x, "TotalImpact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalImpactUndefined: Self = StObject.set(x, "TotalImpact", js.undefined)
+    inline def setTotalImpactUndefined: Self = StObject.set(x, "TotalImpact", js.undefined)
   }
 }

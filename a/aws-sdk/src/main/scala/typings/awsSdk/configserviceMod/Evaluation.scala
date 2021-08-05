@@ -33,8 +33,7 @@ trait Evaluation extends StObject {
 }
 object Evaluation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ComplianceResourceId: BaseResourceId,
     ComplianceResourceType: StringWithCharLimit256,
     ComplianceType: ComplianceType,
@@ -44,25 +43,18 @@ object Evaluation {
     __obj.asInstanceOf[Evaluation]
   }
   
-  @scala.inline
-  implicit class EvaluationMutableBuilder[Self <: Evaluation] (val x: Self) extends AnyVal {
+  extension [Self <: Evaluation](x: Self) {
     
-    @scala.inline
-    def setAnnotation(value: StringWithCharLimit256): Self = StObject.set(x, "Annotation", value.asInstanceOf[js.Any])
+    inline def setAnnotation(value: StringWithCharLimit256): Self = StObject.set(x, "Annotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationUndefined: Self = StObject.set(x, "Annotation", js.undefined)
+    inline def setAnnotationUndefined: Self = StObject.set(x, "Annotation", js.undefined)
     
-    @scala.inline
-    def setComplianceResourceId(value: BaseResourceId): Self = StObject.set(x, "ComplianceResourceId", value.asInstanceOf[js.Any])
+    inline def setComplianceResourceId(value: BaseResourceId): Self = StObject.set(x, "ComplianceResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplianceResourceType(value: StringWithCharLimit256): Self = StObject.set(x, "ComplianceResourceType", value.asInstanceOf[js.Any])
+    inline def setComplianceResourceType(value: StringWithCharLimit256): Self = StObject.set(x, "ComplianceResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplianceType(value: ComplianceType): Self = StObject.set(x, "ComplianceType", value.asInstanceOf[js.Any])
+    inline def setComplianceType(value: ComplianceType): Self = StObject.set(x, "ComplianceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderingTimestamp(value: OrderingTimestamp): Self = StObject.set(x, "OrderingTimestamp", value.asInstanceOf[js.Any])
+    inline def setOrderingTimestamp(value: OrderingTimestamp): Self = StObject.set(x, "OrderingTimestamp", value.asInstanceOf[js.Any])
   }
 }

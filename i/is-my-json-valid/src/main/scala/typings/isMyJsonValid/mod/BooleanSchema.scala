@@ -13,17 +13,14 @@ trait BooleanSchema
 }
 object BooleanSchema {
   
-  @scala.inline
-  def apply(): BooleanSchema = {
+  inline def apply(): BooleanSchema = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("boolean")
     __obj.asInstanceOf[BooleanSchema]
   }
   
-  @scala.inline
-  implicit class BooleanSchemaMutableBuilder[Self <: BooleanSchema] (val x: Self) extends AnyVal {
+  extension [Self <: BooleanSchema](x: Self) {
     
-    @scala.inline
-    def setType(value: boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

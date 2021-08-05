@@ -29,15 +29,13 @@ object captivePortal {
   val canonicalURL: Setting = js.native
   
   /** Returns the time difference between NOW and the last time a request was completed in milliseconds. */
-  @scala.inline
-  def getLastChecked(): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLastChecked")().asInstanceOf[js.Promise[Double]]
+  inline def getLastChecked(): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLastChecked")().asInstanceOf[js.Promise[Double]]
   
   /* captivePortal functions */
   /**
     * Returns the current portal state, one of `unknown`, `not_captive`, `unlocked_portal`, `locked_portal`.
     */
-  @scala.inline
-  def getState(): js.Promise[OnStateChangedDetailsState] = ^.asInstanceOf[js.Dynamic].applyDynamic("getState")().asInstanceOf[js.Promise[OnStateChangedDetailsState]]
+  inline def getState(): js.Promise[OnStateChangedDetailsState] = ^.asInstanceOf[js.Dynamic].applyDynamic("getState")().asInstanceOf[js.Promise[OnStateChangedDetailsState]]
   
   /**
     * This notification will be emitted when the captive portal service has determined that we can connect to the internet. The service will pass either `captive` if there is an unlocked captive portal present, or `clear` if no captive portal was detected.

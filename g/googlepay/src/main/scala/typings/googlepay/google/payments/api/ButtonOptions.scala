@@ -58,40 +58,29 @@ trait ButtonOptions extends StObject {
 }
 object ButtonOptions {
   
-  @scala.inline
-  def apply(onClick: Event => Unit): ButtonOptions = {
+  inline def apply(onClick: Event => Unit): ButtonOptions = {
     val __obj = js.Dynamic.literal(onClick = js.Any.fromFunction1(onClick))
     __obj.asInstanceOf[ButtonOptions]
   }
   
-  @scala.inline
-  implicit class ButtonOptionsMutableBuilder[Self <: ButtonOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ButtonOptions](x: Self) {
     
-    @scala.inline
-    def setButtonColor(value: ButtonColor): Self = StObject.set(x, "buttonColor", value.asInstanceOf[js.Any])
+    inline def setButtonColor(value: ButtonColor): Self = StObject.set(x, "buttonColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonColorUndefined: Self = StObject.set(x, "buttonColor", js.undefined)
+    inline def setButtonColorUndefined: Self = StObject.set(x, "buttonColor", js.undefined)
     
-    @scala.inline
-    def setButtonRootNode(value: HTMLDocument | ShadowRoot): Self = StObject.set(x, "buttonRootNode", value.asInstanceOf[js.Any])
+    inline def setButtonRootNode(value: HTMLDocument | ShadowRoot): Self = StObject.set(x, "buttonRootNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonRootNodeUndefined: Self = StObject.set(x, "buttonRootNode", js.undefined)
+    inline def setButtonRootNodeUndefined: Self = StObject.set(x, "buttonRootNode", js.undefined)
     
-    @scala.inline
-    def setButtonSizeMode(value: ButtonSizeMode): Self = StObject.set(x, "buttonSizeMode", value.asInstanceOf[js.Any])
+    inline def setButtonSizeMode(value: ButtonSizeMode): Self = StObject.set(x, "buttonSizeMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonSizeModeUndefined: Self = StObject.set(x, "buttonSizeMode", js.undefined)
+    inline def setButtonSizeModeUndefined: Self = StObject.set(x, "buttonSizeMode", js.undefined)
     
-    @scala.inline
-    def setButtonType(value: ButtonType): Self = StObject.set(x, "buttonType", value.asInstanceOf[js.Any])
+    inline def setButtonType(value: ButtonType): Self = StObject.set(x, "buttonType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonTypeUndefined: Self = StObject.set(x, "buttonType", js.undefined)
+    inline def setButtonTypeUndefined: Self = StObject.set(x, "buttonType", js.undefined)
     
-    @scala.inline
-    def setOnClick(value: Event => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    inline def setOnClick(value: Event => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
   }
 }

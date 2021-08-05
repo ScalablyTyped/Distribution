@@ -18,16 +18,13 @@ trait ASPxClientHtmlEditorTableRowPropertiesCommandArguments
 }
 object ASPxClientHtmlEditorTableRowPropertiesCommandArguments {
   
-  @scala.inline
-  def apply(selectedElement: js.Any, styleSettings: ASPxClientHtmlEditorCommandStyleSettings): ASPxClientHtmlEditorTableRowPropertiesCommandArguments = {
+  inline def apply(selectedElement: js.Any, styleSettings: ASPxClientHtmlEditorCommandStyleSettings): ASPxClientHtmlEditorTableRowPropertiesCommandArguments = {
     val __obj = js.Dynamic.literal(selectedElement = selectedElement.asInstanceOf[js.Any], styleSettings = styleSettings.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientHtmlEditorTableRowPropertiesCommandArguments]
   }
   
-  @scala.inline
-  implicit class ASPxClientHtmlEditorTableRowPropertiesCommandArgumentsMutableBuilder[Self <: ASPxClientHtmlEditorTableRowPropertiesCommandArguments] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHtmlEditorTableRowPropertiesCommandArguments](x: Self) {
     
-    @scala.inline
-    def setStyleSettings(value: ASPxClientHtmlEditorCommandStyleSettings): Self = StObject.set(x, "styleSettings", value.asInstanceOf[js.Any])
+    inline def setStyleSettings(value: ASPxClientHtmlEditorCommandStyleSettings): Self = StObject.set(x, "styleSettings", value.asInstanceOf[js.Any])
   }
 }

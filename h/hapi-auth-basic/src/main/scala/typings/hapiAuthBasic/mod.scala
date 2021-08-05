@@ -28,17 +28,14 @@ object mod extends Shortcut {
   }
   object ValidateCustomResponse {
     
-    @scala.inline
-    def apply(response: js.Any): ValidateCustomResponse = {
+    inline def apply(response: js.Any): ValidateCustomResponse = {
       val __obj = js.Dynamic.literal(response = response.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValidateCustomResponse]
     }
     
-    @scala.inline
-    implicit class ValidateCustomResponseMutableBuilder[Self <: ValidateCustomResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ValidateCustomResponse](x: Self) {
       
-      @scala.inline
-      def setResponse(value: js.Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: js.Any): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
   }
   
@@ -50,23 +47,18 @@ object mod extends Shortcut {
   }
   object ValidateResponse {
     
-    @scala.inline
-    def apply(isValid: Boolean): ValidateResponse = {
+    inline def apply(isValid: Boolean): ValidateResponse = {
       val __obj = js.Dynamic.literal(isValid = isValid.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValidateResponse]
     }
     
-    @scala.inline
-    implicit class ValidateResponseMutableBuilder[Self <: ValidateResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ValidateResponse](x: Self) {
       
-      @scala.inline
-      def setCredentials(value: js.Any): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: js.Any): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+      inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
-      @scala.inline
-      def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
+      inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     }
   }
   

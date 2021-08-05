@@ -12,28 +12,21 @@ trait ReactSelectorOptions extends StObject {
 }
 object ReactSelectorOptions {
   
-  @scala.inline
-  def apply(): ReactSelectorOptions = {
+  inline def apply(): ReactSelectorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReactSelectorOptions]
   }
   
-  @scala.inline
-  implicit class ReactSelectorOptionsMutableBuilder[Self <: ReactSelectorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReactSelectorOptions](x: Self) {
     
-    @scala.inline
-    def setProps(value: js.Object): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    inline def setProps(value: js.Object): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
+    inline def setPropsUndefined: Self = StObject.set(x, "props", js.undefined)
     
-    @scala.inline
-    def setState(value: js.Array[js.Any] | Double | String | js.Object | Boolean): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: js.Array[js.Any] | Double | String | js.Object | Boolean): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setStateVarargs(value: js.Any*): Self = StObject.set(x, "state", js.Array(value :_*))
+    inline def setStateVarargs(value: js.Any*): Self = StObject.set(x, "state", js.Array(value :_*))
   }
 }

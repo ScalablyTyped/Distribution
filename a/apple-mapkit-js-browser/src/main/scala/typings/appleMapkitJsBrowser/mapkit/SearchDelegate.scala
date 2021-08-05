@@ -36,37 +36,27 @@ trait SearchDelegate extends StObject {
 }
 object SearchDelegate {
   
-  @scala.inline
-  def apply(): SearchDelegate = {
+  inline def apply(): SearchDelegate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchDelegate]
   }
   
-  @scala.inline
-  implicit class SearchDelegateMutableBuilder[Self <: SearchDelegate] (val x: Self) extends AnyVal {
+  extension [Self <: SearchDelegate](x: Self) {
     
-    @scala.inline
-    def setAutocompleteDidComplete(value: /* data */ SearchAutocompleteResponse => Unit): Self = StObject.set(x, "autocompleteDidComplete", js.Any.fromFunction1(value))
+    inline def setAutocompleteDidComplete(value: /* data */ SearchAutocompleteResponse => Unit): Self = StObject.set(x, "autocompleteDidComplete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAutocompleteDidCompleteUndefined: Self = StObject.set(x, "autocompleteDidComplete", js.undefined)
+    inline def setAutocompleteDidCompleteUndefined: Self = StObject.set(x, "autocompleteDidComplete", js.undefined)
     
-    @scala.inline
-    def setAutocompleteDidError(value: /* error */ Error => Unit): Self = StObject.set(x, "autocompleteDidError", js.Any.fromFunction1(value))
+    inline def setAutocompleteDidError(value: /* error */ Error => Unit): Self = StObject.set(x, "autocompleteDidError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAutocompleteDidErrorUndefined: Self = StObject.set(x, "autocompleteDidError", js.undefined)
+    inline def setAutocompleteDidErrorUndefined: Self = StObject.set(x, "autocompleteDidError", js.undefined)
     
-    @scala.inline
-    def setSearchDidComplete(value: /* data */ SearchResponse => Unit): Self = StObject.set(x, "searchDidComplete", js.Any.fromFunction1(value))
+    inline def setSearchDidComplete(value: /* data */ SearchResponse => Unit): Self = StObject.set(x, "searchDidComplete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSearchDidCompleteUndefined: Self = StObject.set(x, "searchDidComplete", js.undefined)
+    inline def setSearchDidCompleteUndefined: Self = StObject.set(x, "searchDidComplete", js.undefined)
     
-    @scala.inline
-    def setSearchDidError(value: /* error */ Error => Unit): Self = StObject.set(x, "searchDidError", js.Any.fromFunction1(value))
+    inline def setSearchDidError(value: /* error */ Error => Unit): Self = StObject.set(x, "searchDidError", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSearchDidErrorUndefined: Self = StObject.set(x, "searchDidError", js.undefined)
+    inline def setSearchDidErrorUndefined: Self = StObject.set(x, "searchDidError", js.undefined)
   }
 }

@@ -23,22 +23,17 @@ trait CreateDocumentationPartRequest extends StObject {
 }
 object CreateDocumentationPartRequest {
   
-  @scala.inline
-  def apply(location: DocumentationPartLocation, properties: String, restApiId: String): CreateDocumentationPartRequest = {
+  inline def apply(location: DocumentationPartLocation, properties: String, restApiId: String): CreateDocumentationPartRequest = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDocumentationPartRequest]
   }
   
-  @scala.inline
-  implicit class CreateDocumentationPartRequestMutableBuilder[Self <: CreateDocumentationPartRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDocumentationPartRequest](x: Self) {
     
-    @scala.inline
-    def setLocation(value: DocumentationPartLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: DocumentationPartLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: String): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: String): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+    inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
   }
 }

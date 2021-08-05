@@ -16,25 +16,19 @@ trait RightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends St
 }
 object RightProps {
   
-  @scala.inline
-  def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): RightProps[ThemeType, TVal] = {
+  inline def apply[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](): RightProps[ThemeType, TVal] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RightProps[ThemeType, TVal]]
   }
   
-  @scala.inline
-  implicit class RightPropsMutableBuilder[Self <: RightProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (RightProps[ThemeType, TVal])) extends AnyVal {
+  extension [Self <: RightProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal](x: Self & (RightProps[ThemeType, TVal])) {
     
-    @scala.inline
-    def setRight(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightNull: Self = StObject.set(x, "right", null)
+    inline def setRightNull: Self = StObject.set(x, "right", null)
     
-    @scala.inline
-    def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+    inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     
-    @scala.inline
-    def setRightVarargs(value: (TVal | Null)*): Self = StObject.set(x, "right", js.Array(value :_*))
+    inline def setRightVarargs(value: (TVal | Null)*): Self = StObject.set(x, "right", js.Array(value :_*))
   }
 }

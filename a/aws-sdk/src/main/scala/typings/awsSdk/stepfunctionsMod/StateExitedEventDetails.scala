@@ -23,28 +23,21 @@ trait StateExitedEventDetails extends StObject {
 }
 object StateExitedEventDetails {
   
-  @scala.inline
-  def apply(name: Name): StateExitedEventDetails = {
+  inline def apply(name: Name): StateExitedEventDetails = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[StateExitedEventDetails]
   }
   
-  @scala.inline
-  implicit class StateExitedEventDetailsMutableBuilder[Self <: StateExitedEventDetails] (val x: Self) extends AnyVal {
+  extension [Self <: StateExitedEventDetails](x: Self) {
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutput(value: SensitiveData): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+    inline def setOutput(value: SensitiveData): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputDetails(value: HistoryEventExecutionDataDetails): Self = StObject.set(x, "outputDetails", value.asInstanceOf[js.Any])
+    inline def setOutputDetails(value: HistoryEventExecutionDataDetails): Self = StObject.set(x, "outputDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputDetailsUndefined: Self = StObject.set(x, "outputDetails", js.undefined)
+    inline def setOutputDetailsUndefined: Self = StObject.set(x, "outputDetails", js.undefined)
     
-    @scala.inline
-    def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+    inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
   }
 }

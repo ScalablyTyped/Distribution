@@ -12,19 +12,15 @@ trait IsIntOptions
 }
 object IsIntOptions {
   
-  @scala.inline
-  def apply(): IsIntOptions = {
+  inline def apply(): IsIntOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IsIntOptions]
   }
   
-  @scala.inline
-  implicit class IsIntOptionsMutableBuilder[Self <: IsIntOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IsIntOptions](x: Self) {
     
-    @scala.inline
-    def setAllow_leading_zeroes(value: Boolean): Self = StObject.set(x, "allow_leading_zeroes", value.asInstanceOf[js.Any])
+    inline def setAllow_leading_zeroes(value: Boolean): Self = StObject.set(x, "allow_leading_zeroes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllow_leading_zeroesUndefined: Self = StObject.set(x, "allow_leading_zeroes", js.undefined)
+    inline def setAllow_leading_zeroesUndefined: Self = StObject.set(x, "allow_leading_zeroes", js.undefined)
   }
 }

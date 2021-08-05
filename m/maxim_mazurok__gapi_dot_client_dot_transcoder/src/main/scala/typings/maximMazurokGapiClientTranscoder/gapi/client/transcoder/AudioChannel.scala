@@ -11,22 +11,17 @@ trait AudioChannel extends StObject {
 }
 object AudioChannel {
   
-  @scala.inline
-  def apply(): AudioChannel = {
+  inline def apply(): AudioChannel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AudioChannel]
   }
   
-  @scala.inline
-  implicit class AudioChannelMutableBuilder[Self <: AudioChannel] (val x: Self) extends AnyVal {
+  extension [Self <: AudioChannel](x: Self) {
     
-    @scala.inline
-    def setInputs(value: js.Array[AudioChannelInput]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: js.Array[AudioChannelInput]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
+    inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     
-    @scala.inline
-    def setInputsVarargs(value: AudioChannelInput*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+    inline def setInputsVarargs(value: AudioChannelInput*): Self = StObject.set(x, "inputs", js.Array(value :_*))
   }
 }

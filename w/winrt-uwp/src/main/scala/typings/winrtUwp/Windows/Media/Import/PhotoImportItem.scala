@@ -48,8 +48,7 @@ trait PhotoImportItem extends StObject {
 }
 object PhotoImportItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contentType: PhotoImportContentType,
     date: Date,
     deletedFileNames: IVectorView[String],
@@ -67,43 +66,30 @@ object PhotoImportItem {
     __obj.asInstanceOf[PhotoImportItem]
   }
   
-  @scala.inline
-  implicit class PhotoImportItemMutableBuilder[Self <: PhotoImportItem] (val x: Self) extends AnyVal {
+  extension [Self <: PhotoImportItem](x: Self) {
     
-    @scala.inline
-    def setContentType(value: PhotoImportContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: PhotoImportContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedFileNames(value: IVectorView[String]): Self = StObject.set(x, "deletedFileNames", value.asInstanceOf[js.Any])
+    inline def setDeletedFileNames(value: IVectorView[String]): Self = StObject.set(x, "deletedFileNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportedFileNames(value: IVectorView[String]): Self = StObject.set(x, "importedFileNames", value.asInstanceOf[js.Any])
+    inline def setImportedFileNames(value: IVectorView[String]): Self = StObject.set(x, "importedFileNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
+    inline def setIsSelected(value: Boolean): Self = StObject.set(x, "isSelected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemKey(value: Double): Self = StObject.set(x, "itemKey", value.asInstanceOf[js.Any])
+    inline def setItemKey(value: Double): Self = StObject.set(x, "itemKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSibling(value: PhotoImportSidecar): Self = StObject.set(x, "sibling", value.asInstanceOf[js.Any])
+    inline def setSibling(value: PhotoImportSidecar): Self = StObject.set(x, "sibling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSidecars(value: IVectorView[PhotoImportSidecar]): Self = StObject.set(x, "sidecars", value.asInstanceOf[js.Any])
+    inline def setSidecars(value: IVectorView[PhotoImportSidecar]): Self = StObject.set(x, "sidecars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeInBytes(value: Double): Self = StObject.set(x, "sizeInBytes", value.asInstanceOf[js.Any])
+    inline def setSizeInBytes(value: Double): Self = StObject.set(x, "sizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnail(value: IRandomAccessStreamReference): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+    inline def setThumbnail(value: IRandomAccessStreamReference): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoSegments(value: IVectorView[PhotoImportVideoSegment]): Self = StObject.set(x, "videoSegments", value.asInstanceOf[js.Any])
+    inline def setVideoSegments(value: IVectorView[PhotoImportVideoSegment]): Self = StObject.set(x, "videoSegments", value.asInstanceOf[js.Any])
   }
 }

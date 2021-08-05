@@ -63,8 +63,7 @@ trait GetQuantumTaskResponse extends StObject {
 }
 object GetQuantumTaskResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createdAt: SyntheticTimestampDateTime,
     deviceArn: DeviceArn,
     deviceParameters: JsonValue,
@@ -78,49 +77,34 @@ object GetQuantumTaskResponse {
     __obj.asInstanceOf[GetQuantumTaskResponse]
   }
   
-  @scala.inline
-  implicit class GetQuantumTaskResponseMutableBuilder[Self <: GetQuantumTaskResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetQuantumTaskResponse](x: Self) {
     
-    @scala.inline
-    def setCreatedAt(value: SyntheticTimestampDateTime): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: SyntheticTimestampDateTime): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceArn(value: DeviceArn): Self = StObject.set(x, "deviceArn", value.asInstanceOf[js.Any])
+    inline def setDeviceArn(value: DeviceArn): Self = StObject.set(x, "deviceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceParameters(value: JsonValue): Self = StObject.set(x, "deviceParameters", value.asInstanceOf[js.Any])
+    inline def setDeviceParameters(value: JsonValue): Self = StObject.set(x, "deviceParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndedAt(value: SyntheticTimestampDateTime): Self = StObject.set(x, "endedAt", value.asInstanceOf[js.Any])
+    inline def setEndedAt(value: SyntheticTimestampDateTime): Self = StObject.set(x, "endedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndedAtUndefined: Self = StObject.set(x, "endedAt", js.undefined)
+    inline def setEndedAtUndefined: Self = StObject.set(x, "endedAt", js.undefined)
     
-    @scala.inline
-    def setFailureReason(value: String): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
+    inline def setFailureReason(value: String): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
+    inline def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
     
-    @scala.inline
-    def setOutputS3Bucket(value: String): Self = StObject.set(x, "outputS3Bucket", value.asInstanceOf[js.Any])
+    inline def setOutputS3Bucket(value: String): Self = StObject.set(x, "outputS3Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputS3Directory(value: String): Self = StObject.set(x, "outputS3Directory", value.asInstanceOf[js.Any])
+    inline def setOutputS3Directory(value: String): Self = StObject.set(x, "outputS3Directory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuantumTaskArn(value: QuantumTaskArn): Self = StObject.set(x, "quantumTaskArn", value.asInstanceOf[js.Any])
+    inline def setQuantumTaskArn(value: QuantumTaskArn): Self = StObject.set(x, "quantumTaskArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShots(value: Long): Self = StObject.set(x, "shots", value.asInstanceOf[js.Any])
+    inline def setShots(value: Long): Self = StObject.set(x, "shots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: QuantumTaskStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: QuantumTaskStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagsMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

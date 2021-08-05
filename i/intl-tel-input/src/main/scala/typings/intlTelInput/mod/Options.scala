@@ -162,124 +162,85 @@ trait Options extends StObject {
 }
 object Options {
   
-  @scala.inline
-  def apply(): Options = {
+  inline def apply(): Options = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Options]
   }
   
-  @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+  extension [Self <: Options](x: Self) {
     
-    @scala.inline
-    def setAllowDropdown(value: Boolean): Self = StObject.set(x, "allowDropdown", value.asInstanceOf[js.Any])
+    inline def setAllowDropdown(value: Boolean): Self = StObject.set(x, "allowDropdown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowDropdownUndefined: Self = StObject.set(x, "allowDropdown", js.undefined)
+    inline def setAllowDropdownUndefined: Self = StObject.set(x, "allowDropdown", js.undefined)
     
-    @scala.inline
-    def setAutoHideDialCode(value: Boolean): Self = StObject.set(x, "autoHideDialCode", value.asInstanceOf[js.Any])
+    inline def setAutoHideDialCode(value: Boolean): Self = StObject.set(x, "autoHideDialCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoHideDialCodeUndefined: Self = StObject.set(x, "autoHideDialCode", js.undefined)
+    inline def setAutoHideDialCodeUndefined: Self = StObject.set(x, "autoHideDialCode", js.undefined)
     
-    @scala.inline
-    def setAutoPlaceholder(value: off | polite | aggressive): Self = StObject.set(x, "autoPlaceholder", value.asInstanceOf[js.Any])
+    inline def setAutoPlaceholder(value: off | polite | aggressive): Self = StObject.set(x, "autoPlaceholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoPlaceholderUndefined: Self = StObject.set(x, "autoPlaceholder", js.undefined)
+    inline def setAutoPlaceholderUndefined: Self = StObject.set(x, "autoPlaceholder", js.undefined)
     
-    @scala.inline
-    def setCustomPlaceholder(value: (/* selectedCountryPlaceholder */ String, /* selectedCountryData */ CountryData) => String): Self = StObject.set(x, "customPlaceholder", js.Any.fromFunction2(value))
+    inline def setCustomPlaceholder(value: (/* selectedCountryPlaceholder */ String, /* selectedCountryData */ CountryData) => String): Self = StObject.set(x, "customPlaceholder", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCustomPlaceholderUndefined: Self = StObject.set(x, "customPlaceholder", js.undefined)
+    inline def setCustomPlaceholderUndefined: Self = StObject.set(x, "customPlaceholder", js.undefined)
     
-    @scala.inline
-    def setDropdownContainer(value: Node): Self = StObject.set(x, "dropdownContainer", value.asInstanceOf[js.Any])
+    inline def setDropdownContainer(value: Node): Self = StObject.set(x, "dropdownContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDropdownContainerUndefined: Self = StObject.set(x, "dropdownContainer", js.undefined)
+    inline def setDropdownContainerUndefined: Self = StObject.set(x, "dropdownContainer", js.undefined)
     
-    @scala.inline
-    def setExcludeCountries(value: js.Array[String]): Self = StObject.set(x, "excludeCountries", value.asInstanceOf[js.Any])
+    inline def setExcludeCountries(value: js.Array[String]): Self = StObject.set(x, "excludeCountries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeCountriesUndefined: Self = StObject.set(x, "excludeCountries", js.undefined)
+    inline def setExcludeCountriesUndefined: Self = StObject.set(x, "excludeCountries", js.undefined)
     
-    @scala.inline
-    def setExcludeCountriesVarargs(value: String*): Self = StObject.set(x, "excludeCountries", js.Array(value :_*))
+    inline def setExcludeCountriesVarargs(value: String*): Self = StObject.set(x, "excludeCountries", js.Array(value :_*))
     
-    @scala.inline
-    def setFormatOnDisplay(value: Boolean): Self = StObject.set(x, "formatOnDisplay", value.asInstanceOf[js.Any])
+    inline def setFormatOnDisplay(value: Boolean): Self = StObject.set(x, "formatOnDisplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatOnDisplayUndefined: Self = StObject.set(x, "formatOnDisplay", js.undefined)
+    inline def setFormatOnDisplayUndefined: Self = StObject.set(x, "formatOnDisplay", js.undefined)
     
-    @scala.inline
-    def setGeoIpLookup(value: /* callback */ js.Function1[/* countryCode */ String, Unit] => Unit): Self = StObject.set(x, "geoIpLookup", js.Any.fromFunction1(value))
+    inline def setGeoIpLookup(value: /* callback */ js.Function1[/* countryCode */ String, Unit] => Unit): Self = StObject.set(x, "geoIpLookup", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGeoIpLookupUndefined: Self = StObject.set(x, "geoIpLookup", js.undefined)
+    inline def setGeoIpLookupUndefined: Self = StObject.set(x, "geoIpLookup", js.undefined)
     
-    @scala.inline
-    def setHiddenInput(value: String): Self = StObject.set(x, "hiddenInput", value.asInstanceOf[js.Any])
+    inline def setHiddenInput(value: String): Self = StObject.set(x, "hiddenInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenInputUndefined: Self = StObject.set(x, "hiddenInput", js.undefined)
+    inline def setHiddenInputUndefined: Self = StObject.set(x, "hiddenInput", js.undefined)
     
-    @scala.inline
-    def setInitialCountry(value: String): Self = StObject.set(x, "initialCountry", value.asInstanceOf[js.Any])
+    inline def setInitialCountry(value: String): Self = StObject.set(x, "initialCountry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialCountryUndefined: Self = StObject.set(x, "initialCountry", js.undefined)
+    inline def setInitialCountryUndefined: Self = StObject.set(x, "initialCountry", js.undefined)
     
-    @scala.inline
-    def setLocalizedCountries(value: js.Object): Self = StObject.set(x, "localizedCountries", value.asInstanceOf[js.Any])
+    inline def setLocalizedCountries(value: js.Object): Self = StObject.set(x, "localizedCountries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalizedCountriesUndefined: Self = StObject.set(x, "localizedCountries", js.undefined)
+    inline def setLocalizedCountriesUndefined: Self = StObject.set(x, "localizedCountries", js.undefined)
     
-    @scala.inline
-    def setNationalMode(value: Boolean): Self = StObject.set(x, "nationalMode", value.asInstanceOf[js.Any])
+    inline def setNationalMode(value: Boolean): Self = StObject.set(x, "nationalMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNationalModeUndefined: Self = StObject.set(x, "nationalMode", js.undefined)
+    inline def setNationalModeUndefined: Self = StObject.set(x, "nationalMode", js.undefined)
     
-    @scala.inline
-    def setOnlyCountries(value: js.Array[String]): Self = StObject.set(x, "onlyCountries", value.asInstanceOf[js.Any])
+    inline def setOnlyCountries(value: js.Array[String]): Self = StObject.set(x, "onlyCountries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyCountriesUndefined: Self = StObject.set(x, "onlyCountries", js.undefined)
+    inline def setOnlyCountriesUndefined: Self = StObject.set(x, "onlyCountries", js.undefined)
     
-    @scala.inline
-    def setOnlyCountriesVarargs(value: String*): Self = StObject.set(x, "onlyCountries", js.Array(value :_*))
+    inline def setOnlyCountriesVarargs(value: String*): Self = StObject.set(x, "onlyCountries", js.Array(value :_*))
     
-    @scala.inline
-    def setPlaceholderNumberType(value: placeholderNumberType): Self = StObject.set(x, "placeholderNumberType", value.asInstanceOf[js.Any])
+    inline def setPlaceholderNumberType(value: placeholderNumberType): Self = StObject.set(x, "placeholderNumberType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderNumberTypeUndefined: Self = StObject.set(x, "placeholderNumberType", js.undefined)
+    inline def setPlaceholderNumberTypeUndefined: Self = StObject.set(x, "placeholderNumberType", js.undefined)
     
-    @scala.inline
-    def setPreferredCountries(value: js.Array[String]): Self = StObject.set(x, "preferredCountries", value.asInstanceOf[js.Any])
+    inline def setPreferredCountries(value: js.Array[String]): Self = StObject.set(x, "preferredCountries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreferredCountriesUndefined: Self = StObject.set(x, "preferredCountries", js.undefined)
+    inline def setPreferredCountriesUndefined: Self = StObject.set(x, "preferredCountries", js.undefined)
     
-    @scala.inline
-    def setPreferredCountriesVarargs(value: String*): Self = StObject.set(x, "preferredCountries", js.Array(value :_*))
+    inline def setPreferredCountriesVarargs(value: String*): Self = StObject.set(x, "preferredCountries", js.Array(value :_*))
     
-    @scala.inline
-    def setSeparateDialCode(value: Boolean): Self = StObject.set(x, "separateDialCode", value.asInstanceOf[js.Any])
+    inline def setSeparateDialCode(value: Boolean): Self = StObject.set(x, "separateDialCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeparateDialCodeUndefined: Self = StObject.set(x, "separateDialCode", js.undefined)
+    inline def setSeparateDialCodeUndefined: Self = StObject.set(x, "separateDialCode", js.undefined)
     
-    @scala.inline
-    def setUtilsScript(value: String): Self = StObject.set(x, "utilsScript", value.asInstanceOf[js.Any])
+    inline def setUtilsScript(value: String): Self = StObject.set(x, "utilsScript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUtilsScriptUndefined: Self = StObject.set(x, "utilsScript", js.undefined)
+    inline def setUtilsScriptUndefined: Self = StObject.set(x, "utilsScript", js.undefined)
   }
 }

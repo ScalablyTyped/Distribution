@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TBoolean extends StObject
 object TBoolean {
   
-  @scala.inline
-  def `0`: typings.musicmatch.musicmatchNumbers.`0` = 0.asInstanceOf[typings.musicmatch.musicmatchNumbers.`0`]
+  inline def `0`: typings.musicmatch.musicmatchNumbers.`0` = 0.asInstanceOf[typings.musicmatch.musicmatchNumbers.`0`]
   
-  @scala.inline
-  def `1`: typings.musicmatch.musicmatchNumbers.`1` = 1.asInstanceOf[typings.musicmatch.musicmatchNumbers.`1`]
+  inline def `1`: typings.musicmatch.musicmatchNumbers.`1` = 1.asInstanceOf[typings.musicmatch.musicmatchNumbers.`1`]
 }

@@ -34,8 +34,7 @@ object mod {
   	getData().catch(pCatchIf(UnicornError, pCatchIf(validateMessage, console.error)));
   	```
   	*/
-  @scala.inline
-  def apply[T](predicate: Predicate, catchHandler: js.Function1[/* error */ Error, T]): js.Function1[/* error */ Error, T] = (^.asInstanceOf[js.Dynamic].apply(predicate.asInstanceOf[js.Any], catchHandler.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* error */ Error, T]]
+  inline def apply[T](predicate: Predicate, catchHandler: js.Function1[/* error */ Error, T]): js.Function1[/* error */ Error, T] = (^.asInstanceOf[js.Dynamic].apply(predicate.asInstanceOf[js.Any], catchHandler.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* error */ Error, T]]
   
   @JSImport("p-catch-if", JSImport.Namespace)
   @js.native
@@ -50,8 +49,7 @@ object mod {
   @JSImport("p-catch-if", "default")
   @js.native
   def default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pCatchIf */ js.Any = js.native
-  @scala.inline
-  def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pCatchIf */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pCatchIf */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   @js.native
   trait ErrorConstructor

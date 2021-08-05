@@ -23,34 +23,25 @@ trait ListTranscriptionJobsResponse extends StObject {
 }
 object ListTranscriptionJobsResponse {
   
-  @scala.inline
-  def apply(): ListTranscriptionJobsResponse = {
+  inline def apply(): ListTranscriptionJobsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTranscriptionJobsResponse]
   }
   
-  @scala.inline
-  implicit class ListTranscriptionJobsResponseMutableBuilder[Self <: ListTranscriptionJobsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListTranscriptionJobsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setStatus(value: TranscriptionJobStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: TranscriptionJobStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setTranscriptionJobSummaries(value: TranscriptionJobSummaries): Self = StObject.set(x, "TranscriptionJobSummaries", value.asInstanceOf[js.Any])
+    inline def setTranscriptionJobSummaries(value: TranscriptionJobSummaries): Self = StObject.set(x, "TranscriptionJobSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranscriptionJobSummariesUndefined: Self = StObject.set(x, "TranscriptionJobSummaries", js.undefined)
+    inline def setTranscriptionJobSummariesUndefined: Self = StObject.set(x, "TranscriptionJobSummaries", js.undefined)
     
-    @scala.inline
-    def setTranscriptionJobSummariesVarargs(value: TranscriptionJobSummary*): Self = StObject.set(x, "TranscriptionJobSummaries", js.Array(value :_*))
+    inline def setTranscriptionJobSummariesVarargs(value: TranscriptionJobSummary*): Self = StObject.set(x, "TranscriptionJobSummaries", js.Array(value :_*))
   }
 }

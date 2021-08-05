@@ -14,37 +14,27 @@ trait Algorithms extends StObject {
 }
 object Algorithms {
   
-  @scala.inline
-  def apply(): Algorithms = {
+  inline def apply(): Algorithms = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Algorithms]
   }
   
-  @scala.inline
-  implicit class AlgorithmsMutableBuilder[Self <: Algorithms] (val x: Self) extends AnyVal {
+  extension [Self <: Algorithms](x: Self) {
     
-    @scala.inline
-    def setAlgorithms(value: js.Array[String]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
+    inline def setAlgorithms(value: js.Array[String]): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
+    inline def setAlgorithmsUndefined: Self = StObject.set(x, "algorithms", js.undefined)
     
-    @scala.inline
-    def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
+    inline def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
     
-    @scala.inline
-    def setOptions(value: js.Array[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Array[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
     
-    @scala.inline
-    def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+    inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+    inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
   }
 }

@@ -52,91 +52,63 @@ trait PrettyPrint extends StObject {
 }
 object PrettyPrint {
   
-  @scala.inline
-  def apply(name: String, resource: CryptoKeyVersion): PrettyPrint = {
+  inline def apply(name: String, resource: CryptoKeyVersion): PrettyPrint = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resource = resource.asInstanceOf[js.Any])
     __obj.asInstanceOf[PrettyPrint]
   }
   
-  @scala.inline
-  implicit class PrettyPrintMutableBuilder[Self <: PrettyPrint] (val x: Self) extends AnyVal {
+  extension [Self <: PrettyPrint](x: Self) {
     
-    @scala.inline
-    def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
+    inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$DotxgafvUndefined: Self = StObject.set(x, "$.xgafv", js.undefined)
+    inline def set$DotxgafvUndefined: Self = StObject.set(x, "$.xgafv", js.undefined)
     
-    @scala.inline
-    def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+    inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
+    inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
     
-    @scala.inline
-    def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+    inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+    inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
-    @scala.inline
-    def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    @scala.inline
-    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
+    inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
+    inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
     
-    @scala.inline
-    def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
+    inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
+    inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
     
-    @scala.inline
-    def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
+    inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    @scala.inline
-    def setResource(value: CryptoKeyVersion): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: CryptoKeyVersion): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
     
-    @scala.inline
-    def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
+    inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadTypeUndefined: Self = StObject.set(x, "uploadType", js.undefined)
+    inline def setUploadTypeUndefined: Self = StObject.set(x, "uploadType", js.undefined)
     
-    @scala.inline
-    def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
+    inline def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
+    inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
   }
 }

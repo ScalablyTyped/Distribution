@@ -16,16 +16,13 @@ trait SaveFileFailCallbackResult extends StObject {
 }
 object SaveFileFailCallbackResult {
   
-  @scala.inline
-  def apply(errMsg: String): SaveFileFailCallbackResult = {
+  inline def apply(errMsg: String): SaveFileFailCallbackResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaveFileFailCallbackResult]
   }
   
-  @scala.inline
-  implicit class SaveFileFailCallbackResultMutableBuilder[Self <: SaveFileFailCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: SaveFileFailCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

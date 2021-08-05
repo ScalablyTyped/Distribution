@@ -19,19 +19,15 @@ trait PlayOptions extends StObject {
 }
 object PlayOptions {
   
-  @scala.inline
-  def apply(muted: Boolean, objectFit: contain | cover | fill | none | `scale-down`): PlayOptions = {
+  inline def apply(muted: Boolean, objectFit: contain | cover | fill | none | `scale-down`): PlayOptions = {
     val __obj = js.Dynamic.literal(muted = muted.asInstanceOf[js.Any], objectFit = objectFit.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayOptions]
   }
   
-  @scala.inline
-  implicit class PlayOptionsMutableBuilder[Self <: PlayOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlayOptions](x: Self) {
     
-    @scala.inline
-    def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
+    inline def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectFit(value: contain | cover | fill | none | `scale-down`): Self = StObject.set(x, "objectFit", value.asInstanceOf[js.Any])
+    inline def setObjectFit(value: contain | cover | fill | none | `scale-down`): Self = StObject.set(x, "objectFit", value.asInstanceOf[js.Any])
   }
 }

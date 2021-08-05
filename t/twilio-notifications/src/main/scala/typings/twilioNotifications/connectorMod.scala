@@ -14,15 +14,15 @@ object connectorMod {
   abstract class Connector protected () extends EventEmitter {
     def this(config: Configuration) = this()
     
-    val config: Configuration = js.native
+    /* protected */ val config: Configuration = js.native
     
-    val currentState: RegistrationState = js.native
+    /* protected */ val currentState: RegistrationState = js.native
     
-    val desiredState: RegistrationState = js.native
+    /* protected */ val desiredState: RegistrationState = js.native
     
-    var hasActiveAttempt: js.Any = js.native
+    /* private */ var hasActiveAttempt: js.Any = js.native
     
-    var persistRegistration: js.Any = js.native
+    /* private */ var persistRegistration: js.Any = js.native
     
     /* protected */ def removeRegistration(): js.Promise[Unit] = js.native
     
@@ -64,17 +64,13 @@ object connectorMod {
   trait ChannelType extends StObject
   object ChannelType {
     
-    @scala.inline
-    def apn: typings.twilioNotifications.twilioNotificationsStrings.apn = "apn".asInstanceOf[typings.twilioNotifications.twilioNotificationsStrings.apn]
+    inline def apn: typings.twilioNotifications.twilioNotificationsStrings.apn = "apn".asInstanceOf[typings.twilioNotifications.twilioNotificationsStrings.apn]
     
-    @scala.inline
-    def fcm: typings.twilioNotifications.twilioNotificationsStrings.fcm = "fcm".asInstanceOf[typings.twilioNotifications.twilioNotificationsStrings.fcm]
+    inline def fcm: typings.twilioNotifications.twilioNotificationsStrings.fcm = "fcm".asInstanceOf[typings.twilioNotifications.twilioNotificationsStrings.fcm]
     
-    @scala.inline
-    def gcm: typings.twilioNotifications.twilioNotificationsStrings.gcm = "gcm".asInstanceOf[typings.twilioNotifications.twilioNotificationsStrings.gcm]
+    inline def gcm: typings.twilioNotifications.twilioNotificationsStrings.gcm = "gcm".asInstanceOf[typings.twilioNotifications.twilioNotificationsStrings.gcm]
     
-    @scala.inline
-    def twilsock: typings.twilioNotifications.twilioNotificationsStrings.twilsock = "twilsock".asInstanceOf[typings.twilioNotifications.twilioNotificationsStrings.twilsock]
+    inline def twilsock: typings.twilioNotifications.twilioNotificationsStrings.twilsock = "twilsock".asInstanceOf[typings.twilioNotifications.twilioNotificationsStrings.twilsock]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -85,13 +81,10 @@ object connectorMod {
   trait UpdateReason extends StObject
   object UpdateReason {
     
-    @scala.inline
-    def messageType: typings.twilioNotifications.twilioNotificationsStrings.messageType = "messageType".asInstanceOf[typings.twilioNotifications.twilioNotificationsStrings.messageType]
+    inline def messageType: typings.twilioNotifications.twilioNotificationsStrings.messageType = "messageType".asInstanceOf[typings.twilioNotifications.twilioNotificationsStrings.messageType]
     
-    @scala.inline
-    def notificationId: typings.twilioNotifications.twilioNotificationsStrings.notificationId = "notificationId".asInstanceOf[typings.twilioNotifications.twilioNotificationsStrings.notificationId]
+    inline def notificationId: typings.twilioNotifications.twilioNotificationsStrings.notificationId = "notificationId".asInstanceOf[typings.twilioNotifications.twilioNotificationsStrings.notificationId]
     
-    @scala.inline
-    def token: typings.twilioNotifications.twilioNotificationsStrings.token = "token".asInstanceOf[typings.twilioNotifications.twilioNotificationsStrings.token]
+    inline def token: typings.twilioNotifications.twilioNotificationsStrings.token = "token".asInstanceOf[typings.twilioNotifications.twilioNotificationsStrings.token]
   }
 }

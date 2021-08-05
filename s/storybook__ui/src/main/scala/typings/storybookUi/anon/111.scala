@@ -34,8 +34,7 @@ trait `111` extends StObject {
 }
 object `111` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `1`: Boolean,
     `1-11`: Boolean,
     `1-12`: Boolean,
@@ -67,46 +66,32 @@ object `111` {
     __obj.asInstanceOf[`111`]
   }
   
-  @scala.inline
-  implicit class `111MutableBuilder`[Self <: `111`] (val x: Self) extends AnyVal {
+  extension [Self <: `111`](x: Self) {
     
-    @scala.inline
-    def set1(value: Boolean): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
+    inline def set1(value: Boolean): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set1-11`(value: Boolean): Self = StObject.set(x, "1-11", value.asInstanceOf[js.Any])
+    inline def `set1-11`(value: Boolean): Self = StObject.set(x, "1-11", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set1-12`(value: Boolean): Self = StObject.set(x, "1-12", value.asInstanceOf[js.Any])
+    inline def `set1-12`(value: Boolean): Self = StObject.set(x, "1-12", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set1-12-121`(value: Boolean): Self = StObject.set(x, "1-12-121", value.asInstanceOf[js.Any])
+    inline def `set1-12-121`(value: Boolean): Self = StObject.set(x, "1-12-121", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set1-12-122`(value: Boolean): Self = StObject.set(x, "1-12-122", value.asInstanceOf[js.Any])
+    inline def `set1-12-122`(value: Boolean): Self = StObject.set(x, "1-12-122", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set2(value: Boolean): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
+    inline def set2(value: Boolean): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set2-21`(value: Boolean): Self = StObject.set(x, "2-21", value.asInstanceOf[js.Any])
+    inline def `set2-21`(value: Boolean): Self = StObject.set(x, "2-21", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set2-22`(value: Boolean): Self = StObject.set(x, "2-22", value.asInstanceOf[js.Any])
+    inline def `set2-22`(value: Boolean): Self = StObject.set(x, "2-22", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set3(value: Boolean): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
+    inline def set3(value: Boolean): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set3-31`(value: Boolean): Self = StObject.set(x, "3-31", value.asInstanceOf[js.Any])
+    inline def `set3-31`(value: Boolean): Self = StObject.set(x, "3-31", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set3-32`(value: Boolean): Self = StObject.set(x, "3-32", value.asInstanceOf[js.Any])
+    inline def `set3-32`(value: Boolean): Self = StObject.set(x, "3-32", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set3-32-321`(value: Boolean): Self = StObject.set(x, "3-32-321", value.asInstanceOf[js.Any])
+    inline def `set3-32-321`(value: Boolean): Self = StObject.set(x, "3-32-321", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `set3-32-322`(value: Boolean): Self = StObject.set(x, "3-32-322", value.asInstanceOf[js.Any])
+    inline def `set3-32-322`(value: Boolean): Self = StObject.set(x, "3-32-322", value.asInstanceOf[js.Any])
   }
 }

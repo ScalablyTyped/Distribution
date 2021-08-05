@@ -15,112 +15,72 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def address(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("address")().asInstanceOf[String]
-  @scala.inline
-  def address(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def address(name: `private`, family: ipv4): String = (^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def address(name: `private`, family: ipv6): String = (^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def address(name: public, family: ipv4): String = (^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def address(name: public, family: ipv6): String = (^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def address(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("address")().asInstanceOf[String]
+  inline def address(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def address(name: `private`, family: ipv4): String = (^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def address(name: `private`, family: ipv6): String = (^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def address(name: public, family: ipv4): String = (^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def address(name: public, family: ipv6): String = (^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def address_ipv4(name: String, family: ipv4): String = (^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def address_ipv4(name: Unit, family: ipv4): String = (^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def address_ipv4(name: String, family: ipv4): String = (^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def address_ipv4(name: Unit, family: ipv4): String = (^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def address_ipv6(name: String, family: ipv6): String = (^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def address_ipv6(name: Unit, family: ipv6): String = (^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def address_ipv6(name: String, family: ipv6): String = (^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def address_ipv6(name: Unit, family: ipv6): String = (^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def address_private(name: `private`): String = ^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def address_private(name: `private`): String = ^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def address_public(name: public): String = ^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def address_public(name: public): String = ^.asInstanceOf[js.Dynamic].applyDynamic("address")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def cidr(cidr: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cidr")(cidr.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def cidr(cidr: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cidr")(cidr.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def cidrSubnet(cidr: String): SubnetInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("cidrSubnet")(cidr.asInstanceOf[js.Any]).asInstanceOf[SubnetInfo]
+  inline def cidrSubnet(cidr: String): SubnetInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("cidrSubnet")(cidr.asInstanceOf[js.Any]).asInstanceOf[SubnetInfo]
   
-  @scala.inline
-  def fromLong(ip: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLong")(ip.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def fromLong(ip: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLong")(ip.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def fromPrefixLen(prefixLength: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPrefixLen")(prefixLength.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def fromPrefixLen(prefixLength: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPrefixLen")(prefixLength.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def fromPrefixLen_ipv4(prefixLength: Double, family: ipv4): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrefixLen")(prefixLength.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def fromPrefixLen_ipv4(prefixLength: Double, family: ipv4): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrefixLen")(prefixLength.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def fromPrefixLen_ipv6(prefixLength: Double, family: ipv6): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrefixLen")(prefixLength.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def fromPrefixLen_ipv6(prefixLength: Double, family: ipv6): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrefixLen")(prefixLength.asInstanceOf[js.Any], family.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def isEqual(ip1: String, ip2: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEqual")(ip1.asInstanceOf[js.Any], ip2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isEqual(ip1: String, ip2: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEqual")(ip1.asInstanceOf[js.Any], ip2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isLoopback(ip: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLoopback")(ip.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isLoopback(ip: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLoopback")(ip.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isPrivate(ip: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrivate")(ip.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isPrivate(ip: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrivate")(ip.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isPublic(ip: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPublic")(ip.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isPublic(ip: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPublic")(ip.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isV4Format(ip: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isV4Format")(ip.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isV4Format(ip: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isV4Format")(ip.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isV6Format(ip: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isV6Format")(ip.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isV6Format(ip: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isV6Format")(ip.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def loopback(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("loopback")().asInstanceOf[String]
+  inline def loopback(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("loopback")().asInstanceOf[String]
   
-  @scala.inline
-  def loopback_ipv4(family: ipv4): String = ^.asInstanceOf[js.Dynamic].applyDynamic("loopback")(family.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def loopback_ipv4(family: ipv4): String = ^.asInstanceOf[js.Dynamic].applyDynamic("loopback")(family.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def loopback_ipv6(family: ipv6): String = ^.asInstanceOf[js.Dynamic].applyDynamic("loopback")(family.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def loopback_ipv6(family: ipv6): String = ^.asInstanceOf[js.Dynamic].applyDynamic("loopback")(family.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def mask(ip: String, mask: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mask")(ip.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def mask(ip: String, mask: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mask")(ip.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def not(ip: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(ip.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def not(ip: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("not")(ip.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def or(ip: String, mask: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(ip.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def or(ip: String, mask: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("or")(ip.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def subnet(ip: String, subnet: String): SubnetInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("subnet")(ip.asInstanceOf[js.Any], subnet.asInstanceOf[js.Any])).asInstanceOf[SubnetInfo]
+  inline def subnet(ip: String, subnet: String): SubnetInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("subnet")(ip.asInstanceOf[js.Any], subnet.asInstanceOf[js.Any])).asInstanceOf[SubnetInfo]
   
-  @scala.inline
-  def toBuffer(ip: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(ip.asInstanceOf[js.Any]).asInstanceOf[Buffer]
-  @scala.inline
-  def toBuffer(ip: String, buffer: Unit, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(ip.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-  @scala.inline
-  def toBuffer(ip: String, buffer: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(ip.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Buffer]
-  @scala.inline
-  def toBuffer(ip: String, buffer: Buffer, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(ip.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def toBuffer(ip: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(ip.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def toBuffer(ip: String, buffer: Unit, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(ip.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def toBuffer(ip: String, buffer: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(ip.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  inline def toBuffer(ip: String, buffer: Buffer, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("toBuffer")(ip.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @scala.inline
-  def toLong(ip: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toLong")(ip.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def toLong(ip: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toLong")(ip.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def toString_(ip: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(ip.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def toString_(ip: Buffer, offset: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toString")(ip.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def toString_(ip: Buffer, offset: Double, length: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toString")(ip.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def toString_(ip: Buffer, offset: Unit, length: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toString")(ip.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toString_(ip: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(ip.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toString_(ip: Buffer, offset: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toString")(ip.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toString_(ip: Buffer, offset: Double, length: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toString")(ip.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toString_(ip: Buffer, offset: Unit, length: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toString")(ip.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[String]
   
   trait SubnetInfo extends StObject {
     
@@ -144,8 +104,7 @@ object mod {
   }
   object SubnetInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       broadcastAddress: String,
       contains: String => Boolean,
       firstAddress: String,
@@ -160,35 +119,25 @@ object mod {
       __obj.asInstanceOf[SubnetInfo]
     }
     
-    @scala.inline
-    implicit class SubnetInfoMutableBuilder[Self <: SubnetInfo] (val x: Self) extends AnyVal {
+    extension [Self <: SubnetInfo](x: Self) {
       
-      @scala.inline
-      def setBroadcastAddress(value: String): Self = StObject.set(x, "broadcastAddress", value.asInstanceOf[js.Any])
+      inline def setBroadcastAddress(value: String): Self = StObject.set(x, "broadcastAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContains(value: String => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
+      inline def setContains(value: String => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFirstAddress(value: String): Self = StObject.set(x, "firstAddress", value.asInstanceOf[js.Any])
+      inline def setFirstAddress(value: String): Self = StObject.set(x, "firstAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastAddress(value: String): Self = StObject.set(x, "lastAddress", value.asInstanceOf[js.Any])
+      inline def setLastAddress(value: String): Self = StObject.set(x, "lastAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkAddress(value: String): Self = StObject.set(x, "networkAddress", value.asInstanceOf[js.Any])
+      inline def setNetworkAddress(value: String): Self = StObject.set(x, "networkAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumHosts(value: Double): Self = StObject.set(x, "numHosts", value.asInstanceOf[js.Any])
+      inline def setNumHosts(value: Double): Self = StObject.set(x, "numHosts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetMask(value: String): Self = StObject.set(x, "subnetMask", value.asInstanceOf[js.Any])
+      inline def setSubnetMask(value: String): Self = StObject.set(x, "subnetMask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetMaskLength(value: Double): Self = StObject.set(x, "subnetMaskLength", value.asInstanceOf[js.Any])
+      inline def setSubnetMaskLength(value: Double): Self = StObject.set(x, "subnetMaskLength", value.asInstanceOf[js.Any])
     }
   }
 }

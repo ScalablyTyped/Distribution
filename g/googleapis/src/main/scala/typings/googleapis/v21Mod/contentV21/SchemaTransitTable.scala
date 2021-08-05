@@ -25,40 +25,29 @@ trait SchemaTransitTable extends StObject {
 }
 object SchemaTransitTable {
   
-  @scala.inline
-  def apply(): SchemaTransitTable = {
+  inline def apply(): SchemaTransitTable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTransitTable]
   }
   
-  @scala.inline
-  implicit class SchemaTransitTableMutableBuilder[Self <: SchemaTransitTable] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTransitTable](x: Self) {
     
-    @scala.inline
-    def setPostalCodeGroupNames(value: js.Array[String]): Self = StObject.set(x, "postalCodeGroupNames", value.asInstanceOf[js.Any])
+    inline def setPostalCodeGroupNames(value: js.Array[String]): Self = StObject.set(x, "postalCodeGroupNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostalCodeGroupNamesUndefined: Self = StObject.set(x, "postalCodeGroupNames", js.undefined)
+    inline def setPostalCodeGroupNamesUndefined: Self = StObject.set(x, "postalCodeGroupNames", js.undefined)
     
-    @scala.inline
-    def setPostalCodeGroupNamesVarargs(value: String*): Self = StObject.set(x, "postalCodeGroupNames", js.Array(value :_*))
+    inline def setPostalCodeGroupNamesVarargs(value: String*): Self = StObject.set(x, "postalCodeGroupNames", js.Array(value :_*))
     
-    @scala.inline
-    def setRows(value: js.Array[SchemaTransitTableTransitTimeRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[SchemaTransitTableTransitTimeRow]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    @scala.inline
-    def setRowsVarargs(value: SchemaTransitTableTransitTimeRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: SchemaTransitTableTransitTimeRow*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
-    @scala.inline
-    def setTransitTimeLabels(value: js.Array[String]): Self = StObject.set(x, "transitTimeLabels", value.asInstanceOf[js.Any])
+    inline def setTransitTimeLabels(value: js.Array[String]): Self = StObject.set(x, "transitTimeLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitTimeLabelsUndefined: Self = StObject.set(x, "transitTimeLabels", js.undefined)
+    inline def setTransitTimeLabelsUndefined: Self = StObject.set(x, "transitTimeLabels", js.undefined)
     
-    @scala.inline
-    def setTransitTimeLabelsVarargs(value: String*): Self = StObject.set(x, "transitTimeLabels", js.Array(value :_*))
+    inline def setTransitTimeLabelsVarargs(value: String*): Self = StObject.set(x, "transitTimeLabels", js.Array(value :_*))
   }
 }

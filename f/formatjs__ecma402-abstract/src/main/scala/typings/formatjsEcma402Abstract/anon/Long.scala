@@ -12,25 +12,19 @@ trait Long extends StObject {
 }
 object Long {
   
-  @scala.inline
-  def apply(): Long = {
+  inline def apply(): Long = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Long]
   }
   
-  @scala.inline
-  implicit class LongMutableBuilder[Self <: Long] (val x: Self) extends AnyVal {
+  extension [Self <: Long](x: Self) {
     
-    @scala.inline
-    def setLong(value: js.Tuple2[String, String]): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
+    inline def setLong(value: js.Tuple2[String, String]): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongUndefined: Self = StObject.set(x, "long", js.undefined)
+    inline def setLongUndefined: Self = StObject.set(x, "long", js.undefined)
     
-    @scala.inline
-    def setShort(value: js.Tuple2[String, String]): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
+    inline def setShort(value: js.Tuple2[String, String]): Self = StObject.set(x, "short", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShortUndefined: Self = StObject.set(x, "short", js.undefined)
+    inline def setShortUndefined: Self = StObject.set(x, "short", js.undefined)
   }
 }

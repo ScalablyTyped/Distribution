@@ -18,28 +18,21 @@ trait ReplaceServicePerimetersRequest extends StObject {
 }
 object ReplaceServicePerimetersRequest {
   
-  @scala.inline
-  def apply(): ReplaceServicePerimetersRequest = {
+  inline def apply(): ReplaceServicePerimetersRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReplaceServicePerimetersRequest]
   }
   
-  @scala.inline
-  implicit class ReplaceServicePerimetersRequestMutableBuilder[Self <: ReplaceServicePerimetersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ReplaceServicePerimetersRequest](x: Self) {
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setServicePerimeters(value: js.Array[ServicePerimeter]): Self = StObject.set(x, "servicePerimeters", value.asInstanceOf[js.Any])
+    inline def setServicePerimeters(value: js.Array[ServicePerimeter]): Self = StObject.set(x, "servicePerimeters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServicePerimetersUndefined: Self = StObject.set(x, "servicePerimeters", js.undefined)
+    inline def setServicePerimetersUndefined: Self = StObject.set(x, "servicePerimeters", js.undefined)
     
-    @scala.inline
-    def setServicePerimetersVarargs(value: ServicePerimeter*): Self = StObject.set(x, "servicePerimeters", js.Array(value :_*))
+    inline def setServicePerimetersVarargs(value: ServicePerimeter*): Self = StObject.set(x, "servicePerimeters", js.Array(value :_*))
   }
 }

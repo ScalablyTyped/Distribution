@@ -13,17 +13,14 @@ trait IMapField
 }
 object IMapField {
   
-  @scala.inline
-  def apply(id: Double, keyType: String, `type`: String): IMapField = {
+  inline def apply(id: Double, keyType: String, `type`: String): IMapField = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], keyType = keyType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMapField]
   }
   
-  @scala.inline
-  implicit class IMapFieldMutableBuilder[Self <: IMapField] (val x: Self) extends AnyVal {
+  extension [Self <: IMapField](x: Self) {
     
-    @scala.inline
-    def setKeyType(value: String): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
+    inline def setKeyType(value: String): Self = StObject.set(x, "keyType", value.asInstanceOf[js.Any])
   }
 }

@@ -50,31 +50,23 @@ trait PaymentOptions extends StObject {
 }
 object PaymentOptions {
   
-  @scala.inline
-  def apply(): PaymentOptions = {
+  inline def apply(): PaymentOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PaymentOptions]
   }
   
-  @scala.inline
-  implicit class PaymentOptionsMutableBuilder[Self <: PaymentOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PaymentOptions](x: Self) {
     
-    @scala.inline
-    def setEnvironment(value: Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+    inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
-    @scala.inline
-    def setMerchantInfo(value: MerchantInfo): Self = StObject.set(x, "merchantInfo", value.asInstanceOf[js.Any])
+    inline def setMerchantInfo(value: MerchantInfo): Self = StObject.set(x, "merchantInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerchantInfoUndefined: Self = StObject.set(x, "merchantInfo", js.undefined)
+    inline def setMerchantInfoUndefined: Self = StObject.set(x, "merchantInfo", js.undefined)
     
-    @scala.inline
-    def setPaymentDataCallbacks(value: PaymentDataCallbacks): Self = StObject.set(x, "paymentDataCallbacks", value.asInstanceOf[js.Any])
+    inline def setPaymentDataCallbacks(value: PaymentDataCallbacks): Self = StObject.set(x, "paymentDataCallbacks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaymentDataCallbacksUndefined: Self = StObject.set(x, "paymentDataCallbacks", js.undefined)
+    inline def setPaymentDataCallbacksUndefined: Self = StObject.set(x, "paymentDataCallbacks", js.undefined)
   }
 }

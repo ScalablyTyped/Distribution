@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlSearchDirection extends StObject
 object XlSearchDirection {
   
-  @scala.inline
-  def xlNext: `1` = 1.asInstanceOf[`1`]
+  inline def xlNext: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlPrevious: `2` = 2.asInstanceOf[`2`]
+  inline def xlPrevious: `2` = 2.asInstanceOf[`2`]
 }

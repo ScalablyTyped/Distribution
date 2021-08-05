@@ -17,34 +17,25 @@ trait Version extends StObject {
 }
 object Version {
   
-  @scala.inline
-  def apply(): Version = {
+  inline def apply(): Version = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Version]
   }
   
-  @scala.inline
-  implicit class VersionMutableBuilder[Self <: Version] (val x: Self) extends AnyVal {
+  extension [Self <: Version](x: Self) {
     
-    @scala.inline
-    def setAvailableFeatures(value: js.Array[String]): Self = StObject.set(x, "availableFeatures", value.asInstanceOf[js.Any])
+    inline def setAvailableFeatures(value: js.Array[String]): Self = StObject.set(x, "availableFeatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailableFeaturesUndefined: Self = StObject.set(x, "availableFeatures", js.undefined)
+    inline def setAvailableFeaturesUndefined: Self = StObject.set(x, "availableFeatures", js.undefined)
     
-    @scala.inline
-    def setAvailableFeaturesVarargs(value: String*): Self = StObject.set(x, "availableFeatures", js.Array(value :_*))
+    inline def setAvailableFeaturesVarargs(value: String*): Self = StObject.set(x, "availableFeatures", js.Array(value :_*))
     
-    @scala.inline
-    def setDefaultVersion(value: Boolean): Self = StObject.set(x, "defaultVersion", value.asInstanceOf[js.Any])
+    inline def setDefaultVersion(value: Boolean): Self = StObject.set(x, "defaultVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultVersionUndefined: Self = StObject.set(x, "defaultVersion", js.undefined)
+    inline def setDefaultVersionUndefined: Self = StObject.set(x, "defaultVersion", js.undefined)
     
-    @scala.inline
-    def setVersionNumber(value: String): Self = StObject.set(x, "versionNumber", value.asInstanceOf[js.Any])
+    inline def setVersionNumber(value: String): Self = StObject.set(x, "versionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionNumberUndefined: Self = StObject.set(x, "versionNumber", js.undefined)
+    inline def setVersionNumberUndefined: Self = StObject.set(x, "versionNumber", js.undefined)
   }
 }

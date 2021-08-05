@@ -43,52 +43,37 @@ trait TargetTrackingConfiguration extends StObject {
 }
 object TargetTrackingConfiguration {
   
-  @scala.inline
-  def apply(TargetValue: MetricScale): TargetTrackingConfiguration = {
+  inline def apply(TargetValue: MetricScale): TargetTrackingConfiguration = {
     val __obj = js.Dynamic.literal(TargetValue = TargetValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetTrackingConfiguration]
   }
   
-  @scala.inline
-  implicit class TargetTrackingConfigurationMutableBuilder[Self <: TargetTrackingConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: TargetTrackingConfiguration](x: Self) {
     
-    @scala.inline
-    def setCustomizedScalingMetricSpecification(value: CustomizedScalingMetricSpecification): Self = StObject.set(x, "CustomizedScalingMetricSpecification", value.asInstanceOf[js.Any])
+    inline def setCustomizedScalingMetricSpecification(value: CustomizedScalingMetricSpecification): Self = StObject.set(x, "CustomizedScalingMetricSpecification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomizedScalingMetricSpecificationUndefined: Self = StObject.set(x, "CustomizedScalingMetricSpecification", js.undefined)
+    inline def setCustomizedScalingMetricSpecificationUndefined: Self = StObject.set(x, "CustomizedScalingMetricSpecification", js.undefined)
     
-    @scala.inline
-    def setDisableScaleIn(value: DisableScaleIn): Self = StObject.set(x, "DisableScaleIn", value.asInstanceOf[js.Any])
+    inline def setDisableScaleIn(value: DisableScaleIn): Self = StObject.set(x, "DisableScaleIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableScaleInUndefined: Self = StObject.set(x, "DisableScaleIn", js.undefined)
+    inline def setDisableScaleInUndefined: Self = StObject.set(x, "DisableScaleIn", js.undefined)
     
-    @scala.inline
-    def setEstimatedInstanceWarmup(value: Cooldown): Self = StObject.set(x, "EstimatedInstanceWarmup", value.asInstanceOf[js.Any])
+    inline def setEstimatedInstanceWarmup(value: Cooldown): Self = StObject.set(x, "EstimatedInstanceWarmup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedInstanceWarmupUndefined: Self = StObject.set(x, "EstimatedInstanceWarmup", js.undefined)
+    inline def setEstimatedInstanceWarmupUndefined: Self = StObject.set(x, "EstimatedInstanceWarmup", js.undefined)
     
-    @scala.inline
-    def setPredefinedScalingMetricSpecification(value: PredefinedScalingMetricSpecification): Self = StObject.set(x, "PredefinedScalingMetricSpecification", value.asInstanceOf[js.Any])
+    inline def setPredefinedScalingMetricSpecification(value: PredefinedScalingMetricSpecification): Self = StObject.set(x, "PredefinedScalingMetricSpecification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredefinedScalingMetricSpecificationUndefined: Self = StObject.set(x, "PredefinedScalingMetricSpecification", js.undefined)
+    inline def setPredefinedScalingMetricSpecificationUndefined: Self = StObject.set(x, "PredefinedScalingMetricSpecification", js.undefined)
     
-    @scala.inline
-    def setScaleInCooldown(value: Cooldown): Self = StObject.set(x, "ScaleInCooldown", value.asInstanceOf[js.Any])
+    inline def setScaleInCooldown(value: Cooldown): Self = StObject.set(x, "ScaleInCooldown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleInCooldownUndefined: Self = StObject.set(x, "ScaleInCooldown", js.undefined)
+    inline def setScaleInCooldownUndefined: Self = StObject.set(x, "ScaleInCooldown", js.undefined)
     
-    @scala.inline
-    def setScaleOutCooldown(value: Cooldown): Self = StObject.set(x, "ScaleOutCooldown", value.asInstanceOf[js.Any])
+    inline def setScaleOutCooldown(value: Cooldown): Self = StObject.set(x, "ScaleOutCooldown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleOutCooldownUndefined: Self = StObject.set(x, "ScaleOutCooldown", js.undefined)
+    inline def setScaleOutCooldownUndefined: Self = StObject.set(x, "ScaleOutCooldown", js.undefined)
     
-    @scala.inline
-    def setTargetValue(value: MetricScale): Self = StObject.set(x, "TargetValue", value.asInstanceOf[js.Any])
+    inline def setTargetValue(value: MetricScale): Self = StObject.set(x, "TargetValue", value.asInstanceOf[js.Any])
   }
 }

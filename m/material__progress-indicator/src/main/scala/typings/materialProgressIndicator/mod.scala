@@ -30,26 +30,20 @@ object mod {
   }
   object MDCProgressIndicator {
     
-    @scala.inline
-    def apply(close: () => Unit, determinate: Boolean, open: () => Unit, progress: Double): MDCProgressIndicator = {
+    inline def apply(close: () => Unit, determinate: Boolean, open: () => Unit, progress: Double): MDCProgressIndicator = {
       val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), determinate = determinate.asInstanceOf[js.Any], open = js.Any.fromFunction0(open), progress = progress.asInstanceOf[js.Any])
       __obj.asInstanceOf[MDCProgressIndicator]
     }
     
-    @scala.inline
-    implicit class MDCProgressIndicatorMutableBuilder[Self <: MDCProgressIndicator] (val x: Self) extends AnyVal {
+    extension [Self <: MDCProgressIndicator](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDeterminate(value: Boolean): Self = StObject.set(x, "determinate", value.asInstanceOf[js.Any])
+      inline def setDeterminate(value: Boolean): Self = StObject.set(x, "determinate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
+      inline def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+      inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     }
   }
 }

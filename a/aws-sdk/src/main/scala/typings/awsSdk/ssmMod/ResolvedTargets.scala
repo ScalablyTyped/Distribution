@@ -18,28 +18,21 @@ trait ResolvedTargets extends StObject {
 }
 object ResolvedTargets {
   
-  @scala.inline
-  def apply(): ResolvedTargets = {
+  inline def apply(): ResolvedTargets = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResolvedTargets]
   }
   
-  @scala.inline
-  implicit class ResolvedTargetsMutableBuilder[Self <: ResolvedTargets] (val x: Self) extends AnyVal {
+  extension [Self <: ResolvedTargets](x: Self) {
     
-    @scala.inline
-    def setParameterValues(value: TargetParameterList): Self = StObject.set(x, "ParameterValues", value.asInstanceOf[js.Any])
+    inline def setParameterValues(value: TargetParameterList): Self = StObject.set(x, "ParameterValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameterValuesUndefined: Self = StObject.set(x, "ParameterValues", js.undefined)
+    inline def setParameterValuesUndefined: Self = StObject.set(x, "ParameterValues", js.undefined)
     
-    @scala.inline
-    def setParameterValuesVarargs(value: ParameterValue*): Self = StObject.set(x, "ParameterValues", js.Array(value :_*))
+    inline def setParameterValuesVarargs(value: ParameterValue*): Self = StObject.set(x, "ParameterValues", js.Array(value :_*))
     
-    @scala.inline
-    def setTruncated(value: Boolean): Self = StObject.set(x, "Truncated", value.asInstanceOf[js.Any])
+    inline def setTruncated(value: Boolean): Self = StObject.set(x, "Truncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTruncatedUndefined: Self = StObject.set(x, "Truncated", js.undefined)
+    inline def setTruncatedUndefined: Self = StObject.set(x, "Truncated", js.undefined)
   }
 }

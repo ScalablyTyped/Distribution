@@ -38,8 +38,7 @@ trait IGenericDimensionInfo extends StObject {
 }
 object IGenericDimensionInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qAndMode: Boolean,
     qApprMaxGlyphCount: Double,
     qCardinal: Double,
@@ -50,25 +49,18 @@ object IGenericDimensionInfo {
     __obj.asInstanceOf[IGenericDimensionInfo]
   }
   
-  @scala.inline
-  implicit class IGenericDimensionInfoMutableBuilder[Self <: IGenericDimensionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: IGenericDimensionInfo](x: Self) {
     
-    @scala.inline
-    def setQAndMode(value: Boolean): Self = StObject.set(x, "qAndMode", value.asInstanceOf[js.Any])
+    inline def setQAndMode(value: Boolean): Self = StObject.set(x, "qAndMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQApprMaxGlyphCount(value: Double): Self = StObject.set(x, "qApprMaxGlyphCount", value.asInstanceOf[js.Any])
+    inline def setQApprMaxGlyphCount(value: Double): Self = StObject.set(x, "qApprMaxGlyphCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQCardinal(value: Double): Self = StObject.set(x, "qCardinal", value.asInstanceOf[js.Any])
+    inline def setQCardinal(value: Double): Self = StObject.set(x, "qCardinal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQIsSemantic(value: Boolean): Self = StObject.set(x, "qIsSemantic", value.asInstanceOf[js.Any])
+    inline def setQIsSemantic(value: Boolean): Self = StObject.set(x, "qIsSemantic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQTags(value: js.Array[String]): Self = StObject.set(x, "qTags", value.asInstanceOf[js.Any])
+    inline def setQTags(value: js.Array[String]): Self = StObject.set(x, "qTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQTagsVarargs(value: String*): Self = StObject.set(x, "qTags", js.Array(value :_*))
+    inline def setQTagsVarargs(value: String*): Self = StObject.set(x, "qTags", js.Array(value :_*))
   }
 }

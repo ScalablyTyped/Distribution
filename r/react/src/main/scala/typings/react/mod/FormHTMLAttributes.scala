@@ -26,61 +26,43 @@ trait FormHTMLAttributes[T]
 }
 object FormHTMLAttributes {
   
-  @scala.inline
-  def apply[T](): FormHTMLAttributes[T] = {
+  inline def apply[T](): FormHTMLAttributes[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FormHTMLAttributes[T]]
   }
   
-  @scala.inline
-  implicit class FormHTMLAttributesMutableBuilder[Self <: FormHTMLAttributes[?], T] (val x: Self & FormHTMLAttributes[T]) extends AnyVal {
+  extension [Self <: FormHTMLAttributes[?], T](x: Self & FormHTMLAttributes[T]) {
     
-    @scala.inline
-    def setAcceptCharset(value: String): Self = StObject.set(x, "acceptCharset", value.asInstanceOf[js.Any])
+    inline def setAcceptCharset(value: String): Self = StObject.set(x, "acceptCharset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptCharsetUndefined: Self = StObject.set(x, "acceptCharset", js.undefined)
+    inline def setAcceptCharsetUndefined: Self = StObject.set(x, "acceptCharset", js.undefined)
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setAutoComplete(value: String): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
+    inline def setAutoComplete(value: String): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
+    inline def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
     
-    @scala.inline
-    def setEncType(value: String): Self = StObject.set(x, "encType", value.asInstanceOf[js.Any])
+    inline def setEncType(value: String): Self = StObject.set(x, "encType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncTypeUndefined: Self = StObject.set(x, "encType", js.undefined)
+    inline def setEncTypeUndefined: Self = StObject.set(x, "encType", js.undefined)
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNoValidate(value: Boolean): Self = StObject.set(x, "noValidate", value.asInstanceOf[js.Any])
+    inline def setNoValidate(value: Boolean): Self = StObject.set(x, "noValidate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoValidateUndefined: Self = StObject.set(x, "noValidate", js.undefined)
+    inline def setNoValidateUndefined: Self = StObject.set(x, "noValidate", js.undefined)
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

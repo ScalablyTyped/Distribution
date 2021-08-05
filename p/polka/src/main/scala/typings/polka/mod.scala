@@ -22,10 +22,8 @@ object mod {
     *
     * @see https://github.com/lukeed/polka
     */
-  @scala.inline
-  def apply(): Polka = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Polka]
-  @scala.inline
-  def apply(opts: Options): Polka = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Polka]
+  inline def apply(): Polka = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Polka]
+  inline def apply(opts: Options): Polka = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Polka]
   
   @JSImport("polka", JSImport.Namespace)
   @js.native
@@ -65,32 +63,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setOnError(value: (/* err */ Error, /* req */ Request, /* res */ ServerResponse, /* next */ Next) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction4(value))
+      inline def setOnError(value: (/* err */ Error, /* req */ Request, /* res */ ServerResponse, /* next */ Next) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
+      inline def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
-      @scala.inline
-      def setOnNoMatch(value: (/* req */ Request, /* res */ ServerResponse) => Unit): Self = StObject.set(x, "onNoMatch", js.Any.fromFunction2(value))
+      inline def setOnNoMatch(value: (/* req */ Request, /* res */ ServerResponse) => Unit): Self = StObject.set(x, "onNoMatch", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnNoMatchUndefined: Self = StObject.set(x, "onNoMatch", js.undefined)
+      inline def setOnNoMatchUndefined: Self = StObject.set(x, "onNoMatch", js.undefined)
       
-      @scala.inline
-      def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+      inline def setServer(value: Server): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+      inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
     }
   }
   

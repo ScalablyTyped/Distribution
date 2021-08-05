@@ -10,8 +10,7 @@ trait CopyObjectExceptionsUnion
      with ObjectNotInActiveTierError
 object CopyObjectExceptionsUnion {
   
-  @scala.inline
-  def apply(): CopyObjectExceptionsUnion = {
+  inline def apply(): CopyObjectExceptionsUnion = {
     val __obj = js.Dynamic.literal(name = "ObjectNotInActiveTierError")
     __obj.asInstanceOf[CopyObjectExceptionsUnion]
   }

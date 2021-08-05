@@ -18,22 +18,17 @@ trait SchemaQueryPlan extends StObject {
 }
 object SchemaQueryPlan {
   
-  @scala.inline
-  def apply(): SchemaQueryPlan = {
+  inline def apply(): SchemaQueryPlan = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaQueryPlan]
   }
   
-  @scala.inline
-  implicit class SchemaQueryPlanMutableBuilder[Self <: SchemaQueryPlan] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaQueryPlan](x: Self) {
     
-    @scala.inline
-    def setPlanNodes(value: js.Array[SchemaPlanNode]): Self = StObject.set(x, "planNodes", value.asInstanceOf[js.Any])
+    inline def setPlanNodes(value: js.Array[SchemaPlanNode]): Self = StObject.set(x, "planNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlanNodesUndefined: Self = StObject.set(x, "planNodes", js.undefined)
+    inline def setPlanNodesUndefined: Self = StObject.set(x, "planNodes", js.undefined)
     
-    @scala.inline
-    def setPlanNodesVarargs(value: SchemaPlanNode*): Self = StObject.set(x, "planNodes", js.Array(value :_*))
+    inline def setPlanNodesVarargs(value: SchemaPlanNode*): Self = StObject.set(x, "planNodes", js.Array(value :_*))
   }
 }

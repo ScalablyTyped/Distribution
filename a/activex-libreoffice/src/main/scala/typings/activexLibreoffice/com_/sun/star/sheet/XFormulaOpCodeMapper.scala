@@ -42,8 +42,7 @@ trait XFormulaOpCodeMapper extends StObject {
 }
 object XFormulaOpCodeMapper {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     OpCodeExternal: Double,
     OpCodeUnknown: Double,
     getAvailableMappings: (Double, Double) => SafeArray[FormulaOpCodeMapEntry],
@@ -53,19 +52,14 @@ object XFormulaOpCodeMapper {
     __obj.asInstanceOf[XFormulaOpCodeMapper]
   }
   
-  @scala.inline
-  implicit class XFormulaOpCodeMapperMutableBuilder[Self <: XFormulaOpCodeMapper] (val x: Self) extends AnyVal {
+  extension [Self <: XFormulaOpCodeMapper](x: Self) {
     
-    @scala.inline
-    def setGetAvailableMappings(value: (Double, Double) => SafeArray[FormulaOpCodeMapEntry]): Self = StObject.set(x, "getAvailableMappings", js.Any.fromFunction2(value))
+    inline def setGetAvailableMappings(value: (Double, Double) => SafeArray[FormulaOpCodeMapEntry]): Self = StObject.set(x, "getAvailableMappings", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetMappings(value: (SeqEquiv[String], Double) => SafeArray[FormulaToken]): Self = StObject.set(x, "getMappings", js.Any.fromFunction2(value))
+    inline def setGetMappings(value: (SeqEquiv[String], Double) => SafeArray[FormulaToken]): Self = StObject.set(x, "getMappings", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOpCodeExternal(value: Double): Self = StObject.set(x, "OpCodeExternal", value.asInstanceOf[js.Any])
+    inline def setOpCodeExternal(value: Double): Self = StObject.set(x, "OpCodeExternal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpCodeUnknown(value: Double): Self = StObject.set(x, "OpCodeUnknown", value.asInstanceOf[js.Any])
+    inline def setOpCodeUnknown(value: Double): Self = StObject.set(x, "OpCodeUnknown", value.asInstanceOf[js.Any])
   }
 }

@@ -48,64 +48,45 @@ trait TopicRule extends StObject {
 }
 object TopicRule {
   
-  @scala.inline
-  def apply(): TopicRule = {
+  inline def apply(): TopicRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TopicRule]
   }
   
-  @scala.inline
-  implicit class TopicRuleMutableBuilder[Self <: TopicRule] (val x: Self) extends AnyVal {
+  extension [Self <: TopicRule](x: Self) {
     
-    @scala.inline
-    def setActions(value: ActionList): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: ActionList): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+    inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
     
-    @scala.inline
-    def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
-    @scala.inline
-    def setAwsIotSqlVersion(value: AwsIotSqlVersion): Self = StObject.set(x, "awsIotSqlVersion", value.asInstanceOf[js.Any])
+    inline def setAwsIotSqlVersion(value: AwsIotSqlVersion): Self = StObject.set(x, "awsIotSqlVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsIotSqlVersionUndefined: Self = StObject.set(x, "awsIotSqlVersion", js.undefined)
+    inline def setAwsIotSqlVersionUndefined: Self = StObject.set(x, "awsIotSqlVersion", js.undefined)
     
-    @scala.inline
-    def setCreatedAt(value: CreatedAtDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: CreatedAtDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setErrorAction(value: Action): Self = StObject.set(x, "errorAction", value.asInstanceOf[js.Any])
+    inline def setErrorAction(value: Action): Self = StObject.set(x, "errorAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorActionUndefined: Self = StObject.set(x, "errorAction", js.undefined)
+    inline def setErrorActionUndefined: Self = StObject.set(x, "errorAction", js.undefined)
     
-    @scala.inline
-    def setRuleDisabled(value: IsDisabled): Self = StObject.set(x, "ruleDisabled", value.asInstanceOf[js.Any])
+    inline def setRuleDisabled(value: IsDisabled): Self = StObject.set(x, "ruleDisabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleDisabledUndefined: Self = StObject.set(x, "ruleDisabled", js.undefined)
+    inline def setRuleDisabledUndefined: Self = StObject.set(x, "ruleDisabled", js.undefined)
     
-    @scala.inline
-    def setRuleName(value: RuleName): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
+    inline def setRuleName(value: RuleName): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleNameUndefined: Self = StObject.set(x, "ruleName", js.undefined)
+    inline def setRuleNameUndefined: Self = StObject.set(x, "ruleName", js.undefined)
     
-    @scala.inline
-    def setSql(value: SQL): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
+    inline def setSql(value: SQL): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqlUndefined: Self = StObject.set(x, "sql", js.undefined)
+    inline def setSqlUndefined: Self = StObject.set(x, "sql", js.undefined)
   }
 }

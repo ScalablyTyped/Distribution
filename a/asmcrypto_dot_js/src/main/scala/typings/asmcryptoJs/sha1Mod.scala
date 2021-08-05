@@ -24,8 +24,7 @@ object sha1Mod {
     @JSImport("asmcrypto.js/dist_es8/hash/sha1/sha1", "Sha1.NAME")
     @js.native
     def NAME: String = js.native
-    @scala.inline
-    def NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAME")(x.asInstanceOf[js.Any])
+    inline def NAME_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NAME")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("asmcrypto.js/dist_es8/hash/sha1/sha1", "_sha1_block_size")

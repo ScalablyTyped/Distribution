@@ -12,19 +12,15 @@ trait GetContainerPropertiesOptions
 }
 object GetContainerPropertiesOptions {
   
-  @scala.inline
-  def apply(): GetContainerPropertiesOptions = {
+  inline def apply(): GetContainerPropertiesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetContainerPropertiesOptions]
   }
   
-  @scala.inline
-  implicit class GetContainerPropertiesOptionsMutableBuilder[Self <: GetContainerPropertiesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GetContainerPropertiesOptions](x: Self) {
     
-    @scala.inline
-    def setLeaseId(value: String): Self = StObject.set(x, "leaseId", value.asInstanceOf[js.Any])
+    inline def setLeaseId(value: String): Self = StObject.set(x, "leaseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeaseIdUndefined: Self = StObject.set(x, "leaseId", js.undefined)
+    inline def setLeaseIdUndefined: Self = StObject.set(x, "leaseId", js.undefined)
   }
 }

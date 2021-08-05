@@ -15,28 +15,21 @@ trait DetailedMessage extends StObject {
 }
 object DetailedMessage {
   
-  @scala.inline
-  def apply(message: String): DetailedMessage = {
+  inline def apply(message: String): DetailedMessage = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[DetailedMessage]
   }
   
-  @scala.inline
-  implicit class DetailedMessageMutableBuilder[Self <: DetailedMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DetailedMessage](x: Self) {
     
-    @scala.inline
-    def setButtons(value: StringDictionary[js.Function0[Unit]]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: StringDictionary[js.Function0[Unit]]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+    inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    @scala.inline
-    def setDetailedMessage(value: String): Self = StObject.set(x, "detailedMessage", value.asInstanceOf[js.Any])
+    inline def setDetailedMessage(value: String): Self = StObject.set(x, "detailedMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailedMessageUndefined: Self = StObject.set(x, "detailedMessage", js.undefined)
+    inline def setDetailedMessageUndefined: Self = StObject.set(x, "detailedMessage", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

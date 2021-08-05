@@ -25,9 +25,9 @@ object componentMod {
     def this(owner: O) = this()
     def this(owner: js.Symbol) = this()
     
-    var _componentOptions: js.Any = js.native
+    /* private */ var _componentOptions: js.Any = js.native
     
-    var _componentOwner: js.Any = js.native
+    /* private */ var _componentOwner: js.Any = js.native
     
     /* CompleteClass */
     override val application: Application = js.native
@@ -53,9 +53,9 @@ object componentMod {
     def this(owner: O) = this()
     def this(owner: js.Symbol) = this()
     
-    var _componentChildren: js.Any = js.native
+    /* private */ var _componentChildren: js.Any = js.native
     
-    var _defaultComponents: js.Any = js.native
+    /* private */ var _defaultComponents: js.Any = js.native
     
     def addComponent[T /* <: C */](name: String, componentClass: T): T = js.native
     def addComponent[T /* <: C */](name: String, componentClass: ComponentClass[T, O]): T = js.native
@@ -71,8 +71,7 @@ object componentMod {
     def removeComponent(name: String): js.UndefOr[C] = js.native
   }
   
-  @scala.inline
-  def Component(options: ComponentOptions): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Component")(options.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
+  inline def Component(options: ComponentOptions): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Component")(options.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
   type Component = AbstractComponent[ComponentHost]
   
   @JSImport("typedoc/dist/lib/utils/component", "ComponentEvent")
@@ -94,14 +93,12 @@ object componentMod {
     @JSImport("typedoc/dist/lib/utils/component", "ComponentEvent.ADDED")
     @js.native
     def ADDED: String = js.native
-    @scala.inline
-    def ADDED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ADDED")(x.asInstanceOf[js.Any])
+    inline def ADDED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ADDED")(x.asInstanceOf[js.Any])
     
     @JSImport("typedoc/dist/lib/utils/component", "ComponentEvent.REMOVED")
     @js.native
     def REMOVED: String = js.native
-    @scala.inline
-    def REMOVED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REMOVED")(x.asInstanceOf[js.Any])
+    inline def REMOVED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("REMOVED")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("typedoc/dist/lib/utils/component", "DUMMY_APPLICATION_OWNER")
@@ -119,17 +116,14 @@ object componentMod {
   }
   object ComponentHost {
     
-    @scala.inline
-    def apply(application: Application): ComponentHost = {
+    inline def apply(application: Application): ComponentHost = {
       val __obj = js.Dynamic.literal(application = application.asInstanceOf[js.Any])
       __obj.asInstanceOf[ComponentHost]
     }
     
-    @scala.inline
-    implicit class ComponentHostMutableBuilder[Self <: ComponentHost] (val x: Self) extends AnyVal {
+    extension [Self <: ComponentHost](x: Self) {
       
-      @scala.inline
-      def setApplication(value: Application): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
+      inline def setApplication(value: Application): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     }
   }
   
@@ -143,32 +137,24 @@ object componentMod {
   }
   object ComponentOptions {
     
-    @scala.inline
-    def apply(): ComponentOptions = {
+    inline def apply(): ComponentOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ComponentOptions]
     }
     
-    @scala.inline
-    implicit class ComponentOptionsMutableBuilder[Self <: ComponentOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ComponentOptions](x: Self) {
       
-      @scala.inline
-      def setChildClass(value: js.Function): Self = StObject.set(x, "childClass", value.asInstanceOf[js.Any])
+      inline def setChildClass(value: js.Function): Self = StObject.set(x, "childClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildClassUndefined: Self = StObject.set(x, "childClass", js.undefined)
+      inline def setChildClassUndefined: Self = StObject.set(x, "childClass", js.undefined)
       
-      @scala.inline
-      def setInternal(value: Boolean): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
+      inline def setInternal(value: Boolean): Self = StObject.set(x, "internal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInternalUndefined: Self = StObject.set(x, "internal", js.undefined)
+      inline def setInternalUndefined: Self = StObject.set(x, "internal", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
 }

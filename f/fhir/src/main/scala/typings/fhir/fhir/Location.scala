@@ -114,148 +114,101 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object Location {
   
-  @scala.inline
-  def apply(): Location = {
+  inline def apply(): Location = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Location]
   }
   
-  @scala.inline
-  implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
+  extension [Self <: Location](x: Self) {
     
-    @scala.inline
-    def setAddress(value: Address): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: Address): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setAlias(value: js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+    inline def setAlias(value: js.Array[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+    inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
     
-    @scala.inline
-    def setAliasVarargs(value: String*): Self = StObject.set(x, "alias", js.Array(value :_*))
+    inline def setAliasVarargs(value: String*): Self = StObject.set(x, "alias", js.Array(value :_*))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEndpoint(value: js.Array[Reference]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: js.Array[Reference]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
+    inline def setEndpointUndefined: Self = StObject.set(x, "endpoint", js.undefined)
     
-    @scala.inline
-    def setEndpointVarargs(value: Reference*): Self = StObject.set(x, "endpoint", js.Array(value :_*))
+    inline def setEndpointVarargs(value: Reference*): Self = StObject.set(x, "endpoint", js.Array(value :_*))
     
-    @scala.inline
-    def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: js.Array[Identifier]): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
+    inline def setIdentifierUndefined: Self = StObject.set(x, "identifier", js.undefined)
     
-    @scala.inline
-    def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value :_*))
+    inline def setIdentifierVarargs(value: Identifier*): Self = StObject.set(x, "identifier", js.Array(value :_*))
     
-    @scala.inline
-    def setManagingOrganization(value: Reference): Self = StObject.set(x, "managingOrganization", value.asInstanceOf[js.Any])
+    inline def setManagingOrganization(value: Reference): Self = StObject.set(x, "managingOrganization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagingOrganizationUndefined: Self = StObject.set(x, "managingOrganization", js.undefined)
+    inline def setManagingOrganizationUndefined: Self = StObject.set(x, "managingOrganization", js.undefined)
     
-    @scala.inline
-    def setMode(value: code): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: code): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOperationalStatus(value: Coding): Self = StObject.set(x, "operationalStatus", value.asInstanceOf[js.Any])
+    inline def setOperationalStatus(value: Coding): Self = StObject.set(x, "operationalStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationalStatusUndefined: Self = StObject.set(x, "operationalStatus", js.undefined)
+    inline def setOperationalStatusUndefined: Self = StObject.set(x, "operationalStatus", js.undefined)
     
-    @scala.inline
-    def setPartOf(value: Reference): Self = StObject.set(x, "partOf", value.asInstanceOf[js.Any])
+    inline def setPartOf(value: Reference): Self = StObject.set(x, "partOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartOfUndefined: Self = StObject.set(x, "partOf", js.undefined)
+    inline def setPartOfUndefined: Self = StObject.set(x, "partOf", js.undefined)
     
-    @scala.inline
-    def setPhysicalType(value: CodeableConcept): Self = StObject.set(x, "physicalType", value.asInstanceOf[js.Any])
+    inline def setPhysicalType(value: CodeableConcept): Self = StObject.set(x, "physicalType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhysicalTypeUndefined: Self = StObject.set(x, "physicalType", js.undefined)
+    inline def setPhysicalTypeUndefined: Self = StObject.set(x, "physicalType", js.undefined)
     
-    @scala.inline
-    def setPosition(value: LocationPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: LocationPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: code): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setTelecom(value: js.Array[ContactPoint]): Self = StObject.set(x, "telecom", value.asInstanceOf[js.Any])
+    inline def setTelecom(value: js.Array[ContactPoint]): Self = StObject.set(x, "telecom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTelecomUndefined: Self = StObject.set(x, "telecom", js.undefined)
+    inline def setTelecomUndefined: Self = StObject.set(x, "telecom", js.undefined)
     
-    @scala.inline
-    def setTelecomVarargs(value: ContactPoint*): Self = StObject.set(x, "telecom", js.Array(value :_*))
+    inline def setTelecomVarargs(value: ContactPoint*): Self = StObject.set(x, "telecom", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: CodeableConcept): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def set_alias(value: js.Array[Element]): Self = StObject.set(x, "_alias", value.asInstanceOf[js.Any])
+    inline def set_alias(value: js.Array[Element]): Self = StObject.set(x, "_alias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_aliasUndefined: Self = StObject.set(x, "_alias", js.undefined)
+    inline def set_aliasUndefined: Self = StObject.set(x, "_alias", js.undefined)
     
-    @scala.inline
-    def set_aliasVarargs(value: Element*): Self = StObject.set(x, "_alias", js.Array(value :_*))
+    inline def set_aliasVarargs(value: Element*): Self = StObject.set(x, "_alias", js.Array(value :_*))
     
-    @scala.inline
-    def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
+    inline def set_description(value: Element): Self = StObject.set(x, "_description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
+    inline def set_descriptionUndefined: Self = StObject.set(x, "_description", js.undefined)
     
-    @scala.inline
-    def set_mode(value: Element): Self = StObject.set(x, "_mode", value.asInstanceOf[js.Any])
+    inline def set_mode(value: Element): Self = StObject.set(x, "_mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_modeUndefined: Self = StObject.set(x, "_mode", js.undefined)
+    inline def set_modeUndefined: Self = StObject.set(x, "_mode", js.undefined)
     
-    @scala.inline
-    def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
+    inline def set_name(value: Element): Self = StObject.set(x, "_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
+    inline def set_nameUndefined: Self = StObject.set(x, "_name", js.undefined)
     
-    @scala.inline
-    def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
+    inline def set_status(value: Element): Self = StObject.set(x, "_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
+    inline def set_statusUndefined: Self = StObject.set(x, "_status", js.undefined)
   }
 }

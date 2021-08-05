@@ -18,8 +18,7 @@ trait Links extends StObject {
 }
 object Links {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     all: scala.Double,
     fields: scala.Double,
     links: scala.Double,
@@ -30,22 +29,16 @@ object Links {
     __obj.asInstanceOf[Links]
   }
   
-  @scala.inline
-  implicit class LinksMutableBuilder[Self <: Links] (val x: Self) extends AnyVal {
+  extension [Self <: Links](x: Self) {
     
-    @scala.inline
-    def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFields(value: scala.Double): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: scala.Double): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinks(value: scala.Double): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: scala.Double): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelations(value: scala.Double): Self = StObject.set(x, "relations", value.asInstanceOf[js.Any])
+    inline def setRelations(value: scala.Double): Self = StObject.set(x, "relations", value.asInstanceOf[js.Any])
   }
 }

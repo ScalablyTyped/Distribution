@@ -10,16 +10,13 @@ trait LocationsResource extends StObject {
 }
 object LocationsResource {
   
-  @scala.inline
-  def apply(workloadIdentityPools: WorkloadIdentityPoolsResource): LocationsResource = {
+  inline def apply(workloadIdentityPools: WorkloadIdentityPoolsResource): LocationsResource = {
     val __obj = js.Dynamic.literal(workloadIdentityPools = workloadIdentityPools.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationsResource]
   }
   
-  @scala.inline
-  implicit class LocationsResourceMutableBuilder[Self <: LocationsResource] (val x: Self) extends AnyVal {
+  extension [Self <: LocationsResource](x: Self) {
     
-    @scala.inline
-    def setWorkloadIdentityPools(value: WorkloadIdentityPoolsResource): Self = StObject.set(x, "workloadIdentityPools", value.asInstanceOf[js.Any])
+    inline def setWorkloadIdentityPools(value: WorkloadIdentityPoolsResource): Self = StObject.set(x, "workloadIdentityPools", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait GetAccountSettingsRequest extends StObject {
 }
 object GetAccountSettingsRequest {
   
-  @scala.inline
-  def apply(AccountId: NonEmptyString): GetAccountSettingsRequest = {
+  inline def apply(AccountId: NonEmptyString): GetAccountSettingsRequest = {
     val __obj = js.Dynamic.literal(AccountId = AccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAccountSettingsRequest]
   }
   
-  @scala.inline
-  implicit class GetAccountSettingsRequestMutableBuilder[Self <: GetAccountSettingsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetAccountSettingsRequest](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
   }
 }

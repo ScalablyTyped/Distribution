@@ -10,16 +10,13 @@ trait Update extends StObject {
 }
 object Update {
   
-  @scala.inline
-  def apply(update: typings.vegaTypings.onEventsMod.Update): Update = {
+  inline def apply(update: typings.vegaTypings.onEventsMod.Update): Update = {
     val __obj = js.Dynamic.literal(update = update.asInstanceOf[js.Any])
     __obj.asInstanceOf[Update]
   }
   
-  @scala.inline
-  implicit class UpdateMutableBuilder[Self <: Update] (val x: Self) extends AnyVal {
+  extension [Self <: Update](x: Self) {
     
-    @scala.inline
-    def setUpdate(value: typings.vegaTypings.onEventsMod.Update): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: typings.vegaTypings.onEventsMod.Update): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
   }
 }

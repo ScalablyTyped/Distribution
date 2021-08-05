@@ -124,163 +124,111 @@ trait IAssociation
 }
 object IAssociation {
   
-  @scala.inline
-  def apply(): IAssociation = {
+  inline def apply(): IAssociation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IAssociation]
   }
   
-  @scala.inline
-  implicit class IAssociationMutableBuilder[Self <: IAssociation] (val x: Self) extends AnyVal {
+  extension [Self <: IAssociation](x: Self) {
     
-    @scala.inline
-    def setAssociatedModel(value: String): Self = StObject.set(x, "associatedModel", value.asInstanceOf[js.Any])
+    inline def setAssociatedModel(value: String): Self = StObject.set(x, "associatedModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociatedModelUndefined: Self = StObject.set(x, "associatedModel", js.undefined)
+    inline def setAssociatedModelUndefined: Self = StObject.set(x, "associatedModel", js.undefined)
     
-    @scala.inline
-    def setAssociatedName(value: String): Self = StObject.set(x, "associatedName", value.asInstanceOf[js.Any])
+    inline def setAssociatedName(value: String): Self = StObject.set(x, "associatedName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociatedNameUndefined: Self = StObject.set(x, "associatedName", js.undefined)
+    inline def setAssociatedNameUndefined: Self = StObject.set(x, "associatedName", js.undefined)
     
-    @scala.inline
-    def setAssociationKey(value: String): Self = StObject.set(x, "associationKey", value.asInstanceOf[js.Any])
+    inline def setAssociationKey(value: String): Self = StObject.set(x, "associationKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationKeyUndefined: Self = StObject.set(x, "associationKey", js.undefined)
+    inline def setAssociationKeyUndefined: Self = StObject.set(x, "associationKey", js.undefined)
     
-    @scala.inline
-    def setGetAssociatedModel(value: () => String): Self = StObject.set(x, "getAssociatedModel", js.Any.fromFunction0(value))
+    inline def setGetAssociatedModel(value: () => String): Self = StObject.set(x, "getAssociatedModel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAssociatedModelUndefined: Self = StObject.set(x, "getAssociatedModel", js.undefined)
+    inline def setGetAssociatedModelUndefined: Self = StObject.set(x, "getAssociatedModel", js.undefined)
     
-    @scala.inline
-    def setGetAssociatedName(value: () => String): Self = StObject.set(x, "getAssociatedName", js.Any.fromFunction0(value))
+    inline def setGetAssociatedName(value: () => String): Self = StObject.set(x, "getAssociatedName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAssociatedNameUndefined: Self = StObject.set(x, "getAssociatedName", js.undefined)
+    inline def setGetAssociatedNameUndefined: Self = StObject.set(x, "getAssociatedName", js.undefined)
     
-    @scala.inline
-    def setGetAssociationKey(value: () => String): Self = StObject.set(x, "getAssociationKey", js.Any.fromFunction0(value))
+    inline def setGetAssociationKey(value: () => String): Self = StObject.set(x, "getAssociationKey", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAssociationKeyUndefined: Self = StObject.set(x, "getAssociationKey", js.undefined)
+    inline def setGetAssociationKeyUndefined: Self = StObject.set(x, "getAssociationKey", js.undefined)
     
-    @scala.inline
-    def setGetName(value: () => js.Any): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => js.Any): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNameUndefined: Self = StObject.set(x, "getName", js.undefined)
+    inline def setGetNameUndefined: Self = StObject.set(x, "getName", js.undefined)
     
-    @scala.inline
-    def setGetOwnerModel(value: () => js.Any): Self = StObject.set(x, "getOwnerModel", js.Any.fromFunction0(value))
+    inline def setGetOwnerModel(value: () => js.Any): Self = StObject.set(x, "getOwnerModel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOwnerModelUndefined: Self = StObject.set(x, "getOwnerModel", js.undefined)
+    inline def setGetOwnerModelUndefined: Self = StObject.set(x, "getOwnerModel", js.undefined)
     
-    @scala.inline
-    def setGetOwnerName(value: () => String): Self = StObject.set(x, "getOwnerName", js.Any.fromFunction0(value))
+    inline def setGetOwnerName(value: () => String): Self = StObject.set(x, "getOwnerName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOwnerNameUndefined: Self = StObject.set(x, "getOwnerName", js.undefined)
+    inline def setGetOwnerNameUndefined: Self = StObject.set(x, "getOwnerName", js.undefined)
     
-    @scala.inline
-    def setGetPrimaryKey(value: () => String): Self = StObject.set(x, "getPrimaryKey", js.Any.fromFunction0(value))
+    inline def setGetPrimaryKey(value: () => String): Self = StObject.set(x, "getPrimaryKey", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPrimaryKeyUndefined: Self = StObject.set(x, "getPrimaryKey", js.undefined)
+    inline def setGetPrimaryKeyUndefined: Self = StObject.set(x, "getPrimaryKey", js.undefined)
     
-    @scala.inline
-    def setGetReader(value: () => typings.senchaTouch.Ext.data.reader.IReader): Self = StObject.set(x, "getReader", js.Any.fromFunction0(value))
+    inline def setGetReader(value: () => typings.senchaTouch.Ext.data.reader.IReader): Self = StObject.set(x, "getReader", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetReaderUndefined: Self = StObject.set(x, "getReader", js.undefined)
+    inline def setGetReaderUndefined: Self = StObject.set(x, "getReader", js.undefined)
     
-    @scala.inline
-    def setGetType(value: () => String): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+    inline def setGetType(value: () => String): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTypeUndefined: Self = StObject.set(x, "getType", js.undefined)
+    inline def setGetTypeUndefined: Self = StObject.set(x, "getType", js.undefined)
     
-    @scala.inline
-    def setOwnerModel(value: js.Any): Self = StObject.set(x, "ownerModel", value.asInstanceOf[js.Any])
+    inline def setOwnerModel(value: js.Any): Self = StObject.set(x, "ownerModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerModelUndefined: Self = StObject.set(x, "ownerModel", js.undefined)
+    inline def setOwnerModelUndefined: Self = StObject.set(x, "ownerModel", js.undefined)
     
-    @scala.inline
-    def setPrimaryKey(value: String): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
+    inline def setPrimaryKey(value: String): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
+    inline def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
     
-    @scala.inline
-    def setReader(value: typings.senchaTouch.Ext.data.reader.IReader): Self = StObject.set(x, "reader", value.asInstanceOf[js.Any])
+    inline def setReader(value: typings.senchaTouch.Ext.data.reader.IReader): Self = StObject.set(x, "reader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReaderUndefined: Self = StObject.set(x, "reader", js.undefined)
+    inline def setReaderUndefined: Self = StObject.set(x, "reader", js.undefined)
     
-    @scala.inline
-    def setSetAssociatedModel(value: /* associatedModel */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setAssociatedModel", js.Any.fromFunction1(value))
+    inline def setSetAssociatedModel(value: /* associatedModel */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setAssociatedModel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAssociatedModelUndefined: Self = StObject.set(x, "setAssociatedModel", js.undefined)
+    inline def setSetAssociatedModelUndefined: Self = StObject.set(x, "setAssociatedModel", js.undefined)
     
-    @scala.inline
-    def setSetAssociatedName(value: /* associatedName */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setAssociatedName", js.Any.fromFunction1(value))
+    inline def setSetAssociatedName(value: /* associatedName */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setAssociatedName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAssociatedNameUndefined: Self = StObject.set(x, "setAssociatedName", js.undefined)
+    inline def setSetAssociatedNameUndefined: Self = StObject.set(x, "setAssociatedName", js.undefined)
     
-    @scala.inline
-    def setSetAssociationKey(value: /* associationKey */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setAssociationKey", js.Any.fromFunction1(value))
+    inline def setSetAssociationKey(value: /* associationKey */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setAssociationKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAssociationKeyUndefined: Self = StObject.set(x, "setAssociationKey", js.undefined)
+    inline def setSetAssociationKeyUndefined: Self = StObject.set(x, "setAssociationKey", js.undefined)
     
-    @scala.inline
-    def setSetName(value: /* name */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
+    inline def setSetName(value: /* name */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetNameUndefined: Self = StObject.set(x, "setName", js.undefined)
+    inline def setSetNameUndefined: Self = StObject.set(x, "setName", js.undefined)
     
-    @scala.inline
-    def setSetOwnerModel(value: /* ownerModel */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setOwnerModel", js.Any.fromFunction1(value))
+    inline def setSetOwnerModel(value: /* ownerModel */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setOwnerModel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOwnerModelUndefined: Self = StObject.set(x, "setOwnerModel", js.undefined)
+    inline def setSetOwnerModelUndefined: Self = StObject.set(x, "setOwnerModel", js.undefined)
     
-    @scala.inline
-    def setSetOwnerName(value: /* ownerName */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setOwnerName", js.Any.fromFunction1(value))
+    inline def setSetOwnerName(value: /* ownerName */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setOwnerName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOwnerNameUndefined: Self = StObject.set(x, "setOwnerName", js.undefined)
+    inline def setSetOwnerNameUndefined: Self = StObject.set(x, "setOwnerName", js.undefined)
     
-    @scala.inline
-    def setSetPrimaryKey(value: /* primaryKey */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setPrimaryKey", js.Any.fromFunction1(value))
+    inline def setSetPrimaryKey(value: /* primaryKey */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setPrimaryKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPrimaryKeyUndefined: Self = StObject.set(x, "setPrimaryKey", js.undefined)
+    inline def setSetPrimaryKeyUndefined: Self = StObject.set(x, "setPrimaryKey", js.undefined)
     
-    @scala.inline
-    def setSetReader(value: /* reader */ js.UndefOr[typings.senchaTouch.Ext.data.reader.IReader] => Unit): Self = StObject.set(x, "setReader", js.Any.fromFunction1(value))
+    inline def setSetReader(value: /* reader */ js.UndefOr[typings.senchaTouch.Ext.data.reader.IReader] => Unit): Self = StObject.set(x, "setReader", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetReaderUndefined: Self = StObject.set(x, "setReader", js.undefined)
+    inline def setSetReaderUndefined: Self = StObject.set(x, "setReader", js.undefined)
     
-    @scala.inline
-    def setSetType(value: /* type */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setType", js.Any.fromFunction1(value))
+    inline def setSetType(value: /* type */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetTypeUndefined: Self = StObject.set(x, "setType", js.undefined)
+    inline def setSetTypeUndefined: Self = StObject.set(x, "setType", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

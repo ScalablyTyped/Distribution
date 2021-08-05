@@ -12,19 +12,15 @@ trait Options extends StObject {
 }
 object Options {
   
-  @scala.inline
-  def apply(clientId: String, domain: String): Options = {
+  inline def apply(clientId: String, domain: String): Options = {
     val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], domain = domain.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
   
-  @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+  extension [Self <: Options](x: Self) {
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
   }
 }

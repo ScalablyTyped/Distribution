@@ -35,76 +35,53 @@ trait BaseUserNaturalData extends StObject {
 }
 object BaseUserNaturalData {
   
-  @scala.inline
-  def apply(): BaseUserNaturalData = {
+  inline def apply(): BaseUserNaturalData = {
     val __obj = js.Dynamic.literal(PersonType = "NATURAL")
     __obj.asInstanceOf[BaseUserNaturalData]
   }
   
-  @scala.inline
-  implicit class BaseUserNaturalDataMutableBuilder[Self <: BaseUserNaturalData] (val x: Self) extends AnyVal {
+  extension [Self <: BaseUserNaturalData](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String | AddressData): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String | AddressData): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "Address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "Address", js.undefined)
     
-    @scala.inline
-    def setBirthday(value: Timestamp): Self = StObject.set(x, "Birthday", value.asInstanceOf[js.Any])
+    inline def setBirthday(value: Timestamp): Self = StObject.set(x, "Birthday", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBirthdayUndefined: Self = StObject.set(x, "Birthday", js.undefined)
+    inline def setBirthdayUndefined: Self = StObject.set(x, "Birthday", js.undefined)
     
-    @scala.inline
-    def setCountryOfResidence(value: CountryISO): Self = StObject.set(x, "CountryOfResidence", value.asInstanceOf[js.Any])
+    inline def setCountryOfResidence(value: CountryISO): Self = StObject.set(x, "CountryOfResidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryOfResidenceUndefined: Self = StObject.set(x, "CountryOfResidence", js.undefined)
+    inline def setCountryOfResidenceUndefined: Self = StObject.set(x, "CountryOfResidence", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "Email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "Email", js.undefined)
     
-    @scala.inline
-    def setFirstName(value: String): Self = StObject.set(x, "FirstName", value.asInstanceOf[js.Any])
+    inline def setFirstName(value: String): Self = StObject.set(x, "FirstName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstNameUndefined: Self = StObject.set(x, "FirstName", js.undefined)
+    inline def setFirstNameUndefined: Self = StObject.set(x, "FirstName", js.undefined)
     
-    @scala.inline
-    def setIncomeRange(value: IncomeRange): Self = StObject.set(x, "IncomeRange", value.asInstanceOf[js.Any])
+    inline def setIncomeRange(value: IncomeRange): Self = StObject.set(x, "IncomeRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncomeRangeUndefined: Self = StObject.set(x, "IncomeRange", js.undefined)
+    inline def setIncomeRangeUndefined: Self = StObject.set(x, "IncomeRange", js.undefined)
     
-    @scala.inline
-    def setLastName(value: String): Self = StObject.set(x, "LastName", value.asInstanceOf[js.Any])
+    inline def setLastName(value: String): Self = StObject.set(x, "LastName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastNameUndefined: Self = StObject.set(x, "LastName", js.undefined)
+    inline def setLastNameUndefined: Self = StObject.set(x, "LastName", js.undefined)
     
-    @scala.inline
-    def setNationality(value: CountryISO): Self = StObject.set(x, "Nationality", value.asInstanceOf[js.Any])
+    inline def setNationality(value: CountryISO): Self = StObject.set(x, "Nationality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNationalityUndefined: Self = StObject.set(x, "Nationality", js.undefined)
+    inline def setNationalityUndefined: Self = StObject.set(x, "Nationality", js.undefined)
     
-    @scala.inline
-    def setOccupation(value: String): Self = StObject.set(x, "Occupation", value.asInstanceOf[js.Any])
+    inline def setOccupation(value: String): Self = StObject.set(x, "Occupation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOccupationUndefined: Self = StObject.set(x, "Occupation", js.undefined)
+    inline def setOccupationUndefined: Self = StObject.set(x, "Occupation", js.undefined)
     
-    @scala.inline
-    def setPersonType(value: NATURAL): Self = StObject.set(x, "PersonType", value.asInstanceOf[js.Any])
+    inline def setPersonType(value: NATURAL): Self = StObject.set(x, "PersonType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
   }
 }

@@ -18,19 +18,15 @@ trait AssociateBudgetWithResourceInput extends StObject {
 }
 object AssociateBudgetWithResourceInput {
   
-  @scala.inline
-  def apply(BudgetName: BudgetName, ResourceId: Id): AssociateBudgetWithResourceInput = {
+  inline def apply(BudgetName: BudgetName, ResourceId: Id): AssociateBudgetWithResourceInput = {
     val __obj = js.Dynamic.literal(BudgetName = BudgetName.asInstanceOf[js.Any], ResourceId = ResourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateBudgetWithResourceInput]
   }
   
-  @scala.inline
-  implicit class AssociateBudgetWithResourceInputMutableBuilder[Self <: AssociateBudgetWithResourceInput] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateBudgetWithResourceInput](x: Self) {
     
-    @scala.inline
-    def setBudgetName(value: BudgetName): Self = StObject.set(x, "BudgetName", value.asInstanceOf[js.Any])
+    inline def setBudgetName(value: BudgetName): Self = StObject.set(x, "BudgetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceId(value: Id): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: Id): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
   }
 }

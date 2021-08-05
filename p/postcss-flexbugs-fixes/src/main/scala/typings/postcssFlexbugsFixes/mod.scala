@@ -31,32 +31,24 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBug4(value: Boolean): Self = StObject.set(x, "bug4", value.asInstanceOf[js.Any])
+      inline def setBug4(value: Boolean): Self = StObject.set(x, "bug4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBug4Undefined: Self = StObject.set(x, "bug4", js.undefined)
+      inline def setBug4Undefined: Self = StObject.set(x, "bug4", js.undefined)
       
-      @scala.inline
-      def setBug6(value: Boolean): Self = StObject.set(x, "bug6", value.asInstanceOf[js.Any])
+      inline def setBug6(value: Boolean): Self = StObject.set(x, "bug6", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBug6Undefined: Self = StObject.set(x, "bug6", js.undefined)
+      inline def setBug6Undefined: Self = StObject.set(x, "bug6", js.undefined)
       
-      @scala.inline
-      def setBug81a(value: Boolean): Self = StObject.set(x, "bug81a", value.asInstanceOf[js.Any])
+      inline def setBug81a(value: Boolean): Self = StObject.set(x, "bug81a", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBug81aUndefined: Self = StObject.set(x, "bug81a", js.undefined)
+      inline def setBug81aUndefined: Self = StObject.set(x, "bug81a", js.undefined)
     }
   }
   

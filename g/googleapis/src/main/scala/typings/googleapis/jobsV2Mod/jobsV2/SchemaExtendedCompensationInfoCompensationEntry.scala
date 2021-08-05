@@ -55,55 +55,39 @@ trait SchemaExtendedCompensationInfoCompensationEntry extends StObject {
 }
 object SchemaExtendedCompensationInfoCompensationEntry {
   
-  @scala.inline
-  def apply(): SchemaExtendedCompensationInfoCompensationEntry = {
+  inline def apply(): SchemaExtendedCompensationInfoCompensationEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaExtendedCompensationInfoCompensationEntry]
   }
   
-  @scala.inline
-  implicit class SchemaExtendedCompensationInfoCompensationEntryMutableBuilder[Self <: SchemaExtendedCompensationInfoCompensationEntry] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaExtendedCompensationInfoCompensationEntry](x: Self) {
     
-    @scala.inline
-    def setAmount(value: SchemaExtendedCompensationInfoDecimal): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: SchemaExtendedCompensationInfoDecimal): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
+    inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setExpectedUnitsPerYear(value: SchemaExtendedCompensationInfoDecimal): Self = StObject.set(x, "expectedUnitsPerYear", value.asInstanceOf[js.Any])
+    inline def setExpectedUnitsPerYear(value: SchemaExtendedCompensationInfoDecimal): Self = StObject.set(x, "expectedUnitsPerYear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedUnitsPerYearUndefined: Self = StObject.set(x, "expectedUnitsPerYear", js.undefined)
+    inline def setExpectedUnitsPerYearUndefined: Self = StObject.set(x, "expectedUnitsPerYear", js.undefined)
     
-    @scala.inline
-    def setRange(value: SchemaExtendedCompensationInfoCompensationRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: SchemaExtendedCompensationInfoCompensationRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
-    @scala.inline
-    def setUnspecified(value: Boolean): Self = StObject.set(x, "unspecified", value.asInstanceOf[js.Any])
+    inline def setUnspecified(value: Boolean): Self = StObject.set(x, "unspecified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnspecifiedUndefined: Self = StObject.set(x, "unspecified", js.undefined)
+    inline def setUnspecifiedUndefined: Self = StObject.set(x, "unspecified", js.undefined)
   }
 }

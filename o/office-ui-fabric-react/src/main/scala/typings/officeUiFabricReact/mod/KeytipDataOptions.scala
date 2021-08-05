@@ -10,8 +10,7 @@ trait KeytipDataOptions
      with IKeytipDataProps
 object KeytipDataOptions {
   
-  @scala.inline
-  def apply(): KeytipDataOptions = {
+  inline def apply(): KeytipDataOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KeytipDataOptions]
   }

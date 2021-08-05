@@ -12,20 +12,16 @@ trait ISubscriptionFilter extends StObject {
 }
 object ISubscriptionFilter {
   
-  @scala.inline
-  def apply(eventType: String, `type`: String): ISubscriptionFilter = {
+  inline def apply(eventType: String, `type`: String): ISubscriptionFilter = {
     val __obj = js.Dynamic.literal(eventType = eventType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISubscriptionFilter]
   }
   
-  @scala.inline
-  implicit class ISubscriptionFilterMutableBuilder[Self <: ISubscriptionFilter] (val x: Self) extends AnyVal {
+  extension [Self <: ISubscriptionFilter](x: Self) {
     
-    @scala.inline
-    def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

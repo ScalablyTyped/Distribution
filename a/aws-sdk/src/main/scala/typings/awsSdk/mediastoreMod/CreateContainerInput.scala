@@ -18,25 +18,19 @@ trait CreateContainerInput extends StObject {
 }
 object CreateContainerInput {
   
-  @scala.inline
-  def apply(ContainerName: ContainerName): CreateContainerInput = {
+  inline def apply(ContainerName: ContainerName): CreateContainerInput = {
     val __obj = js.Dynamic.literal(ContainerName = ContainerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateContainerInput]
   }
   
-  @scala.inline
-  implicit class CreateContainerInputMutableBuilder[Self <: CreateContainerInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateContainerInput](x: Self) {
     
-    @scala.inline
-    def setContainerName(value: ContainerName): Self = StObject.set(x, "ContainerName", value.asInstanceOf[js.Any])
+    inline def setContainerName(value: ContainerName): Self = StObject.set(x, "ContainerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

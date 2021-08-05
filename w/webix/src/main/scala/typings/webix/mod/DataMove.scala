@@ -36,6 +36,5 @@ trait DataMove extends StObject {
 }
 object DataMove {
   
-  @scala.inline
-  def apply: DataMove = ^.asInstanceOf[js.Dynamic].selectDynamic("DataMove").asInstanceOf[DataMove]
+  inline def apply: DataMove = ^.asInstanceOf[js.Dynamic].selectDynamic("DataMove").asInstanceOf[DataMove]
 }

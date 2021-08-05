@@ -14,19 +14,15 @@ trait GetRemarketingTagResponse extends StObject {
 }
 object GetRemarketingTagResponse {
   
-  @scala.inline
-  def apply(): GetRemarketingTagResponse = {
+  inline def apply(): GetRemarketingTagResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetRemarketingTagResponse]
   }
   
-  @scala.inline
-  implicit class GetRemarketingTagResponseMutableBuilder[Self <: GetRemarketingTagResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetRemarketingTagResponse](x: Self) {
     
-    @scala.inline
-    def setSnippet(value: String): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
+    inline def setSnippet(value: String): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
+    inline def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
   }
 }

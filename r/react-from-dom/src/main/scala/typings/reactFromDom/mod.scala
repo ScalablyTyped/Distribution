@@ -12,24 +12,16 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(input: String): ReactNode | Node = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[ReactNode | Node]
-  @scala.inline
-  def default(input: String, options: Options): ReactNode | Node = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactNode | Node]
-  @scala.inline
-  def default(input: Node): ReactNode | Node = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[ReactNode | Node]
-  @scala.inline
-  def default(input: Node, options: Options): ReactNode | Node = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactNode | Node]
+  inline def default(input: String): ReactNode | Node = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[ReactNode | Node]
+  inline def default(input: String, options: Options): ReactNode | Node = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactNode | Node]
+  inline def default(input: Node): ReactNode | Node = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[ReactNode | Node]
+  inline def default(input: Node, options: Options): ReactNode | Node = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactNode | Node]
   
-  @scala.inline
-  def convertFromNode(input: Node): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("convertFromNode")(input.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
-  @scala.inline
-  def convertFromNode(input: Node, options: Options): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("convertFromNode")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  inline def convertFromNode(input: Node): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("convertFromNode")(input.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  inline def convertFromNode(input: Node, options: Options): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("convertFromNode")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
   
-  @scala.inline
-  def convertFromString(input: String): ReactNode | Node = ^.asInstanceOf[js.Dynamic].applyDynamic("convertFromString")(input.asInstanceOf[js.Any]).asInstanceOf[ReactNode | Node]
-  @scala.inline
-  def convertFromString(input: String, options: Options): ReactNode | Node = (^.asInstanceOf[js.Dynamic].applyDynamic("convertFromString")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactNode | Node]
+  inline def convertFromString(input: String): ReactNode | Node = ^.asInstanceOf[js.Dynamic].applyDynamic("convertFromString")(input.asInstanceOf[js.Any]).asInstanceOf[ReactNode | Node]
+  inline def convertFromString(input: String, options: Options): ReactNode | Node = (^.asInstanceOf[js.Dynamic].applyDynamic("convertFromString")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactNode | Node]
   
   trait Action extends StObject {
     
@@ -41,29 +33,22 @@ object mod {
   }
   object Action {
     
-    @scala.inline
-    def apply(condition: (Node, String, Double) => Boolean): Action = {
+    inline def apply(condition: (Node, String, Double) => Boolean): Action = {
       val __obj = js.Dynamic.literal(condition = js.Any.fromFunction3(condition))
       __obj.asInstanceOf[Action]
     }
     
-    @scala.inline
-    implicit class ActionMutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
+    extension [Self <: Action](x: Self) {
       
-      @scala.inline
-      def setCondition(value: (Node, String, Double) => Boolean): Self = StObject.set(x, "condition", js.Any.fromFunction3(value))
+      inline def setCondition(value: (Node, String, Double) => Boolean): Self = StObject.set(x, "condition", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPost(value: (/* node */ Node, /* key */ String, /* level */ Double) => ReactNode): Self = StObject.set(x, "post", js.Any.fromFunction3(value))
+      inline def setPost(value: (/* node */ Node, /* key */ String, /* level */ Double) => ReactNode): Self = StObject.set(x, "post", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
+      inline def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
       
-      @scala.inline
-      def setPre(value: (/* node */ Node, /* key */ String, /* level */ Double) => Node): Self = StObject.set(x, "pre", js.Any.fromFunction3(value))
+      inline def setPre(value: (/* node */ Node, /* key */ String, /* level */ Double) => Node): Self = StObject.set(x, "pre", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
+      inline def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
     }
   }
   
@@ -83,53 +68,38 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setActions(value: js.Array[Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+      inline def setActions(value: js.Array[Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
+      inline def setActionsUndefined: Self = StObject.set(x, "actions", js.undefined)
       
-      @scala.inline
-      def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
+      inline def setActionsVarargs(value: Action*): Self = StObject.set(x, "actions", js.Array(value :_*))
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setNodeOnly(value: Boolean): Self = StObject.set(x, "nodeOnly", value.asInstanceOf[js.Any])
+      inline def setNodeOnly(value: Boolean): Self = StObject.set(x, "nodeOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeOnlyUndefined: Self = StObject.set(x, "nodeOnly", js.undefined)
+      inline def setNodeOnlyUndefined: Self = StObject.set(x, "nodeOnly", js.undefined)
       
-      @scala.inline
-      def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+      inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

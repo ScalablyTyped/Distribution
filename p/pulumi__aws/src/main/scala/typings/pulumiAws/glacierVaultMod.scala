@@ -75,21 +75,16 @@ object glacierVaultMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Vault = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Vault]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Vault = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Vault]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: VaultState): Vault = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Vault]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: VaultState, opts: CustomResourceOptions): Vault = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Vault]
+    inline def get(name: String, id: Input[ID]): Vault = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Vault]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Vault = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Vault]
+    inline def get(name: String, id: Input[ID], state: VaultState): Vault = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Vault]
+    inline def get(name: String, id: Input[ID], state: VaultState, opts: CustomResourceOptions): Vault = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Vault]
     
     /**
       * Returns true if the given object is an instance of Vault.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glacier/vault.Vault */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glacier/vault.Vault */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glacier/vault.Vault */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glacier/vault.Vault */ Boolean]
   }
   
   trait VaultArgs extends StObject {
@@ -117,41 +112,30 @@ object glacierVaultMod {
   }
   object VaultArgs {
     
-    @scala.inline
-    def apply(): VaultArgs = {
+    inline def apply(): VaultArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VaultArgs]
     }
     
-    @scala.inline
-    implicit class VaultArgsMutableBuilder[Self <: VaultArgs] (val x: Self) extends AnyVal {
+    extension [Self <: VaultArgs](x: Self) {
       
-      @scala.inline
-      def setAccessPolicy(value: Input[String]): Self = StObject.set(x, "accessPolicy", value.asInstanceOf[js.Any])
+      inline def setAccessPolicy(value: Input[String]): Self = StObject.set(x, "accessPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessPolicyUndefined: Self = StObject.set(x, "accessPolicy", js.undefined)
+      inline def setAccessPolicyUndefined: Self = StObject.set(x, "accessPolicy", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNotifications(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glacier.VaultNotification]]]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
+      inline def setNotifications(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glacier.VaultNotification]]]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
+      inline def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
       
-      @scala.inline
-      def setNotificationsVarargs(value: Input[typings.pulumiAws.inputMod.glacier.VaultNotification]*): Self = StObject.set(x, "notifications", js.Array(value :_*))
+      inline def setNotificationsVarargs(value: Input[typings.pulumiAws.inputMod.glacier.VaultNotification]*): Self = StObject.set(x, "notifications", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -190,53 +174,38 @@ object glacierVaultMod {
   }
   object VaultState {
     
-    @scala.inline
-    def apply(): VaultState = {
+    inline def apply(): VaultState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VaultState]
     }
     
-    @scala.inline
-    implicit class VaultStateMutableBuilder[Self <: VaultState] (val x: Self) extends AnyVal {
+    extension [Self <: VaultState](x: Self) {
       
-      @scala.inline
-      def setAccessPolicy(value: Input[String]): Self = StObject.set(x, "accessPolicy", value.asInstanceOf[js.Any])
+      inline def setAccessPolicy(value: Input[String]): Self = StObject.set(x, "accessPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessPolicyUndefined: Self = StObject.set(x, "accessPolicy", js.undefined)
+      inline def setAccessPolicyUndefined: Self = StObject.set(x, "accessPolicy", js.undefined)
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setLocation(value: Input[String]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Input[String]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNotifications(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glacier.VaultNotification]]]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
+      inline def setNotifications(value: Input[js.Array[Input[typings.pulumiAws.inputMod.glacier.VaultNotification]]]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
+      inline def setNotificationsUndefined: Self = StObject.set(x, "notifications", js.undefined)
       
-      @scala.inline
-      def setNotificationsVarargs(value: Input[typings.pulumiAws.inputMod.glacier.VaultNotification]*): Self = StObject.set(x, "notifications", js.Array(value :_*))
+      inline def setNotificationsVarargs(value: Input[typings.pulumiAws.inputMod.glacier.VaultNotification]*): Self = StObject.set(x, "notifications", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

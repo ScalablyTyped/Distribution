@@ -8,11 +8,11 @@ trait Classifier extends StObject {
   
   /* private */ def addResult(text: js.Any, offset: js.Any, result: js.Any, length: js.Any, kind: js.Any): js.Any
   
-  var characterWindow: js.Any
+  /* private */ var characterWindow: js.Any
   
   /* private */ def classFromKind(kind: js.Any): js.Any
   
-  var diagnostics: js.Any
+  /* private */ var diagnostics: js.Any
   
   def getClassificationsForLine(text: String, lexState: EndOfLineState): ClassificationResult
   
@@ -22,12 +22,11 @@ trait Classifier extends StObject {
   
   /* private */ def processTriviaList(text: js.Any, offset: js.Any, triviaList: js.Any, result: js.Any): js.Any
   
-  var scanner: js.Any
+  /* private */ var scanner: js.Any
 }
 object Classifier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addResult: (js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any,
     characterWindow: js.Any,
     classFromKind: js.Any => js.Any,
@@ -42,34 +41,24 @@ object Classifier {
     __obj.asInstanceOf[Classifier]
   }
   
-  @scala.inline
-  implicit class ClassifierMutableBuilder[Self <: Classifier] (val x: Self) extends AnyVal {
+  extension [Self <: Classifier](x: Self) {
     
-    @scala.inline
-    def setAddResult(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "addResult", js.Any.fromFunction5(value))
+    inline def setAddResult(value: (js.Any, js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "addResult", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setCharacterWindow(value: js.Any): Self = StObject.set(x, "characterWindow", value.asInstanceOf[js.Any])
+    inline def setCharacterWindow(value: js.Any): Self = StObject.set(x, "characterWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassFromKind(value: js.Any => js.Any): Self = StObject.set(x, "classFromKind", js.Any.fromFunction1(value))
+    inline def setClassFromKind(value: js.Any => js.Any): Self = StObject.set(x, "classFromKind", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDiagnostics(value: js.Any): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
+    inline def setDiagnostics(value: js.Any): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetClassificationsForLine(value: (String, EndOfLineState) => ClassificationResult): Self = StObject.set(x, "getClassificationsForLine", js.Any.fromFunction2(value))
+    inline def setGetClassificationsForLine(value: (String, EndOfLineState) => ClassificationResult): Self = StObject.set(x, "getClassificationsForLine", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHost(value: IClassifierHost): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: IClassifierHost): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessToken(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "processToken", js.Any.fromFunction4(value))
+    inline def setProcessToken(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "processToken", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setProcessTriviaList(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "processTriviaList", js.Any.fromFunction4(value))
+    inline def setProcessTriviaList(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "processTriviaList", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setScanner(value: js.Any): Self = StObject.set(x, "scanner", value.asInstanceOf[js.Any])
+    inline def setScanner(value: js.Any): Self = StObject.set(x, "scanner", value.asInstanceOf[js.Any])
   }
 }

@@ -15,20 +15,16 @@ trait ExtendedAttributeRightHandSideDecimal
 }
 object ExtendedAttributeRightHandSideDecimal {
   
-  @scala.inline
-  def apply(value: String): ExtendedAttributeRightHandSideDecimal = {
+  inline def apply(value: String): ExtendedAttributeRightHandSideDecimal = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("decimal")
     __obj.asInstanceOf[ExtendedAttributeRightHandSideDecimal]
   }
   
-  @scala.inline
-  implicit class ExtendedAttributeRightHandSideDecimalMutableBuilder[Self <: ExtendedAttributeRightHandSideDecimal] (val x: Self) extends AnyVal {
+  extension [Self <: ExtendedAttributeRightHandSideDecimal](x: Self) {
     
-    @scala.inline
-    def setType(value: decimal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: decimal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

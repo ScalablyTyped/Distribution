@@ -24,8 +24,7 @@ object helperTextComponentMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def attachTo(root: Element): MDCSelectHelperText = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCSelectHelperText]
+    inline def attachTo(root: Element): MDCSelectHelperText = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCSelectHelperText]
   }
   
   type MDCSelectHelperTextFactory = js.Function2[

@@ -11,19 +11,15 @@ trait ReadonlyEditOptions extends StObject {
 }
 object ReadonlyEditOptions {
   
-  @scala.inline
-  def apply(): ReadonlyEditOptions = {
+  inline def apply(): ReadonlyEditOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReadonlyEditOptions]
   }
   
-  @scala.inline
-  implicit class ReadonlyEditOptionsMutableBuilder[Self <: ReadonlyEditOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyEditOptions](x: Self) {
     
-    @scala.inline
-    def setBypassReadOnly(value: Boolean): Self = StObject.set(x, "bypassReadOnly", value.asInstanceOf[js.Any])
+    inline def setBypassReadOnly(value: Boolean): Self = StObject.set(x, "bypassReadOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBypassReadOnlyUndefined: Self = StObject.set(x, "bypassReadOnly", js.undefined)
+    inline def setBypassReadOnlyUndefined: Self = StObject.set(x, "bypassReadOnly", js.undefined)
   }
 }

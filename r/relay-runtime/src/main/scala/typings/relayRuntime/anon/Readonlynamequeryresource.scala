@@ -33,8 +33,7 @@ trait Readonlynamequeryresource
 }
 object Readonlynamequeryresource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fetchPolicy: FetchPolicy,
     operation: OperationDescriptor,
     profilerContext: js.Any,
@@ -47,31 +46,22 @@ object Readonlynamequeryresource {
     __obj.asInstanceOf[Readonlynamequeryresource]
   }
   
-  @scala.inline
-  implicit class ReadonlynamequeryresourceMutableBuilder[Self <: Readonlynamequeryresource] (val x: Self) extends AnyVal {
+  extension [Self <: Readonlynamequeryresource](x: Self) {
     
-    @scala.inline
-    def setFetchPolicy(value: FetchPolicy): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
+    inline def setFetchPolicy(value: FetchPolicy): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: queryresourceDotfetch): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: queryresourceDotfetch): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperation(value: OperationDescriptor): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: OperationDescriptor): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfilerContext(value: js.Any): Self = StObject.set(x, "profilerContext", value.asInstanceOf[js.Any])
+    inline def setProfilerContext(value: js.Any): Self = StObject.set(x, "profilerContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryAvailability(value: OperationAvailability): Self = StObject.set(x, "queryAvailability", value.asInstanceOf[js.Any])
+    inline def setQueryAvailability(value: OperationAvailability): Self = StObject.set(x, "queryAvailability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderPolicy(value: RenderPolicy): Self = StObject.set(x, "renderPolicy", value.asInstanceOf[js.Any])
+    inline def setRenderPolicy(value: RenderPolicy): Self = StObject.set(x, "renderPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceID(value: Double): Self = StObject.set(x, "resourceID", value.asInstanceOf[js.Any])
+    inline def setResourceID(value: Double): Self = StObject.set(x, "resourceID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShouldFetch(value: Boolean): Self = StObject.set(x, "shouldFetch", value.asInstanceOf[js.Any])
+    inline def setShouldFetch(value: Boolean): Self = StObject.set(x, "shouldFetch", value.asInstanceOf[js.Any])
   }
 }

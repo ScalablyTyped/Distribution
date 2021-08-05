@@ -13,25 +13,19 @@ trait ListNotificationHubsOptions extends StObject {
 }
 object ListNotificationHubsOptions {
   
-  @scala.inline
-  def apply(): ListNotificationHubsOptions = {
+  inline def apply(): ListNotificationHubsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListNotificationHubsOptions]
   }
   
-  @scala.inline
-  implicit class ListNotificationHubsOptionsMutableBuilder[Self <: ListNotificationHubsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ListNotificationHubsOptions](x: Self) {
     
-    @scala.inline
-    def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+    inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+    inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
   }
 }

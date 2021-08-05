@@ -50,46 +50,33 @@ trait SchemaAuthenticationInfo extends StObject {
 }
 object SchemaAuthenticationInfo {
   
-  @scala.inline
-  def apply(): SchemaAuthenticationInfo = {
+  inline def apply(): SchemaAuthenticationInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAuthenticationInfo]
   }
   
-  @scala.inline
-  implicit class SchemaAuthenticationInfoMutableBuilder[Self <: SchemaAuthenticationInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAuthenticationInfo](x: Self) {
     
-    @scala.inline
-    def setAuthoritySelector(value: String): Self = StObject.set(x, "authoritySelector", value.asInstanceOf[js.Any])
+    inline def setAuthoritySelector(value: String): Self = StObject.set(x, "authoritySelector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthoritySelectorUndefined: Self = StObject.set(x, "authoritySelector", js.undefined)
+    inline def setAuthoritySelectorUndefined: Self = StObject.set(x, "authoritySelector", js.undefined)
     
-    @scala.inline
-    def setPrincipalEmail(value: String): Self = StObject.set(x, "principalEmail", value.asInstanceOf[js.Any])
+    inline def setPrincipalEmail(value: String): Self = StObject.set(x, "principalEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalEmailUndefined: Self = StObject.set(x, "principalEmail", js.undefined)
+    inline def setPrincipalEmailUndefined: Self = StObject.set(x, "principalEmail", js.undefined)
     
-    @scala.inline
-    def setServiceAccountDelegationInfo(value: js.Array[SchemaServiceAccountDelegationInfo]): Self = StObject.set(x, "serviceAccountDelegationInfo", value.asInstanceOf[js.Any])
+    inline def setServiceAccountDelegationInfo(value: js.Array[SchemaServiceAccountDelegationInfo]): Self = StObject.set(x, "serviceAccountDelegationInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccountDelegationInfoUndefined: Self = StObject.set(x, "serviceAccountDelegationInfo", js.undefined)
+    inline def setServiceAccountDelegationInfoUndefined: Self = StObject.set(x, "serviceAccountDelegationInfo", js.undefined)
     
-    @scala.inline
-    def setServiceAccountDelegationInfoVarargs(value: SchemaServiceAccountDelegationInfo*): Self = StObject.set(x, "serviceAccountDelegationInfo", js.Array(value :_*))
+    inline def setServiceAccountDelegationInfoVarargs(value: SchemaServiceAccountDelegationInfo*): Self = StObject.set(x, "serviceAccountDelegationInfo", js.Array(value :_*))
     
-    @scala.inline
-    def setServiceAccountKeyName(value: String): Self = StObject.set(x, "serviceAccountKeyName", value.asInstanceOf[js.Any])
+    inline def setServiceAccountKeyName(value: String): Self = StObject.set(x, "serviceAccountKeyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccountKeyNameUndefined: Self = StObject.set(x, "serviceAccountKeyName", js.undefined)
+    inline def setServiceAccountKeyNameUndefined: Self = StObject.set(x, "serviceAccountKeyName", js.undefined)
     
-    @scala.inline
-    def setThirdPartyPrincipal(value: StringDictionary[js.Any]): Self = StObject.set(x, "thirdPartyPrincipal", value.asInstanceOf[js.Any])
+    inline def setThirdPartyPrincipal(value: StringDictionary[js.Any]): Self = StObject.set(x, "thirdPartyPrincipal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThirdPartyPrincipalUndefined: Self = StObject.set(x, "thirdPartyPrincipal", js.undefined)
+    inline def setThirdPartyPrincipalUndefined: Self = StObject.set(x, "thirdPartyPrincipal", js.undefined)
   }
 }

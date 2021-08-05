@@ -21,19 +21,15 @@ trait IUboRefusedReasonType extends StObject {
 }
 object IUboRefusedReasonType {
   
-  @scala.inline
-  def apply(): IUboRefusedReasonType = {
+  inline def apply(): IUboRefusedReasonType = {
     val __obj = js.Dynamic.literal(InvalidDeclaredUbo = "INVALID_DECLARED_UBO", InvalidUboDetails = "INVALID_UBO_DETAILS")
     __obj.asInstanceOf[IUboRefusedReasonType]
   }
   
-  @scala.inline
-  implicit class IUboRefusedReasonTypeMutableBuilder[Self <: IUboRefusedReasonType] (val x: Self) extends AnyVal {
+  extension [Self <: IUboRefusedReasonType](x: Self) {
     
-    @scala.inline
-    def setInvalidDeclaredUbo(value: INVALID_DECLARED_UBO): Self = StObject.set(x, "InvalidDeclaredUbo", value.asInstanceOf[js.Any])
+    inline def setInvalidDeclaredUbo(value: INVALID_DECLARED_UBO): Self = StObject.set(x, "InvalidDeclaredUbo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidUboDetails(value: INVALID_UBO_DETAILS): Self = StObject.set(x, "InvalidUboDetails", value.asInstanceOf[js.Any])
+    inline def setInvalidUboDetails(value: INVALID_UBO_DETAILS): Self = StObject.set(x, "InvalidUboDetails", value.asInstanceOf[js.Any])
   }
 }

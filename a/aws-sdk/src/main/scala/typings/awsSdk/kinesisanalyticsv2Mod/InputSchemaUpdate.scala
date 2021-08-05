@@ -23,34 +23,25 @@ trait InputSchemaUpdate extends StObject {
 }
 object InputSchemaUpdate {
   
-  @scala.inline
-  def apply(): InputSchemaUpdate = {
+  inline def apply(): InputSchemaUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InputSchemaUpdate]
   }
   
-  @scala.inline
-  implicit class InputSchemaUpdateMutableBuilder[Self <: InputSchemaUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: InputSchemaUpdate](x: Self) {
     
-    @scala.inline
-    def setRecordColumnUpdates(value: RecordColumns): Self = StObject.set(x, "RecordColumnUpdates", value.asInstanceOf[js.Any])
+    inline def setRecordColumnUpdates(value: RecordColumns): Self = StObject.set(x, "RecordColumnUpdates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordColumnUpdatesUndefined: Self = StObject.set(x, "RecordColumnUpdates", js.undefined)
+    inline def setRecordColumnUpdatesUndefined: Self = StObject.set(x, "RecordColumnUpdates", js.undefined)
     
-    @scala.inline
-    def setRecordColumnUpdatesVarargs(value: RecordColumn*): Self = StObject.set(x, "RecordColumnUpdates", js.Array(value :_*))
+    inline def setRecordColumnUpdatesVarargs(value: RecordColumn*): Self = StObject.set(x, "RecordColumnUpdates", js.Array(value :_*))
     
-    @scala.inline
-    def setRecordEncodingUpdate(value: RecordEncoding): Self = StObject.set(x, "RecordEncodingUpdate", value.asInstanceOf[js.Any])
+    inline def setRecordEncodingUpdate(value: RecordEncoding): Self = StObject.set(x, "RecordEncodingUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordEncodingUpdateUndefined: Self = StObject.set(x, "RecordEncodingUpdate", js.undefined)
+    inline def setRecordEncodingUpdateUndefined: Self = StObject.set(x, "RecordEncodingUpdate", js.undefined)
     
-    @scala.inline
-    def setRecordFormatUpdate(value: RecordFormat): Self = StObject.set(x, "RecordFormatUpdate", value.asInstanceOf[js.Any])
+    inline def setRecordFormatUpdate(value: RecordFormat): Self = StObject.set(x, "RecordFormatUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordFormatUpdateUndefined: Self = StObject.set(x, "RecordFormatUpdate", js.undefined)
+    inline def setRecordFormatUpdateUndefined: Self = StObject.set(x, "RecordFormatUpdate", js.undefined)
   }
 }

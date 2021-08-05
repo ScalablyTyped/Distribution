@@ -20,37 +20,27 @@ trait SnapshotJobRequest extends StObject {
 }
 object SnapshotJobRequest {
   
-  @scala.inline
-  def apply(): SnapshotJobRequest = {
+  inline def apply(): SnapshotJobRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SnapshotJobRequest]
   }
   
-  @scala.inline
-  implicit class SnapshotJobRequestMutableBuilder[Self <: SnapshotJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SnapshotJobRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setSnapshotSources(value: Boolean): Self = StObject.set(x, "snapshotSources", value.asInstanceOf[js.Any])
+    inline def setSnapshotSources(value: Boolean): Self = StObject.set(x, "snapshotSources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotSourcesUndefined: Self = StObject.set(x, "snapshotSources", js.undefined)
+    inline def setSnapshotSourcesUndefined: Self = StObject.set(x, "snapshotSources", js.undefined)
     
-    @scala.inline
-    def setTtl(value: String): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+    inline def setTtl(value: String): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
+    inline def setTtlUndefined: Self = StObject.set(x, "ttl", js.undefined)
   }
 }

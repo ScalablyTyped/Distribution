@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait AccessProperty extends StObject {
   
-  @JSName("Access._AccessProperty_typekey")
+  /* private */ @JSName("Access._AccessProperty_typekey")
   var AccessDot_AccessProperty_typekey: AccessProperty
   
   val Application: typings.activexAccess.Access.Application
@@ -33,8 +33,7 @@ trait AccessProperty extends StObject {
 }
 object AccessProperty {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccessDot_AccessProperty_typekey: AccessProperty,
     Application: Application,
     Category: Double,
@@ -51,37 +50,26 @@ object AccessProperty {
     __obj.asInstanceOf[AccessProperty]
   }
   
-  @scala.inline
-  implicit class AccessPropertyMutableBuilder[Self <: AccessProperty] (val x: Self) extends AnyVal {
+  extension [Self <: AccessProperty](x: Self) {
     
-    @scala.inline
-    def setAccessDot_AccessProperty_typekey(value: AccessProperty): Self = StObject.set(x, "Access._AccessProperty_typekey", value.asInstanceOf[js.Any])
+    inline def setAccessDot_AccessProperty_typekey(value: AccessProperty): Self = StObject.set(x, "Access._AccessProperty_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategory(value: Double): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: Double): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInherited(value: Boolean): Self = StObject.set(x, "Inherited", value.asInstanceOf[js.Any])
+    inline def setInherited(value: Boolean): Self = StObject.set(x, "Inherited", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
+    inline def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperties(value: typings.activexDao.DAO.Properties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: typings.activexDao.DAO.Properties): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

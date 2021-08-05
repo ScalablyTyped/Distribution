@@ -13,16 +13,13 @@ trait Dictkey
 }
 object Dictkey {
   
-  @scala.inline
-  def apply(Date: String): Dictkey = {
+  inline def apply(Date: String): Dictkey = {
     val __obj = js.Dynamic.literal(Date = Date.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dictkey]
   }
   
-  @scala.inline
-  implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
+  extension [Self <: Dictkey](x: Self) {
     
-    @scala.inline
-    def setDate(value: String): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
+    inline def setDate(value: String): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
   }
 }

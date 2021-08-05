@@ -12,22 +12,17 @@ trait BlockedForEntry extends StObject {
 }
 object BlockedForEntry {
   
-  @scala.inline
-  def apply(identifier: String): BlockedForEntry = {
+  inline def apply(identifier: String): BlockedForEntry = {
     val __obj = js.Dynamic.literal(identifier = identifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[BlockedForEntry]
   }
   
-  @scala.inline
-  implicit class BlockedForEntryMutableBuilder[Self <: BlockedForEntry] (val x: Self) extends AnyVal {
+  extension [Self <: BlockedForEntry](x: Self) {
     
-    @scala.inline
-    def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+    inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
+    inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
+    inline def setIpUndefined: Self = StObject.set(x, "ip", js.undefined)
   }
 }

@@ -22,28 +22,21 @@ trait SchemaGroupedResult extends StObject {
 }
 object SchemaGroupedResult {
   
-  @scala.inline
-  def apply(): SchemaGroupedResult = {
+  inline def apply(): SchemaGroupedResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGroupedResult]
   }
   
-  @scala.inline
-  implicit class SchemaGroupedResultMutableBuilder[Self <: SchemaGroupedResult] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGroupedResult](x: Self) {
     
-    @scala.inline
-    def setBoundingPoly(value: SchemaBoundingPoly): Self = StObject.set(x, "boundingPoly", value.asInstanceOf[js.Any])
+    inline def setBoundingPoly(value: SchemaBoundingPoly): Self = StObject.set(x, "boundingPoly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundingPolyUndefined: Self = StObject.set(x, "boundingPoly", js.undefined)
+    inline def setBoundingPolyUndefined: Self = StObject.set(x, "boundingPoly", js.undefined)
     
-    @scala.inline
-    def setResults(value: js.Array[SchemaResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[SchemaResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    @scala.inline
-    def setResultsVarargs(value: SchemaResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: SchemaResult*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

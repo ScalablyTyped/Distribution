@@ -34,8 +34,7 @@ object ngTableFilterRowControllerMod {
     @JSImport("ng-table/src/browser/ngTableFilterRowController", "NgTableFilterRowController.$inject")
     @js.native
     def $inject: js.Array[String] = js.native
-    @scala.inline
-    def $inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
+    inline def $inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
   }
   
   @js.native

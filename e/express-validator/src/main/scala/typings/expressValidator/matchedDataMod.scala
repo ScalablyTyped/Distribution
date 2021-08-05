@@ -14,10 +14,8 @@ object matchedDataMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def matchedData(req: Request): Record[String, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("matchedData")(req.asInstanceOf[js.Any]).asInstanceOf[Record[String, js.Any]]
-  @scala.inline
-  def matchedData(req: Request, options: PartialMatchedDataOptions): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchedData")(req.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
+  inline def matchedData(req: Request): Record[String, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("matchedData")(req.asInstanceOf[js.Any]).asInstanceOf[Record[String, js.Any]]
+  inline def matchedData(req: Request, options: PartialMatchedDataOptions): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("matchedData")(req.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
   
   trait MatchedDataOptions extends StObject {
     
@@ -29,26 +27,20 @@ object matchedDataMod {
   }
   object MatchedDataOptions {
     
-    @scala.inline
-    def apply(includeOptionals: Boolean, locations: js.Array[Location], onlyValidData: Boolean): MatchedDataOptions = {
+    inline def apply(includeOptionals: Boolean, locations: js.Array[Location], onlyValidData: Boolean): MatchedDataOptions = {
       val __obj = js.Dynamic.literal(includeOptionals = includeOptionals.asInstanceOf[js.Any], locations = locations.asInstanceOf[js.Any], onlyValidData = onlyValidData.asInstanceOf[js.Any])
       __obj.asInstanceOf[MatchedDataOptions]
     }
     
-    @scala.inline
-    implicit class MatchedDataOptionsMutableBuilder[Self <: MatchedDataOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MatchedDataOptions](x: Self) {
       
-      @scala.inline
-      def setIncludeOptionals(value: Boolean): Self = StObject.set(x, "includeOptionals", value.asInstanceOf[js.Any])
+      inline def setIncludeOptionals(value: Boolean): Self = StObject.set(x, "includeOptionals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocations(value: js.Array[Location]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+      inline def setLocations(value: js.Array[Location]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationsVarargs(value: Location*): Self = StObject.set(x, "locations", js.Array(value :_*))
+      inline def setLocationsVarargs(value: Location*): Self = StObject.set(x, "locations", js.Array(value :_*))
       
-      @scala.inline
-      def setOnlyValidData(value: Boolean): Self = StObject.set(x, "onlyValidData", value.asInstanceOf[js.Any])
+      inline def setOnlyValidData(value: Boolean): Self = StObject.set(x, "onlyValidData", value.asInstanceOf[js.Any])
     }
   }
 }

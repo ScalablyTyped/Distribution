@@ -16,6 +16,6 @@ object prackUserAgentServerMod {
     def this(dialog: SessionDialog, message: IncomingRequestMessage) = this()
     def this(dialog: SessionDialog, message: IncomingRequestMessage, delegate: IncomingRequestDelegate) = this()
     
-    var dialog: js.Any = js.native
+    /* private */ var dialog: js.Any = js.native
   }
 }

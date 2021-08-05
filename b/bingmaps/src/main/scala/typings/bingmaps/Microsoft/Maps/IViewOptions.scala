@@ -38,67 +38,47 @@ trait IViewOptions extends StObject {
 }
 object IViewOptions {
   
-  @scala.inline
-  def apply(): IViewOptions = {
+  inline def apply(): IViewOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IViewOptions]
   }
   
-  @scala.inline
-  implicit class IViewOptionsMutableBuilder[Self <: IViewOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IViewOptions](x: Self) {
     
-    @scala.inline
-    def setBounds(value: LocationRect): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: LocationRect): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+    inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
     
-    @scala.inline
-    def setCenter(value: Location): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: Location): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenterOffset(value: Point): Self = StObject.set(x, "centerOffset", value.asInstanceOf[js.Any])
+    inline def setCenterOffset(value: Point): Self = StObject.set(x, "centerOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenterOffsetUndefined: Self = StObject.set(x, "centerOffset", js.undefined)
+    inline def setCenterOffsetUndefined: Self = StObject.set(x, "centerOffset", js.undefined)
     
-    @scala.inline
-    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+    inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
     
-    @scala.inline
-    def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
+    inline def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
+    inline def setHeadingUndefined: Self = StObject.set(x, "heading", js.undefined)
     
-    @scala.inline
-    def setLabelOverlay(value: LabelOverlay): Self = StObject.set(x, "labelOverlay", value.asInstanceOf[js.Any])
+    inline def setLabelOverlay(value: LabelOverlay): Self = StObject.set(x, "labelOverlay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelOverlayUndefined: Self = StObject.set(x, "labelOverlay", js.undefined)
+    inline def setLabelOverlayUndefined: Self = StObject.set(x, "labelOverlay", js.undefined)
     
-    @scala.inline
-    def setMapTypeId(value: MapTypeId): Self = StObject.set(x, "mapTypeId", value.asInstanceOf[js.Any])
+    inline def setMapTypeId(value: MapTypeId): Self = StObject.set(x, "mapTypeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMapTypeIdUndefined: Self = StObject.set(x, "mapTypeId", js.undefined)
+    inline def setMapTypeIdUndefined: Self = StObject.set(x, "mapTypeId", js.undefined)
     
-    @scala.inline
-    def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    @scala.inline
-    def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
+    inline def setPitch(value: Double): Self = StObject.set(x, "pitch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPitchUndefined: Self = StObject.set(x, "pitch", js.undefined)
+    inline def setPitchUndefined: Self = StObject.set(x, "pitch", js.undefined)
     
-    @scala.inline
-    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+    inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
   }
 }

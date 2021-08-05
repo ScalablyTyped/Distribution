@@ -15,8 +15,7 @@ object getManifestMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getManifest(config: GetManifestConfig): GetManifestResult = ^.asInstanceOf[js.Dynamic].applyDynamic("getManifest")(config.asInstanceOf[js.Any]).asInstanceOf[GetManifestResult]
+  inline def getManifest(config: GetManifestConfig): GetManifestResult = ^.asInstanceOf[js.Dynamic].applyDynamic("getManifest")(config.asInstanceOf[js.Any]).asInstanceOf[GetManifestResult]
   
   trait GetManifestConfig extends StObject {
     
@@ -124,95 +123,66 @@ object getManifestMod {
   }
   object GetManifestConfig {
     
-    @scala.inline
-    def apply(globDirectory: String): GetManifestConfig = {
+    inline def apply(globDirectory: String): GetManifestConfig = {
       val __obj = js.Dynamic.literal(globDirectory = globDirectory.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetManifestConfig]
     }
     
-    @scala.inline
-    implicit class GetManifestConfigMutableBuilder[Self <: GetManifestConfig] (val x: Self) extends AnyVal {
+    extension [Self <: GetManifestConfig](x: Self) {
       
-      @scala.inline
-      def setAdditionalManifestEntries(value: js.Array[ManifestEntry]): Self = StObject.set(x, "additionalManifestEntries", value.asInstanceOf[js.Any])
+      inline def setAdditionalManifestEntries(value: js.Array[ManifestEntry]): Self = StObject.set(x, "additionalManifestEntries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalManifestEntriesUndefined: Self = StObject.set(x, "additionalManifestEntries", js.undefined)
+      inline def setAdditionalManifestEntriesUndefined: Self = StObject.set(x, "additionalManifestEntries", js.undefined)
       
-      @scala.inline
-      def setAdditionalManifestEntriesVarargs(value: ManifestEntry*): Self = StObject.set(x, "additionalManifestEntries", js.Array(value :_*))
+      inline def setAdditionalManifestEntriesVarargs(value: ManifestEntry*): Self = StObject.set(x, "additionalManifestEntries", js.Array(value :_*))
       
-      @scala.inline
-      def setDontCacheBustURLsMatching(value: RegExp): Self = StObject.set(x, "dontCacheBustURLsMatching", value.asInstanceOf[js.Any])
+      inline def setDontCacheBustURLsMatching(value: RegExp): Self = StObject.set(x, "dontCacheBustURLsMatching", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDontCacheBustURLsMatchingUndefined: Self = StObject.set(x, "dontCacheBustURLsMatching", js.undefined)
+      inline def setDontCacheBustURLsMatchingUndefined: Self = StObject.set(x, "dontCacheBustURLsMatching", js.undefined)
       
-      @scala.inline
-      def setGlobDirectory(value: String): Self = StObject.set(x, "globDirectory", value.asInstanceOf[js.Any])
+      inline def setGlobDirectory(value: String): Self = StObject.set(x, "globDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobFollow(value: Boolean): Self = StObject.set(x, "globFollow", value.asInstanceOf[js.Any])
+      inline def setGlobFollow(value: Boolean): Self = StObject.set(x, "globFollow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobFollowUndefined: Self = StObject.set(x, "globFollow", js.undefined)
+      inline def setGlobFollowUndefined: Self = StObject.set(x, "globFollow", js.undefined)
       
-      @scala.inline
-      def setGlobIgnores(value: js.Array[String]): Self = StObject.set(x, "globIgnores", value.asInstanceOf[js.Any])
+      inline def setGlobIgnores(value: js.Array[String]): Self = StObject.set(x, "globIgnores", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobIgnoresUndefined: Self = StObject.set(x, "globIgnores", js.undefined)
+      inline def setGlobIgnoresUndefined: Self = StObject.set(x, "globIgnores", js.undefined)
       
-      @scala.inline
-      def setGlobIgnoresVarargs(value: String*): Self = StObject.set(x, "globIgnores", js.Array(value :_*))
+      inline def setGlobIgnoresVarargs(value: String*): Self = StObject.set(x, "globIgnores", js.Array(value :_*))
       
-      @scala.inline
-      def setGlobPatterns(value: js.Array[String]): Self = StObject.set(x, "globPatterns", value.asInstanceOf[js.Any])
+      inline def setGlobPatterns(value: js.Array[String]): Self = StObject.set(x, "globPatterns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobPatternsUndefined: Self = StObject.set(x, "globPatterns", js.undefined)
+      inline def setGlobPatternsUndefined: Self = StObject.set(x, "globPatterns", js.undefined)
       
-      @scala.inline
-      def setGlobPatternsVarargs(value: String*): Self = StObject.set(x, "globPatterns", js.Array(value :_*))
+      inline def setGlobPatternsVarargs(value: String*): Self = StObject.set(x, "globPatterns", js.Array(value :_*))
       
-      @scala.inline
-      def setGlobStrict(value: Boolean): Self = StObject.set(x, "globStrict", value.asInstanceOf[js.Any])
+      inline def setGlobStrict(value: Boolean): Self = StObject.set(x, "globStrict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGlobStrictUndefined: Self = StObject.set(x, "globStrict", js.undefined)
+      inline def setGlobStrictUndefined: Self = StObject.set(x, "globStrict", js.undefined)
       
-      @scala.inline
-      def setManifestTransforms(value: js.Array[ManifestTransform]): Self = StObject.set(x, "manifestTransforms", value.asInstanceOf[js.Any])
+      inline def setManifestTransforms(value: js.Array[ManifestTransform]): Self = StObject.set(x, "manifestTransforms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManifestTransformsUndefined: Self = StObject.set(x, "manifestTransforms", js.undefined)
+      inline def setManifestTransformsUndefined: Self = StObject.set(x, "manifestTransforms", js.undefined)
       
-      @scala.inline
-      def setManifestTransformsVarargs(value: ManifestTransform*): Self = StObject.set(x, "manifestTransforms", js.Array(value :_*))
+      inline def setManifestTransformsVarargs(value: ManifestTransform*): Self = StObject.set(x, "manifestTransforms", js.Array(value :_*))
       
-      @scala.inline
-      def setMaximumFileSizeToCacheInBytes(value: Double): Self = StObject.set(x, "maximumFileSizeToCacheInBytes", value.asInstanceOf[js.Any])
+      inline def setMaximumFileSizeToCacheInBytes(value: Double): Self = StObject.set(x, "maximumFileSizeToCacheInBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumFileSizeToCacheInBytesUndefined: Self = StObject.set(x, "maximumFileSizeToCacheInBytes", js.undefined)
+      inline def setMaximumFileSizeToCacheInBytesUndefined: Self = StObject.set(x, "maximumFileSizeToCacheInBytes", js.undefined)
       
-      @scala.inline
-      def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setModifyURLPrefix(value: StringDictionary[String]): Self = StObject.set(x, "modifyURLPrefix", value.asInstanceOf[js.Any])
+      inline def setModifyURLPrefix(value: StringDictionary[String]): Self = StObject.set(x, "modifyURLPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifyURLPrefixUndefined: Self = StObject.set(x, "modifyURLPrefix", js.undefined)
+      inline def setModifyURLPrefixUndefined: Self = StObject.set(x, "modifyURLPrefix", js.undefined)
       
-      @scala.inline
-      def setTemplatedURLs(value: js.Object): Self = StObject.set(x, "templatedURLs", value.asInstanceOf[js.Any])
+      inline def setTemplatedURLs(value: js.Object): Self = StObject.set(x, "templatedURLs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplatedURLsUndefined: Self = StObject.set(x, "templatedURLs", js.undefined)
+      inline def setTemplatedURLsUndefined: Self = StObject.set(x, "templatedURLs", js.undefined)
     }
   }
   

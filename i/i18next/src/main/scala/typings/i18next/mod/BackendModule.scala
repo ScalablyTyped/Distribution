@@ -36,8 +36,7 @@ trait BackendModule[TOptions]
 }
 object BackendModule {
   
-  @scala.inline
-  def apply[TOptions](
+  inline def apply[TOptions](
     create: (js.Array[String], String, String, String) => Unit,
     init: (Services, TOptions, InitOptions) => Unit,
     read: (String, String, ReadCallback) => Unit
@@ -47,33 +46,24 @@ object BackendModule {
     __obj.asInstanceOf[BackendModule[TOptions]]
   }
   
-  @scala.inline
-  implicit class BackendModuleMutableBuilder[Self <: BackendModule[?], TOptions] (val x: Self & BackendModule[TOptions]) extends AnyVal {
+  extension [Self <: BackendModule[?], TOptions](x: Self & BackendModule[TOptions]) {
     
-    @scala.inline
-    def setCreate(value: (js.Array[String], String, String, String) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction4(value))
+    inline def setCreate(value: (js.Array[String], String, String, String) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setInit(value: (Services, TOptions, InitOptions) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
+    inline def setInit(value: (Services, TOptions, InitOptions) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRead(value: (String, String, ReadCallback) => Unit): Self = StObject.set(x, "read", js.Any.fromFunction3(value))
+    inline def setRead(value: (String, String, ReadCallback) => Unit): Self = StObject.set(x, "read", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setReadMulti(
+    inline def setReadMulti(
       value: (/* languages */ js.Array[String], /* namespaces */ js.Array[String], /* callback */ ReadCallback) => Unit
     ): Self = StObject.set(x, "readMulti", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setReadMultiUndefined: Self = StObject.set(x, "readMulti", js.undefined)
+    inline def setReadMultiUndefined: Self = StObject.set(x, "readMulti", js.undefined)
     
-    @scala.inline
-    def setSave(value: (/* language */ String, /* namespace */ String, /* data */ ResourceLanguage) => Unit): Self = StObject.set(x, "save", js.Any.fromFunction3(value))
+    inline def setSave(value: (/* language */ String, /* namespace */ String, /* data */ ResourceLanguage) => Unit): Self = StObject.set(x, "save", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
+    inline def setSaveUndefined: Self = StObject.set(x, "save", js.undefined)
     
-    @scala.inline
-    def setType(value: backend): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: backend): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -14,20 +14,16 @@ object anon {
   }
   object Index {
     
-    @scala.inline
-    def apply(index: Double, startX: Double): Index = {
+    inline def apply(index: Double, startX: Double): Index = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], startX = startX.asInstanceOf[js.Any])
       __obj.asInstanceOf[Index]
     }
     
-    @scala.inline
-    implicit class IndexMutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
+    extension [Self <: Index](x: Self) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartX(value: Double): Self = StObject.set(x, "startX", value.asInstanceOf[js.Any])
+      inline def setStartX(value: Double): Self = StObject.set(x, "startX", value.asInstanceOf[js.Any])
     }
   }
 }

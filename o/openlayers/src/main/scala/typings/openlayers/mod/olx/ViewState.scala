@@ -18,25 +18,19 @@ trait ViewState extends StObject {
 }
 object ViewState {
   
-  @scala.inline
-  def apply(center: Coordinate_, projection: Projection, resolution: Double, rotation: Double): ViewState = {
+  inline def apply(center: Coordinate_, projection: Projection, resolution: Double, rotation: Double): ViewState = {
     val __obj = js.Dynamic.literal(center = center.asInstanceOf[js.Any], projection = projection.asInstanceOf[js.Any], resolution = resolution.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any])
     __obj.asInstanceOf[ViewState]
   }
   
-  @scala.inline
-  implicit class ViewStateMutableBuilder[Self <: ViewState] (val x: Self) extends AnyVal {
+  extension [Self <: ViewState](x: Self) {
     
-    @scala.inline
-    def setCenter(value: Coordinate_): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: Coordinate_): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjection(value: Projection): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    inline def setProjection(value: Projection): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+    inline def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
   }
 }

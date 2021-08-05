@@ -23,43 +23,31 @@ trait AccountTaxTaxRule extends StObject {
 }
 object AccountTaxTaxRule {
   
-  @scala.inline
-  def apply(): AccountTaxTaxRule = {
+  inline def apply(): AccountTaxTaxRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountTaxTaxRule]
   }
   
-  @scala.inline
-  implicit class AccountTaxTaxRuleMutableBuilder[Self <: AccountTaxTaxRule] (val x: Self) extends AnyVal {
+  extension [Self <: AccountTaxTaxRule](x: Self) {
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+    inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
-    @scala.inline
-    def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
+    inline def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
+    inline def setLocationIdUndefined: Self = StObject.set(x, "locationId", js.undefined)
     
-    @scala.inline
-    def setRatePercent(value: String): Self = StObject.set(x, "ratePercent", value.asInstanceOf[js.Any])
+    inline def setRatePercent(value: String): Self = StObject.set(x, "ratePercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRatePercentUndefined: Self = StObject.set(x, "ratePercent", js.undefined)
+    inline def setRatePercentUndefined: Self = StObject.set(x, "ratePercent", js.undefined)
     
-    @scala.inline
-    def setShippingTaxed(value: Boolean): Self = StObject.set(x, "shippingTaxed", value.asInstanceOf[js.Any])
+    inline def setShippingTaxed(value: Boolean): Self = StObject.set(x, "shippingTaxed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShippingTaxedUndefined: Self = StObject.set(x, "shippingTaxed", js.undefined)
+    inline def setShippingTaxedUndefined: Self = StObject.set(x, "shippingTaxed", js.undefined)
     
-    @scala.inline
-    def setUseGlobalRate(value: Boolean): Self = StObject.set(x, "useGlobalRate", value.asInstanceOf[js.Any])
+    inline def setUseGlobalRate(value: Boolean): Self = StObject.set(x, "useGlobalRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseGlobalRateUndefined: Self = StObject.set(x, "useGlobalRate", js.undefined)
+    inline def setUseGlobalRateUndefined: Self = StObject.set(x, "useGlobalRate", js.undefined)
   }
 }

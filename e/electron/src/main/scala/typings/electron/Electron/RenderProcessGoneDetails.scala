@@ -20,19 +20,16 @@ trait RenderProcessGoneDetails extends StObject {
 }
 object RenderProcessGoneDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     reason: `clean-exit` | `abnormal-exit` | killed | crashed | oom | `launch-failed` | `integrity-failure`
   ): RenderProcessGoneDetails = {
     val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderProcessGoneDetails]
   }
   
-  @scala.inline
-  implicit class RenderProcessGoneDetailsMutableBuilder[Self <: RenderProcessGoneDetails] (val x: Self) extends AnyVal {
+  extension [Self <: RenderProcessGoneDetails](x: Self) {
     
-    @scala.inline
-    def setReason(
+    inline def setReason(
       value: `clean-exit` | `abnormal-exit` | killed | crashed | oom | `launch-failed` | `integrity-failure`
     ): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }

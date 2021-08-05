@@ -33,8 +33,7 @@ trait GetConfigurationRequest extends StObject {
 }
 object GetConfigurationRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: StringWithLengthBetween1And64,
     ClientId: StringWithLengthBetween1And64,
     Configuration: StringWithLengthBetween1And64,
@@ -44,25 +43,18 @@ object GetConfigurationRequest {
     __obj.asInstanceOf[GetConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class GetConfigurationRequestMutableBuilder[Self <: GetConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setApplication(value: StringWithLengthBetween1And64): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: StringWithLengthBetween1And64): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientConfigurationVersion(value: Version): Self = StObject.set(x, "ClientConfigurationVersion", value.asInstanceOf[js.Any])
+    inline def setClientConfigurationVersion(value: Version): Self = StObject.set(x, "ClientConfigurationVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientConfigurationVersionUndefined: Self = StObject.set(x, "ClientConfigurationVersion", js.undefined)
+    inline def setClientConfigurationVersionUndefined: Self = StObject.set(x, "ClientConfigurationVersion", js.undefined)
     
-    @scala.inline
-    def setClientId(value: StringWithLengthBetween1And64): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: StringWithLengthBetween1And64): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfiguration(value: StringWithLengthBetween1And64): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
+    inline def setConfiguration(value: StringWithLengthBetween1And64): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironment(value: StringWithLengthBetween1And64): Self = StObject.set(x, "Environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: StringWithLengthBetween1And64): Self = StObject.set(x, "Environment", value.asInstanceOf[js.Any])
   }
 }

@@ -38,43 +38,31 @@ trait FirewallPolicyResponse extends StObject {
 }
 object FirewallPolicyResponse {
   
-  @scala.inline
-  def apply(FirewallPolicyArn: ResourceArn, FirewallPolicyId: ResourceId, FirewallPolicyName: ResourceName): FirewallPolicyResponse = {
+  inline def apply(FirewallPolicyArn: ResourceArn, FirewallPolicyId: ResourceId, FirewallPolicyName: ResourceName): FirewallPolicyResponse = {
     val __obj = js.Dynamic.literal(FirewallPolicyArn = FirewallPolicyArn.asInstanceOf[js.Any], FirewallPolicyId = FirewallPolicyId.asInstanceOf[js.Any], FirewallPolicyName = FirewallPolicyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirewallPolicyResponse]
   }
   
-  @scala.inline
-  implicit class FirewallPolicyResponseMutableBuilder[Self <: FirewallPolicyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: FirewallPolicyResponse](x: Self) {
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setFirewallPolicyArn(value: ResourceArn): Self = StObject.set(x, "FirewallPolicyArn", value.asInstanceOf[js.Any])
+    inline def setFirewallPolicyArn(value: ResourceArn): Self = StObject.set(x, "FirewallPolicyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirewallPolicyId(value: ResourceId): Self = StObject.set(x, "FirewallPolicyId", value.asInstanceOf[js.Any])
+    inline def setFirewallPolicyId(value: ResourceId): Self = StObject.set(x, "FirewallPolicyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirewallPolicyName(value: ResourceName): Self = StObject.set(x, "FirewallPolicyName", value.asInstanceOf[js.Any])
+    inline def setFirewallPolicyName(value: ResourceName): Self = StObject.set(x, "FirewallPolicyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirewallPolicyStatus(value: ResourceStatus): Self = StObject.set(x, "FirewallPolicyStatus", value.asInstanceOf[js.Any])
+    inline def setFirewallPolicyStatus(value: ResourceStatus): Self = StObject.set(x, "FirewallPolicyStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirewallPolicyStatusUndefined: Self = StObject.set(x, "FirewallPolicyStatus", js.undefined)
+    inline def setFirewallPolicyStatusUndefined: Self = StObject.set(x, "FirewallPolicyStatus", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

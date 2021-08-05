@@ -10,19 +10,15 @@ trait AppPackageVersion extends StObject {
 }
 object AppPackageVersion {
   
-  @scala.inline
-  def apply(): AppPackageVersion = {
+  inline def apply(): AppPackageVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppPackageVersion]
   }
   
-  @scala.inline
-  implicit class AppPackageVersionMutableBuilder[Self <: AppPackageVersion] (val x: Self) extends AnyVal {
+  extension [Self <: AppPackageVersion](x: Self) {
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

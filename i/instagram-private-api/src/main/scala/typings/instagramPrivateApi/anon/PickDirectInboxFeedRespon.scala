@@ -13,19 +13,15 @@ trait PickDirectInboxFeedRespon extends StObject {
 }
 object PickDirectInboxFeedRespon {
   
-  @scala.inline
-  def apply(oldest_cursor: String, thread_id: String): PickDirectInboxFeedRespon = {
+  inline def apply(oldest_cursor: String, thread_id: String): PickDirectInboxFeedRespon = {
     val __obj = js.Dynamic.literal(oldest_cursor = oldest_cursor.asInstanceOf[js.Any], thread_id = thread_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickDirectInboxFeedRespon]
   }
   
-  @scala.inline
-  implicit class PickDirectInboxFeedResponMutableBuilder[Self <: PickDirectInboxFeedRespon] (val x: Self) extends AnyVal {
+  extension [Self <: PickDirectInboxFeedRespon](x: Self) {
     
-    @scala.inline
-    def setOldest_cursor(value: String): Self = StObject.set(x, "oldest_cursor", value.asInstanceOf[js.Any])
+    inline def setOldest_cursor(value: String): Self = StObject.set(x, "oldest_cursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThread_id(value: String): Self = StObject.set(x, "thread_id", value.asInstanceOf[js.Any])
+    inline def setThread_id(value: String): Self = StObject.set(x, "thread_id", value.asInstanceOf[js.Any])
   }
 }

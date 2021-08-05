@@ -41,8 +41,7 @@ trait LocationSchemeForPoint
 }
 object LocationSchemeForPoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     color: Color_,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -55,19 +54,14 @@ object LocationSchemeForPoint {
     __obj.asInstanceOf[LocationSchemeForPoint]
   }
   
-  @scala.inline
-  implicit class LocationSchemeForPointMutableBuilder[Self <: LocationSchemeForPoint] (val x: Self) extends AnyVal {
+  extension [Self <: LocationSchemeForPoint](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutline(value: LocationSchemeForPointOutline): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
+    inline def setOutline(value: LocationSchemeForPointOutline): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }
 }

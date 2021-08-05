@@ -23,34 +23,25 @@ trait DescribeReservedInstancesListingsRequest extends StObject {
 }
 object DescribeReservedInstancesListingsRequest {
   
-  @scala.inline
-  def apply(): DescribeReservedInstancesListingsRequest = {
+  inline def apply(): DescribeReservedInstancesListingsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeReservedInstancesListingsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeReservedInstancesListingsRequestMutableBuilder[Self <: DescribeReservedInstancesListingsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeReservedInstancesListingsRequest](x: Self) {
     
-    @scala.inline
-    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setReservedInstancesId(value: ReservationId): Self = StObject.set(x, "ReservedInstancesId", value.asInstanceOf[js.Any])
+    inline def setReservedInstancesId(value: ReservationId): Self = StObject.set(x, "ReservedInstancesId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedInstancesIdUndefined: Self = StObject.set(x, "ReservedInstancesId", js.undefined)
+    inline def setReservedInstancesIdUndefined: Self = StObject.set(x, "ReservedInstancesId", js.undefined)
     
-    @scala.inline
-    def setReservedInstancesListingId(value: ReservedInstancesListingId): Self = StObject.set(x, "ReservedInstancesListingId", value.asInstanceOf[js.Any])
+    inline def setReservedInstancesListingId(value: ReservedInstancesListingId): Self = StObject.set(x, "ReservedInstancesListingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedInstancesListingIdUndefined: Self = StObject.set(x, "ReservedInstancesListingId", js.undefined)
+    inline def setReservedInstancesListingIdUndefined: Self = StObject.set(x, "ReservedInstancesListingId", js.undefined)
   }
 }

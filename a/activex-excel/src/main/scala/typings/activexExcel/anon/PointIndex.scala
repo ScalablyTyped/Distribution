@@ -12,19 +12,15 @@ trait PointIndex extends StObject {
 }
 object PointIndex {
   
-  @scala.inline
-  def apply(PointIndex: Double, SeriesIndex: Double): PointIndex = {
+  inline def apply(PointIndex: Double, SeriesIndex: Double): PointIndex = {
     val __obj = js.Dynamic.literal(PointIndex = PointIndex.asInstanceOf[js.Any], SeriesIndex = SeriesIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointIndex]
   }
   
-  @scala.inline
-  implicit class PointIndexMutableBuilder[Self <: PointIndex] (val x: Self) extends AnyVal {
+  extension [Self <: PointIndex](x: Self) {
     
-    @scala.inline
-    def setPointIndex(value: Double): Self = StObject.set(x, "PointIndex", value.asInstanceOf[js.Any])
+    inline def setPointIndex(value: Double): Self = StObject.set(x, "PointIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesIndex(value: Double): Self = StObject.set(x, "SeriesIndex", value.asInstanceOf[js.Any])
+    inline def setSeriesIndex(value: Double): Self = StObject.set(x, "SeriesIndex", value.asInstanceOf[js.Any])
   }
 }

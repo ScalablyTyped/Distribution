@@ -22,25 +22,19 @@ trait ImageMediaInfoValueProperties extends StObject {
 }
 object ImageMediaInfoValueProperties {
   
-  @scala.inline
-  def apply(): ImageMediaInfoValueProperties = {
+  inline def apply(): ImageMediaInfoValueProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageMediaInfoValueProperties]
   }
   
-  @scala.inline
-  implicit class ImageMediaInfoValuePropertiesMutableBuilder[Self <: ImageMediaInfoValueProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ImageMediaInfoValueProperties](x: Self) {
     
-    @scala.inline
-    def setLinkURL(value: String): Self = StObject.set(x, "linkURL", value.asInstanceOf[js.Any])
+    inline def setLinkURL(value: String): Self = StObject.set(x, "linkURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkURLUndefined: Self = StObject.set(x, "linkURL", js.undefined)
+    inline def setLinkURLUndefined: Self = StObject.set(x, "linkURL", js.undefined)
     
-    @scala.inline
-    def setSourceURL(value: String): Self = StObject.set(x, "sourceURL", value.asInstanceOf[js.Any])
+    inline def setSourceURL(value: String): Self = StObject.set(x, "sourceURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceURLUndefined: Self = StObject.set(x, "sourceURL", js.undefined)
+    inline def setSourceURLUndefined: Self = StObject.set(x, "sourceURL", js.undefined)
   }
 }

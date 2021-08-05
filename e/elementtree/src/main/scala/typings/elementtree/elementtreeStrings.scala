@@ -8,11 +8,9 @@ object elementtreeStrings {
   
   @js.native
   sealed trait text extends StObject
-  @scala.inline
-  def text: text = "text".asInstanceOf[text]
+  inline def text: text = "text".asInstanceOf[text]
   
   @js.native
   sealed trait xml extends StObject
-  @scala.inline
-  def xml: xml = "xml".asInstanceOf[xml]
+  inline def xml: xml = "xml".asInstanceOf[xml]
 }

@@ -17,19 +17,15 @@ trait ChartErrorBarsFormatData extends StObject {
 }
 object ChartErrorBarsFormatData {
   
-  @scala.inline
-  def apply(): ChartErrorBarsFormatData = {
+  inline def apply(): ChartErrorBarsFormatData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartErrorBarsFormatData]
   }
   
-  @scala.inline
-  implicit class ChartErrorBarsFormatDataMutableBuilder[Self <: ChartErrorBarsFormatData] (val x: Self) extends AnyVal {
+  extension [Self <: ChartErrorBarsFormatData](x: Self) {
     
-    @scala.inline
-    def setLine(value: ChartLineFormatData): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: ChartLineFormatData): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
+    inline def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
   }
 }

@@ -19,38 +19,28 @@ object anon {
   }
   object PartialRouteOptions {
     
-    @scala.inline
-    def apply(): PartialRouteOptions = {
+    inline def apply(): PartialRouteOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialRouteOptions]
     }
     
-    @scala.inline
-    implicit class PartialRouteOptionsMutableBuilder[Self <: PartialRouteOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialRouteOptions](x: Self) {
       
-      @scala.inline
-      def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+      inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
+      inline def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRecursiveWildcard(value: Boolean): Self = StObject.set(x, "recursiveWildcard", value.asInstanceOf[js.Any])
+      inline def setRecursiveWildcard(value: Boolean): Self = StObject.set(x, "recursiveWildcard", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecursiveWildcardUndefined: Self = StObject.set(x, "recursiveWildcard", js.undefined)
+      inline def setRecursiveWildcardUndefined: Self = StObject.set(x, "recursiveWildcard", js.undefined)
       
-      @scala.inline
-      def setWildcardInPairs(value: Boolean): Self = StObject.set(x, "wildcardInPairs", value.asInstanceOf[js.Any])
+      inline def setWildcardInPairs(value: Boolean): Self = StObject.set(x, "wildcardInPairs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWildcardInPairsUndefined: Self = StObject.set(x, "wildcardInPairs", js.undefined)
+      inline def setWildcardInPairsUndefined: Self = StObject.set(x, "wildcardInPairs", js.undefined)
     }
   }
   
@@ -61,20 +51,16 @@ object anon {
   }
   object PartialRouterOptions {
     
-    @scala.inline
-    def apply(): PartialRouterOptions = {
+    inline def apply(): PartialRouterOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialRouterOptions]
     }
     
-    @scala.inline
-    implicit class PartialRouterOptionsMutableBuilder[Self <: PartialRouterOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PartialRouterOptions](x: Self) {
       
-      @scala.inline
-      def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+      inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
+      inline def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
     }
   }
 }

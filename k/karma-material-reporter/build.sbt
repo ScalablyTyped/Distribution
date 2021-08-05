@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "karma-material-reporter"
-version := "1.1-dt-20200314Z-7e6269"
+version := "1.1-dt-20200314Z-f9b19a"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

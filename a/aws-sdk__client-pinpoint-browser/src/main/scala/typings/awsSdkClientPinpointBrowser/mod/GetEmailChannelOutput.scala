@@ -11,8 +11,7 @@ trait GetEmailChannelOutput
      with typings.awsSdkClientPinpointBrowser.typesGetEmailChannelOutputMod.GetEmailChannelOutput
 object GetEmailChannelOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata, EmailChannelResponse: UnmarshalledEmailChannelResponse): GetEmailChannelOutput = {
+  inline def apply($metadata: ResponseMetadata, EmailChannelResponse: UnmarshalledEmailChannelResponse): GetEmailChannelOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], EmailChannelResponse = EmailChannelResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetEmailChannelOutput]
   }

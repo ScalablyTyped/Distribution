@@ -18,28 +18,21 @@ trait DhcpConfiguration extends StObject {
 }
 object DhcpConfiguration {
   
-  @scala.inline
-  def apply(): DhcpConfiguration = {
+  inline def apply(): DhcpConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DhcpConfiguration]
   }
   
-  @scala.inline
-  implicit class DhcpConfigurationMutableBuilder[Self <: DhcpConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: DhcpConfiguration](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "Key", js.undefined)
     
-    @scala.inline
-    def setValues(value: DhcpConfigurationValueList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    inline def setValues(value: DhcpConfigurationValueList): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "Values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: AttributeValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
+    inline def setValuesVarargs(value: AttributeValue*): Self = StObject.set(x, "Values", js.Array(value :_*))
   }
 }

@@ -17,28 +17,21 @@ trait AmazonProviderOptions extends StObject {
 }
 object AmazonProviderOptions {
   
-  @scala.inline
-  def apply(key: String, keyId: String): AmazonProviderOptions = {
+  inline def apply(key: String, keyId: String): AmazonProviderOptions = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], keyId = keyId.asInstanceOf[js.Any], provider = "amazon")
     __obj.asInstanceOf[AmazonProviderOptions]
   }
   
-  @scala.inline
-  implicit class AmazonProviderOptionsMutableBuilder[Self <: AmazonProviderOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AmazonProviderOptions](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvider(value: amazon): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: amazon): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
   }
 }

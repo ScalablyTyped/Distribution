@@ -12,17 +12,14 @@ object anon {
   }
   object Id {
     
-    @scala.inline
-    def apply(id: String): Id = {
+    inline def apply(id: String): Id = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[Id]
     }
     
-    @scala.inline
-    implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
+    extension [Self <: Id](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -34,20 +31,16 @@ object anon {
   }
   object Name {
     
-    @scala.inline
-    def apply[T](name: /* keyof T */ String, weight: Double): Name[T] = {
+    inline def apply[T](name: /* keyof T */ String, weight: Double): Name[T] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any])
       __obj.asInstanceOf[Name[T]]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name[?], T] (val x: Self & Name[T]) extends AnyVal {
+    extension [Self <: Name[?], T](x: Self & Name[T]) {
       
-      @scala.inline
-      def setName(value: /* keyof T */ String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: /* keyof T */ String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+      inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     }
   }
   
@@ -57,17 +50,14 @@ object anon {
   }
   object Score {
     
-    @scala.inline
-    def apply(score: Double): Score = {
+    inline def apply(score: Double): Score = {
       val __obj = js.Dynamic.literal(score = score.asInstanceOf[js.Any])
       __obj.asInstanceOf[Score]
     }
     
-    @scala.inline
-    implicit class ScoreMutableBuilder[Self <: Score] (val x: Self) extends AnyVal {
+    extension [Self <: Score](x: Self) {
       
-      @scala.inline
-      def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+      inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     }
   }
 }

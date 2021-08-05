@@ -14,8 +14,7 @@ object persistReducerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[S, A /* <: Action[js.Any] */](config: PersistConfig[S, js.Any, js.Any, js.Any], baseReducer: Reducer[S, A]): Reducer[S & PersistPartial, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any], baseReducer.asInstanceOf[js.Any])).asInstanceOf[Reducer[S & PersistPartial, A]]
+  inline def default[S, A /* <: Action[js.Any] */](config: PersistConfig[S, js.Any, js.Any, js.Any], baseReducer: Reducer[S, A]): Reducer[S & PersistPartial, A] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any], baseReducer.asInstanceOf[js.Any])).asInstanceOf[Reducer[S & PersistPartial, A]]
   
   trait PersistPartial extends StObject {
     
@@ -23,17 +22,14 @@ object persistReducerMod {
   }
   object PersistPartial {
     
-    @scala.inline
-    def apply(_persist: PersistState): PersistPartial = {
+    inline def apply(_persist: PersistState): PersistPartial = {
       val __obj = js.Dynamic.literal(_persist = _persist.asInstanceOf[js.Any])
       __obj.asInstanceOf[PersistPartial]
     }
     
-    @scala.inline
-    implicit class PersistPartialMutableBuilder[Self <: PersistPartial] (val x: Self) extends AnyVal {
+    extension [Self <: PersistPartial](x: Self) {
       
-      @scala.inline
-      def set_persist(value: PersistState): Self = StObject.set(x, "_persist", value.asInstanceOf[js.Any])
+      inline def set_persist(value: PersistState): Self = StObject.set(x, "_persist", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -50,8 +50,7 @@ object parserCoreMod {
   }
   object Core {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       State: Instantiable3[
           /* src */ String, 
           /* md */ MarkdownIt, 
@@ -65,17 +64,13 @@ object parserCoreMod {
       __obj.asInstanceOf[Core]
     }
     
-    @scala.inline
-    implicit class CoreMutableBuilder[Self <: Core] (val x: Self) extends AnyVal {
+    extension [Self <: Core](x: Self) {
       
-      @scala.inline
-      def setProcess(value: typings.markdownIt.stateCoreMod.^ => Unit): Self = StObject.set(x, "process", js.Any.fromFunction1(value))
+      inline def setProcess(value: typings.markdownIt.stateCoreMod.^ => Unit): Self = StObject.set(x, "process", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRuler(value: typings.markdownIt.rulerMod.^[RuleCore]): Self = StObject.set(x, "ruler", value.asInstanceOf[js.Any])
+      inline def setRuler(value: typings.markdownIt.rulerMod.^[RuleCore]): Self = StObject.set(x, "ruler", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(
+      inline def setState(
         value: Instantiable3[
               /* src */ String, 
               /* md */ MarkdownIt, 

@@ -21,29 +21,22 @@ trait EnvChannelRequest
 }
 object EnvChannelRequest {
   
-  @scala.inline
-  def apply(key: String, recipient: Double, `val`: String, wantReply: Boolean): EnvChannelRequest = {
+  inline def apply(key: String, recipient: Double, `val`: String, wantReply: Boolean): EnvChannelRequest = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], request = "env", wantReply = wantReply.asInstanceOf[js.Any])
     __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnvChannelRequest]
   }
   
-  @scala.inline
-  implicit class EnvChannelRequestMutableBuilder[Self <: EnvChannelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: EnvChannelRequest](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipient(value: Double): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
+    inline def setRecipient(value: Double): Self = StObject.set(x, "recipient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: env): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: env): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVal(value: String): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+    inline def setVal(value: String): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWantReply(value: Boolean): Self = StObject.set(x, "wantReply", value.asInstanceOf[js.Any])
+    inline def setWantReply(value: Boolean): Self = StObject.set(x, "wantReply", value.asInstanceOf[js.Any])
   }
 }

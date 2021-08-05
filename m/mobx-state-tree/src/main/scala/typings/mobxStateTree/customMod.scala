@@ -11,8 +11,7 @@ object customMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def custom[S, T](options: CustomTypeOptions[S, T]): IType[S | T, S, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("custom")(options.asInstanceOf[js.Any]).asInstanceOf[IType[S | T, S, T]]
+  inline def custom[S, T](options: CustomTypeOptions[S, T]): IType[S | T, S, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("custom")(options.asInstanceOf[js.Any]).asInstanceOf[IType[S | T, S, T]]
   
   @js.native
   trait CustomTypeOptions[S, T] extends StObject {

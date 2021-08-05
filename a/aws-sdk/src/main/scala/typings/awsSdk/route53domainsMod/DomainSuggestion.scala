@@ -18,25 +18,19 @@ trait DomainSuggestion extends StObject {
 }
 object DomainSuggestion {
   
-  @scala.inline
-  def apply(): DomainSuggestion = {
+  inline def apply(): DomainSuggestion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DomainSuggestion]
   }
   
-  @scala.inline
-  implicit class DomainSuggestionMutableBuilder[Self <: DomainSuggestion] (val x: Self) extends AnyVal {
+  extension [Self <: DomainSuggestion](x: Self) {
     
-    @scala.inline
-    def setAvailability(value: String): Self = StObject.set(x, "Availability", value.asInstanceOf[js.Any])
+    inline def setAvailability(value: String): Self = StObject.set(x, "Availability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityUndefined: Self = StObject.set(x, "Availability", js.undefined)
+    inline def setAvailabilityUndefined: Self = StObject.set(x, "Availability", js.undefined)
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
+    inline def setDomainNameUndefined: Self = StObject.set(x, "DomainName", js.undefined)
   }
 }

@@ -156,21 +156,16 @@ object lustreFileSystemMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): LustreFileSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LustreFileSystem]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LustreFileSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LustreFileSystem]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: LustreFileSystemState): LustreFileSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LustreFileSystem]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: LustreFileSystemState, opts: CustomResourceOptions): LustreFileSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LustreFileSystem]
+    inline def get(name: String, id: Input[ID]): LustreFileSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LustreFileSystem]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LustreFileSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LustreFileSystem]
+    inline def get(name: String, id: Input[ID], state: LustreFileSystemState): LustreFileSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LustreFileSystem]
+    inline def get(name: String, id: Input[ID], state: LustreFileSystemState, opts: CustomResourceOptions): LustreFileSystem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LustreFileSystem]
     
     /**
       * Returns true if the given object is an instance of LustreFileSystem.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/fsx/lustreFileSystem.LustreFileSystem */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/fsx/lustreFileSystem.LustreFileSystem */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/fsx/lustreFileSystem.LustreFileSystem */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/fsx/lustreFileSystem.LustreFileSystem */ Boolean]
   }
   
   trait LustreFileSystemArgs extends StObject {
@@ -262,113 +257,78 @@ object lustreFileSystemMod {
   }
   object LustreFileSystemArgs {
     
-    @scala.inline
-    def apply(storageCapacity: Input[Double], subnetIds: Input[String]): LustreFileSystemArgs = {
+    inline def apply(storageCapacity: Input[Double], subnetIds: Input[String]): LustreFileSystemArgs = {
       val __obj = js.Dynamic.literal(storageCapacity = storageCapacity.asInstanceOf[js.Any], subnetIds = subnetIds.asInstanceOf[js.Any])
       __obj.asInstanceOf[LustreFileSystemArgs]
     }
     
-    @scala.inline
-    implicit class LustreFileSystemArgsMutableBuilder[Self <: LustreFileSystemArgs] (val x: Self) extends AnyVal {
+    extension [Self <: LustreFileSystemArgs](x: Self) {
       
-      @scala.inline
-      def setAutoImportPolicy(value: Input[String]): Self = StObject.set(x, "autoImportPolicy", value.asInstanceOf[js.Any])
+      inline def setAutoImportPolicy(value: Input[String]): Self = StObject.set(x, "autoImportPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoImportPolicyUndefined: Self = StObject.set(x, "autoImportPolicy", js.undefined)
+      inline def setAutoImportPolicyUndefined: Self = StObject.set(x, "autoImportPolicy", js.undefined)
       
-      @scala.inline
-      def setAutomaticBackupRetentionDays(value: Input[Double]): Self = StObject.set(x, "automaticBackupRetentionDays", value.asInstanceOf[js.Any])
+      inline def setAutomaticBackupRetentionDays(value: Input[Double]): Self = StObject.set(x, "automaticBackupRetentionDays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutomaticBackupRetentionDaysUndefined: Self = StObject.set(x, "automaticBackupRetentionDays", js.undefined)
+      inline def setAutomaticBackupRetentionDaysUndefined: Self = StObject.set(x, "automaticBackupRetentionDays", js.undefined)
       
-      @scala.inline
-      def setCopyTagsToBackups(value: Input[Boolean]): Self = StObject.set(x, "copyTagsToBackups", value.asInstanceOf[js.Any])
+      inline def setCopyTagsToBackups(value: Input[Boolean]): Self = StObject.set(x, "copyTagsToBackups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCopyTagsToBackupsUndefined: Self = StObject.set(x, "copyTagsToBackups", js.undefined)
+      inline def setCopyTagsToBackupsUndefined: Self = StObject.set(x, "copyTagsToBackups", js.undefined)
       
-      @scala.inline
-      def setDailyAutomaticBackupStartTime(value: Input[String]): Self = StObject.set(x, "dailyAutomaticBackupStartTime", value.asInstanceOf[js.Any])
+      inline def setDailyAutomaticBackupStartTime(value: Input[String]): Self = StObject.set(x, "dailyAutomaticBackupStartTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDailyAutomaticBackupStartTimeUndefined: Self = StObject.set(x, "dailyAutomaticBackupStartTime", js.undefined)
+      inline def setDailyAutomaticBackupStartTimeUndefined: Self = StObject.set(x, "dailyAutomaticBackupStartTime", js.undefined)
       
-      @scala.inline
-      def setDeploymentType(value: Input[String]): Self = StObject.set(x, "deploymentType", value.asInstanceOf[js.Any])
+      inline def setDeploymentType(value: Input[String]): Self = StObject.set(x, "deploymentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeploymentTypeUndefined: Self = StObject.set(x, "deploymentType", js.undefined)
+      inline def setDeploymentTypeUndefined: Self = StObject.set(x, "deploymentType", js.undefined)
       
-      @scala.inline
-      def setDriveCacheType(value: Input[String]): Self = StObject.set(x, "driveCacheType", value.asInstanceOf[js.Any])
+      inline def setDriveCacheType(value: Input[String]): Self = StObject.set(x, "driveCacheType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDriveCacheTypeUndefined: Self = StObject.set(x, "driveCacheType", js.undefined)
+      inline def setDriveCacheTypeUndefined: Self = StObject.set(x, "driveCacheType", js.undefined)
       
-      @scala.inline
-      def setExportPath(value: Input[String]): Self = StObject.set(x, "exportPath", value.asInstanceOf[js.Any])
+      inline def setExportPath(value: Input[String]): Self = StObject.set(x, "exportPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportPathUndefined: Self = StObject.set(x, "exportPath", js.undefined)
+      inline def setExportPathUndefined: Self = StObject.set(x, "exportPath", js.undefined)
       
-      @scala.inline
-      def setImportPath(value: Input[String]): Self = StObject.set(x, "importPath", value.asInstanceOf[js.Any])
+      inline def setImportPath(value: Input[String]): Self = StObject.set(x, "importPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportPathUndefined: Self = StObject.set(x, "importPath", js.undefined)
+      inline def setImportPathUndefined: Self = StObject.set(x, "importPath", js.undefined)
       
-      @scala.inline
-      def setImportedFileChunkSize(value: Input[Double]): Self = StObject.set(x, "importedFileChunkSize", value.asInstanceOf[js.Any])
+      inline def setImportedFileChunkSize(value: Input[Double]): Self = StObject.set(x, "importedFileChunkSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportedFileChunkSizeUndefined: Self = StObject.set(x, "importedFileChunkSize", js.undefined)
+      inline def setImportedFileChunkSizeUndefined: Self = StObject.set(x, "importedFileChunkSize", js.undefined)
       
-      @scala.inline
-      def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+      inline def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
+      inline def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
       
-      @scala.inline
-      def setPerUnitStorageThroughput(value: Input[Double]): Self = StObject.set(x, "perUnitStorageThroughput", value.asInstanceOf[js.Any])
+      inline def setPerUnitStorageThroughput(value: Input[Double]): Self = StObject.set(x, "perUnitStorageThroughput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPerUnitStorageThroughputUndefined: Self = StObject.set(x, "perUnitStorageThroughput", js.undefined)
+      inline def setPerUnitStorageThroughputUndefined: Self = StObject.set(x, "perUnitStorageThroughput", js.undefined)
       
-      @scala.inline
-      def setSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroupIds", value.asInstanceOf[js.Any])
+      inline def setSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroupIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupIdsUndefined: Self = StObject.set(x, "securityGroupIds", js.undefined)
+      inline def setSecurityGroupIdsUndefined: Self = StObject.set(x, "securityGroupIds", js.undefined)
       
-      @scala.inline
-      def setSecurityGroupIdsVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroupIds", js.Array(value :_*))
+      inline def setSecurityGroupIdsVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroupIds", js.Array(value :_*))
       
-      @scala.inline
-      def setStorageCapacity(value: Input[Double]): Self = StObject.set(x, "storageCapacity", value.asInstanceOf[js.Any])
+      inline def setStorageCapacity(value: Input[Double]): Self = StObject.set(x, "storageCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageType(value: Input[String]): Self = StObject.set(x, "storageType", value.asInstanceOf[js.Any])
+      inline def setStorageType(value: Input[String]): Self = StObject.set(x, "storageType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageTypeUndefined: Self = StObject.set(x, "storageType", js.undefined)
+      inline def setStorageTypeUndefined: Self = StObject.set(x, "storageType", js.undefined)
       
-      @scala.inline
-      def setSubnetIds(value: Input[String]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
+      inline def setSubnetIds(value: Input[String]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setWeeklyMaintenanceStartTime(value: Input[String]): Self = StObject.set(x, "weeklyMaintenanceStartTime", value.asInstanceOf[js.Any])
+      inline def setWeeklyMaintenanceStartTime(value: Input[String]): Self = StObject.set(x, "weeklyMaintenanceStartTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeeklyMaintenanceStartTimeUndefined: Self = StObject.set(x, "weeklyMaintenanceStartTime", js.undefined)
+      inline def setWeeklyMaintenanceStartTimeUndefined: Self = StObject.set(x, "weeklyMaintenanceStartTime", js.undefined)
     }
   }
   
@@ -491,158 +451,108 @@ object lustreFileSystemMod {
   }
   object LustreFileSystemState {
     
-    @scala.inline
-    def apply(): LustreFileSystemState = {
+    inline def apply(): LustreFileSystemState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LustreFileSystemState]
     }
     
-    @scala.inline
-    implicit class LustreFileSystemStateMutableBuilder[Self <: LustreFileSystemState] (val x: Self) extends AnyVal {
+    extension [Self <: LustreFileSystemState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setAutoImportPolicy(value: Input[String]): Self = StObject.set(x, "autoImportPolicy", value.asInstanceOf[js.Any])
+      inline def setAutoImportPolicy(value: Input[String]): Self = StObject.set(x, "autoImportPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoImportPolicyUndefined: Self = StObject.set(x, "autoImportPolicy", js.undefined)
+      inline def setAutoImportPolicyUndefined: Self = StObject.set(x, "autoImportPolicy", js.undefined)
       
-      @scala.inline
-      def setAutomaticBackupRetentionDays(value: Input[Double]): Self = StObject.set(x, "automaticBackupRetentionDays", value.asInstanceOf[js.Any])
+      inline def setAutomaticBackupRetentionDays(value: Input[Double]): Self = StObject.set(x, "automaticBackupRetentionDays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutomaticBackupRetentionDaysUndefined: Self = StObject.set(x, "automaticBackupRetentionDays", js.undefined)
+      inline def setAutomaticBackupRetentionDaysUndefined: Self = StObject.set(x, "automaticBackupRetentionDays", js.undefined)
       
-      @scala.inline
-      def setCopyTagsToBackups(value: Input[Boolean]): Self = StObject.set(x, "copyTagsToBackups", value.asInstanceOf[js.Any])
+      inline def setCopyTagsToBackups(value: Input[Boolean]): Self = StObject.set(x, "copyTagsToBackups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCopyTagsToBackupsUndefined: Self = StObject.set(x, "copyTagsToBackups", js.undefined)
+      inline def setCopyTagsToBackupsUndefined: Self = StObject.set(x, "copyTagsToBackups", js.undefined)
       
-      @scala.inline
-      def setDailyAutomaticBackupStartTime(value: Input[String]): Self = StObject.set(x, "dailyAutomaticBackupStartTime", value.asInstanceOf[js.Any])
+      inline def setDailyAutomaticBackupStartTime(value: Input[String]): Self = StObject.set(x, "dailyAutomaticBackupStartTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDailyAutomaticBackupStartTimeUndefined: Self = StObject.set(x, "dailyAutomaticBackupStartTime", js.undefined)
+      inline def setDailyAutomaticBackupStartTimeUndefined: Self = StObject.set(x, "dailyAutomaticBackupStartTime", js.undefined)
       
-      @scala.inline
-      def setDeploymentType(value: Input[String]): Self = StObject.set(x, "deploymentType", value.asInstanceOf[js.Any])
+      inline def setDeploymentType(value: Input[String]): Self = StObject.set(x, "deploymentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeploymentTypeUndefined: Self = StObject.set(x, "deploymentType", js.undefined)
+      inline def setDeploymentTypeUndefined: Self = StObject.set(x, "deploymentType", js.undefined)
       
-      @scala.inline
-      def setDnsName(value: Input[String]): Self = StObject.set(x, "dnsName", value.asInstanceOf[js.Any])
+      inline def setDnsName(value: Input[String]): Self = StObject.set(x, "dnsName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDnsNameUndefined: Self = StObject.set(x, "dnsName", js.undefined)
+      inline def setDnsNameUndefined: Self = StObject.set(x, "dnsName", js.undefined)
       
-      @scala.inline
-      def setDriveCacheType(value: Input[String]): Self = StObject.set(x, "driveCacheType", value.asInstanceOf[js.Any])
+      inline def setDriveCacheType(value: Input[String]): Self = StObject.set(x, "driveCacheType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDriveCacheTypeUndefined: Self = StObject.set(x, "driveCacheType", js.undefined)
+      inline def setDriveCacheTypeUndefined: Self = StObject.set(x, "driveCacheType", js.undefined)
       
-      @scala.inline
-      def setExportPath(value: Input[String]): Self = StObject.set(x, "exportPath", value.asInstanceOf[js.Any])
+      inline def setExportPath(value: Input[String]): Self = StObject.set(x, "exportPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExportPathUndefined: Self = StObject.set(x, "exportPath", js.undefined)
+      inline def setExportPathUndefined: Self = StObject.set(x, "exportPath", js.undefined)
       
-      @scala.inline
-      def setImportPath(value: Input[String]): Self = StObject.set(x, "importPath", value.asInstanceOf[js.Any])
+      inline def setImportPath(value: Input[String]): Self = StObject.set(x, "importPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportPathUndefined: Self = StObject.set(x, "importPath", js.undefined)
+      inline def setImportPathUndefined: Self = StObject.set(x, "importPath", js.undefined)
       
-      @scala.inline
-      def setImportedFileChunkSize(value: Input[Double]): Self = StObject.set(x, "importedFileChunkSize", value.asInstanceOf[js.Any])
+      inline def setImportedFileChunkSize(value: Input[Double]): Self = StObject.set(x, "importedFileChunkSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImportedFileChunkSizeUndefined: Self = StObject.set(x, "importedFileChunkSize", js.undefined)
+      inline def setImportedFileChunkSizeUndefined: Self = StObject.set(x, "importedFileChunkSize", js.undefined)
       
-      @scala.inline
-      def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+      inline def setKmsKeyId(value: Input[String]): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
+      inline def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
       
-      @scala.inline
-      def setMountName(value: Input[String]): Self = StObject.set(x, "mountName", value.asInstanceOf[js.Any])
+      inline def setMountName(value: Input[String]): Self = StObject.set(x, "mountName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMountNameUndefined: Self = StObject.set(x, "mountName", js.undefined)
+      inline def setMountNameUndefined: Self = StObject.set(x, "mountName", js.undefined)
       
-      @scala.inline
-      def setNetworkInterfaceIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "networkInterfaceIds", value.asInstanceOf[js.Any])
+      inline def setNetworkInterfaceIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "networkInterfaceIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNetworkInterfaceIdsUndefined: Self = StObject.set(x, "networkInterfaceIds", js.undefined)
+      inline def setNetworkInterfaceIdsUndefined: Self = StObject.set(x, "networkInterfaceIds", js.undefined)
       
-      @scala.inline
-      def setNetworkInterfaceIdsVarargs(value: Input[String]*): Self = StObject.set(x, "networkInterfaceIds", js.Array(value :_*))
+      inline def setNetworkInterfaceIdsVarargs(value: Input[String]*): Self = StObject.set(x, "networkInterfaceIds", js.Array(value :_*))
       
-      @scala.inline
-      def setOwnerId(value: Input[String]): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
+      inline def setOwnerId(value: Input[String]): Self = StObject.set(x, "ownerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwnerIdUndefined: Self = StObject.set(x, "ownerId", js.undefined)
+      inline def setOwnerIdUndefined: Self = StObject.set(x, "ownerId", js.undefined)
       
-      @scala.inline
-      def setPerUnitStorageThroughput(value: Input[Double]): Self = StObject.set(x, "perUnitStorageThroughput", value.asInstanceOf[js.Any])
+      inline def setPerUnitStorageThroughput(value: Input[Double]): Self = StObject.set(x, "perUnitStorageThroughput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPerUnitStorageThroughputUndefined: Self = StObject.set(x, "perUnitStorageThroughput", js.undefined)
+      inline def setPerUnitStorageThroughputUndefined: Self = StObject.set(x, "perUnitStorageThroughput", js.undefined)
       
-      @scala.inline
-      def setSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroupIds", value.asInstanceOf[js.Any])
+      inline def setSecurityGroupIds(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "securityGroupIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecurityGroupIdsUndefined: Self = StObject.set(x, "securityGroupIds", js.undefined)
+      inline def setSecurityGroupIdsUndefined: Self = StObject.set(x, "securityGroupIds", js.undefined)
       
-      @scala.inline
-      def setSecurityGroupIdsVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroupIds", js.Array(value :_*))
+      inline def setSecurityGroupIdsVarargs(value: Input[String]*): Self = StObject.set(x, "securityGroupIds", js.Array(value :_*))
       
-      @scala.inline
-      def setStorageCapacity(value: Input[Double]): Self = StObject.set(x, "storageCapacity", value.asInstanceOf[js.Any])
+      inline def setStorageCapacity(value: Input[Double]): Self = StObject.set(x, "storageCapacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageCapacityUndefined: Self = StObject.set(x, "storageCapacity", js.undefined)
+      inline def setStorageCapacityUndefined: Self = StObject.set(x, "storageCapacity", js.undefined)
       
-      @scala.inline
-      def setStorageType(value: Input[String]): Self = StObject.set(x, "storageType", value.asInstanceOf[js.Any])
+      inline def setStorageType(value: Input[String]): Self = StObject.set(x, "storageType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageTypeUndefined: Self = StObject.set(x, "storageType", js.undefined)
+      inline def setStorageTypeUndefined: Self = StObject.set(x, "storageType", js.undefined)
       
-      @scala.inline
-      def setSubnetIds(value: Input[String]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
+      inline def setSubnetIds(value: Input[String]): Self = StObject.set(x, "subnetIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubnetIdsUndefined: Self = StObject.set(x, "subnetIds", js.undefined)
+      inline def setSubnetIdsUndefined: Self = StObject.set(x, "subnetIds", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: Input[String]): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
+      inline def setVpcIdUndefined: Self = StObject.set(x, "vpcId", js.undefined)
       
-      @scala.inline
-      def setWeeklyMaintenanceStartTime(value: Input[String]): Self = StObject.set(x, "weeklyMaintenanceStartTime", value.asInstanceOf[js.Any])
+      inline def setWeeklyMaintenanceStartTime(value: Input[String]): Self = StObject.set(x, "weeklyMaintenanceStartTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeeklyMaintenanceStartTimeUndefined: Self = StObject.set(x, "weeklyMaintenanceStartTime", js.undefined)
+      inline def setWeeklyMaintenanceStartTimeUndefined: Self = StObject.set(x, "weeklyMaintenanceStartTime", js.undefined)
     }
   }
 }

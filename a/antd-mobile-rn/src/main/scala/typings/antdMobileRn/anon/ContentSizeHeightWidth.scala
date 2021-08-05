@@ -10,16 +10,13 @@ trait ContentSizeHeightWidth extends StObject {
 }
 object ContentSizeHeightWidth {
   
-  @scala.inline
-  def apply(contentSize: HeightWidth): ContentSizeHeightWidth = {
+  inline def apply(contentSize: HeightWidth): ContentSizeHeightWidth = {
     val __obj = js.Dynamic.literal(contentSize = contentSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContentSizeHeightWidth]
   }
   
-  @scala.inline
-  implicit class ContentSizeHeightWidthMutableBuilder[Self <: ContentSizeHeightWidth] (val x: Self) extends AnyVal {
+  extension [Self <: ContentSizeHeightWidth](x: Self) {
     
-    @scala.inline
-    def setContentSize(value: HeightWidth): Self = StObject.set(x, "contentSize", value.asInstanceOf[js.Any])
+    inline def setContentSize(value: HeightWidth): Self = StObject.set(x, "contentSize", value.asInstanceOf[js.Any])
   }
 }

@@ -89,110 +89,76 @@ object gapi {
       }
       object GoogleAdsHomeservicesLocalservicesV1AccountReport {
         
-        @scala.inline
-        def apply(): GoogleAdsHomeservicesLocalservicesV1AccountReport = {
+        inline def apply(): GoogleAdsHomeservicesLocalservicesV1AccountReport = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleAdsHomeservicesLocalservicesV1AccountReport]
         }
         
-        @scala.inline
-        implicit class GoogleAdsHomeservicesLocalservicesV1AccountReportMutableBuilder[Self <: GoogleAdsHomeservicesLocalservicesV1AccountReport] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleAdsHomeservicesLocalservicesV1AccountReport](x: Self) {
           
-          @scala.inline
-          def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+          inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+          inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
           
-          @scala.inline
-          def setAggregatorInfo(value: GoogleAdsHomeservicesLocalservicesV1AggregatorInfo): Self = StObject.set(x, "aggregatorInfo", value.asInstanceOf[js.Any])
+          inline def setAggregatorInfo(value: GoogleAdsHomeservicesLocalservicesV1AggregatorInfo): Self = StObject.set(x, "aggregatorInfo", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAggregatorInfoUndefined: Self = StObject.set(x, "aggregatorInfo", js.undefined)
+          inline def setAggregatorInfoUndefined: Self = StObject.set(x, "aggregatorInfo", js.undefined)
           
-          @scala.inline
-          def setAverageFiveStarRating(value: Double): Self = StObject.set(x, "averageFiveStarRating", value.asInstanceOf[js.Any])
+          inline def setAverageFiveStarRating(value: Double): Self = StObject.set(x, "averageFiveStarRating", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAverageFiveStarRatingUndefined: Self = StObject.set(x, "averageFiveStarRating", js.undefined)
+          inline def setAverageFiveStarRatingUndefined: Self = StObject.set(x, "averageFiveStarRating", js.undefined)
           
-          @scala.inline
-          def setAverageWeeklyBudget(value: Double): Self = StObject.set(x, "averageWeeklyBudget", value.asInstanceOf[js.Any])
+          inline def setAverageWeeklyBudget(value: Double): Self = StObject.set(x, "averageWeeklyBudget", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAverageWeeklyBudgetUndefined: Self = StObject.set(x, "averageWeeklyBudget", js.undefined)
+          inline def setAverageWeeklyBudgetUndefined: Self = StObject.set(x, "averageWeeklyBudget", js.undefined)
           
-          @scala.inline
-          def setBusinessName(value: String): Self = StObject.set(x, "businessName", value.asInstanceOf[js.Any])
+          inline def setBusinessName(value: String): Self = StObject.set(x, "businessName", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setBusinessNameUndefined: Self = StObject.set(x, "businessName", js.undefined)
+          inline def setBusinessNameUndefined: Self = StObject.set(x, "businessName", js.undefined)
           
-          @scala.inline
-          def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
+          inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
+          inline def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
           
-          @scala.inline
-          def setCurrentPeriodChargedLeads(value: String): Self = StObject.set(x, "currentPeriodChargedLeads", value.asInstanceOf[js.Any])
+          inline def setCurrentPeriodChargedLeads(value: String): Self = StObject.set(x, "currentPeriodChargedLeads", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCurrentPeriodChargedLeadsUndefined: Self = StObject.set(x, "currentPeriodChargedLeads", js.undefined)
+          inline def setCurrentPeriodChargedLeadsUndefined: Self = StObject.set(x, "currentPeriodChargedLeads", js.undefined)
           
-          @scala.inline
-          def setCurrentPeriodConnectedPhoneCalls(value: String): Self = StObject.set(x, "currentPeriodConnectedPhoneCalls", value.asInstanceOf[js.Any])
+          inline def setCurrentPeriodConnectedPhoneCalls(value: String): Self = StObject.set(x, "currentPeriodConnectedPhoneCalls", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCurrentPeriodConnectedPhoneCallsUndefined: Self = StObject.set(x, "currentPeriodConnectedPhoneCalls", js.undefined)
+          inline def setCurrentPeriodConnectedPhoneCallsUndefined: Self = StObject.set(x, "currentPeriodConnectedPhoneCalls", js.undefined)
           
-          @scala.inline
-          def setCurrentPeriodPhoneCalls(value: String): Self = StObject.set(x, "currentPeriodPhoneCalls", value.asInstanceOf[js.Any])
+          inline def setCurrentPeriodPhoneCalls(value: String): Self = StObject.set(x, "currentPeriodPhoneCalls", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCurrentPeriodPhoneCallsUndefined: Self = StObject.set(x, "currentPeriodPhoneCalls", js.undefined)
+          inline def setCurrentPeriodPhoneCallsUndefined: Self = StObject.set(x, "currentPeriodPhoneCalls", js.undefined)
           
-          @scala.inline
-          def setCurrentPeriodTotalCost(value: Double): Self = StObject.set(x, "currentPeriodTotalCost", value.asInstanceOf[js.Any])
+          inline def setCurrentPeriodTotalCost(value: Double): Self = StObject.set(x, "currentPeriodTotalCost", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCurrentPeriodTotalCostUndefined: Self = StObject.set(x, "currentPeriodTotalCost", js.undefined)
+          inline def setCurrentPeriodTotalCostUndefined: Self = StObject.set(x, "currentPeriodTotalCost", js.undefined)
           
-          @scala.inline
-          def setPhoneLeadResponsiveness(value: Double): Self = StObject.set(x, "phoneLeadResponsiveness", value.asInstanceOf[js.Any])
+          inline def setPhoneLeadResponsiveness(value: Double): Self = StObject.set(x, "phoneLeadResponsiveness", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPhoneLeadResponsivenessUndefined: Self = StObject.set(x, "phoneLeadResponsiveness", js.undefined)
+          inline def setPhoneLeadResponsivenessUndefined: Self = StObject.set(x, "phoneLeadResponsiveness", js.undefined)
           
-          @scala.inline
-          def setPreviousPeriodChargedLeads(value: String): Self = StObject.set(x, "previousPeriodChargedLeads", value.asInstanceOf[js.Any])
+          inline def setPreviousPeriodChargedLeads(value: String): Self = StObject.set(x, "previousPeriodChargedLeads", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPreviousPeriodChargedLeadsUndefined: Self = StObject.set(x, "previousPeriodChargedLeads", js.undefined)
+          inline def setPreviousPeriodChargedLeadsUndefined: Self = StObject.set(x, "previousPeriodChargedLeads", js.undefined)
           
-          @scala.inline
-          def setPreviousPeriodConnectedPhoneCalls(value: String): Self = StObject.set(x, "previousPeriodConnectedPhoneCalls", value.asInstanceOf[js.Any])
+          inline def setPreviousPeriodConnectedPhoneCalls(value: String): Self = StObject.set(x, "previousPeriodConnectedPhoneCalls", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPreviousPeriodConnectedPhoneCallsUndefined: Self = StObject.set(x, "previousPeriodConnectedPhoneCalls", js.undefined)
+          inline def setPreviousPeriodConnectedPhoneCallsUndefined: Self = StObject.set(x, "previousPeriodConnectedPhoneCalls", js.undefined)
           
-          @scala.inline
-          def setPreviousPeriodPhoneCalls(value: String): Self = StObject.set(x, "previousPeriodPhoneCalls", value.asInstanceOf[js.Any])
+          inline def setPreviousPeriodPhoneCalls(value: String): Self = StObject.set(x, "previousPeriodPhoneCalls", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPreviousPeriodPhoneCallsUndefined: Self = StObject.set(x, "previousPeriodPhoneCalls", js.undefined)
+          inline def setPreviousPeriodPhoneCallsUndefined: Self = StObject.set(x, "previousPeriodPhoneCalls", js.undefined)
           
-          @scala.inline
-          def setPreviousPeriodTotalCost(value: Double): Self = StObject.set(x, "previousPeriodTotalCost", value.asInstanceOf[js.Any])
+          inline def setPreviousPeriodTotalCost(value: Double): Self = StObject.set(x, "previousPeriodTotalCost", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPreviousPeriodTotalCostUndefined: Self = StObject.set(x, "previousPeriodTotalCost", js.undefined)
+          inline def setPreviousPeriodTotalCostUndefined: Self = StObject.set(x, "previousPeriodTotalCost", js.undefined)
           
-          @scala.inline
-          def setTotalReview(value: Double): Self = StObject.set(x, "totalReview", value.asInstanceOf[js.Any])
+          inline def setTotalReview(value: Double): Self = StObject.set(x, "totalReview", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTotalReviewUndefined: Self = StObject.set(x, "totalReview", js.undefined)
+          inline def setTotalReviewUndefined: Self = StObject.set(x, "totalReview", js.undefined)
         }
       }
       
@@ -203,20 +169,16 @@ object gapi {
       }
       object GoogleAdsHomeservicesLocalservicesV1AggregatorInfo {
         
-        @scala.inline
-        def apply(): GoogleAdsHomeservicesLocalservicesV1AggregatorInfo = {
+        inline def apply(): GoogleAdsHomeservicesLocalservicesV1AggregatorInfo = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleAdsHomeservicesLocalservicesV1AggregatorInfo]
         }
         
-        @scala.inline
-        implicit class GoogleAdsHomeservicesLocalservicesV1AggregatorInfoMutableBuilder[Self <: GoogleAdsHomeservicesLocalservicesV1AggregatorInfo] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleAdsHomeservicesLocalservicesV1AggregatorInfo](x: Self) {
           
-          @scala.inline
-          def setAggregatorProviderId(value: String): Self = StObject.set(x, "aggregatorProviderId", value.asInstanceOf[js.Any])
+          inline def setAggregatorProviderId(value: String): Self = StObject.set(x, "aggregatorProviderId", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAggregatorProviderIdUndefined: Self = StObject.set(x, "aggregatorProviderId", js.undefined)
+          inline def setAggregatorProviderIdUndefined: Self = StObject.set(x, "aggregatorProviderId", js.undefined)
         }
       }
       
@@ -269,104 +231,72 @@ object gapi {
       }
       object GoogleAdsHomeservicesLocalservicesV1DetailedLeadReport {
         
-        @scala.inline
-        def apply(): GoogleAdsHomeservicesLocalservicesV1DetailedLeadReport = {
+        inline def apply(): GoogleAdsHomeservicesLocalservicesV1DetailedLeadReport = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleAdsHomeservicesLocalservicesV1DetailedLeadReport]
         }
         
-        @scala.inline
-        implicit class GoogleAdsHomeservicesLocalservicesV1DetailedLeadReportMutableBuilder[Self <: GoogleAdsHomeservicesLocalservicesV1DetailedLeadReport] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleAdsHomeservicesLocalservicesV1DetailedLeadReport](x: Self) {
           
-          @scala.inline
-          def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+          inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+          inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
           
-          @scala.inline
-          def setAggregatorInfo(value: GoogleAdsHomeservicesLocalservicesV1AggregatorInfo): Self = StObject.set(x, "aggregatorInfo", value.asInstanceOf[js.Any])
+          inline def setAggregatorInfo(value: GoogleAdsHomeservicesLocalservicesV1AggregatorInfo): Self = StObject.set(x, "aggregatorInfo", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAggregatorInfoUndefined: Self = StObject.set(x, "aggregatorInfo", js.undefined)
+          inline def setAggregatorInfoUndefined: Self = StObject.set(x, "aggregatorInfo", js.undefined)
           
-          @scala.inline
-          def setBusinessName(value: String): Self = StObject.set(x, "businessName", value.asInstanceOf[js.Any])
+          inline def setBusinessName(value: String): Self = StObject.set(x, "businessName", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setBusinessNameUndefined: Self = StObject.set(x, "businessName", js.undefined)
+          inline def setBusinessNameUndefined: Self = StObject.set(x, "businessName", js.undefined)
           
-          @scala.inline
-          def setChargeStatus(value: String): Self = StObject.set(x, "chargeStatus", value.asInstanceOf[js.Any])
+          inline def setChargeStatus(value: String): Self = StObject.set(x, "chargeStatus", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setChargeStatusUndefined: Self = StObject.set(x, "chargeStatus", js.undefined)
+          inline def setChargeStatusUndefined: Self = StObject.set(x, "chargeStatus", js.undefined)
           
-          @scala.inline
-          def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
+          inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
+          inline def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
           
-          @scala.inline
-          def setDisputeStatus(value: String): Self = StObject.set(x, "disputeStatus", value.asInstanceOf[js.Any])
+          inline def setDisputeStatus(value: String): Self = StObject.set(x, "disputeStatus", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDisputeStatusUndefined: Self = StObject.set(x, "disputeStatus", js.undefined)
+          inline def setDisputeStatusUndefined: Self = StObject.set(x, "disputeStatus", js.undefined)
           
-          @scala.inline
-          def setGeo(value: String): Self = StObject.set(x, "geo", value.asInstanceOf[js.Any])
+          inline def setGeo(value: String): Self = StObject.set(x, "geo", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setGeoUndefined: Self = StObject.set(x, "geo", js.undefined)
+          inline def setGeoUndefined: Self = StObject.set(x, "geo", js.undefined)
           
-          @scala.inline
-          def setLeadCategory(value: String): Self = StObject.set(x, "leadCategory", value.asInstanceOf[js.Any])
+          inline def setLeadCategory(value: String): Self = StObject.set(x, "leadCategory", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLeadCategoryUndefined: Self = StObject.set(x, "leadCategory", js.undefined)
+          inline def setLeadCategoryUndefined: Self = StObject.set(x, "leadCategory", js.undefined)
           
-          @scala.inline
-          def setLeadCreationTimestamp(value: String): Self = StObject.set(x, "leadCreationTimestamp", value.asInstanceOf[js.Any])
+          inline def setLeadCreationTimestamp(value: String): Self = StObject.set(x, "leadCreationTimestamp", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLeadCreationTimestampUndefined: Self = StObject.set(x, "leadCreationTimestamp", js.undefined)
+          inline def setLeadCreationTimestampUndefined: Self = StObject.set(x, "leadCreationTimestamp", js.undefined)
           
-          @scala.inline
-          def setLeadId(value: String): Self = StObject.set(x, "leadId", value.asInstanceOf[js.Any])
+          inline def setLeadId(value: String): Self = StObject.set(x, "leadId", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLeadIdUndefined: Self = StObject.set(x, "leadId", js.undefined)
+          inline def setLeadIdUndefined: Self = StObject.set(x, "leadId", js.undefined)
           
-          @scala.inline
-          def setLeadPrice(value: Double): Self = StObject.set(x, "leadPrice", value.asInstanceOf[js.Any])
+          inline def setLeadPrice(value: Double): Self = StObject.set(x, "leadPrice", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLeadPriceUndefined: Self = StObject.set(x, "leadPrice", js.undefined)
+          inline def setLeadPriceUndefined: Self = StObject.set(x, "leadPrice", js.undefined)
           
-          @scala.inline
-          def setLeadType(value: String): Self = StObject.set(x, "leadType", value.asInstanceOf[js.Any])
+          inline def setLeadType(value: String): Self = StObject.set(x, "leadType", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLeadTypeUndefined: Self = StObject.set(x, "leadType", js.undefined)
+          inline def setLeadTypeUndefined: Self = StObject.set(x, "leadType", js.undefined)
           
-          @scala.inline
-          def setMessageLead(value: GoogleAdsHomeservicesLocalservicesV1MessageLead): Self = StObject.set(x, "messageLead", value.asInstanceOf[js.Any])
+          inline def setMessageLead(value: GoogleAdsHomeservicesLocalservicesV1MessageLead): Self = StObject.set(x, "messageLead", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setMessageLeadUndefined: Self = StObject.set(x, "messageLead", js.undefined)
+          inline def setMessageLeadUndefined: Self = StObject.set(x, "messageLead", js.undefined)
           
-          @scala.inline
-          def setPhoneLead(value: GoogleAdsHomeservicesLocalservicesV1PhoneLead): Self = StObject.set(x, "phoneLead", value.asInstanceOf[js.Any])
+          inline def setPhoneLead(value: GoogleAdsHomeservicesLocalservicesV1PhoneLead): Self = StObject.set(x, "phoneLead", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPhoneLeadUndefined: Self = StObject.set(x, "phoneLead", js.undefined)
+          inline def setPhoneLeadUndefined: Self = StObject.set(x, "phoneLead", js.undefined)
           
-          @scala.inline
-          def setTimezone(value: GoogleTypeTimeZone): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+          inline def setTimezone(value: GoogleTypeTimeZone): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
+          inline def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
         }
       }
       
@@ -386,38 +316,28 @@ object gapi {
       }
       object GoogleAdsHomeservicesLocalservicesV1MessageLead {
         
-        @scala.inline
-        def apply(): GoogleAdsHomeservicesLocalservicesV1MessageLead = {
+        inline def apply(): GoogleAdsHomeservicesLocalservicesV1MessageLead = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleAdsHomeservicesLocalservicesV1MessageLead]
         }
         
-        @scala.inline
-        implicit class GoogleAdsHomeservicesLocalservicesV1MessageLeadMutableBuilder[Self <: GoogleAdsHomeservicesLocalservicesV1MessageLead] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleAdsHomeservicesLocalservicesV1MessageLead](x: Self) {
           
-          @scala.inline
-          def setConsumerPhoneNumber(value: String): Self = StObject.set(x, "consumerPhoneNumber", value.asInstanceOf[js.Any])
+          inline def setConsumerPhoneNumber(value: String): Self = StObject.set(x, "consumerPhoneNumber", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setConsumerPhoneNumberUndefined: Self = StObject.set(x, "consumerPhoneNumber", js.undefined)
+          inline def setConsumerPhoneNumberUndefined: Self = StObject.set(x, "consumerPhoneNumber", js.undefined)
           
-          @scala.inline
-          def setCustomerName(value: String): Self = StObject.set(x, "customerName", value.asInstanceOf[js.Any])
+          inline def setCustomerName(value: String): Self = StObject.set(x, "customerName", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setCustomerNameUndefined: Self = StObject.set(x, "customerName", js.undefined)
+          inline def setCustomerNameUndefined: Self = StObject.set(x, "customerName", js.undefined)
           
-          @scala.inline
-          def setJobType(value: String): Self = StObject.set(x, "jobType", value.asInstanceOf[js.Any])
+          inline def setJobType(value: String): Self = StObject.set(x, "jobType", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setJobTypeUndefined: Self = StObject.set(x, "jobType", js.undefined)
+          inline def setJobTypeUndefined: Self = StObject.set(x, "jobType", js.undefined)
           
-          @scala.inline
-          def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
+          inline def setPostalCode(value: String): Self = StObject.set(x, "postalCode", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPostalCodeUndefined: Self = StObject.set(x, "postalCode", js.undefined)
+          inline def setPostalCodeUndefined: Self = StObject.set(x, "postalCode", js.undefined)
         }
       }
       
@@ -434,32 +354,24 @@ object gapi {
       }
       object GoogleAdsHomeservicesLocalservicesV1PhoneLead {
         
-        @scala.inline
-        def apply(): GoogleAdsHomeservicesLocalservicesV1PhoneLead = {
+        inline def apply(): GoogleAdsHomeservicesLocalservicesV1PhoneLead = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleAdsHomeservicesLocalservicesV1PhoneLead]
         }
         
-        @scala.inline
-        implicit class GoogleAdsHomeservicesLocalservicesV1PhoneLeadMutableBuilder[Self <: GoogleAdsHomeservicesLocalservicesV1PhoneLead] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleAdsHomeservicesLocalservicesV1PhoneLead](x: Self) {
           
-          @scala.inline
-          def setChargedCallTimestamp(value: String): Self = StObject.set(x, "chargedCallTimestamp", value.asInstanceOf[js.Any])
+          inline def setChargedCallTimestamp(value: String): Self = StObject.set(x, "chargedCallTimestamp", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setChargedCallTimestampUndefined: Self = StObject.set(x, "chargedCallTimestamp", js.undefined)
+          inline def setChargedCallTimestampUndefined: Self = StObject.set(x, "chargedCallTimestamp", js.undefined)
           
-          @scala.inline
-          def setChargedConnectedCallDurationSeconds(value: String): Self = StObject.set(x, "chargedConnectedCallDurationSeconds", value.asInstanceOf[js.Any])
+          inline def setChargedConnectedCallDurationSeconds(value: String): Self = StObject.set(x, "chargedConnectedCallDurationSeconds", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setChargedConnectedCallDurationSecondsUndefined: Self = StObject.set(x, "chargedConnectedCallDurationSeconds", js.undefined)
+          inline def setChargedConnectedCallDurationSecondsUndefined: Self = StObject.set(x, "chargedConnectedCallDurationSeconds", js.undefined)
           
-          @scala.inline
-          def setConsumerPhoneNumber(value: String): Self = StObject.set(x, "consumerPhoneNumber", value.asInstanceOf[js.Any])
+          inline def setConsumerPhoneNumber(value: String): Self = StObject.set(x, "consumerPhoneNumber", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setConsumerPhoneNumberUndefined: Self = StObject.set(x, "consumerPhoneNumber", js.undefined)
+          inline def setConsumerPhoneNumberUndefined: Self = StObject.set(x, "consumerPhoneNumber", js.undefined)
         }
       }
       
@@ -473,29 +385,22 @@ object gapi {
       }
       object GoogleAdsHomeservicesLocalservicesV1SearchAccountReportsResponse {
         
-        @scala.inline
-        def apply(): GoogleAdsHomeservicesLocalservicesV1SearchAccountReportsResponse = {
+        inline def apply(): GoogleAdsHomeservicesLocalservicesV1SearchAccountReportsResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleAdsHomeservicesLocalservicesV1SearchAccountReportsResponse]
         }
         
-        @scala.inline
-        implicit class GoogleAdsHomeservicesLocalservicesV1SearchAccountReportsResponseMutableBuilder[Self <: GoogleAdsHomeservicesLocalservicesV1SearchAccountReportsResponse] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleAdsHomeservicesLocalservicesV1SearchAccountReportsResponse](x: Self) {
           
-          @scala.inline
-          def setAccountReports(value: js.Array[GoogleAdsHomeservicesLocalservicesV1AccountReport]): Self = StObject.set(x, "accountReports", value.asInstanceOf[js.Any])
+          inline def setAccountReports(value: js.Array[GoogleAdsHomeservicesLocalservicesV1AccountReport]): Self = StObject.set(x, "accountReports", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setAccountReportsUndefined: Self = StObject.set(x, "accountReports", js.undefined)
+          inline def setAccountReportsUndefined: Self = StObject.set(x, "accountReports", js.undefined)
           
-          @scala.inline
-          def setAccountReportsVarargs(value: GoogleAdsHomeservicesLocalservicesV1AccountReport*): Self = StObject.set(x, "accountReports", js.Array(value :_*))
+          inline def setAccountReportsVarargs(value: GoogleAdsHomeservicesLocalservicesV1AccountReport*): Self = StObject.set(x, "accountReports", js.Array(value :_*))
           
-          @scala.inline
-          def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+          inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+          inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
         }
       }
       
@@ -509,29 +414,22 @@ object gapi {
       }
       object GoogleAdsHomeservicesLocalservicesV1SearchDetailedLeadReportsResponse {
         
-        @scala.inline
-        def apply(): GoogleAdsHomeservicesLocalservicesV1SearchDetailedLeadReportsResponse = {
+        inline def apply(): GoogleAdsHomeservicesLocalservicesV1SearchDetailedLeadReportsResponse = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleAdsHomeservicesLocalservicesV1SearchDetailedLeadReportsResponse]
         }
         
-        @scala.inline
-        implicit class GoogleAdsHomeservicesLocalservicesV1SearchDetailedLeadReportsResponseMutableBuilder[Self <: GoogleAdsHomeservicesLocalservicesV1SearchDetailedLeadReportsResponse] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleAdsHomeservicesLocalservicesV1SearchDetailedLeadReportsResponse](x: Self) {
           
-          @scala.inline
-          def setDetailedLeadReports(value: js.Array[GoogleAdsHomeservicesLocalservicesV1DetailedLeadReport]): Self = StObject.set(x, "detailedLeadReports", value.asInstanceOf[js.Any])
+          inline def setDetailedLeadReports(value: js.Array[GoogleAdsHomeservicesLocalservicesV1DetailedLeadReport]): Self = StObject.set(x, "detailedLeadReports", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDetailedLeadReportsUndefined: Self = StObject.set(x, "detailedLeadReports", js.undefined)
+          inline def setDetailedLeadReportsUndefined: Self = StObject.set(x, "detailedLeadReports", js.undefined)
           
-          @scala.inline
-          def setDetailedLeadReportsVarargs(value: GoogleAdsHomeservicesLocalservicesV1DetailedLeadReport*): Self = StObject.set(x, "detailedLeadReports", js.Array(value :_*))
+          inline def setDetailedLeadReportsVarargs(value: GoogleAdsHomeservicesLocalservicesV1DetailedLeadReport*): Self = StObject.set(x, "detailedLeadReports", js.Array(value :_*))
           
-          @scala.inline
-          def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+          inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+          inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
         }
       }
       
@@ -545,26 +443,20 @@ object gapi {
       }
       object GoogleTypeTimeZone {
         
-        @scala.inline
-        def apply(): GoogleTypeTimeZone = {
+        inline def apply(): GoogleTypeTimeZone = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[GoogleTypeTimeZone]
         }
         
-        @scala.inline
-        implicit class GoogleTypeTimeZoneMutableBuilder[Self <: GoogleTypeTimeZone] (val x: Self) extends AnyVal {
+        extension [Self <: GoogleTypeTimeZone](x: Self) {
           
-          @scala.inline
-          def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+          inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+          inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
           
-          @scala.inline
-          def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+          inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+          inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
         }
       }
     }

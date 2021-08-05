@@ -10,9 +10,7 @@ object getDirectoryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getDirectory(filepath: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirectory")(filepath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def getDirectory(filepath: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirectory")(filepath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def getDirectorySync(filepath: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirectorySync")(filepath.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getDirectorySync(filepath: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirectorySync")(filepath.asInstanceOf[js.Any]).asInstanceOf[String]
 }

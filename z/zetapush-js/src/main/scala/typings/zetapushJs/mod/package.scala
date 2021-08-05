@@ -5,8 +5,7 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def VERSION: java.lang.String = typings.zetapushJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[java.lang.String]
+inline def VERSION: java.lang.String = typings.zetapushJs.mod.^.asInstanceOf[js.Dynamic].selectDynamic("VERSION").asInstanceOf[java.lang.String]
 
 type AsyncMacroServicePublisher = js.Function4[
 /* method */ java.lang.String, 

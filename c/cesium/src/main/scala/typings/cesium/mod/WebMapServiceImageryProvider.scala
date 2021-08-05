@@ -24,32 +24,27 @@ object WebMapServiceImageryProvider {
     @JSImport("cesium", "WebMapServiceImageryProvider.DefaultParameters.format")
     @js.native
     def format: String = js.native
-    @scala.inline
-    def format_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("format")(x.asInstanceOf[js.Any])
+    inline def format_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("format")(x.asInstanceOf[js.Any])
     
     @JSImport("cesium", "WebMapServiceImageryProvider.DefaultParameters.request")
     @js.native
     def request: String = js.native
-    @scala.inline
-    def request_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("request")(x.asInstanceOf[js.Any])
+    inline def request_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("request")(x.asInstanceOf[js.Any])
     
     @JSImport("cesium", "WebMapServiceImageryProvider.DefaultParameters.service")
     @js.native
     def service: String = js.native
-    @scala.inline
-    def service_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("service")(x.asInstanceOf[js.Any])
+    inline def service_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("service")(x.asInstanceOf[js.Any])
     
     @JSImport("cesium", "WebMapServiceImageryProvider.DefaultParameters.styles")
     @js.native
     def styles: String = js.native
-    @scala.inline
-    def styles_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("styles")(x.asInstanceOf[js.Any])
+    inline def styles_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("styles")(x.asInstanceOf[js.Any])
     
     @JSImport("cesium", "WebMapServiceImageryProvider.DefaultParameters.version")
     @js.native
     def version: String = js.native
-    @scala.inline
-    def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+    inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   }
   
   /* static member */
@@ -62,19 +57,16 @@ object WebMapServiceImageryProvider {
     @JSImport("cesium", "WebMapServiceImageryProvider.GetFeatureInfoDefaultParameters.request")
     @js.native
     def request: String = js.native
-    @scala.inline
-    def request_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("request")(x.asInstanceOf[js.Any])
+    inline def request_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("request")(x.asInstanceOf[js.Any])
     
     @JSImport("cesium", "WebMapServiceImageryProvider.GetFeatureInfoDefaultParameters.service")
     @js.native
     def service: String = js.native
-    @scala.inline
-    def service_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("service")(x.asInstanceOf[js.Any])
+    inline def service_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("service")(x.asInstanceOf[js.Any])
     
     @JSImport("cesium", "WebMapServiceImageryProvider.GetFeatureInfoDefaultParameters.version")
     @js.native
     def version: String = js.native
-    @scala.inline
-    def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+    inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   }
 }

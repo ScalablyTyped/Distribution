@@ -18,28 +18,21 @@ trait ListDomainsResult extends StObject {
 }
 object ListDomainsResult {
   
-  @scala.inline
-  def apply(): ListDomainsResult = {
+  inline def apply(): ListDomainsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDomainsResult]
   }
   
-  @scala.inline
-  implicit class ListDomainsResultMutableBuilder[Self <: ListDomainsResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListDomainsResult](x: Self) {
     
-    @scala.inline
-    def setDomainNames(value: DomainNameList): Self = StObject.set(x, "DomainNames", value.asInstanceOf[js.Any])
+    inline def setDomainNames(value: DomainNameList): Self = StObject.set(x, "DomainNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainNamesUndefined: Self = StObject.set(x, "DomainNames", js.undefined)
+    inline def setDomainNamesUndefined: Self = StObject.set(x, "DomainNames", js.undefined)
     
-    @scala.inline
-    def setDomainNamesVarargs(value: String*): Self = StObject.set(x, "DomainNames", js.Array(value :_*))
+    inline def setDomainNamesVarargs(value: String*): Self = StObject.set(x, "DomainNames", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

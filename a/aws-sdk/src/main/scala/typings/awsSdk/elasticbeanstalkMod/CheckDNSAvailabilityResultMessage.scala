@@ -18,25 +18,19 @@ trait CheckDNSAvailabilityResultMessage extends StObject {
 }
 object CheckDNSAvailabilityResultMessage {
   
-  @scala.inline
-  def apply(): CheckDNSAvailabilityResultMessage = {
+  inline def apply(): CheckDNSAvailabilityResultMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CheckDNSAvailabilityResultMessage]
   }
   
-  @scala.inline
-  implicit class CheckDNSAvailabilityResultMessageMutableBuilder[Self <: CheckDNSAvailabilityResultMessage] (val x: Self) extends AnyVal {
+  extension [Self <: CheckDNSAvailabilityResultMessage](x: Self) {
     
-    @scala.inline
-    def setAvailable(value: CnameAvailability): Self = StObject.set(x, "Available", value.asInstanceOf[js.Any])
+    inline def setAvailable(value: CnameAvailability): Self = StObject.set(x, "Available", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailableUndefined: Self = StObject.set(x, "Available", js.undefined)
+    inline def setAvailableUndefined: Self = StObject.set(x, "Available", js.undefined)
     
-    @scala.inline
-    def setFullyQualifiedCNAME(value: DNSCname): Self = StObject.set(x, "FullyQualifiedCNAME", value.asInstanceOf[js.Any])
+    inline def setFullyQualifiedCNAME(value: DNSCname): Self = StObject.set(x, "FullyQualifiedCNAME", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullyQualifiedCNAMEUndefined: Self = StObject.set(x, "FullyQualifiedCNAME", js.undefined)
+    inline def setFullyQualifiedCNAMEUndefined: Self = StObject.set(x, "FullyQualifiedCNAME", js.undefined)
   }
 }

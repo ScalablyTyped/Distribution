@@ -36,10 +36,8 @@ object mod {
     def put(name: String, value: Double): Unit = js.native
   }
   
-  @scala.inline
-  def createClient(): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")().asInstanceOf[Client]
-  @scala.inline
-  def createClient(clientOptions: ClientOptions): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(clientOptions.asInstanceOf[js.Any]).asInstanceOf[Client]
+  inline def createClient(): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")().asInstanceOf[Client]
+  inline def createClient(clientOptions: ClientOptions): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(clientOptions.asInstanceOf[js.Any]).asInstanceOf[Client]
   
   trait ClientOptions extends StObject {
     
@@ -99,68 +97,48 @@ object mod {
   }
   object ClientOptions {
     
-    @scala.inline
-    def apply(): ClientOptions = {
+    inline def apply(): ClientOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientOptions]
     }
     
-    @scala.inline
-    implicit class ClientOptionsMutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientOptions](x: Self) {
       
-      @scala.inline
-      def setCallback(value: (/* error */ Error, /* metrics */ js.Any) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+      inline def setCallback(value: (/* error */ Error, /* metrics */ js.Any) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+      inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+      inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
       
-      @scala.inline
-      def setMaxPacketSize(value: Double): Self = StObject.set(x, "maxPacketSize", value.asInstanceOf[js.Any])
+      inline def setMaxPacketSize(value: Double): Self = StObject.set(x, "maxPacketSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxPacketSizeUndefined: Self = StObject.set(x, "maxPacketSize", js.undefined)
+      inline def setMaxPacketSizeUndefined: Self = StObject.set(x, "maxPacketSize", js.undefined)
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+      inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+      inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
       
-      @scala.inline
-      def setType(value: udp4 | udp6): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: udp4 | udp6): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
 }

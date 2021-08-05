@@ -82,20 +82,16 @@ object anon {
   }
   object Stringify {
     
-    @scala.inline
-    def apply(parse: FnCall, stringify: FnCallValueReplacerSpace): Stringify = {
+    inline def apply(parse: FnCall, stringify: FnCallValueReplacerSpace): Stringify = {
       val __obj = js.Dynamic.literal(parse = parse.asInstanceOf[js.Any], stringify = stringify.asInstanceOf[js.Any])
       __obj.asInstanceOf[Stringify]
     }
     
-    @scala.inline
-    implicit class StringifyMutableBuilder[Self <: Stringify] (val x: Self) extends AnyVal {
+    extension [Self <: Stringify](x: Self) {
       
-      @scala.inline
-      def setParse(value: FnCall): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+      inline def setParse(value: FnCall): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringify(value: FnCallValueReplacerSpace): Self = StObject.set(x, "stringify", value.asInstanceOf[js.Any])
+      inline def setStringify(value: FnCallValueReplacerSpace): Self = StObject.set(x, "stringify", value.asInstanceOf[js.Any])
     }
   }
 }

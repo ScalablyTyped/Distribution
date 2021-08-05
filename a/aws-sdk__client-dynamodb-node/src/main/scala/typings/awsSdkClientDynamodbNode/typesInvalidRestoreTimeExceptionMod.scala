@@ -16,17 +16,14 @@ object typesInvalidRestoreTimeExceptionMod {
   }
   object InvalidRestoreTimeException {
     
-    @scala.inline
-    def apply(): InvalidRestoreTimeException = {
+    inline def apply(): InvalidRestoreTimeException = {
       val __obj = js.Dynamic.literal(name = "InvalidRestoreTimeException")
       __obj.asInstanceOf[InvalidRestoreTimeException]
     }
     
-    @scala.inline
-    implicit class InvalidRestoreTimeExceptionMutableBuilder[Self <: InvalidRestoreTimeException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidRestoreTimeException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.InvalidRestoreTimeException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -41,20 +38,16 @@ object typesInvalidRestoreTimeExceptionMod {
   }
   object InvalidRestoreTimeExceptionDetails {
     
-    @scala.inline
-    def apply(): InvalidRestoreTimeExceptionDetails = {
+    inline def apply(): InvalidRestoreTimeExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InvalidRestoreTimeExceptionDetails]
     }
     
-    @scala.inline
-    implicit class InvalidRestoreTimeExceptionDetailsMutableBuilder[Self <: InvalidRestoreTimeExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidRestoreTimeExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

@@ -25,23 +25,18 @@ object CallEventTypes {
   }
   object Connected {
     
-    @scala.inline
-    def apply(call: Call): Connected = {
+    inline def apply(call: Call): Connected = {
       val __obj = js.Dynamic.literal(call = call.asInstanceOf[js.Any])
       __obj.asInstanceOf[Connected]
     }
     
-    @scala.inline
-    implicit class ConnectedMutableBuilder[Self <: Connected] (val x: Self) extends AnyVal {
+    extension [Self <: Connected](x: Self) {
       
-      @scala.inline
-      def setCall(value: Call): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
+      inline def setCall(value: Call): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     }
   }
   
@@ -64,23 +59,18 @@ object CallEventTypes {
   }
   object Disconnected {
     
-    @scala.inline
-    def apply(call: Call): Disconnected = {
+    inline def apply(call: Call): Disconnected = {
       val __obj = js.Dynamic.literal(call = call.asInstanceOf[js.Any])
       __obj.asInstanceOf[Disconnected]
     }
     
-    @scala.inline
-    implicit class DisconnectedMutableBuilder[Self <: Disconnected] (val x: Self) extends AnyVal {
+    extension [Self <: Disconnected](x: Self) {
       
-      @scala.inline
-      def setCall(value: Call): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
+      inline def setCall(value: Call): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     }
   }
   
@@ -113,29 +103,22 @@ object CallEventTypes {
   }
   object Failed {
     
-    @scala.inline
-    def apply(call: Call, code: Double, reason: String): Failed = {
+    inline def apply(call: Call, code: Double, reason: String): Failed = {
       val __obj = js.Dynamic.literal(call = call.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
       __obj.asInstanceOf[Failed]
     }
     
-    @scala.inline
-    implicit class FailedMutableBuilder[Self <: Failed] (val x: Self) extends AnyVal {
+    extension [Self <: Failed](x: Self) {
       
-      @scala.inline
-      def setCall(value: Call): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
+      inline def setCall(value: Call): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+      inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     }
   }
   
@@ -151,17 +134,14 @@ object CallEventTypes {
   }
   object ICETimeout {
     
-    @scala.inline
-    def apply(call: Call): ICETimeout = {
+    inline def apply(call: Call): ICETimeout = {
       val __obj = js.Dynamic.literal(call = call.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICETimeout]
     }
     
-    @scala.inline
-    implicit class ICETimeoutMutableBuilder[Self <: ICETimeout] (val x: Self) extends AnyVal {
+    extension [Self <: ICETimeout](x: Self) {
       
-      @scala.inline
-      def setCall(value: Call): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
+      inline def setCall(value: Call): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
     }
   }
   
@@ -194,29 +174,22 @@ object CallEventTypes {
   }
   object InfoReceived {
     
-    @scala.inline
-    def apply(body: String, call: Call, mimeType: String): InfoReceived = {
+    inline def apply(body: String, call: Call, mimeType: String): InfoReceived = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], call = call.asInstanceOf[js.Any], mimeType = mimeType.asInstanceOf[js.Any])
       __obj.asInstanceOf[InfoReceived]
     }
     
-    @scala.inline
-    implicit class InfoReceivedMutableBuilder[Self <: InfoReceived] (val x: Self) extends AnyVal {
+    extension [Self <: InfoReceived](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCall(value: Call): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
+      inline def setCall(value: Call): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+      inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -239,20 +212,16 @@ object CallEventTypes {
   }
   object MessageReceived {
     
-    @scala.inline
-    def apply(call: Call, text: String): MessageReceived = {
+    inline def apply(call: Call, text: String): MessageReceived = {
       val __obj = js.Dynamic.literal(call = call.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[MessageReceived]
     }
     
-    @scala.inline
-    implicit class MessageReceivedMutableBuilder[Self <: MessageReceived] (val x: Self) extends AnyVal {
+    extension [Self <: MessageReceived](x: Self) {
       
-      @scala.inline
-      def setCall(value: Call): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
+      inline def setCall(value: Call): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -270,17 +239,14 @@ object CallEventTypes {
   }
   object ProgressToneStart {
     
-    @scala.inline
-    def apply(call: Call): ProgressToneStart = {
+    inline def apply(call: Call): ProgressToneStart = {
       val __obj = js.Dynamic.literal(call = call.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProgressToneStart]
     }
     
-    @scala.inline
-    implicit class ProgressToneStartMutableBuilder[Self <: ProgressToneStart] (val x: Self) extends AnyVal {
+    extension [Self <: ProgressToneStart](x: Self) {
       
-      @scala.inline
-      def setCall(value: Call): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
+      inline def setCall(value: Call): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
     }
   }
   
@@ -298,17 +264,14 @@ object CallEventTypes {
   }
   object ProgressToneStop {
     
-    @scala.inline
-    def apply(call: Call): ProgressToneStop = {
+    inline def apply(call: Call): ProgressToneStop = {
       val __obj = js.Dynamic.literal(call = call.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProgressToneStop]
     }
     
-    @scala.inline
-    implicit class ProgressToneStopMutableBuilder[Self <: ProgressToneStop] (val x: Self) extends AnyVal {
+    extension [Self <: ProgressToneStop](x: Self) {
       
-      @scala.inline
-      def setCall(value: Call): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
+      inline def setCall(value: Call): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
     }
   }
   
@@ -326,17 +289,14 @@ object CallEventTypes {
   }
   object TransferComplete {
     
-    @scala.inline
-    def apply(call: Call): TransferComplete = {
+    inline def apply(call: Call): TransferComplete = {
       val __obj = js.Dynamic.literal(call = call.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransferComplete]
     }
     
-    @scala.inline
-    implicit class TransferCompleteMutableBuilder[Self <: TransferComplete] (val x: Self) extends AnyVal {
+    extension [Self <: TransferComplete](x: Self) {
       
-      @scala.inline
-      def setCall(value: Call): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
+      inline def setCall(value: Call): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
     }
   }
   
@@ -354,17 +314,14 @@ object CallEventTypes {
   }
   object TransferFailed {
     
-    @scala.inline
-    def apply(call: Call): TransferFailed = {
+    inline def apply(call: Call): TransferFailed = {
       val __obj = js.Dynamic.literal(call = call.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransferFailed]
     }
     
-    @scala.inline
-    implicit class TransferFailedMutableBuilder[Self <: TransferFailed] (val x: Self) extends AnyVal {
+    extension [Self <: TransferFailed](x: Self) {
       
-      @scala.inline
-      def setCall(value: Call): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
+      inline def setCall(value: Call): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
     }
   }
 }

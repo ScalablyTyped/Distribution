@@ -10,6 +10,5 @@ object escapeStringRegexpMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def escapeStringRegexp(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeStringRegexp")(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def escapeStringRegexp(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeStringRegexp")(string.asInstanceOf[js.Any]).asInstanceOf[String]
 }

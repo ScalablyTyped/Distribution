@@ -34,11 +34,9 @@ object mod {
     def this(props: ReactCompassProps, context: js.Any) = this()
   }
   
-  @scala.inline
-  def directionName(dir: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("directionName")(dir.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def directionName(dir: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("directionName")(dir.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def normalizeAngle(direction: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeAngle")(direction.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def normalizeAngle(direction: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeAngle")(direction.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   trait ReactCompassProps extends StObject {
     
@@ -48,26 +46,20 @@ object mod {
   }
   object ReactCompassProps {
     
-    @scala.inline
-    def apply(direction: Double): ReactCompassProps = {
+    inline def apply(direction: Double): ReactCompassProps = {
       val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactCompassProps]
     }
     
-    @scala.inline
-    implicit class ReactCompassPropsMutableBuilder[Self <: ReactCompassProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReactCompassProps](x: Self) {
       
-      @scala.inline
-      def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionNames(value: js.Array[String]): Self = StObject.set(x, "directionNames", value.asInstanceOf[js.Any])
+      inline def setDirectionNames(value: js.Array[String]): Self = StObject.set(x, "directionNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionNamesUndefined: Self = StObject.set(x, "directionNames", js.undefined)
+      inline def setDirectionNamesUndefined: Self = StObject.set(x, "directionNames", js.undefined)
       
-      @scala.inline
-      def setDirectionNamesVarargs(value: String*): Self = StObject.set(x, "directionNames", js.Array(value :_*))
+      inline def setDirectionNamesVarargs(value: String*): Self = StObject.set(x, "directionNames", js.Array(value :_*))
     }
   }
 }

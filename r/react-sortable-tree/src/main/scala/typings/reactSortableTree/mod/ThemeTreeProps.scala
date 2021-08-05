@@ -27,64 +27,45 @@ trait ThemeTreeProps extends StObject {
 }
 object ThemeTreeProps {
   
-  @scala.inline
-  def apply(): ThemeTreeProps = {
+  inline def apply(): ThemeTreeProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThemeTreeProps]
   }
   
-  @scala.inline
-  implicit class ThemeTreePropsMutableBuilder[Self <: ThemeTreeProps] (val x: Self) extends AnyVal {
+  extension [Self <: ThemeTreeProps](x: Self) {
     
-    @scala.inline
-    def setInnerStyle(value: CSSProperties): Self = StObject.set(x, "innerStyle", value.asInstanceOf[js.Any])
+    inline def setInnerStyle(value: CSSProperties): Self = StObject.set(x, "innerStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInnerStyleUndefined: Self = StObject.set(x, "innerStyle", js.undefined)
+    inline def setInnerStyleUndefined: Self = StObject.set(x, "innerStyle", js.undefined)
     
-    @scala.inline
-    def setNodeContentRenderer(value: NodeRenderer): Self = StObject.set(x, "nodeContentRenderer", value.asInstanceOf[js.Any])
+    inline def setNodeContentRenderer(value: NodeRenderer): Self = StObject.set(x, "nodeContentRenderer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeContentRendererUndefined: Self = StObject.set(x, "nodeContentRenderer", js.undefined)
+    inline def setNodeContentRendererUndefined: Self = StObject.set(x, "nodeContentRenderer", js.undefined)
     
-    @scala.inline
-    def setPlaceholderRenderer(value: PlaceholderRenderer): Self = StObject.set(x, "placeholderRenderer", value.asInstanceOf[js.Any])
+    inline def setPlaceholderRenderer(value: PlaceholderRenderer): Self = StObject.set(x, "placeholderRenderer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderRendererUndefined: Self = StObject.set(x, "placeholderRenderer", js.undefined)
+    inline def setPlaceholderRendererUndefined: Self = StObject.set(x, "placeholderRenderer", js.undefined)
     
-    @scala.inline
-    def setReactVirtualizedListProps(value: PartialListProps): Self = StObject.set(x, "reactVirtualizedListProps", value.asInstanceOf[js.Any])
+    inline def setReactVirtualizedListProps(value: PartialListProps): Self = StObject.set(x, "reactVirtualizedListProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReactVirtualizedListPropsUndefined: Self = StObject.set(x, "reactVirtualizedListProps", js.undefined)
+    inline def setReactVirtualizedListPropsUndefined: Self = StObject.set(x, "reactVirtualizedListProps", js.undefined)
     
-    @scala.inline
-    def setRowHeight(value: (js.Function1[/* info */ NodeData & Index, Double]) | Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
+    inline def setRowHeight(value: (js.Function1[/* info */ NodeData & Index, Double]) | Double): Self = StObject.set(x, "rowHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowHeightFunction1(value: /* info */ NodeData & Index => Double): Self = StObject.set(x, "rowHeight", js.Any.fromFunction1(value))
+    inline def setRowHeightFunction1(value: /* info */ NodeData & Index => Double): Self = StObject.set(x, "rowHeight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
+    inline def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
     
-    @scala.inline
-    def setScaffoldBlockPxWidth(value: Double): Self = StObject.set(x, "scaffoldBlockPxWidth", value.asInstanceOf[js.Any])
+    inline def setScaffoldBlockPxWidth(value: Double): Self = StObject.set(x, "scaffoldBlockPxWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaffoldBlockPxWidthUndefined: Self = StObject.set(x, "scaffoldBlockPxWidth", js.undefined)
+    inline def setScaffoldBlockPxWidthUndefined: Self = StObject.set(x, "scaffoldBlockPxWidth", js.undefined)
     
-    @scala.inline
-    def setSlideRegionSize(value: Double): Self = StObject.set(x, "slideRegionSize", value.asInstanceOf[js.Any])
+    inline def setSlideRegionSize(value: Double): Self = StObject.set(x, "slideRegionSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlideRegionSizeUndefined: Self = StObject.set(x, "slideRegionSize", js.undefined)
+    inline def setSlideRegionSizeUndefined: Self = StObject.set(x, "slideRegionSize", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

@@ -42,43 +42,31 @@ trait ParamsResourceTableImporttable
 }
 object ParamsResourceTableImporttable {
   
-  @scala.inline
-  def apply(): ParamsResourceTableImporttable = {
+  inline def apply(): ParamsResourceTableImporttable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceTableImporttable]
   }
   
-  @scala.inline
-  implicit class ParamsResourceTableImporttableMutableBuilder[Self <: ParamsResourceTableImporttable] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceTableImporttable](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+    inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+    inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
     
-    @scala.inline
-    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    @scala.inline
-    def setMedia(value: Body): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: Body): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
+    inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

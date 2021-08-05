@@ -25,31 +25,23 @@ trait Delete extends StObject {
 }
 object Delete {
   
-  @scala.inline
-  def apply(): Delete = {
+  inline def apply(): Delete = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Delete]
   }
   
-  @scala.inline
-  implicit class DeleteMutableBuilder[Self <: Delete] (val x: Self) extends AnyVal {
+  extension [Self <: Delete](x: Self) {
     
-    @scala.inline
-    def setDelete(value: String): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: String): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
+    inline def setDeleteUndefined: Self = StObject.set(x, "delete", js.undefined)
     
-    @scala.inline
-    def setInsert(value: String): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
+    inline def setInsert(value: String): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
+    inline def setInsertUndefined: Self = StObject.set(x, "insert", js.undefined)
     
-    @scala.inline
-    def setType(value: remove | replace): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: remove | replace): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

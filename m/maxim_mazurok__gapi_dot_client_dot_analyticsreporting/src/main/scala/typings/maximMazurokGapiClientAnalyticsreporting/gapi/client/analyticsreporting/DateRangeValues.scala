@@ -14,31 +14,23 @@ trait DateRangeValues extends StObject {
 }
 object DateRangeValues {
   
-  @scala.inline
-  def apply(): DateRangeValues = {
+  inline def apply(): DateRangeValues = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DateRangeValues]
   }
   
-  @scala.inline
-  implicit class DateRangeValuesMutableBuilder[Self <: DateRangeValues] (val x: Self) extends AnyVal {
+  extension [Self <: DateRangeValues](x: Self) {
     
-    @scala.inline
-    def setPivotValueRegions(value: js.Array[PivotValueRegion]): Self = StObject.set(x, "pivotValueRegions", value.asInstanceOf[js.Any])
+    inline def setPivotValueRegions(value: js.Array[PivotValueRegion]): Self = StObject.set(x, "pivotValueRegions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPivotValueRegionsUndefined: Self = StObject.set(x, "pivotValueRegions", js.undefined)
+    inline def setPivotValueRegionsUndefined: Self = StObject.set(x, "pivotValueRegions", js.undefined)
     
-    @scala.inline
-    def setPivotValueRegionsVarargs(value: PivotValueRegion*): Self = StObject.set(x, "pivotValueRegions", js.Array(value :_*))
+    inline def setPivotValueRegionsVarargs(value: PivotValueRegion*): Self = StObject.set(x, "pivotValueRegions", js.Array(value :_*))
     
-    @scala.inline
-    def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: String*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

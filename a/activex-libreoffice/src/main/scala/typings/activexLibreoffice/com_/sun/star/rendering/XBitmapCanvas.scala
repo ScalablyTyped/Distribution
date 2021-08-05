@@ -51,8 +51,7 @@ trait XBitmapCanvas
 }
 object XBitmapCanvas {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Device: XGraphicDevice,
     acquire: () => Unit,
     clear: () => Unit,
@@ -82,11 +81,9 @@ object XBitmapCanvas {
     __obj.asInstanceOf[XBitmapCanvas]
   }
   
-  @scala.inline
-  implicit class XBitmapCanvasMutableBuilder[Self <: XBitmapCanvas] (val x: Self) extends AnyVal {
+  extension [Self <: XBitmapCanvas](x: Self) {
     
-    @scala.inline
-    def setCopyRect(
+    inline def setCopyRect(
       value: (XBitmapCanvas, RealRectangle2D, ViewState, RenderState, RealRectangle2D, ViewState, RenderState) => Unit
     ): Self = StObject.set(x, "copyRect", js.Any.fromFunction7(value))
   }

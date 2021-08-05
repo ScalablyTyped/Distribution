@@ -22,20 +22,16 @@ object adminAccessSmallMod extends Shortcut {
   }
   object AdminAccessSmallProps {
     
-    @scala.inline
-    def apply(): AdminAccessSmallProps = {
+    inline def apply(): AdminAccessSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AdminAccessSmallProps]
     }
     
-    @scala.inline
-    implicit class AdminAccessSmallPropsMutableBuilder[Self <: AdminAccessSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: AdminAccessSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

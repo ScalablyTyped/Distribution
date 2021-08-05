@@ -11,19 +11,15 @@ trait `4` extends StObject {
 }
 object `4` {
   
-  @scala.inline
-  def apply(data: js.Array[Createdat]): `4` = {
+  inline def apply(data: js.Array[Createdat]): `4` = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[`4`]
   }
   
-  @scala.inline
-  implicit class `4MutableBuilder`[Self <: `4`] (val x: Self) extends AnyVal {
+  extension [Self <: `4`](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Array[Createdat]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[Createdat]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: Createdat*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Createdat*): Self = StObject.set(x, "data", js.Array(value :_*))
   }
 }

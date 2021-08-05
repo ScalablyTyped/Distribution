@@ -27,8 +27,7 @@ trait IOCRZoneResult extends StObject {
 }
 object IOCRZoneResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Confidence: Double,
     DimensionUnit: MFOCRDimensionUnit,
     Height: Double,
@@ -43,34 +42,24 @@ object IOCRZoneResult {
     __obj.asInstanceOf[IOCRZoneResult]
   }
   
-  @scala.inline
-  implicit class IOCRZoneResultMutableBuilder[Self <: IOCRZoneResult] (val x: Self) extends AnyVal {
+  extension [Self <: IOCRZoneResult](x: Self) {
     
-    @scala.inline
-    def setConfidence(value: Double): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Double): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionUnit(value: MFOCRDimensionUnit): Self = StObject.set(x, "DimensionUnit", value.asInstanceOf[js.Any])
+    inline def setDimensionUnit(value: MFOCRDimensionUnit): Self = StObject.set(x, "DimensionUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+    inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "Left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecognizedOnPage(value: Double): Self = StObject.set(x, "RecognizedOnPage", value.asInstanceOf[js.Any])
+    inline def setRecognizedOnPage(value: Double): Self = StObject.set(x, "RecognizedOnPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultValue(value: ITypedValue): Self = StObject.set(x, "ResultValue", value.asInstanceOf[js.Any])
+    inline def setResultValue(value: ITypedValue): Self = StObject.set(x, "ResultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "Top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
   }
 }

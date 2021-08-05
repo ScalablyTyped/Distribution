@@ -23,34 +23,25 @@ trait DescribeImagePermissionsResult extends StObject {
 }
 object DescribeImagePermissionsResult {
   
-  @scala.inline
-  def apply(): DescribeImagePermissionsResult = {
+  inline def apply(): DescribeImagePermissionsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeImagePermissionsResult]
   }
   
-  @scala.inline
-  implicit class DescribeImagePermissionsResultMutableBuilder[Self <: DescribeImagePermissionsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeImagePermissionsResult](x: Self) {
     
-    @scala.inline
-    def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: Name): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSharedImagePermissionsList(value: SharedImagePermissionsList): Self = StObject.set(x, "SharedImagePermissionsList", value.asInstanceOf[js.Any])
+    inline def setSharedImagePermissionsList(value: SharedImagePermissionsList): Self = StObject.set(x, "SharedImagePermissionsList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedImagePermissionsListUndefined: Self = StObject.set(x, "SharedImagePermissionsList", js.undefined)
+    inline def setSharedImagePermissionsListUndefined: Self = StObject.set(x, "SharedImagePermissionsList", js.undefined)
     
-    @scala.inline
-    def setSharedImagePermissionsListVarargs(value: SharedImagePermissions*): Self = StObject.set(x, "SharedImagePermissionsList", js.Array(value :_*))
+    inline def setSharedImagePermissionsListVarargs(value: SharedImagePermissions*): Self = StObject.set(x, "SharedImagePermissionsList", js.Array(value :_*))
   }
 }

@@ -18,14 +18,12 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def getMinerData(miner: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getMinerData")(miner.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def getMinerData(miner: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getMinerData")(miner.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     @JSImport("react-coinhive", "default.src")
     @js.native
     def src: Authedmine = js.native
-    @scala.inline
-    def src_=(x: Authedmine): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("src")(x.asInstanceOf[js.Any])
+    inline def src_=(x: Authedmine): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("src")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -63,71 +61,50 @@ object mod {
   }
   object CoinHiveProps {
     
-    @scala.inline
-    def apply(siteKey: String): CoinHiveProps = {
+    inline def apply(siteKey: String): CoinHiveProps = {
       val __obj = js.Dynamic.literal(siteKey = siteKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[CoinHiveProps]
     }
     
-    @scala.inline
-    implicit class CoinHivePropsMutableBuilder[Self <: CoinHiveProps] (val x: Self) extends AnyVal {
+    extension [Self <: CoinHiveProps](x: Self) {
       
-      @scala.inline
-      def setAutoThreads(value: Boolean): Self = StObject.set(x, "autoThreads", value.asInstanceOf[js.Any])
+      inline def setAutoThreads(value: Boolean): Self = StObject.set(x, "autoThreads", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoThreadsUndefined: Self = StObject.set(x, "autoThreads", js.undefined)
+      inline def setAutoThreadsUndefined: Self = StObject.set(x, "autoThreads", js.undefined)
       
-      @scala.inline
-      def setOnInit(value: /* callback */ js.Any => Unit): Self = StObject.set(x, "onInit", js.Any.fromFunction1(value))
+      inline def setOnInit(value: /* callback */ js.Any => Unit): Self = StObject.set(x, "onInit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnInitUndefined: Self = StObject.set(x, "onInit", js.undefined)
+      inline def setOnInitUndefined: Self = StObject.set(x, "onInit", js.undefined)
       
-      @scala.inline
-      def setOnStart(value: /* callback */ js.Any => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
+      inline def setOnStart(value: /* callback */ js.Any => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
+      inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
       
-      @scala.inline
-      def setOnStop(value: /* callback */ js.Any => Unit): Self = StObject.set(x, "onStop", js.Any.fromFunction1(value))
+      inline def setOnStop(value: /* callback */ js.Any => Unit): Self = StObject.set(x, "onStop", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnStopUndefined: Self = StObject.set(x, "onStop", js.undefined)
+      inline def setOnStopUndefined: Self = StObject.set(x, "onStop", js.undefined)
       
-      @scala.inline
-      def setRun(value: Boolean): Self = StObject.set(x, "run", value.asInstanceOf[js.Any])
+      inline def setRun(value: Boolean): Self = StObject.set(x, "run", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRunUndefined: Self = StObject.set(x, "run", js.undefined)
+      inline def setRunUndefined: Self = StObject.set(x, "run", js.undefined)
       
-      @scala.inline
-      def setSiteKey(value: String): Self = StObject.set(x, "siteKey", value.asInstanceOf[js.Any])
+      inline def setSiteKey(value: String): Self = StObject.set(x, "siteKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+      inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
       
-      @scala.inline
-      def setThreads(value: Double): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
+      inline def setThreads(value: Double): Self = StObject.set(x, "threads", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThreadsUndefined: Self = StObject.set(x, "threads", js.undefined)
+      inline def setThreadsUndefined: Self = StObject.set(x, "threads", js.undefined)
       
-      @scala.inline
-      def setThrottle(value: Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
+      inline def setThrottle(value: Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThrottleUndefined: Self = StObject.set(x, "throttle", js.undefined)
+      inline def setThrottleUndefined: Self = StObject.set(x, "throttle", js.undefined)
       
-      @scala.inline
-      def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+      inline def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
+      inline def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
     }
   }
 }

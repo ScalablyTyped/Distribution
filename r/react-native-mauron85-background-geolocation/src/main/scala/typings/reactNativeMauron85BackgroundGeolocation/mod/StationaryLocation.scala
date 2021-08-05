@@ -12,8 +12,7 @@ trait StationaryLocation
 }
 object StationaryLocation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accuracy: Double,
     altitude: Double,
     bearing: Double,
@@ -30,10 +29,8 @@ object StationaryLocation {
     __obj.asInstanceOf[StationaryLocation]
   }
   
-  @scala.inline
-  implicit class StationaryLocationMutableBuilder[Self <: StationaryLocation] (val x: Self) extends AnyVal {
+  extension [Self <: StationaryLocation](x: Self) {
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
   }
 }

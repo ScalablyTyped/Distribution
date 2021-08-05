@@ -18,25 +18,19 @@ trait NielsenConfiguration extends StObject {
 }
 object NielsenConfiguration {
   
-  @scala.inline
-  def apply(): NielsenConfiguration = {
+  inline def apply(): NielsenConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NielsenConfiguration]
   }
   
-  @scala.inline
-  implicit class NielsenConfigurationMutableBuilder[Self <: NielsenConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: NielsenConfiguration](x: Self) {
     
-    @scala.inline
-    def setDistributorId(value: string): Self = StObject.set(x, "DistributorId", value.asInstanceOf[js.Any])
+    inline def setDistributorId(value: string): Self = StObject.set(x, "DistributorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributorIdUndefined: Self = StObject.set(x, "DistributorId", js.undefined)
+    inline def setDistributorIdUndefined: Self = StObject.set(x, "DistributorId", js.undefined)
     
-    @scala.inline
-    def setNielsenPcmToId3Tagging(value: NielsenPcmToId3TaggingState): Self = StObject.set(x, "NielsenPcmToId3Tagging", value.asInstanceOf[js.Any])
+    inline def setNielsenPcmToId3Tagging(value: NielsenPcmToId3TaggingState): Self = StObject.set(x, "NielsenPcmToId3Tagging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNielsenPcmToId3TaggingUndefined: Self = StObject.set(x, "NielsenPcmToId3Tagging", js.undefined)
+    inline def setNielsenPcmToId3TaggingUndefined: Self = StObject.set(x, "NielsenPcmToId3Tagging", js.undefined)
   }
 }

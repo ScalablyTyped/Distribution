@@ -17,19 +17,15 @@ trait LokiConstructorOptions extends StObject {
 }
 object LokiConstructorOptions {
   
-  @scala.inline
-  def apply(env: NATIVESCRIPT | NODEJS | CORDOVA | BROWSER | NA, verbose: Boolean): LokiConstructorOptions = {
+  inline def apply(env: NATIVESCRIPT | NODEJS | CORDOVA | BROWSER | NA, verbose: Boolean): LokiConstructorOptions = {
     val __obj = js.Dynamic.literal(env = env.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[LokiConstructorOptions]
   }
   
-  @scala.inline
-  implicit class LokiConstructorOptionsMutableBuilder[Self <: LokiConstructorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LokiConstructorOptions](x: Self) {
     
-    @scala.inline
-    def setEnv(value: NATIVESCRIPT | NODEJS | CORDOVA | BROWSER | NA): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+    inline def setEnv(value: NATIVESCRIPT | NODEJS | CORDOVA | BROWSER | NA): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+    inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
   }
 }

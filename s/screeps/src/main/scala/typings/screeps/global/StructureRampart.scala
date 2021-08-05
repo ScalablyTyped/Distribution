@@ -106,6 +106,5 @@ class StructureRampart protected ()
 }
 object StructureRampart {
   
-  @scala.inline
-  def apply: StructureRampartConstructor = js.Dynamic.global.selectDynamic("StructureRampart").asInstanceOf[StructureRampartConstructor]
+  inline def apply: StructureRampartConstructor = js.Dynamic.global.selectDynamic("StructureRampart").asInstanceOf[StructureRampartConstructor]
 }

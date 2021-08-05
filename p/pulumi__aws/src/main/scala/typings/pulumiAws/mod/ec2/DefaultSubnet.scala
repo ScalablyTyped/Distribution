@@ -39,19 +39,14 @@ object DefaultSubnet {
     * @param state Any extra arguments used during the lookup.
     * @param opts Optional settings to control the behavior of the CustomResource.
     */
-  @scala.inline
-  def get(name: String, id: Input[ID]): typings.pulumiAws.defaultSubnetMod.DefaultSubnet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.defaultSubnetMod.DefaultSubnet]
-  @scala.inline
-  def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.defaultSubnetMod.DefaultSubnet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.defaultSubnetMod.DefaultSubnet]
-  @scala.inline
-  def get(name: String, id: Input[ID], state: DefaultSubnetState): typings.pulumiAws.defaultSubnetMod.DefaultSubnet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.defaultSubnetMod.DefaultSubnet]
-  @scala.inline
-  def get(name: String, id: Input[ID], state: DefaultSubnetState, opts: CustomResourceOptions): typings.pulumiAws.defaultSubnetMod.DefaultSubnet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.defaultSubnetMod.DefaultSubnet]
+  inline def get(name: String, id: Input[ID]): typings.pulumiAws.defaultSubnetMod.DefaultSubnet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.defaultSubnetMod.DefaultSubnet]
+  inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.defaultSubnetMod.DefaultSubnet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.defaultSubnetMod.DefaultSubnet]
+  inline def get(name: String, id: Input[ID], state: DefaultSubnetState): typings.pulumiAws.defaultSubnetMod.DefaultSubnet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.defaultSubnetMod.DefaultSubnet]
+  inline def get(name: String, id: Input[ID], state: DefaultSubnetState, opts: CustomResourceOptions): typings.pulumiAws.defaultSubnetMod.DefaultSubnet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.defaultSubnetMod.DefaultSubnet]
   
   /**
     * Returns true if the given object is an instance of DefaultSubnet.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
-  @scala.inline
-  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/defaultSubnet.DefaultSubnet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/defaultSubnet.DefaultSubnet */ Boolean]
+  inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/defaultSubnet.DefaultSubnet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/defaultSubnet.DefaultSubnet */ Boolean]
 }

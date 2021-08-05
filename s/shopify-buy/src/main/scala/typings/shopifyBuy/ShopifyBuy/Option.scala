@@ -26,25 +26,19 @@ trait Option extends StObject {
 }
 object Option {
   
-  @scala.inline
-  def apply(name: String, selected: String, values: js.Array[OptionValue]): Option = {
+  inline def apply(name: String, selected: String, values: js.Array[OptionValue]): Option = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.asInstanceOf[Option]
   }
   
-  @scala.inline
-  implicit class OptionMutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
+  extension [Self <: Option](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: js.Array[OptionValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[OptionValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: OptionValue*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: OptionValue*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

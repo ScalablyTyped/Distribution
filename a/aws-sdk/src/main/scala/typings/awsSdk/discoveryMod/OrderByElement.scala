@@ -18,22 +18,17 @@ trait OrderByElement extends StObject {
 }
 object OrderByElement {
   
-  @scala.inline
-  def apply(fieldName: String): OrderByElement = {
+  inline def apply(fieldName: String): OrderByElement = {
     val __obj = js.Dynamic.literal(fieldName = fieldName.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrderByElement]
   }
   
-  @scala.inline
-  implicit class OrderByElementMutableBuilder[Self <: OrderByElement] (val x: Self) extends AnyVal {
+  extension [Self <: OrderByElement](x: Self) {
     
-    @scala.inline
-    def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
+    inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOrder(value: orderString): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
+    inline def setSortOrder(value: orderString): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
+    inline def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
   }
 }

@@ -18,17 +18,14 @@ object typesResourceInUseExceptionMod {
   }
   object ResourceInUseException {
     
-    @scala.inline
-    def apply(): ResourceInUseException = {
+    inline def apply(): ResourceInUseException = {
       val __obj = js.Dynamic.literal(name = "ResourceInUseException")
       __obj.asInstanceOf[ResourceInUseException]
     }
     
-    @scala.inline
-    implicit class ResourceInUseExceptionMutableBuilder[Self <: ResourceInUseException] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceInUseException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.ResourceInUseException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.ResourceInUseException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -46,26 +43,20 @@ object typesResourceInUseExceptionMod {
   }
   object ResourceInUseExceptionDetails {
     
-    @scala.inline
-    def apply(): ResourceInUseExceptionDetails = {
+    inline def apply(): ResourceInUseExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResourceInUseExceptionDetails]
     }
     
-    @scala.inline
-    implicit class ResourceInUseExceptionDetailsMutableBuilder[Self <: ResourceInUseExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceInUseExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     }
   }
 }

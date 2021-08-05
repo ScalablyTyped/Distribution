@@ -24,17 +24,14 @@ object typesMod {
   }
   object MDCMenuItemComponentEventDetail {
     
-    @scala.inline
-    def apply(index: Double, item: Element): MDCMenuItemComponentEventDetail = {
+    inline def apply(index: Double, item: Element): MDCMenuItemComponentEventDetail = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any])
       __obj.asInstanceOf[MDCMenuItemComponentEventDetail]
     }
     
-    @scala.inline
-    implicit class MDCMenuItemComponentEventDetailMutableBuilder[Self <: MDCMenuItemComponentEventDetail] (val x: Self) extends AnyVal {
+    extension [Self <: MDCMenuItemComponentEventDetail](x: Self) {
       
-      @scala.inline
-      def setItem(value: Element): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: Element): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     }
   }
   
@@ -52,17 +49,14 @@ object typesMod {
   }
   object MDCMenuItemEventDetail {
     
-    @scala.inline
-    def apply(index: Double): MDCMenuItemEventDetail = {
+    inline def apply(index: Double): MDCMenuItemEventDetail = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
       __obj.asInstanceOf[MDCMenuItemEventDetail]
     }
     
-    @scala.inline
-    implicit class MDCMenuItemEventDetailMutableBuilder[Self <: MDCMenuItemEventDetail] (val x: Self) extends AnyVal {
+    extension [Self <: MDCMenuItemEventDetail](x: Self) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     }
   }
 }

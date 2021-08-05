@@ -15,19 +15,16 @@ object platformsMod {
     @JSImport("lorem-ipsum/types/src/constants/platforms", "SUPPORTED_PLATFORMS.DARWIN")
     @js.native
     def DARWIN: String = js.native
-    @scala.inline
-    def DARWIN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARWIN")(x.asInstanceOf[js.Any])
+    inline def DARWIN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DARWIN")(x.asInstanceOf[js.Any])
     
     @JSImport("lorem-ipsum/types/src/constants/platforms", "SUPPORTED_PLATFORMS.LINUX")
     @js.native
     def LINUX: String = js.native
-    @scala.inline
-    def LINUX_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINUX")(x.asInstanceOf[js.Any])
+    inline def LINUX_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINUX")(x.asInstanceOf[js.Any])
     
     @JSImport("lorem-ipsum/types/src/constants/platforms", "SUPPORTED_PLATFORMS.WIN32")
     @js.native
     def WIN32: String = js.native
-    @scala.inline
-    def WIN32_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WIN32")(x.asInstanceOf[js.Any])
+    inline def WIN32_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WIN32")(x.asInstanceOf[js.Any])
   }
 }

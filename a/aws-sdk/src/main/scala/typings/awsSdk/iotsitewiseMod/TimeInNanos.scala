@@ -18,22 +18,17 @@ trait TimeInNanos extends StObject {
 }
 object TimeInNanos {
   
-  @scala.inline
-  def apply(timeInSeconds: TimeInSeconds): TimeInNanos = {
+  inline def apply(timeInSeconds: TimeInSeconds): TimeInNanos = {
     val __obj = js.Dynamic.literal(timeInSeconds = timeInSeconds.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeInNanos]
   }
   
-  @scala.inline
-  implicit class TimeInNanosMutableBuilder[Self <: TimeInNanos] (val x: Self) extends AnyVal {
+  extension [Self <: TimeInNanos](x: Self) {
     
-    @scala.inline
-    def setOffsetInNanos(value: OffsetInNanos): Self = StObject.set(x, "offsetInNanos", value.asInstanceOf[js.Any])
+    inline def setOffsetInNanos(value: OffsetInNanos): Self = StObject.set(x, "offsetInNanos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetInNanosUndefined: Self = StObject.set(x, "offsetInNanos", js.undefined)
+    inline def setOffsetInNanosUndefined: Self = StObject.set(x, "offsetInNanos", js.undefined)
     
-    @scala.inline
-    def setTimeInSeconds(value: TimeInSeconds): Self = StObject.set(x, "timeInSeconds", value.asInstanceOf[js.Any])
+    inline def setTimeInSeconds(value: TimeInSeconds): Self = StObject.set(x, "timeInSeconds", value.asInstanceOf[js.Any])
   }
 }

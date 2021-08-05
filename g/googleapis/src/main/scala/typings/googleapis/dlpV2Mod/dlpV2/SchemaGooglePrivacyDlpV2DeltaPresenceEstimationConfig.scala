@@ -34,37 +34,27 @@ trait SchemaGooglePrivacyDlpV2DeltaPresenceEstimationConfig extends StObject {
 }
 object SchemaGooglePrivacyDlpV2DeltaPresenceEstimationConfig {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2DeltaPresenceEstimationConfig = {
+  inline def apply(): SchemaGooglePrivacyDlpV2DeltaPresenceEstimationConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2DeltaPresenceEstimationConfig]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2DeltaPresenceEstimationConfigMutableBuilder[Self <: SchemaGooglePrivacyDlpV2DeltaPresenceEstimationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2DeltaPresenceEstimationConfig](x: Self) {
     
-    @scala.inline
-    def setAuxiliaryTables(value: js.Array[SchemaGooglePrivacyDlpV2StatisticalTable]): Self = StObject.set(x, "auxiliaryTables", value.asInstanceOf[js.Any])
+    inline def setAuxiliaryTables(value: js.Array[SchemaGooglePrivacyDlpV2StatisticalTable]): Self = StObject.set(x, "auxiliaryTables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuxiliaryTablesUndefined: Self = StObject.set(x, "auxiliaryTables", js.undefined)
+    inline def setAuxiliaryTablesUndefined: Self = StObject.set(x, "auxiliaryTables", js.undefined)
     
-    @scala.inline
-    def setAuxiliaryTablesVarargs(value: SchemaGooglePrivacyDlpV2StatisticalTable*): Self = StObject.set(x, "auxiliaryTables", js.Array(value :_*))
+    inline def setAuxiliaryTablesVarargs(value: SchemaGooglePrivacyDlpV2StatisticalTable*): Self = StObject.set(x, "auxiliaryTables", js.Array(value :_*))
     
-    @scala.inline
-    def setQuasiIds(value: js.Array[SchemaGooglePrivacyDlpV2QuasiId]): Self = StObject.set(x, "quasiIds", value.asInstanceOf[js.Any])
+    inline def setQuasiIds(value: js.Array[SchemaGooglePrivacyDlpV2QuasiId]): Self = StObject.set(x, "quasiIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuasiIdsUndefined: Self = StObject.set(x, "quasiIds", js.undefined)
+    inline def setQuasiIdsUndefined: Self = StObject.set(x, "quasiIds", js.undefined)
     
-    @scala.inline
-    def setQuasiIdsVarargs(value: SchemaGooglePrivacyDlpV2QuasiId*): Self = StObject.set(x, "quasiIds", js.Array(value :_*))
+    inline def setQuasiIdsVarargs(value: SchemaGooglePrivacyDlpV2QuasiId*): Self = StObject.set(x, "quasiIds", js.Array(value :_*))
     
-    @scala.inline
-    def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
+    inline def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionCodeUndefined: Self = StObject.set(x, "regionCode", js.undefined)
+    inline def setRegionCodeUndefined: Self = StObject.set(x, "regionCode", js.undefined)
   }
 }

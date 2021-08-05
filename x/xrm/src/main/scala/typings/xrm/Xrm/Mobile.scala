@@ -19,16 +19,13 @@ trait Mobile extends StObject {
 }
 object Mobile {
   
-  @scala.inline
-  def apply(offline: MobileOffline): Mobile = {
+  inline def apply(offline: MobileOffline): Mobile = {
     val __obj = js.Dynamic.literal(offline = offline.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mobile]
   }
   
-  @scala.inline
-  implicit class MobileMutableBuilder[Self <: Mobile] (val x: Self) extends AnyVal {
+  extension [Self <: Mobile](x: Self) {
     
-    @scala.inline
-    def setOffline(value: MobileOffline): Self = StObject.set(x, "offline", value.asInstanceOf[js.Any])
+    inline def setOffline(value: MobileOffline): Self = StObject.set(x, "offline", value.asInstanceOf[js.Any])
   }
 }

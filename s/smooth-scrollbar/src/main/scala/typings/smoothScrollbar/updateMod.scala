@@ -11,6 +11,5 @@ object updateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def update(scrollbar: Scrollbar): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(scrollbar.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def update(scrollbar: Scrollbar): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(scrollbar.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -30,20 +30,16 @@ object logInfoPluginMod {
   }
   object LogInfoPlugin {
     
-    @scala.inline
-    def apply(apply: typings.enhancedResolve.resolverMod.^ => Unit, source: String): LogInfoPlugin = {
+    inline def apply(apply: typings.enhancedResolve.resolverMod.^ => Unit, source: String): LogInfoPlugin = {
       val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply), source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[LogInfoPlugin]
     }
     
-    @scala.inline
-    implicit class LogInfoPluginMutableBuilder[Self <: LogInfoPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: LogInfoPlugin](x: Self) {
       
-      @scala.inline
-      def setApply(value: typings.enhancedResolve.resolverMod.^ => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
+      inline def setApply(value: typings.enhancedResolve.resolverMod.^ => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
 }

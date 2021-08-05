@@ -17,8 +17,7 @@ trait ParametersUsersDeletePublicSshKeyForAuthenticatedEndpoint extends StObject
 }
 object ParametersUsersDeletePublicSshKeyForAuthenticatedEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: UsersDeletePublicSshKeyForAuthenticatedEndpoint,
     request: UsersDeletePublicSshKeyForAuthenticatedRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersUsersDeletePublicSshKeyForAuthenticatedEndpoint {
     __obj.asInstanceOf[ParametersUsersDeletePublicSshKeyForAuthenticatedEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersUsersDeletePublicSshKeyForAuthenticatedEndpointMutableBuilder[Self <: ParametersUsersDeletePublicSshKeyForAuthenticatedEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersUsersDeletePublicSshKeyForAuthenticatedEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: UsersDeletePublicSshKeyForAuthenticatedEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: UsersDeletePublicSshKeyForAuthenticatedEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: UsersDeletePublicSshKeyForAuthenticatedRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: UsersDeletePublicSshKeyForAuthenticatedRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

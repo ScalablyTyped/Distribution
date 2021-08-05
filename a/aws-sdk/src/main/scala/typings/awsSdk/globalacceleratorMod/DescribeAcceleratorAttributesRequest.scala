@@ -13,16 +13,13 @@ trait DescribeAcceleratorAttributesRequest extends StObject {
 }
 object DescribeAcceleratorAttributesRequest {
   
-  @scala.inline
-  def apply(AcceleratorArn: GenericString): DescribeAcceleratorAttributesRequest = {
+  inline def apply(AcceleratorArn: GenericString): DescribeAcceleratorAttributesRequest = {
     val __obj = js.Dynamic.literal(AcceleratorArn = AcceleratorArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAcceleratorAttributesRequest]
   }
   
-  @scala.inline
-  implicit class DescribeAcceleratorAttributesRequestMutableBuilder[Self <: DescribeAcceleratorAttributesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAcceleratorAttributesRequest](x: Self) {
     
-    @scala.inline
-    def setAcceleratorArn(value: GenericString): Self = StObject.set(x, "AcceleratorArn", value.asInstanceOf[js.Any])
+    inline def setAcceleratorArn(value: GenericString): Self = StObject.set(x, "AcceleratorArn", value.asInstanceOf[js.Any])
   }
 }

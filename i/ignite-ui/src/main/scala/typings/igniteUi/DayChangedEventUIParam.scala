@@ -18,25 +18,19 @@ trait DayChangedEventUIParam extends StObject {
 }
 object DayChangedEventUIParam {
   
-  @scala.inline
-  def apply(): DayChangedEventUIParam = {
+  inline def apply(): DayChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DayChangedEventUIParam]
   }
   
-  @scala.inline
-  implicit class DayChangedEventUIParamMutableBuilder[Self <: DayChangedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: DayChangedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setNewSelectedDate(value: js.Any): Self = StObject.set(x, "newSelectedDate", value.asInstanceOf[js.Any])
+    inline def setNewSelectedDate(value: js.Any): Self = StObject.set(x, "newSelectedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewSelectedDateUndefined: Self = StObject.set(x, "newSelectedDate", js.undefined)
+    inline def setNewSelectedDateUndefined: Self = StObject.set(x, "newSelectedDate", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

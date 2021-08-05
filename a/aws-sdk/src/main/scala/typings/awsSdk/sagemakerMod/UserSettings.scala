@@ -38,52 +38,37 @@ trait UserSettings extends StObject {
 }
 object UserSettings {
   
-  @scala.inline
-  def apply(): UserSettings = {
+  inline def apply(): UserSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserSettings]
   }
   
-  @scala.inline
-  implicit class UserSettingsMutableBuilder[Self <: UserSettings] (val x: Self) extends AnyVal {
+  extension [Self <: UserSettings](x: Self) {
     
-    @scala.inline
-    def setExecutionRole(value: RoleArn): Self = StObject.set(x, "ExecutionRole", value.asInstanceOf[js.Any])
+    inline def setExecutionRole(value: RoleArn): Self = StObject.set(x, "ExecutionRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionRoleUndefined: Self = StObject.set(x, "ExecutionRole", js.undefined)
+    inline def setExecutionRoleUndefined: Self = StObject.set(x, "ExecutionRole", js.undefined)
     
-    @scala.inline
-    def setJupyterServerAppSettings(value: JupyterServerAppSettings): Self = StObject.set(x, "JupyterServerAppSettings", value.asInstanceOf[js.Any])
+    inline def setJupyterServerAppSettings(value: JupyterServerAppSettings): Self = StObject.set(x, "JupyterServerAppSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJupyterServerAppSettingsUndefined: Self = StObject.set(x, "JupyterServerAppSettings", js.undefined)
+    inline def setJupyterServerAppSettingsUndefined: Self = StObject.set(x, "JupyterServerAppSettings", js.undefined)
     
-    @scala.inline
-    def setKernelGatewayAppSettings(value: KernelGatewayAppSettings): Self = StObject.set(x, "KernelGatewayAppSettings", value.asInstanceOf[js.Any])
+    inline def setKernelGatewayAppSettings(value: KernelGatewayAppSettings): Self = StObject.set(x, "KernelGatewayAppSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKernelGatewayAppSettingsUndefined: Self = StObject.set(x, "KernelGatewayAppSettings", js.undefined)
+    inline def setKernelGatewayAppSettingsUndefined: Self = StObject.set(x, "KernelGatewayAppSettings", js.undefined)
     
-    @scala.inline
-    def setSecurityGroups(value: SecurityGroupIds): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
+    inline def setSecurityGroups(value: SecurityGroupIds): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
+    inline def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
-    @scala.inline
-    def setSecurityGroupsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
+    inline def setSecurityGroupsVarargs(value: SecurityGroupId*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setSharingSettings(value: SharingSettings): Self = StObject.set(x, "SharingSettings", value.asInstanceOf[js.Any])
+    inline def setSharingSettings(value: SharingSettings): Self = StObject.set(x, "SharingSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharingSettingsUndefined: Self = StObject.set(x, "SharingSettings", js.undefined)
+    inline def setSharingSettingsUndefined: Self = StObject.set(x, "SharingSettings", js.undefined)
     
-    @scala.inline
-    def setTensorBoardAppSettings(value: TensorBoardAppSettings): Self = StObject.set(x, "TensorBoardAppSettings", value.asInstanceOf[js.Any])
+    inline def setTensorBoardAppSettings(value: TensorBoardAppSettings): Self = StObject.set(x, "TensorBoardAppSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTensorBoardAppSettingsUndefined: Self = StObject.set(x, "TensorBoardAppSettings", js.undefined)
+    inline def setTensorBoardAppSettingsUndefined: Self = StObject.set(x, "TensorBoardAppSettings", js.undefined)
   }
 }

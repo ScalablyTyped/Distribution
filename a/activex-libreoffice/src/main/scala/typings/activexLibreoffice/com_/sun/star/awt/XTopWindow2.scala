@@ -29,8 +29,7 @@ trait XTopWindow2
 }
 object XTopWindow2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Display: Double,
     IsMaximized: Boolean,
     IsMinimized: Boolean,
@@ -47,16 +46,12 @@ object XTopWindow2 {
     __obj.asInstanceOf[XTopWindow2]
   }
   
-  @scala.inline
-  implicit class XTopWindow2MutableBuilder[Self <: XTopWindow2] (val x: Self) extends AnyVal {
+  extension [Self <: XTopWindow2](x: Self) {
     
-    @scala.inline
-    def setDisplay(value: Double): Self = StObject.set(x, "Display", value.asInstanceOf[js.Any])
+    inline def setDisplay(value: Double): Self = StObject.set(x, "Display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMaximized(value: Boolean): Self = StObject.set(x, "IsMaximized", value.asInstanceOf[js.Any])
+    inline def setIsMaximized(value: Boolean): Self = StObject.set(x, "IsMaximized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsMinimized(value: Boolean): Self = StObject.set(x, "IsMinimized", value.asInstanceOf[js.Any])
+    inline def setIsMinimized(value: Boolean): Self = StObject.set(x, "IsMinimized", value.asInstanceOf[js.Any])
   }
 }

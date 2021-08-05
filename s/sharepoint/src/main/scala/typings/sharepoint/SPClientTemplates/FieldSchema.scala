@@ -21,25 +21,19 @@ trait FieldSchema extends StObject {
 }
 object FieldSchema {
   
-  @scala.inline
-  def apply(AllowGridEditing: Boolean, FieldType: String, Name: String, Type: String): FieldSchema = {
+  inline def apply(AllowGridEditing: Boolean, FieldType: String, Name: String, Type: String): FieldSchema = {
     val __obj = js.Dynamic.literal(AllowGridEditing = AllowGridEditing.asInstanceOf[js.Any], FieldType = FieldType.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldSchema]
   }
   
-  @scala.inline
-  implicit class FieldSchemaMutableBuilder[Self <: FieldSchema] (val x: Self) extends AnyVal {
+  extension [Self <: FieldSchema](x: Self) {
     
-    @scala.inline
-    def setAllowGridEditing(value: Boolean): Self = StObject.set(x, "AllowGridEditing", value.asInstanceOf[js.Any])
+    inline def setAllowGridEditing(value: Boolean): Self = StObject.set(x, "AllowGridEditing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldType(value: String): Self = StObject.set(x, "FieldType", value.asInstanceOf[js.Any])
+    inline def setFieldType(value: String): Self = StObject.set(x, "FieldType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

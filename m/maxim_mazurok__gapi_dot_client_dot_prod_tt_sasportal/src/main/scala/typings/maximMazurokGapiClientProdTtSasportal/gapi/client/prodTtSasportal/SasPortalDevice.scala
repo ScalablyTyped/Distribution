@@ -35,70 +35,49 @@ trait SasPortalDevice extends StObject {
 }
 object SasPortalDevice {
   
-  @scala.inline
-  def apply(): SasPortalDevice = {
+  inline def apply(): SasPortalDevice = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SasPortalDevice]
   }
   
-  @scala.inline
-  implicit class SasPortalDeviceMutableBuilder[Self <: SasPortalDevice] (val x: Self) extends AnyVal {
+  extension [Self <: SasPortalDevice](x: Self) {
     
-    @scala.inline
-    def setActiveConfig(value: SasPortalDeviceConfig): Self = StObject.set(x, "activeConfig", value.asInstanceOf[js.Any])
+    inline def setActiveConfig(value: SasPortalDeviceConfig): Self = StObject.set(x, "activeConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveConfigUndefined: Self = StObject.set(x, "activeConfig", js.undefined)
+    inline def setActiveConfigUndefined: Self = StObject.set(x, "activeConfig", js.undefined)
     
-    @scala.inline
-    def setDeviceMetadata(value: js.Any): Self = StObject.set(x, "deviceMetadata", value.asInstanceOf[js.Any])
+    inline def setDeviceMetadata(value: js.Any): Self = StObject.set(x, "deviceMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceMetadataUndefined: Self = StObject.set(x, "deviceMetadata", js.undefined)
+    inline def setDeviceMetadataUndefined: Self = StObject.set(x, "deviceMetadata", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setFccId(value: String): Self = StObject.set(x, "fccId", value.asInstanceOf[js.Any])
+    inline def setFccId(value: String): Self = StObject.set(x, "fccId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFccIdUndefined: Self = StObject.set(x, "fccId", js.undefined)
+    inline def setFccIdUndefined: Self = StObject.set(x, "fccId", js.undefined)
     
-    @scala.inline
-    def setGrants(value: js.Array[SasPortalDeviceGrant]): Self = StObject.set(x, "grants", value.asInstanceOf[js.Any])
+    inline def setGrants(value: js.Array[SasPortalDeviceGrant]): Self = StObject.set(x, "grants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrantsUndefined: Self = StObject.set(x, "grants", js.undefined)
+    inline def setGrantsUndefined: Self = StObject.set(x, "grants", js.undefined)
     
-    @scala.inline
-    def setGrantsVarargs(value: SasPortalDeviceGrant*): Self = StObject.set(x, "grants", js.Array(value :_*))
+    inline def setGrantsVarargs(value: SasPortalDeviceGrant*): Self = StObject.set(x, "grants", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPreloadedConfig(value: SasPortalDeviceConfig): Self = StObject.set(x, "preloadedConfig", value.asInstanceOf[js.Any])
+    inline def setPreloadedConfig(value: SasPortalDeviceConfig): Self = StObject.set(x, "preloadedConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreloadedConfigUndefined: Self = StObject.set(x, "preloadedConfig", js.undefined)
+    inline def setPreloadedConfigUndefined: Self = StObject.set(x, "preloadedConfig", js.undefined)
     
-    @scala.inline
-    def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
+    inline def setSerialNumber(value: String): Self = StObject.set(x, "serialNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerialNumberUndefined: Self = StObject.set(x, "serialNumber", js.undefined)
+    inline def setSerialNumberUndefined: Self = StObject.set(x, "serialNumber", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

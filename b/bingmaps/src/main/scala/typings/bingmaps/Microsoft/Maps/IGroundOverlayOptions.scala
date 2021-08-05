@@ -28,49 +28,35 @@ trait IGroundOverlayOptions
 }
 object IGroundOverlayOptions {
   
-  @scala.inline
-  def apply(): IGroundOverlayOptions = {
+  inline def apply(): IGroundOverlayOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IGroundOverlayOptions]
   }
   
-  @scala.inline
-  implicit class IGroundOverlayOptionsMutableBuilder[Self <: IGroundOverlayOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IGroundOverlayOptions](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: String | Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String | Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setBounds(value: LocationRect): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+    inline def setBounds(value: LocationRect): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
+    inline def setBoundsUndefined: Self = StObject.set(x, "bounds", js.undefined)
     
-    @scala.inline
-    def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
+    inline def setImageUrl(value: String): Self = StObject.set(x, "imageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
+    inline def setImageUrlUndefined: Self = StObject.set(x, "imageUrl", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    @scala.inline
-    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+    inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

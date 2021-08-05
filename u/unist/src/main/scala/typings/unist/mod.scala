@@ -17,18 +17,15 @@ object mod {
   }
   object Literal {
     
-    @scala.inline
-    def apply(`type`: String, value: js.Any): Literal = {
+    inline def apply(`type`: String, value: js.Any): Literal = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Literal]
     }
     
-    @scala.inline
-    implicit class LiteralMutableBuilder[Self <: Literal] (val x: Self) extends AnyVal {
+    extension [Self <: Literal](x: Self) {
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -54,30 +51,23 @@ object mod {
   }
   object Node {
     
-    @scala.inline
-    def apply(`type`: String): Node = {
+    inline def apply(`type`: String): Node = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Node]
     }
     
-    @scala.inline
-    implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
+    extension [Self <: Node](x: Self) {
       
-      @scala.inline
-      def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -92,21 +82,17 @@ object mod {
   }
   object Parent {
     
-    @scala.inline
-    def apply(children: js.Array[Node], `type`: String): Parent = {
+    inline def apply(children: js.Array[Node], `type`: String): Parent = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Parent]
     }
     
-    @scala.inline
-    implicit class ParentMutableBuilder[Self <: Parent] (val x: Self) extends AnyVal {
+    extension [Self <: Parent](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[Node]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[Node]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenVarargs(value: Node*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: Node*): Self = StObject.set(x, "children", js.Array(value :_*))
     }
   }
   
@@ -129,26 +115,20 @@ object mod {
   }
   object Point {
     
-    @scala.inline
-    def apply(column: Double, line: Double): Point = {
+    inline def apply(column: Double, line: Double): Point = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
       __obj.asInstanceOf[Point]
     }
     
-    @scala.inline
-    implicit class PointMutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
+    extension [Self <: Point](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     }
   }
   
@@ -172,29 +152,22 @@ object mod {
   }
   object Position {
     
-    @scala.inline
-    def apply(end: Point, start: Point): Position = {
+    inline def apply(end: Point, start: Point): Position = {
       val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
       __obj.asInstanceOf[Position]
     }
     
-    @scala.inline
-    implicit class PositionMutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
+    extension [Self <: Position](x: Self) {
       
-      @scala.inline
-      def setEnd(value: Point): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Point): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndent(value: js.Array[Double]): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+      inline def setIndent(value: js.Array[Double]): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+      inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
       
-      @scala.inline
-      def setIndentVarargs(value: Double*): Self = StObject.set(x, "indent", js.Array(value :_*))
+      inline def setIndentVarargs(value: Double*): Self = StObject.set(x, "indent", js.Array(value :_*))
       
-      @scala.inline
-      def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
 }

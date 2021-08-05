@@ -52,50 +52,36 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAlwaysParseAsBig(value: Boolean): Self = StObject.set(x, "alwaysParseAsBig", value.asInstanceOf[js.Any])
+      inline def setAlwaysParseAsBig(value: Boolean): Self = StObject.set(x, "alwaysParseAsBig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlwaysParseAsBigUndefined: Self = StObject.set(x, "alwaysParseAsBig", js.undefined)
+      inline def setAlwaysParseAsBigUndefined: Self = StObject.set(x, "alwaysParseAsBig", js.undefined)
       
-      @scala.inline
-      def setConstructorAction(value: error | ignore | preserve): Self = StObject.set(x, "constructorAction", value.asInstanceOf[js.Any])
+      inline def setConstructorAction(value: error | ignore | preserve): Self = StObject.set(x, "constructorAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstructorActionUndefined: Self = StObject.set(x, "constructorAction", js.undefined)
+      inline def setConstructorActionUndefined: Self = StObject.set(x, "constructorAction", js.undefined)
       
-      @scala.inline
-      def setProtoAction(value: error | ignore | preserve): Self = StObject.set(x, "protoAction", value.asInstanceOf[js.Any])
+      inline def setProtoAction(value: error | ignore | preserve): Self = StObject.set(x, "protoAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtoActionUndefined: Self = StObject.set(x, "protoAction", js.undefined)
+      inline def setProtoActionUndefined: Self = StObject.set(x, "protoAction", js.undefined)
       
-      @scala.inline
-      def setStoreAsString(value: Boolean): Self = StObject.set(x, "storeAsString", value.asInstanceOf[js.Any])
+      inline def setStoreAsString(value: Boolean): Self = StObject.set(x, "storeAsString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoreAsStringUndefined: Self = StObject.set(x, "storeAsString", js.undefined)
+      inline def setStoreAsStringUndefined: Self = StObject.set(x, "storeAsString", js.undefined)
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       
-      @scala.inline
-      def setUseNativeBigInt(value: Boolean): Self = StObject.set(x, "useNativeBigInt", value.asInstanceOf[js.Any])
+      inline def setUseNativeBigInt(value: Boolean): Self = StObject.set(x, "useNativeBigInt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseNativeBigIntUndefined: Self = StObject.set(x, "useNativeBigInt", js.undefined)
+      inline def setUseNativeBigIntUndefined: Self = StObject.set(x, "useNativeBigInt", js.undefined)
     }
   }
   

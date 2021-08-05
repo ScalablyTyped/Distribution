@@ -11,19 +11,15 @@ trait SpellResult extends StObject {
 }
 object SpellResult {
   
-  @scala.inline
-  def apply(): SpellResult = {
+  inline def apply(): SpellResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpellResult]
   }
   
-  @scala.inline
-  implicit class SpellResultMutableBuilder[Self <: SpellResult] (val x: Self) extends AnyVal {
+  extension [Self <: SpellResult](x: Self) {
     
-    @scala.inline
-    def setSuggestedQuery(value: String): Self = StObject.set(x, "suggestedQuery", value.asInstanceOf[js.Any])
+    inline def setSuggestedQuery(value: String): Self = StObject.set(x, "suggestedQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestedQueryUndefined: Self = StObject.set(x, "suggestedQuery", js.undefined)
+    inline def setSuggestedQueryUndefined: Self = StObject.set(x, "suggestedQuery", js.undefined)
   }
 }

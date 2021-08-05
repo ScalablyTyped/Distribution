@@ -21,20 +21,16 @@ object schemaBuilderSchemaBuilderMod {
   }
   object SchemaBuilder {
     
-    @scala.inline
-    def apply(build: () => js.Promise[Unit], log: () => js.Promise[SqlInMemory]): SchemaBuilder = {
+    inline def apply(build: () => js.Promise[Unit], log: () => js.Promise[SqlInMemory]): SchemaBuilder = {
       val __obj = js.Dynamic.literal(build = js.Any.fromFunction0(build), log = js.Any.fromFunction0(log))
       __obj.asInstanceOf[SchemaBuilder]
     }
     
-    @scala.inline
-    implicit class SchemaBuilderMutableBuilder[Self <: SchemaBuilder] (val x: Self) extends AnyVal {
+    extension [Self <: SchemaBuilder](x: Self) {
       
-      @scala.inline
-      def setBuild(value: () => js.Promise[Unit]): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
+      inline def setBuild(value: () => js.Promise[Unit]): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLog(value: () => js.Promise[SqlInMemory]): Self = StObject.set(x, "log", js.Any.fromFunction0(value))
+      inline def setLog(value: () => js.Promise[SqlInMemory]): Self = StObject.set(x, "log", js.Any.fromFunction0(value))
     }
   }
 }

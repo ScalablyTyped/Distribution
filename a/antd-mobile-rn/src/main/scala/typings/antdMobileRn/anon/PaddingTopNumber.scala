@@ -10,16 +10,13 @@ trait PaddingTopNumber extends StObject {
 }
 object PaddingTopNumber {
   
-  @scala.inline
-  def apply(paddingTop: Double): PaddingTopNumber = {
+  inline def apply(paddingTop: Double): PaddingTopNumber = {
     val __obj = js.Dynamic.literal(paddingTop = paddingTop.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaddingTopNumber]
   }
   
-  @scala.inline
-  implicit class PaddingTopNumberMutableBuilder[Self <: PaddingTopNumber] (val x: Self) extends AnyVal {
+  extension [Self <: PaddingTopNumber](x: Self) {
     
-    @scala.inline
-    def setPaddingTop(value: Double): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
+    inline def setPaddingTop(value: Double): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
   }
 }

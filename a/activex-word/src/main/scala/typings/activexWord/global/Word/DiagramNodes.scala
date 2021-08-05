@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.DiagramNodes")
 @js.native
-class DiagramNodes protected ()
+/* private */ class DiagramNodes ()
   extends StObject
      with typings.activexWord.Word.DiagramNodes {
   
@@ -28,7 +28,7 @@ class DiagramNodes protected ()
   /* CompleteClass */
   override def SelectAll(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.DiagramNodes_typekey")
   var WordDotDiagramNodes_typekey: typings.activexWord.Word.DiagramNodes = js.native
 }

@@ -14,22 +14,17 @@ trait GameHighScore extends StObject {
 }
 object GameHighScore {
   
-  @scala.inline
-  def apply(position: Double, score: Double, user: User): GameHighScore = {
+  inline def apply(position: Double, score: Double, user: User): GameHighScore = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], score = score.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[GameHighScore]
   }
   
-  @scala.inline
-  implicit class GameHighScoreMutableBuilder[Self <: GameHighScore] (val x: Self) extends AnyVal {
+  extension [Self <: GameHighScore](x: Self) {
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
+    inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: User): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

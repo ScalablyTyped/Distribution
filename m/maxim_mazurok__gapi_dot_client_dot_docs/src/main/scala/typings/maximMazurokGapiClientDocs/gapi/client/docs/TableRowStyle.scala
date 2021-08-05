@@ -11,19 +11,15 @@ trait TableRowStyle extends StObject {
 }
 object TableRowStyle {
   
-  @scala.inline
-  def apply(): TableRowStyle = {
+  inline def apply(): TableRowStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableRowStyle]
   }
   
-  @scala.inline
-  implicit class TableRowStyleMutableBuilder[Self <: TableRowStyle] (val x: Self) extends AnyVal {
+  extension [Self <: TableRowStyle](x: Self) {
     
-    @scala.inline
-    def setMinRowHeight(value: Dimension): Self = StObject.set(x, "minRowHeight", value.asInstanceOf[js.Any])
+    inline def setMinRowHeight(value: Dimension): Self = StObject.set(x, "minRowHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinRowHeightUndefined: Self = StObject.set(x, "minRowHeight", js.undefined)
+    inline def setMinRowHeightUndefined: Self = StObject.set(x, "minRowHeight", js.undefined)
   }
 }

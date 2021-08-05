@@ -28,8 +28,7 @@ trait ScheduleLambdaFunctionFailedEventAttributes extends StObject {
 }
 object ScheduleLambdaFunctionFailedEventAttributes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cause: ScheduleLambdaFunctionFailedCause,
     decisionTaskCompletedEventId: EventId,
     id: FunctionId,
@@ -39,19 +38,14 @@ object ScheduleLambdaFunctionFailedEventAttributes {
     __obj.asInstanceOf[ScheduleLambdaFunctionFailedEventAttributes]
   }
   
-  @scala.inline
-  implicit class ScheduleLambdaFunctionFailedEventAttributesMutableBuilder[Self <: ScheduleLambdaFunctionFailedEventAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: ScheduleLambdaFunctionFailedEventAttributes](x: Self) {
     
-    @scala.inline
-    def setCause(value: ScheduleLambdaFunctionFailedCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
+    inline def setCause(value: ScheduleLambdaFunctionFailedCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecisionTaskCompletedEventId(value: EventId): Self = StObject.set(x, "decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
+    inline def setDecisionTaskCompletedEventId(value: EventId): Self = StObject.set(x, "decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: FunctionId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: FunctionId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: FunctionName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: FunctionName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

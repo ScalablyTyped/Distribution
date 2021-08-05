@@ -24,55 +24,39 @@ trait FieldStatsParams
 }
 object FieldStatsParams {
   
-  @scala.inline
-  def apply(): FieldStatsParams = {
+  inline def apply(): FieldStatsParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FieldStatsParams]
   }
   
-  @scala.inline
-  implicit class FieldStatsParamsMutableBuilder[Self <: FieldStatsParams] (val x: Self) extends AnyVal {
+  extension [Self <: FieldStatsParams](x: Self) {
     
-    @scala.inline
-    def setAllowNoIndices(value: Boolean): Self = StObject.set(x, "allowNoIndices", value.asInstanceOf[js.Any])
+    inline def setAllowNoIndices(value: Boolean): Self = StObject.set(x, "allowNoIndices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowNoIndicesUndefined: Self = StObject.set(x, "allowNoIndices", js.undefined)
+    inline def setAllowNoIndicesUndefined: Self = StObject.set(x, "allowNoIndices", js.undefined)
     
-    @scala.inline
-    def setExpandWildcards(value: ExpandWildcards): Self = StObject.set(x, "expandWildcards", value.asInstanceOf[js.Any])
+    inline def setExpandWildcards(value: ExpandWildcards): Self = StObject.set(x, "expandWildcards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandWildcardsUndefined: Self = StObject.set(x, "expandWildcards", js.undefined)
+    inline def setExpandWildcardsUndefined: Self = StObject.set(x, "expandWildcards", js.undefined)
     
-    @scala.inline
-    def setFields(value: NameList): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: NameList): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setIgnoreUnavailable(value: Boolean): Self = StObject.set(x, "ignoreUnavailable", value.asInstanceOf[js.Any])
+    inline def setIgnoreUnavailable(value: Boolean): Self = StObject.set(x, "ignoreUnavailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreUnavailableUndefined: Self = StObject.set(x, "ignoreUnavailable", js.undefined)
+    inline def setIgnoreUnavailableUndefined: Self = StObject.set(x, "ignoreUnavailable", js.undefined)
     
-    @scala.inline
-    def setIndex(value: NameList): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: NameList): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
+    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
     
-    @scala.inline
-    def setLevel(value: indices | cluster): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: indices | cluster): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
   }
 }

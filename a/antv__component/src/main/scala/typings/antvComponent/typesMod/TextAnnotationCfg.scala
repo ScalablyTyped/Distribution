@@ -24,19 +24,15 @@ trait TextAnnotationCfg
 }
 object TextAnnotationCfg {
   
-  @scala.inline
-  def apply(container: IGroup, content: String | Double, x: Double, y: Double): TextAnnotationCfg = {
+  inline def apply(container: IGroup, content: String | Double, x: Double, y: Double): TextAnnotationCfg = {
     val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextAnnotationCfg]
   }
   
-  @scala.inline
-  implicit class TextAnnotationCfgMutableBuilder[Self <: TextAnnotationCfg] (val x: Self) extends AnyVal {
+  extension [Self <: TextAnnotationCfg](x: Self) {
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

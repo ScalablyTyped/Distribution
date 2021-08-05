@@ -49,91 +49,63 @@ trait PartialImage extends StObject {
 }
 object PartialImage {
   
-  @scala.inline
-  def apply(): PartialImage = {
+  inline def apply(): PartialImage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialImage]
   }
   
-  @scala.inline
-  implicit class PartialImageMutableBuilder[Self <: PartialImage] (val x: Self) extends AnyVal {
+  extension [Self <: PartialImage](x: Self) {
     
-    @scala.inline
-    def setLayer(value: above | below): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: above | below): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
+    inline def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    @scala.inline
-    def setSizex(value: Double): Self = StObject.set(x, "sizex", value.asInstanceOf[js.Any])
+    inline def setSizex(value: Double): Self = StObject.set(x, "sizex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizexUndefined: Self = StObject.set(x, "sizex", js.undefined)
+    inline def setSizexUndefined: Self = StObject.set(x, "sizex", js.undefined)
     
-    @scala.inline
-    def setSizey(value: Double): Self = StObject.set(x, "sizey", value.asInstanceOf[js.Any])
+    inline def setSizey(value: Double): Self = StObject.set(x, "sizey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeyUndefined: Self = StObject.set(x, "sizey", js.undefined)
+    inline def setSizeyUndefined: Self = StObject.set(x, "sizey", js.undefined)
     
-    @scala.inline
-    def setSizing(value: fill | contain | stretch): Self = StObject.set(x, "sizing", value.asInstanceOf[js.Any])
+    inline def setSizing(value: fill | contain | stretch): Self = StObject.set(x, "sizing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizingUndefined: Self = StObject.set(x, "sizing", js.undefined)
+    inline def setSizingUndefined: Self = StObject.set(x, "sizing", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
-    @scala.inline
-    def setX(value: Double | String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double | String): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setXanchor(value: left | center | right): Self = StObject.set(x, "xanchor", value.asInstanceOf[js.Any])
+    inline def setXanchor(value: left | center | right): Self = StObject.set(x, "xanchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXanchorUndefined: Self = StObject.set(x, "xanchor", js.undefined)
+    inline def setXanchorUndefined: Self = StObject.set(x, "xanchor", js.undefined)
     
-    @scala.inline
-    def setXref(value: paper | XAxisName): Self = StObject.set(x, "xref", value.asInstanceOf[js.Any])
+    inline def setXref(value: paper | XAxisName): Self = StObject.set(x, "xref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXrefUndefined: Self = StObject.set(x, "xref", js.undefined)
+    inline def setXrefUndefined: Self = StObject.set(x, "xref", js.undefined)
     
-    @scala.inline
-    def setY(value: Double | String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double | String): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     
-    @scala.inline
-    def setYanchor(value: top | middle | bottom): Self = StObject.set(x, "yanchor", value.asInstanceOf[js.Any])
+    inline def setYanchor(value: top | middle | bottom): Self = StObject.set(x, "yanchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYanchorUndefined: Self = StObject.set(x, "yanchor", js.undefined)
+    inline def setYanchorUndefined: Self = StObject.set(x, "yanchor", js.undefined)
     
-    @scala.inline
-    def setYref(value: paper | YAxisName): Self = StObject.set(x, "yref", value.asInstanceOf[js.Any])
+    inline def setYref(value: paper | YAxisName): Self = StObject.set(x, "yref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYrefUndefined: Self = StObject.set(x, "yref", js.undefined)
+    inline def setYrefUndefined: Self = StObject.set(x, "yref", js.undefined)
   }
 }

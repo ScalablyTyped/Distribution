@@ -22,29 +22,23 @@ trait GoogleCloudRecommenderV1MarkRecommendationSucceededRequest extends StObjec
 }
 object GoogleCloudRecommenderV1MarkRecommendationSucceededRequest {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommenderV1MarkRecommendationSucceededRequest = {
+  inline def apply(): GoogleCloudRecommenderV1MarkRecommendationSucceededRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommenderV1MarkRecommendationSucceededRequest]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommenderV1MarkRecommendationSucceededRequestMutableBuilder[Self <: GoogleCloudRecommenderV1MarkRecommendationSucceededRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommenderV1MarkRecommendationSucceededRequest](x: Self) {
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setStateMetadata(
+    inline def setStateMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientRecommender.maximMazurokGapiClientRecommenderStrings.GoogleCloudRecommenderV1MarkRecommendationSucceededRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "stateMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateMetadataUndefined: Self = StObject.set(x, "stateMetadata", js.undefined)
+    inline def setStateMetadataUndefined: Self = StObject.set(x, "stateMetadata", js.undefined)
   }
 }

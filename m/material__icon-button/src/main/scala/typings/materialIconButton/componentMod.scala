@@ -29,7 +29,6 @@ object componentMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def attachTo(root: HTMLElement): MDCIconButtonToggle = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCIconButtonToggle]
+    inline def attachTo(root: HTMLElement): MDCIconButtonToggle = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCIconButtonToggle]
   }
 }

@@ -22,20 +22,16 @@ object typesKeySchemaElementMod {
   }
   object KeySchemaElement {
     
-    @scala.inline
-    def apply(AttributeName: String, KeyType: HASH | RANGE | String): KeySchemaElement = {
+    inline def apply(AttributeName: String, KeyType: HASH | RANGE | String): KeySchemaElement = {
       val __obj = js.Dynamic.literal(AttributeName = AttributeName.asInstanceOf[js.Any], KeyType = KeyType.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeySchemaElement]
     }
     
-    @scala.inline
-    implicit class KeySchemaElementMutableBuilder[Self <: KeySchemaElement] (val x: Self) extends AnyVal {
+    extension [Self <: KeySchemaElement](x: Self) {
       
-      @scala.inline
-      def setAttributeName(value: String): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
+      inline def setAttributeName(value: String): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyType(value: HASH | RANGE | String): Self = StObject.set(x, "KeyType", value.asInstanceOf[js.Any])
+      inline def setKeyType(value: HASH | RANGE | String): Self = StObject.set(x, "KeyType", value.asInstanceOf[js.Any])
     }
   }
   

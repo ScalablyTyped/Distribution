@@ -21,17 +21,14 @@ object LazyJS {
   }
   object ArrayLike {
     
-    @scala.inline
-    def apply[T](length: Double): ArrayLike[T] = {
+    inline def apply[T](length: Double): ArrayLike[T] = {
       val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
       __obj.asInstanceOf[ArrayLike[T]]
     }
     
-    @scala.inline
-    implicit class ArrayLikeMutableBuilder[Self <: ArrayLike[?], T] (val x: Self & ArrayLike[T]) extends AnyVal {
+    extension [Self <: ArrayLike[?], T](x: Self & ArrayLike[T]) {
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
@@ -71,23 +68,18 @@ object LazyJS {
   }
   object AsyncHandle {
     
-    @scala.inline
-    def apply[T](cancel: () => Unit, onComplete: Callback => Unit, onError: ErrorCallback => Unit): AsyncHandle[T] = {
+    inline def apply[T](cancel: () => Unit, onComplete: Callback => Unit, onError: ErrorCallback => Unit): AsyncHandle[T] = {
       val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction0(cancel), onComplete = js.Any.fromFunction1(onComplete), onError = js.Any.fromFunction1(onError))
       __obj.asInstanceOf[AsyncHandle[T]]
     }
     
-    @scala.inline
-    implicit class AsyncHandleMutableBuilder[Self <: AsyncHandle[?], T] (val x: Self & AsyncHandle[T]) extends AnyVal {
+    extension [Self <: AsyncHandle[?], T](x: Self & AsyncHandle[T]) {
       
-      @scala.inline
-      def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+      inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnComplete(value: Callback => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
+      inline def setOnComplete(value: Callback => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnError(value: ErrorCallback => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      inline def setOnError(value: ErrorCallback => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     }
   }
   

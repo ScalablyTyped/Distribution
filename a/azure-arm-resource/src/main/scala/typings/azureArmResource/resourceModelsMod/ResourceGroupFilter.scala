@@ -18,25 +18,19 @@ trait ResourceGroupFilter extends StObject {
 }
 object ResourceGroupFilter {
   
-  @scala.inline
-  def apply(): ResourceGroupFilter = {
+  inline def apply(): ResourceGroupFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResourceGroupFilter]
   }
   
-  @scala.inline
-  implicit class ResourceGroupFilterMutableBuilder[Self <: ResourceGroupFilter] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceGroupFilter](x: Self) {
     
-    @scala.inline
-    def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+    inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
+    inline def setTagNameUndefined: Self = StObject.set(x, "tagName", js.undefined)
     
-    @scala.inline
-    def setTagValue(value: String): Self = StObject.set(x, "tagValue", value.asInstanceOf[js.Any])
+    inline def setTagValue(value: String): Self = StObject.set(x, "tagValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagValueUndefined: Self = StObject.set(x, "tagValue", js.undefined)
+    inline def setTagValueUndefined: Self = StObject.set(x, "tagValue", js.undefined)
   }
 }

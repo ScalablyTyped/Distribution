@@ -21,6 +21,5 @@ object NavBase {
   @JSImport("office-ui-fabric-react", "NavBase.defaultProps")
   @js.native
   def defaultProps: INavProps = js.native
-  @scala.inline
-  def defaultProps_=(x: INavProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: INavProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

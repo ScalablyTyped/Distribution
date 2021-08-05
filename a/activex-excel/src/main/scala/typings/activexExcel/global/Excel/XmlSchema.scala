@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.XmlSchema")
 @js.native
-class XmlSchema protected ()
+/* private */ class XmlSchema ()
   extends StObject
      with typings.activexExcel.Excel.XmlSchema {
   
@@ -17,7 +17,7 @@ class XmlSchema protected ()
   /* CompleteClass */
   override val Creator: XlCreator = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.XmlSchema_typekey")
   var ExcelDotXmlSchema_typekey: typings.activexExcel.Excel.XmlSchema = js.native
   

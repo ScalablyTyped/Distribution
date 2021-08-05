@@ -29,8 +29,7 @@ trait UseGlobalFiltersInstanceProps[D /* <: js.Object */] extends StObject {
 }
 object UseGlobalFiltersInstanceProps {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](
+  inline def apply[D /* <: js.Object */](
     flatRows: js.Array[Row[D]],
     globalFilteredFlatRows: js.Array[Row[D]],
     globalFilteredRows: js.Array[Row[D]],
@@ -46,55 +45,38 @@ object UseGlobalFiltersInstanceProps {
     __obj.asInstanceOf[UseGlobalFiltersInstanceProps[D]]
   }
   
-  @scala.inline
-  implicit class UseGlobalFiltersInstancePropsMutableBuilder[Self <: UseGlobalFiltersInstanceProps[?], D /* <: js.Object */] (val x: Self & UseGlobalFiltersInstanceProps[D]) extends AnyVal {
+  extension [Self <: UseGlobalFiltersInstanceProps[?], D /* <: js.Object */](x: Self & UseGlobalFiltersInstanceProps[D]) {
     
-    @scala.inline
-    def setFlatRows(value: js.Array[Row[D]]): Self = StObject.set(x, "flatRows", value.asInstanceOf[js.Any])
+    inline def setFlatRows(value: js.Array[Row[D]]): Self = StObject.set(x, "flatRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlatRowsVarargs(value: Row[D]*): Self = StObject.set(x, "flatRows", js.Array(value :_*))
+    inline def setFlatRowsVarargs(value: Row[D]*): Self = StObject.set(x, "flatRows", js.Array(value :_*))
     
-    @scala.inline
-    def setGlobalFilteredFlatRows(value: js.Array[Row[D]]): Self = StObject.set(x, "globalFilteredFlatRows", value.asInstanceOf[js.Any])
+    inline def setGlobalFilteredFlatRows(value: js.Array[Row[D]]): Self = StObject.set(x, "globalFilteredFlatRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalFilteredFlatRowsVarargs(value: Row[D]*): Self = StObject.set(x, "globalFilteredFlatRows", js.Array(value :_*))
+    inline def setGlobalFilteredFlatRowsVarargs(value: Row[D]*): Self = StObject.set(x, "globalFilteredFlatRows", js.Array(value :_*))
     
-    @scala.inline
-    def setGlobalFilteredRows(value: js.Array[Row[D]]): Self = StObject.set(x, "globalFilteredRows", value.asInstanceOf[js.Any])
+    inline def setGlobalFilteredRows(value: js.Array[Row[D]]): Self = StObject.set(x, "globalFilteredRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalFilteredRowsById(value: Record[String, Row[D]]): Self = StObject.set(x, "globalFilteredRowsById", value.asInstanceOf[js.Any])
+    inline def setGlobalFilteredRowsById(value: Record[String, Row[D]]): Self = StObject.set(x, "globalFilteredRowsById", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalFilteredRowsVarargs(value: Row[D]*): Self = StObject.set(x, "globalFilteredRows", js.Array(value :_*))
+    inline def setGlobalFilteredRowsVarargs(value: Row[D]*): Self = StObject.set(x, "globalFilteredRows", js.Array(value :_*))
     
-    @scala.inline
-    def setPreGlobalFilteredFlatRows(value: js.Array[Row[D]]): Self = StObject.set(x, "preGlobalFilteredFlatRows", value.asInstanceOf[js.Any])
+    inline def setPreGlobalFilteredFlatRows(value: js.Array[Row[D]]): Self = StObject.set(x, "preGlobalFilteredFlatRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreGlobalFilteredFlatRowsVarargs(value: Row[D]*): Self = StObject.set(x, "preGlobalFilteredFlatRows", js.Array(value :_*))
+    inline def setPreGlobalFilteredFlatRowsVarargs(value: Row[D]*): Self = StObject.set(x, "preGlobalFilteredFlatRows", js.Array(value :_*))
     
-    @scala.inline
-    def setPreGlobalFilteredRows(value: js.Array[Row[D]]): Self = StObject.set(x, "preGlobalFilteredRows", value.asInstanceOf[js.Any])
+    inline def setPreGlobalFilteredRows(value: js.Array[Row[D]]): Self = StObject.set(x, "preGlobalFilteredRows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreGlobalFilteredRowsById(value: Record[String, Row[D]]): Self = StObject.set(x, "preGlobalFilteredRowsById", value.asInstanceOf[js.Any])
+    inline def setPreGlobalFilteredRowsById(value: Record[String, Row[D]]): Self = StObject.set(x, "preGlobalFilteredRowsById", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreGlobalFilteredRowsVarargs(value: Row[D]*): Self = StObject.set(x, "preGlobalFilteredRows", js.Array(value :_*))
+    inline def setPreGlobalFilteredRowsVarargs(value: Row[D]*): Self = StObject.set(x, "preGlobalFilteredRows", js.Array(value :_*))
     
-    @scala.inline
-    def setRows(value: js.Array[Row[D]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[Row[D]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsById(value: Record[String, Row[D]]): Self = StObject.set(x, "rowsById", value.asInstanceOf[js.Any])
+    inline def setRowsById(value: Record[String, Row[D]]): Self = StObject.set(x, "rowsById", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsVarargs(value: Row[D]*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: Row[D]*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
-    @scala.inline
-    def setSetGlobalFilter(value: FilterValue => Unit): Self = StObject.set(x, "setGlobalFilter", js.Any.fromFunction1(value))
+    inline def setSetGlobalFilter(value: FilterValue => Unit): Self = StObject.set(x, "setGlobalFilter", js.Any.fromFunction1(value))
   }
 }

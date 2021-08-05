@@ -97,33 +97,28 @@ object mod {
     @JSImport("app-builder-lib", "Platform.LINUX")
     @js.native
     def LINUX: typings.appBuilderLib.coreMod.Platform = js.native
-    @scala.inline
-    def LINUX_=(x: typings.appBuilderLib.coreMod.Platform): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINUX")(x.asInstanceOf[js.Any])
+    inline def LINUX_=(x: typings.appBuilderLib.coreMod.Platform): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LINUX")(x.asInstanceOf[js.Any])
     
     @JSImport("app-builder-lib", "Platform.MAC")
     @js.native
     def MAC: typings.appBuilderLib.coreMod.Platform = js.native
-    @scala.inline
-    def MAC_=(x: typings.appBuilderLib.coreMod.Platform): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAC")(x.asInstanceOf[js.Any])
+    inline def MAC_=(x: typings.appBuilderLib.coreMod.Platform): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAC")(x.asInstanceOf[js.Any])
     
     @JSImport("app-builder-lib", "Platform.WINDOWS")
     @js.native
     def WINDOWS: typings.appBuilderLib.coreMod.Platform = js.native
-    @scala.inline
-    def WINDOWS_=(x: typings.appBuilderLib.coreMod.Platform): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WINDOWS")(x.asInstanceOf[js.Any])
+    inline def WINDOWS_=(x: typings.appBuilderLib.coreMod.Platform): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WINDOWS")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def current(): typings.appBuilderLib.coreMod.Platform = ^.asInstanceOf[js.Dynamic].applyDynamic("current")().asInstanceOf[typings.appBuilderLib.coreMod.Platform]
+    inline def current(): typings.appBuilderLib.coreMod.Platform = ^.asInstanceOf[js.Dynamic].applyDynamic("current")().asInstanceOf[typings.appBuilderLib.coreMod.Platform]
     
-    @scala.inline
-    def fromString(name: String): typings.appBuilderLib.coreMod.Platform = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(name.asInstanceOf[js.Any]).asInstanceOf[typings.appBuilderLib.coreMod.Platform]
+    inline def fromString(name: String): typings.appBuilderLib.coreMod.Platform = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(name.asInstanceOf[js.Any]).asInstanceOf[typings.appBuilderLib.coreMod.Platform]
   }
   
   @JSImport("app-builder-lib", "PlatformPackager")
   @js.native
   abstract class PlatformPackager[DC /* <: PlatformSpecificBuildOptions */] protected ()
     extends typings.appBuilderLib.platformPackagerMod.PlatformPackager[DC] {
-    protected def this(info: Packager, platform: Platform) = this()
+    /* protected */ def this(info: Packager, platform: Platform) = this()
   }
   /* static members */
   object PlatformPackager {
@@ -135,14 +130,12 @@ object mod {
     @JSImport("app-builder-lib", "PlatformPackager.buildAsyncTargets")
     @js.native
     def buildAsyncTargets: js.Any = js.native
-    @scala.inline
-    def buildAsyncTargets_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buildAsyncTargets")(x.asInstanceOf[js.Any])
+    inline def buildAsyncTargets_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buildAsyncTargets")(x.asInstanceOf[js.Any])
     
     @JSImport("app-builder-lib", "PlatformPackager.normalizePlatformSpecificBuildOptions")
     @js.native
     def normalizePlatformSpecificBuildOptions: js.Any = js.native
-    @scala.inline
-    def normalizePlatformSpecificBuildOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normalizePlatformSpecificBuildOptions")(x.asInstanceOf[js.Any])
+    inline def normalizePlatformSpecificBuildOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normalizePlatformSpecificBuildOptions")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("app-builder-lib", "PublishManager")
@@ -161,24 +154,18 @@ object mod {
   @js.native
   abstract class Target protected ()
     extends typings.appBuilderLib.coreMod.Target {
-    protected def this(name: String) = this()
-    protected def this(name: String, isAsyncSupported: Boolean) = this()
+    /* protected */ def this(name: String) = this()
+    /* protected */ def this(name: String, isAsyncSupported: Boolean) = this()
   }
   
-  @scala.inline
-  def archFromString(name: String): Arch = ^.asInstanceOf[js.Dynamic].applyDynamic("archFromString")(name.asInstanceOf[js.Any]).asInstanceOf[Arch]
+  inline def archFromString(name: String): Arch = ^.asInstanceOf[js.Dynamic].applyDynamic("archFromString")(name.asInstanceOf[js.Any]).asInstanceOf[Arch]
   
-  @scala.inline
-  def build(options: PackagerOptions & PublishOptions): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
-  @scala.inline
-  def build(options: PackagerOptions & PublishOptions, packager: typings.appBuilderLib.packagerMod.Packager): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(options.asInstanceOf[js.Any], packager.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  inline def build(options: PackagerOptions & PublishOptions): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  inline def build(options: PackagerOptions & PublishOptions, packager: typings.appBuilderLib.packagerMod.Packager): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(options.asInstanceOf[js.Any], packager.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   
-  @scala.inline
-  def buildForge(forgeOptions: ForgeOptions, options: PackagerOptions): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildForge")(forgeOptions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  inline def buildForge(forgeOptions: ForgeOptions, options: PackagerOptions): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildForge")(forgeOptions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   
-  @scala.inline
-  def checkBuildRequestOptions(options: PackagerOptions & PublishOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkBuildRequestOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def checkBuildRequestOptions(options: PackagerOptions & PublishOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("checkBuildRequestOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def getArchSuffix(arch: Arch): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getArchSuffix")(arch.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getArchSuffix(arch: Arch): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getArchSuffix")(arch.asInstanceOf[js.Any]).asInstanceOf[String]
 }

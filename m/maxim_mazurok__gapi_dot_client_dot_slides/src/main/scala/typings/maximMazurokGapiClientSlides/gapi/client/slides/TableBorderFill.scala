@@ -11,19 +11,15 @@ trait TableBorderFill extends StObject {
 }
 object TableBorderFill {
   
-  @scala.inline
-  def apply(): TableBorderFill = {
+  inline def apply(): TableBorderFill = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableBorderFill]
   }
   
-  @scala.inline
-  implicit class TableBorderFillMutableBuilder[Self <: TableBorderFill] (val x: Self) extends AnyVal {
+  extension [Self <: TableBorderFill](x: Self) {
     
-    @scala.inline
-    def setSolidFill(value: SolidFill): Self = StObject.set(x, "solidFill", value.asInstanceOf[js.Any])
+    inline def setSolidFill(value: SolidFill): Self = StObject.set(x, "solidFill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSolidFillUndefined: Self = StObject.set(x, "solidFill", js.undefined)
+    inline def setSolidFillUndefined: Self = StObject.set(x, "solidFill", js.undefined)
   }
 }

@@ -23,24 +23,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdFramePosition extends StObject
 object WdFramePosition {
   
-  @scala.inline
-  def wdFrameBottom: `-999997` = -999997.asInstanceOf[`-999997`]
+  inline def wdFrameBottom: `-999997` = -999997.asInstanceOf[`-999997`]
   
-  @scala.inline
-  def wdFrameCenter: `-999995` = -999995.asInstanceOf[`-999995`]
+  inline def wdFrameCenter: `-999995` = -999995.asInstanceOf[`-999995`]
   
-  @scala.inline
-  def wdFrameInside: `-999994` = -999994.asInstanceOf[`-999994`]
+  inline def wdFrameInside: `-999994` = -999994.asInstanceOf[`-999994`]
   
-  @scala.inline
-  def wdFrameLeft: `-999998` = -999998.asInstanceOf[`-999998`]
+  inline def wdFrameLeft: `-999998` = -999998.asInstanceOf[`-999998`]
   
-  @scala.inline
-  def wdFrameOutside: `-999993` = -999993.asInstanceOf[`-999993`]
+  inline def wdFrameOutside: `-999993` = -999993.asInstanceOf[`-999993`]
   
-  @scala.inline
-  def wdFrameRight: `-999996` = -999996.asInstanceOf[`-999996`]
+  inline def wdFrameRight: `-999996` = -999996.asInstanceOf[`-999996`]
   
-  @scala.inline
-  def wdFrameTop: `-999999` = -999999.asInstanceOf[`-999999`]
+  inline def wdFrameTop: `-999999` = -999999.asInstanceOf[`-999999`]
 }

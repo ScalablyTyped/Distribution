@@ -48,13 +48,10 @@ object publicKeyInfoMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
-    @scala.inline
-    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    inline def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   trait PublicKeyInfo extends StObject {
@@ -81,8 +78,7 @@ object publicKeyInfoMod {
   }
   object PublicKeyInfo {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       algorithm: typings.pkijs.algorithmIdentifierMod.default,
       fromJSON: JsonWebKey => Unit,
       fromSchema: js.Any => Unit,
@@ -95,35 +91,25 @@ object publicKeyInfoMod {
       __obj.asInstanceOf[PublicKeyInfo]
     }
     
-    @scala.inline
-    implicit class PublicKeyInfoMutableBuilder[Self <: PublicKeyInfo] (val x: Self) extends AnyVal {
+    extension [Self <: PublicKeyInfo](x: Self) {
       
-      @scala.inline
-      def setAlgorithm(value: typings.pkijs.algorithmIdentifierMod.default): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+      inline def setAlgorithm(value: typings.pkijs.algorithmIdentifierMod.default): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromJSON(value: JsonWebKey => Unit): Self = StObject.set(x, "fromJSON", js.Any.fromFunction1(value))
+      inline def setFromJSON(value: JsonWebKey => Unit): Self = StObject.set(x, "fromJSON", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
+      inline def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setImportKey(value: CryptoKey => js.Thenable[Unit]): Self = StObject.set(x, "importKey", js.Any.fromFunction1(value))
+      inline def setImportKey(value: CryptoKey => js.Thenable[Unit]): Self = StObject.set(x, "importKey", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setParsedKey(value: typings.pkijs.ecpublickeyMod.default | typings.pkijs.rsapublickeyMod.default): Self = StObject.set(x, "parsedKey", value.asInstanceOf[js.Any])
+      inline def setParsedKey(value: typings.pkijs.ecpublickeyMod.default | typings.pkijs.rsapublickeyMod.default): Self = StObject.set(x, "parsedKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParsedKeyUndefined: Self = StObject.set(x, "parsedKey", js.undefined)
+      inline def setParsedKeyUndefined: Self = StObject.set(x, "parsedKey", js.undefined)
       
-      @scala.inline
-      def setSubjectPublicKey(value: BitString): Self = StObject.set(x, "subjectPublicKey", value.asInstanceOf[js.Any])
+      inline def setSubjectPublicKey(value: BitString): Self = StObject.set(x, "subjectPublicKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
+      inline def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
     }
   }
 }

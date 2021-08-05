@@ -14,25 +14,19 @@ trait PositionedObjectProperties extends StObject {
 }
 object PositionedObjectProperties {
   
-  @scala.inline
-  def apply(): PositionedObjectProperties = {
+  inline def apply(): PositionedObjectProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PositionedObjectProperties]
   }
   
-  @scala.inline
-  implicit class PositionedObjectPropertiesMutableBuilder[Self <: PositionedObjectProperties] (val x: Self) extends AnyVal {
+  extension [Self <: PositionedObjectProperties](x: Self) {
     
-    @scala.inline
-    def setEmbeddedObject(value: EmbeddedObject): Self = StObject.set(x, "embeddedObject", value.asInstanceOf[js.Any])
+    inline def setEmbeddedObject(value: EmbeddedObject): Self = StObject.set(x, "embeddedObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmbeddedObjectUndefined: Self = StObject.set(x, "embeddedObject", js.undefined)
+    inline def setEmbeddedObjectUndefined: Self = StObject.set(x, "embeddedObject", js.undefined)
     
-    @scala.inline
-    def setPositioning(value: PositionedObjectPositioning): Self = StObject.set(x, "positioning", value.asInstanceOf[js.Any])
+    inline def setPositioning(value: PositionedObjectPositioning): Self = StObject.set(x, "positioning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositioningUndefined: Self = StObject.set(x, "positioning", js.undefined)
+    inline def setPositioningUndefined: Self = StObject.set(x, "positioning", js.undefined)
   }
 }

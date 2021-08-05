@@ -28,40 +28,29 @@ trait AutoSnapshotDetails extends StObject {
 }
 object AutoSnapshotDetails {
   
-  @scala.inline
-  def apply(): AutoSnapshotDetails = {
+  inline def apply(): AutoSnapshotDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoSnapshotDetails]
   }
   
-  @scala.inline
-  implicit class AutoSnapshotDetailsMutableBuilder[Self <: AutoSnapshotDetails] (val x: Self) extends AnyVal {
+  extension [Self <: AutoSnapshotDetails](x: Self) {
     
-    @scala.inline
-    def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: IsoDate): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "createdAt", js.undefined)
     
-    @scala.inline
-    def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+    inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
-    @scala.inline
-    def setFromAttachedDisks(value: AttachedDiskList): Self = StObject.set(x, "fromAttachedDisks", value.asInstanceOf[js.Any])
+    inline def setFromAttachedDisks(value: AttachedDiskList): Self = StObject.set(x, "fromAttachedDisks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromAttachedDisksUndefined: Self = StObject.set(x, "fromAttachedDisks", js.undefined)
+    inline def setFromAttachedDisksUndefined: Self = StObject.set(x, "fromAttachedDisks", js.undefined)
     
-    @scala.inline
-    def setFromAttachedDisksVarargs(value: AttachedDisk*): Self = StObject.set(x, "fromAttachedDisks", js.Array(value :_*))
+    inline def setFromAttachedDisksVarargs(value: AttachedDisk*): Self = StObject.set(x, "fromAttachedDisks", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: AutoSnapshotStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: AutoSnapshotStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

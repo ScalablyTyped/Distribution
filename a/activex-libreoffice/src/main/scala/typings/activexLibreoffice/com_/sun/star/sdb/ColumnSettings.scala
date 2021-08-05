@@ -60,8 +60,7 @@ trait ColumnSettings
 }
 object ColumnSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Align: Double,
     ControlDefault: String,
     ControlModel: XPropertySet,
@@ -86,31 +85,22 @@ object ColumnSettings {
     __obj.asInstanceOf[ColumnSettings]
   }
   
-  @scala.inline
-  implicit class ColumnSettingsMutableBuilder[Self <: ColumnSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnSettings](x: Self) {
     
-    @scala.inline
-    def setAlign(value: Double): Self = StObject.set(x, "Align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: Double): Self = StObject.set(x, "Align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlDefault(value: String): Self = StObject.set(x, "ControlDefault", value.asInstanceOf[js.Any])
+    inline def setControlDefault(value: String): Self = StObject.set(x, "ControlDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlModel(value: XPropertySet): Self = StObject.set(x, "ControlModel", value.asInstanceOf[js.Any])
+    inline def setControlModel(value: XPropertySet): Self = StObject.set(x, "ControlModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatKey(value: Double): Self = StObject.set(x, "FormatKey", value.asInstanceOf[js.Any])
+    inline def setFormatKey(value: Double): Self = StObject.set(x, "FormatKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpText(value: String): Self = StObject.set(x, "HelpText", value.asInstanceOf[js.Any])
+    inline def setHelpText(value: String): Self = StObject.set(x, "HelpText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHidden(value: Boolean): Self = StObject.set(x, "Hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "Hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "Position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "Width", value.asInstanceOf[js.Any])
   }
 }

@@ -24,8 +24,7 @@ object anon {
   }
   object Cipher {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cipher: String,
       cipherparams: Iv,
       ciphertext: String,
@@ -37,26 +36,19 @@ object anon {
       __obj.asInstanceOf[Cipher]
     }
     
-    @scala.inline
-    implicit class CipherMutableBuilder[Self <: Cipher] (val x: Self) extends AnyVal {
+    extension [Self <: Cipher](x: Self) {
       
-      @scala.inline
-      def setCipher(value: String): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])
+      inline def setCipher(value: String): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCipherparams(value: Iv): Self = StObject.set(x, "cipherparams", value.asInstanceOf[js.Any])
+      inline def setCipherparams(value: Iv): Self = StObject.set(x, "cipherparams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCiphertext(value: String): Self = StObject.set(x, "ciphertext", value.asInstanceOf[js.Any])
+      inline def setCiphertext(value: String): Self = StObject.set(x, "ciphertext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKdf(value: String): Self = StObject.set(x, "kdf", value.asInstanceOf[js.Any])
+      inline def setKdf(value: String): Self = StObject.set(x, "kdf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKdfparams(value: KDFParamsOut): Self = StObject.set(x, "kdfparams", value.asInstanceOf[js.Any])
+      inline def setKdfparams(value: KDFParamsOut): Self = StObject.set(x, "kdfparams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMac(value: String): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
+      inline def setMac(value: String): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
     }
   }
   
@@ -74,29 +66,22 @@ object anon {
   }
   object CipherText {
     
-    @scala.inline
-    def apply(CipherText: String, IV: String, KeyHeader: Kdf, MAC: String, Salt: String): CipherText = {
+    inline def apply(CipherText: String, IV: String, KeyHeader: Kdf, MAC: String, Salt: String): CipherText = {
       val __obj = js.Dynamic.literal(CipherText = CipherText.asInstanceOf[js.Any], IV = IV.asInstanceOf[js.Any], KeyHeader = KeyHeader.asInstanceOf[js.Any], MAC = MAC.asInstanceOf[js.Any], Salt = Salt.asInstanceOf[js.Any])
       __obj.asInstanceOf[CipherText]
     }
     
-    @scala.inline
-    implicit class CipherTextMutableBuilder[Self <: CipherText] (val x: Self) extends AnyVal {
+    extension [Self <: CipherText](x: Self) {
       
-      @scala.inline
-      def setCipherText(value: String): Self = StObject.set(x, "CipherText", value.asInstanceOf[js.Any])
+      inline def setCipherText(value: String): Self = StObject.set(x, "CipherText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIV(value: String): Self = StObject.set(x, "IV", value.asInstanceOf[js.Any])
+      inline def setIV(value: String): Self = StObject.set(x, "IV", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyHeader(value: Kdf): Self = StObject.set(x, "KeyHeader", value.asInstanceOf[js.Any])
+      inline def setKeyHeader(value: Kdf): Self = StObject.set(x, "KeyHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMAC(value: String): Self = StObject.set(x, "MAC", value.asInstanceOf[js.Any])
+      inline def setMAC(value: String): Self = StObject.set(x, "MAC", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSalt(value: String): Self = StObject.set(x, "Salt", value.asInstanceOf[js.Any])
+      inline def setSalt(value: String): Self = StObject.set(x, "Salt", value.asInstanceOf[js.Any])
     }
   }
   
@@ -114,29 +99,22 @@ object anon {
   }
   object DkLen {
     
-    @scala.inline
-    def apply(DkLen: Double, N: Double, P: Double, R: Double, SaltLen: Double): DkLen = {
+    inline def apply(DkLen: Double, N: Double, P: Double, R: Double, SaltLen: Double): DkLen = {
       val __obj = js.Dynamic.literal(DkLen = DkLen.asInstanceOf[js.Any], N = N.asInstanceOf[js.Any], P = P.asInstanceOf[js.Any], R = R.asInstanceOf[js.Any], SaltLen = SaltLen.asInstanceOf[js.Any])
       __obj.asInstanceOf[DkLen]
     }
     
-    @scala.inline
-    implicit class DkLenMutableBuilder[Self <: DkLen] (val x: Self) extends AnyVal {
+    extension [Self <: DkLen](x: Self) {
       
-      @scala.inline
-      def setDkLen(value: Double): Self = StObject.set(x, "DkLen", value.asInstanceOf[js.Any])
+      inline def setDkLen(value: Double): Self = StObject.set(x, "DkLen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setN(value: Double): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
+      inline def setN(value: Double): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setP(value: Double): Self = StObject.set(x, "P", value.asInstanceOf[js.Any])
+      inline def setP(value: Double): Self = StObject.set(x, "P", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR(value: Double): Self = StObject.set(x, "R", value.asInstanceOf[js.Any])
+      inline def setR(value: Double): Self = StObject.set(x, "R", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaltLen(value: Double): Self = StObject.set(x, "SaltLen", value.asInstanceOf[js.Any])
+      inline def setSaltLen(value: Double): Self = StObject.set(x, "SaltLen", value.asInstanceOf[js.Any])
     }
   }
   
@@ -146,17 +124,14 @@ object anon {
   }
   object Iv {
     
-    @scala.inline
-    def apply(iv: String): Iv = {
+    inline def apply(iv: String): Iv = {
       val __obj = js.Dynamic.literal(iv = iv.asInstanceOf[js.Any])
       __obj.asInstanceOf[Iv]
     }
     
-    @scala.inline
-    implicit class IvMutableBuilder[Self <: Iv] (val x: Self) extends AnyVal {
+    extension [Self <: Iv](x: Self) {
       
-      @scala.inline
-      def setIv(value: String): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
+      inline def setIv(value: String): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
     }
   }
   
@@ -170,23 +145,18 @@ object anon {
   }
   object Kdf {
     
-    @scala.inline
-    def apply(Kdf: String, KdfParams: DkLen, Version: String): Kdf = {
+    inline def apply(Kdf: String, KdfParams: DkLen, Version: String): Kdf = {
       val __obj = js.Dynamic.literal(Kdf = Kdf.asInstanceOf[js.Any], KdfParams = KdfParams.asInstanceOf[js.Any], Version = Version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Kdf]
     }
     
-    @scala.inline
-    implicit class KdfMutableBuilder[Self <: Kdf] (val x: Self) extends AnyVal {
+    extension [Self <: Kdf](x: Self) {
       
-      @scala.inline
-      def setKdf(value: String): Self = StObject.set(x, "Kdf", value.asInstanceOf[js.Any])
+      inline def setKdf(value: String): Self = StObject.set(x, "Kdf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKdfParams(value: DkLen): Self = StObject.set(x, "KdfParams", value.asInstanceOf[js.Any])
+      inline def setKdfParams(value: DkLen): Self = StObject.set(x, "KdfParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -215,74 +185,52 @@ object anon {
   }
   object PartialV3Params {
     
-    @scala.inline
-    def apply(): PartialV3Params = {
+    inline def apply(): PartialV3Params = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PartialV3Params]
     }
     
-    @scala.inline
-    implicit class PartialV3ParamsMutableBuilder[Self <: PartialV3Params] (val x: Self) extends AnyVal {
+    extension [Self <: PartialV3Params](x: Self) {
       
-      @scala.inline
-      def setC(value: Double): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
+      inline def setC(value: Double): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCUndefined: Self = StObject.set(x, "c", js.undefined)
+      inline def setCUndefined: Self = StObject.set(x, "c", js.undefined)
       
-      @scala.inline
-      def setCipher(value: String): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])
+      inline def setCipher(value: String): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCipherUndefined: Self = StObject.set(x, "cipher", js.undefined)
+      inline def setCipherUndefined: Self = StObject.set(x, "cipher", js.undefined)
       
-      @scala.inline
-      def setDklen(value: Double): Self = StObject.set(x, "dklen", value.asInstanceOf[js.Any])
+      inline def setDklen(value: Double): Self = StObject.set(x, "dklen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDklenUndefined: Self = StObject.set(x, "dklen", js.undefined)
+      inline def setDklenUndefined: Self = StObject.set(x, "dklen", js.undefined)
       
-      @scala.inline
-      def setIv(value: String | Buffer): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
+      inline def setIv(value: String | Buffer): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIvUndefined: Self = StObject.set(x, "iv", js.undefined)
+      inline def setIvUndefined: Self = StObject.set(x, "iv", js.undefined)
       
-      @scala.inline
-      def setKdf(value: String): Self = StObject.set(x, "kdf", value.asInstanceOf[js.Any])
+      inline def setKdf(value: String): Self = StObject.set(x, "kdf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKdfUndefined: Self = StObject.set(x, "kdf", js.undefined)
+      inline def setKdfUndefined: Self = StObject.set(x, "kdf", js.undefined)
       
-      @scala.inline
-      def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+      inline def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNUndefined: Self = StObject.set(x, "n", js.undefined)
+      inline def setNUndefined: Self = StObject.set(x, "n", js.undefined)
       
-      @scala.inline
-      def setP(value: Double): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+      inline def setP(value: Double): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPUndefined: Self = StObject.set(x, "p", js.undefined)
+      inline def setPUndefined: Self = StObject.set(x, "p", js.undefined)
       
-      @scala.inline
-      def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRUndefined: Self = StObject.set(x, "r", js.undefined)
+      inline def setRUndefined: Self = StObject.set(x, "r", js.undefined)
       
-      @scala.inline
-      def setSalt(value: String | Buffer): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
+      inline def setSalt(value: String | Buffer): Self = StObject.set(x, "salt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaltUndefined: Self = StObject.set(x, "salt", js.undefined)
+      inline def setSaltUndefined: Self = StObject.set(x, "salt", js.undefined)
       
-      @scala.inline
-      def setUuid(value: String | Buffer): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String | Buffer): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
+      inline def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
     }
   }
 }

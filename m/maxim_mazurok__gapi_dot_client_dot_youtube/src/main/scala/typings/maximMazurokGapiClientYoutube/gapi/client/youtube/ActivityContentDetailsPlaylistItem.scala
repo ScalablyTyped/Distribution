@@ -17,31 +17,23 @@ trait ActivityContentDetailsPlaylistItem extends StObject {
 }
 object ActivityContentDetailsPlaylistItem {
   
-  @scala.inline
-  def apply(): ActivityContentDetailsPlaylistItem = {
+  inline def apply(): ActivityContentDetailsPlaylistItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ActivityContentDetailsPlaylistItem]
   }
   
-  @scala.inline
-  implicit class ActivityContentDetailsPlaylistItemMutableBuilder[Self <: ActivityContentDetailsPlaylistItem] (val x: Self) extends AnyVal {
+  extension [Self <: ActivityContentDetailsPlaylistItem](x: Self) {
     
-    @scala.inline
-    def setPlaylistId(value: String): Self = StObject.set(x, "playlistId", value.asInstanceOf[js.Any])
+    inline def setPlaylistId(value: String): Self = StObject.set(x, "playlistId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaylistIdUndefined: Self = StObject.set(x, "playlistId", js.undefined)
+    inline def setPlaylistIdUndefined: Self = StObject.set(x, "playlistId", js.undefined)
     
-    @scala.inline
-    def setPlaylistItemId(value: String): Self = StObject.set(x, "playlistItemId", value.asInstanceOf[js.Any])
+    inline def setPlaylistItemId(value: String): Self = StObject.set(x, "playlistItemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaylistItemIdUndefined: Self = StObject.set(x, "playlistItemId", js.undefined)
+    inline def setPlaylistItemIdUndefined: Self = StObject.set(x, "playlistItemId", js.undefined)
     
-    @scala.inline
-    def setResourceId(value: ResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "resourceId", js.undefined)
   }
 }

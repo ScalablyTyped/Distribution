@@ -275,8 +275,7 @@ object cssPropertiesMod {
        with CSSPropertiesPseudo
   object CSSProperties {
     
-    @scala.inline
-    def apply(): CSSProperties = {
+    inline def apply(): CSSProperties = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CSSProperties]
     }
@@ -1755,1758 +1754,1188 @@ object cssPropertiesMod {
   }
   object CSSPropertiesComplete {
     
-    @scala.inline
-    def apply(): CSSPropertiesComplete = {
+    inline def apply(): CSSPropertiesComplete = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CSSPropertiesComplete]
     }
     
-    @scala.inline
-    implicit class CSSPropertiesCompleteMutableBuilder[Self <: CSSPropertiesComplete] (val x: Self) extends AnyVal {
+    extension [Self <: CSSPropertiesComplete](x: Self) {
       
-      @scala.inline
-      def setAlignContent(
+      inline def setAlignContent(
         value: CSSWideKeyword | `flex-start` | `flex-end` | center | `space-between` | `space-around` | stretch
       ): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignContentUndefined: Self = StObject.set(x, "alignContent", js.undefined)
+      inline def setAlignContentUndefined: Self = StObject.set(x, "alignContent", js.undefined)
       
-      @scala.inline
-      def setAlignItems(value: CSSWideKeyword | `flex-start` | `flex-end` | center | baseline | stretch): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
+      inline def setAlignItems(value: CSSWideKeyword | `flex-start` | `flex-end` | center | baseline | stretch): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignItemsUndefined: Self = StObject.set(x, "alignItems", js.undefined)
+      inline def setAlignItemsUndefined: Self = StObject.set(x, "alignItems", js.undefined)
       
-      @scala.inline
-      def setAlignSelf(value: CSSWideKeyword | auto | `flex-start` | `flex-end` | center | baseline | stretch): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
+      inline def setAlignSelf(value: CSSWideKeyword | auto | `flex-start` | `flex-end` | center | baseline | stretch): Self = StObject.set(x, "alignSelf", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
+      inline def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
       
-      @scala.inline
-      def setAlignmentAdjust(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "alignmentAdjust", value.asInstanceOf[js.Any])
+      inline def setAlignmentAdjust(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "alignmentAdjust", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignmentAdjustUndefined: Self = StObject.set(x, "alignmentAdjust", js.undefined)
+      inline def setAlignmentAdjustUndefined: Self = StObject.set(x, "alignmentAdjust", js.undefined)
       
-      @scala.inline
-      def setAlignmentBaseline(
+      inline def setAlignmentBaseline(
         value: CSSWideKeyword | auto | baseline | `before-edge` | `text-before-edge` | middle | central | `after-edge` | `text-after-edge` | ideographic | alphabetic | hanging | mathematical | `use-script`
       ): Self = StObject.set(x, "alignmentBaseline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignmentBaselineUndefined: Self = StObject.set(x, "alignmentBaseline", js.undefined)
+      inline def setAlignmentBaselineUndefined: Self = StObject.set(x, "alignmentBaseline", js.undefined)
       
-      @scala.inline
-      def setAnimationDelay(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "animationDelay", value.asInstanceOf[js.Any])
+      inline def setAnimationDelay(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "animationDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationDelayUndefined: Self = StObject.set(x, "animationDelay", js.undefined)
+      inline def setAnimationDelayUndefined: Self = StObject.set(x, "animationDelay", js.undefined)
       
-      @scala.inline
-      def setAnimationDirection(value: CSSWideKeyword | normal | reverse | alternate | `alternate-reverse`): Self = StObject.set(x, "animationDirection", value.asInstanceOf[js.Any])
+      inline def setAnimationDirection(value: CSSWideKeyword | normal | reverse | alternate | `alternate-reverse`): Self = StObject.set(x, "animationDirection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationDirectionUndefined: Self = StObject.set(x, "animationDirection", js.undefined)
+      inline def setAnimationDirectionUndefined: Self = StObject.set(x, "animationDirection", js.undefined)
       
-      @scala.inline
-      def setAnimationIterationCount(value: CSSWideKeyword | infinite | Double): Self = StObject.set(x, "animationIterationCount", value.asInstanceOf[js.Any])
+      inline def setAnimationIterationCount(value: CSSWideKeyword | infinite | Double): Self = StObject.set(x, "animationIterationCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationIterationCountUndefined: Self = StObject.set(x, "animationIterationCount", js.undefined)
+      inline def setAnimationIterationCountUndefined: Self = StObject.set(x, "animationIterationCount", js.undefined)
       
-      @scala.inline
-      def setAnimationName(value: CSSWideKeyword | String | js.Array[js.Any] | js.Any): Self = StObject.set(x, "animationName", value.asInstanceOf[js.Any])
+      inline def setAnimationName(value: CSSWideKeyword | String | js.Array[js.Any] | js.Any): Self = StObject.set(x, "animationName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationNameUndefined: Self = StObject.set(x, "animationName", js.undefined)
+      inline def setAnimationNameUndefined: Self = StObject.set(x, "animationName", js.undefined)
       
-      @scala.inline
-      def setAnimationNameVarargs(value: js.Any*): Self = StObject.set(x, "animationName", js.Array(value :_*))
+      inline def setAnimationNameVarargs(value: js.Any*): Self = StObject.set(x, "animationName", js.Array(value :_*))
       
-      @scala.inline
-      def setAnimationPlayState(value: CSSWideKeyword | running | paused): Self = StObject.set(x, "animationPlayState", value.asInstanceOf[js.Any])
+      inline def setAnimationPlayState(value: CSSWideKeyword | running | paused): Self = StObject.set(x, "animationPlayState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationPlayStateUndefined: Self = StObject.set(x, "animationPlayState", js.undefined)
+      inline def setAnimationPlayStateUndefined: Self = StObject.set(x, "animationPlayState", js.undefined)
       
-      @scala.inline
-      def setAppearance(value: CSSWideKeyword | auto | none): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
+      inline def setAppearance(value: CSSWideKeyword | auto | none): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppearanceUndefined: Self = StObject.set(x, "appearance", js.undefined)
+      inline def setAppearanceUndefined: Self = StObject.set(x, "appearance", js.undefined)
       
-      @scala.inline
-      def setBackfaceVisibility(value: CSSWideKeyword | visible | hidden): Self = StObject.set(x, "backfaceVisibility", value.asInstanceOf[js.Any])
+      inline def setBackfaceVisibility(value: CSSWideKeyword | visible | hidden): Self = StObject.set(x, "backfaceVisibility", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackfaceVisibilityUndefined: Self = StObject.set(x, "backfaceVisibility", js.undefined)
+      inline def setBackfaceVisibilityUndefined: Self = StObject.set(x, "backfaceVisibility", js.undefined)
       
-      @scala.inline
-      def setBackground(value: CSSWideKeyword | String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: CSSWideKeyword | String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundAttachment(value: CSSWideKeyword | scroll | fixed | local): Self = StObject.set(x, "backgroundAttachment", value.asInstanceOf[js.Any])
+      inline def setBackgroundAttachment(value: CSSWideKeyword | scroll | fixed | local): Self = StObject.set(x, "backgroundAttachment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundAttachmentUndefined: Self = StObject.set(x, "backgroundAttachment", js.undefined)
+      inline def setBackgroundAttachmentUndefined: Self = StObject.set(x, "backgroundAttachment", js.undefined)
       
-      @scala.inline
-      def setBackgroundBlendMode(
+      inline def setBackgroundBlendMode(
         value: CSSWideKeyword | normal | multiply | screen | overlay | darken | lighten | `color-dodge` | `color-burn` | `hard-light` | `soft-light` | difference | exclusion | hue | saturation | color | luminosity
       ): Self = StObject.set(x, "backgroundBlendMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundBlendModeUndefined: Self = StObject.set(x, "backgroundBlendMode", js.undefined)
+      inline def setBackgroundBlendModeUndefined: Self = StObject.set(x, "backgroundBlendMode", js.undefined)
       
-      @scala.inline
-      def setBackgroundColor(value: CSSWideKeyword | String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: CSSWideKeyword | String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+      inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
-      @scala.inline
-      def setBackgroundComposite(value: CSSWideKeyword | String): Self = StObject.set(x, "backgroundComposite", value.asInstanceOf[js.Any])
+      inline def setBackgroundComposite(value: CSSWideKeyword | String): Self = StObject.set(x, "backgroundComposite", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundCompositeUndefined: Self = StObject.set(x, "backgroundComposite", js.undefined)
+      inline def setBackgroundCompositeUndefined: Self = StObject.set(x, "backgroundComposite", js.undefined)
       
-      @scala.inline
-      def setBackgroundImage(value: CSSWideKeyword | String): Self = StObject.set(x, "backgroundImage", value.asInstanceOf[js.Any])
+      inline def setBackgroundImage(value: CSSWideKeyword | String): Self = StObject.set(x, "backgroundImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundImageUndefined: Self = StObject.set(x, "backgroundImage", js.undefined)
+      inline def setBackgroundImageUndefined: Self = StObject.set(x, "backgroundImage", js.undefined)
       
-      @scala.inline
-      def setBackgroundOrigin(value: CSSWideKeyword | `border-box` | `padding-box` | `content-box`): Self = StObject.set(x, "backgroundOrigin", value.asInstanceOf[js.Any])
+      inline def setBackgroundOrigin(value: CSSWideKeyword | `border-box` | `padding-box` | `content-box`): Self = StObject.set(x, "backgroundOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundOriginUndefined: Self = StObject.set(x, "backgroundOrigin", js.undefined)
+      inline def setBackgroundOriginUndefined: Self = StObject.set(x, "backgroundOrigin", js.undefined)
       
-      @scala.inline
-      def setBackgroundPosition(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "backgroundPosition", value.asInstanceOf[js.Any])
+      inline def setBackgroundPosition(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "backgroundPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundPositionUndefined: Self = StObject.set(x, "backgroundPosition", js.undefined)
+      inline def setBackgroundPositionUndefined: Self = StObject.set(x, "backgroundPosition", js.undefined)
       
-      @scala.inline
-      def setBackgroundRepeat(value: CSSWideKeyword | String): Self = StObject.set(x, "backgroundRepeat", value.asInstanceOf[js.Any])
+      inline def setBackgroundRepeat(value: CSSWideKeyword | String): Self = StObject.set(x, "backgroundRepeat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundRepeatUndefined: Self = StObject.set(x, "backgroundRepeat", js.undefined)
+      inline def setBackgroundRepeatUndefined: Self = StObject.set(x, "backgroundRepeat", js.undefined)
       
-      @scala.inline
-      def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+      inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
-      @scala.inline
-      def setBaselineShift(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "baselineShift", value.asInstanceOf[js.Any])
+      inline def setBaselineShift(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "baselineShift", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaselineShiftUndefined: Self = StObject.set(x, "baselineShift", js.undefined)
+      inline def setBaselineShiftUndefined: Self = StObject.set(x, "baselineShift", js.undefined)
       
-      @scala.inline
-      def setBehavior(value: CSSWideKeyword | String): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
+      inline def setBehavior(value: CSSWideKeyword | String): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
+      inline def setBehaviorUndefined: Self = StObject.set(x, "behavior", js.undefined)
       
-      @scala.inline
-      def setBorder(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+      inline def setBorder(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderBottom(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
+      inline def setBorderBottom(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "borderBottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderBottomColor(value: CSSWideKeyword | String): Self = StObject.set(x, "borderBottomColor", value.asInstanceOf[js.Any])
+      inline def setBorderBottomColor(value: CSSWideKeyword | String): Self = StObject.set(x, "borderBottomColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderBottomColorUndefined: Self = StObject.set(x, "borderBottomColor", js.undefined)
+      inline def setBorderBottomColorUndefined: Self = StObject.set(x, "borderBottomColor", js.undefined)
       
-      @scala.inline
-      def setBorderBottomLeftRadius(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "borderBottomLeftRadius", value.asInstanceOf[js.Any])
+      inline def setBorderBottomLeftRadius(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "borderBottomLeftRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderBottomLeftRadiusUndefined: Self = StObject.set(x, "borderBottomLeftRadius", js.undefined)
+      inline def setBorderBottomLeftRadiusUndefined: Self = StObject.set(x, "borderBottomLeftRadius", js.undefined)
       
-      @scala.inline
-      def setBorderBottomRightRadius(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "borderBottomRightRadius", value.asInstanceOf[js.Any])
+      inline def setBorderBottomRightRadius(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "borderBottomRightRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderBottomRightRadiusUndefined: Self = StObject.set(x, "borderBottomRightRadius", js.undefined)
+      inline def setBorderBottomRightRadiusUndefined: Self = StObject.set(x, "borderBottomRightRadius", js.undefined)
       
-      @scala.inline
-      def setBorderBottomStyle(
+      inline def setBorderBottomStyle(
         value: CSSWideKeyword | none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset
       ): Self = StObject.set(x, "borderBottomStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderBottomStyleUndefined: Self = StObject.set(x, "borderBottomStyle", js.undefined)
+      inline def setBorderBottomStyleUndefined: Self = StObject.set(x, "borderBottomStyle", js.undefined)
       
-      @scala.inline
-      def setBorderBottomUndefined: Self = StObject.set(x, "borderBottom", js.undefined)
+      inline def setBorderBottomUndefined: Self = StObject.set(x, "borderBottom", js.undefined)
       
-      @scala.inline
-      def setBorderBottomWidth(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "borderBottomWidth", value.asInstanceOf[js.Any])
+      inline def setBorderBottomWidth(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "borderBottomWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderBottomWidthUndefined: Self = StObject.set(x, "borderBottomWidth", js.undefined)
+      inline def setBorderBottomWidthUndefined: Self = StObject.set(x, "borderBottomWidth", js.undefined)
       
-      @scala.inline
-      def setBorderCollapse(value: CSSWideKeyword | collapse | separate): Self = StObject.set(x, "borderCollapse", value.asInstanceOf[js.Any])
+      inline def setBorderCollapse(value: CSSWideKeyword | collapse | separate): Self = StObject.set(x, "borderCollapse", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderCollapseUndefined: Self = StObject.set(x, "borderCollapse", js.undefined)
+      inline def setBorderCollapseUndefined: Self = StObject.set(x, "borderCollapse", js.undefined)
       
-      @scala.inline
-      def setBorderColor(value: CSSWideKeyword | String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
+      inline def setBorderColor(value: CSSWideKeyword | String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
+      inline def setBorderColorUndefined: Self = StObject.set(x, "borderColor", js.undefined)
       
-      @scala.inline
-      def setBorderCornerShape(value: CSSWideKeyword | String): Self = StObject.set(x, "borderCornerShape", value.asInstanceOf[js.Any])
+      inline def setBorderCornerShape(value: CSSWideKeyword | String): Self = StObject.set(x, "borderCornerShape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderCornerShapeUndefined: Self = StObject.set(x, "borderCornerShape", js.undefined)
+      inline def setBorderCornerShapeUndefined: Self = StObject.set(x, "borderCornerShape", js.undefined)
       
-      @scala.inline
-      def setBorderImageSource(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "borderImageSource", value.asInstanceOf[js.Any])
+      inline def setBorderImageSource(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "borderImageSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderImageSourceUndefined: Self = StObject.set(x, "borderImageSource", js.undefined)
+      inline def setBorderImageSourceUndefined: Self = StObject.set(x, "borderImageSource", js.undefined)
       
-      @scala.inline
-      def setBorderImageWidth(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "borderImageWidth", value.asInstanceOf[js.Any])
+      inline def setBorderImageWidth(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "borderImageWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderImageWidthUndefined: Self = StObject.set(x, "borderImageWidth", js.undefined)
+      inline def setBorderImageWidthUndefined: Self = StObject.set(x, "borderImageWidth", js.undefined)
       
-      @scala.inline
-      def setBorderLeft(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
+      inline def setBorderLeft(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "borderLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderLeftColor(value: CSSWideKeyword | String): Self = StObject.set(x, "borderLeftColor", value.asInstanceOf[js.Any])
+      inline def setBorderLeftColor(value: CSSWideKeyword | String): Self = StObject.set(x, "borderLeftColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderLeftColorUndefined: Self = StObject.set(x, "borderLeftColor", js.undefined)
+      inline def setBorderLeftColorUndefined: Self = StObject.set(x, "borderLeftColor", js.undefined)
       
-      @scala.inline
-      def setBorderLeftStyle(
+      inline def setBorderLeftStyle(
         value: CSSWideKeyword | none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset
       ): Self = StObject.set(x, "borderLeftStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderLeftStyleUndefined: Self = StObject.set(x, "borderLeftStyle", js.undefined)
+      inline def setBorderLeftStyleUndefined: Self = StObject.set(x, "borderLeftStyle", js.undefined)
       
-      @scala.inline
-      def setBorderLeftUndefined: Self = StObject.set(x, "borderLeft", js.undefined)
+      inline def setBorderLeftUndefined: Self = StObject.set(x, "borderLeft", js.undefined)
       
-      @scala.inline
-      def setBorderLeftWidth(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "borderLeftWidth", value.asInstanceOf[js.Any])
+      inline def setBorderLeftWidth(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "borderLeftWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderLeftWidthUndefined: Self = StObject.set(x, "borderLeftWidth", js.undefined)
+      inline def setBorderLeftWidthUndefined: Self = StObject.set(x, "borderLeftWidth", js.undefined)
       
-      @scala.inline
-      def setBorderRadius(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+      inline def setBorderRadius(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
+      inline def setBorderRadiusUndefined: Self = StObject.set(x, "borderRadius", js.undefined)
       
-      @scala.inline
-      def setBorderRight(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "borderRight", value.asInstanceOf[js.Any])
+      inline def setBorderRight(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "borderRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderRightColor(value: CSSWideKeyword | String): Self = StObject.set(x, "borderRightColor", value.asInstanceOf[js.Any])
+      inline def setBorderRightColor(value: CSSWideKeyword | String): Self = StObject.set(x, "borderRightColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderRightColorUndefined: Self = StObject.set(x, "borderRightColor", js.undefined)
+      inline def setBorderRightColorUndefined: Self = StObject.set(x, "borderRightColor", js.undefined)
       
-      @scala.inline
-      def setBorderRightStyle(
+      inline def setBorderRightStyle(
         value: CSSWideKeyword | none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset
       ): Self = StObject.set(x, "borderRightStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderRightStyleUndefined: Self = StObject.set(x, "borderRightStyle", js.undefined)
+      inline def setBorderRightStyleUndefined: Self = StObject.set(x, "borderRightStyle", js.undefined)
       
-      @scala.inline
-      def setBorderRightUndefined: Self = StObject.set(x, "borderRight", js.undefined)
+      inline def setBorderRightUndefined: Self = StObject.set(x, "borderRight", js.undefined)
       
-      @scala.inline
-      def setBorderRightWidth(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "borderRightWidth", value.asInstanceOf[js.Any])
+      inline def setBorderRightWidth(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "borderRightWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderRightWidthUndefined: Self = StObject.set(x, "borderRightWidth", js.undefined)
+      inline def setBorderRightWidthUndefined: Self = StObject.set(x, "borderRightWidth", js.undefined)
       
-      @scala.inline
-      def setBorderSpacing(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "borderSpacing", value.asInstanceOf[js.Any])
+      inline def setBorderSpacing(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "borderSpacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderSpacingUndefined: Self = StObject.set(x, "borderSpacing", js.undefined)
+      inline def setBorderSpacingUndefined: Self = StObject.set(x, "borderSpacing", js.undefined)
       
-      @scala.inline
-      def setBorderStyle(
+      inline def setBorderStyle(
         value: CSSWideKeyword | none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset
       ): Self = StObject.set(x, "borderStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
+      inline def setBorderStyleUndefined: Self = StObject.set(x, "borderStyle", js.undefined)
       
-      @scala.inline
-      def setBorderTop(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])
+      inline def setBorderTop(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "borderTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderTopColor(value: CSSWideKeyword | String): Self = StObject.set(x, "borderTopColor", value.asInstanceOf[js.Any])
+      inline def setBorderTopColor(value: CSSWideKeyword | String): Self = StObject.set(x, "borderTopColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderTopColorUndefined: Self = StObject.set(x, "borderTopColor", js.undefined)
+      inline def setBorderTopColorUndefined: Self = StObject.set(x, "borderTopColor", js.undefined)
       
-      @scala.inline
-      def setBorderTopLeftRadius(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "borderTopLeftRadius", value.asInstanceOf[js.Any])
+      inline def setBorderTopLeftRadius(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "borderTopLeftRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderTopLeftRadiusUndefined: Self = StObject.set(x, "borderTopLeftRadius", js.undefined)
+      inline def setBorderTopLeftRadiusUndefined: Self = StObject.set(x, "borderTopLeftRadius", js.undefined)
       
-      @scala.inline
-      def setBorderTopRightRadius(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "borderTopRightRadius", value.asInstanceOf[js.Any])
+      inline def setBorderTopRightRadius(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "borderTopRightRadius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderTopRightRadiusUndefined: Self = StObject.set(x, "borderTopRightRadius", js.undefined)
+      inline def setBorderTopRightRadiusUndefined: Self = StObject.set(x, "borderTopRightRadius", js.undefined)
       
-      @scala.inline
-      def setBorderTopStyle(
+      inline def setBorderTopStyle(
         value: CSSWideKeyword | none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset
       ): Self = StObject.set(x, "borderTopStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderTopStyleUndefined: Self = StObject.set(x, "borderTopStyle", js.undefined)
+      inline def setBorderTopStyleUndefined: Self = StObject.set(x, "borderTopStyle", js.undefined)
       
-      @scala.inline
-      def setBorderTopUndefined: Self = StObject.set(x, "borderTop", js.undefined)
+      inline def setBorderTopUndefined: Self = StObject.set(x, "borderTop", js.undefined)
       
-      @scala.inline
-      def setBorderTopWidth(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "borderTopWidth", value.asInstanceOf[js.Any])
+      inline def setBorderTopWidth(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "borderTopWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderTopWidthUndefined: Self = StObject.set(x, "borderTopWidth", js.undefined)
+      inline def setBorderTopWidthUndefined: Self = StObject.set(x, "borderTopWidth", js.undefined)
       
-      @scala.inline
-      def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+      inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
       
-      @scala.inline
-      def setBorderWidth(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
+      inline def setBorderWidth(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
+      inline def setBorderWidthUndefined: Self = StObject.set(x, "borderWidth", js.undefined)
       
-      @scala.inline
-      def setBottom(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+      inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
       
-      @scala.inline
-      def setBoxAlign(value: CSSWideKeyword | start | center | end | baseline | stretch): Self = StObject.set(x, "boxAlign", value.asInstanceOf[js.Any])
+      inline def setBoxAlign(value: CSSWideKeyword | start | center | end | baseline | stretch): Self = StObject.set(x, "boxAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoxAlignUndefined: Self = StObject.set(x, "boxAlign", js.undefined)
+      inline def setBoxAlignUndefined: Self = StObject.set(x, "boxAlign", js.undefined)
       
-      @scala.inline
-      def setBoxDecorationBreak(value: CSSWideKeyword | slice | clone): Self = StObject.set(x, "boxDecorationBreak", value.asInstanceOf[js.Any])
+      inline def setBoxDecorationBreak(value: CSSWideKeyword | slice | clone): Self = StObject.set(x, "boxDecorationBreak", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoxDecorationBreakUndefined: Self = StObject.set(x, "boxDecorationBreak", js.undefined)
+      inline def setBoxDecorationBreakUndefined: Self = StObject.set(x, "boxDecorationBreak", js.undefined)
       
-      @scala.inline
-      def setBoxDirection(value: CSSWideKeyword | normal | reverse): Self = StObject.set(x, "boxDirection", value.asInstanceOf[js.Any])
+      inline def setBoxDirection(value: CSSWideKeyword | normal | reverse): Self = StObject.set(x, "boxDirection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoxDirectionUndefined: Self = StObject.set(x, "boxDirection", js.undefined)
+      inline def setBoxDirectionUndefined: Self = StObject.set(x, "boxDirection", js.undefined)
       
-      @scala.inline
-      def setBoxFlex(value: CSSWideKeyword | Double): Self = StObject.set(x, "boxFlex", value.asInstanceOf[js.Any])
+      inline def setBoxFlex(value: CSSWideKeyword | Double): Self = StObject.set(x, "boxFlex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoxFlexGroup(value: CSSWideKeyword | Double): Self = StObject.set(x, "boxFlexGroup", value.asInstanceOf[js.Any])
+      inline def setBoxFlexGroup(value: CSSWideKeyword | Double): Self = StObject.set(x, "boxFlexGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoxFlexGroupUndefined: Self = StObject.set(x, "boxFlexGroup", js.undefined)
+      inline def setBoxFlexGroupUndefined: Self = StObject.set(x, "boxFlexGroup", js.undefined)
       
-      @scala.inline
-      def setBoxFlexUndefined: Self = StObject.set(x, "boxFlex", js.undefined)
+      inline def setBoxFlexUndefined: Self = StObject.set(x, "boxFlex", js.undefined)
       
-      @scala.inline
-      def setBoxLineProgression(value: CSSWideKeyword | String): Self = StObject.set(x, "boxLineProgression", value.asInstanceOf[js.Any])
+      inline def setBoxLineProgression(value: CSSWideKeyword | String): Self = StObject.set(x, "boxLineProgression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoxLineProgressionUndefined: Self = StObject.set(x, "boxLineProgression", js.undefined)
+      inline def setBoxLineProgressionUndefined: Self = StObject.set(x, "boxLineProgression", js.undefined)
       
-      @scala.inline
-      def setBoxLines(value: CSSWideKeyword | single | multiple): Self = StObject.set(x, "boxLines", value.asInstanceOf[js.Any])
+      inline def setBoxLines(value: CSSWideKeyword | single | multiple): Self = StObject.set(x, "boxLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoxLinesUndefined: Self = StObject.set(x, "boxLines", js.undefined)
+      inline def setBoxLinesUndefined: Self = StObject.set(x, "boxLines", js.undefined)
       
-      @scala.inline
-      def setBoxOrdinalGroup(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "boxOrdinalGroup", value.asInstanceOf[js.Any])
+      inline def setBoxOrdinalGroup(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "boxOrdinalGroup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoxOrdinalGroupUndefined: Self = StObject.set(x, "boxOrdinalGroup", js.undefined)
+      inline def setBoxOrdinalGroupUndefined: Self = StObject.set(x, "boxOrdinalGroup", js.undefined)
       
-      @scala.inline
-      def setBoxShadow(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "boxShadow", value.asInstanceOf[js.Any])
+      inline def setBoxShadow(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "boxShadow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoxShadowUndefined: Self = StObject.set(x, "boxShadow", js.undefined)
+      inline def setBoxShadowUndefined: Self = StObject.set(x, "boxShadow", js.undefined)
       
-      @scala.inline
-      def setBoxSizing(value: CSSWideKeyword | `content-box` | `border-box`): Self = StObject.set(x, "boxSizing", value.asInstanceOf[js.Any])
+      inline def setBoxSizing(value: CSSWideKeyword | `content-box` | `border-box`): Self = StObject.set(x, "boxSizing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoxSizingUndefined: Self = StObject.set(x, "boxSizing", js.undefined)
+      inline def setBoxSizingUndefined: Self = StObject.set(x, "boxSizing", js.undefined)
       
-      @scala.inline
-      def setBreakAfter(
+      inline def setBreakAfter(
         value: CSSWideKeyword | auto | avoid | `avoid-page` | page | left | right | recto | verso | `avoid-column` | column | `avoid-region` | region
       ): Self = StObject.set(x, "breakAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBreakAfterUndefined: Self = StObject.set(x, "breakAfter", js.undefined)
+      inline def setBreakAfterUndefined: Self = StObject.set(x, "breakAfter", js.undefined)
       
-      @scala.inline
-      def setBreakBefore(
+      inline def setBreakBefore(
         value: CSSWideKeyword | auto | avoid | `avoid-page` | page | left | right | recto | verso | `avoid-column` | column | `avoid-region` | region
       ): Self = StObject.set(x, "breakBefore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBreakBeforeUndefined: Self = StObject.set(x, "breakBefore", js.undefined)
+      inline def setBreakBeforeUndefined: Self = StObject.set(x, "breakBefore", js.undefined)
       
-      @scala.inline
-      def setBreakInside(value: CSSWideKeyword | auto | avoid | `avoid-page` | `avoid-column` | `avoid-region`): Self = StObject.set(x, "breakInside", value.asInstanceOf[js.Any])
+      inline def setBreakInside(value: CSSWideKeyword | auto | avoid | `avoid-page` | `avoid-column` | `avoid-region`): Self = StObject.set(x, "breakInside", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBreakInsideUndefined: Self = StObject.set(x, "breakInside", js.undefined)
+      inline def setBreakInsideUndefined: Self = StObject.set(x, "breakInside", js.undefined)
       
-      @scala.inline
-      def setClear(value: CSSWideKeyword | none | left | right | both | `inline-start` | `inline-end`): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+      inline def setClear(value: CSSWideKeyword | none | left | right | both | `inline-start` | `inline-end`): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
+      inline def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
       
-      @scala.inline
-      def setClip(value: CSSWideKeyword | String): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
+      inline def setClip(value: CSSWideKeyword | String): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClipRule(value: CSSWideKeyword | nonzero | evenodd): Self = StObject.set(x, "clipRule", value.asInstanceOf[js.Any])
+      inline def setClipRule(value: CSSWideKeyword | nonzero | evenodd): Self = StObject.set(x, "clipRule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClipRuleUndefined: Self = StObject.set(x, "clipRule", js.undefined)
+      inline def setClipRuleUndefined: Self = StObject.set(x, "clipRule", js.undefined)
       
-      @scala.inline
-      def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
+      inline def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
       
-      @scala.inline
-      def setColor(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setColumnCount(value: CSSWideKeyword | Double | auto): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
+      inline def setColumnCount(value: CSSWideKeyword | Double | auto): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnCountUndefined: Self = StObject.set(x, "columnCount", js.undefined)
+      inline def setColumnCountUndefined: Self = StObject.set(x, "columnCount", js.undefined)
       
-      @scala.inline
-      def setColumnFill(value: CSSWideKeyword | auto | balance): Self = StObject.set(x, "columnFill", value.asInstanceOf[js.Any])
+      inline def setColumnFill(value: CSSWideKeyword | auto | balance): Self = StObject.set(x, "columnFill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnFillUndefined: Self = StObject.set(x, "columnFill", js.undefined)
+      inline def setColumnFillUndefined: Self = StObject.set(x, "columnFill", js.undefined)
       
-      @scala.inline
-      def setColumnGap(value: CSSWideKeyword | String): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
+      inline def setColumnGap(value: CSSWideKeyword | String): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnGapUndefined: Self = StObject.set(x, "columnGap", js.undefined)
+      inline def setColumnGapUndefined: Self = StObject.set(x, "columnGap", js.undefined)
       
-      @scala.inline
-      def setColumnRule(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "columnRule", value.asInstanceOf[js.Any])
+      inline def setColumnRule(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "columnRule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnRuleColor(value: CSSWideKeyword | String): Self = StObject.set(x, "columnRuleColor", value.asInstanceOf[js.Any])
+      inline def setColumnRuleColor(value: CSSWideKeyword | String): Self = StObject.set(x, "columnRuleColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnRuleColorUndefined: Self = StObject.set(x, "columnRuleColor", js.undefined)
+      inline def setColumnRuleColorUndefined: Self = StObject.set(x, "columnRuleColor", js.undefined)
       
-      @scala.inline
-      def setColumnRuleUndefined: Self = StObject.set(x, "columnRule", js.undefined)
+      inline def setColumnRuleUndefined: Self = StObject.set(x, "columnRule", js.undefined)
       
-      @scala.inline
-      def setColumnRuleWidth(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "columnRuleWidth", value.asInstanceOf[js.Any])
+      inline def setColumnRuleWidth(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "columnRuleWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnRuleWidthUndefined: Self = StObject.set(x, "columnRuleWidth", js.undefined)
+      inline def setColumnRuleWidthUndefined: Self = StObject.set(x, "columnRuleWidth", js.undefined)
       
-      @scala.inline
-      def setColumnSpan(value: CSSWideKeyword | none | all): Self = StObject.set(x, "columnSpan", value.asInstanceOf[js.Any])
+      inline def setColumnSpan(value: CSSWideKeyword | none | all): Self = StObject.set(x, "columnSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnSpanUndefined: Self = StObject.set(x, "columnSpan", js.undefined)
+      inline def setColumnSpanUndefined: Self = StObject.set(x, "columnSpan", js.undefined)
       
-      @scala.inline
-      def setColumnWidth(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
+      inline def setColumnWidth(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
+      inline def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
       
-      @scala.inline
-      def setColumns(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+      inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      @scala.inline
-      def setCounterIncrement(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "counterIncrement", value.asInstanceOf[js.Any])
+      inline def setCounterIncrement(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "counterIncrement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCounterIncrementUndefined: Self = StObject.set(x, "counterIncrement", js.undefined)
+      inline def setCounterIncrementUndefined: Self = StObject.set(x, "counterIncrement", js.undefined)
       
-      @scala.inline
-      def setCounterReset(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "counterReset", value.asInstanceOf[js.Any])
+      inline def setCounterReset(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "counterReset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCounterResetUndefined: Self = StObject.set(x, "counterReset", js.undefined)
+      inline def setCounterResetUndefined: Self = StObject.set(x, "counterReset", js.undefined)
       
-      @scala.inline
-      def setCue(value: CSSWideKeyword | String): Self = StObject.set(x, "cue", value.asInstanceOf[js.Any])
+      inline def setCue(value: CSSWideKeyword | String): Self = StObject.set(x, "cue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCueAfter(value: CSSWideKeyword | String): Self = StObject.set(x, "cueAfter", value.asInstanceOf[js.Any])
+      inline def setCueAfter(value: CSSWideKeyword | String): Self = StObject.set(x, "cueAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCueAfterUndefined: Self = StObject.set(x, "cueAfter", js.undefined)
+      inline def setCueAfterUndefined: Self = StObject.set(x, "cueAfter", js.undefined)
       
-      @scala.inline
-      def setCueUndefined: Self = StObject.set(x, "cue", js.undefined)
+      inline def setCueUndefined: Self = StObject.set(x, "cue", js.undefined)
       
-      @scala.inline
-      def setCursor(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+      inline def setCursor(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+      inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
       
-      @scala.inline
-      def setDirection(value: CSSWideKeyword | ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: CSSWideKeyword | ltr | rtl): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setDisplay(
+      inline def setDisplay(
         value: none | block | `inline` | `run-in` | flow | `flow-root` | table | flex | grid | ruby | subgrid | (`block flow`) | (`inline table`) | (`flex run-in`) | `list-item` | (`list-item block`) | (`list-item inline`) | (`list-item flow`) | (`list-item flow-root`) | (`list-item block flow`) | (`list-item block flow-root`) | (`flow list-item block`) | `table-row-group` | `table-header-group` | `table-footer-group` | `table-row` | `table-cell` | `table-column-group` | `table-column` | `table-caption` | `ruby-base` | `ruby-text` | `ruby-base-container` | `ruby-text-container` | contents | `inline-block` | `inline-list-item` | `inline-table` | `inline-flex` | `inline-grid` | CSSWideKeyword
       ): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+      inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
       
-      @scala.inline
-      def setFill(value: CSSWideKeyword | String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+      inline def setFill(value: CSSWideKeyword | String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillOpacity(value: CSSWideKeyword | Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
+      inline def setFillOpacity(value: CSSWideKeyword | Double): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
+      inline def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
       
-      @scala.inline
-      def setFillRule(value: CSSWideKeyword | nonzero | evenodd): Self = StObject.set(x, "fillRule", value.asInstanceOf[js.Any])
+      inline def setFillRule(value: CSSWideKeyword | nonzero | evenodd): Self = StObject.set(x, "fillRule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFillRuleUndefined: Self = StObject.set(x, "fillRule", js.undefined)
+      inline def setFillRuleUndefined: Self = StObject.set(x, "fillRule", js.undefined)
       
-      @scala.inline
-      def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+      inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
       
-      @scala.inline
-      def setFilter(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+      inline def setFilter(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setFlex(value: CSSWideKeyword | Double | String): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
+      inline def setFlex(value: CSSWideKeyword | Double | String): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexAlign(value: CSSWideKeyword | js.Object): Self = StObject.set(x, "flexAlign", value.asInstanceOf[js.Any])
+      inline def setFlexAlign(value: CSSWideKeyword | js.Object): Self = StObject.set(x, "flexAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexAlignUndefined: Self = StObject.set(x, "flexAlign", js.undefined)
+      inline def setFlexAlignUndefined: Self = StObject.set(x, "flexAlign", js.undefined)
       
-      @scala.inline
-      def setFlexBasis(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "flexBasis", value.asInstanceOf[js.Any])
+      inline def setFlexBasis(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "flexBasis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexBasisUndefined: Self = StObject.set(x, "flexBasis", js.undefined)
+      inline def setFlexBasisUndefined: Self = StObject.set(x, "flexBasis", js.undefined)
       
-      @scala.inline
-      def setFlexDirection(value: CSSWideKeyword | row | `row-reverse` | column | `column-reverse`): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
+      inline def setFlexDirection(value: CSSWideKeyword | row | `row-reverse` | column | `column-reverse`): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexDirectionUndefined: Self = StObject.set(x, "flexDirection", js.undefined)
+      inline def setFlexDirectionUndefined: Self = StObject.set(x, "flexDirection", js.undefined)
       
-      @scala.inline
-      def setFlexFlow(
+      inline def setFlexFlow(
         value: CSSWideKeyword | row | `row-reverse` | column | `column-reverse` | nowrap | wrap | `wrap-reverse` | (`row nowrap`) | (`row wrap`) | (`row wrap-reverse`) | (`row-reverse nowrap`) | (`row-reverse wrap`) | (`row-reverse wrap-reverse`) | (`column nowrap`) | (`column wrap`) | (`column wrap-reverse`) | (`column-reverse nowrap`) | (`column-reverse wrap`) | (`column-reverse wrap-reverse`) | (`nowrap row`) | (`wrap row`) | (`wrap-reverse row`) | (`nowrap row-reverse`) | (`wrap row-reverse`) | (`wrap-reverse row-reverse`) | (`nowrap column`) | (`wrap column`) | (`wrap-reverse column`) | (`nowrap column-reverse`) | (`wrap column-reverse`) | (`wrap-reverse column-reverse`)
       ): Self = StObject.set(x, "flexFlow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexFlowUndefined: Self = StObject.set(x, "flexFlow", js.undefined)
+      inline def setFlexFlowUndefined: Self = StObject.set(x, "flexFlow", js.undefined)
       
-      @scala.inline
-      def setFlexGrow(value: CSSWideKeyword | Double): Self = StObject.set(x, "flexGrow", value.asInstanceOf[js.Any])
+      inline def setFlexGrow(value: CSSWideKeyword | Double): Self = StObject.set(x, "flexGrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexGrowUndefined: Self = StObject.set(x, "flexGrow", js.undefined)
+      inline def setFlexGrowUndefined: Self = StObject.set(x, "flexGrow", js.undefined)
       
-      @scala.inline
-      def setFlexItemAlign(value: CSSWideKeyword | js.Object): Self = StObject.set(x, "flexItemAlign", value.asInstanceOf[js.Any])
+      inline def setFlexItemAlign(value: CSSWideKeyword | js.Object): Self = StObject.set(x, "flexItemAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexItemAlignUndefined: Self = StObject.set(x, "flexItemAlign", js.undefined)
+      inline def setFlexItemAlignUndefined: Self = StObject.set(x, "flexItemAlign", js.undefined)
       
-      @scala.inline
-      def setFlexLinePack(value: CSSWideKeyword | js.Object): Self = StObject.set(x, "flexLinePack", value.asInstanceOf[js.Any])
+      inline def setFlexLinePack(value: CSSWideKeyword | js.Object): Self = StObject.set(x, "flexLinePack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexLinePackUndefined: Self = StObject.set(x, "flexLinePack", js.undefined)
+      inline def setFlexLinePackUndefined: Self = StObject.set(x, "flexLinePack", js.undefined)
       
-      @scala.inline
-      def setFlexOrder(value: CSSWideKeyword | js.Object): Self = StObject.set(x, "flexOrder", value.asInstanceOf[js.Any])
+      inline def setFlexOrder(value: CSSWideKeyword | js.Object): Self = StObject.set(x, "flexOrder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexOrderUndefined: Self = StObject.set(x, "flexOrder", js.undefined)
+      inline def setFlexOrderUndefined: Self = StObject.set(x, "flexOrder", js.undefined)
       
-      @scala.inline
-      def setFlexShrink(value: CSSWideKeyword | Double): Self = StObject.set(x, "flexShrink", value.asInstanceOf[js.Any])
+      inline def setFlexShrink(value: CSSWideKeyword | Double): Self = StObject.set(x, "flexShrink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexShrinkUndefined: Self = StObject.set(x, "flexShrink", js.undefined)
+      inline def setFlexShrinkUndefined: Self = StObject.set(x, "flexShrink", js.undefined)
       
-      @scala.inline
-      def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
+      inline def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
       
-      @scala.inline
-      def setFlexWrap(value: CSSWideKeyword | nowrap | wrap | `wrap-reverse`): Self = StObject.set(x, "flexWrap", value.asInstanceOf[js.Any])
+      inline def setFlexWrap(value: CSSWideKeyword | nowrap | wrap | `wrap-reverse`): Self = StObject.set(x, "flexWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlexWrapUndefined: Self = StObject.set(x, "flexWrap", js.undefined)
+      inline def setFlexWrapUndefined: Self = StObject.set(x, "flexWrap", js.undefined)
       
-      @scala.inline
-      def setFloat(value: CSSWideKeyword | left | right | none | `inline-start` | `inline-end`): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
+      inline def setFloat(value: CSSWideKeyword | left | right | none | `inline-start` | `inline-end`): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFloatUndefined: Self = StObject.set(x, "float", js.undefined)
+      inline def setFloatUndefined: Self = StObject.set(x, "float", js.undefined)
       
-      @scala.inline
-      def setFlowFrom(value: CSSWideKeyword | js.Object): Self = StObject.set(x, "flowFrom", value.asInstanceOf[js.Any])
+      inline def setFlowFrom(value: CSSWideKeyword | js.Object): Self = StObject.set(x, "flowFrom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlowFromUndefined: Self = StObject.set(x, "flowFrom", js.undefined)
+      inline def setFlowFromUndefined: Self = StObject.set(x, "flowFrom", js.undefined)
       
-      @scala.inline
-      def setFont(value: CSSWideKeyword | String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+      inline def setFont(value: CSSWideKeyword | String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontFamily(value: CSSWideKeyword | FontFamily | (js.Array[FontFamily | CSSWideKeyword])): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+      inline def setFontFamily(value: CSSWideKeyword | FontFamily | (js.Array[FontFamily | CSSWideKeyword])): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
+      inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
       
-      @scala.inline
-      def setFontFamilyVarargs(value: (FontFamily | CSSWideKeyword)*): Self = StObject.set(x, "fontFamily", js.Array(value :_*))
+      inline def setFontFamilyVarargs(value: (FontFamily | CSSWideKeyword)*): Self = StObject.set(x, "fontFamily", js.Array(value :_*))
       
-      @scala.inline
-      def setFontKerning(value: CSSWideKeyword | auto | normal | none): Self = StObject.set(x, "fontKerning", value.asInstanceOf[js.Any])
+      inline def setFontKerning(value: CSSWideKeyword | auto | normal | none): Self = StObject.set(x, "fontKerning", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontKerningUndefined: Self = StObject.set(x, "fontKerning", js.undefined)
+      inline def setFontKerningUndefined: Self = StObject.set(x, "fontKerning", js.undefined)
       
-      @scala.inline
-      def setFontSize(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
+      inline def setFontSize(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSizeAdjust(value: CSSWideKeyword | none | Double): Self = StObject.set(x, "fontSizeAdjust", value.asInstanceOf[js.Any])
+      inline def setFontSizeAdjust(value: CSSWideKeyword | none | Double): Self = StObject.set(x, "fontSizeAdjust", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSizeAdjustUndefined: Self = StObject.set(x, "fontSizeAdjust", js.undefined)
+      inline def setFontSizeAdjustUndefined: Self = StObject.set(x, "fontSizeAdjust", js.undefined)
       
-      @scala.inline
-      def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
+      inline def setFontSizeUndefined: Self = StObject.set(x, "fontSize", js.undefined)
       
-      @scala.inline
-      def setFontStretch(
+      inline def setFontStretch(
         value: CSSWideKeyword | normal | `ultra-condensed` | `extra-condensed` | condensed | `semi-condensed` | `semi-expanded` | expanded | `extra-expanded` | `ultra-expanded`
       ): Self = StObject.set(x, "fontStretch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontStretchUndefined: Self = StObject.set(x, "fontStretch", js.undefined)
+      inline def setFontStretchUndefined: Self = StObject.set(x, "fontStretch", js.undefined)
       
-      @scala.inline
-      def setFontStyle(value: CSSWideKeyword | normal | italic | oblique): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
+      inline def setFontStyle(value: CSSWideKeyword | normal | italic | oblique): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
+      inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
       
-      @scala.inline
-      def setFontSynthesis(value: CSSWideKeyword | String): Self = StObject.set(x, "fontSynthesis", value.asInstanceOf[js.Any])
+      inline def setFontSynthesis(value: CSSWideKeyword | String): Self = StObject.set(x, "fontSynthesis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSynthesisUndefined: Self = StObject.set(x, "fontSynthesis", js.undefined)
+      inline def setFontSynthesisUndefined: Self = StObject.set(x, "fontSynthesis", js.undefined)
       
-      @scala.inline
-      def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+      inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
       
-      @scala.inline
-      def setFontVariant(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "fontVariant", value.asInstanceOf[js.Any])
+      inline def setFontVariant(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "fontVariant", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontVariantAlternates(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "fontVariantAlternates", value.asInstanceOf[js.Any])
+      inline def setFontVariantAlternates(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "fontVariantAlternates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontVariantAlternatesUndefined: Self = StObject.set(x, "fontVariantAlternates", js.undefined)
+      inline def setFontVariantAlternatesUndefined: Self = StObject.set(x, "fontVariantAlternates", js.undefined)
       
-      @scala.inline
-      def setFontVariantUndefined: Self = StObject.set(x, "fontVariant", js.undefined)
+      inline def setFontVariantUndefined: Self = StObject.set(x, "fontVariant", js.undefined)
       
-      @scala.inline
-      def setFontWeight(
+      inline def setFontWeight(
         value: CSSWideKeyword | normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900`
       ): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
+      inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
       
-      @scala.inline
-      def setGridArea(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "gridArea", value.asInstanceOf[js.Any])
+      inline def setGridArea(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "gridArea", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridAreaUndefined: Self = StObject.set(x, "gridArea", js.undefined)
+      inline def setGridAreaUndefined: Self = StObject.set(x, "gridArea", js.undefined)
       
-      @scala.inline
-      def setGridColumn(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "gridColumn", value.asInstanceOf[js.Any])
+      inline def setGridColumn(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "gridColumn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridColumnEnd(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "gridColumnEnd", value.asInstanceOf[js.Any])
+      inline def setGridColumnEnd(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "gridColumnEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridColumnEndUndefined: Self = StObject.set(x, "gridColumnEnd", js.undefined)
+      inline def setGridColumnEndUndefined: Self = StObject.set(x, "gridColumnEnd", js.undefined)
       
-      @scala.inline
-      def setGridColumnStart(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "gridColumnStart", value.asInstanceOf[js.Any])
+      inline def setGridColumnStart(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "gridColumnStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridColumnStartUndefined: Self = StObject.set(x, "gridColumnStart", js.undefined)
+      inline def setGridColumnStartUndefined: Self = StObject.set(x, "gridColumnStart", js.undefined)
       
-      @scala.inline
-      def setGridColumnUndefined: Self = StObject.set(x, "gridColumn", js.undefined)
+      inline def setGridColumnUndefined: Self = StObject.set(x, "gridColumn", js.undefined)
       
-      @scala.inline
-      def setGridRow(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "gridRow", value.asInstanceOf[js.Any])
+      inline def setGridRow(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "gridRow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridRowEnd(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "gridRowEnd", value.asInstanceOf[js.Any])
+      inline def setGridRowEnd(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "gridRowEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridRowEndUndefined: Self = StObject.set(x, "gridRowEnd", js.undefined)
+      inline def setGridRowEndUndefined: Self = StObject.set(x, "gridRowEnd", js.undefined)
       
-      @scala.inline
-      def setGridRowPosition(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "gridRowPosition", value.asInstanceOf[js.Any])
+      inline def setGridRowPosition(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "gridRowPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridRowPositionUndefined: Self = StObject.set(x, "gridRowPosition", js.undefined)
+      inline def setGridRowPositionUndefined: Self = StObject.set(x, "gridRowPosition", js.undefined)
       
-      @scala.inline
-      def setGridRowSpan(value: CSSWideKeyword | Double): Self = StObject.set(x, "gridRowSpan", value.asInstanceOf[js.Any])
+      inline def setGridRowSpan(value: CSSWideKeyword | Double): Self = StObject.set(x, "gridRowSpan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridRowSpanUndefined: Self = StObject.set(x, "gridRowSpan", js.undefined)
+      inline def setGridRowSpanUndefined: Self = StObject.set(x, "gridRowSpan", js.undefined)
       
-      @scala.inline
-      def setGridRowUndefined: Self = StObject.set(x, "gridRow", js.undefined)
+      inline def setGridRowUndefined: Self = StObject.set(x, "gridRow", js.undefined)
       
-      @scala.inline
-      def setGridTemplateAreas(value: CSSWideKeyword | String): Self = StObject.set(x, "gridTemplateAreas", value.asInstanceOf[js.Any])
+      inline def setGridTemplateAreas(value: CSSWideKeyword | String): Self = StObject.set(x, "gridTemplateAreas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridTemplateAreasUndefined: Self = StObject.set(x, "gridTemplateAreas", js.undefined)
+      inline def setGridTemplateAreasUndefined: Self = StObject.set(x, "gridTemplateAreas", js.undefined)
       
-      @scala.inline
-      def setGridTemplateColumns(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "gridTemplateColumns", value.asInstanceOf[js.Any])
+      inline def setGridTemplateColumns(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "gridTemplateColumns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridTemplateColumnsUndefined: Self = StObject.set(x, "gridTemplateColumns", js.undefined)
+      inline def setGridTemplateColumnsUndefined: Self = StObject.set(x, "gridTemplateColumns", js.undefined)
       
-      @scala.inline
-      def setGridTemplateRows(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "gridTemplateRows", value.asInstanceOf[js.Any])
+      inline def setGridTemplateRows(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "gridTemplateRows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridTemplateRowsUndefined: Self = StObject.set(x, "gridTemplateRows", js.undefined)
+      inline def setGridTemplateRowsUndefined: Self = StObject.set(x, "gridTemplateRows", js.undefined)
       
-      @scala.inline
-      def setHeight(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setHyphenateLimitChars(value: CSSWideKeyword | auto | Double): Self = StObject.set(x, "hyphenateLimitChars", value.asInstanceOf[js.Any])
+      inline def setHyphenateLimitChars(value: CSSWideKeyword | auto | Double): Self = StObject.set(x, "hyphenateLimitChars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHyphenateLimitCharsUndefined: Self = StObject.set(x, "hyphenateLimitChars", js.undefined)
+      inline def setHyphenateLimitCharsUndefined: Self = StObject.set(x, "hyphenateLimitChars", js.undefined)
       
-      @scala.inline
-      def setHyphenateLimitLines(value: CSSWideKeyword | `no-limit` | Double): Self = StObject.set(x, "hyphenateLimitLines", value.asInstanceOf[js.Any])
+      inline def setHyphenateLimitLines(value: CSSWideKeyword | `no-limit` | Double): Self = StObject.set(x, "hyphenateLimitLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHyphenateLimitLinesUndefined: Self = StObject.set(x, "hyphenateLimitLines", js.undefined)
+      inline def setHyphenateLimitLinesUndefined: Self = StObject.set(x, "hyphenateLimitLines", js.undefined)
       
-      @scala.inline
-      def setHyphenateLimitZone(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "hyphenateLimitZone", value.asInstanceOf[js.Any])
+      inline def setHyphenateLimitZone(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "hyphenateLimitZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHyphenateLimitZoneUndefined: Self = StObject.set(x, "hyphenateLimitZone", js.undefined)
+      inline def setHyphenateLimitZoneUndefined: Self = StObject.set(x, "hyphenateLimitZone", js.undefined)
       
-      @scala.inline
-      def setHyphens(value: CSSWideKeyword | none | manual | auto): Self = StObject.set(x, "hyphens", value.asInstanceOf[js.Any])
+      inline def setHyphens(value: CSSWideKeyword | none | manual | auto): Self = StObject.set(x, "hyphens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHyphensUndefined: Self = StObject.set(x, "hyphens", js.undefined)
+      inline def setHyphensUndefined: Self = StObject.set(x, "hyphens", js.undefined)
       
-      @scala.inline
-      def setImeMode(value: CSSWideKeyword | auto | normal | active | inactive | disabled): Self = StObject.set(x, "imeMode", value.asInstanceOf[js.Any])
+      inline def setImeMode(value: CSSWideKeyword | auto | normal | active | inactive | disabled): Self = StObject.set(x, "imeMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImeModeUndefined: Self = StObject.set(x, "imeMode", js.undefined)
+      inline def setImeModeUndefined: Self = StObject.set(x, "imeMode", js.undefined)
       
-      @scala.inline
-      def setJustifyContent(
+      inline def setJustifyContent(
         value: CSSWideKeyword | `flex-start` | `flex-end` | center | `space-between` | `space-around` | `space-evenly`
       ): Self = StObject.set(x, "justifyContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJustifyContentUndefined: Self = StObject.set(x, "justifyContent", js.undefined)
+      inline def setJustifyContentUndefined: Self = StObject.set(x, "justifyContent", js.undefined)
       
-      @scala.inline
-      def setLayoutGrid(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "layoutGrid", value.asInstanceOf[js.Any])
+      inline def setLayoutGrid(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "layoutGrid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutGridChar(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "layoutGridChar", value.asInstanceOf[js.Any])
+      inline def setLayoutGridChar(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "layoutGridChar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutGridCharUndefined: Self = StObject.set(x, "layoutGridChar", js.undefined)
+      inline def setLayoutGridCharUndefined: Self = StObject.set(x, "layoutGridChar", js.undefined)
       
-      @scala.inline
-      def setLayoutGridLine(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "layoutGridLine", value.asInstanceOf[js.Any])
+      inline def setLayoutGridLine(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "layoutGridLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutGridLineUndefined: Self = StObject.set(x, "layoutGridLine", js.undefined)
+      inline def setLayoutGridLineUndefined: Self = StObject.set(x, "layoutGridLine", js.undefined)
       
-      @scala.inline
-      def setLayoutGridMode(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "layoutGridMode", value.asInstanceOf[js.Any])
+      inline def setLayoutGridMode(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "layoutGridMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutGridModeUndefined: Self = StObject.set(x, "layoutGridMode", js.undefined)
+      inline def setLayoutGridModeUndefined: Self = StObject.set(x, "layoutGridMode", js.undefined)
       
-      @scala.inline
-      def setLayoutGridType(value: CSSWideKeyword | loose | strict | fixed): Self = StObject.set(x, "layoutGridType", value.asInstanceOf[js.Any])
+      inline def setLayoutGridType(value: CSSWideKeyword | loose | strict | fixed): Self = StObject.set(x, "layoutGridType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutGridTypeUndefined: Self = StObject.set(x, "layoutGridType", js.undefined)
+      inline def setLayoutGridTypeUndefined: Self = StObject.set(x, "layoutGridType", js.undefined)
       
-      @scala.inline
-      def setLayoutGridUndefined: Self = StObject.set(x, "layoutGrid", js.undefined)
+      inline def setLayoutGridUndefined: Self = StObject.set(x, "layoutGrid", js.undefined)
       
-      @scala.inline
-      def setLeft(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+      inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
       
-      @scala.inline
-      def setLetterSpacing(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
+      inline def setLetterSpacing(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
+      inline def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
       
-      @scala.inline
-      def setLineBreak(value: CSSWideKeyword | auto | loose | normal | strict): Self = StObject.set(x, "lineBreak", value.asInstanceOf[js.Any])
+      inline def setLineBreak(value: CSSWideKeyword | auto | loose | normal | strict): Self = StObject.set(x, "lineBreak", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineBreakUndefined: Self = StObject.set(x, "lineBreak", js.undefined)
+      inline def setLineBreakUndefined: Self = StObject.set(x, "lineBreak", js.undefined)
       
-      @scala.inline
-      def setLineClamp(value: CSSWideKeyword | Double): Self = StObject.set(x, "lineClamp", value.asInstanceOf[js.Any])
+      inline def setLineClamp(value: CSSWideKeyword | Double): Self = StObject.set(x, "lineClamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineClampUndefined: Self = StObject.set(x, "lineClamp", js.undefined)
+      inline def setLineClampUndefined: Self = StObject.set(x, "lineClamp", js.undefined)
       
-      @scala.inline
-      def setLineHeight(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+      inline def setLineHeight(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
+      inline def setLineHeightUndefined: Self = StObject.set(x, "lineHeight", js.undefined)
       
-      @scala.inline
-      def setListStyle(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "listStyle", value.asInstanceOf[js.Any])
+      inline def setListStyle(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "listStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListStyleImage(value: CSSWideKeyword | String): Self = StObject.set(x, "listStyleImage", value.asInstanceOf[js.Any])
+      inline def setListStyleImage(value: CSSWideKeyword | String): Self = StObject.set(x, "listStyleImage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListStyleImageUndefined: Self = StObject.set(x, "listStyleImage", js.undefined)
+      inline def setListStyleImageUndefined: Self = StObject.set(x, "listStyleImage", js.undefined)
       
-      @scala.inline
-      def setListStylePosition(value: CSSWideKeyword | inside | outside): Self = StObject.set(x, "listStylePosition", value.asInstanceOf[js.Any])
+      inline def setListStylePosition(value: CSSWideKeyword | inside | outside): Self = StObject.set(x, "listStylePosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListStylePositionUndefined: Self = StObject.set(x, "listStylePosition", js.undefined)
+      inline def setListStylePositionUndefined: Self = StObject.set(x, "listStylePosition", js.undefined)
       
-      @scala.inline
-      def setListStyleType(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "listStyleType", value.asInstanceOf[js.Any])
+      inline def setListStyleType(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "listStyleType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListStyleTypeUndefined: Self = StObject.set(x, "listStyleType", js.undefined)
+      inline def setListStyleTypeUndefined: Self = StObject.set(x, "listStyleType", js.undefined)
       
-      @scala.inline
-      def setListStyleUndefined: Self = StObject.set(x, "listStyle", js.undefined)
+      inline def setListStyleUndefined: Self = StObject.set(x, "listStyle", js.undefined)
       
-      @scala.inline
-      def setMargin(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+      inline def setMargin(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginBottom(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+      inline def setMarginBottom(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
+      inline def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
       
-      @scala.inline
-      def setMarginLeft(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+      inline def setMarginLeft(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
+      inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
       
-      @scala.inline
-      def setMarginRight(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
+      inline def setMarginRight(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
+      inline def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
       
-      @scala.inline
-      def setMarginTop(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+      inline def setMarginTop(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
+      inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
       
-      @scala.inline
-      def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+      inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
-      @scala.inline
-      def setMarqueeDirection(value: CSSWideKeyword | String): Self = StObject.set(x, "marqueeDirection", value.asInstanceOf[js.Any])
+      inline def setMarqueeDirection(value: CSSWideKeyword | String): Self = StObject.set(x, "marqueeDirection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarqueeDirectionUndefined: Self = StObject.set(x, "marqueeDirection", js.undefined)
+      inline def setMarqueeDirectionUndefined: Self = StObject.set(x, "marqueeDirection", js.undefined)
       
-      @scala.inline
-      def setMarqueeStyle(value: CSSWideKeyword | String): Self = StObject.set(x, "marqueeStyle", value.asInstanceOf[js.Any])
+      inline def setMarqueeStyle(value: CSSWideKeyword | String): Self = StObject.set(x, "marqueeStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarqueeStyleUndefined: Self = StObject.set(x, "marqueeStyle", js.undefined)
+      inline def setMarqueeStyleUndefined: Self = StObject.set(x, "marqueeStyle", js.undefined)
       
-      @scala.inline
-      def setMask(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+      inline def setMask(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskBorder(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "maskBorder", value.asInstanceOf[js.Any])
+      inline def setMaskBorder(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "maskBorder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskBorderRepeat(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "maskBorderRepeat", value.asInstanceOf[js.Any])
+      inline def setMaskBorderRepeat(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "maskBorderRepeat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskBorderRepeatUndefined: Self = StObject.set(x, "maskBorderRepeat", js.undefined)
+      inline def setMaskBorderRepeatUndefined: Self = StObject.set(x, "maskBorderRepeat", js.undefined)
       
-      @scala.inline
-      def setMaskBorderSlice(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "maskBorderSlice", value.asInstanceOf[js.Any])
+      inline def setMaskBorderSlice(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "maskBorderSlice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskBorderSliceUndefined: Self = StObject.set(x, "maskBorderSlice", js.undefined)
+      inline def setMaskBorderSliceUndefined: Self = StObject.set(x, "maskBorderSlice", js.undefined)
       
-      @scala.inline
-      def setMaskBorderSource(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "maskBorderSource", value.asInstanceOf[js.Any])
+      inline def setMaskBorderSource(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "maskBorderSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskBorderSourceUndefined: Self = StObject.set(x, "maskBorderSource", js.undefined)
+      inline def setMaskBorderSourceUndefined: Self = StObject.set(x, "maskBorderSource", js.undefined)
       
-      @scala.inline
-      def setMaskBorderUndefined: Self = StObject.set(x, "maskBorder", js.undefined)
+      inline def setMaskBorderUndefined: Self = StObject.set(x, "maskBorder", js.undefined)
       
-      @scala.inline
-      def setMaskBorderWidth(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "maskBorderWidth", value.asInstanceOf[js.Any])
+      inline def setMaskBorderWidth(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "maskBorderWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskBorderWidthUndefined: Self = StObject.set(x, "maskBorderWidth", js.undefined)
+      inline def setMaskBorderWidthUndefined: Self = StObject.set(x, "maskBorderWidth", js.undefined)
       
-      @scala.inline
-      def setMaskClip(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "maskClip", value.asInstanceOf[js.Any])
+      inline def setMaskClip(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "maskClip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskClipUndefined: Self = StObject.set(x, "maskClip", js.undefined)
+      inline def setMaskClipUndefined: Self = StObject.set(x, "maskClip", js.undefined)
       
-      @scala.inline
-      def setMaskOrigin(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "maskOrigin", value.asInstanceOf[js.Any])
+      inline def setMaskOrigin(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "maskOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaskOriginUndefined: Self = StObject.set(x, "maskOrigin", js.undefined)
+      inline def setMaskOriginUndefined: Self = StObject.set(x, "maskOrigin", js.undefined)
       
-      @scala.inline
-      def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
+      inline def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
       
-      @scala.inline
-      def setMaxFontSize(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "maxFontSize", value.asInstanceOf[js.Any])
+      inline def setMaxFontSize(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "maxFontSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxFontSizeUndefined: Self = StObject.set(x, "maxFontSize", js.undefined)
+      inline def setMaxFontSizeUndefined: Self = StObject.set(x, "maxFontSize", js.undefined)
       
-      @scala.inline
-      def setMaxHeight(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
+      inline def setMaxHeight(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
+      inline def setMaxHeightUndefined: Self = StObject.set(x, "maxHeight", js.undefined)
       
-      @scala.inline
-      def setMaxWidth(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
+      inline def setMaxWidthUndefined: Self = StObject.set(x, "maxWidth", js.undefined)
       
-      @scala.inline
-      def setMinHeight(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
+      inline def setMinHeight(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
+      inline def setMinHeightUndefined: Self = StObject.set(x, "minHeight", js.undefined)
       
-      @scala.inline
-      def setMinWidth(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
+      inline def setMinWidth(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
+      inline def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
       
-      @scala.inline
-      def setOpacity(value: CSSWideKeyword | Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: CSSWideKeyword | Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+      inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      @scala.inline
-      def setOrder(value: CSSWideKeyword | Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: CSSWideKeyword | Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      @scala.inline
-      def setOrphans(value: CSSWideKeyword | Double): Self = StObject.set(x, "orphans", value.asInstanceOf[js.Any])
+      inline def setOrphans(value: CSSWideKeyword | Double): Self = StObject.set(x, "orphans", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrphansUndefined: Self = StObject.set(x, "orphans", js.undefined)
+      inline def setOrphansUndefined: Self = StObject.set(x, "orphans", js.undefined)
       
-      @scala.inline
-      def setOutline(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
+      inline def setOutline(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutlineColor(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
+      inline def setOutlineColor(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutlineColorUndefined: Self = StObject.set(x, "outlineColor", js.undefined)
+      inline def setOutlineColorUndefined: Self = StObject.set(x, "outlineColor", js.undefined)
       
-      @scala.inline
-      def setOutlineOffset(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "outlineOffset", value.asInstanceOf[js.Any])
+      inline def setOutlineOffset(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "outlineOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutlineOffsetUndefined: Self = StObject.set(x, "outlineOffset", js.undefined)
+      inline def setOutlineOffsetUndefined: Self = StObject.set(x, "outlineOffset", js.undefined)
       
-      @scala.inline
-      def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
+      inline def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
       
-      @scala.inline
-      def setOverflow(value: CSSWideKeyword | auto | hidden | scroll | visible): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
+      inline def setOverflow(value: CSSWideKeyword | auto | hidden | scroll | visible): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowStyle(value: CSSWideKeyword | auto | none | scrollbar | `-ms-autohiding-scrollbar`): Self = StObject.set(x, "overflowStyle", value.asInstanceOf[js.Any])
+      inline def setOverflowStyle(value: CSSWideKeyword | auto | none | scrollbar | `-ms-autohiding-scrollbar`): Self = StObject.set(x, "overflowStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowStyleUndefined: Self = StObject.set(x, "overflowStyle", js.undefined)
+      inline def setOverflowStyleUndefined: Self = StObject.set(x, "overflowStyle", js.undefined)
       
-      @scala.inline
-      def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
+      inline def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
       
-      @scala.inline
-      def setOverflowX(value: CSSWideKeyword | auto | hidden | scroll | visible): Self = StObject.set(x, "overflowX", value.asInstanceOf[js.Any])
+      inline def setOverflowX(value: CSSWideKeyword | auto | hidden | scroll | visible): Self = StObject.set(x, "overflowX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowXUndefined: Self = StObject.set(x, "overflowX", js.undefined)
+      inline def setOverflowXUndefined: Self = StObject.set(x, "overflowX", js.undefined)
       
-      @scala.inline
-      def setOverflowY(value: CSSWideKeyword | auto | hidden | scroll | visible): Self = StObject.set(x, "overflowY", value.asInstanceOf[js.Any])
+      inline def setOverflowY(value: CSSWideKeyword | auto | hidden | scroll | visible): Self = StObject.set(x, "overflowY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverflowYUndefined: Self = StObject.set(x, "overflowY", js.undefined)
+      inline def setOverflowYUndefined: Self = StObject.set(x, "overflowY", js.undefined)
       
-      @scala.inline
-      def setPadding(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+      inline def setPadding(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingBottom(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
+      inline def setPaddingBottom(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
+      inline def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
       
-      @scala.inline
-      def setPaddingLeft(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
+      inline def setPaddingLeft(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
+      inline def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
       
-      @scala.inline
-      def setPaddingRight(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
+      inline def setPaddingRight(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
+      inline def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
       
-      @scala.inline
-      def setPaddingTop(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
+      inline def setPaddingTop(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
+      inline def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
       
-      @scala.inline
-      def setPageBreakAfter(value: CSSWideKeyword | auto | always | avoid | left | right): Self = StObject.set(x, "pageBreakAfter", value.asInstanceOf[js.Any])
+      inline def setPageBreakAfter(value: CSSWideKeyword | auto | always | avoid | left | right): Self = StObject.set(x, "pageBreakAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageBreakAfterUndefined: Self = StObject.set(x, "pageBreakAfter", js.undefined)
+      inline def setPageBreakAfterUndefined: Self = StObject.set(x, "pageBreakAfter", js.undefined)
       
-      @scala.inline
-      def setPageBreakBefore(value: CSSWideKeyword | auto | always | avoid | left | right): Self = StObject.set(x, "pageBreakBefore", value.asInstanceOf[js.Any])
+      inline def setPageBreakBefore(value: CSSWideKeyword | auto | always | avoid | left | right): Self = StObject.set(x, "pageBreakBefore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageBreakBeforeUndefined: Self = StObject.set(x, "pageBreakBefore", js.undefined)
+      inline def setPageBreakBeforeUndefined: Self = StObject.set(x, "pageBreakBefore", js.undefined)
       
-      @scala.inline
-      def setPageBreakInside(value: CSSWideKeyword | auto | avoid): Self = StObject.set(x, "pageBreakInside", value.asInstanceOf[js.Any])
+      inline def setPageBreakInside(value: CSSWideKeyword | auto | avoid): Self = StObject.set(x, "pageBreakInside", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageBreakInsideUndefined: Self = StObject.set(x, "pageBreakInside", js.undefined)
+      inline def setPageBreakInsideUndefined: Self = StObject.set(x, "pageBreakInside", js.undefined)
       
-      @scala.inline
-      def setPause(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
+      inline def setPause(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPauseAfter(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "pauseAfter", value.asInstanceOf[js.Any])
+      inline def setPauseAfter(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "pauseAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPauseAfterUndefined: Self = StObject.set(x, "pauseAfter", js.undefined)
+      inline def setPauseAfterUndefined: Self = StObject.set(x, "pauseAfter", js.undefined)
       
-      @scala.inline
-      def setPauseBefore(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "pauseBefore", value.asInstanceOf[js.Any])
+      inline def setPauseBefore(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "pauseBefore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPauseBeforeUndefined: Self = StObject.set(x, "pauseBefore", js.undefined)
+      inline def setPauseBeforeUndefined: Self = StObject.set(x, "pauseBefore", js.undefined)
       
-      @scala.inline
-      def setPauseUndefined: Self = StObject.set(x, "pause", js.undefined)
+      inline def setPauseUndefined: Self = StObject.set(x, "pause", js.undefined)
       
-      @scala.inline
-      def setPerspective(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "perspective", value.asInstanceOf[js.Any])
+      inline def setPerspective(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "perspective", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPerspectiveOrigin(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "perspectiveOrigin", value.asInstanceOf[js.Any])
+      inline def setPerspectiveOrigin(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "perspectiveOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPerspectiveOriginUndefined: Self = StObject.set(x, "perspectiveOrigin", js.undefined)
+      inline def setPerspectiveOriginUndefined: Self = StObject.set(x, "perspectiveOrigin", js.undefined)
       
-      @scala.inline
-      def setPerspectiveUndefined: Self = StObject.set(x, "perspective", js.undefined)
+      inline def setPerspectiveUndefined: Self = StObject.set(x, "perspective", js.undefined)
       
-      @scala.inline
-      def setPointerEvents(
+      inline def setPointerEvents(
         value: CSSWideKeyword | auto | none | visiblePainted | visibleFill | visibleStroke | visible | painted | fill | stroke | all
       ): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
+      inline def setPointerEventsUndefined: Self = StObject.set(x, "pointerEvents", js.undefined)
       
-      @scala.inline
-      def setPosition(value: CSSWideKeyword | static | relative | absolute | sticky | fixed): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: CSSWideKeyword | static | relative | absolute | sticky | fixed): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setPunctuationTrim(value: CSSWideKeyword | none | start | end | `allow-end` | adjacent): Self = StObject.set(x, "punctuationTrim", value.asInstanceOf[js.Any])
+      inline def setPunctuationTrim(value: CSSWideKeyword | none | start | end | `allow-end` | adjacent): Self = StObject.set(x, "punctuationTrim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPunctuationTrimUndefined: Self = StObject.set(x, "punctuationTrim", js.undefined)
+      inline def setPunctuationTrimUndefined: Self = StObject.set(x, "punctuationTrim", js.undefined)
       
-      @scala.inline
-      def setQuotes(value: CSSWideKeyword | String): Self = StObject.set(x, "quotes", value.asInstanceOf[js.Any])
+      inline def setQuotes(value: CSSWideKeyword | String): Self = StObject.set(x, "quotes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuotesUndefined: Self = StObject.set(x, "quotes", js.undefined)
+      inline def setQuotesUndefined: Self = StObject.set(x, "quotes", js.undefined)
       
-      @scala.inline
-      def setRegionFragment(value: CSSWideKeyword | auto | break): Self = StObject.set(x, "regionFragment", value.asInstanceOf[js.Any])
+      inline def setRegionFragment(value: CSSWideKeyword | auto | break): Self = StObject.set(x, "regionFragment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegionFragmentUndefined: Self = StObject.set(x, "regionFragment", js.undefined)
+      inline def setRegionFragmentUndefined: Self = StObject.set(x, "regionFragment", js.undefined)
       
-      @scala.inline
-      def setRestAfter(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "restAfter", value.asInstanceOf[js.Any])
+      inline def setRestAfter(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "restAfter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestAfterUndefined: Self = StObject.set(x, "restAfter", js.undefined)
+      inline def setRestAfterUndefined: Self = StObject.set(x, "restAfter", js.undefined)
       
-      @scala.inline
-      def setRestBefore(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "restBefore", value.asInstanceOf[js.Any])
+      inline def setRestBefore(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "restBefore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRestBeforeUndefined: Self = StObject.set(x, "restBefore", js.undefined)
+      inline def setRestBeforeUndefined: Self = StObject.set(x, "restBefore", js.undefined)
       
-      @scala.inline
-      def setRight(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+      inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
       
-      @scala.inline
-      def setRubyAlign(value: CSSWideKeyword | start | center | `space-between` | `space-around`): Self = StObject.set(x, "rubyAlign", value.asInstanceOf[js.Any])
+      inline def setRubyAlign(value: CSSWideKeyword | start | center | `space-between` | `space-around`): Self = StObject.set(x, "rubyAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRubyAlignUndefined: Self = StObject.set(x, "rubyAlign", js.undefined)
+      inline def setRubyAlignUndefined: Self = StObject.set(x, "rubyAlign", js.undefined)
       
-      @scala.inline
-      def setRubyPosition(value: CSSWideKeyword | over | under | `inter-character`): Self = StObject.set(x, "rubyPosition", value.asInstanceOf[js.Any])
+      inline def setRubyPosition(value: CSSWideKeyword | over | under | `inter-character`): Self = StObject.set(x, "rubyPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRubyPositionUndefined: Self = StObject.set(x, "rubyPosition", js.undefined)
+      inline def setRubyPositionUndefined: Self = StObject.set(x, "rubyPosition", js.undefined)
       
-      @scala.inline
-      def setShapeImageThreshold(value: CSSWideKeyword | Double): Self = StObject.set(x, "shapeImageThreshold", value.asInstanceOf[js.Any])
+      inline def setShapeImageThreshold(value: CSSWideKeyword | Double): Self = StObject.set(x, "shapeImageThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShapeImageThresholdUndefined: Self = StObject.set(x, "shapeImageThreshold", js.undefined)
+      inline def setShapeImageThresholdUndefined: Self = StObject.set(x, "shapeImageThreshold", js.undefined)
       
-      @scala.inline
-      def setShapeInside(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "shapeInside", value.asInstanceOf[js.Any])
+      inline def setShapeInside(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "shapeInside", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShapeInsideUndefined: Self = StObject.set(x, "shapeInside", js.undefined)
+      inline def setShapeInsideUndefined: Self = StObject.set(x, "shapeInside", js.undefined)
       
-      @scala.inline
-      def setShapeMargin(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "shapeMargin", value.asInstanceOf[js.Any])
+      inline def setShapeMargin(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "shapeMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShapeMarginUndefined: Self = StObject.set(x, "shapeMargin", js.undefined)
+      inline def setShapeMarginUndefined: Self = StObject.set(x, "shapeMargin", js.undefined)
       
-      @scala.inline
-      def setShapeOutside(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "shapeOutside", value.asInstanceOf[js.Any])
+      inline def setShapeOutside(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "shapeOutside", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShapeOutsideUndefined: Self = StObject.set(x, "shapeOutside", js.undefined)
+      inline def setShapeOutsideUndefined: Self = StObject.set(x, "shapeOutside", js.undefined)
       
-      @scala.inline
-      def setSpeak(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "speak", value.asInstanceOf[js.Any])
+      inline def setSpeak(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "speak", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeakAs(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "speakAs", value.asInstanceOf[js.Any])
+      inline def setSpeakAs(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "speakAs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpeakAsUndefined: Self = StObject.set(x, "speakAs", js.undefined)
+      inline def setSpeakAsUndefined: Self = StObject.set(x, "speakAs", js.undefined)
       
-      @scala.inline
-      def setSpeakUndefined: Self = StObject.set(x, "speak", js.undefined)
+      inline def setSpeakUndefined: Self = StObject.set(x, "speak", js.undefined)
       
-      @scala.inline
-      def setStrokeOpacity(value: CSSWideKeyword | Double): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
+      inline def setStrokeOpacity(value: CSSWideKeyword | Double): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
+      inline def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
       
-      @scala.inline
-      def setStrokeWidth(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
+      inline def setStrokeWidth(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+      inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
       
-      @scala.inline
-      def setTabSize(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
+      inline def setTabSize(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "tabSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabSizeUndefined: Self = StObject.set(x, "tabSize", js.undefined)
+      inline def setTabSizeUndefined: Self = StObject.set(x, "tabSize", js.undefined)
       
-      @scala.inline
-      def setTableLayout(value: CSSWideKeyword | auto | fixed): Self = StObject.set(x, "tableLayout", value.asInstanceOf[js.Any])
+      inline def setTableLayout(value: CSSWideKeyword | auto | fixed): Self = StObject.set(x, "tableLayout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableLayoutUndefined: Self = StObject.set(x, "tableLayout", js.undefined)
+      inline def setTableLayoutUndefined: Self = StObject.set(x, "tableLayout", js.undefined)
       
-      @scala.inline
-      def setTextAlign(value: CSSWideKeyword | start | end | left | right | center | justify | `match-parent`): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
+      inline def setTextAlign(value: CSSWideKeyword | start | end | left | right | center | justify | `match-parent`): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextAlignLast(value: CSSWideKeyword | auto | start | end | left | right | center | justify): Self = StObject.set(x, "textAlignLast", value.asInstanceOf[js.Any])
+      inline def setTextAlignLast(value: CSSWideKeyword | auto | start | end | left | right | center | justify): Self = StObject.set(x, "textAlignLast", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextAlignLastUndefined: Self = StObject.set(x, "textAlignLast", js.undefined)
+      inline def setTextAlignLastUndefined: Self = StObject.set(x, "textAlignLast", js.undefined)
       
-      @scala.inline
-      def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
+      inline def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
       
-      @scala.inline
-      def setTextDecoration(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "textDecoration", value.asInstanceOf[js.Any])
+      inline def setTextDecoration(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "textDecoration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextDecorationColor(value: CSSWideKeyword | String): Self = StObject.set(x, "textDecorationColor", value.asInstanceOf[js.Any])
+      inline def setTextDecorationColor(value: CSSWideKeyword | String): Self = StObject.set(x, "textDecorationColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextDecorationColorUndefined: Self = StObject.set(x, "textDecorationColor", js.undefined)
+      inline def setTextDecorationColorUndefined: Self = StObject.set(x, "textDecorationColor", js.undefined)
       
-      @scala.inline
-      def setTextDecorationLine(value: CSSWideKeyword | String): Self = StObject.set(x, "textDecorationLine", value.asInstanceOf[js.Any])
+      inline def setTextDecorationLine(value: CSSWideKeyword | String): Self = StObject.set(x, "textDecorationLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextDecorationLineThrough(value: CSSWideKeyword | String): Self = StObject.set(x, "textDecorationLineThrough", value.asInstanceOf[js.Any])
+      inline def setTextDecorationLineThrough(value: CSSWideKeyword | String): Self = StObject.set(x, "textDecorationLineThrough", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextDecorationLineThroughUndefined: Self = StObject.set(x, "textDecorationLineThrough", js.undefined)
+      inline def setTextDecorationLineThroughUndefined: Self = StObject.set(x, "textDecorationLineThrough", js.undefined)
       
-      @scala.inline
-      def setTextDecorationLineUndefined: Self = StObject.set(x, "textDecorationLine", js.undefined)
+      inline def setTextDecorationLineUndefined: Self = StObject.set(x, "textDecorationLine", js.undefined)
       
-      @scala.inline
-      def setTextDecorationNone(value: CSSWideKeyword | String): Self = StObject.set(x, "textDecorationNone", value.asInstanceOf[js.Any])
+      inline def setTextDecorationNone(value: CSSWideKeyword | String): Self = StObject.set(x, "textDecorationNone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextDecorationNoneUndefined: Self = StObject.set(x, "textDecorationNone", js.undefined)
+      inline def setTextDecorationNoneUndefined: Self = StObject.set(x, "textDecorationNone", js.undefined)
       
-      @scala.inline
-      def setTextDecorationOverline(value: CSSWideKeyword | String): Self = StObject.set(x, "textDecorationOverline", value.asInstanceOf[js.Any])
+      inline def setTextDecorationOverline(value: CSSWideKeyword | String): Self = StObject.set(x, "textDecorationOverline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextDecorationOverlineUndefined: Self = StObject.set(x, "textDecorationOverline", js.undefined)
+      inline def setTextDecorationOverlineUndefined: Self = StObject.set(x, "textDecorationOverline", js.undefined)
       
-      @scala.inline
-      def setTextDecorationSkip(value: CSSWideKeyword | String): Self = StObject.set(x, "textDecorationSkip", value.asInstanceOf[js.Any])
+      inline def setTextDecorationSkip(value: CSSWideKeyword | String): Self = StObject.set(x, "textDecorationSkip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextDecorationSkipUndefined: Self = StObject.set(x, "textDecorationSkip", js.undefined)
+      inline def setTextDecorationSkipUndefined: Self = StObject.set(x, "textDecorationSkip", js.undefined)
       
-      @scala.inline
-      def setTextDecorationStyle(value: CSSWideKeyword | String): Self = StObject.set(x, "textDecorationStyle", value.asInstanceOf[js.Any])
+      inline def setTextDecorationStyle(value: CSSWideKeyword | String): Self = StObject.set(x, "textDecorationStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextDecorationStyleUndefined: Self = StObject.set(x, "textDecorationStyle", js.undefined)
+      inline def setTextDecorationStyleUndefined: Self = StObject.set(x, "textDecorationStyle", js.undefined)
       
-      @scala.inline
-      def setTextDecorationUndefined: Self = StObject.set(x, "textDecoration", js.undefined)
+      inline def setTextDecorationUndefined: Self = StObject.set(x, "textDecoration", js.undefined)
       
-      @scala.inline
-      def setTextDecorationUnderline(value: CSSWideKeyword | String): Self = StObject.set(x, "textDecorationUnderline", value.asInstanceOf[js.Any])
+      inline def setTextDecorationUnderline(value: CSSWideKeyword | String): Self = StObject.set(x, "textDecorationUnderline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextDecorationUnderlineUndefined: Self = StObject.set(x, "textDecorationUnderline", js.undefined)
+      inline def setTextDecorationUnderlineUndefined: Self = StObject.set(x, "textDecorationUnderline", js.undefined)
       
-      @scala.inline
-      def setTextEmphasis(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "textEmphasis", value.asInstanceOf[js.Any])
+      inline def setTextEmphasis(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "textEmphasis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextEmphasisColor(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "textEmphasisColor", value.asInstanceOf[js.Any])
+      inline def setTextEmphasisColor(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "textEmphasisColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextEmphasisColorUndefined: Self = StObject.set(x, "textEmphasisColor", js.undefined)
+      inline def setTextEmphasisColorUndefined: Self = StObject.set(x, "textEmphasisColor", js.undefined)
       
-      @scala.inline
-      def setTextEmphasisStyle(value: CSSWideKeyword | String): Self = StObject.set(x, "textEmphasisStyle", value.asInstanceOf[js.Any])
+      inline def setTextEmphasisStyle(value: CSSWideKeyword | String): Self = StObject.set(x, "textEmphasisStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextEmphasisStyleUndefined: Self = StObject.set(x, "textEmphasisStyle", js.undefined)
+      inline def setTextEmphasisStyleUndefined: Self = StObject.set(x, "textEmphasisStyle", js.undefined)
       
-      @scala.inline
-      def setTextEmphasisUndefined: Self = StObject.set(x, "textEmphasis", js.undefined)
+      inline def setTextEmphasisUndefined: Self = StObject.set(x, "textEmphasis", js.undefined)
       
-      @scala.inline
-      def setTextHeight(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "textHeight", value.asInstanceOf[js.Any])
+      inline def setTextHeight(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "textHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextHeightUndefined: Self = StObject.set(x, "textHeight", js.undefined)
+      inline def setTextHeightUndefined: Self = StObject.set(x, "textHeight", js.undefined)
       
-      @scala.inline
-      def setTextIndent(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "textIndent", value.asInstanceOf[js.Any])
+      inline def setTextIndent(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "textIndent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextIndentUndefined: Self = StObject.set(x, "textIndent", js.undefined)
+      inline def setTextIndentUndefined: Self = StObject.set(x, "textIndent", js.undefined)
       
-      @scala.inline
-      def setTextJustifyTrim(
+      inline def setTextJustifyTrim(
         value: CSSWideKeyword | auto | `inter-word` | `inter-ideograph` | `inter-cluster` | distribute | kashida | trim
       ): Self = StObject.set(x, "textJustifyTrim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextJustifyTrimUndefined: Self = StObject.set(x, "textJustifyTrim", js.undefined)
+      inline def setTextJustifyTrimUndefined: Self = StObject.set(x, "textJustifyTrim", js.undefined)
       
-      @scala.inline
-      def setTextKashidaSpace(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "textKashidaSpace", value.asInstanceOf[js.Any])
+      inline def setTextKashidaSpace(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "textKashidaSpace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextKashidaSpaceUndefined: Self = StObject.set(x, "textKashidaSpace", js.undefined)
+      inline def setTextKashidaSpaceUndefined: Self = StObject.set(x, "textKashidaSpace", js.undefined)
       
-      @scala.inline
-      def setTextLineThrough(value: CSSWideKeyword | String): Self = StObject.set(x, "textLineThrough", value.asInstanceOf[js.Any])
+      inline def setTextLineThrough(value: CSSWideKeyword | String): Self = StObject.set(x, "textLineThrough", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextLineThroughColor(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "textLineThroughColor", value.asInstanceOf[js.Any])
+      inline def setTextLineThroughColor(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "textLineThroughColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextLineThroughColorUndefined: Self = StObject.set(x, "textLineThroughColor", js.undefined)
+      inline def setTextLineThroughColorUndefined: Self = StObject.set(x, "textLineThroughColor", js.undefined)
       
-      @scala.inline
-      def setTextLineThroughMode(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "textLineThroughMode", value.asInstanceOf[js.Any])
+      inline def setTextLineThroughMode(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "textLineThroughMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextLineThroughModeUndefined: Self = StObject.set(x, "textLineThroughMode", js.undefined)
+      inline def setTextLineThroughModeUndefined: Self = StObject.set(x, "textLineThroughMode", js.undefined)
       
-      @scala.inline
-      def setTextLineThroughStyle(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "textLineThroughStyle", value.asInstanceOf[js.Any])
+      inline def setTextLineThroughStyle(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "textLineThroughStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextLineThroughStyleUndefined: Self = StObject.set(x, "textLineThroughStyle", js.undefined)
+      inline def setTextLineThroughStyleUndefined: Self = StObject.set(x, "textLineThroughStyle", js.undefined)
       
-      @scala.inline
-      def setTextLineThroughUndefined: Self = StObject.set(x, "textLineThrough", js.undefined)
+      inline def setTextLineThroughUndefined: Self = StObject.set(x, "textLineThrough", js.undefined)
       
-      @scala.inline
-      def setTextLineThroughWidth(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "textLineThroughWidth", value.asInstanceOf[js.Any])
+      inline def setTextLineThroughWidth(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "textLineThroughWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextLineThroughWidthUndefined: Self = StObject.set(x, "textLineThroughWidth", js.undefined)
+      inline def setTextLineThroughWidthUndefined: Self = StObject.set(x, "textLineThroughWidth", js.undefined)
       
-      @scala.inline
-      def setTextOverflow(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "textOverflow", value.asInstanceOf[js.Any])
+      inline def setTextOverflow(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "textOverflow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextOverflowUndefined: Self = StObject.set(x, "textOverflow", js.undefined)
+      inline def setTextOverflowUndefined: Self = StObject.set(x, "textOverflow", js.undefined)
       
-      @scala.inline
-      def setTextOverline(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "textOverline", value.asInstanceOf[js.Any])
+      inline def setTextOverline(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "textOverline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextOverlineColor(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "textOverlineColor", value.asInstanceOf[js.Any])
+      inline def setTextOverlineColor(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "textOverlineColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextOverlineColorUndefined: Self = StObject.set(x, "textOverlineColor", js.undefined)
+      inline def setTextOverlineColorUndefined: Self = StObject.set(x, "textOverlineColor", js.undefined)
       
-      @scala.inline
-      def setTextOverlineMode(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "textOverlineMode", value.asInstanceOf[js.Any])
+      inline def setTextOverlineMode(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "textOverlineMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextOverlineModeUndefined: Self = StObject.set(x, "textOverlineMode", js.undefined)
+      inline def setTextOverlineModeUndefined: Self = StObject.set(x, "textOverlineMode", js.undefined)
       
-      @scala.inline
-      def setTextOverlineStyle(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "textOverlineStyle", value.asInstanceOf[js.Any])
+      inline def setTextOverlineStyle(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "textOverlineStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextOverlineStyleUndefined: Self = StObject.set(x, "textOverlineStyle", js.undefined)
+      inline def setTextOverlineStyleUndefined: Self = StObject.set(x, "textOverlineStyle", js.undefined)
       
-      @scala.inline
-      def setTextOverlineUndefined: Self = StObject.set(x, "textOverline", js.undefined)
+      inline def setTextOverlineUndefined: Self = StObject.set(x, "textOverline", js.undefined)
       
-      @scala.inline
-      def setTextOverlineWidth(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "textOverlineWidth", value.asInstanceOf[js.Any])
+      inline def setTextOverlineWidth(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "textOverlineWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextOverlineWidthUndefined: Self = StObject.set(x, "textOverlineWidth", js.undefined)
+      inline def setTextOverlineWidthUndefined: Self = StObject.set(x, "textOverlineWidth", js.undefined)
       
-      @scala.inline
-      def setTextRendering(value: CSSWideKeyword | auto | optimizeSpeed | optimizeLegibility | geometricPrecision): Self = StObject.set(x, "textRendering", value.asInstanceOf[js.Any])
+      inline def setTextRendering(value: CSSWideKeyword | auto | optimizeSpeed | optimizeLegibility | geometricPrecision): Self = StObject.set(x, "textRendering", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextRenderingUndefined: Self = StObject.set(x, "textRendering", js.undefined)
+      inline def setTextRenderingUndefined: Self = StObject.set(x, "textRendering", js.undefined)
       
-      @scala.inline
-      def setTextScript(value: CSSWideKeyword | js.Object): Self = StObject.set(x, "textScript", value.asInstanceOf[js.Any])
+      inline def setTextScript(value: CSSWideKeyword | js.Object): Self = StObject.set(x, "textScript", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextScriptUndefined: Self = StObject.set(x, "textScript", js.undefined)
+      inline def setTextScriptUndefined: Self = StObject.set(x, "textScript", js.undefined)
       
-      @scala.inline
-      def setTextShadow(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "textShadow", value.asInstanceOf[js.Any])
+      inline def setTextShadow(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "textShadow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextShadowUndefined: Self = StObject.set(x, "textShadow", js.undefined)
+      inline def setTextShadowUndefined: Self = StObject.set(x, "textShadow", js.undefined)
       
-      @scala.inline
-      def setTextTransform(value: CSSWideKeyword | none | capitalize | uppercase | lowercase | `full-width`): Self = StObject.set(x, "textTransform", value.asInstanceOf[js.Any])
+      inline def setTextTransform(value: CSSWideKeyword | none | capitalize | uppercase | lowercase | `full-width`): Self = StObject.set(x, "textTransform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextTransformUndefined: Self = StObject.set(x, "textTransform", js.undefined)
+      inline def setTextTransformUndefined: Self = StObject.set(x, "textTransform", js.undefined)
       
-      @scala.inline
-      def setTextUnderlinePosition(value: CSSWideKeyword | String): Self = StObject.set(x, "textUnderlinePosition", value.asInstanceOf[js.Any])
+      inline def setTextUnderlinePosition(value: CSSWideKeyword | String): Self = StObject.set(x, "textUnderlinePosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUnderlinePositionUndefined: Self = StObject.set(x, "textUnderlinePosition", js.undefined)
+      inline def setTextUnderlinePositionUndefined: Self = StObject.set(x, "textUnderlinePosition", js.undefined)
       
-      @scala.inline
-      def setTextUnderlineStyle(value: CSSWideKeyword | String): Self = StObject.set(x, "textUnderlineStyle", value.asInstanceOf[js.Any])
+      inline def setTextUnderlineStyle(value: CSSWideKeyword | String): Self = StObject.set(x, "textUnderlineStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUnderlineStyleUndefined: Self = StObject.set(x, "textUnderlineStyle", js.undefined)
+      inline def setTextUnderlineStyleUndefined: Self = StObject.set(x, "textUnderlineStyle", js.undefined)
       
-      @scala.inline
-      def setTop(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+      inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
       
-      @scala.inline
-      def setTouchAction(value: CSSWideKeyword | String): Self = StObject.set(x, "touchAction", value.asInstanceOf[js.Any])
+      inline def setTouchAction(value: CSSWideKeyword | String): Self = StObject.set(x, "touchAction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchActionUndefined: Self = StObject.set(x, "touchAction", js.undefined)
+      inline def setTouchActionUndefined: Self = StObject.set(x, "touchAction", js.undefined)
       
-      @scala.inline
-      def setTransform(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      inline def setTransform(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformOrigin(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "transformOrigin", value.asInstanceOf[js.Any])
+      inline def setTransformOrigin(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "transformOrigin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformOriginUndefined: Self = StObject.set(x, "transformOrigin", js.undefined)
+      inline def setTransformOriginUndefined: Self = StObject.set(x, "transformOrigin", js.undefined)
       
-      @scala.inline
-      def setTransformOriginZ(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "transformOriginZ", value.asInstanceOf[js.Any])
+      inline def setTransformOriginZ(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "transformOriginZ", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformOriginZUndefined: Self = StObject.set(x, "transformOriginZ", js.undefined)
+      inline def setTransformOriginZUndefined: Self = StObject.set(x, "transformOriginZ", js.undefined)
       
-      @scala.inline
-      def setTransformStyle(value: CSSWideKeyword | flat | `preserve-3d`): Self = StObject.set(x, "transformStyle", value.asInstanceOf[js.Any])
+      inline def setTransformStyle(value: CSSWideKeyword | flat | `preserve-3d`): Self = StObject.set(x, "transformStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransformStyleUndefined: Self = StObject.set(x, "transformStyle", js.undefined)
+      inline def setTransformStyleUndefined: Self = StObject.set(x, "transformStyle", js.undefined)
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
       
-      @scala.inline
-      def setTransition(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+      inline def setTransition(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionDelay(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "transitionDelay", value.asInstanceOf[js.Any])
+      inline def setTransitionDelay(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "transitionDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionDelayUndefined: Self = StObject.set(x, "transitionDelay", js.undefined)
+      inline def setTransitionDelayUndefined: Self = StObject.set(x, "transitionDelay", js.undefined)
       
-      @scala.inline
-      def setTransitionDuration(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
+      inline def setTransitionDuration(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
+      inline def setTransitionDurationUndefined: Self = StObject.set(x, "transitionDuration", js.undefined)
       
-      @scala.inline
-      def setTransitionProperty(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "transitionProperty", value.asInstanceOf[js.Any])
+      inline def setTransitionProperty(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "transitionProperty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionPropertyUndefined: Self = StObject.set(x, "transitionProperty", js.undefined)
+      inline def setTransitionPropertyUndefined: Self = StObject.set(x, "transitionProperty", js.undefined)
       
-      @scala.inline
-      def setTransitionTimingFunction(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "transitionTimingFunction", value.asInstanceOf[js.Any])
+      inline def setTransitionTimingFunction(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "transitionTimingFunction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionTimingFunctionUndefined: Self = StObject.set(x, "transitionTimingFunction", js.undefined)
+      inline def setTransitionTimingFunctionUndefined: Self = StObject.set(x, "transitionTimingFunction", js.undefined)
       
-      @scala.inline
-      def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+      inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
       
-      @scala.inline
-      def setUnicodeBidi(
+      inline def setUnicodeBidi(
         value: CSSWideKeyword | normal | embed | isolate | `bidi-override` | `isolate-override` | plaintext
       ): Self = StObject.set(x, "unicodeBidi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnicodeBidiUndefined: Self = StObject.set(x, "unicodeBidi", js.undefined)
+      inline def setUnicodeBidiUndefined: Self = StObject.set(x, "unicodeBidi", js.undefined)
       
-      @scala.inline
-      def setUnicodeRange(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "unicodeRange", value.asInstanceOf[js.Any])
+      inline def setUnicodeRange(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "unicodeRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnicodeRangeUndefined: Self = StObject.set(x, "unicodeRange", js.undefined)
+      inline def setUnicodeRangeUndefined: Self = StObject.set(x, "unicodeRange", js.undefined)
       
-      @scala.inline
-      def setUserFocus(
+      inline def setUserFocus(
         value: CSSWideKeyword | ignore | normal | `select-after` | `select-before` | `select-menu` | `select-same` | `select-all` | none
       ): Self = StObject.set(x, "userFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserFocusUndefined: Self = StObject.set(x, "userFocus", js.undefined)
+      inline def setUserFocusUndefined: Self = StObject.set(x, "userFocus", js.undefined)
       
-      @scala.inline
-      def setUserInput(value: CSSWideKeyword | none | enabled | disabled): Self = StObject.set(x, "userInput", value.asInstanceOf[js.Any])
+      inline def setUserInput(value: CSSWideKeyword | none | enabled | disabled): Self = StObject.set(x, "userInput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserInputUndefined: Self = StObject.set(x, "userInput", js.undefined)
+      inline def setUserInputUndefined: Self = StObject.set(x, "userInput", js.undefined)
       
-      @scala.inline
-      def setVerticalAlign(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+      inline def setVerticalAlign(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
+      inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
       
-      @scala.inline
-      def setVisibility(value: CSSWideKeyword | visible | hidden | collapse): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+      inline def setVisibility(value: CSSWideKeyword | visible | hidden | collapse): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
+      inline def setVisibilityUndefined: Self = StObject.set(x, "visibility", js.undefined)
       
-      @scala.inline
-      def setVoiceBalance(value: CSSWideKeyword | Double | left | center | right | leftwards | rightwards): Self = StObject.set(x, "voiceBalance", value.asInstanceOf[js.Any])
+      inline def setVoiceBalance(value: CSSWideKeyword | Double | left | center | right | leftwards | rightwards): Self = StObject.set(x, "voiceBalance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVoiceBalanceUndefined: Self = StObject.set(x, "voiceBalance", js.undefined)
+      inline def setVoiceBalanceUndefined: Self = StObject.set(x, "voiceBalance", js.undefined)
       
-      @scala.inline
-      def setVoiceDuration(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "voiceDuration", value.asInstanceOf[js.Any])
+      inline def setVoiceDuration(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "voiceDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVoiceDurationUndefined: Self = StObject.set(x, "voiceDuration", js.undefined)
+      inline def setVoiceDurationUndefined: Self = StObject.set(x, "voiceDuration", js.undefined)
       
-      @scala.inline
-      def setVoiceFamily(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "voiceFamily", value.asInstanceOf[js.Any])
+      inline def setVoiceFamily(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "voiceFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVoiceFamilyUndefined: Self = StObject.set(x, "voiceFamily", js.undefined)
+      inline def setVoiceFamilyUndefined: Self = StObject.set(x, "voiceFamily", js.undefined)
       
-      @scala.inline
-      def setVoicePitch(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "voicePitch", value.asInstanceOf[js.Any])
+      inline def setVoicePitch(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "voicePitch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVoicePitchUndefined: Self = StObject.set(x, "voicePitch", js.undefined)
+      inline def setVoicePitchUndefined: Self = StObject.set(x, "voicePitch", js.undefined)
       
-      @scala.inline
-      def setVoiceRange(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "voiceRange", value.asInstanceOf[js.Any])
+      inline def setVoiceRange(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "voiceRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVoiceRangeUndefined: Self = StObject.set(x, "voiceRange", js.undefined)
+      inline def setVoiceRangeUndefined: Self = StObject.set(x, "voiceRange", js.undefined)
       
-      @scala.inline
-      def setVoiceRate(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "voiceRate", value.asInstanceOf[js.Any])
+      inline def setVoiceRate(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "voiceRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVoiceRateUndefined: Self = StObject.set(x, "voiceRate", js.undefined)
+      inline def setVoiceRateUndefined: Self = StObject.set(x, "voiceRate", js.undefined)
       
-      @scala.inline
-      def setVoiceStress(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "voiceStress", value.asInstanceOf[js.Any])
+      inline def setVoiceStress(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "voiceStress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVoiceStressUndefined: Self = StObject.set(x, "voiceStress", js.undefined)
+      inline def setVoiceStressUndefined: Self = StObject.set(x, "voiceStress", js.undefined)
       
-      @scala.inline
-      def setVoiceVolume(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "voiceVolume", value.asInstanceOf[js.Any])
+      inline def setVoiceVolume(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "voiceVolume", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVoiceVolumeUndefined: Self = StObject.set(x, "voiceVolume", js.undefined)
+      inline def setVoiceVolumeUndefined: Self = StObject.set(x, "voiceVolume", js.undefined)
       
-      @scala.inline
-      def setWhiteSpace(value: CSSWideKeyword | normal | pre | nowrap | `pre-wrap` | `pre-line`): Self = StObject.set(x, "whiteSpace", value.asInstanceOf[js.Any])
+      inline def setWhiteSpace(value: CSSWideKeyword | normal | pre | nowrap | `pre-wrap` | `pre-line`): Self = StObject.set(x, "whiteSpace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhiteSpaceTreatment(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "whiteSpaceTreatment", value.asInstanceOf[js.Any])
+      inline def setWhiteSpaceTreatment(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "whiteSpaceTreatment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhiteSpaceTreatmentUndefined: Self = StObject.set(x, "whiteSpaceTreatment", js.undefined)
+      inline def setWhiteSpaceTreatmentUndefined: Self = StObject.set(x, "whiteSpaceTreatment", js.undefined)
       
-      @scala.inline
-      def setWhiteSpaceUndefined: Self = StObject.set(x, "whiteSpace", js.undefined)
+      inline def setWhiteSpaceUndefined: Self = StObject.set(x, "whiteSpace", js.undefined)
       
-      @scala.inline
-      def setWidows(value: CSSWideKeyword | Double): Self = StObject.set(x, "widows", value.asInstanceOf[js.Any])
+      inline def setWidows(value: CSSWideKeyword | Double): Self = StObject.set(x, "widows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidowsUndefined: Self = StObject.set(x, "widows", js.undefined)
+      inline def setWidowsUndefined: Self = StObject.set(x, "widows", js.undefined)
       
-      @scala.inline
-      def setWidth(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
       
-      @scala.inline
-      def setWordBreak(value: CSSWideKeyword | normal | `break-all` | `keep-all` | `break-word`): Self = StObject.set(x, "wordBreak", value.asInstanceOf[js.Any])
+      inline def setWordBreak(value: CSSWideKeyword | normal | `break-all` | `keep-all` | `break-word`): Self = StObject.set(x, "wordBreak", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWordBreakUndefined: Self = StObject.set(x, "wordBreak", js.undefined)
+      inline def setWordBreakUndefined: Self = StObject.set(x, "wordBreak", js.undefined)
       
-      @scala.inline
-      def setWordSpacing(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "wordSpacing", value.asInstanceOf[js.Any])
+      inline def setWordSpacing(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "wordSpacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWordSpacingUndefined: Self = StObject.set(x, "wordSpacing", js.undefined)
+      inline def setWordSpacingUndefined: Self = StObject.set(x, "wordSpacing", js.undefined)
       
-      @scala.inline
-      def setWordWrap(value: CSSWideKeyword | normal | `break-word`): Self = StObject.set(x, "wordWrap", value.asInstanceOf[js.Any])
+      inline def setWordWrap(value: CSSWideKeyword | normal | `break-word`): Self = StObject.set(x, "wordWrap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWordWrapUndefined: Self = StObject.set(x, "wordWrap", js.undefined)
+      inline def setWordWrapUndefined: Self = StObject.set(x, "wordWrap", js.undefined)
       
-      @scala.inline
-      def setWrapFlow(value: CSSWideKeyword | auto | both | start | end | maximum | clear): Self = StObject.set(x, "wrapFlow", value.asInstanceOf[js.Any])
+      inline def setWrapFlow(value: CSSWideKeyword | auto | both | start | end | maximum | clear): Self = StObject.set(x, "wrapFlow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapFlowUndefined: Self = StObject.set(x, "wrapFlow", js.undefined)
+      inline def setWrapFlowUndefined: Self = StObject.set(x, "wrapFlow", js.undefined)
       
-      @scala.inline
-      def setWrapMargin(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "wrapMargin", value.asInstanceOf[js.Any])
+      inline def setWrapMargin(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "wrapMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapMarginUndefined: Self = StObject.set(x, "wrapMargin", js.undefined)
+      inline def setWrapMarginUndefined: Self = StObject.set(x, "wrapMargin", js.undefined)
       
-      @scala.inline
-      def setWrapOption(value: CSSWideKeyword | js.Object): Self = StObject.set(x, "wrapOption", value.asInstanceOf[js.Any])
+      inline def setWrapOption(value: CSSWideKeyword | js.Object): Self = StObject.set(x, "wrapOption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapOptionUndefined: Self = StObject.set(x, "wrapOption", js.undefined)
+      inline def setWrapOptionUndefined: Self = StObject.set(x, "wrapOption", js.undefined)
       
-      @scala.inline
-      def setWritingMode(
+      inline def setWritingMode(
         value: CSSWideKeyword | `horizontal-tb` | `vertical-rl` | `vertical-lr` | `sideways-rl` | `sideways-lr`
       ): Self = StObject.set(x, "writingMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWritingModeUndefined: Self = StObject.set(x, "writingMode", js.undefined)
+      inline def setWritingModeUndefined: Self = StObject.set(x, "writingMode", js.undefined)
       
-      @scala.inline
-      def setZIndex(value: CSSWideKeyword | auto | Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+      inline def setZIndex(value: CSSWideKeyword | auto | Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+      inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
       
-      @scala.inline
-      def setZoom(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+      inline def setZoom(value: CSSWideKeyword | String | Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
+      inline def setZoomUndefined: Self = StObject.set(x, "zoom", js.undefined)
     }
   }
   
@@ -3523,8 +2952,7 @@ object cssPropertiesMod {
         ]
   object CSSPropertiesLossy {
     
-    @scala.inline
-    def apply(): CSSPropertiesLossy = {
+    inline def apply(): CSSPropertiesLossy = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CSSPropertiesLossy]
     }
@@ -3705,356 +3133,240 @@ object cssPropertiesMod {
   }
   object CSSPropertiesPseudo {
     
-    @scala.inline
-    def apply(): CSSPropertiesPseudo = {
+    inline def apply(): CSSPropertiesPseudo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CSSPropertiesPseudo]
     }
     
-    @scala.inline
-    implicit class CSSPropertiesPseudoMutableBuilder[Self <: CSSPropertiesPseudo] (val x: Self) extends AnyVal {
+    extension [Self <: CSSPropertiesPseudo](x: Self) {
       
-      @scala.inline
-      def setColonColonafter(value: CSSProperties): Self = StObject.set(x, "::after", value.asInstanceOf[js.Any])
+      inline def setColonColonafter(value: CSSProperties): Self = StObject.set(x, "::after", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonColonafterUndefined: Self = StObject.set(x, "::after", js.undefined)
+      inline def setColonColonafterUndefined: Self = StObject.set(x, "::after", js.undefined)
       
-      @scala.inline
-      def setColonColonbackdrop(value: CSSProperties): Self = StObject.set(x, "::backdrop", value.asInstanceOf[js.Any])
+      inline def setColonColonbackdrop(value: CSSProperties): Self = StObject.set(x, "::backdrop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonColonbackdropUndefined: Self = StObject.set(x, "::backdrop", js.undefined)
+      inline def setColonColonbackdropUndefined: Self = StObject.set(x, "::backdrop", js.undefined)
       
-      @scala.inline
-      def setColonColonbefore(value: CSSProperties): Self = StObject.set(x, "::before", value.asInstanceOf[js.Any])
+      inline def setColonColonbefore(value: CSSProperties): Self = StObject.set(x, "::before", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonColonbeforeUndefined: Self = StObject.set(x, "::before", js.undefined)
+      inline def setColonColonbeforeUndefined: Self = StObject.set(x, "::before", js.undefined)
       
-      @scala.inline
-      def `setColonColonfirst-letter`(value: CSSProperties): Self = StObject.set(x, "::first-letter", value.asInstanceOf[js.Any])
+      inline def `setColonColonfirst-letter`(value: CSSProperties): Self = StObject.set(x, "::first-letter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonColonfirst-letterUndefined`: Self = StObject.set(x, "::first-letter", js.undefined)
+      inline def `setColonColonfirst-letterUndefined`: Self = StObject.set(x, "::first-letter", js.undefined)
       
-      @scala.inline
-      def `setColonColonfirst-line`(value: CSSProperties): Self = StObject.set(x, "::first-line", value.asInstanceOf[js.Any])
+      inline def `setColonColonfirst-line`(value: CSSProperties): Self = StObject.set(x, "::first-line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonColonfirst-lineUndefined`: Self = StObject.set(x, "::first-line", js.undefined)
+      inline def `setColonColonfirst-lineUndefined`: Self = StObject.set(x, "::first-line", js.undefined)
       
-      @scala.inline
-      def setColonColonselection(value: CSSProperties): Self = StObject.set(x, "::selection", value.asInstanceOf[js.Any])
+      inline def setColonColonselection(value: CSSProperties): Self = StObject.set(x, "::selection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonColonselectionUndefined: Self = StObject.set(x, "::selection", js.undefined)
+      inline def setColonColonselectionUndefined: Self = StObject.set(x, "::selection", js.undefined)
       
-      @scala.inline
-      def setColonactive(value: CSSProperties): Self = StObject.set(x, ":active", value.asInstanceOf[js.Any])
+      inline def setColonactive(value: CSSProperties): Self = StObject.set(x, ":active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonactiveUndefined: Self = StObject.set(x, ":active", js.undefined)
+      inline def setColonactiveUndefined: Self = StObject.set(x, ":active", js.undefined)
       
-      @scala.inline
-      def setColonafter(value: CSSProperties): Self = StObject.set(x, ":after", value.asInstanceOf[js.Any])
+      inline def setColonafter(value: CSSProperties): Self = StObject.set(x, ":after", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonafterUndefined: Self = StObject.set(x, ":after", js.undefined)
+      inline def setColonafterUndefined: Self = StObject.set(x, ":after", js.undefined)
       
-      @scala.inline
-      def `setColonany-link`(value: CSSProperties): Self = StObject.set(x, ":any-link", value.asInstanceOf[js.Any])
+      inline def `setColonany-link`(value: CSSProperties): Self = StObject.set(x, ":any-link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonany-linkUndefined`: Self = StObject.set(x, ":any-link", js.undefined)
+      inline def `setColonany-linkUndefined`: Self = StObject.set(x, ":any-link", js.undefined)
       
-      @scala.inline
-      def setColonbefore(value: CSSProperties): Self = StObject.set(x, ":before", value.asInstanceOf[js.Any])
+      inline def setColonbefore(value: CSSProperties): Self = StObject.set(x, ":before", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonbeforeUndefined: Self = StObject.set(x, ":before", js.undefined)
+      inline def setColonbeforeUndefined: Self = StObject.set(x, ":before", js.undefined)
       
-      @scala.inline
-      def setColonchecked(value: CSSProperties): Self = StObject.set(x, ":checked", value.asInstanceOf[js.Any])
+      inline def setColonchecked(value: CSSProperties): Self = StObject.set(x, ":checked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColoncheckedUndefined: Self = StObject.set(x, ":checked", js.undefined)
+      inline def setColoncheckedUndefined: Self = StObject.set(x, ":checked", js.undefined)
       
-      @scala.inline
-      def setColondefault(value: CSSProperties): Self = StObject.set(x, ":default", value.asInstanceOf[js.Any])
+      inline def setColondefault(value: CSSProperties): Self = StObject.set(x, ":default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColondefaultUndefined: Self = StObject.set(x, ":default", js.undefined)
+      inline def setColondefaultUndefined: Self = StObject.set(x, ":default", js.undefined)
       
-      @scala.inline
-      def setColondirLeftparenthesisltrRightparenthesis(value: CSSProperties): Self = StObject.set(x, ":dir(ltr)", value.asInstanceOf[js.Any])
+      inline def setColondirLeftparenthesisltrRightparenthesis(value: CSSProperties): Self = StObject.set(x, ":dir(ltr)", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColondirLeftparenthesisltrRightparenthesisUndefined: Self = StObject.set(x, ":dir(ltr)", js.undefined)
+      inline def setColondirLeftparenthesisltrRightparenthesisUndefined: Self = StObject.set(x, ":dir(ltr)", js.undefined)
       
-      @scala.inline
-      def setColondirLeftparenthesisrtlRightparenthesis(value: CSSProperties): Self = StObject.set(x, ":dir(rtl)", value.asInstanceOf[js.Any])
+      inline def setColondirLeftparenthesisrtlRightparenthesis(value: CSSProperties): Self = StObject.set(x, ":dir(rtl)", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColondirLeftparenthesisrtlRightparenthesisUndefined: Self = StObject.set(x, ":dir(rtl)", js.undefined)
+      inline def setColondirLeftparenthesisrtlRightparenthesisUndefined: Self = StObject.set(x, ":dir(rtl)", js.undefined)
       
-      @scala.inline
-      def setColondisabled(value: CSSProperties): Self = StObject.set(x, ":disabled", value.asInstanceOf[js.Any])
+      inline def setColondisabled(value: CSSProperties): Self = StObject.set(x, ":disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColondisabledUndefined: Self = StObject.set(x, ":disabled", js.undefined)
+      inline def setColondisabledUndefined: Self = StObject.set(x, ":disabled", js.undefined)
       
-      @scala.inline
-      def setColonempty(value: CSSProperties): Self = StObject.set(x, ":empty", value.asInstanceOf[js.Any])
+      inline def setColonempty(value: CSSProperties): Self = StObject.set(x, ":empty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonemptyUndefined: Self = StObject.set(x, ":empty", js.undefined)
+      inline def setColonemptyUndefined: Self = StObject.set(x, ":empty", js.undefined)
       
-      @scala.inline
-      def setColonenabled(value: CSSProperties): Self = StObject.set(x, ":enabled", value.asInstanceOf[js.Any])
+      inline def setColonenabled(value: CSSProperties): Self = StObject.set(x, ":enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonenabledUndefined: Self = StObject.set(x, ":enabled", js.undefined)
+      inline def setColonenabledUndefined: Self = StObject.set(x, ":enabled", js.undefined)
       
-      @scala.inline
-      def setColonfirst(value: CSSProperties): Self = StObject.set(x, ":first", value.asInstanceOf[js.Any])
+      inline def setColonfirst(value: CSSProperties): Self = StObject.set(x, ":first", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonfirst-child`(value: CSSProperties): Self = StObject.set(x, ":first-child", value.asInstanceOf[js.Any])
+      inline def `setColonfirst-child`(value: CSSProperties): Self = StObject.set(x, ":first-child", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonfirst-childUndefined`: Self = StObject.set(x, ":first-child", js.undefined)
+      inline def `setColonfirst-childUndefined`: Self = StObject.set(x, ":first-child", js.undefined)
       
-      @scala.inline
-      def `setColonfirst-letter`(value: CSSProperties): Self = StObject.set(x, ":first-letter", value.asInstanceOf[js.Any])
+      inline def `setColonfirst-letter`(value: CSSProperties): Self = StObject.set(x, ":first-letter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonfirst-letterUndefined`: Self = StObject.set(x, ":first-letter", js.undefined)
+      inline def `setColonfirst-letterUndefined`: Self = StObject.set(x, ":first-letter", js.undefined)
       
-      @scala.inline
-      def `setColonfirst-line`(value: CSSProperties): Self = StObject.set(x, ":first-line", value.asInstanceOf[js.Any])
+      inline def `setColonfirst-line`(value: CSSProperties): Self = StObject.set(x, ":first-line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonfirst-lineUndefined`: Self = StObject.set(x, ":first-line", js.undefined)
+      inline def `setColonfirst-lineUndefined`: Self = StObject.set(x, ":first-line", js.undefined)
       
-      @scala.inline
-      def `setColonfirst-of-type`(value: CSSProperties): Self = StObject.set(x, ":first-of-type", value.asInstanceOf[js.Any])
+      inline def `setColonfirst-of-type`(value: CSSProperties): Self = StObject.set(x, ":first-of-type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonfirst-of-typeUndefined`: Self = StObject.set(x, ":first-of-type", js.undefined)
+      inline def `setColonfirst-of-typeUndefined`: Self = StObject.set(x, ":first-of-type", js.undefined)
       
-      @scala.inline
-      def setColonfirstUndefined: Self = StObject.set(x, ":first", js.undefined)
+      inline def setColonfirstUndefined: Self = StObject.set(x, ":first", js.undefined)
       
-      @scala.inline
-      def setColonfocus(value: CSSProperties): Self = StObject.set(x, ":focus", value.asInstanceOf[js.Any])
+      inline def setColonfocus(value: CSSProperties): Self = StObject.set(x, ":focus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonfocus-within`(value: CSSProperties): Self = StObject.set(x, ":focus-within", value.asInstanceOf[js.Any])
+      inline def `setColonfocus-within`(value: CSSProperties): Self = StObject.set(x, ":focus-within", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonfocus-withinUndefined`: Self = StObject.set(x, ":focus-within", js.undefined)
+      inline def `setColonfocus-withinUndefined`: Self = StObject.set(x, ":focus-within", js.undefined)
       
-      @scala.inline
-      def setColonfocusUndefined: Self = StObject.set(x, ":focus", js.undefined)
+      inline def setColonfocusUndefined: Self = StObject.set(x, ":focus", js.undefined)
       
-      @scala.inline
-      def setColonfullscreen(value: CSSProperties): Self = StObject.set(x, ":fullscreen", value.asInstanceOf[js.Any])
+      inline def setColonfullscreen(value: CSSProperties): Self = StObject.set(x, ":fullscreen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonfullscreenUndefined: Self = StObject.set(x, ":fullscreen", js.undefined)
+      inline def setColonfullscreenUndefined: Self = StObject.set(x, ":fullscreen", js.undefined)
       
-      @scala.inline
-      def setColonhover(value: CSSProperties): Self = StObject.set(x, ":hover", value.asInstanceOf[js.Any])
+      inline def setColonhover(value: CSSProperties): Self = StObject.set(x, ":hover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonhoverUndefined: Self = StObject.set(x, ":hover", js.undefined)
+      inline def setColonhoverUndefined: Self = StObject.set(x, ":hover", js.undefined)
       
-      @scala.inline
-      def `setColonin-range`(value: CSSProperties): Self = StObject.set(x, ":in-range", value.asInstanceOf[js.Any])
+      inline def `setColonin-range`(value: CSSProperties): Self = StObject.set(x, ":in-range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonin-rangeUndefined`: Self = StObject.set(x, ":in-range", js.undefined)
+      inline def `setColonin-rangeUndefined`: Self = StObject.set(x, ":in-range", js.undefined)
       
-      @scala.inline
-      def setColonindeterminate(value: CSSProperties): Self = StObject.set(x, ":indeterminate", value.asInstanceOf[js.Any])
+      inline def setColonindeterminate(value: CSSProperties): Self = StObject.set(x, ":indeterminate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonindeterminateUndefined: Self = StObject.set(x, ":indeterminate", js.undefined)
+      inline def setColonindeterminateUndefined: Self = StObject.set(x, ":indeterminate", js.undefined)
       
-      @scala.inline
-      def setColoninvalid(value: CSSProperties): Self = StObject.set(x, ":invalid", value.asInstanceOf[js.Any])
+      inline def setColoninvalid(value: CSSProperties): Self = StObject.set(x, ":invalid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColoninvalidUndefined: Self = StObject.set(x, ":invalid", js.undefined)
+      inline def setColoninvalidUndefined: Self = StObject.set(x, ":invalid", js.undefined)
       
-      @scala.inline
-      def setColonlangLeftparenthesisdeRightparenthesis(value: CSSProperties): Self = StObject.set(x, ":lang(de)", value.asInstanceOf[js.Any])
+      inline def setColonlangLeftparenthesisdeRightparenthesis(value: CSSProperties): Self = StObject.set(x, ":lang(de)", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonlangLeftparenthesisdeRightparenthesisUndefined: Self = StObject.set(x, ":lang(de)", js.undefined)
+      inline def setColonlangLeftparenthesisdeRightparenthesisUndefined: Self = StObject.set(x, ":lang(de)", js.undefined)
       
-      @scala.inline
-      def setColonlangLeftparenthesisenRightparenthesis(value: CSSProperties): Self = StObject.set(x, ":lang(en)", value.asInstanceOf[js.Any])
+      inline def setColonlangLeftparenthesisenRightparenthesis(value: CSSProperties): Self = StObject.set(x, ":lang(en)", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonlangLeftparenthesisenRightparenthesisUndefined: Self = StObject.set(x, ":lang(en)", js.undefined)
+      inline def setColonlangLeftparenthesisenRightparenthesisUndefined: Self = StObject.set(x, ":lang(en)", js.undefined)
       
-      @scala.inline
-      def setColonlangLeftparenthesisesRightparenthesis(value: CSSProperties): Self = StObject.set(x, ":lang(es)", value.asInstanceOf[js.Any])
+      inline def setColonlangLeftparenthesisesRightparenthesis(value: CSSProperties): Self = StObject.set(x, ":lang(es)", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonlangLeftparenthesisesRightparenthesisUndefined: Self = StObject.set(x, ":lang(es)", js.undefined)
+      inline def setColonlangLeftparenthesisesRightparenthesisUndefined: Self = StObject.set(x, ":lang(es)", js.undefined)
       
-      @scala.inline
-      def setColonlangLeftparenthesisfrRightparenthesis(value: CSSProperties): Self = StObject.set(x, ":lang(fr)", value.asInstanceOf[js.Any])
+      inline def setColonlangLeftparenthesisfrRightparenthesis(value: CSSProperties): Self = StObject.set(x, ":lang(fr)", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonlangLeftparenthesisfrRightparenthesisUndefined: Self = StObject.set(x, ":lang(fr)", js.undefined)
+      inline def setColonlangLeftparenthesisfrRightparenthesisUndefined: Self = StObject.set(x, ":lang(fr)", js.undefined)
       
-      @scala.inline
-      def setColonlangLeftparenthesisruRightparenthesis(value: CSSProperties): Self = StObject.set(x, ":lang(ru)", value.asInstanceOf[js.Any])
+      inline def setColonlangLeftparenthesisruRightparenthesis(value: CSSProperties): Self = StObject.set(x, ":lang(ru)", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonlangLeftparenthesisruRightparenthesisUndefined: Self = StObject.set(x, ":lang(ru)", js.undefined)
+      inline def setColonlangLeftparenthesisruRightparenthesisUndefined: Self = StObject.set(x, ":lang(ru)", js.undefined)
       
-      @scala.inline
-      def setColonlangLeftparenthesiszhRightparenthesis(value: CSSProperties): Self = StObject.set(x, ":lang(zh)", value.asInstanceOf[js.Any])
+      inline def setColonlangLeftparenthesiszhRightparenthesis(value: CSSProperties): Self = StObject.set(x, ":lang(zh)", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonlangLeftparenthesiszhRightparenthesisUndefined: Self = StObject.set(x, ":lang(zh)", js.undefined)
+      inline def setColonlangLeftparenthesiszhRightparenthesisUndefined: Self = StObject.set(x, ":lang(zh)", js.undefined)
       
-      @scala.inline
-      def `setColonlast-child`(value: CSSProperties): Self = StObject.set(x, ":last-child", value.asInstanceOf[js.Any])
+      inline def `setColonlast-child`(value: CSSProperties): Self = StObject.set(x, ":last-child", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonlast-childUndefined`: Self = StObject.set(x, ":last-child", js.undefined)
+      inline def `setColonlast-childUndefined`: Self = StObject.set(x, ":last-child", js.undefined)
       
-      @scala.inline
-      def `setColonlast-of-type`(value: CSSProperties): Self = StObject.set(x, ":last-of-type", value.asInstanceOf[js.Any])
+      inline def `setColonlast-of-type`(value: CSSProperties): Self = StObject.set(x, ":last-of-type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonlast-of-typeUndefined`: Self = StObject.set(x, ":last-of-type", js.undefined)
+      inline def `setColonlast-of-typeUndefined`: Self = StObject.set(x, ":last-of-type", js.undefined)
       
-      @scala.inline
-      def setColonleft(value: CSSProperties): Self = StObject.set(x, ":left", value.asInstanceOf[js.Any])
+      inline def setColonleft(value: CSSProperties): Self = StObject.set(x, ":left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonleftUndefined: Self = StObject.set(x, ":left", js.undefined)
+      inline def setColonleftUndefined: Self = StObject.set(x, ":left", js.undefined)
       
-      @scala.inline
-      def setColonlink(value: CSSProperties): Self = StObject.set(x, ":link", value.asInstanceOf[js.Any])
+      inline def setColonlink(value: CSSProperties): Self = StObject.set(x, ":link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonlinkUndefined: Self = StObject.set(x, ":link", js.undefined)
+      inline def setColonlinkUndefined: Self = StObject.set(x, ":link", js.undefined)
       
-      @scala.inline
-      def `setColonnth-childLeftparenthesisevenRightparenthesis`(value: CSSProperties): Self = StObject.set(x, ":nth-child(even)", value.asInstanceOf[js.Any])
+      inline def `setColonnth-childLeftparenthesisevenRightparenthesis`(value: CSSProperties): Self = StObject.set(x, ":nth-child(even)", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonnth-childLeftparenthesisevenRightparenthesisUndefined`: Self = StObject.set(x, ":nth-child(even)", js.undefined)
+      inline def `setColonnth-childLeftparenthesisevenRightparenthesisUndefined`: Self = StObject.set(x, ":nth-child(even)", js.undefined)
       
-      @scala.inline
-      def `setColonnth-childLeftparenthesisoddRightparenthesis`(value: CSSProperties): Self = StObject.set(x, ":nth-child(odd)", value.asInstanceOf[js.Any])
+      inline def `setColonnth-childLeftparenthesisoddRightparenthesis`(value: CSSProperties): Self = StObject.set(x, ":nth-child(odd)", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonnth-childLeftparenthesisoddRightparenthesisUndefined`: Self = StObject.set(x, ":nth-child(odd)", js.undefined)
+      inline def `setColonnth-childLeftparenthesisoddRightparenthesisUndefined`: Self = StObject.set(x, ":nth-child(odd)", js.undefined)
       
-      @scala.inline
-      def `setColonnth-last-childLeftparenthesisevenRightparenthesis`(value: CSSProperties): Self = StObject.set(x, ":nth-last-child(even)", value.asInstanceOf[js.Any])
+      inline def `setColonnth-last-childLeftparenthesisevenRightparenthesis`(value: CSSProperties): Self = StObject.set(x, ":nth-last-child(even)", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonnth-last-childLeftparenthesisevenRightparenthesisUndefined`: Self = StObject.set(x, ":nth-last-child(even)", js.undefined)
+      inline def `setColonnth-last-childLeftparenthesisevenRightparenthesisUndefined`: Self = StObject.set(x, ":nth-last-child(even)", js.undefined)
       
-      @scala.inline
-      def `setColonnth-last-childLeftparenthesisoddRightparenthesis`(value: CSSProperties): Self = StObject.set(x, ":nth-last-child(odd)", value.asInstanceOf[js.Any])
+      inline def `setColonnth-last-childLeftparenthesisoddRightparenthesis`(value: CSSProperties): Self = StObject.set(x, ":nth-last-child(odd)", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonnth-last-childLeftparenthesisoddRightparenthesisUndefined`: Self = StObject.set(x, ":nth-last-child(odd)", js.undefined)
+      inline def `setColonnth-last-childLeftparenthesisoddRightparenthesisUndefined`: Self = StObject.set(x, ":nth-last-child(odd)", js.undefined)
       
-      @scala.inline
-      def `setColononly-child`(value: CSSProperties): Self = StObject.set(x, ":only-child", value.asInstanceOf[js.Any])
+      inline def `setColononly-child`(value: CSSProperties): Self = StObject.set(x, ":only-child", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColononly-childUndefined`: Self = StObject.set(x, ":only-child", js.undefined)
+      inline def `setColononly-childUndefined`: Self = StObject.set(x, ":only-child", js.undefined)
       
-      @scala.inline
-      def `setColononly-of-type`(value: CSSProperties): Self = StObject.set(x, ":only-of-type", value.asInstanceOf[js.Any])
+      inline def `setColononly-of-type`(value: CSSProperties): Self = StObject.set(x, ":only-of-type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColononly-of-typeUndefined`: Self = StObject.set(x, ":only-of-type", js.undefined)
+      inline def `setColononly-of-typeUndefined`: Self = StObject.set(x, ":only-of-type", js.undefined)
       
-      @scala.inline
-      def setColonoptional(value: CSSProperties): Self = StObject.set(x, ":optional", value.asInstanceOf[js.Any])
+      inline def setColonoptional(value: CSSProperties): Self = StObject.set(x, ":optional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonoptionalUndefined: Self = StObject.set(x, ":optional", js.undefined)
+      inline def setColonoptionalUndefined: Self = StObject.set(x, ":optional", js.undefined)
       
-      @scala.inline
-      def `setColonout-of-range`(value: CSSProperties): Self = StObject.set(x, ":out-of-range", value.asInstanceOf[js.Any])
+      inline def `setColonout-of-range`(value: CSSProperties): Self = StObject.set(x, ":out-of-range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonout-of-rangeUndefined`: Self = StObject.set(x, ":out-of-range", js.undefined)
+      inline def `setColonout-of-rangeUndefined`: Self = StObject.set(x, ":out-of-range", js.undefined)
       
-      @scala.inline
-      def `setColonplaceholder-shown`(value: CSSProperties): Self = StObject.set(x, ":placeholder-shown", value.asInstanceOf[js.Any])
+      inline def `setColonplaceholder-shown`(value: CSSProperties): Self = StObject.set(x, ":placeholder-shown", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonplaceholder-shownUndefined`: Self = StObject.set(x, ":placeholder-shown", js.undefined)
+      inline def `setColonplaceholder-shownUndefined`: Self = StObject.set(x, ":placeholder-shown", js.undefined)
       
-      @scala.inline
-      def `setColonread-only`(value: CSSProperties): Self = StObject.set(x, ":read-only", value.asInstanceOf[js.Any])
+      inline def `setColonread-only`(value: CSSProperties): Self = StObject.set(x, ":read-only", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonread-onlyUndefined`: Self = StObject.set(x, ":read-only", js.undefined)
+      inline def `setColonread-onlyUndefined`: Self = StObject.set(x, ":read-only", js.undefined)
       
-      @scala.inline
-      def `setColonread-write`(value: CSSProperties): Self = StObject.set(x, ":read-write", value.asInstanceOf[js.Any])
+      inline def `setColonread-write`(value: CSSProperties): Self = StObject.set(x, ":read-write", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setColonread-writeUndefined`: Self = StObject.set(x, ":read-write", js.undefined)
+      inline def `setColonread-writeUndefined`: Self = StObject.set(x, ":read-write", js.undefined)
       
-      @scala.inline
-      def setColonrequired(value: CSSProperties): Self = StObject.set(x, ":required", value.asInstanceOf[js.Any])
+      inline def setColonrequired(value: CSSProperties): Self = StObject.set(x, ":required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonrequiredUndefined: Self = StObject.set(x, ":required", js.undefined)
+      inline def setColonrequiredUndefined: Self = StObject.set(x, ":required", js.undefined)
       
-      @scala.inline
-      def setColonright(value: CSSProperties): Self = StObject.set(x, ":right", value.asInstanceOf[js.Any])
+      inline def setColonright(value: CSSProperties): Self = StObject.set(x, ":right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonrightUndefined: Self = StObject.set(x, ":right", js.undefined)
+      inline def setColonrightUndefined: Self = StObject.set(x, ":right", js.undefined)
       
-      @scala.inline
-      def setColonroot(value: CSSProperties): Self = StObject.set(x, ":root", value.asInstanceOf[js.Any])
+      inline def setColonroot(value: CSSProperties): Self = StObject.set(x, ":root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonrootUndefined: Self = StObject.set(x, ":root", js.undefined)
+      inline def setColonrootUndefined: Self = StObject.set(x, ":root", js.undefined)
       
-      @scala.inline
-      def setColonscope(value: CSSProperties): Self = StObject.set(x, ":scope", value.asInstanceOf[js.Any])
+      inline def setColonscope(value: CSSProperties): Self = StObject.set(x, ":scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonscopeUndefined: Self = StObject.set(x, ":scope", js.undefined)
+      inline def setColonscopeUndefined: Self = StObject.set(x, ":scope", js.undefined)
       
-      @scala.inline
-      def setColontarget(value: CSSProperties): Self = StObject.set(x, ":target", value.asInstanceOf[js.Any])
+      inline def setColontarget(value: CSSProperties): Self = StObject.set(x, ":target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColontargetUndefined: Self = StObject.set(x, ":target", js.undefined)
+      inline def setColontargetUndefined: Self = StObject.set(x, ":target", js.undefined)
       
-      @scala.inline
-      def setColonvalid(value: CSSProperties): Self = StObject.set(x, ":valid", value.asInstanceOf[js.Any])
+      inline def setColonvalid(value: CSSProperties): Self = StObject.set(x, ":valid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonvalidUndefined: Self = StObject.set(x, ":valid", js.undefined)
+      inline def setColonvalidUndefined: Self = StObject.set(x, ":valid", js.undefined)
       
-      @scala.inline
-      def setColonvisited(value: CSSProperties): Self = StObject.set(x, ":visited", value.asInstanceOf[js.Any])
+      inline def setColonvisited(value: CSSProperties): Self = StObject.set(x, ":visited", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColonvisitedUndefined: Self = StObject.set(x, ":visited", js.undefined)
+      inline def setColonvisitedUndefined: Self = StObject.set(x, ":visited", js.undefined)
     }
   }
   
@@ -4069,13 +3381,10 @@ object cssPropertiesMod {
   trait CSSWideKeyword extends StObject
   object CSSWideKeyword {
     
-    @scala.inline
-    def inherit: typings.aphrodite.aphroditeStrings.inherit = "inherit".asInstanceOf[typings.aphrodite.aphroditeStrings.inherit]
+    inline def inherit: typings.aphrodite.aphroditeStrings.inherit = "inherit".asInstanceOf[typings.aphrodite.aphroditeStrings.inherit]
     
-    @scala.inline
-    def initial: typings.aphrodite.aphroditeStrings.initial = "initial".asInstanceOf[typings.aphrodite.aphroditeStrings.initial]
+    inline def initial: typings.aphrodite.aphroditeStrings.initial = "initial".asInstanceOf[typings.aphrodite.aphroditeStrings.initial]
     
-    @scala.inline
-    def unset: typings.aphrodite.aphroditeStrings.unset = "unset".asInstanceOf[typings.aphrodite.aphroditeStrings.unset]
+    inline def unset: typings.aphrodite.aphroditeStrings.unset = "unset".asInstanceOf[typings.aphrodite.aphroditeStrings.unset]
   }
 }

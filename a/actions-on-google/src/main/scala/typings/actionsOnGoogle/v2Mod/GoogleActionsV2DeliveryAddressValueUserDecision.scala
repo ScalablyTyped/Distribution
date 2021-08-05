@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GoogleActionsV2DeliveryAddressValueUserDecision extends StObject
 object GoogleActionsV2DeliveryAddressValueUserDecision {
   
-  @scala.inline
-  def ACCEPTED: typings.actionsOnGoogle.actionsOnGoogleStrings.ACCEPTED = "ACCEPTED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.ACCEPTED]
+  inline def ACCEPTED: typings.actionsOnGoogle.actionsOnGoogleStrings.ACCEPTED = "ACCEPTED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.ACCEPTED]
   
-  @scala.inline
-  def REJECTED: typings.actionsOnGoogle.actionsOnGoogleStrings.REJECTED = "REJECTED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.REJECTED]
+  inline def REJECTED: typings.actionsOnGoogle.actionsOnGoogleStrings.REJECTED = "REJECTED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.REJECTED]
   
-  @scala.inline
-  def UNKNOWN_USER_DECISION: typings.actionsOnGoogle.actionsOnGoogleStrings.UNKNOWN_USER_DECISION = "UNKNOWN_USER_DECISION".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.UNKNOWN_USER_DECISION]
+  inline def UNKNOWN_USER_DECISION: typings.actionsOnGoogle.actionsOnGoogleStrings.UNKNOWN_USER_DECISION = "UNKNOWN_USER_DECISION".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.UNKNOWN_USER_DECISION]
 }

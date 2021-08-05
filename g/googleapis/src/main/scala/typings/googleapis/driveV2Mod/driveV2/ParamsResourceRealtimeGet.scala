@@ -31,31 +31,23 @@ trait ParamsResourceRealtimeGet
 }
 object ParamsResourceRealtimeGet {
   
-  @scala.inline
-  def apply(): ParamsResourceRealtimeGet = {
+  inline def apply(): ParamsResourceRealtimeGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceRealtimeGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceRealtimeGetMutableBuilder[Self <: ParamsResourceRealtimeGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceRealtimeGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
+    inline def setFileId(value: String): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
+    inline def setFileIdUndefined: Self = StObject.set(x, "fileId", js.undefined)
     
-    @scala.inline
-    def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
+    inline def setRevision(value: Double): Self = StObject.set(x, "revision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionUndefined: Self = StObject.set(x, "revision", js.undefined)
+    inline def setRevisionUndefined: Self = StObject.set(x, "revision", js.undefined)
   }
 }

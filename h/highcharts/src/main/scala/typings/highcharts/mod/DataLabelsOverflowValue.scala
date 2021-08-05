@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DataLabelsOverflowValue extends StObject
 object DataLabelsOverflowValue {
   
-  @scala.inline
-  def allow: typings.highcharts.highchartsStrings.allow = "allow".asInstanceOf[typings.highcharts.highchartsStrings.allow]
+  inline def allow: typings.highcharts.highchartsStrings.allow = "allow".asInstanceOf[typings.highcharts.highchartsStrings.allow]
   
-  @scala.inline
-  def justify: typings.highcharts.highchartsStrings.justify = "justify".asInstanceOf[typings.highcharts.highchartsStrings.justify]
+  inline def justify: typings.highcharts.highchartsStrings.justify = "justify".asInstanceOf[typings.highcharts.highchartsStrings.justify]
 }

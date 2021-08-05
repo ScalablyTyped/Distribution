@@ -35,91 +35,63 @@ trait NgBootboxDialog extends StObject {
 }
 object NgBootboxDialog {
   
-  @scala.inline
-  def apply(): NgBootboxDialog = {
+  inline def apply(): NgBootboxDialog = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NgBootboxDialog]
   }
   
-  @scala.inline
-  implicit class NgBootboxDialogMutableBuilder[Self <: NgBootboxDialog] (val x: Self) extends AnyVal {
+  extension [Self <: NgBootboxDialog](x: Self) {
     
-    @scala.inline
-    def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+    inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
-    @scala.inline
-    def setBackdrop(value: Boolean): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
+    inline def setBackdrop(value: Boolean): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackdropUndefined: Self = StObject.set(x, "backdrop", js.undefined)
+    inline def setBackdropUndefined: Self = StObject.set(x, "backdrop", js.undefined)
     
-    @scala.inline
-    def setButtons(value: BootboxButtonMap): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: BootboxButtonMap): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+    inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    @scala.inline
-    def setCallback(value: () => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+    inline def setCallback(value: () => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setCloseButton(value: Boolean): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
+    inline def setCloseButton(value: Boolean): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloseButtonUndefined: Self = StObject.set(x, "closeButton", js.undefined)
+    inline def setCloseButtonUndefined: Self = StObject.set(x, "closeButton", js.undefined)
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setOnEscape(value: () => js.Any | Boolean): Self = StObject.set(x, "onEscape", js.Any.fromFunction0(value))
+    inline def setOnEscape(value: () => js.Any | Boolean): Self = StObject.set(x, "onEscape", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnEscapeUndefined: Self = StObject.set(x, "onEscape", js.undefined)
+    inline def setOnEscapeUndefined: Self = StObject.set(x, "onEscape", js.undefined)
     
-    @scala.inline
-    def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
+    inline def setShowUndefined: Self = StObject.set(x, "show", js.undefined)
     
-    @scala.inline
-    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
+    inline def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
+    inline def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

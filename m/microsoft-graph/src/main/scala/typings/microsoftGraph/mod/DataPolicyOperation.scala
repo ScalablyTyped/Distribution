@@ -34,58 +34,41 @@ trait DataPolicyOperation
 }
 object DataPolicyOperation {
   
-  @scala.inline
-  def apply(): DataPolicyOperation = {
+  inline def apply(): DataPolicyOperation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataPolicyOperation]
   }
   
-  @scala.inline
-  implicit class DataPolicyOperationMutableBuilder[Self <: DataPolicyOperation] (val x: Self) extends AnyVal {
+  extension [Self <: DataPolicyOperation](x: Self) {
     
-    @scala.inline
-    def setCompletedDateTime(value: NullableOption[String]): Self = StObject.set(x, "completedDateTime", value.asInstanceOf[js.Any])
+    inline def setCompletedDateTime(value: NullableOption[String]): Self = StObject.set(x, "completedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletedDateTimeNull: Self = StObject.set(x, "completedDateTime", null)
+    inline def setCompletedDateTimeNull: Self = StObject.set(x, "completedDateTime", null)
     
-    @scala.inline
-    def setCompletedDateTimeUndefined: Self = StObject.set(x, "completedDateTime", js.undefined)
+    inline def setCompletedDateTimeUndefined: Self = StObject.set(x, "completedDateTime", js.undefined)
     
-    @scala.inline
-    def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: Double): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+    inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
-    @scala.inline
-    def setStatus(value: NullableOption[DataPolicyOperationStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: NullableOption[DataPolicyOperationStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusNull: Self = StObject.set(x, "status", null)
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setStorageLocation(value: NullableOption[String]): Self = StObject.set(x, "storageLocation", value.asInstanceOf[js.Any])
+    inline def setStorageLocation(value: NullableOption[String]): Self = StObject.set(x, "storageLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStorageLocationNull: Self = StObject.set(x, "storageLocation", null)
+    inline def setStorageLocationNull: Self = StObject.set(x, "storageLocation", null)
     
-    @scala.inline
-    def setStorageLocationUndefined: Self = StObject.set(x, "storageLocation", js.undefined)
+    inline def setStorageLocationUndefined: Self = StObject.set(x, "storageLocation", js.undefined)
     
-    @scala.inline
-    def setSubmittedDateTime(value: String): Self = StObject.set(x, "submittedDateTime", value.asInstanceOf[js.Any])
+    inline def setSubmittedDateTime(value: String): Self = StObject.set(x, "submittedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmittedDateTimeUndefined: Self = StObject.set(x, "submittedDateTime", js.undefined)
+    inline def setSubmittedDateTimeUndefined: Self = StObject.set(x, "submittedDateTime", js.undefined)
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

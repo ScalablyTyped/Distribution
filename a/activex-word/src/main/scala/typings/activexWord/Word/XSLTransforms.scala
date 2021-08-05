@@ -21,6 +21,6 @@ trait XSLTransforms extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("Word.XSLTransforms_typekey")
+  /* private */ @JSName("Word.XSLTransforms_typekey")
   var WordDotXSLTransforms_typekey: XSLTransforms = js.native
 }

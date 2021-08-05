@@ -51,55 +51,39 @@ trait SchemaPlayerAchievement extends StObject {
 }
 object SchemaPlayerAchievement {
   
-  @scala.inline
-  def apply(): SchemaPlayerAchievement = {
+  inline def apply(): SchemaPlayerAchievement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPlayerAchievement]
   }
   
-  @scala.inline
-  implicit class SchemaPlayerAchievementMutableBuilder[Self <: SchemaPlayerAchievement] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPlayerAchievement](x: Self) {
     
-    @scala.inline
-    def setAchievementState(value: String): Self = StObject.set(x, "achievementState", value.asInstanceOf[js.Any])
+    inline def setAchievementState(value: String): Self = StObject.set(x, "achievementState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAchievementStateUndefined: Self = StObject.set(x, "achievementState", js.undefined)
+    inline def setAchievementStateUndefined: Self = StObject.set(x, "achievementState", js.undefined)
     
-    @scala.inline
-    def setCurrentSteps(value: Double): Self = StObject.set(x, "currentSteps", value.asInstanceOf[js.Any])
+    inline def setCurrentSteps(value: Double): Self = StObject.set(x, "currentSteps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentStepsUndefined: Self = StObject.set(x, "currentSteps", js.undefined)
+    inline def setCurrentStepsUndefined: Self = StObject.set(x, "currentSteps", js.undefined)
     
-    @scala.inline
-    def setExperiencePoints(value: String): Self = StObject.set(x, "experiencePoints", value.asInstanceOf[js.Any])
+    inline def setExperiencePoints(value: String): Self = StObject.set(x, "experiencePoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExperiencePointsUndefined: Self = StObject.set(x, "experiencePoints", js.undefined)
+    inline def setExperiencePointsUndefined: Self = StObject.set(x, "experiencePoints", js.undefined)
     
-    @scala.inline
-    def setFormattedCurrentStepsString(value: String): Self = StObject.set(x, "formattedCurrentStepsString", value.asInstanceOf[js.Any])
+    inline def setFormattedCurrentStepsString(value: String): Self = StObject.set(x, "formattedCurrentStepsString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattedCurrentStepsStringUndefined: Self = StObject.set(x, "formattedCurrentStepsString", js.undefined)
+    inline def setFormattedCurrentStepsStringUndefined: Self = StObject.set(x, "formattedCurrentStepsString", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedTimestamp(value: String): Self = StObject.set(x, "lastUpdatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTimestamp(value: String): Self = StObject.set(x, "lastUpdatedTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedTimestampUndefined: Self = StObject.set(x, "lastUpdatedTimestamp", js.undefined)
+    inline def setLastUpdatedTimestampUndefined: Self = StObject.set(x, "lastUpdatedTimestamp", js.undefined)
   }
 }

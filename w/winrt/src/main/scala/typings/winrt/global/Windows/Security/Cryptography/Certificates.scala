@@ -24,11 +24,9 @@ object Certificates {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createRequestAsync(request: typings.winrt.Windows.Security.Cryptography.Certificates.CertificateRequestProperties): IAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRequestAsync")(request.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[String]]
+    inline def createRequestAsync(request: typings.winrt.Windows.Security.Cryptography.Certificates.CertificateRequestProperties): IAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRequestAsync")(request.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[String]]
     
-    @scala.inline
-    def importPfxDataAsync(
+    inline def importPfxDataAsync(
       pfxData: String,
       password: String,
       exportable: ExportOption,
@@ -37,8 +35,7 @@ object Certificates {
       friendlyName: String
     ): IAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("importPfxDataAsync")(pfxData.asInstanceOf[js.Any], password.asInstanceOf[js.Any], exportable.asInstanceOf[js.Any], keyProtectionLevel.asInstanceOf[js.Any], installOption.asInstanceOf[js.Any], friendlyName.asInstanceOf[js.Any])).asInstanceOf[IAsyncAction]
     
-    @scala.inline
-    def installCertificateAsync(certificate: String, installOption: InstallOptions): IAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("installCertificateAsync")(certificate.asInstanceOf[js.Any], installOption.asInstanceOf[js.Any])).asInstanceOf[IAsyncAction]
+    inline def installCertificateAsync(certificate: String, installOption: InstallOptions): IAsyncAction = (^.asInstanceOf[js.Dynamic].applyDynamic("installCertificateAsync")(certificate.asInstanceOf[js.Any], installOption.asInstanceOf[js.Any])).asInstanceOf[IAsyncAction]
   }
   
   @JSGlobal("Windows.Security.Cryptography.Certificates.CertificateRequestProperties")
@@ -134,50 +131,42 @@ object Certificates {
     @JSGlobal("Windows.Security.Cryptography.Certificates.KeyAlgorithmNames.dsa")
     @js.native
     def dsa: String = js.native
-    @scala.inline
-    def dsa_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dsa")(x.asInstanceOf[js.Any])
+    inline def dsa_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dsa")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Certificates.KeyAlgorithmNames.ecdh256")
     @js.native
     def ecdh256: String = js.native
-    @scala.inline
-    def ecdh256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdh256")(x.asInstanceOf[js.Any])
+    inline def ecdh256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdh256")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Certificates.KeyAlgorithmNames.ecdh384")
     @js.native
     def ecdh384: String = js.native
-    @scala.inline
-    def ecdh384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdh384")(x.asInstanceOf[js.Any])
+    inline def ecdh384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdh384")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Certificates.KeyAlgorithmNames.ecdh521")
     @js.native
     def ecdh521: String = js.native
-    @scala.inline
-    def ecdh521_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdh521")(x.asInstanceOf[js.Any])
+    inline def ecdh521_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdh521")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Certificates.KeyAlgorithmNames.ecdsa256")
     @js.native
     def ecdsa256: String = js.native
-    @scala.inline
-    def ecdsa256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdsa256")(x.asInstanceOf[js.Any])
+    inline def ecdsa256_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdsa256")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Certificates.KeyAlgorithmNames.ecdsa384")
     @js.native
     def ecdsa384: String = js.native
-    @scala.inline
-    def ecdsa384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdsa384")(x.asInstanceOf[js.Any])
+    inline def ecdsa384_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdsa384")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Certificates.KeyAlgorithmNames.ecdsa521")
     @js.native
     def ecdsa521: String = js.native
-    @scala.inline
-    def ecdsa521_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdsa521")(x.asInstanceOf[js.Any])
+    inline def ecdsa521_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ecdsa521")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Certificates.KeyAlgorithmNames.rsa")
     @js.native
     def rsa: String = js.native
-    @scala.inline
-    def rsa_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rsa")(x.asInstanceOf[js.Any])
+    inline def rsa_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rsa")(x.asInstanceOf[js.Any])
   }
   
   @JSGlobal("Windows.Security.Cryptography.Certificates.KeyProtectionLevel")
@@ -225,19 +214,16 @@ object Certificates {
     @JSGlobal("Windows.Security.Cryptography.Certificates.KeyStorageProviderNames.platformKeyStorageProvider")
     @js.native
     def platformKeyStorageProvider: String = js.native
-    @scala.inline
-    def platformKeyStorageProvider_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("platformKeyStorageProvider")(x.asInstanceOf[js.Any])
+    inline def platformKeyStorageProvider_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("platformKeyStorageProvider")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Certificates.KeyStorageProviderNames.smartcardKeyStorageProvider")
     @js.native
     def smartcardKeyStorageProvider: String = js.native
-    @scala.inline
-    def smartcardKeyStorageProvider_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("smartcardKeyStorageProvider")(x.asInstanceOf[js.Any])
+    inline def smartcardKeyStorageProvider_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("smartcardKeyStorageProvider")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Windows.Security.Cryptography.Certificates.KeyStorageProviderNames.softwareKeyStorageProvider")
     @js.native
     def softwareKeyStorageProvider: String = js.native
-    @scala.inline
-    def softwareKeyStorageProvider_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("softwareKeyStorageProvider")(x.asInstanceOf[js.Any])
+    inline def softwareKeyStorageProvider_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("softwareKeyStorageProvider")(x.asInstanceOf[js.Any])
   }
 }

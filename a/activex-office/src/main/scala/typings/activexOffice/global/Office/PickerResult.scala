@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.PickerResult")
 @js.native
-class PickerResult protected ()
+/* private */ class PickerResult ()
   extends StObject
      with typings.activexOffice.Office.PickerResult {
   
@@ -35,7 +35,7 @@ class PickerResult protected ()
   /* CompleteClass */
   var ItemData: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.PickerResult_typekey")
   var OfficeDotPickerResult_typekey: typings.activexOffice.Office.PickerResult = js.native
   

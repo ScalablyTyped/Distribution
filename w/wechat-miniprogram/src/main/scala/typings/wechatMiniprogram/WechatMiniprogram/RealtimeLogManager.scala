@@ -57,8 +57,7 @@ trait RealtimeLogManager extends StObject {
 }
 object RealtimeLogManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addFilterMsg: String => Unit,
     error: /* repeated */ js.Any => Unit,
     in: TrivialInstance => Unit,
@@ -70,25 +69,18 @@ object RealtimeLogManager {
     __obj.asInstanceOf[RealtimeLogManager]
   }
   
-  @scala.inline
-  implicit class RealtimeLogManagerMutableBuilder[Self <: RealtimeLogManager] (val x: Self) extends AnyVal {
+  extension [Self <: RealtimeLogManager](x: Self) {
     
-    @scala.inline
-    def setAddFilterMsg(value: String => Unit): Self = StObject.set(x, "addFilterMsg", js.Any.fromFunction1(value))
+    inline def setAddFilterMsg(value: String => Unit): Self = StObject.set(x, "addFilterMsg", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIn(value: TrivialInstance => Unit): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
+    inline def setIn(value: TrivialInstance => Unit): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInfo(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
+    inline def setInfo(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFilterMsg(value: String => Unit): Self = StObject.set(x, "setFilterMsg", js.Any.fromFunction1(value))
+    inline def setSetFilterMsg(value: String => Unit): Self = StObject.set(x, "setFilterMsg", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWarn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+    inline def setWarn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
   }
 }

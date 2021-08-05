@@ -18,22 +18,17 @@ trait TagRoleRequest extends StObject {
 }
 object TagRoleRequest {
   
-  @scala.inline
-  def apply(RoleName: roleNameType, Tags: tagListType): TagRoleRequest = {
+  inline def apply(RoleName: roleNameType, Tags: tagListType): TagRoleRequest = {
     val __obj = js.Dynamic.literal(RoleName = RoleName.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[TagRoleRequest]
   }
   
-  @scala.inline
-  implicit class TagRoleRequestMutableBuilder[Self <: TagRoleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TagRoleRequest](x: Self) {
     
-    @scala.inline
-    def setRoleName(value: roleNameType): Self = StObject.set(x, "RoleName", value.asInstanceOf[js.Any])
+    inline def setRoleName(value: roleNameType): Self = StObject.set(x, "RoleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: tagListType): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: tagListType): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

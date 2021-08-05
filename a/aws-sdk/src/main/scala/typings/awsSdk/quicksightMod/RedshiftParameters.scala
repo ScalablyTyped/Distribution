@@ -28,34 +28,25 @@ trait RedshiftParameters extends StObject {
 }
 object RedshiftParameters {
   
-  @scala.inline
-  def apply(Database: Database): RedshiftParameters = {
+  inline def apply(Database: Database): RedshiftParameters = {
     val __obj = js.Dynamic.literal(Database = Database.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedshiftParameters]
   }
   
-  @scala.inline
-  implicit class RedshiftParametersMutableBuilder[Self <: RedshiftParameters] (val x: Self) extends AnyVal {
+  extension [Self <: RedshiftParameters](x: Self) {
     
-    @scala.inline
-    def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
+    inline def setClusterId(value: ClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterIdUndefined: Self = StObject.set(x, "ClusterId", js.undefined)
+    inline def setClusterIdUndefined: Self = StObject.set(x, "ClusterId", js.undefined)
     
-    @scala.inline
-    def setDatabase(value: Database): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
+    inline def setDatabase(value: Database): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHost(value: Host): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
+    inline def setHost(value: Host): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "Host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "Host", js.undefined)
     
-    @scala.inline
-    def setPort(value: OptionalPort): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
+    inline def setPort(value: OptionalPort): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
   }
 }

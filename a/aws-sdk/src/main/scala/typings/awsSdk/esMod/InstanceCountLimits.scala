@@ -12,25 +12,19 @@ trait InstanceCountLimits extends StObject {
 }
 object InstanceCountLimits {
   
-  @scala.inline
-  def apply(): InstanceCountLimits = {
+  inline def apply(): InstanceCountLimits = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceCountLimits]
   }
   
-  @scala.inline
-  implicit class InstanceCountLimitsMutableBuilder[Self <: InstanceCountLimits] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceCountLimits](x: Self) {
     
-    @scala.inline
-    def setMaximumInstanceCount(value: MaximumInstanceCount): Self = StObject.set(x, "MaximumInstanceCount", value.asInstanceOf[js.Any])
+    inline def setMaximumInstanceCount(value: MaximumInstanceCount): Self = StObject.set(x, "MaximumInstanceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumInstanceCountUndefined: Self = StObject.set(x, "MaximumInstanceCount", js.undefined)
+    inline def setMaximumInstanceCountUndefined: Self = StObject.set(x, "MaximumInstanceCount", js.undefined)
     
-    @scala.inline
-    def setMinimumInstanceCount(value: MinimumInstanceCount): Self = StObject.set(x, "MinimumInstanceCount", value.asInstanceOf[js.Any])
+    inline def setMinimumInstanceCount(value: MinimumInstanceCount): Self = StObject.set(x, "MinimumInstanceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumInstanceCountUndefined: Self = StObject.set(x, "MinimumInstanceCount", js.undefined)
+    inline def setMinimumInstanceCountUndefined: Self = StObject.set(x, "MinimumInstanceCount", js.undefined)
   }
 }

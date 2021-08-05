@@ -18,40 +18,29 @@ trait Options
 }
 object Options {
   
-  @scala.inline
-  def apply(consumer_key: String, consumer_secret: String): Options = {
+  inline def apply(consumer_key: String, consumer_secret: String): Options = {
     val __obj = js.Dynamic.literal(consumer_key = consumer_key.asInstanceOf[js.Any], consumer_secret = consumer_secret.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
   
-  @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+  extension [Self <: Options](x: Self) {
     
-    @scala.inline
-    def setApp_only_auth(value: Boolean): Self = StObject.set(x, "app_only_auth", value.asInstanceOf[js.Any])
+    inline def setApp_only_auth(value: Boolean): Self = StObject.set(x, "app_only_auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApp_only_authUndefined: Self = StObject.set(x, "app_only_auth", js.undefined)
+    inline def setApp_only_authUndefined: Self = StObject.set(x, "app_only_auth", js.undefined)
     
-    @scala.inline
-    def setStrictSSL(value: Boolean): Self = StObject.set(x, "strictSSL", value.asInstanceOf[js.Any])
+    inline def setStrictSSL(value: Boolean): Self = StObject.set(x, "strictSSL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrictSSLUndefined: Self = StObject.set(x, "strictSSL", js.undefined)
+    inline def setStrictSSLUndefined: Self = StObject.set(x, "strictSSL", js.undefined)
     
-    @scala.inline
-    def setTimeout_ms(value: Double): Self = StObject.set(x, "timeout_ms", value.asInstanceOf[js.Any])
+    inline def setTimeout_ms(value: Double): Self = StObject.set(x, "timeout_ms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout_msUndefined: Self = StObject.set(x, "timeout_ms", js.undefined)
+    inline def setTimeout_msUndefined: Self = StObject.set(x, "timeout_ms", js.undefined)
     
-    @scala.inline
-    def setTrusted_cert_fingerprints(value: js.Array[String]): Self = StObject.set(x, "trusted_cert_fingerprints", value.asInstanceOf[js.Any])
+    inline def setTrusted_cert_fingerprints(value: js.Array[String]): Self = StObject.set(x, "trusted_cert_fingerprints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrusted_cert_fingerprintsUndefined: Self = StObject.set(x, "trusted_cert_fingerprints", js.undefined)
+    inline def setTrusted_cert_fingerprintsUndefined: Self = StObject.set(x, "trusted_cert_fingerprints", js.undefined)
     
-    @scala.inline
-    def setTrusted_cert_fingerprintsVarargs(value: String*): Self = StObject.set(x, "trusted_cert_fingerprints", js.Array(value :_*))
+    inline def setTrusted_cert_fingerprintsVarargs(value: String*): Self = StObject.set(x, "trusted_cert_fingerprints", js.Array(value :_*))
   }
 }

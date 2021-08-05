@@ -32,8 +32,7 @@ trait OpenedFileInfo extends StObject {
 }
 object OpenedFileInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     filePath: String,
     mode: ToStringLiteral[
       READ, 
@@ -49,14 +48,11 @@ object OpenedFileInfo {
     __obj.asInstanceOf[OpenedFileInfo]
   }
   
-  @scala.inline
-  implicit class OpenedFileInfoMutableBuilder[Self <: OpenedFileInfo] (val x: Self) extends AnyVal {
+  extension [Self <: OpenedFileInfo](x: Self) {
     
-    @scala.inline
-    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(
+    inline def setMode(
       value: ToStringLiteral[
           READ, 
           /* keyof chrome-apps.anon.READ */ typings.chromeApps.chromeAppsStrings.READ | WRITE, 
@@ -67,7 +63,6 @@ object OpenedFileInfo {
         ]
     ): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenRequestId(value: integer): Self = StObject.set(x, "openRequestId", value.asInstanceOf[js.Any])
+    inline def setOpenRequestId(value: integer): Self = StObject.set(x, "openRequestId", value.asInstanceOf[js.Any])
   }
 }

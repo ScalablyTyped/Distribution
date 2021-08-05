@@ -22,49 +22,35 @@ trait WindowsInformationProtectionAppLockerFile
 }
 object WindowsInformationProtectionAppLockerFile {
   
-  @scala.inline
-  def apply(): WindowsInformationProtectionAppLockerFile = {
+  inline def apply(): WindowsInformationProtectionAppLockerFile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WindowsInformationProtectionAppLockerFile]
   }
   
-  @scala.inline
-  implicit class WindowsInformationProtectionAppLockerFileMutableBuilder[Self <: WindowsInformationProtectionAppLockerFile] (val x: Self) extends AnyVal {
+  extension [Self <: WindowsInformationProtectionAppLockerFile](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setFile(value: NullableOption[Double]): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: NullableOption[Double]): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileHash(value: NullableOption[String]): Self = StObject.set(x, "fileHash", value.asInstanceOf[js.Any])
+    inline def setFileHash(value: NullableOption[String]): Self = StObject.set(x, "fileHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileHashNull: Self = StObject.set(x, "fileHash", null)
+    inline def setFileHashNull: Self = StObject.set(x, "fileHash", null)
     
-    @scala.inline
-    def setFileHashUndefined: Self = StObject.set(x, "fileHash", js.undefined)
+    inline def setFileHashUndefined: Self = StObject.set(x, "fileHash", js.undefined)
     
-    @scala.inline
-    def setFileNull: Self = StObject.set(x, "file", null)
+    inline def setFileNull: Self = StObject.set(x, "file", null)
     
-    @scala.inline
-    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
-    @scala.inline
-    def setVersion(value: NullableOption[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: NullableOption[String]): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionNull: Self = StObject.set(x, "version", null)
+    inline def setVersionNull: Self = StObject.set(x, "version", null)
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

@@ -14,28 +14,21 @@ trait NamedRanges extends StObject {
 }
 object NamedRanges {
   
-  @scala.inline
-  def apply(): NamedRanges = {
+  inline def apply(): NamedRanges = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NamedRanges]
   }
   
-  @scala.inline
-  implicit class NamedRangesMutableBuilder[Self <: NamedRanges] (val x: Self) extends AnyVal {
+  extension [Self <: NamedRanges](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNamedRanges(value: js.Array[NamedRange]): Self = StObject.set(x, "namedRanges", value.asInstanceOf[js.Any])
+    inline def setNamedRanges(value: js.Array[NamedRange]): Self = StObject.set(x, "namedRanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamedRangesUndefined: Self = StObject.set(x, "namedRanges", js.undefined)
+    inline def setNamedRangesUndefined: Self = StObject.set(x, "namedRanges", js.undefined)
     
-    @scala.inline
-    def setNamedRangesVarargs(value: NamedRange*): Self = StObject.set(x, "namedRanges", js.Array(value :_*))
+    inline def setNamedRangesVarargs(value: NamedRange*): Self = StObject.set(x, "namedRanges", js.Array(value :_*))
   }
 }

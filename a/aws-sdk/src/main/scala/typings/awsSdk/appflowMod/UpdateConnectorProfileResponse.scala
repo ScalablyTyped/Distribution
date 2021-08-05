@@ -13,19 +13,15 @@ trait UpdateConnectorProfileResponse extends StObject {
 }
 object UpdateConnectorProfileResponse {
   
-  @scala.inline
-  def apply(): UpdateConnectorProfileResponse = {
+  inline def apply(): UpdateConnectorProfileResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateConnectorProfileResponse]
   }
   
-  @scala.inline
-  implicit class UpdateConnectorProfileResponseMutableBuilder[Self <: UpdateConnectorProfileResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateConnectorProfileResponse](x: Self) {
     
-    @scala.inline
-    def setConnectorProfileArn(value: ConnectorProfileArn): Self = StObject.set(x, "connectorProfileArn", value.asInstanceOf[js.Any])
+    inline def setConnectorProfileArn(value: ConnectorProfileArn): Self = StObject.set(x, "connectorProfileArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectorProfileArnUndefined: Self = StObject.set(x, "connectorProfileArn", js.undefined)
+    inline def setConnectorProfileArnUndefined: Self = StObject.set(x, "connectorProfileArn", js.undefined)
   }
 }

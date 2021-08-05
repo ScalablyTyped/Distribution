@@ -11,34 +11,29 @@ object vscodeWindowsRegistryStrings {
   sealed trait HKEY_CLASSES_ROOT
     extends StObject
        with HKEY
-  @scala.inline
-  def HKEY_CLASSES_ROOT: HKEY_CLASSES_ROOT = "HKEY_CLASSES_ROOT".asInstanceOf[HKEY_CLASSES_ROOT]
+  inline def HKEY_CLASSES_ROOT: HKEY_CLASSES_ROOT = "HKEY_CLASSES_ROOT".asInstanceOf[HKEY_CLASSES_ROOT]
   
   @js.native
   sealed trait HKEY_CURRENT_CONFIG
     extends StObject
        with HKEY
-  @scala.inline
-  def HKEY_CURRENT_CONFIG: HKEY_CURRENT_CONFIG = "HKEY_CURRENT_CONFIG".asInstanceOf[HKEY_CURRENT_CONFIG]
+  inline def HKEY_CURRENT_CONFIG: HKEY_CURRENT_CONFIG = "HKEY_CURRENT_CONFIG".asInstanceOf[HKEY_CURRENT_CONFIG]
   
   @js.native
   sealed trait HKEY_CURRENT_USER
     extends StObject
        with HKEY
-  @scala.inline
-  def HKEY_CURRENT_USER: HKEY_CURRENT_USER = "HKEY_CURRENT_USER".asInstanceOf[HKEY_CURRENT_USER]
+  inline def HKEY_CURRENT_USER: HKEY_CURRENT_USER = "HKEY_CURRENT_USER".asInstanceOf[HKEY_CURRENT_USER]
   
   @js.native
   sealed trait HKEY_LOCAL_MACHINE
     extends StObject
        with HKEY
-  @scala.inline
-  def HKEY_LOCAL_MACHINE: HKEY_LOCAL_MACHINE = "HKEY_LOCAL_MACHINE".asInstanceOf[HKEY_LOCAL_MACHINE]
+  inline def HKEY_LOCAL_MACHINE: HKEY_LOCAL_MACHINE = "HKEY_LOCAL_MACHINE".asInstanceOf[HKEY_LOCAL_MACHINE]
   
   @js.native
   sealed trait HKEY_USERS
     extends StObject
        with HKEY
-  @scala.inline
-  def HKEY_USERS: HKEY_USERS = "HKEY_USERS".asInstanceOf[HKEY_USERS]
+  inline def HKEY_USERS: HKEY_USERS = "HKEY_USERS".asInstanceOf[HKEY_USERS]
 }

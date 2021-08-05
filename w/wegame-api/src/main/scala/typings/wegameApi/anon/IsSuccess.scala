@@ -28,25 +28,19 @@ trait IsSuccess extends StObject {
 }
 object IsSuccess {
   
-  @scala.inline
-  def apply(cardExt: String, cardId: String, code: String, isSuccess: Boolean): IsSuccess = {
+  inline def apply(cardExt: String, cardId: String, code: String, isSuccess: Boolean): IsSuccess = {
     val __obj = js.Dynamic.literal(cardExt = cardExt.asInstanceOf[js.Any], cardId = cardId.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any], isSuccess = isSuccess.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsSuccess]
   }
   
-  @scala.inline
-  implicit class IsSuccessMutableBuilder[Self <: IsSuccess] (val x: Self) extends AnyVal {
+  extension [Self <: IsSuccess](x: Self) {
     
-    @scala.inline
-    def setCardExt(value: String): Self = StObject.set(x, "cardExt", value.asInstanceOf[js.Any])
+    inline def setCardExt(value: String): Self = StObject.set(x, "cardExt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardId(value: String): Self = StObject.set(x, "cardId", value.asInstanceOf[js.Any])
+    inline def setCardId(value: String): Self = StObject.set(x, "cardId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSuccess(value: Boolean): Self = StObject.set(x, "isSuccess", value.asInstanceOf[js.Any])
+    inline def setIsSuccess(value: Boolean): Self = StObject.set(x, "isSuccess", value.asInstanceOf[js.Any])
   }
 }

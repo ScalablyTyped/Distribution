@@ -18,22 +18,17 @@ trait DeleteCustomerGatewayRequest extends StObject {
 }
 object DeleteCustomerGatewayRequest {
   
-  @scala.inline
-  def apply(CustomerGatewayId: CustomerGatewayId): DeleteCustomerGatewayRequest = {
+  inline def apply(CustomerGatewayId: CustomerGatewayId): DeleteCustomerGatewayRequest = {
     val __obj = js.Dynamic.literal(CustomerGatewayId = CustomerGatewayId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteCustomerGatewayRequest]
   }
   
-  @scala.inline
-  implicit class DeleteCustomerGatewayRequestMutableBuilder[Self <: DeleteCustomerGatewayRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteCustomerGatewayRequest](x: Self) {
     
-    @scala.inline
-    def setCustomerGatewayId(value: CustomerGatewayId): Self = StObject.set(x, "CustomerGatewayId", value.asInstanceOf[js.Any])
+    inline def setCustomerGatewayId(value: CustomerGatewayId): Self = StObject.set(x, "CustomerGatewayId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
   }
 }

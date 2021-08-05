@@ -40,8 +40,7 @@ trait XLibraryContainer2
 }
 object XLibraryContainer2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementNames: SafeArray[String],
     ElementType: `type`,
     acquire: () => Unit,
@@ -67,22 +66,16 @@ object XLibraryContainer2 {
     __obj.asInstanceOf[XLibraryContainer2]
   }
   
-  @scala.inline
-  implicit class XLibraryContainer2MutableBuilder[Self <: XLibraryContainer2] (val x: Self) extends AnyVal {
+  extension [Self <: XLibraryContainer2](x: Self) {
     
-    @scala.inline
-    def setGetLibraryLinkURL(value: String => String): Self = StObject.set(x, "getLibraryLinkURL", js.Any.fromFunction1(value))
+    inline def setGetLibraryLinkURL(value: String => String): Self = StObject.set(x, "getLibraryLinkURL", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsLibraryLink(value: String => Boolean): Self = StObject.set(x, "isLibraryLink", js.Any.fromFunction1(value))
+    inline def setIsLibraryLink(value: String => Boolean): Self = StObject.set(x, "isLibraryLink", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsLibraryReadOnly(value: String => Boolean): Self = StObject.set(x, "isLibraryReadOnly", js.Any.fromFunction1(value))
+    inline def setIsLibraryReadOnly(value: String => Boolean): Self = StObject.set(x, "isLibraryReadOnly", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenameLibrary(value: (String, String) => Unit): Self = StObject.set(x, "renameLibrary", js.Any.fromFunction2(value))
+    inline def setRenameLibrary(value: (String, String) => Unit): Self = StObject.set(x, "renameLibrary", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetLibraryReadOnly(value: (String, Boolean) => Unit): Self = StObject.set(x, "setLibraryReadOnly", js.Any.fromFunction2(value))
+    inline def setSetLibraryReadOnly(value: (String, Boolean) => Unit): Self = StObject.set(x, "setLibraryReadOnly", js.Any.fromFunction2(value))
   }
 }

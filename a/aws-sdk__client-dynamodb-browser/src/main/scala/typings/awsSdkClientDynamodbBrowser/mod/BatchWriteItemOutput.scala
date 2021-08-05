@@ -10,8 +10,7 @@ trait BatchWriteItemOutput
      with typings.awsSdkClientDynamodbBrowser.typesBatchWriteItemOutputMod.BatchWriteItemOutput
 object BatchWriteItemOutput {
   
-  @scala.inline
-  def apply($metadata: ResponseMetadata): BatchWriteItemOutput = {
+  inline def apply($metadata: ResponseMetadata): BatchWriteItemOutput = {
     val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchWriteItemOutput]
   }

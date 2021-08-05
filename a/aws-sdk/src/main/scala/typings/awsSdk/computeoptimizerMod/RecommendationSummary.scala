@@ -23,34 +23,25 @@ trait RecommendationSummary extends StObject {
 }
 object RecommendationSummary {
   
-  @scala.inline
-  def apply(): RecommendationSummary = {
+  inline def apply(): RecommendationSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecommendationSummary]
   }
   
-  @scala.inline
-  implicit class RecommendationSummaryMutableBuilder[Self <: RecommendationSummary] (val x: Self) extends AnyVal {
+  extension [Self <: RecommendationSummary](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: AccountId): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: AccountId): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setRecommendationResourceType(value: RecommendationSourceType): Self = StObject.set(x, "recommendationResourceType", value.asInstanceOf[js.Any])
+    inline def setRecommendationResourceType(value: RecommendationSourceType): Self = StObject.set(x, "recommendationResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommendationResourceTypeUndefined: Self = StObject.set(x, "recommendationResourceType", js.undefined)
+    inline def setRecommendationResourceTypeUndefined: Self = StObject.set(x, "recommendationResourceType", js.undefined)
     
-    @scala.inline
-    def setSummaries(value: Summaries): Self = StObject.set(x, "summaries", value.asInstanceOf[js.Any])
+    inline def setSummaries(value: Summaries): Self = StObject.set(x, "summaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummariesUndefined: Self = StObject.set(x, "summaries", js.undefined)
+    inline def setSummariesUndefined: Self = StObject.set(x, "summaries", js.undefined)
     
-    @scala.inline
-    def setSummariesVarargs(value: Summary*): Self = StObject.set(x, "summaries", js.Array(value :_*))
+    inline def setSummariesVarargs(value: Summary*): Self = StObject.set(x, "summaries", js.Array(value :_*))
   }
 }

@@ -16,37 +16,27 @@ trait SymbolProps extends StObject {
 }
 object SymbolProps {
   
-  @scala.inline
-  def apply(): SymbolProps = {
+  inline def apply(): SymbolProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SymbolProps]
   }
   
-  @scala.inline
-  implicit class SymbolPropsMutableBuilder[Self <: SymbolProps] (val x: Self) extends AnyVal {
+  extension [Self <: SymbolProps](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: NumberProp): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: NumberProp): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    @scala.inline
-    def setPreserveAspectRatio(value: String): Self = StObject.set(x, "preserveAspectRatio", value.asInstanceOf[js.Any])
+    inline def setPreserveAspectRatio(value: String): Self = StObject.set(x, "preserveAspectRatio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreserveAspectRatioUndefined: Self = StObject.set(x, "preserveAspectRatio", js.undefined)
+    inline def setPreserveAspectRatioUndefined: Self = StObject.set(x, "preserveAspectRatio", js.undefined)
     
-    @scala.inline
-    def setViewBox(value: String): Self = StObject.set(x, "viewBox", value.asInstanceOf[js.Any])
+    inline def setViewBox(value: String): Self = StObject.set(x, "viewBox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewBoxUndefined: Self = StObject.set(x, "viewBox", js.undefined)
+    inline def setViewBoxUndefined: Self = StObject.set(x, "viewBox", js.undefined)
   }
 }

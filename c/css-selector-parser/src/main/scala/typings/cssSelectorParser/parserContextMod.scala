@@ -14,8 +14,7 @@ object parserContextMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parseCssSelector_true(
+  inline def parseCssSelector_true(
     str: String,
     pos: Double,
     pseudos: StringDictionary[PseudoSelectorType],
@@ -31,10 +30,8 @@ object parserContextMod {
   trait PseudoSelectorType extends StObject
   object PseudoSelectorType {
     
-    @scala.inline
-    def numeric: typings.cssSelectorParser.cssSelectorParserStrings.numeric = "numeric".asInstanceOf[typings.cssSelectorParser.cssSelectorParserStrings.numeric]
+    inline def numeric: typings.cssSelectorParser.cssSelectorParserStrings.numeric = "numeric".asInstanceOf[typings.cssSelectorParser.cssSelectorParserStrings.numeric]
     
-    @scala.inline
-    def selector: typings.cssSelectorParser.cssSelectorParserStrings.selector = "selector".asInstanceOf[typings.cssSelectorParser.cssSelectorParserStrings.selector]
+    inline def selector: typings.cssSelectorParser.cssSelectorParserStrings.selector = "selector".asInstanceOf[typings.cssSelectorParser.cssSelectorParserStrings.selector]
   }
 }

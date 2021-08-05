@@ -33,43 +33,31 @@ trait Permission extends StObject {
 }
 object Permission {
   
-  @scala.inline
-  def apply(): Permission = {
+  inline def apply(): Permission = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Permission]
   }
   
-  @scala.inline
-  implicit class PermissionMutableBuilder[Self <: Permission] (val x: Self) extends AnyVal {
+  extension [Self <: Permission](x: Self) {
     
-    @scala.inline
-    def setAllowSsh(value: Boolean): Self = StObject.set(x, "AllowSsh", value.asInstanceOf[js.Any])
+    inline def setAllowSsh(value: Boolean): Self = StObject.set(x, "AllowSsh", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowSshUndefined: Self = StObject.set(x, "AllowSsh", js.undefined)
+    inline def setAllowSshUndefined: Self = StObject.set(x, "AllowSsh", js.undefined)
     
-    @scala.inline
-    def setAllowSudo(value: Boolean): Self = StObject.set(x, "AllowSudo", value.asInstanceOf[js.Any])
+    inline def setAllowSudo(value: Boolean): Self = StObject.set(x, "AllowSudo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowSudoUndefined: Self = StObject.set(x, "AllowSudo", js.undefined)
+    inline def setAllowSudoUndefined: Self = StObject.set(x, "AllowSudo", js.undefined)
     
-    @scala.inline
-    def setIamUserArn(value: String): Self = StObject.set(x, "IamUserArn", value.asInstanceOf[js.Any])
+    inline def setIamUserArn(value: String): Self = StObject.set(x, "IamUserArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIamUserArnUndefined: Self = StObject.set(x, "IamUserArn", js.undefined)
+    inline def setIamUserArnUndefined: Self = StObject.set(x, "IamUserArn", js.undefined)
     
-    @scala.inline
-    def setLevel(value: String): Self = StObject.set(x, "Level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: String): Self = StObject.set(x, "Level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "Level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "Level", js.undefined)
     
-    @scala.inline
-    def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
+    inline def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
+    inline def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
   }
 }

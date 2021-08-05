@@ -154,6 +154,5 @@ object ASPxClientTimer {
     * @param obj The client object to be type cast.
     */
   /* static member */
-  @scala.inline
-  def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientTimer = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientTimer]
+  inline def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientTimer = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientTimer]
 }

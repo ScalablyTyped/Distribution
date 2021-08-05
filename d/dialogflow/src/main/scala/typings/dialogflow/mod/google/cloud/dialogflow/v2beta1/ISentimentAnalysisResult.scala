@@ -12,22 +12,17 @@ trait ISentimentAnalysisResult extends StObject {
 }
 object ISentimentAnalysisResult {
   
-  @scala.inline
-  def apply(): ISentimentAnalysisResult = {
+  inline def apply(): ISentimentAnalysisResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISentimentAnalysisResult]
   }
   
-  @scala.inline
-  implicit class ISentimentAnalysisResultMutableBuilder[Self <: ISentimentAnalysisResult] (val x: Self) extends AnyVal {
+  extension [Self <: ISentimentAnalysisResult](x: Self) {
     
-    @scala.inline
-    def setQueryTextSentiment(value: ISentiment): Self = StObject.set(x, "queryTextSentiment", value.asInstanceOf[js.Any])
+    inline def setQueryTextSentiment(value: ISentiment): Self = StObject.set(x, "queryTextSentiment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryTextSentimentNull: Self = StObject.set(x, "queryTextSentiment", null)
+    inline def setQueryTextSentimentNull: Self = StObject.set(x, "queryTextSentiment", null)
     
-    @scala.inline
-    def setQueryTextSentimentUndefined: Self = StObject.set(x, "queryTextSentiment", js.undefined)
+    inline def setQueryTextSentimentUndefined: Self = StObject.set(x, "queryTextSentiment", js.undefined)
   }
 }

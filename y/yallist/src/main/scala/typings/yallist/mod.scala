@@ -40,29 +40,21 @@ object mod {
     @js.native
     val ^ : NodeConstructor = js.native
     
-    @scala.inline
-    implicit class NodeMutableBuilder[Self <: Node[?], T] (val x: Self & Node[T]) extends AnyVal {
+    extension [Self <: Node[?], T](x: Self & Node[T]) {
       
-      @scala.inline
-      def setList(value: Yallist[T]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+      inline def setList(value: Yallist[T]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListUndefined: Self = StObject.set(x, "list", js.undefined)
+      inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
       
-      @scala.inline
-      def setNext(value: Node[T]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      inline def setNext(value: Node[T]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextNull: Self = StObject.set(x, "next", null)
+      inline def setNextNull: Self = StObject.set(x, "next", null)
       
-      @scala.inline
-      def setPrev(value: Node[T]): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+      inline def setPrev(value: Node[T]): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevNull: Self = StObject.set(x, "prev", null)
+      inline def setPrevNull: Self = StObject.set(x, "prev", null)
       
-      @scala.inline
-      def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -92,14 +84,11 @@ object mod {
   }
   
   /* static member */
-  @scala.inline
-  def create[T](): Yallist[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Yallist[T]]
+  inline def create[T](): Yallist[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Yallist[T]]
   /* static member */
-  @scala.inline
-  def create[T](items: T*): Yallist[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(items.asInstanceOf[js.Any]).asInstanceOf[Yallist[T]]
+  inline def create[T](items: T*): Yallist[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(items.asInstanceOf[js.Any]).asInstanceOf[Yallist[T]]
   /* static member */
-  @scala.inline
-  def create[T](list: ForEachIterable[T]): Yallist[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(list.asInstanceOf[js.Any]).asInstanceOf[Yallist[T]]
+  inline def create[T](list: ForEachIterable[T]): Yallist[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(list.asInstanceOf[js.Any]).asInstanceOf[Yallist[T]]
   
   trait ForEachIterable[T] extends StObject {
     
@@ -107,17 +96,14 @@ object mod {
   }
   object ForEachIterable {
     
-    @scala.inline
-    def apply[T](forEach: js.Function1[/* item */ T, Unit] => Unit): ForEachIterable[T] = {
+    inline def apply[T](forEach: js.Function1[/* item */ T, Unit] => Unit): ForEachIterable[T] = {
       val __obj = js.Dynamic.literal(forEach = js.Any.fromFunction1(forEach))
       __obj.asInstanceOf[ForEachIterable[T]]
     }
     
-    @scala.inline
-    implicit class ForEachIterableMutableBuilder[Self <: ForEachIterable[?], T] (val x: Self & ForEachIterable[T]) extends AnyVal {
+    extension [Self <: ForEachIterable[?], T](x: Self & ForEachIterable[T]) {
       
-      @scala.inline
-      def setForEach(value: js.Function1[/* item */ T, Unit] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
+      inline def setForEach(value: js.Function1[/* item */ T, Unit] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
     }
   }
   

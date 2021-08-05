@@ -14,14 +14,12 @@ object global {
   @JSGlobal("CustomShapes")
   @js.native
   def CustomShapes: typings.sigmajs.SigmaJs.CustomShapes = js.native
-  @scala.inline
-  def CustomShapes_=(x: CustomShapes): Unit = js.Dynamic.global.updateDynamic("CustomShapes")(x.asInstanceOf[js.Any])
+  inline def CustomShapes_=(x: CustomShapes): Unit = js.Dynamic.global.updateDynamic("CustomShapes")(x.asInstanceOf[js.Any])
   
   @JSGlobal("ShapeLibrary")
   @js.native
   def ShapeLibrary: CustomShapes = js.native
-  @scala.inline
-  def ShapeLibrary_=(x: CustomShapes): Unit = js.Dynamic.global.updateDynamic("ShapeLibrary")(x.asInstanceOf[js.Any])
+  inline def ShapeLibrary_=(x: CustomShapes): Unit = js.Dynamic.global.updateDynamic("ShapeLibrary")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("sigma")
@@ -36,6 +34,5 @@ object global {
   @JSGlobal("sigma")
   @js.native
   def sigma: SigmaFactory = js.native
-  @scala.inline
-  def sigma_=(x: SigmaFactory): Unit = js.Dynamic.global.updateDynamic("sigma")(x.asInstanceOf[js.Any])
+  inline def sigma_=(x: SigmaFactory): Unit = js.Dynamic.global.updateDynamic("sigma")(x.asInstanceOf[js.Any])
 }

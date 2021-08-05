@@ -25,8 +25,7 @@ object PrometheusMetrics {
     /* counterPeriods */ js.UndefOr[js.Array[String]], 
     typings.matrixAppserviceBridge.agecountersMod.AgeCounters
   ] = js.native
-  @scala.inline
-  def AgeCounters_=(
+  inline def AgeCounters_=(
     x: Instantiable1[
       /* counterPeriods */ js.UndefOr[js.Array[String]], 
       typings.matrixAppserviceBridge.agecountersMod.AgeCounters

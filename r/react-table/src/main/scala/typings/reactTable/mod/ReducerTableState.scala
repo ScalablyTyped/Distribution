@@ -10,8 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with TableState[D]
 object ReducerTableState {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](): ReducerTableState[D] = {
+  inline def apply[D /* <: js.Object */](): ReducerTableState[D] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReducerTableState[D]]
   }

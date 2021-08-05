@@ -15,19 +15,15 @@ trait JQueryCoordinates extends StObject {
 }
 object JQueryCoordinates {
   
-  @scala.inline
-  def apply(left: Double, top: Double): JQueryCoordinates = {
+  inline def apply(left: Double, top: Double): JQueryCoordinates = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryCoordinates]
   }
   
-  @scala.inline
-  implicit class JQueryCoordinatesMutableBuilder[Self <: JQueryCoordinates] (val x: Self) extends AnyVal {
+  extension [Self <: JQueryCoordinates](x: Self) {
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
   }
 }

@@ -65,64 +65,45 @@ trait IAccountShared extends StObject {
 }
 object IAccountShared {
   
-  @scala.inline
-  def apply(): IAccountShared = {
+  inline def apply(): IAccountShared = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IAccountShared]
   }
   
-  @scala.inline
-  implicit class IAccountSharedMutableBuilder[Self <: IAccountShared] (val x: Self) extends AnyVal {
+  extension [Self <: IAccountShared](x: Self) {
     
-    @scala.inline
-    def setBusiness_profile(value: Mcc): Self = StObject.set(x, "business_profile", value.asInstanceOf[js.Any])
+    inline def setBusiness_profile(value: Mcc): Self = StObject.set(x, "business_profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBusiness_profileUndefined: Self = StObject.set(x, "business_profile", js.undefined)
+    inline def setBusiness_profileUndefined: Self = StObject.set(x, "business_profile", js.undefined)
     
-    @scala.inline
-    def setBusiness_type(value: individual | company): Self = StObject.set(x, "business_type", value.asInstanceOf[js.Any])
+    inline def setBusiness_type(value: individual | company): Self = StObject.set(x, "business_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBusiness_typeUndefined: Self = StObject.set(x, "business_type", js.undefined)
+    inline def setBusiness_typeUndefined: Self = StObject.set(x, "business_type", js.undefined)
     
-    @scala.inline
-    def setDefault_currency(value: String): Self = StObject.set(x, "default_currency", value.asInstanceOf[js.Any])
+    inline def setDefault_currency(value: String): Self = StObject.set(x, "default_currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefault_currencyUndefined: Self = StObject.set(x, "default_currency", js.undefined)
+    inline def setDefault_currencyUndefined: Self = StObject.set(x, "default_currency", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setProduct_description(value: String): Self = StObject.set(x, "product_description", value.asInstanceOf[js.Any])
+    inline def setProduct_description(value: String): Self = StObject.set(x, "product_description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProduct_descriptionUndefined: Self = StObject.set(x, "product_description", js.undefined)
+    inline def setProduct_descriptionUndefined: Self = StObject.set(x, "product_description", js.undefined)
     
-    @scala.inline
-    def setRequested_capabilities(value: js.Array[String]): Self = StObject.set(x, "requested_capabilities", value.asInstanceOf[js.Any])
+    inline def setRequested_capabilities(value: js.Array[String]): Self = StObject.set(x, "requested_capabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequested_capabilitiesUndefined: Self = StObject.set(x, "requested_capabilities", js.undefined)
+    inline def setRequested_capabilitiesUndefined: Self = StObject.set(x, "requested_capabilities", js.undefined)
     
-    @scala.inline
-    def setRequested_capabilitiesVarargs(value: String*): Self = StObject.set(x, "requested_capabilities", js.Array(value :_*))
+    inline def setRequested_capabilitiesVarargs(value: String*): Self = StObject.set(x, "requested_capabilities", js.Array(value :_*))
     
-    @scala.inline
-    def setSettings(value: Branding): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+    inline def setSettings(value: Branding): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
+    inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
     
-    @scala.inline
-    def setTos_acceptance(value: Date): Self = StObject.set(x, "tos_acceptance", value.asInstanceOf[js.Any])
+    inline def setTos_acceptance(value: Date): Self = StObject.set(x, "tos_acceptance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTos_acceptanceUndefined: Self = StObject.set(x, "tos_acceptance", js.undefined)
+    inline def setTos_acceptanceUndefined: Self = StObject.set(x, "tos_acceptance", js.undefined)
   }
 }

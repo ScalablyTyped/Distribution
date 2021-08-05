@@ -36,28 +36,21 @@ trait Toleration extends StObject {
 }
 object Toleration {
   
-  @scala.inline
-  def apply(effect: String, key: String, operator: String, tolerationSeconds: Double, value: String): Toleration = {
+  inline def apply(effect: String, key: String, operator: String, tolerationSeconds: Double, value: String): Toleration = {
     val __obj = js.Dynamic.literal(effect = effect.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], tolerationSeconds = tolerationSeconds.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Toleration]
   }
   
-  @scala.inline
-  implicit class TolerationMutableBuilder[Self <: Toleration] (val x: Self) extends AnyVal {
+  extension [Self <: Toleration](x: Self) {
     
-    @scala.inline
-    def setEffect(value: String): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
+    inline def setEffect(value: String): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTolerationSeconds(value: Double): Self = StObject.set(x, "tolerationSeconds", value.asInstanceOf[js.Any])
+    inline def setTolerationSeconds(value: Double): Self = StObject.set(x, "tolerationSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

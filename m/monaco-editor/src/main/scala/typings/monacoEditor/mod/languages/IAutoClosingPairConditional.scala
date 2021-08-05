@@ -12,22 +12,17 @@ trait IAutoClosingPairConditional
 }
 object IAutoClosingPairConditional {
   
-  @scala.inline
-  def apply(close: String, open: String): IAutoClosingPairConditional = {
+  inline def apply(close: String, open: String): IAutoClosingPairConditional = {
     val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any], open = open.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAutoClosingPairConditional]
   }
   
-  @scala.inline
-  implicit class IAutoClosingPairConditionalMutableBuilder[Self <: IAutoClosingPairConditional] (val x: Self) extends AnyVal {
+  extension [Self <: IAutoClosingPairConditional](x: Self) {
     
-    @scala.inline
-    def setNotIn(value: js.Array[String]): Self = StObject.set(x, "notIn", value.asInstanceOf[js.Any])
+    inline def setNotIn(value: js.Array[String]): Self = StObject.set(x, "notIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotInUndefined: Self = StObject.set(x, "notIn", js.undefined)
+    inline def setNotInUndefined: Self = StObject.set(x, "notIn", js.undefined)
     
-    @scala.inline
-    def setNotInVarargs(value: String*): Self = StObject.set(x, "notIn", js.Array(value :_*))
+    inline def setNotInVarargs(value: String*): Self = StObject.set(x, "notIn", js.Array(value :_*))
   }
 }

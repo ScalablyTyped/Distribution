@@ -28,43 +28,31 @@ trait Evaluation extends StObject {
 }
 object Evaluation {
   
-  @scala.inline
-  def apply(): Evaluation = {
+  inline def apply(): Evaluation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Evaluation]
   }
   
-  @scala.inline
-  implicit class EvaluationMutableBuilder[Self <: Evaluation] (val x: Self) extends AnyVal {
+  extension [Self <: Evaluation](x: Self) {
     
-    @scala.inline
-    def setApprovalRulesNotSatisfied(value: ApprovalRulesNotSatisfiedList): Self = StObject.set(x, "approvalRulesNotSatisfied", value.asInstanceOf[js.Any])
+    inline def setApprovalRulesNotSatisfied(value: ApprovalRulesNotSatisfiedList): Self = StObject.set(x, "approvalRulesNotSatisfied", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovalRulesNotSatisfiedUndefined: Self = StObject.set(x, "approvalRulesNotSatisfied", js.undefined)
+    inline def setApprovalRulesNotSatisfiedUndefined: Self = StObject.set(x, "approvalRulesNotSatisfied", js.undefined)
     
-    @scala.inline
-    def setApprovalRulesNotSatisfiedVarargs(value: ApprovalRuleName*): Self = StObject.set(x, "approvalRulesNotSatisfied", js.Array(value :_*))
+    inline def setApprovalRulesNotSatisfiedVarargs(value: ApprovalRuleName*): Self = StObject.set(x, "approvalRulesNotSatisfied", js.Array(value :_*))
     
-    @scala.inline
-    def setApprovalRulesSatisfied(value: ApprovalRulesSatisfiedList): Self = StObject.set(x, "approvalRulesSatisfied", value.asInstanceOf[js.Any])
+    inline def setApprovalRulesSatisfied(value: ApprovalRulesSatisfiedList): Self = StObject.set(x, "approvalRulesSatisfied", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovalRulesSatisfiedUndefined: Self = StObject.set(x, "approvalRulesSatisfied", js.undefined)
+    inline def setApprovalRulesSatisfiedUndefined: Self = StObject.set(x, "approvalRulesSatisfied", js.undefined)
     
-    @scala.inline
-    def setApprovalRulesSatisfiedVarargs(value: ApprovalRuleName*): Self = StObject.set(x, "approvalRulesSatisfied", js.Array(value :_*))
+    inline def setApprovalRulesSatisfiedVarargs(value: ApprovalRuleName*): Self = StObject.set(x, "approvalRulesSatisfied", js.Array(value :_*))
     
-    @scala.inline
-    def setApproved(value: Approved): Self = StObject.set(x, "approved", value.asInstanceOf[js.Any])
+    inline def setApproved(value: Approved): Self = StObject.set(x, "approved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovedUndefined: Self = StObject.set(x, "approved", js.undefined)
+    inline def setApprovedUndefined: Self = StObject.set(x, "approved", js.undefined)
     
-    @scala.inline
-    def setOverridden(value: Overridden): Self = StObject.set(x, "overridden", value.asInstanceOf[js.Any])
+    inline def setOverridden(value: Overridden): Self = StObject.set(x, "overridden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverriddenUndefined: Self = StObject.set(x, "overridden", js.undefined)
+    inline def setOverriddenUndefined: Self = StObject.set(x, "overridden", js.undefined)
   }
 }

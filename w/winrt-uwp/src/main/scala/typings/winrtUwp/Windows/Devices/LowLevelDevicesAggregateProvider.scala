@@ -22,8 +22,7 @@ trait LowLevelDevicesAggregateProvider extends StObject {
 }
 object LowLevelDevicesAggregateProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     adcControllerProvider: js.Any,
     gpioControllerProvider: js.Any,
     i2cControllerProvider: js.Any,
@@ -34,22 +33,16 @@ object LowLevelDevicesAggregateProvider {
     __obj.asInstanceOf[LowLevelDevicesAggregateProvider]
   }
   
-  @scala.inline
-  implicit class LowLevelDevicesAggregateProviderMutableBuilder[Self <: LowLevelDevicesAggregateProvider] (val x: Self) extends AnyVal {
+  extension [Self <: LowLevelDevicesAggregateProvider](x: Self) {
     
-    @scala.inline
-    def setAdcControllerProvider(value: js.Any): Self = StObject.set(x, "adcControllerProvider", value.asInstanceOf[js.Any])
+    inline def setAdcControllerProvider(value: js.Any): Self = StObject.set(x, "adcControllerProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGpioControllerProvider(value: js.Any): Self = StObject.set(x, "gpioControllerProvider", value.asInstanceOf[js.Any])
+    inline def setGpioControllerProvider(value: js.Any): Self = StObject.set(x, "gpioControllerProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setI2cControllerProvider(value: js.Any): Self = StObject.set(x, "i2cControllerProvider", value.asInstanceOf[js.Any])
+    inline def setI2cControllerProvider(value: js.Any): Self = StObject.set(x, "i2cControllerProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPwmControllerProvider(value: js.Any): Self = StObject.set(x, "pwmControllerProvider", value.asInstanceOf[js.Any])
+    inline def setPwmControllerProvider(value: js.Any): Self = StObject.set(x, "pwmControllerProvider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpiControllerProvider(value: js.Any): Self = StObject.set(x, "spiControllerProvider", value.asInstanceOf[js.Any])
+    inline def setSpiControllerProvider(value: js.Any): Self = StObject.set(x, "spiControllerProvider", value.asInstanceOf[js.Any])
   }
 }

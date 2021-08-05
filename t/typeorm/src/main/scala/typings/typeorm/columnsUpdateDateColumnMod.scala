@@ -12,8 +12,6 @@ object columnsUpdateDateColumnMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def UpdateDateColumn(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdateDateColumn")().asInstanceOf[PropertyDecorator]
-  @scala.inline
-  def UpdateDateColumn(options: ColumnOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdateDateColumn")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  inline def UpdateDateColumn(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdateDateColumn")().asInstanceOf[PropertyDecorator]
+  inline def UpdateDateColumn(options: ColumnOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("UpdateDateColumn")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
 }

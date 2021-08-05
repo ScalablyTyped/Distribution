@@ -14,22 +14,17 @@ trait Column extends StObject {
 }
 object Column {
   
-  @scala.inline
-  def apply(column: Double, filename: String, lineno: Double): Column = {
+  inline def apply(column: Double, filename: String, lineno: Double): Column = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], lineno = lineno.asInstanceOf[js.Any])
     __obj.asInstanceOf[Column]
   }
   
-  @scala.inline
-  implicit class ColumnMutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
+  extension [Self <: Column](x: Self) {
     
-    @scala.inline
-    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineno(value: Double): Self = StObject.set(x, "lineno", value.asInstanceOf[js.Any])
+    inline def setLineno(value: Double): Self = StObject.set(x, "lineno", value.asInstanceOf[js.Any])
   }
 }

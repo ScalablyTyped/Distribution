@@ -29,8 +29,7 @@ trait CallbackObject extends StObject {
 }
 object CallbackObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     autoReset: Boolean,
     called: Boolean,
     data: js.Array[js.Any],
@@ -43,28 +42,20 @@ object CallbackObject {
     __obj.asInstanceOf[CallbackObject]
   }
   
-  @scala.inline
-  implicit class CallbackObjectMutableBuilder[Self <: CallbackObject] (val x: Self) extends AnyVal {
+  extension [Self <: CallbackObject](x: Self) {
     
-    @scala.inline
-    def setAutoReset(value: Boolean): Self = StObject.set(x, "autoReset", value.asInstanceOf[js.Any])
+    inline def setAutoReset(value: Boolean): Self = StObject.set(x, "autoReset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalled(value: Boolean): Self = StObject.set(x, "called", value.asInstanceOf[js.Any])
+    inline def setCalled(value: Boolean): Self = StObject.set(x, "called", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setHook(value: Double): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
+    inline def setHook(value: Double): Self = StObject.set(x, "hook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
   }
 }

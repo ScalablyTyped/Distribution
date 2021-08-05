@@ -12,16 +12,13 @@ trait MediaCueEventArgs extends StObject {
 }
 object MediaCueEventArgs {
   
-  @scala.inline
-  def apply(cue: IMediaCue): MediaCueEventArgs = {
+  inline def apply(cue: IMediaCue): MediaCueEventArgs = {
     val __obj = js.Dynamic.literal(cue = cue.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaCueEventArgs]
   }
   
-  @scala.inline
-  implicit class MediaCueEventArgsMutableBuilder[Self <: MediaCueEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: MediaCueEventArgs](x: Self) {
     
-    @scala.inline
-    def setCue(value: IMediaCue): Self = StObject.set(x, "cue", value.asInstanceOf[js.Any])
+    inline def setCue(value: IMediaCue): Self = StObject.set(x, "cue", value.asInstanceOf[js.Any])
   }
 }

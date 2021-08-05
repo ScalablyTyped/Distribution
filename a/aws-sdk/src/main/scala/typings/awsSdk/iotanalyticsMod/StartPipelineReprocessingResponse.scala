@@ -13,19 +13,15 @@ trait StartPipelineReprocessingResponse extends StObject {
 }
 object StartPipelineReprocessingResponse {
   
-  @scala.inline
-  def apply(): StartPipelineReprocessingResponse = {
+  inline def apply(): StartPipelineReprocessingResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartPipelineReprocessingResponse]
   }
   
-  @scala.inline
-  implicit class StartPipelineReprocessingResponseMutableBuilder[Self <: StartPipelineReprocessingResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StartPipelineReprocessingResponse](x: Self) {
     
-    @scala.inline
-    def setReprocessingId(value: ReprocessingId): Self = StObject.set(x, "reprocessingId", value.asInstanceOf[js.Any])
+    inline def setReprocessingId(value: ReprocessingId): Self = StObject.set(x, "reprocessingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReprocessingIdUndefined: Self = StObject.set(x, "reprocessingId", js.undefined)
+    inline def setReprocessingIdUndefined: Self = StObject.set(x, "reprocessingId", js.undefined)
   }
 }

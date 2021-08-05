@@ -17,31 +17,23 @@ trait RandomUniformArgs extends StObject {
 }
 object RandomUniformArgs {
   
-  @scala.inline
-  def apply(): RandomUniformArgs = {
+  inline def apply(): RandomUniformArgs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RandomUniformArgs]
   }
   
-  @scala.inline
-  implicit class RandomUniformArgsMutableBuilder[Self <: RandomUniformArgs] (val x: Self) extends AnyVal {
+  extension [Self <: RandomUniformArgs](x: Self) {
     
-    @scala.inline
-    def setMaxval(value: Double): Self = StObject.set(x, "maxval", value.asInstanceOf[js.Any])
+    inline def setMaxval(value: Double): Self = StObject.set(x, "maxval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxvalUndefined: Self = StObject.set(x, "maxval", js.undefined)
+    inline def setMaxvalUndefined: Self = StObject.set(x, "maxval", js.undefined)
     
-    @scala.inline
-    def setMinval(value: Double): Self = StObject.set(x, "minval", value.asInstanceOf[js.Any])
+    inline def setMinval(value: Double): Self = StObject.set(x, "minval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinvalUndefined: Self = StObject.set(x, "minval", js.undefined)
+    inline def setMinvalUndefined: Self = StObject.set(x, "minval", js.undefined)
     
-    @scala.inline
-    def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+    inline def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
+    inline def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
   }
 }

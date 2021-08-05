@@ -11,16 +11,13 @@ trait OESTextureHalfFloat extends StObject {
 }
 object OESTextureHalfFloat {
   
-  @scala.inline
-  def apply(HALF_FLOAT_OES: GLenum): OESTextureHalfFloat = {
+  inline def apply(HALF_FLOAT_OES: GLenum): OESTextureHalfFloat = {
     val __obj = js.Dynamic.literal(HALF_FLOAT_OES = HALF_FLOAT_OES.asInstanceOf[js.Any])
     __obj.asInstanceOf[OESTextureHalfFloat]
   }
   
-  @scala.inline
-  implicit class OESTextureHalfFloatMutableBuilder[Self <: OESTextureHalfFloat] (val x: Self) extends AnyVal {
+  extension [Self <: OESTextureHalfFloat](x: Self) {
     
-    @scala.inline
-    def setHALF_FLOAT_OES(value: GLenum): Self = StObject.set(x, "HALF_FLOAT_OES", value.asInstanceOf[js.Any])
+    inline def setHALF_FLOAT_OES(value: GLenum): Self = StObject.set(x, "HALF_FLOAT_OES", value.asInstanceOf[js.Any])
   }
 }

@@ -38,49 +38,35 @@ trait CreateActivationRequest extends StObject {
 }
 object CreateActivationRequest {
   
-  @scala.inline
-  def apply(IamRole: IamRole): CreateActivationRequest = {
+  inline def apply(IamRole: IamRole): CreateActivationRequest = {
     val __obj = js.Dynamic.literal(IamRole = IamRole.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateActivationRequest]
   }
   
-  @scala.inline
-  implicit class CreateActivationRequestMutableBuilder[Self <: CreateActivationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateActivationRequest](x: Self) {
     
-    @scala.inline
-    def setDefaultInstanceName(value: DefaultInstanceName): Self = StObject.set(x, "DefaultInstanceName", value.asInstanceOf[js.Any])
+    inline def setDefaultInstanceName(value: DefaultInstanceName): Self = StObject.set(x, "DefaultInstanceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultInstanceNameUndefined: Self = StObject.set(x, "DefaultInstanceName", js.undefined)
+    inline def setDefaultInstanceNameUndefined: Self = StObject.set(x, "DefaultInstanceName", js.undefined)
     
-    @scala.inline
-    def setDescription(value: ActivationDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: ActivationDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setExpirationDate(value: ExpirationDate): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
+    inline def setExpirationDate(value: ExpirationDate): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpirationDateUndefined: Self = StObject.set(x, "ExpirationDate", js.undefined)
+    inline def setExpirationDateUndefined: Self = StObject.set(x, "ExpirationDate", js.undefined)
     
-    @scala.inline
-    def setIamRole(value: IamRole): Self = StObject.set(x, "IamRole", value.asInstanceOf[js.Any])
+    inline def setIamRole(value: IamRole): Self = StObject.set(x, "IamRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistrationLimit(value: RegistrationLimit): Self = StObject.set(x, "RegistrationLimit", value.asInstanceOf[js.Any])
+    inline def setRegistrationLimit(value: RegistrationLimit): Self = StObject.set(x, "RegistrationLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistrationLimitUndefined: Self = StObject.set(x, "RegistrationLimit", js.undefined)
+    inline def setRegistrationLimitUndefined: Self = StObject.set(x, "RegistrationLimit", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

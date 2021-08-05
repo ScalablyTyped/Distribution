@@ -27,7 +27,7 @@ object tabBarComponentMod {
     
     def layout(): Unit = js.native
     
-    var root_ : HTMLElement = js.native
+    /* protected */ var root_ : HTMLElement = js.native
     
     val tabs: js.Array[MDCTab] = js.native
   }
@@ -38,8 +38,7 @@ object tabBarComponentMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def attachTo(root: Element): MDCTabBar = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCTabBar]
+    inline def attachTo(root: Element): MDCTabBar = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCTabBar]
   }
   
   type MDCTabBarFactory = js.Function2[/* el */ Element, /* foundation */ js.UndefOr[MDCTabBarFoundation], MDCTabBar]

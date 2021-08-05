@@ -23,34 +23,25 @@ trait ActionExecutionOutput extends StObject {
 }
 object ActionExecutionOutput {
   
-  @scala.inline
-  def apply(): ActionExecutionOutput = {
+  inline def apply(): ActionExecutionOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ActionExecutionOutput]
   }
   
-  @scala.inline
-  implicit class ActionExecutionOutputMutableBuilder[Self <: ActionExecutionOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ActionExecutionOutput](x: Self) {
     
-    @scala.inline
-    def setExecutionResult(value: ActionExecutionResult): Self = StObject.set(x, "executionResult", value.asInstanceOf[js.Any])
+    inline def setExecutionResult(value: ActionExecutionResult): Self = StObject.set(x, "executionResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionResultUndefined: Self = StObject.set(x, "executionResult", js.undefined)
+    inline def setExecutionResultUndefined: Self = StObject.set(x, "executionResult", js.undefined)
     
-    @scala.inline
-    def setOutputArtifacts(value: ArtifactDetailList): Self = StObject.set(x, "outputArtifacts", value.asInstanceOf[js.Any])
+    inline def setOutputArtifacts(value: ArtifactDetailList): Self = StObject.set(x, "outputArtifacts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputArtifactsUndefined: Self = StObject.set(x, "outputArtifacts", js.undefined)
+    inline def setOutputArtifactsUndefined: Self = StObject.set(x, "outputArtifacts", js.undefined)
     
-    @scala.inline
-    def setOutputArtifactsVarargs(value: ArtifactDetail*): Self = StObject.set(x, "outputArtifacts", js.Array(value :_*))
+    inline def setOutputArtifactsVarargs(value: ArtifactDetail*): Self = StObject.set(x, "outputArtifacts", js.Array(value :_*))
     
-    @scala.inline
-    def setOutputVariables(value: OutputVariablesMap): Self = StObject.set(x, "outputVariables", value.asInstanceOf[js.Any])
+    inline def setOutputVariables(value: OutputVariablesMap): Self = StObject.set(x, "outputVariables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputVariablesUndefined: Self = StObject.set(x, "outputVariables", js.undefined)
+    inline def setOutputVariablesUndefined: Self = StObject.set(x, "outputVariables", js.undefined)
   }
 }

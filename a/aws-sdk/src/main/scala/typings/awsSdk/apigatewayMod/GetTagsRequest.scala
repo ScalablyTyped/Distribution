@@ -23,28 +23,21 @@ trait GetTagsRequest extends StObject {
 }
 object GetTagsRequest {
   
-  @scala.inline
-  def apply(resourceArn: String): GetTagsRequest = {
+  inline def apply(resourceArn: String): GetTagsRequest = {
     val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTagsRequest]
   }
   
-  @scala.inline
-  implicit class GetTagsRequestMutableBuilder[Self <: GetTagsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetTagsRequest](x: Self) {
     
-    @scala.inline
-    def setLimit(value: NullableInteger): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: NullableInteger): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setResourceArn(value: String): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: String): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
   }
 }

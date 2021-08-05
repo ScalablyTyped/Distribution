@@ -31,8 +31,7 @@ trait TextBoxRelativeSizeSettings extends StObject {
 }
 object TextBoxRelativeSizeSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     relativeHeight: Double,
     relativeHeightType: FloatingObjectRelativeHeightType,
     relativeWidth: Double,
@@ -42,19 +41,14 @@ object TextBoxRelativeSizeSettings {
     __obj.asInstanceOf[TextBoxRelativeSizeSettings]
   }
   
-  @scala.inline
-  implicit class TextBoxRelativeSizeSettingsMutableBuilder[Self <: TextBoxRelativeSizeSettings] (val x: Self) extends AnyVal {
+  extension [Self <: TextBoxRelativeSizeSettings](x: Self) {
     
-    @scala.inline
-    def setRelativeHeight(value: Double): Self = StObject.set(x, "relativeHeight", value.asInstanceOf[js.Any])
+    inline def setRelativeHeight(value: Double): Self = StObject.set(x, "relativeHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeHeightType(value: FloatingObjectRelativeHeightType): Self = StObject.set(x, "relativeHeightType", value.asInstanceOf[js.Any])
+    inline def setRelativeHeightType(value: FloatingObjectRelativeHeightType): Self = StObject.set(x, "relativeHeightType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeWidth(value: Double): Self = StObject.set(x, "relativeWidth", value.asInstanceOf[js.Any])
+    inline def setRelativeWidth(value: Double): Self = StObject.set(x, "relativeWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeWidthType(value: FloatingObjectRelativeWidthType): Self = StObject.set(x, "relativeWidthType", value.asInstanceOf[js.Any])
+    inline def setRelativeWidthType(value: FloatingObjectRelativeWidthType): Self = StObject.set(x, "relativeWidthType", value.asInstanceOf[js.Any])
   }
 }

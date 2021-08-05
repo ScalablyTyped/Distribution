@@ -11,10 +11,8 @@ object getSelectionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getSelection(args: GetSelectionArgs): js.Promise[GetSelectionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelection")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSelectionResult]]
-  @scala.inline
-  def getSelection(args: GetSelectionArgs, opts: InvokeOptions): js.Promise[GetSelectionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSelection")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSelectionResult]]
+  inline def getSelection(args: GetSelectionArgs): js.Promise[GetSelectionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelection")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSelectionResult]]
+  inline def getSelection(args: GetSelectionArgs, opts: InvokeOptions): js.Promise[GetSelectionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSelection")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSelectionResult]]
   
   trait GetSelectionArgs extends StObject {
     
@@ -30,20 +28,16 @@ object getSelectionMod {
   }
   object GetSelectionArgs {
     
-    @scala.inline
-    def apply(planId: String, selectionId: String): GetSelectionArgs = {
+    inline def apply(planId: String, selectionId: String): GetSelectionArgs = {
       val __obj = js.Dynamic.literal(planId = planId.asInstanceOf[js.Any], selectionId = selectionId.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetSelectionArgs]
     }
     
-    @scala.inline
-    implicit class GetSelectionArgsMutableBuilder[Self <: GetSelectionArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetSelectionArgs](x: Self) {
       
-      @scala.inline
-      def setPlanId(value: String): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
+      inline def setPlanId(value: String): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectionId(value: String): Self = StObject.set(x, "selectionId", value.asInstanceOf[js.Any])
+      inline def setSelectionId(value: String): Self = StObject.set(x, "selectionId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -75,8 +69,7 @@ object getSelectionMod {
   }
   object GetSelectionResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       iamRoleArn: String,
       id: String,
       name: String,
@@ -88,29 +81,21 @@ object getSelectionMod {
       __obj.asInstanceOf[GetSelectionResult]
     }
     
-    @scala.inline
-    implicit class GetSelectionResultMutableBuilder[Self <: GetSelectionResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetSelectionResult](x: Self) {
       
-      @scala.inline
-      def setIamRoleArn(value: String): Self = StObject.set(x, "iamRoleArn", value.asInstanceOf[js.Any])
+      inline def setIamRoleArn(value: String): Self = StObject.set(x, "iamRoleArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlanId(value: String): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
+      inline def setPlanId(value: String): Self = StObject.set(x, "planId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+      inline def setResources(value: js.Array[String]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
+      inline def setResourcesVarargs(value: String*): Self = StObject.set(x, "resources", js.Array(value :_*))
       
-      @scala.inline
-      def setSelectionId(value: String): Self = StObject.set(x, "selectionId", value.asInstanceOf[js.Any])
+      inline def setSelectionId(value: String): Self = StObject.set(x, "selectionId", value.asInstanceOf[js.Any])
     }
   }
 }

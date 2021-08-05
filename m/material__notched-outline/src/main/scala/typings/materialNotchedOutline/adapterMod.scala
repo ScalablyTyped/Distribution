@@ -30,8 +30,7 @@ object adapterMod {
   }
   object MDCNotchedOutlineAdapter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addClass: String => Unit,
       removeClass: String => Unit,
       removeNotchWidthProperty: () => Unit,
@@ -41,20 +40,15 @@ object adapterMod {
       __obj.asInstanceOf[MDCNotchedOutlineAdapter]
     }
     
-    @scala.inline
-    implicit class MDCNotchedOutlineAdapterMutableBuilder[Self <: MDCNotchedOutlineAdapter] (val x: Self) extends AnyVal {
+    extension [Self <: MDCNotchedOutlineAdapter](x: Self) {
       
-      @scala.inline
-      def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
+      inline def setAddClass(value: String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveClass(value: String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
+      inline def setRemoveClass(value: String => Unit): Self = StObject.set(x, "removeClass", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveNotchWidthProperty(value: () => Unit): Self = StObject.set(x, "removeNotchWidthProperty", js.Any.fromFunction0(value))
+      inline def setRemoveNotchWidthProperty(value: () => Unit): Self = StObject.set(x, "removeNotchWidthProperty", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSetNotchWidthProperty(value: Double => Unit): Self = StObject.set(x, "setNotchWidthProperty", js.Any.fromFunction1(value))
+      inline def setSetNotchWidthProperty(value: Double => Unit): Self = StObject.set(x, "setNotchWidthProperty", js.Any.fromFunction1(value))
     }
   }
 }

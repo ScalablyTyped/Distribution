@@ -24,61 +24,43 @@ trait DataSourceSchemaModelField extends StObject {
 }
 object DataSourceSchemaModelField {
   
-  @scala.inline
-  def apply(): DataSourceSchemaModelField = {
+  inline def apply(): DataSourceSchemaModelField = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataSourceSchemaModelField]
   }
   
-  @scala.inline
-  implicit class DataSourceSchemaModelFieldMutableBuilder[Self <: DataSourceSchemaModelField] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceSchemaModelField](x: Self) {
     
-    @scala.inline
-    def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
+    inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
+    inline def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    @scala.inline
-    def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
+    inline def setNullable(value: Boolean): Self = StObject.set(x, "nullable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNullableUndefined: Self = StObject.set(x, "nullable", js.undefined)
+    inline def setNullableUndefined: Self = StObject.set(x, "nullable", js.undefined)
     
-    @scala.inline
-    def setParse(value: js.Function): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+    inline def setParse(value: js.Function): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
+    inline def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setValidation(value: DataSourceSchemaModelFieldValidation): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
+    inline def setValidation(value: DataSourceSchemaModelFieldValidation): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
+    inline def setValidationUndefined: Self = StObject.set(x, "validation", js.undefined)
   }
 }

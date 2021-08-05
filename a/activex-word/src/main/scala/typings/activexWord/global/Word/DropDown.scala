@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.DropDown")
 @js.native
-class DropDown protected ()
+/* private */ class DropDown ()
   extends StObject
      with typings.activexWord.Word.DropDown {
   
@@ -31,7 +31,7 @@ class DropDown protected ()
   /* CompleteClass */
   var Value: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.DropDown_typekey")
   var WordDotDropDown_typekey: typings.activexWord.Word.DropDown = js.native
 }

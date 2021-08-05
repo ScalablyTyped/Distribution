@@ -35,32 +35,24 @@ object mod extends Shortcut {
   }
   object OperatingSystem {
     
-    @scala.inline
-    def apply(): OperatingSystem = {
+    inline def apply(): OperatingSystem = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OperatingSystem]
     }
     
-    @scala.inline
-    implicit class OperatingSystemMutableBuilder[Self <: OperatingSystem] (val x: Self) extends AnyVal {
+    extension [Self <: OperatingSystem](x: Self) {
       
-      @scala.inline
-      def setArchitecture(value: Double): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
+      inline def setArchitecture(value: Double): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArchitectureUndefined: Self = StObject.set(x, "architecture", js.undefined)
+      inline def setArchitectureUndefined: Self = StObject.set(x, "architecture", js.undefined)
       
-      @scala.inline
-      def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+      inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
+      inline def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   

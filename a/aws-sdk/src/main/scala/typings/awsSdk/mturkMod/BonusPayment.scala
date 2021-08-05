@@ -30,43 +30,31 @@ trait BonusPayment extends StObject {
 }
 object BonusPayment {
   
-  @scala.inline
-  def apply(): BonusPayment = {
+  inline def apply(): BonusPayment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BonusPayment]
   }
   
-  @scala.inline
-  implicit class BonusPaymentMutableBuilder[Self <: BonusPayment] (val x: Self) extends AnyVal {
+  extension [Self <: BonusPayment](x: Self) {
     
-    @scala.inline
-    def setAssignmentId(value: EntityId): Self = StObject.set(x, "AssignmentId", value.asInstanceOf[js.Any])
+    inline def setAssignmentId(value: EntityId): Self = StObject.set(x, "AssignmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignmentIdUndefined: Self = StObject.set(x, "AssignmentId", js.undefined)
+    inline def setAssignmentIdUndefined: Self = StObject.set(x, "AssignmentId", js.undefined)
     
-    @scala.inline
-    def setBonusAmount(value: CurrencyAmount): Self = StObject.set(x, "BonusAmount", value.asInstanceOf[js.Any])
+    inline def setBonusAmount(value: CurrencyAmount): Self = StObject.set(x, "BonusAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBonusAmountUndefined: Self = StObject.set(x, "BonusAmount", js.undefined)
+    inline def setBonusAmountUndefined: Self = StObject.set(x, "BonusAmount", js.undefined)
     
-    @scala.inline
-    def setGrantTime(value: Timestamp): Self = StObject.set(x, "GrantTime", value.asInstanceOf[js.Any])
+    inline def setGrantTime(value: Timestamp): Self = StObject.set(x, "GrantTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrantTimeUndefined: Self = StObject.set(x, "GrantTime", js.undefined)
+    inline def setGrantTimeUndefined: Self = StObject.set(x, "GrantTime", js.undefined)
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "Reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "Reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "Reason", js.undefined)
     
-    @scala.inline
-    def setWorkerId(value: CustomerId): Self = StObject.set(x, "WorkerId", value.asInstanceOf[js.Any])
+    inline def setWorkerId(value: CustomerId): Self = StObject.set(x, "WorkerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkerIdUndefined: Self = StObject.set(x, "WorkerId", js.undefined)
+    inline def setWorkerIdUndefined: Self = StObject.set(x, "WorkerId", js.undefined)
   }
 }

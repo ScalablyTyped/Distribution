@@ -11,19 +11,15 @@ trait IngestMessageRequest extends StObject {
 }
 object IngestMessageRequest {
   
-  @scala.inline
-  def apply(): IngestMessageRequest = {
+  inline def apply(): IngestMessageRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IngestMessageRequest]
   }
   
-  @scala.inline
-  implicit class IngestMessageRequestMutableBuilder[Self <: IngestMessageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IngestMessageRequest](x: Self) {
     
-    @scala.inline
-    def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

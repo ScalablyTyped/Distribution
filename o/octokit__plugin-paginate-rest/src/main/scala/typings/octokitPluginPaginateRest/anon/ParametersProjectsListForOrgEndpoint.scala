@@ -15,19 +15,15 @@ trait ParametersProjectsListForOrgEndpoint extends StObject {
 }
 object ParametersProjectsListForOrgEndpoint {
   
-  @scala.inline
-  def apply(parameters: ProjectsListForOrgEndpoint, response: OctokitResponse[ProjectsListForOrgResponseData]): ParametersProjectsListForOrgEndpoint = {
+  inline def apply(parameters: ProjectsListForOrgEndpoint, response: OctokitResponse[ProjectsListForOrgResponseData]): ParametersProjectsListForOrgEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersProjectsListForOrgEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersProjectsListForOrgEndpointMutableBuilder[Self <: ParametersProjectsListForOrgEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersProjectsListForOrgEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ProjectsListForOrgEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ProjectsListForOrgEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ProjectsListForOrgResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ProjectsListForOrgResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

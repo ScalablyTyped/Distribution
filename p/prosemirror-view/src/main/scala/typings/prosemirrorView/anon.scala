@@ -24,26 +24,20 @@ object anon {
   }
   object Bottom {
     
-    @scala.inline
-    def apply(bottom: Double, left: Double, right: Double, top: Double): Bottom = {
+    inline def apply(bottom: Double, left: Double, right: Double, top: Double): Bottom = {
       val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
       __obj.asInstanceOf[Bottom]
     }
     
-    @scala.inline
-    implicit class BottomMutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
+    extension [Self <: Bottom](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }
   }
   
@@ -55,20 +49,16 @@ object anon {
   }
   object Dom {
     
-    @scala.inline
-    def apply(dom: HTMLElement, text: String): Dom = {
+    inline def apply(dom: HTMLElement, text: String): Dom = {
       val __obj = js.Dynamic.literal(dom = dom.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[Dom]
     }
     
-    @scala.inline
-    implicit class DomMutableBuilder[Self <: Dom] (val x: Self) extends AnyVal {
+    extension [Self <: Dom](x: Self) {
       
-      @scala.inline
-      def setDom(value: HTMLElement): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
+      inline def setDom(value: HTMLElement): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -80,20 +70,16 @@ object anon {
   }
   object Inside {
     
-    @scala.inline
-    def apply(inside: Double, pos: Double): Inside = {
+    inline def apply(inside: Double, pos: Double): Inside = {
       val __obj = js.Dynamic.literal(inside = inside.asInstanceOf[js.Any], pos = pos.asInstanceOf[js.Any])
       __obj.asInstanceOf[Inside]
     }
     
-    @scala.inline
-    implicit class InsideMutableBuilder[Self <: Inside] (val x: Self) extends AnyVal {
+    extension [Self <: Inside](x: Self) {
       
-      @scala.inline
-      def setInside(value: Double): Self = StObject.set(x, "inside", value.asInstanceOf[js.Any])
+      inline def setInside(value: Double): Self = StObject.set(x, "inside", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
+      inline def setPos(value: Double): Self = StObject.set(x, "pos", value.asInstanceOf[js.Any])
     }
   }
   
@@ -105,20 +91,16 @@ object anon {
   }
   object Left {
     
-    @scala.inline
-    def apply(left: Double, top: Double): Left = {
+    inline def apply(left: Double, top: Double): Left = {
       val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
       __obj.asInstanceOf[Left]
     }
     
-    @scala.inline
-    implicit class LeftMutableBuilder[Self <: Left] (val x: Self) extends AnyVal {
+    extension [Self <: Left](x: Self) {
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }
   }
   
@@ -128,17 +110,14 @@ object anon {
   }
   object Mount {
     
-    @scala.inline
-    def apply(mount: typings.std.Node): Mount = {
+    inline def apply(mount: typings.std.Node): Mount = {
       val __obj = js.Dynamic.literal(mount = mount.asInstanceOf[js.Any])
       __obj.asInstanceOf[Mount]
     }
     
-    @scala.inline
-    implicit class MountMutableBuilder[Self <: Mount] (val x: Self) extends AnyVal {
+    extension [Self <: Mount](x: Self) {
       
-      @scala.inline
-      def setMount(value: typings.std.Node): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
+      inline def setMount(value: typings.std.Node): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
     }
   }
   
@@ -150,20 +129,16 @@ object anon {
   }
   object Move {
     
-    @scala.inline
-    def apply[S /* <: Schema[js.Any, js.Any] */](move: Boolean, slice: Slice[S]): Move[S] = {
+    inline def apply[S /* <: Schema[js.Any, js.Any] */](move: Boolean, slice: Slice[S]): Move[S] = {
       val __obj = js.Dynamic.literal(move = move.asInstanceOf[js.Any], slice = slice.asInstanceOf[js.Any])
       __obj.asInstanceOf[Move[S]]
     }
     
-    @scala.inline
-    implicit class MoveMutableBuilder[Self <: Move[?], S /* <: Schema[js.Any, js.Any] */] (val x: Self & Move[S]) extends AnyVal {
+    extension [Self <: Move[?], S /* <: Schema[js.Any, js.Any] */](x: Self & Move[S]) {
       
-      @scala.inline
-      def setMove(value: Boolean): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
+      inline def setMove(value: Boolean): Self = StObject.set(x, "move", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlice(value: Slice[S]): Self = StObject.set(x, "slice", value.asInstanceOf[js.Any])
+      inline def setSlice(value: Slice[S]): Self = StObject.set(x, "slice", value.asInstanceOf[js.Any])
     }
   }
   
@@ -175,20 +150,16 @@ object anon {
   }
   object Node {
     
-    @scala.inline
-    def apply(node: typings.std.Node, offset: Double): Node = {
+    inline def apply(node: typings.std.Node, offset: Double): Node = {
       val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
       __obj.asInstanceOf[Node]
     }
     
-    @scala.inline
-    implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
+    extension [Self <: Node](x: Self) {
       
-      @scala.inline
-      def setNode(value: typings.std.Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: typings.std.Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     }
   }
   
@@ -198,23 +169,18 @@ object anon {
   }
   object OnRemove {
     
-    @scala.inline
-    def apply(): OnRemove = {
+    inline def apply(): OnRemove = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OnRemove]
     }
     
-    @scala.inline
-    implicit class OnRemoveMutableBuilder[Self <: OnRemove] (val x: Self) extends AnyVal {
+    extension [Self <: OnRemove](x: Self) {
       
-      @scala.inline
-      def setOnRemove(value: /* decorationSpec */ StringDictionary[js.Any] => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction1(value))
+      inline def setOnRemove(value: /* decorationSpec */ StringDictionary[js.Any] => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnRemoveNull: Self = StObject.set(x, "onRemove", null)
+      inline def setOnRemoveNull: Self = StObject.set(x, "onRemove", null)
       
-      @scala.inline
-      def setOnRemoveUndefined: Self = StObject.set(x, "onRemove", js.undefined)
+      inline def setOnRemoveUndefined: Self = StObject.set(x, "onRemove", js.undefined)
     }
   }
   
@@ -230,26 +196,20 @@ object anon {
   }
   object Right {
     
-    @scala.inline
-    def apply(bottom: Double, left: Double, right: Double, top: Double): Right = {
+    inline def apply(bottom: Double, left: Double, right: Double, top: Double): Right = {
       val __obj = js.Dynamic.literal(bottom = bottom.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
       __obj.asInstanceOf[Right]
     }
     
-    @scala.inline
-    implicit class RightMutableBuilder[Self <: Right] (val x: Self) extends AnyVal {
+    extension [Self <: Right](x: Self) {
       
-      @scala.inline
-      def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+      inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: Double): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }
   }
   
@@ -261,21 +221,17 @@ object anon {
   }
   object Target {
     
-    @scala.inline
-    def apply(target: Element): Target = {
+    inline def apply(target: Element): Target = {
       val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("selection")
       __obj.asInstanceOf[Target]
     }
     
-    @scala.inline
-    implicit class TargetMutableBuilder[Self <: Target] (val x: Self) extends AnyVal {
+    extension [Self <: Target](x: Self) {
       
-      @scala.inline
-      def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: selection): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: selection): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

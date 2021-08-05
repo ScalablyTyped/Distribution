@@ -28,8 +28,7 @@ object multiremoteMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def elementWrapper(instances: js.Any, result: js.Any, propertiesObject: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("elementWrapper")(instances.asInstanceOf[js.Any], result.asInstanceOf[js.Any], propertiesObject.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def elementWrapper(instances: js.Any, result: js.Any, propertiesObject: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("elementWrapper")(instances.asInstanceOf[js.Any], result.asInstanceOf[js.Any], propertiesObject.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   trait MultiRemote extends StObject {
@@ -44,8 +43,7 @@ object multiremoteMod {
   }
   object MultiRemote {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addInstance: (js.Any, js.Any) => js.Promise[js.Any],
       commandWrapper: js.Any => js.Function1[/* args */ js.Any, js.Promise[js.Any]],
       modifier: js.Any => js.Any
@@ -54,23 +52,17 @@ object multiremoteMod {
       __obj.asInstanceOf[MultiRemote]
     }
     
-    @scala.inline
-    implicit class MultiRemoteMutableBuilder[Self <: MultiRemote] (val x: Self) extends AnyVal {
+    extension [Self <: MultiRemote](x: Self) {
       
-      @scala.inline
-      def setAddInstance(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "addInstance", js.Any.fromFunction2(value))
+      inline def setAddInstance(value: (js.Any, js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "addInstance", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBaseInstance(value: MultiRemoteDriver): Self = StObject.set(x, "baseInstance", value.asInstanceOf[js.Any])
+      inline def setBaseInstance(value: MultiRemoteDriver): Self = StObject.set(x, "baseInstance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseInstanceUndefined: Self = StObject.set(x, "baseInstance", js.undefined)
+      inline def setBaseInstanceUndefined: Self = StObject.set(x, "baseInstance", js.undefined)
       
-      @scala.inline
-      def setCommandWrapper(value: js.Any => js.Function1[/* args */ js.Any, js.Promise[js.Any]]): Self = StObject.set(x, "commandWrapper", js.Any.fromFunction1(value))
+      inline def setCommandWrapper(value: js.Any => js.Function1[/* args */ js.Any, js.Promise[js.Any]]): Self = StObject.set(x, "commandWrapper", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setModifier(value: js.Any => js.Any): Self = StObject.set(x, "modifier", js.Any.fromFunction1(value))
+      inline def setModifier(value: js.Any => js.Any): Self = StObject.set(x, "modifier", js.Any.fromFunction1(value))
     }
   }
   
@@ -102,8 +94,7 @@ object multiremoteMod {
   }
   object MultiRemoteDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       __propertiesObject__ : js.Any,
       emit: /* repeated */ js.Any => Unit,
       eventNames: /* repeated */ js.Any => Unit,
@@ -121,47 +112,33 @@ object multiremoteMod {
       __obj.asInstanceOf[MultiRemoteDriver]
     }
     
-    @scala.inline
-    implicit class MultiRemoteDriverMutableBuilder[Self <: MultiRemoteDriver] (val x: Self) extends AnyVal {
+    extension [Self <: MultiRemoteDriver](x: Self) {
       
-      @scala.inline
-      def setEmit(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction1(value))
+      inline def setEmit(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEventNames(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "eventNames", js.Any.fromFunction1(value))
+      inline def setEventNames(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "eventNames", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetMaxListeners(value: () => Unit): Self = StObject.set(x, "getMaxListeners", js.Any.fromFunction0(value))
+      inline def setGetMaxListeners(value: () => Unit): Self = StObject.set(x, "getMaxListeners", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInstances(value: js.Array[String]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+      inline def setInstances(value: js.Array[String]): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstancesVarargs(value: String*): Self = StObject.set(x, "instances", js.Array(value :_*))
+      inline def setInstancesVarargs(value: String*): Self = StObject.set(x, "instances", js.Array(value :_*))
       
-      @scala.inline
-      def setIsMultiremote(value: Boolean): Self = StObject.set(x, "isMultiremote", value.asInstanceOf[js.Any])
+      inline def setIsMultiremote(value: Boolean): Self = StObject.set(x, "isMultiremote", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListenerCount(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "listenerCount", js.Any.fromFunction1(value))
+      inline def setListenerCount(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "listenerCount", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setListeners(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "listeners", js.Any.fromFunction1(value))
+      inline def setListeners(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "listeners", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "on", js.Any.fromFunction1(value))
+      inline def setOn(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "on", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnce(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "once", js.Any.fromFunction1(value))
+      inline def setOnce(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "once", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveAllListeners(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "removeAllListeners", js.Any.fromFunction1(value))
+      inline def setRemoveAllListeners(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "removeAllListeners", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemoveListener(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction1(value))
+      inline def setRemoveListener(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "removeListener", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set__propertiesObject__(value: js.Any): Self = StObject.set(x, "__propertiesObject__", value.asInstanceOf[js.Any])
+      inline def set__propertiesObject__(value: js.Any): Self = StObject.set(x, "__propertiesObject__", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -48,15 +48,10 @@ object BoundEventAst {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def calcFullName(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("calcFullName")(name.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def calcFullName(name: String, target: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("calcFullName")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def calcFullName(name: String, target: String, phase: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("calcFullName")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], phase.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def calcFullName(name: String, target: Null, phase: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("calcFullName")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], phase.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def calcFullName(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("calcFullName")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def calcFullName(name: String, target: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("calcFullName")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def calcFullName(name: String, target: String, phase: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("calcFullName")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], phase.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def calcFullName(name: String, target: Null, phase: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("calcFullName")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], phase.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def fromParsedEvent(event: typings.angularCompiler.astMod.ParsedEvent): typings.angularCompiler.templateAstMod.BoundEventAst = ^.asInstanceOf[js.Dynamic].applyDynamic("fromParsedEvent")(event.asInstanceOf[js.Any]).asInstanceOf[typings.angularCompiler.templateAstMod.BoundEventAst]
+  inline def fromParsedEvent(event: typings.angularCompiler.astMod.ParsedEvent): typings.angularCompiler.templateAstMod.BoundEventAst = ^.asInstanceOf[js.Dynamic].applyDynamic("fromParsedEvent")(event.asInstanceOf[js.Any]).asInstanceOf[typings.angularCompiler.templateAstMod.BoundEventAst]
 }

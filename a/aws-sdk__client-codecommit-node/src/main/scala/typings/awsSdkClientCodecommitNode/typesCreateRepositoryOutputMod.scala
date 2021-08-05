@@ -26,23 +26,18 @@ object typesCreateRepositoryOutputMod {
   }
   object CreateRepositoryOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): CreateRepositoryOutput = {
+    inline def apply($metadata: ResponseMetadata): CreateRepositoryOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateRepositoryOutput]
     }
     
-    @scala.inline
-    implicit class CreateRepositoryOutputMutableBuilder[Self <: CreateRepositoryOutput] (val x: Self) extends AnyVal {
+    extension [Self <: CreateRepositoryOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepositoryMetadata(value: UnmarshalledRepositoryMetadata): Self = StObject.set(x, "repositoryMetadata", value.asInstanceOf[js.Any])
+      inline def setRepositoryMetadata(value: UnmarshalledRepositoryMetadata): Self = StObject.set(x, "repositoryMetadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepositoryMetadataUndefined: Self = StObject.set(x, "repositoryMetadata", js.undefined)
+      inline def setRepositoryMetadataUndefined: Self = StObject.set(x, "repositoryMetadata", js.undefined)
     }
   }
 }

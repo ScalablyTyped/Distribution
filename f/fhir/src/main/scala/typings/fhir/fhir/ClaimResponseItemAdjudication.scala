@@ -38,40 +38,29 @@ trait ClaimResponseItemAdjudication
 }
 object ClaimResponseItemAdjudication {
   
-  @scala.inline
-  def apply(category: CodeableConcept): ClaimResponseItemAdjudication = {
+  inline def apply(category: CodeableConcept): ClaimResponseItemAdjudication = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClaimResponseItemAdjudication]
   }
   
-  @scala.inline
-  implicit class ClaimResponseItemAdjudicationMutableBuilder[Self <: ClaimResponseItemAdjudication] (val x: Self) extends AnyVal {
+  extension [Self <: ClaimResponseItemAdjudication](x: Self) {
     
-    @scala.inline
-    def setAmount(value: Money): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: Money): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
+    inline def setAmountUndefined: Self = StObject.set(x, "amount", js.undefined)
     
-    @scala.inline
-    def setCategory(value: CodeableConcept): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: CodeableConcept): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: CodeableConcept): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: CodeableConcept): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
-    @scala.inline
-    def setValue(value: decimal): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: decimal): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     
-    @scala.inline
-    def set_value(value: Element): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
+    inline def set_value(value: Element): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_valueUndefined: Self = StObject.set(x, "_value", js.undefined)
+    inline def set_valueUndefined: Self = StObject.set(x, "_value", js.undefined)
   }
 }

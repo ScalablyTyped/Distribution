@@ -10,8 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def docopt(doc: String, options: DocoptOption): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("docopt")(doc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def docopt(doc: String, options: DocoptOption): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("docopt")(doc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   trait DocoptOption extends StObject {
     
@@ -32,47 +31,34 @@ object mod {
   }
   object DocoptOption {
     
-    @scala.inline
-    def apply(): DocoptOption = {
+    inline def apply(): DocoptOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DocoptOption]
     }
     
-    @scala.inline
-    implicit class DocoptOptionMutableBuilder[Self <: DocoptOption] (val x: Self) extends AnyVal {
+    extension [Self <: DocoptOption](x: Self) {
       
-      @scala.inline
-      def setArgv(value: js.Array[String]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
+      inline def setArgv(value: js.Array[String]): Self = StObject.set(x, "argv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgvUndefined: Self = StObject.set(x, "argv", js.undefined)
+      inline def setArgvUndefined: Self = StObject.set(x, "argv", js.undefined)
       
-      @scala.inline
-      def setArgvVarargs(value: String*): Self = StObject.set(x, "argv", js.Array(value :_*))
+      inline def setArgvVarargs(value: String*): Self = StObject.set(x, "argv", js.Array(value :_*))
       
-      @scala.inline
-      def setExit(value: Boolean): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
+      inline def setExit(value: Boolean): Self = StObject.set(x, "exit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
+      inline def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
       
-      @scala.inline
-      def setHelp(value: Boolean): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
+      inline def setHelp(value: Boolean): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
+      inline def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
       
-      @scala.inline
-      def setOptions_first(value: Boolean): Self = StObject.set(x, "options_first", value.asInstanceOf[js.Any])
+      inline def setOptions_first(value: Boolean): Self = StObject.set(x, "options_first", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions_firstUndefined: Self = StObject.set(x, "options_first", js.undefined)
+      inline def setOptions_firstUndefined: Self = StObject.set(x, "options_first", js.undefined)
       
-      @scala.inline
-      def setVersion(value: js.Any): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: js.Any): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
 }

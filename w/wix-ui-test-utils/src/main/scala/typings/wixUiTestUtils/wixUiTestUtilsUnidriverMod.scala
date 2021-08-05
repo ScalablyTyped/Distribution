@@ -25,6 +25,5 @@ object wixUiTestUtilsUnidriverMod {
   @js.native
   val StylableUnidriverUtil: Instantiable1[/* style */ CommonStylesheet, StylableCompatUniDriver] = js.native
   
-  @scala.inline
-  def baseUniDriverFactory(base: UniDriver[js.Any]): BaseUniDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("baseUniDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[BaseUniDriver]
+  inline def baseUniDriverFactory(base: UniDriver[js.Any]): BaseUniDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("baseUniDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[BaseUniDriver]
 }

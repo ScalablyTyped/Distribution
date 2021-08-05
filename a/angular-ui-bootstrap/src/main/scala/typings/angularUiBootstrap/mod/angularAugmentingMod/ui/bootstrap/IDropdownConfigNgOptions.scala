@@ -10,8 +10,7 @@ trait IDropdownConfigNgOptions
      with INgModelOptions
 object IDropdownConfigNgOptions {
   
-  @scala.inline
-  def apply(): IDropdownConfigNgOptions = {
+  inline def apply(): IDropdownConfigNgOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDropdownConfigNgOptions]
   }

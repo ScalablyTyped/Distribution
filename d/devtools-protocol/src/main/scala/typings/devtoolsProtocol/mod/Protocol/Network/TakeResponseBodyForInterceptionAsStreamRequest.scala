@@ -10,16 +10,13 @@ trait TakeResponseBodyForInterceptionAsStreamRequest extends StObject {
 }
 object TakeResponseBodyForInterceptionAsStreamRequest {
   
-  @scala.inline
-  def apply(interceptionId: InterceptionId): TakeResponseBodyForInterceptionAsStreamRequest = {
+  inline def apply(interceptionId: InterceptionId): TakeResponseBodyForInterceptionAsStreamRequest = {
     val __obj = js.Dynamic.literal(interceptionId = interceptionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TakeResponseBodyForInterceptionAsStreamRequest]
   }
   
-  @scala.inline
-  implicit class TakeResponseBodyForInterceptionAsStreamRequestMutableBuilder[Self <: TakeResponseBodyForInterceptionAsStreamRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TakeResponseBodyForInterceptionAsStreamRequest](x: Self) {
     
-    @scala.inline
-    def setInterceptionId(value: InterceptionId): Self = StObject.set(x, "interceptionId", value.asInstanceOf[js.Any])
+    inline def setInterceptionId(value: InterceptionId): Self = StObject.set(x, "interceptionId", value.asInstanceOf[js.Any])
   }
 }

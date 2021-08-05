@@ -33,20 +33,16 @@ object pricingMod {
   }
   object AttributeValue {
     
-    @scala.inline
-    def apply(): AttributeValue = {
+    inline def apply(): AttributeValue = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AttributeValue]
     }
     
-    @scala.inline
-    implicit class AttributeValueMutableBuilder[Self <: AttributeValue] (val x: Self) extends AnyVal {
+    extension [Self <: AttributeValue](x: Self) {
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
     }
   }
   
@@ -65,20 +61,16 @@ object pricingMod {
   }
   object ClientApiVersions {
     
-    @scala.inline
-    def apply(): ClientApiVersions = {
+    inline def apply(): ClientApiVersions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    @scala.inline
-    implicit class ClientApiVersionsMutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientApiVersions](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     }
   }
   
@@ -111,38 +103,28 @@ object pricingMod {
   }
   object DescribeServicesRequest {
     
-    @scala.inline
-    def apply(): DescribeServicesRequest = {
+    inline def apply(): DescribeServicesRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DescribeServicesRequest]
     }
     
-    @scala.inline
-    implicit class DescribeServicesRequestMutableBuilder[Self <: DescribeServicesRequest] (val x: Self) extends AnyVal {
+    extension [Self <: DescribeServicesRequest](x: Self) {
       
-      @scala.inline
-      def setFormatVersion(value: String): Self = StObject.set(x, "FormatVersion", value.asInstanceOf[js.Any])
+      inline def setFormatVersion(value: String): Self = StObject.set(x, "FormatVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatVersionUndefined: Self = StObject.set(x, "FormatVersion", js.undefined)
+      inline def setFormatVersionUndefined: Self = StObject.set(x, "FormatVersion", js.undefined)
       
-      @scala.inline
-      def setMaxResults(value: BoxedInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+      inline def setMaxResults(value: BoxedInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+      inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
       
-      @scala.inline
-      def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
       
-      @scala.inline
-      def setServiceCode(value: String): Self = StObject.set(x, "ServiceCode", value.asInstanceOf[js.Any])
+      inline def setServiceCode(value: String): Self = StObject.set(x, "ServiceCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceCodeUndefined: Self = StObject.set(x, "ServiceCode", js.undefined)
+      inline def setServiceCodeUndefined: Self = StObject.set(x, "ServiceCode", js.undefined)
     }
   }
   
@@ -165,35 +147,26 @@ object pricingMod {
   }
   object DescribeServicesResponse {
     
-    @scala.inline
-    def apply(): DescribeServicesResponse = {
+    inline def apply(): DescribeServicesResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DescribeServicesResponse]
     }
     
-    @scala.inline
-    implicit class DescribeServicesResponseMutableBuilder[Self <: DescribeServicesResponse] (val x: Self) extends AnyVal {
+    extension [Self <: DescribeServicesResponse](x: Self) {
       
-      @scala.inline
-      def setFormatVersion(value: String): Self = StObject.set(x, "FormatVersion", value.asInstanceOf[js.Any])
+      inline def setFormatVersion(value: String): Self = StObject.set(x, "FormatVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatVersionUndefined: Self = StObject.set(x, "FormatVersion", js.undefined)
+      inline def setFormatVersionUndefined: Self = StObject.set(x, "FormatVersion", js.undefined)
       
-      @scala.inline
-      def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
       
-      @scala.inline
-      def setServices(value: ServiceList): Self = StObject.set(x, "Services", value.asInstanceOf[js.Any])
+      inline def setServices(value: ServiceList): Self = StObject.set(x, "Services", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServicesUndefined: Self = StObject.set(x, "Services", js.undefined)
+      inline def setServicesUndefined: Self = StObject.set(x, "Services", js.undefined)
       
-      @scala.inline
-      def setServicesVarargs(value: Service*): Self = StObject.set(x, "Services", js.Array(value :_*))
+      inline def setServicesVarargs(value: Service*): Self = StObject.set(x, "Services", js.Array(value :_*))
     }
   }
   
@@ -216,23 +189,18 @@ object pricingMod {
   }
   object Filter {
     
-    @scala.inline
-    def apply(Field: String, Type: FilterType, Value: String): Filter = {
+    inline def apply(Field: String, Type: FilterType, Value: String): Filter = {
       val __obj = js.Dynamic.literal(Field = Field.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Filter]
     }
     
-    @scala.inline
-    implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
+    extension [Self <: Filter](x: Self) {
       
-      @scala.inline
-      def setField(value: String): Self = StObject.set(x, "Field", value.asInstanceOf[js.Any])
+      inline def setField(value: String): Self = StObject.set(x, "Field", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: FilterType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: FilterType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -264,32 +232,24 @@ object pricingMod {
   }
   object GetAttributeValuesRequest {
     
-    @scala.inline
-    def apply(AttributeName: String, ServiceCode: String): GetAttributeValuesRequest = {
+    inline def apply(AttributeName: String, ServiceCode: String): GetAttributeValuesRequest = {
       val __obj = js.Dynamic.literal(AttributeName = AttributeName.asInstanceOf[js.Any], ServiceCode = ServiceCode.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetAttributeValuesRequest]
     }
     
-    @scala.inline
-    implicit class GetAttributeValuesRequestMutableBuilder[Self <: GetAttributeValuesRequest] (val x: Self) extends AnyVal {
+    extension [Self <: GetAttributeValuesRequest](x: Self) {
       
-      @scala.inline
-      def setAttributeName(value: String): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
+      inline def setAttributeName(value: String): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxResults(value: BoxedInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+      inline def setMaxResults(value: BoxedInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+      inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
       
-      @scala.inline
-      def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
       
-      @scala.inline
-      def setServiceCode(value: String): Self = StObject.set(x, "ServiceCode", value.asInstanceOf[js.Any])
+      inline def setServiceCode(value: String): Self = StObject.set(x, "ServiceCode", value.asInstanceOf[js.Any])
     }
   }
   
@@ -307,29 +267,22 @@ object pricingMod {
   }
   object GetAttributeValuesResponse {
     
-    @scala.inline
-    def apply(): GetAttributeValuesResponse = {
+    inline def apply(): GetAttributeValuesResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetAttributeValuesResponse]
     }
     
-    @scala.inline
-    implicit class GetAttributeValuesResponseMutableBuilder[Self <: GetAttributeValuesResponse] (val x: Self) extends AnyVal {
+    extension [Self <: GetAttributeValuesResponse](x: Self) {
       
-      @scala.inline
-      def setAttributeValues(value: AttributeValueList): Self = StObject.set(x, "AttributeValues", value.asInstanceOf[js.Any])
+      inline def setAttributeValues(value: AttributeValueList): Self = StObject.set(x, "AttributeValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeValuesUndefined: Self = StObject.set(x, "AttributeValues", js.undefined)
+      inline def setAttributeValuesUndefined: Self = StObject.set(x, "AttributeValues", js.undefined)
       
-      @scala.inline
-      def setAttributeValuesVarargs(value: AttributeValue*): Self = StObject.set(x, "AttributeValues", js.Array(value :_*))
+      inline def setAttributeValuesVarargs(value: AttributeValue*): Self = StObject.set(x, "AttributeValues", js.Array(value :_*))
       
-      @scala.inline
-      def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     }
   }
   
@@ -362,47 +315,34 @@ object pricingMod {
   }
   object GetProductsRequest {
     
-    @scala.inline
-    def apply(): GetProductsRequest = {
+    inline def apply(): GetProductsRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetProductsRequest]
     }
     
-    @scala.inline
-    implicit class GetProductsRequestMutableBuilder[Self <: GetProductsRequest] (val x: Self) extends AnyVal {
+    extension [Self <: GetProductsRequest](x: Self) {
       
-      @scala.inline
-      def setFilters(value: Filters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: Filters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
       
-      @scala.inline
-      def setFormatVersion(value: String): Self = StObject.set(x, "FormatVersion", value.asInstanceOf[js.Any])
+      inline def setFormatVersion(value: String): Self = StObject.set(x, "FormatVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatVersionUndefined: Self = StObject.set(x, "FormatVersion", js.undefined)
+      inline def setFormatVersionUndefined: Self = StObject.set(x, "FormatVersion", js.undefined)
       
-      @scala.inline
-      def setMaxResults(value: BoxedInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+      inline def setMaxResults(value: BoxedInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+      inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
       
-      @scala.inline
-      def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
       
-      @scala.inline
-      def setServiceCode(value: String): Self = StObject.set(x, "ServiceCode", value.asInstanceOf[js.Any])
+      inline def setServiceCode(value: String): Self = StObject.set(x, "ServiceCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceCodeUndefined: Self = StObject.set(x, "ServiceCode", js.undefined)
+      inline def setServiceCodeUndefined: Self = StObject.set(x, "ServiceCode", js.undefined)
     }
   }
   
@@ -425,35 +365,26 @@ object pricingMod {
   }
   object GetProductsResponse {
     
-    @scala.inline
-    def apply(): GetProductsResponse = {
+    inline def apply(): GetProductsResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetProductsResponse]
     }
     
-    @scala.inline
-    implicit class GetProductsResponseMutableBuilder[Self <: GetProductsResponse] (val x: Self) extends AnyVal {
+    extension [Self <: GetProductsResponse](x: Self) {
       
-      @scala.inline
-      def setFormatVersion(value: String): Self = StObject.set(x, "FormatVersion", value.asInstanceOf[js.Any])
+      inline def setFormatVersion(value: String): Self = StObject.set(x, "FormatVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatVersionUndefined: Self = StObject.set(x, "FormatVersion", js.undefined)
+      inline def setFormatVersionUndefined: Self = StObject.set(x, "FormatVersion", js.undefined)
       
-      @scala.inline
-      def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
       
-      @scala.inline
-      def setPriceList(value: PriceList): Self = StObject.set(x, "PriceList", value.asInstanceOf[js.Any])
+      inline def setPriceList(value: PriceList): Self = StObject.set(x, "PriceList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriceListUndefined: Self = StObject.set(x, "PriceList", js.undefined)
+      inline def setPriceListUndefined: Self = StObject.set(x, "PriceList", js.undefined)
       
-      @scala.inline
-      def setPriceListVarargs(value: PriceListItemJSON*): Self = StObject.set(x, "PriceList", js.Array(value :_*))
+      inline def setPriceListVarargs(value: PriceListItemJSON*): Self = StObject.set(x, "PriceList", js.Array(value :_*))
     }
   }
   
@@ -525,29 +456,22 @@ object pricingMod {
   }
   object Service {
     
-    @scala.inline
-    def apply(): Service = {
+    inline def apply(): Service = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Service]
     }
     
-    @scala.inline
-    implicit class ServiceMutableBuilder[Self <: Service] (val x: Self) extends AnyVal {
+    extension [Self <: Service](x: Self) {
       
-      @scala.inline
-      def setAttributeNames(value: AttributeNameList): Self = StObject.set(x, "AttributeNames", value.asInstanceOf[js.Any])
+      inline def setAttributeNames(value: AttributeNameList): Self = StObject.set(x, "AttributeNames", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributeNamesUndefined: Self = StObject.set(x, "AttributeNames", js.undefined)
+      inline def setAttributeNamesUndefined: Self = StObject.set(x, "AttributeNames", js.undefined)
       
-      @scala.inline
-      def setAttributeNamesVarargs(value: String*): Self = StObject.set(x, "AttributeNames", js.Array(value :_*))
+      inline def setAttributeNamesVarargs(value: String*): Self = StObject.set(x, "AttributeNames", js.Array(value :_*))
       
-      @scala.inline
-      def setServiceCode(value: String): Self = StObject.set(x, "ServiceCode", value.asInstanceOf[js.Any])
+      inline def setServiceCode(value: String): Self = StObject.set(x, "ServiceCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceCodeUndefined: Self = StObject.set(x, "ServiceCode", js.undefined)
+      inline def setServiceCodeUndefined: Self = StObject.set(x, "ServiceCode", js.undefined)
     }
   }
   

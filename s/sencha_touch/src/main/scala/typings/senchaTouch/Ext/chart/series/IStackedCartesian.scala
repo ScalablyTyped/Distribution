@@ -34,43 +34,31 @@ trait IStackedCartesian
 }
 object IStackedCartesian {
   
-  @scala.inline
-  def apply(): IStackedCartesian = {
+  inline def apply(): IStackedCartesian = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IStackedCartesian]
   }
   
-  @scala.inline
-  implicit class IStackedCartesianMutableBuilder[Self <: IStackedCartesian] (val x: Self) extends AnyVal {
+  extension [Self <: IStackedCartesian](x: Self) {
     
-    @scala.inline
-    def setGetStacked(value: () => Boolean): Self = StObject.set(x, "getStacked", js.Any.fromFunction0(value))
+    inline def setGetStacked(value: () => Boolean): Self = StObject.set(x, "getStacked", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetStackedUndefined: Self = StObject.set(x, "getStacked", js.undefined)
+    inline def setGetStackedUndefined: Self = StObject.set(x, "getStacked", js.undefined)
     
-    @scala.inline
-    def setHidden(value: Array): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: Array): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
-    @scala.inline
-    def setSetHidden(value: /* hidden */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setHidden", js.Any.fromFunction1(value))
+    inline def setSetHidden(value: /* hidden */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setHidden", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetHiddenUndefined: Self = StObject.set(x, "setHidden", js.undefined)
+    inline def setSetHiddenUndefined: Self = StObject.set(x, "setHidden", js.undefined)
     
-    @scala.inline
-    def setSetStacked(value: /* stacked */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setStacked", js.Any.fromFunction1(value))
+    inline def setSetStacked(value: /* stacked */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setStacked", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetStackedUndefined: Self = StObject.set(x, "setStacked", js.undefined)
+    inline def setSetStackedUndefined: Self = StObject.set(x, "setStacked", js.undefined)
     
-    @scala.inline
-    def setStacked(value: Boolean): Self = StObject.set(x, "stacked", value.asInstanceOf[js.Any])
+    inline def setStacked(value: Boolean): Self = StObject.set(x, "stacked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackedUndefined: Self = StObject.set(x, "stacked", js.undefined)
+    inline def setStackedUndefined: Self = StObject.set(x, "stacked", js.undefined)
   }
 }

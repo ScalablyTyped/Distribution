@@ -18,25 +18,19 @@ trait RecordError extends StObject {
 }
 object RecordError {
   
-  @scala.inline
-  def apply(): RecordError = {
+  inline def apply(): RecordError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecordError]
   }
   
-  @scala.inline
-  implicit class RecordErrorMutableBuilder[Self <: RecordError] (val x: Self) extends AnyVal {
+  extension [Self <: RecordError](x: Self) {
     
-    @scala.inline
-    def setCode(value: ErrorCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
+    inline def setCode(value: ErrorCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "Code", js.undefined)
     
-    @scala.inline
-    def setDescription(value: ErrorDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: ErrorDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
   }
 }

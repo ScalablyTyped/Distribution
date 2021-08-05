@@ -11,8 +11,7 @@ trait ManipulationInertiaStartingEventArgs
      with IManipulationInertiaStartingEventArgs
 object ManipulationInertiaStartingEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cumulative: ManipulationDelta,
     delta: ManipulationDelta,
     pointerDeviceType: PointerDeviceType,

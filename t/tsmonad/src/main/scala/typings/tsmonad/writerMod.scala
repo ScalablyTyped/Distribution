@@ -37,12 +37,12 @@ object writerMod {
     /* CompleteClass */
     override def of[U](t: U): Monad[U] = js.native
     
-    var story: js.Any = js.native
+    /* private */ var story: js.Any = js.native
     
     /* CompleteClass */
     override def unit[U](t: U): Monad[U] = js.native
     
-    var value: js.Any = js.native
+    /* private */ var value: js.Any = js.native
   }
   /* static members */
   object Writer_ {
@@ -51,15 +51,12 @@ object writerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def tell[S](s: S): Writer_[S, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("tell")(s.asInstanceOf[js.Any]).asInstanceOf[Writer_[S, Double]]
+    inline def tell[S](s: S): Writer_[S, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("tell")(s.asInstanceOf[js.Any]).asInstanceOf[Writer_[S, Double]]
     
-    @scala.inline
-    def writer[S, T](story: js.Array[S], value: T): Writer_[S, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("writer")(story.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Writer_[S, T]]
+    inline def writer[S, T](story: js.Array[S], value: T): Writer_[S, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("writer")(story.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Writer_[S, T]]
   }
   
-  @scala.inline
-  def writer[S, T](story: js.Array[S], value: T): Writer_[S, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("writer")(story.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Writer_[S, T]]
+  inline def writer[S, T](story: js.Array[S], value: T): Writer_[S, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("writer")(story.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Writer_[S, T]]
   
   trait WriterPatterns[S, T, U] extends StObject {
     
@@ -67,17 +64,14 @@ object writerMod {
   }
   object WriterPatterns {
     
-    @scala.inline
-    def apply[S, T, U](writer: (js.Array[S], T) => U): WriterPatterns[S, T, U] = {
+    inline def apply[S, T, U](writer: (js.Array[S], T) => U): WriterPatterns[S, T, U] = {
       val __obj = js.Dynamic.literal(writer = js.Any.fromFunction2(writer))
       __obj.asInstanceOf[WriterPatterns[S, T, U]]
     }
     
-    @scala.inline
-    implicit class WriterPatternsMutableBuilder[Self <: WriterPatterns[?, ?, ?], S, T, U] (val x: Self & (WriterPatterns[S, T, U])) extends AnyVal {
+    extension [Self <: WriterPatterns[?, ?, ?], S, T, U](x: Self & (WriterPatterns[S, T, U])) {
       
-      @scala.inline
-      def setWriter(value: (js.Array[S], T) => U): Self = StObject.set(x, "writer", js.Any.fromFunction2(value))
+      inline def setWriter(value: (js.Array[S], T) => U): Self = StObject.set(x, "writer", js.Any.fromFunction2(value))
     }
   }
 }

@@ -18,8 +18,7 @@ trait RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRule e
 }
 object RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRule {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     priority: Double,
     ruleDefinition: RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinition
   ): RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRule = {
@@ -27,13 +26,10 @@ object RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRule 
     __obj.asInstanceOf[RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRule]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleMutableBuilder[Self <: RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRule] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRule](x: Self) {
     
-    @scala.inline
-    def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+    inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleDefinition(value: RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinition): Self = StObject.set(x, "ruleDefinition", value.asInstanceOf[js.Any])
+    inline def setRuleDefinition(value: RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinition): Self = StObject.set(x, "ruleDefinition", value.asInstanceOf[js.Any])
   }
 }

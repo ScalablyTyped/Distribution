@@ -100,95 +100,66 @@ object mod {
   }
   object EmailConfig {
     
-    @scala.inline
-    def apply[T](message: Options): EmailConfig[T] = {
+    inline def apply[T](message: Options): EmailConfig[T] = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[EmailConfig[T]]
     }
     
-    @scala.inline
-    implicit class EmailConfigMutableBuilder[Self <: EmailConfig[?], T] (val x: Self & EmailConfig[T]) extends AnyVal {
+    extension [Self <: EmailConfig[?], T](x: Self & EmailConfig[T]) {
       
-      @scala.inline
-      def setCustomRender(value: Boolean): Self = StObject.set(x, "customRender", value.asInstanceOf[js.Any])
+      inline def setCustomRender(value: Boolean): Self = StObject.set(x, "customRender", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomRenderUndefined: Self = StObject.set(x, "customRender", js.undefined)
+      inline def setCustomRenderUndefined: Self = StObject.set(x, "customRender", js.undefined)
       
-      @scala.inline
-      def setGetPath(value: (/* path */ String, /* template */ String, /* locals */ js.Any) => String): Self = StObject.set(x, "getPath", js.Any.fromFunction3(value))
+      inline def setGetPath(value: (/* path */ String, /* template */ String, /* locals */ js.Any) => String): Self = StObject.set(x, "getPath", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetPathUndefined: Self = StObject.set(x, "getPath", js.undefined)
+      inline def setGetPathUndefined: Self = StObject.set(x, "getPath", js.undefined)
       
-      @scala.inline
-      def setHtmlToText(value: HtmlToTextOptions | `false`): Self = StObject.set(x, "htmlToText", value.asInstanceOf[js.Any])
+      inline def setHtmlToText(value: HtmlToTextOptions | `false`): Self = StObject.set(x, "htmlToText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlToTextUndefined: Self = StObject.set(x, "htmlToText", js.undefined)
+      inline def setHtmlToTextUndefined: Self = StObject.set(x, "htmlToText", js.undefined)
       
-      @scala.inline
-      def setI18n(value: js.Any): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
+      inline def setI18n(value: js.Any): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setI18nUndefined: Self = StObject.set(x, "i18n", js.undefined)
+      inline def setI18nUndefined: Self = StObject.set(x, "i18n", js.undefined)
       
-      @scala.inline
-      def setJuice(value: Boolean): Self = StObject.set(x, "juice", value.asInstanceOf[js.Any])
+      inline def setJuice(value: Boolean): Self = StObject.set(x, "juice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJuiceResources(value: js.Any): Self = StObject.set(x, "juiceResources", value.asInstanceOf[js.Any])
+      inline def setJuiceResources(value: js.Any): Self = StObject.set(x, "juiceResources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJuiceResourcesUndefined: Self = StObject.set(x, "juiceResources", js.undefined)
+      inline def setJuiceResourcesUndefined: Self = StObject.set(x, "juiceResources", js.undefined)
       
-      @scala.inline
-      def setJuiceUndefined: Self = StObject.set(x, "juice", js.undefined)
+      inline def setJuiceUndefined: Self = StObject.set(x, "juice", js.undefined)
       
-      @scala.inline
-      def setMessage(value: Options): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: Options): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreview(value: Boolean | PreviewEmailOpts): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+      inline def setPreview(value: Boolean | PreviewEmailOpts): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
+      inline def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
       
-      @scala.inline
-      def setRender(value: (/* view */ String, /* locals */ js.UndefOr[T]) => js.Promise[js.Any]): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+      inline def setRender(value: (/* view */ String, /* locals */ js.UndefOr[T]) => js.Promise[js.Any]): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
-      @scala.inline
-      def setSend(value: Boolean): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
+      inline def setSend(value: Boolean): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSendUndefined: Self = StObject.set(x, "send", js.undefined)
+      inline def setSendUndefined: Self = StObject.set(x, "send", js.undefined)
       
-      @scala.inline
-      def setSubjectPrefix(value: String | `false`): Self = StObject.set(x, "subjectPrefix", value.asInstanceOf[js.Any])
+      inline def setSubjectPrefix(value: String | `false`): Self = StObject.set(x, "subjectPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubjectPrefixUndefined: Self = StObject.set(x, "subjectPrefix", js.undefined)
+      inline def setSubjectPrefixUndefined: Self = StObject.set(x, "subjectPrefix", js.undefined)
       
-      @scala.inline
-      def setTextOnly(value: Boolean): Self = StObject.set(x, "textOnly", value.asInstanceOf[js.Any])
+      inline def setTextOnly(value: Boolean): Self = StObject.set(x, "textOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextOnlyUndefined: Self = StObject.set(x, "textOnly", js.undefined)
+      inline def setTextOnlyUndefined: Self = StObject.set(x, "textOnly", js.undefined)
       
-      @scala.inline
-      def setTransport(value: NodeMailerTransportOptions): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+      inline def setTransport(value: NodeMailerTransportOptions): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
+      inline def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
       
-      @scala.inline
-      def setViews(value: View): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+      inline def setViews(value: View): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
+      inline def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
     }
   }
   
@@ -202,23 +173,18 @@ object mod {
   }
   object EmailMessage {
     
-    @scala.inline
-    def apply(html: String, subject: String, text: String): EmailMessage = {
+    inline def apply(html: String, subject: String, text: String): EmailMessage = {
       val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any], subject = subject.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[EmailMessage]
     }
     
-    @scala.inline
-    implicit class EmailMessageMutableBuilder[Self <: EmailMessage] (val x: Self) extends AnyVal {
+    extension [Self <: EmailMessage](x: Self) {
       
-      @scala.inline
-      def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+      inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -243,26 +209,20 @@ object mod {
   }
   object EmailOptions {
     
-    @scala.inline
-    def apply[T](message: Options, template: String): EmailOptions[T] = {
+    inline def apply[T](message: Options, template: String): EmailOptions[T] = {
       val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
       __obj.asInstanceOf[EmailOptions[T]]
     }
     
-    @scala.inline
-    implicit class EmailOptionsMutableBuilder[Self <: EmailOptions[?], T] (val x: Self & EmailOptions[T]) extends AnyVal {
+    extension [Self <: EmailOptions[?], T](x: Self & EmailOptions[T]) {
       
-      @scala.inline
-      def setLocals(value: T): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
+      inline def setLocals(value: T): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
+      inline def setLocalsUndefined: Self = StObject.set(x, "locals", js.undefined)
       
-      @scala.inline
-      def setMessage(value: Options): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: Options): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     }
   }
   
@@ -329,38 +289,28 @@ object mod {
   }
   object PreviewEmailOpts {
     
-    @scala.inline
-    def apply(): PreviewEmailOpts = {
+    inline def apply(): PreviewEmailOpts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PreviewEmailOpts]
     }
     
-    @scala.inline
-    implicit class PreviewEmailOptsMutableBuilder[Self <: PreviewEmailOpts] (val x: Self) extends AnyVal {
+    extension [Self <: PreviewEmailOpts](x: Self) {
       
-      @scala.inline
-      def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+      inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setOpen(value: js.Any): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: js.Any): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+      inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
       
-      @scala.inline
-      def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+      inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     }
   }
   
@@ -375,26 +325,20 @@ object mod {
   }
   object View {
     
-    @scala.inline
-    def apply(): View = {
+    inline def apply(): View = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[View]
     }
     
-    @scala.inline
-    implicit class ViewMutableBuilder[Self <: View] (val x: Self) extends AnyVal {
+    extension [Self <: View](x: Self) {
       
-      @scala.inline
-      def setOptions(value: ViewOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: ViewOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     }
   }
   
@@ -418,32 +362,24 @@ object mod {
   }
   object ViewOptions {
     
-    @scala.inline
-    def apply(): ViewOptions = {
+    inline def apply(): ViewOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ViewOptions]
     }
     
-    @scala.inline
-    implicit class ViewOptionsMutableBuilder[Self <: ViewOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ViewOptions](x: Self) {
       
-      @scala.inline
-      def setEngineSource(value: js.Any): Self = StObject.set(x, "engineSource", value.asInstanceOf[js.Any])
+      inline def setEngineSource(value: js.Any): Self = StObject.set(x, "engineSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEngineSourceUndefined: Self = StObject.set(x, "engineSource", js.undefined)
+      inline def setEngineSourceUndefined: Self = StObject.set(x, "engineSource", js.undefined)
       
-      @scala.inline
-      def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+      inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
+      inline def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)
       
-      @scala.inline
-      def setMap(value: js.Any): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: js.Any): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
     }
   }
 }

@@ -14,8 +14,7 @@ object Profile {
        with IHardwareToken
   object HardwareToken {
     
-    @scala.inline
-    def apply(certificate: IBuffer, id: IBuffer, signature: IBuffer): HardwareToken = {
+    inline def apply(certificate: IBuffer, id: IBuffer, signature: IBuffer): HardwareToken = {
       val __obj = js.Dynamic.literal(certificate = certificate.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
       __obj.asInstanceOf[HardwareToken]
     }
@@ -27,17 +26,14 @@ object Profile {
   }
   object IHardwareIdentificationStatics {
     
-    @scala.inline
-    def apply(getPackageSpecificToken: IBuffer => HardwareToken): IHardwareIdentificationStatics = {
+    inline def apply(getPackageSpecificToken: IBuffer => HardwareToken): IHardwareIdentificationStatics = {
       val __obj = js.Dynamic.literal(getPackageSpecificToken = js.Any.fromFunction1(getPackageSpecificToken))
       __obj.asInstanceOf[IHardwareIdentificationStatics]
     }
     
-    @scala.inline
-    implicit class IHardwareIdentificationStaticsMutableBuilder[Self <: IHardwareIdentificationStatics] (val x: Self) extends AnyVal {
+    extension [Self <: IHardwareIdentificationStatics](x: Self) {
       
-      @scala.inline
-      def setGetPackageSpecificToken(value: IBuffer => HardwareToken): Self = StObject.set(x, "getPackageSpecificToken", js.Any.fromFunction1(value))
+      inline def setGetPackageSpecificToken(value: IBuffer => HardwareToken): Self = StObject.set(x, "getPackageSpecificToken", js.Any.fromFunction1(value))
     }
   }
   
@@ -51,23 +47,18 @@ object Profile {
   }
   object IHardwareToken {
     
-    @scala.inline
-    def apply(certificate: IBuffer, id: IBuffer, signature: IBuffer): IHardwareToken = {
+    inline def apply(certificate: IBuffer, id: IBuffer, signature: IBuffer): IHardwareToken = {
       val __obj = js.Dynamic.literal(certificate = certificate.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], signature = signature.asInstanceOf[js.Any])
       __obj.asInstanceOf[IHardwareToken]
     }
     
-    @scala.inline
-    implicit class IHardwareTokenMutableBuilder[Self <: IHardwareToken] (val x: Self) extends AnyVal {
+    extension [Self <: IHardwareToken](x: Self) {
       
-      @scala.inline
-      def setCertificate(value: IBuffer): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+      inline def setCertificate(value: IBuffer): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: IBuffer): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: IBuffer): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignature(value: IBuffer): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
+      inline def setSignature(value: IBuffer): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     }
   }
 }

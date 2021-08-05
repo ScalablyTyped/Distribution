@@ -21,38 +21,28 @@ object noticeBarPropsTypeMod {
   }
   object NoticeBarPropsType {
     
-    @scala.inline
-    def apply(): NoticeBarPropsType = {
+    inline def apply(): NoticeBarPropsType = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NoticeBarPropsType]
     }
     
-    @scala.inline
-    implicit class NoticeBarPropsTypeMutableBuilder[Self <: NoticeBarPropsType] (val x: Self) extends AnyVal {
+    extension [Self <: NoticeBarPropsType](x: Self) {
       
-      @scala.inline
-      def setAction(value: ReactElement): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: ReactElement): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      @scala.inline
-      def setIcon(value: ReactElement): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: ReactElement): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setMode(value: closable | link): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: closable | link): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
+      inline def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
+      inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     }
   }
 }

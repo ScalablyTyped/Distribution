@@ -22,8 +22,7 @@ trait ChangeEventCR[TSchema /* <: StringDictionary[js.Any] */]
 }
 object ChangeEventCR {
   
-  @scala.inline
-  def apply[TSchema /* <: StringDictionary[js.Any] */](
+  inline def apply[TSchema /* <: StringDictionary[js.Any] */](
     _id: ResumeToken,
     clusterTime: typings.bson.mod.Timestamp,
     documentKey: `5`[TSchema],
@@ -34,19 +33,14 @@ object ChangeEventCR {
     __obj.asInstanceOf[ChangeEventCR[TSchema]]
   }
   
-  @scala.inline
-  implicit class ChangeEventCRMutableBuilder[Self <: ChangeEventCR[?], TSchema /* <: StringDictionary[js.Any] */] (val x: Self & ChangeEventCR[TSchema]) extends AnyVal {
+  extension [Self <: ChangeEventCR[?], TSchema /* <: StringDictionary[js.Any] */](x: Self & ChangeEventCR[TSchema]) {
     
-    @scala.inline
-    def setDocumentKey(value: `5`[TSchema]): Self = StObject.set(x, "documentKey", value.asInstanceOf[js.Any])
+    inline def setDocumentKey(value: `5`[TSchema]): Self = StObject.set(x, "documentKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullDocument(value: TSchema): Self = StObject.set(x, "fullDocument", value.asInstanceOf[js.Any])
+    inline def setFullDocument(value: TSchema): Self = StObject.set(x, "fullDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullDocumentUndefined: Self = StObject.set(x, "fullDocument", js.undefined)
+    inline def setFullDocumentUndefined: Self = StObject.set(x, "fullDocument", js.undefined)
     
-    @scala.inline
-    def setOperationType(value: insert | replace): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
+    inline def setOperationType(value: insert | replace): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
   }
 }

@@ -23,34 +23,25 @@ trait GetTranscriptResponse extends StObject {
 }
 object GetTranscriptResponse {
   
-  @scala.inline
-  def apply(): GetTranscriptResponse = {
+  inline def apply(): GetTranscriptResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetTranscriptResponse]
   }
   
-  @scala.inline
-  implicit class GetTranscriptResponseMutableBuilder[Self <: GetTranscriptResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetTranscriptResponse](x: Self) {
     
-    @scala.inline
-    def setInitialContactId(value: ContactId): Self = StObject.set(x, "InitialContactId", value.asInstanceOf[js.Any])
+    inline def setInitialContactId(value: ContactId): Self = StObject.set(x, "InitialContactId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialContactIdUndefined: Self = StObject.set(x, "InitialContactId", js.undefined)
+    inline def setInitialContactIdUndefined: Self = StObject.set(x, "InitialContactId", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTranscript(value: Transcript): Self = StObject.set(x, "Transcript", value.asInstanceOf[js.Any])
+    inline def setTranscript(value: Transcript): Self = StObject.set(x, "Transcript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTranscriptUndefined: Self = StObject.set(x, "Transcript", js.undefined)
+    inline def setTranscriptUndefined: Self = StObject.set(x, "Transcript", js.undefined)
     
-    @scala.inline
-    def setTranscriptVarargs(value: Item*): Self = StObject.set(x, "Transcript", js.Array(value :_*))
+    inline def setTranscriptVarargs(value: Item*): Self = StObject.set(x, "Transcript", js.Array(value :_*))
   }
 }

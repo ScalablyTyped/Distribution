@@ -128,8 +128,7 @@ trait ResourceStrings extends StObject {
 }
 object ResourceStrings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     argumentExceptionMessage: String,
     argumentNullExceptionMessage: String,
     cC_AppIconAlt: String,
@@ -195,187 +194,126 @@ object ResourceStrings {
     __obj.asInstanceOf[ResourceStrings]
   }
   
-  @scala.inline
-  implicit class ResourceStringsMutableBuilder[Self <: ResourceStrings] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceStrings](x: Self) {
     
-    @scala.inline
-    def setArgumentExceptionMessage(value: String): Self = StObject.set(x, "argumentExceptionMessage", value.asInstanceOf[js.Any])
+    inline def setArgumentExceptionMessage(value: String): Self = StObject.set(x, "argumentExceptionMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgumentNullExceptionMessage(value: String): Self = StObject.set(x, "argumentNullExceptionMessage", value.asInstanceOf[js.Any])
+    inline def setArgumentNullExceptionMessage(value: String): Self = StObject.set(x, "argumentNullExceptionMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCC_AppIconAlt(value: String): Self = StObject.set(x, "cC_AppIconAlt", value.asInstanceOf[js.Any])
+    inline def setCC_AppIconAlt(value: String): Self = StObject.set(x, "cC_AppIconAlt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCC_AppWebUrlNotSet(value: String): Self = StObject.set(x, "cC_AppWebUrlNotSet", value.asInstanceOf[js.Any])
+    inline def setCC_AppWebUrlNotSet(value: String): Self = StObject.set(x, "cC_AppWebUrlNotSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCC_ArrowImageAlt(value: String): Self = StObject.set(x, "cC_ArrowImageAlt", value.asInstanceOf[js.Any])
+    inline def setCC_ArrowImageAlt(value: String): Self = StObject.set(x, "cC_ArrowImageAlt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCC_BackToSite(value: String): Self = StObject.set(x, "cC_BackToSite", value.asInstanceOf[js.Any])
+    inline def setCC_BackToSite(value: String): Self = StObject.set(x, "cC_BackToSite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCC_ErrorGettingThemeInfo(value: String): Self = StObject.set(x, "cC_ErrorGettingThemeInfo", value.asInstanceOf[js.Any])
+    inline def setCC_ErrorGettingThemeInfo(value: String): Self = StObject.set(x, "cC_ErrorGettingThemeInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCC_HelpLinkToolTip(value: String): Self = StObject.set(x, "cC_HelpLinkToolTip", value.asInstanceOf[js.Any])
+    inline def setCC_HelpLinkToolTip(value: String): Self = StObject.set(x, "cC_HelpLinkToolTip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCC_HostSiteUrlNotSet(value: String): Self = StObject.set(x, "cC_HostSiteUrlNotSet", value.asInstanceOf[js.Any])
+    inline def setCC_HostSiteUrlNotSet(value: String): Self = StObject.set(x, "cC_HostSiteUrlNotSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCC_InvalidArgument(value: String): Self = StObject.set(x, "cC_InvalidArgument", value.asInstanceOf[js.Any])
+    inline def setCC_InvalidArgument(value: String): Self = StObject.set(x, "cC_InvalidArgument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCC_InvalidJSON(value: String): Self = StObject.set(x, "cC_InvalidJSON", value.asInstanceOf[js.Any])
+    inline def setCC_InvalidJSON(value: String): Self = StObject.set(x, "cC_InvalidJSON", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCC_InvalidOperation(value: String): Self = StObject.set(x, "cC_InvalidOperation", value.asInstanceOf[js.Any])
+    inline def setCC_InvalidOperation(value: String): Self = StObject.set(x, "cC_InvalidOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCC_PlaceHolderElementNotFound(value: String): Self = StObject.set(x, "cC_PlaceHolderElementNotFound", value.asInstanceOf[js.Any])
+    inline def setCC_PlaceHolderElementNotFound(value: String): Self = StObject.set(x, "cC_PlaceHolderElementNotFound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCC_RequiredScriptNotLoaded(value: String): Self = StObject.set(x, "cC_RequiredScriptNotLoaded", value.asInstanceOf[js.Any])
+    inline def setCC_RequiredScriptNotLoaded(value: String): Self = StObject.set(x, "cC_RequiredScriptNotLoaded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCC_SendFeedback(value: String): Self = StObject.set(x, "cC_SendFeedback", value.asInstanceOf[js.Any])
+    inline def setCC_SendFeedback(value: String): Self = StObject.set(x, "cC_SendFeedback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCC_SettingsLinkToolTip(value: String): Self = StObject.set(x, "cC_SettingsLinkToolTip", value.asInstanceOf[js.Any])
+    inline def setCC_SettingsLinkToolTip(value: String): Self = StObject.set(x, "cC_SettingsLinkToolTip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCC_TimeoutGettingThemeInfo(value: String): Self = StObject.set(x, "cC_TimeoutGettingThemeInfo", value.asInstanceOf[js.Any])
+    inline def setCC_TimeoutGettingThemeInfo(value: String): Self = StObject.set(x, "cC_TimeoutGettingThemeInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCC_Welcome(value: String): Self = StObject.set(x, "cC_Welcome", value.asInstanceOf[js.Any])
+    inline def setCC_Welcome(value: String): Self = StObject.set(x, "cC_Welcome", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCannotFindContextWebServerRelativeUrl(value: String): Self = StObject.set(x, "cannotFindContextWebServerRelativeUrl", value.asInstanceOf[js.Any])
+    inline def setCannotFindContextWebServerRelativeUrl(value: String): Self = StObject.set(x, "cannotFindContextWebServerRelativeUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectionHasNotBeenInitialized(value: String): Self = StObject.set(x, "collectionHasNotBeenInitialized", value.asInstanceOf[js.Any])
+    inline def setCollectionHasNotBeenInitialized(value: String): Self = StObject.set(x, "collectionHasNotBeenInitialized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectionModified(value: String): Self = StObject.set(x, "collectionModified", value.asInstanceOf[js.Any])
+    inline def setCollectionModified(value: String): Self = StObject.set(x, "collectionModified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidUsageOfConditionalScope(value: String): Self = StObject.set(x, "invalidUsageOfConditionalScope", value.asInstanceOf[js.Any])
+    inline def setInvalidUsageOfConditionalScope(value: String): Self = StObject.set(x, "invalidUsageOfConditionalScope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidUsageOfConditionalScopeNowAllowedAction(value: String): Self = StObject.set(x, "invalidUsageOfConditionalScopeNowAllowedAction", value.asInstanceOf[js.Any])
+    inline def setInvalidUsageOfConditionalScopeNowAllowedAction(value: String): Self = StObject.set(x, "invalidUsageOfConditionalScopeNowAllowedAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvalidUsageOfExceptionHandlingScope(value: String): Self = StObject.set(x, "invalidUsageOfExceptionHandlingScope", value.asInstanceOf[js.Any])
+    inline def setInvalidUsageOfExceptionHandlingScope(value: String): Self = StObject.set(x, "invalidUsageOfExceptionHandlingScope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamedPropertyHasNotBeenInitialized(value: String): Self = StObject.set(x, "namedPropertyHasNotBeenInitialized", value.asInstanceOf[js.Any])
+    inline def setNamedPropertyHasNotBeenInitialized(value: String): Self = StObject.set(x, "namedPropertyHasNotBeenInitialized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamedServerObjectIsNull(value: String): Self = StObject.set(x, "namedServerObjectIsNull", value.asInstanceOf[js.Any])
+    inline def setNamedServerObjectIsNull(value: String): Self = StObject.set(x, "namedServerObjectIsNull", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoObjectPathAssociatedWithObject(value: String): Self = StObject.set(x, "noObjectPathAssociatedWithObject", value.asInstanceOf[js.Any])
+    inline def setNoObjectPathAssociatedWithObject(value: String): Self = StObject.set(x, "noObjectPathAssociatedWithObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotSameClientContext(value: String): Self = StObject.set(x, "notSameClientContext", value.asInstanceOf[js.Any])
+    inline def setNotSameClientContext(value: String): Self = StObject.set(x, "notSameClientContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotSupportedQueryExpressionWithExpressionDetail(value: String): Self = StObject.set(x, "notSupportedQueryExpressionWithExpressionDetail", value.asInstanceOf[js.Any])
+    inline def setNotSupportedQueryExpressionWithExpressionDetail(value: String): Self = StObject.set(x, "notSupportedQueryExpressionWithExpressionDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectNameIdentity(value: String): Self = StObject.set(x, "objectNameIdentity", value.asInstanceOf[js.Any])
+    inline def setObjectNameIdentity(value: String): Self = StObject.set(x, "objectNameIdentity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectNameMethod(value: String): Self = StObject.set(x, "objectNameMethod", value.asInstanceOf[js.Any])
+    inline def setObjectNameMethod(value: String): Self = StObject.set(x, "objectNameMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectNameProperty(value: String): Self = StObject.set(x, "objectNameProperty", value.asInstanceOf[js.Any])
+    inline def setObjectNameProperty(value: String): Self = StObject.set(x, "objectNameProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectNameType(value: String): Self = StObject.set(x, "objectNameType", value.asInstanceOf[js.Any])
+    inline def setObjectNameType(value: String): Self = StObject.set(x, "objectNameType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyHasNotBeenInitialized(value: String): Self = StObject.set(x, "propertyHasNotBeenInitialized", value.asInstanceOf[js.Any])
+    inline def setPropertyHasNotBeenInitialized(value: String): Self = StObject.set(x, "propertyHasNotBeenInitialized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRE_BrowserBinaryDataNotSupported(value: String): Self = StObject.set(x, "rE_BrowserBinaryDataNotSupported", value.asInstanceOf[js.Any])
+    inline def setRE_BrowserBinaryDataNotSupported(value: String): Self = StObject.set(x, "rE_BrowserBinaryDataNotSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRE_BrowserNotSupported(value: String): Self = StObject.set(x, "rE_BrowserNotSupported", value.asInstanceOf[js.Any])
+    inline def setRE_BrowserNotSupported(value: String): Self = StObject.set(x, "rE_BrowserNotSupported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRE_CannotAccessSite(value: String): Self = StObject.set(x, "rE_CannotAccessSite", value.asInstanceOf[js.Any])
+    inline def setRE_CannotAccessSite(value: String): Self = StObject.set(x, "rE_CannotAccessSite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRE_CannotAccessSiteCancelled(value: String): Self = StObject.set(x, "rE_CannotAccessSiteCancelled", value.asInstanceOf[js.Any])
+    inline def setRE_CannotAccessSiteCancelled(value: String): Self = StObject.set(x, "rE_CannotAccessSiteCancelled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRE_CannotAccessSiteOpenWindowFailed(value: String): Self = StObject.set(x, "rE_CannotAccessSiteOpenWindowFailed", value.asInstanceOf[js.Any])
+    inline def setRE_CannotAccessSiteOpenWindowFailed(value: String): Self = StObject.set(x, "rE_CannotAccessSiteOpenWindowFailed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRE_DismissOpenWindowMessageLinkText(value: String): Self = StObject.set(x, "rE_DismissOpenWindowMessageLinkText", value.asInstanceOf[js.Any])
+    inline def setRE_DismissOpenWindowMessageLinkText(value: String): Self = StObject.set(x, "rE_DismissOpenWindowMessageLinkText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRE_DomainDoesNotMatch(value: String): Self = StObject.set(x, "rE_DomainDoesNotMatch", value.asInstanceOf[js.Any])
+    inline def setRE_DomainDoesNotMatch(value: String): Self = StObject.set(x, "rE_DomainDoesNotMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRE_FixitHelpMessage(value: String): Self = StObject.set(x, "rE_FixitHelpMessage", value.asInstanceOf[js.Any])
+    inline def setRE_FixitHelpMessage(value: String): Self = StObject.set(x, "rE_FixitHelpMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRE_InvalidArgumentOrField(value: String): Self = StObject.set(x, "rE_InvalidArgumentOrField", value.asInstanceOf[js.Any])
+    inline def setRE_InvalidArgumentOrField(value: String): Self = StObject.set(x, "rE_InvalidArgumentOrField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRE_InvalidOperation(value: String): Self = StObject.set(x, "rE_InvalidOperation", value.asInstanceOf[js.Any])
+    inline def setRE_InvalidOperation(value: String): Self = StObject.set(x, "rE_InvalidOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRE_NoTrustedOrigins(value: String): Self = StObject.set(x, "rE_NoTrustedOrigins", value.asInstanceOf[js.Any])
+    inline def setRE_NoTrustedOrigins(value: String): Self = StObject.set(x, "rE_NoTrustedOrigins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRE_OpenWindowButtonText(value: String): Self = StObject.set(x, "rE_OpenWindowButtonText", value.asInstanceOf[js.Any])
+    inline def setRE_OpenWindowButtonText(value: String): Self = StObject.set(x, "rE_OpenWindowButtonText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRE_OpenWindowMessage(value: String): Self = StObject.set(x, "rE_OpenWindowMessage", value.asInstanceOf[js.Any])
+    inline def setRE_OpenWindowMessage(value: String): Self = StObject.set(x, "rE_OpenWindowMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRE_RequestAbortedOrTimedout(value: String): Self = StObject.set(x, "rE_RequestAbortedOrTimedout", value.asInstanceOf[js.Any])
+    inline def setRE_RequestAbortedOrTimedout(value: String): Self = StObject.set(x, "rE_RequestAbortedOrTimedout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRE_RequestUnexpectedResponse(value: String): Self = StObject.set(x, "rE_RequestUnexpectedResponse", value.asInstanceOf[js.Any])
+    inline def setRE_RequestUnexpectedResponse(value: String): Self = StObject.set(x, "rE_RequestUnexpectedResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRE_RequestUnexpectedResponseWithContentTypeAndStatus(value: String): Self = StObject.set(x, "rE_RequestUnexpectedResponseWithContentTypeAndStatus", value.asInstanceOf[js.Any])
+    inline def setRE_RequestUnexpectedResponseWithContentTypeAndStatus(value: String): Self = StObject.set(x, "rE_RequestUnexpectedResponseWithContentTypeAndStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestAbortedOrTimedOut(value: String): Self = StObject.set(x, "requestAbortedOrTimedOut", value.asInstanceOf[js.Any])
+    inline def setRequestAbortedOrTimedOut(value: String): Self = StObject.set(x, "requestAbortedOrTimedOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestEmptyQueryName(value: String): Self = StObject.set(x, "requestEmptyQueryName", value.asInstanceOf[js.Any])
+    inline def setRequestEmptyQueryName(value: String): Self = StObject.set(x, "requestEmptyQueryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestHasBeenExecuted(value: String): Self = StObject.set(x, "requestHasBeenExecuted", value.asInstanceOf[js.Any])
+    inline def setRequestHasBeenExecuted(value: String): Self = StObject.set(x, "requestHasBeenExecuted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestUnexpectedResponse(value: String): Self = StObject.set(x, "requestUnexpectedResponse", value.asInstanceOf[js.Any])
+    inline def setRequestUnexpectedResponse(value: String): Self = StObject.set(x, "requestUnexpectedResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestUnexpectedResponseWithContentTypeAndStatus(value: String): Self = StObject.set(x, "requestUnexpectedResponseWithContentTypeAndStatus", value.asInstanceOf[js.Any])
+    inline def setRequestUnexpectedResponseWithContentTypeAndStatus(value: String): Self = StObject.set(x, "requestUnexpectedResponseWithContentTypeAndStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestUnexpectedResponseWithStatus(value: String): Self = StObject.set(x, "requestUnexpectedResponseWithStatus", value.asInstanceOf[js.Any])
+    inline def setRequestUnexpectedResponseWithStatus(value: String): Self = StObject.set(x, "requestUnexpectedResponseWithStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestUnknownResponse(value: String): Self = StObject.set(x, "requestUnknownResponse", value.asInstanceOf[js.Any])
+    inline def setRequestUnknownResponse(value: String): Self = StObject.set(x, "requestUnknownResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerObjectIsNull(value: String): Self = StObject.set(x, "serverObjectIsNull", value.asInstanceOf[js.Any])
+    inline def setServerObjectIsNull(value: String): Self = StObject.set(x, "serverObjectIsNull", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnknownError(value: String): Self = StObject.set(x, "unknownError", value.asInstanceOf[js.Any])
+    inline def setUnknownError(value: String): Self = StObject.set(x, "unknownError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnknownResponseData(value: String): Self = StObject.set(x, "unknownResponseData", value.asInstanceOf[js.Any])
+    inline def setUnknownResponseData(value: String): Self = StObject.set(x, "unknownResponseData", value.asInstanceOf[js.Any])
   }
 }

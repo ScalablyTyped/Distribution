@@ -10,16 +10,13 @@ trait ConfigPath extends StObject {
 }
 object ConfigPath {
   
-  @scala.inline
-  def apply(configPath: String): ConfigPath = {
+  inline def apply(configPath: String): ConfigPath = {
     val __obj = js.Dynamic.literal(configPath = configPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[ConfigPath]
   }
   
-  @scala.inline
-  implicit class ConfigPathMutableBuilder[Self <: ConfigPath] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigPath](x: Self) {
     
-    @scala.inline
-    def setConfigPath(value: String): Self = StObject.set(x, "configPath", value.asInstanceOf[js.Any])
+    inline def setConfigPath(value: String): Self = StObject.set(x, "configPath", value.asInstanceOf[js.Any])
   }
 }

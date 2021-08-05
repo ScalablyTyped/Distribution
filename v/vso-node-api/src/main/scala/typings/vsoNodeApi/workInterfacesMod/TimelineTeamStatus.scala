@@ -12,20 +12,16 @@ trait TimelineTeamStatus extends StObject {
 }
 object TimelineTeamStatus {
   
-  @scala.inline
-  def apply(message: String, `type`: TimelineTeamStatusCode): TimelineTeamStatus = {
+  inline def apply(message: String, `type`: TimelineTeamStatusCode): TimelineTeamStatus = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimelineTeamStatus]
   }
   
-  @scala.inline
-  implicit class TimelineTeamStatusMutableBuilder[Self <: TimelineTeamStatus] (val x: Self) extends AnyVal {
+  extension [Self <: TimelineTeamStatus](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: TimelineTeamStatusCode): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TimelineTeamStatusCode): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

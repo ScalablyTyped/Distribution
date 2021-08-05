@@ -14,18 +14,18 @@ object entityMod {
   @JSImport("twilio-sync/lib/entity", JSImport.Default)
   @js.native
   abstract class default protected () extends SyncEntity {
-    protected def this(services: EntityServices, removalHandler: RemovalHandler) = this()
+    /* protected */ def this(services: EntityServices, removalHandler: RemovalHandler) = this()
   }
   
   @JSImport("twilio-sync/lib/entity", "SyncEntity")
   @js.native
   abstract class SyncEntity protected () extends StObject {
-    protected def this(services: EntityServices, removalHandler: RemovalHandler) = this()
+    /* protected */ def this(services: EntityServices, removalHandler: RemovalHandler) = this()
     
     def _advanceLastEventId(eventId: Double): Unit = js.native
     def _advanceLastEventId(eventId: Double, revision: String): Unit = js.native
     
-    val _attachedListeners: js.Any = js.native
+    /* private */ val _attachedListeners: js.Any = js.native
     
     def _setSubscriptionState(newState: SubscriptionState): Unit = js.native
     
@@ -66,11 +66,11 @@ object entityMod {
     
     def reportFailure(err: SyncError): Unit = js.native
     
-    val services: EntityServices = js.native
+    /* protected */ val services: EntityServices = js.native
     
     def sid: String = js.native
     
-    var subscriptionState: js.Any = js.native
+    /* private */ var subscriptionState: js.Any = js.native
     
     def `type`: String = js.native
     
@@ -87,23 +87,18 @@ object entityMod {
   }
   object EntityServices {
     
-    @scala.inline
-    def apply(network: Network, router: Router, storage: Storage): EntityServices = {
+    inline def apply(network: Network, router: Router, storage: Storage): EntityServices = {
       val __obj = js.Dynamic.literal(network = network.asInstanceOf[js.Any], router = router.asInstanceOf[js.Any], storage = storage.asInstanceOf[js.Any])
       __obj.asInstanceOf[EntityServices]
     }
     
-    @scala.inline
-    implicit class EntityServicesMutableBuilder[Self <: EntityServices] (val x: Self) extends AnyVal {
+    extension [Self <: EntityServices](x: Self) {
       
-      @scala.inline
-      def setNetwork(value: Network): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
+      inline def setNetwork(value: Network): Self = StObject.set(x, "network", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouter(value: Router): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
+      inline def setRouter(value: Router): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorage(value: Storage): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+      inline def setStorage(value: Storage): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
     }
   }
   
@@ -118,16 +113,12 @@ object entityMod {
   trait SubscriptionState extends StObject
   object SubscriptionState {
     
-    @scala.inline
-    def established: typings.twilioSync.twilioSyncStrings.established = "established".asInstanceOf[typings.twilioSync.twilioSyncStrings.established]
+    inline def established: typings.twilioSync.twilioSyncStrings.established = "established".asInstanceOf[typings.twilioSync.twilioSyncStrings.established]
     
-    @scala.inline
-    def none: typings.twilioSync.twilioSyncStrings.none = "none".asInstanceOf[typings.twilioSync.twilioSyncStrings.none]
+    inline def none: typings.twilioSync.twilioSyncStrings.none = "none".asInstanceOf[typings.twilioSync.twilioSyncStrings.none]
     
-    @scala.inline
-    def request_in_flight: typings.twilioSync.twilioSyncStrings.request_in_flight = "request_in_flight".asInstanceOf[typings.twilioSync.twilioSyncStrings.request_in_flight]
+    inline def request_in_flight: typings.twilioSync.twilioSyncStrings.request_in_flight = "request_in_flight".asInstanceOf[typings.twilioSync.twilioSyncStrings.request_in_flight]
     
-    @scala.inline
-    def response_in_flight: typings.twilioSync.twilioSyncStrings.response_in_flight = "response_in_flight".asInstanceOf[typings.twilioSync.twilioSyncStrings.response_in_flight]
+    inline def response_in_flight: typings.twilioSync.twilioSyncStrings.response_in_flight = "response_in_flight".asInstanceOf[typings.twilioSync.twilioSyncStrings.response_in_flight]
   }
 }

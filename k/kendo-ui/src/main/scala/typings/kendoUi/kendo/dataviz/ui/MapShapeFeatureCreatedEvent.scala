@@ -20,37 +20,27 @@ trait MapShapeFeatureCreatedEvent
 }
 object MapShapeFeatureCreatedEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Map): MapShapeFeatureCreatedEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Map): MapShapeFeatureCreatedEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapShapeFeatureCreatedEvent]
   }
   
-  @scala.inline
-  implicit class MapShapeFeatureCreatedEventMutableBuilder[Self <: MapShapeFeatureCreatedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: MapShapeFeatureCreatedEvent](x: Self) {
     
-    @scala.inline
-    def setDataItem(value: js.Any): Self = StObject.set(x, "dataItem", value.asInstanceOf[js.Any])
+    inline def setDataItem(value: js.Any): Self = StObject.set(x, "dataItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataItemUndefined: Self = StObject.set(x, "dataItem", js.undefined)
+    inline def setDataItemUndefined: Self = StObject.set(x, "dataItem", js.undefined)
     
-    @scala.inline
-    def setGroup(value: Group): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: Group): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+    inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
     
-    @scala.inline
-    def setLayer(value: Shape): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: Shape): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
+    inline def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
     
-    @scala.inline
-    def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }
 }

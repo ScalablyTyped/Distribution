@@ -18,17 +18,14 @@ object typesMalformedPolicyDocumentExceptionMod {
   }
   object MalformedPolicyDocumentException {
     
-    @scala.inline
-    def apply(): MalformedPolicyDocumentException = {
+    inline def apply(): MalformedPolicyDocumentException = {
       val __obj = js.Dynamic.literal(name = "MalformedPolicyDocumentException")
       __obj.asInstanceOf[MalformedPolicyDocumentException]
     }
     
-    @scala.inline
-    implicit class MalformedPolicyDocumentExceptionMutableBuilder[Self <: MalformedPolicyDocumentException] (val x: Self) extends AnyVal {
+    extension [Self <: MalformedPolicyDocumentException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.MalformedPolicyDocumentException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -43,20 +40,16 @@ object typesMalformedPolicyDocumentExceptionMod {
   }
   object MalformedPolicyDocumentExceptionDetails {
     
-    @scala.inline
-    def apply(): MalformedPolicyDocumentExceptionDetails = {
+    inline def apply(): MalformedPolicyDocumentExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MalformedPolicyDocumentExceptionDetails]
     }
     
-    @scala.inline
-    implicit class MalformedPolicyDocumentExceptionDetailsMutableBuilder[Self <: MalformedPolicyDocumentExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: MalformedPolicyDocumentExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

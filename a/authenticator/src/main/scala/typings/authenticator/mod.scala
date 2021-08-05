@@ -10,14 +10,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def generateKey(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKey")().asInstanceOf[String]
+  inline def generateKey(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateKey")().asInstanceOf[String]
   
-  @scala.inline
-  def generateToken(formattedKey: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateToken")(formattedKey.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def generateToken(formattedKey: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateToken")(formattedKey.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def generateTotpUri(
+  inline def generateTotpUri(
     formattedKey: String,
     accountName: String,
     issuer: String,
@@ -26,8 +23,7 @@ object mod {
     period: Double
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateTotpUri")(formattedKey.asInstanceOf[js.Any], accountName.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any], digits.asInstanceOf[js.Any], period.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def verifyToken(formattedKey: String, formattedToken: String): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyToken")(formattedKey.asInstanceOf[js.Any], formattedToken.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
+  inline def verifyToken(formattedKey: String, formattedToken: String): VerifyResult | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyToken")(formattedKey.asInstanceOf[js.Any], formattedToken.asInstanceOf[js.Any])).asInstanceOf[VerifyResult | Null]
   
   trait VerifyResult extends StObject {
     
@@ -35,17 +31,14 @@ object mod {
   }
   object VerifyResult {
     
-    @scala.inline
-    def apply(delta: Double): VerifyResult = {
+    inline def apply(delta: Double): VerifyResult = {
       val __obj = js.Dynamic.literal(delta = delta.asInstanceOf[js.Any])
       __obj.asInstanceOf[VerifyResult]
     }
     
-    @scala.inline
-    implicit class VerifyResultMutableBuilder[Self <: VerifyResult] (val x: Self) extends AnyVal {
+    extension [Self <: VerifyResult](x: Self) {
       
-      @scala.inline
-      def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+      inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     }
   }
 }

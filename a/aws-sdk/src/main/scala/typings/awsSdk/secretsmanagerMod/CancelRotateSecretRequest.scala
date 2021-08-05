@@ -13,16 +13,13 @@ trait CancelRotateSecretRequest extends StObject {
 }
 object CancelRotateSecretRequest {
   
-  @scala.inline
-  def apply(SecretId: SecretIdType): CancelRotateSecretRequest = {
+  inline def apply(SecretId: SecretIdType): CancelRotateSecretRequest = {
     val __obj = js.Dynamic.literal(SecretId = SecretId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelRotateSecretRequest]
   }
   
-  @scala.inline
-  implicit class CancelRotateSecretRequestMutableBuilder[Self <: CancelRotateSecretRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CancelRotateSecretRequest](x: Self) {
     
-    @scala.inline
-    def setSecretId(value: SecretIdType): Self = StObject.set(x, "SecretId", value.asInstanceOf[js.Any])
+    inline def setSecretId(value: SecretIdType): Self = StObject.set(x, "SecretId", value.asInstanceOf[js.Any])
   }
 }

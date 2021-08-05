@@ -20,19 +20,15 @@ trait CompletionParams
 }
 object CompletionParams {
   
-  @scala.inline
-  def apply(position: Position, textDocument: TextDocumentIdentifier): CompletionParams = {
+  inline def apply(position: Position, textDocument: TextDocumentIdentifier): CompletionParams = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any], textDocument = textDocument.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompletionParams]
   }
   
-  @scala.inline
-  implicit class CompletionParamsMutableBuilder[Self <: CompletionParams] (val x: Self) extends AnyVal {
+  extension [Self <: CompletionParams](x: Self) {
     
-    @scala.inline
-    def setContext(value: CompletionContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: CompletionContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
   }
 }

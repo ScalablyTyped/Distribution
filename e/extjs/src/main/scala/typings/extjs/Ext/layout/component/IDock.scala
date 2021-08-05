@@ -69,57 +69,41 @@ trait IDock
 }
 object IDock {
   
-  @scala.inline
-  def apply(): IDock = {
+  inline def apply(): IDock = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDock]
   }
   
-  @scala.inline
-  implicit class IDockMutableBuilder[Self <: IDock] (val x: Self) extends AnyVal {
+  extension [Self <: IDock](x: Self) {
     
-    @scala.inline
-    def setBeginLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beginLayout", js.Any.fromFunction1(value))
+    inline def setBeginLayout(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beginLayout", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeginLayoutCycle(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beginLayoutCycle", js.Any.fromFunction1(value))
+    inline def setBeginLayoutCycle(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "beginLayoutCycle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeginLayoutCycleUndefined: Self = StObject.set(x, "beginLayoutCycle", js.undefined)
+    inline def setBeginLayoutCycleUndefined: Self = StObject.set(x, "beginLayoutCycle", js.undefined)
     
-    @scala.inline
-    def setBeginLayoutUndefined: Self = StObject.set(x, "beginLayout", js.undefined)
+    inline def setBeginLayoutUndefined: Self = StObject.set(x, "beginLayout", js.undefined)
     
-    @scala.inline
-    def setCalculate(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction1(value))
+    inline def setCalculate(value: /* ownerContext */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCalculateUndefined: Self = StObject.set(x, "calculate", js.undefined)
+    inline def setCalculateUndefined: Self = StObject.set(x, "calculate", js.undefined)
     
-    @scala.inline
-    def setGetDockedItems(value: (/* order */ js.UndefOr[String], /* beforeBody */ js.UndefOr[Boolean]) => Array): Self = StObject.set(x, "getDockedItems", js.Any.fromFunction2(value))
+    inline def setGetDockedItems(value: (/* order */ js.UndefOr[String], /* beforeBody */ js.UndefOr[Boolean]) => Array): Self = StObject.set(x, "getDockedItems", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetDockedItemsUndefined: Self = StObject.set(x, "getDockedItems", js.undefined)
+    inline def setGetDockedItemsUndefined: Self = StObject.set(x, "getDockedItems", js.undefined)
     
-    @scala.inline
-    def setGetItemSizePolicy(value: (/* item */ js.UndefOr[js.Any], /* ownerSizeModel */ js.UndefOr[js.Any]) => ISizePolicy): Self = StObject.set(x, "getItemSizePolicy", js.Any.fromFunction2(value))
+    inline def setGetItemSizePolicy(value: (/* item */ js.UndefOr[js.Any], /* ownerSizeModel */ js.UndefOr[js.Any]) => ISizePolicy): Self = StObject.set(x, "getItemSizePolicy", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetItemSizePolicyUndefined: Self = StObject.set(x, "getItemSizePolicy", js.undefined)
+    inline def setGetItemSizePolicyUndefined: Self = StObject.set(x, "getItemSizePolicy", js.undefined)
     
-    @scala.inline
-    def setGetLayoutItems(value: () => Array): Self = StObject.set(x, "getLayoutItems", js.Any.fromFunction0(value))
+    inline def setGetLayoutItems(value: () => Array): Self = StObject.set(x, "getLayoutItems", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLayoutItemsUndefined: Self = StObject.set(x, "getLayoutItems", js.undefined)
+    inline def setGetLayoutItemsUndefined: Self = StObject.set(x, "getLayoutItems", js.undefined)
     
-    @scala.inline
-    def setInvalidateAxes(
+    inline def setInvalidateAxes(
       value: (/* ownerContext */ js.UndefOr[js.Any], /* horz */ js.UndefOr[js.Any], /* vert */ js.UndefOr[js.Any]) => Unit
     ): Self = StObject.set(x, "invalidateAxes", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setInvalidateAxesUndefined: Self = StObject.set(x, "invalidateAxes", js.undefined)
+    inline def setInvalidateAxesUndefined: Self = StObject.set(x, "invalidateAxes", js.undefined)
   }
 }

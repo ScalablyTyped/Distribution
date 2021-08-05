@@ -10,16 +10,13 @@ trait Smooth extends StObject {
 }
 object Smooth {
   
-  @scala.inline
-  def apply(smooth: Boolean): Smooth = {
+  inline def apply(smooth: Boolean): Smooth = {
     val __obj = js.Dynamic.literal(smooth = smooth.asInstanceOf[js.Any])
     __obj.asInstanceOf[Smooth]
   }
   
-  @scala.inline
-  implicit class SmoothMutableBuilder[Self <: Smooth] (val x: Self) extends AnyVal {
+  extension [Self <: Smooth](x: Self) {
     
-    @scala.inline
-    def setSmooth(value: Boolean): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
+    inline def setSmooth(value: Boolean): Self = StObject.set(x, "smooth", value.asInstanceOf[js.Any])
   }
 }

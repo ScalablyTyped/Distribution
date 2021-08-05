@@ -16,8 +16,7 @@ trait TextFields
      with XRefreshable
 object TextFields {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementType: `type`,
     acquire: () => Unit,
     addRefreshListener: XRefreshListener => Unit,

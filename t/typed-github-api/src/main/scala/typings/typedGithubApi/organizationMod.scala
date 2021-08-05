@@ -31,8 +31,7 @@ object organizationMod {
   }
   object MyOrganization {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       billingEmail: String,
       collaborators: Double,
       defaultRepositorySettings: String,
@@ -47,35 +46,25 @@ object organizationMod {
       __obj.asInstanceOf[MyOrganization]
     }
     
-    @scala.inline
-    implicit class MyOrganizationMutableBuilder[Self <: MyOrganization] (val x: Self) extends AnyVal {
+    extension [Self <: MyOrganization](x: Self) {
       
-      @scala.inline
-      def setBillingEmail(value: String): Self = StObject.set(x, "billingEmail", value.asInstanceOf[js.Any])
+      inline def setBillingEmail(value: String): Self = StObject.set(x, "billingEmail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollaborators(value: Double): Self = StObject.set(x, "collaborators", value.asInstanceOf[js.Any])
+      inline def setCollaborators(value: Double): Self = StObject.set(x, "collaborators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultRepositorySettings(value: String): Self = StObject.set(x, "defaultRepositorySettings", value.asInstanceOf[js.Any])
+      inline def setDefaultRepositorySettings(value: String): Self = StObject.set(x, "defaultRepositorySettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiskUsage(value: Double): Self = StObject.set(x, "diskUsage", value.asInstanceOf[js.Any])
+      inline def setDiskUsage(value: Double): Self = StObject.set(x, "diskUsage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMembersCanCreateRepositories(value: Boolean): Self = StObject.set(x, "membersCanCreateRepositories", value.asInstanceOf[js.Any])
+      inline def setMembersCanCreateRepositories(value: Boolean): Self = StObject.set(x, "membersCanCreateRepositories", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlan(value: Name): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
+      inline def setPlan(value: Name): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateGists(value: Double): Self = StObject.set(x, "privateGists", value.asInstanceOf[js.Any])
+      inline def setPrivateGists(value: Double): Self = StObject.set(x, "privateGists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateReposOwned(value: Double): Self = StObject.set(x, "privateReposOwned", value.asInstanceOf[js.Any])
+      inline def setPrivateReposOwned(value: Double): Self = StObject.set(x, "privateReposOwned", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrivateReposTotal(value: Double): Self = StObject.set(x, "privateReposTotal", value.asInstanceOf[js.Any])
+      inline def setPrivateReposTotal(value: Double): Self = StObject.set(x, "privateReposTotal", value.asInstanceOf[js.Any])
     }
   }
   

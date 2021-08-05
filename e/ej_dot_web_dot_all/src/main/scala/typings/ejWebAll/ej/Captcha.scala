@@ -104,140 +104,96 @@ object Captcha {
   }
   object Model {
     
-    @scala.inline
-    def apply(): typings.ejWebAll.ej.Captcha.Model = {
+    inline def apply(): typings.ejWebAll.ej.Captcha.Model = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.ejWebAll.ej.Captcha.Model]
     }
     
-    @scala.inline
-    implicit class ModelMutableBuilder[Self <: typings.ejWebAll.ej.Captcha.Model] (val x: Self) extends AnyVal {
+    extension [Self <: typings.ejWebAll.ej.Captcha.Model](x: Self) {
       
-      @scala.inline
-      def setCharacterSet(value: String): Self = StObject.set(x, "characterSet", value.asInstanceOf[js.Any])
+      inline def setCharacterSet(value: String): Self = StObject.set(x, "characterSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharacterSetUndefined: Self = StObject.set(x, "characterSet", js.undefined)
+      inline def setCharacterSetUndefined: Self = StObject.set(x, "characterSet", js.undefined)
       
-      @scala.inline
-      def setCustomErrorMessage(value: String): Self = StObject.set(x, "customErrorMessage", value.asInstanceOf[js.Any])
+      inline def setCustomErrorMessage(value: String): Self = StObject.set(x, "customErrorMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomErrorMessageUndefined: Self = StObject.set(x, "customErrorMessage", js.undefined)
+      inline def setCustomErrorMessageUndefined: Self = StObject.set(x, "customErrorMessage", js.undefined)
       
-      @scala.inline
-      def setEnableAutoValidation(value: Boolean): Self = StObject.set(x, "enableAutoValidation", value.asInstanceOf[js.Any])
+      inline def setEnableAutoValidation(value: Boolean): Self = StObject.set(x, "enableAutoValidation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableAutoValidationUndefined: Self = StObject.set(x, "enableAutoValidation", js.undefined)
+      inline def setEnableAutoValidationUndefined: Self = StObject.set(x, "enableAutoValidation", js.undefined)
       
-      @scala.inline
-      def setEnableCaseSensitivity(value: Boolean): Self = StObject.set(x, "enableCaseSensitivity", value.asInstanceOf[js.Any])
+      inline def setEnableCaseSensitivity(value: Boolean): Self = StObject.set(x, "enableCaseSensitivity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableCaseSensitivityUndefined: Self = StObject.set(x, "enableCaseSensitivity", js.undefined)
+      inline def setEnableCaseSensitivityUndefined: Self = StObject.set(x, "enableCaseSensitivity", js.undefined)
       
-      @scala.inline
-      def setEnablePattern(value: Boolean): Self = StObject.set(x, "enablePattern", value.asInstanceOf[js.Any])
+      inline def setEnablePattern(value: Boolean): Self = StObject.set(x, "enablePattern", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnablePatternUndefined: Self = StObject.set(x, "enablePattern", js.undefined)
+      inline def setEnablePatternUndefined: Self = StObject.set(x, "enablePattern", js.undefined)
       
-      @scala.inline
-      def setEnableRTL(value: Boolean): Self = StObject.set(x, "enableRTL", value.asInstanceOf[js.Any])
+      inline def setEnableRTL(value: Boolean): Self = StObject.set(x, "enableRTL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableRTLUndefined: Self = StObject.set(x, "enableRTL", js.undefined)
+      inline def setEnableRTLUndefined: Self = StObject.set(x, "enableRTL", js.undefined)
       
-      @scala.inline
-      def setHatchStyle(value: HatchStyle | String): Self = StObject.set(x, "hatchStyle", value.asInstanceOf[js.Any])
+      inline def setHatchStyle(value: HatchStyle | String): Self = StObject.set(x, "hatchStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHatchStyleUndefined: Self = StObject.set(x, "hatchStyle", js.undefined)
+      inline def setHatchStyleUndefined: Self = StObject.set(x, "hatchStyle", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setMapper(value: String): Self = StObject.set(x, "mapper", value.asInstanceOf[js.Any])
+      inline def setMapper(value: String): Self = StObject.set(x, "mapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapperUndefined: Self = StObject.set(x, "mapper", js.undefined)
+      inline def setMapperUndefined: Self = StObject.set(x, "mapper", js.undefined)
       
-      @scala.inline
-      def setMaximumLength(value: Double): Self = StObject.set(x, "maximumLength", value.asInstanceOf[js.Any])
+      inline def setMaximumLength(value: Double): Self = StObject.set(x, "maximumLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaximumLengthUndefined: Self = StObject.set(x, "maximumLength", js.undefined)
+      inline def setMaximumLengthUndefined: Self = StObject.set(x, "maximumLength", js.undefined)
       
-      @scala.inline
-      def setMinimumLength(value: Double): Self = StObject.set(x, "minimumLength", value.asInstanceOf[js.Any])
+      inline def setMinimumLength(value: Double): Self = StObject.set(x, "minimumLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumLengthUndefined: Self = StObject.set(x, "minimumLength", js.undefined)
+      inline def setMinimumLengthUndefined: Self = StObject.set(x, "minimumLength", js.undefined)
       
-      @scala.inline
-      def setRefreshBegin(value: /* e */ RefreshBeginEventArgs => Unit): Self = StObject.set(x, "refreshBegin", js.Any.fromFunction1(value))
+      inline def setRefreshBegin(value: /* e */ RefreshBeginEventArgs => Unit): Self = StObject.set(x, "refreshBegin", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRefreshBeginUndefined: Self = StObject.set(x, "refreshBegin", js.undefined)
+      inline def setRefreshBeginUndefined: Self = StObject.set(x, "refreshBegin", js.undefined)
       
-      @scala.inline
-      def setRefreshComplete(value: /* e */ RefreshCompleteEventArgs => Unit): Self = StObject.set(x, "refreshComplete", js.Any.fromFunction1(value))
+      inline def setRefreshComplete(value: /* e */ RefreshCompleteEventArgs => Unit): Self = StObject.set(x, "refreshComplete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRefreshCompleteUndefined: Self = StObject.set(x, "refreshComplete", js.undefined)
+      inline def setRefreshCompleteUndefined: Self = StObject.set(x, "refreshComplete", js.undefined)
       
-      @scala.inline
-      def setRefreshFailure(value: /* e */ RefreshFailureEventArgs => Unit): Self = StObject.set(x, "refreshFailure", js.Any.fromFunction1(value))
+      inline def setRefreshFailure(value: /* e */ RefreshFailureEventArgs => Unit): Self = StObject.set(x, "refreshFailure", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRefreshFailureUndefined: Self = StObject.set(x, "refreshFailure", js.undefined)
+      inline def setRefreshFailureUndefined: Self = StObject.set(x, "refreshFailure", js.undefined)
       
-      @scala.inline
-      def setRefreshSuccess(value: /* e */ RefreshSuccessEventArgs => Unit): Self = StObject.set(x, "refreshSuccess", js.Any.fromFunction1(value))
+      inline def setRefreshSuccess(value: /* e */ RefreshSuccessEventArgs => Unit): Self = StObject.set(x, "refreshSuccess", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRefreshSuccessUndefined: Self = StObject.set(x, "refreshSuccess", js.undefined)
+      inline def setRefreshSuccessUndefined: Self = StObject.set(x, "refreshSuccess", js.undefined)
       
-      @scala.inline
-      def setRequestMapper(value: String): Self = StObject.set(x, "requestMapper", value.asInstanceOf[js.Any])
+      inline def setRequestMapper(value: String): Self = StObject.set(x, "requestMapper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestMapperUndefined: Self = StObject.set(x, "requestMapper", js.undefined)
+      inline def setRequestMapperUndefined: Self = StObject.set(x, "requestMapper", js.undefined)
       
-      @scala.inline
-      def setShowAudioButton(value: Boolean): Self = StObject.set(x, "showAudioButton", value.asInstanceOf[js.Any])
+      inline def setShowAudioButton(value: Boolean): Self = StObject.set(x, "showAudioButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowAudioButtonUndefined: Self = StObject.set(x, "showAudioButton", js.undefined)
+      inline def setShowAudioButtonUndefined: Self = StObject.set(x, "showAudioButton", js.undefined)
       
-      @scala.inline
-      def setShowRefreshButton(value: Boolean): Self = StObject.set(x, "showRefreshButton", value.asInstanceOf[js.Any])
+      inline def setShowRefreshButton(value: Boolean): Self = StObject.set(x, "showRefreshButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowRefreshButtonUndefined: Self = StObject.set(x, "showRefreshButton", js.undefined)
+      inline def setShowRefreshButtonUndefined: Self = StObject.set(x, "showRefreshButton", js.undefined)
       
-      @scala.inline
-      def setTargetButton(value: String): Self = StObject.set(x, "targetButton", value.asInstanceOf[js.Any])
+      inline def setTargetButton(value: String): Self = StObject.set(x, "targetButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetButtonUndefined: Self = StObject.set(x, "targetButton", js.undefined)
+      inline def setTargetButtonUndefined: Self = StObject.set(x, "targetButton", js.undefined)
       
-      @scala.inline
-      def setTargetInput(value: String): Self = StObject.set(x, "targetInput", value.asInstanceOf[js.Any])
+      inline def setTargetInput(value: String): Self = StObject.set(x, "targetInput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetInputUndefined: Self = StObject.set(x, "targetInput", js.undefined)
+      inline def setTargetInputUndefined: Self = StObject.set(x, "targetInput", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -257,32 +213,24 @@ object Captcha {
   }
   object RefreshBeginEventArgs {
     
-    @scala.inline
-    def apply(): RefreshBeginEventArgs = {
+    inline def apply(): RefreshBeginEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RefreshBeginEventArgs]
     }
     
-    @scala.inline
-    implicit class RefreshBeginEventArgsMutableBuilder[Self <: RefreshBeginEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: RefreshBeginEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -302,32 +250,24 @@ object Captcha {
   }
   object RefreshCompleteEventArgs {
     
-    @scala.inline
-    def apply(): RefreshCompleteEventArgs = {
+    inline def apply(): RefreshCompleteEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RefreshCompleteEventArgs]
     }
     
-    @scala.inline
-    implicit class RefreshCompleteEventArgsMutableBuilder[Self <: RefreshCompleteEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: RefreshCompleteEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -347,32 +287,24 @@ object Captcha {
   }
   object RefreshFailureEventArgs {
     
-    @scala.inline
-    def apply(): RefreshFailureEventArgs = {
+    inline def apply(): RefreshFailureEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RefreshFailureEventArgs]
     }
     
-    @scala.inline
-    implicit class RefreshFailureEventArgsMutableBuilder[Self <: RefreshFailureEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: RefreshFailureEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -392,32 +324,24 @@ object Captcha {
   }
   object RefreshSuccessEventArgs {
     
-    @scala.inline
-    def apply(): RefreshSuccessEventArgs = {
+    inline def apply(): RefreshSuccessEventArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RefreshSuccessEventArgs]
     }
     
-    @scala.inline
-    implicit class RefreshSuccessEventArgsMutableBuilder[Self <: RefreshSuccessEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: RefreshSuccessEventArgs](x: Self) {
       
-      @scala.inline
-      def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+      inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

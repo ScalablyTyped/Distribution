@@ -21,28 +21,21 @@ trait DroppableSubject extends StObject {
 }
 object DroppableSubject {
   
-  @scala.inline
-  def apply(page: BoxModel): DroppableSubject = {
+  inline def apply(page: BoxModel): DroppableSubject = {
     val __obj = js.Dynamic.literal(page = page.asInstanceOf[js.Any])
     __obj.asInstanceOf[DroppableSubject]
   }
   
-  @scala.inline
-  implicit class DroppableSubjectMutableBuilder[Self <: DroppableSubject] (val x: Self) extends AnyVal {
+  extension [Self <: DroppableSubject](x: Self) {
     
-    @scala.inline
-    def setActive(value: Rect): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Rect): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+    inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
     
-    @scala.inline
-    def setPage(value: BoxModel): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: BoxModel): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithPlaceholder(value: PlaceholderInSubject): Self = StObject.set(x, "withPlaceholder", value.asInstanceOf[js.Any])
+    inline def setWithPlaceholder(value: PlaceholderInSubject): Self = StObject.set(x, "withPlaceholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithPlaceholderUndefined: Self = StObject.set(x, "withPlaceholder", js.undefined)
+    inline def setWithPlaceholderUndefined: Self = StObject.set(x, "withPlaceholder", js.undefined)
   }
 }

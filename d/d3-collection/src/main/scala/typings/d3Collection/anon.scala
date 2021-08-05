@@ -15,20 +15,16 @@ object anon {
   }
   object Key {
     
-    @scala.inline
-    def apply[T](key: String, value: T): Key[T] = {
+    inline def apply[T](key: String, value: T): Key[T] = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Key[T]]
     }
     
-    @scala.inline
-    implicit class KeyMutableBuilder[Self <: Key[?], T] (val x: Self & Key[T]) extends AnyVal {
+    extension [Self <: Key[?], T](x: Self & Key[T]) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -42,26 +38,20 @@ object anon {
   }
   object KeyValue {
     
-    @scala.inline
-    def apply[RollupType](key: String, values: js.Any): KeyValue[RollupType] = {
+    inline def apply[RollupType](key: String, values: js.Any): KeyValue[RollupType] = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeyValue[RollupType]]
     }
     
-    @scala.inline
-    implicit class KeyValueMutableBuilder[Self <: KeyValue[?], RollupType] (val x: Self & KeyValue[RollupType]) extends AnyVal {
+    extension [Self <: KeyValue[?], RollupType](x: Self & KeyValue[RollupType]) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: RollupType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: RollupType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setValues(value: js.Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Any): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     }
   }
   
@@ -73,20 +63,16 @@ object anon {
   }
   object Value {
     
-    @scala.inline
-    def apply(key: String, value: js.Any): Value = {
+    inline def apply(key: String, value: js.Any): Value = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Value]
     }
     
-    @scala.inline
-    implicit class ValueMutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
+    extension [Self <: Value](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -100,32 +86,24 @@ object anon {
   }
   object Values {
     
-    @scala.inline
-    def apply[Datum, RollupType](key: String): Values[Datum, RollupType] = {
+    inline def apply[Datum, RollupType](key: String): Values[Datum, RollupType] = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
       __obj.asInstanceOf[Values[Datum, RollupType]]
     }
     
-    @scala.inline
-    implicit class ValuesMutableBuilder[Self <: Values[?, ?], Datum, RollupType] (val x: Self & (Values[Datum, RollupType])) extends AnyVal {
+    extension [Self <: Values[?, ?], Datum, RollupType](x: Self & (Values[Datum, RollupType])) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: RollupType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: RollupType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setValues(value: (NestedArray[Datum, RollupType]) | js.Array[Datum]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: (NestedArray[Datum, RollupType]) | js.Array[Datum]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+      inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
       
-      @scala.inline
-      def setValuesVarargs(value: Datum*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Datum*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
 }

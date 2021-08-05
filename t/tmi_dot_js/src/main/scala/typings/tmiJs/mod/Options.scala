@@ -22,46 +22,33 @@ trait Options extends StObject {
 }
 object Options {
   
-  @scala.inline
-  def apply(): Options = {
+  inline def apply(): Options = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Options]
   }
   
-  @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+  extension [Self <: Options](x: Self) {
     
-    @scala.inline
-    def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
+    inline def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
     
-    @scala.inline
-    def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
     
-    @scala.inline
-    def setConnection(value: MaxReconnectAttempts): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: MaxReconnectAttempts): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
+    inline def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
     
-    @scala.inline
-    def setIdentity(value: Password): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+    inline def setIdentity(value: Password): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
+    inline def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
     
-    @scala.inline
-    def setLogger(value: Error): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+    inline def setLogger(value: Error): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+    inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
     
-    @scala.inline
-    def setOptions(value: ClientId): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: ClientId): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

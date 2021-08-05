@@ -13,17 +13,14 @@ trait ServerTargetExecutionOptions extends StObject {
 }
 object ServerTargetExecutionOptions {
   
-  @scala.inline
-  def apply(`type`: Double): ServerTargetExecutionOptions = {
+  inline def apply(`type`: Double): ServerTargetExecutionOptions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerTargetExecutionOptions]
   }
   
-  @scala.inline
-  implicit class ServerTargetExecutionOptionsMutableBuilder[Self <: ServerTargetExecutionOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ServerTargetExecutionOptions](x: Self) {
     
-    @scala.inline
-    def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -39,46 +39,33 @@ trait InitCCPOptions extends StObject {
 }
 object InitCCPOptions {
   
-  @scala.inline
-  def apply(ccpUrl: String): InitCCPOptions = {
+  inline def apply(ccpUrl: String): InitCCPOptions = {
     val __obj = js.Dynamic.literal(ccpUrl = ccpUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[InitCCPOptions]
   }
   
-  @scala.inline
-  implicit class InitCCPOptionsMutableBuilder[Self <: InitCCPOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InitCCPOptions](x: Self) {
     
-    @scala.inline
-    def setCcpUrl(value: String): Self = StObject.set(x, "ccpUrl", value.asInstanceOf[js.Any])
+    inline def setCcpUrl(value: String): Self = StObject.set(x, "ccpUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoginPopup(value: Boolean): Self = StObject.set(x, "loginPopup", value.asInstanceOf[js.Any])
+    inline def setLoginPopup(value: Boolean): Self = StObject.set(x, "loginPopup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoginPopupAutoClose(value: Boolean): Self = StObject.set(x, "loginPopupAutoClose", value.asInstanceOf[js.Any])
+    inline def setLoginPopupAutoClose(value: Boolean): Self = StObject.set(x, "loginPopupAutoClose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoginPopupAutoCloseUndefined: Self = StObject.set(x, "loginPopupAutoClose", js.undefined)
+    inline def setLoginPopupAutoCloseUndefined: Self = StObject.set(x, "loginPopupAutoClose", js.undefined)
     
-    @scala.inline
-    def setLoginPopupUndefined: Self = StObject.set(x, "loginPopup", js.undefined)
+    inline def setLoginPopupUndefined: Self = StObject.set(x, "loginPopup", js.undefined)
     
-    @scala.inline
-    def setLoginUrl(value: String): Self = StObject.set(x, "loginUrl", value.asInstanceOf[js.Any])
+    inline def setLoginUrl(value: String): Self = StObject.set(x, "loginUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoginUrlUndefined: Self = StObject.set(x, "loginUrl", js.undefined)
+    inline def setLoginUrlUndefined: Self = StObject.set(x, "loginUrl", js.undefined)
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
-    @scala.inline
-    def setSoftphone(value: SoftPhoneOptions): Self = StObject.set(x, "softphone", value.asInstanceOf[js.Any])
+    inline def setSoftphone(value: SoftPhoneOptions): Self = StObject.set(x, "softphone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoftphoneUndefined: Self = StObject.set(x, "softphone", js.undefined)
+    inline def setSoftphoneUndefined: Self = StObject.set(x, "softphone", js.undefined)
   }
 }

@@ -26,8 +26,7 @@ trait TagFeedResponseStoryHashtagsItem extends StObject {
 }
 object TagFeedResponseStoryHashtagsItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hashtag: TagFeedResponseHashtag,
     height: String | Double,
     is_hidden: Double,
@@ -42,34 +41,24 @@ object TagFeedResponseStoryHashtagsItem {
     __obj.asInstanceOf[TagFeedResponseStoryHashtagsItem]
   }
   
-  @scala.inline
-  implicit class TagFeedResponseStoryHashtagsItemMutableBuilder[Self <: TagFeedResponseStoryHashtagsItem] (val x: Self) extends AnyVal {
+  extension [Self <: TagFeedResponseStoryHashtagsItem](x: Self) {
     
-    @scala.inline
-    def setHashtag(value: TagFeedResponseHashtag): Self = StObject.set(x, "hashtag", value.asInstanceOf[js.Any])
+    inline def setHashtag(value: TagFeedResponseHashtag): Self = StObject.set(x, "hashtag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_hidden(value: Double): Self = StObject.set(x, "is_hidden", value.asInstanceOf[js.Any])
+    inline def setIs_hidden(value: Double): Self = StObject.set(x, "is_hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_pinned(value: Double): Self = StObject.set(x, "is_pinned", value.asInstanceOf[js.Any])
+    inline def setIs_pinned(value: Double): Self = StObject.set(x, "is_pinned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotation(value: String | Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    inline def setRotation(value: String | Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: String | Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: String | Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: String | Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: String | Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: String | Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+    inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
   }
 }

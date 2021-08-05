@@ -21,8 +21,7 @@ trait GroundNavigationConstraint
 }
 object GroundNavigationConstraint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -36,10 +35,8 @@ object GroundNavigationConstraint {
     __obj.asInstanceOf[GroundNavigationConstraint]
   }
   
-  @scala.inline
-  implicit class GroundNavigationConstraintMutableBuilder[Self <: GroundNavigationConstraint] (val x: Self) extends AnyVal {
+  extension [Self <: GroundNavigationConstraint](x: Self) {
     
-    @scala.inline
-    def setType(value: `stay-above` | none): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `stay-above` | none): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

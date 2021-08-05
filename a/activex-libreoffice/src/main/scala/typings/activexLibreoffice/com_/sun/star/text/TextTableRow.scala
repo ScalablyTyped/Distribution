@@ -62,8 +62,7 @@ trait TextTableRow
 }
 object TextTableRow {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BackColor: Color,
     BackGraphicFilter: String,
     BackGraphicLocation: GraphicLocation,
@@ -90,37 +89,26 @@ object TextTableRow {
     __obj.asInstanceOf[TextTableRow]
   }
   
-  @scala.inline
-  implicit class TextTableRowMutableBuilder[Self <: TextTableRow] (val x: Self) extends AnyVal {
+  extension [Self <: TextTableRow](x: Self) {
     
-    @scala.inline
-    def setBackColor(value: Color): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
+    inline def setBackColor(value: Color): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackGraphicFilter(value: String): Self = StObject.set(x, "BackGraphicFilter", value.asInstanceOf[js.Any])
+    inline def setBackGraphicFilter(value: String): Self = StObject.set(x, "BackGraphicFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackGraphicLocation(value: GraphicLocation): Self = StObject.set(x, "BackGraphicLocation", value.asInstanceOf[js.Any])
+    inline def setBackGraphicLocation(value: GraphicLocation): Self = StObject.set(x, "BackGraphicLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackGraphicURL(value: String): Self = StObject.set(x, "BackGraphicURL", value.asInstanceOf[js.Any])
+    inline def setBackGraphicURL(value: String): Self = StObject.set(x, "BackGraphicURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackTransparent(value: Boolean): Self = StObject.set(x, "BackTransparent", value.asInstanceOf[js.Any])
+    inline def setBackTransparent(value: Boolean): Self = StObject.set(x, "BackTransparent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAutoHeight(value: Boolean): Self = StObject.set(x, "IsAutoHeight", value.asInstanceOf[js.Any])
+    inline def setIsAutoHeight(value: Boolean): Self = StObject.set(x, "IsAutoHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSplitAllowed(value: Boolean): Self = StObject.set(x, "IsSplitAllowed", value.asInstanceOf[js.Any])
+    inline def setIsSplitAllowed(value: Boolean): Self = StObject.set(x, "IsSplitAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowInteropGrabBag(value: SafeArray[PropertyValue]): Self = StObject.set(x, "RowInteropGrabBag", value.asInstanceOf[js.Any])
+    inline def setRowInteropGrabBag(value: SafeArray[PropertyValue]): Self = StObject.set(x, "RowInteropGrabBag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableColumnSeparators(value: SafeArray[TableColumnSeparator]): Self = StObject.set(x, "TableColumnSeparators", value.asInstanceOf[js.Any])
+    inline def setTableColumnSeparators(value: SafeArray[TableColumnSeparator]): Self = StObject.set(x, "TableColumnSeparators", value.asInstanceOf[js.Any])
   }
 }

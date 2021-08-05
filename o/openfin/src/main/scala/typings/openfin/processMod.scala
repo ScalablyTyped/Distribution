@@ -36,92 +36,64 @@ object processMod {
   }
   object ProcessInfo {
     
-    @scala.inline
-    def apply(): ProcessInfo = {
+    inline def apply(): ProcessInfo = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProcessInfo]
     }
     
-    @scala.inline
-    implicit class ProcessInfoMutableBuilder[Self <: ProcessInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ProcessInfo](x: Self) {
       
-      @scala.inline
-      def setCpuUsage(value: Double): Self = StObject.set(x, "cpuUsage", value.asInstanceOf[js.Any])
+      inline def setCpuUsage(value: Double): Self = StObject.set(x, "cpuUsage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCpuUsageUndefined: Self = StObject.set(x, "cpuUsage", js.undefined)
+      inline def setCpuUsageUndefined: Self = StObject.set(x, "cpuUsage", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNonPagedPoolUsage(value: Double): Self = StObject.set(x, "nonPagedPoolUsage", value.asInstanceOf[js.Any])
+      inline def setNonPagedPoolUsage(value: Double): Self = StObject.set(x, "nonPagedPoolUsage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonPagedPoolUsageUndefined: Self = StObject.set(x, "nonPagedPoolUsage", js.undefined)
+      inline def setNonPagedPoolUsageUndefined: Self = StObject.set(x, "nonPagedPoolUsage", js.undefined)
       
-      @scala.inline
-      def setPageFaultCount(value: Double): Self = StObject.set(x, "pageFaultCount", value.asInstanceOf[js.Any])
+      inline def setPageFaultCount(value: Double): Self = StObject.set(x, "pageFaultCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageFaultCountUndefined: Self = StObject.set(x, "pageFaultCount", js.undefined)
+      inline def setPageFaultCountUndefined: Self = StObject.set(x, "pageFaultCount", js.undefined)
       
-      @scala.inline
-      def setPagedPoolUsage(value: Double): Self = StObject.set(x, "pagedPoolUsage", value.asInstanceOf[js.Any])
+      inline def setPagedPoolUsage(value: Double): Self = StObject.set(x, "pagedPoolUsage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPagedPoolUsageUndefined: Self = StObject.set(x, "pagedPoolUsage", js.undefined)
+      inline def setPagedPoolUsageUndefined: Self = StObject.set(x, "pagedPoolUsage", js.undefined)
       
-      @scala.inline
-      def setPagefileUsage(value: Double): Self = StObject.set(x, "pagefileUsage", value.asInstanceOf[js.Any])
+      inline def setPagefileUsage(value: Double): Self = StObject.set(x, "pagefileUsage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPagefileUsageUndefined: Self = StObject.set(x, "pagefileUsage", js.undefined)
+      inline def setPagefileUsageUndefined: Self = StObject.set(x, "pagefileUsage", js.undefined)
       
-      @scala.inline
-      def setPeakNonPagedPoolUsage(value: Double): Self = StObject.set(x, "peakNonPagedPoolUsage", value.asInstanceOf[js.Any])
+      inline def setPeakNonPagedPoolUsage(value: Double): Self = StObject.set(x, "peakNonPagedPoolUsage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeakNonPagedPoolUsageUndefined: Self = StObject.set(x, "peakNonPagedPoolUsage", js.undefined)
+      inline def setPeakNonPagedPoolUsageUndefined: Self = StObject.set(x, "peakNonPagedPoolUsage", js.undefined)
       
-      @scala.inline
-      def setPeakPagedPoolUsage(value: Double): Self = StObject.set(x, "peakPagedPoolUsage", value.asInstanceOf[js.Any])
+      inline def setPeakPagedPoolUsage(value: Double): Self = StObject.set(x, "peakPagedPoolUsage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeakPagedPoolUsageUndefined: Self = StObject.set(x, "peakPagedPoolUsage", js.undefined)
+      inline def setPeakPagedPoolUsageUndefined: Self = StObject.set(x, "peakPagedPoolUsage", js.undefined)
       
-      @scala.inline
-      def setPeakPagefileUsage(value: Double): Self = StObject.set(x, "peakPagefileUsage", value.asInstanceOf[js.Any])
+      inline def setPeakPagefileUsage(value: Double): Self = StObject.set(x, "peakPagefileUsage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeakPagefileUsageUndefined: Self = StObject.set(x, "peakPagefileUsage", js.undefined)
+      inline def setPeakPagefileUsageUndefined: Self = StObject.set(x, "peakPagefileUsage", js.undefined)
       
-      @scala.inline
-      def setPeakWorkingSetSize(value: Double): Self = StObject.set(x, "peakWorkingSetSize", value.asInstanceOf[js.Any])
+      inline def setPeakWorkingSetSize(value: Double): Self = StObject.set(x, "peakWorkingSetSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeakWorkingSetSizeUndefined: Self = StObject.set(x, "peakWorkingSetSize", js.undefined)
+      inline def setPeakWorkingSetSizeUndefined: Self = StObject.set(x, "peakWorkingSetSize", js.undefined)
       
-      @scala.inline
-      def setProcessId(value: Double): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
+      inline def setProcessId(value: Double): Self = StObject.set(x, "processId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProcessIdUndefined: Self = StObject.set(x, "processId", js.undefined)
+      inline def setProcessIdUndefined: Self = StObject.set(x, "processId", js.undefined)
       
-      @scala.inline
-      def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
+      inline def setUuidUndefined: Self = StObject.set(x, "uuid", js.undefined)
       
-      @scala.inline
-      def setWorkingSetSize(value: Double): Self = StObject.set(x, "workingSetSize", value.asInstanceOf[js.Any])
+      inline def setWorkingSetSize(value: Double): Self = StObject.set(x, "workingSetSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWorkingSetSizeUndefined: Self = StObject.set(x, "workingSetSize", js.undefined)
+      inline def setWorkingSetSizeUndefined: Self = StObject.set(x, "workingSetSize", js.undefined)
     }
   }
 }

@@ -24,8 +24,7 @@ trait TElementContainerNode
 }
 object TElementContainerNode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     classBindings: TStylingRange,
     directiveEnd: Double,
     directiveStart: Double,
@@ -45,27 +44,20 @@ object TElementContainerNode {
     __obj.asInstanceOf[TElementContainerNode]
   }
   
-  @scala.inline
-  implicit class TElementContainerNodeMutableBuilder[Self <: TElementContainerNode] (val x: Self) extends AnyVal {
+  extension [Self <: TElementContainerNode](x: Self) {
     
-    @scala.inline
-    def setChild(
+    inline def setChild(
       value: ɵangularPackagesCoreCoreBh | TTextNode | TContainerNode | TElementContainerNode | TProjectionNode
     ): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildNull: Self = StObject.set(x, "child", null)
+    inline def setChildNull: Self = StObject.set(x, "child", null)
     
-    @scala.inline
-    def setParent(value: ɵangularPackagesCoreCoreBh | TElementContainerNode): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: ɵangularPackagesCoreCoreBh | TElementContainerNode): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentNull: Self = StObject.set(x, "parent", null)
+    inline def setParentNull: Self = StObject.set(x, "parent", null)
     
-    @scala.inline
-    def setProjection(value: Null): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    inline def setProjection(value: Null): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTViews(value: Null): Self = StObject.set(x, "tViews", value.asInstanceOf[js.Any])
+    inline def setTViews(value: Null): Self = StObject.set(x, "tViews", value.asInstanceOf[js.Any])
   }
 }

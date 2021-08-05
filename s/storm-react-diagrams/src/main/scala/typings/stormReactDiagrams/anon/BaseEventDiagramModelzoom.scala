@@ -21,8 +21,7 @@ trait BaseEventDiagramModelzoom extends StObject {
 }
 object BaseEventDiagramModelzoom {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     entity: BaseEntity[BaseListener[js.Any]],
     firing: Boolean,
     id: String,
@@ -33,22 +32,16 @@ object BaseEventDiagramModelzoom {
     __obj.asInstanceOf[BaseEventDiagramModelzoom]
   }
   
-  @scala.inline
-  implicit class BaseEventDiagramModelzoomMutableBuilder[Self <: BaseEventDiagramModelzoom] (val x: Self) extends AnyVal {
+  extension [Self <: BaseEventDiagramModelzoom](x: Self) {
     
-    @scala.inline
-    def setEntity(value: BaseEntity[BaseListener[js.Any]]): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: BaseEntity[BaseListener[js.Any]]): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiring(value: Boolean): Self = StObject.set(x, "firing", value.asInstanceOf[js.Any])
+    inline def setFiring(value: Boolean): Self = StObject.set(x, "firing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopPropagation(value: () => js.Any): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
+    inline def setStopPropagation(value: () => js.Any): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
+    inline def setZoom(value: Double): Self = StObject.set(x, "zoom", value.asInstanceOf[js.Any])
   }
 }

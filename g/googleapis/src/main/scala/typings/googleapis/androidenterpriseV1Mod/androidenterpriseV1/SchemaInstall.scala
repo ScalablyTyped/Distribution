@@ -54,37 +54,27 @@ trait SchemaInstall extends StObject {
 }
 object SchemaInstall {
   
-  @scala.inline
-  def apply(): SchemaInstall = {
+  inline def apply(): SchemaInstall = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInstall]
   }
   
-  @scala.inline
-  implicit class SchemaInstallMutableBuilder[Self <: SchemaInstall] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInstall](x: Self) {
     
-    @scala.inline
-    def setInstallState(value: String): Self = StObject.set(x, "installState", value.asInstanceOf[js.Any])
+    inline def setInstallState(value: String): Self = StObject.set(x, "installState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallStateUndefined: Self = StObject.set(x, "installState", js.undefined)
+    inline def setInstallStateUndefined: Self = StObject.set(x, "installState", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
+    inline def setProductIdUndefined: Self = StObject.set(x, "productId", js.undefined)
     
-    @scala.inline
-    def setVersionCode(value: Double): Self = StObject.set(x, "versionCode", value.asInstanceOf[js.Any])
+    inline def setVersionCode(value: Double): Self = StObject.set(x, "versionCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionCodeUndefined: Self = StObject.set(x, "versionCode", js.undefined)
+    inline def setVersionCodeUndefined: Self = StObject.set(x, "versionCode", js.undefined)
   }
 }

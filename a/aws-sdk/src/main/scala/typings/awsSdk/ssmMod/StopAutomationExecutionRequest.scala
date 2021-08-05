@@ -18,22 +18,17 @@ trait StopAutomationExecutionRequest extends StObject {
 }
 object StopAutomationExecutionRequest {
   
-  @scala.inline
-  def apply(AutomationExecutionId: AutomationExecutionId): StopAutomationExecutionRequest = {
+  inline def apply(AutomationExecutionId: AutomationExecutionId): StopAutomationExecutionRequest = {
     val __obj = js.Dynamic.literal(AutomationExecutionId = AutomationExecutionId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StopAutomationExecutionRequest]
   }
   
-  @scala.inline
-  implicit class StopAutomationExecutionRequestMutableBuilder[Self <: StopAutomationExecutionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: StopAutomationExecutionRequest](x: Self) {
     
-    @scala.inline
-    def setAutomationExecutionId(value: AutomationExecutionId): Self = StObject.set(x, "AutomationExecutionId", value.asInstanceOf[js.Any])
+    inline def setAutomationExecutionId(value: AutomationExecutionId): Self = StObject.set(x, "AutomationExecutionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: StopType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: StopType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait GetFlowTemplateResponse extends StObject {
 }
 object GetFlowTemplateResponse {
   
-  @scala.inline
-  def apply(): GetFlowTemplateResponse = {
+  inline def apply(): GetFlowTemplateResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetFlowTemplateResponse]
   }
   
-  @scala.inline
-  implicit class GetFlowTemplateResponseMutableBuilder[Self <: GetFlowTemplateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetFlowTemplateResponse](x: Self) {
     
-    @scala.inline
-    def setDescription(value: FlowTemplateDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: FlowTemplateDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
   }
 }

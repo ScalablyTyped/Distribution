@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait popoverAirOptionsInsert extends StObject
 object popoverAirOptionsInsert {
   
-  @scala.inline
-  def link: typings.summernote.summernoteStrings.link = "link".asInstanceOf[typings.summernote.summernoteStrings.link]
+  inline def link: typings.summernote.summernoteStrings.link = "link".asInstanceOf[typings.summernote.summernoteStrings.link]
   
-  @scala.inline
-  def picture: typings.summernote.summernoteStrings.picture = "picture".asInstanceOf[typings.summernote.summernoteStrings.picture]
+  inline def picture: typings.summernote.summernoteStrings.picture = "picture".asInstanceOf[typings.summernote.summernoteStrings.picture]
 }

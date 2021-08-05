@@ -17,34 +17,25 @@ trait GoogleCloudDatalabelingV1alpha1ImportDataOperationMetadata extends StObjec
 }
 object GoogleCloudDatalabelingV1alpha1ImportDataOperationMetadata {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1alpha1ImportDataOperationMetadata = {
+  inline def apply(): GoogleCloudDatalabelingV1alpha1ImportDataOperationMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1alpha1ImportDataOperationMetadata]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1alpha1ImportDataOperationMetadataMutableBuilder[Self <: GoogleCloudDatalabelingV1alpha1ImportDataOperationMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1alpha1ImportDataOperationMetadata](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setDataset(value: String): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+    inline def setDataset(value: String): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
+    inline def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
     
-    @scala.inline
-    def setPartialFailures(value: js.Array[GoogleRpcStatus]): Self = StObject.set(x, "partialFailures", value.asInstanceOf[js.Any])
+    inline def setPartialFailures(value: js.Array[GoogleRpcStatus]): Self = StObject.set(x, "partialFailures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartialFailuresUndefined: Self = StObject.set(x, "partialFailures", js.undefined)
+    inline def setPartialFailuresUndefined: Self = StObject.set(x, "partialFailures", js.undefined)
     
-    @scala.inline
-    def setPartialFailuresVarargs(value: GoogleRpcStatus*): Self = StObject.set(x, "partialFailures", js.Array(value :_*))
+    inline def setPartialFailuresVarargs(value: GoogleRpcStatus*): Self = StObject.set(x, "partialFailures", js.Array(value :_*))
   }
 }

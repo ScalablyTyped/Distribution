@@ -37,80 +37,56 @@ object anon {
   }
   object Age {
     
-    @scala.inline
-    def apply(): Age = {
+    inline def apply(): Age = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Age]
     }
     
-    @scala.inline
-    implicit class AgeMutableBuilder[Self <: Age] (val x: Self) extends AnyVal {
+    extension [Self <: Age](x: Self) {
       
-      @scala.inline
-      def setAge(value: Seconds): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
+      inline def setAge(value: Seconds): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAgeUndefined: Self = StObject.set(x, "age", js.undefined)
+      inline def setAgeUndefined: Self = StObject.set(x, "age", js.undefined)
       
-      @scala.inline
-      def setDir(value: String | js.Array[String]): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: String | js.Array[String]): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+      inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
       
-      @scala.inline
-      def setDirVarargs(value: String*): Self = StObject.set(x, "dir", js.Array(value :_*))
+      inline def setDirVarargs(value: String*): Self = StObject.set(x, "dir", js.Array(value :_*))
       
-      @scala.inline
-      def setExtensions(value: String | js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: String | js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      @scala.inline
-      def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
       
-      @scala.inline
-      def setFiles(value: String | js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: String | js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      @scala.inline
-      def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
       
-      @scala.inline
-      def setIgnore(value: String | js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: String | js.Array[String]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      @scala.inline
-      def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: String*): Self = StObject.set(x, "ignore", js.Array(value :_*))
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setMaxLevel(value: Double): Self = StObject.set(x, "maxLevel", value.asInstanceOf[js.Any])
+      inline def setMaxLevel(value: Double): Self = StObject.set(x, "maxLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLevelUndefined: Self = StObject.set(x, "maxLevel", js.undefined)
+      inline def setMaxLevelUndefined: Self = StObject.set(x, "maxLevel", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setTest(value: Boolean): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
+      inline def setTest(value: Boolean): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
+      inline def setTestUndefined: Self = StObject.set(x, "test", js.undefined)
     }
   }
   
@@ -120,17 +96,14 @@ object anon {
   }
   object Seconds {
     
-    @scala.inline
-    def apply(seconds: Double): Seconds = {
+    inline def apply(seconds: Double): Seconds = {
       val __obj = js.Dynamic.literal(seconds = seconds.asInstanceOf[js.Any])
       __obj.asInstanceOf[Seconds]
     }
     
-    @scala.inline
-    implicit class SecondsMutableBuilder[Self <: Seconds] (val x: Self) extends AnyVal {
+    extension [Self <: Seconds](x: Self) {
       
-      @scala.inline
-      def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+      inline def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
     }
   }
 }

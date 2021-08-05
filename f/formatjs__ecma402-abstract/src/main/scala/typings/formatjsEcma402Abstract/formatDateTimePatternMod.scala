@@ -16,8 +16,7 @@ object formatDateTimePatternMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def FormatDateTimePattern(
+  inline def FormatDateTimePattern(
     dtf: DateTimeFormat,
     patternParts: js.Array[IntlDateTimeFormatPart],
     x: Double,
@@ -34,8 +33,7 @@ object formatDateTimePatternMod {
   }
   object FormatDateTimePatternImplDetails {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getDefaultTimeZone: () => String,
       getInternalSlots: DateTimeFormat => IntlDateTimeFormatInternal,
       localeData: Record[String, DateTimeFormatLocaleInternalData]
@@ -44,17 +42,13 @@ object formatDateTimePatternMod {
       __obj.asInstanceOf[FormatDateTimePatternImplDetails]
     }
     
-    @scala.inline
-    implicit class FormatDateTimePatternImplDetailsMutableBuilder[Self <: FormatDateTimePatternImplDetails] (val x: Self) extends AnyVal {
+    extension [Self <: FormatDateTimePatternImplDetails](x: Self) {
       
-      @scala.inline
-      def setGetDefaultTimeZone(value: () => String): Self = StObject.set(x, "getDefaultTimeZone", js.Any.fromFunction0(value))
+      inline def setGetDefaultTimeZone(value: () => String): Self = StObject.set(x, "getDefaultTimeZone", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetInternalSlots(value: DateTimeFormat => IntlDateTimeFormatInternal): Self = StObject.set(x, "getInternalSlots", js.Any.fromFunction1(value))
+      inline def setGetInternalSlots(value: DateTimeFormat => IntlDateTimeFormatInternal): Self = StObject.set(x, "getInternalSlots", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLocaleData(value: Record[String, DateTimeFormatLocaleInternalData]): Self = StObject.set(x, "localeData", value.asInstanceOf[js.Any])
+      inline def setLocaleData(value: Record[String, DateTimeFormatLocaleInternalData]): Self = StObject.set(x, "localeData", value.asInstanceOf[js.Any])
     }
   }
 }

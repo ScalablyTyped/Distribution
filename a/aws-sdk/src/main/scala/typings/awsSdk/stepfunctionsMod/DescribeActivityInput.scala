@@ -13,16 +13,13 @@ trait DescribeActivityInput extends StObject {
 }
 object DescribeActivityInput {
   
-  @scala.inline
-  def apply(activityArn: Arn): DescribeActivityInput = {
+  inline def apply(activityArn: Arn): DescribeActivityInput = {
     val __obj = js.Dynamic.literal(activityArn = activityArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeActivityInput]
   }
   
-  @scala.inline
-  implicit class DescribeActivityInputMutableBuilder[Self <: DescribeActivityInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeActivityInput](x: Self) {
     
-    @scala.inline
-    def setActivityArn(value: Arn): Self = StObject.set(x, "activityArn", value.asInstanceOf[js.Any])
+    inline def setActivityArn(value: Arn): Self = StObject.set(x, "activityArn", value.asInstanceOf[js.Any])
   }
 }

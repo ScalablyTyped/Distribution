@@ -23,8 +23,7 @@ object trackMod {
   }
   object ScrollbarThumb {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attachTo: HTMLElement => Unit,
       displaySize: Double,
       element: HTMLElement,
@@ -36,26 +35,19 @@ object trackMod {
       __obj.asInstanceOf[ScrollbarThumb]
     }
     
-    @scala.inline
-    implicit class ScrollbarThumbMutableBuilder[Self <: ScrollbarThumb] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollbarThumb](x: Self) {
       
-      @scala.inline
-      def setAttachTo(value: HTMLElement => Unit): Self = StObject.set(x, "attachTo", js.Any.fromFunction1(value))
+      inline def setAttachTo(value: HTMLElement => Unit): Self = StObject.set(x, "attachTo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDisplaySize(value: Double): Self = StObject.set(x, "displaySize", value.asInstanceOf[js.Any])
+      inline def setDisplaySize(value: Double): Self = StObject.set(x, "displaySize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRealSize(value: Double): Self = StObject.set(x, "realSize", value.asInstanceOf[js.Any])
+      inline def setRealSize(value: Double): Self = StObject.set(x, "realSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdate(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
+      inline def setUpdate(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
     }
   }
   
@@ -75,8 +67,7 @@ object trackMod {
   }
   object ScrollbarTrack {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       attachTo: HTMLElement => Unit,
       element: HTMLElement,
       hide: () => Unit,
@@ -88,26 +79,19 @@ object trackMod {
       __obj.asInstanceOf[ScrollbarTrack]
     }
     
-    @scala.inline
-    implicit class ScrollbarTrackMutableBuilder[Self <: ScrollbarTrack] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollbarTrack](x: Self) {
       
-      @scala.inline
-      def setAttachTo(value: HTMLElement => Unit): Self = StObject.set(x, "attachTo", js.Any.fromFunction1(value))
+      inline def setAttachTo(value: HTMLElement => Unit): Self = StObject.set(x, "attachTo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+      inline def setElement(value: HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setThumb(value: ScrollbarThumb): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
+      inline def setThumb(value: ScrollbarThumb): Self = StObject.set(x, "thumb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdate(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
+      inline def setUpdate(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
     }
   }
   
@@ -123,26 +107,20 @@ object trackMod {
   }
   object TrackController {
     
-    @scala.inline
-    def apply(autoHideOnIdle: () => Unit, update: () => Unit, xAxis: ScrollbarTrack, yAxis: ScrollbarTrack): TrackController = {
+    inline def apply(autoHideOnIdle: () => Unit, update: () => Unit, xAxis: ScrollbarTrack, yAxis: ScrollbarTrack): TrackController = {
       val __obj = js.Dynamic.literal(autoHideOnIdle = js.Any.fromFunction0(autoHideOnIdle), update = js.Any.fromFunction0(update), xAxis = xAxis.asInstanceOf[js.Any], yAxis = yAxis.asInstanceOf[js.Any])
       __obj.asInstanceOf[TrackController]
     }
     
-    @scala.inline
-    implicit class TrackControllerMutableBuilder[Self <: TrackController] (val x: Self) extends AnyVal {
+    extension [Self <: TrackController](x: Self) {
       
-      @scala.inline
-      def setAutoHideOnIdle(value: () => Unit): Self = StObject.set(x, "autoHideOnIdle", js.Any.fromFunction0(value))
+      inline def setAutoHideOnIdle(value: () => Unit): Self = StObject.set(x, "autoHideOnIdle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => Unit): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setXAxis(value: ScrollbarTrack): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
+      inline def setXAxis(value: ScrollbarTrack): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYAxis(value: ScrollbarTrack): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
+      inline def setYAxis(value: ScrollbarTrack): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -118,8 +118,7 @@ trait SystemInfoPropertyType
 }
 object SystemInfoPropertyType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     apn: String,
     availableCapacity: Double,
     brightness: Double,
@@ -175,33 +174,24 @@ object SystemInfoPropertyType {
     __obj.asInstanceOf[SystemInfoPropertyType]
   }
   
-  @scala.inline
-  implicit class SystemInfoPropertyTypeMutableBuilder[Self <: SystemInfoPropertyType] (val x: Self) extends AnyVal {
+  extension [Self <: SystemInfoPropertyType](x: Self) {
     
-    @scala.inline
-    def setDns(value: String): Self = StObject.set(x, "dns", value.asInstanceOf[js.Any])
+    inline def setDns(value: String): Self = StObject.set(x, "dns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGateway(value: String): Self = StObject.set(x, "gateway", value.asInstanceOf[js.Any])
+    inline def setGateway(value: String): Self = StObject.set(x, "gateway", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
+    inline def setIpAddress(value: String): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpMode(value: SystemInfoNetworkIpMode | NONE | STATIC | DYNAMIC | AUTO | FIXED): Self = StObject.set(x, "ipMode", value.asInstanceOf[js.Any])
+    inline def setIpMode(value: SystemInfoNetworkIpMode | NONE | STATIC | DYNAMIC | AUTO | FIXED): Self = StObject.set(x, "ipMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpv6Address(value: String): Self = StObject.set(x, "ipv6Address", value.asInstanceOf[js.Any])
+    inline def setIpv6Address(value: String): Self = StObject.set(x, "ipv6Address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMacAddress(value: String): Self = StObject.set(x, "macAddress", value.asInstanceOf[js.Any])
+    inline def setMacAddress(value: String): Self = StObject.set(x, "macAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(
+    inline def setStatus(
       value: (SystemInfoLowMemoryStatus | NORMAL | WARNING) & String & (SystemInfoDeviceOrientationStatus | PORTRAIT_PRIMARY | PORTRAIT_SECONDARY | LANDSCAPE_PRIMARY | LANDSCAPE_SECONDARY)
     ): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetMask(value: String): Self = StObject.set(x, "subnetMask", value.asInstanceOf[js.Any])
+    inline def setSubnetMask(value: String): Self = StObject.set(x, "subnetMask", value.asInstanceOf[js.Any])
   }
 }

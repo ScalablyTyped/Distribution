@@ -10,16 +10,13 @@ trait Meta extends StObject {
 }
 object Meta {
   
-  @scala.inline
-  def apply(meta: /* import warning: importer.ImportType#apply Failed type conversion: infer D */ js.Any): Meta = {
+  inline def apply(meta: /* import warning: importer.ImportType#apply Failed type conversion: infer D */ js.Any): Meta = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any])
     __obj.asInstanceOf[Meta]
   }
   
-  @scala.inline
-  implicit class MetaMutableBuilder[Self <: Meta] (val x: Self) extends AnyVal {
+  extension [Self <: Meta](x: Self) {
     
-    @scala.inline
-    def setMeta(value: /* import warning: importer.ImportType#apply Failed type conversion: infer D */ js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: /* import warning: importer.ImportType#apply Failed type conversion: infer D */ js.Any): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
   }
 }

@@ -14,23 +14,18 @@ trait JsonSqlTokenType
 }
 object JsonSqlTokenType {
   
-  @scala.inline
-  def apply(`type`: js.Symbol): JsonSqlTokenType = {
+  inline def apply(`type`: js.Symbol): JsonSqlTokenType = {
     val __obj = js.Dynamic.literal(value = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[JsonSqlTokenType]
   }
   
-  @scala.inline
-  implicit class JsonSqlTokenTypeMutableBuilder[Self <: JsonSqlTokenType] (val x: Self) extends AnyVal {
+  extension [Self <: JsonSqlTokenType](x: Self) {
     
-    @scala.inline
-    def setType(value: js.Symbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: js.Symbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: SerializableValueType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: SerializableValueType): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueNull: Self = StObject.set(x, "value", null)
+    inline def setValueNull: Self = StObject.set(x, "value", null)
   }
 }

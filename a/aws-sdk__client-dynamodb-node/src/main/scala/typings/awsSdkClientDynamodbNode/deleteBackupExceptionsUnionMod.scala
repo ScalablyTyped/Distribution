@@ -15,26 +15,22 @@ object deleteBackupExceptionsUnionMod {
   trait DeleteBackupExceptionsUnion extends StObject
   object DeleteBackupExceptionsUnion {
     
-    @scala.inline
-    def BackupInUseException(): typings.awsSdkClientDynamodbNode.typesBackupInUseExceptionMod.BackupInUseException = {
+    inline def BackupInUseException(): typings.awsSdkClientDynamodbNode.typesBackupInUseExceptionMod.BackupInUseException = {
       val __obj = js.Dynamic.literal(name = "BackupInUseException")
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesBackupInUseExceptionMod.BackupInUseException]
     }
     
-    @scala.inline
-    def BackupNotFoundException(): typings.awsSdkClientDynamodbNode.typesBackupNotFoundExceptionMod.BackupNotFoundException = {
+    inline def BackupNotFoundException(): typings.awsSdkClientDynamodbNode.typesBackupNotFoundExceptionMod.BackupNotFoundException = {
       val __obj = js.Dynamic.literal(name = "BackupNotFoundException")
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesBackupNotFoundExceptionMod.BackupNotFoundException]
     }
     
-    @scala.inline
-    def InternalServerError(): typings.awsSdkClientDynamodbNode.typesInternalServerErrorMod.InternalServerError = {
+    inline def InternalServerError(): typings.awsSdkClientDynamodbNode.typesInternalServerErrorMod.InternalServerError = {
       val __obj = js.Dynamic.literal(name = "InternalServerError")
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesInternalServerErrorMod.InternalServerError]
     }
     
-    @scala.inline
-    def LimitExceededException(): typings.awsSdkClientDynamodbNode.typesLimitExceededExceptionMod.LimitExceededException = {
+    inline def LimitExceededException(): typings.awsSdkClientDynamodbNode.typesLimitExceededExceptionMod.LimitExceededException = {
       val __obj = js.Dynamic.literal(name = "LimitExceededException")
       __obj.asInstanceOf[typings.awsSdkClientDynamodbNode.typesLimitExceededExceptionMod.LimitExceededException]
     }

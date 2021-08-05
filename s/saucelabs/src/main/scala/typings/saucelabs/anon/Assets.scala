@@ -33,8 +33,7 @@ trait Assets
 }
 object Assets {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     assets: Boolean,
     browser: String,
     browserDisplay: String,
@@ -49,46 +48,32 @@ object Assets {
     __obj.asInstanceOf[Assets]
   }
   
-  @scala.inline
-  implicit class AssetsMutableBuilder[Self <: Assets] (val x: Self) extends AnyVal {
+  extension [Self <: Assets](x: Self) {
     
-    @scala.inline
-    def setAssets(value: Boolean): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
+    inline def setAssets(value: Boolean): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+    inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowserDisplay(value: String): Self = StObject.set(x, "browserDisplay", value.asInstanceOf[js.Any])
+    inline def setBrowserDisplay(value: String): Self = StObject.set(x, "browserDisplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrowserVersionDisplay(value: String): Self = StObject.set(x, "browserVersionDisplay", value.asInstanceOf[js.Any])
+    inline def setBrowserVersionDisplay(value: String): Self = StObject.set(x, "browserVersionDisplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
+    inline def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
     
-    @scala.inline
-    def setOs(value: String): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+    inline def setOs(value: String): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOsDisplay(value: String): Self = StObject.set(x, "osDisplay", value.asInstanceOf[js.Any])
+    inline def setOsDisplay(value: String): Self = StObject.set(x, "osDisplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRes(value: String): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+    inline def setRes(value: String): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTunnel(value: String): Self = StObject.set(x, "tunnel", value.asInstanceOf[js.Any])
+    inline def setTunnel(value: String): Self = StObject.set(x, "tunnel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTunnelUndefined: Self = StObject.set(x, "tunnel", js.undefined)
+    inline def setTunnelUndefined: Self = StObject.set(x, "tunnel", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

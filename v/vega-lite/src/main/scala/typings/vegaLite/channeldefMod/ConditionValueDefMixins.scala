@@ -18,22 +18,17 @@ trait ConditionValueDefMixins[V /* <: Value[ExprRef | SignalRef] */] extends StO
 }
 object ConditionValueDefMixins {
   
-  @scala.inline
-  def apply[V /* <: Value[ExprRef | SignalRef] */](): ConditionValueDefMixins[V] = {
+  inline def apply[V /* <: Value[ExprRef | SignalRef] */](): ConditionValueDefMixins[V] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConditionValueDefMixins[V]]
   }
   
-  @scala.inline
-  implicit class ConditionValueDefMixinsMutableBuilder[Self <: ConditionValueDefMixins[?], V /* <: Value[ExprRef | SignalRef] */] (val x: Self & ConditionValueDefMixins[V]) extends AnyVal {
+  extension [Self <: ConditionValueDefMixins[?], V /* <: Value[ExprRef | SignalRef] */](x: Self & ConditionValueDefMixins[V]) {
     
-    @scala.inline
-    def setCondition(value: Conditional[ValueDef[V]] | js.Array[Conditional[ValueDef[V]]]): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: Conditional[ValueDef[V]] | js.Array[Conditional[ValueDef[V]]]): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    @scala.inline
-    def setConditionVarargs(value: Conditional[ValueDef[V]]*): Self = StObject.set(x, "condition", js.Array(value :_*))
+    inline def setConditionVarargs(value: Conditional[ValueDef[V]]*): Self = StObject.set(x, "condition", js.Array(value :_*))
   }
 }

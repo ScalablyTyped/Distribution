@@ -11,19 +11,15 @@ trait HistoryTraversalOptions extends StObject {
 }
 object HistoryTraversalOptions {
   
-  @scala.inline
-  def apply(): HistoryTraversalOptions = {
+  inline def apply(): HistoryTraversalOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HistoryTraversalOptions]
   }
   
-  @scala.inline
-  implicit class HistoryTraversalOptionsMutableBuilder[Self <: HistoryTraversalOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HistoryTraversalOptions](x: Self) {
     
-    @scala.inline
-    def setSelectionsMarkerLayer(value: MarkerLayer): Self = StObject.set(x, "selectionsMarkerLayer", value.asInstanceOf[js.Any])
+    inline def setSelectionsMarkerLayer(value: MarkerLayer): Self = StObject.set(x, "selectionsMarkerLayer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionsMarkerLayerUndefined: Self = StObject.set(x, "selectionsMarkerLayer", js.undefined)
+    inline def setSelectionsMarkerLayerUndefined: Self = StObject.set(x, "selectionsMarkerLayer", js.undefined)
   }
 }

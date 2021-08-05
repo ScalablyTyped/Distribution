@@ -24,8 +24,7 @@ trait XMLNode extends StObject {
 }
 object XMLNode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAttribute: String => String,
     getChildNodeIterator: () => XMLNodeIterator,
     getFirstChild: () => XMLNode,
@@ -39,31 +38,22 @@ object XMLNode {
     __obj.asInstanceOf[XMLNode]
   }
   
-  @scala.inline
-  implicit class XMLNodeMutableBuilder[Self <: XMLNode] (val x: Self) extends AnyVal {
+  extension [Self <: XMLNode](x: Self) {
     
-    @scala.inline
-    def setGetAttribute(value: String => String): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
+    inline def setGetAttribute(value: String => String): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetChildNodeIterator(value: () => XMLNodeIterator): Self = StObject.set(x, "getChildNodeIterator", js.Any.fromFunction0(value))
+    inline def setGetChildNodeIterator(value: () => XMLNodeIterator): Self = StObject.set(x, "getChildNodeIterator", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFirstChild(value: () => XMLNode): Self = StObject.set(x, "getFirstChild", js.Any.fromFunction0(value))
+    inline def setGetFirstChild(value: () => XMLNode): Self = StObject.set(x, "getFirstChild", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLastChild(value: () => XMLNode): Self = StObject.set(x, "getLastChild", js.Any.fromFunction0(value))
+    inline def setGetLastChild(value: () => XMLNode): Self = StObject.set(x, "getLastChild", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNodeName(value: () => String): Self = StObject.set(x, "getNodeName", js.Any.fromFunction0(value))
+    inline def setGetNodeName(value: () => String): Self = StObject.set(x, "getNodeName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNodeValue(value: () => String): Self = StObject.set(x, "getNodeValue", js.Any.fromFunction0(value))
+    inline def setGetNodeValue(value: () => String): Self = StObject.set(x, "getNodeValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTextContent(value: () => String): Self = StObject.set(x, "getTextContent", js.Any.fromFunction0(value))
+    inline def setGetTextContent(value: () => String): Self = StObject.set(x, "getTextContent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasAttribute(value: String => Boolean): Self = StObject.set(x, "hasAttribute", js.Any.fromFunction1(value))
+    inline def setHasAttribute(value: String => Boolean): Self = StObject.set(x, "hasAttribute", js.Any.fromFunction1(value))
   }
 }

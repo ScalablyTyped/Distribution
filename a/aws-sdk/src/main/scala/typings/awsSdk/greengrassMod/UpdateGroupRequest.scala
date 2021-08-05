@@ -18,22 +18,17 @@ trait UpdateGroupRequest extends StObject {
 }
 object UpdateGroupRequest {
   
-  @scala.inline
-  def apply(GroupId: string): UpdateGroupRequest = {
+  inline def apply(GroupId: string): UpdateGroupRequest = {
     val __obj = js.Dynamic.literal(GroupId = GroupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateGroupRequest]
   }
   
-  @scala.inline
-  implicit class UpdateGroupRequestMutableBuilder[Self <: UpdateGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateGroupRequest](x: Self) {
     
-    @scala.inline
-    def setGroupId(value: string): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
+    inline def setGroupId(value: string): Self = StObject.set(x, "GroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

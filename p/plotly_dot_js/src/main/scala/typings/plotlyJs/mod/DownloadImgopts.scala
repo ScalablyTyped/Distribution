@@ -20,25 +20,19 @@ trait DownloadImgopts extends StObject {
 }
 object DownloadImgopts {
   
-  @scala.inline
-  def apply(filename: String, format: jpeg | png | webp | svg, height: Double, width: Double): DownloadImgopts = {
+  inline def apply(filename: String, format: jpeg | png | webp | svg, height: Double, width: Double): DownloadImgopts = {
     val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[DownloadImgopts]
   }
   
-  @scala.inline
-  implicit class DownloadImgoptsMutableBuilder[Self <: DownloadImgopts] (val x: Self) extends AnyVal {
+  extension [Self <: DownloadImgopts](x: Self) {
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: jpeg | png | webp | svg): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: jpeg | png | webp | svg): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

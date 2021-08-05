@@ -10,19 +10,15 @@ trait Detached extends StObject {
 }
 object Detached {
   
-  @scala.inline
-  def apply(): Detached = {
+  inline def apply(): Detached = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Detached]
   }
   
-  @scala.inline
-  implicit class DetachedMutableBuilder[Self <: Detached] (val x: Self) extends AnyVal {
+  extension [Self <: Detached](x: Self) {
     
-    @scala.inline
-    def setDetached(value: Boolean): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
+    inline def setDetached(value: Boolean): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
+    inline def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
   }
 }

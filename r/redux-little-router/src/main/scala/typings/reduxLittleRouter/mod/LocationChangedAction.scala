@@ -14,20 +14,16 @@ trait LocationChangedAction
 }
 object LocationChangedAction {
   
-  @scala.inline
-  def apply(payload: Location, `type`: /* "ROUTER_LOCATION_CHANGED" */ String): LocationChangedAction = {
+  inline def apply(payload: Location, `type`: /* "ROUTER_LOCATION_CHANGED" */ String): LocationChangedAction = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationChangedAction]
   }
   
-  @scala.inline
-  implicit class LocationChangedActionMutableBuilder[Self <: LocationChangedAction] (val x: Self) extends AnyVal {
+  extension [Self <: LocationChangedAction](x: Self) {
     
-    @scala.inline
-    def setPayload(value: Location): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: Location): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: /* "ROUTER_LOCATION_CHANGED" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: /* "ROUTER_LOCATION_CHANGED" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

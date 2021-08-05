@@ -27,37 +27,27 @@ trait GoogleCloudSaasacceleratorManagementProvidersV1SloExclusion extends StObje
 }
 object GoogleCloudSaasacceleratorManagementProvidersV1SloExclusion {
   
-  @scala.inline
-  def apply(): GoogleCloudSaasacceleratorManagementProvidersV1SloExclusion = {
+  inline def apply(): GoogleCloudSaasacceleratorManagementProvidersV1SloExclusion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudSaasacceleratorManagementProvidersV1SloExclusion]
   }
   
-  @scala.inline
-  implicit class GoogleCloudSaasacceleratorManagementProvidersV1SloExclusionMutableBuilder[Self <: GoogleCloudSaasacceleratorManagementProvidersV1SloExclusion] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudSaasacceleratorManagementProvidersV1SloExclusion](x: Self) {
     
-    @scala.inline
-    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
-    @scala.inline
-    def setSliName(value: String): Self = StObject.set(x, "sliName", value.asInstanceOf[js.Any])
+    inline def setSliName(value: String): Self = StObject.set(x, "sliName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSliNameUndefined: Self = StObject.set(x, "sliName", js.undefined)
+    inline def setSliNameUndefined: Self = StObject.set(x, "sliName", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

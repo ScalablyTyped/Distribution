@@ -35,8 +35,7 @@ trait ReleaseEnvironmentCompletedEvent extends StObject {
 }
 object ReleaseEnvironmentCompletedEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createdByName: String,
     definitionId: Double,
     definitionName: String,
@@ -55,46 +54,32 @@ object ReleaseEnvironmentCompletedEvent {
     __obj.asInstanceOf[ReleaseEnvironmentCompletedEvent]
   }
   
-  @scala.inline
-  implicit class ReleaseEnvironmentCompletedEventMutableBuilder[Self <: ReleaseEnvironmentCompletedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ReleaseEnvironmentCompletedEvent](x: Self) {
     
-    @scala.inline
-    def setCreatedByName(value: String): Self = StObject.set(x, "createdByName", value.asInstanceOf[js.Any])
+    inline def setCreatedByName(value: String): Self = StObject.set(x, "createdByName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinitionId(value: Double): Self = StObject.set(x, "definitionId", value.asInstanceOf[js.Any])
+    inline def setDefinitionId(value: Double): Self = StObject.set(x, "definitionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinitionName(value: String): Self = StObject.set(x, "definitionName", value.asInstanceOf[js.Any])
+    inline def setDefinitionName(value: String): Self = StObject.set(x, "definitionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironment(value: ReleaseEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: ReleaseEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentId(value: Double): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
+    inline def setEnvironmentId(value: Double): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectName(value: String): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
+    inline def setProjectName(value: String): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: DeploymentReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: DeploymentReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseCreatedBy(value: IdentityRef): Self = StObject.set(x, "releaseCreatedBy", value.asInstanceOf[js.Any])
+    inline def setReleaseCreatedBy(value: IdentityRef): Self = StObject.set(x, "releaseCreatedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseLogsUri(value: String): Self = StObject.set(x, "releaseLogsUri", value.asInstanceOf[js.Any])
+    inline def setReleaseLogsUri(value: String): Self = StObject.set(x, "releaseLogsUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseName(value: String): Self = StObject.set(x, "releaseName", value.asInstanceOf[js.Any])
+    inline def setReleaseName(value: String): Self = StObject.set(x, "releaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebAccessUri(value: String): Self = StObject.set(x, "webAccessUri", value.asInstanceOf[js.Any])
+    inline def setWebAccessUri(value: String): Self = StObject.set(x, "webAccessUri", value.asInstanceOf[js.Any])
   }
 }

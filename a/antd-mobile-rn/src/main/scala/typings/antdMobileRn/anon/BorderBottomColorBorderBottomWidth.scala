@@ -12,19 +12,15 @@ trait BorderBottomColorBorderBottomWidth extends StObject {
 }
 object BorderBottomColorBorderBottomWidth {
   
-  @scala.inline
-  def apply(borderBottomColor: String, borderBottomWidth: Double): BorderBottomColorBorderBottomWidth = {
+  inline def apply(borderBottomColor: String, borderBottomWidth: Double): BorderBottomColorBorderBottomWidth = {
     val __obj = js.Dynamic.literal(borderBottomColor = borderBottomColor.asInstanceOf[js.Any], borderBottomWidth = borderBottomWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[BorderBottomColorBorderBottomWidth]
   }
   
-  @scala.inline
-  implicit class BorderBottomColorBorderBottomWidthMutableBuilder[Self <: BorderBottomColorBorderBottomWidth] (val x: Self) extends AnyVal {
+  extension [Self <: BorderBottomColorBorderBottomWidth](x: Self) {
     
-    @scala.inline
-    def setBorderBottomColor(value: String): Self = StObject.set(x, "borderBottomColor", value.asInstanceOf[js.Any])
+    inline def setBorderBottomColor(value: String): Self = StObject.set(x, "borderBottomColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderBottomWidth(value: Double): Self = StObject.set(x, "borderBottomWidth", value.asInstanceOf[js.Any])
+    inline def setBorderBottomWidth(value: Double): Self = StObject.set(x, "borderBottomWidth", value.asInstanceOf[js.Any])
   }
 }

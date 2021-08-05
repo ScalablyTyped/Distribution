@@ -17,20 +17,16 @@ trait Percentage
 }
 object Percentage {
   
-  @scala.inline
-  def apply(value: String): Percentage = {
+  inline def apply(value: String): Percentage = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Percentage")
     __obj.asInstanceOf[Percentage]
   }
   
-  @scala.inline
-  implicit class PercentageMutableBuilder[Self <: Percentage] (val x: Self) extends AnyVal {
+  extension [Self <: Percentage](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.cssTree.cssTreeStrings.Percentage): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.cssTree.cssTreeStrings.Percentage): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -13,22 +13,17 @@ trait DescribeSMBFileSharesOutput extends StObject {
 }
 object DescribeSMBFileSharesOutput {
   
-  @scala.inline
-  def apply(): DescribeSMBFileSharesOutput = {
+  inline def apply(): DescribeSMBFileSharesOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeSMBFileSharesOutput]
   }
   
-  @scala.inline
-  implicit class DescribeSMBFileSharesOutputMutableBuilder[Self <: DescribeSMBFileSharesOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSMBFileSharesOutput](x: Self) {
     
-    @scala.inline
-    def setSMBFileShareInfoList(value: SMBFileShareInfoList): Self = StObject.set(x, "SMBFileShareInfoList", value.asInstanceOf[js.Any])
+    inline def setSMBFileShareInfoList(value: SMBFileShareInfoList): Self = StObject.set(x, "SMBFileShareInfoList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSMBFileShareInfoListUndefined: Self = StObject.set(x, "SMBFileShareInfoList", js.undefined)
+    inline def setSMBFileShareInfoListUndefined: Self = StObject.set(x, "SMBFileShareInfoList", js.undefined)
     
-    @scala.inline
-    def setSMBFileShareInfoListVarargs(value: SMBFileShareInfo*): Self = StObject.set(x, "SMBFileShareInfoList", js.Array(value :_*))
+    inline def setSMBFileShareInfoListVarargs(value: SMBFileShareInfo*): Self = StObject.set(x, "SMBFileShareInfoList", js.Array(value :_*))
   }
 }

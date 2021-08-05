@@ -21,40 +21,29 @@ trait DragAndDropOptions extends StObject {
 }
 object DragAndDropOptions {
   
-  @scala.inline
-  def apply(): DragAndDropOptions = {
+  inline def apply(): DragAndDropOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DragAndDropOptions]
   }
   
-  @scala.inline
-  implicit class DragAndDropOptionsMutableBuilder[Self <: DragAndDropOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DragAndDropOptions](x: Self) {
     
-    @scala.inline
-    def setFormatConstructors(value: js.Array[Instantiable0[Feature]]): Self = StObject.set(x, "formatConstructors", value.asInstanceOf[js.Any])
+    inline def setFormatConstructors(value: js.Array[Instantiable0[Feature]]): Self = StObject.set(x, "formatConstructors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatConstructorsUndefined: Self = StObject.set(x, "formatConstructors", js.undefined)
+    inline def setFormatConstructorsUndefined: Self = StObject.set(x, "formatConstructors", js.undefined)
     
-    @scala.inline
-    def setFormatConstructorsVarargs(value: Instantiable0[Feature]*): Self = StObject.set(x, "formatConstructors", js.Array(value :_*))
+    inline def setFormatConstructorsVarargs(value: Instantiable0[Feature]*): Self = StObject.set(x, "formatConstructors", js.Array(value :_*))
     
-    @scala.inline
-    def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    inline def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+    inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
-    @scala.inline
-    def setSource(value: Vector): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Vector): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

@@ -12,19 +12,15 @@ trait AngleAndHeight extends StObject {
 }
 object AngleAndHeight {
   
-  @scala.inline
-  def apply(angleAndHeight: EndPosition, distance: EndPosition): AngleAndHeight = {
+  inline def apply(angleAndHeight: EndPosition, distance: EndPosition): AngleAndHeight = {
     val __obj = js.Dynamic.literal(angleAndHeight = angleAndHeight.asInstanceOf[js.Any], distance = distance.asInstanceOf[js.Any])
     __obj.asInstanceOf[AngleAndHeight]
   }
   
-  @scala.inline
-  implicit class AngleAndHeightMutableBuilder[Self <: AngleAndHeight] (val x: Self) extends AnyVal {
+  extension [Self <: AngleAndHeight](x: Self) {
     
-    @scala.inline
-    def setAngleAndHeight(value: EndPosition): Self = StObject.set(x, "angleAndHeight", value.asInstanceOf[js.Any])
+    inline def setAngleAndHeight(value: EndPosition): Self = StObject.set(x, "angleAndHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistance(value: EndPosition): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: EndPosition): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
   }
 }

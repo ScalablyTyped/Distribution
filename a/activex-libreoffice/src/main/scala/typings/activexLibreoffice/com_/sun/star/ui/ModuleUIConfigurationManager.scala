@@ -39,8 +39,7 @@ trait ModuleUIConfigurationManager
 }
 object ModuleUIConfigurationManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EventsManager: XInterface,
     ImageManager: XInterface,
     ShortCutManager: XAcceleratorConfiguration,
@@ -73,10 +72,8 @@ object ModuleUIConfigurationManager {
     __obj.asInstanceOf[ModuleUIConfigurationManager]
   }
   
-  @scala.inline
-  implicit class ModuleUIConfigurationManagerMutableBuilder[Self <: ModuleUIConfigurationManager] (val x: Self) extends AnyVal {
+  extension [Self <: ModuleUIConfigurationManager](x: Self) {
     
-    @scala.inline
-    def setCreateDefault(value: (String, String) => Unit): Self = StObject.set(x, "createDefault", js.Any.fromFunction2(value))
+    inline def setCreateDefault(value: (String, String) => Unit): Self = StObject.set(x, "createDefault", js.Any.fromFunction2(value))
   }
 }

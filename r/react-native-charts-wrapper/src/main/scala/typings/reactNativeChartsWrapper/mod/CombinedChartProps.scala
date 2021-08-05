@@ -25,46 +25,33 @@ trait CombinedChartProps
 }
 object CombinedChartProps {
   
-  @scala.inline
-  def apply(): CombinedChartProps = {
+  inline def apply(): CombinedChartProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CombinedChartProps]
   }
   
-  @scala.inline
-  implicit class CombinedChartPropsMutableBuilder[Self <: CombinedChartProps] (val x: Self) extends AnyVal {
+  extension [Self <: CombinedChartProps](x: Self) {
     
-    @scala.inline
-    def setData(value: CombinedData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: CombinedData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDrawBarShadow(value: Boolean): Self = StObject.set(x, "drawBarShadow", value.asInstanceOf[js.Any])
+    inline def setDrawBarShadow(value: Boolean): Self = StObject.set(x, "drawBarShadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawBarShadowUndefined: Self = StObject.set(x, "drawBarShadow", js.undefined)
+    inline def setDrawBarShadowUndefined: Self = StObject.set(x, "drawBarShadow", js.undefined)
     
-    @scala.inline
-    def setDrawOrder(value: js.Array[BAR | BUBBLE | LINE | CANDLE | SCATTER]): Self = StObject.set(x, "drawOrder", value.asInstanceOf[js.Any])
+    inline def setDrawOrder(value: js.Array[BAR | BUBBLE | LINE | CANDLE | SCATTER]): Self = StObject.set(x, "drawOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawOrderUndefined: Self = StObject.set(x, "drawOrder", js.undefined)
+    inline def setDrawOrderUndefined: Self = StObject.set(x, "drawOrder", js.undefined)
     
-    @scala.inline
-    def setDrawOrderVarargs(value: (BAR | BUBBLE | LINE | CANDLE | SCATTER)*): Self = StObject.set(x, "drawOrder", js.Array(value :_*))
+    inline def setDrawOrderVarargs(value: (BAR | BUBBLE | LINE | CANDLE | SCATTER)*): Self = StObject.set(x, "drawOrder", js.Array(value :_*))
     
-    @scala.inline
-    def setDrawValueAboveBar(value: Boolean): Self = StObject.set(x, "drawValueAboveBar", value.asInstanceOf[js.Any])
+    inline def setDrawValueAboveBar(value: Boolean): Self = StObject.set(x, "drawValueAboveBar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawValueAboveBarUndefined: Self = StObject.set(x, "drawValueAboveBar", js.undefined)
+    inline def setDrawValueAboveBarUndefined: Self = StObject.set(x, "drawValueAboveBar", js.undefined)
     
-    @scala.inline
-    def setHighlightFullBarEnabled(value: Boolean): Self = StObject.set(x, "highlightFullBarEnabled", value.asInstanceOf[js.Any])
+    inline def setHighlightFullBarEnabled(value: Boolean): Self = StObject.set(x, "highlightFullBarEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighlightFullBarEnabledUndefined: Self = StObject.set(x, "highlightFullBarEnabled", js.undefined)
+    inline def setHighlightFullBarEnabledUndefined: Self = StObject.set(x, "highlightFullBarEnabled", js.undefined)
   }
 }

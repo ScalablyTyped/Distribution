@@ -18,8 +18,7 @@ trait AllJoynAuthenticationCompleteEventArgs extends StObject {
 }
 object AllJoynAuthenticationCompleteEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authenticationMechanism: AllJoynAuthenticationMechanism,
     peerUniqueName: String,
     succeeded: Boolean
@@ -28,16 +27,12 @@ object AllJoynAuthenticationCompleteEventArgs {
     __obj.asInstanceOf[AllJoynAuthenticationCompleteEventArgs]
   }
   
-  @scala.inline
-  implicit class AllJoynAuthenticationCompleteEventArgsMutableBuilder[Self <: AllJoynAuthenticationCompleteEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: AllJoynAuthenticationCompleteEventArgs](x: Self) {
     
-    @scala.inline
-    def setAuthenticationMechanism(value: AllJoynAuthenticationMechanism): Self = StObject.set(x, "authenticationMechanism", value.asInstanceOf[js.Any])
+    inline def setAuthenticationMechanism(value: AllJoynAuthenticationMechanism): Self = StObject.set(x, "authenticationMechanism", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeerUniqueName(value: String): Self = StObject.set(x, "peerUniqueName", value.asInstanceOf[js.Any])
+    inline def setPeerUniqueName(value: String): Self = StObject.set(x, "peerUniqueName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSucceeded(value: Boolean): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
+    inline def setSucceeded(value: Boolean): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
   }
 }

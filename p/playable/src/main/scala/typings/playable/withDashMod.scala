@@ -35,56 +35,48 @@ object withDashMod {
     @JSImport("playable/dist/src/with-dash", "default.CROSS_ORIGIN_VALUES")
     @js.native
     def CROSS_ORIGIN_VALUES: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CROSS_ORIGIN_VALUES */ js.Any = js.native
-    @scala.inline
-    def CROSS_ORIGIN_VALUES_=(
+    inline def CROSS_ORIGIN_VALUES_=(
       x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CROSS_ORIGIN_VALUES */ js.Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CROSS_ORIGIN_VALUES")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/with-dash", "default.ENGINE_STATES")
     @js.native
     def ENGINE_STATES: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ENGINE_STATES */ js.Any = js.native
-    @scala.inline
-    def ENGINE_STATES_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ENGINE_STATES */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENGINE_STATES")(x.asInstanceOf[js.Any])
+    inline def ENGINE_STATES_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ENGINE_STATES */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENGINE_STATES")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/with-dash", "default.ERRORS")
     @js.native
     def ERRORS: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ERRORS */ js.Any = js.native
-    @scala.inline
-    def ERRORS_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ERRORS */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERRORS")(x.asInstanceOf[js.Any])
+    inline def ERRORS_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ERRORS */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ERRORS")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/with-dash", "default.LIVE_STATES")
     @js.native
     def LIVE_STATES: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LIVE_STATES */ js.Any = js.native
-    @scala.inline
-    def LIVE_STATES_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LIVE_STATES */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIVE_STATES")(x.asInstanceOf[js.Any])
+    inline def LIVE_STATES_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LIVE_STATES */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LIVE_STATES")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/with-dash", "default.MEDIA_STREAM_DELIVERY_PRIORITY")
     @js.native
     def MEDIA_STREAM_DELIVERY_PRIORITY: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MEDIA_STREAM_DELIVERY_PRIORITY */ js.Any = js.native
-    @scala.inline
-    def MEDIA_STREAM_DELIVERY_PRIORITY_=(
+    inline def MEDIA_STREAM_DELIVERY_PRIORITY_=(
       x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MEDIA_STREAM_DELIVERY_PRIORITY */ js.Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIA_STREAM_DELIVERY_PRIORITY")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/with-dash", "default.MEDIA_STREAM_TYPES")
     @js.native
     def MEDIA_STREAM_TYPES: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MEDIA_STREAM_TYPES */ js.Any = js.native
-    @scala.inline
-    def MEDIA_STREAM_TYPES_=(
+    inline def MEDIA_STREAM_TYPES_=(
       x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof MEDIA_STREAM_TYPES */ js.Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MEDIA_STREAM_TYPES")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/with-dash", "default.PRELOAD_TYPES")
     @js.native
     def PRELOAD_TYPES: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PRELOAD_TYPES */ js.Any = js.native
-    @scala.inline
-    def PRELOAD_TYPES_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PRELOAD_TYPES */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRELOAD_TYPES")(x.asInstanceOf[js.Any])
+    inline def PRELOAD_TYPES_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PRELOAD_TYPES */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PRELOAD_TYPES")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/with-dash", "default.TEXT_LABELS")
     @js.native
     def TEXT_LABELS: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TEXT_LABELS */ js.Any = js.native
-    @scala.inline
-    def TEXT_LABELS_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TEXT_LABELS */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEXT_LABELS")(x.asInstanceOf[js.Any])
+    inline def TEXT_LABELS_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TEXT_LABELS */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEXT_LABELS")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/with-dash", "default.Tooltip")
     @js.native
@@ -96,55 +88,43 @@ object withDashMod {
     class TooltipCls ()
       extends typings.playable.tooltipMod.Tooltip
     
-    @scala.inline
-    def Tooltip_=(x: Instantiable0[typings.playable.tooltipMod.Tooltip]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tooltip")(x.asInstanceOf[js.Any])
+    inline def Tooltip_=(x: Instantiable0[typings.playable.tooltipMod.Tooltip]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Tooltip")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/with-dash", "default.UI_EVENTS")
     @js.native
     def UI_EVENTS: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof UI_EVENTS */ js.Any = js.native
-    @scala.inline
-    def UI_EVENTS_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof UI_EVENTS */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UI_EVENTS")(x.asInstanceOf[js.Any])
+    inline def UI_EVENTS_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof UI_EVENTS */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UI_EVENTS")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/with-dash", "default.VIDEO_EVENTS")
     @js.native
     def VIDEO_EVENTS: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VIDEO_EVENTS */ js.Any = js.native
-    @scala.inline
-    def VIDEO_EVENTS_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VIDEO_EVENTS */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VIDEO_EVENTS")(x.asInstanceOf[js.Any])
+    inline def VIDEO_EVENTS_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VIDEO_EVENTS */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VIDEO_EVENTS")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/with-dash", "default.VIDEO_VIEW_MODES")
     @js.native
     def VIDEO_VIEW_MODES: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VIDEO_VIEW_MODES */ js.Any = js.native
-    @scala.inline
-    def VIDEO_VIEW_MODES_=(
+    inline def VIDEO_VIEW_MODES_=(
       x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VIDEO_VIEW_MODES */ js.Any
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VIDEO_VIEW_MODES")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def clearAdditionalModules(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAdditionalModules")().asInstanceOf[Unit]
+    inline def clearAdditionalModules(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAdditionalModules")().asInstanceOf[Unit]
     @JSImport("playable/dist/src/with-dash", "default.clearAdditionalModules")
     @js.native
     def clearAdditionalModules_Fdefault: js.Function0[Unit] = js.native
     
-    @scala.inline
-    def clearAdditionalModules_Fdefault_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clearAdditionalModules")(x.asInstanceOf[js.Any])
+    inline def clearAdditionalModules_Fdefault_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clearAdditionalModules")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def clearPlaybackAdapters(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearPlaybackAdapters")().asInstanceOf[Unit]
+    inline def clearPlaybackAdapters(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearPlaybackAdapters")().asInstanceOf[Unit]
     @JSImport("playable/dist/src/with-dash", "default.clearPlaybackAdapters")
     @js.native
     def clearPlaybackAdapters_Fdefault: js.Function0[Unit] = js.native
     
-    @scala.inline
-    def clearPlaybackAdapters_Fdefault_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clearPlaybackAdapters")(x.asInstanceOf[js.Any])
+    inline def clearPlaybackAdapters_Fdefault_=(x: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clearPlaybackAdapters")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def create(): IPlayerInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[IPlayerInstance]
-    @scala.inline
-    def create(params: Unit, themeConfig: IThemeConfig): IPlayerInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(params.asInstanceOf[js.Any], themeConfig.asInstanceOf[js.Any])).asInstanceOf[IPlayerInstance]
-    @scala.inline
-    def create(params: IPlayerConfig): IPlayerInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(params.asInstanceOf[js.Any]).asInstanceOf[IPlayerInstance]
-    @scala.inline
-    def create(params: IPlayerConfig, themeConfig: IThemeConfig): IPlayerInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(params.asInstanceOf[js.Any], themeConfig.asInstanceOf[js.Any])).asInstanceOf[IPlayerInstance]
+    inline def create(): IPlayerInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[IPlayerInstance]
+    inline def create(params: Unit, themeConfig: IThemeConfig): IPlayerInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(params.asInstanceOf[js.Any], themeConfig.asInstanceOf[js.Any])).asInstanceOf[IPlayerInstance]
+    inline def create(params: IPlayerConfig): IPlayerInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(params.asInstanceOf[js.Any]).asInstanceOf[IPlayerInstance]
+    inline def create(params: IPlayerConfig, themeConfig: IThemeConfig): IPlayerInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(params.asInstanceOf[js.Any], themeConfig.asInstanceOf[js.Any])).asInstanceOf[IPlayerInstance]
     @JSImport("playable/dist/src/with-dash", "default.create")
     @js.native
     def create_Fdefault: js.Function2[
@@ -153,8 +133,7 @@ object withDashMod {
         IPlayerInstance
       ] = js.native
     
-    @scala.inline
-    def create_Fdefault_=(
+    inline def create_Fdefault_=(
       x: js.Function2[
           /* params */ js.UndefOr[IPlayerConfig], 
           /* themeConfig */ js.UndefOr[IThemeConfig], 
@@ -162,26 +141,20 @@ object withDashMod {
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("create")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def playerAPIDecorator(): js.Function3[/* target */ js.Any, /* property */ String, /* descriptor */ PropertyDescriptor, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("playerAPIDecorator")().asInstanceOf[js.Function3[/* target */ js.Any, /* property */ String, /* descriptor */ PropertyDescriptor, Unit]]
-    @scala.inline
-    def playerAPIDecorator(name: String): js.Function3[/* target */ js.Any, /* property */ String, /* descriptor */ PropertyDescriptor, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("playerAPIDecorator")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* target */ js.Any, /* property */ String, /* descriptor */ PropertyDescriptor, Unit]]
+    inline def playerAPIDecorator(): js.Function3[/* target */ js.Any, /* property */ String, /* descriptor */ PropertyDescriptor, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("playerAPIDecorator")().asInstanceOf[js.Function3[/* target */ js.Any, /* property */ String, /* descriptor */ PropertyDescriptor, Unit]]
+    inline def playerAPIDecorator(name: String): js.Function3[/* target */ js.Any, /* property */ String, /* descriptor */ PropertyDescriptor, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("playerAPIDecorator")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* target */ js.Any, /* property */ String, /* descriptor */ PropertyDescriptor, Unit]]
     
     @JSImport("playable/dist/src/with-dash", "default.registerModule")
     @js.native
     def registerModule: js.Function2[/* id */ String, /* module */ js.Any, Unit] = js.native
-    @scala.inline
-    def registerModule(id: String, module: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerModule")(id.asInstanceOf[js.Any], module.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def registerModule_=(x: js.Function2[/* id */ String, /* module */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("registerModule")(x.asInstanceOf[js.Any])
+    inline def registerModule(id: String, module: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerModule")(id.asInstanceOf[js.Any], module.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def registerModule_=(x: js.Function2[/* id */ String, /* module */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("registerModule")(x.asInstanceOf[js.Any])
     
     @JSImport("playable/dist/src/with-dash", "default.registerPlaybackAdapter")
     @js.native
     def registerPlaybackAdapter: js.Function1[/* adapter */ js.Any, Unit] = js.native
-    @scala.inline
-    def registerPlaybackAdapter(adapter: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerPlaybackAdapter")(adapter.asInstanceOf[js.Any]).asInstanceOf[Unit]
-    @scala.inline
-    def registerPlaybackAdapter_=(x: js.Function1[/* adapter */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("registerPlaybackAdapter")(x.asInstanceOf[js.Any])
+    inline def registerPlaybackAdapter(adapter: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerPlaybackAdapter")(adapter.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def registerPlaybackAdapter_=(x: js.Function1[/* adapter */ js.Any, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("registerPlaybackAdapter")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("playable/dist/src/with-dash", "CROSS_ORIGIN_VALUES")
@@ -535,29 +508,19 @@ object withDashMod {
     /* "REGULAR" */ val REGULAR: typings.playable.screenTypesMod.VideoViewMode.REGULAR & String = js.native
   }
   
-  @scala.inline
-  def clearAdditionalModules(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAdditionalModules")().asInstanceOf[Unit]
+  inline def clearAdditionalModules(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAdditionalModules")().asInstanceOf[Unit]
   
-  @scala.inline
-  def clearPlaybackAdapters(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearPlaybackAdapters")().asInstanceOf[Unit]
+  inline def clearPlaybackAdapters(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearPlaybackAdapters")().asInstanceOf[Unit]
   
-  @scala.inline
-  def create(): IPlayerInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[IPlayerInstance]
-  @scala.inline
-  def create(params: Unit, themeConfig: IThemeConfig): IPlayerInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(params.asInstanceOf[js.Any], themeConfig.asInstanceOf[js.Any])).asInstanceOf[IPlayerInstance]
-  @scala.inline
-  def create(params: IPlayerConfig): IPlayerInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(params.asInstanceOf[js.Any]).asInstanceOf[IPlayerInstance]
-  @scala.inline
-  def create(params: IPlayerConfig, themeConfig: IThemeConfig): IPlayerInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(params.asInstanceOf[js.Any], themeConfig.asInstanceOf[js.Any])).asInstanceOf[IPlayerInstance]
+  inline def create(): IPlayerInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[IPlayerInstance]
+  inline def create(params: Unit, themeConfig: IThemeConfig): IPlayerInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(params.asInstanceOf[js.Any], themeConfig.asInstanceOf[js.Any])).asInstanceOf[IPlayerInstance]
+  inline def create(params: IPlayerConfig): IPlayerInstance = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(params.asInstanceOf[js.Any]).asInstanceOf[IPlayerInstance]
+  inline def create(params: IPlayerConfig, themeConfig: IThemeConfig): IPlayerInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(params.asInstanceOf[js.Any], themeConfig.asInstanceOf[js.Any])).asInstanceOf[IPlayerInstance]
   
-  @scala.inline
-  def playerAPIDecorator(): js.Function3[/* target */ js.Any, /* property */ String, /* descriptor */ PropertyDescriptor, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("playerAPIDecorator")().asInstanceOf[js.Function3[/* target */ js.Any, /* property */ String, /* descriptor */ PropertyDescriptor, Unit]]
-  @scala.inline
-  def playerAPIDecorator(name: String): js.Function3[/* target */ js.Any, /* property */ String, /* descriptor */ PropertyDescriptor, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("playerAPIDecorator")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* target */ js.Any, /* property */ String, /* descriptor */ PropertyDescriptor, Unit]]
+  inline def playerAPIDecorator(): js.Function3[/* target */ js.Any, /* property */ String, /* descriptor */ PropertyDescriptor, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("playerAPIDecorator")().asInstanceOf[js.Function3[/* target */ js.Any, /* property */ String, /* descriptor */ PropertyDescriptor, Unit]]
+  inline def playerAPIDecorator(name: String): js.Function3[/* target */ js.Any, /* property */ String, /* descriptor */ PropertyDescriptor, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("playerAPIDecorator")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* target */ js.Any, /* property */ String, /* descriptor */ PropertyDescriptor, Unit]]
   
-  @scala.inline
-  def registerModule(id: String, module: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerModule")(id.asInstanceOf[js.Any], module.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerModule(id: String, module: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerModule")(id.asInstanceOf[js.Any], module.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def registerPlaybackAdapter(adapter: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerPlaybackAdapter")(adapter.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def registerPlaybackAdapter(adapter: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerPlaybackAdapter")(adapter.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

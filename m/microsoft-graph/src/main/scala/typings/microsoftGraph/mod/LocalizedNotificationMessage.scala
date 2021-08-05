@@ -28,43 +28,31 @@ trait LocalizedNotificationMessage
 }
 object LocalizedNotificationMessage {
   
-  @scala.inline
-  def apply(): LocalizedNotificationMessage = {
+  inline def apply(): LocalizedNotificationMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LocalizedNotificationMessage]
   }
   
-  @scala.inline
-  implicit class LocalizedNotificationMessageMutableBuilder[Self <: LocalizedNotificationMessage] (val x: Self) extends AnyVal {
+  extension [Self <: LocalizedNotificationMessage](x: Self) {
     
-    @scala.inline
-    def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
+    inline def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
+    inline def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
     
-    @scala.inline
-    def setLastModifiedDateTime(value: String): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDateTime(value: String): Self = StObject.set(x, "lastModifiedDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
+    inline def setLastModifiedDateTimeUndefined: Self = StObject.set(x, "lastModifiedDateTime", js.undefined)
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+    inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
     
-    @scala.inline
-    def setMessageTemplate(value: String): Self = StObject.set(x, "messageTemplate", value.asInstanceOf[js.Any])
+    inline def setMessageTemplate(value: String): Self = StObject.set(x, "messageTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageTemplateUndefined: Self = StObject.set(x, "messageTemplate", js.undefined)
+    inline def setMessageTemplateUndefined: Self = StObject.set(x, "messageTemplate", js.undefined)
     
-    @scala.inline
-    def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: String): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+    inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
   }
 }

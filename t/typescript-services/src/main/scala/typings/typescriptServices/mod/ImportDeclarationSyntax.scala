@@ -99,8 +99,7 @@ object ImportDeclarationSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(
+  inline def create(
     importKeyword: ISyntaxToken,
     identifier: ISyntaxToken,
     equalsToken: ISyntaxToken,
@@ -109,6 +108,5 @@ object ImportDeclarationSyntax {
   ): typings.typescriptServices.TypeScript.ImportDeclarationSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(importKeyword.asInstanceOf[js.Any], identifier.asInstanceOf[js.Any], equalsToken.asInstanceOf[js.Any], moduleReference.asInstanceOf[js.Any], semicolonToken.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.ImportDeclarationSyntax]
   
   /* static member */
-  @scala.inline
-  def create1(identifier: ISyntaxToken, moduleReference: IModuleReferenceSyntax): typings.typescriptServices.TypeScript.ImportDeclarationSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create1")(identifier.asInstanceOf[js.Any], moduleReference.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.ImportDeclarationSyntax]
+  inline def create1(identifier: ISyntaxToken, moduleReference: IModuleReferenceSyntax): typings.typescriptServices.TypeScript.ImportDeclarationSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create1")(identifier.asInstanceOf[js.Any], moduleReference.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.ImportDeclarationSyntax]
 }

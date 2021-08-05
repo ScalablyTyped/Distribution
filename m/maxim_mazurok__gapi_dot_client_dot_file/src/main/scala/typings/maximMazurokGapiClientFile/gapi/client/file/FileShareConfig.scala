@@ -17,31 +17,23 @@ trait FileShareConfig extends StObject {
 }
 object FileShareConfig {
   
-  @scala.inline
-  def apply(): FileShareConfig = {
+  inline def apply(): FileShareConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileShareConfig]
   }
   
-  @scala.inline
-  implicit class FileShareConfigMutableBuilder[Self <: FileShareConfig] (val x: Self) extends AnyVal {
+  extension [Self <: FileShareConfig](x: Self) {
     
-    @scala.inline
-    def setCapacityGb(value: String): Self = StObject.set(x, "capacityGb", value.asInstanceOf[js.Any])
+    inline def setCapacityGb(value: String): Self = StObject.set(x, "capacityGb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapacityGbUndefined: Self = StObject.set(x, "capacityGb", js.undefined)
+    inline def setCapacityGbUndefined: Self = StObject.set(x, "capacityGb", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSourceBackup(value: String): Self = StObject.set(x, "sourceBackup", value.asInstanceOf[js.Any])
+    inline def setSourceBackup(value: String): Self = StObject.set(x, "sourceBackup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceBackupUndefined: Self = StObject.set(x, "sourceBackup", js.undefined)
+    inline def setSourceBackupUndefined: Self = StObject.set(x, "sourceBackup", js.undefined)
   }
 }

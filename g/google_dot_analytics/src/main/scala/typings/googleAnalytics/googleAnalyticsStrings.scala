@@ -9,82 +9,69 @@ object googleAnalyticsStrings {
   
   @js.native
   sealed trait create extends StObject
-  @scala.inline
-  def create: create = "create".asInstanceOf[create]
+  inline def create: create = "create".asInstanceOf[create]
   
   @js.native
   sealed trait event
     extends StObject
        with HitType
-  @scala.inline
-  def event: event = "event".asInstanceOf[event]
+  inline def event: event = "event".asInstanceOf[event]
   
   @js.native
   sealed trait exception
     extends StObject
        with HitType
-  @scala.inline
-  def exception: exception = "exception".asInstanceOf[exception]
+  inline def exception: exception = "exception".asInstanceOf[exception]
   
   @js.native
   sealed trait item
     extends StObject
        with HitType
-  @scala.inline
-  def item: item = "item".asInstanceOf[item]
+  inline def item: item = "item".asInstanceOf[item]
   
   @js.native
   sealed trait pageview
     extends StObject
        with HitType
-  @scala.inline
-  def pageview: pageview = "pageview".asInstanceOf[pageview]
+  inline def pageview: pageview = "pageview".asInstanceOf[pageview]
   
   @js.native
   sealed trait provide extends StObject
-  @scala.inline
-  def provide: provide = "provide".asInstanceOf[provide]
+  inline def provide: provide = "provide".asInstanceOf[provide]
   
   @js.native
   sealed trait remove extends StObject
-  @scala.inline
-  def remove: remove = "remove".asInstanceOf[remove]
+  inline def remove: remove = "remove".asInstanceOf[remove]
   
   @js.native
   sealed trait require extends StObject
-  @scala.inline
-  def require: require = "require".asInstanceOf[require]
+  inline def require: require = "require".asInstanceOf[require]
   
   @js.native
   sealed trait screenview
     extends StObject
        with HitType
-  @scala.inline
-  def screenview: screenview = "screenview".asInstanceOf[screenview]
+  inline def screenview: screenview = "screenview".asInstanceOf[screenview]
   
   @js.native
   sealed trait send extends StObject
-  @scala.inline
-  def send: send = "send".asInstanceOf[send]
+  inline def send: send = "send".asInstanceOf[send]
   
   @js.native
   sealed trait social
     extends StObject
        with HitType
-  @scala.inline
-  def social: social = "social".asInstanceOf[social]
+  inline def social: social = "social".asInstanceOf[social]
   
   @js.native
   sealed trait timing
     extends StObject
        with HitType
-  @scala.inline
-  def timing: timing = "timing".asInstanceOf[timing]
+  inline def timing: timing = "timing".asInstanceOf[timing]
   
   @js.native
   sealed trait transaction
     extends StObject
        with HitType
-  @scala.inline
-  def transaction: transaction = "transaction".asInstanceOf[transaction]
+  inline def transaction: transaction = "transaction".asInstanceOf[transaction]
 }

@@ -95,38 +95,28 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAllowMixedContent(value: Boolean): Self = StObject.set(x, "allowMixedContent", value.asInstanceOf[js.Any])
+      inline def setAllowMixedContent(value: Boolean): Self = StObject.set(x, "allowMixedContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowMixedContentUndefined: Self = StObject.set(x, "allowMixedContent", js.undefined)
+      inline def setAllowMixedContentUndefined: Self = StObject.set(x, "allowMixedContent", js.undefined)
       
-      @scala.inline
-      def setCloneBuffersOnGet(value: Boolean): Self = StObject.set(x, "cloneBuffersOnGet", value.asInstanceOf[js.Any])
+      inline def setCloneBuffersOnGet(value: Boolean): Self = StObject.set(x, "cloneBuffersOnGet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloneBuffersOnGetUndefined: Self = StObject.set(x, "cloneBuffersOnGet", js.undefined)
+      inline def setCloneBuffersOnGetUndefined: Self = StObject.set(x, "cloneBuffersOnGet", js.undefined)
       
-      @scala.inline
-      def setMaxByteSize(value: Double): Self = StObject.set(x, "maxByteSize", value.asInstanceOf[js.Any])
+      inline def setMaxByteSize(value: Double): Self = StObject.set(x, "maxByteSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxByteSizeUndefined: Self = StObject.set(x, "maxByteSize", js.undefined)
+      inline def setMaxByteSizeUndefined: Self = StObject.set(x, "maxByteSize", js.undefined)
       
-      @scala.inline
-      def setMinCleanupIntervalMsec(value: Double): Self = StObject.set(x, "minCleanupIntervalMsec", value.asInstanceOf[js.Any])
+      inline def setMinCleanupIntervalMsec(value: Double): Self = StObject.set(x, "minCleanupIntervalMsec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinCleanupIntervalMsecUndefined: Self = StObject.set(x, "minCleanupIntervalMsec", js.undefined)
+      inline def setMinCleanupIntervalMsecUndefined: Self = StObject.set(x, "minCleanupIntervalMsec", js.undefined)
     }
   }
 }

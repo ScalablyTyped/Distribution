@@ -69,88 +69,61 @@ trait ButtomSettingsCommon extends StObject {
 }
 object ButtomSettingsCommon {
   
-  @scala.inline
-  def apply(): ButtomSettingsCommon = {
+  inline def apply(): ButtomSettingsCommon = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ButtomSettingsCommon]
   }
   
-  @scala.inline
-  implicit class ButtomSettingsCommonMutableBuilder[Self <: ButtomSettingsCommon] (val x: Self) extends AnyVal {
+  extension [Self <: ButtomSettingsCommon](x: Self) {
     
-    @scala.inline
-    def setAction(value: (/* e */ js.Any, /* dt */ Api, /* node */ JQuery, /* config */ ButtonSettings) => Unit): Self = StObject.set(x, "action", js.Any.fromFunction4(value))
+    inline def setAction(value: (/* e */ js.Any, /* dt */ Api, /* node */ JQuery, /* config */ ButtonSettings) => Unit): Self = StObject.set(x, "action", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setAvailable(value: (/* dt */ Api, /* config */ js.Any) => Boolean): Self = StObject.set(x, "available", js.Any.fromFunction2(value))
+    inline def setAvailable(value: (/* dt */ Api, /* config */ js.Any) => Boolean): Self = StObject.set(x, "available", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAvailableUndefined: Self = StObject.set(x, "available", js.undefined)
+    inline def setAvailableUndefined: Self = StObject.set(x, "available", js.undefined)
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setDestroy(value: (/* dt */ Api, /* node */ JQuery, /* config */ js.Any) => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction3(value))
+    inline def setDestroy(value: (/* dt */ Api, /* node */ JQuery, /* config */ js.Any) => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+    inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setExtend(value: String): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    inline def setExtend(value: String): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
+    inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    @scala.inline
-    def setInit(value: (/* dt */ Api, /* node */ JQuery, /* config */ js.Any) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
+    inline def setInit(value: (/* dt */ Api, /* node */ JQuery, /* config */ js.Any) => Unit): Self = StObject.set(x, "init", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+    inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
     
-    @scala.inline
-    def setKey(value: String | ButtonKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String | ButtonKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+    inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
-    @scala.inline
-    def setText(value: String | FunctionButtonText): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String | FunctionButtonText): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextFunction3(value: (/* dt */ Api, /* node */ JQuery, /* config */ js.Any) => String): Self = StObject.set(x, "text", js.Any.fromFunction3(value))
+    inline def setTextFunction3(value: (/* dt */ Api, /* node */ JQuery, /* config */ js.Any) => String): Self = StObject.set(x, "text", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setTitleAttr(value: String): Self = StObject.set(x, "titleAttr", value.asInstanceOf[js.Any])
+    inline def setTitleAttr(value: String): Self = StObject.set(x, "titleAttr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleAttrUndefined: Self = StObject.set(x, "titleAttr", js.undefined)
+    inline def setTitleAttrUndefined: Self = StObject.set(x, "titleAttr", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait AssociateResolverRuleResponse extends StObject {
 }
 object AssociateResolverRuleResponse {
   
-  @scala.inline
-  def apply(): AssociateResolverRuleResponse = {
+  inline def apply(): AssociateResolverRuleResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociateResolverRuleResponse]
   }
   
-  @scala.inline
-  implicit class AssociateResolverRuleResponseMutableBuilder[Self <: AssociateResolverRuleResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateResolverRuleResponse](x: Self) {
     
-    @scala.inline
-    def setResolverRuleAssociation(value: ResolverRuleAssociation): Self = StObject.set(x, "ResolverRuleAssociation", value.asInstanceOf[js.Any])
+    inline def setResolverRuleAssociation(value: ResolverRuleAssociation): Self = StObject.set(x, "ResolverRuleAssociation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolverRuleAssociationUndefined: Self = StObject.set(x, "ResolverRuleAssociation", js.undefined)
+    inline def setResolverRuleAssociationUndefined: Self = StObject.set(x, "ResolverRuleAssociation", js.undefined)
   }
 }

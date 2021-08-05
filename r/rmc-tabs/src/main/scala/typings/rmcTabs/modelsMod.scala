@@ -21,26 +21,20 @@ object modelsMod {
     }
     object TabData {
       
-      @scala.inline
-      def apply(): TabData = {
+      inline def apply(): TabData = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[TabData]
       }
       
-      @scala.inline
-      implicit class TabDataMutableBuilder[Self <: TabData] (val x: Self) extends AnyVal {
+      extension [Self <: TabData](x: Self) {
         
-        @scala.inline
-        def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+        inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
         
-        @scala.inline
-        def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+        inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       }
     }
   }

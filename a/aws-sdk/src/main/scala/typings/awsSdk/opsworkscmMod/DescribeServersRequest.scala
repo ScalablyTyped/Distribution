@@ -23,31 +23,23 @@ trait DescribeServersRequest extends StObject {
 }
 object DescribeServersRequest {
   
-  @scala.inline
-  def apply(): DescribeServersRequest = {
+  inline def apply(): DescribeServersRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeServersRequest]
   }
   
-  @scala.inline
-  implicit class DescribeServersRequestMutableBuilder[Self <: DescribeServersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeServersRequest](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setServerName(value: ServerName): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
+    inline def setServerName(value: ServerName): Self = StObject.set(x, "ServerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerNameUndefined: Self = StObject.set(x, "ServerName", js.undefined)
+    inline def setServerNameUndefined: Self = StObject.set(x, "ServerName", js.undefined)
   }
 }

@@ -10,19 +10,15 @@ trait GridNoRecords extends StObject {
 }
 object GridNoRecords {
   
-  @scala.inline
-  def apply(): GridNoRecords = {
+  inline def apply(): GridNoRecords = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridNoRecords]
   }
   
-  @scala.inline
-  implicit class GridNoRecordsMutableBuilder[Self <: GridNoRecords] (val x: Self) extends AnyVal {
+  extension [Self <: GridNoRecords](x: Self) {
     
-    @scala.inline
-    def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: String | js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

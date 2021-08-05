@@ -10,16 +10,13 @@ trait FullscreenParam extends StObject {
 }
 object FullscreenParam {
   
-  @scala.inline
-  def apply(fullscreen: Boolean): FullscreenParam = {
+  inline def apply(fullscreen: Boolean): FullscreenParam = {
     val __obj = js.Dynamic.literal(fullscreen = fullscreen.asInstanceOf[js.Any])
     __obj.asInstanceOf[FullscreenParam]
   }
   
-  @scala.inline
-  implicit class FullscreenParamMutableBuilder[Self <: FullscreenParam] (val x: Self) extends AnyVal {
+  extension [Self <: FullscreenParam](x: Self) {
     
-    @scala.inline
-    def setFullscreen(value: Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
+    inline def setFullscreen(value: Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
   }
 }

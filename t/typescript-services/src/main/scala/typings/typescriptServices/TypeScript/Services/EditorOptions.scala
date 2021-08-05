@@ -16,25 +16,19 @@ trait EditorOptions extends StObject {
 }
 object EditorOptions {
   
-  @scala.inline
-  def apply(ConvertTabsToSpaces: Boolean, IndentSize: Double, NewLineCharacter: String, TabSize: Double): EditorOptions = {
+  inline def apply(ConvertTabsToSpaces: Boolean, IndentSize: Double, NewLineCharacter: String, TabSize: Double): EditorOptions = {
     val __obj = js.Dynamic.literal(ConvertTabsToSpaces = ConvertTabsToSpaces.asInstanceOf[js.Any], IndentSize = IndentSize.asInstanceOf[js.Any], NewLineCharacter = NewLineCharacter.asInstanceOf[js.Any], TabSize = TabSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditorOptions]
   }
   
-  @scala.inline
-  implicit class EditorOptionsMutableBuilder[Self <: EditorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EditorOptions](x: Self) {
     
-    @scala.inline
-    def setConvertTabsToSpaces(value: Boolean): Self = StObject.set(x, "ConvertTabsToSpaces", value.asInstanceOf[js.Any])
+    inline def setConvertTabsToSpaces(value: Boolean): Self = StObject.set(x, "ConvertTabsToSpaces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndentSize(value: Double): Self = StObject.set(x, "IndentSize", value.asInstanceOf[js.Any])
+    inline def setIndentSize(value: Double): Self = StObject.set(x, "IndentSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewLineCharacter(value: String): Self = StObject.set(x, "NewLineCharacter", value.asInstanceOf[js.Any])
+    inline def setNewLineCharacter(value: String): Self = StObject.set(x, "NewLineCharacter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabSize(value: Double): Self = StObject.set(x, "TabSize", value.asInstanceOf[js.Any])
+    inline def setTabSize(value: Double): Self = StObject.set(x, "TabSize", value.asInstanceOf[js.Any])
   }
 }

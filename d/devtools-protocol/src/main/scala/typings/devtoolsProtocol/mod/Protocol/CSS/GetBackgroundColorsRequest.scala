@@ -14,16 +14,13 @@ trait GetBackgroundColorsRequest extends StObject {
 }
 object GetBackgroundColorsRequest {
   
-  @scala.inline
-  def apply(nodeId: NodeId): GetBackgroundColorsRequest = {
+  inline def apply(nodeId: NodeId): GetBackgroundColorsRequest = {
     val __obj = js.Dynamic.literal(nodeId = nodeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetBackgroundColorsRequest]
   }
   
-  @scala.inline
-  implicit class GetBackgroundColorsRequestMutableBuilder[Self <: GetBackgroundColorsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetBackgroundColorsRequest](x: Self) {
     
-    @scala.inline
-    def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
+    inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
   }
 }

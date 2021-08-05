@@ -13,8 +13,7 @@ trait PathProps
      with DefinationProps
 object PathProps {
   
-  @scala.inline
-  def apply(): PathProps = {
+  inline def apply(): PathProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PathProps]
   }

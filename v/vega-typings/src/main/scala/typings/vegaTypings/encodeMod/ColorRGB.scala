@@ -14,22 +14,17 @@ trait ColorRGB extends StObject {
 }
 object ColorRGB {
   
-  @scala.inline
-  def apply(b: NumericValueRef, g: NumericValueRef, r: NumericValueRef): ColorRGB = {
+  inline def apply(b: NumericValueRef, g: NumericValueRef, r: NumericValueRef): ColorRGB = {
     val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
     __obj.asInstanceOf[ColorRGB]
   }
   
-  @scala.inline
-  implicit class ColorRGBMutableBuilder[Self <: ColorRGB] (val x: Self) extends AnyVal {
+  extension [Self <: ColorRGB](x: Self) {
     
-    @scala.inline
-    def setB(value: NumericValueRef): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+    inline def setB(value: NumericValueRef): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setG(value: NumericValueRef): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+    inline def setG(value: NumericValueRef): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR(value: NumericValueRef): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+    inline def setR(value: NumericValueRef): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
   }
 }

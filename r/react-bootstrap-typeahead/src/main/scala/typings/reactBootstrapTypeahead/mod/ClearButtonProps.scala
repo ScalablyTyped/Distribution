@@ -16,25 +16,19 @@ trait ClearButtonProps
 }
 object ClearButtonProps {
   
-  @scala.inline
-  def apply(): ClearButtonProps = {
+  inline def apply(): ClearButtonProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClearButtonProps]
   }
   
-  @scala.inline
-  implicit class ClearButtonPropsMutableBuilder[Self <: ClearButtonProps] (val x: Self) extends AnyVal {
+  extension [Self <: ClearButtonProps](x: Self) {
     
-    @scala.inline
-    def setBsSize(value: TypeaheadBsSizes): Self = StObject.set(x, "bsSize", value.asInstanceOf[js.Any])
+    inline def setBsSize(value: TypeaheadBsSizes): Self = StObject.set(x, "bsSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBsSizeUndefined: Self = StObject.set(x, "bsSize", js.undefined)
+    inline def setBsSizeUndefined: Self = StObject.set(x, "bsSize", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
   }
 }

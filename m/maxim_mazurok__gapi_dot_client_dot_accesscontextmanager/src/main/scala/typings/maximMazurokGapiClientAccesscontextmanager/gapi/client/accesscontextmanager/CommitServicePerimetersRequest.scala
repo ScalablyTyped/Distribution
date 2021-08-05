@@ -15,19 +15,15 @@ trait CommitServicePerimetersRequest extends StObject {
 }
 object CommitServicePerimetersRequest {
   
-  @scala.inline
-  def apply(): CommitServicePerimetersRequest = {
+  inline def apply(): CommitServicePerimetersRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommitServicePerimetersRequest]
   }
   
-  @scala.inline
-  implicit class CommitServicePerimetersRequestMutableBuilder[Self <: CommitServicePerimetersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CommitServicePerimetersRequest](x: Self) {
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
   }
 }

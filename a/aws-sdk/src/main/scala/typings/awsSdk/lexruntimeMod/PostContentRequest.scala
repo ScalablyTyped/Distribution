@@ -53,8 +53,7 @@ trait PostContentRequest extends StObject {
 }
 object PostContentRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     botAlias: BotAlias,
     botName: BotName,
     contentType: HttpContentType,
@@ -65,46 +64,32 @@ object PostContentRequest {
     __obj.asInstanceOf[PostContentRequest]
   }
   
-  @scala.inline
-  implicit class PostContentRequestMutableBuilder[Self <: PostContentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PostContentRequest](x: Self) {
     
-    @scala.inline
-    def setAccept(value: Accept): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
+    inline def setAccept(value: Accept): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
+    inline def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
     
-    @scala.inline
-    def setActiveContexts(value: ActiveContextsString): Self = StObject.set(x, "activeContexts", value.asInstanceOf[js.Any])
+    inline def setActiveContexts(value: ActiveContextsString): Self = StObject.set(x, "activeContexts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveContextsUndefined: Self = StObject.set(x, "activeContexts", js.undefined)
+    inline def setActiveContextsUndefined: Self = StObject.set(x, "activeContexts", js.undefined)
     
-    @scala.inline
-    def setBotAlias(value: BotAlias): Self = StObject.set(x, "botAlias", value.asInstanceOf[js.Any])
+    inline def setBotAlias(value: BotAlias): Self = StObject.set(x, "botAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBotName(value: BotName): Self = StObject.set(x, "botName", value.asInstanceOf[js.Any])
+    inline def setBotName(value: BotName): Self = StObject.set(x, "botName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentType(value: HttpContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: HttpContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputStream(value: BlobStream): Self = StObject.set(x, "inputStream", value.asInstanceOf[js.Any])
+    inline def setInputStream(value: BlobStream): Self = StObject.set(x, "inputStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestAttributes(value: AttributesString): Self = StObject.set(x, "requestAttributes", value.asInstanceOf[js.Any])
+    inline def setRequestAttributes(value: AttributesString): Self = StObject.set(x, "requestAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestAttributesUndefined: Self = StObject.set(x, "requestAttributes", js.undefined)
+    inline def setRequestAttributesUndefined: Self = StObject.set(x, "requestAttributes", js.undefined)
     
-    @scala.inline
-    def setSessionAttributes(value: AttributesString): Self = StObject.set(x, "sessionAttributes", value.asInstanceOf[js.Any])
+    inline def setSessionAttributes(value: AttributesString): Self = StObject.set(x, "sessionAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionAttributesUndefined: Self = StObject.set(x, "sessionAttributes", js.undefined)
+    inline def setSessionAttributesUndefined: Self = StObject.set(x, "sessionAttributes", js.undefined)
     
-    @scala.inline
-    def setUserId(value: UserId): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: UserId): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
   }
 }

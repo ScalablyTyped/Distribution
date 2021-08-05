@@ -18,19 +18,15 @@ trait DeleteModelRequest extends StObject {
 }
 object DeleteModelRequest {
   
-  @scala.inline
-  def apply(ApiId: string, ModelId: string): DeleteModelRequest = {
+  inline def apply(ApiId: string, ModelId: string): DeleteModelRequest = {
     val __obj = js.Dynamic.literal(ApiId = ApiId.asInstanceOf[js.Any], ModelId = ModelId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteModelRequest]
   }
   
-  @scala.inline
-  implicit class DeleteModelRequestMutableBuilder[Self <: DeleteModelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteModelRequest](x: Self) {
     
-    @scala.inline
-    def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
+    inline def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelId(value: string): Self = StObject.set(x, "ModelId", value.asInstanceOf[js.Any])
+    inline def setModelId(value: string): Self = StObject.set(x, "ModelId", value.asInstanceOf[js.Any])
   }
 }

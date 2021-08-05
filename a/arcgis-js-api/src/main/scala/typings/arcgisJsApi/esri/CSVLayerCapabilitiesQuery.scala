@@ -138,8 +138,7 @@ trait CSVLayerCapabilitiesQuery
 }
 object CSVLayerCapabilitiesQuery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -166,61 +165,42 @@ object CSVLayerCapabilitiesQuery {
     __obj.asInstanceOf[CSVLayerCapabilitiesQuery]
   }
   
-  @scala.inline
-  implicit class CSVLayerCapabilitiesQueryMutableBuilder[Self <: CSVLayerCapabilitiesQuery] (val x: Self) extends AnyVal {
+  extension [Self <: CSVLayerCapabilitiesQuery](x: Self) {
     
-    @scala.inline
-    def setSupportsCentroid(value: Boolean): Self = StObject.set(x, "supportsCentroid", value.asInstanceOf[js.Any])
+    inline def setSupportsCentroid(value: Boolean): Self = StObject.set(x, "supportsCentroid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsDisjointSpatialRelationship(value: Boolean): Self = StObject.set(x, "supportsDisjointSpatialRelationship", value.asInstanceOf[js.Any])
+    inline def setSupportsDisjointSpatialRelationship(value: Boolean): Self = StObject.set(x, "supportsDisjointSpatialRelationship", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsDistance(value: Boolean): Self = StObject.set(x, "supportsDistance", value.asInstanceOf[js.Any])
+    inline def setSupportsDistance(value: Boolean): Self = StObject.set(x, "supportsDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsDistinct(value: Boolean): Self = StObject.set(x, "supportsDistinct", value.asInstanceOf[js.Any])
+    inline def setSupportsDistinct(value: Boolean): Self = StObject.set(x, "supportsDistinct", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsExtent(value: Boolean): Self = StObject.set(x, "supportsExtent", value.asInstanceOf[js.Any])
+    inline def setSupportsExtent(value: Boolean): Self = StObject.set(x, "supportsExtent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsGeometryProperties(value: Boolean): Self = StObject.set(x, "supportsGeometryProperties", value.asInstanceOf[js.Any])
+    inline def setSupportsGeometryProperties(value: Boolean): Self = StObject.set(x, "supportsGeometryProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsHavingClause(value: Boolean): Self = StObject.set(x, "supportsHavingClause", value.asInstanceOf[js.Any])
+    inline def setSupportsHavingClause(value: Boolean): Self = StObject.set(x, "supportsHavingClause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsHistoricMoment(value: Boolean): Self = StObject.set(x, "supportsHistoricMoment", value.asInstanceOf[js.Any])
+    inline def setSupportsHistoricMoment(value: Boolean): Self = StObject.set(x, "supportsHistoricMoment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsOrderBy(value: Boolean): Self = StObject.set(x, "supportsOrderBy", value.asInstanceOf[js.Any])
+    inline def setSupportsOrderBy(value: Boolean): Self = StObject.set(x, "supportsOrderBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsPagination(value: Boolean): Self = StObject.set(x, "supportsPagination", value.asInstanceOf[js.Any])
+    inline def setSupportsPagination(value: Boolean): Self = StObject.set(x, "supportsPagination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsPercentileStatistics(value: Boolean): Self = StObject.set(x, "supportsPercentileStatistics", value.asInstanceOf[js.Any])
+    inline def setSupportsPercentileStatistics(value: Boolean): Self = StObject.set(x, "supportsPercentileStatistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsQuantization(value: Boolean): Self = StObject.set(x, "supportsQuantization", value.asInstanceOf[js.Any])
+    inline def setSupportsQuantization(value: Boolean): Self = StObject.set(x, "supportsQuantization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsQuantizationEditMode(value: Boolean): Self = StObject.set(x, "supportsQuantizationEditMode", value.asInstanceOf[js.Any])
+    inline def setSupportsQuantizationEditMode(value: Boolean): Self = StObject.set(x, "supportsQuantizationEditMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsQueryGeometry(value: Boolean): Self = StObject.set(x, "supportsQueryGeometry", value.asInstanceOf[js.Any])
+    inline def setSupportsQueryGeometry(value: Boolean): Self = StObject.set(x, "supportsQueryGeometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsResultType(value: Boolean): Self = StObject.set(x, "supportsResultType", value.asInstanceOf[js.Any])
+    inline def setSupportsResultType(value: Boolean): Self = StObject.set(x, "supportsResultType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsSqlExpression(value: Boolean): Self = StObject.set(x, "supportsSqlExpression", value.asInstanceOf[js.Any])
+    inline def setSupportsSqlExpression(value: Boolean): Self = StObject.set(x, "supportsSqlExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsStandardizedQueriesOnly(value: Boolean): Self = StObject.set(x, "supportsStandardizedQueriesOnly", value.asInstanceOf[js.Any])
+    inline def setSupportsStandardizedQueriesOnly(value: Boolean): Self = StObject.set(x, "supportsStandardizedQueriesOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsStatistics(value: Boolean): Self = StObject.set(x, "supportsStatistics", value.asInstanceOf[js.Any])
+    inline def setSupportsStatistics(value: Boolean): Self = StObject.set(x, "supportsStatistics", value.asInstanceOf[js.Any])
   }
 }

@@ -41,8 +41,7 @@ object webpackTreatMod {
     String
   ] = js.native
   
-  @scala.inline
-  def getNextScope(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextScope")().asInstanceOf[Double]
+  inline def getNextScope(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextScope")().asInstanceOf[Double]
   
   @JSImport("treat/lib/types/webpackTreat", "getThemes")
   @js.native
@@ -54,6 +53,5 @@ object webpackTreatMod {
     ]
   ] = js.native
   
-  @scala.inline
-  def setWebpackTreat(newWebpackTreat: WebpackTreat): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setWebpackTreat")(newWebpackTreat.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setWebpackTreat(newWebpackTreat: WebpackTreat): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setWebpackTreat")(newWebpackTreat.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

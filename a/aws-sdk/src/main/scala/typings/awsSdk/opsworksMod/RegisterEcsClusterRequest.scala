@@ -18,19 +18,15 @@ trait RegisterEcsClusterRequest extends StObject {
 }
 object RegisterEcsClusterRequest {
   
-  @scala.inline
-  def apply(EcsClusterArn: String, StackId: String): RegisterEcsClusterRequest = {
+  inline def apply(EcsClusterArn: String, StackId: String): RegisterEcsClusterRequest = {
     val __obj = js.Dynamic.literal(EcsClusterArn = EcsClusterArn.asInstanceOf[js.Any], StackId = StackId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegisterEcsClusterRequest]
   }
   
-  @scala.inline
-  implicit class RegisterEcsClusterRequestMutableBuilder[Self <: RegisterEcsClusterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RegisterEcsClusterRequest](x: Self) {
     
-    @scala.inline
-    def setEcsClusterArn(value: String): Self = StObject.set(x, "EcsClusterArn", value.asInstanceOf[js.Any])
+    inline def setEcsClusterArn(value: String): Self = StObject.set(x, "EcsClusterArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
+    inline def setStackId(value: String): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
   }
 }

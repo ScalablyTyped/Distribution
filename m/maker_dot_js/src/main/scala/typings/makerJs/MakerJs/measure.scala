@@ -36,8 +36,7 @@ object measure {
   }
   object Atlas {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       measureModels: () => Unit,
       modelContext: IModel,
       modelMap: IMeasureMap,
@@ -48,23 +47,17 @@ object measure {
       __obj.asInstanceOf[Atlas]
     }
     
-    @scala.inline
-    implicit class AtlasMutableBuilder[Self <: Atlas] (val x: Self) extends AnyVal {
+    extension [Self <: Atlas](x: Self) {
       
-      @scala.inline
-      def setMeasureModels(value: () => Unit): Self = StObject.set(x, "measureModels", js.Any.fromFunction0(value))
+      inline def setMeasureModels(value: () => Unit): Self = StObject.set(x, "measureModels", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setModelContext(value: IModel): Self = StObject.set(x, "modelContext", value.asInstanceOf[js.Any])
+      inline def setModelContext(value: IModel): Self = StObject.set(x, "modelContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelMap(value: IMeasureMap): Self = StObject.set(x, "modelMap", value.asInstanceOf[js.Any])
+      inline def setModelMap(value: IMeasureMap): Self = StObject.set(x, "modelMap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelsMeasured(value: Boolean): Self = StObject.set(x, "modelsMeasured", value.asInstanceOf[js.Any])
+      inline def setModelsMeasured(value: Boolean): Self = StObject.set(x, "modelsMeasured", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathMap(value: IMeasureMap): Self = StObject.set(x, "pathMap", value.asInstanceOf[js.Any])
+      inline def setPathMap(value: IMeasureMap): Self = StObject.set(x, "pathMap", value.asInstanceOf[js.Any])
     }
   }
   
@@ -82,17 +75,14 @@ object measure {
   }
   object IBoundingHex {
     
-    @scala.inline
-    def apply(radius: Double): IBoundingHex = {
+    inline def apply(radius: Double): IBoundingHex = {
       val __obj = js.Dynamic.literal(radius = radius.asInstanceOf[js.Any])
       __obj.asInstanceOf[IBoundingHex]
     }
     
-    @scala.inline
-    implicit class IBoundingHexMutableBuilder[Self <: IBoundingHex] (val x: Self) extends AnyVal {
+    extension [Self <: IBoundingHex](x: Self) {
       
-      @scala.inline
-      def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     }
   }
 }

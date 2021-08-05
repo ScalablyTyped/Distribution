@@ -20,37 +20,27 @@ trait AssetImportMessage extends StObject {
 }
 object AssetImportMessage {
   
-  @scala.inline
-  def apply(): AssetImportMessage = {
+  inline def apply(): AssetImportMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssetImportMessage]
   }
   
-  @scala.inline
-  implicit class AssetImportMessageMutableBuilder[Self <: AssetImportMessage] (val x: Self) extends AnyVal {
+  extension [Self <: AssetImportMessage](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
+    inline def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
     
-    @scala.inline
-    def setImageError(value: ImageError): Self = StObject.set(x, "imageError", value.asInstanceOf[js.Any])
+    inline def setImageError(value: ImageError): Self = StObject.set(x, "imageError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageErrorUndefined: Self = StObject.set(x, "imageError", js.undefined)
+    inline def setImageErrorUndefined: Self = StObject.set(x, "imageError", js.undefined)
     
-    @scala.inline
-    def setObjParseError(value: ObjParseError): Self = StObject.set(x, "objParseError", value.asInstanceOf[js.Any])
+    inline def setObjParseError(value: ObjParseError): Self = StObject.set(x, "objParseError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjParseErrorUndefined: Self = StObject.set(x, "objParseError", js.undefined)
+    inline def setObjParseErrorUndefined: Self = StObject.set(x, "objParseError", js.undefined)
   }
 }

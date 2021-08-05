@@ -18,28 +18,21 @@ trait IndexAttachment extends StObject {
 }
 object IndexAttachment {
   
-  @scala.inline
-  def apply(): IndexAttachment = {
+  inline def apply(): IndexAttachment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IndexAttachment]
   }
   
-  @scala.inline
-  implicit class IndexAttachmentMutableBuilder[Self <: IndexAttachment] (val x: Self) extends AnyVal {
+  extension [Self <: IndexAttachment](x: Self) {
     
-    @scala.inline
-    def setIndexedAttributes(value: AttributeKeyAndValueList): Self = StObject.set(x, "IndexedAttributes", value.asInstanceOf[js.Any])
+    inline def setIndexedAttributes(value: AttributeKeyAndValueList): Self = StObject.set(x, "IndexedAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexedAttributesUndefined: Self = StObject.set(x, "IndexedAttributes", js.undefined)
+    inline def setIndexedAttributesUndefined: Self = StObject.set(x, "IndexedAttributes", js.undefined)
     
-    @scala.inline
-    def setIndexedAttributesVarargs(value: AttributeKeyAndValue*): Self = StObject.set(x, "IndexedAttributes", js.Array(value :_*))
+    inline def setIndexedAttributesVarargs(value: AttributeKeyAndValue*): Self = StObject.set(x, "IndexedAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setObjectIdentifier(value: ObjectIdentifier): Self = StObject.set(x, "ObjectIdentifier", value.asInstanceOf[js.Any])
+    inline def setObjectIdentifier(value: ObjectIdentifier): Self = StObject.set(x, "ObjectIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectIdentifierUndefined: Self = StObject.set(x, "ObjectIdentifier", js.undefined)
+    inline def setObjectIdentifierUndefined: Self = StObject.set(x, "ObjectIdentifier", js.undefined)
   }
 }

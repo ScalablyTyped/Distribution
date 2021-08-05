@@ -21,6 +21,6 @@ object serverBaseMod {
     /**
       * @hidden
       */
-    var hooker_ : js.Any = js.native
+    /* private */ var hooker_ : js.Any = js.native
   }
 }

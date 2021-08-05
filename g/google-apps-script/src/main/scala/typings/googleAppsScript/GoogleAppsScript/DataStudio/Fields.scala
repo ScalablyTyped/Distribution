@@ -40,8 +40,7 @@ trait Fields extends StObject {
 }
 object Fields {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     asArray: () => js.Array[Field],
     build: () => js.Array[js.Any],
     forIds: js.Array[String] => Fields,
@@ -57,37 +56,26 @@ object Fields {
     __obj.asInstanceOf[Fields]
   }
   
-  @scala.inline
-  implicit class FieldsMutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
+  extension [Self <: Fields](x: Self) {
     
-    @scala.inline
-    def setAsArray(value: () => js.Array[Field]): Self = StObject.set(x, "asArray", js.Any.fromFunction0(value))
+    inline def setAsArray(value: () => js.Array[Field]): Self = StObject.set(x, "asArray", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBuild(value: () => js.Array[js.Any]): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
+    inline def setBuild(value: () => js.Array[js.Any]): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setForIds(value: js.Array[String] => Fields): Self = StObject.set(x, "forIds", js.Any.fromFunction1(value))
+    inline def setForIds(value: js.Array[String] => Fields): Self = StObject.set(x, "forIds", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDefaultDimension(value: () => Field | Null): Self = StObject.set(x, "getDefaultDimension", js.Any.fromFunction0(value))
+    inline def setGetDefaultDimension(value: () => Field | Null): Self = StObject.set(x, "getDefaultDimension", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDefaultMetric(value: () => Field | Null): Self = StObject.set(x, "getDefaultMetric", js.Any.fromFunction0(value))
+    inline def setGetDefaultMetric(value: () => Field | Null): Self = StObject.set(x, "getDefaultMetric", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFieldById(value: String => Field | Null): Self = StObject.set(x, "getFieldById", js.Any.fromFunction1(value))
+    inline def setGetFieldById(value: String => Field | Null): Self = StObject.set(x, "getFieldById", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNewDimension(value: () => Field): Self = StObject.set(x, "newDimension", js.Any.fromFunction0(value))
+    inline def setNewDimension(value: () => Field): Self = StObject.set(x, "newDimension", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNewMetric(value: () => Field): Self = StObject.set(x, "newMetric", js.Any.fromFunction0(value))
+    inline def setNewMetric(value: () => Field): Self = StObject.set(x, "newMetric", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDefaultDimension(value: String => Unit): Self = StObject.set(x, "setDefaultDimension", js.Any.fromFunction1(value))
+    inline def setSetDefaultDimension(value: String => Unit): Self = StObject.set(x, "setDefaultDimension", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetDefaultMetric(value: String => Unit): Self = StObject.set(x, "setDefaultMetric", js.Any.fromFunction1(value))
+    inline def setSetDefaultMetric(value: String => Unit): Self = StObject.set(x, "setDefaultMetric", js.Any.fromFunction1(value))
   }
 }

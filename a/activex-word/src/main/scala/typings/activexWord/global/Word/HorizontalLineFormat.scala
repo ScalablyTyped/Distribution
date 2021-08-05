@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.HorizontalLineFormat")
 @js.native
-class HorizontalLineFormat protected ()
+/* private */ class HorizontalLineFormat ()
   extends StObject
      with typings.activexWord.Word.HorizontalLineFormat {
   
@@ -33,7 +33,7 @@ class HorizontalLineFormat protected ()
   /* CompleteClass */
   var WidthType: WdHorizontalLineWidthType = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.HorizontalLineFormat_typekey")
   var WordDotHorizontalLineFormat_typekey: typings.activexWord.Word.HorizontalLineFormat = js.native
 }

@@ -15,14 +15,12 @@ object mod {
   @JSImport("rn-swipeable-panel", "LARGE_PANEL_CONTENT_HEIGHT")
   @js.native
   def LARGE_PANEL_CONTENT_HEIGHT: Double = js.native
-  @scala.inline
-  def LARGE_PANEL_CONTENT_HEIGHT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LARGE_PANEL_CONTENT_HEIGHT")(x.asInstanceOf[js.Any])
+  inline def LARGE_PANEL_CONTENT_HEIGHT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LARGE_PANEL_CONTENT_HEIGHT")(x.asInstanceOf[js.Any])
   
   @JSImport("rn-swipeable-panel", "SMALL_PANEL_CONTENT_HEIGHT")
   @js.native
   def SMALL_PANEL_CONTENT_HEIGHT: Double = js.native
-  @scala.inline
-  def SMALL_PANEL_CONTENT_HEIGHT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SMALL_PANEL_CONTENT_HEIGHT")(x.asInstanceOf[js.Any])
+  inline def SMALL_PANEL_CONTENT_HEIGHT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SMALL_PANEL_CONTENT_HEIGHT")(x.asInstanceOf[js.Any])
   
   @JSImport("rn-swipeable-panel", "SwipeablePanel")
   @js.native
@@ -118,98 +116,68 @@ object mod {
   }
   object SwipeablePanelProps {
     
-    @scala.inline
-    def apply(isActive: Boolean, onClose: () => Unit): SwipeablePanelProps = {
+    inline def apply(isActive: Boolean, onClose: () => Unit): SwipeablePanelProps = {
       val __obj = js.Dynamic.literal(isActive = isActive.asInstanceOf[js.Any], onClose = js.Any.fromFunction0(onClose))
       __obj.asInstanceOf[SwipeablePanelProps]
     }
     
-    @scala.inline
-    implicit class SwipeablePanelPropsMutableBuilder[Self <: SwipeablePanelProps] (val x: Self) extends AnyVal {
+    extension [Self <: SwipeablePanelProps](x: Self) {
       
-      @scala.inline
-      def setAllowTouchOutside(value: Boolean): Self = StObject.set(x, "allowTouchOutside", value.asInstanceOf[js.Any])
+      inline def setAllowTouchOutside(value: Boolean): Self = StObject.set(x, "allowTouchOutside", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowTouchOutsideUndefined: Self = StObject.set(x, "allowTouchOutside", js.undefined)
+      inline def setAllowTouchOutsideUndefined: Self = StObject.set(x, "allowTouchOutside", js.undefined)
       
-      @scala.inline
-      def setBarStyle(value: js.Object): Self = StObject.set(x, "barStyle", value.asInstanceOf[js.Any])
+      inline def setBarStyle(value: js.Object): Self = StObject.set(x, "barStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBarStyleUndefined: Self = StObject.set(x, "barStyle", js.undefined)
+      inline def setBarStyleUndefined: Self = StObject.set(x, "barStyle", js.undefined)
       
-      @scala.inline
-      def setCloseIconStyle(value: js.Object): Self = StObject.set(x, "closeIconStyle", value.asInstanceOf[js.Any])
+      inline def setCloseIconStyle(value: js.Object): Self = StObject.set(x, "closeIconStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseIconStyleUndefined: Self = StObject.set(x, "closeIconStyle", js.undefined)
+      inline def setCloseIconStyleUndefined: Self = StObject.set(x, "closeIconStyle", js.undefined)
       
-      @scala.inline
-      def setCloseOnTouchOutside(value: Boolean): Self = StObject.set(x, "closeOnTouchOutside", value.asInstanceOf[js.Any])
+      inline def setCloseOnTouchOutside(value: Boolean): Self = StObject.set(x, "closeOnTouchOutside", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseOnTouchOutsideUndefined: Self = StObject.set(x, "closeOnTouchOutside", js.undefined)
+      inline def setCloseOnTouchOutsideUndefined: Self = StObject.set(x, "closeOnTouchOutside", js.undefined)
       
-      @scala.inline
-      def setCloseRootStyle(value: js.Object): Self = StObject.set(x, "closeRootStyle", value.asInstanceOf[js.Any])
+      inline def setCloseRootStyle(value: js.Object): Self = StObject.set(x, "closeRootStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseRootStyleUndefined: Self = StObject.set(x, "closeRootStyle", js.undefined)
+      inline def setCloseRootStyleUndefined: Self = StObject.set(x, "closeRootStyle", js.undefined)
       
-      @scala.inline
-      def setFullWidth(value: Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
+      inline def setFullWidth(value: Boolean): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
+      inline def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
       
-      @scala.inline
-      def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
+      inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoBackgroundOpacity(value: Boolean): Self = StObject.set(x, "noBackgroundOpacity", value.asInstanceOf[js.Any])
+      inline def setNoBackgroundOpacity(value: Boolean): Self = StObject.set(x, "noBackgroundOpacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoBackgroundOpacityUndefined: Self = StObject.set(x, "noBackgroundOpacity", js.undefined)
+      inline def setNoBackgroundOpacityUndefined: Self = StObject.set(x, "noBackgroundOpacity", js.undefined)
       
-      @scala.inline
-      def setNoBar(value: Boolean): Self = StObject.set(x, "noBar", value.asInstanceOf[js.Any])
+      inline def setNoBar(value: Boolean): Self = StObject.set(x, "noBar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoBarUndefined: Self = StObject.set(x, "noBar", js.undefined)
+      inline def setNoBarUndefined: Self = StObject.set(x, "noBar", js.undefined)
       
-      @scala.inline
-      def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+      inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnlyLarge(value: Boolean): Self = StObject.set(x, "onlyLarge", value.asInstanceOf[js.Any])
+      inline def setOnlyLarge(value: Boolean): Self = StObject.set(x, "onlyLarge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlyLargeUndefined: Self = StObject.set(x, "onlyLarge", js.undefined)
+      inline def setOnlyLargeUndefined: Self = StObject.set(x, "onlyLarge", js.undefined)
       
-      @scala.inline
-      def setOnlySmall(value: Boolean): Self = StObject.set(x, "onlySmall", value.asInstanceOf[js.Any])
+      inline def setOnlySmall(value: Boolean): Self = StObject.set(x, "onlySmall", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlySmallUndefined: Self = StObject.set(x, "onlySmall", js.undefined)
+      inline def setOnlySmallUndefined: Self = StObject.set(x, "onlySmall", js.undefined)
       
-      @scala.inline
-      def setOpenLarge(value: Boolean): Self = StObject.set(x, "openLarge", value.asInstanceOf[js.Any])
+      inline def setOpenLarge(value: Boolean): Self = StObject.set(x, "openLarge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenLargeUndefined: Self = StObject.set(x, "openLarge", js.undefined)
+      inline def setOpenLargeUndefined: Self = StObject.set(x, "openLarge", js.undefined)
       
-      @scala.inline
-      def setShowCloseButton(value: Boolean): Self = StObject.set(x, "showCloseButton", value.asInstanceOf[js.Any])
+      inline def setShowCloseButton(value: Boolean): Self = StObject.set(x, "showCloseButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowCloseButtonUndefined: Self = StObject.set(x, "showCloseButton", js.undefined)
+      inline def setShowCloseButtonUndefined: Self = StObject.set(x, "showCloseButton", js.undefined)
       
-      @scala.inline
-      def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

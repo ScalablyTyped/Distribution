@@ -17,16 +17,13 @@ trait Mark extends StObject {
 }
 object Mark {
   
-  @scala.inline
-  def apply(getPairs: () => js.Array[Pair]): Mark = {
+  inline def apply(getPairs: () => js.Array[Pair]): Mark = {
     val __obj = js.Dynamic.literal(getPairs = js.Any.fromFunction0(getPairs))
     __obj.asInstanceOf[Mark]
   }
   
-  @scala.inline
-  implicit class MarkMutableBuilder[Self <: Mark] (val x: Self) extends AnyVal {
+  extension [Self <: Mark](x: Self) {
     
-    @scala.inline
-    def setGetPairs(value: () => js.Array[Pair]): Self = StObject.set(x, "getPairs", js.Any.fromFunction0(value))
+    inline def setGetPairs(value: () => js.Array[Pair]): Self = StObject.set(x, "getPairs", js.Any.fromFunction0(value))
   }
 }

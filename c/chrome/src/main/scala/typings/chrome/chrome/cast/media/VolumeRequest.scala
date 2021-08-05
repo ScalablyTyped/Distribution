@@ -13,19 +13,15 @@ trait VolumeRequest extends StObject {
 }
 object VolumeRequest {
   
-  @scala.inline
-  def apply(customData: js.Object, volume: Volume): VolumeRequest = {
+  inline def apply(customData: js.Object, volume: Volume): VolumeRequest = {
     val __obj = js.Dynamic.literal(customData = customData.asInstanceOf[js.Any], volume = volume.asInstanceOf[js.Any])
     __obj.asInstanceOf[VolumeRequest]
   }
   
-  @scala.inline
-  implicit class VolumeRequestMutableBuilder[Self <: VolumeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: VolumeRequest](x: Self) {
     
-    @scala.inline
-    def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+    inline def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolume(value: Volume): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+    inline def setVolume(value: Volume): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
   }
 }

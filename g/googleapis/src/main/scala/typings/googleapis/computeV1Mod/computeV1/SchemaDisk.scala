@@ -226,202 +226,137 @@ trait SchemaDisk extends StObject {
 }
 object SchemaDisk {
   
-  @scala.inline
-  def apply(): SchemaDisk = {
+  inline def apply(): SchemaDisk = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDisk]
   }
   
-  @scala.inline
-  implicit class SchemaDiskMutableBuilder[Self <: SchemaDisk] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDisk](x: Self) {
     
-    @scala.inline
-    def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreationTimestamp(value: String): Self = StObject.set(x, "creationTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
+    inline def setCreationTimestampUndefined: Self = StObject.set(x, "creationTimestamp", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDiskEncryptionKey(value: SchemaCustomerEncryptionKey): Self = StObject.set(x, "diskEncryptionKey", value.asInstanceOf[js.Any])
+    inline def setDiskEncryptionKey(value: SchemaCustomerEncryptionKey): Self = StObject.set(x, "diskEncryptionKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskEncryptionKeyUndefined: Self = StObject.set(x, "diskEncryptionKey", js.undefined)
+    inline def setDiskEncryptionKeyUndefined: Self = StObject.set(x, "diskEncryptionKey", js.undefined)
     
-    @scala.inline
-    def setGuestOsFeatures(value: js.Array[SchemaGuestOsFeature]): Self = StObject.set(x, "guestOsFeatures", value.asInstanceOf[js.Any])
+    inline def setGuestOsFeatures(value: js.Array[SchemaGuestOsFeature]): Self = StObject.set(x, "guestOsFeatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGuestOsFeaturesUndefined: Self = StObject.set(x, "guestOsFeatures", js.undefined)
+    inline def setGuestOsFeaturesUndefined: Self = StObject.set(x, "guestOsFeatures", js.undefined)
     
-    @scala.inline
-    def setGuestOsFeaturesVarargs(value: SchemaGuestOsFeature*): Self = StObject.set(x, "guestOsFeatures", js.Array(value :_*))
+    inline def setGuestOsFeaturesVarargs(value: SchemaGuestOsFeature*): Self = StObject.set(x, "guestOsFeatures", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setLabelFingerprint(value: String): Self = StObject.set(x, "labelFingerprint", value.asInstanceOf[js.Any])
+    inline def setLabelFingerprint(value: String): Self = StObject.set(x, "labelFingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelFingerprintUndefined: Self = StObject.set(x, "labelFingerprint", js.undefined)
+    inline def setLabelFingerprintUndefined: Self = StObject.set(x, "labelFingerprint", js.undefined)
     
-    @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setLastAttachTimestamp(value: String): Self = StObject.set(x, "lastAttachTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastAttachTimestamp(value: String): Self = StObject.set(x, "lastAttachTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastAttachTimestampUndefined: Self = StObject.set(x, "lastAttachTimestamp", js.undefined)
+    inline def setLastAttachTimestampUndefined: Self = StObject.set(x, "lastAttachTimestamp", js.undefined)
     
-    @scala.inline
-    def setLastDetachTimestamp(value: String): Self = StObject.set(x, "lastDetachTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastDetachTimestamp(value: String): Self = StObject.set(x, "lastDetachTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastDetachTimestampUndefined: Self = StObject.set(x, "lastDetachTimestamp", js.undefined)
+    inline def setLastDetachTimestampUndefined: Self = StObject.set(x, "lastDetachTimestamp", js.undefined)
     
-    @scala.inline
-    def setLicenseCodes(value: js.Array[String]): Self = StObject.set(x, "licenseCodes", value.asInstanceOf[js.Any])
+    inline def setLicenseCodes(value: js.Array[String]): Self = StObject.set(x, "licenseCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicenseCodesUndefined: Self = StObject.set(x, "licenseCodes", js.undefined)
+    inline def setLicenseCodesUndefined: Self = StObject.set(x, "licenseCodes", js.undefined)
     
-    @scala.inline
-    def setLicenseCodesVarargs(value: String*): Self = StObject.set(x, "licenseCodes", js.Array(value :_*))
+    inline def setLicenseCodesVarargs(value: String*): Self = StObject.set(x, "licenseCodes", js.Array(value :_*))
     
-    @scala.inline
-    def setLicenses(value: js.Array[String]): Self = StObject.set(x, "licenses", value.asInstanceOf[js.Any])
+    inline def setLicenses(value: js.Array[String]): Self = StObject.set(x, "licenses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicensesUndefined: Self = StObject.set(x, "licenses", js.undefined)
+    inline def setLicensesUndefined: Self = StObject.set(x, "licenses", js.undefined)
     
-    @scala.inline
-    def setLicensesVarargs(value: String*): Self = StObject.set(x, "licenses", js.Array(value :_*))
+    inline def setLicensesVarargs(value: String*): Self = StObject.set(x, "licenses", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOptions(value: String): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: String): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setPhysicalBlockSizeBytes(value: String): Self = StObject.set(x, "physicalBlockSizeBytes", value.asInstanceOf[js.Any])
+    inline def setPhysicalBlockSizeBytes(value: String): Self = StObject.set(x, "physicalBlockSizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhysicalBlockSizeBytesUndefined: Self = StObject.set(x, "physicalBlockSizeBytes", js.undefined)
+    inline def setPhysicalBlockSizeBytesUndefined: Self = StObject.set(x, "physicalBlockSizeBytes", js.undefined)
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "region", js.undefined)
     
-    @scala.inline
-    def setReplicaZones(value: js.Array[String]): Self = StObject.set(x, "replicaZones", value.asInstanceOf[js.Any])
+    inline def setReplicaZones(value: js.Array[String]): Self = StObject.set(x, "replicaZones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicaZonesUndefined: Self = StObject.set(x, "replicaZones", js.undefined)
+    inline def setReplicaZonesUndefined: Self = StObject.set(x, "replicaZones", js.undefined)
     
-    @scala.inline
-    def setReplicaZonesVarargs(value: String*): Self = StObject.set(x, "replicaZones", js.Array(value :_*))
+    inline def setReplicaZonesVarargs(value: String*): Self = StObject.set(x, "replicaZones", js.Array(value :_*))
     
-    @scala.inline
-    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
-    @scala.inline
-    def setSizeGb(value: String): Self = StObject.set(x, "sizeGb", value.asInstanceOf[js.Any])
+    inline def setSizeGb(value: String): Self = StObject.set(x, "sizeGb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeGbUndefined: Self = StObject.set(x, "sizeGb", js.undefined)
+    inline def setSizeGbUndefined: Self = StObject.set(x, "sizeGb", js.undefined)
     
-    @scala.inline
-    def setSourceImage(value: String): Self = StObject.set(x, "sourceImage", value.asInstanceOf[js.Any])
+    inline def setSourceImage(value: String): Self = StObject.set(x, "sourceImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceImageEncryptionKey(value: SchemaCustomerEncryptionKey): Self = StObject.set(x, "sourceImageEncryptionKey", value.asInstanceOf[js.Any])
+    inline def setSourceImageEncryptionKey(value: SchemaCustomerEncryptionKey): Self = StObject.set(x, "sourceImageEncryptionKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceImageEncryptionKeyUndefined: Self = StObject.set(x, "sourceImageEncryptionKey", js.undefined)
+    inline def setSourceImageEncryptionKeyUndefined: Self = StObject.set(x, "sourceImageEncryptionKey", js.undefined)
     
-    @scala.inline
-    def setSourceImageId(value: String): Self = StObject.set(x, "sourceImageId", value.asInstanceOf[js.Any])
+    inline def setSourceImageId(value: String): Self = StObject.set(x, "sourceImageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceImageIdUndefined: Self = StObject.set(x, "sourceImageId", js.undefined)
+    inline def setSourceImageIdUndefined: Self = StObject.set(x, "sourceImageId", js.undefined)
     
-    @scala.inline
-    def setSourceImageUndefined: Self = StObject.set(x, "sourceImage", js.undefined)
+    inline def setSourceImageUndefined: Self = StObject.set(x, "sourceImage", js.undefined)
     
-    @scala.inline
-    def setSourceSnapshot(value: String): Self = StObject.set(x, "sourceSnapshot", value.asInstanceOf[js.Any])
+    inline def setSourceSnapshot(value: String): Self = StObject.set(x, "sourceSnapshot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceSnapshotEncryptionKey(value: SchemaCustomerEncryptionKey): Self = StObject.set(x, "sourceSnapshotEncryptionKey", value.asInstanceOf[js.Any])
+    inline def setSourceSnapshotEncryptionKey(value: SchemaCustomerEncryptionKey): Self = StObject.set(x, "sourceSnapshotEncryptionKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceSnapshotEncryptionKeyUndefined: Self = StObject.set(x, "sourceSnapshotEncryptionKey", js.undefined)
+    inline def setSourceSnapshotEncryptionKeyUndefined: Self = StObject.set(x, "sourceSnapshotEncryptionKey", js.undefined)
     
-    @scala.inline
-    def setSourceSnapshotId(value: String): Self = StObject.set(x, "sourceSnapshotId", value.asInstanceOf[js.Any])
+    inline def setSourceSnapshotId(value: String): Self = StObject.set(x, "sourceSnapshotId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceSnapshotIdUndefined: Self = StObject.set(x, "sourceSnapshotId", js.undefined)
+    inline def setSourceSnapshotIdUndefined: Self = StObject.set(x, "sourceSnapshotId", js.undefined)
     
-    @scala.inline
-    def setSourceSnapshotUndefined: Self = StObject.set(x, "sourceSnapshot", js.undefined)
+    inline def setSourceSnapshotUndefined: Self = StObject.set(x, "sourceSnapshot", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUsers(value: js.Array[String]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+    inline def setUsers(value: js.Array[String]): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
+    inline def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)
     
-    @scala.inline
-    def setUsersVarargs(value: String*): Self = StObject.set(x, "users", js.Array(value :_*))
+    inline def setUsersVarargs(value: String*): Self = StObject.set(x, "users", js.Array(value :_*))
     
-    @scala.inline
-    def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
+    inline def setZone(value: String): Self = StObject.set(x, "zone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
+    inline def setZoneUndefined: Self = StObject.set(x, "zone", js.undefined)
   }
 }

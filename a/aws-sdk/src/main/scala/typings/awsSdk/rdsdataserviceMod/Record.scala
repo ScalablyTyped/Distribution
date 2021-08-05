@@ -13,22 +13,17 @@ trait Record extends StObject {
 }
 object Record {
   
-  @scala.inline
-  def apply(): Record = {
+  inline def apply(): Record = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Record]
   }
   
-  @scala.inline
-  implicit class RecordMutableBuilder[Self <: Record] (val x: Self) extends AnyVal {
+  extension [Self <: Record](x: Self) {
     
-    @scala.inline
-    def setValues(value: Row): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: Row): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: Value*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Value*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

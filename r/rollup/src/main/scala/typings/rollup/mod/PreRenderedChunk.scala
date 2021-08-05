@@ -26,8 +26,7 @@ trait PreRenderedChunk extends StObject {
 }
 object PreRenderedChunk {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     exports: js.Array[String],
     isDynamicEntry: Boolean,
     isEntry: Boolean,
@@ -40,37 +39,26 @@ object PreRenderedChunk {
     __obj.asInstanceOf[PreRenderedChunk]
   }
   
-  @scala.inline
-  implicit class PreRenderedChunkMutableBuilder[Self <: PreRenderedChunk] (val x: Self) extends AnyVal {
+  extension [Self <: PreRenderedChunk](x: Self) {
     
-    @scala.inline
-    def setExports(value: js.Array[String]): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
+    inline def setExports(value: js.Array[String]): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportsVarargs(value: String*): Self = StObject.set(x, "exports", js.Array(value :_*))
+    inline def setExportsVarargs(value: String*): Self = StObject.set(x, "exports", js.Array(value :_*))
     
-    @scala.inline
-    def setFacadeModuleId(value: String): Self = StObject.set(x, "facadeModuleId", value.asInstanceOf[js.Any])
+    inline def setFacadeModuleId(value: String): Self = StObject.set(x, "facadeModuleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacadeModuleIdNull: Self = StObject.set(x, "facadeModuleId", null)
+    inline def setFacadeModuleIdNull: Self = StObject.set(x, "facadeModuleId", null)
     
-    @scala.inline
-    def setIsDynamicEntry(value: Boolean): Self = StObject.set(x, "isDynamicEntry", value.asInstanceOf[js.Any])
+    inline def setIsDynamicEntry(value: Boolean): Self = StObject.set(x, "isDynamicEntry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEntry(value: Boolean): Self = StObject.set(x, "isEntry", value.asInstanceOf[js.Any])
+    inline def setIsEntry(value: Boolean): Self = StObject.set(x, "isEntry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsImplicitEntry(value: Boolean): Self = StObject.set(x, "isImplicitEntry", value.asInstanceOf[js.Any])
+    inline def setIsImplicitEntry(value: Boolean): Self = StObject.set(x, "isImplicitEntry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModules(value: StringDictionary[RenderedModule]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
+    inline def setModules(value: StringDictionary[RenderedModule]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: chunk): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: chunk): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

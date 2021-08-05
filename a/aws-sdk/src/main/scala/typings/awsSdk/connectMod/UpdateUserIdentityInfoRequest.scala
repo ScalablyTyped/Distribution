@@ -23,22 +23,17 @@ trait UpdateUserIdentityInfoRequest extends StObject {
 }
 object UpdateUserIdentityInfoRequest {
   
-  @scala.inline
-  def apply(IdentityInfo: UserIdentityInfo, InstanceId: InstanceId, UserId: UserId): UpdateUserIdentityInfoRequest = {
+  inline def apply(IdentityInfo: UserIdentityInfo, InstanceId: InstanceId, UserId: UserId): UpdateUserIdentityInfoRequest = {
     val __obj = js.Dynamic.literal(IdentityInfo = IdentityInfo.asInstanceOf[js.Any], InstanceId = InstanceId.asInstanceOf[js.Any], UserId = UserId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateUserIdentityInfoRequest]
   }
   
-  @scala.inline
-  implicit class UpdateUserIdentityInfoRequestMutableBuilder[Self <: UpdateUserIdentityInfoRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateUserIdentityInfoRequest](x: Self) {
     
-    @scala.inline
-    def setIdentityInfo(value: UserIdentityInfo): Self = StObject.set(x, "IdentityInfo", value.asInstanceOf[js.Any])
+    inline def setIdentityInfo(value: UserIdentityInfo): Self = StObject.set(x, "IdentityInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserId(value: UserId): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: UserId): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
   }
 }

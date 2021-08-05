@@ -23,31 +23,23 @@ trait ListGlobalTablesInput extends StObject {
 }
 object ListGlobalTablesInput {
   
-  @scala.inline
-  def apply(): ListGlobalTablesInput = {
+  inline def apply(): ListGlobalTablesInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListGlobalTablesInput]
   }
   
-  @scala.inline
-  implicit class ListGlobalTablesInputMutableBuilder[Self <: ListGlobalTablesInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListGlobalTablesInput](x: Self) {
     
-    @scala.inline
-    def setExclusiveStartGlobalTableName(value: TableName): Self = StObject.set(x, "ExclusiveStartGlobalTableName", value.asInstanceOf[js.Any])
+    inline def setExclusiveStartGlobalTableName(value: TableName): Self = StObject.set(x, "ExclusiveStartGlobalTableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExclusiveStartGlobalTableNameUndefined: Self = StObject.set(x, "ExclusiveStartGlobalTableName", js.undefined)
+    inline def setExclusiveStartGlobalTableNameUndefined: Self = StObject.set(x, "ExclusiveStartGlobalTableName", js.undefined)
     
-    @scala.inline
-    def setLimit(value: PositiveIntegerObject): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: PositiveIntegerObject): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
+    inline def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionNameUndefined: Self = StObject.set(x, "RegionName", js.undefined)
+    inline def setRegionNameUndefined: Self = StObject.set(x, "RegionName", js.undefined)
   }
 }

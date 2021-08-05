@@ -44,55 +44,39 @@ trait HighlightSelectionMatches extends StObject {
 }
 object HighlightSelectionMatches {
   
-  @scala.inline
-  def apply(): HighlightSelectionMatches = {
+  inline def apply(): HighlightSelectionMatches = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HighlightSelectionMatches]
   }
   
-  @scala.inline
-  implicit class HighlightSelectionMatchesMutableBuilder[Self <: HighlightSelectionMatches] (val x: Self) extends AnyVal {
+  extension [Self <: HighlightSelectionMatches](x: Self) {
     
-    @scala.inline
-    def setAnnotateScrollbar(value: Boolean): Self = StObject.set(x, "annotateScrollbar", value.asInstanceOf[js.Any])
+    inline def setAnnotateScrollbar(value: Boolean): Self = StObject.set(x, "annotateScrollbar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotateScrollbarUndefined: Self = StObject.set(x, "annotateScrollbar", js.undefined)
+    inline def setAnnotateScrollbarUndefined: Self = StObject.set(x, "annotateScrollbar", js.undefined)
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    @scala.inline
-    def setMinChars(value: Double): Self = StObject.set(x, "minChars", value.asInstanceOf[js.Any])
+    inline def setMinChars(value: Double): Self = StObject.set(x, "minChars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinCharsUndefined: Self = StObject.set(x, "minChars", js.undefined)
+    inline def setMinCharsUndefined: Self = StObject.set(x, "minChars", js.undefined)
     
-    @scala.inline
-    def setShowToken(value: Boolean | RegExp): Self = StObject.set(x, "showToken", value.asInstanceOf[js.Any])
+    inline def setShowToken(value: Boolean | RegExp): Self = StObject.set(x, "showToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowTokenUndefined: Self = StObject.set(x, "showToken", js.undefined)
+    inline def setShowTokenUndefined: Self = StObject.set(x, "showToken", js.undefined)
     
-    @scala.inline
-    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
+    inline def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
+    inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
     
-    @scala.inline
-    def setWordsOnly(value: Boolean): Self = StObject.set(x, "wordsOnly", value.asInstanceOf[js.Any])
+    inline def setWordsOnly(value: Boolean): Self = StObject.set(x, "wordsOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordsOnlyUndefined: Self = StObject.set(x, "wordsOnly", js.undefined)
+    inline def setWordsOnlyUndefined: Self = StObject.set(x, "wordsOnly", js.undefined)
   }
 }

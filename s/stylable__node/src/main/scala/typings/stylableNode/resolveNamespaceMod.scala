@@ -16,12 +16,8 @@ object resolveNamespaceMod {
   @js.native
   val resolveNamespace: ReturnType[FnCall] = js.native
   
-  @scala.inline
-  def resolveNamespaceFactory(): ReturnType[FnCall] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveNamespaceFactory")().asInstanceOf[ReturnType[FnCall]]
-  @scala.inline
-  def resolveNamespaceFactory(hashSalt: String): ReturnType[FnCall] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveNamespaceFactory")(hashSalt.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCall]]
-  @scala.inline
-  def resolveNamespaceFactory(hashSalt: String, prefix: String): ReturnType[FnCall] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveNamespaceFactory")(hashSalt.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FnCall]]
-  @scala.inline
-  def resolveNamespaceFactory(hashSalt: Unit, prefix: String): ReturnType[FnCall] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveNamespaceFactory")(hashSalt.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FnCall]]
+  inline def resolveNamespaceFactory(): ReturnType[FnCall] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveNamespaceFactory")().asInstanceOf[ReturnType[FnCall]]
+  inline def resolveNamespaceFactory(hashSalt: String): ReturnType[FnCall] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveNamespaceFactory")(hashSalt.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCall]]
+  inline def resolveNamespaceFactory(hashSalt: String, prefix: String): ReturnType[FnCall] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveNamespaceFactory")(hashSalt.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FnCall]]
+  inline def resolveNamespaceFactory(hashSalt: Unit, prefix: String): ReturnType[FnCall] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveNamespaceFactory")(hashSalt.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[ReturnType[FnCall]]
 }

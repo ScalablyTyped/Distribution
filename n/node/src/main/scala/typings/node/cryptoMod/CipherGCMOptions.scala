@@ -13,19 +13,15 @@ trait CipherGCMOptions
 }
 object CipherGCMOptions {
   
-  @scala.inline
-  def apply(): CipherGCMOptions = {
+  inline def apply(): CipherGCMOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CipherGCMOptions]
   }
   
-  @scala.inline
-  implicit class CipherGCMOptionsMutableBuilder[Self <: CipherGCMOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CipherGCMOptions](x: Self) {
     
-    @scala.inline
-    def setAuthTagLength(value: Double): Self = StObject.set(x, "authTagLength", value.asInstanceOf[js.Any])
+    inline def setAuthTagLength(value: Double): Self = StObject.set(x, "authTagLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthTagLengthUndefined: Self = StObject.set(x, "authTagLength", js.undefined)
+    inline def setAuthTagLengthUndefined: Self = StObject.set(x, "authTagLength", js.undefined)
   }
 }

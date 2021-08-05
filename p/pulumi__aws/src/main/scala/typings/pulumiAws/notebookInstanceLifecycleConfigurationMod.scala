@@ -62,14 +62,10 @@ object notebookInstanceLifecycleConfigurationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): NotebookInstanceLifecycleConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[NotebookInstanceLifecycleConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): NotebookInstanceLifecycleConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NotebookInstanceLifecycleConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: NotebookInstanceLifecycleConfigurationState): NotebookInstanceLifecycleConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[NotebookInstanceLifecycleConfiguration]
-    @scala.inline
-    def get(
+    inline def get(name: String, id: Input[ID]): NotebookInstanceLifecycleConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[NotebookInstanceLifecycleConfiguration]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): NotebookInstanceLifecycleConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NotebookInstanceLifecycleConfiguration]
+    inline def get(name: String, id: Input[ID], state: NotebookInstanceLifecycleConfigurationState): NotebookInstanceLifecycleConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[NotebookInstanceLifecycleConfiguration]
+    inline def get(
       name: String,
       id: Input[ID],
       state: NotebookInstanceLifecycleConfigurationState,
@@ -80,8 +76,7 @@ object notebookInstanceLifecycleConfigurationMod {
       * Returns true if the given object is an instance of NotebookInstanceLifecycleConfiguration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sagemaker/notebookInstanceLifecycleConfiguration.NotebookInstanceLifecycleConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sagemaker/notebookInstanceLifecycleConfiguration.NotebookInstanceLifecycleConfiguration */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sagemaker/notebookInstanceLifecycleConfiguration.NotebookInstanceLifecycleConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sagemaker/notebookInstanceLifecycleConfiguration.NotebookInstanceLifecycleConfiguration */ Boolean]
   }
   
   trait NotebookInstanceLifecycleConfigurationArgs extends StObject {
@@ -103,32 +98,24 @@ object notebookInstanceLifecycleConfigurationMod {
   }
   object NotebookInstanceLifecycleConfigurationArgs {
     
-    @scala.inline
-    def apply(): NotebookInstanceLifecycleConfigurationArgs = {
+    inline def apply(): NotebookInstanceLifecycleConfigurationArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NotebookInstanceLifecycleConfigurationArgs]
     }
     
-    @scala.inline
-    implicit class NotebookInstanceLifecycleConfigurationArgsMutableBuilder[Self <: NotebookInstanceLifecycleConfigurationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: NotebookInstanceLifecycleConfigurationArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnCreate(value: Input[String]): Self = StObject.set(x, "onCreate", value.asInstanceOf[js.Any])
+      inline def setOnCreate(value: Input[String]): Self = StObject.set(x, "onCreate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnCreateUndefined: Self = StObject.set(x, "onCreate", js.undefined)
+      inline def setOnCreateUndefined: Self = StObject.set(x, "onCreate", js.undefined)
       
-      @scala.inline
-      def setOnStart(value: Input[String]): Self = StObject.set(x, "onStart", value.asInstanceOf[js.Any])
+      inline def setOnStart(value: Input[String]): Self = StObject.set(x, "onStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
+      inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
     }
   }
   
@@ -156,38 +143,28 @@ object notebookInstanceLifecycleConfigurationMod {
   }
   object NotebookInstanceLifecycleConfigurationState {
     
-    @scala.inline
-    def apply(): NotebookInstanceLifecycleConfigurationState = {
+    inline def apply(): NotebookInstanceLifecycleConfigurationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NotebookInstanceLifecycleConfigurationState]
     }
     
-    @scala.inline
-    implicit class NotebookInstanceLifecycleConfigurationStateMutableBuilder[Self <: NotebookInstanceLifecycleConfigurationState] (val x: Self) extends AnyVal {
+    extension [Self <: NotebookInstanceLifecycleConfigurationState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOnCreate(value: Input[String]): Self = StObject.set(x, "onCreate", value.asInstanceOf[js.Any])
+      inline def setOnCreate(value: Input[String]): Self = StObject.set(x, "onCreate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnCreateUndefined: Self = StObject.set(x, "onCreate", js.undefined)
+      inline def setOnCreateUndefined: Self = StObject.set(x, "onCreate", js.undefined)
       
-      @scala.inline
-      def setOnStart(value: Input[String]): Self = StObject.set(x, "onStart", value.asInstanceOf[js.Any])
+      inline def setOnStart(value: Input[String]): Self = StObject.set(x, "onStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
+      inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
     }
   }
 }

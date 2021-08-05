@@ -14,15 +14,13 @@ trait AnyExtensionField
      with AnyNestedObject
 object AnyExtensionField {
   
-  @scala.inline
-  def IExtensionField(extend: String, id: Double, `type`: String): typings.protobufjs.mod.IExtensionField = {
+  inline def IExtensionField(extend: String, id: Double, `type`: String): typings.protobufjs.mod.IExtensionField = {
     val __obj = js.Dynamic.literal(extend = extend.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.protobufjs.mod.IExtensionField]
   }
   
-  @scala.inline
-  def IExtensionMapField(extend: String, id: Double, keyType: String, `type`: String): typings.protobufjs.mod.IExtensionMapField = {
+  inline def IExtensionMapField(extend: String, id: Double, keyType: String, `type`: String): typings.protobufjs.mod.IExtensionMapField = {
     val __obj = js.Dynamic.literal(extend = extend.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], keyType = keyType.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.protobufjs.mod.IExtensionMapField]

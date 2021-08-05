@@ -29,8 +29,7 @@ trait ICursorPositionChangedEvent extends StObject {
 }
 object ICursorPositionChangedEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     position: Position,
     reason: CursorChangeReason,
     secondaryPositions: js.Array[Position],
@@ -40,22 +39,16 @@ object ICursorPositionChangedEvent {
     __obj.asInstanceOf[ICursorPositionChangedEvent]
   }
   
-  @scala.inline
-  implicit class ICursorPositionChangedEventMutableBuilder[Self <: ICursorPositionChangedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ICursorPositionChangedEvent](x: Self) {
     
-    @scala.inline
-    def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: CursorChangeReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: CursorChangeReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryPositions(value: js.Array[Position]): Self = StObject.set(x, "secondaryPositions", value.asInstanceOf[js.Any])
+    inline def setSecondaryPositions(value: js.Array[Position]): Self = StObject.set(x, "secondaryPositions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryPositionsVarargs(value: Position*): Self = StObject.set(x, "secondaryPositions", js.Array(value :_*))
+    inline def setSecondaryPositionsVarargs(value: Position*): Self = StObject.set(x, "secondaryPositions", js.Array(value :_*))
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
   }
 }

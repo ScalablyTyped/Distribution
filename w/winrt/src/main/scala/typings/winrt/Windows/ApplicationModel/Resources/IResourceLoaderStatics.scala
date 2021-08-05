@@ -11,16 +11,13 @@ trait IResourceLoaderStatics extends StObject {
 }
 object IResourceLoaderStatics {
   
-  @scala.inline
-  def apply(getStringForReference: Uri => String): IResourceLoaderStatics = {
+  inline def apply(getStringForReference: Uri => String): IResourceLoaderStatics = {
     val __obj = js.Dynamic.literal(getStringForReference = js.Any.fromFunction1(getStringForReference))
     __obj.asInstanceOf[IResourceLoaderStatics]
   }
   
-  @scala.inline
-  implicit class IResourceLoaderStaticsMutableBuilder[Self <: IResourceLoaderStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IResourceLoaderStatics](x: Self) {
     
-    @scala.inline
-    def setGetStringForReference(value: Uri => String): Self = StObject.set(x, "getStringForReference", js.Any.fromFunction1(value))
+    inline def setGetStringForReference(value: Uri => String): Self = StObject.set(x, "getStringForReference", js.Any.fromFunction1(value))
   }
 }

@@ -21,11 +21,11 @@ class CoreServicesShim protected ()
   /* CompleteClass */
   override def dumpMemory(dummy: js.Any): String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var factory: js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def forwardJSONCall(actionDescription: js.Any, action: js.Any): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def forwardJSONCall(actionDescription: js.Any, action: js.Any): js.Any = js.native
   
   /* CompleteClass */
   override def getDefaultCompilationSettings(): String = js.native

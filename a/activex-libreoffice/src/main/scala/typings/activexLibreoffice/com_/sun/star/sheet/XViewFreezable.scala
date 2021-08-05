@@ -27,8 +27,7 @@ trait XViewFreezable
 }
 object XViewFreezable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     freezeAtPosition: (Double, Double) => Unit,
     hasFrozenPanes: () => Boolean,
@@ -39,13 +38,10 @@ object XViewFreezable {
     __obj.asInstanceOf[XViewFreezable]
   }
   
-  @scala.inline
-  implicit class XViewFreezableMutableBuilder[Self <: XViewFreezable] (val x: Self) extends AnyVal {
+  extension [Self <: XViewFreezable](x: Self) {
     
-    @scala.inline
-    def setFreezeAtPosition(value: (Double, Double) => Unit): Self = StObject.set(x, "freezeAtPosition", js.Any.fromFunction2(value))
+    inline def setFreezeAtPosition(value: (Double, Double) => Unit): Self = StObject.set(x, "freezeAtPosition", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHasFrozenPanes(value: () => Boolean): Self = StObject.set(x, "hasFrozenPanes", js.Any.fromFunction0(value))
+    inline def setHasFrozenPanes(value: () => Boolean): Self = StObject.set(x, "hasFrozenPanes", js.Any.fromFunction0(value))
   }
 }

@@ -16,32 +16,23 @@ object DOM {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def AbsLeft(el: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("AbsLeft")(el.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def AbsLeft(el: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("AbsLeft")(el.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def AbsTop(el: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("AbsTop")(el.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def AbsTop(el: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("AbsTop")(el.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def CancelEvent(evt: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("CancelEvent")(evt.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def CancelEvent(evt: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("CancelEvent")(evt.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def GetElementsByName(nae: String): NodeList = ^.asInstanceOf[js.Dynamic].applyDynamic("GetElementsByName")(nae.asInstanceOf[js.Any]).asInstanceOf[NodeList]
+  inline def GetElementsByName(nae: String): NodeList = ^.asInstanceOf[js.Dynamic].applyDynamic("GetElementsByName")(nae.asInstanceOf[js.Any]).asInstanceOf[NodeList]
   
-  @scala.inline
-  def GetEventCoords(evt: Event): X = ^.asInstanceOf[js.Dynamic].applyDynamic("GetEventCoords")(evt.asInstanceOf[js.Any]).asInstanceOf[X]
+  inline def GetEventCoords(evt: Event): X = ^.asInstanceOf[js.Dynamic].applyDynamic("GetEventCoords")(evt.asInstanceOf[js.Any]).asInstanceOf[X]
   
-  @scala.inline
-  def GetEventSrcElement(evt: Event): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("GetEventSrcElement")(evt.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  inline def GetEventSrcElement(evt: Event): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("GetEventSrcElement")(evt.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
   
-  @scala.inline
-  def GetInnerText(el: HTMLElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetInnerText")(el.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def GetInnerText(el: HTMLElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetInnerText")(el.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def PreventDefaultNavigation(evt: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("PreventDefaultNavigation")(evt.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def PreventDefaultNavigation(evt: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("PreventDefaultNavigation")(evt.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def SetEvent(
+  inline def SetEvent(
     eventName: String,
     eventFunc: js.Function3[
       /* eventName */ String, 
@@ -52,8 +43,7 @@ object DOM {
     el: HTMLElement
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("SetEvent")(eventName.asInstanceOf[js.Any], eventFunc.asInstanceOf[js.Any], el.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def cancelDefault(evt: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelDefault")(evt.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def cancelDefault(evt: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelDefault")(evt.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSGlobal("DOM.rightToLeft")
   @js.native

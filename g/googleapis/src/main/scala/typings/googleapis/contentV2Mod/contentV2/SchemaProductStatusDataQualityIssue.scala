@@ -26,67 +26,47 @@ trait SchemaProductStatusDataQualityIssue extends StObject {
 }
 object SchemaProductStatusDataQualityIssue {
   
-  @scala.inline
-  def apply(): SchemaProductStatusDataQualityIssue = {
+  inline def apply(): SchemaProductStatusDataQualityIssue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaProductStatusDataQualityIssue]
   }
   
-  @scala.inline
-  implicit class SchemaProductStatusDataQualityIssueMutableBuilder[Self <: SchemaProductStatusDataQualityIssue] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaProductStatusDataQualityIssue](x: Self) {
     
-    @scala.inline
-    def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+    inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
-    @scala.inline
-    def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
+    inline def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
+    inline def setDetailUndefined: Self = StObject.set(x, "detail", js.undefined)
     
-    @scala.inline
-    def setFetchStatus(value: String): Self = StObject.set(x, "fetchStatus", value.asInstanceOf[js.Any])
+    inline def setFetchStatus(value: String): Self = StObject.set(x, "fetchStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFetchStatusUndefined: Self = StObject.set(x, "fetchStatus", js.undefined)
+    inline def setFetchStatusUndefined: Self = StObject.set(x, "fetchStatus", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+    inline def setSeverity(value: String): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
+    inline def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
     
-    @scala.inline
-    def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: String): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
+    inline def setTimestampUndefined: Self = StObject.set(x, "timestamp", js.undefined)
     
-    @scala.inline
-    def setValueOnLandingPage(value: String): Self = StObject.set(x, "valueOnLandingPage", value.asInstanceOf[js.Any])
+    inline def setValueOnLandingPage(value: String): Self = StObject.set(x, "valueOnLandingPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueOnLandingPageUndefined: Self = StObject.set(x, "valueOnLandingPage", js.undefined)
+    inline def setValueOnLandingPageUndefined: Self = StObject.set(x, "valueOnLandingPage", js.undefined)
     
-    @scala.inline
-    def setValueProvided(value: String): Self = StObject.set(x, "valueProvided", value.asInstanceOf[js.Any])
+    inline def setValueProvided(value: String): Self = StObject.set(x, "valueProvided", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueProvidedUndefined: Self = StObject.set(x, "valueProvided", js.undefined)
+    inline def setValueProvidedUndefined: Self = StObject.set(x, "valueProvided", js.undefined)
   }
 }

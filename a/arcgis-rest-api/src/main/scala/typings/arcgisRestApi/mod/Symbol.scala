@@ -12,23 +12,18 @@ trait Symbol extends StObject {
 }
 object Symbol {
   
-  @scala.inline
-  def apply(`type`: SymbolType): Symbol = {
+  inline def apply(`type`: SymbolType): Symbol = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Symbol]
   }
   
-  @scala.inline
-  implicit class SymbolMutableBuilder[Self <: Symbol] (val x: Self) extends AnyVal {
+  extension [Self <: Symbol](x: Self) {
     
-    @scala.inline
-    def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: String): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setType(value: SymbolType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: SymbolType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

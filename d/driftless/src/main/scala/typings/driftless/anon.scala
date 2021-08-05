@@ -12,20 +12,16 @@ object anon {
   }
   object CustomClearTimeout {
     
-    @scala.inline
-    def apply(): CustomClearTimeout = {
+    inline def apply(): CustomClearTimeout = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CustomClearTimeout]
     }
     
-    @scala.inline
-    implicit class CustomClearTimeoutMutableBuilder[Self <: CustomClearTimeout] (val x: Self) extends AnyVal {
+    extension [Self <: CustomClearTimeout](x: Self) {
       
-      @scala.inline
-      def setCustomClearTimeout(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "customClearTimeout", js.Any.fromFunction1(value))
+      inline def setCustomClearTimeout(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "customClearTimeout", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCustomClearTimeoutUndefined: Self = StObject.set(x, "customClearTimeout", js.undefined)
+      inline def setCustomClearTimeoutUndefined: Self = StObject.set(x, "customClearTimeout", js.undefined)
     }
   }
 }

@@ -31,14 +31,10 @@ object validateMod {
     ) = this()
   }
   
-  @scala.inline
-  def validate(schema: Schema, options: js.Array[js.Object]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def validate(schema: Schema, options: js.Array[js.Object], configuration: ValidationErrorConfiguration): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def validate(schema: Schema, options: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def validate(schema: Schema, options: js.Object, configuration: ValidationErrorConfiguration): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def validate(schema: Schema, options: js.Array[js.Object]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def validate(schema: Schema, options: js.Array[js.Object], configuration: ValidationErrorConfiguration): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def validate(schema: Schema, options: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def validate(schema: Schema, options: js.Object, configuration: ValidationErrorConfiguration): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type ErrorObject = typings.ajv.mod.ErrorObject
   
@@ -54,38 +50,28 @@ object validateMod {
   }
   object Extend {
     
-    @scala.inline
-    def apply(): Extend = {
+    inline def apply(): Extend = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Extend]
     }
     
-    @scala.inline
-    implicit class ExtendMutableBuilder[Self <: Extend] (val x: Self) extends AnyVal {
+    extension [Self <: Extend](x: Self) {
       
-      @scala.inline
-      def setFormatExclusiveMaximum(value: Boolean): Self = StObject.set(x, "formatExclusiveMaximum", value.asInstanceOf[js.Any])
+      inline def setFormatExclusiveMaximum(value: Boolean): Self = StObject.set(x, "formatExclusiveMaximum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatExclusiveMaximumUndefined: Self = StObject.set(x, "formatExclusiveMaximum", js.undefined)
+      inline def setFormatExclusiveMaximumUndefined: Self = StObject.set(x, "formatExclusiveMaximum", js.undefined)
       
-      @scala.inline
-      def setFormatExclusiveMinimum(value: Boolean): Self = StObject.set(x, "formatExclusiveMinimum", value.asInstanceOf[js.Any])
+      inline def setFormatExclusiveMinimum(value: Boolean): Self = StObject.set(x, "formatExclusiveMinimum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatExclusiveMinimumUndefined: Self = StObject.set(x, "formatExclusiveMinimum", js.undefined)
+      inline def setFormatExclusiveMinimumUndefined: Self = StObject.set(x, "formatExclusiveMinimum", js.undefined)
       
-      @scala.inline
-      def setFormatMaximum(value: Double): Self = StObject.set(x, "formatMaximum", value.asInstanceOf[js.Any])
+      inline def setFormatMaximum(value: Double): Self = StObject.set(x, "formatMaximum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatMaximumUndefined: Self = StObject.set(x, "formatMaximum", js.undefined)
+      inline def setFormatMaximumUndefined: Self = StObject.set(x, "formatMaximum", js.undefined)
       
-      @scala.inline
-      def setFormatMinimum(value: Double): Self = StObject.set(x, "formatMinimum", value.asInstanceOf[js.Any])
+      inline def setFormatMinimum(value: Double): Self = StObject.set(x, "formatMinimum", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatMinimumUndefined: Self = StObject.set(x, "formatMinimum", js.undefined)
+      inline def setFormatMinimumUndefined: Self = StObject.set(x, "formatMinimum", js.undefined)
     }
   }
   
@@ -107,23 +93,18 @@ object validateMod {
   }
   object SchemaUtilErrorObject {
     
-    @scala.inline
-    def apply(dataPath: String, keyword: String, params: ErrorParameters, schemaPath: String): SchemaUtilErrorObject = {
+    inline def apply(dataPath: String, keyword: String, params: ErrorParameters, schemaPath: String): SchemaUtilErrorObject = {
       val __obj = js.Dynamic.literal(dataPath = dataPath.asInstanceOf[js.Any], keyword = keyword.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], schemaPath = schemaPath.asInstanceOf[js.Any])
       __obj.asInstanceOf[SchemaUtilErrorObject]
     }
     
-    @scala.inline
-    implicit class SchemaUtilErrorObjectMutableBuilder[Self <: SchemaUtilErrorObject] (val x: Self) extends AnyVal {
+    extension [Self <: SchemaUtilErrorObject](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[typings.ajv.mod.ErrorObject]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[typings.ajv.mod.ErrorObject]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: typings.ajv.mod.ErrorObject*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: typings.ajv.mod.ErrorObject*): Self = StObject.set(x, "children", js.Array(value :_*))
     }
   }
   
@@ -137,32 +118,24 @@ object validateMod {
   }
   object ValidationErrorConfiguration {
     
-    @scala.inline
-    def apply(): ValidationErrorConfiguration = {
+    inline def apply(): ValidationErrorConfiguration = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ValidationErrorConfiguration]
     }
     
-    @scala.inline
-    implicit class ValidationErrorConfigurationMutableBuilder[Self <: ValidationErrorConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: ValidationErrorConfiguration](x: Self) {
       
-      @scala.inline
-      def setBaseDataPath(value: String): Self = StObject.set(x, "baseDataPath", value.asInstanceOf[js.Any])
+      inline def setBaseDataPath(value: String): Self = StObject.set(x, "baseDataPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseDataPathUndefined: Self = StObject.set(x, "baseDataPath", js.undefined)
+      inline def setBaseDataPathUndefined: Self = StObject.set(x, "baseDataPath", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPostFormatter(value: (/* formattedError */ String, /* error */ SchemaUtilErrorObject) => String): Self = StObject.set(x, "postFormatter", js.Any.fromFunction2(value))
+      inline def setPostFormatter(value: (/* formattedError */ String, /* error */ SchemaUtilErrorObject) => String): Self = StObject.set(x, "postFormatter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPostFormatterUndefined: Self = StObject.set(x, "postFormatter", js.undefined)
+      inline def setPostFormatterUndefined: Self = StObject.set(x, "postFormatter", js.undefined)
     }
   }
 }

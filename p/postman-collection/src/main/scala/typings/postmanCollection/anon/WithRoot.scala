@@ -10,16 +10,13 @@ trait WithRoot extends StObject {
 }
 object WithRoot {
   
-  @scala.inline
-  def apply(withRoot: Boolean): WithRoot = {
+  inline def apply(withRoot: Boolean): WithRoot = {
     val __obj = js.Dynamic.literal(withRoot = withRoot.asInstanceOf[js.Any])
     __obj.asInstanceOf[WithRoot]
   }
   
-  @scala.inline
-  implicit class WithRootMutableBuilder[Self <: WithRoot] (val x: Self) extends AnyVal {
+  extension [Self <: WithRoot](x: Self) {
     
-    @scala.inline
-    def setWithRoot(value: Boolean): Self = StObject.set(x, "withRoot", value.asInstanceOf[js.Any])
+    inline def setWithRoot(value: Boolean): Self = StObject.set(x, "withRoot", value.asInstanceOf[js.Any])
   }
 }

@@ -11,16 +11,13 @@ trait PickImplhover extends StObject {
 }
 object PickImplhover {
   
-  @scala.inline
-  def apply(hover: String): PickImplhover = {
+  inline def apply(hover: String): PickImplhover = {
     val __obj = js.Dynamic.literal(hover = hover.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplhover]
   }
   
-  @scala.inline
-  implicit class PickImplhoverMutableBuilder[Self <: PickImplhover] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplhover](x: Self) {
     
-    @scala.inline
-    def setHover(value: String): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
+    inline def setHover(value: String): Self = StObject.set(x, "hover", value.asInstanceOf[js.Any])
   }
 }

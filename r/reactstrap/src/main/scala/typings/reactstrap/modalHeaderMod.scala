@@ -37,38 +37,28 @@ object modalHeaderMod {
   }
   object ModalHeaderProps {
     
-    @scala.inline
-    def apply(): ModalHeaderProps = {
+    inline def apply(): ModalHeaderProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ModalHeaderProps]
     }
     
-    @scala.inline
-    implicit class ModalHeaderPropsMutableBuilder[Self <: ModalHeaderProps] (val x: Self) extends AnyVal {
+    extension [Self <: ModalHeaderProps](x: Self) {
       
-      @scala.inline
-      def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
+      inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
+      inline def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
       
-      @scala.inline
-      def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
       
-      @scala.inline
-      def setToggle(value: MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
+      inline def setToggle(value: MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
+      inline def setToggleUndefined: Self = StObject.set(x, "toggle", js.undefined)
       
-      @scala.inline
-      def setWrapTag(value: ElementType[js.Any]): Self = StObject.set(x, "wrapTag", value.asInstanceOf[js.Any])
+      inline def setWrapTag(value: ElementType[js.Any]): Self = StObject.set(x, "wrapTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapTagUndefined: Self = StObject.set(x, "wrapTag", js.undefined)
+      inline def setWrapTagUndefined: Self = StObject.set(x, "wrapTag", js.undefined)
     }
   }
 }

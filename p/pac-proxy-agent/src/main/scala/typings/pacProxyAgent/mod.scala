@@ -11,12 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(opts: PacProxyAgentOptions): default = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[default]
-  @scala.inline
-  def apply(uri: String): default = ^.asInstanceOf[js.Dynamic].apply(uri.asInstanceOf[js.Any]).asInstanceOf[default]
-  @scala.inline
-  def apply(uri: String, opts: PacProxyAgentOptions): default = (^.asInstanceOf[js.Dynamic].apply(uri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[default]
+  inline def apply(opts: PacProxyAgentOptions): default = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[default]
+  inline def apply(uri: String): default = ^.asInstanceOf[js.Dynamic].apply(uri.asInstanceOf[js.Any]).asInstanceOf[default]
+  inline def apply(uri: String, opts: PacProxyAgentOptions): default = (^.asInstanceOf[js.Dynamic].apply(uri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[default]
   
   @JSImport("pac-proxy-agent", JSImport.Namespace)
   @js.native
@@ -61,32 +58,24 @@ object mod {
   }
   object PacProxyAgentOptions {
     
-    @scala.inline
-    def apply(): PacProxyAgentOptions = {
+    inline def apply(): PacProxyAgentOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PacProxyAgentOptions]
     }
     
-    @scala.inline
-    implicit class PacProxyAgentOptionsMutableBuilder[Self <: PacProxyAgentOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PacProxyAgentOptions](x: Self) {
       
-      @scala.inline
-      def setFallbackToDirect(value: Boolean): Self = StObject.set(x, "fallbackToDirect", value.asInstanceOf[js.Any])
+      inline def setFallbackToDirect(value: Boolean): Self = StObject.set(x, "fallbackToDirect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackToDirectUndefined: Self = StObject.set(x, "fallbackToDirect", js.undefined)
+      inline def setFallbackToDirectUndefined: Self = StObject.set(x, "fallbackToDirect", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+      inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
     }
   }
 }

@@ -13,22 +13,17 @@ trait WindowsDeviceAzureADAccount
 }
 object WindowsDeviceAzureADAccount {
   
-  @scala.inline
-  def apply(): WindowsDeviceAzureADAccount = {
+  inline def apply(): WindowsDeviceAzureADAccount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WindowsDeviceAzureADAccount]
   }
   
-  @scala.inline
-  implicit class WindowsDeviceAzureADAccountMutableBuilder[Self <: WindowsDeviceAzureADAccount] (val x: Self) extends AnyVal {
+  extension [Self <: WindowsDeviceAzureADAccount](x: Self) {
     
-    @scala.inline
-    def setUserPrincipalName(value: NullableOption[String]): Self = StObject.set(x, "userPrincipalName", value.asInstanceOf[js.Any])
+    inline def setUserPrincipalName(value: NullableOption[String]): Self = StObject.set(x, "userPrincipalName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPrincipalNameNull: Self = StObject.set(x, "userPrincipalName", null)
+    inline def setUserPrincipalNameNull: Self = StObject.set(x, "userPrincipalName", null)
     
-    @scala.inline
-    def setUserPrincipalNameUndefined: Self = StObject.set(x, "userPrincipalName", js.undefined)
+    inline def setUserPrincipalNameUndefined: Self = StObject.set(x, "userPrincipalName", js.undefined)
   }
 }

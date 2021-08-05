@@ -55,20 +55,16 @@ object enterprise {
     }
     object Token {
       
-      @scala.inline
-      def apply(id: String, subtleCrypto: SubtleCrypto): Token = {
+      inline def apply(id: String, subtleCrypto: SubtleCrypto): Token = {
         val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], subtleCrypto = subtleCrypto.asInstanceOf[js.Any])
         __obj.asInstanceOf[Token]
       }
       
-      @scala.inline
-      implicit class TokenMutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
+      extension [Self <: Token](x: Self) {
         
-        @scala.inline
-        def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+        inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSubtleCrypto(value: SubtleCrypto): Self = StObject.set(x, "subtleCrypto", value.asInstanceOf[js.Any])
+        inline def setSubtleCrypto(value: SubtleCrypto): Self = StObject.set(x, "subtleCrypto", value.asInstanceOf[js.Any])
       }
     }
   }

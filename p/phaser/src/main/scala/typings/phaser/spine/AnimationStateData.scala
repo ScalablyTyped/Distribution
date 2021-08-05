@@ -20,8 +20,7 @@ trait AnimationStateData extends StObject {
 }
 object AnimationStateData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     animationToMixTime: Map[Double],
     defaultMix: Double,
     getMix: (Animation, Animation) => Double,
@@ -33,25 +32,18 @@ object AnimationStateData {
     __obj.asInstanceOf[AnimationStateData]
   }
   
-  @scala.inline
-  implicit class AnimationStateDataMutableBuilder[Self <: AnimationStateData] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationStateData](x: Self) {
     
-    @scala.inline
-    def setAnimationToMixTime(value: Map[Double]): Self = StObject.set(x, "animationToMixTime", value.asInstanceOf[js.Any])
+    inline def setAnimationToMixTime(value: Map[Double]): Self = StObject.set(x, "animationToMixTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultMix(value: Double): Self = StObject.set(x, "defaultMix", value.asInstanceOf[js.Any])
+    inline def setDefaultMix(value: Double): Self = StObject.set(x, "defaultMix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetMix(value: (Animation, Animation) => Double): Self = StObject.set(x, "getMix", js.Any.fromFunction2(value))
+    inline def setGetMix(value: (Animation, Animation) => Double): Self = StObject.set(x, "getMix", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetMix(value: (String, String, Double) => Unit): Self = StObject.set(x, "setMix", js.Any.fromFunction3(value))
+    inline def setSetMix(value: (String, String, Double) => Unit): Self = StObject.set(x, "setMix", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetMixWith(value: (Animation, Animation, Double) => Unit): Self = StObject.set(x, "setMixWith", js.Any.fromFunction3(value))
+    inline def setSetMixWith(value: (Animation, Animation, Double) => Unit): Self = StObject.set(x, "setMixWith", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSkeletonData(value: SkeletonData): Self = StObject.set(x, "skeletonData", value.asInstanceOf[js.Any])
+    inline def setSkeletonData(value: SkeletonData): Self = StObject.set(x, "skeletonData", value.asInstanceOf[js.Any])
   }
 }

@@ -18,8 +18,7 @@ trait MinuteStep extends StObject {
 }
 object MinuteStep {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     minuteStep: Double,
     mode: String,
     styles: StringDictionary[RegisteredStyle[js.Any]],
@@ -29,19 +28,14 @@ object MinuteStep {
     __obj.asInstanceOf[MinuteStep]
   }
   
-  @scala.inline
-  implicit class MinuteStepMutableBuilder[Self <: MinuteStep] (val x: Self) extends AnyVal {
+  extension [Self <: MinuteStep](x: Self) {
     
-    @scala.inline
-    def setMinuteStep(value: Double): Self = StObject.set(x, "minuteStep", value.asInstanceOf[js.Any])
+    inline def setMinuteStep(value: Double): Self = StObject.set(x, "minuteStep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyles(value: StringDictionary[RegisteredStyle[js.Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: StringDictionary[RegisteredStyle[js.Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerType(value: String): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
+    inline def setTriggerType(value: String): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
   }
 }

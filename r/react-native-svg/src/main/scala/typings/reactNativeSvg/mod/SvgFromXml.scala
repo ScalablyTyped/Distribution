@@ -17,6 +17,5 @@ class SvgFromXml protected ()
 }
 object SvgFromXml {
   
-  @scala.inline
-  def apply: ComponentClass[XmlProps, XmlState] = ^.asInstanceOf[js.Dynamic].selectDynamic("SvgFromXml").asInstanceOf[ComponentClass[XmlProps, XmlState]]
+  inline def apply: ComponentClass[XmlProps, XmlState] = ^.asInstanceOf[js.Dynamic].selectDynamic("SvgFromXml").asInstanceOf[ComponentClass[XmlProps, XmlState]]
 }

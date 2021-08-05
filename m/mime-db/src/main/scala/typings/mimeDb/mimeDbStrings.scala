@@ -11,20 +11,17 @@ object mimeDbStrings {
   sealed trait apache
     extends StObject
        with MimeSource
-  @scala.inline
-  def apache: apache = "apache".asInstanceOf[apache]
+  inline def apache: apache = "apache".asInstanceOf[apache]
   
   @js.native
   sealed trait iana
     extends StObject
        with MimeSource
-  @scala.inline
-  def iana: iana = "iana".asInstanceOf[iana]
+  inline def iana: iana = "iana".asInstanceOf[iana]
   
   @js.native
   sealed trait nginx
     extends StObject
        with MimeSource
-  @scala.inline
-  def nginx: nginx = "nginx".asInstanceOf[nginx]
+  inline def nginx: nginx = "nginx".asInstanceOf[nginx]
 }

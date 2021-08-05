@@ -24,20 +24,16 @@ object oauthconfigMod {
   }
   object CredentialsClientConfig {
     
-    @scala.inline
-    def apply(clientId: String, clientSecret: String): CredentialsClientConfig = {
+    inline def apply(clientId: String, clientSecret: String): CredentialsClientConfig = {
       val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any])
       __obj.asInstanceOf[CredentialsClientConfig]
     }
     
-    @scala.inline
-    implicit class CredentialsClientConfigMutableBuilder[Self <: CredentialsClientConfig] (val x: Self) extends AnyVal {
+    extension [Self <: CredentialsClientConfig](x: Self) {
       
-      @scala.inline
-      def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+      inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
+      inline def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
     }
   }
   
@@ -48,14 +44,12 @@ object oauthconfigMod {
   trait CredentialsConfig extends StObject
   object CredentialsConfig {
     
-    @scala.inline
-    def CredentialsClientConfig(clientId: String, clientSecret: String): typings.authmosphere.oauthconfigMod.CredentialsClientConfig = {
+    inline def CredentialsClientConfig(clientId: String, clientSecret: String): typings.authmosphere.oauthconfigMod.CredentialsClientConfig = {
       val __obj = js.Dynamic.literal(clientId = clientId.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.authmosphere.oauthconfigMod.CredentialsClientConfig]
     }
     
-    @scala.inline
-    def CredentialsDirConfig(credentialsDir: String): typings.authmosphere.oauthconfigMod.CredentialsDirConfig = {
+    inline def CredentialsDirConfig(credentialsDir: String): typings.authmosphere.oauthconfigMod.CredentialsDirConfig = {
       val __obj = js.Dynamic.literal(credentialsDir = credentialsDir.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.authmosphere.oauthconfigMod.CredentialsDirConfig]
     }
@@ -70,17 +64,14 @@ object oauthconfigMod {
   }
   object CredentialsDirConfig {
     
-    @scala.inline
-    def apply(credentialsDir: String): CredentialsDirConfig = {
+    inline def apply(credentialsDir: String): CredentialsDirConfig = {
       val __obj = js.Dynamic.literal(credentialsDir = credentialsDir.asInstanceOf[js.Any])
       __obj.asInstanceOf[CredentialsDirConfig]
     }
     
-    @scala.inline
-    implicit class CredentialsDirConfigMutableBuilder[Self <: CredentialsDirConfig] (val x: Self) extends AnyVal {
+    extension [Self <: CredentialsDirConfig](x: Self) {
       
-      @scala.inline
-      def setCredentialsDir(value: String): Self = StObject.set(x, "credentialsDir", value.asInstanceOf[js.Any])
+      inline def setCredentialsDir(value: String): Self = StObject.set(x, "credentialsDir", value.asInstanceOf[js.Any])
     }
   }
   
@@ -91,14 +82,12 @@ object oauthconfigMod {
   trait CredentialsPasswordConfig extends StObject
   object CredentialsPasswordConfig {
     
-    @scala.inline
-    def CredentialsDirConfig(credentialsDir: String): typings.authmosphere.oauthconfigMod.CredentialsDirConfig = {
+    inline def CredentialsDirConfig(credentialsDir: String): typings.authmosphere.oauthconfigMod.CredentialsDirConfig = {
       val __obj = js.Dynamic.literal(credentialsDir = credentialsDir.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.authmosphere.oauthconfigMod.CredentialsDirConfig]
     }
     
-    @scala.inline
-    def CredentialsUserClientConfig(applicationPassword: String, applicationUsername: String, clientId: String, clientSecret: String): typings.authmosphere.oauthconfigMod.CredentialsUserClientConfig = {
+    inline def CredentialsUserClientConfig(applicationPassword: String, applicationUsername: String, clientId: String, clientSecret: String): typings.authmosphere.oauthconfigMod.CredentialsUserClientConfig = {
       val __obj = js.Dynamic.literal(applicationPassword = applicationPassword.asInstanceOf[js.Any], applicationUsername = applicationUsername.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.authmosphere.oauthconfigMod.CredentialsUserClientConfig]
     }
@@ -111,8 +100,7 @@ object oauthconfigMod {
        with CredentialsPasswordConfig
   object CredentialsUserClientConfig {
     
-    @scala.inline
-    def apply(applicationPassword: String, applicationUsername: String, clientId: String, clientSecret: String): CredentialsUserClientConfig = {
+    inline def apply(applicationPassword: String, applicationUsername: String, clientId: String, clientSecret: String): CredentialsUserClientConfig = {
       val __obj = js.Dynamic.literal(applicationPassword = applicationPassword.asInstanceOf[js.Any], applicationUsername = applicationUsername.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any])
       __obj.asInstanceOf[CredentialsUserClientConfig]
     }
@@ -126,20 +114,16 @@ object oauthconfigMod {
   }
   object CredentialsUserConfig {
     
-    @scala.inline
-    def apply(applicationPassword: String, applicationUsername: String): CredentialsUserConfig = {
+    inline def apply(applicationPassword: String, applicationUsername: String): CredentialsUserConfig = {
       val __obj = js.Dynamic.literal(applicationPassword = applicationPassword.asInstanceOf[js.Any], applicationUsername = applicationUsername.asInstanceOf[js.Any])
       __obj.asInstanceOf[CredentialsUserConfig]
     }
     
-    @scala.inline
-    implicit class CredentialsUserConfigMutableBuilder[Self <: CredentialsUserConfig] (val x: Self) extends AnyVal {
+    extension [Self <: CredentialsUserConfig](x: Self) {
       
-      @scala.inline
-      def setApplicationPassword(value: String): Self = StObject.set(x, "applicationPassword", value.asInstanceOf[js.Any])
+      inline def setApplicationPassword(value: String): Self = StObject.set(x, "applicationPassword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationUsername(value: String): Self = StObject.set(x, "applicationUsername", value.asInstanceOf[js.Any])
+      inline def setApplicationUsername(value: String): Self = StObject.set(x, "applicationUsername", value.asInstanceOf[js.Any])
     }
   }
   
@@ -157,41 +141,30 @@ object oauthconfigMod {
   }
   object GrantConfigBase {
     
-    @scala.inline
-    def apply(accessTokenEndpoint: String, grantType: String): GrantConfigBase = {
+    inline def apply(accessTokenEndpoint: String, grantType: String): GrantConfigBase = {
       val __obj = js.Dynamic.literal(accessTokenEndpoint = accessTokenEndpoint.asInstanceOf[js.Any], grantType = grantType.asInstanceOf[js.Any])
       __obj.asInstanceOf[GrantConfigBase]
     }
     
-    @scala.inline
-    implicit class GrantConfigBaseMutableBuilder[Self <: GrantConfigBase] (val x: Self) extends AnyVal {
+    extension [Self <: GrantConfigBase](x: Self) {
       
-      @scala.inline
-      def setAccessTokenEndpoint(value: String): Self = StObject.set(x, "accessTokenEndpoint", value.asInstanceOf[js.Any])
+      inline def setAccessTokenEndpoint(value: String): Self = StObject.set(x, "accessTokenEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyParams(value: StringDictionary[String]): Self = StObject.set(x, "bodyParams", value.asInstanceOf[js.Any])
+      inline def setBodyParams(value: StringDictionary[String]): Self = StObject.set(x, "bodyParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyParamsUndefined: Self = StObject.set(x, "bodyParams", js.undefined)
+      inline def setBodyParamsUndefined: Self = StObject.set(x, "bodyParams", js.undefined)
       
-      @scala.inline
-      def setGrantType(value: String): Self = StObject.set(x, "grantType", value.asInstanceOf[js.Any])
+      inline def setGrantType(value: String): Self = StObject.set(x, "grantType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryParams(value: StringDictionary[String]): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
+      inline def setQueryParams(value: StringDictionary[String]): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
+      inline def setQueryParamsUndefined: Self = StObject.set(x, "queryParams", js.undefined)
       
-      @scala.inline
-      def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+      inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
+      inline def setScopesUndefined: Self = StObject.set(x, "scopes", js.undefined)
       
-      @scala.inline
-      def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+      inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
     }
   }
   

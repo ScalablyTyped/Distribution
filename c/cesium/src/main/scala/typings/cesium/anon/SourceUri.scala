@@ -10,19 +10,15 @@ trait SourceUri extends StObject {
 }
 object SourceUri {
   
-  @scala.inline
-  def apply(): SourceUri = {
+  inline def apply(): SourceUri = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceUri]
   }
   
-  @scala.inline
-  implicit class SourceUriMutableBuilder[Self <: SourceUri] (val x: Self) extends AnyVal {
+  extension [Self <: SourceUri](x: Self) {
     
-    @scala.inline
-    def setSourceUri(value: String): Self = StObject.set(x, "sourceUri", value.asInstanceOf[js.Any])
+    inline def setSourceUri(value: String): Self = StObject.set(x, "sourceUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUriUndefined: Self = StObject.set(x, "sourceUri", js.undefined)
+    inline def setSourceUriUndefined: Self = StObject.set(x, "sourceUri", js.undefined)
   }
 }

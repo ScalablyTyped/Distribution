@@ -61,26 +61,20 @@ object fsa {
   }
   object CirculoidSelectors {
     
-    @scala.inline
-    def apply(): CirculoidSelectors = {
+    inline def apply(): CirculoidSelectors = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CirculoidSelectors]
     }
     
-    @scala.inline
-    implicit class CirculoidSelectorsMutableBuilder[Self <: CirculoidSelectors] (val x: Self) extends AnyVal {
+    extension [Self <: CirculoidSelectors](x: Self) {
       
-      @scala.inline
-      def setDotinner(value: SVGCircleAttributes): Self = StObject.set(x, ".inner", value.asInstanceOf[js.Any])
+      inline def setDotinner(value: SVGCircleAttributes): Self = StObject.set(x, ".inner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotinnerUndefined: Self = StObject.set(x, ".inner", js.undefined)
+      inline def setDotinnerUndefined: Self = StObject.set(x, ".inner", js.undefined)
       
-      @scala.inline
-      def setDotouter(value: SVGCircleAttributes): Self = StObject.set(x, ".outer", value.asInstanceOf[js.Any])
+      inline def setDotouter(value: SVGCircleAttributes): Self = StObject.set(x, ".outer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDotouterUndefined: Self = StObject.set(x, ".outer", js.undefined)
+      inline def setDotouterUndefined: Self = StObject.set(x, ".outer", js.undefined)
     }
   }
 }

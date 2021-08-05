@@ -21,43 +21,31 @@ trait MKRangeSliderProperties
 }
 object MKRangeSliderProperties {
   
-  @scala.inline
-  def apply(): MKRangeSliderProperties = {
+  inline def apply(): MKRangeSliderProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MKRangeSliderProperties]
   }
   
-  @scala.inline
-  implicit class MKRangeSliderPropertiesMutableBuilder[Self <: MKRangeSliderProperties] (val x: Self) extends AnyVal {
+  extension [Self <: MKRangeSliderProperties](x: Self) {
     
-    @scala.inline
-    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+    inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     
-    @scala.inline
-    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
+    inline def setMinValueUndefined: Self = StObject.set(x, "minValue", js.undefined)
     
-    @scala.inline
-    def setOnChange(value: /* curValue */ Max => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: /* curValue */ Max => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    @scala.inline
-    def setOnConfirm(value: /* curValue */ Max => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction1(value))
+    inline def setOnConfirm(value: /* curValue */ Max => Unit): Self = StObject.set(x, "onConfirm", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnConfirmUndefined: Self = StObject.set(x, "onConfirm", js.undefined)
+    inline def setOnConfirmUndefined: Self = StObject.set(x, "onConfirm", js.undefined)
     
-    @scala.inline
-    def setOnStart(value: () => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction0(value))
+    inline def setOnStart(value: () => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
+    inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
   }
 }

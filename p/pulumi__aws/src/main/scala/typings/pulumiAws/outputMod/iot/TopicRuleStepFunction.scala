@@ -23,25 +23,19 @@ trait TopicRuleStepFunction extends StObject {
 }
 object TopicRuleStepFunction {
   
-  @scala.inline
-  def apply(roleArn: String, stateMachineName: String): TopicRuleStepFunction = {
+  inline def apply(roleArn: String, stateMachineName: String): TopicRuleStepFunction = {
     val __obj = js.Dynamic.literal(roleArn = roleArn.asInstanceOf[js.Any], stateMachineName = stateMachineName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopicRuleStepFunction]
   }
   
-  @scala.inline
-  implicit class TopicRuleStepFunctionMutableBuilder[Self <: TopicRuleStepFunction] (val x: Self) extends AnyVal {
+  extension [Self <: TopicRuleStepFunction](x: Self) {
     
-    @scala.inline
-    def setExecutionNamePrefix(value: String): Self = StObject.set(x, "executionNamePrefix", value.asInstanceOf[js.Any])
+    inline def setExecutionNamePrefix(value: String): Self = StObject.set(x, "executionNamePrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionNamePrefixUndefined: Self = StObject.set(x, "executionNamePrefix", js.undefined)
+    inline def setExecutionNamePrefixUndefined: Self = StObject.set(x, "executionNamePrefix", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateMachineName(value: String): Self = StObject.set(x, "stateMachineName", value.asInstanceOf[js.Any])
+    inline def setStateMachineName(value: String): Self = StObject.set(x, "stateMachineName", value.asInstanceOf[js.Any])
   }
 }

@@ -18,23 +18,18 @@ trait IdentityScale
 }
 object IdentityScale {
   
-  @scala.inline
-  def apply(name: String): IdentityScale = {
+  inline def apply(name: String): IdentityScale = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("identity")
     __obj.asInstanceOf[IdentityScale]
   }
   
-  @scala.inline
-  implicit class IdentityScaleMutableBuilder[Self <: IdentityScale] (val x: Self) extends AnyVal {
+  extension [Self <: IdentityScale](x: Self) {
     
-    @scala.inline
-    def setNice(value: Boolean | SignalRef): Self = StObject.set(x, "nice", value.asInstanceOf[js.Any])
+    inline def setNice(value: Boolean | SignalRef): Self = StObject.set(x, "nice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNiceUndefined: Self = StObject.set(x, "nice", js.undefined)
+    inline def setNiceUndefined: Self = StObject.set(x, "nice", js.undefined)
     
-    @scala.inline
-    def setType(value: identity): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: identity): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

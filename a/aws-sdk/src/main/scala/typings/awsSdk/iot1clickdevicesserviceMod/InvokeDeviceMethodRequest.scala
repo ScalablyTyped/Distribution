@@ -23,28 +23,21 @@ trait InvokeDeviceMethodRequest extends StObject {
 }
 object InvokeDeviceMethodRequest {
   
-  @scala.inline
-  def apply(DeviceId: string): InvokeDeviceMethodRequest = {
+  inline def apply(DeviceId: string): InvokeDeviceMethodRequest = {
     val __obj = js.Dynamic.literal(DeviceId = DeviceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[InvokeDeviceMethodRequest]
   }
   
-  @scala.inline
-  implicit class InvokeDeviceMethodRequestMutableBuilder[Self <: InvokeDeviceMethodRequest] (val x: Self) extends AnyVal {
+  extension [Self <: InvokeDeviceMethodRequest](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: string): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: string): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceMethod(value: DeviceMethod): Self = StObject.set(x, "DeviceMethod", value.asInstanceOf[js.Any])
+    inline def setDeviceMethod(value: DeviceMethod): Self = StObject.set(x, "DeviceMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceMethodParameters(value: string): Self = StObject.set(x, "DeviceMethodParameters", value.asInstanceOf[js.Any])
+    inline def setDeviceMethodParameters(value: string): Self = StObject.set(x, "DeviceMethodParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceMethodParametersUndefined: Self = StObject.set(x, "DeviceMethodParameters", js.undefined)
+    inline def setDeviceMethodParametersUndefined: Self = StObject.set(x, "DeviceMethodParameters", js.undefined)
     
-    @scala.inline
-    def setDeviceMethodUndefined: Self = StObject.set(x, "DeviceMethod", js.undefined)
+    inline def setDeviceMethodUndefined: Self = StObject.set(x, "DeviceMethod", js.undefined)
   }
 }

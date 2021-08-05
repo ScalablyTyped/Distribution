@@ -27,46 +27,33 @@ trait CloudFunctionConfiguration extends StObject {
 }
 object CloudFunctionConfiguration {
   
-  @scala.inline
-  def apply(): CloudFunctionConfiguration = {
+  inline def apply(): CloudFunctionConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CloudFunctionConfiguration]
   }
   
-  @scala.inline
-  implicit class CloudFunctionConfigurationMutableBuilder[Self <: CloudFunctionConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: CloudFunctionConfiguration](x: Self) {
     
-    @scala.inline
-    def setCloudFunction(value: CloudFunction): Self = StObject.set(x, "CloudFunction", value.asInstanceOf[js.Any])
+    inline def setCloudFunction(value: CloudFunction): Self = StObject.set(x, "CloudFunction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudFunctionUndefined: Self = StObject.set(x, "CloudFunction", js.undefined)
+    inline def setCloudFunctionUndefined: Self = StObject.set(x, "CloudFunction", js.undefined)
     
-    @scala.inline
-    def setEvent(value: Event): Self = StObject.set(x, "Event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: Event): Self = StObject.set(x, "Event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "Event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "Event", js.undefined)
     
-    @scala.inline
-    def setEvents(value: EventList): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: EventList): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "Events", js.undefined)
     
-    @scala.inline
-    def setEventsVarargs(value: Event*): Self = StObject.set(x, "Events", js.Array(value :_*))
+    inline def setEventsVarargs(value: Event*): Self = StObject.set(x, "Events", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: NotificationId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: NotificationId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setInvocationRole(value: CloudFunctionInvocationRole): Self = StObject.set(x, "InvocationRole", value.asInstanceOf[js.Any])
+    inline def setInvocationRole(value: CloudFunctionInvocationRole): Self = StObject.set(x, "InvocationRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvocationRoleUndefined: Self = StObject.set(x, "InvocationRole", js.undefined)
+    inline def setInvocationRoleUndefined: Self = StObject.set(x, "InvocationRole", js.undefined)
   }
 }

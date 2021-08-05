@@ -49,8 +49,7 @@ object Controls {
   }
   object Button {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createComponentForDisplayMode: String => js.Any,
       createComponentForDisplayModeInternal: String => js.Any,
       createDOMElementForDisplayMode: String => js.Any,
@@ -79,59 +78,41 @@ object Controls {
       __obj.asInstanceOf[Button]
     }
     
-    @scala.inline
-    implicit class ButtonMutableBuilder[Self <: Button] (val x: Self) extends AnyVal {
+    extension [Self <: Button](x: Self) {
       
-      @scala.inline
-      def setCreateComponentForDisplayModeInternal(value: String => js.Any): Self = StObject.set(x, "createComponentForDisplayModeInternal", js.Any.fromFunction1(value))
+      inline def setCreateComponentForDisplayModeInternal(value: String => js.Any): Self = StObject.set(x, "createComponentForDisplayModeInternal", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreateDOMElementForDisplayMode(value: String => js.Any): Self = StObject.set(x, "createDOMElementForDisplayMode", js.Any.fromFunction1(value))
+      inline def setCreateDOMElementForDisplayMode(value: String => js.Any): Self = StObject.set(x, "createDOMElementForDisplayMode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeselect(value: () => scala.Unit): Self = StObject.set(x, "deselect", js.Any.fromFunction0(value))
+      inline def setDeselect(value: () => scala.Unit): Self = StObject.set(x, "deselect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFocusOnDisplayedComponent(value: () => scala.Unit): Self = StObject.set(x, "focusOnDisplayedComponent", js.Any.fromFunction0(value))
+      inline def setFocusOnDisplayedComponent(value: () => scala.Unit): Self = StObject.set(x, "focusOnDisplayedComponent", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCommandValueId(value: () => String): Self = StObject.set(x, "getCommandValueId", js.Any.fromFunction0(value))
+      inline def setGetCommandValueId(value: () => String): Self = StObject.set(x, "getCommandValueId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDropDownDOMElementForDisplayMode(value: String => scala.Unit): Self = StObject.set(x, "getDropDownDOMElementForDisplayMode", js.Any.fromFunction1(value))
+      inline def setGetDropDownDOMElementForDisplayMode(value: String => scala.Unit): Self = StObject.set(x, "getDropDownDOMElementForDisplayMode", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetLabel(value: () => String): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
+      inline def setGetLabel(value: () => String): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMenuItemId(value: () => String): Self = StObject.set(x, "getMenuItemId", js.Any.fromFunction0(value))
+      inline def setGetMenuItemId(value: () => String): Self = StObject.set(x, "getMenuItemId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTextValue(value: () => String): Self = StObject.set(x, "getTextValue", js.Any.fromFunction0(value))
+      inline def setGetTextValue(value: () => String): Self = StObject.set(x, "getTextValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHandleMouseBlur(value: FocusEvent => js.Any): Self = StObject.set(x, "handleMouseBlur", js.Any.fromFunction1(value))
+      inline def setHandleMouseBlur(value: FocusEvent => js.Any): Self = StObject.set(x, "handleMouseBlur", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHandleMouseFocus(value: FocusEvent => js.Any): Self = StObject.set(x, "handleMouseFocus", js.Any.fromFunction1(value))
+      inline def setHandleMouseFocus(value: FocusEvent => js.Any): Self = StObject.set(x, "handleMouseFocus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHandleTabBlur(value: FocusEvent => js.Any): Self = StObject.set(x, "handleTabBlur", js.Any.fromFunction1(value))
+      inline def setHandleTabBlur(value: FocusEvent => js.Any): Self = StObject.set(x, "handleTabBlur", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHandleTabFocus(value: FocusEvent => js.Any): Self = StObject.set(x, "handleTabFocus", js.Any.fromFunction1(value))
+      inline def setHandleTabFocus(value: FocusEvent => js.Any): Self = StObject.set(x, "handleTabFocus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClick(value: Event => scala.Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: Event => scala.Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnEnabledChanged(value: Boolean => js.Any): Self = StObject.set(x, "onEnabledChanged", js.Any.fromFunction1(value))
+      inline def setOnEnabledChanged(value: Boolean => js.Any): Self = StObject.set(x, "onEnabledChanged", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMenuClosed(value: () => scala.Unit): Self = StObject.set(x, "onMenuClosed", js.Any.fromFunction0(value))
+      inline def setOnMenuClosed(value: () => scala.Unit): Self = StObject.set(x, "onMenuClosed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReceiveFocus(value: () => scala.Unit): Self = StObject.set(x, "receiveFocus", js.Any.fromFunction0(value))
+      inline def setReceiveFocus(value: () => scala.Unit): Self = StObject.set(x, "receiveFocus", js.Any.fromFunction0(value))
     }
   }
   
@@ -144,8 +125,7 @@ object Controls {
        with Control
   object ColorPicker {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createComponentForDisplayMode: String => js.Any,
       dispose: () => scala.Unit,
       get_enabled: () => Boolean,
@@ -174,20 +154,16 @@ object Controls {
   }
   object DropDownCommandProperties {
     
-    @scala.inline
-    def apply(SelectedItemId: String, Value: String): DropDownCommandProperties = {
+    inline def apply(SelectedItemId: String, Value: String): DropDownCommandProperties = {
       val __obj = js.Dynamic.literal(SelectedItemId = SelectedItemId.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
       __obj.asInstanceOf[DropDownCommandProperties]
     }
     
-    @scala.inline
-    implicit class DropDownCommandPropertiesMutableBuilder[Self <: DropDownCommandProperties] (val x: Self) extends AnyVal {
+    extension [Self <: DropDownCommandProperties](x: Self) {
       
-      @scala.inline
-      def setSelectedItemId(value: String): Self = StObject.set(x, "SelectedItemId", value.asInstanceOf[js.Any])
+      inline def setSelectedItemId(value: String): Self = StObject.set(x, "SelectedItemId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -199,8 +175,7 @@ object Controls {
        with ISelectableControl
   object GalleryButton {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createComponentForDisplayMode: String => js.Any,
       dispose: () => scala.Unit,
       get_enabled: () => Boolean,
@@ -245,8 +220,7 @@ object Controls {
        with ISelectableControl
   object ToggleButton {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createComponentForDisplayMode: String => js.Any,
       dispose: () => scala.Unit,
       get_enabled: () => Boolean,

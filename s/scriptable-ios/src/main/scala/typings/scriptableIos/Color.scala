@@ -45,28 +45,21 @@ trait Color extends StObject {
 }
 object Color {
   
-  @scala.inline
-  def apply(alpha: Double, blue: Double, green: Double, hex: String, red: Double): Color = {
+  inline def apply(alpha: Double, blue: Double, green: Double, hex: String, red: Double): Color = {
     val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any], blue = blue.asInstanceOf[js.Any], green = green.asInstanceOf[js.Any], hex = hex.asInstanceOf[js.Any], red = red.asInstanceOf[js.Any])
     __obj.asInstanceOf[Color]
   }
   
-  @scala.inline
-  implicit class ColorMutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
+  extension [Self <: Color](x: Self) {
     
-    @scala.inline
-    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlue(value: Double): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
+    inline def setBlue(value: Double): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGreen(value: Double): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
+    inline def setGreen(value: Double): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
+    inline def setHex(value: String): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRed(value: Double): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
+    inline def setRed(value: Double): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
   }
 }

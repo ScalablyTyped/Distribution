@@ -23,31 +23,23 @@ trait ListContributorInsightsInput extends StObject {
 }
 object ListContributorInsightsInput {
   
-  @scala.inline
-  def apply(): ListContributorInsightsInput = {
+  inline def apply(): ListContributorInsightsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListContributorInsightsInput]
   }
   
-  @scala.inline
-  implicit class ListContributorInsightsInputMutableBuilder[Self <: ListContributorInsightsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListContributorInsightsInput](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: ListContributorInsightsLimit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: ListContributorInsightsLimit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
+    inline def setTableNameUndefined: Self = StObject.set(x, "TableName", js.undefined)
   }
 }

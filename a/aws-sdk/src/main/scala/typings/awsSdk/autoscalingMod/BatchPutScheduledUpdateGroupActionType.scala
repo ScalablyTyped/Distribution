@@ -18,8 +18,7 @@ trait BatchPutScheduledUpdateGroupActionType extends StObject {
 }
 object BatchPutScheduledUpdateGroupActionType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AutoScalingGroupName: ResourceName,
     ScheduledUpdateGroupActions: ScheduledUpdateGroupActionRequests
   ): BatchPutScheduledUpdateGroupActionType = {
@@ -27,16 +26,12 @@ object BatchPutScheduledUpdateGroupActionType {
     __obj.asInstanceOf[BatchPutScheduledUpdateGroupActionType]
   }
   
-  @scala.inline
-  implicit class BatchPutScheduledUpdateGroupActionTypeMutableBuilder[Self <: BatchPutScheduledUpdateGroupActionType] (val x: Self) extends AnyVal {
+  extension [Self <: BatchPutScheduledUpdateGroupActionType](x: Self) {
     
-    @scala.inline
-    def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledUpdateGroupActions(value: ScheduledUpdateGroupActionRequests): Self = StObject.set(x, "ScheduledUpdateGroupActions", value.asInstanceOf[js.Any])
+    inline def setScheduledUpdateGroupActions(value: ScheduledUpdateGroupActionRequests): Self = StObject.set(x, "ScheduledUpdateGroupActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledUpdateGroupActionsVarargs(value: ScheduledUpdateGroupActionRequest*): Self = StObject.set(x, "ScheduledUpdateGroupActions", js.Array(value :_*))
+    inline def setScheduledUpdateGroupActionsVarargs(value: ScheduledUpdateGroupActionRequest*): Self = StObject.set(x, "ScheduledUpdateGroupActions", js.Array(value :_*))
   }
 }

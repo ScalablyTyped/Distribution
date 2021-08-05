@@ -38,49 +38,35 @@ trait CreateAcceleratorRequest extends StObject {
 }
 object CreateAcceleratorRequest {
   
-  @scala.inline
-  def apply(IdempotencyToken: IdempotencyToken, Name: GenericString): CreateAcceleratorRequest = {
+  inline def apply(IdempotencyToken: IdempotencyToken, Name: GenericString): CreateAcceleratorRequest = {
     val __obj = js.Dynamic.literal(IdempotencyToken = IdempotencyToken.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAcceleratorRequest]
   }
   
-  @scala.inline
-  implicit class CreateAcceleratorRequestMutableBuilder[Self <: CreateAcceleratorRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAcceleratorRequest](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: GenericBoolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: GenericBoolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "Enabled", js.undefined)
     
-    @scala.inline
-    def setIdempotencyToken(value: IdempotencyToken): Self = StObject.set(x, "IdempotencyToken", value.asInstanceOf[js.Any])
+    inline def setIdempotencyToken(value: IdempotencyToken): Self = StObject.set(x, "IdempotencyToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddressType(value: IpAddressType): Self = StObject.set(x, "IpAddressType", value.asInstanceOf[js.Any])
+    inline def setIpAddressType(value: IpAddressType): Self = StObject.set(x, "IpAddressType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddressTypeUndefined: Self = StObject.set(x, "IpAddressType", js.undefined)
+    inline def setIpAddressTypeUndefined: Self = StObject.set(x, "IpAddressType", js.undefined)
     
-    @scala.inline
-    def setIpAddresses(value: IpAddresses): Self = StObject.set(x, "IpAddresses", value.asInstanceOf[js.Any])
+    inline def setIpAddresses(value: IpAddresses): Self = StObject.set(x, "IpAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddressesUndefined: Self = StObject.set(x, "IpAddresses", js.undefined)
+    inline def setIpAddressesUndefined: Self = StObject.set(x, "IpAddresses", js.undefined)
     
-    @scala.inline
-    def setIpAddressesVarargs(value: IpAddress*): Self = StObject.set(x, "IpAddresses", js.Array(value :_*))
+    inline def setIpAddressesVarargs(value: IpAddress*): Self = StObject.set(x, "IpAddresses", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: GenericString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: GenericString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

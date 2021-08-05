@@ -13,8 +13,7 @@ object splitMessageMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def splitMessage(hasByteLengthByteOffsetBuffer: ArrayBufferView): MessageParts = ^.asInstanceOf[js.Dynamic].applyDynamic("splitMessage")(hasByteLengthByteOffsetBuffer.asInstanceOf[js.Any]).asInstanceOf[MessageParts]
+  inline def splitMessage(hasByteLengthByteOffsetBuffer: ArrayBufferView): MessageParts = ^.asInstanceOf[js.Dynamic].applyDynamic("splitMessage")(hasByteLengthByteOffsetBuffer.asInstanceOf[js.Any]).asInstanceOf[MessageParts]
   
   trait MessageParts extends StObject {
     
@@ -24,20 +23,16 @@ object splitMessageMod {
   }
   object MessageParts {
     
-    @scala.inline
-    def apply(body: Uint8Array, headers: DataView): MessageParts = {
+    inline def apply(body: Uint8Array, headers: DataView): MessageParts = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any])
       __obj.asInstanceOf[MessageParts]
     }
     
-    @scala.inline
-    implicit class MessagePartsMutableBuilder[Self <: MessageParts] (val x: Self) extends AnyVal {
+    extension [Self <: MessageParts](x: Self) {
       
-      @scala.inline
-      def setBody(value: Uint8Array): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: Uint8Array): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaders(value: DataView): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: DataView): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     }
   }
 }

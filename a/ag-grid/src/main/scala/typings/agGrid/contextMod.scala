@@ -15,13 +15,10 @@ object contextMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Autowired(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("Autowired")().asInstanceOf[js.Function]
-  @scala.inline
-  def Autowired(name: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("Autowired")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def Autowired(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("Autowired")().asInstanceOf[js.Function]
+  inline def Autowired(name: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("Autowired")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
-  @scala.inline
-  def Bean(beanName: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("Bean")(beanName.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def Bean(beanName: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("Bean")(beanName.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
   @JSImport("ag-grid/dist/lib/context/context", "Context")
   @js.native
@@ -34,11 +31,11 @@ object contextMod {
     
     /* private */ def autoWireBeans(beans: js.Any): js.Any = js.native
     
-    var beans: js.Any = js.native
+    /* private */ var beans: js.Any = js.native
     
-    var componentsMappedByName: js.Any = js.native
+    /* private */ var componentsMappedByName: js.Any = js.native
     
-    var contextParams: js.Any = js.native
+    /* private */ var contextParams: js.Any = js.native
     
     /* private */ def createBeanEntry(Bean: js.Any): js.Any = js.native
     
@@ -49,7 +46,7 @@ object contextMod {
     
     def destroy(): Unit = js.native
     
-    var destroyed: js.Any = js.native
+    /* private */ var destroyed: js.Any = js.native
     
     def getBean(name: String): js.Any = js.native
     
@@ -57,7 +54,7 @@ object contextMod {
     
     /* private */ def getBeansForParameters(parameters: js.Any, beanName: js.Any): js.Any = js.native
     
-    var logger: js.Any = js.native
+    /* private */ var logger: js.Any = js.native
     
     /* private */ def lookupBeanInstance(wiringBean: js.Any, beanName: js.Any, optional: js.Any): js.Any = js.native
     
@@ -77,22 +74,16 @@ object contextMod {
     /* private */ def wireBeans(beans: js.Any, afterPreCreateCallback: js.Any): js.Any = js.native
   }
   
-  @scala.inline
-  def Optional(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("Optional")().asInstanceOf[js.Function]
-  @scala.inline
-  def Optional(name: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("Optional")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def Optional(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("Optional")().asInstanceOf[js.Function]
+  inline def Optional(name: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("Optional")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
-  @scala.inline
-  def PostConstruct(target: js.Object, methodName: String, descriptor: TypedPropertyDescriptor[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PostConstruct")(target.asInstanceOf[js.Any], methodName.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PostConstruct(target: js.Object, methodName: String, descriptor: TypedPropertyDescriptor[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PostConstruct")(target.asInstanceOf[js.Any], methodName.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def PreConstruct(target: js.Object, methodName: String, descriptor: TypedPropertyDescriptor[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PreConstruct")(target.asInstanceOf[js.Any], methodName.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PreConstruct(target: js.Object, methodName: String, descriptor: TypedPropertyDescriptor[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PreConstruct")(target.asInstanceOf[js.Any], methodName.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def PreDestroy(target: js.Object, methodName: String, descriptor: TypedPropertyDescriptor[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PreDestroy")(target.asInstanceOf[js.Any], methodName.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def PreDestroy(target: js.Object, methodName: String, descriptor: TypedPropertyDescriptor[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PreDestroy")(target.asInstanceOf[js.Any], methodName.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def Qualifier(name: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("Qualifier")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  inline def Qualifier(name: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("Qualifier")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
   trait ComponentMeta extends StObject {
     
@@ -102,20 +93,16 @@ object contextMod {
   }
   object ComponentMeta {
     
-    @scala.inline
-    def apply(componentName: String, theClass: Instantiable0[js.Object]): ComponentMeta = {
+    inline def apply(componentName: String, theClass: Instantiable0[js.Object]): ComponentMeta = {
       val __obj = js.Dynamic.literal(componentName = componentName.asInstanceOf[js.Any], theClass = theClass.asInstanceOf[js.Any])
       __obj.asInstanceOf[ComponentMeta]
     }
     
-    @scala.inline
-    implicit class ComponentMetaMutableBuilder[Self <: ComponentMeta] (val x: Self) extends AnyVal {
+    extension [Self <: ComponentMeta](x: Self) {
       
-      @scala.inline
-      def setComponentName(value: String): Self = StObject.set(x, "componentName", value.asInstanceOf[js.Any])
+      inline def setComponentName(value: String): Self = StObject.set(x, "componentName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTheClass(value: Instantiable0[js.Object]): Self = StObject.set(x, "theClass", value.asInstanceOf[js.Any])
+      inline def setTheClass(value: Instantiable0[js.Object]): Self = StObject.set(x, "theClass", value.asInstanceOf[js.Any])
     }
   }
   
@@ -133,8 +120,7 @@ object contextMod {
   }
   object ContextParams {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       beans: js.Array[js.Any],
       components: js.Array[ComponentMeta],
       debug: Boolean,
@@ -145,32 +131,23 @@ object contextMod {
       __obj.asInstanceOf[ContextParams]
     }
     
-    @scala.inline
-    implicit class ContextParamsMutableBuilder[Self <: ContextParams] (val x: Self) extends AnyVal {
+    extension [Self <: ContextParams](x: Self) {
       
-      @scala.inline
-      def setBeans(value: js.Array[js.Any]): Self = StObject.set(x, "beans", value.asInstanceOf[js.Any])
+      inline def setBeans(value: js.Array[js.Any]): Self = StObject.set(x, "beans", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeansVarargs(value: js.Any*): Self = StObject.set(x, "beans", js.Array(value :_*))
+      inline def setBeansVarargs(value: js.Any*): Self = StObject.set(x, "beans", js.Array(value :_*))
       
-      @scala.inline
-      def setComponents(value: js.Array[ComponentMeta]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+      inline def setComponents(value: js.Array[ComponentMeta]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentsVarargs(value: ComponentMeta*): Self = StObject.set(x, "components", js.Array(value :_*))
+      inline def setComponentsVarargs(value: ComponentMeta*): Self = StObject.set(x, "components", js.Array(value :_*))
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverrideBeans(value: js.Array[js.Any]): Self = StObject.set(x, "overrideBeans", value.asInstanceOf[js.Any])
+      inline def setOverrideBeans(value: js.Array[js.Any]): Self = StObject.set(x, "overrideBeans", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverrideBeansVarargs(value: js.Any*): Self = StObject.set(x, "overrideBeans", js.Array(value :_*))
+      inline def setOverrideBeansVarargs(value: js.Any*): Self = StObject.set(x, "overrideBeans", js.Array(value :_*))
       
-      @scala.inline
-      def setSeed(value: js.Any): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+      inline def setSeed(value: js.Any): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -52,68 +52,48 @@ object anon {
   }
   object ActiveNav {
     
-    @scala.inline
-    def apply(): ActiveNav = {
+    inline def apply(): ActiveNav = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ActiveNav]
     }
     
-    @scala.inline
-    implicit class ActiveNavMutableBuilder[Self <: ActiveNav] (val x: Self) extends AnyVal {
+    extension [Self <: ActiveNav](x: Self) {
       
-      @scala.inline
-      def setActiveNav(value: String): Self = StObject.set(x, "activeNav", value.asInstanceOf[js.Any])
+      inline def setActiveNav(value: String): Self = StObject.set(x, "activeNav", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveNavUndefined: Self = StObject.set(x, "activeNav", js.undefined)
+      inline def setActiveNavUndefined: Self = StObject.set(x, "activeNav", js.undefined)
       
-      @scala.inline
-      def setActiveSlide(value: String): Self = StObject.set(x, "activeSlide", value.asInstanceOf[js.Any])
+      inline def setActiveSlide(value: String): Self = StObject.set(x, "activeSlide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveSlideUndefined: Self = StObject.set(x, "activeSlide", js.undefined)
+      inline def setActiveSlideUndefined: Self = StObject.set(x, "activeSlide", js.undefined)
       
-      @scala.inline
-      def setCarousel(value: String): Self = StObject.set(x, "carousel", value.asInstanceOf[js.Any])
+      inline def setCarousel(value: String): Self = StObject.set(x, "carousel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCarouselUndefined: Self = StObject.set(x, "carousel", js.undefined)
+      inline def setCarouselUndefined: Self = StObject.set(x, "carousel", js.undefined)
       
-      @scala.inline
-      def setCloneSlide(value: String): Self = StObject.set(x, "cloneSlide", value.asInstanceOf[js.Any])
+      inline def setCloneSlide(value: String): Self = StObject.set(x, "cloneSlide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloneSlideUndefined: Self = StObject.set(x, "cloneSlide", js.undefined)
+      inline def setCloneSlideUndefined: Self = StObject.set(x, "cloneSlide", js.undefined)
       
-      @scala.inline
-      def setDirection(value: Ltr): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: Ltr): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setDisabledArrow(value: String): Self = StObject.set(x, "disabledArrow", value.asInstanceOf[js.Any])
+      inline def setDisabledArrow(value: String): Self = StObject.set(x, "disabledArrow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledArrowUndefined: Self = StObject.set(x, "disabledArrow", js.undefined)
+      inline def setDisabledArrowUndefined: Self = StObject.set(x, "disabledArrow", js.undefined)
       
-      @scala.inline
-      def setDragging(value: String): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
+      inline def setDragging(value: String): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDraggingUndefined: Self = StObject.set(x, "dragging", js.undefined)
+      inline def setDraggingUndefined: Self = StObject.set(x, "dragging", js.undefined)
       
-      @scala.inline
-      def setSlider(value: String): Self = StObject.set(x, "slider", value.asInstanceOf[js.Any])
+      inline def setSlider(value: String): Self = StObject.set(x, "slider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSliderUndefined: Self = StObject.set(x, "slider", js.undefined)
+      inline def setSliderUndefined: Self = StObject.set(x, "slider", js.undefined)
       
-      @scala.inline
-      def setSwipeable(value: String): Self = StObject.set(x, "swipeable", value.asInstanceOf[js.Any])
+      inline def setSwipeable(value: String): Self = StObject.set(x, "swipeable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwipeableUndefined: Self = StObject.set(x, "swipeable", js.undefined)
+      inline def setSwipeableUndefined: Self = StObject.set(x, "swipeable", js.undefined)
     }
   }
   
@@ -125,26 +105,20 @@ object anon {
   }
   object After {
     
-    @scala.inline
-    def apply(): After = {
+    inline def apply(): After = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[After]
     }
     
-    @scala.inline
-    implicit class AfterMutableBuilder[Self <: After] (val x: Self) extends AnyVal {
+    extension [Self <: After](x: Self) {
       
-      @scala.inline
-      def setAfter(value: Double): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
+      inline def setAfter(value: Double): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
+      inline def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
       
-      @scala.inline
-      def setBefore(value: Double): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
+      inline def setBefore(value: Double): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+      inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
     }
   }
   
@@ -162,26 +136,20 @@ object anon {
   }
   object Ltr {
     
-    @scala.inline
-    def apply(): Ltr = {
+    inline def apply(): Ltr = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Ltr]
     }
     
-    @scala.inline
-    implicit class LtrMutableBuilder[Self <: Ltr] (val x: Self) extends AnyVal {
+    extension [Self <: Ltr](x: Self) {
       
-      @scala.inline
-      def setLtr(value: String): Self = StObject.set(x, "ltr", value.asInstanceOf[js.Any])
+      inline def setLtr(value: String): Self = StObject.set(x, "ltr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLtrUndefined: Self = StObject.set(x, "ltr", js.undefined)
+      inline def setLtrUndefined: Self = StObject.set(x, "ltr", js.undefined)
       
-      @scala.inline
-      def setRtl(value: String): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
+      inline def setRtl(value: String): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
+      inline def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
     }
   }
   
@@ -194,17 +162,14 @@ object anon {
   }
   object Modify {
     
-    @scala.inline
-    def apply(modify: Double => Double): Modify = {
+    inline def apply(modify: Double => Double): Modify = {
       val __obj = js.Dynamic.literal(modify = js.Any.fromFunction1(modify))
       __obj.asInstanceOf[Modify]
     }
     
-    @scala.inline
-    implicit class ModifyMutableBuilder[Self <: Modify] (val x: Self) extends AnyVal {
+    extension [Self <: Modify](x: Self) {
       
-      @scala.inline
-      def setModify(value: Double => Double): Self = StObject.set(x, "modify", js.Any.fromFunction1(value))
+      inline def setModify(value: Double => Double): Self = StObject.set(x, "modify", js.Any.fromFunction1(value))
     }
   }
   
@@ -214,17 +179,14 @@ object anon {
   }
   object Mount {
     
-    @scala.inline
-    def apply(mount: () => Unit): Mount = {
+    inline def apply(mount: () => Unit): Mount = {
       val __obj = js.Dynamic.literal(mount = js.Any.fromFunction0(mount))
       __obj.asInstanceOf[Mount]
     }
     
-    @scala.inline
-    implicit class MountMutableBuilder[Self <: Mount] (val x: Self) extends AnyVal {
+    extension [Self <: Mount](x: Self) {
       
-      @scala.inline
-      def setMount(value: () => Unit): Self = StObject.set(x, "mount", js.Any.fromFunction0(value))
+      inline def setMount(value: () => Unit): Self = StObject.set(x, "mount", js.Any.fromFunction0(value))
     }
   }
 }

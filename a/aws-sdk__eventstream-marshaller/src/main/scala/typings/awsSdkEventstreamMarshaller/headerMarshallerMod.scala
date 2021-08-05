@@ -18,12 +18,12 @@ object headerMarshallerMod {
     
     def format(headers: MessageHeaders): Uint8Array = js.native
     
-    var formatHeaderValue: js.Any = js.native
+    /* private */ var formatHeaderValue: js.Any = js.native
     
-    val fromUtf8: js.Any = js.native
+    /* private */ val fromUtf8: js.Any = js.native
     
     def parse(headers: DataView): MessageHeaders = js.native
     
-    val toUtf8: js.Any = js.native
+    /* private */ val toUtf8: js.Any = js.native
   }
 }

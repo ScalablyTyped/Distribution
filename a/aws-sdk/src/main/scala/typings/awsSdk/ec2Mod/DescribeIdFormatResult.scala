@@ -13,22 +13,17 @@ trait DescribeIdFormatResult extends StObject {
 }
 object DescribeIdFormatResult {
   
-  @scala.inline
-  def apply(): DescribeIdFormatResult = {
+  inline def apply(): DescribeIdFormatResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeIdFormatResult]
   }
   
-  @scala.inline
-  implicit class DescribeIdFormatResultMutableBuilder[Self <: DescribeIdFormatResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeIdFormatResult](x: Self) {
     
-    @scala.inline
-    def setStatuses(value: IdFormatList): Self = StObject.set(x, "Statuses", value.asInstanceOf[js.Any])
+    inline def setStatuses(value: IdFormatList): Self = StObject.set(x, "Statuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusesUndefined: Self = StObject.set(x, "Statuses", js.undefined)
+    inline def setStatusesUndefined: Self = StObject.set(x, "Statuses", js.undefined)
     
-    @scala.inline
-    def setStatusesVarargs(value: IdFormat*): Self = StObject.set(x, "Statuses", js.Array(value :_*))
+    inline def setStatusesVarargs(value: IdFormat*): Self = StObject.set(x, "Statuses", js.Array(value :_*))
   }
 }

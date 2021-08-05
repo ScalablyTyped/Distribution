@@ -10,16 +10,13 @@ trait GetSmsTemplateResponse extends StObject {
 }
 object GetSmsTemplateResponse {
   
-  @scala.inline
-  def apply(SMSTemplateResponse: SMSTemplateResponse): GetSmsTemplateResponse = {
+  inline def apply(SMSTemplateResponse: SMSTemplateResponse): GetSmsTemplateResponse = {
     val __obj = js.Dynamic.literal(SMSTemplateResponse = SMSTemplateResponse.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSmsTemplateResponse]
   }
   
-  @scala.inline
-  implicit class GetSmsTemplateResponseMutableBuilder[Self <: GetSmsTemplateResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetSmsTemplateResponse](x: Self) {
     
-    @scala.inline
-    def setSMSTemplateResponse(value: SMSTemplateResponse): Self = StObject.set(x, "SMSTemplateResponse", value.asInstanceOf[js.Any])
+    inline def setSMSTemplateResponse(value: SMSTemplateResponse): Self = StObject.set(x, "SMSTemplateResponse", value.asInstanceOf[js.Any])
   }
 }

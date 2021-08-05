@@ -92,21 +92,16 @@ object grantMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Grant = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Grant]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Grant = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Grant]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: GrantState): Grant = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Grant]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: GrantState, opts: CustomResourceOptions): Grant = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Grant]
+    inline def get(name: String, id: Input[ID]): Grant = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Grant]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Grant = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Grant]
+    inline def get(name: String, id: Input[ID], state: GrantState): Grant = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Grant]
+    inline def get(name: String, id: Input[ID], state: GrantState, opts: CustomResourceOptions): Grant = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Grant]
     
     /**
       * Returns true if the given object is an instance of Grant.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kms/grant.Grant */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/kms/grant.Grant */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kms/grant.Grant */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/kms/grant.Grant */ Boolean]
   }
   
   trait GrantArgs extends StObject {
@@ -154,62 +149,44 @@ object grantMod {
   }
   object GrantArgs {
     
-    @scala.inline
-    def apply(granteePrincipal: Input[String], keyId: Input[String], operations: Input[js.Array[Input[String]]]): GrantArgs = {
+    inline def apply(granteePrincipal: Input[String], keyId: Input[String], operations: Input[js.Array[Input[String]]]): GrantArgs = {
       val __obj = js.Dynamic.literal(granteePrincipal = granteePrincipal.asInstanceOf[js.Any], keyId = keyId.asInstanceOf[js.Any], operations = operations.asInstanceOf[js.Any])
       __obj.asInstanceOf[GrantArgs]
     }
     
-    @scala.inline
-    implicit class GrantArgsMutableBuilder[Self <: GrantArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GrantArgs](x: Self) {
       
-      @scala.inline
-      def setConstraints(value: Input[js.Array[Input[typings.pulumiAws.inputMod.kms.GrantConstraint]]]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
+      inline def setConstraints(value: Input[js.Array[Input[typings.pulumiAws.inputMod.kms.GrantConstraint]]]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
+      inline def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
       
-      @scala.inline
-      def setConstraintsVarargs(value: Input[typings.pulumiAws.inputMod.kms.GrantConstraint]*): Self = StObject.set(x, "constraints", js.Array(value :_*))
+      inline def setConstraintsVarargs(value: Input[typings.pulumiAws.inputMod.kms.GrantConstraint]*): Self = StObject.set(x, "constraints", js.Array(value :_*))
       
-      @scala.inline
-      def setGrantCreationTokens(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "grantCreationTokens", value.asInstanceOf[js.Any])
+      inline def setGrantCreationTokens(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "grantCreationTokens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrantCreationTokensUndefined: Self = StObject.set(x, "grantCreationTokens", js.undefined)
+      inline def setGrantCreationTokensUndefined: Self = StObject.set(x, "grantCreationTokens", js.undefined)
       
-      @scala.inline
-      def setGrantCreationTokensVarargs(value: Input[String]*): Self = StObject.set(x, "grantCreationTokens", js.Array(value :_*))
+      inline def setGrantCreationTokensVarargs(value: Input[String]*): Self = StObject.set(x, "grantCreationTokens", js.Array(value :_*))
       
-      @scala.inline
-      def setGranteePrincipal(value: Input[String]): Self = StObject.set(x, "granteePrincipal", value.asInstanceOf[js.Any])
+      inline def setGranteePrincipal(value: Input[String]): Self = StObject.set(x, "granteePrincipal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyId(value: Input[String]): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
+      inline def setKeyId(value: Input[String]): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOperations(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+      inline def setOperations(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperationsVarargs(value: Input[String]*): Self = StObject.set(x, "operations", js.Array(value :_*))
+      inline def setOperationsVarargs(value: Input[String]*): Self = StObject.set(x, "operations", js.Array(value :_*))
       
-      @scala.inline
-      def setRetireOnDelete(value: Input[Boolean]): Self = StObject.set(x, "retireOnDelete", value.asInstanceOf[js.Any])
+      inline def setRetireOnDelete(value: Input[Boolean]): Self = StObject.set(x, "retireOnDelete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetireOnDeleteUndefined: Self = StObject.set(x, "retireOnDelete", js.undefined)
+      inline def setRetireOnDeleteUndefined: Self = StObject.set(x, "retireOnDelete", js.undefined)
       
-      @scala.inline
-      def setRetiringPrincipal(value: Input[String]): Self = StObject.set(x, "retiringPrincipal", value.asInstanceOf[js.Any])
+      inline def setRetiringPrincipal(value: Input[String]): Self = StObject.set(x, "retiringPrincipal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetiringPrincipalUndefined: Self = StObject.set(x, "retiringPrincipal", js.undefined)
+      inline def setRetiringPrincipalUndefined: Self = StObject.set(x, "retiringPrincipal", js.undefined)
     }
   }
   
@@ -268,83 +245,58 @@ object grantMod {
   }
   object GrantState {
     
-    @scala.inline
-    def apply(): GrantState = {
+    inline def apply(): GrantState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GrantState]
     }
     
-    @scala.inline
-    implicit class GrantStateMutableBuilder[Self <: GrantState] (val x: Self) extends AnyVal {
+    extension [Self <: GrantState](x: Self) {
       
-      @scala.inline
-      def setConstraints(value: Input[js.Array[Input[typings.pulumiAws.inputMod.kms.GrantConstraint]]]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
+      inline def setConstraints(value: Input[js.Array[Input[typings.pulumiAws.inputMod.kms.GrantConstraint]]]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
+      inline def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
       
-      @scala.inline
-      def setConstraintsVarargs(value: Input[typings.pulumiAws.inputMod.kms.GrantConstraint]*): Self = StObject.set(x, "constraints", js.Array(value :_*))
+      inline def setConstraintsVarargs(value: Input[typings.pulumiAws.inputMod.kms.GrantConstraint]*): Self = StObject.set(x, "constraints", js.Array(value :_*))
       
-      @scala.inline
-      def setGrantCreationTokens(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "grantCreationTokens", value.asInstanceOf[js.Any])
+      inline def setGrantCreationTokens(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "grantCreationTokens", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrantCreationTokensUndefined: Self = StObject.set(x, "grantCreationTokens", js.undefined)
+      inline def setGrantCreationTokensUndefined: Self = StObject.set(x, "grantCreationTokens", js.undefined)
       
-      @scala.inline
-      def setGrantCreationTokensVarargs(value: Input[String]*): Self = StObject.set(x, "grantCreationTokens", js.Array(value :_*))
+      inline def setGrantCreationTokensVarargs(value: Input[String]*): Self = StObject.set(x, "grantCreationTokens", js.Array(value :_*))
       
-      @scala.inline
-      def setGrantId(value: Input[String]): Self = StObject.set(x, "grantId", value.asInstanceOf[js.Any])
+      inline def setGrantId(value: Input[String]): Self = StObject.set(x, "grantId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrantIdUndefined: Self = StObject.set(x, "grantId", js.undefined)
+      inline def setGrantIdUndefined: Self = StObject.set(x, "grantId", js.undefined)
       
-      @scala.inline
-      def setGrantToken(value: Input[String]): Self = StObject.set(x, "grantToken", value.asInstanceOf[js.Any])
+      inline def setGrantToken(value: Input[String]): Self = StObject.set(x, "grantToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrantTokenUndefined: Self = StObject.set(x, "grantToken", js.undefined)
+      inline def setGrantTokenUndefined: Self = StObject.set(x, "grantToken", js.undefined)
       
-      @scala.inline
-      def setGranteePrincipal(value: Input[String]): Self = StObject.set(x, "granteePrincipal", value.asInstanceOf[js.Any])
+      inline def setGranteePrincipal(value: Input[String]): Self = StObject.set(x, "granteePrincipal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGranteePrincipalUndefined: Self = StObject.set(x, "granteePrincipal", js.undefined)
+      inline def setGranteePrincipalUndefined: Self = StObject.set(x, "granteePrincipal", js.undefined)
       
-      @scala.inline
-      def setKeyId(value: Input[String]): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
+      inline def setKeyId(value: Input[String]): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
+      inline def setKeyIdUndefined: Self = StObject.set(x, "keyId", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOperations(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+      inline def setOperations(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
+      inline def setOperationsUndefined: Self = StObject.set(x, "operations", js.undefined)
       
-      @scala.inline
-      def setOperationsVarargs(value: Input[String]*): Self = StObject.set(x, "operations", js.Array(value :_*))
+      inline def setOperationsVarargs(value: Input[String]*): Self = StObject.set(x, "operations", js.Array(value :_*))
       
-      @scala.inline
-      def setRetireOnDelete(value: Input[Boolean]): Self = StObject.set(x, "retireOnDelete", value.asInstanceOf[js.Any])
+      inline def setRetireOnDelete(value: Input[Boolean]): Self = StObject.set(x, "retireOnDelete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetireOnDeleteUndefined: Self = StObject.set(x, "retireOnDelete", js.undefined)
+      inline def setRetireOnDeleteUndefined: Self = StObject.set(x, "retireOnDelete", js.undefined)
       
-      @scala.inline
-      def setRetiringPrincipal(value: Input[String]): Self = StObject.set(x, "retiringPrincipal", value.asInstanceOf[js.Any])
+      inline def setRetiringPrincipal(value: Input[String]): Self = StObject.set(x, "retiringPrincipal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetiringPrincipalUndefined: Self = StObject.set(x, "retiringPrincipal", js.undefined)
+      inline def setRetiringPrincipalUndefined: Self = StObject.set(x, "retiringPrincipal", js.undefined)
     }
   }
 }

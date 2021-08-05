@@ -18,22 +18,17 @@ trait DeletePolicyType extends StObject {
 }
 object DeletePolicyType {
   
-  @scala.inline
-  def apply(PolicyName: ResourceName): DeletePolicyType = {
+  inline def apply(PolicyName: ResourceName): DeletePolicyType = {
     val __obj = js.Dynamic.literal(PolicyName = PolicyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeletePolicyType]
   }
   
-  @scala.inline
-  implicit class DeletePolicyTypeMutableBuilder[Self <: DeletePolicyType] (val x: Self) extends AnyVal {
+  extension [Self <: DeletePolicyType](x: Self) {
     
-    @scala.inline
-    def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoScalingGroupNameUndefined: Self = StObject.set(x, "AutoScalingGroupName", js.undefined)
+    inline def setAutoScalingGroupNameUndefined: Self = StObject.set(x, "AutoScalingGroupName", js.undefined)
     
-    @scala.inline
-    def setPolicyName(value: ResourceName): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
+    inline def setPolicyName(value: ResourceName): Self = StObject.set(x, "PolicyName", value.asInstanceOf[js.Any])
   }
 }

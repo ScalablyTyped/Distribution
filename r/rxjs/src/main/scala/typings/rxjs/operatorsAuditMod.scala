@@ -10,8 +10,7 @@ object operatorsAuditMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def audit[T](
+  inline def audit[T](
     durationSelector: js.Function1[
       /* value */ T, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SubscribableOrPromise<any> */ js.Any

@@ -23,34 +23,25 @@ trait CellSelectionChangedEventUIParam extends StObject {
 }
 object CellSelectionChangedEventUIParam {
   
-  @scala.inline
-  def apply(): CellSelectionChangedEventUIParam = {
+  inline def apply(): CellSelectionChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CellSelectionChangedEventUIParam]
   }
   
-  @scala.inline
-  implicit class CellSelectionChangedEventUIParamMutableBuilder[Self <: CellSelectionChangedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: CellSelectionChangedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setCell(value: js.Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+    inline def setCell(value: js.Any): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
+    inline def setCellUndefined: Self = StObject.set(x, "cell", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setSelectedCells(value: js.Array[js.Any]): Self = StObject.set(x, "selectedCells", value.asInstanceOf[js.Any])
+    inline def setSelectedCells(value: js.Array[js.Any]): Self = StObject.set(x, "selectedCells", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedCellsUndefined: Self = StObject.set(x, "selectedCells", js.undefined)
+    inline def setSelectedCellsUndefined: Self = StObject.set(x, "selectedCells", js.undefined)
     
-    @scala.inline
-    def setSelectedCellsVarargs(value: js.Any*): Self = StObject.set(x, "selectedCells", js.Array(value :_*))
+    inline def setSelectedCellsVarargs(value: js.Any*): Self = StObject.set(x, "selectedCells", js.Array(value :_*))
   }
 }

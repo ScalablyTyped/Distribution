@@ -15,22 +15,17 @@ trait DynamoDBv2Action extends StObject {
 }
 object DynamoDBv2Action {
   
-  @scala.inline
-  def apply(tableName: DynamoTableName): DynamoDBv2Action = {
+  inline def apply(tableName: DynamoTableName): DynamoDBv2Action = {
     val __obj = js.Dynamic.literal(tableName = tableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DynamoDBv2Action]
   }
   
-  @scala.inline
-  implicit class DynamoDBv2ActionMutableBuilder[Self <: DynamoDBv2Action] (val x: Self) extends AnyVal {
+  extension [Self <: DynamoDBv2Action](x: Self) {
     
-    @scala.inline
-    def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    inline def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+    inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
     
-    @scala.inline
-    def setTableName(value: DynamoTableName): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: DynamoTableName): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
   }
 }

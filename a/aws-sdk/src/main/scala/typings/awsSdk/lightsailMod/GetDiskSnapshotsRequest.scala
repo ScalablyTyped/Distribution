@@ -13,19 +13,15 @@ trait GetDiskSnapshotsRequest extends StObject {
 }
 object GetDiskSnapshotsRequest {
   
-  @scala.inline
-  def apply(): GetDiskSnapshotsRequest = {
+  inline def apply(): GetDiskSnapshotsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetDiskSnapshotsRequest]
   }
   
-  @scala.inline
-  implicit class GetDiskSnapshotsRequestMutableBuilder[Self <: GetDiskSnapshotsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetDiskSnapshotsRequest](x: Self) {
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
   }
 }

@@ -8,21 +8,17 @@ object nodeSassStrings {
   
   @js.native
   sealed trait compact extends StObject
-  @scala.inline
-  def compact: compact = "compact".asInstanceOf[compact]
+  inline def compact: compact = "compact".asInstanceOf[compact]
   
   @js.native
   sealed trait compressed extends StObject
-  @scala.inline
-  def compressed: compressed = "compressed".asInstanceOf[compressed]
+  inline def compressed: compressed = "compressed".asInstanceOf[compressed]
   
   @js.native
   sealed trait expanded extends StObject
-  @scala.inline
-  def expanded: expanded = "expanded".asInstanceOf[expanded]
+  inline def expanded: expanded = "expanded".asInstanceOf[expanded]
   
   @js.native
   sealed trait nested extends StObject
-  @scala.inline
-  def nested: nested = "nested".asInstanceOf[nested]
+  inline def nested: nested = "nested".asInstanceOf[nested]
 }

@@ -138,8 +138,7 @@ object Onionoo {
   }
   object Bridge {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       first_seen: String,
       hashed_fingerprint: String,
       last_seen: String,
@@ -151,83 +150,57 @@ object Onionoo {
       __obj.asInstanceOf[Bridge]
     }
     
-    @scala.inline
-    implicit class BridgeMutableBuilder[Self <: Bridge] (val x: Self) extends AnyVal {
+    extension [Self <: Bridge](x: Self) {
       
-      @scala.inline
-      def setAdvertised_bandwidth(value: Double): Self = StObject.set(x, "advertised_bandwidth", value.asInstanceOf[js.Any])
+      inline def setAdvertised_bandwidth(value: Double): Self = StObject.set(x, "advertised_bandwidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdvertised_bandwidthUndefined: Self = StObject.set(x, "advertised_bandwidth", js.undefined)
+      inline def setAdvertised_bandwidthUndefined: Self = StObject.set(x, "advertised_bandwidth", js.undefined)
       
-      @scala.inline
-      def setFirst_seen(value: String): Self = StObject.set(x, "first_seen", value.asInstanceOf[js.Any])
+      inline def setFirst_seen(value: String): Self = StObject.set(x, "first_seen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlags(value: js.Array[String]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: js.Array[String]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+      inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
       
-      @scala.inline
-      def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value :_*))
+      inline def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value :_*))
       
-      @scala.inline
-      def setHashed_fingerprint(value: String): Self = StObject.set(x, "hashed_fingerprint", value.asInstanceOf[js.Any])
+      inline def setHashed_fingerprint(value: String): Self = StObject.set(x, "hashed_fingerprint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLast_restarted(value: String): Self = StObject.set(x, "last_restarted", value.asInstanceOf[js.Any])
+      inline def setLast_restarted(value: String): Self = StObject.set(x, "last_restarted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLast_restartedUndefined: Self = StObject.set(x, "last_restarted", js.undefined)
+      inline def setLast_restartedUndefined: Self = StObject.set(x, "last_restarted", js.undefined)
       
-      @scala.inline
-      def setLast_seen(value: String): Self = StObject.set(x, "last_seen", value.asInstanceOf[js.Any])
+      inline def setLast_seen(value: String): Self = StObject.set(x, "last_seen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
+      inline def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOr_addresses(value: js.Array[String]): Self = StObject.set(x, "or_addresses", value.asInstanceOf[js.Any])
+      inline def setOr_addresses(value: js.Array[String]): Self = StObject.set(x, "or_addresses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOr_addressesVarargs(value: String*): Self = StObject.set(x, "or_addresses", js.Array(value :_*))
+      inline def setOr_addressesVarargs(value: String*): Self = StObject.set(x, "or_addresses", js.Array(value :_*))
       
-      @scala.inline
-      def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+      inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
       
-      @scala.inline
-      def setRecommended_version(value: Boolean): Self = StObject.set(x, "recommended_version", value.asInstanceOf[js.Any])
+      inline def setRecommended_version(value: Boolean): Self = StObject.set(x, "recommended_version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecommended_versionUndefined: Self = StObject.set(x, "recommended_version", js.undefined)
+      inline def setRecommended_versionUndefined: Self = StObject.set(x, "recommended_version", js.undefined)
       
-      @scala.inline
-      def setRunning(value: Boolean): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
+      inline def setRunning(value: Boolean): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransports(value: js.Array[String]): Self = StObject.set(x, "transports", value.asInstanceOf[js.Any])
+      inline def setTransports(value: js.Array[String]): Self = StObject.set(x, "transports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransportsUndefined: Self = StObject.set(x, "transports", js.undefined)
+      inline def setTransportsUndefined: Self = StObject.set(x, "transports", js.undefined)
       
-      @scala.inline
-      def setTransportsVarargs(value: String*): Self = StObject.set(x, "transports", js.Array(value :_*))
+      inline def setTransportsVarargs(value: String*): Self = StObject.set(x, "transports", js.Array(value :_*))
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
       
-      @scala.inline
-      def setVersion_status(value: recommended | experimental | obsolete | (`new in series`) | unrecommended): Self = StObject.set(x, "version_status", value.asInstanceOf[js.Any])
+      inline def setVersion_status(value: recommended | experimental | obsolete | (`new in series`) | unrecommended): Self = StObject.set(x, "version_status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion_statusUndefined: Self = StObject.set(x, "version_status", js.undefined)
+      inline def setVersion_statusUndefined: Self = StObject.set(x, "version_status", js.undefined)
     }
   }
   
@@ -251,23 +224,18 @@ object Onionoo {
   }
   object BridgeClients {
     
-    @scala.inline
-    def apply(fingerprint: String): BridgeClients = {
+    inline def apply(fingerprint: String): BridgeClients = {
       val __obj = js.Dynamic.literal(fingerprint = fingerprint.asInstanceOf[js.Any])
       __obj.asInstanceOf[BridgeClients]
     }
     
-    @scala.inline
-    implicit class BridgeClientsMutableBuilder[Self <: BridgeClients] (val x: Self) extends AnyVal {
+    extension [Self <: BridgeClients](x: Self) {
       
-      @scala.inline
-      def setAverage_clients(value: PartialRecord6months1year): Self = StObject.set(x, "average_clients", value.asInstanceOf[js.Any])
+      inline def setAverage_clients(value: PartialRecord6months1year): Self = StObject.set(x, "average_clients", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAverage_clientsUndefined: Self = StObject.set(x, "average_clients", js.undefined)
+      inline def setAverage_clientsUndefined: Self = StObject.set(x, "average_clients", js.undefined)
       
-      @scala.inline
-      def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+      inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     }
   }
   
@@ -290,23 +258,18 @@ object Onionoo {
   }
   object BridgeSummary {
     
-    @scala.inline
-    def apply(h: String, n: String, r: Boolean): BridgeSummary = {
+    inline def apply(h: String, n: String, r: Boolean): BridgeSummary = {
       val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
       __obj.asInstanceOf[BridgeSummary]
     }
     
-    @scala.inline
-    implicit class BridgeSummaryMutableBuilder[Self <: BridgeSummary] (val x: Self) extends AnyVal {
+    extension [Self <: BridgeSummary](x: Self) {
       
-      @scala.inline
-      def setH(value: String): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+      inline def setH(value: String): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setN(value: String): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+      inline def setN(value: String): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR(value: Boolean): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      inline def setR(value: Boolean): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     }
   }
   
@@ -325,23 +288,18 @@ object Onionoo {
   }
   object BridgeUptime {
     
-    @scala.inline
-    def apply(fingerprint: String): BridgeUptime = {
+    inline def apply(fingerprint: String): BridgeUptime = {
       val __obj = js.Dynamic.literal(fingerprint = fingerprint.asInstanceOf[js.Any])
       __obj.asInstanceOf[BridgeUptime]
     }
     
-    @scala.inline
-    implicit class BridgeUptimeMutableBuilder[Self <: BridgeUptime] (val x: Self) extends AnyVal {
+    extension [Self <: BridgeUptime](x: Self) {
       
-      @scala.inline
-      def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+      inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUptime(value: PartialRecord1week1month6): Self = StObject.set(x, "uptime", value.asInstanceOf[js.Any])
+      inline def setUptime(value: PartialRecord1week1month6): Self = StObject.set(x, "uptime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUptimeUndefined: Self = StObject.set(x, "uptime", js.undefined)
+      inline def setUptimeUndefined: Self = StObject.set(x, "uptime", js.undefined)
     }
   }
   
@@ -387,8 +345,7 @@ object Onionoo {
   }
   object Histogram {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       count: Double,
       factor: Double,
       first: String,
@@ -400,29 +357,21 @@ object Onionoo {
       __obj.asInstanceOf[Histogram]
     }
     
-    @scala.inline
-    implicit class HistogramMutableBuilder[Self <: Histogram] (val x: Self) extends AnyVal {
+    extension [Self <: Histogram](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
+      inline def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirst(value: String): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
+      inline def setFirst(value: String): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLast(value: String): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
+      inline def setLast(value: String): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[Double]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: Double*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
   
@@ -483,29 +432,22 @@ object Onionoo {
   }
   object NodeBandwidth {
     
-    @scala.inline
-    def apply(fingerprint: String): NodeBandwidth = {
+    inline def apply(fingerprint: String): NodeBandwidth = {
       val __obj = js.Dynamic.literal(fingerprint = fingerprint.asInstanceOf[js.Any])
       __obj.asInstanceOf[NodeBandwidth]
     }
     
-    @scala.inline
-    implicit class NodeBandwidthMutableBuilder[Self <: NodeBandwidth] (val x: Self) extends AnyVal {
+    extension [Self <: NodeBandwidth](x: Self) {
       
-      @scala.inline
-      def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+      inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRead_history(value: PartialRecord3days1week1m): Self = StObject.set(x, "read_history", value.asInstanceOf[js.Any])
+      inline def setRead_history(value: PartialRecord3days1week1m): Self = StObject.set(x, "read_history", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRead_historyUndefined: Self = StObject.set(x, "read_history", js.undefined)
+      inline def setRead_historyUndefined: Self = StObject.set(x, "read_history", js.undefined)
       
-      @scala.inline
-      def setWrite_history(value: PartialRecord3days1week1m): Self = StObject.set(x, "write_history", value.asInstanceOf[js.Any])
+      inline def setWrite_history(value: PartialRecord3days1week1m): Self = StObject.set(x, "write_history", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrite_historyUndefined: Self = StObject.set(x, "write_history", js.undefined)
+      inline def setWrite_historyUndefined: Self = StObject.set(x, "write_history", js.undefined)
     }
   }
   
@@ -525,26 +467,20 @@ object Onionoo {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+      inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
+      inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
       
-      @scala.inline
-      def setCache(value: Cache | `false`): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Cache | `false`): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     }
   }
   
@@ -560,20 +496,16 @@ object Onionoo {
   }
   object OptionsWithEndpoints {
     
-    @scala.inline
-    def apply(endpoints: js.Array[summary | details | bandwidth | weights | clients | uptime]): OptionsWithEndpoints = {
+    inline def apply(endpoints: js.Array[summary | details | bandwidth | weights | clients | uptime]): OptionsWithEndpoints = {
       val __obj = js.Dynamic.literal(endpoints = endpoints.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionsWithEndpoints]
     }
     
-    @scala.inline
-    implicit class OptionsWithEndpointsMutableBuilder[Self <: OptionsWithEndpoints] (val x: Self) extends AnyVal {
+    extension [Self <: OptionsWithEndpoints](x: Self) {
       
-      @scala.inline
-      def setEndpoints(value: js.Array[summary | details | bandwidth | weights | clients | uptime]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
+      inline def setEndpoints(value: js.Array[summary | details | bandwidth | weights | clients | uptime]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndpointsVarargs(value: (summary | details | bandwidth | weights | clients | uptime)*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
+      inline def setEndpointsVarargs(value: (summary | details | bandwidth | weights | clients | uptime)*): Self = StObject.set(x, "endpoints", js.Array(value :_*))
     }
   }
   
@@ -747,137 +679,94 @@ object Onionoo {
   }
   object QueryParameters {
     
-    @scala.inline
-    def apply(): QueryParameters = {
+    inline def apply(): QueryParameters = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[QueryParameters]
     }
     
-    @scala.inline
-    implicit class QueryParametersMutableBuilder[Self <: QueryParameters] (val x: Self) extends AnyVal {
+    extension [Self <: QueryParameters](x: Self) {
       
-      @scala.inline
-      def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setAs_name(value: String): Self = StObject.set(x, "as_name", value.asInstanceOf[js.Any])
+      inline def setAs_name(value: String): Self = StObject.set(x, "as_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAs_nameUndefined: Self = StObject.set(x, "as_name", js.undefined)
+      inline def setAs_nameUndefined: Self = StObject.set(x, "as_name", js.undefined)
       
-      @scala.inline
-      def setContact(value: String): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
+      inline def setContact(value: String): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
+      inline def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
       
-      @scala.inline
-      def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+      inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
       
-      @scala.inline
-      def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+      inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
+      inline def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
       
-      @scala.inline
-      def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      @scala.inline
-      def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
+      inline def setFieldsVarargs(value: String*): Self = StObject.set(x, "fields", js.Array(value :_*))
       
-      @scala.inline
-      def setFirst_seen_days(value: String): Self = StObject.set(x, "first_seen_days", value.asInstanceOf[js.Any])
+      inline def setFirst_seen_days(value: String): Self = StObject.set(x, "first_seen_days", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirst_seen_daysUndefined: Self = StObject.set(x, "first_seen_days", js.undefined)
+      inline def setFirst_seen_daysUndefined: Self = StObject.set(x, "first_seen_days", js.undefined)
       
-      @scala.inline
-      def setFlag(value: String): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
+      inline def setFlag(value: String): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlagUndefined: Self = StObject.set(x, "flag", js.undefined)
+      inline def setFlagUndefined: Self = StObject.set(x, "flag", js.undefined)
       
-      @scala.inline
-      def setHost_name(value: String): Self = StObject.set(x, "host_name", value.asInstanceOf[js.Any])
+      inline def setHost_name(value: String): Self = StObject.set(x, "host_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHost_nameUndefined: Self = StObject.set(x, "host_name", js.undefined)
+      inline def setHost_nameUndefined: Self = StObject.set(x, "host_name", js.undefined)
       
-      @scala.inline
-      def setLast_seen_days(value: String): Self = StObject.set(x, "last_seen_days", value.asInstanceOf[js.Any])
+      inline def setLast_seen_days(value: String): Self = StObject.set(x, "last_seen_days", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLast_seen_daysUndefined: Self = StObject.set(x, "last_seen_days", js.undefined)
+      inline def setLast_seen_daysUndefined: Self = StObject.set(x, "last_seen_days", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setLookup(value: String): Self = StObject.set(x, "lookup", value.asInstanceOf[js.Any])
+      inline def setLookup(value: String): Self = StObject.set(x, "lookup", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLookupUndefined: Self = StObject.set(x, "lookup", js.undefined)
+      inline def setLookupUndefined: Self = StObject.set(x, "lookup", js.undefined)
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+      inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       
-      @scala.inline
-      def setOrder(value: String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+      inline def setOrder(value: String): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      @scala.inline
-      def setOs(value: String): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+      inline def setOs(value: String): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOsUndefined: Self = StObject.set(x, "os", js.undefined)
+      inline def setOsUndefined: Self = StObject.set(x, "os", js.undefined)
       
-      @scala.inline
-      def setRecommended_version(value: Boolean): Self = StObject.set(x, "recommended_version", value.asInstanceOf[js.Any])
+      inline def setRecommended_version(value: Boolean): Self = StObject.set(x, "recommended_version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecommended_versionUndefined: Self = StObject.set(x, "recommended_version", js.undefined)
+      inline def setRecommended_versionUndefined: Self = StObject.set(x, "recommended_version", js.undefined)
       
-      @scala.inline
-      def setRunning(value: Boolean): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
+      inline def setRunning(value: Boolean): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRunningUndefined: Self = StObject.set(x, "running", js.undefined)
+      inline def setRunningUndefined: Self = StObject.set(x, "running", js.undefined)
       
-      @scala.inline
-      def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: String): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
+      inline def setSearchUndefined: Self = StObject.set(x, "search", js.undefined)
       
-      @scala.inline
-      def setType(value: relay | bridge): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: relay | bridge): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
   
@@ -1205,8 +1094,7 @@ object Onionoo {
   }
   object Relay {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       consensus_weight: Double,
       fingerprint: String,
       first_seen: String,
@@ -1220,284 +1108,191 @@ object Onionoo {
       __obj.asInstanceOf[Relay]
     }
     
-    @scala.inline
-    implicit class RelayMutableBuilder[Self <: Relay] (val x: Self) extends AnyVal {
+    extension [Self <: Relay](x: Self) {
       
-      @scala.inline
-      def setAdvertised_bandwidth(value: Double): Self = StObject.set(x, "advertised_bandwidth", value.asInstanceOf[js.Any])
+      inline def setAdvertised_bandwidth(value: Double): Self = StObject.set(x, "advertised_bandwidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdvertised_bandwidthUndefined: Self = StObject.set(x, "advertised_bandwidth", js.undefined)
+      inline def setAdvertised_bandwidthUndefined: Self = StObject.set(x, "advertised_bandwidth", js.undefined)
       
-      @scala.inline
-      def setAlleged_family(value: js.Array[String]): Self = StObject.set(x, "alleged_family", value.asInstanceOf[js.Any])
+      inline def setAlleged_family(value: js.Array[String]): Self = StObject.set(x, "alleged_family", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlleged_familyUndefined: Self = StObject.set(x, "alleged_family", js.undefined)
+      inline def setAlleged_familyUndefined: Self = StObject.set(x, "alleged_family", js.undefined)
       
-      @scala.inline
-      def setAlleged_familyVarargs(value: String*): Self = StObject.set(x, "alleged_family", js.Array(value :_*))
+      inline def setAlleged_familyVarargs(value: String*): Self = StObject.set(x, "alleged_family", js.Array(value :_*))
       
-      @scala.inline
-      def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setAs_name(value: String): Self = StObject.set(x, "as_name", value.asInstanceOf[js.Any])
+      inline def setAs_name(value: String): Self = StObject.set(x, "as_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAs_nameUndefined: Self = StObject.set(x, "as_name", js.undefined)
+      inline def setAs_nameUndefined: Self = StObject.set(x, "as_name", js.undefined)
       
-      @scala.inline
-      def setBandwidth_burst(value: Double): Self = StObject.set(x, "bandwidth_burst", value.asInstanceOf[js.Any])
+      inline def setBandwidth_burst(value: Double): Self = StObject.set(x, "bandwidth_burst", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBandwidth_burstUndefined: Self = StObject.set(x, "bandwidth_burst", js.undefined)
+      inline def setBandwidth_burstUndefined: Self = StObject.set(x, "bandwidth_burst", js.undefined)
       
-      @scala.inline
-      def setBandwidth_rate(value: Double): Self = StObject.set(x, "bandwidth_rate", value.asInstanceOf[js.Any])
+      inline def setBandwidth_rate(value: Double): Self = StObject.set(x, "bandwidth_rate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBandwidth_rateUndefined: Self = StObject.set(x, "bandwidth_rate", js.undefined)
+      inline def setBandwidth_rateUndefined: Self = StObject.set(x, "bandwidth_rate", js.undefined)
       
-      @scala.inline
-      def setCity_name(value: String): Self = StObject.set(x, "city_name", value.asInstanceOf[js.Any])
+      inline def setCity_name(value: String): Self = StObject.set(x, "city_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCity_nameUndefined: Self = StObject.set(x, "city_name", js.undefined)
+      inline def setCity_nameUndefined: Self = StObject.set(x, "city_name", js.undefined)
       
-      @scala.inline
-      def setConsensus_weight(value: Double): Self = StObject.set(x, "consensus_weight", value.asInstanceOf[js.Any])
+      inline def setConsensus_weight(value: Double): Self = StObject.set(x, "consensus_weight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsensus_weight_fraction(value: Double): Self = StObject.set(x, "consensus_weight_fraction", value.asInstanceOf[js.Any])
+      inline def setConsensus_weight_fraction(value: Double): Self = StObject.set(x, "consensus_weight_fraction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsensus_weight_fractionUndefined: Self = StObject.set(x, "consensus_weight_fraction", js.undefined)
+      inline def setConsensus_weight_fractionUndefined: Self = StObject.set(x, "consensus_weight_fraction", js.undefined)
       
-      @scala.inline
-      def setContact(value: String): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
+      inline def setContact(value: String): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
+      inline def setContactUndefined: Self = StObject.set(x, "contact", js.undefined)
       
-      @scala.inline
-      def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+      inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+      inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
       
-      @scala.inline
-      def setCountry_name(value: String): Self = StObject.set(x, "country_name", value.asInstanceOf[js.Any])
+      inline def setCountry_name(value: String): Self = StObject.set(x, "country_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountry_nameUndefined: Self = StObject.set(x, "country_name", js.undefined)
+      inline def setCountry_nameUndefined: Self = StObject.set(x, "country_name", js.undefined)
       
-      @scala.inline
-      def setDir_address(value: String): Self = StObject.set(x, "dir_address", value.asInstanceOf[js.Any])
+      inline def setDir_address(value: String): Self = StObject.set(x, "dir_address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDir_addressUndefined: Self = StObject.set(x, "dir_address", js.undefined)
+      inline def setDir_addressUndefined: Self = StObject.set(x, "dir_address", js.undefined)
       
-      @scala.inline
-      def setEffective_family(value: js.Array[String]): Self = StObject.set(x, "effective_family", value.asInstanceOf[js.Any])
+      inline def setEffective_family(value: js.Array[String]): Self = StObject.set(x, "effective_family", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEffective_familyUndefined: Self = StObject.set(x, "effective_family", js.undefined)
+      inline def setEffective_familyUndefined: Self = StObject.set(x, "effective_family", js.undefined)
       
-      @scala.inline
-      def setEffective_familyVarargs(value: String*): Self = StObject.set(x, "effective_family", js.Array(value :_*))
+      inline def setEffective_familyVarargs(value: String*): Self = StObject.set(x, "effective_family", js.Array(value :_*))
       
-      @scala.inline
-      def setExit_addresses(value: js.Array[String]): Self = StObject.set(x, "exit_addresses", value.asInstanceOf[js.Any])
+      inline def setExit_addresses(value: js.Array[String]): Self = StObject.set(x, "exit_addresses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExit_addressesUndefined: Self = StObject.set(x, "exit_addresses", js.undefined)
+      inline def setExit_addressesUndefined: Self = StObject.set(x, "exit_addresses", js.undefined)
       
-      @scala.inline
-      def setExit_addressesVarargs(value: String*): Self = StObject.set(x, "exit_addresses", js.Array(value :_*))
+      inline def setExit_addressesVarargs(value: String*): Self = StObject.set(x, "exit_addresses", js.Array(value :_*))
       
-      @scala.inline
-      def setExit_policy(value: js.Array[String]): Self = StObject.set(x, "exit_policy", value.asInstanceOf[js.Any])
+      inline def setExit_policy(value: js.Array[String]): Self = StObject.set(x, "exit_policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExit_policyUndefined: Self = StObject.set(x, "exit_policy", js.undefined)
+      inline def setExit_policyUndefined: Self = StObject.set(x, "exit_policy", js.undefined)
       
-      @scala.inline
-      def setExit_policyVarargs(value: String*): Self = StObject.set(x, "exit_policy", js.Array(value :_*))
+      inline def setExit_policyVarargs(value: String*): Self = StObject.set(x, "exit_policy", js.Array(value :_*))
       
-      @scala.inline
-      def setExit_policy_summary(value: Accept): Self = StObject.set(x, "exit_policy_summary", value.asInstanceOf[js.Any])
+      inline def setExit_policy_summary(value: Accept): Self = StObject.set(x, "exit_policy_summary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExit_policy_summaryUndefined: Self = StObject.set(x, "exit_policy_summary", js.undefined)
+      inline def setExit_policy_summaryUndefined: Self = StObject.set(x, "exit_policy_summary", js.undefined)
       
-      @scala.inline
-      def setExit_policy_v6_summary(value: Accept): Self = StObject.set(x, "exit_policy_v6_summary", value.asInstanceOf[js.Any])
+      inline def setExit_policy_v6_summary(value: Accept): Self = StObject.set(x, "exit_policy_v6_summary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExit_policy_v6_summaryUndefined: Self = StObject.set(x, "exit_policy_v6_summary", js.undefined)
+      inline def setExit_policy_v6_summaryUndefined: Self = StObject.set(x, "exit_policy_v6_summary", js.undefined)
       
-      @scala.inline
-      def setExit_probability(value: Double): Self = StObject.set(x, "exit_probability", value.asInstanceOf[js.Any])
+      inline def setExit_probability(value: Double): Self = StObject.set(x, "exit_probability", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExit_probabilityUndefined: Self = StObject.set(x, "exit_probability", js.undefined)
+      inline def setExit_probabilityUndefined: Self = StObject.set(x, "exit_probability", js.undefined)
       
-      @scala.inline
-      def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+      inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirst_seen(value: String): Self = StObject.set(x, "first_seen", value.asInstanceOf[js.Any])
+      inline def setFirst_seen(value: String): Self = StObject.set(x, "first_seen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlags(value: js.Array[String]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: js.Array[String]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+      inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
       
-      @scala.inline
-      def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value :_*))
+      inline def setFlagsVarargs(value: String*): Self = StObject.set(x, "flags", js.Array(value :_*))
       
-      @scala.inline
-      def setGuard_probability(value: Double): Self = StObject.set(x, "guard_probability", value.asInstanceOf[js.Any])
+      inline def setGuard_probability(value: Double): Self = StObject.set(x, "guard_probability", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGuard_probabilityUndefined: Self = StObject.set(x, "guard_probability", js.undefined)
+      inline def setGuard_probabilityUndefined: Self = StObject.set(x, "guard_probability", js.undefined)
       
-      @scala.inline
-      def setHibernating(value: Boolean): Self = StObject.set(x, "hibernating", value.asInstanceOf[js.Any])
+      inline def setHibernating(value: Boolean): Self = StObject.set(x, "hibernating", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHibernatingUndefined: Self = StObject.set(x, "hibernating", js.undefined)
+      inline def setHibernatingUndefined: Self = StObject.set(x, "hibernating", js.undefined)
       
-      @scala.inline
-      def setHost_name(value: String): Self = StObject.set(x, "host_name", value.asInstanceOf[js.Any])
+      inline def setHost_name(value: String): Self = StObject.set(x, "host_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHost_nameUndefined: Self = StObject.set(x, "host_name", js.undefined)
+      inline def setHost_nameUndefined: Self = StObject.set(x, "host_name", js.undefined)
       
-      @scala.inline
-      def setIndirect_family(value: js.Array[String]): Self = StObject.set(x, "indirect_family", value.asInstanceOf[js.Any])
+      inline def setIndirect_family(value: js.Array[String]): Self = StObject.set(x, "indirect_family", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndirect_familyUndefined: Self = StObject.set(x, "indirect_family", js.undefined)
+      inline def setIndirect_familyUndefined: Self = StObject.set(x, "indirect_family", js.undefined)
       
-      @scala.inline
-      def setIndirect_familyVarargs(value: String*): Self = StObject.set(x, "indirect_family", js.Array(value :_*))
+      inline def setIndirect_familyVarargs(value: String*): Self = StObject.set(x, "indirect_family", js.Array(value :_*))
       
-      @scala.inline
-      def setLast_changed_address_or_port(value: String): Self = StObject.set(x, "last_changed_address_or_port", value.asInstanceOf[js.Any])
+      inline def setLast_changed_address_or_port(value: String): Self = StObject.set(x, "last_changed_address_or_port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLast_restarted(value: String): Self = StObject.set(x, "last_restarted", value.asInstanceOf[js.Any])
+      inline def setLast_restarted(value: String): Self = StObject.set(x, "last_restarted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLast_restartedUndefined: Self = StObject.set(x, "last_restarted", js.undefined)
+      inline def setLast_restartedUndefined: Self = StObject.set(x, "last_restarted", js.undefined)
       
-      @scala.inline
-      def setLast_seen(value: String): Self = StObject.set(x, "last_seen", value.asInstanceOf[js.Any])
+      inline def setLast_seen(value: String): Self = StObject.set(x, "last_seen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+      inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
+      inline def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
       
-      @scala.inline
-      def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+      inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
+      inline def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
       
-      @scala.inline
-      def setMeasured(value: Boolean): Self = StObject.set(x, "measured", value.asInstanceOf[js.Any])
+      inline def setMeasured(value: Boolean): Self = StObject.set(x, "measured", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeasuredUndefined: Self = StObject.set(x, "measured", js.undefined)
+      inline def setMeasuredUndefined: Self = StObject.set(x, "measured", js.undefined)
       
-      @scala.inline
-      def setMiddle_probability(value: Double): Self = StObject.set(x, "middle_probability", value.asInstanceOf[js.Any])
+      inline def setMiddle_probability(value: Double): Self = StObject.set(x, "middle_probability", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMiddle_probabilityUndefined: Self = StObject.set(x, "middle_probability", js.undefined)
+      inline def setMiddle_probabilityUndefined: Self = StObject.set(x, "middle_probability", js.undefined)
       
-      @scala.inline
-      def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
+      inline def setNickname(value: String): Self = StObject.set(x, "nickname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObserved_bandwidth(value: Double): Self = StObject.set(x, "observed_bandwidth", value.asInstanceOf[js.Any])
+      inline def setObserved_bandwidth(value: Double): Self = StObject.set(x, "observed_bandwidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObserved_bandwidthUndefined: Self = StObject.set(x, "observed_bandwidth", js.undefined)
+      inline def setObserved_bandwidthUndefined: Self = StObject.set(x, "observed_bandwidth", js.undefined)
       
-      @scala.inline
-      def setOr_addresses(value: js.Array[String]): Self = StObject.set(x, "or_addresses", value.asInstanceOf[js.Any])
+      inline def setOr_addresses(value: js.Array[String]): Self = StObject.set(x, "or_addresses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOr_addressesVarargs(value: String*): Self = StObject.set(x, "or_addresses", js.Array(value :_*))
+      inline def setOr_addressesVarargs(value: String*): Self = StObject.set(x, "or_addresses", js.Array(value :_*))
       
-      @scala.inline
-      def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+      inline def setPlatform(value: String): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+      inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
       
-      @scala.inline
-      def setRecommended_version(value: Boolean): Self = StObject.set(x, "recommended_version", value.asInstanceOf[js.Any])
+      inline def setRecommended_version(value: Boolean): Self = StObject.set(x, "recommended_version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecommended_versionUndefined: Self = StObject.set(x, "recommended_version", js.undefined)
+      inline def setRecommended_versionUndefined: Self = StObject.set(x, "recommended_version", js.undefined)
       
-      @scala.inline
-      def setRegion_name(value: String): Self = StObject.set(x, "region_name", value.asInstanceOf[js.Any])
+      inline def setRegion_name(value: String): Self = StObject.set(x, "region_name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegion_nameUndefined: Self = StObject.set(x, "region_name", js.undefined)
+      inline def setRegion_nameUndefined: Self = StObject.set(x, "region_name", js.undefined)
       
-      @scala.inline
-      def setRunning(value: Boolean): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
+      inline def setRunning(value: Boolean): Self = StObject.set(x, "running", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnreachable_or_addresses(value: js.Array[String]): Self = StObject.set(x, "unreachable_or_addresses", value.asInstanceOf[js.Any])
+      inline def setUnreachable_or_addresses(value: js.Array[String]): Self = StObject.set(x, "unreachable_or_addresses", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnreachable_or_addressesUndefined: Self = StObject.set(x, "unreachable_or_addresses", js.undefined)
+      inline def setUnreachable_or_addressesUndefined: Self = StObject.set(x, "unreachable_or_addresses", js.undefined)
       
-      @scala.inline
-      def setUnreachable_or_addressesVarargs(value: String*): Self = StObject.set(x, "unreachable_or_addresses", js.Array(value :_*))
+      inline def setUnreachable_or_addressesVarargs(value: String*): Self = StObject.set(x, "unreachable_or_addresses", js.Array(value :_*))
       
-      @scala.inline
-      def setUnverified_host_names(value: js.Array[String]): Self = StObject.set(x, "unverified_host_names", value.asInstanceOf[js.Any])
+      inline def setUnverified_host_names(value: js.Array[String]): Self = StObject.set(x, "unverified_host_names", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnverified_host_namesUndefined: Self = StObject.set(x, "unverified_host_names", js.undefined)
+      inline def setUnverified_host_namesUndefined: Self = StObject.set(x, "unverified_host_names", js.undefined)
       
-      @scala.inline
-      def setUnverified_host_namesVarargs(value: String*): Self = StObject.set(x, "unverified_host_names", js.Array(value :_*))
+      inline def setUnverified_host_namesVarargs(value: String*): Self = StObject.set(x, "unverified_host_names", js.Array(value :_*))
       
-      @scala.inline
-      def setVerified_host_names(value: js.Array[String]): Self = StObject.set(x, "verified_host_names", value.asInstanceOf[js.Any])
+      inline def setVerified_host_names(value: js.Array[String]): Self = StObject.set(x, "verified_host_names", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerified_host_namesUndefined: Self = StObject.set(x, "verified_host_names", js.undefined)
+      inline def setVerified_host_namesUndefined: Self = StObject.set(x, "verified_host_names", js.undefined)
       
-      @scala.inline
-      def setVerified_host_namesVarargs(value: String*): Self = StObject.set(x, "verified_host_names", js.Array(value :_*))
+      inline def setVerified_host_namesVarargs(value: String*): Self = StObject.set(x, "verified_host_names", js.Array(value :_*))
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
       
-      @scala.inline
-      def setVersion_status(value: recommended | experimental | obsolete | (`new in series`) | unrecommended): Self = StObject.set(x, "version_status", value.asInstanceOf[js.Any])
+      inline def setVersion_status(value: recommended | experimental | obsolete | (`new in series`) | unrecommended): Self = StObject.set(x, "version_status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion_statusUndefined: Self = StObject.set(x, "version_status", js.undefined)
+      inline def setVersion_statusUndefined: Self = StObject.set(x, "version_status", js.undefined)
     }
   }
   
@@ -1528,29 +1323,22 @@ object Onionoo {
   }
   object RelaySummary {
     
-    @scala.inline
-    def apply(a: js.Array[String], f: String, n: String, r: Boolean): RelaySummary = {
+    inline def apply(a: js.Array[String], f: String, n: String, r: Boolean): RelaySummary = {
       val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], f = f.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
       __obj.asInstanceOf[RelaySummary]
     }
     
-    @scala.inline
-    implicit class RelaySummaryMutableBuilder[Self <: RelaySummary] (val x: Self) extends AnyVal {
+    extension [Self <: RelaySummary](x: Self) {
       
-      @scala.inline
-      def setA(value: js.Array[String]): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+      inline def setA(value: js.Array[String]): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAVarargs(value: String*): Self = StObject.set(x, "a", js.Array(value :_*))
+      inline def setAVarargs(value: String*): Self = StObject.set(x, "a", js.Array(value :_*))
       
-      @scala.inline
-      def setF(value: String): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
+      inline def setF(value: String): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setN(value: String): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+      inline def setN(value: String): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR(value: Boolean): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      inline def setR(value: Boolean): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1582,29 +1370,22 @@ object Onionoo {
   }
   object RelayUptime {
     
-    @scala.inline
-    def apply(fingerprint: String): RelayUptime = {
+    inline def apply(fingerprint: String): RelayUptime = {
       val __obj = js.Dynamic.literal(fingerprint = fingerprint.asInstanceOf[js.Any])
       __obj.asInstanceOf[RelayUptime]
     }
     
-    @scala.inline
-    implicit class RelayUptimeMutableBuilder[Self <: RelayUptime] (val x: Self) extends AnyVal {
+    extension [Self <: RelayUptime](x: Self) {
       
-      @scala.inline
-      def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+      inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlags(value: StringDictionary[PartialRecord1week1month6]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: StringDictionary[PartialRecord1week1month6]): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+      inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
       
-      @scala.inline
-      def setUptime(value: PartialRecord1week1month6): Self = StObject.set(x, "uptime", value.asInstanceOf[js.Any])
+      inline def setUptime(value: PartialRecord1week1month6): Self = StObject.set(x, "uptime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUptimeUndefined: Self = StObject.set(x, "uptime", js.undefined)
+      inline def setUptimeUndefined: Self = StObject.set(x, "uptime", js.undefined)
     }
   }
   
@@ -1659,47 +1440,34 @@ object Onionoo {
   }
   object RelayWeights {
     
-    @scala.inline
-    def apply(fingerprint: String): RelayWeights = {
+    inline def apply(fingerprint: String): RelayWeights = {
       val __obj = js.Dynamic.literal(fingerprint = fingerprint.asInstanceOf[js.Any])
       __obj.asInstanceOf[RelayWeights]
     }
     
-    @scala.inline
-    implicit class RelayWeightsMutableBuilder[Self <: RelayWeights] (val x: Self) extends AnyVal {
+    extension [Self <: RelayWeights](x: Self) {
       
-      @scala.inline
-      def setConsensus_weight(value: PartialRecord1week1month6): Self = StObject.set(x, "consensus_weight", value.asInstanceOf[js.Any])
+      inline def setConsensus_weight(value: PartialRecord1week1month6): Self = StObject.set(x, "consensus_weight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsensus_weightUndefined: Self = StObject.set(x, "consensus_weight", js.undefined)
+      inline def setConsensus_weightUndefined: Self = StObject.set(x, "consensus_weight", js.undefined)
       
-      @scala.inline
-      def setConsensus_weight_fraction(value: PartialRecord1week1month6): Self = StObject.set(x, "consensus_weight_fraction", value.asInstanceOf[js.Any])
+      inline def setConsensus_weight_fraction(value: PartialRecord1week1month6): Self = StObject.set(x, "consensus_weight_fraction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsensus_weight_fractionUndefined: Self = StObject.set(x, "consensus_weight_fraction", js.undefined)
+      inline def setConsensus_weight_fractionUndefined: Self = StObject.set(x, "consensus_weight_fraction", js.undefined)
       
-      @scala.inline
-      def setExit_probability(value: PartialRecord1week1month6): Self = StObject.set(x, "exit_probability", value.asInstanceOf[js.Any])
+      inline def setExit_probability(value: PartialRecord1week1month6): Self = StObject.set(x, "exit_probability", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExit_probabilityUndefined: Self = StObject.set(x, "exit_probability", js.undefined)
+      inline def setExit_probabilityUndefined: Self = StObject.set(x, "exit_probability", js.undefined)
       
-      @scala.inline
-      def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
+      inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGuard_probability(value: PartialRecord1week1month6): Self = StObject.set(x, "guard_probability", value.asInstanceOf[js.Any])
+      inline def setGuard_probability(value: PartialRecord1week1month6): Self = StObject.set(x, "guard_probability", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGuard_probabilityUndefined: Self = StObject.set(x, "guard_probability", js.undefined)
+      inline def setGuard_probabilityUndefined: Self = StObject.set(x, "guard_probability", js.undefined)
       
-      @scala.inline
-      def setMiddle_probability(value: PartialRecord1week1month6): Self = StObject.set(x, "middle_probability", value.asInstanceOf[js.Any])
+      inline def setMiddle_probability(value: PartialRecord1week1month6): Self = StObject.set(x, "middle_probability", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMiddle_probabilityUndefined: Self = StObject.set(x, "middle_probability", js.undefined)
+      inline def setMiddle_probabilityUndefined: Self = StObject.set(x, "middle_probability", js.undefined)
     }
   }
   
@@ -1759,8 +1527,7 @@ object Onionoo {
   }
   object Response {
     
-    @scala.inline
-    def apply[TRelay, TBridge](
+    inline def apply[TRelay, TBridge](
       bridges: js.Array[TBridge],
       bridges_published: String,
       relays: js.Array[TRelay],
@@ -1771,65 +1538,45 @@ object Onionoo {
       __obj.asInstanceOf[Response[TRelay, TBridge]]
     }
     
-    @scala.inline
-    implicit class ResponseMutableBuilder[Self <: Response[?, ?], TRelay, TBridge] (val x: Self & (Response[TRelay, TBridge])) extends AnyVal {
+    extension [Self <: Response[?, ?], TRelay, TBridge](x: Self & (Response[TRelay, TBridge])) {
       
-      @scala.inline
-      def setBridges(value: js.Array[TBridge]): Self = StObject.set(x, "bridges", value.asInstanceOf[js.Any])
+      inline def setBridges(value: js.Array[TBridge]): Self = StObject.set(x, "bridges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBridgesVarargs(value: TBridge*): Self = StObject.set(x, "bridges", js.Array(value :_*))
+      inline def setBridgesVarargs(value: TBridge*): Self = StObject.set(x, "bridges", js.Array(value :_*))
       
-      @scala.inline
-      def setBridges_published(value: String): Self = StObject.set(x, "bridges_published", value.asInstanceOf[js.Any])
+      inline def setBridges_published(value: String): Self = StObject.set(x, "bridges_published", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBridges_skipped(value: Double): Self = StObject.set(x, "bridges_skipped", value.asInstanceOf[js.Any])
+      inline def setBridges_skipped(value: Double): Self = StObject.set(x, "bridges_skipped", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBridges_skippedUndefined: Self = StObject.set(x, "bridges_skipped", js.undefined)
+      inline def setBridges_skippedUndefined: Self = StObject.set(x, "bridges_skipped", js.undefined)
       
-      @scala.inline
-      def setBridges_truncated(value: Double): Self = StObject.set(x, "bridges_truncated", value.asInstanceOf[js.Any])
+      inline def setBridges_truncated(value: Double): Self = StObject.set(x, "bridges_truncated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBridges_truncatedUndefined: Self = StObject.set(x, "bridges_truncated", js.undefined)
+      inline def setBridges_truncatedUndefined: Self = StObject.set(x, "bridges_truncated", js.undefined)
       
-      @scala.inline
-      def setBuild_revision(value: String): Self = StObject.set(x, "build_revision", value.asInstanceOf[js.Any])
+      inline def setBuild_revision(value: String): Self = StObject.set(x, "build_revision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuild_revisionUndefined: Self = StObject.set(x, "build_revision", js.undefined)
+      inline def setBuild_revisionUndefined: Self = StObject.set(x, "build_revision", js.undefined)
       
-      @scala.inline
-      def setNext_major_version_scheduled(value: String): Self = StObject.set(x, "next_major_version_scheduled", value.asInstanceOf[js.Any])
+      inline def setNext_major_version_scheduled(value: String): Self = StObject.set(x, "next_major_version_scheduled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNext_major_version_scheduledUndefined: Self = StObject.set(x, "next_major_version_scheduled", js.undefined)
+      inline def setNext_major_version_scheduledUndefined: Self = StObject.set(x, "next_major_version_scheduled", js.undefined)
       
-      @scala.inline
-      def setRelays(value: js.Array[TRelay]): Self = StObject.set(x, "relays", value.asInstanceOf[js.Any])
+      inline def setRelays(value: js.Array[TRelay]): Self = StObject.set(x, "relays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelaysVarargs(value: TRelay*): Self = StObject.set(x, "relays", js.Array(value :_*))
+      inline def setRelaysVarargs(value: TRelay*): Self = StObject.set(x, "relays", js.Array(value :_*))
       
-      @scala.inline
-      def setRelays_published(value: String): Self = StObject.set(x, "relays_published", value.asInstanceOf[js.Any])
+      inline def setRelays_published(value: String): Self = StObject.set(x, "relays_published", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelays_skipped(value: Double): Self = StObject.set(x, "relays_skipped", value.asInstanceOf[js.Any])
+      inline def setRelays_skipped(value: Double): Self = StObject.set(x, "relays_skipped", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelays_skippedUndefined: Self = StObject.set(x, "relays_skipped", js.undefined)
+      inline def setRelays_skippedUndefined: Self = StObject.set(x, "relays_skipped", js.undefined)
       
-      @scala.inline
-      def setRelays_truncated(value: Double): Self = StObject.set(x, "relays_truncated", value.asInstanceOf[js.Any])
+      inline def setRelays_truncated(value: Double): Self = StObject.set(x, "relays_truncated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelays_truncatedUndefined: Self = StObject.set(x, "relays_truncated", js.undefined)
+      inline def setRelays_truncatedUndefined: Self = StObject.set(x, "relays_truncated", js.undefined)
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   

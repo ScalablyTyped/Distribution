@@ -63,79 +63,55 @@ trait ReplicationRun extends StObject {
 }
 object ReplicationRun {
   
-  @scala.inline
-  def apply(): ReplicationRun = {
+  inline def apply(): ReplicationRun = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReplicationRun]
   }
   
-  @scala.inline
-  implicit class ReplicationRunMutableBuilder[Self <: ReplicationRun] (val x: Self) extends AnyVal {
+  extension [Self <: ReplicationRun](x: Self) {
     
-    @scala.inline
-    def setAmiId(value: AmiId): Self = StObject.set(x, "amiId", value.asInstanceOf[js.Any])
+    inline def setAmiId(value: AmiId): Self = StObject.set(x, "amiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmiIdUndefined: Self = StObject.set(x, "amiId", js.undefined)
+    inline def setAmiIdUndefined: Self = StObject.set(x, "amiId", js.undefined)
     
-    @scala.inline
-    def setCompletedTime(value: Timestamp): Self = StObject.set(x, "completedTime", value.asInstanceOf[js.Any])
+    inline def setCompletedTime(value: Timestamp): Self = StObject.set(x, "completedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletedTimeUndefined: Self = StObject.set(x, "completedTime", js.undefined)
+    inline def setCompletedTimeUndefined: Self = StObject.set(x, "completedTime", js.undefined)
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEncrypted(value: Encrypted): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
+    inline def setEncrypted(value: Encrypted): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptedUndefined: Self = StObject.set(x, "encrypted", js.undefined)
+    inline def setEncryptedUndefined: Self = StObject.set(x, "encrypted", js.undefined)
     
-    @scala.inline
-    def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+    inline def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
+    inline def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
     
-    @scala.inline
-    def setReplicationRunId(value: ReplicationRunId): Self = StObject.set(x, "replicationRunId", value.asInstanceOf[js.Any])
+    inline def setReplicationRunId(value: ReplicationRunId): Self = StObject.set(x, "replicationRunId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplicationRunIdUndefined: Self = StObject.set(x, "replicationRunId", js.undefined)
+    inline def setReplicationRunIdUndefined: Self = StObject.set(x, "replicationRunId", js.undefined)
     
-    @scala.inline
-    def setScheduledStartTime(value: Timestamp): Self = StObject.set(x, "scheduledStartTime", value.asInstanceOf[js.Any])
+    inline def setScheduledStartTime(value: Timestamp): Self = StObject.set(x, "scheduledStartTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledStartTimeUndefined: Self = StObject.set(x, "scheduledStartTime", js.undefined)
+    inline def setScheduledStartTimeUndefined: Self = StObject.set(x, "scheduledStartTime", js.undefined)
     
-    @scala.inline
-    def setStageDetails(value: ReplicationRunStageDetails): Self = StObject.set(x, "stageDetails", value.asInstanceOf[js.Any])
+    inline def setStageDetails(value: ReplicationRunStageDetails): Self = StObject.set(x, "stageDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageDetailsUndefined: Self = StObject.set(x, "stageDetails", js.undefined)
+    inline def setStageDetailsUndefined: Self = StObject.set(x, "stageDetails", js.undefined)
     
-    @scala.inline
-    def setState(value: ReplicationRunState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: ReplicationRunState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setStatusMessage(value: ReplicationRunStatusMessage): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: ReplicationRunStatusMessage): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
+    inline def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
     
-    @scala.inline
-    def setType(value: ReplicationRunType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ReplicationRunType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

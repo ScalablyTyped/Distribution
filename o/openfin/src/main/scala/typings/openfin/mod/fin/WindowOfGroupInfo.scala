@@ -18,19 +18,15 @@ trait WindowOfGroupInfo extends StObject {
 }
 object WindowOfGroupInfo {
   
-  @scala.inline
-  def apply(appUuid: String, windowName: String): WindowOfGroupInfo = {
+  inline def apply(appUuid: String, windowName: String): WindowOfGroupInfo = {
     val __obj = js.Dynamic.literal(appUuid = appUuid.asInstanceOf[js.Any], windowName = windowName.asInstanceOf[js.Any])
     __obj.asInstanceOf[WindowOfGroupInfo]
   }
   
-  @scala.inline
-  implicit class WindowOfGroupInfoMutableBuilder[Self <: WindowOfGroupInfo] (val x: Self) extends AnyVal {
+  extension [Self <: WindowOfGroupInfo](x: Self) {
     
-    @scala.inline
-    def setAppUuid(value: String): Self = StObject.set(x, "appUuid", value.asInstanceOf[js.Any])
+    inline def setAppUuid(value: String): Self = StObject.set(x, "appUuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowName(value: String): Self = StObject.set(x, "windowName", value.asInstanceOf[js.Any])
+    inline def setWindowName(value: String): Self = StObject.set(x, "windowName", value.asInstanceOf[js.Any])
   }
 }

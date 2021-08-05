@@ -22,22 +22,17 @@ trait FinalizeDeviceClaimRequest extends StObject {
 }
 object FinalizeDeviceClaimRequest {
   
-  @scala.inline
-  def apply(DeviceId: string): FinalizeDeviceClaimRequest = {
+  inline def apply(DeviceId: string): FinalizeDeviceClaimRequest = {
     val __obj = js.Dynamic.literal(DeviceId = DeviceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[FinalizeDeviceClaimRequest]
   }
   
-  @scala.inline
-  implicit class FinalizeDeviceClaimRequestMutableBuilder[Self <: FinalizeDeviceClaimRequest] (val x: Self) extends AnyVal {
+  extension [Self <: FinalizeDeviceClaimRequest](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: string): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: string): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: mapOfString): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: mapOfString): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

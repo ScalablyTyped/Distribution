@@ -13,20 +13,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SavingMessageDescriptor extends StObject
 object SavingMessageDescriptor {
   
-  @scala.inline
-  def SavingMessageDescriptorHtml(html: String): typings.inboxsdk.mod.ButterBar.SavingMessageDescriptorHtml = {
+  inline def SavingMessageDescriptorHtml(html: String): typings.inboxsdk.mod.ButterBar.SavingMessageDescriptorHtml = {
     val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.inboxsdk.mod.ButterBar.SavingMessageDescriptorHtml]
   }
   
-  @scala.inline
-  def SavingMessageDescriptorHtmlElement(el: HTMLElement): typings.inboxsdk.mod.ButterBar.SavingMessageDescriptorHtmlElement = {
+  inline def SavingMessageDescriptorHtmlElement(el: HTMLElement): typings.inboxsdk.mod.ButterBar.SavingMessageDescriptorHtmlElement = {
     val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.inboxsdk.mod.ButterBar.SavingMessageDescriptorHtmlElement]
   }
   
-  @scala.inline
-  def SavingMessageDescriptorText(text: String): typings.inboxsdk.mod.ButterBar.SavingMessageDescriptorText = {
+  inline def SavingMessageDescriptorText(text: String): typings.inboxsdk.mod.ButterBar.SavingMessageDescriptorText = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.inboxsdk.mod.ButterBar.SavingMessageDescriptorText]
   }

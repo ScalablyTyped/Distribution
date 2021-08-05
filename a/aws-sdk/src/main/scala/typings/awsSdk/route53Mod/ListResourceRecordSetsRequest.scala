@@ -33,40 +33,29 @@ trait ListResourceRecordSetsRequest extends StObject {
 }
 object ListResourceRecordSetsRequest {
   
-  @scala.inline
-  def apply(HostedZoneId: ResourceId): ListResourceRecordSetsRequest = {
+  inline def apply(HostedZoneId: ResourceId): ListResourceRecordSetsRequest = {
     val __obj = js.Dynamic.literal(HostedZoneId = HostedZoneId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListResourceRecordSetsRequest]
   }
   
-  @scala.inline
-  implicit class ListResourceRecordSetsRequestMutableBuilder[Self <: ListResourceRecordSetsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListResourceRecordSetsRequest](x: Self) {
     
-    @scala.inline
-    def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
+    inline def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
+    inline def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
     
-    @scala.inline
-    def setStartRecordIdentifier(value: ResourceRecordSetIdentifier): Self = StObject.set(x, "StartRecordIdentifier", value.asInstanceOf[js.Any])
+    inline def setStartRecordIdentifier(value: ResourceRecordSetIdentifier): Self = StObject.set(x, "StartRecordIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartRecordIdentifierUndefined: Self = StObject.set(x, "StartRecordIdentifier", js.undefined)
+    inline def setStartRecordIdentifierUndefined: Self = StObject.set(x, "StartRecordIdentifier", js.undefined)
     
-    @scala.inline
-    def setStartRecordName(value: DNSName): Self = StObject.set(x, "StartRecordName", value.asInstanceOf[js.Any])
+    inline def setStartRecordName(value: DNSName): Self = StObject.set(x, "StartRecordName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartRecordNameUndefined: Self = StObject.set(x, "StartRecordName", js.undefined)
+    inline def setStartRecordNameUndefined: Self = StObject.set(x, "StartRecordName", js.undefined)
     
-    @scala.inline
-    def setStartRecordType(value: RRType): Self = StObject.set(x, "StartRecordType", value.asInstanceOf[js.Any])
+    inline def setStartRecordType(value: RRType): Self = StObject.set(x, "StartRecordType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartRecordTypeUndefined: Self = StObject.set(x, "StartRecordType", js.undefined)
+    inline def setStartRecordTypeUndefined: Self = StObject.set(x, "StartRecordType", js.undefined)
   }
 }

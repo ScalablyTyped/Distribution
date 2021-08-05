@@ -47,8 +47,7 @@ trait CustomOverlay
 }
 object CustomOverlay {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _map: Map,
     getHtmlElement: () => HTMLElement,
     getMap: () => Map,
@@ -61,28 +60,20 @@ object CustomOverlay {
     __obj.asInstanceOf[CustomOverlay]
   }
   
-  @scala.inline
-  implicit class CustomOverlayMutableBuilder[Self <: CustomOverlay] (val x: Self) extends AnyVal {
+  extension [Self <: CustomOverlay](x: Self) {
     
-    @scala.inline
-    def setGetHtmlElement(value: () => HTMLElement): Self = StObject.set(x, "getHtmlElement", js.Any.fromFunction0(value))
+    inline def setGetHtmlElement(value: () => HTMLElement): Self = StObject.set(x, "getHtmlElement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMap(value: () => Map): Self = StObject.set(x, "getMap", js.Any.fromFunction0(value))
+    inline def setGetMap(value: () => Map): Self = StObject.set(x, "getMap", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnAdd(value: () => Unit): Self = StObject.set(x, "onAdd", js.Any.fromFunction0(value))
+    inline def setOnAdd(value: () => Unit): Self = StObject.set(x, "onAdd", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnLoad(value: () => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
+    inline def setOnLoad(value: () => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOnRemove(value: () => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction0(value))
+    inline def setOnRemove(value: () => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetHtmlElement(value: HTMLElement => Unit): Self = StObject.set(x, "setHtmlElement", js.Any.fromFunction1(value))
+    inline def setSetHtmlElement(value: HTMLElement => Unit): Self = StObject.set(x, "setHtmlElement", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_map(value: Map): Self = StObject.set(x, "_map", value.asInstanceOf[js.Any])
+    inline def set_map(value: Map): Self = StObject.set(x, "_map", value.asInstanceOf[js.Any])
   }
 }

@@ -28,37 +28,27 @@ trait AggregationAuthorization extends StObject {
 }
 object AggregationAuthorization {
   
-  @scala.inline
-  def apply(): AggregationAuthorization = {
+  inline def apply(): AggregationAuthorization = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AggregationAuthorization]
   }
   
-  @scala.inline
-  implicit class AggregationAuthorizationMutableBuilder[Self <: AggregationAuthorization] (val x: Self) extends AnyVal {
+  extension [Self <: AggregationAuthorization](x: Self) {
     
-    @scala.inline
-    def setAggregationAuthorizationArn(value: String): Self = StObject.set(x, "AggregationAuthorizationArn", value.asInstanceOf[js.Any])
+    inline def setAggregationAuthorizationArn(value: String): Self = StObject.set(x, "AggregationAuthorizationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregationAuthorizationArnUndefined: Self = StObject.set(x, "AggregationAuthorizationArn", js.undefined)
+    inline def setAggregationAuthorizationArnUndefined: Self = StObject.set(x, "AggregationAuthorizationArn", js.undefined)
     
-    @scala.inline
-    def setAuthorizedAccountId(value: AccountId): Self = StObject.set(x, "AuthorizedAccountId", value.asInstanceOf[js.Any])
+    inline def setAuthorizedAccountId(value: AccountId): Self = StObject.set(x, "AuthorizedAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizedAccountIdUndefined: Self = StObject.set(x, "AuthorizedAccountId", js.undefined)
+    inline def setAuthorizedAccountIdUndefined: Self = StObject.set(x, "AuthorizedAccountId", js.undefined)
     
-    @scala.inline
-    def setAuthorizedAwsRegion(value: AwsRegion): Self = StObject.set(x, "AuthorizedAwsRegion", value.asInstanceOf[js.Any])
+    inline def setAuthorizedAwsRegion(value: AwsRegion): Self = StObject.set(x, "AuthorizedAwsRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizedAwsRegionUndefined: Self = StObject.set(x, "AuthorizedAwsRegion", js.undefined)
+    inline def setAuthorizedAwsRegionUndefined: Self = StObject.set(x, "AuthorizedAwsRegion", js.undefined)
     
-    @scala.inline
-    def setCreationTime(value: Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
   }
 }

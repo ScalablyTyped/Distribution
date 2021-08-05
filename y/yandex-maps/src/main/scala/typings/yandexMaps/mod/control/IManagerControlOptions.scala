@@ -18,31 +18,23 @@ trait IManagerControlOptions extends StObject {
 }
 object IManagerControlOptions {
   
-  @scala.inline
-  def apply(): IManagerControlOptions = {
+  inline def apply(): IManagerControlOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IManagerControlOptions]
   }
   
-  @scala.inline
-  implicit class IManagerControlOptionsMutableBuilder[Self <: IManagerControlOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IManagerControlOptions](x: Self) {
     
-    @scala.inline
-    def setFloat(value: none | left | right): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
+    inline def setFloat(value: none | left | right): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloatIndex(value: Double): Self = StObject.set(x, "floatIndex", value.asInstanceOf[js.Any])
+    inline def setFloatIndex(value: Double): Self = StObject.set(x, "floatIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloatIndexUndefined: Self = StObject.set(x, "floatIndex", js.undefined)
+    inline def setFloatIndexUndefined: Self = StObject.set(x, "floatIndex", js.undefined)
     
-    @scala.inline
-    def setFloatUndefined: Self = StObject.set(x, "float", js.undefined)
+    inline def setFloatUndefined: Self = StObject.set(x, "float", js.undefined)
     
-    @scala.inline
-    def setPosition(value: Bottom): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Bottom): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

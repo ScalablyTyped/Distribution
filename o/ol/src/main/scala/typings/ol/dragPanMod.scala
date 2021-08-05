@@ -27,32 +27,24 @@ object dragPanMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCondition(value: Condition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+      inline def setCondition(value: Condition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+      inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
       
-      @scala.inline
-      def setKinetic(value: typings.ol.kineticMod.default): Self = StObject.set(x, "kinetic", value.asInstanceOf[js.Any])
+      inline def setKinetic(value: typings.ol.kineticMod.default): Self = StObject.set(x, "kinetic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKineticUndefined: Self = StObject.set(x, "kinetic", js.undefined)
+      inline def setKineticUndefined: Self = StObject.set(x, "kinetic", js.undefined)
       
-      @scala.inline
-      def setOnFocusOnly(value: Boolean): Self = StObject.set(x, "onFocusOnly", value.asInstanceOf[js.Any])
+      inline def setOnFocusOnly(value: Boolean): Self = StObject.set(x, "onFocusOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnFocusOnlyUndefined: Self = StObject.set(x, "onFocusOnly", js.undefined)
+      inline def setOnFocusOnlyUndefined: Self = StObject.set(x, "onFocusOnly", js.undefined)
     }
   }
 }

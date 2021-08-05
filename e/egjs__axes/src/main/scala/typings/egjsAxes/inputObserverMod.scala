@@ -26,19 +26,19 @@ object inputObserverMod {
       am: AnimationManager
     ) = this()
     
-    var am: js.Any = js.native
+    /* private */ var am: js.Any = js.native
     
     /* private */ def atOutside(pos: js.Any): js.Any = js.native
     
-    var axm: js.Any = js.native
+    /* private */ var axm: js.Any = js.native
     
     def change(inputType: js.Any, event: js.Any, offset: Axis): Unit = js.native
     
-    var em: js.Any = js.native
+    /* private */ var em: js.Any = js.native
     
     var isOutside: Boolean = js.native
     
-    var itm: js.Any = js.native
+    /* private */ var itm: js.Any = js.native
     
     var moveDistance: Axis = js.native
   }

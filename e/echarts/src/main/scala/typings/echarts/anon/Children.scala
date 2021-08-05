@@ -55,40 +55,29 @@ trait Children extends StObject {
 }
 object Children {
   
-  @scala.inline
-  def apply(): Children = {
+  inline def apply(): Children = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Children]
   }
   
-  @scala.inline
-  implicit class ChildrenMutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
+  extension [Self <: Children](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[js.Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[js.Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setChildrenVarargs(value: js.Any*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: js.Any*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+    inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    @scala.inline
-    def setTooltip(value: BaseTooltip): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: BaseTooltip): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
   }
 }

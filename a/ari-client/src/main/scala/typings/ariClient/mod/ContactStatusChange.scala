@@ -21,8 +21,7 @@ trait ContactStatusChange
 }
 object ContactStatusChange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     application: String,
     contact_info: ContactInfo,
     endpoint: Endpoint,
@@ -34,13 +33,10 @@ object ContactStatusChange {
     __obj.asInstanceOf[ContactStatusChange]
   }
   
-  @scala.inline
-  implicit class ContactStatusChangeMutableBuilder[Self <: ContactStatusChange] (val x: Self) extends AnyVal {
+  extension [Self <: ContactStatusChange](x: Self) {
     
-    @scala.inline
-    def setContact_info(value: ContactInfo): Self = StObject.set(x, "contact_info", value.asInstanceOf[js.Any])
+    inline def setContact_info(value: ContactInfo): Self = StObject.set(x, "contact_info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpoint(value: Endpoint): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
+    inline def setEndpoint(value: Endpoint): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
   }
 }

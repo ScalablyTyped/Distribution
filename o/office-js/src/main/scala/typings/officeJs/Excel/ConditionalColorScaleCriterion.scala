@@ -45,8 +45,7 @@ trait ConditionalColorScaleCriterion extends StObject {
 }
 object ConditionalColorScaleCriterion {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `type`: ConditionalFormatColorCriterionType | Invalid | LowestValue | HighestValue | Number | Percent | Formula | Percentile
   ): ConditionalColorScaleCriterion = {
     val __obj = js.Dynamic.literal()
@@ -54,23 +53,17 @@ object ConditionalColorScaleCriterion {
     __obj.asInstanceOf[ConditionalColorScaleCriterion]
   }
   
-  @scala.inline
-  implicit class ConditionalColorScaleCriterionMutableBuilder[Self <: ConditionalColorScaleCriterion] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionalColorScaleCriterion](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setFormula(value: String): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
+    inline def setFormula(value: String): Self = StObject.set(x, "formula", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
+    inline def setFormulaUndefined: Self = StObject.set(x, "formula", js.undefined)
     
-    @scala.inline
-    def setType(
+    inline def setType(
       value: ConditionalFormatColorCriterionType | Invalid | LowestValue | HighestValue | Number | Percent | Formula | Percentile
     ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

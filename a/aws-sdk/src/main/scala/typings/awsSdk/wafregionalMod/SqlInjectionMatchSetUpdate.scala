@@ -18,19 +18,15 @@ trait SqlInjectionMatchSetUpdate extends StObject {
 }
 object SqlInjectionMatchSetUpdate {
   
-  @scala.inline
-  def apply(Action: ChangeAction, SqlInjectionMatchTuple: SqlInjectionMatchTuple): SqlInjectionMatchSetUpdate = {
+  inline def apply(Action: ChangeAction, SqlInjectionMatchTuple: SqlInjectionMatchTuple): SqlInjectionMatchSetUpdate = {
     val __obj = js.Dynamic.literal(Action = Action.asInstanceOf[js.Any], SqlInjectionMatchTuple = SqlInjectionMatchTuple.asInstanceOf[js.Any])
     __obj.asInstanceOf[SqlInjectionMatchSetUpdate]
   }
   
-  @scala.inline
-  implicit class SqlInjectionMatchSetUpdateMutableBuilder[Self <: SqlInjectionMatchSetUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: SqlInjectionMatchSetUpdate](x: Self) {
     
-    @scala.inline
-    def setAction(value: ChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
+    inline def setAction(value: ChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSqlInjectionMatchTuple(value: SqlInjectionMatchTuple): Self = StObject.set(x, "SqlInjectionMatchTuple", value.asInstanceOf[js.Any])
+    inline def setSqlInjectionMatchTuple(value: SqlInjectionMatchTuple): Self = StObject.set(x, "SqlInjectionMatchTuple", value.asInstanceOf[js.Any])
   }
 }

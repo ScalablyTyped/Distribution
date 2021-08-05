@@ -14,12 +14,10 @@ object ShutdownKind {
   @JSGlobal("Windows.System.ShutdownKind.restart")
   @js.native
   def restart: js.Any = js.native
-  @scala.inline
-  def restart_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("restart")(x.asInstanceOf[js.Any])
+  inline def restart_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("restart")(x.asInstanceOf[js.Any])
   
   @JSGlobal("Windows.System.ShutdownKind.shutdown")
   @js.native
   def shutdown: js.Any = js.native
-  @scala.inline
-  def shutdown_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shutdown")(x.asInstanceOf[js.Any])
+  inline def shutdown_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shutdown")(x.asInstanceOf[js.Any])
 }

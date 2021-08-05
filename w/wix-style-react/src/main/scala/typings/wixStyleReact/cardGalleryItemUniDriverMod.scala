@@ -37,8 +37,7 @@ object cardGalleryItemUniDriverMod {
   }
   object CardGalleryItemUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       clickOnPrimaryAction: () => js.Promise[Unit],
       clickOnSecondaryAction: () => js.Promise[Unit],
@@ -59,44 +58,31 @@ object cardGalleryItemUniDriverMod {
       __obj.asInstanceOf[CardGalleryItemUniDriver]
     }
     
-    @scala.inline
-    implicit class CardGalleryItemUniDriverMutableBuilder[Self <: CardGalleryItemUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: CardGalleryItemUniDriver](x: Self) {
       
-      @scala.inline
-      def setClickOnPrimaryAction(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickOnPrimaryAction", js.Any.fromFunction0(value))
+      inline def setClickOnPrimaryAction(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickOnPrimaryAction", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickOnSecondaryAction(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickOnSecondaryAction", js.Any.fromFunction0(value))
+      inline def setClickOnSecondaryAction(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickOnSecondaryAction", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetBackgroundImageNode(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getBackgroundImageNode", js.Any.fromFunction0(value))
+      inline def setGetBackgroundImageNode(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getBackgroundImageNode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetBackgroundImageUrl(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getBackgroundImageUrl", js.Any.fromFunction0(value))
+      inline def setGetBackgroundImageUrl(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getBackgroundImageUrl", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetBadge(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getBadge", js.Any.fromFunction0(value))
+      inline def setGetBadge(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getBadge", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPrimaryActionLabel(value: () => js.Promise[String]): Self = StObject.set(x, "getPrimaryActionLabel", js.Any.fromFunction0(value))
+      inline def setGetPrimaryActionLabel(value: () => js.Promise[String]): Self = StObject.set(x, "getPrimaryActionLabel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSecondaryActionLabel(value: () => js.Promise[String]): Self = StObject.set(x, "getSecondaryActionLabel", js.Any.fromFunction0(value))
+      inline def setGetSecondaryActionLabel(value: () => js.Promise[String]): Self = StObject.set(x, "getSecondaryActionLabel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSettingsMenu(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getSettingsMenu", js.Any.fromFunction0(value))
+      inline def setGetSettingsMenu(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getSettingsMenu", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSubtitle(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getSubtitle", js.Any.fromFunction0(value))
+      inline def setGetSubtitle(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getSubtitle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTitle(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
+      inline def setGetTitle(value: () => js.Promise[String | Null]): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHover(value: () => js.Promise[Unit]): Self = StObject.set(x, "hover", js.Any.fromFunction0(value))
+      inline def setHover(value: () => js.Promise[Unit]): Self = StObject.set(x, "hover", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsPrimaryActionDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isPrimaryActionDisabled", js.Any.fromFunction0(value))
+      inline def setIsPrimaryActionDisabled(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isPrimaryActionDisabled", js.Any.fromFunction0(value))
     }
   }
 }

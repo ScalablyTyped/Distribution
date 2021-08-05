@@ -35,8 +35,7 @@ trait XLinguServiceEventBroadcaster
 }
 object XLinguServiceEventBroadcaster {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addLinguServiceEventListener: XLinguServiceEventListener => Boolean,
     queryInterface: `type` => js.Any,
@@ -47,13 +46,10 @@ object XLinguServiceEventBroadcaster {
     __obj.asInstanceOf[XLinguServiceEventBroadcaster]
   }
   
-  @scala.inline
-  implicit class XLinguServiceEventBroadcasterMutableBuilder[Self <: XLinguServiceEventBroadcaster] (val x: Self) extends AnyVal {
+  extension [Self <: XLinguServiceEventBroadcaster](x: Self) {
     
-    @scala.inline
-    def setAddLinguServiceEventListener(value: XLinguServiceEventListener => Boolean): Self = StObject.set(x, "addLinguServiceEventListener", js.Any.fromFunction1(value))
+    inline def setAddLinguServiceEventListener(value: XLinguServiceEventListener => Boolean): Self = StObject.set(x, "addLinguServiceEventListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveLinguServiceEventListener(value: XLinguServiceEventListener => Boolean): Self = StObject.set(x, "removeLinguServiceEventListener", js.Any.fromFunction1(value))
+    inline def setRemoveLinguServiceEventListener(value: XLinguServiceEventListener => Boolean): Self = StObject.set(x, "removeLinguServiceEventListener", js.Any.fromFunction1(value))
   }
 }

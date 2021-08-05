@@ -21,43 +21,31 @@ trait RestrictItem extends StObject {
 }
 object RestrictItem {
   
-  @scala.inline
-  def apply(): RestrictItem = {
+  inline def apply(): RestrictItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RestrictItem]
   }
   
-  @scala.inline
-  implicit class RestrictItemMutableBuilder[Self <: RestrictItem] (val x: Self) extends AnyVal {
+  extension [Self <: RestrictItem](x: Self) {
     
-    @scala.inline
-    def setDriveFollowUpRestrict(value: DriveFollowUpRestrict): Self = StObject.set(x, "driveFollowUpRestrict", value.asInstanceOf[js.Any])
+    inline def setDriveFollowUpRestrict(value: DriveFollowUpRestrict): Self = StObject.set(x, "driveFollowUpRestrict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriveFollowUpRestrictUndefined: Self = StObject.set(x, "driveFollowUpRestrict", js.undefined)
+    inline def setDriveFollowUpRestrictUndefined: Self = StObject.set(x, "driveFollowUpRestrict", js.undefined)
     
-    @scala.inline
-    def setDriveLocationRestrict(value: DriveLocationRestrict): Self = StObject.set(x, "driveLocationRestrict", value.asInstanceOf[js.Any])
+    inline def setDriveLocationRestrict(value: DriveLocationRestrict): Self = StObject.set(x, "driveLocationRestrict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriveLocationRestrictUndefined: Self = StObject.set(x, "driveLocationRestrict", js.undefined)
+    inline def setDriveLocationRestrictUndefined: Self = StObject.set(x, "driveLocationRestrict", js.undefined)
     
-    @scala.inline
-    def setDriveMimeTypeRestrict(value: DriveMimeTypeRestrict): Self = StObject.set(x, "driveMimeTypeRestrict", value.asInstanceOf[js.Any])
+    inline def setDriveMimeTypeRestrict(value: DriveMimeTypeRestrict): Self = StObject.set(x, "driveMimeTypeRestrict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriveMimeTypeRestrictUndefined: Self = StObject.set(x, "driveMimeTypeRestrict", js.undefined)
+    inline def setDriveMimeTypeRestrictUndefined: Self = StObject.set(x, "driveMimeTypeRestrict", js.undefined)
     
-    @scala.inline
-    def setDriveTimeSpanRestrict(value: DriveTimeSpanRestrict): Self = StObject.set(x, "driveTimeSpanRestrict", value.asInstanceOf[js.Any])
+    inline def setDriveTimeSpanRestrict(value: DriveTimeSpanRestrict): Self = StObject.set(x, "driveTimeSpanRestrict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriveTimeSpanRestrictUndefined: Self = StObject.set(x, "driveTimeSpanRestrict", js.undefined)
+    inline def setDriveTimeSpanRestrictUndefined: Self = StObject.set(x, "driveTimeSpanRestrict", js.undefined)
     
-    @scala.inline
-    def setSearchOperator(value: String): Self = StObject.set(x, "searchOperator", value.asInstanceOf[js.Any])
+    inline def setSearchOperator(value: String): Self = StObject.set(x, "searchOperator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchOperatorUndefined: Self = StObject.set(x, "searchOperator", js.undefined)
+    inline def setSearchOperatorUndefined: Self = StObject.set(x, "searchOperator", js.undefined)
   }
 }

@@ -19,23 +19,18 @@ trait Conditional
 }
 object Conditional {
   
-  @scala.inline
-  def apply(falseExpression: ASTNode, trueExpression: ASTNode): Conditional = {
+  inline def apply(falseExpression: ASTNode, trueExpression: ASTNode): Conditional = {
     val __obj = js.Dynamic.literal(falseExpression = falseExpression.asInstanceOf[js.Any], trueExpression = trueExpression.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Conditional")
     __obj.asInstanceOf[Conditional]
   }
   
-  @scala.inline
-  implicit class ConditionalMutableBuilder[Self <: Conditional] (val x: Self) extends AnyVal {
+  extension [Self <: Conditional](x: Self) {
     
-    @scala.inline
-    def setFalseExpression(value: ASTNode): Self = StObject.set(x, "falseExpression", value.asInstanceOf[js.Any])
+    inline def setFalseExpression(value: ASTNode): Self = StObject.set(x, "falseExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrueExpression(value: ASTNode): Self = StObject.set(x, "trueExpression", value.asInstanceOf[js.Any])
+    inline def setTrueExpression(value: ASTNode): Self = StObject.set(x, "trueExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.Conditional): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.Conditional): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

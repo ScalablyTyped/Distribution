@@ -28,40 +28,29 @@ trait DescribeSnapshotsRequest extends StObject {
 }
 object DescribeSnapshotsRequest {
   
-  @scala.inline
-  def apply(): DescribeSnapshotsRequest = {
+  inline def apply(): DescribeSnapshotsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeSnapshotsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeSnapshotsRequestMutableBuilder[Self <: DescribeSnapshotsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeSnapshotsRequest](x: Self) {
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
+    inline def setDirectoryIdUndefined: Self = StObject.set(x, "DirectoryId", js.undefined)
     
-    @scala.inline
-    def setLimit(value: Limit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: Limit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSnapshotIds(value: SnapshotIds): Self = StObject.set(x, "SnapshotIds", value.asInstanceOf[js.Any])
+    inline def setSnapshotIds(value: SnapshotIds): Self = StObject.set(x, "SnapshotIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotIdsUndefined: Self = StObject.set(x, "SnapshotIds", js.undefined)
+    inline def setSnapshotIdsUndefined: Self = StObject.set(x, "SnapshotIds", js.undefined)
     
-    @scala.inline
-    def setSnapshotIdsVarargs(value: SnapshotId*): Self = StObject.set(x, "SnapshotIds", js.Array(value :_*))
+    inline def setSnapshotIdsVarargs(value: SnapshotId*): Self = StObject.set(x, "SnapshotIds", js.Array(value :_*))
   }
 }

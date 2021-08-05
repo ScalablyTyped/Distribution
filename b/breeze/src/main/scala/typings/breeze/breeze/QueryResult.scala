@@ -26,46 +26,33 @@ trait QueryResult extends StObject {
 }
 object QueryResult {
   
-  @scala.inline
-  def apply(httpResponse: HttpResponse, query: EntityQuery, results: js.Array[Entity]): QueryResult = {
+  inline def apply(httpResponse: HttpResponse, query: EntityQuery, results: js.Array[Entity]): QueryResult = {
     val __obj = js.Dynamic.literal(httpResponse = httpResponse.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], results = results.asInstanceOf[js.Any])
     __obj.asInstanceOf[QueryResult]
   }
   
-  @scala.inline
-  implicit class QueryResultMutableBuilder[Self <: QueryResult] (val x: Self) extends AnyVal {
+  extension [Self <: QueryResult](x: Self) {
     
-    @scala.inline
-    def setEntityManager(value: EntityManager): Self = StObject.set(x, "entityManager", value.asInstanceOf[js.Any])
+    inline def setEntityManager(value: EntityManager): Self = StObject.set(x, "entityManager", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityManagerUndefined: Self = StObject.set(x, "entityManager", js.undefined)
+    inline def setEntityManagerUndefined: Self = StObject.set(x, "entityManager", js.undefined)
     
-    @scala.inline
-    def setHttpResponse(value: HttpResponse): Self = StObject.set(x, "httpResponse", value.asInstanceOf[js.Any])
+    inline def setHttpResponse(value: HttpResponse): Self = StObject.set(x, "httpResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineCount(value: Double): Self = StObject.set(x, "inlineCount", value.asInstanceOf[js.Any])
+    inline def setInlineCount(value: Double): Self = StObject.set(x, "inlineCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineCountUndefined: Self = StObject.set(x, "inlineCount", js.undefined)
+    inline def setInlineCountUndefined: Self = StObject.set(x, "inlineCount", js.undefined)
     
-    @scala.inline
-    def setQuery(value: EntityQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: EntityQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResults(value: js.Array[Entity]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[Entity]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsVarargs(value: Entity*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: Entity*): Self = StObject.set(x, "results", js.Array(value :_*))
     
-    @scala.inline
-    def setRetrievedEntities(value: js.Array[Entity]): Self = StObject.set(x, "retrievedEntities", value.asInstanceOf[js.Any])
+    inline def setRetrievedEntities(value: js.Array[Entity]): Self = StObject.set(x, "retrievedEntities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetrievedEntitiesUndefined: Self = StObject.set(x, "retrievedEntities", js.undefined)
+    inline def setRetrievedEntitiesUndefined: Self = StObject.set(x, "retrievedEntities", js.undefined)
     
-    @scala.inline
-    def setRetrievedEntitiesVarargs(value: Entity*): Self = StObject.set(x, "retrievedEntities", js.Array(value :_*))
+    inline def setRetrievedEntitiesVarargs(value: Entity*): Self = StObject.set(x, "retrievedEntities", js.Array(value :_*))
   }
 }

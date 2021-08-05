@@ -46,8 +46,7 @@ trait ApplicationViewTitleBar extends StObject {
 }
 object ApplicationViewTitleBar {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     backgroundColor: Color,
     buttonBackgroundColor: Color,
     buttonForegroundColor: Color,
@@ -65,43 +64,30 @@ object ApplicationViewTitleBar {
     __obj.asInstanceOf[ApplicationViewTitleBar]
   }
   
-  @scala.inline
-  implicit class ApplicationViewTitleBarMutableBuilder[Self <: ApplicationViewTitleBar] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationViewTitleBar](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonBackgroundColor(value: Color): Self = StObject.set(x, "buttonBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setButtonBackgroundColor(value: Color): Self = StObject.set(x, "buttonBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonForegroundColor(value: Color): Self = StObject.set(x, "buttonForegroundColor", value.asInstanceOf[js.Any])
+    inline def setButtonForegroundColor(value: Color): Self = StObject.set(x, "buttonForegroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonHoverBackgroundColor(value: Color): Self = StObject.set(x, "buttonHoverBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setButtonHoverBackgroundColor(value: Color): Self = StObject.set(x, "buttonHoverBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonHoverForegroundColor(value: Color): Self = StObject.set(x, "buttonHoverForegroundColor", value.asInstanceOf[js.Any])
+    inline def setButtonHoverForegroundColor(value: Color): Self = StObject.set(x, "buttonHoverForegroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonInactiveBackgroundColor(value: Color): Self = StObject.set(x, "buttonInactiveBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setButtonInactiveBackgroundColor(value: Color): Self = StObject.set(x, "buttonInactiveBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonInactiveForegroundColor(value: Color): Self = StObject.set(x, "buttonInactiveForegroundColor", value.asInstanceOf[js.Any])
+    inline def setButtonInactiveForegroundColor(value: Color): Self = StObject.set(x, "buttonInactiveForegroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonPressedBackgroundColor(value: Color): Self = StObject.set(x, "buttonPressedBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setButtonPressedBackgroundColor(value: Color): Self = StObject.set(x, "buttonPressedBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonPressedForegroundColor(value: Color): Self = StObject.set(x, "buttonPressedForegroundColor", value.asInstanceOf[js.Any])
+    inline def setButtonPressedForegroundColor(value: Color): Self = StObject.set(x, "buttonPressedForegroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForegroundColor(value: Color): Self = StObject.set(x, "foregroundColor", value.asInstanceOf[js.Any])
+    inline def setForegroundColor(value: Color): Self = StObject.set(x, "foregroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInactiveBackgroundColor(value: Color): Self = StObject.set(x, "inactiveBackgroundColor", value.asInstanceOf[js.Any])
+    inline def setInactiveBackgroundColor(value: Color): Self = StObject.set(x, "inactiveBackgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInactiveForegroundColor(value: Color): Self = StObject.set(x, "inactiveForegroundColor", value.asInstanceOf[js.Any])
+    inline def setInactiveForegroundColor(value: Color): Self = StObject.set(x, "inactiveForegroundColor", value.asInstanceOf[js.Any])
   }
 }

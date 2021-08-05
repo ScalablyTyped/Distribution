@@ -38,8 +38,7 @@ trait UpdateRegexPatternSetRequest extends StObject {
 }
 object UpdateRegexPatternSetRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Id: EntityId,
     LockToken: LockToken,
     Name: EntityName,
@@ -50,31 +49,22 @@ object UpdateRegexPatternSetRequest {
     __obj.asInstanceOf[UpdateRegexPatternSetRequest]
   }
   
-  @scala.inline
-  implicit class UpdateRegexPatternSetRequestMutableBuilder[Self <: UpdateRegexPatternSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateRegexPatternSetRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: EntityDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: EntityDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setId(value: EntityId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: EntityId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockToken(value: LockToken): Self = StObject.set(x, "LockToken", value.asInstanceOf[js.Any])
+    inline def setLockToken(value: LockToken): Self = StObject.set(x, "LockToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: EntityName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: EntityName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegularExpressionList(value: RegularExpressionList): Self = StObject.set(x, "RegularExpressionList", value.asInstanceOf[js.Any])
+    inline def setRegularExpressionList(value: RegularExpressionList): Self = StObject.set(x, "RegularExpressionList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegularExpressionListVarargs(value: Regex*): Self = StObject.set(x, "RegularExpressionList", js.Array(value :_*))
+    inline def setRegularExpressionListVarargs(value: Regex*): Self = StObject.set(x, "RegularExpressionList", js.Array(value :_*))
     
-    @scala.inline
-    def setScope(value: Scope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: Scope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
   }
 }

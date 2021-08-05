@@ -18,25 +18,19 @@ trait PrivateIpAddressDetails extends StObject {
 }
 object PrivateIpAddressDetails {
   
-  @scala.inline
-  def apply(): PrivateIpAddressDetails = {
+  inline def apply(): PrivateIpAddressDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PrivateIpAddressDetails]
   }
   
-  @scala.inline
-  implicit class PrivateIpAddressDetailsMutableBuilder[Self <: PrivateIpAddressDetails] (val x: Self) extends AnyVal {
+  extension [Self <: PrivateIpAddressDetails](x: Self) {
     
-    @scala.inline
-    def setPrivateDnsName(value: String): Self = StObject.set(x, "PrivateDnsName", value.asInstanceOf[js.Any])
+    inline def setPrivateDnsName(value: String): Self = StObject.set(x, "PrivateDnsName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateDnsNameUndefined: Self = StObject.set(x, "PrivateDnsName", js.undefined)
+    inline def setPrivateDnsNameUndefined: Self = StObject.set(x, "PrivateDnsName", js.undefined)
     
-    @scala.inline
-    def setPrivateIpAddress(value: String): Self = StObject.set(x, "PrivateIpAddress", value.asInstanceOf[js.Any])
+    inline def setPrivateIpAddress(value: String): Self = StObject.set(x, "PrivateIpAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateIpAddressUndefined: Self = StObject.set(x, "PrivateIpAddress", js.undefined)
+    inline def setPrivateIpAddressUndefined: Self = StObject.set(x, "PrivateIpAddress", js.undefined)
   }
 }

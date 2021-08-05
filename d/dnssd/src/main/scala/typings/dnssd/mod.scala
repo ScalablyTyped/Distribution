@@ -107,40 +107,28 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def all(): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("all")().asInstanceOf[ServiceType]
+    inline def all(): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("all")().asInstanceOf[ServiceType]
     
-    @scala.inline
-    def tcp(args: String*): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("tcp")(args.asInstanceOf[js.Any]).asInstanceOf[ServiceType]
+    inline def tcp(args: String*): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("tcp")(args.asInstanceOf[js.Any]).asInstanceOf[ServiceType]
     
-    @scala.inline
-    def udp(args: String*): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("udp")(args.asInstanceOf[js.Any]).asInstanceOf[ServiceType]
+    inline def udp(args: String*): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("udp")(args.asInstanceOf[js.Any]).asInstanceOf[ServiceType]
   }
   
-  @scala.inline
-  def all(): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("all")().asInstanceOf[ServiceType]
+  inline def all(): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("all")().asInstanceOf[ServiceType]
   
-  @scala.inline
-  def resolve(name: String, `type`: String, args: js.Object): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def resolve(name: String, `type`: String, args: js.Object): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
-  @scala.inline
-  def resolve4(name: String, `type`: String, args: js.Object): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve4")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def resolve4(name: String, `type`: String, args: js.Object): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve4")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def resolve6(name: String, `type`: String, args: js.Object): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve6")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def resolve6(name: String, `type`: String, args: js.Object): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve6")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def resolveSRV(name: String, args: js.Object): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSRV")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def resolveSRV(name: String, args: js.Object): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveSRV")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
-  @scala.inline
-  def resolveService(name: String, args: js.Object): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveService")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def resolveService(name: String, args: js.Object): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveService")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
-  @scala.inline
-  def resolveTXT(name: String, args: js.Object): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveTXT")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def resolveTXT(name: String, args: js.Object): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveTXT")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
-  @scala.inline
-  def tcp(args: String*): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("tcp")(args.asInstanceOf[js.Any]).asInstanceOf[ServiceType]
+  inline def tcp(args: String*): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("tcp")(args.asInstanceOf[js.Any]).asInstanceOf[ServiceType]
   
-  @scala.inline
-  def udp(args: String*): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("udp")(args.asInstanceOf[js.Any]).asInstanceOf[ServiceType]
+  inline def udp(args: String*): ServiceType = ^.asInstanceOf[js.Dynamic].applyDynamic("udp")(args.asInstanceOf[js.Any]).asInstanceOf[ServiceType]
 }

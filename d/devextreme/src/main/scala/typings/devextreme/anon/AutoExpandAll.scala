@@ -18,34 +18,25 @@ trait AutoExpandAll extends StObject {
 }
 object AutoExpandAll {
   
-  @scala.inline
-  def apply(): AutoExpandAll = {
+  inline def apply(): AutoExpandAll = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoExpandAll]
   }
   
-  @scala.inline
-  implicit class AutoExpandAllMutableBuilder[Self <: AutoExpandAll] (val x: Self) extends AnyVal {
+  extension [Self <: AutoExpandAll](x: Self) {
     
-    @scala.inline
-    def setAutoExpandAll(value: Boolean): Self = StObject.set(x, "autoExpandAll", value.asInstanceOf[js.Any])
+    inline def setAutoExpandAll(value: Boolean): Self = StObject.set(x, "autoExpandAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoExpandAllUndefined: Self = StObject.set(x, "autoExpandAll", js.undefined)
+    inline def setAutoExpandAllUndefined: Self = StObject.set(x, "autoExpandAll", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: template | (js.Function2[/* detailElement */ dxElement, /* detailInfo */ Watch, js.Any])): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: template | (js.Function2[/* detailElement */ dxElement, /* detailInfo */ Watch, js.Any])): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateFunction2(value: (/* detailElement */ dxElement, /* detailInfo */ Watch) => js.Any): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
+    inline def setTemplateFunction2(value: (/* detailElement */ dxElement, /* detailInfo */ Watch) => js.Any): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

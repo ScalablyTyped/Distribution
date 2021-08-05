@@ -124,8 +124,7 @@ object Casting {
       * @return True if the device supports casting; false otherwise.
       */
     /* static member */
-    @scala.inline
-    def deviceInfoSupportsCastingAsync(device: DeviceInformation): IPromiseWithIAsyncOperation[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("deviceInfoSupportsCastingAsync")(device.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
+    inline def deviceInfoSupportsCastingAsync(device: DeviceInformation): IPromiseWithIAsyncOperation[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("deviceInfoSupportsCastingAsync")(device.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
     
     /**
       * Gets a CastingDevice object for a given a device ID (acquired from a query using the Windows.Devices.Enumeration APIs).
@@ -133,8 +132,7 @@ object Casting {
       * @return The object representing the casting device.
       */
     /* static member */
-    @scala.inline
-    def fromIdAsync(value: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Casting.CastingDevice] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(value.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Casting.CastingDevice]]
+    inline def fromIdAsync(value: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Casting.CastingDevice] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(value.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Media.Casting.CastingDevice]]
     
     /**
       * Gets an AQS filter string to be used with the Windows.Devices.Enumeration APIs for a given CastingPlaybackTypes .
@@ -142,8 +140,7 @@ object Casting {
       * @return The AQS filter string.
       */
     /* static member */
-    @scala.inline
-    def getDeviceSelector(`type`: CastingPlaybackTypes): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def getDeviceSelector(`type`: CastingPlaybackTypes): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Gets an AQS filter string to be used with the Windows.Devices.Enumeration APIs for a given CastingSource .
@@ -151,8 +148,7 @@ object Casting {
       * @return The AQS filter string.
       */
     /* static member */
-    @scala.inline
-    def getDeviceSelectorFromCastingSourceAsync(castingSource: typings.winrtUwp.Windows.Media.Casting.CastingSource): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelectorFromCastingSourceAsync")(castingSource.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[String]]
+    inline def getDeviceSelectorFromCastingSourceAsync(castingSource: typings.winrtUwp.Windows.Media.Casting.CastingSource): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelectorFromCastingSourceAsync")(castingSource.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[String]]
   }
   
   /** Represents a device picker that contains a list of casting devices for the user to choose from. */

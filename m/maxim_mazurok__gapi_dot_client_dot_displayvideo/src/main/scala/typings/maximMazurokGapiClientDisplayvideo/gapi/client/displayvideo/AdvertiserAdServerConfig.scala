@@ -14,25 +14,19 @@ trait AdvertiserAdServerConfig extends StObject {
 }
 object AdvertiserAdServerConfig {
   
-  @scala.inline
-  def apply(): AdvertiserAdServerConfig = {
+  inline def apply(): AdvertiserAdServerConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdvertiserAdServerConfig]
   }
   
-  @scala.inline
-  implicit class AdvertiserAdServerConfigMutableBuilder[Self <: AdvertiserAdServerConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AdvertiserAdServerConfig](x: Self) {
     
-    @scala.inline
-    def setCmHybridConfig(value: CmHybridConfig): Self = StObject.set(x, "cmHybridConfig", value.asInstanceOf[js.Any])
+    inline def setCmHybridConfig(value: CmHybridConfig): Self = StObject.set(x, "cmHybridConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCmHybridConfigUndefined: Self = StObject.set(x, "cmHybridConfig", js.undefined)
+    inline def setCmHybridConfigUndefined: Self = StObject.set(x, "cmHybridConfig", js.undefined)
     
-    @scala.inline
-    def setThirdPartyOnlyConfig(value: ThirdPartyOnlyConfig): Self = StObject.set(x, "thirdPartyOnlyConfig", value.asInstanceOf[js.Any])
+    inline def setThirdPartyOnlyConfig(value: ThirdPartyOnlyConfig): Self = StObject.set(x, "thirdPartyOnlyConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThirdPartyOnlyConfigUndefined: Self = StObject.set(x, "thirdPartyOnlyConfig", js.undefined)
+    inline def setThirdPartyOnlyConfigUndefined: Self = StObject.set(x, "thirdPartyOnlyConfig", js.undefined)
   }
 }

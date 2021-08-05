@@ -18,8 +18,7 @@ trait FooterShape
      with TextShape
 object FooterShape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Bookmark: String,
     DimColor: Color,
     DimHide: Boolean,

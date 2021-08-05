@@ -27,49 +27,35 @@ trait UserDeletionRequest extends StObject {
 }
 object UserDeletionRequest {
   
-  @scala.inline
-  def apply(): UserDeletionRequest = {
+  inline def apply(): UserDeletionRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserDeletionRequest]
   }
   
-  @scala.inline
-  implicit class UserDeletionRequestMutableBuilder[Self <: UserDeletionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UserDeletionRequest](x: Self) {
     
-    @scala.inline
-    def setDeletionRequestTime(value: String): Self = StObject.set(x, "deletionRequestTime", value.asInstanceOf[js.Any])
+    inline def setDeletionRequestTime(value: String): Self = StObject.set(x, "deletionRequestTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletionRequestTimeUndefined: Self = StObject.set(x, "deletionRequestTime", js.undefined)
+    inline def setDeletionRequestTimeUndefined: Self = StObject.set(x, "deletionRequestTime", js.undefined)
     
-    @scala.inline
-    def setFirebaseProjectId(value: String): Self = StObject.set(x, "firebaseProjectId", value.asInstanceOf[js.Any])
+    inline def setFirebaseProjectId(value: String): Self = StObject.set(x, "firebaseProjectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirebaseProjectIdUndefined: Self = StObject.set(x, "firebaseProjectId", js.undefined)
+    inline def setFirebaseProjectIdUndefined: Self = StObject.set(x, "firebaseProjectId", js.undefined)
     
-    @scala.inline
-    def setId(value: Type): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Type): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPropertyId(value: String): Self = StObject.set(x, "propertyId", value.asInstanceOf[js.Any])
+    inline def setPropertyId(value: String): Self = StObject.set(x, "propertyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyIdUndefined: Self = StObject.set(x, "propertyId", js.undefined)
+    inline def setPropertyIdUndefined: Self = StObject.set(x, "propertyId", js.undefined)
     
-    @scala.inline
-    def setWebPropertyId(value: String): Self = StObject.set(x, "webPropertyId", value.asInstanceOf[js.Any])
+    inline def setWebPropertyId(value: String): Self = StObject.set(x, "webPropertyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebPropertyIdUndefined: Self = StObject.set(x, "webPropertyId", js.undefined)
+    inline def setWebPropertyIdUndefined: Self = StObject.set(x, "webPropertyId", js.undefined)
   }
 }

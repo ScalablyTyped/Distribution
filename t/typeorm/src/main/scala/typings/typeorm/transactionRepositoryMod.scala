@@ -11,8 +11,6 @@ object transactionRepositoryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def TransactionRepository(): ParameterDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("TransactionRepository")().asInstanceOf[ParameterDecorator]
-  @scala.inline
-  def TransactionRepository(entityType: js.Function): ParameterDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("TransactionRepository")(entityType.asInstanceOf[js.Any]).asInstanceOf[ParameterDecorator]
+  inline def TransactionRepository(): ParameterDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("TransactionRepository")().asInstanceOf[ParameterDecorator]
+  inline def TransactionRepository(entityType: js.Function): ParameterDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("TransactionRepository")(entityType.asInstanceOf[js.Any]).asInstanceOf[ParameterDecorator]
 }

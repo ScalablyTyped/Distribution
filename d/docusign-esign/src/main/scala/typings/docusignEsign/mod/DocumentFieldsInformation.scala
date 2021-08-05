@@ -14,27 +14,22 @@ trait DocumentFieldsInformation extends StObject {
 }
 object DocumentFieldsInformation {
   
-  @scala.inline
-  def apply(): DocumentFieldsInformation = {
+  inline def apply(): DocumentFieldsInformation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentFieldsInformation]
   }
   
-  @scala.inline
-  implicit class DocumentFieldsInformationMutableBuilder[Self <: DocumentFieldsInformation] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentFieldsInformation](x: Self) {
     
-    @scala.inline
-    def setDocumentFields(
+    inline def setDocumentFields(
       value: js.Array[
           /* A name-value pair that describes an item and provides a value for the item. */ NameValue
         ]
     ): Self = StObject.set(x, "documentFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentFieldsUndefined: Self = StObject.set(x, "documentFields", js.undefined)
+    inline def setDocumentFieldsUndefined: Self = StObject.set(x, "documentFields", js.undefined)
     
-    @scala.inline
-    def setDocumentFieldsVarargs(
+    inline def setDocumentFieldsVarargs(
       value: (/* A name-value pair that describes an item and provides a value for the item. */ NameValue)*
     ): Self = StObject.set(x, "documentFields", js.Array(value :_*))
   }

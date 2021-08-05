@@ -18,28 +18,21 @@ trait DescribeTransitGatewayRouteTablesResult extends StObject {
 }
 object DescribeTransitGatewayRouteTablesResult {
   
-  @scala.inline
-  def apply(): DescribeTransitGatewayRouteTablesResult = {
+  inline def apply(): DescribeTransitGatewayRouteTablesResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeTransitGatewayRouteTablesResult]
   }
   
-  @scala.inline
-  implicit class DescribeTransitGatewayRouteTablesResultMutableBuilder[Self <: DescribeTransitGatewayRouteTablesResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTransitGatewayRouteTablesResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTransitGatewayRouteTables(value: TransitGatewayRouteTableList): Self = StObject.set(x, "TransitGatewayRouteTables", value.asInstanceOf[js.Any])
+    inline def setTransitGatewayRouteTables(value: TransitGatewayRouteTableList): Self = StObject.set(x, "TransitGatewayRouteTables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransitGatewayRouteTablesUndefined: Self = StObject.set(x, "TransitGatewayRouteTables", js.undefined)
+    inline def setTransitGatewayRouteTablesUndefined: Self = StObject.set(x, "TransitGatewayRouteTables", js.undefined)
     
-    @scala.inline
-    def setTransitGatewayRouteTablesVarargs(value: TransitGatewayRouteTable*): Self = StObject.set(x, "TransitGatewayRouteTables", js.Array(value :_*))
+    inline def setTransitGatewayRouteTablesVarargs(value: TransitGatewayRouteTable*): Self = StObject.set(x, "TransitGatewayRouteTables", js.Array(value :_*))
   }
 }

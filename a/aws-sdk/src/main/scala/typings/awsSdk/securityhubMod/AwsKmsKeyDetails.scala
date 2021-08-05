@@ -43,55 +43,39 @@ trait AwsKmsKeyDetails extends StObject {
 }
 object AwsKmsKeyDetails {
   
-  @scala.inline
-  def apply(): AwsKmsKeyDetails = {
+  inline def apply(): AwsKmsKeyDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsKmsKeyDetails]
   }
   
-  @scala.inline
-  implicit class AwsKmsKeyDetailsMutableBuilder[Self <: AwsKmsKeyDetails] (val x: Self) extends AnyVal {
+  extension [Self <: AwsKmsKeyDetails](x: Self) {
     
-    @scala.inline
-    def setAWSAccountId(value: NonEmptyString): Self = StObject.set(x, "AWSAccountId", value.asInstanceOf[js.Any])
+    inline def setAWSAccountId(value: NonEmptyString): Self = StObject.set(x, "AWSAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAWSAccountIdUndefined: Self = StObject.set(x, "AWSAccountId", js.undefined)
+    inline def setAWSAccountIdUndefined: Self = StObject.set(x, "AWSAccountId", js.undefined)
     
-    @scala.inline
-    def setCreationDate(value: Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
-    @scala.inline
-    def setDescription(value: NonEmptyString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: NonEmptyString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setKeyId(value: NonEmptyString): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: NonEmptyString): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
+    inline def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
     
-    @scala.inline
-    def setKeyManager(value: NonEmptyString): Self = StObject.set(x, "KeyManager", value.asInstanceOf[js.Any])
+    inline def setKeyManager(value: NonEmptyString): Self = StObject.set(x, "KeyManager", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyManagerUndefined: Self = StObject.set(x, "KeyManager", js.undefined)
+    inline def setKeyManagerUndefined: Self = StObject.set(x, "KeyManager", js.undefined)
     
-    @scala.inline
-    def setKeyState(value: NonEmptyString): Self = StObject.set(x, "KeyState", value.asInstanceOf[js.Any])
+    inline def setKeyState(value: NonEmptyString): Self = StObject.set(x, "KeyState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyStateUndefined: Self = StObject.set(x, "KeyState", js.undefined)
+    inline def setKeyStateUndefined: Self = StObject.set(x, "KeyState", js.undefined)
     
-    @scala.inline
-    def setOrigin(value: NonEmptyString): Self = StObject.set(x, "Origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: NonEmptyString): Self = StObject.set(x, "Origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginUndefined: Self = StObject.set(x, "Origin", js.undefined)
+    inline def setOriginUndefined: Self = StObject.set(x, "Origin", js.undefined)
   }
 }

@@ -17,25 +17,19 @@ trait OutlierDetails
 }
 object OutlierDetails {
   
-  @scala.inline
-  def apply(): OutlierDetails = {
+  inline def apply(): OutlierDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OutlierDetails]
   }
   
-  @scala.inline
-  implicit class OutlierDetailsMutableBuilder[Self <: OutlierDetails] (val x: Self) extends AnyVal {
+  extension [Self <: OutlierDetails](x: Self) {
     
-    @scala.inline
-    def setReason(value: baseline | new_regime): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: baseline | new_regime): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

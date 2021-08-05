@@ -13,16 +13,13 @@ trait CancelSigningProfileRequest extends StObject {
 }
 object CancelSigningProfileRequest {
   
-  @scala.inline
-  def apply(profileName: ProfileName): CancelSigningProfileRequest = {
+  inline def apply(profileName: ProfileName): CancelSigningProfileRequest = {
     val __obj = js.Dynamic.literal(profileName = profileName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelSigningProfileRequest]
   }
   
-  @scala.inline
-  implicit class CancelSigningProfileRequestMutableBuilder[Self <: CancelSigningProfileRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CancelSigningProfileRequest](x: Self) {
     
-    @scala.inline
-    def setProfileName(value: ProfileName): Self = StObject.set(x, "profileName", value.asInstanceOf[js.Any])
+    inline def setProfileName(value: ProfileName): Self = StObject.set(x, "profileName", value.asInstanceOf[js.Any])
   }
 }

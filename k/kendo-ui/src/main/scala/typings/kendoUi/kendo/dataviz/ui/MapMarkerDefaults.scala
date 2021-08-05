@@ -12,25 +12,19 @@ trait MapMarkerDefaults extends StObject {
 }
 object MapMarkerDefaults {
   
-  @scala.inline
-  def apply(): MapMarkerDefaults = {
+  inline def apply(): MapMarkerDefaults = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapMarkerDefaults]
   }
   
-  @scala.inline
-  implicit class MapMarkerDefaultsMutableBuilder[Self <: MapMarkerDefaults] (val x: Self) extends AnyVal {
+  extension [Self <: MapMarkerDefaults](x: Self) {
     
-    @scala.inline
-    def setShape(value: String): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: String): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+    inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
     
-    @scala.inline
-    def setTooltip(value: MapMarkerDefaultsTooltip): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
+    inline def setTooltip(value: MapMarkerDefaultsTooltip): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
+    inline def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
   }
 }

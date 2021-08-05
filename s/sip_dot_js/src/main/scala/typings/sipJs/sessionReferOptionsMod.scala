@@ -22,32 +22,24 @@ object sessionReferOptionsMod {
   }
   object SessionReferOptions {
     
-    @scala.inline
-    def apply(): SessionReferOptions = {
+    inline def apply(): SessionReferOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SessionReferOptions]
     }
     
-    @scala.inline
-    implicit class SessionReferOptionsMutableBuilder[Self <: SessionReferOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SessionReferOptions](x: Self) {
       
-      @scala.inline
-      def setOnNotify(value: /* notification */ Notification => Unit): Self = StObject.set(x, "onNotify", js.Any.fromFunction1(value))
+      inline def setOnNotify(value: /* notification */ Notification => Unit): Self = StObject.set(x, "onNotify", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnNotifyUndefined: Self = StObject.set(x, "onNotify", js.undefined)
+      inline def setOnNotifyUndefined: Self = StObject.set(x, "onNotify", js.undefined)
       
-      @scala.inline
-      def setRequestDelegate(value: OutgoingRequestDelegate): Self = StObject.set(x, "requestDelegate", value.asInstanceOf[js.Any])
+      inline def setRequestDelegate(value: OutgoingRequestDelegate): Self = StObject.set(x, "requestDelegate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestDelegateUndefined: Self = StObject.set(x, "requestDelegate", js.undefined)
+      inline def setRequestDelegateUndefined: Self = StObject.set(x, "requestDelegate", js.undefined)
       
-      @scala.inline
-      def setRequestOptions(value: RequestOptions): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
+      inline def setRequestOptions(value: RequestOptions): Self = StObject.set(x, "requestOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestOptionsUndefined: Self = StObject.set(x, "requestOptions", js.undefined)
+      inline def setRequestOptionsUndefined: Self = StObject.set(x, "requestOptions", js.undefined)
     }
   }
 }

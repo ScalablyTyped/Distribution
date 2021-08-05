@@ -10,6 +10,5 @@ object timerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def startTimer(): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("startTimer")().asInstanceOf[js.Function0[Double]]
+  inline def startTimer(): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("startTimer")().asInstanceOf[js.Function0[Double]]
 }

@@ -53,58 +53,41 @@ trait SchemaCommand extends StObject {
 }
 object SchemaCommand {
   
-  @scala.inline
-  def apply(): SchemaCommand = {
+  inline def apply(): SchemaCommand = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCommand]
   }
   
-  @scala.inline
-  implicit class SchemaCommandMutableBuilder[Self <: SchemaCommand] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCommand](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
     
-    @scala.inline
-    def setNewPassword(value: String): Self = StObject.set(x, "newPassword", value.asInstanceOf[js.Any])
+    inline def setNewPassword(value: String): Self = StObject.set(x, "newPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewPasswordUndefined: Self = StObject.set(x, "newPassword", js.undefined)
+    inline def setNewPasswordUndefined: Self = StObject.set(x, "newPassword", js.undefined)
     
-    @scala.inline
-    def setResetPasswordFlags(value: js.Array[String]): Self = StObject.set(x, "resetPasswordFlags", value.asInstanceOf[js.Any])
+    inline def setResetPasswordFlags(value: js.Array[String]): Self = StObject.set(x, "resetPasswordFlags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetPasswordFlagsUndefined: Self = StObject.set(x, "resetPasswordFlags", js.undefined)
+    inline def setResetPasswordFlagsUndefined: Self = StObject.set(x, "resetPasswordFlags", js.undefined)
     
-    @scala.inline
-    def setResetPasswordFlagsVarargs(value: String*): Self = StObject.set(x, "resetPasswordFlags", js.Array(value :_*))
+    inline def setResetPasswordFlagsVarargs(value: String*): Self = StObject.set(x, "resetPasswordFlags", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
+    inline def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
   }
 }

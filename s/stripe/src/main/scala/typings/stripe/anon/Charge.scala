@@ -15,19 +15,15 @@ trait Charge extends StObject {
 }
 object Charge {
   
-  @scala.inline
-  def apply(charge: String, payment_method_details: IPaymentMethodDetails): Charge = {
+  inline def apply(charge: String, payment_method_details: IPaymentMethodDetails): Charge = {
     val __obj = js.Dynamic.literal(charge = charge.asInstanceOf[js.Any], payment_method_details = payment_method_details.asInstanceOf[js.Any])
     __obj.asInstanceOf[Charge]
   }
   
-  @scala.inline
-  implicit class ChargeMutableBuilder[Self <: Charge] (val x: Self) extends AnyVal {
+  extension [Self <: Charge](x: Self) {
     
-    @scala.inline
-    def setCharge(value: String): Self = StObject.set(x, "charge", value.asInstanceOf[js.Any])
+    inline def setCharge(value: String): Self = StObject.set(x, "charge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayment_method_details(value: IPaymentMethodDetails): Self = StObject.set(x, "payment_method_details", value.asInstanceOf[js.Any])
+    inline def setPayment_method_details(value: IPaymentMethodDetails): Self = StObject.set(x, "payment_method_details", value.asInstanceOf[js.Any])
   }
 }

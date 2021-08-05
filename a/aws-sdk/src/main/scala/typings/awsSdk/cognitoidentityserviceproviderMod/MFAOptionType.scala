@@ -18,25 +18,19 @@ trait MFAOptionType extends StObject {
 }
 object MFAOptionType {
   
-  @scala.inline
-  def apply(): MFAOptionType = {
+  inline def apply(): MFAOptionType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MFAOptionType]
   }
   
-  @scala.inline
-  implicit class MFAOptionTypeMutableBuilder[Self <: MFAOptionType] (val x: Self) extends AnyVal {
+  extension [Self <: MFAOptionType](x: Self) {
     
-    @scala.inline
-    def setAttributeName(value: AttributeNameType): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
+    inline def setAttributeName(value: AttributeNameType): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeNameUndefined: Self = StObject.set(x, "AttributeName", js.undefined)
+    inline def setAttributeNameUndefined: Self = StObject.set(x, "AttributeName", js.undefined)
     
-    @scala.inline
-    def setDeliveryMedium(value: DeliveryMediumType): Self = StObject.set(x, "DeliveryMedium", value.asInstanceOf[js.Any])
+    inline def setDeliveryMedium(value: DeliveryMediumType): Self = StObject.set(x, "DeliveryMedium", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeliveryMediumUndefined: Self = StObject.set(x, "DeliveryMedium", js.undefined)
+    inline def setDeliveryMediumUndefined: Self = StObject.set(x, "DeliveryMedium", js.undefined)
   }
 }

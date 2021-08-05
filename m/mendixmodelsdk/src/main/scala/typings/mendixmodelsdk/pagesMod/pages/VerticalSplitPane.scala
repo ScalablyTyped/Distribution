@@ -43,8 +43,7 @@ object VerticalSplitPane {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def create(model: IModel): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -55,8 +54,7 @@ object VerticalSplitPane {
     *  7.7.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInBuildingBlockUnderWidget(container: BuildingBlock): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInBuildingBlockUnderWidget(container: BuildingBlock): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -67,8 +65,7 @@ object VerticalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInBuildingBlockUnderWidgets(container: BuildingBlock): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInBuildingBlockUnderWidgets(container: BuildingBlock): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -79,8 +76,7 @@ object VerticalSplitPane {
     *  6.7.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInDataViewUnderFooterWidget(container: DataView): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInDataViewUnderFooterWidget(container: DataView): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -91,8 +87,7 @@ object VerticalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInDataViewUnderFooterWidgets(container: DataView): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInDataViewUnderFooterWidgets(container: DataView): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -103,8 +98,7 @@ object VerticalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInDataViewUnderWidget(container: DataView): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInDataViewUnderWidget(container: DataView): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -115,8 +109,7 @@ object VerticalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInDataViewUnderWidgets(container: DataView): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInDataViewUnderWidgets(container: DataView): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -127,8 +120,7 @@ object VerticalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInDivContainerUnderWidget(container: DivContainer): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInDivContainerUnderWidget(container: DivContainer): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -139,8 +131,7 @@ object VerticalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInDivContainerUnderWidgets(container: DivContainer): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInDivContainerUnderWidgets(container: DivContainer): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -151,8 +142,7 @@ object VerticalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInGroupBoxUnderWidget(container: GroupBox): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInGroupBoxUnderWidget(container: GroupBox): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -163,8 +153,7 @@ object VerticalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInGroupBoxUnderWidgets(container: GroupBox): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInGroupBoxUnderWidgets(container: GroupBox): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -175,8 +164,7 @@ object VerticalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInHeaderUnderLeftWidget(container: Header): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInHeaderUnderLeftWidget(container: Header): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -187,8 +175,7 @@ object VerticalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInHeaderUnderLeftWidgets(container: Header): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInHeaderUnderLeftWidgets(container: Header): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -199,8 +186,7 @@ object VerticalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInHeaderUnderRightWidget(container: Header): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInHeaderUnderRightWidget(container: Header): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -211,8 +197,7 @@ object VerticalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInHeaderUnderRightWidgets(container: Header): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInHeaderUnderRightWidgets(container: Header): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -223,8 +208,7 @@ object VerticalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -235,8 +219,7 @@ object VerticalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -247,8 +230,7 @@ object VerticalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -259,8 +241,7 @@ object VerticalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -271,8 +252,7 @@ object VerticalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInLayoutUnderWidget(container: Layout): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInLayoutUnderWidget(container: Layout): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -283,8 +263,7 @@ object VerticalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInLayoutUnderWidgets(container: Layout): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInLayoutUnderWidgets(container: Layout): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -295,8 +274,7 @@ object VerticalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInListViewTemplateUnderWidget(container: ListViewTemplate): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInListViewTemplateUnderWidget(container: ListViewTemplate): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -307,8 +285,7 @@ object VerticalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInListViewTemplateUnderWidgets(container: ListViewTemplate): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInListViewTemplateUnderWidgets(container: ListViewTemplate): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -319,8 +296,7 @@ object VerticalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInListViewUnderWidget(container: ListView): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInListViewUnderWidget(container: ListView): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -331,8 +307,7 @@ object VerticalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInListViewUnderWidgets(container: ListView): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInListViewUnderWidgets(container: ListView): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -343,8 +318,7 @@ object VerticalSplitPane {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -355,8 +329,7 @@ object VerticalSplitPane {
     *  7.23.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -367,8 +340,7 @@ object VerticalSplitPane {
     *  7.22.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -379,8 +351,7 @@ object VerticalSplitPane {
     *  7.21.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInNativeLayoutUnderWidgets(container: NativeLayout): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInNativeLayoutUnderWidgets(container: NativeLayout): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -391,8 +362,7 @@ object VerticalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInNavigationListItemUnderWidget(container: NavigationListItem): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInNavigationListItemUnderWidget(container: NavigationListItem): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -403,8 +373,7 @@ object VerticalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInNavigationListItemUnderWidgets(container: NavigationListItem): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInNavigationListItemUnderWidgets(container: NavigationListItem): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -415,8 +384,7 @@ object VerticalSplitPane {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @scala.inline
-  def createInReportPaneUnderParameterWidget(container: ReportPane): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInReportPaneUnderParameterWidget(container: ReportPane): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -427,8 +395,7 @@ object VerticalSplitPane {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @scala.inline
-  def createInReportPaneUnderReportWidget(container: ReportPane): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInReportPaneUnderReportWidget(container: ReportPane): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -439,8 +406,7 @@ object VerticalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -451,8 +417,7 @@ object VerticalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -463,8 +428,7 @@ object VerticalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInSnippetUnderWidget(container: Snippet): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInSnippetUnderWidget(container: Snippet): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -475,8 +439,7 @@ object VerticalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInSnippetUnderWidgets(container: Snippet): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInSnippetUnderWidgets(container: Snippet): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -487,8 +450,7 @@ object VerticalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInSplitPaneUnderFirstWidget(container: SplitPane): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInSplitPaneUnderFirstWidget(container: SplitPane): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -499,8 +461,7 @@ object VerticalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInSplitPaneUnderFirstWidgets(container: SplitPane): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInSplitPaneUnderFirstWidgets(container: SplitPane): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -511,8 +472,7 @@ object VerticalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInSplitPaneUnderSecondWidget(container: SplitPane): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInSplitPaneUnderSecondWidget(container: SplitPane): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -523,8 +483,7 @@ object VerticalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInSplitPaneUnderSecondWidgets(container: SplitPane): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInSplitPaneUnderSecondWidgets(container: SplitPane): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -535,8 +494,7 @@ object VerticalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInTabPageUnderWidget(container: TabPage): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInTabPageUnderWidget(container: TabPage): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -547,8 +505,7 @@ object VerticalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInTabPageUnderWidgets(container: TabPage): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInTabPageUnderWidgets(container: TabPage): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -559,8 +516,7 @@ object VerticalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInTableCellUnderWidget(container: TableCell): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInTableCellUnderWidget(container: TableCell): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -571,8 +527,7 @@ object VerticalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInTableCellUnderWidgets(container: TableCell): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInTableCellUnderWidgets(container: TableCell): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -583,8 +538,7 @@ object VerticalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -595,8 +549,7 @@ object VerticalSplitPane {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @scala.inline
-  def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /**
     * Creates and returns a new VerticalSplitPane instance in the SDK and on the server.
@@ -607,20 +560,17 @@ object VerticalSplitPane {
     *  6.0.0 to 7.14.0
     */
   /* static member */
-  @scala.inline
-  def createInVerticalFlowUnderWidgets(container: VerticalFlow): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
+  inline def createInVerticalFlowUnderWidgets(container: VerticalFlow): VerticalSplitPane = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[VerticalSplitPane]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.VerticalSplitPane.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.VerticalSplitPane.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

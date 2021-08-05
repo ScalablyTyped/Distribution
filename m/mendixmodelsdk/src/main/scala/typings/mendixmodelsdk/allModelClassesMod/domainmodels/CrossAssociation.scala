@@ -36,8 +36,7 @@ object CrossAssociation {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): typings.mendixmodelsdk.domainmodelsMod.domainmodels.CrossAssociation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.CrossAssociation]
+  inline def create(model: IModel): typings.mendixmodelsdk.domainmodelsMod.domainmodels.CrossAssociation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.CrossAssociation]
   
   /**
     * Creates and returns a new CrossAssociation instance in the SDK and on the server.
@@ -45,20 +44,17 @@ object CrossAssociation {
     * of the parent DomainModel element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createIn(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.DomainModel): typings.mendixmodelsdk.domainmodelsMod.domainmodels.CrossAssociation = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.CrossAssociation]
+  inline def createIn(container: typings.mendixmodelsdk.domainmodelsMod.domainmodels.DomainModel): typings.mendixmodelsdk.domainmodelsMod.domainmodels.CrossAssociation = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.domainmodelsMod.domainmodels.CrossAssociation]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.CrossAssociation.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "domainmodels.CrossAssociation.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

@@ -13,20 +13,16 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(): `0` = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: DeclarationAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: DeclarationAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     }
   }
   
@@ -36,20 +32,16 @@ object anon {
   }
   object Attributes {
     
-    @scala.inline
-    def apply(): Attributes = {
+    inline def apply(): Attributes = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Attributes]
     }
     
-    @scala.inline
-    implicit class AttributesMutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
+    extension [Self <: Attributes](x: Self) {
       
-      @scala.inline
-      def set_attributes(value: DeclarationAttributes): Self = StObject.set(x, "_attributes", value.asInstanceOf[js.Any])
+      inline def set_attributes(value: DeclarationAttributes): Self = StObject.set(x, "_attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_attributesUndefined: Self = StObject.set(x, "_attributes", js.undefined)
+      inline def set_attributesUndefined: Self = StObject.set(x, "_attributes", js.undefined)
     }
   }
 }

@@ -71,73 +71,51 @@ trait SchemaInstanceGroupConfig extends StObject {
 }
 object SchemaInstanceGroupConfig {
   
-  @scala.inline
-  def apply(): SchemaInstanceGroupConfig = {
+  inline def apply(): SchemaInstanceGroupConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInstanceGroupConfig]
   }
   
-  @scala.inline
-  implicit class SchemaInstanceGroupConfigMutableBuilder[Self <: SchemaInstanceGroupConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInstanceGroupConfig](x: Self) {
     
-    @scala.inline
-    def setAccelerators(value: js.Array[SchemaAcceleratorConfig]): Self = StObject.set(x, "accelerators", value.asInstanceOf[js.Any])
+    inline def setAccelerators(value: js.Array[SchemaAcceleratorConfig]): Self = StObject.set(x, "accelerators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceleratorsUndefined: Self = StObject.set(x, "accelerators", js.undefined)
+    inline def setAcceleratorsUndefined: Self = StObject.set(x, "accelerators", js.undefined)
     
-    @scala.inline
-    def setAcceleratorsVarargs(value: SchemaAcceleratorConfig*): Self = StObject.set(x, "accelerators", js.Array(value :_*))
+    inline def setAcceleratorsVarargs(value: SchemaAcceleratorConfig*): Self = StObject.set(x, "accelerators", js.Array(value :_*))
     
-    @scala.inline
-    def setDiskConfig(value: SchemaDiskConfig): Self = StObject.set(x, "diskConfig", value.asInstanceOf[js.Any])
+    inline def setDiskConfig(value: SchemaDiskConfig): Self = StObject.set(x, "diskConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskConfigUndefined: Self = StObject.set(x, "diskConfig", js.undefined)
+    inline def setDiskConfigUndefined: Self = StObject.set(x, "diskConfig", js.undefined)
     
-    @scala.inline
-    def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
+    inline def setImageUri(value: String): Self = StObject.set(x, "imageUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUriUndefined: Self = StObject.set(x, "imageUri", js.undefined)
+    inline def setImageUriUndefined: Self = StObject.set(x, "imageUri", js.undefined)
     
-    @scala.inline
-    def setInstanceNames(value: js.Array[String]): Self = StObject.set(x, "instanceNames", value.asInstanceOf[js.Any])
+    inline def setInstanceNames(value: js.Array[String]): Self = StObject.set(x, "instanceNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceNamesUndefined: Self = StObject.set(x, "instanceNames", js.undefined)
+    inline def setInstanceNamesUndefined: Self = StObject.set(x, "instanceNames", js.undefined)
     
-    @scala.inline
-    def setInstanceNamesVarargs(value: String*): Self = StObject.set(x, "instanceNames", js.Array(value :_*))
+    inline def setInstanceNamesVarargs(value: String*): Self = StObject.set(x, "instanceNames", js.Array(value :_*))
     
-    @scala.inline
-    def setIsPreemptible(value: Boolean): Self = StObject.set(x, "isPreemptible", value.asInstanceOf[js.Any])
+    inline def setIsPreemptible(value: Boolean): Self = StObject.set(x, "isPreemptible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPreemptibleUndefined: Self = StObject.set(x, "isPreemptible", js.undefined)
+    inline def setIsPreemptibleUndefined: Self = StObject.set(x, "isPreemptible", js.undefined)
     
-    @scala.inline
-    def setMachineTypeUri(value: String): Self = StObject.set(x, "machineTypeUri", value.asInstanceOf[js.Any])
+    inline def setMachineTypeUri(value: String): Self = StObject.set(x, "machineTypeUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMachineTypeUriUndefined: Self = StObject.set(x, "machineTypeUri", js.undefined)
+    inline def setMachineTypeUriUndefined: Self = StObject.set(x, "machineTypeUri", js.undefined)
     
-    @scala.inline
-    def setManagedGroupConfig(value: SchemaManagedGroupConfig): Self = StObject.set(x, "managedGroupConfig", value.asInstanceOf[js.Any])
+    inline def setManagedGroupConfig(value: SchemaManagedGroupConfig): Self = StObject.set(x, "managedGroupConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedGroupConfigUndefined: Self = StObject.set(x, "managedGroupConfig", js.undefined)
+    inline def setManagedGroupConfigUndefined: Self = StObject.set(x, "managedGroupConfig", js.undefined)
     
-    @scala.inline
-    def setMinCpuPlatform(value: String): Self = StObject.set(x, "minCpuPlatform", value.asInstanceOf[js.Any])
+    inline def setMinCpuPlatform(value: String): Self = StObject.set(x, "minCpuPlatform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinCpuPlatformUndefined: Self = StObject.set(x, "minCpuPlatform", js.undefined)
+    inline def setMinCpuPlatformUndefined: Self = StObject.set(x, "minCpuPlatform", js.undefined)
     
-    @scala.inline
-    def setNumInstances(value: Double): Self = StObject.set(x, "numInstances", value.asInstanceOf[js.Any])
+    inline def setNumInstances(value: Double): Self = StObject.set(x, "numInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumInstancesUndefined: Self = StObject.set(x, "numInstances", js.undefined)
+    inline def setNumInstancesUndefined: Self = StObject.set(x, "numInstances", js.undefined)
   }
 }

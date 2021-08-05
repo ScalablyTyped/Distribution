@@ -12,19 +12,15 @@ trait IncludeFields extends StObject {
 }
 object IncludeFields {
   
-  @scala.inline
-  def apply(includeFields: scala.Double, none: scala.Double): IncludeFields = {
+  inline def apply(includeFields: scala.Double, none: scala.Double): IncludeFields = {
     val __obj = js.Dynamic.literal(includeFields = includeFields.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any])
     __obj.asInstanceOf[IncludeFields]
   }
   
-  @scala.inline
-  implicit class IncludeFieldsMutableBuilder[Self <: IncludeFields] (val x: Self) extends AnyVal {
+  extension [Self <: IncludeFields](x: Self) {
     
-    @scala.inline
-    def setIncludeFields(value: scala.Double): Self = StObject.set(x, "includeFields", value.asInstanceOf[js.Any])
+    inline def setIncludeFields(value: scala.Double): Self = StObject.set(x, "includeFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
   }
 }

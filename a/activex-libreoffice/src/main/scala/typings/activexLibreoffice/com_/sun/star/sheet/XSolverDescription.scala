@@ -22,8 +22,7 @@ trait XSolverDescription
 }
 object XSolverDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ComponentDescription: String,
     StatusDescription: String,
     acquire: () => Unit,
@@ -35,16 +34,12 @@ object XSolverDescription {
     __obj.asInstanceOf[XSolverDescription]
   }
   
-  @scala.inline
-  implicit class XSolverDescriptionMutableBuilder[Self <: XSolverDescription] (val x: Self) extends AnyVal {
+  extension [Self <: XSolverDescription](x: Self) {
     
-    @scala.inline
-    def setComponentDescription(value: String): Self = StObject.set(x, "ComponentDescription", value.asInstanceOf[js.Any])
+    inline def setComponentDescription(value: String): Self = StObject.set(x, "ComponentDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetPropertyDescription(value: String => String): Self = StObject.set(x, "getPropertyDescription", js.Any.fromFunction1(value))
+    inline def setGetPropertyDescription(value: String => String): Self = StObject.set(x, "getPropertyDescription", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStatusDescription(value: String): Self = StObject.set(x, "StatusDescription", value.asInstanceOf[js.Any])
+    inline def setStatusDescription(value: String): Self = StObject.set(x, "StatusDescription", value.asInstanceOf[js.Any])
   }
 }

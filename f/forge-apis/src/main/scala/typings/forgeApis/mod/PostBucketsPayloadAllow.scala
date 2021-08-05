@@ -12,19 +12,15 @@ trait PostBucketsPayloadAllow extends StObject {
 }
 object PostBucketsPayloadAllow {
   
-  @scala.inline
-  def apply(access: String, authId: String): PostBucketsPayloadAllow = {
+  inline def apply(access: String, authId: String): PostBucketsPayloadAllow = {
     val __obj = js.Dynamic.literal(access = access.asInstanceOf[js.Any], authId = authId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostBucketsPayloadAllow]
   }
   
-  @scala.inline
-  implicit class PostBucketsPayloadAllowMutableBuilder[Self <: PostBucketsPayloadAllow] (val x: Self) extends AnyVal {
+  extension [Self <: PostBucketsPayloadAllow](x: Self) {
     
-    @scala.inline
-    def setAccess(value: String): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
+    inline def setAccess(value: String): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthId(value: String): Self = StObject.set(x, "authId", value.asInstanceOf[js.Any])
+    inline def setAuthId(value: String): Self = StObject.set(x, "authId", value.asInstanceOf[js.Any])
   }
 }

@@ -10,8 +10,7 @@ trait IMedia
      with IAbstract
 object IMedia {
   
-  @scala.inline
-  def apply(): IMedia = {
+  inline def apply(): IMedia = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IMedia]
   }

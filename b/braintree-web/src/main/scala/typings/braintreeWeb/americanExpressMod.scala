@@ -56,8 +56,7 @@ object americanExpressMod {
   }
   object AmericanExpress {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       VERSION: String,
       create: (Client, callback[js.Any]) => Unit,
       getExpressCheckoutProfile: (Nonce, callback[js.Any]) => Unit,
@@ -67,20 +66,15 @@ object americanExpressMod {
       __obj.asInstanceOf[AmericanExpress]
     }
     
-    @scala.inline
-    implicit class AmericanExpressMutableBuilder[Self <: AmericanExpress] (val x: Self) extends AnyVal {
+    extension [Self <: AmericanExpress](x: Self) {
       
-      @scala.inline
-      def setCreate(value: (Client, callback[js.Any]) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
+      inline def setCreate(value: (Client, callback[js.Any]) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetExpressCheckoutProfile(value: (Nonce, callback[js.Any]) => Unit): Self = StObject.set(x, "getExpressCheckoutProfile", js.Any.fromFunction2(value))
+      inline def setGetExpressCheckoutProfile(value: (Nonce, callback[js.Any]) => Unit): Self = StObject.set(x, "getExpressCheckoutProfile", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetRewardsBalance(value: (Nonce, callback[js.Any]) => Unit): Self = StObject.set(x, "getRewardsBalance", js.Any.fromFunction2(value))
+      inline def setGetRewardsBalance(value: (Nonce, callback[js.Any]) => Unit): Self = StObject.set(x, "getRewardsBalance", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setVERSION(value: String): Self = StObject.set(x, "VERSION", value.asInstanceOf[js.Any])
+      inline def setVERSION(value: String): Self = StObject.set(x, "VERSION", value.asInstanceOf[js.Any])
     }
   }
 }

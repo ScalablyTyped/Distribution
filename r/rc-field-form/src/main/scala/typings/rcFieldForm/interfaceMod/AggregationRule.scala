@@ -38,93 +38,65 @@ trait AggregationRule
 }
 object AggregationRule {
   
-  @scala.inline
-  def apply(): AggregationRule = {
+  inline def apply(): AggregationRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AggregationRule]
   }
   
-  @scala.inline
-  implicit class AggregationRuleMutableBuilder[Self <: AggregationRule] (val x: Self) extends AnyVal {
+  extension [Self <: AggregationRule](x: Self) {
     
-    @scala.inline
-    def setEnum(value: js.Array[StoreValue]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
+    inline def setEnum(value: js.Array[StoreValue]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
+    inline def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
     
-    @scala.inline
-    def setEnumVarargs(value: StoreValue*): Self = StObject.set(x, "enum", js.Array(value :_*))
+    inline def setEnumVarargs(value: StoreValue*): Self = StObject.set(x, "enum", js.Array(value :_*))
     
-    @scala.inline
-    def setLen(value: Double): Self = StObject.set(x, "len", value.asInstanceOf[js.Any])
+    inline def setLen(value: Double): Self = StObject.set(x, "len", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLenUndefined: Self = StObject.set(x, "len", js.undefined)
+    inline def setLenUndefined: Self = StObject.set(x, "len", js.undefined)
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String | ReactElement): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String | ReactElement): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setPattern(value: RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: RegExp): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+    inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
-    @scala.inline
-    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+    inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
-    @scala.inline
-    def setTransform(value: /* value */ StoreValue => StoreValue): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+    inline def setTransform(value: /* value */ StoreValue => StoreValue): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+    inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     
-    @scala.inline
-    def setType(value: RuleType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: RuleType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setValidateTrigger(value: String | js.Array[String]): Self = StObject.set(x, "validateTrigger", value.asInstanceOf[js.Any])
+    inline def setValidateTrigger(value: String | js.Array[String]): Self = StObject.set(x, "validateTrigger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateTriggerUndefined: Self = StObject.set(x, "validateTrigger", js.undefined)
+    inline def setValidateTriggerUndefined: Self = StObject.set(x, "validateTrigger", js.undefined)
     
-    @scala.inline
-    def setValidateTriggerVarargs(value: String*): Self = StObject.set(x, "validateTrigger", js.Array(value :_*))
+    inline def setValidateTriggerVarargs(value: String*): Self = StObject.set(x, "validateTrigger", js.Array(value :_*))
     
-    @scala.inline
-    def setValidator(
+    inline def setValidator(
       value: (/* rule */ RuleObject, /* value */ StoreValue, /* callback */ js.Function1[/* error */ js.UndefOr[String], Unit]) => (js.Promise[Unit | js.Any]) | Unit
     ): Self = StObject.set(x, "validator", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
+    inline def setValidatorUndefined: Self = StObject.set(x, "validator", js.undefined)
     
-    @scala.inline
-    def setWhitespace(value: Boolean): Self = StObject.set(x, "whitespace", value.asInstanceOf[js.Any])
+    inline def setWhitespace(value: Boolean): Self = StObject.set(x, "whitespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhitespaceUndefined: Self = StObject.set(x, "whitespace", js.undefined)
+    inline def setWhitespaceUndefined: Self = StObject.set(x, "whitespace", js.undefined)
   }
 }

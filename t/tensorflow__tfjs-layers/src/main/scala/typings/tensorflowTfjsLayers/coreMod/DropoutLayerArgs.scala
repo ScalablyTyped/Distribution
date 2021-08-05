@@ -27,31 +27,23 @@ trait DropoutLayerArgs
 }
 object DropoutLayerArgs {
   
-  @scala.inline
-  def apply(rate: Double): DropoutLayerArgs = {
+  inline def apply(rate: Double): DropoutLayerArgs = {
     val __obj = js.Dynamic.literal(rate = rate.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropoutLayerArgs]
   }
   
-  @scala.inline
-  implicit class DropoutLayerArgsMutableBuilder[Self <: DropoutLayerArgs] (val x: Self) extends AnyVal {
+  extension [Self <: DropoutLayerArgs](x: Self) {
     
-    @scala.inline
-    def setNoiseShape(value: js.Array[Double]): Self = StObject.set(x, "noiseShape", value.asInstanceOf[js.Any])
+    inline def setNoiseShape(value: js.Array[Double]): Self = StObject.set(x, "noiseShape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoiseShapeUndefined: Self = StObject.set(x, "noiseShape", js.undefined)
+    inline def setNoiseShapeUndefined: Self = StObject.set(x, "noiseShape", js.undefined)
     
-    @scala.inline
-    def setNoiseShapeVarargs(value: Double*): Self = StObject.set(x, "noiseShape", js.Array(value :_*))
+    inline def setNoiseShapeVarargs(value: Double*): Self = StObject.set(x, "noiseShape", js.Array(value :_*))
     
-    @scala.inline
-    def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
+    inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
+    inline def setSeed(value: Double): Self = StObject.set(x, "seed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
+    inline def setSeedUndefined: Self = StObject.set(x, "seed", js.undefined)
   }
 }

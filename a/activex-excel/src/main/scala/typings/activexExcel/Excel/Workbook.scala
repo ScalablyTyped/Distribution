@@ -256,7 +256,7 @@ trait Workbook extends StObject {
   
   val Excel8CompatibilityMode: Boolean = js.native
   
-  @JSName("Excel.Workbook_typekey")
+  /* private */ @JSName("Excel.Workbook_typekey")
   var ExcelDotWorkbook_typekey: Workbook = js.native
   
   def ExclusiveAccess(): Boolean = js.native

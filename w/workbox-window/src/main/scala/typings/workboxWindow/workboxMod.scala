@@ -135,20 +135,16 @@ object workboxMod {
     }
     object RegisterOptions {
       
-      @scala.inline
-      def apply(): RegisterOptions = {
+      inline def apply(): RegisterOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[RegisterOptions]
       }
       
-      @scala.inline
-      implicit class RegisterOptionsMutableBuilder[Self <: RegisterOptions] (val x: Self) extends AnyVal {
+      extension [Self <: RegisterOptions](x: Self) {
         
-        @scala.inline
-        def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
+        inline def setImmediate(value: Boolean): Self = StObject.set(x, "immediate", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setImmediateUndefined: Self = StObject.set(x, "immediate", js.undefined)
+        inline def setImmediateUndefined: Self = StObject.set(x, "immediate", js.undefined)
       }
     }
   }

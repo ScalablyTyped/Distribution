@@ -69,21 +69,21 @@ object httpMod {
        with IPaginator[T, PagePaginatorState] {
     def this(hasClientReqgenGuardStateMax: PaginatorDeps[T, PagePaginatorState]) = this()
     
-    var client: IClient = js.native
+    /* protected */ var client: IClient = js.native
     
     /* protected */ def guard(res: APIResponseSuccess): /* is T */ Boolean = js.native
-    @JSName("guard")
+    /* protected */ @JSName("guard")
     var guard_Original: PaginatorGuard[T] = js.native
     
     @JSName(js.Symbol.iterator)
     var iterator_Paginator: js.Function0[this.type] = js.native
     
-    var max: js.UndefOr[Double] = js.native
+    /* protected */ var max: js.UndefOr[Double] = js.native
     
     def next(): IteratorResult[js.Promise[T], js.Any] = js.native
     
     /* protected */ def reqgen(): js.Promise[Req] = js.native
-    @JSName("reqgen")
+    /* protected */ @JSName("reqgen")
     var reqgen_Original: PaginatorRequestGenerator = js.native
   }
   
@@ -104,10 +104,10 @@ object httpMod {
        with IPaginator[T, TokenPaginatorState] {
     def this(hasClientReqgenGuardStateMax: PaginatorDeps[T, TokenPaginatorState]) = this()
     
-    var client: IClient = js.native
+    /* protected */ var client: IClient = js.native
     
     /* protected */ def guard(res: APIResponseSuccess): /* is T */ Boolean = js.native
-    @JSName("guard")
+    /* protected */ @JSName("guard")
     var guard_Original: PaginatorGuard[T] = js.native
     
     def isPageTokenResponseMeta(meta: js.Any): /* is ionic.ionic/definitions.APIResponsePageTokenMeta */ Boolean = js.native
@@ -115,36 +115,27 @@ object httpMod {
     @JSName(js.Symbol.iterator)
     var iterator_TokenPaginator: js.Function0[this.type] = js.native
     
-    var max: js.UndefOr[Double] = js.native
+    /* protected */ var max: js.UndefOr[Double] = js.native
     
     def next(): IteratorResult[js.Promise[T], js.Any] = js.native
     
     /* protected */ def reqgen(): js.Promise[Req] = js.native
-    @JSName("reqgen")
+    /* protected */ @JSName("reqgen")
     var reqgen_Original: PaginatorRequestGenerator = js.native
   }
   
-  @scala.inline
-  def createFatalAPIFormat(req: SuperAgentRequest, res: APIResponse): FatalException = (^.asInstanceOf[js.Dynamic].applyDynamic("createFatalAPIFormat")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any])).asInstanceOf[FatalException]
+  inline def createFatalAPIFormat(req: SuperAgentRequest, res: APIResponse): FatalException = (^.asInstanceOf[js.Dynamic].applyDynamic("createFatalAPIFormat")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any])).asInstanceOf[FatalException]
   
-  @scala.inline
-  def formatResponseError(req: SuperAgentRequest): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatResponseError")(req.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def formatResponseError(req: SuperAgentRequest, status: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatResponseError")(req.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def formatResponseError(req: SuperAgentRequest, status: Double, body: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatResponseError")(req.asInstanceOf[js.Any], status.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def formatResponseError(req: SuperAgentRequest, status: Double, body: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatResponseError")(req.asInstanceOf[js.Any], status.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def formatResponseError(req: SuperAgentRequest, status: Unit, body: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatResponseError")(req.asInstanceOf[js.Any], status.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def formatResponseError(req: SuperAgentRequest, status: Unit, body: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatResponseError")(req.asInstanceOf[js.Any], status.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatResponseError(req: SuperAgentRequest): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatResponseError")(req.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def formatResponseError(req: SuperAgentRequest, status: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatResponseError")(req.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatResponseError(req: SuperAgentRequest, status: Double, body: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatResponseError")(req.asInstanceOf[js.Any], status.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatResponseError(req: SuperAgentRequest, status: Double, body: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatResponseError")(req.asInstanceOf[js.Any], status.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatResponseError(req: SuperAgentRequest, status: Unit, body: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatResponseError")(req.asInstanceOf[js.Any], status.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def formatResponseError(req: SuperAgentRequest, status: Unit, body: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatResponseError")(req.asInstanceOf[js.Any], status.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def formatSuperAgentError(e: SuperAgentError): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatSuperAgentError")(e.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def formatSuperAgentError(e: SuperAgentError): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatSuperAgentError")(e.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def transformAPIResponse(r: SuperAgentResponse): APIResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("transformAPIResponse")(r.asInstanceOf[js.Any]).asInstanceOf[APIResponse]
+  inline def transformAPIResponse(r: SuperAgentResponse): APIResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("transformAPIResponse")(r.asInstanceOf[js.Any]).asInstanceOf[APIResponse]
   
   type SuperAgentRequest = typings.superagent.mod.SuperAgentRequest
   

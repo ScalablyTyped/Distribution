@@ -26,55 +26,39 @@ trait ClassName extends StObject {
 }
 object ClassName {
   
-  @scala.inline
-  def apply(id: String | Double, skin: BadgeSelectItemSkin): ClassName = {
+  inline def apply(id: String | Double, skin: BadgeSelectItemSkin): ClassName = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], skin = skin.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassName]
   }
   
-  @scala.inline
-  implicit class ClassNameMutableBuilder[Self <: ClassName] (val x: Self) extends AnyVal {
+  extension [Self <: ClassName](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+    inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+    inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setEllipsis(value: Boolean): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
+    inline def setEllipsis(value: Boolean): Self = StObject.set(x, "ellipsis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
+    inline def setEllipsisUndefined: Self = StObject.set(x, "ellipsis", js.undefined)
     
-    @scala.inline
-    def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkin(value: BadgeSelectItemSkin): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
+    inline def setSkin(value: BadgeSelectItemSkin): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+    inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+    inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
     
-    @scala.inline
-    def setText(value: ReactNode): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: ReactNode): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

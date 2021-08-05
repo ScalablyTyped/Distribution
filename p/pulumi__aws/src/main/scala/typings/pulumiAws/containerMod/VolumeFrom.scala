@@ -12,25 +12,19 @@ trait VolumeFrom extends StObject {
 }
 object VolumeFrom {
   
-  @scala.inline
-  def apply(): VolumeFrom = {
+  inline def apply(): VolumeFrom = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VolumeFrom]
   }
   
-  @scala.inline
-  implicit class VolumeFromMutableBuilder[Self <: VolumeFrom] (val x: Self) extends AnyVal {
+  extension [Self <: VolumeFrom](x: Self) {
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
-    @scala.inline
-    def setSourceContainer(value: String): Self = StObject.set(x, "sourceContainer", value.asInstanceOf[js.Any])
+    inline def setSourceContainer(value: String): Self = StObject.set(x, "sourceContainer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceContainerUndefined: Self = StObject.set(x, "sourceContainer", js.undefined)
+    inline def setSourceContainerUndefined: Self = StObject.set(x, "sourceContainer", js.undefined)
   }
 }

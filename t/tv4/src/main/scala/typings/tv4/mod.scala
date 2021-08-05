@@ -23,23 +23,18 @@ object mod extends Shortcut {
   }
   object BaseResult {
     
-    @scala.inline
-    def apply(missing: js.Array[String], valid: Boolean): BaseResult = {
+    inline def apply(missing: js.Array[String], valid: Boolean): BaseResult = {
       val __obj = js.Dynamic.literal(missing = missing.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any])
       __obj.asInstanceOf[BaseResult]
     }
     
-    @scala.inline
-    implicit class BaseResultMutableBuilder[Self <: BaseResult] (val x: Self) extends AnyVal {
+    extension [Self <: BaseResult](x: Self) {
       
-      @scala.inline
-      def setMissing(value: js.Array[String]): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
+      inline def setMissing(value: js.Array[String]): Self = StObject.set(x, "missing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMissingVarargs(value: String*): Self = StObject.set(x, "missing", js.Array(value :_*))
+      inline def setMissingVarargs(value: String*): Self = StObject.set(x, "missing", js.Array(value :_*))
       
-      @scala.inline
-      def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+      inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -57,20 +52,16 @@ object mod extends Shortcut {
   }
   object ErrorVar {
     
-    @scala.inline
-    def apply(code: Double, message: js.Any, params: js.Any, stack: String): ErrorVar = {
+    inline def apply(code: Double, message: js.Any, params: js.Any, stack: String): ErrorVar = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorVar]
     }
     
-    @scala.inline
-    implicit class ErrorVarMutableBuilder[Self <: ErrorVar] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorVar](x: Self) {
       
-      @scala.inline
-      def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     }
   }
   
@@ -109,92 +100,64 @@ object mod extends Shortcut {
   }
   object JsonSchema {
     
-    @scala.inline
-    def apply(): JsonSchema = {
+    inline def apply(): JsonSchema = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[JsonSchema]
     }
     
-    @scala.inline
-    implicit class JsonSchemaMutableBuilder[Self <: JsonSchema] (val x: Self) extends AnyVal {
+    extension [Self <: JsonSchema](x: Self) {
       
-      @scala.inline
-      def set$schema(value: String): Self = StObject.set(x, "$schema", value.asInstanceOf[js.Any])
+      inline def set$schema(value: String): Self = StObject.set(x, "$schema", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$schemaUndefined: Self = StObject.set(x, "$schema", js.undefined)
+      inline def set$schemaUndefined: Self = StObject.set(x, "$schema", js.undefined)
       
-      @scala.inline
-      def setAdditionalProperties(value: Boolean): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
+      inline def setAdditionalProperties(value: Boolean): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdditionalPropertiesUndefined: Self = StObject.set(x, "additionalProperties", js.undefined)
+      inline def setAdditionalPropertiesUndefined: Self = StObject.set(x, "additionalProperties", js.undefined)
       
-      @scala.inline
-      def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: js.Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setDefinitions(value: js.Any): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
+      inline def setDefinitions(value: js.Any): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefinitionsUndefined: Self = StObject.set(x, "definitions", js.undefined)
+      inline def setDefinitionsUndefined: Self = StObject.set(x, "definitions", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      inline def setItems(value: js.Any): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+      inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
       
-      @scala.inline
-      def setPatternProperties(value: js.Any): Self = StObject.set(x, "patternProperties", value.asInstanceOf[js.Any])
+      inline def setPatternProperties(value: js.Any): Self = StObject.set(x, "patternProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatternPropertiesUndefined: Self = StObject.set(x, "patternProperties", js.undefined)
+      inline def setPatternPropertiesUndefined: Self = StObject.set(x, "patternProperties", js.undefined)
       
-      @scala.inline
-      def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+      inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
       
-      @scala.inline
-      def setRequired(value: js.Array[String]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: js.Array[String]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
-      @scala.inline
-      def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value :_*))
+      inline def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value :_*))
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setType(value: String | js.Array[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String | js.Array[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value :_*))
+      inline def setTypeVarargs(value: String*): Self = StObject.set(x, "type", js.Array(value :_*))
     }
   }
   
@@ -214,20 +177,16 @@ object mod extends Shortcut {
   }
   object MultiResult {
     
-    @scala.inline
-    def apply(errors: js.Array[ValidationError], missing: js.Array[String], valid: Boolean): MultiResult = {
+    inline def apply(errors: js.Array[ValidationError], missing: js.Array[String], valid: Boolean): MultiResult = {
       val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], missing = missing.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any])
       __obj.asInstanceOf[MultiResult]
     }
     
-    @scala.inline
-    implicit class MultiResultMutableBuilder[Self <: MultiResult] (val x: Self) extends AnyVal {
+    extension [Self <: MultiResult](x: Self) {
       
-      @scala.inline
-      def setErrors(value: js.Array[ValidationError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[ValidationError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsVarargs(value: ValidationError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: ValidationError*): Self = StObject.set(x, "errors", js.Array(value :_*))
     }
   }
   
@@ -241,17 +200,14 @@ object mod extends Shortcut {
   }
   object SingleResult {
     
-    @scala.inline
-    def apply(error: ValidationError, missing: js.Array[String], valid: Boolean): SingleResult = {
+    inline def apply(error: ValidationError, missing: js.Array[String], valid: Boolean): SingleResult = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], missing = missing.asInstanceOf[js.Any], valid = valid.asInstanceOf[js.Any])
       __obj.asInstanceOf[SingleResult]
     }
     
-    @scala.inline
-    implicit class SingleResultMutableBuilder[Self <: SingleResult] (val x: Self) extends AnyVal {
+    extension [Self <: SingleResult](x: Self) {
       
-      @scala.inline
-      def setError(value: ValidationError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: ValidationError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
   }
   
@@ -343,41 +299,30 @@ object mod extends Shortcut {
   }
   object ValidationError {
     
-    @scala.inline
-    def apply(code: Double, message: js.Any): ValidationError = {
+    inline def apply(code: Double, message: js.Any): ValidationError = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValidationError]
     }
     
-    @scala.inline
-    implicit class ValidationErrorMutableBuilder[Self <: ValidationError] (val x: Self) extends AnyVal {
+    extension [Self <: ValidationError](x: Self) {
       
-      @scala.inline
-      def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataPath(value: String): Self = StObject.set(x, "dataPath", value.asInstanceOf[js.Any])
+      inline def setDataPath(value: String): Self = StObject.set(x, "dataPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataPathUndefined: Self = StObject.set(x, "dataPath", js.undefined)
+      inline def setDataPathUndefined: Self = StObject.set(x, "dataPath", js.undefined)
       
-      @scala.inline
-      def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaPath(value: String): Self = StObject.set(x, "schemaPath", value.asInstanceOf[js.Any])
+      inline def setSchemaPath(value: String): Self = StObject.set(x, "schemaPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSchemaPathUndefined: Self = StObject.set(x, "schemaPath", js.undefined)
+      inline def setSchemaPathUndefined: Self = StObject.set(x, "schemaPath", js.undefined)
       
-      @scala.inline
-      def setSubErrors(value: js.Array[ValidationError]): Self = StObject.set(x, "subErrors", value.asInstanceOf[js.Any])
+      inline def setSubErrors(value: js.Array[ValidationError]): Self = StObject.set(x, "subErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubErrorsUndefined: Self = StObject.set(x, "subErrors", js.undefined)
+      inline def setSubErrorsUndefined: Self = StObject.set(x, "subErrors", js.undefined)
       
-      @scala.inline
-      def setSubErrorsVarargs(value: ValidationError*): Self = StObject.set(x, "subErrors", js.Array(value :_*))
+      inline def setSubErrorsVarargs(value: ValidationError*): Self = StObject.set(x, "subErrors", js.Array(value :_*))
     }
   }
   

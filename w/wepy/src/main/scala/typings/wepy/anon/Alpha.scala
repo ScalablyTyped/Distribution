@@ -10,16 +10,13 @@ trait Alpha extends StObject {
 }
 object Alpha {
   
-  @scala.inline
-  def apply(alpha: Double): Alpha = {
+  inline def apply(alpha: Double): Alpha = {
     val __obj = js.Dynamic.literal(alpha = alpha.asInstanceOf[js.Any])
     __obj.asInstanceOf[Alpha]
   }
   
-  @scala.inline
-  implicit class AlphaMutableBuilder[Self <: Alpha] (val x: Self) extends AnyVal {
+  extension [Self <: Alpha](x: Self) {
     
-    @scala.inline
-    def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+    inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
   }
 }

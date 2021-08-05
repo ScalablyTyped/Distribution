@@ -29,31 +29,23 @@ trait ParamsResourceEnterprisesEnroll
 }
 object ParamsResourceEnterprisesEnroll {
   
-  @scala.inline
-  def apply(): ParamsResourceEnterprisesEnroll = {
+  inline def apply(): ParamsResourceEnterprisesEnroll = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceEnterprisesEnroll]
   }
   
-  @scala.inline
-  implicit class ParamsResourceEnterprisesEnrollMutableBuilder[Self <: ParamsResourceEnterprisesEnroll] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceEnterprisesEnroll](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaEnterprise): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaEnterprise): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
-    @scala.inline
-    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+    inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
   }
 }

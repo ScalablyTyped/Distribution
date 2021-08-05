@@ -51,61 +51,43 @@ trait CreateAccountOptions extends StObject {
 }
 object CreateAccountOptions {
   
-  @scala.inline
-  def apply(server: String): CreateAccountOptions = {
+  inline def apply(server: String): CreateAccountOptions = {
     val __obj = js.Dynamic.literal(server = server.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAccountOptions]
   }
   
-  @scala.inline
-  implicit class CreateAccountOptionsMutableBuilder[Self <: CreateAccountOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAccountOptions](x: Self) {
     
-    @scala.inline
-    def setAccountType(value: caldav | carddav): Self = StObject.set(x, "accountType", value.asInstanceOf[js.Any])
+    inline def setAccountType(value: caldav | carddav): Self = StObject.set(x, "accountType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountTypeUndefined: Self = StObject.set(x, "accountType", js.undefined)
+    inline def setAccountTypeUndefined: Self = StObject.set(x, "accountType", js.undefined)
     
-    @scala.inline
-    def setFilters(value: js.Array[js.Object]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: js.Array[js.Object]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: js.Object*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: js.Object*): Self = StObject.set(x, "filters", js.Array(value :_*))
     
-    @scala.inline
-    def setLoadCollections(value: Boolean): Self = StObject.set(x, "loadCollections", value.asInstanceOf[js.Any])
+    inline def setLoadCollections(value: Boolean): Self = StObject.set(x, "loadCollections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadCollectionsUndefined: Self = StObject.set(x, "loadCollections", js.undefined)
+    inline def setLoadCollectionsUndefined: Self = StObject.set(x, "loadCollections", js.undefined)
     
-    @scala.inline
-    def setLoadObjects(value: Boolean): Self = StObject.set(x, "loadObjects", value.asInstanceOf[js.Any])
+    inline def setLoadObjects(value: Boolean): Self = StObject.set(x, "loadObjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadObjectsUndefined: Self = StObject.set(x, "loadObjects", js.undefined)
+    inline def setLoadObjectsUndefined: Self = StObject.set(x, "loadObjects", js.undefined)
     
-    @scala.inline
-    def setSandbox(value: Sandbox | js.Object): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
+    inline def setSandbox(value: Sandbox | js.Object): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
+    inline def setSandboxUndefined: Self = StObject.set(x, "sandbox", js.undefined)
     
-    @scala.inline
-    def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
+    inline def setTimezone(value: String): Self = StObject.set(x, "timezone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
+    inline def setTimezoneUndefined: Self = StObject.set(x, "timezone", js.undefined)
     
-    @scala.inline
-    def setXhr(value: Transport): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
+    inline def setXhr(value: Transport): Self = StObject.set(x, "xhr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
+    inline def setXhrUndefined: Self = StObject.set(x, "xhr", js.undefined)
   }
 }

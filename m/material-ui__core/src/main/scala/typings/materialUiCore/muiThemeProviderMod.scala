@@ -29,38 +29,28 @@ object muiThemeProviderMod extends Shortcut {
   }
   object MuiThemeProviderProps {
     
-    @scala.inline
-    def apply(theme: Theme | (js.Function1[/* outer */ Theme | Null, Theme])): MuiThemeProviderProps = {
+    inline def apply(theme: Theme | (js.Function1[/* outer */ Theme | Null, Theme])): MuiThemeProviderProps = {
       val __obj = js.Dynamic.literal(theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[MuiThemeProviderProps]
     }
     
-    @scala.inline
-    implicit class MuiThemeProviderPropsMutableBuilder[Self <: MuiThemeProviderProps] (val x: Self) extends AnyVal {
+    extension [Self <: MuiThemeProviderProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDisableStylesGeneration(value: Boolean): Self = StObject.set(x, "disableStylesGeneration", value.asInstanceOf[js.Any])
+      inline def setDisableStylesGeneration(value: Boolean): Self = StObject.set(x, "disableStylesGeneration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableStylesGenerationUndefined: Self = StObject.set(x, "disableStylesGeneration", js.undefined)
+      inline def setDisableStylesGenerationUndefined: Self = StObject.set(x, "disableStylesGeneration", js.undefined)
       
-      @scala.inline
-      def setSheetsManager(value: Map[StylesCreator, Map[Theme, SheetManagerTheme]]): Self = StObject.set(x, "sheetsManager", value.asInstanceOf[js.Any])
+      inline def setSheetsManager(value: Map[StylesCreator, Map[Theme, SheetManagerTheme]]): Self = StObject.set(x, "sheetsManager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSheetsManagerUndefined: Self = StObject.set(x, "sheetsManager", js.undefined)
+      inline def setSheetsManagerUndefined: Self = StObject.set(x, "sheetsManager", js.undefined)
       
-      @scala.inline
-      def setTheme(value: Theme | (js.Function1[/* outer */ Theme | Null, Theme])): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: Theme | (js.Function1[/* outer */ Theme | Null, Theme])): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeFunction1(value: /* outer */ Theme | Null => Theme): Self = StObject.set(x, "theme", js.Any.fromFunction1(value))
+      inline def setThemeFunction1(value: /* outer */ Theme | Null => Theme): Self = StObject.set(x, "theme", js.Any.fromFunction1(value))
     }
   }
   
@@ -72,20 +62,16 @@ object muiThemeProviderMod extends Shortcut {
   }
   object SheetManagerTheme {
     
-    @scala.inline
-    def apply(refs: Double, sheet: StyleSheet[String | Double | js.Symbol]): SheetManagerTheme = {
+    inline def apply(refs: Double, sheet: StyleSheet[String | Double | js.Symbol]): SheetManagerTheme = {
       val __obj = js.Dynamic.literal(refs = refs.asInstanceOf[js.Any], sheet = sheet.asInstanceOf[js.Any])
       __obj.asInstanceOf[SheetManagerTheme]
     }
     
-    @scala.inline
-    implicit class SheetManagerThemeMutableBuilder[Self <: SheetManagerTheme] (val x: Self) extends AnyVal {
+    extension [Self <: SheetManagerTheme](x: Self) {
       
-      @scala.inline
-      def setRefs(value: Double): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
+      inline def setRefs(value: Double): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSheet(value: StyleSheet[String | Double | js.Symbol]): Self = StObject.set(x, "sheet", value.asInstanceOf[js.Any])
+      inline def setSheet(value: StyleSheet[String | Double | js.Symbol]): Self = StObject.set(x, "sheet", value.asInstanceOf[js.Any])
     }
   }
   

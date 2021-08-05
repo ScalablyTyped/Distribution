@@ -37,47 +37,35 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def attachProps(node: HTMLElement, newProps: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attachProps")(node.asInstanceOf[js.Any], newProps.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def attachProps(node: HTMLElement, newProps: js.Any, oldProps: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attachProps")(node.asInstanceOf[js.Any], newProps.asInstanceOf[js.Any], oldProps.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def attachProps(node: HTMLElement, newProps: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attachProps")(node.asInstanceOf[js.Any], newProps.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def attachProps(node: HTMLElement, newProps: js.Any, oldProps: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attachProps")(node.asInstanceOf[js.Any], newProps.asInstanceOf[js.Any], oldProps.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def camelToDashCase(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelToDashCase")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def camelToDashCase(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelToDashCase")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def createForwardRef[PropType, ElementType](ReactComponent: js.Any, displayName: String): ForwardRefExoticComponent[
+  inline def createForwardRef[PropType, ElementType](ReactComponent: js.Any, displayName: String): ForwardRefExoticComponent[
     (PropsWithoutRef[IonicReactExternalProps[PropType, ElementType]]) & RefAttributes[ElementType]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("createForwardRef")(ReactComponent.asInstanceOf[js.Any], displayName.asInstanceOf[js.Any])).asInstanceOf[ForwardRefExoticComponent[
     (PropsWithoutRef[IonicReactExternalProps[PropType, ElementType]]) & RefAttributes[ElementType]
   ]]
   
-  @scala.inline
-  def dashToPascalCase(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dashToPascalCase")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def dashToPascalCase(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dashToPascalCase")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def getClassName(classList: DOMTokenList, newProps: js.Any, oldProps: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getClassName")(classList.asInstanceOf[js.Any], newProps.asInstanceOf[js.Any], oldProps.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getClassName(classList: DOMTokenList, newProps: js.Any, oldProps: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getClassName")(classList.asInstanceOf[js.Any], newProps.asInstanceOf[js.Any], oldProps.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def getConfig(): Config_ | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")().asInstanceOf[Config_ | Null]
+  inline def getConfig(): Config_ | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")().asInstanceOf[Config_ | Null]
   
-  @scala.inline
-  def getPlatforms(): js.Array[
+  inline def getPlatforms(): js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlatforms")().asInstanceOf[js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
   ]]
   
-  @scala.inline
-  def isCoveredByReact(eventNameSuffix: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCoveredByReact")(eventNameSuffix.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isCoveredByReact(eventNameSuffix: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCoveredByReact")(eventNameSuffix.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isPlatform(platform: Platforms): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPlatform")(platform.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isPlatform(platform: Platforms): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPlatform")(platform.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def syncEvent(node: ElementeventskeystringeEv, eventName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("syncEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def syncEvent(
+  inline def syncEvent(node: ElementeventskeystringeEv, eventName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("syncEvent")(node.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def syncEvent(
     node: ElementeventskeystringeEv,
     eventName: String,
     newEventHandler: js.Function1[/* e */ Event, js.Any]

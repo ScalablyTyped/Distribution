@@ -12,34 +12,26 @@ object relationsRelationIdMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def RelationId[T](relation: String): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("RelationId")(relation.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
-  @scala.inline
-  def RelationId[T](relation: String, alias: String): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("RelationId")(relation.asInstanceOf[js.Any], alias.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
-  @scala.inline
-  def RelationId[T](
+  inline def RelationId[T](relation: String): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("RelationId")(relation.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  inline def RelationId[T](relation: String, alias: String): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("RelationId")(relation.asInstanceOf[js.Any], alias.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  inline def RelationId[T](
     relation: String,
     alias: String,
     queryBuilderFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]]
   ): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("RelationId")(relation.asInstanceOf[js.Any], alias.asInstanceOf[js.Any], queryBuilderFactory.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
-  @scala.inline
-  def RelationId[T](
+  inline def RelationId[T](
     relation: String,
     alias: Unit,
     queryBuilderFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]]
   ): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("RelationId")(relation.asInstanceOf[js.Any], alias.asInstanceOf[js.Any], queryBuilderFactory.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
-  @scala.inline
-  def RelationId[T](relation: js.Function1[/* object */ T, js.Any]): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("RelationId")(relation.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
-  @scala.inline
-  def RelationId[T](relation: js.Function1[/* object */ T, js.Any], alias: String): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("RelationId")(relation.asInstanceOf[js.Any], alias.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
-  @scala.inline
-  def RelationId[T](
+  inline def RelationId[T](relation: js.Function1[/* object */ T, js.Any]): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("RelationId")(relation.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  inline def RelationId[T](relation: js.Function1[/* object */ T, js.Any], alias: String): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("RelationId")(relation.asInstanceOf[js.Any], alias.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  inline def RelationId[T](
     relation: js.Function1[/* object */ T, js.Any],
     alias: String,
     queryBuilderFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]]
   ): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("RelationId")(relation.asInstanceOf[js.Any], alias.asInstanceOf[js.Any], queryBuilderFactory.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
-  @scala.inline
-  def RelationId[T](
+  inline def RelationId[T](
     relation: js.Function1[/* object */ T, js.Any],
     alias: Unit,
     queryBuilderFactory: js.Function1[/* qb */ SelectQueryBuilder[js.Any], SelectQueryBuilder[js.Any]]

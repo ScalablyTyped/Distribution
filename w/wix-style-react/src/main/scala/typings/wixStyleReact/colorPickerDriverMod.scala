@@ -25,8 +25,7 @@ object colorPickerDriverMod {
   }
   object ColorPickerDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cancel: () => Unit,
       clickOnPreviousColor: () => Unit,
       confirm: () => Unit,
@@ -39,26 +38,19 @@ object colorPickerDriverMod {
       __obj.asInstanceOf[ColorPickerDriver]
     }
     
-    @scala.inline
-    implicit class ColorPickerDriverMutableBuilder[Self <: ColorPickerDriver] (val x: Self) extends AnyVal {
+    extension [Self <: ColorPickerDriver](x: Self) {
       
-      @scala.inline
-      def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+      inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setClickOnPreviousColor(value: () => Unit): Self = StObject.set(x, "clickOnPreviousColor", js.Any.fromFunction0(value))
+      inline def setClickOnPreviousColor(value: () => Unit): Self = StObject.set(x, "clickOnPreviousColor", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setConfirm(value: () => Unit): Self = StObject.set(x, "confirm", js.Any.fromFunction0(value))
+      inline def setConfirm(value: () => Unit): Self = StObject.set(x, "confirm", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHistoryCurrentColor(value: () => String): Self = StObject.set(x, "historyCurrentColor", js.Any.fromFunction0(value))
+      inline def setHistoryCurrentColor(value: () => String): Self = StObject.set(x, "historyCurrentColor", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHistoryPanelExists(value: () => Boolean): Self = StObject.set(x, "historyPanelExists", js.Any.fromFunction0(value))
+      inline def setHistoryPanelExists(value: () => Boolean): Self = StObject.set(x, "historyPanelExists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHistoryPreviousColor(value: () => String): Self = StObject.set(x, "historyPreviousColor", js.Any.fromFunction0(value))
+      inline def setHistoryPreviousColor(value: () => String): Self = StObject.set(x, "historyPreviousColor", js.Any.fromFunction0(value))
     }
   }
 }

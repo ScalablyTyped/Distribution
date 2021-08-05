@@ -11,13 +11,11 @@ object curriableBooleans {
   sealed trait `false`
     extends StObject
        with HasTail[js.Any]
-  @scala.inline
-  def `false`: `false` = false.asInstanceOf[`false`]
+  inline def `false`: `false` = false.asInstanceOf[`false`]
   
   @js.native
   sealed trait `true`
     extends StObject
        with HasTail[js.Any]
-  @scala.inline
-  def `true`: `true` = true.asInstanceOf[`true`]
+  inline def `true`: `true` = true.asInstanceOf[`true`]
 }

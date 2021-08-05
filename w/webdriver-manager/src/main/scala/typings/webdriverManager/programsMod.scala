@@ -130,8 +130,7 @@ object programsMod {
     @JSImport("webdriver-manager/built/lib/cli/programs", "Program.MIN_SPACING")
     @js.native
     def MIN_SPACING: Double = js.native
-    @scala.inline
-    def MIN_SPACING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_SPACING")(x.asInstanceOf[js.Any])
+    inline def MIN_SPACING_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_SPACING")(x.asInstanceOf[js.Any])
   }
   
   type Programs = StringDictionary[Program]

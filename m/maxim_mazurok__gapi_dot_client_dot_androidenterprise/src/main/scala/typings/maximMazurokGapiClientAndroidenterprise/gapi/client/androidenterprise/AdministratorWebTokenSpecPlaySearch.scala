@@ -14,25 +14,19 @@ trait AdministratorWebTokenSpecPlaySearch extends StObject {
 }
 object AdministratorWebTokenSpecPlaySearch {
   
-  @scala.inline
-  def apply(): AdministratorWebTokenSpecPlaySearch = {
+  inline def apply(): AdministratorWebTokenSpecPlaySearch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdministratorWebTokenSpecPlaySearch]
   }
   
-  @scala.inline
-  implicit class AdministratorWebTokenSpecPlaySearchMutableBuilder[Self <: AdministratorWebTokenSpecPlaySearch] (val x: Self) extends AnyVal {
+  extension [Self <: AdministratorWebTokenSpecPlaySearch](x: Self) {
     
-    @scala.inline
-    def setApproveApps(value: Boolean): Self = StObject.set(x, "approveApps", value.asInstanceOf[js.Any])
+    inline def setApproveApps(value: Boolean): Self = StObject.set(x, "approveApps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApproveAppsUndefined: Self = StObject.set(x, "approveApps", js.undefined)
+    inline def setApproveAppsUndefined: Self = StObject.set(x, "approveApps", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
   }
 }

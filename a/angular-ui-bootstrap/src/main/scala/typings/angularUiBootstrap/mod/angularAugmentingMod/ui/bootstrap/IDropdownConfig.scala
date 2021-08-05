@@ -18,25 +18,19 @@ trait IDropdownConfig extends StObject {
 }
 object IDropdownConfig {
   
-  @scala.inline
-  def apply(): IDropdownConfig = {
+  inline def apply(): IDropdownConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDropdownConfig]
   }
   
-  @scala.inline
-  implicit class IDropdownConfigMutableBuilder[Self <: IDropdownConfig] (val x: Self) extends AnyVal {
+  extension [Self <: IDropdownConfig](x: Self) {
     
-    @scala.inline
-    def setAppendToOpenClass(value: String): Self = StObject.set(x, "appendToOpenClass", value.asInstanceOf[js.Any])
+    inline def setAppendToOpenClass(value: String): Self = StObject.set(x, "appendToOpenClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppendToOpenClassUndefined: Self = StObject.set(x, "appendToOpenClass", js.undefined)
+    inline def setAppendToOpenClassUndefined: Self = StObject.set(x, "appendToOpenClass", js.undefined)
     
-    @scala.inline
-    def setOpenClass(value: String): Self = StObject.set(x, "openClass", value.asInstanceOf[js.Any])
+    inline def setOpenClass(value: String): Self = StObject.set(x, "openClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenClassUndefined: Self = StObject.set(x, "openClass", js.undefined)
+    inline def setOpenClassUndefined: Self = StObject.set(x, "openClass", js.undefined)
   }
 }

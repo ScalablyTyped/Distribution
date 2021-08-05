@@ -10,19 +10,15 @@ trait ConnectionEndCapFill extends StObject {
 }
 object ConnectionEndCapFill {
   
-  @scala.inline
-  def apply(): ConnectionEndCapFill = {
+  inline def apply(): ConnectionEndCapFill = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectionEndCapFill]
   }
   
-  @scala.inline
-  implicit class ConnectionEndCapFillMutableBuilder[Self <: ConnectionEndCapFill] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionEndCapFill](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
   }
 }

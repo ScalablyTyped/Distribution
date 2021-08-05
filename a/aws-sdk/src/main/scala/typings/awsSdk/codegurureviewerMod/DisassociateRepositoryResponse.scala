@@ -18,25 +18,19 @@ trait DisassociateRepositoryResponse extends StObject {
 }
 object DisassociateRepositoryResponse {
   
-  @scala.inline
-  def apply(): DisassociateRepositoryResponse = {
+  inline def apply(): DisassociateRepositoryResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisassociateRepositoryResponse]
   }
   
-  @scala.inline
-  implicit class DisassociateRepositoryResponseMutableBuilder[Self <: DisassociateRepositoryResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateRepositoryResponse](x: Self) {
     
-    @scala.inline
-    def setRepositoryAssociation(value: RepositoryAssociation): Self = StObject.set(x, "RepositoryAssociation", value.asInstanceOf[js.Any])
+    inline def setRepositoryAssociation(value: RepositoryAssociation): Self = StObject.set(x, "RepositoryAssociation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryAssociationUndefined: Self = StObject.set(x, "RepositoryAssociation", js.undefined)
+    inline def setRepositoryAssociationUndefined: Self = StObject.set(x, "RepositoryAssociation", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

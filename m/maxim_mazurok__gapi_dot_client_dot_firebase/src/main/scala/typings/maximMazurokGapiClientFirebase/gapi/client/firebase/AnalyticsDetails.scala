@@ -17,28 +17,21 @@ trait AnalyticsDetails extends StObject {
 }
 object AnalyticsDetails {
   
-  @scala.inline
-  def apply(): AnalyticsDetails = {
+  inline def apply(): AnalyticsDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnalyticsDetails]
   }
   
-  @scala.inline
-  implicit class AnalyticsDetailsMutableBuilder[Self <: AnalyticsDetails] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyticsDetails](x: Self) {
     
-    @scala.inline
-    def setAnalyticsProperty(value: AnalyticsProperty): Self = StObject.set(x, "analyticsProperty", value.asInstanceOf[js.Any])
+    inline def setAnalyticsProperty(value: AnalyticsProperty): Self = StObject.set(x, "analyticsProperty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnalyticsPropertyUndefined: Self = StObject.set(x, "analyticsProperty", js.undefined)
+    inline def setAnalyticsPropertyUndefined: Self = StObject.set(x, "analyticsProperty", js.undefined)
     
-    @scala.inline
-    def setStreamMappings(value: js.Array[StreamMapping]): Self = StObject.set(x, "streamMappings", value.asInstanceOf[js.Any])
+    inline def setStreamMappings(value: js.Array[StreamMapping]): Self = StObject.set(x, "streamMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamMappingsUndefined: Self = StObject.set(x, "streamMappings", js.undefined)
+    inline def setStreamMappingsUndefined: Self = StObject.set(x, "streamMappings", js.undefined)
     
-    @scala.inline
-    def setStreamMappingsVarargs(value: StreamMapping*): Self = StObject.set(x, "streamMappings", js.Array(value :_*))
+    inline def setStreamMappingsVarargs(value: StreamMapping*): Self = StObject.set(x, "streamMappings", js.Array(value :_*))
   }
 }

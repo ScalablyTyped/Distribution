@@ -78,82 +78,57 @@ trait ClusterIconStyle extends StObject {
 }
 object ClusterIconStyle {
   
-  @scala.inline
-  def apply(height: Double, url: java.lang.String, width: Double): ClusterIconStyle = {
+  inline def apply(height: Double, url: java.lang.String, width: Double): ClusterIconStyle = {
     val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClusterIconStyle]
   }
   
-  @scala.inline
-  implicit class ClusterIconStyleMutableBuilder[Self <: ClusterIconStyle] (val x: Self) extends AnyVal {
+  extension [Self <: ClusterIconStyle](x: Self) {
     
-    @scala.inline
-    def setAnchorIcon(value: js.Array[Double]): Self = StObject.set(x, "anchorIcon", value.asInstanceOf[js.Any])
+    inline def setAnchorIcon(value: js.Array[Double]): Self = StObject.set(x, "anchorIcon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorIconUndefined: Self = StObject.set(x, "anchorIcon", js.undefined)
+    inline def setAnchorIconUndefined: Self = StObject.set(x, "anchorIcon", js.undefined)
     
-    @scala.inline
-    def setAnchorIconVarargs(value: Double*): Self = StObject.set(x, "anchorIcon", js.Array(value :_*))
+    inline def setAnchorIconVarargs(value: Double*): Self = StObject.set(x, "anchorIcon", js.Array(value :_*))
     
-    @scala.inline
-    def setAnchorText(value: js.Array[Double]): Self = StObject.set(x, "anchorText", value.asInstanceOf[js.Any])
+    inline def setAnchorText(value: js.Array[Double]): Self = StObject.set(x, "anchorText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorTextUndefined: Self = StObject.set(x, "anchorText", js.undefined)
+    inline def setAnchorTextUndefined: Self = StObject.set(x, "anchorText", js.undefined)
     
-    @scala.inline
-    def setAnchorTextVarargs(value: Double*): Self = StObject.set(x, "anchorText", js.Array(value :_*))
+    inline def setAnchorTextVarargs(value: Double*): Self = StObject.set(x, "anchorText", js.Array(value :_*))
     
-    @scala.inline
-    def setBackgroundPosition(value: java.lang.String): Self = StObject.set(x, "backgroundPosition", value.asInstanceOf[js.Any])
+    inline def setBackgroundPosition(value: java.lang.String): Self = StObject.set(x, "backgroundPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundPositionUndefined: Self = StObject.set(x, "backgroundPosition", js.undefined)
+    inline def setBackgroundPositionUndefined: Self = StObject.set(x, "backgroundPosition", js.undefined)
     
-    @scala.inline
-    def setFontFamily(value: java.lang.String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
+    inline def setFontFamily(value: java.lang.String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
+    inline def setFontFamilyUndefined: Self = StObject.set(x, "fontFamily", js.undefined)
     
-    @scala.inline
-    def setFontStyle(value: java.lang.String): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
+    inline def setFontStyle(value: java.lang.String): Self = StObject.set(x, "fontStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
+    inline def setFontStyleUndefined: Self = StObject.set(x, "fontStyle", js.undefined)
     
-    @scala.inline
-    def setFontWeight(value: java.lang.String): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
+    inline def setFontWeight(value: java.lang.String): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
+    inline def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextColor(value: java.lang.String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
+    inline def setTextColor(value: java.lang.String): Self = StObject.set(x, "textColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
+    inline def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
     
-    @scala.inline
-    def setTextDecoration(value: java.lang.String): Self = StObject.set(x, "textDecoration", value.asInstanceOf[js.Any])
+    inline def setTextDecoration(value: java.lang.String): Self = StObject.set(x, "textDecoration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextDecorationUndefined: Self = StObject.set(x, "textDecoration", js.undefined)
+    inline def setTextDecorationUndefined: Self = StObject.set(x, "textDecoration", js.undefined)
     
-    @scala.inline
-    def setTextSize(value: Double): Self = StObject.set(x, "textSize", value.asInstanceOf[js.Any])
+    inline def setTextSize(value: Double): Self = StObject.set(x, "textSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextSizeUndefined: Self = StObject.set(x, "textSize", js.undefined)
+    inline def setTextSizeUndefined: Self = StObject.set(x, "textSize", js.undefined)
     
-    @scala.inline
-    def setUrl(value: java.lang.String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: java.lang.String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

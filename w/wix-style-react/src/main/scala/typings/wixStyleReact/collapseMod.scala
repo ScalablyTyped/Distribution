@@ -25,32 +25,24 @@ object collapseMod {
   }
   object CollapseProps {
     
-    @scala.inline
-    def apply(): CollapseProps = {
+    inline def apply(): CollapseProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CollapseProps]
     }
     
-    @scala.inline
-    implicit class CollapsePropsMutableBuilder[Self <: CollapseProps] (val x: Self) extends AnyVal {
+    extension [Self <: CollapseProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+      inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+      inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
     }
   }
 }

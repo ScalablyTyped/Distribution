@@ -18,19 +18,15 @@ trait DisableUserRequest extends StObject {
 }
 object DisableUserRequest {
   
-  @scala.inline
-  def apply(AuthenticationType: AuthenticationType, UserName: Username): DisableUserRequest = {
+  inline def apply(AuthenticationType: AuthenticationType, UserName: Username): DisableUserRequest = {
     val __obj = js.Dynamic.literal(AuthenticationType = AuthenticationType.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisableUserRequest]
   }
   
-  @scala.inline
-  implicit class DisableUserRequestMutableBuilder[Self <: DisableUserRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisableUserRequest](x: Self) {
     
-    @scala.inline
-    def setAuthenticationType(value: AuthenticationType): Self = StObject.set(x, "AuthenticationType", value.asInstanceOf[js.Any])
+    inline def setAuthenticationType(value: AuthenticationType): Self = StObject.set(x, "AuthenticationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserName(value: Username): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: Username): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

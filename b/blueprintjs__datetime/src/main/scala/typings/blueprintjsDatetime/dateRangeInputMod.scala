@@ -28,82 +28,82 @@ object dateRangeInputMod {
     @JSName("componentDidUpdate")
     def componentDidUpdate_MDateRangeInput(prevProps: IDateRangeInputProps, prevState: IDateRangeInputState): Unit = js.native
     
-    var doBoundaryDatesOverlap: js.Any = js.native
+    /* private */ var doBoundaryDatesOverlap: js.Any = js.native
     
     /**
       * Returns true if the provided boundary is an END boundary overlapping the
       * selected start date. (If the boundaries overlap, we consider the END
       * boundary to be erroneous.)
       */
-    var doesEndBoundaryOverlapStartBoundary: js.Any = js.native
+    /* private */ var doesEndBoundaryOverlapStartBoundary: js.Any = js.native
     
-    var endInputRef: js.Any = js.native
+    /* private */ var endInputRef: js.Any = js.native
     
-    var formatDate: js.Any = js.native
+    /* private */ var formatDate: js.Any = js.native
     
-    var getDateRangeForCallback: js.Any = js.native
+    /* private */ var getDateRangeForCallback: js.Any = js.native
     
-    var getFormattedMinMaxDateString: js.Any = js.native
+    /* private */ var getFormattedMinMaxDateString: js.Any = js.native
     
-    var getInitialRange: js.Any = js.native
+    /* private */ var getInitialRange: js.Any = js.native
     
-    var getInputDisplayString: js.Any = js.native
+    /* private */ var getInputDisplayString: js.Any = js.native
     
-    var getInputPlaceholderString: js.Any = js.native
+    /* private */ var getInputPlaceholderString: js.Any = js.native
     
-    var getInputProps: js.Any = js.native
+    /* private */ var getInputProps: js.Any = js.native
     
-    var getInputRef: js.Any = js.native
+    /* private */ var getInputRef: js.Any = js.native
     
-    var getIsOpenValueWhenDateChanges: js.Any = js.native
+    /* private */ var getIsOpenValueWhenDateChanges: js.Any = js.native
     
-    var getOtherBoundary: js.Any = js.native
+    /* private */ var getOtherBoundary: js.Any = js.native
     
-    var getSelectedRange: js.Any = js.native
+    /* private */ var getSelectedRange: js.Any = js.native
     
-    var getStateKeysAndValuesForBoundary: js.Any = js.native
+    /* private */ var getStateKeysAndValuesForBoundary: js.Any = js.native
     
-    var handleDateRangePickerChange: js.Any = js.native
+    /* private */ var handleDateRangePickerChange: js.Any = js.native
     
-    var handleDateRangePickerHoverChange: js.Any = js.native
+    /* private */ var handleDateRangePickerHoverChange: js.Any = js.native
     
-    var handleEndInputEvent: js.Any = js.native
+    /* private */ var handleEndInputEvent: js.Any = js.native
     
-    var handleInputBlur: js.Any = js.native
+    /* private */ var handleInputBlur: js.Any = js.native
     
-    var handleInputChange: js.Any = js.native
+    /* private */ var handleInputChange: js.Any = js.native
     
-    var handleInputClick: js.Any = js.native
+    /* private */ var handleInputClick: js.Any = js.native
     
-    var handleInputEvent: js.Any = js.native
+    /* private */ var handleInputEvent: js.Any = js.native
     
-    var handleInputFocus: js.Any = js.native
+    /* private */ var handleInputFocus: js.Any = js.native
     
-    var handleInputKeyDown: js.Any = js.native
+    /* private */ var handleInputKeyDown: js.Any = js.native
     
-    var handleInputMouseDown: js.Any = js.native
+    /* private */ var handleInputMouseDown: js.Any = js.native
     
-    var handlePopoverClose: js.Any = js.native
+    /* private */ var handlePopoverClose: js.Any = js.native
     
-    var handleShortcutChange: js.Any = js.native
+    /* private */ var handleShortcutChange: js.Any = js.native
     
-    var handleStartInputEvent: js.Any = js.native
+    /* private */ var handleStartInputEvent: js.Any = js.native
     
-    var isControlled: js.Any = js.native
+    /* private */ var isControlled: js.Any = js.native
     
-    var isDateValidAndInRange: js.Any = js.native
+    /* private */ var isDateValidAndInRange: js.Any = js.native
     
-    var isInputEmpty: js.Any = js.native
+    /* private */ var isInputEmpty: js.Any = js.native
     
-    var isInputInErrorState: js.Any = js.native
+    /* private */ var isInputInErrorState: js.Any = js.native
     
-    var isNextDateRangeValid: js.Any = js.native
+    /* private */ var isNextDateRangeValid: js.Any = js.native
     
-    var parseDate: js.Any = js.native
+    /* private */ var parseDate: js.Any = js.native
     
-    var refHandlers: js.Any = js.native
+    /* private */ var refHandlers: js.Any = js.native
     
-    var renderInputGroup: js.Any = js.native
+    /* private */ var renderInputGroup: js.Any = js.native
     
     /**
       * Public method intended for unit testing only. Do not use in feature work!
@@ -111,9 +111,9 @@ object dateRangeInputMod {
     def reset(): Unit = js.native
     def reset(props: IDateRangeInputProps): Unit = js.native
     
-    var shouldFocusInputRef: js.Any = js.native
+    /* private */ var shouldFocusInputRef: js.Any = js.native
     
-    var startInputRef: js.Any = js.native
+    /* private */ var startInputRef: js.Any = js.native
   }
   /* static members */
   object DateRangeInput {
@@ -125,14 +125,12 @@ object dateRangeInputMod {
     @JSImport("@blueprintjs/datetime/lib/esm/dateRangeInput", "DateRangeInput.defaultProps")
     @js.native
     def defaultProps: PartialIDateRangeInputPro = js.native
-    @scala.inline
-    def defaultProps_=(x: PartialIDateRangeInputPro): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PartialIDateRangeInputPro): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/datetime/lib/esm/dateRangeInput", "DateRangeInput.displayName")
     @js.native
     def displayName: String = js.native
-    @scala.inline
-    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+    inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -322,110 +320,76 @@ object dateRangeInputMod {
   }
   object IDateRangeInputState {
     
-    @scala.inline
-    def apply(): IDateRangeInputState = {
+    inline def apply(): IDateRangeInputState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDateRangeInputState]
     }
     
-    @scala.inline
-    implicit class IDateRangeInputStateMutableBuilder[Self <: IDateRangeInputState] (val x: Self) extends AnyVal {
+    extension [Self <: IDateRangeInputState](x: Self) {
       
-      @scala.inline
-      def setBoundaryToModify(value: Boundary): Self = StObject.set(x, "boundaryToModify", value.asInstanceOf[js.Any])
+      inline def setBoundaryToModify(value: Boundary): Self = StObject.set(x, "boundaryToModify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoundaryToModifyUndefined: Self = StObject.set(x, "boundaryToModify", js.undefined)
+      inline def setBoundaryToModifyUndefined: Self = StObject.set(x, "boundaryToModify", js.undefined)
       
-      @scala.inline
-      def setEndHoverString(value: String): Self = StObject.set(x, "endHoverString", value.asInstanceOf[js.Any])
+      inline def setEndHoverString(value: String): Self = StObject.set(x, "endHoverString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndHoverStringUndefined: Self = StObject.set(x, "endHoverString", js.undefined)
+      inline def setEndHoverStringUndefined: Self = StObject.set(x, "endHoverString", js.undefined)
       
-      @scala.inline
-      def setEndInputString(value: String): Self = StObject.set(x, "endInputString", value.asInstanceOf[js.Any])
+      inline def setEndInputString(value: String): Self = StObject.set(x, "endInputString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndInputStringUndefined: Self = StObject.set(x, "endInputString", js.undefined)
+      inline def setEndInputStringUndefined: Self = StObject.set(x, "endInputString", js.undefined)
       
-      @scala.inline
-      def setFormattedMaxDateString(value: String): Self = StObject.set(x, "formattedMaxDateString", value.asInstanceOf[js.Any])
+      inline def setFormattedMaxDateString(value: String): Self = StObject.set(x, "formattedMaxDateString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormattedMaxDateStringUndefined: Self = StObject.set(x, "formattedMaxDateString", js.undefined)
+      inline def setFormattedMaxDateStringUndefined: Self = StObject.set(x, "formattedMaxDateString", js.undefined)
       
-      @scala.inline
-      def setFormattedMinDateString(value: String): Self = StObject.set(x, "formattedMinDateString", value.asInstanceOf[js.Any])
+      inline def setFormattedMinDateString(value: String): Self = StObject.set(x, "formattedMinDateString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormattedMinDateStringUndefined: Self = StObject.set(x, "formattedMinDateString", js.undefined)
+      inline def setFormattedMinDateStringUndefined: Self = StObject.set(x, "formattedMinDateString", js.undefined)
       
-      @scala.inline
-      def setIsEndInputFocused(value: Boolean): Self = StObject.set(x, "isEndInputFocused", value.asInstanceOf[js.Any])
+      inline def setIsEndInputFocused(value: Boolean): Self = StObject.set(x, "isEndInputFocused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEndInputFocusedUndefined: Self = StObject.set(x, "isEndInputFocused", js.undefined)
+      inline def setIsEndInputFocusedUndefined: Self = StObject.set(x, "isEndInputFocused", js.undefined)
       
-      @scala.inline
-      def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
+      inline def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
       
-      @scala.inline
-      def setIsStartInputFocused(value: Boolean): Self = StObject.set(x, "isStartInputFocused", value.asInstanceOf[js.Any])
+      inline def setIsStartInputFocused(value: Boolean): Self = StObject.set(x, "isStartInputFocused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsStartInputFocusedUndefined: Self = StObject.set(x, "isStartInputFocused", js.undefined)
+      inline def setIsStartInputFocusedUndefined: Self = StObject.set(x, "isStartInputFocused", js.undefined)
       
-      @scala.inline
-      def setLastFocusedField(value: Boundary): Self = StObject.set(x, "lastFocusedField", value.asInstanceOf[js.Any])
+      inline def setLastFocusedField(value: Boundary): Self = StObject.set(x, "lastFocusedField", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastFocusedFieldUndefined: Self = StObject.set(x, "lastFocusedField", js.undefined)
+      inline def setLastFocusedFieldUndefined: Self = StObject.set(x, "lastFocusedField", js.undefined)
       
-      @scala.inline
-      def setSelectedEnd(value: Date): Self = StObject.set(x, "selectedEnd", value.asInstanceOf[js.Any])
+      inline def setSelectedEnd(value: Date): Self = StObject.set(x, "selectedEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedEndUndefined: Self = StObject.set(x, "selectedEnd", js.undefined)
+      inline def setSelectedEndUndefined: Self = StObject.set(x, "selectedEnd", js.undefined)
       
-      @scala.inline
-      def setSelectedShortcutIndex(value: Double): Self = StObject.set(x, "selectedShortcutIndex", value.asInstanceOf[js.Any])
+      inline def setSelectedShortcutIndex(value: Double): Self = StObject.set(x, "selectedShortcutIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedShortcutIndexUndefined: Self = StObject.set(x, "selectedShortcutIndex", js.undefined)
+      inline def setSelectedShortcutIndexUndefined: Self = StObject.set(x, "selectedShortcutIndex", js.undefined)
       
-      @scala.inline
-      def setSelectedStart(value: Date): Self = StObject.set(x, "selectedStart", value.asInstanceOf[js.Any])
+      inline def setSelectedStart(value: Date): Self = StObject.set(x, "selectedStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedStartUndefined: Self = StObject.set(x, "selectedStart", js.undefined)
+      inline def setSelectedStartUndefined: Self = StObject.set(x, "selectedStart", js.undefined)
       
-      @scala.inline
-      def setShouldSelectAfterUpdate(value: Boolean): Self = StObject.set(x, "shouldSelectAfterUpdate", value.asInstanceOf[js.Any])
+      inline def setShouldSelectAfterUpdate(value: Boolean): Self = StObject.set(x, "shouldSelectAfterUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShouldSelectAfterUpdateUndefined: Self = StObject.set(x, "shouldSelectAfterUpdate", js.undefined)
+      inline def setShouldSelectAfterUpdateUndefined: Self = StObject.set(x, "shouldSelectAfterUpdate", js.undefined)
       
-      @scala.inline
-      def setStartHoverString(value: String): Self = StObject.set(x, "startHoverString", value.asInstanceOf[js.Any])
+      inline def setStartHoverString(value: String): Self = StObject.set(x, "startHoverString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartHoverStringUndefined: Self = StObject.set(x, "startHoverString", js.undefined)
+      inline def setStartHoverStringUndefined: Self = StObject.set(x, "startHoverString", js.undefined)
       
-      @scala.inline
-      def setStartInputString(value: String): Self = StObject.set(x, "startInputString", value.asInstanceOf[js.Any])
+      inline def setStartInputString(value: String): Self = StObject.set(x, "startInputString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartInputStringUndefined: Self = StObject.set(x, "startInputString", js.undefined)
+      inline def setStartInputStringUndefined: Self = StObject.set(x, "startInputString", js.undefined)
       
-      @scala.inline
-      def setWasLastFocusChangeDueToHover(value: Boolean): Self = StObject.set(x, "wasLastFocusChangeDueToHover", value.asInstanceOf[js.Any])
+      inline def setWasLastFocusChangeDueToHover(value: Boolean): Self = StObject.set(x, "wasLastFocusChangeDueToHover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWasLastFocusChangeDueToHoverUndefined: Self = StObject.set(x, "wasLastFocusChangeDueToHover", js.undefined)
+      inline def setWasLastFocusChangeDueToHoverUndefined: Self = StObject.set(x, "wasLastFocusChangeDueToHover", js.undefined)
     }
   }
 }

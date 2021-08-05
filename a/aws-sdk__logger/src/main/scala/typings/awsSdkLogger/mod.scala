@@ -27,9 +27,9 @@ object mod {
     
     def log(content: String): Unit = js.native
     
-    val logLevel: js.Any = js.native
+    /* private */ val logLevel: js.Any = js.native
     
-    val logger: js.Any = js.native
+    /* private */ val logger: js.Any = js.native
     
     val options: LoggerOptions = js.native
     
@@ -37,7 +37,7 @@ object mod {
     /* CompleteClass */
     override def warn(content: js.Object): Unit = js.native
     
-    var write: js.Any = js.native
+    /* private */ var write: js.Any = js.native
   }
   /* static members */
   object Logger {

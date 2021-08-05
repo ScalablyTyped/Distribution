@@ -11,22 +11,17 @@ trait InkAnalysisLineCollectionUpdateData extends StObject {
 }
 object InkAnalysisLineCollectionUpdateData {
   
-  @scala.inline
-  def apply(): InkAnalysisLineCollectionUpdateData = {
+  inline def apply(): InkAnalysisLineCollectionUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InkAnalysisLineCollectionUpdateData]
   }
   
-  @scala.inline
-  implicit class InkAnalysisLineCollectionUpdateDataMutableBuilder[Self <: InkAnalysisLineCollectionUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: InkAnalysisLineCollectionUpdateData](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[InkAnalysisLineData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[InkAnalysisLineData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: InkAnalysisLineData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: InkAnalysisLineData*): Self = StObject.set(x, "items", js.Array(value :_*))
   }
 }

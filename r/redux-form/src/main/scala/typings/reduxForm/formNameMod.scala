@@ -24,17 +24,14 @@ object formNameMod extends Shortcut {
   }
   object FormNameProps {
     
-    @scala.inline
-    def apply(children: Form => ReactNode): FormNameProps = {
+    inline def apply(children: Form => ReactNode): FormNameProps = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
       __obj.asInstanceOf[FormNameProps]
     }
     
-    @scala.inline
-    implicit class FormNamePropsMutableBuilder[Self <: FormNameProps] (val x: Self) extends AnyVal {
+    extension [Self <: FormNameProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: Form => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: Form => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }
   }
   

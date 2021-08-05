@@ -34,37 +34,27 @@ trait MessageSender extends StObject {
 }
 object MessageSender {
   
-  @scala.inline
-  def apply(): MessageSender = {
+  inline def apply(): MessageSender = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MessageSender]
   }
   
-  @scala.inline
-  implicit class MessageSenderMutableBuilder[Self <: MessageSender] (val x: Self) extends AnyVal {
+  extension [Self <: MessageSender](x: Self) {
     
-    @scala.inline
-    def setFrameId(value: integer): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+    inline def setFrameId(value: integer): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameIdUndefined: Self = StObject.set(x, "frameId", js.undefined)
+    inline def setFrameIdUndefined: Self = StObject.set(x, "frameId", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setTlsChannelId(value: String): Self = StObject.set(x, "tlsChannelId", value.asInstanceOf[js.Any])
+    inline def setTlsChannelId(value: String): Self = StObject.set(x, "tlsChannelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTlsChannelIdUndefined: Self = StObject.set(x, "tlsChannelId", js.undefined)
+    inline def setTlsChannelIdUndefined: Self = StObject.set(x, "tlsChannelId", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

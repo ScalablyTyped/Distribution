@@ -10,19 +10,15 @@ trait DiagramShapeDefaultsHover extends StObject {
 }
 object DiagramShapeDefaultsHover {
   
-  @scala.inline
-  def apply(): DiagramShapeDefaultsHover = {
+  inline def apply(): DiagramShapeDefaultsHover = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DiagramShapeDefaultsHover]
   }
   
-  @scala.inline
-  implicit class DiagramShapeDefaultsHoverMutableBuilder[Self <: DiagramShapeDefaultsHover] (val x: Self) extends AnyVal {
+  extension [Self <: DiagramShapeDefaultsHover](x: Self) {
     
-    @scala.inline
-    def setFill(value: String | DiagramShapeDefaultsHoverFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: String | DiagramShapeDefaultsHoverFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
   }
 }

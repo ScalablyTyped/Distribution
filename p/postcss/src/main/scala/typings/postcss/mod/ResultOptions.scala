@@ -21,25 +21,19 @@ trait ResultOptions
 }
 object ResultOptions {
   
-  @scala.inline
-  def apply(): ResultOptions = {
+  inline def apply(): ResultOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResultOptions]
   }
   
-  @scala.inline
-  implicit class ResultOptionsMutableBuilder[Self <: ResultOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ResultOptions](x: Self) {
     
-    @scala.inline
-    def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+    inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
     
-    @scala.inline
-    def setPlugin(value: String): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
+    inline def setPlugin(value: String): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
+    inline def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
   }
 }

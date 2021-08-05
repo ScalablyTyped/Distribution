@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcFormOpenDataMode extends StObject
 object AcFormOpenDataMode {
   
-  @scala.inline
-  def acFormAdd: `0` = 0.asInstanceOf[`0`]
+  inline def acFormAdd: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def acFormEdit: `1` = 1.asInstanceOf[`1`]
+  inline def acFormEdit: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def acFormPropertySettings: `-1` = -1.asInstanceOf[`-1`]
+  inline def acFormPropertySettings: `-1` = -1.asInstanceOf[`-1`]
   
-  @scala.inline
-  def acFormReadOnly: `2` = 2.asInstanceOf[`2`]
+  inline def acFormReadOnly: `2` = 2.asInstanceOf[`2`]
 }

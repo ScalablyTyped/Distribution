@@ -24,22 +24,17 @@ trait RuleGroupRuleStatementOrStatementStatementNotStatementStatementIpSetRefere
 }
 object RuleGroupRuleStatementOrStatementStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig {
   
-  @scala.inline
-  def apply(fallbackBehavior: Input[String], headerName: Input[String], position: Input[String]): RuleGroupRuleStatementOrStatementStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig = {
+  inline def apply(fallbackBehavior: Input[String], headerName: Input[String], position: Input[String]): RuleGroupRuleStatementOrStatementStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig = {
     val __obj = js.Dynamic.literal(fallbackBehavior = fallbackBehavior.asInstanceOf[js.Any], headerName = headerName.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleGroupRuleStatementOrStatementStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleStatementOrStatementStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfigMutableBuilder[Self <: RuleGroupRuleStatementOrStatementStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleStatementOrStatementStatementNotStatementStatementIpSetReferenceStatementIpSetForwardedIpConfig](x: Self) {
     
-    @scala.inline
-    def setFallbackBehavior(value: Input[String]): Self = StObject.set(x, "fallbackBehavior", value.asInstanceOf[js.Any])
+    inline def setFallbackBehavior(value: Input[String]): Self = StObject.set(x, "fallbackBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderName(value: Input[String]): Self = StObject.set(x, "headerName", value.asInstanceOf[js.Any])
+    inline def setHeaderName(value: Input[String]): Self = StObject.set(x, "headerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Input[String]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Input[String]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

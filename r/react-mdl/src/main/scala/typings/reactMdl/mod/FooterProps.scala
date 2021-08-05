@@ -16,25 +16,19 @@ trait FooterProps
 }
 object FooterProps {
   
-  @scala.inline
-  def apply(): FooterProps = {
+  inline def apply(): FooterProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FooterProps]
   }
   
-  @scala.inline
-  implicit class FooterPropsMutableBuilder[Self <: FooterProps] (val x: Self) extends AnyVal {
+  extension [Self <: FooterProps](x: Self) {
     
-    @scala.inline
-    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

@@ -20,23 +20,19 @@ object mod {
   @JSImport("react-body-classname", "canUseDOM")
   @js.native
   def canUseDOM: Boolean = js.native
-  @scala.inline
-  def canUseDOM_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("canUseDOM")(x.asInstanceOf[js.Any])
+  inline def canUseDOM_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("canUseDOM")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("react-body-classname", "displayName")
   @js.native
   def displayName: String = js.native
-  @scala.inline
-  def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+  inline def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @scala.inline
-  def peek(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("peek")().asInstanceOf[js.Any]
+  inline def peek(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("peek")().asInstanceOf[js.Any]
   
   /* static member */
-  @scala.inline
-  def rewind(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("rewind")().asInstanceOf[js.Any]
+  inline def rewind(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("rewind")().asInstanceOf[js.Any]
   
   type BodyClassName = Component[ClassName, js.Object, js.Any]
 }

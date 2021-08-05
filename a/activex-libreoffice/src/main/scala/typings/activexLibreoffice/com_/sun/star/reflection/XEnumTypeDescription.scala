@@ -50,8 +50,7 @@ trait XEnumTypeDescription
 }
 object XEnumTypeDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DefaultEnumValue: Double,
     EnumNames: SafeArray[String],
     EnumValues: SafeArray[Double],
@@ -70,25 +69,18 @@ object XEnumTypeDescription {
     __obj.asInstanceOf[XEnumTypeDescription]
   }
   
-  @scala.inline
-  implicit class XEnumTypeDescriptionMutableBuilder[Self <: XEnumTypeDescription] (val x: Self) extends AnyVal {
+  extension [Self <: XEnumTypeDescription](x: Self) {
     
-    @scala.inline
-    def setDefaultEnumValue(value: Double): Self = StObject.set(x, "DefaultEnumValue", value.asInstanceOf[js.Any])
+    inline def setDefaultEnumValue(value: Double): Self = StObject.set(x, "DefaultEnumValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnumNames(value: SafeArray[String]): Self = StObject.set(x, "EnumNames", value.asInstanceOf[js.Any])
+    inline def setEnumNames(value: SafeArray[String]): Self = StObject.set(x, "EnumNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnumValues(value: SafeArray[Double]): Self = StObject.set(x, "EnumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: SafeArray[Double]): Self = StObject.set(x, "EnumValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDefaultEnumValue(value: () => Double): Self = StObject.set(x, "getDefaultEnumValue", js.Any.fromFunction0(value))
+    inline def setGetDefaultEnumValue(value: () => Double): Self = StObject.set(x, "getDefaultEnumValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEnumNames(value: () => SafeArray[String]): Self = StObject.set(x, "getEnumNames", js.Any.fromFunction0(value))
+    inline def setGetEnumNames(value: () => SafeArray[String]): Self = StObject.set(x, "getEnumNames", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEnumValues(value: () => SafeArray[Double]): Self = StObject.set(x, "getEnumValues", js.Any.fromFunction0(value))
+    inline def setGetEnumValues(value: () => SafeArray[Double]): Self = StObject.set(x, "getEnumValues", js.Any.fromFunction0(value))
   }
 }

@@ -40,7 +40,7 @@ object tasksMod {
   class Task () extends EventEmitter {
     def this(hasMsgTickInterval: TaskOptions) = this()
     
-    var _msg: String = js.native
+    /* protected */ var _msg: String = js.native
     
     def clear(): this.type = js.native
     
@@ -99,7 +99,7 @@ object tasksMod {
     
     def createTask(options: TaskOptions): Task = js.native
     
-    var current: js.UndefOr[Task] = js.native
+    /* protected */ var current: js.UndefOr[Task] = js.native
     
     @JSName("emit")
     def emit_end(name: end): Boolean = js.native
@@ -127,9 +127,9 @@ object tasksMod {
     @JSName("on")
     def on_next(name: next, handler: js.Function1[/* task */ Task, Unit]): this.type = js.native
     
-    val taskOptions: PartialTaskOptions = js.native
+    /* protected */ val taskOptions: PartialTaskOptions = js.native
     
-    val tasks: js.Array[Task] = js.native
+    /* protected */ val tasks: js.Array[Task] = js.native
   }
   
   trait TaskChainOptions extends StObject {
@@ -138,20 +138,16 @@ object tasksMod {
   }
   object TaskChainOptions {
     
-    @scala.inline
-    def apply(): TaskChainOptions = {
+    inline def apply(): TaskChainOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TaskChainOptions]
     }
     
-    @scala.inline
-    implicit class TaskChainOptionsMutableBuilder[Self <: TaskChainOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TaskChainOptions](x: Self) {
       
-      @scala.inline
-      def setTaskOptions(value: PartialTaskOptions): Self = StObject.set(x, "taskOptions", value.asInstanceOf[js.Any])
+      inline def setTaskOptions(value: PartialTaskOptions): Self = StObject.set(x, "taskOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaskOptionsUndefined: Self = StObject.set(x, "taskOptions", js.undefined)
+      inline def setTaskOptionsUndefined: Self = StObject.set(x, "taskOptions", js.undefined)
     }
   }
   
@@ -163,26 +159,20 @@ object tasksMod {
   }
   object TaskOptions {
     
-    @scala.inline
-    def apply(): TaskOptions = {
+    inline def apply(): TaskOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TaskOptions]
     }
     
-    @scala.inline
-    implicit class TaskOptionsMutableBuilder[Self <: TaskOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TaskOptions](x: Self) {
       
-      @scala.inline
-      def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
+      inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMsgUndefined: Self = StObject.set(x, "msg", js.undefined)
+      inline def setMsgUndefined: Self = StObject.set(x, "msg", js.undefined)
       
-      @scala.inline
-      def setTickInterval(value: Double): Self = StObject.set(x, "tickInterval", value.asInstanceOf[js.Any])
+      inline def setTickInterval(value: Double): Self = StObject.set(x, "tickInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTickIntervalUndefined: Self = StObject.set(x, "tickInterval", js.undefined)
+      inline def setTickIntervalUndefined: Self = StObject.set(x, "tickInterval", js.undefined)
     }
   }
 }

@@ -10,16 +10,13 @@ trait DatasetId extends StObject {
 }
 object DatasetId {
   
-  @scala.inline
-  def apply(datasetId: String): DatasetId = {
+  inline def apply(datasetId: String): DatasetId = {
     val __obj = js.Dynamic.literal(datasetId = datasetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatasetId]
   }
   
-  @scala.inline
-  implicit class DatasetIdMutableBuilder[Self <: DatasetId] (val x: Self) extends AnyVal {
+  extension [Self <: DatasetId](x: Self) {
     
-    @scala.inline
-    def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
+    inline def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
   }
 }

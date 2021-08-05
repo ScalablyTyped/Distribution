@@ -10,16 +10,13 @@ trait KeyAscii extends StObject {
 }
 object KeyAscii {
   
-  @scala.inline
-  def apply(KeyAscii: Double): KeyAscii = {
+  inline def apply(KeyAscii: Double): KeyAscii = {
     val __obj = js.Dynamic.literal(KeyAscii = KeyAscii.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyAscii]
   }
   
-  @scala.inline
-  implicit class KeyAsciiMutableBuilder[Self <: KeyAscii] (val x: Self) extends AnyVal {
+  extension [Self <: KeyAscii](x: Self) {
     
-    @scala.inline
-    def setKeyAscii(value: Double): Self = StObject.set(x, "KeyAscii", value.asInstanceOf[js.Any])
+    inline def setKeyAscii(value: Double): Self = StObject.set(x, "KeyAscii", value.asInstanceOf[js.Any])
   }
 }

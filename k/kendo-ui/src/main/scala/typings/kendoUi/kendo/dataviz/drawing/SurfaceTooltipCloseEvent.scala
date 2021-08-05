@@ -14,25 +14,19 @@ trait SurfaceTooltipCloseEvent
 }
 object SurfaceTooltipCloseEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Surface): SurfaceTooltipCloseEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Surface): SurfaceTooltipCloseEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[SurfaceTooltipCloseEvent]
   }
   
-  @scala.inline
-  implicit class SurfaceTooltipCloseEventMutableBuilder[Self <: SurfaceTooltipCloseEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SurfaceTooltipCloseEvent](x: Self) {
     
-    @scala.inline
-    def setElement(value: typings.kendoUi.kendo.drawing.Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: typings.kendoUi.kendo.drawing.Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    @scala.inline
-    def setTarget(value: typings.kendoUi.kendo.drawing.Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: typings.kendoUi.kendo.drawing.Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

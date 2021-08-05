@@ -75,37 +75,28 @@ object typesCreateQueueInputMod {
   }
   object CreateQueueInput {
     
-    @scala.inline
-    def apply(QueueName: String): CreateQueueInput = {
+    inline def apply(QueueName: String): CreateQueueInput = {
       val __obj = js.Dynamic.literal(QueueName = QueueName.asInstanceOf[js.Any])
       __obj.asInstanceOf[CreateQueueInput]
     }
     
-    @scala.inline
-    implicit class CreateQueueInputMutableBuilder[Self <: CreateQueueInput] (val x: Self) extends AnyVal {
+    extension [Self <: CreateQueueInput](x: Self) {
       
-      @scala.inline
-      def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
+      inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
+      inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
-      @scala.inline
-      def set$httpOptions(
+      inline def set$httpOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
+      inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
       
-      @scala.inline
-      def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
+      inline def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
+      inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      @scala.inline
-      def setAttributes(
+      inline def setAttributes(
         value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ key in 'All' | 'Policy' | 'VisibilityTimeout' | 'MaximumMessageSize' | 'MessageRetentionPeriod' | 'ApproximateNumberOfMessages' | 'ApproximateNumberOfMessagesNotVisible' | 'CreatedTimestamp' | 'LastModifiedTimestamp' | 'QueueArn' | 'ApproximateNumberOfMessagesDelayed' | 'DelaySeconds' | 'ReceiveMessageWaitTimeSeconds' | 'RedrivePolicy' | 'FifoQueue' | 'ContentBasedDeduplication' | 'KmsMasterKeyId' | 'KmsDataKeyReusePeriodSeconds' | string ]: string}
         */ typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.CreateQueueInput & TopLevel[js.Any]) | (Iterable[
@@ -116,11 +107,9 @@ object typesCreateQueueInputMod {
             ])
       ): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
       
-      @scala.inline
-      def setQueueName(value: String): Self = StObject.set(x, "QueueName", value.asInstanceOf[js.Any])
+      inline def setQueueName(value: String): Self = StObject.set(x, "QueueName", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -12,19 +12,15 @@ trait Ok extends StObject {
 }
 object Ok {
   
-  @scala.inline
-  def apply(n: Double, ok: Double): Ok = {
+  inline def apply(n: Double, ok: Double): Ok = {
     val __obj = js.Dynamic.literal(n = n.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any])
     __obj.asInstanceOf[Ok]
   }
   
-  @scala.inline
-  implicit class OkMutableBuilder[Self <: Ok] (val x: Self) extends AnyVal {
+  extension [Self <: Ok](x: Self) {
     
-    @scala.inline
-    def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
+    inline def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOk(value: Double): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+    inline def setOk(value: Double): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
   }
 }

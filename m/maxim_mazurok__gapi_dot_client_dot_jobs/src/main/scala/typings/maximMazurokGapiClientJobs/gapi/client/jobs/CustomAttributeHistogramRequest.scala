@@ -20,31 +20,23 @@ trait CustomAttributeHistogramRequest extends StObject {
 }
 object CustomAttributeHistogramRequest {
   
-  @scala.inline
-  def apply(): CustomAttributeHistogramRequest = {
+  inline def apply(): CustomAttributeHistogramRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomAttributeHistogramRequest]
   }
   
-  @scala.inline
-  implicit class CustomAttributeHistogramRequestMutableBuilder[Self <: CustomAttributeHistogramRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CustomAttributeHistogramRequest](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setLongValueHistogramBucketingOption(value: NumericBucketingOption): Self = StObject.set(x, "longValueHistogramBucketingOption", value.asInstanceOf[js.Any])
+    inline def setLongValueHistogramBucketingOption(value: NumericBucketingOption): Self = StObject.set(x, "longValueHistogramBucketingOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongValueHistogramBucketingOptionUndefined: Self = StObject.set(x, "longValueHistogramBucketingOption", js.undefined)
+    inline def setLongValueHistogramBucketingOptionUndefined: Self = StObject.set(x, "longValueHistogramBucketingOption", js.undefined)
     
-    @scala.inline
-    def setStringValueHistogram(value: Boolean): Self = StObject.set(x, "stringValueHistogram", value.asInstanceOf[js.Any])
+    inline def setStringValueHistogram(value: Boolean): Self = StObject.set(x, "stringValueHistogram", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringValueHistogramUndefined: Self = StObject.set(x, "stringValueHistogram", js.undefined)
+    inline def setStringValueHistogramUndefined: Self = StObject.set(x, "stringValueHistogram", js.undefined)
   }
 }

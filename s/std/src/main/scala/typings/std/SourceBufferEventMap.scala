@@ -18,28 +18,21 @@ trait SourceBufferEventMap extends StObject {
 }
 object SourceBufferEventMap {
   
-  @scala.inline
-  def apply(abort: Event, error: Event, update: Event, updateend: Event, updatestart: Event): SourceBufferEventMap = {
+  inline def apply(abort: Event, error: Event, update: Event, updateend: Event, updatestart: Event): SourceBufferEventMap = {
     val __obj = js.Dynamic.literal(abort = abort.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any], updateend = updateend.asInstanceOf[js.Any], updatestart = updatestart.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceBufferEventMap]
   }
   
-  @scala.inline
-  implicit class SourceBufferEventMapMutableBuilder[Self <: SourceBufferEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: SourceBufferEventMap](x: Self) {
     
-    @scala.inline
-    def setAbort(value: Event): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
+    inline def setAbort(value: Event): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: Event): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Event): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: Event): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: Event): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateend(value: Event): Self = StObject.set(x, "updateend", value.asInstanceOf[js.Any])
+    inline def setUpdateend(value: Event): Self = StObject.set(x, "updateend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatestart(value: Event): Self = StObject.set(x, "updatestart", value.asInstanceOf[js.Any])
+    inline def setUpdatestart(value: Event): Self = StObject.set(x, "updatestart", value.asInstanceOf[js.Any])
   }
 }

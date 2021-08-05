@@ -19,16 +19,13 @@ trait ResultCode extends StObject {
 }
 object ResultCode {
   
-  @scala.inline
-  def apply(resultCode: String): ResultCode = {
+  inline def apply(resultCode: String): ResultCode = {
     val __obj = js.Dynamic.literal(resultCode = resultCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResultCode]
   }
   
-  @scala.inline
-  implicit class ResultCodeMutableBuilder[Self <: ResultCode] (val x: Self) extends AnyVal {
+  extension [Self <: ResultCode](x: Self) {
     
-    @scala.inline
-    def setResultCode(value: String): Self = StObject.set(x, "resultCode", value.asInstanceOf[js.Any])
+    inline def setResultCode(value: String): Self = StObject.set(x, "resultCode", value.asInstanceOf[js.Any])
   }
 }

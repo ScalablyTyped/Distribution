@@ -49,67 +49,47 @@ trait ReposUpdateBranchProtectionEndpoint extends StObject {
 }
 object ReposUpdateBranchProtectionEndpoint {
   
-  @scala.inline
-  def apply(branch: String, owner: String, repo: String): ReposUpdateBranchProtectionEndpoint = {
+  inline def apply(branch: String, owner: String, repo: String): ReposUpdateBranchProtectionEndpoint = {
     val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], enforce_admins = null, required_pull_request_reviews = null, required_status_checks = null, restrictions = null)
     __obj.asInstanceOf[ReposUpdateBranchProtectionEndpoint]
   }
   
-  @scala.inline
-  implicit class ReposUpdateBranchProtectionEndpointMutableBuilder[Self <: ReposUpdateBranchProtectionEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReposUpdateBranchProtectionEndpoint](x: Self) {
     
-    @scala.inline
-    def setAllow_deletions(value: Boolean): Self = StObject.set(x, "allow_deletions", value.asInstanceOf[js.Any])
+    inline def setAllow_deletions(value: Boolean): Self = StObject.set(x, "allow_deletions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllow_deletionsUndefined: Self = StObject.set(x, "allow_deletions", js.undefined)
+    inline def setAllow_deletionsUndefined: Self = StObject.set(x, "allow_deletions", js.undefined)
     
-    @scala.inline
-    def setAllow_force_pushes(value: Boolean): Self = StObject.set(x, "allow_force_pushes", value.asInstanceOf[js.Any])
+    inline def setAllow_force_pushes(value: Boolean): Self = StObject.set(x, "allow_force_pushes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllow_force_pushesNull: Self = StObject.set(x, "allow_force_pushes", null)
+    inline def setAllow_force_pushesNull: Self = StObject.set(x, "allow_force_pushes", null)
     
-    @scala.inline
-    def setAllow_force_pushesUndefined: Self = StObject.set(x, "allow_force_pushes", js.undefined)
+    inline def setAllow_force_pushesUndefined: Self = StObject.set(x, "allow_force_pushes", js.undefined)
     
-    @scala.inline
-    def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+    inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnforce_admins(value: Boolean): Self = StObject.set(x, "enforce_admins", value.asInstanceOf[js.Any])
+    inline def setEnforce_admins(value: Boolean): Self = StObject.set(x, "enforce_admins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnforce_adminsNull: Self = StObject.set(x, "enforce_admins", null)
+    inline def setEnforce_adminsNull: Self = StObject.set(x, "enforce_admins", null)
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequired_linear_history(value: Boolean): Self = StObject.set(x, "required_linear_history", value.asInstanceOf[js.Any])
+    inline def setRequired_linear_history(value: Boolean): Self = StObject.set(x, "required_linear_history", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequired_linear_historyUndefined: Self = StObject.set(x, "required_linear_history", js.undefined)
+    inline def setRequired_linear_historyUndefined: Self = StObject.set(x, "required_linear_history", js.undefined)
     
-    @scala.inline
-    def setRequired_pull_request_reviews(value: ReposUpdateBranchProtectionParamsRequiredPullRequestReviews): Self = StObject.set(x, "required_pull_request_reviews", value.asInstanceOf[js.Any])
+    inline def setRequired_pull_request_reviews(value: ReposUpdateBranchProtectionParamsRequiredPullRequestReviews): Self = StObject.set(x, "required_pull_request_reviews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequired_pull_request_reviewsNull: Self = StObject.set(x, "required_pull_request_reviews", null)
+    inline def setRequired_pull_request_reviewsNull: Self = StObject.set(x, "required_pull_request_reviews", null)
     
-    @scala.inline
-    def setRequired_status_checks(value: ReposUpdateBranchProtectionParamsRequiredStatusChecks): Self = StObject.set(x, "required_status_checks", value.asInstanceOf[js.Any])
+    inline def setRequired_status_checks(value: ReposUpdateBranchProtectionParamsRequiredStatusChecks): Self = StObject.set(x, "required_status_checks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequired_status_checksNull: Self = StObject.set(x, "required_status_checks", null)
+    inline def setRequired_status_checksNull: Self = StObject.set(x, "required_status_checks", null)
     
-    @scala.inline
-    def setRestrictions(value: ReposUpdateBranchProtectionParamsRestrictions): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
+    inline def setRestrictions(value: ReposUpdateBranchProtectionParamsRestrictions): Self = StObject.set(x, "restrictions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictionsNull: Self = StObject.set(x, "restrictions", null)
+    inline def setRestrictionsNull: Self = StObject.set(x, "restrictions", null)
   }
 }

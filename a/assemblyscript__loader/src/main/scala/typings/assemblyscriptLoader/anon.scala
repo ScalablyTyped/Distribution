@@ -24,38 +24,28 @@ object anon {
   }
   object Abort {
     
-    @scala.inline
-    def apply(): Abort = {
+    inline def apply(): Abort = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Abort]
     }
     
-    @scala.inline
-    implicit class AbortMutableBuilder[Self <: Abort] (val x: Self) extends AnyVal {
+    extension [Self <: Abort](x: Self) {
       
-      @scala.inline
-      def setAbort(value: (/* msg */ Double, /* file */ Double, /* line */ Double, /* column */ Double) => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction4(value))
+      inline def setAbort(value: (/* msg */ Double, /* file */ Double, /* line */ Double, /* column */ Double) => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setAbortUndefined: Self = StObject.set(x, "abort", js.undefined)
+      inline def setAbortUndefined: Self = StObject.set(x, "abort", js.undefined)
       
-      @scala.inline
-      def setMemory(value: Memory): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
+      inline def setMemory(value: Memory): Self = StObject.set(x, "memory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
+      inline def setMemoryUndefined: Self = StObject.set(x, "memory", js.undefined)
       
-      @scala.inline
-      def setTable(value: Table): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+      inline def setTable(value: Table): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
+      inline def setTableUndefined: Self = StObject.set(x, "table", js.undefined)
       
-      @scala.inline
-      def setTrace(value: (/* msg */ Double, /* numArgs */ js.UndefOr[Double], /* repeated */ Double) => Unit): Self = StObject.set(x, "trace", js.Any.fromFunction3(value))
+      inline def setTrace(value: (/* msg */ Double, /* numArgs */ js.UndefOr[Double], /* repeated */ Double) => Unit): Self = StObject.set(x, "trace", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
+      inline def setTraceUndefined: Self = StObject.set(x, "trace", js.undefined)
     }
   }
 }

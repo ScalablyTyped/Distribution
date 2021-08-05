@@ -12,19 +12,15 @@ trait ExpiresAtExpiresIn extends StObject {
 }
 object ExpiresAtExpiresIn {
   
-  @scala.inline
-  def apply(expiresAt: Unit, expiresIn: Unit): ExpiresAtExpiresIn = {
+  inline def apply(expiresAt: Unit, expiresIn: Unit): ExpiresAtExpiresIn = {
     val __obj = js.Dynamic.literal(expiresAt = expiresAt.asInstanceOf[js.Any], expiresIn = expiresIn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExpiresAtExpiresIn]
   }
   
-  @scala.inline
-  implicit class ExpiresAtExpiresInMutableBuilder[Self <: ExpiresAtExpiresIn] (val x: Self) extends AnyVal {
+  extension [Self <: ExpiresAtExpiresIn](x: Self) {
     
-    @scala.inline
-    def setExpiresAt(value: Unit): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
+    inline def setExpiresAt(value: Unit): Self = StObject.set(x, "expiresAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpiresIn(value: Unit): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
+    inline def setExpiresIn(value: Unit): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
   }
 }

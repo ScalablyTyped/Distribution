@@ -13,16 +13,13 @@ trait DeleteSuppressedDestinationRequest extends StObject {
 }
 object DeleteSuppressedDestinationRequest {
   
-  @scala.inline
-  def apply(EmailAddress: EmailAddress): DeleteSuppressedDestinationRequest = {
+  inline def apply(EmailAddress: EmailAddress): DeleteSuppressedDestinationRequest = {
     val __obj = js.Dynamic.literal(EmailAddress = EmailAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteSuppressedDestinationRequest]
   }
   
-  @scala.inline
-  implicit class DeleteSuppressedDestinationRequestMutableBuilder[Self <: DeleteSuppressedDestinationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteSuppressedDestinationRequest](x: Self) {
     
-    @scala.inline
-    def setEmailAddress(value: EmailAddress): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
+    inline def setEmailAddress(value: EmailAddress): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
   }
 }

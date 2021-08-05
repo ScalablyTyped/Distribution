@@ -33,43 +33,31 @@ trait Principal extends StObject {
 }
 object Principal {
   
-  @scala.inline
-  def apply(): Principal = {
+  inline def apply(): Principal = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Principal]
   }
   
-  @scala.inline
-  implicit class PrincipalMutableBuilder[Self <: Principal] (val x: Self) extends AnyVal {
+  extension [Self <: Principal](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: DateTime): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: DateTime): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "creationTime", js.undefined)
     
-    @scala.inline
-    def setExternal(value: Boolean): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
+    inline def setExternal(value: Boolean): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalUndefined: Self = StObject.set(x, "external", js.undefined)
+    inline def setExternalUndefined: Self = StObject.set(x, "external", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedTime(value: DateTime): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: DateTime): Self = StObject.set(x, "lastUpdatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedTimeUndefined: Self = StObject.set(x, "lastUpdatedTime", js.undefined)
+    inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "lastUpdatedTime", js.undefined)
     
-    @scala.inline
-    def setResourceShareArn(value: String): Self = StObject.set(x, "resourceShareArn", value.asInstanceOf[js.Any])
+    inline def setResourceShareArn(value: String): Self = StObject.set(x, "resourceShareArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceShareArnUndefined: Self = StObject.set(x, "resourceShareArn", js.undefined)
+    inline def setResourceShareArnUndefined: Self = StObject.set(x, "resourceShareArn", js.undefined)
   }
 }

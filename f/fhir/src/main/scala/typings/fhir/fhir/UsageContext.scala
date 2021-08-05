@@ -33,34 +33,25 @@ trait UsageContext
 }
 object UsageContext {
   
-  @scala.inline
-  def apply(code: Coding): UsageContext = {
+  inline def apply(code: Coding): UsageContext = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
     __obj.asInstanceOf[UsageContext]
   }
   
-  @scala.inline
-  implicit class UsageContextMutableBuilder[Self <: UsageContext] (val x: Self) extends AnyVal {
+  extension [Self <: UsageContext](x: Self) {
     
-    @scala.inline
-    def setCode(value: Coding): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Coding): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "valueCodeableConcept", value.asInstanceOf[js.Any])
+    inline def setValueCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "valueCodeableConcept", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueCodeableConceptUndefined: Self = StObject.set(x, "valueCodeableConcept", js.undefined)
+    inline def setValueCodeableConceptUndefined: Self = StObject.set(x, "valueCodeableConcept", js.undefined)
     
-    @scala.inline
-    def setValueQuantity(value: Quantity): Self = StObject.set(x, "valueQuantity", value.asInstanceOf[js.Any])
+    inline def setValueQuantity(value: Quantity): Self = StObject.set(x, "valueQuantity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueQuantityUndefined: Self = StObject.set(x, "valueQuantity", js.undefined)
+    inline def setValueQuantityUndefined: Self = StObject.set(x, "valueQuantity", js.undefined)
     
-    @scala.inline
-    def setValueRange(value: Range): Self = StObject.set(x, "valueRange", value.asInstanceOf[js.Any])
+    inline def setValueRange(value: Range): Self = StObject.set(x, "valueRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueRangeUndefined: Self = StObject.set(x, "valueRange", js.undefined)
+    inline def setValueRangeUndefined: Self = StObject.set(x, "valueRange", js.undefined)
   }
 }

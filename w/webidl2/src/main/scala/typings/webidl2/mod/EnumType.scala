@@ -26,29 +26,22 @@ trait EnumType
 }
 object EnumType {
   
-  @scala.inline
-  def apply(extAttrs: js.Array[ExtendedAttribute], name: String, parent: Null, values: js.Array[Parent]): EnumType = {
+  inline def apply(extAttrs: js.Array[ExtendedAttribute], name: String, parent: Null, values: js.Array[Parent]): EnumType = {
     val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("enum")
     __obj.asInstanceOf[EnumType]
   }
   
-  @scala.inline
-  implicit class EnumTypeMutableBuilder[Self <: EnumType] (val x: Self) extends AnyVal {
+  extension [Self <: EnumType](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: Null): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: Null): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `enum`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `enum`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: js.Array[Parent]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[Parent]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesVarargs(value: Parent*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: Parent*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

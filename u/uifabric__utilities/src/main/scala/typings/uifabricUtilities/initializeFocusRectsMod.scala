@@ -11,8 +11,6 @@ object initializeFocusRectsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def initializeFocusRects(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeFocusRects")().asInstanceOf[Unit]
-  @scala.inline
-  def initializeFocusRects(window: Window): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeFocusRects")(window.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def initializeFocusRects(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeFocusRects")().asInstanceOf[Unit]
+  inline def initializeFocusRects(window: Window): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeFocusRects")(window.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

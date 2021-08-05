@@ -12,16 +12,13 @@ trait PluginRemoveEditorsNSData
 }
 object PluginRemoveEditorsNSData {
   
-  @scala.inline
-  def apply(removeEditorsNSData: Boolean | js.Object): PluginRemoveEditorsNSData = {
+  inline def apply(removeEditorsNSData: Boolean | js.Object): PluginRemoveEditorsNSData = {
     val __obj = js.Dynamic.literal(removeEditorsNSData = removeEditorsNSData.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginRemoveEditorsNSData]
   }
   
-  @scala.inline
-  implicit class PluginRemoveEditorsNSDataMutableBuilder[Self <: PluginRemoveEditorsNSData] (val x: Self) extends AnyVal {
+  extension [Self <: PluginRemoveEditorsNSData](x: Self) {
     
-    @scala.inline
-    def setRemoveEditorsNSData(value: Boolean | js.Object): Self = StObject.set(x, "removeEditorsNSData", value.asInstanceOf[js.Any])
+    inline def setRemoveEditorsNSData(value: Boolean | js.Object): Self = StObject.set(x, "removeEditorsNSData", value.asInstanceOf[js.Any])
   }
 }

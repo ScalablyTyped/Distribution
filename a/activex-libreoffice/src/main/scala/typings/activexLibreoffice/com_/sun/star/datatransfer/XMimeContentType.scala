@@ -81,8 +81,7 @@ trait XMimeContentType
 }
 object XMimeContentType {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FullMediaType: String,
     MediaSubtype: String,
     MediaType: String,
@@ -101,37 +100,26 @@ object XMimeContentType {
     __obj.asInstanceOf[XMimeContentType]
   }
   
-  @scala.inline
-  implicit class XMimeContentTypeMutableBuilder[Self <: XMimeContentType] (val x: Self) extends AnyVal {
+  extension [Self <: XMimeContentType](x: Self) {
     
-    @scala.inline
-    def setFullMediaType(value: String): Self = StObject.set(x, "FullMediaType", value.asInstanceOf[js.Any])
+    inline def setFullMediaType(value: String): Self = StObject.set(x, "FullMediaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetFullMediaType(value: () => String): Self = StObject.set(x, "getFullMediaType", js.Any.fromFunction0(value))
+    inline def setGetFullMediaType(value: () => String): Self = StObject.set(x, "getFullMediaType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMediaSubtype(value: () => String): Self = StObject.set(x, "getMediaSubtype", js.Any.fromFunction0(value))
+    inline def setGetMediaSubtype(value: () => String): Self = StObject.set(x, "getMediaSubtype", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMediaType(value: () => String): Self = StObject.set(x, "getMediaType", js.Any.fromFunction0(value))
+    inline def setGetMediaType(value: () => String): Self = StObject.set(x, "getMediaType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetParameterValue(value: String => String): Self = StObject.set(x, "getParameterValue", js.Any.fromFunction1(value))
+    inline def setGetParameterValue(value: String => String): Self = StObject.set(x, "getParameterValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetParameters(value: () => SafeArray[String]): Self = StObject.set(x, "getParameters", js.Any.fromFunction0(value))
+    inline def setGetParameters(value: () => SafeArray[String]): Self = StObject.set(x, "getParameters", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasParameter(value: String => Boolean): Self = StObject.set(x, "hasParameter", js.Any.fromFunction1(value))
+    inline def setHasParameter(value: String => Boolean): Self = StObject.set(x, "hasParameter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMediaSubtype(value: String): Self = StObject.set(x, "MediaSubtype", value.asInstanceOf[js.Any])
+    inline def setMediaSubtype(value: String): Self = StObject.set(x, "MediaSubtype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaType(value: String): Self = StObject.set(x, "MediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: String): Self = StObject.set(x, "MediaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameters(value: SafeArray[String]): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: SafeArray[String]): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
   }
 }

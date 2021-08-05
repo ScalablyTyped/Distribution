@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait fontSizeUnitOptions extends StObject
 object fontSizeUnitOptions {
   
-  @scala.inline
-  def pt: typings.summernote.summernoteStrings.pt = "pt".asInstanceOf[typings.summernote.summernoteStrings.pt]
+  inline def pt: typings.summernote.summernoteStrings.pt = "pt".asInstanceOf[typings.summernote.summernoteStrings.pt]
   
-  @scala.inline
-  def px: typings.summernote.summernoteStrings.px = "px".asInstanceOf[typings.summernote.summernoteStrings.px]
+  inline def px: typings.summernote.summernoteStrings.px = "px".asInstanceOf[typings.summernote.summernoteStrings.px]
 }

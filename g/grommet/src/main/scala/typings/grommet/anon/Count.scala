@@ -30,30 +30,23 @@ trait Count extends StObject {
 }
 object Count {
   
-  @scala.inline
-  def apply(): Count = {
+  inline def apply(): Count = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Count]
   }
   
-  @scala.inline
-  implicit class CountMutableBuilder[Self <: Count] (val x: Self) extends AnyVal {
+  extension [Self <: Count](x: Self) {
     
-    @scala.inline
-    def setCount(value: fit | fill | Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: fit | fill | Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setSize(
+    inline def setSize(
       value: xsmall | small | medium | large | xlarge | full | `1Slash2` | `1Slash3` | `2Slash3` | `1Slash4` | `2Slash4` | `3Slash4` | flex | auto | String | js.Array[String]
     ): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setSizeVarargs(value: String*): Self = StObject.set(x, "size", js.Array(value :_*))
+    inline def setSizeVarargs(value: String*): Self = StObject.set(x, "size", js.Array(value :_*))
   }
 }

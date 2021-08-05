@@ -17,31 +17,23 @@ trait ScriptError
 }
 object ScriptError {
   
-  @scala.inline
-  def apply(): ScriptError = {
+  inline def apply(): ScriptError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScriptError]
   }
   
-  @scala.inline
-  implicit class ScriptErrorMutableBuilder[Self <: ScriptError] (val x: Self) extends AnyVal {
+  extension [Self <: ScriptError](x: Self) {
     
-    @scala.inline
-    def setInfo(value: StringDictionary[String]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: StringDictionary[String]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
+    inline def setInfoUndefined: Self = StObject.set(x, "info", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }
 }

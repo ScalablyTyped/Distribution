@@ -12,19 +12,15 @@ trait Horz extends StObject {
 }
 object Horz {
   
-  @scala.inline
-  def apply(horz: Double, vert: Double): Horz = {
+  inline def apply(horz: Double, vert: Double): Horz = {
     val __obj = js.Dynamic.literal(horz = horz.asInstanceOf[js.Any], vert = vert.asInstanceOf[js.Any])
     __obj.asInstanceOf[Horz]
   }
   
-  @scala.inline
-  implicit class HorzMutableBuilder[Self <: Horz] (val x: Self) extends AnyVal {
+  extension [Self <: Horz](x: Self) {
     
-    @scala.inline
-    def setHorz(value: Double): Self = StObject.set(x, "horz", value.asInstanceOf[js.Any])
+    inline def setHorz(value: Double): Self = StObject.set(x, "horz", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVert(value: Double): Self = StObject.set(x, "vert", value.asInstanceOf[js.Any])
+    inline def setVert(value: Double): Self = StObject.set(x, "vert", value.asInstanceOf[js.Any])
   }
 }

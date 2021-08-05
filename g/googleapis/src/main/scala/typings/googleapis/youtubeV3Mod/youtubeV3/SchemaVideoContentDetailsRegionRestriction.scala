@@ -29,31 +29,23 @@ trait SchemaVideoContentDetailsRegionRestriction extends StObject {
 }
 object SchemaVideoContentDetailsRegionRestriction {
   
-  @scala.inline
-  def apply(): SchemaVideoContentDetailsRegionRestriction = {
+  inline def apply(): SchemaVideoContentDetailsRegionRestriction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVideoContentDetailsRegionRestriction]
   }
   
-  @scala.inline
-  implicit class SchemaVideoContentDetailsRegionRestrictionMutableBuilder[Self <: SchemaVideoContentDetailsRegionRestriction] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaVideoContentDetailsRegionRestriction](x: Self) {
     
-    @scala.inline
-    def setAllowed(value: js.Array[String]): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
+    inline def setAllowed(value: js.Array[String]): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedUndefined: Self = StObject.set(x, "allowed", js.undefined)
+    inline def setAllowedUndefined: Self = StObject.set(x, "allowed", js.undefined)
     
-    @scala.inline
-    def setAllowedVarargs(value: String*): Self = StObject.set(x, "allowed", js.Array(value :_*))
+    inline def setAllowedVarargs(value: String*): Self = StObject.set(x, "allowed", js.Array(value :_*))
     
-    @scala.inline
-    def setBlocked(value: js.Array[String]): Self = StObject.set(x, "blocked", value.asInstanceOf[js.Any])
+    inline def setBlocked(value: js.Array[String]): Self = StObject.set(x, "blocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockedUndefined: Self = StObject.set(x, "blocked", js.undefined)
+    inline def setBlockedUndefined: Self = StObject.set(x, "blocked", js.undefined)
     
-    @scala.inline
-    def setBlockedVarargs(value: String*): Self = StObject.set(x, "blocked", js.Array(value :_*))
+    inline def setBlockedVarargs(value: String*): Self = StObject.set(x, "blocked", js.Array(value :_*))
   }
 }

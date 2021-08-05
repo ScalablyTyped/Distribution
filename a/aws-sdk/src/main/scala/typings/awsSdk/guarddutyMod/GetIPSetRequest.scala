@@ -18,19 +18,15 @@ trait GetIPSetRequest extends StObject {
 }
 object GetIPSetRequest {
   
-  @scala.inline
-  def apply(DetectorId: DetectorId, IpSetId: String): GetIPSetRequest = {
+  inline def apply(DetectorId: DetectorId, IpSetId: String): GetIPSetRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId.asInstanceOf[js.Any], IpSetId = IpSetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetIPSetRequest]
   }
   
-  @scala.inline
-  implicit class GetIPSetRequestMutableBuilder[Self <: GetIPSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetIPSetRequest](x: Self) {
     
-    @scala.inline
-    def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
+    inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpSetId(value: String): Self = StObject.set(x, "IpSetId", value.asInstanceOf[js.Any])
+    inline def setIpSetId(value: String): Self = StObject.set(x, "IpSetId", value.asInstanceOf[js.Any])
   }
 }

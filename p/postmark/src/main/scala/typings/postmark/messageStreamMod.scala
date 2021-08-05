@@ -57,8 +57,7 @@ object messageStreamMod {
   }
   object MessageStream {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       CreatedAt: String,
       Description: String,
       ID: String,
@@ -71,47 +70,33 @@ object messageStreamMod {
       __obj.asInstanceOf[MessageStream]
     }
     
-    @scala.inline
-    implicit class MessageStreamMutableBuilder[Self <: MessageStream] (val x: Self) extends AnyVal {
+    extension [Self <: MessageStream](x: Self) {
       
-      @scala.inline
-      def setArchivedAt(value: String): Self = StObject.set(x, "ArchivedAt", value.asInstanceOf[js.Any])
+      inline def setArchivedAt(value: String): Self = StObject.set(x, "ArchivedAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArchivedAtUndefined: Self = StObject.set(x, "ArchivedAt", js.undefined)
+      inline def setArchivedAtUndefined: Self = StObject.set(x, "ArchivedAt", js.undefined)
       
-      @scala.inline
-      def setCreatedAt(value: String): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+      inline def setCreatedAt(value: String): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpectedPurgeDate(value: String): Self = StObject.set(x, "ExpectedPurgeDate", value.asInstanceOf[js.Any])
+      inline def setExpectedPurgeDate(value: String): Self = StObject.set(x, "ExpectedPurgeDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpectedPurgeDateUndefined: Self = StObject.set(x, "ExpectedPurgeDate", js.undefined)
+      inline def setExpectedPurgeDateUndefined: Self = StObject.set(x, "ExpectedPurgeDate", js.undefined)
       
-      @scala.inline
-      def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+      inline def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageStreamType(value: String): Self = StObject.set(x, "MessageStreamType", value.asInstanceOf[js.Any])
+      inline def setMessageStreamType(value: String): Self = StObject.set(x, "MessageStreamType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerID(value: Double): Self = StObject.set(x, "ServerID", value.asInstanceOf[js.Any])
+      inline def setServerID(value: Double): Self = StObject.set(x, "ServerID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscriptionManagementConfiguration(value: SubscriptionManagementConfiguration): Self = StObject.set(x, "SubscriptionManagementConfiguration", value.asInstanceOf[js.Any])
+      inline def setSubscriptionManagementConfiguration(value: SubscriptionManagementConfiguration): Self = StObject.set(x, "SubscriptionManagementConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdatedAt(value: String): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
+      inline def setUpdatedAt(value: String): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdatedAtUndefined: Self = StObject.set(x, "UpdatedAt", js.undefined)
+      inline def setUpdatedAtUndefined: Self = StObject.set(x, "UpdatedAt", js.undefined)
     }
   }
   
@@ -125,23 +110,18 @@ object messageStreamMod {
   }
   object MessageStreamArchiveResponse {
     
-    @scala.inline
-    def apply(ExpectedPurgeDate: String, ID: Double, ServerID: Double): MessageStreamArchiveResponse = {
+    inline def apply(ExpectedPurgeDate: String, ID: Double, ServerID: Double): MessageStreamArchiveResponse = {
       val __obj = js.Dynamic.literal(ExpectedPurgeDate = ExpectedPurgeDate.asInstanceOf[js.Any], ID = ID.asInstanceOf[js.Any], ServerID = ServerID.asInstanceOf[js.Any])
       __obj.asInstanceOf[MessageStreamArchiveResponse]
     }
     
-    @scala.inline
-    implicit class MessageStreamArchiveResponseMutableBuilder[Self <: MessageStreamArchiveResponse] (val x: Self) extends AnyVal {
+    extension [Self <: MessageStreamArchiveResponse](x: Self) {
       
-      @scala.inline
-      def setExpectedPurgeDate(value: String): Self = StObject.set(x, "ExpectedPurgeDate", value.asInstanceOf[js.Any])
+      inline def setExpectedPurgeDate(value: String): Self = StObject.set(x, "ExpectedPurgeDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+      inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerID(value: Double): Self = StObject.set(x, "ServerID", value.asInstanceOf[js.Any])
+      inline def setServerID(value: Double): Self = StObject.set(x, "ServerID", value.asInstanceOf[js.Any])
     }
   }
   
@@ -169,8 +149,7 @@ object messageStreamMod {
   }
   object MessageStreamUnarchiveResponse {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       CreatedAt: String,
       Description: String,
       ID: String,
@@ -183,41 +162,29 @@ object messageStreamMod {
       __obj.asInstanceOf[MessageStreamUnarchiveResponse]
     }
     
-    @scala.inline
-    implicit class MessageStreamUnarchiveResponseMutableBuilder[Self <: MessageStreamUnarchiveResponse] (val x: Self) extends AnyVal {
+    extension [Self <: MessageStreamUnarchiveResponse](x: Self) {
       
-      @scala.inline
-      def setCreatedAt(value: String): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+      inline def setCreatedAt(value: String): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpectedPurgeDate(value: String): Self = StObject.set(x, "ExpectedPurgeDate", value.asInstanceOf[js.Any])
+      inline def setExpectedPurgeDate(value: String): Self = StObject.set(x, "ExpectedPurgeDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpectedPurgeDateUndefined: Self = StObject.set(x, "ExpectedPurgeDate", js.undefined)
+      inline def setExpectedPurgeDateUndefined: Self = StObject.set(x, "ExpectedPurgeDate", js.undefined)
       
-      @scala.inline
-      def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
+      inline def setID(value: String): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageStreamType(value: String): Self = StObject.set(x, "MessageStreamType", value.asInstanceOf[js.Any])
+      inline def setMessageStreamType(value: String): Self = StObject.set(x, "MessageStreamType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerID(value: Double): Self = StObject.set(x, "ServerID", value.asInstanceOf[js.Any])
+      inline def setServerID(value: Double): Self = StObject.set(x, "ServerID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscriptionManagementConfiguration(value: SubscriptionManagementConfiguration): Self = StObject.set(x, "SubscriptionManagementConfiguration", value.asInstanceOf[js.Any])
+      inline def setSubscriptionManagementConfiguration(value: SubscriptionManagementConfiguration): Self = StObject.set(x, "SubscriptionManagementConfiguration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdatedAt(value: String): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
+      inline def setUpdatedAt(value: String): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdatedAtUndefined: Self = StObject.set(x, "UpdatedAt", js.undefined)
+      inline def setUpdatedAtUndefined: Self = StObject.set(x, "UpdatedAt", js.undefined)
     }
   }
   
@@ -229,23 +196,18 @@ object messageStreamMod {
   }
   object MessageStreams {
     
-    @scala.inline
-    def apply(MessageStreams: js.Array[MessageStream], TotalCount: Double): MessageStreams = {
+    inline def apply(MessageStreams: js.Array[MessageStream], TotalCount: Double): MessageStreams = {
       val __obj = js.Dynamic.literal(MessageStreams = MessageStreams.asInstanceOf[js.Any], TotalCount = TotalCount.asInstanceOf[js.Any])
       __obj.asInstanceOf[MessageStreams]
     }
     
-    @scala.inline
-    implicit class MessageStreamsMutableBuilder[Self <: MessageStreams] (val x: Self) extends AnyVal {
+    extension [Self <: MessageStreams](x: Self) {
       
-      @scala.inline
-      def setMessageStreams(value: js.Array[MessageStream]): Self = StObject.set(x, "MessageStreams", value.asInstanceOf[js.Any])
+      inline def setMessageStreams(value: js.Array[MessageStream]): Self = StObject.set(x, "MessageStreams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageStreamsVarargs(value: MessageStream*): Self = StObject.set(x, "MessageStreams", js.Array(value :_*))
+      inline def setMessageStreamsVarargs(value: MessageStream*): Self = StObject.set(x, "MessageStreams", js.Array(value :_*))
       
-      @scala.inline
-      def setTotalCount(value: Double): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
+      inline def setTotalCount(value: Double): Self = StObject.set(x, "TotalCount", value.asInstanceOf[js.Any])
     }
   }
   
@@ -255,17 +217,14 @@ object messageStreamMod {
   }
   object SubscriptionManagementConfiguration {
     
-    @scala.inline
-    def apply(UnsubscribeHandlingType: String): SubscriptionManagementConfiguration = {
+    inline def apply(UnsubscribeHandlingType: String): SubscriptionManagementConfiguration = {
       val __obj = js.Dynamic.literal(UnsubscribeHandlingType = UnsubscribeHandlingType.asInstanceOf[js.Any])
       __obj.asInstanceOf[SubscriptionManagementConfiguration]
     }
     
-    @scala.inline
-    implicit class SubscriptionManagementConfigurationMutableBuilder[Self <: SubscriptionManagementConfiguration] (val x: Self) extends AnyVal {
+    extension [Self <: SubscriptionManagementConfiguration](x: Self) {
       
-      @scala.inline
-      def setUnsubscribeHandlingType(value: String): Self = StObject.set(x, "UnsubscribeHandlingType", value.asInstanceOf[js.Any])
+      inline def setUnsubscribeHandlingType(value: String): Self = StObject.set(x, "UnsubscribeHandlingType", value.asInstanceOf[js.Any])
     }
   }
 }

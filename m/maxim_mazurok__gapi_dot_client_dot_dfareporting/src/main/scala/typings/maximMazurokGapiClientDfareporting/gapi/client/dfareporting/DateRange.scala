@@ -18,37 +18,27 @@ trait DateRange extends StObject {
 }
 object DateRange {
   
-  @scala.inline
-  def apply(): DateRange = {
+  inline def apply(): DateRange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DateRange]
   }
   
-  @scala.inline
-  implicit class DateRangeMutableBuilder[Self <: DateRange] (val x: Self) extends AnyVal {
+  extension [Self <: DateRange](x: Self) {
     
-    @scala.inline
-    def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
+    inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
+    inline def setEndDateUndefined: Self = StObject.set(x, "endDate", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setRelativeDateRange(value: String): Self = StObject.set(x, "relativeDateRange", value.asInstanceOf[js.Any])
+    inline def setRelativeDateRange(value: String): Self = StObject.set(x, "relativeDateRange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeDateRangeUndefined: Self = StObject.set(x, "relativeDateRange", js.undefined)
+    inline def setRelativeDateRangeUndefined: Self = StObject.set(x, "relativeDateRange", js.undefined)
     
-    @scala.inline
-    def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
+    inline def setStartDate(value: String): Self = StObject.set(x, "startDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
+    inline def setStartDateUndefined: Self = StObject.set(x, "startDate", js.undefined)
   }
 }

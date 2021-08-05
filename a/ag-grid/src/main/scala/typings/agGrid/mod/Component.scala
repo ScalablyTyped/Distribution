@@ -20,6 +20,5 @@ object Component {
   @JSImport("ag-grid", "Component.EVENT_VISIBLE_CHANGED")
   @js.native
   def EVENT_VISIBLE_CHANGED: String = js.native
-  @scala.inline
-  def EVENT_VISIBLE_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_VISIBLE_CHANGED")(x.asInstanceOf[js.Any])
+  inline def EVENT_VISIBLE_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_VISIBLE_CHANGED")(x.asInstanceOf[js.Any])
 }

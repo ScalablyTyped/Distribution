@@ -13,19 +13,15 @@ trait ListTagsForVaultOutput extends StObject {
 }
 object ListTagsForVaultOutput {
   
-  @scala.inline
-  def apply(): ListTagsForVaultOutput = {
+  inline def apply(): ListTagsForVaultOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTagsForVaultOutput]
   }
   
-  @scala.inline
-  implicit class ListTagsForVaultOutputMutableBuilder[Self <: ListTagsForVaultOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListTagsForVaultOutput](x: Self) {
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
   }
 }

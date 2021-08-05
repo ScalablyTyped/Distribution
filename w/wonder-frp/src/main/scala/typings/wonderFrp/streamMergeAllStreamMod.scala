@@ -13,7 +13,7 @@ object streamMergeAllStreamMod {
   class MergeAllStream protected () extends BaseStream {
     def this(source: Stream) = this()
     
-    var _source: js.Any = js.native
+    /* private */ var _source: js.Any = js.native
   }
   /* static members */
   object MergeAllStream {
@@ -22,7 +22,6 @@ object streamMergeAllStreamMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(source: Stream): MergeAllStream = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any]).asInstanceOf[MergeAllStream]
+    inline def create(source: Stream): MergeAllStream = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any]).asInstanceOf[MergeAllStream]
   }
 }

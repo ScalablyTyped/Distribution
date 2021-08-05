@@ -15,26 +15,20 @@ trait JSONSchemaArrayType extends StObject {
 }
 object JSONSchemaArrayType {
   
-  @scala.inline
-  def apply(items: JSONSchemaBasicType | JSONSchemaObjectType | JSONSchemaRefType): JSONSchemaArrayType = {
+  inline def apply(items: JSONSchemaBasicType | JSONSchemaObjectType | JSONSchemaRefType): JSONSchemaArrayType = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("array")
     __obj.asInstanceOf[JSONSchemaArrayType]
   }
   
-  @scala.inline
-  implicit class JSONSchemaArrayTypeMutableBuilder[Self <: JSONSchemaArrayType] (val x: Self) extends AnyVal {
+  extension [Self <: JSONSchemaArrayType](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setItems(value: JSONSchemaBasicType | JSONSchemaObjectType | JSONSchemaRefType): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: JSONSchemaBasicType | JSONSchemaObjectType | JSONSchemaRefType): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: array): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: array): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

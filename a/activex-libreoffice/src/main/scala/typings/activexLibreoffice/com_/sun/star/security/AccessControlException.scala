@@ -19,16 +19,13 @@ trait AccessControlException
 }
 object AccessControlException {
   
-  @scala.inline
-  def apply(Context: XInterface, LackingPermission: js.Any, Message: String): AccessControlException = {
+  inline def apply(Context: XInterface, LackingPermission: js.Any, Message: String): AccessControlException = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], LackingPermission = LackingPermission.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessControlException]
   }
   
-  @scala.inline
-  implicit class AccessControlExceptionMutableBuilder[Self <: AccessControlException] (val x: Self) extends AnyVal {
+  extension [Self <: AccessControlException](x: Self) {
     
-    @scala.inline
-    def setLackingPermission(value: js.Any): Self = StObject.set(x, "LackingPermission", value.asInstanceOf[js.Any])
+    inline def setLackingPermission(value: js.Any): Self = StObject.set(x, "LackingPermission", value.asInstanceOf[js.Any])
   }
 }

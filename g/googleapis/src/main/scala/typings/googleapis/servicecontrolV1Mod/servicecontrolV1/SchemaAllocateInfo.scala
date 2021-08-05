@@ -16,22 +16,17 @@ trait SchemaAllocateInfo extends StObject {
 }
 object SchemaAllocateInfo {
   
-  @scala.inline
-  def apply(): SchemaAllocateInfo = {
+  inline def apply(): SchemaAllocateInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAllocateInfo]
   }
   
-  @scala.inline
-  implicit class SchemaAllocateInfoMutableBuilder[Self <: SchemaAllocateInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAllocateInfo](x: Self) {
     
-    @scala.inline
-    def setUnusedArguments(value: js.Array[String]): Self = StObject.set(x, "unusedArguments", value.asInstanceOf[js.Any])
+    inline def setUnusedArguments(value: js.Array[String]): Self = StObject.set(x, "unusedArguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnusedArgumentsUndefined: Self = StObject.set(x, "unusedArguments", js.undefined)
+    inline def setUnusedArgumentsUndefined: Self = StObject.set(x, "unusedArguments", js.undefined)
     
-    @scala.inline
-    def setUnusedArgumentsVarargs(value: String*): Self = StObject.set(x, "unusedArguments", js.Array(value :_*))
+    inline def setUnusedArgumentsVarargs(value: String*): Self = StObject.set(x, "unusedArguments", js.Array(value :_*))
   }
 }

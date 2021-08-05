@@ -462,8 +462,7 @@ trait SchedulerTemplates extends StObject {
 }
 object SchedulerTemplates {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     agenda_date: (Date, Date) => String,
     agenda_text: (Date, Date, js.Any) => String,
     agenda_time: (Date, Date, js.Any) => String,
@@ -534,202 +533,136 @@ object SchedulerTemplates {
     __obj.asInstanceOf[SchedulerTemplates]
   }
   
-  @scala.inline
-  implicit class SchedulerTemplatesMutableBuilder[Self <: SchedulerTemplates] (val x: Self) extends AnyVal {
+  extension [Self <: SchedulerTemplates](x: Self) {
     
-    @scala.inline
-    def setAgenda_date(value: (Date, Date) => String): Self = StObject.set(x, "agenda_date", js.Any.fromFunction2(value))
+    inline def setAgenda_date(value: (Date, Date) => String): Self = StObject.set(x, "agenda_date", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAgenda_text(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "agenda_text", js.Any.fromFunction3(value))
+    inline def setAgenda_text(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "agenda_text", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setAgenda_time(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "agenda_time", js.Any.fromFunction3(value))
+    inline def setAgenda_time(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "agenda_time", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setApi_date(value: Date => String): Self = StObject.set(x, "api_date", js.Any.fromFunction1(value))
+    inline def setApi_date(value: Date => String): Self = StObject.set(x, "api_date", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCalendar_date(value: Date => String): Self = StObject.set(x, "calendar_date", js.Any.fromFunction1(value))
+    inline def setCalendar_date(value: Date => String): Self = StObject.set(x, "calendar_date", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCalendar_month(value: Date => String): Self = StObject.set(x, "calendar_month", js.Any.fromFunction1(value))
+    inline def setCalendar_month(value: Date => String): Self = StObject.set(x, "calendar_month", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCalendar_scale_date(value: Date => String): Self = StObject.set(x, "calendar_scale_date", js.Any.fromFunction1(value))
+    inline def setCalendar_scale_date(value: Date => String): Self = StObject.set(x, "calendar_scale_date", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCalendar_time(value: Date => String): Self = StObject.set(x, "calendar_time", js.Any.fromFunction1(value))
+    inline def setCalendar_time(value: Date => String): Self = StObject.set(x, "calendar_time", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDay_date(value: Date => String): Self = StObject.set(x, "day_date", js.Any.fromFunction1(value))
+    inline def setDay_date(value: Date => String): Self = StObject.set(x, "day_date", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDay_scale_date(value: Date => String): Self = StObject.set(x, "day_scale_date", js.Any.fromFunction1(value))
+    inline def setDay_scale_date(value: Date => String): Self = StObject.set(x, "day_scale_date", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDrag_marker_class(value: (Date, Date, js.Any) => Unit): Self = StObject.set(x, "drag_marker_class", js.Any.fromFunction3(value))
+    inline def setDrag_marker_class(value: (Date, Date, js.Any) => Unit): Self = StObject.set(x, "drag_marker_class", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDrag_marker_content(value: (Date, Date, js.Any) => Unit): Self = StObject.set(x, "drag_marker_content", js.Any.fromFunction3(value))
+    inline def setDrag_marker_content(value: (Date, Date, js.Any) => Unit): Self = StObject.set(x, "drag_marker_content", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setEvent_bar_date(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "event_bar_date", js.Any.fromFunction3(value))
+    inline def setEvent_bar_date(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "event_bar_date", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setEvent_bar_text(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "event_bar_text", js.Any.fromFunction3(value))
+    inline def setEvent_bar_text(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "event_bar_text", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setEvent_class(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "event_class", js.Any.fromFunction3(value))
+    inline def setEvent_class(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "event_class", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setEvent_date(value: Date => String): Self = StObject.set(x, "event_date", js.Any.fromFunction1(value))
+    inline def setEvent_date(value: Date => String): Self = StObject.set(x, "event_date", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEvent_header(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "event_header", js.Any.fromFunction3(value))
+    inline def setEvent_header(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "event_header", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setEvent_text(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "event_text", js.Any.fromFunction3(value))
+    inline def setEvent_text(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "event_text", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGrid_date(value: (Date, Date) => String): Self = StObject.set(x, "grid_date", js.Any.fromFunction2(value))
+    inline def setGrid_date(value: (Date, Date) => String): Self = StObject.set(x, "grid_date", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGrid_field(value: (String, js.Any) => String): Self = StObject.set(x, "grid_field", js.Any.fromFunction2(value))
+    inline def setGrid_field(value: (String, js.Any) => String): Self = StObject.set(x, "grid_field", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGrid_full_date(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "grid_full_date", js.Any.fromFunction3(value))
+    inline def setGrid_full_date(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "grid_full_date", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGrid_single_date(value: Date => String): Self = StObject.set(x, "grid_single_date", js.Any.fromFunction1(value))
+    inline def setGrid_single_date(value: Date => String): Self = StObject.set(x, "grid_single_date", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHour_scale(value: Date => String): Self = StObject.set(x, "hour_scale", js.Any.fromFunction1(value))
+    inline def setHour_scale(value: Date => String): Self = StObject.set(x, "hour_scale", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLightbox_header(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "lightbox_header", js.Any.fromFunction3(value))
+    inline def setLightbox_header(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "lightbox_header", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setLoad_format(value: Date => String): Self = StObject.set(x, "load_format", js.Any.fromFunction1(value))
+    inline def setLoad_format(value: Date => String): Self = StObject.set(x, "load_format", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMap_date(value: (Date, Date) => String): Self = StObject.set(x, "map_date", js.Any.fromFunction2(value))
+    inline def setMap_date(value: (Date, Date) => String): Self = StObject.set(x, "map_date", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMap_text(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "map_text", js.Any.fromFunction3(value))
+    inline def setMap_text(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "map_text", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setMap_time(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "map_time", js.Any.fromFunction3(value))
+    inline def setMap_time(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "map_time", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setMarker_date(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "marker_date", js.Any.fromFunction3(value))
+    inline def setMarker_date(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "marker_date", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setMarker_text(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "marker_text", js.Any.fromFunction3(value))
+    inline def setMarker_text(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "marker_text", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setMonth_date(value: Date => String): Self = StObject.set(x, "month_date", js.Any.fromFunction1(value))
+    inline def setMonth_date(value: Date => String): Self = StObject.set(x, "month_date", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMonth_date_class(value: Date => String): Self = StObject.set(x, "month_date_class", js.Any.fromFunction1(value))
+    inline def setMonth_date_class(value: Date => String): Self = StObject.set(x, "month_date_class", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMonth_day(value: Date => String): Self = StObject.set(x, "month_day", js.Any.fromFunction1(value))
+    inline def setMonth_day(value: Date => String): Self = StObject.set(x, "month_day", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMonth_events_link(value: (Date, Double) => String): Self = StObject.set(x, "month_events_link", js.Any.fromFunction2(value))
+    inline def setMonth_events_link(value: (Date, Double) => String): Self = StObject.set(x, "month_events_link", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setMonth_scale_date(value: Date => String): Self = StObject.set(x, "month_scale_date", js.Any.fromFunction1(value))
+    inline def setMonth_scale_date(value: Date => String): Self = StObject.set(x, "month_scale_date", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParse_date(value: String => String): Self = StObject.set(x, "parse_date", js.Any.fromFunction1(value))
+    inline def setParse_date(value: String => String): Self = StObject.set(x, "parse_date", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setQuick_info_content(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "quick_info_content", js.Any.fromFunction3(value))
+    inline def setQuick_info_content(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "quick_info_content", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setQuick_info_date(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "quick_info_date", js.Any.fromFunction3(value))
+    inline def setQuick_info_date(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "quick_info_date", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setQuick_info_title(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "quick_info_title", js.Any.fromFunction3(value))
+    inline def setQuick_info_title(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "quick_info_title", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setTime_picker(value: () => String): Self = StObject.set(x, "time_picker", js.Any.fromFunction0(value))
+    inline def setTime_picker(value: () => String): Self = StObject.set(x, "time_picker", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTimeline_cell_class(value: (js.Array[js.Any], Date, js.Any) => String): Self = StObject.set(x, "timeline_cell_class", js.Any.fromFunction3(value))
+    inline def setTimeline_cell_class(value: (js.Array[js.Any], Date, js.Any) => String): Self = StObject.set(x, "timeline_cell_class", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setTimeline_cell_value(value: (js.Array[js.Any], Date) => String): Self = StObject.set(x, "timeline_cell_value", js.Any.fromFunction2(value))
+    inline def setTimeline_cell_value(value: (js.Array[js.Any], Date) => String): Self = StObject.set(x, "timeline_cell_value", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTimeline_date(value: (Date, Date) => String): Self = StObject.set(x, "timeline_date", js.Any.fromFunction2(value))
+    inline def setTimeline_date(value: (Date, Date) => String): Self = StObject.set(x, "timeline_date", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setTimeline_scale_date(value: Date => String): Self = StObject.set(x, "timeline_scale_date", js.Any.fromFunction1(value))
+    inline def setTimeline_scale_date(value: Date => String): Self = StObject.set(x, "timeline_scale_date", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTimeline_scale_label(value: (String, String, js.Any) => String): Self = StObject.set(x, "timeline_scale_label", js.Any.fromFunction3(value))
+    inline def setTimeline_scale_label(value: (String, String, js.Any) => String): Self = StObject.set(x, "timeline_scale_label", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setTimeline_scalex_class(value: Date => String): Self = StObject.set(x, "timeline_scalex_class", js.Any.fromFunction1(value))
+    inline def setTimeline_scalex_class(value: Date => String): Self = StObject.set(x, "timeline_scalex_class", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTimeline_scaley_class(value: (String, String, js.Any) => String): Self = StObject.set(x, "timeline_scaley_class", js.Any.fromFunction3(value))
+    inline def setTimeline_scaley_class(value: (String, String, js.Any) => String): Self = StObject.set(x, "timeline_scaley_class", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setTimeline_second_scale_date(value: Date => String): Self = StObject.set(x, "timeline_second_scale_date", js.Any.fromFunction1(value))
+    inline def setTimeline_second_scale_date(value: Date => String): Self = StObject.set(x, "timeline_second_scale_date", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTimeline_second_scalex_class(value: Date => String): Self = StObject.set(x, "timeline_second_scalex_class", js.Any.fromFunction1(value))
+    inline def setTimeline_second_scalex_class(value: Date => String): Self = StObject.set(x, "timeline_second_scalex_class", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTimeline_tooltip(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "timeline_tooltip", js.Any.fromFunction3(value))
+    inline def setTimeline_tooltip(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "timeline_tooltip", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setTooltip_date_format(value: Date => String): Self = StObject.set(x, "tooltip_date_format", js.Any.fromFunction1(value))
+    inline def setTooltip_date_format(value: Date => String): Self = StObject.set(x, "tooltip_date_format", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTooltip_text(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "tooltip_text", js.Any.fromFunction3(value))
+    inline def setTooltip_text(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "tooltip_text", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setUnits_date(value: Date => String): Self = StObject.set(x, "units_date", js.Any.fromFunction1(value))
+    inline def setUnits_date(value: Date => String): Self = StObject.set(x, "units_date", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnits_scale_text(value: (String, String, js.Any) => String): Self = StObject.set(x, "units_scale_text", js.Any.fromFunction3(value))
+    inline def setUnits_scale_text(value: (String, String, js.Any) => String): Self = StObject.set(x, "units_scale_text", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setWeek_agenda_event_text(value: (Date, Date, js.Any, Date, String) => String): Self = StObject.set(x, "week_agenda_event_text", js.Any.fromFunction5(value))
+    inline def setWeek_agenda_event_text(value: (Date, Date, js.Any, Date, String) => String): Self = StObject.set(x, "week_agenda_event_text", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setWeek_agenda_scale_date(value: Date => String): Self = StObject.set(x, "week_agenda_scale_date", js.Any.fromFunction1(value))
+    inline def setWeek_agenda_scale_date(value: Date => String): Self = StObject.set(x, "week_agenda_scale_date", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWeek_date(value: (Date, Date) => String): Self = StObject.set(x, "week_date", js.Any.fromFunction2(value))
+    inline def setWeek_date(value: (Date, Date) => String): Self = StObject.set(x, "week_date", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWeek_date_class(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "week_date_class", js.Any.fromFunction3(value))
+    inline def setWeek_date_class(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "week_date_class", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setWeek_scale_date(value: Date => String): Self = StObject.set(x, "week_scale_date", js.Any.fromFunction1(value))
+    inline def setWeek_scale_date(value: Date => String): Self = StObject.set(x, "week_scale_date", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setXml_date(value: Date => Date): Self = StObject.set(x, "xml_date", js.Any.fromFunction1(value))
+    inline def setXml_date(value: Date => Date): Self = StObject.set(x, "xml_date", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setXml_format(value: Date => String): Self = StObject.set(x, "xml_format", js.Any.fromFunction1(value))
+    inline def setXml_format(value: Date => String): Self = StObject.set(x, "xml_format", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setYear_date(value: Date => String): Self = StObject.set(x, "year_date", js.Any.fromFunction1(value))
+    inline def setYear_date(value: Date => String): Self = StObject.set(x, "year_date", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setYear_month(value: Date => String): Self = StObject.set(x, "year_month", js.Any.fromFunction1(value))
+    inline def setYear_month(value: Date => String): Self = StObject.set(x, "year_month", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setYear_scale_date(value: Date => String): Self = StObject.set(x, "year_scale_date", js.Any.fromFunction1(value))
+    inline def setYear_scale_date(value: Date => String): Self = StObject.set(x, "year_scale_date", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setYear_tooltip(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "year_tooltip", js.Any.fromFunction3(value))
+    inline def setYear_tooltip(value: (Date, Date, js.Any) => String): Self = StObject.set(x, "year_tooltip", js.Any.fromFunction3(value))
   }
 }

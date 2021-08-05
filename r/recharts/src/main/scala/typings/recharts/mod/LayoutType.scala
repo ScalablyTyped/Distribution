@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LayoutType extends StObject
 object LayoutType {
   
-  @scala.inline
-  def horizontal: typings.recharts.rechartsStrings.horizontal = "horizontal".asInstanceOf[typings.recharts.rechartsStrings.horizontal]
+  inline def horizontal: typings.recharts.rechartsStrings.horizontal = "horizontal".asInstanceOf[typings.recharts.rechartsStrings.horizontal]
   
-  @scala.inline
-  def vertical: typings.recharts.rechartsStrings.vertical = "vertical".asInstanceOf[typings.recharts.rechartsStrings.vertical]
+  inline def vertical: typings.recharts.rechartsStrings.vertical = "vertical".asInstanceOf[typings.recharts.rechartsStrings.vertical]
 }

@@ -29,26 +29,22 @@ trait NonDirectionalSuspenseListProps
 }
 object NonDirectionalSuspenseListProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     children: (ReactElement[js.Any, String | JSXElementConstructor[js.Any]]) | (Iterable[ReactElement[js.Any, String | JSXElementConstructor[js.Any]]])
   ): NonDirectionalSuspenseListProps = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.asInstanceOf[NonDirectionalSuspenseListProps]
   }
   
-  @scala.inline
-  implicit class NonDirectionalSuspenseListPropsMutableBuilder[Self <: NonDirectionalSuspenseListProps] (val x: Self) extends AnyVal {
+  extension [Self <: NonDirectionalSuspenseListProps](x: Self) {
     
-    @scala.inline
-    def setRevealOrder(
+    inline def setRevealOrder(
       value: Exclude[
           typings.babelPluginReactHtmlAttrs.experimentalMod.babelPluginReactHtmlAttrsAugmentingMod.SuspenseListRevealOrder, 
           forwards | backwards
         ]
     ): Self = StObject.set(x, "revealOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevealOrderUndefined: Self = StObject.set(x, "revealOrder", js.undefined)
+    inline def setRevealOrderUndefined: Self = StObject.set(x, "revealOrder", js.undefined)
   }
 }

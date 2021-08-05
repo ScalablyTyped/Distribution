@@ -11,8 +11,6 @@ object lessThanOrEqualMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def LessThanOrEqual[T](value: T): FindOperator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("LessThanOrEqual")(value.asInstanceOf[js.Any]).asInstanceOf[FindOperator[T]]
-  @scala.inline
-  def LessThanOrEqual[T](value: FindOperator[T]): FindOperator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("LessThanOrEqual")(value.asInstanceOf[js.Any]).asInstanceOf[FindOperator[T]]
+  inline def LessThanOrEqual[T](value: T): FindOperator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("LessThanOrEqual")(value.asInstanceOf[js.Any]).asInstanceOf[FindOperator[T]]
+  inline def LessThanOrEqual[T](value: FindOperator[T]): FindOperator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("LessThanOrEqual")(value.asInstanceOf[js.Any]).asInstanceOf[FindOperator[T]]
 }

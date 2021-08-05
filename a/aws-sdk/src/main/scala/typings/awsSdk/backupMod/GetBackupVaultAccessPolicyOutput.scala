@@ -23,31 +23,23 @@ trait GetBackupVaultAccessPolicyOutput extends StObject {
 }
 object GetBackupVaultAccessPolicyOutput {
   
-  @scala.inline
-  def apply(): GetBackupVaultAccessPolicyOutput = {
+  inline def apply(): GetBackupVaultAccessPolicyOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetBackupVaultAccessPolicyOutput]
   }
   
-  @scala.inline
-  implicit class GetBackupVaultAccessPolicyOutputMutableBuilder[Self <: GetBackupVaultAccessPolicyOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetBackupVaultAccessPolicyOutput](x: Self) {
     
-    @scala.inline
-    def setBackupVaultArn(value: ARN): Self = StObject.set(x, "BackupVaultArn", value.asInstanceOf[js.Any])
+    inline def setBackupVaultArn(value: ARN): Self = StObject.set(x, "BackupVaultArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupVaultArnUndefined: Self = StObject.set(x, "BackupVaultArn", js.undefined)
+    inline def setBackupVaultArnUndefined: Self = StObject.set(x, "BackupVaultArn", js.undefined)
     
-    @scala.inline
-    def setBackupVaultName(value: BackupVaultName): Self = StObject.set(x, "BackupVaultName", value.asInstanceOf[js.Any])
+    inline def setBackupVaultName(value: BackupVaultName): Self = StObject.set(x, "BackupVaultName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupVaultNameUndefined: Self = StObject.set(x, "BackupVaultName", js.undefined)
+    inline def setBackupVaultNameUndefined: Self = StObject.set(x, "BackupVaultName", js.undefined)
     
-    @scala.inline
-    def setPolicy(value: IAMPolicy): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
+    inline def setPolicy(value: IAMPolicy): Self = StObject.set(x, "Policy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
+    inline def setPolicyUndefined: Self = StObject.set(x, "Policy", js.undefined)
   }
 }

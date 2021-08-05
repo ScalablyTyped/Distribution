@@ -26,8 +26,7 @@ object DateTimeUtil {
   }
   object SimpleDate {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       get_day: () => Double,
       get_era: () => Double,
       get_month: () => Double,
@@ -41,32 +40,23 @@ object DateTimeUtil {
       __obj.asInstanceOf[SimpleDate]
     }
     
-    @scala.inline
-    implicit class SimpleDateMutableBuilder[Self <: SimpleDate] (val x: Self) extends AnyVal {
+    extension [Self <: SimpleDate](x: Self) {
       
-      @scala.inline
-      def setGet_day(value: () => Double): Self = StObject.set(x, "get_day", js.Any.fromFunction0(value))
+      inline def setGet_day(value: () => Double): Self = StObject.set(x, "get_day", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_era(value: () => Double): Self = StObject.set(x, "get_era", js.Any.fromFunction0(value))
+      inline def setGet_era(value: () => Double): Self = StObject.set(x, "get_era", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_month(value: () => Double): Self = StObject.set(x, "get_month", js.Any.fromFunction0(value))
+      inline def setGet_month(value: () => Double): Self = StObject.set(x, "get_month", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_year(value: () => Double): Self = StObject.set(x, "get_year", js.Any.fromFunction0(value))
+      inline def setGet_year(value: () => Double): Self = StObject.set(x, "get_year", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSet_day(value: Double => Unit): Self = StObject.set(x, "set_day", js.Any.fromFunction1(value))
+      inline def setSet_day(value: Double => Unit): Self = StObject.set(x, "set_day", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_era(value: Double => Unit): Self = StObject.set(x, "set_era", js.Any.fromFunction1(value))
+      inline def setSet_era(value: Double => Unit): Self = StObject.set(x, "set_era", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_month(value: Double => Unit): Self = StObject.set(x, "set_month", js.Any.fromFunction1(value))
+      inline def setSet_month(value: Double => Unit): Self = StObject.set(x, "set_month", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_year(value: Double => Unit): Self = StObject.set(x, "set_year", js.Any.fromFunction1(value))
+      inline def setSet_year(value: Double => Unit): Self = StObject.set(x, "set_year", js.Any.fromFunction1(value))
     }
   }
 }

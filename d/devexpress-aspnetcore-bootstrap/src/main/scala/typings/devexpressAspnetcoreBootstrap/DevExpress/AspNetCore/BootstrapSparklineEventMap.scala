@@ -31,8 +31,7 @@ trait BootstrapSparklineEventMap
 }
 object BootstrapSparklineEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     disposing: BootstrapChartEventArgsBase,
     drawn: BootstrapChartEventArgsBase,
     exported: BootstrapChartEventArgsBase,
@@ -48,37 +47,26 @@ object BootstrapSparklineEventMap {
     __obj.asInstanceOf[BootstrapSparklineEventMap]
   }
   
-  @scala.inline
-  implicit class BootstrapSparklineEventMapMutableBuilder[Self <: BootstrapSparklineEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapSparklineEventMap](x: Self) {
     
-    @scala.inline
-    def setDisposing(value: BootstrapChartEventArgsBase): Self = StObject.set(x, "disposing", value.asInstanceOf[js.Any])
+    inline def setDisposing(value: BootstrapChartEventArgsBase): Self = StObject.set(x, "disposing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawn(value: BootstrapChartEventArgsBase): Self = StObject.set(x, "drawn", value.asInstanceOf[js.Any])
+    inline def setDrawn(value: BootstrapChartEventArgsBase): Self = StObject.set(x, "drawn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExported(value: BootstrapChartEventArgsBase): Self = StObject.set(x, "exported", value.asInstanceOf[js.Any])
+    inline def setExported(value: BootstrapChartEventArgsBase): Self = StObject.set(x, "exported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExporting(value: BootstrapChartExportEventArgs): Self = StObject.set(x, "exporting", value.asInstanceOf[js.Any])
+    inline def setExporting(value: BootstrapChartExportEventArgs): Self = StObject.set(x, "exporting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSaving(value: BootstrapChartExportEventArgs): Self = StObject.set(x, "fileSaving", value.asInstanceOf[js.Any])
+    inline def setFileSaving(value: BootstrapChartExportEventArgs): Self = StObject.set(x, "fileSaving", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncidentOccurred(value: BootstrapChartErrorEventArgs): Self = StObject.set(x, "incidentOccurred", value.asInstanceOf[js.Any])
+    inline def setIncidentOccurred(value: BootstrapChartErrorEventArgs): Self = StObject.set(x, "incidentOccurred", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInit(value: BootstrapChartEventArgsBase): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
+    inline def setInit(value: BootstrapChartEventArgsBase): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionChanged(value: BootstrapChartOptionChangedEventArgs): Self = StObject.set(x, "optionChanged", value.asInstanceOf[js.Any])
+    inline def setOptionChanged(value: BootstrapChartOptionChangedEventArgs): Self = StObject.set(x, "optionChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipHidden(value: BootstrapChartEventArgsBase): Self = StObject.set(x, "tooltipHidden", value.asInstanceOf[js.Any])
+    inline def setTooltipHidden(value: BootstrapChartEventArgsBase): Self = StObject.set(x, "tooltipHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipShown(value: BootstrapChartEventArgsBase): Self = StObject.set(x, "tooltipShown", value.asInstanceOf[js.Any])
+    inline def setTooltipShown(value: BootstrapChartEventArgsBase): Self = StObject.set(x, "tooltipShown", value.asInstanceOf[js.Any])
   }
 }

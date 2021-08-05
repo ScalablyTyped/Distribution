@@ -81,8 +81,7 @@ object JQuerySteps {
   }
   object JQuerySteps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       add: Step => typings.jquerySteps.JQuerySteps.JQuerySteps,
       destroy: () => Unit,
       finish: () => Unit,
@@ -99,41 +98,29 @@ object JQuerySteps {
       __obj.asInstanceOf[typings.jquerySteps.JQuerySteps.JQuerySteps]
     }
     
-    @scala.inline
-    implicit class JQueryStepsMutableBuilder[Self <: typings.jquerySteps.JQuerySteps.JQuerySteps] (val x: Self) extends AnyVal {
+    extension [Self <: typings.jquerySteps.JQuerySteps.JQuerySteps](x: Self) {
       
-      @scala.inline
-      def setAdd(value: Step => typings.jquerySteps.JQuerySteps.JQuerySteps): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+      inline def setAdd(value: Step => typings.jquerySteps.JQuerySteps.JQuerySteps): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFinish(value: () => Unit): Self = StObject.set(x, "finish", js.Any.fromFunction0(value))
+      inline def setFinish(value: () => Unit): Self = StObject.set(x, "finish", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCurrentIndex(value: () => Double): Self = StObject.set(x, "getCurrentIndex", js.Any.fromFunction0(value))
+      inline def setGetCurrentIndex(value: () => Double): Self = StObject.set(x, "getCurrentIndex", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCurrentStep(value: () => Step): Self = StObject.set(x, "getCurrentStep", js.Any.fromFunction0(value))
+      inline def setGetCurrentStep(value: () => Step): Self = StObject.set(x, "getCurrentStep", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStep(value: Double => Step): Self = StObject.set(x, "getStep", js.Any.fromFunction1(value))
+      inline def setGetStep(value: Double => Step): Self = StObject.set(x, "getStep", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInsert(value: (Double, Step) => typings.jquerySteps.JQuerySteps.JQuerySteps): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
+      inline def setInsert(value: (Double, Step) => typings.jquerySteps.JQuerySteps.JQuerySteps): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setNext(value: () => Boolean): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
+      inline def setNext(value: () => Boolean): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPrevious(value: () => Boolean): Self = StObject.set(x, "previous", js.Any.fromFunction0(value))
+      inline def setPrevious(value: () => Boolean): Self = StObject.set(x, "previous", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setRemove(value: Double => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: Double => Boolean): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSkip(value: Double => Boolean): Self = StObject.set(x, "skip", js.Any.fromFunction1(value))
+      inline def setSkip(value: Double => Boolean): Self = StObject.set(x, "skip", js.Any.fromFunction1(value))
     }
   }
   
@@ -178,56 +165,40 @@ object JQuerySteps {
   }
   object LabelSettings {
     
-    @scala.inline
-    def apply(): LabelSettings = {
+    inline def apply(): LabelSettings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LabelSettings]
     }
     
-    @scala.inline
-    implicit class LabelSettingsMutableBuilder[Self <: LabelSettings] (val x: Self) extends AnyVal {
+    extension [Self <: LabelSettings](x: Self) {
       
-      @scala.inline
-      def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+      inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+      inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
       
-      @scala.inline
-      def setCurrent(value: String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
+      inline def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
       
-      @scala.inline
-      def setFinish(value: String): Self = StObject.set(x, "finish", value.asInstanceOf[js.Any])
+      inline def setFinish(value: String): Self = StObject.set(x, "finish", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFinishUndefined: Self = StObject.set(x, "finish", js.undefined)
+      inline def setFinishUndefined: Self = StObject.set(x, "finish", js.undefined)
       
-      @scala.inline
-      def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: String): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
+      inline def setLoadingUndefined: Self = StObject.set(x, "loading", js.undefined)
       
-      @scala.inline
-      def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+      inline def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+      inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
       
-      @scala.inline
-      def setPagination(value: String): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
+      inline def setPagination(value: String): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
+      inline def setPaginationUndefined: Self = StObject.set(x, "pagination", js.undefined)
       
-      @scala.inline
-      def setPrevious(value: String): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
+      inline def setPrevious(value: String): Self = StObject.set(x, "previous", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
+      inline def setPreviousUndefined: Self = StObject.set(x, "previous", js.undefined)
     }
   }
   
@@ -400,200 +371,136 @@ object JQuerySteps {
   }
   object Settings {
     
-    @scala.inline
-    def apply(): Settings = {
+    inline def apply(): Settings = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Settings]
     }
     
-    @scala.inline
-    implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
+    extension [Self <: Settings](x: Self) {
       
-      @scala.inline
-      def setActionContainerTag(value: String): Self = StObject.set(x, "actionContainerTag", value.asInstanceOf[js.Any])
+      inline def setActionContainerTag(value: String): Self = StObject.set(x, "actionContainerTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionContainerTagUndefined: Self = StObject.set(x, "actionContainerTag", js.undefined)
+      inline def setActionContainerTagUndefined: Self = StObject.set(x, "actionContainerTag", js.undefined)
       
-      @scala.inline
-      def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
-      @scala.inline
-      def setBodyTag(value: String): Self = StObject.set(x, "bodyTag", value.asInstanceOf[js.Any])
+      inline def setBodyTag(value: String): Self = StObject.set(x, "bodyTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyTagUndefined: Self = StObject.set(x, "bodyTag", js.undefined)
+      inline def setBodyTagUndefined: Self = StObject.set(x, "bodyTag", js.undefined)
       
-      @scala.inline
-      def setContentContainerTag(value: String): Self = StObject.set(x, "contentContainerTag", value.asInstanceOf[js.Any])
+      inline def setContentContainerTag(value: String): Self = StObject.set(x, "contentContainerTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentContainerTagUndefined: Self = StObject.set(x, "contentContainerTag", js.undefined)
+      inline def setContentContainerTagUndefined: Self = StObject.set(x, "contentContainerTag", js.undefined)
       
-      @scala.inline
-      def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
+      inline def setCssClass(value: String): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
+      inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
       
-      @scala.inline
-      def setEnableAllSteps(value: Boolean): Self = StObject.set(x, "enableAllSteps", value.asInstanceOf[js.Any])
+      inline def setEnableAllSteps(value: Boolean): Self = StObject.set(x, "enableAllSteps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableAllStepsUndefined: Self = StObject.set(x, "enableAllSteps", js.undefined)
+      inline def setEnableAllStepsUndefined: Self = StObject.set(x, "enableAllSteps", js.undefined)
       
-      @scala.inline
-      def setEnableCancelButton(value: Boolean): Self = StObject.set(x, "enableCancelButton", value.asInstanceOf[js.Any])
+      inline def setEnableCancelButton(value: Boolean): Self = StObject.set(x, "enableCancelButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableCancelButtonUndefined: Self = StObject.set(x, "enableCancelButton", js.undefined)
+      inline def setEnableCancelButtonUndefined: Self = StObject.set(x, "enableCancelButton", js.undefined)
       
-      @scala.inline
-      def setEnableContentCache(value: Boolean): Self = StObject.set(x, "enableContentCache", value.asInstanceOf[js.Any])
+      inline def setEnableContentCache(value: Boolean): Self = StObject.set(x, "enableContentCache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableContentCacheUndefined: Self = StObject.set(x, "enableContentCache", js.undefined)
+      inline def setEnableContentCacheUndefined: Self = StObject.set(x, "enableContentCache", js.undefined)
       
-      @scala.inline
-      def setEnableFinishButton(value: Boolean): Self = StObject.set(x, "enableFinishButton", value.asInstanceOf[js.Any])
+      inline def setEnableFinishButton(value: Boolean): Self = StObject.set(x, "enableFinishButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableFinishButtonUndefined: Self = StObject.set(x, "enableFinishButton", js.undefined)
+      inline def setEnableFinishButtonUndefined: Self = StObject.set(x, "enableFinishButton", js.undefined)
       
-      @scala.inline
-      def setEnableKeyNavigation(value: Boolean): Self = StObject.set(x, "enableKeyNavigation", value.asInstanceOf[js.Any])
+      inline def setEnableKeyNavigation(value: Boolean): Self = StObject.set(x, "enableKeyNavigation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableKeyNavigationUndefined: Self = StObject.set(x, "enableKeyNavigation", js.undefined)
+      inline def setEnableKeyNavigationUndefined: Self = StObject.set(x, "enableKeyNavigation", js.undefined)
       
-      @scala.inline
-      def setEnablePagination(value: Boolean): Self = StObject.set(x, "enablePagination", value.asInstanceOf[js.Any])
+      inline def setEnablePagination(value: Boolean): Self = StObject.set(x, "enablePagination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnablePaginationUndefined: Self = StObject.set(x, "enablePagination", js.undefined)
+      inline def setEnablePaginationUndefined: Self = StObject.set(x, "enablePagination", js.undefined)
       
-      @scala.inline
-      def setForceMoveForward(value: Boolean): Self = StObject.set(x, "forceMoveForward", value.asInstanceOf[js.Any])
+      inline def setForceMoveForward(value: Boolean): Self = StObject.set(x, "forceMoveForward", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceMoveForwardUndefined: Self = StObject.set(x, "forceMoveForward", js.undefined)
+      inline def setForceMoveForwardUndefined: Self = StObject.set(x, "forceMoveForward", js.undefined)
       
-      @scala.inline
-      def setHeaderTag(value: String): Self = StObject.set(x, "headerTag", value.asInstanceOf[js.Any])
+      inline def setHeaderTag(value: String): Self = StObject.set(x, "headerTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderTagUndefined: Self = StObject.set(x, "headerTag", js.undefined)
+      inline def setHeaderTagUndefined: Self = StObject.set(x, "headerTag", js.undefined)
       
-      @scala.inline
-      def setLabels(value: LabelSettings): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+      inline def setLabels(value: LabelSettings): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+      inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
       
-      @scala.inline
-      def setLoadingTemplate(value: String): Self = StObject.set(x, "loadingTemplate", value.asInstanceOf[js.Any])
+      inline def setLoadingTemplate(value: String): Self = StObject.set(x, "loadingTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadingTemplateUndefined: Self = StObject.set(x, "loadingTemplate", js.undefined)
+      inline def setLoadingTemplateUndefined: Self = StObject.set(x, "loadingTemplate", js.undefined)
       
-      @scala.inline
-      def setOnCanceled(value: /* event */ String => Unit): Self = StObject.set(x, "onCanceled", js.Any.fromFunction1(value))
+      inline def setOnCanceled(value: /* event */ String => Unit): Self = StObject.set(x, "onCanceled", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCanceledUndefined: Self = StObject.set(x, "onCanceled", js.undefined)
+      inline def setOnCanceledUndefined: Self = StObject.set(x, "onCanceled", js.undefined)
       
-      @scala.inline
-      def setOnContentLoaded(value: (/* event */ String, /* currentIndex */ Double) => Unit): Self = StObject.set(x, "onContentLoaded", js.Any.fromFunction2(value))
+      inline def setOnContentLoaded(value: (/* event */ String, /* currentIndex */ Double) => Unit): Self = StObject.set(x, "onContentLoaded", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnContentLoadedUndefined: Self = StObject.set(x, "onContentLoaded", js.undefined)
+      inline def setOnContentLoadedUndefined: Self = StObject.set(x, "onContentLoaded", js.undefined)
       
-      @scala.inline
-      def setOnFinished(value: (/* event */ String, /* currentIndex */ Double) => Unit): Self = StObject.set(x, "onFinished", js.Any.fromFunction2(value))
+      inline def setOnFinished(value: (/* event */ String, /* currentIndex */ Double) => Unit): Self = StObject.set(x, "onFinished", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnFinishedUndefined: Self = StObject.set(x, "onFinished", js.undefined)
+      inline def setOnFinishedUndefined: Self = StObject.set(x, "onFinished", js.undefined)
       
-      @scala.inline
-      def setOnFinishing(value: (/* event */ String, /* currentIndex */ Double) => Boolean): Self = StObject.set(x, "onFinishing", js.Any.fromFunction2(value))
+      inline def setOnFinishing(value: (/* event */ String, /* currentIndex */ Double) => Boolean): Self = StObject.set(x, "onFinishing", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnFinishingUndefined: Self = StObject.set(x, "onFinishing", js.undefined)
+      inline def setOnFinishingUndefined: Self = StObject.set(x, "onFinishing", js.undefined)
       
-      @scala.inline
-      def setOnInit(value: (/* event */ String, /* currentIndex */ Double) => Unit): Self = StObject.set(x, "onInit", js.Any.fromFunction2(value))
+      inline def setOnInit(value: (/* event */ String, /* currentIndex */ Double) => Unit): Self = StObject.set(x, "onInit", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnInitUndefined: Self = StObject.set(x, "onInit", js.undefined)
+      inline def setOnInitUndefined: Self = StObject.set(x, "onInit", js.undefined)
       
-      @scala.inline
-      def setOnStepChanged(value: (/* event */ String, /* currentIndex */ Double, /* priorIndex */ Double) => Unit): Self = StObject.set(x, "onStepChanged", js.Any.fromFunction3(value))
+      inline def setOnStepChanged(value: (/* event */ String, /* currentIndex */ Double, /* priorIndex */ Double) => Unit): Self = StObject.set(x, "onStepChanged", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnStepChangedUndefined: Self = StObject.set(x, "onStepChanged", js.undefined)
+      inline def setOnStepChangedUndefined: Self = StObject.set(x, "onStepChanged", js.undefined)
       
-      @scala.inline
-      def setOnStepChanging(value: (/* event */ String, /* currentIndex */ Double, /* newIndex */ Double) => Boolean): Self = StObject.set(x, "onStepChanging", js.Any.fromFunction3(value))
+      inline def setOnStepChanging(value: (/* event */ String, /* currentIndex */ Double, /* newIndex */ Double) => Boolean): Self = StObject.set(x, "onStepChanging", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOnStepChangingUndefined: Self = StObject.set(x, "onStepChanging", js.undefined)
+      inline def setOnStepChangingUndefined: Self = StObject.set(x, "onStepChanging", js.undefined)
       
-      @scala.inline
-      def setSaveState(value: Boolean): Self = StObject.set(x, "saveState", value.asInstanceOf[js.Any])
+      inline def setSaveState(value: Boolean): Self = StObject.set(x, "saveState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSaveStateUndefined: Self = StObject.set(x, "saveState", js.undefined)
+      inline def setSaveStateUndefined: Self = StObject.set(x, "saveState", js.undefined)
       
-      @scala.inline
-      def setShowFinishButtonAlways(value: Boolean): Self = StObject.set(x, "showFinishButtonAlways", value.asInstanceOf[js.Any])
+      inline def setShowFinishButtonAlways(value: Boolean): Self = StObject.set(x, "showFinishButtonAlways", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowFinishButtonAlwaysUndefined: Self = StObject.set(x, "showFinishButtonAlways", js.undefined)
+      inline def setShowFinishButtonAlwaysUndefined: Self = StObject.set(x, "showFinishButtonAlways", js.undefined)
       
-      @scala.inline
-      def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
+      inline def setStartIndex(value: Double): Self = StObject.set(x, "startIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
+      inline def setStartIndexUndefined: Self = StObject.set(x, "startIndex", js.undefined)
       
-      @scala.inline
-      def setStepsContainerTag(value: String): Self = StObject.set(x, "stepsContainerTag", value.asInstanceOf[js.Any])
+      inline def setStepsContainerTag(value: String): Self = StObject.set(x, "stepsContainerTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepsContainerTagUndefined: Self = StObject.set(x, "stepsContainerTag", js.undefined)
+      inline def setStepsContainerTagUndefined: Self = StObject.set(x, "stepsContainerTag", js.undefined)
       
-      @scala.inline
-      def setStepsOrientation(value: String | Double): Self = StObject.set(x, "stepsOrientation", value.asInstanceOf[js.Any])
+      inline def setStepsOrientation(value: String | Double): Self = StObject.set(x, "stepsOrientation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepsOrientationUndefined: Self = StObject.set(x, "stepsOrientation", js.undefined)
+      inline def setStepsOrientationUndefined: Self = StObject.set(x, "stepsOrientation", js.undefined)
       
-      @scala.inline
-      def setSuppressPaginationOnFocus(value: Boolean): Self = StObject.set(x, "suppressPaginationOnFocus", value.asInstanceOf[js.Any])
+      inline def setSuppressPaginationOnFocus(value: Boolean): Self = StObject.set(x, "suppressPaginationOnFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuppressPaginationOnFocusUndefined: Self = StObject.set(x, "suppressPaginationOnFocus", js.undefined)
+      inline def setSuppressPaginationOnFocusUndefined: Self = StObject.set(x, "suppressPaginationOnFocus", js.undefined)
       
-      @scala.inline
-      def setTitleTemplate(value: String): Self = StObject.set(x, "titleTemplate", value.asInstanceOf[js.Any])
+      inline def setTitleTemplate(value: String): Self = StObject.set(x, "titleTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleTemplateUndefined: Self = StObject.set(x, "titleTemplate", js.undefined)
+      inline def setTitleTemplateUndefined: Self = StObject.set(x, "titleTemplate", js.undefined)
       
-      @scala.inline
-      def setTransitionEffect(value: String | Double): Self = StObject.set(x, "transitionEffect", value.asInstanceOf[js.Any])
+      inline def setTransitionEffect(value: String | Double): Self = StObject.set(x, "transitionEffect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionEffectSpeed(value: Double): Self = StObject.set(x, "transitionEffectSpeed", value.asInstanceOf[js.Any])
+      inline def setTransitionEffectSpeed(value: Double): Self = StObject.set(x, "transitionEffectSpeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionEffectSpeedUndefined: Self = StObject.set(x, "transitionEffectSpeed", js.undefined)
+      inline def setTransitionEffectSpeedUndefined: Self = StObject.set(x, "transitionEffectSpeed", js.undefined)
       
-      @scala.inline
-      def setTransitionEffectUndefined: Self = StObject.set(x, "transitionEffect", js.undefined)
+      inline def setTransitionEffectUndefined: Self = StObject.set(x, "transitionEffect", js.undefined)
     }
   }
   
@@ -624,38 +531,28 @@ object JQuerySteps {
   }
   object Step {
     
-    @scala.inline
-    def apply(): Step = {
+    inline def apply(): Step = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Step]
     }
     
-    @scala.inline
-    implicit class StepMutableBuilder[Self <: Step] (val x: Self) extends AnyVal {
+    extension [Self <: Step](x: Self) {
       
-      @scala.inline
-      def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentMode(value: String | Double): Self = StObject.set(x, "contentMode", value.asInstanceOf[js.Any])
+      inline def setContentMode(value: String | Double): Self = StObject.set(x, "contentMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentModeUndefined: Self = StObject.set(x, "contentMode", js.undefined)
+      inline def setContentModeUndefined: Self = StObject.set(x, "contentMode", js.undefined)
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
+      inline def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
+      inline def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
 }

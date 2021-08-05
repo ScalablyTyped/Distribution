@@ -14,25 +14,19 @@ trait DomainCalls extends StObject {
 }
 object DomainCalls {
   
-  @scala.inline
-  def apply(): DomainCalls = {
+  inline def apply(): DomainCalls = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DomainCalls]
   }
   
-  @scala.inline
-  implicit class DomainCallsMutableBuilder[Self <: DomainCalls] (val x: Self) extends AnyVal {
+  extension [Self <: DomainCalls](x: Self) {
     
-    @scala.inline
-    def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
     
-    @scala.inline
-    def setHttpCallCount(value: Double): Self = StObject.set(x, "httpCallCount", value.asInstanceOf[js.Any])
+    inline def setHttpCallCount(value: Double): Self = StObject.set(x, "httpCallCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpCallCountUndefined: Self = StObject.set(x, "httpCallCount", js.undefined)
+    inline def setHttpCallCountUndefined: Self = StObject.set(x, "httpCallCount", js.undefined)
   }
 }

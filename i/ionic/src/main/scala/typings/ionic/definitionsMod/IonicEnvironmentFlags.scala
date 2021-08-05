@@ -12,19 +12,15 @@ trait IonicEnvironmentFlags extends StObject {
 }
 object IonicEnvironmentFlags {
   
-  @scala.inline
-  def apply(confirm: Boolean, interactive: Boolean): IonicEnvironmentFlags = {
+  inline def apply(confirm: Boolean, interactive: Boolean): IonicEnvironmentFlags = {
     val __obj = js.Dynamic.literal(confirm = confirm.asInstanceOf[js.Any], interactive = interactive.asInstanceOf[js.Any])
     __obj.asInstanceOf[IonicEnvironmentFlags]
   }
   
-  @scala.inline
-  implicit class IonicEnvironmentFlagsMutableBuilder[Self <: IonicEnvironmentFlags] (val x: Self) extends AnyVal {
+  extension [Self <: IonicEnvironmentFlags](x: Self) {
     
-    @scala.inline
-    def setConfirm(value: Boolean): Self = StObject.set(x, "confirm", value.asInstanceOf[js.Any])
+    inline def setConfirm(value: Boolean): Self = StObject.set(x, "confirm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
+    inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
   }
 }

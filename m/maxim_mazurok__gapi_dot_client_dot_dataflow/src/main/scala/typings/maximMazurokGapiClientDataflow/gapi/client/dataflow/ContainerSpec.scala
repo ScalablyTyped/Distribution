@@ -20,37 +20,27 @@ trait ContainerSpec extends StObject {
 }
 object ContainerSpec {
   
-  @scala.inline
-  def apply(): ContainerSpec = {
+  inline def apply(): ContainerSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContainerSpec]
   }
   
-  @scala.inline
-  implicit class ContainerSpecMutableBuilder[Self <: ContainerSpec] (val x: Self) extends AnyVal {
+  extension [Self <: ContainerSpec](x: Self) {
     
-    @scala.inline
-    def setDefaultEnvironment(value: FlexTemplateRuntimeEnvironment): Self = StObject.set(x, "defaultEnvironment", value.asInstanceOf[js.Any])
+    inline def setDefaultEnvironment(value: FlexTemplateRuntimeEnvironment): Self = StObject.set(x, "defaultEnvironment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultEnvironmentUndefined: Self = StObject.set(x, "defaultEnvironment", js.undefined)
+    inline def setDefaultEnvironmentUndefined: Self = StObject.set(x, "defaultEnvironment", js.undefined)
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: TemplateMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: TemplateMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setSdkInfo(value: SDKInfo): Self = StObject.set(x, "sdkInfo", value.asInstanceOf[js.Any])
+    inline def setSdkInfo(value: SDKInfo): Self = StObject.set(x, "sdkInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSdkInfoUndefined: Self = StObject.set(x, "sdkInfo", js.undefined)
+    inline def setSdkInfoUndefined: Self = StObject.set(x, "sdkInfo", js.undefined)
   }
 }

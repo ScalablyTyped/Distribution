@@ -18,8 +18,7 @@ trait ASPxClientHtmlEditorTableCellPropertiesDialog
 }
 object ASPxClientHtmlEditorTableCellPropertiesDialog {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     GetApplyToAllCellsCheckBox: () => ASPxClientCheckBox,
     GetBackgroundColorColorEdit: () => ASPxClientColorEdit,
     GetCancelButton: () => ASPxClientButton,
@@ -32,10 +31,8 @@ object ASPxClientHtmlEditorTableCellPropertiesDialog {
     __obj.asInstanceOf[ASPxClientHtmlEditorTableCellPropertiesDialog]
   }
   
-  @scala.inline
-  implicit class ASPxClientHtmlEditorTableCellPropertiesDialogMutableBuilder[Self <: ASPxClientHtmlEditorTableCellPropertiesDialog] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHtmlEditorTableCellPropertiesDialog](x: Self) {
     
-    @scala.inline
-    def setGetApplyToAllCellsCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetApplyToAllCellsCheckBox", js.Any.fromFunction0(value))
+    inline def setGetApplyToAllCellsCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetApplyToAllCellsCheckBox", js.Any.fromFunction0(value))
   }
 }

@@ -18,40 +18,29 @@ trait AjaxData extends StObject {
 }
 object AjaxData {
   
-  @scala.inline
-  def apply(data: js.Any): AjaxData = {
+  inline def apply(data: js.Any): AjaxData = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[AjaxData]
   }
   
-  @scala.inline
-  implicit class AjaxDataMutableBuilder[Self <: AjaxData] (val x: Self) extends AnyVal {
+  extension [Self <: AjaxData](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDraw(value: Double): Self = StObject.set(x, "draw", value.asInstanceOf[js.Any])
+    inline def setDraw(value: Double): Self = StObject.set(x, "draw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawUndefined: Self = StObject.set(x, "draw", js.undefined)
+    inline def setDrawUndefined: Self = StObject.set(x, "draw", js.undefined)
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setRecordsFiltered(value: Double): Self = StObject.set(x, "recordsFiltered", value.asInstanceOf[js.Any])
+    inline def setRecordsFiltered(value: Double): Self = StObject.set(x, "recordsFiltered", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordsFilteredUndefined: Self = StObject.set(x, "recordsFiltered", js.undefined)
+    inline def setRecordsFilteredUndefined: Self = StObject.set(x, "recordsFiltered", js.undefined)
     
-    @scala.inline
-    def setRecordsTotal(value: Double): Self = StObject.set(x, "recordsTotal", value.asInstanceOf[js.Any])
+    inline def setRecordsTotal(value: Double): Self = StObject.set(x, "recordsTotal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordsTotalUndefined: Self = StObject.set(x, "recordsTotal", js.undefined)
+    inline def setRecordsTotalUndefined: Self = StObject.set(x, "recordsTotal", js.undefined)
   }
 }

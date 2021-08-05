@@ -13,22 +13,17 @@ trait RandomSplitActivity extends StObject {
 }
 object RandomSplitActivity {
   
-  @scala.inline
-  def apply(): RandomSplitActivity = {
+  inline def apply(): RandomSplitActivity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RandomSplitActivity]
   }
   
-  @scala.inline
-  implicit class RandomSplitActivityMutableBuilder[Self <: RandomSplitActivity] (val x: Self) extends AnyVal {
+  extension [Self <: RandomSplitActivity](x: Self) {
     
-    @scala.inline
-    def setBranches(value: ListOfRandomSplitEntry): Self = StObject.set(x, "Branches", value.asInstanceOf[js.Any])
+    inline def setBranches(value: ListOfRandomSplitEntry): Self = StObject.set(x, "Branches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchesUndefined: Self = StObject.set(x, "Branches", js.undefined)
+    inline def setBranchesUndefined: Self = StObject.set(x, "Branches", js.undefined)
     
-    @scala.inline
-    def setBranchesVarargs(value: RandomSplitEntry*): Self = StObject.set(x, "Branches", js.Array(value :_*))
+    inline def setBranchesVarargs(value: RandomSplitEntry*): Self = StObject.set(x, "Branches", js.Array(value :_*))
   }
 }

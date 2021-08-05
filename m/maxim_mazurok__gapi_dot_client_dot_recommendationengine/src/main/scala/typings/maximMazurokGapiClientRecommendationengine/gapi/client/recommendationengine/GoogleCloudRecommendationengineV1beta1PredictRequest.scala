@@ -61,63 +61,47 @@ trait GoogleCloudRecommendationengineV1beta1PredictRequest extends StObject {
 }
 object GoogleCloudRecommendationengineV1beta1PredictRequest {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommendationengineV1beta1PredictRequest = {
+  inline def apply(): GoogleCloudRecommendationengineV1beta1PredictRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1PredictRequest]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommendationengineV1beta1PredictRequestMutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1PredictRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommendationengineV1beta1PredictRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PredictRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setParams(
+    inline def setParams(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PredictRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    @scala.inline
-    def setUserEvent(value: GoogleCloudRecommendationengineV1beta1UserEvent): Self = StObject.set(x, "userEvent", value.asInstanceOf[js.Any])
+    inline def setUserEvent(value: GoogleCloudRecommendationengineV1beta1UserEvent): Self = StObject.set(x, "userEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserEventUndefined: Self = StObject.set(x, "userEvent", js.undefined)
+    inline def setUserEventUndefined: Self = StObject.set(x, "userEvent", js.undefined)
   }
 }

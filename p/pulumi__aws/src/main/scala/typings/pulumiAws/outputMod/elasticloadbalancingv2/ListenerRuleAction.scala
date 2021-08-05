@@ -45,56 +45,40 @@ trait ListenerRuleAction extends StObject {
 }
 object ListenerRuleAction {
   
-  @scala.inline
-  def apply(order: Double, `type`: String): ListenerRuleAction = {
+  inline def apply(order: Double, `type`: String): ListenerRuleAction = {
     val __obj = js.Dynamic.literal(order = order.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenerRuleAction]
   }
   
-  @scala.inline
-  implicit class ListenerRuleActionMutableBuilder[Self <: ListenerRuleAction] (val x: Self) extends AnyVal {
+  extension [Self <: ListenerRuleAction](x: Self) {
     
-    @scala.inline
-    def setAuthenticateCognito(value: ListenerRuleActionAuthenticateCognito): Self = StObject.set(x, "authenticateCognito", value.asInstanceOf[js.Any])
+    inline def setAuthenticateCognito(value: ListenerRuleActionAuthenticateCognito): Self = StObject.set(x, "authenticateCognito", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticateCognitoUndefined: Self = StObject.set(x, "authenticateCognito", js.undefined)
+    inline def setAuthenticateCognitoUndefined: Self = StObject.set(x, "authenticateCognito", js.undefined)
     
-    @scala.inline
-    def setAuthenticateOidc(value: ListenerRuleActionAuthenticateOidc): Self = StObject.set(x, "authenticateOidc", value.asInstanceOf[js.Any])
+    inline def setAuthenticateOidc(value: ListenerRuleActionAuthenticateOidc): Self = StObject.set(x, "authenticateOidc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticateOidcUndefined: Self = StObject.set(x, "authenticateOidc", js.undefined)
+    inline def setAuthenticateOidcUndefined: Self = StObject.set(x, "authenticateOidc", js.undefined)
     
-    @scala.inline
-    def setFixedResponse(value: ListenerRuleActionFixedResponse): Self = StObject.set(x, "fixedResponse", value.asInstanceOf[js.Any])
+    inline def setFixedResponse(value: ListenerRuleActionFixedResponse): Self = StObject.set(x, "fixedResponse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedResponseUndefined: Self = StObject.set(x, "fixedResponse", js.undefined)
+    inline def setFixedResponseUndefined: Self = StObject.set(x, "fixedResponse", js.undefined)
     
-    @scala.inline
-    def setForward(value: ListenerRuleActionForward): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
+    inline def setForward(value: ListenerRuleActionForward): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardUndefined: Self = StObject.set(x, "forward", js.undefined)
+    inline def setForwardUndefined: Self = StObject.set(x, "forward", js.undefined)
     
-    @scala.inline
-    def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirect(value: ListenerRuleActionRedirect): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
+    inline def setRedirect(value: ListenerRuleActionRedirect): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
+    inline def setRedirectUndefined: Self = StObject.set(x, "redirect", js.undefined)
     
-    @scala.inline
-    def setTargetGroupArn(value: String): Self = StObject.set(x, "targetGroupArn", value.asInstanceOf[js.Any])
+    inline def setTargetGroupArn(value: String): Self = StObject.set(x, "targetGroupArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetGroupArnUndefined: Self = StObject.set(x, "targetGroupArn", js.undefined)
+    inline def setTargetGroupArnUndefined: Self = StObject.set(x, "targetGroupArn", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

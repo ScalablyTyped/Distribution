@@ -10,9 +10,7 @@ object env {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addTest(name: String, fn: js.Function0[Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addTest")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def addTest(name: String, fn: js.Function0[Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addTest")(name.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def test(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def test(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -14,22 +14,17 @@ trait AllBuild extends StObject {
 }
 object AllBuild {
   
-  @scala.inline
-  def apply(all: scala.Double, build: scala.Double, release: scala.Double): AllBuild = {
+  inline def apply(all: scala.Double, build: scala.Double, release: scala.Double): AllBuild = {
     val __obj = js.Dynamic.literal(all = all.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllBuild]
   }
   
-  @scala.inline
-  implicit class AllBuildMutableBuilder[Self <: AllBuild] (val x: Self) extends AnyVal {
+  extension [Self <: AllBuild](x: Self) {
     
-    @scala.inline
-    def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuild(value: scala.Double): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
+    inline def setBuild(value: scala.Double): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelease(value: scala.Double): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
+    inline def setRelease(value: scala.Double): Self = StObject.set(x, "release", value.asInstanceOf[js.Any])
   }
 }

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ImageSizeType extends StObject
 object ImageSizeType {
   
-  @scala.inline
-  def compressed: typings.jweixin.jweixinStrings.compressed = "compressed".asInstanceOf[typings.jweixin.jweixinStrings.compressed]
+  inline def compressed: typings.jweixin.jweixinStrings.compressed = "compressed".asInstanceOf[typings.jweixin.jweixinStrings.compressed]
   
-  @scala.inline
-  def original: typings.jweixin.jweixinStrings.original = "original".asInstanceOf[typings.jweixin.jweixinStrings.original]
+  inline def original: typings.jweixin.jweixinStrings.original = "original".asInstanceOf[typings.jweixin.jweixinStrings.original]
 }

@@ -50,8 +50,7 @@ trait XViewCursor
 }
 object XViewCursor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     goDown: (Double, Boolean) => Boolean,
     goLeft: (Double, Boolean) => Boolean,
@@ -64,19 +63,14 @@ object XViewCursor {
     __obj.asInstanceOf[XViewCursor]
   }
   
-  @scala.inline
-  implicit class XViewCursorMutableBuilder[Self <: XViewCursor] (val x: Self) extends AnyVal {
+  extension [Self <: XViewCursor](x: Self) {
     
-    @scala.inline
-    def setGoDown(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "goDown", js.Any.fromFunction2(value))
+    inline def setGoDown(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "goDown", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGoLeft(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "goLeft", js.Any.fromFunction2(value))
+    inline def setGoLeft(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "goLeft", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGoRight(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "goRight", js.Any.fromFunction2(value))
+    inline def setGoRight(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "goRight", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGoUp(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "goUp", js.Any.fromFunction2(value))
+    inline def setGoUp(value: (Double, Boolean) => Boolean): Self = StObject.set(x, "goUp", js.Any.fromFunction2(value))
   }
 }

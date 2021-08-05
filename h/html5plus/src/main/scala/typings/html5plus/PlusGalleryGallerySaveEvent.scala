@@ -20,19 +20,15 @@ trait PlusGalleryGallerySaveEvent extends StObject {
 }
 object PlusGalleryGallerySaveEvent {
   
-  @scala.inline
-  def apply(): PlusGalleryGallerySaveEvent = {
+  inline def apply(): PlusGalleryGallerySaveEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusGalleryGallerySaveEvent]
   }
   
-  @scala.inline
-  implicit class PlusGalleryGallerySaveEventMutableBuilder[Self <: PlusGalleryGallerySaveEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PlusGalleryGallerySaveEvent](x: Self) {
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
   }
 }

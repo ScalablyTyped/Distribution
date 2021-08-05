@@ -12,16 +12,13 @@ trait PackageTrigger
 }
 object PackageTrigger {
   
-  @scala.inline
-  def apply(alias: String, triggerType: ReleaseTriggerType): PackageTrigger = {
+  inline def apply(alias: String, triggerType: ReleaseTriggerType): PackageTrigger = {
     val __obj = js.Dynamic.literal(alias = alias.asInstanceOf[js.Any], triggerType = triggerType.asInstanceOf[js.Any])
     __obj.asInstanceOf[PackageTrigger]
   }
   
-  @scala.inline
-  implicit class PackageTriggerMutableBuilder[Self <: PackageTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: PackageTrigger](x: Self) {
     
-    @scala.inline
-    def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+    inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
   }
 }

@@ -46,29 +46,22 @@ object zoomIFrameMod {
   }
   object IZoomIFrameProps {
     
-    @scala.inline
-    def apply(children: ReactElement, iFrameRef: MutableRefObject[HTMLIFrameElement], scale: Double): IZoomIFrameProps = {
+    inline def apply(children: ReactElement, iFrameRef: MutableRefObject[HTMLIFrameElement], scale: Double): IZoomIFrameProps = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], iFrameRef = iFrameRef.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any])
       __obj.asInstanceOf[IZoomIFrameProps]
     }
     
-    @scala.inline
-    implicit class IZoomIFramePropsMutableBuilder[Self <: IZoomIFrameProps] (val x: Self) extends AnyVal {
+    extension [Self <: IZoomIFrameProps](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIFrameRef(value: MutableRefObject[HTMLIFrameElement]): Self = StObject.set(x, "iFrameRef", value.asInstanceOf[js.Any])
+      inline def setIFrameRef(value: MutableRefObject[HTMLIFrameElement]): Self = StObject.set(x, "iFrameRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     }
   }
 }

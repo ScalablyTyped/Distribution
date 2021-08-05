@@ -22,26 +22,22 @@ object mod {
     @JSImport("prosemirror-schema-basic", "marks.code")
     @js.native
     def code: MarkSpec = js.native
-    @scala.inline
-    def code_=(x: MarkSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("code")(x.asInstanceOf[js.Any])
+    inline def code_=(x: MarkSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("code")(x.asInstanceOf[js.Any])
     
     @JSImport("prosemirror-schema-basic", "marks.em")
     @js.native
     def em: MarkSpec = js.native
-    @scala.inline
-    def em_=(x: MarkSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("em")(x.asInstanceOf[js.Any])
+    inline def em_=(x: MarkSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("em")(x.asInstanceOf[js.Any])
     
     @JSImport("prosemirror-schema-basic", "marks.link")
     @js.native
     def link: MarkSpec = js.native
-    @scala.inline
-    def link_=(x: MarkSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("link")(x.asInstanceOf[js.Any])
+    inline def link_=(x: MarkSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("link")(x.asInstanceOf[js.Any])
     
     @JSImport("prosemirror-schema-basic", "marks.strong")
     @js.native
     def strong: MarkSpec = js.native
-    @scala.inline
-    def strong_=(x: MarkSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("strong")(x.asInstanceOf[js.Any])
+    inline def strong_=(x: MarkSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("strong")(x.asInstanceOf[js.Any])
   }
   
   object nodes {
@@ -53,59 +49,50 @@ object mod {
     @JSImport("prosemirror-schema-basic", "nodes.blockquote")
     @js.native
     def blockquote: NodeSpec = js.native
-    @scala.inline
-    def blockquote_=(x: NodeSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("blockquote")(x.asInstanceOf[js.Any])
+    inline def blockquote_=(x: NodeSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("blockquote")(x.asInstanceOf[js.Any])
     
     @JSImport("prosemirror-schema-basic", "nodes.code_block")
     @js.native
     def codeBlock: NodeSpec = js.native
     
-    @scala.inline
-    def codeBlock_=(x: NodeSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("code_block")(x.asInstanceOf[js.Any])
+    inline def codeBlock_=(x: NodeSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("code_block")(x.asInstanceOf[js.Any])
     
     @JSImport("prosemirror-schema-basic", "nodes.doc")
     @js.native
     def doc: NodeSpec = js.native
-    @scala.inline
-    def doc_=(x: NodeSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("doc")(x.asInstanceOf[js.Any])
+    inline def doc_=(x: NodeSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("doc")(x.asInstanceOf[js.Any])
     
     @JSImport("prosemirror-schema-basic", "nodes.hard_break")
     @js.native
     def hardBreak: NodeSpec = js.native
     
-    @scala.inline
-    def hardBreak_=(x: NodeSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hard_break")(x.asInstanceOf[js.Any])
+    inline def hardBreak_=(x: NodeSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hard_break")(x.asInstanceOf[js.Any])
     
     @JSImport("prosemirror-schema-basic", "nodes.heading")
     @js.native
     def heading: NodeSpec = js.native
-    @scala.inline
-    def heading_=(x: NodeSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("heading")(x.asInstanceOf[js.Any])
+    inline def heading_=(x: NodeSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("heading")(x.asInstanceOf[js.Any])
     
     @JSImport("prosemirror-schema-basic", "nodes.horizontal_rule")
     @js.native
     def horizontalRule: NodeSpec = js.native
     
-    @scala.inline
-    def horizontalRule_=(x: NodeSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("horizontal_rule")(x.asInstanceOf[js.Any])
+    inline def horizontalRule_=(x: NodeSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("horizontal_rule")(x.asInstanceOf[js.Any])
     
     @JSImport("prosemirror-schema-basic", "nodes.image")
     @js.native
     def image: NodeSpec = js.native
-    @scala.inline
-    def image_=(x: NodeSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("image")(x.asInstanceOf[js.Any])
+    inline def image_=(x: NodeSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("image")(x.asInstanceOf[js.Any])
     
     @JSImport("prosemirror-schema-basic", "nodes.paragraph")
     @js.native
     def paragraph: NodeSpec = js.native
-    @scala.inline
-    def paragraph_=(x: NodeSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("paragraph")(x.asInstanceOf[js.Any])
+    inline def paragraph_=(x: NodeSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("paragraph")(x.asInstanceOf[js.Any])
     
     @JSImport("prosemirror-schema-basic", "nodes.text")
     @js.native
     def text: NodeSpec = js.native
-    @scala.inline
-    def text_=(x: NodeSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("text")(x.asInstanceOf[js.Any])
+    inline def text_=(x: NodeSpec): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("text")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("prosemirror-schema-basic", "schema")
@@ -114,8 +101,7 @@ object mod {
     /* keyof {[ name in keyof typeof nodes ]: prosemirror-model.prosemirror-model.NodeType<prosemirror-model.prosemirror-model.Schema<keyof typeof nodes, keyof typeof marks>>} & {[key: string] : prosemirror-model.prosemirror-model.NodeType<prosemirror-model.prosemirror-model.Schema<keyof typeof nodes, keyof typeof marks>>} */ String, 
     /* keyof {[ name in keyof typeof marks ]: prosemirror-model.prosemirror-model.MarkType<prosemirror-model.prosemirror-model.Schema<keyof typeof nodes, keyof typeof marks>>} & {[key: string] : prosemirror-model.prosemirror-model.MarkType<prosemirror-model.prosemirror-model.Schema<keyof typeof nodes, keyof typeof marks>>} */ String
   ] = js.native
-  @scala.inline
-  def schema_=(
+  inline def schema_=(
     x: Schema[
       /* keyof {[ name in keyof typeof nodes ]: prosemirror-model.prosemirror-model.NodeType<prosemirror-model.prosemirror-model.Schema<keyof typeof nodes, keyof typeof marks>>} & {[key: string] : prosemirror-model.prosemirror-model.NodeType<prosemirror-model.prosemirror-model.Schema<keyof typeof nodes, keyof typeof marks>>} */ String, 
       /* keyof {[ name in keyof typeof marks ]: prosemirror-model.prosemirror-model.MarkType<prosemirror-model.prosemirror-model.Schema<keyof typeof nodes, keyof typeof marks>>} & {[key: string] : prosemirror-model.prosemirror-model.MarkType<prosemirror-model.prosemirror-model.Schema<keyof typeof nodes, keyof typeof marks>>} */ String

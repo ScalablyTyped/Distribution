@@ -14,22 +14,17 @@ trait TrafficControl extends StObject {
 }
 object TrafficControl {
   
-  @scala.inline
-  def apply(hide: () => Unit, setPanelOffset: Size => Unit, show: () => Unit): TrafficControl = {
+  inline def apply(hide: () => Unit, setPanelOffset: Size => Unit, show: () => Unit): TrafficControl = {
     val __obj = js.Dynamic.literal(hide = js.Any.fromFunction0(hide), setPanelOffset = js.Any.fromFunction1(setPanelOffset), show = js.Any.fromFunction0(show))
     __obj.asInstanceOf[TrafficControl]
   }
   
-  @scala.inline
-  implicit class TrafficControlMutableBuilder[Self <: TrafficControl] (val x: Self) extends AnyVal {
+  extension [Self <: TrafficControl](x: Self) {
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetPanelOffset(value: Size => Unit): Self = StObject.set(x, "setPanelOffset", js.Any.fromFunction1(value))
+    inline def setSetPanelOffset(value: Size => Unit): Self = StObject.set(x, "setPanelOffset", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
   }
 }

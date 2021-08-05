@@ -13,25 +13,19 @@ trait NodeSource extends StObject {
 }
 object NodeSource {
   
-  @scala.inline
-  def apply(): NodeSource = {
+  inline def apply(): NodeSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeSource]
   }
   
-  @scala.inline
-  implicit class NodeSourceMutableBuilder[Self <: NodeSource] (val x: Self) extends AnyVal {
+  extension [Self <: NodeSource](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Column): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Column): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setStart(value: Column): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Column): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

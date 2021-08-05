@@ -23,28 +23,21 @@ trait LogicalTable extends StObject {
 }
 object LogicalTable {
   
-  @scala.inline
-  def apply(Alias: LogicalTableAlias, Source: LogicalTableSource): LogicalTable = {
+  inline def apply(Alias: LogicalTableAlias, Source: LogicalTableSource): LogicalTable = {
     val __obj = js.Dynamic.literal(Alias = Alias.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[LogicalTable]
   }
   
-  @scala.inline
-  implicit class LogicalTableMutableBuilder[Self <: LogicalTable] (val x: Self) extends AnyVal {
+  extension [Self <: LogicalTable](x: Self) {
     
-    @scala.inline
-    def setAlias(value: LogicalTableAlias): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
+    inline def setAlias(value: LogicalTableAlias): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTransforms(value: TransformOperationList): Self = StObject.set(x, "DataTransforms", value.asInstanceOf[js.Any])
+    inline def setDataTransforms(value: TransformOperationList): Self = StObject.set(x, "DataTransforms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTransformsUndefined: Self = StObject.set(x, "DataTransforms", js.undefined)
+    inline def setDataTransformsUndefined: Self = StObject.set(x, "DataTransforms", js.undefined)
     
-    @scala.inline
-    def setDataTransformsVarargs(value: TransformOperation*): Self = StObject.set(x, "DataTransforms", js.Array(value :_*))
+    inline def setDataTransformsVarargs(value: TransformOperation*): Self = StObject.set(x, "DataTransforms", js.Array(value :_*))
     
-    @scala.inline
-    def setSource(value: LogicalTableSource): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+    inline def setSource(value: LogicalTableSource): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
   }
 }

@@ -123,8 +123,7 @@ object timeSyncExtensionMod {
   }
   object TimeSyncExtension {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getNetworkLag: () => Double,
       getServerDate: () => Date,
       getServerTime: () => Double,
@@ -139,35 +138,25 @@ object timeSyncExtensionMod {
       __obj.asInstanceOf[TimeSyncExtension]
     }
     
-    @scala.inline
-    implicit class TimeSyncExtensionMutableBuilder[Self <: TimeSyncExtension] (val x: Self) extends AnyVal {
+    extension [Self <: TimeSyncExtension](x: Self) {
       
-      @scala.inline
-      def setGetNetworkLag(value: () => Double): Self = StObject.set(x, "getNetworkLag", js.Any.fromFunction0(value))
+      inline def setGetNetworkLag(value: () => Double): Self = StObject.set(x, "getNetworkLag", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetServerDate(value: () => Date): Self = StObject.set(x, "getServerDate", js.Any.fromFunction0(value))
+      inline def setGetServerDate(value: () => Date): Self = StObject.set(x, "getServerDate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetServerTime(value: () => Double): Self = StObject.set(x, "getServerTime", js.Any.fromFunction0(value))
+      inline def setGetServerTime(value: () => Double): Self = StObject.set(x, "getServerTime", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTimeOffset(value: () => Double): Self = StObject.set(x, "getTimeOffset", js.Any.fromFunction0(value))
+      inline def setGetTimeOffset(value: () => Double): Self = StObject.set(x, "getTimeOffset", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTimeOffsetSamples(value: () => js.Array[Double]): Self = StObject.set(x, "getTimeOffsetSamples", js.Any.fromFunction0(value))
+      inline def setGetTimeOffsetSamples(value: () => js.Array[Double]): Self = StObject.set(x, "getTimeOffsetSamples", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIncoming(value: /* message */ Message => Unit): Self = StObject.set(x, "incoming", js.Any.fromFunction1(value))
+      inline def setIncoming(value: /* message */ Message => Unit): Self = StObject.set(x, "incoming", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOutgoing(value: /* message */ Message => Unit): Self = StObject.set(x, "outgoing", js.Any.fromFunction1(value))
+      inline def setOutgoing(value: /* message */ Message => Unit): Self = StObject.set(x, "outgoing", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegistered(value: (String, CometD) => Unit): Self = StObject.set(x, "registered", js.Any.fromFunction2(value))
+      inline def setRegistered(value: (String, CometD) => Unit): Self = StObject.set(x, "registered", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUnregistered(value: () => Unit): Self = StObject.set(x, "unregistered", js.Any.fromFunction0(value))
+      inline def setUnregistered(value: () => Unit): Self = StObject.set(x, "unregistered", js.Any.fromFunction0(value))
     }
   }
 }

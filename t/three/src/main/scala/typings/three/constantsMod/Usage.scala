@@ -9,6 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 sealed trait Usage extends StObject
 object Usage {
   
-  @scala.inline
-  def apply(value: scala.Nothing): js.UndefOr[Usage & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("Usage")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Usage & scala.Nothing]]
+  inline def apply(value: scala.Nothing): js.UndefOr[Usage & scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("Usage")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Usage & scala.Nothing]]
 }

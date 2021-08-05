@@ -13,16 +13,13 @@ trait SsoSessionNotFoundResult
 }
 object SsoSessionNotFoundResult {
   
-  @scala.inline
-  def apply(): SsoSessionNotFoundResult = {
+  inline def apply(): SsoSessionNotFoundResult = {
     val __obj = js.Dynamic.literal(sso = false)
     __obj.asInstanceOf[SsoSessionNotFoundResult]
   }
   
-  @scala.inline
-  implicit class SsoSessionNotFoundResultMutableBuilder[Self <: SsoSessionNotFoundResult] (val x: Self) extends AnyVal {
+  extension [Self <: SsoSessionNotFoundResult](x: Self) {
     
-    @scala.inline
-    def setSso(value: `false`): Self = StObject.set(x, "sso", value.asInstanceOf[js.Any])
+    inline def setSso(value: `false`): Self = StObject.set(x, "sso", value.asInstanceOf[js.Any])
   }
 }

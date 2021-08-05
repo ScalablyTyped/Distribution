@@ -11,6 +11,5 @@ object landingTemplateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(addonInterface: Manifest): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(addonInterface.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(addonInterface: Manifest): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(addonInterface.asInstanceOf[js.Any]).asInstanceOf[String]
 }

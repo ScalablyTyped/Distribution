@@ -38,22 +38,17 @@ trait CommentMention extends StObject {
 }
 object CommentMention {
   
-  @scala.inline
-  def apply(email: String, id: Double, name: String): CommentMention = {
+  inline def apply(email: String, id: Double, name: String): CommentMention = {
     val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentMention]
   }
   
-  @scala.inline
-  implicit class CommentMentionMutableBuilder[Self <: CommentMention] (val x: Self) extends AnyVal {
+  extension [Self <: CommentMention](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

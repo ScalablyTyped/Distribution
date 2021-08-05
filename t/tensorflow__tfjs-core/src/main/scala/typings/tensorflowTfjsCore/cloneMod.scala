@@ -13,6 +13,5 @@ object cloneMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def clone_[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def clone_[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 }

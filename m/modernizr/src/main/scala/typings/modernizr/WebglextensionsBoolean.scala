@@ -61,8 +61,7 @@ trait WebglextensionsBoolean
 }
 object WebglextensionsBoolean {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ANGLE_instanced_arrays: scala.Boolean,
     EXT_blend_minmax: scala.Boolean,
     EXT_disjoint_timer_query: scala.Boolean,
@@ -93,82 +92,56 @@ object WebglextensionsBoolean {
     __obj.asInstanceOf[WebglextensionsBoolean]
   }
   
-  @scala.inline
-  implicit class WebglextensionsBooleanMutableBuilder[Self <: WebglextensionsBoolean] (val x: Self) extends AnyVal {
+  extension [Self <: WebglextensionsBoolean](x: Self) {
     
-    @scala.inline
-    def setANGLE_instanced_arrays(value: scala.Boolean): Self = StObject.set(x, "ANGLE_instanced_arrays", value.asInstanceOf[js.Any])
+    inline def setANGLE_instanced_arrays(value: scala.Boolean): Self = StObject.set(x, "ANGLE_instanced_arrays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEXT_blend_minmax(value: scala.Boolean): Self = StObject.set(x, "EXT_blend_minmax", value.asInstanceOf[js.Any])
+    inline def setEXT_blend_minmax(value: scala.Boolean): Self = StObject.set(x, "EXT_blend_minmax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEXT_disjoint_timer_query(value: scala.Boolean): Self = StObject.set(x, "EXT_disjoint_timer_query", value.asInstanceOf[js.Any])
+    inline def setEXT_disjoint_timer_query(value: scala.Boolean): Self = StObject.set(x, "EXT_disjoint_timer_query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEXT_frag_depth(value: scala.Boolean): Self = StObject.set(x, "EXT_frag_depth", value.asInstanceOf[js.Any])
+    inline def setEXT_frag_depth(value: scala.Boolean): Self = StObject.set(x, "EXT_frag_depth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEXT_sRGB(value: scala.Boolean): Self = StObject.set(x, "EXT_sRGB", value.asInstanceOf[js.Any])
+    inline def setEXT_sRGB(value: scala.Boolean): Self = StObject.set(x, "EXT_sRGB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEXT_shader_texture_lod(value: scala.Boolean): Self = StObject.set(x, "EXT_shader_texture_lod", value.asInstanceOf[js.Any])
+    inline def setEXT_shader_texture_lod(value: scala.Boolean): Self = StObject.set(x, "EXT_shader_texture_lod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEXT_texture_filter_anisotropic(value: scala.Boolean): Self = StObject.set(x, "EXT_texture_filter_anisotropic", value.asInstanceOf[js.Any])
+    inline def setEXT_texture_filter_anisotropic(value: scala.Boolean): Self = StObject.set(x, "EXT_texture_filter_anisotropic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOES_element_index_uint(value: scala.Boolean): Self = StObject.set(x, "OES_element_index_uint", value.asInstanceOf[js.Any])
+    inline def setOES_element_index_uint(value: scala.Boolean): Self = StObject.set(x, "OES_element_index_uint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOES_standard_derivatives(value: scala.Boolean): Self = StObject.set(x, "OES_standard_derivatives", value.asInstanceOf[js.Any])
+    inline def setOES_standard_derivatives(value: scala.Boolean): Self = StObject.set(x, "OES_standard_derivatives", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOES_texture_float(value: scala.Boolean): Self = StObject.set(x, "OES_texture_float", value.asInstanceOf[js.Any])
+    inline def setOES_texture_float(value: scala.Boolean): Self = StObject.set(x, "OES_texture_float", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOES_texture_float_linear(value: scala.Boolean): Self = StObject.set(x, "OES_texture_float_linear", value.asInstanceOf[js.Any])
+    inline def setOES_texture_float_linear(value: scala.Boolean): Self = StObject.set(x, "OES_texture_float_linear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOES_texture_half_float(value: scala.Boolean): Self = StObject.set(x, "OES_texture_half_float", value.asInstanceOf[js.Any])
+    inline def setOES_texture_half_float(value: scala.Boolean): Self = StObject.set(x, "OES_texture_half_float", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOES_texture_half_float_linear(value: scala.Boolean): Self = StObject.set(x, "OES_texture_half_float_linear", value.asInstanceOf[js.Any])
+    inline def setOES_texture_half_float_linear(value: scala.Boolean): Self = StObject.set(x, "OES_texture_half_float_linear", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOES_vertex_array_object(value: scala.Boolean): Self = StObject.set(x, "OES_vertex_array_object", value.asInstanceOf[js.Any])
+    inline def setOES_vertex_array_object(value: scala.Boolean): Self = StObject.set(x, "OES_vertex_array_object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWEBGL_compressed_texture_etc1(value: scala.Boolean): Self = StObject.set(x, "WEBGL_compressed_texture_etc1", value.asInstanceOf[js.Any])
+    inline def setWEBGL_compressed_texture_etc1(value: scala.Boolean): Self = StObject.set(x, "WEBGL_compressed_texture_etc1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWEBGL_compressed_texture_s3tc(value: scala.Boolean): Self = StObject.set(x, "WEBGL_compressed_texture_s3tc", value.asInstanceOf[js.Any])
+    inline def setWEBGL_compressed_texture_s3tc(value: scala.Boolean): Self = StObject.set(x, "WEBGL_compressed_texture_s3tc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWEBGL_debug_renderer_info(value: scala.Boolean): Self = StObject.set(x, "WEBGL_debug_renderer_info", value.asInstanceOf[js.Any])
+    inline def setWEBGL_debug_renderer_info(value: scala.Boolean): Self = StObject.set(x, "WEBGL_debug_renderer_info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWEBGL_debug_shaders(value: scala.Boolean): Self = StObject.set(x, "WEBGL_debug_shaders", value.asInstanceOf[js.Any])
+    inline def setWEBGL_debug_shaders(value: scala.Boolean): Self = StObject.set(x, "WEBGL_debug_shaders", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWEBGL_depth_texture(value: scala.Boolean): Self = StObject.set(x, "WEBGL_depth_texture", value.asInstanceOf[js.Any])
+    inline def setWEBGL_depth_texture(value: scala.Boolean): Self = StObject.set(x, "WEBGL_depth_texture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWEBGL_draw_buffers(value: scala.Boolean): Self = StObject.set(x, "WEBGL_draw_buffers", value.asInstanceOf[js.Any])
+    inline def setWEBGL_draw_buffers(value: scala.Boolean): Self = StObject.set(x, "WEBGL_draw_buffers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWEBGL_lose_context(value: scala.Boolean): Self = StObject.set(x, "WEBGL_lose_context", value.asInstanceOf[js.Any])
+    inline def setWEBGL_lose_context(value: scala.Boolean): Self = StObject.set(x, "WEBGL_lose_context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWEBKIT_EXT_texture_filter_anisotropic(value: scala.Boolean): Self = StObject.set(x, "WEBKIT_EXT_texture_filter_anisotropic", value.asInstanceOf[js.Any])
+    inline def setWEBKIT_EXT_texture_filter_anisotropic(value: scala.Boolean): Self = StObject.set(x, "WEBKIT_EXT_texture_filter_anisotropic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWEBKIT_WEBGL_compressed_texture_s3tc(value: scala.Boolean): Self = StObject.set(x, "WEBKIT_WEBGL_compressed_texture_s3tc", value.asInstanceOf[js.Any])
+    inline def setWEBKIT_WEBGL_compressed_texture_s3tc(value: scala.Boolean): Self = StObject.set(x, "WEBKIT_WEBGL_compressed_texture_s3tc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWEBKIT_WEBGL_depth_texture(value: scala.Boolean): Self = StObject.set(x, "WEBKIT_WEBGL_depth_texture", value.asInstanceOf[js.Any])
+    inline def setWEBKIT_WEBGL_depth_texture(value: scala.Boolean): Self = StObject.set(x, "WEBKIT_WEBGL_depth_texture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWEBKIT_WEBGL_lose_context(value: scala.Boolean): Self = StObject.set(x, "WEBKIT_WEBGL_lose_context", value.asInstanceOf[js.Any])
+    inline def setWEBKIT_WEBGL_lose_context(value: scala.Boolean): Self = StObject.set(x, "WEBKIT_WEBGL_lose_context", value.asInstanceOf[js.Any])
   }
 }

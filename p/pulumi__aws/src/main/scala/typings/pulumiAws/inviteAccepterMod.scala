@@ -50,21 +50,16 @@ object inviteAccepterMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): InviteAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[InviteAccepter]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): InviteAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[InviteAccepter]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: InviteAccepterState): InviteAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[InviteAccepter]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: InviteAccepterState, opts: CustomResourceOptions): InviteAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[InviteAccepter]
+    inline def get(name: String, id: Input[ID]): InviteAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[InviteAccepter]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): InviteAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[InviteAccepter]
+    inline def get(name: String, id: Input[ID], state: InviteAccepterState): InviteAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[InviteAccepter]
+    inline def get(name: String, id: Input[ID], state: InviteAccepterState, opts: CustomResourceOptions): InviteAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[InviteAccepter]
     
     /**
       * Returns true if the given object is an instance of InviteAccepter.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/inviteAccepter.InviteAccepter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/guardduty/inviteAccepter.InviteAccepter */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/inviteAccepter.InviteAccepter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/guardduty/inviteAccepter.InviteAccepter */ Boolean]
   }
   
   trait InviteAccepterArgs extends StObject {
@@ -81,20 +76,16 @@ object inviteAccepterMod {
   }
   object InviteAccepterArgs {
     
-    @scala.inline
-    def apply(detectorId: Input[String], masterAccountId: Input[String]): InviteAccepterArgs = {
+    inline def apply(detectorId: Input[String], masterAccountId: Input[String]): InviteAccepterArgs = {
       val __obj = js.Dynamic.literal(detectorId = detectorId.asInstanceOf[js.Any], masterAccountId = masterAccountId.asInstanceOf[js.Any])
       __obj.asInstanceOf[InviteAccepterArgs]
     }
     
-    @scala.inline
-    implicit class InviteAccepterArgsMutableBuilder[Self <: InviteAccepterArgs] (val x: Self) extends AnyVal {
+    extension [Self <: InviteAccepterArgs](x: Self) {
       
-      @scala.inline
-      def setDetectorId(value: Input[String]): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
+      inline def setDetectorId(value: Input[String]): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMasterAccountId(value: Input[String]): Self = StObject.set(x, "masterAccountId", value.asInstanceOf[js.Any])
+      inline def setMasterAccountId(value: Input[String]): Self = StObject.set(x, "masterAccountId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,26 +103,20 @@ object inviteAccepterMod {
   }
   object InviteAccepterState {
     
-    @scala.inline
-    def apply(): InviteAccepterState = {
+    inline def apply(): InviteAccepterState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InviteAccepterState]
     }
     
-    @scala.inline
-    implicit class InviteAccepterStateMutableBuilder[Self <: InviteAccepterState] (val x: Self) extends AnyVal {
+    extension [Self <: InviteAccepterState](x: Self) {
       
-      @scala.inline
-      def setDetectorId(value: Input[String]): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
+      inline def setDetectorId(value: Input[String]): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDetectorIdUndefined: Self = StObject.set(x, "detectorId", js.undefined)
+      inline def setDetectorIdUndefined: Self = StObject.set(x, "detectorId", js.undefined)
       
-      @scala.inline
-      def setMasterAccountId(value: Input[String]): Self = StObject.set(x, "masterAccountId", value.asInstanceOf[js.Any])
+      inline def setMasterAccountId(value: Input[String]): Self = StObject.set(x, "masterAccountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMasterAccountIdUndefined: Self = StObject.set(x, "masterAccountId", js.undefined)
+      inline def setMasterAccountIdUndefined: Self = StObject.set(x, "masterAccountId", js.undefined)
     }
   }
 }

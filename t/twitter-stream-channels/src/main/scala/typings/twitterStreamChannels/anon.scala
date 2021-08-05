@@ -12,17 +12,14 @@ object anon {
   }
   object RemoveAllListeners {
     
-    @scala.inline
-    def apply(removeAllListeners: Boolean): RemoveAllListeners = {
+    inline def apply(removeAllListeners: Boolean): RemoveAllListeners = {
       val __obj = js.Dynamic.literal(removeAllListeners = removeAllListeners.asInstanceOf[js.Any])
       __obj.asInstanceOf[RemoveAllListeners]
     }
     
-    @scala.inline
-    implicit class RemoveAllListenersMutableBuilder[Self <: RemoveAllListeners] (val x: Self) extends AnyVal {
+    extension [Self <: RemoveAllListeners](x: Self) {
       
-      @scala.inline
-      def setRemoveAllListeners(value: Boolean): Self = StObject.set(x, "removeAllListeners", value.asInstanceOf[js.Any])
+      inline def setRemoveAllListeners(value: Boolean): Self = StObject.set(x, "removeAllListeners", value.asInstanceOf[js.Any])
     }
   }
 }

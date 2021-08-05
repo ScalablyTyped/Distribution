@@ -20,22 +20,17 @@ trait ManipulationStartedEventArgs extends StObject {
 }
 object ManipulationStartedEventArgs {
   
-  @scala.inline
-  def apply(cumulative: ManipulationDelta, pointerDeviceType: PointerDeviceType, position: Point): ManipulationStartedEventArgs = {
+  inline def apply(cumulative: ManipulationDelta, pointerDeviceType: PointerDeviceType, position: Point): ManipulationStartedEventArgs = {
     val __obj = js.Dynamic.literal(cumulative = cumulative.asInstanceOf[js.Any], pointerDeviceType = pointerDeviceType.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[ManipulationStartedEventArgs]
   }
   
-  @scala.inline
-  implicit class ManipulationStartedEventArgsMutableBuilder[Self <: ManipulationStartedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ManipulationStartedEventArgs](x: Self) {
     
-    @scala.inline
-    def setCumulative(value: ManipulationDelta): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
+    inline def setCumulative(value: ManipulationDelta): Self = StObject.set(x, "cumulative", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointerDeviceType(value: PointerDeviceType): Self = StObject.set(x, "pointerDeviceType", value.asInstanceOf[js.Any])
+    inline def setPointerDeviceType(value: PointerDeviceType): Self = StObject.set(x, "pointerDeviceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Point): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

@@ -24,22 +24,18 @@ object anon {
   }
   object Cb {
     
-    @scala.inline
-    def apply(): Cb = {
+    inline def apply(): Cb = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Cb]
     }
     
-    @scala.inline
-    implicit class CbMutableBuilder[Self <: Cb] (val x: Self) extends AnyVal {
+    extension [Self <: Cb](x: Self) {
       
-      @scala.inline
-      def setCb(
+      inline def setCb(
         value: (/* index */ Double, /* success */ Boolean, /* result */ js.Any, /* delay */ Double) => js.Any
       ): Self = StObject.set(x, "cb", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setCbUndefined: Self = StObject.set(x, "cb", js.undefined)
+      inline def setCbUndefined: Self = StObject.set(x, "cb", js.undefined)
     }
   }
   
@@ -51,26 +47,20 @@ object anon {
   }
   object Dest {
     
-    @scala.inline
-    def apply(): Dest = {
+    inline def apply(): Dest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Dest]
     }
     
-    @scala.inline
-    implicit class DestMutableBuilder[Self <: Dest] (val x: Self) extends AnyVal {
+    extension [Self <: Dest](x: Self) {
       
-      @scala.inline
-      def setDest(value: (/* index */ Double, /* data */ js.Any, /* delay */ Double) => js.Any): Self = StObject.set(x, "dest", js.Any.fromFunction3(value))
+      inline def setDest(value: (/* index */ Double, /* data */ js.Any, /* delay */ Double) => js.Any): Self = StObject.set(x, "dest", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDestUndefined: Self = StObject.set(x, "dest", js.undefined)
+      inline def setDestUndefined: Self = StObject.set(x, "dest", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     }
   }
   
@@ -84,32 +74,24 @@ object anon {
   }
   object Limit {
     
-    @scala.inline
-    def apply(): Limit = {
+    inline def apply(): Limit = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Limit]
     }
     
-    @scala.inline
-    implicit class LimitMutableBuilder[Self <: Limit] (val x: Self) extends AnyVal {
+    extension [Self <: Limit](x: Self) {
       
-      @scala.inline
-      def setDest(value: (/* index */ Double, /* data */ js.Any, /* delay */ Double) => js.Any): Self = StObject.set(x, "dest", js.Any.fromFunction3(value))
+      inline def setDest(value: (/* index */ Double, /* data */ js.Any, /* delay */ Double) => js.Any): Self = StObject.set(x, "dest", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDestUndefined: Self = StObject.set(x, "dest", js.undefined)
+      inline def setDestUndefined: Self = StObject.set(x, "dest", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setTrack(value: Boolean): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
+      inline def setTrack(value: Boolean): Self = StObject.set(x, "track", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
+      inline def setTrackUndefined: Self = StObject.set(x, "track", js.undefined)
     }
   }
   
@@ -126,8 +108,7 @@ object anon {
   }
   object Typeoferrors {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       BatchError: Instantiable0[BatchError],
       PageError: Instantiable0[PageError],
       SequenceError: Instantiable0[SequenceError]
@@ -136,17 +117,13 @@ object anon {
       __obj.asInstanceOf[Typeoferrors]
     }
     
-    @scala.inline
-    implicit class TypeoferrorsMutableBuilder[Self <: Typeoferrors] (val x: Self) extends AnyVal {
+    extension [Self <: Typeoferrors](x: Self) {
       
-      @scala.inline
-      def setBatchError(value: Instantiable0[BatchError]): Self = StObject.set(x, "BatchError", value.asInstanceOf[js.Any])
+      inline def setBatchError(value: Instantiable0[BatchError]): Self = StObject.set(x, "BatchError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageError(value: Instantiable0[PageError]): Self = StObject.set(x, "PageError", value.asInstanceOf[js.Any])
+      inline def setPageError(value: Instantiable0[PageError]): Self = StObject.set(x, "PageError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSequenceError(value: Instantiable0[SequenceError]): Self = StObject.set(x, "SequenceError", value.asInstanceOf[js.Any])
+      inline def setSequenceError(value: Instantiable0[SequenceError]): Self = StObject.set(x, "SequenceError", value.asInstanceOf[js.Any])
     }
   }
 }

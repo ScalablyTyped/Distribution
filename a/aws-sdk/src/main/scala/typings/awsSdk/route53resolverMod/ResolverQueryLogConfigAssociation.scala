@@ -43,55 +43,39 @@ trait ResolverQueryLogConfigAssociation extends StObject {
 }
 object ResolverQueryLogConfigAssociation {
   
-  @scala.inline
-  def apply(): ResolverQueryLogConfigAssociation = {
+  inline def apply(): ResolverQueryLogConfigAssociation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResolverQueryLogConfigAssociation]
   }
   
-  @scala.inline
-  implicit class ResolverQueryLogConfigAssociationMutableBuilder[Self <: ResolverQueryLogConfigAssociation] (val x: Self) extends AnyVal {
+  extension [Self <: ResolverQueryLogConfigAssociation](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: Rfc3339TimeString): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Rfc3339TimeString): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
+    inline def setCreationTimeUndefined: Self = StObject.set(x, "CreationTime", js.undefined)
     
-    @scala.inline
-    def setError(value: ResolverQueryLogConfigAssociationError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
+    inline def setError(value: ResolverQueryLogConfigAssociationError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessage(value: ResolverQueryLogConfigAssociationErrorMessage): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: ResolverQueryLogConfigAssociationErrorMessage): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
     
-    @scala.inline
-    def setId(value: ResourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: ResourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setResolverQueryLogConfigId(value: ResourceId): Self = StObject.set(x, "ResolverQueryLogConfigId", value.asInstanceOf[js.Any])
+    inline def setResolverQueryLogConfigId(value: ResourceId): Self = StObject.set(x, "ResolverQueryLogConfigId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolverQueryLogConfigIdUndefined: Self = StObject.set(x, "ResolverQueryLogConfigId", js.undefined)
+    inline def setResolverQueryLogConfigIdUndefined: Self = StObject.set(x, "ResolverQueryLogConfigId", js.undefined)
     
-    @scala.inline
-    def setResourceId(value: ResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ResolverQueryLogConfigAssociationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ResolverQueryLogConfigAssociationStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

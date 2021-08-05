@@ -67,70 +67,49 @@ trait SchemaSubscription extends StObject {
 }
 object SchemaSubscription {
   
-  @scala.inline
-  def apply(): SchemaSubscription = {
+  inline def apply(): SchemaSubscription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSubscription]
   }
   
-  @scala.inline
-  implicit class SchemaSubscriptionMutableBuilder[Self <: SchemaSubscription] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSubscription](x: Self) {
     
-    @scala.inline
-    def setCallbackUrl(value: String): Self = StObject.set(x, "callbackUrl", value.asInstanceOf[js.Any])
+    inline def setCallbackUrl(value: String): Self = StObject.set(x, "callbackUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackUrlUndefined: Self = StObject.set(x, "callbackUrl", js.undefined)
+    inline def setCallbackUrlUndefined: Self = StObject.set(x, "callbackUrl", js.undefined)
     
-    @scala.inline
-    def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+    inline def setCollection(value: String): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
+    inline def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNotification(value: SchemaNotification): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
+    inline def setNotification(value: SchemaNotification): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
+    inline def setNotificationUndefined: Self = StObject.set(x, "notification", js.undefined)
     
-    @scala.inline
-    def setOperation(value: js.Array[String]): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: js.Array[String]): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
+    inline def setOperationUndefined: Self = StObject.set(x, "operation", js.undefined)
     
-    @scala.inline
-    def setOperationVarargs(value: String*): Self = StObject.set(x, "operation", js.Array(value :_*))
+    inline def setOperationVarargs(value: String*): Self = StObject.set(x, "operation", js.Array(value :_*))
     
-    @scala.inline
-    def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
+    inline def setUpdated(value: String): Self = StObject.set(x, "updated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
+    inline def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
     
-    @scala.inline
-    def setUserToken(value: String): Self = StObject.set(x, "userToken", value.asInstanceOf[js.Any])
+    inline def setUserToken(value: String): Self = StObject.set(x, "userToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserTokenUndefined: Self = StObject.set(x, "userToken", js.undefined)
+    inline def setUserTokenUndefined: Self = StObject.set(x, "userToken", js.undefined)
     
-    @scala.inline
-    def setVerifyToken(value: String): Self = StObject.set(x, "verifyToken", value.asInstanceOf[js.Any])
+    inline def setVerifyToken(value: String): Self = StObject.set(x, "verifyToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerifyTokenUndefined: Self = StObject.set(x, "verifyToken", js.undefined)
+    inline def setVerifyTokenUndefined: Self = StObject.set(x, "verifyToken", js.undefined)
   }
 }

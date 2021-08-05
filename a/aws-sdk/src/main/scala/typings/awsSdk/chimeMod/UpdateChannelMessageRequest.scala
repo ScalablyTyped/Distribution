@@ -28,31 +28,23 @@ trait UpdateChannelMessageRequest extends StObject {
 }
 object UpdateChannelMessageRequest {
   
-  @scala.inline
-  def apply(ChannelArn: ChimeArn, MessageId: MessageId): UpdateChannelMessageRequest = {
+  inline def apply(ChannelArn: ChimeArn, MessageId: MessageId): UpdateChannelMessageRequest = {
     val __obj = js.Dynamic.literal(ChannelArn = ChannelArn.asInstanceOf[js.Any], MessageId = MessageId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateChannelMessageRequest]
   }
   
-  @scala.inline
-  implicit class UpdateChannelMessageRequestMutableBuilder[Self <: UpdateChannelMessageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateChannelMessageRequest](x: Self) {
     
-    @scala.inline
-    def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
+    inline def setChannelArn(value: ChimeArn): Self = StObject.set(x, "ChannelArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent(value: Content): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    inline def setContent(value: Content): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "Content", js.undefined)
     
-    @scala.inline
-    def setMessageId(value: MessageId): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
+    inline def setMessageId(value: MessageId): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: Metadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: Metadata): Self = StObject.set(x, "Metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "Metadata", js.undefined)
   }
 }

@@ -15,16 +15,13 @@ trait ProxyData
 }
 object ProxyData {
   
-  @scala.inline
-  def apply(target: Object): ProxyData = {
+  inline def apply(target: Object): ProxyData = {
     val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProxyData]
   }
   
-  @scala.inline
-  implicit class ProxyDataMutableBuilder[Self <: ProxyData] (val x: Self) extends AnyVal {
+  extension [Self <: ProxyData](x: Self) {
     
-    @scala.inline
-    def setTarget(value: Object): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Object): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

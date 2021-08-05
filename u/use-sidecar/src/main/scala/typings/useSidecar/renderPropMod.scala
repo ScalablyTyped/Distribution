@@ -13,10 +13,8 @@ object renderPropMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def renderCar[T /* <: js.Array[js.Any] */, K](WrappedComponent: RenderPropComponent[T, K], defaults: js.Function1[/* props */ K, T]): js.Function1[/* props */ CombinedProps[T, K], Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderCar")(WrappedComponent.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ CombinedProps[T, K], Element]]
-  @scala.inline
-  def renderCar[T /* <: js.Array[js.Any] */, K](
+  inline def renderCar[T /* <: js.Array[js.Any] */, K](WrappedComponent: RenderPropComponent[T, K], defaults: js.Function1[/* props */ K, T]): js.Function1[/* props */ CombinedProps[T, K], Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderCar")(WrappedComponent.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* props */ CombinedProps[T, K], Element]]
+  inline def renderCar[T /* <: js.Array[js.Any] */, K](
     WrappedComponent: RenderPropComponent[T, K],
     defaults: js.Function1[/* props */ K, T],
     options: Options
@@ -30,20 +28,16 @@ object renderPropMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setPure(value: Boolean): Self = StObject.set(x, "pure", value.asInstanceOf[js.Any])
+      inline def setPure(value: Boolean): Self = StObject.set(x, "pure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPureUndefined: Self = StObject.set(x, "pure", js.undefined)
+      inline def setPureUndefined: Self = StObject.set(x, "pure", js.undefined)
     }
   }
   

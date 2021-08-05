@@ -18,22 +18,17 @@ trait Responsedataundefined
 }
 object Responsedataundefined {
   
-  @scala.inline
-  def apply(data: js.UndefOr[js.Any] & Unit, message: String, status: Boolean): Responsedataundefined = {
+  inline def apply(data: js.UndefOr[js.Any] & Unit, message: String, status: Boolean): Responsedataundefined = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Responsedataundefined]
   }
   
-  @scala.inline
-  implicit class ResponsedataundefinedMutableBuilder[Self <: Responsedataundefined] (val x: Self) extends AnyVal {
+  extension [Self <: Responsedataundefined](x: Self) {
     
-    @scala.inline
-    def setData(value: js.UndefOr[js.Any] & Unit): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.UndefOr[js.Any] & Unit): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

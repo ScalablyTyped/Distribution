@@ -10,8 +10,7 @@ trait DocumentLinkRegistrationOptions
      with DocumentLinkOptions
 object DocumentLinkRegistrationOptions {
   
-  @scala.inline
-  def apply(): DocumentLinkRegistrationOptions = {
+  inline def apply(): DocumentLinkRegistrationOptions = {
     val __obj = js.Dynamic.literal(documentSelector = null)
     __obj.asInstanceOf[DocumentLinkRegistrationOptions]
   }

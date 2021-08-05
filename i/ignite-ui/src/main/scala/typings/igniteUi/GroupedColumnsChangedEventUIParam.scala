@@ -38,52 +38,37 @@ trait GroupedColumnsChangedEventUIParam extends StObject {
 }
 object GroupedColumnsChangedEventUIParam {
   
-  @scala.inline
-  def apply(): GroupedColumnsChangedEventUIParam = {
+  inline def apply(): GroupedColumnsChangedEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GroupedColumnsChangedEventUIParam]
   }
   
-  @scala.inline
-  implicit class GroupedColumnsChangedEventUIParamMutableBuilder[Self <: GroupedColumnsChangedEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: GroupedColumnsChangedEventUIParam](x: Self) {
     
-    @scala.inline
-    def setGrid(value: js.Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
+    inline def setGrid(value: js.Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
+    inline def setGridUndefined: Self = StObject.set(x, "grid", js.undefined)
     
-    @scala.inline
-    def setGroupedColumns(value: js.Array[js.Any]): Self = StObject.set(x, "groupedColumns", value.asInstanceOf[js.Any])
+    inline def setGroupedColumns(value: js.Array[js.Any]): Self = StObject.set(x, "groupedColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupedColumnsUndefined: Self = StObject.set(x, "groupedColumns", js.undefined)
+    inline def setGroupedColumnsUndefined: Self = StObject.set(x, "groupedColumns", js.undefined)
     
-    @scala.inline
-    def setGroupedColumnsVarargs(value: js.Any*): Self = StObject.set(x, "groupedColumns", js.Array(value :_*))
+    inline def setGroupedColumnsVarargs(value: js.Any*): Self = StObject.set(x, "groupedColumns", js.Array(value :_*))
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setLayout(value: js.Any): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: js.Any): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setTriggeredBy(value: String): Self = StObject.set(x, "triggeredBy", value.asInstanceOf[js.Any])
+    inline def setTriggeredBy(value: String): Self = StObject.set(x, "triggeredBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggeredByUndefined: Self = StObject.set(x, "triggeredBy", js.undefined)
+    inline def setTriggeredByUndefined: Self = StObject.set(x, "triggeredBy", js.undefined)
   }
 }

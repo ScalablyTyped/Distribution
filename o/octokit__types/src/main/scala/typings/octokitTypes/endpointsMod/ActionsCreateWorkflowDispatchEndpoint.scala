@@ -24,31 +24,23 @@ trait ActionsCreateWorkflowDispatchEndpoint extends StObject {
 }
 object ActionsCreateWorkflowDispatchEndpoint {
   
-  @scala.inline
-  def apply(owner: String, ref: String, repo: String, workflow_id: Double): ActionsCreateWorkflowDispatchEndpoint = {
+  inline def apply(owner: String, ref: String, repo: String, workflow_id: Double): ActionsCreateWorkflowDispatchEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], workflow_id = workflow_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionsCreateWorkflowDispatchEndpoint]
   }
   
-  @scala.inline
-  implicit class ActionsCreateWorkflowDispatchEndpointMutableBuilder[Self <: ActionsCreateWorkflowDispatchEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ActionsCreateWorkflowDispatchEndpoint](x: Self) {
     
-    @scala.inline
-    def setInputs(value: ActionsCreateWorkflowDispatchParamsInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: ActionsCreateWorkflowDispatchParamsInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
+    inline def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    inline def setRef(value: String): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkflow_id(value: Double): Self = StObject.set(x, "workflow_id", value.asInstanceOf[js.Any])
+    inline def setWorkflow_id(value: Double): Self = StObject.set(x, "workflow_id", value.asInstanceOf[js.Any])
   }
 }

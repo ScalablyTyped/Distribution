@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Axis extends StObject
 object Axis {
   
-  @scala.inline
-  def HorizontalAxis(): typings.reactBeautifulDnd.mod.HorizontalAxis = {
+  inline def HorizontalAxis(): typings.reactBeautifulDnd.mod.HorizontalAxis = {
     val __obj = js.Dynamic.literal(crossAxisEnd = "bottom", crossAxisLine = "y", crossAxisSize = "height", crossAxisStart = "top", direction = "horizontal", end = "right", line = "x", size = "width", start = "left")
     __obj.asInstanceOf[typings.reactBeautifulDnd.mod.HorizontalAxis]
   }
   
-  @scala.inline
-  def VerticalAxis(): typings.reactBeautifulDnd.mod.VerticalAxis = {
+  inline def VerticalAxis(): typings.reactBeautifulDnd.mod.VerticalAxis = {
     val __obj = js.Dynamic.literal(crossAxisEnd = "right", crossAxisLine = "x", crossAxisSize = "width", crossAxisStart = "left", direction = "vertical", end = "bottom", line = "y", size = "height", start = "top")
     __obj.asInstanceOf[typings.reactBeautifulDnd.mod.VerticalAxis]
   }

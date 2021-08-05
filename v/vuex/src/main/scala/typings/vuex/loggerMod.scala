@@ -12,10 +12,8 @@ object loggerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[S](): Plugin[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Plugin[S]]
-  @scala.inline
-  def default[S](option: LoggerOption[S]): Plugin[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(option.asInstanceOf[js.Any]).asInstanceOf[Plugin[S]]
+  inline def default[S](): Plugin[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Plugin[S]]
+  inline def default[S](option: LoggerOption[S]): Plugin[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(option.asInstanceOf[js.Any]).asInstanceOf[Plugin[S]]
   
   trait LoggerOption[S] extends StObject {
     
@@ -39,62 +37,44 @@ object loggerMod {
   }
   object LoggerOption {
     
-    @scala.inline
-    def apply[S](): LoggerOption[S] = {
+    inline def apply[S](): LoggerOption[S] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LoggerOption[S]]
     }
     
-    @scala.inline
-    implicit class LoggerOptionMutableBuilder[Self <: LoggerOption[?], S] (val x: Self & LoggerOption[S]) extends AnyVal {
+    extension [Self <: LoggerOption[?], S](x: Self & LoggerOption[S]) {
       
-      @scala.inline
-      def setActionFilter(value: (/* action */ Payload, /* state */ S) => Boolean): Self = StObject.set(x, "actionFilter", js.Any.fromFunction2(value))
+      inline def setActionFilter(value: (/* action */ Payload, /* state */ S) => Boolean): Self = StObject.set(x, "actionFilter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setActionFilterUndefined: Self = StObject.set(x, "actionFilter", js.undefined)
+      inline def setActionFilterUndefined: Self = StObject.set(x, "actionFilter", js.undefined)
       
-      @scala.inline
-      def setActionTransformer(value: /* action */ Payload => js.Any): Self = StObject.set(x, "actionTransformer", js.Any.fromFunction1(value))
+      inline def setActionTransformer(value: /* action */ Payload => js.Any): Self = StObject.set(x, "actionTransformer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setActionTransformerUndefined: Self = StObject.set(x, "actionTransformer", js.undefined)
+      inline def setActionTransformerUndefined: Self = StObject.set(x, "actionTransformer", js.undefined)
       
-      @scala.inline
-      def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
+      inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
+      inline def setCollapsedUndefined: Self = StObject.set(x, "collapsed", js.undefined)
       
-      @scala.inline
-      def setFilter(value: (/* mutation */ Payload, /* stateBefore */ S, /* stateAfter */ S) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction3(value))
+      inline def setFilter(value: (/* mutation */ Payload, /* stateBefore */ S, /* stateAfter */ S) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setLogActions(value: Boolean): Self = StObject.set(x, "logActions", value.asInstanceOf[js.Any])
+      inline def setLogActions(value: Boolean): Self = StObject.set(x, "logActions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogActionsUndefined: Self = StObject.set(x, "logActions", js.undefined)
+      inline def setLogActionsUndefined: Self = StObject.set(x, "logActions", js.undefined)
       
-      @scala.inline
-      def setLogMutations(value: Boolean): Self = StObject.set(x, "logMutations", value.asInstanceOf[js.Any])
+      inline def setLogMutations(value: Boolean): Self = StObject.set(x, "logMutations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogMutationsUndefined: Self = StObject.set(x, "logMutations", js.undefined)
+      inline def setLogMutationsUndefined: Self = StObject.set(x, "logMutations", js.undefined)
       
-      @scala.inline
-      def setMutationTransformer(value: /* mutation */ Payload => js.Any): Self = StObject.set(x, "mutationTransformer", js.Any.fromFunction1(value))
+      inline def setMutationTransformer(value: /* mutation */ Payload => js.Any): Self = StObject.set(x, "mutationTransformer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMutationTransformerUndefined: Self = StObject.set(x, "mutationTransformer", js.undefined)
+      inline def setMutationTransformerUndefined: Self = StObject.set(x, "mutationTransformer", js.undefined)
       
-      @scala.inline
-      def setTransformer(value: /* state */ S => js.Any): Self = StObject.set(x, "transformer", js.Any.fromFunction1(value))
+      inline def setTransformer(value: /* state */ S => js.Any): Self = StObject.set(x, "transformer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTransformerUndefined: Self = StObject.set(x, "transformer", js.undefined)
+      inline def setTransformerUndefined: Self = StObject.set(x, "transformer", js.undefined)
     }
   }
 }

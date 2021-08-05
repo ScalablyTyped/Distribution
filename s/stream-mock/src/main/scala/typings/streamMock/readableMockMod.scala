@@ -23,7 +23,7 @@ object readableMockMod {
   @js.native
   trait ReadableMock extends IReadableMock {
     
-    var _readableState: js.Any = js.native
+    /* private */ var _readableState: js.Any = js.native
     
     var encoding: BufferEncoding = js.native
     

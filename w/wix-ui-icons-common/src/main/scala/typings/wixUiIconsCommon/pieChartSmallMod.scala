@@ -22,20 +22,16 @@ object pieChartSmallMod extends Shortcut {
   }
   object PieChartSmallProps {
     
-    @scala.inline
-    def apply(): PieChartSmallProps = {
+    inline def apply(): PieChartSmallProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PieChartSmallProps]
     }
     
-    @scala.inline
-    implicit class PieChartSmallPropsMutableBuilder[Self <: PieChartSmallProps] (val x: Self) extends AnyVal {
+    extension [Self <: PieChartSmallProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

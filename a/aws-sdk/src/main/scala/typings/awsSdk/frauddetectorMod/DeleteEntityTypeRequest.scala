@@ -13,16 +13,13 @@ trait DeleteEntityTypeRequest extends StObject {
 }
 object DeleteEntityTypeRequest {
   
-  @scala.inline
-  def apply(name: identifier): DeleteEntityTypeRequest = {
+  inline def apply(name: identifier): DeleteEntityTypeRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteEntityTypeRequest]
   }
   
-  @scala.inline
-  implicit class DeleteEntityTypeRequestMutableBuilder[Self <: DeleteEntityTypeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteEntityTypeRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: identifier): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: identifier): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

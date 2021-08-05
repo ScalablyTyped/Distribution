@@ -12,19 +12,15 @@ trait BuildingSceneLayerLayerviewCreateErrorEvent extends StObject {
 }
 object BuildingSceneLayerLayerviewCreateErrorEvent {
   
-  @scala.inline
-  def apply(error: Error, view: View): BuildingSceneLayerLayerviewCreateErrorEvent = {
+  inline def apply(error: Error, view: View): BuildingSceneLayerLayerviewCreateErrorEvent = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
     __obj.asInstanceOf[BuildingSceneLayerLayerviewCreateErrorEvent]
   }
   
-  @scala.inline
-  implicit class BuildingSceneLayerLayerviewCreateErrorEventMutableBuilder[Self <: BuildingSceneLayerLayerviewCreateErrorEvent] (val x: Self) extends AnyVal {
+  extension [Self <: BuildingSceneLayerLayerviewCreateErrorEvent](x: Self) {
     
-    @scala.inline
-    def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

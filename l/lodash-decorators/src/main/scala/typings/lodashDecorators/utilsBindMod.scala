@@ -10,6 +10,5 @@ object utilsBindMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def bind(fn: js.Function, context: js.Any): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(fn.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Function]
+  inline def bind(fn: js.Function, context: js.Any): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(fn.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Function]
 }

@@ -12,19 +12,15 @@ trait IPickerClosingEventArgs extends StObject {
 }
 object IPickerClosingEventArgs {
   
-  @scala.inline
-  def apply(closingOperation: PickerClosingOperation, isCanceled: Boolean): IPickerClosingEventArgs = {
+  inline def apply(closingOperation: PickerClosingOperation, isCanceled: Boolean): IPickerClosingEventArgs = {
     val __obj = js.Dynamic.literal(closingOperation = closingOperation.asInstanceOf[js.Any], isCanceled = isCanceled.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPickerClosingEventArgs]
   }
   
-  @scala.inline
-  implicit class IPickerClosingEventArgsMutableBuilder[Self <: IPickerClosingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IPickerClosingEventArgs](x: Self) {
     
-    @scala.inline
-    def setClosingOperation(value: PickerClosingOperation): Self = StObject.set(x, "closingOperation", value.asInstanceOf[js.Any])
+    inline def setClosingOperation(value: PickerClosingOperation): Self = StObject.set(x, "closingOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsCanceled(value: Boolean): Self = StObject.set(x, "isCanceled", value.asInstanceOf[js.Any])
+    inline def setIsCanceled(value: Boolean): Self = StObject.set(x, "isCanceled", value.asInstanceOf[js.Any])
   }
 }

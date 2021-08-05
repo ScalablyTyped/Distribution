@@ -14,16 +14,13 @@ trait Cordova extends StObject {
 }
 object Cordova {
   
-  @scala.inline
-  def apply(file: ApplicationDirectory): Cordova = {
+  inline def apply(file: ApplicationDirectory): Cordova = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cordova]
   }
   
-  @scala.inline
-  implicit class CordovaMutableBuilder[Self <: Cordova] (val x: Self) extends AnyVal {
+  extension [Self <: Cordova](x: Self) {
     
-    @scala.inline
-    def setFile(value: ApplicationDirectory): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: ApplicationDirectory): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
   }
 }

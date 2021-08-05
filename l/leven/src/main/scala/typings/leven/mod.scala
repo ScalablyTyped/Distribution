@@ -16,8 +16,7 @@ object mod {
   	//=> 2
   	```
   	*/
-  @scala.inline
-  def apply(left: String, right: String): Double = (^.asInstanceOf[js.Dynamic].apply(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def apply(left: String, right: String): Double = (^.asInstanceOf[js.Dynamic].apply(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   @JSImport("leven", JSImport.Namespace)
   @js.native
@@ -41,8 +40,6 @@ object mod {
   // TODO: Remove this for the next major release, refactor the whole definition to:
   // declare function leven(left: string, right: string): number;
   // export = leven;
-  @scala.inline
-  def default(left: String, right: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default(left: String, right: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def default_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }

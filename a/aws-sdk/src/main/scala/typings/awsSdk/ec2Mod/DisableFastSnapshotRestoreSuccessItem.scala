@@ -63,79 +63,55 @@ trait DisableFastSnapshotRestoreSuccessItem extends StObject {
 }
 object DisableFastSnapshotRestoreSuccessItem {
   
-  @scala.inline
-  def apply(): DisableFastSnapshotRestoreSuccessItem = {
+  inline def apply(): DisableFastSnapshotRestoreSuccessItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DisableFastSnapshotRestoreSuccessItem]
   }
   
-  @scala.inline
-  implicit class DisableFastSnapshotRestoreSuccessItemMutableBuilder[Self <: DisableFastSnapshotRestoreSuccessItem] (val x: Self) extends AnyVal {
+  extension [Self <: DisableFastSnapshotRestoreSuccessItem](x: Self) {
     
-    @scala.inline
-    def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
+    inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
-    @scala.inline
-    def setDisabledTime(value: MillisecondDateTime): Self = StObject.set(x, "DisabledTime", value.asInstanceOf[js.Any])
+    inline def setDisabledTime(value: MillisecondDateTime): Self = StObject.set(x, "DisabledTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledTimeUndefined: Self = StObject.set(x, "DisabledTime", js.undefined)
+    inline def setDisabledTimeUndefined: Self = StObject.set(x, "DisabledTime", js.undefined)
     
-    @scala.inline
-    def setDisablingTime(value: MillisecondDateTime): Self = StObject.set(x, "DisablingTime", value.asInstanceOf[js.Any])
+    inline def setDisablingTime(value: MillisecondDateTime): Self = StObject.set(x, "DisablingTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisablingTimeUndefined: Self = StObject.set(x, "DisablingTime", js.undefined)
+    inline def setDisablingTimeUndefined: Self = StObject.set(x, "DisablingTime", js.undefined)
     
-    @scala.inline
-    def setEnabledTime(value: MillisecondDateTime): Self = StObject.set(x, "EnabledTime", value.asInstanceOf[js.Any])
+    inline def setEnabledTime(value: MillisecondDateTime): Self = StObject.set(x, "EnabledTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledTimeUndefined: Self = StObject.set(x, "EnabledTime", js.undefined)
+    inline def setEnabledTimeUndefined: Self = StObject.set(x, "EnabledTime", js.undefined)
     
-    @scala.inline
-    def setEnablingTime(value: MillisecondDateTime): Self = StObject.set(x, "EnablingTime", value.asInstanceOf[js.Any])
+    inline def setEnablingTime(value: MillisecondDateTime): Self = StObject.set(x, "EnablingTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnablingTimeUndefined: Self = StObject.set(x, "EnablingTime", js.undefined)
+    inline def setEnablingTimeUndefined: Self = StObject.set(x, "EnablingTime", js.undefined)
     
-    @scala.inline
-    def setOptimizingTime(value: MillisecondDateTime): Self = StObject.set(x, "OptimizingTime", value.asInstanceOf[js.Any])
+    inline def setOptimizingTime(value: MillisecondDateTime): Self = StObject.set(x, "OptimizingTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptimizingTimeUndefined: Self = StObject.set(x, "OptimizingTime", js.undefined)
+    inline def setOptimizingTimeUndefined: Self = StObject.set(x, "OptimizingTime", js.undefined)
     
-    @scala.inline
-    def setOwnerAlias(value: String): Self = StObject.set(x, "OwnerAlias", value.asInstanceOf[js.Any])
+    inline def setOwnerAlias(value: String): Self = StObject.set(x, "OwnerAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerAliasUndefined: Self = StObject.set(x, "OwnerAlias", js.undefined)
+    inline def setOwnerAliasUndefined: Self = StObject.set(x, "OwnerAlias", js.undefined)
     
-    @scala.inline
-    def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
+    inline def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
+    inline def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
     
-    @scala.inline
-    def setSnapshotId(value: String): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
+    inline def setSnapshotId(value: String): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotIdUndefined: Self = StObject.set(x, "SnapshotId", js.undefined)
+    inline def setSnapshotIdUndefined: Self = StObject.set(x, "SnapshotId", js.undefined)
     
-    @scala.inline
-    def setState(value: FastSnapshotRestoreStateCode): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: FastSnapshotRestoreStateCode): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateTransitionReason(value: String): Self = StObject.set(x, "StateTransitionReason", value.asInstanceOf[js.Any])
+    inline def setStateTransitionReason(value: String): Self = StObject.set(x, "StateTransitionReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateTransitionReasonUndefined: Self = StObject.set(x, "StateTransitionReason", js.undefined)
+    inline def setStateTransitionReasonUndefined: Self = StObject.set(x, "StateTransitionReason", js.undefined)
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
   }
 }

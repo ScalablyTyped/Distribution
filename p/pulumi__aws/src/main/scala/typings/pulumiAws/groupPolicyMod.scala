@@ -63,21 +63,16 @@ object groupPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): GroupPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[GroupPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): GroupPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GroupPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: GroupPolicyState): GroupPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[GroupPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: GroupPolicyState, opts: CustomResourceOptions): GroupPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GroupPolicy]
+    inline def get(name: String, id: Input[ID]): GroupPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[GroupPolicy]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): GroupPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GroupPolicy]
+    inline def get(name: String, id: Input[ID], state: GroupPolicyState): GroupPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[GroupPolicy]
+    inline def get(name: String, id: Input[ID], state: GroupPolicyState, opts: CustomResourceOptions): GroupPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GroupPolicy]
     
     /**
       * Returns true if the given object is an instance of GroupPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/groupPolicy.GroupPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/groupPolicy.GroupPolicy */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/groupPolicy.GroupPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/groupPolicy.GroupPolicy */ Boolean]
   }
   
   trait GroupPolicyArgs extends StObject {
@@ -106,32 +101,24 @@ object groupPolicyMod {
   }
   object GroupPolicyArgs {
     
-    @scala.inline
-    def apply(group: Input[String], policy: Input[String | PolicyDocument]): GroupPolicyArgs = {
+    inline def apply(group: Input[String], policy: Input[String | PolicyDocument]): GroupPolicyArgs = {
       val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any], policy = policy.asInstanceOf[js.Any])
       __obj.asInstanceOf[GroupPolicyArgs]
     }
     
-    @scala.inline
-    implicit class GroupPolicyArgsMutableBuilder[Self <: GroupPolicyArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GroupPolicyArgs](x: Self) {
       
-      @scala.inline
-      def setGroup(value: Input[String]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: Input[String]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
+      inline def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
+      inline def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPolicy(value: Input[String | PolicyDocument]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String | PolicyDocument]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     }
   }
   
@@ -161,38 +148,28 @@ object groupPolicyMod {
   }
   object GroupPolicyState {
     
-    @scala.inline
-    def apply(): GroupPolicyState = {
+    inline def apply(): GroupPolicyState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GroupPolicyState]
     }
     
-    @scala.inline
-    implicit class GroupPolicyStateMutableBuilder[Self <: GroupPolicyState] (val x: Self) extends AnyVal {
+    extension [Self <: GroupPolicyState](x: Self) {
       
-      @scala.inline
-      def setGroup(value: Input[String]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+      inline def setGroup(value: Input[String]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
+      inline def setGroupUndefined: Self = StObject.set(x, "group", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
+      inline def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
+      inline def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPolicy(value: Input[String | PolicyDocument]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String | PolicyDocument]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
     }
   }
 }

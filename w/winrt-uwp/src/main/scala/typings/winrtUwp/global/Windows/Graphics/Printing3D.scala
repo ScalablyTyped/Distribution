@@ -43,16 +43,14 @@ object Printing3D {
       * @return The 3D print manager.
       */
     /* static member */
-    @scala.inline
-    def getForCurrentView(): typings.winrtUwp.Windows.Graphics.Printing3D.Print3DManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.Graphics.Printing3D.Print3DManager]
+    inline def getForCurrentView(): typings.winrtUwp.Windows.Graphics.Printing3D.Print3DManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.Graphics.Printing3D.Print3DManager]
     
     /**
       * Programmatically initiates the 3D printing user interface.
       * @return true if the operation completes successfully; otherwise, false.
       */
     /* static member */
-    @scala.inline
-    def showPrintUIAsync(): IPromiseWithIAsyncOperation[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("showPrintUIAsync")().asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
+    inline def showPrintUIAsync(): IPromiseWithIAsyncOperation[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("showPrintUIAsync")().asInstanceOf[IPromiseWithIAsyncOperation[Boolean]]
   }
   
   /** Represents a 3D print job. */
@@ -236,8 +234,7 @@ object Printing3D {
       * @return A Printing3D3MFPackage created from the specified 3MF package stream.
       */
     /* static member */
-    @scala.inline
-    def loadAsync(value: IRandomAccessStream): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Graphics.Printing3D.Printing3D3MFPackage] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAsync")(value.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Graphics.Printing3D.Printing3D3MFPackage]]
+    inline def loadAsync(value: IRandomAccessStream): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Graphics.Printing3D.Printing3D3MFPackage] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadAsync")(value.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Graphics.Printing3D.Printing3D3MFPackage]]
   }
   
   /** Represents the base material used for manufacturing certain objects in the 3D model. */
@@ -267,16 +264,14 @@ object Printing3D {
     @JSGlobal("Windows.Graphics.Printing3D.Printing3DBaseMaterial.abs")
     @js.native
     def abs: String = js.native
-    @scala.inline
-    def abs_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("abs")(x.asInstanceOf[js.Any])
+    inline def abs_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("abs")(x.asInstanceOf[js.Any])
     
     /** Gets the name the polylactic acid (PLA) thermoplastic used in the base material. */
     /* static member */
     @JSGlobal("Windows.Graphics.Printing3D.Printing3DBaseMaterial.pla")
     @js.native
     def pla: String = js.native
-    @scala.inline
-    def pla_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pla")(x.asInstanceOf[js.Any])
+    inline def pla_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pla")(x.asInstanceOf[js.Any])
   }
   
   /** Represents a group of base materials used in the 3D model. */

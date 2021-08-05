@@ -59,8 +59,7 @@ trait INxTreeNode extends StObject {
 }
 object INxTreeNode {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qElemNo: Double,
     qNodeNr: Double,
     qNodes: INxTreeNode,
@@ -74,43 +73,30 @@ object INxTreeNode {
     __obj.asInstanceOf[INxTreeNode]
   }
   
-  @scala.inline
-  implicit class INxTreeNodeMutableBuilder[Self <: INxTreeNode] (val x: Self) extends AnyVal {
+  extension [Self <: INxTreeNode](x: Self) {
     
-    @scala.inline
-    def setQAttrDims(value: INxAttributeDimValues): Self = StObject.set(x, "qAttrDims", value.asInstanceOf[js.Any])
+    inline def setQAttrDims(value: INxAttributeDimValues): Self = StObject.set(x, "qAttrDims", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQAttrDimsUndefined: Self = StObject.set(x, "qAttrDims", js.undefined)
+    inline def setQAttrDimsUndefined: Self = StObject.set(x, "qAttrDims", js.undefined)
     
-    @scala.inline
-    def setQAttrExps(value: INxAttributeExpressionValues): Self = StObject.set(x, "qAttrExps", value.asInstanceOf[js.Any])
+    inline def setQAttrExps(value: INxAttributeExpressionValues): Self = StObject.set(x, "qAttrExps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQAttrExpsUndefined: Self = StObject.set(x, "qAttrExps", js.undefined)
+    inline def setQAttrExpsUndefined: Self = StObject.set(x, "qAttrExps", js.undefined)
     
-    @scala.inline
-    def setQElemNo(value: Double): Self = StObject.set(x, "qElemNo", value.asInstanceOf[js.Any])
+    inline def setQElemNo(value: Double): Self = StObject.set(x, "qElemNo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQNodeNr(value: Double): Self = StObject.set(x, "qNodeNr", value.asInstanceOf[js.Any])
+    inline def setQNodeNr(value: Double): Self = StObject.set(x, "qNodeNr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQNodes(value: INxTreeNode): Self = StObject.set(x, "qNodes", value.asInstanceOf[js.Any])
+    inline def setQNodes(value: INxTreeNode): Self = StObject.set(x, "qNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQParentNode(value: Double): Self = StObject.set(x, "qParentNode", value.asInstanceOf[js.Any])
+    inline def setQParentNode(value: Double): Self = StObject.set(x, "qParentNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQRow(value: Double): Self = StObject.set(x, "qRow", value.asInstanceOf[js.Any])
+    inline def setQRow(value: Double): Self = StObject.set(x, "qRow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
+    inline def setQText(value: String): Self = StObject.set(x, "qText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQType(value: NxTreeNodeType): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
+    inline def setQType(value: NxTreeNodeType): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQValues(value: INxTreeValue): Self = StObject.set(x, "qValues", value.asInstanceOf[js.Any])
+    inline def setQValues(value: INxTreeValue): Self = StObject.set(x, "qValues", value.asInstanceOf[js.Any])
   }
 }

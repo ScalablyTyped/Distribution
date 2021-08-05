@@ -28,8 +28,7 @@ trait GetMergeOptionsOutput extends StObject {
 }
 object GetMergeOptionsOutput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     baseCommitId: ObjectId,
     destinationCommitId: ObjectId,
     mergeOptions: MergeOptions,
@@ -39,22 +38,16 @@ object GetMergeOptionsOutput {
     __obj.asInstanceOf[GetMergeOptionsOutput]
   }
   
-  @scala.inline
-  implicit class GetMergeOptionsOutputMutableBuilder[Self <: GetMergeOptionsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetMergeOptionsOutput](x: Self) {
     
-    @scala.inline
-    def setBaseCommitId(value: ObjectId): Self = StObject.set(x, "baseCommitId", value.asInstanceOf[js.Any])
+    inline def setBaseCommitId(value: ObjectId): Self = StObject.set(x, "baseCommitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationCommitId(value: ObjectId): Self = StObject.set(x, "destinationCommitId", value.asInstanceOf[js.Any])
+    inline def setDestinationCommitId(value: ObjectId): Self = StObject.set(x, "destinationCommitId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeOptions(value: MergeOptions): Self = StObject.set(x, "mergeOptions", value.asInstanceOf[js.Any])
+    inline def setMergeOptions(value: MergeOptions): Self = StObject.set(x, "mergeOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergeOptionsVarargs(value: MergeOptionTypeEnum*): Self = StObject.set(x, "mergeOptions", js.Array(value :_*))
+    inline def setMergeOptionsVarargs(value: MergeOptionTypeEnum*): Self = StObject.set(x, "mergeOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setSourceCommitId(value: ObjectId): Self = StObject.set(x, "sourceCommitId", value.asInstanceOf[js.Any])
+    inline def setSourceCommitId(value: ObjectId): Self = StObject.set(x, "sourceCommitId", value.asInstanceOf[js.Any])
   }
 }

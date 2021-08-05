@@ -263,29 +263,22 @@ object anon {
   }
   object Alpha {
     
-    @scala.inline
-    def apply(b: Double, g: Double, r: Double): Alpha = {
+    inline def apply(b: Double, g: Double, r: Double): Alpha = {
       val __obj = js.Dynamic.literal(b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
       __obj.asInstanceOf[Alpha]
     }
     
-    @scala.inline
-    implicit class AlphaMutableBuilder[Self <: Alpha] (val x: Self) extends AnyVal {
+    extension [Self <: Alpha](x: Self) {
       
-      @scala.inline
-      def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+      inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
       
-      @scala.inline
-      def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+      inline def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     }
   }
   
@@ -297,20 +290,16 @@ object anon {
   }
   object Dictkey {
     
-    @scala.inline
-    def apply(): Dictkey = {
+    inline def apply(): Dictkey = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Dictkey]
     }
     
-    @scala.inline
-    implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
+    extension [Self <: Dictkey](x: Self) {
       
-      @scala.inline
-      def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+      inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     }
   }
   
@@ -563,8 +552,7 @@ object anon {
   }
   object Typeofconvert {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       ansi16: Typeofansi16,
       ansi256: Typeofansi256,
       apple: Typeofapple,
@@ -585,53 +573,37 @@ object anon {
       __obj.asInstanceOf[Typeofconvert]
     }
     
-    @scala.inline
-    implicit class TypeofconvertMutableBuilder[Self <: Typeofconvert] (val x: Self) extends AnyVal {
+    extension [Self <: Typeofconvert](x: Self) {
       
-      @scala.inline
-      def setAnsi16(value: Typeofansi16): Self = StObject.set(x, "ansi16", value.asInstanceOf[js.Any])
+      inline def setAnsi16(value: Typeofansi16): Self = StObject.set(x, "ansi16", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnsi256(value: Typeofansi256): Self = StObject.set(x, "ansi256", value.asInstanceOf[js.Any])
+      inline def setAnsi256(value: Typeofansi256): Self = StObject.set(x, "ansi256", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApple(value: Typeofapple): Self = StObject.set(x, "apple", value.asInstanceOf[js.Any])
+      inline def setApple(value: Typeofapple): Self = StObject.set(x, "apple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCmyk(value: Typeofcmyk): Self = StObject.set(x, "cmyk", value.asInstanceOf[js.Any])
+      inline def setCmyk(value: Typeofcmyk): Self = StObject.set(x, "cmyk", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGray(value: Typeofgray): Self = StObject.set(x, "gray", value.asInstanceOf[js.Any])
+      inline def setGray(value: Typeofgray): Self = StObject.set(x, "gray", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHcg(value: Typeofhcg): Self = StObject.set(x, "hcg", value.asInstanceOf[js.Any])
+      inline def setHcg(value: Typeofhcg): Self = StObject.set(x, "hcg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHex(value: Typeofhex): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
+      inline def setHex(value: Typeofhex): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHsl(value: Typeofhsl): Self = StObject.set(x, "hsl", value.asInstanceOf[js.Any])
+      inline def setHsl(value: Typeofhsl): Self = StObject.set(x, "hsl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHsv(value: Typeofhsv): Self = StObject.set(x, "hsv", value.asInstanceOf[js.Any])
+      inline def setHsv(value: Typeofhsv): Self = StObject.set(x, "hsv", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHwb(value: Typeofhwb): Self = StObject.set(x, "hwb", value.asInstanceOf[js.Any])
+      inline def setHwb(value: Typeofhwb): Self = StObject.set(x, "hwb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyword(value: Typeofkeyword): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
+      inline def setKeyword(value: Typeofkeyword): Self = StObject.set(x, "keyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLab(value: Typeoflab): Self = StObject.set(x, "lab", value.asInstanceOf[js.Any])
+      inline def setLab(value: Typeoflab): Self = StObject.set(x, "lab", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLch(value: Typeoflch): Self = StObject.set(x, "lch", value.asInstanceOf[js.Any])
+      inline def setLch(value: Typeoflch): Self = StObject.set(x, "lch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRgb(value: Typeofrgb): Self = StObject.set(x, "rgb", value.asInstanceOf[js.Any])
+      inline def setRgb(value: Typeofrgb): Self = StObject.set(x, "rgb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXyz(value: Typeofxyz): Self = StObject.set(x, "xyz", value.asInstanceOf[js.Any])
+      inline def setXyz(value: Typeofxyz): Self = StObject.set(x, "xyz", value.asInstanceOf[js.Any])
     }
   }
   

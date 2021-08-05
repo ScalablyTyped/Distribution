@@ -18,7 +18,7 @@ object entryMod {
     
     def dependOn(dep: Dep_[js.Any]): Unit = js.native
     
-    var deps: js.Any = js.native
+    /* private */ var deps: js.Any = js.native
     
     var dirty: Boolean = js.native
     
@@ -58,8 +58,7 @@ object entryMod {
     @JSImport("optimism/lib/entry", "Entry.count")
     @js.native
     def count: Double = js.native
-    @scala.inline
-    def count_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("count")(x.asInstanceOf[js.Any])
+    inline def count_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("count")(x.asInstanceOf[js.Any])
   }
   
   type AnyEntry = Entry[js.Any, js.Any]

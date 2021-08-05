@@ -8,25 +8,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(pathname: String, server: ServerDetails): Unit = (^.asInstanceOf[js.Dynamic].apply(pathname.asInstanceOf[js.Any], server.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(pathname: String, server: ServerDetails, opts: TrackingOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(pathname.asInstanceOf[js.Any], server.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(pathname: Null, server: ServerDetails): Unit = (^.asInstanceOf[js.Dynamic].apply(pathname.asInstanceOf[js.Any], server.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(pathname: Null, server: ServerDetails, opts: TrackingOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(pathname.asInstanceOf[js.Any], server.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(pathname: String, server: ServerDetails): Unit = (^.asInstanceOf[js.Dynamic].apply(pathname.asInstanceOf[js.Any], server.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(pathname: String, server: ServerDetails, opts: TrackingOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(pathname.asInstanceOf[js.Any], server.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(pathname: Null, server: ServerDetails): Unit = (^.asInstanceOf[js.Dynamic].apply(pathname.asInstanceOf[js.Any], server.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(pathname: Null, server: ServerDetails, opts: TrackingOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(pathname.asInstanceOf[js.Any], server.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("use-ackee", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useAckee(pathname: String, server: ServerDetails): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useAckee")(pathname.asInstanceOf[js.Any], server.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def useAckee(pathname: String, server: ServerDetails, opts: TrackingOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useAckee")(pathname.asInstanceOf[js.Any], server.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def useAckee(pathname: Null, server: ServerDetails): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useAckee")(pathname.asInstanceOf[js.Any], server.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def useAckee(pathname: Null, server: ServerDetails, opts: TrackingOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useAckee")(pathname.asInstanceOf[js.Any], server.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useAckee(pathname: String, server: ServerDetails): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useAckee")(pathname.asInstanceOf[js.Any], server.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useAckee(pathname: String, server: ServerDetails, opts: TrackingOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useAckee")(pathname.asInstanceOf[js.Any], server.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useAckee(pathname: Null, server: ServerDetails): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useAckee")(pathname.asInstanceOf[js.Any], server.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def useAckee(pathname: Null, server: ServerDetails, opts: TrackingOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useAckee")(pathname.asInstanceOf[js.Any], server.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

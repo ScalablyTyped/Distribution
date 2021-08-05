@@ -26,8 +26,7 @@ trait Accidental extends StObject {
 }
 object Accidental {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accidental: String,
     code: Double,
     displaced: Boolean,
@@ -42,34 +41,24 @@ object Accidental {
     __obj.asInstanceOf[Accidental]
   }
   
-  @scala.inline
-  implicit class AccidentalMutableBuilder[Self <: Accidental] (val x: Self) extends AnyVal {
+  extension [Self <: Accidental](x: Self) {
     
-    @scala.inline
-    def setAccidental(value: String): Self = StObject.set(x, "accidental", value.asInstanceOf[js.Any])
+    inline def setAccidental(value: String): Self = StObject.set(x, "accidental", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplaced(value: Boolean): Self = StObject.set(x, "displaced", value.asInstanceOf[js.Any])
+    inline def setDisplaced(value: Boolean): Self = StObject.set(x, "displaced", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInt_value(value: Double): Self = StObject.set(x, "int_value", value.asInstanceOf[js.Any])
+    inline def setInt_value(value: Double): Self = StObject.set(x, "int_value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOctave(value: Double): Self = StObject.set(x, "octave", value.asInstanceOf[js.Any])
+    inline def setOctave(value: Double): Self = StObject.set(x, "octave", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShift_right(value: Double): Self = StObject.set(x, "shift_right", value.asInstanceOf[js.Any])
+    inline def setShift_right(value: Double): Self = StObject.set(x, "shift_right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStroke(value: Double): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    inline def setStroke(value: Double): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
   }
 }

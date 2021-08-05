@@ -13,6 +13,5 @@ object fiberMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def fiber(iterator: IterableIterator[js.Any]): Future[js.Any, Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("fiber")(iterator.asInstanceOf[js.Any]).asInstanceOf[Future[js.Any, Error]]
+  inline def fiber(iterator: IterableIterator[js.Any]): Future[js.Any, Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("fiber")(iterator.asInstanceOf[js.Any]).asInstanceOf[Future[js.Any, Error]]
 }

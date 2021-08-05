@@ -12,17 +12,14 @@ object typesMod {
   }
   object ShowTooltipOptions {
     
-    @scala.inline
-    def apply(hideFromScreenreader: Boolean): ShowTooltipOptions = {
+    inline def apply(hideFromScreenreader: Boolean): ShowTooltipOptions = {
       val __obj = js.Dynamic.literal(hideFromScreenreader = hideFromScreenreader.asInstanceOf[js.Any])
       __obj.asInstanceOf[ShowTooltipOptions]
     }
     
-    @scala.inline
-    implicit class ShowTooltipOptionsMutableBuilder[Self <: ShowTooltipOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ShowTooltipOptions](x: Self) {
       
-      @scala.inline
-      def setHideFromScreenreader(value: Boolean): Self = StObject.set(x, "hideFromScreenreader", value.asInstanceOf[js.Any])
+      inline def setHideFromScreenreader(value: Boolean): Self = StObject.set(x, "hideFromScreenreader", value.asInstanceOf[js.Any])
     }
   }
 }

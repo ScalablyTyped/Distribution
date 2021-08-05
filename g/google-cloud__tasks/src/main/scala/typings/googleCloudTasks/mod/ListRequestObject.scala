@@ -24,25 +24,19 @@ trait ListRequestObject
 }
 object ListRequestObject {
   
-  @scala.inline
-  def apply(parent: String): ListRequestObject = {
+  inline def apply(parent: String): ListRequestObject = {
     val __obj = js.Dynamic.literal(parent = parent.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListRequestObject]
   }
   
-  @scala.inline
-  implicit class ListRequestObjectMutableBuilder[Self <: ListRequestObject] (val x: Self) extends AnyVal {
+  extension [Self <: ListRequestObject](x: Self) {
     
-    @scala.inline
-    def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+    inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+    inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
   }
 }

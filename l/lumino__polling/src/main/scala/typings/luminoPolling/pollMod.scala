@@ -29,26 +29,26 @@ object pollMod {
       */
     def this(options: IOptions[T, U, V]) = this()
     
-    var _disposed: js.Any = js.native
+    /* private */ var _disposed: js.Any = js.native
     
     /**
       * Execute a new poll factory promise or stand by if necessary.
       */
-    var _execute: js.Any = js.native
+    /* private */ var _execute: js.Any = js.native
     
-    var _factory: js.Any = js.native
+    /* private */ var _factory: js.Any = js.native
     
-    var _frequency: js.Any = js.native
+    /* private */ var _frequency: js.Any = js.native
     
-    var _standby: js.Any = js.native
+    /* private */ var _standby: js.Any = js.native
     
-    var _state: js.Any = js.native
+    /* private */ var _state: js.Any = js.native
     
-    var _tick: js.Any = js.native
+    /* private */ var _tick: js.Any = js.native
     
-    var _ticked: js.Any = js.native
+    /* private */ var _ticked: js.Any = js.native
     
-    var _timeout: js.Any = js.native
+    /* private */ var _timeout: js.Any = js.native
     
     /**
       * Dispose of the resources held by the object.
@@ -256,44 +256,32 @@ object pollMod {
     }
     object IOptions {
       
-      @scala.inline
-      def apply[T, U, V /* <: String */](factory: /* state */ State[T, U, V] => js.Promise[T]): IOptions[T, U, V] = {
+      inline def apply[T, U, V /* <: String */](factory: /* state */ State[T, U, V] => js.Promise[T]): IOptions[T, U, V] = {
         val __obj = js.Dynamic.literal(factory = js.Any.fromFunction1(factory))
         __obj.asInstanceOf[IOptions[T, U, V]]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions[?, ?, ?], T, U, V /* <: String */] (val x: Self & (IOptions[T, U, V])) extends AnyVal {
+      extension [Self <: IOptions[?, ?, ?], T, U, V /* <: String */](x: Self & (IOptions[T, U, V])) {
         
-        @scala.inline
-        def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
+        inline def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
+        inline def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
         
-        @scala.inline
-        def setFactory(value: /* state */ State[T, U, V] => js.Promise[T]): Self = StObject.set(x, "factory", js.Any.fromFunction1(value))
+        inline def setFactory(value: /* state */ State[T, U, V] => js.Promise[T]): Self = StObject.set(x, "factory", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setFrequency(value: PartialFrequency): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
+        inline def setFrequency(value: PartialFrequency): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
+        inline def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setStandby(value: Standby | (js.Function0[Boolean | Standby])): Self = StObject.set(x, "standby", value.asInstanceOf[js.Any])
+        inline def setStandby(value: Standby | (js.Function0[Boolean | Standby])): Self = StObject.set(x, "standby", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStandbyFunction0(value: () => Boolean | Standby): Self = StObject.set(x, "standby", js.Any.fromFunction0(value))
+        inline def setStandbyFunction0(value: () => Boolean | Standby): Self = StObject.set(x, "standby", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setStandbyUndefined: Self = StObject.set(x, "standby", js.undefined)
+        inline def setStandbyUndefined: Self = StObject.set(x, "standby", js.undefined)
       }
     }
     
@@ -307,11 +295,9 @@ object pollMod {
     trait Standby extends StObject
     object Standby {
       
-      @scala.inline
-      def never: typings.luminoPolling.luminoPollingStrings.never = "never".asInstanceOf[typings.luminoPolling.luminoPollingStrings.never]
+      inline def never: typings.luminoPolling.luminoPollingStrings.never = "never".asInstanceOf[typings.luminoPolling.luminoPollingStrings.never]
       
-      @scala.inline
-      def `when-hidden`: typings.luminoPolling.luminoPollingStrings.`when-hidden` = "when-hidden".asInstanceOf[typings.luminoPolling.luminoPollingStrings.`when-hidden`]
+      inline def `when-hidden`: typings.luminoPolling.luminoPollingStrings.`when-hidden` = "when-hidden".asInstanceOf[typings.luminoPolling.luminoPollingStrings.`when-hidden`]
     }
   }
 }

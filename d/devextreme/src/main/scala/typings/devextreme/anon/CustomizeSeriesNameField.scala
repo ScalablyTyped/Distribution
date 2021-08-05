@@ -13,25 +13,19 @@ trait CustomizeSeriesNameField extends StObject {
 }
 object CustomizeSeriesNameField {
   
-  @scala.inline
-  def apply(): CustomizeSeriesNameField = {
+  inline def apply(): CustomizeSeriesNameField = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomizeSeriesNameField]
   }
   
-  @scala.inline
-  implicit class CustomizeSeriesNameFieldMutableBuilder[Self <: CustomizeSeriesNameField] (val x: Self) extends AnyVal {
+  extension [Self <: CustomizeSeriesNameField](x: Self) {
     
-    @scala.inline
-    def setCustomizeSeries(value: /* seriesName */ js.Any => PolarChartSeries): Self = StObject.set(x, "customizeSeries", js.Any.fromFunction1(value))
+    inline def setCustomizeSeries(value: /* seriesName */ js.Any => PolarChartSeries): Self = StObject.set(x, "customizeSeries", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCustomizeSeriesUndefined: Self = StObject.set(x, "customizeSeries", js.undefined)
+    inline def setCustomizeSeriesUndefined: Self = StObject.set(x, "customizeSeries", js.undefined)
     
-    @scala.inline
-    def setNameField(value: String): Self = StObject.set(x, "nameField", value.asInstanceOf[js.Any])
+    inline def setNameField(value: String): Self = StObject.set(x, "nameField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameFieldUndefined: Self = StObject.set(x, "nameField", js.undefined)
+    inline def setNameFieldUndefined: Self = StObject.set(x, "nameField", js.undefined)
   }
 }

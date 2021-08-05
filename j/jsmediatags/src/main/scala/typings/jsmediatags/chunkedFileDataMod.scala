@@ -42,8 +42,7 @@ object chunkedFileDataMod {
     @JSImport("jsmediatags/build2/ChunkedFileData", "default.NOT_FOUND")
     @js.native
     def NOT_FOUND: Double = js.native
-    @scala.inline
-    def NOT_FOUND_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOT_FOUND")(x.asInstanceOf[js.Any])
+    inline def NOT_FOUND_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOT_FOUND")(x.asInstanceOf[js.Any])
   }
   
   trait ChunkedFileData extends StObject {
@@ -62,8 +61,7 @@ object chunkedFileDataMod {
   }
   object ChunkedFileData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _concatData: (DataType, DataType) => DataType,
       _getChunkRange: (Double, Double) => EndIx,
       _sliceData: (DataType, Double, Double) => DataType,
@@ -75,26 +73,19 @@ object chunkedFileDataMod {
       __obj.asInstanceOf[ChunkedFileData]
     }
     
-    @scala.inline
-    implicit class ChunkedFileDataMutableBuilder[Self <: ChunkedFileData] (val x: Self) extends AnyVal {
+    extension [Self <: ChunkedFileData](x: Self) {
       
-      @scala.inline
-      def setAddData(value: (Double, DataType) => Unit): Self = StObject.set(x, "addData", js.Any.fromFunction2(value))
+      inline def setAddData(value: (Double, DataType) => Unit): Self = StObject.set(x, "addData", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetByteAt(value: Double => js.Any): Self = StObject.set(x, "getByteAt", js.Any.fromFunction1(value))
+      inline def setGetByteAt(value: Double => js.Any): Self = StObject.set(x, "getByteAt", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHasDataRange(value: (Double, Double) => Boolean): Self = StObject.set(x, "hasDataRange", js.Any.fromFunction2(value))
+      inline def setHasDataRange(value: (Double, Double) => Boolean): Self = StObject.set(x, "hasDataRange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set_concatData(value: (DataType, DataType) => DataType): Self = StObject.set(x, "_concatData", js.Any.fromFunction2(value))
+      inline def set_concatData(value: (DataType, DataType) => DataType): Self = StObject.set(x, "_concatData", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set_getChunkRange(value: (Double, Double) => EndIx): Self = StObject.set(x, "_getChunkRange", js.Any.fromFunction2(value))
+      inline def set_getChunkRange(value: (Double, Double) => EndIx): Self = StObject.set(x, "_getChunkRange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set_sliceData(value: (DataType, Double, Double) => DataType): Self = StObject.set(x, "_sliceData", js.Any.fromFunction3(value))
+      inline def set_sliceData(value: (DataType, Double, Double) => DataType): Self = StObject.set(x, "_sliceData", js.Any.fromFunction3(value))
     }
   }
 }

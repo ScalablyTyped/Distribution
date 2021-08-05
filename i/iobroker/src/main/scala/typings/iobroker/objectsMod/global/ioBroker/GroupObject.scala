@@ -19,20 +19,16 @@ trait GroupObject
 }
 object GroupObject {
   
-  @scala.inline
-  def apply(_id: String, common: GroupCommon, native: Record[String, js.Any]): GroupObject = {
+  inline def apply(_id: String, common: GroupCommon, native: Record[String, js.Any]): GroupObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("group")
     __obj.asInstanceOf[GroupObject]
   }
   
-  @scala.inline
-  implicit class GroupObjectMutableBuilder[Self <: GroupObject] (val x: Self) extends AnyVal {
+  extension [Self <: GroupObject](x: Self) {
     
-    @scala.inline
-    def setCommon(value: GroupCommon): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
+    inline def setCommon(value: GroupCommon): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: group): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: group): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

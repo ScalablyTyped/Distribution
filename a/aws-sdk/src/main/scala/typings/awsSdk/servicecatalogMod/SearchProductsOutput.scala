@@ -23,34 +23,25 @@ trait SearchProductsOutput extends StObject {
 }
 object SearchProductsOutput {
   
-  @scala.inline
-  def apply(): SearchProductsOutput = {
+  inline def apply(): SearchProductsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchProductsOutput]
   }
   
-  @scala.inline
-  implicit class SearchProductsOutputMutableBuilder[Self <: SearchProductsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: SearchProductsOutput](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "NextPageToken", js.undefined)
     
-    @scala.inline
-    def setProductViewAggregations(value: ProductViewAggregations): Self = StObject.set(x, "ProductViewAggregations", value.asInstanceOf[js.Any])
+    inline def setProductViewAggregations(value: ProductViewAggregations): Self = StObject.set(x, "ProductViewAggregations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductViewAggregationsUndefined: Self = StObject.set(x, "ProductViewAggregations", js.undefined)
+    inline def setProductViewAggregationsUndefined: Self = StObject.set(x, "ProductViewAggregations", js.undefined)
     
-    @scala.inline
-    def setProductViewSummaries(value: ProductViewSummaries): Self = StObject.set(x, "ProductViewSummaries", value.asInstanceOf[js.Any])
+    inline def setProductViewSummaries(value: ProductViewSummaries): Self = StObject.set(x, "ProductViewSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductViewSummariesUndefined: Self = StObject.set(x, "ProductViewSummaries", js.undefined)
+    inline def setProductViewSummariesUndefined: Self = StObject.set(x, "ProductViewSummaries", js.undefined)
     
-    @scala.inline
-    def setProductViewSummariesVarargs(value: ProductViewSummary*): Self = StObject.set(x, "ProductViewSummaries", js.Array(value :_*))
+    inline def setProductViewSummariesVarargs(value: ProductViewSummary*): Self = StObject.set(x, "ProductViewSummaries", js.Array(value :_*))
   }
 }

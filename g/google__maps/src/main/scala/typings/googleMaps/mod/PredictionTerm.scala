@@ -14,19 +14,15 @@ trait PredictionTerm extends StObject {
 }
 object PredictionTerm {
   
-  @scala.inline
-  def apply(offset: Double, value: String): PredictionTerm = {
+  inline def apply(offset: Double, value: String): PredictionTerm = {
     val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PredictionTerm]
   }
   
-  @scala.inline
-  implicit class PredictionTermMutableBuilder[Self <: PredictionTerm] (val x: Self) extends AnyVal {
+  extension [Self <: PredictionTerm](x: Self) {
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -23,16 +23,13 @@ trait XAction
 }
 object XAction {
   
-  @scala.inline
-  def apply(acquire: () => Unit, queryInterface: `type` => js.Any, release: () => Unit, run: () => js.Any): XAction = {
+  inline def apply(acquire: () => Unit, queryInterface: `type` => js.Any, release: () => Unit, run: () => js.Any): XAction = {
     val __obj = js.Dynamic.literal(acquire = js.Any.fromFunction0(acquire), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), run = js.Any.fromFunction0(run))
     __obj.asInstanceOf[XAction]
   }
   
-  @scala.inline
-  implicit class XActionMutableBuilder[Self <: XAction] (val x: Self) extends AnyVal {
+  extension [Self <: XAction](x: Self) {
     
-    @scala.inline
-    def setRun(value: () => js.Any): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
+    inline def setRun(value: () => js.Any): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
   }
 }

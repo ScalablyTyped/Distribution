@@ -11,8 +11,7 @@ object validationOptionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isValidationOptions(`val`: js.Any): /* is class-validator.class-validator/types/decorator/ValidationOptions.ValidationOptions */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidationOptions")(`val`.asInstanceOf[js.Any]).asInstanceOf[/* is class-validator.class-validator/types/decorator/ValidationOptions.ValidationOptions */ Boolean]
+  inline def isValidationOptions(`val`: js.Any): /* is class-validator.class-validator/types/decorator/ValidationOptions.ValidationOptions */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidationOptions")(`val`.asInstanceOf[js.Any]).asInstanceOf[/* is class-validator.class-validator/types/decorator/ValidationOptions.ValidationOptions */ Boolean]
   
   trait ValidationOptions extends StObject {
     
@@ -41,50 +40,36 @@ object validationOptionsMod {
   }
   object ValidationOptions {
     
-    @scala.inline
-    def apply(): ValidationOptions = {
+    inline def apply(): ValidationOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ValidationOptions]
     }
     
-    @scala.inline
-    implicit class ValidationOptionsMutableBuilder[Self <: ValidationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ValidationOptions](x: Self) {
       
-      @scala.inline
-      def setAlways(value: Boolean): Self = StObject.set(x, "always", value.asInstanceOf[js.Any])
+      inline def setAlways(value: Boolean): Self = StObject.set(x, "always", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlwaysUndefined: Self = StObject.set(x, "always", js.undefined)
+      inline def setAlwaysUndefined: Self = StObject.set(x, "always", js.undefined)
       
-      @scala.inline
-      def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+      inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
       
-      @scala.inline
-      def setEach(value: Boolean): Self = StObject.set(x, "each", value.asInstanceOf[js.Any])
+      inline def setEach(value: Boolean): Self = StObject.set(x, "each", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
+      inline def setEachUndefined: Self = StObject.set(x, "each", js.undefined)
       
-      @scala.inline
-      def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+      inline def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
+      inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
       
-      @scala.inline
-      def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
+      inline def setGroupsVarargs(value: String*): Self = StObject.set(x, "groups", js.Array(value :_*))
       
-      @scala.inline
-      def setMessage(value: String | (js.Function1[/* validationArguments */ ValidationArguments, String])): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String | (js.Function1[/* validationArguments */ ValidationArguments, String])): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageFunction1(value: /* validationArguments */ ValidationArguments => String): Self = StObject.set(x, "message", js.Any.fromFunction1(value))
+      inline def setMessageFunction1(value: /* validationArguments */ ValidationArguments => String): Self = StObject.set(x, "message", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

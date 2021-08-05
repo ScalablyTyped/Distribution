@@ -24,23 +24,18 @@ trait WindowExternalProcessExited
 }
 object WindowExternalProcessExited {
   
-  @scala.inline
-  def apply(exitCode: Double, name: String, processUuid: String, uuid: String): WindowExternalProcessExited = {
+  inline def apply(exitCode: Double, name: String, processUuid: String, uuid: String): WindowExternalProcessExited = {
     val __obj = js.Dynamic.literal(exitCode = exitCode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], processUuid = processUuid.asInstanceOf[js.Any], topic = "window", uuid = uuid.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("external-process-exited")
     __obj.asInstanceOf[WindowExternalProcessExited]
   }
   
-  @scala.inline
-  implicit class WindowExternalProcessExitedMutableBuilder[Self <: WindowExternalProcessExited] (val x: Self) extends AnyVal {
+  extension [Self <: WindowExternalProcessExited](x: Self) {
     
-    @scala.inline
-    def setExitCode(value: Double): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
+    inline def setExitCode(value: Double): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProcessUuid(value: String): Self = StObject.set(x, "processUuid", value.asInstanceOf[js.Any])
+    inline def setProcessUuid(value: String): Self = StObject.set(x, "processUuid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `external-process-exited`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `external-process-exited`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

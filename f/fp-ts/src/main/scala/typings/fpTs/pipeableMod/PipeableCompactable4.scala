@@ -20,8 +20,7 @@ trait PipeableCompactable4[F /* <: /* import warning: transforms.QualifyReferenc
 }
 object PipeableCompactable4 {
   
-  @scala.inline
-  def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](
+  inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](
     compact: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, Option<A>> */ js.Any => js.Any,
     separate: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, Either<A, B>> */ js.Any => Separated[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ js.Any, 
@@ -32,16 +31,13 @@ object PipeableCompactable4 {
     __obj.asInstanceOf[PipeableCompactable4[F]]
   }
   
-  @scala.inline
-  implicit class PipeableCompactable4MutableBuilder[Self <: PipeableCompactable4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */] (val x: Self & PipeableCompactable4[F]) extends AnyVal {
+  extension [Self <: PipeableCompactable4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ js.Any */](x: Self & PipeableCompactable4[F]) {
     
-    @scala.inline
-    def setCompact(
+    inline def setCompact(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, Option<A>> */ js.Any => js.Any
     ): Self = StObject.set(x, "compact", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSeparate(
+    inline def setSeparate(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, Either<A, B>> */ js.Any => Separated[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, B> */ js.Any

@@ -13,31 +13,23 @@ trait ProviderIgnoreTags extends StObject {
 }
 object ProviderIgnoreTags {
   
-  @scala.inline
-  def apply(): ProviderIgnoreTags = {
+  inline def apply(): ProviderIgnoreTags = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProviderIgnoreTags]
   }
   
-  @scala.inline
-  implicit class ProviderIgnoreTagsMutableBuilder[Self <: ProviderIgnoreTags] (val x: Self) extends AnyVal {
+  extension [Self <: ProviderIgnoreTags](x: Self) {
     
-    @scala.inline
-    def setKeyPrefixes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "keyPrefixes", value.asInstanceOf[js.Any])
+    inline def setKeyPrefixes(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "keyPrefixes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyPrefixesUndefined: Self = StObject.set(x, "keyPrefixes", js.undefined)
+    inline def setKeyPrefixesUndefined: Self = StObject.set(x, "keyPrefixes", js.undefined)
     
-    @scala.inline
-    def setKeyPrefixesVarargs(value: Input[String]*): Self = StObject.set(x, "keyPrefixes", js.Array(value :_*))
+    inline def setKeyPrefixesVarargs(value: Input[String]*): Self = StObject.set(x, "keyPrefixes", js.Array(value :_*))
     
-    @scala.inline
-    def setKeys(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+    inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    @scala.inline
-    def setKeysVarargs(value: Input[String]*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: Input[String]*): Self = StObject.set(x, "keys", js.Array(value :_*))
   }
 }

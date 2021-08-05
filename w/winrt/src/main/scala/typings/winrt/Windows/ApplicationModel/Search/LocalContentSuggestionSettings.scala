@@ -11,8 +11,7 @@ trait LocalContentSuggestionSettings
      with ILocalContentSuggestionSettings
 object LocalContentSuggestionSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     aqsFilter: String,
     enabled: Boolean,
     locations: IVector[StorageFolder],

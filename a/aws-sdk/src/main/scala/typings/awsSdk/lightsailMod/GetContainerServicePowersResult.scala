@@ -13,22 +13,17 @@ trait GetContainerServicePowersResult extends StObject {
 }
 object GetContainerServicePowersResult {
   
-  @scala.inline
-  def apply(): GetContainerServicePowersResult = {
+  inline def apply(): GetContainerServicePowersResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetContainerServicePowersResult]
   }
   
-  @scala.inline
-  implicit class GetContainerServicePowersResultMutableBuilder[Self <: GetContainerServicePowersResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetContainerServicePowersResult](x: Self) {
     
-    @scala.inline
-    def setPowers(value: ContainerServicePowerList): Self = StObject.set(x, "powers", value.asInstanceOf[js.Any])
+    inline def setPowers(value: ContainerServicePowerList): Self = StObject.set(x, "powers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowersUndefined: Self = StObject.set(x, "powers", js.undefined)
+    inline def setPowersUndefined: Self = StObject.set(x, "powers", js.undefined)
     
-    @scala.inline
-    def setPowersVarargs(value: ContainerServicePower*): Self = StObject.set(x, "powers", js.Array(value :_*))
+    inline def setPowersVarargs(value: ContainerServicePower*): Self = StObject.set(x, "powers", js.Array(value :_*))
   }
 }

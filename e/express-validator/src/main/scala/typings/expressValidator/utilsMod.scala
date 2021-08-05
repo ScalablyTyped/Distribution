@@ -11,15 +11,12 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def bindAll[T](`object`: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  inline def bindAll[T](`object`: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: T[K]}
     */ typings.expressValidator.expressValidatorStrings.bindAll & TopLevel[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("bindAll")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]: T[K]}
     */ typings.expressValidator.expressValidatorStrings.bindAll & TopLevel[T]]
   
-  @scala.inline
-  def toString_(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def toString_(value: js.Any, deep: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toString")(value.asInstanceOf[js.Any], deep.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def toString_(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def toString_(value: js.Any, deep: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toString")(value.asInstanceOf[js.Any], deep.asInstanceOf[js.Any])).asInstanceOf[String]
 }

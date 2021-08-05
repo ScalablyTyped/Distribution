@@ -57,15 +57,15 @@ object baseFilterMod {
     /* CompleteClass */
     override def doesFilterPass(params: IDoesFilterPassParams): Boolean = js.native
     
-    var eApplyButton: js.Any = js.native
+    /* private */ var eApplyButton: js.Any = js.native
     
-    var eButtonsPanel: js.Any = js.native
+    /* private */ var eButtonsPanel: js.Any = js.native
     
-    var eClearButton: js.Any = js.native
+    /* private */ var eClearButton: js.Any = js.native
     
-    var eConditionWrapper: js.Any = js.native
+    /* private */ var eConditionWrapper: js.Any = js.native
     
-    var eFilterBodyWrapper: js.Any = js.native
+    /* private */ var eFilterBodyWrapper: js.Any = js.native
     
     var filter: String = js.native
     
@@ -103,7 +103,7 @@ object baseFilterMod {
     
     def modelFromFloatingFilter(from: String): M = js.native
     
-    var newRowsActionKeep: js.Any = js.native
+    /* private */ var newRowsActionKeep: js.Any = js.native
     
     def onClearButton(): Unit = js.native
     
@@ -148,68 +148,57 @@ object baseFilterMod {
     @JSImport("ag-grid/dist/lib/filter/baseFilter", "BaseFilter.CONTAINS")
     @js.native
     def CONTAINS: String = js.native
-    @scala.inline
-    def CONTAINS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONTAINS")(x.asInstanceOf[js.Any])
+    inline def CONTAINS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CONTAINS")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/filter/baseFilter", "BaseFilter.ENDS_WITH")
     @js.native
     def ENDS_WITH: String = js.native
-    @scala.inline
-    def ENDS_WITH_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENDS_WITH")(x.asInstanceOf[js.Any])
+    inline def ENDS_WITH_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ENDS_WITH")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/filter/baseFilter", "BaseFilter.EQUALS")
     @js.native
     def EQUALS: String = js.native
-    @scala.inline
-    def EQUALS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EQUALS")(x.asInstanceOf[js.Any])
+    inline def EQUALS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EQUALS")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/filter/baseFilter", "BaseFilter.GREATER_THAN")
     @js.native
     def GREATER_THAN: String = js.native
-    @scala.inline
-    def GREATER_THAN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GREATER_THAN")(x.asInstanceOf[js.Any])
+    inline def GREATER_THAN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GREATER_THAN")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/filter/baseFilter", "BaseFilter.GREATER_THAN_OR_EQUAL")
     @js.native
     def GREATER_THAN_OR_EQUAL: String = js.native
-    @scala.inline
-    def GREATER_THAN_OR_EQUAL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GREATER_THAN_OR_EQUAL")(x.asInstanceOf[js.Any])
+    inline def GREATER_THAN_OR_EQUAL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GREATER_THAN_OR_EQUAL")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/filter/baseFilter", "BaseFilter.IN_RANGE")
     @js.native
     def IN_RANGE: String = js.native
-    @scala.inline
-    def IN_RANGE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IN_RANGE")(x.asInstanceOf[js.Any])
+    inline def IN_RANGE_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IN_RANGE")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/filter/baseFilter", "BaseFilter.LESS_THAN")
     @js.native
     def LESS_THAN: String = js.native
-    @scala.inline
-    def LESS_THAN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LESS_THAN")(x.asInstanceOf[js.Any])
+    inline def LESS_THAN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LESS_THAN")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/filter/baseFilter", "BaseFilter.LESS_THAN_OR_EQUAL")
     @js.native
     def LESS_THAN_OR_EQUAL: String = js.native
-    @scala.inline
-    def LESS_THAN_OR_EQUAL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LESS_THAN_OR_EQUAL")(x.asInstanceOf[js.Any])
+    inline def LESS_THAN_OR_EQUAL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LESS_THAN_OR_EQUAL")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/filter/baseFilter", "BaseFilter.NOT_CONTAINS")
     @js.native
     def NOT_CONTAINS: String = js.native
-    @scala.inline
-    def NOT_CONTAINS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOT_CONTAINS")(x.asInstanceOf[js.Any])
+    inline def NOT_CONTAINS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOT_CONTAINS")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/filter/baseFilter", "BaseFilter.NOT_EQUAL")
     @js.native
     def NOT_EQUAL: String = js.native
-    @scala.inline
-    def NOT_EQUAL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOT_EQUAL")(x.asInstanceOf[js.Any])
+    inline def NOT_EQUAL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOT_EQUAL")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/filter/baseFilter", "BaseFilter.STARTS_WITH")
     @js.native
     def STARTS_WITH: String = js.native
-    @scala.inline
-    def STARTS_WITH_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STARTS_WITH")(x.asInstanceOf[js.Any])
+    inline def STARTS_WITH_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STARTS_WITH")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ag-grid/dist/lib/filter/baseFilter", "ComparableBaseFilter")
@@ -217,9 +206,9 @@ object baseFilterMod {
   abstract class ComparableBaseFilter[T, P /* <: IComparableFilterParams */, M] () extends BaseFilter[T, P, M] {
     def this(template: String) = this()
     
-    var eTypeConditionSelector: js.Any = js.native
+    /* private */ var eTypeConditionSelector: js.Any = js.native
     
-    var eTypeSelector: js.Any = js.native
+    /* private */ var eTypeSelector: js.Any = js.native
     
     def filterValues(`type`: FilterConditionType): T | js.Array[T] = js.native
     
@@ -236,7 +225,7 @@ object baseFilterMod {
     
     def setFilterType(filterType: String, `type`: FilterConditionType): Unit = js.native
     
-    var suppressAndOrCondition: js.Any = js.native
+    /* private */ var suppressAndOrCondition: js.Any = js.native
   }
   
   @js.native
@@ -292,23 +281,18 @@ object baseFilterMod {
   }
   object CombinedFilter {
     
-    @scala.inline
-    def apply[T](condition1: T, condition2: T, operator: String): CombinedFilter[T] = {
+    inline def apply[T](condition1: T, condition2: T, operator: String): CombinedFilter[T] = {
       val __obj = js.Dynamic.literal(condition1 = condition1.asInstanceOf[js.Any], condition2 = condition2.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any])
       __obj.asInstanceOf[CombinedFilter[T]]
     }
     
-    @scala.inline
-    implicit class CombinedFilterMutableBuilder[Self <: CombinedFilter[?], T] (val x: Self & CombinedFilter[T]) extends AnyVal {
+    extension [Self <: CombinedFilter[?], T](x: Self & CombinedFilter[T]) {
       
-      @scala.inline
-      def setCondition1(value: T): Self = StObject.set(x, "condition1", value.asInstanceOf[js.Any])
+      inline def setCondition1(value: T): Self = StObject.set(x, "condition1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCondition2(value: T): Self = StObject.set(x, "condition2", value.asInstanceOf[js.Any])
+      inline def setCondition2(value: T): Self = StObject.set(x, "condition2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+      inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     }
   }
   
@@ -322,8 +306,7 @@ object baseFilterMod {
   }
   object IComparableFilterParams {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       $scope: js.Any,
       colDef: ColDef,
       column: Column,
@@ -339,11 +322,9 @@ object baseFilterMod {
       __obj.asInstanceOf[IComparableFilterParams]
     }
     
-    @scala.inline
-    implicit class IComparableFilterParamsMutableBuilder[Self <: IComparableFilterParams] (val x: Self) extends AnyVal {
+    extension [Self <: IComparableFilterParams](x: Self) {
       
-      @scala.inline
-      def setSuppressAndOrCondition(value: Boolean): Self = StObject.set(x, "suppressAndOrCondition", value.asInstanceOf[js.Any])
+      inline def setSuppressAndOrCondition(value: Boolean): Self = StObject.set(x, "suppressAndOrCondition", value.asInstanceOf[js.Any])
     }
   }
   
@@ -357,8 +338,7 @@ object baseFilterMod {
   }
   object IScalarFilterParams {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       $scope: js.Any,
       colDef: ColDef,
       column: Column,
@@ -374,20 +354,15 @@ object baseFilterMod {
       __obj.asInstanceOf[IScalarFilterParams]
     }
     
-    @scala.inline
-    implicit class IScalarFilterParamsMutableBuilder[Self <: IScalarFilterParams] (val x: Self) extends AnyVal {
+    extension [Self <: IScalarFilterParams](x: Self) {
       
-      @scala.inline
-      def setInRangeInclusive(value: Boolean): Self = StObject.set(x, "inRangeInclusive", value.asInstanceOf[js.Any])
+      inline def setInRangeInclusive(value: Boolean): Self = StObject.set(x, "inRangeInclusive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInRangeInclusiveUndefined: Self = StObject.set(x, "inRangeInclusive", js.undefined)
+      inline def setInRangeInclusiveUndefined: Self = StObject.set(x, "inRangeInclusive", js.undefined)
       
-      @scala.inline
-      def setNullComparator(value: NullComparator): Self = StObject.set(x, "nullComparator", value.asInstanceOf[js.Any])
+      inline def setNullComparator(value: NullComparator): Self = StObject.set(x, "nullComparator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNullComparatorUndefined: Self = StObject.set(x, "nullComparator", js.undefined)
+      inline def setNullComparatorUndefined: Self = StObject.set(x, "nullComparator", js.undefined)
     }
   }
   
@@ -402,32 +377,24 @@ object baseFilterMod {
   }
   object NullComparator {
     
-    @scala.inline
-    def apply(): NullComparator = {
+    inline def apply(): NullComparator = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NullComparator]
     }
     
-    @scala.inline
-    implicit class NullComparatorMutableBuilder[Self <: NullComparator] (val x: Self) extends AnyVal {
+    extension [Self <: NullComparator](x: Self) {
       
-      @scala.inline
-      def setEquals_(value: Boolean): Self = StObject.set(x, "equals", value.asInstanceOf[js.Any])
+      inline def setEquals_(value: Boolean): Self = StObject.set(x, "equals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
+      inline def setEquals_Undefined: Self = StObject.set(x, "equals", js.undefined)
       
-      @scala.inline
-      def setGreaterThan(value: Boolean): Self = StObject.set(x, "greaterThan", value.asInstanceOf[js.Any])
+      inline def setGreaterThan(value: Boolean): Self = StObject.set(x, "greaterThan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGreaterThanUndefined: Self = StObject.set(x, "greaterThan", js.undefined)
+      inline def setGreaterThanUndefined: Self = StObject.set(x, "greaterThan", js.undefined)
       
-      @scala.inline
-      def setLessThan(value: Boolean): Self = StObject.set(x, "lessThan", value.asInstanceOf[js.Any])
+      inline def setLessThan(value: Boolean): Self = StObject.set(x, "lessThan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLessThanUndefined: Self = StObject.set(x, "lessThan", js.undefined)
+      inline def setLessThanUndefined: Self = StObject.set(x, "lessThan", js.undefined)
     }
   }
 }

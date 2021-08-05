@@ -19,8 +19,7 @@ trait CopyrightControl
 }
 object CopyrightControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addCopyright: Copyright => Unit,
     defaultAnchor: ControlAnchor,
     defaultOffset: Size,
@@ -41,19 +40,14 @@ object CopyrightControl {
     __obj.asInstanceOf[CopyrightControl]
   }
   
-  @scala.inline
-  implicit class CopyrightControlMutableBuilder[Self <: CopyrightControl] (val x: Self) extends AnyVal {
+  extension [Self <: CopyrightControl](x: Self) {
     
-    @scala.inline
-    def setAddCopyright(value: Copyright => Unit): Self = StObject.set(x, "addCopyright", js.Any.fromFunction1(value))
+    inline def setAddCopyright(value: Copyright => Unit): Self = StObject.set(x, "addCopyright", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCopyright(value: Double => Copyright): Self = StObject.set(x, "getCopyright", js.Any.fromFunction1(value))
+    inline def setGetCopyright(value: Double => Copyright): Self = StObject.set(x, "getCopyright", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCopyrightCollection(value: () => js.Array[Copyright]): Self = StObject.set(x, "getCopyrightCollection", js.Any.fromFunction0(value))
+    inline def setGetCopyrightCollection(value: () => js.Array[Copyright]): Self = StObject.set(x, "getCopyrightCollection", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRemoveCopyright(value: Double => Unit): Self = StObject.set(x, "removeCopyright", js.Any.fromFunction1(value))
+    inline def setRemoveCopyright(value: Double => Unit): Self = StObject.set(x, "removeCopyright", js.Any.fromFunction1(value))
   }
 }

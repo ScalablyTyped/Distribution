@@ -58,76 +58,53 @@ trait SingleInstanceHealth extends StObject {
 }
 object SingleInstanceHealth {
   
-  @scala.inline
-  def apply(): SingleInstanceHealth = {
+  inline def apply(): SingleInstanceHealth = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SingleInstanceHealth]
   }
   
-  @scala.inline
-  implicit class SingleInstanceHealthMutableBuilder[Self <: SingleInstanceHealth] (val x: Self) extends AnyVal {
+  extension [Self <: SingleInstanceHealth](x: Self) {
     
-    @scala.inline
-    def setApplicationMetrics(value: ApplicationMetrics): Self = StObject.set(x, "ApplicationMetrics", value.asInstanceOf[js.Any])
+    inline def setApplicationMetrics(value: ApplicationMetrics): Self = StObject.set(x, "ApplicationMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationMetricsUndefined: Self = StObject.set(x, "ApplicationMetrics", js.undefined)
+    inline def setApplicationMetricsUndefined: Self = StObject.set(x, "ApplicationMetrics", js.undefined)
     
-    @scala.inline
-    def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
+    inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
-    @scala.inline
-    def setCauses(value: Causes): Self = StObject.set(x, "Causes", value.asInstanceOf[js.Any])
+    inline def setCauses(value: Causes): Self = StObject.set(x, "Causes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCausesUndefined: Self = StObject.set(x, "Causes", js.undefined)
+    inline def setCausesUndefined: Self = StObject.set(x, "Causes", js.undefined)
     
-    @scala.inline
-    def setCausesVarargs(value: Cause*): Self = StObject.set(x, "Causes", js.Array(value :_*))
+    inline def setCausesVarargs(value: Cause*): Self = StObject.set(x, "Causes", js.Array(value :_*))
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "Color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "Color", js.undefined)
     
-    @scala.inline
-    def setDeployment(value: Deployment): Self = StObject.set(x, "Deployment", value.asInstanceOf[js.Any])
+    inline def setDeployment(value: Deployment): Self = StObject.set(x, "Deployment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentUndefined: Self = StObject.set(x, "Deployment", js.undefined)
+    inline def setDeploymentUndefined: Self = StObject.set(x, "Deployment", js.undefined)
     
-    @scala.inline
-    def setHealthStatus(value: String): Self = StObject.set(x, "HealthStatus", value.asInstanceOf[js.Any])
+    inline def setHealthStatus(value: String): Self = StObject.set(x, "HealthStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthStatusUndefined: Self = StObject.set(x, "HealthStatus", js.undefined)
+    inline def setHealthStatusUndefined: Self = StObject.set(x, "HealthStatus", js.undefined)
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
-    @scala.inline
-    def setInstanceType(value: String): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: String): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
+    inline def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
     
-    @scala.inline
-    def setLaunchedAt(value: LaunchedAt): Self = StObject.set(x, "LaunchedAt", value.asInstanceOf[js.Any])
+    inline def setLaunchedAt(value: LaunchedAt): Self = StObject.set(x, "LaunchedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchedAtUndefined: Self = StObject.set(x, "LaunchedAt", js.undefined)
+    inline def setLaunchedAtUndefined: Self = StObject.set(x, "LaunchedAt", js.undefined)
     
-    @scala.inline
-    def setSystem(value: SystemStatus): Self = StObject.set(x, "System", value.asInstanceOf[js.Any])
+    inline def setSystem(value: SystemStatus): Self = StObject.set(x, "System", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSystemUndefined: Self = StObject.set(x, "System", js.undefined)
+    inline def setSystemUndefined: Self = StObject.set(x, "System", js.undefined)
   }
 }

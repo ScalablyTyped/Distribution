@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(options: Options): CorsMiddleware = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[CorsMiddleware]
+  inline def apply(options: Options): CorsMiddleware = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[CorsMiddleware]
   
   @JSImport("restify-cors-middleware", JSImport.Namespace)
   @js.native
@@ -30,8 +29,7 @@ object mod {
   }
   object CorsMiddleware {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       actual: (/* req */ Request, /* res */ Response, /* next */ Next) => js.Any,
       preflight: (/* req */ Request, /* res */ Response, /* next */ Next) => js.Any
     ): CorsMiddleware = {
@@ -39,14 +37,11 @@ object mod {
       __obj.asInstanceOf[CorsMiddleware]
     }
     
-    @scala.inline
-    implicit class CorsMiddlewareMutableBuilder[Self <: CorsMiddleware] (val x: Self) extends AnyVal {
+    extension [Self <: CorsMiddleware](x: Self) {
       
-      @scala.inline
-      def setActual(value: (/* req */ Request, /* res */ Response, /* next */ Next) => js.Any): Self = StObject.set(x, "actual", js.Any.fromFunction3(value))
+      inline def setActual(value: (/* req */ Request, /* res */ Response, /* next */ Next) => js.Any): Self = StObject.set(x, "actual", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPreflight(value: (/* req */ Request, /* res */ Response, /* next */ Next) => js.Any): Self = StObject.set(x, "preflight", js.Any.fromFunction3(value))
+      inline def setPreflight(value: (/* req */ Request, /* res */ Response, /* next */ Next) => js.Any): Self = StObject.set(x, "preflight", js.Any.fromFunction3(value))
     }
   }
   
@@ -75,8 +70,7 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allowHeaders: js.Array[String],
       exposeHeaders: js.Array[String],
       origins: js.Array[String | RegExp]
@@ -85,44 +79,31 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setAllowHeaders(value: js.Array[String]): Self = StObject.set(x, "allowHeaders", value.asInstanceOf[js.Any])
+      inline def setAllowHeaders(value: js.Array[String]): Self = StObject.set(x, "allowHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowHeadersVarargs(value: String*): Self = StObject.set(x, "allowHeaders", js.Array(value :_*))
+      inline def setAllowHeadersVarargs(value: String*): Self = StObject.set(x, "allowHeaders", js.Array(value :_*))
       
-      @scala.inline
-      def setCredentials(value: Boolean): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: Boolean): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+      inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
       
-      @scala.inline
-      def setExposeHeaders(value: js.Array[String]): Self = StObject.set(x, "exposeHeaders", value.asInstanceOf[js.Any])
+      inline def setExposeHeaders(value: js.Array[String]): Self = StObject.set(x, "exposeHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExposeHeadersVarargs(value: String*): Self = StObject.set(x, "exposeHeaders", js.Array(value :_*))
+      inline def setExposeHeadersVarargs(value: String*): Self = StObject.set(x, "exposeHeaders", js.Array(value :_*))
       
-      @scala.inline
-      def setOrigins(value: js.Array[String | RegExp]): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
+      inline def setOrigins(value: js.Array[String | RegExp]): Self = StObject.set(x, "origins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "origins", js.Array(value :_*))
+      inline def setOriginsVarargs(value: (String | RegExp)*): Self = StObject.set(x, "origins", js.Array(value :_*))
       
-      @scala.inline
-      def setPreflightMaxAge(value: Double): Self = StObject.set(x, "preflightMaxAge", value.asInstanceOf[js.Any])
+      inline def setPreflightMaxAge(value: Double): Self = StObject.set(x, "preflightMaxAge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreflightMaxAgeUndefined: Self = StObject.set(x, "preflightMaxAge", js.undefined)
+      inline def setPreflightMaxAgeUndefined: Self = StObject.set(x, "preflightMaxAge", js.undefined)
       
-      @scala.inline
-      def setPreflightStrategy(value: js.Any): Self = StObject.set(x, "preflightStrategy", value.asInstanceOf[js.Any])
+      inline def setPreflightStrategy(value: js.Any): Self = StObject.set(x, "preflightStrategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreflightStrategyUndefined: Self = StObject.set(x, "preflightStrategy", js.undefined)
+      inline def setPreflightStrategyUndefined: Self = StObject.set(x, "preflightStrategy", js.undefined)
     }
   }
 }

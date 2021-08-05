@@ -15,16 +15,13 @@ trait ObserverArrayOpts
 }
 object ObserverArrayOpts {
   
-  @scala.inline
-  def apply(array: Boolean): ObserverArrayOpts = {
+  inline def apply(array: Boolean): ObserverArrayOpts = {
     val __obj = js.Dynamic.literal(array = array.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObserverArrayOpts]
   }
   
-  @scala.inline
-  implicit class ObserverArrayOptsMutableBuilder[Self <: ObserverArrayOpts] (val x: Self) extends AnyVal {
+  extension [Self <: ObserverArrayOpts](x: Self) {
     
-    @scala.inline
-    def setArray(value: Boolean): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
+    inline def setArray(value: Boolean): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
   }
 }

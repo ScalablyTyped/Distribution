@@ -35,43 +35,31 @@ trait SetNavigationBarArgs
 }
 object SetNavigationBarArgs {
   
-  @scala.inline
-  def apply(): SetNavigationBarArgs = {
+  inline def apply(): SetNavigationBarArgs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SetNavigationBarArgs]
   }
   
-  @scala.inline
-  implicit class SetNavigationBarArgsMutableBuilder[Self <: SetNavigationBarArgs] (val x: Self) extends AnyVal {
+  extension [Self <: SetNavigationBarArgs](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setBorderBottomColor(value: String): Self = StObject.set(x, "borderBottomColor", value.asInstanceOf[js.Any])
+    inline def setBorderBottomColor(value: String): Self = StObject.set(x, "borderBottomColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderBottomColorUndefined: Self = StObject.set(x, "borderBottomColor", js.undefined)
+    inline def setBorderBottomColorUndefined: Self = StObject.set(x, "borderBottomColor", js.undefined)
     
-    @scala.inline
-    def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
+    inline def setImageUndefined: Self = StObject.set(x, "image", js.undefined)
     
-    @scala.inline
-    def setReset(value: Boolean): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+    inline def setReset(value: Boolean): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
+    inline def setResetUndefined: Self = StObject.set(x, "reset", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

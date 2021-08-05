@@ -13,19 +13,15 @@ trait SourceSelectionCriteria extends StObject {
 }
 object SourceSelectionCriteria {
   
-  @scala.inline
-  def apply(): SourceSelectionCriteria = {
+  inline def apply(): SourceSelectionCriteria = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceSelectionCriteria]
   }
   
-  @scala.inline
-  implicit class SourceSelectionCriteriaMutableBuilder[Self <: SourceSelectionCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: SourceSelectionCriteria](x: Self) {
     
-    @scala.inline
-    def setSseKmsEncryptedObjects(value: SseKmsEncryptedObjects): Self = StObject.set(x, "SseKmsEncryptedObjects", value.asInstanceOf[js.Any])
+    inline def setSseKmsEncryptedObjects(value: SseKmsEncryptedObjects): Self = StObject.set(x, "SseKmsEncryptedObjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSseKmsEncryptedObjectsUndefined: Self = StObject.set(x, "SseKmsEncryptedObjects", js.undefined)
+    inline def setSseKmsEncryptedObjectsUndefined: Self = StObject.set(x, "SseKmsEncryptedObjects", js.undefined)
   }
 }

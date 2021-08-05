@@ -72,7 +72,7 @@ object tableQuadrantMod {
     def this(props: ITableQuadrantProps) = this()
     def this(props: ITableQuadrantProps, context: js.Any) = this()
     
-    var getQuadrantCssClass: js.Any = js.native
+    /* private */ var getQuadrantCssClass: js.Any = js.native
   }
   /* static members */
   object TableQuadrant {
@@ -84,8 +84,7 @@ object tableQuadrantMod {
     @JSImport("@blueprintjs/table/lib/esm/quadrants/tableQuadrant", "TableQuadrant.defaultProps")
     @js.native
     def defaultProps: PartialITableQuadrantProp = js.native
-    @scala.inline
-    def defaultProps_=(x: PartialITableQuadrantProp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PartialITableQuadrantProp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native

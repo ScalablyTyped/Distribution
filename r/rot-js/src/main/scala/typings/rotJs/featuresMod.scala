@@ -42,8 +42,7 @@ object featuresMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createRandomAt(x: Double, y: Double, dx: Double, dy: Double, options: CorridorOptions): Corridor = (^.asInstanceOf[js.Dynamic].applyDynamic("createRandomAt")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], dx.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Corridor]
+    inline def createRandomAt(x: Double, y: Double, dx: Double, dy: Double, options: CorridorOptions): Corridor = (^.asInstanceOf[js.Dynamic].applyDynamic("createRandomAt")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], dx.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Corridor]
   }
   
   @JSImport("rot-js/lib/map/features", "Room")
@@ -106,20 +105,17 @@ object featuresMod {
     /**
       * Room of random size within a given dimensions
       */
-    @scala.inline
-    def createRandom(availWidth: Double, availHeight: Double, options: RoomOptions): Room = (^.asInstanceOf[js.Dynamic].applyDynamic("createRandom")(availWidth.asInstanceOf[js.Any], availHeight.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Room]
+    inline def createRandom(availWidth: Double, availHeight: Double, options: RoomOptions): Room = (^.asInstanceOf[js.Dynamic].applyDynamic("createRandom")(availWidth.asInstanceOf[js.Any], availHeight.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Room]
     
     /**
       * Room of random size, with a given doors and direction
       */
-    @scala.inline
-    def createRandomAt(x: Double, y: Double, dx: Double, dy: Double, options: RoomOptions): Room = (^.asInstanceOf[js.Dynamic].applyDynamic("createRandomAt")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], dx.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Room]
+    inline def createRandomAt(x: Double, y: Double, dx: Double, dy: Double, options: RoomOptions): Room = (^.asInstanceOf[js.Dynamic].applyDynamic("createRandomAt")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], dx.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Room]
     
     /**
       * Room of random size, positioned around center coords
       */
-    @scala.inline
-    def createRandomCenter(cx: Double, cy: Double, options: RoomOptions): Room = (^.asInstanceOf[js.Dynamic].applyDynamic("createRandomCenter")(cx.asInstanceOf[js.Any], cy.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Room]
+    inline def createRandomCenter(cx: Double, cy: Double, options: RoomOptions): Room = (^.asInstanceOf[js.Dynamic].applyDynamic("createRandomCenter")(cx.asInstanceOf[js.Any], cy.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Room]
   }
   
   trait CorridorOptions extends StObject {
@@ -128,17 +124,14 @@ object featuresMod {
   }
   object CorridorOptions {
     
-    @scala.inline
-    def apply(corridorLength: js.Tuple2[Double, Double]): CorridorOptions = {
+    inline def apply(corridorLength: js.Tuple2[Double, Double]): CorridorOptions = {
       val __obj = js.Dynamic.literal(corridorLength = corridorLength.asInstanceOf[js.Any])
       __obj.asInstanceOf[CorridorOptions]
     }
     
-    @scala.inline
-    implicit class CorridorOptionsMutableBuilder[Self <: CorridorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CorridorOptions](x: Self) {
       
-      @scala.inline
-      def setCorridorLength(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "corridorLength", value.asInstanceOf[js.Any])
+      inline def setCorridorLength(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "corridorLength", value.asInstanceOf[js.Any])
     }
   }
   
@@ -157,8 +150,7 @@ object featuresMod {
   }
   object Feature {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       create: DigCallback => Unit,
       debug: () => Unit,
       isValid: (TestPositionCallback, TestPositionCallback) => Boolean
@@ -167,17 +159,13 @@ object featuresMod {
       __obj.asInstanceOf[Feature]
     }
     
-    @scala.inline
-    implicit class FeatureMutableBuilder[Self <: Feature] (val x: Self) extends AnyVal {
+    extension [Self <: Feature](x: Self) {
       
-      @scala.inline
-      def setCreate(value: DigCallback => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      inline def setCreate(value: DigCallback => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDebug(value: () => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction0(value))
+      inline def setDebug(value: () => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsValid(value: (TestPositionCallback, TestPositionCallback) => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction2(value))
+      inline def setIsValid(value: (TestPositionCallback, TestPositionCallback) => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction2(value))
     }
   }
   
@@ -187,17 +175,14 @@ object featuresMod {
   }
   object FeatureConstructor {
     
-    @scala.inline
-    def apply(createRandomAt: (Double, Double, Double, Double, FeatureOptions) => Feature): FeatureConstructor = {
+    inline def apply(createRandomAt: (Double, Double, Double, Double, FeatureOptions) => Feature): FeatureConstructor = {
       val __obj = js.Dynamic.literal(createRandomAt = js.Any.fromFunction5(createRandomAt))
       __obj.asInstanceOf[FeatureConstructor]
     }
     
-    @scala.inline
-    implicit class FeatureConstructorMutableBuilder[Self <: FeatureConstructor] (val x: Self) extends AnyVal {
+    extension [Self <: FeatureConstructor](x: Self) {
       
-      @scala.inline
-      def setCreateRandomAt(value: (Double, Double, Double, Double, FeatureOptions) => Feature): Self = StObject.set(x, "createRandomAt", js.Any.fromFunction5(value))
+      inline def setCreateRandomAt(value: (Double, Double, Double, Double, FeatureOptions) => Feature): Self = StObject.set(x, "createRandomAt", js.Any.fromFunction5(value))
     }
   }
   
@@ -207,8 +192,7 @@ object featuresMod {
        with CorridorOptions
   object FeatureOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       corridorLength: js.Tuple2[Double, Double],
       roomHeight: js.Tuple2[Double, Double],
       roomWidth: js.Tuple2[Double, Double]
@@ -226,20 +210,16 @@ object featuresMod {
   }
   object RoomOptions {
     
-    @scala.inline
-    def apply(roomHeight: js.Tuple2[Double, Double], roomWidth: js.Tuple2[Double, Double]): RoomOptions = {
+    inline def apply(roomHeight: js.Tuple2[Double, Double], roomWidth: js.Tuple2[Double, Double]): RoomOptions = {
       val __obj = js.Dynamic.literal(roomHeight = roomHeight.asInstanceOf[js.Any], roomWidth = roomWidth.asInstanceOf[js.Any])
       __obj.asInstanceOf[RoomOptions]
     }
     
-    @scala.inline
-    implicit class RoomOptionsMutableBuilder[Self <: RoomOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RoomOptions](x: Self) {
       
-      @scala.inline
-      def setRoomHeight(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "roomHeight", value.asInstanceOf[js.Any])
+      inline def setRoomHeight(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "roomHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoomWidth(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "roomWidth", value.asInstanceOf[js.Any])
+      inline def setRoomWidth(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "roomWidth", value.asInstanceOf[js.Any])
     }
   }
   

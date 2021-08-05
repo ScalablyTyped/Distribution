@@ -11,19 +11,15 @@ trait DomainId extends StObject {
 }
 object DomainId {
   
-  @scala.inline
-  def apply(): DomainId = {
+  inline def apply(): DomainId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DomainId]
   }
   
-  @scala.inline
-  implicit class DomainIdMutableBuilder[Self <: DomainId] (val x: Self) extends AnyVal {
+  extension [Self <: DomainId](x: Self) {
     
-    @scala.inline
-    def setCustomerPrimaryDomain(value: String): Self = StObject.set(x, "customerPrimaryDomain", value.asInstanceOf[js.Any])
+    inline def setCustomerPrimaryDomain(value: String): Self = StObject.set(x, "customerPrimaryDomain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerPrimaryDomainUndefined: Self = StObject.set(x, "customerPrimaryDomain", js.undefined)
+    inline def setCustomerPrimaryDomainUndefined: Self = StObject.set(x, "customerPrimaryDomain", js.undefined)
   }
 }

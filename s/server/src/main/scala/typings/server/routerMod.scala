@@ -131,8 +131,7 @@ object routerMod {
   }
   object Router {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       del: (/* path */ String, /* middlewares */ Middleware | Middlewares, /* all */ Middlewares) => Middleware,
       error: (/* name */ String, /* middlewares */ Middleware | Middlewares, /* all */ Middlewares) => Middleware,
       get: (/* path */ String, /* middlewares */ Middleware | Middlewares, /* all */ Middlewares) => Middleware,
@@ -145,41 +144,33 @@ object routerMod {
       __obj.asInstanceOf[Router]
     }
     
-    @scala.inline
-    implicit class RouterMutableBuilder[Self <: Router] (val x: Self) extends AnyVal {
+    extension [Self <: Router](x: Self) {
       
-      @scala.inline
-      def setDel(
+      inline def setDel(
         value: (/* path */ String, /* middlewares */ Middleware | Middlewares, /* all */ Middlewares) => Middleware
       ): Self = StObject.set(x, "del", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setError(
+      inline def setError(
         value: (/* name */ String, /* middlewares */ Middleware | Middlewares, /* all */ Middlewares) => Middleware
       ): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGet(
+      inline def setGet(
         value: (/* path */ String, /* middlewares */ Middleware | Middlewares, /* all */ Middlewares) => Middleware
       ): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPost(
+      inline def setPost(
         value: (/* path */ String, /* middlewares */ Middleware | Middlewares, /* all */ Middlewares) => Middleware
       ): Self = StObject.set(x, "post", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPut(
+      inline def setPut(
         value: (/* path */ String, /* middlewares */ Middleware | Middlewares, /* all */ Middlewares) => Middleware
       ): Self = StObject.set(x, "put", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSocket(
+      inline def setSocket(
         value: (/* name */ String, /* middlewares */ Middleware | Middlewares, /* all */ Middlewares) => Middleware
       ): Self = StObject.set(x, "socket", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSub(
+      inline def setSub(
         value: (/* subdomain */ String, /* middlewares */ Middleware | Middlewares, /* all */ Middlewares) => Middleware
       ): Self = StObject.set(x, "sub", js.Any.fromFunction3(value))
     }

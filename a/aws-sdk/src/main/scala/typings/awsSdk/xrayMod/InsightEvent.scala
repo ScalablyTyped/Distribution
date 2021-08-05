@@ -33,46 +33,33 @@ trait InsightEvent extends StObject {
 }
 object InsightEvent {
   
-  @scala.inline
-  def apply(): InsightEvent = {
+  inline def apply(): InsightEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InsightEvent]
   }
   
-  @scala.inline
-  implicit class InsightEventMutableBuilder[Self <: InsightEvent] (val x: Self) extends AnyVal {
+  extension [Self <: InsightEvent](x: Self) {
     
-    @scala.inline
-    def setClientRequestImpactStatistics(value: RequestImpactStatistics): Self = StObject.set(x, "ClientRequestImpactStatistics", value.asInstanceOf[js.Any])
+    inline def setClientRequestImpactStatistics(value: RequestImpactStatistics): Self = StObject.set(x, "ClientRequestImpactStatistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestImpactStatisticsUndefined: Self = StObject.set(x, "ClientRequestImpactStatistics", js.undefined)
+    inline def setClientRequestImpactStatisticsUndefined: Self = StObject.set(x, "ClientRequestImpactStatistics", js.undefined)
     
-    @scala.inline
-    def setEventTime(value: Timestamp): Self = StObject.set(x, "EventTime", value.asInstanceOf[js.Any])
+    inline def setEventTime(value: Timestamp): Self = StObject.set(x, "EventTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTimeUndefined: Self = StObject.set(x, "EventTime", js.undefined)
+    inline def setEventTimeUndefined: Self = StObject.set(x, "EventTime", js.undefined)
     
-    @scala.inline
-    def setRootCauseServiceRequestImpactStatistics(value: RequestImpactStatistics): Self = StObject.set(x, "RootCauseServiceRequestImpactStatistics", value.asInstanceOf[js.Any])
+    inline def setRootCauseServiceRequestImpactStatistics(value: RequestImpactStatistics): Self = StObject.set(x, "RootCauseServiceRequestImpactStatistics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootCauseServiceRequestImpactStatisticsUndefined: Self = StObject.set(x, "RootCauseServiceRequestImpactStatistics", js.undefined)
+    inline def setRootCauseServiceRequestImpactStatisticsUndefined: Self = StObject.set(x, "RootCauseServiceRequestImpactStatistics", js.undefined)
     
-    @scala.inline
-    def setSummary(value: EventSummaryText): Self = StObject.set(x, "Summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: EventSummaryText): Self = StObject.set(x, "Summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryUndefined: Self = StObject.set(x, "Summary", js.undefined)
+    inline def setSummaryUndefined: Self = StObject.set(x, "Summary", js.undefined)
     
-    @scala.inline
-    def setTopAnomalousServices(value: AnomalousServiceList): Self = StObject.set(x, "TopAnomalousServices", value.asInstanceOf[js.Any])
+    inline def setTopAnomalousServices(value: AnomalousServiceList): Self = StObject.set(x, "TopAnomalousServices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopAnomalousServicesUndefined: Self = StObject.set(x, "TopAnomalousServices", js.undefined)
+    inline def setTopAnomalousServicesUndefined: Self = StObject.set(x, "TopAnomalousServices", js.undefined)
     
-    @scala.inline
-    def setTopAnomalousServicesVarargs(value: AnomalousService*): Self = StObject.set(x, "TopAnomalousServices", js.Array(value :_*))
+    inline def setTopAnomalousServicesVarargs(value: AnomalousService*): Self = StObject.set(x, "TopAnomalousServices", js.Array(value :_*))
   }
 }

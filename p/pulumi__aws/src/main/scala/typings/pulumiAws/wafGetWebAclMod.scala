@@ -11,10 +11,8 @@ object wafGetWebAclMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getWebAcl(args: GetWebAclArgs): js.Promise[GetWebAclResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWebAcl")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetWebAclResult]]
-  @scala.inline
-  def getWebAcl(args: GetWebAclArgs, opts: InvokeOptions): js.Promise[GetWebAclResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getWebAcl")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetWebAclResult]]
+  inline def getWebAcl(args: GetWebAclArgs): js.Promise[GetWebAclResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getWebAcl")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetWebAclResult]]
+  inline def getWebAcl(args: GetWebAclArgs, opts: InvokeOptions): js.Promise[GetWebAclResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getWebAcl")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetWebAclResult]]
   
   trait GetWebAclArgs extends StObject {
     
@@ -25,17 +23,14 @@ object wafGetWebAclMod {
   }
   object GetWebAclArgs {
     
-    @scala.inline
-    def apply(name: String): GetWebAclArgs = {
+    inline def apply(name: String): GetWebAclArgs = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetWebAclArgs]
     }
     
-    @scala.inline
-    implicit class GetWebAclArgsMutableBuilder[Self <: GetWebAclArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetWebAclArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -50,20 +45,16 @@ object wafGetWebAclMod {
   }
   object GetWebAclResult {
     
-    @scala.inline
-    def apply(id: String, name: String): GetWebAclResult = {
+    inline def apply(id: String, name: String): GetWebAclResult = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetWebAclResult]
     }
     
-    @scala.inline
-    implicit class GetWebAclResultMutableBuilder[Self <: GetWebAclResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetWebAclResult](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

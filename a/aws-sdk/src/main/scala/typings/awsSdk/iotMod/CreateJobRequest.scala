@@ -68,85 +68,59 @@ trait CreateJobRequest extends StObject {
 }
 object CreateJobRequest {
   
-  @scala.inline
-  def apply(jobId: JobId, targets: JobTargets): CreateJobRequest = {
+  inline def apply(jobId: JobId, targets: JobTargets): CreateJobRequest = {
     val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], targets = targets.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateJobRequest]
   }
   
-  @scala.inline
-  implicit class CreateJobRequestMutableBuilder[Self <: CreateJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateJobRequest](x: Self) {
     
-    @scala.inline
-    def setAbortConfig(value: AbortConfig): Self = StObject.set(x, "abortConfig", value.asInstanceOf[js.Any])
+    inline def setAbortConfig(value: AbortConfig): Self = StObject.set(x, "abortConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbortConfigUndefined: Self = StObject.set(x, "abortConfig", js.undefined)
+    inline def setAbortConfigUndefined: Self = StObject.set(x, "abortConfig", js.undefined)
     
-    @scala.inline
-    def setDescription(value: JobDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: JobDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDocument(value: JobDocument): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: JobDocument): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentSource(value: JobDocumentSource): Self = StObject.set(x, "documentSource", value.asInstanceOf[js.Any])
+    inline def setDocumentSource(value: JobDocumentSource): Self = StObject.set(x, "documentSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentSourceUndefined: Self = StObject.set(x, "documentSource", js.undefined)
+    inline def setDocumentSourceUndefined: Self = StObject.set(x, "documentSource", js.undefined)
     
-    @scala.inline
-    def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
+    inline def setDocumentUndefined: Self = StObject.set(x, "document", js.undefined)
     
-    @scala.inline
-    def setJobExecutionsRolloutConfig(value: JobExecutionsRolloutConfig): Self = StObject.set(x, "jobExecutionsRolloutConfig", value.asInstanceOf[js.Any])
+    inline def setJobExecutionsRolloutConfig(value: JobExecutionsRolloutConfig): Self = StObject.set(x, "jobExecutionsRolloutConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobExecutionsRolloutConfigUndefined: Self = StObject.set(x, "jobExecutionsRolloutConfig", js.undefined)
+    inline def setJobExecutionsRolloutConfigUndefined: Self = StObject.set(x, "jobExecutionsRolloutConfig", js.undefined)
     
-    @scala.inline
-    def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: JobId): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceId(value: NamespaceId): Self = StObject.set(x, "namespaceId", value.asInstanceOf[js.Any])
+    inline def setNamespaceId(value: NamespaceId): Self = StObject.set(x, "namespaceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceIdUndefined: Self = StObject.set(x, "namespaceId", js.undefined)
+    inline def setNamespaceIdUndefined: Self = StObject.set(x, "namespaceId", js.undefined)
     
-    @scala.inline
-    def setPresignedUrlConfig(value: PresignedUrlConfig): Self = StObject.set(x, "presignedUrlConfig", value.asInstanceOf[js.Any])
+    inline def setPresignedUrlConfig(value: PresignedUrlConfig): Self = StObject.set(x, "presignedUrlConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresignedUrlConfigUndefined: Self = StObject.set(x, "presignedUrlConfig", js.undefined)
+    inline def setPresignedUrlConfigUndefined: Self = StObject.set(x, "presignedUrlConfig", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTargetSelection(value: TargetSelection): Self = StObject.set(x, "targetSelection", value.asInstanceOf[js.Any])
+    inline def setTargetSelection(value: TargetSelection): Self = StObject.set(x, "targetSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetSelectionUndefined: Self = StObject.set(x, "targetSelection", js.undefined)
+    inline def setTargetSelectionUndefined: Self = StObject.set(x, "targetSelection", js.undefined)
     
-    @scala.inline
-    def setTargets(value: JobTargets): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
+    inline def setTargets(value: JobTargets): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetsVarargs(value: TargetArn*): Self = StObject.set(x, "targets", js.Array(value :_*))
+    inline def setTargetsVarargs(value: TargetArn*): Self = StObject.set(x, "targets", js.Array(value :_*))
     
-    @scala.inline
-    def setTimeoutConfig(value: TimeoutConfig): Self = StObject.set(x, "timeoutConfig", value.asInstanceOf[js.Any])
+    inline def setTimeoutConfig(value: TimeoutConfig): Self = StObject.set(x, "timeoutConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutConfigUndefined: Self = StObject.set(x, "timeoutConfig", js.undefined)
+    inline def setTimeoutConfigUndefined: Self = StObject.set(x, "timeoutConfig", js.undefined)
   }
 }

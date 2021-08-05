@@ -41,8 +41,7 @@ trait CacheStorageApi extends StObject {
 }
 object CacheStorageApi {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deleteCache: DeleteCacheRequest => js.Promise[Unit],
     deleteEntry: DeleteEntryRequest => js.Promise[Unit],
     requestCacheNames: RequestCacheNamesRequest => js.Promise[RequestCacheNamesResponse],
@@ -53,22 +52,16 @@ object CacheStorageApi {
     __obj.asInstanceOf[CacheStorageApi]
   }
   
-  @scala.inline
-  implicit class CacheStorageApiMutableBuilder[Self <: CacheStorageApi] (val x: Self) extends AnyVal {
+  extension [Self <: CacheStorageApi](x: Self) {
     
-    @scala.inline
-    def setDeleteCache(value: DeleteCacheRequest => js.Promise[Unit]): Self = StObject.set(x, "deleteCache", js.Any.fromFunction1(value))
+    inline def setDeleteCache(value: DeleteCacheRequest => js.Promise[Unit]): Self = StObject.set(x, "deleteCache", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDeleteEntry(value: DeleteEntryRequest => js.Promise[Unit]): Self = StObject.set(x, "deleteEntry", js.Any.fromFunction1(value))
+    inline def setDeleteEntry(value: DeleteEntryRequest => js.Promise[Unit]): Self = StObject.set(x, "deleteEntry", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRequestCacheNames(value: RequestCacheNamesRequest => js.Promise[RequestCacheNamesResponse]): Self = StObject.set(x, "requestCacheNames", js.Any.fromFunction1(value))
+    inline def setRequestCacheNames(value: RequestCacheNamesRequest => js.Promise[RequestCacheNamesResponse]): Self = StObject.set(x, "requestCacheNames", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRequestCachedResponse(value: RequestCachedResponseRequest => js.Promise[RequestCachedResponseResponse]): Self = StObject.set(x, "requestCachedResponse", js.Any.fromFunction1(value))
+    inline def setRequestCachedResponse(value: RequestCachedResponseRequest => js.Promise[RequestCachedResponseResponse]): Self = StObject.set(x, "requestCachedResponse", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRequestEntries(value: RequestEntriesRequest => js.Promise[RequestEntriesResponse]): Self = StObject.set(x, "requestEntries", js.Any.fromFunction1(value))
+    inline def setRequestEntries(value: RequestEntriesRequest => js.Promise[RequestEntriesResponse]): Self = StObject.set(x, "requestEntries", js.Any.fromFunction1(value))
   }
 }

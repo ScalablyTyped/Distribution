@@ -36,17 +36,14 @@ object mod extends Shortcut {
     }
     object Request {
       
-      @scala.inline
-      def apply(absoluteUrl: () => String): Request = {
+      inline def apply(absoluteUrl: () => String): Request = {
         val __obj = js.Dynamic.literal(absoluteUrl = js.Any.fromFunction0(absoluteUrl))
         __obj.asInstanceOf[Request]
       }
       
-      @scala.inline
-      implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+      extension [Self <: Request](x: Self) {
         
-        @scala.inline
-        def setAbsoluteUrl(value: () => String): Self = StObject.set(x, "absoluteUrl", js.Any.fromFunction0(value))
+        inline def setAbsoluteUrl(value: () => String): Self = StObject.set(x, "absoluteUrl", js.Any.fromFunction0(value))
       }
     }
   }

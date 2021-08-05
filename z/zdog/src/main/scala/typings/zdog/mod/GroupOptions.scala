@@ -25,25 +25,19 @@ trait GroupOptions
 }
 object GroupOptions {
   
-  @scala.inline
-  def apply(): GroupOptions = {
+  inline def apply(): GroupOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GroupOptions]
   }
   
-  @scala.inline
-  implicit class GroupOptionsMutableBuilder[Self <: GroupOptions] (val x: Self) extends AnyVal {
+  extension [Self <: GroupOptions](x: Self) {
     
-    @scala.inline
-    def setUpdateSort(value: Boolean): Self = StObject.set(x, "updateSort", value.asInstanceOf[js.Any])
+    inline def setUpdateSort(value: Boolean): Self = StObject.set(x, "updateSort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateSortUndefined: Self = StObject.set(x, "updateSort", js.undefined)
+    inline def setUpdateSortUndefined: Self = StObject.set(x, "updateSort", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

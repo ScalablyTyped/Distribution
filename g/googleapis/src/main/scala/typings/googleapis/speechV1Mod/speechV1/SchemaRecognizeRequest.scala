@@ -22,25 +22,19 @@ trait SchemaRecognizeRequest extends StObject {
 }
 object SchemaRecognizeRequest {
   
-  @scala.inline
-  def apply(): SchemaRecognizeRequest = {
+  inline def apply(): SchemaRecognizeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRecognizeRequest]
   }
   
-  @scala.inline
-  implicit class SchemaRecognizeRequestMutableBuilder[Self <: SchemaRecognizeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRecognizeRequest](x: Self) {
     
-    @scala.inline
-    def setAudio(value: SchemaRecognitionAudio): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
+    inline def setAudio(value: SchemaRecognitionAudio): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
+    inline def setAudioUndefined: Self = StObject.set(x, "audio", js.undefined)
     
-    @scala.inline
-    def setConfig(value: SchemaRecognitionConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: SchemaRecognitionConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
   }
 }

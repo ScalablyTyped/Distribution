@@ -27,31 +27,23 @@ trait SchemaVideoRecordingDetails extends StObject {
 }
 object SchemaVideoRecordingDetails {
   
-  @scala.inline
-  def apply(): SchemaVideoRecordingDetails = {
+  inline def apply(): SchemaVideoRecordingDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVideoRecordingDetails]
   }
   
-  @scala.inline
-  implicit class SchemaVideoRecordingDetailsMutableBuilder[Self <: SchemaVideoRecordingDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaVideoRecordingDetails](x: Self) {
     
-    @scala.inline
-    def setLocation(value: SchemaGeoPoint): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: SchemaGeoPoint): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationDescription(value: String): Self = StObject.set(x, "locationDescription", value.asInstanceOf[js.Any])
+    inline def setLocationDescription(value: String): Self = StObject.set(x, "locationDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationDescriptionUndefined: Self = StObject.set(x, "locationDescription", js.undefined)
+    inline def setLocationDescriptionUndefined: Self = StObject.set(x, "locationDescription", js.undefined)
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setRecordingDate(value: String): Self = StObject.set(x, "recordingDate", value.asInstanceOf[js.Any])
+    inline def setRecordingDate(value: String): Self = StObject.set(x, "recordingDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordingDateUndefined: Self = StObject.set(x, "recordingDate", js.undefined)
+    inline def setRecordingDateUndefined: Self = StObject.set(x, "recordingDate", js.undefined)
   }
 }

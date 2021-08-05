@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TileSourceEventname extends StObject
 object TileSourceEventname {
   
-  @scala.inline
-  def `open-failed`: typings.openseadragon.openseadragonStrings.`open-failed` = "open-failed".asInstanceOf[typings.openseadragon.openseadragonStrings.`open-failed`]
+  inline def `open-failed`: typings.openseadragon.openseadragonStrings.`open-failed` = "open-failed".asInstanceOf[typings.openseadragon.openseadragonStrings.`open-failed`]
   
-  @scala.inline
-  def ready: typings.openseadragon.openseadragonStrings.ready = "ready".asInstanceOf[typings.openseadragon.openseadragonStrings.ready]
+  inline def ready: typings.openseadragon.openseadragonStrings.ready = "ready".asInstanceOf[typings.openseadragon.openseadragonStrings.ready]
 }

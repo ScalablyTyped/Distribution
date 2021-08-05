@@ -23,28 +23,21 @@ trait CreatePolicyRequest extends StObject {
 }
 object CreatePolicyRequest {
   
-  @scala.inline
-  def apply(policyDocument: PolicyDocument, policyName: PolicyName): CreatePolicyRequest = {
+  inline def apply(policyDocument: PolicyDocument, policyName: PolicyName): CreatePolicyRequest = {
     val __obj = js.Dynamic.literal(policyDocument = policyDocument.asInstanceOf[js.Any], policyName = policyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePolicyRequest]
   }
   
-  @scala.inline
-  implicit class CreatePolicyRequestMutableBuilder[Self <: CreatePolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePolicyRequest](x: Self) {
     
-    @scala.inline
-    def setPolicyDocument(value: PolicyDocument): Self = StObject.set(x, "policyDocument", value.asInstanceOf[js.Any])
+    inline def setPolicyDocument(value: PolicyDocument): Self = StObject.set(x, "policyDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyName(value: PolicyName): Self = StObject.set(x, "policyName", value.asInstanceOf[js.Any])
+    inline def setPolicyName(value: PolicyName): Self = StObject.set(x, "policyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
   }
 }

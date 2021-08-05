@@ -29,37 +29,27 @@ trait Location extends StObject {
 }
 object Location {
   
-  @scala.inline
-  def apply(): Location = {
+  inline def apply(): Location = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Location]
   }
   
-  @scala.inline
-  implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
+  extension [Self <: Location](x: Self) {
     
-    @scala.inline
-    def setLatLng(value: LatLng): Self = StObject.set(x, "latLng", value.asInstanceOf[js.Any])
+    inline def setLatLng(value: LatLng): Self = StObject.set(x, "latLng", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatLngUndefined: Self = StObject.set(x, "latLng", js.undefined)
+    inline def setLatLngUndefined: Self = StObject.set(x, "latLng", js.undefined)
     
-    @scala.inline
-    def setLocationType(value: String): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
+    inline def setLocationType(value: String): Self = StObject.set(x, "locationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationTypeUndefined: Self = StObject.set(x, "locationType", js.undefined)
+    inline def setLocationTypeUndefined: Self = StObject.set(x, "locationType", js.undefined)
     
-    @scala.inline
-    def setPostalAddress(value: PostalAddress): Self = StObject.set(x, "postalAddress", value.asInstanceOf[js.Any])
+    inline def setPostalAddress(value: PostalAddress): Self = StObject.set(x, "postalAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostalAddressUndefined: Self = StObject.set(x, "postalAddress", js.undefined)
+    inline def setPostalAddressUndefined: Self = StObject.set(x, "postalAddress", js.undefined)
     
-    @scala.inline
-    def setRadiusInMiles(value: Double): Self = StObject.set(x, "radiusInMiles", value.asInstanceOf[js.Any])
+    inline def setRadiusInMiles(value: Double): Self = StObject.set(x, "radiusInMiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusInMilesUndefined: Self = StObject.set(x, "radiusInMiles", js.undefined)
+    inline def setRadiusInMilesUndefined: Self = StObject.set(x, "radiusInMiles", js.undefined)
   }
 }

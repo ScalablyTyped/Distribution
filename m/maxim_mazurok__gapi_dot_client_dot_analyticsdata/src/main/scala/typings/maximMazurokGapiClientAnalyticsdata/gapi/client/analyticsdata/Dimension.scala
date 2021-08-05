@@ -18,25 +18,19 @@ trait Dimension extends StObject {
 }
 object Dimension {
   
-  @scala.inline
-  def apply(): Dimension = {
+  inline def apply(): Dimension = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Dimension]
   }
   
-  @scala.inline
-  implicit class DimensionMutableBuilder[Self <: Dimension] (val x: Self) extends AnyVal {
+  extension [Self <: Dimension](x: Self) {
     
-    @scala.inline
-    def setDimensionExpression(value: DimensionExpression): Self = StObject.set(x, "dimensionExpression", value.asInstanceOf[js.Any])
+    inline def setDimensionExpression(value: DimensionExpression): Self = StObject.set(x, "dimensionExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionExpressionUndefined: Self = StObject.set(x, "dimensionExpression", js.undefined)
+    inline def setDimensionExpressionUndefined: Self = StObject.set(x, "dimensionExpression", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

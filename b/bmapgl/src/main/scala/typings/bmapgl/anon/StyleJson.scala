@@ -14,19 +14,15 @@ trait StyleJson
 }
 object StyleJson {
   
-  @scala.inline
-  def apply(styleJson: js.Array[MapStyleItem]): StyleJson = {
+  inline def apply(styleJson: js.Array[MapStyleItem]): StyleJson = {
     val __obj = js.Dynamic.literal(styleJson = styleJson.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleJson]
   }
   
-  @scala.inline
-  implicit class StyleJsonMutableBuilder[Self <: StyleJson] (val x: Self) extends AnyVal {
+  extension [Self <: StyleJson](x: Self) {
     
-    @scala.inline
-    def setStyleJson(value: js.Array[MapStyleItem]): Self = StObject.set(x, "styleJson", value.asInstanceOf[js.Any])
+    inline def setStyleJson(value: js.Array[MapStyleItem]): Self = StObject.set(x, "styleJson", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleJsonVarargs(value: MapStyleItem*): Self = StObject.set(x, "styleJson", js.Array(value :_*))
+    inline def setStyleJsonVarargs(value: MapStyleItem*): Self = StObject.set(x, "styleJson", js.Array(value :_*))
   }
 }

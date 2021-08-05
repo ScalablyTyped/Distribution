@@ -16,8 +16,7 @@ trait IChange extends StObject {
 }
 object IChange {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     modifiedEndLineNumber: Double,
     modifiedStartLineNumber: Double,
     originalEndLineNumber: Double,
@@ -27,19 +26,14 @@ object IChange {
     __obj.asInstanceOf[IChange]
   }
   
-  @scala.inline
-  implicit class IChangeMutableBuilder[Self <: IChange] (val x: Self) extends AnyVal {
+  extension [Self <: IChange](x: Self) {
     
-    @scala.inline
-    def setModifiedEndLineNumber(value: Double): Self = StObject.set(x, "modifiedEndLineNumber", value.asInstanceOf[js.Any])
+    inline def setModifiedEndLineNumber(value: Double): Self = StObject.set(x, "modifiedEndLineNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedStartLineNumber(value: Double): Self = StObject.set(x, "modifiedStartLineNumber", value.asInstanceOf[js.Any])
+    inline def setModifiedStartLineNumber(value: Double): Self = StObject.set(x, "modifiedStartLineNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalEndLineNumber(value: Double): Self = StObject.set(x, "originalEndLineNumber", value.asInstanceOf[js.Any])
+    inline def setOriginalEndLineNumber(value: Double): Self = StObject.set(x, "originalEndLineNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalStartLineNumber(value: Double): Self = StObject.set(x, "originalStartLineNumber", value.asInstanceOf[js.Any])
+    inline def setOriginalStartLineNumber(value: Double): Self = StObject.set(x, "originalStartLineNumber", value.asInstanceOf[js.Any])
   }
 }

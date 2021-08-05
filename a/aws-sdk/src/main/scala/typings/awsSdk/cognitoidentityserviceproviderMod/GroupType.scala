@@ -43,55 +43,39 @@ trait GroupType extends StObject {
 }
 object GroupType {
   
-  @scala.inline
-  def apply(): GroupType = {
+  inline def apply(): GroupType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GroupType]
   }
   
-  @scala.inline
-  implicit class GroupTypeMutableBuilder[Self <: GroupType] (val x: Self) extends AnyVal {
+  extension [Self <: GroupType](x: Self) {
     
-    @scala.inline
-    def setCreationDate(value: DateType): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: DateType): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
-    @scala.inline
-    def setDescription(value: DescriptionType): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: DescriptionType): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setGroupName(value: GroupNameType): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: GroupNameType): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
+    inline def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
     
-    @scala.inline
-    def setLastModifiedDate(value: DateType): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
+    inline def setLastModifiedDate(value: DateType): Self = StObject.set(x, "LastModifiedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
+    inline def setLastModifiedDateUndefined: Self = StObject.set(x, "LastModifiedDate", js.undefined)
     
-    @scala.inline
-    def setPrecedence(value: PrecedenceType): Self = StObject.set(x, "Precedence", value.asInstanceOf[js.Any])
+    inline def setPrecedence(value: PrecedenceType): Self = StObject.set(x, "Precedence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrecedenceUndefined: Self = StObject.set(x, "Precedence", js.undefined)
+    inline def setPrecedenceUndefined: Self = StObject.set(x, "Precedence", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: ArnType): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: ArnType): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
     
-    @scala.inline
-    def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
+    inline def setUserPoolId(value: UserPoolIdType): Self = StObject.set(x, "UserPoolId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPoolIdUndefined: Self = StObject.set(x, "UserPoolId", js.undefined)
+    inline def setUserPoolIdUndefined: Self = StObject.set(x, "UserPoolId", js.undefined)
   }
 }

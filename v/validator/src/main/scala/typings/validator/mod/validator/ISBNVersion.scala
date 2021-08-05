@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ISBNVersion extends StObject
 object ISBNVersion {
   
-  @scala.inline
-  def `10`: typings.validator.validatorNumbers.`10` = 10.asInstanceOf[typings.validator.validatorNumbers.`10`]
+  inline def `10`: typings.validator.validatorNumbers.`10` = 10.asInstanceOf[typings.validator.validatorNumbers.`10`]
   
-  @scala.inline
-  def `13`: typings.validator.validatorNumbers.`13` = 13.asInstanceOf[typings.validator.validatorNumbers.`13`]
+  inline def `13`: typings.validator.validatorNumbers.`13` = 13.asInstanceOf[typings.validator.validatorNumbers.`13`]
 }

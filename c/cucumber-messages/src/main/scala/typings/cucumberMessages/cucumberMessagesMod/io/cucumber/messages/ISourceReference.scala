@@ -15,31 +15,23 @@ trait ISourceReference extends StObject {
 }
 object ISourceReference {
   
-  @scala.inline
-  def apply(): ISourceReference = {
+  inline def apply(): ISourceReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISourceReference]
   }
   
-  @scala.inline
-  implicit class ISourceReferenceMutableBuilder[Self <: ISourceReference] (val x: Self) extends AnyVal {
+  extension [Self <: ISourceReference](x: Self) {
     
-    @scala.inline
-    def setLocation(value: ILocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: ILocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationNull: Self = StObject.set(x, "location", null)
+    inline def setLocationNull: Self = StObject.set(x, "location", null)
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriNull: Self = StObject.set(x, "uri", null)
+    inline def setUriNull: Self = StObject.set(x, "uri", null)
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

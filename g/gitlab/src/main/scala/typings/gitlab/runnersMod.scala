@@ -65,8 +65,7 @@ object runnersMod {
   }
   object RunnerSchema {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       active: Boolean,
       description: String,
       id: Double,
@@ -80,32 +79,23 @@ object runnersMod {
       __obj.asInstanceOf[RunnerSchema]
     }
     
-    @scala.inline
-    implicit class RunnerSchemaMutableBuilder[Self <: RunnerSchema] (val x: Self) extends AnyVal {
+    extension [Self <: RunnerSchema](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIp_address(value: String): Self = StObject.set(x, "ip_address", value.asInstanceOf[js.Any])
+      inline def setIp_address(value: String): Self = StObject.set(x, "ip_address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIs_shared(value: Boolean): Self = StObject.set(x, "is_shared", value.asInstanceOf[js.Any])
+      inline def setIs_shared(value: Boolean): Self = StObject.set(x, "is_shared", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnline(value: Boolean): Self = StObject.set(x, "online", value.asInstanceOf[js.Any])
+      inline def setOnline(value: Boolean): Self = StObject.set(x, "online", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -18,19 +18,15 @@ trait RemovePermissionInput extends StObject {
 }
 object RemovePermissionInput {
   
-  @scala.inline
-  def apply(Label: label, TopicArn: topicARN): RemovePermissionInput = {
+  inline def apply(Label: label, TopicArn: topicARN): RemovePermissionInput = {
     val __obj = js.Dynamic.literal(Label = Label.asInstanceOf[js.Any], TopicArn = TopicArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemovePermissionInput]
   }
   
-  @scala.inline
-  implicit class RemovePermissionInputMutableBuilder[Self <: RemovePermissionInput] (val x: Self) extends AnyVal {
+  extension [Self <: RemovePermissionInput](x: Self) {
     
-    @scala.inline
-    def setLabel(value: label): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: label): Self = StObject.set(x, "Label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicArn(value: topicARN): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
+    inline def setTopicArn(value: topicARN): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
   }
 }

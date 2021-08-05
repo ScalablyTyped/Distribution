@@ -43,8 +43,7 @@ object metricMod {
   }
   object BaseObserver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       bind: Labels => BoundBaseObserver,
       clear: () => Unit,
       observation: Double => Observer,
@@ -54,11 +53,9 @@ object metricMod {
       __obj.asInstanceOf[BaseObserver]
     }
     
-    @scala.inline
-    implicit class BaseObserverMutableBuilder[Self <: BaseObserver] (val x: Self) extends AnyVal {
+    extension [Self <: BaseObserver](x: Self) {
       
-      @scala.inline
-      def setObservation(value: Double => Observer): Self = StObject.set(x, "observation", js.Any.fromFunction1(value))
+      inline def setObservation(value: Double => Observer): Self = StObject.set(x, "observation", js.Any.fromFunction1(value))
     }
   }
   
@@ -73,20 +70,16 @@ object metricMod {
   }
   object BatchMetricOptions {
     
-    @scala.inline
-    def apply(): BatchMetricOptions = {
+    inline def apply(): BatchMetricOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BatchMetricOptions]
     }
     
-    @scala.inline
-    implicit class BatchMetricOptionsMutableBuilder[Self <: BatchMetricOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BatchMetricOptions](x: Self) {
       
-      @scala.inline
-      def setMaxTimeoutUpdateMS(value: Double): Self = StObject.set(x, "maxTimeoutUpdateMS", value.asInstanceOf[js.Any])
+      inline def setMaxTimeoutUpdateMS(value: Double): Self = StObject.set(x, "maxTimeoutUpdateMS", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxTimeoutUpdateMSUndefined: Self = StObject.set(x, "maxTimeoutUpdateMS", js.undefined)
+      inline def setMaxTimeoutUpdateMSUndefined: Self = StObject.set(x, "maxTimeoutUpdateMS", js.undefined)
     }
   }
   
@@ -115,17 +108,14 @@ object metricMod {
   }
   object Metric {
     
-    @scala.inline
-    def apply(clear: () => Unit): Metric = {
+    inline def apply(clear: () => Unit): Metric = {
       val __obj = js.Dynamic.literal(clear = js.Any.fromFunction0(clear))
       __obj.asInstanceOf[Metric]
     }
     
-    @scala.inline
-    implicit class MetricMutableBuilder[Self <: Metric] (val x: Self) extends AnyVal {
+    extension [Self <: Metric](x: Self) {
       
-      @scala.inline
-      def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+      inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     }
   }
   
@@ -168,56 +158,40 @@ object metricMod {
   }
   object MetricOptions {
     
-    @scala.inline
-    def apply(): MetricOptions = {
+    inline def apply(): MetricOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MetricOptions]
     }
     
-    @scala.inline
-    implicit class MetricOptionsMutableBuilder[Self <: MetricOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MetricOptions](x: Self) {
       
-      @scala.inline
-      def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setConstantLabels(value: Map[String, String]): Self = StObject.set(x, "constantLabels", value.asInstanceOf[js.Any])
+      inline def setConstantLabels(value: Map[String, String]): Self = StObject.set(x, "constantLabels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstantLabelsUndefined: Self = StObject.set(x, "constantLabels", js.undefined)
+      inline def setConstantLabelsUndefined: Self = StObject.set(x, "constantLabels", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+      inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+      inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       
-      @scala.inline
-      def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+      inline def setUnit(value: String): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+      inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
       
-      @scala.inline
-      def setValueType(value: ValueType): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
+      inline def setValueType(value: ValueType): Self = StObject.set(x, "valueType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueTypeUndefined: Self = StObject.set(x, "valueType", js.undefined)
+      inline def setValueTypeUndefined: Self = StObject.set(x, "valueType", js.undefined)
     }
   }
   
@@ -244,20 +218,16 @@ object metricMod {
   }
   object UnboundMetric {
     
-    @scala.inline
-    def apply[T](bind: Labels => T, clear: () => Unit, unbind: Labels => Unit): UnboundMetric[T] = {
+    inline def apply[T](bind: Labels => T, clear: () => Unit, unbind: Labels => Unit): UnboundMetric[T] = {
       val __obj = js.Dynamic.literal(bind = js.Any.fromFunction1(bind), clear = js.Any.fromFunction0(clear), unbind = js.Any.fromFunction1(unbind))
       __obj.asInstanceOf[UnboundMetric[T]]
     }
     
-    @scala.inline
-    implicit class UnboundMetricMutableBuilder[Self <: UnboundMetric[?], T] (val x: Self & UnboundMetric[T]) extends AnyVal {
+    extension [Self <: UnboundMetric[?], T](x: Self & UnboundMetric[T]) {
       
-      @scala.inline
-      def setBind(value: Labels => T): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
+      inline def setBind(value: Labels => T): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnbind(value: Labels => Unit): Self = StObject.set(x, "unbind", js.Any.fromFunction1(value))
+      inline def setUnbind(value: Labels => Unit): Self = StObject.set(x, "unbind", js.Any.fromFunction1(value))
     }
   }
   

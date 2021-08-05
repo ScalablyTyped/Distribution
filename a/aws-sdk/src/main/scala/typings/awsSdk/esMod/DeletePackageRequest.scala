@@ -13,16 +13,13 @@ trait DeletePackageRequest extends StObject {
 }
 object DeletePackageRequest {
   
-  @scala.inline
-  def apply(PackageID: PackageID): DeletePackageRequest = {
+  inline def apply(PackageID: PackageID): DeletePackageRequest = {
     val __obj = js.Dynamic.literal(PackageID = PackageID.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeletePackageRequest]
   }
   
-  @scala.inline
-  implicit class DeletePackageRequestMutableBuilder[Self <: DeletePackageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeletePackageRequest](x: Self) {
     
-    @scala.inline
-    def setPackageID(value: PackageID): Self = StObject.set(x, "PackageID", value.asInstanceOf[js.Any])
+    inline def setPackageID(value: PackageID): Self = StObject.set(x, "PackageID", value.asInstanceOf[js.Any])
   }
 }

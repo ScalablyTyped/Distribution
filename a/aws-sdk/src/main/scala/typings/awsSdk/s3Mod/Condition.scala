@@ -18,25 +18,19 @@ trait Condition extends StObject {
 }
 object Condition {
   
-  @scala.inline
-  def apply(): Condition = {
+  inline def apply(): Condition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Condition]
   }
   
-  @scala.inline
-  implicit class ConditionMutableBuilder[Self <: Condition] (val x: Self) extends AnyVal {
+  extension [Self <: Condition](x: Self) {
     
-    @scala.inline
-    def setHttpErrorCodeReturnedEquals(value: HttpErrorCodeReturnedEquals): Self = StObject.set(x, "HttpErrorCodeReturnedEquals", value.asInstanceOf[js.Any])
+    inline def setHttpErrorCodeReturnedEquals(value: HttpErrorCodeReturnedEquals): Self = StObject.set(x, "HttpErrorCodeReturnedEquals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpErrorCodeReturnedEqualsUndefined: Self = StObject.set(x, "HttpErrorCodeReturnedEquals", js.undefined)
+    inline def setHttpErrorCodeReturnedEqualsUndefined: Self = StObject.set(x, "HttpErrorCodeReturnedEquals", js.undefined)
     
-    @scala.inline
-    def setKeyPrefixEquals(value: KeyPrefixEquals): Self = StObject.set(x, "KeyPrefixEquals", value.asInstanceOf[js.Any])
+    inline def setKeyPrefixEquals(value: KeyPrefixEquals): Self = StObject.set(x, "KeyPrefixEquals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyPrefixEqualsUndefined: Self = StObject.set(x, "KeyPrefixEquals", js.undefined)
+    inline def setKeyPrefixEqualsUndefined: Self = StObject.set(x, "KeyPrefixEquals", js.undefined)
   }
 }

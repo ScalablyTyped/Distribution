@@ -42,9 +42,9 @@ object simpleUserSimpleUserMod {
       * Attempt reconnection up to `maxReconnectionAttempts` times.
       * @param reconnectionAttempt - Current attempt number.
       */
-    var attemptReconnection: js.Any = js.native
+    /* private */ var attemptReconnection: js.Any = js.native
     
-    var attemptingReconnection: js.Any = js.native
+    /* private */ var attemptingReconnection: js.Any = js.native
     
     /**
       * Make an outgoing call.
@@ -62,7 +62,7 @@ object simpleUserSimpleUserMod {
     def call(destination: String, inviterOptions: InviterOptions, inviterInviteOptions: InviterInviteOptions): js.Promise[Unit] = js.native
     
     /** Helper function to remove media from html elements. */
-    var cleanupMedia: js.Any = js.native
+    /* private */ var cleanupMedia: js.Any = js.native
     
     /**
       * Connect.
@@ -71,7 +71,7 @@ object simpleUserSimpleUserMod {
       */
     def connect(): js.Promise[Unit] = js.native
     
-    var connectRequested: js.Any = js.native
+    /* private */ var connectRequested: js.Any = js.native
     
     /** Media constraints. */
     /* private */ def constraints: js.Any = js.native
@@ -96,7 +96,7 @@ object simpleUserSimpleUserMod {
     def disconnect(): js.Promise[Unit] = js.native
     
     /** Helper function to enable/disable media tracks. */
-    var enableSenderTracks: js.Any = js.native
+    /* private */ var enableSenderTracks: js.Any = js.native
     
     /**
       * Hangup a call.
@@ -107,7 +107,7 @@ object simpleUserSimpleUserMod {
       */
     def hangup(): js.Promise[Unit] = js.native
     
-    var held: js.Any = js.native
+    /* private */ var held: js.Any = js.native
     
     /**
       * Hold call
@@ -130,7 +130,7 @@ object simpleUserSimpleUserMod {
       * @param session - Session to setup
       * @param referralInviterOptions - Options for any Inviter created as result of a REFER.
       */
-    var initSession: js.Any = js.native
+    /* private */ var initSession: js.Any = js.native
     
     /**
       * Return true if connected.
@@ -166,7 +166,7 @@ object simpleUserSimpleUserMod {
       */
     def localVideoTrack: js.UndefOr[MediaStreamTrack] = js.native
     
-    var logger: js.Any = js.native
+    /* private */ var logger: js.Any = js.native
     
     /**
       * Send a message.
@@ -183,7 +183,7 @@ object simpleUserSimpleUserMod {
       */
     def mute(): Unit = js.native
     
-    var options: js.Any = js.native
+    /* private */ var options: js.Any = js.native
     
     /**
       * Start receiving incoming calls.
@@ -196,9 +196,9 @@ object simpleUserSimpleUserMod {
     def register(registererOptions: RegistererOptions): js.Promise[Unit] = js.native
     def register(registererOptions: RegistererOptions, registererRegisterOptions: RegistererRegisterOptions): js.Promise[Unit] = js.native
     
-    var registerRequested: js.Any = js.native
+    /* private */ var registerRequested: js.Any = js.native
     
-    var registerer: js.Any = js.native
+    /* private */ var registerer: js.Any = js.native
     
     /**
       * The remote audio track, if available.
@@ -224,27 +224,27 @@ object simpleUserSimpleUserMod {
     def sendDTMF(tone: String): js.Promise[Unit] = js.native
     
     /** Helper function to init send then send invite. */
-    var sendInvite: js.Any = js.native
+    /* private */ var sendInvite: js.Any = js.native
     
-    var session: js.Any = js.native
+    /* private */ var session: js.Any = js.native
     
     /**
       * Puts Session on hold.
       * @param hold - Hold on if true, off if false.
       */
-    var setHold: js.Any = js.native
+    /* private */ var setHold: js.Any = js.native
     
     /**
       * Puts Session on mute.
       * @param mute - Mute on if true, off if false.
       */
-    var setMute: js.Any = js.native
+    /* private */ var setMute: js.Any = js.native
     
     /** Helper function to attach local media to html elements. */
-    var setupLocalMedia: js.Any = js.native
+    /* private */ var setupLocalMedia: js.Any = js.native
     
     /** Helper function to attach remote media to html elements. */
-    var setupRemoteMedia: js.Any = js.native
+    /* private */ var setupRemoteMedia: js.Any = js.native
     
     /**
       * End a session.
@@ -253,7 +253,7 @@ object simpleUserSimpleUserMod {
       * Resolves when the request/response is sent, otherwise rejects.
       * Use `onCallTerminated` delegate method to determine if and when Session is terminated.
       */
-    var terminate: js.Any = js.native
+    /* private */ var terminate: js.Any = js.native
     
     /**
       * Unhold call.
@@ -281,6 +281,6 @@ object simpleUserSimpleUserMod {
     def unregister(): js.Promise[Unit] = js.native
     def unregister(registererUnregisterOptions: RegistererUnregisterOptions): js.Promise[Unit] = js.native
     
-    var userAgent: js.Any = js.native
+    /* private */ var userAgent: js.Any = js.native
   }
 }

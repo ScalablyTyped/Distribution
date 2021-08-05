@@ -17,6 +17,5 @@ object global {
   @JSGlobal("PNotify")
   @js.native
   def PNotify: PNotifyConstructor = js.native
-  @scala.inline
-  def PNotify_=(x: PNotifyConstructor): Unit = js.Dynamic.global.updateDynamic("PNotify")(x.asInstanceOf[js.Any])
+  inline def PNotify_=(x: PNotifyConstructor): Unit = js.Dynamic.global.updateDynamic("PNotify")(x.asInstanceOf[js.Any])
 }

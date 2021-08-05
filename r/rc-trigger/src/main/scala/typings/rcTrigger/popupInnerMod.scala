@@ -72,8 +72,7 @@ object popupInnerMod extends Shortcut {
   }
   object PopupInnerProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       animation: AnimationType,
       motion: CSSMotionProps,
       prefixCls: String,
@@ -83,116 +82,79 @@ object popupInnerMod extends Shortcut {
       __obj.asInstanceOf[PopupInnerProps]
     }
     
-    @scala.inline
-    implicit class PopupInnerPropsMutableBuilder[Self <: PopupInnerProps] (val x: Self) extends AnyVal {
+    extension [Self <: PopupInnerProps](x: Self) {
       
-      @scala.inline
-      def setAlign(value: AlignType): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+      inline def setAlign(value: AlignType): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+      inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
       
-      @scala.inline
-      def setAnimation(value: AnimationType): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: AnimationType): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDestroyPopupOnHide(value: Boolean): Self = StObject.set(x, "destroyPopupOnHide", value.asInstanceOf[js.Any])
+      inline def setDestroyPopupOnHide(value: Boolean): Self = StObject.set(x, "destroyPopupOnHide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestroyPopupOnHideUndefined: Self = StObject.set(x, "destroyPopupOnHide", js.undefined)
+      inline def setDestroyPopupOnHideUndefined: Self = StObject.set(x, "destroyPopupOnHide", js.undefined)
       
-      @scala.inline
-      def setGetClassNameFromAlign(value: /* align */ AlignType => String): Self = StObject.set(x, "getClassNameFromAlign", js.Any.fromFunction1(value))
+      inline def setGetClassNameFromAlign(value: /* align */ AlignType => String): Self = StObject.set(x, "getClassNameFromAlign", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetClassNameFromAlignUndefined: Self = StObject.set(x, "getClassNameFromAlign", js.undefined)
+      inline def setGetClassNameFromAlignUndefined: Self = StObject.set(x, "getClassNameFromAlign", js.undefined)
       
-      @scala.inline
-      def setGetRootDomNode(value: () => HTMLElement): Self = StObject.set(x, "getRootDomNode", js.Any.fromFunction0(value))
+      inline def setGetRootDomNode(value: () => HTMLElement): Self = StObject.set(x, "getRootDomNode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRootDomNodeUndefined: Self = StObject.set(x, "getRootDomNode", js.undefined)
+      inline def setGetRootDomNodeUndefined: Self = StObject.set(x, "getRootDomNode", js.undefined)
       
-      @scala.inline
-      def setMotion(value: CSSMotionProps): Self = StObject.set(x, "motion", value.asInstanceOf[js.Any])
+      inline def setMotion(value: CSSMotionProps): Self = StObject.set(x, "motion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnAlign(value: (/* element */ HTMLElement, /* align */ AlignType) => Unit): Self = StObject.set(x, "onAlign", js.Any.fromFunction2(value))
+      inline def setOnAlign(value: (/* element */ HTMLElement, /* align */ AlignType) => Unit): Self = StObject.set(x, "onAlign", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnAlignUndefined: Self = StObject.set(x, "onAlign", js.undefined)
+      inline def setOnAlignUndefined: Self = StObject.set(x, "onAlign", js.undefined)
       
-      @scala.inline
-      def setOnMouseDown(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
+      inline def setOnMouseDown(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
+      inline def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
       
-      @scala.inline
-      def setOnMouseEnter(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
+      inline def setOnMouseEnter(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
+      inline def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
       
-      @scala.inline
-      def setOnMouseLeave(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+      inline def setOnMouseLeave(value: MouseEvent[HTMLDivElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
+      inline def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
       
-      @scala.inline
-      def setOnTouchStart(value: TouchEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
+      inline def setOnTouchStart(value: TouchEvent[HTMLDivElement] => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
+      inline def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
       
-      @scala.inline
-      def setPoint(value: Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+      inline def setPoint(value: Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
+      inline def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStretch(value: StretchType): Self = StObject.set(x, "stretch", value.asInstanceOf[js.Any])
+      inline def setStretch(value: StretchType): Self = StObject.set(x, "stretch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStretchUndefined: Self = StObject.set(x, "stretch", js.undefined)
+      inline def setStretchUndefined: Self = StObject.set(x, "stretch", js.undefined)
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTransitionName(value: TransitionNameType): Self = StObject.set(x, "transitionName", value.asInstanceOf[js.Any])
+      inline def setTransitionName(value: TransitionNameType): Self = StObject.set(x, "transitionName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
       
-      @scala.inline
-      def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+      inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+      inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     }
   }
   
@@ -204,20 +166,16 @@ object popupInnerMod extends Shortcut {
   }
   object PopupInnerRef {
     
-    @scala.inline
-    def apply(forceAlign: () => Unit, getElement: () => HTMLElement): PopupInnerRef = {
+    inline def apply(forceAlign: () => Unit, getElement: () => HTMLElement): PopupInnerRef = {
       val __obj = js.Dynamic.literal(forceAlign = js.Any.fromFunction0(forceAlign), getElement = js.Any.fromFunction0(getElement))
       __obj.asInstanceOf[PopupInnerRef]
     }
     
-    @scala.inline
-    implicit class PopupInnerRefMutableBuilder[Self <: PopupInnerRef] (val x: Self) extends AnyVal {
+    extension [Self <: PopupInnerRef](x: Self) {
       
-      @scala.inline
-      def setForceAlign(value: () => Unit): Self = StObject.set(x, "forceAlign", js.Any.fromFunction0(value))
+      inline def setForceAlign(value: () => Unit): Self = StObject.set(x, "forceAlign", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+      inline def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
     }
   }
   

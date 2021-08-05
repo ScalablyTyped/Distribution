@@ -13,19 +13,15 @@ trait FullSession extends StObject {
 }
 object FullSession {
   
-  @scala.inline
-  def apply(full: Boolean, session: ClientSession): FullSession = {
+  inline def apply(full: Boolean, session: ClientSession): FullSession = {
     val __obj = js.Dynamic.literal(full = full.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any])
     __obj.asInstanceOf[FullSession]
   }
   
-  @scala.inline
-  implicit class FullSessionMutableBuilder[Self <: FullSession] (val x: Self) extends AnyVal {
+  extension [Self <: FullSession](x: Self) {
     
-    @scala.inline
-    def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
+    inline def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: ClientSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    inline def setSession(value: ClientSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
   }
 }

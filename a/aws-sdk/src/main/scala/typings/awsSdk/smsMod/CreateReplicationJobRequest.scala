@@ -58,67 +58,47 @@ trait CreateReplicationJobRequest extends StObject {
 }
 object CreateReplicationJobRequest {
   
-  @scala.inline
-  def apply(seedReplicationTime: Timestamp, serverId: ServerId): CreateReplicationJobRequest = {
+  inline def apply(seedReplicationTime: Timestamp, serverId: ServerId): CreateReplicationJobRequest = {
     val __obj = js.Dynamic.literal(seedReplicationTime = seedReplicationTime.asInstanceOf[js.Any], serverId = serverId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateReplicationJobRequest]
   }
   
-  @scala.inline
-  implicit class CreateReplicationJobRequestMutableBuilder[Self <: CreateReplicationJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateReplicationJobRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEncrypted(value: Encrypted): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
+    inline def setEncrypted(value: Encrypted): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptedUndefined: Self = StObject.set(x, "encrypted", js.undefined)
+    inline def setEncryptedUndefined: Self = StObject.set(x, "encrypted", js.undefined)
     
-    @scala.inline
-    def setFrequency(value: Frequency): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
+    inline def setFrequency(value: Frequency): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
+    inline def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
     
-    @scala.inline
-    def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
+    inline def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
+    inline def setKmsKeyIdUndefined: Self = StObject.set(x, "kmsKeyId", js.undefined)
     
-    @scala.inline
-    def setLicenseType(value: LicenseType): Self = StObject.set(x, "licenseType", value.asInstanceOf[js.Any])
+    inline def setLicenseType(value: LicenseType): Self = StObject.set(x, "licenseType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLicenseTypeUndefined: Self = StObject.set(x, "licenseType", js.undefined)
+    inline def setLicenseTypeUndefined: Self = StObject.set(x, "licenseType", js.undefined)
     
-    @scala.inline
-    def setNumberOfRecentAmisToKeep(value: NumberOfRecentAmisToKeep): Self = StObject.set(x, "numberOfRecentAmisToKeep", value.asInstanceOf[js.Any])
+    inline def setNumberOfRecentAmisToKeep(value: NumberOfRecentAmisToKeep): Self = StObject.set(x, "numberOfRecentAmisToKeep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfRecentAmisToKeepUndefined: Self = StObject.set(x, "numberOfRecentAmisToKeep", js.undefined)
+    inline def setNumberOfRecentAmisToKeepUndefined: Self = StObject.set(x, "numberOfRecentAmisToKeep", js.undefined)
     
-    @scala.inline
-    def setRoleName(value: RoleName): Self = StObject.set(x, "roleName", value.asInstanceOf[js.Any])
+    inline def setRoleName(value: RoleName): Self = StObject.set(x, "roleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleNameUndefined: Self = StObject.set(x, "roleName", js.undefined)
+    inline def setRoleNameUndefined: Self = StObject.set(x, "roleName", js.undefined)
     
-    @scala.inline
-    def setRunOnce(value: RunOnce): Self = StObject.set(x, "runOnce", value.asInstanceOf[js.Any])
+    inline def setRunOnce(value: RunOnce): Self = StObject.set(x, "runOnce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRunOnceUndefined: Self = StObject.set(x, "runOnce", js.undefined)
+    inline def setRunOnceUndefined: Self = StObject.set(x, "runOnce", js.undefined)
     
-    @scala.inline
-    def setSeedReplicationTime(value: Timestamp): Self = StObject.set(x, "seedReplicationTime", value.asInstanceOf[js.Any])
+    inline def setSeedReplicationTime(value: Timestamp): Self = StObject.set(x, "seedReplicationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerId(value: ServerId): Self = StObject.set(x, "serverId", value.asInstanceOf[js.Any])
+    inline def setServerId(value: ServerId): Self = StObject.set(x, "serverId", value.asInstanceOf[js.Any])
   }
 }

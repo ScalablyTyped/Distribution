@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PrereleaseFeatures extends StObject
 object PrereleaseFeatures {
   
-  @scala.inline
-  def notAllowed: typings.microsoftGraph.microsoftGraphStrings.notAllowed = "notAllowed".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notAllowed]
+  inline def notAllowed: typings.microsoftGraph.microsoftGraphStrings.notAllowed = "notAllowed".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.notAllowed]
   
-  @scala.inline
-  def settingsAndExperimentations: typings.microsoftGraph.microsoftGraphStrings.settingsAndExperimentations = "settingsAndExperimentations".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.settingsAndExperimentations]
+  inline def settingsAndExperimentations: typings.microsoftGraph.microsoftGraphStrings.settingsAndExperimentations = "settingsAndExperimentations".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.settingsAndExperimentations]
   
-  @scala.inline
-  def settingsOnly: typings.microsoftGraph.microsoftGraphStrings.settingsOnly = "settingsOnly".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.settingsOnly]
+  inline def settingsOnly: typings.microsoftGraph.microsoftGraphStrings.settingsOnly = "settingsOnly".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.settingsOnly]
   
-  @scala.inline
-  def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userDefined]
+  inline def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userDefined]
 }

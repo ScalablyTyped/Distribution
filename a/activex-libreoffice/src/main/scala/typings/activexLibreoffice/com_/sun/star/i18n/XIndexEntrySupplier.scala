@@ -30,8 +30,7 @@ trait XIndexEntrySupplier
 }
 object XIndexEntrySupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getIndexCharacter: (String, Locale, String) => String,
     getIndexFollowPageWord: (Boolean, Locale) => String,
@@ -42,13 +41,10 @@ object XIndexEntrySupplier {
     __obj.asInstanceOf[XIndexEntrySupplier]
   }
   
-  @scala.inline
-  implicit class XIndexEntrySupplierMutableBuilder[Self <: XIndexEntrySupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XIndexEntrySupplier](x: Self) {
     
-    @scala.inline
-    def setGetIndexCharacter(value: (String, Locale, String) => String): Self = StObject.set(x, "getIndexCharacter", js.Any.fromFunction3(value))
+    inline def setGetIndexCharacter(value: (String, Locale, String) => String): Self = StObject.set(x, "getIndexCharacter", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetIndexFollowPageWord(value: (Boolean, Locale) => String): Self = StObject.set(x, "getIndexFollowPageWord", js.Any.fromFunction2(value))
+    inline def setGetIndexFollowPageWord(value: (Boolean, Locale) => String): Self = StObject.set(x, "getIndexFollowPageWord", js.Any.fromFunction2(value))
   }
 }

@@ -159,14 +159,11 @@ object VueI18n {
   trait CurrencyDisplay extends StObject
   object CurrencyDisplay {
     
-    @scala.inline
-    def code: typings.vueI18n.vueI18nStrings.code = "code".asInstanceOf[typings.vueI18n.vueI18nStrings.code]
+    inline def code: typings.vueI18n.vueI18nStrings.code = "code".asInstanceOf[typings.vueI18n.vueI18nStrings.code]
     
-    @scala.inline
-    def name: typings.vueI18n.vueI18nStrings.name = "name".asInstanceOf[typings.vueI18n.vueI18nStrings.name]
+    inline def name: typings.vueI18n.vueI18nStrings.name = "name".asInstanceOf[typings.vueI18n.vueI18nStrings.name]
     
-    @scala.inline
-    def symbol: typings.vueI18n.vueI18nStrings.symbol = "symbol".asInstanceOf[typings.vueI18n.vueI18nStrings.symbol]
+    inline def symbol: typings.vueI18n.vueI18nStrings.symbol = "symbol".asInstanceOf[typings.vueI18n.vueI18nStrings.symbol]
   }
   
   trait CurrencyNumberFormatOptions
@@ -191,38 +188,28 @@ object VueI18n {
   }
   object CurrencyNumberFormatOptions {
     
-    @scala.inline
-    def apply(currency: String): CurrencyNumberFormatOptions = {
+    inline def apply(currency: String): CurrencyNumberFormatOptions = {
       val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], style = "currency")
       __obj.asInstanceOf[CurrencyNumberFormatOptions]
     }
     
-    @scala.inline
-    implicit class CurrencyNumberFormatOptionsMutableBuilder[Self <: CurrencyNumberFormatOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CurrencyNumberFormatOptions](x: Self) {
       
-      @scala.inline
-      def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+      inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrencyDisplay(value: CurrencyDisplay): Self = StObject.set(x, "currencyDisplay", value.asInstanceOf[js.Any])
+      inline def setCurrencyDisplay(value: CurrencyDisplay): Self = StObject.set(x, "currencyDisplay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrencyDisplayUndefined: Self = StObject.set(x, "currencyDisplay", js.undefined)
+      inline def setCurrencyDisplayUndefined: Self = StObject.set(x, "currencyDisplay", js.undefined)
       
-      @scala.inline
-      def setFormatMatcher(value: FormatMatcher): Self = StObject.set(x, "formatMatcher", value.asInstanceOf[js.Any])
+      inline def setFormatMatcher(value: FormatMatcher): Self = StObject.set(x, "formatMatcher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatMatcherUndefined: Self = StObject.set(x, "formatMatcher", js.undefined)
+      inline def setFormatMatcherUndefined: Self = StObject.set(x, "formatMatcher", js.undefined)
       
-      @scala.inline
-      def setLocaleMatcher(value: LocaleMatcher): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
+      inline def setLocaleMatcher(value: LocaleMatcher): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
+      inline def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
       
-      @scala.inline
-      def setStyle(value: currency): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: currency): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }
   }
   
@@ -233,11 +220,9 @@ object VueI18n {
   trait DateTimeDigital extends StObject
   object DateTimeDigital {
     
-    @scala.inline
-    def `2-digit`: typings.vueI18n.vueI18nStrings.`2-digit` = "2-digit".asInstanceOf[typings.vueI18n.vueI18nStrings.`2-digit`]
+    inline def `2-digit`: typings.vueI18n.vueI18nStrings.`2-digit` = "2-digit".asInstanceOf[typings.vueI18n.vueI18nStrings.`2-digit`]
     
-    @scala.inline
-    def numeric: typings.vueI18n.vueI18nStrings.numeric = "numeric".asInstanceOf[typings.vueI18n.vueI18nStrings.numeric]
+    inline def numeric: typings.vueI18n.vueI18nStrings.numeric = "numeric".asInstanceOf[typings.vueI18n.vueI18nStrings.numeric]
   }
   
   type DateTimeFormat = StringDictionary[typings.vueI18n.mod.VueI18n.DateTimeFormatOptions]
@@ -256,14 +241,11 @@ object VueI18n {
   trait DateTimeHumanReadable extends StObject
   object DateTimeHumanReadable {
     
-    @scala.inline
-    def long: typings.vueI18n.vueI18nStrings.long = "long".asInstanceOf[typings.vueI18n.vueI18nStrings.long]
+    inline def long: typings.vueI18n.vueI18nStrings.long = "long".asInstanceOf[typings.vueI18n.vueI18nStrings.long]
     
-    @scala.inline
-    def narrow: typings.vueI18n.vueI18nStrings.narrow = "narrow".asInstanceOf[typings.vueI18n.vueI18nStrings.narrow]
+    inline def narrow: typings.vueI18n.vueI18nStrings.narrow = "narrow".asInstanceOf[typings.vueI18n.vueI18nStrings.narrow]
     
-    @scala.inline
-    def short: typings.vueI18n.vueI18nStrings.short = "short".asInstanceOf[typings.vueI18n.vueI18nStrings.short]
+    inline def short: typings.vueI18n.vueI18nStrings.short = "short".asInstanceOf[typings.vueI18n.vueI18nStrings.short]
   }
   
   type FallbackLocale = String | js.Array[String] | `false` | StringDictionary[js.Array[String]]
@@ -275,11 +257,9 @@ object VueI18n {
   trait FormatMatcher extends StObject
   object FormatMatcher {
     
-    @scala.inline
-    def basic: typings.vueI18n.vueI18nStrings.basic = "basic".asInstanceOf[typings.vueI18n.vueI18nStrings.basic]
+    inline def basic: typings.vueI18n.vueI18nStrings.basic = "basic".asInstanceOf[typings.vueI18n.vueI18nStrings.basic]
     
-    @scala.inline
-    def `best-fit`: typings.vueI18n.vueI18nStrings.`best-fit` = "best-fit".asInstanceOf[typings.vueI18n.vueI18nStrings.`best-fit`]
+    inline def `best-fit`: typings.vueI18n.vueI18nStrings.`best-fit` = "best-fit".asInstanceOf[typings.vueI18n.vueI18nStrings.`best-fit`]
   }
   
   trait FormattedNumberPart extends StObject {
@@ -290,21 +270,17 @@ object VueI18n {
   }
   object FormattedNumberPart {
     
-    @scala.inline
-    def apply(`type`: FormattedNumberPartType, value: String): FormattedNumberPart = {
+    inline def apply(`type`: FormattedNumberPartType, value: String): FormattedNumberPart = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[FormattedNumberPart]
     }
     
-    @scala.inline
-    implicit class FormattedNumberPartMutableBuilder[Self <: FormattedNumberPart] (val x: Self) extends AnyVal {
+    extension [Self <: FormattedNumberPart](x: Self) {
       
-      @scala.inline
-      def setType(value: FormattedNumberPartType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: FormattedNumberPartType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -324,38 +300,27 @@ object VueI18n {
   trait FormattedNumberPartType extends StObject
   object FormattedNumberPartType {
     
-    @scala.inline
-    def currency: typings.vueI18n.vueI18nStrings.currency = "currency".asInstanceOf[typings.vueI18n.vueI18nStrings.currency]
+    inline def currency: typings.vueI18n.vueI18nStrings.currency = "currency".asInstanceOf[typings.vueI18n.vueI18nStrings.currency]
     
-    @scala.inline
-    def decimal: typings.vueI18n.vueI18nStrings.decimal = "decimal".asInstanceOf[typings.vueI18n.vueI18nStrings.decimal]
+    inline def decimal: typings.vueI18n.vueI18nStrings.decimal = "decimal".asInstanceOf[typings.vueI18n.vueI18nStrings.decimal]
     
-    @scala.inline
-    def fraction: typings.vueI18n.vueI18nStrings.fraction = "fraction".asInstanceOf[typings.vueI18n.vueI18nStrings.fraction]
+    inline def fraction: typings.vueI18n.vueI18nStrings.fraction = "fraction".asInstanceOf[typings.vueI18n.vueI18nStrings.fraction]
     
-    @scala.inline
-    def group: typings.vueI18n.vueI18nStrings.group = "group".asInstanceOf[typings.vueI18n.vueI18nStrings.group]
+    inline def group: typings.vueI18n.vueI18nStrings.group = "group".asInstanceOf[typings.vueI18n.vueI18nStrings.group]
     
-    @scala.inline
-    def infinity: typings.vueI18n.vueI18nStrings.infinity = "infinity".asInstanceOf[typings.vueI18n.vueI18nStrings.infinity]
+    inline def infinity: typings.vueI18n.vueI18nStrings.infinity = "infinity".asInstanceOf[typings.vueI18n.vueI18nStrings.infinity]
     
-    @scala.inline
-    def integer: typings.vueI18n.vueI18nStrings.integer = "integer".asInstanceOf[typings.vueI18n.vueI18nStrings.integer]
+    inline def integer: typings.vueI18n.vueI18nStrings.integer = "integer".asInstanceOf[typings.vueI18n.vueI18nStrings.integer]
     
-    @scala.inline
-    def literal: typings.vueI18n.vueI18nStrings.literal = "literal".asInstanceOf[typings.vueI18n.vueI18nStrings.literal]
+    inline def literal: typings.vueI18n.vueI18nStrings.literal = "literal".asInstanceOf[typings.vueI18n.vueI18nStrings.literal]
     
-    @scala.inline
-    def minusSign: typings.vueI18n.vueI18nStrings.minusSign = "minusSign".asInstanceOf[typings.vueI18n.vueI18nStrings.minusSign]
+    inline def minusSign: typings.vueI18n.vueI18nStrings.minusSign = "minusSign".asInstanceOf[typings.vueI18n.vueI18nStrings.minusSign]
     
-    @scala.inline
-    def nan: typings.vueI18n.vueI18nStrings.nan = "nan".asInstanceOf[typings.vueI18n.vueI18nStrings.nan]
+    inline def nan: typings.vueI18n.vueI18nStrings.nan = "nan".asInstanceOf[typings.vueI18n.vueI18nStrings.nan]
     
-    @scala.inline
-    def percentSign: typings.vueI18n.vueI18nStrings.percentSign = "percentSign".asInstanceOf[typings.vueI18n.vueI18nStrings.percentSign]
+    inline def percentSign: typings.vueI18n.vueI18nStrings.percentSign = "percentSign".asInstanceOf[typings.vueI18n.vueI18nStrings.percentSign]
     
-    @scala.inline
-    def plusSign: typings.vueI18n.vueI18nStrings.plusSign = "plusSign".asInstanceOf[typings.vueI18n.vueI18nStrings.plusSign]
+    inline def plusSign: typings.vueI18n.vueI18nStrings.plusSign = "plusSign".asInstanceOf[typings.vueI18n.vueI18nStrings.plusSign]
   }
   
   @js.native
@@ -410,139 +375,96 @@ object VueI18n {
   }
   object I18nOptions {
     
-    @scala.inline
-    def apply(): typings.vueI18n.mod.VueI18n.I18nOptions = {
+    inline def apply(): typings.vueI18n.mod.VueI18n.I18nOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.vueI18n.mod.VueI18n.I18nOptions]
     }
     
-    @scala.inline
-    implicit class I18nOptionsMutableBuilder[Self <: typings.vueI18n.mod.VueI18n.I18nOptions] (val x: Self) extends AnyVal {
+    extension [Self <: typings.vueI18n.mod.VueI18n.I18nOptions](x: Self) {
       
-      @scala.inline
-      def setComponentInstanceCreatedListener(value: (/* newVm */ VueI18n & IVueI18n, /* rootVm */ VueI18n & IVueI18n) => Unit): Self = StObject.set(x, "componentInstanceCreatedListener", js.Any.fromFunction2(value))
+      inline def setComponentInstanceCreatedListener(value: (/* newVm */ VueI18n & IVueI18n, /* rootVm */ VueI18n & IVueI18n) => Unit): Self = StObject.set(x, "componentInstanceCreatedListener", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setComponentInstanceCreatedListenerUndefined: Self = StObject.set(x, "componentInstanceCreatedListener", js.undefined)
+      inline def setComponentInstanceCreatedListenerUndefined: Self = StObject.set(x, "componentInstanceCreatedListener", js.undefined)
       
-      @scala.inline
-      def setDateTimeFormats(value: typings.vueI18n.mod.VueI18n.DateTimeFormats): Self = StObject.set(x, "dateTimeFormats", value.asInstanceOf[js.Any])
+      inline def setDateTimeFormats(value: typings.vueI18n.mod.VueI18n.DateTimeFormats): Self = StObject.set(x, "dateTimeFormats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateTimeFormatsUndefined: Self = StObject.set(x, "dateTimeFormats", js.undefined)
+      inline def setDateTimeFormatsUndefined: Self = StObject.set(x, "dateTimeFormats", js.undefined)
       
-      @scala.inline
-      def setEscapeParameterHtml(value: Boolean): Self = StObject.set(x, "escapeParameterHtml", value.asInstanceOf[js.Any])
+      inline def setEscapeParameterHtml(value: Boolean): Self = StObject.set(x, "escapeParameterHtml", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeParameterHtmlUndefined: Self = StObject.set(x, "escapeParameterHtml", js.undefined)
+      inline def setEscapeParameterHtmlUndefined: Self = StObject.set(x, "escapeParameterHtml", js.undefined)
       
-      @scala.inline
-      def setFallbackLocale(value: typings.vueI18n.mod.VueI18n.FallbackLocale): Self = StObject.set(x, "fallbackLocale", value.asInstanceOf[js.Any])
+      inline def setFallbackLocale(value: typings.vueI18n.mod.VueI18n.FallbackLocale): Self = StObject.set(x, "fallbackLocale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackLocaleUndefined: Self = StObject.set(x, "fallbackLocale", js.undefined)
+      inline def setFallbackLocaleUndefined: Self = StObject.set(x, "fallbackLocale", js.undefined)
       
-      @scala.inline
-      def setFallbackLocaleVarargs(value: String*): Self = StObject.set(x, "fallbackLocale", js.Array(value :_*))
+      inline def setFallbackLocaleVarargs(value: String*): Self = StObject.set(x, "fallbackLocale", js.Array(value :_*))
       
-      @scala.inline
-      def setFallbackRoot(value: Boolean): Self = StObject.set(x, "fallbackRoot", value.asInstanceOf[js.Any])
+      inline def setFallbackRoot(value: Boolean): Self = StObject.set(x, "fallbackRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackRootUndefined: Self = StObject.set(x, "fallbackRoot", js.undefined)
+      inline def setFallbackRootUndefined: Self = StObject.set(x, "fallbackRoot", js.undefined)
       
-      @scala.inline
-      def setFormatFallbackMessages(value: Boolean): Self = StObject.set(x, "formatFallbackMessages", value.asInstanceOf[js.Any])
+      inline def setFormatFallbackMessages(value: Boolean): Self = StObject.set(x, "formatFallbackMessages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatFallbackMessagesUndefined: Self = StObject.set(x, "formatFallbackMessages", js.undefined)
+      inline def setFormatFallbackMessagesUndefined: Self = StObject.set(x, "formatFallbackMessages", js.undefined)
       
-      @scala.inline
-      def setFormatter(value: typings.vueI18n.mod.VueI18n.Formatter): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
+      inline def setFormatter(value: typings.vueI18n.mod.VueI18n.Formatter): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+      inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
       
-      @scala.inline
-      def setLocale(value: typings.vueI18n.mod.VueI18n.Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: typings.vueI18n.mod.VueI18n.Locale): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setMessages(value: typings.vueI18n.mod.VueI18n.LocaleMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      inline def setMessages(value: typings.vueI18n.mod.VueI18n.LocaleMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+      inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
       
-      @scala.inline
-      def setMissing(
+      inline def setMissing(
         value: (/* locale */ typings.vueI18n.mod.VueI18n.Locale, /* key */ typings.vueI18n.mod.VueI18n.Path, /* vm */ Vue | Null, /* values */ js.Any) => String | Unit
       ): Self = StObject.set(x, "missing", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
+      inline def setMissingUndefined: Self = StObject.set(x, "missing", js.undefined)
       
-      @scala.inline
-      def setModifiers(value: Modifiers): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+      inline def setModifiers(value: Modifiers): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
+      inline def setModifiersUndefined: Self = StObject.set(x, "modifiers", js.undefined)
       
-      @scala.inline
-      def setNumberFormats(value: typings.vueI18n.mod.VueI18n.NumberFormats): Self = StObject.set(x, "numberFormats", value.asInstanceOf[js.Any])
+      inline def setNumberFormats(value: typings.vueI18n.mod.VueI18n.NumberFormats): Self = StObject.set(x, "numberFormats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberFormatsUndefined: Self = StObject.set(x, "numberFormats", js.undefined)
+      inline def setNumberFormatsUndefined: Self = StObject.set(x, "numberFormats", js.undefined)
       
-      @scala.inline
-      def setPluralizationRules(value: PluralizationRulesMap): Self = StObject.set(x, "pluralizationRules", value.asInstanceOf[js.Any])
+      inline def setPluralizationRules(value: PluralizationRulesMap): Self = StObject.set(x, "pluralizationRules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluralizationRulesUndefined: Self = StObject.set(x, "pluralizationRules", js.undefined)
+      inline def setPluralizationRulesUndefined: Self = StObject.set(x, "pluralizationRules", js.undefined)
       
-      @scala.inline
-      def setPostTranslation(value: (/* str */ String, /* key */ js.UndefOr[String]) => String): Self = StObject.set(x, "postTranslation", js.Any.fromFunction2(value))
+      inline def setPostTranslation(value: (/* str */ String, /* key */ js.UndefOr[String]) => String): Self = StObject.set(x, "postTranslation", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPostTranslationUndefined: Self = StObject.set(x, "postTranslation", js.undefined)
+      inline def setPostTranslationUndefined: Self = StObject.set(x, "postTranslation", js.undefined)
       
-      @scala.inline
-      def setPreserveDirectiveContent(value: Boolean): Self = StObject.set(x, "preserveDirectiveContent", value.asInstanceOf[js.Any])
+      inline def setPreserveDirectiveContent(value: Boolean): Self = StObject.set(x, "preserveDirectiveContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveDirectiveContentUndefined: Self = StObject.set(x, "preserveDirectiveContent", js.undefined)
+      inline def setPreserveDirectiveContentUndefined: Self = StObject.set(x, "preserveDirectiveContent", js.undefined)
       
-      @scala.inline
-      def setSharedMessages(value: typings.vueI18n.mod.VueI18n.LocaleMessages): Self = StObject.set(x, "sharedMessages", value.asInstanceOf[js.Any])
+      inline def setSharedMessages(value: typings.vueI18n.mod.VueI18n.LocaleMessages): Self = StObject.set(x, "sharedMessages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSharedMessagesUndefined: Self = StObject.set(x, "sharedMessages", js.undefined)
+      inline def setSharedMessagesUndefined: Self = StObject.set(x, "sharedMessages", js.undefined)
       
-      @scala.inline
-      def setSilentFallbackWarn(value: Boolean | RegExp): Self = StObject.set(x, "silentFallbackWarn", value.asInstanceOf[js.Any])
+      inline def setSilentFallbackWarn(value: Boolean | RegExp): Self = StObject.set(x, "silentFallbackWarn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilentFallbackWarnUndefined: Self = StObject.set(x, "silentFallbackWarn", js.undefined)
+      inline def setSilentFallbackWarnUndefined: Self = StObject.set(x, "silentFallbackWarn", js.undefined)
       
-      @scala.inline
-      def setSilentTranslationWarn(value: Boolean | RegExp): Self = StObject.set(x, "silentTranslationWarn", value.asInstanceOf[js.Any])
+      inline def setSilentTranslationWarn(value: Boolean | RegExp): Self = StObject.set(x, "silentTranslationWarn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilentTranslationWarnUndefined: Self = StObject.set(x, "silentTranslationWarn", js.undefined)
+      inline def setSilentTranslationWarnUndefined: Self = StObject.set(x, "silentTranslationWarn", js.undefined)
       
-      @scala.inline
-      def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+      inline def setSync(value: Boolean): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
+      inline def setSyncUndefined: Self = StObject.set(x, "sync", js.undefined)
       
-      @scala.inline
-      def setWarnHtmlInMessage(value: typings.vueI18n.mod.VueI18n.WarnHtmlInMessageLevel): Self = StObject.set(x, "warnHtmlInMessage", value.asInstanceOf[js.Any])
+      inline def setWarnHtmlInMessage(value: typings.vueI18n.mod.VueI18n.WarnHtmlInMessageLevel): Self = StObject.set(x, "warnHtmlInMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarnHtmlInMessageUndefined: Self = StObject.set(x, "warnHtmlInMessage", js.undefined)
+      inline def setWarnHtmlInMessageUndefined: Self = StObject.set(x, "warnHtmlInMessage", js.undefined)
     }
   }
   
@@ -554,20 +476,16 @@ object VueI18n {
   }
   object IntlAvailability {
     
-    @scala.inline
-    def apply(dateTimeFormat: Boolean, numberFormat: Boolean): typings.vueI18n.mod.VueI18n.IntlAvailability = {
+    inline def apply(dateTimeFormat: Boolean, numberFormat: Boolean): typings.vueI18n.mod.VueI18n.IntlAvailability = {
       val __obj = js.Dynamic.literal(dateTimeFormat = dateTimeFormat.asInstanceOf[js.Any], numberFormat = numberFormat.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.vueI18n.mod.VueI18n.IntlAvailability]
     }
     
-    @scala.inline
-    implicit class IntlAvailabilityMutableBuilder[Self <: typings.vueI18n.mod.VueI18n.IntlAvailability] (val x: Self) extends AnyVal {
+    extension [Self <: typings.vueI18n.mod.VueI18n.IntlAvailability](x: Self) {
       
-      @scala.inline
-      def setDateTimeFormat(value: Boolean): Self = StObject.set(x, "dateTimeFormat", value.asInstanceOf[js.Any])
+      inline def setDateTimeFormat(value: Boolean): Self = StObject.set(x, "dateTimeFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberFormat(value: Boolean): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
+      inline def setNumberFormat(value: Boolean): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
     }
   }
   
@@ -580,11 +498,9 @@ object VueI18n {
   trait LocaleMatcher extends StObject
   object LocaleMatcher {
     
-    @scala.inline
-    def `best-fit`: typings.vueI18n.vueI18nStrings.`best-fit` = "best-fit".asInstanceOf[typings.vueI18n.vueI18nStrings.`best-fit`]
+    inline def `best-fit`: typings.vueI18n.vueI18nStrings.`best-fit` = "best-fit".asInstanceOf[typings.vueI18n.vueI18nStrings.`best-fit`]
     
-    @scala.inline
-    def lookup: typings.vueI18n.vueI18nStrings.lookup = "lookup".asInstanceOf[typings.vueI18n.vueI18nStrings.lookup]
+    inline def lookup: typings.vueI18n.vueI18nStrings.lookup = "lookup".asInstanceOf[typings.vueI18n.vueI18nStrings.lookup]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -601,8 +517,7 @@ object VueI18n {
        with _LocaleMessage
   object LocaleMessageArray {
     
-    @scala.inline
-    def apply(): typings.vueI18n.mod.VueI18n.LocaleMessageArray = {
+    inline def apply(): typings.vueI18n.mod.VueI18n.LocaleMessageArray = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.vueI18n.mod.VueI18n.LocaleMessageArray]
     }
@@ -614,8 +529,7 @@ object VueI18n {
        with _LocaleMessage
   object LocaleMessageObject {
     
-    @scala.inline
-    def apply(): typings.vueI18n.mod.VueI18n.LocaleMessageObject = {
+    inline def apply(): typings.vueI18n.mod.VueI18n.LocaleMessageObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.vueI18n.mod.VueI18n.LocaleMessageObject]
     }
@@ -631,20 +545,16 @@ object VueI18n {
   }
   object MessageContext {
     
-    @scala.inline
-    def apply(list: Double => js.Any, named: String => js.Any): typings.vueI18n.mod.VueI18n.MessageContext = {
+    inline def apply(list: Double => js.Any, named: String => js.Any): typings.vueI18n.mod.VueI18n.MessageContext = {
       val __obj = js.Dynamic.literal(list = js.Any.fromFunction1(list), named = js.Any.fromFunction1(named))
       __obj.asInstanceOf[typings.vueI18n.mod.VueI18n.MessageContext]
     }
     
-    @scala.inline
-    implicit class MessageContextMutableBuilder[Self <: typings.vueI18n.mod.VueI18n.MessageContext] (val x: Self) extends AnyVal {
+    extension [Self <: typings.vueI18n.mod.VueI18n.MessageContext](x: Self) {
       
-      @scala.inline
-      def setList(value: Double => js.Any): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
+      inline def setList(value: Double => js.Any): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNamed(value: String => js.Any): Self = StObject.set(x, "named", js.Any.fromFunction1(value))
+      inline def setNamed(value: String => js.Any): Self = StObject.set(x, "named", js.Any.fromFunction1(value))
     }
   }
   
@@ -725,80 +635,56 @@ object VueI18n {
   }
   object SpecificDateTimeFormatOptions {
     
-    @scala.inline
-    def apply(): SpecificDateTimeFormatOptions = {
+    inline def apply(): SpecificDateTimeFormatOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SpecificDateTimeFormatOptions]
     }
     
-    @scala.inline
-    implicit class SpecificDateTimeFormatOptionsMutableBuilder[Self <: SpecificDateTimeFormatOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SpecificDateTimeFormatOptions](x: Self) {
       
-      @scala.inline
-      def setDay(value: DateTimeDigital): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
+      inline def setDay(value: DateTimeDigital): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
+      inline def setDayUndefined: Self = StObject.set(x, "day", js.undefined)
       
-      @scala.inline
-      def setEra(value: DateTimeHumanReadable): Self = StObject.set(x, "era", value.asInstanceOf[js.Any])
+      inline def setEra(value: DateTimeHumanReadable): Self = StObject.set(x, "era", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEraUndefined: Self = StObject.set(x, "era", js.undefined)
+      inline def setEraUndefined: Self = StObject.set(x, "era", js.undefined)
       
-      @scala.inline
-      def setFormatMatcher(value: FormatMatcher): Self = StObject.set(x, "formatMatcher", value.asInstanceOf[js.Any])
+      inline def setFormatMatcher(value: FormatMatcher): Self = StObject.set(x, "formatMatcher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatMatcherUndefined: Self = StObject.set(x, "formatMatcher", js.undefined)
+      inline def setFormatMatcherUndefined: Self = StObject.set(x, "formatMatcher", js.undefined)
       
-      @scala.inline
-      def setHour(value: DateTimeDigital): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
+      inline def setHour(value: DateTimeDigital): Self = StObject.set(x, "hour", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHourUndefined: Self = StObject.set(x, "hour", js.undefined)
+      inline def setHourUndefined: Self = StObject.set(x, "hour", js.undefined)
       
-      @scala.inline
-      def setLocaleMatcher(value: LocaleMatcher): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
+      inline def setLocaleMatcher(value: LocaleMatcher): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
+      inline def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
       
-      @scala.inline
-      def setMinute(value: DateTimeDigital): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
+      inline def setMinute(value: DateTimeDigital): Self = StObject.set(x, "minute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinuteUndefined: Self = StObject.set(x, "minute", js.undefined)
+      inline def setMinuteUndefined: Self = StObject.set(x, "minute", js.undefined)
       
-      @scala.inline
-      def setMonth(value: DateTimeDigital | DateTimeHumanReadable): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+      inline def setMonth(value: DateTimeDigital | DateTimeHumanReadable): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
+      inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
       
-      @scala.inline
-      def setSecond(value: DateTimeDigital): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
+      inline def setSecond(value: DateTimeDigital): Self = StObject.set(x, "second", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecondUndefined: Self = StObject.set(x, "second", js.undefined)
+      inline def setSecondUndefined: Self = StObject.set(x, "second", js.undefined)
       
-      @scala.inline
-      def setTimeZoneName(value: long | short): Self = StObject.set(x, "timeZoneName", value.asInstanceOf[js.Any])
+      inline def setTimeZoneName(value: long | short): Self = StObject.set(x, "timeZoneName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeZoneNameUndefined: Self = StObject.set(x, "timeZoneName", js.undefined)
+      inline def setTimeZoneNameUndefined: Self = StObject.set(x, "timeZoneName", js.undefined)
       
-      @scala.inline
-      def setWeekday(value: DateTimeHumanReadable): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
+      inline def setWeekday(value: DateTimeHumanReadable): Self = StObject.set(x, "weekday", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekdayUndefined: Self = StObject.set(x, "weekday", js.undefined)
+      inline def setWeekdayUndefined: Self = StObject.set(x, "weekday", js.undefined)
       
-      @scala.inline
-      def setYear(value: DateTimeDigital): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
+      inline def setYear(value: DateTimeDigital): Self = StObject.set(x, "year", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
+      inline def setYearUndefined: Self = StObject.set(x, "year", js.undefined)
     }
   }
   
@@ -820,38 +706,28 @@ object VueI18n {
   }
   object SpecificNumberFormatOptions {
     
-    @scala.inline
-    def apply(): SpecificNumberFormatOptions = {
+    inline def apply(): SpecificNumberFormatOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SpecificNumberFormatOptions]
     }
     
-    @scala.inline
-    implicit class SpecificNumberFormatOptionsMutableBuilder[Self <: SpecificNumberFormatOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SpecificNumberFormatOptions](x: Self) {
       
-      @scala.inline
-      def setCurrencyDisplay(value: CurrencyDisplay): Self = StObject.set(x, "currencyDisplay", value.asInstanceOf[js.Any])
+      inline def setCurrencyDisplay(value: CurrencyDisplay): Self = StObject.set(x, "currencyDisplay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrencyDisplayUndefined: Self = StObject.set(x, "currencyDisplay", js.undefined)
+      inline def setCurrencyDisplayUndefined: Self = StObject.set(x, "currencyDisplay", js.undefined)
       
-      @scala.inline
-      def setFormatMatcher(value: FormatMatcher): Self = StObject.set(x, "formatMatcher", value.asInstanceOf[js.Any])
+      inline def setFormatMatcher(value: FormatMatcher): Self = StObject.set(x, "formatMatcher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormatMatcherUndefined: Self = StObject.set(x, "formatMatcher", js.undefined)
+      inline def setFormatMatcherUndefined: Self = StObject.set(x, "formatMatcher", js.undefined)
       
-      @scala.inline
-      def setLocaleMatcher(value: LocaleMatcher): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
+      inline def setLocaleMatcher(value: LocaleMatcher): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
+      inline def setLocaleMatcherUndefined: Self = StObject.set(x, "localeMatcher", js.undefined)
       
-      @scala.inline
-      def setStyle(value: decimal | percent): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: decimal | percent): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -867,27 +743,22 @@ object VueI18n {
   trait WarnHtmlInMessageLevel extends StObject
   object WarnHtmlInMessageLevel {
     
-    @scala.inline
-    def error: typings.vueI18n.vueI18nStrings.error = "error".asInstanceOf[typings.vueI18n.vueI18nStrings.error]
+    inline def error: typings.vueI18n.vueI18nStrings.error = "error".asInstanceOf[typings.vueI18n.vueI18nStrings.error]
     
-    @scala.inline
-    def off: typings.vueI18n.vueI18nStrings.off = "off".asInstanceOf[typings.vueI18n.vueI18nStrings.off]
+    inline def off: typings.vueI18n.vueI18nStrings.off = "off".asInstanceOf[typings.vueI18n.vueI18nStrings.off]
     
-    @scala.inline
-    def warn: typings.vueI18n.vueI18nStrings.warn = "warn".asInstanceOf[typings.vueI18n.vueI18nStrings.warn]
+    inline def warn: typings.vueI18n.vueI18nStrings.warn = "warn".asInstanceOf[typings.vueI18n.vueI18nStrings.warn]
   }
   
   trait _LocaleMessage extends StObject
   object _LocaleMessage {
     
-    @scala.inline
-    def LocaleMessageArray(): typings.vueI18n.mod.VueI18n.LocaleMessageArray = {
+    inline def LocaleMessageArray(): typings.vueI18n.mod.VueI18n.LocaleMessageArray = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.vueI18n.mod.VueI18n.LocaleMessageArray]
     }
     
-    @scala.inline
-    def LocaleMessageObject(): typings.vueI18n.mod.VueI18n.LocaleMessageObject = {
+    inline def LocaleMessageObject(): typings.vueI18n.mod.VueI18n.LocaleMessageObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.vueI18n.mod.VueI18n.LocaleMessageObject]
     }
@@ -896,14 +767,12 @@ object VueI18n {
   trait _NumberFormatOptions extends StObject
   object _NumberFormatOptions {
     
-    @scala.inline
-    def CurrencyNumberFormatOptions(currency: String): typings.vueI18n.mod.VueI18n.CurrencyNumberFormatOptions = {
+    inline def CurrencyNumberFormatOptions(currency: String): typings.vueI18n.mod.VueI18n.CurrencyNumberFormatOptions = {
       val __obj = js.Dynamic.literal(currency = currency.asInstanceOf[js.Any], style = "currency")
       __obj.asInstanceOf[typings.vueI18n.mod.VueI18n.CurrencyNumberFormatOptions]
     }
     
-    @scala.inline
-    def SpecificNumberFormatOptions(): typings.vueI18n.mod.VueI18n.SpecificNumberFormatOptions = {
+    inline def SpecificNumberFormatOptions(): typings.vueI18n.mod.VueI18n.SpecificNumberFormatOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.vueI18n.mod.VueI18n.SpecificNumberFormatOptions]
     }

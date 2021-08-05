@@ -23,8 +23,7 @@ trait XScriptListener
 }
 object XScriptListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     approveFiring: ScriptEvent => js.Any,
     disposing: EventObject => Unit,
@@ -36,13 +35,10 @@ object XScriptListener {
     __obj.asInstanceOf[XScriptListener]
   }
   
-  @scala.inline
-  implicit class XScriptListenerMutableBuilder[Self <: XScriptListener] (val x: Self) extends AnyVal {
+  extension [Self <: XScriptListener](x: Self) {
     
-    @scala.inline
-    def setApproveFiring(value: ScriptEvent => js.Any): Self = StObject.set(x, "approveFiring", js.Any.fromFunction1(value))
+    inline def setApproveFiring(value: ScriptEvent => js.Any): Self = StObject.set(x, "approveFiring", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFiring(value: ScriptEvent => Unit): Self = StObject.set(x, "firing", js.Any.fromFunction1(value))
+    inline def setFiring(value: ScriptEvent => Unit): Self = StObject.set(x, "firing", js.Any.fromFunction1(value))
   }
 }

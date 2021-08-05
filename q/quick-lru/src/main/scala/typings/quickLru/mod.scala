@@ -45,23 +45,18 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply[KeyType, ValueType](maxSize: Double): Options[KeyType, ValueType] = {
+    inline def apply[KeyType, ValueType](maxSize: Double): Options[KeyType, ValueType] = {
       val __obj = js.Dynamic.literal(maxSize = maxSize.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options[KeyType, ValueType]]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[?, ?], KeyType, ValueType] (val x: Self & (Options[KeyType, ValueType])) extends AnyVal {
+    extension [Self <: Options[?, ?], KeyType, ValueType](x: Self & (Options[KeyType, ValueType])) {
       
-      @scala.inline
-      def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+      inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnEviction(value: (/* key */ KeyType, /* value */ ValueType) => Unit): Self = StObject.set(x, "onEviction", js.Any.fromFunction2(value))
+      inline def setOnEviction(value: (/* key */ KeyType, /* value */ ValueType) => Unit): Self = StObject.set(x, "onEviction", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnEvictionUndefined: Self = StObject.set(x, "onEviction", js.undefined)
+      inline def setOnEvictionUndefined: Self = StObject.set(x, "onEviction", js.undefined)
     }
   }
   

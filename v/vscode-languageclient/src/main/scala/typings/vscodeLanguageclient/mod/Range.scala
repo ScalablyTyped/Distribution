@@ -17,15 +17,13 @@ object Range {
     * @param endLine The end line number.
     * @param endCharacter The end character.
     */
-  @scala.inline
-  def create(startLine: Double, startCharacter: Double, endLine: Double, endCharacter: Double): typings.vscodeLanguageserverTypes.mod.Range = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(startLine.asInstanceOf[js.Any], startCharacter.asInstanceOf[js.Any], endLine.asInstanceOf[js.Any], endCharacter.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.Range]
+  inline def create(startLine: Double, startCharacter: Double, endLine: Double, endCharacter: Double): typings.vscodeLanguageserverTypes.mod.Range = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(startLine.asInstanceOf[js.Any], startCharacter.asInstanceOf[js.Any], endLine.asInstanceOf[js.Any], endCharacter.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.Range]
   /**
     * Create a new Range liternal.
     * @param start The range's start position.
     * @param end The range's end position.
     */
-  @scala.inline
-  def create(
+  inline def create(
     start: typings.vscodeLanguageserverTypes.mod.Position,
     end: typings.vscodeLanguageserverTypes.mod.Position
   ): typings.vscodeLanguageserverTypes.mod.Range = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[typings.vscodeLanguageserverTypes.mod.Range]
@@ -33,6 +31,5 @@ object Range {
   /**
     * Checks whether the given literal conforms to the [Range](#Range) interface.
     */
-  @scala.inline
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Range */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Range */ Boolean]
+  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Range */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Range */ Boolean]
 }

@@ -24,28 +24,21 @@ trait ColorSizeSliderProperties
 }
 object ColorSizeSliderProperties {
   
-  @scala.inline
-  def apply(): ColorSizeSliderProperties = {
+  inline def apply(): ColorSizeSliderProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColorSizeSliderProperties]
   }
   
-  @scala.inline
-  implicit class ColorSizeSliderPropertiesMutableBuilder[Self <: ColorSizeSliderProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ColorSizeSliderProperties](x: Self) {
     
-    @scala.inline
-    def setStops(value: js.Array[ColorSizeStop]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
+    inline def setStops(value: js.Array[ColorSizeStop]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
+    inline def setStopsUndefined: Self = StObject.set(x, "stops", js.undefined)
     
-    @scala.inline
-    def setStopsVarargs(value: ColorSizeStop*): Self = StObject.set(x, "stops", js.Array(value :_*))
+    inline def setStopsVarargs(value: ColorSizeStop*): Self = StObject.set(x, "stops", js.Array(value :_*))
     
-    @scala.inline
-    def setViewModel(value: ColorSizeSliderViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
+    inline def setViewModel(value: ColorSizeSliderViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
+    inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
   }
 }

@@ -39,44 +39,32 @@ object mod {
   }
   object ReactMotionLoopProps {
     
-    @scala.inline
-    def apply(styleFrom: Style, styleTo: Style): ReactMotionLoopProps = {
+    inline def apply(styleFrom: Style, styleTo: Style): ReactMotionLoopProps = {
       val __obj = js.Dynamic.literal(styleFrom = styleFrom.asInstanceOf[js.Any], styleTo = styleTo.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactMotionLoopProps]
     }
     
-    @scala.inline
-    implicit class ReactMotionLoopPropsMutableBuilder[Self <: ReactMotionLoopProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReactMotionLoopProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: /* interpolatedStyle */ PlainStyle => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: /* interpolatedStyle */ PlainStyle => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDefaultStyle(value: PlainStyle): Self = StObject.set(x, "defaultStyle", value.asInstanceOf[js.Any])
+      inline def setDefaultStyle(value: PlainStyle): Self = StObject.set(x, "defaultStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultStyleUndefined: Self = StObject.set(x, "defaultStyle", js.undefined)
+      inline def setDefaultStyleUndefined: Self = StObject.set(x, "defaultStyle", js.undefined)
       
-      @scala.inline
-      def setOnRest(value: () => Unit): Self = StObject.set(x, "onRest", js.Any.fromFunction0(value))
+      inline def setOnRest(value: () => Unit): Self = StObject.set(x, "onRest", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnRestUndefined: Self = StObject.set(x, "onRest", js.undefined)
+      inline def setOnRestUndefined: Self = StObject.set(x, "onRest", js.undefined)
       
-      @scala.inline
-      def setStyle(value: Style): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Style): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleFrom(value: Style): Self = StObject.set(x, "styleFrom", value.asInstanceOf[js.Any])
+      inline def setStyleFrom(value: Style): Self = StObject.set(x, "styleFrom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleTo(value: Style): Self = StObject.set(x, "styleTo", value.asInstanceOf[js.Any])
+      inline def setStyleTo(value: Style): Self = StObject.set(x, "styleTo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

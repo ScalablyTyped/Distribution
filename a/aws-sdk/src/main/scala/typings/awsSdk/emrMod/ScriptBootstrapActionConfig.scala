@@ -18,25 +18,19 @@ trait ScriptBootstrapActionConfig extends StObject {
 }
 object ScriptBootstrapActionConfig {
   
-  @scala.inline
-  def apply(Path: XmlString): ScriptBootstrapActionConfig = {
+  inline def apply(Path: XmlString): ScriptBootstrapActionConfig = {
     val __obj = js.Dynamic.literal(Path = Path.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScriptBootstrapActionConfig]
   }
   
-  @scala.inline
-  implicit class ScriptBootstrapActionConfigMutableBuilder[Self <: ScriptBootstrapActionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ScriptBootstrapActionConfig](x: Self) {
     
-    @scala.inline
-    def setArgs(value: XmlStringList): Self = StObject.set(x, "Args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: XmlStringList): Self = StObject.set(x, "Args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsUndefined: Self = StObject.set(x, "Args", js.undefined)
+    inline def setArgsUndefined: Self = StObject.set(x, "Args", js.undefined)
     
-    @scala.inline
-    def setArgsVarargs(value: XmlString*): Self = StObject.set(x, "Args", js.Array(value :_*))
+    inline def setArgsVarargs(value: XmlString*): Self = StObject.set(x, "Args", js.Array(value :_*))
     
-    @scala.inline
-    def setPath(value: XmlString): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
+    inline def setPath(value: XmlString): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
   }
 }

@@ -44,73 +44,51 @@ trait SchemaRestrictItem extends StObject {
 }
 object SchemaRestrictItem {
   
-  @scala.inline
-  def apply(): SchemaRestrictItem = {
+  inline def apply(): SchemaRestrictItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaRestrictItem]
   }
   
-  @scala.inline
-  implicit class SchemaRestrictItemMutableBuilder[Self <: SchemaRestrictItem] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaRestrictItem](x: Self) {
     
-    @scala.inline
-    def setDriveFollowUpRestrict(value: SchemaDriveFollowUpRestrict): Self = StObject.set(x, "driveFollowUpRestrict", value.asInstanceOf[js.Any])
+    inline def setDriveFollowUpRestrict(value: SchemaDriveFollowUpRestrict): Self = StObject.set(x, "driveFollowUpRestrict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriveFollowUpRestrictUndefined: Self = StObject.set(x, "driveFollowUpRestrict", js.undefined)
+    inline def setDriveFollowUpRestrictUndefined: Self = StObject.set(x, "driveFollowUpRestrict", js.undefined)
     
-    @scala.inline
-    def setDriveLocationRestrict(value: SchemaDriveLocationRestrict): Self = StObject.set(x, "driveLocationRestrict", value.asInstanceOf[js.Any])
+    inline def setDriveLocationRestrict(value: SchemaDriveLocationRestrict): Self = StObject.set(x, "driveLocationRestrict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriveLocationRestrictUndefined: Self = StObject.set(x, "driveLocationRestrict", js.undefined)
+    inline def setDriveLocationRestrictUndefined: Self = StObject.set(x, "driveLocationRestrict", js.undefined)
     
-    @scala.inline
-    def setDriveMimeTypeRestrict(value: SchemaDriveMimeTypeRestrict): Self = StObject.set(x, "driveMimeTypeRestrict", value.asInstanceOf[js.Any])
+    inline def setDriveMimeTypeRestrict(value: SchemaDriveMimeTypeRestrict): Self = StObject.set(x, "driveMimeTypeRestrict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriveMimeTypeRestrictUndefined: Self = StObject.set(x, "driveMimeTypeRestrict", js.undefined)
+    inline def setDriveMimeTypeRestrictUndefined: Self = StObject.set(x, "driveMimeTypeRestrict", js.undefined)
     
-    @scala.inline
-    def setDriveTimeSpanRestrict(value: SchemaDriveTimeSpanRestrict): Self = StObject.set(x, "driveTimeSpanRestrict", value.asInstanceOf[js.Any])
+    inline def setDriveTimeSpanRestrict(value: SchemaDriveTimeSpanRestrict): Self = StObject.set(x, "driveTimeSpanRestrict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriveTimeSpanRestrictUndefined: Self = StObject.set(x, "driveTimeSpanRestrict", js.undefined)
+    inline def setDriveTimeSpanRestrictUndefined: Self = StObject.set(x, "driveTimeSpanRestrict", js.undefined)
     
-    @scala.inline
-    def setGmailActionRestrict(value: SchemaGmailActionRestrict): Self = StObject.set(x, "gmailActionRestrict", value.asInstanceOf[js.Any])
+    inline def setGmailActionRestrict(value: SchemaGmailActionRestrict): Self = StObject.set(x, "gmailActionRestrict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGmailActionRestrictUndefined: Self = StObject.set(x, "gmailActionRestrict", js.undefined)
+    inline def setGmailActionRestrictUndefined: Self = StObject.set(x, "gmailActionRestrict", js.undefined)
     
-    @scala.inline
-    def setGmailAttachmentRestrict(value: SchemaGmailAttachmentRestrict): Self = StObject.set(x, "gmailAttachmentRestrict", value.asInstanceOf[js.Any])
+    inline def setGmailAttachmentRestrict(value: SchemaGmailAttachmentRestrict): Self = StObject.set(x, "gmailAttachmentRestrict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGmailAttachmentRestrictUndefined: Self = StObject.set(x, "gmailAttachmentRestrict", js.undefined)
+    inline def setGmailAttachmentRestrictUndefined: Self = StObject.set(x, "gmailAttachmentRestrict", js.undefined)
     
-    @scala.inline
-    def setGmailFolderRestrict(value: SchemaGmailFolderRestrict): Self = StObject.set(x, "gmailFolderRestrict", value.asInstanceOf[js.Any])
+    inline def setGmailFolderRestrict(value: SchemaGmailFolderRestrict): Self = StObject.set(x, "gmailFolderRestrict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGmailFolderRestrictUndefined: Self = StObject.set(x, "gmailFolderRestrict", js.undefined)
+    inline def setGmailFolderRestrictUndefined: Self = StObject.set(x, "gmailFolderRestrict", js.undefined)
     
-    @scala.inline
-    def setGmailIntelligentRestrict(value: SchemaGmailIntelligentRestrict): Self = StObject.set(x, "gmailIntelligentRestrict", value.asInstanceOf[js.Any])
+    inline def setGmailIntelligentRestrict(value: SchemaGmailIntelligentRestrict): Self = StObject.set(x, "gmailIntelligentRestrict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGmailIntelligentRestrictUndefined: Self = StObject.set(x, "gmailIntelligentRestrict", js.undefined)
+    inline def setGmailIntelligentRestrictUndefined: Self = StObject.set(x, "gmailIntelligentRestrict", js.undefined)
     
-    @scala.inline
-    def setGmailTimeRestrict(value: SchemaGmailTimeRestrict): Self = StObject.set(x, "gmailTimeRestrict", value.asInstanceOf[js.Any])
+    inline def setGmailTimeRestrict(value: SchemaGmailTimeRestrict): Self = StObject.set(x, "gmailTimeRestrict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGmailTimeRestrictUndefined: Self = StObject.set(x, "gmailTimeRestrict", js.undefined)
+    inline def setGmailTimeRestrictUndefined: Self = StObject.set(x, "gmailTimeRestrict", js.undefined)
     
-    @scala.inline
-    def setSearchOperator(value: String): Self = StObject.set(x, "searchOperator", value.asInstanceOf[js.Any])
+    inline def setSearchOperator(value: String): Self = StObject.set(x, "searchOperator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchOperatorUndefined: Self = StObject.set(x, "searchOperator", js.undefined)
+    inline def setSearchOperatorUndefined: Self = StObject.set(x, "searchOperator", js.undefined)
   }
 }

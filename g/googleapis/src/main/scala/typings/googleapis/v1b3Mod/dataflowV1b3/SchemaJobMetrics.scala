@@ -25,28 +25,21 @@ trait SchemaJobMetrics extends StObject {
 }
 object SchemaJobMetrics {
   
-  @scala.inline
-  def apply(): SchemaJobMetrics = {
+  inline def apply(): SchemaJobMetrics = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaJobMetrics]
   }
   
-  @scala.inline
-  implicit class SchemaJobMetricsMutableBuilder[Self <: SchemaJobMetrics] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaJobMetrics](x: Self) {
     
-    @scala.inline
-    def setMetricTime(value: String): Self = StObject.set(x, "metricTime", value.asInstanceOf[js.Any])
+    inline def setMetricTime(value: String): Self = StObject.set(x, "metricTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricTimeUndefined: Self = StObject.set(x, "metricTime", js.undefined)
+    inline def setMetricTimeUndefined: Self = StObject.set(x, "metricTime", js.undefined)
     
-    @scala.inline
-    def setMetrics(value: js.Array[SchemaMetricUpdate]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: js.Array[SchemaMetricUpdate]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+    inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    @scala.inline
-    def setMetricsVarargs(value: SchemaMetricUpdate*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: SchemaMetricUpdate*): Self = StObject.set(x, "metrics", js.Array(value :_*))
   }
 }

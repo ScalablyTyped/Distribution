@@ -19,19 +19,15 @@ trait HandleCertificateErrorRequest extends StObject {
 }
 object HandleCertificateErrorRequest {
   
-  @scala.inline
-  def apply(action: CertificateErrorAction, eventId: integer): HandleCertificateErrorRequest = {
+  inline def apply(action: CertificateErrorAction, eventId: integer): HandleCertificateErrorRequest = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], eventId = eventId.asInstanceOf[js.Any])
     __obj.asInstanceOf[HandleCertificateErrorRequest]
   }
   
-  @scala.inline
-  implicit class HandleCertificateErrorRequestMutableBuilder[Self <: HandleCertificateErrorRequest] (val x: Self) extends AnyVal {
+  extension [Self <: HandleCertificateErrorRequest](x: Self) {
     
-    @scala.inline
-    def setAction(value: CertificateErrorAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: CertificateErrorAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventId(value: integer): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
+    inline def setEventId(value: integer): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
   }
 }

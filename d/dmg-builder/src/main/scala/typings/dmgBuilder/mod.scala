@@ -22,8 +22,8 @@ object mod {
     @JSName("options")
     val options_DmgTarget: DmgOptions = js.native
     
-    val packager: js.Any = js.native
+    /* private */ val packager: js.Any = js.native
     
-    var signDmg: js.Any = js.native
+    /* private */ var signDmg: js.Any = js.native
   }
 }

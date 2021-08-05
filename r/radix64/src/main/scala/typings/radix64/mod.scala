@@ -25,8 +25,7 @@ object mod extends Shortcut {
   }
   object MethodsEnum {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       BASE64: MethodsString,
       BASE64ASCII: MethodsString,
       BASE64NATURAL: MethodsString,
@@ -37,23 +36,17 @@ object mod extends Shortcut {
       __obj.asInstanceOf[MethodsEnum]
     }
     
-    @scala.inline
-    implicit class MethodsEnumMutableBuilder[Self <: MethodsEnum] (val x: Self) extends AnyVal {
+    extension [Self <: MethodsEnum](x: Self) {
       
-      @scala.inline
-      def setBASE64(value: MethodsString): Self = StObject.set(x, "BASE64", value.asInstanceOf[js.Any])
+      inline def setBASE64(value: MethodsString): Self = StObject.set(x, "BASE64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBASE64ASCII(value: MethodsString): Self = StObject.set(x, "BASE64ASCII", value.asInstanceOf[js.Any])
+      inline def setBASE64ASCII(value: MethodsString): Self = StObject.set(x, "BASE64ASCII", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBASE64NATURAL(value: MethodsString): Self = StObject.set(x, "BASE64NATURAL", value.asInstanceOf[js.Any])
+      inline def setBASE64NATURAL(value: MethodsString): Self = StObject.set(x, "BASE64NATURAL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBASE64URL(value: MethodsString): Self = StObject.set(x, "BASE64URL", value.asInstanceOf[js.Any])
+      inline def setBASE64URL(value: MethodsString): Self = StObject.set(x, "BASE64URL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDEFAULT(value: MethodsString): Self = StObject.set(x, "DEFAULT", value.asInstanceOf[js.Any])
+      inline def setDEFAULT(value: MethodsString): Self = StObject.set(x, "DEFAULT", value.asInstanceOf[js.Any])
     }
   }
   
@@ -66,17 +59,13 @@ object mod extends Shortcut {
   trait MethodsString extends StObject
   object MethodsString {
     
-    @scala.inline
-    def base64: typings.radix64.radix64Strings.base64 = "base64".asInstanceOf[typings.radix64.radix64Strings.base64]
+    inline def base64: typings.radix64.radix64Strings.base64 = "base64".asInstanceOf[typings.radix64.radix64Strings.base64]
     
-    @scala.inline
-    def base64URL: typings.radix64.radix64Strings.base64URL = "base64URL".asInstanceOf[typings.radix64.radix64Strings.base64URL]
+    inline def base64URL: typings.radix64.radix64Strings.base64URL = "base64URL".asInstanceOf[typings.radix64.radix64Strings.base64URL]
     
-    @scala.inline
-    def base64URLASCIISort: typings.radix64.radix64Strings.base64URLASCIISort = "base64URLASCIISort".asInstanceOf[typings.radix64.radix64Strings.base64URLASCIISort]
+    inline def base64URLASCIISort: typings.radix64.radix64Strings.base64URLASCIISort = "base64URLASCIISort".asInstanceOf[typings.radix64.radix64Strings.base64URLASCIISort]
     
-    @scala.inline
-    def base64URLNaturalSort: typings.radix64.radix64Strings.base64URLNaturalSort = "base64URLNaturalSort".asInstanceOf[typings.radix64.radix64Strings.base64URLNaturalSort]
+    inline def base64URLNaturalSort: typings.radix64.radix64Strings.base64URLNaturalSort = "base64URLNaturalSort".asInstanceOf[typings.radix64.radix64Strings.base64URLNaturalSort]
   }
   
   @js.native

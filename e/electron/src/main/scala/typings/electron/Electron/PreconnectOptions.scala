@@ -18,22 +18,17 @@ trait PreconnectOptions extends StObject {
 }
 object PreconnectOptions {
   
-  @scala.inline
-  def apply(url: String): PreconnectOptions = {
+  inline def apply(url: String): PreconnectOptions = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[PreconnectOptions]
   }
   
-  @scala.inline
-  implicit class PreconnectOptionsMutableBuilder[Self <: PreconnectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PreconnectOptions](x: Self) {
     
-    @scala.inline
-    def setNumSockets(value: Double): Self = StObject.set(x, "numSockets", value.asInstanceOf[js.Any])
+    inline def setNumSockets(value: Double): Self = StObject.set(x, "numSockets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumSocketsUndefined: Self = StObject.set(x, "numSockets", js.undefined)
+    inline def setNumSocketsUndefined: Self = StObject.set(x, "numSockets", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

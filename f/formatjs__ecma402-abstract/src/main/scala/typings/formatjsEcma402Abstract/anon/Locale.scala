@@ -10,16 +10,13 @@ trait Locale extends StObject {
 }
 object Locale {
   
-  @scala.inline
-  def apply(locale: String): Locale = {
+  inline def apply(locale: String): Locale = {
     val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any])
     __obj.asInstanceOf[Locale]
   }
   
-  @scala.inline
-  implicit class LocaleMutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
+  extension [Self <: Locale](x: Self) {
     
-    @scala.inline
-    def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+    inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
   }
 }

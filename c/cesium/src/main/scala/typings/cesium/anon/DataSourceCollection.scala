@@ -17,25 +17,19 @@ trait DataSourceCollection extends StObject {
 }
 object DataSourceCollection {
   
-  @scala.inline
-  def apply(dataSourceCollection: typings.cesium.mod.DataSourceCollection, scene: typings.cesium.mod.Scene): DataSourceCollection = {
+  inline def apply(dataSourceCollection: typings.cesium.mod.DataSourceCollection, scene: typings.cesium.mod.Scene): DataSourceCollection = {
     val __obj = js.Dynamic.literal(dataSourceCollection = dataSourceCollection.asInstanceOf[js.Any], scene = scene.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataSourceCollection]
   }
   
-  @scala.inline
-  implicit class DataSourceCollectionMutableBuilder[Self <: DataSourceCollection] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceCollection](x: Self) {
     
-    @scala.inline
-    def setDataSourceCollection(value: typings.cesium.mod.DataSourceCollection): Self = StObject.set(x, "dataSourceCollection", value.asInstanceOf[js.Any])
+    inline def setDataSourceCollection(value: typings.cesium.mod.DataSourceCollection): Self = StObject.set(x, "dataSourceCollection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScene(value: typings.cesium.mod.Scene): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
+    inline def setScene(value: typings.cesium.mod.Scene): Self = StObject.set(x, "scene", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisualizersCallback(value: (/* scene */ typings.cesium.mod.Scene, /* dataSource */ DataSource) => js.Array[Visualizer]): Self = StObject.set(x, "visualizersCallback", js.Any.fromFunction2(value))
+    inline def setVisualizersCallback(value: (/* scene */ typings.cesium.mod.Scene, /* dataSource */ DataSource) => js.Array[Visualizer]): Self = StObject.set(x, "visualizersCallback", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setVisualizersCallbackUndefined: Self = StObject.set(x, "visualizersCallback", js.undefined)
+    inline def setVisualizersCallbackUndefined: Self = StObject.set(x, "visualizersCallback", js.undefined)
   }
 }

@@ -72,54 +72,39 @@ trait StalkerOptions extends StObject {
 }
 object StalkerOptions {
   
-  @scala.inline
-  def apply(): StalkerOptions = {
+  inline def apply(): StalkerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StalkerOptions]
   }
   
-  @scala.inline
-  implicit class StalkerOptionsMutableBuilder[Self <: StalkerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: StalkerOptions](x: Self) {
     
-    @scala.inline
-    def setData(value: NativePointerValue): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: NativePointerValue): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setEvents(value: Block): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: Block): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    @scala.inline
-    def setOnCallSummary(value: /* summary */ StalkerCallSummary => Unit): Self = StObject.set(x, "onCallSummary", js.Any.fromFunction1(value))
+    inline def setOnCallSummary(value: /* summary */ StalkerCallSummary => Unit): Self = StObject.set(x, "onCallSummary", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnCallSummaryUndefined: Self = StObject.set(x, "onCallSummary", js.undefined)
+    inline def setOnCallSummaryUndefined: Self = StObject.set(x, "onCallSummary", js.undefined)
     
-    @scala.inline
-    def setOnEvent(value: StalkerNativeEventCallback): Self = StObject.set(x, "onEvent", value.asInstanceOf[js.Any])
+    inline def setOnEvent(value: StalkerNativeEventCallback): Self = StObject.set(x, "onEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnEventUndefined: Self = StObject.set(x, "onEvent", js.undefined)
+    inline def setOnEventUndefined: Self = StObject.set(x, "onEvent", js.undefined)
     
-    @scala.inline
-    def setOnReceive(value: /* events */ ArrayBuffer => Unit): Self = StObject.set(x, "onReceive", js.Any.fromFunction1(value))
+    inline def setOnReceive(value: /* events */ ArrayBuffer => Unit): Self = StObject.set(x, "onReceive", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnReceiveUndefined: Self = StObject.set(x, "onReceive", js.undefined)
+    inline def setOnReceiveUndefined: Self = StObject.set(x, "onReceive", js.undefined)
     
-    @scala.inline
-    def setTransform(value: StalkerTransformCallback): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    inline def setTransform(value: StalkerTransformCallback): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformFunction1(
+    inline def setTransformFunction1(
       value: (/* iterator */ StalkerArm64Iterator) | StalkerArmIterator | StalkerThumbIterator | (/* iterator */ StalkerX86Iterator) => Unit
     ): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+    inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
   }
 }

@@ -50,21 +50,16 @@ object vpnConnectionRouteMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): VpnConnectionRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VpnConnectionRoute]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VpnConnectionRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpnConnectionRoute]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: VpnConnectionRouteState): VpnConnectionRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VpnConnectionRoute]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: VpnConnectionRouteState, opts: CustomResourceOptions): VpnConnectionRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpnConnectionRoute]
+    inline def get(name: String, id: Input[ID]): VpnConnectionRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VpnConnectionRoute]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VpnConnectionRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpnConnectionRoute]
+    inline def get(name: String, id: Input[ID], state: VpnConnectionRouteState): VpnConnectionRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VpnConnectionRoute]
+    inline def get(name: String, id: Input[ID], state: VpnConnectionRouteState, opts: CustomResourceOptions): VpnConnectionRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpnConnectionRoute]
     
     /**
       * Returns true if the given object is an instance of VpnConnectionRoute.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpnConnectionRoute.VpnConnectionRoute */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/vpnConnectionRoute.VpnConnectionRoute */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpnConnectionRoute.VpnConnectionRoute */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/vpnConnectionRoute.VpnConnectionRoute */ Boolean]
   }
   
   trait VpnConnectionRouteArgs extends StObject {
@@ -81,20 +76,16 @@ object vpnConnectionRouteMod {
   }
   object VpnConnectionRouteArgs {
     
-    @scala.inline
-    def apply(destinationCidrBlock: Input[String], vpnConnectionId: Input[String]): VpnConnectionRouteArgs = {
+    inline def apply(destinationCidrBlock: Input[String], vpnConnectionId: Input[String]): VpnConnectionRouteArgs = {
       val __obj = js.Dynamic.literal(destinationCidrBlock = destinationCidrBlock.asInstanceOf[js.Any], vpnConnectionId = vpnConnectionId.asInstanceOf[js.Any])
       __obj.asInstanceOf[VpnConnectionRouteArgs]
     }
     
-    @scala.inline
-    implicit class VpnConnectionRouteArgsMutableBuilder[Self <: VpnConnectionRouteArgs] (val x: Self) extends AnyVal {
+    extension [Self <: VpnConnectionRouteArgs](x: Self) {
       
-      @scala.inline
-      def setDestinationCidrBlock(value: Input[String]): Self = StObject.set(x, "destinationCidrBlock", value.asInstanceOf[js.Any])
+      inline def setDestinationCidrBlock(value: Input[String]): Self = StObject.set(x, "destinationCidrBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpnConnectionId(value: Input[String]): Self = StObject.set(x, "vpnConnectionId", value.asInstanceOf[js.Any])
+      inline def setVpnConnectionId(value: Input[String]): Self = StObject.set(x, "vpnConnectionId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,26 +103,20 @@ object vpnConnectionRouteMod {
   }
   object VpnConnectionRouteState {
     
-    @scala.inline
-    def apply(): VpnConnectionRouteState = {
+    inline def apply(): VpnConnectionRouteState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[VpnConnectionRouteState]
     }
     
-    @scala.inline
-    implicit class VpnConnectionRouteStateMutableBuilder[Self <: VpnConnectionRouteState] (val x: Self) extends AnyVal {
+    extension [Self <: VpnConnectionRouteState](x: Self) {
       
-      @scala.inline
-      def setDestinationCidrBlock(value: Input[String]): Self = StObject.set(x, "destinationCidrBlock", value.asInstanceOf[js.Any])
+      inline def setDestinationCidrBlock(value: Input[String]): Self = StObject.set(x, "destinationCidrBlock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationCidrBlockUndefined: Self = StObject.set(x, "destinationCidrBlock", js.undefined)
+      inline def setDestinationCidrBlockUndefined: Self = StObject.set(x, "destinationCidrBlock", js.undefined)
       
-      @scala.inline
-      def setVpnConnectionId(value: Input[String]): Self = StObject.set(x, "vpnConnectionId", value.asInstanceOf[js.Any])
+      inline def setVpnConnectionId(value: Input[String]): Self = StObject.set(x, "vpnConnectionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpnConnectionIdUndefined: Self = StObject.set(x, "vpnConnectionId", js.undefined)
+      inline def setVpnConnectionIdUndefined: Self = StObject.set(x, "vpnConnectionId", js.undefined)
     }
   }
 }

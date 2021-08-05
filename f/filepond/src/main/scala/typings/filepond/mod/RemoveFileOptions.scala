@@ -12,25 +12,19 @@ trait RemoveFileOptions extends StObject {
 }
 object RemoveFileOptions {
   
-  @scala.inline
-  def apply(): RemoveFileOptions = {
+  inline def apply(): RemoveFileOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RemoveFileOptions]
   }
   
-  @scala.inline
-  implicit class RemoveFileOptionsMutableBuilder[Self <: RemoveFileOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveFileOptions](x: Self) {
     
-    @scala.inline
-    def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+    inline def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+    inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
-    @scala.inline
-    def setRevert(value: Boolean): Self = StObject.set(x, "revert", value.asInstanceOf[js.Any])
+    inline def setRevert(value: Boolean): Self = StObject.set(x, "revert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevertUndefined: Self = StObject.set(x, "revert", js.undefined)
+    inline def setRevertUndefined: Self = StObject.set(x, "revert", js.undefined)
   }
 }

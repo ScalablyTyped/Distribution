@@ -12,16 +12,13 @@ trait XFunctionsSupplier extends StObject {
 }
 object XFunctionsSupplier {
   
-  @scala.inline
-  def apply(Functions: XFunctions): XFunctionsSupplier = {
+  inline def apply(Functions: XFunctions): XFunctionsSupplier = {
     val __obj = js.Dynamic.literal(Functions = Functions.asInstanceOf[js.Any])
     __obj.asInstanceOf[XFunctionsSupplier]
   }
   
-  @scala.inline
-  implicit class XFunctionsSupplierMutableBuilder[Self <: XFunctionsSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XFunctionsSupplier](x: Self) {
     
-    @scala.inline
-    def setFunctions(value: XFunctions): Self = StObject.set(x, "Functions", value.asInstanceOf[js.Any])
+    inline def setFunctions(value: XFunctions): Self = StObject.set(x, "Functions", value.asInstanceOf[js.Any])
   }
 }

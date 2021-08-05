@@ -14,22 +14,17 @@ trait DispatchPeriodicSyncEventRequest extends StObject {
 }
 object DispatchPeriodicSyncEventRequest {
   
-  @scala.inline
-  def apply(origin: String, registrationId: RegistrationID, tag: String): DispatchPeriodicSyncEventRequest = {
+  inline def apply(origin: String, registrationId: RegistrationID, tag: String): DispatchPeriodicSyncEventRequest = {
     val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any], registrationId = registrationId.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[DispatchPeriodicSyncEventRequest]
   }
   
-  @scala.inline
-  implicit class DispatchPeriodicSyncEventRequestMutableBuilder[Self <: DispatchPeriodicSyncEventRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DispatchPeriodicSyncEventRequest](x: Self) {
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistrationId(value: RegistrationID): Self = StObject.set(x, "registrationId", value.asInstanceOf[js.Any])
+    inline def setRegistrationId(value: RegistrationID): Self = StObject.set(x, "registrationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
   }
 }

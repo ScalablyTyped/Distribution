@@ -14,7 +14,7 @@ trait WorkbookConnection extends StObject {
   
   var Description: String
   
-  @JSName("Excel.WorkbookConnection_typekey")
+  /* private */ @JSName("Excel.WorkbookConnection_typekey")
   var ExcelDotWorkbookConnection_typekey: WorkbookConnection
   
   var Name: String
@@ -37,8 +37,7 @@ trait WorkbookConnection extends StObject {
 }
 object WorkbookConnection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Creator: XlCreator,
     Delete: () => Unit,
@@ -58,46 +57,32 @@ object WorkbookConnection {
     __obj.asInstanceOf[WorkbookConnection]
   }
   
-  @scala.inline
-  implicit class WorkbookConnectionMutableBuilder[Self <: WorkbookConnection] (val x: Self) extends AnyVal {
+  extension [Self <: WorkbookConnection](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotWorkbookConnection_typekey(value: WorkbookConnection): Self = StObject.set(x, "Excel.WorkbookConnection_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotWorkbookConnection_typekey(value: WorkbookConnection): Self = StObject.set(x, "Excel.WorkbookConnection_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setODBCConnection(value: ODBCConnection): Self = StObject.set(x, "ODBCConnection", value.asInstanceOf[js.Any])
+    inline def setODBCConnection(value: ODBCConnection): Self = StObject.set(x, "ODBCConnection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOLEDBConnection(value: OLEDBConnection): Self = StObject.set(x, "OLEDBConnection", value.asInstanceOf[js.Any])
+    inline def setOLEDBConnection(value: OLEDBConnection): Self = StObject.set(x, "OLEDBConnection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRanges(value: Ranges): Self = StObject.set(x, "Ranges", value.asInstanceOf[js.Any])
+    inline def setRanges(value: Ranges): Self = StObject.set(x, "Ranges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRefresh(value: () => Unit): Self = StObject.set(x, "Refresh", js.Any.fromFunction0(value))
+    inline def setRefresh(value: () => Unit): Self = StObject.set(x, "Refresh", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setType(value: XlConnectionType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: XlConnectionType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_Default(value: String): Self = StObject.set(x, "_Default", value.asInstanceOf[js.Any])
+    inline def set_Default(value: String): Self = StObject.set(x, "_Default", value.asInstanceOf[js.Any])
   }
 }

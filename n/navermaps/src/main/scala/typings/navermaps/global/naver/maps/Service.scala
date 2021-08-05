@@ -12,8 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Service {
   
   // Sub module: geocoder
-  @scala.inline
-  def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+  inline def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
   
   @JSGlobal("naver.maps.Service")
   @js.native
@@ -55,24 +54,18 @@ object Service {
     /* 0 */ val OK: typings.navermaps.naver.maps.Service.Status.OK & Double = js.native
   }
   
-  @scala.inline
-  def fromAddrToCoord(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAddrToCoord")().asInstanceOf[Unit]
+  inline def fromAddrToCoord(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAddrToCoord")().asInstanceOf[Unit]
   
-  @scala.inline
-  def fromCoordToAddr(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCoordToAddr")().asInstanceOf[Unit]
+  inline def fromCoordToAddr(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCoordToAddr")().asInstanceOf[Unit]
   
-  @scala.inline
-  def geocode(options: GeocodeServiceOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("geocode")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def geocode(
+  inline def geocode(options: GeocodeServiceOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("geocode")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def geocode(
     options: GeocodeServiceOptions,
     callback: js.Function2[/* status */ Status, /* response */ GeocodeResponse, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("geocode")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def reverseGeocode(options: ReverseServiceOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reverseGeocode")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def reverseGeocode(
+  inline def reverseGeocode(options: ReverseServiceOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reverseGeocode")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def reverseGeocode(
     options: ReverseServiceOptions,
     callback: js.Function2[/* status */ Status, /* response */ ReverseGeocodeResponse, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reverseGeocode")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]

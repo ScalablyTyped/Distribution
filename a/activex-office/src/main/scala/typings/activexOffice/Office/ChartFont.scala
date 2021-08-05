@@ -24,7 +24,7 @@ trait ChartFont extends StObject {
   
   var Name: js.Any
   
-  @JSName("Office.ChartFont_typekey")
+  /* private */ @JSName("Office.ChartFont_typekey")
   var OfficeDotChartFont_typekey: ChartFont
   
   var OutlineFont: js.Any
@@ -45,8 +45,7 @@ trait ChartFont extends StObject {
 }
 object ChartFont {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: js.Any,
     Background: js.Any,
     Bold: js.Any,
@@ -71,61 +70,42 @@ object ChartFont {
     __obj.asInstanceOf[ChartFont]
   }
   
-  @scala.inline
-  implicit class ChartFontMutableBuilder[Self <: ChartFont] (val x: Self) extends AnyVal {
+  extension [Self <: ChartFont](x: Self) {
     
-    @scala.inline
-    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackground(value: js.Any): Self = StObject.set(x, "Background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: js.Any): Self = StObject.set(x, "Background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBold(value: js.Any): Self = StObject.set(x, "Bold", value.asInstanceOf[js.Any])
+    inline def setBold(value: js.Any): Self = StObject.set(x, "Bold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: js.Any): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
+    inline def setColor(value: js.Any): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorIndex(value: js.Any): Self = StObject.set(x, "ColorIndex", value.asInstanceOf[js.Any])
+    inline def setColorIndex(value: js.Any): Self = StObject.set(x, "ColorIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontStyle(value: js.Any): Self = StObject.set(x, "FontStyle", value.asInstanceOf[js.Any])
+    inline def setFontStyle(value: js.Any): Self = StObject.set(x, "FontStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItalic(value: js.Any): Self = StObject.set(x, "Italic", value.asInstanceOf[js.Any])
+    inline def setItalic(value: js.Any): Self = StObject.set(x, "Italic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: js.Any): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: js.Any): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficeDotChartFont_typekey(value: ChartFont): Self = StObject.set(x, "Office.ChartFont_typekey", value.asInstanceOf[js.Any])
+    inline def setOfficeDotChartFont_typekey(value: ChartFont): Self = StObject.set(x, "Office.ChartFont_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlineFont(value: js.Any): Self = StObject.set(x, "OutlineFont", value.asInstanceOf[js.Any])
+    inline def setOutlineFont(value: js.Any): Self = StObject.set(x, "OutlineFont", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadow(value: js.Any): Self = StObject.set(x, "Shadow", value.asInstanceOf[js.Any])
+    inline def setShadow(value: js.Any): Self = StObject.set(x, "Shadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: js.Any): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: js.Any): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrikeThrough(value: js.Any): Self = StObject.set(x, "StrikeThrough", value.asInstanceOf[js.Any])
+    inline def setStrikeThrough(value: js.Any): Self = StObject.set(x, "StrikeThrough", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscript(value: js.Any): Self = StObject.set(x, "Subscript", value.asInstanceOf[js.Any])
+    inline def setSubscript(value: js.Any): Self = StObject.set(x, "Subscript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuperscript(value: js.Any): Self = StObject.set(x, "Superscript", value.asInstanceOf[js.Any])
+    inline def setSuperscript(value: js.Any): Self = StObject.set(x, "Superscript", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnderline(value: js.Any): Self = StObject.set(x, "Underline", value.asInstanceOf[js.Any])
+    inline def setUnderline(value: js.Any): Self = StObject.set(x, "Underline", value.asInstanceOf[js.Any])
   }
 }

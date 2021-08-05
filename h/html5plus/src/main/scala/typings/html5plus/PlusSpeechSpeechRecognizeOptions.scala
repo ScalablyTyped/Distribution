@@ -99,67 +99,47 @@ trait PlusSpeechSpeechRecognizeOptions extends StObject {
 }
 object PlusSpeechSpeechRecognizeOptions {
   
-  @scala.inline
-  def apply(): PlusSpeechSpeechRecognizeOptions = {
+  inline def apply(): PlusSpeechSpeechRecognizeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusSpeechSpeechRecognizeOptions]
   }
   
-  @scala.inline
-  implicit class PlusSpeechSpeechRecognizeOptionsMutableBuilder[Self <: PlusSpeechSpeechRecognizeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusSpeechSpeechRecognizeOptions](x: Self) {
     
-    @scala.inline
-    def setContinue(value: Boolean): Self = StObject.set(x, "continue", value.asInstanceOf[js.Any])
+    inline def setContinue(value: Boolean): Self = StObject.set(x, "continue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinueUndefined: Self = StObject.set(x, "continue", js.undefined)
+    inline def setContinueUndefined: Self = StObject.set(x, "continue", js.undefined)
     
-    @scala.inline
-    def setEngine(value: String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
+    inline def setEngine(value: String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
+    inline def setEngineUndefined: Self = StObject.set(x, "engine", js.undefined)
     
-    @scala.inline
-    def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+    inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
+    inline def setLangUndefined: Self = StObject.set(x, "lang", js.undefined)
     
-    @scala.inline
-    def setNbest(value: Double): Self = StObject.set(x, "nbest", value.asInstanceOf[js.Any])
+    inline def setNbest(value: Double): Self = StObject.set(x, "nbest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNbestUndefined: Self = StObject.set(x, "nbest", js.undefined)
+    inline def setNbestUndefined: Self = StObject.set(x, "nbest", js.undefined)
     
-    @scala.inline
-    def setOnend(value: /* result */ js.Any => Unit): Self = StObject.set(x, "onend", js.Any.fromFunction1(value))
+    inline def setOnend(value: /* result */ js.Any => Unit): Self = StObject.set(x, "onend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnendUndefined: Self = StObject.set(x, "onend", js.undefined)
+    inline def setOnendUndefined: Self = StObject.set(x, "onend", js.undefined)
     
-    @scala.inline
-    def setOnstart(value: /* result */ js.Any => Unit): Self = StObject.set(x, "onstart", js.Any.fromFunction1(value))
+    inline def setOnstart(value: /* result */ js.Any => Unit): Self = StObject.set(x, "onstart", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnstartUndefined: Self = StObject.set(x, "onstart", js.undefined)
+    inline def setOnstartUndefined: Self = StObject.set(x, "onstart", js.undefined)
     
-    @scala.inline
-    def setPunctuation(value: Boolean): Self = StObject.set(x, "punctuation", value.asInstanceOf[js.Any])
+    inline def setPunctuation(value: Boolean): Self = StObject.set(x, "punctuation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPunctuationUndefined: Self = StObject.set(x, "punctuation", js.undefined)
+    inline def setPunctuationUndefined: Self = StObject.set(x, "punctuation", js.undefined)
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+    inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     
-    @scala.inline
-    def setUserInterface(value: Boolean): Self = StObject.set(x, "userInterface", value.asInstanceOf[js.Any])
+    inline def setUserInterface(value: Boolean): Self = StObject.set(x, "userInterface", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserInterfaceUndefined: Self = StObject.set(x, "userInterface", js.undefined)
+    inline def setUserInterfaceUndefined: Self = StObject.set(x, "userInterface", js.undefined)
   }
 }

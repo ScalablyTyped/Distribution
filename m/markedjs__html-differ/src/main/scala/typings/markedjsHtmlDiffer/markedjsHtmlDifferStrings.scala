@@ -8,6 +8,5 @@ object markedjsHtmlDifferStrings {
   
   @js.native
   sealed trait bem extends StObject
-  @scala.inline
-  def bem: bem = "bem".asInstanceOf[bem]
+  inline def bem: bem = "bem".asInstanceOf[bem]
 }

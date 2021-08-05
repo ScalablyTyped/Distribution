@@ -14,15 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NormalizationSelectableNode extends StObject
 object NormalizationSelectableNode {
   
-  @scala.inline
-  def NormalizationDefer(label: String, selections: js.Array[NormalizationSelection]): typings.relayRuntime.normalizationNodeMod.NormalizationDefer = {
+  inline def NormalizationDefer(label: String, selections: js.Array[NormalizationSelection]): typings.relayRuntime.normalizationNodeMod.NormalizationDefer = {
     val __obj = js.Dynamic.literal(kind = "Defer", label = label.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
     __obj.updateDynamic("if")(null)
     __obj.asInstanceOf[typings.relayRuntime.normalizationNodeMod.NormalizationDefer]
   }
   
-  @scala.inline
-  def NormalizationLinkedField(
+  inline def NormalizationLinkedField(
     args: js.Array[NormalizationArgument],
     kind: String,
     name: String,
@@ -33,8 +31,7 @@ object NormalizationSelectableNode {
     __obj.asInstanceOf[typings.relayRuntime.normalizationNodeMod.NormalizationLinkedField]
   }
   
-  @scala.inline
-  def NormalizationOperation(
+  inline def NormalizationOperation(
     argumentDefinitions: js.Array[NormalizationLocalArgumentDefinition],
     kind: String,
     name: String,
@@ -44,14 +41,12 @@ object NormalizationSelectableNode {
     __obj.asInstanceOf[typings.relayRuntime.normalizationNodeMod.NormalizationOperation]
   }
   
-  @scala.inline
-  def NormalizationSplitOperation(kind: String, name: String, selections: js.Array[NormalizationSelection]): typings.relayRuntime.normalizationNodeMod.NormalizationSplitOperation = {
+  inline def NormalizationSplitOperation(kind: String, name: String, selections: js.Array[NormalizationSelection]): typings.relayRuntime.normalizationNodeMod.NormalizationSplitOperation = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.relayRuntime.normalizationNodeMod.NormalizationSplitOperation]
   }
   
-  @scala.inline
-  def NormalizationStream(kind: String, label: String, selections: js.Array[NormalizationSelection]): typings.relayRuntime.normalizationNodeMod.NormalizationStream = {
+  inline def NormalizationStream(kind: String, label: String, selections: js.Array[NormalizationSelection]): typings.relayRuntime.normalizationNodeMod.NormalizationStream = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
     __obj.updateDynamic("if")(null)
     __obj.asInstanceOf[typings.relayRuntime.normalizationNodeMod.NormalizationStream]

@@ -15,31 +15,23 @@ trait PartialClassNameMapTabInd extends StObject {
 }
 object PartialClassNameMapTabInd {
   
-  @scala.inline
-  def apply(): PartialClassNameMapTabInd = {
+  inline def apply(): PartialClassNameMapTabInd = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassNameMapTabInd]
   }
   
-  @scala.inline
-  implicit class PartialClassNameMapTabIndMutableBuilder[Self <: PartialClassNameMapTabInd] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassNameMapTabInd](x: Self) {
     
-    @scala.inline
-    def setColorPrimary(value: String): Self = StObject.set(x, "colorPrimary", value.asInstanceOf[js.Any])
+    inline def setColorPrimary(value: String): Self = StObject.set(x, "colorPrimary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorPrimaryUndefined: Self = StObject.set(x, "colorPrimary", js.undefined)
+    inline def setColorPrimaryUndefined: Self = StObject.set(x, "colorPrimary", js.undefined)
     
-    @scala.inline
-    def setColorSecondary(value: String): Self = StObject.set(x, "colorSecondary", value.asInstanceOf[js.Any])
+    inline def setColorSecondary(value: String): Self = StObject.set(x, "colorSecondary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorSecondaryUndefined: Self = StObject.set(x, "colorSecondary", js.undefined)
+    inline def setColorSecondaryUndefined: Self = StObject.set(x, "colorSecondary", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

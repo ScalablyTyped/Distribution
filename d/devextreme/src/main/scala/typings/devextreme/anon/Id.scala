@@ -14,31 +14,23 @@ trait Id extends StObject {
 }
 object Id {
   
-  @scala.inline
-  def apply(): Id = {
+  inline def apply(): Id = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Id]
   }
   
-  @scala.inline
-  implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
+  extension [Self <: Id](x: Self) {
     
-    @scala.inline
-    def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "marker", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

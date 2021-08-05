@@ -56,8 +56,7 @@ object cognitoUserPoolTriggerMod {
   }
   object CognitoUserPoolTriggerEvent {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       callerContext: AwsSdkVersion,
       region: String,
       request: ChallengeAnswer,
@@ -70,37 +69,27 @@ object cognitoUserPoolTriggerMod {
       __obj.asInstanceOf[CognitoUserPoolTriggerEvent]
     }
     
-    @scala.inline
-    implicit class CognitoUserPoolTriggerEventMutableBuilder[Self <: CognitoUserPoolTriggerEvent] (val x: Self) extends AnyVal {
+    extension [Self <: CognitoUserPoolTriggerEvent](x: Self) {
       
-      @scala.inline
-      def setCallerContext(value: AwsSdkVersion): Self = StObject.set(x, "callerContext", value.asInstanceOf[js.Any])
+      inline def setCallerContext(value: AwsSdkVersion): Self = StObject.set(x, "callerContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
+      inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest(value: ChallengeAnswer): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: ChallengeAnswer): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: AnswerCorrect): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: AnswerCorrect): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggerSource(
+      inline def setTriggerSource(
         value: PreSignUp_SignUp | PreSignUp_ExternalProvider | PostConfirmation_ConfirmSignUp | PreAuthentication_Authentication | PostAuthentication_Authentication | CustomMessage_SignUp | CustomMessage_AdminCreateUser | CustomMessage_ResendCode | CustomMessage_ForgotPassword | CustomMessage_UpdateUserAttribute | CustomMessage_VerifyUserAttribute | CustomMessage_Authentication | DefineAuthChallenge_Authentication | CreateAuthChallenge_Authentication | VerifyAuthChallengeResponse_Authentication | PreSignUp_AdminCreateUser | PostConfirmation_ConfirmForgotPassword | TokenGeneration_HostedAuth | TokenGeneration_Authentication | TokenGeneration_NewPasswordChallenge | TokenGeneration_AuthenticateDevice | TokenGeneration_RefreshTokens | UserMigration_Authentication | UserMigration_ForgotPassword
       ): Self = StObject.set(x, "triggerSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+      inline def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
+      inline def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
       
-      @scala.inline
-      def setUserPoolId(value: String): Self = StObject.set(x, "userPoolId", value.asInstanceOf[js.Any])
+      inline def setUserPoolId(value: String): Self = StObject.set(x, "userPoolId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   

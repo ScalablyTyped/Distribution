@@ -12,31 +12,23 @@ trait FilterExtensionTypeFilterId extends StObject {
 }
 object FilterExtensionTypeFilterId {
   
-  @scala.inline
-  def apply(): FilterExtensionTypeFilterId = {
+  inline def apply(): FilterExtensionTypeFilterId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FilterExtensionTypeFilterId]
   }
   
-  @scala.inline
-  implicit class FilterExtensionTypeFilterIdMutableBuilder[Self <: FilterExtensionTypeFilterId] (val x: Self) extends AnyVal {
+  extension [Self <: FilterExtensionTypeFilterId](x: Self) {
     
-    @scala.inline
-    def setFilterExtensionType(value: js.Array[String]): Self = StObject.set(x, "filterExtensionType", value.asInstanceOf[js.Any])
+    inline def setFilterExtensionType(value: js.Array[String]): Self = StObject.set(x, "filterExtensionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterExtensionTypeUndefined: Self = StObject.set(x, "filterExtensionType", js.undefined)
+    inline def setFilterExtensionTypeUndefined: Self = StObject.set(x, "filterExtensionType", js.undefined)
     
-    @scala.inline
-    def setFilterExtensionTypeVarargs(value: String*): Self = StObject.set(x, "filterExtensionType", js.Array(value :_*))
+    inline def setFilterExtensionTypeVarargs(value: String*): Self = StObject.set(x, "filterExtensionType", js.Array(value :_*))
     
-    @scala.inline
-    def setFilterId(value: js.Array[String]): Self = StObject.set(x, "filterId", value.asInstanceOf[js.Any])
+    inline def setFilterId(value: js.Array[String]): Self = StObject.set(x, "filterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterIdUndefined: Self = StObject.set(x, "filterId", js.undefined)
+    inline def setFilterIdUndefined: Self = StObject.set(x, "filterId", js.undefined)
     
-    @scala.inline
-    def setFilterIdVarargs(value: String*): Self = StObject.set(x, "filterId", js.Array(value :_*))
+    inline def setFilterIdVarargs(value: String*): Self = StObject.set(x, "filterId", js.Array(value :_*))
   }
 }

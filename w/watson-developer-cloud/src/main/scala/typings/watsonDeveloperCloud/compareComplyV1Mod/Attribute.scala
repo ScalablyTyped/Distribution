@@ -18,31 +18,23 @@ trait Attribute extends StObject {
 }
 object Attribute {
   
-  @scala.inline
-  def apply(): Attribute = {
+  inline def apply(): Attribute = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Attribute]
   }
   
-  @scala.inline
-  implicit class AttributeMutableBuilder[Self <: Attribute] (val x: Self) extends AnyVal {
+  extension [Self <: Attribute](x: Self) {
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -18,25 +18,19 @@ trait SummariesToggledEventUIParam extends StObject {
 }
 object SummariesToggledEventUIParam {
   
-  @scala.inline
-  def apply(): SummariesToggledEventUIParam = {
+  inline def apply(): SummariesToggledEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SummariesToggledEventUIParam]
   }
   
-  @scala.inline
-  implicit class SummariesToggledEventUIParamMutableBuilder[Self <: SummariesToggledEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: SummariesToggledEventUIParam](x: Self) {
     
-    @scala.inline
-    def setIsToShow(value: Boolean): Self = StObject.set(x, "isToShow", value.asInstanceOf[js.Any])
+    inline def setIsToShow(value: Boolean): Self = StObject.set(x, "isToShow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsToShowUndefined: Self = StObject.set(x, "isToShow", js.undefined)
+    inline def setIsToShowUndefined: Self = StObject.set(x, "isToShow", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

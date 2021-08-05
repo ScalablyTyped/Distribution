@@ -17,22 +17,17 @@ trait AttrsConv2DBackpropFilterAttrs extends StObject {
 }
 object AttrsConv2DBackpropFilterAttrs {
   
-  @scala.inline
-  def apply(attrs: Conv2DBackpropFilterAttrs, backend: MathBackendCPU, inputs: Conv2DBackpropFilterInputs): AttrsConv2DBackpropFilterAttrs = {
+  inline def apply(attrs: Conv2DBackpropFilterAttrs, backend: MathBackendCPU, inputs: Conv2DBackpropFilterInputs): AttrsConv2DBackpropFilterAttrs = {
     val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], backend = backend.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttrsConv2DBackpropFilterAttrs]
   }
   
-  @scala.inline
-  implicit class AttrsConv2DBackpropFilterAttrsMutableBuilder[Self <: AttrsConv2DBackpropFilterAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: AttrsConv2DBackpropFilterAttrs](x: Self) {
     
-    @scala.inline
-    def setAttrs(value: Conv2DBackpropFilterAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+    inline def setAttrs(value: Conv2DBackpropFilterAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackend(value: MathBackendCPU): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
+    inline def setBackend(value: MathBackendCPU): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputs(value: Conv2DBackpropFilterInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    inline def setInputs(value: Conv2DBackpropFilterInputs): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
   }
 }

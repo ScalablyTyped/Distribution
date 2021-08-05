@@ -16,16 +16,13 @@ trait connectCompleteArgs
 }
 object connectCompleteArgs {
   
-  @scala.inline
-  def apply(client: client, clientId: String, isReconnect: Boolean, meta: js.Any, timestamp: Date): connectCompleteArgs = {
+  inline def apply(client: client, clientId: String, isReconnect: Boolean, meta: js.Any, timestamp: Date): connectCompleteArgs = {
     val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], clientId = clientId.asInstanceOf[js.Any], isReconnect = isReconnect.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[connectCompleteArgs]
   }
   
-  @scala.inline
-  implicit class connectCompleteArgsMutableBuilder[Self <: connectCompleteArgs] (val x: Self) extends AnyVal {
+  extension [Self <: connectCompleteArgs](x: Self) {
     
-    @scala.inline
-    def setIsReconnect(value: Boolean): Self = StObject.set(x, "isReconnect", value.asInstanceOf[js.Any])
+    inline def setIsReconnect(value: Boolean): Self = StObject.set(x, "isReconnect", value.asInstanceOf[js.Any])
   }
 }

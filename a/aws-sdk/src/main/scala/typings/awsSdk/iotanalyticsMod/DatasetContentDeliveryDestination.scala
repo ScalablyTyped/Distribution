@@ -18,25 +18,19 @@ trait DatasetContentDeliveryDestination extends StObject {
 }
 object DatasetContentDeliveryDestination {
   
-  @scala.inline
-  def apply(): DatasetContentDeliveryDestination = {
+  inline def apply(): DatasetContentDeliveryDestination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DatasetContentDeliveryDestination]
   }
   
-  @scala.inline
-  implicit class DatasetContentDeliveryDestinationMutableBuilder[Self <: DatasetContentDeliveryDestination] (val x: Self) extends AnyVal {
+  extension [Self <: DatasetContentDeliveryDestination](x: Self) {
     
-    @scala.inline
-    def setIotEventsDestinationConfiguration(value: IotEventsDestinationConfiguration): Self = StObject.set(x, "iotEventsDestinationConfiguration", value.asInstanceOf[js.Any])
+    inline def setIotEventsDestinationConfiguration(value: IotEventsDestinationConfiguration): Self = StObject.set(x, "iotEventsDestinationConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIotEventsDestinationConfigurationUndefined: Self = StObject.set(x, "iotEventsDestinationConfiguration", js.undefined)
+    inline def setIotEventsDestinationConfigurationUndefined: Self = StObject.set(x, "iotEventsDestinationConfiguration", js.undefined)
     
-    @scala.inline
-    def setS3DestinationConfiguration(value: S3DestinationConfiguration): Self = StObject.set(x, "s3DestinationConfiguration", value.asInstanceOf[js.Any])
+    inline def setS3DestinationConfiguration(value: S3DestinationConfiguration): Self = StObject.set(x, "s3DestinationConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3DestinationConfigurationUndefined: Self = StObject.set(x, "s3DestinationConfiguration", js.undefined)
+    inline def setS3DestinationConfigurationUndefined: Self = StObject.set(x, "s3DestinationConfiguration", js.undefined)
   }
 }

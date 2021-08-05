@@ -30,12 +30,12 @@ object userMod {
     /**
       * @hidden
       */
-    var _Handle_erase_client: js.Any = js.native
+    /* private */ var _Handle_erase_client: js.Any = js.native
     
     /**
       * @hidden
       */
-    var account_id_ : js.Any = js.native
+    /* private */ var account_id_ : js.Any = js.native
     
     /* InferMemberOverrides */
     override def addEventListener(
@@ -51,7 +51,7 @@ object userMod {
     /**
       * @hidden
       */
-    var authority_ : js.Any = js.native
+    /* private */ var authority_ : js.Any = js.native
     
     /**
       * Factory method creating a {@link Client} object.
@@ -170,17 +170,17 @@ object userMod {
     /**
       * @hidden
       */
-    var sequence_ : js.Any = js.native
+    /* private */ var sequence_ : js.Any = js.native
     
     /**
       * @hidden
       */
-    var server_ : js.Any = js.native
+    /* private */ var server_ : js.Any = js.native
     
     /**
       * @hidden
       */
-    var session_id_ : js.Any = js.native
+    /* private */ var session_id_ : js.Any = js.native
     
     /**
       * Set *account id* and *authority*.

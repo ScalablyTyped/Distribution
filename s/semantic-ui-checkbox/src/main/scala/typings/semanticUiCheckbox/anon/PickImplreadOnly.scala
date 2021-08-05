@@ -11,16 +11,13 @@ trait PickImplreadOnly extends StObject {
 }
 object PickImplreadOnly {
   
-  @scala.inline
-  def apply(readOnly: String): PickImplreadOnly = {
+  inline def apply(readOnly: String): PickImplreadOnly = {
     val __obj = js.Dynamic.literal(readOnly = readOnly.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplreadOnly]
   }
   
-  @scala.inline
-  implicit class PickImplreadOnlyMutableBuilder[Self <: PickImplreadOnly] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplreadOnly](x: Self) {
     
-    @scala.inline
-    def setReadOnly(value: String): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: String): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
   }
 }

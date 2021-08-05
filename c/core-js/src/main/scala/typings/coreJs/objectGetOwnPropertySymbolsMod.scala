@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object objectGetOwnPropertySymbolsMod {
   
   /* was `typeof core.Object.getOwnPropertySymbols` */
-  @scala.inline
-  def apply(o: js.Any): Array[js.Symbol] = ^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any]).asInstanceOf[Array[js.Symbol]]
+  inline def apply(o: js.Any): Array[js.Symbol] = ^.asInstanceOf[js.Dynamic].apply(o.asInstanceOf[js.Any]).asInstanceOf[Array[js.Symbol]]
   
   @JSImport("core-js/library/fn/object/get-own-property-symbols", JSImport.Namespace)
   @js.native

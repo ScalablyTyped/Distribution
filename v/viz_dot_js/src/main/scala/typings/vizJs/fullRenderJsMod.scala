@@ -14,6 +14,5 @@ object fullRenderJsMod {
   @js.native
   val Module: typings.vizJs.Module = js.native
   
-  @scala.inline
-  def render(instance: typings.vizJs.Module, src: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(instance.asInstanceOf[js.Any], src.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def render(instance: typings.vizJs.Module, src: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(instance.asInstanceOf[js.Any], src.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
 }

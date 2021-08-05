@@ -40,8 +40,7 @@ trait INxVariableProperties extends StObject {
 }
 object INxVariableProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qIncludeInBookmark: Boolean,
     qName: String,
     qNumberPresentation: IFieldAttributes,
@@ -52,25 +51,18 @@ object INxVariableProperties {
     __obj.asInstanceOf[INxVariableProperties]
   }
   
-  @scala.inline
-  implicit class INxVariablePropertiesMutableBuilder[Self <: INxVariableProperties] (val x: Self) extends AnyVal {
+  extension [Self <: INxVariableProperties](x: Self) {
     
-    @scala.inline
-    def setQIncludeInBookmark(value: Boolean): Self = StObject.set(x, "qIncludeInBookmark", value.asInstanceOf[js.Any])
+    inline def setQIncludeInBookmark(value: Boolean): Self = StObject.set(x, "qIncludeInBookmark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
+    inline def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQNumberPresentation(value: IFieldAttributes): Self = StObject.set(x, "qNumberPresentation", value.asInstanceOf[js.Any])
+    inline def setQNumberPresentation(value: IFieldAttributes): Self = StObject.set(x, "qNumberPresentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQPreDefinedList(value: js.Array[String]): Self = StObject.set(x, "qPreDefinedList", value.asInstanceOf[js.Any])
+    inline def setQPreDefinedList(value: js.Array[String]): Self = StObject.set(x, "qPreDefinedList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQPreDefinedListVarargs(value: String*): Self = StObject.set(x, "qPreDefinedList", js.Array(value :_*))
+    inline def setQPreDefinedListVarargs(value: String*): Self = StObject.set(x, "qPreDefinedList", js.Array(value :_*))
     
-    @scala.inline
-    def setQUsePredefListedValues(value: Boolean): Self = StObject.set(x, "qUsePredefListedValues", value.asInstanceOf[js.Any])
+    inline def setQUsePredefListedValues(value: Boolean): Self = StObject.set(x, "qUsePredefListedValues", value.asInstanceOf[js.Any])
   }
 }

@@ -11,22 +11,14 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def hide(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")().asInstanceOf[Unit]
-  @scala.inline
-  def hide(stream: WritableStream): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")(stream.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def hide(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")().asInstanceOf[Unit]
+  inline def hide(stream: WritableStream): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hide")(stream.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def show(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")().asInstanceOf[Unit]
-  @scala.inline
-  def show(stream: WritableStream): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(stream.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def show(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")().asInstanceOf[Unit]
+  inline def show(stream: WritableStream): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(stream.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def toggle(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toggle")().asInstanceOf[Unit]
-  @scala.inline
-  def toggle(force: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toggle")(force.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def toggle(force: Boolean, stream: WritableStream): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toggle")(force.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def toggle(force: Unit, stream: WritableStream): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toggle")(force.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def toggle(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toggle")().asInstanceOf[Unit]
+  inline def toggle(force: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toggle")(force.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def toggle(force: Boolean, stream: WritableStream): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toggle")(force.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def toggle(force: Unit, stream: WritableStream): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("toggle")(force.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

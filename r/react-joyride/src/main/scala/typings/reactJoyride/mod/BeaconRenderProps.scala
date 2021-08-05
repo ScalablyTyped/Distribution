@@ -20,8 +20,7 @@ trait BeaconRenderProps extends StObject {
 }
 object BeaconRenderProps {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     continuous: Boolean,
     index: Double,
     isLastStep: Boolean,
@@ -33,25 +32,18 @@ object BeaconRenderProps {
     __obj.asInstanceOf[BeaconRenderProps]
   }
   
-  @scala.inline
-  implicit class BeaconRenderPropsMutableBuilder[Self <: BeaconRenderProps] (val x: Self) extends AnyVal {
+  extension [Self <: BeaconRenderProps](x: Self) {
     
-    @scala.inline
-    def setContinuous(value: Boolean): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
+    inline def setContinuous(value: Boolean): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLastStep(value: Boolean): Self = StObject.set(x, "isLastStep", value.asInstanceOf[js.Any])
+    inline def setIsLastStep(value: Boolean): Self = StObject.set(x, "isLastStep", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetTooltipRef(value: () => Unit): Self = StObject.set(x, "setTooltipRef", js.Any.fromFunction0(value))
+    inline def setSetTooltipRef(value: () => Unit): Self = StObject.set(x, "setTooltipRef", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStep(value: Step): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Step): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
   }
 }

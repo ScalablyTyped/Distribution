@@ -52,15 +52,15 @@ object toggleMod {
     
     var el: HTMLElement = js.native
     
-    var emitStyle: js.Any = js.native
+    /* private */ var emitStyle: js.Any = js.native
     
-    var focusEl: js.Any = js.native
+    /* private */ var focusEl: js.Any = js.native
     
-    var gesture: js.Any = js.native
+    /* private */ var gesture: js.Any = js.native
     
-    var getValue: js.Any = js.native
+    /* private */ var getValue: js.Any = js.native
     
-    var inputId: js.Any = js.native
+    /* private */ var inputId: js.Any = js.native
     
     /**
       * Emitted when the toggle loses focus.
@@ -83,29 +83,29 @@ object toggleMod {
       */
     var ionStyle: EventEmitter[StyleEventDetail] = js.native
     
-    var lastDrag: js.Any = js.native
+    /* private */ var lastDrag: js.Any = js.native
     
     /**
       * The name of the control, which is submitted with the form data.
       */
     var name: String = js.native
     
-    var onBlur: js.Any = js.native
+    /* private */ var onBlur: js.Any = js.native
     
-    var onClick: js.Any = js.native
+    /* private */ var onClick: js.Any = js.native
     
-    var onEnd: js.Any = js.native
+    /* private */ var onEnd: js.Any = js.native
     
-    var onFocus: js.Any = js.native
+    /* private */ var onFocus: js.Any = js.native
     
-    var onMove: js.Any = js.native
+    /* private */ var onMove: js.Any = js.native
     
-    var onStart: js.Any = js.native
+    /* private */ var onStart: js.Any = js.native
     
     @JSName("render")
     def render_MToggle(): js.Any = js.native
     
-    var setFocus: js.Any = js.native
+    /* private */ var setFocus: js.Any = js.native
     
     /**
       * The value of the toggle does not mean if it's checked or not, use the `checked`

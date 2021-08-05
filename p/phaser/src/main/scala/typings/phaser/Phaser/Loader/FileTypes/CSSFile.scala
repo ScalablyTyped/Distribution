@@ -26,8 +26,7 @@ trait CSSFile
      with File
 object CSSFile {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addToCache: () => Unit,
     bytesLoaded: Double,
     bytesTotal: Double,

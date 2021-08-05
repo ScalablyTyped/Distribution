@@ -26,11 +26,11 @@ object abstractMod {
       */
     def getPropertyByName[Y /* <: /* keyof T */ String */](name: Y): /* import warning: importer.ImportType#apply Failed type conversion: T[Y] */ js.Any = js.native
     
-    var namespace: js.Any = js.native
+    /* private */ var namespace: js.Any = js.native
     
-    var parent: js.Any = js.native
+    /* private */ var parent: js.Any = js.native
     
-    var propcache: js.Any = js.native
+    /* private */ var propcache: js.Any = js.native
     
     /** returns JSONifyable data */
     def toJSON(): Record[String, js.Any] = js.native

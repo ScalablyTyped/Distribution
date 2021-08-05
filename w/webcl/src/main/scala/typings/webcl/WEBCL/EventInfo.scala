@@ -19,15 +19,11 @@ trait EventInfo extends StObject
 object EventInfo {
   
   //EVENT_REFERENCE_COUNT                     = 0x11D2, // disallowed
-  @scala.inline
-  def EVENT_COMMAND_EXECUTION_STATUS: `0x11D3` = 0x11D3.asInstanceOf[`0x11D3`]
+  inline def EVENT_COMMAND_EXECUTION_STATUS: `0x11D3` = 0x11D3.asInstanceOf[`0x11D3`]
   
-  @scala.inline
-  def EVENT_COMMAND_QUEUE: `0x11D0` = 0x11D0.asInstanceOf[`0x11D0`]
+  inline def EVENT_COMMAND_QUEUE: `0x11D0` = 0x11D0.asInstanceOf[`0x11D0`]
   
-  @scala.inline
-  def EVENT_COMMAND_TYPE: `0x11D1` = 0x11D1.asInstanceOf[`0x11D1`]
+  inline def EVENT_COMMAND_TYPE: `0x11D1` = 0x11D1.asInstanceOf[`0x11D1`]
   
-  @scala.inline
-  def EVENT_CONTEXT: `0x11D4` = 0x11D4.asInstanceOf[`0x11D4`]
+  inline def EVENT_CONTEXT: `0x11D4` = 0x11D4.asInstanceOf[`0x11D4`]
 }

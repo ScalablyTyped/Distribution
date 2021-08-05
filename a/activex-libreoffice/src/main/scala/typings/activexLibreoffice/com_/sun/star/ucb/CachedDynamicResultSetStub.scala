@@ -19,8 +19,7 @@ trait CachedDynamicResultSetStub
      with XSourceInitialization
 object CachedDynamicResultSetStub {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Capabilities: Double,
     StaticResultSet: XResultSet,
     acquire: () => Unit,

@@ -61,52 +61,37 @@ trait MeshMaterialMetallicRoughnessProperties
 }
 object MeshMaterialMetallicRoughnessProperties {
   
-  @scala.inline
-  def apply(): MeshMaterialMetallicRoughnessProperties = {
+  inline def apply(): MeshMaterialMetallicRoughnessProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MeshMaterialMetallicRoughnessProperties]
   }
   
-  @scala.inline
-  implicit class MeshMaterialMetallicRoughnessPropertiesMutableBuilder[Self <: MeshMaterialMetallicRoughnessProperties] (val x: Self) extends AnyVal {
+  extension [Self <: MeshMaterialMetallicRoughnessProperties](x: Self) {
     
-    @scala.inline
-    def setEmissiveColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "emissiveColor", value.asInstanceOf[js.Any])
+    inline def setEmissiveColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "emissiveColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmissiveColorUndefined: Self = StObject.set(x, "emissiveColor", js.undefined)
+    inline def setEmissiveColorUndefined: Self = StObject.set(x, "emissiveColor", js.undefined)
     
-    @scala.inline
-    def setEmissiveColorVarargs(value: Double*): Self = StObject.set(x, "emissiveColor", js.Array(value :_*))
+    inline def setEmissiveColorVarargs(value: Double*): Self = StObject.set(x, "emissiveColor", js.Array(value :_*))
     
-    @scala.inline
-    def setEmissiveTexture(value: MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String): Self = StObject.set(x, "emissiveTexture", value.asInstanceOf[js.Any])
+    inline def setEmissiveTexture(value: MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String): Self = StObject.set(x, "emissiveTexture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmissiveTextureUndefined: Self = StObject.set(x, "emissiveTexture", js.undefined)
+    inline def setEmissiveTextureUndefined: Self = StObject.set(x, "emissiveTexture", js.undefined)
     
-    @scala.inline
-    def setMetallic(value: Double): Self = StObject.set(x, "metallic", value.asInstanceOf[js.Any])
+    inline def setMetallic(value: Double): Self = StObject.set(x, "metallic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetallicRoughnessTexture(value: MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String): Self = StObject.set(x, "metallicRoughnessTexture", value.asInstanceOf[js.Any])
+    inline def setMetallicRoughnessTexture(value: MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String): Self = StObject.set(x, "metallicRoughnessTexture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetallicRoughnessTextureUndefined: Self = StObject.set(x, "metallicRoughnessTexture", js.undefined)
+    inline def setMetallicRoughnessTextureUndefined: Self = StObject.set(x, "metallicRoughnessTexture", js.undefined)
     
-    @scala.inline
-    def setMetallicUndefined: Self = StObject.set(x, "metallic", js.undefined)
+    inline def setMetallicUndefined: Self = StObject.set(x, "metallic", js.undefined)
     
-    @scala.inline
-    def setOcclusionTexture(value: MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String): Self = StObject.set(x, "occlusionTexture", value.asInstanceOf[js.Any])
+    inline def setOcclusionTexture(value: MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String): Self = StObject.set(x, "occlusionTexture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOcclusionTextureUndefined: Self = StObject.set(x, "occlusionTexture", js.undefined)
+    inline def setOcclusionTextureUndefined: Self = StObject.set(x, "occlusionTexture", js.undefined)
     
-    @scala.inline
-    def setRoughness(value: Double): Self = StObject.set(x, "roughness", value.asInstanceOf[js.Any])
+    inline def setRoughness(value: Double): Self = StObject.set(x, "roughness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoughnessUndefined: Self = StObject.set(x, "roughness", js.undefined)
+    inline def setRoughnessUndefined: Self = StObject.set(x, "roughness", js.undefined)
   }
 }

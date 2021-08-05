@@ -15,19 +15,15 @@ trait CostCategoryRule extends StObject {
 }
 object CostCategoryRule {
   
-  @scala.inline
-  def apply(Rule: Expression, Value: CostCategoryValue): CostCategoryRule = {
+  inline def apply(Rule: Expression, Value: CostCategoryValue): CostCategoryRule = {
     val __obj = js.Dynamic.literal(Rule = Rule.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[CostCategoryRule]
   }
   
-  @scala.inline
-  implicit class CostCategoryRuleMutableBuilder[Self <: CostCategoryRule] (val x: Self) extends AnyVal {
+  extension [Self <: CostCategoryRule](x: Self) {
     
-    @scala.inline
-    def setRule(value: Expression): Self = StObject.set(x, "Rule", value.asInstanceOf[js.Any])
+    inline def setRule(value: Expression): Self = StObject.set(x, "Rule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: CostCategoryValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: CostCategoryValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

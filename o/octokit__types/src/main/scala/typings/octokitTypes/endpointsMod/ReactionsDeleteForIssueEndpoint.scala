@@ -20,8 +20,7 @@ trait ReactionsDeleteForIssueEndpoint
 }
 object ReactionsDeleteForIssueEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     issue_number: Double,
     mediaType: `0`[`squirrel-girl`],
     owner: String,
@@ -32,19 +31,14 @@ object ReactionsDeleteForIssueEndpoint {
     __obj.asInstanceOf[ReactionsDeleteForIssueEndpoint]
   }
   
-  @scala.inline
-  implicit class ReactionsDeleteForIssueEndpointMutableBuilder[Self <: ReactionsDeleteForIssueEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReactionsDeleteForIssueEndpoint](x: Self) {
     
-    @scala.inline
-    def setIssue_number(value: Double): Self = StObject.set(x, "issue_number", value.asInstanceOf[js.Any])
+    inline def setIssue_number(value: Double): Self = StObject.set(x, "issue_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReaction_id(value: Double): Self = StObject.set(x, "reaction_id", value.asInstanceOf[js.Any])
+    inline def setReaction_id(value: Double): Self = StObject.set(x, "reaction_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

@@ -16,19 +16,15 @@ trait SchemaUploadLineItemsResponse extends StObject {
 }
 object SchemaUploadLineItemsResponse {
   
-  @scala.inline
-  def apply(): SchemaUploadLineItemsResponse = {
+  inline def apply(): SchemaUploadLineItemsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUploadLineItemsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaUploadLineItemsResponseMutableBuilder[Self <: SchemaUploadLineItemsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUploadLineItemsResponse](x: Self) {
     
-    @scala.inline
-    def setUploadStatus(value: SchemaUploadStatus): Self = StObject.set(x, "uploadStatus", value.asInstanceOf[js.Any])
+    inline def setUploadStatus(value: SchemaUploadStatus): Self = StObject.set(x, "uploadStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadStatusUndefined: Self = StObject.set(x, "uploadStatus", js.undefined)
+    inline def setUploadStatusUndefined: Self = StObject.set(x, "uploadStatus", js.undefined)
   }
 }

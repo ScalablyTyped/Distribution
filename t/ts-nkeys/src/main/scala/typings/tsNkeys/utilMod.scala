@@ -12,13 +12,10 @@ object utilMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def dump(buf: Buffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dump")(buf.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def dump(buf: Buffer, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dump")(buf.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def dump(buf: Buffer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dump")(buf.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def dump(buf: Buffer, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dump")(buf.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def toArrayBuffer(): ToArrayBuffer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toArrayBuffer")().asInstanceOf[ToArrayBuffer_]
+  inline def toArrayBuffer(): ToArrayBuffer_ = ^.asInstanceOf[js.Dynamic].applyDynamic("toArrayBuffer")().asInstanceOf[ToArrayBuffer_]
   
   type ToArrayBuffer_ = js.Function1[/* buf */ Buffer, ArrayBuffer]
 }

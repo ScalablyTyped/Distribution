@@ -23,31 +23,23 @@ trait ServerCertificateSummary extends StObject {
 }
 object ServerCertificateSummary {
   
-  @scala.inline
-  def apply(): ServerCertificateSummary = {
+  inline def apply(): ServerCertificateSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServerCertificateSummary]
   }
   
-  @scala.inline
-  implicit class ServerCertificateSummaryMutableBuilder[Self <: ServerCertificateSummary] (val x: Self) extends AnyVal {
+  extension [Self <: ServerCertificateSummary](x: Self) {
     
-    @scala.inline
-    def setServerCertificateArn(value: AcmCertificateArn): Self = StObject.set(x, "serverCertificateArn", value.asInstanceOf[js.Any])
+    inline def setServerCertificateArn(value: AcmCertificateArn): Self = StObject.set(x, "serverCertificateArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerCertificateArnUndefined: Self = StObject.set(x, "serverCertificateArn", js.undefined)
+    inline def setServerCertificateArnUndefined: Self = StObject.set(x, "serverCertificateArn", js.undefined)
     
-    @scala.inline
-    def setServerCertificateStatus(value: ServerCertificateStatus): Self = StObject.set(x, "serverCertificateStatus", value.asInstanceOf[js.Any])
+    inline def setServerCertificateStatus(value: ServerCertificateStatus): Self = StObject.set(x, "serverCertificateStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerCertificateStatusDetail(value: ServerCertificateStatusDetail): Self = StObject.set(x, "serverCertificateStatusDetail", value.asInstanceOf[js.Any])
+    inline def setServerCertificateStatusDetail(value: ServerCertificateStatusDetail): Self = StObject.set(x, "serverCertificateStatusDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerCertificateStatusDetailUndefined: Self = StObject.set(x, "serverCertificateStatusDetail", js.undefined)
+    inline def setServerCertificateStatusDetailUndefined: Self = StObject.set(x, "serverCertificateStatusDetail", js.undefined)
     
-    @scala.inline
-    def setServerCertificateStatusUndefined: Self = StObject.set(x, "serverCertificateStatus", js.undefined)
+    inline def setServerCertificateStatusUndefined: Self = StObject.set(x, "serverCertificateStatus", js.undefined)
   }
 }

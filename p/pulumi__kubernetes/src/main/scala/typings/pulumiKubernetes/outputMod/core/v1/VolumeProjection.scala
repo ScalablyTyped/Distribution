@@ -31,8 +31,7 @@ trait VolumeProjection extends StObject {
 }
 object VolumeProjection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     configMap: ConfigMapProjection,
     downwardAPI: DownwardAPIProjection,
     secret: SecretProjection,
@@ -42,19 +41,14 @@ object VolumeProjection {
     __obj.asInstanceOf[VolumeProjection]
   }
   
-  @scala.inline
-  implicit class VolumeProjectionMutableBuilder[Self <: VolumeProjection] (val x: Self) extends AnyVal {
+  extension [Self <: VolumeProjection](x: Self) {
     
-    @scala.inline
-    def setConfigMap(value: ConfigMapProjection): Self = StObject.set(x, "configMap", value.asInstanceOf[js.Any])
+    inline def setConfigMap(value: ConfigMapProjection): Self = StObject.set(x, "configMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDownwardAPI(value: DownwardAPIProjection): Self = StObject.set(x, "downwardAPI", value.asInstanceOf[js.Any])
+    inline def setDownwardAPI(value: DownwardAPIProjection): Self = StObject.set(x, "downwardAPI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecret(value: SecretProjection): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+    inline def setSecret(value: SecretProjection): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccountToken(value: ServiceAccountTokenProjection): Self = StObject.set(x, "serviceAccountToken", value.asInstanceOf[js.Any])
+    inline def setServiceAccountToken(value: ServiceAccountTokenProjection): Self = StObject.set(x, "serviceAccountToken", value.asInstanceOf[js.Any])
   }
 }

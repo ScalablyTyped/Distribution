@@ -48,67 +48,53 @@ object mod {
       @JSImport("react-range", "Range.defaultProps.allowOverlap")
       @js.native
       def allowOverlap: Boolean = js.native
-      @scala.inline
-      def allowOverlap_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allowOverlap")(x.asInstanceOf[js.Any])
+      inline def allowOverlap_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("allowOverlap")(x.asInstanceOf[js.Any])
       
       @JSImport("react-range", "Range.defaultProps.direction")
       @js.native
       def direction: Direction = js.native
-      @scala.inline
-      def direction_=(x: Direction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("direction")(x.asInstanceOf[js.Any])
+      inline def direction_=(x: Direction): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("direction")(x.asInstanceOf[js.Any])
       
       @JSImport("react-range", "Range.defaultProps.disabled")
       @js.native
       def disabled: Boolean = js.native
-      @scala.inline
-      def disabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disabled")(x.asInstanceOf[js.Any])
+      inline def disabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disabled")(x.asInstanceOf[js.Any])
       
       @JSImport("react-range", "Range.defaultProps.draggableTrack")
       @js.native
       def draggableTrack: Boolean = js.native
-      @scala.inline
-      def draggableTrack_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("draggableTrack")(x.asInstanceOf[js.Any])
+      inline def draggableTrack_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("draggableTrack")(x.asInstanceOf[js.Any])
       
       @JSImport("react-range", "Range.defaultProps.max")
       @js.native
       def max: Double = js.native
-      @scala.inline
-      def max_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("max")(x.asInstanceOf[js.Any])
+      inline def max_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("max")(x.asInstanceOf[js.Any])
       
       @JSImport("react-range", "Range.defaultProps.min")
       @js.native
       def min: Double = js.native
-      @scala.inline
-      def min_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("min")(x.asInstanceOf[js.Any])
+      inline def min_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("min")(x.asInstanceOf[js.Any])
       
       @JSImport("react-range", "Range.defaultProps.rtl")
       @js.native
       def rtl: Boolean = js.native
-      @scala.inline
-      def rtl_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rtl")(x.asInstanceOf[js.Any])
+      inline def rtl_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rtl")(x.asInstanceOf[js.Any])
       
       @JSImport("react-range", "Range.defaultProps.step")
       @js.native
       def step: Double = js.native
-      @scala.inline
-      def step_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("step")(x.asInstanceOf[js.Any])
+      inline def step_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("step")(x.asInstanceOf[js.Any])
     }
   }
   
-  @scala.inline
-  def getTrackBackground(hasValuesColorsMinMaxDirectionRtl: ITrackBackground): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTrackBackground")(hasValuesColorsMinMaxDirectionRtl.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getTrackBackground(hasValuesColorsMinMaxDirectionRtl: ITrackBackground): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTrackBackground")(hasValuesColorsMinMaxDirectionRtl.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def relativeValue(value: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("relativeValue")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def relativeValue(value: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("relativeValue")(value.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def useThumbOverlap(rangeRef: Null, values: js.Array[Double], index: Double): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
-  @scala.inline
-  def useThumbOverlap(rangeRef: Null, values: js.Array[Double], index: Double, step: Double): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
-  @scala.inline
-  def useThumbOverlap(rangeRef: Null, values: js.Array[Double], index: Double, step: Double, separator: String): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any], step.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
-  @scala.inline
-  def useThumbOverlap(
+  inline def useThumbOverlap(rangeRef: Null, values: js.Array[Double], index: Double): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
+  inline def useThumbOverlap(rangeRef: Null, values: js.Array[Double], index: Double, step: Double): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
+  inline def useThumbOverlap(rangeRef: Null, values: js.Array[Double], index: Double, step: Double, separator: String): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any], step.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
+  inline def useThumbOverlap(
     rangeRef: Null,
     values: js.Array[Double],
     index: Double,
@@ -116,8 +102,7 @@ object mod {
     separator: String,
     valueToLabel: js.Function1[/* value */ String, String]
   ): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any], step.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], valueToLabel.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
-  @scala.inline
-  def useThumbOverlap(
+  inline def useThumbOverlap(
     rangeRef: Null,
     values: js.Array[Double],
     index: Double,
@@ -125,10 +110,8 @@ object mod {
     separator: Unit,
     valueToLabel: js.Function1[/* value */ String, String]
   ): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any], step.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], valueToLabel.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
-  @scala.inline
-  def useThumbOverlap(rangeRef: Null, values: js.Array[Double], index: Double, step: Unit, separator: String): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any], step.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
-  @scala.inline
-  def useThumbOverlap(
+  inline def useThumbOverlap(rangeRef: Null, values: js.Array[Double], index: Double, step: Unit, separator: String): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any], step.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
+  inline def useThumbOverlap(
     rangeRef: Null,
     values: js.Array[Double],
     index: Double,
@@ -136,8 +119,7 @@ object mod {
     separator: String,
     valueToLabel: js.Function1[/* value */ String, String]
   ): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any], step.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], valueToLabel.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
-  @scala.inline
-  def useThumbOverlap(
+  inline def useThumbOverlap(
     rangeRef: Null,
     values: js.Array[Double],
     index: Double,
@@ -145,14 +127,10 @@ object mod {
     separator: Unit,
     valueToLabel: js.Function1[/* value */ String, String]
   ): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any], step.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], valueToLabel.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
-  @scala.inline
-  def useThumbOverlap(rangeRef: default, values: js.Array[Double], index: Double): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
-  @scala.inline
-  def useThumbOverlap(rangeRef: default, values: js.Array[Double], index: Double, step: Double): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
-  @scala.inline
-  def useThumbOverlap(rangeRef: default, values: js.Array[Double], index: Double, step: Double, separator: String): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any], step.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
-  @scala.inline
-  def useThumbOverlap(
+  inline def useThumbOverlap(rangeRef: default, values: js.Array[Double], index: Double): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
+  inline def useThumbOverlap(rangeRef: default, values: js.Array[Double], index: Double, step: Double): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
+  inline def useThumbOverlap(rangeRef: default, values: js.Array[Double], index: Double, step: Double, separator: String): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any], step.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
+  inline def useThumbOverlap(
     rangeRef: default,
     values: js.Array[Double],
     index: Double,
@@ -160,8 +138,7 @@ object mod {
     separator: String,
     valueToLabel: js.Function1[/* value */ String, String]
   ): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any], step.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], valueToLabel.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
-  @scala.inline
-  def useThumbOverlap(
+  inline def useThumbOverlap(
     rangeRef: default,
     values: js.Array[Double],
     index: Double,
@@ -169,10 +146,8 @@ object mod {
     separator: Unit,
     valueToLabel: js.Function1[/* value */ String, String]
   ): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any], step.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], valueToLabel.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
-  @scala.inline
-  def useThumbOverlap(rangeRef: default, values: js.Array[Double], index: Double, step: Unit, separator: String): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any], step.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
-  @scala.inline
-  def useThumbOverlap(
+  inline def useThumbOverlap(rangeRef: default, values: js.Array[Double], index: Double, step: Unit, separator: String): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any], step.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
+  inline def useThumbOverlap(
     rangeRef: default,
     values: js.Array[Double],
     index: Double,
@@ -180,8 +155,7 @@ object mod {
     separator: String,
     valueToLabel: js.Function1[/* value */ String, String]
   ): js.Array[String | CSSProperties] = (^.asInstanceOf[js.Dynamic].applyDynamic("useThumbOverlap")(rangeRef.asInstanceOf[js.Any], values.asInstanceOf[js.Any], index.asInstanceOf[js.Any], step.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], valueToLabel.asInstanceOf[js.Any])).asInstanceOf[js.Array[String | CSSProperties]]
-  @scala.inline
-  def useThumbOverlap(
+  inline def useThumbOverlap(
     rangeRef: default,
     values: js.Array[Double],
     index: Double,

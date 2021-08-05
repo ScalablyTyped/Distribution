@@ -18,21 +18,15 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create[T](): DurandalActivator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[DurandalActivator[T]]
-  @scala.inline
-  def create[T](initialActiveItem: T): DurandalActivator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(initialActiveItem.asInstanceOf[js.Any]).asInstanceOf[DurandalActivator[T]]
-  @scala.inline
-  def create[T](initialActiveItem: T, settings: DurandalActivatorSettings): DurandalActivator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(initialActiveItem.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[DurandalActivator[T]]
-  @scala.inline
-  def create[T](initialActiveItem: Unit, settings: DurandalActivatorSettings): DurandalActivator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(initialActiveItem.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[DurandalActivator[T]]
+  inline def create[T](): DurandalActivator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[DurandalActivator[T]]
+  inline def create[T](initialActiveItem: T): DurandalActivator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(initialActiveItem.asInstanceOf[js.Any]).asInstanceOf[DurandalActivator[T]]
+  inline def create[T](initialActiveItem: T, settings: DurandalActivatorSettings): DurandalActivator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(initialActiveItem.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[DurandalActivator[T]]
+  inline def create[T](initialActiveItem: Unit, settings: DurandalActivatorSettings): DurandalActivator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(initialActiveItem.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[DurandalActivator[T]]
   
   @JSImport("durandal/activator", "defaults")
   @js.native
   def defaults: DurandalActivatorSettings = js.native
-  @scala.inline
-  def defaults_=(x: DurandalActivatorSettings): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaults")(x.asInstanceOf[js.Any])
+  inline def defaults_=(x: DurandalActivatorSettings): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaults")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def isActivator(`object`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isActivator")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isActivator(`object`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isActivator")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

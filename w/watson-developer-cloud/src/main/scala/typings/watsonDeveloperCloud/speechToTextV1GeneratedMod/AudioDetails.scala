@@ -21,37 +21,27 @@ trait AudioDetails extends StObject {
 }
 object AudioDetails {
   
-  @scala.inline
-  def apply(): AudioDetails = {
+  inline def apply(): AudioDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AudioDetails]
   }
   
-  @scala.inline
-  implicit class AudioDetailsMutableBuilder[Self <: AudioDetails] (val x: Self) extends AnyVal {
+  extension [Self <: AudioDetails](x: Self) {
     
-    @scala.inline
-    def setCodec(value: String): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
+    inline def setCodec(value: String): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodecUndefined: Self = StObject.set(x, "codec", js.undefined)
+    inline def setCodecUndefined: Self = StObject.set(x, "codec", js.undefined)
     
-    @scala.inline
-    def setCompression(value: String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+    inline def setCompression(value: String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+    inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
     
-    @scala.inline
-    def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
+    inline def setFrequency(value: Double): Self = StObject.set(x, "frequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
+    inline def setFrequencyUndefined: Self = StObject.set(x, "frequency", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

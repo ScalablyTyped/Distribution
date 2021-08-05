@@ -20,31 +20,23 @@ trait GooglePrivacyDlpV2ImageRedactionConfig extends StObject {
 }
 object GooglePrivacyDlpV2ImageRedactionConfig {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2ImageRedactionConfig = {
+  inline def apply(): GooglePrivacyDlpV2ImageRedactionConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2ImageRedactionConfig]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2ImageRedactionConfigMutableBuilder[Self <: GooglePrivacyDlpV2ImageRedactionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2ImageRedactionConfig](x: Self) {
     
-    @scala.inline
-    def setInfoType(value: GooglePrivacyDlpV2InfoType): Self = StObject.set(x, "infoType", value.asInstanceOf[js.Any])
+    inline def setInfoType(value: GooglePrivacyDlpV2InfoType): Self = StObject.set(x, "infoType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoTypeUndefined: Self = StObject.set(x, "infoType", js.undefined)
+    inline def setInfoTypeUndefined: Self = StObject.set(x, "infoType", js.undefined)
     
-    @scala.inline
-    def setRedactAllText(value: Boolean): Self = StObject.set(x, "redactAllText", value.asInstanceOf[js.Any])
+    inline def setRedactAllText(value: Boolean): Self = StObject.set(x, "redactAllText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedactAllTextUndefined: Self = StObject.set(x, "redactAllText", js.undefined)
+    inline def setRedactAllTextUndefined: Self = StObject.set(x, "redactAllText", js.undefined)
     
-    @scala.inline
-    def setRedactionColor(value: GooglePrivacyDlpV2Color): Self = StObject.set(x, "redactionColor", value.asInstanceOf[js.Any])
+    inline def setRedactionColor(value: GooglePrivacyDlpV2Color): Self = StObject.set(x, "redactionColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRedactionColorUndefined: Self = StObject.set(x, "redactionColor", js.undefined)
+    inline def setRedactionColorUndefined: Self = StObject.set(x, "redactionColor", js.undefined)
   }
 }

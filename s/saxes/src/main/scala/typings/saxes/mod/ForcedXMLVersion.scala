@@ -20,22 +20,17 @@ trait ForcedXMLVersion
 }
 object ForcedXMLVersion {
   
-  @scala.inline
-  def apply(): ForcedXMLVersion = {
+  inline def apply(): ForcedXMLVersion = {
     val __obj = js.Dynamic.literal(forceXMLVersion = true)
     __obj.asInstanceOf[ForcedXMLVersion]
   }
   
-  @scala.inline
-  implicit class ForcedXMLVersionMutableBuilder[Self <: ForcedXMLVersion] (val x: Self) extends AnyVal {
+  extension [Self <: ForcedXMLVersion](x: Self) {
     
-    @scala.inline
-    def setDefaultXMLVersion(value: Exclude[js.UndefOr[`1Dot0` | `1Dot1`], Unit]): Self = StObject.set(x, "defaultXMLVersion", value.asInstanceOf[js.Any])
+    inline def setDefaultXMLVersion(value: Exclude[js.UndefOr[`1Dot0` | `1Dot1`], Unit]): Self = StObject.set(x, "defaultXMLVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultXMLVersionUndefined: Self = StObject.set(x, "defaultXMLVersion", js.undefined)
+    inline def setDefaultXMLVersionUndefined: Self = StObject.set(x, "defaultXMLVersion", js.undefined)
     
-    @scala.inline
-    def setForceXMLVersion(value: `true`): Self = StObject.set(x, "forceXMLVersion", value.asInstanceOf[js.Any])
+    inline def setForceXMLVersion(value: `true`): Self = StObject.set(x, "forceXMLVersion", value.asInstanceOf[js.Any])
   }
 }

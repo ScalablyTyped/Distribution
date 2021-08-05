@@ -25,15 +25,14 @@ object tagSelectMod {
     @JSImport("ant-design-pro/lib/TagSelect", "default.Option")
     @js.native
     def Option: TypeofTagSelectOption = js.native
-    @scala.inline
-    def Option_=(x: TypeofTagSelectOption): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Option")(x.asInstanceOf[js.Any])
+    inline def Option_=(x: TypeofTagSelectOption): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Option")(x.asInstanceOf[js.Any])
   }
   
   @js.native
   trait TagSelect
     extends Component[TagSelectProps, js.Any, js.Any] {
     
-    var children: ReactElement | js.Array[ReactElement] = js.native
+    /* private */ var children: ReactElement | js.Array[ReactElement] = js.native
   }
   
   trait TagSelectProps extends StObject {
@@ -58,65 +57,46 @@ object tagSelectMod {
   }
   object TagSelectProps {
     
-    @scala.inline
-    def apply(Option: TagSelectOptionProps, children: ReactElement | js.Array[ReactElement], className: String): TagSelectProps = {
+    inline def apply(Option: TagSelectOptionProps, children: ReactElement | js.Array[ReactElement], className: String): TagSelectProps = {
       val __obj = js.Dynamic.literal(Option = Option.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], className = className.asInstanceOf[js.Any])
       __obj.asInstanceOf[TagSelectProps]
     }
     
-    @scala.inline
-    implicit class TagSelectPropsMutableBuilder[Self <: TagSelectProps] (val x: Self) extends AnyVal {
+    extension [Self <: TagSelectProps](x: Self) {
       
-      @scala.inline
-      def setActionsText(value: CollapseText): Self = StObject.set(x, "actionsText", value.asInstanceOf[js.Any])
+      inline def setActionsText(value: CollapseText): Self = StObject.set(x, "actionsText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionsTextUndefined: Self = StObject.set(x, "actionsText", js.undefined)
+      inline def setActionsTextUndefined: Self = StObject.set(x, "actionsText", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactElement | js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactElement | js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactElement*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandable(value: Boolean): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])
+      inline def setExpandable(value: Boolean): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandableUndefined: Self = StObject.set(x, "expandable", js.undefined)
+      inline def setExpandableUndefined: Self = StObject.set(x, "expandable", js.undefined)
       
-      @scala.inline
-      def setHideCheckAll(value: Boolean): Self = StObject.set(x, "hideCheckAll", value.asInstanceOf[js.Any])
+      inline def setHideCheckAll(value: Boolean): Self = StObject.set(x, "hideCheckAll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideCheckAllUndefined: Self = StObject.set(x, "hideCheckAll", js.undefined)
+      inline def setHideCheckAllUndefined: Self = StObject.set(x, "hideCheckAll", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: /* value */ js.Array[String] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* value */ js.Array[String] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOption(value: TagSelectOptionProps): Self = StObject.set(x, "Option", value.asInstanceOf[js.Any])
+      inline def setOption(value: TagSelectOptionProps): Self = StObject.set(x, "Option", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setValue(value: js.Array[Double | String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Array[Double | String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setValueVarargs(value: (Double | String)*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: (Double | String)*): Self = StObject.set(x, "value", js.Array(value :_*))
     }
   }
 }

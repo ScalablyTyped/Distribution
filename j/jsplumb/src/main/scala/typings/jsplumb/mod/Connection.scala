@@ -42,8 +42,7 @@ trait Connection
 }
 object Connection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     endpoints: js.Tuple2[Endpoint, Endpoint],
     getElement: () => Connection,
     getLabelOverlay: () => Overlay,
@@ -68,52 +67,36 @@ object Connection {
     __obj.asInstanceOf[Connection]
   }
   
-  @scala.inline
-  implicit class ConnectionMutableBuilder[Self <: Connection] (val x: Self) extends AnyVal {
+  extension [Self <: Connection](x: Self) {
     
-    @scala.inline
-    def setEndpoints(value: js.Tuple2[Endpoint, Endpoint]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
+    inline def setEndpoints(value: js.Tuple2[Endpoint, Endpoint]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetElement(value: () => Connection): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+    inline def setGetElement(value: () => Connection): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLabelOverlay(value: () => Overlay): Self = StObject.set(x, "getLabelOverlay", js.Any.fromFunction0(value))
+    inline def setGetLabelOverlay(value: () => Overlay): Self = StObject.set(x, "getLabelOverlay", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOverlay(value: String => Overlay): Self = StObject.set(x, "getOverlay", js.Any.fromFunction1(value))
+    inline def setGetOverlay(value: String => Overlay): Self = StObject.set(x, "getOverlay", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetOverlays(value: () => js.Object): Self = StObject.set(x, "getOverlays", js.Any.fromFunction0(value))
+    inline def setGetOverlays(value: () => js.Object): Self = StObject.set(x, "getOverlays", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHideOverlay(value: String => Unit): Self = StObject.set(x, "hideOverlay", js.Any.fromFunction1(value))
+    inline def setHideOverlay(value: String => Unit): Self = StObject.set(x, "hideOverlay", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setId(value: ConnectionId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: ConnectionId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepaint(value: () => Unit): Self = StObject.set(x, "repaint", js.Any.fromFunction0(value))
+    inline def setRepaint(value: () => Unit): Self = StObject.set(x, "repaint", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetDetachable(value: Boolean => Unit): Self = StObject.set(x, "setDetachable", js.Any.fromFunction1(value))
+    inline def setSetDetachable(value: Boolean => Unit): Self = StObject.set(x, "setDetachable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLabel(value: String => Unit): Self = StObject.set(x, "setLabel", js.Any.fromFunction1(value))
+    inline def setSetLabel(value: String => Unit): Self = StObject.set(x, "setLabel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowOverlay(value: String => Unit): Self = StObject.set(x, "showOverlay", js.Any.fromFunction1(value))
+    inline def setShowOverlay(value: String => Unit): Self = StObject.set(x, "showOverlay", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSource(value: Element): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Element): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceId(value: String): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
+    inline def setSourceId(value: String): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetId(value: String): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
+    inline def setTargetId(value: String): Self = StObject.set(x, "targetId", value.asInstanceOf[js.Any])
   }
 }

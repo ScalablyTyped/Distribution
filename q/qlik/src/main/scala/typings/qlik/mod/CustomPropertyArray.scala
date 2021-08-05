@@ -27,50 +27,36 @@ trait CustomPropertyArray
 }
 object CustomPropertyArray {
   
-  @scala.inline
-  def apply(component: Unit): CustomPropertyArray = {
+  inline def apply(component: Unit): CustomPropertyArray = {
     val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("array")
     __obj.asInstanceOf[CustomPropertyArray]
   }
   
-  @scala.inline
-  implicit class CustomPropertyArrayMutableBuilder[Self <: CustomPropertyArray] (val x: Self) extends AnyVal {
+  extension [Self <: CustomPropertyArray](x: Self) {
     
-    @scala.inline
-    def setAddTranslation(value: String): Self = StObject.set(x, "addTranslation", value.asInstanceOf[js.Any])
+    inline def setAddTranslation(value: String): Self = StObject.set(x, "addTranslation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddTranslationUndefined: Self = StObject.set(x, "addTranslation", js.undefined)
+    inline def setAddTranslationUndefined: Self = StObject.set(x, "addTranslation", js.undefined)
     
-    @scala.inline
-    def setAllowAdd(value: Boolean): Self = StObject.set(x, "allowAdd", value.asInstanceOf[js.Any])
+    inline def setAllowAdd(value: Boolean): Self = StObject.set(x, "allowAdd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowAddUndefined: Self = StObject.set(x, "allowAdd", js.undefined)
+    inline def setAllowAddUndefined: Self = StObject.set(x, "allowAdd", js.undefined)
     
-    @scala.inline
-    def setAllowMove(value: Boolean): Self = StObject.set(x, "allowMove", value.asInstanceOf[js.Any])
+    inline def setAllowMove(value: Boolean): Self = StObject.set(x, "allowMove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowMoveUndefined: Self = StObject.set(x, "allowMove", js.undefined)
+    inline def setAllowMoveUndefined: Self = StObject.set(x, "allowMove", js.undefined)
     
-    @scala.inline
-    def setAllowRemove(value: Boolean): Self = StObject.set(x, "allowRemove", value.asInstanceOf[js.Any])
+    inline def setAllowRemove(value: Boolean): Self = StObject.set(x, "allowRemove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowRemoveUndefined: Self = StObject.set(x, "allowRemove", js.undefined)
+    inline def setAllowRemoveUndefined: Self = StObject.set(x, "allowRemove", js.undefined)
     
-    @scala.inline
-    def setComponent(value: Unit): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: Unit): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemTitleRef(value: String): Self = StObject.set(x, "itemTitleRef", value.asInstanceOf[js.Any])
+    inline def setItemTitleRef(value: String): Self = StObject.set(x, "itemTitleRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemTitleRefUndefined: Self = StObject.set(x, "itemTitleRef", js.undefined)
+    inline def setItemTitleRefUndefined: Self = StObject.set(x, "itemTitleRef", js.undefined)
     
-    @scala.inline
-    def setType(value: array): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: array): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

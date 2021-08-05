@@ -48,8 +48,7 @@ trait CreateLocationSmbRequest extends StObject {
 }
 object CreateLocationSmbRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AgentArns: AgentArnList,
     Password: SmbPassword,
     ServerHostname: ServerHostname,
@@ -60,46 +59,32 @@ object CreateLocationSmbRequest {
     __obj.asInstanceOf[CreateLocationSmbRequest]
   }
   
-  @scala.inline
-  implicit class CreateLocationSmbRequestMutableBuilder[Self <: CreateLocationSmbRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateLocationSmbRequest](x: Self) {
     
-    @scala.inline
-    def setAgentArns(value: AgentArnList): Self = StObject.set(x, "AgentArns", value.asInstanceOf[js.Any])
+    inline def setAgentArns(value: AgentArnList): Self = StObject.set(x, "AgentArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAgentArnsVarargs(value: AgentArn*): Self = StObject.set(x, "AgentArns", js.Array(value :_*))
+    inline def setAgentArnsVarargs(value: AgentArn*): Self = StObject.set(x, "AgentArns", js.Array(value :_*))
     
-    @scala.inline
-    def setDomain(value: SmbDomain): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
+    inline def setDomain(value: SmbDomain): Self = StObject.set(x, "Domain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainUndefined: Self = StObject.set(x, "Domain", js.undefined)
+    inline def setDomainUndefined: Self = StObject.set(x, "Domain", js.undefined)
     
-    @scala.inline
-    def setMountOptions(value: SmbMountOptions): Self = StObject.set(x, "MountOptions", value.asInstanceOf[js.Any])
+    inline def setMountOptions(value: SmbMountOptions): Self = StObject.set(x, "MountOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMountOptionsUndefined: Self = StObject.set(x, "MountOptions", js.undefined)
+    inline def setMountOptionsUndefined: Self = StObject.set(x, "MountOptions", js.undefined)
     
-    @scala.inline
-    def setPassword(value: SmbPassword): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: SmbPassword): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerHostname(value: ServerHostname): Self = StObject.set(x, "ServerHostname", value.asInstanceOf[js.Any])
+    inline def setServerHostname(value: ServerHostname): Self = StObject.set(x, "ServerHostname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubdirectory(value: SmbSubdirectory): Self = StObject.set(x, "Subdirectory", value.asInstanceOf[js.Any])
+    inline def setSubdirectory(value: SmbSubdirectory): Self = StObject.set(x, "Subdirectory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: InputTagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: InputTagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: TagListEntry*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: TagListEntry*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setUser(value: SmbUser): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
+    inline def setUser(value: SmbUser): Self = StObject.set(x, "User", value.asInstanceOf[js.Any])
   }
 }

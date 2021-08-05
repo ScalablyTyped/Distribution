@@ -13,16 +13,13 @@ trait DeleteFindingsFilterRequest extends StObject {
 }
 object DeleteFindingsFilterRequest {
   
-  @scala.inline
-  def apply(id: string): DeleteFindingsFilterRequest = {
+  inline def apply(id: string): DeleteFindingsFilterRequest = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFindingsFilterRequest]
   }
   
-  @scala.inline
-  implicit class DeleteFindingsFilterRequestMutableBuilder[Self <: DeleteFindingsFilterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFindingsFilterRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

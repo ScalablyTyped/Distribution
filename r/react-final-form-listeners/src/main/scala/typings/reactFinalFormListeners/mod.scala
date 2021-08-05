@@ -32,20 +32,16 @@ object mod {
   }
   object ExternallyChangedProps {
     
-    @scala.inline
-    def apply(children: Boolean => ReactNode, name: String): ExternallyChangedProps = {
+    inline def apply(children: Boolean => ReactNode, name: String): ExternallyChangedProps = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children), name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExternallyChangedProps]
     }
     
-    @scala.inline
-    implicit class ExternallyChangedPropsMutableBuilder[Self <: ExternallyChangedProps] (val x: Self) extends AnyVal {
+    extension [Self <: ExternallyChangedProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: Boolean => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: Boolean => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -57,20 +53,16 @@ object mod {
   }
   object OnBlurProps {
     
-    @scala.inline
-    def apply(children: () => Unit, name: String): OnBlurProps = {
+    inline def apply(children: () => Unit, name: String): OnBlurProps = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction0(children), name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnBlurProps]
     }
     
-    @scala.inline
-    implicit class OnBlurPropsMutableBuilder[Self <: OnBlurProps] (val x: Self) extends AnyVal {
+    extension [Self <: OnBlurProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: () => Unit): Self = StObject.set(x, "children", js.Any.fromFunction0(value))
+      inline def setChildren(value: () => Unit): Self = StObject.set(x, "children", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -82,20 +74,16 @@ object mod {
   }
   object OnChangeProps {
     
-    @scala.inline
-    def apply(children: (js.Any, js.Any) => Unit, name: String): OnChangeProps = {
+    inline def apply(children: (js.Any, js.Any) => Unit, name: String): OnChangeProps = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction2(children), name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnChangeProps]
     }
     
-    @scala.inline
-    implicit class OnChangePropsMutableBuilder[Self <: OnChangeProps] (val x: Self) extends AnyVal {
+    extension [Self <: OnChangeProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
+      inline def setChildren(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -107,20 +95,16 @@ object mod {
   }
   object OnFocusProps {
     
-    @scala.inline
-    def apply(children: () => Unit, name: String): OnFocusProps = {
+    inline def apply(children: () => Unit, name: String): OnFocusProps = {
       val __obj = js.Dynamic.literal(children = js.Any.fromFunction0(children), name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnFocusProps]
     }
     
-    @scala.inline
-    implicit class OnFocusPropsMutableBuilder[Self <: OnFocusProps] (val x: Self) extends AnyVal {
+    extension [Self <: OnFocusProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: () => Unit): Self = StObject.set(x, "children", js.Any.fromFunction0(value))
+      inline def setChildren(value: () => Unit): Self = StObject.set(x, "children", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

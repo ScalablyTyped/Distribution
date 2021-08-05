@@ -50,6 +50,5 @@ object commandsGetMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasHasIpfsPrintIpfsPathOutputTimeout: Output): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintIpfsPathOutputTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(hasHasIpfsPrintIpfsPathOutputTimeout: Output): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintIpfsPathOutputTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

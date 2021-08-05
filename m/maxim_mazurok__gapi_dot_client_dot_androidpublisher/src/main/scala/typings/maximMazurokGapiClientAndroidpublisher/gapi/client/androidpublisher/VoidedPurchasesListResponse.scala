@@ -16,34 +16,25 @@ trait VoidedPurchasesListResponse extends StObject {
 }
 object VoidedPurchasesListResponse {
   
-  @scala.inline
-  def apply(): VoidedPurchasesListResponse = {
+  inline def apply(): VoidedPurchasesListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VoidedPurchasesListResponse]
   }
   
-  @scala.inline
-  implicit class VoidedPurchasesListResponseMutableBuilder[Self <: VoidedPurchasesListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: VoidedPurchasesListResponse](x: Self) {
     
-    @scala.inline
-    def setPageInfo(value: PageInfo): Self = StObject.set(x, "pageInfo", value.asInstanceOf[js.Any])
+    inline def setPageInfo(value: PageInfo): Self = StObject.set(x, "pageInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageInfoUndefined: Self = StObject.set(x, "pageInfo", js.undefined)
+    inline def setPageInfoUndefined: Self = StObject.set(x, "pageInfo", js.undefined)
     
-    @scala.inline
-    def setTokenPagination(value: TokenPagination): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
+    inline def setTokenPagination(value: TokenPagination): Self = StObject.set(x, "tokenPagination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
+    inline def setTokenPaginationUndefined: Self = StObject.set(x, "tokenPagination", js.undefined)
     
-    @scala.inline
-    def setVoidedPurchases(value: js.Array[VoidedPurchase]): Self = StObject.set(x, "voidedPurchases", value.asInstanceOf[js.Any])
+    inline def setVoidedPurchases(value: js.Array[VoidedPurchase]): Self = StObject.set(x, "voidedPurchases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoidedPurchasesUndefined: Self = StObject.set(x, "voidedPurchases", js.undefined)
+    inline def setVoidedPurchasesUndefined: Self = StObject.set(x, "voidedPurchases", js.undefined)
     
-    @scala.inline
-    def setVoidedPurchasesVarargs(value: VoidedPurchase*): Self = StObject.set(x, "voidedPurchases", js.Array(value :_*))
+    inline def setVoidedPurchasesVarargs(value: VoidedPurchase*): Self = StObject.set(x, "voidedPurchases", js.Array(value :_*))
   }
 }

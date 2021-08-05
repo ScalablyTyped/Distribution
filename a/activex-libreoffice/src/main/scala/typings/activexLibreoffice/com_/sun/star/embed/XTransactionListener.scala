@@ -26,8 +26,7 @@ trait XTransactionListener
 }
 object XTransactionListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     commited: EventObject => Unit,
     disposing: EventObject => Unit,
@@ -41,19 +40,14 @@ object XTransactionListener {
     __obj.asInstanceOf[XTransactionListener]
   }
   
-  @scala.inline
-  implicit class XTransactionListenerMutableBuilder[Self <: XTransactionListener] (val x: Self) extends AnyVal {
+  extension [Self <: XTransactionListener](x: Self) {
     
-    @scala.inline
-    def setCommited(value: EventObject => Unit): Self = StObject.set(x, "commited", js.Any.fromFunction1(value))
+    inline def setCommited(value: EventObject => Unit): Self = StObject.set(x, "commited", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPreCommit(value: EventObject => Unit): Self = StObject.set(x, "preCommit", js.Any.fromFunction1(value))
+    inline def setPreCommit(value: EventObject => Unit): Self = StObject.set(x, "preCommit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPreRevert(value: EventObject => Unit): Self = StObject.set(x, "preRevert", js.Any.fromFunction1(value))
+    inline def setPreRevert(value: EventObject => Unit): Self = StObject.set(x, "preRevert", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReverted(value: EventObject => Unit): Self = StObject.set(x, "reverted", js.Any.fromFunction1(value))
+    inline def setReverted(value: EventObject => Unit): Self = StObject.set(x, "reverted", js.Any.fromFunction1(value))
   }
 }

@@ -66,8 +66,7 @@ trait XInterfaceTypeDescription
 }
 object XInterfaceTypeDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BaseType: XTypeDescription,
     Members: SafeArray[XInterfaceMemberTypeDescription],
     Name: String,
@@ -86,25 +85,18 @@ object XInterfaceTypeDescription {
     __obj.asInstanceOf[XInterfaceTypeDescription]
   }
   
-  @scala.inline
-  implicit class XInterfaceTypeDescriptionMutableBuilder[Self <: XInterfaceTypeDescription] (val x: Self) extends AnyVal {
+  extension [Self <: XInterfaceTypeDescription](x: Self) {
     
-    @scala.inline
-    def setBaseType(value: XTypeDescription): Self = StObject.set(x, "BaseType", value.asInstanceOf[js.Any])
+    inline def setBaseType(value: XTypeDescription): Self = StObject.set(x, "BaseType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetBaseType(value: () => XTypeDescription): Self = StObject.set(x, "getBaseType", js.Any.fromFunction0(value))
+    inline def setGetBaseType(value: () => XTypeDescription): Self = StObject.set(x, "getBaseType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMembers(value: () => SafeArray[XInterfaceMemberTypeDescription]): Self = StObject.set(x, "getMembers", js.Any.fromFunction0(value))
+    inline def setGetMembers(value: () => SafeArray[XInterfaceMemberTypeDescription]): Self = StObject.set(x, "getMembers", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUik(value: () => Uik): Self = StObject.set(x, "getUik", js.Any.fromFunction0(value))
+    inline def setGetUik(value: () => Uik): Self = StObject.set(x, "getUik", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMembers(value: SafeArray[XInterfaceMemberTypeDescription]): Self = StObject.set(x, "Members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: SafeArray[XInterfaceMemberTypeDescription]): Self = StObject.set(x, "Members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUik(value: Uik): Self = StObject.set(x, "Uik", value.asInstanceOf[js.Any])
+    inline def setUik(value: Uik): Self = StObject.set(x, "Uik", value.asInstanceOf[js.Any])
   }
 }

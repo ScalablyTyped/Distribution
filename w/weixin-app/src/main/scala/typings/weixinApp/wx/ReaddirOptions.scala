@@ -17,22 +17,17 @@ trait ReaddirOptions
 }
 object ReaddirOptions {
   
-  @scala.inline
-  def apply(dirPath: String): ReaddirOptions = {
+  inline def apply(dirPath: String): ReaddirOptions = {
     val __obj = js.Dynamic.literal(dirPath = dirPath.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReaddirOptions]
   }
   
-  @scala.inline
-  implicit class ReaddirOptionsMutableBuilder[Self <: ReaddirOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ReaddirOptions](x: Self) {
     
-    @scala.inline
-    def setDirPath(value: String): Self = StObject.set(x, "dirPath", value.asInstanceOf[js.Any])
+    inline def setDirPath(value: String): Self = StObject.set(x, "dirPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: /* res */ Files => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* res */ Files => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

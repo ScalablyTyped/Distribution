@@ -16,8 +16,7 @@ trait QualifiedName
 }
 object QualifiedName {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -45,16 +44,12 @@ object QualifiedName {
     __obj.asInstanceOf[QualifiedName]
   }
   
-  @scala.inline
-  implicit class QualifiedNameMutableBuilder[Self <: QualifiedName] (val x: Self) extends AnyVal {
+  extension [Self <: QualifiedName](x: Self) {
     
-    @scala.inline
-    def setLeft(value: AST): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: AST): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: Identifier): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Identifier): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuralEquals(value: (QualifiedName, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (QualifiedName, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
   }
 }

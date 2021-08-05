@@ -10,16 +10,13 @@ trait EnumValuesMultiConfiguration extends StObject {
 }
 object EnumValuesMultiConfiguration {
   
-  @scala.inline
-  def apply(enumValues: MultiConfiguration): EnumValuesMultiConfiguration = {
+  inline def apply(enumValues: MultiConfiguration): EnumValuesMultiConfiguration = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesMultiConfiguration]
   }
   
-  @scala.inline
-  implicit class EnumValuesMultiConfigurationMutableBuilder[Self <: EnumValuesMultiConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesMultiConfiguration](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: MultiConfiguration): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: MultiConfiguration): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

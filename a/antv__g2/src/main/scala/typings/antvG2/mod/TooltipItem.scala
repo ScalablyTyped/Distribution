@@ -26,8 +26,7 @@ trait TooltipItem extends StObject {
 }
 object TooltipItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     color: String,
     marker: js.Any,
     name: String,
@@ -42,34 +41,24 @@ object TooltipItem {
     __obj.asInstanceOf[TooltipItem]
   }
   
-  @scala.inline
-  implicit class TooltipItemMutableBuilder[Self <: TooltipItem] (val x: Self) extends AnyVal {
+  extension [Self <: TooltipItem](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarker(value: js.Any): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: js.Any): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoint(value: js.Any): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
+    inline def setPoint(value: js.Any): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowMarker(value: Boolean): Self = StObject.set(x, "showMarker", value.asInstanceOf[js.Any])
+    inline def setShowMarker(value: Boolean): Self = StObject.set(x, "showMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

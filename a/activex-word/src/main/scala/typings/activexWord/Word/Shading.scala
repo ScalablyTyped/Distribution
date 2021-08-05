@@ -22,13 +22,12 @@ trait Shading extends StObject {
   
   var Texture: WdTextureIndex
   
-  @JSName("Word.Shading_typekey")
+  /* private */ @JSName("Word.Shading_typekey")
   var WordDotShading_typekey: Shading
 }
 object Shading {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     BackgroundPatternColor: WdColor,
     BackgroundPatternColorIndex: WdColorIndex,
@@ -44,34 +43,24 @@ object Shading {
     __obj.asInstanceOf[Shading]
   }
   
-  @scala.inline
-  implicit class ShadingMutableBuilder[Self <: Shading] (val x: Self) extends AnyVal {
+  extension [Self <: Shading](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundPatternColor(value: WdColor): Self = StObject.set(x, "BackgroundPatternColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundPatternColor(value: WdColor): Self = StObject.set(x, "BackgroundPatternColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundPatternColorIndex(value: WdColorIndex): Self = StObject.set(x, "BackgroundPatternColorIndex", value.asInstanceOf[js.Any])
+    inline def setBackgroundPatternColorIndex(value: WdColorIndex): Self = StObject.set(x, "BackgroundPatternColorIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForegroundPatternColor(value: WdColor): Self = StObject.set(x, "ForegroundPatternColor", value.asInstanceOf[js.Any])
+    inline def setForegroundPatternColor(value: WdColor): Self = StObject.set(x, "ForegroundPatternColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForegroundPatternColorIndex(value: WdColorIndex): Self = StObject.set(x, "ForegroundPatternColorIndex", value.asInstanceOf[js.Any])
+    inline def setForegroundPatternColorIndex(value: WdColorIndex): Self = StObject.set(x, "ForegroundPatternColorIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTexture(value: WdTextureIndex): Self = StObject.set(x, "Texture", value.asInstanceOf[js.Any])
+    inline def setTexture(value: WdTextureIndex): Self = StObject.set(x, "Texture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotShading_typekey(value: Shading): Self = StObject.set(x, "Word.Shading_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotShading_typekey(value: Shading): Self = StObject.set(x, "Word.Shading_typekey", value.asInstanceOf[js.Any])
   }
 }

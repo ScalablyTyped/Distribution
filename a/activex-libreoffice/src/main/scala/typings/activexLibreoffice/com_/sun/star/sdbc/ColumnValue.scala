@@ -17,13 +17,10 @@ object ColumnValue {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def NO_NULLS: `0` = 0.asInstanceOf[`0`]
+    inline def NO_NULLS: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def NULLABLE: `1` = 1.asInstanceOf[`1`]
+    inline def NULLABLE: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def NULLABLE_UNKNOWN: `2` = 2.asInstanceOf[`2`]
+    inline def NULLABLE_UNKNOWN: `2` = 2.asInstanceOf[`2`]
   }
 }

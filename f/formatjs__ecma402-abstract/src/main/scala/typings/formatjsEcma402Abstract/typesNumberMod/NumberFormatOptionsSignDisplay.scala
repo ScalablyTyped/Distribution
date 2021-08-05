@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait NumberFormatOptionsSignDisplay extends StObject
 object NumberFormatOptionsSignDisplay {
   
-  @scala.inline
-  def always: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.always = "always".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.always]
+  inline def always: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.always = "always".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.always]
   
-  @scala.inline
-  def auto: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.auto = "auto".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.auto]
+  inline def auto: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.auto = "auto".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.auto]
   
-  @scala.inline
-  def exceptZero: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.exceptZero = "exceptZero".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.exceptZero]
+  inline def exceptZero: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.exceptZero = "exceptZero".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.exceptZero]
   
-  @scala.inline
-  def never: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.never = "never".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.never]
+  inline def never: typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.never = "never".asInstanceOf[typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.never]
 }

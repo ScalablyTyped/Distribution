@@ -307,29 +307,24 @@ object viz {
   /**
     * [descr:viz.currentPalette()]
     */
-  @scala.inline
-  def currentPalette(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("currentPalette")().asInstanceOf[String]
+  inline def currentPalette(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("currentPalette")().asInstanceOf[String]
   /**
     * [descr:viz.currentPalette(paletteName)]
     */
-  @scala.inline
-  def currentPalette(paletteName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("currentPalette")(paletteName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def currentPalette(paletteName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("currentPalette")(paletteName.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * [descr:viz.currentTheme()]
     */
-  @scala.inline
-  def currentTheme(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("currentTheme")().asInstanceOf[String]
+  inline def currentTheme(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("currentTheme")().asInstanceOf[String]
   /**
     * [descr:viz.currentTheme(platform, colorScheme)]
     */
-  @scala.inline
-  def currentTheme(platform: String, colorScheme: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("currentTheme")(platform.asInstanceOf[js.Any], colorScheme.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def currentTheme(platform: String, colorScheme: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("currentTheme")(platform.asInstanceOf[js.Any], colorScheme.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * [descr:viz.currentTheme(theme)]
     */
-  @scala.inline
-  def currentTheme(theme: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("currentTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def currentTheme(theme: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("currentTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("devextreme", "default.viz.dxBarGauge")
   @js.native
@@ -588,122 +583,92 @@ object viz {
   /**
     * [descr:viz.exportFromMarkup(markup, options)]
     */
-  @scala.inline
-  def exportFromMarkup(markup: String, options: BackgroundColor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exportFromMarkup")(markup.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def exportFromMarkup(markup: String, options: BackgroundColor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exportFromMarkup")(markup.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * [descr:viz.exportWidgets(widgetInstances)]
     */
-  @scala.inline
-  def exportWidgets(widgetInstances: js.Array[js.Array[typings.devextreme.mod.DevExpress.DOMComponent]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("exportWidgets")(widgetInstances.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def exportWidgets(widgetInstances: js.Array[js.Array[typings.devextreme.mod.DevExpress.DOMComponent]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("exportWidgets")(widgetInstances.asInstanceOf[js.Any]).asInstanceOf[Unit]
   /**
     * [descr:viz.exportWidgets(widgetInstances, options)]
     */
-  @scala.inline
-  def exportWidgets(
+  inline def exportWidgets(
     widgetInstances: js.Array[js.Array[typings.devextreme.mod.DevExpress.DOMComponent]],
     options: FileName
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exportWidgets")(widgetInstances.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def generateColors(palette: js.Array[String], count: Double, options: BaseColorSet): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateColors")(palette.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def generateColors(palette: js.Array[String], count: Double, options: BaseColorSet): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateColors")(palette.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   /**
     * [descr:viz.generateColors(palette, count, options)]
     */
-  @scala.inline
-  def generateColors_Bright(palette: Bright, count: Double, options: BaseColorSet): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateColors")(palette.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def generateColors_Bright(palette: Bright, count: Double, options: BaseColorSet): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateColors")(palette.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def generateColors_Carmine(palette: Carmine, count: Double, options: BaseColorSet): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateColors")(palette.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def generateColors_Carmine(palette: Carmine, count: Double, options: BaseColorSet): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateColors")(palette.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def generateColors_DarkMoon(palette: `Dark Moon`, count: Double, options: BaseColorSet): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateColors")(palette.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def generateColors_DarkMoon(palette: `Dark Moon`, count: Double, options: BaseColorSet): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateColors")(palette.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def generateColors_DarkViolet(palette: `Dark Violet`, count: Double, options: BaseColorSet): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateColors")(palette.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def generateColors_DarkViolet(palette: `Dark Violet`, count: Double, options: BaseColorSet): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateColors")(palette.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def generateColors_GreenMist(palette: `Green Mist`, count: Double, options: BaseColorSet): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateColors")(palette.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def generateColors_GreenMist(palette: `Green Mist`, count: Double, options: BaseColorSet): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateColors")(palette.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def generateColors_HarmonyLight(palette: `Harmony Light`, count: Double, options: BaseColorSet): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateColors")(palette.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def generateColors_HarmonyLight(palette: `Harmony Light`, count: Double, options: BaseColorSet): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateColors")(palette.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def generateColors_Material(palette: Material, count: Double, options: BaseColorSet): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateColors")(palette.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def generateColors_Material(palette: Material, count: Double, options: BaseColorSet): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateColors")(palette.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def generateColors_Ocean(palette: Ocean, count: Double, options: BaseColorSet): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateColors")(palette.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def generateColors_Ocean(palette: Ocean, count: Double, options: BaseColorSet): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateColors")(palette.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def generateColors_Office(palette: Office, count: Double, options: BaseColorSet): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateColors")(palette.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def generateColors_Office(palette: Office, count: Double, options: BaseColorSet): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateColors")(palette.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def generateColors_Pastel(palette: Pastel, count: Double, options: BaseColorSet): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateColors")(palette.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def generateColors_Pastel(palette: Pastel, count: Double, options: BaseColorSet): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateColors")(palette.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def generateColors_Soft(palette: Soft, count: Double, options: BaseColorSet): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateColors")(palette.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def generateColors_Soft(palette: Soft, count: Double, options: BaseColorSet): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateColors")(palette.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def generateColors_SoftBlue(palette: `Soft Blue`, count: Double, options: BaseColorSet): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateColors")(palette.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def generateColors_SoftBlue(palette: `Soft Blue`, count: Double, options: BaseColorSet): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateColors")(palette.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def generateColors_SoftPastel(palette: `Soft Pastel`, count: Double, options: BaseColorSet): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateColors")(palette.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def generateColors_SoftPastel(palette: `Soft Pastel`, count: Double, options: BaseColorSet): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateColors")(palette.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def generateColors_Vintage(palette: Vintage, count: Double, options: BaseColorSet): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateColors")(palette.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def generateColors_Vintage(palette: Vintage, count: Double, options: BaseColorSet): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateColors")(palette.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @scala.inline
-  def generateColors_Violet(palette: Violet, count: Double, options: BaseColorSet): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateColors")(palette.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  inline def generateColors_Violet(palette: Violet, count: Double, options: BaseColorSet): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateColors")(palette.asInstanceOf[js.Any], count.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   /**
     * [descr:viz.getMarkup(widgetInstances)]
     */
-  @scala.inline
-  def getMarkup(widgetInstances: js.Array[typings.devextreme.mod.DevExpress.DOMComponent]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getMarkup")(widgetInstances.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def getMarkup(widgetInstances: js.Array[typings.devextreme.mod.DevExpress.DOMComponent]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getMarkup")(widgetInstances.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * [descr:viz.getPalette(paletteName)]
     */
-  @scala.inline
-  def getPalette(paletteName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getPalette")(paletteName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getPalette(paletteName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getPalette")(paletteName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * [descr:viz.getTheme(theme)]
     */
-  @scala.inline
-  def getTheme(theme: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def getTheme(theme: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTheme")(theme.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   object map {
     
     object projection {
       
-      @scala.inline
-      def apply(data: VectorMapProjectionConfig): js.Any = ^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def apply(data: VectorMapProjectionConfig): js.Any = ^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
       @JSImport("devextreme", "default.viz.map.projection")
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def add(name: String, projection: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(name.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[Unit]
-      @scala.inline
-      def add(name: String, projection: VectorMapProjectionConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(name.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def add(name: String, projection: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(name.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      inline def add(name: String, projection: VectorMapProjectionConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(name.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @scala.inline
-      def get(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def get(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
-      @scala.inline
-      def get_equirectangular(name: equirectangular): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def get_equirectangular(name: equirectangular): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
-      @scala.inline
-      def get_lambert(name: lambert): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def get_lambert(name: lambert): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
-      @scala.inline
-      def get_mercator(name: mercator): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def get_mercator(name: mercator): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
       
-      @scala.inline
-      def get_miller(name: miller): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      inline def get_miller(name: miller): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     }
   }
   
@@ -874,24 +839,20 @@ object viz {
   /**
     * [descr:viz.refreshPaths()]
     */
-  @scala.inline
-  def refreshPaths(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshPaths")().asInstanceOf[Unit]
+  inline def refreshPaths(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshPaths")().asInstanceOf[Unit]
   
   /**
     * [descr:viz.refreshTheme()]
     */
-  @scala.inline
-  def refreshTheme(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshTheme")().asInstanceOf[Unit]
+  inline def refreshTheme(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshTheme")().asInstanceOf[Unit]
   
   /**
     * [descr:viz.registerPalette(paletteName, palette)]
     */
-  @scala.inline
-  def registerPalette(paletteName: String, palette: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerPalette")(paletteName.asInstanceOf[js.Any], palette.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerPalette(paletteName: String, palette: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerPalette")(paletteName.asInstanceOf[js.Any], palette.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * [descr:viz.registerTheme(customTheme, baseTheme)]
     */
-  @scala.inline
-  def registerTheme(customTheme: js.Any, baseTheme: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerTheme")(customTheme.asInstanceOf[js.Any], baseTheme.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def registerTheme(customTheme: js.Any, baseTheme: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerTheme")(customTheme.asInstanceOf[js.Any], baseTheme.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

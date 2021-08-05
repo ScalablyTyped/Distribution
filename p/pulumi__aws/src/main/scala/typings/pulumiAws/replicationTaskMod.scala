@@ -91,21 +91,16 @@ object replicationTaskMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ReplicationTask = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ReplicationTask]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ReplicationTask = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReplicationTask]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ReplicationTaskState): ReplicationTask = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ReplicationTask]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ReplicationTaskState, opts: CustomResourceOptions): ReplicationTask = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReplicationTask]
+    inline def get(name: String, id: Input[ID]): ReplicationTask = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ReplicationTask]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ReplicationTask = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReplicationTask]
+    inline def get(name: String, id: Input[ID], state: ReplicationTaskState): ReplicationTask = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ReplicationTask]
+    inline def get(name: String, id: Input[ID], state: ReplicationTaskState, opts: CustomResourceOptions): ReplicationTask = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReplicationTask]
     
     /**
       * Returns true if the given object is an instance of ReplicationTask.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dms/replicationTask.ReplicationTask */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/dms/replicationTask.ReplicationTask */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dms/replicationTask.ReplicationTask */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/dms/replicationTask.ReplicationTask */ Boolean]
   }
   
   trait ReplicationTaskArgs extends StObject {
@@ -157,8 +152,7 @@ object replicationTaskMod {
   }
   object ReplicationTaskArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       migrationType: Input[String],
       replicationInstanceArn: Input[String],
       replicationTaskId: Input[String],
@@ -170,44 +164,31 @@ object replicationTaskMod {
       __obj.asInstanceOf[ReplicationTaskArgs]
     }
     
-    @scala.inline
-    implicit class ReplicationTaskArgsMutableBuilder[Self <: ReplicationTaskArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ReplicationTaskArgs](x: Self) {
       
-      @scala.inline
-      def setCdcStartTime(value: Input[String]): Self = StObject.set(x, "cdcStartTime", value.asInstanceOf[js.Any])
+      inline def setCdcStartTime(value: Input[String]): Self = StObject.set(x, "cdcStartTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCdcStartTimeUndefined: Self = StObject.set(x, "cdcStartTime", js.undefined)
+      inline def setCdcStartTimeUndefined: Self = StObject.set(x, "cdcStartTime", js.undefined)
       
-      @scala.inline
-      def setMigrationType(value: Input[String]): Self = StObject.set(x, "migrationType", value.asInstanceOf[js.Any])
+      inline def setMigrationType(value: Input[String]): Self = StObject.set(x, "migrationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicationInstanceArn(value: Input[String]): Self = StObject.set(x, "replicationInstanceArn", value.asInstanceOf[js.Any])
+      inline def setReplicationInstanceArn(value: Input[String]): Self = StObject.set(x, "replicationInstanceArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicationTaskId(value: Input[String]): Self = StObject.set(x, "replicationTaskId", value.asInstanceOf[js.Any])
+      inline def setReplicationTaskId(value: Input[String]): Self = StObject.set(x, "replicationTaskId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicationTaskSettings(value: Input[String]): Self = StObject.set(x, "replicationTaskSettings", value.asInstanceOf[js.Any])
+      inline def setReplicationTaskSettings(value: Input[String]): Self = StObject.set(x, "replicationTaskSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicationTaskSettingsUndefined: Self = StObject.set(x, "replicationTaskSettings", js.undefined)
+      inline def setReplicationTaskSettingsUndefined: Self = StObject.set(x, "replicationTaskSettings", js.undefined)
       
-      @scala.inline
-      def setSourceEndpointArn(value: Input[String]): Self = StObject.set(x, "sourceEndpointArn", value.asInstanceOf[js.Any])
+      inline def setSourceEndpointArn(value: Input[String]): Self = StObject.set(x, "sourceEndpointArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableMappings(value: Input[String]): Self = StObject.set(x, "tableMappings", value.asInstanceOf[js.Any])
+      inline def setTableMappings(value: Input[String]): Self = StObject.set(x, "tableMappings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTargetEndpointArn(value: Input[String]): Self = StObject.set(x, "targetEndpointArn", value.asInstanceOf[js.Any])
+      inline def setTargetEndpointArn(value: Input[String]): Self = StObject.set(x, "targetEndpointArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -265,74 +246,52 @@ object replicationTaskMod {
   }
   object ReplicationTaskState {
     
-    @scala.inline
-    def apply(): ReplicationTaskState = {
+    inline def apply(): ReplicationTaskState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReplicationTaskState]
     }
     
-    @scala.inline
-    implicit class ReplicationTaskStateMutableBuilder[Self <: ReplicationTaskState] (val x: Self) extends AnyVal {
+    extension [Self <: ReplicationTaskState](x: Self) {
       
-      @scala.inline
-      def setCdcStartTime(value: Input[String]): Self = StObject.set(x, "cdcStartTime", value.asInstanceOf[js.Any])
+      inline def setCdcStartTime(value: Input[String]): Self = StObject.set(x, "cdcStartTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCdcStartTimeUndefined: Self = StObject.set(x, "cdcStartTime", js.undefined)
+      inline def setCdcStartTimeUndefined: Self = StObject.set(x, "cdcStartTime", js.undefined)
       
-      @scala.inline
-      def setMigrationType(value: Input[String]): Self = StObject.set(x, "migrationType", value.asInstanceOf[js.Any])
+      inline def setMigrationType(value: Input[String]): Self = StObject.set(x, "migrationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMigrationTypeUndefined: Self = StObject.set(x, "migrationType", js.undefined)
+      inline def setMigrationTypeUndefined: Self = StObject.set(x, "migrationType", js.undefined)
       
-      @scala.inline
-      def setReplicationInstanceArn(value: Input[String]): Self = StObject.set(x, "replicationInstanceArn", value.asInstanceOf[js.Any])
+      inline def setReplicationInstanceArn(value: Input[String]): Self = StObject.set(x, "replicationInstanceArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicationInstanceArnUndefined: Self = StObject.set(x, "replicationInstanceArn", js.undefined)
+      inline def setReplicationInstanceArnUndefined: Self = StObject.set(x, "replicationInstanceArn", js.undefined)
       
-      @scala.inline
-      def setReplicationTaskArn(value: Input[String]): Self = StObject.set(x, "replicationTaskArn", value.asInstanceOf[js.Any])
+      inline def setReplicationTaskArn(value: Input[String]): Self = StObject.set(x, "replicationTaskArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicationTaskArnUndefined: Self = StObject.set(x, "replicationTaskArn", js.undefined)
+      inline def setReplicationTaskArnUndefined: Self = StObject.set(x, "replicationTaskArn", js.undefined)
       
-      @scala.inline
-      def setReplicationTaskId(value: Input[String]): Self = StObject.set(x, "replicationTaskId", value.asInstanceOf[js.Any])
+      inline def setReplicationTaskId(value: Input[String]): Self = StObject.set(x, "replicationTaskId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicationTaskIdUndefined: Self = StObject.set(x, "replicationTaskId", js.undefined)
+      inline def setReplicationTaskIdUndefined: Self = StObject.set(x, "replicationTaskId", js.undefined)
       
-      @scala.inline
-      def setReplicationTaskSettings(value: Input[String]): Self = StObject.set(x, "replicationTaskSettings", value.asInstanceOf[js.Any])
+      inline def setReplicationTaskSettings(value: Input[String]): Self = StObject.set(x, "replicationTaskSettings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplicationTaskSettingsUndefined: Self = StObject.set(x, "replicationTaskSettings", js.undefined)
+      inline def setReplicationTaskSettingsUndefined: Self = StObject.set(x, "replicationTaskSettings", js.undefined)
       
-      @scala.inline
-      def setSourceEndpointArn(value: Input[String]): Self = StObject.set(x, "sourceEndpointArn", value.asInstanceOf[js.Any])
+      inline def setSourceEndpointArn(value: Input[String]): Self = StObject.set(x, "sourceEndpointArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceEndpointArnUndefined: Self = StObject.set(x, "sourceEndpointArn", js.undefined)
+      inline def setSourceEndpointArnUndefined: Self = StObject.set(x, "sourceEndpointArn", js.undefined)
       
-      @scala.inline
-      def setTableMappings(value: Input[String]): Self = StObject.set(x, "tableMappings", value.asInstanceOf[js.Any])
+      inline def setTableMappings(value: Input[String]): Self = StObject.set(x, "tableMappings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTableMappingsUndefined: Self = StObject.set(x, "tableMappings", js.undefined)
+      inline def setTableMappingsUndefined: Self = StObject.set(x, "tableMappings", js.undefined)
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
       
-      @scala.inline
-      def setTargetEndpointArn(value: Input[String]): Self = StObject.set(x, "targetEndpointArn", value.asInstanceOf[js.Any])
+      inline def setTargetEndpointArn(value: Input[String]): Self = StObject.set(x, "targetEndpointArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetEndpointArnUndefined: Self = StObject.set(x, "targetEndpointArn", js.undefined)
+      inline def setTargetEndpointArnUndefined: Self = StObject.set(x, "targetEndpointArn", js.undefined)
     }
   }
 }

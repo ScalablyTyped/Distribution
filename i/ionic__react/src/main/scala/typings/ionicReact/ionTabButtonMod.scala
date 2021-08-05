@@ -33,32 +33,24 @@ object ionTabButtonMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(): Props = {
+    inline def apply(): Props = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setOnClick(value: /* e */ js.Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* e */ js.Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setRef(value: RefObject[HTMLIonTabButtonElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: RefObject[HTMLIonTabButtonElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
+      inline def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
       
-      @scala.inline
-      def setRouterOptions(value: RouterOptions): Self = StObject.set(x, "routerOptions", value.asInstanceOf[js.Any])
+      inline def setRouterOptions(value: RouterOptions): Self = StObject.set(x, "routerOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouterOptionsUndefined: Self = StObject.set(x, "routerOptions", js.undefined)
+      inline def setRouterOptionsUndefined: Self = StObject.set(x, "routerOptions", js.undefined)
     }
   }
 }

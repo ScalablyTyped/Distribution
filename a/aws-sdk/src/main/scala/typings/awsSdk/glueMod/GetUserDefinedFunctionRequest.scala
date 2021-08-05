@@ -23,25 +23,19 @@ trait GetUserDefinedFunctionRequest extends StObject {
 }
 object GetUserDefinedFunctionRequest {
   
-  @scala.inline
-  def apply(DatabaseName: NameString, FunctionName: NameString): GetUserDefinedFunctionRequest = {
+  inline def apply(DatabaseName: NameString, FunctionName: NameString): GetUserDefinedFunctionRequest = {
     val __obj = js.Dynamic.literal(DatabaseName = DatabaseName.asInstanceOf[js.Any], FunctionName = FunctionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetUserDefinedFunctionRequest]
   }
   
-  @scala.inline
-  implicit class GetUserDefinedFunctionRequestMutableBuilder[Self <: GetUserDefinedFunctionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetUserDefinedFunctionRequest](x: Self) {
     
-    @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
+    inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
+    inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
-    @scala.inline
-    def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionName(value: NameString): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
+    inline def setFunctionName(value: NameString): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
   }
 }

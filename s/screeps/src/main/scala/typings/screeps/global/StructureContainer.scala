@@ -102,6 +102,5 @@ class StructureContainer protected ()
 }
 object StructureContainer {
   
-  @scala.inline
-  def apply: StructureContainerConstructor = js.Dynamic.global.selectDynamic("StructureContainer").asInstanceOf[StructureContainerConstructor]
+  inline def apply: StructureContainerConstructor = js.Dynamic.global.selectDynamic("StructureContainer").asInstanceOf[StructureContainerConstructor]
 }

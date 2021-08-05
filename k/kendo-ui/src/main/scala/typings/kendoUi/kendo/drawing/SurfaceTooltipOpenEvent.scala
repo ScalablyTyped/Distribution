@@ -14,25 +14,19 @@ trait SurfaceTooltipOpenEvent
 }
 object SurfaceTooltipOpenEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Surface): SurfaceTooltipOpenEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Surface): SurfaceTooltipOpenEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[SurfaceTooltipOpenEvent]
   }
   
-  @scala.inline
-  implicit class SurfaceTooltipOpenEventMutableBuilder[Self <: SurfaceTooltipOpenEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SurfaceTooltipOpenEvent](x: Self) {
     
-    @scala.inline
-    def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    @scala.inline
-    def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Element): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
   }
 }

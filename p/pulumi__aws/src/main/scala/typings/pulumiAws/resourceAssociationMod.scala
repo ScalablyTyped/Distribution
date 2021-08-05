@@ -50,21 +50,16 @@ object resourceAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): ResourceAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ResourceAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ResourceAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResourceAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ResourceAssociationState): ResourceAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ResourceAssociation]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: ResourceAssociationState, opts: CustomResourceOptions): ResourceAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResourceAssociation]
+    inline def get(name: String, id: Input[ID]): ResourceAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ResourceAssociation]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ResourceAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResourceAssociation]
+    inline def get(name: String, id: Input[ID], state: ResourceAssociationState): ResourceAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ResourceAssociation]
+    inline def get(name: String, id: Input[ID], state: ResourceAssociationState, opts: CustomResourceOptions): ResourceAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResourceAssociation]
     
     /**
       * Returns true if the given object is an instance of ResourceAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ram/resourceAssociation.ResourceAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ram/resourceAssociation.ResourceAssociation */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ram/resourceAssociation.ResourceAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ram/resourceAssociation.ResourceAssociation */ Boolean]
   }
   
   trait ResourceAssociationArgs extends StObject {
@@ -81,20 +76,16 @@ object resourceAssociationMod {
   }
   object ResourceAssociationArgs {
     
-    @scala.inline
-    def apply(resourceArn: Input[String], resourceShareArn: Input[String]): ResourceAssociationArgs = {
+    inline def apply(resourceArn: Input[String], resourceShareArn: Input[String]): ResourceAssociationArgs = {
       val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any], resourceShareArn = resourceShareArn.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResourceAssociationArgs]
     }
     
-    @scala.inline
-    implicit class ResourceAssociationArgsMutableBuilder[Self <: ResourceAssociationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceAssociationArgs](x: Self) {
       
-      @scala.inline
-      def setResourceArn(value: Input[String]): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+      inline def setResourceArn(value: Input[String]): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceShareArn(value: Input[String]): Self = StObject.set(x, "resourceShareArn", value.asInstanceOf[js.Any])
+      inline def setResourceShareArn(value: Input[String]): Self = StObject.set(x, "resourceShareArn", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,26 +103,20 @@ object resourceAssociationMod {
   }
   object ResourceAssociationState {
     
-    @scala.inline
-    def apply(): ResourceAssociationState = {
+    inline def apply(): ResourceAssociationState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ResourceAssociationState]
     }
     
-    @scala.inline
-    implicit class ResourceAssociationStateMutableBuilder[Self <: ResourceAssociationState] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceAssociationState](x: Self) {
       
-      @scala.inline
-      def setResourceArn(value: Input[String]): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+      inline def setResourceArn(value: Input[String]): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceArnUndefined: Self = StObject.set(x, "resourceArn", js.undefined)
+      inline def setResourceArnUndefined: Self = StObject.set(x, "resourceArn", js.undefined)
       
-      @scala.inline
-      def setResourceShareArn(value: Input[String]): Self = StObject.set(x, "resourceShareArn", value.asInstanceOf[js.Any])
+      inline def setResourceShareArn(value: Input[String]): Self = StObject.set(x, "resourceShareArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceShareArnUndefined: Self = StObject.set(x, "resourceShareArn", js.undefined)
+      inline def setResourceShareArnUndefined: Self = StObject.set(x, "resourceShareArn", js.undefined)
     }
   }
 }

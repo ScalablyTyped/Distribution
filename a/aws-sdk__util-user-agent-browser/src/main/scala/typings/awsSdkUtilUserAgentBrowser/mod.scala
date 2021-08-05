@@ -10,6 +10,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def defaultUserAgent(packageName: String, packageVersion: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultUserAgent")(packageName.asInstanceOf[js.Any], packageVersion.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def defaultUserAgent(packageName: String, packageVersion: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultUserAgent")(packageName.asInstanceOf[js.Any], packageVersion.asInstanceOf[js.Any])).asInstanceOf[String]
 }

@@ -24,19 +24,16 @@ trait SystemInfoNetwork
 }
 object SystemInfoNetwork {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     networkType: SystemInfoNetworkType | NONE | `2G` | `2Dot5G` | `3G` | `4G` | WIFI | ETHERNET | NET_PROXY | UNKNOWN
   ): SystemInfoNetwork = {
     val __obj = js.Dynamic.literal(networkType = networkType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemInfoNetwork]
   }
   
-  @scala.inline
-  implicit class SystemInfoNetworkMutableBuilder[Self <: SystemInfoNetwork] (val x: Self) extends AnyVal {
+  extension [Self <: SystemInfoNetwork](x: Self) {
     
-    @scala.inline
-    def setNetworkType(
+    inline def setNetworkType(
       value: SystemInfoNetworkType | NONE | `2G` | `2Dot5G` | `3G` | `4G` | WIFI | ETHERNET | NET_PROXY | UNKNOWN
     ): Self = StObject.set(x, "networkType", value.asInstanceOf[js.Any])
   }

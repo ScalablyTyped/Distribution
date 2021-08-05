@@ -12,19 +12,15 @@ trait AccessPoliciesStatus extends StObject {
 }
 object AccessPoliciesStatus {
   
-  @scala.inline
-  def apply(Options: PolicyDocument, Status: OptionStatus): AccessPoliciesStatus = {
+  inline def apply(Options: PolicyDocument, Status: OptionStatus): AccessPoliciesStatus = {
     val __obj = js.Dynamic.literal(Options = Options.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessPoliciesStatus]
   }
   
-  @scala.inline
-  implicit class AccessPoliciesStatusMutableBuilder[Self <: AccessPoliciesStatus] (val x: Self) extends AnyVal {
+  extension [Self <: AccessPoliciesStatus](x: Self) {
     
-    @scala.inline
-    def setOptions(value: PolicyDocument): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: PolicyDocument): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: OptionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: OptionStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
   }
 }

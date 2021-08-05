@@ -87,8 +87,7 @@ trait QuickInput extends StObject {
 }
 object QuickInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     busy: Boolean,
     dispose: () => Unit,
     enabled: Boolean,
@@ -101,48 +100,34 @@ object QuickInput {
     __obj.asInstanceOf[QuickInput]
   }
   
-  @scala.inline
-  implicit class QuickInputMutableBuilder[Self <: QuickInput] (val x: Self) extends AnyVal {
+  extension [Self <: QuickInput](x: Self) {
     
-    @scala.inline
-    def setBusy(value: Boolean): Self = StObject.set(x, "busy", value.asInstanceOf[js.Any])
+    inline def setBusy(value: Boolean): Self = StObject.set(x, "busy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+    inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIgnoreFocusOut(value: Boolean): Self = StObject.set(x, "ignoreFocusOut", value.asInstanceOf[js.Any])
+    inline def setIgnoreFocusOut(value: Boolean): Self = StObject.set(x, "ignoreFocusOut", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDidHide(
+    inline def setOnDidHide(
       value: (/* listener */ js.Function1[Unit, js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable
     ): Self = StObject.set(x, "onDidHide", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setTotalSteps(value: Double): Self = StObject.set(x, "totalSteps", value.asInstanceOf[js.Any])
+    inline def setTotalSteps(value: Double): Self = StObject.set(x, "totalSteps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalStepsUndefined: Self = StObject.set(x, "totalSteps", js.undefined)
+    inline def setTotalStepsUndefined: Self = StObject.set(x, "totalSteps", js.undefined)
   }
 }

@@ -18,22 +18,17 @@ trait GetProtocolsListRequest extends StObject {
 }
 object GetProtocolsListRequest {
   
-  @scala.inline
-  def apply(ListId: ListId): GetProtocolsListRequest = {
+  inline def apply(ListId: ListId): GetProtocolsListRequest = {
     val __obj = js.Dynamic.literal(ListId = ListId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetProtocolsListRequest]
   }
   
-  @scala.inline
-  implicit class GetProtocolsListRequestMutableBuilder[Self <: GetProtocolsListRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetProtocolsListRequest](x: Self) {
     
-    @scala.inline
-    def setDefaultList(value: Boolean): Self = StObject.set(x, "DefaultList", value.asInstanceOf[js.Any])
+    inline def setDefaultList(value: Boolean): Self = StObject.set(x, "DefaultList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultListUndefined: Self = StObject.set(x, "DefaultList", js.undefined)
+    inline def setDefaultListUndefined: Self = StObject.set(x, "DefaultList", js.undefined)
     
-    @scala.inline
-    def setListId(value: ListId): Self = StObject.set(x, "ListId", value.asInstanceOf[js.Any])
+    inline def setListId(value: ListId): Self = StObject.set(x, "ListId", value.asInstanceOf[js.Any])
   }
 }

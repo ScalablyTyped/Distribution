@@ -10,16 +10,13 @@ trait ComponentStackString extends StObject {
 }
 object ComponentStackString {
   
-  @scala.inline
-  def apply(componentStack: String): ComponentStackString = {
+  inline def apply(componentStack: String): ComponentStackString = {
     val __obj = js.Dynamic.literal(componentStack = componentStack.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentStackString]
   }
   
-  @scala.inline
-  implicit class ComponentStackStringMutableBuilder[Self <: ComponentStackString] (val x: Self) extends AnyVal {
+  extension [Self <: ComponentStackString](x: Self) {
     
-    @scala.inline
-    def setComponentStack(value: String): Self = StObject.set(x, "componentStack", value.asInstanceOf[js.Any])
+    inline def setComponentStack(value: String): Self = StObject.set(x, "componentStack", value.asInstanceOf[js.Any])
   }
 }

@@ -18,22 +18,17 @@ trait CreatePresignedNotebookInstanceUrlInput extends StObject {
 }
 object CreatePresignedNotebookInstanceUrlInput {
   
-  @scala.inline
-  def apply(NotebookInstanceName: NotebookInstanceName): CreatePresignedNotebookInstanceUrlInput = {
+  inline def apply(NotebookInstanceName: NotebookInstanceName): CreatePresignedNotebookInstanceUrlInput = {
     val __obj = js.Dynamic.literal(NotebookInstanceName = NotebookInstanceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePresignedNotebookInstanceUrlInput]
   }
   
-  @scala.inline
-  implicit class CreatePresignedNotebookInstanceUrlInputMutableBuilder[Self <: CreatePresignedNotebookInstanceUrlInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePresignedNotebookInstanceUrlInput](x: Self) {
     
-    @scala.inline
-    def setNotebookInstanceName(value: NotebookInstanceName): Self = StObject.set(x, "NotebookInstanceName", value.asInstanceOf[js.Any])
+    inline def setNotebookInstanceName(value: NotebookInstanceName): Self = StObject.set(x, "NotebookInstanceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionExpirationDurationInSeconds(value: SessionExpirationDurationInSeconds): Self = StObject.set(x, "SessionExpirationDurationInSeconds", value.asInstanceOf[js.Any])
+    inline def setSessionExpirationDurationInSeconds(value: SessionExpirationDurationInSeconds): Self = StObject.set(x, "SessionExpirationDurationInSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionExpirationDurationInSecondsUndefined: Self = StObject.set(x, "SessionExpirationDurationInSeconds", js.undefined)
+    inline def setSessionExpirationDurationInSecondsUndefined: Self = StObject.set(x, "SessionExpirationDurationInSeconds", js.undefined)
   }
 }

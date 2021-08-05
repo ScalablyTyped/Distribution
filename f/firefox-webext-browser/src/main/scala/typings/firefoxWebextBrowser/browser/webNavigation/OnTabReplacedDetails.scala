@@ -17,22 +17,17 @@ trait OnTabReplacedDetails extends StObject {
 }
 object OnTabReplacedDetails {
   
-  @scala.inline
-  def apply(replacedTabId: Double, tabId: Double, timeStamp: Double): OnTabReplacedDetails = {
+  inline def apply(replacedTabId: Double, tabId: Double, timeStamp: Double): OnTabReplacedDetails = {
     val __obj = js.Dynamic.literal(replacedTabId = replacedTabId.asInstanceOf[js.Any], tabId = tabId.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnTabReplacedDetails]
   }
   
-  @scala.inline
-  implicit class OnTabReplacedDetailsMutableBuilder[Self <: OnTabReplacedDetails] (val x: Self) extends AnyVal {
+  extension [Self <: OnTabReplacedDetails](x: Self) {
     
-    @scala.inline
-    def setReplacedTabId(value: Double): Self = StObject.set(x, "replacedTabId", value.asInstanceOf[js.Any])
+    inline def setReplacedTabId(value: Double): Self = StObject.set(x, "replacedTabId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
+    inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
+    inline def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
   }
 }

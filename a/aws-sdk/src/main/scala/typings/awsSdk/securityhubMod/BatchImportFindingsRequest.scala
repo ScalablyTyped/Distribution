@@ -13,19 +13,15 @@ trait BatchImportFindingsRequest extends StObject {
 }
 object BatchImportFindingsRequest {
   
-  @scala.inline
-  def apply(Findings: AwsSecurityFindingList): BatchImportFindingsRequest = {
+  inline def apply(Findings: AwsSecurityFindingList): BatchImportFindingsRequest = {
     val __obj = js.Dynamic.literal(Findings = Findings.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchImportFindingsRequest]
   }
   
-  @scala.inline
-  implicit class BatchImportFindingsRequestMutableBuilder[Self <: BatchImportFindingsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: BatchImportFindingsRequest](x: Self) {
     
-    @scala.inline
-    def setFindings(value: AwsSecurityFindingList): Self = StObject.set(x, "Findings", value.asInstanceOf[js.Any])
+    inline def setFindings(value: AwsSecurityFindingList): Self = StObject.set(x, "Findings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingsVarargs(value: AwsSecurityFinding*): Self = StObject.set(x, "Findings", js.Array(value :_*))
+    inline def setFindingsVarargs(value: AwsSecurityFinding*): Self = StObject.set(x, "Findings", js.Array(value :_*))
   }
 }

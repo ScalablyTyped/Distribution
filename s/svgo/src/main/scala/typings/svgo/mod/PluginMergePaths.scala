@@ -12,16 +12,13 @@ trait PluginMergePaths
 }
 object PluginMergePaths {
   
-  @scala.inline
-  def apply(mergePaths: Boolean | js.Object): PluginMergePaths = {
+  inline def apply(mergePaths: Boolean | js.Object): PluginMergePaths = {
     val __obj = js.Dynamic.literal(mergePaths = mergePaths.asInstanceOf[js.Any])
     __obj.asInstanceOf[PluginMergePaths]
   }
   
-  @scala.inline
-  implicit class PluginMergePathsMutableBuilder[Self <: PluginMergePaths] (val x: Self) extends AnyVal {
+  extension [Self <: PluginMergePaths](x: Self) {
     
-    @scala.inline
-    def setMergePaths(value: Boolean | js.Object): Self = StObject.set(x, "mergePaths", value.asInstanceOf[js.Any])
+    inline def setMergePaths(value: Boolean | js.Object): Self = StObject.set(x, "mergePaths", value.asInstanceOf[js.Any])
   }
 }

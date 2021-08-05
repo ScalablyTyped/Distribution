@@ -16,25 +16,19 @@ trait IColumnDescriptor[S] extends StObject {
 }
 object IColumnDescriptor {
   
-  @scala.inline
-  def apply[S](exists: Boolean, name: String, source: S, value: js.Any): IColumnDescriptor[S] = {
+  inline def apply[S](exists: Boolean, name: String, source: S, value: js.Any): IColumnDescriptor[S] = {
     val __obj = js.Dynamic.literal(exists = exists.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IColumnDescriptor[S]]
   }
   
-  @scala.inline
-  implicit class IColumnDescriptorMutableBuilder[Self <: IColumnDescriptor[?], S] (val x: Self & IColumnDescriptor[S]) extends AnyVal {
+  extension [Self <: IColumnDescriptor[?], S](x: Self & IColumnDescriptor[S]) {
     
-    @scala.inline
-    def setExists(value: Boolean): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
+    inline def setExists(value: Boolean): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource(value: S): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: S): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

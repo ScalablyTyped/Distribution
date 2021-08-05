@@ -17,26 +17,20 @@ object anon {
   }
   object ReduxpackLIFECYCLE {
     
-    @scala.inline
-    def apply(): ReduxpackLIFECYCLE = {
+    inline def apply(): ReduxpackLIFECYCLE = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReduxpackLIFECYCLE]
     }
     
-    @scala.inline
-    implicit class ReduxpackLIFECYCLEMutableBuilder[Self <: ReduxpackLIFECYCLE] (val x: Self) extends AnyVal {
+    extension [Self <: ReduxpackLIFECYCLE](x: Self) {
       
-      @scala.inline
-      def `setRedux-packSlashLIFECYCLE`(value: LIFECYCLEValues): Self = StObject.set(x, "redux-pack/LIFECYCLE", value.asInstanceOf[js.Any])
+      inline def `setRedux-packSlashLIFECYCLE`(value: LIFECYCLEValues): Self = StObject.set(x, "redux-pack/LIFECYCLE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRedux-packSlashLIFECYCLEUndefined`: Self = StObject.set(x, "redux-pack/LIFECYCLE", js.undefined)
+      inline def `setRedux-packSlashLIFECYCLEUndefined`: Self = StObject.set(x, "redux-pack/LIFECYCLE", js.undefined)
       
-      @scala.inline
-      def `setRedux-packSlashTRANSACTION`(value: String): Self = StObject.set(x, "redux-pack/TRANSACTION", value.asInstanceOf[js.Any])
+      inline def `setRedux-packSlashTRANSACTION`(value: String): Self = StObject.set(x, "redux-pack/TRANSACTION", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setRedux-packSlashTRANSACTIONUndefined`: Self = StObject.set(x, "redux-pack/TRANSACTION", js.undefined)
+      inline def `setRedux-packSlashTRANSACTIONUndefined`: Self = StObject.set(x, "redux-pack/TRANSACTION", js.undefined)
     }
   }
 }

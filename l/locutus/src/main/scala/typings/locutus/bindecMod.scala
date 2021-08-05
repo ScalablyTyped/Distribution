@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object bindecMod {
   
-  @scala.inline
-  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
-  @scala.inline
-  def apply(binaryString: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(binaryString.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  inline def apply(binaryString: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].apply(binaryString.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("locutus/php/math/bindec", JSImport.Namespace)
   @js.native

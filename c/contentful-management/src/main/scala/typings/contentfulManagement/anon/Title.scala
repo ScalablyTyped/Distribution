@@ -15,8 +15,7 @@ trait Title extends StObject {
 }
 object Title {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     description: StringDictionary[String],
     file: StringDictionary[File],
     title: StringDictionary[String]
@@ -25,16 +24,12 @@ object Title {
     __obj.asInstanceOf[Title]
   }
   
-  @scala.inline
-  implicit class TitleMutableBuilder[Self <: Title] (val x: Self) extends AnyVal {
+  extension [Self <: Title](x: Self) {
     
-    @scala.inline
-    def setDescription(value: StringDictionary[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: StringDictionary[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFile(value: StringDictionary[File]): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: StringDictionary[File]): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: StringDictionary[String]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: StringDictionary[String]): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

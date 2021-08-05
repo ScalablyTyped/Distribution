@@ -17,19 +17,15 @@ trait ImageryLayerViewProperties
 }
 object ImageryLayerViewProperties {
   
-  @scala.inline
-  def apply(): ImageryLayerViewProperties = {
+  inline def apply(): ImageryLayerViewProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageryLayerViewProperties]
   }
   
-  @scala.inline
-  implicit class ImageryLayerViewPropertiesMutableBuilder[Self <: ImageryLayerViewProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ImageryLayerViewProperties](x: Self) {
     
-    @scala.inline
-    def setPixelData(value: PixelData): Self = StObject.set(x, "pixelData", value.asInstanceOf[js.Any])
+    inline def setPixelData(value: PixelData): Self = StObject.set(x, "pixelData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPixelDataUndefined: Self = StObject.set(x, "pixelData", js.undefined)
+    inline def setPixelDataUndefined: Self = StObject.set(x, "pixelData", js.undefined)
   }
 }

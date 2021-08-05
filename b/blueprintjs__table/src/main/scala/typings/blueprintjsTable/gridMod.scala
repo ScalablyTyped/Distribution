@@ -53,13 +53,13 @@ object gridMod {
       ghostWidth: Double
     ) = this()
     
-    var bleed: js.Any = js.native
+    /* private */ var bleed: js.Any = js.native
     
-    var columnWidths: js.Any = js.native
+    /* private */ var columnWidths: js.Any = js.native
     
-    var cumulativeColumnWidths: js.Any = js.native
+    /* private */ var cumulativeColumnWidths: js.Any = js.native
     
-    var cumulativeRowHeights: js.Any = js.native
+    /* private */ var cumulativeRowHeights: js.Any = js.native
     
     /**
       * Returns the `Rect` bounds of a cell in scrollpane client space.
@@ -112,7 +112,7 @@ object gridMod {
       */
     def getHeight(): Double = js.native
     
-    var getIndicesInInterval: js.Any = js.native
+    /* private */ var getIndicesInInterval: js.Any = js.native
     
     /**
       * Returns the `Rect` bounds of entire grid
@@ -140,9 +140,9 @@ object gridMod {
       */
     def getWidth(): Double = js.native
     
-    var ghostHeight: js.Any = js.native
+    /* private */ var ghostHeight: js.Any = js.native
     
-    var ghostWidth: js.Any = js.native
+    /* private */ var ghostWidth: js.Any = js.native
     
     def isGhostColumn(columnIndex: Double): Boolean = js.native
     
@@ -178,7 +178,7 @@ object gridMod {
     
     var numRows: Double = js.native
     
-    var rowHeights: js.Any = js.native
+    /* private */ var rowHeights: js.Any = js.native
   }
   /* static members */
   object Grid {
@@ -190,32 +190,27 @@ object gridMod {
     @JSImport("@blueprintjs/table/lib/esm/common/grid", "Grid.DEFAULT_BLEED")
     @js.native
     def DEFAULT_BLEED: Double = js.native
-    @scala.inline
-    def DEFAULT_BLEED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_BLEED")(x.asInstanceOf[js.Any])
+    inline def DEFAULT_BLEED_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_BLEED")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/table/lib/esm/common/grid", "Grid.DEFAULT_GHOST_HEIGHT")
     @js.native
     def DEFAULT_GHOST_HEIGHT: Double = js.native
-    @scala.inline
-    def DEFAULT_GHOST_HEIGHT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_GHOST_HEIGHT")(x.asInstanceOf[js.Any])
+    inline def DEFAULT_GHOST_HEIGHT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_GHOST_HEIGHT")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/table/lib/esm/common/grid", "Grid.DEFAULT_GHOST_WIDTH")
     @js.native
     def DEFAULT_GHOST_WIDTH: Double = js.native
-    @scala.inline
-    def DEFAULT_GHOST_WIDTH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_GHOST_WIDTH")(x.asInstanceOf[js.Any])
+    inline def DEFAULT_GHOST_WIDTH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_GHOST_WIDTH")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/table/lib/esm/common/grid", "Grid.DEFAULT_MAX_COLUMNS")
     @js.native
     def DEFAULT_MAX_COLUMNS: Double = js.native
-    @scala.inline
-    def DEFAULT_MAX_COLUMNS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_MAX_COLUMNS")(x.asInstanceOf[js.Any])
+    inline def DEFAULT_MAX_COLUMNS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_MAX_COLUMNS")(x.asInstanceOf[js.Any])
     
     @JSImport("@blueprintjs/table/lib/esm/common/grid", "Grid.DEFAULT_MAX_ROWS")
     @js.native
     def DEFAULT_MAX_ROWS: Double = js.native
-    @scala.inline
-    def DEFAULT_MAX_ROWS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_MAX_ROWS")(x.asInstanceOf[js.Any])
+    inline def DEFAULT_MAX_ROWS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_MAX_ROWS")(x.asInstanceOf[js.Any])
   }
   
   type ICellMapper[T] = js.Function2[/* rowIndex */ Double, /* columnIndex */ Double, T]
@@ -228,20 +223,16 @@ object gridMod {
   }
   object IColumnIndices {
     
-    @scala.inline
-    def apply(columnIndexEnd: Double, columnIndexStart: Double): IColumnIndices = {
+    inline def apply(columnIndexEnd: Double, columnIndexStart: Double): IColumnIndices = {
       val __obj = js.Dynamic.literal(columnIndexEnd = columnIndexEnd.asInstanceOf[js.Any], columnIndexStart = columnIndexStart.asInstanceOf[js.Any])
       __obj.asInstanceOf[IColumnIndices]
     }
     
-    @scala.inline
-    implicit class IColumnIndicesMutableBuilder[Self <: IColumnIndices] (val x: Self) extends AnyVal {
+    extension [Self <: IColumnIndices](x: Self) {
       
-      @scala.inline
-      def setColumnIndexEnd(value: Double): Self = StObject.set(x, "columnIndexEnd", value.asInstanceOf[js.Any])
+      inline def setColumnIndexEnd(value: Double): Self = StObject.set(x, "columnIndexEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnIndexStart(value: Double): Self = StObject.set(x, "columnIndexStart", value.asInstanceOf[js.Any])
+      inline def setColumnIndexStart(value: Double): Self = StObject.set(x, "columnIndexStart", value.asInstanceOf[js.Any])
     }
   }
   
@@ -255,20 +246,16 @@ object gridMod {
   }
   object IRowIndices {
     
-    @scala.inline
-    def apply(rowIndexEnd: Double, rowIndexStart: Double): IRowIndices = {
+    inline def apply(rowIndexEnd: Double, rowIndexStart: Double): IRowIndices = {
       val __obj = js.Dynamic.literal(rowIndexEnd = rowIndexEnd.asInstanceOf[js.Any], rowIndexStart = rowIndexStart.asInstanceOf[js.Any])
       __obj.asInstanceOf[IRowIndices]
     }
     
-    @scala.inline
-    implicit class IRowIndicesMutableBuilder[Self <: IRowIndices] (val x: Self) extends AnyVal {
+    extension [Self <: IRowIndices](x: Self) {
       
-      @scala.inline
-      def setRowIndexEnd(value: Double): Self = StObject.set(x, "rowIndexEnd", value.asInstanceOf[js.Any])
+      inline def setRowIndexEnd(value: Double): Self = StObject.set(x, "rowIndexEnd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowIndexStart(value: Double): Self = StObject.set(x, "rowIndexStart", value.asInstanceOf[js.Any])
+      inline def setRowIndexStart(value: Double): Self = StObject.set(x, "rowIndexStart", value.asInstanceOf[js.Any])
     }
   }
   

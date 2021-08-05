@@ -10,19 +10,15 @@ trait GradientDefsProps extends StObject {
 }
 object GradientDefsProps {
   
-  @scala.inline
-  def apply(): GradientDefsProps = {
+  inline def apply(): GradientDefsProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GradientDefsProps]
   }
   
-  @scala.inline
-  implicit class GradientDefsPropsMutableBuilder[Self <: GradientDefsProps] (val x: Self) extends AnyVal {
+  extension [Self <: GradientDefsProps](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
   }
 }

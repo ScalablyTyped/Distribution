@@ -28,37 +28,27 @@ trait DescribeTableRestoreStatusMessage extends StObject {
 }
 object DescribeTableRestoreStatusMessage {
   
-  @scala.inline
-  def apply(): DescribeTableRestoreStatusMessage = {
+  inline def apply(): DescribeTableRestoreStatusMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeTableRestoreStatusMessage]
   }
   
-  @scala.inline
-  implicit class DescribeTableRestoreStatusMessageMutableBuilder[Self <: DescribeTableRestoreStatusMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTableRestoreStatusMessage](x: Self) {
     
-    @scala.inline
-    def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterIdentifierUndefined: Self = StObject.set(x, "ClusterIdentifier", js.undefined)
+    inline def setClusterIdentifierUndefined: Self = StObject.set(x, "ClusterIdentifier", js.undefined)
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
+    inline def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
+    inline def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
-    @scala.inline
-    def setTableRestoreRequestId(value: String): Self = StObject.set(x, "TableRestoreRequestId", value.asInstanceOf[js.Any])
+    inline def setTableRestoreRequestId(value: String): Self = StObject.set(x, "TableRestoreRequestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableRestoreRequestIdUndefined: Self = StObject.set(x, "TableRestoreRequestId", js.undefined)
+    inline def setTableRestoreRequestIdUndefined: Self = StObject.set(x, "TableRestoreRequestId", js.undefined)
   }
 }

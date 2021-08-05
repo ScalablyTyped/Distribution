@@ -14,16 +14,13 @@ trait FirewallPolicyFirewallPolicyStatefulRuleGroupReference extends StObject {
 }
 object FirewallPolicyFirewallPolicyStatefulRuleGroupReference {
   
-  @scala.inline
-  def apply(resourceArn: Input[String]): FirewallPolicyFirewallPolicyStatefulRuleGroupReference = {
+  inline def apply(resourceArn: Input[String]): FirewallPolicyFirewallPolicyStatefulRuleGroupReference = {
     val __obj = js.Dynamic.literal(resourceArn = resourceArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[FirewallPolicyFirewallPolicyStatefulRuleGroupReference]
   }
   
-  @scala.inline
-  implicit class FirewallPolicyFirewallPolicyStatefulRuleGroupReferenceMutableBuilder[Self <: FirewallPolicyFirewallPolicyStatefulRuleGroupReference] (val x: Self) extends AnyVal {
+  extension [Self <: FirewallPolicyFirewallPolicyStatefulRuleGroupReference](x: Self) {
     
-    @scala.inline
-    def setResourceArn(value: Input[String]): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: Input[String]): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
   }
 }

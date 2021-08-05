@@ -10,16 +10,13 @@ trait Less extends StObject {
 }
 object Less {
   
-  @scala.inline
-  def apply(less: Double): Less = {
+  inline def apply(less: Double): Less = {
     val __obj = js.Dynamic.literal(less = less.asInstanceOf[js.Any])
     __obj.asInstanceOf[Less]
   }
   
-  @scala.inline
-  implicit class LessMutableBuilder[Self <: Less] (val x: Self) extends AnyVal {
+  extension [Self <: Less](x: Self) {
     
-    @scala.inline
-    def setLess(value: Double): Self = StObject.set(x, "less", value.asInstanceOf[js.Any])
+    inline def setLess(value: Double): Self = StObject.set(x, "less", value.asInstanceOf[js.Any])
   }
 }

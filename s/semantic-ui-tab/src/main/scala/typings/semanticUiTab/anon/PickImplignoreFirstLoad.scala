@@ -11,16 +11,13 @@ trait PickImplignoreFirstLoad extends StObject {
 }
 object PickImplignoreFirstLoad {
   
-  @scala.inline
-  def apply(ignoreFirstLoad: Boolean): PickImplignoreFirstLoad = {
+  inline def apply(ignoreFirstLoad: Boolean): PickImplignoreFirstLoad = {
     val __obj = js.Dynamic.literal(ignoreFirstLoad = ignoreFirstLoad.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplignoreFirstLoad]
   }
   
-  @scala.inline
-  implicit class PickImplignoreFirstLoadMutableBuilder[Self <: PickImplignoreFirstLoad] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplignoreFirstLoad](x: Self) {
     
-    @scala.inline
-    def setIgnoreFirstLoad(value: Boolean): Self = StObject.set(x, "ignoreFirstLoad", value.asInstanceOf[js.Any])
+    inline def setIgnoreFirstLoad(value: Boolean): Self = StObject.set(x, "ignoreFirstLoad", value.asInstanceOf[js.Any])
   }
 }

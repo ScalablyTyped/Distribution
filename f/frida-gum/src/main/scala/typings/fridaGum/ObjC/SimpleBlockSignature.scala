@@ -20,22 +20,17 @@ trait SimpleBlockSignature
 }
 object SimpleBlockSignature {
   
-  @scala.inline
-  def apply(argTypes: js.Array[String], retType: String): SimpleBlockSignature = {
+  inline def apply(argTypes: js.Array[String], retType: String): SimpleBlockSignature = {
     val __obj = js.Dynamic.literal(argTypes = argTypes.asInstanceOf[js.Any], retType = retType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SimpleBlockSignature]
   }
   
-  @scala.inline
-  implicit class SimpleBlockSignatureMutableBuilder[Self <: SimpleBlockSignature] (val x: Self) extends AnyVal {
+  extension [Self <: SimpleBlockSignature](x: Self) {
     
-    @scala.inline
-    def setArgTypes(value: js.Array[String]): Self = StObject.set(x, "argTypes", value.asInstanceOf[js.Any])
+    inline def setArgTypes(value: js.Array[String]): Self = StObject.set(x, "argTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgTypesVarargs(value: String*): Self = StObject.set(x, "argTypes", js.Array(value :_*))
+    inline def setArgTypesVarargs(value: String*): Self = StObject.set(x, "argTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setRetType(value: String): Self = StObject.set(x, "retType", value.asInstanceOf[js.Any])
+    inline def setRetType(value: String): Self = StObject.set(x, "retType", value.asInstanceOf[js.Any])
   }
 }

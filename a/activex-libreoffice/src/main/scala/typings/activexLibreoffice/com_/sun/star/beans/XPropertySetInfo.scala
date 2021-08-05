@@ -39,8 +39,7 @@ trait XPropertySetInfo
 }
 object XPropertySetInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Properties: SafeArray[Property],
     acquire: () => Unit,
     getProperties: () => SafeArray[Property],
@@ -53,19 +52,14 @@ object XPropertySetInfo {
     __obj.asInstanceOf[XPropertySetInfo]
   }
   
-  @scala.inline
-  implicit class XPropertySetInfoMutableBuilder[Self <: XPropertySetInfo] (val x: Self) extends AnyVal {
+  extension [Self <: XPropertySetInfo](x: Self) {
     
-    @scala.inline
-    def setGetProperties(value: () => SafeArray[Property]): Self = StObject.set(x, "getProperties", js.Any.fromFunction0(value))
+    inline def setGetProperties(value: () => SafeArray[Property]): Self = StObject.set(x, "getProperties", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPropertyByName(value: String => Property): Self = StObject.set(x, "getPropertyByName", js.Any.fromFunction1(value))
+    inline def setGetPropertyByName(value: String => Property): Self = StObject.set(x, "getPropertyByName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHasPropertyByName(value: String => Boolean): Self = StObject.set(x, "hasPropertyByName", js.Any.fromFunction1(value))
+    inline def setHasPropertyByName(value: String => Boolean): Self = StObject.set(x, "hasPropertyByName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setProperties(value: SafeArray[Property]): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: SafeArray[Property]): Self = StObject.set(x, "Properties", value.asInstanceOf[js.Any])
   }
 }

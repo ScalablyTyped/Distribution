@@ -10,6 +10,5 @@ object cleanNameMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(name.asInstanceOf[js.Any]).asInstanceOf[String]
 }

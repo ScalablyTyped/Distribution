@@ -16,11 +16,9 @@ object uiExtensionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def wrapUiExtension(http: AxiosInstance, data: UIExtensionProps): UIExtension = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapUiExtension")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[UIExtension]
+  inline def wrapUiExtension(http: AxiosInstance, data: UIExtensionProps): UIExtension = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapUiExtension")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[UIExtension]
   
-  @scala.inline
-  def wrapUiExtensionCollection(http: AxiosInstance, data: CollectionProp[UIExtensionProps]): Collection[UIExtension, UIExtensionProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapUiExtensionCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[UIExtension, UIExtensionProps]]
+  inline def wrapUiExtensionCollection(http: AxiosInstance, data: CollectionProp[UIExtensionProps]): Collection[UIExtension, UIExtensionProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapUiExtensionCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[UIExtension, UIExtensionProps]]
   
   trait UIExtension
     extends StObject
@@ -70,8 +68,7 @@ object uiExtensionMod {
   }
   object UIExtension {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       delete: () => js.Promise[Unit],
       `extension`: FieldTypes,
       sys: MetaSysProps,
@@ -83,14 +80,11 @@ object uiExtensionMod {
       __obj.asInstanceOf[UIExtension]
     }
     
-    @scala.inline
-    implicit class UIExtensionMutableBuilder[Self <: UIExtension] (val x: Self) extends AnyVal {
+    extension [Self <: UIExtension](x: Self) {
       
-      @scala.inline
-      def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
+      inline def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUpdate(value: () => js.Promise[UIExtension]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
+      inline def setUpdate(value: () => js.Promise[UIExtension]): Self = StObject.set(x, "update", js.Any.fromFunction0(value))
     }
   }
   
@@ -102,21 +96,17 @@ object uiExtensionMod {
   }
   object UIExtensionProps {
     
-    @scala.inline
-    def apply(`extension`: FieldTypes, sys: MetaSysProps): UIExtensionProps = {
+    inline def apply(`extension`: FieldTypes, sys: MetaSysProps): UIExtensionProps = {
       val __obj = js.Dynamic.literal(sys = sys.asInstanceOf[js.Any])
       __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
       __obj.asInstanceOf[UIExtensionProps]
     }
     
-    @scala.inline
-    implicit class UIExtensionPropsMutableBuilder[Self <: UIExtensionProps] (val x: Self) extends AnyVal {
+    extension [Self <: UIExtensionProps](x: Self) {
       
-      @scala.inline
-      def setExtension(value: FieldTypes): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+      inline def setExtension(value: FieldTypes): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSys(value: MetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
+      inline def setSys(value: MetaSysProps): Self = StObject.set(x, "sys", value.asInstanceOf[js.Any])
     }
   }
 }

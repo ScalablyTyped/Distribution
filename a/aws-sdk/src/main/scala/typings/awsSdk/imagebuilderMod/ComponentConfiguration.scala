@@ -13,16 +13,13 @@ trait ComponentConfiguration extends StObject {
 }
 object ComponentConfiguration {
   
-  @scala.inline
-  def apply(componentArn: ComponentVersionArnOrBuildVersionArn): ComponentConfiguration = {
+  inline def apply(componentArn: ComponentVersionArnOrBuildVersionArn): ComponentConfiguration = {
     val __obj = js.Dynamic.literal(componentArn = componentArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentConfiguration]
   }
   
-  @scala.inline
-  implicit class ComponentConfigurationMutableBuilder[Self <: ComponentConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ComponentConfiguration](x: Self) {
     
-    @scala.inline
-    def setComponentArn(value: ComponentVersionArnOrBuildVersionArn): Self = StObject.set(x, "componentArn", value.asInstanceOf[js.Any])
+    inline def setComponentArn(value: ComponentVersionArnOrBuildVersionArn): Self = StObject.set(x, "componentArn", value.asInstanceOf[js.Any])
   }
 }

@@ -24,8 +24,7 @@ trait ObjectMetricSource extends StObject {
 }
 object ObjectMetricSource {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     describedObject: Input[CrossVersionObjectReference],
     metric: Input[MetricIdentifier],
     target: Input[MetricTarget]
@@ -34,16 +33,12 @@ object ObjectMetricSource {
     __obj.asInstanceOf[ObjectMetricSource]
   }
   
-  @scala.inline
-  implicit class ObjectMetricSourceMutableBuilder[Self <: ObjectMetricSource] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectMetricSource](x: Self) {
     
-    @scala.inline
-    def setDescribedObject(value: Input[CrossVersionObjectReference]): Self = StObject.set(x, "describedObject", value.asInstanceOf[js.Any])
+    inline def setDescribedObject(value: Input[CrossVersionObjectReference]): Self = StObject.set(x, "describedObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetric(value: Input[MetricIdentifier]): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
+    inline def setMetric(value: Input[MetricIdentifier]): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: Input[MetricTarget]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: Input[MetricTarget]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

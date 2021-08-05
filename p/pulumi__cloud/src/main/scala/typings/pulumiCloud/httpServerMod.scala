@@ -22,11 +22,9 @@ object httpServerMod {
     @js.native
     val ^ : HttpServerConstructor = js.native
     
-    @scala.inline
-    implicit class HttpServerMutableBuilder[Self <: HttpServer] (val x: Self) extends AnyVal {
+    extension [Self <: HttpServer](x: Self) {
       
-      @scala.inline
-      def setUrl(value: Output_[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: Output_[String]): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   

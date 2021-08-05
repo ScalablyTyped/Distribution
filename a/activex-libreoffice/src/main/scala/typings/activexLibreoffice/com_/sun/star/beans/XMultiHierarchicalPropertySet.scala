@@ -60,8 +60,7 @@ trait XMultiHierarchicalPropertySet
 }
 object XMultiHierarchicalPropertySet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     HierarchicalPropertySetInfo: XHierarchicalPropertySetInfo,
     acquire: () => Unit,
     getHierarchicalPropertySetInfo: () => XHierarchicalPropertySetInfo,
@@ -74,19 +73,14 @@ object XMultiHierarchicalPropertySet {
     __obj.asInstanceOf[XMultiHierarchicalPropertySet]
   }
   
-  @scala.inline
-  implicit class XMultiHierarchicalPropertySetMutableBuilder[Self <: XMultiHierarchicalPropertySet] (val x: Self) extends AnyVal {
+  extension [Self <: XMultiHierarchicalPropertySet](x: Self) {
     
-    @scala.inline
-    def setGetHierarchicalPropertySetInfo(value: () => XHierarchicalPropertySetInfo): Self = StObject.set(x, "getHierarchicalPropertySetInfo", js.Any.fromFunction0(value))
+    inline def setGetHierarchicalPropertySetInfo(value: () => XHierarchicalPropertySetInfo): Self = StObject.set(x, "getHierarchicalPropertySetInfo", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetHierarchicalPropertyValues(value: SeqEquiv[String] => SafeArray[js.Any]): Self = StObject.set(x, "getHierarchicalPropertyValues", js.Any.fromFunction1(value))
+    inline def setGetHierarchicalPropertyValues(value: SeqEquiv[String] => SafeArray[js.Any]): Self = StObject.set(x, "getHierarchicalPropertyValues", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHierarchicalPropertySetInfo(value: XHierarchicalPropertySetInfo): Self = StObject.set(x, "HierarchicalPropertySetInfo", value.asInstanceOf[js.Any])
+    inline def setHierarchicalPropertySetInfo(value: XHierarchicalPropertySetInfo): Self = StObject.set(x, "HierarchicalPropertySetInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetHierarchicalPropertyValues(value: (SeqEquiv[String], SeqEquiv[js.Any]) => Unit): Self = StObject.set(x, "setHierarchicalPropertyValues", js.Any.fromFunction2(value))
+    inline def setSetHierarchicalPropertyValues(value: (SeqEquiv[String], SeqEquiv[js.Any]) => Unit): Self = StObject.set(x, "setHierarchicalPropertyValues", js.Any.fromFunction2(value))
   }
 }

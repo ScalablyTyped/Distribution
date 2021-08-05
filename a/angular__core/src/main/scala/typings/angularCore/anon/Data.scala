@@ -16,8 +16,7 @@ trait Data extends StObject {
 }
 object Data {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     data: StringDictionary[js.Array[js.Any]],
     encapsulation: ViewEncapsulation,
     styles: js.Array[String | js.Array[js.Any]]
@@ -26,19 +25,14 @@ object Data {
     __obj.asInstanceOf[Data]
   }
   
-  @scala.inline
-  implicit class DataMutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
+  extension [Self <: Data](x: Self) {
     
-    @scala.inline
-    def setData(value: StringDictionary[js.Array[js.Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: StringDictionary[js.Array[js.Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncapsulation(value: ViewEncapsulation): Self = StObject.set(x, "encapsulation", value.asInstanceOf[js.Any])
+    inline def setEncapsulation(value: ViewEncapsulation): Self = StObject.set(x, "encapsulation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyles(value: js.Array[String | js.Array[js.Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: js.Array[String | js.Array[js.Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesVarargs(value: (String | js.Array[js.Any])*): Self = StObject.set(x, "styles", js.Array(value :_*))
+    inline def setStylesVarargs(value: (String | js.Array[js.Any])*): Self = StObject.set(x, "styles", js.Array(value :_*))
   }
 }

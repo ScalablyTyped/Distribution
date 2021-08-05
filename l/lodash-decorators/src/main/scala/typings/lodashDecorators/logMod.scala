@@ -10,8 +10,6 @@ object logMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def log(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("log")().asInstanceOf[String]
-  @scala.inline
-  def log(message: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(message.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def log(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("log")().asInstanceOf[String]
+  inline def log(message: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(message.asInstanceOf[js.Any]).asInstanceOf[String]
 }

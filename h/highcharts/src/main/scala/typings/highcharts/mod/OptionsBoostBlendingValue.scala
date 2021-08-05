@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OptionsBoostBlendingValue extends StObject
 object OptionsBoostBlendingValue {
   
-  @scala.inline
-  def add: typings.highcharts.highchartsStrings.add = "add".asInstanceOf[typings.highcharts.highchartsStrings.add]
+  inline def add: typings.highcharts.highchartsStrings.add = "add".asInstanceOf[typings.highcharts.highchartsStrings.add]
   
-  @scala.inline
-  def darken: typings.highcharts.highchartsStrings.darken = "darken".asInstanceOf[typings.highcharts.highchartsStrings.darken]
+  inline def darken: typings.highcharts.highchartsStrings.darken = "darken".asInstanceOf[typings.highcharts.highchartsStrings.darken]
   
-  @scala.inline
-  def multiply: typings.highcharts.highchartsStrings.multiply = "multiply".asInstanceOf[typings.highcharts.highchartsStrings.multiply]
+  inline def multiply: typings.highcharts.highchartsStrings.multiply = "multiply".asInstanceOf[typings.highcharts.highchartsStrings.multiply]
 }

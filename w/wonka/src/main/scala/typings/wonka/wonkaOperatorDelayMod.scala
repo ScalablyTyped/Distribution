@@ -11,6 +11,5 @@ object wonkaOperatorDelayMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def delay[A](duration: Double): Operator[A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(duration.asInstanceOf[js.Any]).asInstanceOf[Operator[A, A]]
+  inline def delay[A](duration: Double): Operator[A, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(duration.asInstanceOf[js.Any]).asInstanceOf[Operator[A, A]]
 }

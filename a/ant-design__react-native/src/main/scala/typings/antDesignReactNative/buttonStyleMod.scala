@@ -13,8 +13,7 @@ object buttonStyleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(theme: Theme): ButtonStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[ButtonStyles]
+  inline def default(theme: Theme): ButtonStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[ButtonStyles]
   
   trait ButtonStyles extends StObject {
     
@@ -82,8 +81,7 @@ object buttonStyleMod {
   }
   object ButtonStyles {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       container: ViewStyle,
       defaultDisabledRaw: ViewStyle,
       defaultDisabledRawText: TextStyle,
@@ -120,101 +118,69 @@ object buttonStyleMod {
       __obj.asInstanceOf[ButtonStyles]
     }
     
-    @scala.inline
-    implicit class ButtonStylesMutableBuilder[Self <: ButtonStyles] (val x: Self) extends AnyVal {
+    extension [Self <: ButtonStyles](x: Self) {
       
-      @scala.inline
-      def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultDisabledRaw(value: ViewStyle): Self = StObject.set(x, "defaultDisabledRaw", value.asInstanceOf[js.Any])
+      inline def setDefaultDisabledRaw(value: ViewStyle): Self = StObject.set(x, "defaultDisabledRaw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultDisabledRawText(value: TextStyle): Self = StObject.set(x, "defaultDisabledRawText", value.asInstanceOf[js.Any])
+      inline def setDefaultDisabledRawText(value: TextStyle): Self = StObject.set(x, "defaultDisabledRawText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultHighlight(value: ViewStyle): Self = StObject.set(x, "defaultHighlight", value.asInstanceOf[js.Any])
+      inline def setDefaultHighlight(value: ViewStyle): Self = StObject.set(x, "defaultHighlight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultHighlightText(value: TextStyle): Self = StObject.set(x, "defaultHighlightText", value.asInstanceOf[js.Any])
+      inline def setDefaultHighlightText(value: TextStyle): Self = StObject.set(x, "defaultHighlightText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultRaw(value: ViewStyle): Self = StObject.set(x, "defaultRaw", value.asInstanceOf[js.Any])
+      inline def setDefaultRaw(value: ViewStyle): Self = StObject.set(x, "defaultRaw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultRawText(value: TextStyle): Self = StObject.set(x, "defaultRawText", value.asInstanceOf[js.Any])
+      inline def setDefaultRawText(value: TextStyle): Self = StObject.set(x, "defaultRawText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGhostDisabledRaw(value: ViewStyle): Self = StObject.set(x, "ghostDisabledRaw", value.asInstanceOf[js.Any])
+      inline def setGhostDisabledRaw(value: ViewStyle): Self = StObject.set(x, "ghostDisabledRaw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGhostDisabledRawText(value: TextStyle): Self = StObject.set(x, "ghostDisabledRawText", value.asInstanceOf[js.Any])
+      inline def setGhostDisabledRawText(value: TextStyle): Self = StObject.set(x, "ghostDisabledRawText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGhostHighlight(value: ViewStyle): Self = StObject.set(x, "ghostHighlight", value.asInstanceOf[js.Any])
+      inline def setGhostHighlight(value: ViewStyle): Self = StObject.set(x, "ghostHighlight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGhostHighlightText(value: TextStyle): Self = StObject.set(x, "ghostHighlightText", value.asInstanceOf[js.Any])
+      inline def setGhostHighlightText(value: TextStyle): Self = StObject.set(x, "ghostHighlightText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGhostRaw(value: ViewStyle): Self = StObject.set(x, "ghostRaw", value.asInstanceOf[js.Any])
+      inline def setGhostRaw(value: ViewStyle): Self = StObject.set(x, "ghostRaw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGhostRawText(value: TextStyle): Self = StObject.set(x, "ghostRawText", value.asInstanceOf[js.Any])
+      inline def setGhostRawText(value: TextStyle): Self = StObject.set(x, "ghostRawText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndicator(value: ViewStyle): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
+      inline def setIndicator(value: ViewStyle): Self = StObject.set(x, "indicator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLargeRaw(value: ViewStyle): Self = StObject.set(x, "largeRaw", value.asInstanceOf[js.Any])
+      inline def setLargeRaw(value: ViewStyle): Self = StObject.set(x, "largeRaw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLargeRawText(value: TextStyle): Self = StObject.set(x, "largeRawText", value.asInstanceOf[js.Any])
+      inline def setLargeRawText(value: TextStyle): Self = StObject.set(x, "largeRawText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryDisabledRaw(value: ViewStyle): Self = StObject.set(x, "primaryDisabledRaw", value.asInstanceOf[js.Any])
+      inline def setPrimaryDisabledRaw(value: ViewStyle): Self = StObject.set(x, "primaryDisabledRaw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryDisabledRawText(value: TextStyle): Self = StObject.set(x, "primaryDisabledRawText", value.asInstanceOf[js.Any])
+      inline def setPrimaryDisabledRawText(value: TextStyle): Self = StObject.set(x, "primaryDisabledRawText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryHighlight(value: ViewStyle): Self = StObject.set(x, "primaryHighlight", value.asInstanceOf[js.Any])
+      inline def setPrimaryHighlight(value: ViewStyle): Self = StObject.set(x, "primaryHighlight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryHighlightText(value: TextStyle): Self = StObject.set(x, "primaryHighlightText", value.asInstanceOf[js.Any])
+      inline def setPrimaryHighlightText(value: TextStyle): Self = StObject.set(x, "primaryHighlightText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryRaw(value: ViewStyle): Self = StObject.set(x, "primaryRaw", value.asInstanceOf[js.Any])
+      inline def setPrimaryRaw(value: ViewStyle): Self = StObject.set(x, "primaryRaw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryRawText(value: TextStyle): Self = StObject.set(x, "primaryRawText", value.asInstanceOf[js.Any])
+      inline def setPrimaryRawText(value: TextStyle): Self = StObject.set(x, "primaryRawText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmallRaw(value: ViewStyle): Self = StObject.set(x, "smallRaw", value.asInstanceOf[js.Any])
+      inline def setSmallRaw(value: ViewStyle): Self = StObject.set(x, "smallRaw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmallRawText(value: TextStyle): Self = StObject.set(x, "smallRawText", value.asInstanceOf[js.Any])
+      inline def setSmallRawText(value: TextStyle): Self = StObject.set(x, "smallRawText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarningDisabledRaw(value: ViewStyle): Self = StObject.set(x, "warningDisabledRaw", value.asInstanceOf[js.Any])
+      inline def setWarningDisabledRaw(value: ViewStyle): Self = StObject.set(x, "warningDisabledRaw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarningDisabledRawText(value: TextStyle): Self = StObject.set(x, "warningDisabledRawText", value.asInstanceOf[js.Any])
+      inline def setWarningDisabledRawText(value: TextStyle): Self = StObject.set(x, "warningDisabledRawText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarningHighlight(value: ViewStyle): Self = StObject.set(x, "warningHighlight", value.asInstanceOf[js.Any])
+      inline def setWarningHighlight(value: ViewStyle): Self = StObject.set(x, "warningHighlight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarningHighlightText(value: TextStyle): Self = StObject.set(x, "warningHighlightText", value.asInstanceOf[js.Any])
+      inline def setWarningHighlightText(value: TextStyle): Self = StObject.set(x, "warningHighlightText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarningRaw(value: ViewStyle): Self = StObject.set(x, "warningRaw", value.asInstanceOf[js.Any])
+      inline def setWarningRaw(value: ViewStyle): Self = StObject.set(x, "warningRaw", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarningRawText(value: TextStyle): Self = StObject.set(x, "warningRawText", value.asInstanceOf[js.Any])
+      inline def setWarningRawText(value: TextStyle): Self = StObject.set(x, "warningRawText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWrapperStyle(value: ViewStyle): Self = StObject.set(x, "wrapperStyle", value.asInstanceOf[js.Any])
+      inline def setWrapperStyle(value: ViewStyle): Self = StObject.set(x, "wrapperStyle", value.asInstanceOf[js.Any])
     }
   }
 }

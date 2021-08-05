@@ -46,32 +46,27 @@ object mod {
     @JSImport("token-types", "AnsiStringType.codePointToString")
     @js.native
     def codePointToString: js.Any = js.native
-    @scala.inline
-    def codePointToString_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("codePointToString")(x.asInstanceOf[js.Any])
+    inline def codePointToString_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("codePointToString")(x.asInstanceOf[js.Any])
     
     @JSImport("token-types", "AnsiStringType.decode")
     @js.native
     def decode: js.Any = js.native
-    @scala.inline
-    def decode_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decode")(x.asInstanceOf[js.Any])
+    inline def decode_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("decode")(x.asInstanceOf[js.Any])
     
     @JSImport("token-types", "AnsiStringType.inRange")
     @js.native
     def inRange: js.Any = js.native
-    @scala.inline
-    def inRange_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inRange")(x.asInstanceOf[js.Any])
+    inline def inRange_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inRange")(x.asInstanceOf[js.Any])
     
     @JSImport("token-types", "AnsiStringType.singleByteDecoder")
     @js.native
     def singleByteDecoder: js.Any = js.native
-    @scala.inline
-    def singleByteDecoder_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("singleByteDecoder")(x.asInstanceOf[js.Any])
+    inline def singleByteDecoder_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("singleByteDecoder")(x.asInstanceOf[js.Any])
     
     @JSImport("token-types", "AnsiStringType.windows1252")
     @js.native
     def windows1252: js.Any = js.native
-    @scala.inline
-    def windows1252_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("windows1252")(x.asInstanceOf[js.Any])
+    inline def windows1252_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("windows1252")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("token-types", "BufferType")
@@ -252,18 +247,13 @@ object mod {
   @js.native
   val UINT8: IToken[Double] = js.native
   
-  @scala.inline
-  def readIntBE(buf: Buffer, offset: Double, byteLength: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readIntBE")(buf.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], byteLength.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def readIntBE(buf: Buffer, offset: Double, byteLength: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readIntBE")(buf.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], byteLength.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def readUIntBE(buf: Buffer, offset: Double, byteLength: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readUIntBE")(buf.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], byteLength.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def readUIntBE(buf: Buffer, offset: Double, byteLength: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readUIntBE")(buf.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], byteLength.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def writeIntBE(buf: Buffer, value: Double, offset: Double, byteLength: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeIntBE")(buf.asInstanceOf[js.Any], value.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], byteLength.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def writeIntBE(buf: Buffer, value: Double, offset: Double, byteLength: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeIntBE")(buf.asInstanceOf[js.Any], value.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], byteLength.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def writeIntLE(buf: Buffer, value: Double, offset: Double, byteLength: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeIntLE")(buf.asInstanceOf[js.Any], value.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], byteLength.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def writeIntLE(buf: Buffer, value: Double, offset: Double, byteLength: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeIntLE")(buf.asInstanceOf[js.Any], value.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], byteLength.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def writeUIntBE(buf: Buffer, value: Double, offset: Double, byteLength: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeUIntBE")(buf.asInstanceOf[js.Any], value.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], byteLength.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def writeUIntBE(buf: Buffer, value: Double, offset: Double, byteLength: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeUIntBE")(buf.asInstanceOf[js.Any], value.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], byteLength.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

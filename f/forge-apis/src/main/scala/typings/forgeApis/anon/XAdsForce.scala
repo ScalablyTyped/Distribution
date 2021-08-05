@@ -10,19 +10,15 @@ trait XAdsForce extends StObject {
 }
 object XAdsForce {
   
-  @scala.inline
-  def apply(): XAdsForce = {
+  inline def apply(): XAdsForce = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[XAdsForce]
   }
   
-  @scala.inline
-  implicit class XAdsForceMutableBuilder[Self <: XAdsForce] (val x: Self) extends AnyVal {
+  extension [Self <: XAdsForce](x: Self) {
     
-    @scala.inline
-    def setXAdsForce(value: Boolean): Self = StObject.set(x, "xAdsForce", value.asInstanceOf[js.Any])
+    inline def setXAdsForce(value: Boolean): Self = StObject.set(x, "xAdsForce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXAdsForceUndefined: Self = StObject.set(x, "xAdsForce", js.undefined)
+    inline def setXAdsForceUndefined: Self = StObject.set(x, "xAdsForce", js.undefined)
   }
 }

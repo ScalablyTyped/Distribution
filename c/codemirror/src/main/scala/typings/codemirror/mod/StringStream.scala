@@ -125,6 +125,5 @@ trait StringStream extends StObject {
 }
 object StringStream {
   
-  @scala.inline
-  def apply: StringStreamConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("StringStream").asInstanceOf[StringStreamConstructor]
+  inline def apply: StringStreamConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("StringStream").asInstanceOf[StringStreamConstructor]
 }

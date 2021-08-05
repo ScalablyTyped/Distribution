@@ -23,25 +23,19 @@ trait UpdateOriginRequestPolicyRequest extends StObject {
 }
 object UpdateOriginRequestPolicyRequest {
   
-  @scala.inline
-  def apply(Id: String, OriginRequestPolicyConfig: OriginRequestPolicyConfig): UpdateOriginRequestPolicyRequest = {
+  inline def apply(Id: String, OriginRequestPolicyConfig: OriginRequestPolicyConfig): UpdateOriginRequestPolicyRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], OriginRequestPolicyConfig = OriginRequestPolicyConfig.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateOriginRequestPolicyRequest]
   }
   
-  @scala.inline
-  implicit class UpdateOriginRequestPolicyRequestMutableBuilder[Self <: UpdateOriginRequestPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateOriginRequestPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfMatch(value: String): Self = StObject.set(x, "IfMatch", value.asInstanceOf[js.Any])
+    inline def setIfMatch(value: String): Self = StObject.set(x, "IfMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfMatchUndefined: Self = StObject.set(x, "IfMatch", js.undefined)
+    inline def setIfMatchUndefined: Self = StObject.set(x, "IfMatch", js.undefined)
     
-    @scala.inline
-    def setOriginRequestPolicyConfig(value: OriginRequestPolicyConfig): Self = StObject.set(x, "OriginRequestPolicyConfig", value.asInstanceOf[js.Any])
+    inline def setOriginRequestPolicyConfig(value: OriginRequestPolicyConfig): Self = StObject.set(x, "OriginRequestPolicyConfig", value.asInstanceOf[js.Any])
   }
 }

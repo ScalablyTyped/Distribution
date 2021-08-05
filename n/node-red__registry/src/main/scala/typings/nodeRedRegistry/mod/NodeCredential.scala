@@ -12,17 +12,14 @@ trait NodeCredential extends StObject {
 }
 object NodeCredential {
   
-  @scala.inline
-  def apply(`type`: text | password): NodeCredential = {
+  inline def apply(`type`: text | password): NodeCredential = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NodeCredential]
   }
   
-  @scala.inline
-  implicit class NodeCredentialMutableBuilder[Self <: NodeCredential] (val x: Self) extends AnyVal {
+  extension [Self <: NodeCredential](x: Self) {
     
-    @scala.inline
-    def setType(value: text | password): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: text | password): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

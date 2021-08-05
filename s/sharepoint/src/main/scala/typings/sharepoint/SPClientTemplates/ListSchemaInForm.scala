@@ -13,19 +13,15 @@ trait ListSchemaInForm
 }
 object ListSchemaInForm {
   
-  @scala.inline
-  def apply(Field: js.Array[FieldSchemaInForm]): ListSchemaInForm = {
+  inline def apply(Field: js.Array[FieldSchemaInForm]): ListSchemaInForm = {
     val __obj = js.Dynamic.literal(Field = Field.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListSchemaInForm]
   }
   
-  @scala.inline
-  implicit class ListSchemaInFormMutableBuilder[Self <: ListSchemaInForm] (val x: Self) extends AnyVal {
+  extension [Self <: ListSchemaInForm](x: Self) {
     
-    @scala.inline
-    def setField(value: js.Array[FieldSchemaInForm]): Self = StObject.set(x, "Field", value.asInstanceOf[js.Any])
+    inline def setField(value: js.Array[FieldSchemaInForm]): Self = StObject.set(x, "Field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldVarargs(value: FieldSchemaInForm*): Self = StObject.set(x, "Field", js.Array(value :_*))
+    inline def setFieldVarargs(value: FieldSchemaInForm*): Self = StObject.set(x, "Field", js.Array(value :_*))
   }
 }

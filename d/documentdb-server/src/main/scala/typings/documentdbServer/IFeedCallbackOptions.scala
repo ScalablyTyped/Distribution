@@ -18,22 +18,17 @@ trait IFeedCallbackOptions extends StObject {
 }
 object IFeedCallbackOptions {
   
-  @scala.inline
-  def apply(continuation: String, currentCollectionSizeInMB: String, maxCollectionSizeInMB: String): IFeedCallbackOptions = {
+  inline def apply(continuation: String, currentCollectionSizeInMB: String, maxCollectionSizeInMB: String): IFeedCallbackOptions = {
     val __obj = js.Dynamic.literal(continuation = continuation.asInstanceOf[js.Any], currentCollectionSizeInMB = currentCollectionSizeInMB.asInstanceOf[js.Any], maxCollectionSizeInMB = maxCollectionSizeInMB.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFeedCallbackOptions]
   }
   
-  @scala.inline
-  implicit class IFeedCallbackOptionsMutableBuilder[Self <: IFeedCallbackOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IFeedCallbackOptions](x: Self) {
     
-    @scala.inline
-    def setContinuation(value: String): Self = StObject.set(x, "continuation", value.asInstanceOf[js.Any])
+    inline def setContinuation(value: String): Self = StObject.set(x, "continuation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentCollectionSizeInMB(value: String): Self = StObject.set(x, "currentCollectionSizeInMB", value.asInstanceOf[js.Any])
+    inline def setCurrentCollectionSizeInMB(value: String): Self = StObject.set(x, "currentCollectionSizeInMB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxCollectionSizeInMB(value: String): Self = StObject.set(x, "maxCollectionSizeInMB", value.asInstanceOf[js.Any])
+    inline def setMaxCollectionSizeInMB(value: String): Self = StObject.set(x, "maxCollectionSizeInMB", value.asInstanceOf[js.Any])
   }
 }

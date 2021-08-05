@@ -30,20 +30,16 @@ object mod {
     }
     object Animation {
       
-      @scala.inline
-      def apply(from: PartialCSSStyleDeclaratio, to: PartialCSSStyleDeclaratio): Animation = {
+      inline def apply(from: PartialCSSStyleDeclaratio, to: PartialCSSStyleDeclaratio): Animation = {
         val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
         __obj.asInstanceOf[Animation]
       }
       
-      @scala.inline
-      implicit class AnimationMutableBuilder[Self <: Animation] (val x: Self) extends AnyVal {
+      extension [Self <: Animation](x: Self) {
         
-        @scala.inline
-        def setFrom(value: PartialCSSStyleDeclaratio): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+        inline def setFrom(value: PartialCSSStyleDeclaratio): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTo(value: PartialCSSStyleDeclaratio): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+        inline def setTo(value: PartialCSSStyleDeclaratio): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       }
     }
     
@@ -59,20 +55,15 @@ object mod {
          with _AnimationProp
     object AnimationPreset {
       
-      @scala.inline
-      def accordionHorizontal: typings.reactFlipMove.reactFlipMoveStrings.accordionHorizontal = "accordionHorizontal".asInstanceOf[typings.reactFlipMove.reactFlipMoveStrings.accordionHorizontal]
+      inline def accordionHorizontal: typings.reactFlipMove.reactFlipMoveStrings.accordionHorizontal = "accordionHorizontal".asInstanceOf[typings.reactFlipMove.reactFlipMoveStrings.accordionHorizontal]
       
-      @scala.inline
-      def accordionVertical: typings.reactFlipMove.reactFlipMoveStrings.accordionVertical = "accordionVertical".asInstanceOf[typings.reactFlipMove.reactFlipMoveStrings.accordionVertical]
+      inline def accordionVertical: typings.reactFlipMove.reactFlipMoveStrings.accordionVertical = "accordionVertical".asInstanceOf[typings.reactFlipMove.reactFlipMoveStrings.accordionVertical]
       
-      @scala.inline
-      def elevator: typings.reactFlipMove.reactFlipMoveStrings.elevator = "elevator".asInstanceOf[typings.reactFlipMove.reactFlipMoveStrings.elevator]
+      inline def elevator: typings.reactFlipMove.reactFlipMoveStrings.elevator = "elevator".asInstanceOf[typings.reactFlipMove.reactFlipMoveStrings.elevator]
       
-      @scala.inline
-      def fade: typings.reactFlipMove.reactFlipMoveStrings.fade = "fade".asInstanceOf[typings.reactFlipMove.reactFlipMoveStrings.fade]
+      inline def fade: typings.reactFlipMove.reactFlipMoveStrings.fade = "fade".asInstanceOf[typings.reactFlipMove.reactFlipMoveStrings.fade]
       
-      @scala.inline
-      def none: typings.reactFlipMove.reactFlipMoveStrings.none = "none".asInstanceOf[typings.reactFlipMove.reactFlipMoveStrings.none]
+      inline def none: typings.reactFlipMove.reactFlipMoveStrings.none = "none".asInstanceOf[typings.reactFlipMove.reactFlipMoveStrings.none]
     }
     
     /* Rewritten from type alias, can be one of: 
@@ -304,131 +295,90 @@ object mod {
     }
     object FlipMoveProps {
       
-      @scala.inline
-      def apply(): FlipMoveProps = {
+      inline def apply(): FlipMoveProps = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[FlipMoveProps]
       }
       
-      @scala.inline
-      implicit class FlipMovePropsMutableBuilder[Self <: FlipMoveProps] (val x: Self) extends AnyVal {
+      extension [Self <: FlipMoveProps](x: Self) {
         
-        @scala.inline
-        def setAppearAnimation(value: AnimationProp): Self = StObject.set(x, "appearAnimation", value.asInstanceOf[js.Any])
+        inline def setAppearAnimation(value: AnimationProp): Self = StObject.set(x, "appearAnimation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAppearAnimationUndefined: Self = StObject.set(x, "appearAnimation", js.undefined)
+        inline def setAppearAnimationUndefined: Self = StObject.set(x, "appearAnimation", js.undefined)
         
-        @scala.inline
-        def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+        inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+        inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
         
-        @scala.inline
-        def setDelay(value: Double | String): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+        inline def setDelay(value: Double | String): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+        inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
         
-        @scala.inline
-        def setDisableAllAnimations(value: Boolean): Self = StObject.set(x, "disableAllAnimations", value.asInstanceOf[js.Any])
+        inline def setDisableAllAnimations(value: Boolean): Self = StObject.set(x, "disableAllAnimations", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisableAllAnimationsUndefined: Self = StObject.set(x, "disableAllAnimations", js.undefined)
+        inline def setDisableAllAnimationsUndefined: Self = StObject.set(x, "disableAllAnimations", js.undefined)
         
-        @scala.inline
-        def setDuration(value: Double | String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+        inline def setDuration(value: Double | String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+        inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
         
-        @scala.inline
-        def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+        inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+        inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
         
-        @scala.inline
-        def setEnterAnimation(value: AnimationProp): Self = StObject.set(x, "enterAnimation", value.asInstanceOf[js.Any])
+        inline def setEnterAnimation(value: AnimationProp): Self = StObject.set(x, "enterAnimation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEnterAnimationUndefined: Self = StObject.set(x, "enterAnimation", js.undefined)
+        inline def setEnterAnimationUndefined: Self = StObject.set(x, "enterAnimation", js.undefined)
         
-        @scala.inline
-        def setGetPosition(value: /* node */ HTMLElement => ClientRect): Self = StObject.set(x, "getPosition", js.Any.fromFunction1(value))
+        inline def setGetPosition(value: /* node */ HTMLElement => ClientRect): Self = StObject.set(x, "getPosition", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setGetPositionUndefined: Self = StObject.set(x, "getPosition", js.undefined)
+        inline def setGetPositionUndefined: Self = StObject.set(x, "getPosition", js.undefined)
         
-        @scala.inline
-        def setLeaveAnimation(value: AnimationProp): Self = StObject.set(x, "leaveAnimation", value.asInstanceOf[js.Any])
+        inline def setLeaveAnimation(value: AnimationProp): Self = StObject.set(x, "leaveAnimation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLeaveAnimationUndefined: Self = StObject.set(x, "leaveAnimation", js.undefined)
+        inline def setLeaveAnimationUndefined: Self = StObject.set(x, "leaveAnimation", js.undefined)
         
-        @scala.inline
-        def setMaintainContainerHeight(value: Boolean): Self = StObject.set(x, "maintainContainerHeight", value.asInstanceOf[js.Any])
+        inline def setMaintainContainerHeight(value: Boolean): Self = StObject.set(x, "maintainContainerHeight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMaintainContainerHeightUndefined: Self = StObject.set(x, "maintainContainerHeight", js.undefined)
+        inline def setMaintainContainerHeightUndefined: Self = StObject.set(x, "maintainContainerHeight", js.undefined)
         
-        @scala.inline
-        def setOnFinish(value: (/* childElement */ ReactElement, /* domNode */ HTMLElement) => Unit): Self = StObject.set(x, "onFinish", js.Any.fromFunction2(value))
+        inline def setOnFinish(value: (/* childElement */ ReactElement, /* domNode */ HTMLElement) => Unit): Self = StObject.set(x, "onFinish", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setOnFinishAll(value: (/* childElements */ js.Array[ReactElement], /* domNodes */ js.Array[HTMLElement]) => Unit): Self = StObject.set(x, "onFinishAll", js.Any.fromFunction2(value))
+        inline def setOnFinishAll(value: (/* childElements */ js.Array[ReactElement], /* domNodes */ js.Array[HTMLElement]) => Unit): Self = StObject.set(x, "onFinishAll", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setOnFinishAllUndefined: Self = StObject.set(x, "onFinishAll", js.undefined)
+        inline def setOnFinishAllUndefined: Self = StObject.set(x, "onFinishAll", js.undefined)
         
-        @scala.inline
-        def setOnFinishUndefined: Self = StObject.set(x, "onFinish", js.undefined)
+        inline def setOnFinishUndefined: Self = StObject.set(x, "onFinish", js.undefined)
         
-        @scala.inline
-        def setOnStart(value: (/* childElement */ ReactElement, /* domNode */ HTMLElement) => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction2(value))
+        inline def setOnStart(value: (/* childElement */ ReactElement, /* domNode */ HTMLElement) => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setOnStartAll(value: (/* childElements */ js.Array[ReactElement], /* domNodes */ js.Array[HTMLElement]) => Unit): Self = StObject.set(x, "onStartAll", js.Any.fromFunction2(value))
+        inline def setOnStartAll(value: (/* childElements */ js.Array[ReactElement], /* domNodes */ js.Array[HTMLElement]) => Unit): Self = StObject.set(x, "onStartAll", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setOnStartAllUndefined: Self = StObject.set(x, "onStartAll", js.undefined)
+        inline def setOnStartAllUndefined: Self = StObject.set(x, "onStartAll", js.undefined)
         
-        @scala.inline
-        def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
+        inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
         
-        @scala.inline
-        def setStaggerDelayBy(value: Double | String): Self = StObject.set(x, "staggerDelayBy", value.asInstanceOf[js.Any])
+        inline def setStaggerDelayBy(value: Double | String): Self = StObject.set(x, "staggerDelayBy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStaggerDelayByUndefined: Self = StObject.set(x, "staggerDelayBy", js.undefined)
+        inline def setStaggerDelayByUndefined: Self = StObject.set(x, "staggerDelayBy", js.undefined)
         
-        @scala.inline
-        def setStaggerDurationBy(value: Double | String): Self = StObject.set(x, "staggerDurationBy", value.asInstanceOf[js.Any])
+        inline def setStaggerDurationBy(value: Double | String): Self = StObject.set(x, "staggerDurationBy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStaggerDurationByUndefined: Self = StObject.set(x, "staggerDurationBy", js.undefined)
+        inline def setStaggerDurationByUndefined: Self = StObject.set(x, "staggerDurationBy", js.undefined)
         
-        @scala.inline
-        def setStyle(value: Styles): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+        inline def setStyle(value: Styles): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+        inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
         
-        @scala.inline
-        def setTypeName(value: String): Self = StObject.set(x, "typeName", value.asInstanceOf[js.Any])
+        inline def setTypeName(value: String): Self = StObject.set(x, "typeName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTypeNameNull: Self = StObject.set(x, "typeName", null)
+        inline def setTypeNameNull: Self = StObject.set(x, "typeName", null)
         
-        @scala.inline
-        def setTypeNameUndefined: Self = StObject.set(x, "typeName", js.undefined)
+        inline def setTypeNameUndefined: Self = StObject.set(x, "typeName", js.undefined)
         
-        @scala.inline
-        def setVerticalAlignment(value: String): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
+        inline def setVerticalAlignment(value: String): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
+        inline def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
       }
     }
     

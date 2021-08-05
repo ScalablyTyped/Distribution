@@ -51,61 +51,43 @@ trait FlashVideoSettings extends StObject {
 }
 object FlashVideoSettings {
   
-  @scala.inline
-  def apply(): FlashVideoSettings = {
+  inline def apply(): FlashVideoSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FlashVideoSettings]
   }
   
-  @scala.inline
-  implicit class FlashVideoSettingsMutableBuilder[Self <: FlashVideoSettings] (val x: Self) extends AnyVal {
+  extension [Self <: FlashVideoSettings](x: Self) {
     
-    @scala.inline
-    def setBandwidth(value: Double): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
+    inline def setBandwidth(value: Double): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBandwidthUndefined: Self = StObject.set(x, "bandwidth", js.undefined)
+    inline def setBandwidthUndefined: Self = StObject.set(x, "bandwidth", js.undefined)
     
-    @scala.inline
-    def setFps(value: Double): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
+    inline def setFps(value: Double): Self = StObject.set(x, "fps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFpsUndefined: Self = StObject.set(x, "fps", js.undefined)
+    inline def setFpsUndefined: Self = StObject.set(x, "fps", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setKeyframeInterval(value: Double): Self = StObject.set(x, "keyframeInterval", value.asInstanceOf[js.Any])
+    inline def setKeyframeInterval(value: Double): Self = StObject.set(x, "keyframeInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyframeIntervalUndefined: Self = StObject.set(x, "keyframeInterval", js.undefined)
+    inline def setKeyframeIntervalUndefined: Self = StObject.set(x, "keyframeInterval", js.undefined)
     
-    @scala.inline
-    def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+    inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
     
-    @scala.inline
-    def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
+    inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
     
-    @scala.inline
-    def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+    inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

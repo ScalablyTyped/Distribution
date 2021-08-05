@@ -64,67 +64,47 @@ trait ParamsResourceObjectsGet
 }
 object ParamsResourceObjectsGet {
   
-  @scala.inline
-  def apply(): ParamsResourceObjectsGet = {
+  inline def apply(): ParamsResourceObjectsGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceObjectsGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceObjectsGetMutableBuilder[Self <: ParamsResourceObjectsGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceObjectsGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
+    inline def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
     
-    @scala.inline
-    def setGeneration(value: String): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
+    inline def setGeneration(value: String): Self = StObject.set(x, "generation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
+    inline def setGenerationUndefined: Self = StObject.set(x, "generation", js.undefined)
     
-    @scala.inline
-    def setIfGenerationMatch(value: String): Self = StObject.set(x, "ifGenerationMatch", value.asInstanceOf[js.Any])
+    inline def setIfGenerationMatch(value: String): Self = StObject.set(x, "ifGenerationMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfGenerationMatchUndefined: Self = StObject.set(x, "ifGenerationMatch", js.undefined)
+    inline def setIfGenerationMatchUndefined: Self = StObject.set(x, "ifGenerationMatch", js.undefined)
     
-    @scala.inline
-    def setIfGenerationNotMatch(value: String): Self = StObject.set(x, "ifGenerationNotMatch", value.asInstanceOf[js.Any])
+    inline def setIfGenerationNotMatch(value: String): Self = StObject.set(x, "ifGenerationNotMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfGenerationNotMatchUndefined: Self = StObject.set(x, "ifGenerationNotMatch", js.undefined)
+    inline def setIfGenerationNotMatchUndefined: Self = StObject.set(x, "ifGenerationNotMatch", js.undefined)
     
-    @scala.inline
-    def setIfMetagenerationMatch(value: String): Self = StObject.set(x, "ifMetagenerationMatch", value.asInstanceOf[js.Any])
+    inline def setIfMetagenerationMatch(value: String): Self = StObject.set(x, "ifMetagenerationMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfMetagenerationMatchUndefined: Self = StObject.set(x, "ifMetagenerationMatch", js.undefined)
+    inline def setIfMetagenerationMatchUndefined: Self = StObject.set(x, "ifMetagenerationMatch", js.undefined)
     
-    @scala.inline
-    def setIfMetagenerationNotMatch(value: String): Self = StObject.set(x, "ifMetagenerationNotMatch", value.asInstanceOf[js.Any])
+    inline def setIfMetagenerationNotMatch(value: String): Self = StObject.set(x, "ifMetagenerationNotMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfMetagenerationNotMatchUndefined: Self = StObject.set(x, "ifMetagenerationNotMatch", js.undefined)
+    inline def setIfMetagenerationNotMatchUndefined: Self = StObject.set(x, "ifMetagenerationNotMatch", js.undefined)
     
-    @scala.inline
-    def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: String): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
+    inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
     
-    @scala.inline
-    def setProjection(value: String): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    inline def setProjection(value: String): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+    inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
   }
 }

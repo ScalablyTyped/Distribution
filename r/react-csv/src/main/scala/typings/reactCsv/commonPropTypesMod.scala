@@ -34,73 +34,52 @@ object commonPropTypesMod {
   }
   object CommonPropTypes {
     
-    @scala.inline
-    def apply(data: String | Data): CommonPropTypes = {
+    inline def apply(data: String | Data): CommonPropTypes = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[CommonPropTypes]
     }
     
-    @scala.inline
-    implicit class CommonPropTypesMutableBuilder[Self <: CommonPropTypes] (val x: Self) extends AnyVal {
+    extension [Self <: CommonPropTypes](x: Self) {
       
-      @scala.inline
-      def setAsyncOnClick(value: Boolean): Self = StObject.set(x, "asyncOnClick", value.asInstanceOf[js.Any])
+      inline def setAsyncOnClick(value: Boolean): Self = StObject.set(x, "asyncOnClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncOnClickUndefined: Self = StObject.set(x, "asyncOnClick", js.undefined)
+      inline def setAsyncOnClickUndefined: Self = StObject.set(x, "asyncOnClick", js.undefined)
       
-      @scala.inline
-      def setData(value: String | Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String | Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataVarargs(value: js.Object*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: js.Object*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setEnclosingCharacter(value: String): Self = StObject.set(x, "enclosingCharacter", value.asInstanceOf[js.Any])
+      inline def setEnclosingCharacter(value: String): Self = StObject.set(x, "enclosingCharacter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnclosingCharacterUndefined: Self = StObject.set(x, "enclosingCharacter", js.undefined)
+      inline def setEnclosingCharacterUndefined: Self = StObject.set(x, "enclosingCharacter", js.undefined)
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
       
-      @scala.inline
-      def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: Headers): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setHeadersVarargs(value: (LabelKeyObject | String)*): Self = StObject.set(x, "headers", js.Array(value :_*))
+      inline def setHeadersVarargs(value: (LabelKeyObject | String)*): Self = StObject.set(x, "headers", js.Array(value :_*))
       
-      @scala.inline
-      def setOnClick(value: SyncClickHandler | AsyncClickHandler): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
+      inline def setOnClick(value: SyncClickHandler | AsyncClickHandler): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClickFunction1(value: /* event */ MouseEventHandler[HTMLAnchorElement] => Boolean | Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClickFunction1(value: /* event */ MouseEventHandler[HTMLAnchorElement] => Boolean | Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickFunction2(
+      inline def setOnClickFunction2(
         value: (/* event */ MouseEventHandler[HTMLAnchorElement], /* done */ js.Function1[/* proceed */ js.UndefOr[Boolean], Unit]) => Unit
       ): Self = StObject.set(x, "onClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+      inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
       
-      @scala.inline
-      def setUFEFF(value: Boolean): Self = StObject.set(x, "uFEFF", value.asInstanceOf[js.Any])
+      inline def setUFEFF(value: Boolean): Self = StObject.set(x, "uFEFF", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUFEFFUndefined: Self = StObject.set(x, "uFEFF", js.undefined)
+      inline def setUFEFFUndefined: Self = StObject.set(x, "uFEFF", js.undefined)
     }
   }
   
@@ -116,20 +95,16 @@ object commonPropTypesMod {
   }
   object LabelKeyObject {
     
-    @scala.inline
-    def apply(key: String, label: String): LabelKeyObject = {
+    inline def apply(key: String, label: String): LabelKeyObject = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[LabelKeyObject]
     }
     
-    @scala.inline
-    implicit class LabelKeyObjectMutableBuilder[Self <: LabelKeyObject] (val x: Self) extends AnyVal {
+    extension [Self <: LabelKeyObject](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     }
   }
   

@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SocketType extends StObject
 object SocketType {
   
-  @scala.inline
-  def tcp: typings.fridaGum.fridaGumStrings.tcp = "tcp".asInstanceOf[typings.fridaGum.fridaGumStrings.tcp]
+  inline def tcp: typings.fridaGum.fridaGumStrings.tcp = "tcp".asInstanceOf[typings.fridaGum.fridaGumStrings.tcp]
   
-  @scala.inline
-  def tcp6: typings.fridaGum.fridaGumStrings.tcp6 = "tcp6".asInstanceOf[typings.fridaGum.fridaGumStrings.tcp6]
+  inline def tcp6: typings.fridaGum.fridaGumStrings.tcp6 = "tcp6".asInstanceOf[typings.fridaGum.fridaGumStrings.tcp6]
   
-  @scala.inline
-  def udp: typings.fridaGum.fridaGumStrings.udp = "udp".asInstanceOf[typings.fridaGum.fridaGumStrings.udp]
+  inline def udp: typings.fridaGum.fridaGumStrings.udp = "udp".asInstanceOf[typings.fridaGum.fridaGumStrings.udp]
   
-  @scala.inline
-  def udp6: typings.fridaGum.fridaGumStrings.udp6 = "udp6".asInstanceOf[typings.fridaGum.fridaGumStrings.udp6]
+  inline def udp6: typings.fridaGum.fridaGumStrings.udp6 = "udp6".asInstanceOf[typings.fridaGum.fridaGumStrings.udp6]
   
-  @scala.inline
-  def unixColondgram: typings.fridaGum.fridaGumStrings.unixColondgram = "unix:dgram".asInstanceOf[typings.fridaGum.fridaGumStrings.unixColondgram]
+  inline def unixColondgram: typings.fridaGum.fridaGumStrings.unixColondgram = "unix:dgram".asInstanceOf[typings.fridaGum.fridaGumStrings.unixColondgram]
   
-  @scala.inline
-  def unixColonstream: typings.fridaGum.fridaGumStrings.unixColonstream = "unix:stream".asInstanceOf[typings.fridaGum.fridaGumStrings.unixColonstream]
+  inline def unixColonstream: typings.fridaGum.fridaGumStrings.unixColonstream = "unix:stream".asInstanceOf[typings.fridaGum.fridaGumStrings.unixColonstream]
 }

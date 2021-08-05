@@ -32,8 +32,7 @@ trait ParametersRequest
 }
 object ParametersRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Classification: InteractionClassification,
     Connection: XConnection,
     Context: XInterface,
@@ -44,13 +43,10 @@ object ParametersRequest {
     __obj.asInstanceOf[ParametersRequest]
   }
   
-  @scala.inline
-  implicit class ParametersRequestMutableBuilder[Self <: ParametersRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersRequest](x: Self) {
     
-    @scala.inline
-    def setConnection(value: XConnection): Self = StObject.set(x, "Connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: XConnection): Self = StObject.set(x, "Connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameters(value: XIndexAccess): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: XIndexAccess): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
   }
 }

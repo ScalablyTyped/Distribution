@@ -32,8 +32,7 @@ object anon {
   }
   object Current {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       current: Double,
       direction: String,
       iconPrefix: String,
@@ -50,38 +49,27 @@ object anon {
       __obj.asInstanceOf[Current]
     }
     
-    @scala.inline
-    implicit class CurrentMutableBuilder[Self <: Current] (val x: Self) extends AnyVal {
+    extension [Self <: Current](x: Self) {
       
-      @scala.inline
-      def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconPrefix(value: String): Self = StObject.set(x, "iconPrefix", value.asInstanceOf[js.Any])
+      inline def setIconPrefix(value: String): Self = StObject.set(x, "iconPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitial(value: Double): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
+      inline def setInitial(value: Double): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelPlacement(value: String): Self = StObject.set(x, "labelPlacement", value.asInstanceOf[js.Any])
+      inline def setLabelPlacement(value: String): Self = StObject.set(x, "labelPlacement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressDot(value: Boolean): Self = StObject.set(x, "progressDot", value.asInstanceOf[js.Any])
+      inline def setProgressDot(value: Boolean): Self = StObject.set(x, "progressDot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -99,38 +87,28 @@ object anon {
   }
   object Description {
     
-    @scala.inline
-    def apply(index: Double, status: Status): Description = {
+    inline def apply(index: Double, status: Status): Description = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[Description]
     }
     
-    @scala.inline
-    implicit class DescriptionMutableBuilder[Self <: Description] (val x: Self) extends AnyVal {
+    extension [Self <: Description](x: Self) {
       
-      @scala.inline
-      def setDescription(value: ReactNode): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: ReactNode): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: ReactNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: ReactNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+      inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
       
-      @scala.inline
-      def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -146,32 +124,24 @@ object anon {
   }
   object Index {
     
-    @scala.inline
-    def apply(index: Double, status: Status): Index = {
+    inline def apply(index: Double, status: Status): Index = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[Index]
     }
     
-    @scala.inline
-    implicit class IndexMutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
+    extension [Self <: Index](x: Self) {
       
-      @scala.inline
-      def setDescription(value: ReactNode): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: ReactNode): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
 }

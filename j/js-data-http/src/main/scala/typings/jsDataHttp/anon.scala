@@ -27,50 +27,36 @@ object anon {
   }
   object Alpha {
     
-    @scala.inline
-    def apply(): Alpha = {
+    inline def apply(): Alpha = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Alpha]
     }
     
-    @scala.inline
-    implicit class AlphaMutableBuilder[Self <: Alpha] (val x: Self) extends AnyVal {
+    extension [Self <: Alpha](x: Self) {
       
-      @scala.inline
-      def setAlpha(value: String | Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      inline def setAlpha(value: String | Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+      inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
       
-      @scala.inline
-      def setBeta(value: String | Boolean): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
+      inline def setBeta(value: String | Boolean): Self = StObject.set(x, "beta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBetaUndefined: Self = StObject.set(x, "beta", js.undefined)
+      inline def setBetaUndefined: Self = StObject.set(x, "beta", js.undefined)
       
-      @scala.inline
-      def setFull(value: String): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
+      inline def setFull(value: String): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullUndefined: Self = StObject.set(x, "full", js.undefined)
+      inline def setFullUndefined: Self = StObject.set(x, "full", js.undefined)
       
-      @scala.inline
-      def setMajor(value: String): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
+      inline def setMajor(value: String): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMajorUndefined: Self = StObject.set(x, "major", js.undefined)
+      inline def setMajorUndefined: Self = StObject.set(x, "major", js.undefined)
       
-      @scala.inline
-      def setMinor(value: String): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
+      inline def setMinor(value: String): Self = StObject.set(x, "minor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinorUndefined: Self = StObject.set(x, "minor", js.undefined)
+      inline def setMinorUndefined: Self = StObject.set(x, "minor", js.undefined)
       
-      @scala.inline
-      def setPatch(value: String): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
+      inline def setPatch(value: String): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatchUndefined: Self = StObject.set(x, "patch", js.undefined)
+      inline def setPatchUndefined: Self = StObject.set(x, "patch", js.undefined)
     }
   }
   

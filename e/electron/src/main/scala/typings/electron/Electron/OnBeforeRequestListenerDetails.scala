@@ -24,8 +24,7 @@ trait OnBeforeRequestListenerDetails extends StObject {
 }
 object OnBeforeRequestListenerDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     id: Double,
     method: String,
     referrer: String,
@@ -38,37 +37,26 @@ object OnBeforeRequestListenerDetails {
     __obj.asInstanceOf[OnBeforeRequestListenerDetails]
   }
   
-  @scala.inline
-  implicit class OnBeforeRequestListenerDetailsMutableBuilder[Self <: OnBeforeRequestListenerDetails] (val x: Self) extends AnyVal {
+  extension [Self <: OnBeforeRequestListenerDetails](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
+    inline def setReferrer(value: String): Self = StObject.set(x, "referrer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: String): Self = StObject.set(x, "resourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadData(value: js.Array[UploadData]): Self = StObject.set(x, "uploadData", value.asInstanceOf[js.Any])
+    inline def setUploadData(value: js.Array[UploadData]): Self = StObject.set(x, "uploadData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadDataVarargs(value: UploadData*): Self = StObject.set(x, "uploadData", js.Array(value :_*))
+    inline def setUploadDataVarargs(value: UploadData*): Self = StObject.set(x, "uploadData", js.Array(value :_*))
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebContentsId(value: Double): Self = StObject.set(x, "webContentsId", value.asInstanceOf[js.Any])
+    inline def setWebContentsId(value: Double): Self = StObject.set(x, "webContentsId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebContentsIdUndefined: Self = StObject.set(x, "webContentsId", js.undefined)
+    inline def setWebContentsIdUndefined: Self = StObject.set(x, "webContentsId", js.undefined)
   }
 }

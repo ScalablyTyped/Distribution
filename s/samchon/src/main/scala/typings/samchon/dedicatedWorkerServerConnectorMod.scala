@@ -55,6 +55,6 @@ object dedicatedWorkerServerConnectorMod {
     /**
       * @hidden
       */
-    var worker_ : js.Any = js.native
+    /* private */ var worker_ : js.Any = js.native
   }
 }

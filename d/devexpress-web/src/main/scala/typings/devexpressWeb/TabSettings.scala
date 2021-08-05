@@ -31,25 +31,19 @@ trait TabSettings extends StObject {
 }
 object TabSettings {
   
-  @scala.inline
-  def apply(alignment: TabAlign, deleted: Boolean, leader: TabLeaderType, position: Double): TabSettings = {
+  inline def apply(alignment: TabAlign, deleted: Boolean, leader: TabLeaderType, position: Double): TabSettings = {
     val __obj = js.Dynamic.literal(alignment = alignment.asInstanceOf[js.Any], deleted = deleted.asInstanceOf[js.Any], leader = leader.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabSettings]
   }
   
-  @scala.inline
-  implicit class TabSettingsMutableBuilder[Self <: TabSettings] (val x: Self) extends AnyVal {
+  extension [Self <: TabSettings](x: Self) {
     
-    @scala.inline
-    def setAlignment(value: TabAlign): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+    inline def setAlignment(value: TabAlign): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+    inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeader(value: TabLeaderType): Self = StObject.set(x, "leader", value.asInstanceOf[js.Any])
+    inline def setLeader(value: TabLeaderType): Self = StObject.set(x, "leader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

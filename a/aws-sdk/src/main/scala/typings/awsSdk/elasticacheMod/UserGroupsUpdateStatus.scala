@@ -18,31 +18,23 @@ trait UserGroupsUpdateStatus extends StObject {
 }
 object UserGroupsUpdateStatus {
   
-  @scala.inline
-  def apply(): UserGroupsUpdateStatus = {
+  inline def apply(): UserGroupsUpdateStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserGroupsUpdateStatus]
   }
   
-  @scala.inline
-  implicit class UserGroupsUpdateStatusMutableBuilder[Self <: UserGroupsUpdateStatus] (val x: Self) extends AnyVal {
+  extension [Self <: UserGroupsUpdateStatus](x: Self) {
     
-    @scala.inline
-    def setUserGroupIdsToAdd(value: UserGroupIdList): Self = StObject.set(x, "UserGroupIdsToAdd", value.asInstanceOf[js.Any])
+    inline def setUserGroupIdsToAdd(value: UserGroupIdList): Self = StObject.set(x, "UserGroupIdsToAdd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserGroupIdsToAddUndefined: Self = StObject.set(x, "UserGroupIdsToAdd", js.undefined)
+    inline def setUserGroupIdsToAddUndefined: Self = StObject.set(x, "UserGroupIdsToAdd", js.undefined)
     
-    @scala.inline
-    def setUserGroupIdsToAddVarargs(value: UserGroupId*): Self = StObject.set(x, "UserGroupIdsToAdd", js.Array(value :_*))
+    inline def setUserGroupIdsToAddVarargs(value: UserGroupId*): Self = StObject.set(x, "UserGroupIdsToAdd", js.Array(value :_*))
     
-    @scala.inline
-    def setUserGroupIdsToRemove(value: UserGroupIdList): Self = StObject.set(x, "UserGroupIdsToRemove", value.asInstanceOf[js.Any])
+    inline def setUserGroupIdsToRemove(value: UserGroupIdList): Self = StObject.set(x, "UserGroupIdsToRemove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserGroupIdsToRemoveUndefined: Self = StObject.set(x, "UserGroupIdsToRemove", js.undefined)
+    inline def setUserGroupIdsToRemoveUndefined: Self = StObject.set(x, "UserGroupIdsToRemove", js.undefined)
     
-    @scala.inline
-    def setUserGroupIdsToRemoveVarargs(value: UserGroupId*): Self = StObject.set(x, "UserGroupIdsToRemove", js.Array(value :_*))
+    inline def setUserGroupIdsToRemoveVarargs(value: UserGroupId*): Self = StObject.set(x, "UserGroupIdsToRemove", js.Array(value :_*))
   }
 }

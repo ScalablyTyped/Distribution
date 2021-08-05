@@ -12,17 +12,17 @@ object sortServiceMod {
   @js.native
   class SortService () extends StObject {
     
-    var columnController: js.Any = js.native
+    /* private */ var columnController: js.Any = js.native
     
     /* private */ def compareRowNodes(sortOptions: js.Any, sortedNodeA: js.Any, sortedNodeB: js.Any): js.Any = js.native
     
     /* private */ def getValue(nodeA: js.Any, column: js.Any): js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
     def init(): Unit = js.native
     
-    var postSortFunc: js.Any = js.native
+    /* private */ var postSortFunc: js.Any = js.native
     
     /* private */ def pullDownDataForHideOpenParents(rowNode: js.Any, clearOperation: js.Any): js.Any = js.native
     
@@ -30,11 +30,11 @@ object sortServiceMod {
     
     def sortAccordingToColumnsState(rowNode: RowNode): Unit = js.native
     
-    var sortController: js.Any = js.native
+    /* private */ var sortController: js.Any = js.native
     
     /* private */ def updateChildIndexes(rowNode: js.Any): js.Any = js.native
     
-    var valueService: js.Any = js.native
+    /* private */ var valueService: js.Any = js.native
   }
   
   trait SortOption extends StObject {
@@ -45,20 +45,16 @@ object sortServiceMod {
   }
   object SortOption {
     
-    @scala.inline
-    def apply(column: Column, inverter: Double): SortOption = {
+    inline def apply(column: Column, inverter: Double): SortOption = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], inverter = inverter.asInstanceOf[js.Any])
       __obj.asInstanceOf[SortOption]
     }
     
-    @scala.inline
-    implicit class SortOptionMutableBuilder[Self <: SortOption] (val x: Self) extends AnyVal {
+    extension [Self <: SortOption](x: Self) {
       
-      @scala.inline
-      def setColumn(value: Column): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: Column): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInverter(value: Double): Self = StObject.set(x, "inverter", value.asInstanceOf[js.Any])
+      inline def setInverter(value: Double): Self = StObject.set(x, "inverter", value.asInstanceOf[js.Any])
     }
   }
   
@@ -70,20 +66,16 @@ object sortServiceMod {
   }
   object SortedRowNode {
     
-    @scala.inline
-    def apply(currentPos: Double, rowNode: RowNode): SortedRowNode = {
+    inline def apply(currentPos: Double, rowNode: RowNode): SortedRowNode = {
       val __obj = js.Dynamic.literal(currentPos = currentPos.asInstanceOf[js.Any], rowNode = rowNode.asInstanceOf[js.Any])
       __obj.asInstanceOf[SortedRowNode]
     }
     
-    @scala.inline
-    implicit class SortedRowNodeMutableBuilder[Self <: SortedRowNode] (val x: Self) extends AnyVal {
+    extension [Self <: SortedRowNode](x: Self) {
       
-      @scala.inline
-      def setCurrentPos(value: Double): Self = StObject.set(x, "currentPos", value.asInstanceOf[js.Any])
+      inline def setCurrentPos(value: Double): Self = StObject.set(x, "currentPos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowNode(value: RowNode): Self = StObject.set(x, "rowNode", value.asInstanceOf[js.Any])
+      inline def setRowNode(value: RowNode): Self = StObject.set(x, "rowNode", value.asInstanceOf[js.Any])
     }
   }
 }

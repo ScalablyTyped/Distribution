@@ -12,10 +12,8 @@ object getTooltipPositionByReferenceElementMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(tooltipReferenceElement: HTMLElement, tooltipContainerElement: HTMLElement): ITooltipPosition = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(tooltipReferenceElement.asInstanceOf[js.Any], tooltipContainerElement.asInstanceOf[js.Any])).asInstanceOf[ITooltipPosition]
-  @scala.inline
-  def default(
+  inline def default(tooltipReferenceElement: HTMLElement, tooltipContainerElement: HTMLElement): ITooltipPosition = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(tooltipReferenceElement.asInstanceOf[js.Any], tooltipContainerElement.asInstanceOf[js.Any])).asInstanceOf[ITooltipPosition]
+  inline def default(
     tooltipReferenceElement: HTMLElement,
     tooltipContainerElement: HTMLElement,
     tooltipCenterXfn: ITooltipCenterXfn

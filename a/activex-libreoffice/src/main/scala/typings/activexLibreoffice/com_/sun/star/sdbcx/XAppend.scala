@@ -22,8 +22,7 @@ trait XAppend
 }
 object XAppend {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     appendByDescriptor: XPropertySet => Unit,
     queryInterface: `type` => js.Any,
@@ -33,10 +32,8 @@ object XAppend {
     __obj.asInstanceOf[XAppend]
   }
   
-  @scala.inline
-  implicit class XAppendMutableBuilder[Self <: XAppend] (val x: Self) extends AnyVal {
+  extension [Self <: XAppend](x: Self) {
     
-    @scala.inline
-    def setAppendByDescriptor(value: XPropertySet => Unit): Self = StObject.set(x, "appendByDescriptor", js.Any.fromFunction1(value))
+    inline def setAppendByDescriptor(value: XPropertySet => Unit): Self = StObject.set(x, "appendByDescriptor", js.Any.fromFunction1(value))
   }
 }

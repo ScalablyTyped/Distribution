@@ -15,28 +15,21 @@ trait PartialOptionsElement extends StObject {
 }
 object PartialOptionsElement {
   
-  @scala.inline
-  def apply(): PartialOptionsElement = {
+  inline def apply(): PartialOptionsElement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialOptionsElement]
   }
   
-  @scala.inline
-  implicit class PartialOptionsElementMutableBuilder[Self <: PartialOptionsElement] (val x: Self) extends AnyVal {
+  extension [Self <: PartialOptionsElement](x: Self) {
     
-    @scala.inline
-    def setElement(value: HTMLElement | String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: HTMLElement | String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementNull: Self = StObject.set(x, "element", null)
+    inline def setElementNull: Self = StObject.set(x, "element", null)
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    @scala.inline
-    def setPadding(value: Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
   }
 }

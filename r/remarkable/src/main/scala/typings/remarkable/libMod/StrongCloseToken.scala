@@ -15,17 +15,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object StrongCloseToken {
   
-  @scala.inline
-  def apply(level: Double): StrongCloseToken = {
+  inline def apply(level: Double): StrongCloseToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("strong_close")
     __obj.asInstanceOf[StrongCloseToken]
   }
   
-  @scala.inline
-  implicit class StrongCloseTokenMutableBuilder[Self <: StrongCloseToken] (val x: Self) extends AnyVal {
+  extension [Self <: StrongCloseToken](x: Self) {
     
-    @scala.inline
-    def setType(value: strong_close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: strong_close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

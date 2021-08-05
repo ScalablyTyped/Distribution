@@ -15,8 +15,7 @@ trait StartTagLocation
 }
 object StartTagLocation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attrs: AttributesLocation,
     endCol: Double,
     endLine: Double,
@@ -29,10 +28,8 @@ object StartTagLocation {
     __obj.asInstanceOf[StartTagLocation]
   }
   
-  @scala.inline
-  implicit class StartTagLocationMutableBuilder[Self <: StartTagLocation] (val x: Self) extends AnyVal {
+  extension [Self <: StartTagLocation](x: Self) {
     
-    @scala.inline
-    def setAttrs(value: AttributesLocation): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+    inline def setAttrs(value: AttributesLocation): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
   }
 }

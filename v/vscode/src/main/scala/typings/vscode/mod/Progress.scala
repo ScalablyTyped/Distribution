@@ -15,16 +15,13 @@ trait Progress[T] extends StObject {
 }
 object Progress {
   
-  @scala.inline
-  def apply[T](report: T => Unit): Progress[T] = {
+  inline def apply[T](report: T => Unit): Progress[T] = {
     val __obj = js.Dynamic.literal(report = js.Any.fromFunction1(report))
     __obj.asInstanceOf[Progress[T]]
   }
   
-  @scala.inline
-  implicit class ProgressMutableBuilder[Self <: Progress[?], T] (val x: Self & Progress[T]) extends AnyVal {
+  extension [Self <: Progress[?], T](x: Self & Progress[T]) {
     
-    @scala.inline
-    def setReport(value: T => Unit): Self = StObject.set(x, "report", js.Any.fromFunction1(value))
+    inline def setReport(value: T => Unit): Self = StObject.set(x, "report", js.Any.fromFunction1(value))
   }
 }

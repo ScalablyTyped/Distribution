@@ -53,8 +53,7 @@ object SiteHealth {
   }
   object SiteHealthResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       customFromJson: js.Any => Boolean,
       customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
       fromJson: js.Any => Unit,
@@ -74,35 +73,25 @@ object SiteHealth {
       __obj.asInstanceOf[SiteHealthResult]
     }
     
-    @scala.inline
-    implicit class SiteHealthResultMutableBuilder[Self <: SiteHealthResult] (val x: Self) extends AnyVal {
+    extension [Self <: SiteHealthResult](x: Self) {
       
-      @scala.inline
-      def setGet_messageAsText(value: () => String): Self = StObject.set(x, "get_messageAsText", js.Any.fromFunction0(value))
+      inline def setGet_messageAsText(value: () => String): Self = StObject.set(x, "get_messageAsText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_ruleHelpLink(value: () => String): Self = StObject.set(x, "get_ruleHelpLink", js.Any.fromFunction0(value))
+      inline def setGet_ruleHelpLink(value: () => String): Self = StObject.set(x, "get_ruleHelpLink", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_ruleId(value: () => Guid): Self = StObject.set(x, "get_ruleId", js.Any.fromFunction0(value))
+      inline def setGet_ruleId(value: () => Guid): Self = StObject.set(x, "get_ruleId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_ruleIsRepairable(value: () => Boolean): Self = StObject.set(x, "get_ruleIsRepairable", js.Any.fromFunction0(value))
+      inline def setGet_ruleIsRepairable(value: () => Boolean): Self = StObject.set(x, "get_ruleIsRepairable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_ruleName(value: () => String): Self = StObject.set(x, "get_ruleName", js.Any.fromFunction0(value))
+      inline def setGet_ruleName(value: () => String): Self = StObject.set(x, "get_ruleName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_status(value: () => SiteHealthStatusType): Self = StObject.set(x, "get_status", js.Any.fromFunction0(value))
+      inline def setGet_status(value: () => SiteHealthStatusType): Self = StObject.set(x, "get_status", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet_timeStamp(value: () => Date): Self = StObject.set(x, "get_timeStamp", js.Any.fromFunction0(value))
+      inline def setGet_timeStamp(value: () => Date): Self = StObject.set(x, "get_timeStamp", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSet_status(value: SiteHealthStatusType => Unit): Self = StObject.set(x, "set_status", js.Any.fromFunction1(value))
+      inline def setSet_status(value: SiteHealthStatusType => Unit): Self = StObject.set(x, "set_status", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet_timeStamp(value: Date => Unit): Self = StObject.set(x, "set_timeStamp", js.Any.fromFunction1(value))
+      inline def setSet_timeStamp(value: Date => Unit): Self = StObject.set(x, "set_timeStamp", js.Any.fromFunction1(value))
     }
   }
   

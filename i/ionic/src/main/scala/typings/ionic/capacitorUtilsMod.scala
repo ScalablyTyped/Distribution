@@ -12,6 +12,5 @@ object capacitorUtilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def generateOptionsForCapacitorBuild(inputs: CommandLineInputs, options: CommandLineOptions): CommandLineOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("generateOptionsForCapacitorBuild")(inputs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CommandLineOptions]
+  inline def generateOptionsForCapacitorBuild(inputs: CommandLineInputs, options: CommandLineOptions): CommandLineOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("generateOptionsForCapacitorBuild")(inputs.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CommandLineOptions]
 }

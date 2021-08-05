@@ -12,17 +12,17 @@ object agCheckboxMod {
   @js.native
   class AgCheckbox () extends Component {
     
-    var eChecked: js.Any = js.native
+    /* private */ var eChecked: js.Any = js.native
     
-    var eIndeterminate: js.Any = js.native
+    /* private */ var eIndeterminate: js.Any = js.native
     
-    var eLabel: js.Any = js.native
+    /* private */ var eLabel: js.Any = js.native
     
-    var eUnchecked: js.Any = js.native
+    /* private */ var eUnchecked: js.Any = js.native
     
     def getNextValue(): Boolean = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
     def isReadOnly(): Boolean = js.native
     
@@ -32,17 +32,17 @@ object agCheckboxMod {
     
     /* private */ def onClick(event: js.Any): js.Any = js.native
     
-    var passive: js.Any = js.native
+    /* private */ var passive: js.Any = js.native
     
     /* private */ def postConstruct(): js.Any = js.native
     
     /* private */ def preConstruct(): js.Any = js.native
     
-    var props: js.Any = js.native
+    /* private */ var props: js.Any = js.native
     
-    var readOnly: js.Any = js.native
+    /* private */ var readOnly: js.Any = js.native
     
-    var selected: js.Any = js.native
+    /* private */ var selected: js.Any = js.native
     
     def setPassive(passive: Boolean): Unit = js.native
     
@@ -64,14 +64,12 @@ object agCheckboxMod {
     @JSImport("ag-grid/dist/lib/widgets/agCheckbox", "AgCheckbox.EVENT_CHANGED")
     @js.native
     def EVENT_CHANGED: String = js.native
-    @scala.inline
-    def EVENT_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_CHANGED")(x.asInstanceOf[js.Any])
+    inline def EVENT_CHANGED_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("EVENT_CHANGED")(x.asInstanceOf[js.Any])
     
     @JSImport("ag-grid/dist/lib/widgets/agCheckbox", "AgCheckbox.TEMPLATE")
     @js.native
     def TEMPLATE: js.Any = js.native
-    @scala.inline
-    def TEMPLATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMPLATE")(x.asInstanceOf[js.Any])
+    inline def TEMPLATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMPLATE")(x.asInstanceOf[js.Any])
   }
   
   trait ChangeEvent
@@ -82,18 +80,15 @@ object agCheckboxMod {
   }
   object ChangeEvent {
     
-    @scala.inline
-    def apply(selected: Boolean, `type`: String): ChangeEvent = {
+    inline def apply(selected: Boolean, `type`: String): ChangeEvent = {
       val __obj = js.Dynamic.literal(selected = selected.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChangeEvent]
     }
     
-    @scala.inline
-    implicit class ChangeEventMutableBuilder[Self <: ChangeEvent] (val x: Self) extends AnyVal {
+    extension [Self <: ChangeEvent](x: Self) {
       
-      @scala.inline
-      def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     }
   }
 }

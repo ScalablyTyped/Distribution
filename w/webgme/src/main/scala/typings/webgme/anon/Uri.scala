@@ -20,19 +20,15 @@ trait Uri extends StObject {
 }
 object Uri {
   
-  @scala.inline
-  def apply(options: String, uri: String): Uri = {
+  inline def apply(options: String, uri: String): Uri = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[Uri]
   }
   
-  @scala.inline
-  implicit class UriMutableBuilder[Self <: Uri] (val x: Self) extends AnyVal {
+  extension [Self <: Uri](x: Self) {
     
-    @scala.inline
-    def setOptions(value: String): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: String): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

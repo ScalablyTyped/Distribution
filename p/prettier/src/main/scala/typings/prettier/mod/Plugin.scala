@@ -20,46 +20,33 @@ trait Plugin[T] extends StObject {
 }
 object Plugin {
   
-  @scala.inline
-  def apply[T](): Plugin[T] = {
+  inline def apply[T](): Plugin[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Plugin[T]]
   }
   
-  @scala.inline
-  implicit class PluginMutableBuilder[Self <: Plugin[?], T] (val x: Self & Plugin[T]) extends AnyVal {
+  extension [Self <: Plugin[?], T](x: Self & Plugin[T]) {
     
-    @scala.inline
-    def setDefaultOptions(value: PartialRequiredOptions): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
+    inline def setDefaultOptions(value: PartialRequiredOptions): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultOptionsUndefined: Self = StObject.set(x, "defaultOptions", js.undefined)
+    inline def setDefaultOptionsUndefined: Self = StObject.set(x, "defaultOptions", js.undefined)
     
-    @scala.inline
-    def setLanguages(value: js.Array[SupportLanguage]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
+    inline def setLanguages(value: js.Array[SupportLanguage]): Self = StObject.set(x, "languages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
+    inline def setLanguagesUndefined: Self = StObject.set(x, "languages", js.undefined)
     
-    @scala.inline
-    def setLanguagesVarargs(value: SupportLanguage*): Self = StObject.set(x, "languages", js.Array(value :_*))
+    inline def setLanguagesVarargs(value: SupportLanguage*): Self = StObject.set(x, "languages", js.Array(value :_*))
     
-    @scala.inline
-    def setOptions(value: SupportOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: SupportOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setParsers(value: StringDictionary[Parser[T]]): Self = StObject.set(x, "parsers", value.asInstanceOf[js.Any])
+    inline def setParsers(value: StringDictionary[Parser[T]]): Self = StObject.set(x, "parsers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParsersUndefined: Self = StObject.set(x, "parsers", js.undefined)
+    inline def setParsersUndefined: Self = StObject.set(x, "parsers", js.undefined)
     
-    @scala.inline
-    def setPrinters(value: StringDictionary[Printer[T]]): Self = StObject.set(x, "printers", value.asInstanceOf[js.Any])
+    inline def setPrinters(value: StringDictionary[Printer[T]]): Self = StObject.set(x, "printers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintersUndefined: Self = StObject.set(x, "printers", js.undefined)
+    inline def setPrintersUndefined: Self = StObject.set(x, "printers", js.undefined)
   }
 }

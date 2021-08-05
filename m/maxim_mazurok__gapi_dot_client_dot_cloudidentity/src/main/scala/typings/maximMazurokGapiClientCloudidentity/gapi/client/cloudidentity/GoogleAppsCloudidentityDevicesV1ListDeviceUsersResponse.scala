@@ -14,28 +14,21 @@ trait GoogleAppsCloudidentityDevicesV1ListDeviceUsersResponse extends StObject {
 }
 object GoogleAppsCloudidentityDevicesV1ListDeviceUsersResponse {
   
-  @scala.inline
-  def apply(): GoogleAppsCloudidentityDevicesV1ListDeviceUsersResponse = {
+  inline def apply(): GoogleAppsCloudidentityDevicesV1ListDeviceUsersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleAppsCloudidentityDevicesV1ListDeviceUsersResponse]
   }
   
-  @scala.inline
-  implicit class GoogleAppsCloudidentityDevicesV1ListDeviceUsersResponseMutableBuilder[Self <: GoogleAppsCloudidentityDevicesV1ListDeviceUsersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleAppsCloudidentityDevicesV1ListDeviceUsersResponse](x: Self) {
     
-    @scala.inline
-    def setDeviceUsers(value: js.Array[GoogleAppsCloudidentityDevicesV1DeviceUser]): Self = StObject.set(x, "deviceUsers", value.asInstanceOf[js.Any])
+    inline def setDeviceUsers(value: js.Array[GoogleAppsCloudidentityDevicesV1DeviceUser]): Self = StObject.set(x, "deviceUsers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceUsersUndefined: Self = StObject.set(x, "deviceUsers", js.undefined)
+    inline def setDeviceUsersUndefined: Self = StObject.set(x, "deviceUsers", js.undefined)
     
-    @scala.inline
-    def setDeviceUsersVarargs(value: GoogleAppsCloudidentityDevicesV1DeviceUser*): Self = StObject.set(x, "deviceUsers", js.Array(value :_*))
+    inline def setDeviceUsersVarargs(value: GoogleAppsCloudidentityDevicesV1DeviceUser*): Self = StObject.set(x, "deviceUsers", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

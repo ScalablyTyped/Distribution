@@ -35,43 +35,31 @@ trait AppDetailsOptions extends StObject {
 }
 object AppDetailsOptions {
   
-  @scala.inline
-  def apply(): AppDetailsOptions = {
+  inline def apply(): AppDetailsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AppDetailsOptions]
   }
   
-  @scala.inline
-  implicit class AppDetailsOptionsMutableBuilder[Self <: AppDetailsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AppDetailsOptions](x: Self) {
     
-    @scala.inline
-    def setAppIconIndex(value: Double): Self = StObject.set(x, "appIconIndex", value.asInstanceOf[js.Any])
+    inline def setAppIconIndex(value: Double): Self = StObject.set(x, "appIconIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppIconIndexUndefined: Self = StObject.set(x, "appIconIndex", js.undefined)
+    inline def setAppIconIndexUndefined: Self = StObject.set(x, "appIconIndex", js.undefined)
     
-    @scala.inline
-    def setAppIconPath(value: String): Self = StObject.set(x, "appIconPath", value.asInstanceOf[js.Any])
+    inline def setAppIconPath(value: String): Self = StObject.set(x, "appIconPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppIconPathUndefined: Self = StObject.set(x, "appIconPath", js.undefined)
+    inline def setAppIconPathUndefined: Self = StObject.set(x, "appIconPath", js.undefined)
     
-    @scala.inline
-    def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
+    inline def setAppIdUndefined: Self = StObject.set(x, "appId", js.undefined)
     
-    @scala.inline
-    def setRelaunchCommand(value: String): Self = StObject.set(x, "relaunchCommand", value.asInstanceOf[js.Any])
+    inline def setRelaunchCommand(value: String): Self = StObject.set(x, "relaunchCommand", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelaunchCommandUndefined: Self = StObject.set(x, "relaunchCommand", js.undefined)
+    inline def setRelaunchCommandUndefined: Self = StObject.set(x, "relaunchCommand", js.undefined)
     
-    @scala.inline
-    def setRelaunchDisplayName(value: String): Self = StObject.set(x, "relaunchDisplayName", value.asInstanceOf[js.Any])
+    inline def setRelaunchDisplayName(value: String): Self = StObject.set(x, "relaunchDisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelaunchDisplayNameUndefined: Self = StObject.set(x, "relaunchDisplayName", js.undefined)
+    inline def setRelaunchDisplayNameUndefined: Self = StObject.set(x, "relaunchDisplayName", js.undefined)
   }
 }

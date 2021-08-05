@@ -11,13 +11,11 @@ object adhanStrings {
   sealed trait `12h`
     extends StObject
        with TimeMode
-  @scala.inline
-  def `12h`: `12h` = "12h".asInstanceOf[`12h`]
+  inline def `12h`: `12h` = "12h".asInstanceOf[`12h`]
   
   @js.native
   sealed trait `24h`
     extends StObject
        with TimeMode
-  @scala.inline
-  def `24h`: `24h` = "24h".asInstanceOf[`24h`]
+  inline def `24h`: `24h` = "24h".asInstanceOf[`24h`]
 }

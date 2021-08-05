@@ -20,28 +20,21 @@ trait RangeBorderCollectionUpdateData extends StObject {
 }
 object RangeBorderCollectionUpdateData {
   
-  @scala.inline
-  def apply(): RangeBorderCollectionUpdateData = {
+  inline def apply(): RangeBorderCollectionUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RangeBorderCollectionUpdateData]
   }
   
-  @scala.inline
-  implicit class RangeBorderCollectionUpdateDataMutableBuilder[Self <: RangeBorderCollectionUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: RangeBorderCollectionUpdateData](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[RangeBorderData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[RangeBorderData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: RangeBorderData*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: RangeBorderData*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setTintAndShade(value: Double): Self = StObject.set(x, "tintAndShade", value.asInstanceOf[js.Any])
+    inline def setTintAndShade(value: Double): Self = StObject.set(x, "tintAndShade", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTintAndShadeUndefined: Self = StObject.set(x, "tintAndShade", js.undefined)
+    inline def setTintAndShadeUndefined: Self = StObject.set(x, "tintAndShade", js.undefined)
   }
 }

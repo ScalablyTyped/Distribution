@@ -15,8 +15,7 @@ object formatjsEcma402AbstractResolveLocaleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ResolveLocale[K /* <: String */, D /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  inline def ResolveLocale[K /* <: String */, D /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in K ]: any}
     */ typings.formatjsEcma402Abstract.formatjsEcma402AbstractStrings.ResolveLocale & TopLevel[js.Any] */](
     availableLocales: Set[String],
@@ -37,20 +36,16 @@ object formatjsEcma402AbstractResolveLocaleMod {
   }
   object ResolveLocaleResult {
     
-    @scala.inline
-    def apply(dataLocale: String, locale: String): ResolveLocaleResult = {
+    inline def apply(dataLocale: String, locale: String): ResolveLocaleResult = {
       val __obj = js.Dynamic.literal(dataLocale = dataLocale.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResolveLocaleResult]
     }
     
-    @scala.inline
-    implicit class ResolveLocaleResultMutableBuilder[Self <: ResolveLocaleResult] (val x: Self) extends AnyVal {
+    extension [Self <: ResolveLocaleResult](x: Self) {
       
-      @scala.inline
-      def setDataLocale(value: String): Self = StObject.set(x, "dataLocale", value.asInstanceOf[js.Any])
+      inline def setDataLocale(value: String): Self = StObject.set(x, "dataLocale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
     }
   }
 }

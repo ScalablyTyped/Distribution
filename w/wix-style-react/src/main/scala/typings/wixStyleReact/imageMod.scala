@@ -24,17 +24,13 @@ object imageMod extends Shortcut {
   trait ImageFit extends StObject
   object ImageFit {
     
-    @scala.inline
-    def contain: typings.wixStyleReact.wixStyleReactStrings.contain = "contain".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.contain]
+    inline def contain: typings.wixStyleReact.wixStyleReactStrings.contain = "contain".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.contain]
     
-    @scala.inline
-    def cover: typings.wixStyleReact.wixStyleReactStrings.cover = "cover".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.cover]
+    inline def cover: typings.wixStyleReact.wixStyleReactStrings.cover = "cover".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.cover]
     
-    @scala.inline
-    def none: none_ = "none".asInstanceOf[none_]
+    inline def none: none_ = "none".asInstanceOf[none_]
     
-    @scala.inline
-    def tile: typings.wixStyleReact.wixStyleReactStrings.tile = "tile".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.tile]
+    inline def tile: typings.wixStyleReact.wixStyleReactStrings.tile = "tile".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.tile]
   }
   
   trait ImageProps
@@ -49,32 +45,24 @@ object imageMod extends Shortcut {
   }
   object ImageProps {
     
-    @scala.inline
-    def apply(): ImageProps = {
+    inline def apply(): ImageProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ImageProps]
     }
     
-    @scala.inline
-    implicit class ImagePropsMutableBuilder[Self <: ImageProps] (val x: Self) extends AnyVal {
+    extension [Self <: ImageProps](x: Self) {
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setFit(value: ImageFit): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
+      inline def setFit(value: ImageFit): Self = StObject.set(x, "fit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFitUndefined: Self = StObject.set(x, "fit", js.undefined)
+      inline def setFitUndefined: Self = StObject.set(x, "fit", js.undefined)
       
-      @scala.inline
-      def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     }
   }
   

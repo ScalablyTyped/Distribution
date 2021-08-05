@@ -18,28 +18,21 @@ trait DescribeApplicableIndividualAssessmentsResponse extends StObject {
 }
 object DescribeApplicableIndividualAssessmentsResponse {
   
-  @scala.inline
-  def apply(): DescribeApplicableIndividualAssessmentsResponse = {
+  inline def apply(): DescribeApplicableIndividualAssessmentsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeApplicableIndividualAssessmentsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeApplicableIndividualAssessmentsResponseMutableBuilder[Self <: DescribeApplicableIndividualAssessmentsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeApplicableIndividualAssessmentsResponse](x: Self) {
     
-    @scala.inline
-    def setIndividualAssessmentNames(value: IndividualAssessmentNameList): Self = StObject.set(x, "IndividualAssessmentNames", value.asInstanceOf[js.Any])
+    inline def setIndividualAssessmentNames(value: IndividualAssessmentNameList): Self = StObject.set(x, "IndividualAssessmentNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndividualAssessmentNamesUndefined: Self = StObject.set(x, "IndividualAssessmentNames", js.undefined)
+    inline def setIndividualAssessmentNamesUndefined: Self = StObject.set(x, "IndividualAssessmentNames", js.undefined)
     
-    @scala.inline
-    def setIndividualAssessmentNamesVarargs(value: String*): Self = StObject.set(x, "IndividualAssessmentNames", js.Array(value :_*))
+    inline def setIndividualAssessmentNamesVarargs(value: String*): Self = StObject.set(x, "IndividualAssessmentNames", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

@@ -17,13 +17,10 @@ object CaptionType {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def angled: `1` = 1.asInstanceOf[`1`]
+    inline def angled: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def connector: `2` = 2.asInstanceOf[`2`]
+    inline def connector: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def straight: `0` = 0.asInstanceOf[`0`]
+    inline def straight: `0` = 0.asInstanceOf[`0`]
   }
 }

@@ -14,14 +14,11 @@ object sharedMod {
   trait FileStatus extends StObject
   object FileStatus {
     
-    @scala.inline
-    def complete: typings.carbonComponentsReact.carbonComponentsReactStrings.complete = "complete".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.complete]
+    inline def complete: typings.carbonComponentsReact.carbonComponentsReactStrings.complete = "complete".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.complete]
     
-    @scala.inline
-    def edit: typings.carbonComponentsReact.carbonComponentsReactStrings.edit = "edit".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.edit]
+    inline def edit: typings.carbonComponentsReact.carbonComponentsReactStrings.edit = "edit".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.edit]
     
-    @scala.inline
-    def uploading: typings.carbonComponentsReact.carbonComponentsReactStrings.uploading = "uploading".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.uploading]
+    inline def uploading: typings.carbonComponentsReact.carbonComponentsReactStrings.uploading = "uploading".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.uploading]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -32,13 +29,10 @@ object sharedMod {
   trait FileUploaderSize extends StObject
   object FileUploaderSize {
     
-    @scala.inline
-    def default: typings.carbonComponentsReact.carbonComponentsReactStrings.default = "default".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.default]
+    inline def default: typings.carbonComponentsReact.carbonComponentsReactStrings.default = "default".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.default]
     
-    @scala.inline
-    def field: typings.carbonComponentsReact.carbonComponentsReactStrings.field = "field".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.field]
+    inline def field: typings.carbonComponentsReact.carbonComponentsReactStrings.field = "field".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.field]
     
-    @scala.inline
-    def small: typings.carbonComponentsReact.carbonComponentsReactStrings.small = "small".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.small]
+    inline def small: typings.carbonComponentsReact.carbonComponentsReactStrings.small = "small".asInstanceOf[typings.carbonComponentsReact.carbonComponentsReactStrings.small]
   }
 }

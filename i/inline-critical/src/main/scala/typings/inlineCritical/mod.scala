@@ -22,10 +22,8 @@ object mod {
     * // ignoring stylesheets matching regex
     * const inlined = inline(html, critical, {ignore: [/bootstrap/]})
     */
-  @scala.inline
-  def apply(html: String, styles: String): String = (^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(html: String, styles: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(html: String, styles: String): String = (^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any], styles.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(html: String, styles: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("inline-critical", JSImport.Namespace)
   @js.native
@@ -84,68 +82,48 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
+      inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
+      inline def setBasePathUndefined: Self = StObject.set(x, "basePath", js.undefined)
       
-      @scala.inline
-      def setExtract(value: Boolean): Self = StObject.set(x, "extract", value.asInstanceOf[js.Any])
+      inline def setExtract(value: Boolean): Self = StObject.set(x, "extract", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtractUndefined: Self = StObject.set(x, "extract", js.undefined)
+      inline def setExtractUndefined: Self = StObject.set(x, "extract", js.undefined)
       
-      @scala.inline
-      def setIgnore(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+      inline def setIgnore(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      @scala.inline
-      def setIgnoreVarargs(value: (String | RegExp)*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+      inline def setIgnoreVarargs(value: (String | RegExp)*): Self = StObject.set(x, "ignore", js.Array(value :_*))
       
-      @scala.inline
-      def setMinify(value: Boolean): Self = StObject.set(x, "minify", value.asInstanceOf[js.Any])
+      inline def setMinify(value: Boolean): Self = StObject.set(x, "minify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinifyUndefined: Self = StObject.set(x, "minify", js.undefined)
+      inline def setMinifyUndefined: Self = StObject.set(x, "minify", js.undefined)
       
-      @scala.inline
-      def setNoscript(value: body | head | `false`): Self = StObject.set(x, "noscript", value.asInstanceOf[js.Any])
+      inline def setNoscript(value: body | head | `false`): Self = StObject.set(x, "noscript", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoscriptUndefined: Self = StObject.set(x, "noscript", js.undefined)
+      inline def setNoscriptUndefined: Self = StObject.set(x, "noscript", js.undefined)
       
-      @scala.inline
-      def setPolyfill(value: Boolean): Self = StObject.set(x, "polyfill", value.asInstanceOf[js.Any])
+      inline def setPolyfill(value: Boolean): Self = StObject.set(x, "polyfill", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolyfillUndefined: Self = StObject.set(x, "polyfill", js.undefined)
+      inline def setPolyfillUndefined: Self = StObject.set(x, "polyfill", js.undefined)
       
-      @scala.inline
-      def setReplaceStylesheets(value: js.Array[String] | `false`): Self = StObject.set(x, "replaceStylesheets", value.asInstanceOf[js.Any])
+      inline def setReplaceStylesheets(value: js.Array[String] | `false`): Self = StObject.set(x, "replaceStylesheets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplaceStylesheetsUndefined: Self = StObject.set(x, "replaceStylesheets", js.undefined)
+      inline def setReplaceStylesheetsUndefined: Self = StObject.set(x, "replaceStylesheets", js.undefined)
       
-      @scala.inline
-      def setReplaceStylesheetsVarargs(value: String*): Self = StObject.set(x, "replaceStylesheets", js.Array(value :_*))
+      inline def setReplaceStylesheetsVarargs(value: String*): Self = StObject.set(x, "replaceStylesheets", js.Array(value :_*))
       
-      @scala.inline
-      def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+      inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
+      inline def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     }
   }
 }

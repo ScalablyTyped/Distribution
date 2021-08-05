@@ -14,17 +14,14 @@ trait NullLiteralTypeAnnotation_
 }
 object NullLiteralTypeAnnotation_ {
   
-  @scala.inline
-  def apply(end: Double, loc: SourceLocation, start: Double): NullLiteralTypeAnnotation_ = {
+  inline def apply(end: Double, loc: SourceLocation, start: Double): NullLiteralTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("NullLiteralTypeAnnotation")
     __obj.asInstanceOf[NullLiteralTypeAnnotation_]
   }
   
-  @scala.inline
-  implicit class NullLiteralTypeAnnotation_MutableBuilder[Self <: NullLiteralTypeAnnotation_] (val x: Self) extends AnyVal {
+  extension [Self <: NullLiteralTypeAnnotation_](x: Self) {
     
-    @scala.inline
-    def setType(value: NullLiteralTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NullLiteralTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -27,31 +27,23 @@ trait SchemaChannelAuditDetails extends StObject {
 }
 object SchemaChannelAuditDetails {
   
-  @scala.inline
-  def apply(): SchemaChannelAuditDetails = {
+  inline def apply(): SchemaChannelAuditDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaChannelAuditDetails]
   }
   
-  @scala.inline
-  implicit class SchemaChannelAuditDetailsMutableBuilder[Self <: SchemaChannelAuditDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaChannelAuditDetails](x: Self) {
     
-    @scala.inline
-    def setCommunityGuidelinesGoodStanding(value: Boolean): Self = StObject.set(x, "communityGuidelinesGoodStanding", value.asInstanceOf[js.Any])
+    inline def setCommunityGuidelinesGoodStanding(value: Boolean): Self = StObject.set(x, "communityGuidelinesGoodStanding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommunityGuidelinesGoodStandingUndefined: Self = StObject.set(x, "communityGuidelinesGoodStanding", js.undefined)
+    inline def setCommunityGuidelinesGoodStandingUndefined: Self = StObject.set(x, "communityGuidelinesGoodStanding", js.undefined)
     
-    @scala.inline
-    def setContentIdClaimsGoodStanding(value: Boolean): Self = StObject.set(x, "contentIdClaimsGoodStanding", value.asInstanceOf[js.Any])
+    inline def setContentIdClaimsGoodStanding(value: Boolean): Self = StObject.set(x, "contentIdClaimsGoodStanding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentIdClaimsGoodStandingUndefined: Self = StObject.set(x, "contentIdClaimsGoodStanding", js.undefined)
+    inline def setContentIdClaimsGoodStandingUndefined: Self = StObject.set(x, "contentIdClaimsGoodStanding", js.undefined)
     
-    @scala.inline
-    def setCopyrightStrikesGoodStanding(value: Boolean): Self = StObject.set(x, "copyrightStrikesGoodStanding", value.asInstanceOf[js.Any])
+    inline def setCopyrightStrikesGoodStanding(value: Boolean): Self = StObject.set(x, "copyrightStrikesGoodStanding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyrightStrikesGoodStandingUndefined: Self = StObject.set(x, "copyrightStrikesGoodStanding", js.undefined)
+    inline def setCopyrightStrikesGoodStandingUndefined: Self = StObject.set(x, "copyrightStrikesGoodStanding", js.undefined)
   }
 }

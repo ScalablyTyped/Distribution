@@ -23,43 +23,31 @@ trait LeaderboardScoreRank extends StObject {
 }
 object LeaderboardScoreRank {
   
-  @scala.inline
-  def apply(): LeaderboardScoreRank = {
+  inline def apply(): LeaderboardScoreRank = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LeaderboardScoreRank]
   }
   
-  @scala.inline
-  implicit class LeaderboardScoreRankMutableBuilder[Self <: LeaderboardScoreRank] (val x: Self) extends AnyVal {
+  extension [Self <: LeaderboardScoreRank](x: Self) {
     
-    @scala.inline
-    def setFormattedNumScores(value: String): Self = StObject.set(x, "formattedNumScores", value.asInstanceOf[js.Any])
+    inline def setFormattedNumScores(value: String): Self = StObject.set(x, "formattedNumScores", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattedNumScoresUndefined: Self = StObject.set(x, "formattedNumScores", js.undefined)
+    inline def setFormattedNumScoresUndefined: Self = StObject.set(x, "formattedNumScores", js.undefined)
     
-    @scala.inline
-    def setFormattedRank(value: String): Self = StObject.set(x, "formattedRank", value.asInstanceOf[js.Any])
+    inline def setFormattedRank(value: String): Self = StObject.set(x, "formattedRank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattedRankUndefined: Self = StObject.set(x, "formattedRank", js.undefined)
+    inline def setFormattedRankUndefined: Self = StObject.set(x, "formattedRank", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNumScores(value: String): Self = StObject.set(x, "numScores", value.asInstanceOf[js.Any])
+    inline def setNumScores(value: String): Self = StObject.set(x, "numScores", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumScoresUndefined: Self = StObject.set(x, "numScores", js.undefined)
+    inline def setNumScoresUndefined: Self = StObject.set(x, "numScores", js.undefined)
     
-    @scala.inline
-    def setRank(value: String): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+    inline def setRank(value: String): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
+    inline def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
   }
 }

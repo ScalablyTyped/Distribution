@@ -33,40 +33,29 @@ trait UpdateFindingsRequest extends StObject {
 }
 object UpdateFindingsRequest {
   
-  @scala.inline
-  def apply(analyzerArn: AnalyzerArn, status: FindingStatusUpdate): UpdateFindingsRequest = {
+  inline def apply(analyzerArn: AnalyzerArn, status: FindingStatusUpdate): UpdateFindingsRequest = {
     val __obj = js.Dynamic.literal(analyzerArn = analyzerArn.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateFindingsRequest]
   }
   
-  @scala.inline
-  implicit class UpdateFindingsRequestMutableBuilder[Self <: UpdateFindingsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateFindingsRequest](x: Self) {
     
-    @scala.inline
-    def setAnalyzerArn(value: AnalyzerArn): Self = StObject.set(x, "analyzerArn", value.asInstanceOf[js.Any])
+    inline def setAnalyzerArn(value: AnalyzerArn): Self = StObject.set(x, "analyzerArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "clientToken", js.undefined)
     
-    @scala.inline
-    def setIds(value: FindingIdList): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+    inline def setIds(value: FindingIdList): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
+    inline def setIdsUndefined: Self = StObject.set(x, "ids", js.undefined)
     
-    @scala.inline
-    def setIdsVarargs(value: FindingId*): Self = StObject.set(x, "ids", js.Array(value :_*))
+    inline def setIdsVarargs(value: FindingId*): Self = StObject.set(x, "ids", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceArn(value: ResourceArn): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: ResourceArn): Self = StObject.set(x, "resourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceArnUndefined: Self = StObject.set(x, "resourceArn", js.undefined)
+    inline def setResourceArnUndefined: Self = StObject.set(x, "resourceArn", js.undefined)
     
-    @scala.inline
-    def setStatus(value: FindingStatusUpdate): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: FindingStatusUpdate): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

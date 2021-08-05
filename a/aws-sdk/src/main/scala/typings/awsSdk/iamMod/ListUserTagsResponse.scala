@@ -23,31 +23,23 @@ trait ListUserTagsResponse extends StObject {
 }
 object ListUserTagsResponse {
   
-  @scala.inline
-  def apply(Tags: tagListType): ListUserTagsResponse = {
+  inline def apply(Tags: tagListType): ListUserTagsResponse = {
     val __obj = js.Dynamic.literal(Tags = Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListUserTagsResponse]
   }
   
-  @scala.inline
-  implicit class ListUserTagsResponseMutableBuilder[Self <: ListUserTagsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListUserTagsResponse](x: Self) {
     
-    @scala.inline
-    def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
+    inline def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
+    inline def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
     
-    @scala.inline
-    def setMarker(value: responseMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: responseMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setTags(value: tagListType): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: tagListType): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

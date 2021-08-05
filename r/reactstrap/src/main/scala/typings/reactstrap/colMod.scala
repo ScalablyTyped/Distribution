@@ -44,65 +44,46 @@ object colMod {
   }
   object ColProps {
     
-    @scala.inline
-    def apply(): ColProps = {
+    inline def apply(): ColProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ColProps]
     }
     
-    @scala.inline
-    implicit class ColPropsMutableBuilder[Self <: ColProps] (val x: Self) extends AnyVal {
+    extension [Self <: ColProps](x: Self) {
       
-      @scala.inline
-      def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
+      inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
+      inline def setCssModuleUndefined: Self = StObject.set(x, "cssModule", js.undefined)
       
-      @scala.inline
-      def setLg(value: ColumnProps): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
+      inline def setLg(value: ColumnProps): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLgUndefined: Self = StObject.set(x, "lg", js.undefined)
+      inline def setLgUndefined: Self = StObject.set(x, "lg", js.undefined)
       
-      @scala.inline
-      def setMd(value: ColumnProps): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
+      inline def setMd(value: ColumnProps): Self = StObject.set(x, "md", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMdUndefined: Self = StObject.set(x, "md", js.undefined)
+      inline def setMdUndefined: Self = StObject.set(x, "md", js.undefined)
       
-      @scala.inline
-      def setSm(value: ColumnProps): Self = StObject.set(x, "sm", value.asInstanceOf[js.Any])
+      inline def setSm(value: ColumnProps): Self = StObject.set(x, "sm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSmUndefined: Self = StObject.set(x, "sm", js.undefined)
+      inline def setSmUndefined: Self = StObject.set(x, "sm", js.undefined)
       
-      @scala.inline
-      def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      inline def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+      inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
       
-      @scala.inline
-      def setWidths(value: js.Array[String]): Self = StObject.set(x, "widths", value.asInstanceOf[js.Any])
+      inline def setWidths(value: js.Array[String]): Self = StObject.set(x, "widths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthsUndefined: Self = StObject.set(x, "widths", js.undefined)
+      inline def setWidthsUndefined: Self = StObject.set(x, "widths", js.undefined)
       
-      @scala.inline
-      def setWidthsVarargs(value: String*): Self = StObject.set(x, "widths", js.Array(value :_*))
+      inline def setWidthsVarargs(value: String*): Self = StObject.set(x, "widths", js.Array(value :_*))
       
-      @scala.inline
-      def setXl(value: ColumnProps): Self = StObject.set(x, "xl", value.asInstanceOf[js.Any])
+      inline def setXl(value: ColumnProps): Self = StObject.set(x, "xl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXlUndefined: Self = StObject.set(x, "xl", js.undefined)
+      inline def setXlUndefined: Self = StObject.set(x, "xl", js.undefined)
       
-      @scala.inline
-      def setXs(value: ColumnProps): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
+      inline def setXs(value: ColumnProps): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setXsUndefined: Self = StObject.set(x, "xs", js.undefined)
+      inline def setXsUndefined: Self = StObject.set(x, "xs", js.undefined)
     }
   }
   

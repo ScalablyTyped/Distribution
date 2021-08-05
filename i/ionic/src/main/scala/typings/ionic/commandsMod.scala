@@ -14,9 +14,9 @@ object commandsMod {
   class IonicNamespace protected () extends Namespace {
     def this(hasEnvProject: IonicEnvironmentDeps) = this()
     
-    var _env: IonicEnvironment = js.native
+    /* protected */ var _env: IonicEnvironment = js.native
     
-    var _project: js.UndefOr[IProject] = js.native
+    /* protected */ var _project: js.UndefOr[IProject] = js.native
     
     @JSName("env")
     def env_MIonicNamespace: IonicEnvironment = js.native
@@ -33,23 +33,18 @@ object commandsMod {
   }
   object IonicEnvironmentDeps {
     
-    @scala.inline
-    def apply(env: IonicEnvironment): IonicEnvironmentDeps = {
+    inline def apply(env: IonicEnvironment): IonicEnvironmentDeps = {
       val __obj = js.Dynamic.literal(env = env.asInstanceOf[js.Any])
       __obj.asInstanceOf[IonicEnvironmentDeps]
     }
     
-    @scala.inline
-    implicit class IonicEnvironmentDepsMutableBuilder[Self <: IonicEnvironmentDeps] (val x: Self) extends AnyVal {
+    extension [Self <: IonicEnvironmentDeps](x: Self) {
       
-      @scala.inline
-      def setEnv(value: IonicEnvironment): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: IonicEnvironment): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProject(value: IProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
+      inline def setProject(value: IProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
+      inline def setProjectUndefined: Self = StObject.set(x, "project", js.undefined)
     }
   }
 }

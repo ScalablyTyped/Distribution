@@ -11,17 +11,14 @@ trait TypeEventDestroyType extends StObject {
 }
 object TypeEventDestroyType {
   
-  @scala.inline
-  def apply(`type`: EventDestroyType): TypeEventDestroyType = {
+  inline def apply(`type`: EventDestroyType): TypeEventDestroyType = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypeEventDestroyType]
   }
   
-  @scala.inline
-  implicit class TypeEventDestroyTypeMutableBuilder[Self <: TypeEventDestroyType] (val x: Self) extends AnyVal {
+  extension [Self <: TypeEventDestroyType](x: Self) {
     
-    @scala.inline
-    def setType(value: EventDestroyType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: EventDestroyType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

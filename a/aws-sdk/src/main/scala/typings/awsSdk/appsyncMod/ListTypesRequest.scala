@@ -28,31 +28,23 @@ trait ListTypesRequest extends StObject {
 }
 object ListTypesRequest {
   
-  @scala.inline
-  def apply(apiId: String, format: TypeDefinitionFormat): ListTypesRequest = {
+  inline def apply(apiId: String, format: TypeDefinitionFormat): ListTypesRequest = {
     val __obj = js.Dynamic.literal(apiId = apiId.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListTypesRequest]
   }
   
-  @scala.inline
-  implicit class ListTypesRequestMutableBuilder[Self <: ListTypesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListTypesRequest](x: Self) {
     
-    @scala.inline
-    def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
+    inline def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: TypeDefinitionFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: TypeDefinitionFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

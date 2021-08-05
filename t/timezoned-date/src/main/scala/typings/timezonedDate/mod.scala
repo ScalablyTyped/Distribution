@@ -11,6 +11,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def makeConstructor(offsetInMinutes: Double): DateConstructor = ^.asInstanceOf[js.Dynamic].applyDynamic("makeConstructor")(offsetInMinutes.asInstanceOf[js.Any]).asInstanceOf[DateConstructor]
+  inline def makeConstructor(offsetInMinutes: Double): DateConstructor = ^.asInstanceOf[js.Dynamic].applyDynamic("makeConstructor")(offsetInMinutes.asInstanceOf[js.Any]).asInstanceOf[DateConstructor]
 }

@@ -172,17 +172,14 @@ object Provider {
   }
   object FileRemovedEventArgs {
     
-    @scala.inline
-    def apply(id: String): FileRemovedEventArgs = {
+    inline def apply(id: String): FileRemovedEventArgs = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileRemovedEventArgs]
     }
     
-    @scala.inline
-    implicit class FileRemovedEventArgsMutableBuilder[Self <: FileRemovedEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: FileRemovedEventArgs](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -248,17 +245,14 @@ object Provider {
   }
   object PickerClosingDeferral {
     
-    @scala.inline
-    def apply(complete: () => Unit): PickerClosingDeferral = {
+    inline def apply(complete: () => Unit): PickerClosingDeferral = {
       val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
       __obj.asInstanceOf[PickerClosingDeferral]
     }
     
-    @scala.inline
-    implicit class PickerClosingDeferralMutableBuilder[Self <: PickerClosingDeferral] (val x: Self) extends AnyVal {
+    extension [Self <: PickerClosingDeferral](x: Self) {
       
-      @scala.inline
-      def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+      inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     }
   }
   
@@ -273,20 +267,16 @@ object Provider {
   }
   object PickerClosingEventArgs {
     
-    @scala.inline
-    def apply(closingOperation: PickerClosingOperation, isCanceled: Boolean): PickerClosingEventArgs = {
+    inline def apply(closingOperation: PickerClosingOperation, isCanceled: Boolean): PickerClosingEventArgs = {
       val __obj = js.Dynamic.literal(closingOperation = closingOperation.asInstanceOf[js.Any], isCanceled = isCanceled.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickerClosingEventArgs]
     }
     
-    @scala.inline
-    implicit class PickerClosingEventArgsMutableBuilder[Self <: PickerClosingEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: PickerClosingEventArgs](x: Self) {
       
-      @scala.inline
-      def setClosingOperation(value: PickerClosingOperation): Self = StObject.set(x, "closingOperation", value.asInstanceOf[js.Any])
+      inline def setClosingOperation(value: PickerClosingOperation): Self = StObject.set(x, "closingOperation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCanceled(value: Boolean): Self = StObject.set(x, "isCanceled", value.asInstanceOf[js.Any])
+      inline def setIsCanceled(value: Boolean): Self = StObject.set(x, "isCanceled", value.asInstanceOf[js.Any])
     }
   }
   
@@ -304,20 +294,16 @@ object Provider {
   }
   object PickerClosingOperation {
     
-    @scala.inline
-    def apply(deadline: Date, getDeferral: () => PickerClosingDeferral): PickerClosingOperation = {
+    inline def apply(deadline: Date, getDeferral: () => PickerClosingDeferral): PickerClosingOperation = {
       val __obj = js.Dynamic.literal(deadline = deadline.asInstanceOf[js.Any], getDeferral = js.Any.fromFunction0(getDeferral))
       __obj.asInstanceOf[PickerClosingOperation]
     }
     
-    @scala.inline
-    implicit class PickerClosingOperationMutableBuilder[Self <: PickerClosingOperation] (val x: Self) extends AnyVal {
+    extension [Self <: PickerClosingOperation](x: Self) {
       
-      @scala.inline
-      def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
+      inline def setDeadline(value: Date): Self = StObject.set(x, "deadline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetDeferral(value: () => PickerClosingDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+      inline def setGetDeferral(value: () => PickerClosingDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
     }
   }
   
@@ -335,20 +321,16 @@ object Provider {
   }
   object TargetFileRequest {
     
-    @scala.inline
-    def apply(getDeferral: () => TargetFileRequestDeferral, targetFile: IStorageFile): TargetFileRequest = {
+    inline def apply(getDeferral: () => TargetFileRequestDeferral, targetFile: IStorageFile): TargetFileRequest = {
       val __obj = js.Dynamic.literal(getDeferral = js.Any.fromFunction0(getDeferral), targetFile = targetFile.asInstanceOf[js.Any])
       __obj.asInstanceOf[TargetFileRequest]
     }
     
-    @scala.inline
-    implicit class TargetFileRequestMutableBuilder[Self <: TargetFileRequest] (val x: Self) extends AnyVal {
+    extension [Self <: TargetFileRequest](x: Self) {
       
-      @scala.inline
-      def setGetDeferral(value: () => TargetFileRequestDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+      inline def setGetDeferral(value: () => TargetFileRequestDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTargetFile(value: IStorageFile): Self = StObject.set(x, "targetFile", value.asInstanceOf[js.Any])
+      inline def setTargetFile(value: IStorageFile): Self = StObject.set(x, "targetFile", value.asInstanceOf[js.Any])
     }
   }
   
@@ -360,17 +342,14 @@ object Provider {
   }
   object TargetFileRequestDeferral {
     
-    @scala.inline
-    def apply(complete: () => Unit): TargetFileRequestDeferral = {
+    inline def apply(complete: () => Unit): TargetFileRequestDeferral = {
       val __obj = js.Dynamic.literal(complete = js.Any.fromFunction0(complete))
       __obj.asInstanceOf[TargetFileRequestDeferral]
     }
     
-    @scala.inline
-    implicit class TargetFileRequestDeferralMutableBuilder[Self <: TargetFileRequestDeferral] (val x: Self) extends AnyVal {
+    extension [Self <: TargetFileRequestDeferral](x: Self) {
       
-      @scala.inline
-      def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+      inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     }
   }
   
@@ -382,17 +361,14 @@ object Provider {
   }
   object TargetFileRequestedEventArgs {
     
-    @scala.inline
-    def apply(request: TargetFileRequest): TargetFileRequestedEventArgs = {
+    inline def apply(request: TargetFileRequest): TargetFileRequestedEventArgs = {
       val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
       __obj.asInstanceOf[TargetFileRequestedEventArgs]
     }
     
-    @scala.inline
-    implicit class TargetFileRequestedEventArgsMutableBuilder[Self <: TargetFileRequestedEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: TargetFileRequestedEventArgs](x: Self) {
       
-      @scala.inline
-      def setRequest(value: TargetFileRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: TargetFileRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     }
   }
 }

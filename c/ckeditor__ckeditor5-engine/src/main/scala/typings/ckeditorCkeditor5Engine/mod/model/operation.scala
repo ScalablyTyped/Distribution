@@ -75,11 +75,9 @@ object operation {
   @js.native
   class TransformationContext () extends StObject
   
-  @scala.inline
-  def transform(a: Operation, b: Operation, context: TransformationContext): js.Array[Operation] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[Operation]]
+  inline def transform(a: Operation, b: Operation, context: TransformationContext): js.Array[Operation] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[Operation]]
   
-  @scala.inline
-  def transformSets(
+  inline def transformSets(
     operationsA: js.Array[Operation],
     operationsB: js.Array[Operation],
     options: typings.ckeditorCkeditor5Engine.anon.Document

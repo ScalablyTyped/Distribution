@@ -18,28 +18,21 @@ trait DescribePrefixListsResult extends StObject {
 }
 object DescribePrefixListsResult {
   
-  @scala.inline
-  def apply(): DescribePrefixListsResult = {
+  inline def apply(): DescribePrefixListsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribePrefixListsResult]
   }
   
-  @scala.inline
-  implicit class DescribePrefixListsResultMutableBuilder[Self <: DescribePrefixListsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePrefixListsResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPrefixLists(value: PrefixListSet): Self = StObject.set(x, "PrefixLists", value.asInstanceOf[js.Any])
+    inline def setPrefixLists(value: PrefixListSet): Self = StObject.set(x, "PrefixLists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixListsUndefined: Self = StObject.set(x, "PrefixLists", js.undefined)
+    inline def setPrefixListsUndefined: Self = StObject.set(x, "PrefixLists", js.undefined)
     
-    @scala.inline
-    def setPrefixListsVarargs(value: PrefixList*): Self = StObject.set(x, "PrefixLists", js.Array(value :_*))
+    inline def setPrefixListsVarargs(value: PrefixList*): Self = StObject.set(x, "PrefixLists", js.Array(value :_*))
   }
 }

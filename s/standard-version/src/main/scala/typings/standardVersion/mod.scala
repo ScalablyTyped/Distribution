@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(options: Options): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def apply(options: Options): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   @JSImport("standard-version", JSImport.Namespace)
   @js.native
@@ -174,134 +173,92 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBumpFiles(value: js.Array[String]): Self = StObject.set(x, "bumpFiles", value.asInstanceOf[js.Any])
+      inline def setBumpFiles(value: js.Array[String]): Self = StObject.set(x, "bumpFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBumpFilesUndefined: Self = StObject.set(x, "bumpFiles", js.undefined)
+      inline def setBumpFilesUndefined: Self = StObject.set(x, "bumpFiles", js.undefined)
       
-      @scala.inline
-      def setBumpFilesVarargs(value: String*): Self = StObject.set(x, "bumpFiles", js.Array(value :_*))
+      inline def setBumpFilesVarargs(value: String*): Self = StObject.set(x, "bumpFiles", js.Array(value :_*))
       
-      @scala.inline
-      def setChangelogHeader(value: String): Self = StObject.set(x, "changelogHeader", value.asInstanceOf[js.Any])
+      inline def setChangelogHeader(value: String): Self = StObject.set(x, "changelogHeader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangelogHeaderUndefined: Self = StObject.set(x, "changelogHeader", js.undefined)
+      inline def setChangelogHeaderUndefined: Self = StObject.set(x, "changelogHeader", js.undefined)
       
-      @scala.inline
-      def setCommitAll(value: Boolean): Self = StObject.set(x, "commitAll", value.asInstanceOf[js.Any])
+      inline def setCommitAll(value: Boolean): Self = StObject.set(x, "commitAll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommitAllUndefined: Self = StObject.set(x, "commitAll", js.undefined)
+      inline def setCommitAllUndefined: Self = StObject.set(x, "commitAll", js.undefined)
       
-      @scala.inline
-      def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
+      inline def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
+      inline def setDryRunUndefined: Self = StObject.set(x, "dryRun", js.undefined)
       
-      @scala.inline
-      def setFirstRelease(value: Boolean): Self = StObject.set(x, "firstRelease", value.asInstanceOf[js.Any])
+      inline def setFirstRelease(value: Boolean): Self = StObject.set(x, "firstRelease", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFirstReleaseUndefined: Self = StObject.set(x, "firstRelease", js.undefined)
+      inline def setFirstReleaseUndefined: Self = StObject.set(x, "firstRelease", js.undefined)
       
-      @scala.inline
-      def setGitTagFallback(value: Boolean): Self = StObject.set(x, "gitTagFallback", value.asInstanceOf[js.Any])
+      inline def setGitTagFallback(value: Boolean): Self = StObject.set(x, "gitTagFallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGitTagFallbackUndefined: Self = StObject.set(x, "gitTagFallback", js.undefined)
+      inline def setGitTagFallbackUndefined: Self = StObject.set(x, "gitTagFallback", js.undefined)
       
-      @scala.inline
-      def setInfile(value: String | Buffer | URL | Double): Self = StObject.set(x, "infile", value.asInstanceOf[js.Any])
+      inline def setInfile(value: String | Buffer | URL | Double): Self = StObject.set(x, "infile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfileUndefined: Self = StObject.set(x, "infile", js.undefined)
+      inline def setInfileUndefined: Self = StObject.set(x, "infile", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setNoVerify(value: Boolean): Self = StObject.set(x, "noVerify", value.asInstanceOf[js.Any])
+      inline def setNoVerify(value: Boolean): Self = StObject.set(x, "noVerify", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoVerifyUndefined: Self = StObject.set(x, "noVerify", js.undefined)
+      inline def setNoVerifyUndefined: Self = StObject.set(x, "noVerify", js.undefined)
       
-      @scala.inline
-      def setPackageFiles(value: js.Array[String]): Self = StObject.set(x, "packageFiles", value.asInstanceOf[js.Any])
+      inline def setPackageFiles(value: js.Array[String]): Self = StObject.set(x, "packageFiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackageFilesUndefined: Self = StObject.set(x, "packageFiles", js.undefined)
+      inline def setPackageFilesUndefined: Self = StObject.set(x, "packageFiles", js.undefined)
       
-      @scala.inline
-      def setPackageFilesVarargs(value: String*): Self = StObject.set(x, "packageFiles", js.Array(value :_*))
+      inline def setPackageFilesVarargs(value: String*): Self = StObject.set(x, "packageFiles", js.Array(value :_*))
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setPrerelease(value: String): Self = StObject.set(x, "prerelease", value.asInstanceOf[js.Any])
+      inline def setPrerelease(value: String): Self = StObject.set(x, "prerelease", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrereleaseUndefined: Self = StObject.set(x, "prerelease", js.undefined)
+      inline def setPrereleaseUndefined: Self = StObject.set(x, "prerelease", js.undefined)
       
-      @scala.inline
-      def setPreset(value: String): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
+      inline def setPreset(value: String): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
+      inline def setPresetUndefined: Self = StObject.set(x, "preset", js.undefined)
       
-      @scala.inline
-      def setReleaseAs(value: String): Self = StObject.set(x, "releaseAs", value.asInstanceOf[js.Any])
+      inline def setReleaseAs(value: String): Self = StObject.set(x, "releaseAs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReleaseAsUndefined: Self = StObject.set(x, "releaseAs", js.undefined)
+      inline def setReleaseAsUndefined: Self = StObject.set(x, "releaseAs", js.undefined)
       
-      @scala.inline
-      def setScripts(value: Scripts): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
+      inline def setScripts(value: Scripts): Self = StObject.set(x, "scripts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
+      inline def setScriptsUndefined: Self = StObject.set(x, "scripts", js.undefined)
       
-      @scala.inline
-      def setSign(value: Boolean): Self = StObject.set(x, "sign", value.asInstanceOf[js.Any])
+      inline def setSign(value: Boolean): Self = StObject.set(x, "sign", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignUndefined: Self = StObject.set(x, "sign", js.undefined)
+      inline def setSignUndefined: Self = StObject.set(x, "sign", js.undefined)
       
-      @scala.inline
-      def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+      inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+      inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
       
-      @scala.inline
-      def setSkip(value: Skip): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+      inline def setSkip(value: Skip): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+      inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
       
-      @scala.inline
-      def setTagPrefix(value: String): Self = StObject.set(x, "tagPrefix", value.asInstanceOf[js.Any])
+      inline def setTagPrefix(value: String): Self = StObject.set(x, "tagPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagPrefixUndefined: Self = StObject.set(x, "tagPrefix", js.undefined)
+      inline def setTagPrefixUndefined: Self = StObject.set(x, "tagPrefix", js.undefined)
     }
     
     trait Scripts extends StObject {
@@ -357,68 +314,48 @@ object mod {
     }
     object Scripts {
       
-      @scala.inline
-      def apply(): Scripts = {
+      inline def apply(): Scripts = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Scripts]
       }
       
-      @scala.inline
-      implicit class ScriptsMutableBuilder[Self <: Scripts] (val x: Self) extends AnyVal {
+      extension [Self <: Scripts](x: Self) {
         
-        @scala.inline
-        def setPostbump(value: String): Self = StObject.set(x, "postbump", value.asInstanceOf[js.Any])
+        inline def setPostbump(value: String): Self = StObject.set(x, "postbump", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPostbumpUndefined: Self = StObject.set(x, "postbump", js.undefined)
+        inline def setPostbumpUndefined: Self = StObject.set(x, "postbump", js.undefined)
         
-        @scala.inline
-        def setPostchangelog(value: String): Self = StObject.set(x, "postchangelog", value.asInstanceOf[js.Any])
+        inline def setPostchangelog(value: String): Self = StObject.set(x, "postchangelog", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPostchangelogUndefined: Self = StObject.set(x, "postchangelog", js.undefined)
+        inline def setPostchangelogUndefined: Self = StObject.set(x, "postchangelog", js.undefined)
         
-        @scala.inline
-        def setPostcommit(value: String): Self = StObject.set(x, "postcommit", value.asInstanceOf[js.Any])
+        inline def setPostcommit(value: String): Self = StObject.set(x, "postcommit", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPostcommitUndefined: Self = StObject.set(x, "postcommit", js.undefined)
+        inline def setPostcommitUndefined: Self = StObject.set(x, "postcommit", js.undefined)
         
-        @scala.inline
-        def setPosttag(value: String): Self = StObject.set(x, "posttag", value.asInstanceOf[js.Any])
+        inline def setPosttag(value: String): Self = StObject.set(x, "posttag", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPosttagUndefined: Self = StObject.set(x, "posttag", js.undefined)
+        inline def setPosttagUndefined: Self = StObject.set(x, "posttag", js.undefined)
         
-        @scala.inline
-        def setPrebump(value: String): Self = StObject.set(x, "prebump", value.asInstanceOf[js.Any])
+        inline def setPrebump(value: String): Self = StObject.set(x, "prebump", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrebumpUndefined: Self = StObject.set(x, "prebump", js.undefined)
+        inline def setPrebumpUndefined: Self = StObject.set(x, "prebump", js.undefined)
         
-        @scala.inline
-        def setPrechangelog(value: String): Self = StObject.set(x, "prechangelog", value.asInstanceOf[js.Any])
+        inline def setPrechangelog(value: String): Self = StObject.set(x, "prechangelog", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrechangelogUndefined: Self = StObject.set(x, "prechangelog", js.undefined)
+        inline def setPrechangelogUndefined: Self = StObject.set(x, "prechangelog", js.undefined)
         
-        @scala.inline
-        def setPrecommit(value: String): Self = StObject.set(x, "precommit", value.asInstanceOf[js.Any])
+        inline def setPrecommit(value: String): Self = StObject.set(x, "precommit", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrecommitUndefined: Self = StObject.set(x, "precommit", js.undefined)
+        inline def setPrecommitUndefined: Self = StObject.set(x, "precommit", js.undefined)
         
-        @scala.inline
-        def setPrerelease(value: String): Self = StObject.set(x, "prerelease", value.asInstanceOf[js.Any])
+        inline def setPrerelease(value: String): Self = StObject.set(x, "prerelease", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrereleaseUndefined: Self = StObject.set(x, "prerelease", js.undefined)
+        inline def setPrereleaseUndefined: Self = StObject.set(x, "prerelease", js.undefined)
         
-        @scala.inline
-        def setPretag(value: String): Self = StObject.set(x, "pretag", value.asInstanceOf[js.Any])
+        inline def setPretag(value: String): Self = StObject.set(x, "pretag", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPretagUndefined: Self = StObject.set(x, "pretag", js.undefined)
+        inline def setPretagUndefined: Self = StObject.set(x, "pretag", js.undefined)
       }
     }
     
@@ -435,38 +372,28 @@ object mod {
     }
     object Skip {
       
-      @scala.inline
-      def apply(): Skip = {
+      inline def apply(): Skip = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Skip]
       }
       
-      @scala.inline
-      implicit class SkipMutableBuilder[Self <: Skip] (val x: Self) extends AnyVal {
+      extension [Self <: Skip](x: Self) {
         
-        @scala.inline
-        def setBump(value: Boolean): Self = StObject.set(x, "bump", value.asInstanceOf[js.Any])
+        inline def setBump(value: Boolean): Self = StObject.set(x, "bump", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBumpUndefined: Self = StObject.set(x, "bump", js.undefined)
+        inline def setBumpUndefined: Self = StObject.set(x, "bump", js.undefined)
         
-        @scala.inline
-        def setChangelog(value: Boolean): Self = StObject.set(x, "changelog", value.asInstanceOf[js.Any])
+        inline def setChangelog(value: Boolean): Self = StObject.set(x, "changelog", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChangelogUndefined: Self = StObject.set(x, "changelog", js.undefined)
+        inline def setChangelogUndefined: Self = StObject.set(x, "changelog", js.undefined)
         
-        @scala.inline
-        def setCommit(value: Boolean): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+        inline def setCommit(value: Boolean): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCommitUndefined: Self = StObject.set(x, "commit", js.undefined)
+        inline def setCommitUndefined: Self = StObject.set(x, "commit", js.undefined)
         
-        @scala.inline
-        def setTag(value: Boolean): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+        inline def setTag(value: Boolean): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
+        inline def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
       }
     }
   }

@@ -13,19 +13,15 @@ trait IdentityArgs extends StObject {
 }
 object IdentityArgs {
   
-  @scala.inline
-  def apply(): IdentityArgs = {
+  inline def apply(): IdentityArgs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IdentityArgs]
   }
   
-  @scala.inline
-  implicit class IdentityArgsMutableBuilder[Self <: IdentityArgs] (val x: Self) extends AnyVal {
+  extension [Self <: IdentityArgs](x: Self) {
     
-    @scala.inline
-    def setGain(value: Double): Self = StObject.set(x, "gain", value.asInstanceOf[js.Any])
+    inline def setGain(value: Double): Self = StObject.set(x, "gain", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGainUndefined: Self = StObject.set(x, "gain", js.undefined)
+    inline def setGainUndefined: Self = StObject.set(x, "gain", js.undefined)
   }
 }

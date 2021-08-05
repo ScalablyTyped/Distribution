@@ -55,8 +55,7 @@ trait SmsBroadcastMessage extends StObject {
 }
 object SmsBroadcastMessage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     body: String,
     broadcastType: SmsBroadcastType,
     cellularClass: CellularClass,
@@ -77,52 +76,36 @@ object SmsBroadcastMessage {
     __obj.asInstanceOf[SmsBroadcastMessage]
   }
   
-  @scala.inline
-  implicit class SmsBroadcastMessageMutableBuilder[Self <: SmsBroadcastMessage] (val x: Self) extends AnyVal {
+  extension [Self <: SmsBroadcastMessage](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBroadcastType(value: SmsBroadcastType): Self = StObject.set(x, "broadcastType", value.asInstanceOf[js.Any])
+    inline def setBroadcastType(value: SmsBroadcastType): Self = StObject.set(x, "broadcastType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellularClass(value: CellularClass): Self = StObject.set(x, "cellularClass", value.asInstanceOf[js.Any])
+    inline def setCellularClass(value: CellularClass): Self = StObject.set(x, "cellularClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannel(value: Double): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: Double): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeographicalScope(value: SmsGeographicalScope): Self = StObject.set(x, "geographicalScope", value.asInstanceOf[js.Any])
+    inline def setGeographicalScope(value: SmsGeographicalScope): Self = StObject.set(x, "geographicalScope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEmergencyAlert(value: Boolean): Self = StObject.set(x, "isEmergencyAlert", value.asInstanceOf[js.Any])
+    inline def setIsEmergencyAlert(value: Boolean): Self = StObject.set(x, "isEmergencyAlert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsUserPopupRequested(value: Boolean): Self = StObject.set(x, "isUserPopupRequested", value.asInstanceOf[js.Any])
+    inline def setIsUserPopupRequested(value: Boolean): Self = StObject.set(x, "isUserPopupRequested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageClass(value: SmsMessageClass): Self = StObject.set(x, "messageClass", value.asInstanceOf[js.Any])
+    inline def setMessageClass(value: SmsMessageClass): Self = StObject.set(x, "messageClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageCode(value: Double): Self = StObject.set(x, "messageCode", value.asInstanceOf[js.Any])
+    inline def setMessageCode(value: Double): Self = StObject.set(x, "messageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageType(value: SmsMessageType): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
+    inline def setMessageType(value: SmsMessageType): Self = StObject.set(x, "messageType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSimIccId(value: String): Self = StObject.set(x, "simIccId", value.asInstanceOf[js.Any])
+    inline def setSimIccId(value: String): Self = StObject.set(x, "simIccId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateNumber(value: Double): Self = StObject.set(x, "updateNumber", value.asInstanceOf[js.Any])
+    inline def setUpdateNumber(value: Double): Self = StObject.set(x, "updateNumber", value.asInstanceOf[js.Any])
   }
 }

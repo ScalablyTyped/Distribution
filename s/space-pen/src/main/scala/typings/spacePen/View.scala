@@ -25,8 +25,7 @@ trait View extends StObject {
 }
 object View {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bindEventHandlers: View => Unit,
     buildHtml: js.Any => js.Any,
     command: (js.Any, js.Any, js.Any, js.Any) => js.Any,
@@ -40,31 +39,22 @@ object View {
     __obj.asInstanceOf[View]
   }
   
-  @scala.inline
-  implicit class ViewMutableBuilder[Self <: View] (val x: Self) extends AnyVal {
+  extension [Self <: View](x: Self) {
     
-    @scala.inline
-    def setBindEventHandlers(value: View => Unit): Self = StObject.set(x, "bindEventHandlers", js.Any.fromFunction1(value))
+    inline def setBindEventHandlers(value: View => Unit): Self = StObject.set(x, "bindEventHandlers", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBuildHtml(value: js.Any => js.Any): Self = StObject.set(x, "buildHtml", js.Any.fromFunction1(value))
+    inline def setBuildHtml(value: js.Any => js.Any): Self = StObject.set(x, "buildHtml", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCommand(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "command", js.Any.fromFunction4(value))
+    inline def setCommand(value: (js.Any, js.Any, js.Any, js.Any) => js.Any): Self = StObject.set(x, "command", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setEnd(value: () => js.Any): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+    inline def setEnd(value: () => js.Any): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInitialize(value: (View, js.Any) => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction2(value))
+    inline def setInitialize(value: (View, js.Any) => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPreempt(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "preempt", js.Any.fromFunction2(value))
+    inline def setPreempt(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "preempt", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPushStack(value: js.Any => js.Any): Self = StObject.set(x, "pushStack", js.Any.fromFunction1(value))
+    inline def setPushStack(value: js.Any => js.Any): Self = StObject.set(x, "pushStack", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWireOutlets(value: View => Unit): Self = StObject.set(x, "wireOutlets", js.Any.fromFunction1(value))
+    inline def setWireOutlets(value: View => Unit): Self = StObject.set(x, "wireOutlets", js.Any.fromFunction1(value))
   }
 }

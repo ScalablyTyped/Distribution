@@ -37,20 +37,16 @@ object ui {
   }
   object Container {
     
-    @scala.inline
-    def apply(add: js.Any => Collection, items: () => Collection): Container = {
+    inline def apply(add: js.Any => Collection, items: () => Collection): Container = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction1(add), items = js.Any.fromFunction0(items))
       __obj.asInstanceOf[Container]
     }
     
-    @scala.inline
-    implicit class ContainerMutableBuilder[Self <: Container] (val x: Self) extends AnyVal {
+    extension [Self <: Container](x: Self) {
       
-      @scala.inline
-      def setAdd(value: js.Any => Collection): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+      inline def setAdd(value: js.Any => Collection): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setItems(value: () => Collection): Self = StObject.set(x, "items", js.Any.fromFunction0(value))
+      inline def setItems(value: () => Collection): Self = StObject.set(x, "items", js.Any.fromFunction0(value))
     }
   }
   
@@ -60,17 +56,14 @@ object ui {
   }
   object ControlSettings {
     
-    @scala.inline
-    def apply(menu: Menu): ControlSettings = {
+    inline def apply(menu: Menu): ControlSettings = {
       val __obj = js.Dynamic.literal(menu = menu.asInstanceOf[js.Any])
       __obj.asInstanceOf[ControlSettings]
     }
     
-    @scala.inline
-    implicit class ControlSettingsMutableBuilder[Self <: ControlSettings] (val x: Self) extends AnyVal {
+    extension [Self <: ControlSettings](x: Self) {
       
-      @scala.inline
-      def setMenu(value: Menu): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+      inline def setMenu(value: Menu): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
     }
   }
   
@@ -80,17 +73,14 @@ object ui {
   }
   object Factory {
     
-    @scala.inline
-    def apply(create: js.Any => Control): Factory = {
+    inline def apply(create: js.Any => Control): Factory = {
       val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
       __obj.asInstanceOf[Factory]
     }
     
-    @scala.inline
-    implicit class FactoryMutableBuilder[Self <: Factory] (val x: Self) extends AnyVal {
+    extension [Self <: Factory](x: Self) {
       
-      @scala.inline
-      def setCreate(value: js.Any => Control): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      inline def setCreate(value: js.Any => Control): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     }
   }
   
@@ -110,17 +100,14 @@ object ui {
   }
   object Moveable {
     
-    @scala.inline
-    def apply(moveRel: (Node, String) => Control): Moveable = {
+    inline def apply(moveRel: (Node, String) => Control): Moveable = {
       val __obj = js.Dynamic.literal(moveRel = js.Any.fromFunction2(moveRel))
       __obj.asInstanceOf[Moveable]
     }
     
-    @scala.inline
-    implicit class MoveableMutableBuilder[Self <: Moveable] (val x: Self) extends AnyVal {
+    extension [Self <: Moveable](x: Self) {
       
-      @scala.inline
-      def setMoveRel(value: (Node, String) => Control): Self = StObject.set(x, "moveRel", js.Any.fromFunction2(value))
+      inline def setMoveRel(value: (Node, String) => Control): Self = StObject.set(x, "moveRel", js.Any.fromFunction2(value))
     }
   }
 }

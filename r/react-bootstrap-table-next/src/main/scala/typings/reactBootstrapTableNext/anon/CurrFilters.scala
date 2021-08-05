@@ -10,16 +10,13 @@ trait CurrFilters extends StObject {
 }
 object CurrFilters {
   
-  @scala.inline
-  def apply(currFilters: js.Any): CurrFilters = {
+  inline def apply(currFilters: js.Any): CurrFilters = {
     val __obj = js.Dynamic.literal(currFilters = currFilters.asInstanceOf[js.Any])
     __obj.asInstanceOf[CurrFilters]
   }
   
-  @scala.inline
-  implicit class CurrFiltersMutableBuilder[Self <: CurrFilters] (val x: Self) extends AnyVal {
+  extension [Self <: CurrFilters](x: Self) {
     
-    @scala.inline
-    def setCurrFilters(value: js.Any): Self = StObject.set(x, "currFilters", value.asInstanceOf[js.Any])
+    inline def setCurrFilters(value: js.Any): Self = StObject.set(x, "currFilters", value.asInstanceOf[js.Any])
   }
 }

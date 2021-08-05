@@ -35,8 +35,7 @@ trait XCipherContextSupplier
 }
 object XCipherContextSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getCipherContext: (Double, SeqEquiv[Double], SeqEquiv[Double], Boolean, SeqEquiv[NamedValue]) => XCipherContext,
     queryInterface: `type` => js.Any,
@@ -46,11 +45,9 @@ object XCipherContextSupplier {
     __obj.asInstanceOf[XCipherContextSupplier]
   }
   
-  @scala.inline
-  implicit class XCipherContextSupplierMutableBuilder[Self <: XCipherContextSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XCipherContextSupplier](x: Self) {
     
-    @scala.inline
-    def setGetCipherContext(
+    inline def setGetCipherContext(
       value: (Double, SeqEquiv[Double], SeqEquiv[Double], Boolean, SeqEquiv[NamedValue]) => XCipherContext
     ): Self = StObject.set(x, "getCipherContext", js.Any.fromFunction5(value))
   }

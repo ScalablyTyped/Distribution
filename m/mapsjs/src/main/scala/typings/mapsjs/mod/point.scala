@@ -72,9 +72,7 @@ object point {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def distance(x1: Double, y1: Double, x2: Double, y2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def distance(x1: Double, y1: Double, x2: Double, y2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distance")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def midpoint(x1: Double, y1: Double, x2: Double, y2: Double): point = (^.asInstanceOf[js.Dynamic].applyDynamic("midpoint")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[point]
+  inline def midpoint(x1: Double, y1: Double, x2: Double, y2: Double): point = (^.asInstanceOf[js.Dynamic].applyDynamic("midpoint")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[point]
 }

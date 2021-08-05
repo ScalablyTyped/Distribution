@@ -20,8 +20,7 @@ object mod {
     * - `event`: the string event name that fired
     * - `args`: an array of the arguments that were emitted on the event
     */
-  @scala.inline
-  def apply[TEmitter /* <: EventEmitter */](eventSpec: js.Array[Array[TEmitter | String]], listener: Listener[TEmitter]): Thunk[TEmitter] = (^.asInstanceOf[js.Dynamic].apply(eventSpec.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Thunk[TEmitter]]
+  inline def apply[TEmitter /* <: EventEmitter */](eventSpec: js.Array[Array[TEmitter | String]], listener: Listener[TEmitter]): Thunk[TEmitter] = (^.asInstanceOf[js.Dynamic].apply(eventSpec.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Thunk[TEmitter]]
   
   @JSImport("ee-first", JSImport.Namespace)
   @js.native

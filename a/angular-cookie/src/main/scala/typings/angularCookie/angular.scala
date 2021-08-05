@@ -47,56 +47,40 @@ object angular {
     }
     object CookieOptions {
       
-      @scala.inline
-      def apply(): CookieOptions = {
+      inline def apply(): CookieOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[CookieOptions]
       }
       
-      @scala.inline
-      implicit class CookieOptionsMutableBuilder[Self <: CookieOptions] (val x: Self) extends AnyVal {
+      extension [Self <: CookieOptions](x: Self) {
         
-        @scala.inline
-        def setDecode(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
+        inline def setDecode(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setDecodeUndefined: Self = StObject.set(x, "decode", js.undefined)
+        inline def setDecodeUndefined: Self = StObject.set(x, "decode", js.undefined)
         
-        @scala.inline
-        def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+        inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+        inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
         
-        @scala.inline
-        def setEncode(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+        inline def setEncode(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
+        inline def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
         
-        @scala.inline
-        def setExpirationUnit(value: String): Self = StObject.set(x, "expirationUnit", value.asInstanceOf[js.Any])
+        inline def setExpirationUnit(value: String): Self = StObject.set(x, "expirationUnit", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExpirationUnitUndefined: Self = StObject.set(x, "expirationUnit", js.undefined)
+        inline def setExpirationUnitUndefined: Self = StObject.set(x, "expirationUnit", js.undefined)
         
-        @scala.inline
-        def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+        inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+        inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
         
-        @scala.inline
-        def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+        inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
         
-        @scala.inline
-        def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+        inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
+        inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
       }
     }
     

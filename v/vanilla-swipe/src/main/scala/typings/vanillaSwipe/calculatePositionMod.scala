@@ -12,8 +12,7 @@ object calculatePositionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def calculatePosition(state: State, nextPos: nextPosition): EventData = (^.asInstanceOf[js.Dynamic].applyDynamic("calculatePosition")(state.asInstanceOf[js.Any], nextPos.asInstanceOf[js.Any])).asInstanceOf[EventData]
+  inline def calculatePosition(state: State, nextPos: nextPosition): EventData = (^.asInstanceOf[js.Dynamic].applyDynamic("calculatePosition")(state.asInstanceOf[js.Any], nextPos.asInstanceOf[js.Any])).asInstanceOf[EventData]
   
   trait nextPosition extends StObject {
     
@@ -23,20 +22,16 @@ object calculatePositionMod {
   }
   object nextPosition {
     
-    @scala.inline
-    def apply(x: Double, y: Double): nextPosition = {
+    inline def apply(x: Double, y: Double): nextPosition = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[nextPosition]
     }
     
-    @scala.inline
-    implicit class nextPositionMutableBuilder[Self <: nextPosition] (val x: Self) extends AnyVal {
+    extension [Self <: nextPosition](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

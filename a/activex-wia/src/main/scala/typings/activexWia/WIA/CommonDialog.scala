@@ -245,6 +245,6 @@ trait CommonDialog extends StObject {
   def ShowTransfer(Item: Item, FormatID: String, CancelError: Boolean): ImageFile = js.native
   def ShowTransfer(Item: Item, FormatID: Unit, CancelError: Boolean): ImageFile = js.native
   
-  @JSName("WIA.CommonDialog_typekey")
+  /* private */ @JSName("WIA.CommonDialog_typekey")
   var WIADotCommonDialog_typekey: CommonDialog = js.native
 }

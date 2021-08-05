@@ -23,31 +23,23 @@ trait NotificationConfiguration extends StObject {
 }
 object NotificationConfiguration {
   
-  @scala.inline
-  def apply(): NotificationConfiguration = {
+  inline def apply(): NotificationConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NotificationConfiguration]
   }
   
-  @scala.inline
-  implicit class NotificationConfigurationMutableBuilder[Self <: NotificationConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationConfiguration](x: Self) {
     
-    @scala.inline
-    def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoScalingGroupNameUndefined: Self = StObject.set(x, "AutoScalingGroupName", js.undefined)
+    inline def setAutoScalingGroupNameUndefined: Self = StObject.set(x, "AutoScalingGroupName", js.undefined)
     
-    @scala.inline
-    def setNotificationType(value: XmlStringMaxLen255): Self = StObject.set(x, "NotificationType", value.asInstanceOf[js.Any])
+    inline def setNotificationType(value: XmlStringMaxLen255): Self = StObject.set(x, "NotificationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationTypeUndefined: Self = StObject.set(x, "NotificationType", js.undefined)
+    inline def setNotificationTypeUndefined: Self = StObject.set(x, "NotificationType", js.undefined)
     
-    @scala.inline
-    def setTopicARN(value: ResourceName): Self = StObject.set(x, "TopicARN", value.asInstanceOf[js.Any])
+    inline def setTopicARN(value: ResourceName): Self = StObject.set(x, "TopicARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicARNUndefined: Self = StObject.set(x, "TopicARN", js.undefined)
+    inline def setTopicARNUndefined: Self = StObject.set(x, "TopicARN", js.undefined)
   }
 }

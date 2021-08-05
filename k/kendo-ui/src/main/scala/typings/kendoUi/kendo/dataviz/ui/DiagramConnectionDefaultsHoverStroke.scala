@@ -10,19 +10,15 @@ trait DiagramConnectionDefaultsHoverStroke extends StObject {
 }
 object DiagramConnectionDefaultsHoverStroke {
   
-  @scala.inline
-  def apply(): DiagramConnectionDefaultsHoverStroke = {
+  inline def apply(): DiagramConnectionDefaultsHoverStroke = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DiagramConnectionDefaultsHoverStroke]
   }
   
-  @scala.inline
-  implicit class DiagramConnectionDefaultsHoverStrokeMutableBuilder[Self <: DiagramConnectionDefaultsHoverStroke] (val x: Self) extends AnyVal {
+  extension [Self <: DiagramConnectionDefaultsHoverStroke](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
   }
 }

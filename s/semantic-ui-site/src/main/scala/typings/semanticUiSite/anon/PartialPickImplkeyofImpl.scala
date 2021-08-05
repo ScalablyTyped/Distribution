@@ -28,70 +28,49 @@ trait PartialPickImplkeyofImpl extends StObject {
 }
 object PartialPickImplkeyofImpl {
   
-  @scala.inline
-  def apply(): PartialPickImplkeyofImpl = {
+  inline def apply(): PartialPickImplkeyofImpl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPickImplkeyofImpl]
   }
   
-  @scala.inline
-  implicit class PartialPickImplkeyofImplMutableBuilder[Self <: PartialPickImplkeyofImpl] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPickImplkeyofImpl](x: Self) {
     
-    @scala.inline
-    def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+    inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+    inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
-    @scala.inline
-    def setModules(value: js.Array[String]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
+    inline def setModules(value: js.Array[String]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
+    inline def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
     
-    @scala.inline
-    def setModulesVarargs(value: String*): Self = StObject.set(x, "modules", js.Array(value :_*))
+    inline def setModulesVarargs(value: String*): Self = StObject.set(x, "modules", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceStub(value: NamespaceStubSettings): Self = StObject.set(x, "namespaceStub", value.asInstanceOf[js.Any])
+    inline def setNamespaceStub(value: NamespaceStubSettings): Self = StObject.set(x, "namespaceStub", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceStubUndefined: Self = StObject.set(x, "namespaceStub", js.undefined)
+    inline def setNamespaceStubUndefined: Self = StObject.set(x, "namespaceStub", js.undefined)
     
-    @scala.inline
-    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+    inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
-    @scala.inline
-    def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
+    inline def setPerformance(value: Boolean): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerformanceUndefined: Self = StObject.set(x, "performance", js.undefined)
+    inline def setPerformanceUndefined: Self = StObject.set(x, "performance", js.undefined)
     
-    @scala.inline
-    def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+    inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+    inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
     
-    @scala.inline
-    def setSiteNamespace(value: String): Self = StObject.set(x, "siteNamespace", value.asInstanceOf[js.Any])
+    inline def setSiteNamespace(value: String): Self = StObject.set(x, "siteNamespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSiteNamespaceUndefined: Self = StObject.set(x, "siteNamespace", js.undefined)
+    inline def setSiteNamespaceUndefined: Self = StObject.set(x, "siteNamespace", js.undefined)
     
-    @scala.inline
-    def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+    inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+    inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
   }
 }

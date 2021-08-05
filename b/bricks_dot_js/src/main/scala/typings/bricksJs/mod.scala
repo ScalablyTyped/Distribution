@@ -10,8 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(options: Options): Instance = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Instance]
+  inline def apply(options: Options): Instance = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Instance]
   
   @JSImport("bricks.js", JSImport.Namespace)
   @js.native
@@ -67,32 +66,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(container: Node | String, packed: String, sizes: js.Array[SizeDetail]): Options = {
+    inline def apply(container: Node | String, packed: String, sizes: js.Array[SizeDetail]): Options = {
       val __obj = js.Dynamic.literal(container = container.asInstanceOf[js.Any], packed = packed.asInstanceOf[js.Any], sizes = sizes.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setContainer(value: Node | String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+      inline def setContainer(value: Node | String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPacked(value: String): Self = StObject.set(x, "packed", value.asInstanceOf[js.Any])
+      inline def setPacked(value: String): Self = StObject.set(x, "packed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: Boolean): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: Boolean): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+      inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
       
-      @scala.inline
-      def setSizes(value: js.Array[SizeDetail]): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
+      inline def setSizes(value: js.Array[SizeDetail]): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizesVarargs(value: SizeDetail*): Self = StObject.set(x, "sizes", js.Array(value :_*))
+      inline def setSizesVarargs(value: SizeDetail*): Self = StObject.set(x, "sizes", js.Array(value :_*))
     }
   }
   
@@ -106,26 +97,20 @@ object mod {
   }
   object SizeDetail {
     
-    @scala.inline
-    def apply(columns: Double, gutter: Double): SizeDetail = {
+    inline def apply(columns: Double, gutter: Double): SizeDetail = {
       val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], gutter = gutter.asInstanceOf[js.Any])
       __obj.asInstanceOf[SizeDetail]
     }
     
-    @scala.inline
-    implicit class SizeDetailMutableBuilder[Self <: SizeDetail] (val x: Self) extends AnyVal {
+    extension [Self <: SizeDetail](x: Self) {
       
-      @scala.inline
-      def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+      inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGutter(value: Double): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
+      inline def setGutter(value: Double): Self = StObject.set(x, "gutter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMq(value: String): Self = StObject.set(x, "mq", value.asInstanceOf[js.Any])
+      inline def setMq(value: String): Self = StObject.set(x, "mq", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMqUndefined: Self = StObject.set(x, "mq", js.undefined)
+      inline def setMqUndefined: Self = StObject.set(x, "mq", js.undefined)
     }
   }
 }

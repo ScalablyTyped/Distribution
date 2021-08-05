@@ -23,10 +23,8 @@ object mod {
   	//=> 'ya-lyublyu-edinorogov'
   	```
   	*/
-  @scala.inline
-  def apply(string: String): String = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(string: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(string: String): String = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(string: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("@sindresorhus/slugify", JSImport.Namespace)
   @js.native
@@ -57,8 +55,7 @@ object mod {
   	```
   	You can then use `slugify.counter()` to generate unique HTML `id`'s to ensure anchors will link to the right headline.
   	*/
-  @scala.inline
-  def counter(): Call = ^.asInstanceOf[js.Dynamic].applyDynamic("counter")().asInstanceOf[Call]
+  inline def counter(): Call = ^.asInstanceOf[js.Dynamic].applyDynamic("counter")().asInstanceOf[Call]
   
   trait Options extends StObject {
     
@@ -153,47 +150,34 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCustomReplacements(value: js.Array[js.Tuple2[String, String]]): Self = StObject.set(x, "customReplacements", value.asInstanceOf[js.Any])
+      inline def setCustomReplacements(value: js.Array[js.Tuple2[String, String]]): Self = StObject.set(x, "customReplacements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomReplacementsUndefined: Self = StObject.set(x, "customReplacements", js.undefined)
+      inline def setCustomReplacementsUndefined: Self = StObject.set(x, "customReplacements", js.undefined)
       
-      @scala.inline
-      def setCustomReplacementsVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "customReplacements", js.Array(value :_*))
+      inline def setCustomReplacementsVarargs(value: (js.Tuple2[String, String])*): Self = StObject.set(x, "customReplacements", js.Array(value :_*))
       
-      @scala.inline
-      def setDecamelize(value: Boolean): Self = StObject.set(x, "decamelize", value.asInstanceOf[js.Any])
+      inline def setDecamelize(value: Boolean): Self = StObject.set(x, "decamelize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDecamelizeUndefined: Self = StObject.set(x, "decamelize", js.undefined)
+      inline def setDecamelizeUndefined: Self = StObject.set(x, "decamelize", js.undefined)
       
-      @scala.inline
-      def setLowercase(value: Boolean): Self = StObject.set(x, "lowercase", value.asInstanceOf[js.Any])
+      inline def setLowercase(value: Boolean): Self = StObject.set(x, "lowercase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLowercaseUndefined: Self = StObject.set(x, "lowercase", js.undefined)
+      inline def setLowercaseUndefined: Self = StObject.set(x, "lowercase", js.undefined)
       
-      @scala.inline
-      def setPreserveLeadingUnderscore(value: Boolean): Self = StObject.set(x, "preserveLeadingUnderscore", value.asInstanceOf[js.Any])
+      inline def setPreserveLeadingUnderscore(value: Boolean): Self = StObject.set(x, "preserveLeadingUnderscore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveLeadingUnderscoreUndefined: Self = StObject.set(x, "preserveLeadingUnderscore", js.undefined)
+      inline def setPreserveLeadingUnderscoreUndefined: Self = StObject.set(x, "preserveLeadingUnderscore", js.undefined)
       
-      @scala.inline
-      def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+      inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
     }
   }
 }

@@ -12,8 +12,7 @@ trait HoldableConfig extends StObject {
 }
 object HoldableConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     holdComplete: js.Function0[Unit] => js.Function0[js.Function0[Unit]],
     holdProgress: js.Function0[Unit] => js.Function1[/* updateState */ js.Function1[/* holdLength */ Double, Unit], js.Function0[Unit]]
   ): HoldableConfig = {
@@ -21,14 +20,11 @@ object HoldableConfig {
     __obj.asInstanceOf[HoldableConfig]
   }
   
-  @scala.inline
-  implicit class HoldableConfigMutableBuilder[Self <: HoldableConfig] (val x: Self) extends AnyVal {
+  extension [Self <: HoldableConfig](x: Self) {
     
-    @scala.inline
-    def setHoldComplete(value: js.Function0[Unit] => js.Function0[js.Function0[Unit]]): Self = StObject.set(x, "holdComplete", js.Any.fromFunction1(value))
+    inline def setHoldComplete(value: js.Function0[Unit] => js.Function0[js.Function0[Unit]]): Self = StObject.set(x, "holdComplete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHoldProgress(
+    inline def setHoldProgress(
       value: js.Function0[Unit] => js.Function1[/* updateState */ js.Function1[/* holdLength */ Double, Unit], js.Function0[Unit]]
     ): Self = StObject.set(x, "holdProgress", js.Any.fromFunction1(value))
   }

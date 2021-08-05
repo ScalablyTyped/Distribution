@@ -15,23 +15,18 @@ trait ParseError extends StObject {
 }
 object ParseError {
   
-  @scala.inline
-  def apply(line: Double, message: String): ParseError = {
+  inline def apply(line: Double, message: String): ParseError = {
     val __obj = js.Dynamic.literal(line = line.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("error")
     __obj.asInstanceOf[ParseError]
   }
   
-  @scala.inline
-  implicit class ParseErrorMutableBuilder[Self <: ParseError] (val x: Self) extends AnyVal {
+  extension [Self <: ParseError](x: Self) {
     
-    @scala.inline
-    def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: error): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: error): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

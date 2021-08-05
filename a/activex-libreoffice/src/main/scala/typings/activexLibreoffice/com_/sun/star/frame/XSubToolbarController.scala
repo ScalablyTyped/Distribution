@@ -52,8 +52,7 @@ trait XSubToolbarController
 }
 object XSubToolbarController {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     SubToolbarName: String,
     acquire: () => Unit,
     functionSelected: String => Unit,
@@ -67,22 +66,16 @@ object XSubToolbarController {
     __obj.asInstanceOf[XSubToolbarController]
   }
   
-  @scala.inline
-  implicit class XSubToolbarControllerMutableBuilder[Self <: XSubToolbarController] (val x: Self) extends AnyVal {
+  extension [Self <: XSubToolbarController](x: Self) {
     
-    @scala.inline
-    def setFunctionSelected(value: String => Unit): Self = StObject.set(x, "functionSelected", js.Any.fromFunction1(value))
+    inline def setFunctionSelected(value: String => Unit): Self = StObject.set(x, "functionSelected", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetSubToolbarName(value: () => String): Self = StObject.set(x, "getSubToolbarName", js.Any.fromFunction0(value))
+    inline def setGetSubToolbarName(value: () => String): Self = StObject.set(x, "getSubToolbarName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOpensSubToolbar(value: () => Boolean): Self = StObject.set(x, "opensSubToolbar", js.Any.fromFunction0(value))
+    inline def setOpensSubToolbar(value: () => Boolean): Self = StObject.set(x, "opensSubToolbar", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSubToolbarName(value: String): Self = StObject.set(x, "SubToolbarName", value.asInstanceOf[js.Any])
+    inline def setSubToolbarName(value: String): Self = StObject.set(x, "SubToolbarName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateImage(value: () => Unit): Self = StObject.set(x, "updateImage", js.Any.fromFunction0(value))
+    inline def setUpdateImage(value: () => Unit): Self = StObject.set(x, "updateImage", js.Any.fromFunction0(value))
   }
 }

@@ -23,31 +23,23 @@ trait DocumentationPart extends StObject {
 }
 object DocumentationPart {
   
-  @scala.inline
-  def apply(): DocumentationPart = {
+  inline def apply(): DocumentationPart = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentationPart]
   }
   
-  @scala.inline
-  implicit class DocumentationPartMutableBuilder[Self <: DocumentationPart] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentationPart](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setLocation(value: DocumentationPartLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: DocumentationPartLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setProperties(value: String): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: String): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }
 }

@@ -20,20 +20,16 @@ object typesDeleteMessageBatchRequestEntryMod {
   }
   object DeleteMessageBatchRequestEntry {
     
-    @scala.inline
-    def apply(Id: String, ReceiptHandle: String): DeleteMessageBatchRequestEntry = {
+    inline def apply(Id: String, ReceiptHandle: String): DeleteMessageBatchRequestEntry = {
       val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], ReceiptHandle = ReceiptHandle.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteMessageBatchRequestEntry]
     }
     
-    @scala.inline
-    implicit class DeleteMessageBatchRequestEntryMutableBuilder[Self <: DeleteMessageBatchRequestEntry] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteMessageBatchRequestEntry](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReceiptHandle(value: String): Self = StObject.set(x, "ReceiptHandle", value.asInstanceOf[js.Any])
+      inline def setReceiptHandle(value: String): Self = StObject.set(x, "ReceiptHandle", value.asInstanceOf[js.Any])
     }
   }
   

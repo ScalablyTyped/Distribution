@@ -78,8 +78,7 @@ object inputAreaDriverMod {
   }
   object InputAreaDriver {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       enterText: String => Unit,
       exists: () => Boolean,
       focus: () => Unit,
@@ -115,95 +114,65 @@ object inputAreaDriverMod {
       __obj.asInstanceOf[InputAreaDriver[T]]
     }
     
-    @scala.inline
-    implicit class InputAreaDriverMutableBuilder[Self <: InputAreaDriver[?], T] (val x: Self & InputAreaDriver[T]) extends AnyVal {
+    extension [Self <: InputAreaDriver[?], T](x: Self & InputAreaDriver[T]) {
       
-      @scala.inline
-      def setEnterText(value: String => Unit): Self = StObject.set(x, "enterText", js.Any.fromFunction1(value))
+      inline def setEnterText(value: String => Unit): Self = StObject.set(x, "enterText", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
+      inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAriaControls(value: () => String): Self = StObject.set(x, "getAriaControls", js.Any.fromFunction0(value))
+      inline def setGetAriaControls(value: () => String): Self = StObject.set(x, "getAriaControls", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAriaDescribedby(value: () => String): Self = StObject.set(x, "getAriaDescribedby", js.Any.fromFunction0(value))
+      inline def setGetAriaDescribedby(value: () => String): Self = StObject.set(x, "getAriaDescribedby", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAriaLabel(value: () => String): Self = StObject.set(x, "getAriaLabel", js.Any.fromFunction0(value))
+      inline def setGetAriaLabel(value: () => String): Self = StObject.set(x, "getAriaLabel", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCounterValue(value: () => String): Self = StObject.set(x, "getCounterValue", js.Any.fromFunction0(value))
+      inline def setGetCounterValue(value: () => String): Self = StObject.set(x, "getCounterValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDefaultValue(value: () => String): Self = StObject.set(x, "getDefaultValue", js.Any.fromFunction0(value))
+      inline def setGetDefaultValue(value: () => String): Self = StObject.set(x, "getDefaultValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetDisabled(value: () => Boolean): Self = StObject.set(x, "getDisabled", js.Any.fromFunction0(value))
+      inline def setGetDisabled(value: () => Boolean): Self = StObject.set(x, "getDisabled", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetHasCounter(value: () => Boolean): Self = StObject.set(x, "getHasCounter", js.Any.fromFunction0(value))
+      inline def setGetHasCounter(value: () => Boolean): Self = StObject.set(x, "getHasCounter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMaxLength(value: () => Double): Self = StObject.set(x, "getMaxLength", js.Any.fromFunction0(value))
+      inline def setGetMaxLength(value: () => Double): Self = StObject.set(x, "getMaxLength", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+      inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPlaceholder(value: () => String): Self = StObject.set(x, "getPlaceholder", js.Any.fromFunction0(value))
+      inline def setGetPlaceholder(value: () => String): Self = StObject.set(x, "getPlaceholder", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetReadOnly(value: () => Boolean): Self = StObject.set(x, "getReadOnly", js.Any.fromFunction0(value))
+      inline def setGetReadOnly(value: () => Boolean): Self = StObject.set(x, "getReadOnly", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRequired(value: () => Boolean): Self = StObject.set(x, "getRequired", js.Any.fromFunction0(value))
+      inline def setGetRequired(value: () => Boolean): Self = StObject.set(x, "getRequired", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetResizable(value: () => Boolean): Self = StObject.set(x, "getResizable", js.Any.fromFunction0(value))
+      inline def setGetResizable(value: () => Boolean): Self = StObject.set(x, "getResizable", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRowsCount(value: () => Double): Self = StObject.set(x, "getRowsCount", js.Any.fromFunction0(value))
+      inline def setGetRowsCount(value: () => Double): Self = StObject.set(x, "getRowsCount", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStatusMessage(value: () => String | Null): Self = StObject.set(x, "getStatusMessage", js.Any.fromFunction0(value))
+      inline def setGetStatusMessage(value: () => String | Null): Self = StObject.set(x, "getStatusMessage", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetStyle(value: () => CSSStyleDeclaration): Self = StObject.set(x, "getStyle", js.Any.fromFunction0(value))
+      inline def setGetStyle(value: () => CSSStyleDeclaration): Self = StObject.set(x, "getStyle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTabIndex(value: () => Double): Self = StObject.set(x, "getTabIndex", js.Any.fromFunction0(value))
+      inline def setGetTabIndex(value: () => Double): Self = StObject.set(x, "getTabIndex", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTooltipDataHook(value: () => String): Self = StObject.set(x, "getTooltipDataHook", js.Any.fromFunction0(value))
+      inline def setGetTooltipDataHook(value: () => String): Self = StObject.set(x, "getTooltipDataHook", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTooltipElement(value: () => T): Self = StObject.set(x, "getTooltipElement", js.Any.fromFunction0(value))
+      inline def setGetTooltipElement(value: () => T): Self = StObject.set(x, "getTooltipElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+      inline def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasExclamation(value: () => Boolean): Self = StObject.set(x, "hasExclamation", js.Any.fromFunction0(value))
+      inline def setHasExclamation(value: () => Boolean): Self = StObject.set(x, "hasExclamation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasStatus(value: StatusIndications => Boolean): Self = StObject.set(x, "hasStatus", js.Any.fromFunction1(value))
+      inline def setHasStatus(value: StatusIndications => Boolean): Self = StObject.set(x, "hasStatus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsFocus(value: () => Boolean): Self = StObject.set(x, "isFocus", js.Any.fromFunction0(value))
+      inline def setIsFocus(value: () => Boolean): Self = StObject.set(x, "isFocus", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsFocusedStyle(value: () => Boolean): Self = StObject.set(x, "isFocusedStyle", js.Any.fromFunction0(value))
+      inline def setIsFocusedStyle(value: () => Boolean): Self = StObject.set(x, "isFocusedStyle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsHoveredStyle(value: () => Boolean): Self = StObject.set(x, "isHoveredStyle", js.Any.fromFunction0(value))
+      inline def setIsHoveredStyle(value: () => Boolean): Self = StObject.set(x, "isHoveredStyle", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSizeSmall(value: () => Boolean): Self = StObject.set(x, "isSizeSmall", js.Any.fromFunction0(value))
+      inline def setIsSizeSmall(value: () => Boolean): Self = StObject.set(x, "isSizeSmall", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTrigger(
+      inline def setTrigger(
         value: (/* keyof wix-style-react.anon.TypeofSimulate */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 68 */ js.Any, SyntheticEventData) => Unit
       ): Self = StObject.set(x, "trigger", js.Any.fromFunction2(value))
     }

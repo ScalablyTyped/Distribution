@@ -12,25 +12,19 @@ trait Template extends StObject {
 }
 object Template {
   
-  @scala.inline
-  def apply(): Template = {
+  inline def apply(): Template = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Template]
   }
   
-  @scala.inline
-  implicit class TemplateMutableBuilder[Self <: Template] (val x: Self) extends AnyVal {
+  extension [Self <: Template](x: Self) {
     
-    @scala.inline
-    def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

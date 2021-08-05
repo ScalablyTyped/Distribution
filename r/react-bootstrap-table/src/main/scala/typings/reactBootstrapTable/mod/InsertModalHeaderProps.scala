@@ -40,49 +40,35 @@ trait InsertModalHeaderProps extends StObject {
 }
 object InsertModalHeaderProps {
   
-  @scala.inline
-  def apply(): InsertModalHeaderProps = {
+  inline def apply(): InsertModalHeaderProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InsertModalHeaderProps]
   }
   
-  @scala.inline
-  implicit class InsertModalHeaderPropsMutableBuilder[Self <: InsertModalHeaderProps] (val x: Self) extends AnyVal {
+  extension [Self <: InsertModalHeaderProps](x: Self) {
     
-    @scala.inline
-    def setBeforeClose(value: /* e */ SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "beforeClose", js.Any.fromFunction1(value))
+    inline def setBeforeClose(value: /* e */ SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "beforeClose", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeforeCloseUndefined: Self = StObject.set(x, "beforeClose", js.undefined)
+    inline def setBeforeCloseUndefined: Self = StObject.set(x, "beforeClose", js.undefined)
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setHideClose(value: Boolean): Self = StObject.set(x, "hideClose", value.asInstanceOf[js.Any])
+    inline def setHideClose(value: Boolean): Self = StObject.set(x, "hideClose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideCloseUndefined: Self = StObject.set(x, "hideClose", js.undefined)
+    inline def setHideCloseUndefined: Self = StObject.set(x, "hideClose", js.undefined)
     
-    @scala.inline
-    def setOnModalClose(value: /* closeModal */ js.Function0[Unit] => Unit): Self = StObject.set(x, "onModalClose", js.Any.fromFunction1(value))
+    inline def setOnModalClose(value: /* closeModal */ js.Function0[Unit] => Unit): Self = StObject.set(x, "onModalClose", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnModalCloseUndefined: Self = StObject.set(x, "onModalClose", js.undefined)
+    inline def setOnModalCloseUndefined: Self = StObject.set(x, "onModalClose", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setVersion(value: BootstrapVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: BootstrapVersion): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

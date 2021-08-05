@@ -35,61 +35,43 @@ trait Options_ extends StObject {
 }
 object Options_ {
   
-  @scala.inline
-  def apply(): Options_ = {
+  inline def apply(): Options_ = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Options_]
   }
   
-  @scala.inline
-  implicit class Options_MutableBuilder[Self <: Options_] (val x: Self) extends AnyVal {
+  extension [Self <: Options_](x: Self) {
     
-    @scala.inline
-    def setDebounceRendering(value: /* cb */ js.Function0[Unit] => Unit): Self = StObject.set(x, "debounceRendering", js.Any.fromFunction1(value))
+    inline def setDebounceRendering(value: /* cb */ js.Function0[Unit] => Unit): Self = StObject.set(x, "debounceRendering", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDebounceRenderingUndefined: Self = StObject.set(x, "debounceRendering", js.undefined)
+    inline def setDebounceRenderingUndefined: Self = StObject.set(x, "debounceRendering", js.undefined)
     
-    @scala.inline
-    def setDiffed(value: /* vnode */ VNode[js.Object] => Unit): Self = StObject.set(x, "diffed", js.Any.fromFunction1(value))
+    inline def setDiffed(value: /* vnode */ VNode[js.Object] => Unit): Self = StObject.set(x, "diffed", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDiffedUndefined: Self = StObject.set(x, "diffed", js.undefined)
+    inline def setDiffedUndefined: Self = StObject.set(x, "diffed", js.undefined)
     
-    @scala.inline
-    def setEvent(value: /* e */ Event => js.Any): Self = StObject.set(x, "event", js.Any.fromFunction1(value))
+    inline def setEvent(value: /* e */ Event => js.Any): Self = StObject.set(x, "event", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    @scala.inline
-    def setRequestAnimationFrame(value: /* callback */ FrameRequestCallback => Double): Self = StObject.set(x, "requestAnimationFrame", js.Any.fromFunction1(value))
+    inline def setRequestAnimationFrame(value: /* callback */ FrameRequestCallback => Double): Self = StObject.set(x, "requestAnimationFrame", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRequestAnimationFrameUndefined: Self = StObject.set(x, "requestAnimationFrame", js.undefined)
+    inline def setRequestAnimationFrameUndefined: Self = StObject.set(x, "requestAnimationFrame", js.undefined)
     
-    @scala.inline
-    def setUnmount(value: /* vnode */ VNode[js.Object] => Unit): Self = StObject.set(x, "unmount", js.Any.fromFunction1(value))
+    inline def setUnmount(value: /* vnode */ VNode[js.Object] => Unit): Self = StObject.set(x, "unmount", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUnmountUndefined: Self = StObject.set(x, "unmount", js.undefined)
+    inline def setUnmountUndefined: Self = StObject.set(x, "unmount", js.undefined)
     
-    @scala.inline
-    def setUseDebugValue(value: /* value */ String | Double => Unit): Self = StObject.set(x, "useDebugValue", js.Any.fromFunction1(value))
+    inline def setUseDebugValue(value: /* value */ String | Double => Unit): Self = StObject.set(x, "useDebugValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUseDebugValueUndefined: Self = StObject.set(x, "useDebugValue", js.undefined)
+    inline def setUseDebugValueUndefined: Self = StObject.set(x, "useDebugValue", js.undefined)
     
-    @scala.inline
-    def setVnode(value: /* vnode */ VNode[js.Object] => Unit): Self = StObject.set(x, "vnode", js.Any.fromFunction1(value))
+    inline def setVnode(value: /* vnode */ VNode[js.Object] => Unit): Self = StObject.set(x, "vnode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setVnodeUndefined: Self = StObject.set(x, "vnode", js.undefined)
+    inline def setVnodeUndefined: Self = StObject.set(x, "vnode", js.undefined)
     
-    @scala.inline
-    def set__suspenseDidResolve(value: (/* vnode */ VNode[js.Object], /* cb */ js.Function0[Unit]) => Unit): Self = StObject.set(x, "__suspenseDidResolve", js.Any.fromFunction2(value))
+    inline def set__suspenseDidResolve(value: (/* vnode */ VNode[js.Object], /* cb */ js.Function0[Unit]) => Unit): Self = StObject.set(x, "__suspenseDidResolve", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set__suspenseDidResolveUndefined: Self = StObject.set(x, "__suspenseDidResolve", js.undefined)
+    inline def set__suspenseDidResolveUndefined: Self = StObject.set(x, "__suspenseDidResolve", js.undefined)
   }
 }

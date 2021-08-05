@@ -12,16 +12,13 @@ trait ClassifyInput extends StObject {
 }
 object ClassifyInput {
   
-  @scala.inline
-  def apply(text: String): ClassifyInput = {
+  inline def apply(text: String): ClassifyInput = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[ClassifyInput]
   }
   
-  @scala.inline
-  implicit class ClassifyInputMutableBuilder[Self <: ClassifyInput] (val x: Self) extends AnyVal {
+  extension [Self <: ClassifyInput](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

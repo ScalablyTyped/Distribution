@@ -54,50 +54,36 @@ object anon {
   }
   object Colors {
     
-    @scala.inline
-    def apply(colors: js.Array[String]): Colors = {
+    inline def apply(colors: js.Array[String]): Colors = {
       val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any])
       __obj.asInstanceOf[Colors]
     }
     
-    @scala.inline
-    implicit class ColorsMutableBuilder[Self <: Colors] (val x: Self) extends AnyVal {
+    extension [Self <: Colors](x: Self) {
       
-      @scala.inline
-      def setColors(value: js.Array[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: js.Array[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value :_*))
+      inline def setColorsVarargs(value: String*): Self = StObject.set(x, "colors", js.Array(value :_*))
       
-      @scala.inline
-      def setEnd(value: LinearGradientPoint): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: LinearGradientPoint): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndNull: Self = StObject.set(x, "end", null)
+      inline def setEndNull: Self = StObject.set(x, "end", null)
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      @scala.inline
-      def setLocations(value: js.Array[Double]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+      inline def setLocations(value: js.Array[Double]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationsNull: Self = StObject.set(x, "locations", null)
+      inline def setLocationsNull: Self = StObject.set(x, "locations", null)
       
-      @scala.inline
-      def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
+      inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
       
-      @scala.inline
-      def setLocationsVarargs(value: Double*): Self = StObject.set(x, "locations", js.Array(value :_*))
+      inline def setLocationsVarargs(value: Double*): Self = StObject.set(x, "locations", js.Array(value :_*))
       
-      @scala.inline
-      def setStart(value: LinearGradientPoint): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: LinearGradientPoint): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartNull: Self = StObject.set(x, "start", null)
+      inline def setStartNull: Self = StObject.set(x, "start", null)
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
     }
   }
   
@@ -116,56 +102,40 @@ object anon {
   }
   object PropsWithChildrencolorsAr {
     
-    @scala.inline
-    def apply(colors: js.Array[Double]): PropsWithChildrencolorsAr = {
+    inline def apply(colors: js.Array[Double]): PropsWithChildrencolorsAr = {
       val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any])
       __obj.asInstanceOf[PropsWithChildrencolorsAr]
     }
     
-    @scala.inline
-    implicit class PropsWithChildrencolorsArMutableBuilder[Self <: PropsWithChildrencolorsAr] (val x: Self) extends AnyVal {
+    extension [Self <: PropsWithChildrencolorsAr](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setColors(value: js.Array[Double]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: js.Array[Double]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorsVarargs(value: Double*): Self = StObject.set(x, "colors", js.Array(value :_*))
+      inline def setColorsVarargs(value: Double*): Self = StObject.set(x, "colors", js.Array(value :_*))
       
-      @scala.inline
-      def setEndPoint(value: NativeLinearGradientPoint): Self = StObject.set(x, "endPoint", value.asInstanceOf[js.Any])
+      inline def setEndPoint(value: NativeLinearGradientPoint): Self = StObject.set(x, "endPoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndPointNull: Self = StObject.set(x, "endPoint", null)
+      inline def setEndPointNull: Self = StObject.set(x, "endPoint", null)
       
-      @scala.inline
-      def setEndPointUndefined: Self = StObject.set(x, "endPoint", js.undefined)
+      inline def setEndPointUndefined: Self = StObject.set(x, "endPoint", js.undefined)
       
-      @scala.inline
-      def setLocations(value: js.Array[Double]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+      inline def setLocations(value: js.Array[Double]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationsNull: Self = StObject.set(x, "locations", null)
+      inline def setLocationsNull: Self = StObject.set(x, "locations", null)
       
-      @scala.inline
-      def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
+      inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
       
-      @scala.inline
-      def setLocationsVarargs(value: Double*): Self = StObject.set(x, "locations", js.Array(value :_*))
+      inline def setLocationsVarargs(value: Double*): Self = StObject.set(x, "locations", js.Array(value :_*))
       
-      @scala.inline
-      def setStartPoint(value: NativeLinearGradientPoint): Self = StObject.set(x, "startPoint", value.asInstanceOf[js.Any])
+      inline def setStartPoint(value: NativeLinearGradientPoint): Self = StObject.set(x, "startPoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartPointNull: Self = StObject.set(x, "startPoint", null)
+      inline def setStartPointNull: Self = StObject.set(x, "startPoint", null)
       
-      @scala.inline
-      def setStartPointUndefined: Self = StObject.set(x, "startPoint", js.undefined)
+      inline def setStartPointUndefined: Self = StObject.set(x, "startPoint", js.undefined)
     }
   }
   
@@ -189,20 +159,16 @@ object anon {
   }
   object X {
     
-    @scala.inline
-    def apply(x: Double, y: Double): X = {
+    inline def apply(x: Double, y: Double): X = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[X]
     }
     
-    @scala.inline
-    implicit class XMutableBuilder[Self <: X] (val x: Self) extends AnyVal {
+    extension [Self <: X](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
 }

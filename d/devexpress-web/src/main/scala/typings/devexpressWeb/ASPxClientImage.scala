@@ -24,8 +24,7 @@ trait ASPxClientImage
 }
 object ASPxClientImage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     Click: ASPxClientEvent[ASPxClientEditEventHandler[ASPxClientStaticEdit]],
     GetCaption: () => String,
@@ -56,13 +55,10 @@ object ASPxClientImage {
     __obj.asInstanceOf[ASPxClientImage]
   }
   
-  @scala.inline
-  implicit class ASPxClientImageMutableBuilder[Self <: ASPxClientImage] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientImage](x: Self) {
     
-    @scala.inline
-    def setGetImageUrl(value: () => String): Self = StObject.set(x, "GetImageUrl", js.Any.fromFunction0(value))
+    inline def setGetImageUrl(value: () => String): Self = StObject.set(x, "GetImageUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetImageUrl(value: String => Unit): Self = StObject.set(x, "SetImageUrl", js.Any.fromFunction1(value))
+    inline def setSetImageUrl(value: String => Unit): Self = StObject.set(x, "SetImageUrl", js.Any.fromFunction1(value))
   }
 }

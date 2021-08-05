@@ -13,6 +13,5 @@ object debug {
   @JSImport("dav", "debug.enabled")
   @js.native
   def enabled: Boolean = js.native
-  @scala.inline
-  def enabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enabled")(x.asInstanceOf[js.Any])
+  inline def enabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enabled")(x.asInstanceOf[js.Any])
 }

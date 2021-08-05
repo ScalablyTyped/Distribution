@@ -18,31 +18,23 @@ trait Filters extends StObject {
 }
 object Filters {
   
-  @scala.inline
-  def apply(): Filters = {
+  inline def apply(): Filters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Filters]
   }
   
-  @scala.inline
-  implicit class FiltersMutableBuilder[Self <: Filters] (val x: Self) extends AnyVal {
+  extension [Self <: Filters](x: Self) {
     
-    @scala.inline
-    def setChannels(value: Channels): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: Channels): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelsUndefined: Self = StObject.set(x, "Channels", js.undefined)
+    inline def setChannelsUndefined: Self = StObject.set(x, "Channels", js.undefined)
     
-    @scala.inline
-    def setChannelsVarargs(value: Channel*): Self = StObject.set(x, "Channels", js.Array(value :_*))
+    inline def setChannelsVarargs(value: Channel*): Self = StObject.set(x, "Channels", js.Array(value :_*))
     
-    @scala.inline
-    def setQueues(value: Queues): Self = StObject.set(x, "Queues", value.asInstanceOf[js.Any])
+    inline def setQueues(value: Queues): Self = StObject.set(x, "Queues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueuesUndefined: Self = StObject.set(x, "Queues", js.undefined)
+    inline def setQueuesUndefined: Self = StObject.set(x, "Queues", js.undefined)
     
-    @scala.inline
-    def setQueuesVarargs(value: QueueId*): Self = StObject.set(x, "Queues", js.Array(value :_*))
+    inline def setQueuesVarargs(value: QueueId*): Self = StObject.set(x, "Queues", js.Array(value :_*))
   }
 }

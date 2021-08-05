@@ -13,19 +13,15 @@ trait ChannelModeratorSummary extends StObject {
 }
 object ChannelModeratorSummary {
   
-  @scala.inline
-  def apply(): ChannelModeratorSummary = {
+  inline def apply(): ChannelModeratorSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChannelModeratorSummary]
   }
   
-  @scala.inline
-  implicit class ChannelModeratorSummaryMutableBuilder[Self <: ChannelModeratorSummary] (val x: Self) extends AnyVal {
+  extension [Self <: ChannelModeratorSummary](x: Self) {
     
-    @scala.inline
-    def setModerator(value: Identity): Self = StObject.set(x, "Moderator", value.asInstanceOf[js.Any])
+    inline def setModerator(value: Identity): Self = StObject.set(x, "Moderator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeratorUndefined: Self = StObject.set(x, "Moderator", js.undefined)
+    inline def setModeratorUndefined: Self = StObject.set(x, "Moderator", js.undefined)
   }
 }

@@ -29,8 +29,7 @@ trait ITextFieldExpression extends StObject {
 }
 object ITextFieldExpression {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BeginsWith: String => IExpression,
     Contains: String => IExpression,
     EqualTo: String => IExpression,
@@ -43,28 +42,20 @@ object ITextFieldExpression {
     __obj.asInstanceOf[ITextFieldExpression]
   }
   
-  @scala.inline
-  implicit class ITextFieldExpressionMutableBuilder[Self <: ITextFieldExpression] (val x: Self) extends AnyVal {
+  extension [Self <: ITextFieldExpression](x: Self) {
     
-    @scala.inline
-    def setBeginsWith(value: String => IExpression): Self = StObject.set(x, "BeginsWith", js.Any.fromFunction1(value))
+    inline def setBeginsWith(value: String => IExpression): Self = StObject.set(x, "BeginsWith", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setContains(value: String => IExpression): Self = StObject.set(x, "Contains", js.Any.fromFunction1(value))
+    inline def setContains(value: String => IExpression): Self = StObject.set(x, "Contains", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEqualTo(value: String => IExpression): Self = StObject.set(x, "EqualTo", js.Any.fromFunction1(value))
+    inline def setEqualTo(value: String => IExpression): Self = StObject.set(x, "EqualTo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIn(value: js.Array[String] => IExpression): Self = StObject.set(x, "In", js.Any.fromFunction1(value))
+    inline def setIn(value: js.Array[String] => IExpression): Self = StObject.set(x, "In", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsNotNull(value: () => IExpression): Self = StObject.set(x, "IsNotNull", js.Any.fromFunction0(value))
+    inline def setIsNotNull(value: () => IExpression): Self = StObject.set(x, "IsNotNull", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsNull(value: () => IExpression): Self = StObject.set(x, "IsNull", js.Any.fromFunction0(value))
+    inline def setIsNull(value: () => IExpression): Self = StObject.set(x, "IsNull", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setNotEqualTo(value: String => IExpression): Self = StObject.set(x, "NotEqualTo", js.Any.fromFunction1(value))
+    inline def setNotEqualTo(value: String => IExpression): Self = StObject.set(x, "NotEqualTo", js.Any.fromFunction1(value))
   }
 }

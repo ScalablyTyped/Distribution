@@ -22,8 +22,7 @@ trait TextContentItem extends StObject {
 }
 object TextContentItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dir: String,
     fontName: String,
     height: Double,
@@ -35,28 +34,20 @@ object TextContentItem {
     __obj.asInstanceOf[TextContentItem]
   }
   
-  @scala.inline
-  implicit class TextContentItemMutableBuilder[Self <: TextContentItem] (val x: Self) extends AnyVal {
+  extension [Self <: TextContentItem](x: Self) {
     
-    @scala.inline
-    def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+    inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontName(value: String): Self = StObject.set(x, "fontName", value.asInstanceOf[js.Any])
+    inline def setFontName(value: String): Self = StObject.set(x, "fontName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStr(value: String): Self = StObject.set(x, "str", value.asInstanceOf[js.Any])
+    inline def setStr(value: String): Self = StObject.set(x, "str", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransform(value: js.Array[Double]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+    inline def setTransform(value: js.Array[Double]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformVarargs(value: Double*): Self = StObject.set(x, "transform", js.Array(value :_*))
+    inline def setTransformVarargs(value: Double*): Self = StObject.set(x, "transform", js.Array(value :_*))
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

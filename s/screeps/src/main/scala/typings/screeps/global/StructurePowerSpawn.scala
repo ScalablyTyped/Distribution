@@ -128,6 +128,5 @@ class StructurePowerSpawn protected ()
 }
 object StructurePowerSpawn {
   
-  @scala.inline
-  def apply: StructurePowerSpawnConstructor = js.Dynamic.global.selectDynamic("StructurePowerSpawn").asInstanceOf[StructurePowerSpawnConstructor]
+  inline def apply: StructurePowerSpawnConstructor = js.Dynamic.global.selectDynamic("StructurePowerSpawn").asInstanceOf[StructurePowerSpawnConstructor]
 }

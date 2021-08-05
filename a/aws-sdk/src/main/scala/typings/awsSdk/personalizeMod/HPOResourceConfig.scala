@@ -18,25 +18,19 @@ trait HPOResourceConfig extends StObject {
 }
 object HPOResourceConfig {
   
-  @scala.inline
-  def apply(): HPOResourceConfig = {
+  inline def apply(): HPOResourceConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HPOResourceConfig]
   }
   
-  @scala.inline
-  implicit class HPOResourceConfigMutableBuilder[Self <: HPOResourceConfig] (val x: Self) extends AnyVal {
+  extension [Self <: HPOResourceConfig](x: Self) {
     
-    @scala.inline
-    def setMaxNumberOfTrainingJobs(value: HPOResource): Self = StObject.set(x, "maxNumberOfTrainingJobs", value.asInstanceOf[js.Any])
+    inline def setMaxNumberOfTrainingJobs(value: HPOResource): Self = StObject.set(x, "maxNumberOfTrainingJobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxNumberOfTrainingJobsUndefined: Self = StObject.set(x, "maxNumberOfTrainingJobs", js.undefined)
+    inline def setMaxNumberOfTrainingJobsUndefined: Self = StObject.set(x, "maxNumberOfTrainingJobs", js.undefined)
     
-    @scala.inline
-    def setMaxParallelTrainingJobs(value: HPOResource): Self = StObject.set(x, "maxParallelTrainingJobs", value.asInstanceOf[js.Any])
+    inline def setMaxParallelTrainingJobs(value: HPOResource): Self = StObject.set(x, "maxParallelTrainingJobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxParallelTrainingJobsUndefined: Self = StObject.set(x, "maxParallelTrainingJobs", js.undefined)
+    inline def setMaxParallelTrainingJobsUndefined: Self = StObject.set(x, "maxParallelTrainingJobs", js.undefined)
   }
 }

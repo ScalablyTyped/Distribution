@@ -21,8 +21,7 @@ object ActionCable {
   }
   object Cable {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       connect: () => Unit,
       disconnect: () => Unit,
       ensureActiveConnection: () => Unit,
@@ -33,23 +32,17 @@ object ActionCable {
       __obj.asInstanceOf[Cable]
     }
     
-    @scala.inline
-    implicit class CableMutableBuilder[Self <: Cable] (val x: Self) extends AnyVal {
+    extension [Self <: Cable](x: Self) {
       
-      @scala.inline
-      def setConnect(value: () => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
+      inline def setConnect(value: () => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
+      inline def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnsureActiveConnection(value: () => Unit): Self = StObject.set(x, "ensureActiveConnection", js.Any.fromFunction0(value))
+      inline def setEnsureActiveConnection(value: () => Unit): Self = StObject.set(x, "ensureActiveConnection", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSend(value: js.Any => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
+      inline def setSend(value: js.Any => Unit): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSubscriptions(value: Subscriptions): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
+      inline def setSubscriptions(value: Subscriptions): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
     }
   }
   
@@ -63,23 +56,18 @@ object ActionCable {
   }
   object Channel {
     
-    @scala.inline
-    def apply(perform: (String, js.Object) => Unit, send: js.Any => Boolean, unsubscribe: () => Unit): Channel = {
+    inline def apply(perform: (String, js.Object) => Unit, send: js.Any => Boolean, unsubscribe: () => Unit): Channel = {
       val __obj = js.Dynamic.literal(perform = js.Any.fromFunction2(perform), send = js.Any.fromFunction1(send), unsubscribe = js.Any.fromFunction0(unsubscribe))
       __obj.asInstanceOf[Channel]
     }
     
-    @scala.inline
-    implicit class ChannelMutableBuilder[Self <: Channel] (val x: Self) extends AnyVal {
+    extension [Self <: Channel](x: Self) {
       
-      @scala.inline
-      def setPerform(value: (String, js.Object) => Unit): Self = StObject.set(x, "perform", js.Any.fromFunction2(value))
+      inline def setPerform(value: (String, js.Object) => Unit): Self = StObject.set(x, "perform", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSend(value: js.Any => Boolean): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
+      inline def setSend(value: js.Any => Boolean): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
+      inline def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
     }
   }
   
@@ -91,17 +79,14 @@ object ActionCable {
   }
   object ChannelNameWithParams {
     
-    @scala.inline
-    def apply(channel: String): ChannelNameWithParams = {
+    inline def apply(channel: String): ChannelNameWithParams = {
       val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChannelNameWithParams]
     }
     
-    @scala.inline
-    implicit class ChannelNameWithParamsMutableBuilder[Self <: ChannelNameWithParams] (val x: Self) extends AnyVal {
+    extension [Self <: ChannelNameWithParams](x: Self) {
       
-      @scala.inline
-      def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     }
   }
   
@@ -117,32 +102,24 @@ object ActionCable {
   }
   object CreateMixin {
     
-    @scala.inline
-    def apply(): CreateMixin = {
+    inline def apply(): CreateMixin = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateMixin]
     }
     
-    @scala.inline
-    implicit class CreateMixinMutableBuilder[Self <: CreateMixin] (val x: Self) extends AnyVal {
+    extension [Self <: CreateMixin](x: Self) {
       
-      @scala.inline
-      def setConnected(value: () => Unit): Self = StObject.set(x, "connected", js.Any.fromFunction0(value))
+      inline def setConnected(value: () => Unit): Self = StObject.set(x, "connected", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setConnectedUndefined: Self = StObject.set(x, "connected", js.undefined)
+      inline def setConnectedUndefined: Self = StObject.set(x, "connected", js.undefined)
       
-      @scala.inline
-      def setDisconnected(value: () => Unit): Self = StObject.set(x, "disconnected", js.Any.fromFunction0(value))
+      inline def setDisconnected(value: () => Unit): Self = StObject.set(x, "disconnected", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisconnectedUndefined: Self = StObject.set(x, "disconnected", js.undefined)
+      inline def setDisconnectedUndefined: Self = StObject.set(x, "disconnected", js.undefined)
       
-      @scala.inline
-      def setReceived(value: /* obj */ js.Any => Unit): Self = StObject.set(x, "received", js.Any.fromFunction1(value))
+      inline def setReceived(value: /* obj */ js.Any => Unit): Self = StObject.set(x, "received", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReceivedUndefined: Self = StObject.set(x, "received", js.undefined)
+      inline def setReceivedUndefined: Self = StObject.set(x, "received", js.undefined)
     }
   }
   

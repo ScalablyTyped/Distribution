@@ -20,34 +20,25 @@ trait DictcollName
 }
 object DictcollName {
   
-  @scala.inline
-  def apply(): DictcollName = {
+  inline def apply(): DictcollName = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DictcollName]
   }
   
-  @scala.inline
-  implicit class DictcollNameMutableBuilder[Self <: DictcollName] (val x: Self) extends AnyVal {
+  extension [Self <: DictcollName](x: Self) {
     
-    @scala.inline
-    def setRetainDirtyFlags(value: Boolean): Self = StObject.set(x, "retainDirtyFlags", value.asInstanceOf[js.Any])
+    inline def setRetainDirtyFlags(value: Boolean): Self = StObject.set(x, "retainDirtyFlags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetainDirtyFlagsUndefined: Self = StObject.set(x, "retainDirtyFlags", js.undefined)
+    inline def setRetainDirtyFlagsUndefined: Self = StObject.set(x, "retainDirtyFlags", js.undefined)
     
-    @scala.inline
-    def setSerializationMethod(value: normal | pretty | destructured): Self = StObject.set(x, "serializationMethod", value.asInstanceOf[js.Any])
+    inline def setSerializationMethod(value: normal | pretty | destructured): Self = StObject.set(x, "serializationMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerializationMethodNull: Self = StObject.set(x, "serializationMethod", null)
+    inline def setSerializationMethodNull: Self = StObject.set(x, "serializationMethod", null)
     
-    @scala.inline
-    def setSerializationMethodUndefined: Self = StObject.set(x, "serializationMethod", js.undefined)
+    inline def setSerializationMethodUndefined: Self = StObject.set(x, "serializationMethod", js.undefined)
     
-    @scala.inline
-    def setThrottledSaves(value: Boolean): Self = StObject.set(x, "throttledSaves", value.asInstanceOf[js.Any])
+    inline def setThrottledSaves(value: Boolean): Self = StObject.set(x, "throttledSaves", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThrottledSavesUndefined: Self = StObject.set(x, "throttledSaves", js.undefined)
+    inline def setThrottledSavesUndefined: Self = StObject.set(x, "throttledSaves", js.undefined)
   }
 }

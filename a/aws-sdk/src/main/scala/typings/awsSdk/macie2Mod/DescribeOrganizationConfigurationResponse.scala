@@ -18,25 +18,19 @@ trait DescribeOrganizationConfigurationResponse extends StObject {
 }
 object DescribeOrganizationConfigurationResponse {
   
-  @scala.inline
-  def apply(): DescribeOrganizationConfigurationResponse = {
+  inline def apply(): DescribeOrganizationConfigurationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeOrganizationConfigurationResponse]
   }
   
-  @scala.inline
-  implicit class DescribeOrganizationConfigurationResponseMutableBuilder[Self <: DescribeOrganizationConfigurationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeOrganizationConfigurationResponse](x: Self) {
     
-    @scala.inline
-    def setAutoEnable(value: boolean): Self = StObject.set(x, "autoEnable", value.asInstanceOf[js.Any])
+    inline def setAutoEnable(value: boolean): Self = StObject.set(x, "autoEnable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoEnableUndefined: Self = StObject.set(x, "autoEnable", js.undefined)
+    inline def setAutoEnableUndefined: Self = StObject.set(x, "autoEnable", js.undefined)
     
-    @scala.inline
-    def setMaxAccountLimitReached(value: boolean): Self = StObject.set(x, "maxAccountLimitReached", value.asInstanceOf[js.Any])
+    inline def setMaxAccountLimitReached(value: boolean): Self = StObject.set(x, "maxAccountLimitReached", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAccountLimitReachedUndefined: Self = StObject.set(x, "maxAccountLimitReached", js.undefined)
+    inline def setMaxAccountLimitReachedUndefined: Self = StObject.set(x, "maxAccountLimitReached", js.undefined)
   }
 }

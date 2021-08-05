@@ -26,8 +26,7 @@ trait KmlPolygon
 }
 object KmlPolygon {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     equals_ : KmlObject => Boolean,
@@ -57,16 +56,12 @@ object KmlPolygon {
     __obj.asInstanceOf[KmlPolygon]
   }
   
-  @scala.inline
-  implicit class KmlPolygonMutableBuilder[Self <: KmlPolygon] (val x: Self) extends AnyVal {
+  extension [Self <: KmlPolygon](x: Self) {
     
-    @scala.inline
-    def setGetInnerBoundaries(value: () => GELinearRingContainer): Self = StObject.set(x, "getInnerBoundaries", js.Any.fromFunction0(value))
+    inline def setGetInnerBoundaries(value: () => GELinearRingContainer): Self = StObject.set(x, "getInnerBoundaries", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOuterBoundary(value: () => KmlLinearRing): Self = StObject.set(x, "getOuterBoundary", js.Any.fromFunction0(value))
+    inline def setGetOuterBoundary(value: () => KmlLinearRing): Self = StObject.set(x, "getOuterBoundary", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetOuterBoundary(value: KmlLinearRing => Unit): Self = StObject.set(x, "setOuterBoundary", js.Any.fromFunction1(value))
+    inline def setSetOuterBoundary(value: KmlLinearRing => Unit): Self = StObject.set(x, "setOuterBoundary", js.Any.fromFunction1(value))
   }
 }

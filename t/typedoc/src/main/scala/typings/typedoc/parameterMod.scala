@@ -13,6 +13,5 @@ object parameterMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createParameter(context: Context, node: ParameterDeclaration): js.UndefOr[ParameterReflection] = (^.asInstanceOf[js.Dynamic].applyDynamic("createParameter")(context.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ParameterReflection]]
+  inline def createParameter(context: Context, node: ParameterDeclaration): js.UndefOr[ParameterReflection] = (^.asInstanceOf[js.Dynamic].applyDynamic("createParameter")(context.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ParameterReflection]]
 }

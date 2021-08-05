@@ -22,21 +22,21 @@ object infiniteRowModelMod {
     
     /* private */ def checkForDeprecated(): js.Any = js.native
     
-    var columnApi: js.Any = js.native
+    /* private */ var columnApi: js.Any = js.native
     
-    var context: js.Any = js.native
+    /* private */ var context: js.Any = js.native
     
     /* private */ def createModelUpdatedEvent(): js.Any = js.native
     
-    var datasource: js.Any = js.native
+    /* private */ var datasource: js.Any = js.native
     
     /* private */ def destroyCache(): js.Any = js.native
     
     /* private */ def destroyDatasource(): js.Any = js.native
     
-    var eventService: js.Any = js.native
+    /* private */ var eventService: js.Any = js.native
     
-    var filterManager: js.Any = js.native
+    /* private */ var filterManager: js.Any = js.native
     
     /** Iterate through each node. What this does depends on the model type. For clientSide, goes through
       * all nodes. For pagination, goes through current page. For virtualPage, goes through what's loaded in memory. */
@@ -89,11 +89,11 @@ object infiniteRowModelMod {
     
     def getVirtualRowCount(): Double = js.native
     
-    var gridApi: js.Any = js.native
+    /* private */ var gridApi: js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
-    var infiniteCache: js.Any = js.native
+    /* private */ var infiniteCache: js.Any = js.native
     
     def init(): Unit = js.native
     
@@ -138,18 +138,18 @@ object infiniteRowModelMod {
     
     /* private */ def resetCache(): js.Any = js.native
     
-    var rowHeight: js.Any = js.native
+    /* private */ var rowHeight: js.Any = js.native
     
-    var rowNodeBlockLoader: js.Any = js.native
+    /* private */ var rowNodeBlockLoader: js.Any = js.native
     
-    var selectionController: js.Any = js.native
+    /* private */ var selectionController: js.Any = js.native
     
     def setDatasource(datasource: IDatasource): Unit = js.native
     
     def setVirtualRowCount(rowCount: Double): Unit = js.native
     def setVirtualRowCount(rowCount: Double, maxRowFound: Boolean): Unit = js.native
     
-    var sortController: js.Any = js.native
+    /* private */ var sortController: js.Any = js.native
     
     def updateRowData(transaction: RowDataTransaction): Unit = js.native
   }

@@ -28,28 +28,21 @@ trait TimerStartedEventAttributes extends StObject {
 }
 object TimerStartedEventAttributes {
   
-  @scala.inline
-  def apply(decisionTaskCompletedEventId: EventId, startToFireTimeout: DurationInSeconds, timerId: TimerId): TimerStartedEventAttributes = {
+  inline def apply(decisionTaskCompletedEventId: EventId, startToFireTimeout: DurationInSeconds, timerId: TimerId): TimerStartedEventAttributes = {
     val __obj = js.Dynamic.literal(decisionTaskCompletedEventId = decisionTaskCompletedEventId.asInstanceOf[js.Any], startToFireTimeout = startToFireTimeout.asInstanceOf[js.Any], timerId = timerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimerStartedEventAttributes]
   }
   
-  @scala.inline
-  implicit class TimerStartedEventAttributesMutableBuilder[Self <: TimerStartedEventAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: TimerStartedEventAttributes](x: Self) {
     
-    @scala.inline
-    def setControl(value: Data): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
+    inline def setControl(value: Data): Self = StObject.set(x, "control", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
+    inline def setControlUndefined: Self = StObject.set(x, "control", js.undefined)
     
-    @scala.inline
-    def setDecisionTaskCompletedEventId(value: EventId): Self = StObject.set(x, "decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
+    inline def setDecisionTaskCompletedEventId(value: EventId): Self = StObject.set(x, "decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartToFireTimeout(value: DurationInSeconds): Self = StObject.set(x, "startToFireTimeout", value.asInstanceOf[js.Any])
+    inline def setStartToFireTimeout(value: DurationInSeconds): Self = StObject.set(x, "startToFireTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimerId(value: TimerId): Self = StObject.set(x, "timerId", value.asInstanceOf[js.Any])
+    inline def setTimerId(value: TimerId): Self = StObject.set(x, "timerId", value.asInstanceOf[js.Any])
   }
 }

@@ -51,127 +51,87 @@ trait ScrollAreaProps
 }
 object ScrollAreaProps {
   
-  @scala.inline
-  def apply(): ScrollAreaProps = {
+  inline def apply(): ScrollAreaProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScrollAreaProps]
   }
   
-  @scala.inline
-  implicit class ScrollAreaPropsMutableBuilder[Self <: ScrollAreaProps] (val x: Self) extends AnyVal {
+  extension [Self <: ScrollAreaProps](x: Self) {
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setContentClassName(value: String): Self = StObject.set(x, "contentClassName", value.asInstanceOf[js.Any])
+    inline def setContentClassName(value: String): Self = StObject.set(x, "contentClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentClassNameUndefined: Self = StObject.set(x, "contentClassName", js.undefined)
+    inline def setContentClassNameUndefined: Self = StObject.set(x, "contentClassName", js.undefined)
     
-    @scala.inline
-    def setContentStyle(value: CSSProperties): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
+    inline def setContentStyle(value: CSSProperties): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
+    inline def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
     
-    @scala.inline
-    def setContentWindow(value: js.Any): Self = StObject.set(x, "contentWindow", value.asInstanceOf[js.Any])
+    inline def setContentWindow(value: js.Any): Self = StObject.set(x, "contentWindow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentWindowUndefined: Self = StObject.set(x, "contentWindow", js.undefined)
+    inline def setContentWindowUndefined: Self = StObject.set(x, "contentWindow", js.undefined)
     
-    @scala.inline
-    def setFocusableTabIndex(value: Double): Self = StObject.set(x, "focusableTabIndex", value.asInstanceOf[js.Any])
+    inline def setFocusableTabIndex(value: Double): Self = StObject.set(x, "focusableTabIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusableTabIndexUndefined: Self = StObject.set(x, "focusableTabIndex", js.undefined)
+    inline def setFocusableTabIndexUndefined: Self = StObject.set(x, "focusableTabIndex", js.undefined)
     
-    @scala.inline
-    def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+    inline def setHorizontal(value: Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalContainerStyle(value: CSSProperties): Self = StObject.set(x, "horizontalContainerStyle", value.asInstanceOf[js.Any])
+    inline def setHorizontalContainerStyle(value: CSSProperties): Self = StObject.set(x, "horizontalContainerStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalContainerStyleUndefined: Self = StObject.set(x, "horizontalContainerStyle", js.undefined)
+    inline def setHorizontalContainerStyleUndefined: Self = StObject.set(x, "horizontalContainerStyle", js.undefined)
     
-    @scala.inline
-    def setHorizontalScrollbarStyle(value: CSSProperties): Self = StObject.set(x, "horizontalScrollbarStyle", value.asInstanceOf[js.Any])
+    inline def setHorizontalScrollbarStyle(value: CSSProperties): Self = StObject.set(x, "horizontalScrollbarStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalScrollbarStyleUndefined: Self = StObject.set(x, "horizontalScrollbarStyle", js.undefined)
+    inline def setHorizontalScrollbarStyleUndefined: Self = StObject.set(x, "horizontalScrollbarStyle", js.undefined)
     
-    @scala.inline
-    def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
+    inline def setHorizontalUndefined: Self = StObject.set(x, "horizontal", js.undefined)
     
-    @scala.inline
-    def setMinScrollSize(value: Double): Self = StObject.set(x, "minScrollSize", value.asInstanceOf[js.Any])
+    inline def setMinScrollSize(value: Double): Self = StObject.set(x, "minScrollSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinScrollSizeUndefined: Self = StObject.set(x, "minScrollSize", js.undefined)
+    inline def setMinScrollSizeUndefined: Self = StObject.set(x, "minScrollSize", js.undefined)
     
-    @scala.inline
-    def setOnScroll(value: /* value */ ContainerHeight => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
+    inline def setOnScroll(value: /* value */ ContainerHeight => Unit): Self = StObject.set(x, "onScroll", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
+    inline def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
     
-    @scala.inline
-    def setOwnerDocument(value: js.Any): Self = StObject.set(x, "ownerDocument", value.asInstanceOf[js.Any])
+    inline def setOwnerDocument(value: js.Any): Self = StObject.set(x, "ownerDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerDocumentUndefined: Self = StObject.set(x, "ownerDocument", js.undefined)
+    inline def setOwnerDocumentUndefined: Self = StObject.set(x, "ownerDocument", js.undefined)
     
-    @scala.inline
-    def setSmoothScrolling(value: Boolean): Self = StObject.set(x, "smoothScrolling", value.asInstanceOf[js.Any])
+    inline def setSmoothScrolling(value: Boolean): Self = StObject.set(x, "smoothScrolling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmoothScrollingUndefined: Self = StObject.set(x, "smoothScrolling", js.undefined)
+    inline def setSmoothScrollingUndefined: Self = StObject.set(x, "smoothScrolling", js.undefined)
     
-    @scala.inline
-    def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
+    inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
+    inline def setSpeedUndefined: Self = StObject.set(x, "speed", js.undefined)
     
-    @scala.inline
-    def setStopScrollPropagation(value: Boolean): Self = StObject.set(x, "stopScrollPropagation", value.asInstanceOf[js.Any])
+    inline def setStopScrollPropagation(value: Boolean): Self = StObject.set(x, "stopScrollPropagation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopScrollPropagationUndefined: Self = StObject.set(x, "stopScrollPropagation", js.undefined)
+    inline def setStopScrollPropagationUndefined: Self = StObject.set(x, "stopScrollPropagation", js.undefined)
     
-    @scala.inline
-    def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setSwapWheelAxes(value: Boolean): Self = StObject.set(x, "swapWheelAxes", value.asInstanceOf[js.Any])
+    inline def setSwapWheelAxes(value: Boolean): Self = StObject.set(x, "swapWheelAxes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwapWheelAxesUndefined: Self = StObject.set(x, "swapWheelAxes", js.undefined)
+    inline def setSwapWheelAxesUndefined: Self = StObject.set(x, "swapWheelAxes", js.undefined)
     
-    @scala.inline
-    def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+    inline def setVertical(value: Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalContainerStyle(value: CSSProperties): Self = StObject.set(x, "verticalContainerStyle", value.asInstanceOf[js.Any])
+    inline def setVerticalContainerStyle(value: CSSProperties): Self = StObject.set(x, "verticalContainerStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalContainerStyleUndefined: Self = StObject.set(x, "verticalContainerStyle", js.undefined)
+    inline def setVerticalContainerStyleUndefined: Self = StObject.set(x, "verticalContainerStyle", js.undefined)
     
-    @scala.inline
-    def setVerticalScrollbarStyle(value: CSSProperties): Self = StObject.set(x, "verticalScrollbarStyle", value.asInstanceOf[js.Any])
+    inline def setVerticalScrollbarStyle(value: CSSProperties): Self = StObject.set(x, "verticalScrollbarStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalScrollbarStyleUndefined: Self = StObject.set(x, "verticalScrollbarStyle", js.undefined)
+    inline def setVerticalScrollbarStyleUndefined: Self = StObject.set(x, "verticalScrollbarStyle", js.undefined)
     
-    @scala.inline
-    def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
+    inline def setVerticalUndefined: Self = StObject.set(x, "vertical", js.undefined)
   }
 }

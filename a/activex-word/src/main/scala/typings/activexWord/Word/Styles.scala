@@ -20,6 +20,6 @@ trait Styles extends StObject {
   
   val Parent: js.Any = js.native
   
-  @JSName("Word.Styles_typekey")
+  /* private */ @JSName("Word.Styles_typekey")
   var WordDotStyles_typekey: Styles = js.native
 }

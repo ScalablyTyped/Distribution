@@ -13,22 +13,17 @@ trait OpenShiftChangeRequest
 }
 object OpenShiftChangeRequest {
   
-  @scala.inline
-  def apply(): OpenShiftChangeRequest = {
+  inline def apply(): OpenShiftChangeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OpenShiftChangeRequest]
   }
   
-  @scala.inline
-  implicit class OpenShiftChangeRequestMutableBuilder[Self <: OpenShiftChangeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: OpenShiftChangeRequest](x: Self) {
     
-    @scala.inline
-    def setOpenShiftId(value: NullableOption[String]): Self = StObject.set(x, "openShiftId", value.asInstanceOf[js.Any])
+    inline def setOpenShiftId(value: NullableOption[String]): Self = StObject.set(x, "openShiftId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenShiftIdNull: Self = StObject.set(x, "openShiftId", null)
+    inline def setOpenShiftIdNull: Self = StObject.set(x, "openShiftId", null)
     
-    @scala.inline
-    def setOpenShiftIdUndefined: Self = StObject.set(x, "openShiftId", js.undefined)
+    inline def setOpenShiftIdUndefined: Self = StObject.set(x, "openShiftId", js.undefined)
   }
 }

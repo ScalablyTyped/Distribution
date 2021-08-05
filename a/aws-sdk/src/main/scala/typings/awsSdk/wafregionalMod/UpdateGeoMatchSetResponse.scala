@@ -13,19 +13,15 @@ trait UpdateGeoMatchSetResponse extends StObject {
 }
 object UpdateGeoMatchSetResponse {
   
-  @scala.inline
-  def apply(): UpdateGeoMatchSetResponse = {
+  inline def apply(): UpdateGeoMatchSetResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateGeoMatchSetResponse]
   }
   
-  @scala.inline
-  implicit class UpdateGeoMatchSetResponseMutableBuilder[Self <: UpdateGeoMatchSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateGeoMatchSetResponse](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
+    inline def setChangeTokenUndefined: Self = StObject.set(x, "ChangeToken", js.undefined)
   }
 }

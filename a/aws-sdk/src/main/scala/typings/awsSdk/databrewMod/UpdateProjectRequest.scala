@@ -20,25 +20,19 @@ trait UpdateProjectRequest extends StObject {
 }
 object UpdateProjectRequest {
   
-  @scala.inline
-  def apply(Name: ProjectName, RoleArn: Arn): UpdateProjectRequest = {
+  inline def apply(Name: ProjectName, RoleArn: Arn): UpdateProjectRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], RoleArn = RoleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateProjectRequest]
   }
   
-  @scala.inline
-  implicit class UpdateProjectRequestMutableBuilder[Self <: UpdateProjectRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateProjectRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: ProjectName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ProjectName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: Arn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: Arn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSample(value: Sample): Self = StObject.set(x, "Sample", value.asInstanceOf[js.Any])
+    inline def setSample(value: Sample): Self = StObject.set(x, "Sample", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleUndefined: Self = StObject.set(x, "Sample", js.undefined)
+    inline def setSampleUndefined: Self = StObject.set(x, "Sample", js.undefined)
   }
 }

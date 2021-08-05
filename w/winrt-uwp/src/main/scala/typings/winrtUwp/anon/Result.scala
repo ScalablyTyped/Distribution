@@ -13,19 +13,15 @@ trait Result extends StObject {
 }
 object Result {
   
-  @scala.inline
-  def apply(result: Matrix4x4, returnValue: Boolean): Result = {
+  inline def apply(result: Matrix4x4, returnValue: Boolean): Result = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[Result]
   }
   
-  @scala.inline
-  implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+  extension [Self <: Result](x: Self) {
     
-    @scala.inline
-    def setResult(value: Matrix4x4): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Matrix4x4): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+    inline def setReturnValue(value: Boolean): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }
 }

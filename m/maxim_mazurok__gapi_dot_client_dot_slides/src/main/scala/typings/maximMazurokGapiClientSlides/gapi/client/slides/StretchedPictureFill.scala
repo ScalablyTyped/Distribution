@@ -19,25 +19,19 @@ trait StretchedPictureFill extends StObject {
 }
 object StretchedPictureFill {
   
-  @scala.inline
-  def apply(): StretchedPictureFill = {
+  inline def apply(): StretchedPictureFill = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StretchedPictureFill]
   }
   
-  @scala.inline
-  implicit class StretchedPictureFillMutableBuilder[Self <: StretchedPictureFill] (val x: Self) extends AnyVal {
+  extension [Self <: StretchedPictureFill](x: Self) {
     
-    @scala.inline
-    def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
+    inline def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
+    inline def setContentUrlUndefined: Self = StObject.set(x, "contentUrl", js.undefined)
     
-    @scala.inline
-    def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
   }
 }

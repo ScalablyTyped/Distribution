@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with typings.backbone.mod.EventsHash
 object EventsHash {
   
-  @scala.inline
-  def apply(): EventsHash = {
+  inline def apply(): EventsHash = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventsHash]
   }

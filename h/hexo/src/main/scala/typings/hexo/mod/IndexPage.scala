@@ -28,73 +28,51 @@ trait IndexPage extends StObject {
 }
 object IndexPage {
   
-  @scala.inline
-  def apply(): IndexPage = {
+  inline def apply(): IndexPage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IndexPage]
   }
   
-  @scala.inline
-  implicit class IndexPageMutableBuilder[Self <: IndexPage] (val x: Self) extends AnyVal {
+  extension [Self <: IndexPage](x: Self) {
     
-    @scala.inline
-    def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
+    inline def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
     
-    @scala.inline
-    def setCurrent_url(value: String): Self = StObject.set(x, "current_url", value.asInstanceOf[js.Any])
+    inline def setCurrent_url(value: String): Self = StObject.set(x, "current_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrent_urlUndefined: Self = StObject.set(x, "current_url", js.undefined)
+    inline def setCurrent_urlUndefined: Self = StObject.set(x, "current_url", js.undefined)
     
-    @scala.inline
-    def setNext(value: Double): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: Double): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+    inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
     
-    @scala.inline
-    def setNext_link(value: String): Self = StObject.set(x, "next_link", value.asInstanceOf[js.Any])
+    inline def setNext_link(value: String): Self = StObject.set(x, "next_link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext_linkUndefined: Self = StObject.set(x, "next_link", js.undefined)
+    inline def setNext_linkUndefined: Self = StObject.set(x, "next_link", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
+    inline def setPer_page(value: Double): Self = StObject.set(x, "per_page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
+    inline def setPer_pageUndefined: Self = StObject.set(x, "per_page", js.undefined)
     
-    @scala.inline
-    def setPosts(value: js.Object): Self = StObject.set(x, "posts", value.asInstanceOf[js.Any])
+    inline def setPosts(value: js.Object): Self = StObject.set(x, "posts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostsUndefined: Self = StObject.set(x, "posts", js.undefined)
+    inline def setPostsUndefined: Self = StObject.set(x, "posts", js.undefined)
     
-    @scala.inline
-    def setPrev(value: Double): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+    inline def setPrev(value: Double): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
+    inline def setPrevUndefined: Self = StObject.set(x, "prev", js.undefined)
     
-    @scala.inline
-    def setPrev_link(value: String): Self = StObject.set(x, "prev_link", value.asInstanceOf[js.Any])
+    inline def setPrev_link(value: String): Self = StObject.set(x, "prev_link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrev_linkUndefined: Self = StObject.set(x, "prev_link", js.undefined)
+    inline def setPrev_linkUndefined: Self = StObject.set(x, "prev_link", js.undefined)
     
-    @scala.inline
-    def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+    inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
+    inline def setTotalUndefined: Self = StObject.set(x, "total", js.undefined)
   }
 }

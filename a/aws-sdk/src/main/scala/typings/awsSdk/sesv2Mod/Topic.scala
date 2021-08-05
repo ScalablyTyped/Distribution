@@ -28,28 +28,21 @@ trait Topic extends StObject {
 }
 object Topic {
   
-  @scala.inline
-  def apply(DefaultSubscriptionStatus: SubscriptionStatus, DisplayName: DisplayName, TopicName: TopicName): Topic = {
+  inline def apply(DefaultSubscriptionStatus: SubscriptionStatus, DisplayName: DisplayName, TopicName: TopicName): Topic = {
     val __obj = js.Dynamic.literal(DefaultSubscriptionStatus = DefaultSubscriptionStatus.asInstanceOf[js.Any], DisplayName = DisplayName.asInstanceOf[js.Any], TopicName = TopicName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Topic]
   }
   
-  @scala.inline
-  implicit class TopicMutableBuilder[Self <: Topic] (val x: Self) extends AnyVal {
+  extension [Self <: Topic](x: Self) {
     
-    @scala.inline
-    def setDefaultSubscriptionStatus(value: SubscriptionStatus): Self = StObject.set(x, "DefaultSubscriptionStatus", value.asInstanceOf[js.Any])
+    inline def setDefaultSubscriptionStatus(value: SubscriptionStatus): Self = StObject.set(x, "DefaultSubscriptionStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: DisplayName): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: DisplayName): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicName(value: TopicName): Self = StObject.set(x, "TopicName", value.asInstanceOf[js.Any])
+    inline def setTopicName(value: TopicName): Self = StObject.set(x, "TopicName", value.asInstanceOf[js.Any])
   }
 }

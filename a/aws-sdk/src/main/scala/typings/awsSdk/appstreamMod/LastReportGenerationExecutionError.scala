@@ -18,25 +18,19 @@ trait LastReportGenerationExecutionError extends StObject {
 }
 object LastReportGenerationExecutionError {
   
-  @scala.inline
-  def apply(): LastReportGenerationExecutionError = {
+  inline def apply(): LastReportGenerationExecutionError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LastReportGenerationExecutionError]
   }
   
-  @scala.inline
-  implicit class LastReportGenerationExecutionErrorMutableBuilder[Self <: LastReportGenerationExecutionError] (val x: Self) extends AnyVal {
+  extension [Self <: LastReportGenerationExecutionError](x: Self) {
     
-    @scala.inline
-    def setErrorCode(value: UsageReportExecutionErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: UsageReportExecutionErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "ErrorCode", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "ErrorMessage", js.undefined)
   }
 }

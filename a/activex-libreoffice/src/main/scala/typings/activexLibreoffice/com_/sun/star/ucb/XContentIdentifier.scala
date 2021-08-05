@@ -50,8 +50,7 @@ trait XContentIdentifier
 }
 object XContentIdentifier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ContentIdentifier: String,
     ContentProviderScheme: String,
     acquire: () => Unit,
@@ -64,19 +63,14 @@ object XContentIdentifier {
     __obj.asInstanceOf[XContentIdentifier]
   }
   
-  @scala.inline
-  implicit class XContentIdentifierMutableBuilder[Self <: XContentIdentifier] (val x: Self) extends AnyVal {
+  extension [Self <: XContentIdentifier](x: Self) {
     
-    @scala.inline
-    def setContentIdentifier(value: String): Self = StObject.set(x, "ContentIdentifier", value.asInstanceOf[js.Any])
+    inline def setContentIdentifier(value: String): Self = StObject.set(x, "ContentIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentProviderScheme(value: String): Self = StObject.set(x, "ContentProviderScheme", value.asInstanceOf[js.Any])
+    inline def setContentProviderScheme(value: String): Self = StObject.set(x, "ContentProviderScheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetContentIdentifier(value: () => String): Self = StObject.set(x, "getContentIdentifier", js.Any.fromFunction0(value))
+    inline def setGetContentIdentifier(value: () => String): Self = StObject.set(x, "getContentIdentifier", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetContentProviderScheme(value: () => String): Self = StObject.set(x, "getContentProviderScheme", js.Any.fromFunction0(value))
+    inline def setGetContentProviderScheme(value: () => String): Self = StObject.set(x, "getContentProviderScheme", js.Any.fromFunction0(value))
   }
 }

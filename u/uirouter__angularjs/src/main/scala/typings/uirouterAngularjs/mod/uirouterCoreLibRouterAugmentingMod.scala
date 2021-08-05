@@ -16,8 +16,7 @@ object uirouterCoreLibRouterAugmentingMod {
   }
   object UIRouter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       stateProvider: typings.uirouterAngularjs.stateProviderMod.StateProvider,
       urlRouterProvider: typings.uirouterAngularjs.urlRouterProviderMod.UrlRouterProvider
     ): typings.uirouterAngularjs.mod.uirouterCoreLibRouterAugmentingMod.UIRouter = {
@@ -25,14 +24,11 @@ object uirouterCoreLibRouterAugmentingMod {
       __obj.asInstanceOf[typings.uirouterAngularjs.mod.uirouterCoreLibRouterAugmentingMod.UIRouter]
     }
     
-    @scala.inline
-    implicit class UIRouterMutableBuilder[Self <: typings.uirouterAngularjs.mod.uirouterCoreLibRouterAugmentingMod.UIRouter] (val x: Self) extends AnyVal {
+    extension [Self <: typings.uirouterAngularjs.mod.uirouterCoreLibRouterAugmentingMod.UIRouter](x: Self) {
       
-      @scala.inline
-      def setStateProvider(value: typings.uirouterAngularjs.stateProviderMod.StateProvider): Self = StObject.set(x, "stateProvider", value.asInstanceOf[js.Any])
+      inline def setStateProvider(value: typings.uirouterAngularjs.stateProviderMod.StateProvider): Self = StObject.set(x, "stateProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlRouterProvider(value: typings.uirouterAngularjs.urlRouterProviderMod.UrlRouterProvider): Self = StObject.set(x, "urlRouterProvider", value.asInstanceOf[js.Any])
+      inline def setUrlRouterProvider(value: typings.uirouterAngularjs.urlRouterProviderMod.UrlRouterProvider): Self = StObject.set(x, "urlRouterProvider", value.asInstanceOf[js.Any])
     }
   }
 }

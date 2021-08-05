@@ -14,8 +14,7 @@ trait FinallyClause
 }
 object FinallyClause {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -42,13 +41,10 @@ object FinallyClause {
     __obj.asInstanceOf[FinallyClause]
   }
   
-  @scala.inline
-  implicit class FinallyClauseMutableBuilder[Self <: FinallyClause] (val x: Self) extends AnyVal {
+  extension [Self <: FinallyClause](x: Self) {
     
-    @scala.inline
-    def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    inline def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuralEquals(value: (CatchClause, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (CatchClause, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
   }
 }

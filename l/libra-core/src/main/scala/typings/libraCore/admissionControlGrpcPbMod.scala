@@ -88,8 +88,7 @@ object admissionControlGrpcPbMod {
   }
   object IAdmissionControlServer {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       submitTransaction: (/* call */ ServerUnaryCall[SubmitTransactionRequest], /* callback */ sendUnaryData[SubmitTransactionResponse]) => Unit,
       updateToLatestLedger: (/* call */ ServerUnaryCall[UpdateToLatestLedgerRequest], /* callback */ sendUnaryData[UpdateToLatestLedgerResponse]) => Unit
     ): IAdmissionControlServer = {
@@ -97,16 +96,13 @@ object admissionControlGrpcPbMod {
       __obj.asInstanceOf[IAdmissionControlServer]
     }
     
-    @scala.inline
-    implicit class IAdmissionControlServerMutableBuilder[Self <: IAdmissionControlServer] (val x: Self) extends AnyVal {
+    extension [Self <: IAdmissionControlServer](x: Self) {
       
-      @scala.inline
-      def setSubmitTransaction(
+      inline def setSubmitTransaction(
         value: (/* call */ ServerUnaryCall[SubmitTransactionRequest], /* callback */ sendUnaryData[SubmitTransactionResponse]) => Unit
       ): Self = StObject.set(x, "submitTransaction", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUpdateToLatestLedger(
+      inline def setUpdateToLatestLedger(
         value: (/* call */ ServerUnaryCall[UpdateToLatestLedgerRequest], /* callback */ sendUnaryData[UpdateToLatestLedgerResponse]) => Unit
       ): Self = StObject.set(x, "updateToLatestLedger", js.Any.fromFunction2(value))
     }
@@ -121,8 +117,7 @@ object admissionControlGrpcPbMod {
   }
   object IAdmissionControlService {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       submitTransaction: IAdmissionControlServiceISubmitTransaction,
       updateToLatestLedger: IAdmissionControlServiceIUpdateToLatestLedger
     ): IAdmissionControlService = {
@@ -130,14 +125,11 @@ object admissionControlGrpcPbMod {
       __obj.asInstanceOf[IAdmissionControlService]
     }
     
-    @scala.inline
-    implicit class IAdmissionControlServiceMutableBuilder[Self <: IAdmissionControlService] (val x: Self) extends AnyVal {
+    extension [Self <: IAdmissionControlService](x: Self) {
       
-      @scala.inline
-      def setSubmitTransaction(value: IAdmissionControlServiceISubmitTransaction): Self = StObject.set(x, "submitTransaction", value.asInstanceOf[js.Any])
+      inline def setSubmitTransaction(value: IAdmissionControlServiceISubmitTransaction): Self = StObject.set(x, "submitTransaction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateToLatestLedger(value: IAdmissionControlServiceIUpdateToLatestLedger): Self = StObject.set(x, "updateToLatestLedger", value.asInstanceOf[js.Any])
+      inline def setUpdateToLatestLedger(value: IAdmissionControlServiceIUpdateToLatestLedger): Self = StObject.set(x, "updateToLatestLedger", value.asInstanceOf[js.Any])
     }
   }
   
@@ -146,8 +138,7 @@ object admissionControlGrpcPbMod {
        with MethodDefinition[SubmitTransactionRequest, SubmitTransactionResponse]
   object IAdmissionControlServiceISubmitTransaction {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       path: String,
       requestDeserialize: /* data */ Buffer => SubmitTransactionRequest,
       requestSerialize: SubmitTransactionRequest => Buffer,
@@ -166,8 +157,7 @@ object admissionControlGrpcPbMod {
        with MethodDefinition[UpdateToLatestLedgerRequest, UpdateToLatestLedgerResponse]
   object IAdmissionControlServiceIUpdateToLatestLedger {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       path: String,
       requestDeserialize: /* data */ Buffer => UpdateToLatestLedgerRequest,
       requestSerialize: UpdateToLatestLedgerRequest => Buffer,

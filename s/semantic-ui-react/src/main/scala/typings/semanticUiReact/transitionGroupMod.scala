@@ -45,44 +45,32 @@ object transitionGroupMod extends Shortcut {
   }
   object StrictTransitionGroupProps {
     
-    @scala.inline
-    def apply(): StrictTransitionGroupProps = {
+    inline def apply(): StrictTransitionGroupProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictTransitionGroupProps]
     }
     
-    @scala.inline
-    implicit class StrictTransitionGroupPropsMutableBuilder[Self <: StrictTransitionGroupProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictTransitionGroupProps](x: Self) {
       
-      @scala.inline
-      def setAnimation(value: SemanticTRANSITIONS | String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      inline def setAnimation(value: SemanticTRANSITIONS | String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+      inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDirectional(value: Boolean): Self = StObject.set(x, "directional", value.asInstanceOf[js.Any])
+      inline def setDirectional(value: Boolean): Self = StObject.set(x, "directional", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionalUndefined: Self = StObject.set(x, "directional", js.undefined)
+      inline def setDirectionalUndefined: Self = StObject.set(x, "directional", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double | String | TransitionPropDuration): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double | String | TransitionPropDuration): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     }
   }
   
@@ -94,8 +82,7 @@ object transitionGroupMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object TransitionGroupProps {
     
-    @scala.inline
-    def apply(): TransitionGroupProps = {
+    inline def apply(): TransitionGroupProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransitionGroupProps]
     }

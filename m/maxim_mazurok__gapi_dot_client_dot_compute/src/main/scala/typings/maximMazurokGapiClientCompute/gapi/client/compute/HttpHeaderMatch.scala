@@ -70,61 +70,43 @@ trait HttpHeaderMatch extends StObject {
 }
 object HttpHeaderMatch {
   
-  @scala.inline
-  def apply(): HttpHeaderMatch = {
+  inline def apply(): HttpHeaderMatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HttpHeaderMatch]
   }
   
-  @scala.inline
-  implicit class HttpHeaderMatchMutableBuilder[Self <: HttpHeaderMatch] (val x: Self) extends AnyVal {
+  extension [Self <: HttpHeaderMatch](x: Self) {
     
-    @scala.inline
-    def setExactMatch(value: String): Self = StObject.set(x, "exactMatch", value.asInstanceOf[js.Any])
+    inline def setExactMatch(value: String): Self = StObject.set(x, "exactMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExactMatchUndefined: Self = StObject.set(x, "exactMatch", js.undefined)
+    inline def setExactMatchUndefined: Self = StObject.set(x, "exactMatch", js.undefined)
     
-    @scala.inline
-    def setHeaderName(value: String): Self = StObject.set(x, "headerName", value.asInstanceOf[js.Any])
+    inline def setHeaderName(value: String): Self = StObject.set(x, "headerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderNameUndefined: Self = StObject.set(x, "headerName", js.undefined)
+    inline def setHeaderNameUndefined: Self = StObject.set(x, "headerName", js.undefined)
     
-    @scala.inline
-    def setInvertMatch(value: Boolean): Self = StObject.set(x, "invertMatch", value.asInstanceOf[js.Any])
+    inline def setInvertMatch(value: Boolean): Self = StObject.set(x, "invertMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvertMatchUndefined: Self = StObject.set(x, "invertMatch", js.undefined)
+    inline def setInvertMatchUndefined: Self = StObject.set(x, "invertMatch", js.undefined)
     
-    @scala.inline
-    def setPrefixMatch(value: String): Self = StObject.set(x, "prefixMatch", value.asInstanceOf[js.Any])
+    inline def setPrefixMatch(value: String): Self = StObject.set(x, "prefixMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixMatchUndefined: Self = StObject.set(x, "prefixMatch", js.undefined)
+    inline def setPrefixMatchUndefined: Self = StObject.set(x, "prefixMatch", js.undefined)
     
-    @scala.inline
-    def setPresentMatch(value: Boolean): Self = StObject.set(x, "presentMatch", value.asInstanceOf[js.Any])
+    inline def setPresentMatch(value: Boolean): Self = StObject.set(x, "presentMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresentMatchUndefined: Self = StObject.set(x, "presentMatch", js.undefined)
+    inline def setPresentMatchUndefined: Self = StObject.set(x, "presentMatch", js.undefined)
     
-    @scala.inline
-    def setRangeMatch(value: Int64RangeMatch): Self = StObject.set(x, "rangeMatch", value.asInstanceOf[js.Any])
+    inline def setRangeMatch(value: Int64RangeMatch): Self = StObject.set(x, "rangeMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeMatchUndefined: Self = StObject.set(x, "rangeMatch", js.undefined)
+    inline def setRangeMatchUndefined: Self = StObject.set(x, "rangeMatch", js.undefined)
     
-    @scala.inline
-    def setRegexMatch(value: String): Self = StObject.set(x, "regexMatch", value.asInstanceOf[js.Any])
+    inline def setRegexMatch(value: String): Self = StObject.set(x, "regexMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegexMatchUndefined: Self = StObject.set(x, "regexMatch", js.undefined)
+    inline def setRegexMatchUndefined: Self = StObject.set(x, "regexMatch", js.undefined)
     
-    @scala.inline
-    def setSuffixMatch(value: String): Self = StObject.set(x, "suffixMatch", value.asInstanceOf[js.Any])
+    inline def setSuffixMatch(value: String): Self = StObject.set(x, "suffixMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuffixMatchUndefined: Self = StObject.set(x, "suffixMatch", js.undefined)
+    inline def setSuffixMatchUndefined: Self = StObject.set(x, "suffixMatch", js.undefined)
   }
 }

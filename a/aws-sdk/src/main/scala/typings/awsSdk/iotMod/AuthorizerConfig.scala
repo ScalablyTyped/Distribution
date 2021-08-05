@@ -18,25 +18,19 @@ trait AuthorizerConfig extends StObject {
 }
 object AuthorizerConfig {
   
-  @scala.inline
-  def apply(): AuthorizerConfig = {
+  inline def apply(): AuthorizerConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuthorizerConfig]
   }
   
-  @scala.inline
-  implicit class AuthorizerConfigMutableBuilder[Self <: AuthorizerConfig] (val x: Self) extends AnyVal {
+  extension [Self <: AuthorizerConfig](x: Self) {
     
-    @scala.inline
-    def setAllowAuthorizerOverride(value: AllowAuthorizerOverride): Self = StObject.set(x, "allowAuthorizerOverride", value.asInstanceOf[js.Any])
+    inline def setAllowAuthorizerOverride(value: AllowAuthorizerOverride): Self = StObject.set(x, "allowAuthorizerOverride", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowAuthorizerOverrideUndefined: Self = StObject.set(x, "allowAuthorizerOverride", js.undefined)
+    inline def setAllowAuthorizerOverrideUndefined: Self = StObject.set(x, "allowAuthorizerOverride", js.undefined)
     
-    @scala.inline
-    def setDefaultAuthorizerName(value: AuthorizerName): Self = StObject.set(x, "defaultAuthorizerName", value.asInstanceOf[js.Any])
+    inline def setDefaultAuthorizerName(value: AuthorizerName): Self = StObject.set(x, "defaultAuthorizerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultAuthorizerNameUndefined: Self = StObject.set(x, "defaultAuthorizerName", js.undefined)
+    inline def setDefaultAuthorizerNameUndefined: Self = StObject.set(x, "defaultAuthorizerName", js.undefined)
   }
 }

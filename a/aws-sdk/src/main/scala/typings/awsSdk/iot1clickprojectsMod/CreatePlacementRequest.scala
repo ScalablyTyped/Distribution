@@ -23,25 +23,19 @@ trait CreatePlacementRequest extends StObject {
 }
 object CreatePlacementRequest {
   
-  @scala.inline
-  def apply(placementName: PlacementName, projectName: ProjectName): CreatePlacementRequest = {
+  inline def apply(placementName: PlacementName, projectName: ProjectName): CreatePlacementRequest = {
     val __obj = js.Dynamic.literal(placementName = placementName.asInstanceOf[js.Any], projectName = projectName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreatePlacementRequest]
   }
   
-  @scala.inline
-  implicit class CreatePlacementRequestMutableBuilder[Self <: CreatePlacementRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreatePlacementRequest](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: PlacementAttributeMap): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: PlacementAttributeMap): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setPlacementName(value: PlacementName): Self = StObject.set(x, "placementName", value.asInstanceOf[js.Any])
+    inline def setPlacementName(value: PlacementName): Self = StObject.set(x, "placementName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectName(value: ProjectName): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
+    inline def setProjectName(value: ProjectName): Self = StObject.set(x, "projectName", value.asInstanceOf[js.Any])
   }
 }

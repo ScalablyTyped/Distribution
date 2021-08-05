@@ -11,19 +11,15 @@ trait ViewabilityTargetingOptionDetails extends StObject {
 }
 object ViewabilityTargetingOptionDetails {
   
-  @scala.inline
-  def apply(): ViewabilityTargetingOptionDetails = {
+  inline def apply(): ViewabilityTargetingOptionDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ViewabilityTargetingOptionDetails]
   }
   
-  @scala.inline
-  implicit class ViewabilityTargetingOptionDetailsMutableBuilder[Self <: ViewabilityTargetingOptionDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ViewabilityTargetingOptionDetails](x: Self) {
     
-    @scala.inline
-    def setViewability(value: String): Self = StObject.set(x, "viewability", value.asInstanceOf[js.Any])
+    inline def setViewability(value: String): Self = StObject.set(x, "viewability", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewabilityUndefined: Self = StObject.set(x, "viewability", js.undefined)
+    inline def setViewabilityUndefined: Self = StObject.set(x, "viewability", js.undefined)
   }
 }

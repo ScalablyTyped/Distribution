@@ -12,8 +12,7 @@ object linearProgressBarUniDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def linearProgressBarUniDriverFactory(base: UniDriver[js.Any]): LinearProgressBarUniDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("linearProgressBarUniDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[LinearProgressBarUniDriver]
+  inline def linearProgressBarUniDriverFactory(base: UniDriver[js.Any]): LinearProgressBarUniDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("linearProgressBarUniDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[LinearProgressBarUniDriver]
   
   trait LinearProgressBarUniDriver
     extends StObject
@@ -66,8 +65,7 @@ object linearProgressBarUniDriverMod {
   }
   object LinearProgressBarUniDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
       exists: () => js.Promise[Boolean],
@@ -91,53 +89,37 @@ object linearProgressBarUniDriverMod {
       __obj.asInstanceOf[LinearProgressBarUniDriver]
     }
     
-    @scala.inline
-    implicit class LinearProgressBarUniDriverMutableBuilder[Self <: LinearProgressBarUniDriver] (val x: Self) extends AnyVal {
+    extension [Self <: LinearProgressBarUniDriver](x: Self) {
       
-      @scala.inline
-      def setGetAriaValueMax(value: () => js.Promise[Double]): Self = StObject.set(x, "getAriaValueMax", js.Any.fromFunction0(value))
+      inline def setGetAriaValueMax(value: () => js.Promise[Double]): Self = StObject.set(x, "getAriaValueMax", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAriaValueMin(value: () => js.Promise[Double]): Self = StObject.set(x, "getAriaValueMin", js.Any.fromFunction0(value))
+      inline def setGetAriaValueMin(value: () => js.Promise[Double]): Self = StObject.set(x, "getAriaValueMin", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAriaValueNow(value: () => js.Promise[Double]): Self = StObject.set(x, "getAriaValueNow", js.Any.fromFunction0(value))
+      inline def setGetAriaValueNow(value: () => js.Promise[Double]): Self = StObject.set(x, "getAriaValueNow", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAriaValueText(value: () => js.Promise[String]): Self = StObject.set(x, "getAriaValueText", js.Any.fromFunction0(value))
+      inline def setGetAriaValueText(value: () => js.Promise[String]): Self = StObject.set(x, "getAriaValueText", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMaxValue(value: () => js.Promise[Double]): Self = StObject.set(x, "getMaxValue", js.Any.fromFunction0(value))
+      inline def setGetMaxValue(value: () => js.Promise[Double]): Self = StObject.set(x, "getMaxValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMinValue(value: () => js.Promise[Double]): Self = StObject.set(x, "getMinValue", js.Any.fromFunction0(value))
+      inline def setGetMinValue(value: () => js.Promise[Double]): Self = StObject.set(x, "getMinValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetNumericValue(value: () => js.Promise[Double]): Self = StObject.set(x, "getNumericValue", js.Any.fromFunction0(value))
+      inline def setGetNumericValue(value: () => js.Promise[Double]): Self = StObject.set(x, "getNumericValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRoleAttribute(value: () => js.Promise[String]): Self = StObject.set(x, "getRoleAttribute", js.Any.fromFunction0(value))
+      inline def setGetRoleAttribute(value: () => js.Promise[String]): Self = StObject.set(x, "getRoleAttribute", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValue(value: () => js.Promise[String]): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+      inline def setGetValue(value: () => js.Promise[String]): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWidth(value: () => js.Promise[String]): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
+      inline def setGetWidth(value: () => js.Promise[String]): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHasError(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasError", js.Any.fromFunction0(value))
+      inline def setHasError(value: () => js.Promise[Boolean]): Self = StObject.set(x, "hasError", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsCompleted(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isCompleted", js.Any.fromFunction0(value))
+      inline def setIsCompleted(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isCompleted", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsErrorIconDisplayed(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isErrorIconDisplayed", js.Any.fromFunction0(value))
+      inline def setIsErrorIconDisplayed(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isErrorIconDisplayed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsPercentagesProgressDisplayed(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isPercentagesProgressDisplayed", js.Any.fromFunction0(value))
+      inline def setIsPercentagesProgressDisplayed(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isPercentagesProgressDisplayed", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsSuccessIconDisplayed(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isSuccessIconDisplayed", js.Any.fromFunction0(value))
+      inline def setIsSuccessIconDisplayed(value: () => js.Promise[Boolean]): Self = StObject.set(x, "isSuccessIconDisplayed", js.Any.fromFunction0(value))
     }
   }
 }

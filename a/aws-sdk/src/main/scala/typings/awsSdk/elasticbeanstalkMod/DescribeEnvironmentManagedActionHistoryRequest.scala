@@ -28,37 +28,27 @@ trait DescribeEnvironmentManagedActionHistoryRequest extends StObject {
 }
 object DescribeEnvironmentManagedActionHistoryRequest {
   
-  @scala.inline
-  def apply(): DescribeEnvironmentManagedActionHistoryRequest = {
+  inline def apply(): DescribeEnvironmentManagedActionHistoryRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeEnvironmentManagedActionHistoryRequest]
   }
   
-  @scala.inline
-  implicit class DescribeEnvironmentManagedActionHistoryRequestMutableBuilder[Self <: DescribeEnvironmentManagedActionHistoryRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEnvironmentManagedActionHistoryRequest](x: Self) {
     
-    @scala.inline
-    def setEnvironmentId(value: EnvironmentId): Self = StObject.set(x, "EnvironmentId", value.asInstanceOf[js.Any])
+    inline def setEnvironmentId(value: EnvironmentId): Self = StObject.set(x, "EnvironmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentIdUndefined: Self = StObject.set(x, "EnvironmentId", js.undefined)
+    inline def setEnvironmentIdUndefined: Self = StObject.set(x, "EnvironmentId", js.undefined)
     
-    @scala.inline
-    def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
+    inline def setEnvironmentName(value: EnvironmentName): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentNameUndefined: Self = StObject.set(x, "EnvironmentName", js.undefined)
+    inline def setEnvironmentNameUndefined: Self = StObject.set(x, "EnvironmentName", js.undefined)
     
-    @scala.inline
-    def setMaxItems(value: Integer): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: Integer): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
+    inline def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

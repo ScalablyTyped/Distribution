@@ -126,8 +126,7 @@ object dateFormattingTypesMod {
   }
   object ICalendarStrings {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       days: js.Array[String],
       formatDay: Date => String,
       formatMonthDayYear: (Date, IDateGridStrings) => String,
@@ -145,131 +144,89 @@ object dateFormattingTypesMod {
       __obj.asInstanceOf[ICalendarStrings]
     }
     
-    @scala.inline
-    implicit class ICalendarStringsMutableBuilder[Self <: ICalendarStrings] (val x: Self) extends AnyVal {
+    extension [Self <: ICalendarStrings](x: Self) {
       
-      @scala.inline
-      def setCloseButtonAriaLabel(value: String): Self = StObject.set(x, "closeButtonAriaLabel", value.asInstanceOf[js.Any])
+      inline def setCloseButtonAriaLabel(value: String): Self = StObject.set(x, "closeButtonAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseButtonAriaLabelUndefined: Self = StObject.set(x, "closeButtonAriaLabel", js.undefined)
+      inline def setCloseButtonAriaLabelUndefined: Self = StObject.set(x, "closeButtonAriaLabel", js.undefined)
       
-      @scala.inline
-      def setGoToToday(value: String): Self = StObject.set(x, "goToToday", value.asInstanceOf[js.Any])
+      inline def setGoToToday(value: String): Self = StObject.set(x, "goToToday", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputAriaLabel(value: String): Self = StObject.set(x, "inputAriaLabel", value.asInstanceOf[js.Any])
+      inline def setInputAriaLabel(value: String): Self = StObject.set(x, "inputAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputAriaLabelUndefined: Self = StObject.set(x, "inputAriaLabel", js.undefined)
+      inline def setInputAriaLabelUndefined: Self = StObject.set(x, "inputAriaLabel", js.undefined)
       
-      @scala.inline
-      def setInputBoundedFormatString(value: String): Self = StObject.set(x, "inputBoundedFormatString", value.asInstanceOf[js.Any])
+      inline def setInputBoundedFormatString(value: String): Self = StObject.set(x, "inputBoundedFormatString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputBoundedFormatStringUndefined: Self = StObject.set(x, "inputBoundedFormatString", js.undefined)
+      inline def setInputBoundedFormatStringUndefined: Self = StObject.set(x, "inputBoundedFormatString", js.undefined)
       
-      @scala.inline
-      def setInputMaxBoundedFormatString(value: String): Self = StObject.set(x, "inputMaxBoundedFormatString", value.asInstanceOf[js.Any])
+      inline def setInputMaxBoundedFormatString(value: String): Self = StObject.set(x, "inputMaxBoundedFormatString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputMaxBoundedFormatStringUndefined: Self = StObject.set(x, "inputMaxBoundedFormatString", js.undefined)
+      inline def setInputMaxBoundedFormatStringUndefined: Self = StObject.set(x, "inputMaxBoundedFormatString", js.undefined)
       
-      @scala.inline
-      def setInputMinBoundedFormatString(value: String): Self = StObject.set(x, "inputMinBoundedFormatString", value.asInstanceOf[js.Any])
+      inline def setInputMinBoundedFormatString(value: String): Self = StObject.set(x, "inputMinBoundedFormatString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputMinBoundedFormatStringUndefined: Self = StObject.set(x, "inputMinBoundedFormatString", js.undefined)
+      inline def setInputMinBoundedFormatStringUndefined: Self = StObject.set(x, "inputMinBoundedFormatString", js.undefined)
       
-      @scala.inline
-      def setInputPlaceholder(value: String): Self = StObject.set(x, "inputPlaceholder", value.asInstanceOf[js.Any])
+      inline def setInputPlaceholder(value: String): Self = StObject.set(x, "inputPlaceholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidInputErrorMessage(value: String): Self = StObject.set(x, "invalidInputErrorMessage", value.asInstanceOf[js.Any])
+      inline def setInvalidInputErrorMessage(value: String): Self = StObject.set(x, "invalidInputErrorMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvalidInputErrorMessageUndefined: Self = StObject.set(x, "invalidInputErrorMessage", js.undefined)
+      inline def setInvalidInputErrorMessageUndefined: Self = StObject.set(x, "invalidInputErrorMessage", js.undefined)
       
-      @scala.inline
-      def setIsOutOfBoundsErrorMessage(value: String): Self = StObject.set(x, "isOutOfBoundsErrorMessage", value.asInstanceOf[js.Any])
+      inline def setIsOutOfBoundsErrorMessage(value: String): Self = StObject.set(x, "isOutOfBoundsErrorMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOutOfBoundsErrorMessageUndefined: Self = StObject.set(x, "isOutOfBoundsErrorMessage", js.undefined)
+      inline def setIsOutOfBoundsErrorMessageUndefined: Self = StObject.set(x, "isOutOfBoundsErrorMessage", js.undefined)
       
-      @scala.inline
-      def setIsRequiredErrorMessage(value: String): Self = StObject.set(x, "isRequiredErrorMessage", value.asInstanceOf[js.Any])
+      inline def setIsRequiredErrorMessage(value: String): Self = StObject.set(x, "isRequiredErrorMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRequiredErrorMessageUndefined: Self = StObject.set(x, "isRequiredErrorMessage", js.undefined)
+      inline def setIsRequiredErrorMessageUndefined: Self = StObject.set(x, "isRequiredErrorMessage", js.undefined)
       
-      @scala.inline
-      def setMonthPickerHeaderAriaLabel(value: String): Self = StObject.set(x, "monthPickerHeaderAriaLabel", value.asInstanceOf[js.Any])
+      inline def setMonthPickerHeaderAriaLabel(value: String): Self = StObject.set(x, "monthPickerHeaderAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthPickerHeaderAriaLabelUndefined: Self = StObject.set(x, "monthPickerHeaderAriaLabel", js.undefined)
+      inline def setMonthPickerHeaderAriaLabelUndefined: Self = StObject.set(x, "monthPickerHeaderAriaLabel", js.undefined)
       
-      @scala.inline
-      def setNextMonthAriaLabel(value: String): Self = StObject.set(x, "nextMonthAriaLabel", value.asInstanceOf[js.Any])
+      inline def setNextMonthAriaLabel(value: String): Self = StObject.set(x, "nextMonthAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextMonthAriaLabelUndefined: Self = StObject.set(x, "nextMonthAriaLabel", js.undefined)
+      inline def setNextMonthAriaLabelUndefined: Self = StObject.set(x, "nextMonthAriaLabel", js.undefined)
       
-      @scala.inline
-      def setNextYearAriaLabel(value: String): Self = StObject.set(x, "nextYearAriaLabel", value.asInstanceOf[js.Any])
+      inline def setNextYearAriaLabel(value: String): Self = StObject.set(x, "nextYearAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextYearAriaLabelUndefined: Self = StObject.set(x, "nextYearAriaLabel", js.undefined)
+      inline def setNextYearAriaLabelUndefined: Self = StObject.set(x, "nextYearAriaLabel", js.undefined)
       
-      @scala.inline
-      def setNextYearRangeAriaLabel(value: String): Self = StObject.set(x, "nextYearRangeAriaLabel", value.asInstanceOf[js.Any])
+      inline def setNextYearRangeAriaLabel(value: String): Self = StObject.set(x, "nextYearRangeAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextYearRangeAriaLabelUndefined: Self = StObject.set(x, "nextYearRangeAriaLabel", js.undefined)
+      inline def setNextYearRangeAriaLabelUndefined: Self = StObject.set(x, "nextYearRangeAriaLabel", js.undefined)
       
-      @scala.inline
-      def setOpenCalendarTitle(value: String): Self = StObject.set(x, "openCalendarTitle", value.asInstanceOf[js.Any])
+      inline def setOpenCalendarTitle(value: String): Self = StObject.set(x, "openCalendarTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevMonthAriaLabel(value: String): Self = StObject.set(x, "prevMonthAriaLabel", value.asInstanceOf[js.Any])
+      inline def setPrevMonthAriaLabel(value: String): Self = StObject.set(x, "prevMonthAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevMonthAriaLabelUndefined: Self = StObject.set(x, "prevMonthAriaLabel", js.undefined)
+      inline def setPrevMonthAriaLabelUndefined: Self = StObject.set(x, "prevMonthAriaLabel", js.undefined)
       
-      @scala.inline
-      def setPrevYearAriaLabel(value: String): Self = StObject.set(x, "prevYearAriaLabel", value.asInstanceOf[js.Any])
+      inline def setPrevYearAriaLabel(value: String): Self = StObject.set(x, "prevYearAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevYearAriaLabelUndefined: Self = StObject.set(x, "prevYearAriaLabel", js.undefined)
+      inline def setPrevYearAriaLabelUndefined: Self = StObject.set(x, "prevYearAriaLabel", js.undefined)
       
-      @scala.inline
-      def setPrevYearRangeAriaLabel(value: String): Self = StObject.set(x, "prevYearRangeAriaLabel", value.asInstanceOf[js.Any])
+      inline def setPrevYearRangeAriaLabel(value: String): Self = StObject.set(x, "prevYearRangeAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrevYearRangeAriaLabelUndefined: Self = StObject.set(x, "prevYearRangeAriaLabel", js.undefined)
+      inline def setPrevYearRangeAriaLabelUndefined: Self = StObject.set(x, "prevYearRangeAriaLabel", js.undefined)
       
-      @scala.inline
-      def setSelectedDateFormatString(value: String): Self = StObject.set(x, "selectedDateFormatString", value.asInstanceOf[js.Any])
+      inline def setSelectedDateFormatString(value: String): Self = StObject.set(x, "selectedDateFormatString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedDateFormatStringUndefined: Self = StObject.set(x, "selectedDateFormatString", js.undefined)
+      inline def setSelectedDateFormatStringUndefined: Self = StObject.set(x, "selectedDateFormatString", js.undefined)
       
-      @scala.inline
-      def setTodayDateFormatString(value: String): Self = StObject.set(x, "todayDateFormatString", value.asInstanceOf[js.Any])
+      inline def setTodayDateFormatString(value: String): Self = StObject.set(x, "todayDateFormatString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTodayDateFormatStringUndefined: Self = StObject.set(x, "todayDateFormatString", js.undefined)
+      inline def setTodayDateFormatStringUndefined: Self = StObject.set(x, "todayDateFormatString", js.undefined)
       
-      @scala.inline
-      def setWeekNumberFormatString(value: String): Self = StObject.set(x, "weekNumberFormatString", value.asInstanceOf[js.Any])
+      inline def setWeekNumberFormatString(value: String): Self = StObject.set(x, "weekNumberFormatString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeekNumberFormatStringUndefined: Self = StObject.set(x, "weekNumberFormatString", js.undefined)
+      inline def setWeekNumberFormatStringUndefined: Self = StObject.set(x, "weekNumberFormatString", js.undefined)
       
-      @scala.inline
-      def setYearPickerHeaderAriaLabel(value: String): Self = StObject.set(x, "yearPickerHeaderAriaLabel", value.asInstanceOf[js.Any])
+      inline def setYearPickerHeaderAriaLabel(value: String): Self = StObject.set(x, "yearPickerHeaderAriaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYearPickerHeaderAriaLabelUndefined: Self = StObject.set(x, "yearPickerHeaderAriaLabel", js.undefined)
+      inline def setYearPickerHeaderAriaLabelUndefined: Self = StObject.set(x, "yearPickerHeaderAriaLabel", js.undefined)
     }
   }
   
@@ -308,8 +265,7 @@ object dateFormattingTypesMod {
   }
   object IDateFormatting {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       days: js.Array[String],
       formatDay: Date => String,
       formatMonthDayYear: (Date, IDateGridStrings) => String,
@@ -324,23 +280,17 @@ object dateFormattingTypesMod {
       __obj.asInstanceOf[IDateFormatting]
     }
     
-    @scala.inline
-    implicit class IDateFormattingMutableBuilder[Self <: IDateFormatting] (val x: Self) extends AnyVal {
+    extension [Self <: IDateFormatting](x: Self) {
       
-      @scala.inline
-      def setFormatDay(value: Date => String): Self = StObject.set(x, "formatDay", js.Any.fromFunction1(value))
+      inline def setFormatDay(value: Date => String): Self = StObject.set(x, "formatDay", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFormatMonthDayYear(value: (Date, IDateGridStrings) => String): Self = StObject.set(x, "formatMonthDayYear", js.Any.fromFunction2(value))
+      inline def setFormatMonthDayYear(value: (Date, IDateGridStrings) => String): Self = StObject.set(x, "formatMonthDayYear", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFormatMonthYear(value: (Date, IDateGridStrings) => String): Self = StObject.set(x, "formatMonthYear", js.Any.fromFunction2(value))
+      inline def setFormatMonthYear(value: (Date, IDateGridStrings) => String): Self = StObject.set(x, "formatMonthYear", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFormatYear(value: Date => String): Self = StObject.set(x, "formatYear", js.Any.fromFunction1(value))
+      inline def setFormatYear(value: Date => String): Self = StObject.set(x, "formatYear", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setParseDate(value: String => Date | Null): Self = StObject.set(x, "parseDate", js.Any.fromFunction1(value))
+      inline def setParseDate(value: String => Date | Null): Self = StObject.set(x, "parseDate", js.Any.fromFunction1(value))
     }
   }
   
@@ -372,8 +322,7 @@ object dateFormattingTypesMod {
   }
   object IDateGridStrings {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       days: js.Array[String],
       months: js.Array[String],
       shortDays: js.Array[String],
@@ -383,32 +332,23 @@ object dateFormattingTypesMod {
       __obj.asInstanceOf[IDateGridStrings]
     }
     
-    @scala.inline
-    implicit class IDateGridStringsMutableBuilder[Self <: IDateGridStrings] (val x: Self) extends AnyVal {
+    extension [Self <: IDateGridStrings](x: Self) {
       
-      @scala.inline
-      def setDays(value: js.Array[String]): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
+      inline def setDays(value: js.Array[String]): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDaysVarargs(value: String*): Self = StObject.set(x, "days", js.Array(value :_*))
+      inline def setDaysVarargs(value: String*): Self = StObject.set(x, "days", js.Array(value :_*))
       
-      @scala.inline
-      def setMonths(value: js.Array[String]): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
+      inline def setMonths(value: js.Array[String]): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value :_*))
+      inline def setMonthsVarargs(value: String*): Self = StObject.set(x, "months", js.Array(value :_*))
       
-      @scala.inline
-      def setShortDays(value: js.Array[String]): Self = StObject.set(x, "shortDays", value.asInstanceOf[js.Any])
+      inline def setShortDays(value: js.Array[String]): Self = StObject.set(x, "shortDays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortDaysVarargs(value: String*): Self = StObject.set(x, "shortDays", js.Array(value :_*))
+      inline def setShortDaysVarargs(value: String*): Self = StObject.set(x, "shortDays", js.Array(value :_*))
       
-      @scala.inline
-      def setShortMonths(value: js.Array[String]): Self = StObject.set(x, "shortMonths", value.asInstanceOf[js.Any])
+      inline def setShortMonths(value: js.Array[String]): Self = StObject.set(x, "shortMonths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortMonthsVarargs(value: String*): Self = StObject.set(x, "shortMonths", js.Array(value :_*))
+      inline def setShortMonthsVarargs(value: String*): Self = StObject.set(x, "shortMonths", js.Array(value :_*))
     }
   }
 }

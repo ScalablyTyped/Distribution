@@ -29,28 +29,21 @@ trait UserPoolClientAnalyticsConfiguration extends StObject {
 }
 object UserPoolClientAnalyticsConfiguration {
   
-  @scala.inline
-  def apply(applicationId: Input[String], externalId: Input[String], roleArn: Input[String]): UserPoolClientAnalyticsConfiguration = {
+  inline def apply(applicationId: Input[String], externalId: Input[String], roleArn: Input[String]): UserPoolClientAnalyticsConfiguration = {
     val __obj = js.Dynamic.literal(applicationId = applicationId.asInstanceOf[js.Any], externalId = externalId.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserPoolClientAnalyticsConfiguration]
   }
   
-  @scala.inline
-  implicit class UserPoolClientAnalyticsConfigurationMutableBuilder[Self <: UserPoolClientAnalyticsConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: UserPoolClientAnalyticsConfiguration](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: Input[String]): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: Input[String]): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalId(value: Input[String]): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
+    inline def setExternalId(value: Input[String]): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: Input[String]): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserDataShared(value: Input[Boolean]): Self = StObject.set(x, "userDataShared", value.asInstanceOf[js.Any])
+    inline def setUserDataShared(value: Input[Boolean]): Self = StObject.set(x, "userDataShared", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserDataSharedUndefined: Self = StObject.set(x, "userDataShared", js.undefined)
+    inline def setUserDataSharedUndefined: Self = StObject.set(x, "userDataShared", js.undefined)
   }
 }

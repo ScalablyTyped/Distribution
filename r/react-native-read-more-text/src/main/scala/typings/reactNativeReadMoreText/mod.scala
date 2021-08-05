@@ -29,8 +29,7 @@ object mod {
   }
   object ReadMoreProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       numberOfLines: Double,
       renderRevealedFooter: js.Function0[Unit] => ReactNode,
       renderTruncatedFooter: js.Function0[Unit] => ReactNode
@@ -39,29 +38,21 @@ object mod {
       __obj.asInstanceOf[ReadMoreProps]
     }
     
-    @scala.inline
-    implicit class ReadMorePropsMutableBuilder[Self <: ReadMoreProps] (val x: Self) extends AnyVal {
+    extension [Self <: ReadMoreProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setNumberOfLines(value: Double): Self = StObject.set(x, "numberOfLines", value.asInstanceOf[js.Any])
+      inline def setNumberOfLines(value: Double): Self = StObject.set(x, "numberOfLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnReady(value: () => Unit): Self = StObject.set(x, "onReady", js.Any.fromFunction0(value))
+      inline def setOnReady(value: () => Unit): Self = StObject.set(x, "onReady", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
+      inline def setOnReadyUndefined: Self = StObject.set(x, "onReady", js.undefined)
       
-      @scala.inline
-      def setRenderRevealedFooter(value: js.Function0[Unit] => ReactNode): Self = StObject.set(x, "renderRevealedFooter", js.Any.fromFunction1(value))
+      inline def setRenderRevealedFooter(value: js.Function0[Unit] => ReactNode): Self = StObject.set(x, "renderRevealedFooter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderTruncatedFooter(value: js.Function0[Unit] => ReactNode): Self = StObject.set(x, "renderTruncatedFooter", js.Any.fromFunction1(value))
+      inline def setRenderTruncatedFooter(value: js.Function0[Unit] => ReactNode): Self = StObject.set(x, "renderTruncatedFooter", js.Any.fromFunction1(value))
     }
   }
 }

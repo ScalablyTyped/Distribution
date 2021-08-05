@@ -11,9 +11,7 @@ object firstFocusMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def pickFirstFocus(nodes: js.Array[HTMLInputElement]): HTMLInputElement = ^.asInstanceOf[js.Dynamic].applyDynamic("pickFirstFocus")(nodes.asInstanceOf[js.Any]).asInstanceOf[HTMLInputElement]
+  inline def pickFirstFocus(nodes: js.Array[HTMLInputElement]): HTMLInputElement = ^.asInstanceOf[js.Dynamic].applyDynamic("pickFirstFocus")(nodes.asInstanceOf[js.Any]).asInstanceOf[HTMLInputElement]
   
-  @scala.inline
-  def pickFocusable(nodes: js.Array[HTMLInputElement], index: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("pickFocusable")(nodes.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def pickFocusable(nodes: js.Array[HTMLInputElement], index: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("pickFocusable")(nodes.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

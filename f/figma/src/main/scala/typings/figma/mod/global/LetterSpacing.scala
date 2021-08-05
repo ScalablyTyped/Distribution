@@ -14,19 +14,15 @@ trait LetterSpacing extends StObject {
 }
 object LetterSpacing {
   
-  @scala.inline
-  def apply(unit: PIXELS | PERCENT, value: Double): LetterSpacing = {
+  inline def apply(unit: PIXELS | PERCENT, value: Double): LetterSpacing = {
     val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[LetterSpacing]
   }
   
-  @scala.inline
-  implicit class LetterSpacingMutableBuilder[Self <: LetterSpacing] (val x: Self) extends AnyVal {
+  extension [Self <: LetterSpacing](x: Self) {
     
-    @scala.inline
-    def setUnit(value: PIXELS | PERCENT): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: PIXELS | PERCENT): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

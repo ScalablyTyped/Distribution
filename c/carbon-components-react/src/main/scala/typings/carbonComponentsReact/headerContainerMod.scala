@@ -13,8 +13,7 @@ object headerContainerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[RP](props: FCProps[HeaderContainerProps[RP]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default[RP](props: FCProps[HeaderContainerProps[RP]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
   
   trait HeaderContainerProps[RP] extends StObject {
     
@@ -24,23 +23,18 @@ object headerContainerMod {
   }
   object HeaderContainerProps {
     
-    @scala.inline
-    def apply[RP](render: ComponentType[RP]): HeaderContainerProps[RP] = {
+    inline def apply[RP](render: ComponentType[RP]): HeaderContainerProps[RP] = {
       val __obj = js.Dynamic.literal(render = render.asInstanceOf[js.Any])
       __obj.asInstanceOf[HeaderContainerProps[RP]]
     }
     
-    @scala.inline
-    implicit class HeaderContainerPropsMutableBuilder[Self <: HeaderContainerProps[?], RP] (val x: Self & HeaderContainerProps[RP]) extends AnyVal {
+    extension [Self <: HeaderContainerProps[?], RP](x: Self & HeaderContainerProps[RP]) {
       
-      @scala.inline
-      def setIsSideNavExpanded(value: Boolean): Self = StObject.set(x, "isSideNavExpanded", value.asInstanceOf[js.Any])
+      inline def setIsSideNavExpanded(value: Boolean): Self = StObject.set(x, "isSideNavExpanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSideNavExpandedUndefined: Self = StObject.set(x, "isSideNavExpanded", js.undefined)
+      inline def setIsSideNavExpandedUndefined: Self = StObject.set(x, "isSideNavExpanded", js.undefined)
       
-      @scala.inline
-      def setRender(value: ComponentType[RP]): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+      inline def setRender(value: ComponentType[RP]): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
     }
   }
   
@@ -52,20 +46,16 @@ object headerContainerMod {
   }
   object HeaderContainerRenderProps {
     
-    @scala.inline
-    def apply(isSideNavExpanded: Boolean, onClickSideNavExpand: () => Unit): HeaderContainerRenderProps = {
+    inline def apply(isSideNavExpanded: Boolean, onClickSideNavExpand: () => Unit): HeaderContainerRenderProps = {
       val __obj = js.Dynamic.literal(isSideNavExpanded = isSideNavExpanded.asInstanceOf[js.Any], onClickSideNavExpand = js.Any.fromFunction0(onClickSideNavExpand))
       __obj.asInstanceOf[HeaderContainerRenderProps]
     }
     
-    @scala.inline
-    implicit class HeaderContainerRenderPropsMutableBuilder[Self <: HeaderContainerRenderProps] (val x: Self) extends AnyVal {
+    extension [Self <: HeaderContainerRenderProps](x: Self) {
       
-      @scala.inline
-      def setIsSideNavExpanded(value: Boolean): Self = StObject.set(x, "isSideNavExpanded", value.asInstanceOf[js.Any])
+      inline def setIsSideNavExpanded(value: Boolean): Self = StObject.set(x, "isSideNavExpanded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnClickSideNavExpand(value: () => Unit): Self = StObject.set(x, "onClickSideNavExpand", js.Any.fromFunction0(value))
+      inline def setOnClickSideNavExpand(value: () => Unit): Self = StObject.set(x, "onClickSideNavExpand", js.Any.fromFunction0(value))
     }
   }
 }

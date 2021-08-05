@@ -11,6 +11,5 @@ object BitVector {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getBitVector(allowUndefinedValues: Boolean): IBitVector = ^.asInstanceOf[js.Dynamic].applyDynamic("getBitVector")(allowUndefinedValues.asInstanceOf[js.Any]).asInstanceOf[IBitVector]
+  inline def getBitVector(allowUndefinedValues: Boolean): IBitVector = ^.asInstanceOf[js.Dynamic].applyDynamic("getBitVector")(allowUndefinedValues.asInstanceOf[js.Any]).asInstanceOf[IBitVector]
 }

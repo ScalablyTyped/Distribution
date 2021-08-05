@@ -12,19 +12,15 @@ trait CloseData extends StObject {
 }
 object CloseData {
   
-  @scala.inline
-  def apply(code: Double, reason: String): CloseData = {
+  inline def apply(code: Double, reason: String): CloseData = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloseData]
   }
   
-  @scala.inline
-  implicit class CloseDataMutableBuilder[Self <: CloseData] (val x: Self) extends AnyVal {
+  extension [Self <: CloseData](x: Self) {
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

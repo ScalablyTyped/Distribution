@@ -29,31 +29,23 @@ trait IopenLocation
 }
 object IopenLocation {
   
-  @scala.inline
-  def apply(address: String, infoUrl: String, latitude: Double, longitude: Double, name: String, scale: Double): IopenLocation = {
+  inline def apply(address: String, infoUrl: String, latitude: Double, longitude: Double, name: String, scale: Double): IopenLocation = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], infoUrl = infoUrl.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any])
     __obj.asInstanceOf[IopenLocation]
   }
   
-  @scala.inline
-  implicit class IopenLocationMutableBuilder[Self <: IopenLocation] (val x: Self) extends AnyVal {
+  extension [Self <: IopenLocation](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoUrl(value: String): Self = StObject.set(x, "infoUrl", value.asInstanceOf[js.Any])
+    inline def setInfoUrl(value: String): Self = StObject.set(x, "infoUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+    inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+    inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
   }
 }

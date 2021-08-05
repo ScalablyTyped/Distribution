@@ -12,8 +12,7 @@ object typeCheckerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def typecheck[IT /* <: IAnyType */](`type`: IT, value: ExtractCSTWithSTN[IT]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("typecheck")(`type`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def typecheck[IT /* <: IAnyType */](`type`: IT, value: ExtractCSTWithSTN[IT]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("typecheck")(`type`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type IValidationContext = js.Array[IValidationContextEntry]
   
@@ -27,21 +26,17 @@ object typeCheckerMod {
   }
   object IValidationContextEntry {
     
-    @scala.inline
-    def apply(path: String, `type`: IAnyType): IValidationContextEntry = {
+    inline def apply(path: String, `type`: IAnyType): IValidationContextEntry = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[IValidationContextEntry]
     }
     
-    @scala.inline
-    implicit class IValidationContextEntryMutableBuilder[Self <: IValidationContextEntry] (val x: Self) extends AnyVal {
+    extension [Self <: IValidationContextEntry](x: Self) {
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: IAnyType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: IAnyType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -58,29 +53,22 @@ object typeCheckerMod {
   }
   object IValidationError {
     
-    @scala.inline
-    def apply(context: IValidationContext, value: js.Any): IValidationError = {
+    inline def apply(context: IValidationContext, value: js.Any): IValidationError = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[IValidationError]
     }
     
-    @scala.inline
-    implicit class IValidationErrorMutableBuilder[Self <: IValidationError] (val x: Self) extends AnyVal {
+    extension [Self <: IValidationError](x: Self) {
       
-      @scala.inline
-      def setContext(value: IValidationContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: IValidationContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextVarargs(value: IValidationContextEntry*): Self = StObject.set(x, "context", js.Array(value :_*))
+      inline def setContextVarargs(value: IValidationContextEntry*): Self = StObject.set(x, "context", js.Array(value :_*))
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   

@@ -355,17 +355,14 @@ object cloudtraceV1Mod {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal(version = "v1")
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setVersion(value: v1): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+        inline def setVersion(value: v1): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       }
     }
     
@@ -390,32 +387,24 @@ object cloudtraceV1Mod {
     }
     object ParamsResourceProjectsPatchtraces {
       
-      @scala.inline
-      def apply(): ParamsResourceProjectsPatchtraces = {
+      inline def apply(): ParamsResourceProjectsPatchtraces = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ParamsResourceProjectsPatchtraces]
       }
       
-      @scala.inline
-      implicit class ParamsResourceProjectsPatchtracesMutableBuilder[Self <: ParamsResourceProjectsPatchtraces] (val x: Self) extends AnyVal {
+      extension [Self <: ParamsResourceProjectsPatchtraces](x: Self) {
         
-        @scala.inline
-        def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
         
-        @scala.inline
-        def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+        inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+        inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
         
-        @scala.inline
-        def setRequestBody(value: SchemaTraces): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+        inline def setRequestBody(value: SchemaTraces): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+        inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
       }
     }
     
@@ -440,32 +429,24 @@ object cloudtraceV1Mod {
     }
     object ParamsResourceProjectsTracesGet {
       
-      @scala.inline
-      def apply(): ParamsResourceProjectsTracesGet = {
+      inline def apply(): ParamsResourceProjectsTracesGet = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ParamsResourceProjectsTracesGet]
       }
       
-      @scala.inline
-      implicit class ParamsResourceProjectsTracesGetMutableBuilder[Self <: ParamsResourceProjectsTracesGet] (val x: Self) extends AnyVal {
+      extension [Self <: ParamsResourceProjectsTracesGet](x: Self) {
         
-        @scala.inline
-        def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
         
-        @scala.inline
-        def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+        inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+        inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
         
-        @scala.inline
-        def setTraceId(value: String): Self = StObject.set(x, "traceId", value.asInstanceOf[js.Any])
+        inline def setTraceId(value: String): Self = StObject.set(x, "traceId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTraceIdUndefined: Self = StObject.set(x, "traceId", js.undefined)
+        inline def setTraceIdUndefined: Self = StObject.set(x, "traceId", js.undefined)
       }
     }
     
@@ -552,68 +533,48 @@ object cloudtraceV1Mod {
     }
     object ParamsResourceProjectsTracesList {
       
-      @scala.inline
-      def apply(): ParamsResourceProjectsTracesList = {
+      inline def apply(): ParamsResourceProjectsTracesList = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ParamsResourceProjectsTracesList]
       }
       
-      @scala.inline
-      implicit class ParamsResourceProjectsTracesListMutableBuilder[Self <: ParamsResourceProjectsTracesList] (val x: Self) extends AnyVal {
+      extension [Self <: ParamsResourceProjectsTracesList](x: Self) {
         
-        @scala.inline
-        def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+        inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+        inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
         
-        @scala.inline
-        def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+        inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+        inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
         
-        @scala.inline
-        def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+        inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+        inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
         
-        @scala.inline
-        def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
+        inline def setOrderBy(value: String): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
+        inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
         
-        @scala.inline
-        def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+        inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+        inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
         
-        @scala.inline
-        def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+        inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+        inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
         
-        @scala.inline
-        def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+        inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+        inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
         
-        @scala.inline
-        def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+        inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+        inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
         
-        @scala.inline
-        def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+        inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+        inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
       }
     }
     
@@ -645,29 +606,22 @@ object cloudtraceV1Mod {
     }
     object SchemaListTracesResponse {
       
-      @scala.inline
-      def apply(): SchemaListTracesResponse = {
+      inline def apply(): SchemaListTracesResponse = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SchemaListTracesResponse]
       }
       
-      @scala.inline
-      implicit class SchemaListTracesResponseMutableBuilder[Self <: SchemaListTracesResponse] (val x: Self) extends AnyVal {
+      extension [Self <: SchemaListTracesResponse](x: Self) {
         
-        @scala.inline
-        def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+        inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+        inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
         
-        @scala.inline
-        def setTraces(value: js.Array[SchemaTrace]): Self = StObject.set(x, "traces", value.asInstanceOf[js.Any])
+        inline def setTraces(value: js.Array[SchemaTrace]): Self = StObject.set(x, "traces", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTracesUndefined: Self = StObject.set(x, "traces", js.undefined)
+        inline def setTracesUndefined: Self = StObject.set(x, "traces", js.undefined)
         
-        @scala.inline
-        def setTracesVarargs(value: SchemaTrace*): Self = StObject.set(x, "traces", js.Array(value :_*))
+        inline def setTracesVarargs(value: SchemaTrace*): Self = StObject.set(x, "traces", js.Array(value :_*))
       }
     }
     
@@ -697,35 +651,26 @@ object cloudtraceV1Mod {
     }
     object SchemaTrace {
       
-      @scala.inline
-      def apply(): SchemaTrace = {
+      inline def apply(): SchemaTrace = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SchemaTrace]
       }
       
-      @scala.inline
-      implicit class SchemaTraceMutableBuilder[Self <: SchemaTrace] (val x: Self) extends AnyVal {
+      extension [Self <: SchemaTrace](x: Self) {
         
-        @scala.inline
-        def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+        inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+        inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
         
-        @scala.inline
-        def setSpans(value: js.Array[SchemaTraceSpan]): Self = StObject.set(x, "spans", value.asInstanceOf[js.Any])
+        inline def setSpans(value: js.Array[SchemaTraceSpan]): Self = StObject.set(x, "spans", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpansUndefined: Self = StObject.set(x, "spans", js.undefined)
+        inline def setSpansUndefined: Self = StObject.set(x, "spans", js.undefined)
         
-        @scala.inline
-        def setSpansVarargs(value: SchemaTraceSpan*): Self = StObject.set(x, "spans", js.Array(value :_*))
+        inline def setSpansVarargs(value: SchemaTraceSpan*): Self = StObject.set(x, "spans", js.Array(value :_*))
         
-        @scala.inline
-        def setTraceId(value: String): Self = StObject.set(x, "traceId", value.asInstanceOf[js.Any])
+        inline def setTraceId(value: String): Self = StObject.set(x, "traceId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTraceIdUndefined: Self = StObject.set(x, "traceId", js.undefined)
+        inline def setTraceIdUndefined: Self = StObject.set(x, "traceId", js.undefined)
       }
     }
     
@@ -797,56 +742,40 @@ object cloudtraceV1Mod {
     }
     object SchemaTraceSpan {
       
-      @scala.inline
-      def apply(): SchemaTraceSpan = {
+      inline def apply(): SchemaTraceSpan = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SchemaTraceSpan]
       }
       
-      @scala.inline
-      implicit class SchemaTraceSpanMutableBuilder[Self <: SchemaTraceSpan] (val x: Self) extends AnyVal {
+      extension [Self <: SchemaTraceSpan](x: Self) {
         
-        @scala.inline
-        def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+        inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+        inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
         
-        @scala.inline
-        def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+        inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+        inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
         
-        @scala.inline
-        def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+        inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+        inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setParentSpanId(value: String): Self = StObject.set(x, "parentSpanId", value.asInstanceOf[js.Any])
+        inline def setParentSpanId(value: String): Self = StObject.set(x, "parentSpanId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setParentSpanIdUndefined: Self = StObject.set(x, "parentSpanId", js.undefined)
+        inline def setParentSpanIdUndefined: Self = StObject.set(x, "parentSpanId", js.undefined)
         
-        @scala.inline
-        def setSpanId(value: String): Self = StObject.set(x, "spanId", value.asInstanceOf[js.Any])
+        inline def setSpanId(value: String): Self = StObject.set(x, "spanId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSpanIdUndefined: Self = StObject.set(x, "spanId", js.undefined)
+        inline def setSpanIdUndefined: Self = StObject.set(x, "spanId", js.undefined)
         
-        @scala.inline
-        def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+        inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+        inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
       }
     }
     
@@ -862,23 +791,18 @@ object cloudtraceV1Mod {
     }
     object SchemaTraces {
       
-      @scala.inline
-      def apply(): SchemaTraces = {
+      inline def apply(): SchemaTraces = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SchemaTraces]
       }
       
-      @scala.inline
-      implicit class SchemaTracesMutableBuilder[Self <: SchemaTraces] (val x: Self) extends AnyVal {
+      extension [Self <: SchemaTraces](x: Self) {
         
-        @scala.inline
-        def setTraces(value: js.Array[SchemaTrace]): Self = StObject.set(x, "traces", value.asInstanceOf[js.Any])
+        inline def setTraces(value: js.Array[SchemaTrace]): Self = StObject.set(x, "traces", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTracesUndefined: Self = StObject.set(x, "traces", js.undefined)
+        inline def setTracesUndefined: Self = StObject.set(x, "traces", js.undefined)
         
-        @scala.inline
-        def setTracesVarargs(value: SchemaTrace*): Self = StObject.set(x, "traces", js.Array(value :_*))
+        inline def setTracesVarargs(value: SchemaTrace*): Self = StObject.set(x, "traces", js.Array(value :_*))
       }
     }
     
@@ -946,80 +870,56 @@ object cloudtraceV1Mod {
     }
     object StandardParameters {
       
-      @scala.inline
-      def apply(): StandardParameters = {
+      inline def apply(): StandardParameters = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[StandardParameters]
       }
       
-      @scala.inline
-      implicit class StandardParametersMutableBuilder[Self <: StandardParameters] (val x: Self) extends AnyVal {
+      extension [Self <: StandardParameters](x: Self) {
         
-        @scala.inline
-        def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
+        inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$DotxgafvUndefined: Self = StObject.set(x, "$.xgafv", js.undefined)
+        inline def set$DotxgafvUndefined: Self = StObject.set(x, "$.xgafv", js.undefined)
         
-        @scala.inline
-        def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+        inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
+        inline def setAccess_tokenUndefined: Self = StObject.set(x, "access_token", js.undefined)
         
-        @scala.inline
-        def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+        inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+        inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
         
-        @scala.inline
-        def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+        inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+        inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
         
-        @scala.inline
-        def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+        inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+        inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
         
-        @scala.inline
-        def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+        inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
         
-        @scala.inline
-        def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
+        inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
+        inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
         
-        @scala.inline
-        def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
+        inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
+        inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
         
-        @scala.inline
-        def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
+        inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+        inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
         
-        @scala.inline
-        def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
+        inline def setUploadType(value: String): Self = StObject.set(x, "uploadType", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUploadTypeUndefined: Self = StObject.set(x, "uploadType", js.undefined)
+        inline def setUploadTypeUndefined: Self = StObject.set(x, "uploadType", js.undefined)
         
-        @scala.inline
-        def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
+        inline def setUpload_protocol(value: String): Self = StObject.set(x, "upload_protocol", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
+        inline def setUpload_protocolUndefined: Self = StObject.set(x, "upload_protocol", js.undefined)
       }
     }
   }

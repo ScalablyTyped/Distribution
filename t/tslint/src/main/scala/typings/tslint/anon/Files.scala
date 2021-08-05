@@ -13,25 +13,19 @@ trait Files extends StObject {
 }
 object Files {
   
-  @scala.inline
-  def apply(files: js.Array[String]): Files = {
+  inline def apply(files: js.Array[String]): Files = {
     val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any])
     __obj.asInstanceOf[Files]
   }
   
-  @scala.inline
-  implicit class FilesMutableBuilder[Self <: Files] (val x: Self) extends AnyVal {
+  extension [Self <: Files](x: Self) {
     
-    @scala.inline
-    def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
     
-    @scala.inline
-    def setProgram(value: Program): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
+    inline def setProgram(value: Program): Self = StObject.set(x, "program", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgramUndefined: Self = StObject.set(x, "program", js.undefined)
+    inline def setProgramUndefined: Self = StObject.set(x, "program", js.undefined)
   }
 }

@@ -28,19 +28,16 @@ object reactRefreshWebpackPluginMod {
   }
   object ReactFreshWebpackPlugin {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       apply: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any => Unit
     ): ReactFreshWebpackPlugin = {
       val __obj = js.Dynamic.literal(apply = js.Any.fromFunction1(apply))
       __obj.asInstanceOf[ReactFreshWebpackPlugin]
     }
     
-    @scala.inline
-    implicit class ReactFreshWebpackPluginMutableBuilder[Self <: ReactFreshWebpackPlugin] (val x: Self) extends AnyVal {
+    extension [Self <: ReactFreshWebpackPlugin](x: Self) {
       
-      @scala.inline
-      def setApply(
+      inline def setApply(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Compiler */ js.Any => Unit
       ): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     }

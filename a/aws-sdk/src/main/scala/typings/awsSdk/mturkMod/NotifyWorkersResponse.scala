@@ -13,22 +13,17 @@ trait NotifyWorkersResponse extends StObject {
 }
 object NotifyWorkersResponse {
   
-  @scala.inline
-  def apply(): NotifyWorkersResponse = {
+  inline def apply(): NotifyWorkersResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NotifyWorkersResponse]
   }
   
-  @scala.inline
-  implicit class NotifyWorkersResponseMutableBuilder[Self <: NotifyWorkersResponse] (val x: Self) extends AnyVal {
+  extension [Self <: NotifyWorkersResponse](x: Self) {
     
-    @scala.inline
-    def setNotifyWorkersFailureStatuses(value: NotifyWorkersFailureStatusList): Self = StObject.set(x, "NotifyWorkersFailureStatuses", value.asInstanceOf[js.Any])
+    inline def setNotifyWorkersFailureStatuses(value: NotifyWorkersFailureStatusList): Self = StObject.set(x, "NotifyWorkersFailureStatuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotifyWorkersFailureStatusesUndefined: Self = StObject.set(x, "NotifyWorkersFailureStatuses", js.undefined)
+    inline def setNotifyWorkersFailureStatusesUndefined: Self = StObject.set(x, "NotifyWorkersFailureStatuses", js.undefined)
     
-    @scala.inline
-    def setNotifyWorkersFailureStatusesVarargs(value: NotifyWorkersFailureStatus*): Self = StObject.set(x, "NotifyWorkersFailureStatuses", js.Array(value :_*))
+    inline def setNotifyWorkersFailureStatusesVarargs(value: NotifyWorkersFailureStatus*): Self = StObject.set(x, "NotifyWorkersFailureStatuses", js.Array(value :_*))
   }
 }

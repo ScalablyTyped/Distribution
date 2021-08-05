@@ -13,19 +13,15 @@ trait CreateCloudFormationStackRequest extends StObject {
 }
 object CreateCloudFormationStackRequest {
   
-  @scala.inline
-  def apply(instances: InstanceEntryList): CreateCloudFormationStackRequest = {
+  inline def apply(instances: InstanceEntryList): CreateCloudFormationStackRequest = {
     val __obj = js.Dynamic.literal(instances = instances.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateCloudFormationStackRequest]
   }
   
-  @scala.inline
-  implicit class CreateCloudFormationStackRequestMutableBuilder[Self <: CreateCloudFormationStackRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCloudFormationStackRequest](x: Self) {
     
-    @scala.inline
-    def setInstances(value: InstanceEntryList): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
+    inline def setInstances(value: InstanceEntryList): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesVarargs(value: InstanceEntry*): Self = StObject.set(x, "instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: InstanceEntry*): Self = StObject.set(x, "instances", js.Array(value :_*))
   }
 }

@@ -17,22 +17,17 @@ trait ResolvedDataProvider extends StObject {
 }
 object ResolvedDataProvider {
   
-  @scala.inline
-  def apply(duration: Double, error: String, id: String): ResolvedDataProvider = {
+  inline def apply(duration: Double, error: String, id: String): ResolvedDataProvider = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResolvedDataProvider]
   }
   
-  @scala.inline
-  implicit class ResolvedDataProviderMutableBuilder[Self <: ResolvedDataProvider] (val x: Self) extends AnyVal {
+  extension [Self <: ResolvedDataProvider](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

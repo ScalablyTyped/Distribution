@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.ReadabilityStatistics")
 @js.native
-class ReadabilityStatistics protected ()
+/* private */ class ReadabilityStatistics ()
   extends StObject
      with typings.activexWord.Word.ReadabilityStatistics {
   
@@ -25,7 +25,7 @@ class ReadabilityStatistics protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.ReadabilityStatistics_typekey")
   var WordDotReadabilityStatistics_typekey: typings.activexWord.Word.ReadabilityStatistics = js.native
 }

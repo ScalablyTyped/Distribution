@@ -16,19 +16,15 @@ trait ExportingButtonsOptions extends StObject {
 }
 object ExportingButtonsOptions {
   
-  @scala.inline
-  def apply(): ExportingButtonsOptions = {
+  inline def apply(): ExportingButtonsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportingButtonsOptions]
   }
   
-  @scala.inline
-  implicit class ExportingButtonsOptionsMutableBuilder[Self <: ExportingButtonsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ExportingButtonsOptions](x: Self) {
     
-    @scala.inline
-    def setContextButton(value: ExportingButtonsOptionsObject): Self = StObject.set(x, "contextButton", value.asInstanceOf[js.Any])
+    inline def setContextButton(value: ExportingButtonsOptionsObject): Self = StObject.set(x, "contextButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextButtonUndefined: Self = StObject.set(x, "contextButton", js.undefined)
+    inline def setContextButtonUndefined: Self = StObject.set(x, "contextButton", js.undefined)
   }
 }

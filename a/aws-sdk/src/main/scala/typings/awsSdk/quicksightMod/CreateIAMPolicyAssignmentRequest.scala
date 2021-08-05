@@ -38,8 +38,7 @@ trait CreateIAMPolicyAssignmentRequest extends StObject {
 }
 object CreateIAMPolicyAssignmentRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AssignmentName: IAMPolicyAssignmentName,
     AssignmentStatus: AssignmentStatus,
     AwsAccountId: AwsAccountId,
@@ -49,31 +48,22 @@ object CreateIAMPolicyAssignmentRequest {
     __obj.asInstanceOf[CreateIAMPolicyAssignmentRequest]
   }
   
-  @scala.inline
-  implicit class CreateIAMPolicyAssignmentRequestMutableBuilder[Self <: CreateIAMPolicyAssignmentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateIAMPolicyAssignmentRequest](x: Self) {
     
-    @scala.inline
-    def setAssignmentName(value: IAMPolicyAssignmentName): Self = StObject.set(x, "AssignmentName", value.asInstanceOf[js.Any])
+    inline def setAssignmentName(value: IAMPolicyAssignmentName): Self = StObject.set(x, "AssignmentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignmentStatus(value: AssignmentStatus): Self = StObject.set(x, "AssignmentStatus", value.asInstanceOf[js.Any])
+    inline def setAssignmentStatus(value: AssignmentStatus): Self = StObject.set(x, "AssignmentStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
+    inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentities(value: IdentityMap): Self = StObject.set(x, "Identities", value.asInstanceOf[js.Any])
+    inline def setIdentities(value: IdentityMap): Self = StObject.set(x, "Identities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentitiesUndefined: Self = StObject.set(x, "Identities", js.undefined)
+    inline def setIdentitiesUndefined: Self = StObject.set(x, "Identities", js.undefined)
     
-    @scala.inline
-    def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyArn(value: Arn): Self = StObject.set(x, "PolicyArn", value.asInstanceOf[js.Any])
+    inline def setPolicyArn(value: Arn): Self = StObject.set(x, "PolicyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyArnUndefined: Self = StObject.set(x, "PolicyArn", js.undefined)
+    inline def setPolicyArnUndefined: Self = StObject.set(x, "PolicyArn", js.undefined)
   }
 }

@@ -15,6 +15,5 @@ class date[T /* <: js.UndefOr[Date | String | Null] */, C] ()
      with DateSchema[T, C]
 object date {
   
-  @scala.inline
-  def apply: DateSchemaConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("date").asInstanceOf[DateSchemaConstructor]
+  inline def apply: DateSchemaConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("date").asInstanceOf[DateSchemaConstructor]
 }

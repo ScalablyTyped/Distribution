@@ -25,8 +25,7 @@ object missingInjectableUpdateRecorderMod {
   }
   object UpdateRecorder {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addClassDecorator: (ClassDeclaration, String, String) => Unit,
       addNewImport: (Double, String) => Unit,
       commitUpdate: () => Unit,
@@ -38,20 +37,15 @@ object missingInjectableUpdateRecorderMod {
       __obj.asInstanceOf[UpdateRecorder]
     }
     
-    @scala.inline
-    implicit class UpdateRecorderMutableBuilder[Self <: UpdateRecorder] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateRecorder](x: Self) {
       
-      @scala.inline
-      def setAddClassDecorator(value: (ClassDeclaration, String, String) => Unit): Self = StObject.set(x, "addClassDecorator", js.Any.fromFunction3(value))
+      inline def setAddClassDecorator(value: (ClassDeclaration, String, String) => Unit): Self = StObject.set(x, "addClassDecorator", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setCommitUpdate(value: () => Unit): Self = StObject.set(x, "commitUpdate", js.Any.fromFunction0(value))
+      inline def setCommitUpdate(value: () => Unit): Self = StObject.set(x, "commitUpdate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setReplaceDecorator(value: (Decorator, String, String) => Unit): Self = StObject.set(x, "replaceDecorator", js.Any.fromFunction3(value))
+      inline def setReplaceDecorator(value: (Decorator, String, String) => Unit): Self = StObject.set(x, "replaceDecorator", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setUpdateObjectLiteral(value: (ObjectLiteralExpression, String) => Unit): Self = StObject.set(x, "updateObjectLiteral", js.Any.fromFunction2(value))
+      inline def setUpdateObjectLiteral(value: (ObjectLiteralExpression, String) => Unit): Self = StObject.set(x, "updateObjectLiteral", js.Any.fromFunction2(value))
     }
   }
 }

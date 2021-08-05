@@ -167,32 +167,24 @@ object uml {
   }
   object ClassAttributes {
     
-    @scala.inline
-    def apply(attributes: js.Array[String], methods: js.Array[String], name: js.Array[String]): ClassAttributes = {
+    inline def apply(attributes: js.Array[String], methods: js.Array[String], name: js.Array[String]): ClassAttributes = {
       val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], methods = methods.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClassAttributes]
     }
     
-    @scala.inline
-    implicit class ClassAttributesMutableBuilder[Self <: ClassAttributes] (val x: Self) extends AnyVal {
+    extension [Self <: ClassAttributes](x: Self) {
       
-      @scala.inline
-      def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Array[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+      inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
       
-      @scala.inline
-      def setMethods(value: js.Array[String]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+      inline def setMethods(value: js.Array[String]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodsVarargs(value: String*): Self = StObject.set(x, "methods", js.Array(value :_*))
+      inline def setMethodsVarargs(value: String*): Self = StObject.set(x, "methods", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: js.Array[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: js.Array[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value :_*))
+      inline def setNameVarargs(value: String*): Self = StObject.set(x, "name", js.Array(value :_*))
     }
   }
   
@@ -208,26 +200,20 @@ object uml {
   }
   object EndStateSelectors {
     
-    @scala.inline
-    def apply(): EndStateSelectors = {
+    inline def apply(): EndStateSelectors = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EndStateSelectors]
     }
     
-    @scala.inline
-    implicit class EndStateSelectorsMutableBuilder[Self <: EndStateSelectors] (val x: Self) extends AnyVal {
+    extension [Self <: EndStateSelectors](x: Self) {
       
-      @scala.inline
-      def setCircleDotinner(value: SVGCircleAttributes): Self = StObject.set(x, "circle.inner", value.asInstanceOf[js.Any])
+      inline def setCircleDotinner(value: SVGCircleAttributes): Self = StObject.set(x, "circle.inner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCircleDotinnerUndefined: Self = StObject.set(x, "circle.inner", js.undefined)
+      inline def setCircleDotinnerUndefined: Self = StObject.set(x, "circle.inner", js.undefined)
       
-      @scala.inline
-      def setCircleDotouter(value: SVGCircleAttributes): Self = StObject.set(x, "circle.outer", value.asInstanceOf[js.Any])
+      inline def setCircleDotouter(value: SVGCircleAttributes): Self = StObject.set(x, "circle.outer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCircleDotouterUndefined: Self = StObject.set(x, "circle.outer", js.undefined)
+      inline def setCircleDotouterUndefined: Self = StObject.set(x, "circle.outer", js.undefined)
     }
   }
   
@@ -249,38 +235,28 @@ object uml {
   }
   object StateSelectors {
     
-    @scala.inline
-    def apply(): StateSelectors = {
+    inline def apply(): StateSelectors = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StateSelectors]
     }
     
-    @scala.inline
-    implicit class StateSelectorsMutableBuilder[Self <: StateSelectors] (val x: Self) extends AnyVal {
+    extension [Self <: StateSelectors](x: Self) {
       
-      @scala.inline
-      def `setDotuml-state-body`(value: SVGRectAttributes): Self = StObject.set(x, ".uml-state-body", value.asInstanceOf[js.Any])
+      inline def `setDotuml-state-body`(value: SVGRectAttributes): Self = StObject.set(x, ".uml-state-body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDotuml-state-bodyUndefined`: Self = StObject.set(x, ".uml-state-body", js.undefined)
+      inline def `setDotuml-state-bodyUndefined`: Self = StObject.set(x, ".uml-state-body", js.undefined)
       
-      @scala.inline
-      def `setDotuml-state-events`(value: SVGTextAttributes): Self = StObject.set(x, ".uml-state-events", value.asInstanceOf[js.Any])
+      inline def `setDotuml-state-events`(value: SVGTextAttributes): Self = StObject.set(x, ".uml-state-events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDotuml-state-eventsUndefined`: Self = StObject.set(x, ".uml-state-events", js.undefined)
+      inline def `setDotuml-state-eventsUndefined`: Self = StObject.set(x, ".uml-state-events", js.undefined)
       
-      @scala.inline
-      def `setDotuml-state-name`(value: SVGTextAttributes): Self = StObject.set(x, ".uml-state-name", value.asInstanceOf[js.Any])
+      inline def `setDotuml-state-name`(value: SVGTextAttributes): Self = StObject.set(x, ".uml-state-name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDotuml-state-nameUndefined`: Self = StObject.set(x, ".uml-state-name", js.undefined)
+      inline def `setDotuml-state-nameUndefined`: Self = StObject.set(x, ".uml-state-name", js.undefined)
       
-      @scala.inline
-      def `setDotuml-state-separator`(value: SVGPathAttributes): Self = StObject.set(x, ".uml-state-separator", value.asInstanceOf[js.Any])
+      inline def `setDotuml-state-separator`(value: SVGPathAttributes): Self = StObject.set(x, ".uml-state-separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setDotuml-state-separatorUndefined`: Self = StObject.set(x, ".uml-state-separator", js.undefined)
+      inline def `setDotuml-state-separatorUndefined`: Self = StObject.set(x, ".uml-state-separator", js.undefined)
     }
   }
 }

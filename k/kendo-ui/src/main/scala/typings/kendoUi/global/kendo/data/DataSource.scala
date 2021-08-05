@@ -19,8 +19,6 @@ object DataSource {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(): typings.kendoUi.kendo.data.DataSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.kendoUi.kendo.data.DataSource]
-  @scala.inline
-  def create(options: DataSourceOptions): typings.kendoUi.kendo.data.DataSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.data.DataSource]
+  inline def create(): typings.kendoUi.kendo.data.DataSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.kendoUi.kendo.data.DataSource]
+  inline def create(options: DataSourceOptions): typings.kendoUi.kendo.data.DataSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.data.DataSource]
 }

@@ -33,7 +33,7 @@ object astNodeMod {
     /* CompleteClass */
     override val ruleType: RuleType = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     override val subItems: js.Any = js.native
   }
   
@@ -51,12 +51,11 @@ object astNodeMod {
     
     val ruleType: RuleType
     
-    val subItems: js.Any
+    /* private */ val subItems: js.Any
   }
   object AstNode {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       add: (js.Any, js.Any) => Unit,
       getItems: RuleType => js.Array[js.Any],
       getSingle: RuleType => js.Any,
@@ -69,29 +68,21 @@ object astNodeMod {
       __obj.asInstanceOf[AstNode]
     }
     
-    @scala.inline
-    implicit class AstNodeMutableBuilder[Self <: AstNode] (val x: Self) extends AnyVal {
+    extension [Self <: AstNode](x: Self) {
       
-      @scala.inline
-      def setAdd(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+      inline def setAdd(value: (js.Any, js.Any) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetItems(value: RuleType => js.Array[js.Any]): Self = StObject.set(x, "getItems", js.Any.fromFunction1(value))
+      inline def setGetItems(value: RuleType => js.Array[js.Any]): Self = StObject.set(x, "getItems", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetSingle(value: RuleType => js.Any): Self = StObject.set(x, "getSingle", js.Any.fromFunction1(value))
+      inline def setGetSingle(value: RuleType => js.Any): Self = StObject.set(x, "getSingle", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetToken(value: TokenType => js.Any): Self = StObject.set(x, "getToken", js.Any.fromFunction1(value))
+      inline def setGetToken(value: TokenType => js.Any): Self = StObject.set(x, "getToken", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetTokens(value: TokenType => js.Array[typings.gherkin.tokenMod.default]): Self = StObject.set(x, "getTokens", js.Any.fromFunction1(value))
+      inline def setGetTokens(value: TokenType => js.Array[typings.gherkin.tokenMod.default]): Self = StObject.set(x, "getTokens", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRuleType(value: RuleType): Self = StObject.set(x, "ruleType", value.asInstanceOf[js.Any])
+      inline def setRuleType(value: RuleType): Self = StObject.set(x, "ruleType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubItems(value: js.Any): Self = StObject.set(x, "subItems", value.asInstanceOf[js.Any])
+      inline def setSubItems(value: js.Any): Self = StObject.set(x, "subItems", value.asInstanceOf[js.Any])
     }
   }
 }

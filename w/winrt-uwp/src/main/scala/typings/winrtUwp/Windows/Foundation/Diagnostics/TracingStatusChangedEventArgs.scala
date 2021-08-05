@@ -15,19 +15,15 @@ trait TracingStatusChangedEventArgs extends StObject {
 }
 object TracingStatusChangedEventArgs {
   
-  @scala.inline
-  def apply(enabled: Boolean, traceLevel: CausalityTraceLevel): TracingStatusChangedEventArgs = {
+  inline def apply(enabled: Boolean, traceLevel: CausalityTraceLevel): TracingStatusChangedEventArgs = {
     val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], traceLevel = traceLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[TracingStatusChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class TracingStatusChangedEventArgsMutableBuilder[Self <: TracingStatusChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: TracingStatusChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTraceLevel(value: CausalityTraceLevel): Self = StObject.set(x, "traceLevel", value.asInstanceOf[js.Any])
+    inline def setTraceLevel(value: CausalityTraceLevel): Self = StObject.set(x, "traceLevel", value.asInstanceOf[js.Any])
   }
 }

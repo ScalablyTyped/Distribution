@@ -21,13 +21,11 @@ object ScrollBehavior {
   @JSImport("mendixmodelsdk", "pages.ScrollBehavior.FullWidget")
   @js.native
   def FullWidget: typings.mendixmodelsdk.pagesMod.pages.ScrollBehavior = js.native
-  @scala.inline
-  def FullWidget_=(x: typings.mendixmodelsdk.pagesMod.pages.ScrollBehavior): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FullWidget")(x.asInstanceOf[js.Any])
+  inline def FullWidget_=(x: typings.mendixmodelsdk.pagesMod.pages.ScrollBehavior): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FullWidget")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.ScrollBehavior.PerRegion")
   @js.native
   def PerRegion: typings.mendixmodelsdk.pagesMod.pages.ScrollBehavior = js.native
-  @scala.inline
-  def PerRegion_=(x: typings.mendixmodelsdk.pagesMod.pages.ScrollBehavior): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PerRegion")(x.asInstanceOf[js.Any])
+  inline def PerRegion_=(x: typings.mendixmodelsdk.pagesMod.pages.ScrollBehavior): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PerRegion")(x.asInstanceOf[js.Any])
 }

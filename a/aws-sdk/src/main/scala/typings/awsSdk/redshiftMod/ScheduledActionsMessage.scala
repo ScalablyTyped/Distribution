@@ -18,28 +18,21 @@ trait ScheduledActionsMessage extends StObject {
 }
 object ScheduledActionsMessage {
   
-  @scala.inline
-  def apply(): ScheduledActionsMessage = {
+  inline def apply(): ScheduledActionsMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScheduledActionsMessage]
   }
   
-  @scala.inline
-  implicit class ScheduledActionsMessageMutableBuilder[Self <: ScheduledActionsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ScheduledActionsMessage](x: Self) {
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
     
-    @scala.inline
-    def setScheduledActions(value: ScheduledActionList): Self = StObject.set(x, "ScheduledActions", value.asInstanceOf[js.Any])
+    inline def setScheduledActions(value: ScheduledActionList): Self = StObject.set(x, "ScheduledActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledActionsUndefined: Self = StObject.set(x, "ScheduledActions", js.undefined)
+    inline def setScheduledActionsUndefined: Self = StObject.set(x, "ScheduledActions", js.undefined)
     
-    @scala.inline
-    def setScheduledActionsVarargs(value: ScheduledAction*): Self = StObject.set(x, "ScheduledActions", js.Array(value :_*))
+    inline def setScheduledActionsVarargs(value: ScheduledAction*): Self = StObject.set(x, "ScheduledActions", js.Array(value :_*))
   }
 }

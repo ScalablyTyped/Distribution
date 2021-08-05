@@ -28,34 +28,25 @@ trait CreateVocabularyRequest extends StObject {
 }
 object CreateVocabularyRequest {
   
-  @scala.inline
-  def apply(LanguageCode: LanguageCode, VocabularyName: VocabularyName): CreateVocabularyRequest = {
+  inline def apply(LanguageCode: LanguageCode, VocabularyName: VocabularyName): CreateVocabularyRequest = {
     val __obj = js.Dynamic.literal(LanguageCode = LanguageCode.asInstanceOf[js.Any], VocabularyName = VocabularyName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateVocabularyRequest]
   }
   
-  @scala.inline
-  implicit class CreateVocabularyRequestMutableBuilder[Self <: CreateVocabularyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateVocabularyRequest](x: Self) {
     
-    @scala.inline
-    def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhrases(value: Phrases): Self = StObject.set(x, "Phrases", value.asInstanceOf[js.Any])
+    inline def setPhrases(value: Phrases): Self = StObject.set(x, "Phrases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhrasesUndefined: Self = StObject.set(x, "Phrases", js.undefined)
+    inline def setPhrasesUndefined: Self = StObject.set(x, "Phrases", js.undefined)
     
-    @scala.inline
-    def setPhrasesVarargs(value: Phrase*): Self = StObject.set(x, "Phrases", js.Array(value :_*))
+    inline def setPhrasesVarargs(value: Phrase*): Self = StObject.set(x, "Phrases", js.Array(value :_*))
     
-    @scala.inline
-    def setVocabularyFileUri(value: Uri): Self = StObject.set(x, "VocabularyFileUri", value.asInstanceOf[js.Any])
+    inline def setVocabularyFileUri(value: Uri): Self = StObject.set(x, "VocabularyFileUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVocabularyFileUriUndefined: Self = StObject.set(x, "VocabularyFileUri", js.undefined)
+    inline def setVocabularyFileUriUndefined: Self = StObject.set(x, "VocabularyFileUri", js.undefined)
     
-    @scala.inline
-    def setVocabularyName(value: VocabularyName): Self = StObject.set(x, "VocabularyName", value.asInstanceOf[js.Any])
+    inline def setVocabularyName(value: VocabularyName): Self = StObject.set(x, "VocabularyName", value.asInstanceOf[js.Any])
   }
 }

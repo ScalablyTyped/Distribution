@@ -16,32 +16,27 @@ object listStreamConsumersExceptionsUnionMod {
   trait ListStreamConsumersExceptionsUnion extends StObject
   object ListStreamConsumersExceptionsUnion {
     
-    @scala.inline
-    def ExpiredNextTokenException(): typings.awsSdkClientKinesisBrowser.typesExpiredNextTokenExceptionMod.ExpiredNextTokenException = {
+    inline def ExpiredNextTokenException(): typings.awsSdkClientKinesisBrowser.typesExpiredNextTokenExceptionMod.ExpiredNextTokenException = {
       val __obj = js.Dynamic.literal(name = "ExpiredNextTokenException")
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesExpiredNextTokenExceptionMod.ExpiredNextTokenException]
     }
     
-    @scala.inline
-    def InvalidArgumentException(): typings.awsSdkClientKinesisBrowser.typesInvalidArgumentExceptionMod.InvalidArgumentException = {
+    inline def InvalidArgumentException(): typings.awsSdkClientKinesisBrowser.typesInvalidArgumentExceptionMod.InvalidArgumentException = {
       val __obj = js.Dynamic.literal(name = "InvalidArgumentException")
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesInvalidArgumentExceptionMod.InvalidArgumentException]
     }
     
-    @scala.inline
-    def LimitExceededException(): typings.awsSdkClientKinesisBrowser.typesLimitExceededExceptionMod.LimitExceededException = {
+    inline def LimitExceededException(): typings.awsSdkClientKinesisBrowser.typesLimitExceededExceptionMod.LimitExceededException = {
       val __obj = js.Dynamic.literal(name = "LimitExceededException")
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesLimitExceededExceptionMod.LimitExceededException]
     }
     
-    @scala.inline
-    def ResourceInUseException(): typings.awsSdkClientKinesisBrowser.typesResourceInUseExceptionMod.ResourceInUseException = {
+    inline def ResourceInUseException(): typings.awsSdkClientKinesisBrowser.typesResourceInUseExceptionMod.ResourceInUseException = {
       val __obj = js.Dynamic.literal(name = "ResourceInUseException")
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesResourceInUseExceptionMod.ResourceInUseException]
     }
     
-    @scala.inline
-    def ResourceNotFoundException(): typings.awsSdkClientKinesisBrowser.typesResourceNotFoundExceptionMod.ResourceNotFoundException = {
+    inline def ResourceNotFoundException(): typings.awsSdkClientKinesisBrowser.typesResourceNotFoundExceptionMod.ResourceNotFoundException = {
       val __obj = js.Dynamic.literal(name = "ResourceNotFoundException")
       __obj.asInstanceOf[typings.awsSdkClientKinesisBrowser.typesResourceNotFoundExceptionMod.ResourceNotFoundException]
     }

@@ -15,17 +15,14 @@ trait IEventComposite[T]
 }
 object IEventComposite {
   
-  @scala.inline
-  def apply[T](name: String, `object`: js.Any, source: T): IEventComposite[T] = {
+  inline def apply[T](name: String, `object`: js.Any, source: T): IEventComposite[T] = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEventComposite[T]]
   }
   
-  @scala.inline
-  implicit class IEventCompositeMutableBuilder[Self <: IEventComposite[?], T] (val x: Self & IEventComposite[T]) extends AnyVal {
+  extension [Self <: IEventComposite[?], T](x: Self & IEventComposite[T]) {
     
-    @scala.inline
-    def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: js.Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }
 }

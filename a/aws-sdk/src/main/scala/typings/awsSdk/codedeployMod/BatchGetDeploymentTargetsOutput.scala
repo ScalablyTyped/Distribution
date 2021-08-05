@@ -13,22 +13,17 @@ trait BatchGetDeploymentTargetsOutput extends StObject {
 }
 object BatchGetDeploymentTargetsOutput {
   
-  @scala.inline
-  def apply(): BatchGetDeploymentTargetsOutput = {
+  inline def apply(): BatchGetDeploymentTargetsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchGetDeploymentTargetsOutput]
   }
   
-  @scala.inline
-  implicit class BatchGetDeploymentTargetsOutputMutableBuilder[Self <: BatchGetDeploymentTargetsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: BatchGetDeploymentTargetsOutput](x: Self) {
     
-    @scala.inline
-    def setDeploymentTargets(value: DeploymentTargetList): Self = StObject.set(x, "deploymentTargets", value.asInstanceOf[js.Any])
+    inline def setDeploymentTargets(value: DeploymentTargetList): Self = StObject.set(x, "deploymentTargets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentTargetsUndefined: Self = StObject.set(x, "deploymentTargets", js.undefined)
+    inline def setDeploymentTargetsUndefined: Self = StObject.set(x, "deploymentTargets", js.undefined)
     
-    @scala.inline
-    def setDeploymentTargetsVarargs(value: DeploymentTarget*): Self = StObject.set(x, "deploymentTargets", js.Array(value :_*))
+    inline def setDeploymentTargetsVarargs(value: DeploymentTarget*): Self = StObject.set(x, "deploymentTargets", js.Array(value :_*))
   }
 }

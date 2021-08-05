@@ -23,28 +23,21 @@ trait MultiformatMessageString extends StObject {
 }
 object MultiformatMessageString {
   
-  @scala.inline
-  def apply(text: String): MultiformatMessageString = {
+  inline def apply(text: String): MultiformatMessageString = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiformatMessageString]
   }
   
-  @scala.inline
-  implicit class MultiformatMessageStringMutableBuilder[Self <: MultiformatMessageString] (val x: Self) extends AnyVal {
+  extension [Self <: MultiformatMessageString](x: Self) {
     
-    @scala.inline
-    def setMarkdown(value: String): Self = StObject.set(x, "markdown", value.asInstanceOf[js.Any])
+    inline def setMarkdown(value: String): Self = StObject.set(x, "markdown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkdownUndefined: Self = StObject.set(x, "markdown", js.undefined)
+    inline def setMarkdownUndefined: Self = StObject.set(x, "markdown", js.undefined)
     
-    @scala.inline
-    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

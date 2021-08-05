@@ -14,8 +14,7 @@ object useStepQueueMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     status: MotionStatus,
     callback: js.Function1[/* step */ StepStatus, js.Promise[Unit] | Unit | `false` | `true`]
   ): js.Tuple2[js.Function0[Unit], StepStatus] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(status.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Function0[Unit], StepStatus]]
@@ -28,6 +27,5 @@ object useStepQueueMod {
   @js.native
   val SkipStep: `false` = js.native
   
-  @scala.inline
-  def isActive(step: StepStatus): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isActive")(step.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isActive(step: StepStatus): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isActive")(step.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

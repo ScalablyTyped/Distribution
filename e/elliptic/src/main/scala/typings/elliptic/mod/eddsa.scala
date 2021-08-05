@@ -82,12 +82,10 @@ object eddsa {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def fromPublic(eddsa: eddsa, pub: Bytes): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublic")(eddsa.asInstanceOf[js.Any], pub.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+    inline def fromPublic(eddsa: eddsa, pub: Bytes): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublic")(eddsa.asInstanceOf[js.Any], pub.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
     
     /* static member */
-    @scala.inline
-    def fromSecret(eddsa: eddsa, secret: Bytes): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSecret")(eddsa.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+    inline def fromSecret(eddsa: eddsa, secret: Bytes): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSecret")(eddsa.asInstanceOf[js.Any], secret.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
   }
   
   @JSImport("elliptic", "eddsa.Signature")
@@ -111,20 +109,16 @@ object eddsa {
   }
   object KeyPairOptions {
     
-    @scala.inline
-    def apply(pub: Buffer | Point, secret: Buffer): KeyPairOptions = {
+    inline def apply(pub: Buffer | Point, secret: Buffer): KeyPairOptions = {
       val __obj = js.Dynamic.literal(pub = pub.asInstanceOf[js.Any], secret = secret.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeyPairOptions]
     }
     
-    @scala.inline
-    implicit class KeyPairOptionsMutableBuilder[Self <: KeyPairOptions] (val x: Self) extends AnyVal {
+    extension [Self <: KeyPairOptions](x: Self) {
       
-      @scala.inline
-      def setPub(value: Buffer | Point): Self = StObject.set(x, "pub", value.asInstanceOf[js.Any])
+      inline def setPub(value: Buffer | Point): Self = StObject.set(x, "pub", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecret(value: Buffer): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+      inline def setSecret(value: Buffer): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     }
   }
   

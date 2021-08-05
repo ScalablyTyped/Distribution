@@ -11,34 +11,29 @@ object atlaskitFeedbackCollectorStrings {
   sealed trait bug
     extends StObject
        with SelectValue
-  @scala.inline
-  def bug: bug = "bug".asInstanceOf[bug]
+  inline def bug: bug = "bug".asInstanceOf[bug]
   
   @js.native
   sealed trait comment
     extends StObject
        with SelectValue
-  @scala.inline
-  def comment: comment = "comment".asInstanceOf[comment]
+  inline def comment: comment = "comment".asInstanceOf[comment]
   
   @js.native
   sealed trait empty
     extends StObject
        with SelectValue
-  @scala.inline
-  def empty: empty = "empty".asInstanceOf[empty]
+  inline def empty: empty = "empty".asInstanceOf[empty]
   
   @js.native
   sealed trait question
     extends StObject
        with SelectValue
-  @scala.inline
-  def question: question = "question".asInstanceOf[question]
+  inline def question: question = "question".asInstanceOf[question]
   
   @js.native
   sealed trait suggestion
     extends StObject
        with SelectValue
-  @scala.inline
-  def suggestion: suggestion = "suggestion".asInstanceOf[suggestion]
+  inline def suggestion: suggestion = "suggestion".asInstanceOf[suggestion]
 }

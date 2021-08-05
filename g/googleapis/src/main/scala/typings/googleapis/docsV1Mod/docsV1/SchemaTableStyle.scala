@@ -18,22 +18,17 @@ trait SchemaTableStyle extends StObject {
 }
 object SchemaTableStyle {
   
-  @scala.inline
-  def apply(): SchemaTableStyle = {
+  inline def apply(): SchemaTableStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTableStyle]
   }
   
-  @scala.inline
-  implicit class SchemaTableStyleMutableBuilder[Self <: SchemaTableStyle] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTableStyle](x: Self) {
     
-    @scala.inline
-    def setTableColumnProperties(value: js.Array[SchemaTableColumnProperties]): Self = StObject.set(x, "tableColumnProperties", value.asInstanceOf[js.Any])
+    inline def setTableColumnProperties(value: js.Array[SchemaTableColumnProperties]): Self = StObject.set(x, "tableColumnProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableColumnPropertiesUndefined: Self = StObject.set(x, "tableColumnProperties", js.undefined)
+    inline def setTableColumnPropertiesUndefined: Self = StObject.set(x, "tableColumnProperties", js.undefined)
     
-    @scala.inline
-    def setTableColumnPropertiesVarargs(value: SchemaTableColumnProperties*): Self = StObject.set(x, "tableColumnProperties", js.Array(value :_*))
+    inline def setTableColumnPropertiesVarargs(value: SchemaTableColumnProperties*): Self = StObject.set(x, "tableColumnProperties", js.Array(value :_*))
   }
 }

@@ -27,23 +27,18 @@ object network {
   }
   object NetworkInterface {
     
-    @scala.inline
-    def apply(address: String, name: String, prefixLength: integer): NetworkInterface = {
+    inline def apply(address: String, name: String, prefixLength: integer): NetworkInterface = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], prefixLength = prefixLength.asInstanceOf[js.Any])
       __obj.asInstanceOf[NetworkInterface]
     }
     
-    @scala.inline
-    implicit class NetworkInterfaceMutableBuilder[Self <: NetworkInterface] (val x: Self) extends AnyVal {
+    extension [Self <: NetworkInterface](x: Self) {
       
-      @scala.inline
-      def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixLength(value: integer): Self = StObject.set(x, "prefixLength", value.asInstanceOf[js.Any])
+      inline def setPrefixLength(value: integer): Self = StObject.set(x, "prefixLength", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LockTypeEnum extends StObject
 object LockTypeEnum {
   
-  @scala.inline
-  def adLockBatchOptimistic: `4` = 4.asInstanceOf[`4`]
+  inline def adLockBatchOptimistic: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def adLockOptimistic: `3` = 3.asInstanceOf[`3`]
+  inline def adLockOptimistic: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def adLockPessimistic: `2` = 2.asInstanceOf[`2`]
+  inline def adLockPessimistic: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def adLockReadOnly: `1` = 1.asInstanceOf[`1`]
+  inline def adLockReadOnly: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def adLockUnspecified: `-1` = -1.asInstanceOf[`-1`]
+  inline def adLockUnspecified: `-1` = -1.asInstanceOf[`-1`]
 }

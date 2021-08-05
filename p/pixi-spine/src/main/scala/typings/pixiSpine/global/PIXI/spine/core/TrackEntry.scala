@@ -19,13 +19,11 @@ object TrackEntry {
   @JSGlobal("PIXI.spine.core.TrackEntry.deprecatedWarning1")
   @js.native
   def deprecatedWarning1: js.Any = js.native
-  @scala.inline
-  def deprecatedWarning1_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deprecatedWarning1")(x.asInstanceOf[js.Any])
+  inline def deprecatedWarning1_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deprecatedWarning1")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSGlobal("PIXI.spine.core.TrackEntry.deprecatedWarning2")
   @js.native
   def deprecatedWarning2: js.Any = js.native
-  @scala.inline
-  def deprecatedWarning2_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deprecatedWarning2")(x.asInstanceOf[js.Any])
+  inline def deprecatedWarning2_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("deprecatedWarning2")(x.asInstanceOf[js.Any])
 }

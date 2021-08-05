@@ -31,37 +31,27 @@ trait SchemaAccountRef extends StObject {
 }
 object SchemaAccountRef {
   
-  @scala.inline
-  def apply(): SchemaAccountRef = {
+  inline def apply(): SchemaAccountRef = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAccountRef]
   }
   
-  @scala.inline
-  implicit class SchemaAccountRefMutableBuilder[Self <: SchemaAccountRef] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAccountRef](x: Self) {
     
-    @scala.inline
-    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+    inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

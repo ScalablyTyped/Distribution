@@ -40,29 +40,22 @@ object asyncSwitchMod {
   }
   object AsyncSwitchProps {
     
-    @scala.inline
-    def apply(id: String, loading: Boolean): AsyncSwitchProps = {
+    inline def apply(id: String, loading: Boolean): AsyncSwitchProps = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any])
       __obj.asInstanceOf[AsyncSwitchProps]
     }
     
-    @scala.inline
-    implicit class AsyncSwitchPropsMutableBuilder[Self <: AsyncSwitchProps] (val x: Self) extends AnyVal {
+    extension [Self <: AsyncSwitchProps](x: Self) {
       
-      @scala.inline
-      def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
+      inline def setLoading(value: Boolean): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressClassName(value: String): Self = StObject.set(x, "progressClassName", value.asInstanceOf[js.Any])
+      inline def setProgressClassName(value: String): Self = StObject.set(x, "progressClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressClassNameUndefined: Self = StObject.set(x, "progressClassName", js.undefined)
+      inline def setProgressClassNameUndefined: Self = StObject.set(x, "progressClassName", js.undefined)
       
-      @scala.inline
-      def setProgressStyle(value: CSSProperties): Self = StObject.set(x, "progressStyle", value.asInstanceOf[js.Any])
+      inline def setProgressStyle(value: CSSProperties): Self = StObject.set(x, "progressStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressStyleUndefined: Self = StObject.set(x, "progressStyle", js.undefined)
+      inline def setProgressStyleUndefined: Self = StObject.set(x, "progressStyle", js.undefined)
     }
   }
 }

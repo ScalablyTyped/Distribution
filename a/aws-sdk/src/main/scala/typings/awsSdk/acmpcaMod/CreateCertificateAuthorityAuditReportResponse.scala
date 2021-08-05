@@ -18,25 +18,19 @@ trait CreateCertificateAuthorityAuditReportResponse extends StObject {
 }
 object CreateCertificateAuthorityAuditReportResponse {
   
-  @scala.inline
-  def apply(): CreateCertificateAuthorityAuditReportResponse = {
+  inline def apply(): CreateCertificateAuthorityAuditReportResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateCertificateAuthorityAuditReportResponse]
   }
   
-  @scala.inline
-  implicit class CreateCertificateAuthorityAuditReportResponseMutableBuilder[Self <: CreateCertificateAuthorityAuditReportResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateCertificateAuthorityAuditReportResponse](x: Self) {
     
-    @scala.inline
-    def setAuditReportId(value: AuditReportId): Self = StObject.set(x, "AuditReportId", value.asInstanceOf[js.Any])
+    inline def setAuditReportId(value: AuditReportId): Self = StObject.set(x, "AuditReportId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuditReportIdUndefined: Self = StObject.set(x, "AuditReportId", js.undefined)
+    inline def setAuditReportIdUndefined: Self = StObject.set(x, "AuditReportId", js.undefined)
     
-    @scala.inline
-    def setS3Key(value: S3Key): Self = StObject.set(x, "S3Key", value.asInstanceOf[js.Any])
+    inline def setS3Key(value: S3Key): Self = StObject.set(x, "S3Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3KeyUndefined: Self = StObject.set(x, "S3Key", js.undefined)
+    inline def setS3KeyUndefined: Self = StObject.set(x, "S3Key", js.undefined)
   }
 }

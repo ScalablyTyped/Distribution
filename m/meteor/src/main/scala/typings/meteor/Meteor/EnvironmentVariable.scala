@@ -16,8 +16,7 @@ trait EnvironmentVariable[T] extends StObject {
 }
 object EnvironmentVariable {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     get: () => T,
     getOrNullIfOutsideFiber: () => T | Null,
     slot: Double,
@@ -27,19 +26,14 @@ object EnvironmentVariable {
     __obj.asInstanceOf[EnvironmentVariable[T]]
   }
   
-  @scala.inline
-  implicit class EnvironmentVariableMutableBuilder[Self <: EnvironmentVariable[?], T] (val x: Self & EnvironmentVariable[T]) extends AnyVal {
+  extension [Self <: EnvironmentVariable[?], T](x: Self & EnvironmentVariable[T]) {
     
-    @scala.inline
-    def setGet(value: () => T): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+    inline def setGet(value: () => T): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOrNullIfOutsideFiber(value: () => T | Null): Self = StObject.set(x, "getOrNullIfOutsideFiber", js.Any.fromFunction0(value))
+    inline def setGetOrNullIfOutsideFiber(value: () => T | Null): Self = StObject.set(x, "getOrNullIfOutsideFiber", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSlot(value: Double): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
+    inline def setSlot(value: Double): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWithValue(value: (T, js.Function0[js.Any]) => js.Any): Self = StObject.set(x, "withValue", js.Any.fromFunction2(value))
+    inline def setWithValue(value: (T, js.Function0[js.Any]) => js.Any): Self = StObject.set(x, "withValue", js.Any.fromFunction2(value))
   }
 }

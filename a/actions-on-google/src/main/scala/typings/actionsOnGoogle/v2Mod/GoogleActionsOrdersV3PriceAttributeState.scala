@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GoogleActionsOrdersV3PriceAttributeState extends StObject
 object GoogleActionsOrdersV3PriceAttributeState {
   
-  @scala.inline
-  def ACTUAL: typings.actionsOnGoogle.actionsOnGoogleStrings.ACTUAL = "ACTUAL".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.ACTUAL]
+  inline def ACTUAL: typings.actionsOnGoogle.actionsOnGoogleStrings.ACTUAL = "ACTUAL".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.ACTUAL]
   
-  @scala.inline
-  def ESTIMATE: typings.actionsOnGoogle.actionsOnGoogleStrings.ESTIMATE = "ESTIMATE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.ESTIMATE]
+  inline def ESTIMATE: typings.actionsOnGoogle.actionsOnGoogleStrings.ESTIMATE = "ESTIMATE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.ESTIMATE]
   
-  @scala.inline
-  def STATE_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.STATE_UNSPECIFIED = "STATE_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.STATE_UNSPECIFIED]
+  inline def STATE_UNSPECIFIED: typings.actionsOnGoogle.actionsOnGoogleStrings.STATE_UNSPECIFIED = "STATE_UNSPECIFIED".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.STATE_UNSPECIFIED]
 }

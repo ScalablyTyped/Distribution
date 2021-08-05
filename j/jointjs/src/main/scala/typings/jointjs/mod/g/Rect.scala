@@ -141,6 +141,5 @@ object Rect {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def fromEllipse(e: Ellipse): Rect = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEllipse")(e.asInstanceOf[js.Any]).asInstanceOf[Rect]
+  inline def fromEllipse(e: Ellipse): Rect = ^.asInstanceOf[js.Dynamic].applyDynamic("fromEllipse")(e.asInstanceOf[js.Any]).asInstanceOf[Rect]
 }

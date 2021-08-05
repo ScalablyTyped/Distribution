@@ -63,73 +63,51 @@ trait DescribeEnvironmentsMessa extends StObject {
 }
 object DescribeEnvironmentsMessa {
   
-  @scala.inline
-  def apply(): DescribeEnvironmentsMessa = {
+  inline def apply(): DescribeEnvironmentsMessa = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeEnvironmentsMessa]
   }
   
-  @scala.inline
-  implicit class DescribeEnvironmentsMessaMutableBuilder[Self <: DescribeEnvironmentsMessa] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeEnvironmentsMessa](x: Self) {
     
-    @scala.inline
-    def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
+    inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
+    inline def set$waiterUndefined: Self = StObject.set(x, "$waiter", js.undefined)
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationNameUndefined: Self = StObject.set(x, "ApplicationName", js.undefined)
+    inline def setApplicationNameUndefined: Self = StObject.set(x, "ApplicationName", js.undefined)
     
-    @scala.inline
-    def setEnvironmentIds(value: EnvironmentIdList): Self = StObject.set(x, "EnvironmentIds", value.asInstanceOf[js.Any])
+    inline def setEnvironmentIds(value: EnvironmentIdList): Self = StObject.set(x, "EnvironmentIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentIdsUndefined: Self = StObject.set(x, "EnvironmentIds", js.undefined)
+    inline def setEnvironmentIdsUndefined: Self = StObject.set(x, "EnvironmentIds", js.undefined)
     
-    @scala.inline
-    def setEnvironmentIdsVarargs(value: EnvironmentId*): Self = StObject.set(x, "EnvironmentIds", js.Array(value :_*))
+    inline def setEnvironmentIdsVarargs(value: EnvironmentId*): Self = StObject.set(x, "EnvironmentIds", js.Array(value :_*))
     
-    @scala.inline
-    def setEnvironmentNames(value: EnvironmentNamesList): Self = StObject.set(x, "EnvironmentNames", value.asInstanceOf[js.Any])
+    inline def setEnvironmentNames(value: EnvironmentNamesList): Self = StObject.set(x, "EnvironmentNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentNamesUndefined: Self = StObject.set(x, "EnvironmentNames", js.undefined)
+    inline def setEnvironmentNamesUndefined: Self = StObject.set(x, "EnvironmentNames", js.undefined)
     
-    @scala.inline
-    def setEnvironmentNamesVarargs(value: EnvironmentName*): Self = StObject.set(x, "EnvironmentNames", js.Array(value :_*))
+    inline def setEnvironmentNamesVarargs(value: EnvironmentName*): Self = StObject.set(x, "EnvironmentNames", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludeDeleted(value: IncludeDeleted): Self = StObject.set(x, "IncludeDeleted", value.asInstanceOf[js.Any])
+    inline def setIncludeDeleted(value: IncludeDeleted): Self = StObject.set(x, "IncludeDeleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeDeletedUndefined: Self = StObject.set(x, "IncludeDeleted", js.undefined)
+    inline def setIncludeDeletedUndefined: Self = StObject.set(x, "IncludeDeleted", js.undefined)
     
-    @scala.inline
-    def setIncludedDeletedBackTo(value: IncludeDeletedBackTo): Self = StObject.set(x, "IncludedDeletedBackTo", value.asInstanceOf[js.Any])
+    inline def setIncludedDeletedBackTo(value: IncludeDeletedBackTo): Self = StObject.set(x, "IncludedDeletedBackTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludedDeletedBackToUndefined: Self = StObject.set(x, "IncludedDeletedBackTo", js.undefined)
+    inline def setIncludedDeletedBackToUndefined: Self = StObject.set(x, "IncludedDeletedBackTo", js.undefined)
     
-    @scala.inline
-    def setMaxRecords(value: MaxRecords): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
+    inline def setMaxRecords(value: MaxRecords): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
+    inline def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setVersionLabel(value: VersionLabel): Self = StObject.set(x, "VersionLabel", value.asInstanceOf[js.Any])
+    inline def setVersionLabel(value: VersionLabel): Self = StObject.set(x, "VersionLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionLabelUndefined: Self = StObject.set(x, "VersionLabel", js.undefined)
+    inline def setVersionLabelUndefined: Self = StObject.set(x, "VersionLabel", js.undefined)
   }
 }

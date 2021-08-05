@@ -12,7 +12,7 @@ object basePathMod {
     
     def add(fileName: String): Unit = js.native
     
-    var basePaths: js.Any = js.native
+    /* private */ var basePaths: js.Any = js.native
     
     def reset(): Unit = js.native
     
@@ -25,7 +25,6 @@ object basePathMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def normalize(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def normalize(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalize")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

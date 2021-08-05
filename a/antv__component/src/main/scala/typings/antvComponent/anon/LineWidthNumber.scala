@@ -10,16 +10,13 @@ trait LineWidthNumber extends StObject {
 }
 object LineWidthNumber {
   
-  @scala.inline
-  def apply(lineWidth: Double): LineWidthNumber = {
+  inline def apply(lineWidth: Double): LineWidthNumber = {
     val __obj = js.Dynamic.literal(lineWidth = lineWidth.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineWidthNumber]
   }
   
-  @scala.inline
-  implicit class LineWidthNumberMutableBuilder[Self <: LineWidthNumber] (val x: Self) extends AnyVal {
+  extension [Self <: LineWidthNumber](x: Self) {
     
-    @scala.inline
-    def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
+    inline def setLineWidth(value: Double): Self = StObject.set(x, "lineWidth", value.asInstanceOf[js.Any])
   }
 }

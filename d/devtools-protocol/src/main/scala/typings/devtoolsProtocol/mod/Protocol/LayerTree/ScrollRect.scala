@@ -22,20 +22,16 @@ trait ScrollRect extends StObject {
 }
 object ScrollRect {
   
-  @scala.inline
-  def apply(rect: Rect, `type`: RepaintsOnScroll | TouchEventHandler | WheelEventHandler): ScrollRect = {
+  inline def apply(rect: Rect, `type`: RepaintsOnScroll | TouchEventHandler | WheelEventHandler): ScrollRect = {
     val __obj = js.Dynamic.literal(rect = rect.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScrollRect]
   }
   
-  @scala.inline
-  implicit class ScrollRectMutableBuilder[Self <: ScrollRect] (val x: Self) extends AnyVal {
+  extension [Self <: ScrollRect](x: Self) {
     
-    @scala.inline
-    def setRect(value: Rect): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
+    inline def setRect(value: Rect): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: RepaintsOnScroll | TouchEventHandler | WheelEventHandler): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: RepaintsOnScroll | TouchEventHandler | WheelEventHandler): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

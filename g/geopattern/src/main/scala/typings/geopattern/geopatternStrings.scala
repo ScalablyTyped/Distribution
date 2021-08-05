@@ -11,111 +11,95 @@ object geopatternStrings {
   sealed trait chevrons
     extends StObject
        with GeneratorType
-  @scala.inline
-  def chevrons: chevrons = "chevrons".asInstanceOf[chevrons]
+  inline def chevrons: chevrons = "chevrons".asInstanceOf[chevrons]
   
   @js.native
   sealed trait concentricCircles
     extends StObject
        with GeneratorType
-  @scala.inline
-  def concentricCircles: concentricCircles = "concentricCircles".asInstanceOf[concentricCircles]
+  inline def concentricCircles: concentricCircles = "concentricCircles".asInstanceOf[concentricCircles]
   
   @js.native
   sealed trait diamonds
     extends StObject
        with GeneratorType
-  @scala.inline
-  def diamonds: diamonds = "diamonds".asInstanceOf[diamonds]
+  inline def diamonds: diamonds = "diamonds".asInstanceOf[diamonds]
   
   @js.native
   sealed trait hexagons
     extends StObject
        with GeneratorType
-  @scala.inline
-  def hexagons: hexagons = "hexagons".asInstanceOf[hexagons]
+  inline def hexagons: hexagons = "hexagons".asInstanceOf[hexagons]
   
   @js.native
   sealed trait mosaicSquares
     extends StObject
        with GeneratorType
-  @scala.inline
-  def mosaicSquares: mosaicSquares = "mosaicSquares".asInstanceOf[mosaicSquares]
+  inline def mosaicSquares: mosaicSquares = "mosaicSquares".asInstanceOf[mosaicSquares]
   
   @js.native
   sealed trait nestedSquares
     extends StObject
        with GeneratorType
-  @scala.inline
-  def nestedSquares: nestedSquares = "nestedSquares".asInstanceOf[nestedSquares]
+  inline def nestedSquares: nestedSquares = "nestedSquares".asInstanceOf[nestedSquares]
   
   @js.native
   sealed trait octagons
     extends StObject
        with GeneratorType
-  @scala.inline
-  def octagons: octagons = "octagons".asInstanceOf[octagons]
+  inline def octagons: octagons = "octagons".asInstanceOf[octagons]
   
   @js.native
   sealed trait overlappingCircles
     extends StObject
        with GeneratorType
-  @scala.inline
-  def overlappingCircles: overlappingCircles = "overlappingCircles".asInstanceOf[overlappingCircles]
+  inline def overlappingCircles: overlappingCircles = "overlappingCircles".asInstanceOf[overlappingCircles]
   
   @js.native
   sealed trait overlappingRings
     extends StObject
        with GeneratorType
-  @scala.inline
-  def overlappingRings: overlappingRings = "overlappingRings".asInstanceOf[overlappingRings]
+  inline def overlappingRings: overlappingRings = "overlappingRings".asInstanceOf[overlappingRings]
   
   @js.native
   sealed trait plaid
     extends StObject
        with GeneratorType
-  @scala.inline
-  def plaid: plaid = "plaid".asInstanceOf[plaid]
+  inline def plaid: plaid = "plaid".asInstanceOf[plaid]
   
   @js.native
   sealed trait plusSigns
     extends StObject
        with GeneratorType
-  @scala.inline
-  def plusSigns: plusSigns = "plusSigns".asInstanceOf[plusSigns]
+  inline def plusSigns: plusSigns = "plusSigns".asInstanceOf[plusSigns]
   
   @js.native
   sealed trait sineWaves
     extends StObject
        with GeneratorType
-  @scala.inline
-  def sineWaves: sineWaves = "sineWaves".asInstanceOf[sineWaves]
+  inline def sineWaves: sineWaves = "sineWaves".asInstanceOf[sineWaves]
   
   @js.native
   sealed trait squares
     extends StObject
        with GeneratorType
-  @scala.inline
-  def squares: squares = "squares".asInstanceOf[squares]
+  inline def squares: squares = "squares".asInstanceOf[squares]
   
   @js.native
   sealed trait tessellation
     extends StObject
        with GeneratorType
-  @scala.inline
-  def tessellation: tessellation = "tessellation".asInstanceOf[tessellation]
+  inline def tessellation: tessellation = "tessellation".asInstanceOf[tessellation]
   
   @js.native
   sealed trait triangles
     extends StObject
        with GeneratorType
-  @scala.inline
-  def triangles: triangles = "triangles".asInstanceOf[triangles]
+  inline def triangles: triangles = "triangles".asInstanceOf[triangles]
   
   @js.native
   sealed trait xes
     extends StObject
        with GeneratorType
-  @scala.inline
-  def xes: xes = "xes".asInstanceOf[xes]
+  inline def xes: xes = "xes".asInstanceOf[xes]
 }

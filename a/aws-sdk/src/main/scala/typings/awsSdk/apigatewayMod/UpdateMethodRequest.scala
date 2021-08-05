@@ -28,31 +28,23 @@ trait UpdateMethodRequest extends StObject {
 }
 object UpdateMethodRequest {
   
-  @scala.inline
-  def apply(httpMethod: String, resourceId: String, restApiId: String): UpdateMethodRequest = {
+  inline def apply(httpMethod: String, resourceId: String, restApiId: String): UpdateMethodRequest = {
     val __obj = js.Dynamic.literal(httpMethod = httpMethod.asInstanceOf[js.Any], resourceId = resourceId.asInstanceOf[js.Any], restApiId = restApiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateMethodRequest]
   }
   
-  @scala.inline
-  implicit class UpdateMethodRequestMutableBuilder[Self <: UpdateMethodRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateMethodRequest](x: Self) {
     
-    @scala.inline
-    def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
+    inline def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchOperations(value: ListOfPatchOperation): Self = StObject.set(x, "patchOperations", value.asInstanceOf[js.Any])
+    inline def setPatchOperations(value: ListOfPatchOperation): Self = StObject.set(x, "patchOperations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchOperationsUndefined: Self = StObject.set(x, "patchOperations", js.undefined)
+    inline def setPatchOperationsUndefined: Self = StObject.set(x, "patchOperations", js.undefined)
     
-    @scala.inline
-    def setPatchOperationsVarargs(value: PatchOperation*): Self = StObject.set(x, "patchOperations", js.Array(value :_*))
+    inline def setPatchOperationsVarargs(value: PatchOperation*): Self = StObject.set(x, "patchOperations", js.Array(value :_*))
     
-    @scala.inline
-    def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
+    inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
   }
 }

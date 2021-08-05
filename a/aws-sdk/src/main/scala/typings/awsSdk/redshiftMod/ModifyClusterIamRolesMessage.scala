@@ -23,34 +23,25 @@ trait ModifyClusterIamRolesMessage extends StObject {
 }
 object ModifyClusterIamRolesMessage {
   
-  @scala.inline
-  def apply(ClusterIdentifier: String): ModifyClusterIamRolesMessage = {
+  inline def apply(ClusterIdentifier: String): ModifyClusterIamRolesMessage = {
     val __obj = js.Dynamic.literal(ClusterIdentifier = ClusterIdentifier.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyClusterIamRolesMessage]
   }
   
-  @scala.inline
-  implicit class ModifyClusterIamRolesMessageMutableBuilder[Self <: ModifyClusterIamRolesMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyClusterIamRolesMessage](x: Self) {
     
-    @scala.inline
-    def setAddIamRoles(value: IamRoleArnList): Self = StObject.set(x, "AddIamRoles", value.asInstanceOf[js.Any])
+    inline def setAddIamRoles(value: IamRoleArnList): Self = StObject.set(x, "AddIamRoles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddIamRolesUndefined: Self = StObject.set(x, "AddIamRoles", js.undefined)
+    inline def setAddIamRolesUndefined: Self = StObject.set(x, "AddIamRoles", js.undefined)
     
-    @scala.inline
-    def setAddIamRolesVarargs(value: String*): Self = StObject.set(x, "AddIamRoles", js.Array(value :_*))
+    inline def setAddIamRolesVarargs(value: String*): Self = StObject.set(x, "AddIamRoles", js.Array(value :_*))
     
-    @scala.inline
-    def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
+    inline def setClusterIdentifier(value: String): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveIamRoles(value: IamRoleArnList): Self = StObject.set(x, "RemoveIamRoles", value.asInstanceOf[js.Any])
+    inline def setRemoveIamRoles(value: IamRoleArnList): Self = StObject.set(x, "RemoveIamRoles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveIamRolesUndefined: Self = StObject.set(x, "RemoveIamRoles", js.undefined)
+    inline def setRemoveIamRolesUndefined: Self = StObject.set(x, "RemoveIamRoles", js.undefined)
     
-    @scala.inline
-    def setRemoveIamRolesVarargs(value: String*): Self = StObject.set(x, "RemoveIamRoles", js.Array(value :_*))
+    inline def setRemoveIamRolesVarargs(value: String*): Self = StObject.set(x, "RemoveIamRoles", js.Array(value :_*))
   }
 }

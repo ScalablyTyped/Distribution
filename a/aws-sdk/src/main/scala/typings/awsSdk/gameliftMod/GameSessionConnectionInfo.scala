@@ -33,46 +33,33 @@ trait GameSessionConnectionInfo extends StObject {
 }
 object GameSessionConnectionInfo {
   
-  @scala.inline
-  def apply(): GameSessionConnectionInfo = {
+  inline def apply(): GameSessionConnectionInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GameSessionConnectionInfo]
   }
   
-  @scala.inline
-  implicit class GameSessionConnectionInfoMutableBuilder[Self <: GameSessionConnectionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GameSessionConnectionInfo](x: Self) {
     
-    @scala.inline
-    def setDnsName(value: DnsName): Self = StObject.set(x, "DnsName", value.asInstanceOf[js.Any])
+    inline def setDnsName(value: DnsName): Self = StObject.set(x, "DnsName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDnsNameUndefined: Self = StObject.set(x, "DnsName", js.undefined)
+    inline def setDnsNameUndefined: Self = StObject.set(x, "DnsName", js.undefined)
     
-    @scala.inline
-    def setGameSessionArn(value: ArnStringModel): Self = StObject.set(x, "GameSessionArn", value.asInstanceOf[js.Any])
+    inline def setGameSessionArn(value: ArnStringModel): Self = StObject.set(x, "GameSessionArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGameSessionArnUndefined: Self = StObject.set(x, "GameSessionArn", js.undefined)
+    inline def setGameSessionArnUndefined: Self = StObject.set(x, "GameSessionArn", js.undefined)
     
-    @scala.inline
-    def setIpAddress(value: StringModel): Self = StObject.set(x, "IpAddress", value.asInstanceOf[js.Any])
+    inline def setIpAddress(value: StringModel): Self = StObject.set(x, "IpAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAddressUndefined: Self = StObject.set(x, "IpAddress", js.undefined)
+    inline def setIpAddressUndefined: Self = StObject.set(x, "IpAddress", js.undefined)
     
-    @scala.inline
-    def setMatchedPlayerSessions(value: MatchedPlayerSessionList): Self = StObject.set(x, "MatchedPlayerSessions", value.asInstanceOf[js.Any])
+    inline def setMatchedPlayerSessions(value: MatchedPlayerSessionList): Self = StObject.set(x, "MatchedPlayerSessions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchedPlayerSessionsUndefined: Self = StObject.set(x, "MatchedPlayerSessions", js.undefined)
+    inline def setMatchedPlayerSessionsUndefined: Self = StObject.set(x, "MatchedPlayerSessions", js.undefined)
     
-    @scala.inline
-    def setMatchedPlayerSessionsVarargs(value: MatchedPlayerSession*): Self = StObject.set(x, "MatchedPlayerSessions", js.Array(value :_*))
+    inline def setMatchedPlayerSessionsVarargs(value: MatchedPlayerSession*): Self = StObject.set(x, "MatchedPlayerSessions", js.Array(value :_*))
     
-    @scala.inline
-    def setPort(value: PositiveInteger): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
+    inline def setPort(value: PositiveInteger): Self = StObject.set(x, "Port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "Port", js.undefined)
   }
 }

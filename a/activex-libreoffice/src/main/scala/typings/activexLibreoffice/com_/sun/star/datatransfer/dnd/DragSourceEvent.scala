@@ -29,19 +29,15 @@ trait DragSourceEvent
 }
 object DragSourceEvent {
   
-  @scala.inline
-  def apply(DragSource: XDragSource, DragSourceContext: XDragSourceContext, Source: XInterface): DragSourceEvent = {
+  inline def apply(DragSource: XDragSource, DragSourceContext: XDragSourceContext, Source: XInterface): DragSourceEvent = {
     val __obj = js.Dynamic.literal(DragSource = DragSource.asInstanceOf[js.Any], DragSourceContext = DragSourceContext.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[DragSourceEvent]
   }
   
-  @scala.inline
-  implicit class DragSourceEventMutableBuilder[Self <: DragSourceEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DragSourceEvent](x: Self) {
     
-    @scala.inline
-    def setDragSource(value: XDragSource): Self = StObject.set(x, "DragSource", value.asInstanceOf[js.Any])
+    inline def setDragSource(value: XDragSource): Self = StObject.set(x, "DragSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragSourceContext(value: XDragSourceContext): Self = StObject.set(x, "DragSourceContext", value.asInstanceOf[js.Any])
+    inline def setDragSourceContext(value: XDragSourceContext): Self = StObject.set(x, "DragSourceContext", value.asInstanceOf[js.Any])
   }
 }

@@ -21,8 +21,7 @@ object placeholderImageMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object PlaceholderImageProps {
     
-    @scala.inline
-    def apply(): PlaceholderImageProps = {
+    inline def apply(): PlaceholderImageProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PlaceholderImageProps]
     }
@@ -44,38 +43,28 @@ object placeholderImageMod extends Shortcut {
   }
   object StrictPlaceholderImageProps {
     
-    @scala.inline
-    def apply(): StrictPlaceholderImageProps = {
+    inline def apply(): StrictPlaceholderImageProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictPlaceholderImageProps]
     }
     
-    @scala.inline
-    implicit class StrictPlaceholderImagePropsMutableBuilder[Self <: StrictPlaceholderImageProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictPlaceholderImageProps](x: Self) {
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setRectangular(value: Boolean): Self = StObject.set(x, "rectangular", value.asInstanceOf[js.Any])
+      inline def setRectangular(value: Boolean): Self = StObject.set(x, "rectangular", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRectangularUndefined: Self = StObject.set(x, "rectangular", js.undefined)
+      inline def setRectangularUndefined: Self = StObject.set(x, "rectangular", js.undefined)
       
-      @scala.inline
-      def setSquare(value: Boolean): Self = StObject.set(x, "square", value.asInstanceOf[js.Any])
+      inline def setSquare(value: Boolean): Self = StObject.set(x, "square", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSquareUndefined: Self = StObject.set(x, "square", js.undefined)
+      inline def setSquareUndefined: Self = StObject.set(x, "square", js.undefined)
     }
   }
   

@@ -23,8 +23,7 @@ trait DocumentMSPasswordRequest2
 }
 object DocumentMSPasswordRequest2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Classification: InteractionClassification,
     Context: XInterface,
     IsRequestPasswordToModify: Boolean,
@@ -36,10 +35,8 @@ object DocumentMSPasswordRequest2 {
     __obj.asInstanceOf[DocumentMSPasswordRequest2]
   }
   
-  @scala.inline
-  implicit class DocumentMSPasswordRequest2MutableBuilder[Self <: DocumentMSPasswordRequest2] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentMSPasswordRequest2](x: Self) {
     
-    @scala.inline
-    def setIsRequestPasswordToModify(value: Boolean): Self = StObject.set(x, "IsRequestPasswordToModify", value.asInstanceOf[js.Any])
+    inline def setIsRequestPasswordToModify(value: Boolean): Self = StObject.set(x, "IsRequestPasswordToModify", value.asInstanceOf[js.Any])
   }
 }

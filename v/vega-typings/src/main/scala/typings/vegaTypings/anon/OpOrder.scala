@@ -17,22 +17,17 @@ trait OpOrder
 }
 object OpOrder {
   
-  @scala.inline
-  def apply(): OpOrder = {
+  inline def apply(): OpOrder = {
     val __obj = js.Dynamic.literal(op = "count")
     __obj.asInstanceOf[OpOrder]
   }
   
-  @scala.inline
-  implicit class OpOrderMutableBuilder[Self <: OpOrder] (val x: Self) extends AnyVal {
+  extension [Self <: OpOrder](x: Self) {
     
-    @scala.inline
-    def setOp(value: count): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+    inline def setOp(value: count): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrder(value: SortOrder): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: SortOrder): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
   }
 }

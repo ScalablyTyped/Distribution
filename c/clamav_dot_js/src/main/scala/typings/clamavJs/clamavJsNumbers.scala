@@ -8,6 +8,5 @@ object clamavJsNumbers {
   
   @js.native
   sealed trait `3310` extends StObject
-  @scala.inline
-  def `3310`: `3310` = 3310.asInstanceOf[`3310`]
+  inline def `3310`: `3310` = 3310.asInstanceOf[`3310`]
 }

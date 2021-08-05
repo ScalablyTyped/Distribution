@@ -13,14 +13,11 @@ object mixComplexMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def mixArray(from: BlendableArray, to: BlendableArray): js.Function1[/* v */ Double, js.Array[String | Double | HSLA | RGBA]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mixArray")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* v */ Double, js.Array[String | Double | HSLA | RGBA]]]
+  inline def mixArray(from: BlendableArray, to: BlendableArray): js.Function1[/* v */ Double, js.Array[String | Double | HSLA | RGBA]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mixArray")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* v */ Double, js.Array[String | Double | HSLA | RGBA]]]
   
-  @scala.inline
-  def mixComplex(origin: String, target: String): MixComplex_ = (^.asInstanceOf[js.Dynamic].applyDynamic("mixComplex")(origin.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[MixComplex_]
+  inline def mixComplex(origin: String, target: String): MixComplex_ = (^.asInstanceOf[js.Dynamic].applyDynamic("mixComplex")(origin.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[MixComplex_]
   
-  @scala.inline
-  def mixObject(origin: BlendableObject, target: BlendableObject): js.Function1[/* v */ Double, StringDictionary[String | Double | HSLA | RGBA]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mixObject")(origin.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* v */ Double, StringDictionary[String | Double | HSLA | RGBA]]]
+  inline def mixObject(origin: BlendableObject, target: BlendableObject): js.Function1[/* v */ Double, StringDictionary[String | Double | HSLA | RGBA]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mixObject")(origin.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* v */ Double, StringDictionary[String | Double | HSLA | RGBA]]]
   
   type BlendableArray = js.Array[Double | RGBA | HSLA | String]
   

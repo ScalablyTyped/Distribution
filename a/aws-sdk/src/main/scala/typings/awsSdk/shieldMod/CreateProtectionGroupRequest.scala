@@ -33,8 +33,7 @@ trait CreateProtectionGroupRequest extends StObject {
 }
 object CreateProtectionGroupRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Aggregation: ProtectionGroupAggregation,
     Pattern: ProtectionGroupPattern,
     ProtectionGroupId: ProtectionGroupId
@@ -43,31 +42,22 @@ object CreateProtectionGroupRequest {
     __obj.asInstanceOf[CreateProtectionGroupRequest]
   }
   
-  @scala.inline
-  implicit class CreateProtectionGroupRequestMutableBuilder[Self <: CreateProtectionGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateProtectionGroupRequest](x: Self) {
     
-    @scala.inline
-    def setAggregation(value: ProtectionGroupAggregation): Self = StObject.set(x, "Aggregation", value.asInstanceOf[js.Any])
+    inline def setAggregation(value: ProtectionGroupAggregation): Self = StObject.set(x, "Aggregation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembers(value: ProtectionGroupMembers): Self = StObject.set(x, "Members", value.asInstanceOf[js.Any])
+    inline def setMembers(value: ProtectionGroupMembers): Self = StObject.set(x, "Members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMembersUndefined: Self = StObject.set(x, "Members", js.undefined)
+    inline def setMembersUndefined: Self = StObject.set(x, "Members", js.undefined)
     
-    @scala.inline
-    def setMembersVarargs(value: ResourceArn*): Self = StObject.set(x, "Members", js.Array(value :_*))
+    inline def setMembersVarargs(value: ResourceArn*): Self = StObject.set(x, "Members", js.Array(value :_*))
     
-    @scala.inline
-    def setPattern(value: ProtectionGroupPattern): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: ProtectionGroupPattern): Self = StObject.set(x, "Pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtectionGroupId(value: ProtectionGroupId): Self = StObject.set(x, "ProtectionGroupId", value.asInstanceOf[js.Any])
+    inline def setProtectionGroupId(value: ProtectionGroupId): Self = StObject.set(x, "ProtectionGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceType(value: ProtectedResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: ProtectedResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
   }
 }

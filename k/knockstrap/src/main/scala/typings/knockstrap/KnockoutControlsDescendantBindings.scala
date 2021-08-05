@@ -10,16 +10,13 @@ trait KnockoutControlsDescendantBindings extends StObject {
 }
 object KnockoutControlsDescendantBindings {
   
-  @scala.inline
-  def apply(controlsDescendantBindings: Boolean): KnockoutControlsDescendantBindings = {
+  inline def apply(controlsDescendantBindings: Boolean): KnockoutControlsDescendantBindings = {
     val __obj = js.Dynamic.literal(controlsDescendantBindings = controlsDescendantBindings.asInstanceOf[js.Any])
     __obj.asInstanceOf[KnockoutControlsDescendantBindings]
   }
   
-  @scala.inline
-  implicit class KnockoutControlsDescendantBindingsMutableBuilder[Self <: KnockoutControlsDescendantBindings] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutControlsDescendantBindings](x: Self) {
     
-    @scala.inline
-    def setControlsDescendantBindings(value: Boolean): Self = StObject.set(x, "controlsDescendantBindings", value.asInstanceOf[js.Any])
+    inline def setControlsDescendantBindings(value: Boolean): Self = StObject.set(x, "controlsDescendantBindings", value.asInstanceOf[js.Any])
   }
 }

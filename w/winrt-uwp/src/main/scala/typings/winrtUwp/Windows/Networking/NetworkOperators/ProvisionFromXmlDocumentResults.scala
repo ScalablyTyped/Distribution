@@ -15,19 +15,15 @@ trait ProvisionFromXmlDocumentResults extends StObject {
 }
 object ProvisionFromXmlDocumentResults {
   
-  @scala.inline
-  def apply(allElementsProvisioned: Boolean, provisionResultsXml: String): ProvisionFromXmlDocumentResults = {
+  inline def apply(allElementsProvisioned: Boolean, provisionResultsXml: String): ProvisionFromXmlDocumentResults = {
     val __obj = js.Dynamic.literal(allElementsProvisioned = allElementsProvisioned.asInstanceOf[js.Any], provisionResultsXml = provisionResultsXml.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProvisionFromXmlDocumentResults]
   }
   
-  @scala.inline
-  implicit class ProvisionFromXmlDocumentResultsMutableBuilder[Self <: ProvisionFromXmlDocumentResults] (val x: Self) extends AnyVal {
+  extension [Self <: ProvisionFromXmlDocumentResults](x: Self) {
     
-    @scala.inline
-    def setAllElementsProvisioned(value: Boolean): Self = StObject.set(x, "allElementsProvisioned", value.asInstanceOf[js.Any])
+    inline def setAllElementsProvisioned(value: Boolean): Self = StObject.set(x, "allElementsProvisioned", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionResultsXml(value: String): Self = StObject.set(x, "provisionResultsXml", value.asInstanceOf[js.Any])
+    inline def setProvisionResultsXml(value: String): Self = StObject.set(x, "provisionResultsXml", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait DeleteMitigationActionRequest extends StObject {
 }
 object DeleteMitigationActionRequest {
   
-  @scala.inline
-  def apply(actionName: MitigationActionName): DeleteMitigationActionRequest = {
+  inline def apply(actionName: MitigationActionName): DeleteMitigationActionRequest = {
     val __obj = js.Dynamic.literal(actionName = actionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteMitigationActionRequest]
   }
   
-  @scala.inline
-  implicit class DeleteMitigationActionRequestMutableBuilder[Self <: DeleteMitigationActionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteMitigationActionRequest](x: Self) {
     
-    @scala.inline
-    def setActionName(value: MitigationActionName): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
+    inline def setActionName(value: MitigationActionName): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
   }
 }

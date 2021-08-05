@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait PageBreak extends StObject {
   
-  @JSName("Access.PageBreak_typekey")
+  /* private */ @JSName("Access.PageBreak_typekey")
   var AccessDotPageBreak_typekey: PageBreak = js.native
   
   val Application: typings.activexAccess.Access.Application = js.native

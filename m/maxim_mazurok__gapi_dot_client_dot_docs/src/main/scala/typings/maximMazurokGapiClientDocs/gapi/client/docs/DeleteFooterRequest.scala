@@ -14,19 +14,15 @@ trait DeleteFooterRequest extends StObject {
 }
 object DeleteFooterRequest {
   
-  @scala.inline
-  def apply(): DeleteFooterRequest = {
+  inline def apply(): DeleteFooterRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteFooterRequest]
   }
   
-  @scala.inline
-  implicit class DeleteFooterRequestMutableBuilder[Self <: DeleteFooterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFooterRequest](x: Self) {
     
-    @scala.inline
-    def setFooterId(value: String): Self = StObject.set(x, "footerId", value.asInstanceOf[js.Any])
+    inline def setFooterId(value: String): Self = StObject.set(x, "footerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFooterIdUndefined: Self = StObject.set(x, "footerId", js.undefined)
+    inline def setFooterIdUndefined: Self = StObject.set(x, "footerId", js.undefined)
   }
 }

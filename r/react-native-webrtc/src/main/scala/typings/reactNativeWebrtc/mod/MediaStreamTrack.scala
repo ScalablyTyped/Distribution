@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 class MediaStreamTrack () extends StObject {
   
-  var _enabled: Boolean = js.native
+  /* private */ var _enabled: Boolean = js.native
   
   /* private */ def _switchCamera(): Unit = js.native
   

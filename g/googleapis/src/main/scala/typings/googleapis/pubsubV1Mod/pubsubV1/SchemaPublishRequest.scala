@@ -16,22 +16,17 @@ trait SchemaPublishRequest extends StObject {
 }
 object SchemaPublishRequest {
   
-  @scala.inline
-  def apply(): SchemaPublishRequest = {
+  inline def apply(): SchemaPublishRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPublishRequest]
   }
   
-  @scala.inline
-  implicit class SchemaPublishRequestMutableBuilder[Self <: SchemaPublishRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPublishRequest](x: Self) {
     
-    @scala.inline
-    def setMessages(value: js.Array[SchemaPubsubMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: js.Array[SchemaPubsubMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+    inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
     
-    @scala.inline
-    def setMessagesVarargs(value: SchemaPubsubMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: SchemaPubsubMessage*): Self = StObject.set(x, "messages", js.Array(value :_*))
   }
 }

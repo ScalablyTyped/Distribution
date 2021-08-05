@@ -15,25 +15,19 @@ trait SchemaFileContentBuffer extends StObject {
 }
 object SchemaFileContentBuffer {
   
-  @scala.inline
-  def apply(): SchemaFileContentBuffer = {
+  inline def apply(): SchemaFileContentBuffer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFileContentBuffer]
   }
   
-  @scala.inline
-  implicit class SchemaFileContentBufferMutableBuilder[Self <: SchemaFileContentBuffer] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFileContentBuffer](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setFileType(value: String): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
+    inline def setFileType(value: String): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
+    inline def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
   }
 }

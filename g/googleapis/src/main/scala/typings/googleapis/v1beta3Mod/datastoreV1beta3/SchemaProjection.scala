@@ -16,19 +16,15 @@ trait SchemaProjection extends StObject {
 }
 object SchemaProjection {
   
-  @scala.inline
-  def apply(): SchemaProjection = {
+  inline def apply(): SchemaProjection = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaProjection]
   }
   
-  @scala.inline
-  implicit class SchemaProjectionMutableBuilder[Self <: SchemaProjection] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaProjection](x: Self) {
     
-    @scala.inline
-    def setProperty(value: SchemaPropertyReference): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: SchemaPropertyReference): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+    inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
   }
 }

@@ -13,22 +13,17 @@ trait EnterStandbyAnswer extends StObject {
 }
 object EnterStandbyAnswer {
   
-  @scala.inline
-  def apply(): EnterStandbyAnswer = {
+  inline def apply(): EnterStandbyAnswer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnterStandbyAnswer]
   }
   
-  @scala.inline
-  implicit class EnterStandbyAnswerMutableBuilder[Self <: EnterStandbyAnswer] (val x: Self) extends AnyVal {
+  extension [Self <: EnterStandbyAnswer](x: Self) {
     
-    @scala.inline
-    def setActivities(value: Activities): Self = StObject.set(x, "Activities", value.asInstanceOf[js.Any])
+    inline def setActivities(value: Activities): Self = StObject.set(x, "Activities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivitiesUndefined: Self = StObject.set(x, "Activities", js.undefined)
+    inline def setActivitiesUndefined: Self = StObject.set(x, "Activities", js.undefined)
     
-    @scala.inline
-    def setActivitiesVarargs(value: Activity*): Self = StObject.set(x, "Activities", js.Array(value :_*))
+    inline def setActivitiesVarargs(value: Activity*): Self = StObject.set(x, "Activities", js.Array(value :_*))
   }
 }

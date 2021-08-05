@@ -33,38 +33,28 @@ object anon {
   }
   object Auto {
     
-    @scala.inline
-    def apply(): Auto = {
+    inline def apply(): Auto = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Auto]
     }
     
-    @scala.inline
-    implicit class AutoMutableBuilder[Self <: Auto] (val x: Self) extends AnyVal {
+    extension [Self <: Auto](x: Self) {
       
-      @scala.inline
-      def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
+      inline def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
+      inline def setAutoUndefined: Self = StObject.set(x, "auto", js.undefined)
       
-      @scala.inline
-      def setCode(value: Boolean): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Boolean): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+      inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
       
-      @scala.inline
-      def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+      inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
+      inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
       
-      @scala.inline
-      def setRegister(value: StringDictionary[js.Function1[/* hljs */ js.UndefOr[HLJSApi], Language]]): Self = StObject.set(x, "register", value.asInstanceOf[js.Any])
+      inline def setRegister(value: StringDictionary[js.Function1[/* hljs */ js.UndefOr[HLJSApi], Language]]): Self = StObject.set(x, "register", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegisterUndefined: Self = StObject.set(x, "register", js.undefined)
+      inline def setRegisterUndefined: Self = StObject.set(x, "register", js.undefined)
     }
   }
 }

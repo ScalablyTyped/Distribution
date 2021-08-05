@@ -36,8 +36,7 @@ trait FilterQueryOp
 }
 object FilterQueryOp {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     All: FilterQueryOpSymbol,
     Any: FilterQueryOpSymbol,
     Contains: FilterQueryOpSymbol,
@@ -59,43 +58,30 @@ object FilterQueryOp {
     __obj.asInstanceOf[FilterQueryOp]
   }
   
-  @scala.inline
-  implicit class FilterQueryOpMutableBuilder[Self <: FilterQueryOp] (val x: Self) extends AnyVal {
+  extension [Self <: FilterQueryOp](x: Self) {
     
-    @scala.inline
-    def setAll(value: FilterQueryOpSymbol): Self = StObject.set(x, "All", value.asInstanceOf[js.Any])
+    inline def setAll(value: FilterQueryOpSymbol): Self = StObject.set(x, "All", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAny(value: FilterQueryOpSymbol): Self = StObject.set(x, "Any", value.asInstanceOf[js.Any])
+    inline def setAny(value: FilterQueryOpSymbol): Self = StObject.set(x, "Any", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContains(value: FilterQueryOpSymbol): Self = StObject.set(x, "Contains", value.asInstanceOf[js.Any])
+    inline def setContains(value: FilterQueryOpSymbol): Self = StObject.set(x, "Contains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndsWith(value: FilterQueryOpSymbol): Self = StObject.set(x, "EndsWith", value.asInstanceOf[js.Any])
+    inline def setEndsWith(value: FilterQueryOpSymbol): Self = StObject.set(x, "EndsWith", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEquals(value: FilterQueryOpSymbol): Self = StObject.set(x, "Equals", value.asInstanceOf[js.Any])
+    inline def setEquals(value: FilterQueryOpSymbol): Self = StObject.set(x, "Equals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGreaterThan(value: FilterQueryOpSymbol): Self = StObject.set(x, "GreaterThan", value.asInstanceOf[js.Any])
+    inline def setGreaterThan(value: FilterQueryOpSymbol): Self = StObject.set(x, "GreaterThan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGreaterThanOrEqual(value: FilterQueryOpSymbol): Self = StObject.set(x, "GreaterThanOrEqual", value.asInstanceOf[js.Any])
+    inline def setGreaterThanOrEqual(value: FilterQueryOpSymbol): Self = StObject.set(x, "GreaterThanOrEqual", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTypeOf(value: FilterQueryOpSymbol): Self = StObject.set(x, "IsTypeOf", value.asInstanceOf[js.Any])
+    inline def setIsTypeOf(value: FilterQueryOpSymbol): Self = StObject.set(x, "IsTypeOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLessThan(value: FilterQueryOpSymbol): Self = StObject.set(x, "LessThan", value.asInstanceOf[js.Any])
+    inline def setLessThan(value: FilterQueryOpSymbol): Self = StObject.set(x, "LessThan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLessThanOrEqual(value: FilterQueryOpSymbol): Self = StObject.set(x, "LessThanOrEqual", value.asInstanceOf[js.Any])
+    inline def setLessThanOrEqual(value: FilterQueryOpSymbol): Self = StObject.set(x, "LessThanOrEqual", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotEquals(value: FilterQueryOpSymbol): Self = StObject.set(x, "NotEquals", value.asInstanceOf[js.Any])
+    inline def setNotEquals(value: FilterQueryOpSymbol): Self = StObject.set(x, "NotEquals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartsWith(value: FilterQueryOpSymbol): Self = StObject.set(x, "StartsWith", value.asInstanceOf[js.Any])
+    inline def setStartsWith(value: FilterQueryOpSymbol): Self = StObject.set(x, "StartsWith", value.asInstanceOf[js.Any])
   }
 }

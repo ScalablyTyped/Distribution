@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RTCStatsIceCandidateType extends StObject
 object RTCStatsIceCandidateType {
   
-  @scala.inline
-  def host: typings.std.stdStrings.host = "host".asInstanceOf[typings.std.stdStrings.host]
+  inline def host: typings.std.stdStrings.host = "host".asInstanceOf[typings.std.stdStrings.host]
   
-  @scala.inline
-  def peerreflexive: typings.std.stdStrings.peerreflexive = "peerreflexive".asInstanceOf[typings.std.stdStrings.peerreflexive]
+  inline def peerreflexive: typings.std.stdStrings.peerreflexive = "peerreflexive".asInstanceOf[typings.std.stdStrings.peerreflexive]
   
-  @scala.inline
-  def relayed: typings.std.stdStrings.relayed = "relayed".asInstanceOf[typings.std.stdStrings.relayed]
+  inline def relayed: typings.std.stdStrings.relayed = "relayed".asInstanceOf[typings.std.stdStrings.relayed]
   
-  @scala.inline
-  def serverreflexive: typings.std.stdStrings.serverreflexive = "serverreflexive".asInstanceOf[typings.std.stdStrings.serverreflexive]
+  inline def serverreflexive: typings.std.stdStrings.serverreflexive = "serverreflexive".asInstanceOf[typings.std.stdStrings.serverreflexive]
 }

@@ -11,19 +11,15 @@ trait WebDetectionParams extends StObject {
 }
 object WebDetectionParams {
   
-  @scala.inline
-  def apply(): WebDetectionParams = {
+  inline def apply(): WebDetectionParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebDetectionParams]
   }
   
-  @scala.inline
-  implicit class WebDetectionParamsMutableBuilder[Self <: WebDetectionParams] (val x: Self) extends AnyVal {
+  extension [Self <: WebDetectionParams](x: Self) {
     
-    @scala.inline
-    def setIncludeGeoResults(value: Boolean): Self = StObject.set(x, "includeGeoResults", value.asInstanceOf[js.Any])
+    inline def setIncludeGeoResults(value: Boolean): Self = StObject.set(x, "includeGeoResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeGeoResultsUndefined: Self = StObject.set(x, "includeGeoResults", js.undefined)
+    inline def setIncludeGeoResultsUndefined: Self = StObject.set(x, "includeGeoResults", js.undefined)
   }
 }

@@ -44,20 +44,16 @@ object mod extends Shortcut {
   }
   object ResponseWrapper {
     
-    @scala.inline
-    def apply(body: js.Any, response: Response): ResponseWrapper = {
+    inline def apply(body: js.Any, response: Response): ResponseWrapper = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResponseWrapper]
     }
     
-    @scala.inline
-    implicit class ResponseWrapperMutableBuilder[Self <: ResponseWrapper] (val x: Self) extends AnyVal {
+    extension [Self <: ResponseWrapper](x: Self) {
       
-      @scala.inline
-      def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: Response): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: Response): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
   }
   

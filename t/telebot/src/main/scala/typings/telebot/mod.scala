@@ -114,8 +114,7 @@ object mod {
   }
   
   /* static member */
-  @scala.inline
-  def addMethods(methods: (genericCb | js.Any)*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addMethods")(methods.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def addMethods(methods: (genericCb | js.Any)*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("addMethods")(methods.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   trait config extends StObject {
     
@@ -139,59 +138,42 @@ object mod {
   }
   object config {
     
-    @scala.inline
-    def apply(token: String): config = {
+    inline def apply(token: String): config = {
       val __obj = js.Dynamic.literal(token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[config]
     }
     
-    @scala.inline
-    implicit class configMutableBuilder[Self <: config] (val x: Self) extends AnyVal {
+    extension [Self <: config](x: Self) {
       
-      @scala.inline
-      def setAllowedUpdates(value: js.Array[String]): Self = StObject.set(x, "allowedUpdates", value.asInstanceOf[js.Any])
+      inline def setAllowedUpdates(value: js.Array[String]): Self = StObject.set(x, "allowedUpdates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedUpdatesUndefined: Self = StObject.set(x, "allowedUpdates", js.undefined)
+      inline def setAllowedUpdatesUndefined: Self = StObject.set(x, "allowedUpdates", js.undefined)
       
-      @scala.inline
-      def setAllowedUpdatesVarargs(value: String*): Self = StObject.set(x, "allowedUpdates", js.Array(value :_*))
+      inline def setAllowedUpdatesVarargs(value: String*): Self = StObject.set(x, "allowedUpdates", js.Array(value :_*))
       
-      @scala.inline
-      def setPluginConfig(value: js.Any): Self = StObject.set(x, "pluginConfig", value.asInstanceOf[js.Any])
+      inline def setPluginConfig(value: js.Any): Self = StObject.set(x, "pluginConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginConfigUndefined: Self = StObject.set(x, "pluginConfig", js.undefined)
+      inline def setPluginConfigUndefined: Self = StObject.set(x, "pluginConfig", js.undefined)
       
-      @scala.inline
-      def setPluginFolder(value: String): Self = StObject.set(x, "pluginFolder", value.asInstanceOf[js.Any])
+      inline def setPluginFolder(value: String): Self = StObject.set(x, "pluginFolder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginFolderUndefined: Self = StObject.set(x, "pluginFolder", js.undefined)
+      inline def setPluginFolderUndefined: Self = StObject.set(x, "pluginFolder", js.undefined)
       
-      @scala.inline
-      def setPolling(value: Interval): Self = StObject.set(x, "polling", value.asInstanceOf[js.Any])
+      inline def setPolling(value: Interval): Self = StObject.set(x, "polling", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPollingUndefined: Self = StObject.set(x, "polling", js.undefined)
+      inline def setPollingUndefined: Self = StObject.set(x, "polling", js.undefined)
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsePlugins(value: js.Array[String]): Self = StObject.set(x, "usePlugins", value.asInstanceOf[js.Any])
+      inline def setUsePlugins(value: js.Array[String]): Self = StObject.set(x, "usePlugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsePluginsUndefined: Self = StObject.set(x, "usePlugins", js.undefined)
+      inline def setUsePluginsUndefined: Self = StObject.set(x, "usePlugins", js.undefined)
       
-      @scala.inline
-      def setUsePluginsVarargs(value: String*): Self = StObject.set(x, "usePlugins", js.Array(value :_*))
+      inline def setUsePluginsVarargs(value: String*): Self = StObject.set(x, "usePlugins", js.Array(value :_*))
       
-      @scala.inline
-      def setWebhook(value: Cert): Self = StObject.set(x, "webhook", value.asInstanceOf[js.Any])
+      inline def setWebhook(value: Cert): Self = StObject.set(x, "webhook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebhookUndefined: Self = StObject.set(x, "webhook", js.undefined)
+      inline def setWebhookUndefined: Self = StObject.set(x, "webhook", js.undefined)
     }
   }
   
@@ -211,23 +193,18 @@ object mod {
   }
   object module {
     
-    @scala.inline
-    def apply(defaultConfig: js.Any, id: String, plugin: /* repeated */ js.Any => Unit): module = {
+    inline def apply(defaultConfig: js.Any, id: String, plugin: /* repeated */ js.Any => Unit): module = {
       val __obj = js.Dynamic.literal(defaultConfig = defaultConfig.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], plugin = js.Any.fromFunction1(plugin))
       __obj.asInstanceOf[module]
     }
     
-    @scala.inline
-    implicit class moduleMutableBuilder[Self <: module] (val x: Self) extends AnyVal {
+    extension [Self <: module](x: Self) {
       
-      @scala.inline
-      def setDefaultConfig(value: js.Any): Self = StObject.set(x, "defaultConfig", value.asInstanceOf[js.Any])
+      inline def setDefaultConfig(value: js.Any): Self = StObject.set(x, "defaultConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlugin(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "plugin", js.Any.fromFunction1(value))
+      inline def setPlugin(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "plugin", js.Any.fromFunction1(value))
     }
   }
   

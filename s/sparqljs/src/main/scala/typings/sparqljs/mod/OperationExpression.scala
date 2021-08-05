@@ -19,26 +19,20 @@ trait OperationExpression
 }
 object OperationExpression {
   
-  @scala.inline
-  def apply(args: js.Array[Expression], operator: String): OperationExpression = {
+  inline def apply(args: js.Array[Expression], operator: String): OperationExpression = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("operation")
     __obj.asInstanceOf[OperationExpression]
   }
   
-  @scala.inline
-  implicit class OperationExpressionMutableBuilder[Self <: OperationExpression] (val x: Self) extends AnyVal {
+  extension [Self <: OperationExpression](x: Self) {
     
-    @scala.inline
-    def setArgs(value: js.Array[Expression]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[Expression]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsVarargs(value: Expression*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: Expression*): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: operation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: operation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

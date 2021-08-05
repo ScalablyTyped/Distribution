@@ -10,19 +10,15 @@ trait JobPayloadOutput extends StObject {
 }
 object JobPayloadOutput {
   
-  @scala.inline
-  def apply(formats: js.Array[JobPayloadItem]): JobPayloadOutput = {
+  inline def apply(formats: js.Array[JobPayloadItem]): JobPayloadOutput = {
     val __obj = js.Dynamic.literal(formats = formats.asInstanceOf[js.Any])
     __obj.asInstanceOf[JobPayloadOutput]
   }
   
-  @scala.inline
-  implicit class JobPayloadOutputMutableBuilder[Self <: JobPayloadOutput] (val x: Self) extends AnyVal {
+  extension [Self <: JobPayloadOutput](x: Self) {
     
-    @scala.inline
-    def setFormats(value: js.Array[JobPayloadItem]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+    inline def setFormats(value: js.Array[JobPayloadItem]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatsVarargs(value: JobPayloadItem*): Self = StObject.set(x, "formats", js.Array(value :_*))
+    inline def setFormatsVarargs(value: JobPayloadItem*): Self = StObject.set(x, "formats", js.Array(value :_*))
   }
 }

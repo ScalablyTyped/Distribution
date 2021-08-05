@@ -18,25 +18,19 @@ trait ClassificationResultStatus extends StObject {
 }
 object ClassificationResultStatus {
   
-  @scala.inline
-  def apply(): ClassificationResultStatus = {
+  inline def apply(): ClassificationResultStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClassificationResultStatus]
   }
   
-  @scala.inline
-  implicit class ClassificationResultStatusMutableBuilder[Self <: ClassificationResultStatus] (val x: Self) extends AnyVal {
+  extension [Self <: ClassificationResultStatus](x: Self) {
     
-    @scala.inline
-    def setCode(value: string): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: string): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setReason(value: string): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: string): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
   }
 }

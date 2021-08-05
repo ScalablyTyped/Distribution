@@ -16,20 +16,16 @@ trait AnyAssignAction[TContext, TEvent /* <: EventObject */]
 }
 object AnyAssignAction {
   
-  @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](assignment: js.Any, `type`: Assign): AnyAssignAction[TContext, TEvent] = {
+  inline def apply[TContext, TEvent /* <: EventObject */](assignment: js.Any, `type`: Assign): AnyAssignAction[TContext, TEvent] = {
     val __obj = js.Dynamic.literal(assignment = assignment.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnyAssignAction[TContext, TEvent]]
   }
   
-  @scala.inline
-  implicit class AnyAssignActionMutableBuilder[Self <: AnyAssignAction[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (AnyAssignAction[TContext, TEvent])) extends AnyVal {
+  extension [Self <: AnyAssignAction[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (AnyAssignAction[TContext, TEvent])) {
     
-    @scala.inline
-    def setAssignment(value: js.Any): Self = StObject.set(x, "assignment", value.asInstanceOf[js.Any])
+    inline def setAssignment(value: js.Any): Self = StObject.set(x, "assignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: Assign): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Assign): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

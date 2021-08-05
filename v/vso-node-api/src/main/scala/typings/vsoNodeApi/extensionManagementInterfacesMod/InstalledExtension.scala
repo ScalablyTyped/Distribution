@@ -62,8 +62,7 @@ trait InstalledExtension
 }
 object InstalledExtension {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     baseUri: String,
     constraints: js.Array[ContributionConstraint],
     contributionTypes: js.Array[ContributionType],
@@ -92,40 +91,28 @@ object InstalledExtension {
     __obj.asInstanceOf[InstalledExtension]
   }
   
-  @scala.inline
-  implicit class InstalledExtensionMutableBuilder[Self <: InstalledExtension] (val x: Self) extends AnyVal {
+  extension [Self <: InstalledExtension](x: Self) {
     
-    @scala.inline
-    def setExtensionId(value: String): Self = StObject.set(x, "extensionId", value.asInstanceOf[js.Any])
+    inline def setExtensionId(value: String): Self = StObject.set(x, "extensionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionName(value: String): Self = StObject.set(x, "extensionName", value.asInstanceOf[js.Any])
+    inline def setExtensionName(value: String): Self = StObject.set(x, "extensionName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiles(value: js.Array[ExtensionFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: js.Array[ExtensionFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesVarargs(value: ExtensionFile*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: ExtensionFile*): Self = StObject.set(x, "files", js.Array(value :_*))
     
-    @scala.inline
-    def setFlags(value: ExtensionFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: ExtensionFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallState(value: InstalledExtensionState): Self = StObject.set(x, "installState", value.asInstanceOf[js.Any])
+    inline def setInstallState(value: InstalledExtensionState): Self = StObject.set(x, "installState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastPublished(value: Date): Self = StObject.set(x, "lastPublished", value.asInstanceOf[js.Any])
+    inline def setLastPublished(value: Date): Self = StObject.set(x, "lastPublished", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisherId(value: String): Self = StObject.set(x, "publisherId", value.asInstanceOf[js.Any])
+    inline def setPublisherId(value: String): Self = StObject.set(x, "publisherId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublisherName(value: String): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
+    inline def setPublisherName(value: String): Self = StObject.set(x, "publisherName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistrationId(value: String): Self = StObject.set(x, "registrationId", value.asInstanceOf[js.Any])
+    inline def setRegistrationId(value: String): Self = StObject.set(x, "registrationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

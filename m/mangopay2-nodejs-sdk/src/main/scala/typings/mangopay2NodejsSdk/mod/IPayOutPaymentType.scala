@@ -11,16 +11,13 @@ trait IPayOutPaymentType extends StObject {
 }
 object IPayOutPaymentType {
   
-  @scala.inline
-  def apply(): IPayOutPaymentType = {
+  inline def apply(): IPayOutPaymentType = {
     val __obj = js.Dynamic.literal(BankWire = "BANK_WIRE")
     __obj.asInstanceOf[IPayOutPaymentType]
   }
   
-  @scala.inline
-  implicit class IPayOutPaymentTypeMutableBuilder[Self <: IPayOutPaymentType] (val x: Self) extends AnyVal {
+  extension [Self <: IPayOutPaymentType](x: Self) {
     
-    @scala.inline
-    def setBankWire(value: BANK_WIRE): Self = StObject.set(x, "BankWire", value.asInstanceOf[js.Any])
+    inline def setBankWire(value: BANK_WIRE): Self = StObject.set(x, "BankWire", value.asInstanceOf[js.Any])
   }
 }

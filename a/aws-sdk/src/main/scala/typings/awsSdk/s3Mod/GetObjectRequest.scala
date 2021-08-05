@@ -105,127 +105,87 @@ trait GetObjectRequest extends StObject {
 }
 object GetObjectRequest {
   
-  @scala.inline
-  def apply(Bucket: BucketName, Key: ObjectKey): GetObjectRequest = {
+  inline def apply(Bucket: BucketName, Key: ObjectKey): GetObjectRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Key = Key.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetObjectRequest]
   }
   
-  @scala.inline
-  implicit class GetObjectRequestMutableBuilder[Self <: GetObjectRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetObjectRequest](x: Self) {
     
-    @scala.inline
-    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
+    inline def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
+    inline def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
     
-    @scala.inline
-    def setIfMatch(value: IfMatch): Self = StObject.set(x, "IfMatch", value.asInstanceOf[js.Any])
+    inline def setIfMatch(value: IfMatch): Self = StObject.set(x, "IfMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfMatchUndefined: Self = StObject.set(x, "IfMatch", js.undefined)
+    inline def setIfMatchUndefined: Self = StObject.set(x, "IfMatch", js.undefined)
     
-    @scala.inline
-    def setIfModifiedSince(value: IfModifiedSince): Self = StObject.set(x, "IfModifiedSince", value.asInstanceOf[js.Any])
+    inline def setIfModifiedSince(value: IfModifiedSince): Self = StObject.set(x, "IfModifiedSince", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfModifiedSinceUndefined: Self = StObject.set(x, "IfModifiedSince", js.undefined)
+    inline def setIfModifiedSinceUndefined: Self = StObject.set(x, "IfModifiedSince", js.undefined)
     
-    @scala.inline
-    def setIfNoneMatch(value: IfNoneMatch): Self = StObject.set(x, "IfNoneMatch", value.asInstanceOf[js.Any])
+    inline def setIfNoneMatch(value: IfNoneMatch): Self = StObject.set(x, "IfNoneMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfNoneMatchUndefined: Self = StObject.set(x, "IfNoneMatch", js.undefined)
+    inline def setIfNoneMatchUndefined: Self = StObject.set(x, "IfNoneMatch", js.undefined)
     
-    @scala.inline
-    def setIfUnmodifiedSince(value: IfUnmodifiedSince): Self = StObject.set(x, "IfUnmodifiedSince", value.asInstanceOf[js.Any])
+    inline def setIfUnmodifiedSince(value: IfUnmodifiedSince): Self = StObject.set(x, "IfUnmodifiedSince", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfUnmodifiedSinceUndefined: Self = StObject.set(x, "IfUnmodifiedSince", js.undefined)
+    inline def setIfUnmodifiedSinceUndefined: Self = StObject.set(x, "IfUnmodifiedSince", js.undefined)
     
-    @scala.inline
-    def setKey(value: ObjectKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: ObjectKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartNumber(value: PartNumber): Self = StObject.set(x, "PartNumber", value.asInstanceOf[js.Any])
+    inline def setPartNumber(value: PartNumber): Self = StObject.set(x, "PartNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartNumberUndefined: Self = StObject.set(x, "PartNumber", js.undefined)
+    inline def setPartNumberUndefined: Self = StObject.set(x, "PartNumber", js.undefined)
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangeUndefined: Self = StObject.set(x, "Range", js.undefined)
+    inline def setRangeUndefined: Self = StObject.set(x, "Range", js.undefined)
     
-    @scala.inline
-    def setRequestPayer(value: RequestPayer): Self = StObject.set(x, "RequestPayer", value.asInstanceOf[js.Any])
+    inline def setRequestPayer(value: RequestPayer): Self = StObject.set(x, "RequestPayer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestPayerUndefined: Self = StObject.set(x, "RequestPayer", js.undefined)
+    inline def setRequestPayerUndefined: Self = StObject.set(x, "RequestPayer", js.undefined)
     
-    @scala.inline
-    def setResponseCacheControl(value: ResponseCacheControl): Self = StObject.set(x, "ResponseCacheControl", value.asInstanceOf[js.Any])
+    inline def setResponseCacheControl(value: ResponseCacheControl): Self = StObject.set(x, "ResponseCacheControl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseCacheControlUndefined: Self = StObject.set(x, "ResponseCacheControl", js.undefined)
+    inline def setResponseCacheControlUndefined: Self = StObject.set(x, "ResponseCacheControl", js.undefined)
     
-    @scala.inline
-    def setResponseContentDisposition(value: ResponseContentDisposition): Self = StObject.set(x, "ResponseContentDisposition", value.asInstanceOf[js.Any])
+    inline def setResponseContentDisposition(value: ResponseContentDisposition): Self = StObject.set(x, "ResponseContentDisposition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseContentDispositionUndefined: Self = StObject.set(x, "ResponseContentDisposition", js.undefined)
+    inline def setResponseContentDispositionUndefined: Self = StObject.set(x, "ResponseContentDisposition", js.undefined)
     
-    @scala.inline
-    def setResponseContentEncoding(value: ResponseContentEncoding): Self = StObject.set(x, "ResponseContentEncoding", value.asInstanceOf[js.Any])
+    inline def setResponseContentEncoding(value: ResponseContentEncoding): Self = StObject.set(x, "ResponseContentEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseContentEncodingUndefined: Self = StObject.set(x, "ResponseContentEncoding", js.undefined)
+    inline def setResponseContentEncodingUndefined: Self = StObject.set(x, "ResponseContentEncoding", js.undefined)
     
-    @scala.inline
-    def setResponseContentLanguage(value: ResponseContentLanguage): Self = StObject.set(x, "ResponseContentLanguage", value.asInstanceOf[js.Any])
+    inline def setResponseContentLanguage(value: ResponseContentLanguage): Self = StObject.set(x, "ResponseContentLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseContentLanguageUndefined: Self = StObject.set(x, "ResponseContentLanguage", js.undefined)
+    inline def setResponseContentLanguageUndefined: Self = StObject.set(x, "ResponseContentLanguage", js.undefined)
     
-    @scala.inline
-    def setResponseContentType(value: ResponseContentType): Self = StObject.set(x, "ResponseContentType", value.asInstanceOf[js.Any])
+    inline def setResponseContentType(value: ResponseContentType): Self = StObject.set(x, "ResponseContentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseContentTypeUndefined: Self = StObject.set(x, "ResponseContentType", js.undefined)
+    inline def setResponseContentTypeUndefined: Self = StObject.set(x, "ResponseContentType", js.undefined)
     
-    @scala.inline
-    def setResponseExpires(value: ResponseExpires): Self = StObject.set(x, "ResponseExpires", value.asInstanceOf[js.Any])
+    inline def setResponseExpires(value: ResponseExpires): Self = StObject.set(x, "ResponseExpires", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseExpiresUndefined: Self = StObject.set(x, "ResponseExpires", js.undefined)
+    inline def setResponseExpiresUndefined: Self = StObject.set(x, "ResponseExpires", js.undefined)
     
-    @scala.inline
-    def setSSECustomerAlgorithm(value: SSECustomerAlgorithm): Self = StObject.set(x, "SSECustomerAlgorithm", value.asInstanceOf[js.Any])
+    inline def setSSECustomerAlgorithm(value: SSECustomerAlgorithm): Self = StObject.set(x, "SSECustomerAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSSECustomerAlgorithmUndefined: Self = StObject.set(x, "SSECustomerAlgorithm", js.undefined)
+    inline def setSSECustomerAlgorithmUndefined: Self = StObject.set(x, "SSECustomerAlgorithm", js.undefined)
     
-    @scala.inline
-    def setSSECustomerKey(value: SSECustomerKey): Self = StObject.set(x, "SSECustomerKey", value.asInstanceOf[js.Any])
+    inline def setSSECustomerKey(value: SSECustomerKey): Self = StObject.set(x, "SSECustomerKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSSECustomerKeyMD5(value: SSECustomerKeyMD5): Self = StObject.set(x, "SSECustomerKeyMD5", value.asInstanceOf[js.Any])
+    inline def setSSECustomerKeyMD5(value: SSECustomerKeyMD5): Self = StObject.set(x, "SSECustomerKeyMD5", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSSECustomerKeyMD5Undefined: Self = StObject.set(x, "SSECustomerKeyMD5", js.undefined)
+    inline def setSSECustomerKeyMD5Undefined: Self = StObject.set(x, "SSECustomerKeyMD5", js.undefined)
     
-    @scala.inline
-    def setSSECustomerKeyUndefined: Self = StObject.set(x, "SSECustomerKey", js.undefined)
+    inline def setSSECustomerKeyUndefined: Self = StObject.set(x, "SSECustomerKey", js.undefined)
     
-    @scala.inline
-    def setVersionId(value: ObjectVersionId): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
+    inline def setVersionId(value: ObjectVersionId): Self = StObject.set(x, "VersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
+    inline def setVersionIdUndefined: Self = StObject.set(x, "VersionId", js.undefined)
   }
 }

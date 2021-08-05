@@ -15,25 +15,19 @@ trait RequestAuthorization extends StObject {
 }
 object RequestAuthorization {
   
-  @scala.inline
-  def apply(credentials: String, scheme: String): RequestAuthorization = {
+  inline def apply(credentials: String, scheme: String): RequestAuthorization = {
     val __obj = js.Dynamic.literal(credentials = credentials.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequestAuthorization]
   }
   
-  @scala.inline
-  implicit class RequestAuthorizationMutableBuilder[Self <: RequestAuthorization] (val x: Self) extends AnyVal {
+  extension [Self <: RequestAuthorization](x: Self) {
     
-    @scala.inline
-    def setBasic(value: Password): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
+    inline def setBasic(value: Password): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasicUndefined: Self = StObject.set(x, "basic", js.undefined)
+    inline def setBasicUndefined: Self = StObject.set(x, "basic", js.undefined)
     
-    @scala.inline
-    def setCredentials(value: String): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+    inline def setCredentials(value: String): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+    inline def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
   }
 }

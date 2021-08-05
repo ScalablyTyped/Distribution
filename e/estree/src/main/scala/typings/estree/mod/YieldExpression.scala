@@ -18,29 +18,22 @@ trait YieldExpression
 }
 object YieldExpression {
   
-  @scala.inline
-  def apply(delegate: Boolean): YieldExpression = {
+  inline def apply(delegate: Boolean): YieldExpression = {
     val __obj = js.Dynamic.literal(delegate = delegate.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("YieldExpression")
     __obj.asInstanceOf[YieldExpression]
   }
   
-  @scala.inline
-  implicit class YieldExpressionMutableBuilder[Self <: YieldExpression] (val x: Self) extends AnyVal {
+  extension [Self <: YieldExpression](x: Self) {
     
-    @scala.inline
-    def setArgument(value: Expression): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
+    inline def setArgument(value: Expression): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgumentNull: Self = StObject.set(x, "argument", null)
+    inline def setArgumentNull: Self = StObject.set(x, "argument", null)
     
-    @scala.inline
-    def setArgumentUndefined: Self = StObject.set(x, "argument", js.undefined)
+    inline def setArgumentUndefined: Self = StObject.set(x, "argument", js.undefined)
     
-    @scala.inline
-    def setDelegate(value: Boolean): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
+    inline def setDelegate(value: Boolean): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.YieldExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estree.estreeStrings.YieldExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -15,17 +15,14 @@ trait WhileStatement
 }
 object WhileStatement {
   
-  @scala.inline
-  def apply(): WhileStatement = {
+  inline def apply(): WhileStatement = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("WhileStatement")
     __obj.asInstanceOf[WhileStatement]
   }
   
-  @scala.inline
-  implicit class WhileStatementMutableBuilder[Self <: WhileStatement] (val x: Self) extends AnyVal {
+  extension [Self <: WhileStatement](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.WhileStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.WhileStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

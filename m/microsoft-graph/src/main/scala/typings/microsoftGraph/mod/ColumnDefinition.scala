@@ -73,193 +73,131 @@ trait ColumnDefinition
 }
 object ColumnDefinition {
   
-  @scala.inline
-  def apply(): ColumnDefinition = {
+  inline def apply(): ColumnDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColumnDefinition]
   }
   
-  @scala.inline
-  implicit class ColumnDefinitionMutableBuilder[Self <: ColumnDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnDefinition](x: Self) {
     
-    @scala.inline
-    def setBoolean(value: NullableOption[BooleanColumn]): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
+    inline def setBoolean(value: NullableOption[BooleanColumn]): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBooleanNull: Self = StObject.set(x, "boolean", null)
+    inline def setBooleanNull: Self = StObject.set(x, "boolean", null)
     
-    @scala.inline
-    def setBooleanUndefined: Self = StObject.set(x, "boolean", js.undefined)
+    inline def setBooleanUndefined: Self = StObject.set(x, "boolean", js.undefined)
     
-    @scala.inline
-    def setCalculated(value: NullableOption[CalculatedColumn]): Self = StObject.set(x, "calculated", value.asInstanceOf[js.Any])
+    inline def setCalculated(value: NullableOption[CalculatedColumn]): Self = StObject.set(x, "calculated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalculatedNull: Self = StObject.set(x, "calculated", null)
+    inline def setCalculatedNull: Self = StObject.set(x, "calculated", null)
     
-    @scala.inline
-    def setCalculatedUndefined: Self = StObject.set(x, "calculated", js.undefined)
+    inline def setCalculatedUndefined: Self = StObject.set(x, "calculated", js.undefined)
     
-    @scala.inline
-    def setChoice(value: NullableOption[ChoiceColumn]): Self = StObject.set(x, "choice", value.asInstanceOf[js.Any])
+    inline def setChoice(value: NullableOption[ChoiceColumn]): Self = StObject.set(x, "choice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChoiceNull: Self = StObject.set(x, "choice", null)
+    inline def setChoiceNull: Self = StObject.set(x, "choice", null)
     
-    @scala.inline
-    def setChoiceUndefined: Self = StObject.set(x, "choice", js.undefined)
+    inline def setChoiceUndefined: Self = StObject.set(x, "choice", js.undefined)
     
-    @scala.inline
-    def setColumnGroup(value: NullableOption[String]): Self = StObject.set(x, "columnGroup", value.asInstanceOf[js.Any])
+    inline def setColumnGroup(value: NullableOption[String]): Self = StObject.set(x, "columnGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnGroupNull: Self = StObject.set(x, "columnGroup", null)
+    inline def setColumnGroupNull: Self = StObject.set(x, "columnGroup", null)
     
-    @scala.inline
-    def setColumnGroupUndefined: Self = StObject.set(x, "columnGroup", js.undefined)
+    inline def setColumnGroupUndefined: Self = StObject.set(x, "columnGroup", js.undefined)
     
-    @scala.inline
-    def setCurrency(value: NullableOption[CurrencyColumn]): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    inline def setCurrency(value: NullableOption[CurrencyColumn]): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyNull: Self = StObject.set(x, "currency", null)
+    inline def setCurrencyNull: Self = StObject.set(x, "currency", null)
     
-    @scala.inline
-    def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
+    inline def setCurrencyUndefined: Self = StObject.set(x, "currency", js.undefined)
     
-    @scala.inline
-    def setDateTime(value: NullableOption[DateTimeColumn]): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
+    inline def setDateTime(value: NullableOption[DateTimeColumn]): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateTimeNull: Self = StObject.set(x, "dateTime", null)
+    inline def setDateTimeNull: Self = StObject.set(x, "dateTime", null)
     
-    @scala.inline
-    def setDateTimeUndefined: Self = StObject.set(x, "dateTime", js.undefined)
+    inline def setDateTimeUndefined: Self = StObject.set(x, "dateTime", js.undefined)
     
-    @scala.inline
-    def setDefaultValue(value: NullableOption[DefaultColumnValue]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: NullableOption[DefaultColumnValue]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueNull: Self = StObject.set(x, "defaultValue", null)
+    inline def setDefaultValueNull: Self = StObject.set(x, "defaultValue", null)
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
-    @scala.inline
-    def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: NullableOption[String]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionNull: Self = StObject.set(x, "description", null)
+    inline def setDescriptionNull: Self = StObject.set(x, "description", null)
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setEnforceUniqueValues(value: NullableOption[Boolean]): Self = StObject.set(x, "enforceUniqueValues", value.asInstanceOf[js.Any])
+    inline def setEnforceUniqueValues(value: NullableOption[Boolean]): Self = StObject.set(x, "enforceUniqueValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnforceUniqueValuesNull: Self = StObject.set(x, "enforceUniqueValues", null)
+    inline def setEnforceUniqueValuesNull: Self = StObject.set(x, "enforceUniqueValues", null)
     
-    @scala.inline
-    def setEnforceUniqueValuesUndefined: Self = StObject.set(x, "enforceUniqueValues", js.undefined)
+    inline def setEnforceUniqueValuesUndefined: Self = StObject.set(x, "enforceUniqueValues", js.undefined)
     
-    @scala.inline
-    def setGeolocation(value: NullableOption[GeolocationColumn]): Self = StObject.set(x, "geolocation", value.asInstanceOf[js.Any])
+    inline def setGeolocation(value: NullableOption[GeolocationColumn]): Self = StObject.set(x, "geolocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeolocationNull: Self = StObject.set(x, "geolocation", null)
+    inline def setGeolocationNull: Self = StObject.set(x, "geolocation", null)
     
-    @scala.inline
-    def setGeolocationUndefined: Self = StObject.set(x, "geolocation", js.undefined)
+    inline def setGeolocationUndefined: Self = StObject.set(x, "geolocation", js.undefined)
     
-    @scala.inline
-    def setHidden(value: NullableOption[Boolean]): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: NullableOption[Boolean]): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenNull: Self = StObject.set(x, "hidden", null)
+    inline def setHiddenNull: Self = StObject.set(x, "hidden", null)
     
-    @scala.inline
-    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
-    @scala.inline
-    def setIndexed(value: NullableOption[Boolean]): Self = StObject.set(x, "indexed", value.asInstanceOf[js.Any])
+    inline def setIndexed(value: NullableOption[Boolean]): Self = StObject.set(x, "indexed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexedNull: Self = StObject.set(x, "indexed", null)
+    inline def setIndexedNull: Self = StObject.set(x, "indexed", null)
     
-    @scala.inline
-    def setIndexedUndefined: Self = StObject.set(x, "indexed", js.undefined)
+    inline def setIndexedUndefined: Self = StObject.set(x, "indexed", js.undefined)
     
-    @scala.inline
-    def setLookup(value: NullableOption[LookupColumn]): Self = StObject.set(x, "lookup", value.asInstanceOf[js.Any])
+    inline def setLookup(value: NullableOption[LookupColumn]): Self = StObject.set(x, "lookup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLookupNull: Self = StObject.set(x, "lookup", null)
+    inline def setLookupNull: Self = StObject.set(x, "lookup", null)
     
-    @scala.inline
-    def setLookupUndefined: Self = StObject.set(x, "lookup", js.undefined)
+    inline def setLookupUndefined: Self = StObject.set(x, "lookup", js.undefined)
     
-    @scala.inline
-    def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNumber(value: NullableOption[NumberColumn]): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: NullableOption[NumberColumn]): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberNull: Self = StObject.set(x, "number", null)
+    inline def setNumberNull: Self = StObject.set(x, "number", null)
     
-    @scala.inline
-    def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
+    inline def setNumberUndefined: Self = StObject.set(x, "number", js.undefined)
     
-    @scala.inline
-    def setPersonOrGroup(value: NullableOption[PersonOrGroupColumn]): Self = StObject.set(x, "personOrGroup", value.asInstanceOf[js.Any])
+    inline def setPersonOrGroup(value: NullableOption[PersonOrGroupColumn]): Self = StObject.set(x, "personOrGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersonOrGroupNull: Self = StObject.set(x, "personOrGroup", null)
+    inline def setPersonOrGroupNull: Self = StObject.set(x, "personOrGroup", null)
     
-    @scala.inline
-    def setPersonOrGroupUndefined: Self = StObject.set(x, "personOrGroup", js.undefined)
+    inline def setPersonOrGroupUndefined: Self = StObject.set(x, "personOrGroup", js.undefined)
     
-    @scala.inline
-    def setReadOnly(value: NullableOption[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: NullableOption[Boolean]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyNull: Self = StObject.set(x, "readOnly", null)
+    inline def setReadOnlyNull: Self = StObject.set(x, "readOnly", null)
     
-    @scala.inline
-    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
-    @scala.inline
-    def setRequired(value: NullableOption[Boolean]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: NullableOption[Boolean]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredNull: Self = StObject.set(x, "required", null)
+    inline def setRequiredNull: Self = StObject.set(x, "required", null)
     
-    @scala.inline
-    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+    inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
-    @scala.inline
-    def setText(value: NullableOption[TextColumn]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: NullableOption[TextColumn]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextNull: Self = StObject.set(x, "text", null)
+    inline def setTextNull: Self = StObject.set(x, "text", null)
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

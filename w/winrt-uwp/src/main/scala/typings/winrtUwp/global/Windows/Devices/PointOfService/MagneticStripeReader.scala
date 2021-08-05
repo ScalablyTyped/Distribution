@@ -23,22 +23,19 @@ object MagneticStripeReader {
     * @return The magnetic stripe reader specified by the unique device identifier. Returns a null object in the following cases:
     */
   /* static member */
-  @scala.inline
-  def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.PointOfService.MagneticStripeReader] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.PointOfService.MagneticStripeReader]]
+  inline def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.PointOfService.MagneticStripeReader] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.PointOfService.MagneticStripeReader]]
   
   /**
     * Returns the first magnetic stripe reader found.
     * @return The first magnetic stripe reader found. Returns a null object in the following cases:
     */
   /* static member */
-  @scala.inline
-  def getDefaultAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.PointOfService.MagneticStripeReader] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.PointOfService.MagneticStripeReader]]
+  inline def getDefaultAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.PointOfService.MagneticStripeReader] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.PointOfService.MagneticStripeReader]]
   
   /**
     * Returns an Advanced Query Syntax (AQS) string that is used to enumerate available magnetic stripe readers.
     * @return An Advanced Query Syntax (AQS) string that is used to enumerate available magnetic stripe readers.
     */
   /* static member */
-  @scala.inline
-  def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
+  inline def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
 }

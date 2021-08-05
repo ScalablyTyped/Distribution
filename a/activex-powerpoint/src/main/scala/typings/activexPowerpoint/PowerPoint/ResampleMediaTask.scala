@@ -16,7 +16,7 @@ trait ResampleMediaTask extends StObject {
   
   val IsLinked: Boolean
   
-  @JSName("PowerPoint.ResampleMediaTask_typekey")
+  /* private */ @JSName("PowerPoint.ResampleMediaTask_typekey")
   var PowerPointDotResampleMediaTask_typekey: ResampleMediaTask
   
   val SampleHeight: Double
@@ -33,8 +33,7 @@ trait ResampleMediaTask extends StObject {
 }
 object ResampleMediaTask {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AudioCompressionType: String,
     AudioSamplingRate: Double,
     ContainerType: String,
@@ -53,43 +52,30 @@ object ResampleMediaTask {
     __obj.asInstanceOf[ResampleMediaTask]
   }
   
-  @scala.inline
-  implicit class ResampleMediaTaskMutableBuilder[Self <: ResampleMediaTask] (val x: Self) extends AnyVal {
+  extension [Self <: ResampleMediaTask](x: Self) {
     
-    @scala.inline
-    def setAudioCompressionType(value: String): Self = StObject.set(x, "AudioCompressionType", value.asInstanceOf[js.Any])
+    inline def setAudioCompressionType(value: String): Self = StObject.set(x, "AudioCompressionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioSamplingRate(value: Double): Self = StObject.set(x, "AudioSamplingRate", value.asInstanceOf[js.Any])
+    inline def setAudioSamplingRate(value: Double): Self = StObject.set(x, "AudioSamplingRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerType(value: String): Self = StObject.set(x, "ContainerType", value.asInstanceOf[js.Any])
+    inline def setContainerType(value: String): Self = StObject.set(x, "ContainerType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEmbedded(value: Boolean): Self = StObject.set(x, "IsEmbedded", value.asInstanceOf[js.Any])
+    inline def setIsEmbedded(value: Boolean): Self = StObject.set(x, "IsEmbedded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLinked(value: Boolean): Self = StObject.set(x, "IsLinked", value.asInstanceOf[js.Any])
+    inline def setIsLinked(value: Boolean): Self = StObject.set(x, "IsLinked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotResampleMediaTask_typekey(value: ResampleMediaTask): Self = StObject.set(x, "PowerPoint.ResampleMediaTask_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotResampleMediaTask_typekey(value: ResampleMediaTask): Self = StObject.set(x, "PowerPoint.ResampleMediaTask_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfile(value: PpResampleMediaProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: PpResampleMediaProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleHeight(value: Double): Self = StObject.set(x, "SampleHeight", value.asInstanceOf[js.Any])
+    inline def setSampleHeight(value: Double): Self = StObject.set(x, "SampleHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleWidth(value: Double): Self = StObject.set(x, "SampleWidth", value.asInstanceOf[js.Any])
+    inline def setSampleWidth(value: Double): Self = StObject.set(x, "SampleWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShape(value: Shape): Self = StObject.set(x, "Shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: Shape): Self = StObject.set(x, "Shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoCompressionType(value: String): Self = StObject.set(x, "VideoCompressionType", value.asInstanceOf[js.Any])
+    inline def setVideoCompressionType(value: String): Self = StObject.set(x, "VideoCompressionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoFrameRate(value: Double): Self = StObject.set(x, "VideoFrameRate", value.asInstanceOf[js.Any])
+    inline def setVideoFrameRate(value: Double): Self = StObject.set(x, "VideoFrameRate", value.asInstanceOf[js.Any])
   }
 }

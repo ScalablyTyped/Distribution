@@ -14,8 +14,7 @@ trait StorageManager extends StObject {
 }
 object StorageManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     estimate: () => js.Promise[StorageEstimate],
     persist: () => js.Promise[scala.Boolean],
     persisted: () => js.Promise[scala.Boolean]
@@ -24,16 +23,12 @@ object StorageManager {
     __obj.asInstanceOf[StorageManager]
   }
   
-  @scala.inline
-  implicit class StorageManagerMutableBuilder[Self <: StorageManager] (val x: Self) extends AnyVal {
+  extension [Self <: StorageManager](x: Self) {
     
-    @scala.inline
-    def setEstimate(value: () => js.Promise[StorageEstimate]): Self = StObject.set(x, "estimate", js.Any.fromFunction0(value))
+    inline def setEstimate(value: () => js.Promise[StorageEstimate]): Self = StObject.set(x, "estimate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPersist(value: () => js.Promise[scala.Boolean]): Self = StObject.set(x, "persist", js.Any.fromFunction0(value))
+    inline def setPersist(value: () => js.Promise[scala.Boolean]): Self = StObject.set(x, "persist", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPersisted(value: () => js.Promise[scala.Boolean]): Self = StObject.set(x, "persisted", js.Any.fromFunction0(value))
+    inline def setPersisted(value: () => js.Promise[scala.Boolean]): Self = StObject.set(x, "persisted", js.Any.fromFunction0(value))
   }
 }

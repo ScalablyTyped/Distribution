@@ -19,8 +19,7 @@ trait ConsoleMessage extends StObject {
 }
 object ConsoleMessage {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     args: () => js.Array[JSHandle[js.Any]],
     location: () => ConsoleMessageLocation,
     text: () => String,
@@ -31,19 +30,14 @@ object ConsoleMessage {
     __obj.asInstanceOf[ConsoleMessage]
   }
   
-  @scala.inline
-  implicit class ConsoleMessageMutableBuilder[Self <: ConsoleMessage] (val x: Self) extends AnyVal {
+  extension [Self <: ConsoleMessage](x: Self) {
     
-    @scala.inline
-    def setArgs(value: () => js.Array[JSHandle[js.Any]]): Self = StObject.set(x, "args", js.Any.fromFunction0(value))
+    inline def setArgs(value: () => js.Array[JSHandle[js.Any]]): Self = StObject.set(x, "args", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLocation(value: () => ConsoleMessageLocation): Self = StObject.set(x, "location", js.Any.fromFunction0(value))
+    inline def setLocation(value: () => ConsoleMessageLocation): Self = StObject.set(x, "location", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setText(value: () => String): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
+    inline def setText(value: () => String): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setType(value: () => ConsoleMessageType): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
+    inline def setType(value: () => ConsoleMessageType): Self = StObject.set(x, "type", js.Any.fromFunction0(value))
   }
 }

@@ -24,7 +24,7 @@ trait DisplayUnitLabel extends StObject {
   
   def Delete(): js.Any = js.native
   
-  @JSName("Excel.DisplayUnitLabel_typekey")
+  /* private */ @JSName("Excel.DisplayUnitLabel_typekey")
   var ExcelDotDisplayUnitLabel_typekey: DisplayUnitLabel = js.native
   
   val Fill: ChartFillFormat = js.native

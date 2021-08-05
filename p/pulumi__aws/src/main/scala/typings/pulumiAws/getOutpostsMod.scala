@@ -11,14 +11,10 @@ object getOutpostsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getOutposts(): js.Promise[GetOutpostsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOutposts")().asInstanceOf[js.Promise[GetOutpostsResult]]
-  @scala.inline
-  def getOutposts(args: Unit, opts: InvokeOptions): js.Promise[GetOutpostsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOutposts")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetOutpostsResult]]
-  @scala.inline
-  def getOutposts(args: GetOutpostsArgs): js.Promise[GetOutpostsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOutposts")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetOutpostsResult]]
-  @scala.inline
-  def getOutposts(args: GetOutpostsArgs, opts: InvokeOptions): js.Promise[GetOutpostsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOutposts")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetOutpostsResult]]
+  inline def getOutposts(): js.Promise[GetOutpostsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOutposts")().asInstanceOf[js.Promise[GetOutpostsResult]]
+  inline def getOutposts(args: Unit, opts: InvokeOptions): js.Promise[GetOutpostsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOutposts")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetOutpostsResult]]
+  inline def getOutposts(args: GetOutpostsArgs): js.Promise[GetOutpostsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOutposts")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetOutpostsResult]]
+  inline def getOutposts(args: GetOutpostsArgs, opts: InvokeOptions): js.Promise[GetOutpostsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOutposts")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetOutpostsResult]]
   
   trait GetOutpostsArgs extends StObject {
     
@@ -39,32 +35,24 @@ object getOutpostsMod {
   }
   object GetOutpostsArgs {
     
-    @scala.inline
-    def apply(): GetOutpostsArgs = {
+    inline def apply(): GetOutpostsArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetOutpostsArgs]
     }
     
-    @scala.inline
-    implicit class GetOutpostsArgsMutableBuilder[Self <: GetOutpostsArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetOutpostsArgs](x: Self) {
       
-      @scala.inline
-      def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailabilityZoneId(value: String): Self = StObject.set(x, "availabilityZoneId", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZoneId(value: String): Self = StObject.set(x, "availabilityZoneId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailabilityZoneIdUndefined: Self = StObject.set(x, "availabilityZoneId", js.undefined)
+      inline def setAvailabilityZoneIdUndefined: Self = StObject.set(x, "availabilityZoneId", js.undefined)
       
-      @scala.inline
-      def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
+      inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
       
-      @scala.inline
-      def setSiteId(value: String): Self = StObject.set(x, "siteId", value.asInstanceOf[js.Any])
+      inline def setSiteId(value: String): Self = StObject.set(x, "siteId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSiteIdUndefined: Self = StObject.set(x, "siteId", js.undefined)
+      inline def setSiteIdUndefined: Self = StObject.set(x, "siteId", js.undefined)
     }
   }
   
@@ -93,8 +81,7 @@ object getOutpostsMod {
   }
   object GetOutpostsResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arns: js.Array[String],
       availabilityZone: String,
       availabilityZoneId: String,
@@ -106,32 +93,23 @@ object getOutpostsMod {
       __obj.asInstanceOf[GetOutpostsResult]
     }
     
-    @scala.inline
-    implicit class GetOutpostsResultMutableBuilder[Self <: GetOutpostsResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetOutpostsResult](x: Self) {
       
-      @scala.inline
-      def setArns(value: js.Array[String]): Self = StObject.set(x, "arns", value.asInstanceOf[js.Any])
+      inline def setArns(value: js.Array[String]): Self = StObject.set(x, "arns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnsVarargs(value: String*): Self = StObject.set(x, "arns", js.Array(value :_*))
+      inline def setArnsVarargs(value: String*): Self = StObject.set(x, "arns", js.Array(value :_*))
       
-      @scala.inline
-      def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailabilityZoneId(value: String): Self = StObject.set(x, "availabilityZoneId", value.asInstanceOf[js.Any])
+      inline def setAvailabilityZoneId(value: String): Self = StObject.set(x, "availabilityZoneId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
+      inline def setIds(value: js.Array[String]): Self = StObject.set(x, "ids", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
+      inline def setIdsVarargs(value: String*): Self = StObject.set(x, "ids", js.Array(value :_*))
       
-      @scala.inline
-      def setSiteId(value: String): Self = StObject.set(x, "siteId", value.asInstanceOf[js.Any])
+      inline def setSiteId(value: String): Self = StObject.set(x, "siteId", value.asInstanceOf[js.Any])
     }
   }
 }

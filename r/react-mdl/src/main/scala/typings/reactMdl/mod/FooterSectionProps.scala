@@ -19,31 +19,23 @@ trait FooterSectionProps
 }
 object FooterSectionProps {
   
-  @scala.inline
-  def apply(): FooterSectionProps = {
+  inline def apply(): FooterSectionProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FooterSectionProps]
   }
   
-  @scala.inline
-  implicit class FooterSectionPropsMutableBuilder[Self <: FooterSectionProps] (val x: Self) extends AnyVal {
+  extension [Self <: FooterSectionProps](x: Self) {
     
-    @scala.inline
-    def setLogo(value: ReactNode): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
+    inline def setLogo(value: ReactNode): Self = StObject.set(x, "logo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
+    inline def setLogoUndefined: Self = StObject.set(x, "logo", js.undefined)
     
-    @scala.inline
-    def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

@@ -20,31 +20,23 @@ trait AnnotationsMeasureTypePointsOptions extends StObject {
 }
 object AnnotationsMeasureTypePointsOptions {
   
-  @scala.inline
-  def apply(): AnnotationsMeasureTypePointsOptions = {
+  inline def apply(): AnnotationsMeasureTypePointsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnnotationsMeasureTypePointsOptions]
   }
   
-  @scala.inline
-  implicit class AnnotationsMeasureTypePointsOptionsMutableBuilder[Self <: AnnotationsMeasureTypePointsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotationsMeasureTypePointsOptions](x: Self) {
     
-    @scala.inline
-    def setControlPoint(value: Double): Self = StObject.set(x, "controlPoint", value.asInstanceOf[js.Any])
+    inline def setControlPoint(value: Double): Self = StObject.set(x, "controlPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlPointUndefined: Self = StObject.set(x, "controlPoint", js.undefined)
+    inline def setControlPointUndefined: Self = StObject.set(x, "controlPoint", js.undefined)
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

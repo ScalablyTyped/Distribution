@@ -89,8 +89,7 @@ object subscriptionClientMod {
   }
   object SubscriptionClient {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acceptLanguage: String,
       apiVersion: String,
       credentials: ServiceClientCredentials,
@@ -103,29 +102,21 @@ object subscriptionClientMod {
       __obj.asInstanceOf[SubscriptionClient]
     }
     
-    @scala.inline
-    implicit class SubscriptionClientMutableBuilder[Self <: SubscriptionClient] (val x: Self) extends AnyVal {
+    extension [Self <: SubscriptionClient](x: Self) {
       
-      @scala.inline
-      def setAcceptLanguage(value: String): Self = StObject.set(x, "acceptLanguage", value.asInstanceOf[js.Any])
+      inline def setAcceptLanguage(value: String): Self = StObject.set(x, "acceptLanguage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCredentials(value: ServiceClientCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+      inline def setCredentials(value: ServiceClientCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGenerateClientRequestId(value: Boolean): Self = StObject.set(x, "generateClientRequestId", value.asInstanceOf[js.Any])
+      inline def setGenerateClientRequestId(value: Boolean): Self = StObject.set(x, "generateClientRequestId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongRunningOperationRetryTimeout(value: Double): Self = StObject.set(x, "longRunningOperationRetryTimeout", value.asInstanceOf[js.Any])
+      inline def setLongRunningOperationRetryTimeout(value: Double): Self = StObject.set(x, "longRunningOperationRetryTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubscriptions(value: Subscriptions): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
+      inline def setSubscriptions(value: Subscriptions): Self = StObject.set(x, "subscriptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTenants(value: Tenants): Self = StObject.set(x, "tenants", value.asInstanceOf[js.Any])
+      inline def setTenants(value: Tenants): Self = StObject.set(x, "tenants", value.asInstanceOf[js.Any])
     }
   }
 }

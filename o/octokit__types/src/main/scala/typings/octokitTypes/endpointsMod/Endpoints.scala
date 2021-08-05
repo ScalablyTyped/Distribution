@@ -4702,8 +4702,7 @@ trait Endpoints extends StObject {
 }
 object Endpoints {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `DELETE SlashappSlashinstallationsSlashColoninstallation_id`: Parameters,
     `DELETE SlashappSlashinstallationsSlashColoninstallation_idSlashsuspended`: Request,
     `DELETE SlashapplicationsSlashColonclient_idSlashgrant`: Response,
@@ -5217,2017 +5216,1346 @@ object Endpoints {
     __obj.asInstanceOf[Endpoints]
   }
   
-  @scala.inline
-  implicit class EndpointsMutableBuilder[Self <: Endpoints] (val x: Self) extends AnyVal {
+  extension [Self <: Endpoints](x: Self) {
     
-    @scala.inline
-    def `setDELETE SlashappSlashinstallationsSlashColoninstallation_id`(value: Parameters): Self = StObject.set(x, "DELETE /app/installations/:installation_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashappSlashinstallationsSlashColoninstallation_id`(value: Parameters): Self = StObject.set(x, "DELETE /app/installations/:installation_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashappSlashinstallationsSlashColoninstallation_idSlashsuspended`(value: Request): Self = StObject.set(x, "DELETE /app/installations/:installation_id/suspended", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashappSlashinstallationsSlashColoninstallation_idSlashsuspended`(value: Request): Self = StObject.set(x, "DELETE /app/installations/:installation_id/suspended", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashapplicationsSlashColonclient_idSlashgrant`(value: Response): Self = StObject.set(x, "DELETE /applications/:client_id/grant", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashapplicationsSlashColonclient_idSlashgrant`(value: Response): Self = StObject.set(x, "DELETE /applications/:client_id/grant", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashapplicationsSlashColonclient_idSlashgrantsSlashColonaccess_token`(value: ParametersRequest): Self = StObject.set(x, "DELETE /applications/:client_id/grants/:access_token", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashapplicationsSlashColonclient_idSlashgrantsSlashColonaccess_token`(value: ParametersRequest): Self = StObject.set(x, "DELETE /applications/:client_id/grants/:access_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashapplicationsSlashColonclient_idSlashtoken`(value: RequestResponse): Self = StObject.set(x, "DELETE /applications/:client_id/token", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashapplicationsSlashColonclient_idSlashtoken`(value: RequestResponse): Self = StObject.set(x, "DELETE /applications/:client_id/token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashapplicationsSlashColonclient_idSlashtokensSlashColonaccess_token`(value: ParametersRequestResponse): Self = StObject.set(x, "DELETE /applications/:client_id/tokens/:access_token", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashapplicationsSlashColonclient_idSlashtokensSlashColonaccess_token`(value: ParametersRequestResponse): Self = StObject.set(x, "DELETE /applications/:client_id/tokens/:access_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashapplicationsSlashgrantsSlashColongrant_id`(value: ParametersOauthAuthorizationsDeleteGrantEndpoint): Self = StObject.set(x, "DELETE /applications/grants/:grant_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashapplicationsSlashgrantsSlashColongrant_id`(value: ParametersOauthAuthorizationsDeleteGrantEndpoint): Self = StObject.set(x, "DELETE /applications/grants/:grant_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashauthorizationsSlashColonauthorization_id`(value: ParametersOauthAuthorizationsDeleteAuthorizationEndpoint): Self = StObject.set(x, "DELETE /authorizations/:authorization_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashauthorizationsSlashColonauthorization_id`(value: ParametersOauthAuthorizationsDeleteAuthorizationEndpoint): Self = StObject.set(x, "DELETE /authorizations/:authorization_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_id`(value: ParametersEnterpriseAdminDeleteSelfHostedRunnerGroupFromEnterpriseEndpoint): Self = StObject.set(x, "DELETE /enterprises/:enterprise/actions/runner-groups/:runner_group_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_id`(value: ParametersEnterpriseAdminDeleteSelfHostedRunnerGroupFromEnterpriseEndpoint): Self = StObject.set(x, "DELETE /enterprises/:enterprise/actions/runner-groups/:runner_group_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashorganizationsSlashColonorg_id`(value: ParametersEnterpriseAdminRemoveOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpoint): Self = StObject.set(x, "DELETE /enterprises/:enterprise/actions/runner-groups/:runner_group_id/organizations/:org_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashorganizationsSlashColonorg_id`(value: ParametersEnterpriseAdminRemoveOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpoint): Self = StObject.set(x, "DELETE /enterprises/:enterprise/actions/runner-groups/:runner_group_id/organizations/:org_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunnersSlashColonrunner_id`(value: ParametersEnterpriseAdminRemoveSelfHostedRunnerFromGroupForEnterpriseEndpoint): Self = StObject.set(x, "DELETE /enterprises/:enterprise/actions/runner-groups/:runner_group_id/runners/:runner_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunnersSlashColonrunner_id`(value: ParametersEnterpriseAdminRemoveSelfHostedRunnerFromGroupForEnterpriseEndpoint): Self = StObject.set(x, "DELETE /enterprises/:enterprise/actions/runner-groups/:runner_group_id/runners/:runner_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashColonrunner_id`(value: ParametersEnterpriseAdminDeleteSelfHostedRunnerFromEnterpriseEndpoint): Self = StObject.set(x, "DELETE /enterprises/:enterprise/actions/runners/:runner_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashColonrunner_id`(value: ParametersEnterpriseAdminDeleteSelfHostedRunnerFromEnterpriseEndpoint): Self = StObject.set(x, "DELETE /enterprises/:enterprise/actions/runners/:runner_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashgistsSlashColongist_id`(value: ParametersGistsDeleteEndpoint): Self = StObject.set(x, "DELETE /gists/:gist_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashgistsSlashColongist_id`(value: ParametersGistsDeleteEndpoint): Self = StObject.set(x, "DELETE /gists/:gist_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashgistsSlashColongist_idSlashcommentsSlashColoncomment_id`(value: ParametersGistsDeleteCommentEndpoint): Self = StObject.set(x, "DELETE /gists/:gist_id/comments/:comment_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashgistsSlashColongist_idSlashcommentsSlashColoncomment_id`(value: ParametersGistsDeleteCommentEndpoint): Self = StObject.set(x, "DELETE /gists/:gist_id/comments/:comment_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashgistsSlashColongist_idSlashstar`(value: ParametersGistsUnstarEndpoint): Self = StObject.set(x, "DELETE /gists/:gist_id/star", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashgistsSlashColongist_idSlashstar`(value: ParametersGistsUnstarEndpoint): Self = StObject.set(x, "DELETE /gists/:gist_id/star", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashinstallationSlashtoken`(value: ParametersAppsRevokeInstallationAccessTokenEndpoint): Self = StObject.set(x, "DELETE /installation/token", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashinstallationSlashtoken`(value: ParametersAppsRevokeInstallationAccessTokenEndpoint): Self = StObject.set(x, "DELETE /installation/token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashnotificationsSlashthreadsSlashColonthread_idSlashsubscription`(value: ParametersActivityDeleteThreadSubscriptionEndpoint): Self = StObject.set(x, "DELETE /notifications/threads/:thread_id/subscription", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashnotificationsSlashthreadsSlashColonthread_idSlashsubscription`(value: ParametersActivityDeleteThreadSubscriptionEndpoint): Self = StObject.set(x, "DELETE /notifications/threads/:thread_id/subscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_id`(value: ParametersActionsDeleteSelfHostedRunnerGroupFromOrgEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/actions/runner-groups/:runner_group_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_id`(value: ParametersActionsDeleteSelfHostedRunnerGroupFromOrgEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/actions/runner-groups/:runner_group_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrepositoriesSlashColonrepository_id`(value: ParametersActionsRemoveRepoAccessToSelfHostedRunnerGroupInOrgEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/actions/runner-groups/:runner_group_id/repositories/:repository_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrepositoriesSlashColonrepository_id`(value: ParametersActionsRemoveRepoAccessToSelfHostedRunnerGroupInOrgEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/actions/runner-groups/:runner_group_id/repositories/:repository_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunnersSlashColonrunner_id`(value: ParametersActionsRemoveSelfHostedRunnerFromGroupForOrgEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/actions/runner-groups/:runner_group_id/runners/:runner_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunnersSlashColonrunner_id`(value: ParametersActionsRemoveSelfHostedRunnerFromGroupForOrgEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/actions/runner-groups/:runner_group_id/runners/:runner_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashorgsSlashColonorgSlashactionsSlashrunnersSlashColonrunner_id`(value: ParametersActionsDeleteSelfHostedRunnerFromOrgEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/actions/runners/:runner_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashorgsSlashColonorgSlashactionsSlashrunnersSlashColonrunner_id`(value: ParametersActionsDeleteSelfHostedRunnerFromOrgEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/actions/runners/:runner_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_name`(value: ParametersActionsDeleteOrgSecretEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/actions/secrets/:secret_name", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_name`(value: ParametersActionsDeleteOrgSecretEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/actions/secrets/:secret_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_nameSlashrepositoriesSlashColonrepository_id`(value: ParametersActionsRemoveSelectedRepoFromOrgSecretEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/actions/secrets/:secret_name/repositories/:repository_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_nameSlashrepositoriesSlashColonrepository_id`(value: ParametersActionsRemoveSelectedRepoFromOrgSecretEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/actions/secrets/:secret_name/repositories/:repository_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashorgsSlashColonorgSlashblocksSlashColonusername`(value: ParametersOrgsUnblockUserEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/blocks/:username", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashorgsSlashColonorgSlashblocksSlashColonusername`(value: ParametersOrgsUnblockUserEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/blocks/:username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashorgsSlashColonorgSlashcredential-authorizationsSlashColoncredential_id`(value: ParametersOrgsRemoveSamlSsoAuthorizationEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/credential-authorizations/:credential_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashorgsSlashColonorgSlashcredential-authorizationsSlashColoncredential_id`(value: ParametersOrgsRemoveSamlSsoAuthorizationEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/credential-authorizations/:credential_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashorgsSlashColonorgSlashhooksSlashColonhook_id`(value: ParametersOrgsDeleteWebhookEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/hooks/:hook_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashorgsSlashColonorgSlashhooksSlashColonhook_id`(value: ParametersOrgsDeleteWebhookEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/hooks/:hook_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashorgsSlashColonorgSlashinteraction-limits`(value: ParametersInteractionsRemoveRestrictionsForOrgEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/interaction-limits", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashorgsSlashColonorgSlashinteraction-limits`(value: ParametersInteractionsRemoveRestrictionsForOrgEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/interaction-limits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashorgsSlashColonorgSlashmembersSlashColonusername`(value: ParametersOrgsRemoveMemberEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/members/:username", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashorgsSlashColonorgSlashmembersSlashColonusername`(value: ParametersOrgsRemoveMemberEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/members/:username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashorgsSlashColonorgSlashmembershipsSlashColonusername`(value: ParametersOrgsRemoveMembershipForUserEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/memberships/:username", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashorgsSlashColonorgSlashmembershipsSlashColonusername`(value: ParametersOrgsRemoveMembershipForUserEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/memberships/:username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashorgsSlashColonorgSlashmigrationsSlashColonmigration_idSlasharchive`(value: ParametersMigrationsDeleteArchiveForOrgEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/migrations/:migration_id/archive", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashorgsSlashColonorgSlashmigrationsSlashColonmigration_idSlasharchive`(value: ParametersMigrationsDeleteArchiveForOrgEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/migrations/:migration_id/archive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashorgsSlashColonorgSlashmigrationsSlashColonmigration_idSlashreposSlashColonrepo_nameSlashlock`(value: ParametersMigrationsUnlockRepoForOrgEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/migrations/:migration_id/repos/:repo_name/lock", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashorgsSlashColonorgSlashmigrationsSlashColonmigration_idSlashreposSlashColonrepo_nameSlashlock`(value: ParametersMigrationsUnlockRepoForOrgEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/migrations/:migration_id/repos/:repo_name/lock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashorgsSlashColonorgSlashoutside_collaboratorsSlashColonusername`(value: ParametersOrgsRemoveOutsideCollaboratorEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/outside_collaborators/:username", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashorgsSlashColonorgSlashoutside_collaboratorsSlashColonusername`(value: ParametersOrgsRemoveOutsideCollaboratorEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/outside_collaborators/:username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashorgsSlashColonorgSlashpublic_membersSlashColonusername`(value: ParametersOrgsRemovePublicMembershipForAuthenticatedUserEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/public_members/:username", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashorgsSlashColonorgSlashpublic_membersSlashColonusername`(value: ParametersOrgsRemovePublicMembershipForAuthenticatedUserEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/public_members/:username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashorgsSlashColonorgSlashteamsSlashColonteam_slug`(value: ParametersTeamsDeleteInOrgEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/teams/:team_slug", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashorgsSlashColonorgSlashteamsSlashColonteam_slug`(value: ParametersTeamsDeleteInOrgEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/teams/:team_slug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_number`(value: ParametersTeamsDeleteDiscussionInOrgEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/teams/:team_slug/discussions/:discussion_number", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_number`(value: ParametersTeamsDeleteDiscussionInOrgEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/teams/:team_slug/discussions/:discussion_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_number`(value: ParametersTeamsDeleteDiscussionCommentInOrgEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments/:comment_number", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_number`(value: ParametersTeamsDeleteDiscussionCommentInOrgEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments/:comment_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactionsSlashColonreaction_id`(value: ParametersReactionsDeleteForTeamDiscussionCommentEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments/:comment_number/reactions/:reaction_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactionsSlashColonreaction_id`(value: ParametersReactionsDeleteForTeamDiscussionCommentEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments/:comment_number/reactions/:reaction_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashreactionsSlashColonreaction_id`(value: ParametersReactionsDeleteForTeamDiscussionEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/teams/:team_slug/discussions/:discussion_number/reactions/:reaction_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashreactionsSlashColonreaction_id`(value: ParametersReactionsDeleteForTeamDiscussionEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/teams/:team_slug/discussions/:discussion_number/reactions/:reaction_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashmembershipsSlashColonusername`(value: ParametersTeamsRemoveMembershipForUserInOrgEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/teams/:team_slug/memberships/:username", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashmembershipsSlashColonusername`(value: ParametersTeamsRemoveMembershipForUserInOrgEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/teams/:team_slug/memberships/:username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashprojectsSlashColonproject_id`(value: ParametersTeamsRemoveProjectInOrgEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/teams/:team_slug/projects/:project_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashprojectsSlashColonproject_id`(value: ParametersTeamsRemoveProjectInOrgEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/teams/:team_slug/projects/:project_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashreposSlashColonownerSlashColonrepo`(value: ParametersTeamsRemoveRepoInOrgEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/teams/:team_slug/repos/:owner/:repo", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashreposSlashColonownerSlashColonrepo`(value: ParametersTeamsRemoveRepoInOrgEndpoint): Self = StObject.set(x, "DELETE /orgs/:org/teams/:team_slug/repos/:owner/:repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashprojectsSlashColonproject_id`(value: ParametersProjectsDeleteEndpoint): Self = StObject.set(x, "DELETE /projects/:project_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashprojectsSlashColonproject_id`(value: ParametersProjectsDeleteEndpoint): Self = StObject.set(x, "DELETE /projects/:project_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashprojectsSlashColonproject_idSlashcollaboratorsSlashColonusername`(value: ParametersProjectsRemoveCollaboratorEndpoint): Self = StObject.set(x, "DELETE /projects/:project_id/collaborators/:username", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashprojectsSlashColonproject_idSlashcollaboratorsSlashColonusername`(value: ParametersProjectsRemoveCollaboratorEndpoint): Self = StObject.set(x, "DELETE /projects/:project_id/collaborators/:username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashprojectsSlashcolumnsSlashColoncolumn_id`(value: ParametersProjectsDeleteColumnEndpoint): Self = StObject.set(x, "DELETE /projects/columns/:column_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashprojectsSlashcolumnsSlashColoncolumn_id`(value: ParametersProjectsDeleteColumnEndpoint): Self = StObject.set(x, "DELETE /projects/columns/:column_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashprojectsSlashcolumnsSlashcardsSlashColoncard_id`(value: ParametersProjectsDeleteCardEndpoint): Self = StObject.set(x, "DELETE /projects/columns/cards/:card_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashprojectsSlashcolumnsSlashcardsSlashColoncard_id`(value: ParametersProjectsDeleteCardEndpoint): Self = StObject.set(x, "DELETE /projects/columns/cards/:card_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreactionsSlashColonreaction_id`(value: ParametersReactionsDeleteLegacyEndpoint): Self = StObject.set(x, "DELETE /reactions/:reaction_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreactionsSlashColonreaction_id`(value: ParametersReactionsDeleteLegacyEndpoint): Self = StObject.set(x, "DELETE /reactions/:reaction_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepo`(value: ParametersReposDeleteEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepo`(value: ParametersReposDeleteEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashactionsSlashartifactsSlashColonartifact_id`(value: ParametersActionsDeleteArtifactEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/actions/artifacts/:artifact_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashactionsSlashartifactsSlashColonartifact_id`(value: ParametersActionsDeleteArtifactEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/actions/artifacts/:artifact_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunnersSlashColonrunner_id`(value: ParametersActionsDeleteSelfHostedRunnerFromRepoEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/actions/runners/:runner_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunnersSlashColonrunner_id`(value: ParametersActionsDeleteSelfHostedRunnerFromRepoEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/actions/runners/:runner_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_id`(value: ParametersActionsDeleteWorkflowRunEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/actions/runs/:run_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_id`(value: ParametersActionsDeleteWorkflowRunEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/actions/runs/:run_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashlogs`(value: ParametersActionsDeleteWorkflowRunLogsEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/actions/runs/:run_id/logs", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashlogs`(value: ParametersActionsDeleteWorkflowRunLogsEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/actions/runs/:run_id/logs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecretsSlashColonsecret_name`(value: ParametersActionsDeleteRepoSecretEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/actions/secrets/:secret_name", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecretsSlashColonsecret_name`(value: ParametersActionsDeleteRepoSecretEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/actions/secrets/:secret_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashautomated-security-fixes`(value: ParametersReposDisableAutomatedSecurityFixesEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/automated-security-fixes", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashautomated-security-fixes`(value: ParametersReposDisableAutomatedSecurityFixesEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/automated-security-fixes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotection`(value: ParametersReposDeleteBranchProtectionEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/branches/:branch/protection", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotection`(value: ParametersReposDeleteBranchProtectionEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/branches/:branch/protection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashenforce_admins`(value: ParametersReposDeleteAdminBranchProtectionEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/branches/:branch/protection/enforce_admins", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashenforce_admins`(value: ParametersReposDeleteAdminBranchProtectionEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/branches/:branch/protection/enforce_admins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrequired_pull_request_reviews`(value: ParametersReposDeletePullRequestReviewProtectionEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/branches/:branch/protection/required_pull_request_reviews", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrequired_pull_request_reviews`(value: ParametersReposDeletePullRequestReviewProtectionEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/branches/:branch/protection/required_pull_request_reviews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrequired_signatures`(value: ParametersReposDeleteCommitSignatureProtectionEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/branches/:branch/protection/required_signatures", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrequired_signatures`(value: ParametersReposDeleteCommitSignatureProtectionEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/branches/:branch/protection/required_signatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrequired_status_checks`(value: ParametersReposRemoveStatusCheckProtectionEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/branches/:branch/protection/required_status_checks", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrequired_status_checks`(value: ParametersReposRemoveStatusCheckProtectionEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/branches/:branch/protection/required_status_checks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrequired_status_checksSlashcontexts`(value: ParametersReposRemoveStatusCheckContextsEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrequired_status_checksSlashcontexts`(value: ParametersReposRemoveStatusCheckContextsEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrestrictions`(value: ParametersReposDeleteAccessRestrictionsEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrestrictions`(value: ParametersReposDeleteAccessRestrictionsEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrestrictionsSlashapps`(value: ParametersReposRemoveAppAccessRestrictionsEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/apps", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrestrictionsSlashapps`(value: ParametersReposRemoveAppAccessRestrictionsEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/apps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrestrictionsSlashteams`(value: ParametersReposRemoveTeamAccessRestrictionsEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/teams", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrestrictionsSlashteams`(value: ParametersReposRemoveTeamAccessRestrictionsEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/teams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrestrictionsSlashusers`(value: ParametersReposRemoveUserAccessRestrictionsEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/users", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrestrictionsSlashusers`(value: ParametersReposRemoveUserAccessRestrictionsEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/branches/:branch/protection/restrictions/users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashcollaboratorsSlashColonusername`(value: ParametersReposRemoveCollaboratorEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/collaborators/:username", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashcollaboratorsSlashColonusername`(value: ParametersReposRemoveCollaboratorEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/collaborators/:username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashcommentsSlashColoncomment_id`(value: ParametersReposDeleteCommitCommentEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/comments/:comment_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashcommentsSlashColoncomment_id`(value: ParametersReposDeleteCommitCommentEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/comments/:comment_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashcommentsSlashColoncomment_idSlashreactionsSlashColonreaction_id`(value: ParametersReactionsDeleteForCommitCommentEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/comments/:comment_id/reactions/:reaction_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashcommentsSlashColoncomment_idSlashreactionsSlashColonreaction_id`(value: ParametersReactionsDeleteForCommitCommentEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/comments/:comment_id/reactions/:reaction_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashcontentsSlashColonpath`(value: ParametersReposDeleteFileEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/contents/:path", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashcontentsSlashColonpath`(value: ParametersReposDeleteFileEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/contents/:path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_id`(value: ParametersReposDeleteDeploymentEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/deployments/:deployment_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_id`(value: ParametersReposDeleteDeploymentEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/deployments/:deployment_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashgitSlashrefsSlashColonref`(value: ParametersGitDeleteRefEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/git/refs/:ref", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashgitSlashrefsSlashColonref`(value: ParametersGitDeleteRefEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/git/refs/:ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashhooksSlashColonhook_id`(value: ParametersReposDeleteWebhookEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/hooks/:hook_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashhooksSlashColonhook_id`(value: ParametersReposDeleteWebhookEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/hooks/:hook_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashimport`(value: ParametersMigrationsCancelImportEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/import", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashimport`(value: ParametersMigrationsCancelImportEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/import", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashinteraction-limits`(value: ParametersInteractionsRemoveRestrictionsForRepoEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/interaction-limits", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashinteraction-limits`(value: ParametersInteractionsRemoveRestrictionsForRepoEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/interaction-limits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashinvitationsSlashColoninvitation_id`(value: ParametersReposDeleteInvitationEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/invitations/:invitation_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashinvitationsSlashColoninvitation_id`(value: ParametersReposDeleteInvitationEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/invitations/:invitation_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashassignees`(value: ParametersIssuesRemoveAssigneesEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/issues/:issue_number/assignees", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashassignees`(value: ParametersIssuesRemoveAssigneesEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/issues/:issue_number/assignees", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashlabels`(value: ParametersIssuesRemoveAllLabelsEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/issues/:issue_number/labels", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashlabels`(value: ParametersIssuesRemoveAllLabelsEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/issues/:issue_number/labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashlabelsSlashColonname`(value: ParametersIssuesRemoveLabelEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/issues/:issue_number/labels/:name", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashlabelsSlashColonname`(value: ParametersIssuesRemoveLabelEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/issues/:issue_number/labels/:name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashlock`(value: ParametersIssuesUnlockEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/issues/:issue_number/lock", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashlock`(value: ParametersIssuesUnlockEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/issues/:issue_number/lock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashreactionsSlashColonreaction_id`(value: ParametersReactionsDeleteForIssueEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/issues/:issue_number/reactions/:reaction_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashreactionsSlashColonreaction_id`(value: ParametersReactionsDeleteForIssueEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/issues/:issue_number/reactions/:reaction_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcommentsSlashColoncomment_id`(value: ParametersIssuesDeleteCommentEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/issues/comments/:comment_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcommentsSlashColoncomment_id`(value: ParametersIssuesDeleteCommentEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/issues/comments/:comment_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcommentsSlashColoncomment_idSlashreactionsSlashColonreaction_id`(value: ParametersReactionsDeleteForIssueCommentEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/issues/comments/:comment_id/reactions/:reaction_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcommentsSlashColoncomment_idSlashreactionsSlashColonreaction_id`(value: ParametersReactionsDeleteForIssueCommentEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/issues/comments/:comment_id/reactions/:reaction_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashkeysSlashColonkey_id`(value: ParametersReposDeleteDeployKeyEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/keys/:key_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashkeysSlashColonkey_id`(value: ParametersReposDeleteDeployKeyEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/keys/:key_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashlabelsSlashColonname`(value: ParametersIssuesDeleteLabelEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/labels/:name", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashlabelsSlashColonname`(value: ParametersIssuesDeleteLabelEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/labels/:name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashmilestonesSlashColonmilestone_number`(value: ParametersIssuesDeleteMilestoneEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/milestones/:milestone_number", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashmilestonesSlashColonmilestone_number`(value: ParametersIssuesDeleteMilestoneEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/milestones/:milestone_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashpages`(value: ParametersReposDeletePagesSiteEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/pages", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashpages`(value: ParametersReposDeletePagesSiteEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashrequested_reviewers`(value: ParametersPullsRemoveRequestedReviewersEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/pulls/:pull_number/requested_reviewers", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashrequested_reviewers`(value: ParametersPullsRemoveRequestedReviewersEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/pulls/:pull_number/requested_reviewers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviewsSlashColonreview_id`(value: ParametersPullsDeletePendingReviewEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviewsSlashColonreview_id`(value: ParametersPullsDeletePendingReviewEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcommentsSlashColoncomment_id`(value: ParametersPullsDeleteReviewCommentEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/pulls/comments/:comment_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcommentsSlashColoncomment_id`(value: ParametersPullsDeleteReviewCommentEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/pulls/comments/:comment_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcommentsSlashColoncomment_idSlashreactionsSlashColonreaction_id`(value: ParametersReactionsDeleteForPullRequestCommentEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/pulls/comments/:comment_id/reactions/:reaction_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcommentsSlashColoncomment_idSlashreactionsSlashColonreaction_id`(value: ParametersReactionsDeleteForPullRequestCommentEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/pulls/comments/:comment_id/reactions/:reaction_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashColonrelease_id`(value: ParametersReposDeleteReleaseEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/releases/:release_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashColonrelease_id`(value: ParametersReposDeleteReleaseEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/releases/:release_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashassetsSlashColonasset_id`(value: ParametersReposDeleteReleaseAssetEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/releases/assets/:asset_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashassetsSlashColonasset_id`(value: ParametersReposDeleteReleaseAssetEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/releases/assets/:asset_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashsubscription`(value: ParametersActivityDeleteRepoSubscriptionEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/subscription", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashsubscription`(value: ParametersActivityDeleteRepoSubscriptionEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/subscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashvulnerability-alerts`(value: ParametersReposDisableVulnerabilityAlertsEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/vulnerability-alerts", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashreposSlashColonownerSlashColonrepoSlashvulnerability-alerts`(value: ParametersReposDisableVulnerabilityAlertsEndpoint): Self = StObject.set(x, "DELETE /repos/:owner/:repo/vulnerability-alerts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroupsSlashColonscim_group_id`(value: ParametersEnterpriseAdminDeleteScimGroupFromEnterpriseEndpoint): Self = StObject.set(x, "DELETE /scim/v2/enterprises/:enterprise/Groups/:scim_group_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroupsSlashColonscim_group_id`(value: ParametersEnterpriseAdminDeleteScimGroupFromEnterpriseEndpoint): Self = StObject.set(x, "DELETE /scim/v2/enterprises/:enterprise/Groups/:scim_group_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsersSlashColonscim_user_id`(value: ParametersEnterpriseAdminDeleteUserFromEnterpriseEndpoint): Self = StObject.set(x, "DELETE /scim/v2/enterprises/:enterprise/Users/:scim_user_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsersSlashColonscim_user_id`(value: ParametersEnterpriseAdminDeleteUserFromEnterpriseEndpoint): Self = StObject.set(x, "DELETE /scim/v2/enterprises/:enterprise/Users/:scim_user_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsersSlashColonscim_user_id`(value: ParametersScimDeleteUserFromOrgEndpoint): Self = StObject.set(x, "DELETE /scim/v2/organizations/:org/Users/:scim_user_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsersSlashColonscim_user_id`(value: ParametersScimDeleteUserFromOrgEndpoint): Self = StObject.set(x, "DELETE /scim/v2/organizations/:org/Users/:scim_user_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashteamsSlashColonteam_id`(value: ParametersTeamsDeleteLegacyEndpoint): Self = StObject.set(x, "DELETE /teams/:team_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashteamsSlashColonteam_id`(value: ParametersTeamsDeleteLegacyEndpoint): Self = StObject.set(x, "DELETE /teams/:team_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_number`(value: ParametersTeamsDeleteDiscussionLegacyEndpoint): Self = StObject.set(x, "DELETE /teams/:team_id/discussions/:discussion_number", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_number`(value: ParametersTeamsDeleteDiscussionLegacyEndpoint): Self = StObject.set(x, "DELETE /teams/:team_id/discussions/:discussion_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_number`(value: ParametersTeamsDeleteDiscussionCommentLegacyEndpoint): Self = StObject.set(x, "DELETE /teams/:team_id/discussions/:discussion_number/comments/:comment_number", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_number`(value: ParametersTeamsDeleteDiscussionCommentLegacyEndpoint): Self = StObject.set(x, "DELETE /teams/:team_id/discussions/:discussion_number/comments/:comment_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashteamsSlashColonteam_idSlashmembersSlashColonusername`(value: ParametersTeamsRemoveMemberLegacyEndpoint): Self = StObject.set(x, "DELETE /teams/:team_id/members/:username", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashteamsSlashColonteam_idSlashmembersSlashColonusername`(value: ParametersTeamsRemoveMemberLegacyEndpoint): Self = StObject.set(x, "DELETE /teams/:team_id/members/:username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashteamsSlashColonteam_idSlashmembershipsSlashColonusername`(value: ParametersTeamsRemoveMembershipForUserLegacyEndpoint): Self = StObject.set(x, "DELETE /teams/:team_id/memberships/:username", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashteamsSlashColonteam_idSlashmembershipsSlashColonusername`(value: ParametersTeamsRemoveMembershipForUserLegacyEndpoint): Self = StObject.set(x, "DELETE /teams/:team_id/memberships/:username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashteamsSlashColonteam_idSlashprojectsSlashColonproject_id`(value: ParametersTeamsRemoveProjectLegacyEndpoint): Self = StObject.set(x, "DELETE /teams/:team_id/projects/:project_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashteamsSlashColonteam_idSlashprojectsSlashColonproject_id`(value: ParametersTeamsRemoveProjectLegacyEndpoint): Self = StObject.set(x, "DELETE /teams/:team_id/projects/:project_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashteamsSlashColonteam_idSlashreposSlashColonownerSlashColonrepo`(value: ParametersTeamsRemoveRepoLegacyEndpoint): Self = StObject.set(x, "DELETE /teams/:team_id/repos/:owner/:repo", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashteamsSlashColonteam_idSlashreposSlashColonownerSlashColonrepo`(value: ParametersTeamsRemoveRepoLegacyEndpoint): Self = StObject.set(x, "DELETE /teams/:team_id/repos/:owner/:repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashuserSlashblocksSlashColonusername`(value: ParametersUsersUnblockEndpoint): Self = StObject.set(x, "DELETE /user/blocks/:username", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashuserSlashblocksSlashColonusername`(value: ParametersUsersUnblockEndpoint): Self = StObject.set(x, "DELETE /user/blocks/:username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashuserSlashemails`(value: ParametersUsersDeleteEmailForAuthenticatedEndpoint): Self = StObject.set(x, "DELETE /user/emails", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashuserSlashemails`(value: ParametersUsersDeleteEmailForAuthenticatedEndpoint): Self = StObject.set(x, "DELETE /user/emails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashuserSlashfollowingSlashColonusername`(value: ParametersUsersUnfollowEndpoint): Self = StObject.set(x, "DELETE /user/following/:username", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashuserSlashfollowingSlashColonusername`(value: ParametersUsersUnfollowEndpoint): Self = StObject.set(x, "DELETE /user/following/:username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashuserSlashgpg_keysSlashColongpg_key_id`(value: ParametersUsersDeleteGpgKeyForAuthenticatedEndpoint): Self = StObject.set(x, "DELETE /user/gpg_keys/:gpg_key_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashuserSlashgpg_keysSlashColongpg_key_id`(value: ParametersUsersDeleteGpgKeyForAuthenticatedEndpoint): Self = StObject.set(x, "DELETE /user/gpg_keys/:gpg_key_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashuserSlashinstallationsSlashColoninstallation_idSlashrepositoriesSlashColonrepository_id`(value: ParametersAppsRemoveRepoFromInstallationEndpoint): Self = StObject.set(x, "DELETE /user/installations/:installation_id/repositories/:repository_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashuserSlashinstallationsSlashColoninstallation_idSlashrepositoriesSlashColonrepository_id`(value: ParametersAppsRemoveRepoFromInstallationEndpoint): Self = StObject.set(x, "DELETE /user/installations/:installation_id/repositories/:repository_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashuserSlashkeysSlashColonkey_id`(value: ParametersUsersDeletePublicSshKeyForAuthenticatedEndpoint): Self = StObject.set(x, "DELETE /user/keys/:key_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashuserSlashkeysSlashColonkey_id`(value: ParametersUsersDeletePublicSshKeyForAuthenticatedEndpoint): Self = StObject.set(x, "DELETE /user/keys/:key_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashuserSlashmigrationsSlashColonmigration_idSlasharchive`(value: ParametersMigrationsDeleteArchiveForAuthenticatedUserEndpoint): Self = StObject.set(x, "DELETE /user/migrations/:migration_id/archive", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashuserSlashmigrationsSlashColonmigration_idSlasharchive`(value: ParametersMigrationsDeleteArchiveForAuthenticatedUserEndpoint): Self = StObject.set(x, "DELETE /user/migrations/:migration_id/archive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashuserSlashmigrationsSlashColonmigration_idSlashreposSlashColonrepo_nameSlashlock`(value: ParametersMigrationsUnlockRepoForAuthenticatedUserEndpoint): Self = StObject.set(x, "DELETE /user/migrations/:migration_id/repos/:repo_name/lock", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashuserSlashmigrationsSlashColonmigration_idSlashreposSlashColonrepo_nameSlashlock`(value: ParametersMigrationsUnlockRepoForAuthenticatedUserEndpoint): Self = StObject.set(x, "DELETE /user/migrations/:migration_id/repos/:repo_name/lock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashuserSlashrepository_invitationsSlashColoninvitation_id`(value: ParametersReposDeclineInvitationEndpoint): Self = StObject.set(x, "DELETE /user/repository_invitations/:invitation_id", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashuserSlashrepository_invitationsSlashColoninvitation_id`(value: ParametersReposDeclineInvitationEndpoint): Self = StObject.set(x, "DELETE /user/repository_invitations/:invitation_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setDELETE SlashuserSlashstarredSlashColonownerSlashColonrepo`(value: ParametersActivityUnstarRepoForAuthenticatedUserEndpoint): Self = StObject.set(x, "DELETE /user/starred/:owner/:repo", value.asInstanceOf[js.Any])
+    inline def `setDELETE SlashuserSlashstarredSlashColonownerSlashColonrepo`(value: ParametersActivityUnstarRepoForAuthenticatedUserEndpoint): Self = StObject.set(x, "DELETE /user/starred/:owner/:repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET Slashapp`(value: ParametersAppsGetAuthenticatedEndpoint): Self = StObject.set(x, "GET /app", value.asInstanceOf[js.Any])
+    inline def `setGET Slashapp`(value: ParametersAppsGetAuthenticatedEndpoint): Self = StObject.set(x, "GET /app", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashappSlashinstallations`(value: ParametersAppsListInstallationsEndpoint): Self = StObject.set(x, "GET /app/installations", value.asInstanceOf[js.Any])
+    inline def `setGET SlashappSlashinstallations`(value: ParametersAppsListInstallationsEndpoint): Self = StObject.set(x, "GET /app/installations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashappSlashinstallationsSlashColoninstallation_id`(value: ParametersAppsGetInstallationEndpoint): Self = StObject.set(x, "GET /app/installations/:installation_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashappSlashinstallationsSlashColoninstallation_id`(value: ParametersAppsGetInstallationEndpoint): Self = StObject.set(x, "GET /app/installations/:installation_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashapplicationsSlashColonclient_idSlashtokensSlashColonaccess_token`(value: ParametersAppsCheckAuthorizationEndpoint): Self = StObject.set(x, "GET /applications/:client_id/tokens/:access_token", value.asInstanceOf[js.Any])
+    inline def `setGET SlashapplicationsSlashColonclient_idSlashtokensSlashColonaccess_token`(value: ParametersAppsCheckAuthorizationEndpoint): Self = StObject.set(x, "GET /applications/:client_id/tokens/:access_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashapplicationsSlashgrants`(value: ParametersOauthAuthorizationsListGrantsEndpoint): Self = StObject.set(x, "GET /applications/grants", value.asInstanceOf[js.Any])
+    inline def `setGET SlashapplicationsSlashgrants`(value: ParametersOauthAuthorizationsListGrantsEndpoint): Self = StObject.set(x, "GET /applications/grants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashapplicationsSlashgrantsSlashColongrant_id`(value: ParametersOauthAuthorizationsGetGrantEndpoint): Self = StObject.set(x, "GET /applications/grants/:grant_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashapplicationsSlashgrantsSlashColongrant_id`(value: ParametersOauthAuthorizationsGetGrantEndpoint): Self = StObject.set(x, "GET /applications/grants/:grant_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashappsSlashColonapp_slug`(value: ParametersAppsGetBySlugEndpoint): Self = StObject.set(x, "GET /apps/:app_slug", value.asInstanceOf[js.Any])
+    inline def `setGET SlashappsSlashColonapp_slug`(value: ParametersAppsGetBySlugEndpoint): Self = StObject.set(x, "GET /apps/:app_slug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET Slashauthorizations`(value: ParametersOauthAuthorizationsListAuthorizationsEndpoint): Self = StObject.set(x, "GET /authorizations", value.asInstanceOf[js.Any])
+    inline def `setGET Slashauthorizations`(value: ParametersOauthAuthorizationsListAuthorizationsEndpoint): Self = StObject.set(x, "GET /authorizations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashauthorizationsSlashColonauthorization_id`(value: ParametersOauthAuthorizationsGetAuthorizationEndpoint): Self = StObject.set(x, "GET /authorizations/:authorization_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashauthorizationsSlashColonauthorization_id`(value: ParametersOauthAuthorizationsGetAuthorizationEndpoint): Self = StObject.set(x, "GET /authorizations/:authorization_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET Slashcodes_of_conduct`(value: ParametersCodesOfConductGetAllCodesOfConductEndpoint): Self = StObject.set(x, "GET /codes_of_conduct", value.asInstanceOf[js.Any])
+    inline def `setGET Slashcodes_of_conduct`(value: ParametersCodesOfConductGetAllCodesOfConductEndpoint): Self = StObject.set(x, "GET /codes_of_conduct", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET Slashcodes_of_conductSlashColonkey`(value: ParametersCodesOfConductGetConductCodeEndpoint): Self = StObject.set(x, "GET /codes_of_conduct/:key", value.asInstanceOf[js.Any])
+    inline def `setGET Slashcodes_of_conductSlashColonkey`(value: ParametersCodesOfConductGetConductCodeEndpoint): Self = StObject.set(x, "GET /codes_of_conduct/:key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET Slashemojis`(value: ParametersEmojisGetEndpoint): Self = StObject.set(x, "GET /emojis", value.asInstanceOf[js.Any])
+    inline def `setGET Slashemojis`(value: ParametersEmojisGetEndpoint): Self = StObject.set(x, "GET /emojis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groups`(value: ParametersEnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseEndpoint): Self = StObject.set(x, "GET /enterprises/:enterprise/actions/runner-groups", value.asInstanceOf[js.Any])
+    inline def `setGET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groups`(value: ParametersEnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseEndpoint): Self = StObject.set(x, "GET /enterprises/:enterprise/actions/runner-groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_id`(value: ParametersEnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseEndpoint): Self = StObject.set(x, "GET /enterprises/:enterprise/actions/runner-groups/:runner_group_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_id`(value: ParametersEnterpriseAdminGetSelfHostedRunnerGroupForEnterpriseEndpoint): Self = StObject.set(x, "GET /enterprises/:enterprise/actions/runner-groups/:runner_group_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashorganizations`(value: ParametersEnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpoint): Self = StObject.set(x, "GET /enterprises/:enterprise/actions/runner-groups/:runner_group_id/organizations", value.asInstanceOf[js.Any])
+    inline def `setGET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashorganizations`(value: ParametersEnterpriseAdminListOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpoint): Self = StObject.set(x, "GET /enterprises/:enterprise/actions/runner-groups/:runner_group_id/organizations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`(value: ParametersEnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseEndpoint): Self = StObject.set(x, "GET /enterprises/:enterprise/actions/runner-groups/:runner_group_id/runners", value.asInstanceOf[js.Any])
+    inline def `setGET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`(value: ParametersEnterpriseAdminListSelfHostedRunnersInGroupForEnterpriseEndpoint): Self = StObject.set(x, "GET /enterprises/:enterprise/actions/runner-groups/:runner_group_id/runners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunners`(value: ParametersEnterpriseAdminListSelfHostedRunnersForEnterpriseEndpoint): Self = StObject.set(x, "GET /enterprises/:enterprise/actions/runners", value.asInstanceOf[js.Any])
+    inline def `setGET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunners`(value: ParametersEnterpriseAdminListSelfHostedRunnersForEnterpriseEndpoint): Self = StObject.set(x, "GET /enterprises/:enterprise/actions/runners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashColonrunner_id`(value: ParametersEnterpriseAdminGetSelfHostedRunnerForEnterpriseEndpoint): Self = StObject.set(x, "GET /enterprises/:enterprise/actions/runners/:runner_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashColonrunner_id`(value: ParametersEnterpriseAdminGetSelfHostedRunnerForEnterpriseEndpoint): Self = StObject.set(x, "GET /enterprises/:enterprise/actions/runners/:runner_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashdownloads`(value: ParametersEnterpriseAdminListRunnerApplicationsForEnterpriseEndpoint): Self = StObject.set(x, "GET /enterprises/:enterprise/actions/runners/downloads", value.asInstanceOf[js.Any])
+    inline def `setGET SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashdownloads`(value: ParametersEnterpriseAdminListRunnerApplicationsForEnterpriseEndpoint): Self = StObject.set(x, "GET /enterprises/:enterprise/actions/runners/downloads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashenterprisesSlashColonenterpriseSlashsettingsSlashbillingSlashactions`(value: ParametersEnterpriseAdminGetGithubActionsBillingGheEndpoint): Self = StObject.set(x, "GET /enterprises/:enterprise/settings/billing/actions", value.asInstanceOf[js.Any])
+    inline def `setGET SlashenterprisesSlashColonenterpriseSlashsettingsSlashbillingSlashactions`(value: ParametersEnterpriseAdminGetGithubActionsBillingGheEndpoint): Self = StObject.set(x, "GET /enterprises/:enterprise/settings/billing/actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashenterprisesSlashColonenterpriseSlashsettingsSlashbillingSlashpackages`(value: ParametersEnterpriseAdminGetGithubPackagesBillingGheEndpoint): Self = StObject.set(x, "GET /enterprises/:enterprise/settings/billing/packages", value.asInstanceOf[js.Any])
+    inline def `setGET SlashenterprisesSlashColonenterpriseSlashsettingsSlashbillingSlashpackages`(value: ParametersEnterpriseAdminGetGithubPackagesBillingGheEndpoint): Self = StObject.set(x, "GET /enterprises/:enterprise/settings/billing/packages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashenterprisesSlashColonenterpriseSlashsettingsSlashbillingSlashshared-storage`(value: ParametersEnterpriseAdminGetSharedStorageBillingGheEndpoint): Self = StObject.set(x, "GET /enterprises/:enterprise/settings/billing/shared-storage", value.asInstanceOf[js.Any])
+    inline def `setGET SlashenterprisesSlashColonenterpriseSlashsettingsSlashbillingSlashshared-storage`(value: ParametersEnterpriseAdminGetSharedStorageBillingGheEndpoint): Self = StObject.set(x, "GET /enterprises/:enterprise/settings/billing/shared-storage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashenterprisesSlashColonenterprise_idSlashsettingsSlashbillingSlashactions`(value: ParametersEnterpriseAdminGetGithubActionsBillingGheDeprecatedEnterpriseIdEndpoint): Self = StObject.set(x, "GET /enterprises/:enterprise_id/settings/billing/actions", value.asInstanceOf[js.Any])
+    inline def `setGET SlashenterprisesSlashColonenterprise_idSlashsettingsSlashbillingSlashactions`(value: ParametersEnterpriseAdminGetGithubActionsBillingGheDeprecatedEnterpriseIdEndpoint): Self = StObject.set(x, "GET /enterprises/:enterprise_id/settings/billing/actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashenterprisesSlashColonenterprise_idSlashsettingsSlashbillingSlashpackages`(value: ParametersEnterpriseAdminGetGithubPackagesBillingGheDeprecatedEnterpriseIdEndpoint): Self = StObject.set(x, "GET /enterprises/:enterprise_id/settings/billing/packages", value.asInstanceOf[js.Any])
+    inline def `setGET SlashenterprisesSlashColonenterprise_idSlashsettingsSlashbillingSlashpackages`(value: ParametersEnterpriseAdminGetGithubPackagesBillingGheDeprecatedEnterpriseIdEndpoint): Self = StObject.set(x, "GET /enterprises/:enterprise_id/settings/billing/packages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashenterprisesSlashColonenterprise_idSlashsettingsSlashbillingSlashshared-storage`(value: ParametersEnterpriseAdminGetSharedStorageBillingGheDeprecatedEnterpriseIdEndpoint): Self = StObject.set(x, "GET /enterprises/:enterprise_id/settings/billing/shared-storage", value.asInstanceOf[js.Any])
+    inline def `setGET SlashenterprisesSlashColonenterprise_idSlashsettingsSlashbillingSlashshared-storage`(value: ParametersEnterpriseAdminGetSharedStorageBillingGheDeprecatedEnterpriseIdEndpoint): Self = StObject.set(x, "GET /enterprises/:enterprise_id/settings/billing/shared-storage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET Slashevents`(value: ParametersActivityListPublicEventsEndpoint): Self = StObject.set(x, "GET /events", value.asInstanceOf[js.Any])
+    inline def `setGET Slashevents`(value: ParametersActivityListPublicEventsEndpoint): Self = StObject.set(x, "GET /events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET Slashfeeds`(value: ParametersActivityGetFeedsEndpoint): Self = StObject.set(x, "GET /feeds", value.asInstanceOf[js.Any])
+    inline def `setGET Slashfeeds`(value: ParametersActivityGetFeedsEndpoint): Self = StObject.set(x, "GET /feeds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET Slashgists`(value: ParametersGistsListEndpoint): Self = StObject.set(x, "GET /gists", value.asInstanceOf[js.Any])
+    inline def `setGET Slashgists`(value: ParametersGistsListEndpoint): Self = StObject.set(x, "GET /gists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashgistsSlashColongist_id`(value: ParametersGistsGetEndpoint): Self = StObject.set(x, "GET /gists/:gist_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashgistsSlashColongist_id`(value: ParametersGistsGetEndpoint): Self = StObject.set(x, "GET /gists/:gist_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashgistsSlashColongist_idSlashColonsha`(value: ParametersGistsGetRevisionEndpoint): Self = StObject.set(x, "GET /gists/:gist_id/:sha", value.asInstanceOf[js.Any])
+    inline def `setGET SlashgistsSlashColongist_idSlashColonsha`(value: ParametersGistsGetRevisionEndpoint): Self = StObject.set(x, "GET /gists/:gist_id/:sha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashgistsSlashColongist_idSlashcomments`(value: ParametersGistsListCommentsEndpoint): Self = StObject.set(x, "GET /gists/:gist_id/comments", value.asInstanceOf[js.Any])
+    inline def `setGET SlashgistsSlashColongist_idSlashcomments`(value: ParametersGistsListCommentsEndpoint): Self = StObject.set(x, "GET /gists/:gist_id/comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashgistsSlashColongist_idSlashcommentsSlashColoncomment_id`(value: ParametersGistsGetCommentEndpoint): Self = StObject.set(x, "GET /gists/:gist_id/comments/:comment_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashgistsSlashColongist_idSlashcommentsSlashColoncomment_id`(value: ParametersGistsGetCommentEndpoint): Self = StObject.set(x, "GET /gists/:gist_id/comments/:comment_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashgistsSlashColongist_idSlashcommits`(value: ParametersGistsListCommitsEndpoint): Self = StObject.set(x, "GET /gists/:gist_id/commits", value.asInstanceOf[js.Any])
+    inline def `setGET SlashgistsSlashColongist_idSlashcommits`(value: ParametersGistsListCommitsEndpoint): Self = StObject.set(x, "GET /gists/:gist_id/commits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashgistsSlashColongist_idSlashforks`(value: ParametersGistsListForksEndpoint): Self = StObject.set(x, "GET /gists/:gist_id/forks", value.asInstanceOf[js.Any])
+    inline def `setGET SlashgistsSlashColongist_idSlashforks`(value: ParametersGistsListForksEndpoint): Self = StObject.set(x, "GET /gists/:gist_id/forks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashgistsSlashColongist_idSlashstar`(value: ParametersGistsCheckIsStarredEndpoint): Self = StObject.set(x, "GET /gists/:gist_id/star", value.asInstanceOf[js.Any])
+    inline def `setGET SlashgistsSlashColongist_idSlashstar`(value: ParametersGistsCheckIsStarredEndpoint): Self = StObject.set(x, "GET /gists/:gist_id/star", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashgistsSlashpublic`(value: ParametersGistsListPublicEndpoint): Self = StObject.set(x, "GET /gists/public", value.asInstanceOf[js.Any])
+    inline def `setGET SlashgistsSlashpublic`(value: ParametersGistsListPublicEndpoint): Self = StObject.set(x, "GET /gists/public", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashgistsSlashstarred`(value: ParametersGistsListStarredEndpoint): Self = StObject.set(x, "GET /gists/starred", value.asInstanceOf[js.Any])
+    inline def `setGET SlashgistsSlashstarred`(value: ParametersGistsListStarredEndpoint): Self = StObject.set(x, "GET /gists/starred", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashgitignoreSlashtemplates`(value: ParametersGitignoreGetAllTemplatesEndpoint): Self = StObject.set(x, "GET /gitignore/templates", value.asInstanceOf[js.Any])
+    inline def `setGET SlashgitignoreSlashtemplates`(value: ParametersGitignoreGetAllTemplatesEndpoint): Self = StObject.set(x, "GET /gitignore/templates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashgitignoreSlashtemplatesSlashColonname`(value: ParametersGitignoreGetTemplateEndpoint): Self = StObject.set(x, "GET /gitignore/templates/:name", value.asInstanceOf[js.Any])
+    inline def `setGET SlashgitignoreSlashtemplatesSlashColonname`(value: ParametersGitignoreGetTemplateEndpoint): Self = StObject.set(x, "GET /gitignore/templates/:name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashinstallationSlashrepositories`(value: ParametersAppsListReposAccessibleToInstallationEndpoint): Self = StObject.set(x, "GET /installation/repositories", value.asInstanceOf[js.Any])
+    inline def `setGET SlashinstallationSlashrepositories`(value: ParametersAppsListReposAccessibleToInstallationEndpoint): Self = StObject.set(x, "GET /installation/repositories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET Slashissues`(value: ParametersIssuesListEndpoint): Self = StObject.set(x, "GET /issues", value.asInstanceOf[js.Any])
+    inline def `setGET Slashissues`(value: ParametersIssuesListEndpoint): Self = StObject.set(x, "GET /issues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET Slashlicenses`(value: ParametersLicensesGetAllCommonlyUsedEndpoint): Self = StObject.set(x, "GET /licenses", value.asInstanceOf[js.Any])
+    inline def `setGET Slashlicenses`(value: ParametersLicensesGetAllCommonlyUsedEndpoint): Self = StObject.set(x, "GET /licenses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashlicensesSlashColonlicense`(value: ParametersLicensesGetEndpoint): Self = StObject.set(x, "GET /licenses/:license", value.asInstanceOf[js.Any])
+    inline def `setGET SlashlicensesSlashColonlicense`(value: ParametersLicensesGetEndpoint): Self = StObject.set(x, "GET /licenses/:license", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET Slashmarketplace_listingSlashaccountsSlashColonaccount_id`(value: ParametersAppsGetSubscriptionPlanForAccountEndpoint): Self = StObject.set(x, "GET /marketplace_listing/accounts/:account_id", value.asInstanceOf[js.Any])
+    inline def `setGET Slashmarketplace_listingSlashaccountsSlashColonaccount_id`(value: ParametersAppsGetSubscriptionPlanForAccountEndpoint): Self = StObject.set(x, "GET /marketplace_listing/accounts/:account_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET Slashmarketplace_listingSlashplans`(value: ParametersAppsListPlansEndpoint): Self = StObject.set(x, "GET /marketplace_listing/plans", value.asInstanceOf[js.Any])
+    inline def `setGET Slashmarketplace_listingSlashplans`(value: ParametersAppsListPlansEndpoint): Self = StObject.set(x, "GET /marketplace_listing/plans", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET Slashmarketplace_listingSlashplansSlashColonplan_idSlashaccounts`(value: ParametersAppsListAccountsForPlanEndpoint): Self = StObject.set(x, "GET /marketplace_listing/plans/:plan_id/accounts", value.asInstanceOf[js.Any])
+    inline def `setGET Slashmarketplace_listingSlashplansSlashColonplan_idSlashaccounts`(value: ParametersAppsListAccountsForPlanEndpoint): Self = StObject.set(x, "GET /marketplace_listing/plans/:plan_id/accounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET Slashmarketplace_listingSlashstubbedSlashaccountsSlashColonaccount_id`(value: ParametersAppsGetSubscriptionPlanForAccountStubbedEndpoint): Self = StObject.set(x, "GET /marketplace_listing/stubbed/accounts/:account_id", value.asInstanceOf[js.Any])
+    inline def `setGET Slashmarketplace_listingSlashstubbedSlashaccountsSlashColonaccount_id`(value: ParametersAppsGetSubscriptionPlanForAccountStubbedEndpoint): Self = StObject.set(x, "GET /marketplace_listing/stubbed/accounts/:account_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET Slashmarketplace_listingSlashstubbedSlashplans`(value: ParametersAppsListPlansStubbedEndpoint): Self = StObject.set(x, "GET /marketplace_listing/stubbed/plans", value.asInstanceOf[js.Any])
+    inline def `setGET Slashmarketplace_listingSlashstubbedSlashplans`(value: ParametersAppsListPlansStubbedEndpoint): Self = StObject.set(x, "GET /marketplace_listing/stubbed/plans", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET Slashmarketplace_listingSlashstubbedSlashplansSlashColonplan_idSlashaccounts`(value: ParametersAppsListAccountsForPlanStubbedEndpoint): Self = StObject.set(x, "GET /marketplace_listing/stubbed/plans/:plan_id/accounts", value.asInstanceOf[js.Any])
+    inline def `setGET Slashmarketplace_listingSlashstubbedSlashplansSlashColonplan_idSlashaccounts`(value: ParametersAppsListAccountsForPlanStubbedEndpoint): Self = StObject.set(x, "GET /marketplace_listing/stubbed/plans/:plan_id/accounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET Slashmeta`(value: ParametersMetaGetEndpoint): Self = StObject.set(x, "GET /meta", value.asInstanceOf[js.Any])
+    inline def `setGET Slashmeta`(value: ParametersMetaGetEndpoint): Self = StObject.set(x, "GET /meta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashnetworksSlashColonownerSlashColonrepoSlashevents`(value: ParametersActivityListPublicEventsForRepoNetworkEndpoint): Self = StObject.set(x, "GET /networks/:owner/:repo/events", value.asInstanceOf[js.Any])
+    inline def `setGET SlashnetworksSlashColonownerSlashColonrepoSlashevents`(value: ParametersActivityListPublicEventsForRepoNetworkEndpoint): Self = StObject.set(x, "GET /networks/:owner/:repo/events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET Slashnotifications`(value: ParametersActivityListNotificationsForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /notifications", value.asInstanceOf[js.Any])
+    inline def `setGET Slashnotifications`(value: ParametersActivityListNotificationsForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /notifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashnotificationsSlashthreadsSlashColonthread_id`(value: ParametersActivityGetThreadEndpoint): Self = StObject.set(x, "GET /notifications/threads/:thread_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashnotificationsSlashthreadsSlashColonthread_id`(value: ParametersActivityGetThreadEndpoint): Self = StObject.set(x, "GET /notifications/threads/:thread_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashnotificationsSlashthreadsSlashColonthread_idSlashsubscription`(value: ParametersActivityGetThreadSubscriptionForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /notifications/threads/:thread_id/subscription", value.asInstanceOf[js.Any])
+    inline def `setGET SlashnotificationsSlashthreadsSlashColonthread_idSlashsubscription`(value: ParametersActivityGetThreadSubscriptionForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /notifications/threads/:thread_id/subscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET Slashorganizations`(value: ParametersOrgsListEndpoint): Self = StObject.set(x, "GET /organizations", value.asInstanceOf[js.Any])
+    inline def `setGET Slashorganizations`(value: ParametersOrgsListEndpoint): Self = StObject.set(x, "GET /organizations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorg`(value: ParametersOrgsGetEndpoint): Self = StObject.set(x, "GET /orgs/:org", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorg`(value: ParametersOrgsGetEndpoint): Self = StObject.set(x, "GET /orgs/:org", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashactionsSlashrunner-groups`(value: ParametersActionsListSelfHostedRunnerGroupsForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/actions/runner-groups", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashactionsSlashrunner-groups`(value: ParametersActionsListSelfHostedRunnerGroupsForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/actions/runner-groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_id`(value: ParametersActionsGetSelfHostedRunnerGroupForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/actions/runner-groups/:runner_group_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_id`(value: ParametersActionsGetSelfHostedRunnerGroupForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/actions/runner-groups/:runner_group_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrepositories`(value: ParametersActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/actions/runner-groups/:runner_group_id/repositories", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrepositories`(value: ParametersActionsListRepoAccessToSelfHostedRunnerGroupInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/actions/runner-groups/:runner_group_id/repositories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`(value: ParametersActionsListSelfHostedRunnersInGroupForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/actions/runner-groups/:runner_group_id/runners", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`(value: ParametersActionsListSelfHostedRunnersInGroupForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/actions/runner-groups/:runner_group_id/runners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashactionsSlashrunners`(value: ParametersActionsListSelfHostedRunnersForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/actions/runners", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashactionsSlashrunners`(value: ParametersActionsListSelfHostedRunnersForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/actions/runners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashactionsSlashrunnersSlashColonrunner_id`(value: ParametersActionsGetSelfHostedRunnerForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/actions/runners/:runner_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashactionsSlashrunnersSlashColonrunner_id`(value: ParametersActionsGetSelfHostedRunnerForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/actions/runners/:runner_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashactionsSlashrunnersSlashdownloads`(value: ParametersActionsListRunnerApplicationsForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/actions/runners/downloads", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashactionsSlashrunnersSlashdownloads`(value: ParametersActionsListRunnerApplicationsForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/actions/runners/downloads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashactionsSlashsecrets`(value: ParametersActionsListOrgSecretsEndpoint): Self = StObject.set(x, "GET /orgs/:org/actions/secrets", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashactionsSlashsecrets`(value: ParametersActionsListOrgSecretsEndpoint): Self = StObject.set(x, "GET /orgs/:org/actions/secrets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_name`(value: ParametersActionsGetOrgSecretEndpoint): Self = StObject.set(x, "GET /orgs/:org/actions/secrets/:secret_name", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_name`(value: ParametersActionsGetOrgSecretEndpoint): Self = StObject.set(x, "GET /orgs/:org/actions/secrets/:secret_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_nameSlashrepositories`(value: ParametersActionsListSelectedReposForOrgSecretEndpoint): Self = StObject.set(x, "GET /orgs/:org/actions/secrets/:secret_name/repositories", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_nameSlashrepositories`(value: ParametersActionsListSelectedReposForOrgSecretEndpoint): Self = StObject.set(x, "GET /orgs/:org/actions/secrets/:secret_name/repositories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashactionsSlashsecretsSlashpublic-key`(value: ParametersActionsGetOrgPublicKeyEndpoint): Self = StObject.set(x, "GET /orgs/:org/actions/secrets/public-key", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashactionsSlashsecretsSlashpublic-key`(value: ParametersActionsGetOrgPublicKeyEndpoint): Self = StObject.set(x, "GET /orgs/:org/actions/secrets/public-key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashblocks`(value: ParametersOrgsListBlockedUsersEndpoint): Self = StObject.set(x, "GET /orgs/:org/blocks", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashblocks`(value: ParametersOrgsListBlockedUsersEndpoint): Self = StObject.set(x, "GET /orgs/:org/blocks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashblocksSlashColonusername`(value: ParametersOrgsCheckBlockedUserEndpoint): Self = StObject.set(x, "GET /orgs/:org/blocks/:username", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashblocksSlashColonusername`(value: ParametersOrgsCheckBlockedUserEndpoint): Self = StObject.set(x, "GET /orgs/:org/blocks/:username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashcredential-authorizations`(value: ParametersOrgsListSamlSsoAuthorizationsEndpoint): Self = StObject.set(x, "GET /orgs/:org/credential-authorizations", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashcredential-authorizations`(value: ParametersOrgsListSamlSsoAuthorizationsEndpoint): Self = StObject.set(x, "GET /orgs/:org/credential-authorizations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashevents`(value: ParametersActivityListPublicOrgEventsEndpoint): Self = StObject.set(x, "GET /orgs/:org/events", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashevents`(value: ParametersActivityListPublicOrgEventsEndpoint): Self = StObject.set(x, "GET /orgs/:org/events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashhooks`(value: ParametersOrgsListWebhooksEndpoint): Self = StObject.set(x, "GET /orgs/:org/hooks", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashhooks`(value: ParametersOrgsListWebhooksEndpoint): Self = StObject.set(x, "GET /orgs/:org/hooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashhooksSlashColonhook_id`(value: ParametersOrgsGetWebhookEndpoint): Self = StObject.set(x, "GET /orgs/:org/hooks/:hook_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashhooksSlashColonhook_id`(value: ParametersOrgsGetWebhookEndpoint): Self = StObject.set(x, "GET /orgs/:org/hooks/:hook_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashinstallation`(value: ParametersAppsGetOrgInstallationEndpoint): Self = StObject.set(x, "GET /orgs/:org/installation", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashinstallation`(value: ParametersAppsGetOrgInstallationEndpoint): Self = StObject.set(x, "GET /orgs/:org/installation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashinstallations`(value: ParametersOrgsListAppInstallationsEndpoint): Self = StObject.set(x, "GET /orgs/:org/installations", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashinstallations`(value: ParametersOrgsListAppInstallationsEndpoint): Self = StObject.set(x, "GET /orgs/:org/installations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashinteraction-limits`(value: ParametersInteractionsGetRestrictionsForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/interaction-limits", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashinteraction-limits`(value: ParametersInteractionsGetRestrictionsForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/interaction-limits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashinvitations`(value: ParametersOrgsListPendingInvitationsEndpoint): Self = StObject.set(x, "GET /orgs/:org/invitations", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashinvitations`(value: ParametersOrgsListPendingInvitationsEndpoint): Self = StObject.set(x, "GET /orgs/:org/invitations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashinvitationsSlashColoninvitation_idSlashteams`(value: ParametersOrgsListInvitationTeamsEndpoint): Self = StObject.set(x, "GET /orgs/:org/invitations/:invitation_id/teams", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashinvitationsSlashColoninvitation_idSlashteams`(value: ParametersOrgsListInvitationTeamsEndpoint): Self = StObject.set(x, "GET /orgs/:org/invitations/:invitation_id/teams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashissues`(value: ParametersIssuesListForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/issues", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashissues`(value: ParametersIssuesListForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/issues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashmembers`(value: ParametersOrgsListMembersEndpoint): Self = StObject.set(x, "GET /orgs/:org/members", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashmembers`(value: ParametersOrgsListMembersEndpoint): Self = StObject.set(x, "GET /orgs/:org/members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashmembersSlashColonusername`(value: ParametersOrgsCheckMembershipForUserEndpoint): Self = StObject.set(x, "GET /orgs/:org/members/:username", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashmembersSlashColonusername`(value: ParametersOrgsCheckMembershipForUserEndpoint): Self = StObject.set(x, "GET /orgs/:org/members/:username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashmembershipsSlashColonusername`(value: ParametersOrgsGetMembershipForUserEndpoint): Self = StObject.set(x, "GET /orgs/:org/memberships/:username", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashmembershipsSlashColonusername`(value: ParametersOrgsGetMembershipForUserEndpoint): Self = StObject.set(x, "GET /orgs/:org/memberships/:username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashmigrations`(value: ParametersMigrationsListForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/migrations", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashmigrations`(value: ParametersMigrationsListForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/migrations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashmigrationsSlashColonmigration_id`(value: ParametersMigrationsGetStatusForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/migrations/:migration_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashmigrationsSlashColonmigration_id`(value: ParametersMigrationsGetStatusForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/migrations/:migration_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashmigrationsSlashColonmigration_idSlasharchive`(value: ParametersMigrationsDownloadArchiveForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/migrations/:migration_id/archive", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashmigrationsSlashColonmigration_idSlasharchive`(value: ParametersMigrationsDownloadArchiveForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/migrations/:migration_id/archive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashmigrationsSlashColonmigration_idSlashrepositories`(value: ParametersMigrationsListReposForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/migrations/:migration_id/repositories", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashmigrationsSlashColonmigration_idSlashrepositories`(value: ParametersMigrationsListReposForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/migrations/:migration_id/repositories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashoutside_collaborators`(value: ParametersOrgsListOutsideCollaboratorsEndpoint): Self = StObject.set(x, "GET /orgs/:org/outside_collaborators", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashoutside_collaborators`(value: ParametersOrgsListOutsideCollaboratorsEndpoint): Self = StObject.set(x, "GET /orgs/:org/outside_collaborators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashprojects`(value: ParametersProjectsListForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/projects", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashprojects`(value: ParametersProjectsListForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/projects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashpublic_members`(value: ParametersOrgsListPublicMembersEndpoint): Self = StObject.set(x, "GET /orgs/:org/public_members", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashpublic_members`(value: ParametersOrgsListPublicMembersEndpoint): Self = StObject.set(x, "GET /orgs/:org/public_members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashpublic_membersSlashColonusername`(value: ParametersOrgsCheckPublicMembershipForUserEndpoint): Self = StObject.set(x, "GET /orgs/:org/public_members/:username", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashpublic_membersSlashColonusername`(value: ParametersOrgsCheckPublicMembershipForUserEndpoint): Self = StObject.set(x, "GET /orgs/:org/public_members/:username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashrepos`(value: ParametersReposListForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/repos", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashrepos`(value: ParametersReposListForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/repos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashsettingsSlashbillingSlashactions`(value: ParametersBillingGetGithubActionsBillingOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/settings/billing/actions", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashsettingsSlashbillingSlashactions`(value: ParametersBillingGetGithubActionsBillingOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/settings/billing/actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashsettingsSlashbillingSlashpackages`(value: ParametersBillingGetGithubPackagesBillingOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/settings/billing/packages", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashsettingsSlashbillingSlashpackages`(value: ParametersBillingGetGithubPackagesBillingOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/settings/billing/packages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashsettingsSlashbillingSlashshared-storage`(value: ParametersBillingGetSharedStorageBillingOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/settings/billing/shared-storage", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashsettingsSlashbillingSlashshared-storage`(value: ParametersBillingGetSharedStorageBillingOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/settings/billing/shared-storage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashteam-syncSlashgroups`(value: ParametersTeamsListIdPGroupsForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/team-sync/groups", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashteam-syncSlashgroups`(value: ParametersTeamsListIdPGroupsForOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/team-sync/groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashteams`(value: ParametersTeamsListEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashteams`(value: ParametersTeamsListEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slug`(value: ParametersTeamsGetByNameEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slug`(value: ParametersTeamsGetByNameEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussions`(value: ParametersTeamsListDiscussionsInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/discussions", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussions`(value: ParametersTeamsListDiscussionsInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/discussions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_number`(value: ParametersTeamsGetDiscussionInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/discussions/:discussion_number", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_number`(value: ParametersTeamsGetDiscussionInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/discussions/:discussion_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcomments`(value: ParametersTeamsListDiscussionCommentsInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcomments`(value: ParametersTeamsListDiscussionCommentsInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_number`(value: ParametersTeamsGetDiscussionCommentInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments/:comment_number", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_number`(value: ParametersTeamsGetDiscussionCommentInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments/:comment_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`(value: ParametersReactionsListForTeamDiscussionCommentInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments/:comment_number/reactions", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`(value: ParametersReactionsListForTeamDiscussionCommentInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments/:comment_number/reactions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashreactions`(value: ParametersReactionsListForTeamDiscussionInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/discussions/:discussion_number/reactions", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashreactions`(value: ParametersReactionsListForTeamDiscussionInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/discussions/:discussion_number/reactions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashinvitations`(value: ParametersTeamsListPendingInvitationsInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/invitations", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashinvitations`(value: ParametersTeamsListPendingInvitationsInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/invitations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashmembers`(value: ParametersTeamsListMembersInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/members", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashmembers`(value: ParametersTeamsListMembersInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashmembershipsSlashColonusername`(value: ParametersTeamsGetMembershipForUserInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/memberships/:username", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashmembershipsSlashColonusername`(value: ParametersTeamsGetMembershipForUserInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/memberships/:username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashprojects`(value: ParametersTeamsListProjectsInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/projects", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashprojects`(value: ParametersTeamsListProjectsInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/projects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashprojectsSlashColonproject_id`(value: ParametersTeamsCheckPermissionsForProjectInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/projects/:project_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashprojectsSlashColonproject_id`(value: ParametersTeamsCheckPermissionsForProjectInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/projects/:project_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashrepos`(value: ParametersTeamsListReposInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/repos", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashrepos`(value: ParametersTeamsListReposInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/repos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashreposSlashColonownerSlashColonrepo`(value: ParametersTeamsCheckPermissionsForRepoInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/repos/:owner/:repo", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashreposSlashColonownerSlashColonrepo`(value: ParametersTeamsCheckPermissionsForRepoInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/repos/:owner/:repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteam-syncSlashgroup-mappings`(value: ParametersTeamsListIdPGroupsInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/team-sync/group-mappings", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteam-syncSlashgroup-mappings`(value: ParametersTeamsListIdPGroupsInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/team-sync/group-mappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteams`(value: ParametersTeamsListChildInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/teams", value.asInstanceOf[js.Any])
+    inline def `setGET SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteams`(value: ParametersTeamsListChildInOrgEndpoint): Self = StObject.set(x, "GET /orgs/:org/teams/:team_slug/teams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashprojectsSlashColonproject_id`(value: ParametersProjectsGetEndpoint): Self = StObject.set(x, "GET /projects/:project_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashprojectsSlashColonproject_id`(value: ParametersProjectsGetEndpoint): Self = StObject.set(x, "GET /projects/:project_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashprojectsSlashColonproject_idSlashcollaborators`(value: ParametersProjectsListCollaboratorsEndpoint): Self = StObject.set(x, "GET /projects/:project_id/collaborators", value.asInstanceOf[js.Any])
+    inline def `setGET SlashprojectsSlashColonproject_idSlashcollaborators`(value: ParametersProjectsListCollaboratorsEndpoint): Self = StObject.set(x, "GET /projects/:project_id/collaborators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashprojectsSlashColonproject_idSlashcollaboratorsSlashColonusernameSlashpermission`(value: ParametersProjectsGetPermissionForUserEndpoint): Self = StObject.set(x, "GET /projects/:project_id/collaborators/:username/permission", value.asInstanceOf[js.Any])
+    inline def `setGET SlashprojectsSlashColonproject_idSlashcollaboratorsSlashColonusernameSlashpermission`(value: ParametersProjectsGetPermissionForUserEndpoint): Self = StObject.set(x, "GET /projects/:project_id/collaborators/:username/permission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashprojectsSlashColonproject_idSlashcolumns`(value: ParametersProjectsListColumnsEndpoint): Self = StObject.set(x, "GET /projects/:project_id/columns", value.asInstanceOf[js.Any])
+    inline def `setGET SlashprojectsSlashColonproject_idSlashcolumns`(value: ParametersProjectsListColumnsEndpoint): Self = StObject.set(x, "GET /projects/:project_id/columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashprojectsSlashcolumnsSlashColoncolumn_id`(value: ParametersProjectsGetColumnEndpoint): Self = StObject.set(x, "GET /projects/columns/:column_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashprojectsSlashcolumnsSlashColoncolumn_id`(value: ParametersProjectsGetColumnEndpoint): Self = StObject.set(x, "GET /projects/columns/:column_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashprojectsSlashcolumnsSlashColoncolumn_idSlashcards`(value: ParametersProjectsListCardsEndpoint): Self = StObject.set(x, "GET /projects/columns/:column_id/cards", value.asInstanceOf[js.Any])
+    inline def `setGET SlashprojectsSlashcolumnsSlashColoncolumn_idSlashcards`(value: ParametersProjectsListCardsEndpoint): Self = StObject.set(x, "GET /projects/columns/:column_id/cards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashprojectsSlashcolumnsSlashcardsSlashColoncard_id`(value: ParametersProjectsGetCardEndpoint): Self = StObject.set(x, "GET /projects/columns/cards/:card_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashprojectsSlashcolumnsSlashcardsSlashColoncard_id`(value: ParametersProjectsGetCardEndpoint): Self = StObject.set(x, "GET /projects/columns/cards/:card_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET Slashrate_limit`(value: ParametersRateLimitGetEndpoint): Self = StObject.set(x, "GET /rate_limit", value.asInstanceOf[js.Any])
+    inline def `setGET Slashrate_limit`(value: ParametersRateLimitGetEndpoint): Self = StObject.set(x, "GET /rate_limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepo`(value: ParametersReposGetEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepo`(value: ParametersReposGetEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashColonarchive_formatSlashColonref`(value: ParametersReposDownloadArchiveEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/:archive_format/:ref", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashColonarchive_formatSlashColonref`(value: ParametersReposDownloadArchiveEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/:archive_format/:ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashartifacts`(value: ParametersActionsListArtifactsForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/artifacts", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashartifacts`(value: ParametersActionsListArtifactsForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/artifacts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashartifactsSlashColonartifact_id`(value: ParametersActionsGetArtifactEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/artifacts/:artifact_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashartifactsSlashColonartifact_id`(value: ParametersActionsGetArtifactEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/artifacts/:artifact_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashartifactsSlashColonartifact_idSlashColonarchive_format`(value: ParametersActionsDownloadArtifactEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/artifacts/:artifact_id/:archive_format", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashartifactsSlashColonartifact_idSlashColonarchive_format`(value: ParametersActionsDownloadArtifactEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/artifacts/:artifact_id/:archive_format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashjobsSlashColonjob_id`(value: ParametersActionsGetJobForWorkflowRunEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/jobs/:job_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashjobsSlashColonjob_id`(value: ParametersActionsGetJobForWorkflowRunEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/jobs/:job_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashjobsSlashColonjob_idSlashlogs`(value: ParametersActionsDownloadJobLogsForWorkflowRunEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/jobs/:job_id/logs", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashjobsSlashColonjob_idSlashlogs`(value: ParametersActionsDownloadJobLogsForWorkflowRunEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/jobs/:job_id/logs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunners`(value: ParametersActionsListSelfHostedRunnersForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/runners", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunners`(value: ParametersActionsListSelfHostedRunnersForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/runners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunnersSlashColonrunner_id`(value: ParametersActionsGetSelfHostedRunnerForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/runners/:runner_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunnersSlashColonrunner_id`(value: ParametersActionsGetSelfHostedRunnerForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/runners/:runner_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunnersSlashdownloads`(value: ParametersActionsListRunnerApplicationsForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/runners/downloads", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunnersSlashdownloads`(value: ParametersActionsListRunnerApplicationsForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/runners/downloads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashruns`(value: ParametersActionsListWorkflowRunsForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/runs", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashruns`(value: ParametersActionsListWorkflowRunsForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/runs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_id`(value: ParametersActionsGetWorkflowRunEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/runs/:run_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_id`(value: ParametersActionsGetWorkflowRunEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/runs/:run_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashartifacts`(value: ParametersActionsListWorkflowRunArtifactsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/runs/:run_id/artifacts", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashartifacts`(value: ParametersActionsListWorkflowRunArtifactsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/runs/:run_id/artifacts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashjobs`(value: ParametersActionsListJobsForWorkflowRunEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/runs/:run_id/jobs", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashjobs`(value: ParametersActionsListJobsForWorkflowRunEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/runs/:run_id/jobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashlogs`(value: ParametersActionsDownloadWorkflowRunLogsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/runs/:run_id/logs", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashlogs`(value: ParametersActionsDownloadWorkflowRunLogsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/runs/:run_id/logs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashtiming`(value: ParametersActionsGetWorkflowRunUsageEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/runs/:run_id/timing", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashtiming`(value: ParametersActionsGetWorkflowRunUsageEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/runs/:run_id/timing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecrets`(value: ParametersActionsListRepoSecretsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/secrets", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecrets`(value: ParametersActionsListRepoSecretsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/secrets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecretsSlashColonsecret_name`(value: ParametersActionsGetRepoSecretEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/secrets/:secret_name", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecretsSlashColonsecret_name`(value: ParametersActionsGetRepoSecretEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/secrets/:secret_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecretsSlashpublic-key`(value: ParametersActionsGetRepoPublicKeyEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/secrets/public-key", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecretsSlashpublic-key`(value: ParametersActionsGetRepoPublicKeyEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/secrets/public-key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflows`(value: ParametersActionsListRepoWorkflowsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/workflows", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflows`(value: ParametersActionsListRepoWorkflowsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/workflows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_id`(value: ParametersActionsGetWorkflowEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/workflows/:workflow_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_id`(value: ParametersActionsGetWorkflowEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/workflows/:workflow_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_idSlashruns`(value: ParametersActionsListWorkflowRunsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/workflows/:workflow_id/runs", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_idSlashruns`(value: ParametersActionsListWorkflowRunsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/workflows/:workflow_id/runs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_idSlashtiming`(value: ParametersActionsGetWorkflowUsageEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/workflows/:workflow_id/timing", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_idSlashtiming`(value: ParametersActionsGetWorkflowUsageEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/actions/workflows/:workflow_id/timing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashassignees`(value: ParametersIssuesListAssigneesEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/assignees", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashassignees`(value: ParametersIssuesListAssigneesEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/assignees", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashassigneesSlashColonassignee`(value: ParametersIssuesCheckUserCanBeAssignedEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/assignees/:assignee", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashassigneesSlashColonassignee`(value: ParametersIssuesCheckUserCanBeAssignedEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/assignees/:assignee", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashbranches`(value: ParametersReposListBranchesEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/branches", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashbranches`(value: ParametersReposListBranchesEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/branches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranch`(value: ParametersReposGetBranchEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/branches/:branch", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranch`(value: ParametersReposGetBranchEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/branches/:branch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotection`(value: ParametersReposGetBranchProtectionEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/branches/:branch/protection", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotection`(value: ParametersReposGetBranchProtectionEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/branches/:branch/protection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashenforce_admins`(value: ParametersReposGetAdminBranchProtectionEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/branches/:branch/protection/enforce_admins", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashenforce_admins`(value: ParametersReposGetAdminBranchProtectionEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/branches/:branch/protection/enforce_admins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrequired_pull_request_reviews`(value: ParametersReposGetPullRequestReviewProtectionEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/branches/:branch/protection/required_pull_request_reviews", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrequired_pull_request_reviews`(value: ParametersReposGetPullRequestReviewProtectionEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/branches/:branch/protection/required_pull_request_reviews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrequired_signatures`(value: ParametersReposGetCommitSignatureProtectionEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/branches/:branch/protection/required_signatures", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrequired_signatures`(value: ParametersReposGetCommitSignatureProtectionEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/branches/:branch/protection/required_signatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrequired_status_checks`(value: ParametersReposGetStatusChecksProtectionEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/branches/:branch/protection/required_status_checks", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrequired_status_checks`(value: ParametersReposGetStatusChecksProtectionEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/branches/:branch/protection/required_status_checks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrequired_status_checksSlashcontexts`(value: ParametersReposGetAllStatusCheckContextsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrequired_status_checksSlashcontexts`(value: ParametersReposGetAllStatusCheckContextsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrestrictions`(value: ParametersReposGetAccessRestrictionsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/branches/:branch/protection/restrictions", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrestrictions`(value: ParametersReposGetAccessRestrictionsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/branches/:branch/protection/restrictions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrestrictionsSlashapps`(value: ParametersReposGetAppsWithAccessToProtectedBranchEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/branches/:branch/protection/restrictions/apps", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrestrictionsSlashapps`(value: ParametersReposGetAppsWithAccessToProtectedBranchEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/branches/:branch/protection/restrictions/apps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrestrictionsSlashteams`(value: ParametersReposGetTeamsWithAccessToProtectedBranchEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/branches/:branch/protection/restrictions/teams", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrestrictionsSlashteams`(value: ParametersReposGetTeamsWithAccessToProtectedBranchEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/branches/:branch/protection/restrictions/teams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrestrictionsSlashusers`(value: ParametersReposGetUsersWithAccessToProtectedBranchEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/branches/:branch/protection/restrictions/users", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrestrictionsSlashusers`(value: ParametersReposGetUsersWithAccessToProtectedBranchEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/branches/:branch/protection/restrictions/users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashcheck-runsSlashColoncheck_run_id`(value: ParametersChecksGetEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/check-runs/:check_run_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcheck-runsSlashColoncheck_run_id`(value: ParametersChecksGetEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/check-runs/:check_run_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashcheck-runsSlashColoncheck_run_idSlashannotations`(value: ParametersChecksListAnnotationsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/check-runs/:check_run_id/annotations", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcheck-runsSlashColoncheck_run_idSlashannotations`(value: ParametersChecksListAnnotationsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/check-runs/:check_run_id/annotations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashcheck-suitesSlashColoncheck_suite_id`(value: ParametersChecksGetSuiteEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/check-suites/:check_suite_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcheck-suitesSlashColoncheck_suite_id`(value: ParametersChecksGetSuiteEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/check-suites/:check_suite_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashcheck-suitesSlashColoncheck_suite_idSlashcheck-runs`(value: ParametersChecksListForSuiteEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/check-suites/:check_suite_id/check-runs", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcheck-suitesSlashColoncheck_suite_idSlashcheck-runs`(value: ParametersChecksListForSuiteEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/check-suites/:check_suite_id/check-runs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashalerts`(value: ParametersCodeScanningListAlertsForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/code-scanning/alerts", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashalerts`(value: ParametersCodeScanningListAlertsForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/code-scanning/alerts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashalertsSlashColonalert_id`(value: ParametersCodeScanningGetAlertDeprecatedAlertIdEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/code-scanning/alerts/:alert_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashalertsSlashColonalert_id`(value: ParametersCodeScanningGetAlertDeprecatedAlertIdEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/code-scanning/alerts/:alert_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashalertsSlashColonalert_number`(value: ParametersCodeScanningGetAlertEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/code-scanning/alerts/:alert_number", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashalertsSlashColonalert_number`(value: ParametersCodeScanningGetAlertEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/code-scanning/alerts/:alert_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashanalyses`(value: ParametersCodeScanningListRecentAnalysesEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/code-scanning/analyses", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashanalyses`(value: ParametersCodeScanningListRecentAnalysesEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/code-scanning/analyses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashcollaborators`(value: ParametersReposListCollaboratorsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/collaborators", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcollaborators`(value: ParametersReposListCollaboratorsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/collaborators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashcollaboratorsSlashColonusername`(value: ParametersReposCheckCollaboratorEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/collaborators/:username", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcollaboratorsSlashColonusername`(value: ParametersReposCheckCollaboratorEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/collaborators/:username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashcollaboratorsSlashColonusernameSlashpermission`(value: ParametersReposGetCollaboratorPermissionLevelEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/collaborators/:username/permission", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcollaboratorsSlashColonusernameSlashpermission`(value: ParametersReposGetCollaboratorPermissionLevelEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/collaborators/:username/permission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashcomments`(value: ParametersReposListCommitCommentsForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/comments", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcomments`(value: ParametersReposListCommitCommentsForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashcommentsSlashColoncomment_id`(value: ParametersReposGetCommitCommentEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/comments/:comment_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcommentsSlashColoncomment_id`(value: ParametersReposGetCommitCommentEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/comments/:comment_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashcommentsSlashColoncomment_idSlashreactions`(value: ParametersReactionsListForCommitCommentEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/comments/:comment_id/reactions", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcommentsSlashColoncomment_idSlashreactions`(value: ParametersReactionsListForCommitCommentEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/comments/:comment_id/reactions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashcommits`(value: ParametersReposListCommitsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/commits", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcommits`(value: ParametersReposListCommitsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/commits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashbranches-where-head`(value: ParametersReposListBranchesForHeadCommitEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/commits/:commit_sha/branches-where-head", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashbranches-where-head`(value: ParametersReposListBranchesForHeadCommitEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/commits/:commit_sha/branches-where-head", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashcomments`(value: ParametersReposListCommentsForCommitEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/commits/:commit_sha/comments", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashcomments`(value: ParametersReposListCommentsForCommitEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/commits/:commit_sha/comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashpulls`(value: ParametersReposListPullRequestsAssociatedWithCommitEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/commits/:commit_sha/pulls", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashpulls`(value: ParametersReposListPullRequestsAssociatedWithCommitEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/commits/:commit_sha/pulls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonref`(value: ParametersReposGetCommitEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/commits/:ref", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonref`(value: ParametersReposGetCommitEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/commits/:ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-runs`(value: ParametersChecksListForRefEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/commits/:ref/check-runs", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-runs`(value: ParametersChecksListForRefEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/commits/:ref/check-runs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-suites`(value: ParametersChecksListSuitesForRefEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/commits/:ref/check-suites", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashcheck-suites`(value: ParametersChecksListSuitesForRefEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/commits/:ref/check-suites", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashstatus`(value: ParametersReposGetCombinedStatusForRefEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/commits/:ref/status", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashstatus`(value: ParametersReposGetCombinedStatusForRefEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/commits/:ref/status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashstatuses`(value: ParametersReposListCommitStatusesForRefEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/commits/:ref/statuses", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColonrefSlashstatuses`(value: ParametersReposListCommitStatusesForRefEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/commits/:ref/statuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashcommunitySlashcode_of_conduct`(value: ParametersCodesOfConductGetForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/community/code_of_conduct", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcommunitySlashcode_of_conduct`(value: ParametersCodesOfConductGetForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/community/code_of_conduct", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashcommunitySlashprofile`(value: ParametersReposGetCommunityProfileMetricsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/community/profile", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcommunitySlashprofile`(value: ParametersReposGetCommunityProfileMetricsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/community/profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashcompareSlashColonbaseDotDotDotColonhead`(value: ParametersReposCompareCommitsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/compare/:base...:head", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcompareSlashColonbaseDotDotDotColonhead`(value: ParametersReposCompareCommitsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/compare/:base...:head", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashcontentsSlashColonpath`(value: ParametersReposGetContentEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/contents/:path", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcontentsSlashColonpath`(value: ParametersReposGetContentEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/contents/:path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashcontributors`(value: ParametersReposListContributorsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/contributors", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashcontributors`(value: ParametersReposListContributorsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/contributors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashdeployments`(value: ParametersReposListDeploymentsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/deployments", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashdeployments`(value: ParametersReposListDeploymentsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/deployments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_id`(value: ParametersReposGetDeploymentEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/deployments/:deployment_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_id`(value: ParametersReposGetDeploymentEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/deployments/:deployment_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatuses`(value: ParametersReposListDeploymentStatusesEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/deployments/:deployment_id/statuses", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatuses`(value: ParametersReposListDeploymentStatusesEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/deployments/:deployment_id/statuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatusesSlashColonstatus_id`(value: ParametersReposGetDeploymentStatusEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/deployments/:deployment_id/statuses/:status_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatusesSlashColonstatus_id`(value: ParametersReposGetDeploymentStatusEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/deployments/:deployment_id/statuses/:status_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashevents`(value: ParametersActivityListRepoEventsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/events", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashevents`(value: ParametersActivityListRepoEventsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashforks`(value: ParametersReposListForksEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/forks", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashforks`(value: ParametersReposListForksEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/forks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashgitSlashblobsSlashColonfile_sha`(value: ParametersGitGetBlobEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/git/blobs/:file_sha", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashgitSlashblobsSlashColonfile_sha`(value: ParametersGitGetBlobEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/git/blobs/:file_sha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashgitSlashcommitsSlashColoncommit_sha`(value: ParametersGitGetCommitEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/git/commits/:commit_sha", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashgitSlashcommitsSlashColoncommit_sha`(value: ParametersGitGetCommitEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/git/commits/:commit_sha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashgitSlashmatching-refsSlashColonref`(value: ParametersGitListMatchingRefsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/git/matching-refs/:ref", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashgitSlashmatching-refsSlashColonref`(value: ParametersGitListMatchingRefsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/git/matching-refs/:ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashgitSlashrefSlashColonref`(value: ParametersGitGetRefEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/git/ref/:ref", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashgitSlashrefSlashColonref`(value: ParametersGitGetRefEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/git/ref/:ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashgitSlashtagsSlashColontag_sha`(value: ParametersGitGetTagEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/git/tags/:tag_sha", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashgitSlashtagsSlashColontag_sha`(value: ParametersGitGetTagEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/git/tags/:tag_sha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashgitSlashtreesSlashColontree_sha`(value: ParametersGitGetTreeEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/git/trees/:tree_sha", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashgitSlashtreesSlashColontree_sha`(value: ParametersGitGetTreeEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/git/trees/:tree_sha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashhooks`(value: ParametersReposListWebhooksEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/hooks", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashhooks`(value: ParametersReposListWebhooksEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/hooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashhooksSlashColonhook_id`(value: ParametersReposGetWebhookEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/hooks/:hook_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashhooksSlashColonhook_id`(value: ParametersReposGetWebhookEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/hooks/:hook_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashimport`(value: ParametersMigrationsGetImportStatusEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/import", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashimport`(value: ParametersMigrationsGetImportStatusEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/import", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashimportSlashauthors`(value: ParametersMigrationsGetCommitAuthorsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/import/authors", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashimportSlashauthors`(value: ParametersMigrationsGetCommitAuthorsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/import/authors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashimportSlashlarge_files`(value: ParametersMigrationsGetLargeFilesEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/import/large_files", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashimportSlashlarge_files`(value: ParametersMigrationsGetLargeFilesEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/import/large_files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashinstallation`(value: ParametersAppsGetRepoInstallationEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/installation", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashinstallation`(value: ParametersAppsGetRepoInstallationEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/installation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashinteraction-limits`(value: ParametersInteractionsGetRestrictionsForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/interaction-limits", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashinteraction-limits`(value: ParametersInteractionsGetRestrictionsForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/interaction-limits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashinvitations`(value: ParametersReposListInvitationsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/invitations", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashinvitations`(value: ParametersReposListInvitationsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/invitations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashissues`(value: ParametersIssuesListForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/issues", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashissues`(value: ParametersIssuesListForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/issues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_number`(value: ParametersIssuesGetEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/issues/:issue_number", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_number`(value: ParametersIssuesGetEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/issues/:issue_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashcomments`(value: ParametersIssuesListCommentsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/issues/:issue_number/comments", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashcomments`(value: ParametersIssuesListCommentsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/issues/:issue_number/comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashevents`(value: ParametersIssuesListEventsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/issues/:issue_number/events", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashevents`(value: ParametersIssuesListEventsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/issues/:issue_number/events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashlabels`(value: ParametersIssuesListLabelsOnIssueEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/issues/:issue_number/labels", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashlabels`(value: ParametersIssuesListLabelsOnIssueEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/issues/:issue_number/labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashreactions`(value: ParametersReactionsListForIssueEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/issues/:issue_number/reactions", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashreactions`(value: ParametersReactionsListForIssueEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/issues/:issue_number/reactions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashtimeline`(value: ParametersIssuesListEventsForTimelineEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/issues/:issue_number/timeline", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashtimeline`(value: ParametersIssuesListEventsForTimelineEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/issues/:issue_number/timeline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcomments`(value: ParametersIssuesListCommentsForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/issues/comments", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcomments`(value: ParametersIssuesListCommentsForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/issues/comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcommentsSlashColoncomment_id`(value: ParametersIssuesGetCommentEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/issues/comments/:comment_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcommentsSlashColoncomment_id`(value: ParametersIssuesGetCommentEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/issues/comments/:comment_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcommentsSlashColoncomment_idSlashreactions`(value: ParametersReactionsListForIssueCommentEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/issues/comments/:comment_id/reactions", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcommentsSlashColoncomment_idSlashreactions`(value: ParametersReactionsListForIssueCommentEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/issues/comments/:comment_id/reactions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashevents`(value: ParametersIssuesListEventsForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/issues/events", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashissuesSlashevents`(value: ParametersIssuesListEventsForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/issues/events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashissuesSlasheventsSlashColonevent_id`(value: ParametersIssuesGetEventEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/issues/events/:event_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashissuesSlasheventsSlashColonevent_id`(value: ParametersIssuesGetEventEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/issues/events/:event_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashkeys`(value: ParametersReposListDeployKeysEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/keys", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashkeys`(value: ParametersReposListDeployKeysEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashkeysSlashColonkey_id`(value: ParametersReposGetDeployKeyEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/keys/:key_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashkeysSlashColonkey_id`(value: ParametersReposGetDeployKeyEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/keys/:key_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashlabels`(value: ParametersIssuesListLabelsForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/labels", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashlabels`(value: ParametersIssuesListLabelsForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashlabelsSlashColonname`(value: ParametersIssuesGetLabelEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/labels/:name", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashlabelsSlashColonname`(value: ParametersIssuesGetLabelEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/labels/:name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashlanguages`(value: ParametersReposListLanguagesEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/languages", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashlanguages`(value: ParametersReposListLanguagesEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/languages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashlicense`(value: ParametersLicensesGetForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/license", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashlicense`(value: ParametersLicensesGetForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/license", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashmilestones`(value: ParametersIssuesListMilestonesEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/milestones", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashmilestones`(value: ParametersIssuesListMilestonesEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/milestones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashmilestonesSlashColonmilestone_number`(value: ParametersIssuesGetMilestoneEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/milestones/:milestone_number", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashmilestonesSlashColonmilestone_number`(value: ParametersIssuesGetMilestoneEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/milestones/:milestone_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashmilestonesSlashColonmilestone_numberSlashlabels`(value: ParametersIssuesListLabelsForMilestoneEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/milestones/:milestone_number/labels", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashmilestonesSlashColonmilestone_numberSlashlabels`(value: ParametersIssuesListLabelsForMilestoneEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/milestones/:milestone_number/labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashnotifications`(value: ParametersActivityListRepoNotificationsForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/notifications", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashnotifications`(value: ParametersActivityListRepoNotificationsForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/notifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashpages`(value: ParametersReposGetPagesEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pages", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashpages`(value: ParametersReposGetPagesEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashpagesSlashbuilds`(value: ParametersReposListPagesBuildsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pages/builds", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashpagesSlashbuilds`(value: ParametersReposListPagesBuildsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pages/builds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashpagesSlashbuildsSlashColonbuild_id`(value: ParametersReposGetPagesBuildEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pages/builds/:build_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashpagesSlashbuildsSlashColonbuild_id`(value: ParametersReposGetPagesBuildEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pages/builds/:build_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashpagesSlashbuildsSlashlatest`(value: ParametersReposGetLatestPagesBuildEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pages/builds/latest", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashpagesSlashbuildsSlashlatest`(value: ParametersReposGetLatestPagesBuildEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pages/builds/latest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashprojects`(value: ParametersProjectsListForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/projects", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashprojects`(value: ParametersProjectsListForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/projects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashpulls`(value: ParametersPullsListEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pulls", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashpulls`(value: ParametersPullsListEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pulls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_number`(value: ParametersPullsGetEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pulls/:pull_number", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_number`(value: ParametersPullsGetEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pulls/:pull_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcomments`(value: ParametersPullsListReviewCommentsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pulls/:pull_number/comments", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcomments`(value: ParametersPullsListReviewCommentsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pulls/:pull_number/comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcommits`(value: ParametersPullsListCommitsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pulls/:pull_number/commits", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcommits`(value: ParametersPullsListCommitsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pulls/:pull_number/commits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashfiles`(value: ParametersPullsListFilesEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pulls/:pull_number/files", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashfiles`(value: ParametersPullsListFilesEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pulls/:pull_number/files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashmerge`(value: ParametersPullsCheckIfMergedEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pulls/:pull_number/merge", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashmerge`(value: ParametersPullsCheckIfMergedEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pulls/:pull_number/merge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashrequested_reviewers`(value: ParametersPullsListRequestedReviewersEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pulls/:pull_number/requested_reviewers", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashrequested_reviewers`(value: ParametersPullsListRequestedReviewersEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pulls/:pull_number/requested_reviewers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviews`(value: ParametersPullsListReviewsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pulls/:pull_number/reviews", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviews`(value: ParametersPullsListReviewsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pulls/:pull_number/reviews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviewsSlashColonreview_id`(value: ParametersPullsGetReviewEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviewsSlashColonreview_id`(value: ParametersPullsGetReviewEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviewsSlashColonreview_idSlashcomments`(value: ParametersPullsListCommentsForReviewEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/comments", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviewsSlashColonreview_idSlashcomments`(value: ParametersPullsListCommentsForReviewEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcomments`(value: ParametersPullsListReviewCommentsForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pulls/comments", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcomments`(value: ParametersPullsListReviewCommentsForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pulls/comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcommentsSlashColoncomment_id`(value: ParametersPullsGetReviewCommentEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pulls/comments/:comment_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcommentsSlashColoncomment_id`(value: ParametersPullsGetReviewCommentEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pulls/comments/:comment_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcommentsSlashColoncomment_idSlashreactions`(value: ParametersReactionsListForPullRequestReviewCommentEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pulls/comments/:comment_id/reactions", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcommentsSlashColoncomment_idSlashreactions`(value: ParametersReactionsListForPullRequestReviewCommentEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/pulls/comments/:comment_id/reactions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashreadme`(value: ParametersReposGetReadmeEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/readme", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashreadme`(value: ParametersReposGetReadmeEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/readme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashreleases`(value: ParametersReposListReleasesEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/releases", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashreleases`(value: ParametersReposListReleasesEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/releases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashColonrelease_id`(value: ParametersReposGetReleaseEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/releases/:release_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashColonrelease_id`(value: ParametersReposGetReleaseEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/releases/:release_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashColonrelease_idSlashassets`(value: ParametersReposListReleaseAssetsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/releases/:release_id/assets", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashColonrelease_idSlashassets`(value: ParametersReposListReleaseAssetsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/releases/:release_id/assets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashassetsSlashColonasset_id`(value: ParametersReposGetReleaseAssetEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/releases/assets/:asset_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashassetsSlashColonasset_id`(value: ParametersReposGetReleaseAssetEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/releases/assets/:asset_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashlatest`(value: ParametersReposGetLatestReleaseEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/releases/latest", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashlatest`(value: ParametersReposGetLatestReleaseEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/releases/latest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashtagsSlashColontag`(value: ParametersReposGetReleaseByTagEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/releases/tags/:tag", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashtagsSlashColontag`(value: ParametersReposGetReleaseByTagEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/releases/tags/:tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashstargazers`(value: ParametersActivityListStargazersForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/stargazers", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashstargazers`(value: ParametersActivityListStargazersForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/stargazers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashstatsSlashcode_frequency`(value: ParametersReposGetCodeFrequencyStatsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/stats/code_frequency", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashstatsSlashcode_frequency`(value: ParametersReposGetCodeFrequencyStatsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/stats/code_frequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashstatsSlashcommit_activity`(value: ParametersReposGetCommitActivityStatsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/stats/commit_activity", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashstatsSlashcommit_activity`(value: ParametersReposGetCommitActivityStatsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/stats/commit_activity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashstatsSlashcontributors`(value: ParametersReposGetContributorsStatsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/stats/contributors", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashstatsSlashcontributors`(value: ParametersReposGetContributorsStatsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/stats/contributors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashstatsSlashparticipation`(value: ParametersReposGetParticipationStatsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/stats/participation", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashstatsSlashparticipation`(value: ParametersReposGetParticipationStatsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/stats/participation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashstatsSlashpunch_card`(value: ParametersReposGetPunchCardStatsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/stats/punch_card", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashstatsSlashpunch_card`(value: ParametersReposGetPunchCardStatsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/stats/punch_card", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashsubscribers`(value: ParametersActivityListWatchersForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/subscribers", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashsubscribers`(value: ParametersActivityListWatchersForRepoEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/subscribers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashsubscription`(value: ParametersActivityGetRepoSubscriptionEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/subscription", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashsubscription`(value: ParametersActivityGetRepoSubscriptionEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/subscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashtags`(value: ParametersReposListTagsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/tags", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashtags`(value: ParametersReposListTagsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashteams`(value: ParametersReposListTeamsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/teams", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashteams`(value: ParametersReposListTeamsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/teams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashtopics`(value: ParametersReposGetAllTopicsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/topics", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashtopics`(value: ParametersReposGetAllTopicsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/topics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashtrafficSlashclones`(value: ParametersReposGetClonesEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/traffic/clones", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashtrafficSlashclones`(value: ParametersReposGetClonesEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/traffic/clones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashtrafficSlashpopularSlashpaths`(value: ParametersReposGetTopPathsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/traffic/popular/paths", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashtrafficSlashpopularSlashpaths`(value: ParametersReposGetTopPathsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/traffic/popular/paths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashtrafficSlashpopularSlashreferrers`(value: ParametersReposGetTopReferrersEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/traffic/popular/referrers", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashtrafficSlashpopularSlashreferrers`(value: ParametersReposGetTopReferrersEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/traffic/popular/referrers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashtrafficSlashviews`(value: ParametersReposGetViewsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/traffic/views", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashtrafficSlashviews`(value: ParametersReposGetViewsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/traffic/views", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashreposSlashColonownerSlashColonrepoSlashvulnerability-alerts`(value: ParametersReposCheckVulnerabilityAlertsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/vulnerability-alerts", value.asInstanceOf[js.Any])
+    inline def `setGET SlashreposSlashColonownerSlashColonrepoSlashvulnerability-alerts`(value: ParametersReposCheckVulnerabilityAlertsEndpoint): Self = StObject.set(x, "GET /repos/:owner/:repo/vulnerability-alerts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET Slashrepositories`(value: ParametersReposListPublicEndpoint): Self = StObject.set(x, "GET /repositories", value.asInstanceOf[js.Any])
+    inline def `setGET Slashrepositories`(value: ParametersReposListPublicEndpoint): Self = StObject.set(x, "GET /repositories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups`(value: ParametersEnterpriseAdminListProvisionedGroupsEnterpriseEndpoint): Self = StObject.set(x, "GET /scim/v2/enterprises/:enterprise/Groups", value.asInstanceOf[js.Any])
+    inline def `setGET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups`(value: ParametersEnterpriseAdminListProvisionedGroupsEnterpriseEndpoint): Self = StObject.set(x, "GET /scim/v2/enterprises/:enterprise/Groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroupsSlashColonscim_group_id`(value: ParametersEnterpriseAdminGetProvisioningInformationForEnterpriseGroupEndpoint): Self = StObject.set(x, "GET /scim/v2/enterprises/:enterprise/Groups/:scim_group_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroupsSlashColonscim_group_id`(value: ParametersEnterpriseAdminGetProvisioningInformationForEnterpriseGroupEndpoint): Self = StObject.set(x, "GET /scim/v2/enterprises/:enterprise/Groups/:scim_group_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers`(value: ParametersEnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint): Self = StObject.set(x, "GET /scim/v2/enterprises/:enterprise/Users", value.asInstanceOf[js.Any])
+    inline def `setGET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers`(value: ParametersEnterpriseAdminListProvisionedIdentitiesEnterpriseEndpoint): Self = StObject.set(x, "GET /scim/v2/enterprises/:enterprise/Users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsersSlashColonscim_user_id`(value: ParametersEnterpriseAdminGetProvisioningInformationForEnterpriseUserEndpoint): Self = StObject.set(x, "GET /scim/v2/enterprises/:enterprise/Users/:scim_user_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsersSlashColonscim_user_id`(value: ParametersEnterpriseAdminGetProvisioningInformationForEnterpriseUserEndpoint): Self = StObject.set(x, "GET /scim/v2/enterprises/:enterprise/Users/:scim_user_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`(value: ParametersScimListProvisionedIdentitiesEndpoint): Self = StObject.set(x, "GET /scim/v2/organizations/:org/Users", value.asInstanceOf[js.Any])
+    inline def `setGET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`(value: ParametersScimListProvisionedIdentitiesEndpoint): Self = StObject.set(x, "GET /scim/v2/organizations/:org/Users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsersSlashColonscim_user_id`(value: ParametersScimGetProvisioningInformationForUserEndpoint): Self = StObject.set(x, "GET /scim/v2/organizations/:org/Users/:scim_user_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsersSlashColonscim_user_id`(value: ParametersScimGetProvisioningInformationForUserEndpoint): Self = StObject.set(x, "GET /scim/v2/organizations/:org/Users/:scim_user_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashsearchSlashcode`(value: ParametersSearchCodeEndpoint): Self = StObject.set(x, "GET /search/code", value.asInstanceOf[js.Any])
+    inline def `setGET SlashsearchSlashcode`(value: ParametersSearchCodeEndpoint): Self = StObject.set(x, "GET /search/code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashsearchSlashcommits`(value: ParametersSearchCommitsEndpoint): Self = StObject.set(x, "GET /search/commits", value.asInstanceOf[js.Any])
+    inline def `setGET SlashsearchSlashcommits`(value: ParametersSearchCommitsEndpoint): Self = StObject.set(x, "GET /search/commits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashsearchSlashissues`(value: ParametersSearchIssuesAndPullRequestsEndpoint): Self = StObject.set(x, "GET /search/issues", value.asInstanceOf[js.Any])
+    inline def `setGET SlashsearchSlashissues`(value: ParametersSearchIssuesAndPullRequestsEndpoint): Self = StObject.set(x, "GET /search/issues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashsearchSlashlabels`(value: ParametersSearchLabelsEndpoint): Self = StObject.set(x, "GET /search/labels", value.asInstanceOf[js.Any])
+    inline def `setGET SlashsearchSlashlabels`(value: ParametersSearchLabelsEndpoint): Self = StObject.set(x, "GET /search/labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashsearchSlashrepositories`(value: ParametersSearchReposEndpoint): Self = StObject.set(x, "GET /search/repositories", value.asInstanceOf[js.Any])
+    inline def `setGET SlashsearchSlashrepositories`(value: ParametersSearchReposEndpoint): Self = StObject.set(x, "GET /search/repositories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashsearchSlashtopics`(value: ParametersSearchTopicsEndpoint): Self = StObject.set(x, "GET /search/topics", value.asInstanceOf[js.Any])
+    inline def `setGET SlashsearchSlashtopics`(value: ParametersSearchTopicsEndpoint): Self = StObject.set(x, "GET /search/topics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashsearchSlashusers`(value: ParametersSearchUsersEndpoint): Self = StObject.set(x, "GET /search/users", value.asInstanceOf[js.Any])
+    inline def `setGET SlashsearchSlashusers`(value: ParametersSearchUsersEndpoint): Self = StObject.set(x, "GET /search/users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashteamsSlashColonteam_id`(value: ParametersTeamsGetLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashteamsSlashColonteam_id`(value: ParametersTeamsGetLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashteamsSlashColonteam_idSlashdiscussions`(value: ParametersTeamsListDiscussionsLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/discussions", value.asInstanceOf[js.Any])
+    inline def `setGET SlashteamsSlashColonteam_idSlashdiscussions`(value: ParametersTeamsListDiscussionsLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/discussions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_number`(value: ParametersTeamsGetDiscussionLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/discussions/:discussion_number", value.asInstanceOf[js.Any])
+    inline def `setGET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_number`(value: ParametersTeamsGetDiscussionLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/discussions/:discussion_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcomments`(value: ParametersTeamsListDiscussionCommentsLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/discussions/:discussion_number/comments", value.asInstanceOf[js.Any])
+    inline def `setGET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcomments`(value: ParametersTeamsListDiscussionCommentsLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/discussions/:discussion_number/comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_number`(value: ParametersTeamsGetDiscussionCommentLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/discussions/:discussion_number/comments/:comment_number", value.asInstanceOf[js.Any])
+    inline def `setGET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_number`(value: ParametersTeamsGetDiscussionCommentLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/discussions/:discussion_number/comments/:comment_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`(value: ParametersReactionsListForTeamDiscussionCommentLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/discussions/:discussion_number/comments/:comment_number/reactions", value.asInstanceOf[js.Any])
+    inline def `setGET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`(value: ParametersReactionsListForTeamDiscussionCommentLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/discussions/:discussion_number/comments/:comment_number/reactions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashreactions`(value: ParametersReactionsListForTeamDiscussionLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/discussions/:discussion_number/reactions", value.asInstanceOf[js.Any])
+    inline def `setGET SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashreactions`(value: ParametersReactionsListForTeamDiscussionLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/discussions/:discussion_number/reactions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashteamsSlashColonteam_idSlashinvitations`(value: ParametersTeamsListPendingInvitationsLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/invitations", value.asInstanceOf[js.Any])
+    inline def `setGET SlashteamsSlashColonteam_idSlashinvitations`(value: ParametersTeamsListPendingInvitationsLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/invitations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashteamsSlashColonteam_idSlashmembers`(value: ParametersTeamsListMembersLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/members", value.asInstanceOf[js.Any])
+    inline def `setGET SlashteamsSlashColonteam_idSlashmembers`(value: ParametersTeamsListMembersLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/members", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashteamsSlashColonteam_idSlashmembersSlashColonusername`(value: ParametersTeamsGetMemberLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/members/:username", value.asInstanceOf[js.Any])
+    inline def `setGET SlashteamsSlashColonteam_idSlashmembersSlashColonusername`(value: ParametersTeamsGetMemberLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/members/:username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashteamsSlashColonteam_idSlashmembershipsSlashColonusername`(value: ParametersTeamsGetMembershipForUserLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/memberships/:username", value.asInstanceOf[js.Any])
+    inline def `setGET SlashteamsSlashColonteam_idSlashmembershipsSlashColonusername`(value: ParametersTeamsGetMembershipForUserLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/memberships/:username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashteamsSlashColonteam_idSlashprojects`(value: ParametersTeamsListProjectsLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/projects", value.asInstanceOf[js.Any])
+    inline def `setGET SlashteamsSlashColonteam_idSlashprojects`(value: ParametersTeamsListProjectsLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/projects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashteamsSlashColonteam_idSlashprojectsSlashColonproject_id`(value: ParametersTeamsCheckPermissionsForProjectLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/projects/:project_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashteamsSlashColonteam_idSlashprojectsSlashColonproject_id`(value: ParametersTeamsCheckPermissionsForProjectLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/projects/:project_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashteamsSlashColonteam_idSlashrepos`(value: ParametersTeamsListReposLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/repos", value.asInstanceOf[js.Any])
+    inline def `setGET SlashteamsSlashColonteam_idSlashrepos`(value: ParametersTeamsListReposLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/repos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashteamsSlashColonteam_idSlashreposSlashColonownerSlashColonrepo`(value: ParametersTeamsCheckPermissionsForRepoLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/repos/:owner/:repo", value.asInstanceOf[js.Any])
+    inline def `setGET SlashteamsSlashColonteam_idSlashreposSlashColonownerSlashColonrepo`(value: ParametersTeamsCheckPermissionsForRepoLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/repos/:owner/:repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashteamsSlashColonteam_idSlashteam-syncSlashgroup-mappings`(value: ParametersTeamsListIdPGroupsForLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/team-sync/group-mappings", value.asInstanceOf[js.Any])
+    inline def `setGET SlashteamsSlashColonteam_idSlashteam-syncSlashgroup-mappings`(value: ParametersTeamsListIdPGroupsForLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/team-sync/group-mappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashteamsSlashColonteam_idSlashteams`(value: ParametersTeamsListChildLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/teams", value.asInstanceOf[js.Any])
+    inline def `setGET SlashteamsSlashColonteam_idSlashteams`(value: ParametersTeamsListChildLegacyEndpoint): Self = StObject.set(x, "GET /teams/:team_id/teams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET Slashuser`(value: ParametersUsersGetAuthenticatedEndpoint): Self = StObject.set(x, "GET /user", value.asInstanceOf[js.Any])
+    inline def `setGET Slashuser`(value: ParametersUsersGetAuthenticatedEndpoint): Self = StObject.set(x, "GET /user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashuserSlashblocks`(value: ParametersUsersListBlockedByAuthenticatedEndpoint): Self = StObject.set(x, "GET /user/blocks", value.asInstanceOf[js.Any])
+    inline def `setGET SlashuserSlashblocks`(value: ParametersUsersListBlockedByAuthenticatedEndpoint): Self = StObject.set(x, "GET /user/blocks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashuserSlashblocksSlashColonusername`(value: ParametersUsersCheckBlockedEndpoint): Self = StObject.set(x, "GET /user/blocks/:username", value.asInstanceOf[js.Any])
+    inline def `setGET SlashuserSlashblocksSlashColonusername`(value: ParametersUsersCheckBlockedEndpoint): Self = StObject.set(x, "GET /user/blocks/:username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashuserSlashemails`(value: ParametersUsersListEmailsForAuthenticatedEndpoint): Self = StObject.set(x, "GET /user/emails", value.asInstanceOf[js.Any])
+    inline def `setGET SlashuserSlashemails`(value: ParametersUsersListEmailsForAuthenticatedEndpoint): Self = StObject.set(x, "GET /user/emails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashuserSlashfollowers`(value: ParametersUsersListFollowersForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/followers", value.asInstanceOf[js.Any])
+    inline def `setGET SlashuserSlashfollowers`(value: ParametersUsersListFollowersForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/followers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashuserSlashfollowing`(value: ParametersUsersListFollowedByAuthenticatedEndpoint): Self = StObject.set(x, "GET /user/following", value.asInstanceOf[js.Any])
+    inline def `setGET SlashuserSlashfollowing`(value: ParametersUsersListFollowedByAuthenticatedEndpoint): Self = StObject.set(x, "GET /user/following", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashuserSlashfollowingSlashColonusername`(value: ParametersUsersCheckPersonIsFollowedByAuthenticatedEndpoint): Self = StObject.set(x, "GET /user/following/:username", value.asInstanceOf[js.Any])
+    inline def `setGET SlashuserSlashfollowingSlashColonusername`(value: ParametersUsersCheckPersonIsFollowedByAuthenticatedEndpoint): Self = StObject.set(x, "GET /user/following/:username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashuserSlashgpg_keys`(value: ParametersUsersListGpgKeysForAuthenticatedEndpoint): Self = StObject.set(x, "GET /user/gpg_keys", value.asInstanceOf[js.Any])
+    inline def `setGET SlashuserSlashgpg_keys`(value: ParametersUsersListGpgKeysForAuthenticatedEndpoint): Self = StObject.set(x, "GET /user/gpg_keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashuserSlashgpg_keysSlashColongpg_key_id`(value: ParametersUsersGetGpgKeyForAuthenticatedEndpoint): Self = StObject.set(x, "GET /user/gpg_keys/:gpg_key_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashuserSlashgpg_keysSlashColongpg_key_id`(value: ParametersUsersGetGpgKeyForAuthenticatedEndpoint): Self = StObject.set(x, "GET /user/gpg_keys/:gpg_key_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashuserSlashinstallations`(value: ParametersAppsListInstallationsForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/installations", value.asInstanceOf[js.Any])
+    inline def `setGET SlashuserSlashinstallations`(value: ParametersAppsListInstallationsForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/installations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashuserSlashinstallationsSlashColoninstallation_idSlashrepositories`(value: ParametersAppsListInstallationReposForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/installations/:installation_id/repositories", value.asInstanceOf[js.Any])
+    inline def `setGET SlashuserSlashinstallationsSlashColoninstallation_idSlashrepositories`(value: ParametersAppsListInstallationReposForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/installations/:installation_id/repositories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashuserSlashissues`(value: ParametersIssuesListForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/issues", value.asInstanceOf[js.Any])
+    inline def `setGET SlashuserSlashissues`(value: ParametersIssuesListForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/issues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashuserSlashkeys`(value: ParametersUsersListPublicSshKeysForAuthenticatedEndpoint): Self = StObject.set(x, "GET /user/keys", value.asInstanceOf[js.Any])
+    inline def `setGET SlashuserSlashkeys`(value: ParametersUsersListPublicSshKeysForAuthenticatedEndpoint): Self = StObject.set(x, "GET /user/keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashuserSlashkeysSlashColonkey_id`(value: ParametersUsersGetPublicSshKeyForAuthenticatedEndpoint): Self = StObject.set(x, "GET /user/keys/:key_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashuserSlashkeysSlashColonkey_id`(value: ParametersUsersGetPublicSshKeyForAuthenticatedEndpoint): Self = StObject.set(x, "GET /user/keys/:key_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashuserSlashmarketplace_purchases`(value: ParametersAppsListSubscriptionsForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/marketplace_purchases", value.asInstanceOf[js.Any])
+    inline def `setGET SlashuserSlashmarketplace_purchases`(value: ParametersAppsListSubscriptionsForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/marketplace_purchases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashuserSlashmarketplace_purchasesSlashstubbed`(value: ParametersAppsListSubscriptionsForAuthenticatedUserStubbedEndpoint): Self = StObject.set(x, "GET /user/marketplace_purchases/stubbed", value.asInstanceOf[js.Any])
+    inline def `setGET SlashuserSlashmarketplace_purchasesSlashstubbed`(value: ParametersAppsListSubscriptionsForAuthenticatedUserStubbedEndpoint): Self = StObject.set(x, "GET /user/marketplace_purchases/stubbed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashuserSlashmembershipsSlashorgs`(value: ParametersOrgsListMembershipsForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/memberships/orgs", value.asInstanceOf[js.Any])
+    inline def `setGET SlashuserSlashmembershipsSlashorgs`(value: ParametersOrgsListMembershipsForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/memberships/orgs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashuserSlashmembershipsSlashorgsSlashColonorg`(value: ParametersOrgsGetMembershipForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/memberships/orgs/:org", value.asInstanceOf[js.Any])
+    inline def `setGET SlashuserSlashmembershipsSlashorgsSlashColonorg`(value: ParametersOrgsGetMembershipForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/memberships/orgs/:org", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashuserSlashmigrations`(value: ParametersMigrationsListForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/migrations", value.asInstanceOf[js.Any])
+    inline def `setGET SlashuserSlashmigrations`(value: ParametersMigrationsListForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/migrations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashuserSlashmigrationsSlashColonmigration_id`(value: ParametersMigrationsGetStatusForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/migrations/:migration_id", value.asInstanceOf[js.Any])
+    inline def `setGET SlashuserSlashmigrationsSlashColonmigration_id`(value: ParametersMigrationsGetStatusForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/migrations/:migration_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashuserSlashmigrationsSlashColonmigration_idSlasharchive`(value: ParametersMigrationsGetArchiveForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/migrations/:migration_id/archive", value.asInstanceOf[js.Any])
+    inline def `setGET SlashuserSlashmigrationsSlashColonmigration_idSlasharchive`(value: ParametersMigrationsGetArchiveForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/migrations/:migration_id/archive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashuserSlashmigrationsSlashColonmigration_idSlashrepositories`(value: ParametersMigrationsListReposForUserEndpoint): Self = StObject.set(x, "GET /user/migrations/:migration_id/repositories", value.asInstanceOf[js.Any])
+    inline def `setGET SlashuserSlashmigrationsSlashColonmigration_idSlashrepositories`(value: ParametersMigrationsListReposForUserEndpoint): Self = StObject.set(x, "GET /user/migrations/:migration_id/repositories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashuserSlashorgs`(value: ParametersOrgsListForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/orgs", value.asInstanceOf[js.Any])
+    inline def `setGET SlashuserSlashorgs`(value: ParametersOrgsListForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/orgs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashuserSlashpublic_emails`(value: ParametersUsersListPublicEmailsForAuthenticatedEndpoint): Self = StObject.set(x, "GET /user/public_emails", value.asInstanceOf[js.Any])
+    inline def `setGET SlashuserSlashpublic_emails`(value: ParametersUsersListPublicEmailsForAuthenticatedEndpoint): Self = StObject.set(x, "GET /user/public_emails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashuserSlashrepos`(value: ParametersReposListForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/repos", value.asInstanceOf[js.Any])
+    inline def `setGET SlashuserSlashrepos`(value: ParametersReposListForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/repos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashuserSlashrepository_invitations`(value: ParametersReposListInvitationsForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/repository_invitations", value.asInstanceOf[js.Any])
+    inline def `setGET SlashuserSlashrepository_invitations`(value: ParametersReposListInvitationsForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/repository_invitations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashuserSlashstarred`(value: ParametersActivityListReposStarredByAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/starred", value.asInstanceOf[js.Any])
+    inline def `setGET SlashuserSlashstarred`(value: ParametersActivityListReposStarredByAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/starred", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashuserSlashstarredSlashColonownerSlashColonrepo`(value: ParametersActivityCheckRepoIsStarredByAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/starred/:owner/:repo", value.asInstanceOf[js.Any])
+    inline def `setGET SlashuserSlashstarredSlashColonownerSlashColonrepo`(value: ParametersActivityCheckRepoIsStarredByAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/starred/:owner/:repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashuserSlashsubscriptions`(value: ParametersActivityListWatchedReposForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/subscriptions", value.asInstanceOf[js.Any])
+    inline def `setGET SlashuserSlashsubscriptions`(value: ParametersActivityListWatchedReposForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/subscriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashuserSlashteams`(value: ParametersTeamsListForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/teams", value.asInstanceOf[js.Any])
+    inline def `setGET SlashuserSlashteams`(value: ParametersTeamsListForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /user/teams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET Slashusers`(value: ParametersUsersListEndpoint): Self = StObject.set(x, "GET /users", value.asInstanceOf[js.Any])
+    inline def `setGET Slashusers`(value: ParametersUsersListEndpoint): Self = StObject.set(x, "GET /users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashusersSlashColonusername`(value: ParametersUsersGetByUsernameEndpoint): Self = StObject.set(x, "GET /users/:username", value.asInstanceOf[js.Any])
+    inline def `setGET SlashusersSlashColonusername`(value: ParametersUsersGetByUsernameEndpoint): Self = StObject.set(x, "GET /users/:username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashusersSlashColonusernameSlashevents`(value: ParametersActivityListEventsForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /users/:username/events", value.asInstanceOf[js.Any])
+    inline def `setGET SlashusersSlashColonusernameSlashevents`(value: ParametersActivityListEventsForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /users/:username/events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashusersSlashColonusernameSlasheventsSlashorgsSlashColonorg`(value: ParametersActivityListOrgEventsForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /users/:username/events/orgs/:org", value.asInstanceOf[js.Any])
+    inline def `setGET SlashusersSlashColonusernameSlasheventsSlashorgsSlashColonorg`(value: ParametersActivityListOrgEventsForAuthenticatedUserEndpoint): Self = StObject.set(x, "GET /users/:username/events/orgs/:org", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashusersSlashColonusernameSlasheventsSlashpublic`(value: ParametersActivityListPublicEventsForUserEndpoint): Self = StObject.set(x, "GET /users/:username/events/public", value.asInstanceOf[js.Any])
+    inline def `setGET SlashusersSlashColonusernameSlasheventsSlashpublic`(value: ParametersActivityListPublicEventsForUserEndpoint): Self = StObject.set(x, "GET /users/:username/events/public", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashusersSlashColonusernameSlashfollowers`(value: ParametersUsersListFollowersForUserEndpoint): Self = StObject.set(x, "GET /users/:username/followers", value.asInstanceOf[js.Any])
+    inline def `setGET SlashusersSlashColonusernameSlashfollowers`(value: ParametersUsersListFollowersForUserEndpoint): Self = StObject.set(x, "GET /users/:username/followers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashusersSlashColonusernameSlashfollowing`(value: ParametersUsersListFollowingForUserEndpoint): Self = StObject.set(x, "GET /users/:username/following", value.asInstanceOf[js.Any])
+    inline def `setGET SlashusersSlashColonusernameSlashfollowing`(value: ParametersUsersListFollowingForUserEndpoint): Self = StObject.set(x, "GET /users/:username/following", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashusersSlashColonusernameSlashfollowingSlashColontarget_user`(value: ParametersUsersCheckFollowingForUserEndpoint): Self = StObject.set(x, "GET /users/:username/following/:target_user", value.asInstanceOf[js.Any])
+    inline def `setGET SlashusersSlashColonusernameSlashfollowingSlashColontarget_user`(value: ParametersUsersCheckFollowingForUserEndpoint): Self = StObject.set(x, "GET /users/:username/following/:target_user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashusersSlashColonusernameSlashgists`(value: ParametersGistsListForUserEndpoint): Self = StObject.set(x, "GET /users/:username/gists", value.asInstanceOf[js.Any])
+    inline def `setGET SlashusersSlashColonusernameSlashgists`(value: ParametersGistsListForUserEndpoint): Self = StObject.set(x, "GET /users/:username/gists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashusersSlashColonusernameSlashgpg_keys`(value: ParametersUsersListGpgKeysForUserEndpoint): Self = StObject.set(x, "GET /users/:username/gpg_keys", value.asInstanceOf[js.Any])
+    inline def `setGET SlashusersSlashColonusernameSlashgpg_keys`(value: ParametersUsersListGpgKeysForUserEndpoint): Self = StObject.set(x, "GET /users/:username/gpg_keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashusersSlashColonusernameSlashhovercard`(value: ParametersUsersGetContextForUserEndpoint): Self = StObject.set(x, "GET /users/:username/hovercard", value.asInstanceOf[js.Any])
+    inline def `setGET SlashusersSlashColonusernameSlashhovercard`(value: ParametersUsersGetContextForUserEndpoint): Self = StObject.set(x, "GET /users/:username/hovercard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashusersSlashColonusernameSlashinstallation`(value: ParametersAppsGetUserInstallationEndpoint): Self = StObject.set(x, "GET /users/:username/installation", value.asInstanceOf[js.Any])
+    inline def `setGET SlashusersSlashColonusernameSlashinstallation`(value: ParametersAppsGetUserInstallationEndpoint): Self = StObject.set(x, "GET /users/:username/installation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashusersSlashColonusernameSlashkeys`(value: ParametersUsersListPublicKeysForUserEndpoint): Self = StObject.set(x, "GET /users/:username/keys", value.asInstanceOf[js.Any])
+    inline def `setGET SlashusersSlashColonusernameSlashkeys`(value: ParametersUsersListPublicKeysForUserEndpoint): Self = StObject.set(x, "GET /users/:username/keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashusersSlashColonusernameSlashorgs`(value: ParametersOrgsListForUserEndpoint): Self = StObject.set(x, "GET /users/:username/orgs", value.asInstanceOf[js.Any])
+    inline def `setGET SlashusersSlashColonusernameSlashorgs`(value: ParametersOrgsListForUserEndpoint): Self = StObject.set(x, "GET /users/:username/orgs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashusersSlashColonusernameSlashprojects`(value: ParametersProjectsListForUserEndpoint): Self = StObject.set(x, "GET /users/:username/projects", value.asInstanceOf[js.Any])
+    inline def `setGET SlashusersSlashColonusernameSlashprojects`(value: ParametersProjectsListForUserEndpoint): Self = StObject.set(x, "GET /users/:username/projects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashusersSlashColonusernameSlashreceived_events`(value: ParametersActivityListReceivedEventsForUserEndpoint): Self = StObject.set(x, "GET /users/:username/received_events", value.asInstanceOf[js.Any])
+    inline def `setGET SlashusersSlashColonusernameSlashreceived_events`(value: ParametersActivityListReceivedEventsForUserEndpoint): Self = StObject.set(x, "GET /users/:username/received_events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashusersSlashColonusernameSlashreceived_eventsSlashpublic`(value: ParametersActivityListReceivedPublicEventsForUserEndpoint): Self = StObject.set(x, "GET /users/:username/received_events/public", value.asInstanceOf[js.Any])
+    inline def `setGET SlashusersSlashColonusernameSlashreceived_eventsSlashpublic`(value: ParametersActivityListReceivedPublicEventsForUserEndpoint): Self = StObject.set(x, "GET /users/:username/received_events/public", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashusersSlashColonusernameSlashrepos`(value: ParametersReposListForUserEndpoint): Self = StObject.set(x, "GET /users/:username/repos", value.asInstanceOf[js.Any])
+    inline def `setGET SlashusersSlashColonusernameSlashrepos`(value: ParametersReposListForUserEndpoint): Self = StObject.set(x, "GET /users/:username/repos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashusersSlashColonusernameSlashsettingsSlashbillingSlashactions`(value: ParametersBillingGetGithubActionsBillingUserEndpoint): Self = StObject.set(x, "GET /users/:username/settings/billing/actions", value.asInstanceOf[js.Any])
+    inline def `setGET SlashusersSlashColonusernameSlashsettingsSlashbillingSlashactions`(value: ParametersBillingGetGithubActionsBillingUserEndpoint): Self = StObject.set(x, "GET /users/:username/settings/billing/actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashusersSlashColonusernameSlashsettingsSlashbillingSlashpackages`(value: ParametersBillingGetGithubPackagesBillingUserEndpoint): Self = StObject.set(x, "GET /users/:username/settings/billing/packages", value.asInstanceOf[js.Any])
+    inline def `setGET SlashusersSlashColonusernameSlashsettingsSlashbillingSlashpackages`(value: ParametersBillingGetGithubPackagesBillingUserEndpoint): Self = StObject.set(x, "GET /users/:username/settings/billing/packages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashusersSlashColonusernameSlashsettingsSlashbillingSlashshared-storage`(value: ParametersBillingGetSharedStorageBillingUserEndpoint): Self = StObject.set(x, "GET /users/:username/settings/billing/shared-storage", value.asInstanceOf[js.Any])
+    inline def `setGET SlashusersSlashColonusernameSlashsettingsSlashbillingSlashshared-storage`(value: ParametersBillingGetSharedStorageBillingUserEndpoint): Self = StObject.set(x, "GET /users/:username/settings/billing/shared-storage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashusersSlashColonusernameSlashstarred`(value: ParametersActivityListReposStarredByUserEndpoint): Self = StObject.set(x, "GET /users/:username/starred", value.asInstanceOf[js.Any])
+    inline def `setGET SlashusersSlashColonusernameSlashstarred`(value: ParametersActivityListReposStarredByUserEndpoint): Self = StObject.set(x, "GET /users/:username/starred", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setGET SlashusersSlashColonusernameSlashsubscriptions`(value: ParametersActivityListReposWatchedByUserEndpoint): Self = StObject.set(x, "GET /users/:username/subscriptions", value.asInstanceOf[js.Any])
+    inline def `setGET SlashusersSlashColonusernameSlashsubscriptions`(value: ParametersActivityListReposWatchedByUserEndpoint): Self = StObject.set(x, "GET /users/:username/subscriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashapplicationsSlashColonclient_idSlashtoken`(value: ParametersAppsResetTokenEndpoint): Self = StObject.set(x, "PATCH /applications/:client_id/token", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashapplicationsSlashColonclient_idSlashtoken`(value: ParametersAppsResetTokenEndpoint): Self = StObject.set(x, "PATCH /applications/:client_id/token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashauthorizationsSlashColonauthorization_id`(value: ParametersOauthAuthorizationsUpdateAuthorizationEndpoint): Self = StObject.set(x, "PATCH /authorizations/:authorization_id", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashauthorizationsSlashColonauthorization_id`(value: ParametersOauthAuthorizationsUpdateAuthorizationEndpoint): Self = StObject.set(x, "PATCH /authorizations/:authorization_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_id`(value: ParametersEnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseEndpoint): Self = StObject.set(x, "PATCH /enterprises/:enterprise/actions/runner-groups/:runner_group_id", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_id`(value: ParametersEnterpriseAdminUpdateSelfHostedRunnerGroupForEnterpriseEndpoint): Self = StObject.set(x, "PATCH /enterprises/:enterprise/actions/runner-groups/:runner_group_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashgistsSlashColongist_id`(value: ParametersGistsUpdateEndpoint): Self = StObject.set(x, "PATCH /gists/:gist_id", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashgistsSlashColongist_id`(value: ParametersGistsUpdateEndpoint): Self = StObject.set(x, "PATCH /gists/:gist_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashgistsSlashColongist_idSlashcommentsSlashColoncomment_id`(value: ParametersGistsUpdateCommentEndpoint): Self = StObject.set(x, "PATCH /gists/:gist_id/comments/:comment_id", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashgistsSlashColongist_idSlashcommentsSlashColoncomment_id`(value: ParametersGistsUpdateCommentEndpoint): Self = StObject.set(x, "PATCH /gists/:gist_id/comments/:comment_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashnotificationsSlashthreadsSlashColonthread_id`(value: ParametersActivityMarkThreadAsReadEndpoint): Self = StObject.set(x, "PATCH /notifications/threads/:thread_id", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashnotificationsSlashthreadsSlashColonthread_id`(value: ParametersActivityMarkThreadAsReadEndpoint): Self = StObject.set(x, "PATCH /notifications/threads/:thread_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashorgsSlashColonorg`(value: ParametersOrgsUpdateEndpoint): Self = StObject.set(x, "PATCH /orgs/:org", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashorgsSlashColonorg`(value: ParametersOrgsUpdateEndpoint): Self = StObject.set(x, "PATCH /orgs/:org", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_id`(value: ParametersActionsUpdateSelfHostedRunnerGroupForOrgEndpoint): Self = StObject.set(x, "PATCH /orgs/:org/actions/runner-groups/:runner_group_id", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_id`(value: ParametersActionsUpdateSelfHostedRunnerGroupForOrgEndpoint): Self = StObject.set(x, "PATCH /orgs/:org/actions/runner-groups/:runner_group_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashorgsSlashColonorgSlashhooksSlashColonhook_id`(value: ParametersOrgsUpdateWebhookEndpoint): Self = StObject.set(x, "PATCH /orgs/:org/hooks/:hook_id", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashorgsSlashColonorgSlashhooksSlashColonhook_id`(value: ParametersOrgsUpdateWebhookEndpoint): Self = StObject.set(x, "PATCH /orgs/:org/hooks/:hook_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashorgsSlashColonorgSlashteamsSlashColonteam_slug`(value: ParametersTeamsUpdateInOrgEndpoint): Self = StObject.set(x, "PATCH /orgs/:org/teams/:team_slug", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashorgsSlashColonorgSlashteamsSlashColonteam_slug`(value: ParametersTeamsUpdateInOrgEndpoint): Self = StObject.set(x, "PATCH /orgs/:org/teams/:team_slug", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_number`(value: ParametersTeamsUpdateDiscussionInOrgEndpoint): Self = StObject.set(x, "PATCH /orgs/:org/teams/:team_slug/discussions/:discussion_number", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_number`(value: ParametersTeamsUpdateDiscussionInOrgEndpoint): Self = StObject.set(x, "PATCH /orgs/:org/teams/:team_slug/discussions/:discussion_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_number`(value: ParametersTeamsUpdateDiscussionCommentInOrgEndpoint): Self = StObject.set(x, "PATCH /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments/:comment_number", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_number`(value: ParametersTeamsUpdateDiscussionCommentInOrgEndpoint): Self = StObject.set(x, "PATCH /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments/:comment_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteam-syncSlashgroup-mappings`(value: ParametersTeamsCreateOrUpdateIdPGroupConnectionsInOrgEndpoint): Self = StObject.set(x, "PATCH /orgs/:org/teams/:team_slug/team-sync/group-mappings", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteam-syncSlashgroup-mappings`(value: ParametersTeamsCreateOrUpdateIdPGroupConnectionsInOrgEndpoint): Self = StObject.set(x, "PATCH /orgs/:org/teams/:team_slug/team-sync/group-mappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashprojectsSlashColonproject_id`(value: ParametersProjectsUpdateEndpoint): Self = StObject.set(x, "PATCH /projects/:project_id", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashprojectsSlashColonproject_id`(value: ParametersProjectsUpdateEndpoint): Self = StObject.set(x, "PATCH /projects/:project_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashprojectsSlashcolumnsSlashColoncolumn_id`(value: ParametersProjectsUpdateColumnEndpoint): Self = StObject.set(x, "PATCH /projects/columns/:column_id", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashprojectsSlashcolumnsSlashColoncolumn_id`(value: ParametersProjectsUpdateColumnEndpoint): Self = StObject.set(x, "PATCH /projects/columns/:column_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashprojectsSlashcolumnsSlashcardsSlashColoncard_id`(value: ParametersProjectsUpdateCardEndpoint): Self = StObject.set(x, "PATCH /projects/columns/cards/:card_id", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashprojectsSlashcolumnsSlashcardsSlashColoncard_id`(value: ParametersProjectsUpdateCardEndpoint): Self = StObject.set(x, "PATCH /projects/columns/cards/:card_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashreposSlashColonownerSlashColonrepo`(value: ParametersReposUpdateEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashreposSlashColonownerSlashColonrepo`(value: ParametersReposUpdateEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrequired_pull_request_reviews`(value: ParametersReposUpdatePullRequestReviewProtectionEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/branches/:branch/protection/required_pull_request_reviews", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrequired_pull_request_reviews`(value: ParametersReposUpdatePullRequestReviewProtectionEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/branches/:branch/protection/required_pull_request_reviews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrequired_status_checks`(value: ParametersReposUpdateStatusCheckPotectionEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/branches/:branch/protection/required_status_checks", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrequired_status_checks`(value: ParametersReposUpdateStatusCheckPotectionEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/branches/:branch/protection/required_status_checks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashcheck-runsSlashColoncheck_run_id`(value: ParametersChecksUpdateEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/check-runs/:check_run_id", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashcheck-runsSlashColoncheck_run_id`(value: ParametersChecksUpdateEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/check-runs/:check_run_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashcheck-suitesSlashpreferences`(value: ParametersChecksSetSuitesPreferencesEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/check-suites/preferences", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashcheck-suitesSlashpreferences`(value: ParametersChecksSetSuitesPreferencesEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/check-suites/preferences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashalertsSlashColonalert_number`(value: ParametersCodeScanningUpdateAlertEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/code-scanning/alerts/:alert_number", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashalertsSlashColonalert_number`(value: ParametersCodeScanningUpdateAlertEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/code-scanning/alerts/:alert_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashcommentsSlashColoncomment_id`(value: ParametersReposUpdateCommitCommentEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/comments/:comment_id", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashcommentsSlashColoncomment_id`(value: ParametersReposUpdateCommitCommentEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/comments/:comment_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashgitSlashrefsSlashColonref`(value: ParametersGitUpdateRefEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/git/refs/:ref", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashgitSlashrefsSlashColonref`(value: ParametersGitUpdateRefEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/git/refs/:ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashhooksSlashColonhook_id`(value: ParametersReposUpdateWebhookEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/hooks/:hook_id", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashhooksSlashColonhook_id`(value: ParametersReposUpdateWebhookEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/hooks/:hook_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashimport`(value: ParametersMigrationsUpdateImportEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/import", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashimport`(value: ParametersMigrationsUpdateImportEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/import", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashimportSlashauthorsSlashColonauthor_id`(value: ParametersMigrationsMapCommitAuthorEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/import/authors/:author_id", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashimportSlashauthorsSlashColonauthor_id`(value: ParametersMigrationsMapCommitAuthorEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/import/authors/:author_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashimportSlashlfs`(value: ParametersMigrationsSetLfsPreferenceEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/import/lfs", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashimportSlashlfs`(value: ParametersMigrationsSetLfsPreferenceEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/import/lfs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashinvitationsSlashColoninvitation_id`(value: ParametersReposUpdateInvitationEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/invitations/:invitation_id", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashinvitationsSlashColoninvitation_id`(value: ParametersReposUpdateInvitationEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/invitations/:invitation_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_number`(value: ParametersIssuesUpdateEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/issues/:issue_number", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_number`(value: ParametersIssuesUpdateEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/issues/:issue_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcommentsSlashColoncomment_id`(value: ParametersIssuesUpdateCommentEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/issues/comments/:comment_id", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcommentsSlashColoncomment_id`(value: ParametersIssuesUpdateCommentEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/issues/comments/:comment_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashlabelsSlashColonname`(value: ParametersIssuesUpdateLabelEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/labels/:name", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashlabelsSlashColonname`(value: ParametersIssuesUpdateLabelEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/labels/:name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashmilestonesSlashColonmilestone_number`(value: ParametersIssuesUpdateMilestoneEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/milestones/:milestone_number", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashmilestonesSlashColonmilestone_number`(value: ParametersIssuesUpdateMilestoneEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/milestones/:milestone_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_number`(value: ParametersPullsUpdateEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/pulls/:pull_number", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_number`(value: ParametersPullsUpdateEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/pulls/:pull_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcommentsSlashColoncomment_id`(value: ParametersPullsUpdateReviewCommentEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/pulls/comments/:comment_id", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcommentsSlashColoncomment_id`(value: ParametersPullsUpdateReviewCommentEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/pulls/comments/:comment_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashColonrelease_id`(value: ParametersReposUpdateReleaseEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/releases/:release_id", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashColonrelease_id`(value: ParametersReposUpdateReleaseEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/releases/:release_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashassetsSlashColonasset_id`(value: ParametersReposUpdateReleaseAssetEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/releases/assets/:asset_id", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashassetsSlashColonasset_id`(value: ParametersReposUpdateReleaseAssetEndpoint): Self = StObject.set(x, "PATCH /repos/:owner/:repo/releases/assets/:asset_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroupsSlashColonscim_group_id`(value: ParametersEnterpriseAdminUpdateAttributeForEnterpriseGroupEndpoint): Self = StObject.set(x, "PATCH /scim/v2/enterprises/:enterprise/Groups/:scim_group_id", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroupsSlashColonscim_group_id`(value: ParametersEnterpriseAdminUpdateAttributeForEnterpriseGroupEndpoint): Self = StObject.set(x, "PATCH /scim/v2/enterprises/:enterprise/Groups/:scim_group_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsersSlashColonscim_user_id`(value: ParametersEnterpriseAdminUpdateAttributeForEnterpriseUserEndpoint): Self = StObject.set(x, "PATCH /scim/v2/enterprises/:enterprise/Users/:scim_user_id", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsersSlashColonscim_user_id`(value: ParametersEnterpriseAdminUpdateAttributeForEnterpriseUserEndpoint): Self = StObject.set(x, "PATCH /scim/v2/enterprises/:enterprise/Users/:scim_user_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsersSlashColonscim_user_id`(value: ParametersScimUpdateAttributeForUserEndpoint): Self = StObject.set(x, "PATCH /scim/v2/organizations/:org/Users/:scim_user_id", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsersSlashColonscim_user_id`(value: ParametersScimUpdateAttributeForUserEndpoint): Self = StObject.set(x, "PATCH /scim/v2/organizations/:org/Users/:scim_user_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashteamsSlashColonteam_id`(value: ParametersTeamsUpdateLegacyEndpoint): Self = StObject.set(x, "PATCH /teams/:team_id", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashteamsSlashColonteam_id`(value: ParametersTeamsUpdateLegacyEndpoint): Self = StObject.set(x, "PATCH /teams/:team_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_number`(value: ParametersTeamsUpdateDiscussionLegacyEndpoint): Self = StObject.set(x, "PATCH /teams/:team_id/discussions/:discussion_number", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_number`(value: ParametersTeamsUpdateDiscussionLegacyEndpoint): Self = StObject.set(x, "PATCH /teams/:team_id/discussions/:discussion_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_number`(value: ParametersTeamsUpdateDiscussionCommentLegacyEndpoint): Self = StObject.set(x, "PATCH /teams/:team_id/discussions/:discussion_number/comments/:comment_number", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_number`(value: ParametersTeamsUpdateDiscussionCommentLegacyEndpoint): Self = StObject.set(x, "PATCH /teams/:team_id/discussions/:discussion_number/comments/:comment_number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashteamsSlashColonteam_idSlashteam-syncSlashgroup-mappings`(value: ParametersTeamsCreateOrUpdateIdPGroupConnectionsLegacyEndpoint): Self = StObject.set(x, "PATCH /teams/:team_id/team-sync/group-mappings", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashteamsSlashColonteam_idSlashteam-syncSlashgroup-mappings`(value: ParametersTeamsCreateOrUpdateIdPGroupConnectionsLegacyEndpoint): Self = StObject.set(x, "PATCH /teams/:team_id/team-sync/group-mappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH Slashuser`(value: ParametersUsersUpdateAuthenticatedEndpoint): Self = StObject.set(x, "PATCH /user", value.asInstanceOf[js.Any])
+    inline def `setPATCH Slashuser`(value: ParametersUsersUpdateAuthenticatedEndpoint): Self = StObject.set(x, "PATCH /user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashuserSlashemailSlashvisibility`(value: ParametersUsersSetPrimaryEmailVisibilityForAuthenticatedEndpoint): Self = StObject.set(x, "PATCH /user/email/visibility", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashuserSlashemailSlashvisibility`(value: ParametersUsersSetPrimaryEmailVisibilityForAuthenticatedEndpoint): Self = StObject.set(x, "PATCH /user/email/visibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashuserSlashmembershipsSlashorgsSlashColonorg`(value: ParametersOrgsUpdateMembershipForAuthenticatedUserEndpoint): Self = StObject.set(x, "PATCH /user/memberships/orgs/:org", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashuserSlashmembershipsSlashorgsSlashColonorg`(value: ParametersOrgsUpdateMembershipForAuthenticatedUserEndpoint): Self = StObject.set(x, "PATCH /user/memberships/orgs/:org", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPATCH SlashuserSlashrepository_invitationsSlashColoninvitation_id`(value: ParametersReposAcceptInvitationEndpoint): Self = StObject.set(x, "PATCH /user/repository_invitations/:invitation_id", value.asInstanceOf[js.Any])
+    inline def `setPATCH SlashuserSlashrepository_invitationsSlashColoninvitation_id`(value: ParametersReposAcceptInvitationEndpoint): Self = StObject.set(x, "PATCH /user/repository_invitations/:invitation_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST Slashapp-manifestsSlashColoncodeSlashconversions`(value: ParametersAppsCreateFromManifestEndpoint): Self = StObject.set(x, "POST /app-manifests/:code/conversions", value.asInstanceOf[js.Any])
+    inline def `setPOST Slashapp-manifestsSlashColoncodeSlashconversions`(value: ParametersAppsCreateFromManifestEndpoint): Self = StObject.set(x, "POST /app-manifests/:code/conversions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashappSlashinstallationsSlashColoninstallation_idSlashaccess_tokens`(value: ParametersAppsCreateInstallationAccessTokenEndpoint): Self = StObject.set(x, "POST /app/installations/:installation_id/access_tokens", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashappSlashinstallationsSlashColoninstallation_idSlashaccess_tokens`(value: ParametersAppsCreateInstallationAccessTokenEndpoint): Self = StObject.set(x, "POST /app/installations/:installation_id/access_tokens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashapplicationsSlashColonclient_idSlashtoken`(value: ParametersAppsCheckTokenEndpoint): Self = StObject.set(x, "POST /applications/:client_id/token", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashapplicationsSlashColonclient_idSlashtoken`(value: ParametersAppsCheckTokenEndpoint): Self = StObject.set(x, "POST /applications/:client_id/token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashapplicationsSlashColonclient_idSlashtokensSlashColonaccess_token`(value: ParametersAppsResetAuthorizationEndpoint): Self = StObject.set(x, "POST /applications/:client_id/tokens/:access_token", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashapplicationsSlashColonclient_idSlashtokensSlashColonaccess_token`(value: ParametersAppsResetAuthorizationEndpoint): Self = StObject.set(x, "POST /applications/:client_id/tokens/:access_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST Slashauthorizations`(value: ParametersOauthAuthorizationsCreateAuthorizationEndpoint): Self = StObject.set(x, "POST /authorizations", value.asInstanceOf[js.Any])
+    inline def `setPOST Slashauthorizations`(value: ParametersOauthAuthorizationsCreateAuthorizationEndpoint): Self = StObject.set(x, "POST /authorizations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST Slashcontent_referencesSlashColoncontent_reference_idSlashattachments`(value: ParametersAppsCreateContentAttachmentEndpoint): Self = StObject.set(x, "POST /content_references/:content_reference_id/attachments", value.asInstanceOf[js.Any])
+    inline def `setPOST Slashcontent_referencesSlashColoncontent_reference_idSlashattachments`(value: ParametersAppsCreateContentAttachmentEndpoint): Self = StObject.set(x, "POST /content_references/:content_reference_id/attachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groups`(value: ParametersEnterpriseAdminCreateSelfHostedRunnerGroupForEnterpriseEndpoint): Self = StObject.set(x, "POST /enterprises/:enterprise/actions/runner-groups", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groups`(value: ParametersEnterpriseAdminCreateSelfHostedRunnerGroupForEnterpriseEndpoint): Self = StObject.set(x, "POST /enterprises/:enterprise/actions/runner-groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashregistration-token`(value: ParametersEnterpriseAdminCreateRegistrationTokenForEnterpriseEndpoint): Self = StObject.set(x, "POST /enterprises/:enterprise/actions/runners/registration-token", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashregistration-token`(value: ParametersEnterpriseAdminCreateRegistrationTokenForEnterpriseEndpoint): Self = StObject.set(x, "POST /enterprises/:enterprise/actions/runners/registration-token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashremove-token`(value: ParametersEnterpriseAdminCreateRemoveTokenForEnterpriseEndpoint): Self = StObject.set(x, "POST /enterprises/:enterprise/actions/runners/remove-token", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashenterprisesSlashColonenterpriseSlashactionsSlashrunnersSlashremove-token`(value: ParametersEnterpriseAdminCreateRemoveTokenForEnterpriseEndpoint): Self = StObject.set(x, "POST /enterprises/:enterprise/actions/runners/remove-token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST Slashgists`(value: ParametersGistsCreateEndpoint): Self = StObject.set(x, "POST /gists", value.asInstanceOf[js.Any])
+    inline def `setPOST Slashgists`(value: ParametersGistsCreateEndpoint): Self = StObject.set(x, "POST /gists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashgistsSlashColongist_idSlashcomments`(value: ParametersGistsCreateCommentEndpoint): Self = StObject.set(x, "POST /gists/:gist_id/comments", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashgistsSlashColongist_idSlashcomments`(value: ParametersGistsCreateCommentEndpoint): Self = StObject.set(x, "POST /gists/:gist_id/comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashgistsSlashColongist_idSlashforks`(value: ParametersGistsForkEndpoint): Self = StObject.set(x, "POST /gists/:gist_id/forks", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashgistsSlashColongist_idSlashforks`(value: ParametersGistsForkEndpoint): Self = StObject.set(x, "POST /gists/:gist_id/forks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST Slashmarkdown`(value: ParametersMarkdownRenderEndpoint): Self = StObject.set(x, "POST /markdown", value.asInstanceOf[js.Any])
+    inline def `setPOST Slashmarkdown`(value: ParametersMarkdownRenderEndpoint): Self = StObject.set(x, "POST /markdown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashmarkdownSlashraw`(value: ParametersMarkdownRenderRawEndpoint): Self = StObject.set(x, "POST /markdown/raw", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashmarkdownSlashraw`(value: ParametersMarkdownRenderRawEndpoint): Self = StObject.set(x, "POST /markdown/raw", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashorgsSlashColonorgSlashactionsSlashrunner-groups`(value: ParametersActionsCreateSelfHostedRunnerGroupForOrgEndpoint): Self = StObject.set(x, "POST /orgs/:org/actions/runner-groups", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashorgsSlashColonorgSlashactionsSlashrunner-groups`(value: ParametersActionsCreateSelfHostedRunnerGroupForOrgEndpoint): Self = StObject.set(x, "POST /orgs/:org/actions/runner-groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashorgsSlashColonorgSlashactionsSlashrunnersSlashregistration-token`(value: ParametersActionsCreateRegistrationTokenForOrgEndpoint): Self = StObject.set(x, "POST /orgs/:org/actions/runners/registration-token", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashorgsSlashColonorgSlashactionsSlashrunnersSlashregistration-token`(value: ParametersActionsCreateRegistrationTokenForOrgEndpoint): Self = StObject.set(x, "POST /orgs/:org/actions/runners/registration-token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashorgsSlashColonorgSlashactionsSlashrunnersSlashremove-token`(value: ParametersActionsCreateRemoveTokenForOrgEndpoint): Self = StObject.set(x, "POST /orgs/:org/actions/runners/remove-token", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashorgsSlashColonorgSlashactionsSlashrunnersSlashremove-token`(value: ParametersActionsCreateRemoveTokenForOrgEndpoint): Self = StObject.set(x, "POST /orgs/:org/actions/runners/remove-token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashorgsSlashColonorgSlashhooks`(value: ParametersOrgsCreateWebhookEndpoint): Self = StObject.set(x, "POST /orgs/:org/hooks", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashorgsSlashColonorgSlashhooks`(value: ParametersOrgsCreateWebhookEndpoint): Self = StObject.set(x, "POST /orgs/:org/hooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashorgsSlashColonorgSlashhooksSlashColonhook_idSlashpings`(value: ParametersOrgsPingWebhookEndpoint): Self = StObject.set(x, "POST /orgs/:org/hooks/:hook_id/pings", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashorgsSlashColonorgSlashhooksSlashColonhook_idSlashpings`(value: ParametersOrgsPingWebhookEndpoint): Self = StObject.set(x, "POST /orgs/:org/hooks/:hook_id/pings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashorgsSlashColonorgSlashinvitations`(value: ParametersOrgsCreateInvitationEndpoint): Self = StObject.set(x, "POST /orgs/:org/invitations", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashorgsSlashColonorgSlashinvitations`(value: ParametersOrgsCreateInvitationEndpoint): Self = StObject.set(x, "POST /orgs/:org/invitations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashorgsSlashColonorgSlashmigrations`(value: ParametersMigrationsStartForOrgEndpoint): Self = StObject.set(x, "POST /orgs/:org/migrations", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashorgsSlashColonorgSlashmigrations`(value: ParametersMigrationsStartForOrgEndpoint): Self = StObject.set(x, "POST /orgs/:org/migrations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashorgsSlashColonorgSlashprojects`(value: ParametersProjectsCreateForOrgEndpoint): Self = StObject.set(x, "POST /orgs/:org/projects", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashorgsSlashColonorgSlashprojects`(value: ParametersProjectsCreateForOrgEndpoint): Self = StObject.set(x, "POST /orgs/:org/projects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashorgsSlashColonorgSlashrepos`(value: ParametersReposCreateInOrgEndpoint): Self = StObject.set(x, "POST /orgs/:org/repos", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashorgsSlashColonorgSlashrepos`(value: ParametersReposCreateInOrgEndpoint): Self = StObject.set(x, "POST /orgs/:org/repos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashorgsSlashColonorgSlashteams`(value: ParametersTeamsCreateEndpoint): Self = StObject.set(x, "POST /orgs/:org/teams", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashorgsSlashColonorgSlashteams`(value: ParametersTeamsCreateEndpoint): Self = StObject.set(x, "POST /orgs/:org/teams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussions`(value: ParametersTeamsCreateDiscussionInOrgEndpoint): Self = StObject.set(x, "POST /orgs/:org/teams/:team_slug/discussions", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussions`(value: ParametersTeamsCreateDiscussionInOrgEndpoint): Self = StObject.set(x, "POST /orgs/:org/teams/:team_slug/discussions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcomments`(value: ParametersTeamsCreateDiscussionCommentInOrgEndpoint): Self = StObject.set(x, "POST /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcomments`(value: ParametersTeamsCreateDiscussionCommentInOrgEndpoint): Self = StObject.set(x, "POST /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`(value: ParametersReactionsCreateForTeamDiscussionCommentInOrgEndpoint): Self = StObject.set(x, "POST /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments/:comment_number/reactions", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`(value: ParametersReactionsCreateForTeamDiscussionCommentInOrgEndpoint): Self = StObject.set(x, "POST /orgs/:org/teams/:team_slug/discussions/:discussion_number/comments/:comment_number/reactions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashreactions`(value: ParametersReactionsCreateForTeamDiscussionInOrgEndpoint): Self = StObject.set(x, "POST /orgs/:org/teams/:team_slug/discussions/:discussion_number/reactions", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashdiscussionsSlashColondiscussion_numberSlashreactions`(value: ParametersReactionsCreateForTeamDiscussionInOrgEndpoint): Self = StObject.set(x, "POST /orgs/:org/teams/:team_slug/discussions/:discussion_number/reactions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashprojectsSlashColonproject_idSlashcolumns`(value: ParametersProjectsCreateColumnEndpoint): Self = StObject.set(x, "POST /projects/:project_id/columns", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashprojectsSlashColonproject_idSlashcolumns`(value: ParametersProjectsCreateColumnEndpoint): Self = StObject.set(x, "POST /projects/:project_id/columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashprojectsSlashcolumnsSlashColoncolumn_idSlashcards`(value: ParametersProjectsCreateCardEndpoint): Self = StObject.set(x, "POST /projects/columns/:column_id/cards", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashprojectsSlashcolumnsSlashColoncolumn_idSlashcards`(value: ParametersProjectsCreateCardEndpoint): Self = StObject.set(x, "POST /projects/columns/:column_id/cards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashprojectsSlashcolumnsSlashColoncolumn_idSlashmoves`(value: ParametersProjectsMoveColumnEndpoint): Self = StObject.set(x, "POST /projects/columns/:column_id/moves", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashprojectsSlashcolumnsSlashColoncolumn_idSlashmoves`(value: ParametersProjectsMoveColumnEndpoint): Self = StObject.set(x, "POST /projects/columns/:column_id/moves", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashprojectsSlashcolumnsSlashcardsSlashColoncard_idSlashmoves`(value: ParametersProjectsMoveCardEndpoint): Self = StObject.set(x, "POST /projects/columns/cards/:card_id/moves", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashprojectsSlashcolumnsSlashcardsSlashColoncard_idSlashmoves`(value: ParametersProjectsMoveCardEndpoint): Self = StObject.set(x, "POST /projects/columns/cards/:card_id/moves", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunnersSlashregistration-token`(value: ParametersActionsCreateRegistrationTokenForRepoEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/actions/runners/registration-token", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunnersSlashregistration-token`(value: ParametersActionsCreateRegistrationTokenForRepoEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/actions/runners/registration-token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunnersSlashremove-token`(value: ParametersActionsCreateRemoveTokenForRepoEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/actions/runners/remove-token", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunnersSlashremove-token`(value: ParametersActionsCreateRemoveTokenForRepoEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/actions/runners/remove-token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashcancel`(value: ParametersActionsCancelWorkflowRunEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/actions/runs/:run_id/cancel", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashcancel`(value: ParametersActionsCancelWorkflowRunEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/actions/runs/:run_id/cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashrerun`(value: ParametersActionsReRunWorkflowEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/actions/runs/:run_id/rerun", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashactionsSlashrunsSlashColonrun_idSlashrerun`(value: ParametersActionsReRunWorkflowEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/actions/runs/:run_id/rerun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_idSlashdispatches`(value: ParametersActionsCreateWorkflowDispatchEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/actions/workflows/:workflow_id/dispatches", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashactionsSlashworkflowsSlashColonworkflow_idSlashdispatches`(value: ParametersActionsCreateWorkflowDispatchEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/actions/workflows/:workflow_id/dispatches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashenforce_admins`(value: ParametersReposSetAdminBranchProtectionEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/branches/:branch/protection/enforce_admins", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashenforce_admins`(value: ParametersReposSetAdminBranchProtectionEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/branches/:branch/protection/enforce_admins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrequired_signatures`(value: ParametersReposCreateCommitSignatureProtectionEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/branches/:branch/protection/required_signatures", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrequired_signatures`(value: ParametersReposCreateCommitSignatureProtectionEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/branches/:branch/protection/required_signatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrequired_status_checksSlashcontexts`(value: ParametersReposAddStatusCheckContextsEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrequired_status_checksSlashcontexts`(value: ParametersReposAddStatusCheckContextsEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrestrictionsSlashapps`(value: ParametersReposAddAppAccessRestrictionsEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/branches/:branch/protection/restrictions/apps", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrestrictionsSlashapps`(value: ParametersReposAddAppAccessRestrictionsEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/branches/:branch/protection/restrictions/apps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrestrictionsSlashteams`(value: ParametersReposAddTeamAccessRestrictionsEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/branches/:branch/protection/restrictions/teams", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrestrictionsSlashteams`(value: ParametersReposAddTeamAccessRestrictionsEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/branches/:branch/protection/restrictions/teams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrestrictionsSlashusers`(value: ParametersReposAddUserAccessRestrictionsEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/branches/:branch/protection/restrictions/users", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrestrictionsSlashusers`(value: ParametersReposAddUserAccessRestrictionsEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/branches/:branch/protection/restrictions/users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashcheck-runs`(value: ParametersChecksCreateEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/check-runs", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashcheck-runs`(value: ParametersChecksCreateEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/check-runs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashcheck-suites`(value: ParametersChecksCreateSuiteEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/check-suites", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashcheck-suites`(value: ParametersChecksCreateSuiteEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/check-suites", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashcheck-suitesSlashColoncheck_suite_idSlashrerequest`(value: ParametersChecksRerequestSuiteEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/check-suites/:check_suite_id/rerequest", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashcheck-suitesSlashColoncheck_suite_idSlashrerequest`(value: ParametersChecksRerequestSuiteEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/check-suites/:check_suite_id/rerequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashsarifs`(value: ParametersCodeScanningUploadSarifEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/code-scanning/sarifs", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashcode-scanningSlashsarifs`(value: ParametersCodeScanningUploadSarifEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/code-scanning/sarifs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashcommentsSlashColoncomment_idSlashreactions`(value: ParametersReactionsCreateForCommitCommentEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/comments/:comment_id/reactions", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashcommentsSlashColoncomment_idSlashreactions`(value: ParametersReactionsCreateForCommitCommentEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/comments/:comment_id/reactions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashcomments`(value: ParametersReposCreateCommitCommentEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/commits/:commit_sha/comments", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashcommitsSlashColoncommit_shaSlashcomments`(value: ParametersReposCreateCommitCommentEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/commits/:commit_sha/comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashdeployments`(value: ParametersReposCreateDeploymentEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/deployments", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashdeployments`(value: ParametersReposCreateDeploymentEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/deployments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatuses`(value: ParametersReposCreateDeploymentStatusEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/deployments/:deployment_id/statuses", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashdeploymentsSlashColondeployment_idSlashstatuses`(value: ParametersReposCreateDeploymentStatusEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/deployments/:deployment_id/statuses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashdispatches`(value: ParametersReposCreateDispatchEventEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/dispatches", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashdispatches`(value: ParametersReposCreateDispatchEventEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/dispatches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashforks`(value: ParametersReposCreateForkEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/forks", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashforks`(value: ParametersReposCreateForkEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/forks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashgitSlashblobs`(value: ParametersGitCreateBlobEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/git/blobs", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashgitSlashblobs`(value: ParametersGitCreateBlobEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/git/blobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashgitSlashcommits`(value: ParametersGitCreateCommitEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/git/commits", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashgitSlashcommits`(value: ParametersGitCreateCommitEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/git/commits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashgitSlashrefs`(value: ParametersGitCreateRefEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/git/refs", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashgitSlashrefs`(value: ParametersGitCreateRefEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/git/refs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashgitSlashtags`(value: ParametersGitCreateTagEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/git/tags", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashgitSlashtags`(value: ParametersGitCreateTagEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/git/tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashgitSlashtrees`(value: ParametersGitCreateTreeEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/git/trees", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashgitSlashtrees`(value: ParametersGitCreateTreeEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/git/trees", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashhooks`(value: ParametersReposCreateWebhookEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/hooks", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashhooks`(value: ParametersReposCreateWebhookEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/hooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashhooksSlashColonhook_idSlashpings`(value: ParametersReposPingWebhookEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/hooks/:hook_id/pings", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashhooksSlashColonhook_idSlashpings`(value: ParametersReposPingWebhookEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/hooks/:hook_id/pings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashhooksSlashColonhook_idSlashtests`(value: ParametersReposTestPushWebhookEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/hooks/:hook_id/tests", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashhooksSlashColonhook_idSlashtests`(value: ParametersReposTestPushWebhookEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/hooks/:hook_id/tests", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashissues`(value: ParametersIssuesCreateEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/issues", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashissues`(value: ParametersIssuesCreateEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/issues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashassignees`(value: ParametersIssuesAddAssigneesEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/issues/:issue_number/assignees", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashassignees`(value: ParametersIssuesAddAssigneesEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/issues/:issue_number/assignees", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashcomments`(value: ParametersIssuesCreateCommentEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/issues/:issue_number/comments", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashcomments`(value: ParametersIssuesCreateCommentEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/issues/:issue_number/comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashlabels`(value: ParametersIssuesAddLabelsEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/issues/:issue_number/labels", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashlabels`(value: ParametersIssuesAddLabelsEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/issues/:issue_number/labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashreactions`(value: ParametersReactionsCreateForIssueEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/issues/:issue_number/reactions", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashreactions`(value: ParametersReactionsCreateForIssueEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/issues/:issue_number/reactions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcommentsSlashColoncomment_idSlashreactions`(value: ParametersReactionsCreateForIssueCommentEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/issues/comments/:comment_id/reactions", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashissuesSlashcommentsSlashColoncomment_idSlashreactions`(value: ParametersReactionsCreateForIssueCommentEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/issues/comments/:comment_id/reactions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashkeys`(value: ParametersReposCreateDeployKeyEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/keys", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashkeys`(value: ParametersReposCreateDeployKeyEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashlabels`(value: ParametersIssuesCreateLabelEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/labels", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashlabels`(value: ParametersIssuesCreateLabelEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashmerges`(value: ParametersReposMergeEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/merges", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashmerges`(value: ParametersReposMergeEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/merges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashmilestones`(value: ParametersIssuesCreateMilestoneEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/milestones", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashmilestones`(value: ParametersIssuesCreateMilestoneEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/milestones", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashpages`(value: ParametersReposCreatePagesSiteEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/pages", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashpages`(value: ParametersReposCreatePagesSiteEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashpagesSlashbuilds`(value: ParametersReposRequestPagesBuildEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/pages/builds", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashpagesSlashbuilds`(value: ParametersReposRequestPagesBuildEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/pages/builds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashprojects`(value: ParametersProjectsCreateForRepoEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/projects", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashprojects`(value: ParametersProjectsCreateForRepoEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/projects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashpulls`(value: ParametersPullsCreateEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/pulls", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashpulls`(value: ParametersPullsCreateEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/pulls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcomments`(value: ParametersPullsCreateReviewCommentEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/pulls/:pull_number/comments", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcomments`(value: ParametersPullsCreateReviewCommentEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/pulls/:pull_number/comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcommentsSlashColoncomment_idSlashreplies`(value: ParametersPullsCreateReplyForReviewCommentEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/pulls/:pull_number/comments/:comment_id/replies", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashcommentsSlashColoncomment_idSlashreplies`(value: ParametersPullsCreateReplyForReviewCommentEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/pulls/:pull_number/comments/:comment_id/replies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashrequested_reviewers`(value: ParametersPullsRequestReviewersEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/pulls/:pull_number/requested_reviewers", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashrequested_reviewers`(value: ParametersPullsRequestReviewersEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/pulls/:pull_number/requested_reviewers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviews`(value: ParametersPullsCreateReviewEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/pulls/:pull_number/reviews", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviews`(value: ParametersPullsCreateReviewEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/pulls/:pull_number/reviews", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviewsSlashColonreview_idSlashevents`(value: ParametersPullsSubmitReviewEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/events", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviewsSlashColonreview_idSlashevents`(value: ParametersPullsSubmitReviewEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcommentsSlashColoncomment_idSlashreactions`(value: ParametersReactionsCreateForPullRequestReviewCommentEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/pulls/comments/:comment_id/reactions", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashpullsSlashcommentsSlashColoncomment_idSlashreactions`(value: ParametersReactionsCreateForPullRequestReviewCommentEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/pulls/comments/:comment_id/reactions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashreleases`(value: ParametersReposCreateReleaseEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/releases", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashreleases`(value: ParametersReposCreateReleaseEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/releases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashColonrelease_idSlashassetsLeftcurlybracketQuestionmarknameCommalabelRightcurlybracket`(value: ParametersReposUploadReleaseAssetEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/releases/:release_id/assets{?name,label}", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashreleasesSlashColonrelease_idSlashassetsLeftcurlybracketQuestionmarknameCommalabelRightcurlybracket`(value: ParametersReposUploadReleaseAssetEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/releases/:release_id/assets{?name,label}", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashstatusesSlashColonsha`(value: ParametersReposCreateCommitStatusEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/statuses/:sha", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashstatusesSlashColonsha`(value: ParametersReposCreateCommitStatusEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/statuses/:sha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColonownerSlashColonrepoSlashtransfer`(value: ParametersReposTransferEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/transfer", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColonownerSlashColonrepoSlashtransfer`(value: ParametersReposTransferEndpoint): Self = StObject.set(x, "POST /repos/:owner/:repo/transfer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashreposSlashColontemplate_ownerSlashColontemplate_repoSlashgenerate`(value: ParametersReposCreateUsingTemplateEndpoint): Self = StObject.set(x, "POST /repos/:template_owner/:template_repo/generate", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashreposSlashColontemplate_ownerSlashColontemplate_repoSlashgenerate`(value: ParametersReposCreateUsingTemplateEndpoint): Self = StObject.set(x, "POST /repos/:template_owner/:template_repo/generate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups`(value: ParametersEnterpriseAdminProvisionAndInviteEnterpriseGroupEndpoint): Self = StObject.set(x, "POST /scim/v2/enterprises/:enterprise/Groups", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroups`(value: ParametersEnterpriseAdminProvisionAndInviteEnterpriseGroupEndpoint): Self = StObject.set(x, "POST /scim/v2/enterprises/:enterprise/Groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers`(value: ParametersEnterpriseAdminProvisionAndInviteEnterpriseUserEndpoint): Self = StObject.set(x, "POST /scim/v2/enterprises/:enterprise/Users", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsers`(value: ParametersEnterpriseAdminProvisionAndInviteEnterpriseUserEndpoint): Self = StObject.set(x, "POST /scim/v2/enterprises/:enterprise/Users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`(value: ParametersScimProvisionAndInviteUserEndpoint): Self = StObject.set(x, "POST /scim/v2/organizations/:org/Users", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsers`(value: ParametersScimProvisionAndInviteUserEndpoint): Self = StObject.set(x, "POST /scim/v2/organizations/:org/Users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashteamsSlashColonteam_idSlashdiscussions`(value: ParametersTeamsCreateDiscussionLegacyEndpoint): Self = StObject.set(x, "POST /teams/:team_id/discussions", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashteamsSlashColonteam_idSlashdiscussions`(value: ParametersTeamsCreateDiscussionLegacyEndpoint): Self = StObject.set(x, "POST /teams/:team_id/discussions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcomments`(value: ParametersTeamsCreateDiscussionCommentLegacyEndpoint): Self = StObject.set(x, "POST /teams/:team_id/discussions/:discussion_number/comments", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcomments`(value: ParametersTeamsCreateDiscussionCommentLegacyEndpoint): Self = StObject.set(x, "POST /teams/:team_id/discussions/:discussion_number/comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`(value: ParametersReactionsCreateForTeamDiscussionCommentLegacyEndpoint): Self = StObject.set(x, "POST /teams/:team_id/discussions/:discussion_number/comments/:comment_number/reactions", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashcommentsSlashColoncomment_numberSlashreactions`(value: ParametersReactionsCreateForTeamDiscussionCommentLegacyEndpoint): Self = StObject.set(x, "POST /teams/:team_id/discussions/:discussion_number/comments/:comment_number/reactions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashreactions`(value: ParametersReactionsCreateForTeamDiscussionLegacyEndpoint): Self = StObject.set(x, "POST /teams/:team_id/discussions/:discussion_number/reactions", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashteamsSlashColonteam_idSlashdiscussionsSlashColondiscussion_numberSlashreactions`(value: ParametersReactionsCreateForTeamDiscussionLegacyEndpoint): Self = StObject.set(x, "POST /teams/:team_id/discussions/:discussion_number/reactions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashuserSlashemails`(value: ParametersUsersAddEmailForAuthenticatedEndpoint): Self = StObject.set(x, "POST /user/emails", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashuserSlashemails`(value: ParametersUsersAddEmailForAuthenticatedEndpoint): Self = StObject.set(x, "POST /user/emails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashuserSlashgpg_keys`(value: ParametersUsersCreateGpgKeyForAuthenticatedEndpoint): Self = StObject.set(x, "POST /user/gpg_keys", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashuserSlashgpg_keys`(value: ParametersUsersCreateGpgKeyForAuthenticatedEndpoint): Self = StObject.set(x, "POST /user/gpg_keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashuserSlashkeys`(value: ParametersUsersCreatePublicSshKeyForAuthenticatedEndpoint): Self = StObject.set(x, "POST /user/keys", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashuserSlashkeys`(value: ParametersUsersCreatePublicSshKeyForAuthenticatedEndpoint): Self = StObject.set(x, "POST /user/keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashuserSlashmigrations`(value: ParametersMigrationsStartForAuthenticatedUserEndpoint): Self = StObject.set(x, "POST /user/migrations", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashuserSlashmigrations`(value: ParametersMigrationsStartForAuthenticatedUserEndpoint): Self = StObject.set(x, "POST /user/migrations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashuserSlashprojects`(value: ParametersProjectsCreateForAuthenticatedUserEndpoint): Self = StObject.set(x, "POST /user/projects", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashuserSlashprojects`(value: ParametersProjectsCreateForAuthenticatedUserEndpoint): Self = StObject.set(x, "POST /user/projects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPOST SlashuserSlashrepos`(value: ParametersReposCreateForAuthenticatedUserEndpoint): Self = StObject.set(x, "POST /user/repos", value.asInstanceOf[js.Any])
+    inline def `setPOST SlashuserSlashrepos`(value: ParametersReposCreateForAuthenticatedUserEndpoint): Self = StObject.set(x, "POST /user/repos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashappSlashinstallationsSlashColoninstallation_idSlashsuspended`(value: ParametersAppsSuspendInstallationEndpoint): Self = StObject.set(x, "PUT /app/installations/:installation_id/suspended", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashappSlashinstallationsSlashColoninstallation_idSlashsuspended`(value: ParametersAppsSuspendInstallationEndpoint): Self = StObject.set(x, "PUT /app/installations/:installation_id/suspended", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashauthorizationsSlashclientsSlashColonclient_id`(value: ParametersOauthAuthorizationsGetOrCreateAuthorizationForAppEndpoint): Self = StObject.set(x, "PUT /authorizations/clients/:client_id", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashauthorizationsSlashclientsSlashColonclient_id`(value: ParametersOauthAuthorizationsGetOrCreateAuthorizationForAppEndpoint): Self = StObject.set(x, "PUT /authorizations/clients/:client_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashauthorizationsSlashclientsSlashColonclient_idSlashColonfingerprint`(value: ParametersOauthAuthorizationsGetOrCreateAuthorizationForAppAndFingerprintEndpoint): Self = StObject.set(x, "PUT /authorizations/clients/:client_id/:fingerprint", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashauthorizationsSlashclientsSlashColonclient_idSlashColonfingerprint`(value: ParametersOauthAuthorizationsGetOrCreateAuthorizationForAppAndFingerprintEndpoint): Self = StObject.set(x, "PUT /authorizations/clients/:client_id/:fingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashorganizations`(value: ParametersEnterpriseAdminSetOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpoint): Self = StObject.set(x, "PUT /enterprises/:enterprise/actions/runner-groups/:runner_group_id/organizations", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashorganizations`(value: ParametersEnterpriseAdminSetOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpoint): Self = StObject.set(x, "PUT /enterprises/:enterprise/actions/runner-groups/:runner_group_id/organizations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashorganizationsSlashColonorg_id`(value: ParametersEnterpriseAdminAddOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpoint): Self = StObject.set(x, "PUT /enterprises/:enterprise/actions/runner-groups/:runner_group_id/organizations/:org_id", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashorganizationsSlashColonorg_id`(value: ParametersEnterpriseAdminAddOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpoint): Self = StObject.set(x, "PUT /enterprises/:enterprise/actions/runner-groups/:runner_group_id/organizations/:org_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`(value: ParametersEnterpriseAdminSetSelfHostedInGroupForEnterpriseEndpoint): Self = StObject.set(x, "PUT /enterprises/:enterprise/actions/runner-groups/:runner_group_id/runners", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`(value: ParametersEnterpriseAdminSetSelfHostedInGroupForEnterpriseEndpoint): Self = StObject.set(x, "PUT /enterprises/:enterprise/actions/runner-groups/:runner_group_id/runners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunnersSlashColonrunner_id`(value: ParametersEnterpriseAdminAddSelfHostedRunnerToRunnerGroupForEnterpriseEndpoint): Self = StObject.set(x, "PUT /enterprises/:enterprise/actions/runner-groups/:runner_group_id/runners/:runner_id", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashenterprisesSlashColonenterpriseSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunnersSlashColonrunner_id`(value: ParametersEnterpriseAdminAddSelfHostedRunnerToRunnerGroupForEnterpriseEndpoint): Self = StObject.set(x, "PUT /enterprises/:enterprise/actions/runner-groups/:runner_group_id/runners/:runner_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashgistsSlashColongist_idSlashstar`(value: ParametersGistsStarEndpoint): Self = StObject.set(x, "PUT /gists/:gist_id/star", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashgistsSlashColongist_idSlashstar`(value: ParametersGistsStarEndpoint): Self = StObject.set(x, "PUT /gists/:gist_id/star", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT Slashnotifications`(value: ParametersActivityMarkNotificationsAsReadEndpoint): Self = StObject.set(x, "PUT /notifications", value.asInstanceOf[js.Any])
+    inline def `setPUT Slashnotifications`(value: ParametersActivityMarkNotificationsAsReadEndpoint): Self = StObject.set(x, "PUT /notifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashnotificationsSlashthreadsSlashColonthread_idSlashsubscription`(value: ParametersActivitySetThreadSubscriptionEndpoint): Self = StObject.set(x, "PUT /notifications/threads/:thread_id/subscription", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashnotificationsSlashthreadsSlashColonthread_idSlashsubscription`(value: ParametersActivitySetThreadSubscriptionEndpoint): Self = StObject.set(x, "PUT /notifications/threads/:thread_id/subscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrepositories`(value: ParametersActionsSetRepoAccessToSelfHostedRunnerGroupInOrgEndpoint): Self = StObject.set(x, "PUT /orgs/:org/actions/runner-groups/:runner_group_id/repositories", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrepositories`(value: ParametersActionsSetRepoAccessToSelfHostedRunnerGroupInOrgEndpoint): Self = StObject.set(x, "PUT /orgs/:org/actions/runner-groups/:runner_group_id/repositories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrepositoriesSlashColonrepository_id`(value: ParametersActionsAddRepoAccessToSelfHostedRunnerGroupInOrgEndpoint): Self = StObject.set(x, "PUT /orgs/:org/actions/runner-groups/:runner_group_id/repositories/:repository_id", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrepositoriesSlashColonrepository_id`(value: ParametersActionsAddRepoAccessToSelfHostedRunnerGroupInOrgEndpoint): Self = StObject.set(x, "PUT /orgs/:org/actions/runner-groups/:runner_group_id/repositories/:repository_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`(value: ParametersActionsSetSelfHostedRunnersInGroupForOrgEndpoint): Self = StObject.set(x, "PUT /orgs/:org/actions/runner-groups/:runner_group_id/runners", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunners`(value: ParametersActionsSetSelfHostedRunnersInGroupForOrgEndpoint): Self = StObject.set(x, "PUT /orgs/:org/actions/runner-groups/:runner_group_id/runners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunnersSlashColonrunner_id`(value: ParametersActionsAddSelfHostedRunnerToGroupForOrgEndpoint): Self = StObject.set(x, "PUT /orgs/:org/actions/runner-groups/:runner_group_id/runners/:runner_id", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashorgsSlashColonorgSlashactionsSlashrunner-groupsSlashColonrunner_group_idSlashrunnersSlashColonrunner_id`(value: ParametersActionsAddSelfHostedRunnerToGroupForOrgEndpoint): Self = StObject.set(x, "PUT /orgs/:org/actions/runner-groups/:runner_group_id/runners/:runner_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_name`(value: ParametersActionsCreateOrUpdateOrgSecretEndpoint): Self = StObject.set(x, "PUT /orgs/:org/actions/secrets/:secret_name", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_name`(value: ParametersActionsCreateOrUpdateOrgSecretEndpoint): Self = StObject.set(x, "PUT /orgs/:org/actions/secrets/:secret_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_nameSlashrepositories`(value: ParametersActionsSetSelectedReposForOrgSecretEndpoint): Self = StObject.set(x, "PUT /orgs/:org/actions/secrets/:secret_name/repositories", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_nameSlashrepositories`(value: ParametersActionsSetSelectedReposForOrgSecretEndpoint): Self = StObject.set(x, "PUT /orgs/:org/actions/secrets/:secret_name/repositories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_nameSlashrepositoriesSlashColonrepository_id`(value: ParametersActionsAddSelectedRepoToOrgSecretEndpoint): Self = StObject.set(x, "PUT /orgs/:org/actions/secrets/:secret_name/repositories/:repository_id", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashorgsSlashColonorgSlashactionsSlashsecretsSlashColonsecret_nameSlashrepositoriesSlashColonrepository_id`(value: ParametersActionsAddSelectedRepoToOrgSecretEndpoint): Self = StObject.set(x, "PUT /orgs/:org/actions/secrets/:secret_name/repositories/:repository_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashorgsSlashColonorgSlashblocksSlashColonusername`(value: ParametersOrgsBlockUserEndpoint): Self = StObject.set(x, "PUT /orgs/:org/blocks/:username", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashorgsSlashColonorgSlashblocksSlashColonusername`(value: ParametersOrgsBlockUserEndpoint): Self = StObject.set(x, "PUT /orgs/:org/blocks/:username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashorgsSlashColonorgSlashinteraction-limits`(value: ParametersInteractionsSetRestrictionsForOrgEndpoint): Self = StObject.set(x, "PUT /orgs/:org/interaction-limits", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashorgsSlashColonorgSlashinteraction-limits`(value: ParametersInteractionsSetRestrictionsForOrgEndpoint): Self = StObject.set(x, "PUT /orgs/:org/interaction-limits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashorgsSlashColonorgSlashmembershipsSlashColonusername`(value: ParametersOrgsSetMembershipForUserEndpoint): Self = StObject.set(x, "PUT /orgs/:org/memberships/:username", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashorgsSlashColonorgSlashmembershipsSlashColonusername`(value: ParametersOrgsSetMembershipForUserEndpoint): Self = StObject.set(x, "PUT /orgs/:org/memberships/:username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashorgsSlashColonorgSlashoutside_collaboratorsSlashColonusername`(value: ParametersOrgsConvertMemberToOutsideCollaboratorEndpoint): Self = StObject.set(x, "PUT /orgs/:org/outside_collaborators/:username", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashorgsSlashColonorgSlashoutside_collaboratorsSlashColonusername`(value: ParametersOrgsConvertMemberToOutsideCollaboratorEndpoint): Self = StObject.set(x, "PUT /orgs/:org/outside_collaborators/:username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashorgsSlashColonorgSlashpublic_membersSlashColonusername`(value: ParametersOrgsSetPublicMembershipForAuthenticatedUserEndpoint): Self = StObject.set(x, "PUT /orgs/:org/public_members/:username", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashorgsSlashColonorgSlashpublic_membersSlashColonusername`(value: ParametersOrgsSetPublicMembershipForAuthenticatedUserEndpoint): Self = StObject.set(x, "PUT /orgs/:org/public_members/:username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashmembershipsSlashColonusername`(value: ParametersTeamsAddOrUpdateMembershipForUserInOrgEndpoint): Self = StObject.set(x, "PUT /orgs/:org/teams/:team_slug/memberships/:username", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashmembershipsSlashColonusername`(value: ParametersTeamsAddOrUpdateMembershipForUserInOrgEndpoint): Self = StObject.set(x, "PUT /orgs/:org/teams/:team_slug/memberships/:username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashprojectsSlashColonproject_id`(value: ParametersTeamsAddOrUpdateProjectPermissionsInOrgEndpoint): Self = StObject.set(x, "PUT /orgs/:org/teams/:team_slug/projects/:project_id", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashprojectsSlashColonproject_id`(value: ParametersTeamsAddOrUpdateProjectPermissionsInOrgEndpoint): Self = StObject.set(x, "PUT /orgs/:org/teams/:team_slug/projects/:project_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashreposSlashColonownerSlashColonrepo`(value: ParametersTeamsAddOrUpdateRepoPermissionsInOrgEndpoint): Self = StObject.set(x, "PUT /orgs/:org/teams/:team_slug/repos/:owner/:repo", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashreposSlashColonownerSlashColonrepo`(value: ParametersTeamsAddOrUpdateRepoPermissionsInOrgEndpoint): Self = StObject.set(x, "PUT /orgs/:org/teams/:team_slug/repos/:owner/:repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashprojectsSlashColonproject_idSlashcollaboratorsSlashColonusername`(value: ParametersProjectsAddCollaboratorEndpoint): Self = StObject.set(x, "PUT /projects/:project_id/collaborators/:username", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashprojectsSlashColonproject_idSlashcollaboratorsSlashColonusername`(value: ParametersProjectsAddCollaboratorEndpoint): Self = StObject.set(x, "PUT /projects/:project_id/collaborators/:username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecretsSlashColonsecret_name`(value: ParametersActionsCreateOrUpdateRepoSecretEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/actions/secrets/:secret_name", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashreposSlashColonownerSlashColonrepoSlashactionsSlashsecretsSlashColonsecret_name`(value: ParametersActionsCreateOrUpdateRepoSecretEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/actions/secrets/:secret_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashreposSlashColonownerSlashColonrepoSlashautomated-security-fixes`(value: ParametersReposEnableAutomatedSecurityFixesEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/automated-security-fixes", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashreposSlashColonownerSlashColonrepoSlashautomated-security-fixes`(value: ParametersReposEnableAutomatedSecurityFixesEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/automated-security-fixes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotection`(value: ParametersReposUpdateBranchProtectionEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/branches/:branch/protection", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotection`(value: ParametersReposUpdateBranchProtectionEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/branches/:branch/protection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrequired_status_checksSlashcontexts`(value: ParametersReposSetStatusCheckContextsEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrequired_status_checksSlashcontexts`(value: ParametersReposSetStatusCheckContextsEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/branches/:branch/protection/required_status_checks/contexts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrestrictionsSlashapps`(value: ParametersReposSetAppAccessRestrictionsEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/branches/:branch/protection/restrictions/apps", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrestrictionsSlashapps`(value: ParametersReposSetAppAccessRestrictionsEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/branches/:branch/protection/restrictions/apps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrestrictionsSlashteams`(value: ParametersReposSetTeamAccessRestrictionsEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/branches/:branch/protection/restrictions/teams", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrestrictionsSlashteams`(value: ParametersReposSetTeamAccessRestrictionsEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/branches/:branch/protection/restrictions/teams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrestrictionsSlashusers`(value: ParametersReposSetUserAccessRestrictionsEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/branches/:branch/protection/restrictions/users", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashreposSlashColonownerSlashColonrepoSlashbranchesSlashColonbranchSlashprotectionSlashrestrictionsSlashusers`(value: ParametersReposSetUserAccessRestrictionsEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/branches/:branch/protection/restrictions/users", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashreposSlashColonownerSlashColonrepoSlashcollaboratorsSlashColonusername`(value: ParametersReposAddCollaboratorEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/collaborators/:username", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashreposSlashColonownerSlashColonrepoSlashcollaboratorsSlashColonusername`(value: ParametersReposAddCollaboratorEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/collaborators/:username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashreposSlashColonownerSlashColonrepoSlashcontentsSlashColonpath`(value: ParametersReposCreateOrUpdateFileContentsEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/contents/:path", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashreposSlashColonownerSlashColonrepoSlashcontentsSlashColonpath`(value: ParametersReposCreateOrUpdateFileContentsEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/contents/:path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashreposSlashColonownerSlashColonrepoSlashimport`(value: ParametersMigrationsStartImportEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/import", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashreposSlashColonownerSlashColonrepoSlashimport`(value: ParametersMigrationsStartImportEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/import", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashreposSlashColonownerSlashColonrepoSlashinteraction-limits`(value: ParametersInteractionsSetRestrictionsForRepoEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/interaction-limits", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashreposSlashColonownerSlashColonrepoSlashinteraction-limits`(value: ParametersInteractionsSetRestrictionsForRepoEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/interaction-limits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashlabels`(value: ParametersIssuesSetLabelsEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/issues/:issue_number/labels", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashlabels`(value: ParametersIssuesSetLabelsEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/issues/:issue_number/labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashlock`(value: ParametersIssuesLockEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/issues/:issue_number/lock", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashlock`(value: ParametersIssuesLockEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/issues/:issue_number/lock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashreposSlashColonownerSlashColonrepoSlashnotifications`(value: ParametersActivityMarkRepoNotificationsAsReadEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/notifications", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashreposSlashColonownerSlashColonrepoSlashnotifications`(value: ParametersActivityMarkRepoNotificationsAsReadEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/notifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashreposSlashColonownerSlashColonrepoSlashpages`(value: ParametersReposUpdateInformationAboutPagesSiteEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/pages", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashreposSlashColonownerSlashColonrepoSlashpages`(value: ParametersReposUpdateInformationAboutPagesSiteEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/pages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashmerge`(value: ParametersPullsMergeEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/pulls/:pull_number/merge", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashmerge`(value: ParametersPullsMergeEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/pulls/:pull_number/merge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviewsSlashColonreview_id`(value: ParametersPullsUpdateReviewEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviewsSlashColonreview_id`(value: ParametersPullsUpdateReviewEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviewsSlashColonreview_idSlashdismissals`(value: ParametersPullsDismissReviewEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/dismissals", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashreviewsSlashColonreview_idSlashdismissals`(value: ParametersPullsDismissReviewEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/dismissals", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashupdate-branch`(value: ParametersPullsUpdateBranchEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/pulls/:pull_number/update-branch", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashreposSlashColonownerSlashColonrepoSlashpullsSlashColonpull_numberSlashupdate-branch`(value: ParametersPullsUpdateBranchEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/pulls/:pull_number/update-branch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashreposSlashColonownerSlashColonrepoSlashsubscription`(value: ParametersActivitySetRepoSubscriptionEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/subscription", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashreposSlashColonownerSlashColonrepoSlashsubscription`(value: ParametersActivitySetRepoSubscriptionEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/subscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashreposSlashColonownerSlashColonrepoSlashtopics`(value: ParametersReposReplaceAllTopicsEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/topics", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashreposSlashColonownerSlashColonrepoSlashtopics`(value: ParametersReposReplaceAllTopicsEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/topics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashreposSlashColonownerSlashColonrepoSlashvulnerability-alerts`(value: ParametersReposEnableVulnerabilityAlertsEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/vulnerability-alerts", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashreposSlashColonownerSlashColonrepoSlashvulnerability-alerts`(value: ParametersReposEnableVulnerabilityAlertsEndpoint): Self = StObject.set(x, "PUT /repos/:owner/:repo/vulnerability-alerts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroupsSlashColonscim_group_id`(value: ParametersEnterpriseAdminSetInformationForProvisionedEnterpriseGroupEndpoint): Self = StObject.set(x, "PUT /scim/v2/enterprises/:enterprise/Groups/:scim_group_id", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashGroupsSlashColonscim_group_id`(value: ParametersEnterpriseAdminSetInformationForProvisionedEnterpriseGroupEndpoint): Self = StObject.set(x, "PUT /scim/v2/enterprises/:enterprise/Groups/:scim_group_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsersSlashColonscim_user_id`(value: ParametersEnterpriseAdminSetInformationForProvisionedEnterpriseUserEndpoint): Self = StObject.set(x, "PUT /scim/v2/enterprises/:enterprise/Users/:scim_user_id", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashscimSlashv2SlashenterprisesSlashColonenterpriseSlashUsersSlashColonscim_user_id`(value: ParametersEnterpriseAdminSetInformationForProvisionedEnterpriseUserEndpoint): Self = StObject.set(x, "PUT /scim/v2/enterprises/:enterprise/Users/:scim_user_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsersSlashColonscim_user_id`(value: ParametersScimSetInformationForProvisionedUserEndpoint): Self = StObject.set(x, "PUT /scim/v2/organizations/:org/Users/:scim_user_id", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashscimSlashv2SlashorganizationsSlashColonorgSlashUsersSlashColonscim_user_id`(value: ParametersScimSetInformationForProvisionedUserEndpoint): Self = StObject.set(x, "PUT /scim/v2/organizations/:org/Users/:scim_user_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashteamsSlashColonteam_idSlashmembersSlashColonusername`(value: ParametersTeamsAddMemberLegacyEndpoint): Self = StObject.set(x, "PUT /teams/:team_id/members/:username", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashteamsSlashColonteam_idSlashmembersSlashColonusername`(value: ParametersTeamsAddMemberLegacyEndpoint): Self = StObject.set(x, "PUT /teams/:team_id/members/:username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashteamsSlashColonteam_idSlashmembershipsSlashColonusername`(value: ParametersTeamsAddOrUpdateMembershipForUserLegacyEndpoint): Self = StObject.set(x, "PUT /teams/:team_id/memberships/:username", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashteamsSlashColonteam_idSlashmembershipsSlashColonusername`(value: ParametersTeamsAddOrUpdateMembershipForUserLegacyEndpoint): Self = StObject.set(x, "PUT /teams/:team_id/memberships/:username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashteamsSlashColonteam_idSlashprojectsSlashColonproject_id`(value: ParametersTeamsAddOrUpdateProjectPermissionsLegacyEndpoint): Self = StObject.set(x, "PUT /teams/:team_id/projects/:project_id", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashteamsSlashColonteam_idSlashprojectsSlashColonproject_id`(value: ParametersTeamsAddOrUpdateProjectPermissionsLegacyEndpoint): Self = StObject.set(x, "PUT /teams/:team_id/projects/:project_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashteamsSlashColonteam_idSlashreposSlashColonownerSlashColonrepo`(value: ParametersTeamsAddOrUpdateRepoPermissionsLegacyEndpoint): Self = StObject.set(x, "PUT /teams/:team_id/repos/:owner/:repo", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashteamsSlashColonteam_idSlashreposSlashColonownerSlashColonrepo`(value: ParametersTeamsAddOrUpdateRepoPermissionsLegacyEndpoint): Self = StObject.set(x, "PUT /teams/:team_id/repos/:owner/:repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashuserSlashblocksSlashColonusername`(value: ParametersUsersBlockEndpoint): Self = StObject.set(x, "PUT /user/blocks/:username", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashuserSlashblocksSlashColonusername`(value: ParametersUsersBlockEndpoint): Self = StObject.set(x, "PUT /user/blocks/:username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashuserSlashfollowingSlashColonusername`(value: ParametersUsersFollowEndpoint): Self = StObject.set(x, "PUT /user/following/:username", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashuserSlashfollowingSlashColonusername`(value: ParametersUsersFollowEndpoint): Self = StObject.set(x, "PUT /user/following/:username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashuserSlashinstallationsSlashColoninstallation_idSlashrepositoriesSlashColonrepository_id`(value: ParametersAppsAddRepoToInstallationEndpoint): Self = StObject.set(x, "PUT /user/installations/:installation_id/repositories/:repository_id", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashuserSlashinstallationsSlashColoninstallation_idSlashrepositoriesSlashColonrepository_id`(value: ParametersAppsAddRepoToInstallationEndpoint): Self = StObject.set(x, "PUT /user/installations/:installation_id/repositories/:repository_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setPUT SlashuserSlashstarredSlashColonownerSlashColonrepo`(value: ParametersActivityStarRepoForAuthenticatedUserEndpoint): Self = StObject.set(x, "PUT /user/starred/:owner/:repo", value.asInstanceOf[js.Any])
+    inline def `setPUT SlashuserSlashstarredSlashColonownerSlashColonrepo`(value: ParametersActivityStarRepoForAuthenticatedUserEndpoint): Self = StObject.set(x, "PUT /user/starred/:owner/:repo", value.asInstanceOf[js.Any])
   }
 }

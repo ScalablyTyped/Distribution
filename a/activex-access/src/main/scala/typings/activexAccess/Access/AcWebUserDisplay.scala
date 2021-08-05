@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcWebUserDisplay extends StObject
 object AcWebUserDisplay {
   
-  @scala.inline
-  def acWebUserEmail: `3` = 3.asInstanceOf[`3`]
+  inline def acWebUserEmail: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def acWebUserID: `0` = 0.asInstanceOf[`0`]
+  inline def acWebUserID: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def acWebUserLoginName: `2` = 2.asInstanceOf[`2`]
+  inline def acWebUserLoginName: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def acWebUserName: `1` = 1.asInstanceOf[`1`]
+  inline def acWebUserName: `1` = 1.asInstanceOf[`1`]
 }

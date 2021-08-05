@@ -33,43 +33,31 @@ trait ProgressCounters extends StObject {
 }
 object ProgressCounters {
   
-  @scala.inline
-  def apply(): ProgressCounters = {
+  inline def apply(): ProgressCounters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProgressCounters]
   }
   
-  @scala.inline
-  implicit class ProgressCountersMutableBuilder[Self <: ProgressCounters] (val x: Self) extends AnyVal {
+  extension [Self <: ProgressCounters](x: Self) {
     
-    @scala.inline
-    def setCancelledSteps(value: Integer): Self = StObject.set(x, "CancelledSteps", value.asInstanceOf[js.Any])
+    inline def setCancelledSteps(value: Integer): Self = StObject.set(x, "CancelledSteps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelledStepsUndefined: Self = StObject.set(x, "CancelledSteps", js.undefined)
+    inline def setCancelledStepsUndefined: Self = StObject.set(x, "CancelledSteps", js.undefined)
     
-    @scala.inline
-    def setFailedSteps(value: Integer): Self = StObject.set(x, "FailedSteps", value.asInstanceOf[js.Any])
+    inline def setFailedSteps(value: Integer): Self = StObject.set(x, "FailedSteps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailedStepsUndefined: Self = StObject.set(x, "FailedSteps", js.undefined)
+    inline def setFailedStepsUndefined: Self = StObject.set(x, "FailedSteps", js.undefined)
     
-    @scala.inline
-    def setSuccessSteps(value: Integer): Self = StObject.set(x, "SuccessSteps", value.asInstanceOf[js.Any])
+    inline def setSuccessSteps(value: Integer): Self = StObject.set(x, "SuccessSteps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessStepsUndefined: Self = StObject.set(x, "SuccessSteps", js.undefined)
+    inline def setSuccessStepsUndefined: Self = StObject.set(x, "SuccessSteps", js.undefined)
     
-    @scala.inline
-    def setTimedOutSteps(value: Integer): Self = StObject.set(x, "TimedOutSteps", value.asInstanceOf[js.Any])
+    inline def setTimedOutSteps(value: Integer): Self = StObject.set(x, "TimedOutSteps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimedOutStepsUndefined: Self = StObject.set(x, "TimedOutSteps", js.undefined)
+    inline def setTimedOutStepsUndefined: Self = StObject.set(x, "TimedOutSteps", js.undefined)
     
-    @scala.inline
-    def setTotalSteps(value: Integer): Self = StObject.set(x, "TotalSteps", value.asInstanceOf[js.Any])
+    inline def setTotalSteps(value: Integer): Self = StObject.set(x, "TotalSteps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalStepsUndefined: Self = StObject.set(x, "TotalSteps", js.undefined)
+    inline def setTotalStepsUndefined: Self = StObject.set(x, "TotalSteps", js.undefined)
   }
 }

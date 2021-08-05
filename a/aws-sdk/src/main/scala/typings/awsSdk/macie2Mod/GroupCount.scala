@@ -18,25 +18,19 @@ trait GroupCount extends StObject {
 }
 object GroupCount {
   
-  @scala.inline
-  def apply(): GroupCount = {
+  inline def apply(): GroupCount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GroupCount]
   }
   
-  @scala.inline
-  implicit class GroupCountMutableBuilder[Self <: GroupCount] (val x: Self) extends AnyVal {
+  extension [Self <: GroupCount](x: Self) {
     
-    @scala.inline
-    def setCount(value: long): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: long): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+    inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     
-    @scala.inline
-    def setGroupKey(value: string): Self = StObject.set(x, "groupKey", value.asInstanceOf[js.Any])
+    inline def setGroupKey(value: string): Self = StObject.set(x, "groupKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupKeyUndefined: Self = StObject.set(x, "groupKey", js.undefined)
+    inline def setGroupKeyUndefined: Self = StObject.set(x, "groupKey", js.undefined)
   }
 }

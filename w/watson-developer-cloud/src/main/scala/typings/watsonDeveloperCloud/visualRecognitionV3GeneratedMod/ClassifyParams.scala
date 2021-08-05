@@ -44,79 +44,55 @@ trait ClassifyParams extends StObject {
 }
 object ClassifyParams {
   
-  @scala.inline
-  def apply(): ClassifyParams = {
+  inline def apply(): ClassifyParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ClassifyParams]
   }
   
-  @scala.inline
-  implicit class ClassifyParamsMutableBuilder[Self <: ClassifyParams] (val x: Self) extends AnyVal {
+  extension [Self <: ClassifyParams](x: Self) {
     
-    @scala.inline
-    def setAccept_language(value: AcceptLanguage | String): Self = StObject.set(x, "accept_language", value.asInstanceOf[js.Any])
+    inline def setAccept_language(value: AcceptLanguage | String): Self = StObject.set(x, "accept_language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccept_languageUndefined: Self = StObject.set(x, "accept_language", js.undefined)
+    inline def setAccept_languageUndefined: Self = StObject.set(x, "accept_language", js.undefined)
     
-    @scala.inline
-    def setClassifier_ids(value: js.Array[String]): Self = StObject.set(x, "classifier_ids", value.asInstanceOf[js.Any])
+    inline def setClassifier_ids(value: js.Array[String]): Self = StObject.set(x, "classifier_ids", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassifier_idsUndefined: Self = StObject.set(x, "classifier_ids", js.undefined)
+    inline def setClassifier_idsUndefined: Self = StObject.set(x, "classifier_ids", js.undefined)
     
-    @scala.inline
-    def setClassifier_idsVarargs(value: String*): Self = StObject.set(x, "classifier_ids", js.Array(value :_*))
+    inline def setClassifier_idsVarargs(value: String*): Self = StObject.set(x, "classifier_ids", js.Array(value :_*))
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setImages_file(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "images_file", value.asInstanceOf[js.Any])
+    inline def setImages_file(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "images_file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImages_fileUndefined: Self = StObject.set(x, "images_file", js.undefined)
+    inline def setImages_fileUndefined: Self = StObject.set(x, "images_file", js.undefined)
     
-    @scala.inline
-    def setImages_file_content_type(value: String): Self = StObject.set(x, "images_file_content_type", value.asInstanceOf[js.Any])
+    inline def setImages_file_content_type(value: String): Self = StObject.set(x, "images_file_content_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImages_file_content_typeUndefined: Self = StObject.set(x, "images_file_content_type", js.undefined)
+    inline def setImages_file_content_typeUndefined: Self = StObject.set(x, "images_file_content_type", js.undefined)
     
-    @scala.inline
-    def setImages_filename(value: String): Self = StObject.set(x, "images_filename", value.asInstanceOf[js.Any])
+    inline def setImages_filename(value: String): Self = StObject.set(x, "images_filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImages_filenameUndefined: Self = StObject.set(x, "images_filename", js.undefined)
+    inline def setImages_filenameUndefined: Self = StObject.set(x, "images_filename", js.undefined)
     
-    @scala.inline
-    def setOwners(value: js.Array[String]): Self = StObject.set(x, "owners", value.asInstanceOf[js.Any])
+    inline def setOwners(value: js.Array[String]): Self = StObject.set(x, "owners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnersUndefined: Self = StObject.set(x, "owners", js.undefined)
+    inline def setOwnersUndefined: Self = StObject.set(x, "owners", js.undefined)
     
-    @scala.inline
-    def setOwnersVarargs(value: String*): Self = StObject.set(x, "owners", js.Array(value :_*))
+    inline def setOwnersVarargs(value: String*): Self = StObject.set(x, "owners", js.Array(value :_*))
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
     
-    @scala.inline
-    def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+    inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+    inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

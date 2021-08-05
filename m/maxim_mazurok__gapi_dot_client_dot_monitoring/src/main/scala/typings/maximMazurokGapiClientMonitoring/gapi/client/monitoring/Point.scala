@@ -19,25 +19,19 @@ trait Point extends StObject {
 }
 object Point {
   
-  @scala.inline
-  def apply(): Point = {
+  inline def apply(): Point = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Point]
   }
   
-  @scala.inline
-  implicit class PointMutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
+  extension [Self <: Point](x: Self) {
     
-    @scala.inline
-    def setInterval(value: TimeInterval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: TimeInterval): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
+    inline def setIntervalUndefined: Self = StObject.set(x, "interval", js.undefined)
     
-    @scala.inline
-    def setValue(value: TypedValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: TypedValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

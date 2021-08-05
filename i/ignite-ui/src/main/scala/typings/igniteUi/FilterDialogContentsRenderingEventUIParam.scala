@@ -18,25 +18,19 @@ trait FilterDialogContentsRenderingEventUIParam extends StObject {
 }
 object FilterDialogContentsRenderingEventUIParam {
   
-  @scala.inline
-  def apply(): FilterDialogContentsRenderingEventUIParam = {
+  inline def apply(): FilterDialogContentsRenderingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FilterDialogContentsRenderingEventUIParam]
   }
   
-  @scala.inline
-  implicit class FilterDialogContentsRenderingEventUIParamMutableBuilder[Self <: FilterDialogContentsRenderingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: FilterDialogContentsRenderingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setDialogElement(value: String): Self = StObject.set(x, "dialogElement", value.asInstanceOf[js.Any])
+    inline def setDialogElement(value: String): Self = StObject.set(x, "dialogElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialogElementUndefined: Self = StObject.set(x, "dialogElement", js.undefined)
+    inline def setDialogElementUndefined: Self = StObject.set(x, "dialogElement", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

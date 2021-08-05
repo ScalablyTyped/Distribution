@@ -27,32 +27,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutCallback(value: () => Unit): Self = StObject.set(x, "timeoutCallback", js.Any.fromFunction0(value))
+      inline def setTimeoutCallback(value: () => Unit): Self = StObject.set(x, "timeoutCallback", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTimeoutCallbackUndefined: Self = StObject.set(x, "timeoutCallback", js.undefined)
+      inline def setTimeoutCallbackUndefined: Self = StObject.set(x, "timeoutCallback", js.undefined)
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   

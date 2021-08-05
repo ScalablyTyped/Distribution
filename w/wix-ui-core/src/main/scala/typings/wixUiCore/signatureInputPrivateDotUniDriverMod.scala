@@ -12,8 +12,7 @@ object signatureInputPrivateDotUniDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def signatureInputPrivateUniDriverFactory(base: UniDriver[js.Any]): PrivateSignatureInputDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("signatureInputPrivateUniDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[PrivateSignatureInputDriver]
+  inline def signatureInputPrivateUniDriverFactory(base: UniDriver[js.Any]): PrivateSignatureInputDriver = ^.asInstanceOf[js.Dynamic].applyDynamic("signatureInputPrivateUniDriverFactory")(base.asInstanceOf[js.Any]).asInstanceOf[PrivateSignatureInputDriver]
   
   trait PrivateSignatureInputDriver
     extends StObject
@@ -25,8 +24,7 @@ object signatureInputPrivateDotUniDriverMod {
   }
   object PrivateSignatureInputDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       blurA11yInput: () => js.Promise[Unit],
       click: () => js.Promise[Unit],
       element: () => js.Promise[js.Any],
@@ -39,14 +37,11 @@ object signatureInputPrivateDotUniDriverMod {
       __obj.asInstanceOf[PrivateSignatureInputDriver]
     }
     
-    @scala.inline
-    implicit class PrivateSignatureInputDriverMutableBuilder[Self <: PrivateSignatureInputDriver] (val x: Self) extends AnyVal {
+    extension [Self <: PrivateSignatureInputDriver](x: Self) {
       
-      @scala.inline
-      def setBlurA11yInput(value: () => js.Promise[Unit]): Self = StObject.set(x, "blurA11yInput", js.Any.fromFunction0(value))
+      inline def setBlurA11yInput(value: () => js.Promise[Unit]): Self = StObject.set(x, "blurA11yInput", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFocusA11yInput(value: () => js.Promise[Unit]): Self = StObject.set(x, "focusA11yInput", js.Any.fromFunction0(value))
+      inline def setFocusA11yInput(value: () => js.Promise[Unit]): Self = StObject.set(x, "focusA11yInput", js.Any.fromFunction0(value))
     }
   }
 }

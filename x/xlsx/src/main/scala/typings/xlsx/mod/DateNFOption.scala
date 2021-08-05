@@ -11,19 +11,15 @@ trait DateNFOption extends StObject {
 }
 object DateNFOption {
   
-  @scala.inline
-  def apply(): DateNFOption = {
+  inline def apply(): DateNFOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DateNFOption]
   }
   
-  @scala.inline
-  implicit class DateNFOptionMutableBuilder[Self <: DateNFOption] (val x: Self) extends AnyVal {
+  extension [Self <: DateNFOption](x: Self) {
     
-    @scala.inline
-    def setDateNF(value: NumberFormat): Self = StObject.set(x, "dateNF", value.asInstanceOf[js.Any])
+    inline def setDateNF(value: NumberFormat): Self = StObject.set(x, "dateNF", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateNFUndefined: Self = StObject.set(x, "dateNF", js.undefined)
+    inline def setDateNFUndefined: Self = StObject.set(x, "dateNF", js.undefined)
   }
 }

@@ -23,46 +23,33 @@ trait GoogleCloudDatalabelingV1beta1Example extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1Example {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1Example = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1Example = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1Example]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1ExampleMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1Example] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1Example](x: Self) {
     
-    @scala.inline
-    def setAnnotations(value: js.Array[GoogleCloudDatalabelingV1beta1Annotation]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
+    inline def setAnnotations(value: js.Array[GoogleCloudDatalabelingV1beta1Annotation]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
+    inline def setAnnotationsUndefined: Self = StObject.set(x, "annotations", js.undefined)
     
-    @scala.inline
-    def setAnnotationsVarargs(value: GoogleCloudDatalabelingV1beta1Annotation*): Self = StObject.set(x, "annotations", js.Array(value :_*))
+    inline def setAnnotationsVarargs(value: GoogleCloudDatalabelingV1beta1Annotation*): Self = StObject.set(x, "annotations", js.Array(value :_*))
     
-    @scala.inline
-    def setImagePayload(value: GoogleCloudDatalabelingV1beta1ImagePayload): Self = StObject.set(x, "imagePayload", value.asInstanceOf[js.Any])
+    inline def setImagePayload(value: GoogleCloudDatalabelingV1beta1ImagePayload): Self = StObject.set(x, "imagePayload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImagePayloadUndefined: Self = StObject.set(x, "imagePayload", js.undefined)
+    inline def setImagePayloadUndefined: Self = StObject.set(x, "imagePayload", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setTextPayload(value: GoogleCloudDatalabelingV1beta1TextPayload): Self = StObject.set(x, "textPayload", value.asInstanceOf[js.Any])
+    inline def setTextPayload(value: GoogleCloudDatalabelingV1beta1TextPayload): Self = StObject.set(x, "textPayload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextPayloadUndefined: Self = StObject.set(x, "textPayload", js.undefined)
+    inline def setTextPayloadUndefined: Self = StObject.set(x, "textPayload", js.undefined)
     
-    @scala.inline
-    def setVideoPayload(value: GoogleCloudDatalabelingV1beta1VideoPayload): Self = StObject.set(x, "videoPayload", value.asInstanceOf[js.Any])
+    inline def setVideoPayload(value: GoogleCloudDatalabelingV1beta1VideoPayload): Self = StObject.set(x, "videoPayload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoPayloadUndefined: Self = StObject.set(x, "videoPayload", js.undefined)
+    inline def setVideoPayloadUndefined: Self = StObject.set(x, "videoPayload", js.undefined)
   }
 }

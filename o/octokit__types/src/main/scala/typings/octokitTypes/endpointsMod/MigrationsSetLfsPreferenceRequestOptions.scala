@@ -20,25 +20,19 @@ trait MigrationsSetLfsPreferenceRequestOptions extends StObject {
 }
 object MigrationsSetLfsPreferenceRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): MigrationsSetLfsPreferenceRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): MigrationsSetLfsPreferenceRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "PATCH", request = request.asInstanceOf[js.Any], url = "/repos/:owner/:repo/import/lfs")
     __obj.asInstanceOf[MigrationsSetLfsPreferenceRequestOptions]
   }
   
-  @scala.inline
-  implicit class MigrationsSetLfsPreferenceRequestOptionsMutableBuilder[Self <: MigrationsSetLfsPreferenceRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MigrationsSetLfsPreferenceRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: PATCH): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: PATCH): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashimportSlashlfs): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashimportSlashlfs): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

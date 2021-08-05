@@ -138,17 +138,12 @@ object mod {
     def is_displayed_in_checkout(cartItems: js.Array[CartItem]): js.Promise[Boolean] = js.native
   }
   
-  @scala.inline
-  def apply(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("apply")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def apply(key: String, `type`: Unit, platform: Platform): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(key.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(key: String, `type`: Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(key.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def apply(key: String, `type`: Mode, platform: Platform): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(key.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("apply")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(key: String, `type`: Unit, platform: Platform): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(key.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(key: String, `type`: Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(key.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def apply(key: String, `type`: Mode, platform: Platform): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(key.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def checkout(source: String, `type`: Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkout")(source.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def checkout(source: String, `type`: Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkout")(source.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait CheckoutResponse extends StObject {
     
@@ -158,20 +153,16 @@ object mod {
   }
   object CheckoutResponse {
     
-    @scala.inline
-    def apply(checkout_url: String, id: String): CheckoutResponse = {
+    inline def apply(checkout_url: String, id: String): CheckoutResponse = {
       val __obj = js.Dynamic.literal(checkout_url = checkout_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[CheckoutResponse]
     }
     
-    @scala.inline
-    implicit class CheckoutResponseMutableBuilder[Self <: CheckoutResponse] (val x: Self) extends AnyVal {
+    extension [Self <: CheckoutResponse](x: Self) {
       
-      @scala.inline
-      def setCheckout_url(value: String): Self = StObject.set(x, "checkout_url", value.asInstanceOf[js.Any])
+      inline def setCheckout_url(value: String): Self = StObject.set(x, "checkout_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -182,11 +173,9 @@ object mod {
   trait Copy extends StObject
   object Copy {
     
-    @scala.inline
-    def checkout: typings.creditkeyJs.creditkeyJsStrings.checkout = "checkout".asInstanceOf[typings.creditkeyJs.creditkeyJsStrings.checkout]
+    inline def checkout: typings.creditkeyJs.creditkeyJsStrings.checkout = "checkout".asInstanceOf[typings.creditkeyJs.creditkeyJsStrings.checkout]
     
-    @scala.inline
-    def pdp: typings.creditkeyJs.creditkeyJsStrings.pdp = "pdp".asInstanceOf[typings.creditkeyJs.creditkeyJsStrings.pdp]
+    inline def pdp: typings.creditkeyJs.creditkeyJsStrings.pdp = "pdp".asInstanceOf[typings.creditkeyJs.creditkeyJsStrings.pdp]
   }
   
   trait CustomerResponse extends StObject {
@@ -199,23 +188,18 @@ object mod {
   }
   object CustomerResponse {
     
-    @scala.inline
-    def apply(amount: Double, amount_available: Double, status: Status): CustomerResponse = {
+    inline def apply(amount: Double, amount_available: Double, status: Status): CustomerResponse = {
       val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], amount_available = amount_available.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomerResponse]
     }
     
-    @scala.inline
-    implicit class CustomerResponseMutableBuilder[Self <: CustomerResponse] (val x: Self) extends AnyVal {
+    extension [Self <: CustomerResponse](x: Self) {
       
-      @scala.inline
-      def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmount_available(value: Double): Self = StObject.set(x, "amount_available", value.asInstanceOf[js.Any])
+      inline def setAmount_available(value: Double): Self = StObject.set(x, "amount_available", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
@@ -227,14 +211,11 @@ object mod {
   trait Display extends StObject
   object Display {
     
-    @scala.inline
-    def button: typings.creditkeyJs.creditkeyJsStrings.button = "button".asInstanceOf[typings.creditkeyJs.creditkeyJsStrings.button]
+    inline def button: typings.creditkeyJs.creditkeyJsStrings.button = "button".asInstanceOf[typings.creditkeyJs.creditkeyJsStrings.button]
     
-    @scala.inline
-    def button_text: typings.creditkeyJs.creditkeyJsStrings.button_text = "button_text".asInstanceOf[typings.creditkeyJs.creditkeyJsStrings.button_text]
+    inline def button_text: typings.creditkeyJs.creditkeyJsStrings.button_text = "button_text".asInstanceOf[typings.creditkeyJs.creditkeyJsStrings.button_text]
     
-    @scala.inline
-    def text: typings.creditkeyJs.creditkeyJsStrings.text = "text".asInstanceOf[typings.creditkeyJs.creditkeyJsStrings.text]
+    inline def text: typings.creditkeyJs.creditkeyJsStrings.text = "text".asInstanceOf[typings.creditkeyJs.creditkeyJsStrings.text]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -244,11 +225,9 @@ object mod {
   trait Mode extends StObject
   object Mode {
     
-    @scala.inline
-    def modal: typings.creditkeyJs.creditkeyJsStrings.modal = "modal".asInstanceOf[typings.creditkeyJs.creditkeyJsStrings.modal]
+    inline def modal: typings.creditkeyJs.creditkeyJsStrings.modal = "modal".asInstanceOf[typings.creditkeyJs.creditkeyJsStrings.modal]
     
-    @scala.inline
-    def redirect: typings.creditkeyJs.creditkeyJsStrings.redirect = "redirect".asInstanceOf[typings.creditkeyJs.creditkeyJsStrings.redirect]
+    inline def redirect: typings.creditkeyJs.creditkeyJsStrings.redirect = "redirect".asInstanceOf[typings.creditkeyJs.creditkeyJsStrings.redirect]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -259,14 +238,11 @@ object mod {
   trait Platform extends StObject
   object Platform {
     
-    @scala.inline
-    def development: typings.creditkeyJs.creditkeyJsStrings.development = "development".asInstanceOf[typings.creditkeyJs.creditkeyJsStrings.development]
+    inline def development: typings.creditkeyJs.creditkeyJsStrings.development = "development".asInstanceOf[typings.creditkeyJs.creditkeyJsStrings.development]
     
-    @scala.inline
-    def production: typings.creditkeyJs.creditkeyJsStrings.production = "production".asInstanceOf[typings.creditkeyJs.creditkeyJsStrings.production]
+    inline def production: typings.creditkeyJs.creditkeyJsStrings.production = "production".asInstanceOf[typings.creditkeyJs.creditkeyJsStrings.production]
     
-    @scala.inline
-    def staging: typings.creditkeyJs.creditkeyJsStrings.staging = "staging".asInstanceOf[typings.creditkeyJs.creditkeyJsStrings.staging]
+    inline def staging: typings.creditkeyJs.creditkeyJsStrings.staging = "staging".asInstanceOf[typings.creditkeyJs.creditkeyJsStrings.staging]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -277,14 +253,11 @@ object mod {
   trait Size extends StObject
   object Size {
     
-    @scala.inline
-    def large: typings.creditkeyJs.creditkeyJsStrings.large = "large".asInstanceOf[typings.creditkeyJs.creditkeyJsStrings.large]
+    inline def large: typings.creditkeyJs.creditkeyJsStrings.large = "large".asInstanceOf[typings.creditkeyJs.creditkeyJsStrings.large]
     
-    @scala.inline
-    def medium: typings.creditkeyJs.creditkeyJsStrings.medium = "medium".asInstanceOf[typings.creditkeyJs.creditkeyJsStrings.medium]
+    inline def medium: typings.creditkeyJs.creditkeyJsStrings.medium = "medium".asInstanceOf[typings.creditkeyJs.creditkeyJsStrings.medium]
     
-    @scala.inline
-    def small: typings.creditkeyJs.creditkeyJsStrings.small = "small".asInstanceOf[typings.creditkeyJs.creditkeyJsStrings.small]
+    inline def small: typings.creditkeyJs.creditkeyJsStrings.small = "small".asInstanceOf[typings.creditkeyJs.creditkeyJsStrings.small]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -295,13 +268,10 @@ object mod {
   trait Status extends StObject
   object Status {
     
-    @scala.inline
-    def approved: typings.creditkeyJs.creditkeyJsStrings.approved = "approved".asInstanceOf[typings.creditkeyJs.creditkeyJsStrings.approved]
+    inline def approved: typings.creditkeyJs.creditkeyJsStrings.approved = "approved".asInstanceOf[typings.creditkeyJs.creditkeyJsStrings.approved]
     
-    @scala.inline
-    def declined: typings.creditkeyJs.creditkeyJsStrings.declined = "declined".asInstanceOf[typings.creditkeyJs.creditkeyJsStrings.declined]
+    inline def declined: typings.creditkeyJs.creditkeyJsStrings.declined = "declined".asInstanceOf[typings.creditkeyJs.creditkeyJsStrings.declined]
     
-    @scala.inline
-    def pending: typings.creditkeyJs.creditkeyJsStrings.pending = "pending".asInstanceOf[typings.creditkeyJs.creditkeyJsStrings.pending]
+    inline def pending: typings.creditkeyJs.creditkeyJsStrings.pending = "pending".asInstanceOf[typings.creditkeyJs.creditkeyJsStrings.pending]
   }
 }

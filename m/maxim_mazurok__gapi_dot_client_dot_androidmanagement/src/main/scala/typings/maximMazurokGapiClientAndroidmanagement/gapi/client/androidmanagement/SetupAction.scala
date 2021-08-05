@@ -17,31 +17,23 @@ trait SetupAction extends StObject {
 }
 object SetupAction {
   
-  @scala.inline
-  def apply(): SetupAction = {
+  inline def apply(): SetupAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SetupAction]
   }
   
-  @scala.inline
-  implicit class SetupActionMutableBuilder[Self <: SetupAction] (val x: Self) extends AnyVal {
+  extension [Self <: SetupAction](x: Self) {
     
-    @scala.inline
-    def setDescription(value: UserFacingMessage): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: UserFacingMessage): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setLaunchApp(value: LaunchAppAction): Self = StObject.set(x, "launchApp", value.asInstanceOf[js.Any])
+    inline def setLaunchApp(value: LaunchAppAction): Self = StObject.set(x, "launchApp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchAppUndefined: Self = StObject.set(x, "launchApp", js.undefined)
+    inline def setLaunchAppUndefined: Self = StObject.set(x, "launchApp", js.undefined)
     
-    @scala.inline
-    def setTitle(value: UserFacingMessage): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: UserFacingMessage): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

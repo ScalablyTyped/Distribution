@@ -10,6 +10,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def klona[T](input: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("klona")(input.asInstanceOf[js.Any]).asInstanceOf[T]
+  inline def klona[T](input: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("klona")(input.asInstanceOf[js.Any]).asInstanceOf[T]
 }

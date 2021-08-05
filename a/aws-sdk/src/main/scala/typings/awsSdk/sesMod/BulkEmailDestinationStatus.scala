@@ -23,31 +23,23 @@ trait BulkEmailDestinationStatus extends StObject {
 }
 object BulkEmailDestinationStatus {
   
-  @scala.inline
-  def apply(): BulkEmailDestinationStatus = {
+  inline def apply(): BulkEmailDestinationStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BulkEmailDestinationStatus]
   }
   
-  @scala.inline
-  implicit class BulkEmailDestinationStatusMutableBuilder[Self <: BulkEmailDestinationStatus] (val x: Self) extends AnyVal {
+  extension [Self <: BulkEmailDestinationStatus](x: Self) {
     
-    @scala.inline
-    def setError(value: Error): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
+    inline def setError(value: Error): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
     
-    @scala.inline
-    def setMessageId(value: MessageId): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
+    inline def setMessageId(value: MessageId): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageIdUndefined: Self = StObject.set(x, "MessageId", js.undefined)
+    inline def setMessageIdUndefined: Self = StObject.set(x, "MessageId", js.undefined)
     
-    @scala.inline
-    def setStatus(value: BulkEmailStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: BulkEmailStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

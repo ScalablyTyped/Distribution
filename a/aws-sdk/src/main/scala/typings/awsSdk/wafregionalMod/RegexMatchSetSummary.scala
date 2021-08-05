@@ -18,19 +18,15 @@ trait RegexMatchSetSummary extends StObject {
 }
 object RegexMatchSetSummary {
   
-  @scala.inline
-  def apply(Name: ResourceName, RegexMatchSetId: ResourceId): RegexMatchSetSummary = {
+  inline def apply(Name: ResourceName, RegexMatchSetId: ResourceId): RegexMatchSetSummary = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], RegexMatchSetId = RegexMatchSetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegexMatchSetSummary]
   }
   
-  @scala.inline
-  implicit class RegexMatchSetSummaryMutableBuilder[Self <: RegexMatchSetSummary] (val x: Self) extends AnyVal {
+  extension [Self <: RegexMatchSetSummary](x: Self) {
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegexMatchSetId(value: ResourceId): Self = StObject.set(x, "RegexMatchSetId", value.asInstanceOf[js.Any])
+    inline def setRegexMatchSetId(value: ResourceId): Self = StObject.set(x, "RegexMatchSetId", value.asInstanceOf[js.Any])
   }
 }

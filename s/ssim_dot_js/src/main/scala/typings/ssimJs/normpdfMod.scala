@@ -11,12 +11,8 @@ object normpdfMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def normpdf(hasRefWidthHeight: Matrix): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("normpdf")(hasRefWidthHeight.asInstanceOf[js.Any]).asInstanceOf[Matrix]
-  @scala.inline
-  def normpdf(hasRefWidthHeight: Matrix, µ: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("normpdf")(hasRefWidthHeight.asInstanceOf[js.Any], µ.asInstanceOf[js.Any])).asInstanceOf[Matrix]
-  @scala.inline
-  def normpdf(hasRefWidthHeight: Matrix, µ: Double, σ: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("normpdf")(hasRefWidthHeight.asInstanceOf[js.Any], µ.asInstanceOf[js.Any], σ.asInstanceOf[js.Any])).asInstanceOf[Matrix]
-  @scala.inline
-  def normpdf(hasRefWidthHeight: Matrix, µ: Unit, σ: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("normpdf")(hasRefWidthHeight.asInstanceOf[js.Any], µ.asInstanceOf[js.Any], σ.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+  inline def normpdf(hasRefWidthHeight: Matrix): Matrix = ^.asInstanceOf[js.Dynamic].applyDynamic("normpdf")(hasRefWidthHeight.asInstanceOf[js.Any]).asInstanceOf[Matrix]
+  inline def normpdf(hasRefWidthHeight: Matrix, µ: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("normpdf")(hasRefWidthHeight.asInstanceOf[js.Any], µ.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+  inline def normpdf(hasRefWidthHeight: Matrix, µ: Double, σ: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("normpdf")(hasRefWidthHeight.asInstanceOf[js.Any], µ.asInstanceOf[js.Any], σ.asInstanceOf[js.Any])).asInstanceOf[Matrix]
+  inline def normpdf(hasRefWidthHeight: Matrix, µ: Unit, σ: Double): Matrix = (^.asInstanceOf[js.Dynamic].applyDynamic("normpdf")(hasRefWidthHeight.asInstanceOf[js.Any], µ.asInstanceOf[js.Any], σ.asInstanceOf[js.Any])).asInstanceOf[Matrix]
 }

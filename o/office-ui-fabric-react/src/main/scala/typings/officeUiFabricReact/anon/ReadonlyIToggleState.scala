@@ -11,16 +11,13 @@ trait ReadonlyIToggleState extends StObject {
 }
 object ReadonlyIToggleState {
   
-  @scala.inline
-  def apply(checked: Boolean): ReadonlyIToggleState = {
+  inline def apply(checked: Boolean): ReadonlyIToggleState = {
     val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlyIToggleState]
   }
   
-  @scala.inline
-  implicit class ReadonlyIToggleStateMutableBuilder[Self <: ReadonlyIToggleState] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyIToggleState](x: Self) {
     
-    @scala.inline
-    def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+    inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
   }
 }

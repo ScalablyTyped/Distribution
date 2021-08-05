@@ -25,31 +25,23 @@ trait ObserverOpts
 }
 object ObserverOpts {
   
-  @scala.inline
-  def apply(): ObserverOpts = {
+  inline def apply(): ObserverOpts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObserverOpts]
   }
   
-  @scala.inline
-  implicit class ObserverOptsMutableBuilder[Self <: ObserverOpts] (val x: Self) extends AnyVal {
+  extension [Self <: ObserverOpts](x: Self) {
     
-    @scala.inline
-    def setLinks(value: Boolean): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: Boolean): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+    inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
-    @scala.inline
-    def setOld(value: ObserverCallback[Ractive[Ractive[js.Any]]]): Self = StObject.set(x, "old", value.asInstanceOf[js.Any])
+    inline def setOld(value: ObserverCallback[Ractive[Ractive[js.Any]]]): Self = StObject.set(x, "old", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldUndefined: Self = StObject.set(x, "old", js.undefined)
+    inline def setOldUndefined: Self = StObject.set(x, "old", js.undefined)
     
-    @scala.inline
-    def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+    inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+    inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
   }
 }

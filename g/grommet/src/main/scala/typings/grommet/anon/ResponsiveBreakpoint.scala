@@ -16,28 +16,21 @@ trait ResponsiveBreakpoint extends StObject {
 }
 object ResponsiveBreakpoint {
   
-  @scala.inline
-  def apply(): ResponsiveBreakpoint = {
+  inline def apply(): ResponsiveBreakpoint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResponsiveBreakpoint]
   }
   
-  @scala.inline
-  implicit class ResponsiveBreakpointMutableBuilder[Self <: ResponsiveBreakpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ResponsiveBreakpoint](x: Self) {
     
-    @scala.inline
-    def setExtend(value: ExtendType[Record[String, js.Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    inline def setExtend(value: ExtendType[Record[String, js.Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendFunction1(value: /* props */ ExtendProps[Record[String, js.Any]] => ExtendValue[Record[String, js.Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    inline def setExtendFunction1(value: /* props */ ExtendProps[Record[String, js.Any]] => ExtendValue[Record[String, js.Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
+    inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
     
-    @scala.inline
-    def setResponsiveBreakpoint(value: String): Self = StObject.set(x, "responsiveBreakpoint", value.asInstanceOf[js.Any])
+    inline def setResponsiveBreakpoint(value: String): Self = StObject.set(x, "responsiveBreakpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponsiveBreakpointUndefined: Self = StObject.set(x, "responsiveBreakpoint", js.undefined)
+    inline def setResponsiveBreakpointUndefined: Self = StObject.set(x, "responsiveBreakpoint", js.undefined)
   }
 }

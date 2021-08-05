@@ -19,19 +19,15 @@ trait TaskExecution extends StObject {
 }
 object TaskExecution {
   
-  @scala.inline
-  def apply(execTask: TaskReference, platformInstructions: StringDictionary[StringDictionary[String]]): TaskExecution = {
+  inline def apply(execTask: TaskReference, platformInstructions: StringDictionary[StringDictionary[String]]): TaskExecution = {
     val __obj = js.Dynamic.literal(execTask = execTask.asInstanceOf[js.Any], platformInstructions = platformInstructions.asInstanceOf[js.Any])
     __obj.asInstanceOf[TaskExecution]
   }
   
-  @scala.inline
-  implicit class TaskExecutionMutableBuilder[Self <: TaskExecution] (val x: Self) extends AnyVal {
+  extension [Self <: TaskExecution](x: Self) {
     
-    @scala.inline
-    def setExecTask(value: TaskReference): Self = StObject.set(x, "execTask", value.asInstanceOf[js.Any])
+    inline def setExecTask(value: TaskReference): Self = StObject.set(x, "execTask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformInstructions(value: StringDictionary[StringDictionary[String]]): Self = StObject.set(x, "platformInstructions", value.asInstanceOf[js.Any])
+    inline def setPlatformInstructions(value: StringDictionary[StringDictionary[String]]): Self = StObject.set(x, "platformInstructions", value.asInstanceOf[js.Any])
   }
 }

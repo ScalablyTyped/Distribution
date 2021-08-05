@@ -10,19 +10,15 @@ trait NGNArray extends StObject {
 }
 object NGNArray {
   
-  @scala.inline
-  def apply(NGN: js.Array[String]): NGNArray = {
+  inline def apply(NGN: js.Array[String]): NGNArray = {
     val __obj = js.Dynamic.literal(NGN = NGN.asInstanceOf[js.Any])
     __obj.asInstanceOf[NGNArray]
   }
   
-  @scala.inline
-  implicit class NGNArrayMutableBuilder[Self <: NGNArray] (val x: Self) extends AnyVal {
+  extension [Self <: NGNArray](x: Self) {
     
-    @scala.inline
-    def setNGN(value: js.Array[String]): Self = StObject.set(x, "NGN", value.asInstanceOf[js.Any])
+    inline def setNGN(value: js.Array[String]): Self = StObject.set(x, "NGN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNGNVarargs(value: String*): Self = StObject.set(x, "NGN", js.Array(value :_*))
+    inline def setNGNVarargs(value: String*): Self = StObject.set(x, "NGN", js.Array(value :_*))
   }
 }

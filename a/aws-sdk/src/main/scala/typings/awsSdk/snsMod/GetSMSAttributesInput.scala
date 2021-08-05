@@ -13,22 +13,17 @@ trait GetSMSAttributesInput extends StObject {
 }
 object GetSMSAttributesInput {
   
-  @scala.inline
-  def apply(): GetSMSAttributesInput = {
+  inline def apply(): GetSMSAttributesInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSMSAttributesInput]
   }
   
-  @scala.inline
-  implicit class GetSMSAttributesInputMutableBuilder[Self <: GetSMSAttributesInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetSMSAttributesInput](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: ListString): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: ListString): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: String*): Self = StObject.set(x, "attributes", js.Array(value :_*))
   }
 }

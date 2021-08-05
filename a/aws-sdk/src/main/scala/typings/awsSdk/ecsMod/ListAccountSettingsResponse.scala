@@ -18,28 +18,21 @@ trait ListAccountSettingsResponse extends StObject {
 }
 object ListAccountSettingsResponse {
   
-  @scala.inline
-  def apply(): ListAccountSettingsResponse = {
+  inline def apply(): ListAccountSettingsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListAccountSettingsResponse]
   }
   
-  @scala.inline
-  implicit class ListAccountSettingsResponseMutableBuilder[Self <: ListAccountSettingsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListAccountSettingsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setSettings(value: Settings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+    inline def setSettings(value: Settings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
+    inline def setSettingsUndefined: Self = StObject.set(x, "settings", js.undefined)
     
-    @scala.inline
-    def setSettingsVarargs(value: Setting*): Self = StObject.set(x, "settings", js.Array(value :_*))
+    inline def setSettingsVarargs(value: Setting*): Self = StObject.set(x, "settings", js.Array(value :_*))
   }
 }

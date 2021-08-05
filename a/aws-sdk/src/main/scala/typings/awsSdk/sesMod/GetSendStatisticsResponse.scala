@@ -13,22 +13,17 @@ trait GetSendStatisticsResponse extends StObject {
 }
 object GetSendStatisticsResponse {
   
-  @scala.inline
-  def apply(): GetSendStatisticsResponse = {
+  inline def apply(): GetSendStatisticsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSendStatisticsResponse]
   }
   
-  @scala.inline
-  implicit class GetSendStatisticsResponseMutableBuilder[Self <: GetSendStatisticsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetSendStatisticsResponse](x: Self) {
     
-    @scala.inline
-    def setSendDataPoints(value: SendDataPointList): Self = StObject.set(x, "SendDataPoints", value.asInstanceOf[js.Any])
+    inline def setSendDataPoints(value: SendDataPointList): Self = StObject.set(x, "SendDataPoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendDataPointsUndefined: Self = StObject.set(x, "SendDataPoints", js.undefined)
+    inline def setSendDataPointsUndefined: Self = StObject.set(x, "SendDataPoints", js.undefined)
     
-    @scala.inline
-    def setSendDataPointsVarargs(value: SendDataPoint*): Self = StObject.set(x, "SendDataPoints", js.Array(value :_*))
+    inline def setSendDataPointsVarargs(value: SendDataPoint*): Self = StObject.set(x, "SendDataPoints", js.Array(value :_*))
   }
 }

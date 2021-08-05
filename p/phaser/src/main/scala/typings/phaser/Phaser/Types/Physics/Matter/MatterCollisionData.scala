@@ -95,8 +95,7 @@ trait MatterCollisionData extends StObject {
 }
 object MatterCollisionData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     axisBody: BodyType,
     axisNumber: Double,
     bodyA: BodyType,
@@ -119,61 +118,42 @@ object MatterCollisionData {
     __obj.asInstanceOf[MatterCollisionData]
   }
   
-  @scala.inline
-  implicit class MatterCollisionDataMutableBuilder[Self <: MatterCollisionData] (val x: Self) extends AnyVal {
+  extension [Self <: MatterCollisionData](x: Self) {
     
-    @scala.inline
-    def setAxisBody(value: BodyType): Self = StObject.set(x, "axisBody", value.asInstanceOf[js.Any])
+    inline def setAxisBody(value: BodyType): Self = StObject.set(x, "axisBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisNumber(value: Double): Self = StObject.set(x, "axisNumber", value.asInstanceOf[js.Any])
+    inline def setAxisNumber(value: Double): Self = StObject.set(x, "axisNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyA(value: BodyType): Self = StObject.set(x, "bodyA", value.asInstanceOf[js.Any])
+    inline def setBodyA(value: BodyType): Self = StObject.set(x, "bodyA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyB(value: BodyType): Self = StObject.set(x, "bodyB", value.asInstanceOf[js.Any])
+    inline def setBodyB(value: BodyType): Self = StObject.set(x, "bodyB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollided(value: Boolean): Self = StObject.set(x, "collided", value.asInstanceOf[js.Any])
+    inline def setCollided(value: Boolean): Self = StObject.set(x, "collided", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
+    inline def setFriction(value: Double): Self = StObject.set(x, "friction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrictionStatic(value: Double): Self = StObject.set(x, "frictionStatic", value.asInstanceOf[js.Any])
+    inline def setFrictionStatic(value: Double): Self = StObject.set(x, "frictionStatic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInverseMass(value: Double): Self = StObject.set(x, "inverseMass", value.asInstanceOf[js.Any])
+    inline def setInverseMass(value: Double): Self = StObject.set(x, "inverseMass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormal(value: Vector): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
+    inline def setNormal(value: Vector): Self = StObject.set(x, "normal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentA(value: BodyType): Self = StObject.set(x, "parentA", value.asInstanceOf[js.Any])
+    inline def setParentA(value: BodyType): Self = StObject.set(x, "parentA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentB(value: BodyType): Self = StObject.set(x, "parentB", value.asInstanceOf[js.Any])
+    inline def setParentB(value: BodyType): Self = StObject.set(x, "parentB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPenetration(value: Vector): Self = StObject.set(x, "penetration", value.asInstanceOf[js.Any])
+    inline def setPenetration(value: Vector): Self = StObject.set(x, "penetration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestitution(value: Double): Self = StObject.set(x, "restitution", value.asInstanceOf[js.Any])
+    inline def setRestitution(value: Double): Self = StObject.set(x, "restitution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlop(value: Double): Self = StObject.set(x, "slop", value.asInstanceOf[js.Any])
+    inline def setSlop(value: Double): Self = StObject.set(x, "slop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupports(value: js.Array[Vector]): Self = StObject.set(x, "supports", value.asInstanceOf[js.Any])
+    inline def setSupports(value: js.Array[Vector]): Self = StObject.set(x, "supports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsVarargs(value: Vector*): Self = StObject.set(x, "supports", js.Array(value :_*))
+    inline def setSupportsVarargs(value: Vector*): Self = StObject.set(x, "supports", js.Array(value :_*))
     
-    @scala.inline
-    def setTangent(value: Vector): Self = StObject.set(x, "tangent", value.asInstanceOf[js.Any])
+    inline def setTangent(value: Vector): Self = StObject.set(x, "tangent", value.asInstanceOf[js.Any])
   }
 }

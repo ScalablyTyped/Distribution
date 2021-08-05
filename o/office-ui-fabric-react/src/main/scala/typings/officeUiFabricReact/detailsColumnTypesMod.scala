@@ -116,114 +116,80 @@ object detailsColumnTypesMod {
   }
   object IDetailsColumnProps {
     
-    @scala.inline
-    def apply(column: IColumn, columnIndex: Double): IDetailsColumnProps = {
+    inline def apply(column: IColumn, columnIndex: Double): IDetailsColumnProps = {
       val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], columnIndex = columnIndex.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDetailsColumnProps]
     }
     
-    @scala.inline
-    implicit class IDetailsColumnPropsMutableBuilder[Self <: IDetailsColumnProps] (val x: Self) extends AnyVal {
+    extension [Self <: IDetailsColumnProps](x: Self) {
       
-      @scala.inline
-      def setCellStyleProps(value: ICellStyleProps): Self = StObject.set(x, "cellStyleProps", value.asInstanceOf[js.Any])
+      inline def setCellStyleProps(value: ICellStyleProps): Self = StObject.set(x, "cellStyleProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellStylePropsUndefined: Self = StObject.set(x, "cellStyleProps", js.undefined)
+      inline def setCellStylePropsUndefined: Self = StObject.set(x, "cellStyleProps", js.undefined)
       
-      @scala.inline
-      def setColumn(value: IColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: IColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+      inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRef(value: () => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction0(value))
+      inline def setComponentRef(value: () => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setDragDropHelper(value: IDragDropHelper): Self = StObject.set(x, "dragDropHelper", value.asInstanceOf[js.Any])
+      inline def setDragDropHelper(value: IDragDropHelper): Self = StObject.set(x, "dragDropHelper", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDragDropHelperNull: Self = StObject.set(x, "dragDropHelper", null)
+      inline def setDragDropHelperNull: Self = StObject.set(x, "dragDropHelper", null)
       
-      @scala.inline
-      def setDragDropHelperUndefined: Self = StObject.set(x, "dragDropHelper", js.undefined)
+      inline def setDragDropHelperUndefined: Self = StObject.set(x, "dragDropHelper", js.undefined)
       
-      @scala.inline
-      def setIsDraggable(value: Boolean): Self = StObject.set(x, "isDraggable", value.asInstanceOf[js.Any])
+      inline def setIsDraggable(value: Boolean): Self = StObject.set(x, "isDraggable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDraggableUndefined: Self = StObject.set(x, "isDraggable", js.undefined)
+      inline def setIsDraggableUndefined: Self = StObject.set(x, "isDraggable", js.undefined)
       
-      @scala.inline
-      def setIsDropped(value: Boolean): Self = StObject.set(x, "isDropped", value.asInstanceOf[js.Any])
+      inline def setIsDropped(value: Boolean): Self = StObject.set(x, "isDropped", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDroppedUndefined: Self = StObject.set(x, "isDropped", js.undefined)
+      inline def setIsDroppedUndefined: Self = StObject.set(x, "isDropped", js.undefined)
       
-      @scala.inline
-      def setOnColumnClick(value: (/* ev */ MouseEvent[HTMLElement, NativeMouseEvent], /* column */ IColumn) => Unit): Self = StObject.set(x, "onColumnClick", js.Any.fromFunction2(value))
+      inline def setOnColumnClick(value: (/* ev */ MouseEvent[HTMLElement, NativeMouseEvent], /* column */ IColumn) => Unit): Self = StObject.set(x, "onColumnClick", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnColumnClickUndefined: Self = StObject.set(x, "onColumnClick", js.undefined)
+      inline def setOnColumnClickUndefined: Self = StObject.set(x, "onColumnClick", js.undefined)
       
-      @scala.inline
-      def setOnColumnContextMenu(value: (/* column */ IColumn, /* ev */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onColumnContextMenu", js.Any.fromFunction2(value))
+      inline def setOnColumnContextMenu(value: (/* column */ IColumn, /* ev */ MouseEvent[HTMLElement, NativeMouseEvent]) => Unit): Self = StObject.set(x, "onColumnContextMenu", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnColumnContextMenuUndefined: Self = StObject.set(x, "onColumnContextMenu", js.undefined)
+      inline def setOnColumnContextMenuUndefined: Self = StObject.set(x, "onColumnContextMenu", js.undefined)
       
-      @scala.inline
-      def setOnRenderColumnHeaderTooltip(
+      inline def setOnRenderColumnHeaderTooltip(
         value: (/* props */ js.UndefOr[IDetailsColumnRenderTooltipProps], /* defaultRender */ js.UndefOr[
               js.Function1[/* props */ js.UndefOr[IDetailsColumnRenderTooltipProps], Element | Null]
             ]) => Element | Null
       ): Self = StObject.set(x, "onRenderColumnHeaderTooltip", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRenderColumnHeaderTooltipUndefined: Self = StObject.set(x, "onRenderColumnHeaderTooltip", js.undefined)
+      inline def setOnRenderColumnHeaderTooltipUndefined: Self = StObject.set(x, "onRenderColumnHeaderTooltip", js.undefined)
       
-      @scala.inline
-      def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+      inline def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
+      inline def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
       
-      @scala.inline
-      def setSetDraggedItemIndex(value: /* itemIndex */ Double => Unit): Self = StObject.set(x, "setDraggedItemIndex", js.Any.fromFunction1(value))
+      inline def setSetDraggedItemIndex(value: /* itemIndex */ Double => Unit): Self = StObject.set(x, "setDraggedItemIndex", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetDraggedItemIndexUndefined: Self = StObject.set(x, "setDraggedItemIndex", js.undefined)
+      inline def setSetDraggedItemIndexUndefined: Self = StObject.set(x, "setDraggedItemIndex", js.undefined)
       
-      @scala.inline
-      def setStyles(value: IStyleFunctionOrObject[IDetailsColumnStyleProps, IDetailsColumnStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: IStyleFunctionOrObject[IDetailsColumnStyleProps, IDetailsColumnStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(value: IDetailsColumnStyleProps => DeepPartial[IDetailsColumnStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+      inline def setStylesFunction1(value: IDetailsColumnStyleProps => DeepPartial[IDetailsColumnStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setUpdateDragInfo(value: (/* props */ ItemIndex, /* event */ js.UndefOr[typings.std.MouseEvent]) => Unit): Self = StObject.set(x, "updateDragInfo", js.Any.fromFunction2(value))
+      inline def setUpdateDragInfo(value: (/* props */ ItemIndex, /* event */ js.UndefOr[typings.std.MouseEvent]) => Unit): Self = StObject.set(x, "updateDragInfo", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUpdateDragInfoUndefined: Self = StObject.set(x, "updateDragInfo", js.undefined)
+      inline def setUpdateDragInfoUndefined: Self = StObject.set(x, "updateDragInfo", js.undefined)
       
-      @scala.inline
-      def setUseFastIcons(value: Boolean): Self = StObject.set(x, "useFastIcons", value.asInstanceOf[js.Any])
+      inline def setUseFastIcons(value: Boolean): Self = StObject.set(x, "useFastIcons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseFastIconsUndefined: Self = StObject.set(x, "useFastIcons", js.undefined)
+      inline def setUseFastIconsUndefined: Self = StObject.set(x, "useFastIcons", js.undefined)
     }
   }
   
@@ -239,20 +205,16 @@ object detailsColumnTypesMod {
   }
   object IDetailsColumnRenderTooltipProps {
     
-    @scala.inline
-    def apply(): IDetailsColumnRenderTooltipProps = {
+    inline def apply(): IDetailsColumnRenderTooltipProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDetailsColumnRenderTooltipProps]
     }
     
-    @scala.inline
-    implicit class IDetailsColumnRenderTooltipPropsMutableBuilder[Self <: IDetailsColumnRenderTooltipProps] (val x: Self) extends AnyVal {
+    extension [Self <: IDetailsColumnRenderTooltipProps](x: Self) {
       
-      @scala.inline
-      def setColumn(value: IColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+      inline def setColumn(value: IColumn): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+      inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     }
   }
   
@@ -310,74 +272,52 @@ object detailsColumnTypesMod {
   }
   object IDetailsColumnStyleProps {
     
-    @scala.inline
-    def apply(cellStyleProps: ICellStyleProps, theme: ITheme): IDetailsColumnStyleProps = {
+    inline def apply(cellStyleProps: ICellStyleProps, theme: ITheme): IDetailsColumnStyleProps = {
       val __obj = js.Dynamic.literal(cellStyleProps = cellStyleProps.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any])
       __obj.asInstanceOf[IDetailsColumnStyleProps]
     }
     
-    @scala.inline
-    implicit class IDetailsColumnStylePropsMutableBuilder[Self <: IDetailsColumnStyleProps] (val x: Self) extends AnyVal {
+    extension [Self <: IDetailsColumnStyleProps](x: Self) {
       
-      @scala.inline
-      def setCellStyleProps(value: ICellStyleProps): Self = StObject.set(x, "cellStyleProps", value.asInstanceOf[js.Any])
+      inline def setCellStyleProps(value: ICellStyleProps): Self = StObject.set(x, "cellStyleProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderClassName(value: String): Self = StObject.set(x, "headerClassName", value.asInstanceOf[js.Any])
+      inline def setHeaderClassName(value: String): Self = StObject.set(x, "headerClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderClassNameUndefined: Self = StObject.set(x, "headerClassName", js.undefined)
+      inline def setHeaderClassNameUndefined: Self = StObject.set(x, "headerClassName", js.undefined)
       
-      @scala.inline
-      def setIconClassName(value: String): Self = StObject.set(x, "iconClassName", value.asInstanceOf[js.Any])
+      inline def setIconClassName(value: String): Self = StObject.set(x, "iconClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconClassNameUndefined: Self = StObject.set(x, "iconClassName", js.undefined)
+      inline def setIconClassNameUndefined: Self = StObject.set(x, "iconClassName", js.undefined)
       
-      @scala.inline
-      def setIsActionable(value: Boolean): Self = StObject.set(x, "isActionable", value.asInstanceOf[js.Any])
+      inline def setIsActionable(value: Boolean): Self = StObject.set(x, "isActionable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsActionableUndefined: Self = StObject.set(x, "isActionable", js.undefined)
+      inline def setIsActionableUndefined: Self = StObject.set(x, "isActionable", js.undefined)
       
-      @scala.inline
-      def setIsEmpty(value: Boolean): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
+      inline def setIsEmpty(value: Boolean): Self = StObject.set(x, "isEmpty", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsEmptyUndefined: Self = StObject.set(x, "isEmpty", js.undefined)
+      inline def setIsEmptyUndefined: Self = StObject.set(x, "isEmpty", js.undefined)
       
-      @scala.inline
-      def setIsIconOnly(value: Boolean): Self = StObject.set(x, "isIconOnly", value.asInstanceOf[js.Any])
+      inline def setIsIconOnly(value: Boolean): Self = StObject.set(x, "isIconOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIconOnlyUndefined: Self = StObject.set(x, "isIconOnly", js.undefined)
+      inline def setIsIconOnlyUndefined: Self = StObject.set(x, "isIconOnly", js.undefined)
       
-      @scala.inline
-      def setIsIconVisible(value: Boolean): Self = StObject.set(x, "isIconVisible", value.asInstanceOf[js.Any])
+      inline def setIsIconVisible(value: Boolean): Self = StObject.set(x, "isIconVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIconVisibleUndefined: Self = StObject.set(x, "isIconVisible", js.undefined)
+      inline def setIsIconVisibleUndefined: Self = StObject.set(x, "isIconVisible", js.undefined)
       
-      @scala.inline
-      def setIsPadded(value: Boolean): Self = StObject.set(x, "isPadded", value.asInstanceOf[js.Any])
+      inline def setIsPadded(value: Boolean): Self = StObject.set(x, "isPadded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsPaddedUndefined: Self = StObject.set(x, "isPadded", js.undefined)
+      inline def setIsPaddedUndefined: Self = StObject.set(x, "isPadded", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionDurationDrag(value: Double): Self = StObject.set(x, "transitionDurationDrag", value.asInstanceOf[js.Any])
+      inline def setTransitionDurationDrag(value: Double): Self = StObject.set(x, "transitionDurationDrag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionDurationDragUndefined: Self = StObject.set(x, "transitionDurationDrag", js.undefined)
+      inline def setTransitionDurationDragUndefined: Self = StObject.set(x, "transitionDurationDrag", js.undefined)
       
-      @scala.inline
-      def setTransitionDurationDrop(value: Double): Self = StObject.set(x, "transitionDurationDrop", value.asInstanceOf[js.Any])
+      inline def setTransitionDurationDrop(value: Double): Self = StObject.set(x, "transitionDurationDrop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionDurationDropUndefined: Self = StObject.set(x, "transitionDurationDrop", js.undefined)
+      inline def setTransitionDurationDropUndefined: Self = StObject.set(x, "transitionDurationDrop", js.undefined)
     }
   }
   
@@ -455,140 +395,96 @@ object detailsColumnTypesMod {
   }
   object IDetailsColumnStyles {
     
-    @scala.inline
-    def apply(): IDetailsColumnStyles = {
+    inline def apply(): IDetailsColumnStyles = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IDetailsColumnStyles]
     }
     
-    @scala.inline
-    implicit class IDetailsColumnStylesMutableBuilder[Self <: IDetailsColumnStyles] (val x: Self) extends AnyVal {
+    extension [Self <: IDetailsColumnStyles](x: Self) {
       
-      @scala.inline
-      def setAccessibleLabel(value: IStyle): Self = StObject.set(x, "accessibleLabel", value.asInstanceOf[js.Any])
+      inline def setAccessibleLabel(value: IStyle): Self = StObject.set(x, "accessibleLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessibleLabelNull: Self = StObject.set(x, "accessibleLabel", null)
+      inline def setAccessibleLabelNull: Self = StObject.set(x, "accessibleLabel", null)
       
-      @scala.inline
-      def setAccessibleLabelUndefined: Self = StObject.set(x, "accessibleLabel", js.undefined)
+      inline def setAccessibleLabelUndefined: Self = StObject.set(x, "accessibleLabel", js.undefined)
       
-      @scala.inline
-      def setBorderAfterDropping(value: IStyle): Self = StObject.set(x, "borderAfterDropping", value.asInstanceOf[js.Any])
+      inline def setBorderAfterDropping(value: IStyle): Self = StObject.set(x, "borderAfterDropping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderAfterDroppingNull: Self = StObject.set(x, "borderAfterDropping", null)
+      inline def setBorderAfterDroppingNull: Self = StObject.set(x, "borderAfterDropping", null)
       
-      @scala.inline
-      def setBorderAfterDroppingUndefined: Self = StObject.set(x, "borderAfterDropping", js.undefined)
+      inline def setBorderAfterDroppingUndefined: Self = StObject.set(x, "borderAfterDropping", js.undefined)
       
-      @scala.inline
-      def setBorderWhileDragging(value: IStyle): Self = StObject.set(x, "borderWhileDragging", value.asInstanceOf[js.Any])
+      inline def setBorderWhileDragging(value: IStyle): Self = StObject.set(x, "borderWhileDragging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderWhileDraggingNull: Self = StObject.set(x, "borderWhileDragging", null)
+      inline def setBorderWhileDraggingNull: Self = StObject.set(x, "borderWhileDragging", null)
       
-      @scala.inline
-      def setBorderWhileDraggingUndefined: Self = StObject.set(x, "borderWhileDragging", js.undefined)
+      inline def setBorderWhileDraggingUndefined: Self = StObject.set(x, "borderWhileDragging", js.undefined)
       
-      @scala.inline
-      def setCellName(value: IStyle): Self = StObject.set(x, "cellName", value.asInstanceOf[js.Any])
+      inline def setCellName(value: IStyle): Self = StObject.set(x, "cellName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellNameNull: Self = StObject.set(x, "cellName", null)
+      inline def setCellNameNull: Self = StObject.set(x, "cellName", null)
       
-      @scala.inline
-      def setCellNameUndefined: Self = StObject.set(x, "cellName", js.undefined)
+      inline def setCellNameUndefined: Self = StObject.set(x, "cellName", js.undefined)
       
-      @scala.inline
-      def setCellTitle(value: IStyle): Self = StObject.set(x, "cellTitle", value.asInstanceOf[js.Any])
+      inline def setCellTitle(value: IStyle): Self = StObject.set(x, "cellTitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellTitleNull: Self = StObject.set(x, "cellTitle", null)
+      inline def setCellTitleNull: Self = StObject.set(x, "cellTitle", null)
       
-      @scala.inline
-      def setCellTitleUndefined: Self = StObject.set(x, "cellTitle", js.undefined)
+      inline def setCellTitleUndefined: Self = StObject.set(x, "cellTitle", js.undefined)
       
-      @scala.inline
-      def setCellTooltip(value: IStyle): Self = StObject.set(x, "cellTooltip", value.asInstanceOf[js.Any])
+      inline def setCellTooltip(value: IStyle): Self = StObject.set(x, "cellTooltip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCellTooltipNull: Self = StObject.set(x, "cellTooltip", null)
+      inline def setCellTooltipNull: Self = StObject.set(x, "cellTooltip", null)
       
-      @scala.inline
-      def setCellTooltipUndefined: Self = StObject.set(x, "cellTooltip", js.undefined)
+      inline def setCellTooltipUndefined: Self = StObject.set(x, "cellTooltip", js.undefined)
       
-      @scala.inline
-      def setFilterChevron(value: IStyle): Self = StObject.set(x, "filterChevron", value.asInstanceOf[js.Any])
+      inline def setFilterChevron(value: IStyle): Self = StObject.set(x, "filterChevron", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilterChevronNull: Self = StObject.set(x, "filterChevron", null)
+      inline def setFilterChevronNull: Self = StObject.set(x, "filterChevron", null)
       
-      @scala.inline
-      def setFilterChevronUndefined: Self = StObject.set(x, "filterChevron", js.undefined)
+      inline def setFilterChevronUndefined: Self = StObject.set(x, "filterChevron", js.undefined)
       
-      @scala.inline
-      def setGripperBarVerticalStyle(value: IStyle): Self = StObject.set(x, "gripperBarVerticalStyle", value.asInstanceOf[js.Any])
+      inline def setGripperBarVerticalStyle(value: IStyle): Self = StObject.set(x, "gripperBarVerticalStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGripperBarVerticalStyleNull: Self = StObject.set(x, "gripperBarVerticalStyle", null)
+      inline def setGripperBarVerticalStyleNull: Self = StObject.set(x, "gripperBarVerticalStyle", null)
       
-      @scala.inline
-      def setGripperBarVerticalStyleUndefined: Self = StObject.set(x, "gripperBarVerticalStyle", js.undefined)
+      inline def setGripperBarVerticalStyleUndefined: Self = StObject.set(x, "gripperBarVerticalStyle", js.undefined)
       
-      @scala.inline
-      def setIconClassName(value: IStyle): Self = StObject.set(x, "iconClassName", value.asInstanceOf[js.Any])
+      inline def setIconClassName(value: IStyle): Self = StObject.set(x, "iconClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconClassNameNull: Self = StObject.set(x, "iconClassName", null)
+      inline def setIconClassNameNull: Self = StObject.set(x, "iconClassName", null)
       
-      @scala.inline
-      def setIconClassNameUndefined: Self = StObject.set(x, "iconClassName", js.undefined)
+      inline def setIconClassNameUndefined: Self = StObject.set(x, "iconClassName", js.undefined)
       
-      @scala.inline
-      def setNearIcon(value: IStyle): Self = StObject.set(x, "nearIcon", value.asInstanceOf[js.Any])
+      inline def setNearIcon(value: IStyle): Self = StObject.set(x, "nearIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNearIconNull: Self = StObject.set(x, "nearIcon", null)
+      inline def setNearIconNull: Self = StObject.set(x, "nearIcon", null)
       
-      @scala.inline
-      def setNearIconUndefined: Self = StObject.set(x, "nearIcon", js.undefined)
+      inline def setNearIconUndefined: Self = StObject.set(x, "nearIcon", js.undefined)
       
-      @scala.inline
-      def setNoBorderAfterDropping(value: IStyle): Self = StObject.set(x, "noBorderAfterDropping", value.asInstanceOf[js.Any])
+      inline def setNoBorderAfterDropping(value: IStyle): Self = StObject.set(x, "noBorderAfterDropping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoBorderAfterDroppingNull: Self = StObject.set(x, "noBorderAfterDropping", null)
+      inline def setNoBorderAfterDroppingNull: Self = StObject.set(x, "noBorderAfterDropping", null)
       
-      @scala.inline
-      def setNoBorderAfterDroppingUndefined: Self = StObject.set(x, "noBorderAfterDropping", js.undefined)
+      inline def setNoBorderAfterDroppingUndefined: Self = StObject.set(x, "noBorderAfterDropping", js.undefined)
       
-      @scala.inline
-      def setNoBorderWhileDragging(value: IStyle): Self = StObject.set(x, "noBorderWhileDragging", value.asInstanceOf[js.Any])
+      inline def setNoBorderWhileDragging(value: IStyle): Self = StObject.set(x, "noBorderWhileDragging", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNoBorderWhileDraggingNull: Self = StObject.set(x, "noBorderWhileDragging", null)
+      inline def setNoBorderWhileDraggingNull: Self = StObject.set(x, "noBorderWhileDragging", null)
       
-      @scala.inline
-      def setNoBorderWhileDraggingUndefined: Self = StObject.set(x, "noBorderWhileDragging", js.undefined)
+      inline def setNoBorderWhileDraggingUndefined: Self = StObject.set(x, "noBorderWhileDragging", js.undefined)
       
-      @scala.inline
-      def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootNull: Self = StObject.set(x, "root", null)
+      inline def setRootNull: Self = StObject.set(x, "root", null)
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
       
-      @scala.inline
-      def setSortIcon(value: IStyle): Self = StObject.set(x, "sortIcon", value.asInstanceOf[js.Any])
+      inline def setSortIcon(value: IStyle): Self = StObject.set(x, "sortIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortIconNull: Self = StObject.set(x, "sortIcon", null)
+      inline def setSortIconNull: Self = StObject.set(x, "sortIcon", null)
       
-      @scala.inline
-      def setSortIconUndefined: Self = StObject.set(x, "sortIcon", js.undefined)
+      inline def setSortIconUndefined: Self = StObject.set(x, "sortIcon", js.undefined)
     }
   }
 }

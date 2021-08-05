@@ -10,16 +10,13 @@ trait StringResult extends StObject {
 }
 object StringResult {
   
-  @scala.inline
-  def apply(get_value: () => String): StringResult = {
+  inline def apply(get_value: () => String): StringResult = {
     val __obj = js.Dynamic.literal(get_value = js.Any.fromFunction0(get_value))
     __obj.asInstanceOf[StringResult]
   }
   
-  @scala.inline
-  implicit class StringResultMutableBuilder[Self <: StringResult] (val x: Self) extends AnyVal {
+  extension [Self <: StringResult](x: Self) {
     
-    @scala.inline
-    def setGet_value(value: () => String): Self = StObject.set(x, "get_value", js.Any.fromFunction0(value))
+    inline def setGet_value(value: () => String): Self = StObject.set(x, "get_value", js.Any.fromFunction0(value))
   }
 }

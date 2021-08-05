@@ -14,25 +14,25 @@ object walkerMod {
   class Walker protected () extends StObject {
     def this(modulePath: String) = this()
     
-    var cache: js.Any = js.native
+    /* private */ var cache: js.Any = js.native
     
-    var detectNativeModuleType: js.Any = js.native
+    /* private */ var detectNativeModuleType: js.Any = js.native
     
     def getRootModule(): String = js.native
     
-    var loadPackageJSON: js.Any = js.native
+    /* private */ var loadPackageJSON: js.Any = js.native
     
-    var modules: js.Any = js.native
+    /* private */ var modules: js.Any = js.native
     
-    var relativeModule: js.Any = js.native
+    /* private */ var relativeModule: js.Any = js.native
     
-    var rootModule: js.Any = js.native
+    /* private */ var rootModule: js.Any = js.native
     
-    var walkDependenciesForModule: js.Any = js.native
+    /* private */ var walkDependenciesForModule: js.Any = js.native
     
-    var walkDependenciesForModuleInModule: js.Any = js.native
+    /* private */ var walkDependenciesForModuleInModule: js.Any = js.native
     
-    var walkHistory: js.Any = js.native
+    /* private */ var walkHistory: js.Any = js.native
     
     def walkTree(): js.Promise[js.Array[Module]] = js.native
   }
@@ -49,26 +49,20 @@ object walkerMod {
   }
   object Module {
     
-    @scala.inline
-    def apply(depType: DepType, name: String, nativeModuleType: NativeModuleType, path: String): Module = {
+    inline def apply(depType: DepType, name: String, nativeModuleType: NativeModuleType, path: String): Module = {
       val __obj = js.Dynamic.literal(depType = depType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nativeModuleType = nativeModuleType.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Module]
     }
     
-    @scala.inline
-    implicit class ModuleMutableBuilder[Self <: Module] (val x: Self) extends AnyVal {
+    extension [Self <: Module](x: Self) {
       
-      @scala.inline
-      def setDepType(value: DepType): Self = StObject.set(x, "depType", value.asInstanceOf[js.Any])
+      inline def setDepType(value: DepType): Self = StObject.set(x, "depType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNativeModuleType(value: NativeModuleType): Self = StObject.set(x, "nativeModuleType", value.asInstanceOf[js.Any])
+      inline def setNativeModuleType(value: NativeModuleType): Self = StObject.set(x, "nativeModuleType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
   
@@ -84,8 +78,7 @@ object walkerMod {
   }
   object PackageJSON {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dependencies: StringDictionary[VersionRange],
       devDependencies: StringDictionary[VersionRange],
       name: String,
@@ -95,20 +88,15 @@ object walkerMod {
       __obj.asInstanceOf[PackageJSON]
     }
     
-    @scala.inline
-    implicit class PackageJSONMutableBuilder[Self <: PackageJSON] (val x: Self) extends AnyVal {
+    extension [Self <: PackageJSON](x: Self) {
       
-      @scala.inline
-      def setDependencies(value: StringDictionary[VersionRange]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+      inline def setDependencies(value: StringDictionary[VersionRange]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDevDependencies(value: StringDictionary[VersionRange]): Self = StObject.set(x, "devDependencies", value.asInstanceOf[js.Any])
+      inline def setDevDependencies(value: StringDictionary[VersionRange]): Self = StObject.set(x, "devDependencies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionalDependencies(value: StringDictionary[VersionRange]): Self = StObject.set(x, "optionalDependencies", value.asInstanceOf[js.Any])
+      inline def setOptionalDependencies(value: StringDictionary[VersionRange]): Self = StObject.set(x, "optionalDependencies", value.asInstanceOf[js.Any])
     }
   }
   

@@ -18,28 +18,21 @@ trait ListCopyJobsOutput extends StObject {
 }
 object ListCopyJobsOutput {
   
-  @scala.inline
-  def apply(): ListCopyJobsOutput = {
+  inline def apply(): ListCopyJobsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListCopyJobsOutput]
   }
   
-  @scala.inline
-  implicit class ListCopyJobsOutputMutableBuilder[Self <: ListCopyJobsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListCopyJobsOutput](x: Self) {
     
-    @scala.inline
-    def setCopyJobs(value: CopyJobsList): Self = StObject.set(x, "CopyJobs", value.asInstanceOf[js.Any])
+    inline def setCopyJobs(value: CopyJobsList): Self = StObject.set(x, "CopyJobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCopyJobsUndefined: Self = StObject.set(x, "CopyJobs", js.undefined)
+    inline def setCopyJobsUndefined: Self = StObject.set(x, "CopyJobs", js.undefined)
     
-    @scala.inline
-    def setCopyJobsVarargs(value: CopyJob*): Self = StObject.set(x, "CopyJobs", js.Array(value :_*))
+    inline def setCopyJobsVarargs(value: CopyJob*): Self = StObject.set(x, "CopyJobs", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

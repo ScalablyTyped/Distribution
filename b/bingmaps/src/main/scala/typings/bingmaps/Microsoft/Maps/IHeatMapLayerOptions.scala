@@ -51,49 +51,35 @@ trait IHeatMapLayerOptions extends StObject {
 }
 object IHeatMapLayerOptions {
   
-  @scala.inline
-  def apply(): IHeatMapLayerOptions = {
+  inline def apply(): IHeatMapLayerOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IHeatMapLayerOptions]
   }
   
-  @scala.inline
-  implicit class IHeatMapLayerOptionsMutableBuilder[Self <: IHeatMapLayerOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IHeatMapLayerOptions](x: Self) {
     
-    @scala.inline
-    def setColorGradient(value: IDictionary[String]): Self = StObject.set(x, "colorGradient", value.asInstanceOf[js.Any])
+    inline def setColorGradient(value: IDictionary[String]): Self = StObject.set(x, "colorGradient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorGradientUndefined: Self = StObject.set(x, "colorGradient", js.undefined)
+    inline def setColorGradientUndefined: Self = StObject.set(x, "colorGradient", js.undefined)
     
-    @scala.inline
-    def setIntensity(value: Double): Self = StObject.set(x, "intensity", value.asInstanceOf[js.Any])
+    inline def setIntensity(value: Double): Self = StObject.set(x, "intensity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntensityUndefined: Self = StObject.set(x, "intensity", js.undefined)
+    inline def setIntensityUndefined: Self = StObject.set(x, "intensity", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
+    inline def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
-    @scala.inline
-    def setUnit(value: meters | pixel): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: meters | pixel): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
+    inline def setUnitUndefined: Self = StObject.set(x, "unit", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

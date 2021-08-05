@@ -81,11 +81,11 @@ object completeChildSourceMod {
     /* CompleteClass */
     override def getCompleteChild(childKey: String): Node | Null = js.native
     
-    var optCompleteServerCache_ : js.Any = js.native
+    /* private */ var optCompleteServerCache_ : js.Any = js.native
     
-    var viewCache_ : js.Any = js.native
+    /* private */ var viewCache_ : js.Any = js.native
     
-    var writes_ : js.Any = js.native
+    /* private */ var writes_ : js.Any = js.native
   }
   
   trait CompleteChildSource extends StObject {
@@ -106,8 +106,7 @@ object completeChildSourceMod {
   }
   object CompleteChildSource {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getChildAfterChild: (Index, NamedNode, Boolean) => NamedNode | Null,
       getCompleteChild: String => Node | Null
     ): CompleteChildSource = {
@@ -115,14 +114,11 @@ object completeChildSourceMod {
       __obj.asInstanceOf[CompleteChildSource]
     }
     
-    @scala.inline
-    implicit class CompleteChildSourceMutableBuilder[Self <: CompleteChildSource] (val x: Self) extends AnyVal {
+    extension [Self <: CompleteChildSource](x: Self) {
       
-      @scala.inline
-      def setGetChildAfterChild(value: (Index, NamedNode, Boolean) => NamedNode | Null): Self = StObject.set(x, "getChildAfterChild", js.Any.fromFunction3(value))
+      inline def setGetChildAfterChild(value: (Index, NamedNode, Boolean) => NamedNode | Null): Self = StObject.set(x, "getChildAfterChild", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetCompleteChild(value: String => Node | Null): Self = StObject.set(x, "getCompleteChild", js.Any.fromFunction1(value))
+      inline def setGetCompleteChild(value: String => Node | Null): Self = StObject.set(x, "getCompleteChild", js.Any.fromFunction1(value))
     }
   }
 }

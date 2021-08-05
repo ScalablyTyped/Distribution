@@ -11,8 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def config(configuration: PartialTestConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(configuration.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def config(configuration: PartialTestConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(configuration.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* Inlined std.Readonly<owasp-password-strength-test.owasp-password-strength-test.TestConfig> */
   object configs {
@@ -38,8 +37,7 @@ object mod {
     val minPhraseLength: Double = js.native
   }
   
-  @scala.inline
-  def test(password: String): TestResult = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(password.asInstanceOf[js.Any]).asInstanceOf[TestResult]
+  inline def test(password: String): TestResult = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(password.asInstanceOf[js.Any]).asInstanceOf[TestResult]
   
   object tests {
     
@@ -50,14 +48,12 @@ object mod {
     @JSImport("owasp-password-strength-test", "tests.optional")
     @js.native
     def optional: js.Array[PasswordTest] = js.native
-    @scala.inline
-    def optional_=(x: js.Array[PasswordTest]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("optional")(x.asInstanceOf[js.Any])
+    inline def optional_=(x: js.Array[PasswordTest]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("optional")(x.asInstanceOf[js.Any])
     
     @JSImport("owasp-password-strength-test", "tests.required")
     @js.native
     def required: js.Array[PasswordTest] = js.native
-    @scala.inline
-    def required_=(x: js.Array[PasswordTest]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("required")(x.asInstanceOf[js.Any])
+    inline def required_=(x: js.Array[PasswordTest]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("required")(x.asInstanceOf[js.Any])
   }
   
   type PasswordTest = js.Function1[/* password */ String, js.UndefOr[String]]
@@ -92,8 +88,7 @@ object mod {
   }
   object TestConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       allowPassphrases: Boolean,
       maxLength: Double,
       minLength: Double,
@@ -104,23 +99,17 @@ object mod {
       __obj.asInstanceOf[TestConfig]
     }
     
-    @scala.inline
-    implicit class TestConfigMutableBuilder[Self <: TestConfig] (val x: Self) extends AnyVal {
+    extension [Self <: TestConfig](x: Self) {
       
-      @scala.inline
-      def setAllowPassphrases(value: Boolean): Self = StObject.set(x, "allowPassphrases", value.asInstanceOf[js.Any])
+      inline def setAllowPassphrases(value: Boolean): Self = StObject.set(x, "allowPassphrases", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+      inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
+      inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinOptionalTestsToPass(value: Double): Self = StObject.set(x, "minOptionalTestsToPass", value.asInstanceOf[js.Any])
+      inline def setMinOptionalTestsToPass(value: Double): Self = StObject.set(x, "minOptionalTestsToPass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinPhraseLength(value: Double): Self = StObject.set(x, "minPhraseLength", value.asInstanceOf[js.Any])
+      inline def setMinPhraseLength(value: Double): Self = StObject.set(x, "minPhraseLength", value.asInstanceOf[js.Any])
     }
   }
   
@@ -156,8 +145,7 @@ object mod {
   }
   object TestResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       errors: js.Array[String],
       failedTests: js.Array[Double],
       isPassphrase: Boolean,
@@ -171,47 +159,33 @@ object mod {
       __obj.asInstanceOf[TestResult]
     }
     
-    @scala.inline
-    implicit class TestResultMutableBuilder[Self <: TestResult] (val x: Self) extends AnyVal {
+    extension [Self <: TestResult](x: Self) {
       
-      @scala.inline
-      def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: js.Array[String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
+      inline def setErrorsVarargs(value: String*): Self = StObject.set(x, "errors", js.Array(value :_*))
       
-      @scala.inline
-      def setFailedTests(value: js.Array[Double]): Self = StObject.set(x, "failedTests", value.asInstanceOf[js.Any])
+      inline def setFailedTests(value: js.Array[Double]): Self = StObject.set(x, "failedTests", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailedTestsVarargs(value: Double*): Self = StObject.set(x, "failedTests", js.Array(value :_*))
+      inline def setFailedTestsVarargs(value: Double*): Self = StObject.set(x, "failedTests", js.Array(value :_*))
       
-      @scala.inline
-      def setIsPassphrase(value: Boolean): Self = StObject.set(x, "isPassphrase", value.asInstanceOf[js.Any])
+      inline def setIsPassphrase(value: Boolean): Self = StObject.set(x, "isPassphrase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionalTestErrors(value: js.Array[String]): Self = StObject.set(x, "optionalTestErrors", value.asInstanceOf[js.Any])
+      inline def setOptionalTestErrors(value: js.Array[String]): Self = StObject.set(x, "optionalTestErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionalTestErrorsVarargs(value: String*): Self = StObject.set(x, "optionalTestErrors", js.Array(value :_*))
+      inline def setOptionalTestErrorsVarargs(value: String*): Self = StObject.set(x, "optionalTestErrors", js.Array(value :_*))
       
-      @scala.inline
-      def setOptionalTestsPassed(value: Double): Self = StObject.set(x, "optionalTestsPassed", value.asInstanceOf[js.Any])
+      inline def setOptionalTestsPassed(value: Double): Self = StObject.set(x, "optionalTestsPassed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassedTests(value: js.Array[Double]): Self = StObject.set(x, "passedTests", value.asInstanceOf[js.Any])
+      inline def setPassedTests(value: js.Array[Double]): Self = StObject.set(x, "passedTests", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassedTestsVarargs(value: Double*): Self = StObject.set(x, "passedTests", js.Array(value :_*))
+      inline def setPassedTestsVarargs(value: Double*): Self = StObject.set(x, "passedTests", js.Array(value :_*))
       
-      @scala.inline
-      def setRequiredTestErrors(value: js.Array[String]): Self = StObject.set(x, "requiredTestErrors", value.asInstanceOf[js.Any])
+      inline def setRequiredTestErrors(value: js.Array[String]): Self = StObject.set(x, "requiredTestErrors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredTestErrorsVarargs(value: String*): Self = StObject.set(x, "requiredTestErrors", js.Array(value :_*))
+      inline def setRequiredTestErrorsVarargs(value: String*): Self = StObject.set(x, "requiredTestErrors", js.Array(value :_*))
       
-      @scala.inline
-      def setStrong(value: Boolean): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
+      inline def setStrong(value: Boolean): Self = StObject.set(x, "strong", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -13,19 +13,15 @@ trait Canvas extends StObject {
 }
 object Canvas {
   
-  @scala.inline
-  def apply(DOM: Position, canvas: Position): Canvas = {
+  inline def apply(DOM: Position, canvas: Position): Canvas = {
     val __obj = js.Dynamic.literal(DOM = DOM.asInstanceOf[js.Any], canvas = canvas.asInstanceOf[js.Any])
     __obj.asInstanceOf[Canvas]
   }
   
-  @scala.inline
-  implicit class CanvasMutableBuilder[Self <: Canvas] (val x: Self) extends AnyVal {
+  extension [Self <: Canvas](x: Self) {
     
-    @scala.inline
-    def setCanvas(value: Position): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
+    inline def setCanvas(value: Position): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDOM(value: Position): Self = StObject.set(x, "DOM", value.asInstanceOf[js.Any])
+    inline def setDOM(value: Position): Self = StObject.set(x, "DOM", value.asInstanceOf[js.Any])
   }
 }

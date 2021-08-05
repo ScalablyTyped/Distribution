@@ -10,19 +10,15 @@ trait InterconnectsGetDiagnosticsResponse extends StObject {
 }
 object InterconnectsGetDiagnosticsResponse {
   
-  @scala.inline
-  def apply(): InterconnectsGetDiagnosticsResponse = {
+  inline def apply(): InterconnectsGetDiagnosticsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InterconnectsGetDiagnosticsResponse]
   }
   
-  @scala.inline
-  implicit class InterconnectsGetDiagnosticsResponseMutableBuilder[Self <: InterconnectsGetDiagnosticsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: InterconnectsGetDiagnosticsResponse](x: Self) {
     
-    @scala.inline
-    def setResult(value: InterconnectDiagnostics): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: InterconnectDiagnostics): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
   }
 }

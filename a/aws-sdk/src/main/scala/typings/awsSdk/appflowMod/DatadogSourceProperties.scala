@@ -13,17 +13,14 @@ trait DatadogSourceProperties extends StObject {
 }
 object DatadogSourceProperties {
   
-  @scala.inline
-  def apply(`object`: Object): DatadogSourceProperties = {
+  inline def apply(`object`: Object): DatadogSourceProperties = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatadogSourceProperties]
   }
   
-  @scala.inline
-  implicit class DatadogSourcePropertiesMutableBuilder[Self <: DatadogSourceProperties] (val x: Self) extends AnyVal {
+  extension [Self <: DatadogSourceProperties](x: Self) {
     
-    @scala.inline
-    def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }
 }

@@ -22,25 +22,19 @@ trait SchemaUpdateChartSpecRequest extends StObject {
 }
 object SchemaUpdateChartSpecRequest {
   
-  @scala.inline
-  def apply(): SchemaUpdateChartSpecRequest = {
+  inline def apply(): SchemaUpdateChartSpecRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUpdateChartSpecRequest]
   }
   
-  @scala.inline
-  implicit class SchemaUpdateChartSpecRequestMutableBuilder[Self <: SchemaUpdateChartSpecRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUpdateChartSpecRequest](x: Self) {
     
-    @scala.inline
-    def setChartId(value: Double): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
+    inline def setChartId(value: Double): Self = StObject.set(x, "chartId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChartIdUndefined: Self = StObject.set(x, "chartId", js.undefined)
+    inline def setChartIdUndefined: Self = StObject.set(x, "chartId", js.undefined)
     
-    @scala.inline
-    def setSpec(value: SchemaChartSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+    inline def setSpec(value: SchemaChartSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
+    inline def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
   }
 }

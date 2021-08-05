@@ -38,8 +38,7 @@ trait StepManeuver extends StObject {
 }
 object StepManeuver {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bearing_after: Double,
     bearing_before: Double,
     location: Coordinate,
@@ -51,25 +50,18 @@ object StepManeuver {
     __obj.asInstanceOf[StepManeuver]
   }
   
-  @scala.inline
-  implicit class StepManeuverMutableBuilder[Self <: StepManeuver] (val x: Self) extends AnyVal {
+  extension [Self <: StepManeuver](x: Self) {
     
-    @scala.inline
-    def setBearing_after(value: Double): Self = StObject.set(x, "bearing_after", value.asInstanceOf[js.Any])
+    inline def setBearing_after(value: Double): Self = StObject.set(x, "bearing_after", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBearing_before(value: Double): Self = StObject.set(x, "bearing_before", value.asInstanceOf[js.Any])
+    inline def setBearing_before(value: Double): Self = StObject.set(x, "bearing_before", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: Coordinate): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Coordinate): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value :_*))
+    inline def setLocationVarargs(value: Double*): Self = StObject.set(x, "location", js.Array(value :_*))
     
-    @scala.inline
-    def setModifier(value: Indication): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
+    inline def setModifier(value: Indication): Self = StObject.set(x, "modifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: StepManeuverTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: StepManeuverTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

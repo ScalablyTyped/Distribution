@@ -152,8 +152,7 @@ object watchFileSystemMod {
   }
   object WatchFileSystemOptions {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       aggregateTimeout: Double,
       followSymlinks: Boolean,
       ignored: String | RegExp | (js.Array[String | RegExp]),
@@ -163,23 +162,17 @@ object watchFileSystemMod {
       __obj.asInstanceOf[WatchFileSystemOptions]
     }
     
-    @scala.inline
-    implicit class WatchFileSystemOptionsMutableBuilder[Self <: WatchFileSystemOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WatchFileSystemOptions](x: Self) {
       
-      @scala.inline
-      def setAggregateTimeout(value: Double): Self = StObject.set(x, "aggregateTimeout", value.asInstanceOf[js.Any])
+      inline def setAggregateTimeout(value: Double): Self = StObject.set(x, "aggregateTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowSymlinks(value: Boolean): Self = StObject.set(x, "followSymlinks", value.asInstanceOf[js.Any])
+      inline def setFollowSymlinks(value: Boolean): Self = StObject.set(x, "followSymlinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnored(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
+      inline def setIgnored(value: String | RegExp | (js.Array[String | RegExp])): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoredVarargs(value: (String | RegExp)*): Self = StObject.set(x, "ignored", js.Array(value :_*))
+      inline def setIgnoredVarargs(value: (String | RegExp)*): Self = StObject.set(x, "ignored", js.Array(value :_*))
       
-      @scala.inline
-      def setPoll(value: Boolean): Self = StObject.set(x, "poll", value.asInstanceOf[js.Any])
+      inline def setPoll(value: Boolean): Self = StObject.set(x, "poll", value.asInstanceOf[js.Any])
     }
   }
   
@@ -190,8 +183,7 @@ object watchFileSystemMod {
   trait Watcher extends StObject
   object Watcher {
     
-    @scala.inline
-    def WatcherV4(
+    inline def WatcherV4(
       close: () => Unit,
       getContextTimestamps: () => Map[String, Double],
       getFileTimestamps: () => Map[String, Double],
@@ -201,8 +193,7 @@ object watchFileSystemMod {
       __obj.asInstanceOf[typings.forkTsCheckerWebpackPlugin.watchFileSystemMod.WatcherV4]
     }
     
-    @scala.inline
-    def WatcherV5(
+    inline def WatcherV5(
       close: () => Unit,
       getContextTimeInfoEntries: () => Map[String, Double],
       getFileTimeInfoEntries: () => Map[String, Double],
@@ -227,8 +218,7 @@ object watchFileSystemMod {
   }
   object WatcherV4 {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       close: () => Unit,
       getContextTimestamps: () => Map[String, Double],
       getFileTimestamps: () => Map[String, Double],
@@ -238,20 +228,15 @@ object watchFileSystemMod {
       __obj.asInstanceOf[WatcherV4]
     }
     
-    @scala.inline
-    implicit class WatcherV4MutableBuilder[Self <: WatcherV4] (val x: Self) extends AnyVal {
+    extension [Self <: WatcherV4](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetContextTimestamps(value: () => Map[String, Double]): Self = StObject.set(x, "getContextTimestamps", js.Any.fromFunction0(value))
+      inline def setGetContextTimestamps(value: () => Map[String, Double]): Self = StObject.set(x, "getContextTimestamps", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFileTimestamps(value: () => Map[String, Double]): Self = StObject.set(x, "getFileTimestamps", js.Any.fromFunction0(value))
+      inline def setGetFileTimestamps(value: () => Map[String, Double]): Self = StObject.set(x, "getFileTimestamps", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+      inline def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     }
   }
   
@@ -269,8 +254,7 @@ object watchFileSystemMod {
   }
   object WatcherV5 {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       close: () => Unit,
       getContextTimeInfoEntries: () => Map[String, Double],
       getFileTimeInfoEntries: () => Map[String, Double],
@@ -280,20 +264,15 @@ object watchFileSystemMod {
       __obj.asInstanceOf[WatcherV5]
     }
     
-    @scala.inline
-    implicit class WatcherV5MutableBuilder[Self <: WatcherV5] (val x: Self) extends AnyVal {
+    extension [Self <: WatcherV5](x: Self) {
       
-      @scala.inline
-      def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+      inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetContextTimeInfoEntries(value: () => Map[String, Double]): Self = StObject.set(x, "getContextTimeInfoEntries", js.Any.fromFunction0(value))
+      inline def setGetContextTimeInfoEntries(value: () => Map[String, Double]): Self = StObject.set(x, "getContextTimeInfoEntries", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetFileTimeInfoEntries(value: () => Map[String, Double]): Self = StObject.set(x, "getFileTimeInfoEntries", js.Any.fromFunction0(value))
+      inline def setGetFileTimeInfoEntries(value: () => Map[String, Double]): Self = StObject.set(x, "getFileTimeInfoEntries", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
+      inline def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     }
   }
   

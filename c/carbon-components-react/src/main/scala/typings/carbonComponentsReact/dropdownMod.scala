@@ -14,6 +14,5 @@ object dropdownMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[ItemType](props: ForwardRefProps[HTMLButtonElement, DropdownProps[ItemType]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
+  inline def default[ItemType](props: ForwardRefProps[HTMLButtonElement, DropdownProps[ItemType]]): FCReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[FCReturn]
 }

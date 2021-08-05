@@ -10,16 +10,13 @@ trait IResourceLoader extends StObject {
 }
 object IResourceLoader {
   
-  @scala.inline
-  def apply(getString: String => String): IResourceLoader = {
+  inline def apply(getString: String => String): IResourceLoader = {
     val __obj = js.Dynamic.literal(getString = js.Any.fromFunction1(getString))
     __obj.asInstanceOf[IResourceLoader]
   }
   
-  @scala.inline
-  implicit class IResourceLoaderMutableBuilder[Self <: IResourceLoader] (val x: Self) extends AnyVal {
+  extension [Self <: IResourceLoader](x: Self) {
     
-    @scala.inline
-    def setGetString(value: String => String): Self = StObject.set(x, "getString", js.Any.fromFunction1(value))
+    inline def setGetString(value: String => String): Self = StObject.set(x, "getString", js.Any.fromFunction1(value))
   }
 }

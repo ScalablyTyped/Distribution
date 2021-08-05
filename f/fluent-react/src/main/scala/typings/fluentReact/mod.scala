@@ -57,8 +57,7 @@ object mod {
     def getString(id: String, args: Unit, fallback: String): String = js.native
   }
   
-  @scala.inline
-  def withLocalization(component: ComponentClass[Matching[InjectedProps, GetProps[js.Any]], ComponentState]): ComponentType[
+  inline def withLocalization(component: ComponentClass[Matching[InjectedProps, GetProps[js.Any]], ComponentState]): ComponentType[
     Omit[
       GetProps[ComponentClass[Matching[InjectedProps, GetProps[js.Any]], ComponentState]], 
       /* keyof fluent-react.fluent-react.Shared<fluent-react.fluent-react.InjectedProps, fluent-react.fluent-react.GetProps<react.react.ComponentClass<fluent-react.fluent-react.Matching<fluent-react.fluent-react.InjectedProps, fluent-react.fluent-react.GetProps<any>>, react.react.ComponentState>>> */ String
@@ -69,8 +68,7 @@ object mod {
       /* keyof fluent-react.fluent-react.Shared<fluent-react.fluent-react.InjectedProps, fluent-react.fluent-react.GetProps<react.react.ComponentClass<fluent-react.fluent-react.Matching<fluent-react.fluent-react.InjectedProps, fluent-react.fluent-react.GetProps<any>>, react.react.ComponentState>>> */ String
     ]
   ]]
-  @scala.inline
-  def withLocalization(component: FunctionComponent[Matching[InjectedProps, GetProps[js.Any]]]): ComponentType[
+  inline def withLocalization(component: FunctionComponent[Matching[InjectedProps, GetProps[js.Any]]]): ComponentType[
     Omit[
       GetProps[FunctionComponent[Matching[InjectedProps, GetProps[js.Any]]]], 
       /* keyof fluent-react.fluent-react.Shared<fluent-react.fluent-react.InjectedProps, fluent-react.fluent-react.GetProps<react.react.FunctionComponent<fluent-react.fluent-react.Matching<fluent-react.fluent-react.InjectedProps, fluent-react.fluent-react.GetProps<any>>>>> */ String
@@ -90,20 +88,16 @@ object mod {
   }
   object Context {
     
-    @scala.inline
-    def apply(l10n: ReactLocalization, parseMarkup: /* str */ String => js.Array[Node]): Context = {
+    inline def apply(l10n: ReactLocalization, parseMarkup: /* str */ String => js.Array[Node]): Context = {
       val __obj = js.Dynamic.literal(l10n = l10n.asInstanceOf[js.Any], parseMarkup = js.Any.fromFunction1(parseMarkup))
       __obj.asInstanceOf[Context]
     }
     
-    @scala.inline
-    implicit class ContextMutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
+    extension [Self <: Context](x: Self) {
       
-      @scala.inline
-      def setL10n(value: ReactLocalization): Self = StObject.set(x, "l10n", value.asInstanceOf[js.Any])
+      inline def setL10n(value: ReactLocalization): Self = StObject.set(x, "l10n", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParseMarkup(value: /* str */ String => js.Array[Node]): Self = StObject.set(x, "parseMarkup", js.Any.fromFunction1(value))
+      inline def setParseMarkup(value: /* str */ String => js.Array[Node]): Self = StObject.set(x, "parseMarkup", js.Any.fromFunction1(value))
     }
   }
   
@@ -117,17 +111,14 @@ object mod {
   }
   object InjectedProps {
     
-    @scala.inline
-    def apply(getString: (/* id */ String, /* args */ js.UndefOr[js.Object]) => String): InjectedProps = {
+    inline def apply(getString: (/* id */ String, /* args */ js.UndefOr[js.Object]) => String): InjectedProps = {
       val __obj = js.Dynamic.literal(getString = js.Any.fromFunction2(getString))
       __obj.asInstanceOf[InjectedProps]
     }
     
-    @scala.inline
-    implicit class InjectedPropsMutableBuilder[Self <: InjectedProps] (val x: Self) extends AnyVal {
+    extension [Self <: InjectedProps](x: Self) {
       
-      @scala.inline
-      def setGetString(value: (/* id */ String, /* args */ js.UndefOr[js.Object]) => String): Self = StObject.set(x, "getString", js.Any.fromFunction2(value))
+      inline def setGetString(value: (/* id */ String, /* args */ js.UndefOr[js.Object]) => String): Self = StObject.set(x, "getString", js.Any.fromFunction2(value))
     }
   }
   
@@ -139,23 +130,18 @@ object mod {
   }
   object LocalizationProviderProps {
     
-    @scala.inline
-    def apply(bundles: IterableIterator[FluentBundle]): LocalizationProviderProps = {
+    inline def apply(bundles: IterableIterator[FluentBundle]): LocalizationProviderProps = {
       val __obj = js.Dynamic.literal(bundles = bundles.asInstanceOf[js.Any])
       __obj.asInstanceOf[LocalizationProviderProps]
     }
     
-    @scala.inline
-    implicit class LocalizationProviderPropsMutableBuilder[Self <: LocalizationProviderProps] (val x: Self) extends AnyVal {
+    extension [Self <: LocalizationProviderProps](x: Self) {
       
-      @scala.inline
-      def setBundles(value: IterableIterator[FluentBundle]): Self = StObject.set(x, "bundles", value.asInstanceOf[js.Any])
+      inline def setBundles(value: IterableIterator[FluentBundle]): Self = StObject.set(x, "bundles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParseMarkup(value: /* str */ String => js.Array[Node]): Self = StObject.set(x, "parseMarkup", js.Any.fromFunction1(value))
+      inline def setParseMarkup(value: /* str */ String => js.Array[Node]): Self = StObject.set(x, "parseMarkup", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setParseMarkupUndefined: Self = StObject.set(x, "parseMarkup", js.undefined)
+      inline def setParseMarkupUndefined: Self = StObject.set(x, "parseMarkup", js.undefined)
     }
   }
   
@@ -169,23 +155,18 @@ object mod {
   }
   object LocalizedProps {
     
-    @scala.inline
-    def apply(id: String): LocalizedProps = {
+    inline def apply(id: String): LocalizedProps = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[LocalizedProps]
     }
     
-    @scala.inline
-    implicit class LocalizedPropsMutableBuilder[Self <: LocalizedProps] (val x: Self) extends AnyVal {
+    extension [Self <: LocalizedProps](x: Self) {
       
-      @scala.inline
-      def setAttrs(value: js.Object): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      inline def setAttrs(value: js.Object): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
+      inline def setAttrsUndefined: Self = StObject.set(x, "attrs", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -207,29 +188,22 @@ object mod {
   }
   object Node {
     
-    @scala.inline
-    def apply(nodeType: Double, textContext: String): Node = {
+    inline def apply(nodeType: Double, textContext: String): Node = {
       val __obj = js.Dynamic.literal(TEXT_NODE = 3, nodeType = nodeType.asInstanceOf[js.Any], textContext = textContext.asInstanceOf[js.Any])
       __obj.asInstanceOf[Node]
     }
     
-    @scala.inline
-    implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
+    extension [Self <: Node](x: Self) {
       
-      @scala.inline
-      def setLocalName(value: String): Self = StObject.set(x, "localName", value.asInstanceOf[js.Any])
+      inline def setLocalName(value: String): Self = StObject.set(x, "localName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocalNameUndefined: Self = StObject.set(x, "localName", js.undefined)
+      inline def setLocalNameUndefined: Self = StObject.set(x, "localName", js.undefined)
       
-      @scala.inline
-      def setNodeType(value: Double): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
+      inline def setNodeType(value: Double): Self = StObject.set(x, "nodeType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTEXT_NODE(value: `3`): Self = StObject.set(x, "TEXT_NODE", value.asInstanceOf[js.Any])
+      inline def setTEXT_NODE(value: `3`): Self = StObject.set(x, "TEXT_NODE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextContext(value: String): Self = StObject.set(x, "textContext", value.asInstanceOf[js.Any])
+      inline def setTextContext(value: String): Self = StObject.set(x, "textContext", value.asInstanceOf[js.Any])
     }
   }
   

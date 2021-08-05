@@ -17,16 +17,13 @@ trait SampleTransform
 }
 object SampleTransform {
   
-  @scala.inline
-  def apply(sample: Double): SampleTransform = {
+  inline def apply(sample: Double): SampleTransform = {
     val __obj = js.Dynamic.literal(sample = sample.asInstanceOf[js.Any])
     __obj.asInstanceOf[SampleTransform]
   }
   
-  @scala.inline
-  implicit class SampleTransformMutableBuilder[Self <: SampleTransform] (val x: Self) extends AnyVal {
+  extension [Self <: SampleTransform](x: Self) {
     
-    @scala.inline
-    def setSample(value: Double): Self = StObject.set(x, "sample", value.asInstanceOf[js.Any])
+    inline def setSample(value: Double): Self = StObject.set(x, "sample", value.asInstanceOf[js.Any])
   }
 }

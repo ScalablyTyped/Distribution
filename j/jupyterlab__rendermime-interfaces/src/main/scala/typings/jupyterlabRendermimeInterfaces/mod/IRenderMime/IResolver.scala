@@ -35,25 +35,19 @@ trait IResolver extends StObject {
 }
 object IResolver {
   
-  @scala.inline
-  def apply(getDownloadUrl: String => js.Promise[String], resolveUrl: String => js.Promise[String]): IResolver = {
+  inline def apply(getDownloadUrl: String => js.Promise[String], resolveUrl: String => js.Promise[String]): IResolver = {
     val __obj = js.Dynamic.literal(getDownloadUrl = js.Any.fromFunction1(getDownloadUrl), resolveUrl = js.Any.fromFunction1(resolveUrl))
     __obj.asInstanceOf[IResolver]
   }
   
-  @scala.inline
-  implicit class IResolverMutableBuilder[Self <: IResolver] (val x: Self) extends AnyVal {
+  extension [Self <: IResolver](x: Self) {
     
-    @scala.inline
-    def setGetDownloadUrl(value: String => js.Promise[String]): Self = StObject.set(x, "getDownloadUrl", js.Any.fromFunction1(value))
+    inline def setGetDownloadUrl(value: String => js.Promise[String]): Self = StObject.set(x, "getDownloadUrl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsLocal(value: /* url */ String => Boolean): Self = StObject.set(x, "isLocal", js.Any.fromFunction1(value))
+    inline def setIsLocal(value: /* url */ String => Boolean): Self = StObject.set(x, "isLocal", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsLocalUndefined: Self = StObject.set(x, "isLocal", js.undefined)
+    inline def setIsLocalUndefined: Self = StObject.set(x, "isLocal", js.undefined)
     
-    @scala.inline
-    def setResolveUrl(value: String => js.Promise[String]): Self = StObject.set(x, "resolveUrl", js.Any.fromFunction1(value))
+    inline def setResolveUrl(value: String => js.Promise[String]): Self = StObject.set(x, "resolveUrl", js.Any.fromFunction1(value))
   }
 }

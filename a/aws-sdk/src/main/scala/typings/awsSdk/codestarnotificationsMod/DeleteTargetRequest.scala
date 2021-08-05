@@ -18,22 +18,17 @@ trait DeleteTargetRequest extends StObject {
 }
 object DeleteTargetRequest {
   
-  @scala.inline
-  def apply(TargetAddress: TargetAddress): DeleteTargetRequest = {
+  inline def apply(TargetAddress: TargetAddress): DeleteTargetRequest = {
     val __obj = js.Dynamic.literal(TargetAddress = TargetAddress.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteTargetRequest]
   }
   
-  @scala.inline
-  implicit class DeleteTargetRequestMutableBuilder[Self <: DeleteTargetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteTargetRequest](x: Self) {
     
-    @scala.inline
-    def setForceUnsubscribeAll(value: ForceUnsubscribeAll): Self = StObject.set(x, "ForceUnsubscribeAll", value.asInstanceOf[js.Any])
+    inline def setForceUnsubscribeAll(value: ForceUnsubscribeAll): Self = StObject.set(x, "ForceUnsubscribeAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceUnsubscribeAllUndefined: Self = StObject.set(x, "ForceUnsubscribeAll", js.undefined)
+    inline def setForceUnsubscribeAllUndefined: Self = StObject.set(x, "ForceUnsubscribeAll", js.undefined)
     
-    @scala.inline
-    def setTargetAddress(value: TargetAddress): Self = StObject.set(x, "TargetAddress", value.asInstanceOf[js.Any])
+    inline def setTargetAddress(value: TargetAddress): Self = StObject.set(x, "TargetAddress", value.asInstanceOf[js.Any])
   }
 }

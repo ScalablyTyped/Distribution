@@ -56,74 +56,52 @@ object accordionMod {
   }
   object AccordionProps {
     
-    @scala.inline
-    def apply(): AccordionProps = {
+    inline def apply(): AccordionProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AccordionProps]
     }
     
-    @scala.inline
-    implicit class AccordionPropsMutableBuilder[Self <: AccordionProps] (val x: Self) extends AnyVal {
+    extension [Self <: AccordionProps](x: Self) {
       
-      @scala.inline
-      def setActiveIndex(value: js.Any): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
+      inline def setActiveIndex(value: js.Any): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveIndexUndefined: Self = StObject.set(x, "activeIndex", js.undefined)
+      inline def setActiveIndexUndefined: Self = StObject.set(x, "activeIndex", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCollapseIcon(value: String): Self = StObject.set(x, "collapseIcon", value.asInstanceOf[js.Any])
+      inline def setCollapseIcon(value: String): Self = StObject.set(x, "collapseIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollapseIconUndefined: Self = StObject.set(x, "collapseIcon", js.undefined)
+      inline def setCollapseIconUndefined: Self = StObject.set(x, "collapseIcon", js.undefined)
       
-      @scala.inline
-      def setExpandIcon(value: String): Self = StObject.set(x, "expandIcon", value.asInstanceOf[js.Any])
+      inline def setExpandIcon(value: String): Self = StObject.set(x, "expandIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandIconUndefined: Self = StObject.set(x, "expandIcon", js.undefined)
+      inline def setExpandIconUndefined: Self = StObject.set(x, "expandIcon", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+      inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+      inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
       
-      @scala.inline
-      def setOnTabChange(value: /* e */ Index => Unit): Self = StObject.set(x, "onTabChange", js.Any.fromFunction1(value))
+      inline def setOnTabChange(value: /* e */ Index => Unit): Self = StObject.set(x, "onTabChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTabChangeUndefined: Self = StObject.set(x, "onTabChange", js.undefined)
+      inline def setOnTabChangeUndefined: Self = StObject.set(x, "onTabChange", js.undefined)
       
-      @scala.inline
-      def setOnTabClose(value: /* e */ Index => Unit): Self = StObject.set(x, "onTabClose", js.Any.fromFunction1(value))
+      inline def setOnTabClose(value: /* e */ Index => Unit): Self = StObject.set(x, "onTabClose", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTabCloseUndefined: Self = StObject.set(x, "onTabClose", js.undefined)
+      inline def setOnTabCloseUndefined: Self = StObject.set(x, "onTabClose", js.undefined)
       
-      @scala.inline
-      def setOnTabOpen(value: /* e */ Index => Unit): Self = StObject.set(x, "onTabOpen", js.Any.fromFunction1(value))
+      inline def setOnTabOpen(value: /* e */ Index => Unit): Self = StObject.set(x, "onTabOpen", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnTabOpenUndefined: Self = StObject.set(x, "onTabOpen", js.undefined)
+      inline def setOnTabOpenUndefined: Self = StObject.set(x, "onTabOpen", js.undefined)
       
-      @scala.inline
-      def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: js.Object): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
   
@@ -145,56 +123,40 @@ object accordionMod {
   }
   object AccordionTabProps {
     
-    @scala.inline
-    def apply(): AccordionTabProps = {
+    inline def apply(): AccordionTabProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AccordionTabProps]
     }
     
-    @scala.inline
-    implicit class AccordionTabPropsMutableBuilder[Self <: AccordionTabProps] (val x: Self) extends AnyVal {
+    extension [Self <: AccordionTabProps](x: Self) {
       
-      @scala.inline
-      def setContentClassName(value: String): Self = StObject.set(x, "contentClassName", value.asInstanceOf[js.Any])
+      inline def setContentClassName(value: String): Self = StObject.set(x, "contentClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentClassNameUndefined: Self = StObject.set(x, "contentClassName", js.undefined)
+      inline def setContentClassNameUndefined: Self = StObject.set(x, "contentClassName", js.undefined)
       
-      @scala.inline
-      def setContentStyle(value: js.Object): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
+      inline def setContentStyle(value: js.Object): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
+      inline def setContentStyleUndefined: Self = StObject.set(x, "contentStyle", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setHeader(value: js.Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+      inline def setHeader(value: js.Any): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderClassName(value: String): Self = StObject.set(x, "headerClassName", value.asInstanceOf[js.Any])
+      inline def setHeaderClassName(value: String): Self = StObject.set(x, "headerClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderClassNameUndefined: Self = StObject.set(x, "headerClassName", js.undefined)
+      inline def setHeaderClassNameUndefined: Self = StObject.set(x, "headerClassName", js.undefined)
       
-      @scala.inline
-      def setHeaderStyle(value: js.Object): Self = StObject.set(x, "headerStyle", value.asInstanceOf[js.Any])
+      inline def setHeaderStyle(value: js.Object): Self = StObject.set(x, "headerStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderStyleUndefined: Self = StObject.set(x, "headerStyle", js.undefined)
+      inline def setHeaderStyleUndefined: Self = StObject.set(x, "headerStyle", js.undefined)
       
-      @scala.inline
-      def setHeaderTemplate(value: js.Any): Self = StObject.set(x, "headerTemplate", value.asInstanceOf[js.Any])
+      inline def setHeaderTemplate(value: js.Any): Self = StObject.set(x, "headerTemplate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeaderTemplateUndefined: Self = StObject.set(x, "headerTemplate", js.undefined)
+      inline def setHeaderTemplateUndefined: Self = StObject.set(x, "headerTemplate", js.undefined)
       
-      @scala.inline
-      def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+      inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
     }
   }
 }

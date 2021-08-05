@@ -20,38 +20,28 @@ object anon {
   }
   object Errors {
     
-    @scala.inline
-    def apply(): Errors = {
+    inline def apply(): Errors = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Errors]
     }
     
-    @scala.inline
-    implicit class ErrorsMutableBuilder[Self <: Errors] (val x: Self) extends AnyVal {
+    extension [Self <: Errors](x: Self) {
       
-      @scala.inline
-      def setErrors(value: Boolean | ErrorOptions): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      inline def setErrors(value: Boolean | ErrorOptions): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+      inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
       
-      @scala.inline
-      def setLoadRelativePath(value: Boolean): Self = StObject.set(x, "loadRelativePath", value.asInstanceOf[js.Any])
+      inline def setLoadRelativePath(value: Boolean): Self = StObject.set(x, "loadRelativePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadRelativePathUndefined: Self = StObject.set(x, "loadRelativePath", js.undefined)
+      inline def setLoadRelativePathUndefined: Self = StObject.set(x, "loadRelativePath", js.undefined)
       
-      @scala.inline
-      def setScenarioNameTemplate(value: /* vars */ ScenarioNameTemplateVars => String): Self = StObject.set(x, "scenarioNameTemplate", js.Any.fromFunction1(value))
+      inline def setScenarioNameTemplate(value: /* vars */ ScenarioNameTemplateVars => String): Self = StObject.set(x, "scenarioNameTemplate", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScenarioNameTemplateUndefined: Self = StObject.set(x, "scenarioNameTemplate", js.undefined)
+      inline def setScenarioNameTemplateUndefined: Self = StObject.set(x, "scenarioNameTemplate", js.undefined)
       
-      @scala.inline
-      def setTagFilter(value: String): Self = StObject.set(x, "tagFilter", value.asInstanceOf[js.Any])
+      inline def setTagFilter(value: String): Self = StObject.set(x, "tagFilter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagFilterUndefined: Self = StObject.set(x, "tagFilter", js.undefined)
+      inline def setTagFilterUndefined: Self = StObject.set(x, "tagFilter", js.undefined)
     }
   }
   
@@ -61,17 +51,14 @@ object anon {
   }
   object Path {
     
-    @scala.inline
-    def apply(path: String): Path = {
+    inline def apply(path: String): Path = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Path]
     }
     
-    @scala.inline
-    implicit class PathMutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
+    extension [Self <: Path](x: Self) {
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -17,34 +17,25 @@ trait RevealDependency extends StObject {
 }
 object RevealDependency {
   
-  @scala.inline
-  def apply(src: String): RevealDependency = {
+  inline def apply(src: String): RevealDependency = {
     val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any])
     __obj.asInstanceOf[RevealDependency]
   }
   
-  @scala.inline
-  implicit class RevealDependencyMutableBuilder[Self <: RevealDependency] (val x: Self) extends AnyVal {
+  extension [Self <: RevealDependency](x: Self) {
     
-    @scala.inline
-    def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+    inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+    inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
     
-    @scala.inline
-    def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
+    inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    @scala.inline
-    def setCondition(value: () => Boolean): Self = StObject.set(x, "condition", js.Any.fromFunction0(value))
+    inline def setCondition(value: () => Boolean): Self = StObject.set(x, "condition", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    @scala.inline
-    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
   }
 }

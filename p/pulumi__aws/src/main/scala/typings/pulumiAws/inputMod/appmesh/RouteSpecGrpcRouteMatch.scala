@@ -30,40 +30,29 @@ trait RouteSpecGrpcRouteMatch extends StObject {
 }
 object RouteSpecGrpcRouteMatch {
   
-  @scala.inline
-  def apply(): RouteSpecGrpcRouteMatch = {
+  inline def apply(): RouteSpecGrpcRouteMatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RouteSpecGrpcRouteMatch]
   }
   
-  @scala.inline
-  implicit class RouteSpecGrpcRouteMatchMutableBuilder[Self <: RouteSpecGrpcRouteMatch] (val x: Self) extends AnyVal {
+  extension [Self <: RouteSpecGrpcRouteMatch](x: Self) {
     
-    @scala.inline
-    def setMetadatas(value: Input[js.Array[Input[RouteSpecGrpcRouteMatchMetadata]]]): Self = StObject.set(x, "metadatas", value.asInstanceOf[js.Any])
+    inline def setMetadatas(value: Input[js.Array[Input[RouteSpecGrpcRouteMatchMetadata]]]): Self = StObject.set(x, "metadatas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadatasUndefined: Self = StObject.set(x, "metadatas", js.undefined)
+    inline def setMetadatasUndefined: Self = StObject.set(x, "metadatas", js.undefined)
     
-    @scala.inline
-    def setMetadatasVarargs(value: Input[RouteSpecGrpcRouteMatchMetadata]*): Self = StObject.set(x, "metadatas", js.Array(value :_*))
+    inline def setMetadatasVarargs(value: Input[RouteSpecGrpcRouteMatchMetadata]*): Self = StObject.set(x, "metadatas", js.Array(value :_*))
     
-    @scala.inline
-    def setMethodName(value: Input[String]): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
+    inline def setMethodName(value: Input[String]): Self = StObject.set(x, "methodName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodNameUndefined: Self = StObject.set(x, "methodName", js.undefined)
+    inline def setMethodNameUndefined: Self = StObject.set(x, "methodName", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: Input[String]): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: Input[String]): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     
-    @scala.inline
-    def setServiceName(value: Input[String]): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: Input[String]): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
+    inline def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
   }
 }

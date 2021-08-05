@@ -16,31 +16,23 @@ trait WebExtensionManifestChromeUrlOverrides extends StObject {
 }
 object WebExtensionManifestChromeUrlOverrides {
   
-  @scala.inline
-  def apply(): WebExtensionManifestChromeUrlOverrides = {
+  inline def apply(): WebExtensionManifestChromeUrlOverrides = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebExtensionManifestChromeUrlOverrides]
   }
   
-  @scala.inline
-  implicit class WebExtensionManifestChromeUrlOverridesMutableBuilder[Self <: WebExtensionManifestChromeUrlOverrides] (val x: Self) extends AnyVal {
+  extension [Self <: WebExtensionManifestChromeUrlOverrides](x: Self) {
     
-    @scala.inline
-    def setBookmarks(value: ExtensionURL): Self = StObject.set(x, "bookmarks", value.asInstanceOf[js.Any])
+    inline def setBookmarks(value: ExtensionURL): Self = StObject.set(x, "bookmarks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBookmarksUndefined: Self = StObject.set(x, "bookmarks", js.undefined)
+    inline def setBookmarksUndefined: Self = StObject.set(x, "bookmarks", js.undefined)
     
-    @scala.inline
-    def setHistory(value: ExtensionURL): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    inline def setHistory(value: ExtensionURL): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
+    inline def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
     
-    @scala.inline
-    def setNewtab(value: ExtensionURL): Self = StObject.set(x, "newtab", value.asInstanceOf[js.Any])
+    inline def setNewtab(value: ExtensionURL): Self = StObject.set(x, "newtab", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewtabUndefined: Self = StObject.set(x, "newtab", js.undefined)
+    inline def setNewtabUndefined: Self = StObject.set(x, "newtab", js.undefined)
   }
 }

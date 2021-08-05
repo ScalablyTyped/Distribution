@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SigninFrequencyType extends StObject
 object SigninFrequencyType {
   
-  @scala.inline
-  def days: typings.microsoftGraph.microsoftGraphStrings.days = "days".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.days]
+  inline def days: typings.microsoftGraph.microsoftGraphStrings.days = "days".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.days]
   
-  @scala.inline
-  def hours: typings.microsoftGraph.microsoftGraphStrings.hours = "hours".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.hours]
+  inline def hours: typings.microsoftGraph.microsoftGraphStrings.hours = "hours".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.hours]
 }

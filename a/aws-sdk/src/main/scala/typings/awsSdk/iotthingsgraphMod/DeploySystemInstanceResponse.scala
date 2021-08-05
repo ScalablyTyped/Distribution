@@ -18,22 +18,17 @@ trait DeploySystemInstanceResponse extends StObject {
 }
 object DeploySystemInstanceResponse {
   
-  @scala.inline
-  def apply(summary: SystemInstanceSummary): DeploySystemInstanceResponse = {
+  inline def apply(summary: SystemInstanceSummary): DeploySystemInstanceResponse = {
     val __obj = js.Dynamic.literal(summary = summary.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeploySystemInstanceResponse]
   }
   
-  @scala.inline
-  implicit class DeploySystemInstanceResponseMutableBuilder[Self <: DeploySystemInstanceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeploySystemInstanceResponse](x: Self) {
     
-    @scala.inline
-    def setGreengrassDeploymentId(value: GreengrassDeploymentId): Self = StObject.set(x, "greengrassDeploymentId", value.asInstanceOf[js.Any])
+    inline def setGreengrassDeploymentId(value: GreengrassDeploymentId): Self = StObject.set(x, "greengrassDeploymentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGreengrassDeploymentIdUndefined: Self = StObject.set(x, "greengrassDeploymentId", js.undefined)
+    inline def setGreengrassDeploymentIdUndefined: Self = StObject.set(x, "greengrassDeploymentId", js.undefined)
     
-    @scala.inline
-    def setSummary(value: SystemInstanceSummary): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: SystemInstanceSummary): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
   }
 }

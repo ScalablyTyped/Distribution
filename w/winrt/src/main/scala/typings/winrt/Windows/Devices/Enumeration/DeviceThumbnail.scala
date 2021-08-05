@@ -20,8 +20,7 @@ trait DeviceThumbnail
 }
 object DeviceThumbnail {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canRead: Boolean,
     canWrite: Boolean,
     cloneStream: () => IRandomAccessStream,
@@ -41,10 +40,8 @@ object DeviceThumbnail {
     __obj.asInstanceOf[DeviceThumbnail]
   }
   
-  @scala.inline
-  implicit class DeviceThumbnailMutableBuilder[Self <: DeviceThumbnail] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceThumbnail](x: Self) {
     
-    @scala.inline
-    def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+    inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
   }
 }

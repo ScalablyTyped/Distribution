@@ -53,100 +53,69 @@ trait ProvisionalUserProject extends StObject {
 }
 object ProvisionalUserProject {
   
-  @scala.inline
-  def apply(bucket: String): ProvisionalUserProject = {
+  inline def apply(bucket: String): ProvisionalUserProject = {
     val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProvisionalUserProject]
   }
   
-  @scala.inline
-  implicit class ProvisionalUserProjectMutableBuilder[Self <: ProvisionalUserProject] (val x: Self) extends AnyVal {
+  extension [Self <: ProvisionalUserProject](x: Self) {
     
-    @scala.inline
-    def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+    inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+    inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
-    @scala.inline
-    def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: String): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setIfMetagenerationMatch(value: String): Self = StObject.set(x, "ifMetagenerationMatch", value.asInstanceOf[js.Any])
+    inline def setIfMetagenerationMatch(value: String): Self = StObject.set(x, "ifMetagenerationMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfMetagenerationMatchUndefined: Self = StObject.set(x, "ifMetagenerationMatch", js.undefined)
+    inline def setIfMetagenerationMatchUndefined: Self = StObject.set(x, "ifMetagenerationMatch", js.undefined)
     
-    @scala.inline
-    def setIfMetagenerationNotMatch(value: String): Self = StObject.set(x, "ifMetagenerationNotMatch", value.asInstanceOf[js.Any])
+    inline def setIfMetagenerationNotMatch(value: String): Self = StObject.set(x, "ifMetagenerationNotMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIfMetagenerationNotMatchUndefined: Self = StObject.set(x, "ifMetagenerationNotMatch", js.undefined)
+    inline def setIfMetagenerationNotMatchUndefined: Self = StObject.set(x, "ifMetagenerationNotMatch", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
+    inline def setOauth_token(value: String): Self = StObject.set(x, "oauth_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
+    inline def setOauth_tokenUndefined: Self = StObject.set(x, "oauth_token", js.undefined)
     
-    @scala.inline
-    def setPredefinedAcl(value: String): Self = StObject.set(x, "predefinedAcl", value.asInstanceOf[js.Any])
+    inline def setPredefinedAcl(value: String): Self = StObject.set(x, "predefinedAcl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredefinedAclUndefined: Self = StObject.set(x, "predefinedAcl", js.undefined)
+    inline def setPredefinedAclUndefined: Self = StObject.set(x, "predefinedAcl", js.undefined)
     
-    @scala.inline
-    def setPredefinedDefaultObjectAcl(value: String): Self = StObject.set(x, "predefinedDefaultObjectAcl", value.asInstanceOf[js.Any])
+    inline def setPredefinedDefaultObjectAcl(value: String): Self = StObject.set(x, "predefinedDefaultObjectAcl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredefinedDefaultObjectAclUndefined: Self = StObject.set(x, "predefinedDefaultObjectAcl", js.undefined)
+    inline def setPredefinedDefaultObjectAclUndefined: Self = StObject.set(x, "predefinedDefaultObjectAcl", js.undefined)
     
-    @scala.inline
-    def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
+    inline def setPrettyPrint(value: Boolean): Self = StObject.set(x, "prettyPrint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
+    inline def setPrettyPrintUndefined: Self = StObject.set(x, "prettyPrint", js.undefined)
     
-    @scala.inline
-    def setProjection(value: String): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
+    inline def setProjection(value: String): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
+    inline def setProjectionUndefined: Self = StObject.set(x, "projection", js.undefined)
     
-    @scala.inline
-    def setProvisionalUserProject(value: String): Self = StObject.set(x, "provisionalUserProject", value.asInstanceOf[js.Any])
+    inline def setProvisionalUserProject(value: String): Self = StObject.set(x, "provisionalUserProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionalUserProjectUndefined: Self = StObject.set(x, "provisionalUserProject", js.undefined)
+    inline def setProvisionalUserProjectUndefined: Self = StObject.set(x, "provisionalUserProject", js.undefined)
     
-    @scala.inline
-    def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
+    inline def setQuotaUser(value: String): Self = StObject.set(x, "quotaUser", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
+    inline def setQuotaUserUndefined: Self = StObject.set(x, "quotaUser", js.undefined)
     
-    @scala.inline
-    def setUserIp(value: String): Self = StObject.set(x, "userIp", value.asInstanceOf[js.Any])
+    inline def setUserIp(value: String): Self = StObject.set(x, "userIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIpUndefined: Self = StObject.set(x, "userIp", js.undefined)
+    inline def setUserIpUndefined: Self = StObject.set(x, "userIp", js.undefined)
     
-    @scala.inline
-    def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
+    inline def setUserProject(value: String): Self = StObject.set(x, "userProject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
+    inline def setUserProjectUndefined: Self = StObject.set(x, "userProject", js.undefined)
   }
 }

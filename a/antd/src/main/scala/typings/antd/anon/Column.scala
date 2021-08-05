@@ -14,22 +14,17 @@ trait Column[RecordType] extends StObject {
 }
 object Column {
   
-  @scala.inline
-  def apply[RecordType](column: ColumnType[RecordType]): Column[RecordType] = {
+  inline def apply[RecordType](column: ColumnType[RecordType]): Column[RecordType] = {
     val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], order = null)
     __obj.asInstanceOf[Column[RecordType]]
   }
   
-  @scala.inline
-  implicit class ColumnMutableBuilder[Self <: Column[?], RecordType] (val x: Self & Column[RecordType]) extends AnyVal {
+  extension [Self <: Column[?], RecordType](x: Self & Column[RecordType]) {
     
-    @scala.inline
-    def setColumn(value: ColumnType[RecordType]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: ColumnType[RecordType]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrder(value: SortOrder): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: SortOrder): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderNull: Self = StObject.set(x, "order", null)
+    inline def setOrderNull: Self = StObject.set(x, "order", null)
   }
 }

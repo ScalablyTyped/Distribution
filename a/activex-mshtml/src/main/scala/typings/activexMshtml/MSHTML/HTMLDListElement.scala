@@ -10,7 +10,7 @@ trait HTMLDListElement extends StObject {
   def FireEvent(bstrEventName: String): Boolean = js.native
   def FireEvent(bstrEventName: String, pvarEventObject: js.Any): Boolean = js.native
   
-  @JSName("MSHTML.HTMLDListElement_typekey")
+  /* private */ @JSName("MSHTML.HTMLDListElement_typekey")
   var MSHTMLDotHTMLDListElement_typekey: HTMLDListElement = js.native
   
   var accessKey: String = js.native

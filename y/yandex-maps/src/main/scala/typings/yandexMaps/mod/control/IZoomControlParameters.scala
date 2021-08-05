@@ -11,19 +11,15 @@ trait IZoomControlParameters extends StObject {
 }
 object IZoomControlParameters {
   
-  @scala.inline
-  def apply(): IZoomControlParameters = {
+  inline def apply(): IZoomControlParameters = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IZoomControlParameters]
   }
   
-  @scala.inline
-  implicit class IZoomControlParametersMutableBuilder[Self <: IZoomControlParameters] (val x: Self) extends AnyVal {
+  extension [Self <: IZoomControlParameters](x: Self) {
     
-    @scala.inline
-    def setOptions(value: `1`): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: `1`): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

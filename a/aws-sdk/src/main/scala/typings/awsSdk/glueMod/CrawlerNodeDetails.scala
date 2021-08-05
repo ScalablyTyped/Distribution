@@ -13,22 +13,17 @@ trait CrawlerNodeDetails extends StObject {
 }
 object CrawlerNodeDetails {
   
-  @scala.inline
-  def apply(): CrawlerNodeDetails = {
+  inline def apply(): CrawlerNodeDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CrawlerNodeDetails]
   }
   
-  @scala.inline
-  implicit class CrawlerNodeDetailsMutableBuilder[Self <: CrawlerNodeDetails] (val x: Self) extends AnyVal {
+  extension [Self <: CrawlerNodeDetails](x: Self) {
     
-    @scala.inline
-    def setCrawls(value: CrawlList): Self = StObject.set(x, "Crawls", value.asInstanceOf[js.Any])
+    inline def setCrawls(value: CrawlList): Self = StObject.set(x, "Crawls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrawlsUndefined: Self = StObject.set(x, "Crawls", js.undefined)
+    inline def setCrawlsUndefined: Self = StObject.set(x, "Crawls", js.undefined)
     
-    @scala.inline
-    def setCrawlsVarargs(value: Crawl*): Self = StObject.set(x, "Crawls", js.Array(value :_*))
+    inline def setCrawlsVarargs(value: Crawl*): Self = StObject.set(x, "Crawls", js.Array(value :_*))
   }
 }

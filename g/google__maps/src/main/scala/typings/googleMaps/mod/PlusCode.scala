@@ -14,19 +14,15 @@ trait PlusCode extends StObject {
 }
 object PlusCode {
   
-  @scala.inline
-  def apply(compound_code: String, global_code: String): PlusCode = {
+  inline def apply(compound_code: String, global_code: String): PlusCode = {
     val __obj = js.Dynamic.literal(compound_code = compound_code.asInstanceOf[js.Any], global_code = global_code.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlusCode]
   }
   
-  @scala.inline
-  implicit class PlusCodeMutableBuilder[Self <: PlusCode] (val x: Self) extends AnyVal {
+  extension [Self <: PlusCode](x: Self) {
     
-    @scala.inline
-    def setCompound_code(value: String): Self = StObject.set(x, "compound_code", value.asInstanceOf[js.Any])
+    inline def setCompound_code(value: String): Self = StObject.set(x, "compound_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobal_code(value: String): Self = StObject.set(x, "global_code", value.asInstanceOf[js.Any])
+    inline def setGlobal_code(value: String): Self = StObject.set(x, "global_code", value.asInstanceOf[js.Any])
   }
 }

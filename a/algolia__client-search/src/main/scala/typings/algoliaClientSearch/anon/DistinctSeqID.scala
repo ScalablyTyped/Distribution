@@ -21,40 +21,29 @@ trait DistinctSeqID[THit] extends StObject {
 }
 object DistinctSeqID {
   
-  @scala.inline
-  def apply[THit](objectID: String): DistinctSeqID[THit] = {
+  inline def apply[THit](objectID: String): DistinctSeqID[THit] = {
     val __obj = js.Dynamic.literal(objectID = objectID.asInstanceOf[js.Any])
     __obj.asInstanceOf[DistinctSeqID[THit]]
   }
   
-  @scala.inline
-  implicit class DistinctSeqIDMutableBuilder[Self <: DistinctSeqID[?], THit] (val x: Self & DistinctSeqID[THit]) extends AnyVal {
+  extension [Self <: DistinctSeqID[?], THit](x: Self & DistinctSeqID[THit]) {
     
-    @scala.inline
-    def setObjectID(value: String): Self = StObject.set(x, "objectID", value.asInstanceOf[js.Any])
+    inline def setObjectID(value: String): Self = StObject.set(x, "objectID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_distinctSeqID(value: Double): Self = StObject.set(x, "_distinctSeqID", value.asInstanceOf[js.Any])
+    inline def set_distinctSeqID(value: Double): Self = StObject.set(x, "_distinctSeqID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_distinctSeqIDUndefined: Self = StObject.set(x, "_distinctSeqID", js.undefined)
+    inline def set_distinctSeqIDUndefined: Self = StObject.set(x, "_distinctSeqID", js.undefined)
     
-    @scala.inline
-    def set_highlightResult(value: HighlightResult[THit]): Self = StObject.set(x, "_highlightResult", value.asInstanceOf[js.Any])
+    inline def set_highlightResult(value: HighlightResult[THit]): Self = StObject.set(x, "_highlightResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_highlightResultUndefined: Self = StObject.set(x, "_highlightResult", js.undefined)
+    inline def set_highlightResultUndefined: Self = StObject.set(x, "_highlightResult", js.undefined)
     
-    @scala.inline
-    def set_rankingInfo(value: RankingInfo): Self = StObject.set(x, "_rankingInfo", value.asInstanceOf[js.Any])
+    inline def set_rankingInfo(value: RankingInfo): Self = StObject.set(x, "_rankingInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_rankingInfoUndefined: Self = StObject.set(x, "_rankingInfo", js.undefined)
+    inline def set_rankingInfoUndefined: Self = StObject.set(x, "_rankingInfo", js.undefined)
     
-    @scala.inline
-    def set_snippetResult(value: SnippetResult[THit]): Self = StObject.set(x, "_snippetResult", value.asInstanceOf[js.Any])
+    inline def set_snippetResult(value: SnippetResult[THit]): Self = StObject.set(x, "_snippetResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_snippetResultUndefined: Self = StObject.set(x, "_snippetResult", js.undefined)
+    inline def set_snippetResultUndefined: Self = StObject.set(x, "_snippetResult", js.undefined)
   }
 }

@@ -6,9 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait Slot extends StObject {
   
-  var attachment: js.Any
+  /* private */ var attachment: js.Any
   
-  var attachmentTime: js.Any
+  /* private */ var attachmentTime: js.Any
   
   var bone: Bone
   
@@ -32,8 +32,7 @@ trait Slot extends StObject {
 }
 object Slot {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attachment: js.Any,
     attachmentTime: js.Any,
     bone: Bone,
@@ -51,46 +50,32 @@ object Slot {
     __obj.asInstanceOf[Slot]
   }
   
-  @scala.inline
-  implicit class SlotMutableBuilder[Self <: Slot] (val x: Self) extends AnyVal {
+  extension [Self <: Slot](x: Self) {
     
-    @scala.inline
-    def setAttachment(value: js.Any): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
+    inline def setAttachment(value: js.Any): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentTime(value: js.Any): Self = StObject.set(x, "attachmentTime", value.asInstanceOf[js.Any])
+    inline def setAttachmentTime(value: js.Any): Self = StObject.set(x, "attachmentTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBone(value: Bone): Self = StObject.set(x, "bone", value.asInstanceOf[js.Any])
+    inline def setBone(value: Bone): Self = StObject.set(x, "bone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDarkColor(value: Color): Self = StObject.set(x, "darkColor", value.asInstanceOf[js.Any])
+    inline def setDarkColor(value: Color): Self = StObject.set(x, "darkColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: SlotData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: SlotData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeform(value: js.Array[Double]): Self = StObject.set(x, "deform", value.asInstanceOf[js.Any])
+    inline def setDeform(value: js.Array[Double]): Self = StObject.set(x, "deform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeformVarargs(value: Double*): Self = StObject.set(x, "deform", js.Array(value :_*))
+    inline def setDeformVarargs(value: Double*): Self = StObject.set(x, "deform", js.Array(value :_*))
     
-    @scala.inline
-    def setGetAttachment(value: () => Attachment): Self = StObject.set(x, "getAttachment", js.Any.fromFunction0(value))
+    inline def setGetAttachment(value: () => Attachment): Self = StObject.set(x, "getAttachment", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAttachmentTime(value: () => Double): Self = StObject.set(x, "getAttachmentTime", js.Any.fromFunction0(value))
+    inline def setGetAttachmentTime(value: () => Double): Self = StObject.set(x, "getAttachmentTime", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetAttachment(value: Attachment => Unit): Self = StObject.set(x, "setAttachment", js.Any.fromFunction1(value))
+    inline def setSetAttachment(value: Attachment => Unit): Self = StObject.set(x, "setAttachment", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAttachmentTime(value: Double => Unit): Self = StObject.set(x, "setAttachmentTime", js.Any.fromFunction1(value))
+    inline def setSetAttachmentTime(value: Double => Unit): Self = StObject.set(x, "setAttachmentTime", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetToSetupPose(value: () => Unit): Self = StObject.set(x, "setToSetupPose", js.Any.fromFunction0(value))
+    inline def setSetToSetupPose(value: () => Unit): Self = StObject.set(x, "setToSetupPose", js.Any.fromFunction0(value))
   }
 }

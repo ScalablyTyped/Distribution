@@ -103,91 +103,63 @@ trait TextProps
 }
 object TextProps {
   
-  @scala.inline
-  def apply(): TextProps = {
+  inline def apply(): TextProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextProps]
   }
   
-  @scala.inline
-  implicit class TextPropsMutableBuilder[Self <: TextProps] (val x: Self) extends AnyVal {
+  extension [Self <: TextProps](x: Self) {
     
-    @scala.inline
-    def setAllowFontScaling(value: Boolean): Self = StObject.set(x, "allowFontScaling", value.asInstanceOf[js.Any])
+    inline def setAllowFontScaling(value: Boolean): Self = StObject.set(x, "allowFontScaling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowFontScalingUndefined: Self = StObject.set(x, "allowFontScaling", js.undefined)
+    inline def setAllowFontScalingUndefined: Self = StObject.set(x, "allowFontScaling", js.undefined)
     
-    @scala.inline
-    def setEllipsizeMode(value: head | middle | tail | clip): Self = StObject.set(x, "ellipsizeMode", value.asInstanceOf[js.Any])
+    inline def setEllipsizeMode(value: head | middle | tail | clip): Self = StObject.set(x, "ellipsizeMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEllipsizeModeUndefined: Self = StObject.set(x, "ellipsizeMode", js.undefined)
+    inline def setEllipsizeModeUndefined: Self = StObject.set(x, "ellipsizeMode", js.undefined)
     
-    @scala.inline
-    def setLineBreakMode(value: head | middle | tail | clip): Self = StObject.set(x, "lineBreakMode", value.asInstanceOf[js.Any])
+    inline def setLineBreakMode(value: head | middle | tail | clip): Self = StObject.set(x, "lineBreakMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineBreakModeUndefined: Self = StObject.set(x, "lineBreakMode", js.undefined)
+    inline def setLineBreakModeUndefined: Self = StObject.set(x, "lineBreakMode", js.undefined)
     
-    @scala.inline
-    def setMaxFontSizeMultiplier(value: Double): Self = StObject.set(x, "maxFontSizeMultiplier", value.asInstanceOf[js.Any])
+    inline def setMaxFontSizeMultiplier(value: Double): Self = StObject.set(x, "maxFontSizeMultiplier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFontSizeMultiplierNull: Self = StObject.set(x, "maxFontSizeMultiplier", null)
+    inline def setMaxFontSizeMultiplierNull: Self = StObject.set(x, "maxFontSizeMultiplier", null)
     
-    @scala.inline
-    def setMaxFontSizeMultiplierUndefined: Self = StObject.set(x, "maxFontSizeMultiplier", js.undefined)
+    inline def setMaxFontSizeMultiplierUndefined: Self = StObject.set(x, "maxFontSizeMultiplier", js.undefined)
     
-    @scala.inline
-    def setNativeID(value: String): Self = StObject.set(x, "nativeID", value.asInstanceOf[js.Any])
+    inline def setNativeID(value: String): Self = StObject.set(x, "nativeID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNativeIDUndefined: Self = StObject.set(x, "nativeID", js.undefined)
+    inline def setNativeIDUndefined: Self = StObject.set(x, "nativeID", js.undefined)
     
-    @scala.inline
-    def setNumberOfLines(value: Double): Self = StObject.set(x, "numberOfLines", value.asInstanceOf[js.Any])
+    inline def setNumberOfLines(value: Double): Self = StObject.set(x, "numberOfLines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfLinesUndefined: Self = StObject.set(x, "numberOfLines", js.undefined)
+    inline def setNumberOfLinesUndefined: Self = StObject.set(x, "numberOfLines", js.undefined)
     
-    @scala.inline
-    def setOnLayout(value: /* event */ LayoutChangeEvent => Unit): Self = StObject.set(x, "onLayout", js.Any.fromFunction1(value))
+    inline def setOnLayout(value: /* event */ LayoutChangeEvent => Unit): Self = StObject.set(x, "onLayout", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnLayoutUndefined: Self = StObject.set(x, "onLayout", js.undefined)
+    inline def setOnLayoutUndefined: Self = StObject.set(x, "onLayout", js.undefined)
     
-    @scala.inline
-    def setOnLongPress(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onLongPress", js.Any.fromFunction1(value))
+    inline def setOnLongPress(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onLongPress", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnLongPressUndefined: Self = StObject.set(x, "onLongPress", js.undefined)
+    inline def setOnLongPressUndefined: Self = StObject.set(x, "onLongPress", js.undefined)
     
-    @scala.inline
-    def setOnPress(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
+    inline def setOnPress(value: /* event */ GestureResponderEvent => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
+    inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
     
-    @scala.inline
-    def setOnTextLayout(value: /* event */ NativeSyntheticEvent[TextLayoutEventData] => Unit): Self = StObject.set(x, "onTextLayout", js.Any.fromFunction1(value))
+    inline def setOnTextLayout(value: /* event */ NativeSyntheticEvent[TextLayoutEventData] => Unit): Self = StObject.set(x, "onTextLayout", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnTextLayoutUndefined: Self = StObject.set(x, "onTextLayout", js.undefined)
+    inline def setOnTextLayoutUndefined: Self = StObject.set(x, "onTextLayout", js.undefined)
     
-    @scala.inline
-    def setStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleNull: Self = StObject.set(x, "style", null)
+    inline def setStyleNull: Self = StObject.set(x, "style", null)
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     
-    @scala.inline
-    def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
+    inline def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
+    inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
   }
 }

@@ -24,22 +24,17 @@ trait MakeDirectoryOptionsrecurMode extends StObject {
 }
 object MakeDirectoryOptionsrecurMode {
   
-  @scala.inline
-  def apply(recursive: js.UndefOr[Boolean] & js.UndefOr[`false`]): MakeDirectoryOptionsrecurMode = {
+  inline def apply(recursive: js.UndefOr[Boolean] & js.UndefOr[`false`]): MakeDirectoryOptionsrecurMode = {
     val __obj = js.Dynamic.literal(recursive = recursive.asInstanceOf[js.Any])
     __obj.asInstanceOf[MakeDirectoryOptionsrecurMode]
   }
   
-  @scala.inline
-  implicit class MakeDirectoryOptionsrecurModeMutableBuilder[Self <: MakeDirectoryOptionsrecurMode] (val x: Self) extends AnyVal {
+  extension [Self <: MakeDirectoryOptionsrecurMode](x: Self) {
     
-    @scala.inline
-    def setMode(value: Mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: Mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setRecursive(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    inline def setRecursive(value: js.UndefOr[Boolean] & js.UndefOr[`false`]): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
   }
 }

@@ -10,10 +10,8 @@ object operatorsFirstMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def first[T, D](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("first")().asInstanceOf[js.Any]
-  @scala.inline
-  def first[T, S /* <: T */](
+  inline def first[T, D](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("first")().asInstanceOf[js.Any]
+  inline def first[T, S /* <: T */](
     predicate: js.Function3[
       /* value */ T, 
       /* index */ Double, 
@@ -21,8 +19,7 @@ object operatorsFirstMod {
       /* is S */ Boolean
     ]
   ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("first")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def first[T, S /* <: T */](
+  inline def first[T, S /* <: T */](
     predicate: js.Function3[
       /* value */ T, 
       /* index */ Double, 
@@ -31,13 +28,10 @@ object operatorsFirstMod {
     ],
     defaultValue: S
   ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("first")(predicate.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def first[T, D](predicate: Null, defaultValue: D): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("first")(predicate.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def first[T, D](predicate: Unit, defaultValue: D): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("first")(predicate.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def first[T, D](predicate: Null, defaultValue: D): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("first")(predicate.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def first[T, D](predicate: Unit, defaultValue: D): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("first")(predicate.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def first_TD[T, D](
+  inline def first_TD[T, D](
     predicate: js.Function3[
       /* value */ T, 
       /* index */ Double, 
@@ -45,8 +39,7 @@ object operatorsFirstMod {
       Boolean
     ]
   ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("first")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def first_TD[T, D](
+  inline def first_TD[T, D](
     predicate: js.Function3[
       /* value */ T, 
       /* index */ Double, 

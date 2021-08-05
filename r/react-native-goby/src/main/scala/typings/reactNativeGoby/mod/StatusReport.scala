@@ -35,40 +35,29 @@ trait StatusReport extends StObject {
 }
 object StatusReport {
   
-  @scala.inline
-  def apply(status: DeploymentStatus): StatusReport = {
+  inline def apply(status: DeploymentStatus): StatusReport = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatusReport]
   }
   
-  @scala.inline
-  implicit class StatusReportMutableBuilder[Self <: StatusReport] (val x: Self) extends AnyVal {
+  extension [Self <: StatusReport](x: Self) {
     
-    @scala.inline
-    def setAppVersion(value: String): Self = StObject.set(x, "appVersion", value.asInstanceOf[js.Any])
+    inline def setAppVersion(value: String): Self = StObject.set(x, "appVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppVersionUndefined: Self = StObject.set(x, "appVersion", js.undefined)
+    inline def setAppVersionUndefined: Self = StObject.set(x, "appVersion", js.undefined)
     
-    @scala.inline
-    def setPreviousDeploymentKey(value: String): Self = StObject.set(x, "previousDeploymentKey", value.asInstanceOf[js.Any])
+    inline def setPreviousDeploymentKey(value: String): Self = StObject.set(x, "previousDeploymentKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousDeploymentKeyUndefined: Self = StObject.set(x, "previousDeploymentKey", js.undefined)
+    inline def setPreviousDeploymentKeyUndefined: Self = StObject.set(x, "previousDeploymentKey", js.undefined)
     
-    @scala.inline
-    def setPreviousLabelOrAppVersion(value: String): Self = StObject.set(x, "previousLabelOrAppVersion", value.asInstanceOf[js.Any])
+    inline def setPreviousLabelOrAppVersion(value: String): Self = StObject.set(x, "previousLabelOrAppVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousLabelOrAppVersionUndefined: Self = StObject.set(x, "previousLabelOrAppVersion", js.undefined)
+    inline def setPreviousLabelOrAppVersionUndefined: Self = StObject.set(x, "previousLabelOrAppVersion", js.undefined)
     
-    @scala.inline
-    def setStatus(value: DeploymentStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: DeploymentStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_package(value: Package): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
+    inline def set_package(value: Package): Self = StObject.set(x, "package", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
+    inline def set_packageUndefined: Self = StObject.set(x, "package", js.undefined)
   }
 }

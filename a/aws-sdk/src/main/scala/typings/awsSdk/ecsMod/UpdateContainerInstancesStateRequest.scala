@@ -23,28 +23,21 @@ trait UpdateContainerInstancesStateRequest extends StObject {
 }
 object UpdateContainerInstancesStateRequest {
   
-  @scala.inline
-  def apply(containerInstances: StringList, status: ContainerInstanceStatus): UpdateContainerInstancesStateRequest = {
+  inline def apply(containerInstances: StringList, status: ContainerInstanceStatus): UpdateContainerInstancesStateRequest = {
     val __obj = js.Dynamic.literal(containerInstances = containerInstances.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateContainerInstancesStateRequest]
   }
   
-  @scala.inline
-  implicit class UpdateContainerInstancesStateRequestMutableBuilder[Self <: UpdateContainerInstancesStateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateContainerInstancesStateRequest](x: Self) {
     
-    @scala.inline
-    def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
+    inline def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
+    inline def setClusterUndefined: Self = StObject.set(x, "cluster", js.undefined)
     
-    @scala.inline
-    def setContainerInstances(value: StringList): Self = StObject.set(x, "containerInstances", value.asInstanceOf[js.Any])
+    inline def setContainerInstances(value: StringList): Self = StObject.set(x, "containerInstances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerInstancesVarargs(value: String*): Self = StObject.set(x, "containerInstances", js.Array(value :_*))
+    inline def setContainerInstancesVarargs(value: String*): Self = StObject.set(x, "containerInstances", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: ContainerInstanceStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ContainerInstanceStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

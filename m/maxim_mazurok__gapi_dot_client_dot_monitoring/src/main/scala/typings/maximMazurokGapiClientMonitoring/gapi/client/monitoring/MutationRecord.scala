@@ -14,25 +14,19 @@ trait MutationRecord extends StObject {
 }
 object MutationRecord {
   
-  @scala.inline
-  def apply(): MutationRecord = {
+  inline def apply(): MutationRecord = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MutationRecord]
   }
   
-  @scala.inline
-  implicit class MutationRecordMutableBuilder[Self <: MutationRecord] (val x: Self) extends AnyVal {
+  extension [Self <: MutationRecord](x: Self) {
     
-    @scala.inline
-    def setMutateTime(value: String): Self = StObject.set(x, "mutateTime", value.asInstanceOf[js.Any])
+    inline def setMutateTime(value: String): Self = StObject.set(x, "mutateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMutateTimeUndefined: Self = StObject.set(x, "mutateTime", js.undefined)
+    inline def setMutateTimeUndefined: Self = StObject.set(x, "mutateTime", js.undefined)
     
-    @scala.inline
-    def setMutatedBy(value: String): Self = StObject.set(x, "mutatedBy", value.asInstanceOf[js.Any])
+    inline def setMutatedBy(value: String): Self = StObject.set(x, "mutatedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMutatedByUndefined: Self = StObject.set(x, "mutatedBy", js.undefined)
+    inline def setMutatedByUndefined: Self = StObject.set(x, "mutatedBy", js.undefined)
   }
 }

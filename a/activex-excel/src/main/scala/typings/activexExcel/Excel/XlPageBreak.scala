@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlPageBreak extends StObject
 object XlPageBreak {
   
-  @scala.inline
-  def xlPageBreakAutomatic: `-4105` = -4105.asInstanceOf[`-4105`]
+  inline def xlPageBreakAutomatic: `-4105` = -4105.asInstanceOf[`-4105`]
   
-  @scala.inline
-  def xlPageBreakManual: `-4135` = -4135.asInstanceOf[`-4135`]
+  inline def xlPageBreakManual: `-4135` = -4135.asInstanceOf[`-4135`]
   
-  @scala.inline
-  def xlPageBreakNone: `-4142` = -4142.asInstanceOf[`-4142`]
+  inline def xlPageBreakNone: `-4142` = -4142.asInstanceOf[`-4142`]
 }

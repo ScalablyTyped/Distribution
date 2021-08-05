@@ -21,25 +21,19 @@ trait SchemaArg extends StObject {
 }
 object SchemaArg {
   
-  @scala.inline
-  def apply(): SchemaArg = {
+  inline def apply(): SchemaArg = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaArg]
   }
   
-  @scala.inline
-  implicit class SchemaArgMutableBuilder[Self <: SchemaArg] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaArg](x: Self) {
     
-    @scala.inline
-    def setAnyValue(value: SchemaEmpty): Self = StObject.set(x, "anyValue", value.asInstanceOf[js.Any])
+    inline def setAnyValue(value: SchemaEmpty): Self = StObject.set(x, "anyValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnyValueUndefined: Self = StObject.set(x, "anyValue", js.undefined)
+    inline def setAnyValueUndefined: Self = StObject.set(x, "anyValue", js.undefined)
     
-    @scala.inline
-    def setExactValue(value: js.Any): Self = StObject.set(x, "exactValue", value.asInstanceOf[js.Any])
+    inline def setExactValue(value: js.Any): Self = StObject.set(x, "exactValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExactValueUndefined: Self = StObject.set(x, "exactValue", js.undefined)
+    inline def setExactValueUndefined: Self = StObject.set(x, "exactValue", js.undefined)
   }
 }

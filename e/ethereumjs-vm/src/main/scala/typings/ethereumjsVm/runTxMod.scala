@@ -14,8 +14,7 @@ object runTxMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(opts: RunTxOpts): js.Promise[RunTxResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RunTxResult]]
+  inline def default(opts: RunTxOpts): js.Promise[RunTxResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RunTxResult]]
   
   trait RunTxOpts extends StObject {
     
@@ -41,35 +40,26 @@ object runTxMod {
   }
   object RunTxOpts {
     
-    @scala.inline
-    def apply(tx: Transaction): RunTxOpts = {
+    inline def apply(tx: Transaction): RunTxOpts = {
       val __obj = js.Dynamic.literal(tx = tx.asInstanceOf[js.Any])
       __obj.asInstanceOf[RunTxOpts]
     }
     
-    @scala.inline
-    implicit class RunTxOptsMutableBuilder[Self <: RunTxOpts] (val x: Self) extends AnyVal {
+    extension [Self <: RunTxOpts](x: Self) {
       
-      @scala.inline
-      def setBlock(value: js.Any): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+      inline def setBlock(value: js.Any): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
+      inline def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
       
-      @scala.inline
-      def setSkipBalance(value: Boolean): Self = StObject.set(x, "skipBalance", value.asInstanceOf[js.Any])
+      inline def setSkipBalance(value: Boolean): Self = StObject.set(x, "skipBalance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipBalanceUndefined: Self = StObject.set(x, "skipBalance", js.undefined)
+      inline def setSkipBalanceUndefined: Self = StObject.set(x, "skipBalance", js.undefined)
       
-      @scala.inline
-      def setSkipNonce(value: Boolean): Self = StObject.set(x, "skipNonce", value.asInstanceOf[js.Any])
+      inline def setSkipNonce(value: Boolean): Self = StObject.set(x, "skipNonce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipNonceUndefined: Self = StObject.set(x, "skipNonce", js.undefined)
+      inline def setSkipNonceUndefined: Self = StObject.set(x, "skipNonce", js.undefined)
       
-      @scala.inline
-      def setTx(value: Transaction): Self = StObject.set(x, "tx", value.asInstanceOf[js.Any])
+      inline def setTx(value: Transaction): Self = StObject.set(x, "tx", value.asInstanceOf[js.Any])
     }
   }
   
@@ -94,8 +84,7 @@ object runTxMod {
   }
   object RunTxResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       amountSpent: typings.bnJs.mod.^,
       bloom: default,
       execResult: ExecResult,
@@ -105,20 +94,15 @@ object runTxMod {
       __obj.asInstanceOf[RunTxResult]
     }
     
-    @scala.inline
-    implicit class RunTxResultMutableBuilder[Self <: RunTxResult] (val x: Self) extends AnyVal {
+    extension [Self <: RunTxResult](x: Self) {
       
-      @scala.inline
-      def setAmountSpent(value: typings.bnJs.mod.^): Self = StObject.set(x, "amountSpent", value.asInstanceOf[js.Any])
+      inline def setAmountSpent(value: typings.bnJs.mod.^): Self = StObject.set(x, "amountSpent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBloom(value: default): Self = StObject.set(x, "bloom", value.asInstanceOf[js.Any])
+      inline def setBloom(value: default): Self = StObject.set(x, "bloom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGasRefund(value: typings.bnJs.mod.^): Self = StObject.set(x, "gasRefund", value.asInstanceOf[js.Any])
+      inline def setGasRefund(value: typings.bnJs.mod.^): Self = StObject.set(x, "gasRefund", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGasRefundUndefined: Self = StObject.set(x, "gasRefund", js.undefined)
+      inline def setGasRefundUndefined: Self = StObject.set(x, "gasRefund", js.undefined)
     }
   }
 }

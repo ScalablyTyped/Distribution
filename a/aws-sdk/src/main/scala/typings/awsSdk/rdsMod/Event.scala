@@ -38,52 +38,37 @@ trait Event extends StObject {
 }
 object Event {
   
-  @scala.inline
-  def apply(): Event = {
+  inline def apply(): Event = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Event]
   }
   
-  @scala.inline
-  implicit class EventMutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
+  extension [Self <: Event](x: Self) {
     
-    @scala.inline
-    def setDate(value: TStamp): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
+    inline def setDate(value: TStamp): Self = StObject.set(x, "Date", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateUndefined: Self = StObject.set(x, "Date", js.undefined)
+    inline def setDateUndefined: Self = StObject.set(x, "Date", js.undefined)
     
-    @scala.inline
-    def setEventCategories(value: EventCategoriesList): Self = StObject.set(x, "EventCategories", value.asInstanceOf[js.Any])
+    inline def setEventCategories(value: EventCategoriesList): Self = StObject.set(x, "EventCategories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventCategoriesUndefined: Self = StObject.set(x, "EventCategories", js.undefined)
+    inline def setEventCategoriesUndefined: Self = StObject.set(x, "EventCategories", js.undefined)
     
-    @scala.inline
-    def setEventCategoriesVarargs(value: String*): Self = StObject.set(x, "EventCategories", js.Array(value :_*))
+    inline def setEventCategoriesVarargs(value: String*): Self = StObject.set(x, "EventCategories", js.Array(value :_*))
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
     
-    @scala.inline
-    def setSourceArn(value: String): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
+    inline def setSourceArn(value: String): Self = StObject.set(x, "SourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceArnUndefined: Self = StObject.set(x, "SourceArn", js.undefined)
+    inline def setSourceArnUndefined: Self = StObject.set(x, "SourceArn", js.undefined)
     
-    @scala.inline
-    def setSourceIdentifier(value: String): Self = StObject.set(x, "SourceIdentifier", value.asInstanceOf[js.Any])
+    inline def setSourceIdentifier(value: String): Self = StObject.set(x, "SourceIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceIdentifierUndefined: Self = StObject.set(x, "SourceIdentifier", js.undefined)
+    inline def setSourceIdentifierUndefined: Self = StObject.set(x, "SourceIdentifier", js.undefined)
     
-    @scala.inline
-    def setSourceType(value: SourceType): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
+    inline def setSourceType(value: SourceType): Self = StObject.set(x, "SourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceTypeUndefined: Self = StObject.set(x, "SourceType", js.undefined)
+    inline def setSourceTypeUndefined: Self = StObject.set(x, "SourceType", js.undefined)
   }
 }

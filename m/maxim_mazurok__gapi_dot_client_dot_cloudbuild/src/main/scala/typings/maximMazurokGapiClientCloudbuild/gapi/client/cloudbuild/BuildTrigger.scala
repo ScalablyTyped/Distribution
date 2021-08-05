@@ -66,104 +66,73 @@ trait BuildTrigger extends StObject {
 }
 object BuildTrigger {
   
-  @scala.inline
-  def apply(): BuildTrigger = {
+  inline def apply(): BuildTrigger = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildTrigger]
   }
   
-  @scala.inline
-  implicit class BuildTriggerMutableBuilder[Self <: BuildTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: BuildTrigger](x: Self) {
     
-    @scala.inline
-    def setBuild(value: Build): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
+    inline def setBuild(value: Build): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
+    inline def setBuildUndefined: Self = StObject.set(x, "build", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+    inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+    inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
-    @scala.inline
-    def setGithub(value: GitHubEventsConfig): Self = StObject.set(x, "github", value.asInstanceOf[js.Any])
+    inline def setGithub(value: GitHubEventsConfig): Self = StObject.set(x, "github", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGithubUndefined: Self = StObject.set(x, "github", js.undefined)
+    inline def setGithubUndefined: Self = StObject.set(x, "github", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setIgnoredFiles(value: js.Array[String]): Self = StObject.set(x, "ignoredFiles", value.asInstanceOf[js.Any])
+    inline def setIgnoredFiles(value: js.Array[String]): Self = StObject.set(x, "ignoredFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoredFilesUndefined: Self = StObject.set(x, "ignoredFiles", js.undefined)
+    inline def setIgnoredFilesUndefined: Self = StObject.set(x, "ignoredFiles", js.undefined)
     
-    @scala.inline
-    def setIgnoredFilesVarargs(value: String*): Self = StObject.set(x, "ignoredFiles", js.Array(value :_*))
+    inline def setIgnoredFilesVarargs(value: String*): Self = StObject.set(x, "ignoredFiles", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludedFiles(value: js.Array[String]): Self = StObject.set(x, "includedFiles", value.asInstanceOf[js.Any])
+    inline def setIncludedFiles(value: js.Array[String]): Self = StObject.set(x, "includedFiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludedFilesUndefined: Self = StObject.set(x, "includedFiles", js.undefined)
+    inline def setIncludedFilesUndefined: Self = StObject.set(x, "includedFiles", js.undefined)
     
-    @scala.inline
-    def setIncludedFilesVarargs(value: String*): Self = StObject.set(x, "includedFiles", js.Array(value :_*))
+    inline def setIncludedFilesVarargs(value: String*): Self = StObject.set(x, "includedFiles", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSubstitutions(
+    inline def setSubstitutions(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientCloudbuild.maximMazurokGapiClientCloudbuildStrings.BuildTrigger & TopLevel[js.Any]
     ): Self = StObject.set(x, "substitutions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubstitutionsUndefined: Self = StObject.set(x, "substitutions", js.undefined)
+    inline def setSubstitutionsUndefined: Self = StObject.set(x, "substitutions", js.undefined)
     
-    @scala.inline
-    def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setTriggerTemplate(value: RepoSource): Self = StObject.set(x, "triggerTemplate", value.asInstanceOf[js.Any])
+    inline def setTriggerTemplate(value: RepoSource): Self = StObject.set(x, "triggerTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerTemplateUndefined: Self = StObject.set(x, "triggerTemplate", js.undefined)
+    inline def setTriggerTemplateUndefined: Self = StObject.set(x, "triggerTemplate", js.undefined)
   }
 }

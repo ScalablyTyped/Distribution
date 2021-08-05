@@ -8,6 +8,5 @@ object zuiStrings {
   
   @js.native
   sealed trait DateTimePicker extends StObject
-  @scala.inline
-  def DateTimePicker: DateTimePicker = "DateTimePicker".asInstanceOf[DateTimePicker]
+  inline def DateTimePicker: DateTimePicker = "DateTimePicker".asInstanceOf[DateTimePicker]
 }

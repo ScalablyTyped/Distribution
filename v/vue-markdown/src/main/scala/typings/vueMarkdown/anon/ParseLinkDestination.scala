@@ -14,22 +14,17 @@ trait ParseLinkDestination extends StObject {
 }
 object ParseLinkDestination {
   
-  @scala.inline
-  def apply(parseLinkDestination: js.Any, parseLinkLabel: js.Any, parseLinkTitle: js.Any): ParseLinkDestination = {
+  inline def apply(parseLinkDestination: js.Any, parseLinkLabel: js.Any, parseLinkTitle: js.Any): ParseLinkDestination = {
     val __obj = js.Dynamic.literal(parseLinkDestination = parseLinkDestination.asInstanceOf[js.Any], parseLinkLabel = parseLinkLabel.asInstanceOf[js.Any], parseLinkTitle = parseLinkTitle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParseLinkDestination]
   }
   
-  @scala.inline
-  implicit class ParseLinkDestinationMutableBuilder[Self <: ParseLinkDestination] (val x: Self) extends AnyVal {
+  extension [Self <: ParseLinkDestination](x: Self) {
     
-    @scala.inline
-    def setParseLinkDestination(value: js.Any): Self = StObject.set(x, "parseLinkDestination", value.asInstanceOf[js.Any])
+    inline def setParseLinkDestination(value: js.Any): Self = StObject.set(x, "parseLinkDestination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParseLinkLabel(value: js.Any): Self = StObject.set(x, "parseLinkLabel", value.asInstanceOf[js.Any])
+    inline def setParseLinkLabel(value: js.Any): Self = StObject.set(x, "parseLinkLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParseLinkTitle(value: js.Any): Self = StObject.set(x, "parseLinkTitle", value.asInstanceOf[js.Any])
+    inline def setParseLinkTitle(value: js.Any): Self = StObject.set(x, "parseLinkTitle", value.asInstanceOf[js.Any])
   }
 }

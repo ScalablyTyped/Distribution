@@ -11,22 +11,17 @@ trait PendingOperations extends StObject {
 }
 object PendingOperations {
   
-  @scala.inline
-  def apply(): PendingOperations = {
+  inline def apply(): PendingOperations = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PendingOperations]
   }
   
-  @scala.inline
-  implicit class PendingOperationsMutableBuilder[Self <: PendingOperations] (val x: Self) extends AnyVal {
+  extension [Self <: PendingOperations](x: Self) {
     
-    @scala.inline
-    def setPendingContentUpdate(value: NullableOption[PendingContentUpdate]): Self = StObject.set(x, "pendingContentUpdate", value.asInstanceOf[js.Any])
+    inline def setPendingContentUpdate(value: NullableOption[PendingContentUpdate]): Self = StObject.set(x, "pendingContentUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingContentUpdateNull: Self = StObject.set(x, "pendingContentUpdate", null)
+    inline def setPendingContentUpdateNull: Self = StObject.set(x, "pendingContentUpdate", null)
     
-    @scala.inline
-    def setPendingContentUpdateUndefined: Self = StObject.set(x, "pendingContentUpdate", js.undefined)
+    inline def setPendingContentUpdateUndefined: Self = StObject.set(x, "pendingContentUpdate", js.undefined)
   }
 }

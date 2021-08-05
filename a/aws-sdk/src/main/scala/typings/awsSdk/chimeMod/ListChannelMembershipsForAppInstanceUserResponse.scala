@@ -18,28 +18,21 @@ trait ListChannelMembershipsForAppInstanceUserResponse extends StObject {
 }
 object ListChannelMembershipsForAppInstanceUserResponse {
   
-  @scala.inline
-  def apply(): ListChannelMembershipsForAppInstanceUserResponse = {
+  inline def apply(): ListChannelMembershipsForAppInstanceUserResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListChannelMembershipsForAppInstanceUserResponse]
   }
   
-  @scala.inline
-  implicit class ListChannelMembershipsForAppInstanceUserResponseMutableBuilder[Self <: ListChannelMembershipsForAppInstanceUserResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListChannelMembershipsForAppInstanceUserResponse](x: Self) {
     
-    @scala.inline
-    def setChannelMemberships(value: ChannelMembershipForAppInstanceUserSummaryList): Self = StObject.set(x, "ChannelMemberships", value.asInstanceOf[js.Any])
+    inline def setChannelMemberships(value: ChannelMembershipForAppInstanceUserSummaryList): Self = StObject.set(x, "ChannelMemberships", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelMembershipsUndefined: Self = StObject.set(x, "ChannelMemberships", js.undefined)
+    inline def setChannelMembershipsUndefined: Self = StObject.set(x, "ChannelMemberships", js.undefined)
     
-    @scala.inline
-    def setChannelMembershipsVarargs(value: ChannelMembershipForAppInstanceUserSummary*): Self = StObject.set(x, "ChannelMemberships", js.Array(value :_*))
+    inline def setChannelMembershipsVarargs(value: ChannelMembershipForAppInstanceUserSummary*): Self = StObject.set(x, "ChannelMemberships", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

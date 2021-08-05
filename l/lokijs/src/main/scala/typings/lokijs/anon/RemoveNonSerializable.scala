@@ -10,19 +10,15 @@ trait RemoveNonSerializable extends StObject {
 }
 object RemoveNonSerializable {
   
-  @scala.inline
-  def apply(): RemoveNonSerializable = {
+  inline def apply(): RemoveNonSerializable = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RemoveNonSerializable]
   }
   
-  @scala.inline
-  implicit class RemoveNonSerializableMutableBuilder[Self <: RemoveNonSerializable] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveNonSerializable](x: Self) {
     
-    @scala.inline
-    def setRemoveNonSerializable(value: Boolean): Self = StObject.set(x, "removeNonSerializable", value.asInstanceOf[js.Any])
+    inline def setRemoveNonSerializable(value: Boolean): Self = StObject.set(x, "removeNonSerializable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveNonSerializableUndefined: Self = StObject.set(x, "removeNonSerializable", js.undefined)
+    inline def setRemoveNonSerializableUndefined: Self = StObject.set(x, "removeNonSerializable", js.undefined)
   }
 }

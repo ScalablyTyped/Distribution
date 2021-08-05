@@ -29,61 +29,43 @@ trait EntityAdWordsLink extends StObject {
 }
 object EntityAdWordsLink {
   
-  @scala.inline
-  def apply(): EntityAdWordsLink = {
+  inline def apply(): EntityAdWordsLink = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EntityAdWordsLink]
   }
   
-  @scala.inline
-  implicit class EntityAdWordsLinkMutableBuilder[Self <: EntityAdWordsLink] (val x: Self) extends AnyVal {
+  extension [Self <: EntityAdWordsLink](x: Self) {
     
-    @scala.inline
-    def setAdWordsAccounts(value: js.Array[AdWordsAccount]): Self = StObject.set(x, "adWordsAccounts", value.asInstanceOf[js.Any])
+    inline def setAdWordsAccounts(value: js.Array[AdWordsAccount]): Self = StObject.set(x, "adWordsAccounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdWordsAccountsUndefined: Self = StObject.set(x, "adWordsAccounts", js.undefined)
+    inline def setAdWordsAccountsUndefined: Self = StObject.set(x, "adWordsAccounts", js.undefined)
     
-    @scala.inline
-    def setAdWordsAccountsVarargs(value: AdWordsAccount*): Self = StObject.set(x, "adWordsAccounts", js.Array(value :_*))
+    inline def setAdWordsAccountsVarargs(value: AdWordsAccount*): Self = StObject.set(x, "adWordsAccounts", js.Array(value :_*))
     
-    @scala.inline
-    def setEntity(value: typings.maximMazurokGapiClientAnalytics.anon.WebPropertyRef): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
+    inline def setEntity(value: typings.maximMazurokGapiClientAnalytics.anon.WebPropertyRef): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
+    inline def setEntityUndefined: Self = StObject.set(x, "entity", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setProfileIds(value: js.Array[String]): Self = StObject.set(x, "profileIds", value.asInstanceOf[js.Any])
+    inline def setProfileIds(value: js.Array[String]): Self = StObject.set(x, "profileIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileIdsUndefined: Self = StObject.set(x, "profileIds", js.undefined)
+    inline def setProfileIdsUndefined: Self = StObject.set(x, "profileIds", js.undefined)
     
-    @scala.inline
-    def setProfileIdsVarargs(value: String*): Self = StObject.set(x, "profileIds", js.Array(value :_*))
+    inline def setProfileIdsVarargs(value: String*): Self = StObject.set(x, "profileIds", js.Array(value :_*))
     
-    @scala.inline
-    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
   }
 }

@@ -28,49 +28,35 @@ trait UseGroupByOptions[D /* <: js.Object */] extends StObject {
 }
 object UseGroupByOptions {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](): UseGroupByOptions[D] = {
+  inline def apply[D /* <: js.Object */](): UseGroupByOptions[D] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UseGroupByOptions[D]]
   }
   
-  @scala.inline
-  implicit class UseGroupByOptionsMutableBuilder[Self <: UseGroupByOptions[?], D /* <: js.Object */] (val x: Self & UseGroupByOptions[D]) extends AnyVal {
+  extension [Self <: UseGroupByOptions[?], D /* <: js.Object */](x: Self & UseGroupByOptions[D]) {
     
-    @scala.inline
-    def setAggregations(value: Record[String, AggregatorFn[D]]): Self = StObject.set(x, "aggregations", value.asInstanceOf[js.Any])
+    inline def setAggregations(value: Record[String, AggregatorFn[D]]): Self = StObject.set(x, "aggregations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAggregationsUndefined: Self = StObject.set(x, "aggregations", js.undefined)
+    inline def setAggregationsUndefined: Self = StObject.set(x, "aggregations", js.undefined)
     
-    @scala.inline
-    def setAutoResetGroupBy(value: Boolean): Self = StObject.set(x, "autoResetGroupBy", value.asInstanceOf[js.Any])
+    inline def setAutoResetGroupBy(value: Boolean): Self = StObject.set(x, "autoResetGroupBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoResetGroupByUndefined: Self = StObject.set(x, "autoResetGroupBy", js.undefined)
+    inline def setAutoResetGroupByUndefined: Self = StObject.set(x, "autoResetGroupBy", js.undefined)
     
-    @scala.inline
-    def setDefaultCanGroupBy(value: Boolean): Self = StObject.set(x, "defaultCanGroupBy", value.asInstanceOf[js.Any])
+    inline def setDefaultCanGroupBy(value: Boolean): Self = StObject.set(x, "defaultCanGroupBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultCanGroupByUndefined: Self = StObject.set(x, "defaultCanGroupBy", js.undefined)
+    inline def setDefaultCanGroupByUndefined: Self = StObject.set(x, "defaultCanGroupBy", js.undefined)
     
-    @scala.inline
-    def setDisableGroupBy(value: Boolean): Self = StObject.set(x, "disableGroupBy", value.asInstanceOf[js.Any])
+    inline def setDisableGroupBy(value: Boolean): Self = StObject.set(x, "disableGroupBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableGroupByUndefined: Self = StObject.set(x, "disableGroupBy", js.undefined)
+    inline def setDisableGroupByUndefined: Self = StObject.set(x, "disableGroupBy", js.undefined)
     
-    @scala.inline
-    def setGroupByFn(value: (/* rows */ js.Array[Row[D]], /* columnId */ IdType[D]) => Record[String, js.Array[Row[D]]]): Self = StObject.set(x, "groupByFn", js.Any.fromFunction2(value))
+    inline def setGroupByFn(value: (/* rows */ js.Array[Row[D]], /* columnId */ IdType[D]) => Record[String, js.Array[Row[D]]]): Self = StObject.set(x, "groupByFn", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGroupByFnUndefined: Self = StObject.set(x, "groupByFn", js.undefined)
+    inline def setGroupByFnUndefined: Self = StObject.set(x, "groupByFn", js.undefined)
     
-    @scala.inline
-    def setManualGroupBy(value: Boolean): Self = StObject.set(x, "manualGroupBy", value.asInstanceOf[js.Any])
+    inline def setManualGroupBy(value: Boolean): Self = StObject.set(x, "manualGroupBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManualGroupByUndefined: Self = StObject.set(x, "manualGroupBy", js.undefined)
+    inline def setManualGroupByUndefined: Self = StObject.set(x, "manualGroupBy", js.undefined)
   }
 }

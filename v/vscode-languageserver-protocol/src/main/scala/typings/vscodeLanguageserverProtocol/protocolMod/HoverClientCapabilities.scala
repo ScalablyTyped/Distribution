@@ -20,28 +20,21 @@ trait HoverClientCapabilities extends StObject {
 }
 object HoverClientCapabilities {
   
-  @scala.inline
-  def apply(): HoverClientCapabilities = {
+  inline def apply(): HoverClientCapabilities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HoverClientCapabilities]
   }
   
-  @scala.inline
-  implicit class HoverClientCapabilitiesMutableBuilder[Self <: HoverClientCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: HoverClientCapabilities](x: Self) {
     
-    @scala.inline
-    def setContentFormat(value: js.Array[MarkupKind]): Self = StObject.set(x, "contentFormat", value.asInstanceOf[js.Any])
+    inline def setContentFormat(value: js.Array[MarkupKind]): Self = StObject.set(x, "contentFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentFormatUndefined: Self = StObject.set(x, "contentFormat", js.undefined)
+    inline def setContentFormatUndefined: Self = StObject.set(x, "contentFormat", js.undefined)
     
-    @scala.inline
-    def setContentFormatVarargs(value: MarkupKind*): Self = StObject.set(x, "contentFormat", js.Array(value :_*))
+    inline def setContentFormatVarargs(value: MarkupKind*): Self = StObject.set(x, "contentFormat", js.Array(value :_*))
     
-    @scala.inline
-    def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
+    inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
+    inline def setDynamicRegistrationUndefined: Self = StObject.set(x, "dynamicRegistration", js.undefined)
   }
 }

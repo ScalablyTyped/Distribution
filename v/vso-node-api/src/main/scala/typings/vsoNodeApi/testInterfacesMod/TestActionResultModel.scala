@@ -24,8 +24,7 @@ trait TestActionResultModel
 }
 object TestActionResultModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     actionPath: String,
     comment: String,
     completedDate: Date,
@@ -42,22 +41,16 @@ object TestActionResultModel {
     __obj.asInstanceOf[TestActionResultModel]
   }
   
-  @scala.inline
-  implicit class TestActionResultModelMutableBuilder[Self <: TestActionResultModel] (val x: Self) extends AnyVal {
+  extension [Self <: TestActionResultModel](x: Self) {
     
-    @scala.inline
-    def setActionPath(value: String): Self = StObject.set(x, "actionPath", value.asInstanceOf[js.Any])
+    inline def setActionPath(value: String): Self = StObject.set(x, "actionPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIterationId(value: Double): Self = StObject.set(x, "iterationId", value.asInstanceOf[js.Any])
+    inline def setIterationId(value: Double): Self = StObject.set(x, "iterationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSharedStepModel(value: SharedStepModel): Self = StObject.set(x, "sharedStepModel", value.asInstanceOf[js.Any])
+    inline def setSharedStepModel(value: SharedStepModel): Self = StObject.set(x, "sharedStepModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepIdentifier(value: String): Self = StObject.set(x, "stepIdentifier", value.asInstanceOf[js.Any])
+    inline def setStepIdentifier(value: String): Self = StObject.set(x, "stepIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

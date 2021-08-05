@@ -28,34 +28,25 @@ trait GetSessionEmbedUrlRequest extends StObject {
 }
 object GetSessionEmbedUrlRequest {
   
-  @scala.inline
-  def apply(AwsAccountId: AwsAccountId): GetSessionEmbedUrlRequest = {
+  inline def apply(AwsAccountId: AwsAccountId): GetSessionEmbedUrlRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetSessionEmbedUrlRequest]
   }
   
-  @scala.inline
-  implicit class GetSessionEmbedUrlRequestMutableBuilder[Self <: GetSessionEmbedUrlRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetSessionEmbedUrlRequest](x: Self) {
     
-    @scala.inline
-    def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
+    inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntryPoint(value: EntryPoint): Self = StObject.set(x, "EntryPoint", value.asInstanceOf[js.Any])
+    inline def setEntryPoint(value: EntryPoint): Self = StObject.set(x, "EntryPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntryPointUndefined: Self = StObject.set(x, "EntryPoint", js.undefined)
+    inline def setEntryPointUndefined: Self = StObject.set(x, "EntryPoint", js.undefined)
     
-    @scala.inline
-    def setSessionLifetimeInMinutes(value: SessionLifetimeInMinutes): Self = StObject.set(x, "SessionLifetimeInMinutes", value.asInstanceOf[js.Any])
+    inline def setSessionLifetimeInMinutes(value: SessionLifetimeInMinutes): Self = StObject.set(x, "SessionLifetimeInMinutes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionLifetimeInMinutesUndefined: Self = StObject.set(x, "SessionLifetimeInMinutes", js.undefined)
+    inline def setSessionLifetimeInMinutesUndefined: Self = StObject.set(x, "SessionLifetimeInMinutes", js.undefined)
     
-    @scala.inline
-    def setUserArn(value: Arn): Self = StObject.set(x, "UserArn", value.asInstanceOf[js.Any])
+    inline def setUserArn(value: Arn): Self = StObject.set(x, "UserArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserArnUndefined: Self = StObject.set(x, "UserArn", js.undefined)
+    inline def setUserArnUndefined: Self = StObject.set(x, "UserArn", js.undefined)
   }
 }

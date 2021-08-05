@@ -13,19 +13,15 @@ trait BudgetDetail extends StObject {
 }
 object BudgetDetail {
   
-  @scala.inline
-  def apply(): BudgetDetail = {
+  inline def apply(): BudgetDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BudgetDetail]
   }
   
-  @scala.inline
-  implicit class BudgetDetailMutableBuilder[Self <: BudgetDetail] (val x: Self) extends AnyVal {
+  extension [Self <: BudgetDetail](x: Self) {
     
-    @scala.inline
-    def setBudgetName(value: BudgetName): Self = StObject.set(x, "BudgetName", value.asInstanceOf[js.Any])
+    inline def setBudgetName(value: BudgetName): Self = StObject.set(x, "BudgetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBudgetNameUndefined: Self = StObject.set(x, "BudgetName", js.undefined)
+    inline def setBudgetNameUndefined: Self = StObject.set(x, "BudgetName", js.undefined)
   }
 }

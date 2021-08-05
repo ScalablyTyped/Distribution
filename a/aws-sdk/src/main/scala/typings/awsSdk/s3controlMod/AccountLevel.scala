@@ -18,22 +18,17 @@ trait AccountLevel extends StObject {
 }
 object AccountLevel {
   
-  @scala.inline
-  def apply(BucketLevel: BucketLevel): AccountLevel = {
+  inline def apply(BucketLevel: BucketLevel): AccountLevel = {
     val __obj = js.Dynamic.literal(BucketLevel = BucketLevel.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccountLevel]
   }
   
-  @scala.inline
-  implicit class AccountLevelMutableBuilder[Self <: AccountLevel] (val x: Self) extends AnyVal {
+  extension [Self <: AccountLevel](x: Self) {
     
-    @scala.inline
-    def setActivityMetrics(value: ActivityMetrics): Self = StObject.set(x, "ActivityMetrics", value.asInstanceOf[js.Any])
+    inline def setActivityMetrics(value: ActivityMetrics): Self = StObject.set(x, "ActivityMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivityMetricsUndefined: Self = StObject.set(x, "ActivityMetrics", js.undefined)
+    inline def setActivityMetricsUndefined: Self = StObject.set(x, "ActivityMetrics", js.undefined)
     
-    @scala.inline
-    def setBucketLevel(value: BucketLevel): Self = StObject.set(x, "BucketLevel", value.asInstanceOf[js.Any])
+    inline def setBucketLevel(value: BucketLevel): Self = StObject.set(x, "BucketLevel", value.asInstanceOf[js.Any])
   }
 }

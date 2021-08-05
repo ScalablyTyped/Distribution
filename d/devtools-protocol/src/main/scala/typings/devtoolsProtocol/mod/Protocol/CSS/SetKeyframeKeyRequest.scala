@@ -14,22 +14,17 @@ trait SetKeyframeKeyRequest extends StObject {
 }
 object SetKeyframeKeyRequest {
   
-  @scala.inline
-  def apply(keyText: String, range: SourceRange, styleSheetId: StyleSheetId): SetKeyframeKeyRequest = {
+  inline def apply(keyText: String, range: SourceRange, styleSheetId: StyleSheetId): SetKeyframeKeyRequest = {
     val __obj = js.Dynamic.literal(keyText = keyText.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any], styleSheetId = styleSheetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetKeyframeKeyRequest]
   }
   
-  @scala.inline
-  implicit class SetKeyframeKeyRequestMutableBuilder[Self <: SetKeyframeKeyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetKeyframeKeyRequest](x: Self) {
     
-    @scala.inline
-    def setKeyText(value: String): Self = StObject.set(x, "keyText", value.asInstanceOf[js.Any])
+    inline def setKeyText(value: String): Self = StObject.set(x, "keyText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: SourceRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    inline def setRange(value: SourceRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleSheetId(value: StyleSheetId): Self = StObject.set(x, "styleSheetId", value.asInstanceOf[js.Any])
+    inline def setStyleSheetId(value: StyleSheetId): Self = StObject.set(x, "styleSheetId", value.asInstanceOf[js.Any])
   }
 }

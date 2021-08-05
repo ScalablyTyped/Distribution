@@ -15,19 +15,15 @@ trait StorageProvider extends StObject {
 }
 object StorageProvider {
   
-  @scala.inline
-  def apply(displayName: String, id: String): StorageProvider = {
+  inline def apply(displayName: String, id: String): StorageProvider = {
     val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[StorageProvider]
   }
   
-  @scala.inline
-  implicit class StorageProviderMutableBuilder[Self <: StorageProvider] (val x: Self) extends AnyVal {
+  extension [Self <: StorageProvider](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

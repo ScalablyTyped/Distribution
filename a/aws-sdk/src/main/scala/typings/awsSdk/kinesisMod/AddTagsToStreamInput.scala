@@ -18,19 +18,15 @@ trait AddTagsToStreamInput extends StObject {
 }
 object AddTagsToStreamInput {
   
-  @scala.inline
-  def apply(StreamName: StreamName, Tags: TagMap): AddTagsToStreamInput = {
+  inline def apply(StreamName: StreamName, Tags: TagMap): AddTagsToStreamInput = {
     val __obj = js.Dynamic.literal(StreamName = StreamName.asInstanceOf[js.Any], Tags = Tags.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddTagsToStreamInput]
   }
   
-  @scala.inline
-  implicit class AddTagsToStreamInputMutableBuilder[Self <: AddTagsToStreamInput] (val x: Self) extends AnyVal {
+  extension [Self <: AddTagsToStreamInput](x: Self) {
     
-    @scala.inline
-    def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+    inline def setStreamName(value: StreamName): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
   }
 }

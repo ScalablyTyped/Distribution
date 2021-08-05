@@ -31,20 +31,16 @@ trait NotebookChangedEventArgs extends StObject {
 }
 object NotebookChangedEventArgs {
   
-  @scala.inline
-  def apply(oldId: String): NotebookChangedEventArgs = {
+  inline def apply(oldId: String): NotebookChangedEventArgs = {
     val __obj = js.Dynamic.literal(oldId = oldId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("NotebookChanged")
     __obj.asInstanceOf[NotebookChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class NotebookChangedEventArgsMutableBuilder[Self <: NotebookChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: NotebookChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setOldId(value: String): Self = StObject.set(x, "oldId", value.asInstanceOf[js.Any])
+    inline def setOldId(value: String): Self = StObject.set(x, "oldId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: NotebookChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NotebookChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

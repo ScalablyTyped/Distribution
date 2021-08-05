@@ -60,8 +60,7 @@ trait Backup extends StObject {
 }
 object Backup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     BackupId: BackupId,
     CreationTime: CreationTime,
     FileSystem: FileSystem,
@@ -72,61 +71,42 @@ object Backup {
     __obj.asInstanceOf[Backup]
   }
   
-  @scala.inline
-  implicit class BackupMutableBuilder[Self <: Backup] (val x: Self) extends AnyVal {
+  extension [Self <: Backup](x: Self) {
     
-    @scala.inline
-    def setBackupId(value: BackupId): Self = StObject.set(x, "BackupId", value.asInstanceOf[js.Any])
+    inline def setBackupId(value: BackupId): Self = StObject.set(x, "BackupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryInformation(value: ActiveDirectoryBackupAttributes): Self = StObject.set(x, "DirectoryInformation", value.asInstanceOf[js.Any])
+    inline def setDirectoryInformation(value: ActiveDirectoryBackupAttributes): Self = StObject.set(x, "DirectoryInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryInformationUndefined: Self = StObject.set(x, "DirectoryInformation", js.undefined)
+    inline def setDirectoryInformationUndefined: Self = StObject.set(x, "DirectoryInformation", js.undefined)
     
-    @scala.inline
-    def setFailureDetails(value: BackupFailureDetails): Self = StObject.set(x, "FailureDetails", value.asInstanceOf[js.Any])
+    inline def setFailureDetails(value: BackupFailureDetails): Self = StObject.set(x, "FailureDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureDetailsUndefined: Self = StObject.set(x, "FailureDetails", js.undefined)
+    inline def setFailureDetailsUndefined: Self = StObject.set(x, "FailureDetails", js.undefined)
     
-    @scala.inline
-    def setFileSystem(value: FileSystem): Self = StObject.set(x, "FileSystem", value.asInstanceOf[js.Any])
+    inline def setFileSystem(value: FileSystem): Self = StObject.set(x, "FileSystem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
+    inline def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
+    inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
-    @scala.inline
-    def setLifecycle(value: BackupLifecycle): Self = StObject.set(x, "Lifecycle", value.asInstanceOf[js.Any])
+    inline def setLifecycle(value: BackupLifecycle): Self = StObject.set(x, "Lifecycle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressPercent(value: ProgressPercent): Self = StObject.set(x, "ProgressPercent", value.asInstanceOf[js.Any])
+    inline def setProgressPercent(value: ProgressPercent): Self = StObject.set(x, "ProgressPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressPercentUndefined: Self = StObject.set(x, "ProgressPercent", js.undefined)
+    inline def setProgressPercentUndefined: Self = StObject.set(x, "ProgressPercent", js.undefined)
     
-    @scala.inline
-    def setResourceARN(value: ResourceARN): Self = StObject.set(x, "ResourceARN", value.asInstanceOf[js.Any])
+    inline def setResourceARN(value: ResourceARN): Self = StObject.set(x, "ResourceARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceARNUndefined: Self = StObject.set(x, "ResourceARN", js.undefined)
+    inline def setResourceARNUndefined: Self = StObject.set(x, "ResourceARN", js.undefined)
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: BackupType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: BackupType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

@@ -10,19 +10,15 @@ trait GetResponseData extends StObject {
 }
 object GetResponseData {
   
-  @scala.inline
-  def apply(Data: js.Array[GetResponseDataData]): GetResponseData = {
+  inline def apply(Data: js.Array[GetResponseDataData]): GetResponseData = {
     val __obj = js.Dynamic.literal(Data = Data.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetResponseData]
   }
   
-  @scala.inline
-  implicit class GetResponseDataMutableBuilder[Self <: GetResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: GetResponseData](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Array[GetResponseDataData]): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[GetResponseDataData]): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: GetResponseDataData*): Self = StObject.set(x, "Data", js.Array(value :_*))
+    inline def setDataVarargs(value: GetResponseDataData*): Self = StObject.set(x, "Data", js.Array(value :_*))
   }
 }

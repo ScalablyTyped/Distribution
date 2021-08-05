@@ -17,14 +17,11 @@ object global {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def CastInt32(a: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast_Int32")(a.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def CastInt32(a: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast_Int32")(a.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @scala.inline
-    def CastInt64(a: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast_Int64")(a.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def CastInt64(a: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast_Int64")(a.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @scala.inline
-    def Clean(
+    inline def Clean(
       polygon: ArrayLike[
           ArrayLike[typings.jsClipper.ClipperLib.IntPoint] | typings.jsClipper.ClipperLib.IntPoint
         ],
@@ -35,8 +32,7 @@ object global {
         ArrayLike[typings.jsClipper.ClipperLib.IntPoint] | typings.jsClipper.ClipperLib.IntPoint
       ]]
     
-    @scala.inline
-    def Clear(a: ArrayLike[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Clear")(a.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def Clear(a: ArrayLike[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Clear")(a.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("ClipperLib.ClipType")
     @js.native
@@ -66,8 +62,7 @@ object global {
       extends StObject
          with typings.jsClipper.ClipperLib.ClipperBase
     
-    @scala.inline
-    def Clone(
+    inline def Clone(
       polygon: ArrayLike[
           ArrayLike[typings.jsClipper.ClipperLib.IntPoint] | typings.jsClipper.ClipperLib.IntPoint
         ]
@@ -115,8 +110,7 @@ object global {
       /* 1 */ val esRight: typings.jsClipper.ClipperLib.EdgeSide.esRight & Double = js.native
     }
     
-    @scala.inline
-    def Error(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Error")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def Error(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Error")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("ClipperLib.ExPolygon")
     @js.native
@@ -237,8 +231,7 @@ object global {
       /* 0 */ val jtSquare: typings.jsClipper.ClipperLib.JoinType.jtSquare & Double = js.native
     }
     
-    @scala.inline
-    def Lighten(
+    inline def Lighten(
       polygon: ArrayLike[
           ArrayLike[typings.jsClipper.ClipperLib.IntPoint] | typings.jsClipper.ClipperLib.IntPoint
         ],
@@ -268,23 +261,18 @@ object global {
       var rightBound: typings.jsClipper.ClipperLib.TEdge = js.native
     }
     
-    @scala.inline
-    def MathAbsDouble(a: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Math_Abs_Double")(a.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def MathAbsDouble(a: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Math_Abs_Double")(a.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @scala.inline
-    def MathAbsInt32(a: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Math_Abs_Int32")(a.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def MathAbsInt32(a: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Math_Abs_Int32")(a.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @scala.inline
-    def MathAbsInt64(a: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Math_Abs_Int64")(a.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def MathAbsInt64(a: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Math_Abs_Int64")(a.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @scala.inline
-    def MathMaxInt32Int32(a: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Math_Max_Int32_Int32")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def MathMaxInt32Int32(a: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Math_Max_Int32_Int32")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     @JSGlobal("ClipperLib.MaxSteps")
     @js.native
     def MaxSteps: Double = js.native
-    @scala.inline
-    def MaxSteps_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MaxSteps")(x.asInstanceOf[js.Any])
+    inline def MaxSteps_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MaxSteps")(x.asInstanceOf[js.Any])
     
     @JSGlobal("ClipperLib.OutPt")
     @js.native
@@ -337,11 +325,9 @@ object global {
     @JSGlobal("ClipperLib.PI2")
     @js.native
     def PI2: Double = js.native
-    @scala.inline
-    def PI2_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PI2")(x.asInstanceOf[js.Any])
+    inline def PI2_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PI2")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def PI_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PI")(x.asInstanceOf[js.Any])
+    inline def PI_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PI")(x.asInstanceOf[js.Any])
     
     @JSGlobal("ClipperLib.PolyFillType")
     @js.native
@@ -553,7 +539,6 @@ object global {
     @js.native
     def bigintegerUsed: Boolean = js.native
     
-    @scala.inline
-    def bigintegerUsed_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("biginteger_used")(x.asInstanceOf[js.Any])
+    inline def bigintegerUsed_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("biginteger_used")(x.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait DeletePresetRequest extends StObject {
 }
 object DeletePresetRequest {
   
-  @scala.inline
-  def apply(Name: string): DeletePresetRequest = {
+  inline def apply(Name: string): DeletePresetRequest = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeletePresetRequest]
   }
   
-  @scala.inline
-  implicit class DeletePresetRequestMutableBuilder[Self <: DeletePresetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeletePresetRequest](x: Self) {
     
-    @scala.inline
-    def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

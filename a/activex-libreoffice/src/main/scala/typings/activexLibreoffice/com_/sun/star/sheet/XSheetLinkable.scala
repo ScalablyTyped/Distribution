@@ -80,8 +80,7 @@ trait XSheetLinkable
 }
 object XSheetLinkable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     LinkMode: SheetLinkMode,
     LinkSheetName: String,
     LinkUrl: String,
@@ -100,37 +99,26 @@ object XSheetLinkable {
     __obj.asInstanceOf[XSheetLinkable]
   }
   
-  @scala.inline
-  implicit class XSheetLinkableMutableBuilder[Self <: XSheetLinkable] (val x: Self) extends AnyVal {
+  extension [Self <: XSheetLinkable](x: Self) {
     
-    @scala.inline
-    def setGetLinkMode(value: () => SheetLinkMode): Self = StObject.set(x, "getLinkMode", js.Any.fromFunction0(value))
+    inline def setGetLinkMode(value: () => SheetLinkMode): Self = StObject.set(x, "getLinkMode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLinkSheetName(value: () => String): Self = StObject.set(x, "getLinkSheetName", js.Any.fromFunction0(value))
+    inline def setGetLinkSheetName(value: () => String): Self = StObject.set(x, "getLinkSheetName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLinkUrl(value: () => String): Self = StObject.set(x, "getLinkUrl", js.Any.fromFunction0(value))
+    inline def setGetLinkUrl(value: () => String): Self = StObject.set(x, "getLinkUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLink(value: (String, String, String, String, SheetLinkMode) => Unit): Self = StObject.set(x, "link", js.Any.fromFunction5(value))
+    inline def setLink(value: (String, String, String, String, SheetLinkMode) => Unit): Self = StObject.set(x, "link", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setLinkMode(value: SheetLinkMode): Self = StObject.set(x, "LinkMode", value.asInstanceOf[js.Any])
+    inline def setLinkMode(value: SheetLinkMode): Self = StObject.set(x, "LinkMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkSheetName(value: String): Self = StObject.set(x, "LinkSheetName", value.asInstanceOf[js.Any])
+    inline def setLinkSheetName(value: String): Self = StObject.set(x, "LinkSheetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkUrl(value: String): Self = StObject.set(x, "LinkUrl", value.asInstanceOf[js.Any])
+    inline def setLinkUrl(value: String): Self = StObject.set(x, "LinkUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetLinkMode(value: SheetLinkMode => Unit): Self = StObject.set(x, "setLinkMode", js.Any.fromFunction1(value))
+    inline def setSetLinkMode(value: SheetLinkMode => Unit): Self = StObject.set(x, "setLinkMode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLinkSheetName(value: String => Unit): Self = StObject.set(x, "setLinkSheetName", js.Any.fromFunction1(value))
+    inline def setSetLinkSheetName(value: String => Unit): Self = StObject.set(x, "setLinkSheetName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetLinkUrl(value: String => Unit): Self = StObject.set(x, "setLinkUrl", js.Any.fromFunction1(value))
+    inline def setSetLinkUrl(value: String => Unit): Self = StObject.set(x, "setLinkUrl", js.Any.fromFunction1(value))
   }
 }

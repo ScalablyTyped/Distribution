@@ -12,25 +12,19 @@ trait StartActivityNotFound extends StObject {
 }
 object StartActivityNotFound {
   
-  @scala.inline
-  def apply(): StartActivityNotFound = {
+  inline def apply(): StartActivityNotFound = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartActivityNotFound]
   }
   
-  @scala.inline
-  implicit class StartActivityNotFoundMutableBuilder[Self <: StartActivityNotFound] (val x: Self) extends AnyVal {
+  extension [Self <: StartActivityNotFound](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

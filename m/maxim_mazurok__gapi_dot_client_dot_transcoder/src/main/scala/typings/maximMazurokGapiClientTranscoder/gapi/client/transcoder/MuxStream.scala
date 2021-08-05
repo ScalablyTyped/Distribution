@@ -29,52 +29,37 @@ trait MuxStream extends StObject {
 }
 object MuxStream {
   
-  @scala.inline
-  def apply(): MuxStream = {
+  inline def apply(): MuxStream = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MuxStream]
   }
   
-  @scala.inline
-  implicit class MuxStreamMutableBuilder[Self <: MuxStream] (val x: Self) extends AnyVal {
+  extension [Self <: MuxStream](x: Self) {
     
-    @scala.inline
-    def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setElementaryStreams(value: js.Array[String]): Self = StObject.set(x, "elementaryStreams", value.asInstanceOf[js.Any])
+    inline def setElementaryStreams(value: js.Array[String]): Self = StObject.set(x, "elementaryStreams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementaryStreamsUndefined: Self = StObject.set(x, "elementaryStreams", js.undefined)
+    inline def setElementaryStreamsUndefined: Self = StObject.set(x, "elementaryStreams", js.undefined)
     
-    @scala.inline
-    def setElementaryStreamsVarargs(value: String*): Self = StObject.set(x, "elementaryStreams", js.Array(value :_*))
+    inline def setElementaryStreamsVarargs(value: String*): Self = StObject.set(x, "elementaryStreams", js.Array(value :_*))
     
-    @scala.inline
-    def setEncryption(value: Encryption): Self = StObject.set(x, "encryption", value.asInstanceOf[js.Any])
+    inline def setEncryption(value: Encryption): Self = StObject.set(x, "encryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionUndefined: Self = StObject.set(x, "encryption", js.undefined)
+    inline def setEncryptionUndefined: Self = StObject.set(x, "encryption", js.undefined)
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setSegmentSettings(value: SegmentSettings): Self = StObject.set(x, "segmentSettings", value.asInstanceOf[js.Any])
+    inline def setSegmentSettings(value: SegmentSettings): Self = StObject.set(x, "segmentSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentSettingsUndefined: Self = StObject.set(x, "segmentSettings", js.undefined)
+    inline def setSegmentSettingsUndefined: Self = StObject.set(x, "segmentSettings", js.undefined)
   }
 }

@@ -17,23 +17,18 @@ trait NumberLiteral
 }
 object NumberLiteral {
   
-  @scala.inline
-  def apply(loc: SourceLocation, original: Double, value: Double): NumberLiteral = {
+  inline def apply(loc: SourceLocation, original: Double, value: Double): NumberLiteral = {
     val __obj = js.Dynamic.literal(loc = loc.asInstanceOf[js.Any], original = original.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("NumberLiteral")
     __obj.asInstanceOf[NumberLiteral]
   }
   
-  @scala.inline
-  implicit class NumberLiteralMutableBuilder[Self <: NumberLiteral] (val x: Self) extends AnyVal {
+  extension [Self <: NumberLiteral](x: Self) {
     
-    @scala.inline
-    def setOriginal(value: Double): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
+    inline def setOriginal(value: Double): Self = StObject.set(x, "original", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.handlebars.handlebarsStrings.NumberLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.handlebars.handlebarsStrings.NumberLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

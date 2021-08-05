@@ -14,20 +14,16 @@ object anon {
   }
   object Delay {
     
-    @scala.inline
-    def apply(delay: Double, maxRetries: Double): Delay = {
+    inline def apply(delay: Double, maxRetries: Double): Delay = {
       val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any], maxRetries = maxRetries.asInstanceOf[js.Any])
       __obj.asInstanceOf[Delay]
     }
     
-    @scala.inline
-    implicit class DelayMutableBuilder[Self <: Delay] (val x: Self) extends AnyVal {
+    extension [Self <: Delay](x: Self) {
       
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+      inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+      inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
     }
   }
 }

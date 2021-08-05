@@ -18,28 +18,21 @@ trait ListPredictorsResponse extends StObject {
 }
 object ListPredictorsResponse {
   
-  @scala.inline
-  def apply(): ListPredictorsResponse = {
+  inline def apply(): ListPredictorsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPredictorsResponse]
   }
   
-  @scala.inline
-  implicit class ListPredictorsResponseMutableBuilder[Self <: ListPredictorsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListPredictorsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPredictors(value: Predictors): Self = StObject.set(x, "Predictors", value.asInstanceOf[js.Any])
+    inline def setPredictors(value: Predictors): Self = StObject.set(x, "Predictors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredictorsUndefined: Self = StObject.set(x, "Predictors", js.undefined)
+    inline def setPredictorsUndefined: Self = StObject.set(x, "Predictors", js.undefined)
     
-    @scala.inline
-    def setPredictorsVarargs(value: PredictorSummary*): Self = StObject.set(x, "Predictors", js.Array(value :_*))
+    inline def setPredictorsVarargs(value: PredictorSummary*): Self = StObject.set(x, "Predictors", js.Array(value :_*))
   }
 }

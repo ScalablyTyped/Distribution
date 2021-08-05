@@ -24,7 +24,7 @@ object routerMod {
       */
     def back(): js.Promise[Unit] = js.native
     
-    var busy: js.Any = js.native
+    /* private */ var busy: js.Any = js.native
     
     /** @internal */
     def canTransition(): js.Promise[String | Boolean] = js.native
@@ -37,9 +37,9 @@ object routerMod {
     
     var el: HTMLElement = js.native
     
-    var getPath: js.Any = js.native
+    /* private */ var getPath: js.Any = js.native
     
-    var historyDirection: js.Any = js.native
+    /* private */ var historyDirection: js.Any = js.native
     
     /**
       * Emitted when the route had changed
@@ -51,9 +51,9 @@ object routerMod {
       */
     var ionRouteWillChange: EventEmitter[RouterEventDetail] = js.native
     
-    var lastState: js.Any = js.native
+    /* private */ var lastState: js.Any = js.native
     
-    var lock: js.Any = js.native
+    /* private */ var lock: js.Any = js.native
     
     /** @internal */
     def navChanged(direction: RouterDirection): js.Promise[Boolean] = js.native
@@ -62,11 +62,11 @@ object routerMod {
     
     /* protected */ def onPopState(): js.Promise[Boolean] = js.native
     
-    var onRedirectChanged: js.Any = js.native
+    /* private */ var onRedirectChanged: js.Any = js.native
     
-    var onRoutesChanged: js.Any = js.native
+    /* private */ var onRoutesChanged: js.Any = js.native
     
-    var previousPath: js.Any = js.native
+    /* private */ var previousPath: js.Any = js.native
     
     /** @internal */
     def printDebug(): js.Promise[Unit] = js.native
@@ -89,15 +89,15 @@ object routerMod {
       */
     var root: String = js.native
     
-    var routeChangeEvent: js.Any = js.native
+    /* private */ var routeChangeEvent: js.Any = js.native
     
-    var runGuards: js.Any = js.native
+    /* private */ var runGuards: js.Any = js.native
     
-    var safeWriteNavState: js.Any = js.native
+    /* private */ var safeWriteNavState: js.Any = js.native
     
-    var setPath: js.Any = js.native
+    /* private */ var setPath: js.Any = js.native
     
-    var state: js.Any = js.native
+    /* private */ var state: js.Any = js.native
     
     /**
       * The router can work in two "modes":
@@ -115,10 +115,10 @@ object routerMod {
       */
     var useHash: Boolean = js.native
     
-    var waitPromise: js.Any = js.native
+    /* private */ var waitPromise: js.Any = js.native
     
-    var writeNavState: js.Any = js.native
+    /* private */ var writeNavState: js.Any = js.native
     
-    var writeNavStateRoot: js.Any = js.native
+    /* private */ var writeNavStateRoot: js.Any = js.native
   }
 }

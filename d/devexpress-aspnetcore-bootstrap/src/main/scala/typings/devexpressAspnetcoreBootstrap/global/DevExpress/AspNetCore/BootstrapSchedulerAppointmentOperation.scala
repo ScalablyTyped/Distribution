@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class BootstrapSchedulerAppointmentOperation protected ()
   extends StObject
      with typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.BootstrapSchedulerAppointmentOperation {
-  protected def this(instance: js.Any) = this()
+  /* protected */ def this(instance: js.Any) = this()
   
   /* CompleteClass */
   @JSName("apply")
@@ -18,6 +18,6 @@ class BootstrapSchedulerAppointmentOperation protected ()
   /* CompleteClass */
   override def cancel(): Unit = js.native
   
-  /* CompleteClass */
+  /* protected */ /* CompleteClass */
   override val instance: js.Any = js.native
 }

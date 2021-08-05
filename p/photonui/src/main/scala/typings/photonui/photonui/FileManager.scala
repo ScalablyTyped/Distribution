@@ -22,8 +22,7 @@ trait FileManager
 }
 object FileManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acceptedExts: js.Array[String],
     acceptedMimes: js.Array[String],
     destroy: () => Unit,
@@ -37,28 +36,20 @@ object FileManager {
     __obj.asInstanceOf[FileManager]
   }
   
-  @scala.inline
-  implicit class FileManagerMutableBuilder[Self <: FileManager] (val x: Self) extends AnyVal {
+  extension [Self <: FileManager](x: Self) {
     
-    @scala.inline
-    def setAcceptedExts(value: js.Array[String]): Self = StObject.set(x, "acceptedExts", value.asInstanceOf[js.Any])
+    inline def setAcceptedExts(value: js.Array[String]): Self = StObject.set(x, "acceptedExts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptedExtsVarargs(value: String*): Self = StObject.set(x, "acceptedExts", js.Array(value :_*))
+    inline def setAcceptedExtsVarargs(value: String*): Self = StObject.set(x, "acceptedExts", js.Array(value :_*))
     
-    @scala.inline
-    def setAcceptedMimes(value: js.Array[String]): Self = StObject.set(x, "acceptedMimes", value.asInstanceOf[js.Any])
+    inline def setAcceptedMimes(value: js.Array[String]): Self = StObject.set(x, "acceptedMimes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptedMimesVarargs(value: String*): Self = StObject.set(x, "acceptedMimes", js.Array(value :_*))
+    inline def setAcceptedMimesVarargs(value: String*): Self = StObject.set(x, "acceptedMimes", js.Array(value :_*))
     
-    @scala.inline
-    def setDropZone(value: HTMLElement): Self = StObject.set(x, "dropZone", value.asInstanceOf[js.Any])
+    inline def setDropZone(value: HTMLElement): Self = StObject.set(x, "dropZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiselect(value: Boolean): Self = StObject.set(x, "multiselect", value.asInstanceOf[js.Any])
+    inline def setMultiselect(value: Boolean): Self = StObject.set(x, "multiselect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
+    inline def setOpen(value: () => Unit): Self = StObject.set(x, "open", js.Any.fromFunction0(value))
   }
 }

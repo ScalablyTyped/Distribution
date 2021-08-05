@@ -26,8 +26,7 @@ object anon {
   }
   object RTLDDEFAUL {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       RTLD_DEFAUL: Buffer,
       RTLD_GLOBAL: Double,
       RTLD_LAZY: Double,
@@ -41,32 +40,23 @@ object anon {
       __obj.asInstanceOf[RTLDDEFAUL]
     }
     
-    @scala.inline
-    implicit class RTLDDEFAULMutableBuilder[Self <: RTLDDEFAUL] (val x: Self) extends AnyVal {
+    extension [Self <: RTLDDEFAUL](x: Self) {
       
-      @scala.inline
-      def setRTLD_DEFAUL(value: Buffer): Self = StObject.set(x, "RTLD_DEFAUL", value.asInstanceOf[js.Any])
+      inline def setRTLD_DEFAUL(value: Buffer): Self = StObject.set(x, "RTLD_DEFAUL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRTLD_GLOBAL(value: Double): Self = StObject.set(x, "RTLD_GLOBAL", value.asInstanceOf[js.Any])
+      inline def setRTLD_GLOBAL(value: Double): Self = StObject.set(x, "RTLD_GLOBAL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRTLD_LAZY(value: Double): Self = StObject.set(x, "RTLD_LAZY", value.asInstanceOf[js.Any])
+      inline def setRTLD_LAZY(value: Double): Self = StObject.set(x, "RTLD_LAZY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRTLD_LOCAL(value: Double): Self = StObject.set(x, "RTLD_LOCAL", value.asInstanceOf[js.Any])
+      inline def setRTLD_LOCAL(value: Double): Self = StObject.set(x, "RTLD_LOCAL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRTLD_NEXT(value: Buffer): Self = StObject.set(x, "RTLD_NEXT", value.asInstanceOf[js.Any])
+      inline def setRTLD_NEXT(value: Buffer): Self = StObject.set(x, "RTLD_NEXT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRTLD_NODELETE(value: Double): Self = StObject.set(x, "RTLD_NODELETE", value.asInstanceOf[js.Any])
+      inline def setRTLD_NODELETE(value: Double): Self = StObject.set(x, "RTLD_NODELETE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRTLD_NOLOAD(value: Double): Self = StObject.set(x, "RTLD_NOLOAD", value.asInstanceOf[js.Any])
+      inline def setRTLD_NOLOAD(value: Double): Self = StObject.set(x, "RTLD_NOLOAD", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRTLD_NOW(value: Double): Self = StObject.set(x, "RTLD_NOW", value.asInstanceOf[js.Any])
+      inline def setRTLD_NOW(value: Double): Self = StObject.set(x, "RTLD_NOW", value.asInstanceOf[js.Any])
     }
   }
 }

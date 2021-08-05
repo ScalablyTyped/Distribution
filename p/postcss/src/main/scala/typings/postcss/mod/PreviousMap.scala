@@ -16,7 +16,7 @@ class PreviousMap protected () extends StObject {
   
   def consumer(): SourceMapConsumer = js.native
   
-  var consumerCache: js.Any = js.native
+  /* private */ var consumerCache: js.Any = js.native
   
   def decodeInline(text: String): String = js.native
   
@@ -24,7 +24,7 @@ class PreviousMap protected () extends StObject {
   
   def getAnnotationURL(sourceMapString: String): String = js.native
   
-  var `inline`: js.Any = js.native
+  /* private */ var `inline`: js.Any = js.native
   
   def isMap(map: js.Any): Boolean = js.native
   

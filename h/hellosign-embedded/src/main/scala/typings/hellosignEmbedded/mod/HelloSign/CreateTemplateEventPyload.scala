@@ -13,19 +13,15 @@ trait CreateTemplateEventPyload extends StObject {
 }
 object CreateTemplateEventPyload {
   
-  @scala.inline
-  def apply(templateId: String, templateInfo: CcRoles): CreateTemplateEventPyload = {
+  inline def apply(templateId: String, templateInfo: CcRoles): CreateTemplateEventPyload = {
     val __obj = js.Dynamic.literal(templateId = templateId.asInstanceOf[js.Any], templateInfo = templateInfo.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTemplateEventPyload]
   }
   
-  @scala.inline
-  implicit class CreateTemplateEventPyloadMutableBuilder[Self <: CreateTemplateEventPyload] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTemplateEventPyload](x: Self) {
     
-    @scala.inline
-    def setTemplateId(value: String): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
+    inline def setTemplateId(value: String): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateInfo(value: CcRoles): Self = StObject.set(x, "templateInfo", value.asInstanceOf[js.Any])
+    inline def setTemplateInfo(value: CcRoles): Self = StObject.set(x, "templateInfo", value.asInstanceOf[js.Any])
   }
 }

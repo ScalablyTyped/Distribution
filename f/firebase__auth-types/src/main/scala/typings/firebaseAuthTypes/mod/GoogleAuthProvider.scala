@@ -17,23 +17,16 @@ object GoogleAuthProvider {
   @JSImport("@firebase/auth-types", "GoogleAuthProvider.GOOGLE_SIGN_IN_METHOD")
   @js.native
   def GOOGLE_SIGN_IN_METHOD: String = js.native
-  @scala.inline
-  def GOOGLE_SIGN_IN_METHOD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GOOGLE_SIGN_IN_METHOD")(x.asInstanceOf[js.Any])
+  inline def GOOGLE_SIGN_IN_METHOD_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("GOOGLE_SIGN_IN_METHOD")(x.asInstanceOf[js.Any])
   
   @JSImport("@firebase/auth-types", "GoogleAuthProvider.PROVIDER_ID")
   @js.native
   def PROVIDER_ID: String = js.native
-  @scala.inline
-  def PROVIDER_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROVIDER_ID")(x.asInstanceOf[js.Any])
+  inline def PROVIDER_ID_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("PROVIDER_ID")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def credential(): AuthCredential = ^.asInstanceOf[js.Dynamic].applyDynamic("credential")().asInstanceOf[AuthCredential]
-  @scala.inline
-  def credential(idToken: String): AuthCredential = ^.asInstanceOf[js.Dynamic].applyDynamic("credential")(idToken.asInstanceOf[js.Any]).asInstanceOf[AuthCredential]
-  @scala.inline
-  def credential(idToken: String, accessToken: String): AuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credential")(idToken.asInstanceOf[js.Any], accessToken.asInstanceOf[js.Any])).asInstanceOf[AuthCredential]
-  @scala.inline
-  def credential(idToken: Null, accessToken: String): AuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credential")(idToken.asInstanceOf[js.Any], accessToken.asInstanceOf[js.Any])).asInstanceOf[AuthCredential]
-  @scala.inline
-  def credential(idToken: Unit, accessToken: String): AuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credential")(idToken.asInstanceOf[js.Any], accessToken.asInstanceOf[js.Any])).asInstanceOf[AuthCredential]
+  inline def credential(): AuthCredential = ^.asInstanceOf[js.Dynamic].applyDynamic("credential")().asInstanceOf[AuthCredential]
+  inline def credential(idToken: String): AuthCredential = ^.asInstanceOf[js.Dynamic].applyDynamic("credential")(idToken.asInstanceOf[js.Any]).asInstanceOf[AuthCredential]
+  inline def credential(idToken: String, accessToken: String): AuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credential")(idToken.asInstanceOf[js.Any], accessToken.asInstanceOf[js.Any])).asInstanceOf[AuthCredential]
+  inline def credential(idToken: Null, accessToken: String): AuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credential")(idToken.asInstanceOf[js.Any], accessToken.asInstanceOf[js.Any])).asInstanceOf[AuthCredential]
+  inline def credential(idToken: Unit, accessToken: String): AuthCredential = (^.asInstanceOf[js.Dynamic].applyDynamic("credential")(idToken.asInstanceOf[js.Any], accessToken.asInstanceOf[js.Any])).asInstanceOf[AuthCredential]
 }

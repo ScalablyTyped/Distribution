@@ -30,8 +30,7 @@ trait ResumeFrame
 }
 object ResumeFrame {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clientPosition: Double,
     flags: Double,
     majorVersion: Double,
@@ -44,37 +43,26 @@ object ResumeFrame {
     __obj.asInstanceOf[ResumeFrame]
   }
   
-  @scala.inline
-  implicit class ResumeFrameMutableBuilder[Self <: ResumeFrame] (val x: Self) extends AnyVal {
+  extension [Self <: ResumeFrame](x: Self) {
     
-    @scala.inline
-    def setClientPosition(value: Double): Self = StObject.set(x, "clientPosition", value.asInstanceOf[js.Any])
+    inline def setClientPosition(value: Double): Self = StObject.set(x, "clientPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+    inline def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    @scala.inline
-    def setMajorVersion(value: Double): Self = StObject.set(x, "majorVersion", value.asInstanceOf[js.Any])
+    inline def setMajorVersion(value: Double): Self = StObject.set(x, "majorVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinorVersion(value: Double): Self = StObject.set(x, "minorVersion", value.asInstanceOf[js.Any])
+    inline def setMinorVersion(value: Double): Self = StObject.set(x, "minorVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResumeToken(value: Encodable): Self = StObject.set(x, "resumeToken", value.asInstanceOf[js.Any])
+    inline def setResumeToken(value: Encodable): Self = StObject.set(x, "resumeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerPosition(value: Double): Self = StObject.set(x, "serverPosition", value.asInstanceOf[js.Any])
+    inline def setServerPosition(value: Double): Self = StObject.set(x, "serverPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStreamId(value: `0`): Self = StObject.set(x, "streamId", value.asInstanceOf[js.Any])
+    inline def setStreamId(value: `0`): Self = StObject.set(x, "streamId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `0x0d`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `0x0d`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

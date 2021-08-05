@@ -40,95 +40,66 @@ object diffOptionsMod {
   }
   object DiffOptions {
     
-    @scala.inline
-    def apply(): DiffOptions = {
+    inline def apply(): DiffOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DiffOptions]
     }
     
-    @scala.inline
-    implicit class DiffOptionsMutableBuilder[Self <: DiffOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DiffOptions](x: Self) {
       
-      @scala.inline
-      def setContextLines(value: Double): Self = StObject.set(x, "contextLines", value.asInstanceOf[js.Any])
+      inline def setContextLines(value: Double): Self = StObject.set(x, "contextLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextLinesUndefined: Self = StObject.set(x, "contextLines", js.undefined)
+      inline def setContextLinesUndefined: Self = StObject.set(x, "contextLines", js.undefined)
       
-      @scala.inline
-      def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+      inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
       
-      @scala.inline
-      def setIdAbbrev(value: Double): Self = StObject.set(x, "idAbbrev", value.asInstanceOf[js.Any])
+      inline def setIdAbbrev(value: Double): Self = StObject.set(x, "idAbbrev", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdAbbrevUndefined: Self = StObject.set(x, "idAbbrev", js.undefined)
+      inline def setIdAbbrevUndefined: Self = StObject.set(x, "idAbbrev", js.undefined)
       
-      @scala.inline
-      def setIgnoreSubmodules(value: Double): Self = StObject.set(x, "ignoreSubmodules", value.asInstanceOf[js.Any])
+      inline def setIgnoreSubmodules(value: Double): Self = StObject.set(x, "ignoreSubmodules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreSubmodulesUndefined: Self = StObject.set(x, "ignoreSubmodules", js.undefined)
+      inline def setIgnoreSubmodulesUndefined: Self = StObject.set(x, "ignoreSubmodules", js.undefined)
       
-      @scala.inline
-      def setInterhunkLines(value: Double): Self = StObject.set(x, "interhunkLines", value.asInstanceOf[js.Any])
+      inline def setInterhunkLines(value: Double): Self = StObject.set(x, "interhunkLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterhunkLinesUndefined: Self = StObject.set(x, "interhunkLines", js.undefined)
+      inline def setInterhunkLinesUndefined: Self = StObject.set(x, "interhunkLines", js.undefined)
       
-      @scala.inline
-      def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
+      inline def setMaxSize(value: Double): Self = StObject.set(x, "maxSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
+      inline def setMaxSizeUndefined: Self = StObject.set(x, "maxSize", js.undefined)
       
-      @scala.inline
-      def setNewPrefix(value: String): Self = StObject.set(x, "newPrefix", value.asInstanceOf[js.Any])
+      inline def setNewPrefix(value: String): Self = StObject.set(x, "newPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewPrefixUndefined: Self = StObject.set(x, "newPrefix", js.undefined)
+      inline def setNewPrefixUndefined: Self = StObject.set(x, "newPrefix", js.undefined)
       
-      @scala.inline
-      def setNotifyCb(value: js.Function): Self = StObject.set(x, "notifyCb", value.asInstanceOf[js.Any])
+      inline def setNotifyCb(value: js.Function): Self = StObject.set(x, "notifyCb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotifyCbUndefined: Self = StObject.set(x, "notifyCb", js.undefined)
+      inline def setNotifyCbUndefined: Self = StObject.set(x, "notifyCb", js.undefined)
       
-      @scala.inline
-      def setOldPrefix(value: String): Self = StObject.set(x, "oldPrefix", value.asInstanceOf[js.Any])
+      inline def setOldPrefix(value: String): Self = StObject.set(x, "oldPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldPrefixUndefined: Self = StObject.set(x, "oldPrefix", js.undefined)
+      inline def setOldPrefixUndefined: Self = StObject.set(x, "oldPrefix", js.undefined)
       
-      @scala.inline
-      def setPathspec(value: Strarray | String | js.Array[String]): Self = StObject.set(x, "pathspec", value.asInstanceOf[js.Any])
+      inline def setPathspec(value: Strarray | String | js.Array[String]): Self = StObject.set(x, "pathspec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathspecUndefined: Self = StObject.set(x, "pathspec", js.undefined)
+      inline def setPathspecUndefined: Self = StObject.set(x, "pathspec", js.undefined)
       
-      @scala.inline
-      def setPathspecVarargs(value: String*): Self = StObject.set(x, "pathspec", js.Array(value :_*))
+      inline def setPathspecVarargs(value: String*): Self = StObject.set(x, "pathspec", js.Array(value :_*))
       
-      @scala.inline
-      def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: js.Any): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+      inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
       
-      @scala.inline
-      def setProgressCb(value: js.Any): Self = StObject.set(x, "progressCb", value.asInstanceOf[js.Any])
+      inline def setProgressCb(value: js.Any): Self = StObject.set(x, "progressCb", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressCbUndefined: Self = StObject.set(x, "progressCb", js.undefined)
+      inline def setProgressCbUndefined: Self = StObject.set(x, "progressCb", js.undefined)
       
-      @scala.inline
-      def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+      inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
     }
   }
 }

@@ -18,19 +18,15 @@ trait UpdatePullRequestDescriptionInput extends StObject {
 }
 object UpdatePullRequestDescriptionInput {
   
-  @scala.inline
-  def apply(description: Description, pullRequestId: PullRequestId): UpdatePullRequestDescriptionInput = {
+  inline def apply(description: Description, pullRequestId: PullRequestId): UpdatePullRequestDescriptionInput = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], pullRequestId = pullRequestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdatePullRequestDescriptionInput]
   }
   
-  @scala.inline
-  implicit class UpdatePullRequestDescriptionInputMutableBuilder[Self <: UpdatePullRequestDescriptionInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdatePullRequestDescriptionInput](x: Self) {
     
-    @scala.inline
-    def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullRequestId(value: PullRequestId): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
+    inline def setPullRequestId(value: PullRequestId): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
   }
 }

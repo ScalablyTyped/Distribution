@@ -46,8 +46,7 @@ trait TableBordersSettings extends StObject {
 }
 object TableBordersSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     backgroundColor: String,
     bottom: TableBorderSettings,
     insideHorizontal: TableBorderSettings,
@@ -60,28 +59,20 @@ object TableBordersSettings {
     __obj.asInstanceOf[TableBordersSettings]
   }
   
-  @scala.inline
-  implicit class TableBordersSettingsMutableBuilder[Self <: TableBordersSettings] (val x: Self) extends AnyVal {
+  extension [Self <: TableBordersSettings](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBottom(value: TableBorderSettings): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    inline def setBottom(value: TableBorderSettings): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsideHorizontal(value: TableBorderSettings): Self = StObject.set(x, "insideHorizontal", value.asInstanceOf[js.Any])
+    inline def setInsideHorizontal(value: TableBorderSettings): Self = StObject.set(x, "insideHorizontal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsideVertical(value: TableBorderSettings): Self = StObject.set(x, "insideVertical", value.asInstanceOf[js.Any])
+    inline def setInsideVertical(value: TableBorderSettings): Self = StObject.set(x, "insideVertical", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeft(value: TableBorderSettings): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: TableBorderSettings): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: TableBorderSettings): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: TableBorderSettings): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: TableBorderSettings): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: TableBorderSettings): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
   }
 }

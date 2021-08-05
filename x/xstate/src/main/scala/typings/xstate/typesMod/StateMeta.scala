@@ -14,8 +14,7 @@ trait StateMeta[TContext, TEvent /* <: EventObject */] extends StObject {
 }
 object StateMeta {
   
-  @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](
+  inline def apply[TContext, TEvent /* <: EventObject */](
     _event: typings.xstate.typesMod.SCXML.Event[TEvent],
     state: State[TContext, TEvent, js.Any, ContextTContext[TContext]]
   ): StateMeta[TContext, TEvent] = {
@@ -23,13 +22,10 @@ object StateMeta {
     __obj.asInstanceOf[StateMeta[TContext, TEvent]]
   }
   
-  @scala.inline
-  implicit class StateMetaMutableBuilder[Self <: StateMeta[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (StateMeta[TContext, TEvent])) extends AnyVal {
+  extension [Self <: StateMeta[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (StateMeta[TContext, TEvent])) {
     
-    @scala.inline
-    def setState(value: State[TContext, TEvent, js.Any, ContextTContext[TContext]]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: State[TContext, TEvent, js.Any, ContextTContext[TContext]]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_event(value: typings.xstate.typesMod.SCXML.Event[TEvent]): Self = StObject.set(x, "_event", value.asInstanceOf[js.Any])
+    inline def set_event(value: typings.xstate.typesMod.SCXML.Event[TEvent]): Self = StObject.set(x, "_event", value.asInstanceOf[js.Any])
   }
 }

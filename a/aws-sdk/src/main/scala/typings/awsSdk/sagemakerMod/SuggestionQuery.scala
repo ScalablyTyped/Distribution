@@ -13,19 +13,15 @@ trait SuggestionQuery extends StObject {
 }
 object SuggestionQuery {
   
-  @scala.inline
-  def apply(): SuggestionQuery = {
+  inline def apply(): SuggestionQuery = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SuggestionQuery]
   }
   
-  @scala.inline
-  implicit class SuggestionQueryMutableBuilder[Self <: SuggestionQuery] (val x: Self) extends AnyVal {
+  extension [Self <: SuggestionQuery](x: Self) {
     
-    @scala.inline
-    def setPropertyNameQuery(value: PropertyNameQuery): Self = StObject.set(x, "PropertyNameQuery", value.asInstanceOf[js.Any])
+    inline def setPropertyNameQuery(value: PropertyNameQuery): Self = StObject.set(x, "PropertyNameQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyNameQueryUndefined: Self = StObject.set(x, "PropertyNameQuery", js.undefined)
+    inline def setPropertyNameQueryUndefined: Self = StObject.set(x, "PropertyNameQuery", js.undefined)
   }
 }

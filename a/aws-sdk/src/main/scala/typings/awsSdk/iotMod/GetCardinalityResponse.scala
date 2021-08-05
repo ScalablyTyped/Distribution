@@ -13,19 +13,15 @@ trait GetCardinalityResponse extends StObject {
 }
 object GetCardinalityResponse {
   
-  @scala.inline
-  def apply(): GetCardinalityResponse = {
+  inline def apply(): GetCardinalityResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetCardinalityResponse]
   }
   
-  @scala.inline
-  implicit class GetCardinalityResponseMutableBuilder[Self <: GetCardinalityResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetCardinalityResponse](x: Self) {
     
-    @scala.inline
-    def setCardinality(value: Count): Self = StObject.set(x, "cardinality", value.asInstanceOf[js.Any])
+    inline def setCardinality(value: Count): Self = StObject.set(x, "cardinality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardinalityUndefined: Self = StObject.set(x, "cardinality", js.undefined)
+    inline def setCardinalityUndefined: Self = StObject.set(x, "cardinality", js.undefined)
   }
 }

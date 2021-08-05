@@ -10,16 +10,13 @@ trait IDataReaderFactory extends StObject {
 }
 object IDataReaderFactory {
   
-  @scala.inline
-  def apply(createDataReader: IInputStream => DataReader): IDataReaderFactory = {
+  inline def apply(createDataReader: IInputStream => DataReader): IDataReaderFactory = {
     val __obj = js.Dynamic.literal(createDataReader = js.Any.fromFunction1(createDataReader))
     __obj.asInstanceOf[IDataReaderFactory]
   }
   
-  @scala.inline
-  implicit class IDataReaderFactoryMutableBuilder[Self <: IDataReaderFactory] (val x: Self) extends AnyVal {
+  extension [Self <: IDataReaderFactory](x: Self) {
     
-    @scala.inline
-    def setCreateDataReader(value: IInputStream => DataReader): Self = StObject.set(x, "createDataReader", js.Any.fromFunction1(value))
+    inline def setCreateDataReader(value: IInputStream => DataReader): Self = StObject.set(x, "createDataReader", js.Any.fromFunction1(value))
   }
 }

@@ -22,19 +22,15 @@ trait EndPopupModeEvent
 }
 object EndPopupModeEvent {
   
-  @scala.inline
-  def apply(FloatingPosition: Point, Source: XInterface, bTearoff: Boolean): EndPopupModeEvent = {
+  inline def apply(FloatingPosition: Point, Source: XInterface, bTearoff: Boolean): EndPopupModeEvent = {
     val __obj = js.Dynamic.literal(FloatingPosition = FloatingPosition.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any], bTearoff = bTearoff.asInstanceOf[js.Any])
     __obj.asInstanceOf[EndPopupModeEvent]
   }
   
-  @scala.inline
-  implicit class EndPopupModeEventMutableBuilder[Self <: EndPopupModeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: EndPopupModeEvent](x: Self) {
     
-    @scala.inline
-    def setBTearoff(value: Boolean): Self = StObject.set(x, "bTearoff", value.asInstanceOf[js.Any])
+    inline def setBTearoff(value: Boolean): Self = StObject.set(x, "bTearoff", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloatingPosition(value: Point): Self = StObject.set(x, "FloatingPosition", value.asInstanceOf[js.Any])
+    inline def setFloatingPosition(value: Point): Self = StObject.set(x, "FloatingPosition", value.asInstanceOf[js.Any])
   }
 }

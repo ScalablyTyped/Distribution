@@ -20,26 +20,20 @@ trait JSXAttribute
 }
 object JSXAttribute {
   
-  @scala.inline
-  def apply(name: JSXIdentifier | JSXNamespacedName): JSXAttribute = {
+  inline def apply(name: JSXIdentifier | JSXNamespacedName): JSXAttribute = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = null)
     __obj.updateDynamic("type")("JSXAttribute")
     __obj.asInstanceOf[JSXAttribute]
   }
   
-  @scala.inline
-  implicit class JSXAttributeMutableBuilder[Self <: JSXAttribute] (val x: Self) extends AnyVal {
+  extension [Self <: JSXAttribute](x: Self) {
     
-    @scala.inline
-    def setName(value: JSXIdentifier | JSXNamespacedName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: JSXIdentifier | JSXNamespacedName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.estreeJsx.estreeJsxStrings.JSXAttribute): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estreeJsx.estreeJsxStrings.JSXAttribute): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Literal | JSXExpressionContainer | JSXElement | JSXFragment): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Literal | JSXExpressionContainer | JSXElement | JSXFragment): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueNull: Self = StObject.set(x, "value", null)
+    inline def setValueNull: Self = StObject.set(x, "value", null)
   }
 }

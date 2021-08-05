@@ -55,8 +55,7 @@ trait AutoMLCandidate extends StObject {
 }
 object AutoMLCandidate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CandidateName: CandidateName,
     CandidateStatus: CandidateStatus,
     CandidateSteps: CandidateSteps,
@@ -68,55 +67,38 @@ object AutoMLCandidate {
     __obj.asInstanceOf[AutoMLCandidate]
   }
   
-  @scala.inline
-  implicit class AutoMLCandidateMutableBuilder[Self <: AutoMLCandidate] (val x: Self) extends AnyVal {
+  extension [Self <: AutoMLCandidate](x: Self) {
     
-    @scala.inline
-    def setCandidateName(value: CandidateName): Self = StObject.set(x, "CandidateName", value.asInstanceOf[js.Any])
+    inline def setCandidateName(value: CandidateName): Self = StObject.set(x, "CandidateName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCandidateStatus(value: CandidateStatus): Self = StObject.set(x, "CandidateStatus", value.asInstanceOf[js.Any])
+    inline def setCandidateStatus(value: CandidateStatus): Self = StObject.set(x, "CandidateStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCandidateSteps(value: CandidateSteps): Self = StObject.set(x, "CandidateSteps", value.asInstanceOf[js.Any])
+    inline def setCandidateSteps(value: CandidateSteps): Self = StObject.set(x, "CandidateSteps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCandidateStepsVarargs(value: AutoMLCandidateStep*): Self = StObject.set(x, "CandidateSteps", js.Array(value :_*))
+    inline def setCandidateStepsVarargs(value: AutoMLCandidateStep*): Self = StObject.set(x, "CandidateSteps", js.Array(value :_*))
     
-    @scala.inline
-    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Timestamp): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "EndTime", js.undefined)
     
-    @scala.inline
-    def setFailureReason(value: AutoMLFailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
+    inline def setFailureReason(value: AutoMLFailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
+    inline def setFailureReasonUndefined: Self = StObject.set(x, "FailureReason", js.undefined)
     
-    @scala.inline
-    def setFinalAutoMLJobObjectiveMetric(value: FinalAutoMLJobObjectiveMetric): Self = StObject.set(x, "FinalAutoMLJobObjectiveMetric", value.asInstanceOf[js.Any])
+    inline def setFinalAutoMLJobObjectiveMetric(value: FinalAutoMLJobObjectiveMetric): Self = StObject.set(x, "FinalAutoMLJobObjectiveMetric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalAutoMLJobObjectiveMetricUndefined: Self = StObject.set(x, "FinalAutoMLJobObjectiveMetric", js.undefined)
+    inline def setFinalAutoMLJobObjectiveMetricUndefined: Self = StObject.set(x, "FinalAutoMLJobObjectiveMetric", js.undefined)
     
-    @scala.inline
-    def setInferenceContainers(value: AutoMLContainerDefinitions): Self = StObject.set(x, "InferenceContainers", value.asInstanceOf[js.Any])
+    inline def setInferenceContainers(value: AutoMLContainerDefinitions): Self = StObject.set(x, "InferenceContainers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInferenceContainersUndefined: Self = StObject.set(x, "InferenceContainers", js.undefined)
+    inline def setInferenceContainersUndefined: Self = StObject.set(x, "InferenceContainers", js.undefined)
     
-    @scala.inline
-    def setInferenceContainersVarargs(value: AutoMLContainerDefinition*): Self = StObject.set(x, "InferenceContainers", js.Array(value :_*))
+    inline def setInferenceContainersVarargs(value: AutoMLContainerDefinition*): Self = StObject.set(x, "InferenceContainers", js.Array(value :_*))
     
-    @scala.inline
-    def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
+    inline def setLastModifiedTime(value: Timestamp): Self = StObject.set(x, "LastModifiedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectiveStatus(value: ObjectiveStatus): Self = StObject.set(x, "ObjectiveStatus", value.asInstanceOf[js.Any])
+    inline def setObjectiveStatus(value: ObjectiveStatus): Self = StObject.set(x, "ObjectiveStatus", value.asInstanceOf[js.Any])
   }
 }

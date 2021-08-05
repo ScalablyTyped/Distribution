@@ -12,19 +12,15 @@ trait NewData extends StObject {
 }
 object NewData {
   
-  @scala.inline
-  def apply(NewData: String, Response: Double): NewData = {
+  inline def apply(NewData: String, Response: Double): NewData = {
     val __obj = js.Dynamic.literal(NewData = NewData.asInstanceOf[js.Any], Response = Response.asInstanceOf[js.Any])
     __obj.asInstanceOf[NewData]
   }
   
-  @scala.inline
-  implicit class NewDataMutableBuilder[Self <: NewData] (val x: Self) extends AnyVal {
+  extension [Self <: NewData](x: Self) {
     
-    @scala.inline
-    def setNewData(value: String): Self = StObject.set(x, "NewData", value.asInstanceOf[js.Any])
+    inline def setNewData(value: String): Self = StObject.set(x, "NewData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: Double): Self = StObject.set(x, "Response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: Double): Self = StObject.set(x, "Response", value.asInstanceOf[js.Any])
   }
 }

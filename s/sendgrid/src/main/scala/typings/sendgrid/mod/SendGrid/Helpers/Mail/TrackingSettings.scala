@@ -27,8 +27,7 @@ trait TrackingSettings extends StObject {
 }
 object TrackingSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getClickTracking: () => ClickTracking,
     getGanalytics: () => Ganalytics,
     getOpenTracking: () => OpenTracking,
@@ -43,34 +42,24 @@ object TrackingSettings {
     __obj.asInstanceOf[TrackingSettings]
   }
   
-  @scala.inline
-  implicit class TrackingSettingsMutableBuilder[Self <: TrackingSettings] (val x: Self) extends AnyVal {
+  extension [Self <: TrackingSettings](x: Self) {
     
-    @scala.inline
-    def setGetClickTracking(value: () => ClickTracking): Self = StObject.set(x, "getClickTracking", js.Any.fromFunction0(value))
+    inline def setGetClickTracking(value: () => ClickTracking): Self = StObject.set(x, "getClickTracking", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetGanalytics(value: () => Ganalytics): Self = StObject.set(x, "getGanalytics", js.Any.fromFunction0(value))
+    inline def setGetGanalytics(value: () => Ganalytics): Self = StObject.set(x, "getGanalytics", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOpenTracking(value: () => OpenTracking): Self = StObject.set(x, "getOpenTracking", js.Any.fromFunction0(value))
+    inline def setGetOpenTracking(value: () => OpenTracking): Self = StObject.set(x, "getOpenTracking", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSubscriptionTracking(value: () => SubscriptionTracking): Self = StObject.set(x, "getSubscriptionTracking", js.Any.fromFunction0(value))
+    inline def setGetSubscriptionTracking(value: () => SubscriptionTracking): Self = StObject.set(x, "getSubscriptionTracking", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetClickTracking(value: ClickTracking => Unit): Self = StObject.set(x, "setClickTracking", js.Any.fromFunction1(value))
+    inline def setSetClickTracking(value: ClickTracking => Unit): Self = StObject.set(x, "setClickTracking", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetGanalytics(value: Ganalytics => Unit): Self = StObject.set(x, "setGanalytics", js.Any.fromFunction1(value))
+    inline def setSetGanalytics(value: Ganalytics => Unit): Self = StObject.set(x, "setGanalytics", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetOpenTracking(value: OpenTracking => Unit): Self = StObject.set(x, "setOpenTracking", js.Any.fromFunction1(value))
+    inline def setSetOpenTracking(value: OpenTracking => Unit): Self = StObject.set(x, "setOpenTracking", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetSubscriptionTracking(value: SubscriptionTracking => Unit): Self = StObject.set(x, "setSubscriptionTracking", js.Any.fromFunction1(value))
+    inline def setSetSubscriptionTracking(value: SubscriptionTracking => Unit): Self = StObject.set(x, "setSubscriptionTracking", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setToJSON(value: () => Clicktracking): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    inline def setToJSON(value: () => Clicktracking): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
   }
 }

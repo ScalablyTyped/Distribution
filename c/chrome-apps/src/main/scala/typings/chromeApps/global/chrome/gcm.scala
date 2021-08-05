@@ -64,8 +64,7 @@ object gcm {
     * function(string registrationId) {...};
     * Parameter registrationId: A registration ID assigned to the application by the GCM.
     */
-  @scala.inline
-  def register(senderIds: js.Array[String], callback: js.Function1[/* registrationId */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(senderIds.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def register(senderIds: js.Array[String], callback: js.Function1[/* registrationId */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(senderIds.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sends a message according to its contents.
@@ -75,8 +74,7 @@ object gcm {
     * function(string messageId) {...};
     * Parameter messageId: The ID of the message that the callback was issued for.
     */
-  @scala.inline
-  def send(message: OutgoingMessage, callback: js.Function1[/* messageId */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(message.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def send(message: OutgoingMessage, callback: js.Function1[/* messageId */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(message.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Unregisters the application from GCM.
@@ -84,6 +82,5 @@ object gcm {
     * The callback parameter should be a function that looks like this:
     * function() {...};
     */
-  @scala.inline
-  def unregister(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def unregister(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -13,8 +13,7 @@ trait FieldSchemaInFormText
 }
 object FieldSchemaInFormText {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllowGridEditing: Boolean,
     Description: String,
     Direction: String,
@@ -35,10 +34,8 @@ object FieldSchemaInFormText {
     __obj.asInstanceOf[FieldSchemaInFormText]
   }
   
-  @scala.inline
-  implicit class FieldSchemaInFormTextMutableBuilder[Self <: FieldSchemaInFormText] (val x: Self) extends AnyVal {
+  extension [Self <: FieldSchemaInFormText](x: Self) {
     
-    @scala.inline
-    def setMaxLength(value: Double): Self = StObject.set(x, "MaxLength", value.asInstanceOf[js.Any])
+    inline def setMaxLength(value: Double): Self = StObject.set(x, "MaxLength", value.asInstanceOf[js.Any])
   }
 }

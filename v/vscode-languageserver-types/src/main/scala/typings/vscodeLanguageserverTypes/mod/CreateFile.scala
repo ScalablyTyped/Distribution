@@ -27,8 +27,7 @@ trait CreateFile
 }
 object CreateFile {
   
-  @scala.inline
-  def apply(uri: DocumentUri): CreateFile = {
+  inline def apply(uri: DocumentUri): CreateFile = {
     val __obj = js.Dynamic.literal(kind = "create", uri = uri.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFile]
   }
@@ -37,27 +36,19 @@ object CreateFile {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(uri: DocumentUri): CreateFile = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(uri.asInstanceOf[js.Any]).asInstanceOf[CreateFile]
-  @scala.inline
-  def create(uri: DocumentUri, options: CreateFileOptions): CreateFile = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(uri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CreateFile]
+  inline def create(uri: DocumentUri): CreateFile = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(uri.asInstanceOf[js.Any]).asInstanceOf[CreateFile]
+  inline def create(uri: DocumentUri, options: CreateFileOptions): CreateFile = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(uri.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CreateFile]
   
-  @scala.inline
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.CreateFile */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.CreateFile */ Boolean]
+  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.CreateFile */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.CreateFile */ Boolean]
   
-  @scala.inline
-  implicit class CreateFileMutableBuilder[Self <: CreateFile] (val x: Self) extends AnyVal {
+  extension [Self <: CreateFile](x: Self) {
     
-    @scala.inline
-    def setKind(value: create): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: create): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: CreateFileOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: CreateFileOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setUri(value: DocumentUri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: DocumentUri): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
   }
 }

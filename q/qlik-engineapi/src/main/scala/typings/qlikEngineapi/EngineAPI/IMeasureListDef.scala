@@ -14,16 +14,13 @@ trait IMeasureListDef extends StObject {
 }
 object IMeasureListDef {
   
-  @scala.inline
-  def apply(): IMeasureListDef = {
+  inline def apply(): IMeasureListDef = {
     val __obj = js.Dynamic.literal(qType = "measure")
     __obj.asInstanceOf[IMeasureListDef]
   }
   
-  @scala.inline
-  implicit class IMeasureListDefMutableBuilder[Self <: IMeasureListDef] (val x: Self) extends AnyVal {
+  extension [Self <: IMeasureListDef](x: Self) {
     
-    @scala.inline
-    def setQType(value: measure): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
+    inline def setQType(value: measure): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
   }
 }

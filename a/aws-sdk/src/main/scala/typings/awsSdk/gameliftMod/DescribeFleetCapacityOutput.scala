@@ -18,28 +18,21 @@ trait DescribeFleetCapacityOutput extends StObject {
 }
 object DescribeFleetCapacityOutput {
   
-  @scala.inline
-  def apply(): DescribeFleetCapacityOutput = {
+  inline def apply(): DescribeFleetCapacityOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeFleetCapacityOutput]
   }
   
-  @scala.inline
-  implicit class DescribeFleetCapacityOutputMutableBuilder[Self <: DescribeFleetCapacityOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeFleetCapacityOutput](x: Self) {
     
-    @scala.inline
-    def setFleetCapacity(value: FleetCapacityList): Self = StObject.set(x, "FleetCapacity", value.asInstanceOf[js.Any])
+    inline def setFleetCapacity(value: FleetCapacityList): Self = StObject.set(x, "FleetCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFleetCapacityUndefined: Self = StObject.set(x, "FleetCapacity", js.undefined)
+    inline def setFleetCapacityUndefined: Self = StObject.set(x, "FleetCapacity", js.undefined)
     
-    @scala.inline
-    def setFleetCapacityVarargs(value: FleetCapacity*): Self = StObject.set(x, "FleetCapacity", js.Array(value :_*))
+    inline def setFleetCapacityVarargs(value: FleetCapacity*): Self = StObject.set(x, "FleetCapacity", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

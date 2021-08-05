@@ -14,28 +14,21 @@ trait ListEnvironmentsResponse extends StObject {
 }
 object ListEnvironmentsResponse {
   
-  @scala.inline
-  def apply(): ListEnvironmentsResponse = {
+  inline def apply(): ListEnvironmentsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListEnvironmentsResponse]
   }
   
-  @scala.inline
-  implicit class ListEnvironmentsResponseMutableBuilder[Self <: ListEnvironmentsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListEnvironmentsResponse](x: Self) {
     
-    @scala.inline
-    def setEnvironment(value: js.Array[Environment]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: js.Array[Environment]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+    inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
-    @scala.inline
-    def setEnvironmentVarargs(value: Environment*): Self = StObject.set(x, "environment", js.Array(value :_*))
+    inline def setEnvironmentVarargs(value: Environment*): Self = StObject.set(x, "environment", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

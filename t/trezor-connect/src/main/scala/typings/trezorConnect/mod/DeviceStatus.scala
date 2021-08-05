@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeviceStatus extends StObject
 object DeviceStatus {
   
-  @scala.inline
-  def available: typings.trezorConnect.trezorConnectStrings.available = "available".asInstanceOf[typings.trezorConnect.trezorConnectStrings.available]
+  inline def available: typings.trezorConnect.trezorConnectStrings.available = "available".asInstanceOf[typings.trezorConnect.trezorConnectStrings.available]
   
-  @scala.inline
-  def occupied: typings.trezorConnect.trezorConnectStrings.occupied = "occupied".asInstanceOf[typings.trezorConnect.trezorConnectStrings.occupied]
+  inline def occupied: typings.trezorConnect.trezorConnectStrings.occupied = "occupied".asInstanceOf[typings.trezorConnect.trezorConnectStrings.occupied]
   
-  @scala.inline
-  def used: typings.trezorConnect.trezorConnectStrings.used = "used".asInstanceOf[typings.trezorConnect.trezorConnectStrings.used]
+  inline def used: typings.trezorConnect.trezorConnectStrings.used = "used".asInstanceOf[typings.trezorConnect.trezorConnectStrings.used]
 }

@@ -13,10 +13,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[UIStateShape](): js.Function1[/* component */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[/* component */ js.Any, js.Any]]
-  @scala.inline
-  def default[UIStateShape](params: uiParams[UIStateShape]): js.Function1[/* component */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ js.Any, js.Any]]
+  inline def default[UIStateShape](): js.Function1[/* component */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[/* component */ js.Any, js.Any]]
+  inline def default[UIStateShape](params: uiParams[UIStateShape]): js.Function1[/* component */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ js.Any, js.Any]]
   
   @JSImport("redux-ui", "reducer")
   @js.native
@@ -69,47 +67,34 @@ object mod {
   }
   object uiParams {
     
-    @scala.inline
-    def apply[UIStateShape](state: UIStateShape): uiParams[UIStateShape] = {
+    inline def apply[UIStateShape](state: UIStateShape): uiParams[UIStateShape] = {
       val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[uiParams[UIStateShape]]
     }
     
-    @scala.inline
-    implicit class uiParamsMutableBuilder[Self <: uiParams[?], UIStateShape] (val x: Self & uiParams[UIStateShape]) extends AnyVal {
+    extension [Self <: uiParams[?], UIStateShape](x: Self & uiParams[UIStateShape]) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setMergeProps(value: (/* stateProps */ js.Any, /* dispatchProps */ js.Any, /* ownProps */ js.Any) => js.Any): Self = StObject.set(x, "mergeProps", js.Any.fromFunction3(value))
+      inline def setMergeProps(value: (/* stateProps */ js.Any, /* dispatchProps */ js.Any, /* ownProps */ js.Any) => js.Any): Self = StObject.set(x, "mergeProps", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setMergePropsUndefined: Self = StObject.set(x, "mergeProps", js.undefined)
+      inline def setMergePropsUndefined: Self = StObject.set(x, "mergeProps", js.undefined)
       
-      @scala.inline
-      def setOptions(value: Pure): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Pure): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setPersist(value: Boolean): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
+      inline def setPersist(value: Boolean): Self = StObject.set(x, "persist", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
+      inline def setPersistUndefined: Self = StObject.set(x, "persist", js.undefined)
       
-      @scala.inline
-      def setReducer(value: (/* state */ js.Any, /* action */ js.Any) => js.Any): Self = StObject.set(x, "reducer", js.Any.fromFunction2(value))
+      inline def setReducer(value: (/* state */ js.Any, /* action */ js.Any) => js.Any): Self = StObject.set(x, "reducer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReducerUndefined: Self = StObject.set(x, "reducer", js.undefined)
+      inline def setReducerUndefined: Self = StObject.set(x, "reducer", js.undefined)
       
-      @scala.inline
-      def setState(value: UIStateShape): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: UIStateShape): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
 }

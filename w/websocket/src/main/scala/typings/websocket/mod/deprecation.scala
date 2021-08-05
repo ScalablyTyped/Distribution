@@ -13,9 +13,7 @@ object deprecation {
   @JSImport("websocket", "deprecation.disableWarnings")
   @js.native
   def disableWarnings: Boolean = js.native
-  @scala.inline
-  def disableWarnings_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableWarnings")(x.asInstanceOf[js.Any])
+  inline def disableWarnings_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableWarnings")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def warn(deprecationName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(deprecationName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def warn(deprecationName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(deprecationName.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

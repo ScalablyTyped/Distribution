@@ -11,16 +11,13 @@ trait SessionClientSession extends StObject {
 }
 object SessionClientSession {
   
-  @scala.inline
-  def apply(session: ClientSession): SessionClientSession = {
+  inline def apply(session: ClientSession): SessionClientSession = {
     val __obj = js.Dynamic.literal(session = session.asInstanceOf[js.Any])
     __obj.asInstanceOf[SessionClientSession]
   }
   
-  @scala.inline
-  implicit class SessionClientSessionMutableBuilder[Self <: SessionClientSession] (val x: Self) extends AnyVal {
+  extension [Self <: SessionClientSession](x: Self) {
     
-    @scala.inline
-    def setSession(value: ClientSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+    inline def setSession(value: ClientSession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
   }
 }

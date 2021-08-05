@@ -21,25 +21,19 @@ trait SchemaDiskStatus extends StObject {
 }
 object SchemaDiskStatus {
   
-  @scala.inline
-  def apply(): SchemaDiskStatus = {
+  inline def apply(): SchemaDiskStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDiskStatus]
   }
   
-  @scala.inline
-  implicit class SchemaDiskStatusMutableBuilder[Self <: SchemaDiskStatus] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDiskStatus](x: Self) {
     
-    @scala.inline
-    def setFreeSpaceBytes(value: String): Self = StObject.set(x, "freeSpaceBytes", value.asInstanceOf[js.Any])
+    inline def setFreeSpaceBytes(value: String): Self = StObject.set(x, "freeSpaceBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFreeSpaceBytesUndefined: Self = StObject.set(x, "freeSpaceBytes", js.undefined)
+    inline def setFreeSpaceBytesUndefined: Self = StObject.set(x, "freeSpaceBytes", js.undefined)
     
-    @scala.inline
-    def setTotalSpaceBytes(value: String): Self = StObject.set(x, "totalSpaceBytes", value.asInstanceOf[js.Any])
+    inline def setTotalSpaceBytes(value: String): Self = StObject.set(x, "totalSpaceBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalSpaceBytesUndefined: Self = StObject.set(x, "totalSpaceBytes", js.undefined)
+    inline def setTotalSpaceBytesUndefined: Self = StObject.set(x, "totalSpaceBytes", js.undefined)
   }
 }

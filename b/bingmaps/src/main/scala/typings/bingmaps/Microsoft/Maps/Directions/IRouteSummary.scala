@@ -30,8 +30,7 @@ trait IRouteSummary extends StObject {
 }
 object IRouteSummary {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     distance: Double,
     monetaryCost: Double,
     northEast: Location,
@@ -43,25 +42,18 @@ object IRouteSummary {
     __obj.asInstanceOf[IRouteSummary]
   }
   
-  @scala.inline
-  implicit class IRouteSummaryMutableBuilder[Self <: IRouteSummary] (val x: Self) extends AnyVal {
+  extension [Self <: IRouteSummary](x: Self) {
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonetaryCost(value: Double): Self = StObject.set(x, "monetaryCost", value.asInstanceOf[js.Any])
+    inline def setMonetaryCost(value: Double): Self = StObject.set(x, "monetaryCost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNorthEast(value: Location): Self = StObject.set(x, "northEast", value.asInstanceOf[js.Any])
+    inline def setNorthEast(value: Location): Self = StObject.set(x, "northEast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSouthWest(value: Location): Self = StObject.set(x, "southWest", value.asInstanceOf[js.Any])
+    inline def setSouthWest(value: Location): Self = StObject.set(x, "southWest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeWithTraffic(value: Double): Self = StObject.set(x, "timeWithTraffic", value.asInstanceOf[js.Any])
+    inline def setTimeWithTraffic(value: Double): Self = StObject.set(x, "timeWithTraffic", value.asInstanceOf[js.Any])
   }
 }

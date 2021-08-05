@@ -233,20 +233,16 @@ object Notification {
   }
   object Actions {
     
-    @scala.inline
-    def apply(title: String, url: String): Actions = {
+    inline def apply(title: String, url: String): Actions = {
       val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Actions]
     }
     
-    @scala.inline
-    implicit class ActionsMutableBuilder[Self <: Actions] (val x: Self) extends AnyVal {
+    extension [Self <: Actions](x: Self) {
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

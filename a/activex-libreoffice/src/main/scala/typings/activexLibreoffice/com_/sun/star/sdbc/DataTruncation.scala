@@ -35,8 +35,7 @@ trait DataTruncation
 }
 object DataTruncation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Context: XInterface,
     DataSize: Double,
     DuringRead: Boolean,
@@ -52,22 +51,16 @@ object DataTruncation {
     __obj.asInstanceOf[DataTruncation]
   }
   
-  @scala.inline
-  implicit class DataTruncationMutableBuilder[Self <: DataTruncation] (val x: Self) extends AnyVal {
+  extension [Self <: DataTruncation](x: Self) {
     
-    @scala.inline
-    def setDataSize(value: Double): Self = StObject.set(x, "DataSize", value.asInstanceOf[js.Any])
+    inline def setDataSize(value: Double): Self = StObject.set(x, "DataSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuringRead(value: Boolean): Self = StObject.set(x, "DuringRead", value.asInstanceOf[js.Any])
+    inline def setDuringRead(value: Boolean): Self = StObject.set(x, "DuringRead", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsParameter(value: Boolean): Self = StObject.set(x, "IsParameter", value.asInstanceOf[js.Any])
+    inline def setIsParameter(value: Boolean): Self = StObject.set(x, "IsParameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferSize(value: Double): Self = StObject.set(x, "TransferSize", value.asInstanceOf[js.Any])
+    inline def setTransferSize(value: Double): Self = StObject.set(x, "TransferSize", value.asInstanceOf[js.Any])
   }
 }

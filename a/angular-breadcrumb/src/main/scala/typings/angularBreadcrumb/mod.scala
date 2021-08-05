@@ -32,17 +32,14 @@ object mod extends Shortcut {
       }
       object breadcrumbProvider {
         
-        @scala.inline
-        def apply(setOptions: breadcrumbProviderOptions => Unit): breadcrumbProvider = {
+        inline def apply(setOptions: breadcrumbProviderOptions => Unit): breadcrumbProvider = {
           val __obj = js.Dynamic.literal(setOptions = js.Any.fromFunction1(setOptions))
           __obj.asInstanceOf[breadcrumbProvider]
         }
         
-        @scala.inline
-        implicit class breadcrumbProviderMutableBuilder[Self <: breadcrumbProvider] (val x: Self) extends AnyVal {
+        extension [Self <: breadcrumbProvider](x: Self) {
           
-          @scala.inline
-          def setSetOptions(value: breadcrumbProviderOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
+          inline def setSetOptions(value: breadcrumbProviderOptions => Unit): Self = StObject.set(x, "setOptions", js.Any.fromFunction1(value))
         }
       }
       
@@ -70,38 +67,28 @@ object mod extends Shortcut {
       }
       object breadcrumbProviderOptions {
         
-        @scala.inline
-        def apply(): breadcrumbProviderOptions = {
+        inline def apply(): breadcrumbProviderOptions = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[breadcrumbProviderOptions]
         }
         
-        @scala.inline
-        implicit class breadcrumbProviderOptionsMutableBuilder[Self <: breadcrumbProviderOptions] (val x: Self) extends AnyVal {
+        extension [Self <: breadcrumbProviderOptions](x: Self) {
           
-          @scala.inline
-          def setIncludeAbstract(value: Boolean): Self = StObject.set(x, "includeAbstract", value.asInstanceOf[js.Any])
+          inline def setIncludeAbstract(value: Boolean): Self = StObject.set(x, "includeAbstract", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setIncludeAbstractUndefined: Self = StObject.set(x, "includeAbstract", js.undefined)
+          inline def setIncludeAbstractUndefined: Self = StObject.set(x, "includeAbstract", js.undefined)
           
-          @scala.inline
-          def setPrefixStateName(value: String): Self = StObject.set(x, "prefixStateName", value.asInstanceOf[js.Any])
+          inline def setPrefixStateName(value: String): Self = StObject.set(x, "prefixStateName", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setPrefixStateNameUndefined: Self = StObject.set(x, "prefixStateName", js.undefined)
+          inline def setPrefixStateNameUndefined: Self = StObject.set(x, "prefixStateName", js.undefined)
           
-          @scala.inline
-          def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+          inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+          inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
           
-          @scala.inline
-          def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
+          inline def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
+          inline def setTemplateUrlUndefined: Self = StObject.set(x, "templateUrl", js.undefined)
         }
       }
       
@@ -119,20 +106,16 @@ object mod extends Shortcut {
       }
       object breadcrumbService {
         
-        @scala.inline
-        def apply(getLastStep: () => IState, getStatesChain: () => js.Array[IState]): breadcrumbService = {
+        inline def apply(getLastStep: () => IState, getStatesChain: () => js.Array[IState]): breadcrumbService = {
           val __obj = js.Dynamic.literal(getLastStep = js.Any.fromFunction0(getLastStep), getStatesChain = js.Any.fromFunction0(getStatesChain))
           __obj.asInstanceOf[breadcrumbService]
         }
         
-        @scala.inline
-        implicit class breadcrumbServiceMutableBuilder[Self <: breadcrumbService] (val x: Self) extends AnyVal {
+        extension [Self <: breadcrumbService](x: Self) {
           
-          @scala.inline
-          def setGetLastStep(value: () => IState): Self = StObject.set(x, "getLastStep", js.Any.fromFunction0(value))
+          inline def setGetLastStep(value: () => IState): Self = StObject.set(x, "getLastStep", js.Any.fromFunction0(value))
           
-          @scala.inline
-          def setGetStatesChain(value: () => js.Array[IState]): Self = StObject.set(x, "getStatesChain", js.Any.fromFunction0(value))
+          inline def setGetStatesChain(value: () => js.Array[IState]): Self = StObject.set(x, "getStatesChain", js.Any.fromFunction0(value))
         }
       }
     }
@@ -149,32 +132,24 @@ object mod extends Shortcut {
       }
       object IState {
         
-        @scala.inline
-        def apply(): IState = {
+        inline def apply(): IState = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[IState]
         }
         
-        @scala.inline
-        implicit class IStateMutableBuilder[Self <: IState] (val x: Self) extends AnyVal {
+        extension [Self <: IState](x: Self) {
           
-          @scala.inline
-          def setNcyBreadcrumb(value: Label): Self = StObject.set(x, "ncyBreadcrumb", value.asInstanceOf[js.Any])
+          inline def setNcyBreadcrumb(value: Label): Self = StObject.set(x, "ncyBreadcrumb", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNcyBreadcrumbLabel(value: String): Self = StObject.set(x, "ncyBreadcrumbLabel", value.asInstanceOf[js.Any])
+          inline def setNcyBreadcrumbLabel(value: String): Self = StObject.set(x, "ncyBreadcrumbLabel", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNcyBreadcrumbLabelUndefined: Self = StObject.set(x, "ncyBreadcrumbLabel", js.undefined)
+          inline def setNcyBreadcrumbLabelUndefined: Self = StObject.set(x, "ncyBreadcrumbLabel", js.undefined)
           
-          @scala.inline
-          def setNcyBreadcrumbLink(value: String): Self = StObject.set(x, "ncyBreadcrumbLink", value.asInstanceOf[js.Any])
+          inline def setNcyBreadcrumbLink(value: String): Self = StObject.set(x, "ncyBreadcrumbLink", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNcyBreadcrumbLinkUndefined: Self = StObject.set(x, "ncyBreadcrumbLink", js.undefined)
+          inline def setNcyBreadcrumbLinkUndefined: Self = StObject.set(x, "ncyBreadcrumbLink", js.undefined)
           
-          @scala.inline
-          def setNcyBreadcrumbUndefined: Self = StObject.set(x, "ncyBreadcrumb", js.undefined)
+          inline def setNcyBreadcrumbUndefined: Self = StObject.set(x, "ncyBreadcrumb", js.undefined)
         }
       }
     }

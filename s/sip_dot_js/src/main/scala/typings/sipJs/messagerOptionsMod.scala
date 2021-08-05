@@ -17,29 +17,22 @@ object messagerOptionsMod {
   }
   object MessagerOptions {
     
-    @scala.inline
-    def apply(): MessagerOptions = {
+    inline def apply(): MessagerOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MessagerOptions]
     }
     
-    @scala.inline
-    implicit class MessagerOptionsMutableBuilder[Self <: MessagerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MessagerOptions](x: Self) {
       
-      @scala.inline
-      def setExtraHeaders(value: js.Array[String]): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
+      inline def setExtraHeaders(value: js.Array[String]): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
+      inline def setExtraHeadersUndefined: Self = StObject.set(x, "extraHeaders", js.undefined)
       
-      @scala.inline
-      def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value :_*))
+      inline def setExtraHeadersVarargs(value: String*): Self = StObject.set(x, "extraHeaders", js.Array(value :_*))
       
-      @scala.inline
-      def setParams(value: FromDisplayName): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: FromDisplayName): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+      inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     }
   }
 }

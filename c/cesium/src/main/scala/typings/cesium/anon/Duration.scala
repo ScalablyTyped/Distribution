@@ -15,31 +15,23 @@ trait Duration extends StObject {
 }
 object Duration {
   
-  @scala.inline
-  def apply(): Duration = {
+  inline def apply(): Duration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Duration]
   }
   
-  @scala.inline
-  implicit class DurationMutableBuilder[Self <: Duration] (val x: Self) extends AnyVal {
+  extension [Self <: Duration](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setMaximumHeight(value: Double): Self = StObject.set(x, "maximumHeight", value.asInstanceOf[js.Any])
+    inline def setMaximumHeight(value: Double): Self = StObject.set(x, "maximumHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumHeightUndefined: Self = StObject.set(x, "maximumHeight", js.undefined)
+    inline def setMaximumHeightUndefined: Self = StObject.set(x, "maximumHeight", js.undefined)
     
-    @scala.inline
-    def setOffset(value: HeadingPitchRange): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: HeadingPitchRange): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
   }
 }

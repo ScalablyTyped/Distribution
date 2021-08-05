@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(value: String): String = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(value: String, options: UslugOptions): String = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(value: String): String = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(value: String, options: UslugOptions): String = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("uslug", JSImport.Namespace)
   @js.native
@@ -25,32 +23,24 @@ object mod {
   }
   object UslugOptions {
     
-    @scala.inline
-    def apply(): UslugOptions = {
+    inline def apply(): UslugOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UslugOptions]
     }
     
-    @scala.inline
-    implicit class UslugOptionsMutableBuilder[Self <: UslugOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UslugOptions](x: Self) {
       
-      @scala.inline
-      def setAllowedChars(value: String): Self = StObject.set(x, "allowedChars", value.asInstanceOf[js.Any])
+      inline def setAllowedChars(value: String): Self = StObject.set(x, "allowedChars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedCharsUndefined: Self = StObject.set(x, "allowedChars", js.undefined)
+      inline def setAllowedCharsUndefined: Self = StObject.set(x, "allowedChars", js.undefined)
       
-      @scala.inline
-      def setLower(value: Boolean): Self = StObject.set(x, "lower", value.asInstanceOf[js.Any])
+      inline def setLower(value: Boolean): Self = StObject.set(x, "lower", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLowerUndefined: Self = StObject.set(x, "lower", js.undefined)
+      inline def setLowerUndefined: Self = StObject.set(x, "lower", js.undefined)
       
-      @scala.inline
-      def setSpaces(value: Boolean): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
+      inline def setSpaces(value: Boolean): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpacesUndefined: Self = StObject.set(x, "spaces", js.undefined)
+      inline def setSpacesUndefined: Self = StObject.set(x, "spaces", js.undefined)
     }
   }
 }

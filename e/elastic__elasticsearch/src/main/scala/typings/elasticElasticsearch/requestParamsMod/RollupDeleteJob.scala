@@ -12,16 +12,13 @@ trait RollupDeleteJob
 }
 object RollupDeleteJob {
   
-  @scala.inline
-  def apply(id: String): RollupDeleteJob = {
+  inline def apply(id: String): RollupDeleteJob = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[RollupDeleteJob]
   }
   
-  @scala.inline
-  implicit class RollupDeleteJobMutableBuilder[Self <: RollupDeleteJob] (val x: Self) extends AnyVal {
+  extension [Self <: RollupDeleteJob](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

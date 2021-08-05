@@ -28,28 +28,21 @@ trait PutBucketInventoryConfigurationRequest extends StObject {
 }
 object PutBucketInventoryConfigurationRequest {
   
-  @scala.inline
-  def apply(Bucket: BucketName, Id: InventoryId, InventoryConfiguration: InventoryConfiguration): PutBucketInventoryConfigurationRequest = {
+  inline def apply(Bucket: BucketName, Id: InventoryId, InventoryConfiguration: InventoryConfiguration): PutBucketInventoryConfigurationRequest = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], InventoryConfiguration = InventoryConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketInventoryConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class PutBucketInventoryConfigurationRequestMutableBuilder[Self <: PutBucketInventoryConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutBucketInventoryConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
+    inline def setExpectedBucketOwner(value: AccountId): Self = StObject.set(x, "ExpectedBucketOwner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
+    inline def setExpectedBucketOwnerUndefined: Self = StObject.set(x, "ExpectedBucketOwner", js.undefined)
     
-    @scala.inline
-    def setId(value: InventoryId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: InventoryId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInventoryConfiguration(value: InventoryConfiguration): Self = StObject.set(x, "InventoryConfiguration", value.asInstanceOf[js.Any])
+    inline def setInventoryConfiguration(value: InventoryConfiguration): Self = StObject.set(x, "InventoryConfiguration", value.asInstanceOf[js.Any])
   }
 }

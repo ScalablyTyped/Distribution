@@ -21,31 +21,23 @@ trait SchemaPermissionChange extends StObject {
 }
 object SchemaPermissionChange {
   
-  @scala.inline
-  def apply(): SchemaPermissionChange = {
+  inline def apply(): SchemaPermissionChange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPermissionChange]
   }
   
-  @scala.inline
-  implicit class SchemaPermissionChangeMutableBuilder[Self <: SchemaPermissionChange] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPermissionChange](x: Self) {
     
-    @scala.inline
-    def setAddedPermissions(value: js.Array[SchemaPermission]): Self = StObject.set(x, "addedPermissions", value.asInstanceOf[js.Any])
+    inline def setAddedPermissions(value: js.Array[SchemaPermission]): Self = StObject.set(x, "addedPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddedPermissionsUndefined: Self = StObject.set(x, "addedPermissions", js.undefined)
+    inline def setAddedPermissionsUndefined: Self = StObject.set(x, "addedPermissions", js.undefined)
     
-    @scala.inline
-    def setAddedPermissionsVarargs(value: SchemaPermission*): Self = StObject.set(x, "addedPermissions", js.Array(value :_*))
+    inline def setAddedPermissionsVarargs(value: SchemaPermission*): Self = StObject.set(x, "addedPermissions", js.Array(value :_*))
     
-    @scala.inline
-    def setRemovedPermissions(value: js.Array[SchemaPermission]): Self = StObject.set(x, "removedPermissions", value.asInstanceOf[js.Any])
+    inline def setRemovedPermissions(value: js.Array[SchemaPermission]): Self = StObject.set(x, "removedPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovedPermissionsUndefined: Self = StObject.set(x, "removedPermissions", js.undefined)
+    inline def setRemovedPermissionsUndefined: Self = StObject.set(x, "removedPermissions", js.undefined)
     
-    @scala.inline
-    def setRemovedPermissionsVarargs(value: SchemaPermission*): Self = StObject.set(x, "removedPermissions", js.Array(value :_*))
+    inline def setRemovedPermissionsVarargs(value: SchemaPermission*): Self = StObject.set(x, "removedPermissions", js.Array(value :_*))
   }
 }

@@ -19,18 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ParameterDirectionEnum extends StObject
 object ParameterDirectionEnum {
   
-  @scala.inline
-  def adParamInput: `1` = 1.asInstanceOf[`1`]
+  inline def adParamInput: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def adParamInputOutput: `3` = 3.asInstanceOf[`3`]
+  inline def adParamInputOutput: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def adParamOutput: `2` = 2.asInstanceOf[`2`]
+  inline def adParamOutput: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def adParamReturnValue: `4` = 4.asInstanceOf[`4`]
+  inline def adParamReturnValue: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def adParamUnknown: `0` = 0.asInstanceOf[`0`]
+  inline def adParamUnknown: `0` = 0.asInstanceOf[`0`]
 }

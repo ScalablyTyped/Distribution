@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Outlook.ViewField")
 @js.native
-class ViewField protected ()
+/* private */ class ViewField ()
   extends StObject
      with typings.activexOutlook.Outlook.ViewField {
   
@@ -20,7 +20,7 @@ class ViewField protected ()
   /* CompleteClass */
   override val ColumnFormat: typings.activexOutlook.Outlook.ColumnFormat = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Outlook.ViewField_typekey")
   var OutlookDotViewField_typekey: typings.activexOutlook.Outlook.ViewField = js.native
   

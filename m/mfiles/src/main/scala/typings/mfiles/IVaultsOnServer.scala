@@ -20,8 +20,7 @@ trait IVaultsOnServer extends StObject {
 }
 object IVaultsOnServer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     GetVaultByGUID: String => IVaultOnServer,
     GetVaultByName: String => IVaultOnServer,
@@ -33,25 +32,18 @@ object IVaultsOnServer {
     __obj.asInstanceOf[IVaultsOnServer]
   }
   
-  @scala.inline
-  implicit class IVaultsOnServerMutableBuilder[Self <: IVaultsOnServer] (val x: Self) extends AnyVal {
+  extension [Self <: IVaultsOnServer](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetVaultByGUID(value: String => IVaultOnServer): Self = StObject.set(x, "GetVaultByGUID", js.Any.fromFunction1(value))
+    inline def setGetVaultByGUID(value: String => IVaultOnServer): Self = StObject.set(x, "GetVaultByGUID", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetVaultByName(value: String => IVaultOnServer): Self = StObject.set(x, "GetVaultByName", js.Any.fromFunction1(value))
+    inline def setGetVaultByName(value: String => IVaultOnServer): Self = StObject.set(x, "GetVaultByName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetVaultIndexByGUID(value: String => Double): Self = StObject.set(x, "GetVaultIndexByGUID", js.Any.fromFunction1(value))
+    inline def setGetVaultIndexByGUID(value: String => Double): Self = StObject.set(x, "GetVaultIndexByGUID", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetVaultIndexByName(value: String => Double): Self = StObject.set(x, "GetVaultIndexByName", js.Any.fromFunction1(value))
+    inline def setGetVaultIndexByName(value: String => Double): Self = StObject.set(x, "GetVaultIndexByName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setItem(value: Double => IVaultOnServer): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => IVaultOnServer): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
   }
 }

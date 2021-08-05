@@ -38,49 +38,35 @@ trait ThreatIntelIndicator extends StObject {
 }
 object ThreatIntelIndicator {
   
-  @scala.inline
-  def apply(): ThreatIntelIndicator = {
+  inline def apply(): ThreatIntelIndicator = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThreatIntelIndicator]
   }
   
-  @scala.inline
-  implicit class ThreatIntelIndicatorMutableBuilder[Self <: ThreatIntelIndicator] (val x: Self) extends AnyVal {
+  extension [Self <: ThreatIntelIndicator](x: Self) {
     
-    @scala.inline
-    def setCategory(value: ThreatIntelIndicatorCategory): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: ThreatIntelIndicatorCategory): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryUndefined: Self = StObject.set(x, "Category", js.undefined)
+    inline def setCategoryUndefined: Self = StObject.set(x, "Category", js.undefined)
     
-    @scala.inline
-    def setLastObservedAt(value: NonEmptyString): Self = StObject.set(x, "LastObservedAt", value.asInstanceOf[js.Any])
+    inline def setLastObservedAt(value: NonEmptyString): Self = StObject.set(x, "LastObservedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastObservedAtUndefined: Self = StObject.set(x, "LastObservedAt", js.undefined)
+    inline def setLastObservedAtUndefined: Self = StObject.set(x, "LastObservedAt", js.undefined)
     
-    @scala.inline
-    def setSource(value: NonEmptyString): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
+    inline def setSource(value: NonEmptyString): Self = StObject.set(x, "Source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "Source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "Source", js.undefined)
     
-    @scala.inline
-    def setSourceUrl(value: NonEmptyString): Self = StObject.set(x, "SourceUrl", value.asInstanceOf[js.Any])
+    inline def setSourceUrl(value: NonEmptyString): Self = StObject.set(x, "SourceUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUrlUndefined: Self = StObject.set(x, "SourceUrl", js.undefined)
+    inline def setSourceUrlUndefined: Self = StObject.set(x, "SourceUrl", js.undefined)
     
-    @scala.inline
-    def setType(value: ThreatIntelIndicatorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: ThreatIntelIndicatorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
-    @scala.inline
-    def setValue(value: NonEmptyString): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: NonEmptyString): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

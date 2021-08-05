@@ -58,79 +58,55 @@ trait ModifyFpgaImageAttributeRequest extends StObject {
 }
 object ModifyFpgaImageAttributeRequest {
   
-  @scala.inline
-  def apply(FpgaImageId: FpgaImageId): ModifyFpgaImageAttributeRequest = {
+  inline def apply(FpgaImageId: FpgaImageId): ModifyFpgaImageAttributeRequest = {
     val __obj = js.Dynamic.literal(FpgaImageId = FpgaImageId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyFpgaImageAttributeRequest]
   }
   
-  @scala.inline
-  implicit class ModifyFpgaImageAttributeRequestMutableBuilder[Self <: ModifyFpgaImageAttributeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyFpgaImageAttributeRequest](x: Self) {
     
-    @scala.inline
-    def setAttribute(value: FpgaImageAttributeName): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
+    inline def setAttribute(value: FpgaImageAttributeName): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeUndefined: Self = StObject.set(x, "Attribute", js.undefined)
+    inline def setAttributeUndefined: Self = StObject.set(x, "Attribute", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setFpgaImageId(value: FpgaImageId): Self = StObject.set(x, "FpgaImageId", value.asInstanceOf[js.Any])
+    inline def setFpgaImageId(value: FpgaImageId): Self = StObject.set(x, "FpgaImageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadPermission(value: LoadPermissionModifications): Self = StObject.set(x, "LoadPermission", value.asInstanceOf[js.Any])
+    inline def setLoadPermission(value: LoadPermissionModifications): Self = StObject.set(x, "LoadPermission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoadPermissionUndefined: Self = StObject.set(x, "LoadPermission", js.undefined)
+    inline def setLoadPermissionUndefined: Self = StObject.set(x, "LoadPermission", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setOperationType(value: OperationType): Self = StObject.set(x, "OperationType", value.asInstanceOf[js.Any])
+    inline def setOperationType(value: OperationType): Self = StObject.set(x, "OperationType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationTypeUndefined: Self = StObject.set(x, "OperationType", js.undefined)
+    inline def setOperationTypeUndefined: Self = StObject.set(x, "OperationType", js.undefined)
     
-    @scala.inline
-    def setProductCodes(value: ProductCodeStringList): Self = StObject.set(x, "ProductCodes", value.asInstanceOf[js.Any])
+    inline def setProductCodes(value: ProductCodeStringList): Self = StObject.set(x, "ProductCodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductCodesUndefined: Self = StObject.set(x, "ProductCodes", js.undefined)
+    inline def setProductCodesUndefined: Self = StObject.set(x, "ProductCodes", js.undefined)
     
-    @scala.inline
-    def setProductCodesVarargs(value: String*): Self = StObject.set(x, "ProductCodes", js.Array(value :_*))
+    inline def setProductCodesVarargs(value: String*): Self = StObject.set(x, "ProductCodes", js.Array(value :_*))
     
-    @scala.inline
-    def setUserGroups(value: UserGroupStringList): Self = StObject.set(x, "UserGroups", value.asInstanceOf[js.Any])
+    inline def setUserGroups(value: UserGroupStringList): Self = StObject.set(x, "UserGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserGroupsUndefined: Self = StObject.set(x, "UserGroups", js.undefined)
+    inline def setUserGroupsUndefined: Self = StObject.set(x, "UserGroups", js.undefined)
     
-    @scala.inline
-    def setUserGroupsVarargs(value: String*): Self = StObject.set(x, "UserGroups", js.Array(value :_*))
+    inline def setUserGroupsVarargs(value: String*): Self = StObject.set(x, "UserGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setUserIds(value: UserIdStringList): Self = StObject.set(x, "UserIds", value.asInstanceOf[js.Any])
+    inline def setUserIds(value: UserIdStringList): Self = StObject.set(x, "UserIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdsUndefined: Self = StObject.set(x, "UserIds", js.undefined)
+    inline def setUserIdsUndefined: Self = StObject.set(x, "UserIds", js.undefined)
     
-    @scala.inline
-    def setUserIdsVarargs(value: String*): Self = StObject.set(x, "UserIds", js.Array(value :_*))
+    inline def setUserIdsVarargs(value: String*): Self = StObject.set(x, "UserIds", js.Array(value :_*))
   }
 }

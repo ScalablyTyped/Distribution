@@ -13,14 +13,11 @@ object pageStripLayoutMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createResponsiveLayout(hasContainerTotalPagesCurrentPageMaxPagesToShowShowFirstPageShowLastPage: ShowFirstPage): PageStripLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("createResponsiveLayout")(hasContainerTotalPagesCurrentPageMaxPagesToShowShowFirstPageShowLastPage.asInstanceOf[js.Any]).asInstanceOf[PageStripLayout]
+  inline def createResponsiveLayout(hasContainerTotalPagesCurrentPageMaxPagesToShowShowFirstPageShowLastPage: ShowFirstPage): PageStripLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("createResponsiveLayout")(hasContainerTotalPagesCurrentPageMaxPagesToShowShowFirstPageShowLastPage.asInstanceOf[js.Any]).asInstanceOf[PageStripLayout]
   
-  @scala.inline
-  def createResponsiveLayoutTemplate(hasTotalPagesCurrentPageMaxPagesToShow: MaxPagesToShow): PageStripLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("createResponsiveLayoutTemplate")(hasTotalPagesCurrentPageMaxPagesToShow.asInstanceOf[js.Any]).asInstanceOf[PageStripLayout]
+  inline def createResponsiveLayoutTemplate(hasTotalPagesCurrentPageMaxPagesToShow: MaxPagesToShow): PageStripLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("createResponsiveLayoutTemplate")(hasTotalPagesCurrentPageMaxPagesToShow.asInstanceOf[js.Any]).asInstanceOf[PageStripLayout]
   
-  @scala.inline
-  def createStaticLayout(hasTotalPagesCurrentPageMaxPagesToShowShowFirstPageShowLastPage: CurrentPage): PageStripLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("createStaticLayout")(hasTotalPagesCurrentPageMaxPagesToShowShowFirstPageShowLastPage.asInstanceOf[js.Any]).asInstanceOf[PageStripLayout]
+  inline def createStaticLayout(hasTotalPagesCurrentPageMaxPagesToShowShowFirstPageShowLastPage: CurrentPage): PageStripLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("createStaticLayout")(hasTotalPagesCurrentPageMaxPagesToShowShowFirstPageShowLastPage.asInstanceOf[js.Any]).asInstanceOf[PageStripLayout]
   
   type PageStripLayout = js.Array[Double]
 }

@@ -47,17 +47,14 @@ object buttonMod {
   }
   object ButtonRenderer {
     
-    @scala.inline
-    def apply(render: (AccessToken, String) => Unit): ButtonRenderer = {
+    inline def apply(render: (AccessToken, String) => Unit): ButtonRenderer = {
       val __obj = js.Dynamic.literal(render = js.Any.fromFunction2(render))
       __obj.asInstanceOf[ButtonRenderer]
     }
     
-    @scala.inline
-    implicit class ButtonRendererMutableBuilder[Self <: ButtonRenderer] (val x: Self) extends AnyVal {
+    extension [Self <: ButtonRenderer](x: Self) {
       
-      @scala.inline
-      def setRender(value: (AccessToken, String) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
+      inline def setRender(value: (AccessToken, String) => Unit): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
     }
   }
 }

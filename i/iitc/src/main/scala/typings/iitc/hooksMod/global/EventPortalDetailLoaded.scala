@@ -12,14 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EventPortalDetailLoaded extends StObject
 object EventPortalDetailLoaded {
   
-  @scala.inline
-  def Details(details: PortalDataDetail, ent: PortalDetailEnt, guid: String): typings.iitc.anon.Details = {
+  inline def Details(details: PortalDataDetail, ent: PortalDetailEnt, guid: String): typings.iitc.anon.Details = {
     val __obj = js.Dynamic.literal(details = details.asInstanceOf[js.Any], ent = ent.asInstanceOf[js.Any], guid = guid.asInstanceOf[js.Any], success = true)
     __obj.asInstanceOf[typings.iitc.anon.Details]
   }
   
-  @scala.inline
-  def Guid(guid: String): typings.iitc.anon.Guid = {
+  inline def Guid(guid: String): typings.iitc.anon.Guid = {
     val __obj = js.Dynamic.literal(guid = guid.asInstanceOf[js.Any], success = false)
     __obj.asInstanceOf[typings.iitc.anon.Guid]
   }

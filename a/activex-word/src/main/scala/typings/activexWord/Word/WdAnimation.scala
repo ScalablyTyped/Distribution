@@ -23,24 +23,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdAnimation extends StObject
 object WdAnimation {
   
-  @scala.inline
-  def wdAnimationBlinkingBackground: `2` = 2.asInstanceOf[`2`]
+  inline def wdAnimationBlinkingBackground: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdAnimationLasVegasLights: `1` = 1.asInstanceOf[`1`]
+  inline def wdAnimationLasVegasLights: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdAnimationMarchingBlackAnts: `4` = 4.asInstanceOf[`4`]
+  inline def wdAnimationMarchingBlackAnts: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def wdAnimationMarchingRedAnts: `5` = 5.asInstanceOf[`5`]
+  inline def wdAnimationMarchingRedAnts: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def wdAnimationNone: `0` = 0.asInstanceOf[`0`]
+  inline def wdAnimationNone: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdAnimationShimmer: `6` = 6.asInstanceOf[`6`]
+  inline def wdAnimationShimmer: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def wdAnimationSparkleText: `3` = 3.asInstanceOf[`3`]
+  inline def wdAnimationSparkleText: `3` = 3.asInstanceOf[`3`]
 }

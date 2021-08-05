@@ -18,22 +18,17 @@ trait GitForkSyncRequestParameters extends StObject {
 }
 object GitForkSyncRequestParameters {
   
-  @scala.inline
-  def apply(source: GlobalGitRepositoryKey, sourceToTargetRefs: js.Array[SourceToTargetRef]): GitForkSyncRequestParameters = {
+  inline def apply(source: GlobalGitRepositoryKey, sourceToTargetRefs: js.Array[SourceToTargetRef]): GitForkSyncRequestParameters = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], sourceToTargetRefs = sourceToTargetRefs.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitForkSyncRequestParameters]
   }
   
-  @scala.inline
-  implicit class GitForkSyncRequestParametersMutableBuilder[Self <: GitForkSyncRequestParameters] (val x: Self) extends AnyVal {
+  extension [Self <: GitForkSyncRequestParameters](x: Self) {
     
-    @scala.inline
-    def setSource(value: GlobalGitRepositoryKey): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: GlobalGitRepositoryKey): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceToTargetRefs(value: js.Array[SourceToTargetRef]): Self = StObject.set(x, "sourceToTargetRefs", value.asInstanceOf[js.Any])
+    inline def setSourceToTargetRefs(value: js.Array[SourceToTargetRef]): Self = StObject.set(x, "sourceToTargetRefs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceToTargetRefsVarargs(value: SourceToTargetRef*): Self = StObject.set(x, "sourceToTargetRefs", js.Array(value :_*))
+    inline def setSourceToTargetRefsVarargs(value: SourceToTargetRef*): Self = StObject.set(x, "sourceToTargetRefs", js.Array(value :_*))
   }
 }

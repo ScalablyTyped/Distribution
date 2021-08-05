@@ -10,16 +10,13 @@ trait GetStatusRequest extends StObject {
 }
 object GetStatusRequest {
   
-  @scala.inline
-  def apply(customData: js.Object): GetStatusRequest = {
+  inline def apply(customData: js.Object): GetStatusRequest = {
     val __obj = js.Dynamic.literal(customData = customData.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetStatusRequest]
   }
   
-  @scala.inline
-  implicit class GetStatusRequestMutableBuilder[Self <: GetStatusRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetStatusRequest](x: Self) {
     
-    @scala.inline
-    def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+    inline def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
   }
 }

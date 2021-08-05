@@ -23,22 +23,17 @@ trait ChangeMessageVisibilityRequest extends StObject {
 }
 object ChangeMessageVisibilityRequest {
   
-  @scala.inline
-  def apply(QueueUrl: String, ReceiptHandle: String, VisibilityTimeout: Integer): ChangeMessageVisibilityRequest = {
+  inline def apply(QueueUrl: String, ReceiptHandle: String, VisibilityTimeout: Integer): ChangeMessageVisibilityRequest = {
     val __obj = js.Dynamic.literal(QueueUrl = QueueUrl.asInstanceOf[js.Any], ReceiptHandle = ReceiptHandle.asInstanceOf[js.Any], VisibilityTimeout = VisibilityTimeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChangeMessageVisibilityRequest]
   }
   
-  @scala.inline
-  implicit class ChangeMessageVisibilityRequestMutableBuilder[Self <: ChangeMessageVisibilityRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeMessageVisibilityRequest](x: Self) {
     
-    @scala.inline
-    def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
+    inline def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceiptHandle(value: String): Self = StObject.set(x, "ReceiptHandle", value.asInstanceOf[js.Any])
+    inline def setReceiptHandle(value: String): Self = StObject.set(x, "ReceiptHandle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityTimeout(value: Integer): Self = StObject.set(x, "VisibilityTimeout", value.asInstanceOf[js.Any])
+    inline def setVisibilityTimeout(value: Integer): Self = StObject.set(x, "VisibilityTimeout", value.asInstanceOf[js.Any])
   }
 }

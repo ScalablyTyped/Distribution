@@ -18,8 +18,7 @@ trait ParametersMetaGetEndpoint extends StObject {
 }
 object ParametersMetaGetEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: MetaGetEndpoint,
     request: MetaGetRequestOptions,
     response: OctokitResponse[MetaGetResponseData]
@@ -28,16 +27,12 @@ object ParametersMetaGetEndpoint {
     __obj.asInstanceOf[ParametersMetaGetEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersMetaGetEndpointMutableBuilder[Self <: ParametersMetaGetEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersMetaGetEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: MetaGetEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: MetaGetEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: MetaGetRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: MetaGetRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[MetaGetResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[MetaGetResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

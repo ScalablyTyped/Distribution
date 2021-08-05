@@ -55,6 +55,5 @@ object Object {
     * @returns {number} - If less then 0 the first object has a lower z-order. If equal 0 booth objects have the same z-order. If greater then 0 the first object has a higher z-order.
     */
   /* static member */
-  @scala.inline
-  def compareZOrder(first: typings.heremaps.H.map.Object, second: typings.heremaps.H.map.Object): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareZOrder")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def compareZOrder(first: typings.heremaps.H.map.Object, second: typings.heremaps.H.map.Object): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareZOrder")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

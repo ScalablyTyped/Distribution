@@ -12,16 +12,13 @@ trait RemoveStorageArgs
 }
 object RemoveStorageArgs {
   
-  @scala.inline
-  def apply(key: String): RemoveStorageArgs = {
+  inline def apply(key: String): RemoveStorageArgs = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveStorageArgs]
   }
   
-  @scala.inline
-  implicit class RemoveStorageArgsMutableBuilder[Self <: RemoveStorageArgs] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveStorageArgs](x: Self) {
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

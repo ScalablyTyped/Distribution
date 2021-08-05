@@ -8,6 +8,5 @@ object angularUiRouterStrings {
   
   @js.native
   sealed trait uiDotrouter extends StObject
-  @scala.inline
-  def uiDotrouter: uiDotrouter = "ui.router".asInstanceOf[uiDotrouter]
+  inline def uiDotrouter: uiDotrouter = "ui.router".asInstanceOf[uiDotrouter]
 }

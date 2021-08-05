@@ -10,8 +10,7 @@ trait PrintTaskRequest
      with IPrintTaskRequest
 object PrintTaskRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createPrintTask: (String, PrintTaskSourceRequestedHandler) => PrintTask,
     deadline: Date,
     getDeferral: () => PrintTaskRequestedDeferral

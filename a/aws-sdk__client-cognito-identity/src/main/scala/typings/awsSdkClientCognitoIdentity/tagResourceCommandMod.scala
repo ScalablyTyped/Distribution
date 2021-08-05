@@ -30,7 +30,7 @@ object tagResourceCommandMod {
         ] {
     def this(input: TagResourceCommandInput) = this()
     
-    var deserialize: js.Any = js.native
+    /* private */ var deserialize: js.Any = js.native
     
     def resolveMiddleware(
       clientStack: MiddlewareStack[ServiceInputTypes, ServiceOutputTypes],
@@ -42,7 +42,7 @@ object tagResourceCommandMod {
       options: HttpHandlerOptions
     ): Handler[TagResourceCommandInput, TagResourceCommandOutput] = js.native
     
-    var serialize: js.Any = js.native
+    /* private */ var serialize: js.Any = js.native
   }
   
   type TagResourceCommandInput = TagResourceInput
@@ -54,8 +54,7 @@ object tagResourceCommandMod {
        with _ServiceOutputTypes
   object TagResourceCommandOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): TagResourceCommandOutput = {
+    inline def apply($metadata: ResponseMetadata): TagResourceCommandOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[TagResourceCommandOutput]
     }

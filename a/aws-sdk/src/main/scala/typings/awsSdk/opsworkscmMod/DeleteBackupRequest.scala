@@ -13,16 +13,13 @@ trait DeleteBackupRequest extends StObject {
 }
 object DeleteBackupRequest {
   
-  @scala.inline
-  def apply(BackupId: BackupId): DeleteBackupRequest = {
+  inline def apply(BackupId: BackupId): DeleteBackupRequest = {
     val __obj = js.Dynamic.literal(BackupId = BackupId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteBackupRequest]
   }
   
-  @scala.inline
-  implicit class DeleteBackupRequestMutableBuilder[Self <: DeleteBackupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteBackupRequest](x: Self) {
     
-    @scala.inline
-    def setBackupId(value: BackupId): Self = StObject.set(x, "BackupId", value.asInstanceOf[js.Any])
+    inline def setBackupId(value: BackupId): Self = StObject.set(x, "BackupId", value.asInstanceOf[js.Any])
   }
 }

@@ -19,16 +19,13 @@ trait ComponentChangeEvent
 }
 object ComponentChangeEvent {
   
-  @scala.inline
-  def apply(Component: String, Source: XInterface): ComponentChangeEvent = {
+  inline def apply(Component: String, Source: XInterface): ComponentChangeEvent = {
     val __obj = js.Dynamic.literal(Component = Component.asInstanceOf[js.Any], Source = Source.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentChangeEvent]
   }
   
-  @scala.inline
-  implicit class ComponentChangeEventMutableBuilder[Self <: ComponentChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ComponentChangeEvent](x: Self) {
     
-    @scala.inline
-    def setComponent(value: String): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: String): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
   }
 }

@@ -11,19 +11,15 @@ trait SwipeConfig extends StObject {
 }
 object SwipeConfig {
   
-  @scala.inline
-  def apply(): SwipeConfig = {
+  inline def apply(): SwipeConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SwipeConfig]
   }
   
-  @scala.inline
-  implicit class SwipeConfigMutableBuilder[Self <: SwipeConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SwipeConfig](x: Self) {
     
-    @scala.inline
-    def setSwipeDistance(value: Double): Self = StObject.set(x, "swipeDistance", value.asInstanceOf[js.Any])
+    inline def setSwipeDistance(value: Double): Self = StObject.set(x, "swipeDistance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwipeDistanceUndefined: Self = StObject.set(x, "swipeDistance", js.undefined)
+    inline def setSwipeDistanceUndefined: Self = StObject.set(x, "swipeDistance", js.undefined)
   }
 }

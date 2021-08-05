@@ -32,34 +32,25 @@ trait CMsgClientLogon extends StObject {
 }
 object CMsgClientLogon {
   
-  @scala.inline
-  def apply(account_name: String): CMsgClientLogon = {
+  inline def apply(account_name: String): CMsgClientLogon = {
     val __obj = js.Dynamic.literal(account_name = account_name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CMsgClientLogon]
   }
   
-  @scala.inline
-  implicit class CMsgClientLogonMutableBuilder[Self <: CMsgClientLogon] (val x: Self) extends AnyVal {
+  extension [Self <: CMsgClientLogon](x: Self) {
     
-    @scala.inline
-    def setAccount_name(value: String): Self = StObject.set(x, "account_name", value.asInstanceOf[js.Any])
+    inline def setAccount_name(value: String): Self = StObject.set(x, "account_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuth_code(value: String): Self = StObject.set(x, "auth_code", value.asInstanceOf[js.Any])
+    inline def setAuth_code(value: String): Self = StObject.set(x, "auth_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuth_codeUndefined: Self = StObject.set(x, "auth_code", js.undefined)
+    inline def setAuth_codeUndefined: Self = StObject.set(x, "auth_code", js.undefined)
     
-    @scala.inline
-    def setSha_sentryfile(value: String): Self = StObject.set(x, "sha_sentryfile", value.asInstanceOf[js.Any])
+    inline def setSha_sentryfile(value: String): Self = StObject.set(x, "sha_sentryfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha_sentryfileUndefined: Self = StObject.set(x, "sha_sentryfile", js.undefined)
+    inline def setSha_sentryfileUndefined: Self = StObject.set(x, "sha_sentryfile", js.undefined)
     
-    @scala.inline
-    def setTwo_factor_code(value: String): Self = StObject.set(x, "two_factor_code", value.asInstanceOf[js.Any])
+    inline def setTwo_factor_code(value: String): Self = StObject.set(x, "two_factor_code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTwo_factor_codeUndefined: Self = StObject.set(x, "two_factor_code", js.undefined)
+    inline def setTwo_factor_codeUndefined: Self = StObject.set(x, "two_factor_code", js.undefined)
   }
 }

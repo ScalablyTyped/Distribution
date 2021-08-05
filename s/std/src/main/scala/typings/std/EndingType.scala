@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EndingType extends StObject
 object EndingType {
   
-  @scala.inline
-  def native: typings.std.stdStrings.native = "native".asInstanceOf[typings.std.stdStrings.native]
+  inline def native: typings.std.stdStrings.native = "native".asInstanceOf[typings.std.stdStrings.native]
   
-  @scala.inline
-  def transparent: typings.std.stdStrings.transparent = "transparent".asInstanceOf[typings.std.stdStrings.transparent]
+  inline def transparent: typings.std.stdStrings.transparent = "transparent".asInstanceOf[typings.std.stdStrings.transparent]
 }

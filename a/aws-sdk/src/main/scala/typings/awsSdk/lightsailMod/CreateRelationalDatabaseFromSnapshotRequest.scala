@@ -53,67 +53,47 @@ trait CreateRelationalDatabaseFromSnapshotRequest extends StObject {
 }
 object CreateRelationalDatabaseFromSnapshotRequest {
   
-  @scala.inline
-  def apply(relationalDatabaseName: ResourceName): CreateRelationalDatabaseFromSnapshotRequest = {
+  inline def apply(relationalDatabaseName: ResourceName): CreateRelationalDatabaseFromSnapshotRequest = {
     val __obj = js.Dynamic.literal(relationalDatabaseName = relationalDatabaseName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRelationalDatabaseFromSnapshotRequest]
   }
   
-  @scala.inline
-  implicit class CreateRelationalDatabaseFromSnapshotRequestMutableBuilder[Self <: CreateRelationalDatabaseFromSnapshotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateRelationalDatabaseFromSnapshotRequest](x: Self) {
     
-    @scala.inline
-    def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZone(value: String): Self = StObject.set(x, "availabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
+    inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "availabilityZone", js.undefined)
     
-    @scala.inline
-    def setPubliclyAccessible(value: Boolean): Self = StObject.set(x, "publiclyAccessible", value.asInstanceOf[js.Any])
+    inline def setPubliclyAccessible(value: Boolean): Self = StObject.set(x, "publiclyAccessible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPubliclyAccessibleUndefined: Self = StObject.set(x, "publiclyAccessible", js.undefined)
+    inline def setPubliclyAccessibleUndefined: Self = StObject.set(x, "publiclyAccessible", js.undefined)
     
-    @scala.inline
-    def setRelationalDatabaseBundleId(value: String): Self = StObject.set(x, "relationalDatabaseBundleId", value.asInstanceOf[js.Any])
+    inline def setRelationalDatabaseBundleId(value: String): Self = StObject.set(x, "relationalDatabaseBundleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationalDatabaseBundleIdUndefined: Self = StObject.set(x, "relationalDatabaseBundleId", js.undefined)
+    inline def setRelationalDatabaseBundleIdUndefined: Self = StObject.set(x, "relationalDatabaseBundleId", js.undefined)
     
-    @scala.inline
-    def setRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseName", value.asInstanceOf[js.Any])
+    inline def setRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationalDatabaseSnapshotName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseSnapshotName", value.asInstanceOf[js.Any])
+    inline def setRelationalDatabaseSnapshotName(value: ResourceName): Self = StObject.set(x, "relationalDatabaseSnapshotName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelationalDatabaseSnapshotNameUndefined: Self = StObject.set(x, "relationalDatabaseSnapshotName", js.undefined)
+    inline def setRelationalDatabaseSnapshotNameUndefined: Self = StObject.set(x, "relationalDatabaseSnapshotName", js.undefined)
     
-    @scala.inline
-    def setRestoreTime(value: IsoDate): Self = StObject.set(x, "restoreTime", value.asInstanceOf[js.Any])
+    inline def setRestoreTime(value: IsoDate): Self = StObject.set(x, "restoreTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestoreTimeUndefined: Self = StObject.set(x, "restoreTime", js.undefined)
+    inline def setRestoreTimeUndefined: Self = StObject.set(x, "restoreTime", js.undefined)
     
-    @scala.inline
-    def setSourceRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "sourceRelationalDatabaseName", value.asInstanceOf[js.Any])
+    inline def setSourceRelationalDatabaseName(value: ResourceName): Self = StObject.set(x, "sourceRelationalDatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceRelationalDatabaseNameUndefined: Self = StObject.set(x, "sourceRelationalDatabaseName", js.undefined)
+    inline def setSourceRelationalDatabaseNameUndefined: Self = StObject.set(x, "sourceRelationalDatabaseName", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "tags", js.Array(value :_*))
     
-    @scala.inline
-    def setUseLatestRestorableTime(value: Boolean): Self = StObject.set(x, "useLatestRestorableTime", value.asInstanceOf[js.Any])
+    inline def setUseLatestRestorableTime(value: Boolean): Self = StObject.set(x, "useLatestRestorableTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseLatestRestorableTimeUndefined: Self = StObject.set(x, "useLatestRestorableTime", js.undefined)
+    inline def setUseLatestRestorableTimeUndefined: Self = StObject.set(x, "useLatestRestorableTime", js.undefined)
   }
 }

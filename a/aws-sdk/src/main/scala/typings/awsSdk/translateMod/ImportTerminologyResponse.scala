@@ -13,19 +13,15 @@ trait ImportTerminologyResponse extends StObject {
 }
 object ImportTerminologyResponse {
   
-  @scala.inline
-  def apply(): ImportTerminologyResponse = {
+  inline def apply(): ImportTerminologyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImportTerminologyResponse]
   }
   
-  @scala.inline
-  implicit class ImportTerminologyResponseMutableBuilder[Self <: ImportTerminologyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ImportTerminologyResponse](x: Self) {
     
-    @scala.inline
-    def setTerminologyProperties(value: TerminologyProperties): Self = StObject.set(x, "TerminologyProperties", value.asInstanceOf[js.Any])
+    inline def setTerminologyProperties(value: TerminologyProperties): Self = StObject.set(x, "TerminologyProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerminologyPropertiesUndefined: Self = StObject.set(x, "TerminologyProperties", js.undefined)
+    inline def setTerminologyPropertiesUndefined: Self = StObject.set(x, "TerminologyProperties", js.undefined)
   }
 }

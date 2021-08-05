@@ -51,6 +51,5 @@ object declarativeContent {
   @JSGlobal("chrome.declarativeContent.onPageChanged")
   @js.native
   def onPageChanged: PageChangedEvent = js.native
-  @scala.inline
-  def onPageChanged_=(x: PageChangedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onPageChanged")(x.asInstanceOf[js.Any])
+  inline def onPageChanged_=(x: PageChangedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onPageChanged")(x.asInstanceOf[js.Any])
 }

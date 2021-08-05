@@ -10,19 +10,15 @@ trait DataRepositoryTaskFailureDetails extends StObject {
 }
 object DataRepositoryTaskFailureDetails {
   
-  @scala.inline
-  def apply(): DataRepositoryTaskFailureDetails = {
+  inline def apply(): DataRepositoryTaskFailureDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataRepositoryTaskFailureDetails]
   }
   
-  @scala.inline
-  implicit class DataRepositoryTaskFailureDetailsMutableBuilder[Self <: DataRepositoryTaskFailureDetails] (val x: Self) extends AnyVal {
+  extension [Self <: DataRepositoryTaskFailureDetails](x: Self) {
     
-    @scala.inline
-    def setMessage(value: ErrorMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: ErrorMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "Message", js.undefined)
   }
 }

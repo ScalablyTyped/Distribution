@@ -21,6 +21,6 @@ object readStreamTokenizerMod {
       */
     def getFileInfo(): js.Promise[IFileInfo] = js.native
     
-    var streamReader: js.Any = js.native
+    /* private */ var streamReader: js.Any = js.native
   }
 }

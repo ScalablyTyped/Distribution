@@ -11,20 +11,17 @@ object jqueryAwesomeCursorStrings {
   sealed trait both
     extends StObject
        with flip
-  @scala.inline
-  def both: both = "both".asInstanceOf[both]
+  inline def both: both = "both".asInstanceOf[both]
   
   @js.native
   sealed trait horizontal
     extends StObject
        with flip
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
   sealed trait vertical
     extends StObject
        with flip
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  inline def vertical: vertical = "vertical".asInstanceOf[vertical]
 }

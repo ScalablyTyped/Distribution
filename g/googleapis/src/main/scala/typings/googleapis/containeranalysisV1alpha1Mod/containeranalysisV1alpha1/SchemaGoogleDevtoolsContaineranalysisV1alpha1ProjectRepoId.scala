@@ -22,25 +22,19 @@ trait SchemaGoogleDevtoolsContaineranalysisV1alpha1ProjectRepoId extends StObjec
 }
 object SchemaGoogleDevtoolsContaineranalysisV1alpha1ProjectRepoId {
   
-  @scala.inline
-  def apply(): SchemaGoogleDevtoolsContaineranalysisV1alpha1ProjectRepoId = {
+  inline def apply(): SchemaGoogleDevtoolsContaineranalysisV1alpha1ProjectRepoId = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleDevtoolsContaineranalysisV1alpha1ProjectRepoId]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleDevtoolsContaineranalysisV1alpha1ProjectRepoIdMutableBuilder[Self <: SchemaGoogleDevtoolsContaineranalysisV1alpha1ProjectRepoId] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleDevtoolsContaineranalysisV1alpha1ProjectRepoId](x: Self) {
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
-    @scala.inline
-    def setRepoName(value: String): Self = StObject.set(x, "repoName", value.asInstanceOf[js.Any])
+    inline def setRepoName(value: String): Self = StObject.set(x, "repoName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepoNameUndefined: Self = StObject.set(x, "repoName", js.undefined)
+    inline def setRepoNameUndefined: Self = StObject.set(x, "repoName", js.undefined)
   }
 }

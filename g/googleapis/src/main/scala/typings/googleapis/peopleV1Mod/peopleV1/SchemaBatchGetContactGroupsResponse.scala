@@ -16,22 +16,17 @@ trait SchemaBatchGetContactGroupsResponse extends StObject {
 }
 object SchemaBatchGetContactGroupsResponse {
   
-  @scala.inline
-  def apply(): SchemaBatchGetContactGroupsResponse = {
+  inline def apply(): SchemaBatchGetContactGroupsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaBatchGetContactGroupsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaBatchGetContactGroupsResponseMutableBuilder[Self <: SchemaBatchGetContactGroupsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaBatchGetContactGroupsResponse](x: Self) {
     
-    @scala.inline
-    def setResponses(value: js.Array[SchemaContactGroupResponse]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: js.Array[SchemaContactGroupResponse]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
+    inline def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
     
-    @scala.inline
-    def setResponsesVarargs(value: SchemaContactGroupResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
+    inline def setResponsesVarargs(value: SchemaContactGroupResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
   }
 }

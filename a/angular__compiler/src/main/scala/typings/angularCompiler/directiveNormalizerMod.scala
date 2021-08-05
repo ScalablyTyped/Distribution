@@ -24,31 +24,31 @@ object directiveNormalizerMod {
       _config: CompilerConfig
     ) = this()
     
-    var _config: js.Any = js.native
+    /* private */ var _config: js.Any = js.native
     
-    var _fetch: js.Any = js.native
+    /* private */ var _fetch: js.Any = js.native
     
-    var _htmlParser: js.Any = js.native
+    /* private */ var _htmlParser: js.Any = js.native
     
-    var _inlineStyles: js.Any = js.native
+    /* private */ var _inlineStyles: js.Any = js.native
     
-    var _loadMissingExternalStylesheets: js.Any = js.native
+    /* private */ var _loadMissingExternalStylesheets: js.Any = js.native
     
-    var _normalizeLoadedTemplateMetadata: js.Any = js.native
+    /* private */ var _normalizeLoadedTemplateMetadata: js.Any = js.native
     
-    var _normalizeStylesheet: js.Any = js.native
+    /* private */ var _normalizeStylesheet: js.Any = js.native
     
-    var _normalizeTemplateMetadata: js.Any = js.native
+    /* private */ var _normalizeTemplateMetadata: js.Any = js.native
     
-    var _preParseTemplate: js.Any = js.native
+    /* private */ var _preParseTemplate: js.Any = js.native
     
-    var _preparseLoadedTemplate: js.Any = js.native
+    /* private */ var _preparseLoadedTemplate: js.Any = js.native
     
-    var _resourceLoader: js.Any = js.native
+    /* private */ var _resourceLoader: js.Any = js.native
     
-    var _resourceLoaderCache: js.Any = js.native
+    /* private */ var _resourceLoaderCache: js.Any = js.native
     
-    var _urlResolver: js.Any = js.native
+    /* private */ var _urlResolver: js.Any = js.native
     
     def clearCache(): Unit = js.native
     
@@ -83,8 +83,7 @@ object directiveNormalizerMod {
   }
   object PrenormalizedTemplateMetadata {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       animations: js.Array[js.Any],
       componentType: js.Any,
       moduleUrl: String,
@@ -96,65 +95,45 @@ object directiveNormalizerMod {
       __obj.asInstanceOf[PrenormalizedTemplateMetadata]
     }
     
-    @scala.inline
-    implicit class PrenormalizedTemplateMetadataMutableBuilder[Self <: PrenormalizedTemplateMetadata] (val x: Self) extends AnyVal {
+    extension [Self <: PrenormalizedTemplateMetadata](x: Self) {
       
-      @scala.inline
-      def setAnimations(value: js.Array[js.Any]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
+      inline def setAnimations(value: js.Array[js.Any]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimationsVarargs(value: js.Any*): Self = StObject.set(x, "animations", js.Array(value :_*))
+      inline def setAnimationsVarargs(value: js.Any*): Self = StObject.set(x, "animations", js.Array(value :_*))
       
-      @scala.inline
-      def setComponentType(value: js.Any): Self = StObject.set(x, "componentType", value.asInstanceOf[js.Any])
+      inline def setComponentType(value: js.Any): Self = StObject.set(x, "componentType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncapsulation(value: ViewEncapsulation): Self = StObject.set(x, "encapsulation", value.asInstanceOf[js.Any])
+      inline def setEncapsulation(value: ViewEncapsulation): Self = StObject.set(x, "encapsulation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncapsulationNull: Self = StObject.set(x, "encapsulation", null)
+      inline def setEncapsulationNull: Self = StObject.set(x, "encapsulation", null)
       
-      @scala.inline
-      def setInterpolation(value: js.Tuple2[String, String]): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
+      inline def setInterpolation(value: js.Tuple2[String, String]): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInterpolationNull: Self = StObject.set(x, "interpolation", null)
+      inline def setInterpolationNull: Self = StObject.set(x, "interpolation", null)
       
-      @scala.inline
-      def setModuleUrl(value: String): Self = StObject.set(x, "moduleUrl", value.asInstanceOf[js.Any])
+      inline def setModuleUrl(value: String): Self = StObject.set(x, "moduleUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNgModuleType(value: js.Any): Self = StObject.set(x, "ngModuleType", value.asInstanceOf[js.Any])
+      inline def setNgModuleType(value: js.Any): Self = StObject.set(x, "ngModuleType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveWhitespaces(value: Boolean): Self = StObject.set(x, "preserveWhitespaces", value.asInstanceOf[js.Any])
+      inline def setPreserveWhitespaces(value: Boolean): Self = StObject.set(x, "preserveWhitespaces", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveWhitespacesNull: Self = StObject.set(x, "preserveWhitespaces", null)
+      inline def setPreserveWhitespacesNull: Self = StObject.set(x, "preserveWhitespaces", null)
       
-      @scala.inline
-      def setStyleUrls(value: js.Array[String]): Self = StObject.set(x, "styleUrls", value.asInstanceOf[js.Any])
+      inline def setStyleUrls(value: js.Array[String]): Self = StObject.set(x, "styleUrls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUrlsVarargs(value: String*): Self = StObject.set(x, "styleUrls", js.Array(value :_*))
+      inline def setStyleUrlsVarargs(value: String*): Self = StObject.set(x, "styleUrls", js.Array(value :_*))
       
-      @scala.inline
-      def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value :_*))
+      inline def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value :_*))
       
-      @scala.inline
-      def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+      inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateNull: Self = StObject.set(x, "template", null)
+      inline def setTemplateNull: Self = StObject.set(x, "template", null)
       
-      @scala.inline
-      def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
+      inline def setTemplateUrl(value: String): Self = StObject.set(x, "templateUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTemplateUrlNull: Self = StObject.set(x, "templateUrl", null)
+      inline def setTemplateUrlNull: Self = StObject.set(x, "templateUrl", null)
     }
   }
 }

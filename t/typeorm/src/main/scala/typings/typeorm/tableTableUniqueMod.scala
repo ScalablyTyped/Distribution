@@ -33,7 +33,6 @@ object tableTableUniqueMod {
     /**
       * Creates unique from the unique metadata object.
       */
-    @scala.inline
-    def create(uniqueMetadata: UniqueMetadata): TableUnique = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(uniqueMetadata.asInstanceOf[js.Any]).asInstanceOf[TableUnique]
+    inline def create(uniqueMetadata: UniqueMetadata): TableUnique = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(uniqueMetadata.asInstanceOf[js.Any]).asInstanceOf[TableUnique]
   }
 }

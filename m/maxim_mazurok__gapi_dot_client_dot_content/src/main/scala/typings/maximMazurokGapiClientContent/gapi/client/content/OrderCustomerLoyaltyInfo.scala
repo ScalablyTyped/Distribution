@@ -14,25 +14,19 @@ trait OrderCustomerLoyaltyInfo extends StObject {
 }
 object OrderCustomerLoyaltyInfo {
   
-  @scala.inline
-  def apply(): OrderCustomerLoyaltyInfo = {
+  inline def apply(): OrderCustomerLoyaltyInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OrderCustomerLoyaltyInfo]
   }
   
-  @scala.inline
-  implicit class OrderCustomerLoyaltyInfoMutableBuilder[Self <: OrderCustomerLoyaltyInfo] (val x: Self) extends AnyVal {
+  extension [Self <: OrderCustomerLoyaltyInfo](x: Self) {
     
-    @scala.inline
-    def setLoyaltyNumber(value: String): Self = StObject.set(x, "loyaltyNumber", value.asInstanceOf[js.Any])
+    inline def setLoyaltyNumber(value: String): Self = StObject.set(x, "loyaltyNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoyaltyNumberUndefined: Self = StObject.set(x, "loyaltyNumber", js.undefined)
+    inline def setLoyaltyNumberUndefined: Self = StObject.set(x, "loyaltyNumber", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

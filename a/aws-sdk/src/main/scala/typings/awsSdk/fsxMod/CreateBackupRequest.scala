@@ -23,31 +23,23 @@ trait CreateBackupRequest extends StObject {
 }
 object CreateBackupRequest {
   
-  @scala.inline
-  def apply(FileSystemId: FileSystemId): CreateBackupRequest = {
+  inline def apply(FileSystemId: FileSystemId): CreateBackupRequest = {
     val __obj = js.Dynamic.literal(FileSystemId = FileSystemId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateBackupRequest]
   }
   
-  @scala.inline
-  implicit class CreateBackupRequestMutableBuilder[Self <: CreateBackupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateBackupRequest](x: Self) {
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
+    inline def setClientRequestTokenUndefined: Self = StObject.set(x, "ClientRequestToken", js.undefined)
     
-    @scala.inline
-    def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
+    inline def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

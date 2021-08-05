@@ -10,16 +10,13 @@ trait TranslateYTransform extends StObject {
 }
 object TranslateYTransform {
   
-  @scala.inline
-  def apply(translateY: Double): TranslateYTransform = {
+  inline def apply(translateY: Double): TranslateYTransform = {
     val __obj = js.Dynamic.literal(translateY = translateY.asInstanceOf[js.Any])
     __obj.asInstanceOf[TranslateYTransform]
   }
   
-  @scala.inline
-  implicit class TranslateYTransformMutableBuilder[Self <: TranslateYTransform] (val x: Self) extends AnyVal {
+  extension [Self <: TranslateYTransform](x: Self) {
     
-    @scala.inline
-    def setTranslateY(value: Double): Self = StObject.set(x, "translateY", value.asInstanceOf[js.Any])
+    inline def setTranslateY(value: Double): Self = StObject.set(x, "translateY", value.asInstanceOf[js.Any])
   }
 }

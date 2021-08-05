@@ -18,7 +18,6 @@ object shaderLibUtilsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def addVerticeShaderLib(geometry: Geometry, shader: Shader): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addVerticeShaderLib")(geometry.asInstanceOf[js.Any], shader.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addVerticeShaderLib(geometry: Geometry, shader: Shader): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addVerticeShaderLib")(geometry.asInstanceOf[js.Any], shader.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

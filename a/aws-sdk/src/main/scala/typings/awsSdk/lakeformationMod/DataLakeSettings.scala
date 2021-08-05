@@ -28,49 +28,35 @@ trait DataLakeSettings extends StObject {
 }
 object DataLakeSettings {
   
-  @scala.inline
-  def apply(): DataLakeSettings = {
+  inline def apply(): DataLakeSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataLakeSettings]
   }
   
-  @scala.inline
-  implicit class DataLakeSettingsMutableBuilder[Self <: DataLakeSettings] (val x: Self) extends AnyVal {
+  extension [Self <: DataLakeSettings](x: Self) {
     
-    @scala.inline
-    def setCreateDatabaseDefaultPermissions(value: PrincipalPermissionsList): Self = StObject.set(x, "CreateDatabaseDefaultPermissions", value.asInstanceOf[js.Any])
+    inline def setCreateDatabaseDefaultPermissions(value: PrincipalPermissionsList): Self = StObject.set(x, "CreateDatabaseDefaultPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateDatabaseDefaultPermissionsUndefined: Self = StObject.set(x, "CreateDatabaseDefaultPermissions", js.undefined)
+    inline def setCreateDatabaseDefaultPermissionsUndefined: Self = StObject.set(x, "CreateDatabaseDefaultPermissions", js.undefined)
     
-    @scala.inline
-    def setCreateDatabaseDefaultPermissionsVarargs(value: PrincipalPermissions*): Self = StObject.set(x, "CreateDatabaseDefaultPermissions", js.Array(value :_*))
+    inline def setCreateDatabaseDefaultPermissionsVarargs(value: PrincipalPermissions*): Self = StObject.set(x, "CreateDatabaseDefaultPermissions", js.Array(value :_*))
     
-    @scala.inline
-    def setCreateTableDefaultPermissions(value: PrincipalPermissionsList): Self = StObject.set(x, "CreateTableDefaultPermissions", value.asInstanceOf[js.Any])
+    inline def setCreateTableDefaultPermissions(value: PrincipalPermissionsList): Self = StObject.set(x, "CreateTableDefaultPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTableDefaultPermissionsUndefined: Self = StObject.set(x, "CreateTableDefaultPermissions", js.undefined)
+    inline def setCreateTableDefaultPermissionsUndefined: Self = StObject.set(x, "CreateTableDefaultPermissions", js.undefined)
     
-    @scala.inline
-    def setCreateTableDefaultPermissionsVarargs(value: PrincipalPermissions*): Self = StObject.set(x, "CreateTableDefaultPermissions", js.Array(value :_*))
+    inline def setCreateTableDefaultPermissionsVarargs(value: PrincipalPermissions*): Self = StObject.set(x, "CreateTableDefaultPermissions", js.Array(value :_*))
     
-    @scala.inline
-    def setDataLakeAdmins(value: DataLakePrincipalList): Self = StObject.set(x, "DataLakeAdmins", value.asInstanceOf[js.Any])
+    inline def setDataLakeAdmins(value: DataLakePrincipalList): Self = StObject.set(x, "DataLakeAdmins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataLakeAdminsUndefined: Self = StObject.set(x, "DataLakeAdmins", js.undefined)
+    inline def setDataLakeAdminsUndefined: Self = StObject.set(x, "DataLakeAdmins", js.undefined)
     
-    @scala.inline
-    def setDataLakeAdminsVarargs(value: DataLakePrincipal*): Self = StObject.set(x, "DataLakeAdmins", js.Array(value :_*))
+    inline def setDataLakeAdminsVarargs(value: DataLakePrincipal*): Self = StObject.set(x, "DataLakeAdmins", js.Array(value :_*))
     
-    @scala.inline
-    def setTrustedResourceOwners(value: TrustedResourceOwners): Self = StObject.set(x, "TrustedResourceOwners", value.asInstanceOf[js.Any])
+    inline def setTrustedResourceOwners(value: TrustedResourceOwners): Self = StObject.set(x, "TrustedResourceOwners", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrustedResourceOwnersUndefined: Self = StObject.set(x, "TrustedResourceOwners", js.undefined)
+    inline def setTrustedResourceOwnersUndefined: Self = StObject.set(x, "TrustedResourceOwners", js.undefined)
     
-    @scala.inline
-    def setTrustedResourceOwnersVarargs(value: CatalogIdString*): Self = StObject.set(x, "TrustedResourceOwners", js.Array(value :_*))
+    inline def setTrustedResourceOwnersVarargs(value: CatalogIdString*): Self = StObject.set(x, "TrustedResourceOwners", js.Array(value :_*))
   }
 }

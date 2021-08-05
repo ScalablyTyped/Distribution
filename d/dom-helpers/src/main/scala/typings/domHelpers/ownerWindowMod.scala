@@ -12,8 +12,6 @@ object ownerWindowMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Window]
-  @scala.inline
-  def default(node: Element): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[Window]
+  inline def default(): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Window]
+  inline def default(node: Element): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[Window]
 }

@@ -14,22 +14,17 @@ trait SeekRequest extends StObject {
 }
 object SeekRequest {
   
-  @scala.inline
-  def apply(currentTime: Double, customData: js.Object, resumeState: ResumeState): SeekRequest = {
+  inline def apply(currentTime: Double, customData: js.Object, resumeState: ResumeState): SeekRequest = {
     val __obj = js.Dynamic.literal(currentTime = currentTime.asInstanceOf[js.Any], customData = customData.asInstanceOf[js.Any], resumeState = resumeState.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeekRequest]
   }
   
-  @scala.inline
-  implicit class SeekRequestMutableBuilder[Self <: SeekRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SeekRequest](x: Self) {
     
-    @scala.inline
-    def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
+    inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
+    inline def setCustomData(value: js.Object): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResumeState(value: ResumeState): Self = StObject.set(x, "resumeState", value.asInstanceOf[js.Any])
+    inline def setResumeState(value: ResumeState): Self = StObject.set(x, "resumeState", value.asInstanceOf[js.Any])
   }
 }

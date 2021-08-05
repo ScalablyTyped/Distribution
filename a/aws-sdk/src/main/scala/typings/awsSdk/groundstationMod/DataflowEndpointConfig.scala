@@ -18,22 +18,17 @@ trait DataflowEndpointConfig extends StObject {
 }
 object DataflowEndpointConfig {
   
-  @scala.inline
-  def apply(dataflowEndpointName: String): DataflowEndpointConfig = {
+  inline def apply(dataflowEndpointName: String): DataflowEndpointConfig = {
     val __obj = js.Dynamic.literal(dataflowEndpointName = dataflowEndpointName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataflowEndpointConfig]
   }
   
-  @scala.inline
-  implicit class DataflowEndpointConfigMutableBuilder[Self <: DataflowEndpointConfig] (val x: Self) extends AnyVal {
+  extension [Self <: DataflowEndpointConfig](x: Self) {
     
-    @scala.inline
-    def setDataflowEndpointName(value: String): Self = StObject.set(x, "dataflowEndpointName", value.asInstanceOf[js.Any])
+    inline def setDataflowEndpointName(value: String): Self = StObject.set(x, "dataflowEndpointName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataflowEndpointRegion(value: String): Self = StObject.set(x, "dataflowEndpointRegion", value.asInstanceOf[js.Any])
+    inline def setDataflowEndpointRegion(value: String): Self = StObject.set(x, "dataflowEndpointRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataflowEndpointRegionUndefined: Self = StObject.set(x, "dataflowEndpointRegion", js.undefined)
+    inline def setDataflowEndpointRegionUndefined: Self = StObject.set(x, "dataflowEndpointRegion", js.undefined)
   }
 }

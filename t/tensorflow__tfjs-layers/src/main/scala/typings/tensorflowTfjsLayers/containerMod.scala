@@ -32,15 +32,15 @@ object containerMod {
       * @param layers An array of Layers in the model.
       * @returns Map of Node Keys to index order within the layer.
       */
-    var buildNodeConversionMap: js.Any = js.native
+    /* private */ var buildNodeConversionMap: js.Any = js.native
     
     var containerNodes: Set[String] = js.native
     
-    var feedInputNames: js.Array[String] = js.native
+    /* protected */ var feedInputNames: js.Array[String] = js.native
     
     var feedInputShapes: js.Array[Shape] = js.native
     
-    var feedOutputNames: js.Array[String] = js.native
+    /* protected */ var feedOutputNames: js.Array[String] = js.native
     
     /**
       * Retrieves a layer based on either its name (unique) or index.
@@ -78,9 +78,9 @@ object containerMod {
     
     var internalContainerRefs: js.Array[Container] = js.native
     
-    var internalInputShapes: js.Array[Shape] = js.native
+    /* protected */ var internalInputShapes: js.Array[Shape] = js.native
     
-    var internalOutputShapes: js.Array[Shape] = js.native
+    /* protected */ var internalOutputShapes: js.Array[Shape] = js.native
     
     var layers: js.Array[Layer] = js.native
     
@@ -171,14 +171,10 @@ object containerMod {
       * @throws ValueError: In case of improperly formatted config dict.
       */
     /** @nocollapse */
-    @scala.inline
-    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
-    @scala.inline
-    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict, customObjects: Unit, fastWeightInit: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any], fastWeightInit.asInstanceOf[js.Any])).asInstanceOf[T]
-    @scala.inline
-    def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict, customObjects: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[T]
-    @scala.inline
-    def fromConfig[T /* <: Serializable */](
+    inline def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict, customObjects: Unit, fastWeightInit: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any], fastWeightInit.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def fromConfig[T /* <: Serializable */](cls: SerializableConstructor[T], config: ConfigDict, customObjects: ConfigDict): T = (^.asInstanceOf[js.Dynamic].applyDynamic("fromConfig")(cls.asInstanceOf[js.Any], config.asInstanceOf[js.Any], customObjects.asInstanceOf[js.Any])).asInstanceOf[T]
+    inline def fromConfig[T /* <: Serializable */](
       cls: SerializableConstructor[T],
       config: ConfigDict,
       customObjects: ConfigDict,
@@ -196,8 +192,7 @@ object containerMod {
   }
   object ContainerArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       inputs: SymbolicTensor | js.Array[SymbolicTensor],
       outputs: SymbolicTensor | js.Array[SymbolicTensor]
     ): ContainerArgs = {
@@ -205,26 +200,19 @@ object containerMod {
       __obj.asInstanceOf[ContainerArgs]
     }
     
-    @scala.inline
-    implicit class ContainerArgsMutableBuilder[Self <: ContainerArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ContainerArgs](x: Self) {
       
-      @scala.inline
-      def setInputs(value: SymbolicTensor | js.Array[SymbolicTensor]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+      inline def setInputs(value: SymbolicTensor | js.Array[SymbolicTensor]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputsVarargs(value: SymbolicTensor*): Self = StObject.set(x, "inputs", js.Array(value :_*))
+      inline def setInputsVarargs(value: SymbolicTensor*): Self = StObject.set(x, "inputs", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOutputs(value: SymbolicTensor | js.Array[SymbolicTensor]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+      inline def setOutputs(value: SymbolicTensor | js.Array[SymbolicTensor]): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputsVarargs(value: SymbolicTensor*): Self = StObject.set(x, "outputs", js.Array(value :_*))
+      inline def setOutputsVarargs(value: SymbolicTensor*): Self = StObject.set(x, "outputs", js.Array(value :_*))
     }
   }
 }

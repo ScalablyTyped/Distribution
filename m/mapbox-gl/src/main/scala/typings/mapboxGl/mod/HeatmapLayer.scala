@@ -18,29 +18,22 @@ trait HeatmapLayer
 }
 object HeatmapLayer {
   
-  @scala.inline
-  def apply(id: String): HeatmapLayer = {
+  inline def apply(id: String): HeatmapLayer = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("heatmap")
     __obj.asInstanceOf[HeatmapLayer]
   }
   
-  @scala.inline
-  implicit class HeatmapLayerMutableBuilder[Self <: HeatmapLayer] (val x: Self) extends AnyVal {
+  extension [Self <: HeatmapLayer](x: Self) {
     
-    @scala.inline
-    def setLayout(value: HeatmapLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+    inline def setLayout(value: HeatmapLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+    inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
-    @scala.inline
-    def setPaint(value: HeatmapPaint): Self = StObject.set(x, "paint", value.asInstanceOf[js.Any])
+    inline def setPaint(value: HeatmapPaint): Self = StObject.set(x, "paint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaintUndefined: Self = StObject.set(x, "paint", js.undefined)
+    inline def setPaintUndefined: Self = StObject.set(x, "paint", js.undefined)
     
-    @scala.inline
-    def setType(value: heatmap): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: heatmap): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

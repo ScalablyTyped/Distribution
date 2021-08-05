@@ -18,25 +18,19 @@ trait CreateVpcEndpointServiceConfigurationResult extends StObject {
 }
 object CreateVpcEndpointServiceConfigurationResult {
   
-  @scala.inline
-  def apply(): CreateVpcEndpointServiceConfigurationResult = {
+  inline def apply(): CreateVpcEndpointServiceConfigurationResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateVpcEndpointServiceConfigurationResult]
   }
   
-  @scala.inline
-  implicit class CreateVpcEndpointServiceConfigurationResultMutableBuilder[Self <: CreateVpcEndpointServiceConfigurationResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateVpcEndpointServiceConfigurationResult](x: Self) {
     
-    @scala.inline
-    def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
-    @scala.inline
-    def setServiceConfiguration(value: ServiceConfiguration): Self = StObject.set(x, "ServiceConfiguration", value.asInstanceOf[js.Any])
+    inline def setServiceConfiguration(value: ServiceConfiguration): Self = StObject.set(x, "ServiceConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceConfigurationUndefined: Self = StObject.set(x, "ServiceConfiguration", js.undefined)
+    inline def setServiceConfigurationUndefined: Self = StObject.set(x, "ServiceConfiguration", js.undefined)
   }
 }

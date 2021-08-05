@@ -27,31 +27,23 @@ trait SchemaCategory extends StObject {
 }
 object SchemaCategory {
   
-  @scala.inline
-  def apply(): SchemaCategory = {
+  inline def apply(): SchemaCategory = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCategory]
   }
   
-  @scala.inline
-  implicit class SchemaCategoryMutableBuilder[Self <: SchemaCategory] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCategory](x: Self) {
     
-    @scala.inline
-    def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+    inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+    inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
     
-    @scala.inline
-    def setExperiencePoints(value: String): Self = StObject.set(x, "experiencePoints", value.asInstanceOf[js.Any])
+    inline def setExperiencePoints(value: String): Self = StObject.set(x, "experiencePoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExperiencePointsUndefined: Self = StObject.set(x, "experiencePoints", js.undefined)
+    inline def setExperiencePointsUndefined: Self = StObject.set(x, "experiencePoints", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

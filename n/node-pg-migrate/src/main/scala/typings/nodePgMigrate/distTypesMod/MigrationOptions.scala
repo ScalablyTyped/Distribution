@@ -22,28 +22,21 @@ trait MigrationOptions extends StObject {
 }
 object MigrationOptions {
   
-  @scala.inline
-  def apply(literal: /* v */ Name => String, logger: Logger, schemalize: /* v */ Name => String): MigrationOptions = {
+  inline def apply(literal: /* v */ Name => String, logger: Logger, schemalize: /* v */ Name => String): MigrationOptions = {
     val __obj = js.Dynamic.literal(literal = js.Any.fromFunction1(literal), logger = logger.asInstanceOf[js.Any], schemalize = js.Any.fromFunction1(schemalize))
     __obj.asInstanceOf[MigrationOptions]
   }
   
-  @scala.inline
-  implicit class MigrationOptionsMutableBuilder[Self <: MigrationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: MigrationOptions](x: Self) {
     
-    @scala.inline
-    def setLiteral(value: /* v */ Name => String): Self = StObject.set(x, "literal", js.Any.fromFunction1(value))
+    inline def setLiteral(value: /* v */ Name => String): Self = StObject.set(x, "literal", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+    inline def setLogger(value: Logger): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemalize(value: /* v */ Name => String): Self = StObject.set(x, "schemalize", js.Any.fromFunction1(value))
+    inline def setSchemalize(value: /* v */ Name => String): Self = StObject.set(x, "schemalize", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTypeShorthands(value: ColumnDefinitions): Self = StObject.set(x, "typeShorthands", value.asInstanceOf[js.Any])
+    inline def setTypeShorthands(value: ColumnDefinitions): Self = StObject.set(x, "typeShorthands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeShorthandsUndefined: Self = StObject.set(x, "typeShorthands", js.undefined)
+    inline def setTypeShorthandsUndefined: Self = StObject.set(x, "typeShorthands", js.undefined)
   }
 }

@@ -21,8 +21,7 @@ object mod {
   @js.native
   val NotificationsProvider: FC[AnimationDuration] = js.native
   
-  @scala.inline
-  def useNotification(): NotificationsContextType = ^.asInstanceOf[js.Dynamic].applyDynamic("useNotification")().asInstanceOf[NotificationsContextType]
+  inline def useNotification(): NotificationsContextType = ^.asInstanceOf[js.Dynamic].applyDynamic("useNotification")().asInstanceOf[NotificationsContextType]
   
   trait NotificationPayload extends StObject
   

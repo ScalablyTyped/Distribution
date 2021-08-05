@@ -11,16 +11,13 @@ trait IAuthenticationResultServerFinal extends StObject {
 }
 object IAuthenticationResultServerFinal {
   
-  @scala.inline
-  def apply(ServerConnection: MFServerConnection): IAuthenticationResultServerFinal = {
+  inline def apply(ServerConnection: MFServerConnection): IAuthenticationResultServerFinal = {
     val __obj = js.Dynamic.literal(ServerConnection = ServerConnection.asInstanceOf[js.Any])
     __obj.asInstanceOf[IAuthenticationResultServerFinal]
   }
   
-  @scala.inline
-  implicit class IAuthenticationResultServerFinalMutableBuilder[Self <: IAuthenticationResultServerFinal] (val x: Self) extends AnyVal {
+  extension [Self <: IAuthenticationResultServerFinal](x: Self) {
     
-    @scala.inline
-    def setServerConnection(value: MFServerConnection): Self = StObject.set(x, "ServerConnection", value.asInstanceOf[js.Any])
+    inline def setServerConnection(value: MFServerConnection): Self = StObject.set(x, "ServerConnection", value.asInstanceOf[js.Any])
   }
 }

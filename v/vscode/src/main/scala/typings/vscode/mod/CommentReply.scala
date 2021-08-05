@@ -18,19 +18,15 @@ trait CommentReply extends StObject {
 }
 object CommentReply {
   
-  @scala.inline
-  def apply(text: String, thread: CommentThread): CommentReply = {
+  inline def apply(text: String, thread: CommentThread): CommentReply = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], thread = thread.asInstanceOf[js.Any])
     __obj.asInstanceOf[CommentReply]
   }
   
-  @scala.inline
-  implicit class CommentReplyMutableBuilder[Self <: CommentReply] (val x: Self) extends AnyVal {
+  extension [Self <: CommentReply](x: Self) {
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThread(value: CommentThread): Self = StObject.set(x, "thread", value.asInstanceOf[js.Any])
+    inline def setThread(value: CommentThread): Self = StObject.set(x, "thread", value.asInstanceOf[js.Any])
   }
 }

@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait IEventTarget extends StObject {
   
-  @JSName("MSHTML.IEventTarget_typekey")
+  /* private */ @JSName("MSHTML.IEventTarget_typekey")
   var MSHTMLDotIEventTarget_typekey: IEventTarget
   
   def addEventListener(`type`: String, listener: js.Any, useCapture: Boolean): Unit
@@ -17,8 +17,7 @@ trait IEventTarget extends StObject {
 }
 object IEventTarget {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotIEventTarget_typekey: IEventTarget,
     addEventListener: (String, js.Any, Boolean) => Unit,
     dispatchEvent: IDOMEvent => Boolean,
@@ -29,19 +28,14 @@ object IEventTarget {
     __obj.asInstanceOf[IEventTarget]
   }
   
-  @scala.inline
-  implicit class IEventTargetMutableBuilder[Self <: IEventTarget] (val x: Self) extends AnyVal {
+  extension [Self <: IEventTarget](x: Self) {
     
-    @scala.inline
-    def setAddEventListener(value: (String, js.Any, Boolean) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction3(value))
+    inline def setAddEventListener(value: (String, js.Any, Boolean) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDispatchEvent(value: IDOMEvent => Boolean): Self = StObject.set(x, "dispatchEvent", js.Any.fromFunction1(value))
+    inline def setDispatchEvent(value: IDOMEvent => Boolean): Self = StObject.set(x, "dispatchEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMSHTMLDotIEventTarget_typekey(value: IEventTarget): Self = StObject.set(x, "MSHTML.IEventTarget_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotIEventTarget_typekey(value: IEventTarget): Self = StObject.set(x, "MSHTML.IEventTarget_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveEventListener(value: (String, js.Any, Boolean) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction3(value))
+    inline def setRemoveEventListener(value: (String, js.Any, Boolean) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction3(value))
   }
 }

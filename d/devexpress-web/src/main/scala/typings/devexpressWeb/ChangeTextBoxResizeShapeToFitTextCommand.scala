@@ -24,19 +24,15 @@ trait ChangeTextBoxResizeShapeToFitTextCommand
 }
 object ChangeTextBoxResizeShapeToFitTextCommand {
   
-  @scala.inline
-  def apply(execute: Boolean => Boolean, getState: () => CommandState[Boolean]): ChangeTextBoxResizeShapeToFitTextCommand = {
+  inline def apply(execute: Boolean => Boolean, getState: () => CommandState[Boolean]): ChangeTextBoxResizeShapeToFitTextCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[ChangeTextBoxResizeShapeToFitTextCommand]
   }
   
-  @scala.inline
-  implicit class ChangeTextBoxResizeShapeToFitTextCommandMutableBuilder[Self <: ChangeTextBoxResizeShapeToFitTextCommand] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeTextBoxResizeShapeToFitTextCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: Boolean => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: Boolean => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetState(value: () => CommandState[Boolean]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => CommandState[Boolean]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
   }
 }

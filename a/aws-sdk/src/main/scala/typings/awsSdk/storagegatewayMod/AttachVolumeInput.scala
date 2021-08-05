@@ -33,34 +33,25 @@ trait AttachVolumeInput extends StObject {
 }
 object AttachVolumeInput {
   
-  @scala.inline
-  def apply(GatewayARN: GatewayARN, NetworkInterfaceId: NetworkInterfaceId, VolumeARN: VolumeARN): AttachVolumeInput = {
+  inline def apply(GatewayARN: GatewayARN, NetworkInterfaceId: NetworkInterfaceId, VolumeARN: VolumeARN): AttachVolumeInput = {
     val __obj = js.Dynamic.literal(GatewayARN = GatewayARN.asInstanceOf[js.Any], NetworkInterfaceId = NetworkInterfaceId.asInstanceOf[js.Any], VolumeARN = VolumeARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[AttachVolumeInput]
   }
   
-  @scala.inline
-  implicit class AttachVolumeInputMutableBuilder[Self <: AttachVolumeInput] (val x: Self) extends AnyVal {
+  extension [Self <: AttachVolumeInput](x: Self) {
     
-    @scala.inline
-    def setDiskId(value: DiskId): Self = StObject.set(x, "DiskId", value.asInstanceOf[js.Any])
+    inline def setDiskId(value: DiskId): Self = StObject.set(x, "DiskId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskIdUndefined: Self = StObject.set(x, "DiskId", js.undefined)
+    inline def setDiskIdUndefined: Self = StObject.set(x, "DiskId", js.undefined)
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkInterfaceId(value: NetworkInterfaceId): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
+    inline def setNetworkInterfaceId(value: NetworkInterfaceId): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetName(value: TargetName): Self = StObject.set(x, "TargetName", value.asInstanceOf[js.Any])
+    inline def setTargetName(value: TargetName): Self = StObject.set(x, "TargetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetNameUndefined: Self = StObject.set(x, "TargetName", js.undefined)
+    inline def setTargetNameUndefined: Self = StObject.set(x, "TargetName", js.undefined)
     
-    @scala.inline
-    def setVolumeARN(value: VolumeARN): Self = StObject.set(x, "VolumeARN", value.asInstanceOf[js.Any])
+    inline def setVolumeARN(value: VolumeARN): Self = StObject.set(x, "VolumeARN", value.asInstanceOf[js.Any])
   }
 }

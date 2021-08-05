@@ -16,19 +16,15 @@ trait SchemaGooglePrivacyDlpV2DatastoreKey extends StObject {
 }
 object SchemaGooglePrivacyDlpV2DatastoreKey {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2DatastoreKey = {
+  inline def apply(): SchemaGooglePrivacyDlpV2DatastoreKey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2DatastoreKey]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2DatastoreKeyMutableBuilder[Self <: SchemaGooglePrivacyDlpV2DatastoreKey] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2DatastoreKey](x: Self) {
     
-    @scala.inline
-    def setEntityKey(value: SchemaGooglePrivacyDlpV2Key): Self = StObject.set(x, "entityKey", value.asInstanceOf[js.Any])
+    inline def setEntityKey(value: SchemaGooglePrivacyDlpV2Key): Self = StObject.set(x, "entityKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityKeyUndefined: Self = StObject.set(x, "entityKey", js.undefined)
+    inline def setEntityKeyUndefined: Self = StObject.set(x, "entityKey", js.undefined)
   }
 }

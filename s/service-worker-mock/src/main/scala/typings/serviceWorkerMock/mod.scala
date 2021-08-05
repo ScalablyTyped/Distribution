@@ -21,8 +21,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): WorkerGlobalScope = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[WorkerGlobalScope]
+  inline def apply(): WorkerGlobalScope = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[WorkerGlobalScope]
   
   @JSImport("service-worker-mock", JSImport.Namespace)
   @js.native
@@ -40,33 +39,25 @@ object mod {
     /**
       * Used to generate a snapshot of the service worker internals.
       */
-    @scala.inline
-    def snapshot(): Snapshot = js.Dynamic.global.applyDynamic("snapshot")().asInstanceOf[Snapshot]
+    inline def snapshot(): Snapshot = js.Dynamic.global.applyDynamic("snapshot")().asInstanceOf[Snapshot]
     
     /**
       * Used to trigger active listeners.
       */
-    @scala.inline
-    def trigger(
+    inline def trigger(
       `type`: /* keyof / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceWorkerGlobalScopeEventMap * / any */ String
     ): js.Promise[Unit] = js.Dynamic.global.applyDynamic("trigger")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
     
-    @scala.inline
-    def trigger_fetch(name: fetch, request: String): js.Promise[Unit] = (js.Dynamic.global.applyDynamic("trigger")(name.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
-    @scala.inline
-    def trigger_fetch(name: fetch, request: Request): js.Promise[Unit] = (js.Dynamic.global.applyDynamic("trigger")(name.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def trigger_fetch(name: fetch, request: String): js.Promise[Unit] = (js.Dynamic.global.applyDynamic("trigger")(name.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def trigger_fetch(name: fetch, request: Request): js.Promise[Unit] = (js.Dynamic.global.applyDynamic("trigger")(name.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    @scala.inline
-    def trigger_message(name: message, args: PartialMessageEventany): js.Promise[Unit] = (js.Dynamic.global.applyDynamic("trigger")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def trigger_message(name: message, args: PartialMessageEventany): js.Promise[Unit] = (js.Dynamic.global.applyDynamic("trigger")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    @scala.inline
-    def trigger_notificationclick(name: notificationclick, args: Notification): js.Promise[Unit] = (js.Dynamic.global.applyDynamic("trigger")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def trigger_notificationclick(name: notificationclick, args: Notification): js.Promise[Unit] = (js.Dynamic.global.applyDynamic("trigger")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    @scala.inline
-    def trigger_notificationclose(name: notificationclose, args: Notification): js.Promise[Unit] = (js.Dynamic.global.applyDynamic("trigger")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    inline def trigger_notificationclose(name: notificationclose, args: Notification): js.Promise[Unit] = (js.Dynamic.global.applyDynamic("trigger")(name.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
     
-    @scala.inline
-    def trigger_push(
+    inline def trigger_push(
       name: push,
       args: Partial[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PushEvent */ js.Any
@@ -106,23 +97,18 @@ object mod {
     }
     object WorkerGlobalScope {
       
-      @scala.inline
-      def apply(listeners: Listeners, snapshot: () => Snapshot, trigger: FnCall): WorkerGlobalScope = {
+      inline def apply(listeners: Listeners, snapshot: () => Snapshot, trigger: FnCall): WorkerGlobalScope = {
         val __obj = js.Dynamic.literal(listeners = listeners.asInstanceOf[js.Any], snapshot = js.Any.fromFunction0(snapshot), trigger = trigger.asInstanceOf[js.Any])
         __obj.asInstanceOf[WorkerGlobalScope]
       }
       
-      @scala.inline
-      implicit class WorkerGlobalScopeMutableBuilder[Self <: WorkerGlobalScope] (val x: Self) extends AnyVal {
+      extension [Self <: WorkerGlobalScope](x: Self) {
         
-        @scala.inline
-        def setListeners(value: Listeners): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
+        inline def setListeners(value: Listeners): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSnapshot(value: () => Snapshot): Self = StObject.set(x, "snapshot", js.Any.fromFunction0(value))
+        inline def setSnapshot(value: () => Snapshot): Self = StObject.set(x, "snapshot", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setTrigger(value: FnCall): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
+        inline def setTrigger(value: FnCall): Self = StObject.set(x, "trigger", value.asInstanceOf[js.Any])
       }
     }
   }
@@ -155,8 +141,7 @@ object mod {
   }
   object Snapshot {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       caches: Caches,
       clients: js.Array[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Client */ js.Any
@@ -167,29 +152,23 @@ object mod {
       __obj.asInstanceOf[Snapshot]
     }
     
-    @scala.inline
-    implicit class SnapshotMutableBuilder[Self <: Snapshot] (val x: Self) extends AnyVal {
+    extension [Self <: Snapshot](x: Self) {
       
-      @scala.inline
-      def setCaches(value: Caches): Self = StObject.set(x, "caches", value.asInstanceOf[js.Any])
+      inline def setCaches(value: Caches): Self = StObject.set(x, "caches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClients(
+      inline def setClients(
         value: js.Array[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Client */ js.Any
             ]
       ): Self = StObject.set(x, "clients", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientsVarargs(
+      inline def setClientsVarargs(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Client */ js.Any)*
       ): Self = StObject.set(x, "clients", js.Array(value :_*))
       
-      @scala.inline
-      def setNotifications(value: js.Array[Notification]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
+      inline def setNotifications(value: js.Array[Notification]): Self = StObject.set(x, "notifications", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNotificationsVarargs(value: Notification*): Self = StObject.set(x, "notifications", js.Array(value :_*))
+      inline def setNotificationsVarargs(value: Notification*): Self = StObject.set(x, "notifications", js.Array(value :_*))
     }
   }
 }

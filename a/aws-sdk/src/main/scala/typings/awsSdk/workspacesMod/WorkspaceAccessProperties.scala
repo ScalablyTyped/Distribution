@@ -43,55 +43,39 @@ trait WorkspaceAccessProperties extends StObject {
 }
 object WorkspaceAccessProperties {
   
-  @scala.inline
-  def apply(): WorkspaceAccessProperties = {
+  inline def apply(): WorkspaceAccessProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkspaceAccessProperties]
   }
   
-  @scala.inline
-  implicit class WorkspaceAccessPropertiesMutableBuilder[Self <: WorkspaceAccessProperties] (val x: Self) extends AnyVal {
+  extension [Self <: WorkspaceAccessProperties](x: Self) {
     
-    @scala.inline
-    def setDeviceTypeAndroid(value: AccessPropertyValue): Self = StObject.set(x, "DeviceTypeAndroid", value.asInstanceOf[js.Any])
+    inline def setDeviceTypeAndroid(value: AccessPropertyValue): Self = StObject.set(x, "DeviceTypeAndroid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceTypeAndroidUndefined: Self = StObject.set(x, "DeviceTypeAndroid", js.undefined)
+    inline def setDeviceTypeAndroidUndefined: Self = StObject.set(x, "DeviceTypeAndroid", js.undefined)
     
-    @scala.inline
-    def setDeviceTypeChromeOs(value: AccessPropertyValue): Self = StObject.set(x, "DeviceTypeChromeOs", value.asInstanceOf[js.Any])
+    inline def setDeviceTypeChromeOs(value: AccessPropertyValue): Self = StObject.set(x, "DeviceTypeChromeOs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceTypeChromeOsUndefined: Self = StObject.set(x, "DeviceTypeChromeOs", js.undefined)
+    inline def setDeviceTypeChromeOsUndefined: Self = StObject.set(x, "DeviceTypeChromeOs", js.undefined)
     
-    @scala.inline
-    def setDeviceTypeIos(value: AccessPropertyValue): Self = StObject.set(x, "DeviceTypeIos", value.asInstanceOf[js.Any])
+    inline def setDeviceTypeIos(value: AccessPropertyValue): Self = StObject.set(x, "DeviceTypeIos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceTypeIosUndefined: Self = StObject.set(x, "DeviceTypeIos", js.undefined)
+    inline def setDeviceTypeIosUndefined: Self = StObject.set(x, "DeviceTypeIos", js.undefined)
     
-    @scala.inline
-    def setDeviceTypeOsx(value: AccessPropertyValue): Self = StObject.set(x, "DeviceTypeOsx", value.asInstanceOf[js.Any])
+    inline def setDeviceTypeOsx(value: AccessPropertyValue): Self = StObject.set(x, "DeviceTypeOsx", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceTypeOsxUndefined: Self = StObject.set(x, "DeviceTypeOsx", js.undefined)
+    inline def setDeviceTypeOsxUndefined: Self = StObject.set(x, "DeviceTypeOsx", js.undefined)
     
-    @scala.inline
-    def setDeviceTypeWeb(value: AccessPropertyValue): Self = StObject.set(x, "DeviceTypeWeb", value.asInstanceOf[js.Any])
+    inline def setDeviceTypeWeb(value: AccessPropertyValue): Self = StObject.set(x, "DeviceTypeWeb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceTypeWebUndefined: Self = StObject.set(x, "DeviceTypeWeb", js.undefined)
+    inline def setDeviceTypeWebUndefined: Self = StObject.set(x, "DeviceTypeWeb", js.undefined)
     
-    @scala.inline
-    def setDeviceTypeWindows(value: AccessPropertyValue): Self = StObject.set(x, "DeviceTypeWindows", value.asInstanceOf[js.Any])
+    inline def setDeviceTypeWindows(value: AccessPropertyValue): Self = StObject.set(x, "DeviceTypeWindows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceTypeWindowsUndefined: Self = StObject.set(x, "DeviceTypeWindows", js.undefined)
+    inline def setDeviceTypeWindowsUndefined: Self = StObject.set(x, "DeviceTypeWindows", js.undefined)
     
-    @scala.inline
-    def setDeviceTypeZeroClient(value: AccessPropertyValue): Self = StObject.set(x, "DeviceTypeZeroClient", value.asInstanceOf[js.Any])
+    inline def setDeviceTypeZeroClient(value: AccessPropertyValue): Self = StObject.set(x, "DeviceTypeZeroClient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceTypeZeroClientUndefined: Self = StObject.set(x, "DeviceTypeZeroClient", js.undefined)
+    inline def setDeviceTypeZeroClientUndefined: Self = StObject.set(x, "DeviceTypeZeroClient", js.undefined)
   }
 }

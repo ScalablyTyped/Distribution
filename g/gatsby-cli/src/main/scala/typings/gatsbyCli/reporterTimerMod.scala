@@ -13,8 +13,7 @@ object reporterTimerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createTimerReporter(hasTextIdSpanReporter: ICreateTimerReporterArguments): ITimerReporter = ^.asInstanceOf[js.Dynamic].applyDynamic("createTimerReporter")(hasTextIdSpanReporter.asInstanceOf[js.Any]).asInstanceOf[ITimerReporter]
+  inline def createTimerReporter(hasTextIdSpanReporter: ICreateTimerReporterArguments): ITimerReporter = ^.asInstanceOf[js.Dynamic].applyDynamic("createTimerReporter")(hasTextIdSpanReporter.asInstanceOf[js.Any]).asInstanceOf[ITimerReporter]
   
   trait ICreateTimerReporterArguments extends StObject {
     
@@ -28,26 +27,20 @@ object reporterTimerMod {
   }
   object ICreateTimerReporterArguments {
     
-    @scala.inline
-    def apply(id: String, reporter: Reporter_, span: Span, text: String): ICreateTimerReporterArguments = {
+    inline def apply(id: String, reporter: Reporter_, span: Span, text: String): ICreateTimerReporterArguments = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], reporter = reporter.asInstanceOf[js.Any], span = span.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[ICreateTimerReporterArguments]
     }
     
-    @scala.inline
-    implicit class ICreateTimerReporterArgumentsMutableBuilder[Self <: ICreateTimerReporterArguments] (val x: Self) extends AnyVal {
+    extension [Self <: ICreateTimerReporterArguments](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReporter(value: Reporter_): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
+      inline def setReporter(value: Reporter_): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpan(value: Span): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+      inline def setSpan(value: Span): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   
@@ -67,8 +60,7 @@ object reporterTimerMod {
   }
   object ITimerReporter {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       end: () => Unit,
       panic: (js.Any, /* repeated */ js.Any) => Unit,
       panicOnBuild: (js.Any, /* repeated */ js.Any) => IStructuredError | js.Array[IStructuredError],
@@ -80,26 +72,19 @@ object reporterTimerMod {
       __obj.asInstanceOf[ITimerReporter]
     }
     
-    @scala.inline
-    implicit class ITimerReporterMutableBuilder[Self <: ITimerReporter] (val x: Self) extends AnyVal {
+    extension [Self <: ITimerReporter](x: Self) {
       
-      @scala.inline
-      def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
+      inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPanic(value: (js.Any, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "panic", js.Any.fromFunction2(value))
+      inline def setPanic(value: (js.Any, /* repeated */ js.Any) => Unit): Self = StObject.set(x, "panic", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPanicOnBuild(value: (js.Any, /* repeated */ js.Any) => IStructuredError | js.Array[IStructuredError]): Self = StObject.set(x, "panicOnBuild", js.Any.fromFunction2(value))
+      inline def setPanicOnBuild(value: (js.Any, /* repeated */ js.Any) => IStructuredError | js.Array[IStructuredError]): Self = StObject.set(x, "panicOnBuild", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSetStatus(value: String => Unit): Self = StObject.set(x, "setStatus", js.Any.fromFunction1(value))
+      inline def setSetStatus(value: String => Unit): Self = StObject.set(x, "setStatus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSpan(value: Span): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+      inline def setSpan(value: Span): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
+      inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
     }
   }
 }

@@ -27,64 +27,45 @@ trait Constraint extends StObject {
 }
 object Constraint {
   
-  @scala.inline
-  def apply(name: String): Constraint = {
+  inline def apply(name: String): Constraint = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Constraint]
   }
   
-  @scala.inline
-  implicit class ConstraintMutableBuilder[Self <: Constraint] (val x: Self) extends AnyVal {
+  extension [Self <: Constraint](x: Self) {
     
-    @scala.inline
-    def setComments(value: js.Array[CommentKind]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: js.Array[CommentKind]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentsNull: Self = StObject.set(x, "comments", null)
+    inline def setCommentsNull: Self = StObject.set(x, "comments", null)
     
-    @scala.inline
-    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+    inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
-    @scala.inline
-    def setCommentsVarargs(value: CommentKind*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: CommentKind*): Self = StObject.set(x, "comments", js.Array(value :_*))
     
-    @scala.inline
-    def setConstraint(value: TSTypeKind): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
+    inline def setConstraint(value: TSTypeKind): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstraintUndefined: Self = StObject.set(x, "constraint", js.undefined)
+    inline def setConstraintUndefined: Self = StObject.set(x, "constraint", js.undefined)
     
-    @scala.inline
-    def setDefault(value: TSTypeKind): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: TSTypeKind): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
-    @scala.inline
-    def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
+    inline def setLoc(value: SourceLocationKind): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocNull: Self = StObject.set(x, "loc", null)
+    inline def setLocNull: Self = StObject.set(x, "loc", null)
     
-    @scala.inline
-    def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
+    inline def setLocUndefined: Self = StObject.set(x, "loc", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+    inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
+    inline def setOptionalUndefined: Self = StObject.set(x, "optional", js.undefined)
     
-    @scala.inline
-    def setTypeAnnotation(value: TypeAnnotationKind | TSTypeAnnotationKind): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
+    inline def setTypeAnnotation(value: TypeAnnotationKind | TSTypeAnnotationKind): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAnnotationNull: Self = StObject.set(x, "typeAnnotation", null)
+    inline def setTypeAnnotationNull: Self = StObject.set(x, "typeAnnotation", null)
     
-    @scala.inline
-    def setTypeAnnotationUndefined: Self = StObject.set(x, "typeAnnotation", js.undefined)
+    inline def setTypeAnnotationUndefined: Self = StObject.set(x, "typeAnnotation", js.undefined)
   }
 }

@@ -9,8 +9,7 @@ trait MuteChangeRequestedEventArgs
      with IMuteChangeRequestedEventArgs
 object MuteChangeRequestedEventArgs {
   
-  @scala.inline
-  def apply(mute: Boolean): MuteChangeRequestedEventArgs = {
+  inline def apply(mute: Boolean): MuteChangeRequestedEventArgs = {
     val __obj = js.Dynamic.literal(mute = mute.asInstanceOf[js.Any])
     __obj.asInstanceOf[MuteChangeRequestedEventArgs]
   }

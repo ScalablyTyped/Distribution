@@ -27,29 +27,22 @@ object gapi {
       }
       object CreateProfileRequest {
         
-        @scala.inline
-        def apply(): CreateProfileRequest = {
+        inline def apply(): CreateProfileRequest = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[CreateProfileRequest]
         }
         
-        @scala.inline
-        implicit class CreateProfileRequestMutableBuilder[Self <: CreateProfileRequest] (val x: Self) extends AnyVal {
+        extension [Self <: CreateProfileRequest](x: Self) {
           
-          @scala.inline
-          def setDeployment(value: Deployment): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
+          inline def setDeployment(value: Deployment): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDeploymentUndefined: Self = StObject.set(x, "deployment", js.undefined)
+          inline def setDeploymentUndefined: Self = StObject.set(x, "deployment", js.undefined)
           
-          @scala.inline
-          def setProfileType(value: js.Array[String]): Self = StObject.set(x, "profileType", value.asInstanceOf[js.Any])
+          inline def setProfileType(value: js.Array[String]): Self = StObject.set(x, "profileType", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setProfileTypeUndefined: Self = StObject.set(x, "profileType", js.undefined)
+          inline def setProfileTypeUndefined: Self = StObject.set(x, "profileType", js.undefined)
           
-          @scala.inline
-          def setProfileTypeVarargs(value: String*): Self = StObject.set(x, "profileType", js.Array(value :_*))
+          inline def setProfileTypeVarargs(value: String*): Self = StObject.set(x, "profileType", js.Array(value :_*))
         }
       }
       
@@ -78,36 +71,28 @@ object gapi {
       }
       object Deployment {
         
-        @scala.inline
-        def apply(): Deployment = {
+        inline def apply(): Deployment = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[Deployment]
         }
         
-        @scala.inline
-        implicit class DeploymentMutableBuilder[Self <: Deployment] (val x: Self) extends AnyVal {
+        extension [Self <: Deployment](x: Self) {
           
-          @scala.inline
-          def setLabels(
+          inline def setLabels(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: string}
             */ typings.maximMazurokGapiClientCloudprofiler.maximMazurokGapiClientCloudprofilerStrings.Deployment & TopLevel[js.Any]
           ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+          inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
           
-          @scala.inline
-          def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+          inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+          inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
           
-          @scala.inline
-          def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+          inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+          inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
         }
       }
       
@@ -144,54 +129,40 @@ object gapi {
       }
       object Profile {
         
-        @scala.inline
-        def apply(): Profile = {
+        inline def apply(): Profile = {
           val __obj = js.Dynamic.literal()
           __obj.asInstanceOf[Profile]
         }
         
-        @scala.inline
-        implicit class ProfileMutableBuilder[Self <: Profile] (val x: Self) extends AnyVal {
+        extension [Self <: Profile](x: Self) {
           
-          @scala.inline
-          def setDeployment(value: Deployment): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
+          inline def setDeployment(value: Deployment): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDeploymentUndefined: Self = StObject.set(x, "deployment", js.undefined)
+          inline def setDeploymentUndefined: Self = StObject.set(x, "deployment", js.undefined)
           
-          @scala.inline
-          def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+          inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+          inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
           
-          @scala.inline
-          def setLabels(
+          inline def setLabels(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: string}
             */ typings.maximMazurokGapiClientCloudprofiler.maximMazurokGapiClientCloudprofilerStrings.Profile & TopLevel[js.Any]
           ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+          inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
           
-          @scala.inline
-          def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+          inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+          inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
           
-          @scala.inline
-          def setProfileBytes(value: String): Self = StObject.set(x, "profileBytes", value.asInstanceOf[js.Any])
+          inline def setProfileBytes(value: String): Self = StObject.set(x, "profileBytes", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setProfileBytesUndefined: Self = StObject.set(x, "profileBytes", js.undefined)
+          inline def setProfileBytesUndefined: Self = StObject.set(x, "profileBytes", js.undefined)
           
-          @scala.inline
-          def setProfileType(value: String): Self = StObject.set(x, "profileType", value.asInstanceOf[js.Any])
+          inline def setProfileType(value: String): Self = StObject.set(x, "profileType", value.asInstanceOf[js.Any])
           
-          @scala.inline
-          def setProfileTypeUndefined: Self = StObject.set(x, "profileType", js.undefined)
+          inline def setProfileTypeUndefined: Self = StObject.set(x, "profileType", js.undefined)
         }
       }
       
@@ -225,17 +196,14 @@ object gapi {
       }
       object ProjectsResource {
         
-        @scala.inline
-        def apply(profiles: ProfilesResource): ProjectsResource = {
+        inline def apply(profiles: ProfilesResource): ProjectsResource = {
           val __obj = js.Dynamic.literal(profiles = profiles.asInstanceOf[js.Any])
           __obj.asInstanceOf[ProjectsResource]
         }
         
-        @scala.inline
-        implicit class ProjectsResourceMutableBuilder[Self <: ProjectsResource] (val x: Self) extends AnyVal {
+        extension [Self <: ProjectsResource](x: Self) {
           
-          @scala.inline
-          def setProfiles(value: ProfilesResource): Self = StObject.set(x, "profiles", value.asInstanceOf[js.Any])
+          inline def setProfiles(value: ProfilesResource): Self = StObject.set(x, "profiles", value.asInstanceOf[js.Any])
         }
       }
     }

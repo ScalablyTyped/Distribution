@@ -23,34 +23,25 @@ trait DescribeMatchmakingRuleSetsInput extends StObject {
 }
 object DescribeMatchmakingRuleSetsInput {
   
-  @scala.inline
-  def apply(): DescribeMatchmakingRuleSetsInput = {
+  inline def apply(): DescribeMatchmakingRuleSetsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeMatchmakingRuleSetsInput]
   }
   
-  @scala.inline
-  implicit class DescribeMatchmakingRuleSetsInputMutableBuilder[Self <: DescribeMatchmakingRuleSetsInput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeMatchmakingRuleSetsInput](x: Self) {
     
-    @scala.inline
-    def setLimit(value: RuleSetLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: RuleSetLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setNames(value: MatchmakingRuleSetNameList): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
+    inline def setNames(value: MatchmakingRuleSetNameList): Self = StObject.set(x, "Names", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamesUndefined: Self = StObject.set(x, "Names", js.undefined)
+    inline def setNamesUndefined: Self = StObject.set(x, "Names", js.undefined)
     
-    @scala.inline
-    def setNamesVarargs(value: MatchmakingRuleSetName*): Self = StObject.set(x, "Names", js.Array(value :_*))
+    inline def setNamesVarargs(value: MatchmakingRuleSetName*): Self = StObject.set(x, "Names", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NonZeroAndMaxString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

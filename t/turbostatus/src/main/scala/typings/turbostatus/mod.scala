@@ -11,54 +11,37 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def checkout(folder: String, commit: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkout")(folder.asInstanceOf[js.Any], commit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def checkout(folder: String, commit: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkout")(folder.asInstanceOf[js.Any], commit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def clone_(origin: String, folder: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(origin.asInstanceOf[js.Any], folder.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def clone_(origin: String, folder: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(origin.asInstanceOf[js.Any], folder.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def describe(folder: String): js.Promise[Description] = ^.asInstanceOf[js.Dynamic].applyDynamic("describe")(folder.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Description]]
+  inline def describe(folder: String): js.Promise[Description] = ^.asInstanceOf[js.Dynamic].applyDynamic("describe")(folder.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Description]]
   
-  @scala.inline
-  def getBranch(folder: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBranch")(folder.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def getBranch(folder: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBranch")(folder.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def getBranchFast(folder: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBranchFast")(folder.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def getBranchFast(folder: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBranchFast")(folder.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def getLocalCommit(folder: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalCommit")(folder.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def getLocalCommit(folder: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalCommit")(folder.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def getMergeBase(folder: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMergeBase")(folder.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def getMergeBase(folder: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMergeBase")(folder.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def getOrigin(folder: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrigin")(folder.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def getOrigin(folder: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrigin")(folder.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def getRemoteCommit(folder: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRemoteCommit")(folder.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def getRemoteCommit(folder: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRemoteCommit")(folder.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def getRepos(folder: String): js.Promise[js.Array[Repository]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRepos")(folder.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Repository]]]
-  @scala.inline
-  def getRepos(folder: String, wildcard: String): js.Promise[js.Array[Repository]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRepos")(folder.asInstanceOf[js.Any], wildcard.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Repository]]]
+  inline def getRepos(folder: String): js.Promise[js.Array[Repository]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRepos")(folder.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Repository]]]
+  inline def getRepos(folder: String, wildcard: String): js.Promise[js.Array[Repository]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRepos")(folder.asInstanceOf[js.Any], wildcard.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Repository]]]
   
-  @scala.inline
-  def hasUncommited(folder: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("hasUncommited")(folder.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  inline def hasUncommited(folder: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("hasUncommited")(folder.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
-  @scala.inline
-  def hasUntracked(folder: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("hasUntracked")(folder.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  inline def hasUntracked(folder: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("hasUntracked")(folder.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
-  @scala.inline
-  def info(repo: Repository): js.Promise[Repository] = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Repository]]
-  @scala.inline
-  def info(repo: Repository, remotes: Boolean): js.Promise[Repository] = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(repo.asInstanceOf[js.Any], remotes.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Repository]]
+  inline def info(repo: Repository): js.Promise[Repository] = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Repository]]
+  inline def info(repo: Repository, remotes: Boolean): js.Promise[Repository] = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(repo.asInstanceOf[js.Any], remotes.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Repository]]
   
-  @scala.inline
-  def isRepo(folder: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isRepo")(folder.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  inline def isRepo(folder: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isRepo")(folder.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
-  @scala.inline
-  def references(folder: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("references")(folder.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def references(folder: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("references")(folder.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
   trait Description extends StObject {
     
@@ -70,23 +53,18 @@ object mod {
   }
   object Description {
     
-    @scala.inline
-    def apply(commitsSinceTag: String | `false`, hash: String, nearestTag: String | `false`): Description = {
+    inline def apply(commitsSinceTag: String | `false`, hash: String, nearestTag: String | `false`): Description = {
       val __obj = js.Dynamic.literal(commitsSinceTag = commitsSinceTag.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], nearestTag = nearestTag.asInstanceOf[js.Any])
       __obj.asInstanceOf[Description]
     }
     
-    @scala.inline
-    implicit class DescriptionMutableBuilder[Self <: Description] (val x: Self) extends AnyVal {
+    extension [Self <: Description](x: Self) {
       
-      @scala.inline
-      def setCommitsSinceTag(value: String | `false`): Self = StObject.set(x, "commitsSinceTag", value.asInstanceOf[js.Any])
+      inline def setCommitsSinceTag(value: String | `false`): Self = StObject.set(x, "commitsSinceTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNearestTag(value: String | `false`): Self = StObject.set(x, "nearestTag", value.asInstanceOf[js.Any])
+      inline def setNearestTag(value: String | `false`): Self = StObject.set(x, "nearestTag", value.asInstanceOf[js.Any])
     }
   }
   
@@ -98,20 +76,16 @@ object mod {
   }
   object Repository {
     
-    @scala.inline
-    def apply(name: String, path: String): Repository = {
+    inline def apply(name: String, path: String): Repository = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[Repository]
     }
     
-    @scala.inline
-    implicit class RepositoryMutableBuilder[Self <: Repository] (val x: Self) extends AnyVal {
+    extension [Self <: Repository](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
   }
 }

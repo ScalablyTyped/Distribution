@@ -15,19 +15,15 @@ trait HostProperties extends StObject {
 }
 object HostProperties {
   
-  @scala.inline
-  def apply(): HostProperties = {
+  inline def apply(): HostProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HostProperties]
   }
   
-  @scala.inline
-  implicit class HostPropertiesMutableBuilder[Self <: HostProperties] (val x: Self) extends AnyVal {
+  extension [Self <: HostProperties](x: Self) {
     
-    @scala.inline
-    def setOs(value: HostOperatingSystem): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
+    inline def setOs(value: HostOperatingSystem): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOsUndefined: Self = StObject.set(x, "os", js.undefined)
+    inline def setOsUndefined: Self = StObject.set(x, "os", js.undefined)
   }
 }

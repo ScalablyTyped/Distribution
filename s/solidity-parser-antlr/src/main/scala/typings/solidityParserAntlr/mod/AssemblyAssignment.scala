@@ -19,26 +19,20 @@ trait AssemblyAssignment
 }
 object AssemblyAssignment {
   
-  @scala.inline
-  def apply(expression: AssemblyExpression, names: js.Array[Identifier]): AssemblyAssignment = {
+  inline def apply(expression: AssemblyExpression, names: js.Array[Identifier]): AssemblyAssignment = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("AssemblyAssignment")
     __obj.asInstanceOf[AssemblyAssignment]
   }
   
-  @scala.inline
-  implicit class AssemblyAssignmentMutableBuilder[Self <: AssemblyAssignment] (val x: Self) extends AnyVal {
+  extension [Self <: AssemblyAssignment](x: Self) {
     
-    @scala.inline
-    def setExpression(value: AssemblyExpression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: AssemblyExpression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNames(value: js.Array[Identifier]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+    inline def setNames(value: js.Array[Identifier]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamesVarargs(value: Identifier*): Self = StObject.set(x, "names", js.Array(value :_*))
+    inline def setNamesVarargs(value: Identifier*): Self = StObject.set(x, "names", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyAssignment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyAssignment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

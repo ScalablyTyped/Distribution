@@ -17,31 +17,23 @@ trait OnChangeParams extends StObject {
 }
 object OnChangeParams {
   
-  @scala.inline
-  def apply(value: Value): OnChangeParams = {
+  inline def apply(value: Value): OnChangeParams = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnChangeParams]
   }
   
-  @scala.inline
-  implicit class OnChangeParamsMutableBuilder[Self <: OnChangeParams] (val x: Self) extends AnyVal {
+  extension [Self <: OnChangeParams](x: Self) {
     
-    @scala.inline
-    def setOption(value: Option): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
+    inline def setOption(value: Option): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionUndefined: Self = StObject.set(x, "option", js.undefined)
+    inline def setOptionUndefined: Self = StObject.set(x, "option", js.undefined)
     
-    @scala.inline
-    def setType(value: select | remove | clear): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: select | remove | clear): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueVarargs(value: Option*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: Option*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

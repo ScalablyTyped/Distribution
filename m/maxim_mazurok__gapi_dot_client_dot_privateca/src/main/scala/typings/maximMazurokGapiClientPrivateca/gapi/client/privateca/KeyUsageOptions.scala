@@ -35,67 +35,47 @@ trait KeyUsageOptions extends StObject {
 }
 object KeyUsageOptions {
   
-  @scala.inline
-  def apply(): KeyUsageOptions = {
+  inline def apply(): KeyUsageOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KeyUsageOptions]
   }
   
-  @scala.inline
-  implicit class KeyUsageOptionsMutableBuilder[Self <: KeyUsageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: KeyUsageOptions](x: Self) {
     
-    @scala.inline
-    def setCertSign(value: Boolean): Self = StObject.set(x, "certSign", value.asInstanceOf[js.Any])
+    inline def setCertSign(value: Boolean): Self = StObject.set(x, "certSign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertSignUndefined: Self = StObject.set(x, "certSign", js.undefined)
+    inline def setCertSignUndefined: Self = StObject.set(x, "certSign", js.undefined)
     
-    @scala.inline
-    def setContentCommitment(value: Boolean): Self = StObject.set(x, "contentCommitment", value.asInstanceOf[js.Any])
+    inline def setContentCommitment(value: Boolean): Self = StObject.set(x, "contentCommitment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentCommitmentUndefined: Self = StObject.set(x, "contentCommitment", js.undefined)
+    inline def setContentCommitmentUndefined: Self = StObject.set(x, "contentCommitment", js.undefined)
     
-    @scala.inline
-    def setCrlSign(value: Boolean): Self = StObject.set(x, "crlSign", value.asInstanceOf[js.Any])
+    inline def setCrlSign(value: Boolean): Self = StObject.set(x, "crlSign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrlSignUndefined: Self = StObject.set(x, "crlSign", js.undefined)
+    inline def setCrlSignUndefined: Self = StObject.set(x, "crlSign", js.undefined)
     
-    @scala.inline
-    def setDataEncipherment(value: Boolean): Self = StObject.set(x, "dataEncipherment", value.asInstanceOf[js.Any])
+    inline def setDataEncipherment(value: Boolean): Self = StObject.set(x, "dataEncipherment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataEnciphermentUndefined: Self = StObject.set(x, "dataEncipherment", js.undefined)
+    inline def setDataEnciphermentUndefined: Self = StObject.set(x, "dataEncipherment", js.undefined)
     
-    @scala.inline
-    def setDecipherOnly(value: Boolean): Self = StObject.set(x, "decipherOnly", value.asInstanceOf[js.Any])
+    inline def setDecipherOnly(value: Boolean): Self = StObject.set(x, "decipherOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecipherOnlyUndefined: Self = StObject.set(x, "decipherOnly", js.undefined)
+    inline def setDecipherOnlyUndefined: Self = StObject.set(x, "decipherOnly", js.undefined)
     
-    @scala.inline
-    def setDigitalSignature(value: Boolean): Self = StObject.set(x, "digitalSignature", value.asInstanceOf[js.Any])
+    inline def setDigitalSignature(value: Boolean): Self = StObject.set(x, "digitalSignature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigitalSignatureUndefined: Self = StObject.set(x, "digitalSignature", js.undefined)
+    inline def setDigitalSignatureUndefined: Self = StObject.set(x, "digitalSignature", js.undefined)
     
-    @scala.inline
-    def setEncipherOnly(value: Boolean): Self = StObject.set(x, "encipherOnly", value.asInstanceOf[js.Any])
+    inline def setEncipherOnly(value: Boolean): Self = StObject.set(x, "encipherOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncipherOnlyUndefined: Self = StObject.set(x, "encipherOnly", js.undefined)
+    inline def setEncipherOnlyUndefined: Self = StObject.set(x, "encipherOnly", js.undefined)
     
-    @scala.inline
-    def setKeyAgreement(value: Boolean): Self = StObject.set(x, "keyAgreement", value.asInstanceOf[js.Any])
+    inline def setKeyAgreement(value: Boolean): Self = StObject.set(x, "keyAgreement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyAgreementUndefined: Self = StObject.set(x, "keyAgreement", js.undefined)
+    inline def setKeyAgreementUndefined: Self = StObject.set(x, "keyAgreement", js.undefined)
     
-    @scala.inline
-    def setKeyEncipherment(value: Boolean): Self = StObject.set(x, "keyEncipherment", value.asInstanceOf[js.Any])
+    inline def setKeyEncipherment(value: Boolean): Self = StObject.set(x, "keyEncipherment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyEnciphermentUndefined: Self = StObject.set(x, "keyEncipherment", js.undefined)
+    inline def setKeyEnciphermentUndefined: Self = StObject.set(x, "keyEncipherment", js.undefined)
   }
 }

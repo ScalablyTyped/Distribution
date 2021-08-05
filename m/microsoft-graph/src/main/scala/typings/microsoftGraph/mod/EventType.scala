@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EventType extends StObject
 object EventType {
   
-  @scala.inline
-  def exception: typings.microsoftGraph.microsoftGraphStrings.exception = "exception".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.exception]
+  inline def exception: typings.microsoftGraph.microsoftGraphStrings.exception = "exception".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.exception]
   
-  @scala.inline
-  def occurrence: typings.microsoftGraph.microsoftGraphStrings.occurrence = "occurrence".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.occurrence]
+  inline def occurrence: typings.microsoftGraph.microsoftGraphStrings.occurrence = "occurrence".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.occurrence]
   
-  @scala.inline
-  def seriesMaster: typings.microsoftGraph.microsoftGraphStrings.seriesMaster = "seriesMaster".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.seriesMaster]
+  inline def seriesMaster: typings.microsoftGraph.microsoftGraphStrings.seriesMaster = "seriesMaster".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.seriesMaster]
   
-  @scala.inline
-  def singleInstance: typings.microsoftGraph.microsoftGraphStrings.singleInstance = "singleInstance".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.singleInstance]
+  inline def singleInstance: typings.microsoftGraph.microsoftGraphStrings.singleInstance = "singleInstance".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.singleInstance]
 }

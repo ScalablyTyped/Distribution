@@ -18,19 +18,15 @@ trait Dimension extends StObject {
 }
 object Dimension {
   
-  @scala.inline
-  def apply(Name: DimensionField, Value: DimensionField): Dimension = {
+  inline def apply(Name: DimensionField, Value: DimensionField): Dimension = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Dimension]
   }
   
-  @scala.inline
-  implicit class DimensionMutableBuilder[Self <: Dimension] (val x: Self) extends AnyVal {
+  extension [Self <: Dimension](x: Self) {
     
-    @scala.inline
-    def setName(value: DimensionField): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: DimensionField): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: DimensionField): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: DimensionField): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

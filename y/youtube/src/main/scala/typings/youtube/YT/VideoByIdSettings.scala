@@ -15,16 +15,13 @@ trait VideoByIdSettings
 }
 object VideoByIdSettings {
   
-  @scala.inline
-  def apply(videoId: String): VideoByIdSettings = {
+  inline def apply(videoId: String): VideoByIdSettings = {
     val __obj = js.Dynamic.literal(videoId = videoId.asInstanceOf[js.Any])
     __obj.asInstanceOf[VideoByIdSettings]
   }
   
-  @scala.inline
-  implicit class VideoByIdSettingsMutableBuilder[Self <: VideoByIdSettings] (val x: Self) extends AnyVal {
+  extension [Self <: VideoByIdSettings](x: Self) {
     
-    @scala.inline
-    def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
+    inline def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
   }
 }

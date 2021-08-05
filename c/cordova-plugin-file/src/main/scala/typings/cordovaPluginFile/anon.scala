@@ -46,8 +46,7 @@ object anon {
   }
   object ApplicationDirectory {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       applicationDirectory: String,
       applicationStorageDirectory: String,
       cacheDirectory: String,
@@ -65,44 +64,31 @@ object anon {
       __obj.asInstanceOf[ApplicationDirectory]
     }
     
-    @scala.inline
-    implicit class ApplicationDirectoryMutableBuilder[Self <: ApplicationDirectory] (val x: Self) extends AnyVal {
+    extension [Self <: ApplicationDirectory](x: Self) {
       
-      @scala.inline
-      def setApplicationDirectory(value: String): Self = StObject.set(x, "applicationDirectory", value.asInstanceOf[js.Any])
+      inline def setApplicationDirectory(value: String): Self = StObject.set(x, "applicationDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApplicationStorageDirectory(value: String): Self = StObject.set(x, "applicationStorageDirectory", value.asInstanceOf[js.Any])
+      inline def setApplicationStorageDirectory(value: String): Self = StObject.set(x, "applicationStorageDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheDirectory(value: String): Self = StObject.set(x, "cacheDirectory", value.asInstanceOf[js.Any])
+      inline def setCacheDirectory(value: String): Self = StObject.set(x, "cacheDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataDirectory(value: String): Self = StObject.set(x, "dataDirectory", value.asInstanceOf[js.Any])
+      inline def setDataDirectory(value: String): Self = StObject.set(x, "dataDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocumentsDirectory(value: String): Self = StObject.set(x, "documentsDirectory", value.asInstanceOf[js.Any])
+      inline def setDocumentsDirectory(value: String): Self = StObject.set(x, "documentsDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternalApplicationStorageDirectory(value: String): Self = StObject.set(x, "externalApplicationStorageDirectory", value.asInstanceOf[js.Any])
+      inline def setExternalApplicationStorageDirectory(value: String): Self = StObject.set(x, "externalApplicationStorageDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternalCacheDirectory(value: String): Self = StObject.set(x, "externalCacheDirectory", value.asInstanceOf[js.Any])
+      inline def setExternalCacheDirectory(value: String): Self = StObject.set(x, "externalCacheDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternalDataDirectory(value: String): Self = StObject.set(x, "externalDataDirectory", value.asInstanceOf[js.Any])
+      inline def setExternalDataDirectory(value: String): Self = StObject.set(x, "externalDataDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternalRootDirectory(value: String): Self = StObject.set(x, "externalRootDirectory", value.asInstanceOf[js.Any])
+      inline def setExternalRootDirectory(value: String): Self = StObject.set(x, "externalRootDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSharedDirectory(value: String): Self = StObject.set(x, "sharedDirectory", value.asInstanceOf[js.Any])
+      inline def setSharedDirectory(value: String): Self = StObject.set(x, "sharedDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSyncedDataDirectory(value: String): Self = StObject.set(x, "syncedDataDirectory", value.asInstanceOf[js.Any])
+      inline def setSyncedDataDirectory(value: String): Self = StObject.set(x, "syncedDataDirectory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTempDirectory(value: String): Self = StObject.set(x, "tempDirectory", value.asInstanceOf[js.Any])
+      inline def setTempDirectory(value: String): Self = StObject.set(x, "tempDirectory", value.asInstanceOf[js.Any])
     }
   }
 }

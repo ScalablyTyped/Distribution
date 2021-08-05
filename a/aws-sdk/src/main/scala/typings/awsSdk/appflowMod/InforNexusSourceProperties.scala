@@ -13,17 +13,14 @@ trait InforNexusSourceProperties extends StObject {
 }
 object InforNexusSourceProperties {
   
-  @scala.inline
-  def apply(`object`: Object): InforNexusSourceProperties = {
+  inline def apply(`object`: Object): InforNexusSourceProperties = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[InforNexusSourceProperties]
   }
   
-  @scala.inline
-  implicit class InforNexusSourcePropertiesMutableBuilder[Self <: InforNexusSourceProperties] (val x: Self) extends AnyVal {
+  extension [Self <: InforNexusSourceProperties](x: Self) {
     
-    @scala.inline
-    def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }
 }

@@ -10,19 +10,15 @@ trait UpdateInputSecurityGroupResponse extends StObject {
 }
 object UpdateInputSecurityGroupResponse {
   
-  @scala.inline
-  def apply(): UpdateInputSecurityGroupResponse = {
+  inline def apply(): UpdateInputSecurityGroupResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateInputSecurityGroupResponse]
   }
   
-  @scala.inline
-  implicit class UpdateInputSecurityGroupResponseMutableBuilder[Self <: UpdateInputSecurityGroupResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateInputSecurityGroupResponse](x: Self) {
     
-    @scala.inline
-    def setSecurityGroup(value: InputSecurityGroup): Self = StObject.set(x, "SecurityGroup", value.asInstanceOf[js.Any])
+    inline def setSecurityGroup(value: InputSecurityGroup): Self = StObject.set(x, "SecurityGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupUndefined: Self = StObject.set(x, "SecurityGroup", js.undefined)
+    inline def setSecurityGroupUndefined: Self = StObject.set(x, "SecurityGroup", js.undefined)
   }
 }

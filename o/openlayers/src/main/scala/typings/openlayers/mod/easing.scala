@@ -16,8 +16,7 @@ object easing {
     * @return Output between 0 and 1.
     * @api
     */
-  @scala.inline
-  def easeIn(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeIn")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def easeIn(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeIn")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Start fast and slow down.
@@ -25,8 +24,7 @@ object easing {
     * @return Output between 0 and 1.
     * @api
     */
-  @scala.inline
-  def easeOut(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeOut")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def easeOut(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeOut")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Start slow, speed up, and then slow down again.
@@ -34,8 +32,7 @@ object easing {
     * @return Output between 0 and 1.
     * @api
     */
-  @scala.inline
-  def inAndOut(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("inAndOut")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def inAndOut(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("inAndOut")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Maintain a constant speed over time.
@@ -43,8 +40,7 @@ object easing {
     * @return Output between 0 and 1.
     * @api
     */
-  @scala.inline
-  def linear(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("linear")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def linear(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("linear")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Start slow, speed up, and at the very end slow down again.  This has the
@@ -54,6 +50,5 @@ object easing {
     * @return Output between 0 and 1.
     * @api
     */
-  @scala.inline
-  def upAndDown(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("upAndDown")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def upAndDown(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("upAndDown")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

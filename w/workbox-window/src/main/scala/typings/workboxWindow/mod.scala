@@ -20,6 +20,5 @@ object mod {
     def this(scriptURL: String, registerOptions: RegistrationOptions) = this()
   }
   
-  @scala.inline
-  def messageSW(sw: ServiceWorker, data: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("messageSW")(sw.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  inline def messageSW(sw: ServiceWorker, data: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("messageSW")(sw.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
 }

@@ -12,20 +12,16 @@ trait Content extends StObject {
 }
 object Content {
   
-  @scala.inline
-  def apply(`type`: String, value: String): Content = {
+  inline def apply(`type`: String, value: String): Content = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Content]
   }
   
-  @scala.inline
-  implicit class ContentMutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
+  extension [Self <: Content](x: Self) {
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait LazyLoadingEvent extends StObject
 object LazyLoadingEvent {
   
-  @scala.inline
-  def lazyImageLoad: typings.swiper.swiperStrings.lazyImageLoad = "lazyImageLoad".asInstanceOf[typings.swiper.swiperStrings.lazyImageLoad]
+  inline def lazyImageLoad: typings.swiper.swiperStrings.lazyImageLoad = "lazyImageLoad".asInstanceOf[typings.swiper.swiperStrings.lazyImageLoad]
   
-  @scala.inline
-  def lazyImageReady: typings.swiper.swiperStrings.lazyImageReady = "lazyImageReady".asInstanceOf[typings.swiper.swiperStrings.lazyImageReady]
+  inline def lazyImageReady: typings.swiper.swiperStrings.lazyImageReady = "lazyImageReady".asInstanceOf[typings.swiper.swiperStrings.lazyImageReady]
 }

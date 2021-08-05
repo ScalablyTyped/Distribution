@@ -15,19 +15,15 @@ trait ContactChange extends StObject {
 }
 object ContactChange {
   
-  @scala.inline
-  def apply(changeType: ContactChangeType, contact: Contact): ContactChange = {
+  inline def apply(changeType: ContactChangeType, contact: Contact): ContactChange = {
     val __obj = js.Dynamic.literal(changeType = changeType.asInstanceOf[js.Any], contact = contact.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContactChange]
   }
   
-  @scala.inline
-  implicit class ContactChangeMutableBuilder[Self <: ContactChange] (val x: Self) extends AnyVal {
+  extension [Self <: ContactChange](x: Self) {
     
-    @scala.inline
-    def setChangeType(value: ContactChangeType): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
+    inline def setChangeType(value: ContactChangeType): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContact(value: Contact): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
+    inline def setContact(value: Contact): Self = StObject.set(x, "contact", value.asInstanceOf[js.Any])
   }
 }

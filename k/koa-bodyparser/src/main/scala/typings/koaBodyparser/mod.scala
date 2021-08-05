@@ -12,10 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext]]
-  @scala.inline
-  def apply(opts: Options): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  inline def apply(opts: Options): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
   
   @JSImport("koa-bodyparser", JSImport.Namespace)
   @js.native
@@ -71,71 +69,50 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDetectJSON(value: /* ctx */ Context => Boolean): Self = StObject.set(x, "detectJSON", js.Any.fromFunction1(value))
+      inline def setDetectJSON(value: /* ctx */ Context => Boolean): Self = StObject.set(x, "detectJSON", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDetectJSONUndefined: Self = StObject.set(x, "detectJSON", js.undefined)
+      inline def setDetectJSONUndefined: Self = StObject.set(x, "detectJSON", js.undefined)
       
-      @scala.inline
-      def setEnableTypes(value: js.Array[String]): Self = StObject.set(x, "enableTypes", value.asInstanceOf[js.Any])
+      inline def setEnableTypes(value: js.Array[String]): Self = StObject.set(x, "enableTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableTypesUndefined: Self = StObject.set(x, "enableTypes", js.undefined)
+      inline def setEnableTypesUndefined: Self = StObject.set(x, "enableTypes", js.undefined)
       
-      @scala.inline
-      def setEnableTypesVarargs(value: String*): Self = StObject.set(x, "enableTypes", js.Array(value :_*))
+      inline def setEnableTypesVarargs(value: String*): Self = StObject.set(x, "enableTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setEncode(value: String): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
+      inline def setEncode(value: String): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
+      inline def setEncodeUndefined: Self = StObject.set(x, "encode", js.undefined)
       
-      @scala.inline
-      def setExtendTypes(value: Form): Self = StObject.set(x, "extendTypes", value.asInstanceOf[js.Any])
+      inline def setExtendTypes(value: Form): Self = StObject.set(x, "extendTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtendTypesUndefined: Self = StObject.set(x, "extendTypes", js.undefined)
+      inline def setExtendTypesUndefined: Self = StObject.set(x, "extendTypes", js.undefined)
       
-      @scala.inline
-      def setFormLimit(value: String): Self = StObject.set(x, "formLimit", value.asInstanceOf[js.Any])
+      inline def setFormLimit(value: String): Self = StObject.set(x, "formLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormLimitUndefined: Self = StObject.set(x, "formLimit", js.undefined)
+      inline def setFormLimitUndefined: Self = StObject.set(x, "formLimit", js.undefined)
       
-      @scala.inline
-      def setJsonLimit(value: String): Self = StObject.set(x, "jsonLimit", value.asInstanceOf[js.Any])
+      inline def setJsonLimit(value: String): Self = StObject.set(x, "jsonLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsonLimitUndefined: Self = StObject.set(x, "jsonLimit", js.undefined)
+      inline def setJsonLimitUndefined: Self = StObject.set(x, "jsonLimit", js.undefined)
       
-      @scala.inline
-      def setOnerror(value: (/* err */ Error, /* ctx */ Context) => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction2(value))
+      inline def setOnerror(value: (/* err */ Error, /* ctx */ Context) => Unit): Self = StObject.set(x, "onerror", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
+      inline def setOnerrorUndefined: Self = StObject.set(x, "onerror", js.undefined)
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       
-      @scala.inline
-      def setTextLimit(value: String): Self = StObject.set(x, "textLimit", value.asInstanceOf[js.Any])
+      inline def setTextLimit(value: String): Self = StObject.set(x, "textLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextLimitUndefined: Self = StObject.set(x, "textLimit", js.undefined)
+      inline def setTextLimitUndefined: Self = StObject.set(x, "textLimit", js.undefined)
     }
   }
   
@@ -150,23 +127,18 @@ object mod {
     }
     object Request {
       
-      @scala.inline
-      def apply(rawBody: String): Request = {
+      inline def apply(rawBody: String): Request = {
         val __obj = js.Dynamic.literal(rawBody = rawBody.asInstanceOf[js.Any])
         __obj.asInstanceOf[Request]
       }
       
-      @scala.inline
-      implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+      extension [Self <: Request](x: Self) {
         
-        @scala.inline
-        def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+        inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+        inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
         
-        @scala.inline
-        def setRawBody(value: String): Self = StObject.set(x, "rawBody", value.asInstanceOf[js.Any])
+        inline def setRawBody(value: String): Self = StObject.set(x, "rawBody", value.asInstanceOf[js.Any])
       }
     }
   }

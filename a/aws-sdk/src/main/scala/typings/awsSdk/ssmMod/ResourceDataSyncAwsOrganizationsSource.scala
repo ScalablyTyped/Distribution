@@ -18,25 +18,19 @@ trait ResourceDataSyncAwsOrganizationsSource extends StObject {
 }
 object ResourceDataSyncAwsOrganizationsSource {
   
-  @scala.inline
-  def apply(OrganizationSourceType: ResourceDataSyncOrganizationSourceType): ResourceDataSyncAwsOrganizationsSource = {
+  inline def apply(OrganizationSourceType: ResourceDataSyncOrganizationSourceType): ResourceDataSyncAwsOrganizationsSource = {
     val __obj = js.Dynamic.literal(OrganizationSourceType = OrganizationSourceType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResourceDataSyncAwsOrganizationsSource]
   }
   
-  @scala.inline
-  implicit class ResourceDataSyncAwsOrganizationsSourceMutableBuilder[Self <: ResourceDataSyncAwsOrganizationsSource] (val x: Self) extends AnyVal {
+  extension [Self <: ResourceDataSyncAwsOrganizationsSource](x: Self) {
     
-    @scala.inline
-    def setOrganizationSourceType(value: ResourceDataSyncOrganizationSourceType): Self = StObject.set(x, "OrganizationSourceType", value.asInstanceOf[js.Any])
+    inline def setOrganizationSourceType(value: ResourceDataSyncOrganizationSourceType): Self = StObject.set(x, "OrganizationSourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationalUnits(value: ResourceDataSyncOrganizationalUnitList): Self = StObject.set(x, "OrganizationalUnits", value.asInstanceOf[js.Any])
+    inline def setOrganizationalUnits(value: ResourceDataSyncOrganizationalUnitList): Self = StObject.set(x, "OrganizationalUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationalUnitsUndefined: Self = StObject.set(x, "OrganizationalUnits", js.undefined)
+    inline def setOrganizationalUnitsUndefined: Self = StObject.set(x, "OrganizationalUnits", js.undefined)
     
-    @scala.inline
-    def setOrganizationalUnitsVarargs(value: ResourceDataSyncOrganizationalUnit*): Self = StObject.set(x, "OrganizationalUnits", js.Array(value :_*))
+    inline def setOrganizationalUnitsVarargs(value: ResourceDataSyncOrganizationalUnit*): Self = StObject.set(x, "OrganizationalUnits", js.Array(value :_*))
   }
 }

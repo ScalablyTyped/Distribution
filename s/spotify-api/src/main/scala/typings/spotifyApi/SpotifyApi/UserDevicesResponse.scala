@@ -10,19 +10,15 @@ trait UserDevicesResponse extends StObject {
 }
 object UserDevicesResponse {
   
-  @scala.inline
-  def apply(devices: js.Array[UserDevice]): UserDevicesResponse = {
+  inline def apply(devices: js.Array[UserDevice]): UserDevicesResponse = {
     val __obj = js.Dynamic.literal(devices = devices.asInstanceOf[js.Any])
     __obj.asInstanceOf[UserDevicesResponse]
   }
   
-  @scala.inline
-  implicit class UserDevicesResponseMutableBuilder[Self <: UserDevicesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UserDevicesResponse](x: Self) {
     
-    @scala.inline
-    def setDevices(value: js.Array[UserDevice]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
+    inline def setDevices(value: js.Array[UserDevice]): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevicesVarargs(value: UserDevice*): Self = StObject.set(x, "devices", js.Array(value :_*))
+    inline def setDevicesVarargs(value: UserDevice*): Self = StObject.set(x, "devices", js.Array(value :_*))
   }
 }

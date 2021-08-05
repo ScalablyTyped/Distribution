@@ -40,58 +40,41 @@ trait NotaryJurisdictionList extends StObject {
 }
 object NotaryJurisdictionList {
   
-  @scala.inline
-  def apply(): NotaryJurisdictionList = {
+  inline def apply(): NotaryJurisdictionList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NotaryJurisdictionList]
   }
   
-  @scala.inline
-  implicit class NotaryJurisdictionListMutableBuilder[Self <: NotaryJurisdictionList] (val x: Self) extends AnyVal {
+  extension [Self <: NotaryJurisdictionList](x: Self) {
     
-    @scala.inline
-    def setEndPosition(value: String): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
+    inline def setEndPosition(value: String): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndPositionUndefined: Self = StObject.set(x, "endPosition", js.undefined)
+    inline def setEndPositionUndefined: Self = StObject.set(x, "endPosition", js.undefined)
     
-    @scala.inline
-    def setNextUri(value: String): Self = StObject.set(x, "nextUri", value.asInstanceOf[js.Any])
+    inline def setNextUri(value: String): Self = StObject.set(x, "nextUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextUriUndefined: Self = StObject.set(x, "nextUri", js.undefined)
+    inline def setNextUriUndefined: Self = StObject.set(x, "nextUri", js.undefined)
     
-    @scala.inline
-    def setNotaryJurisdictions(value: js.Array[NotaryJurisdiction]): Self = StObject.set(x, "notaryJurisdictions", value.asInstanceOf[js.Any])
+    inline def setNotaryJurisdictions(value: js.Array[NotaryJurisdiction]): Self = StObject.set(x, "notaryJurisdictions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotaryJurisdictionsUndefined: Self = StObject.set(x, "notaryJurisdictions", js.undefined)
+    inline def setNotaryJurisdictionsUndefined: Self = StObject.set(x, "notaryJurisdictions", js.undefined)
     
-    @scala.inline
-    def setNotaryJurisdictionsVarargs(value: NotaryJurisdiction*): Self = StObject.set(x, "notaryJurisdictions", js.Array(value :_*))
+    inline def setNotaryJurisdictionsVarargs(value: NotaryJurisdiction*): Self = StObject.set(x, "notaryJurisdictions", js.Array(value :_*))
     
-    @scala.inline
-    def setPreviousUri(value: String): Self = StObject.set(x, "previousUri", value.asInstanceOf[js.Any])
+    inline def setPreviousUri(value: String): Self = StObject.set(x, "previousUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousUriUndefined: Self = StObject.set(x, "previousUri", js.undefined)
+    inline def setPreviousUriUndefined: Self = StObject.set(x, "previousUri", js.undefined)
     
-    @scala.inline
-    def setResultSetSize(value: String): Self = StObject.set(x, "resultSetSize", value.asInstanceOf[js.Any])
+    inline def setResultSetSize(value: String): Self = StObject.set(x, "resultSetSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultSetSizeUndefined: Self = StObject.set(x, "resultSetSize", js.undefined)
+    inline def setResultSetSizeUndefined: Self = StObject.set(x, "resultSetSize", js.undefined)
     
-    @scala.inline
-    def setStartPosition(value: String): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
+    inline def setStartPosition(value: String): Self = StObject.set(x, "startPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartPositionUndefined: Self = StObject.set(x, "startPosition", js.undefined)
+    inline def setStartPositionUndefined: Self = StObject.set(x, "startPosition", js.undefined)
     
-    @scala.inline
-    def setTotalSetSize(value: String): Self = StObject.set(x, "totalSetSize", value.asInstanceOf[js.Any])
+    inline def setTotalSetSize(value: String): Self = StObject.set(x, "totalSetSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalSetSizeUndefined: Self = StObject.set(x, "totalSetSize", js.undefined)
+    inline def setTotalSetSizeUndefined: Self = StObject.set(x, "totalSetSize", js.undefined)
   }
 }

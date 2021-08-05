@@ -44,12 +44,9 @@ object PropertyBase {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def propertyIsMeta(_value: js.Any, key: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("propertyIsMeta")(_value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def propertyIsMeta(_value: js.Any, key: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("propertyIsMeta")(_value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def propertyUnprefixMeta(_value: js.Any, key: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("propertyUnprefixMeta")(_value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def propertyUnprefixMeta(_value: js.Any, key: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("propertyUnprefixMeta")(_value.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def toJSON(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def toJSON(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toJSON")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

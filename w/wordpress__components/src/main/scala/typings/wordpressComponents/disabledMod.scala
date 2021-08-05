@@ -12,8 +12,7 @@ object disabledMod {
   
   object default {
     
-    @scala.inline
-    def apply(props: Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(props: Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@wordpress/components/disabled", JSImport.Default)
     @js.native
@@ -22,8 +21,7 @@ object disabledMod {
     @JSImport("@wordpress/components/disabled", "default.Consumer")
     @js.native
     def Consumer: typings.react.mod.Consumer[Boolean] = js.native
-    @scala.inline
-    def Consumer_=(x: Consumer[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Consumer")(x.asInstanceOf[js.Any])
+    inline def Consumer_=(x: Consumer[Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Consumer")(x.asInstanceOf[js.Any])
   }
   
   object Disabled {
@@ -34,20 +32,16 @@ object disabledMod {
     }
     object Props {
       
-      @scala.inline
-      def apply(): Props = {
+      inline def apply(): Props = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Props]
       }
       
-      @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+      extension [Self <: Props](x: Self) {
         
-        @scala.inline
-        def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+        inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+        inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       }
     }
   }

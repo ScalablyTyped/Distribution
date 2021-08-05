@@ -13,19 +13,15 @@ trait DataUriOptions extends StObject {
 }
 object DataUriOptions {
   
-  @scala.inline
-  def apply(): DataUriOptions = {
+  inline def apply(): DataUriOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataUriOptions]
   }
   
-  @scala.inline
-  implicit class DataUriOptionsMutableBuilder[Self <: DataUriOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DataUriOptions](x: Self) {
     
-    @scala.inline
-    def setPaddingRequired(value: Boolean): Self = StObject.set(x, "paddingRequired", value.asInstanceOf[js.Any])
+    inline def setPaddingRequired(value: Boolean): Self = StObject.set(x, "paddingRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingRequiredUndefined: Self = StObject.set(x, "paddingRequired", js.undefined)
+    inline def setPaddingRequiredUndefined: Self = StObject.set(x, "paddingRequired", js.undefined)
   }
 }

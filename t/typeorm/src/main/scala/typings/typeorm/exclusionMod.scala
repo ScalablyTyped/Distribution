@@ -12,8 +12,6 @@ object exclusionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Exclusion(expression: String): ClassDecorator & PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Exclusion")(expression.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator & PropertyDecorator]
-  @scala.inline
-  def Exclusion(name: String, expression: String): ClassDecorator & PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Exclusion")(name.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[ClassDecorator & PropertyDecorator]
+  inline def Exclusion(expression: String): ClassDecorator & PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Exclusion")(expression.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator & PropertyDecorator]
+  inline def Exclusion(name: String, expression: String): ClassDecorator & PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Exclusion")(name.asInstanceOf[js.Any], expression.asInstanceOf[js.Any])).asInstanceOf[ClassDecorator & PropertyDecorator]
 }

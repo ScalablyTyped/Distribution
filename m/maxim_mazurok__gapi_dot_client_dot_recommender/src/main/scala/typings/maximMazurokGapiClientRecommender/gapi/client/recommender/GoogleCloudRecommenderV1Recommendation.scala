@@ -42,79 +42,55 @@ trait GoogleCloudRecommenderV1Recommendation extends StObject {
 }
 object GoogleCloudRecommenderV1Recommendation {
   
-  @scala.inline
-  def apply(): GoogleCloudRecommenderV1Recommendation = {
+  inline def apply(): GoogleCloudRecommenderV1Recommendation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudRecommenderV1Recommendation]
   }
   
-  @scala.inline
-  implicit class GoogleCloudRecommenderV1RecommendationMutableBuilder[Self <: GoogleCloudRecommenderV1Recommendation] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudRecommenderV1Recommendation](x: Self) {
     
-    @scala.inline
-    def setAdditionalImpact(value: js.Array[GoogleCloudRecommenderV1Impact]): Self = StObject.set(x, "additionalImpact", value.asInstanceOf[js.Any])
+    inline def setAdditionalImpact(value: js.Array[GoogleCloudRecommenderV1Impact]): Self = StObject.set(x, "additionalImpact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalImpactUndefined: Self = StObject.set(x, "additionalImpact", js.undefined)
+    inline def setAdditionalImpactUndefined: Self = StObject.set(x, "additionalImpact", js.undefined)
     
-    @scala.inline
-    def setAdditionalImpactVarargs(value: GoogleCloudRecommenderV1Impact*): Self = StObject.set(x, "additionalImpact", js.Array(value :_*))
+    inline def setAdditionalImpactVarargs(value: GoogleCloudRecommenderV1Impact*): Self = StObject.set(x, "additionalImpact", js.Array(value :_*))
     
-    @scala.inline
-    def setAssociatedInsights(value: js.Array[GoogleCloudRecommenderV1RecommendationInsightReference]): Self = StObject.set(x, "associatedInsights", value.asInstanceOf[js.Any])
+    inline def setAssociatedInsights(value: js.Array[GoogleCloudRecommenderV1RecommendationInsightReference]): Self = StObject.set(x, "associatedInsights", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociatedInsightsUndefined: Self = StObject.set(x, "associatedInsights", js.undefined)
+    inline def setAssociatedInsightsUndefined: Self = StObject.set(x, "associatedInsights", js.undefined)
     
-    @scala.inline
-    def setAssociatedInsightsVarargs(value: GoogleCloudRecommenderV1RecommendationInsightReference*): Self = StObject.set(x, "associatedInsights", js.Array(value :_*))
+    inline def setAssociatedInsightsVarargs(value: GoogleCloudRecommenderV1RecommendationInsightReference*): Self = StObject.set(x, "associatedInsights", js.Array(value :_*))
     
-    @scala.inline
-    def setContent(value: GoogleCloudRecommenderV1RecommendationContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: GoogleCloudRecommenderV1RecommendationContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setLastRefreshTime(value: String): Self = StObject.set(x, "lastRefreshTime", value.asInstanceOf[js.Any])
+    inline def setLastRefreshTime(value: String): Self = StObject.set(x, "lastRefreshTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastRefreshTimeUndefined: Self = StObject.set(x, "lastRefreshTime", js.undefined)
+    inline def setLastRefreshTimeUndefined: Self = StObject.set(x, "lastRefreshTime", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPrimaryImpact(value: GoogleCloudRecommenderV1Impact): Self = StObject.set(x, "primaryImpact", value.asInstanceOf[js.Any])
+    inline def setPrimaryImpact(value: GoogleCloudRecommenderV1Impact): Self = StObject.set(x, "primaryImpact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryImpactUndefined: Self = StObject.set(x, "primaryImpact", js.undefined)
+    inline def setPrimaryImpactUndefined: Self = StObject.set(x, "primaryImpact", js.undefined)
     
-    @scala.inline
-    def setRecommenderSubtype(value: String): Self = StObject.set(x, "recommenderSubtype", value.asInstanceOf[js.Any])
+    inline def setRecommenderSubtype(value: String): Self = StObject.set(x, "recommenderSubtype", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommenderSubtypeUndefined: Self = StObject.set(x, "recommenderSubtype", js.undefined)
+    inline def setRecommenderSubtypeUndefined: Self = StObject.set(x, "recommenderSubtype", js.undefined)
     
-    @scala.inline
-    def setStateInfo(value: GoogleCloudRecommenderV1RecommendationStateInfo): Self = StObject.set(x, "stateInfo", value.asInstanceOf[js.Any])
+    inline def setStateInfo(value: GoogleCloudRecommenderV1RecommendationStateInfo): Self = StObject.set(x, "stateInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateInfoUndefined: Self = StObject.set(x, "stateInfo", js.undefined)
+    inline def setStateInfoUndefined: Self = StObject.set(x, "stateInfo", js.undefined)
   }
 }

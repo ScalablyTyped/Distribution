@@ -12,22 +12,17 @@ trait Fail extends StObject {
 }
 object Fail {
   
-  @scala.inline
-  def apply(result: HitKeywords): Fail = {
+  inline def apply(result: HitKeywords): Fail = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[Fail]
   }
   
-  @scala.inline
-  implicit class FailMutableBuilder[Self <: Fail] (val x: Self) extends AnyVal {
+  extension [Self <: Fail](x: Self) {
     
-    @scala.inline
-    def setFail(value: /* res */ Error => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
+    inline def setFail(value: /* res */ Error => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    @scala.inline
-    def setResult(value: HitKeywords): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: HitKeywords): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

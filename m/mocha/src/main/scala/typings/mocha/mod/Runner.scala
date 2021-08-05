@@ -58,6 +58,5 @@ object Runner {
     * Wrapper for setImmediate, process.nextTick, or browser polyfill.
     */
   /* static member */
-  @scala.inline
-  def immediately(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("immediately")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def immediately(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("immediately")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

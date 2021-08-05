@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.ThemeEffectScheme")
 @js.native
-class ThemeEffectScheme protected ()
+/* private */ class ThemeEffectScheme ()
   extends StObject
      with typings.activexOffice.Office.ThemeEffectScheme {
   
@@ -19,7 +19,7 @@ class ThemeEffectScheme protected ()
   /* CompleteClass */
   override def Load(FileName: String): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.ThemeEffectScheme_typekey")
   var OfficeDotThemeEffectScheme_typekey: typings.activexOffice.Office.ThemeEffectScheme = js.native
   

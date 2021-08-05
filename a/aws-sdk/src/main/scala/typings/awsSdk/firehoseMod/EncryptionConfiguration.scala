@@ -18,25 +18,19 @@ trait EncryptionConfiguration extends StObject {
 }
 object EncryptionConfiguration {
   
-  @scala.inline
-  def apply(): EncryptionConfiguration = {
+  inline def apply(): EncryptionConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EncryptionConfiguration]
   }
   
-  @scala.inline
-  implicit class EncryptionConfigurationMutableBuilder[Self <: EncryptionConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: EncryptionConfiguration](x: Self) {
     
-    @scala.inline
-    def setKMSEncryptionConfig(value: KMSEncryptionConfig): Self = StObject.set(x, "KMSEncryptionConfig", value.asInstanceOf[js.Any])
+    inline def setKMSEncryptionConfig(value: KMSEncryptionConfig): Self = StObject.set(x, "KMSEncryptionConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKMSEncryptionConfigUndefined: Self = StObject.set(x, "KMSEncryptionConfig", js.undefined)
+    inline def setKMSEncryptionConfigUndefined: Self = StObject.set(x, "KMSEncryptionConfig", js.undefined)
     
-    @scala.inline
-    def setNoEncryptionConfig(value: NoEncryptionConfig): Self = StObject.set(x, "NoEncryptionConfig", value.asInstanceOf[js.Any])
+    inline def setNoEncryptionConfig(value: NoEncryptionConfig): Self = StObject.set(x, "NoEncryptionConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoEncryptionConfigUndefined: Self = StObject.set(x, "NoEncryptionConfig", js.undefined)
+    inline def setNoEncryptionConfigUndefined: Self = StObject.set(x, "NoEncryptionConfig", js.undefined)
   }
 }

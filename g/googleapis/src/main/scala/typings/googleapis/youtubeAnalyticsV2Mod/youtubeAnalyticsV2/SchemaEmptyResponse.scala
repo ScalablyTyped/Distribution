@@ -16,19 +16,15 @@ trait SchemaEmptyResponse extends StObject {
 }
 object SchemaEmptyResponse {
   
-  @scala.inline
-  def apply(): SchemaEmptyResponse = {
+  inline def apply(): SchemaEmptyResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEmptyResponse]
   }
   
-  @scala.inline
-  implicit class SchemaEmptyResponseMutableBuilder[Self <: SchemaEmptyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEmptyResponse](x: Self) {
     
-    @scala.inline
-    def setErrors(value: SchemaErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: SchemaErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
   }
 }

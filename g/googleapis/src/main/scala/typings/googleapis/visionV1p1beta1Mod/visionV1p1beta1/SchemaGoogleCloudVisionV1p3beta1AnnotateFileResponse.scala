@@ -22,28 +22,21 @@ trait SchemaGoogleCloudVisionV1p3beta1AnnotateFileResponse extends StObject {
 }
 object SchemaGoogleCloudVisionV1p3beta1AnnotateFileResponse {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudVisionV1p3beta1AnnotateFileResponse = {
+  inline def apply(): SchemaGoogleCloudVisionV1p3beta1AnnotateFileResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p3beta1AnnotateFileResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudVisionV1p3beta1AnnotateFileResponseMutableBuilder[Self <: SchemaGoogleCloudVisionV1p3beta1AnnotateFileResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudVisionV1p3beta1AnnotateFileResponse](x: Self) {
     
-    @scala.inline
-    def setInputConfig(value: SchemaGoogleCloudVisionV1p3beta1InputConfig): Self = StObject.set(x, "inputConfig", value.asInstanceOf[js.Any])
+    inline def setInputConfig(value: SchemaGoogleCloudVisionV1p3beta1InputConfig): Self = StObject.set(x, "inputConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputConfigUndefined: Self = StObject.set(x, "inputConfig", js.undefined)
+    inline def setInputConfigUndefined: Self = StObject.set(x, "inputConfig", js.undefined)
     
-    @scala.inline
-    def setResponses(value: js.Array[SchemaGoogleCloudVisionV1p3beta1AnnotateImageResponse]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: js.Array[SchemaGoogleCloudVisionV1p3beta1AnnotateImageResponse]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
+    inline def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
     
-    @scala.inline
-    def setResponsesVarargs(value: SchemaGoogleCloudVisionV1p3beta1AnnotateImageResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
+    inline def setResponsesVarargs(value: SchemaGoogleCloudVisionV1p3beta1AnnotateImageResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
   }
 }

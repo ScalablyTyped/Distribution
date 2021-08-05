@@ -44,8 +44,7 @@ trait DocumentSettings
 }
 object DocumentSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AddExternalLeading: Boolean,
     ApplyUserData: Boolean,
     AutoCalculate: Boolean,
@@ -101,28 +100,20 @@ object DocumentSettings {
     __obj.asInstanceOf[DocumentSettings]
   }
   
-  @scala.inline
-  implicit class DocumentSettingsMutableBuilder[Self <: DocumentSettings] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentSettings](x: Self) {
     
-    @scala.inline
-    def setIsPrintFitPage(value: Boolean): Self = StObject.set(x, "IsPrintFitPage", value.asInstanceOf[js.Any])
+    inline def setIsPrintFitPage(value: Boolean): Self = StObject.set(x, "IsPrintFitPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPrintTilePage(value: Boolean): Self = StObject.set(x, "IsPrintTilePage", value.asInstanceOf[js.Any])
+    inline def setIsPrintTilePage(value: Boolean): Self = StObject.set(x, "IsPrintTilePage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeasureUnit(value: Double): Self = StObject.set(x, "MeasureUnit", value.asInstanceOf[js.Any])
+    inline def setMeasureUnit(value: Double): Self = StObject.set(x, "MeasureUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageNumberFormat(value: Double): Self = StObject.set(x, "PageNumberFormat", value.asInstanceOf[js.Any])
+    inline def setPageNumberFormat(value: Double): Self = StObject.set(x, "PageNumberFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParagraphSummation(value: Boolean): Self = StObject.set(x, "ParagraphSummation", value.asInstanceOf[js.Any])
+    inline def setParagraphSummation(value: Boolean): Self = StObject.set(x, "ParagraphSummation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleDenominator(value: Double): Self = StObject.set(x, "ScaleDenominator", value.asInstanceOf[js.Any])
+    inline def setScaleDenominator(value: Double): Self = StObject.set(x, "ScaleDenominator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleNumerator(value: Double): Self = StObject.set(x, "ScaleNumerator", value.asInstanceOf[js.Any])
+    inline def setScaleNumerator(value: Double): Self = StObject.set(x, "ScaleNumerator", value.asInstanceOf[js.Any])
   }
 }

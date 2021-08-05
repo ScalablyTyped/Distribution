@@ -23,55 +23,39 @@ trait CodeAction extends StObject {
 }
 object CodeAction {
   
-  @scala.inline
-  def apply(title: String): CodeAction = {
+  inline def apply(title: String): CodeAction = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeAction]
   }
   
-  @scala.inline
-  implicit class CodeActionMutableBuilder[Self <: CodeAction] (val x: Self) extends AnyVal {
+  extension [Self <: CodeAction](x: Self) {
     
-    @scala.inline
-    def setCommand(value: Command): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
+    inline def setCommand(value: Command): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
+    inline def setCommandUndefined: Self = StObject.set(x, "command", js.undefined)
     
-    @scala.inline
-    def setDiagnostics(value: js.Array[IMarkerData]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
+    inline def setDiagnostics(value: js.Array[IMarkerData]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
+    inline def setDiagnosticsUndefined: Self = StObject.set(x, "diagnostics", js.undefined)
     
-    @scala.inline
-    def setDiagnosticsVarargs(value: IMarkerData*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
+    inline def setDiagnosticsVarargs(value: IMarkerData*): Self = StObject.set(x, "diagnostics", js.Array(value :_*))
     
-    @scala.inline
-    def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setEdit(value: WorkspaceEdit): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
+    inline def setEdit(value: WorkspaceEdit): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
+    inline def setEditUndefined: Self = StObject.set(x, "edit", js.undefined)
     
-    @scala.inline
-    def setIsPreferred(value: Boolean): Self = StObject.set(x, "isPreferred", value.asInstanceOf[js.Any])
+    inline def setIsPreferred(value: Boolean): Self = StObject.set(x, "isPreferred", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPreferredUndefined: Self = StObject.set(x, "isPreferred", js.undefined)
+    inline def setIsPreferredUndefined: Self = StObject.set(x, "isPreferred", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

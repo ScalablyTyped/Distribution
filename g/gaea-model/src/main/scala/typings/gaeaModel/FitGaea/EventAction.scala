@@ -17,26 +17,20 @@ trait EventAction extends StObject {
 }
 object EventAction {
   
-  @scala.inline
-  def apply(name: String, `type`: String): EventAction = {
+  inline def apply(name: String, `type`: String): EventAction = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventAction]
   }
   
-  @scala.inline
-  implicit class EventActionMutableBuilder[Self <: EventAction] (val x: Self) extends AnyVal {
+  extension [Self <: EventAction](x: Self) {
     
-    @scala.inline
-    def setCall(value: EventCallType): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
+    inline def setCall(value: EventCallType): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallUndefined: Self = StObject.set(x, "call", js.undefined)
+    inline def setCallUndefined: Self = StObject.set(x, "call", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

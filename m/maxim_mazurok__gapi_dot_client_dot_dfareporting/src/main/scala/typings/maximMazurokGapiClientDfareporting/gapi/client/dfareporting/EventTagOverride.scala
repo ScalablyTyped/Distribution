@@ -14,25 +14,19 @@ trait EventTagOverride extends StObject {
 }
 object EventTagOverride {
   
-  @scala.inline
-  def apply(): EventTagOverride = {
+  inline def apply(): EventTagOverride = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EventTagOverride]
   }
   
-  @scala.inline
-  implicit class EventTagOverrideMutableBuilder[Self <: EventTagOverride] (val x: Self) extends AnyVal {
+  extension [Self <: EventTagOverride](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
   }
 }

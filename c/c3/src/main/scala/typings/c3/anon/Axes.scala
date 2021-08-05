@@ -69,124 +69,85 @@ trait Axes extends StObject {
 }
 object Axes {
   
-  @scala.inline
-  def apply(): Axes = {
+  inline def apply(): Axes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Axes]
   }
   
-  @scala.inline
-  implicit class AxesMutableBuilder[Self <: Axes] (val x: Self) extends AnyVal {
+  extension [Self <: Axes](x: Self) {
     
-    @scala.inline
-    def setAxes(value: Record[String, AxisName]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
+    inline def setAxes(value: Record[String, AxisName]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
+    inline def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
     
-    @scala.inline
-    def setCategories(value: js.Array[js.Array[String]]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    inline def setCategories(value: js.Array[js.Array[String]]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
+    inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    @scala.inline
-    def setCategoriesVarargs(value: js.Array[String]*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: js.Array[String]*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
-    @scala.inline
-    def setClasses(value: Record[String, String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
+    inline def setClasses(value: Record[String, String]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
+    inline def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
     
-    @scala.inline
-    def setColors(value: Record[String, String | RGBColor | HSLColor]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    inline def setColors(value: Record[String, String | RGBColor | HSLColor]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+    inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    @scala.inline
-    def setColumns(value: js.Array[Array[String | Primitive]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[Array[String | Primitive]]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    @scala.inline
-    def setColumnsVarargs(value: (Array[String | Primitive])*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: (Array[String | Primitive])*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
-    @scala.inline
-    def setData(value: typings.c3.mod.Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: typings.c3.mod.Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDone(value: () => Unit): Self = StObject.set(x, "done", js.Any.fromFunction0(value))
+    inline def setDone(value: () => Unit): Self = StObject.set(x, "done", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
+    inline def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
     
-    @scala.inline
-    def setJson(value: (Record[String, PrimitiveArray]) | (js.Array[Record[String, Primitive]])): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+    inline def setJson(value: (Record[String, PrimitiveArray]) | (js.Array[Record[String, Primitive]])): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
+    inline def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
     
-    @scala.inline
-    def setJsonVarargs(value: (Record[String, Primitive])*): Self = StObject.set(x, "json", js.Array(value :_*))
+    inline def setJsonVarargs(value: (Record[String, Primitive])*): Self = StObject.set(x, "json", js.Array(value :_*))
     
-    @scala.inline
-    def setKeys(value: Value): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: Value): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+    inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
     
-    @scala.inline
-    def setNames(value: Record[String, String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+    inline def setNames(value: Record[String, String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
+    inline def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
     
-    @scala.inline
-    def setRows(value: js.Array[PrimitiveArray]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[PrimitiveArray]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    @scala.inline
-    def setRowsVarargs(value: PrimitiveArray*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: PrimitiveArray*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: ChartType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ChartType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setTypes(value: Record[String, ChartType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: Record[String, ChartType]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+    inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
     
-    @scala.inline
-    def setUnload(value: `true` | ArrayOrString): Self = StObject.set(x, "unload", value.asInstanceOf[js.Any])
+    inline def setUnload(value: `true` | ArrayOrString): Self = StObject.set(x, "unload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnloadUndefined: Self = StObject.set(x, "unload", js.undefined)
+    inline def setUnloadUndefined: Self = StObject.set(x, "unload", js.undefined)
     
-    @scala.inline
-    def setUnloadVarargs(value: String*): Self = StObject.set(x, "unload", js.Array(value :_*))
+    inline def setUnloadVarargs(value: String*): Self = StObject.set(x, "unload", js.Array(value :_*))
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setXs(value: Record[String, String]): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
+    inline def setXs(value: Record[String, String]): Self = StObject.set(x, "xs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXsUndefined: Self = StObject.set(x, "xs", js.undefined)
+    inline def setXsUndefined: Self = StObject.set(x, "xs", js.undefined)
   }
 }

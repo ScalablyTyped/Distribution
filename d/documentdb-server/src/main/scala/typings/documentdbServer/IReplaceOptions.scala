@@ -18,25 +18,19 @@ trait IReplaceOptions extends StObject {
 }
 object IReplaceOptions {
   
-  @scala.inline
-  def apply(): IReplaceOptions = {
+  inline def apply(): IReplaceOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IReplaceOptions]
   }
   
-  @scala.inline
-  implicit class IReplaceOptionsMutableBuilder[Self <: IReplaceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IReplaceOptions](x: Self) {
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setIndexAction(value: String): Self = StObject.set(x, "indexAction", value.asInstanceOf[js.Any])
+    inline def setIndexAction(value: String): Self = StObject.set(x, "indexAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexActionUndefined: Self = StObject.set(x, "indexAction", js.undefined)
+    inline def setIndexActionUndefined: Self = StObject.set(x, "indexAction", js.undefined)
   }
 }

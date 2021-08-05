@@ -33,39 +33,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlMarkerStyle extends StObject
 object XlMarkerStyle {
   
-  @scala.inline
-  def xlMarkerStyleAutomatic: `-4105` = -4105.asInstanceOf[`-4105`]
+  inline def xlMarkerStyleAutomatic: `-4105` = -4105.asInstanceOf[`-4105`]
   
-  @scala.inline
-  def xlMarkerStyleCircle: `8` = 8.asInstanceOf[`8`]
+  inline def xlMarkerStyleCircle: `8` = 8.asInstanceOf[`8`]
   
-  @scala.inline
-  def xlMarkerStyleDash: `-4115` = -4115.asInstanceOf[`-4115`]
+  inline def xlMarkerStyleDash: `-4115` = -4115.asInstanceOf[`-4115`]
   
-  @scala.inline
-  def xlMarkerStyleDiamond: `2` = 2.asInstanceOf[`2`]
+  inline def xlMarkerStyleDiamond: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlMarkerStyleDot: `-4118` = -4118.asInstanceOf[`-4118`]
+  inline def xlMarkerStyleDot: `-4118` = -4118.asInstanceOf[`-4118`]
   
-  @scala.inline
-  def xlMarkerStyleNone: `-4142` = -4142.asInstanceOf[`-4142`]
+  inline def xlMarkerStyleNone: `-4142` = -4142.asInstanceOf[`-4142`]
   
-  @scala.inline
-  def xlMarkerStylePicture: `-4147` = -4147.asInstanceOf[`-4147`]
+  inline def xlMarkerStylePicture: `-4147` = -4147.asInstanceOf[`-4147`]
   
-  @scala.inline
-  def xlMarkerStylePlus: `9` = 9.asInstanceOf[`9`]
+  inline def xlMarkerStylePlus: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def xlMarkerStyleSquare: `1` = 1.asInstanceOf[`1`]
+  inline def xlMarkerStyleSquare: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlMarkerStyleStar: `5` = 5.asInstanceOf[`5`]
+  inline def xlMarkerStyleStar: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def xlMarkerStyleTriangle: `3` = 3.asInstanceOf[`3`]
+  inline def xlMarkerStyleTriangle: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def xlMarkerStyleX: `-4168` = -4168.asInstanceOf[`-4168`]
+  inline def xlMarkerStyleX: `-4168` = -4168.asInstanceOf[`-4168`]
 }

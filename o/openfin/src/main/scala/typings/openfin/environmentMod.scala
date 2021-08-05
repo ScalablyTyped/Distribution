@@ -38,8 +38,7 @@ object environmentMod {
   }
   object Environment {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       createChildWindow: js.Any => js.Promise[js.Any],
       getCurrentEntityIdentity: () => Identity,
       getCurrentEntityType: () => EntityType,
@@ -55,38 +54,27 @@ object environmentMod {
       __obj.asInstanceOf[Environment]
     }
     
-    @scala.inline
-    implicit class EnvironmentMutableBuilder[Self <: Environment] (val x: Self) extends AnyVal {
+    extension [Self <: Environment](x: Self) {
       
-      @scala.inline
-      def setCreateChildWindow(value: js.Any => js.Promise[js.Any]): Self = StObject.set(x, "createChildWindow", js.Any.fromFunction1(value))
+      inline def setCreateChildWindow(value: js.Any => js.Promise[js.Any]): Self = StObject.set(x, "createChildWindow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetCurrentEntityIdentity(value: () => Identity): Self = StObject.set(x, "getCurrentEntityIdentity", js.Any.fromFunction0(value))
+      inline def setGetCurrentEntityIdentity(value: () => Identity): Self = StObject.set(x, "getCurrentEntityIdentity", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCurrentEntityType(value: () => EntityType): Self = StObject.set(x, "getCurrentEntityType", js.Any.fromFunction0(value))
+      inline def setGetCurrentEntityType(value: () => EntityType): Self = StObject.set(x, "getCurrentEntityType", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetNextMessageId(value: () => js.Any): Self = StObject.set(x, "getNextMessageId", js.Any.fromFunction0(value))
+      inline def setGetNextMessageId(value: () => js.Any): Self = StObject.set(x, "getNextMessageId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRandomId(value: () => String): Self = StObject.set(x, "getRandomId", js.Any.fromFunction0(value))
+      inline def setGetRandomId(value: () => String): Self = StObject.set(x, "getRandomId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetWebWindow(value: Identity => Window): Self = StObject.set(x, "getWebWindow", js.Any.fromFunction1(value))
+      inline def setGetWebWindow(value: Identity => Window): Self = StObject.set(x, "getWebWindow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsWindowExists(value: (String, String) => Boolean): Self = StObject.set(x, "isWindowExists", js.Any.fromFunction2(value))
+      inline def setIsWindowExists(value: (String, String) => Boolean): Self = StObject.set(x, "isWindowExists", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRaiseEvent(value: (String, js.Any) => Unit): Self = StObject.set(x, "raiseEvent", js.Any.fromFunction2(value))
+      inline def setRaiseEvent(value: (String, js.Any) => Unit): Self = StObject.set(x, "raiseEvent", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRetrievePort(value: NewConnectConfig => js.Promise[Double]): Self = StObject.set(x, "retrievePort", js.Any.fromFunction1(value))
+      inline def setRetrievePort(value: NewConnectConfig => js.Promise[Double]): Self = StObject.set(x, "retrievePort", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWriteToken(value: (String, String) => js.Promise[String]): Self = StObject.set(x, "writeToken", js.Any.fromFunction2(value))
+      inline def setWriteToken(value: (String, String) => js.Promise[String]): Self = StObject.set(x, "writeToken", js.Any.fromFunction2(value))
     }
   }
 }

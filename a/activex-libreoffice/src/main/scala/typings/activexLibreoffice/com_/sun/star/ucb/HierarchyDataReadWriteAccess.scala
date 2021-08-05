@@ -23,8 +23,7 @@ trait HierarchyDataReadWriteAccess
      with XChangesBatch
 object HierarchyDataReadWriteAccess {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementNames: SafeArray[String],
     ElementType: `type`,
     PendingChanges: ChangesSet,

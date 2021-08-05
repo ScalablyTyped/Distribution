@@ -58,8 +58,7 @@ trait RequestOptions extends StObject {
 }
 object RequestOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cache: Boolean,
     contentType: String,
     data: String | js.Object,
@@ -74,31 +73,22 @@ object RequestOptions {
     __obj.asInstanceOf[RequestOptions]
   }
   
-  @scala.inline
-  implicit class RequestOptionsMutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RequestOptions](x: Self) {
     
-    @scala.inline
-    def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: String | js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: (XMLHttpRequest, String, js.Any) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
+    inline def setError(value: (XMLHttpRequest, String, js.Any) => Unit): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setExperimental(value: Boolean): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
+    inline def setExperimental(value: Boolean): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: Accept): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Accept): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: String => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: String => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setType(value: GET | HEAD | POST | PUT | DELETE | CONNECT | OPTIONS | PATCH): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: GET | HEAD | POST | PUT | DELETE | CONNECT | OPTIONS | PATCH): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

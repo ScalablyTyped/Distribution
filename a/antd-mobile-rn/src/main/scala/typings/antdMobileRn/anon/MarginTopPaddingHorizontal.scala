@@ -12,19 +12,15 @@ trait MarginTopPaddingHorizontal extends StObject {
 }
 object MarginTopPaddingHorizontal {
   
-  @scala.inline
-  def apply(marginTop: Double, paddingHorizontal: Double): MarginTopPaddingHorizontal = {
+  inline def apply(marginTop: Double, paddingHorizontal: Double): MarginTopPaddingHorizontal = {
     val __obj = js.Dynamic.literal(marginTop = marginTop.asInstanceOf[js.Any], paddingHorizontal = paddingHorizontal.asInstanceOf[js.Any])
     __obj.asInstanceOf[MarginTopPaddingHorizontal]
   }
   
-  @scala.inline
-  implicit class MarginTopPaddingHorizontalMutableBuilder[Self <: MarginTopPaddingHorizontal] (val x: Self) extends AnyVal {
+  extension [Self <: MarginTopPaddingHorizontal](x: Self) {
     
-    @scala.inline
-    def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+    inline def setMarginTop(value: Double): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingHorizontal(value: Double): Self = StObject.set(x, "paddingHorizontal", value.asInstanceOf[js.Any])
+    inline def setPaddingHorizontal(value: Double): Self = StObject.set(x, "paddingHorizontal", value.asInstanceOf[js.Any])
   }
 }

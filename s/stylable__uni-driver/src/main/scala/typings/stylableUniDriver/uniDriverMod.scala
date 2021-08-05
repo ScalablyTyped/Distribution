@@ -14,7 +14,7 @@ object uniDriverMod {
   class StylableUnidriverUtil protected () extends StObject {
     def this(stylesheet: MinimalStylesheet) = this()
     
-    var getBaseStateWithParam: js.Any = js.native
+    /* private */ var getBaseStateWithParam: js.Any = js.native
     
     def getStateValueFromClassName(cls: String, baseState: String): String = js.native
     
@@ -23,6 +23,6 @@ object uniDriverMod {
     def hasStyleState(base: ElementRemoteApi, stateName: String): js.Promise[Boolean] = js.native
     def hasStyleState(base: ElementRemoteApi, stateName: String, param: StateValue): js.Promise[Boolean] = js.native
     
-    var stylesheet: js.Any = js.native
+    /* private */ var stylesheet: js.Any = js.native
   }
 }

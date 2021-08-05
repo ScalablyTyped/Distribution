@@ -11,19 +11,15 @@ trait BlankScreen extends StObject {
 }
 object BlankScreen {
   
-  @scala.inline
-  def apply(): BlankScreen = {
+  inline def apply(): BlankScreen = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BlankScreen]
   }
   
-  @scala.inline
-  implicit class BlankScreenMutableBuilder[Self <: BlankScreen] (val x: Self) extends AnyVal {
+  extension [Self <: BlankScreen](x: Self) {
     
-    @scala.inline
-    def setScreenId(value: String): Self = StObject.set(x, "screenId", value.asInstanceOf[js.Any])
+    inline def setScreenId(value: String): Self = StObject.set(x, "screenId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenIdUndefined: Self = StObject.set(x, "screenId", js.undefined)
+    inline def setScreenIdUndefined: Self = StObject.set(x, "screenId", js.undefined)
   }
 }

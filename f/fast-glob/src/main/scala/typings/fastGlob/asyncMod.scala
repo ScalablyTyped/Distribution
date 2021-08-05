@@ -18,7 +18,7 @@ object asyncMod {
   trait ProviderAsync
     extends typings.fastGlob.providerMod.default[js.Promise[js.Array[EntryItem]]] {
     
-    var _reader: typings.fastGlob.readersStreamMod.default = js.native
+    /* protected */ var _reader: typings.fastGlob.readersStreamMod.default = js.native
     
     def api(root: String, task: Task, options: ReaderOptions): Readable = js.native
   }

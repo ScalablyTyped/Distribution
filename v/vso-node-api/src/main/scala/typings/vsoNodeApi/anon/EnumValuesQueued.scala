@@ -10,16 +10,13 @@ trait EnumValuesQueued extends StObject {
 }
 object EnumValuesQueued {
   
-  @scala.inline
-  def apply(enumValues: Queued): EnumValuesQueued = {
+  inline def apply(enumValues: Queued): EnumValuesQueued = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesQueued]
   }
   
-  @scala.inline
-  implicit class EnumValuesQueuedMutableBuilder[Self <: EnumValuesQueued] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesQueued](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: Queued): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: Queued): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

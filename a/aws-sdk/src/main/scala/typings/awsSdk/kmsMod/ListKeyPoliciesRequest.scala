@@ -23,28 +23,21 @@ trait ListKeyPoliciesRequest extends StObject {
 }
 object ListKeyPoliciesRequest {
   
-  @scala.inline
-  def apply(KeyId: KeyIdType): ListKeyPoliciesRequest = {
+  inline def apply(KeyId: KeyIdType): ListKeyPoliciesRequest = {
     val __obj = js.Dynamic.literal(KeyId = KeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListKeyPoliciesRequest]
   }
   
-  @scala.inline
-  implicit class ListKeyPoliciesRequestMutableBuilder[Self <: ListKeyPoliciesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListKeyPoliciesRequest](x: Self) {
     
-    @scala.inline
-    def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimit(value: LimitType): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
+    inline def setLimit(value: LimitType): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
+    inline def setLimitUndefined: Self = StObject.set(x, "Limit", js.undefined)
     
-    @scala.inline
-    def setMarker(value: MarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: MarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

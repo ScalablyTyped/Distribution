@@ -29,11 +29,9 @@ object mod {
   @js.native
   val Resolver: typings.reactResolver.mod.Resolver = js.native
   
-  @scala.inline
-  def client(loadingComponent: ComponentType[js.Any]): js.Function1[/* component */ ComponentType[js.Any], StatelessComponent[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("client")(loadingComponent.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[js.Any], StatelessComponent[js.Any]]]
+  inline def client(loadingComponent: ComponentType[js.Any]): js.Function1[/* component */ ComponentType[js.Any], StatelessComponent[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("client")(loadingComponent.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[js.Any], StatelessComponent[js.Any]]]
   
-  @scala.inline
-  def context[K /* <: String */](prop: K): js.Function1[
+  inline def context[K /* <: String */](prop: K): js.Function1[
     /* component */ ComponentType[js.Any], 
     StatelessComponent[js.Any & (Record[K, js.Any])]
   ] = ^.asInstanceOf[js.Dynamic].applyDynamic("context")(prop.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
@@ -41,8 +39,7 @@ object mod {
     StatelessComponent[js.Any & (Record[K, js.Any])]
   ]]
   
-  @scala.inline
-  def resolve[OwnProps, ResolvableProps, MoreProps](
+  inline def resolve[OwnProps, ResolvableProps, MoreProps](
     resolversMap: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof ResolvableProps ]: react-resolver.react-resolver.ResolveFn<OwnProps & MoreProps, ResolvableProps[K]>}
     */ typings.reactResolver.reactResolverStrings.resolve & TopLevel[ResolvableProps]
@@ -57,8 +54,7 @@ object mod {
     ], 
     StatelessComponent[OwnProps & MoreProps]
   ]]
-  @scala.inline
-  def resolve[OwnProps, K /* <: String */, V, MoreProps](prop: K, resolveFn: ResolveFn[OwnProps & MoreProps, V]): js.Function1[
+  inline def resolve[OwnProps, K /* <: String */, V, MoreProps](prop: K, resolveFn: ResolveFn[OwnProps & MoreProps, V]): js.Function1[
     /* component */ ComponentType[OwnProps & typings.reactResolver.reactResolverStrings.resolve & TopLevel[js.Any]], 
     StatelessComponent[OwnProps & MoreProps]
   ] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(prop.asInstanceOf[js.Any], resolveFn.asInstanceOf[js.Any])).asInstanceOf[js.Function1[

@@ -20,49 +20,35 @@ trait FullOptions extends StObject {
 }
 object FullOptions {
   
-  @scala.inline
-  def apply(): FullOptions = {
+  inline def apply(): FullOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FullOptions]
   }
   
-  @scala.inline
-  implicit class FullOptionsMutableBuilder[Self <: FullOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FullOptions](x: Self) {
     
-    @scala.inline
-    def setError(value: js.Function): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: js.Function): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setInstallationId(value: String): Self = StObject.set(x, "installationId", value.asInstanceOf[js.Any])
+    inline def setInstallationId(value: String): Self = StObject.set(x, "installationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallationIdUndefined: Self = StObject.set(x, "installationId", js.undefined)
+    inline def setInstallationIdUndefined: Self = StObject.set(x, "installationId", js.undefined)
     
-    @scala.inline
-    def setProgress(value: js.Function): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: js.Function): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
+    inline def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)
     
-    @scala.inline
-    def setSessionToken(value: String): Self = StObject.set(x, "sessionToken", value.asInstanceOf[js.Any])
+    inline def setSessionToken(value: String): Self = StObject.set(x, "sessionToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionTokenUndefined: Self = StObject.set(x, "sessionToken", js.undefined)
+    inline def setSessionTokenUndefined: Self = StObject.set(x, "sessionToken", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: js.Function): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: js.Function): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     
-    @scala.inline
-    def setUseMasterKey(value: Boolean): Self = StObject.set(x, "useMasterKey", value.asInstanceOf[js.Any])
+    inline def setUseMasterKey(value: Boolean): Self = StObject.set(x, "useMasterKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseMasterKeyUndefined: Self = StObject.set(x, "useMasterKey", js.undefined)
+    inline def setUseMasterKeyUndefined: Self = StObject.set(x, "useMasterKey", js.undefined)
   }
 }

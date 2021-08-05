@@ -13,17 +13,14 @@ object typesOverLimitMod {
   }
   object OverLimit {
     
-    @scala.inline
-    def apply(): OverLimit = {
+    inline def apply(): OverLimit = {
       val __obj = js.Dynamic.literal(name = "OverLimit")
       __obj.asInstanceOf[OverLimit]
     }
     
-    @scala.inline
-    implicit class OverLimitMutableBuilder[Self <: OverLimit] (val x: Self) extends AnyVal {
+    extension [Self <: OverLimit](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.OverLimit): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.OverLimit): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

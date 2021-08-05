@@ -25,37 +25,27 @@ trait StackNavigationConfig extends StObject {
 }
 object StackNavigationConfig {
   
-  @scala.inline
-  def apply(): StackNavigationConfig = {
+  inline def apply(): StackNavigationConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StackNavigationConfig]
   }
   
-  @scala.inline
-  implicit class StackNavigationConfigMutableBuilder[Self <: StackNavigationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: StackNavigationConfig](x: Self) {
     
-    @scala.inline
-    def setDetachInactiveScreens(value: Boolean): Self = StObject.set(x, "detachInactiveScreens", value.asInstanceOf[js.Any])
+    inline def setDetachInactiveScreens(value: Boolean): Self = StObject.set(x, "detachInactiveScreens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetachInactiveScreensUndefined: Self = StObject.set(x, "detachInactiveScreens", js.undefined)
+    inline def setDetachInactiveScreensUndefined: Self = StObject.set(x, "detachInactiveScreens", js.undefined)
     
-    @scala.inline
-    def setHeaderMode(value: StackHeaderMode): Self = StObject.set(x, "headerMode", value.asInstanceOf[js.Any])
+    inline def setHeaderMode(value: StackHeaderMode): Self = StObject.set(x, "headerMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaderModeUndefined: Self = StObject.set(x, "headerMode", js.undefined)
+    inline def setHeaderModeUndefined: Self = StObject.set(x, "headerMode", js.undefined)
     
-    @scala.inline
-    def setKeyboardHandlingEnabled(value: Boolean): Self = StObject.set(x, "keyboardHandlingEnabled", value.asInstanceOf[js.Any])
+    inline def setKeyboardHandlingEnabled(value: Boolean): Self = StObject.set(x, "keyboardHandlingEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboardHandlingEnabledUndefined: Self = StObject.set(x, "keyboardHandlingEnabled", js.undefined)
+    inline def setKeyboardHandlingEnabledUndefined: Self = StObject.set(x, "keyboardHandlingEnabled", js.undefined)
     
-    @scala.inline
-    def setMode(value: StackCardMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: StackCardMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

@@ -18,31 +18,23 @@ trait DiagramEditEvent
 }
 object DiagramEditEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Diagram): DiagramEditEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Diagram): DiagramEditEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiagramEditEvent]
   }
   
-  @scala.inline
-  implicit class DiagramEditEventMutableBuilder[Self <: DiagramEditEvent] (val x: Self) extends AnyVal {
+  extension [Self <: DiagramEditEvent](x: Self) {
     
-    @scala.inline
-    def setConnection(value: Model): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: Model): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
+    inline def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
     
-    @scala.inline
-    def setContainer(value: JQuery): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: JQuery): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
+    inline def setContainerUndefined: Self = StObject.set(x, "container", js.undefined)
     
-    @scala.inline
-    def setShape(value: Model): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: Model): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+    inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
   }
 }

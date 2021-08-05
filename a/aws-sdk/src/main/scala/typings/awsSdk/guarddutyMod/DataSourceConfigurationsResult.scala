@@ -28,8 +28,7 @@ trait DataSourceConfigurationsResult extends StObject {
 }
 object DataSourceConfigurationsResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CloudTrail: CloudTrailConfigurationResult,
     DNSLogs: DNSLogsConfigurationResult,
     FlowLogs: FlowLogsConfigurationResult,
@@ -39,19 +38,14 @@ object DataSourceConfigurationsResult {
     __obj.asInstanceOf[DataSourceConfigurationsResult]
   }
   
-  @scala.inline
-  implicit class DataSourceConfigurationsResultMutableBuilder[Self <: DataSourceConfigurationsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DataSourceConfigurationsResult](x: Self) {
     
-    @scala.inline
-    def setCloudTrail(value: CloudTrailConfigurationResult): Self = StObject.set(x, "CloudTrail", value.asInstanceOf[js.Any])
+    inline def setCloudTrail(value: CloudTrailConfigurationResult): Self = StObject.set(x, "CloudTrail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDNSLogs(value: DNSLogsConfigurationResult): Self = StObject.set(x, "DNSLogs", value.asInstanceOf[js.Any])
+    inline def setDNSLogs(value: DNSLogsConfigurationResult): Self = StObject.set(x, "DNSLogs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlowLogs(value: FlowLogsConfigurationResult): Self = StObject.set(x, "FlowLogs", value.asInstanceOf[js.Any])
+    inline def setFlowLogs(value: FlowLogsConfigurationResult): Self = StObject.set(x, "FlowLogs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3Logs(value: S3LogsConfigurationResult): Self = StObject.set(x, "S3Logs", value.asInstanceOf[js.Any])
+    inline def setS3Logs(value: S3LogsConfigurationResult): Self = StObject.set(x, "S3Logs", value.asInstanceOf[js.Any])
   }
 }

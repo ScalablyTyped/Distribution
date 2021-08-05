@@ -23,34 +23,25 @@ trait TabBarItemOptions
 }
 object TabBarItemOptions {
   
-  @scala.inline
-  def apply(index: Double): TabBarItemOptions = {
+  inline def apply(index: Double): TabBarItemOptions = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[TabBarItemOptions]
   }
   
-  @scala.inline
-  implicit class TabBarItemOptionsMutableBuilder[Self <: TabBarItemOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TabBarItemOptions](x: Self) {
     
-    @scala.inline
-    def setIconPath(value: String): Self = StObject.set(x, "iconPath", value.asInstanceOf[js.Any])
+    inline def setIconPath(value: String): Self = StObject.set(x, "iconPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconPathUndefined: Self = StObject.set(x, "iconPath", js.undefined)
+    inline def setIconPathUndefined: Self = StObject.set(x, "iconPath", js.undefined)
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedIconPath(value: String): Self = StObject.set(x, "selectedIconPath", value.asInstanceOf[js.Any])
+    inline def setSelectedIconPath(value: String): Self = StObject.set(x, "selectedIconPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedIconPathUndefined: Self = StObject.set(x, "selectedIconPath", js.undefined)
+    inline def setSelectedIconPathUndefined: Self = StObject.set(x, "selectedIconPath", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

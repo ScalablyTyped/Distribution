@@ -24,8 +24,7 @@ trait IHashTable[T] extends StObject {
 }
 object IHashTable {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     add: (String, T) => Boolean,
     addOrUpdate: (String, T) => Boolean,
     count: () => Double,
@@ -39,34 +38,25 @@ object IHashTable {
     __obj.asInstanceOf[IHashTable[T]]
   }
   
-  @scala.inline
-  implicit class IHashTableMutableBuilder[Self <: IHashTable[?], T] (val x: Self & IHashTable[T]) extends AnyVal {
+  extension [Self <: IHashTable[?], T](x: Self & IHashTable[T]) {
     
-    @scala.inline
-    def setAdd(value: (String, T) => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (String, T) => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setAddOrUpdate(value: (String, T) => Boolean): Self = StObject.set(x, "addOrUpdate", js.Any.fromFunction2(value))
+    inline def setAddOrUpdate(value: (String, T) => Boolean): Self = StObject.set(x, "addOrUpdate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
+    inline def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEvery(
+    inline def setEvery(
       value: (js.Function3[/* k */ String, /* value */ T, /* context */ js.Any, Unit], js.Any) => Boolean
     ): Self = StObject.set(x, "every", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetAllKeys(value: () => js.Array[String]): Self = StObject.set(x, "getAllKeys", js.Any.fromFunction0(value))
+    inline def setGetAllKeys(value: () => js.Array[String]): Self = StObject.set(x, "getAllKeys", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLookup(value: String => T): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
+    inline def setLookup(value: String => T): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMap(value: (js.Function3[/* k */ String, /* value */ T, /* context */ js.Any, Unit], js.Any) => Unit): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
+    inline def setMap(value: (js.Function3[/* k */ String, /* value */ T, /* context */ js.Any, Unit], js.Any) => Unit): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSome(
+    inline def setSome(
       value: (js.Function3[/* k */ String, /* value */ T, /* context */ js.Any, Unit], js.Any) => Boolean
     ): Self = StObject.set(x, "some", js.Any.fromFunction2(value))
   }

@@ -32,37 +32,27 @@ trait SchemaGcRule extends StObject {
 }
 object SchemaGcRule {
   
-  @scala.inline
-  def apply(): SchemaGcRule = {
+  inline def apply(): SchemaGcRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGcRule]
   }
   
-  @scala.inline
-  implicit class SchemaGcRuleMutableBuilder[Self <: SchemaGcRule] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGcRule](x: Self) {
     
-    @scala.inline
-    def setIntersection(value: SchemaIntersection): Self = StObject.set(x, "intersection", value.asInstanceOf[js.Any])
+    inline def setIntersection(value: SchemaIntersection): Self = StObject.set(x, "intersection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIntersectionUndefined: Self = StObject.set(x, "intersection", js.undefined)
+    inline def setIntersectionUndefined: Self = StObject.set(x, "intersection", js.undefined)
     
-    @scala.inline
-    def setMaxAge(value: String): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+    inline def setMaxAge(value: String): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+    inline def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
     
-    @scala.inline
-    def setMaxNumVersions(value: Double): Self = StObject.set(x, "maxNumVersions", value.asInstanceOf[js.Any])
+    inline def setMaxNumVersions(value: Double): Self = StObject.set(x, "maxNumVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxNumVersionsUndefined: Self = StObject.set(x, "maxNumVersions", js.undefined)
+    inline def setMaxNumVersionsUndefined: Self = StObject.set(x, "maxNumVersions", js.undefined)
     
-    @scala.inline
-    def setUnion(value: SchemaUnion): Self = StObject.set(x, "union", value.asInstanceOf[js.Any])
+    inline def setUnion(value: SchemaUnion): Self = StObject.set(x, "union", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnionUndefined: Self = StObject.set(x, "union", js.undefined)
+    inline def setUnionUndefined: Self = StObject.set(x, "union", js.undefined)
   }
 }

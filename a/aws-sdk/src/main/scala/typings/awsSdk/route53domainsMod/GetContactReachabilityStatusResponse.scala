@@ -18,25 +18,19 @@ trait GetContactReachabilityStatusResponse extends StObject {
 }
 object GetContactReachabilityStatusResponse {
   
-  @scala.inline
-  def apply(): GetContactReachabilityStatusResponse = {
+  inline def apply(): GetContactReachabilityStatusResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetContactReachabilityStatusResponse]
   }
   
-  @scala.inline
-  implicit class GetContactReachabilityStatusResponseMutableBuilder[Self <: GetContactReachabilityStatusResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetContactReachabilityStatusResponse](x: Self) {
     
-    @scala.inline
-    def setDomainName(value: DomainName): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+    inline def setDomainName(value: DomainName): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
+    inline def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
     
-    @scala.inline
-    def setStatus(value: ReachabilityStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ReachabilityStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

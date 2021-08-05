@@ -15,33 +15,21 @@ object mod {
     * @param tagReplacement Removed tags are replaced with this
     * @return Returns the input string, sans any html tags that weren't allowed
     */
-  @scala.inline
-  def apply(html: String): String = ^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(html: String, allowedTags: String): String = (^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any], allowedTags.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(html: String, allowedTags: String, tagReplacement: String): String = (^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any], allowedTags.asInstanceOf[js.Any], tagReplacement.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(html: String, allowedTags: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any], allowedTags.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(html: String, allowedTags: js.Array[String], tagReplacement: String): String = (^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any], allowedTags.asInstanceOf[js.Any], tagReplacement.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(html: String, allowedTags: Unit, tagReplacement: String): String = (^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any], allowedTags.asInstanceOf[js.Any], tagReplacement.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(html: String): String = ^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(html: String, allowedTags: String): String = (^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any], allowedTags.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(html: String, allowedTags: String, tagReplacement: String): String = (^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any], allowedTags.asInstanceOf[js.Any], tagReplacement.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(html: String, allowedTags: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any], allowedTags.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(html: String, allowedTags: js.Array[String], tagReplacement: String): String = (^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any], allowedTags.asInstanceOf[js.Any], tagReplacement.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(html: String, allowedTags: Unit, tagReplacement: String): String = (^.asInstanceOf[js.Dynamic].apply(html.asInstanceOf[js.Any], allowedTags.asInstanceOf[js.Any], tagReplacement.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("striptags", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def initStreamingMode(): js.Function1[/* html */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("init_streaming_mode")().asInstanceOf[js.Function1[/* html */ String, String]]
-  @scala.inline
-  def initStreamingMode(allowedTags: String): js.Function1[/* html */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("init_streaming_mode")(allowedTags.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* html */ String, String]]
-  @scala.inline
-  def initStreamingMode(allowedTags: String, tagReplacement: String): js.Function1[/* html */ String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("init_streaming_mode")(allowedTags.asInstanceOf[js.Any], tagReplacement.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* html */ String, String]]
-  @scala.inline
-  def initStreamingMode(allowedTags: js.Array[String]): js.Function1[/* html */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("init_streaming_mode")(allowedTags.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* html */ String, String]]
-  @scala.inline
-  def initStreamingMode(allowedTags: js.Array[String], tagReplacement: String): js.Function1[/* html */ String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("init_streaming_mode")(allowedTags.asInstanceOf[js.Any], tagReplacement.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* html */ String, String]]
-  @scala.inline
-  def initStreamingMode(allowedTags: Unit, tagReplacement: String): js.Function1[/* html */ String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("init_streaming_mode")(allowedTags.asInstanceOf[js.Any], tagReplacement.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* html */ String, String]]
+  inline def initStreamingMode(): js.Function1[/* html */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("init_streaming_mode")().asInstanceOf[js.Function1[/* html */ String, String]]
+  inline def initStreamingMode(allowedTags: String): js.Function1[/* html */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("init_streaming_mode")(allowedTags.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* html */ String, String]]
+  inline def initStreamingMode(allowedTags: String, tagReplacement: String): js.Function1[/* html */ String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("init_streaming_mode")(allowedTags.asInstanceOf[js.Any], tagReplacement.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* html */ String, String]]
+  inline def initStreamingMode(allowedTags: js.Array[String]): js.Function1[/* html */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("init_streaming_mode")(allowedTags.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* html */ String, String]]
+  inline def initStreamingMode(allowedTags: js.Array[String], tagReplacement: String): js.Function1[/* html */ String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("init_streaming_mode")(allowedTags.asInstanceOf[js.Any], tagReplacement.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* html */ String, String]]
+  inline def initStreamingMode(allowedTags: Unit, tagReplacement: String): js.Function1[/* html */ String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("init_streaming_mode")(allowedTags.asInstanceOf[js.Any], tagReplacement.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* html */ String, String]]
 }

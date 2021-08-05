@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(window: Window): Unit = ^.asInstanceOf[js.Dynamic].apply(window.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(window: Window): Unit = ^.asInstanceOf[js.Dynamic].apply(window.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("element-closest", JSImport.Namespace)
   @js.native

@@ -51,62 +51,54 @@ object GridLayout {
   @JSImport("go", "GridLayout.Ascending")
   @js.native
   def Ascending: EnumValue = js.native
-  @scala.inline
-  def Ascending_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Ascending")(x.asInstanceOf[js.Any])
+  inline def Ascending_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Ascending")(x.asInstanceOf[js.Any])
   
   /**Lay out each child in reverse sort order given by GridLayout.comparer; This value is used for GridLayout.sorting.*/
   /* static member */
   @JSImport("go", "GridLayout.Descending")
   @js.native
   def Descending: EnumValue = js.native
-  @scala.inline
-  def Descending_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Descending")(x.asInstanceOf[js.Any])
+  inline def Descending_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Descending")(x.asInstanceOf[js.Any])
   
   /**Lay out each child in the order in which they were found; This value is used for GridLayout.sorting.*/
   /* static member */
   @JSImport("go", "GridLayout.Forward")
   @js.native
   def Forward: EnumValue = js.native
-  @scala.inline
-  def Forward_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Forward")(x.asInstanceOf[js.Any])
+  inline def Forward_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Forward")(x.asInstanceOf[js.Any])
   
   /**Fill each row from left to right; This value is used for GridLayout.arrangement.*/
   /* static member */
   @JSImport("go", "GridLayout.LeftToRight")
   @js.native
   def LeftToRight: EnumValue = js.native
-  @scala.inline
-  def LeftToRight_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LeftToRight")(x.asInstanceOf[js.Any])
+  inline def LeftToRight_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LeftToRight")(x.asInstanceOf[js.Any])
   
   /**Position the part's Part.location at a grid point; This value is used for GridLayout.alignment.*/
   /* static member */
   @JSImport("go", "GridLayout.Location")
   @js.native
   def Location: EnumValue = js.native
-  @scala.inline
-  def Location_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Location")(x.asInstanceOf[js.Any])
+  inline def Location_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Location")(x.asInstanceOf[js.Any])
   
   /**Position the top-left corner of each part at a grid point; This value is used for GridLayout.alignment.*/
   /* static member */
   @JSImport("go", "GridLayout.Position")
   @js.native
   def Position: EnumValue = js.native
-  @scala.inline
-  def Position_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Position")(x.asInstanceOf[js.Any])
+  inline def Position_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Position")(x.asInstanceOf[js.Any])
   
   /**Lay out each child in reverse order from which they were found; This value is used for GridLayout.sorting.*/
   /* static member */
   @JSImport("go", "GridLayout.Reverse")
   @js.native
   def Reverse: EnumValue = js.native
-  @scala.inline
-  def Reverse_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Reverse")(x.asInstanceOf[js.Any])
+  inline def Reverse_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Reverse")(x.asInstanceOf[js.Any])
   
   /**Fill each row from right to left; This value is used for GridLayout.arrangement.*/
   /* static member */
   @JSImport("go", "GridLayout.RightToLeft")
   @js.native
   def RightToLeft: EnumValue = js.native
-  @scala.inline
-  def RightToLeft_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RightToLeft")(x.asInstanceOf[js.Any])
+  inline def RightToLeft_=(x: EnumValue): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RightToLeft")(x.asInstanceOf[js.Any])
 }

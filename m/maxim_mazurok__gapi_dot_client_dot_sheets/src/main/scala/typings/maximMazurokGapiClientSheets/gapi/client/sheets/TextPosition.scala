@@ -11,19 +11,15 @@ trait TextPosition extends StObject {
 }
 object TextPosition {
   
-  @scala.inline
-  def apply(): TextPosition = {
+  inline def apply(): TextPosition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextPosition]
   }
   
-  @scala.inline
-  implicit class TextPositionMutableBuilder[Self <: TextPosition] (val x: Self) extends AnyVal {
+  extension [Self <: TextPosition](x: Self) {
     
-    @scala.inline
-    def setHorizontalAlignment(value: String): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
+    inline def setHorizontalAlignment(value: String): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
+    inline def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
   }
 }

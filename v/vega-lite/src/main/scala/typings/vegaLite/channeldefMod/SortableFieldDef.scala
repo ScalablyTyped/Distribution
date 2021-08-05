@@ -34,25 +34,19 @@ trait SortableFieldDef[F /* <: Field */, T /* <: Type */, B /* <: Bin */]
 }
 object SortableFieldDef {
   
-  @scala.inline
-  def apply[F /* <: Field */, T /* <: Type */, B /* <: Bin */](): SortableFieldDef[F, T, B] = {
+  inline def apply[F /* <: Field */, T /* <: Type */, B /* <: Bin */](): SortableFieldDef[F, T, B] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SortableFieldDef[F, T, B]]
   }
   
-  @scala.inline
-  implicit class SortableFieldDefMutableBuilder[Self <: SortableFieldDef[?, ?, ?], F /* <: Field */, T /* <: Type */, B /* <: Bin */] (val x: Self & (SortableFieldDef[F, T, B])) extends AnyVal {
+  extension [Self <: SortableFieldDef[?, ?, ?], F /* <: Field */, T /* <: Type */, B /* <: Bin */](x: Self & (SortableFieldDef[F, T, B])) {
     
-    @scala.inline
-    def setSort(value: Sort[F]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: Sort[F]): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortNull: Self = StObject.set(x, "sort", null)
+    inline def setSortNull: Self = StObject.set(x, "sort", null)
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    @scala.inline
-    def setSortVarargs(value: (Boolean | DateTime | Double | String)*): Self = StObject.set(x, "sort", js.Array(value :_*))
+    inline def setSortVarargs(value: (Boolean | DateTime | Double | String)*): Self = StObject.set(x, "sort", js.Array(value :_*))
   }
 }

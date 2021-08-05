@@ -12,8 +12,7 @@ object useLinkPropsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasToAction: Props): AccessibilityRole = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasToAction.asInstanceOf[js.Any]).asInstanceOf[AccessibilityRole]
+  inline def default(hasToAction: Props): AccessibilityRole = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasToAction.asInstanceOf[js.Any]).asInstanceOf[AccessibilityRole]
   
   trait Props extends StObject {
     
@@ -23,23 +22,18 @@ object useLinkPropsMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(to: String): Props = {
+    inline def apply(to: String): Props = {
       val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setAction(value: NavigationAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: NavigationAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      @scala.inline
-      def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -19,8 +19,7 @@ trait ListRouteView
 }
 object ListRouteView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addCollapsibleSection: SectionDescriptor => CollapsibleSectionView,
     addSection: SectionDescriptor => SectionView,
     destroyed: Boolean,
@@ -34,16 +33,12 @@ object ListRouteView {
     __obj.asInstanceOf[ListRouteView]
   }
   
-  @scala.inline
-  implicit class ListRouteViewMutableBuilder[Self <: ListRouteView] (val x: Self) extends AnyVal {
+  extension [Self <: ListRouteView](x: Self) {
     
-    @scala.inline
-    def setAddCollapsibleSection(value: SectionDescriptor => CollapsibleSectionView): Self = StObject.set(x, "addCollapsibleSection", js.Any.fromFunction1(value))
+    inline def setAddCollapsibleSection(value: SectionDescriptor => CollapsibleSectionView): Self = StObject.set(x, "addCollapsibleSection", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddSection(value: SectionDescriptor => SectionView): Self = StObject.set(x, "addSection", js.Any.fromFunction1(value))
+    inline def setAddSection(value: SectionDescriptor => SectionView): Self = StObject.set(x, "addSection", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
+    inline def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
   }
 }

@@ -18,22 +18,17 @@ trait IMediaCue extends StObject {
 }
 object IMediaCue {
   
-  @scala.inline
-  def apply(duration: Double, id: String, startTime: Double): IMediaCue = {
+  inline def apply(duration: Double, id: String, startTime: Double): IMediaCue = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any])
     __obj.asInstanceOf[IMediaCue]
   }
   
-  @scala.inline
-  implicit class IMediaCueMutableBuilder[Self <: IMediaCue] (val x: Self) extends AnyVal {
+  extension [Self <: IMediaCue](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
   }
 }

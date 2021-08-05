@@ -34,19 +34,19 @@ object serverMod {
       forceControllers: js.UndefOr[Boolean]
     ) = this()
     
-    var _AuthProvider: js.Any = js.native
+    /* private */ var _AuthProvider: js.Any = js.native
     
-    var _app: js.Any = js.native
+    /* private */ var _app: js.Any = js.native
     
-    var _configFn: js.Any = js.native
+    /* private */ var _configFn: js.Any = js.native
     
-    var _container: js.Any = js.native
+    /* private */ var _container: js.Any = js.native
     
     /* private */ def _createHttpContext(req: js.Any, res: js.Any, next: js.Any): js.Any = js.native
     
-    var _errorConfigFn: js.Any = js.native
+    /* private */ var _errorConfigFn: js.Any = js.native
     
-    var _forceControllers: js.Any = js.native
+    /* private */ var _forceControllers: js.Any = js.native
     
     /* private */ def _getCurrentUser(req: js.Any, res: js.Any, next: js.Any): js.Any = js.native
     
@@ -54,9 +54,9 @@ object serverMod {
     
     /* private */ def _getPrincipal(req: js.Any): js.Any = js.native
     
-    var _router: js.Any = js.native
+    /* private */ var _router: js.Any = js.native
     
-    var _routingConfig: js.Any = js.native
+    /* private */ var _routingConfig: js.Any = js.native
     
     /**
       * Applies all routes and configuration to the server, returning the express application.

@@ -11,16 +11,13 @@ trait Panels extends StObject {
 }
 object Panels {
   
-  @scala.inline
-  def apply(create: Resize => PanelsInstance): Panels = {
+  inline def apply(create: Resize => PanelsInstance): Panels = {
     val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create))
     __obj.asInstanceOf[Panels]
   }
   
-  @scala.inline
-  implicit class PanelsMutableBuilder[Self <: Panels] (val x: Self) extends AnyVal {
+  extension [Self <: Panels](x: Self) {
     
-    @scala.inline
-    def setCreate(value: Resize => PanelsInstance): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+    inline def setCreate(value: Resize => PanelsInstance): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }
 }

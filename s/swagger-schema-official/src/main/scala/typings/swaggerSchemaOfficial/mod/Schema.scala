@@ -32,79 +32,55 @@ trait Schema
 }
 object Schema {
   
-  @scala.inline
-  def apply(): Schema = {
+  inline def apply(): Schema = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Schema]
   }
   
-  @scala.inline
-  implicit class SchemaMutableBuilder[Self <: Schema] (val x: Self) extends AnyVal {
+  extension [Self <: Schema](x: Self) {
     
-    @scala.inline
-    def set$ref(value: String): Self = StObject.set(x, "$ref", value.asInstanceOf[js.Any])
+    inline def set$ref(value: String): Self = StObject.set(x, "$ref", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$refUndefined: Self = StObject.set(x, "$ref", js.undefined)
+    inline def set$refUndefined: Self = StObject.set(x, "$ref", js.undefined)
     
-    @scala.inline
-    def setAdditionalProperties(value: Schema | Boolean): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
+    inline def setAdditionalProperties(value: Schema | Boolean): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalPropertiesUndefined: Self = StObject.set(x, "additionalProperties", js.undefined)
+    inline def setAdditionalPropertiesUndefined: Self = StObject.set(x, "additionalProperties", js.undefined)
     
-    @scala.inline
-    def setAllOf(value: js.Array[Schema]): Self = StObject.set(x, "allOf", value.asInstanceOf[js.Any])
+    inline def setAllOf(value: js.Array[Schema]): Self = StObject.set(x, "allOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllOfUndefined: Self = StObject.set(x, "allOf", js.undefined)
+    inline def setAllOfUndefined: Self = StObject.set(x, "allOf", js.undefined)
     
-    @scala.inline
-    def setAllOfVarargs(value: Schema*): Self = StObject.set(x, "allOf", js.Array(value :_*))
+    inline def setAllOfVarargs(value: Schema*): Self = StObject.set(x, "allOf", js.Array(value :_*))
     
-    @scala.inline
-    def setDiscriminator(value: String): Self = StObject.set(x, "discriminator", value.asInstanceOf[js.Any])
+    inline def setDiscriminator(value: String): Self = StObject.set(x, "discriminator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscriminatorUndefined: Self = StObject.set(x, "discriminator", js.undefined)
+    inline def setDiscriminatorUndefined: Self = StObject.set(x, "discriminator", js.undefined)
     
-    @scala.inline
-    def setExample(value: js.Any): Self = StObject.set(x, "example", value.asInstanceOf[js.Any])
+    inline def setExample(value: js.Any): Self = StObject.set(x, "example", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExampleUndefined: Self = StObject.set(x, "example", js.undefined)
+    inline def setExampleUndefined: Self = StObject.set(x, "example", js.undefined)
     
-    @scala.inline
-    def setExternalDocs(value: ExternalDocs): Self = StObject.set(x, "externalDocs", value.asInstanceOf[js.Any])
+    inline def setExternalDocs(value: ExternalDocs): Self = StObject.set(x, "externalDocs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalDocsUndefined: Self = StObject.set(x, "externalDocs", js.undefined)
+    inline def setExternalDocsUndefined: Self = StObject.set(x, "externalDocs", js.undefined)
     
-    @scala.inline
-    def setProperties(value: StringDictionary[Schema]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: StringDictionary[Schema]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+    inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     
-    @scala.inline
-    def setRequired(value: js.Array[String]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: js.Array[String]): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+    inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
     
-    @scala.inline
-    def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value :_*))
+    inline def setRequiredVarargs(value: String*): Self = StObject.set(x, "required", js.Array(value :_*))
     
-    @scala.inline
-    def setXml(value: XML): Self = StObject.set(x, "xml", value.asInstanceOf[js.Any])
+    inline def setXml(value: XML): Self = StObject.set(x, "xml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXmlUndefined: Self = StObject.set(x, "xml", js.undefined)
+    inline def setXmlUndefined: Self = StObject.set(x, "xml", js.undefined)
   }
 }

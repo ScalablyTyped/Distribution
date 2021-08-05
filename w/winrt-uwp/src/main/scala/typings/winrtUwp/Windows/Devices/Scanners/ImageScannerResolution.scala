@@ -15,19 +15,15 @@ trait ImageScannerResolution extends StObject {
 }
 object ImageScannerResolution {
   
-  @scala.inline
-  def apply(dpiX: Double, dpiY: Double): ImageScannerResolution = {
+  inline def apply(dpiX: Double, dpiY: Double): ImageScannerResolution = {
     val __obj = js.Dynamic.literal(dpiX = dpiX.asInstanceOf[js.Any], dpiY = dpiY.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageScannerResolution]
   }
   
-  @scala.inline
-  implicit class ImageScannerResolutionMutableBuilder[Self <: ImageScannerResolution] (val x: Self) extends AnyVal {
+  extension [Self <: ImageScannerResolution](x: Self) {
     
-    @scala.inline
-    def setDpiX(value: Double): Self = StObject.set(x, "dpiX", value.asInstanceOf[js.Any])
+    inline def setDpiX(value: Double): Self = StObject.set(x, "dpiX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDpiY(value: Double): Self = StObject.set(x, "dpiY", value.asInstanceOf[js.Any])
+    inline def setDpiY(value: Double): Self = StObject.set(x, "dpiY", value.asInstanceOf[js.Any])
   }
 }

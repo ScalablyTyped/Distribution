@@ -17,23 +17,18 @@ object typesMod {
   }
   object CustomScrollAction {
     
-    @scala.inline
-    def apply(el: Element, left: Double, top: Double): CustomScrollAction = {
+    inline def apply(el: Element, left: Double, top: Double): CustomScrollAction = {
       val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomScrollAction]
     }
     
-    @scala.inline
-    implicit class CustomScrollActionMutableBuilder[Self <: CustomScrollAction] (val x: Self) extends AnyVal {
+    extension [Self <: CustomScrollAction](x: Self) {
       
-      @scala.inline
-      def setEl(value: Element): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+      inline def setEl(value: Element): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+      inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     }
   }
   
@@ -57,50 +52,36 @@ object typesMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBlock(value: ScrollLogicalPosition): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+      inline def setBlock(value: ScrollLogicalPosition): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
+      inline def setBlockUndefined: Self = StObject.set(x, "block", js.undefined)
       
-      @scala.inline
-      def setBoundary(value: CustomScrollBoundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
+      inline def setBoundary(value: CustomScrollBoundary): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBoundaryFunction1(value: /* parent */ Element => Boolean): Self = StObject.set(x, "boundary", js.Any.fromFunction1(value))
+      inline def setBoundaryFunction1(value: /* parent */ Element => Boolean): Self = StObject.set(x, "boundary", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBoundaryNull: Self = StObject.set(x, "boundary", null)
+      inline def setBoundaryNull: Self = StObject.set(x, "boundary", null)
       
-      @scala.inline
-      def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
+      inline def setBoundaryUndefined: Self = StObject.set(x, "boundary", js.undefined)
       
-      @scala.inline
-      def setInline(value: ScrollLogicalPosition): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
+      inline def setInline(value: ScrollLogicalPosition): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
+      inline def setInlineUndefined: Self = StObject.set(x, "inline", js.undefined)
       
-      @scala.inline
-      def setScrollMode(value: ScrollMode): Self = StObject.set(x, "scrollMode", value.asInstanceOf[js.Any])
+      inline def setScrollMode(value: ScrollMode): Self = StObject.set(x, "scrollMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollModeUndefined: Self = StObject.set(x, "scrollMode", js.undefined)
+      inline def setScrollModeUndefined: Self = StObject.set(x, "scrollMode", js.undefined)
       
-      @scala.inline
-      def setSkipOverflowHiddenElements(value: SkipOverflowHiddenElements): Self = StObject.set(x, "skipOverflowHiddenElements", value.asInstanceOf[js.Any])
+      inline def setSkipOverflowHiddenElements(value: SkipOverflowHiddenElements): Self = StObject.set(x, "skipOverflowHiddenElements", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipOverflowHiddenElementsUndefined: Self = StObject.set(x, "skipOverflowHiddenElements", js.undefined)
+      inline def setSkipOverflowHiddenElementsUndefined: Self = StObject.set(x, "skipOverflowHiddenElements", js.undefined)
     }
   }
   
@@ -111,11 +92,9 @@ object typesMod {
   trait ScrollBehavior extends StObject
   object ScrollBehavior {
     
-    @scala.inline
-    def auto: typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.auto = "auto".asInstanceOf[typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.auto]
+    inline def auto: typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.auto = "auto".asInstanceOf[typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.auto]
     
-    @scala.inline
-    def smooth: typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.smooth = "smooth".asInstanceOf[typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.smooth]
+    inline def smooth: typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.smooth = "smooth".asInstanceOf[typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.smooth]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -127,17 +106,13 @@ object typesMod {
   trait ScrollLogicalPosition extends StObject
   object ScrollLogicalPosition {
     
-    @scala.inline
-    def center: typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.center = "center".asInstanceOf[typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.center]
+    inline def center: typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.center = "center".asInstanceOf[typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.center]
     
-    @scala.inline
-    def end: typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.end = "end".asInstanceOf[typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.end]
+    inline def end: typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.end = "end".asInstanceOf[typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.end]
     
-    @scala.inline
-    def nearest: typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.nearest = "nearest".asInstanceOf[typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.nearest]
+    inline def nearest: typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.nearest = "nearest".asInstanceOf[typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.nearest]
     
-    @scala.inline
-    def start: typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.start = "start".asInstanceOf[typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.start]
+    inline def start: typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.start = "start".asInstanceOf[typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.start]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -147,11 +122,9 @@ object typesMod {
   trait ScrollMode extends StObject
   object ScrollMode {
     
-    @scala.inline
-    def always: typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.always = "always".asInstanceOf[typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.always]
+    inline def always: typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.always = "always".asInstanceOf[typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.always]
     
-    @scala.inline
-    def `if-needed`: typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.`if-needed` = "if-needed".asInstanceOf[typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.`if-needed`]
+    inline def `if-needed`: typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.`if-needed` = "if-needed".asInstanceOf[typings.scrollIntoViewIfNeeded.scrollIntoViewIfNeededStrings.`if-needed`]
   }
   
   type SkipOverflowHiddenElements = Boolean

@@ -20,49 +20,35 @@ trait ImageBitmapOptions extends StObject {
 }
 object ImageBitmapOptions {
   
-  @scala.inline
-  def apply(): ImageBitmapOptions = {
+  inline def apply(): ImageBitmapOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageBitmapOptions]
   }
   
-  @scala.inline
-  implicit class ImageBitmapOptionsMutableBuilder[Self <: ImageBitmapOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ImageBitmapOptions](x: Self) {
     
-    @scala.inline
-    def setColorSpaceConversion(value: ColorSpaceConversion): Self = StObject.set(x, "colorSpaceConversion", value.asInstanceOf[js.Any])
+    inline def setColorSpaceConversion(value: ColorSpaceConversion): Self = StObject.set(x, "colorSpaceConversion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorSpaceConversionUndefined: Self = StObject.set(x, "colorSpaceConversion", js.undefined)
+    inline def setColorSpaceConversionUndefined: Self = StObject.set(x, "colorSpaceConversion", js.undefined)
     
-    @scala.inline
-    def setImageOrientation(value: ImageOrientation): Self = StObject.set(x, "imageOrientation", value.asInstanceOf[js.Any])
+    inline def setImageOrientation(value: ImageOrientation): Self = StObject.set(x, "imageOrientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageOrientationUndefined: Self = StObject.set(x, "imageOrientation", js.undefined)
+    inline def setImageOrientationUndefined: Self = StObject.set(x, "imageOrientation", js.undefined)
     
-    @scala.inline
-    def setPremultiplyAlpha(value: PremultiplyAlpha): Self = StObject.set(x, "premultiplyAlpha", value.asInstanceOf[js.Any])
+    inline def setPremultiplyAlpha(value: PremultiplyAlpha): Self = StObject.set(x, "premultiplyAlpha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPremultiplyAlphaUndefined: Self = StObject.set(x, "premultiplyAlpha", js.undefined)
+    inline def setPremultiplyAlphaUndefined: Self = StObject.set(x, "premultiplyAlpha", js.undefined)
     
-    @scala.inline
-    def setResizeHeight(value: Double): Self = StObject.set(x, "resizeHeight", value.asInstanceOf[js.Any])
+    inline def setResizeHeight(value: Double): Self = StObject.set(x, "resizeHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizeHeightUndefined: Self = StObject.set(x, "resizeHeight", js.undefined)
+    inline def setResizeHeightUndefined: Self = StObject.set(x, "resizeHeight", js.undefined)
     
-    @scala.inline
-    def setResizeQuality(value: ResizeQuality): Self = StObject.set(x, "resizeQuality", value.asInstanceOf[js.Any])
+    inline def setResizeQuality(value: ResizeQuality): Self = StObject.set(x, "resizeQuality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizeQualityUndefined: Self = StObject.set(x, "resizeQuality", js.undefined)
+    inline def setResizeQualityUndefined: Self = StObject.set(x, "resizeQuality", js.undefined)
     
-    @scala.inline
-    def setResizeWidth(value: Double): Self = StObject.set(x, "resizeWidth", value.asInstanceOf[js.Any])
+    inline def setResizeWidth(value: Double): Self = StObject.set(x, "resizeWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizeWidthUndefined: Self = StObject.set(x, "resizeWidth", js.undefined)
+    inline def setResizeWidthUndefined: Self = StObject.set(x, "resizeWidth", js.undefined)
   }
 }

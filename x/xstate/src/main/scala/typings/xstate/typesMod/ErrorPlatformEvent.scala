@@ -12,17 +12,14 @@ trait ErrorPlatformEvent
 }
 object ErrorPlatformEvent {
   
-  @scala.inline
-  def apply(data: js.Any, `type`: String): ErrorPlatformEvent = {
+  inline def apply(data: js.Any, `type`: String): ErrorPlatformEvent = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorPlatformEvent]
   }
   
-  @scala.inline
-  implicit class ErrorPlatformEventMutableBuilder[Self <: ErrorPlatformEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorPlatformEvent](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

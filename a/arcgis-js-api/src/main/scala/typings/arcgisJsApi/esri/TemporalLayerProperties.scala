@@ -36,37 +36,27 @@ trait TemporalLayerProperties extends StObject {
 }
 object TemporalLayerProperties {
   
-  @scala.inline
-  def apply(): TemporalLayerProperties = {
+  inline def apply(): TemporalLayerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TemporalLayerProperties]
   }
   
-  @scala.inline
-  implicit class TemporalLayerPropertiesMutableBuilder[Self <: TemporalLayerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: TemporalLayerProperties](x: Self) {
     
-    @scala.inline
-    def setTimeExtent(value: TimeExtentProperties): Self = StObject.set(x, "timeExtent", value.asInstanceOf[js.Any])
+    inline def setTimeExtent(value: TimeExtentProperties): Self = StObject.set(x, "timeExtent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeExtentUndefined: Self = StObject.set(x, "timeExtent", js.undefined)
+    inline def setTimeExtentUndefined: Self = StObject.set(x, "timeExtent", js.undefined)
     
-    @scala.inline
-    def setTimeInfo(value: TimeInfoProperties): Self = StObject.set(x, "timeInfo", value.asInstanceOf[js.Any])
+    inline def setTimeInfo(value: TimeInfoProperties): Self = StObject.set(x, "timeInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeInfoUndefined: Self = StObject.set(x, "timeInfo", js.undefined)
+    inline def setTimeInfoUndefined: Self = StObject.set(x, "timeInfo", js.undefined)
     
-    @scala.inline
-    def setTimeOffset(value: TimeIntervalProperties): Self = StObject.set(x, "timeOffset", value.asInstanceOf[js.Any])
+    inline def setTimeOffset(value: TimeIntervalProperties): Self = StObject.set(x, "timeOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeOffsetUndefined: Self = StObject.set(x, "timeOffset", js.undefined)
+    inline def setTimeOffsetUndefined: Self = StObject.set(x, "timeOffset", js.undefined)
     
-    @scala.inline
-    def setUseViewTime(value: Boolean): Self = StObject.set(x, "useViewTime", value.asInstanceOf[js.Any])
+    inline def setUseViewTime(value: Boolean): Self = StObject.set(x, "useViewTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseViewTimeUndefined: Self = StObject.set(x, "useViewTime", js.undefined)
+    inline def setUseViewTimeUndefined: Self = StObject.set(x, "useViewTime", js.undefined)
   }
 }

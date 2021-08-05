@@ -8,7 +8,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.PageSetup")
 @js.native
-class PageSetup protected ()
+/* private */ class PageSetup ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.PageSetup {
   
@@ -24,7 +24,7 @@ class PageSetup protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.PageSetup_typekey")
   var PowerPointDotPageSetup_typekey: typings.activexPowerpoint.PowerPoint.PageSetup = js.native
   

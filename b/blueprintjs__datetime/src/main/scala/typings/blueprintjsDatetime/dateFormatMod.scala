@@ -13,19 +13,13 @@ object dateFormatMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getFormattedDateString(date: Null, props: IDateFormatProps & IDatePickerBaseProps): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormattedDateString")(date.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def getFormattedDateString(date: Null, props: IDateFormatProps & IDatePickerBaseProps, ignoreRange: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormattedDateString")(date.asInstanceOf[js.Any], props.asInstanceOf[js.Any], ignoreRange.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def getFormattedDateString(date: Date, props: IDateFormatProps & IDatePickerBaseProps): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormattedDateString")(date.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def getFormattedDateString(date: Date, props: IDateFormatProps & IDatePickerBaseProps, ignoreRange: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormattedDateString")(date.asInstanceOf[js.Any], props.asInstanceOf[js.Any], ignoreRange.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getFormattedDateString(date: Null, props: IDateFormatProps & IDatePickerBaseProps): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormattedDateString")(date.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getFormattedDateString(date: Null, props: IDateFormatProps & IDatePickerBaseProps, ignoreRange: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormattedDateString")(date.asInstanceOf[js.Any], props.asInstanceOf[js.Any], ignoreRange.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getFormattedDateString(date: Date, props: IDateFormatProps & IDatePickerBaseProps): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormattedDateString")(date.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getFormattedDateString(date: Date, props: IDateFormatProps & IDatePickerBaseProps, ignoreRange: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormattedDateString")(date.asInstanceOf[js.Any], props.asInstanceOf[js.Any], ignoreRange.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def getFormattedDateString_false(date: `false`, props: IDateFormatProps & IDatePickerBaseProps): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormattedDateString")(date.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def getFormattedDateString_false(date: `false`, props: IDateFormatProps & IDatePickerBaseProps, ignoreRange: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormattedDateString")(date.asInstanceOf[js.Any], props.asInstanceOf[js.Any], ignoreRange.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getFormattedDateString_false(date: `false`, props: IDateFormatProps & IDatePickerBaseProps): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormattedDateString")(date.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getFormattedDateString_false(date: `false`, props: IDateFormatProps & IDatePickerBaseProps, ignoreRange: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormattedDateString")(date.asInstanceOf[js.Any], props.asInstanceOf[js.Any], ignoreRange.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @js.native
   trait IDateFormatProps extends StObject {

@@ -6,17 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(app: js.Any): SuperTest[Test] = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[SuperTest[Test]]
+  inline def apply(app: js.Any): SuperTest[Test] = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[SuperTest[Test]]
   
   @JSImport("supertest-as-promised", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def agent(): SuperTest[Test] = ^.asInstanceOf[js.Dynamic].applyDynamic("agent")().asInstanceOf[SuperTest[Test]]
-  @scala.inline
-  def agent(app: js.Any): SuperTest[Test] = ^.asInstanceOf[js.Dynamic].applyDynamic("agent")(app.asInstanceOf[js.Any]).asInstanceOf[SuperTest[Test]]
+  inline def agent(): SuperTest[Test] = ^.asInstanceOf[js.Dynamic].applyDynamic("agent")().asInstanceOf[SuperTest[Test]]
+  inline def agent(app: js.Any): SuperTest[Test] = ^.asInstanceOf[js.Dynamic].applyDynamic("agent")(app.asInstanceOf[js.Any]).asInstanceOf[SuperTest[Test]]
   
   type CallbackHandler = js.Function2[/* err */ js.Any, /* res */ Response, Unit]
   

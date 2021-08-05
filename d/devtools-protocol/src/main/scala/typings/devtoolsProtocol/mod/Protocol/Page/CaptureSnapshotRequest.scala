@@ -14,19 +14,15 @@ trait CaptureSnapshotRequest extends StObject {
 }
 object CaptureSnapshotRequest {
   
-  @scala.inline
-  def apply(): CaptureSnapshotRequest = {
+  inline def apply(): CaptureSnapshotRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CaptureSnapshotRequest]
   }
   
-  @scala.inline
-  implicit class CaptureSnapshotRequestMutableBuilder[Self <: CaptureSnapshotRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CaptureSnapshotRequest](x: Self) {
     
-    @scala.inline
-    def setFormat(value: mhtml): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: mhtml): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
   }
 }

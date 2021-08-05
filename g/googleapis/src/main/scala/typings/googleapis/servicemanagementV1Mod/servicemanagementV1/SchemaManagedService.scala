@@ -23,25 +23,19 @@ trait SchemaManagedService extends StObject {
 }
 object SchemaManagedService {
   
-  @scala.inline
-  def apply(): SchemaManagedService = {
+  inline def apply(): SchemaManagedService = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaManagedService]
   }
   
-  @scala.inline
-  implicit class SchemaManagedServiceMutableBuilder[Self <: SchemaManagedService] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaManagedService](x: Self) {
     
-    @scala.inline
-    def setProducerProjectId(value: String): Self = StObject.set(x, "producerProjectId", value.asInstanceOf[js.Any])
+    inline def setProducerProjectId(value: String): Self = StObject.set(x, "producerProjectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProducerProjectIdUndefined: Self = StObject.set(x, "producerProjectId", js.undefined)
+    inline def setProducerProjectIdUndefined: Self = StObject.set(x, "producerProjectId", js.undefined)
     
-    @scala.inline
-    def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: String): Self = StObject.set(x, "serviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
+    inline def setServiceNameUndefined: Self = StObject.set(x, "serviceName", js.undefined)
   }
 }

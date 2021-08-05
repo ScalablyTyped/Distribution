@@ -80,97 +80,67 @@ trait DiscoveryOptions extends StObject {
 }
 object DiscoveryOptions {
   
-  @scala.inline
-  def apply(): DiscoveryOptions = {
+  inline def apply(): DiscoveryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DiscoveryOptions]
   }
   
-  @scala.inline
-  implicit class DiscoveryOptionsMutableBuilder[Self <: DiscoveryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DiscoveryOptions](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setBroadcast(value: String): Self = StObject.set(x, "broadcast", value.asInstanceOf[js.Any])
+    inline def setBroadcast(value: String): Self = StObject.set(x, "broadcast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBroadcastUndefined: Self = StObject.set(x, "broadcast", js.undefined)
+    inline def setBroadcastUndefined: Self = StObject.set(x, "broadcast", js.undefined)
     
-    @scala.inline
-    def setCheckInterval(value: Double): Self = StObject.set(x, "checkInterval", value.asInstanceOf[js.Any])
+    inline def setCheckInterval(value: Double): Self = StObject.set(x, "checkInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckIntervalUndefined: Self = StObject.set(x, "checkInterval", js.undefined)
+    inline def setCheckIntervalUndefined: Self = StObject.set(x, "checkInterval", js.undefined)
     
-    @scala.inline
-    def setDisableScreen(value: Boolean): Self = StObject.set(x, "disableScreen", value.asInstanceOf[js.Any])
+    inline def setDisableScreen(value: Boolean): Self = StObject.set(x, "disableScreen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableScreenUndefined: Self = StObject.set(x, "disableScreen", js.undefined)
+    inline def setDisableScreenUndefined: Self = StObject.set(x, "disableScreen", js.undefined)
     
-    @scala.inline
-    def setHelloInterval(value: Double): Self = StObject.set(x, "helloInterval", value.asInstanceOf[js.Any])
+    inline def setHelloInterval(value: Double): Self = StObject.set(x, "helloInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelloIntervalUndefined: Self = StObject.set(x, "helloInterval", js.undefined)
+    inline def setHelloIntervalUndefined: Self = StObject.set(x, "helloInterval", js.undefined)
     
-    @scala.inline
-    def setHelloLogsEnabled(value: Boolean): Self = StObject.set(x, "helloLogsEnabled", value.asInstanceOf[js.Any])
+    inline def setHelloLogsEnabled(value: Boolean): Self = StObject.set(x, "helloLogsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelloLogsEnabledUndefined: Self = StObject.set(x, "helloLogsEnabled", js.undefined)
+    inline def setHelloLogsEnabledUndefined: Self = StObject.set(x, "helloLogsEnabled", js.undefined)
     
-    @scala.inline
-    def setIgnoreProcess(value: Boolean): Self = StObject.set(x, "ignoreProcess", value.asInstanceOf[js.Any])
+    inline def setIgnoreProcess(value: Boolean): Self = StObject.set(x, "ignoreProcess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreProcessUndefined: Self = StObject.set(x, "ignoreProcess", js.undefined)
+    inline def setIgnoreProcessUndefined: Self = StObject.set(x, "ignoreProcess", js.undefined)
     
-    @scala.inline
-    def setLog(value: Boolean): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+    inline def setLog(value: Boolean): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+    inline def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
     
-    @scala.inline
-    def setMasterTimeout(value: Double): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
+    inline def setMasterTimeout(value: Double): Self = StObject.set(x, "masterTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMasterTimeoutUndefined: Self = StObject.set(x, "masterTimeout", js.undefined)
+    inline def setMasterTimeoutUndefined: Self = StObject.set(x, "masterTimeout", js.undefined)
     
-    @scala.inline
-    def setMonitor(value: Boolean): Self = StObject.set(x, "monitor", value.asInstanceOf[js.Any])
+    inline def setMonitor(value: Boolean): Self = StObject.set(x, "monitor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitorUndefined: Self = StObject.set(x, "monitor", js.undefined)
+    inline def setMonitorUndefined: Self = StObject.set(x, "monitor", js.undefined)
     
-    @scala.inline
-    def setMulticast(value: String): Self = StObject.set(x, "multicast", value.asInstanceOf[js.Any])
+    inline def setMulticast(value: String): Self = StObject.set(x, "multicast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMulticastUndefined: Self = StObject.set(x, "multicast", js.undefined)
+    inline def setMulticastUndefined: Self = StObject.set(x, "multicast", js.undefined)
     
-    @scala.inline
-    def setNodeTimeout(value: Double): Self = StObject.set(x, "nodeTimeout", value.asInstanceOf[js.Any])
+    inline def setNodeTimeout(value: Double): Self = StObject.set(x, "nodeTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeTimeoutUndefined: Self = StObject.set(x, "nodeTimeout", js.undefined)
+    inline def setNodeTimeoutUndefined: Self = StObject.set(x, "nodeTimeout", js.undefined)
     
-    @scala.inline
-    def setStatusInterval(value: Double): Self = StObject.set(x, "statusInterval", value.asInstanceOf[js.Any])
+    inline def setStatusInterval(value: Double): Self = StObject.set(x, "statusInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusIntervalUndefined: Self = StObject.set(x, "statusInterval", js.undefined)
+    inline def setStatusIntervalUndefined: Self = StObject.set(x, "statusInterval", js.undefined)
     
-    @scala.inline
-    def setStatusLogsEnabled(value: Boolean): Self = StObject.set(x, "statusLogsEnabled", value.asInstanceOf[js.Any])
+    inline def setStatusLogsEnabled(value: Boolean): Self = StObject.set(x, "statusLogsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusLogsEnabledUndefined: Self = StObject.set(x, "statusLogsEnabled", js.undefined)
+    inline def setStatusLogsEnabledUndefined: Self = StObject.set(x, "statusLogsEnabled", js.undefined)
   }
 }

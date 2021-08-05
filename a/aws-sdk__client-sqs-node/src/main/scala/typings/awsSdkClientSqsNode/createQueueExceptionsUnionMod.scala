@@ -13,14 +13,12 @@ object createQueueExceptionsUnionMod {
   trait CreateQueueExceptionsUnion extends StObject
   object CreateQueueExceptionsUnion {
     
-    @scala.inline
-    def QueueDeletedRecently(): typings.awsSdkClientSqsNode.typesQueueDeletedRecentlyMod.QueueDeletedRecently = {
+    inline def QueueDeletedRecently(): typings.awsSdkClientSqsNode.typesQueueDeletedRecentlyMod.QueueDeletedRecently = {
       val __obj = js.Dynamic.literal(name = "QueueDeletedRecently")
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesQueueDeletedRecentlyMod.QueueDeletedRecently]
     }
     
-    @scala.inline
-    def QueueNameExists(): typings.awsSdkClientSqsNode.typesQueueNameExistsMod.QueueNameExists = {
+    inline def QueueNameExists(): typings.awsSdkClientSqsNode.typesQueueNameExistsMod.QueueNameExists = {
       val __obj = js.Dynamic.literal(name = "QueueNameExists")
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesQueueNameExistsMod.QueueNameExists]
     }

@@ -24,16 +24,13 @@ trait GridValidationBuilder extends StObject {
 }
 object GridValidationBuilder {
   
-  @scala.inline
-  def apply(requireLimitOneResponsePerColumn: () => GridValidationBuilder): GridValidationBuilder = {
+  inline def apply(requireLimitOneResponsePerColumn: () => GridValidationBuilder): GridValidationBuilder = {
     val __obj = js.Dynamic.literal(requireLimitOneResponsePerColumn = js.Any.fromFunction0(requireLimitOneResponsePerColumn))
     __obj.asInstanceOf[GridValidationBuilder]
   }
   
-  @scala.inline
-  implicit class GridValidationBuilderMutableBuilder[Self <: GridValidationBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: GridValidationBuilder](x: Self) {
     
-    @scala.inline
-    def setRequireLimitOneResponsePerColumn(value: () => GridValidationBuilder): Self = StObject.set(x, "requireLimitOneResponsePerColumn", js.Any.fromFunction0(value))
+    inline def setRequireLimitOneResponsePerColumn(value: () => GridValidationBuilder): Self = StObject.set(x, "requireLimitOneResponsePerColumn", js.Any.fromFunction0(value))
   }
 }

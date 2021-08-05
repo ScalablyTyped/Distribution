@@ -18,29 +18,22 @@ trait PseudoElementSelectorPlain
 }
 object PseudoElementSelectorPlain {
   
-  @scala.inline
-  def apply(name: String): PseudoElementSelectorPlain = {
+  inline def apply(name: String): PseudoElementSelectorPlain = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], children = null)
     __obj.updateDynamic("type")("PseudoElementSelector")
     __obj.asInstanceOf[PseudoElementSelectorPlain]
   }
   
-  @scala.inline
-  implicit class PseudoElementSelectorPlainMutableBuilder[Self <: PseudoElementSelectorPlain] (val x: Self) extends AnyVal {
+  extension [Self <: PseudoElementSelectorPlain](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[CssNodePlain]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[CssNodePlain]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenNull: Self = StObject.set(x, "children", null)
+    inline def setChildrenNull: Self = StObject.set(x, "children", null)
     
-    @scala.inline
-    def setChildrenVarargs(value: CssNodePlain*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: CssNodePlain*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.cssTree.cssTreeStrings.PseudoElementSelector): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.cssTree.cssTreeStrings.PseudoElementSelector): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

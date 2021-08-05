@@ -10,6 +10,5 @@ object getCSSPropertyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(cssProperty: js.Any): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(cssProperty.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
+  inline def default(cssProperty: js.Any): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(cssProperty.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
 }

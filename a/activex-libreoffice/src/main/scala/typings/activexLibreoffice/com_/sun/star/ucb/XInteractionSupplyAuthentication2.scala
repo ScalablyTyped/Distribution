@@ -31,8 +31,7 @@ trait XInteractionSupplyAuthentication2
 }
 object XInteractionSupplyAuthentication2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     canSetAccount: () => Boolean,
     canSetPassword: () => Boolean,
@@ -56,13 +55,10 @@ object XInteractionSupplyAuthentication2 {
     __obj.asInstanceOf[XInteractionSupplyAuthentication2]
   }
   
-  @scala.inline
-  implicit class XInteractionSupplyAuthentication2MutableBuilder[Self <: XInteractionSupplyAuthentication2] (val x: Self) extends AnyVal {
+  extension [Self <: XInteractionSupplyAuthentication2](x: Self) {
     
-    @scala.inline
-    def setCanUseSystemCredentials(value: js.Array[Boolean] => Boolean): Self = StObject.set(x, "canUseSystemCredentials", js.Any.fromFunction1(value))
+    inline def setCanUseSystemCredentials(value: js.Array[Boolean] => Boolean): Self = StObject.set(x, "canUseSystemCredentials", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetUseSystemCredentials(value: Boolean => Unit): Self = StObject.set(x, "setUseSystemCredentials", js.Any.fromFunction1(value))
+    inline def setSetUseSystemCredentials(value: Boolean => Unit): Self = StObject.set(x, "setUseSystemCredentials", js.Any.fromFunction1(value))
   }
 }

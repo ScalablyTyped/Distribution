@@ -12,19 +12,15 @@ trait NOWAIT extends StObject {
 }
 object NOWAIT {
   
-  @scala.inline
-  def apply(NOWAIT: String, WAIT: String): NOWAIT = {
+  inline def apply(NOWAIT: String, WAIT: String): NOWAIT = {
     val __obj = js.Dynamic.literal(NOWAIT = NOWAIT.asInstanceOf[js.Any], WAIT = WAIT.asInstanceOf[js.Any])
     __obj.asInstanceOf[NOWAIT]
   }
   
-  @scala.inline
-  implicit class NOWAITMutableBuilder[Self <: NOWAIT] (val x: Self) extends AnyVal {
+  extension [Self <: NOWAIT](x: Self) {
     
-    @scala.inline
-    def setNOWAIT(value: String): Self = StObject.set(x, "NOWAIT", value.asInstanceOf[js.Any])
+    inline def setNOWAIT(value: String): Self = StObject.set(x, "NOWAIT", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWAIT(value: String): Self = StObject.set(x, "WAIT", value.asInstanceOf[js.Any])
+    inline def setWAIT(value: String): Self = StObject.set(x, "WAIT", value.asInstanceOf[js.Any])
   }
 }

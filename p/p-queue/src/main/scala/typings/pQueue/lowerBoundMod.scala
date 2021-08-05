@@ -10,6 +10,5 @@ object lowerBoundMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[T](array: js.Array[T], value: T, comparator: js.Function2[/* a */ T, /* b */ T, Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def default[T](array: js.Array[T], value: T, comparator: js.Function2[/* a */ T, /* b */ T, Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

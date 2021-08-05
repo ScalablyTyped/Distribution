@@ -14,22 +14,17 @@ trait SizeOnly extends StObject {
 }
 object SizeOnly {
   
-  @scala.inline
-  def apply(human: AliasStringDefaultBoolean, sizeOnly: AliasStringDefaultBoolean, timeout: CoerceType): SizeOnly = {
+  inline def apply(human: AliasStringDefaultBoolean, sizeOnly: AliasStringDefaultBoolean, timeout: CoerceType): SizeOnly = {
     val __obj = js.Dynamic.literal(human = human.asInstanceOf[js.Any], sizeOnly = sizeOnly.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[SizeOnly]
   }
   
-  @scala.inline
-  implicit class SizeOnlyMutableBuilder[Self <: SizeOnly] (val x: Self) extends AnyVal {
+  extension [Self <: SizeOnly](x: Self) {
     
-    @scala.inline
-    def setHuman(value: AliasStringDefaultBoolean): Self = StObject.set(x, "human", value.asInstanceOf[js.Any])
+    inline def setHuman(value: AliasStringDefaultBoolean): Self = StObject.set(x, "human", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeOnly(value: AliasStringDefaultBoolean): Self = StObject.set(x, "sizeOnly", value.asInstanceOf[js.Any])
+    inline def setSizeOnly(value: AliasStringDefaultBoolean): Self = StObject.set(x, "sizeOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: CoerceType): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: CoerceType): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

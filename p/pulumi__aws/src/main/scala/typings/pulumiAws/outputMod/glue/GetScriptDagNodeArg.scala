@@ -23,25 +23,19 @@ trait GetScriptDagNodeArg extends StObject {
 }
 object GetScriptDagNodeArg {
   
-  @scala.inline
-  def apply(name: String, value: String): GetScriptDagNodeArg = {
+  inline def apply(name: String, value: String): GetScriptDagNodeArg = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetScriptDagNodeArg]
   }
   
-  @scala.inline
-  implicit class GetScriptDagNodeArgMutableBuilder[Self <: GetScriptDagNodeArg] (val x: Self) extends AnyVal {
+  extension [Self <: GetScriptDagNodeArg](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParam(value: Boolean): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
+    inline def setParam(value: Boolean): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamUndefined: Self = StObject.set(x, "param", js.undefined)
+    inline def setParamUndefined: Self = StObject.set(x, "param", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

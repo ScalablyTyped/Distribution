@@ -14,25 +14,19 @@ trait SourceGcs extends StObject {
 }
 object SourceGcs {
   
-  @scala.inline
-  def apply(): SourceGcs = {
+  inline def apply(): SourceGcs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceGcs]
   }
   
-  @scala.inline
-  implicit class SourceGcsMutableBuilder[Self <: SourceGcs] (val x: Self) extends AnyVal {
+  extension [Self <: SourceGcs](x: Self) {
     
-    @scala.inline
-    def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
+    inline def setBucketUndefined: Self = StObject.set(x, "bucket", js.undefined)
     
-    @scala.inline
-    def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
   }
 }

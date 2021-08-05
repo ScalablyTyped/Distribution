@@ -29,23 +29,18 @@ object commonMod {
     }
     object IColor {
       
-      @scala.inline
-      def apply(blue: Double, green: Double, red: Double): IColor = {
+      inline def apply(blue: Double, green: Double, red: Double): IColor = {
         val __obj = js.Dynamic.literal(blue = blue.asInstanceOf[js.Any], green = green.asInstanceOf[js.Any], red = red.asInstanceOf[js.Any])
         __obj.asInstanceOf[IColor]
       }
       
-      @scala.inline
-      implicit class IColorMutableBuilder[Self <: IColor] (val x: Self) extends AnyVal {
+      extension [Self <: IColor](x: Self) {
         
-        @scala.inline
-        def setBlue(value: Double): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
+        inline def setBlue(value: Double): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setGreen(value: Double): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
+        inline def setGreen(value: Double): Self = StObject.set(x, "green", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRed(value: Double): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
+        inline def setRed(value: Double): Self = StObject.set(x, "red", value.asInstanceOf[js.Any])
       }
     }
     
@@ -67,20 +62,16 @@ object commonMod {
     }
     object IPoint {
       
-      @scala.inline
-      def apply(x: Double, y: Double): IPoint = {
+      inline def apply(x: Double, y: Double): IPoint = {
         val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
         __obj.asInstanceOf[IPoint]
       }
       
-      @scala.inline
-      implicit class IPointMutableBuilder[Self <: IPoint] (val x: Self) extends AnyVal {
+      extension [Self <: IPoint](x: Self) {
         
-        @scala.inline
-        def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+        inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+        inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       }
     }
     
@@ -97,20 +88,16 @@ object commonMod {
     }
     object ISize {
       
-      @scala.inline
-      def apply(height: Double, width: Double): ISize = {
+      inline def apply(height: Double, width: Double): ISize = {
         val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
         __obj.asInstanceOf[ISize]
       }
       
-      @scala.inline
-      implicit class ISizeMutableBuilder[Self <: ISize] (val x: Self) extends AnyVal {
+      extension [Self <: ISize](x: Self) {
         
-        @scala.inline
-        def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+        inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+        inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       }
     }
     

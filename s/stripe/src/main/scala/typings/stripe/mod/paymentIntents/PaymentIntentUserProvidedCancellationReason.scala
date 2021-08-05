@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PaymentIntentUserProvidedCancellationReason extends StObject
 object PaymentIntentUserProvidedCancellationReason {
   
-  @scala.inline
-  def abandoned: typings.stripe.stripeStrings.abandoned = "abandoned".asInstanceOf[typings.stripe.stripeStrings.abandoned]
+  inline def abandoned: typings.stripe.stripeStrings.abandoned = "abandoned".asInstanceOf[typings.stripe.stripeStrings.abandoned]
   
-  @scala.inline
-  def duplicate: typings.stripe.stripeStrings.duplicate = "duplicate".asInstanceOf[typings.stripe.stripeStrings.duplicate]
+  inline def duplicate: typings.stripe.stripeStrings.duplicate = "duplicate".asInstanceOf[typings.stripe.stripeStrings.duplicate]
   
-  @scala.inline
-  def fraudulent: typings.stripe.stripeStrings.fraudulent = "fraudulent".asInstanceOf[typings.stripe.stripeStrings.fraudulent]
+  inline def fraudulent: typings.stripe.stripeStrings.fraudulent = "fraudulent".asInstanceOf[typings.stripe.stripeStrings.fraudulent]
   
-  @scala.inline
-  def requested_by_customer: typings.stripe.stripeStrings.requested_by_customer = "requested_by_customer".asInstanceOf[typings.stripe.stripeStrings.requested_by_customer]
+  inline def requested_by_customer: typings.stripe.stripeStrings.requested_by_customer = "requested_by_customer".asInstanceOf[typings.stripe.stripeStrings.requested_by_customer]
 }

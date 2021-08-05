@@ -30,31 +30,23 @@ trait ParamsResourceProjectsConfigsOperationsTestiampermissions
 }
 object ParamsResourceProjectsConfigsOperationsTestiampermissions {
   
-  @scala.inline
-  def apply(): ParamsResourceProjectsConfigsOperationsTestiampermissions = {
+  inline def apply(): ParamsResourceProjectsConfigsOperationsTestiampermissions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceProjectsConfigsOperationsTestiampermissions]
   }
   
-  @scala.inline
-  implicit class ParamsResourceProjectsConfigsOperationsTestiampermissionsMutableBuilder[Self <: ParamsResourceProjectsConfigsOperationsTestiampermissions] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceProjectsConfigsOperationsTestiampermissions](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaTestIamPermissionsRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaTestIamPermissionsRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
-    @scala.inline
-    def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
+    inline def setResourceUndefined: Self = StObject.set(x, "resource", js.undefined)
   }
 }

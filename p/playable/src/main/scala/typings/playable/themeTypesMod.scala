@@ -13,8 +13,7 @@ object themeTypesMod {
        with /* cssPropName */ StringDictionary[String | ICSSRuleFunction | ICSSRule]
   object ICSSRule {
     
-    @scala.inline
-    def apply(): ICSSRule = {
+    inline def apply(): ICSSRule = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ICSSRule]
     }
@@ -30,20 +29,16 @@ object themeTypesMod {
   }
   object IThemeAPI {
     
-    @scala.inline
-    def apply(): IThemeAPI = {
+    inline def apply(): IThemeAPI = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IThemeAPI]
     }
     
-    @scala.inline
-    implicit class IThemeAPIMutableBuilder[Self <: IThemeAPI] (val x: Self) extends AnyVal {
+    extension [Self <: IThemeAPI](x: Self) {
       
-      @scala.inline
-      def setUpdateTheme(value: /* themeConfig */ IThemeConfig => Unit): Self = StObject.set(x, "updateTheme", js.Any.fromFunction1(value))
+      inline def setUpdateTheme(value: /* themeConfig */ IThemeConfig => Unit): Self = StObject.set(x, "updateTheme", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdateThemeUndefined: Self = StObject.set(x, "updateTheme", js.undefined)
+      inline def setUpdateThemeUndefined: Self = StObject.set(x, "updateTheme", js.undefined)
     }
   }
   
@@ -55,26 +50,20 @@ object themeTypesMod {
   }
   object IThemeConfig {
     
-    @scala.inline
-    def apply(): IThemeConfig = {
+    inline def apply(): IThemeConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IThemeConfig]
     }
     
-    @scala.inline
-    implicit class IThemeConfigMutableBuilder[Self <: IThemeConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IThemeConfig](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setProgressColor(value: String): Self = StObject.set(x, "progressColor", value.asInstanceOf[js.Any])
+      inline def setProgressColor(value: String): Self = StObject.set(x, "progressColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressColorUndefined: Self = StObject.set(x, "progressColor", js.undefined)
+      inline def setProgressColorUndefined: Self = StObject.set(x, "progressColor", js.undefined)
     }
   }
   
@@ -90,8 +79,7 @@ object themeTypesMod {
   }
   object IThemeService {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destroy: () => Unit,
       get: js.Object => IStyles,
       registerModuleTheme: (js.Object, ICSSRules) => Unit,
@@ -101,20 +89,15 @@ object themeTypesMod {
       __obj.asInstanceOf[IThemeService]
     }
     
-    @scala.inline
-    implicit class IThemeServiceMutableBuilder[Self <: IThemeService] (val x: Self) extends AnyVal {
+    extension [Self <: IThemeService](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet(value: js.Object => IStyles): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: js.Object => IStyles): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRegisterModuleTheme(value: (js.Object, ICSSRules) => Unit): Self = StObject.set(x, "registerModuleTheme", js.Any.fromFunction2(value))
+      inline def setRegisterModuleTheme(value: (js.Object, ICSSRules) => Unit): Self = StObject.set(x, "registerModuleTheme", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUpdateTheme(value: IThemeConfig => Unit): Self = StObject.set(x, "updateTheme", js.Any.fromFunction1(value))
+      inline def setUpdateTheme(value: IThemeConfig => Unit): Self = StObject.set(x, "updateTheme", js.Any.fromFunction1(value))
     }
   }
 }

@@ -43,52 +43,37 @@ trait appIdstringpathstringunde extends StObject {
 }
 object appIdstringpathstringunde {
   
-  @scala.inline
-  def apply(appId: String): appIdstringpathstringunde = {
+  inline def apply(appId: String): appIdstringpathstringunde = {
     val __obj = js.Dynamic.literal(appId = appId.asInstanceOf[js.Any])
     __obj.asInstanceOf[appIdstringpathstringunde]
   }
   
-  @scala.inline
-  implicit class appIdstringpathstringundeMutableBuilder[Self <: appIdstringpathstringunde] (val x: Self) extends AnyVal {
+  extension [Self <: appIdstringpathstringunde](x: Self) {
     
-    @scala.inline
-    def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
+    inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+    inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+    inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
     
-    @scala.inline
-    def setEnvVersion(value: develop | trial | release): Self = StObject.set(x, "envVersion", value.asInstanceOf[js.Any])
+    inline def setEnvVersion(value: develop | trial | release): Self = StObject.set(x, "envVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvVersionUndefined: Self = StObject.set(x, "envVersion", js.undefined)
+    inline def setEnvVersionUndefined: Self = StObject.set(x, "envVersion", js.undefined)
     
-    @scala.inline
-    def setExtraData(value: js.Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
+    inline def setExtraData(value: js.Any): Self = StObject.set(x, "extraData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtraDataUndefined: Self = StObject.set(x, "extraData", js.undefined)
+    inline def setExtraDataUndefined: Self = StObject.set(x, "extraData", js.undefined)
     
-    @scala.inline
-    def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
+    inline def setFail(value: () => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
+    inline def setFailUndefined: Self = StObject.set(x, "fail", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
+    inline def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

@@ -21,8 +21,7 @@ trait SignerCert extends StObject {
 }
 object SignerCert {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     certs: js.Array[String],
     hashAlg: String,
     sigAlg: String,
@@ -34,28 +33,20 @@ object SignerCert {
     __obj.asInstanceOf[SignerCert]
   }
   
-  @scala.inline
-  implicit class SignerCertMutableBuilder[Self <: SignerCert] (val x: Self) extends AnyVal {
+  extension [Self <: SignerCert](x: Self) {
     
-    @scala.inline
-    def setCerts(value: js.Array[String]): Self = StObject.set(x, "certs", value.asInstanceOf[js.Any])
+    inline def setCerts(value: js.Array[String]): Self = StObject.set(x, "certs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertsVarargs(value: String*): Self = StObject.set(x, "certs", js.Array(value :_*))
+    inline def setCertsVarargs(value: String*): Self = StObject.set(x, "certs", js.Array(value :_*))
     
-    @scala.inline
-    def setHashAlg(value: String): Self = StObject.set(x, "hashAlg", value.asInstanceOf[js.Any])
+    inline def setHashAlg(value: String): Self = StObject.set(x, "hashAlg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSigAlg(value: String): Self = StObject.set(x, "sigAlg", value.asInstanceOf[js.Any])
+    inline def setSigAlg(value: String): Self = StObject.set(x, "sigAlg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignerCert(value: String): Self = StObject.set(x, "signerCert", value.asInstanceOf[js.Any])
+    inline def setSignerCert(value: String): Self = StObject.set(x, "signerCert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSignerPrvKey(value: String): Self = StObject.set(x, "signerPrvKey", value.asInstanceOf[js.Any])
+    inline def setSignerPrvKey(value: String): Self = StObject.set(x, "signerPrvKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTstInfo(value: TSTInfo): Self = StObject.set(x, "tstInfo", value.asInstanceOf[js.Any])
+    inline def setTstInfo(value: TSTInfo): Self = StObject.set(x, "tstInfo", value.asInstanceOf[js.Any])
   }
 }

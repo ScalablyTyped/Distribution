@@ -30,8 +30,7 @@ trait EnterpriseAdminSetInformationForProvisionedEnterpriseUserResponseData exte
 }
 object EnterpriseAdminSetInformationForProvisionedEnterpriseUserResponseData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     active: Boolean,
     emails: js.Array[Primary],
     externalId: String,
@@ -46,43 +45,30 @@ object EnterpriseAdminSetInformationForProvisionedEnterpriseUserResponseData {
     __obj.asInstanceOf[EnterpriseAdminSetInformationForProvisionedEnterpriseUserResponseData]
   }
   
-  @scala.inline
-  implicit class EnterpriseAdminSetInformationForProvisionedEnterpriseUserResponseDataMutableBuilder[Self <: EnterpriseAdminSetInformationForProvisionedEnterpriseUserResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: EnterpriseAdminSetInformationForProvisionedEnterpriseUserResponseData](x: Self) {
     
-    @scala.inline
-    def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+    inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmails(value: js.Array[Primary]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
+    inline def setEmails(value: js.Array[Primary]): Self = StObject.set(x, "emails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailsVarargs(value: Primary*): Self = StObject.set(x, "emails", js.Array(value :_*))
+    inline def setEmailsVarargs(value: Primary*): Self = StObject.set(x, "emails", js.Array(value :_*))
     
-    @scala.inline
-    def setExternalId(value: String): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
+    inline def setExternalId(value: String): Self = StObject.set(x, "externalId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroups(value: js.Array[Value]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: js.Array[Value]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsVarargs(value: Value*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: Value*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeta(value: Created): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
+    inline def setMeta(value: Created): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: FamilyName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: FamilyName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemas(value: js.Array[String]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
+    inline def setSchemas(value: js.Array[String]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemasVarargs(value: String*): Self = StObject.set(x, "schemas", js.Array(value :_*))
+    inline def setSchemasVarargs(value: String*): Self = StObject.set(x, "schemas", js.Array(value :_*))
     
-    @scala.inline
-    def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
   }
 }

@@ -18,17 +18,14 @@ object Animation {
   }
   object IAnimationMethodResponse {
     
-    @scala.inline
-    def apply(execute: () => Promise[js.Any]): IAnimationMethodResponse = {
+    inline def apply(execute: () => Promise[js.Any]): IAnimationMethodResponse = {
       val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute))
       __obj.asInstanceOf[IAnimationMethodResponse]
     }
     
-    @scala.inline
-    implicit class IAnimationMethodResponseMutableBuilder[Self <: IAnimationMethodResponse] (val x: Self) extends AnyVal {
+    extension [Self <: IAnimationMethodResponse](x: Self) {
       
-      @scala.inline
-      def setExecute(value: () => Promise[js.Any]): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+      inline def setExecute(value: () => Promise[js.Any]): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
     }
   }
 }

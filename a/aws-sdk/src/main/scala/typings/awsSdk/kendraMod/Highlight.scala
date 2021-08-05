@@ -23,25 +23,19 @@ trait Highlight extends StObject {
 }
 object Highlight {
   
-  @scala.inline
-  def apply(BeginOffset: Integer, EndOffset: Integer): Highlight = {
+  inline def apply(BeginOffset: Integer, EndOffset: Integer): Highlight = {
     val __obj = js.Dynamic.literal(BeginOffset = BeginOffset.asInstanceOf[js.Any], EndOffset = EndOffset.asInstanceOf[js.Any])
     __obj.asInstanceOf[Highlight]
   }
   
-  @scala.inline
-  implicit class HighlightMutableBuilder[Self <: Highlight] (val x: Self) extends AnyVal {
+  extension [Self <: Highlight](x: Self) {
     
-    @scala.inline
-    def setBeginOffset(value: Integer): Self = StObject.set(x, "BeginOffset", value.asInstanceOf[js.Any])
+    inline def setBeginOffset(value: Integer): Self = StObject.set(x, "BeginOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndOffset(value: Integer): Self = StObject.set(x, "EndOffset", value.asInstanceOf[js.Any])
+    inline def setEndOffset(value: Integer): Self = StObject.set(x, "EndOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopAnswer(value: Boolean): Self = StObject.set(x, "TopAnswer", value.asInstanceOf[js.Any])
+    inline def setTopAnswer(value: Boolean): Self = StObject.set(x, "TopAnswer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopAnswerUndefined: Self = StObject.set(x, "TopAnswer", js.undefined)
+    inline def setTopAnswerUndefined: Self = StObject.set(x, "TopAnswer", js.undefined)
   }
 }

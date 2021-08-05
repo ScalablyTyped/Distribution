@@ -29,8 +29,7 @@ trait EdgeEndpoints[SingularType /* <: EdgeSingular */] extends StObject {
 }
 object EdgeEndpoints {
   
-  @scala.inline
-  def apply[SingularType /* <: EdgeSingular */](
+  inline def apply[SingularType /* <: EdgeSingular */](
     `source-endpoint`: PropertyValue[
       SingularType, 
       `inside-to-node` | `outside-to-node` | `outside-to-node-or-label` | `outside-to-line` | `outside-to-line-or-label` | String
@@ -46,32 +45,27 @@ object EdgeEndpoints {
     __obj.asInstanceOf[EdgeEndpoints[SingularType]]
   }
   
-  @scala.inline
-  implicit class EdgeEndpointsMutableBuilder[Self <: EdgeEndpoints[?], SingularType /* <: EdgeSingular */] (val x: Self & EdgeEndpoints[SingularType]) extends AnyVal {
+  extension [Self <: EdgeEndpoints[?], SingularType /* <: EdgeSingular */](x: Self & EdgeEndpoints[SingularType]) {
     
-    @scala.inline
-    def `setSource-endpoint`(
+    inline def `setSource-endpoint`(
       value: PropertyValue[
           SingularType, 
           `inside-to-node` | `outside-to-node` | `outside-to-node-or-label` | `outside-to-line` | `outside-to-line-or-label` | String
         ]
     ): Self = StObject.set(x, "source-endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setSource-endpointFunction1`(
+    inline def `setSource-endpointFunction1`(
       value: SingularType => `inside-to-node` | `outside-to-node` | `outside-to-node-or-label` | `outside-to-line` | `outside-to-line-or-label` | String
     ): Self = StObject.set(x, "source-endpoint", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def `setTarget-endpoint`(
+    inline def `setTarget-endpoint`(
       value: PropertyValue[
           SingularType, 
           `inside-to-node` | `outside-to-node` | `outside-to-node-or-label` | `outside-to-line` | `outside-to-line-or-label` | String
         ]
     ): Self = StObject.set(x, "target-endpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setTarget-endpointFunction1`(
+    inline def `setTarget-endpointFunction1`(
       value: SingularType => `inside-to-node` | `outside-to-node` | `outside-to-node-or-label` | `outside-to-line` | `outside-to-line-or-label` | String
     ): Self = StObject.set(x, "target-endpoint", js.Any.fromFunction1(value))
   }

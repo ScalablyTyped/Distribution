@@ -16,19 +16,15 @@ trait DirectionsConstructorOptions extends StObject {
 }
 object DirectionsConstructorOptions {
   
-  @scala.inline
-  def apply(): DirectionsConstructorOptions = {
+  inline def apply(): DirectionsConstructorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DirectionsConstructorOptions]
   }
   
-  @scala.inline
-  implicit class DirectionsConstructorOptionsMutableBuilder[Self <: DirectionsConstructorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DirectionsConstructorOptions](x: Self) {
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
   }
 }

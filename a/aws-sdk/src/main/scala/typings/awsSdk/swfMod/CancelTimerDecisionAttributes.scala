@@ -13,16 +13,13 @@ trait CancelTimerDecisionAttributes extends StObject {
 }
 object CancelTimerDecisionAttributes {
   
-  @scala.inline
-  def apply(timerId: TimerId): CancelTimerDecisionAttributes = {
+  inline def apply(timerId: TimerId): CancelTimerDecisionAttributes = {
     val __obj = js.Dynamic.literal(timerId = timerId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CancelTimerDecisionAttributes]
   }
   
-  @scala.inline
-  implicit class CancelTimerDecisionAttributesMutableBuilder[Self <: CancelTimerDecisionAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: CancelTimerDecisionAttributes](x: Self) {
     
-    @scala.inline
-    def setTimerId(value: TimerId): Self = StObject.set(x, "timerId", value.asInstanceOf[js.Any])
+    inline def setTimerId(value: TimerId): Self = StObject.set(x, "timerId", value.asInstanceOf[js.Any])
   }
 }

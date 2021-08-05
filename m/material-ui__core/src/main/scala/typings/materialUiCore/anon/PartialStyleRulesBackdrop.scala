@@ -14,25 +14,19 @@ trait PartialStyleRulesBackdrop extends StObject {
 }
 object PartialStyleRulesBackdrop {
   
-  @scala.inline
-  def apply(): PartialStyleRulesBackdrop = {
+  inline def apply(): PartialStyleRulesBackdrop = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesBackdrop]
   }
   
-  @scala.inline
-  implicit class PartialStyleRulesBackdropMutableBuilder[Self <: PartialStyleRulesBackdrop] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleRulesBackdrop](x: Self) {
     
-    @scala.inline
-    def setInvisible(value: CSSProperties): Self = StObject.set(x, "invisible", value.asInstanceOf[js.Any])
+    inline def setInvisible(value: CSSProperties): Self = StObject.set(x, "invisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvisibleUndefined: Self = StObject.set(x, "invisible", js.undefined)
+    inline def setInvisibleUndefined: Self = StObject.set(x, "invisible", js.undefined)
     
-    @scala.inline
-    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

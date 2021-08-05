@@ -13,19 +13,15 @@ trait CreateQueueResult extends StObject {
 }
 object CreateQueueResult {
   
-  @scala.inline
-  def apply(): CreateQueueResult = {
+  inline def apply(): CreateQueueResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateQueueResult]
   }
   
-  @scala.inline
-  implicit class CreateQueueResultMutableBuilder[Self <: CreateQueueResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateQueueResult](x: Self) {
     
-    @scala.inline
-    def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
+    inline def setQueueUrl(value: String): Self = StObject.set(x, "QueueUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueueUrlUndefined: Self = StObject.set(x, "QueueUrl", js.undefined)
+    inline def setQueueUrlUndefined: Self = StObject.set(x, "QueueUrl", js.undefined)
   }
 }

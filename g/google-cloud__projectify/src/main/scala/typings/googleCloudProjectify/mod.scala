@@ -24,6 +24,5 @@ object mod {
     var name: String = js.native
   }
   
-  @scala.inline
-  def replaceProjectIdToken(value: js.Any, projectId: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceProjectIdToken")(value.asInstanceOf[js.Any], projectId.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def replaceProjectIdToken(value: js.Any, projectId: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceProjectIdToken")(value.asInstanceOf[js.Any], projectId.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

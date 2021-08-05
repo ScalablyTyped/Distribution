@@ -8,11 +8,9 @@ object roslibStrings {
   
   @js.native
   sealed trait socketDotio extends StObject
-  @scala.inline
-  def socketDotio: socketDotio = "socket.io".asInstanceOf[socketDotio]
+  inline def socketDotio: socketDotio = "socket.io".asInstanceOf[socketDotio]
   
   @js.native
   sealed trait websocket extends StObject
-  @scala.inline
-  def websocket: websocket = "websocket".asInstanceOf[websocket]
+  inline def websocket: websocket = "websocket".asInstanceOf[websocket]
 }

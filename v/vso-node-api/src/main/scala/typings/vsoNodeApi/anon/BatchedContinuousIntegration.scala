@@ -24,8 +24,7 @@ trait BatchedContinuousIntegration extends StObject {
 }
 object BatchedContinuousIntegration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     all: scala.Double,
     batchedContinuousIntegration: scala.Double,
     batchedGatedCheckIn: scala.Double,
@@ -39,31 +38,22 @@ object BatchedContinuousIntegration {
     __obj.asInstanceOf[BatchedContinuousIntegration]
   }
   
-  @scala.inline
-  implicit class BatchedContinuousIntegrationMutableBuilder[Self <: BatchedContinuousIntegration] (val x: Self) extends AnyVal {
+  extension [Self <: BatchedContinuousIntegration](x: Self) {
     
-    @scala.inline
-    def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchedContinuousIntegration(value: scala.Double): Self = StObject.set(x, "batchedContinuousIntegration", value.asInstanceOf[js.Any])
+    inline def setBatchedContinuousIntegration(value: scala.Double): Self = StObject.set(x, "batchedContinuousIntegration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchedGatedCheckIn(value: scala.Double): Self = StObject.set(x, "batchedGatedCheckIn", value.asInstanceOf[js.Any])
+    inline def setBatchedGatedCheckIn(value: scala.Double): Self = StObject.set(x, "batchedGatedCheckIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinuousIntegration(value: scala.Double): Self = StObject.set(x, "continuousIntegration", value.asInstanceOf[js.Any])
+    inline def setContinuousIntegration(value: scala.Double): Self = StObject.set(x, "continuousIntegration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatedCheckIn(value: scala.Double): Self = StObject.set(x, "gatedCheckIn", value.asInstanceOf[js.Any])
+    inline def setGatedCheckIn(value: scala.Double): Self = StObject.set(x, "gatedCheckIn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPullRequest(value: scala.Double): Self = StObject.set(x, "pullRequest", value.asInstanceOf[js.Any])
+    inline def setPullRequest(value: scala.Double): Self = StObject.set(x, "pullRequest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchedule(value: scala.Double): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+    inline def setSchedule(value: scala.Double): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
   }
 }

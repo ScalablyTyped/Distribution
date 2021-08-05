@@ -14,25 +14,19 @@ trait CounterEvent extends StObject {
 }
 object CounterEvent {
   
-  @scala.inline
-  def apply(): CounterEvent = {
+  inline def apply(): CounterEvent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CounterEvent]
   }
   
-  @scala.inline
-  implicit class CounterEventMutableBuilder[Self <: CounterEvent] (val x: Self) extends AnyVal {
+  extension [Self <: CounterEvent](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setReportingName(value: String): Self = StObject.set(x, "reportingName", value.asInstanceOf[js.Any])
+    inline def setReportingName(value: String): Self = StObject.set(x, "reportingName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportingNameUndefined: Self = StObject.set(x, "reportingName", js.undefined)
+    inline def setReportingNameUndefined: Self = StObject.set(x, "reportingName", js.undefined)
   }
 }

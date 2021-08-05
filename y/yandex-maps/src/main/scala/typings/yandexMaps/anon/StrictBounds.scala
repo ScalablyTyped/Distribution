@@ -14,34 +14,25 @@ trait StrictBounds extends StObject {
 }
 object StrictBounds {
   
-  @scala.inline
-  def apply(): StrictBounds = {
+  inline def apply(): StrictBounds = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StrictBounds]
   }
   
-  @scala.inline
-  implicit class StrictBoundsMutableBuilder[Self <: StrictBounds] (val x: Self) extends AnyVal {
+  extension [Self <: StrictBounds](x: Self) {
     
-    @scala.inline
-    def setBoundedBy(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "boundedBy", value.asInstanceOf[js.Any])
+    inline def setBoundedBy(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "boundedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundedByUndefined: Self = StObject.set(x, "boundedBy", js.undefined)
+    inline def setBoundedByUndefined: Self = StObject.set(x, "boundedBy", js.undefined)
     
-    @scala.inline
-    def setBoundedByVarargs(value: js.Array[Double]*): Self = StObject.set(x, "boundedBy", js.Array(value :_*))
+    inline def setBoundedByVarargs(value: js.Array[Double]*): Self = StObject.set(x, "boundedBy", js.Array(value :_*))
     
-    @scala.inline
-    def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: Double): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    @scala.inline
-    def setStrictBounds(value: Boolean): Self = StObject.set(x, "strictBounds", value.asInstanceOf[js.Any])
+    inline def setStrictBounds(value: Boolean): Self = StObject.set(x, "strictBounds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrictBoundsUndefined: Self = StObject.set(x, "strictBounds", js.undefined)
+    inline def setStrictBoundsUndefined: Self = StObject.set(x, "strictBounds", js.undefined)
   }
 }

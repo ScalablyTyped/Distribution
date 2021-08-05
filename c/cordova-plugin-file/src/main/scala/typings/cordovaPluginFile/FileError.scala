@@ -11,16 +11,13 @@ trait FileError extends StObject {
 }
 object FileError {
   
-  @scala.inline
-  def apply(code: Double): FileError = {
+  inline def apply(code: Double): FileError = {
     val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileError]
   }
   
-  @scala.inline
-  implicit class FileErrorMutableBuilder[Self <: FileError] (val x: Self) extends AnyVal {
+  extension [Self <: FileError](x: Self) {
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
   }
 }

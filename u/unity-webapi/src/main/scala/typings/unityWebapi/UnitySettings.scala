@@ -14,22 +14,17 @@ trait UnitySettings extends StObject {
 }
 object UnitySettings {
   
-  @scala.inline
-  def apply(iconUrl: String, name: String, onInit: js.Function): UnitySettings = {
+  inline def apply(iconUrl: String, name: String, onInit: js.Function): UnitySettings = {
     val __obj = js.Dynamic.literal(iconUrl = iconUrl.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], onInit = onInit.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnitySettings]
   }
   
-  @scala.inline
-  implicit class UnitySettingsMutableBuilder[Self <: UnitySettings] (val x: Self) extends AnyVal {
+  extension [Self <: UnitySettings](x: Self) {
     
-    @scala.inline
-    def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
+    inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnInit(value: js.Function): Self = StObject.set(x, "onInit", value.asInstanceOf[js.Any])
+    inline def setOnInit(value: js.Function): Self = StObject.set(x, "onInit", value.asInstanceOf[js.Any])
   }
 }

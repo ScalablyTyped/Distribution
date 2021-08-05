@@ -21,8 +21,7 @@ trait MediaRecorderEventMap extends StObject {
 }
 object MediaRecorderEventMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dataavailable: BlobEvent,
     error: MediaRecorderErrorEvent,
     pause: Event,
@@ -34,25 +33,18 @@ object MediaRecorderEventMap {
     __obj.asInstanceOf[MediaRecorderEventMap]
   }
   
-  @scala.inline
-  implicit class MediaRecorderEventMapMutableBuilder[Self <: MediaRecorderEventMap] (val x: Self) extends AnyVal {
+  extension [Self <: MediaRecorderEventMap](x: Self) {
     
-    @scala.inline
-    def setDataavailable(value: BlobEvent): Self = StObject.set(x, "dataavailable", value.asInstanceOf[js.Any])
+    inline def setDataavailable(value: BlobEvent): Self = StObject.set(x, "dataavailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setError(value: MediaRecorderErrorEvent): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: MediaRecorderErrorEvent): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPause(value: Event): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
+    inline def setPause(value: Event): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResume(value: Event): Self = StObject.set(x, "resume", value.asInstanceOf[js.Any])
+    inline def setResume(value: Event): Self = StObject.set(x, "resume", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart(value: Event): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Event): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStop(value: Event): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
+    inline def setStop(value: Event): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
   }
 }

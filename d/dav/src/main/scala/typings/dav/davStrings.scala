@@ -8,26 +8,21 @@ object davStrings {
   
   @js.native
   sealed trait Partial extends StObject
-  @scala.inline
-  def Partial: Partial = "Partial".asInstanceOf[Partial]
+  inline def Partial: Partial = "Partial".asInstanceOf[Partial]
   
   @js.native
   sealed trait basic extends StObject
-  @scala.inline
-  def basic: basic = "basic".asInstanceOf[basic]
+  inline def basic: basic = "basic".asInstanceOf[basic]
   
   @js.native
   sealed trait caldav extends StObject
-  @scala.inline
-  def caldav: caldav = "caldav".asInstanceOf[caldav]
+  inline def caldav: caldav = "caldav".asInstanceOf[caldav]
   
   @js.native
   sealed trait carddav extends StObject
-  @scala.inline
-  def carddav: carddav = "carddav".asInstanceOf[carddav]
+  inline def carddav: carddav = "carddav".asInstanceOf[carddav]
   
   @js.native
   sealed trait webdav extends StObject
-  @scala.inline
-  def webdav: webdav = "webdav".asInstanceOf[webdav]
+  inline def webdav: webdav = "webdav".asInstanceOf[webdav]
 }

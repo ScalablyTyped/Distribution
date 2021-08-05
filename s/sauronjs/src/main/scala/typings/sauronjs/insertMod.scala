@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object insertMod {
   
-  @scala.inline
-  def apply(params: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].apply(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def apply(params: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].apply(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("sauronjs/src/util/insert", JSImport.Namespace)
   @js.native

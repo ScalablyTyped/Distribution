@@ -13,25 +13,19 @@ trait GroupsT extends StObject {
 }
 object GroupsT {
   
-  @scala.inline
-  def apply(): GroupsT = {
+  inline def apply(): GroupsT = {
     val __obj = js.Dynamic.literal(t = "ungroup")
     __obj.asInstanceOf[GroupsT]
   }
   
-  @scala.inline
-  implicit class GroupsTMutableBuilder[Self <: GroupsT] (val x: Self) extends AnyVal {
+  extension [Self <: GroupsT](x: Self) {
     
-    @scala.inline
-    def setGroups(value: js.Array[js.Object]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: js.Array[js.Object]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
+    inline def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
     
-    @scala.inline
-    def setGroupsVarargs(value: js.Object*): Self = StObject.set(x, "groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: js.Object*): Self = StObject.set(x, "groups", js.Array(value :_*))
     
-    @scala.inline
-    def setT(value: ungroup): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+    inline def setT(value: ungroup): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
   }
 }

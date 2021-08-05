@@ -14,31 +14,23 @@ trait EffectiveTime extends StObject {
 }
 object EffectiveTime {
   
-  @scala.inline
-  def apply(): EffectiveTime = {
+  inline def apply(): EffectiveTime = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EffectiveTime]
   }
   
-  @scala.inline
-  implicit class EffectiveTimeMutableBuilder[Self <: EffectiveTime] (val x: Self) extends AnyVal {
+  extension [Self <: EffectiveTime](x: Self) {
     
-    @scala.inline
-    def setEffectiveTime(value: String): Self = StObject.set(x, "effectiveTime", value.asInstanceOf[js.Any])
+    inline def setEffectiveTime(value: String): Self = StObject.set(x, "effectiveTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectiveTimeUndefined: Self = StObject.set(x, "effectiveTime", js.undefined)
+    inline def setEffectiveTimeUndefined: Self = StObject.set(x, "effectiveTime", js.undefined)
     
-    @scala.inline
-    def setIsLocked(value: Boolean): Self = StObject.set(x, "isLocked", value.asInstanceOf[js.Any])
+    inline def setIsLocked(value: Boolean): Self = StObject.set(x, "isLocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsLockedUndefined: Self = StObject.set(x, "isLocked", js.undefined)
+    inline def setIsLockedUndefined: Self = StObject.set(x, "isLocked", js.undefined)
     
-    @scala.inline
-    def setRetentionPeriod(value: String): Self = StObject.set(x, "retentionPeriod", value.asInstanceOf[js.Any])
+    inline def setRetentionPeriod(value: String): Self = StObject.set(x, "retentionPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetentionPeriodUndefined: Self = StObject.set(x, "retentionPeriod", js.undefined)
+    inline def setRetentionPeriodUndefined: Self = StObject.set(x, "retentionPeriod", js.undefined)
   }
 }

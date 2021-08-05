@@ -32,37 +32,27 @@ trait SchemaLiveChatBan extends StObject {
 }
 object SchemaLiveChatBan {
   
-  @scala.inline
-  def apply(): SchemaLiveChatBan = {
+  inline def apply(): SchemaLiveChatBan = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLiveChatBan]
   }
   
-  @scala.inline
-  implicit class SchemaLiveChatBanMutableBuilder[Self <: SchemaLiveChatBan] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLiveChatBan](x: Self) {
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setSnippet(value: SchemaLiveChatBanSnippet): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
+    inline def setSnippet(value: SchemaLiveChatBanSnippet): Self = StObject.set(x, "snippet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
+    inline def setSnippetUndefined: Self = StObject.set(x, "snippet", js.undefined)
   }
 }

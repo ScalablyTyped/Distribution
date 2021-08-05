@@ -18,16 +18,13 @@ trait ASPxClientFloatingActionButtonActionExpandingEventArgs
 }
 object ASPxClientFloatingActionButtonActionExpandingEventArgs {
   
-  @scala.inline
-  def apply(contextName: String): ASPxClientFloatingActionButtonActionExpandingEventArgs = {
+  inline def apply(contextName: String): ASPxClientFloatingActionButtonActionExpandingEventArgs = {
     val __obj = js.Dynamic.literal(contextName = contextName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientFloatingActionButtonActionExpandingEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientFloatingActionButtonActionExpandingEventArgsMutableBuilder[Self <: ASPxClientFloatingActionButtonActionExpandingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientFloatingActionButtonActionExpandingEventArgs](x: Self) {
     
-    @scala.inline
-    def setContextName(value: String): Self = StObject.set(x, "contextName", value.asInstanceOf[js.Any])
+    inline def setContextName(value: String): Self = StObject.set(x, "contextName", value.asInstanceOf[js.Any])
   }
 }

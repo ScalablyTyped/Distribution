@@ -14,8 +14,7 @@ trait WebUICameraSettingsActivatedEventArgs
      with IActivatedEventArgsDeferral
 object WebUICameraSettingsActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activatedOperation: ActivatedOperation,
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,

@@ -30,26 +30,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ImageToken {
   
-  @scala.inline
-  def apply(alt: String, level: Double, src: String, title: String): ImageToken = {
+  inline def apply(alt: String, level: Double, src: String, title: String): ImageToken = {
     val __obj = js.Dynamic.literal(alt = alt.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("image")
     __obj.asInstanceOf[ImageToken]
   }
   
-  @scala.inline
-  implicit class ImageTokenMutableBuilder[Self <: ImageToken] (val x: Self) extends AnyVal {
+  extension [Self <: ImageToken](x: Self) {
     
-    @scala.inline
-    def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+    inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: image): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: image): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

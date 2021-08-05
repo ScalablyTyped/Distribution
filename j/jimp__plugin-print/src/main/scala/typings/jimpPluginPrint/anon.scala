@@ -19,23 +19,18 @@ object anon {
   }
   object AlignmentX {
     
-    @scala.inline
-    def apply(alignmentX: Double, alignmentY: Double, text: String): AlignmentX = {
+    inline def apply(alignmentX: Double, alignmentY: Double, text: String): AlignmentX = {
       val __obj = js.Dynamic.literal(alignmentX = alignmentX.asInstanceOf[js.Any], alignmentY = alignmentY.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[AlignmentX]
     }
     
-    @scala.inline
-    implicit class AlignmentXMutableBuilder[Self <: AlignmentX] (val x: Self) extends AnyVal {
+    extension [Self <: AlignmentX](x: Self) {
       
-      @scala.inline
-      def setAlignmentX(value: Double): Self = StObject.set(x, "alignmentX", value.asInstanceOf[js.Any])
+      inline def setAlignmentX(value: Double): Self = StObject.set(x, "alignmentX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlignmentY(value: Double): Self = StObject.set(x, "alignmentY", value.asInstanceOf[js.Any])
+      inline def setAlignmentY(value: Double): Self = StObject.set(x, "alignmentY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   

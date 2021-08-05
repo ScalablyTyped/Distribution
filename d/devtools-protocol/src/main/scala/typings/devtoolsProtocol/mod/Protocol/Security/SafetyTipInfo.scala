@@ -18,22 +18,17 @@ trait SafetyTipInfo extends StObject {
 }
 object SafetyTipInfo {
   
-  @scala.inline
-  def apply(safetyTipStatus: SafetyTipStatus): SafetyTipInfo = {
+  inline def apply(safetyTipStatus: SafetyTipStatus): SafetyTipInfo = {
     val __obj = js.Dynamic.literal(safetyTipStatus = safetyTipStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[SafetyTipInfo]
   }
   
-  @scala.inline
-  implicit class SafetyTipInfoMutableBuilder[Self <: SafetyTipInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SafetyTipInfo](x: Self) {
     
-    @scala.inline
-    def setSafeUrl(value: String): Self = StObject.set(x, "safeUrl", value.asInstanceOf[js.Any])
+    inline def setSafeUrl(value: String): Self = StObject.set(x, "safeUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSafeUrlUndefined: Self = StObject.set(x, "safeUrl", js.undefined)
+    inline def setSafeUrlUndefined: Self = StObject.set(x, "safeUrl", js.undefined)
     
-    @scala.inline
-    def setSafetyTipStatus(value: SafetyTipStatus): Self = StObject.set(x, "safetyTipStatus", value.asInstanceOf[js.Any])
+    inline def setSafetyTipStatus(value: SafetyTipStatus): Self = StObject.set(x, "safetyTipStatus", value.asInstanceOf[js.Any])
   }
 }

@@ -15,19 +15,16 @@ trait RenderDocument extends StObject {
 }
 object RenderDocument {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     renderDocument: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias next.next/dist/next-server/lib/utils.DocumentType */ js.Object, DocumentProps) => ReactElement
   ): RenderDocument = {
     val __obj = js.Dynamic.literal(renderDocument = js.Any.fromFunction2(renderDocument))
     __obj.asInstanceOf[RenderDocument]
   }
   
-  @scala.inline
-  implicit class RenderDocumentMutableBuilder[Self <: RenderDocument] (val x: Self) extends AnyVal {
+  extension [Self <: RenderDocument](x: Self) {
     
-    @scala.inline
-    def setRenderDocument(
+    inline def setRenderDocument(
       value: (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias next.next/dist/next-server/lib/utils.DocumentType */ js.Object, DocumentProps) => ReactElement
     ): Self = StObject.set(x, "renderDocument", js.Any.fromFunction2(value))
   }

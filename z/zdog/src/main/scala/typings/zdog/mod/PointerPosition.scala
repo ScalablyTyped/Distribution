@@ -12,19 +12,15 @@ trait PointerPosition extends StObject {
 }
 object PointerPosition {
   
-  @scala.inline
-  def apply(pageX: Double, pageY: Double): PointerPosition = {
+  inline def apply(pageX: Double, pageY: Double): PointerPosition = {
     val __obj = js.Dynamic.literal(pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any])
     __obj.asInstanceOf[PointerPosition]
   }
   
-  @scala.inline
-  implicit class PointerPositionMutableBuilder[Self <: PointerPosition] (val x: Self) extends AnyVal {
+  extension [Self <: PointerPosition](x: Self) {
     
-    @scala.inline
-    def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
+    inline def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
+    inline def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
   }
 }

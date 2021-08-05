@@ -18,19 +18,15 @@ trait Kind extends StObject {
 }
 object Kind {
   
-  @scala.inline
-  def apply(kind: String, videoId: String): Kind = {
+  inline def apply(kind: String, videoId: String): Kind = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], videoId = videoId.asInstanceOf[js.Any])
     __obj.asInstanceOf[Kind]
   }
   
-  @scala.inline
-  implicit class KindMutableBuilder[Self <: Kind] (val x: Self) extends AnyVal {
+  extension [Self <: Kind](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
+    inline def setVideoId(value: String): Self = StObject.set(x, "videoId", value.asInstanceOf[js.Any])
   }
 }

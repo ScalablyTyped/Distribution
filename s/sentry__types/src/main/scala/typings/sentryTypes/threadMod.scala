@@ -21,44 +21,32 @@ object threadMod {
   }
   object Thread {
     
-    @scala.inline
-    def apply(): Thread = {
+    inline def apply(): Thread = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Thread]
     }
     
-    @scala.inline
-    implicit class ThreadMutableBuilder[Self <: Thread] (val x: Self) extends AnyVal {
+    extension [Self <: Thread](x: Self) {
       
-      @scala.inline
-      def setCrashed(value: Boolean): Self = StObject.set(x, "crashed", value.asInstanceOf[js.Any])
+      inline def setCrashed(value: Boolean): Self = StObject.set(x, "crashed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCrashedUndefined: Self = StObject.set(x, "crashed", js.undefined)
+      inline def setCrashedUndefined: Self = StObject.set(x, "crashed", js.undefined)
       
-      @scala.inline
-      def setCurrent(value: Boolean): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+      inline def setCurrent(value: Boolean): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
+      inline def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setStacktrace(value: Stacktrace): Self = StObject.set(x, "stacktrace", value.asInstanceOf[js.Any])
+      inline def setStacktrace(value: Stacktrace): Self = StObject.set(x, "stacktrace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStacktraceUndefined: Self = StObject.set(x, "stacktrace", js.undefined)
+      inline def setStacktraceUndefined: Self = StObject.set(x, "stacktrace", js.undefined)
     }
   }
 }

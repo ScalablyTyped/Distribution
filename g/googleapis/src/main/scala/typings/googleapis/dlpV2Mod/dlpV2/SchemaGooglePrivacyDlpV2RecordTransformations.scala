@@ -23,31 +23,23 @@ trait SchemaGooglePrivacyDlpV2RecordTransformations extends StObject {
 }
 object SchemaGooglePrivacyDlpV2RecordTransformations {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2RecordTransformations = {
+  inline def apply(): SchemaGooglePrivacyDlpV2RecordTransformations = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2RecordTransformations]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2RecordTransformationsMutableBuilder[Self <: SchemaGooglePrivacyDlpV2RecordTransformations] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2RecordTransformations](x: Self) {
     
-    @scala.inline
-    def setFieldTransformations(value: js.Array[SchemaGooglePrivacyDlpV2FieldTransformation]): Self = StObject.set(x, "fieldTransformations", value.asInstanceOf[js.Any])
+    inline def setFieldTransformations(value: js.Array[SchemaGooglePrivacyDlpV2FieldTransformation]): Self = StObject.set(x, "fieldTransformations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldTransformationsUndefined: Self = StObject.set(x, "fieldTransformations", js.undefined)
+    inline def setFieldTransformationsUndefined: Self = StObject.set(x, "fieldTransformations", js.undefined)
     
-    @scala.inline
-    def setFieldTransformationsVarargs(value: SchemaGooglePrivacyDlpV2FieldTransformation*): Self = StObject.set(x, "fieldTransformations", js.Array(value :_*))
+    inline def setFieldTransformationsVarargs(value: SchemaGooglePrivacyDlpV2FieldTransformation*): Self = StObject.set(x, "fieldTransformations", js.Array(value :_*))
     
-    @scala.inline
-    def setRecordSuppressions(value: js.Array[SchemaGooglePrivacyDlpV2RecordSuppression]): Self = StObject.set(x, "recordSuppressions", value.asInstanceOf[js.Any])
+    inline def setRecordSuppressions(value: js.Array[SchemaGooglePrivacyDlpV2RecordSuppression]): Self = StObject.set(x, "recordSuppressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordSuppressionsUndefined: Self = StObject.set(x, "recordSuppressions", js.undefined)
+    inline def setRecordSuppressionsUndefined: Self = StObject.set(x, "recordSuppressions", js.undefined)
     
-    @scala.inline
-    def setRecordSuppressionsVarargs(value: SchemaGooglePrivacyDlpV2RecordSuppression*): Self = StObject.set(x, "recordSuppressions", js.Array(value :_*))
+    inline def setRecordSuppressionsVarargs(value: SchemaGooglePrivacyDlpV2RecordSuppression*): Self = StObject.set(x, "recordSuppressions", js.Array(value :_*))
   }
 }

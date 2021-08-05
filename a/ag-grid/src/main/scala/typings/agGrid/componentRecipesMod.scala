@@ -29,19 +29,19 @@ object componentRecipesMod {
   @js.native
   class ComponentRecipes () extends StObject {
     
-    var columnApi: js.Any = js.native
+    /* private */ var columnApi: js.Any = js.native
     
-    var componentResolver: js.Any = js.native
+    /* private */ var componentResolver: js.Any = js.native
     
-    var filterManager: js.Any = js.native
+    /* private */ var filterManager: js.Any = js.native
     
     /* private */ def getFilterComponentPrototype[A, B](colDef: js.Any): js.Any = js.native
     
-    var gridApi: js.Any = js.native
+    /* private */ var gridApi: js.Any = js.native
     
-    var gridOptions: js.Any = js.native
+    /* private */ var gridOptions: js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
     def newCellRenderer(target: ColDef, params: ICellRendererParams): Promise[ICellRendererComp] = js.native
     def newCellRenderer(target: IRichCellEditorParams, params: ICellRendererParams): Promise[ICellRendererComp] = js.native
@@ -79,7 +79,6 @@ object componentRecipesMod {
     @JSImport("ag-grid/dist/lib/components/framework/componentRecipes", "ComponentRecipes.filterToFloatingFilterNames")
     @js.native
     def filterToFloatingFilterNames: js.Any = js.native
-    @scala.inline
-    def filterToFloatingFilterNames_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("filterToFloatingFilterNames")(x.asInstanceOf[js.Any])
+    inline def filterToFloatingFilterNames_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("filterToFloatingFilterNames")(x.asInstanceOf[js.Any])
   }
 }

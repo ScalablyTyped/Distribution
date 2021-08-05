@@ -12,6 +12,5 @@ object setObservableConfigMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(config: ObservableConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(config: ObservableConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

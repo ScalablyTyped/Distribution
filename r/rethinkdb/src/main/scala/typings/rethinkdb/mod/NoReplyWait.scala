@@ -10,16 +10,13 @@ trait NoReplyWait extends StObject {
 }
 object NoReplyWait {
   
-  @scala.inline
-  def apply(noreplyWait: Boolean): NoReplyWait = {
+  inline def apply(noreplyWait: Boolean): NoReplyWait = {
     val __obj = js.Dynamic.literal(noreplyWait = noreplyWait.asInstanceOf[js.Any])
     __obj.asInstanceOf[NoReplyWait]
   }
   
-  @scala.inline
-  implicit class NoReplyWaitMutableBuilder[Self <: NoReplyWait] (val x: Self) extends AnyVal {
+  extension [Self <: NoReplyWait](x: Self) {
     
-    @scala.inline
-    def setNoreplyWait(value: Boolean): Self = StObject.set(x, "noreplyWait", value.asInstanceOf[js.Any])
+    inline def setNoreplyWait(value: Boolean): Self = StObject.set(x, "noreplyWait", value.asInstanceOf[js.Any])
   }
 }

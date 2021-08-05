@@ -17,8 +17,7 @@ trait AutocompleteStructuredFormatting extends StObject {
 }
 object AutocompleteStructuredFormatting {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     main_text: String,
     main_text_matched_substrings: js.Array[PredictionSubstring],
     secondary_text: String
@@ -27,28 +26,20 @@ object AutocompleteStructuredFormatting {
     __obj.asInstanceOf[AutocompleteStructuredFormatting]
   }
   
-  @scala.inline
-  implicit class AutocompleteStructuredFormattingMutableBuilder[Self <: AutocompleteStructuredFormatting] (val x: Self) extends AnyVal {
+  extension [Self <: AutocompleteStructuredFormatting](x: Self) {
     
-    @scala.inline
-    def setMain_text(value: String): Self = StObject.set(x, "main_text", value.asInstanceOf[js.Any])
+    inline def setMain_text(value: String): Self = StObject.set(x, "main_text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMain_text_matched_substrings(value: js.Array[PredictionSubstring]): Self = StObject.set(x, "main_text_matched_substrings", value.asInstanceOf[js.Any])
+    inline def setMain_text_matched_substrings(value: js.Array[PredictionSubstring]): Self = StObject.set(x, "main_text_matched_substrings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMain_text_matched_substringsVarargs(value: PredictionSubstring*): Self = StObject.set(x, "main_text_matched_substrings", js.Array(value :_*))
+    inline def setMain_text_matched_substringsVarargs(value: PredictionSubstring*): Self = StObject.set(x, "main_text_matched_substrings", js.Array(value :_*))
     
-    @scala.inline
-    def setSecondary_text(value: String): Self = StObject.set(x, "secondary_text", value.asInstanceOf[js.Any])
+    inline def setSecondary_text(value: String): Self = StObject.set(x, "secondary_text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondary_text_matched_substrings(value: js.Array[PredictionSubstring]): Self = StObject.set(x, "secondary_text_matched_substrings", value.asInstanceOf[js.Any])
+    inline def setSecondary_text_matched_substrings(value: js.Array[PredictionSubstring]): Self = StObject.set(x, "secondary_text_matched_substrings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondary_text_matched_substringsUndefined: Self = StObject.set(x, "secondary_text_matched_substrings", js.undefined)
+    inline def setSecondary_text_matched_substringsUndefined: Self = StObject.set(x, "secondary_text_matched_substrings", js.undefined)
     
-    @scala.inline
-    def setSecondary_text_matched_substringsVarargs(value: PredictionSubstring*): Self = StObject.set(x, "secondary_text_matched_substrings", js.Array(value :_*))
+    inline def setSecondary_text_matched_substringsVarargs(value: PredictionSubstring*): Self = StObject.set(x, "secondary_text_matched_substrings", js.Array(value :_*))
   }
 }

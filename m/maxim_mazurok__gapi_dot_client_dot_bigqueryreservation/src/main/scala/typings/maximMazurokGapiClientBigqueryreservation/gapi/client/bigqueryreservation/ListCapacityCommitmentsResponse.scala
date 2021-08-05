@@ -14,28 +14,21 @@ trait ListCapacityCommitmentsResponse extends StObject {
 }
 object ListCapacityCommitmentsResponse {
   
-  @scala.inline
-  def apply(): ListCapacityCommitmentsResponse = {
+  inline def apply(): ListCapacityCommitmentsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListCapacityCommitmentsResponse]
   }
   
-  @scala.inline
-  implicit class ListCapacityCommitmentsResponseMutableBuilder[Self <: ListCapacityCommitmentsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListCapacityCommitmentsResponse](x: Self) {
     
-    @scala.inline
-    def setCapacityCommitments(value: js.Array[CapacityCommitment]): Self = StObject.set(x, "capacityCommitments", value.asInstanceOf[js.Any])
+    inline def setCapacityCommitments(value: js.Array[CapacityCommitment]): Self = StObject.set(x, "capacityCommitments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapacityCommitmentsUndefined: Self = StObject.set(x, "capacityCommitments", js.undefined)
+    inline def setCapacityCommitmentsUndefined: Self = StObject.set(x, "capacityCommitments", js.undefined)
     
-    @scala.inline
-    def setCapacityCommitmentsVarargs(value: CapacityCommitment*): Self = StObject.set(x, "capacityCommitments", js.Array(value :_*))
+    inline def setCapacityCommitmentsVarargs(value: CapacityCommitment*): Self = StObject.set(x, "capacityCommitments", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

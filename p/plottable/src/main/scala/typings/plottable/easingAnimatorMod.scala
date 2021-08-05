@@ -104,20 +104,16 @@ object easingAnimatorMod {
     @JSImport("plottable/build/src/animators/easingAnimator", "EaseName.backInOut")
     @js.native
     def backInOut: typings.plottable.plottableStrings.backInOut = js.native
-    @scala.inline
-    def backInOut_=(x: backInOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("backInOut")(x.asInstanceOf[js.Any])
+    inline def backInOut_=(x: backInOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("backInOut")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def backIn_=(x: backIn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("backIn")(x.asInstanceOf[js.Any])
+    inline def backIn_=(x: backIn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("backIn")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/animators/easingAnimator", "EaseName.backOut")
     @js.native
     def backOut: typings.plottable.plottableStrings.backOut = js.native
-    @scala.inline
-    def backOut_=(x: backOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("backOut")(x.asInstanceOf[js.Any])
+    inline def backOut_=(x: backOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("backOut")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def back_=(x: back): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("back")(x.asInstanceOf[js.Any])
+    inline def back_=(x: back): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("back")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/animators/easingAnimator", "EaseName.bounce")
     @js.native
@@ -130,20 +126,16 @@ object easingAnimatorMod {
     @JSImport("plottable/build/src/animators/easingAnimator", "EaseName.bounceInOut")
     @js.native
     def bounceInOut: typings.plottable.plottableStrings.bounceInOut = js.native
-    @scala.inline
-    def bounceInOut_=(x: bounceInOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bounceInOut")(x.asInstanceOf[js.Any])
+    inline def bounceInOut_=(x: bounceInOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bounceInOut")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def bounceIn_=(x: bounceIn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bounceIn")(x.asInstanceOf[js.Any])
+    inline def bounceIn_=(x: bounceIn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bounceIn")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/animators/easingAnimator", "EaseName.bounceOut")
     @js.native
     def bounceOut: typings.plottable.plottableStrings.bounceOut = js.native
-    @scala.inline
-    def bounceOut_=(x: bounceOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bounceOut")(x.asInstanceOf[js.Any])
+    inline def bounceOut_=(x: bounceOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bounceOut")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def bounce_=(x: bounce): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bounce")(x.asInstanceOf[js.Any])
+    inline def bounce_=(x: bounce): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bounce")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/animators/easingAnimator", "EaseName.circle")
     @js.native
@@ -156,20 +148,16 @@ object easingAnimatorMod {
     @JSImport("plottable/build/src/animators/easingAnimator", "EaseName.circleInOut")
     @js.native
     def circleInOut: typings.plottable.plottableStrings.circleInOut = js.native
-    @scala.inline
-    def circleInOut_=(x: circleInOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("circleInOut")(x.asInstanceOf[js.Any])
+    inline def circleInOut_=(x: circleInOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("circleInOut")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def circleIn_=(x: circleIn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("circleIn")(x.asInstanceOf[js.Any])
+    inline def circleIn_=(x: circleIn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("circleIn")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/animators/easingAnimator", "EaseName.circleOut")
     @js.native
     def circleOut: typings.plottable.plottableStrings.circleOut = js.native
-    @scala.inline
-    def circleOut_=(x: circleOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("circleOut")(x.asInstanceOf[js.Any])
+    inline def circleOut_=(x: circleOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("circleOut")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def circle_=(x: circle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("circle")(x.asInstanceOf[js.Any])
+    inline def circle_=(x: circle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("circle")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/animators/easingAnimator", "EaseName.cubic")
     @js.native
@@ -182,20 +170,16 @@ object easingAnimatorMod {
     @JSImport("plottable/build/src/animators/easingAnimator", "EaseName.cubicInOut")
     @js.native
     def cubicInOut: typings.plottable.plottableStrings.cubicInOut = js.native
-    @scala.inline
-    def cubicInOut_=(x: cubicInOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cubicInOut")(x.asInstanceOf[js.Any])
+    inline def cubicInOut_=(x: cubicInOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cubicInOut")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def cubicIn_=(x: cubicIn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cubicIn")(x.asInstanceOf[js.Any])
+    inline def cubicIn_=(x: cubicIn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cubicIn")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/animators/easingAnimator", "EaseName.cubicOut")
     @js.native
     def cubicOut: typings.plottable.plottableStrings.cubicOut = js.native
-    @scala.inline
-    def cubicOut_=(x: cubicOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cubicOut")(x.asInstanceOf[js.Any])
+    inline def cubicOut_=(x: cubicOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cubicOut")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def cubic_=(x: cubic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cubic")(x.asInstanceOf[js.Any])
+    inline def cubic_=(x: cubic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("cubic")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/animators/easingAnimator", "EaseName.elastic")
     @js.native
@@ -208,20 +192,16 @@ object easingAnimatorMod {
     @JSImport("plottable/build/src/animators/easingAnimator", "EaseName.elasticInOut")
     @js.native
     def elasticInOut: typings.plottable.plottableStrings.elasticInOut = js.native
-    @scala.inline
-    def elasticInOut_=(x: elasticInOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("elasticInOut")(x.asInstanceOf[js.Any])
+    inline def elasticInOut_=(x: elasticInOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("elasticInOut")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def elasticIn_=(x: elasticIn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("elasticIn")(x.asInstanceOf[js.Any])
+    inline def elasticIn_=(x: elasticIn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("elasticIn")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/animators/easingAnimator", "EaseName.elasticOut")
     @js.native
     def elasticOut: typings.plottable.plottableStrings.elasticOut = js.native
-    @scala.inline
-    def elasticOut_=(x: elasticOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("elasticOut")(x.asInstanceOf[js.Any])
+    inline def elasticOut_=(x: elasticOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("elasticOut")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def elastic_=(x: elastic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("elastic")(x.asInstanceOf[js.Any])
+    inline def elastic_=(x: elastic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("elastic")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/animators/easingAnimator", "EaseName.exp")
     @js.native
@@ -234,26 +214,21 @@ object easingAnimatorMod {
     @JSImport("plottable/build/src/animators/easingAnimator", "EaseName.expInOut")
     @js.native
     def expInOut: typings.plottable.plottableStrings.expInOut = js.native
-    @scala.inline
-    def expInOut_=(x: expInOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expInOut")(x.asInstanceOf[js.Any])
+    inline def expInOut_=(x: expInOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expInOut")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def expIn_=(x: expIn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expIn")(x.asInstanceOf[js.Any])
+    inline def expIn_=(x: expIn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expIn")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/animators/easingAnimator", "EaseName.expOut")
     @js.native
     def expOut: typings.plottable.plottableStrings.expOut = js.native
-    @scala.inline
-    def expOut_=(x: expOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expOut")(x.asInstanceOf[js.Any])
+    inline def expOut_=(x: expOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("expOut")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def exp_=(x: exp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exp")(x.asInstanceOf[js.Any])
+    inline def exp_=(x: exp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("exp")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/animators/easingAnimator", "EaseName.linear")
     @js.native
     def linear: typings.plottable.plottableStrings.linear = js.native
-    @scala.inline
-    def linear_=(x: linear): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("linear")(x.asInstanceOf[js.Any])
+    inline def linear_=(x: linear): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("linear")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/animators/easingAnimator", "EaseName.poly")
     @js.native
@@ -266,20 +241,16 @@ object easingAnimatorMod {
     @JSImport("plottable/build/src/animators/easingAnimator", "EaseName.polyInOut")
     @js.native
     def polyInOut: typings.plottable.plottableStrings.polyInOut = js.native
-    @scala.inline
-    def polyInOut_=(x: polyInOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("polyInOut")(x.asInstanceOf[js.Any])
+    inline def polyInOut_=(x: polyInOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("polyInOut")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def polyIn_=(x: polyIn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("polyIn")(x.asInstanceOf[js.Any])
+    inline def polyIn_=(x: polyIn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("polyIn")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/animators/easingAnimator", "EaseName.polyOut")
     @js.native
     def polyOut: typings.plottable.plottableStrings.polyOut = js.native
-    @scala.inline
-    def polyOut_=(x: polyOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("polyOut")(x.asInstanceOf[js.Any])
+    inline def polyOut_=(x: polyOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("polyOut")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def poly_=(x: poly): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("poly")(x.asInstanceOf[js.Any])
+    inline def poly_=(x: poly): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("poly")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/animators/easingAnimator", "EaseName.quad")
     @js.native
@@ -292,20 +263,16 @@ object easingAnimatorMod {
     @JSImport("plottable/build/src/animators/easingAnimator", "EaseName.quadInOut")
     @js.native
     def quadInOut: typings.plottable.plottableStrings.quadInOut = js.native
-    @scala.inline
-    def quadInOut_=(x: quadInOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("quadInOut")(x.asInstanceOf[js.Any])
+    inline def quadInOut_=(x: quadInOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("quadInOut")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def quadIn_=(x: quadIn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("quadIn")(x.asInstanceOf[js.Any])
+    inline def quadIn_=(x: quadIn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("quadIn")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/animators/easingAnimator", "EaseName.quadOut")
     @js.native
     def quadOut: typings.plottable.plottableStrings.quadOut = js.native
-    @scala.inline
-    def quadOut_=(x: quadOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("quadOut")(x.asInstanceOf[js.Any])
+    inline def quadOut_=(x: quadOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("quadOut")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def quad_=(x: quad): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("quad")(x.asInstanceOf[js.Any])
+    inline def quad_=(x: quad): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("quad")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/animators/easingAnimator", "EaseName.sin")
     @js.native
@@ -318,20 +285,16 @@ object easingAnimatorMod {
     @JSImport("plottable/build/src/animators/easingAnimator", "EaseName.sinInOut")
     @js.native
     def sinInOut: typings.plottable.plottableStrings.sinInOut = js.native
-    @scala.inline
-    def sinInOut_=(x: sinInOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sinInOut")(x.asInstanceOf[js.Any])
+    inline def sinInOut_=(x: sinInOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sinInOut")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def sinIn_=(x: sinIn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sinIn")(x.asInstanceOf[js.Any])
+    inline def sinIn_=(x: sinIn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sinIn")(x.asInstanceOf[js.Any])
     
     @JSImport("plottable/build/src/animators/easingAnimator", "EaseName.sinOut")
     @js.native
     def sinOut: typings.plottable.plottableStrings.sinOut = js.native
-    @scala.inline
-    def sinOut_=(x: sinOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sinOut")(x.asInstanceOf[js.Any])
+    inline def sinOut_=(x: sinOut): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sinOut")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def sin_=(x: sin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sin")(x.asInstanceOf[js.Any])
+    inline def sin_=(x: sin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sin")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("plottable/build/src/animators/easingAnimator", "Easing")
@@ -345,7 +308,7 @@ object easingAnimatorMod {
     extends StObject
        with IAnimator {
     
-    var _easingMode: js.Any = js.native
+    /* private */ var _easingMode: js.Any = js.native
     
     /**
       * Adjust the iterative delay, such that it takes into account the maxTotalDuration constraint
@@ -354,13 +317,13 @@ object easingAnimatorMod {
     
     /* protected */ def _getEaseFactory(): EaseFn = js.native
     
-    var _maxTotalDuration: js.Any = js.native
+    /* private */ var _maxTotalDuration: js.Any = js.native
     
-    var _startDelay: js.Any = js.native
+    /* private */ var _startDelay: js.Any = js.native
     
-    var _stepDelay: js.Any = js.native
+    /* private */ var _stepDelay: js.Any = js.native
     
-    var _stepDuration: js.Any = js.native
+    /* private */ var _stepDuration: js.Any = js.native
     
     /**
       * Applies the supplied attributes to a d3.Selection with some animation.
@@ -476,8 +439,7 @@ object easingAnimatorMod {
     @JSImport("plottable/build/src/animators/easingAnimator", "Easing._DEFAULT_EASING_MODE")
     @js.native
     def _DEFAULT_EASING_MODE: js.Any = js.native
-    @scala.inline
-    def _DEFAULT_EASING_MODE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_EASING_MODE")(x.asInstanceOf[js.Any])
+    inline def _DEFAULT_EASING_MODE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_EASING_MODE")(x.asInstanceOf[js.Any])
     
     /**
       * The default maximum start delay between each step of an animation
@@ -485,8 +447,7 @@ object easingAnimatorMod {
     @JSImport("plottable/build/src/animators/easingAnimator", "Easing._DEFAULT_ITERATIVE_DELAY_MILLISECONDS")
     @js.native
     def _DEFAULT_ITERATIVE_DELAY_MILLISECONDS: js.Any = js.native
-    @scala.inline
-    def _DEFAULT_ITERATIVE_DELAY_MILLISECONDS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_ITERATIVE_DELAY_MILLISECONDS")(x.asInstanceOf[js.Any])
+    inline def _DEFAULT_ITERATIVE_DELAY_MILLISECONDS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_ITERATIVE_DELAY_MILLISECONDS")(x.asInstanceOf[js.Any])
     
     /**
       * The default maximum total animation duration
@@ -494,8 +455,7 @@ object easingAnimatorMod {
     @JSImport("plottable/build/src/animators/easingAnimator", "Easing._DEFAULT_MAX_TOTAL_DURATION_MILLISECONDS")
     @js.native
     def _DEFAULT_MAX_TOTAL_DURATION_MILLISECONDS: js.Any = js.native
-    @scala.inline
-    def _DEFAULT_MAX_TOTAL_DURATION_MILLISECONDS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_MAX_TOTAL_DURATION_MILLISECONDS")(x.asInstanceOf[js.Any])
+    inline def _DEFAULT_MAX_TOTAL_DURATION_MILLISECONDS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_MAX_TOTAL_DURATION_MILLISECONDS")(x.asInstanceOf[js.Any])
     
     /**
       * The default starting delay of the animation in milliseconds
@@ -503,8 +463,7 @@ object easingAnimatorMod {
     @JSImport("plottable/build/src/animators/easingAnimator", "Easing._DEFAULT_START_DELAY_MILLISECONDS")
     @js.native
     def _DEFAULT_START_DELAY_MILLISECONDS: js.Any = js.native
-    @scala.inline
-    def _DEFAULT_START_DELAY_MILLISECONDS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_START_DELAY_MILLISECONDS")(x.asInstanceOf[js.Any])
+    inline def _DEFAULT_START_DELAY_MILLISECONDS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_START_DELAY_MILLISECONDS")(x.asInstanceOf[js.Any])
     
     /**
       * The default duration of one animation step in milliseconds
@@ -512,8 +471,7 @@ object easingAnimatorMod {
     @JSImport("plottable/build/src/animators/easingAnimator", "Easing._DEFAULT_STEP_DURATION_MILLISECONDS")
     @js.native
     def _DEFAULT_STEP_DURATION_MILLISECONDS: js.Any = js.native
-    @scala.inline
-    def _DEFAULT_STEP_DURATION_MILLISECONDS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_STEP_DURATION_MILLISECONDS")(x.asInstanceOf[js.Any])
+    inline def _DEFAULT_STEP_DURATION_MILLISECONDS_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_DEFAULT_STEP_DURATION_MILLISECONDS")(x.asInstanceOf[js.Any])
   }
   
   type EaseFn = js.Function1[/* normalizedTime */ Double, Double]

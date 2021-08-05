@@ -21,25 +21,19 @@ trait IonToolbar extends StObject {
 }
 object IonToolbar {
   
-  @scala.inline
-  def apply(): IonToolbar = {
+  inline def apply(): IonToolbar = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IonToolbar]
   }
   
-  @scala.inline
-  implicit class IonToolbarMutableBuilder[Self <: IonToolbar] (val x: Self) extends AnyVal {
+  extension [Self <: IonToolbar](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
   }
 }

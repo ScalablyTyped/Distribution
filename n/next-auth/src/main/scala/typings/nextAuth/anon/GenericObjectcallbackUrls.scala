@@ -14,19 +14,15 @@ trait GenericObjectcallbackUrls
 }
 object GenericObjectcallbackUrls {
   
-  @scala.inline
-  def apply(): GenericObjectcallbackUrls = {
+  inline def apply(): GenericObjectcallbackUrls = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GenericObjectcallbackUrls]
   }
   
-  @scala.inline
-  implicit class GenericObjectcallbackUrlsMutableBuilder[Self <: GenericObjectcallbackUrls] (val x: Self) extends AnyVal {
+  extension [Self <: GenericObjectcallbackUrls](x: Self) {
     
-    @scala.inline
-    def setCallbackUrl(value: String): Self = StObject.set(x, "callbackUrl", value.asInstanceOf[js.Any])
+    inline def setCallbackUrl(value: String): Self = StObject.set(x, "callbackUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackUrlUndefined: Self = StObject.set(x, "callbackUrl", js.undefined)
+    inline def setCallbackUrlUndefined: Self = StObject.set(x, "callbackUrl", js.undefined)
   }
 }

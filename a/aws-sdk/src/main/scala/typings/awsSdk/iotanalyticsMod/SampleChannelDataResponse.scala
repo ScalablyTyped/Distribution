@@ -13,22 +13,17 @@ trait SampleChannelDataResponse extends StObject {
 }
 object SampleChannelDataResponse {
   
-  @scala.inline
-  def apply(): SampleChannelDataResponse = {
+  inline def apply(): SampleChannelDataResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SampleChannelDataResponse]
   }
   
-  @scala.inline
-  implicit class SampleChannelDataResponseMutableBuilder[Self <: SampleChannelDataResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SampleChannelDataResponse](x: Self) {
     
-    @scala.inline
-    def setPayloads(value: MessagePayloads): Self = StObject.set(x, "payloads", value.asInstanceOf[js.Any])
+    inline def setPayloads(value: MessagePayloads): Self = StObject.set(x, "payloads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPayloadsUndefined: Self = StObject.set(x, "payloads", js.undefined)
+    inline def setPayloadsUndefined: Self = StObject.set(x, "payloads", js.undefined)
     
-    @scala.inline
-    def setPayloadsVarargs(value: MessagePayload*): Self = StObject.set(x, "payloads", js.Array(value :_*))
+    inline def setPayloadsVarargs(value: MessagePayload*): Self = StObject.set(x, "payloads", js.Array(value :_*))
   }
 }

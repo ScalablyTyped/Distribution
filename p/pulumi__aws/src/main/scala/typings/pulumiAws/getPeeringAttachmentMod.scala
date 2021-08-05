@@ -13,14 +13,10 @@ object getPeeringAttachmentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getPeeringAttachment(): js.Promise[GetPeeringAttachmentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPeeringAttachment")().asInstanceOf[js.Promise[GetPeeringAttachmentResult]]
-  @scala.inline
-  def getPeeringAttachment(args: Unit, opts: InvokeOptions): js.Promise[GetPeeringAttachmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPeeringAttachment")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetPeeringAttachmentResult]]
-  @scala.inline
-  def getPeeringAttachment(args: GetPeeringAttachmentArgs): js.Promise[GetPeeringAttachmentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPeeringAttachment")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetPeeringAttachmentResult]]
-  @scala.inline
-  def getPeeringAttachment(args: GetPeeringAttachmentArgs, opts: InvokeOptions): js.Promise[GetPeeringAttachmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPeeringAttachment")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetPeeringAttachmentResult]]
+  inline def getPeeringAttachment(): js.Promise[GetPeeringAttachmentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPeeringAttachment")().asInstanceOf[js.Promise[GetPeeringAttachmentResult]]
+  inline def getPeeringAttachment(args: Unit, opts: InvokeOptions): js.Promise[GetPeeringAttachmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPeeringAttachment")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetPeeringAttachmentResult]]
+  inline def getPeeringAttachment(args: GetPeeringAttachmentArgs): js.Promise[GetPeeringAttachmentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPeeringAttachment")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetPeeringAttachmentResult]]
+  inline def getPeeringAttachment(args: GetPeeringAttachmentArgs, opts: InvokeOptions): js.Promise[GetPeeringAttachmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPeeringAttachment")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetPeeringAttachmentResult]]
   
   trait GetPeeringAttachmentArgs extends StObject {
     
@@ -42,35 +38,26 @@ object getPeeringAttachmentMod {
   }
   object GetPeeringAttachmentArgs {
     
-    @scala.inline
-    def apply(): GetPeeringAttachmentArgs = {
+    inline def apply(): GetPeeringAttachmentArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetPeeringAttachmentArgs]
     }
     
-    @scala.inline
-    implicit class GetPeeringAttachmentArgsMutableBuilder[Self <: GetPeeringAttachmentArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetPeeringAttachmentArgs](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[GetPeeringAttachmentFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[GetPeeringAttachmentFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: GetPeeringAttachmentFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: GetPeeringAttachmentFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -106,8 +93,7 @@ object getPeeringAttachmentMod {
   }
   object GetPeeringAttachmentResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       peerAccountId: String,
       peerRegion: String,
       peerTransitGatewayId: String,
@@ -118,38 +104,27 @@ object getPeeringAttachmentMod {
       __obj.asInstanceOf[GetPeeringAttachmentResult]
     }
     
-    @scala.inline
-    implicit class GetPeeringAttachmentResultMutableBuilder[Self <: GetPeeringAttachmentResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetPeeringAttachmentResult](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2transitgateway.GetPeeringAttachmentFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[typings.pulumiAws.outputMod.ec2transitgateway.GetPeeringAttachmentFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2transitgateway.GetPeeringAttachmentFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: typings.pulumiAws.outputMod.ec2transitgateway.GetPeeringAttachmentFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setPeerAccountId(value: String): Self = StObject.set(x, "peerAccountId", value.asInstanceOf[js.Any])
+      inline def setPeerAccountId(value: String): Self = StObject.set(x, "peerAccountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeerRegion(value: String): Self = StObject.set(x, "peerRegion", value.asInstanceOf[js.Any])
+      inline def setPeerRegion(value: String): Self = StObject.set(x, "peerRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeerTransitGatewayId(value: String): Self = StObject.set(x, "peerTransitGatewayId", value.asInstanceOf[js.Any])
+      inline def setPeerTransitGatewayId(value: String): Self = StObject.set(x, "peerTransitGatewayId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitGatewayId(value: String): Self = StObject.set(x, "transitGatewayId", value.asInstanceOf[js.Any])
+      inline def setTransitGatewayId(value: String): Self = StObject.set(x, "transitGatewayId", value.asInstanceOf[js.Any])
     }
   }
 }

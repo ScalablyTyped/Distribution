@@ -43,8 +43,7 @@ trait BandwidthRateLimitInterval extends StObject {
 }
 object BandwidthRateLimitInterval {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DaysOfWeek: DaysOfWeek,
     EndHourOfDay: HourOfDay,
     EndMinuteOfHour: MinuteOfHour,
@@ -55,37 +54,26 @@ object BandwidthRateLimitInterval {
     __obj.asInstanceOf[BandwidthRateLimitInterval]
   }
   
-  @scala.inline
-  implicit class BandwidthRateLimitIntervalMutableBuilder[Self <: BandwidthRateLimitInterval] (val x: Self) extends AnyVal {
+  extension [Self <: BandwidthRateLimitInterval](x: Self) {
     
-    @scala.inline
-    def setAverageDownloadRateLimitInBitsPerSec(value: BandwidthDownloadRateLimit): Self = StObject.set(x, "AverageDownloadRateLimitInBitsPerSec", value.asInstanceOf[js.Any])
+    inline def setAverageDownloadRateLimitInBitsPerSec(value: BandwidthDownloadRateLimit): Self = StObject.set(x, "AverageDownloadRateLimitInBitsPerSec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAverageDownloadRateLimitInBitsPerSecUndefined: Self = StObject.set(x, "AverageDownloadRateLimitInBitsPerSec", js.undefined)
+    inline def setAverageDownloadRateLimitInBitsPerSecUndefined: Self = StObject.set(x, "AverageDownloadRateLimitInBitsPerSec", js.undefined)
     
-    @scala.inline
-    def setAverageUploadRateLimitInBitsPerSec(value: BandwidthUploadRateLimit): Self = StObject.set(x, "AverageUploadRateLimitInBitsPerSec", value.asInstanceOf[js.Any])
+    inline def setAverageUploadRateLimitInBitsPerSec(value: BandwidthUploadRateLimit): Self = StObject.set(x, "AverageUploadRateLimitInBitsPerSec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAverageUploadRateLimitInBitsPerSecUndefined: Self = StObject.set(x, "AverageUploadRateLimitInBitsPerSec", js.undefined)
+    inline def setAverageUploadRateLimitInBitsPerSecUndefined: Self = StObject.set(x, "AverageUploadRateLimitInBitsPerSec", js.undefined)
     
-    @scala.inline
-    def setDaysOfWeek(value: DaysOfWeek): Self = StObject.set(x, "DaysOfWeek", value.asInstanceOf[js.Any])
+    inline def setDaysOfWeek(value: DaysOfWeek): Self = StObject.set(x, "DaysOfWeek", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDaysOfWeekVarargs(value: DayOfWeek*): Self = StObject.set(x, "DaysOfWeek", js.Array(value :_*))
+    inline def setDaysOfWeekVarargs(value: DayOfWeek*): Self = StObject.set(x, "DaysOfWeek", js.Array(value :_*))
     
-    @scala.inline
-    def setEndHourOfDay(value: HourOfDay): Self = StObject.set(x, "EndHourOfDay", value.asInstanceOf[js.Any])
+    inline def setEndHourOfDay(value: HourOfDay): Self = StObject.set(x, "EndHourOfDay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndMinuteOfHour(value: MinuteOfHour): Self = StObject.set(x, "EndMinuteOfHour", value.asInstanceOf[js.Any])
+    inline def setEndMinuteOfHour(value: MinuteOfHour): Self = StObject.set(x, "EndMinuteOfHour", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartHourOfDay(value: HourOfDay): Self = StObject.set(x, "StartHourOfDay", value.asInstanceOf[js.Any])
+    inline def setStartHourOfDay(value: HourOfDay): Self = StObject.set(x, "StartHourOfDay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartMinuteOfHour(value: MinuteOfHour): Self = StObject.set(x, "StartMinuteOfHour", value.asInstanceOf[js.Any])
+    inline def setStartMinuteOfHour(value: MinuteOfHour): Self = StObject.set(x, "StartMinuteOfHour", value.asInstanceOf[js.Any])
   }
 }

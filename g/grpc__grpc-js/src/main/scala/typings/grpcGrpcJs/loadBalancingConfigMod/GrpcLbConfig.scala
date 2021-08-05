@@ -10,19 +10,15 @@ trait GrpcLbConfig extends StObject {
 }
 object GrpcLbConfig {
   
-  @scala.inline
-  def apply(childPolicy: js.Array[LoadBalancingConfig]): GrpcLbConfig = {
+  inline def apply(childPolicy: js.Array[LoadBalancingConfig]): GrpcLbConfig = {
     val __obj = js.Dynamic.literal(childPolicy = childPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[GrpcLbConfig]
   }
   
-  @scala.inline
-  implicit class GrpcLbConfigMutableBuilder[Self <: GrpcLbConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GrpcLbConfig](x: Self) {
     
-    @scala.inline
-    def setChildPolicy(value: js.Array[LoadBalancingConfig]): Self = StObject.set(x, "childPolicy", value.asInstanceOf[js.Any])
+    inline def setChildPolicy(value: js.Array[LoadBalancingConfig]): Self = StObject.set(x, "childPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildPolicyVarargs(value: LoadBalancingConfig*): Self = StObject.set(x, "childPolicy", js.Array(value :_*))
+    inline def setChildPolicyVarargs(value: LoadBalancingConfig*): Self = StObject.set(x, "childPolicy", js.Array(value :_*))
   }
 }

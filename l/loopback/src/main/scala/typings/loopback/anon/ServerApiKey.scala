@@ -10,16 +10,13 @@ trait ServerApiKey extends StObject {
 }
 object ServerApiKey {
   
-  @scala.inline
-  def apply(serverApiKey: String): ServerApiKey = {
+  inline def apply(serverApiKey: String): ServerApiKey = {
     val __obj = js.Dynamic.literal(serverApiKey = serverApiKey.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerApiKey]
   }
   
-  @scala.inline
-  implicit class ServerApiKeyMutableBuilder[Self <: ServerApiKey] (val x: Self) extends AnyVal {
+  extension [Self <: ServerApiKey](x: Self) {
     
-    @scala.inline
-    def setServerApiKey(value: String): Self = StObject.set(x, "serverApiKey", value.asInstanceOf[js.Any])
+    inline def setServerApiKey(value: String): Self = StObject.set(x, "serverApiKey", value.asInstanceOf[js.Any])
   }
 }

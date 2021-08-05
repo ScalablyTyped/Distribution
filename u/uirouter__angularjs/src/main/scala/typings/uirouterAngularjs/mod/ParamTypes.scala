@@ -41,8 +41,7 @@ object ParamTypes {
   @JSImport("@uirouter/angularjs", "ParamTypes.any")
   @js.native
   def any: ParamTypeDefinition = js.native
-  @scala.inline
-  def any_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("any")(x.asInstanceOf[js.Any])
+  inline def any_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("any")(x.asInstanceOf[js.Any])
   
   /**
     * Built-in parameter type: `bool`
@@ -67,8 +66,7 @@ object ParamTypes {
   @JSImport("@uirouter/angularjs", "ParamTypes.bool")
   @js.native
   def bool: ParamTypeDefinition = js.native
-  @scala.inline
-  def bool_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bool")(x.asInstanceOf[js.Any])
+  inline def bool_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bool")(x.asInstanceOf[js.Any])
   
   /**
     * Built-in parameter type: `date`
@@ -97,8 +95,7 @@ object ParamTypes {
   @JSImport("@uirouter/angularjs", "ParamTypes.date")
   @js.native
   def date: ParamTypeDefinition = js.native
-  @scala.inline
-  def date_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("date")(x.asInstanceOf[js.Any])
+  inline def date_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("date")(x.asInstanceOf[js.Any])
   
   /**
     * Built-in parameter type: `hash`
@@ -109,8 +106,7 @@ object ParamTypes {
   @JSImport("@uirouter/angularjs", "ParamTypes.hash")
   @js.native
   def hash: ParamTypeDefinition = js.native
-  @scala.inline
-  def hash_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hash")(x.asInstanceOf[js.Any])
+  inline def hash_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hash")(x.asInstanceOf[js.Any])
   
   /**
     * Built-in parameter type: `int`
@@ -135,8 +131,7 @@ object ParamTypes {
   @JSImport("@uirouter/angularjs", "ParamTypes.int")
   @js.native
   def int: ParamTypeDefinition = js.native
-  @scala.inline
-  def int_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("int")(x.asInstanceOf[js.Any])
+  inline def int_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("int")(x.asInstanceOf[js.Any])
   
   /**
     * Built-in parameter type: `json`
@@ -160,8 +155,7 @@ object ParamTypes {
   @JSImport("@uirouter/angularjs", "ParamTypes.json")
   @js.native
   def json: ParamTypeDefinition = js.native
-  @scala.inline
-  def json_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("json")(x.asInstanceOf[js.Any])
+  inline def json_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("json")(x.asInstanceOf[js.Any])
   
   /**
     * Built-in parameter type: `path`
@@ -181,8 +175,7 @@ object ParamTypes {
   @JSImport("@uirouter/angularjs", "ParamTypes.path")
   @js.native
   def path: ParamTypeDefinition = js.native
-  @scala.inline
-  def path_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("path")(x.asInstanceOf[js.Any])
+  inline def path_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("path")(x.asInstanceOf[js.Any])
   
   /**
     * Built-in parameter type: `query`
@@ -197,8 +190,7 @@ object ParamTypes {
   @JSImport("@uirouter/angularjs", "ParamTypes.query")
   @js.native
   def query: ParamTypeDefinition = js.native
-  @scala.inline
-  def query_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("query")(x.asInstanceOf[js.Any])
+  inline def query_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("query")(x.asInstanceOf[js.Any])
   
   /**
     * Built-in parameter type: `string`
@@ -209,6 +201,5 @@ object ParamTypes {
   @JSImport("@uirouter/angularjs", "ParamTypes.string")
   @js.native
   def string: ParamTypeDefinition = js.native
-  @scala.inline
-  def string_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("string")(x.asInstanceOf[js.Any])
+  inline def string_=(x: ParamTypeDefinition): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("string")(x.asInstanceOf[js.Any])
 }

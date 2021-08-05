@@ -19,19 +19,15 @@ trait SauceConnectInstance extends StObject {
 }
 object SauceConnectInstance {
   
-  @scala.inline
-  def apply(close: () => js.Promise[Unit], cp: ChildProcess): SauceConnectInstance = {
+  inline def apply(close: () => js.Promise[Unit], cp: ChildProcess): SauceConnectInstance = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close), cp = cp.asInstanceOf[js.Any])
     __obj.asInstanceOf[SauceConnectInstance]
   }
   
-  @scala.inline
-  implicit class SauceConnectInstanceMutableBuilder[Self <: SauceConnectInstance] (val x: Self) extends AnyVal {
+  extension [Self <: SauceConnectInstance](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCp(value: ChildProcess): Self = StObject.set(x, "cp", value.asInstanceOf[js.Any])
+    inline def setCp(value: ChildProcess): Self = StObject.set(x, "cp", value.asInstanceOf[js.Any])
   }
 }

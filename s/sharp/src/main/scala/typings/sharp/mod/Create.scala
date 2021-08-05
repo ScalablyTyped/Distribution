@@ -20,25 +20,19 @@ trait Create extends StObject {
 }
 object Create {
   
-  @scala.inline
-  def apply(background: Color, channels: Channels, height: Double, width: Double): Create = {
+  inline def apply(background: Color, channels: Channels, height: Double, width: Double): Create = {
     val __obj = js.Dynamic.literal(background = background.asInstanceOf[js.Any], channels = channels.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
     __obj.asInstanceOf[Create]
   }
   
-  @scala.inline
-  implicit class CreateMutableBuilder[Self <: Create] (val x: Self) extends AnyVal {
+  extension [Self <: Create](x: Self) {
     
-    @scala.inline
-    def setBackground(value: Color): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: Color): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannels(value: Channels): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: Channels): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
   }
 }

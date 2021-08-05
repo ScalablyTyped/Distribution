@@ -27,8 +27,7 @@ trait CombinedCharacters
 }
 object CombinedCharacters {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
     AnchorTypes: SafeArray[TextContentAnchorType],
@@ -58,10 +57,8 @@ object CombinedCharacters {
     __obj.asInstanceOf[CombinedCharacters]
   }
   
-  @scala.inline
-  implicit class CombinedCharactersMutableBuilder[Self <: CombinedCharacters] (val x: Self) extends AnyVal {
+  extension [Self <: CombinedCharacters](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
   }
 }

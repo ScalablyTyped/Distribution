@@ -17,31 +17,23 @@ trait ResultDisplayField extends StObject {
 }
 object ResultDisplayField {
   
-  @scala.inline
-  def apply(): ResultDisplayField = {
+  inline def apply(): ResultDisplayField = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResultDisplayField]
   }
   
-  @scala.inline
-  implicit class ResultDisplayFieldMutableBuilder[Self <: ResultDisplayField] (val x: Self) extends AnyVal {
+  extension [Self <: ResultDisplayField](x: Self) {
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
+    inline def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorNameUndefined: Self = StObject.set(x, "operatorName", js.undefined)
+    inline def setOperatorNameUndefined: Self = StObject.set(x, "operatorName", js.undefined)
     
-    @scala.inline
-    def setProperty(value: NamedProperty): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: NamedProperty): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+    inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
   }
 }

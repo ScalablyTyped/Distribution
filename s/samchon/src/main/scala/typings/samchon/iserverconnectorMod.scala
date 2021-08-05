@@ -44,8 +44,7 @@ object iserverconnectorMod {
   }
   object IServerConnector {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       close: () => Unit,
       connect: (String, Double) => Unit,
       isConnected: () => Boolean,
@@ -58,14 +57,11 @@ object iserverconnectorMod {
       __obj.asInstanceOf[IServerConnector]
     }
     
-    @scala.inline
-    implicit class IServerConnectorMutableBuilder[Self <: IServerConnector] (val x: Self) extends AnyVal {
+    extension [Self <: IServerConnector](x: Self) {
       
-      @scala.inline
-      def setConnect(value: (String, Double) => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction2(value))
+      inline def setConnect(value: (String, Double) => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnConnect(value: js.Function): Self = StObject.set(x, "onConnect", value.asInstanceOf[js.Any])
+      inline def setOnConnect(value: js.Function): Self = StObject.set(x, "onConnect", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -14,25 +14,19 @@ trait AnalyticsInfo extends StObject {
 }
 object AnalyticsInfo {
   
-  @scala.inline
-  def apply(): AnalyticsInfo = {
+  inline def apply(): AnalyticsInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnalyticsInfo]
   }
   
-  @scala.inline
-  implicit class AnalyticsInfoMutableBuilder[Self <: AnalyticsInfo] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyticsInfo](x: Self) {
     
-    @scala.inline
-    def setGooglePlayAnalytics(value: GooglePlayAnalytics): Self = StObject.set(x, "googlePlayAnalytics", value.asInstanceOf[js.Any])
+    inline def setGooglePlayAnalytics(value: GooglePlayAnalytics): Self = StObject.set(x, "googlePlayAnalytics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGooglePlayAnalyticsUndefined: Self = StObject.set(x, "googlePlayAnalytics", js.undefined)
+    inline def setGooglePlayAnalyticsUndefined: Self = StObject.set(x, "googlePlayAnalytics", js.undefined)
     
-    @scala.inline
-    def setItunesConnectAnalytics(value: ITunesConnectAnalytics): Self = StObject.set(x, "itunesConnectAnalytics", value.asInstanceOf[js.Any])
+    inline def setItunesConnectAnalytics(value: ITunesConnectAnalytics): Self = StObject.set(x, "itunesConnectAnalytics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItunesConnectAnalyticsUndefined: Self = StObject.set(x, "itunesConnectAnalytics", js.undefined)
+    inline def setItunesConnectAnalyticsUndefined: Self = StObject.set(x, "itunesConnectAnalytics", js.undefined)
   }
 }

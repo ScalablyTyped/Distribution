@@ -50,10 +50,10 @@ object semaphoreMod {
     /* CompleteClass */
     override def getPermits(): Double = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var permits: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var promiseResolverQueue: js.Any = js.native
     
     /**
@@ -117,9 +117,9 @@ object semaphoreMod {
       */
     def getPermits(): Double
     
-    var permits: js.Any
+    /* private */ var permits: js.Any
     
-    var promiseResolverQueue: js.Any
+    /* private */ var promiseResolverQueue: js.Any
     
     /**
       * Alias for {@linkcode Semaphore.signal}.
@@ -150,8 +150,7 @@ object semaphoreMod {
   }
   object Semaphore {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       acquire: () => js.Promise[Boolean],
       drainPermits: () => Double,
       execute: js.Function0[js.Any | js.Thenable[js.Any]] => js.Promise[js.Any],
@@ -167,38 +166,27 @@ object semaphoreMod {
       __obj.asInstanceOf[Semaphore]
     }
     
-    @scala.inline
-    implicit class SemaphoreMutableBuilder[Self <: Semaphore] (val x: Self) extends AnyVal {
+    extension [Self <: Semaphore](x: Self) {
       
-      @scala.inline
-      def setAcquire(value: () => js.Promise[Boolean]): Self = StObject.set(x, "acquire", js.Any.fromFunction0(value))
+      inline def setAcquire(value: () => js.Promise[Boolean]): Self = StObject.set(x, "acquire", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDrainPermits(value: () => Double): Self = StObject.set(x, "drainPermits", js.Any.fromFunction0(value))
+      inline def setDrainPermits(value: () => Double): Self = StObject.set(x, "drainPermits", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setExecute(value: js.Function0[js.Any | js.Thenable[js.Any]] => js.Promise[js.Any]): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+      inline def setExecute(value: js.Function0[js.Any | js.Thenable[js.Any]] => js.Promise[js.Any]): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetPermits(value: () => Double): Self = StObject.set(x, "getPermits", js.Any.fromFunction0(value))
+      inline def setGetPermits(value: () => Double): Self = StObject.set(x, "getPermits", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPermits(value: js.Any): Self = StObject.set(x, "permits", value.asInstanceOf[js.Any])
+      inline def setPermits(value: js.Any): Self = StObject.set(x, "permits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromiseResolverQueue(value: js.Any): Self = StObject.set(x, "promiseResolverQueue", value.asInstanceOf[js.Any])
+      inline def setPromiseResolverQueue(value: js.Any): Self = StObject.set(x, "promiseResolverQueue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
+      inline def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSignal(value: () => Unit): Self = StObject.set(x, "signal", js.Any.fromFunction0(value))
+      inline def setSignal(value: () => Unit): Self = StObject.set(x, "signal", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setTryAcquire(value: () => Boolean): Self = StObject.set(x, "tryAcquire", js.Any.fromFunction0(value))
+      inline def setTryAcquire(value: () => Boolean): Self = StObject.set(x, "tryAcquire", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setWaitFor(value: Double => js.Promise[Boolean]): Self = StObject.set(x, "waitFor", js.Any.fromFunction1(value))
+      inline def setWaitFor(value: Double => js.Promise[Boolean]): Self = StObject.set(x, "waitFor", js.Any.fromFunction1(value))
     }
   }
 }

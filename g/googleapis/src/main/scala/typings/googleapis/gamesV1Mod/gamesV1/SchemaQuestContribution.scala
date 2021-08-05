@@ -29,31 +29,23 @@ trait SchemaQuestContribution extends StObject {
 }
 object SchemaQuestContribution {
   
-  @scala.inline
-  def apply(): SchemaQuestContribution = {
+  inline def apply(): SchemaQuestContribution = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaQuestContribution]
   }
   
-  @scala.inline
-  implicit class SchemaQuestContributionMutableBuilder[Self <: SchemaQuestContribution] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaQuestContribution](x: Self) {
     
-    @scala.inline
-    def setFormattedValue(value: String): Self = StObject.set(x, "formattedValue", value.asInstanceOf[js.Any])
+    inline def setFormattedValue(value: String): Self = StObject.set(x, "formattedValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormattedValueUndefined: Self = StObject.set(x, "formattedValue", js.undefined)
+    inline def setFormattedValueUndefined: Self = StObject.set(x, "formattedValue", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

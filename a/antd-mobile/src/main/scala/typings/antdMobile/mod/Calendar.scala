@@ -20,12 +20,10 @@ object Calendar {
   @JSImport("antd-mobile", "Calendar.contextTypes")
   @js.native
   def contextTypes: AntLocale = js.native
-  @scala.inline
-  def contextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
+  inline def contextTypes_=(x: AntLocale): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextTypes")(x.asInstanceOf[js.Any])
   
   @JSImport("antd-mobile", "Calendar.defaultProps")
   @js.native
   def defaultProps: TimePickerPickerPrefixCls = js.native
-  @scala.inline
-  def defaultProps_=(x: TimePickerPickerPrefixCls): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: TimePickerPickerPrefixCls): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

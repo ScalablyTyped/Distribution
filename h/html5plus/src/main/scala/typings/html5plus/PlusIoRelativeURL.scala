@@ -47,37 +47,27 @@ trait PlusIoRelativeURL extends StObject {
 }
 object PlusIoRelativeURL {
   
-  @scala.inline
-  def apply(): PlusIoRelativeURL = {
+  inline def apply(): PlusIoRelativeURL = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusIoRelativeURL]
   }
   
-  @scala.inline
-  implicit class PlusIoRelativeURLMutableBuilder[Self <: PlusIoRelativeURL] (val x: Self) extends AnyVal {
+  extension [Self <: PlusIoRelativeURL](x: Self) {
     
-    @scala.inline
-    def set_doc(value: String): Self = StObject.set(x, "_doc", value.asInstanceOf[js.Any])
+    inline def set_doc(value: String): Self = StObject.set(x, "_doc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_docUndefined: Self = StObject.set(x, "_doc", js.undefined)
+    inline def set_docUndefined: Self = StObject.set(x, "_doc", js.undefined)
     
-    @scala.inline
-    def set_documents(value: String): Self = StObject.set(x, "_documents", value.asInstanceOf[js.Any])
+    inline def set_documents(value: String): Self = StObject.set(x, "_documents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_documentsUndefined: Self = StObject.set(x, "_documents", js.undefined)
+    inline def set_documentsUndefined: Self = StObject.set(x, "_documents", js.undefined)
     
-    @scala.inline
-    def set_downloads(value: String): Self = StObject.set(x, "_downloads", value.asInstanceOf[js.Any])
+    inline def set_downloads(value: String): Self = StObject.set(x, "_downloads", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_downloadsUndefined: Self = StObject.set(x, "_downloads", js.undefined)
+    inline def set_downloadsUndefined: Self = StObject.set(x, "_downloads", js.undefined)
     
-    @scala.inline
-    def set_www(value: String): Self = StObject.set(x, "_www", value.asInstanceOf[js.Any])
+    inline def set_www(value: String): Self = StObject.set(x, "_www", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_wwwUndefined: Self = StObject.set(x, "_www", js.undefined)
+    inline def set_wwwUndefined: Self = StObject.set(x, "_www", js.undefined)
   }
 }

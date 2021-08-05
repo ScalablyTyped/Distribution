@@ -16,19 +16,15 @@ trait SchemaGetApkDetailsResponse extends StObject {
 }
 object SchemaGetApkDetailsResponse {
   
-  @scala.inline
-  def apply(): SchemaGetApkDetailsResponse = {
+  inline def apply(): SchemaGetApkDetailsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGetApkDetailsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGetApkDetailsResponseMutableBuilder[Self <: SchemaGetApkDetailsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGetApkDetailsResponse](x: Self) {
     
-    @scala.inline
-    def setApkDetail(value: SchemaApkDetail): Self = StObject.set(x, "apkDetail", value.asInstanceOf[js.Any])
+    inline def setApkDetail(value: SchemaApkDetail): Self = StObject.set(x, "apkDetail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApkDetailUndefined: Self = StObject.set(x, "apkDetail", js.undefined)
+    inline def setApkDetailUndefined: Self = StObject.set(x, "apkDetail", js.undefined)
   }
 }

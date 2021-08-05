@@ -8,11 +8,9 @@ object tailStrings {
   
   @js.native
   sealed trait error extends StObject
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait line extends StObject
-  @scala.inline
-  def line: line = "line".asInstanceOf[line]
+  inline def line: line = "line".asInstanceOf[line]
 }

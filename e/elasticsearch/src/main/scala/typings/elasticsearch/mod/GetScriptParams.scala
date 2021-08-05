@@ -14,19 +14,15 @@ trait GetScriptParams
 }
 object GetScriptParams {
   
-  @scala.inline
-  def apply(id: String, lang: String): GetScriptParams = {
+  inline def apply(id: String, lang: String): GetScriptParams = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], lang = lang.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetScriptParams]
   }
   
-  @scala.inline
-  implicit class GetScriptParamsMutableBuilder[Self <: GetScriptParams] (val x: Self) extends AnyVal {
+  extension [Self <: GetScriptParams](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
+    inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
   }
 }

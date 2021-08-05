@@ -19,8 +19,7 @@ trait Printing3DMultiplePropertyMaterialGroup extends StObject {
 }
 object Printing3DMultiplePropertyMaterialGroup {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     materialGroupId: Double,
     materialGroupIndices: IVector[Double],
     multipleProperties: IVector[Printing3DMultiplePropertyMaterial]
@@ -29,16 +28,12 @@ object Printing3DMultiplePropertyMaterialGroup {
     __obj.asInstanceOf[Printing3DMultiplePropertyMaterialGroup]
   }
   
-  @scala.inline
-  implicit class Printing3DMultiplePropertyMaterialGroupMutableBuilder[Self <: Printing3DMultiplePropertyMaterialGroup] (val x: Self) extends AnyVal {
+  extension [Self <: Printing3DMultiplePropertyMaterialGroup](x: Self) {
     
-    @scala.inline
-    def setMaterialGroupId(value: Double): Self = StObject.set(x, "materialGroupId", value.asInstanceOf[js.Any])
+    inline def setMaterialGroupId(value: Double): Self = StObject.set(x, "materialGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaterialGroupIndices(value: IVector[Double]): Self = StObject.set(x, "materialGroupIndices", value.asInstanceOf[js.Any])
+    inline def setMaterialGroupIndices(value: IVector[Double]): Self = StObject.set(x, "materialGroupIndices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultipleProperties(value: IVector[Printing3DMultiplePropertyMaterial]): Self = StObject.set(x, "multipleProperties", value.asInstanceOf[js.Any])
+    inline def setMultipleProperties(value: IVector[Printing3DMultiplePropertyMaterial]): Self = StObject.set(x, "multipleProperties", value.asInstanceOf[js.Any])
   }
 }

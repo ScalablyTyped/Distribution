@@ -34,23 +34,18 @@ object mod {
   }
   object Timer {
     
-    @scala.inline
-    def apply(id: Double, ref: () => Timer, unref: () => Timer): Timer = {
+    inline def apply(id: Double, ref: () => Timer, unref: () => Timer): Timer = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], ref = js.Any.fromFunction0(ref), unref = js.Any.fromFunction0(unref))
       __obj.asInstanceOf[Timer]
     }
     
-    @scala.inline
-    implicit class TimerMutableBuilder[Self <: Timer] (val x: Self) extends AnyVal {
+    extension [Self <: Timer](x: Self) {
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRef(value: () => Timer): Self = StObject.set(x, "ref", js.Any.fromFunction0(value))
+      inline def setRef(value: () => Timer): Self = StObject.set(x, "ref", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUnref(value: () => Timer): Self = StObject.set(x, "unref", js.Any.fromFunction0(value))
+      inline def setUnref(value: () => Timer): Self = StObject.set(x, "unref", js.Any.fromFunction0(value))
     }
   }
 }

@@ -38,8 +38,7 @@ trait DaemonSetSpec extends StObject {
 }
 object DaemonSetSpec {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     minReadySeconds: Double,
     revisionHistoryLimit: Double,
     selector: LabelSelector,
@@ -50,22 +49,16 @@ object DaemonSetSpec {
     __obj.asInstanceOf[DaemonSetSpec]
   }
   
-  @scala.inline
-  implicit class DaemonSetSpecMutableBuilder[Self <: DaemonSetSpec] (val x: Self) extends AnyVal {
+  extension [Self <: DaemonSetSpec](x: Self) {
     
-    @scala.inline
-    def setMinReadySeconds(value: Double): Self = StObject.set(x, "minReadySeconds", value.asInstanceOf[js.Any])
+    inline def setMinReadySeconds(value: Double): Self = StObject.set(x, "minReadySeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevisionHistoryLimit(value: Double): Self = StObject.set(x, "revisionHistoryLimit", value.asInstanceOf[js.Any])
+    inline def setRevisionHistoryLimit(value: Double): Self = StObject.set(x, "revisionHistoryLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelector(value: LabelSelector): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
+    inline def setSelector(value: LabelSelector): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplate(value: PodTemplateSpec): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: PodTemplateSpec): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateStrategy(value: DaemonSetUpdateStrategy): Self = StObject.set(x, "updateStrategy", value.asInstanceOf[js.Any])
+    inline def setUpdateStrategy(value: DaemonSetUpdateStrategy): Self = StObject.set(x, "updateStrategy", value.asInstanceOf[js.Any])
   }
 }

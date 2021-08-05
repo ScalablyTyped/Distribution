@@ -28,41 +28,30 @@ object mod {
   }
   object YouTubeEmbedProps {
     
-    @scala.inline
-    def apply(id: String): YouTubeEmbedProps = {
+    inline def apply(id: String): YouTubeEmbedProps = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[YouTubeEmbedProps]
     }
     
-    @scala.inline
-    implicit class YouTubeEmbedPropsMutableBuilder[Self <: YouTubeEmbedProps] (val x: Self) extends AnyVal {
+    extension [Self <: YouTubeEmbedProps](x: Self) {
       
-      @scala.inline
-      def setAppendSrc(value: String): Self = StObject.set(x, "appendSrc", value.asInstanceOf[js.Any])
+      inline def setAppendSrc(value: String): Self = StObject.set(x, "appendSrc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAppendSrcUndefined: Self = StObject.set(x, "appendSrc", js.undefined)
+      inline def setAppendSrcUndefined: Self = StObject.set(x, "appendSrc", js.undefined)
       
-      @scala.inline
-      def setAspectRatio(value: String): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
+      inline def setAspectRatio(value: String): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
+      inline def setAspectRatioUndefined: Self = StObject.set(x, "aspectRatio", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrependSrc(value: String): Self = StObject.set(x, "prependSrc", value.asInstanceOf[js.Any])
+      inline def setPrependSrc(value: String): Self = StObject.set(x, "prependSrc", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrependSrcUndefined: Self = StObject.set(x, "prependSrc", js.undefined)
+      inline def setPrependSrcUndefined: Self = StObject.set(x, "prependSrc", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

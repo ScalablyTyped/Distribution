@@ -14,8 +14,7 @@ trait ReplaceWriteOpResult
 }
 object ReplaceWriteOpResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     connection: js.Any,
     matchedCount: scala.Double,
     modifiedCount: scala.Double,
@@ -28,13 +27,10 @@ object ReplaceWriteOpResult {
     __obj.asInstanceOf[ReplaceWriteOpResult]
   }
   
-  @scala.inline
-  implicit class ReplaceWriteOpResultMutableBuilder[Self <: ReplaceWriteOpResult] (val x: Self) extends AnyVal {
+  extension [Self <: ReplaceWriteOpResult](x: Self) {
     
-    @scala.inline
-    def setOps(value: js.Array[js.Any]): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
+    inline def setOps(value: js.Array[js.Any]): Self = StObject.set(x, "ops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpsVarargs(value: js.Any*): Self = StObject.set(x, "ops", js.Array(value :_*))
+    inline def setOpsVarargs(value: js.Any*): Self = StObject.set(x, "ops", js.Array(value :_*))
   }
 }

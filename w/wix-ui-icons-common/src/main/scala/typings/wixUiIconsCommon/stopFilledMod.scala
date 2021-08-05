@@ -22,20 +22,16 @@ object stopFilledMod extends Shortcut {
   }
   object StopFilledProps {
     
-    @scala.inline
-    def apply(): StopFilledProps = {
+    inline def apply(): StopFilledProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StopFilledProps]
     }
     
-    @scala.inline
-    implicit class StopFilledPropsMutableBuilder[Self <: StopFilledProps] (val x: Self) extends AnyVal {
+    extension [Self <: StopFilledProps](x: Self) {
       
-      @scala.inline
-      def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: String): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
   

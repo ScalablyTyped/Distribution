@@ -14,31 +14,23 @@ trait ChatRenderMessageSender extends StObject {
 }
 object ChatRenderMessageSender {
   
-  @scala.inline
-  def apply(): ChatRenderMessageSender = {
+  inline def apply(): ChatRenderMessageSender = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChatRenderMessageSender]
   }
   
-  @scala.inline
-  implicit class ChatRenderMessageSenderMutableBuilder[Self <: ChatRenderMessageSender] (val x: Self) extends AnyVal {
+  extension [Self <: ChatRenderMessageSender](x: Self) {
     
-    @scala.inline
-    def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
+    inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
+    inline def setIconUrlUndefined: Self = StObject.set(x, "iconUrl", js.undefined)
     
-    @scala.inline
-    def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
   }
 }

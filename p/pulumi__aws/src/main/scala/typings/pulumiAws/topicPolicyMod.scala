@@ -50,21 +50,16 @@ object topicPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): TopicPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[TopicPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): TopicPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TopicPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: TopicPolicyState): TopicPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[TopicPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: TopicPolicyState, opts: CustomResourceOptions): TopicPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TopicPolicy]
+    inline def get(name: String, id: Input[ID]): TopicPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[TopicPolicy]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): TopicPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TopicPolicy]
+    inline def get(name: String, id: Input[ID], state: TopicPolicyState): TopicPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[TopicPolicy]
+    inline def get(name: String, id: Input[ID], state: TopicPolicyState, opts: CustomResourceOptions): TopicPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TopicPolicy]
     
     /**
       * Returns true if the given object is an instance of TopicPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sns/topicPolicy.TopicPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sns/topicPolicy.TopicPolicy */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sns/topicPolicy.TopicPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sns/topicPolicy.TopicPolicy */ Boolean]
   }
   
   trait TopicPolicyArgs extends StObject {
@@ -81,20 +76,16 @@ object topicPolicyMod {
   }
   object TopicPolicyArgs {
     
-    @scala.inline
-    def apply(arn: Input[String], policy: Input[String]): TopicPolicyArgs = {
+    inline def apply(arn: Input[String], policy: Input[String]): TopicPolicyArgs = {
       val __obj = js.Dynamic.literal(arn = arn.asInstanceOf[js.Any], policy = policy.asInstanceOf[js.Any])
       __obj.asInstanceOf[TopicPolicyArgs]
     }
     
-    @scala.inline
-    implicit class TopicPolicyArgsMutableBuilder[Self <: TopicPolicyArgs] (val x: Self) extends AnyVal {
+    extension [Self <: TopicPolicyArgs](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
     }
   }
   
@@ -112,26 +103,20 @@ object topicPolicyMod {
   }
   object TopicPolicyState {
     
-    @scala.inline
-    def apply(): TopicPolicyState = {
+    inline def apply(): TopicPolicyState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TopicPolicyState]
     }
     
-    @scala.inline
-    implicit class TopicPolicyStateMutableBuilder[Self <: TopicPolicyState] (val x: Self) extends AnyVal {
+    extension [Self <: TopicPolicyState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
     }
   }
 }

@@ -14,31 +14,23 @@ trait EditorToolItem extends StObject {
 }
 object EditorToolItem {
   
-  @scala.inline
-  def apply(): EditorToolItem = {
+  inline def apply(): EditorToolItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EditorToolItem]
   }
   
-  @scala.inline
-  implicit class EditorToolItemMutableBuilder[Self <: EditorToolItem] (val x: Self) extends AnyVal {
+  extension [Self <: EditorToolItem](x: Self) {
     
-    @scala.inline
-    def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

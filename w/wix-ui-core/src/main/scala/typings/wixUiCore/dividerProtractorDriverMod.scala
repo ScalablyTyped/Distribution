@@ -21,17 +21,14 @@ object dividerProtractorDriverMod {
   }
   object DividerDriver {
     
-    @scala.inline
-    def apply(element: () => ElementFinder, exists: () => js.Promise[Boolean]): DividerDriver = {
+    inline def apply(element: () => ElementFinder, exists: () => js.Promise[Boolean]): DividerDriver = {
       val __obj = js.Dynamic.literal(element = js.Any.fromFunction0(element), exists = js.Any.fromFunction0(exists))
       __obj.asInstanceOf[DividerDriver]
     }
     
-    @scala.inline
-    implicit class DividerDriverMutableBuilder[Self <: DividerDriver] (val x: Self) extends AnyVal {
+    extension [Self <: DividerDriver](x: Self) {
       
-      @scala.inline
-      def setExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
+      inline def setExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
     }
   }
 }

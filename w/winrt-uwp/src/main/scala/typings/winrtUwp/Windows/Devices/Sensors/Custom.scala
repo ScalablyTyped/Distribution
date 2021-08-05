@@ -64,20 +64,16 @@ object Custom {
   }
   object CustomSensorReading {
     
-    @scala.inline
-    def apply(properties: IMapView[String, js.Any], timestamp: Date): CustomSensorReading = {
+    inline def apply(properties: IMapView[String, js.Any], timestamp: Date): CustomSensorReading = {
       val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomSensorReading]
     }
     
-    @scala.inline
-    implicit class CustomSensorReadingMutableBuilder[Self <: CustomSensorReading] (val x: Self) extends AnyVal {
+    extension [Self <: CustomSensorReading](x: Self) {
       
-      @scala.inline
-      def setProperties(value: IMapView[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: IMapView[String, js.Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -89,17 +85,14 @@ object Custom {
   }
   object CustomSensorReadingChangedEventArgs {
     
-    @scala.inline
-    def apply(reading: CustomSensorReading): CustomSensorReadingChangedEventArgs = {
+    inline def apply(reading: CustomSensorReading): CustomSensorReadingChangedEventArgs = {
       val __obj = js.Dynamic.literal(reading = reading.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomSensorReadingChangedEventArgs]
     }
     
-    @scala.inline
-    implicit class CustomSensorReadingChangedEventArgsMutableBuilder[Self <: CustomSensorReadingChangedEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: CustomSensorReadingChangedEventArgs](x: Self) {
       
-      @scala.inline
-      def setReading(value: CustomSensorReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
+      inline def setReading(value: CustomSensorReading): Self = StObject.set(x, "reading", value.asInstanceOf[js.Any])
     }
   }
 }

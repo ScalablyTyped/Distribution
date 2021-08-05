@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BubbleSizeByValue extends StObject
 object BubbleSizeByValue {
   
-  @scala.inline
-  def area: typings.highcharts.highchartsStrings.area = "area".asInstanceOf[typings.highcharts.highchartsStrings.area]
+  inline def area: typings.highcharts.highchartsStrings.area = "area".asInstanceOf[typings.highcharts.highchartsStrings.area]
   
-  @scala.inline
-  def width: typings.highcharts.highchartsStrings.width = "width".asInstanceOf[typings.highcharts.highchartsStrings.width]
+  inline def width: typings.highcharts.highchartsStrings.width = "width".asInstanceOf[typings.highcharts.highchartsStrings.width]
 }

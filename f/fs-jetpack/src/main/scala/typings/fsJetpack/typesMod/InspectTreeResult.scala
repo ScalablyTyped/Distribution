@@ -17,8 +17,7 @@ trait InspectTreeResult
 }
 object InspectTreeResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     children: js.Array[InspectTreeResult],
     name: String,
     relativePath: String,
@@ -30,16 +29,12 @@ object InspectTreeResult {
     __obj.asInstanceOf[InspectTreeResult]
   }
   
-  @scala.inline
-  implicit class InspectTreeResultMutableBuilder[Self <: InspectTreeResult] (val x: Self) extends AnyVal {
+  extension [Self <: InspectTreeResult](x: Self) {
     
-    @scala.inline
-    def setChildren(value: js.Array[InspectTreeResult]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: js.Array[InspectTreeResult]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenVarargs(value: InspectTreeResult*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: InspectTreeResult*): Self = StObject.set(x, "children", js.Array(value :_*))
     
-    @scala.inline
-    def setRelativePath(value: String): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
+    inline def setRelativePath(value: String): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
   }
 }

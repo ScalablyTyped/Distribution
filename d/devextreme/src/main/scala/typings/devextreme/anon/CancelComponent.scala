@@ -19,43 +19,31 @@ trait CancelComponent[T] extends StObject {
 }
 object CancelComponent {
   
-  @scala.inline
-  def apply[T](): CancelComponent[T] = {
+  inline def apply[T](): CancelComponent[T] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CancelComponent[T]]
   }
   
-  @scala.inline
-  implicit class CancelComponentMutableBuilder[Self <: CancelComponent[?], T] (val x: Self & CancelComponent[T]) extends AnyVal {
+  extension [Self <: CancelComponent[?], T](x: Self & CancelComponent[T]) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
-    @scala.inline
-    def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    @scala.inline
-    def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
   }
 }

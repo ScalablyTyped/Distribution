@@ -12,31 +12,23 @@ trait OnenotePagePreview extends StObject {
 }
 object OnenotePagePreview {
   
-  @scala.inline
-  def apply(): OnenotePagePreview = {
+  inline def apply(): OnenotePagePreview = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OnenotePagePreview]
   }
   
-  @scala.inline
-  implicit class OnenotePagePreviewMutableBuilder[Self <: OnenotePagePreview] (val x: Self) extends AnyVal {
+  extension [Self <: OnenotePagePreview](x: Self) {
     
-    @scala.inline
-    def setLinks(value: NullableOption[OnenotePagePreviewLinks]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: NullableOption[OnenotePagePreviewLinks]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinksNull: Self = StObject.set(x, "links", null)
+    inline def setLinksNull: Self = StObject.set(x, "links", null)
     
-    @scala.inline
-    def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+    inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
-    @scala.inline
-    def setPreviewText(value: NullableOption[String]): Self = StObject.set(x, "previewText", value.asInstanceOf[js.Any])
+    inline def setPreviewText(value: NullableOption[String]): Self = StObject.set(x, "previewText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewTextNull: Self = StObject.set(x, "previewText", null)
+    inline def setPreviewTextNull: Self = StObject.set(x, "previewText", null)
     
-    @scala.inline
-    def setPreviewTextUndefined: Self = StObject.set(x, "previewText", js.undefined)
+    inline def setPreviewTextUndefined: Self = StObject.set(x, "previewText", js.undefined)
   }
 }

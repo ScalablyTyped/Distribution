@@ -33,46 +33,33 @@ trait ToolExecution extends StObject {
 }
 object ToolExecution {
   
-  @scala.inline
-  def apply(): ToolExecution = {
+  inline def apply(): ToolExecution = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ToolExecution]
   }
   
-  @scala.inline
-  implicit class ToolExecutionMutableBuilder[Self <: ToolExecution] (val x: Self) extends AnyVal {
+  extension [Self <: ToolExecution](x: Self) {
     
-    @scala.inline
-    def setCommandLineArguments(value: js.Array[String]): Self = StObject.set(x, "commandLineArguments", value.asInstanceOf[js.Any])
+    inline def setCommandLineArguments(value: js.Array[String]): Self = StObject.set(x, "commandLineArguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommandLineArgumentsUndefined: Self = StObject.set(x, "commandLineArguments", js.undefined)
+    inline def setCommandLineArgumentsUndefined: Self = StObject.set(x, "commandLineArguments", js.undefined)
     
-    @scala.inline
-    def setCommandLineArgumentsVarargs(value: String*): Self = StObject.set(x, "commandLineArguments", js.Array(value :_*))
+    inline def setCommandLineArgumentsVarargs(value: String*): Self = StObject.set(x, "commandLineArguments", js.Array(value :_*))
     
-    @scala.inline
-    def setExitCode(value: ToolExitCode): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
+    inline def setExitCode(value: ToolExitCode): Self = StObject.set(x, "exitCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExitCodeUndefined: Self = StObject.set(x, "exitCode", js.undefined)
+    inline def setExitCodeUndefined: Self = StObject.set(x, "exitCode", js.undefined)
     
-    @scala.inline
-    def setToolLogs(value: js.Array[FileReference]): Self = StObject.set(x, "toolLogs", value.asInstanceOf[js.Any])
+    inline def setToolLogs(value: js.Array[FileReference]): Self = StObject.set(x, "toolLogs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolLogsUndefined: Self = StObject.set(x, "toolLogs", js.undefined)
+    inline def setToolLogsUndefined: Self = StObject.set(x, "toolLogs", js.undefined)
     
-    @scala.inline
-    def setToolLogsVarargs(value: FileReference*): Self = StObject.set(x, "toolLogs", js.Array(value :_*))
+    inline def setToolLogsVarargs(value: FileReference*): Self = StObject.set(x, "toolLogs", js.Array(value :_*))
     
-    @scala.inline
-    def setToolOutputs(value: js.Array[ToolOutputReference]): Self = StObject.set(x, "toolOutputs", value.asInstanceOf[js.Any])
+    inline def setToolOutputs(value: js.Array[ToolOutputReference]): Self = StObject.set(x, "toolOutputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolOutputsUndefined: Self = StObject.set(x, "toolOutputs", js.undefined)
+    inline def setToolOutputsUndefined: Self = StObject.set(x, "toolOutputs", js.undefined)
     
-    @scala.inline
-    def setToolOutputsVarargs(value: ToolOutputReference*): Self = StObject.set(x, "toolOutputs", js.Array(value :_*))
+    inline def setToolOutputsVarargs(value: ToolOutputReference*): Self = StObject.set(x, "toolOutputs", js.Array(value :_*))
   }
 }

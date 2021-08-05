@@ -13,16 +13,13 @@ trait GatewayPlatform extends StObject {
 }
 object GatewayPlatform {
   
-  @scala.inline
-  def apply(greengrass: Greengrass): GatewayPlatform = {
+  inline def apply(greengrass: Greengrass): GatewayPlatform = {
     val __obj = js.Dynamic.literal(greengrass = greengrass.asInstanceOf[js.Any])
     __obj.asInstanceOf[GatewayPlatform]
   }
   
-  @scala.inline
-  implicit class GatewayPlatformMutableBuilder[Self <: GatewayPlatform] (val x: Self) extends AnyVal {
+  extension [Self <: GatewayPlatform](x: Self) {
     
-    @scala.inline
-    def setGreengrass(value: Greengrass): Self = StObject.set(x, "greengrass", value.asInstanceOf[js.Any])
+    inline def setGreengrass(value: Greengrass): Self = StObject.set(x, "greengrass", value.asInstanceOf[js.Any])
   }
 }

@@ -24,25 +24,19 @@ trait SchemaCompensationHistogramRequest extends StObject {
 }
 object SchemaCompensationHistogramRequest {
   
-  @scala.inline
-  def apply(): SchemaCompensationHistogramRequest = {
+  inline def apply(): SchemaCompensationHistogramRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCompensationHistogramRequest]
   }
   
-  @scala.inline
-  implicit class SchemaCompensationHistogramRequestMutableBuilder[Self <: SchemaCompensationHistogramRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCompensationHistogramRequest](x: Self) {
     
-    @scala.inline
-    def setBucketingOption(value: SchemaNumericBucketingOption): Self = StObject.set(x, "bucketingOption", value.asInstanceOf[js.Any])
+    inline def setBucketingOption(value: SchemaNumericBucketingOption): Self = StObject.set(x, "bucketingOption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketingOptionUndefined: Self = StObject.set(x, "bucketingOption", js.undefined)
+    inline def setBucketingOptionUndefined: Self = StObject.set(x, "bucketingOption", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

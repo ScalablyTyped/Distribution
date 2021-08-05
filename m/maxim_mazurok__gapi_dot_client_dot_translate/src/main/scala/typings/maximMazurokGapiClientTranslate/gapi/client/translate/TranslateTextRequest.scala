@@ -50,62 +50,45 @@ trait TranslateTextRequest extends StObject {
 }
 object TranslateTextRequest {
   
-  @scala.inline
-  def apply(): TranslateTextRequest = {
+  inline def apply(): TranslateTextRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TranslateTextRequest]
   }
   
-  @scala.inline
-  implicit class TranslateTextRequestMutableBuilder[Self <: TranslateTextRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TranslateTextRequest](x: Self) {
     
-    @scala.inline
-    def setContents(value: js.Array[String]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
+    inline def setContents(value: js.Array[String]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
+    inline def setContentsUndefined: Self = StObject.set(x, "contents", js.undefined)
     
-    @scala.inline
-    def setContentsVarargs(value: String*): Self = StObject.set(x, "contents", js.Array(value :_*))
+    inline def setContentsVarargs(value: String*): Self = StObject.set(x, "contents", js.Array(value :_*))
     
-    @scala.inline
-    def setGlossaryConfig(value: TranslateTextGlossaryConfig): Self = StObject.set(x, "glossaryConfig", value.asInstanceOf[js.Any])
+    inline def setGlossaryConfig(value: TranslateTextGlossaryConfig): Self = StObject.set(x, "glossaryConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlossaryConfigUndefined: Self = StObject.set(x, "glossaryConfig", js.undefined)
+    inline def setGlossaryConfigUndefined: Self = StObject.set(x, "glossaryConfig", js.undefined)
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientTranslate.maximMazurokGapiClientTranslateStrings.TranslateTextRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
-    @scala.inline
-    def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setSourceLanguageCode(value: String): Self = StObject.set(x, "sourceLanguageCode", value.asInstanceOf[js.Any])
+    inline def setSourceLanguageCode(value: String): Self = StObject.set(x, "sourceLanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceLanguageCodeUndefined: Self = StObject.set(x, "sourceLanguageCode", js.undefined)
+    inline def setSourceLanguageCodeUndefined: Self = StObject.set(x, "sourceLanguageCode", js.undefined)
     
-    @scala.inline
-    def setTargetLanguageCode(value: String): Self = StObject.set(x, "targetLanguageCode", value.asInstanceOf[js.Any])
+    inline def setTargetLanguageCode(value: String): Self = StObject.set(x, "targetLanguageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetLanguageCodeUndefined: Self = StObject.set(x, "targetLanguageCode", js.undefined)
+    inline def setTargetLanguageCodeUndefined: Self = StObject.set(x, "targetLanguageCode", js.undefined)
   }
 }

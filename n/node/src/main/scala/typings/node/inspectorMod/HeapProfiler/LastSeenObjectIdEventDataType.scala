@@ -12,19 +12,15 @@ trait LastSeenObjectIdEventDataType extends StObject {
 }
 object LastSeenObjectIdEventDataType {
   
-  @scala.inline
-  def apply(lastSeenObjectId: Double, timestamp: Double): LastSeenObjectIdEventDataType = {
+  inline def apply(lastSeenObjectId: Double, timestamp: Double): LastSeenObjectIdEventDataType = {
     val __obj = js.Dynamic.literal(lastSeenObjectId = lastSeenObjectId.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[LastSeenObjectIdEventDataType]
   }
   
-  @scala.inline
-  implicit class LastSeenObjectIdEventDataTypeMutableBuilder[Self <: LastSeenObjectIdEventDataType] (val x: Self) extends AnyVal {
+  extension [Self <: LastSeenObjectIdEventDataType](x: Self) {
     
-    @scala.inline
-    def setLastSeenObjectId(value: Double): Self = StObject.set(x, "lastSeenObjectId", value.asInstanceOf[js.Any])
+    inline def setLastSeenObjectId(value: Double): Self = StObject.set(x, "lastSeenObjectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

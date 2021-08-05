@@ -18,25 +18,19 @@ trait ContactGroupMembership extends StObject {
 }
 object ContactGroupMembership {
   
-  @scala.inline
-  def apply(): ContactGroupMembership = {
+  inline def apply(): ContactGroupMembership = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ContactGroupMembership]
   }
   
-  @scala.inline
-  implicit class ContactGroupMembershipMutableBuilder[Self <: ContactGroupMembership] (val x: Self) extends AnyVal {
+  extension [Self <: ContactGroupMembership](x: Self) {
     
-    @scala.inline
-    def setContactGroupId(value: String): Self = StObject.set(x, "contactGroupId", value.asInstanceOf[js.Any])
+    inline def setContactGroupId(value: String): Self = StObject.set(x, "contactGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactGroupIdUndefined: Self = StObject.set(x, "contactGroupId", js.undefined)
+    inline def setContactGroupIdUndefined: Self = StObject.set(x, "contactGroupId", js.undefined)
     
-    @scala.inline
-    def setContactGroupResourceName(value: String): Self = StObject.set(x, "contactGroupResourceName", value.asInstanceOf[js.Any])
+    inline def setContactGroupResourceName(value: String): Self = StObject.set(x, "contactGroupResourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactGroupResourceNameUndefined: Self = StObject.set(x, "contactGroupResourceName", js.undefined)
+    inline def setContactGroupResourceNameUndefined: Self = StObject.set(x, "contactGroupResourceName", js.undefined)
   }
 }

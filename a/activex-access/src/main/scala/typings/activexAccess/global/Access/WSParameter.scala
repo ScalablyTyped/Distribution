@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Access.WSParameter")
 @js.native
-class WSParameter protected ()
+/* private */ class WSParameter ()
   extends StObject
      with typings.activexAccess.Access.WSParameter {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Access.WSParameter_typekey")
   var AccessDotWSParameter_typekey: typings.activexAccess.Access.WSParameter = js.native
   

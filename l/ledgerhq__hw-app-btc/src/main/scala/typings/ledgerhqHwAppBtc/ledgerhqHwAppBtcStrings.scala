@@ -11,20 +11,17 @@ object ledgerhqHwAppBtcStrings {
   sealed trait bech32
     extends StObject
        with AddressFormat
-  @scala.inline
-  def bech32: bech32 = "bech32".asInstanceOf[bech32]
+  inline def bech32: bech32 = "bech32".asInstanceOf[bech32]
   
   @js.native
   sealed trait legacy
     extends StObject
        with AddressFormat
-  @scala.inline
-  def legacy: legacy = "legacy".asInstanceOf[legacy]
+  inline def legacy: legacy = "legacy".asInstanceOf[legacy]
   
   @js.native
   sealed trait p2sh
     extends StObject
        with AddressFormat
-  @scala.inline
-  def p2sh: p2sh = "p2sh".asInstanceOf[p2sh]
+  inline def p2sh: p2sh = "p2sh".asInstanceOf[p2sh]
 }

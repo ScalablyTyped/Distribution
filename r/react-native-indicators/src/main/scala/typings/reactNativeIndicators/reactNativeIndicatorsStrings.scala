@@ -8,11 +8,9 @@ object reactNativeIndicatorsStrings {
   
   @js.native
   sealed trait fill extends StObject
-  @scala.inline
-  def fill: fill = "fill".asInstanceOf[fill]
+  inline def fill: fill = "fill".asInstanceOf[fill]
   
   @js.native
   sealed trait outline extends StObject
-  @scala.inline
-  def outline: outline = "outline".asInstanceOf[outline]
+  inline def outline: outline = "outline".asInstanceOf[outline]
 }

@@ -19,25 +19,19 @@ trait GoogleActionsOrdersV3Money extends StObject {
 }
 object GoogleActionsOrdersV3Money {
   
-  @scala.inline
-  def apply(): GoogleActionsOrdersV3Money = {
+  inline def apply(): GoogleActionsOrdersV3Money = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsOrdersV3Money]
   }
   
-  @scala.inline
-  implicit class GoogleActionsOrdersV3MoneyMutableBuilder[Self <: GoogleActionsOrdersV3Money] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsOrdersV3Money](x: Self) {
     
-    @scala.inline
-    def setAmountInMicros(value: String): Self = StObject.set(x, "amountInMicros", value.asInstanceOf[js.Any])
+    inline def setAmountInMicros(value: String): Self = StObject.set(x, "amountInMicros", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmountInMicrosUndefined: Self = StObject.set(x, "amountInMicros", js.undefined)
+    inline def setAmountInMicrosUndefined: Self = StObject.set(x, "amountInMicros", js.undefined)
     
-    @scala.inline
-    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
+    inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
+    inline def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
   }
 }

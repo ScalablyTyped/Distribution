@@ -22,8 +22,7 @@ trait DefaultValue extends StObject {
 }
 object DefaultValue {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     defaultValue: Double,
     disabled: Boolean,
     max: Double,
@@ -36,28 +35,20 @@ object DefaultValue {
     __obj.asInstanceOf[DefaultValue]
   }
   
-  @scala.inline
-  implicit class DefaultValueMutableBuilder[Self <: DefaultValue] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultValue](x: Self) {
     
-    @scala.inline
-    def setDefaultValue(value: Double): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: Double): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowValue(value: Boolean): Self = StObject.set(x, "showValue", value.asInstanceOf[js.Any])
+    inline def setShowValue(value: Boolean): Self = StObject.set(x, "showValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapToValue(value: Boolean): Self = StObject.set(x, "snapToValue", value.asInstanceOf[js.Any])
+    inline def setSnapToValue(value: Boolean): Self = StObject.set(x, "snapToValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
   }
 }

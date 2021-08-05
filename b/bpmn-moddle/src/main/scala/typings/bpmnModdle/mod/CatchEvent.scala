@@ -23,8 +23,7 @@ trait CatchEvent
 }
 object CatchEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     auditing: Auditing,
@@ -47,31 +46,22 @@ object CatchEvent {
     __obj.asInstanceOf[CatchEvent]
   }
   
-  @scala.inline
-  implicit class CatchEventMutableBuilder[Self <: CatchEvent] (val x: Self) extends AnyVal {
+  extension [Self <: CatchEvent](x: Self) {
     
-    @scala.inline
-    def setDataOutputAssociations(value: js.Array[DataOutputAssociation]): Self = StObject.set(x, "dataOutputAssociations", value.asInstanceOf[js.Any])
+    inline def setDataOutputAssociations(value: js.Array[DataOutputAssociation]): Self = StObject.set(x, "dataOutputAssociations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataOutputAssociationsVarargs(value: DataOutputAssociation*): Self = StObject.set(x, "dataOutputAssociations", js.Array(value :_*))
+    inline def setDataOutputAssociationsVarargs(value: DataOutputAssociation*): Self = StObject.set(x, "dataOutputAssociations", js.Array(value :_*))
     
-    @scala.inline
-    def setDataOutputs(value: js.Array[DataOutput]): Self = StObject.set(x, "dataOutputs", value.asInstanceOf[js.Any])
+    inline def setDataOutputs(value: js.Array[DataOutput]): Self = StObject.set(x, "dataOutputs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataOutputsVarargs(value: DataOutput*): Self = StObject.set(x, "dataOutputs", js.Array(value :_*))
+    inline def setDataOutputsVarargs(value: DataOutput*): Self = StObject.set(x, "dataOutputs", js.Array(value :_*))
     
-    @scala.inline
-    def setEventDefinitions(value: js.Array[EventDefinition]): Self = StObject.set(x, "eventDefinitions", value.asInstanceOf[js.Any])
+    inline def setEventDefinitions(value: js.Array[EventDefinition]): Self = StObject.set(x, "eventDefinitions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventDefinitionsVarargs(value: EventDefinition*): Self = StObject.set(x, "eventDefinitions", js.Array(value :_*))
+    inline def setEventDefinitionsVarargs(value: EventDefinition*): Self = StObject.set(x, "eventDefinitions", js.Array(value :_*))
     
-    @scala.inline
-    def setOutputSet(value: OutputSet): Self = StObject.set(x, "outputSet", value.asInstanceOf[js.Any])
+    inline def setOutputSet(value: OutputSet): Self = StObject.set(x, "outputSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParallelMultiple(value: Boolean): Self = StObject.set(x, "parallelMultiple", value.asInstanceOf[js.Any])
+    inline def setParallelMultiple(value: Boolean): Self = StObject.set(x, "parallelMultiple", value.asInstanceOf[js.Any])
   }
 }

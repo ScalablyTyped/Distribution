@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(relativePath: String): String = ^.asInstanceOf[js.Dynamic].apply(relativePath.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(relativePath: String): String = ^.asInstanceOf[js.Dynamic].apply(relativePath.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
     * Resolve a relative path against the provided root path and return an absolute path.
     * *This will throw* if the resulting resolution seems malicious. The following are malicious:
@@ -18,8 +17,7 @@ object mod {
     *  * The relative path traverses above the root and back down
     */
   // tslint:disable-next-line unified-signatures
-  @scala.inline
-  def apply(rootPath: String, relativePath: String): String = (^.asInstanceOf[js.Dynamic].apply(rootPath.asInstanceOf[js.Any], relativePath.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(rootPath: String, relativePath: String): String = (^.asInstanceOf[js.Dynamic].apply(rootPath.asInstanceOf[js.Any], relativePath.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("resolve-path", JSImport.Namespace)
   @js.native

@@ -12,6 +12,5 @@ object addressInputDriverMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addressInputDriverFactory(hasElementEventTrigger: Element): Blur = ^.asInstanceOf[js.Dynamic].applyDynamic("addressInputDriverFactory")(hasElementEventTrigger.asInstanceOf[js.Any]).asInstanceOf[Blur]
+  inline def addressInputDriverFactory(hasElementEventTrigger: Element): Blur = ^.asInstanceOf[js.Dynamic].applyDynamic("addressInputDriverFactory")(hasElementEventTrigger.asInstanceOf[js.Any]).asInstanceOf[Blur]
 }

@@ -48,8 +48,7 @@ trait GetSmsMessagesOperation extends StObject {
 }
 object GetSmsMessagesOperation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cancel: () => Unit,
     close: () => Unit,
     completed: (/* asyncInfo */ IAsyncOperationWithProgress[IVectorView[js.Any], Double], /* asyncStatus */ AsyncStatus) => Unit,
@@ -63,33 +62,24 @@ object GetSmsMessagesOperation {
     __obj.asInstanceOf[GetSmsMessagesOperation]
   }
   
-  @scala.inline
-  implicit class GetSmsMessagesOperationMutableBuilder[Self <: GetSmsMessagesOperation] (val x: Self) extends AnyVal {
+  extension [Self <: GetSmsMessagesOperation](x: Self) {
     
-    @scala.inline
-    def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
+    inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCompleted(
+    inline def setCompleted(
       value: (/* asyncInfo */ IAsyncOperationWithProgress[IVectorView[js.Any], Double], /* asyncStatus */ AsyncStatus) => Unit
     ): Self = StObject.set(x, "completed", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setErrorCode(value: WinRTError): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: WinRTError): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetResults(value: () => IVectorView[ISmsMessage]): Self = StObject.set(x, "getResults", js.Any.fromFunction0(value))
+    inline def setGetResults(value: () => IVectorView[ISmsMessage]): Self = StObject.set(x, "getResults", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgress(value: (/* asyncInfo */ IAsyncOperationWithProgress[IVectorView[js.Any], Double], Double) => Unit): Self = StObject.set(x, "progress", js.Any.fromFunction2(value))
+    inline def setProgress(value: (/* asyncInfo */ IAsyncOperationWithProgress[IVectorView[js.Any], Double], Double) => Unit): Self = StObject.set(x, "progress", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setStatus(value: AsyncStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: AsyncStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

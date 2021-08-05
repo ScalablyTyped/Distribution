@@ -67,10 +67,8 @@ object mod {
   @js.native
   val presets: Presets_ = js.native
   
-  @scala.inline
-  def spring(`val`: Double): OpaqueConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("spring")(`val`.asInstanceOf[js.Any]).asInstanceOf[OpaqueConfig]
-  @scala.inline
-  def spring(`val`: Double, config: SpringHelperConfig): OpaqueConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("spring")(`val`.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[OpaqueConfig]
+  inline def spring(`val`: Double): OpaqueConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("spring")(`val`.asInstanceOf[js.Any]).asInstanceOf[OpaqueConfig]
+  inline def spring(`val`: Double, config: SpringHelperConfig): OpaqueConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("spring")(`val`.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[OpaqueConfig]
   
   type InterpolateFunction = js.Function1[
     /* previousInterpolatedStyles */ js.UndefOr[js.Array[TransitionPlainStyle]], 
@@ -107,35 +105,26 @@ object mod {
   }
   object MotionProps {
     
-    @scala.inline
-    def apply(style: Style): MotionProps = {
+    inline def apply(style: Style): MotionProps = {
       val __obj = js.Dynamic.literal(style = style.asInstanceOf[js.Any])
       __obj.asInstanceOf[MotionProps]
     }
     
-    @scala.inline
-    implicit class MotionPropsMutableBuilder[Self <: MotionProps] (val x: Self) extends AnyVal {
+    extension [Self <: MotionProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: /* interpolatedStyle */ PlainStyle => Element): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: /* interpolatedStyle */ PlainStyle => Element): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDefaultStyle(value: PlainStyle): Self = StObject.set(x, "defaultStyle", value.asInstanceOf[js.Any])
+      inline def setDefaultStyle(value: PlainStyle): Self = StObject.set(x, "defaultStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultStyleUndefined: Self = StObject.set(x, "defaultStyle", js.undefined)
+      inline def setDefaultStyleUndefined: Self = StObject.set(x, "defaultStyle", js.undefined)
       
-      @scala.inline
-      def setOnRest(value: () => Unit): Self = StObject.set(x, "onRest", js.Any.fromFunction0(value))
+      inline def setOnRest(value: () => Unit): Self = StObject.set(x, "onRest", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnRestUndefined: Self = StObject.set(x, "onRest", js.undefined)
+      inline def setOnRestUndefined: Self = StObject.set(x, "onRest", js.undefined)
       
-      @scala.inline
-      def setStyle(value: Style): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Style): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }
   }
   
@@ -151,27 +140,21 @@ object mod {
   }
   object OpaqueConfig {
     
-    @scala.inline
-    def apply(damping: Double, precision: Double, stiffness: Double, `val`: Double): OpaqueConfig = {
+    inline def apply(damping: Double, precision: Double, stiffness: Double, `val`: Double): OpaqueConfig = {
       val __obj = js.Dynamic.literal(damping = damping.asInstanceOf[js.Any], precision = precision.asInstanceOf[js.Any], stiffness = stiffness.asInstanceOf[js.Any])
       __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
       __obj.asInstanceOf[OpaqueConfig]
     }
     
-    @scala.inline
-    implicit class OpaqueConfigMutableBuilder[Self <: OpaqueConfig] (val x: Self) extends AnyVal {
+    extension [Self <: OpaqueConfig](x: Self) {
       
-      @scala.inline
-      def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
+      inline def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+      inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStiffness(value: Double): Self = StObject.set(x, "stiffness", value.asInstanceOf[js.Any])
+      inline def setStiffness(value: Double): Self = StObject.set(x, "stiffness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVal(value: Double): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+      inline def setVal(value: Double): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
     }
   }
   
@@ -202,32 +185,24 @@ object mod {
   }
   object SpringHelperConfig {
     
-    @scala.inline
-    def apply(): SpringHelperConfig = {
+    inline def apply(): SpringHelperConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SpringHelperConfig]
     }
     
-    @scala.inline
-    implicit class SpringHelperConfigMutableBuilder[Self <: SpringHelperConfig] (val x: Self) extends AnyVal {
+    extension [Self <: SpringHelperConfig](x: Self) {
       
-      @scala.inline
-      def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
+      inline def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDampingUndefined: Self = StObject.set(x, "damping", js.undefined)
+      inline def setDampingUndefined: Self = StObject.set(x, "damping", js.undefined)
       
-      @scala.inline
-      def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+      inline def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
+      inline def setPrecisionUndefined: Self = StObject.set(x, "precision", js.undefined)
       
-      @scala.inline
-      def setStiffness(value: Double): Self = StObject.set(x, "stiffness", value.asInstanceOf[js.Any])
+      inline def setStiffness(value: Double): Self = StObject.set(x, "stiffness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStiffnessUndefined: Self = StObject.set(x, "stiffness", js.undefined)
+      inline def setStiffnessUndefined: Self = StObject.set(x, "stiffness", js.undefined)
     }
   }
   
@@ -263,26 +238,20 @@ object mod {
   }
   object TransitionPlainStyle {
     
-    @scala.inline
-    def apply(key: String, style: PlainStyle): TransitionPlainStyle = {
+    inline def apply(key: String, style: PlainStyle): TransitionPlainStyle = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransitionPlainStyle]
     }
     
-    @scala.inline
-    implicit class TransitionPlainStyleMutableBuilder[Self <: TransitionPlainStyle] (val x: Self) extends AnyVal {
+    extension [Self <: TransitionPlainStyle](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: PlainStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: PlainStyle): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }
   }
   
@@ -324,58 +293,42 @@ object mod {
   }
   object TransitionProps {
     
-    @scala.inline
-    def apply(styles: js.Array[TransitionStyle] | InterpolateFunction): TransitionProps = {
+    inline def apply(styles: js.Array[TransitionStyle] | InterpolateFunction): TransitionProps = {
       val __obj = js.Dynamic.literal(styles = styles.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransitionProps]
     }
     
-    @scala.inline
-    implicit class TransitionPropsMutableBuilder[Self <: TransitionProps] (val x: Self) extends AnyVal {
+    extension [Self <: TransitionProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: /* interpolatedStyles */ js.Array[TransitionPlainStyle] => Element): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      inline def setChildren(value: /* interpolatedStyles */ js.Array[TransitionPlainStyle] => Element): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setDefaultStyles(value: js.Array[TransitionPlainStyle]): Self = StObject.set(x, "defaultStyles", value.asInstanceOf[js.Any])
+      inline def setDefaultStyles(value: js.Array[TransitionPlainStyle]): Self = StObject.set(x, "defaultStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultStylesUndefined: Self = StObject.set(x, "defaultStyles", js.undefined)
+      inline def setDefaultStylesUndefined: Self = StObject.set(x, "defaultStyles", js.undefined)
       
-      @scala.inline
-      def setDefaultStylesVarargs(value: TransitionPlainStyle*): Self = StObject.set(x, "defaultStyles", js.Array(value :_*))
+      inline def setDefaultStylesVarargs(value: TransitionPlainStyle*): Self = StObject.set(x, "defaultStyles", js.Array(value :_*))
       
-      @scala.inline
-      def setDidLeave(value: /* styleThatLeft */ TransitionStyle => Unit): Self = StObject.set(x, "didLeave", js.Any.fromFunction1(value))
+      inline def setDidLeave(value: /* styleThatLeft */ TransitionStyle => Unit): Self = StObject.set(x, "didLeave", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDidLeaveUndefined: Self = StObject.set(x, "didLeave", js.undefined)
+      inline def setDidLeaveUndefined: Self = StObject.set(x, "didLeave", js.undefined)
       
-      @scala.inline
-      def setStyles(value: js.Array[TransitionStyle] | InterpolateFunction): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: js.Array[TransitionStyle] | InterpolateFunction): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesFunction1(
+      inline def setStylesFunction1(
         value: /* previousInterpolatedStyles */ js.UndefOr[js.Array[TransitionPlainStyle]] => js.Array[TransitionStyle]
       ): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStylesVarargs(value: TransitionStyle*): Self = StObject.set(x, "styles", js.Array(value :_*))
+      inline def setStylesVarargs(value: TransitionStyle*): Self = StObject.set(x, "styles", js.Array(value :_*))
       
-      @scala.inline
-      def setWillEnter(value: /* styleThatEntered */ TransitionStyle => PlainStyle): Self = StObject.set(x, "willEnter", js.Any.fromFunction1(value))
+      inline def setWillEnter(value: /* styleThatEntered */ TransitionStyle => PlainStyle): Self = StObject.set(x, "willEnter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWillEnterUndefined: Self = StObject.set(x, "willEnter", js.undefined)
+      inline def setWillEnterUndefined: Self = StObject.set(x, "willEnter", js.undefined)
       
-      @scala.inline
-      def setWillLeave(value: /* styleThatLeft */ TransitionStyle => Style | Unit): Self = StObject.set(x, "willLeave", js.Any.fromFunction1(value))
+      inline def setWillLeave(value: /* styleThatLeft */ TransitionStyle => Style | Unit): Self = StObject.set(x, "willLeave", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setWillLeaveUndefined: Self = StObject.set(x, "willLeave", js.undefined)
+      inline def setWillLeaveUndefined: Self = StObject.set(x, "willLeave", js.undefined)
     }
   }
   
@@ -400,26 +353,20 @@ object mod {
   }
   object TransitionStyle {
     
-    @scala.inline
-    def apply(key: String, style: Style): TransitionStyle = {
+    inline def apply(key: String, style: Style): TransitionStyle = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransitionStyle]
     }
     
-    @scala.inline
-    implicit class TransitionStyleMutableBuilder[Self <: TransitionStyle] (val x: Self) extends AnyVal {
+    extension [Self <: TransitionStyle](x: Self) {
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: Style): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: Style): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }
   }
   

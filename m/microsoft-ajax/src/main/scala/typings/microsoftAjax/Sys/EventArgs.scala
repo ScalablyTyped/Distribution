@@ -18,16 +18,13 @@ trait EventArgs extends StObject {
 }
 object EventArgs {
   
-  @scala.inline
-  def apply(Empty: EventArgs): EventArgs = {
+  inline def apply(Empty: EventArgs): EventArgs = {
     val __obj = js.Dynamic.literal(Empty = Empty.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventArgs]
   }
   
-  @scala.inline
-  implicit class EventArgsMutableBuilder[Self <: EventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: EventArgs](x: Self) {
     
-    @scala.inline
-    def setEmpty(value: EventArgs): Self = StObject.set(x, "Empty", value.asInstanceOf[js.Any])
+    inline def setEmpty(value: EventArgs): Self = StObject.set(x, "Empty", value.asInstanceOf[js.Any])
   }
 }

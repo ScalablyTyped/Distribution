@@ -14,22 +14,17 @@ trait Begin extends StObject {
 }
 object Begin {
   
-  @scala.inline
-  def apply(begin: js.Any, end: js.Any, keys: js.Any): Begin = {
+  inline def apply(begin: js.Any, end: js.Any, keys: js.Any): Begin = {
     val __obj = js.Dynamic.literal(begin = begin.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any])
     __obj.asInstanceOf[Begin]
   }
   
-  @scala.inline
-  implicit class BeginMutableBuilder[Self <: Begin] (val x: Self) extends AnyVal {
+  extension [Self <: Begin](x: Self) {
     
-    @scala.inline
-    def setBegin(value: js.Any): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
+    inline def setBegin(value: js.Any): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd(value: js.Any): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: js.Any): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeys(value: js.Any): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: js.Any): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
   }
 }

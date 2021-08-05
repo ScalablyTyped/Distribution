@@ -14,26 +14,20 @@ object anon {
   }
   object AttachAssertions {
     
-    @scala.inline
-    def apply(): AttachAssertions = {
+    inline def apply(): AttachAssertions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AttachAssertions]
     }
     
-    @scala.inline
-    implicit class AttachAssertionsMutableBuilder[Self <: AttachAssertions] (val x: Self) extends AnyVal {
+    extension [Self <: AttachAssertions](x: Self) {
       
-      @scala.inline
-      def setAttachAssertions(value: Boolean): Self = StObject.set(x, "attachAssertions", value.asInstanceOf[js.Any])
+      inline def setAttachAssertions(value: Boolean): Self = StObject.set(x, "attachAssertions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttachAssertionsUndefined: Self = StObject.set(x, "attachAssertions", js.undefined)
+      inline def setAttachAssertionsUndefined: Self = StObject.set(x, "attachAssertions", js.undefined)
       
-      @scala.inline
-      def setScope(value: js.Object): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: js.Object): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     }
   }
   
@@ -43,20 +37,16 @@ object anon {
   }
   object Scope {
     
-    @scala.inline
-    def apply(): Scope = {
+    inline def apply(): Scope = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Scope]
     }
     
-    @scala.inline
-    implicit class ScopeMutableBuilder[Self <: Scope] (val x: Self) extends AnyVal {
+    extension [Self <: Scope](x: Self) {
       
-      @scala.inline
-      def setScope(value: js.Object): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+      inline def setScope(value: js.Object): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+      inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     }
   }
 }

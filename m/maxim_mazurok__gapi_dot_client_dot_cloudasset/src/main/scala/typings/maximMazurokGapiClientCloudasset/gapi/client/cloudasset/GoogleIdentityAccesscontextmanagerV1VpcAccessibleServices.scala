@@ -17,28 +17,21 @@ trait GoogleIdentityAccesscontextmanagerV1VpcAccessibleServices extends StObject
 }
 object GoogleIdentityAccesscontextmanagerV1VpcAccessibleServices {
   
-  @scala.inline
-  def apply(): GoogleIdentityAccesscontextmanagerV1VpcAccessibleServices = {
+  inline def apply(): GoogleIdentityAccesscontextmanagerV1VpcAccessibleServices = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleIdentityAccesscontextmanagerV1VpcAccessibleServices]
   }
   
-  @scala.inline
-  implicit class GoogleIdentityAccesscontextmanagerV1VpcAccessibleServicesMutableBuilder[Self <: GoogleIdentityAccesscontextmanagerV1VpcAccessibleServices] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleIdentityAccesscontextmanagerV1VpcAccessibleServices](x: Self) {
     
-    @scala.inline
-    def setAllowedServices(value: js.Array[String]): Self = StObject.set(x, "allowedServices", value.asInstanceOf[js.Any])
+    inline def setAllowedServices(value: js.Array[String]): Self = StObject.set(x, "allowedServices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedServicesUndefined: Self = StObject.set(x, "allowedServices", js.undefined)
+    inline def setAllowedServicesUndefined: Self = StObject.set(x, "allowedServices", js.undefined)
     
-    @scala.inline
-    def setAllowedServicesVarargs(value: String*): Self = StObject.set(x, "allowedServices", js.Array(value :_*))
+    inline def setAllowedServicesVarargs(value: String*): Self = StObject.set(x, "allowedServices", js.Array(value :_*))
     
-    @scala.inline
-    def setEnableRestriction(value: Boolean): Self = StObject.set(x, "enableRestriction", value.asInstanceOf[js.Any])
+    inline def setEnableRestriction(value: Boolean): Self = StObject.set(x, "enableRestriction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableRestrictionUndefined: Self = StObject.set(x, "enableRestriction", js.undefined)
+    inline def setEnableRestrictionUndefined: Self = StObject.set(x, "enableRestriction", js.undefined)
   }
 }

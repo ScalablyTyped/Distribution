@@ -26,11 +26,11 @@ object filterMod {
       */
     def this(source: IIterator[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]) = this()
     
-    var _fn: js.Any = js.native
+    /* private */ var _fn: js.Any = js.native
     
-    var _index: js.Any = js.native
+    /* private */ var _index: js.Any = js.native
     
-    var _source: js.Any = js.native
+    /* private */ var _source: js.Any = js.native
     
     /**
       * Get an iterator over the object's values.
@@ -65,6 +65,5 @@ object filterMod {
     override def next(): js.UndefOr[T] = js.native
   }
   
-  @scala.inline
-  def filter[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): IIterator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[IIterator[T]]
+  inline def filter[T](`object`: IterableOrArrayLike[T], fn: js.Function2[/* value */ T, /* index */ Double, Boolean]): IIterator[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(`object`.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[IIterator[T]]
 }

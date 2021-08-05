@@ -11,9 +11,7 @@ object rootElementMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getRootElement(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("getRootElement")().asInstanceOf[Element]
+  inline def getRootElement(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("getRootElement")().asInstanceOf[Element]
   
-  @scala.inline
-  def overrideRootElement(fn: js.Function0[Element]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("overrideRootElement")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def overrideRootElement(fn: js.Function0[Element]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("overrideRootElement")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

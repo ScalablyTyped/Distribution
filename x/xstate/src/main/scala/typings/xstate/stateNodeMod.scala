@@ -74,19 +74,19 @@ object stateNodeMod {
     context: TContext
     ) = this()
     
-    var __cache: js.Any = js.native
+    /* private */ var __cache: js.Any = js.native
     
     var __xstatenode: `true` = js.native
     
-    var _init: js.Any = js.native
+    /* private */ var _init: js.Any = js.native
     
     /**
       * Whether the state node is "transient". A state node is considered transient if it has
       * an immediate transition from a "null event" (empty string), taken upon entering the state node.
       */
-    var _transient: js.Any = js.native
+    /* private */ var _transient: js.Any = js.native
     
-    var _transition: js.Any = js.native
+    /* private */ var _transition: js.Any = js.native
     
     /**
       * The activities to be started upon entering the state node,
@@ -125,7 +125,7 @@ object stateNodeMod {
       * Whether the given state node "escapes" this state node. If the `stateNode` is equal to or the parent of
       * this state node, it does not escape.
       */
-    var escapes: js.Any = js.native
+    /* private */ var escapes: js.Any = js.native
     
     /**
       * All the event types accepted by this state node and its descendants.
@@ -134,18 +134,18 @@ object stateNodeMod {
         /* import warning: importer.ImportType#apply Failed type conversion: TEvent['type'] */ js.Any
       ] = js.native
     
-    var formatTransition: js.Any = js.native
+    /* private */ var formatTransition: js.Any = js.native
     
-    var formatTransitions: js.Any = js.native
+    /* private */ var formatTransitions: js.Any = js.native
     
-    var getActions: js.Any = js.native
+    /* private */ var getActions: js.Any = js.native
     
-    var getCandidates: js.Any = js.native
+    /* private */ var getCandidates: js.Any = js.native
     
     /**
       * All delayed transitions from the config.
       */
-    var getDelayedTransitions: js.Any = js.native
+    /* private */ var getDelayedTransitions: js.Any = js.native
     
     /**
       * Retrieves state nodes from a relative path to this state node.
@@ -178,7 +178,7 @@ object stateNodeMod {
       resolve: Boolean
     ): js.Array[StateNode[TContext, js.Any, TEvent, Value[TContext]]] = js.native
     
-    var getResolvedPath: js.Any = js.native
+    /* private */ var getResolvedPath: js.Any = js.native
     
     /**
       * Returns the child state node from its relative `stateKey`, or throws.
@@ -223,14 +223,14 @@ object stateNodeMod {
       */
     var history: `false` | shallow | deep = js.native
     
-    var historyValue: js.Any = js.native
+    /* private */ var historyValue: js.Any = js.native
     
     /**
       * The unique ID of the state node.
       */
     var id: String = js.native
     
-    var idMap: js.Any = js.native
+    /* private */ var idMap: js.Any = js.native
     
     /**
       * The initial state node key.
@@ -269,9 +269,9 @@ object stateNodeMod {
       */
     var meta: js.UndefOr[js.Any] = js.native
     
-    var next: js.Any = js.native
+    /* private */ var next: js.Any = js.native
     
-    var nodesFromChild: js.Any = js.native
+    /* private */ var nodesFromChild: js.Any = js.native
     
     /**
       * The mapping of events to transitions.
@@ -334,9 +334,9 @@ object stateNodeMod {
       *
       * @param historyValue
       */
-    var resolveHistory: js.Any = js.native
+    /* private */ var resolveHistory: js.Any = js.native
     
-    var resolveRaisedTransition: js.Any = js.native
+    /* private */ var resolveRaisedTransition: js.Any = js.native
     
     /**
       * Resolves the given `state` to a new `State` instance relative to this machine.
@@ -347,9 +347,9 @@ object stateNodeMod {
       */
     def resolveState(state: State[TContext, TEvent, js.Any, Value[TContext]]): State[TContext, TEvent, TStateSchema, TTypestate] = js.native
     
-    var resolveTarget: js.Any = js.native
+    /* private */ var resolveTarget: js.Any = js.native
     
-    var resolveTransition: js.Any = js.native
+    /* private */ var resolveTransition: js.Any = js.native
     
     /**
       * All the state node IDs of this state node and its descendant state nodes.
@@ -402,11 +402,11 @@ object stateNodeMod {
     def transition(state: StateValueMap, event: typings.xstate.typesMod.SCXML.Event[TEvent]): State[TContext, TEvent, TStateSchema, TTypestate] = js.native
     def transition(state: StateValueMap, event: typings.xstate.typesMod.SCXML.Event[TEvent], context: TContext): State[TContext, TEvent, TStateSchema, TTypestate] = js.native
     
-    var transitionCompoundNode: js.Any = js.native
+    /* private */ var transitionCompoundNode: js.Any = js.native
     
-    var transitionLeafNode: js.Any = js.native
+    /* private */ var transitionLeafNode: js.Any = js.native
     
-    var transitionParallelNode: js.Any = js.native
+    /* private */ var transitionParallelNode: js.Any = js.native
     
     /**
       * All the transitions that can be taken from this state node.

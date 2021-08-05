@@ -21,7 +21,7 @@ object nodeHttpHandlerMod {
        with RequestHandler[HttpRequest, HttpResponse, HttpHandlerOptions] {
     def this(hasConnectionTimeoutSocketTimeoutHttpAgentHttpsAgent: NodeHttpOptions) = this()
     
-    val connectionTimeout: js.Any = js.native
+    /* private */ val connectionTimeout: js.Any = js.native
     
     @JSName("destroy")
     def destroy_MNodeHttpHandler(): Unit = js.native
@@ -30,14 +30,14 @@ object nodeHttpHandlerMod {
     override def handle(request: HttpRequest, handlerOptions: HttpHandlerOptions): js.Promise[RequestHandlerOutput[HttpResponse]] = js.native
     def handle(request: typings.awsSdkProtocolHttp.mod.HttpRequest, hasAbortSignal: HttpHandlerOptions): js.Promise[Response] = js.native
     
-    val httpAgent: js.Any = js.native
+    /* private */ val httpAgent: js.Any = js.native
     
-    val httpsAgent: js.Any = js.native
+    /* private */ val httpsAgent: js.Any = js.native
     
     @JSName("metadata")
     val metadata_NodeHttpHandler: HandlerProtocol = js.native
     
-    val socketTimeout: js.Any = js.native
+    /* private */ val socketTimeout: js.Any = js.native
   }
   
   trait NodeHttpOptions extends StObject {
@@ -60,38 +60,28 @@ object nodeHttpHandlerMod {
   }
   object NodeHttpOptions {
     
-    @scala.inline
-    def apply(): NodeHttpOptions = {
+    inline def apply(): NodeHttpOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NodeHttpOptions]
     }
     
-    @scala.inline
-    implicit class NodeHttpOptionsMutableBuilder[Self <: NodeHttpOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NodeHttpOptions](x: Self) {
       
-      @scala.inline
-      def setConnectionTimeout(value: Double): Self = StObject.set(x, "connectionTimeout", value.asInstanceOf[js.Any])
+      inline def setConnectionTimeout(value: Double): Self = StObject.set(x, "connectionTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionTimeoutUndefined: Self = StObject.set(x, "connectionTimeout", js.undefined)
+      inline def setConnectionTimeoutUndefined: Self = StObject.set(x, "connectionTimeout", js.undefined)
       
-      @scala.inline
-      def setHttpAgent(value: Agent): Self = StObject.set(x, "httpAgent", value.asInstanceOf[js.Any])
+      inline def setHttpAgent(value: Agent): Self = StObject.set(x, "httpAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpAgentUndefined: Self = StObject.set(x, "httpAgent", js.undefined)
+      inline def setHttpAgentUndefined: Self = StObject.set(x, "httpAgent", js.undefined)
       
-      @scala.inline
-      def setHttpsAgent(value: typings.node.httpsMod.Agent): Self = StObject.set(x, "httpsAgent", value.asInstanceOf[js.Any])
+      inline def setHttpsAgent(value: typings.node.httpsMod.Agent): Self = StObject.set(x, "httpsAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpsAgentUndefined: Self = StObject.set(x, "httpsAgent", js.undefined)
+      inline def setHttpsAgentUndefined: Self = StObject.set(x, "httpsAgent", js.undefined)
       
-      @scala.inline
-      def setSocketTimeout(value: Double): Self = StObject.set(x, "socketTimeout", value.asInstanceOf[js.Any])
+      inline def setSocketTimeout(value: Double): Self = StObject.set(x, "socketTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSocketTimeoutUndefined: Self = StObject.set(x, "socketTimeout", js.undefined)
+      inline def setSocketTimeoutUndefined: Self = StObject.set(x, "socketTimeout", js.undefined)
     }
   }
 }

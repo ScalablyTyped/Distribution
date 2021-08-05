@@ -16,22 +16,17 @@ trait SchemaSettingsChange extends StObject {
 }
 object SchemaSettingsChange {
   
-  @scala.inline
-  def apply(): SchemaSettingsChange = {
+  inline def apply(): SchemaSettingsChange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSettingsChange]
   }
   
-  @scala.inline
-  implicit class SchemaSettingsChangeMutableBuilder[Self <: SchemaSettingsChange] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSettingsChange](x: Self) {
     
-    @scala.inline
-    def setRestrictionChanges(value: js.Array[SchemaRestrictionChange]): Self = StObject.set(x, "restrictionChanges", value.asInstanceOf[js.Any])
+    inline def setRestrictionChanges(value: js.Array[SchemaRestrictionChange]): Self = StObject.set(x, "restrictionChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictionChangesUndefined: Self = StObject.set(x, "restrictionChanges", js.undefined)
+    inline def setRestrictionChangesUndefined: Self = StObject.set(x, "restrictionChanges", js.undefined)
     
-    @scala.inline
-    def setRestrictionChangesVarargs(value: SchemaRestrictionChange*): Self = StObject.set(x, "restrictionChanges", js.Array(value :_*))
+    inline def setRestrictionChangesVarargs(value: SchemaRestrictionChange*): Self = StObject.set(x, "restrictionChanges", js.Array(value :_*))
   }
 }

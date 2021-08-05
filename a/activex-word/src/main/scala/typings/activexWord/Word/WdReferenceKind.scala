@@ -35,42 +35,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdReferenceKind extends StObject
 object WdReferenceKind {
   
-  @scala.inline
-  def wdContentText: `-1` = -1.asInstanceOf[`-1`]
+  inline def wdContentText: `-1` = -1.asInstanceOf[`-1`]
   
-  @scala.inline
-  def wdEndnoteNumber: `6` = 6.asInstanceOf[`6`]
+  inline def wdEndnoteNumber: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def wdEndnoteNumberFormatted: `17` = 17.asInstanceOf[`17`]
+  inline def wdEndnoteNumberFormatted: `17` = 17.asInstanceOf[`17`]
   
-  @scala.inline
-  def wdEntireCaption: `2` = 2.asInstanceOf[`2`]
+  inline def wdEntireCaption: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdFootnoteNumber: `5` = 5.asInstanceOf[`5`]
+  inline def wdFootnoteNumber: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def wdFootnoteNumberFormatted: `16` = 16.asInstanceOf[`16`]
+  inline def wdFootnoteNumberFormatted: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def wdNumberFullContext: `-4` = -4.asInstanceOf[`-4`]
+  inline def wdNumberFullContext: `-4` = -4.asInstanceOf[`-4`]
   
-  @scala.inline
-  def wdNumberNoContext: `-3` = -3.asInstanceOf[`-3`]
+  inline def wdNumberNoContext: `-3` = -3.asInstanceOf[`-3`]
   
-  @scala.inline
-  def wdNumberRelativeContext: `-2` = -2.asInstanceOf[`-2`]
+  inline def wdNumberRelativeContext: `-2` = -2.asInstanceOf[`-2`]
   
-  @scala.inline
-  def wdOnlyCaptionText: `4` = 4.asInstanceOf[`4`]
+  inline def wdOnlyCaptionText: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def wdOnlyLabelAndNumber: `3` = 3.asInstanceOf[`3`]
+  inline def wdOnlyLabelAndNumber: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdPageNumber: `7` = 7.asInstanceOf[`7`]
+  inline def wdPageNumber: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def wdPosition: `15` = 15.asInstanceOf[`15`]
+  inline def wdPosition: `15` = 15.asInstanceOf[`15`]
 }

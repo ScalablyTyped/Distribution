@@ -224,7 +224,6 @@ object bufferGeometryMod {
     @JSImport("three/src/core/BufferGeometry", "BufferGeometry.MaxIndex")
     @js.native
     def MaxIndex: Double = js.native
-    @scala.inline
-    def MaxIndex_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MaxIndex")(x.asInstanceOf[js.Any])
+    inline def MaxIndex_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MaxIndex")(x.asInstanceOf[js.Any])
   }
 }

@@ -18,8 +18,7 @@ trait IFileReference
 }
 object IFileReference {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     character: Double,
     isResident: Boolean,
     length: Double,
@@ -31,19 +30,14 @@ object IFileReference {
     __obj.asInstanceOf[IFileReference]
   }
   
-  @scala.inline
-  implicit class IFileReferenceMutableBuilder[Self <: IFileReference] (val x: Self) extends AnyVal {
+  extension [Self <: IFileReference](x: Self) {
     
-    @scala.inline
-    def setIsResident(value: Boolean): Self = StObject.set(x, "isResident", value.asInstanceOf[js.Any])
+    inline def setIsResident(value: Boolean): Self = StObject.set(x, "isResident", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }
 }

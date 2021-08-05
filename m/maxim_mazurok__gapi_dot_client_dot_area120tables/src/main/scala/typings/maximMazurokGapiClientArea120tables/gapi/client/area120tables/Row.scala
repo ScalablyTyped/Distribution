@@ -19,29 +19,23 @@ trait Row extends StObject {
 }
 object Row {
   
-  @scala.inline
-  def apply(): Row = {
+  inline def apply(): Row = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Row]
   }
   
-  @scala.inline
-  implicit class RowMutableBuilder[Self <: Row] (val x: Self) extends AnyVal {
+  extension [Self <: Row](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setValues(
+    inline def setValues(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientArea120tables.maximMazurokGapiClientArea120tablesStrings.Row & TopLevel[js.Any]
     ): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
   }
 }

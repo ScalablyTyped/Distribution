@@ -48,8 +48,7 @@ trait CloudWatchAlarmConfiguration extends StObject {
 }
 object CloudWatchAlarmConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ComparisonOperator: ComparisonOperator,
     EvaluationPeriods: EvaluationPeriods,
     MetricName: MetricName,
@@ -62,37 +61,26 @@ object CloudWatchAlarmConfiguration {
     __obj.asInstanceOf[CloudWatchAlarmConfiguration]
   }
   
-  @scala.inline
-  implicit class CloudWatchAlarmConfigurationMutableBuilder[Self <: CloudWatchAlarmConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: CloudWatchAlarmConfiguration](x: Self) {
     
-    @scala.inline
-    def setComparisonOperator(value: ComparisonOperator): Self = StObject.set(x, "ComparisonOperator", value.asInstanceOf[js.Any])
+    inline def setComparisonOperator(value: ComparisonOperator): Self = StObject.set(x, "ComparisonOperator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensions(value: DimensionList): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: DimensionList): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
+    inline def setDimensionsUndefined: Self = StObject.set(x, "Dimensions", js.undefined)
     
-    @scala.inline
-    def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "Dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "Dimensions", js.Array(value :_*))
     
-    @scala.inline
-    def setEvaluationPeriods(value: EvaluationPeriods): Self = StObject.set(x, "EvaluationPeriods", value.asInstanceOf[js.Any])
+    inline def setEvaluationPeriods(value: EvaluationPeriods): Self = StObject.set(x, "EvaluationPeriods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPeriod(value: Period): Self = StObject.set(x, "Period", value.asInstanceOf[js.Any])
+    inline def setPeriod(value: Period): Self = StObject.set(x, "Period", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatistic(value: Statistic): Self = StObject.set(x, "Statistic", value.asInstanceOf[js.Any])
+    inline def setStatistic(value: Statistic): Self = StObject.set(x, "Statistic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThreshold(value: Threshold): Self = StObject.set(x, "Threshold", value.asInstanceOf[js.Any])
+    inline def setThreshold(value: Threshold): Self = StObject.set(x, "Threshold", value.asInstanceOf[js.Any])
   }
 }

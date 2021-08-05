@@ -28,25 +28,19 @@ trait TouchableNativeFeedbackProps
 }
 object TouchableNativeFeedbackProps {
   
-  @scala.inline
-  def apply(): TouchableNativeFeedbackProps = {
+  inline def apply(): TouchableNativeFeedbackProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TouchableNativeFeedbackProps]
   }
   
-  @scala.inline
-  implicit class TouchableNativeFeedbackPropsMutableBuilder[Self <: TouchableNativeFeedbackProps] (val x: Self) extends AnyVal {
+  extension [Self <: TouchableNativeFeedbackProps](x: Self) {
     
-    @scala.inline
-    def setBackground(value: BackgroundPropType): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: BackgroundPropType): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    @scala.inline
-    def setUseForeground(value: Boolean): Self = StObject.set(x, "useForeground", value.asInstanceOf[js.Any])
+    inline def setUseForeground(value: Boolean): Self = StObject.set(x, "useForeground", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseForegroundUndefined: Self = StObject.set(x, "useForeground", js.undefined)
+    inline def setUseForegroundUndefined: Self = StObject.set(x, "useForeground", js.undefined)
   }
 }

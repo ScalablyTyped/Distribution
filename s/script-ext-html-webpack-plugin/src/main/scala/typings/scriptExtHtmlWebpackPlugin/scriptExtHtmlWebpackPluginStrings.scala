@@ -8,26 +8,21 @@ object scriptExtHtmlWebpackPluginStrings {
   
   @js.native
   sealed trait all extends StObject
-  @scala.inline
-  def all: all = "all".asInstanceOf[all]
+  inline def all: all = "all".asInstanceOf[all]
   
   @js.native
   sealed trait async extends StObject
-  @scala.inline
-  def async: async = "async".asInstanceOf[async]
+  inline def async: async = "async".asInstanceOf[async]
   
   @js.native
   sealed trait defer extends StObject
-  @scala.inline
-  def defer: defer = "defer".asInstanceOf[defer]
+  inline def defer: defer = "defer".asInstanceOf[defer]
   
   @js.native
   sealed trait initial extends StObject
-  @scala.inline
-  def initial: initial = "initial".asInstanceOf[initial]
+  inline def initial: initial = "initial".asInstanceOf[initial]
   
   @js.native
   sealed trait sync extends StObject
-  @scala.inline
-  def sync: sync = "sync".asInstanceOf[sync]
+  inline def sync: sync = "sync".asInstanceOf[sync]
 }

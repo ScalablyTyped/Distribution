@@ -14,16 +14,13 @@ trait RequireModule extends StObject {
 }
 object RequireModule {
   
-  @scala.inline
-  def apply(config: () => js.Object): RequireModule = {
+  inline def apply(config: () => js.Object): RequireModule = {
     val __obj = js.Dynamic.literal(config = js.Any.fromFunction0(config))
     __obj.asInstanceOf[RequireModule]
   }
   
-  @scala.inline
-  implicit class RequireModuleMutableBuilder[Self <: RequireModule] (val x: Self) extends AnyVal {
+  extension [Self <: RequireModule](x: Self) {
     
-    @scala.inline
-    def setConfig(value: () => js.Object): Self = StObject.set(x, "config", js.Any.fromFunction0(value))
+    inline def setConfig(value: () => js.Object): Self = StObject.set(x, "config", js.Any.fromFunction0(value))
   }
 }

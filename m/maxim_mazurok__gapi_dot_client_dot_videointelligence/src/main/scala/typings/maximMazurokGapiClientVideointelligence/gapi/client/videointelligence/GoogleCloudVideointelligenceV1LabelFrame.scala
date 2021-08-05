@@ -14,25 +14,19 @@ trait GoogleCloudVideointelligenceV1LabelFrame extends StObject {
 }
 object GoogleCloudVideointelligenceV1LabelFrame {
   
-  @scala.inline
-  def apply(): GoogleCloudVideointelligenceV1LabelFrame = {
+  inline def apply(): GoogleCloudVideointelligenceV1LabelFrame = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1LabelFrame]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVideointelligenceV1LabelFrameMutableBuilder[Self <: GoogleCloudVideointelligenceV1LabelFrame] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVideointelligenceV1LabelFrame](x: Self) {
     
-    @scala.inline
-    def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "confidence", js.undefined)
     
-    @scala.inline
-    def setTimeOffset(value: String): Self = StObject.set(x, "timeOffset", value.asInstanceOf[js.Any])
+    inline def setTimeOffset(value: String): Self = StObject.set(x, "timeOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeOffsetUndefined: Self = StObject.set(x, "timeOffset", js.undefined)
+    inline def setTimeOffsetUndefined: Self = StObject.set(x, "timeOffset", js.undefined)
   }
 }

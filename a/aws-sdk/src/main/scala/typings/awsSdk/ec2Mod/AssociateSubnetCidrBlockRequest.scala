@@ -18,19 +18,15 @@ trait AssociateSubnetCidrBlockRequest extends StObject {
 }
 object AssociateSubnetCidrBlockRequest {
   
-  @scala.inline
-  def apply(Ipv6CidrBlock: String, SubnetId: SubnetId): AssociateSubnetCidrBlockRequest = {
+  inline def apply(Ipv6CidrBlock: String, SubnetId: SubnetId): AssociateSubnetCidrBlockRequest = {
     val __obj = js.Dynamic.literal(Ipv6CidrBlock = Ipv6CidrBlock.asInstanceOf[js.Any], SubnetId = SubnetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateSubnetCidrBlockRequest]
   }
   
-  @scala.inline
-  implicit class AssociateSubnetCidrBlockRequestMutableBuilder[Self <: AssociateSubnetCidrBlockRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateSubnetCidrBlockRequest](x: Self) {
     
-    @scala.inline
-    def setIpv6CidrBlock(value: String): Self = StObject.set(x, "Ipv6CidrBlock", value.asInstanceOf[js.Any])
+    inline def setIpv6CidrBlock(value: String): Self = StObject.set(x, "Ipv6CidrBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubnetId(value: SubnetId): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
+    inline def setSubnetId(value: SubnetId): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
   }
 }

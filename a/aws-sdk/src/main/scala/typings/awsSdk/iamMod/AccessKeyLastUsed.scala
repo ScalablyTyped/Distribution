@@ -23,22 +23,17 @@ trait AccessKeyLastUsed extends StObject {
 }
 object AccessKeyLastUsed {
   
-  @scala.inline
-  def apply(LastUsedDate: dateType, Region: stringType, ServiceName: stringType): AccessKeyLastUsed = {
+  inline def apply(LastUsedDate: dateType, Region: stringType, ServiceName: stringType): AccessKeyLastUsed = {
     val __obj = js.Dynamic.literal(LastUsedDate = LastUsedDate.asInstanceOf[js.Any], Region = Region.asInstanceOf[js.Any], ServiceName = ServiceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[AccessKeyLastUsed]
   }
   
-  @scala.inline
-  implicit class AccessKeyLastUsedMutableBuilder[Self <: AccessKeyLastUsed] (val x: Self) extends AnyVal {
+  extension [Self <: AccessKeyLastUsed](x: Self) {
     
-    @scala.inline
-    def setLastUsedDate(value: dateType): Self = StObject.set(x, "LastUsedDate", value.asInstanceOf[js.Any])
+    inline def setLastUsedDate(value: dateType): Self = StObject.set(x, "LastUsedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegion(value: stringType): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: stringType): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceName(value: stringType): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
+    inline def setServiceName(value: stringType): Self = StObject.set(x, "ServiceName", value.asInstanceOf[js.Any])
   }
 }

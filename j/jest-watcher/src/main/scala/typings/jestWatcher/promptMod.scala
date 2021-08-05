@@ -13,31 +13,31 @@ object promptMod {
     extends StObject
        with Prompt {
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _entering: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _offset: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _onCancel: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _onChange: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _onResize: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _onSuccess: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _promptLength: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _selection: js.Any = js.native
     
-    /* CompleteClass */
+    /* private */ /* CompleteClass */
     var _value: js.Any = js.native
     
     /* CompleteClass */
@@ -65,23 +65,23 @@ object promptMod {
   
   trait Prompt extends StObject {
     
-    var _entering: js.Any
+    /* private */ var _entering: js.Any
     
-    var _offset: js.Any
+    /* private */ var _offset: js.Any
     
-    var _onCancel: js.Any
+    /* private */ var _onCancel: js.Any
     
-    var _onChange: js.Any
+    /* private */ var _onChange: js.Any
     
-    var _onResize: js.Any
+    /* private */ var _onResize: js.Any
     
-    var _onSuccess: js.Any
+    /* private */ var _onSuccess: js.Any
     
-    var _promptLength: js.Any
+    /* private */ var _promptLength: js.Any
     
-    var _selection: js.Any
+    /* private */ var _selection: js.Any
     
-    var _value: js.Any
+    /* private */ var _value: js.Any
     
     def abort(): Unit
     
@@ -101,8 +101,7 @@ object promptMod {
   }
   object Prompt {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _entering: js.Any,
       _offset: js.Any,
       _onCancel: js.Any,
@@ -123,55 +122,39 @@ object promptMod {
       __obj.asInstanceOf[Prompt]
     }
     
-    @scala.inline
-    implicit class PromptMutableBuilder[Self <: Prompt] (val x: Self) extends AnyVal {
+    extension [Self <: Prompt](x: Self) {
       
-      @scala.inline
-      def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+      inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setEnter(
+      inline def setEnter(
         value: (js.Function2[/* pattern */ String, /* options */ ScrollOptions, Unit], js.Function1[/* pattern */ String, Unit], js.Function0[Unit]) => Unit
       ): Self = StObject.set(x, "enter", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setIsEntering(value: () => Boolean): Self = StObject.set(x, "isEntering", js.Any.fromFunction0(value))
+      inline def setIsEntering(value: () => Boolean): Self = StObject.set(x, "isEntering", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPut(value: String => Unit): Self = StObject.set(x, "put", js.Any.fromFunction1(value))
+      inline def setPut(value: String => Unit): Self = StObject.set(x, "put", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetPromptLength(value: Double => Unit): Self = StObject.set(x, "setPromptLength", js.Any.fromFunction1(value))
+      inline def setSetPromptLength(value: Double => Unit): Self = StObject.set(x, "setPromptLength", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetPromptSelection(value: String => Unit): Self = StObject.set(x, "setPromptSelection", js.Any.fromFunction1(value))
+      inline def setSetPromptSelection(value: String => Unit): Self = StObject.set(x, "setPromptSelection", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def set_entering(value: js.Any): Self = StObject.set(x, "_entering", value.asInstanceOf[js.Any])
+      inline def set_entering(value: js.Any): Self = StObject.set(x, "_entering", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_offset(value: js.Any): Self = StObject.set(x, "_offset", value.asInstanceOf[js.Any])
+      inline def set_offset(value: js.Any): Self = StObject.set(x, "_offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_onCancel(value: js.Any): Self = StObject.set(x, "_onCancel", value.asInstanceOf[js.Any])
+      inline def set_onCancel(value: js.Any): Self = StObject.set(x, "_onCancel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_onChange(value: js.Any): Self = StObject.set(x, "_onChange", value.asInstanceOf[js.Any])
+      inline def set_onChange(value: js.Any): Self = StObject.set(x, "_onChange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_onResize(value: js.Any): Self = StObject.set(x, "_onResize", value.asInstanceOf[js.Any])
+      inline def set_onResize(value: js.Any): Self = StObject.set(x, "_onResize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_onSuccess(value: js.Any): Self = StObject.set(x, "_onSuccess", value.asInstanceOf[js.Any])
+      inline def set_onSuccess(value: js.Any): Self = StObject.set(x, "_onSuccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_promptLength(value: js.Any): Self = StObject.set(x, "_promptLength", value.asInstanceOf[js.Any])
+      inline def set_promptLength(value: js.Any): Self = StObject.set(x, "_promptLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_selection(value: js.Any): Self = StObject.set(x, "_selection", value.asInstanceOf[js.Any])
+      inline def set_selection(value: js.Any): Self = StObject.set(x, "_selection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_value(value: js.Any): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
+      inline def set_value(value: js.Any): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
     }
   }
 }

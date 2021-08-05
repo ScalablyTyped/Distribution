@@ -20,25 +20,19 @@ trait TeamsCreateOrUpdateIdPGroupConnectionsInOrgRequestOptions extends StObject
 }
 object TeamsCreateOrUpdateIdPGroupConnectionsInOrgRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): TeamsCreateOrUpdateIdPGroupConnectionsInOrgRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): TeamsCreateOrUpdateIdPGroupConnectionsInOrgRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "PATCH", request = request.asInstanceOf[js.Any], url = "/orgs/:org/teams/:team_slug/team-sync/group-mappings")
     __obj.asInstanceOf[TeamsCreateOrUpdateIdPGroupConnectionsInOrgRequestOptions]
   }
   
-  @scala.inline
-  implicit class TeamsCreateOrUpdateIdPGroupConnectionsInOrgRequestOptionsMutableBuilder[Self <: TeamsCreateOrUpdateIdPGroupConnectionsInOrgRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TeamsCreateOrUpdateIdPGroupConnectionsInOrgRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: PATCH): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: PATCH): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: `SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteam-syncSlashgroup-mappings`): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: `SlashorgsSlashColonorgSlashteamsSlashColonteam_slugSlashteam-syncSlashgroup-mappings`): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

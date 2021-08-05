@@ -14,30 +14,22 @@ object tempMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(filePath: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(filePath.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def create(filePath: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(filePath.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @scala.inline
-    def get(filePath: String, creator: js.Function1[/* filePath */ String, String]): js.Tuple2[String, Disposer] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(filePath.asInstanceOf[js.Any], creator.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[String, Disposer]]
-    @scala.inline
-    def get(filePath: String, creator: js.Function1[/* filePath */ String, String], purge: Boolean): js.Tuple2[String, Disposer] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(filePath.asInstanceOf[js.Any], creator.asInstanceOf[js.Any], purge.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[String, Disposer]]
+    inline def get(filePath: String, creator: js.Function1[/* filePath */ String, String]): js.Tuple2[String, Disposer] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(filePath.asInstanceOf[js.Any], creator.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[String, Disposer]]
+    inline def get(filePath: String, creator: js.Function1[/* filePath */ String, String], purge: Boolean): js.Tuple2[String, Disposer] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(filePath.asInstanceOf[js.Any], creator.asInstanceOf[js.Any], purge.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[String, Disposer]]
     
-    @scala.inline
-    def purge(filePath: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("purge")(filePath.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def purge(filePath: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("purge")(filePath.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def purgeSync(filePath: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("purgeSync")(filePath.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def purgeSync(filePath: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("purgeSync")(filePath.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def purgeSyncAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("purgeSyncAll")().asInstanceOf[Unit]
+    inline def purgeSyncAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("purgeSyncAll")().asInstanceOf[Unit]
     
     @JSImport("atomically/dist/utils/temp", "default.store")
     @js.native
     def store: Record[String, Boolean] = js.native
-    @scala.inline
-    def store_=(x: Record[String, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("store")(x.asInstanceOf[js.Any])
+    inline def store_=(x: Record[String, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("store")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def truncate(filePath: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(filePath.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def truncate(filePath: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(filePath.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

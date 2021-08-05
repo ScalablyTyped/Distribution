@@ -39,8 +39,7 @@ trait MeasureShape
 }
 object MeasureShape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EndPosition: Point,
     GluePoints: XIndexContainer,
     Hyperlink: String,
@@ -131,13 +130,10 @@ object MeasureShape {
     __obj.asInstanceOf[MeasureShape]
   }
   
-  @scala.inline
-  implicit class MeasureShapeMutableBuilder[Self <: MeasureShape] (val x: Self) extends AnyVal {
+  extension [Self <: MeasureShape](x: Self) {
     
-    @scala.inline
-    def setEndPosition(value: Point): Self = StObject.set(x, "EndPosition", value.asInstanceOf[js.Any])
+    inline def setEndPosition(value: Point): Self = StObject.set(x, "EndPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartPosition(value: Point): Self = StObject.set(x, "StartPosition", value.asInstanceOf[js.Any])
+    inline def setStartPosition(value: Point): Self = StObject.set(x, "StartPosition", value.asInstanceOf[js.Any])
   }
 }

@@ -8,7 +8,7 @@ trait BootstrapSchedulerAppointmentDragInfo extends StObject {
   
   val appointmentId: String
   
-  val instance: js.Any
+  /* protected */ val instance: js.Any
   
   val newInterval: BootstrapTimeInterval | Null
   
@@ -16,31 +16,23 @@ trait BootstrapSchedulerAppointmentDragInfo extends StObject {
 }
 object BootstrapSchedulerAppointmentDragInfo {
   
-  @scala.inline
-  def apply(appointmentId: String, instance: js.Any): BootstrapSchedulerAppointmentDragInfo = {
+  inline def apply(appointmentId: String, instance: js.Any): BootstrapSchedulerAppointmentDragInfo = {
     val __obj = js.Dynamic.literal(appointmentId = appointmentId.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any], newInterval = null, oldInterval = null)
     __obj.asInstanceOf[BootstrapSchedulerAppointmentDragInfo]
   }
   
-  @scala.inline
-  implicit class BootstrapSchedulerAppointmentDragInfoMutableBuilder[Self <: BootstrapSchedulerAppointmentDragInfo] (val x: Self) extends AnyVal {
+  extension [Self <: BootstrapSchedulerAppointmentDragInfo](x: Self) {
     
-    @scala.inline
-    def setAppointmentId(value: String): Self = StObject.set(x, "appointmentId", value.asInstanceOf[js.Any])
+    inline def setAppointmentId(value: String): Self = StObject.set(x, "appointmentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewInterval(value: BootstrapTimeInterval): Self = StObject.set(x, "newInterval", value.asInstanceOf[js.Any])
+    inline def setNewInterval(value: BootstrapTimeInterval): Self = StObject.set(x, "newInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewIntervalNull: Self = StObject.set(x, "newInterval", null)
+    inline def setNewIntervalNull: Self = StObject.set(x, "newInterval", null)
     
-    @scala.inline
-    def setOldInterval(value: BootstrapTimeInterval): Self = StObject.set(x, "oldInterval", value.asInstanceOf[js.Any])
+    inline def setOldInterval(value: BootstrapTimeInterval): Self = StObject.set(x, "oldInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldIntervalNull: Self = StObject.set(x, "oldInterval", null)
+    inline def setOldIntervalNull: Self = StObject.set(x, "oldInterval", null)
   }
 }

@@ -34,44 +34,32 @@ trait CIMMarkerPlacementAtRatioPositions
 }
 object CIMMarkerPlacementAtRatioPositions {
   
-  @scala.inline
-  def apply(): CIMMarkerPlacementAtRatioPositions = {
+  inline def apply(): CIMMarkerPlacementAtRatioPositions = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMMarkerPlacementAtRatioPositions")
     __obj.asInstanceOf[CIMMarkerPlacementAtRatioPositions]
   }
   
-  @scala.inline
-  implicit class CIMMarkerPlacementAtRatioPositionsMutableBuilder[Self <: CIMMarkerPlacementAtRatioPositions] (val x: Self) extends AnyVal {
+  extension [Self <: CIMMarkerPlacementAtRatioPositions](x: Self) {
     
-    @scala.inline
-    def setBeginPosition(value: Double): Self = StObject.set(x, "beginPosition", value.asInstanceOf[js.Any])
+    inline def setBeginPosition(value: Double): Self = StObject.set(x, "beginPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeginPositionUndefined: Self = StObject.set(x, "beginPosition", js.undefined)
+    inline def setBeginPositionUndefined: Self = StObject.set(x, "beginPosition", js.undefined)
     
-    @scala.inline
-    def setEndPosition(value: Double): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
+    inline def setEndPosition(value: Double): Self = StObject.set(x, "endPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndPositionUndefined: Self = StObject.set(x, "endPosition", js.undefined)
+    inline def setEndPositionUndefined: Self = StObject.set(x, "endPosition", js.undefined)
     
-    @scala.inline
-    def setFlipFirst(value: Boolean): Self = StObject.set(x, "flipFirst", value.asInstanceOf[js.Any])
+    inline def setFlipFirst(value: Boolean): Self = StObject.set(x, "flipFirst", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlipFirstUndefined: Self = StObject.set(x, "flipFirst", js.undefined)
+    inline def setFlipFirstUndefined: Self = StObject.set(x, "flipFirst", js.undefined)
     
-    @scala.inline
-    def setPositionArray(value: js.Array[Double]): Self = StObject.set(x, "positionArray", value.asInstanceOf[js.Any])
+    inline def setPositionArray(value: js.Array[Double]): Self = StObject.set(x, "positionArray", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionArrayUndefined: Self = StObject.set(x, "positionArray", js.undefined)
+    inline def setPositionArrayUndefined: Self = StObject.set(x, "positionArray", js.undefined)
     
-    @scala.inline
-    def setPositionArrayVarargs(value: Double*): Self = StObject.set(x, "positionArray", js.Array(value :_*))
+    inline def setPositionArrayVarargs(value: Double*): Self = StObject.set(x, "positionArray", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAtRatioPositions): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAtRatioPositions): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -64,8 +64,7 @@ trait ASPxClientFilterControl
 }
 object ASPxClientFilterControl {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdjustControl: () => Unit,
     Applied: ASPxClientEvent[ASPxClientFilterAppliedEventHandler[ASPxClientFilterControl]],
     Apply: () => Unit,
@@ -96,37 +95,26 @@ object ASPxClientFilterControl {
     __obj.asInstanceOf[ASPxClientFilterControl]
   }
   
-  @scala.inline
-  implicit class ASPxClientFilterControlMutableBuilder[Self <: ASPxClientFilterControl] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientFilterControl](x: Self) {
     
-    @scala.inline
-    def setApplied(value: ASPxClientEvent[ASPxClientFilterAppliedEventHandler[ASPxClientFilterControl]]): Self = StObject.set(x, "Applied", value.asInstanceOf[js.Any])
+    inline def setApplied(value: ASPxClientEvent[ASPxClientFilterAppliedEventHandler[ASPxClientFilterControl]]): Self = StObject.set(x, "Applied", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApply(value: () => Unit): Self = StObject.set(x, "Apply", js.Any.fromFunction0(value))
+    inline def setApply(value: () => Unit): Self = StObject.set(x, "Apply", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setBeginCallback(value: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientFilterControl]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
+    inline def setBeginCallback(value: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientFilterControl]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackError(value: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientFilterControl]]): Self = StObject.set(x, "CallbackError", value.asInstanceOf[js.Any])
+    inline def setCallbackError(value: ASPxClientEvent[ASPxClientCallbackErrorEventHandler[ASPxClientFilterControl]]): Self = StObject.set(x, "CallbackError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndCallback(value: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientFilterControl]]): Self = StObject.set(x, "EndCallback", value.asInstanceOf[js.Any])
+    inline def setEndCallback(value: ASPxClientEvent[ASPxClientEndCallbackEventHandler[ASPxClientFilterControl]]): Self = StObject.set(x, "EndCallback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAppliedFilterExpression(value: () => String): Self = StObject.set(x, "GetAppliedFilterExpression", js.Any.fromFunction0(value))
+    inline def setGetAppliedFilterExpression(value: () => String): Self = StObject.set(x, "GetAppliedFilterExpression", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetEditor(value: Double => ASPxClientEditBase): Self = StObject.set(x, "GetEditor", js.Any.fromFunction1(value))
+    inline def setGetEditor(value: Double => ASPxClientEditBase): Self = StObject.set(x, "GetEditor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetFilterExpression(value: () => String): Self = StObject.set(x, "GetFilterExpression", js.Any.fromFunction0(value))
+    inline def setGetFilterExpression(value: () => String): Self = StObject.set(x, "GetFilterExpression", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsFilterExpressionValid(value: () => Boolean): Self = StObject.set(x, "IsFilterExpressionValid", js.Any.fromFunction0(value))
+    inline def setIsFilterExpressionValid(value: () => Boolean): Self = StObject.set(x, "IsFilterExpressionValid", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "Reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "Reset", js.Any.fromFunction0(value))
   }
 }

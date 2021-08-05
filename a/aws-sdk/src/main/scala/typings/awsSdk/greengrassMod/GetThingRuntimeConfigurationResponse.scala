@@ -13,19 +13,15 @@ trait GetThingRuntimeConfigurationResponse extends StObject {
 }
 object GetThingRuntimeConfigurationResponse {
   
-  @scala.inline
-  def apply(): GetThingRuntimeConfigurationResponse = {
+  inline def apply(): GetThingRuntimeConfigurationResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetThingRuntimeConfigurationResponse]
   }
   
-  @scala.inline
-  implicit class GetThingRuntimeConfigurationResponseMutableBuilder[Self <: GetThingRuntimeConfigurationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetThingRuntimeConfigurationResponse](x: Self) {
     
-    @scala.inline
-    def setRuntimeConfiguration(value: RuntimeConfiguration): Self = StObject.set(x, "RuntimeConfiguration", value.asInstanceOf[js.Any])
+    inline def setRuntimeConfiguration(value: RuntimeConfiguration): Self = StObject.set(x, "RuntimeConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuntimeConfigurationUndefined: Self = StObject.set(x, "RuntimeConfiguration", js.undefined)
+    inline def setRuntimeConfigurationUndefined: Self = StObject.set(x, "RuntimeConfiguration", js.undefined)
   }
 }

@@ -18,22 +18,17 @@ trait UpdateAppImageConfigRequest extends StObject {
 }
 object UpdateAppImageConfigRequest {
   
-  @scala.inline
-  def apply(AppImageConfigName: AppImageConfigName): UpdateAppImageConfigRequest = {
+  inline def apply(AppImageConfigName: AppImageConfigName): UpdateAppImageConfigRequest = {
     val __obj = js.Dynamic.literal(AppImageConfigName = AppImageConfigName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAppImageConfigRequest]
   }
   
-  @scala.inline
-  implicit class UpdateAppImageConfigRequestMutableBuilder[Self <: UpdateAppImageConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateAppImageConfigRequest](x: Self) {
     
-    @scala.inline
-    def setAppImageConfigName(value: AppImageConfigName): Self = StObject.set(x, "AppImageConfigName", value.asInstanceOf[js.Any])
+    inline def setAppImageConfigName(value: AppImageConfigName): Self = StObject.set(x, "AppImageConfigName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKernelGatewayImageConfig(value: KernelGatewayImageConfig): Self = StObject.set(x, "KernelGatewayImageConfig", value.asInstanceOf[js.Any])
+    inline def setKernelGatewayImageConfig(value: KernelGatewayImageConfig): Self = StObject.set(x, "KernelGatewayImageConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKernelGatewayImageConfigUndefined: Self = StObject.set(x, "KernelGatewayImageConfig", js.undefined)
+    inline def setKernelGatewayImageConfigUndefined: Self = StObject.set(x, "KernelGatewayImageConfig", js.undefined)
   }
 }

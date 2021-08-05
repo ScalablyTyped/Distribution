@@ -12,19 +12,15 @@ trait DefaultUndefined extends StObject {
 }
 object DefaultUndefined {
   
-  @scala.inline
-  def apply(default: Unit, describe: String): DefaultUndefined = {
+  inline def apply(default: Unit, describe: String): DefaultUndefined = {
     val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], describe = describe.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultUndefined]
   }
   
-  @scala.inline
-  implicit class DefaultUndefinedMutableBuilder[Self <: DefaultUndefined] (val x: Self) extends AnyVal {
+  extension [Self <: DefaultUndefined](x: Self) {
     
-    @scala.inline
-    def setDefault(value: Unit): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: Unit): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescribe(value: String): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
+    inline def setDescribe(value: String): Self = StObject.set(x, "describe", value.asInstanceOf[js.Any])
   }
 }

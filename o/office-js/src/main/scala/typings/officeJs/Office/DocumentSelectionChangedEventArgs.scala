@@ -21,20 +21,16 @@ trait DocumentSelectionChangedEventArgs extends StObject {
 }
 object DocumentSelectionChangedEventArgs {
   
-  @scala.inline
-  def apply(document: Document, `type`: EventType): DocumentSelectionChangedEventArgs = {
+  inline def apply(document: Document, `type`: EventType): DocumentSelectionChangedEventArgs = {
     val __obj = js.Dynamic.literal(document = document.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DocumentSelectionChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class DocumentSelectionChangedEventArgsMutableBuilder[Self <: DocumentSelectionChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentSelectionChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
+    inline def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: EventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: EventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

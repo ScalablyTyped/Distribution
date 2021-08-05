@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.ChartData")
 @js.native
-class ChartData protected ()
+/* private */ class ChartData ()
   extends StObject
      with typings.activexWord.Word.ChartData {
   
@@ -19,7 +19,7 @@ class ChartData protected ()
   /* CompleteClass */
   override val IsLinked: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.ChartData_typekey")
   var WordDotChartData_typekey: typings.activexWord.Word.ChartData = js.native
   

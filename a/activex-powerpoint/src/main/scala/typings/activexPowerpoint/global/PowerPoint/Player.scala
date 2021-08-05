@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.Player")
 @js.native
-class Player protected ()
+/* private */ class Player ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.Player {
   
@@ -32,7 +32,7 @@ class Player protected ()
   /* CompleteClass */
   override def Play(): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.Player_typekey")
   var PowerPointDotPlayer_typekey: typings.activexPowerpoint.PowerPoint.Player = js.native
   

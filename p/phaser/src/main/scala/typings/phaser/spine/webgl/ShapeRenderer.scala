@@ -14,16 +14,16 @@ trait ShapeRenderer
   
   def begin(shader: Shader): Unit = js.native
   
-  var check: js.Any = js.native
+  /* private */ var check: js.Any = js.native
   
   def circle(filled: Boolean, x: Double, y: Double, radius: Double): Unit = js.native
   def circle(filled: Boolean, x: Double, y: Double, radius: Double, color: Unit, segments: Double): Unit = js.native
   def circle(filled: Boolean, x: Double, y: Double, radius: Double, color: Color): Unit = js.native
   def circle(filled: Boolean, x: Double, y: Double, radius: Double, color: Color, segments: Double): Unit = js.native
   
-  var color: js.Any = js.native
+  /* private */ var color: js.Any = js.native
   
-  var context: js.Any = js.native
+  /* private */ var context: js.Any = js.native
   
   def curve(
     x1: Double,
@@ -49,18 +49,18 @@ trait ShapeRenderer
     color: Color
   ): Unit = js.native
   
-  var dstBlend: js.Any = js.native
+  /* private */ var dstBlend: js.Any = js.native
   
   def end(): Unit = js.native
   
-  var flush: js.Any = js.native
+  /* private */ var flush: js.Any = js.native
   
-  var isDrawing: js.Any = js.native
+  /* private */ var isDrawing: js.Any = js.native
   
   def line(x: Double, y: Double, x2: Double, y2: Double): Unit = js.native
   def line(x: Double, y: Double, x2: Double, y2: Double, color: Color): Unit = js.native
   
-  var mesh: js.Any = js.native
+  /* private */ var mesh: js.Any = js.native
   
   def point(x: Double, y: Double): Unit = js.native
   def point(x: Double, y: Double, color: Color): Unit = js.native
@@ -306,13 +306,13 @@ trait ShapeRenderer
   
   def setColorWith(r: Double, g: Double, b: Double, a: Double): Unit = js.native
   
-  var shader: js.Any = js.native
+  /* private */ var shader: js.Any = js.native
   
-  var shapeType: js.Any = js.native
+  /* private */ var shapeType: js.Any = js.native
   
-  var srcBlend: js.Any = js.native
+  /* private */ var srcBlend: js.Any = js.native
   
-  var tmp: js.Any = js.native
+  /* private */ var tmp: js.Any = js.native
   
   def triangle(filled: Boolean, x: Double, y: Double, x2: Double, y2: Double, x3: Double, y3: Double): Unit = js.native
   def triangle(
@@ -396,9 +396,9 @@ trait ShapeRenderer
     color3: Color
   ): Unit = js.native
   
-  var vertex: js.Any = js.native
+  /* private */ var vertex: js.Any = js.native
   
-  var vertexIndex: js.Any = js.native
+  /* private */ var vertexIndex: js.Any = js.native
   
   def x(x: Double, y: Double, size: Double): Unit = js.native
 }

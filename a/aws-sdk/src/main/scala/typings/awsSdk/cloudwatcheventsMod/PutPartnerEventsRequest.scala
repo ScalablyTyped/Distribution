@@ -13,19 +13,15 @@ trait PutPartnerEventsRequest extends StObject {
 }
 object PutPartnerEventsRequest {
   
-  @scala.inline
-  def apply(Entries: PutPartnerEventsRequestEntryList): PutPartnerEventsRequest = {
+  inline def apply(Entries: PutPartnerEventsRequestEntryList): PutPartnerEventsRequest = {
     val __obj = js.Dynamic.literal(Entries = Entries.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutPartnerEventsRequest]
   }
   
-  @scala.inline
-  implicit class PutPartnerEventsRequestMutableBuilder[Self <: PutPartnerEventsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutPartnerEventsRequest](x: Self) {
     
-    @scala.inline
-    def setEntries(value: PutPartnerEventsRequestEntryList): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: PutPartnerEventsRequestEntryList): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesVarargs(value: PutPartnerEventsRequestEntry*): Self = StObject.set(x, "Entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: PutPartnerEventsRequestEntry*): Self = StObject.set(x, "Entries", js.Array(value :_*))
   }
 }

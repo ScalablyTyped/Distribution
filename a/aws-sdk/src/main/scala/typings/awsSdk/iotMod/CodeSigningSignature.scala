@@ -13,19 +13,15 @@ trait CodeSigningSignature extends StObject {
 }
 object CodeSigningSignature {
   
-  @scala.inline
-  def apply(): CodeSigningSignature = {
+  inline def apply(): CodeSigningSignature = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CodeSigningSignature]
   }
   
-  @scala.inline
-  implicit class CodeSigningSignatureMutableBuilder[Self <: CodeSigningSignature] (val x: Self) extends AnyVal {
+  extension [Self <: CodeSigningSignature](x: Self) {
     
-    @scala.inline
-    def setInlineDocument(value: Signature): Self = StObject.set(x, "inlineDocument", value.asInstanceOf[js.Any])
+    inline def setInlineDocument(value: Signature): Self = StObject.set(x, "inlineDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInlineDocumentUndefined: Self = StObject.set(x, "inlineDocument", js.undefined)
+    inline def setInlineDocumentUndefined: Self = StObject.set(x, "inlineDocument", js.undefined)
   }
 }

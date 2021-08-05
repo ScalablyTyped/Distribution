@@ -33,26 +33,20 @@ object mod {
   }
   object Color {
     
-    @scala.inline
-    def apply(a: Double, b: Double, g: Double, r: Double): Color = {
+    inline def apply(a: Double, b: Double, g: Double, r: Double): Color = {
       val __obj = js.Dynamic.literal(a = a.asInstanceOf[js.Any], b = b.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
       __obj.asInstanceOf[Color]
     }
     
-    @scala.inline
-    implicit class ColorMutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
+    extension [Self <: Color](x: Self) {
       
-      @scala.inline
-      def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
+      inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
+      inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+      inline def setG(value: Double): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     }
   }
   
@@ -141,20 +135,16 @@ object mod {
   }
   object Size {
     
-    @scala.inline
-    def apply(height: Double, width: Double): Size = {
+    inline def apply(height: Double, width: Double): Size = {
       val __obj = js.Dynamic.literal(height = height.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[Size]
     }
     
-    @scala.inline
-    implicit class SizeMutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
+    extension [Self <: Size](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

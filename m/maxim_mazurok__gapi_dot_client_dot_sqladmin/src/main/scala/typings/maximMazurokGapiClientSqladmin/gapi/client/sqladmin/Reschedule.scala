@@ -14,25 +14,19 @@ trait Reschedule extends StObject {
 }
 object Reschedule {
   
-  @scala.inline
-  def apply(): Reschedule = {
+  inline def apply(): Reschedule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Reschedule]
   }
   
-  @scala.inline
-  implicit class RescheduleMutableBuilder[Self <: Reschedule] (val x: Self) extends AnyVal {
+  extension [Self <: Reschedule](x: Self) {
     
-    @scala.inline
-    def setRescheduleType(value: String): Self = StObject.set(x, "rescheduleType", value.asInstanceOf[js.Any])
+    inline def setRescheduleType(value: String): Self = StObject.set(x, "rescheduleType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRescheduleTypeUndefined: Self = StObject.set(x, "rescheduleType", js.undefined)
+    inline def setRescheduleTypeUndefined: Self = StObject.set(x, "rescheduleType", js.undefined)
     
-    @scala.inline
-    def setScheduleTime(value: String): Self = StObject.set(x, "scheduleTime", value.asInstanceOf[js.Any])
+    inline def setScheduleTime(value: String): Self = StObject.set(x, "scheduleTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleTimeUndefined: Self = StObject.set(x, "scheduleTime", js.undefined)
+    inline def setScheduleTimeUndefined: Self = StObject.set(x, "scheduleTime", js.undefined)
   }
 }

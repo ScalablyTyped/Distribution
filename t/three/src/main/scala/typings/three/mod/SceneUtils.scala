@@ -10,21 +10,18 @@ object SceneUtils {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def attach(
+  inline def attach(
     child: typings.three.object3DMod.Object3D,
     scene: typings.three.sceneMod.Scene,
     parent: typings.three.object3DMod.Object3D
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(child.asInstanceOf[js.Any], scene.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def createMultiMaterialObject(
+  inline def createMultiMaterialObject(
     geometry: typings.three.geometryMod.Geometry,
     materials: js.Array[typings.three.materialMod.Material]
   ): typings.three.object3DMod.Object3D = (^.asInstanceOf[js.Dynamic].applyDynamic("createMultiMaterialObject")(geometry.asInstanceOf[js.Any], materials.asInstanceOf[js.Any])).asInstanceOf[typings.three.object3DMod.Object3D]
   
-  @scala.inline
-  def detach(
+  inline def detach(
     child: typings.three.object3DMod.Object3D,
     parent: typings.three.object3DMod.Object3D,
     scene: typings.three.sceneMod.Scene

@@ -26,26 +26,20 @@ object mod {
   }
   object OptionsObject {
     
-    @scala.inline
-    def apply(): OptionsObject = {
+    inline def apply(): OptionsObject = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OptionsObject]
     }
     
-    @scala.inline
-    implicit class OptionsObjectMutableBuilder[Self <: OptionsObject] (val x: Self) extends AnyVal {
+    extension [Self <: OptionsObject](x: Self) {
       
-      @scala.inline
-      def setChars(value: String): Self = StObject.set(x, "chars", value.asInstanceOf[js.Any])
+      inline def setChars(value: String): Self = StObject.set(x, "chars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharsUndefined: Self = StObject.set(x, "chars", js.undefined)
+      inline def setCharsUndefined: Self = StObject.set(x, "chars", js.undefined)
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     }
   }
   

@@ -12,25 +12,19 @@ trait LangAccessibilitySonificationOptions extends StObject {
 }
 object LangAccessibilitySonificationOptions {
   
-  @scala.inline
-  def apply(): LangAccessibilitySonificationOptions = {
+  inline def apply(): LangAccessibilitySonificationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LangAccessibilitySonificationOptions]
   }
   
-  @scala.inline
-  implicit class LangAccessibilitySonificationOptionsMutableBuilder[Self <: LangAccessibilitySonificationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LangAccessibilitySonificationOptions](x: Self) {
     
-    @scala.inline
-    def setPlayAsSoundButtonText(value: String): Self = StObject.set(x, "playAsSoundButtonText", value.asInstanceOf[js.Any])
+    inline def setPlayAsSoundButtonText(value: String): Self = StObject.set(x, "playAsSoundButtonText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayAsSoundButtonTextUndefined: Self = StObject.set(x, "playAsSoundButtonText", js.undefined)
+    inline def setPlayAsSoundButtonTextUndefined: Self = StObject.set(x, "playAsSoundButtonText", js.undefined)
     
-    @scala.inline
-    def setPlayAsSoundClickAnnouncement(value: String): Self = StObject.set(x, "playAsSoundClickAnnouncement", value.asInstanceOf[js.Any])
+    inline def setPlayAsSoundClickAnnouncement(value: String): Self = StObject.set(x, "playAsSoundClickAnnouncement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayAsSoundClickAnnouncementUndefined: Self = StObject.set(x, "playAsSoundClickAnnouncement", js.undefined)
+    inline def setPlayAsSoundClickAnnouncementUndefined: Self = StObject.set(x, "playAsSoundClickAnnouncement", js.undefined)
   }
 }

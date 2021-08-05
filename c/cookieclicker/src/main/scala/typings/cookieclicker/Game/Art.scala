@@ -12,14 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Art extends StObject
 object Art {
   
-  @scala.inline
-  def BaseArt(base: String): typings.cookieclicker.Game.BaseArt = {
+  inline def BaseArt(base: String): typings.cookieclicker.Game.BaseArt = {
     val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.cookieclicker.Game.BaseArt]
   }
   
-  @scala.inline
-  def BaselessArt(
+  inline def BaselessArt(
     bg: String | (js.Function2[/* building */ GameObject, /* ctx */ CanvasRenderingContext2D, Unit]),
     pic: String | (js.Function2[/* building */ GameObject, /* i */ Double, String])
   ): typings.cookieclicker.Game.BaselessArt = {

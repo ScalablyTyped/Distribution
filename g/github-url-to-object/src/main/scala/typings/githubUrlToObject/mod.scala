@@ -7,14 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(url: String): Result | Null = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[Result | Null]
-  @scala.inline
-  def apply(url: String, options: Options): Result | Null = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result | Null]
-  @scala.inline
-  def apply(url: Url): Result | Null = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[Result | Null]
-  @scala.inline
-  def apply(url: Url, options: Options): Result | Null = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result | Null]
+  inline def apply(url: String): Result | Null = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[Result | Null]
+  inline def apply(url: String, options: Options): Result | Null = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result | Null]
+  inline def apply(url: Url): Result | Null = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[Result | Null]
+  inline def apply(url: Url, options: Options): Result | Null = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result | Null]
   
   @JSImport("github-url-to-object", JSImport.Namespace)
   @js.native
@@ -26,20 +22,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setEnterprise(value: Boolean): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
+      inline def setEnterprise(value: Boolean): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnterpriseUndefined: Self = StObject.set(x, "enterprise", js.undefined)
+      inline def setEnterpriseUndefined: Self = StObject.set(x, "enterprise", js.undefined)
     }
   }
   
@@ -65,8 +57,7 @@ object mod {
   }
   object Result {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       api_url: String,
       branch: String,
       clone_url: String,
@@ -81,35 +72,25 @@ object mod {
       __obj.asInstanceOf[Result]
     }
     
-    @scala.inline
-    implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+    extension [Self <: Result](x: Self) {
       
-      @scala.inline
-      def setApi_url(value: String): Self = StObject.set(x, "api_url", value.asInstanceOf[js.Any])
+      inline def setApi_url(value: String): Self = StObject.set(x, "api_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+      inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClone_url(value: String): Self = StObject.set(x, "clone_url", value.asInstanceOf[js.Any])
+      inline def setClone_url(value: String): Self = StObject.set(x, "clone_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttps_url(value: String): Self = StObject.set(x, "https_url", value.asInstanceOf[js.Any])
+      inline def setHttps_url(value: String): Self = StObject.set(x, "https_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+      inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTarball_url(value: String): Self = StObject.set(x, "tarball_url", value.asInstanceOf[js.Any])
+      inline def setTarball_url(value: String): Self = StObject.set(x, "tarball_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTravis_url(value: String): Self = StObject.set(x, "travis_url", value.asInstanceOf[js.Any])
+      inline def setTravis_url(value: String): Self = StObject.set(x, "travis_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZip_url(value: String): Self = StObject.set(x, "zip_url", value.asInstanceOf[js.Any])
+      inline def setZip_url(value: String): Self = StObject.set(x, "zip_url", value.asInstanceOf[js.Any])
     }
   }
 }

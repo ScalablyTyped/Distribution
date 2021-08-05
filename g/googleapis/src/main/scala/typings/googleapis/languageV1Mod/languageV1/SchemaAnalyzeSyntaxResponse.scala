@@ -28,37 +28,27 @@ trait SchemaAnalyzeSyntaxResponse extends StObject {
 }
 object SchemaAnalyzeSyntaxResponse {
   
-  @scala.inline
-  def apply(): SchemaAnalyzeSyntaxResponse = {
+  inline def apply(): SchemaAnalyzeSyntaxResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAnalyzeSyntaxResponse]
   }
   
-  @scala.inline
-  implicit class SchemaAnalyzeSyntaxResponseMutableBuilder[Self <: SchemaAnalyzeSyntaxResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAnalyzeSyntaxResponse](x: Self) {
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setSentences(value: js.Array[SchemaSentence]): Self = StObject.set(x, "sentences", value.asInstanceOf[js.Any])
+    inline def setSentences(value: js.Array[SchemaSentence]): Self = StObject.set(x, "sentences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentencesUndefined: Self = StObject.set(x, "sentences", js.undefined)
+    inline def setSentencesUndefined: Self = StObject.set(x, "sentences", js.undefined)
     
-    @scala.inline
-    def setSentencesVarargs(value: SchemaSentence*): Self = StObject.set(x, "sentences", js.Array(value :_*))
+    inline def setSentencesVarargs(value: SchemaSentence*): Self = StObject.set(x, "sentences", js.Array(value :_*))
     
-    @scala.inline
-    def setTokens(value: js.Array[SchemaToken]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+    inline def setTokens(value: js.Array[SchemaToken]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
+    inline def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
     
-    @scala.inline
-    def setTokensVarargs(value: SchemaToken*): Self = StObject.set(x, "tokens", js.Array(value :_*))
+    inline def setTokensVarargs(value: SchemaToken*): Self = StObject.set(x, "tokens", js.Array(value :_*))
   }
 }

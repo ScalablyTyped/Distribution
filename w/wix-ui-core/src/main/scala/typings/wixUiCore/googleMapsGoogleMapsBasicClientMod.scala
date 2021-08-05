@@ -13,15 +13,15 @@ object googleMapsGoogleMapsBasicClientMod {
   @js.native
   class GoogleMapsBasicClient () extends StObject {
     
-    var _autocomplete: js.Any = js.native
+    /* private */ var _autocomplete: js.Any = js.native
     
-    var _geocoder: js.Any = js.native
+    /* private */ var _geocoder: js.Any = js.native
     
     def _initServices(): Unit = js.native
     
-    var _loadScriptPromise: js.Any = js.native
+    /* private */ var _loadScriptPromise: js.Any = js.native
     
-    var _useClientId: js.Any = js.native
+    /* private */ var _useClientId: js.Any = js.native
     
     def autocomplete(clientId: String, lang: String, request: js.Any): js.Promise[js.Array[Address]] = js.native
     

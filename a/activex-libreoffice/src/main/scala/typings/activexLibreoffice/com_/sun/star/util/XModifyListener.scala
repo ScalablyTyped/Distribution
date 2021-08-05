@@ -23,8 +23,7 @@ trait XModifyListener
 }
 object XModifyListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     disposing: EventObject => Unit,
     modified: EventObject => Unit,
@@ -35,10 +34,8 @@ object XModifyListener {
     __obj.asInstanceOf[XModifyListener]
   }
   
-  @scala.inline
-  implicit class XModifyListenerMutableBuilder[Self <: XModifyListener] (val x: Self) extends AnyVal {
+  extension [Self <: XModifyListener](x: Self) {
     
-    @scala.inline
-    def setModified(value: EventObject => Unit): Self = StObject.set(x, "modified", js.Any.fromFunction1(value))
+    inline def setModified(value: EventObject => Unit): Self = StObject.set(x, "modified", js.Any.fromFunction1(value))
   }
 }

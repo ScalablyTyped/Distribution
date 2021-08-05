@@ -11,22 +11,17 @@ trait InstanceGroupManagersDeletePerInstanceConfigsReq extends StObject {
 }
 object InstanceGroupManagersDeletePerInstanceConfigsReq {
   
-  @scala.inline
-  def apply(): InstanceGroupManagersDeletePerInstanceConfigsReq = {
+  inline def apply(): InstanceGroupManagersDeletePerInstanceConfigsReq = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceGroupManagersDeletePerInstanceConfigsReq]
   }
   
-  @scala.inline
-  implicit class InstanceGroupManagersDeletePerInstanceConfigsReqMutableBuilder[Self <: InstanceGroupManagersDeletePerInstanceConfigsReq] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceGroupManagersDeletePerInstanceConfigsReq](x: Self) {
     
-    @scala.inline
-    def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+    inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
+    inline def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
     
-    @scala.inline
-    def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+    inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
   }
 }

@@ -21,8 +21,7 @@ trait LockScreenActivatedEventArgs extends StObject {
 }
 object LockScreenActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     info: js.Any,
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,
@@ -32,19 +31,14 @@ object LockScreenActivatedEventArgs {
     __obj.asInstanceOf[LockScreenActivatedEventArgs]
   }
   
-  @scala.inline
-  implicit class LockScreenActivatedEventArgsMutableBuilder[Self <: LockScreenActivatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: LockScreenActivatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setInfo(value: js.Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+    inline def setInfo(value: js.Any): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
+    inline def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
+    inline def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
   }
 }

@@ -22,17 +22,14 @@ object typesCommentContentSizeLimitExceededExceptionMod {
   }
   object CommentContentSizeLimitExceededException {
     
-    @scala.inline
-    def apply(): CommentContentSizeLimitExceededException = {
+    inline def apply(): CommentContentSizeLimitExceededException = {
       val __obj = js.Dynamic.literal(name = "CommentContentSizeLimitExceededException")
       __obj.asInstanceOf[CommentContentSizeLimitExceededException]
     }
     
-    @scala.inline
-    implicit class CommentContentSizeLimitExceededExceptionMutableBuilder[Self <: CommentContentSizeLimitExceededException] (val x: Self) extends AnyVal {
+    extension [Self <: CommentContentSizeLimitExceededException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommentContentSizeLimitExceededException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

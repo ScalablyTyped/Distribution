@@ -16,25 +16,19 @@ trait CallbackFn extends StObject {
 }
 object CallbackFn {
   
-  @scala.inline
-  def apply(): CallbackFn = {
+  inline def apply(): CallbackFn = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CallbackFn]
   }
   
-  @scala.inline
-  implicit class CallbackFnMutableBuilder[Self <: CallbackFn] (val x: Self) extends AnyVal {
+  extension [Self <: CallbackFn](x: Self) {
     
-    @scala.inline
-    def setCallbackFn(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "callbackFn", js.Any.fromFunction1(value))
+    inline def setCallbackFn(value: MouseEvent[HTMLButtonElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "callbackFn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setCallbackFnUndefined: Self = StObject.set(x, "callbackFn", js.undefined)
+    inline def setCallbackFnUndefined: Self = StObject.set(x, "callbackFn", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

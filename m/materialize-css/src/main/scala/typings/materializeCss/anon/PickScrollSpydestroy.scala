@@ -11,19 +11,15 @@ trait PickScrollSpydestroy extends StObject {
 }
 object PickScrollSpydestroy {
   
-  @scala.inline
-  def apply(): PickScrollSpydestroy = {
+  inline def apply(): PickScrollSpydestroy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PickScrollSpydestroy]
   }
   
-  @scala.inline
-  implicit class PickScrollSpydestroyMutableBuilder[Self <: PickScrollSpydestroy] (val x: Self) extends AnyVal {
+  extension [Self <: PickScrollSpydestroy](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: js.Any): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
+    inline def setDestroy(value: js.Any): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+    inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
   }
 }

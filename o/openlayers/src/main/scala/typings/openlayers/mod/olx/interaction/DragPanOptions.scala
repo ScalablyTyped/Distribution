@@ -15,25 +15,19 @@ trait DragPanOptions extends StObject {
 }
 object DragPanOptions {
   
-  @scala.inline
-  def apply(): DragPanOptions = {
+  inline def apply(): DragPanOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DragPanOptions]
   }
   
-  @scala.inline
-  implicit class DragPanOptionsMutableBuilder[Self <: DragPanOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DragPanOptions](x: Self) {
     
-    @scala.inline
-    def setCondition(value: /* event */ MapBrowserEvent => Boolean): Self = StObject.set(x, "condition", js.Any.fromFunction1(value))
+    inline def setCondition(value: /* event */ MapBrowserEvent => Boolean): Self = StObject.set(x, "condition", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
     
-    @scala.inline
-    def setKinetic(value: Kinetic): Self = StObject.set(x, "kinetic", value.asInstanceOf[js.Any])
+    inline def setKinetic(value: Kinetic): Self = StObject.set(x, "kinetic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKineticUndefined: Self = StObject.set(x, "kinetic", js.undefined)
+    inline def setKineticUndefined: Self = StObject.set(x, "kinetic", js.undefined)
   }
 }

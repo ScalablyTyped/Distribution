@@ -82,19 +82,19 @@ object baseMod {
     extends typings.antvComponent.groupComponentMod.default[T]
        with IList {
     
-    var applyTickStates: js.Any = js.native
+    /* private */ var applyTickStates: js.Any = js.native
     
-    var drawLabels: js.Any = js.native
+    /* private */ var drawLabels: js.Any = js.native
     
-    var drawLine: js.Any = js.native
+    /* private */ var drawLine: js.Any = js.native
     
-    var drawTick: js.Any = js.native
+    /* private */ var drawTick: js.Any = js.native
     
-    var drawTickLines: js.Any = js.native
+    /* private */ var drawTickLines: js.Any = js.native
     
-    var drawTicks: js.Any = js.native
+    /* private */ var drawTicks: js.Any = js.native
     
-    var drawTitle: js.Any = js.native
+    /* private */ var drawTitle: js.Any = js.native
     
     /**
       * 获取坐标轴的向量
@@ -115,7 +115,7 @@ object baseMod {
       */
     def getItemsByState(state: String): js.Array[ListItem] = js.native
     
-    var getLabelAttrs: js.Any = js.native
+    /* private */ var getLabelAttrs: js.Any = js.native
     
     /**
       * @protected
@@ -132,15 +132,15 @@ object baseMod {
       */
     /* protected */ def getSideVector(offset: Double, point: Point): js.Any = js.native
     
-    var getSubTickLineItems: js.Any = js.native
+    /* private */ var getSubTickLineItems: js.Any = js.native
     
     /* protected */ def getTextAnchor(vector: js.Array[Double]): String = js.native
     
     /* protected */ def getTextBaseline(vector: js.Array[Double]): String = js.native
     
-    var getTickLineAttrs: js.Any = js.native
+    /* private */ var getTickLineAttrs: js.Any = js.native
     
-    var getTickLineItems: js.Any = js.native
+    /* private */ var getTickLineItems: js.Any = js.native
     
     /**
       * 根据 tick.value 获取坐标轴上对应的点
@@ -149,7 +149,7 @@ object baseMod {
       */
     /* protected */ def getTickPoint(tickValue: Double): Point = js.native
     
-    var getTitleAttrs: js.Any = js.native
+    /* private */ var getTitleAttrs: js.Any = js.native
     
     /**
       * 取消监听一个事件，或者一个channel
@@ -178,8 +178,8 @@ object baseMod {
     
     /* protected */ def processOverlap(labelGroup: js.Any): Unit = js.native
     
-    var processTicks: js.Any = js.native
+    /* private */ var processTicks: js.Any = js.native
     
-    var updateTickStates: js.Any = js.native
+    /* private */ var updateTickStates: js.Any = js.native
   }
 }

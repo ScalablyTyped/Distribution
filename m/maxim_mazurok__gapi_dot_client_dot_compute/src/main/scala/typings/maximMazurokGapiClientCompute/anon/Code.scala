@@ -20,34 +20,25 @@ trait Code extends StObject {
 }
 object Code {
   
-  @scala.inline
-  def apply(): Code = {
+  inline def apply(): Code = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Code]
   }
   
-  @scala.inline
-  implicit class CodeMutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
+  extension [Self <: Code](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
     
-    @scala.inline
-    def setData(value: js.Array[Key]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[Key]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDataVarargs(value: Key*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: Key*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
   }
 }

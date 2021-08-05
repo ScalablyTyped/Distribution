@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EdgeCookiePolicy extends StObject
 object EdgeCookiePolicy {
   
-  @scala.inline
-  def allow: typings.microsoftGraph.microsoftGraphStrings.allow = "allow".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allow]
+  inline def allow: typings.microsoftGraph.microsoftGraphStrings.allow = "allow".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.allow]
   
-  @scala.inline
-  def blockAll: typings.microsoftGraph.microsoftGraphStrings.blockAll = "blockAll".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.blockAll]
+  inline def blockAll: typings.microsoftGraph.microsoftGraphStrings.blockAll = "blockAll".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.blockAll]
   
-  @scala.inline
-  def blockThirdParty: typings.microsoftGraph.microsoftGraphStrings.blockThirdParty = "blockThirdParty".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.blockThirdParty]
+  inline def blockThirdParty: typings.microsoftGraph.microsoftGraphStrings.blockThirdParty = "blockThirdParty".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.blockThirdParty]
   
-  @scala.inline
-  def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userDefined]
+  inline def userDefined: typings.microsoftGraph.microsoftGraphStrings.userDefined = "userDefined".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.userDefined]
 }

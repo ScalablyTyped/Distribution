@@ -10,16 +10,13 @@ trait Charset extends StObject {
 }
 object Charset {
   
-  @scala.inline
-  def apply(charset: String): Charset = {
+  inline def apply(charset: String): Charset = {
     val __obj = js.Dynamic.literal(charset = charset.asInstanceOf[js.Any])
     __obj.asInstanceOf[Charset]
   }
   
-  @scala.inline
-  implicit class CharsetMutableBuilder[Self <: Charset] (val x: Self) extends AnyVal {
+  extension [Self <: Charset](x: Self) {
     
-    @scala.inline
-    def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
+    inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
   }
 }

@@ -16,17 +16,14 @@ trait ThematicBreak
 }
 object ThematicBreak {
   
-  @scala.inline
-  def apply(): ThematicBreak = {
+  inline def apply(): ThematicBreak = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("thematicBreak")
     __obj.asInstanceOf[ThematicBreak]
   }
   
-  @scala.inline
-  implicit class ThematicBreakMutableBuilder[Self <: ThematicBreak] (val x: Self) extends AnyVal {
+  extension [Self <: ThematicBreak](x: Self) {
     
-    @scala.inline
-    def setType(value: thematicBreak): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: thematicBreak): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -22,31 +22,23 @@ trait ObjectOrderFixed extends StObject {
 }
 object ObjectOrderFixed {
   
-  @scala.inline
-  def apply(): ObjectOrderFixed = {
+  inline def apply(): ObjectOrderFixed = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObjectOrderFixed]
   }
   
-  @scala.inline
-  implicit class ObjectOrderFixedMutableBuilder[Self <: ObjectOrderFixed] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectOrderFixed](x: Self) {
     
-    @scala.inline
-    def setPost(value: js.Array[js.Any]): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
+    inline def setPost(value: js.Array[js.Any]): Self = StObject.set(x, "post", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
+    inline def setPostUndefined: Self = StObject.set(x, "post", js.undefined)
     
-    @scala.inline
-    def setPostVarargs(value: js.Any*): Self = StObject.set(x, "post", js.Array(value :_*))
+    inline def setPostVarargs(value: js.Any*): Self = StObject.set(x, "post", js.Array(value :_*))
     
-    @scala.inline
-    def setPre(value: js.Array[js.Any]): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
+    inline def setPre(value: js.Array[js.Any]): Self = StObject.set(x, "pre", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
+    inline def setPreUndefined: Self = StObject.set(x, "pre", js.undefined)
     
-    @scala.inline
-    def setPreVarargs(value: js.Any*): Self = StObject.set(x, "pre", js.Array(value :_*))
+    inline def setPreVarargs(value: js.Any*): Self = StObject.set(x, "pre", js.Array(value :_*))
   }
 }

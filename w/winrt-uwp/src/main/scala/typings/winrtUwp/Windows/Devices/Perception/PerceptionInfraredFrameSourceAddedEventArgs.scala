@@ -12,16 +12,13 @@ trait PerceptionInfraredFrameSourceAddedEventArgs extends StObject {
 }
 object PerceptionInfraredFrameSourceAddedEventArgs {
   
-  @scala.inline
-  def apply(frameSource: PerceptionInfraredFrameSource): PerceptionInfraredFrameSourceAddedEventArgs = {
+  inline def apply(frameSource: PerceptionInfraredFrameSource): PerceptionInfraredFrameSourceAddedEventArgs = {
     val __obj = js.Dynamic.literal(frameSource = frameSource.asInstanceOf[js.Any])
     __obj.asInstanceOf[PerceptionInfraredFrameSourceAddedEventArgs]
   }
   
-  @scala.inline
-  implicit class PerceptionInfraredFrameSourceAddedEventArgsMutableBuilder[Self <: PerceptionInfraredFrameSourceAddedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: PerceptionInfraredFrameSourceAddedEventArgs](x: Self) {
     
-    @scala.inline
-    def setFrameSource(value: PerceptionInfraredFrameSource): Self = StObject.set(x, "frameSource", value.asInstanceOf[js.Any])
+    inline def setFrameSource(value: PerceptionInfraredFrameSource): Self = StObject.set(x, "frameSource", value.asInstanceOf[js.Any])
   }
 }

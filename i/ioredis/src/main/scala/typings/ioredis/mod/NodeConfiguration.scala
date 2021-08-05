@@ -12,25 +12,19 @@ trait NodeConfiguration extends StObject {
 }
 object NodeConfiguration {
   
-  @scala.inline
-  def apply(): NodeConfiguration = {
+  inline def apply(): NodeConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NodeConfiguration]
   }
   
-  @scala.inline
-  implicit class NodeConfigurationMutableBuilder[Self <: NodeConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: NodeConfiguration](x: Self) {
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
   }
 }

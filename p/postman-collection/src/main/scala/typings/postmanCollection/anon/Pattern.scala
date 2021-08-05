@@ -10,16 +10,13 @@ trait Pattern extends StObject {
 }
 object Pattern {
   
-  @scala.inline
-  def apply(pattern: String): Pattern = {
+  inline def apply(pattern: String): Pattern = {
     val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any])
     __obj.asInstanceOf[Pattern]
   }
   
-  @scala.inline
-  implicit class PatternMutableBuilder[Self <: Pattern] (val x: Self) extends AnyVal {
+  extension [Self <: Pattern](x: Self) {
     
-    @scala.inline
-    def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
   }
 }

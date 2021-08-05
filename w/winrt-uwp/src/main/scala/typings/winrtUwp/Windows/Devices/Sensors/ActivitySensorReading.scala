@@ -19,22 +19,17 @@ trait ActivitySensorReading extends StObject {
 }
 object ActivitySensorReading {
   
-  @scala.inline
-  def apply(activity: ActivityType, confidence: ActivitySensorReadingConfidence, timestamp: Date): ActivitySensorReading = {
+  inline def apply(activity: ActivityType, confidence: ActivitySensorReadingConfidence, timestamp: Date): ActivitySensorReading = {
     val __obj = js.Dynamic.literal(activity = activity.asInstanceOf[js.Any], confidence = confidence.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActivitySensorReading]
   }
   
-  @scala.inline
-  implicit class ActivitySensorReadingMutableBuilder[Self <: ActivitySensorReading] (val x: Self) extends AnyVal {
+  extension [Self <: ActivitySensorReading](x: Self) {
     
-    @scala.inline
-    def setActivity(value: ActivityType): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
+    inline def setActivity(value: ActivityType): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidence(value: ActivitySensorReadingConfidence): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: ActivitySensorReadingConfidence): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: Date): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

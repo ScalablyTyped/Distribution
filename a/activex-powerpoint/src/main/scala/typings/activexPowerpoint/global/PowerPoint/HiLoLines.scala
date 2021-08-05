@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.HiLoLines")
 @js.native
-class HiLoLines protected ()
+/* private */ class HiLoLines ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.HiLoLines {
   
@@ -31,7 +31,7 @@ class HiLoLines protected ()
   /* CompleteClass */
   override val Parent: js.Any = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.HiLoLines_typekey")
   var PowerPointDotHiLoLines_typekey: typings.activexPowerpoint.PowerPoint.HiLoLines = js.native
   

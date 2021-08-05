@@ -12,16 +12,13 @@ trait KnockoutValidationRuleDefinition
 }
 object KnockoutValidationRuleDefinition {
   
-  @scala.inline
-  def apply(message: String | KnockoutValidationMessageFunction, validator: (js.Any, js.Any) => Boolean): KnockoutValidationRuleDefinition = {
+  inline def apply(message: String | KnockoutValidationMessageFunction, validator: (js.Any, js.Any) => Boolean): KnockoutValidationRuleDefinition = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], validator = js.Any.fromFunction2(validator))
     __obj.asInstanceOf[KnockoutValidationRuleDefinition]
   }
   
-  @scala.inline
-  implicit class KnockoutValidationRuleDefinitionMutableBuilder[Self <: KnockoutValidationRuleDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutValidationRuleDefinition](x: Self) {
     
-    @scala.inline
-    def setValidator(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "validator", js.Any.fromFunction2(value))
+    inline def setValidator(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "validator", js.Any.fromFunction2(value))
   }
 }

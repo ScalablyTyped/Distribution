@@ -20,8 +20,7 @@ object mod {
   @JSImport("kos-core", JSImport.Default)
   @js.native
   def default: Kos = js.native
-  @scala.inline
-  def default_=(x: Kos): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: Kos): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   trait Action[T] extends StObject {
     
@@ -31,24 +30,19 @@ object mod {
   }
   object Action {
     
-    @scala.inline
-    def apply[T](`type`: String): Action[T] = {
+    inline def apply[T](`type`: String): Action[T] = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Action[T]]
     }
     
-    @scala.inline
-    implicit class ActionMutableBuilder[Self <: Action[?], T] (val x: Self & Action[T]) extends AnyVal {
+    extension [Self <: Action[?], T](x: Self & Action[T]) {
       
-      @scala.inline
-      def setPayload(value: Partial[T] & StringDictionary[js.Any]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      inline def setPayload(value: Partial[T] & StringDictionary[js.Any]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
+      inline def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -110,8 +104,7 @@ object mod {
   }
   object KosModel {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       asyncs: StringDictionary[
           js.Function3[
             /* dispatch */ js.UndefOr[KosDispatch], 
@@ -128,11 +121,9 @@ object mod {
       __obj.asInstanceOf[KosModel[T]]
     }
     
-    @scala.inline
-    implicit class KosModelMutableBuilder[Self <: KosModel[?], T] (val x: Self & KosModel[T]) extends AnyVal {
+    extension [Self <: KosModel[?], T](x: Self & KosModel[T]) {
       
-      @scala.inline
-      def setAsyncs(
+      inline def setAsyncs(
         value: StringDictionary[
               js.Function3[
                 /* dispatch */ js.UndefOr[KosDispatch], 
@@ -143,30 +134,23 @@ object mod {
             ]
       ): Self = StObject.set(x, "asyncs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetAsync(
+      inline def setGetAsync(
         value: /* key */ String => js.Function2[/* dispatch */ KosDispatch, /* getState */ js.UndefOr[GetKosState[js.Any]], Unit]
       ): Self = StObject.set(x, "getAsync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetAsyncUndefined: Self = StObject.set(x, "getAsync", js.undefined)
+      inline def setGetAsyncUndefined: Self = StObject.set(x, "getAsync", js.undefined)
       
-      @scala.inline
-      def setInitial(value: T): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
+      inline def setInitial(value: T): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReducers(value: StringDictionary[js.Function2[/* state */ T, /* hasPayload */ Payload[T], Unit]]): Self = StObject.set(x, "reducers", value.asInstanceOf[js.Any])
+      inline def setReducers(value: StringDictionary[js.Function2[/* state */ T, /* hasPayload */ Payload[T], Unit]]): Self = StObject.set(x, "reducers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetup(
+      inline def setSetup(
         value: (/* dispatch */ KosDispatch, /* getState */ GetKosState[T], /* action */ PayloadParam) => Unit
       ): Self = StObject.set(x, "setup", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setSetupUndefined: Self = StObject.set(x, "setup", js.undefined)
+      inline def setSetupUndefined: Self = StObject.set(x, "setup", js.undefined)
     }
   }
   
@@ -180,32 +164,24 @@ object mod {
   }
   object KosProps {
     
-    @scala.inline
-    def apply[T](): KosProps[T] = {
+    inline def apply[T](): KosProps[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KosProps[T]]
     }
     
-    @scala.inline
-    implicit class KosPropsMutableBuilder[Self <: KosProps[?], T] (val x: Self & KosProps[T]) extends AnyVal {
+    extension [Self <: KosProps[?], T](x: Self & KosProps[T]) {
       
-      @scala.inline
-      def setDispatch(value: /* action */ Action[T] => Unit): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
+      inline def setDispatch(value: /* action */ Action[T] => Unit): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDispatchUndefined: Self = StObject.set(x, "dispatch", js.undefined)
+      inline def setDispatchUndefined: Self = StObject.set(x, "dispatch", js.undefined)
       
-      @scala.inline
-      def setGetNamespace(value: () => String): Self = StObject.set(x, "getNamespace", js.Any.fromFunction0(value))
+      inline def setGetNamespace(value: () => String): Self = StObject.set(x, "getNamespace", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetNamespaceUndefined: Self = StObject.set(x, "getNamespace", js.undefined)
+      inline def setGetNamespaceUndefined: Self = StObject.set(x, "getNamespace", js.undefined)
       
-      @scala.inline
-      def setGetParam(value: () => js.Any): Self = StObject.set(x, "getParam", js.Any.fromFunction0(value))
+      inline def setGetParam(value: () => js.Any): Self = StObject.set(x, "getParam", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetParamUndefined: Self = StObject.set(x, "getParam", js.undefined)
+      inline def setGetParamUndefined: Self = StObject.set(x, "getParam", js.undefined)
     }
   }
   
@@ -219,20 +195,16 @@ object mod {
   }
   object Util {
     
-    @scala.inline
-    def apply(getActionType: String => Namespace, getParam: () => js.Any): Util = {
+    inline def apply(getActionType: String => Namespace, getParam: () => js.Any): Util = {
       val __obj = js.Dynamic.literal(getActionType = js.Any.fromFunction1(getActionType), getParam = js.Any.fromFunction0(getParam))
       __obj.asInstanceOf[Util]
     }
     
-    @scala.inline
-    implicit class UtilMutableBuilder[Self <: Util] (val x: Self) extends AnyVal {
+    extension [Self <: Util](x: Self) {
       
-      @scala.inline
-      def setGetActionType(value: String => Namespace): Self = StObject.set(x, "getActionType", js.Any.fromFunction1(value))
+      inline def setGetActionType(value: String => Namespace): Self = StObject.set(x, "getActionType", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetParam(value: () => js.Any): Self = StObject.set(x, "getParam", js.Any.fromFunction0(value))
+      inline def setGetParam(value: () => js.Any): Self = StObject.set(x, "getParam", js.Any.fromFunction0(value))
     }
   }
   
@@ -248,35 +220,26 @@ object mod {
   }
   object WrapperConfig {
     
-    @scala.inline
-    def apply(model: KosModel[js.Any]): WrapperConfig = {
+    inline def apply(model: KosModel[js.Any]): WrapperConfig = {
       val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
       __obj.asInstanceOf[WrapperConfig]
     }
     
-    @scala.inline
-    implicit class WrapperConfigMutableBuilder[Self <: WrapperConfig] (val x: Self) extends AnyVal {
+    extension [Self <: WrapperConfig](x: Self) {
       
-      @scala.inline
-      def setAutoLoad(value: Boolean): Self = StObject.set(x, "autoLoad", value.asInstanceOf[js.Any])
+      inline def setAutoLoad(value: Boolean): Self = StObject.set(x, "autoLoad", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoLoadUndefined: Self = StObject.set(x, "autoLoad", js.undefined)
+      inline def setAutoLoadUndefined: Self = StObject.set(x, "autoLoad", js.undefined)
       
-      @scala.inline
-      def setAutoReset(value: Boolean): Self = StObject.set(x, "autoReset", value.asInstanceOf[js.Any])
+      inline def setAutoReset(value: Boolean): Self = StObject.set(x, "autoReset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoResetUndefined: Self = StObject.set(x, "autoReset", js.undefined)
+      inline def setAutoResetUndefined: Self = StObject.set(x, "autoReset", js.undefined)
       
-      @scala.inline
-      def setModel(value: KosModel[js.Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      inline def setModel(value: KosModel[js.Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+      inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     }
   }
 }

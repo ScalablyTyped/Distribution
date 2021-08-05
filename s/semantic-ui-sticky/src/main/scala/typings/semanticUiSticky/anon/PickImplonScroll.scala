@@ -14,16 +14,13 @@ trait PickImplonScroll extends StObject {
 }
 object PickImplonScroll {
   
-  @scala.inline
-  def apply(onScroll: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonScroll = {
+  inline def apply(onScroll: js.ThisFunction0[/* this */ JQuery, Unit]): PickImplonScroll = {
     val __obj = js.Dynamic.literal(onScroll = onScroll.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonScroll]
   }
   
-  @scala.inline
-  implicit class PickImplonScrollMutableBuilder[Self <: PickImplonScroll] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplonScroll](x: Self) {
     
-    @scala.inline
-    def setOnScroll(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onScroll", value.asInstanceOf[js.Any])
+    inline def setOnScroll(value: js.ThisFunction0[/* this */ JQuery, Unit]): Self = StObject.set(x, "onScroll", value.asInstanceOf[js.Any])
   }
 }

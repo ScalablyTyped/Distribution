@@ -46,8 +46,7 @@ trait Directions extends StObject {
 }
 object Directions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cancel: Double => Boolean,
     eta: (EtaRequestOptions, js.Function2[/* error */ Error | Null, /* data */ EtaResponse, Unit]) => Double,
     route: (DirectionsRequest, js.Function2[/* error */ Error | Null, /* data */ DirectionsResponse, Unit]) => Double
@@ -82,19 +81,15 @@ object Directions {
          with Transport
   }
   
-  @scala.inline
-  implicit class DirectionsMutableBuilder[Self <: Directions] (val x: Self) extends AnyVal {
+  extension [Self <: Directions](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Double => Boolean): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
+    inline def setCancel(value: Double => Boolean): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEta(
+    inline def setEta(
       value: (EtaRequestOptions, js.Function2[/* error */ Error | Null, /* data */ EtaResponse, Unit]) => Double
     ): Self = StObject.set(x, "eta", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRoute(
+    inline def setRoute(
       value: (DirectionsRequest, js.Function2[/* error */ Error | Null, /* data */ DirectionsResponse, Unit]) => Double
     ): Self = StObject.set(x, "route", js.Any.fromFunction2(value))
   }

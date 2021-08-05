@@ -27,28 +27,21 @@ trait TeamsAddOrUpdateRepoPermissionsLegacyEndpoint extends StObject {
 }
 object TeamsAddOrUpdateRepoPermissionsLegacyEndpoint {
   
-  @scala.inline
-  def apply(owner: String, repo: String, team_id: Double): TeamsAddOrUpdateRepoPermissionsLegacyEndpoint = {
+  inline def apply(owner: String, repo: String, team_id: Double): TeamsAddOrUpdateRepoPermissionsLegacyEndpoint = {
     val __obj = js.Dynamic.literal(owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any], team_id = team_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamsAddOrUpdateRepoPermissionsLegacyEndpoint]
   }
   
-  @scala.inline
-  implicit class TeamsAddOrUpdateRepoPermissionsLegacyEndpointMutableBuilder[Self <: TeamsAddOrUpdateRepoPermissionsLegacyEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: TeamsAddOrUpdateRepoPermissionsLegacyEndpoint](x: Self) {
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermission(value: pull | push | admin): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
+    inline def setPermission(value: pull | push | admin): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
+    inline def setPermissionUndefined: Self = StObject.set(x, "permission", js.undefined)
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
+    inline def setTeam_id(value: Double): Self = StObject.set(x, "team_id", value.asInstanceOf[js.Any])
   }
 }

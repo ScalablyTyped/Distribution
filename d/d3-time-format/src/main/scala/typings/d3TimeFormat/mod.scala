@@ -11,29 +11,21 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isoFormat(date: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("isoFormat")(date.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def isoFormat(date: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("isoFormat")(date.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def isoParse(dateString: String): Date | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("isoParse")(dateString.asInstanceOf[js.Any]).asInstanceOf[Date | Null]
+  inline def isoParse(dateString: String): Date | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("isoParse")(dateString.asInstanceOf[js.Any]).asInstanceOf[Date | Null]
   
-  @scala.inline
-  def timeFormat(specifier: String): js.Function1[/* date */ Date, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeFormat")(specifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* date */ Date, String]]
+  inline def timeFormat(specifier: String): js.Function1[/* date */ Date, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeFormat")(specifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* date */ Date, String]]
   
-  @scala.inline
-  def timeFormatDefaultLocale(definition: TimeLocaleDefinition): TimeLocaleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("timeFormatDefaultLocale")(definition.asInstanceOf[js.Any]).asInstanceOf[TimeLocaleObject]
+  inline def timeFormatDefaultLocale(definition: TimeLocaleDefinition): TimeLocaleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("timeFormatDefaultLocale")(definition.asInstanceOf[js.Any]).asInstanceOf[TimeLocaleObject]
   
-  @scala.inline
-  def timeFormatLocale(definition: TimeLocaleDefinition): TimeLocaleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("timeFormatLocale")(definition.asInstanceOf[js.Any]).asInstanceOf[TimeLocaleObject]
+  inline def timeFormatLocale(definition: TimeLocaleDefinition): TimeLocaleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("timeFormatLocale")(definition.asInstanceOf[js.Any]).asInstanceOf[TimeLocaleObject]
   
-  @scala.inline
-  def timeParse(specifier: String): js.Function1[/* dateString */ String, Date | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeParse")(specifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* dateString */ String, Date | Null]]
+  inline def timeParse(specifier: String): js.Function1[/* dateString */ String, Date | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeParse")(specifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* dateString */ String, Date | Null]]
   
-  @scala.inline
-  def utcFormat(specifier: String): js.Function1[/* date */ Date, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("utcFormat")(specifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* date */ Date, String]]
+  inline def utcFormat(specifier: String): js.Function1[/* date */ Date, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("utcFormat")(specifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* date */ Date, String]]
   
-  @scala.inline
-  def utcParse(specifier: String): js.Function1[/* dateString */ String, Date | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("utcParse")(specifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* dateString */ String, Date | Null]]
+  inline def utcParse(specifier: String): js.Function1[/* dateString */ String, Date | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("utcParse")(specifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* dateString */ String, Date | Null]]
   
   trait TimeLocaleDefinition extends StObject {
     
@@ -79,8 +71,7 @@ object mod {
   }
   object TimeLocaleDefinition {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       date: String,
       dateTime: String,
       days: js.Tuple7[String, String, String, String, String, String, String],
@@ -94,36 +85,27 @@ object mod {
       __obj.asInstanceOf[TimeLocaleDefinition]
     }
     
-    @scala.inline
-    implicit class TimeLocaleDefinitionMutableBuilder[Self <: TimeLocaleDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: TimeLocaleDefinition](x: Self) {
       
-      @scala.inline
-      def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateTime(value: String): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
+      inline def setDateTime(value: String): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDays(value: js.Tuple7[String, String, String, String, String, String, String]): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
+      inline def setDays(value: js.Tuple7[String, String, String, String, String, String, String]): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMonths(
+      inline def setMonths(
         value: js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String]
       ): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeriods(value: js.Tuple2[String, String]): Self = StObject.set(x, "periods", value.asInstanceOf[js.Any])
+      inline def setPeriods(value: js.Tuple2[String, String]): Self = StObject.set(x, "periods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortDays(value: js.Tuple7[String, String, String, String, String, String, String]): Self = StObject.set(x, "shortDays", value.asInstanceOf[js.Any])
+      inline def setShortDays(value: js.Tuple7[String, String, String, String, String, String, String]): Self = StObject.set(x, "shortDays", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShortMonths(
+      inline def setShortMonths(
         value: js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String]
       ): Self = StObject.set(x, "shortMonths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     }
   }
   
@@ -223,8 +205,7 @@ object mod {
   }
   object TimeLocaleObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       format: String => js.Function1[/* date */ Date, String],
       parse: String => js.Function1[/* dateString */ String, Date | Null],
       utcFormat: String => js.Function1[/* date */ Date, String],
@@ -234,20 +215,15 @@ object mod {
       __obj.asInstanceOf[TimeLocaleObject]
     }
     
-    @scala.inline
-    implicit class TimeLocaleObjectMutableBuilder[Self <: TimeLocaleObject] (val x: Self) extends AnyVal {
+    extension [Self <: TimeLocaleObject](x: Self) {
       
-      @scala.inline
-      def setFormat(value: String => js.Function1[/* date */ Date, String]): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
+      inline def setFormat(value: String => js.Function1[/* date */ Date, String]): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setParse(value: String => js.Function1[/* dateString */ String, Date | Null]): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+      inline def setParse(value: String => js.Function1[/* dateString */ String, Date | Null]): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUtcFormat(value: String => js.Function1[/* date */ Date, String]): Self = StObject.set(x, "utcFormat", js.Any.fromFunction1(value))
+      inline def setUtcFormat(value: String => js.Function1[/* date */ Date, String]): Self = StObject.set(x, "utcFormat", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUtcParse(value: String => js.Function1[/* dateString */ String, Date | Null]): Self = StObject.set(x, "utcParse", js.Any.fromFunction1(value))
+      inline def setUtcParse(value: String => js.Function1[/* dateString */ String, Date | Null]): Self = StObject.set(x, "utcParse", js.Any.fromFunction1(value))
     }
   }
 }

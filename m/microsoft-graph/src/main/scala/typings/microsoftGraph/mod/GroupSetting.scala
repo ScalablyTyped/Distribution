@@ -19,40 +19,29 @@ trait GroupSetting
 }
 object GroupSetting {
   
-  @scala.inline
-  def apply(): GroupSetting = {
+  inline def apply(): GroupSetting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GroupSetting]
   }
   
-  @scala.inline
-  implicit class GroupSettingMutableBuilder[Self <: GroupSetting] (val x: Self) extends AnyVal {
+  extension [Self <: GroupSetting](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setTemplateId(value: NullableOption[String]): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
+    inline def setTemplateId(value: NullableOption[String]): Self = StObject.set(x, "templateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateIdNull: Self = StObject.set(x, "templateId", null)
+    inline def setTemplateIdNull: Self = StObject.set(x, "templateId", null)
     
-    @scala.inline
-    def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
+    inline def setTemplateIdUndefined: Self = StObject.set(x, "templateId", js.undefined)
     
-    @scala.inline
-    def setValues(value: js.Array[SettingValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[SettingValue]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: SettingValue*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: SettingValue*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

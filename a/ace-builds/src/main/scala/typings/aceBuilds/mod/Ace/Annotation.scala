@@ -16,32 +16,24 @@ trait Annotation extends StObject {
 }
 object Annotation {
   
-  @scala.inline
-  def apply(text: String, `type`: String): Annotation = {
+  inline def apply(text: String, `type`: String): Annotation = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Annotation]
   }
   
-  @scala.inline
-  implicit class AnnotationMutableBuilder[Self <: Annotation] (val x: Self) extends AnyVal {
+  extension [Self <: Annotation](x: Self) {
     
-    @scala.inline
-    def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+    inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
+    inline def setColumnUndefined: Self = StObject.set(x, "column", js.undefined)
     
-    @scala.inline
-    def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+    inline def setRow(value: Double): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
+    inline def setRowUndefined: Self = StObject.set(x, "row", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

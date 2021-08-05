@@ -15,26 +15,20 @@ object anon {
   }
   object Children {
     
-    @scala.inline
-    def apply(children: js.Array[IVirtualElement]): Children = {
+    inline def apply(children: js.Array[IVirtualElement]): Children = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[Children]
     }
     
-    @scala.inline
-    implicit class ChildrenMutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
+    extension [Self <: Children](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[IVirtualElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[IVirtualElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenVarargs(value: IVirtualElement*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: IVirtualElement*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setParent(value: IVirtualElement): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: IVirtualElement): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     }
   }
 }

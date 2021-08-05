@@ -17,22 +17,17 @@ trait PaneItemMovedEvent extends StObject {
 }
 object PaneItemMovedEvent {
   
-  @scala.inline
-  def apply(item: js.Object, newIndex: Double, oldIndex: Double): PaneItemMovedEvent = {
+  inline def apply(item: js.Object, newIndex: Double, oldIndex: Double): PaneItemMovedEvent = {
     val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], newIndex = newIndex.asInstanceOf[js.Any], oldIndex = oldIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaneItemMovedEvent]
   }
   
-  @scala.inline
-  implicit class PaneItemMovedEventMutableBuilder[Self <: PaneItemMovedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: PaneItemMovedEvent](x: Self) {
     
-    @scala.inline
-    def setItem(value: js.Object): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+    inline def setItem(value: js.Object): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
+    inline def setNewIndex(value: Double): Self = StObject.set(x, "newIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
+    inline def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
   }
 }

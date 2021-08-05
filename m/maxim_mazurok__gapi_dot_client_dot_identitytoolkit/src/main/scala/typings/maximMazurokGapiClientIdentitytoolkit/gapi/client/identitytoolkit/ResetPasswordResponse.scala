@@ -20,37 +20,27 @@ trait ResetPasswordResponse extends StObject {
 }
 object ResetPasswordResponse {
   
-  @scala.inline
-  def apply(): ResetPasswordResponse = {
+  inline def apply(): ResetPasswordResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResetPasswordResponse]
   }
   
-  @scala.inline
-  implicit class ResetPasswordResponseMutableBuilder[Self <: ResetPasswordResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ResetPasswordResponse](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setNewEmail(value: String): Self = StObject.set(x, "newEmail", value.asInstanceOf[js.Any])
+    inline def setNewEmail(value: String): Self = StObject.set(x, "newEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewEmailUndefined: Self = StObject.set(x, "newEmail", js.undefined)
+    inline def setNewEmailUndefined: Self = StObject.set(x, "newEmail", js.undefined)
     
-    @scala.inline
-    def setRequestType(value: String): Self = StObject.set(x, "requestType", value.asInstanceOf[js.Any])
+    inline def setRequestType(value: String): Self = StObject.set(x, "requestType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestTypeUndefined: Self = StObject.set(x, "requestType", js.undefined)
+    inline def setRequestTypeUndefined: Self = StObject.set(x, "requestType", js.undefined)
   }
 }

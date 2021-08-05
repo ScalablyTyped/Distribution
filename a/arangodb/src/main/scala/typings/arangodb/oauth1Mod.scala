@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object oauth1Mod {
   
-  @scala.inline
-  def apply(options: OAuth1Options): OAuth1Client = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[OAuth1Client]
+  inline def apply(options: OAuth1Options): OAuth1Client = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[OAuth1Client]
   
   @JSImport("@arangodb/foxx/oauth1", JSImport.Namespace)
   @js.native
@@ -68,8 +67,7 @@ object oauth1Mod {
   }
   object OAuth1Options {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accessTokenEndpoint: String,
       authEndpoint: String,
       clientId: String,
@@ -80,35 +78,25 @@ object oauth1Mod {
       __obj.asInstanceOf[OAuth1Options]
     }
     
-    @scala.inline
-    implicit class OAuth1OptionsMutableBuilder[Self <: OAuth1Options] (val x: Self) extends AnyVal {
+    extension [Self <: OAuth1Options](x: Self) {
       
-      @scala.inline
-      def setAccessTokenEndpoint(value: String): Self = StObject.set(x, "accessTokenEndpoint", value.asInstanceOf[js.Any])
+      inline def setAccessTokenEndpoint(value: String): Self = StObject.set(x, "accessTokenEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUserEndpoint(value: String): Self = StObject.set(x, "activeUserEndpoint", value.asInstanceOf[js.Any])
+      inline def setActiveUserEndpoint(value: String): Self = StObject.set(x, "activeUserEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUserEndpointUndefined: Self = StObject.set(x, "activeUserEndpoint", js.undefined)
+      inline def setActiveUserEndpointUndefined: Self = StObject.set(x, "activeUserEndpoint", js.undefined)
       
-      @scala.inline
-      def setAuthEndpoint(value: String): Self = StObject.set(x, "authEndpoint", value.asInstanceOf[js.Any])
+      inline def setAuthEndpoint(value: String): Self = StObject.set(x, "authEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+      inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
+      inline def setClientSecret(value: String): Self = StObject.set(x, "clientSecret", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestTokenEndpoint(value: String): Self = StObject.set(x, "requestTokenEndpoint", value.asInstanceOf[js.Any])
+      inline def setRequestTokenEndpoint(value: String): Self = StObject.set(x, "requestTokenEndpoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignatureMethod(value: `HMAC-SHA1` | PLAINTEXT): Self = StObject.set(x, "signatureMethod", value.asInstanceOf[js.Any])
+      inline def setSignatureMethod(value: `HMAC-SHA1` | PLAINTEXT): Self = StObject.set(x, "signatureMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSignatureMethodUndefined: Self = StObject.set(x, "signatureMethod", js.undefined)
+      inline def setSignatureMethodUndefined: Self = StObject.set(x, "signatureMethod", js.undefined)
     }
   }
 }

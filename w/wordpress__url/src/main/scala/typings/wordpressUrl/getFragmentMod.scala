@@ -10,6 +10,5 @@ object getFragmentMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getFragment(url: String): String | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getFragment")(url.asInstanceOf[js.Any]).asInstanceOf[String | Unit]
+  inline def getFragment(url: String): String | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getFragment")(url.asInstanceOf[js.Any]).asInstanceOf[String | Unit]
 }

@@ -41,8 +41,7 @@ trait XNumberFormatTypes
 }
 object XNumberFormatTypes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getFormatForLocale: (Double, Locale) => Double,
     getFormatIndex: (Double, Locale) => Double,
@@ -56,22 +55,16 @@ object XNumberFormatTypes {
     __obj.asInstanceOf[XNumberFormatTypes]
   }
   
-  @scala.inline
-  implicit class XNumberFormatTypesMutableBuilder[Self <: XNumberFormatTypes] (val x: Self) extends AnyVal {
+  extension [Self <: XNumberFormatTypes](x: Self) {
     
-    @scala.inline
-    def setGetFormatForLocale(value: (Double, Locale) => Double): Self = StObject.set(x, "getFormatForLocale", js.Any.fromFunction2(value))
+    inline def setGetFormatForLocale(value: (Double, Locale) => Double): Self = StObject.set(x, "getFormatForLocale", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetFormatIndex(value: (Double, Locale) => Double): Self = StObject.set(x, "getFormatIndex", js.Any.fromFunction2(value))
+    inline def setGetFormatIndex(value: (Double, Locale) => Double): Self = StObject.set(x, "getFormatIndex", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetStandardFormat(value: (Double, Locale) => Double): Self = StObject.set(x, "getStandardFormat", js.Any.fromFunction2(value))
+    inline def setGetStandardFormat(value: (Double, Locale) => Double): Self = StObject.set(x, "getStandardFormat", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetStandardIndex(value: Locale => Double): Self = StObject.set(x, "getStandardIndex", js.Any.fromFunction1(value))
+    inline def setGetStandardIndex(value: Locale => Double): Self = StObject.set(x, "getStandardIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsTypeCompatible(value: (Double, Double) => Boolean): Self = StObject.set(x, "isTypeCompatible", js.Any.fromFunction2(value))
+    inline def setIsTypeCompatible(value: (Double, Double) => Boolean): Self = StObject.set(x, "isTypeCompatible", js.Any.fromFunction2(value))
   }
 }

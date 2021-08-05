@@ -23,31 +23,23 @@ trait PageIndexChangingEventUIParam extends StObject {
 }
 object PageIndexChangingEventUIParam {
   
-  @scala.inline
-  def apply(): PageIndexChangingEventUIParam = {
+  inline def apply(): PageIndexChangingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PageIndexChangingEventUIParam]
   }
   
-  @scala.inline
-  implicit class PageIndexChangingEventUIParamMutableBuilder[Self <: PageIndexChangingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: PageIndexChangingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setCurrentPageIndex(value: Double): Self = StObject.set(x, "currentPageIndex", value.asInstanceOf[js.Any])
+    inline def setCurrentPageIndex(value: Double): Self = StObject.set(x, "currentPageIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentPageIndexUndefined: Self = StObject.set(x, "currentPageIndex", js.undefined)
+    inline def setCurrentPageIndexUndefined: Self = StObject.set(x, "currentPageIndex", js.undefined)
     
-    @scala.inline
-    def setNewPageIndex(value: Double): Self = StObject.set(x, "newPageIndex", value.asInstanceOf[js.Any])
+    inline def setNewPageIndex(value: Double): Self = StObject.set(x, "newPageIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewPageIndexUndefined: Self = StObject.set(x, "newPageIndex", js.undefined)
+    inline def setNewPageIndexUndefined: Self = StObject.set(x, "newPageIndex", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

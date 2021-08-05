@@ -18,28 +18,21 @@ trait UpdatePipelineResponse extends StObject {
 }
 object UpdatePipelineResponse {
   
-  @scala.inline
-  def apply(): UpdatePipelineResponse = {
+  inline def apply(): UpdatePipelineResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdatePipelineResponse]
   }
   
-  @scala.inline
-  implicit class UpdatePipelineResponseMutableBuilder[Self <: UpdatePipelineResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdatePipelineResponse](x: Self) {
     
-    @scala.inline
-    def setPipeline(value: Pipeline): Self = StObject.set(x, "Pipeline", value.asInstanceOf[js.Any])
+    inline def setPipeline(value: Pipeline): Self = StObject.set(x, "Pipeline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPipelineUndefined: Self = StObject.set(x, "Pipeline", js.undefined)
+    inline def setPipelineUndefined: Self = StObject.set(x, "Pipeline", js.undefined)
     
-    @scala.inline
-    def setWarnings(value: Warnings): Self = StObject.set(x, "Warnings", value.asInstanceOf[js.Any])
+    inline def setWarnings(value: Warnings): Self = StObject.set(x, "Warnings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWarningsUndefined: Self = StObject.set(x, "Warnings", js.undefined)
+    inline def setWarningsUndefined: Self = StObject.set(x, "Warnings", js.undefined)
     
-    @scala.inline
-    def setWarningsVarargs(value: Warning*): Self = StObject.set(x, "Warnings", js.Array(value :_*))
+    inline def setWarningsVarargs(value: Warning*): Self = StObject.set(x, "Warnings", js.Array(value :_*))
   }
 }

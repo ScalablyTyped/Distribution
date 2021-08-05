@@ -33,8 +33,7 @@ trait GeoJSONLayerCapabilitiesData
 }
 object GeoJSONLayerCapabilitiesData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -46,16 +45,12 @@ object GeoJSONLayerCapabilitiesData {
     __obj.asInstanceOf[GeoJSONLayerCapabilitiesData]
   }
   
-  @scala.inline
-  implicit class GeoJSONLayerCapabilitiesDataMutableBuilder[Self <: GeoJSONLayerCapabilitiesData] (val x: Self) extends AnyVal {
+  extension [Self <: GeoJSONLayerCapabilitiesData](x: Self) {
     
-    @scala.inline
-    def setSupportsAttachment(value: Boolean): Self = StObject.set(x, "supportsAttachment", value.asInstanceOf[js.Any])
+    inline def setSupportsAttachment(value: Boolean): Self = StObject.set(x, "supportsAttachment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsM(value: Boolean): Self = StObject.set(x, "supportsM", value.asInstanceOf[js.Any])
+    inline def setSupportsM(value: Boolean): Self = StObject.set(x, "supportsM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsZ(value: Boolean): Self = StObject.set(x, "supportsZ", value.asInstanceOf[js.Any])
+    inline def setSupportsZ(value: Boolean): Self = StObject.set(x, "supportsZ", value.asInstanceOf[js.Any])
   }
 }

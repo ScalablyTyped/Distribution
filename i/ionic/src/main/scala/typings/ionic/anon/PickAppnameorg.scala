@@ -15,23 +15,18 @@ trait PickAppnameorg extends StObject {
 }
 object PickAppnameorg {
   
-  @scala.inline
-  def apply(name: String): PickAppnameorg = {
+  inline def apply(name: String): PickAppnameorg = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("org")(null)
     __obj.asInstanceOf[PickAppnameorg]
   }
   
-  @scala.inline
-  implicit class PickAppnameorgMutableBuilder[Self <: PickAppnameorg] (val x: Self) extends AnyVal {
+  extension [Self <: PickAppnameorg](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrg_(value: Org): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: Org): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrg_Null: Self = StObject.set(x, "org", null)
+    inline def setOrg_Null: Self = StObject.set(x, "org", null)
   }
 }

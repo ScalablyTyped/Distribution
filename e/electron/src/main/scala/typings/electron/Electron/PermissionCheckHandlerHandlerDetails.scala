@@ -31,8 +31,7 @@ trait PermissionCheckHandlerHandlerDetails extends StObject {
 }
 object PermissionCheckHandlerHandlerDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     isMainFrame: Boolean,
     mediaType: video | audio | unknown_,
     requestingUrl: String,
@@ -42,19 +41,14 @@ object PermissionCheckHandlerHandlerDetails {
     __obj.asInstanceOf[PermissionCheckHandlerHandlerDetails]
   }
   
-  @scala.inline
-  implicit class PermissionCheckHandlerHandlerDetailsMutableBuilder[Self <: PermissionCheckHandlerHandlerDetails] (val x: Self) extends AnyVal {
+  extension [Self <: PermissionCheckHandlerHandlerDetails](x: Self) {
     
-    @scala.inline
-    def setIsMainFrame(value: Boolean): Self = StObject.set(x, "isMainFrame", value.asInstanceOf[js.Any])
+    inline def setIsMainFrame(value: Boolean): Self = StObject.set(x, "isMainFrame", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaType(value: video | audio | unknown_): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+    inline def setMediaType(value: video | audio | unknown_): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestingUrl(value: String): Self = StObject.set(x, "requestingUrl", value.asInstanceOf[js.Any])
+    inline def setRequestingUrl(value: String): Self = StObject.set(x, "requestingUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityOrigin(value: String): Self = StObject.set(x, "securityOrigin", value.asInstanceOf[js.Any])
+    inline def setSecurityOrigin(value: String): Self = StObject.set(x, "securityOrigin", value.asInstanceOf[js.Any])
   }
 }

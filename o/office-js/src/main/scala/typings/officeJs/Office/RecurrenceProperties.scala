@@ -58,55 +58,39 @@ trait RecurrenceProperties extends StObject {
 }
 object RecurrenceProperties {
   
-  @scala.inline
-  def apply(interval: Double): RecurrenceProperties = {
+  inline def apply(interval: Double): RecurrenceProperties = {
     val __obj = js.Dynamic.literal(interval = interval.asInstanceOf[js.Any])
     __obj.asInstanceOf[RecurrenceProperties]
   }
   
-  @scala.inline
-  implicit class RecurrencePropertiesMutableBuilder[Self <: RecurrenceProperties] (val x: Self) extends AnyVal {
+  extension [Self <: RecurrenceProperties](x: Self) {
     
-    @scala.inline
-    def setDayOfMonth(value: Double): Self = StObject.set(x, "dayOfMonth", value.asInstanceOf[js.Any])
+    inline def setDayOfMonth(value: Double): Self = StObject.set(x, "dayOfMonth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayOfMonthUndefined: Self = StObject.set(x, "dayOfMonth", js.undefined)
+    inline def setDayOfMonthUndefined: Self = StObject.set(x, "dayOfMonth", js.undefined)
     
-    @scala.inline
-    def setDayOfWeek(value: Days | String): Self = StObject.set(x, "dayOfWeek", value.asInstanceOf[js.Any])
+    inline def setDayOfWeek(value: Days | String): Self = StObject.set(x, "dayOfWeek", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDayOfWeekUndefined: Self = StObject.set(x, "dayOfWeek", js.undefined)
+    inline def setDayOfWeekUndefined: Self = StObject.set(x, "dayOfWeek", js.undefined)
     
-    @scala.inline
-    def setDays(value: js.Array[Days | String]): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
+    inline def setDays(value: js.Array[Days | String]): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDaysUndefined: Self = StObject.set(x, "days", js.undefined)
+    inline def setDaysUndefined: Self = StObject.set(x, "days", js.undefined)
     
-    @scala.inline
-    def setDaysVarargs(value: (Days | String)*): Self = StObject.set(x, "days", js.Array(value :_*))
+    inline def setDaysVarargs(value: (Days | String)*): Self = StObject.set(x, "days", js.Array(value :_*))
     
-    @scala.inline
-    def setFirstDayOfWeek(value: Days | String): Self = StObject.set(x, "firstDayOfWeek", value.asInstanceOf[js.Any])
+    inline def setFirstDayOfWeek(value: Days | String): Self = StObject.set(x, "firstDayOfWeek", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstDayOfWeekUndefined: Self = StObject.set(x, "firstDayOfWeek", js.undefined)
+    inline def setFirstDayOfWeekUndefined: Self = StObject.set(x, "firstDayOfWeek", js.undefined)
     
-    @scala.inline
-    def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+    inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonth(value: Month | String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
+    inline def setMonth(value: Month | String): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
+    inline def setMonthUndefined: Self = StObject.set(x, "month", js.undefined)
     
-    @scala.inline
-    def setWeekNumber(value: WeekNumber | String): Self = StObject.set(x, "weekNumber", value.asInstanceOf[js.Any])
+    inline def setWeekNumber(value: WeekNumber | String): Self = StObject.set(x, "weekNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeekNumberUndefined: Self = StObject.set(x, "weekNumber", js.undefined)
+    inline def setWeekNumberUndefined: Self = StObject.set(x, "weekNumber", js.undefined)
   }
 }

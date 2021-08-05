@@ -66,6 +66,5 @@ trait ANode
 }
 object ANode {
   
-  @scala.inline
-  def apply: ANode = ^.asInstanceOf[js.Dynamic].selectDynamic("ANode").asInstanceOf[ANode]
+  inline def apply: ANode = ^.asInstanceOf[js.Dynamic].selectDynamic("ANode").asInstanceOf[ANode]
 }

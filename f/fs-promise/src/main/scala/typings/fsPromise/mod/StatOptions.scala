@@ -9,8 +9,7 @@ trait StatOptions
      with typings.node.fsMod.StatOptions
 object StatOptions {
   
-  @scala.inline
-  def apply(bigint: Boolean): StatOptions = {
+  inline def apply(bigint: Boolean): StatOptions = {
     val __obj = js.Dynamic.literal(bigint = bigint.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatOptions]
   }

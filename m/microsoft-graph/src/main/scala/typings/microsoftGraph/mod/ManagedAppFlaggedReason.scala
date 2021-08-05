@@ -12,9 +12,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ManagedAppFlaggedReason extends StObject
 object ManagedAppFlaggedReason {
   
-  @scala.inline
-  def none: none_ = "none".asInstanceOf[none_]
+  inline def none: none_ = "none".asInstanceOf[none_]
   
-  @scala.inline
-  def rootedDevice: typings.microsoftGraph.microsoftGraphStrings.rootedDevice = "rootedDevice".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.rootedDevice]
+  inline def rootedDevice: typings.microsoftGraph.microsoftGraphStrings.rootedDevice = "rootedDevice".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.rootedDevice]
 }

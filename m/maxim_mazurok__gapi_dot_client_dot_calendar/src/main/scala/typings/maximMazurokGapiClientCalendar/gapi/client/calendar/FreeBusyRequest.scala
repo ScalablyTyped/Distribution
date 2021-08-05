@@ -26,52 +26,37 @@ trait FreeBusyRequest extends StObject {
 }
 object FreeBusyRequest {
   
-  @scala.inline
-  def apply(): FreeBusyRequest = {
+  inline def apply(): FreeBusyRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FreeBusyRequest]
   }
   
-  @scala.inline
-  implicit class FreeBusyRequestMutableBuilder[Self <: FreeBusyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: FreeBusyRequest](x: Self) {
     
-    @scala.inline
-    def setCalendarExpansionMax(value: Double): Self = StObject.set(x, "calendarExpansionMax", value.asInstanceOf[js.Any])
+    inline def setCalendarExpansionMax(value: Double): Self = StObject.set(x, "calendarExpansionMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalendarExpansionMaxUndefined: Self = StObject.set(x, "calendarExpansionMax", js.undefined)
+    inline def setCalendarExpansionMaxUndefined: Self = StObject.set(x, "calendarExpansionMax", js.undefined)
     
-    @scala.inline
-    def setGroupExpansionMax(value: Double): Self = StObject.set(x, "groupExpansionMax", value.asInstanceOf[js.Any])
+    inline def setGroupExpansionMax(value: Double): Self = StObject.set(x, "groupExpansionMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupExpansionMaxUndefined: Self = StObject.set(x, "groupExpansionMax", js.undefined)
+    inline def setGroupExpansionMaxUndefined: Self = StObject.set(x, "groupExpansionMax", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Array[FreeBusyRequestItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[FreeBusyRequestItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
+    inline def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
     
-    @scala.inline
-    def setItemsVarargs(value: FreeBusyRequestItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: FreeBusyRequestItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setTimeMax(value: String): Self = StObject.set(x, "timeMax", value.asInstanceOf[js.Any])
+    inline def setTimeMax(value: String): Self = StObject.set(x, "timeMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeMaxUndefined: Self = StObject.set(x, "timeMax", js.undefined)
+    inline def setTimeMaxUndefined: Self = StObject.set(x, "timeMax", js.undefined)
     
-    @scala.inline
-    def setTimeMin(value: String): Self = StObject.set(x, "timeMin", value.asInstanceOf[js.Any])
+    inline def setTimeMin(value: String): Self = StObject.set(x, "timeMin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeMinUndefined: Self = StObject.set(x, "timeMin", js.undefined)
+    inline def setTimeMinUndefined: Self = StObject.set(x, "timeMin", js.undefined)
     
-    @scala.inline
-    def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
+    inline def setTimeZone(value: String): Self = StObject.set(x, "timeZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
+    inline def setTimeZoneUndefined: Self = StObject.set(x, "timeZone", js.undefined)
   }
 }

@@ -11,16 +11,13 @@ trait UrlUtil extends StObject {
 }
 object UrlUtil {
   
-  @scala.inline
-  def apply(makeAbsolute: String => String): UrlUtil = {
+  inline def apply(makeAbsolute: String => String): UrlUtil = {
     val __obj = js.Dynamic.literal(makeAbsolute = js.Any.fromFunction1(makeAbsolute))
     __obj.asInstanceOf[UrlUtil]
   }
   
-  @scala.inline
-  implicit class UrlUtilMutableBuilder[Self <: UrlUtil] (val x: Self) extends AnyVal {
+  extension [Self <: UrlUtil](x: Self) {
     
-    @scala.inline
-    def setMakeAbsolute(value: String => String): Self = StObject.set(x, "makeAbsolute", js.Any.fromFunction1(value))
+    inline def setMakeAbsolute(value: String => String): Self = StObject.set(x, "makeAbsolute", js.Any.fromFunction1(value))
   }
 }

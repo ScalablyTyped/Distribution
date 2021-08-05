@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EngineType extends StObject
 object EngineType {
   
-  @scala.inline
-  def mmfiles: typings.arangodb.arangodbStrings.mmfiles = "mmfiles".asInstanceOf[typings.arangodb.arangodbStrings.mmfiles]
+  inline def mmfiles: typings.arangodb.arangodbStrings.mmfiles = "mmfiles".asInstanceOf[typings.arangodb.arangodbStrings.mmfiles]
   
-  @scala.inline
-  def rocksdb: typings.arangodb.arangodbStrings.rocksdb = "rocksdb".asInstanceOf[typings.arangodb.arangodbStrings.rocksdb]
+  inline def rocksdb: typings.arangodb.arangodbStrings.rocksdb = "rocksdb".asInstanceOf[typings.arangodb.arangodbStrings.rocksdb]
 }

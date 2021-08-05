@@ -23,19 +23,15 @@ trait ExcelFormatOptions extends StObject {
 }
 object ExcelFormatOptions {
   
-  @scala.inline
-  def apply(CsvValueSeparator: String, Format: String): ExcelFormatOptions = {
+  inline def apply(CsvValueSeparator: String, Format: String): ExcelFormatOptions = {
     val __obj = js.Dynamic.literal(CsvValueSeparator = CsvValueSeparator.asInstanceOf[js.Any], Format = Format.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExcelFormatOptions]
   }
   
-  @scala.inline
-  implicit class ExcelFormatOptionsMutableBuilder[Self <: ExcelFormatOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ExcelFormatOptions](x: Self) {
     
-    @scala.inline
-    def setCsvValueSeparator(value: String): Self = StObject.set(x, "CsvValueSeparator", value.asInstanceOf[js.Any])
+    inline def setCsvValueSeparator(value: String): Self = StObject.set(x, "CsvValueSeparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
   }
 }

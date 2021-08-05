@@ -11,22 +11,17 @@ trait WebAppsListResponse extends StObject {
 }
 object WebAppsListResponse {
   
-  @scala.inline
-  def apply(): WebAppsListResponse = {
+  inline def apply(): WebAppsListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebAppsListResponse]
   }
   
-  @scala.inline
-  implicit class WebAppsListResponseMutableBuilder[Self <: WebAppsListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: WebAppsListResponse](x: Self) {
     
-    @scala.inline
-    def setWebApp(value: js.Array[WebApp]): Self = StObject.set(x, "webApp", value.asInstanceOf[js.Any])
+    inline def setWebApp(value: js.Array[WebApp]): Self = StObject.set(x, "webApp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebAppUndefined: Self = StObject.set(x, "webApp", js.undefined)
+    inline def setWebAppUndefined: Self = StObject.set(x, "webApp", js.undefined)
     
-    @scala.inline
-    def setWebAppVarargs(value: WebApp*): Self = StObject.set(x, "webApp", js.Array(value :_*))
+    inline def setWebAppVarargs(value: WebApp*): Self = StObject.set(x, "webApp", js.Array(value :_*))
   }
 }

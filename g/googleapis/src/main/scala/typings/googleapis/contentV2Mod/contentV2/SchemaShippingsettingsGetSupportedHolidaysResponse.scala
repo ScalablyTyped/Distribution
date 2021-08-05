@@ -19,28 +19,21 @@ trait SchemaShippingsettingsGetSupportedHolidaysResponse extends StObject {
 }
 object SchemaShippingsettingsGetSupportedHolidaysResponse {
   
-  @scala.inline
-  def apply(): SchemaShippingsettingsGetSupportedHolidaysResponse = {
+  inline def apply(): SchemaShippingsettingsGetSupportedHolidaysResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaShippingsettingsGetSupportedHolidaysResponse]
   }
   
-  @scala.inline
-  implicit class SchemaShippingsettingsGetSupportedHolidaysResponseMutableBuilder[Self <: SchemaShippingsettingsGetSupportedHolidaysResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaShippingsettingsGetSupportedHolidaysResponse](x: Self) {
     
-    @scala.inline
-    def setHolidays(value: js.Array[SchemaHolidaysHoliday]): Self = StObject.set(x, "holidays", value.asInstanceOf[js.Any])
+    inline def setHolidays(value: js.Array[SchemaHolidaysHoliday]): Self = StObject.set(x, "holidays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHolidaysUndefined: Self = StObject.set(x, "holidays", js.undefined)
+    inline def setHolidaysUndefined: Self = StObject.set(x, "holidays", js.undefined)
     
-    @scala.inline
-    def setHolidaysVarargs(value: SchemaHolidaysHoliday*): Self = StObject.set(x, "holidays", js.Array(value :_*))
+    inline def setHolidaysVarargs(value: SchemaHolidaysHoliday*): Self = StObject.set(x, "holidays", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

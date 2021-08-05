@@ -28,37 +28,27 @@ trait EffectivePolicy extends StObject {
 }
 object EffectivePolicy {
   
-  @scala.inline
-  def apply(): EffectivePolicy = {
+  inline def apply(): EffectivePolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EffectivePolicy]
   }
   
-  @scala.inline
-  implicit class EffectivePolicyMutableBuilder[Self <: EffectivePolicy] (val x: Self) extends AnyVal {
+  extension [Self <: EffectivePolicy](x: Self) {
     
-    @scala.inline
-    def setLastUpdatedTimestamp(value: Timestamp): Self = StObject.set(x, "LastUpdatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTimestamp(value: Timestamp): Self = StObject.set(x, "LastUpdatedTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedTimestampUndefined: Self = StObject.set(x, "LastUpdatedTimestamp", js.undefined)
+    inline def setLastUpdatedTimestampUndefined: Self = StObject.set(x, "LastUpdatedTimestamp", js.undefined)
     
-    @scala.inline
-    def setPolicyContent(value: PolicyContent): Self = StObject.set(x, "PolicyContent", value.asInstanceOf[js.Any])
+    inline def setPolicyContent(value: PolicyContent): Self = StObject.set(x, "PolicyContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyContentUndefined: Self = StObject.set(x, "PolicyContent", js.undefined)
+    inline def setPolicyContentUndefined: Self = StObject.set(x, "PolicyContent", js.undefined)
     
-    @scala.inline
-    def setPolicyType(value: EffectivePolicyType): Self = StObject.set(x, "PolicyType", value.asInstanceOf[js.Any])
+    inline def setPolicyType(value: EffectivePolicyType): Self = StObject.set(x, "PolicyType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyTypeUndefined: Self = StObject.set(x, "PolicyType", js.undefined)
+    inline def setPolicyTypeUndefined: Self = StObject.set(x, "PolicyType", js.undefined)
     
-    @scala.inline
-    def setTargetId(value: PolicyTargetId): Self = StObject.set(x, "TargetId", value.asInstanceOf[js.Any])
+    inline def setTargetId(value: PolicyTargetId): Self = StObject.set(x, "TargetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetIdUndefined: Self = StObject.set(x, "TargetId", js.undefined)
+    inline def setTargetIdUndefined: Self = StObject.set(x, "TargetId", js.undefined)
   }
 }

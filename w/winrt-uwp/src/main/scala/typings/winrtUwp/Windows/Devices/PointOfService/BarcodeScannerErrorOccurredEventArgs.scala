@@ -18,22 +18,17 @@ trait BarcodeScannerErrorOccurredEventArgs extends StObject {
 }
 object BarcodeScannerErrorOccurredEventArgs {
   
-  @scala.inline
-  def apply(errorData: UnifiedPosErrorData, isRetriable: Boolean, partialInputData: BarcodeScannerReport): BarcodeScannerErrorOccurredEventArgs = {
+  inline def apply(errorData: UnifiedPosErrorData, isRetriable: Boolean, partialInputData: BarcodeScannerReport): BarcodeScannerErrorOccurredEventArgs = {
     val __obj = js.Dynamic.literal(errorData = errorData.asInstanceOf[js.Any], isRetriable = isRetriable.asInstanceOf[js.Any], partialInputData = partialInputData.asInstanceOf[js.Any])
     __obj.asInstanceOf[BarcodeScannerErrorOccurredEventArgs]
   }
   
-  @scala.inline
-  implicit class BarcodeScannerErrorOccurredEventArgsMutableBuilder[Self <: BarcodeScannerErrorOccurredEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: BarcodeScannerErrorOccurredEventArgs](x: Self) {
     
-    @scala.inline
-    def setErrorData(value: UnifiedPosErrorData): Self = StObject.set(x, "errorData", value.asInstanceOf[js.Any])
+    inline def setErrorData(value: UnifiedPosErrorData): Self = StObject.set(x, "errorData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsRetriable(value: Boolean): Self = StObject.set(x, "isRetriable", value.asInstanceOf[js.Any])
+    inline def setIsRetriable(value: Boolean): Self = StObject.set(x, "isRetriable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartialInputData(value: BarcodeScannerReport): Self = StObject.set(x, "partialInputData", value.asInstanceOf[js.Any])
+    inline def setPartialInputData(value: BarcodeScannerReport): Self = StObject.set(x, "partialInputData", value.asInstanceOf[js.Any])
   }
 }

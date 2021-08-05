@@ -47,8 +47,7 @@ object browserMod {
     @JSImport("ng-table/src/browser", "NgTableController.$inject")
     @js.native
     def $inject: js.Array[String] = js.native
-    @scala.inline
-    def $inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
+    inline def $inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ng-table/src/browser", "NgTableFilterConfig")
@@ -70,8 +69,7 @@ object browserMod {
     @JSImport("ng-table/src/browser", "NgTableFilterConfig.$inject")
     @js.native
     def $inject: js.Array[String] = js.native
-    @scala.inline
-    def $inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
+    inline def $inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ng-table/src/browser", "NgTableFilterConfigProvider")
@@ -90,8 +88,7 @@ object browserMod {
     @JSImport("ng-table/src/browser", "NgTableFilterConfigProvider.$inject")
     @js.native
     def $inject: js.Array[String] = js.native
-    @scala.inline
-    def $inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
+    inline def $inject_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$inject")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("ng-table/src/browser", "ngTableBrowserModule")

@@ -87,8 +87,7 @@ trait XCharacterClassification
 }
 object XCharacterClassification {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     getCharacterDirection: (String, Double) => Double,
     getCharacterType: (String, Double, Locale) => Double,
@@ -107,37 +106,26 @@ object XCharacterClassification {
     __obj.asInstanceOf[XCharacterClassification]
   }
   
-  @scala.inline
-  implicit class XCharacterClassificationMutableBuilder[Self <: XCharacterClassification] (val x: Self) extends AnyVal {
+  extension [Self <: XCharacterClassification](x: Self) {
     
-    @scala.inline
-    def setGetCharacterDirection(value: (String, Double) => Double): Self = StObject.set(x, "getCharacterDirection", js.Any.fromFunction2(value))
+    inline def setGetCharacterDirection(value: (String, Double) => Double): Self = StObject.set(x, "getCharacterDirection", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetCharacterType(value: (String, Double, Locale) => Double): Self = StObject.set(x, "getCharacterType", js.Any.fromFunction3(value))
+    inline def setGetCharacterType(value: (String, Double, Locale) => Double): Self = StObject.set(x, "getCharacterType", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetScript(value: (String, Double) => Double): Self = StObject.set(x, "getScript", js.Any.fromFunction2(value))
+    inline def setGetScript(value: (String, Double) => Double): Self = StObject.set(x, "getScript", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetStringType(value: (String, Double, Double, Locale) => Double): Self = StObject.set(x, "getStringType", js.Any.fromFunction4(value))
+    inline def setGetStringType(value: (String, Double, Double, Locale) => Double): Self = StObject.set(x, "getStringType", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setGetType(value: (String, Double) => Double): Self = StObject.set(x, "getType", js.Any.fromFunction2(value))
+    inline def setGetType(value: (String, Double) => Double): Self = StObject.set(x, "getType", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setParseAnyToken(value: (String, Double, Locale, Double, String, Double, String) => ParseResult): Self = StObject.set(x, "parseAnyToken", js.Any.fromFunction7(value))
+    inline def setParseAnyToken(value: (String, Double, Locale, Double, String, Double, String) => ParseResult): Self = StObject.set(x, "parseAnyToken", js.Any.fromFunction7(value))
     
-    @scala.inline
-    def setParsePredefinedToken(value: (Double, String, Double, Locale, Double, String, Double, String) => ParseResult): Self = StObject.set(x, "parsePredefinedToken", js.Any.fromFunction8(value))
+    inline def setParsePredefinedToken(value: (Double, String, Double, Locale, Double, String, Double, String) => ParseResult): Self = StObject.set(x, "parsePredefinedToken", js.Any.fromFunction8(value))
     
-    @scala.inline
-    def setToLower(value: (String, Double, Double, Locale) => String): Self = StObject.set(x, "toLower", js.Any.fromFunction4(value))
+    inline def setToLower(value: (String, Double, Double, Locale) => String): Self = StObject.set(x, "toLower", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setToTitle(value: (String, Double, Double, Locale) => String): Self = StObject.set(x, "toTitle", js.Any.fromFunction4(value))
+    inline def setToTitle(value: (String, Double, Double, Locale) => String): Self = StObject.set(x, "toTitle", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setToUpper(value: (String, Double, Double, Locale) => String): Self = StObject.set(x, "toUpper", js.Any.fromFunction4(value))
+    inline def setToUpper(value: (String, Double, Double, Locale) => String): Self = StObject.set(x, "toUpper", js.Any.fromFunction4(value))
   }
 }

@@ -11,16 +11,13 @@ trait PickImplexpires extends StObject {
 }
 object PickImplexpires {
   
-  @scala.inline
-  def apply(expires: Double): PickImplexpires = {
+  inline def apply(expires: Double): PickImplexpires = {
     val __obj = js.Dynamic.literal(expires = expires.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplexpires]
   }
   
-  @scala.inline
-  implicit class PickImplexpiresMutableBuilder[Self <: PickImplexpires] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplexpires](x: Self) {
     
-    @scala.inline
-    def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+    inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
   }
 }

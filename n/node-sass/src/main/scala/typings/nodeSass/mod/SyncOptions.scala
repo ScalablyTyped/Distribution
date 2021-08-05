@@ -16,28 +16,21 @@ trait SyncOptions
 }
 object SyncOptions {
   
-  @scala.inline
-  def apply(): SyncOptions = {
+  inline def apply(): SyncOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SyncOptions]
   }
   
-  @scala.inline
-  implicit class SyncOptionsMutableBuilder[Self <: SyncOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SyncOptions](x: Self) {
     
-    @scala.inline
-    def setFunctions(value: FunctionDeclarations[SyncSassFunction]): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
+    inline def setFunctions(value: FunctionDeclarations[SyncSassFunction]): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
+    inline def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
     
-    @scala.inline
-    def setImporter(value: SyncImporter | js.Array[SyncImporter]): Self = StObject.set(x, "importer", value.asInstanceOf[js.Any])
+    inline def setImporter(value: SyncImporter | js.Array[SyncImporter]): Self = StObject.set(x, "importer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImporterUndefined: Self = StObject.set(x, "importer", js.undefined)
+    inline def setImporterUndefined: Self = StObject.set(x, "importer", js.undefined)
     
-    @scala.inline
-    def setImporterVarargs(value: SyncImporter*): Self = StObject.set(x, "importer", js.Array(value :_*))
+    inline def setImporterVarargs(value: SyncImporter*): Self = StObject.set(x, "importer", js.Array(value :_*))
   }
 }

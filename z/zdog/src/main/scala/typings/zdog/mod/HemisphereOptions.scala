@@ -9,8 +9,7 @@ trait HemisphereOptions
      with EllipseOptions
 object HemisphereOptions {
   
-  @scala.inline
-  def apply(): HemisphereOptions = {
+  inline def apply(): HemisphereOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HemisphereOptions]
   }

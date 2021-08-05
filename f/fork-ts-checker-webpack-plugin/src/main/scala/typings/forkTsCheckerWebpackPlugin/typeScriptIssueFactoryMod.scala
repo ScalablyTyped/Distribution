@@ -13,6 +13,5 @@ object typeScriptIssueFactoryMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createIssuesFromTsDiagnostics(typescript: Typeofts, diagnostics: js.Array[Diagnostic]): js.Array[Issue] = (^.asInstanceOf[js.Dynamic].applyDynamic("createIssuesFromTsDiagnostics")(typescript.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[js.Array[Issue]]
+  inline def createIssuesFromTsDiagnostics(typescript: Typeofts, diagnostics: js.Array[Diagnostic]): js.Array[Issue] = (^.asInstanceOf[js.Dynamic].applyDynamic("createIssuesFromTsDiagnostics")(typescript.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[js.Array[Issue]]
 }

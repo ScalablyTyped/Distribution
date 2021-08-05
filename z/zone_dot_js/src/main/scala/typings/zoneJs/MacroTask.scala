@@ -14,8 +14,7 @@ trait MacroTask
 }
 object MacroTask {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     callback: js.Function,
     cancelScheduleRequest: () => Unit,
     invoke: js.Function,
@@ -29,10 +28,8 @@ object MacroTask {
     __obj.asInstanceOf[MacroTask]
   }
   
-  @scala.inline
-  implicit class MacroTaskMutableBuilder[Self <: MacroTask] (val x: Self) extends AnyVal {
+  extension [Self <: MacroTask](x: Self) {
     
-    @scala.inline
-    def setType(value: macroTask): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: macroTask): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

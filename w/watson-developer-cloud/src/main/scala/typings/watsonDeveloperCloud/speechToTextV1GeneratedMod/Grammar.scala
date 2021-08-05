@@ -21,28 +21,21 @@ trait Grammar extends StObject {
 }
 object Grammar {
   
-  @scala.inline
-  def apply(name: String, out_of_vocabulary_words: Double, status: String): Grammar = {
+  inline def apply(name: String, out_of_vocabulary_words: Double, status: String): Grammar = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], out_of_vocabulary_words = out_of_vocabulary_words.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[Grammar]
   }
   
-  @scala.inline
-  implicit class GrammarMutableBuilder[Self <: Grammar] (val x: Self) extends AnyVal {
+  extension [Self <: Grammar](x: Self) {
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOut_of_vocabulary_words(value: Double): Self = StObject.set(x, "out_of_vocabulary_words", value.asInstanceOf[js.Any])
+    inline def setOut_of_vocabulary_words(value: Double): Self = StObject.set(x, "out_of_vocabulary_words", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

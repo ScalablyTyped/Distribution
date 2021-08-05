@@ -24,25 +24,19 @@ trait SchemaSuggestedParagraphStyle extends StObject {
 }
 object SchemaSuggestedParagraphStyle {
   
-  @scala.inline
-  def apply(): SchemaSuggestedParagraphStyle = {
+  inline def apply(): SchemaSuggestedParagraphStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSuggestedParagraphStyle]
   }
   
-  @scala.inline
-  implicit class SchemaSuggestedParagraphStyleMutableBuilder[Self <: SchemaSuggestedParagraphStyle] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSuggestedParagraphStyle](x: Self) {
     
-    @scala.inline
-    def setParagraphStyle(value: SchemaParagraphStyle): Self = StObject.set(x, "paragraphStyle", value.asInstanceOf[js.Any])
+    inline def setParagraphStyle(value: SchemaParagraphStyle): Self = StObject.set(x, "paragraphStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParagraphStyleSuggestionState(value: SchemaParagraphStyleSuggestionState): Self = StObject.set(x, "paragraphStyleSuggestionState", value.asInstanceOf[js.Any])
+    inline def setParagraphStyleSuggestionState(value: SchemaParagraphStyleSuggestionState): Self = StObject.set(x, "paragraphStyleSuggestionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParagraphStyleSuggestionStateUndefined: Self = StObject.set(x, "paragraphStyleSuggestionState", js.undefined)
+    inline def setParagraphStyleSuggestionStateUndefined: Self = StObject.set(x, "paragraphStyleSuggestionState", js.undefined)
     
-    @scala.inline
-    def setParagraphStyleUndefined: Self = StObject.set(x, "paragraphStyle", js.undefined)
+    inline def setParagraphStyleUndefined: Self = StObject.set(x, "paragraphStyle", js.undefined)
   }
 }

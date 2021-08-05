@@ -48,12 +48,12 @@ object DB {
   class CollectionReference protected ()
     extends StObject
        with typings.minappEnv.DB.CollectionReference {
-    protected def this(name: java.lang.String, database: typings.minappEnv.DB.Database) = this()
+    /* private */ def this(name: java.lang.String, database: typings.minappEnv.DB.Database) = this()
   }
   
   @JSGlobal("DB.Database")
   @js.native
-  class Database protected ()
+  /* private */ class Database ()
     extends StObject
        with typings.minappEnv.DB.Database {
     
@@ -185,8 +185,8 @@ object DB {
   class DocumentReference protected ()
     extends StObject
        with typings.minappEnv.DB.DocumentReference {
-    protected def this(docId: java.lang.String, database: typings.minappEnv.DB.Database) = this()
-    protected def this(docId: Double, database: typings.minappEnv.DB.Database) = this()
+    /* private */ def this(docId: java.lang.String, database: typings.minappEnv.DB.Database) = this()
+    /* private */ def this(docId: Double, database: typings.minappEnv.DB.Database) = this()
   }
   
   @JSGlobal("DB.GeoPoint")

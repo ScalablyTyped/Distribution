@@ -23,19 +23,15 @@ trait ErrorObject extends StObject {
 }
 object ErrorObject {
   
-  @scala.inline
-  def apply(message: String, status: Double): ErrorObject = {
+  inline def apply(message: String, status: Double): ErrorObject = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[ErrorObject]
   }
   
-  @scala.inline
-  implicit class ErrorObjectMutableBuilder[Self <: ErrorObject] (val x: Self) extends AnyVal {
+  extension [Self <: ErrorObject](x: Self) {
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

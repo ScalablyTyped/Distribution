@@ -23,31 +23,23 @@ trait GetSendQuotaResponse extends StObject {
 }
 object GetSendQuotaResponse {
   
-  @scala.inline
-  def apply(): GetSendQuotaResponse = {
+  inline def apply(): GetSendQuotaResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSendQuotaResponse]
   }
   
-  @scala.inline
-  implicit class GetSendQuotaResponseMutableBuilder[Self <: GetSendQuotaResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetSendQuotaResponse](x: Self) {
     
-    @scala.inline
-    def setMax24HourSend(value: Max24HourSend): Self = StObject.set(x, "Max24HourSend", value.asInstanceOf[js.Any])
+    inline def setMax24HourSend(value: Max24HourSend): Self = StObject.set(x, "Max24HourSend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax24HourSendUndefined: Self = StObject.set(x, "Max24HourSend", js.undefined)
+    inline def setMax24HourSendUndefined: Self = StObject.set(x, "Max24HourSend", js.undefined)
     
-    @scala.inline
-    def setMaxSendRate(value: MaxSendRate): Self = StObject.set(x, "MaxSendRate", value.asInstanceOf[js.Any])
+    inline def setMaxSendRate(value: MaxSendRate): Self = StObject.set(x, "MaxSendRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSendRateUndefined: Self = StObject.set(x, "MaxSendRate", js.undefined)
+    inline def setMaxSendRateUndefined: Self = StObject.set(x, "MaxSendRate", js.undefined)
     
-    @scala.inline
-    def setSentLast24Hours(value: SentLast24Hours): Self = StObject.set(x, "SentLast24Hours", value.asInstanceOf[js.Any])
+    inline def setSentLast24Hours(value: SentLast24Hours): Self = StObject.set(x, "SentLast24Hours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentLast24HoursUndefined: Self = StObject.set(x, "SentLast24Hours", js.undefined)
+    inline def setSentLast24HoursUndefined: Self = StObject.set(x, "SentLast24Hours", js.undefined)
   }
 }

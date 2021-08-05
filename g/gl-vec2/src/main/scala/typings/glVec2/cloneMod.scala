@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object cloneMod {
   
-  @scala.inline
-  def apply(a: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  inline def apply(a: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
   @JSImport("gl-vec2/clone", JSImport.Namespace)
   @js.native

@@ -28,23 +28,18 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(integer: Boolean, max: Double, min: Double): Options = {
+    inline def apply(integer: Boolean, max: Double, min: Double): Options = {
       val __obj = js.Dynamic.literal(integer = integer.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setInteger(value: Boolean): Self = StObject.set(x, "integer", value.asInstanceOf[js.Any])
+      inline def setInteger(value: Boolean): Self = StObject.set(x, "integer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     }
   }
   
@@ -71,32 +66,24 @@ object mod extends Shortcut {
   }
   object UnparsedOptions {
     
-    @scala.inline
-    def apply(): UnparsedOptions = {
+    inline def apply(): UnparsedOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnparsedOptions]
     }
     
-    @scala.inline
-    implicit class UnparsedOptionsMutableBuilder[Self <: UnparsedOptions] (val x: Self) extends AnyVal {
+    extension [Self <: UnparsedOptions](x: Self) {
       
-      @scala.inline
-      def setInteger(value: Boolean): Self = StObject.set(x, "integer", value.asInstanceOf[js.Any])
+      inline def setInteger(value: Boolean): Self = StObject.set(x, "integer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntegerUndefined: Self = StObject.set(x, "integer", js.undefined)
+      inline def setIntegerUndefined: Self = StObject.set(x, "integer", js.undefined)
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     }
   }
   

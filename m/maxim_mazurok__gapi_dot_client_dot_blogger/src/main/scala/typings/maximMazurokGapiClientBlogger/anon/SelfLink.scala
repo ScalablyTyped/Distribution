@@ -14,25 +14,19 @@ trait SelfLink extends StObject {
 }
 object SelfLink {
   
-  @scala.inline
-  def apply(): SelfLink = {
+  inline def apply(): SelfLink = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SelfLink]
   }
   
-  @scala.inline
-  implicit class SelfLinkMutableBuilder[Self <: SelfLink] (val x: Self) extends AnyVal {
+  extension [Self <: SelfLink](x: Self) {
     
-    @scala.inline
-    def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
+    inline def setSelfLink(value: String): Self = StObject.set(x, "selfLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
+    inline def setSelfLinkUndefined: Self = StObject.set(x, "selfLink", js.undefined)
     
-    @scala.inline
-    def setTotalItems(value: Double): Self = StObject.set(x, "totalItems", value.asInstanceOf[js.Any])
+    inline def setTotalItems(value: Double): Self = StObject.set(x, "totalItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalItemsUndefined: Self = StObject.set(x, "totalItems", js.undefined)
+    inline def setTotalItemsUndefined: Self = StObject.set(x, "totalItems", js.undefined)
   }
 }

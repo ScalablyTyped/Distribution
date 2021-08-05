@@ -18,28 +18,21 @@ trait DBClusterParameterGroupsMessage extends StObject {
 }
 object DBClusterParameterGroupsMessage {
   
-  @scala.inline
-  def apply(): DBClusterParameterGroupsMessage = {
+  inline def apply(): DBClusterParameterGroupsMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DBClusterParameterGroupsMessage]
   }
   
-  @scala.inline
-  implicit class DBClusterParameterGroupsMessageMutableBuilder[Self <: DBClusterParameterGroupsMessage] (val x: Self) extends AnyVal {
+  extension [Self <: DBClusterParameterGroupsMessage](x: Self) {
     
-    @scala.inline
-    def setDBClusterParameterGroups(value: DBClusterParameterGroupList): Self = StObject.set(x, "DBClusterParameterGroups", value.asInstanceOf[js.Any])
+    inline def setDBClusterParameterGroups(value: DBClusterParameterGroupList): Self = StObject.set(x, "DBClusterParameterGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBClusterParameterGroupsUndefined: Self = StObject.set(x, "DBClusterParameterGroups", js.undefined)
+    inline def setDBClusterParameterGroupsUndefined: Self = StObject.set(x, "DBClusterParameterGroups", js.undefined)
     
-    @scala.inline
-    def setDBClusterParameterGroupsVarargs(value: DBClusterParameterGroup*): Self = StObject.set(x, "DBClusterParameterGroups", js.Array(value :_*))
+    inline def setDBClusterParameterGroupsVarargs(value: DBClusterParameterGroup*): Self = StObject.set(x, "DBClusterParameterGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

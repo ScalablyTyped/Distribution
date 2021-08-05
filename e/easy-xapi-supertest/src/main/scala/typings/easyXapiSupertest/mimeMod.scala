@@ -13,20 +13,15 @@ object mimeMod {
   @JSImport("mime", "charsets")
   @js.native
   def charsets: Charsets_ = js.native
-  @scala.inline
-  def charsets_=(x: Charsets_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("charsets")(x.asInstanceOf[js.Any])
+  inline def charsets_=(x: Charsets_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("charsets")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def define(mimes: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(mimes.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def define(mimes: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(mimes.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def `extension`(mime: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extension")(mime.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def `extension`(mime: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extension")(mime.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def load(filepath: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(filepath.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def load(filepath: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(filepath.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def lookup(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def lookup(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait Charsets_ extends StObject {
     
@@ -34,17 +29,14 @@ object mimeMod {
   }
   object Charsets_ {
     
-    @scala.inline
-    def apply(lookup: String => String): Charsets_ = {
+    inline def apply(lookup: String => String): Charsets_ = {
       val __obj = js.Dynamic.literal(lookup = js.Any.fromFunction1(lookup))
       __obj.asInstanceOf[Charsets_]
     }
     
-    @scala.inline
-    implicit class Charsets_MutableBuilder[Self <: Charsets_] (val x: Self) extends AnyVal {
+    extension [Self <: Charsets_](x: Self) {
       
-      @scala.inline
-      def setLookup(value: String => String): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
+      inline def setLookup(value: String => String): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
     }
   }
 }

@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlStorageIdentifierType extends StObject
 object OlStorageIdentifierType {
   
-  @scala.inline
-  def olIdentifyByEntryID: `1` = 1.asInstanceOf[`1`]
+  inline def olIdentifyByEntryID: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olIdentifyByMessageClass: `2` = 2.asInstanceOf[`2`]
+  inline def olIdentifyByMessageClass: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def olIdentifyBySubject: `0` = 0.asInstanceOf[`0`]
+  inline def olIdentifyBySubject: `0` = 0.asInstanceOf[`0`]
 }

@@ -13,16 +13,13 @@ trait GetPolicyRequest extends StObject {
 }
 object GetPolicyRequest {
   
-  @scala.inline
-  def apply(profilingGroupName: ProfilingGroupName): GetPolicyRequest = {
+  inline def apply(profilingGroupName: ProfilingGroupName): GetPolicyRequest = {
     val __obj = js.Dynamic.literal(profilingGroupName = profilingGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPolicyRequest]
   }
   
-  @scala.inline
-  implicit class GetPolicyRequestMutableBuilder[Self <: GetPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setProfilingGroupName(value: ProfilingGroupName): Self = StObject.set(x, "profilingGroupName", value.asInstanceOf[js.Any])
+    inline def setProfilingGroupName(value: ProfilingGroupName): Self = StObject.set(x, "profilingGroupName", value.asInstanceOf[js.Any])
   }
 }

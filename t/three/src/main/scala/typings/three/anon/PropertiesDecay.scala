@@ -12,22 +12,17 @@ trait PropertiesDecay extends StObject {
 }
 object PropertiesDecay {
   
-  @scala.inline
-  def apply(properties: Decay, value: js.Array[js.Any]): PropertiesDecay = {
+  inline def apply(properties: Decay, value: js.Array[js.Any]): PropertiesDecay = {
     val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[PropertiesDecay]
   }
   
-  @scala.inline
-  implicit class PropertiesDecayMutableBuilder[Self <: PropertiesDecay] (val x: Self) extends AnyVal {
+  extension [Self <: PropertiesDecay](x: Self) {
     
-    @scala.inline
-    def setProperties(value: Decay): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Decay): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

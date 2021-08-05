@@ -148,8 +148,7 @@ trait CMEventCallback extends StObject {
 }
 object CMEventCallback {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     connected: String => Unit,
     error: Error => Unit,
     logOnResponse: CMsgClientLogonResponse => Unit,
@@ -163,29 +162,22 @@ object CMEventCallback {
     __obj.asInstanceOf[CMEventCallback]
   }
   
-  @scala.inline
-  implicit class CMEventCallbackMutableBuilder[Self <: CMEventCallback] (val x: Self) extends AnyVal {
+  extension [Self <: CMEventCallback](x: Self) {
     
-    @scala.inline
-    def setConnected(value: String => Unit): Self = StObject.set(x, "connected", js.Any.fromFunction1(value))
+    inline def setConnected(value: String => Unit): Self = StObject.set(x, "connected", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setError(value: Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLogOnResponse(value: CMsgClientLogonResponse => Unit): Self = StObject.set(x, "logOnResponse", js.Any.fromFunction1(value))
+    inline def setLogOnResponse(value: CMsgClientLogonResponse => Unit): Self = StObject.set(x, "logOnResponse", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLoggedOff(value: EResult => Unit): Self = StObject.set(x, "loggedOff", js.Any.fromFunction1(value))
+    inline def setLoggedOff(value: EResult => Unit): Self = StObject.set(x, "loggedOff", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setMessage(
+    inline def setMessage(
       value: (/* header */ Msg, /* body */ Buffer | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ByteBuffer */ js.Any), /* callback */ js.UndefOr[
           (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias steam-client.steam-client.SendMessage */ js.Object) | `false`
         ]) => Unit
     ): Self = StObject.set(x, "message", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setServers(value: js.Array[Server] => Unit): Self = StObject.set(x, "servers", js.Any.fromFunction1(value))
+    inline def setServers(value: js.Array[Server] => Unit): Self = StObject.set(x, "servers", js.Any.fromFunction1(value))
   }
 }

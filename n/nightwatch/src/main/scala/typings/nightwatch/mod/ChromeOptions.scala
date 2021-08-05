@@ -81,103 +81,71 @@ trait ChromeOptions extends StObject {
 }
 object ChromeOptions {
   
-  @scala.inline
-  def apply(): ChromeOptions = {
+  inline def apply(): ChromeOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChromeOptions]
   }
   
-  @scala.inline
-  implicit class ChromeOptionsMutableBuilder[Self <: ChromeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChromeOptions](x: Self) {
     
-    @scala.inline
-    def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
+    inline def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
     
-    @scala.inline
-    def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
+    inline def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))
     
-    @scala.inline
-    def setBinary(value: String): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
+    inline def setBinary(value: String): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
+    inline def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
     
-    @scala.inline
-    def setDebuggerAddress(value: String): Self = StObject.set(x, "debuggerAddress", value.asInstanceOf[js.Any])
+    inline def setDebuggerAddress(value: String): Self = StObject.set(x, "debuggerAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebuggerAddressUndefined: Self = StObject.set(x, "debuggerAddress", js.undefined)
+    inline def setDebuggerAddressUndefined: Self = StObject.set(x, "debuggerAddress", js.undefined)
     
-    @scala.inline
-    def setDetach(value: Boolean): Self = StObject.set(x, "detach", value.asInstanceOf[js.Any])
+    inline def setDetach(value: Boolean): Self = StObject.set(x, "detach", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetachUndefined: Self = StObject.set(x, "detach", js.undefined)
+    inline def setDetachUndefined: Self = StObject.set(x, "detach", js.undefined)
     
-    @scala.inline
-    def setExcludeSwitches(value: js.Array[String]): Self = StObject.set(x, "excludeSwitches", value.asInstanceOf[js.Any])
+    inline def setExcludeSwitches(value: js.Array[String]): Self = StObject.set(x, "excludeSwitches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludeSwitchesUndefined: Self = StObject.set(x, "excludeSwitches", js.undefined)
+    inline def setExcludeSwitchesUndefined: Self = StObject.set(x, "excludeSwitches", js.undefined)
     
-    @scala.inline
-    def setExcludeSwitchesVarargs(value: String*): Self = StObject.set(x, "excludeSwitches", js.Array(value :_*))
+    inline def setExcludeSwitchesVarargs(value: String*): Self = StObject.set(x, "excludeSwitches", js.Array(value :_*))
     
-    @scala.inline
-    def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+    inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+    inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
     
-    @scala.inline
-    def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+    inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
-    @scala.inline
-    def setLocalState(value: Record[String, String]): Self = StObject.set(x, "localState", value.asInstanceOf[js.Any])
+    inline def setLocalState(value: Record[String, String]): Self = StObject.set(x, "localState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocalStateUndefined: Self = StObject.set(x, "localState", js.undefined)
+    inline def setLocalStateUndefined: Self = StObject.set(x, "localState", js.undefined)
     
-    @scala.inline
-    def setMinidumpPath(value: String): Self = StObject.set(x, "minidumpPath", value.asInstanceOf[js.Any])
+    inline def setMinidumpPath(value: String): Self = StObject.set(x, "minidumpPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinidumpPathUndefined: Self = StObject.set(x, "minidumpPath", js.undefined)
+    inline def setMinidumpPathUndefined: Self = StObject.set(x, "minidumpPath", js.undefined)
     
-    @scala.inline
-    def setMobileEmulation(value: Record[String, String]): Self = StObject.set(x, "mobileEmulation", value.asInstanceOf[js.Any])
+    inline def setMobileEmulation(value: Record[String, String]): Self = StObject.set(x, "mobileEmulation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMobileEmulationUndefined: Self = StObject.set(x, "mobileEmulation", js.undefined)
+    inline def setMobileEmulationUndefined: Self = StObject.set(x, "mobileEmulation", js.undefined)
     
-    @scala.inline
-    def setPerfLoggingPrefs(value: ChromePerfLoggingPrefs): Self = StObject.set(x, "perfLoggingPrefs", value.asInstanceOf[js.Any])
+    inline def setPerfLoggingPrefs(value: ChromePerfLoggingPrefs): Self = StObject.set(x, "perfLoggingPrefs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerfLoggingPrefsUndefined: Self = StObject.set(x, "perfLoggingPrefs", js.undefined)
+    inline def setPerfLoggingPrefsUndefined: Self = StObject.set(x, "perfLoggingPrefs", js.undefined)
     
-    @scala.inline
-    def setPrefs(value: Record[String, String]): Self = StObject.set(x, "prefs", value.asInstanceOf[js.Any])
+    inline def setPrefs(value: Record[String, String]): Self = StObject.set(x, "prefs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefsUndefined: Self = StObject.set(x, "prefs", js.undefined)
+    inline def setPrefsUndefined: Self = StObject.set(x, "prefs", js.undefined)
     
-    @scala.inline
-    def setW3c(value: Boolean): Self = StObject.set(x, "w3c", value.asInstanceOf[js.Any])
+    inline def setW3c(value: Boolean): Self = StObject.set(x, "w3c", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setW3cUndefined: Self = StObject.set(x, "w3c", js.undefined)
+    inline def setW3cUndefined: Self = StObject.set(x, "w3c", js.undefined)
     
-    @scala.inline
-    def setWindowTypes(value: js.Array[String]): Self = StObject.set(x, "windowTypes", value.asInstanceOf[js.Any])
+    inline def setWindowTypes(value: js.Array[String]): Self = StObject.set(x, "windowTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWindowTypesUndefined: Self = StObject.set(x, "windowTypes", js.undefined)
+    inline def setWindowTypesUndefined: Self = StObject.set(x, "windowTypes", js.undefined)
     
-    @scala.inline
-    def setWindowTypesVarargs(value: String*): Self = StObject.set(x, "windowTypes", js.Array(value :_*))
+    inline def setWindowTypesVarargs(value: String*): Self = StObject.set(x, "windowTypes", js.Array(value :_*))
   }
 }

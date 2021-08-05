@@ -10,19 +10,15 @@ trait AddWorkingStorageOutput extends StObject {
 }
 object AddWorkingStorageOutput {
   
-  @scala.inline
-  def apply(): AddWorkingStorageOutput = {
+  inline def apply(): AddWorkingStorageOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AddWorkingStorageOutput]
   }
   
-  @scala.inline
-  implicit class AddWorkingStorageOutputMutableBuilder[Self <: AddWorkingStorageOutput] (val x: Self) extends AnyVal {
+  extension [Self <: AddWorkingStorageOutput](x: Self) {
     
-    @scala.inline
-    def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
+    inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
+    inline def setGatewayARNUndefined: Self = StObject.set(x, "GatewayARN", js.undefined)
   }
 }

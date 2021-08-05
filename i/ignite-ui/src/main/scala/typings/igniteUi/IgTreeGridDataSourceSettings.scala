@@ -46,43 +46,31 @@ trait IgTreeGridDataSourceSettings
 }
 object IgTreeGridDataSourceSettings {
   
-  @scala.inline
-  def apply(): IgTreeGridDataSourceSettings = {
+  inline def apply(): IgTreeGridDataSourceSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IgTreeGridDataSourceSettings]
   }
   
-  @scala.inline
-  implicit class IgTreeGridDataSourceSettingsMutableBuilder[Self <: IgTreeGridDataSourceSettings] (val x: Self) extends AnyVal {
+  extension [Self <: IgTreeGridDataSourceSettings](x: Self) {
     
-    @scala.inline
-    def setDataLevelKey(value: String): Self = StObject.set(x, "dataLevelKey", value.asInstanceOf[js.Any])
+    inline def setDataLevelKey(value: String): Self = StObject.set(x, "dataLevelKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataLevelKeyUndefined: Self = StObject.set(x, "dataLevelKey", js.undefined)
+    inline def setDataLevelKeyUndefined: Self = StObject.set(x, "dataLevelKey", js.undefined)
     
-    @scala.inline
-    def setExpandedKey(value: String): Self = StObject.set(x, "expandedKey", value.asInstanceOf[js.Any])
+    inline def setExpandedKey(value: String): Self = StObject.set(x, "expandedKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedKeyUndefined: Self = StObject.set(x, "expandedKey", js.undefined)
+    inline def setExpandedKeyUndefined: Self = StObject.set(x, "expandedKey", js.undefined)
     
-    @scala.inline
-    def setInitialFlatDataView(value: Boolean): Self = StObject.set(x, "initialFlatDataView", value.asInstanceOf[js.Any])
+    inline def setInitialFlatDataView(value: Boolean): Self = StObject.set(x, "initialFlatDataView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitialFlatDataViewUndefined: Self = StObject.set(x, "initialFlatDataView", js.undefined)
+    inline def setInitialFlatDataViewUndefined: Self = StObject.set(x, "initialFlatDataView", js.undefined)
     
-    @scala.inline
-    def setPropertyDataLevel(value: js.Any): Self = StObject.set(x, "propertyDataLevel", value.asInstanceOf[js.Any])
+    inline def setPropertyDataLevel(value: js.Any): Self = StObject.set(x, "propertyDataLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyDataLevelUndefined: Self = StObject.set(x, "propertyDataLevel", js.undefined)
+    inline def setPropertyDataLevelUndefined: Self = StObject.set(x, "propertyDataLevel", js.undefined)
     
-    @scala.inline
-    def setPropertyExpanded(value: js.Any): Self = StObject.set(x, "propertyExpanded", value.asInstanceOf[js.Any])
+    inline def setPropertyExpanded(value: js.Any): Self = StObject.set(x, "propertyExpanded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyExpandedUndefined: Self = StObject.set(x, "propertyExpanded", js.undefined)
+    inline def setPropertyExpandedUndefined: Self = StObject.set(x, "propertyExpanded", js.undefined)
   }
 }

@@ -43,8 +43,7 @@ trait Parameters extends StObject {
 }
 object Parameters {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deviceScaleFactor: Double,
     scale: Double,
     screenPosition: desktop | mobile,
@@ -56,25 +55,18 @@ object Parameters {
     __obj.asInstanceOf[Parameters]
   }
   
-  @scala.inline
-  implicit class ParametersMutableBuilder[Self <: Parameters] (val x: Self) extends AnyVal {
+  extension [Self <: Parameters](x: Self) {
     
-    @scala.inline
-    def setDeviceScaleFactor(value: Double): Self = StObject.set(x, "deviceScaleFactor", value.asInstanceOf[js.Any])
+    inline def setDeviceScaleFactor(value: Double): Self = StObject.set(x, "deviceScaleFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenPosition(value: desktop | mobile): Self = StObject.set(x, "screenPosition", value.asInstanceOf[js.Any])
+    inline def setScreenPosition(value: desktop | mobile): Self = StObject.set(x, "screenPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenSize(value: Size): Self = StObject.set(x, "screenSize", value.asInstanceOf[js.Any])
+    inline def setScreenSize(value: Size): Self = StObject.set(x, "screenSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewPosition(value: Point): Self = StObject.set(x, "viewPosition", value.asInstanceOf[js.Any])
+    inline def setViewPosition(value: Point): Self = StObject.set(x, "viewPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewSize(value: Size): Self = StObject.set(x, "viewSize", value.asInstanceOf[js.Any])
+    inline def setViewSize(value: Size): Self = StObject.set(x, "viewSize", value.asInstanceOf[js.Any])
   }
 }

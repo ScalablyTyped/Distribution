@@ -12,22 +12,17 @@ trait Cols extends StObject {
 }
 object Cols {
   
-  @scala.inline
-  def apply(cols: js.Array[Key], selMinute: js.Any): Cols = {
+  inline def apply(cols: js.Array[Key], selMinute: js.Any): Cols = {
     val __obj = js.Dynamic.literal(cols = cols.asInstanceOf[js.Any], selMinute = selMinute.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cols]
   }
   
-  @scala.inline
-  implicit class ColsMutableBuilder[Self <: Cols] (val x: Self) extends AnyVal {
+  extension [Self <: Cols](x: Self) {
     
-    @scala.inline
-    def setCols(value: js.Array[Key]): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+    inline def setCols(value: js.Array[Key]): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColsVarargs(value: Key*): Self = StObject.set(x, "cols", js.Array(value :_*))
+    inline def setColsVarargs(value: Key*): Self = StObject.set(x, "cols", js.Array(value :_*))
     
-    @scala.inline
-    def setSelMinute(value: js.Any): Self = StObject.set(x, "selMinute", value.asInstanceOf[js.Any])
+    inline def setSelMinute(value: js.Any): Self = StObject.set(x, "selMinute", value.asInstanceOf[js.Any])
   }
 }

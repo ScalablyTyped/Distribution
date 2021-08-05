@@ -12,19 +12,15 @@ trait PDFRef extends StObject {
 }
 object PDFRef {
   
-  @scala.inline
-  def apply(gen: js.Any, num: Double): PDFRef = {
+  inline def apply(gen: js.Any, num: Double): PDFRef = {
     val __obj = js.Dynamic.literal(gen = gen.asInstanceOf[js.Any], num = num.asInstanceOf[js.Any])
     __obj.asInstanceOf[PDFRef]
   }
   
-  @scala.inline
-  implicit class PDFRefMutableBuilder[Self <: PDFRef] (val x: Self) extends AnyVal {
+  extension [Self <: PDFRef](x: Self) {
     
-    @scala.inline
-    def setGen(value: js.Any): Self = StObject.set(x, "gen", value.asInstanceOf[js.Any])
+    inline def setGen(value: js.Any): Self = StObject.set(x, "gen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNum(value: Double): Self = StObject.set(x, "num", value.asInstanceOf[js.Any])
+    inline def setNum(value: Double): Self = StObject.set(x, "num", value.asInstanceOf[js.Any])
   }
 }

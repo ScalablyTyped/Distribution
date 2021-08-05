@@ -37,7 +37,7 @@ object partListPropertyMod {
       moreArgs: js.Any*
     ) = this()
     
-    var _detaching: js.Any = js.native
+    /* private */ var _detaching: js.Any = js.native
     
     def detachChild(child: T): Unit = js.native
     

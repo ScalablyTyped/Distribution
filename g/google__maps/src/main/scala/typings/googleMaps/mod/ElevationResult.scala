@@ -25,22 +25,17 @@ trait ElevationResult extends StObject {
 }
 object ElevationResult {
   
-  @scala.inline
-  def apply(elevation: Double, location: LatLngLiteral, resolution: Double): ElevationResult = {
+  inline def apply(elevation: Double, location: LatLngLiteral, resolution: Double): ElevationResult = {
     val __obj = js.Dynamic.literal(elevation = elevation.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], resolution = resolution.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElevationResult]
   }
   
-  @scala.inline
-  implicit class ElevationResultMutableBuilder[Self <: ElevationResult] (val x: Self) extends AnyVal {
+  extension [Self <: ElevationResult](x: Self) {
     
-    @scala.inline
-    def setElevation(value: Double): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
+    inline def setElevation(value: Double): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocation(value: LatLngLiteral): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: LatLngLiteral): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
+    inline def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
   }
 }

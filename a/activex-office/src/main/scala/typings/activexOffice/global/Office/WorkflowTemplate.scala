@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.WorkflowTemplate")
 @js.native
-class WorkflowTemplate protected ()
+/* private */ class WorkflowTemplate ()
   extends StObject
      with typings.activexOffice.Office.WorkflowTemplate {
   
@@ -31,7 +31,7 @@ class WorkflowTemplate protected ()
   /* CompleteClass */
   override val Name: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.WorkflowTemplate_typekey")
   var OfficeDotWorkflowTemplate_typekey: typings.activexOffice.Office.WorkflowTemplate = js.native
   

@@ -12,19 +12,15 @@ trait QueryTablesOptions
 }
 object QueryTablesOptions {
   
-  @scala.inline
-  def apply(): QueryTablesOptions = {
+  inline def apply(): QueryTablesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryTablesOptions]
   }
   
-  @scala.inline
-  implicit class QueryTablesOptionsMutableBuilder[Self <: QueryTablesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: QueryTablesOptions](x: Self) {
     
-    @scala.inline
-    def setNextTableName(value: String): Self = StObject.set(x, "nextTableName", value.asInstanceOf[js.Any])
+    inline def setNextTableName(value: String): Self = StObject.set(x, "nextTableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTableNameUndefined: Self = StObject.set(x, "nextTableName", js.undefined)
+    inline def setNextTableNameUndefined: Self = StObject.set(x, "nextTableName", js.undefined)
   }
 }

@@ -14,23 +14,18 @@ trait ApplicationBaseEvent extends StObject {
 }
 object ApplicationBaseEvent {
   
-  @scala.inline
-  def apply(topic: String, `type`: OpenFinApplicationEventType, uuid: String): ApplicationBaseEvent = {
+  inline def apply(topic: String, `type`: OpenFinApplicationEventType, uuid: String): ApplicationBaseEvent = {
     val __obj = js.Dynamic.literal(topic = topic.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationBaseEvent]
   }
   
-  @scala.inline
-  implicit class ApplicationBaseEventMutableBuilder[Self <: ApplicationBaseEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationBaseEvent](x: Self) {
     
-    @scala.inline
-    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: OpenFinApplicationEventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: OpenFinApplicationEventType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+    inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
   }
 }

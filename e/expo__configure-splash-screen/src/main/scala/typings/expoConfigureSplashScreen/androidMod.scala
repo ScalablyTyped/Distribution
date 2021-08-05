@@ -11,6 +11,5 @@ object androidMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(projectRootPath: String, configJSON: AndroidSplashScreenConfigJSON): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(projectRootPath.asInstanceOf[js.Any], configJSON.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  inline def default(projectRootPath: String, configJSON: AndroidSplashScreenConfigJSON): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(projectRootPath.asInstanceOf[js.Any], configJSON.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

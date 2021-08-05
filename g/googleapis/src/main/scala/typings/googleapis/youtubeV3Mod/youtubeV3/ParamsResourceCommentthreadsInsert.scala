@@ -31,31 +31,23 @@ trait ParamsResourceCommentthreadsInsert
 }
 object ParamsResourceCommentthreadsInsert {
   
-  @scala.inline
-  def apply(): ParamsResourceCommentthreadsInsert = {
+  inline def apply(): ParamsResourceCommentthreadsInsert = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceCommentthreadsInsert]
   }
   
-  @scala.inline
-  implicit class ParamsResourceCommentthreadsInsertMutableBuilder[Self <: ParamsResourceCommentthreadsInsert] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceCommentthreadsInsert](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
+    inline def setPart(value: String): Self = StObject.set(x, "part", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartUndefined: Self = StObject.set(x, "part", js.undefined)
+    inline def setPartUndefined: Self = StObject.set(x, "part", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaCommentThread): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaCommentThread): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

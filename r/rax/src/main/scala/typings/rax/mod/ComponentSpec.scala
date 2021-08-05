@@ -14,16 +14,13 @@ trait ComponentSpec[P, S]
 }
 object ComponentSpec {
   
-  @scala.inline
-  def apply[P, S](render: () => RaxNode): ComponentSpec[P, S] = {
+  inline def apply[P, S](render: () => RaxNode): ComponentSpec[P, S] = {
     val __obj = js.Dynamic.literal(render = js.Any.fromFunction0(render))
     __obj.asInstanceOf[ComponentSpec[P, S]]
   }
   
-  @scala.inline
-  implicit class ComponentSpecMutableBuilder[Self <: ComponentSpec[?, ?], P, S] (val x: Self & (ComponentSpec[P, S])) extends AnyVal {
+  extension [Self <: ComponentSpec[?, ?], P, S](x: Self & (ComponentSpec[P, S])) {
     
-    @scala.inline
-    def setRender(value: () => RaxNode): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
+    inline def setRender(value: () => RaxNode): Self = StObject.set(x, "render", js.Any.fromFunction0(value))
   }
 }

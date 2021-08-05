@@ -14,22 +14,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WriteParams extends StObject
 object WriteParams {
   
-  @scala.inline
-  def Data(data: BufferSource | Blob | String): typings.wicgFileSystemAccess.anon.Data = {
+  inline def Data(data: BufferSource | Blob | String): typings.wicgFileSystemAccess.anon.Data = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("write")
     __obj.asInstanceOf[typings.wicgFileSystemAccess.anon.Data]
   }
   
-  @scala.inline
-  def Position(position: Double): typings.wicgFileSystemAccess.anon.Position = {
+  inline def Position(position: Double): typings.wicgFileSystemAccess.anon.Position = {
     val __obj = js.Dynamic.literal(position = position.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("seek")
     __obj.asInstanceOf[typings.wicgFileSystemAccess.anon.Position]
   }
   
-  @scala.inline
-  def Size(size: Double): typings.wicgFileSystemAccess.anon.Size = {
+  inline def Size(size: Double): typings.wicgFileSystemAccess.anon.Size = {
     val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("truncate")
     __obj.asInstanceOf[typings.wicgFileSystemAccess.anon.Size]

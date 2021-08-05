@@ -22,49 +22,35 @@ trait PartialStyleRulesListItem extends StObject {
 }
 object PartialStyleRulesListItem {
   
-  @scala.inline
-  def apply(): PartialStyleRulesListItem = {
+  inline def apply(): PartialStyleRulesListItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesListItem]
   }
   
-  @scala.inline
-  implicit class PartialStyleRulesListItemMutableBuilder[Self <: PartialStyleRulesListItem] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleRulesListItem](x: Self) {
     
-    @scala.inline
-    def setDense(value: CSSProperties): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
+    inline def setDense(value: CSSProperties): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
+    inline def setDenseUndefined: Self = StObject.set(x, "dense", js.undefined)
     
-    @scala.inline
-    def setInset(value: CSSProperties): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
+    inline def setInset(value: CSSProperties): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
+    inline def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
     
-    @scala.inline
-    def setPrimary(value: CSSProperties): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
+    inline def setPrimary(value: CSSProperties): Self = StObject.set(x, "primary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
+    inline def setPrimaryUndefined: Self = StObject.set(x, "primary", js.undefined)
     
-    @scala.inline
-    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setSecondary(value: CSSProperties): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
+    inline def setSecondary(value: CSSProperties): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
+    inline def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
     
-    @scala.inline
-    def setTextDense(value: CSSProperties): Self = StObject.set(x, "textDense", value.asInstanceOf[js.Any])
+    inline def setTextDense(value: CSSProperties): Self = StObject.set(x, "textDense", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextDenseUndefined: Self = StObject.set(x, "textDense", js.undefined)
+    inline def setTextDenseUndefined: Self = StObject.set(x, "textDense", js.undefined)
   }
 }

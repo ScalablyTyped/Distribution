@@ -46,74 +46,53 @@ trait OperationMetadata extends StObject {
 }
 object OperationMetadata {
   
-  @scala.inline
-  def apply(): OperationMetadata = {
+  inline def apply(): OperationMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OperationMetadata]
   }
   
-  @scala.inline
-  implicit class OperationMetadataMutableBuilder[Self <: OperationMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: OperationMetadata](x: Self) {
     
-    @scala.inline
-    def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+    inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
+    inline def setEndTimeUndefined: Self = StObject.set(x, "endTime", js.undefined)
     
-    @scala.inline
-    def setOperationStatus(
+    inline def setOperationStatus(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.gameservices.gapi.client.gameservices.OperationStatus}
       */ typings.maximMazurokGapiClientGameservices.maximMazurokGapiClientGameservicesStrings.OperationMetadata & TopLevel[js.Any]
     ): Self = StObject.set(x, "operationStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationStatusUndefined: Self = StObject.set(x, "operationStatus", js.undefined)
+    inline def setOperationStatusUndefined: Self = StObject.set(x, "operationStatus", js.undefined)
     
-    @scala.inline
-    def setRequestedCancellation(value: Boolean): Self = StObject.set(x, "requestedCancellation", value.asInstanceOf[js.Any])
+    inline def setRequestedCancellation(value: Boolean): Self = StObject.set(x, "requestedCancellation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestedCancellationUndefined: Self = StObject.set(x, "requestedCancellation", js.undefined)
+    inline def setRequestedCancellationUndefined: Self = StObject.set(x, "requestedCancellation", js.undefined)
     
-    @scala.inline
-    def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
+    inline def setStatusMessageUndefined: Self = StObject.set(x, "statusMessage", js.undefined)
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    @scala.inline
-    def setUnreachable(value: js.Array[String]): Self = StObject.set(x, "unreachable", value.asInstanceOf[js.Any])
+    inline def setUnreachable(value: js.Array[String]): Self = StObject.set(x, "unreachable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnreachableUndefined: Self = StObject.set(x, "unreachable", js.undefined)
+    inline def setUnreachableUndefined: Self = StObject.set(x, "unreachable", js.undefined)
     
-    @scala.inline
-    def setUnreachableVarargs(value: String*): Self = StObject.set(x, "unreachable", js.Array(value :_*))
+    inline def setUnreachableVarargs(value: String*): Self = StObject.set(x, "unreachable", js.Array(value :_*))
     
-    @scala.inline
-    def setVerb(value: String): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
+    inline def setVerb(value: String): Self = StObject.set(x, "verb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerbUndefined: Self = StObject.set(x, "verb", js.undefined)
+    inline def setVerbUndefined: Self = StObject.set(x, "verb", js.undefined)
   }
 }

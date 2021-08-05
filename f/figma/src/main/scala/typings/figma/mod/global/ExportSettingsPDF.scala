@@ -18,28 +18,21 @@ trait ExportSettingsPDF
 }
 object ExportSettingsPDF {
   
-  @scala.inline
-  def apply(): ExportSettingsPDF = {
+  inline def apply(): ExportSettingsPDF = {
     val __obj = js.Dynamic.literal(format = "PDF")
     __obj.asInstanceOf[ExportSettingsPDF]
   }
   
-  @scala.inline
-  implicit class ExportSettingsPDFMutableBuilder[Self <: ExportSettingsPDF] (val x: Self) extends AnyVal {
+  extension [Self <: ExportSettingsPDF](x: Self) {
     
-    @scala.inline
-    def setContentsOnly(value: Boolean): Self = StObject.set(x, "contentsOnly", value.asInstanceOf[js.Any])
+    inline def setContentsOnly(value: Boolean): Self = StObject.set(x, "contentsOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentsOnlyUndefined: Self = StObject.set(x, "contentsOnly", js.undefined)
+    inline def setContentsOnlyUndefined: Self = StObject.set(x, "contentsOnly", js.undefined)
     
-    @scala.inline
-    def setFormat(value: PDF): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: PDF): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
+    inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
+    inline def setSuffixUndefined: Self = StObject.set(x, "suffix", js.undefined)
   }
 }

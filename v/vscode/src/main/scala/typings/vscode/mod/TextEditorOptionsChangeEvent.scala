@@ -18,19 +18,15 @@ trait TextEditorOptionsChangeEvent extends StObject {
 }
 object TextEditorOptionsChangeEvent {
   
-  @scala.inline
-  def apply(options: TextEditorOptions, textEditor: TextEditor): TextEditorOptionsChangeEvent = {
+  inline def apply(options: TextEditorOptions, textEditor: TextEditor): TextEditorOptionsChangeEvent = {
     val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], textEditor = textEditor.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextEditorOptionsChangeEvent]
   }
   
-  @scala.inline
-  implicit class TextEditorOptionsChangeEventMutableBuilder[Self <: TextEditorOptionsChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: TextEditorOptionsChangeEvent](x: Self) {
     
-    @scala.inline
-    def setOptions(value: TextEditorOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: TextEditorOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextEditor(value: TextEditor): Self = StObject.set(x, "textEditor", value.asInstanceOf[js.Any])
+    inline def setTextEditor(value: TextEditor): Self = StObject.set(x, "textEditor", value.asInstanceOf[js.Any])
   }
 }

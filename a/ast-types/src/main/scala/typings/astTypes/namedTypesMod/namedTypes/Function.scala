@@ -44,6 +44,5 @@ trait Function
 }
 object Function {
   
-  @scala.inline
-  def apply: Type[Function] = ^.asInstanceOf[js.Dynamic].selectDynamic("Function").asInstanceOf[Type[Function]]
+  inline def apply: Type[Function] = ^.asInstanceOf[js.Dynamic].selectDynamic("Function").asInstanceOf[Type[Function]]
 }

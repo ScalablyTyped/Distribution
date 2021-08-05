@@ -17,13 +17,10 @@ object DataResultFlags {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ERROR: `4` = 4.asInstanceOf[`4`]
+    inline def ERROR: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def HASDATA: `1` = 1.asInstanceOf[`1`]
+    inline def HASDATA: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def SUBTOTAL: `2` = 2.asInstanceOf[`2`]
+    inline def SUBTOTAL: `2` = 2.asInstanceOf[`2`]
   }
 }

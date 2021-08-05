@@ -13,16 +13,13 @@ trait DescribeRecipeRequest extends StObject {
 }
 object DescribeRecipeRequest {
   
-  @scala.inline
-  def apply(recipeArn: Arn): DescribeRecipeRequest = {
+  inline def apply(recipeArn: Arn): DescribeRecipeRequest = {
     val __obj = js.Dynamic.literal(recipeArn = recipeArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeRecipeRequest]
   }
   
-  @scala.inline
-  implicit class DescribeRecipeRequestMutableBuilder[Self <: DescribeRecipeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeRecipeRequest](x: Self) {
     
-    @scala.inline
-    def setRecipeArn(value: Arn): Self = StObject.set(x, "recipeArn", value.asInstanceOf[js.Any])
+    inline def setRecipeArn(value: Arn): Self = StObject.set(x, "recipeArn", value.asInstanceOf[js.Any])
   }
 }

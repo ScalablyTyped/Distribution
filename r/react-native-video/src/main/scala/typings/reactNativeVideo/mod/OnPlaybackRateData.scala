@@ -10,16 +10,13 @@ trait OnPlaybackRateData extends StObject {
 }
 object OnPlaybackRateData {
   
-  @scala.inline
-  def apply(playbackRate: Double): OnPlaybackRateData = {
+  inline def apply(playbackRate: Double): OnPlaybackRateData = {
     val __obj = js.Dynamic.literal(playbackRate = playbackRate.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnPlaybackRateData]
   }
   
-  @scala.inline
-  implicit class OnPlaybackRateDataMutableBuilder[Self <: OnPlaybackRateData] (val x: Self) extends AnyVal {
+  extension [Self <: OnPlaybackRateData](x: Self) {
     
-    @scala.inline
-    def setPlaybackRate(value: Double): Self = StObject.set(x, "playbackRate", value.asInstanceOf[js.Any])
+    inline def setPlaybackRate(value: Double): Self = StObject.set(x, "playbackRate", value.asInstanceOf[js.Any])
   }
 }

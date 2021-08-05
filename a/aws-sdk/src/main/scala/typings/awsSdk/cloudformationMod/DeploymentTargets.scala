@@ -18,31 +18,23 @@ trait DeploymentTargets extends StObject {
 }
 object DeploymentTargets {
   
-  @scala.inline
-  def apply(): DeploymentTargets = {
+  inline def apply(): DeploymentTargets = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeploymentTargets]
   }
   
-  @scala.inline
-  implicit class DeploymentTargetsMutableBuilder[Self <: DeploymentTargets] (val x: Self) extends AnyVal {
+  extension [Self <: DeploymentTargets](x: Self) {
     
-    @scala.inline
-    def setAccounts(value: AccountList): Self = StObject.set(x, "Accounts", value.asInstanceOf[js.Any])
+    inline def setAccounts(value: AccountList): Self = StObject.set(x, "Accounts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountsUndefined: Self = StObject.set(x, "Accounts", js.undefined)
+    inline def setAccountsUndefined: Self = StObject.set(x, "Accounts", js.undefined)
     
-    @scala.inline
-    def setAccountsVarargs(value: Account*): Self = StObject.set(x, "Accounts", js.Array(value :_*))
+    inline def setAccountsVarargs(value: Account*): Self = StObject.set(x, "Accounts", js.Array(value :_*))
     
-    @scala.inline
-    def setOrganizationalUnitIds(value: OrganizationalUnitIdList): Self = StObject.set(x, "OrganizationalUnitIds", value.asInstanceOf[js.Any])
+    inline def setOrganizationalUnitIds(value: OrganizationalUnitIdList): Self = StObject.set(x, "OrganizationalUnitIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationalUnitIdsUndefined: Self = StObject.set(x, "OrganizationalUnitIds", js.undefined)
+    inline def setOrganizationalUnitIdsUndefined: Self = StObject.set(x, "OrganizationalUnitIds", js.undefined)
     
-    @scala.inline
-    def setOrganizationalUnitIdsVarargs(value: OrganizationalUnitId*): Self = StObject.set(x, "OrganizationalUnitIds", js.Array(value :_*))
+    inline def setOrganizationalUnitIdsVarargs(value: OrganizationalUnitId*): Self = StObject.set(x, "OrganizationalUnitIds", js.Array(value :_*))
   }
 }

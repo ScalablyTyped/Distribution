@@ -21,34 +21,25 @@ trait ParsedTemplate extends StObject {
 }
 object ParsedTemplate {
   
-  @scala.inline
-  def apply(t: js.Array[js.Any], v: Double): ParsedTemplate = {
+  inline def apply(t: js.Array[js.Any], v: Double): ParsedTemplate = {
     val __obj = js.Dynamic.literal(t = t.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParsedTemplate]
   }
   
-  @scala.inline
-  implicit class ParsedTemplateMutableBuilder[Self <: ParsedTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: ParsedTemplate](x: Self) {
     
-    @scala.inline
-    def setE(value: StringDictionary[js.Function]): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+    inline def setE(value: StringDictionary[js.Function]): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEUndefined: Self = StObject.set(x, "e", js.undefined)
+    inline def setEUndefined: Self = StObject.set(x, "e", js.undefined)
     
-    @scala.inline
-    def setP(value: StringDictionary[js.Array[js.Any]]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+    inline def setP(value: StringDictionary[js.Array[js.Any]]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPUndefined: Self = StObject.set(x, "p", js.undefined)
+    inline def setPUndefined: Self = StObject.set(x, "p", js.undefined)
     
-    @scala.inline
-    def setT(value: js.Array[js.Any]): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
+    inline def setT(value: js.Array[js.Any]): Self = StObject.set(x, "t", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTVarargs(value: js.Any*): Self = StObject.set(x, "t", js.Array(value :_*))
+    inline def setTVarargs(value: js.Any*): Self = StObject.set(x, "t", js.Array(value :_*))
     
-    @scala.inline
-    def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+    inline def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
   }
 }

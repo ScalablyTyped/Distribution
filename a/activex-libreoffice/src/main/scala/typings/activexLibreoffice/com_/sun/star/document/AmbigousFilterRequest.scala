@@ -29,22 +29,17 @@ trait AmbigousFilterRequest
 }
 object AmbigousFilterRequest {
   
-  @scala.inline
-  def apply(Context: XInterface, DetectedFilter: String, Message: String, SelectedFilter: String, URL: String): AmbigousFilterRequest = {
+  inline def apply(Context: XInterface, DetectedFilter: String, Message: String, SelectedFilter: String, URL: String): AmbigousFilterRequest = {
     val __obj = js.Dynamic.literal(Context = Context.asInstanceOf[js.Any], DetectedFilter = DetectedFilter.asInstanceOf[js.Any], Message = Message.asInstanceOf[js.Any], SelectedFilter = SelectedFilter.asInstanceOf[js.Any], URL = URL.asInstanceOf[js.Any])
     __obj.asInstanceOf[AmbigousFilterRequest]
   }
   
-  @scala.inline
-  implicit class AmbigousFilterRequestMutableBuilder[Self <: AmbigousFilterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AmbigousFilterRequest](x: Self) {
     
-    @scala.inline
-    def setDetectedFilter(value: String): Self = StObject.set(x, "DetectedFilter", value.asInstanceOf[js.Any])
+    inline def setDetectedFilter(value: String): Self = StObject.set(x, "DetectedFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedFilter(value: String): Self = StObject.set(x, "SelectedFilter", value.asInstanceOf[js.Any])
+    inline def setSelectedFilter(value: String): Self = StObject.set(x, "SelectedFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
+    inline def setURL(value: String): Self = StObject.set(x, "URL", value.asInstanceOf[js.Any])
   }
 }

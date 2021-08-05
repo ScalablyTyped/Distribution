@@ -28,8 +28,7 @@ object mod {
     }
     object StorageProvider {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         get: String => js.Any | Boolean,
         remove: String => Unit,
         set: (String, js.Any) => js.Any | Boolean,
@@ -42,29 +41,21 @@ object mod {
         __obj.asInstanceOf[StorageProvider]
       }
       
-      @scala.inline
-      implicit class StorageProviderMutableBuilder[Self <: StorageProvider] (val x: Self) extends AnyVal {
+      extension [Self <: StorageProvider](x: Self) {
         
-        @scala.inline
-        def setGet(value: String => js.Any | Boolean): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+        inline def setGet(value: String => js.Any | Boolean): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+        inline def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSet(value: (String, js.Any) => js.Any | Boolean): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+        inline def setSet(value: (String, js.Any) => js.Any | Boolean): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setSetDeserializer(value: js.Function1[/* value */ String, js.Any] => Unit): Self = StObject.set(x, "setDeserializer", js.Any.fromFunction1(value))
+        inline def setSetDeserializer(value: js.Function1[/* value */ String, js.Any] => Unit): Self = StObject.set(x, "setDeserializer", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetKeyPrefix(value: String => Unit): Self = StObject.set(x, "setKeyPrefix", js.Any.fromFunction1(value))
+        inline def setSetKeyPrefix(value: String => Unit): Self = StObject.set(x, "setKeyPrefix", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetSerializer(value: js.Function1[/* value */ js.Any, String] => Unit): Self = StObject.set(x, "setSerializer", js.Any.fromFunction1(value))
+        inline def setSetSerializer(value: js.Function1[/* value */ js.Any, String] => Unit): Self = StObject.set(x, "setSerializer", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSupported(value: () => Boolean): Self = StObject.set(x, "supported", js.Any.fromFunction0(value))
+        inline def setSupported(value: () => Boolean): Self = StObject.set(x, "supported", js.Any.fromFunction0(value))
       }
     }
     

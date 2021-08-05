@@ -43,55 +43,39 @@ trait SchemaListItem extends StObject {
 }
 object SchemaListItem {
   
-  @scala.inline
-  def apply(): SchemaListItem = {
+  inline def apply(): SchemaListItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListItem]
   }
   
-  @scala.inline
-  implicit class SchemaListItemMutableBuilder[Self <: SchemaListItem] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListItem](x: Self) {
     
-    @scala.inline
-    def setCreatedTime(value: CreatedTimestamp): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: CreatedTimestamp): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
+    inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
-    @scala.inline
-    def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setRegistryName(value: SchemaRegistryNameString): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
+    inline def setRegistryName(value: SchemaRegistryNameString): Self = StObject.set(x, "RegistryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryNameUndefined: Self = StObject.set(x, "RegistryName", js.undefined)
+    inline def setRegistryNameUndefined: Self = StObject.set(x, "RegistryName", js.undefined)
     
-    @scala.inline
-    def setSchemaArn(value: GlueResourceArn): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
+    inline def setSchemaArn(value: GlueResourceArn): Self = StObject.set(x, "SchemaArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaArnUndefined: Self = StObject.set(x, "SchemaArn", js.undefined)
+    inline def setSchemaArnUndefined: Self = StObject.set(x, "SchemaArn", js.undefined)
     
-    @scala.inline
-    def setSchemaName(value: SchemaRegistryNameString): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
+    inline def setSchemaName(value: SchemaRegistryNameString): Self = StObject.set(x, "SchemaName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaNameUndefined: Self = StObject.set(x, "SchemaName", js.undefined)
+    inline def setSchemaNameUndefined: Self = StObject.set(x, "SchemaName", js.undefined)
     
-    @scala.inline
-    def setSchemaStatus(value: SchemaStatus): Self = StObject.set(x, "SchemaStatus", value.asInstanceOf[js.Any])
+    inline def setSchemaStatus(value: SchemaStatus): Self = StObject.set(x, "SchemaStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaStatusUndefined: Self = StObject.set(x, "SchemaStatus", js.undefined)
+    inline def setSchemaStatusUndefined: Self = StObject.set(x, "SchemaStatus", js.undefined)
     
-    @scala.inline
-    def setUpdatedTime(value: UpdatedTimestamp): Self = StObject.set(x, "UpdatedTime", value.asInstanceOf[js.Any])
+    inline def setUpdatedTime(value: UpdatedTimestamp): Self = StObject.set(x, "UpdatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedTimeUndefined: Self = StObject.set(x, "UpdatedTime", js.undefined)
+    inline def setUpdatedTimeUndefined: Self = StObject.set(x, "UpdatedTime", js.undefined)
   }
 }

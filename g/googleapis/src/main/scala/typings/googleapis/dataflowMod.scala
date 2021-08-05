@@ -36,8 +36,7 @@ object dataflowMod {
     @JSImport("googleapis/build/src/apis/dataflow", "VERSIONS.v1b3")
     @js.native
     def v1b3: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Dataflow] = js.native
-    @scala.inline
-    def v1b3_=(
+    inline def v1b3_=(
       x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Dataflow]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1b3")(x.asInstanceOf[js.Any])
   }
@@ -75,8 +74,7 @@ object dataflowMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -120,9 +118,7 @@ object dataflowMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def dataflow(options: Options): Dataflow = ^.asInstanceOf[js.Dynamic].applyDynamic("dataflow")(options.asInstanceOf[js.Any]).asInstanceOf[Dataflow]
+  inline def dataflow(options: Options): Dataflow = ^.asInstanceOf[js.Dynamic].applyDynamic("dataflow")(options.asInstanceOf[js.Any]).asInstanceOf[Dataflow]
   
-  @scala.inline
-  def dataflow_v1b3(version: v1b3): Dataflow = ^.asInstanceOf[js.Dynamic].applyDynamic("dataflow")(version.asInstanceOf[js.Any]).asInstanceOf[Dataflow]
+  inline def dataflow_v1b3(version: v1b3): Dataflow = ^.asInstanceOf[js.Dynamic].applyDynamic("dataflow")(version.asInstanceOf[js.Any]).asInstanceOf[Dataflow]
 }

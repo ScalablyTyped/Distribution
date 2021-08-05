@@ -49,37 +49,27 @@ trait SchemaEndpointsApiService extends StObject {
 }
 object SchemaEndpointsApiService {
   
-  @scala.inline
-  def apply(): SchemaEndpointsApiService = {
+  inline def apply(): SchemaEndpointsApiService = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaEndpointsApiService]
   }
   
-  @scala.inline
-  implicit class SchemaEndpointsApiServiceMutableBuilder[Self <: SchemaEndpointsApiService] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaEndpointsApiService](x: Self) {
     
-    @scala.inline
-    def setConfigId(value: String): Self = StObject.set(x, "configId", value.asInstanceOf[js.Any])
+    inline def setConfigId(value: String): Self = StObject.set(x, "configId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigIdUndefined: Self = StObject.set(x, "configId", js.undefined)
+    inline def setConfigIdUndefined: Self = StObject.set(x, "configId", js.undefined)
     
-    @scala.inline
-    def setDisableTraceSampling(value: Boolean): Self = StObject.set(x, "disableTraceSampling", value.asInstanceOf[js.Any])
+    inline def setDisableTraceSampling(value: Boolean): Self = StObject.set(x, "disableTraceSampling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableTraceSamplingUndefined: Self = StObject.set(x, "disableTraceSampling", js.undefined)
+    inline def setDisableTraceSamplingUndefined: Self = StObject.set(x, "disableTraceSampling", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setRolloutStrategy(value: String): Self = StObject.set(x, "rolloutStrategy", value.asInstanceOf[js.Any])
+    inline def setRolloutStrategy(value: String): Self = StObject.set(x, "rolloutStrategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRolloutStrategyUndefined: Self = StObject.set(x, "rolloutStrategy", js.undefined)
+    inline def setRolloutStrategyUndefined: Self = StObject.set(x, "rolloutStrategy", js.undefined)
   }
 }

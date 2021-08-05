@@ -16,19 +16,15 @@ trait ICustomOverlayOptions extends StObject {
 }
 object ICustomOverlayOptions {
   
-  @scala.inline
-  def apply(): ICustomOverlayOptions = {
+  inline def apply(): ICustomOverlayOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ICustomOverlayOptions]
   }
   
-  @scala.inline
-  implicit class ICustomOverlayOptionsMutableBuilder[Self <: ICustomOverlayOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ICustomOverlayOptions](x: Self) {
     
-    @scala.inline
-    def setBeneathLabels(value: Boolean): Self = StObject.set(x, "beneathLabels", value.asInstanceOf[js.Any])
+    inline def setBeneathLabels(value: Boolean): Self = StObject.set(x, "beneathLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeneathLabelsUndefined: Self = StObject.set(x, "beneathLabels", js.undefined)
+    inline def setBeneathLabelsUndefined: Self = StObject.set(x, "beneathLabels", js.undefined)
   }
 }

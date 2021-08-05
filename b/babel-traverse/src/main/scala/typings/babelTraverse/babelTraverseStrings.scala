@@ -8,21 +8,17 @@ object babelTraverseStrings {
   
   @js.native
   sealed trait const extends StObject
-  @scala.inline
-  def const: const = "const".asInstanceOf[const]
+  inline def const: const = "const".asInstanceOf[const]
   
   @js.native
   sealed trait let extends StObject
-  @scala.inline
-  def let: let = "let".asInstanceOf[let]
+  inline def let: let = "let".asInstanceOf[let]
   
   @js.native
   sealed trait module extends StObject
-  @scala.inline
-  def module: module = "module".asInstanceOf[module]
+  inline def module: module = "module".asInstanceOf[module]
   
   @js.native
   sealed trait `var` extends StObject
-  @scala.inline
-  def `var`: `var` = "var".asInstanceOf[`var`]
+  inline def `var`: `var` = "var".asInstanceOf[`var`]
 }

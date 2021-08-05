@@ -14,22 +14,17 @@ trait SkinDto extends StObject {
 }
 object SkinDto {
   
-  @scala.inline
-  def apply(id: Double, name: String, num: Double): SkinDto = {
+  inline def apply(id: Double, name: String, num: Double): SkinDto = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], num = num.asInstanceOf[js.Any])
     __obj.asInstanceOf[SkinDto]
   }
   
-  @scala.inline
-  implicit class SkinDtoMutableBuilder[Self <: SkinDto] (val x: Self) extends AnyVal {
+  extension [Self <: SkinDto](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNum(value: Double): Self = StObject.set(x, "num", value.asInstanceOf[js.Any])
+    inline def setNum(value: Double): Self = StObject.set(x, "num", value.asInstanceOf[js.Any])
   }
 }

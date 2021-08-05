@@ -31,12 +31,9 @@ object SearchFacet {
   @js.native
   class TermFacet () extends SearchFacet
   
-  @scala.inline
-  def date(field: String, size: Double): DateFacet = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(field.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[DateFacet]
+  inline def date(field: String, size: Double): DateFacet = (^.asInstanceOf[js.Dynamic].applyDynamic("date")(field.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[DateFacet]
   
-  @scala.inline
-  def numeric(field: String, size: Double): NumericFacet = (^.asInstanceOf[js.Dynamic].applyDynamic("numeric")(field.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[NumericFacet]
+  inline def numeric(field: String, size: Double): NumericFacet = (^.asInstanceOf[js.Dynamic].applyDynamic("numeric")(field.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[NumericFacet]
   
-  @scala.inline
-  def term(field: String, size: Double): TermFacet = (^.asInstanceOf[js.Dynamic].applyDynamic("term")(field.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[TermFacet]
+  inline def term(field: String, size: Double): TermFacet = (^.asInstanceOf[js.Dynamic].applyDynamic("term")(field.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[TermFacet]
 }

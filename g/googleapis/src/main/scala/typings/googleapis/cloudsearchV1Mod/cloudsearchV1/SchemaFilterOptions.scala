@@ -23,25 +23,19 @@ trait SchemaFilterOptions extends StObject {
 }
 object SchemaFilterOptions {
   
-  @scala.inline
-  def apply(): SchemaFilterOptions = {
+  inline def apply(): SchemaFilterOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaFilterOptions]
   }
   
-  @scala.inline
-  implicit class SchemaFilterOptionsMutableBuilder[Self <: SchemaFilterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaFilterOptions](x: Self) {
     
-    @scala.inline
-    def setFilter(value: SchemaFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: SchemaFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
+    inline def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectTypeUndefined: Self = StObject.set(x, "objectType", js.undefined)
+    inline def setObjectTypeUndefined: Self = StObject.set(x, "objectType", js.undefined)
   }
 }

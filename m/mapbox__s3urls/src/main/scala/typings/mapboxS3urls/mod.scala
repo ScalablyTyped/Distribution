@@ -16,28 +16,21 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def convert_bucketinhost(url: String, to: `bucket-in-host`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(url.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def convert_bucketinhost(url: String, to: `bucket-in-host`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(url.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def convert_bucketinpath(url: String, to: `bucket-in-path`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(url.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def convert_bucketinpath(url: String, to: `bucket-in-path`): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(url.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def convert_s3(url: String, to: s3): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(url.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def convert_s3(url: String, to: s3): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(url.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def fromUrl(url: String): Bucket = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any]).asInstanceOf[Bucket]
+  inline def fromUrl(url: String): Bucket = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUrl")(url.asInstanceOf[js.Any]).asInstanceOf[Bucket]
   
-  @scala.inline
-  def signed(
+  inline def signed(
     url: String,
     expires: Double,
     cb: js.Function2[/* err */ js.UndefOr[Error], /* url */ String, Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("signed")(url.asInstanceOf[js.Any], expires.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def toUrl(bucket: String, key: String): Bucketinhost = (^.asInstanceOf[js.Dynamic].applyDynamic("toUrl")(bucket.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Bucketinhost]
+  inline def toUrl(bucket: String, key: String): Bucketinhost = (^.asInstanceOf[js.Dynamic].applyDynamic("toUrl")(bucket.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Bucketinhost]
   
-  @scala.inline
-  def valid(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("valid")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def valid(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("valid")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

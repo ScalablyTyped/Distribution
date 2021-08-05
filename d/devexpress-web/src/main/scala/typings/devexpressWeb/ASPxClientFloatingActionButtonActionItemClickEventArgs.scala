@@ -18,16 +18,13 @@ trait ASPxClientFloatingActionButtonActionItemClickEventArgs
 }
 object ASPxClientFloatingActionButtonActionItemClickEventArgs {
   
-  @scala.inline
-  def apply(actionName: String): ASPxClientFloatingActionButtonActionItemClickEventArgs = {
+  inline def apply(actionName: String): ASPxClientFloatingActionButtonActionItemClickEventArgs = {
     val __obj = js.Dynamic.literal(actionName = actionName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientFloatingActionButtonActionItemClickEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientFloatingActionButtonActionItemClickEventArgsMutableBuilder[Self <: ASPxClientFloatingActionButtonActionItemClickEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientFloatingActionButtonActionItemClickEventArgs](x: Self) {
     
-    @scala.inline
-    def setActionName(value: String): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
+    inline def setActionName(value: String): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
   }
 }

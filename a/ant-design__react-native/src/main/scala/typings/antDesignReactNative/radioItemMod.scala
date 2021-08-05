@@ -37,32 +37,24 @@ object radioItemMod {
   }
   object RadioItemNativeProps {
     
-    @scala.inline
-    def apply(): RadioItemNativeProps = {
+    inline def apply(): RadioItemNativeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RadioItemNativeProps]
     }
     
-    @scala.inline
-    implicit class RadioItemNativePropsMutableBuilder[Self <: RadioItemNativeProps] (val x: Self) extends AnyVal {
+    extension [Self <: RadioItemNativeProps](x: Self) {
       
-      @scala.inline
-      def setRadioStyle(value: StyleProp[ImageStyle]): Self = StObject.set(x, "radioStyle", value.asInstanceOf[js.Any])
+      inline def setRadioStyle(value: StyleProp[ImageStyle]): Self = StObject.set(x, "radioStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadioStyleNull: Self = StObject.set(x, "radioStyle", null)
+      inline def setRadioStyleNull: Self = StObject.set(x, "radioStyle", null)
       
-      @scala.inline
-      def setRadioStyleUndefined: Self = StObject.set(x, "radioStyle", js.undefined)
+      inline def setRadioStyleUndefined: Self = StObject.set(x, "radioStyle", js.undefined)
       
-      @scala.inline
-      def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

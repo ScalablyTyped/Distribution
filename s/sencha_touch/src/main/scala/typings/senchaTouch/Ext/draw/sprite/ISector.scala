@@ -38,61 +38,43 @@ trait ISector
 }
 object ISector {
   
-  @scala.inline
-  def apply(): ISector = {
+  inline def apply(): ISector = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ISector]
   }
   
-  @scala.inline
-  implicit class ISectorMutableBuilder[Self <: ISector] (val x: Self) extends AnyVal {
+  extension [Self <: ISector](x: Self) {
     
-    @scala.inline
-    def setCenterX(value: Double): Self = StObject.set(x, "centerX", value.asInstanceOf[js.Any])
+    inline def setCenterX(value: Double): Self = StObject.set(x, "centerX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenterXUndefined: Self = StObject.set(x, "centerX", js.undefined)
+    inline def setCenterXUndefined: Self = StObject.set(x, "centerX", js.undefined)
     
-    @scala.inline
-    def setCenterY(value: Double): Self = StObject.set(x, "centerY", value.asInstanceOf[js.Any])
+    inline def setCenterY(value: Double): Self = StObject.set(x, "centerY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenterYUndefined: Self = StObject.set(x, "centerY", js.undefined)
+    inline def setCenterYUndefined: Self = StObject.set(x, "centerY", js.undefined)
     
-    @scala.inline
-    def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
+    inline def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndAngleUndefined: Self = StObject.set(x, "endAngle", js.undefined)
+    inline def setEndAngleUndefined: Self = StObject.set(x, "endAngle", js.undefined)
     
-    @scala.inline
-    def setEndRho(value: Double): Self = StObject.set(x, "endRho", value.asInstanceOf[js.Any])
+    inline def setEndRho(value: Double): Self = StObject.set(x, "endRho", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndRhoUndefined: Self = StObject.set(x, "endRho", js.undefined)
+    inline def setEndRhoUndefined: Self = StObject.set(x, "endRho", js.undefined)
     
-    @scala.inline
-    def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    @scala.inline
-    def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
+    inline def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
+    inline def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
     
-    @scala.inline
-    def setStartRho(value: Double): Self = StObject.set(x, "startRho", value.asInstanceOf[js.Any])
+    inline def setStartRho(value: Double): Self = StObject.set(x, "startRho", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartRhoUndefined: Self = StObject.set(x, "startRho", js.undefined)
+    inline def setStartRhoUndefined: Self = StObject.set(x, "startRho", js.undefined)
     
-    @scala.inline
-    def setUpdatePath(value: (/* path */ js.UndefOr[js.Any], /* attr */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "updatePath", js.Any.fromFunction2(value))
+    inline def setUpdatePath(value: (/* path */ js.UndefOr[js.Any], /* attr */ js.UndefOr[js.Any]) => Unit): Self = StObject.set(x, "updatePath", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setUpdatePathUndefined: Self = StObject.set(x, "updatePath", js.undefined)
+    inline def setUpdatePathUndefined: Self = StObject.set(x, "updatePath", js.undefined)
   }
 }

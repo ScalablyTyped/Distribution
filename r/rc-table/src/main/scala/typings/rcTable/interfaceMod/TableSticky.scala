@@ -16,31 +16,23 @@ trait TableSticky extends StObject {
 }
 object TableSticky {
   
-  @scala.inline
-  def apply(): TableSticky = {
+  inline def apply(): TableSticky = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableSticky]
   }
   
-  @scala.inline
-  implicit class TableStickyMutableBuilder[Self <: TableSticky] (val x: Self) extends AnyVal {
+  extension [Self <: TableSticky](x: Self) {
     
-    @scala.inline
-    def setGetContainer(value: () => Window | HTMLElement): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
+    inline def setGetContainer(value: () => Window | HTMLElement): Self = StObject.set(x, "getContainer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
+    inline def setGetContainerUndefined: Self = StObject.set(x, "getContainer", js.undefined)
     
-    @scala.inline
-    def setOffsetHeader(value: Double): Self = StObject.set(x, "offsetHeader", value.asInstanceOf[js.Any])
+    inline def setOffsetHeader(value: Double): Self = StObject.set(x, "offsetHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetHeaderUndefined: Self = StObject.set(x, "offsetHeader", js.undefined)
+    inline def setOffsetHeaderUndefined: Self = StObject.set(x, "offsetHeader", js.undefined)
     
-    @scala.inline
-    def setOffsetScroll(value: Double): Self = StObject.set(x, "offsetScroll", value.asInstanceOf[js.Any])
+    inline def setOffsetScroll(value: Double): Self = StObject.set(x, "offsetScroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetScrollUndefined: Self = StObject.set(x, "offsetScroll", js.undefined)
+    inline def setOffsetScrollUndefined: Self = StObject.set(x, "offsetScroll", js.undefined)
   }
 }

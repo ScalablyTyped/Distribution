@@ -14,8 +14,7 @@ trait OSPermissionSubscriptionState extends StObject {
 }
 object OSPermissionSubscriptionState {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     emailSubscriptionStatus: OSEmailSubscriptionState,
     permissionStatus: OSPermissionState,
     subscriptionStatus: OSSubscriptionState
@@ -24,16 +23,12 @@ object OSPermissionSubscriptionState {
     __obj.asInstanceOf[OSPermissionSubscriptionState]
   }
   
-  @scala.inline
-  implicit class OSPermissionSubscriptionStateMutableBuilder[Self <: OSPermissionSubscriptionState] (val x: Self) extends AnyVal {
+  extension [Self <: OSPermissionSubscriptionState](x: Self) {
     
-    @scala.inline
-    def setEmailSubscriptionStatus(value: OSEmailSubscriptionState): Self = StObject.set(x, "emailSubscriptionStatus", value.asInstanceOf[js.Any])
+    inline def setEmailSubscriptionStatus(value: OSEmailSubscriptionState): Self = StObject.set(x, "emailSubscriptionStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionStatus(value: OSPermissionState): Self = StObject.set(x, "permissionStatus", value.asInstanceOf[js.Any])
+    inline def setPermissionStatus(value: OSPermissionState): Self = StObject.set(x, "permissionStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionStatus(value: OSSubscriptionState): Self = StObject.set(x, "subscriptionStatus", value.asInstanceOf[js.Any])
+    inline def setSubscriptionStatus(value: OSSubscriptionState): Self = StObject.set(x, "subscriptionStatus", value.asInstanceOf[js.Any])
   }
 }

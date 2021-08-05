@@ -16,25 +16,19 @@ trait Latitude extends StObject {
 }
 object Latitude {
   
-  @scala.inline
-  def apply(): Latitude = {
+  inline def apply(): Latitude = {
     val __obj = js.Dynamic.literal(latitude = 1, latitude2 = 1, longitude = 1, longitude2 = 1)
     __obj.asInstanceOf[Latitude]
   }
   
-  @scala.inline
-  implicit class LatitudeMutableBuilder[Self <: Latitude] (val x: Self) extends AnyVal {
+  extension [Self <: Latitude](x: Self) {
     
-    @scala.inline
-    def setLatitude(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+    inline def setLatitude(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatitude2(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "latitude2", value.asInstanceOf[js.Any])
+    inline def setLatitude2(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "latitude2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongitude(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+    inline def setLongitude(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongitude2(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "longitude2", value.asInstanceOf[js.Any])
+    inline def setLongitude2(value: typings.vegaLite.vegaLiteNumbers.`1`): Self = StObject.set(x, "longitude2", value.asInstanceOf[js.Any])
   }
 }

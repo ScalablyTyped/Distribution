@@ -44,116 +44,80 @@ object typesMod {
   }
   object DiffOptions {
     
-    @scala.inline
-    def apply(): DiffOptions = {
+    inline def apply(): DiffOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DiffOptions]
     }
     
-    @scala.inline
-    implicit class DiffOptionsMutableBuilder[Self <: DiffOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DiffOptions](x: Self) {
       
-      @scala.inline
-      def setAAnnotation(value: String): Self = StObject.set(x, "aAnnotation", value.asInstanceOf[js.Any])
+      inline def setAAnnotation(value: String): Self = StObject.set(x, "aAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAAnnotationUndefined: Self = StObject.set(x, "aAnnotation", js.undefined)
+      inline def setAAnnotationUndefined: Self = StObject.set(x, "aAnnotation", js.undefined)
       
-      @scala.inline
-      def setAColor(value: /* arg */ String => String): Self = StObject.set(x, "aColor", js.Any.fromFunction1(value))
+      inline def setAColor(value: /* arg */ String => String): Self = StObject.set(x, "aColor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAColorUndefined: Self = StObject.set(x, "aColor", js.undefined)
+      inline def setAColorUndefined: Self = StObject.set(x, "aColor", js.undefined)
       
-      @scala.inline
-      def setAIndicator(value: String): Self = StObject.set(x, "aIndicator", value.asInstanceOf[js.Any])
+      inline def setAIndicator(value: String): Self = StObject.set(x, "aIndicator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAIndicatorUndefined: Self = StObject.set(x, "aIndicator", js.undefined)
+      inline def setAIndicatorUndefined: Self = StObject.set(x, "aIndicator", js.undefined)
       
-      @scala.inline
-      def setBAnnotation(value: String): Self = StObject.set(x, "bAnnotation", value.asInstanceOf[js.Any])
+      inline def setBAnnotation(value: String): Self = StObject.set(x, "bAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBAnnotationUndefined: Self = StObject.set(x, "bAnnotation", js.undefined)
+      inline def setBAnnotationUndefined: Self = StObject.set(x, "bAnnotation", js.undefined)
       
-      @scala.inline
-      def setBColor(value: /* arg */ String => String): Self = StObject.set(x, "bColor", js.Any.fromFunction1(value))
+      inline def setBColor(value: /* arg */ String => String): Self = StObject.set(x, "bColor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBColorUndefined: Self = StObject.set(x, "bColor", js.undefined)
+      inline def setBColorUndefined: Self = StObject.set(x, "bColor", js.undefined)
       
-      @scala.inline
-      def setBIndicator(value: String): Self = StObject.set(x, "bIndicator", value.asInstanceOf[js.Any])
+      inline def setBIndicator(value: String): Self = StObject.set(x, "bIndicator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBIndicatorUndefined: Self = StObject.set(x, "bIndicator", js.undefined)
+      inline def setBIndicatorUndefined: Self = StObject.set(x, "bIndicator", js.undefined)
       
-      @scala.inline
-      def setChangeColor(value: /* arg */ String => String): Self = StObject.set(x, "changeColor", js.Any.fromFunction1(value))
+      inline def setChangeColor(value: /* arg */ String => String): Self = StObject.set(x, "changeColor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChangeColorUndefined: Self = StObject.set(x, "changeColor", js.undefined)
+      inline def setChangeColorUndefined: Self = StObject.set(x, "changeColor", js.undefined)
       
-      @scala.inline
-      def setChangeLineTrailingSpaceColor(value: /* arg */ String => String): Self = StObject.set(x, "changeLineTrailingSpaceColor", js.Any.fromFunction1(value))
+      inline def setChangeLineTrailingSpaceColor(value: /* arg */ String => String): Self = StObject.set(x, "changeLineTrailingSpaceColor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChangeLineTrailingSpaceColorUndefined: Self = StObject.set(x, "changeLineTrailingSpaceColor", js.undefined)
+      inline def setChangeLineTrailingSpaceColorUndefined: Self = StObject.set(x, "changeLineTrailingSpaceColor", js.undefined)
       
-      @scala.inline
-      def setCommonColor(value: /* arg */ String => String): Self = StObject.set(x, "commonColor", js.Any.fromFunction1(value))
+      inline def setCommonColor(value: /* arg */ String => String): Self = StObject.set(x, "commonColor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCommonColorUndefined: Self = StObject.set(x, "commonColor", js.undefined)
+      inline def setCommonColorUndefined: Self = StObject.set(x, "commonColor", js.undefined)
       
-      @scala.inline
-      def setCommonIndicator(value: String): Self = StObject.set(x, "commonIndicator", value.asInstanceOf[js.Any])
+      inline def setCommonIndicator(value: String): Self = StObject.set(x, "commonIndicator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommonIndicatorUndefined: Self = StObject.set(x, "commonIndicator", js.undefined)
+      inline def setCommonIndicatorUndefined: Self = StObject.set(x, "commonIndicator", js.undefined)
       
-      @scala.inline
-      def setCommonLineTrailingSpaceColor(value: /* arg */ String => String): Self = StObject.set(x, "commonLineTrailingSpaceColor", js.Any.fromFunction1(value))
+      inline def setCommonLineTrailingSpaceColor(value: /* arg */ String => String): Self = StObject.set(x, "commonLineTrailingSpaceColor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCommonLineTrailingSpaceColorUndefined: Self = StObject.set(x, "commonLineTrailingSpaceColor", js.undefined)
+      inline def setCommonLineTrailingSpaceColorUndefined: Self = StObject.set(x, "commonLineTrailingSpaceColor", js.undefined)
       
-      @scala.inline
-      def setContextLines(value: Double): Self = StObject.set(x, "contextLines", value.asInstanceOf[js.Any])
+      inline def setContextLines(value: Double): Self = StObject.set(x, "contextLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextLinesUndefined: Self = StObject.set(x, "contextLines", js.undefined)
+      inline def setContextLinesUndefined: Self = StObject.set(x, "contextLines", js.undefined)
       
-      @scala.inline
-      def setEmptyFirstOrLastLinePlaceholder(value: String): Self = StObject.set(x, "emptyFirstOrLastLinePlaceholder", value.asInstanceOf[js.Any])
+      inline def setEmptyFirstOrLastLinePlaceholder(value: String): Self = StObject.set(x, "emptyFirstOrLastLinePlaceholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmptyFirstOrLastLinePlaceholderUndefined: Self = StObject.set(x, "emptyFirstOrLastLinePlaceholder", js.undefined)
+      inline def setEmptyFirstOrLastLinePlaceholderUndefined: Self = StObject.set(x, "emptyFirstOrLastLinePlaceholder", js.undefined)
       
-      @scala.inline
-      def setExpand(value: Boolean): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
+      inline def setExpand(value: Boolean): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
+      inline def setExpandUndefined: Self = StObject.set(x, "expand", js.undefined)
       
-      @scala.inline
-      def setIncludeChangeCounts(value: Boolean): Self = StObject.set(x, "includeChangeCounts", value.asInstanceOf[js.Any])
+      inline def setIncludeChangeCounts(value: Boolean): Self = StObject.set(x, "includeChangeCounts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeChangeCountsUndefined: Self = StObject.set(x, "includeChangeCounts", js.undefined)
+      inline def setIncludeChangeCountsUndefined: Self = StObject.set(x, "includeChangeCounts", js.undefined)
       
-      @scala.inline
-      def setOmitAnnotationLines(value: Boolean): Self = StObject.set(x, "omitAnnotationLines", value.asInstanceOf[js.Any])
+      inline def setOmitAnnotationLines(value: Boolean): Self = StObject.set(x, "omitAnnotationLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOmitAnnotationLinesUndefined: Self = StObject.set(x, "omitAnnotationLines", js.undefined)
+      inline def setOmitAnnotationLinesUndefined: Self = StObject.set(x, "omitAnnotationLines", js.undefined)
       
-      @scala.inline
-      def setPatchColor(value: /* arg */ String => String): Self = StObject.set(x, "patchColor", js.Any.fromFunction1(value))
+      inline def setPatchColor(value: /* arg */ String => String): Self = StObject.set(x, "patchColor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setPatchColorUndefined: Self = StObject.set(x, "patchColor", js.undefined)
+      inline def setPatchColorUndefined: Self = StObject.set(x, "patchColor", js.undefined)
     }
   }
   
@@ -197,8 +161,7 @@ object typesMod {
   }
   object DiffOptionsNormalized {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       aAnnotation: String,
       aColor: /* arg */ String => String,
       aIndicator: String,
@@ -221,59 +184,41 @@ object typesMod {
       __obj.asInstanceOf[DiffOptionsNormalized]
     }
     
-    @scala.inline
-    implicit class DiffOptionsNormalizedMutableBuilder[Self <: DiffOptionsNormalized] (val x: Self) extends AnyVal {
+    extension [Self <: DiffOptionsNormalized](x: Self) {
       
-      @scala.inline
-      def setAAnnotation(value: String): Self = StObject.set(x, "aAnnotation", value.asInstanceOf[js.Any])
+      inline def setAAnnotation(value: String): Self = StObject.set(x, "aAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAColor(value: /* arg */ String => String): Self = StObject.set(x, "aColor", js.Any.fromFunction1(value))
+      inline def setAColor(value: /* arg */ String => String): Self = StObject.set(x, "aColor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setAIndicator(value: String): Self = StObject.set(x, "aIndicator", value.asInstanceOf[js.Any])
+      inline def setAIndicator(value: String): Self = StObject.set(x, "aIndicator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBAnnotation(value: String): Self = StObject.set(x, "bAnnotation", value.asInstanceOf[js.Any])
+      inline def setBAnnotation(value: String): Self = StObject.set(x, "bAnnotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBColor(value: /* arg */ String => String): Self = StObject.set(x, "bColor", js.Any.fromFunction1(value))
+      inline def setBColor(value: /* arg */ String => String): Self = StObject.set(x, "bColor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBIndicator(value: String): Self = StObject.set(x, "bIndicator", value.asInstanceOf[js.Any])
+      inline def setBIndicator(value: String): Self = StObject.set(x, "bIndicator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChangeColor(value: /* arg */ String => String): Self = StObject.set(x, "changeColor", js.Any.fromFunction1(value))
+      inline def setChangeColor(value: /* arg */ String => String): Self = StObject.set(x, "changeColor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setChangeLineTrailingSpaceColor(value: /* arg */ String => String): Self = StObject.set(x, "changeLineTrailingSpaceColor", js.Any.fromFunction1(value))
+      inline def setChangeLineTrailingSpaceColor(value: /* arg */ String => String): Self = StObject.set(x, "changeLineTrailingSpaceColor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCommonColor(value: /* arg */ String => String): Self = StObject.set(x, "commonColor", js.Any.fromFunction1(value))
+      inline def setCommonColor(value: /* arg */ String => String): Self = StObject.set(x, "commonColor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCommonIndicator(value: String): Self = StObject.set(x, "commonIndicator", value.asInstanceOf[js.Any])
+      inline def setCommonIndicator(value: String): Self = StObject.set(x, "commonIndicator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommonLineTrailingSpaceColor(value: /* arg */ String => String): Self = StObject.set(x, "commonLineTrailingSpaceColor", js.Any.fromFunction1(value))
+      inline def setCommonLineTrailingSpaceColor(value: /* arg */ String => String): Self = StObject.set(x, "commonLineTrailingSpaceColor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setContextLines(value: Double): Self = StObject.set(x, "contextLines", value.asInstanceOf[js.Any])
+      inline def setContextLines(value: Double): Self = StObject.set(x, "contextLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmptyFirstOrLastLinePlaceholder(value: String): Self = StObject.set(x, "emptyFirstOrLastLinePlaceholder", value.asInstanceOf[js.Any])
+      inline def setEmptyFirstOrLastLinePlaceholder(value: String): Self = StObject.set(x, "emptyFirstOrLastLinePlaceholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpand(value: Boolean): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
+      inline def setExpand(value: Boolean): Self = StObject.set(x, "expand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeChangeCounts(value: Boolean): Self = StObject.set(x, "includeChangeCounts", value.asInstanceOf[js.Any])
+      inline def setIncludeChangeCounts(value: Boolean): Self = StObject.set(x, "includeChangeCounts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOmitAnnotationLines(value: Boolean): Self = StObject.set(x, "omitAnnotationLines", value.asInstanceOf[js.Any])
+      inline def setOmitAnnotationLines(value: Boolean): Self = StObject.set(x, "omitAnnotationLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatchColor(value: /* arg */ String => String): Self = StObject.set(x, "patchColor", js.Any.fromFunction1(value))
+      inline def setPatchColor(value: /* arg */ String => String): Self = StObject.set(x, "patchColor", js.Any.fromFunction1(value))
     }
   }
 }

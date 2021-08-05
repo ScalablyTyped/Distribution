@@ -28,55 +28,39 @@ trait ProvisioningInformation extends StObject {
 }
 object ProvisioningInformation {
   
-  @scala.inline
-  def apply(): ProvisioningInformation = {
+  inline def apply(): ProvisioningInformation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProvisioningInformation]
   }
   
-  @scala.inline
-  implicit class ProvisioningInformationMutableBuilder[Self <: ProvisioningInformation] (val x: Self) extends AnyVal {
+  extension [Self <: ProvisioningInformation](x: Self) {
     
-    @scala.inline
-    def setDefaultConnectionId(value: String): Self = StObject.set(x, "defaultConnectionId", value.asInstanceOf[js.Any])
+    inline def setDefaultConnectionId(value: String): Self = StObject.set(x, "defaultConnectionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultConnectionIdUndefined: Self = StObject.set(x, "defaultConnectionId", js.undefined)
+    inline def setDefaultConnectionIdUndefined: Self = StObject.set(x, "defaultConnectionId", js.undefined)
     
-    @scala.inline
-    def setDefaultPlanId(value: String): Self = StObject.set(x, "defaultPlanId", value.asInstanceOf[js.Any])
+    inline def setDefaultPlanId(value: String): Self = StObject.set(x, "defaultPlanId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultPlanIdUndefined: Self = StObject.set(x, "defaultPlanId", js.undefined)
+    inline def setDefaultPlanIdUndefined: Self = StObject.set(x, "defaultPlanId", js.undefined)
     
-    @scala.inline
-    def setDistributorCode(value: String): Self = StObject.set(x, "distributorCode", value.asInstanceOf[js.Any])
+    inline def setDistributorCode(value: String): Self = StObject.set(x, "distributorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributorCodeUndefined: Self = StObject.set(x, "distributorCode", js.undefined)
+    inline def setDistributorCodeUndefined: Self = StObject.set(x, "distributorCode", js.undefined)
     
-    @scala.inline
-    def setDistributorPassword(value: String): Self = StObject.set(x, "distributorPassword", value.asInstanceOf[js.Any])
+    inline def setDistributorPassword(value: String): Self = StObject.set(x, "distributorPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistributorPasswordUndefined: Self = StObject.set(x, "distributorPassword", js.undefined)
+    inline def setDistributorPasswordUndefined: Self = StObject.set(x, "distributorPassword", js.undefined)
     
-    @scala.inline
-    def setPasswordRuleText(value: String): Self = StObject.set(x, "passwordRuleText", value.asInstanceOf[js.Any])
+    inline def setPasswordRuleText(value: String): Self = StObject.set(x, "passwordRuleText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordRuleTextUndefined: Self = StObject.set(x, "passwordRuleText", js.undefined)
+    inline def setPasswordRuleTextUndefined: Self = StObject.set(x, "passwordRuleText", js.undefined)
     
-    @scala.inline
-    def setPlanPromotionText(value: String): Self = StObject.set(x, "planPromotionText", value.asInstanceOf[js.Any])
+    inline def setPlanPromotionText(value: String): Self = StObject.set(x, "planPromotionText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlanPromotionTextUndefined: Self = StObject.set(x, "planPromotionText", js.undefined)
+    inline def setPlanPromotionTextUndefined: Self = StObject.set(x, "planPromotionText", js.undefined)
     
-    @scala.inline
-    def setPurchaseOrderOrPromAllowed(value: String): Self = StObject.set(x, "purchaseOrderOrPromAllowed", value.asInstanceOf[js.Any])
+    inline def setPurchaseOrderOrPromAllowed(value: String): Self = StObject.set(x, "purchaseOrderOrPromAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPurchaseOrderOrPromAllowedUndefined: Self = StObject.set(x, "purchaseOrderOrPromAllowed", js.undefined)
+    inline def setPurchaseOrderOrPromAllowedUndefined: Self = StObject.set(x, "purchaseOrderOrPromAllowed", js.undefined)
   }
 }

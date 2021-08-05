@@ -16,25 +16,19 @@ trait InetChecksiteData extends StObject {
 }
 object InetChecksiteData {
   
-  @scala.inline
-  def apply(ms: Double, ok: Boolean, status: Double, url: String): InetChecksiteData = {
+  inline def apply(ms: Double, ok: Boolean, status: Double, url: String): InetChecksiteData = {
     val __obj = js.Dynamic.literal(ms = ms.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[InetChecksiteData]
   }
   
-  @scala.inline
-  implicit class InetChecksiteDataMutableBuilder[Self <: InetChecksiteData] (val x: Self) extends AnyVal {
+  extension [Self <: InetChecksiteData](x: Self) {
     
-    @scala.inline
-    def setMs(value: Double): Self = StObject.set(x, "ms", value.asInstanceOf[js.Any])
+    inline def setMs(value: Double): Self = StObject.set(x, "ms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
+    inline def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

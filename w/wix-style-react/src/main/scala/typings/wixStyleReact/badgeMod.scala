@@ -28,14 +28,12 @@ object badgeMod {
     @JSImport("wix-style-react/dist/es/src/Badge", "SIZE.medium")
     @js.native
     def medium: BadgeSize = js.native
-    @scala.inline
-    def medium_=(x: BadgeSize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("medium")(x.asInstanceOf[js.Any])
+    inline def medium_=(x: BadgeSize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("medium")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/Badge", "SIZE.small")
     @js.native
     def small: BadgeSize = js.native
-    @scala.inline
-    def small_=(x: BadgeSize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("small")(x.asInstanceOf[js.Any])
+    inline def small_=(x: BadgeSize): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("small")(x.asInstanceOf[js.Any])
   }
   
   /* Inlined {[ key in wix-style-react.wix-style-react/dist/es/src/Badge.BadgeSkin ]: wix-style-react.wix-style-react/dist/es/src/Badge.BadgeSkin} */
@@ -48,14 +46,12 @@ object badgeMod {
     @JSImport("wix-style-react/dist/es/src/Badge", "SKIN.danger")
     @js.native
     def danger: BadgeSkin = js.native
-    @scala.inline
-    def danger_=(x: BadgeSkin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("danger")(x.asInstanceOf[js.Any])
+    inline def danger_=(x: BadgeSkin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("danger")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/Badge", "SKIN.general")
     @js.native
     def general: BadgeSkin = js.native
-    @scala.inline
-    def general_=(x: BadgeSkin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("general")(x.asInstanceOf[js.Any])
+    inline def general_=(x: BadgeSkin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("general")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/Badge", "SKIN.neutral")
     @js.native
@@ -64,53 +60,44 @@ object badgeMod {
     @JSImport("wix-style-react/dist/es/src/Badge", "SKIN.neutralDanger")
     @js.native
     def neutralDanger: BadgeSkin = js.native
-    @scala.inline
-    def neutralDanger_=(x: BadgeSkin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("neutralDanger")(x.asInstanceOf[js.Any])
+    inline def neutralDanger_=(x: BadgeSkin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("neutralDanger")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/Badge", "SKIN.neutralLight")
     @js.native
     def neutralLight: BadgeSkin = js.native
-    @scala.inline
-    def neutralLight_=(x: BadgeSkin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("neutralLight")(x.asInstanceOf[js.Any])
+    inline def neutralLight_=(x: BadgeSkin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("neutralLight")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/Badge", "SKIN.neutralStandard")
     @js.native
     def neutralStandard: BadgeSkin = js.native
-    @scala.inline
-    def neutralStandard_=(x: BadgeSkin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("neutralStandard")(x.asInstanceOf[js.Any])
+    inline def neutralStandard_=(x: BadgeSkin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("neutralStandard")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/Badge", "SKIN.neutralSuccess")
     @js.native
     def neutralSuccess: BadgeSkin = js.native
-    @scala.inline
-    def neutralSuccess_=(x: BadgeSkin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("neutralSuccess")(x.asInstanceOf[js.Any])
+    inline def neutralSuccess_=(x: BadgeSkin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("neutralSuccess")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def neutral_=(x: BadgeSkin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("neutral")(x.asInstanceOf[js.Any])
+    inline def neutral_=(x: BadgeSkin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("neutral")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/Badge", "SKIN.premium")
     @js.native
     def premium: BadgeSkin = js.native
-    @scala.inline
-    def premium_=(x: BadgeSkin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("premium")(x.asInstanceOf[js.Any])
+    inline def premium_=(x: BadgeSkin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("premium")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/Badge", "SKIN.standard")
     @js.native
     def standard: BadgeSkin = js.native
-    @scala.inline
-    def standard_=(x: BadgeSkin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("standard")(x.asInstanceOf[js.Any])
+    inline def standard_=(x: BadgeSkin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("standard")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/Badge", "SKIN.success")
     @js.native
     def success: BadgeSkin = js.native
-    @scala.inline
-    def success_=(x: BadgeSkin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("success")(x.asInstanceOf[js.Any])
+    inline def success_=(x: BadgeSkin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("success")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/Badge", "SKIN.urgent")
     @js.native
     def urgent: BadgeSkin = js.native
-    @scala.inline
-    def urgent_=(x: BadgeSkin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("urgent")(x.asInstanceOf[js.Any])
+    inline def urgent_=(x: BadgeSkin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("urgent")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/Badge", "SKIN.warning")
     @js.native
@@ -119,11 +106,9 @@ object badgeMod {
     @JSImport("wix-style-react/dist/es/src/Badge", "SKIN.warningLight")
     @js.native
     def warningLight: BadgeSkin = js.native
-    @scala.inline
-    def warningLight_=(x: BadgeSkin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warningLight")(x.asInstanceOf[js.Any])
+    inline def warningLight_=(x: BadgeSkin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warningLight")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def warning_=(x: BadgeSkin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warning")(x.asInstanceOf[js.Any])
+    inline def warning_=(x: BadgeSkin): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warning")(x.asInstanceOf[js.Any])
   }
   
   /* Inlined {[ key in wix-style-react.wix-style-react/dist/es/src/Badge.BadgeType ]: wix-style-react.wix-style-react/dist/es/src/Badge.BadgeType} */
@@ -136,20 +121,17 @@ object badgeMod {
     @JSImport("wix-style-react/dist/es/src/Badge", "TYPE.outlined")
     @js.native
     def outlined: BadgeType = js.native
-    @scala.inline
-    def outlined_=(x: BadgeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("outlined")(x.asInstanceOf[js.Any])
+    inline def outlined_=(x: BadgeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("outlined")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/Badge", "TYPE.solid")
     @js.native
     def solid: BadgeType = js.native
-    @scala.inline
-    def solid_=(x: BadgeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("solid")(x.asInstanceOf[js.Any])
+    inline def solid_=(x: BadgeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("solid")(x.asInstanceOf[js.Any])
     
     @JSImport("wix-style-react/dist/es/src/Badge", "TYPE.transparent")
     @js.native
     def transparent: BadgeType = js.native
-    @scala.inline
-    def transparent_=(x: BadgeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("transparent")(x.asInstanceOf[js.Any])
+    inline def transparent_=(x: BadgeType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("transparent")(x.asInstanceOf[js.Any])
   }
   
   type Badge = PureComponent[BadgeProps, js.Object, js.Any]
@@ -178,68 +160,48 @@ object badgeMod {
   }
   object BadgeProps {
     
-    @scala.inline
-    def apply(): BadgeProps = {
+    inline def apply(): BadgeProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BadgeProps]
     }
     
-    @scala.inline
-    implicit class BadgePropsMutableBuilder[Self <: BadgeProps] (val x: Self) extends AnyVal {
+    extension [Self <: BadgeProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: MouseEvent[HTMLElement, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setPrefixIcon(value: IconElement): Self = StObject.set(x, "prefixIcon", value.asInstanceOf[js.Any])
+      inline def setPrefixIcon(value: IconElement): Self = StObject.set(x, "prefixIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixIconUndefined: Self = StObject.set(x, "prefixIcon", js.undefined)
+      inline def setPrefixIconUndefined: Self = StObject.set(x, "prefixIcon", js.undefined)
       
-      @scala.inline
-      def setSize(value: BadgeSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: BadgeSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSkin(value: BadgeSkin): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
+      inline def setSkin(value: BadgeSkin): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
+      inline def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
       
-      @scala.inline
-      def setSuffixIcon(value: IconElement): Self = StObject.set(x, "suffixIcon", value.asInstanceOf[js.Any])
+      inline def setSuffixIcon(value: IconElement): Self = StObject.set(x, "suffixIcon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuffixIconUndefined: Self = StObject.set(x, "suffixIcon", js.undefined)
+      inline def setSuffixIconUndefined: Self = StObject.set(x, "suffixIcon", js.undefined)
       
-      @scala.inline
-      def setType(value: BadgeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: BadgeType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setUppercase(value: Boolean): Self = StObject.set(x, "uppercase", value.asInstanceOf[js.Any])
+      inline def setUppercase(value: Boolean): Self = StObject.set(x, "uppercase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUppercaseUndefined: Self = StObject.set(x, "uppercase", js.undefined)
+      inline def setUppercaseUndefined: Self = StObject.set(x, "uppercase", js.undefined)
     }
   }
   
@@ -250,11 +212,9 @@ object badgeMod {
   trait BadgeSize extends StObject
   object BadgeSize {
     
-    @scala.inline
-    def medium: typings.wixStyleReact.wixStyleReactStrings.medium = "medium".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.medium]
+    inline def medium: typings.wixStyleReact.wixStyleReactStrings.medium = "medium".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.medium]
     
-    @scala.inline
-    def small: typings.wixStyleReact.wixStyleReactStrings.small = "small".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.small]
+    inline def small: typings.wixStyleReact.wixStyleReactStrings.small = "small".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.small]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -275,44 +235,31 @@ object badgeMod {
   trait BadgeSkin extends StObject
   object BadgeSkin {
     
-    @scala.inline
-    def danger: typings.wixStyleReact.wixStyleReactStrings.danger = "danger".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.danger]
+    inline def danger: typings.wixStyleReact.wixStyleReactStrings.danger = "danger".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.danger]
     
-    @scala.inline
-    def general: typings.wixStyleReact.wixStyleReactStrings.general = "general".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.general]
+    inline def general: typings.wixStyleReact.wixStyleReactStrings.general = "general".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.general]
     
-    @scala.inline
-    def neutral: typings.wixStyleReact.wixStyleReactStrings.neutral = "neutral".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.neutral]
+    inline def neutral: typings.wixStyleReact.wixStyleReactStrings.neutral = "neutral".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.neutral]
     
-    @scala.inline
-    def neutralDanger: typings.wixStyleReact.wixStyleReactStrings.neutralDanger = "neutralDanger".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.neutralDanger]
+    inline def neutralDanger: typings.wixStyleReact.wixStyleReactStrings.neutralDanger = "neutralDanger".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.neutralDanger]
     
-    @scala.inline
-    def neutralLight: typings.wixStyleReact.wixStyleReactStrings.neutralLight = "neutralLight".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.neutralLight]
+    inline def neutralLight: typings.wixStyleReact.wixStyleReactStrings.neutralLight = "neutralLight".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.neutralLight]
     
-    @scala.inline
-    def neutralStandard: typings.wixStyleReact.wixStyleReactStrings.neutralStandard = "neutralStandard".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.neutralStandard]
+    inline def neutralStandard: typings.wixStyleReact.wixStyleReactStrings.neutralStandard = "neutralStandard".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.neutralStandard]
     
-    @scala.inline
-    def neutralSuccess: typings.wixStyleReact.wixStyleReactStrings.neutralSuccess = "neutralSuccess".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.neutralSuccess]
+    inline def neutralSuccess: typings.wixStyleReact.wixStyleReactStrings.neutralSuccess = "neutralSuccess".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.neutralSuccess]
     
-    @scala.inline
-    def premium: typings.wixStyleReact.wixStyleReactStrings.premium = "premium".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.premium]
+    inline def premium: typings.wixStyleReact.wixStyleReactStrings.premium = "premium".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.premium]
     
-    @scala.inline
-    def standard: typings.wixStyleReact.wixStyleReactStrings.standard = "standard".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.standard]
+    inline def standard: typings.wixStyleReact.wixStyleReactStrings.standard = "standard".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.standard]
     
-    @scala.inline
-    def success: typings.wixStyleReact.wixStyleReactStrings.success = "success".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.success]
+    inline def success: typings.wixStyleReact.wixStyleReactStrings.success = "success".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.success]
     
-    @scala.inline
-    def urgent: typings.wixStyleReact.wixStyleReactStrings.urgent = "urgent".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.urgent]
+    inline def urgent: typings.wixStyleReact.wixStyleReactStrings.urgent = "urgent".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.urgent]
     
-    @scala.inline
-    def warning: typings.wixStyleReact.wixStyleReactStrings.warning = "warning".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.warning]
+    inline def warning: typings.wixStyleReact.wixStyleReactStrings.warning = "warning".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.warning]
     
-    @scala.inline
-    def warningLight: typings.wixStyleReact.wixStyleReactStrings.warningLight = "warningLight".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.warningLight]
+    inline def warningLight: typings.wixStyleReact.wixStyleReactStrings.warningLight = "warningLight".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.warningLight]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -323,13 +270,10 @@ object badgeMod {
   trait BadgeType extends StObject
   object BadgeType {
     
-    @scala.inline
-    def outlined: typings.wixStyleReact.wixStyleReactStrings.outlined = "outlined".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.outlined]
+    inline def outlined: typings.wixStyleReact.wixStyleReactStrings.outlined = "outlined".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.outlined]
     
-    @scala.inline
-    def solid: typings.wixStyleReact.wixStyleReactStrings.solid = "solid".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.solid]
+    inline def solid: typings.wixStyleReact.wixStyleReactStrings.solid = "solid".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.solid]
     
-    @scala.inline
-    def transparent: typings.wixStyleReact.wixStyleReactStrings.transparent = "transparent".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.transparent]
+    inline def transparent: typings.wixStyleReact.wixStyleReactStrings.transparent = "transparent".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.transparent]
   }
 }

@@ -18,25 +18,19 @@ trait EnvironmentLink extends StObject {
 }
 object EnvironmentLink {
   
-  @scala.inline
-  def apply(): EnvironmentLink = {
+  inline def apply(): EnvironmentLink = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnvironmentLink]
   }
   
-  @scala.inline
-  implicit class EnvironmentLinkMutableBuilder[Self <: EnvironmentLink] (val x: Self) extends AnyVal {
+  extension [Self <: EnvironmentLink](x: Self) {
     
-    @scala.inline
-    def setEnvironmentName(value: String): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
+    inline def setEnvironmentName(value: String): Self = StObject.set(x, "EnvironmentName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentNameUndefined: Self = StObject.set(x, "EnvironmentName", js.undefined)
+    inline def setEnvironmentNameUndefined: Self = StObject.set(x, "EnvironmentName", js.undefined)
     
-    @scala.inline
-    def setLinkName(value: String): Self = StObject.set(x, "LinkName", value.asInstanceOf[js.Any])
+    inline def setLinkName(value: String): Self = StObject.set(x, "LinkName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkNameUndefined: Self = StObject.set(x, "LinkName", js.undefined)
+    inline def setLinkNameUndefined: Self = StObject.set(x, "LinkName", js.undefined)
   }
 }

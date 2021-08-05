@@ -8,23 +8,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[T /* <: Func */](spy: T & Spy[typings.jasmine.jasmine.Func]): CallHandler[T] = ^.asInstanceOf[js.Dynamic].apply(spy.asInstanceOf[js.Any]).asInstanceOf[CallHandler[T]]
+  inline def apply[T /* <: Func */](spy: T & Spy[typings.jasmine.jasmine.Func]): CallHandler[T] = ^.asInstanceOf[js.Dynamic].apply(spy.asInstanceOf[js.Any]).asInstanceOf[CallHandler[T]]
   
   @JSImport("saywhen", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def captor[T](): MatcherProxy[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("captor")().asInstanceOf[MatcherProxy[T]]
-  @scala.inline
-  def captor[T](`val`: T): MatcherProxy[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("captor")(`val`.asInstanceOf[js.Any]).asInstanceOf[MatcherProxy[T]]
+  inline def captor[T](): MatcherProxy[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("captor")().asInstanceOf[MatcherProxy[T]]
+  inline def captor[T](`val`: T): MatcherProxy[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("captor")(`val`.asInstanceOf[js.Any]).asInstanceOf[MatcherProxy[T]]
   
-  @scala.inline
-  def is[T](`val`: T): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def is[T](`val`: T): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def noConflict(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[Unit]
+  inline def noConflict(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[Unit]
   
   trait CallHandler[T /* <: Func */] extends StObject {
     
@@ -34,20 +29,16 @@ object mod {
   }
   object CallHandler {
     
-    @scala.inline
-    def apply[T /* <: Func */](isCalled: Proxy[T], isCalledWith: /* repeated */ js.Any => Proxy[T]): CallHandler[T] = {
+    inline def apply[T /* <: Func */](isCalled: Proxy[T], isCalledWith: /* repeated */ js.Any => Proxy[T]): CallHandler[T] = {
       val __obj = js.Dynamic.literal(isCalled = isCalled.asInstanceOf[js.Any], isCalledWith = js.Any.fromFunction1(isCalledWith))
       __obj.asInstanceOf[CallHandler[T]]
     }
     
-    @scala.inline
-    implicit class CallHandlerMutableBuilder[Self <: CallHandler[?], T /* <: Func */] (val x: Self & CallHandler[T]) extends AnyVal {
+    extension [Self <: CallHandler[?], T /* <: Func */](x: Self & CallHandler[T]) {
       
-      @scala.inline
-      def setIsCalled(value: Proxy[T]): Self = StObject.set(x, "isCalled", value.asInstanceOf[js.Any])
+      inline def setIsCalled(value: Proxy[T]): Self = StObject.set(x, "isCalled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCalledWith(value: /* repeated */ js.Any => Proxy[T]): Self = StObject.set(x, "isCalledWith", js.Any.fromFunction1(value))
+      inline def setIsCalledWith(value: /* repeated */ js.Any => Proxy[T]): Self = StObject.set(x, "isCalledWith", js.Any.fromFunction1(value))
     }
   }
   
@@ -77,24 +68,19 @@ object mod {
   }
   object Proxy {
     
-    @scala.inline
-    def apply[T /* <: Func */](`then`: T => Proxy[T], thenReturn: js.Any => Proxy[T], thenThrow: Error => Proxy[T]): Proxy[T] = {
+    inline def apply[T /* <: Func */](`then`: T => Proxy[T], thenReturn: js.Any => Proxy[T], thenThrow: Error => Proxy[T]): Proxy[T] = {
       val __obj = js.Dynamic.literal(thenReturn = js.Any.fromFunction1(thenReturn), thenThrow = js.Any.fromFunction1(thenThrow))
       __obj.updateDynamic("then")(js.Any.fromFunction1(`then`))
       __obj.asInstanceOf[Proxy[T]]
     }
     
-    @scala.inline
-    implicit class ProxyMutableBuilder[Self <: Proxy[?], T /* <: Func */] (val x: Self & Proxy[T]) extends AnyVal {
+    extension [Self <: Proxy[?], T /* <: Func */](x: Self & Proxy[T]) {
       
-      @scala.inline
-      def setThen(value: T => Proxy[T]): Self = StObject.set(x, "then", js.Any.fromFunction1(value))
+      inline def setThen(value: T => Proxy[T]): Self = StObject.set(x, "then", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setThenReturn(value: js.Any => Proxy[T]): Self = StObject.set(x, "thenReturn", js.Any.fromFunction1(value))
+      inline def setThenReturn(value: js.Any => Proxy[T]): Self = StObject.set(x, "thenReturn", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setThenThrow(value: Error => Proxy[T]): Self = StObject.set(x, "thenThrow", js.Any.fromFunction1(value))
+      inline def setThenThrow(value: Error => Proxy[T]): Self = StObject.set(x, "thenThrow", js.Any.fromFunction1(value))
     }
   }
 }

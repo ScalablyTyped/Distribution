@@ -18,31 +18,23 @@ trait CordovaCompatibilityVersions extends StObject {
 }
 object CordovaCompatibilityVersions {
   
-  @scala.inline
-  def apply(PUBLIC_SETTINGS: js.Any, format: String, manifest: js.Any, version: String): CordovaCompatibilityVersions = {
+  inline def apply(PUBLIC_SETTINGS: js.Any, format: String, manifest: js.Any, version: String): CordovaCompatibilityVersions = {
     val __obj = js.Dynamic.literal(PUBLIC_SETTINGS = PUBLIC_SETTINGS.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], manifest = manifest.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[CordovaCompatibilityVersions]
   }
   
-  @scala.inline
-  implicit class CordovaCompatibilityVersionsMutableBuilder[Self <: CordovaCompatibilityVersions] (val x: Self) extends AnyVal {
+  extension [Self <: CordovaCompatibilityVersions](x: Self) {
     
-    @scala.inline
-    def setCordovaCompatibilityVersions(value: js.Any): Self = StObject.set(x, "cordovaCompatibilityVersions", value.asInstanceOf[js.Any])
+    inline def setCordovaCompatibilityVersions(value: js.Any): Self = StObject.set(x, "cordovaCompatibilityVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCordovaCompatibilityVersionsUndefined: Self = StObject.set(x, "cordovaCompatibilityVersions", js.undefined)
+    inline def setCordovaCompatibilityVersionsUndefined: Self = StObject.set(x, "cordovaCompatibilityVersions", js.undefined)
     
-    @scala.inline
-    def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManifest(value: js.Any): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
+    inline def setManifest(value: js.Any): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPUBLIC_SETTINGS(value: js.Any): Self = StObject.set(x, "PUBLIC_SETTINGS", value.asInstanceOf[js.Any])
+    inline def setPUBLIC_SETTINGS(value: js.Any): Self = StObject.set(x, "PUBLIC_SETTINGS", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

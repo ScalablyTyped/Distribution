@@ -10,19 +10,15 @@ trait NonMutatingCallbacks extends StObject {
 }
 object NonMutatingCallbacks {
   
-  @scala.inline
-  def apply(): NonMutatingCallbacks = {
+  inline def apply(): NonMutatingCallbacks = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NonMutatingCallbacks]
   }
   
-  @scala.inline
-  implicit class NonMutatingCallbacksMutableBuilder[Self <: NonMutatingCallbacks] (val x: Self) extends AnyVal {
+  extension [Self <: NonMutatingCallbacks](x: Self) {
     
-    @scala.inline
-    def setNonMutatingCallbacks(value: Boolean): Self = StObject.set(x, "nonMutatingCallbacks", value.asInstanceOf[js.Any])
+    inline def setNonMutatingCallbacks(value: Boolean): Self = StObject.set(x, "nonMutatingCallbacks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonMutatingCallbacksUndefined: Self = StObject.set(x, "nonMutatingCallbacks", js.undefined)
+    inline def setNonMutatingCallbacksUndefined: Self = StObject.set(x, "nonMutatingCallbacks", js.undefined)
   }
 }

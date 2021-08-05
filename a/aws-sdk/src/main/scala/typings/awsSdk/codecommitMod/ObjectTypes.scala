@@ -23,31 +23,23 @@ trait ObjectTypes extends StObject {
 }
 object ObjectTypes {
   
-  @scala.inline
-  def apply(): ObjectTypes = {
+  inline def apply(): ObjectTypes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ObjectTypes]
   }
   
-  @scala.inline
-  implicit class ObjectTypesMutableBuilder[Self <: ObjectTypes] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectTypes](x: Self) {
     
-    @scala.inline
-    def setBase(value: ObjectTypeEnum): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: ObjectTypeEnum): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
+    inline def setBaseUndefined: Self = StObject.set(x, "base", js.undefined)
     
-    @scala.inline
-    def setDestination(value: ObjectTypeEnum): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: ObjectTypeEnum): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+    inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
-    @scala.inline
-    def setSource(value: ObjectTypeEnum): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: ObjectTypeEnum): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

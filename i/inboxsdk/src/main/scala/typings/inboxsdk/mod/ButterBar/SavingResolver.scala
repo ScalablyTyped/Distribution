@@ -12,19 +12,15 @@ trait SavingResolver extends StObject {
 }
 object SavingResolver {
   
-  @scala.inline
-  def apply(reject: () => Unit, resolve: () => Unit): SavingResolver = {
+  inline def apply(reject: () => Unit, resolve: () => Unit): SavingResolver = {
     val __obj = js.Dynamic.literal(reject = js.Any.fromFunction0(reject), resolve = js.Any.fromFunction0(resolve))
     __obj.asInstanceOf[SavingResolver]
   }
   
-  @scala.inline
-  implicit class SavingResolverMutableBuilder[Self <: SavingResolver] (val x: Self) extends AnyVal {
+  extension [Self <: SavingResolver](x: Self) {
     
-    @scala.inline
-    def setReject(value: () => Unit): Self = StObject.set(x, "reject", js.Any.fromFunction0(value))
+    inline def setReject(value: () => Unit): Self = StObject.set(x, "reject", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResolve(value: () => Unit): Self = StObject.set(x, "resolve", js.Any.fromFunction0(value))
+    inline def setResolve(value: () => Unit): Self = StObject.set(x, "resolve", js.Any.fromFunction0(value))
   }
 }

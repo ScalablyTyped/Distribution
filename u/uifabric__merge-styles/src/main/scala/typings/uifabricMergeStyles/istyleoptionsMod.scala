@@ -14,26 +14,20 @@ object istyleoptionsMod {
   }
   object IStyleOptions {
     
-    @scala.inline
-    def apply(): IStyleOptions = {
+    inline def apply(): IStyleOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IStyleOptions]
     }
     
-    @scala.inline
-    implicit class IStyleOptionsMutableBuilder[Self <: IStyleOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IStyleOptions](x: Self) {
       
-      @scala.inline
-      def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
+      inline def setRtl(value: Boolean): Self = StObject.set(x, "rtl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
+      inline def setRtlUndefined: Self = StObject.set(x, "rtl", js.undefined)
       
-      @scala.inline
-      def setSpecificityMultiplier(value: Double): Self = StObject.set(x, "specificityMultiplier", value.asInstanceOf[js.Any])
+      inline def setSpecificityMultiplier(value: Double): Self = StObject.set(x, "specificityMultiplier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpecificityMultiplierUndefined: Self = StObject.set(x, "specificityMultiplier", js.undefined)
+      inline def setSpecificityMultiplierUndefined: Self = StObject.set(x, "specificityMultiplier", js.undefined)
     }
   }
 }

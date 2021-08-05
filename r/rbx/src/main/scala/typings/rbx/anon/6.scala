@@ -11,19 +11,15 @@ trait `6`[TAsComponent /* <: ElementType[js.Any] */] extends StObject {
 }
 object `6` {
   
-  @scala.inline
-  def apply[TAsComponent /* <: ElementType[js.Any] */](): `6`[TAsComponent] = {
+  inline def apply[TAsComponent /* <: ElementType[js.Any] */](): `6`[TAsComponent] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`6`[TAsComponent]]
   }
   
-  @scala.inline
-  implicit class `6MutableBuilder`[Self <: `6`[?], TAsComponent /* <: ElementType[js.Any] */] (val x: Self & `6`[TAsComponent]) extends AnyVal {
+  extension [Self <: `6`[?], TAsComponent /* <: ElementType[js.Any] */](x: Self & `6`[TAsComponent]) {
     
-    @scala.inline
-    def setAs(value: TAsComponent): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: TAsComponent): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+    inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
   }
 }

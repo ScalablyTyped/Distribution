@@ -10,16 +10,13 @@ trait IOnMessageEvent extends StObject {
 }
 object IOnMessageEvent {
   
-  @scala.inline
-  def apply(data: String): IOnMessageEvent = {
+  inline def apply(data: String): IOnMessageEvent = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[IOnMessageEvent]
   }
   
-  @scala.inline
-  implicit class IOnMessageEventMutableBuilder[Self <: IOnMessageEvent] (val x: Self) extends AnyVal {
+  extension [Self <: IOnMessageEvent](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }
 }

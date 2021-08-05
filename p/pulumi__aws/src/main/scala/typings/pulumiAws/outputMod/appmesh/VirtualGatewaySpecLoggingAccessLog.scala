@@ -13,19 +13,15 @@ trait VirtualGatewaySpecLoggingAccessLog extends StObject {
 }
 object VirtualGatewaySpecLoggingAccessLog {
   
-  @scala.inline
-  def apply(): VirtualGatewaySpecLoggingAccessLog = {
+  inline def apply(): VirtualGatewaySpecLoggingAccessLog = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VirtualGatewaySpecLoggingAccessLog]
   }
   
-  @scala.inline
-  implicit class VirtualGatewaySpecLoggingAccessLogMutableBuilder[Self <: VirtualGatewaySpecLoggingAccessLog] (val x: Self) extends AnyVal {
+  extension [Self <: VirtualGatewaySpecLoggingAccessLog](x: Self) {
     
-    @scala.inline
-    def setFile(value: VirtualGatewaySpecLoggingAccessLogFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: VirtualGatewaySpecLoggingAccessLogFile): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+    inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
   }
 }

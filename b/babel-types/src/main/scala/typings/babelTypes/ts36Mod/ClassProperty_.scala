@@ -24,38 +24,28 @@ trait ClassProperty_
 }
 object ClassProperty_ {
   
-  @scala.inline
-  def apply(end: Double, key: Identifier_, loc: SourceLocation, start: Double, value: Expression): ClassProperty_ = {
+  inline def apply(end: Double, key: Identifier_, loc: SourceLocation, start: Double, value: Expression): ClassProperty_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ClassProperty")
     __obj.asInstanceOf[ClassProperty_]
   }
   
-  @scala.inline
-  implicit class ClassProperty_MutableBuilder[Self <: ClassProperty_] (val x: Self) extends AnyVal {
+  extension [Self <: ClassProperty_](x: Self) {
     
-    @scala.inline
-    def setDecorators(value: js.Array[Decorator_]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
+    inline def setDecorators(value: js.Array[Decorator_]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecoratorsUndefined: Self = StObject.set(x, "decorators", js.undefined)
+    inline def setDecoratorsUndefined: Self = StObject.set(x, "decorators", js.undefined)
     
-    @scala.inline
-    def setDecoratorsVarargs(value: Decorator_ *): Self = StObject.set(x, "decorators", js.Array(value :_*))
+    inline def setDecoratorsVarargs(value: Decorator_ *): Self = StObject.set(x, "decorators", js.Array(value :_*))
     
-    @scala.inline
-    def setKey(value: Identifier_): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: Identifier_): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ClassProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ClassProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAnnotation(value: TypeAnnotation_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
+    inline def setTypeAnnotation(value: TypeAnnotation_): Self = StObject.set(x, "typeAnnotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeAnnotationUndefined: Self = StObject.set(x, "typeAnnotation", js.undefined)
+    inline def setTypeAnnotationUndefined: Self = StObject.set(x, "typeAnnotation", js.undefined)
     
-    @scala.inline
-    def setValue(value: Expression): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Expression): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

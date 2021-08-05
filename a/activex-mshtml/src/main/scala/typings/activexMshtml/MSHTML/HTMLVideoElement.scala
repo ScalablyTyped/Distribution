@@ -10,7 +10,7 @@ trait HTMLVideoElement extends StObject {
   def FireEvent(bstrEventName: String): Boolean = js.native
   def FireEvent(bstrEventName: String, pvarEventObject: js.Any): Boolean = js.native
   
-  @JSName("MSHTML.HTMLVideoElement_typekey")
+  /* private */ @JSName("MSHTML.HTMLVideoElement_typekey")
   var MSHTMLDotHTMLVideoElement_typekey: HTMLVideoElement = js.native
   
   var accessKey: String = js.native

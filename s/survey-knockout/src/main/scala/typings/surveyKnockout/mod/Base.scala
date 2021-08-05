@@ -87,7 +87,7 @@ class Base () extends StObject {
     */
   val isLoadingFromJson: Boolean = js.native
   
-  var isLoadingFromJsonValue: Boolean = js.native
+  /* protected */ var isLoadingFromJsonValue: Boolean = js.native
   
   /* protected */ def isTwoValueEquals(x: js.Any, y: js.Any): Boolean = js.native
   /* protected */ def isTwoValueEquals(x: js.Any, y: js.Any, caseInSensitive: Boolean): Boolean = js.native
@@ -208,17 +208,12 @@ object Base {
   @JSImport("survey-knockout", "Base.commentPrefix")
   @js.native
   def commentPrefix: String = js.native
-  @scala.inline
-  def commentPrefix_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("commentPrefix")(x.asInstanceOf[js.Any])
+  inline def commentPrefix_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("commentPrefix")(x.asInstanceOf[js.Any])
   
-  @scala.inline
-  def createItemValue(item: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createItemValue")(item.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def createItemValue(item: js.Any, `type`: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createItemValue")(item.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def createItemValue(item: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createItemValue")(item.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def createItemValue(item: js.Any, `type`: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createItemValue")(item.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @scala.inline
-  def isSurveyElement(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSurveyElement")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isSurveyElement(`val`: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSurveyElement")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def itemValueLocStrChanged(arr: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("itemValueLocStrChanged")(arr.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def itemValueLocStrChanged(arr: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("itemValueLocStrChanged")(arr.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

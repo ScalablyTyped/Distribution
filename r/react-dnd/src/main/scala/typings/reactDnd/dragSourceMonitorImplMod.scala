@@ -25,7 +25,7 @@ object dragSourceMonitorImplMod {
     
     def getSourceId(): Identifier | Null = js.native
     
-    var internalMonitor: js.Any = js.native
+    /* private */ var internalMonitor: js.Any = js.native
     
     def isDraggingSource(sourceId: Identifier): Boolean = js.native
     
@@ -34,7 +34,7 @@ object dragSourceMonitorImplMod {
     
     def isSourcePublic(): Boolean | Null = js.native
     
-    var sourceId: js.Any = js.native
+    /* private */ var sourceId: js.Any = js.native
     
     def subscribeToOffsetChange(listener: Listener): Unsubscribe = js.native
   }

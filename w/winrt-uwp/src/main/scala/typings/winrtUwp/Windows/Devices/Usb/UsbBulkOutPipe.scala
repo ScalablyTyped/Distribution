@@ -26,8 +26,7 @@ trait UsbBulkOutPipe extends StObject {
 }
 object UsbBulkOutPipe {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clearStallAsync: () => IPromiseWithIAsyncAction,
     endpointDescriptor: UsbBulkOutEndpointDescriptor,
     outputStream: IOutputStream,
@@ -37,19 +36,14 @@ object UsbBulkOutPipe {
     __obj.asInstanceOf[UsbBulkOutPipe]
   }
   
-  @scala.inline
-  implicit class UsbBulkOutPipeMutableBuilder[Self <: UsbBulkOutPipe] (val x: Self) extends AnyVal {
+  extension [Self <: UsbBulkOutPipe](x: Self) {
     
-    @scala.inline
-    def setClearStallAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "clearStallAsync", js.Any.fromFunction0(value))
+    inline def setClearStallAsync(value: () => IPromiseWithIAsyncAction): Self = StObject.set(x, "clearStallAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEndpointDescriptor(value: UsbBulkOutEndpointDescriptor): Self = StObject.set(x, "endpointDescriptor", value.asInstanceOf[js.Any])
+    inline def setEndpointDescriptor(value: UsbBulkOutEndpointDescriptor): Self = StObject.set(x, "endpointDescriptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputStream(value: IOutputStream): Self = StObject.set(x, "outputStream", value.asInstanceOf[js.Any])
+    inline def setOutputStream(value: IOutputStream): Self = StObject.set(x, "outputStream", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteOptions(value: UsbWriteOptions): Self = StObject.set(x, "writeOptions", value.asInstanceOf[js.Any])
+    inline def setWriteOptions(value: UsbWriteOptions): Self = StObject.set(x, "writeOptions", value.asInstanceOf[js.Any])
   }
 }

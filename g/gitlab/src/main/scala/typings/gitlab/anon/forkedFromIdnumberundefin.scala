@@ -16,25 +16,19 @@ trait forkedFromIdnumberundefin
 }
 object forkedFromIdnumberundefin {
   
-  @scala.inline
-  def apply(): forkedFromIdnumberundefin = {
+  inline def apply(): forkedFromIdnumberundefin = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[forkedFromIdnumberundefin]
   }
   
-  @scala.inline
-  implicit class forkedFromIdnumberundefinMutableBuilder[Self <: forkedFromIdnumberundefin] (val x: Self) extends AnyVal {
+  extension [Self <: forkedFromIdnumberundefin](x: Self) {
     
-    @scala.inline
-    def setForkedFromId(value: Double): Self = StObject.set(x, "forkedFromId", value.asInstanceOf[js.Any])
+    inline def setForkedFromId(value: Double): Self = StObject.set(x, "forkedFromId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForkedFromIdUndefined: Self = StObject.set(x, "forkedFromId", js.undefined)
+    inline def setForkedFromIdUndefined: Self = StObject.set(x, "forkedFromId", js.undefined)
     
-    @scala.inline
-    def setSudo(value: String | Double): Self = StObject.set(x, "sudo", value.asInstanceOf[js.Any])
+    inline def setSudo(value: String | Double): Self = StObject.set(x, "sudo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSudoUndefined: Self = StObject.set(x, "sudo", js.undefined)
+    inline def setSudoUndefined: Self = StObject.set(x, "sudo", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait DeleteVpcLinkRequest extends StObject {
 }
 object DeleteVpcLinkRequest {
   
-  @scala.inline
-  def apply(vpcLinkId: String): DeleteVpcLinkRequest = {
+  inline def apply(vpcLinkId: String): DeleteVpcLinkRequest = {
     val __obj = js.Dynamic.literal(vpcLinkId = vpcLinkId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteVpcLinkRequest]
   }
   
-  @scala.inline
-  implicit class DeleteVpcLinkRequestMutableBuilder[Self <: DeleteVpcLinkRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteVpcLinkRequest](x: Self) {
     
-    @scala.inline
-    def setVpcLinkId(value: String): Self = StObject.set(x, "vpcLinkId", value.asInstanceOf[js.Any])
+    inline def setVpcLinkId(value: String): Self = StObject.set(x, "vpcLinkId", value.asInstanceOf[js.Any])
   }
 }

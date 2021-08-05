@@ -33,43 +33,31 @@ trait LogsSummary extends StObject {
 }
 object LogsSummary {
   
-  @scala.inline
-  def apply(): LogsSummary = {
+  inline def apply(): LogsSummary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LogsSummary]
   }
   
-  @scala.inline
-  implicit class LogsSummaryMutableBuilder[Self <: LogsSummary] (val x: Self) extends AnyVal {
+  extension [Self <: LogsSummary](x: Self) {
     
-    @scala.inline
-    def setAudit(value: boolean): Self = StObject.set(x, "Audit", value.asInstanceOf[js.Any])
+    inline def setAudit(value: boolean): Self = StObject.set(x, "Audit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuditLogGroup(value: string): Self = StObject.set(x, "AuditLogGroup", value.asInstanceOf[js.Any])
+    inline def setAuditLogGroup(value: string): Self = StObject.set(x, "AuditLogGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuditLogGroupUndefined: Self = StObject.set(x, "AuditLogGroup", js.undefined)
+    inline def setAuditLogGroupUndefined: Self = StObject.set(x, "AuditLogGroup", js.undefined)
     
-    @scala.inline
-    def setAuditUndefined: Self = StObject.set(x, "Audit", js.undefined)
+    inline def setAuditUndefined: Self = StObject.set(x, "Audit", js.undefined)
     
-    @scala.inline
-    def setGeneral(value: boolean): Self = StObject.set(x, "General", value.asInstanceOf[js.Any])
+    inline def setGeneral(value: boolean): Self = StObject.set(x, "General", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeneralLogGroup(value: string): Self = StObject.set(x, "GeneralLogGroup", value.asInstanceOf[js.Any])
+    inline def setGeneralLogGroup(value: string): Self = StObject.set(x, "GeneralLogGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeneralLogGroupUndefined: Self = StObject.set(x, "GeneralLogGroup", js.undefined)
+    inline def setGeneralLogGroupUndefined: Self = StObject.set(x, "GeneralLogGroup", js.undefined)
     
-    @scala.inline
-    def setGeneralUndefined: Self = StObject.set(x, "General", js.undefined)
+    inline def setGeneralUndefined: Self = StObject.set(x, "General", js.undefined)
     
-    @scala.inline
-    def setPending(value: PendingLogs): Self = StObject.set(x, "Pending", value.asInstanceOf[js.Any])
+    inline def setPending(value: PendingLogs): Self = StObject.set(x, "Pending", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPendingUndefined: Self = StObject.set(x, "Pending", js.undefined)
+    inline def setPendingUndefined: Self = StObject.set(x, "Pending", js.undefined)
   }
 }

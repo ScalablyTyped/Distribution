@@ -10,10 +10,8 @@ object securityRulesMod {
   
   object securityRules {
     
-    @scala.inline
-    def apply(): SecurityRules = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[SecurityRules]
-    @scala.inline
-    def apply(app: App): SecurityRules = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[SecurityRules]
+    inline def apply(): SecurityRules = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[SecurityRules]
+    inline def apply(app: App): SecurityRules = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[SecurityRules]
     
     @JSImport("firebase-admin/lib/security-rules", "securityRules")
     @js.native
@@ -33,20 +31,16 @@ object securityRulesMod {
     }
     object RulesFile {
       
-      @scala.inline
-      def apply(content: String, name: String): RulesFile = {
+      inline def apply(content: String, name: String): RulesFile = {
         val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
         __obj.asInstanceOf[RulesFile]
       }
       
-      @scala.inline
-      implicit class RulesFileMutableBuilder[Self <: RulesFile] (val x: Self) extends AnyVal {
+      extension [Self <: RulesFile](x: Self) {
         
-        @scala.inline
-        def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+        inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       }
     }
     
@@ -61,20 +55,16 @@ object securityRulesMod {
     }
     object Ruleset {
       
-      @scala.inline
-      def apply(createTime: String, name: String, source: js.Array[RulesFile]): Ruleset = {
+      inline def apply(createTime: String, name: String, source: js.Array[RulesFile]): Ruleset = {
         val __obj = js.Dynamic.literal(createTime = createTime.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
         __obj.asInstanceOf[Ruleset]
       }
       
-      @scala.inline
-      implicit class RulesetMutableBuilder[Self <: Ruleset] (val x: Self) extends AnyVal {
+      extension [Self <: Ruleset](x: Self) {
         
-        @scala.inline
-        def setSource(value: js.Array[RulesFile]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+        inline def setSource(value: js.Array[RulesFile]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSourceVarargs(value: RulesFile*): Self = StObject.set(x, "source", js.Array(value :_*))
+        inline def setSourceVarargs(value: RulesFile*): Self = StObject.set(x, "source", js.Array(value :_*))
       }
     }
     
@@ -97,20 +87,16 @@ object securityRulesMod {
     }
     object RulesetMetadata {
       
-      @scala.inline
-      def apply(createTime: String, name: String): RulesetMetadata = {
+      inline def apply(createTime: String, name: String): RulesetMetadata = {
         val __obj = js.Dynamic.literal(createTime = createTime.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
         __obj.asInstanceOf[RulesetMetadata]
       }
       
-      @scala.inline
-      implicit class RulesetMetadataMutableBuilder[Self <: RulesetMetadata] (val x: Self) extends AnyVal {
+      extension [Self <: RulesetMetadata](x: Self) {
         
-        @scala.inline
-        def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+        inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       }
     }
     
@@ -131,26 +117,20 @@ object securityRulesMod {
     }
     object RulesetMetadataList {
       
-      @scala.inline
-      def apply(rulesets: js.Array[RulesetMetadata]): RulesetMetadataList = {
+      inline def apply(rulesets: js.Array[RulesetMetadata]): RulesetMetadataList = {
         val __obj = js.Dynamic.literal(rulesets = rulesets.asInstanceOf[js.Any])
         __obj.asInstanceOf[RulesetMetadataList]
       }
       
-      @scala.inline
-      implicit class RulesetMetadataListMutableBuilder[Self <: RulesetMetadataList] (val x: Self) extends AnyVal {
+      extension [Self <: RulesetMetadataList](x: Self) {
         
-        @scala.inline
-        def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+        inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+        inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
         
-        @scala.inline
-        def setRulesets(value: js.Array[RulesetMetadata]): Self = StObject.set(x, "rulesets", value.asInstanceOf[js.Any])
+        inline def setRulesets(value: js.Array[RulesetMetadata]): Self = StObject.set(x, "rulesets", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRulesetsVarargs(value: RulesetMetadata*): Self = StObject.set(x, "rulesets", js.Array(value :_*))
+        inline def setRulesetsVarargs(value: RulesetMetadata*): Self = StObject.set(x, "rulesets", js.Array(value :_*))
       }
     }
     

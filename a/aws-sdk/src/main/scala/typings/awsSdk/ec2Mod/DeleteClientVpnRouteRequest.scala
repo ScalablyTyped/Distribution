@@ -28,31 +28,23 @@ trait DeleteClientVpnRouteRequest extends StObject {
 }
 object DeleteClientVpnRouteRequest {
   
-  @scala.inline
-  def apply(ClientVpnEndpointId: ClientVpnEndpointId, DestinationCidrBlock: String): DeleteClientVpnRouteRequest = {
+  inline def apply(ClientVpnEndpointId: ClientVpnEndpointId, DestinationCidrBlock: String): DeleteClientVpnRouteRequest = {
     val __obj = js.Dynamic.literal(ClientVpnEndpointId = ClientVpnEndpointId.asInstanceOf[js.Any], DestinationCidrBlock = DestinationCidrBlock.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteClientVpnRouteRequest]
   }
   
-  @scala.inline
-  implicit class DeleteClientVpnRouteRequestMutableBuilder[Self <: DeleteClientVpnRouteRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteClientVpnRouteRequest](x: Self) {
     
-    @scala.inline
-    def setClientVpnEndpointId(value: ClientVpnEndpointId): Self = StObject.set(x, "ClientVpnEndpointId", value.asInstanceOf[js.Any])
+    inline def setClientVpnEndpointId(value: ClientVpnEndpointId): Self = StObject.set(x, "ClientVpnEndpointId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationCidrBlock(value: String): Self = StObject.set(x, "DestinationCidrBlock", value.asInstanceOf[js.Any])
+    inline def setDestinationCidrBlock(value: String): Self = StObject.set(x, "DestinationCidrBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setTargetVpcSubnetId(value: SubnetId): Self = StObject.set(x, "TargetVpcSubnetId", value.asInstanceOf[js.Any])
+    inline def setTargetVpcSubnetId(value: SubnetId): Self = StObject.set(x, "TargetVpcSubnetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetVpcSubnetIdUndefined: Self = StObject.set(x, "TargetVpcSubnetId", js.undefined)
+    inline def setTargetVpcSubnetIdUndefined: Self = StObject.set(x, "TargetVpcSubnetId", js.undefined)
   }
 }

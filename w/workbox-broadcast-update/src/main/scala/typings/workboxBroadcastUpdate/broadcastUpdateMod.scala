@@ -10,8 +10,7 @@ object broadcastUpdateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def broadcastUpdate(options: BroadcastUpdateOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("broadcastUpdate")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def broadcastUpdate(options: BroadcastUpdateOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("broadcastUpdate")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   trait BroadcastUpdateOptions extends StObject {
     
@@ -23,26 +22,20 @@ object broadcastUpdateMod {
   }
   object BroadcastUpdateOptions {
     
-    @scala.inline
-    def apply(cacheName: String, url: String): BroadcastUpdateOptions = {
+    inline def apply(cacheName: String, url: String): BroadcastUpdateOptions = {
       val __obj = js.Dynamic.literal(cacheName = cacheName.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[BroadcastUpdateOptions]
     }
     
-    @scala.inline
-    implicit class BroadcastUpdateOptionsMutableBuilder[Self <: BroadcastUpdateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BroadcastUpdateOptions](x: Self) {
       
-      @scala.inline
-      def setCacheName(value: String): Self = StObject.set(x, "cacheName", value.asInstanceOf[js.Any])
+      inline def setCacheName(value: String): Self = StObject.set(x, "cacheName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+      inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
+      inline def setChannelUndefined: Self = StObject.set(x, "channel", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
 }

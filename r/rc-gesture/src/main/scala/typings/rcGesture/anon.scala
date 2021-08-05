@@ -21,26 +21,20 @@ object anon {
   }
   object Angle {
     
-    @scala.inline
-    def apply(angle: Double, x: Double, y: Double, z: Double): Angle = {
+    inline def apply(angle: Double, x: Double, y: Double, z: Double): Angle = {
       val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
       __obj.asInstanceOf[Angle]
     }
     
-    @scala.inline
-    implicit class AngleMutableBuilder[Self <: Angle] (val x: Self) extends AnyVal {
+    extension [Self <: Angle](x: Self) {
       
-      @scala.inline
-      def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+      inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+      inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
     }
   }
   
@@ -84,8 +78,7 @@ object anon {
   }
   object AvailablePan {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       preTouches: js.Array[Finger],
       srcEvent: js.Any,
       startTime: Double,
@@ -97,113 +90,77 @@ object anon {
       __obj.asInstanceOf[AvailablePan]
     }
     
-    @scala.inline
-    implicit class AvailablePanMutableBuilder[Self <: AvailablePan] (val x: Self) extends AnyVal {
+    extension [Self <: AvailablePan](x: Self) {
       
-      @scala.inline
-      def setAvailablePan(value: Boolean): Self = StObject.set(x, "availablePan", value.asInstanceOf[js.Any])
+      inline def setAvailablePan(value: Boolean): Self = StObject.set(x, "availablePan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailablePanUndefined: Self = StObject.set(x, "availablePan", js.undefined)
+      inline def setAvailablePanUndefined: Self = StObject.set(x, "availablePan", js.undefined)
       
-      @scala.inline
-      def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: Double): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setMoveStatus(value: SingeFingerMoveStatus): Self = StObject.set(x, "moveStatus", value.asInstanceOf[js.Any])
+      inline def setMoveStatus(value: SingeFingerMoveStatus): Self = StObject.set(x, "moveStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoveStatusUndefined: Self = StObject.set(x, "moveStatus", js.undefined)
+      inline def setMoveStatusUndefined: Self = StObject.set(x, "moveStatus", js.undefined)
       
-      @scala.inline
-      def setMutliFingerStatus(value: js.Array[MultiFingerStatus]): Self = StObject.set(x, "mutliFingerStatus", value.asInstanceOf[js.Any])
+      inline def setMutliFingerStatus(value: js.Array[MultiFingerStatus]): Self = StObject.set(x, "mutliFingerStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMutliFingerStatusUndefined: Self = StObject.set(x, "mutliFingerStatus", js.undefined)
+      inline def setMutliFingerStatusUndefined: Self = StObject.set(x, "mutliFingerStatus", js.undefined)
       
-      @scala.inline
-      def setMutliFingerStatusVarargs(value: MultiFingerStatus*): Self = StObject.set(x, "mutliFingerStatus", js.Array(value :_*))
+      inline def setMutliFingerStatusVarargs(value: MultiFingerStatus*): Self = StObject.set(x, "mutliFingerStatus", js.Array(value :_*))
       
-      @scala.inline
-      def setPan(value: Boolean): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
+      inline def setPan(value: Boolean): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanUndefined: Self = StObject.set(x, "pan", js.undefined)
+      inline def setPanUndefined: Self = StObject.set(x, "pan", js.undefined)
       
-      @scala.inline
-      def setPinch(value: Boolean): Self = StObject.set(x, "pinch", value.asInstanceOf[js.Any])
+      inline def setPinch(value: Boolean): Self = StObject.set(x, "pinch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPinchUndefined: Self = StObject.set(x, "pinch", js.undefined)
+      inline def setPinchUndefined: Self = StObject.set(x, "pinch", js.undefined)
       
-      @scala.inline
-      def setPreTouches(value: js.Array[Finger]): Self = StObject.set(x, "preTouches", value.asInstanceOf[js.Any])
+      inline def setPreTouches(value: js.Array[Finger]): Self = StObject.set(x, "preTouches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreTouchesVarargs(value: Finger*): Self = StObject.set(x, "preTouches", js.Array(value :_*))
+      inline def setPreTouchesVarargs(value: Finger*): Self = StObject.set(x, "preTouches", js.Array(value :_*))
       
-      @scala.inline
-      def setPress(value: Boolean): Self = StObject.set(x, "press", value.asInstanceOf[js.Any])
+      inline def setPress(value: Boolean): Self = StObject.set(x, "press", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPressUndefined: Self = StObject.set(x, "press", js.undefined)
+      inline def setPressUndefined: Self = StObject.set(x, "press", js.undefined)
       
-      @scala.inline
-      def setRotate(value: Boolean): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+      inline def setRotate(value: Boolean): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
+      inline def setRotateUndefined: Self = StObject.set(x, "rotate", js.undefined)
       
-      @scala.inline
-      def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+      inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+      inline def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
       
-      @scala.inline
-      def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+      inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+      inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
       
-      @scala.inline
-      def setSrcEvent(value: js.Any): Self = StObject.set(x, "srcEvent", value.asInstanceOf[js.Any])
+      inline def setSrcEvent(value: js.Any): Self = StObject.set(x, "srcEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartMutliFingerStatus(value: js.Array[MultiFingerStatus]): Self = StObject.set(x, "startMutliFingerStatus", value.asInstanceOf[js.Any])
+      inline def setStartMutliFingerStatus(value: js.Array[MultiFingerStatus]): Self = StObject.set(x, "startMutliFingerStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartMutliFingerStatusUndefined: Self = StObject.set(x, "startMutliFingerStatus", js.undefined)
+      inline def setStartMutliFingerStatusUndefined: Self = StObject.set(x, "startMutliFingerStatus", js.undefined)
       
-      @scala.inline
-      def setStartMutliFingerStatusVarargs(value: MultiFingerStatus*): Self = StObject.set(x, "startMutliFingerStatus", js.Array(value :_*))
+      inline def setStartMutliFingerStatusVarargs(value: MultiFingerStatus*): Self = StObject.set(x, "startMutliFingerStatus", js.Array(value :_*))
       
-      @scala.inline
-      def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+      inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTouches(value: js.Array[Finger]): Self = StObject.set(x, "startTouches", value.asInstanceOf[js.Any])
+      inline def setStartTouches(value: js.Array[Finger]): Self = StObject.set(x, "startTouches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartTouchesVarargs(value: Finger*): Self = StObject.set(x, "startTouches", js.Array(value :_*))
+      inline def setStartTouchesVarargs(value: Finger*): Self = StObject.set(x, "startTouches", js.Array(value :_*))
       
-      @scala.inline
-      def setSwipe(value: Boolean): Self = StObject.set(x, "swipe", value.asInstanceOf[js.Any])
+      inline def setSwipe(value: Boolean): Self = StObject.set(x, "swipe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSwipeUndefined: Self = StObject.set(x, "swipe", js.undefined)
+      inline def setSwipeUndefined: Self = StObject.set(x, "swipe", js.undefined)
       
-      @scala.inline
-      def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouches(value: js.Array[Finger]): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
+      inline def setTouches(value: js.Array[Finger]): Self = StObject.set(x, "touches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTouchesVarargs(value: Finger*): Self = StObject.set(x, "touches", js.Array(value :_*))
+      inline def setTouchesVarargs(value: Finger*): Self = StObject.set(x, "touches", js.Array(value :_*))
     }
   }
   
@@ -217,23 +174,18 @@ object anon {
   }
   object Direction {
     
-    @scala.inline
-    def apply(direction: String, enablePinch: Boolean, enableRotate: Boolean): Direction = {
+    inline def apply(direction: String, enablePinch: Boolean, enableRotate: Boolean): Direction = {
       val __obj = js.Dynamic.literal(direction = direction.asInstanceOf[js.Any], enablePinch = enablePinch.asInstanceOf[js.Any], enableRotate = enableRotate.asInstanceOf[js.Any])
       __obj.asInstanceOf[Direction]
     }
     
-    @scala.inline
-    implicit class DirectionMutableBuilder[Self <: Direction] (val x: Self) extends AnyVal {
+    extension [Self <: Direction](x: Self) {
       
-      @scala.inline
-      def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnablePinch(value: Boolean): Self = StObject.set(x, "enablePinch", value.asInstanceOf[js.Any])
+      inline def setEnablePinch(value: Boolean): Self = StObject.set(x, "enablePinch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableRotate(value: Boolean): Self = StObject.set(x, "enableRotate", value.asInstanceOf[js.Any])
+      inline def setEnableRotate(value: Boolean): Self = StObject.set(x, "enableRotate", value.asInstanceOf[js.Any])
     }
   }
   
@@ -253,32 +205,24 @@ object anon {
   }
   object Time {
     
-    @scala.inline
-    def apply(angle: Double, time: js.Any, velocity: Double, x: Double, y: Double, z: Double): Time = {
+    inline def apply(angle: Double, time: js.Any, velocity: Double, x: Double, y: Double, z: Double): Time = {
       val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], velocity = velocity.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], z = z.asInstanceOf[js.Any])
       __obj.asInstanceOf[Time]
     }
     
-    @scala.inline
-    implicit class TimeMutableBuilder[Self <: Time] (val x: Self) extends AnyVal {
+    extension [Self <: Time](x: Self) {
       
-      @scala.inline
-      def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+      inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTime(value: js.Any): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+      inline def setTime(value: js.Any): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVelocity(value: Double): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
+      inline def setVelocity(value: Double): Self = StObject.set(x, "velocity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+      inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -11,34 +11,29 @@ object reactPopperTooltipStrings {
   sealed trait click
     extends StObject
        with TriggerTypes
-  @scala.inline
-  def click: click = "click".asInstanceOf[click]
+  inline def click: click = "click".asInstanceOf[click]
   
   @js.native
   sealed trait focus
     extends StObject
        with TriggerTypes
-  @scala.inline
-  def focus: focus = "focus".asInstanceOf[focus]
+  inline def focus: focus = "focus".asInstanceOf[focus]
   
   @js.native
   sealed trait hover
     extends StObject
        with TriggerTypes
-  @scala.inline
-  def hover: hover = "hover".asInstanceOf[hover]
+  inline def hover: hover = "hover".asInstanceOf[hover]
   
   @js.native
   sealed trait none
     extends StObject
        with TriggerTypes
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait `right-click`
     extends StObject
        with TriggerTypes
-  @scala.inline
-  def `right-click`: `right-click` = "right-click".asInstanceOf[`right-click`]
+  inline def `right-click`: `right-click` = "right-click".asInstanceOf[`right-click`]
 }

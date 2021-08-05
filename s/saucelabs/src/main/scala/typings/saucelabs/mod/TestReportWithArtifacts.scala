@@ -27,64 +27,45 @@ trait TestReportWithArtifacts
 }
 object TestReportWithArtifacts {
   
-  @scala.inline
-  def apply(): TestReportWithArtifacts = {
+  inline def apply(): TestReportWithArtifacts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TestReportWithArtifacts]
   }
   
-  @scala.inline
-  implicit class TestReportWithArtifactsMutableBuilder[Self <: TestReportWithArtifacts] (val x: Self) extends AnyVal {
+  extension [Self <: TestReportWithArtifacts](x: Self) {
     
-    @scala.inline
-    def setDeviceContextId(value: String): Self = StObject.set(x, "deviceContextId", value.asInstanceOf[js.Any])
+    inline def setDeviceContextId(value: String): Self = StObject.set(x, "deviceContextId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceContextIdUndefined: Self = StObject.set(x, "deviceContextId", js.undefined)
+    inline def setDeviceContextIdUndefined: Self = StObject.set(x, "deviceContextId", js.undefined)
     
-    @scala.inline
-    def setDeviceLog(value: String): Self = StObject.set(x, "deviceLog", value.asInstanceOf[js.Any])
+    inline def setDeviceLog(value: String): Self = StObject.set(x, "deviceLog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceLogUndefined: Self = StObject.set(x, "deviceLog", js.undefined)
+    inline def setDeviceLogUndefined: Self = StObject.set(x, "deviceLog", js.undefined)
     
-    @scala.inline
-    def setFrameworkLog(value: String): Self = StObject.set(x, "frameworkLog", value.asInstanceOf[js.Any])
+    inline def setFrameworkLog(value: String): Self = StObject.set(x, "frameworkLog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFrameworkLogUndefined: Self = StObject.set(x, "frameworkLog", js.undefined)
+    inline def setFrameworkLogUndefined: Self = StObject.set(x, "frameworkLog", js.undefined)
     
-    @scala.inline
-    def setReport(value: TestReport): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
+    inline def setReport(value: TestReport): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportUndefined: Self = StObject.set(x, "report", js.undefined)
+    inline def setReportUndefined: Self = StObject.set(x, "report", js.undefined)
     
-    @scala.inline
-    def setScreenshots(value: js.Array[Entity]): Self = StObject.set(x, "screenshots", value.asInstanceOf[js.Any])
+    inline def setScreenshots(value: js.Array[Entity]): Self = StObject.set(x, "screenshots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenshotsUndefined: Self = StObject.set(x, "screenshots", js.undefined)
+    inline def setScreenshotsUndefined: Self = StObject.set(x, "screenshots", js.undefined)
     
-    @scala.inline
-    def setScreenshotsVarargs(value: Entity*): Self = StObject.set(x, "screenshots", js.Array(value :_*))
+    inline def setScreenshotsVarargs(value: Entity*): Self = StObject.set(x, "screenshots", js.Array(value :_*))
     
-    @scala.inline
-    def setTestResult(value: String): Self = StObject.set(x, "testResult", value.asInstanceOf[js.Any])
+    inline def setTestResult(value: String): Self = StObject.set(x, "testResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestResultUndefined: Self = StObject.set(x, "testResult", js.undefined)
+    inline def setTestResultUndefined: Self = StObject.set(x, "testResult", js.undefined)
     
-    @scala.inline
-    def setVideo(value: Entity): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
+    inline def setVideo(value: Entity): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
+    inline def setVideoUndefined: Self = StObject.set(x, "video", js.undefined)
     
-    @scala.inline
-    def setVitalsLog(value: String): Self = StObject.set(x, "vitalsLog", value.asInstanceOf[js.Any])
+    inline def setVitalsLog(value: String): Self = StObject.set(x, "vitalsLog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVitalsLogUndefined: Self = StObject.set(x, "vitalsLog", js.undefined)
+    inline def setVitalsLogUndefined: Self = StObject.set(x, "vitalsLog", js.undefined)
   }
 }

@@ -57,8 +57,7 @@ object Properties {
   }
   object PropertiesService {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getDocumentProperties: () => typings.googleAppsScript.GoogleAppsScript.Properties.Properties,
       getScriptProperties: () => typings.googleAppsScript.GoogleAppsScript.Properties.Properties,
       getUserProperties: () => typings.googleAppsScript.GoogleAppsScript.Properties.Properties
@@ -67,17 +66,13 @@ object Properties {
       __obj.asInstanceOf[PropertiesService]
     }
     
-    @scala.inline
-    implicit class PropertiesServiceMutableBuilder[Self <: PropertiesService] (val x: Self) extends AnyVal {
+    extension [Self <: PropertiesService](x: Self) {
       
-      @scala.inline
-      def setGetDocumentProperties(value: () => typings.googleAppsScript.GoogleAppsScript.Properties.Properties): Self = StObject.set(x, "getDocumentProperties", js.Any.fromFunction0(value))
+      inline def setGetDocumentProperties(value: () => typings.googleAppsScript.GoogleAppsScript.Properties.Properties): Self = StObject.set(x, "getDocumentProperties", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetScriptProperties(value: () => typings.googleAppsScript.GoogleAppsScript.Properties.Properties): Self = StObject.set(x, "getScriptProperties", js.Any.fromFunction0(value))
+      inline def setGetScriptProperties(value: () => typings.googleAppsScript.GoogleAppsScript.Properties.Properties): Self = StObject.set(x, "getScriptProperties", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetUserProperties(value: () => typings.googleAppsScript.GoogleAppsScript.Properties.Properties): Self = StObject.set(x, "getUserProperties", js.Any.fromFunction0(value))
+      inline def setGetUserProperties(value: () => typings.googleAppsScript.GoogleAppsScript.Properties.Properties): Self = StObject.set(x, "getUserProperties", js.Any.fromFunction0(value))
     }
   }
   

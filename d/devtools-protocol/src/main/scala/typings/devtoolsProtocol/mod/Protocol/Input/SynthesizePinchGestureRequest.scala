@@ -35,34 +35,25 @@ trait SynthesizePinchGestureRequest extends StObject {
 }
 object SynthesizePinchGestureRequest {
   
-  @scala.inline
-  def apply(scaleFactor: Double, x: Double, y: Double): SynthesizePinchGestureRequest = {
+  inline def apply(scaleFactor: Double, x: Double, y: Double): SynthesizePinchGestureRequest = {
     val __obj = js.Dynamic.literal(scaleFactor = scaleFactor.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
     __obj.asInstanceOf[SynthesizePinchGestureRequest]
   }
   
-  @scala.inline
-  implicit class SynthesizePinchGestureRequestMutableBuilder[Self <: SynthesizePinchGestureRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SynthesizePinchGestureRequest](x: Self) {
     
-    @scala.inline
-    def setGestureSourceType(value: GestureSourceType): Self = StObject.set(x, "gestureSourceType", value.asInstanceOf[js.Any])
+    inline def setGestureSourceType(value: GestureSourceType): Self = StObject.set(x, "gestureSourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGestureSourceTypeUndefined: Self = StObject.set(x, "gestureSourceType", js.undefined)
+    inline def setGestureSourceTypeUndefined: Self = StObject.set(x, "gestureSourceType", js.undefined)
     
-    @scala.inline
-    def setRelativeSpeed(value: integer): Self = StObject.set(x, "relativeSpeed", value.asInstanceOf[js.Any])
+    inline def setRelativeSpeed(value: integer): Self = StObject.set(x, "relativeSpeed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelativeSpeedUndefined: Self = StObject.set(x, "relativeSpeed", js.undefined)
+    inline def setRelativeSpeedUndefined: Self = StObject.set(x, "relativeSpeed", js.undefined)
     
-    @scala.inline
-    def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
+    inline def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
   }
 }

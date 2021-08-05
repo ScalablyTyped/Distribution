@@ -20,12 +20,10 @@ object EaselJS {
   @JSGlobal("createjs.EaselJS.buildDate")
   @js.native
   def buildDate: String = js.native
-  @scala.inline
-  def buildDate_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buildDate")(x.asInstanceOf[js.Any])
+  inline def buildDate_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("buildDate")(x.asInstanceOf[js.Any])
   
   @JSGlobal("createjs.EaselJS.version")
   @js.native
   def version: String = js.native
-  @scala.inline
-  def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
+  inline def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
 }

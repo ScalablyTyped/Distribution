@@ -8,6 +8,5 @@ object chartjsPluginCrosshairStrings {
   
   @js.native
   sealed trait interpolate extends StObject
-  @scala.inline
-  def interpolate: interpolate = "interpolate".asInstanceOf[interpolate]
+  inline def interpolate: interpolate = "interpolate".asInstanceOf[interpolate]
 }

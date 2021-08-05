@@ -12,19 +12,15 @@ trait SDPFingerprint extends StObject {
 }
 object SDPFingerprint {
   
-  @scala.inline
-  def apply(algorithm: String, value: String): SDPFingerprint = {
+  inline def apply(algorithm: String, value: String): SDPFingerprint = {
     val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SDPFingerprint]
   }
   
-  @scala.inline
-  implicit class SDPFingerprintMutableBuilder[Self <: SDPFingerprint] (val x: Self) extends AnyVal {
+  extension [Self <: SDPFingerprint](x: Self) {
     
-    @scala.inline
-    def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
+    inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

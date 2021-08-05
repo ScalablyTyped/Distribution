@@ -14,20 +14,16 @@ object anon {
   }
   object Created {
     
-    @scala.inline
-    def apply(created: String, modified: String): Created = {
+    inline def apply(created: String, modified: String): Created = {
       val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], modified = modified.asInstanceOf[js.Any])
       __obj.asInstanceOf[Created]
     }
     
-    @scala.inline
-    implicit class CreatedMutableBuilder[Self <: Created] (val x: Self) extends AnyVal {
+    extension [Self <: Created](x: Self) {
       
-      @scala.inline
-      def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+      inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModified(value: String): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
+      inline def setModified(value: String): Self = StObject.set(x, "modified", value.asInstanceOf[js.Any])
     }
   }
   
@@ -41,32 +37,24 @@ object anon {
   }
   object Directory {
     
-    @scala.inline
-    def apply(): Directory = {
+    inline def apply(): Directory = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Directory]
     }
     
-    @scala.inline
-    implicit class DirectoryMutableBuilder[Self <: Directory] (val x: Self) extends AnyVal {
+    extension [Self <: Directory](x: Self) {
       
-      @scala.inline
-      def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
+      inline def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectoryUndefined: Self = StObject.set(x, "directory", js.undefined)
+      inline def setDirectoryUndefined: Self = StObject.set(x, "directory", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -78,26 +66,20 @@ object anon {
   }
   object Email {
     
-    @scala.inline
-    def apply(): Email = {
+    inline def apply(): Email = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Email]
     }
     
-    @scala.inline
-    implicit class EmailMutableBuilder[Self <: Email] (val x: Self) extends AnyVal {
+    extension [Self <: Email](x: Self) {
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -107,17 +89,14 @@ object anon {
   }
   object Latest {
     
-    @scala.inline
-    def apply(latest: String): Latest = {
+    inline def apply(latest: String): Latest = {
       val __obj = js.Dynamic.literal(latest = latest.asInstanceOf[js.Any])
       __obj.asInstanceOf[Latest]
     }
     
-    @scala.inline
-    implicit class LatestMutableBuilder[Self <: Latest] (val x: Self) extends AnyVal {
+    extension [Self <: Latest](x: Self) {
       
-      @scala.inline
-      def setLatest(value: String): Self = StObject.set(x, "latest", value.asInstanceOf[js.Any])
+      inline def setLatest(value: String): Self = StObject.set(x, "latest", value.asInstanceOf[js.Any])
     }
   }
 }

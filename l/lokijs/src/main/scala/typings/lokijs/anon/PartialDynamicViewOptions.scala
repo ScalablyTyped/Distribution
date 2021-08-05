@@ -17,31 +17,23 @@ trait PartialDynamicViewOptions extends StObject {
 }
 object PartialDynamicViewOptions {
   
-  @scala.inline
-  def apply(): PartialDynamicViewOptions = {
+  inline def apply(): PartialDynamicViewOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialDynamicViewOptions]
   }
   
-  @scala.inline
-  implicit class PartialDynamicViewOptionsMutableBuilder[Self <: PartialDynamicViewOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartialDynamicViewOptions](x: Self) {
     
-    @scala.inline
-    def setMinRebuildInterval(value: Double): Self = StObject.set(x, "minRebuildInterval", value.asInstanceOf[js.Any])
+    inline def setMinRebuildInterval(value: Double): Self = StObject.set(x, "minRebuildInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinRebuildIntervalUndefined: Self = StObject.set(x, "minRebuildInterval", js.undefined)
+    inline def setMinRebuildIntervalUndefined: Self = StObject.set(x, "minRebuildInterval", js.undefined)
     
-    @scala.inline
-    def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
+    inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
+    inline def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
     
-    @scala.inline
-    def setSortPriority(value: active | passive): Self = StObject.set(x, "sortPriority", value.asInstanceOf[js.Any])
+    inline def setSortPriority(value: active | passive): Self = StObject.set(x, "sortPriority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortPriorityUndefined: Self = StObject.set(x, "sortPriority", js.undefined)
+    inline def setSortPriorityUndefined: Self = StObject.set(x, "sortPriority", js.undefined)
   }
 }

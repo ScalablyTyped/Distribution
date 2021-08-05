@@ -34,34 +34,25 @@ trait SchemaResultSet extends StObject {
 }
 object SchemaResultSet {
   
-  @scala.inline
-  def apply(): SchemaResultSet = {
+  inline def apply(): SchemaResultSet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaResultSet]
   }
   
-  @scala.inline
-  implicit class SchemaResultSetMutableBuilder[Self <: SchemaResultSet] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaResultSet](x: Self) {
     
-    @scala.inline
-    def setMetadata(value: SchemaResultSetMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: SchemaResultSetMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setRows(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+    inline def setRows(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+    inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
-    @scala.inline
-    def setRowsVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "rows", js.Array(value :_*))
+    inline def setRowsVarargs(value: js.Array[js.Any]*): Self = StObject.set(x, "rows", js.Array(value :_*))
     
-    @scala.inline
-    def setStats(value: SchemaResultSetStats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+    inline def setStats(value: SchemaResultSetStats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
+    inline def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
   }
 }

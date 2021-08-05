@@ -23,28 +23,21 @@ trait ListAssociationsForLicenseConfigurationRequest extends StObject {
 }
 object ListAssociationsForLicenseConfigurationRequest {
   
-  @scala.inline
-  def apply(LicenseConfigurationArn: String): ListAssociationsForLicenseConfigurationRequest = {
+  inline def apply(LicenseConfigurationArn: String): ListAssociationsForLicenseConfigurationRequest = {
     val __obj = js.Dynamic.literal(LicenseConfigurationArn = LicenseConfigurationArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListAssociationsForLicenseConfigurationRequest]
   }
   
-  @scala.inline
-  implicit class ListAssociationsForLicenseConfigurationRequestMutableBuilder[Self <: ListAssociationsForLicenseConfigurationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListAssociationsForLicenseConfigurationRequest](x: Self) {
     
-    @scala.inline
-    def setLicenseConfigurationArn(value: String): Self = StObject.set(x, "LicenseConfigurationArn", value.asInstanceOf[js.Any])
+    inline def setLicenseConfigurationArn(value: String): Self = StObject.set(x, "LicenseConfigurationArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: BoxInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: BoxInteger): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

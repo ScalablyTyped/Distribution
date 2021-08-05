@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSImport("tabris", "Tabris")
 @js.native
-class Tabris_ protected () extends NativeObject {
+/* private */ class Tabris_ () extends NativeObject {
   
   /**
     * Adds a module to the internal module registry with an id relative to the app directory.

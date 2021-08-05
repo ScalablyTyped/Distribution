@@ -23,31 +23,23 @@ trait DocumentClassifierFilter extends StObject {
 }
 object DocumentClassifierFilter {
   
-  @scala.inline
-  def apply(): DocumentClassifierFilter = {
+  inline def apply(): DocumentClassifierFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DocumentClassifierFilter]
   }
   
-  @scala.inline
-  implicit class DocumentClassifierFilterMutableBuilder[Self <: DocumentClassifierFilter] (val x: Self) extends AnyVal {
+  extension [Self <: DocumentClassifierFilter](x: Self) {
     
-    @scala.inline
-    def setStatus(value: ModelStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ModelStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setSubmitTimeAfter(value: Timestamp): Self = StObject.set(x, "SubmitTimeAfter", value.asInstanceOf[js.Any])
+    inline def setSubmitTimeAfter(value: Timestamp): Self = StObject.set(x, "SubmitTimeAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmitTimeAfterUndefined: Self = StObject.set(x, "SubmitTimeAfter", js.undefined)
+    inline def setSubmitTimeAfterUndefined: Self = StObject.set(x, "SubmitTimeAfter", js.undefined)
     
-    @scala.inline
-    def setSubmitTimeBefore(value: Timestamp): Self = StObject.set(x, "SubmitTimeBefore", value.asInstanceOf[js.Any])
+    inline def setSubmitTimeBefore(value: Timestamp): Self = StObject.set(x, "SubmitTimeBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmitTimeBeforeUndefined: Self = StObject.set(x, "SubmitTimeBefore", js.undefined)
+    inline def setSubmitTimeBeforeUndefined: Self = StObject.set(x, "SubmitTimeBefore", js.undefined)
   }
 }

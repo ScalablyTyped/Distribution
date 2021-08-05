@@ -95,124 +95,85 @@ trait ImageBuilder extends StObject {
 }
 object ImageBuilder {
   
-  @scala.inline
-  def apply(Name: String): ImageBuilder = {
+  inline def apply(Name: String): ImageBuilder = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ImageBuilder]
   }
   
-  @scala.inline
-  implicit class ImageBuilderMutableBuilder[Self <: ImageBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: ImageBuilder](x: Self) {
     
-    @scala.inline
-    def setAccessEndpoints(value: AccessEndpointList): Self = StObject.set(x, "AccessEndpoints", value.asInstanceOf[js.Any])
+    inline def setAccessEndpoints(value: AccessEndpointList): Self = StObject.set(x, "AccessEndpoints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessEndpointsUndefined: Self = StObject.set(x, "AccessEndpoints", js.undefined)
+    inline def setAccessEndpointsUndefined: Self = StObject.set(x, "AccessEndpoints", js.undefined)
     
-    @scala.inline
-    def setAccessEndpointsVarargs(value: AccessEndpoint*): Self = StObject.set(x, "AccessEndpoints", js.Array(value :_*))
+    inline def setAccessEndpointsVarargs(value: AccessEndpoint*): Self = StObject.set(x, "AccessEndpoints", js.Array(value :_*))
     
-    @scala.inline
-    def setAppstreamAgentVersion(value: AppstreamAgentVersion): Self = StObject.set(x, "AppstreamAgentVersion", value.asInstanceOf[js.Any])
+    inline def setAppstreamAgentVersion(value: AppstreamAgentVersion): Self = StObject.set(x, "AppstreamAgentVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppstreamAgentVersionUndefined: Self = StObject.set(x, "AppstreamAgentVersion", js.undefined)
+    inline def setAppstreamAgentVersionUndefined: Self = StObject.set(x, "AppstreamAgentVersion", js.undefined)
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
     
-    @scala.inline
-    def setCreatedTime(value: Timestamp): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: Timestamp): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
+    inline def setCreatedTimeUndefined: Self = StObject.set(x, "CreatedTime", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "DisplayName", js.undefined)
     
-    @scala.inline
-    def setDomainJoinInfo(value: DomainJoinInfo): Self = StObject.set(x, "DomainJoinInfo", value.asInstanceOf[js.Any])
+    inline def setDomainJoinInfo(value: DomainJoinInfo): Self = StObject.set(x, "DomainJoinInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainJoinInfoUndefined: Self = StObject.set(x, "DomainJoinInfo", js.undefined)
+    inline def setDomainJoinInfoUndefined: Self = StObject.set(x, "DomainJoinInfo", js.undefined)
     
-    @scala.inline
-    def setEnableDefaultInternetAccess(value: BooleanObject): Self = StObject.set(x, "EnableDefaultInternetAccess", value.asInstanceOf[js.Any])
+    inline def setEnableDefaultInternetAccess(value: BooleanObject): Self = StObject.set(x, "EnableDefaultInternetAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableDefaultInternetAccessUndefined: Self = StObject.set(x, "EnableDefaultInternetAccess", js.undefined)
+    inline def setEnableDefaultInternetAccessUndefined: Self = StObject.set(x, "EnableDefaultInternetAccess", js.undefined)
     
-    @scala.inline
-    def setIamRoleArn(value: Arn): Self = StObject.set(x, "IamRoleArn", value.asInstanceOf[js.Any])
+    inline def setIamRoleArn(value: Arn): Self = StObject.set(x, "IamRoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIamRoleArnUndefined: Self = StObject.set(x, "IamRoleArn", js.undefined)
+    inline def setIamRoleArnUndefined: Self = StObject.set(x, "IamRoleArn", js.undefined)
     
-    @scala.inline
-    def setImageArn(value: Arn): Self = StObject.set(x, "ImageArn", value.asInstanceOf[js.Any])
+    inline def setImageArn(value: Arn): Self = StObject.set(x, "ImageArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageArnUndefined: Self = StObject.set(x, "ImageArn", js.undefined)
+    inline def setImageArnUndefined: Self = StObject.set(x, "ImageArn", js.undefined)
     
-    @scala.inline
-    def setImageBuilderErrors(value: ResourceErrors): Self = StObject.set(x, "ImageBuilderErrors", value.asInstanceOf[js.Any])
+    inline def setImageBuilderErrors(value: ResourceErrors): Self = StObject.set(x, "ImageBuilderErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageBuilderErrorsUndefined: Self = StObject.set(x, "ImageBuilderErrors", js.undefined)
+    inline def setImageBuilderErrorsUndefined: Self = StObject.set(x, "ImageBuilderErrors", js.undefined)
     
-    @scala.inline
-    def setImageBuilderErrorsVarargs(value: ResourceError*): Self = StObject.set(x, "ImageBuilderErrors", js.Array(value :_*))
+    inline def setImageBuilderErrorsVarargs(value: ResourceError*): Self = StObject.set(x, "ImageBuilderErrors", js.Array(value :_*))
     
-    @scala.inline
-    def setInstanceType(value: String): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: String): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
+    inline def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkAccessConfiguration(value: NetworkAccessConfiguration): Self = StObject.set(x, "NetworkAccessConfiguration", value.asInstanceOf[js.Any])
+    inline def setNetworkAccessConfiguration(value: NetworkAccessConfiguration): Self = StObject.set(x, "NetworkAccessConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkAccessConfigurationUndefined: Self = StObject.set(x, "NetworkAccessConfiguration", js.undefined)
+    inline def setNetworkAccessConfigurationUndefined: Self = StObject.set(x, "NetworkAccessConfiguration", js.undefined)
     
-    @scala.inline
-    def setPlatform(value: PlatformType): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: PlatformType): Self = StObject.set(x, "Platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformUndefined: Self = StObject.set(x, "Platform", js.undefined)
+    inline def setPlatformUndefined: Self = StObject.set(x, "Platform", js.undefined)
     
-    @scala.inline
-    def setState(value: ImageBuilderState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: ImageBuilderState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateChangeReason(value: ImageBuilderStateChangeReason): Self = StObject.set(x, "StateChangeReason", value.asInstanceOf[js.Any])
+    inline def setStateChangeReason(value: ImageBuilderStateChangeReason): Self = StObject.set(x, "StateChangeReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateChangeReasonUndefined: Self = StObject.set(x, "StateChangeReason", js.undefined)
+    inline def setStateChangeReasonUndefined: Self = StObject.set(x, "StateChangeReason", js.undefined)
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
-    @scala.inline
-    def setVpcConfig(value: VpcConfig): Self = StObject.set(x, "VpcConfig", value.asInstanceOf[js.Any])
+    inline def setVpcConfig(value: VpcConfig): Self = StObject.set(x, "VpcConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcConfigUndefined: Self = StObject.set(x, "VpcConfig", js.undefined)
+    inline def setVpcConfigUndefined: Self = StObject.set(x, "VpcConfig", js.undefined)
   }
 }

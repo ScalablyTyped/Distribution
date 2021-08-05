@@ -16,19 +16,15 @@ trait SchemaReimageNodeRequest extends StObject {
 }
 object SchemaReimageNodeRequest {
   
-  @scala.inline
-  def apply(): SchemaReimageNodeRequest = {
+  inline def apply(): SchemaReimageNodeRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaReimageNodeRequest]
   }
   
-  @scala.inline
-  implicit class SchemaReimageNodeRequestMutableBuilder[Self <: SchemaReimageNodeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaReimageNodeRequest](x: Self) {
     
-    @scala.inline
-    def setTensorflowVersion(value: String): Self = StObject.set(x, "tensorflowVersion", value.asInstanceOf[js.Any])
+    inline def setTensorflowVersion(value: String): Self = StObject.set(x, "tensorflowVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTensorflowVersionUndefined: Self = StObject.set(x, "tensorflowVersion", js.undefined)
+    inline def setTensorflowVersionUndefined: Self = StObject.set(x, "tensorflowVersion", js.undefined)
   }
 }

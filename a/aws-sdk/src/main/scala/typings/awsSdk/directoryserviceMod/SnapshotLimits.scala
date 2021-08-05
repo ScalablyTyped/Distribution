@@ -23,31 +23,23 @@ trait SnapshotLimits extends StObject {
 }
 object SnapshotLimits {
   
-  @scala.inline
-  def apply(): SnapshotLimits = {
+  inline def apply(): SnapshotLimits = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SnapshotLimits]
   }
   
-  @scala.inline
-  implicit class SnapshotLimitsMutableBuilder[Self <: SnapshotLimits] (val x: Self) extends AnyVal {
+  extension [Self <: SnapshotLimits](x: Self) {
     
-    @scala.inline
-    def setManualSnapshotsCurrentCount(value: Limit): Self = StObject.set(x, "ManualSnapshotsCurrentCount", value.asInstanceOf[js.Any])
+    inline def setManualSnapshotsCurrentCount(value: Limit): Self = StObject.set(x, "ManualSnapshotsCurrentCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManualSnapshotsCurrentCountUndefined: Self = StObject.set(x, "ManualSnapshotsCurrentCount", js.undefined)
+    inline def setManualSnapshotsCurrentCountUndefined: Self = StObject.set(x, "ManualSnapshotsCurrentCount", js.undefined)
     
-    @scala.inline
-    def setManualSnapshotsLimit(value: Limit): Self = StObject.set(x, "ManualSnapshotsLimit", value.asInstanceOf[js.Any])
+    inline def setManualSnapshotsLimit(value: Limit): Self = StObject.set(x, "ManualSnapshotsLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManualSnapshotsLimitReached(value: ManualSnapshotsLimitReached): Self = StObject.set(x, "ManualSnapshotsLimitReached", value.asInstanceOf[js.Any])
+    inline def setManualSnapshotsLimitReached(value: ManualSnapshotsLimitReached): Self = StObject.set(x, "ManualSnapshotsLimitReached", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManualSnapshotsLimitReachedUndefined: Self = StObject.set(x, "ManualSnapshotsLimitReached", js.undefined)
+    inline def setManualSnapshotsLimitReachedUndefined: Self = StObject.set(x, "ManualSnapshotsLimitReached", js.undefined)
     
-    @scala.inline
-    def setManualSnapshotsLimitUndefined: Self = StObject.set(x, "ManualSnapshotsLimit", js.undefined)
+    inline def setManualSnapshotsLimitUndefined: Self = StObject.set(x, "ManualSnapshotsLimit", js.undefined)
   }
 }

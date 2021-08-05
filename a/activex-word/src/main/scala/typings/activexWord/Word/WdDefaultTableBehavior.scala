@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdDefaultTableBehavior extends StObject
 object WdDefaultTableBehavior {
   
-  @scala.inline
-  def wdWord8TableBehavior: `0` = 0.asInstanceOf[`0`]
+  inline def wdWord8TableBehavior: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdWord9TableBehavior: `1` = 1.asInstanceOf[`1`]
+  inline def wdWord9TableBehavior: `1` = 1.asInstanceOf[`1`]
 }

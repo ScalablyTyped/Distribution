@@ -17,34 +17,25 @@ trait LogConfigCounterOptions extends StObject {
 }
 object LogConfigCounterOptions {
   
-  @scala.inline
-  def apply(): LogConfigCounterOptions = {
+  inline def apply(): LogConfigCounterOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LogConfigCounterOptions]
   }
   
-  @scala.inline
-  implicit class LogConfigCounterOptionsMutableBuilder[Self <: LogConfigCounterOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LogConfigCounterOptions](x: Self) {
     
-    @scala.inline
-    def setCustomFields(value: js.Array[LogConfigCounterOptionsCustomField]): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
+    inline def setCustomFields(value: js.Array[LogConfigCounterOptionsCustomField]): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
+    inline def setCustomFieldsUndefined: Self = StObject.set(x, "customFields", js.undefined)
     
-    @scala.inline
-    def setCustomFieldsVarargs(value: LogConfigCounterOptionsCustomField*): Self = StObject.set(x, "customFields", js.Array(value :_*))
+    inline def setCustomFieldsVarargs(value: LogConfigCounterOptionsCustomField*): Self = StObject.set(x, "customFields", js.Array(value :_*))
     
-    @scala.inline
-    def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setMetric(value: String): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
+    inline def setMetric(value: String): Self = StObject.set(x, "metric", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
+    inline def setMetricUndefined: Self = StObject.set(x, "metric", js.undefined)
   }
 }

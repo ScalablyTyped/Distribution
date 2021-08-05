@@ -97,13 +97,11 @@ object ConstructorDeclarationSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(
+  inline def create(
     constructorKeyword: ISyntaxToken,
     callSignature: typings.typescriptServices.TypeScript.CallSignatureSyntax
   ): typings.typescriptServices.TypeScript.ConstructorDeclarationSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(constructorKeyword.asInstanceOf[js.Any], callSignature.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.ConstructorDeclarationSyntax]
   
   /* static member */
-  @scala.inline
-  def create1(): typings.typescriptServices.TypeScript.ConstructorDeclarationSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")().asInstanceOf[typings.typescriptServices.TypeScript.ConstructorDeclarationSyntax]
+  inline def create1(): typings.typescriptServices.TypeScript.ConstructorDeclarationSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")().asInstanceOf[typings.typescriptServices.TypeScript.ConstructorDeclarationSyntax]
 }

@@ -13,19 +13,15 @@ trait AwsCloudFrontDistributionDefaultCacheBehavior extends StObject {
 }
 object AwsCloudFrontDistributionDefaultCacheBehavior {
   
-  @scala.inline
-  def apply(): AwsCloudFrontDistributionDefaultCacheBehavior = {
+  inline def apply(): AwsCloudFrontDistributionDefaultCacheBehavior = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsCloudFrontDistributionDefaultCacheBehavior]
   }
   
-  @scala.inline
-  implicit class AwsCloudFrontDistributionDefaultCacheBehaviorMutableBuilder[Self <: AwsCloudFrontDistributionDefaultCacheBehavior] (val x: Self) extends AnyVal {
+  extension [Self <: AwsCloudFrontDistributionDefaultCacheBehavior](x: Self) {
     
-    @scala.inline
-    def setViewerProtocolPolicy(value: NonEmptyString): Self = StObject.set(x, "ViewerProtocolPolicy", value.asInstanceOf[js.Any])
+    inline def setViewerProtocolPolicy(value: NonEmptyString): Self = StObject.set(x, "ViewerProtocolPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewerProtocolPolicyUndefined: Self = StObject.set(x, "ViewerProtocolPolicy", js.undefined)
+    inline def setViewerProtocolPolicyUndefined: Self = StObject.set(x, "ViewerProtocolPolicy", js.undefined)
   }
 }

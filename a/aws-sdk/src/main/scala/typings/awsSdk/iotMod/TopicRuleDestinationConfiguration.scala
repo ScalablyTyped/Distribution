@@ -13,19 +13,15 @@ trait TopicRuleDestinationConfiguration extends StObject {
 }
 object TopicRuleDestinationConfiguration {
   
-  @scala.inline
-  def apply(): TopicRuleDestinationConfiguration = {
+  inline def apply(): TopicRuleDestinationConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TopicRuleDestinationConfiguration]
   }
   
-  @scala.inline
-  implicit class TopicRuleDestinationConfigurationMutableBuilder[Self <: TopicRuleDestinationConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: TopicRuleDestinationConfiguration](x: Self) {
     
-    @scala.inline
-    def setHttpUrlConfiguration(value: HttpUrlDestinationConfiguration): Self = StObject.set(x, "httpUrlConfiguration", value.asInstanceOf[js.Any])
+    inline def setHttpUrlConfiguration(value: HttpUrlDestinationConfiguration): Self = StObject.set(x, "httpUrlConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHttpUrlConfigurationUndefined: Self = StObject.set(x, "httpUrlConfiguration", js.undefined)
+    inline def setHttpUrlConfigurationUndefined: Self = StObject.set(x, "httpUrlConfiguration", js.undefined)
   }
 }

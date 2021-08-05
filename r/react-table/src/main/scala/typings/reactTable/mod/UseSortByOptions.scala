@@ -42,81 +42,57 @@ trait UseSortByOptions[D /* <: js.Object */] extends StObject {
 }
 object UseSortByOptions {
   
-  @scala.inline
-  def apply[D /* <: js.Object */](): UseSortByOptions[D] = {
+  inline def apply[D /* <: js.Object */](): UseSortByOptions[D] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UseSortByOptions[D]]
   }
   
-  @scala.inline
-  implicit class UseSortByOptionsMutableBuilder[Self <: UseSortByOptions[?], D /* <: js.Object */] (val x: Self & UseSortByOptions[D]) extends AnyVal {
+  extension [Self <: UseSortByOptions[?], D /* <: js.Object */](x: Self & UseSortByOptions[D]) {
     
-    @scala.inline
-    def setAutoResetSortBy(value: Boolean): Self = StObject.set(x, "autoResetSortBy", value.asInstanceOf[js.Any])
+    inline def setAutoResetSortBy(value: Boolean): Self = StObject.set(x, "autoResetSortBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoResetSortByUndefined: Self = StObject.set(x, "autoResetSortBy", js.undefined)
+    inline def setAutoResetSortByUndefined: Self = StObject.set(x, "autoResetSortBy", js.undefined)
     
-    @scala.inline
-    def setDefaultCanSort(value: Boolean): Self = StObject.set(x, "defaultCanSort", value.asInstanceOf[js.Any])
+    inline def setDefaultCanSort(value: Boolean): Self = StObject.set(x, "defaultCanSort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultCanSortUndefined: Self = StObject.set(x, "defaultCanSort", js.undefined)
+    inline def setDefaultCanSortUndefined: Self = StObject.set(x, "defaultCanSort", js.undefined)
     
-    @scala.inline
-    def setDisableMultiSort(value: Boolean): Self = StObject.set(x, "disableMultiSort", value.asInstanceOf[js.Any])
+    inline def setDisableMultiSort(value: Boolean): Self = StObject.set(x, "disableMultiSort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableMultiSortUndefined: Self = StObject.set(x, "disableMultiSort", js.undefined)
+    inline def setDisableMultiSortUndefined: Self = StObject.set(x, "disableMultiSort", js.undefined)
     
-    @scala.inline
-    def setDisableSortBy(value: Boolean): Self = StObject.set(x, "disableSortBy", value.asInstanceOf[js.Any])
+    inline def setDisableSortBy(value: Boolean): Self = StObject.set(x, "disableSortBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableSortByUndefined: Self = StObject.set(x, "disableSortBy", js.undefined)
+    inline def setDisableSortByUndefined: Self = StObject.set(x, "disableSortBy", js.undefined)
     
-    @scala.inline
-    def setDisableSortRemove(value: Boolean): Self = StObject.set(x, "disableSortRemove", value.asInstanceOf[js.Any])
+    inline def setDisableSortRemove(value: Boolean): Self = StObject.set(x, "disableSortRemove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisableSortRemoveUndefined: Self = StObject.set(x, "disableSortRemove", js.undefined)
+    inline def setDisableSortRemoveUndefined: Self = StObject.set(x, "disableSortRemove", js.undefined)
     
-    @scala.inline
-    def setDisabledMultiRemove(value: Boolean): Self = StObject.set(x, "disabledMultiRemove", value.asInstanceOf[js.Any])
+    inline def setDisabledMultiRemove(value: Boolean): Self = StObject.set(x, "disabledMultiRemove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledMultiRemoveUndefined: Self = StObject.set(x, "disabledMultiRemove", js.undefined)
+    inline def setDisabledMultiRemoveUndefined: Self = StObject.set(x, "disabledMultiRemove", js.undefined)
     
-    @scala.inline
-    def setIsMultiSortEvent(value: /* e */ MouseEvent[Element, NativeMouseEvent] => Boolean): Self = StObject.set(x, "isMultiSortEvent", js.Any.fromFunction1(value))
+    inline def setIsMultiSortEvent(value: /* e */ MouseEvent[Element, NativeMouseEvent] => Boolean): Self = StObject.set(x, "isMultiSortEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setIsMultiSortEventUndefined: Self = StObject.set(x, "isMultiSortEvent", js.undefined)
+    inline def setIsMultiSortEventUndefined: Self = StObject.set(x, "isMultiSortEvent", js.undefined)
     
-    @scala.inline
-    def setManualSortBy(value: Boolean): Self = StObject.set(x, "manualSortBy", value.asInstanceOf[js.Any])
+    inline def setManualSortBy(value: Boolean): Self = StObject.set(x, "manualSortBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManualSortByUndefined: Self = StObject.set(x, "manualSortBy", js.undefined)
+    inline def setManualSortByUndefined: Self = StObject.set(x, "manualSortBy", js.undefined)
     
-    @scala.inline
-    def setMaxMultiSortColCount(value: Double): Self = StObject.set(x, "maxMultiSortColCount", value.asInstanceOf[js.Any])
+    inline def setMaxMultiSortColCount(value: Double): Self = StObject.set(x, "maxMultiSortColCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxMultiSortColCountUndefined: Self = StObject.set(x, "maxMultiSortColCount", js.undefined)
+    inline def setMaxMultiSortColCountUndefined: Self = StObject.set(x, "maxMultiSortColCount", js.undefined)
     
-    @scala.inline
-    def setOrderByFn(
+    inline def setOrderByFn(
       value: (/* rows */ js.Array[Row[D]], /* sortFns */ js.Array[SortByFn[D]], /* directions */ js.Array[Boolean]) => js.Array[Row[D]]
     ): Self = StObject.set(x, "orderByFn", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setOrderByFnUndefined: Self = StObject.set(x, "orderByFn", js.undefined)
+    inline def setOrderByFnUndefined: Self = StObject.set(x, "orderByFn", js.undefined)
     
-    @scala.inline
-    def setSortTypes(value: Record[String, SortByFn[D]]): Self = StObject.set(x, "sortTypes", value.asInstanceOf[js.Any])
+    inline def setSortTypes(value: Record[String, SortByFn[D]]): Self = StObject.set(x, "sortTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortTypesUndefined: Self = StObject.set(x, "sortTypes", js.undefined)
+    inline def setSortTypesUndefined: Self = StObject.set(x, "sortTypes", js.undefined)
   }
 }

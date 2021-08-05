@@ -12,19 +12,15 @@ trait TriggerClass extends StObject {
 }
 object TriggerClass {
   
-  @scala.inline
-  def apply(Create: (String, TriggerCreateOptions, CbCallback) => Unit, Fetch: (String, CbCallback) => Unit): TriggerClass = {
+  inline def apply(Create: (String, TriggerCreateOptions, CbCallback) => Unit, Fetch: (String, CbCallback) => Unit): TriggerClass = {
     val __obj = js.Dynamic.literal(Create = js.Any.fromFunction3(Create), Fetch = js.Any.fromFunction2(Fetch))
     __obj.asInstanceOf[TriggerClass]
   }
   
-  @scala.inline
-  implicit class TriggerClassMutableBuilder[Self <: TriggerClass] (val x: Self) extends AnyVal {
+  extension [Self <: TriggerClass](x: Self) {
     
-    @scala.inline
-    def setCreate(value: (String, TriggerCreateOptions, CbCallback) => Unit): Self = StObject.set(x, "Create", js.Any.fromFunction3(value))
+    inline def setCreate(value: (String, TriggerCreateOptions, CbCallback) => Unit): Self = StObject.set(x, "Create", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setFetch(value: (String, CbCallback) => Unit): Self = StObject.set(x, "Fetch", js.Any.fromFunction2(value))
+    inline def setFetch(value: (String, CbCallback) => Unit): Self = StObject.set(x, "Fetch", js.Any.fromFunction2(value))
   }
 }

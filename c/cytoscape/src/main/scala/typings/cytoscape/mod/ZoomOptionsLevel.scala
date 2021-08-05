@@ -11,16 +11,13 @@ trait ZoomOptionsLevel extends StObject {
 }
 object ZoomOptionsLevel {
   
-  @scala.inline
-  def apply(level: Double): ZoomOptionsLevel = {
+  inline def apply(level: Double): ZoomOptionsLevel = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
     __obj.asInstanceOf[ZoomOptionsLevel]
   }
   
-  @scala.inline
-  implicit class ZoomOptionsLevelMutableBuilder[Self <: ZoomOptionsLevel] (val x: Self) extends AnyVal {
+  extension [Self <: ZoomOptionsLevel](x: Self) {
     
-    @scala.inline
-    def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+    inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
   }
 }

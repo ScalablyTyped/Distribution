@@ -18,28 +18,21 @@ trait ListCampaignsResponse extends StObject {
 }
 object ListCampaignsResponse {
   
-  @scala.inline
-  def apply(): ListCampaignsResponse = {
+  inline def apply(): ListCampaignsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListCampaignsResponse]
   }
   
-  @scala.inline
-  implicit class ListCampaignsResponseMutableBuilder[Self <: ListCampaignsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListCampaignsResponse](x: Self) {
     
-    @scala.inline
-    def setCampaigns(value: Campaigns): Self = StObject.set(x, "campaigns", value.asInstanceOf[js.Any])
+    inline def setCampaigns(value: Campaigns): Self = StObject.set(x, "campaigns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCampaignsUndefined: Self = StObject.set(x, "campaigns", js.undefined)
+    inline def setCampaignsUndefined: Self = StObject.set(x, "campaigns", js.undefined)
     
-    @scala.inline
-    def setCampaignsVarargs(value: CampaignSummary*): Self = StObject.set(x, "campaigns", js.Array(value :_*))
+    inline def setCampaignsVarargs(value: CampaignSummary*): Self = StObject.set(x, "campaigns", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

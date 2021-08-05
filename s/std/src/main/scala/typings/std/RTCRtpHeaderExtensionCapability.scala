@@ -10,19 +10,15 @@ trait RTCRtpHeaderExtensionCapability extends StObject {
 }
 object RTCRtpHeaderExtensionCapability {
   
-  @scala.inline
-  def apply(): RTCRtpHeaderExtensionCapability = {
+  inline def apply(): RTCRtpHeaderExtensionCapability = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RTCRtpHeaderExtensionCapability]
   }
   
-  @scala.inline
-  implicit class RTCRtpHeaderExtensionCapabilityMutableBuilder[Self <: RTCRtpHeaderExtensionCapability] (val x: Self) extends AnyVal {
+  extension [Self <: RTCRtpHeaderExtensionCapability](x: Self) {
     
-    @scala.inline
-    def setUri(value: java.lang.String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: java.lang.String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

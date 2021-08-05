@@ -25,25 +25,19 @@ trait ParamsResourceMetadataColumnsList
 }
 object ParamsResourceMetadataColumnsList {
   
-  @scala.inline
-  def apply(): ParamsResourceMetadataColumnsList = {
+  inline def apply(): ParamsResourceMetadataColumnsList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceMetadataColumnsList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceMetadataColumnsListMutableBuilder[Self <: ParamsResourceMetadataColumnsList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceMetadataColumnsList](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setReportType(value: String): Self = StObject.set(x, "reportType", value.asInstanceOf[js.Any])
+    inline def setReportType(value: String): Self = StObject.set(x, "reportType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportTypeUndefined: Self = StObject.set(x, "reportType", js.undefined)
+    inline def setReportTypeUndefined: Self = StObject.set(x, "reportType", js.undefined)
   }
 }

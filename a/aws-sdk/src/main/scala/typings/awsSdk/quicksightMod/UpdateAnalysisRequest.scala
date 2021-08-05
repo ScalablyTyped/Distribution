@@ -38,8 +38,7 @@ trait UpdateAnalysisRequest extends StObject {
 }
 object UpdateAnalysisRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AnalysisId: RestrictiveResourceId,
     AwsAccountId: AwsAccountId,
     Name: AnalysisName,
@@ -49,31 +48,22 @@ object UpdateAnalysisRequest {
     __obj.asInstanceOf[UpdateAnalysisRequest]
   }
   
-  @scala.inline
-  implicit class UpdateAnalysisRequestMutableBuilder[Self <: UpdateAnalysisRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateAnalysisRequest](x: Self) {
     
-    @scala.inline
-    def setAnalysisId(value: RestrictiveResourceId): Self = StObject.set(x, "AnalysisId", value.asInstanceOf[js.Any])
+    inline def setAnalysisId(value: RestrictiveResourceId): Self = StObject.set(x, "AnalysisId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
+    inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: AnalysisName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: AnalysisName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParameters(value: Parameters): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: Parameters): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "Parameters", js.undefined)
     
-    @scala.inline
-    def setSourceEntity(value: AnalysisSourceEntity): Self = StObject.set(x, "SourceEntity", value.asInstanceOf[js.Any])
+    inline def setSourceEntity(value: AnalysisSourceEntity): Self = StObject.set(x, "SourceEntity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeArn(value: Arn): Self = StObject.set(x, "ThemeArn", value.asInstanceOf[js.Any])
+    inline def setThemeArn(value: Arn): Self = StObject.set(x, "ThemeArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeArnUndefined: Self = StObject.set(x, "ThemeArn", js.undefined)
+    inline def setThemeArnUndefined: Self = StObject.set(x, "ThemeArn", js.undefined)
   }
 }

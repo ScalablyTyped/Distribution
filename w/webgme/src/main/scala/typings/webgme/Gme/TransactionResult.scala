@@ -15,19 +15,15 @@ trait TransactionResult extends StObject {
 }
 object TransactionResult {
   
-  @scala.inline
-  def apply(hash: String, status: String): TransactionResult = {
+  inline def apply(hash: String, status: String): TransactionResult = {
     val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[TransactionResult]
   }
   
-  @scala.inline
-  implicit class TransactionResultMutableBuilder[Self <: TransactionResult] (val x: Self) extends AnyVal {
+  extension [Self <: TransactionResult](x: Self) {
     
-    @scala.inline
-    def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+    inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

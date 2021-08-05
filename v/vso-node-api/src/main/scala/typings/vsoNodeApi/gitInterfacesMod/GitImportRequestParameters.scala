@@ -28,8 +28,7 @@ trait GitImportRequestParameters extends StObject {
 }
 object GitImportRequestParameters {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     deleteServiceEndpointAfterImportIsDone: Boolean,
     gitSource: GitImportGitSource,
     serviceEndpointId: String,
@@ -39,19 +38,14 @@ object GitImportRequestParameters {
     __obj.asInstanceOf[GitImportRequestParameters]
   }
   
-  @scala.inline
-  implicit class GitImportRequestParametersMutableBuilder[Self <: GitImportRequestParameters] (val x: Self) extends AnyVal {
+  extension [Self <: GitImportRequestParameters](x: Self) {
     
-    @scala.inline
-    def setDeleteServiceEndpointAfterImportIsDone(value: Boolean): Self = StObject.set(x, "deleteServiceEndpointAfterImportIsDone", value.asInstanceOf[js.Any])
+    inline def setDeleteServiceEndpointAfterImportIsDone(value: Boolean): Self = StObject.set(x, "deleteServiceEndpointAfterImportIsDone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGitSource(value: GitImportGitSource): Self = StObject.set(x, "gitSource", value.asInstanceOf[js.Any])
+    inline def setGitSource(value: GitImportGitSource): Self = StObject.set(x, "gitSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceEndpointId(value: String): Self = StObject.set(x, "serviceEndpointId", value.asInstanceOf[js.Any])
+    inline def setServiceEndpointId(value: String): Self = StObject.set(x, "serviceEndpointId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTfvcSource(value: GitImportTfvcSource): Self = StObject.set(x, "tfvcSource", value.asInstanceOf[js.Any])
+    inline def setTfvcSource(value: GitImportTfvcSource): Self = StObject.set(x, "tfvcSource", value.asInstanceOf[js.Any])
   }
 }

@@ -47,8 +47,7 @@ object LinkButton {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
+  inline def create(model: IModel): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -59,8 +58,7 @@ object LinkButton {
     *  6.7.0 to 7.2.0
     */
   /* static member */
-  @scala.inline
-  def createInDataViewUnderFooterWidget(container: DataView): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
+  inline def createInDataViewUnderFooterWidget(container: DataView): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -71,8 +69,7 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @scala.inline
-  def createInDataViewUnderWidget(container: DataView): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
+  inline def createInDataViewUnderWidget(container: DataView): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -83,8 +80,7 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @scala.inline
-  def createInDivContainerUnderWidget(container: DivContainer): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
+  inline def createInDivContainerUnderWidget(container: DivContainer): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -95,8 +91,7 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @scala.inline
-  def createInGroupBoxUnderWidget(container: GroupBox): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
+  inline def createInGroupBoxUnderWidget(container: GroupBox): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -107,8 +102,7 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @scala.inline
-  def createInHeaderUnderLeftWidget(container: Header): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
+  inline def createInHeaderUnderLeftWidget(container: Header): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -119,8 +113,7 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @scala.inline
-  def createInHeaderUnderRightWidget(container: Header): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
+  inline def createInHeaderUnderRightWidget(container: Header): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -131,8 +124,7 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @scala.inline
-  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
+  inline def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -143,8 +135,7 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @scala.inline
-  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
+  inline def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -155,8 +146,7 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @scala.inline
-  def createInLayoutUnderWidget(container: Layout): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
+  inline def createInLayoutUnderWidget(container: Layout): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -167,8 +157,7 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @scala.inline
-  def createInListViewTemplateUnderWidget(container: ListViewTemplate): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
+  inline def createInListViewTemplateUnderWidget(container: ListViewTemplate): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -179,8 +168,7 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @scala.inline
-  def createInListViewUnderWidget(container: ListView): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
+  inline def createInListViewUnderWidget(container: ListView): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -191,8 +179,7 @@ object LinkButton {
     *  7.1.0 to 7.2.0
     */
   /* static member */
-  @scala.inline
-  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
+  inline def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -203,8 +190,7 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @scala.inline
-  def createInNavigationListItemUnderWidget(container: NavigationListItem): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
+  inline def createInNavigationListItemUnderWidget(container: NavigationListItem): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -215,8 +201,7 @@ object LinkButton {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @scala.inline
-  def createInReportPaneUnderParameterWidget(container: ReportPane): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
+  inline def createInReportPaneUnderParameterWidget(container: ReportPane): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -227,8 +212,7 @@ object LinkButton {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @scala.inline
-  def createInReportPaneUnderReportWidget(container: ReportPane): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
+  inline def createInReportPaneUnderReportWidget(container: ReportPane): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -239,8 +223,7 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @scala.inline
-  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
+  inline def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -251,8 +234,7 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @scala.inline
-  def createInSnippetUnderWidget(container: Snippet): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
+  inline def createInSnippetUnderWidget(container: Snippet): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -263,8 +245,7 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @scala.inline
-  def createInSplitPaneUnderFirstWidget(container: SplitPane): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
+  inline def createInSplitPaneUnderFirstWidget(container: SplitPane): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -275,8 +256,7 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @scala.inline
-  def createInSplitPaneUnderSecondWidget(container: SplitPane): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
+  inline def createInSplitPaneUnderSecondWidget(container: SplitPane): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -287,8 +267,7 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @scala.inline
-  def createInTabPageUnderWidget(container: TabPage): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
+  inline def createInTabPageUnderWidget(container: TabPage): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -299,8 +278,7 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @scala.inline
-  def createInTableCellUnderWidget(container: TableCell): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
+  inline def createInTableCellUnderWidget(container: TableCell): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -311,8 +289,7 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @scala.inline
-  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
+  inline def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /**
     * Creates and returns a new LinkButton instance in the SDK and on the server.
@@ -323,20 +300,17 @@ object LinkButton {
     *  6.0.0 to 7.2.0
     */
   /* static member */
-  @scala.inline
-  def createInVerticalFlowUnderWidgets(container: VerticalFlow): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
+  inline def createInVerticalFlowUnderWidgets(container: VerticalFlow): LinkButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LinkButton]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LinkButton.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LinkButton.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

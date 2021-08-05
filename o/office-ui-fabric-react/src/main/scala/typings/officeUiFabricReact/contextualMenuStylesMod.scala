@@ -12,6 +12,5 @@ object contextualMenuStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getStyles(props: IContextualMenuStyleProps): IContextualMenuStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IContextualMenuStyles]
+  inline def getStyles(props: IContextualMenuStyleProps): IContextualMenuStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IContextualMenuStyles]
 }

@@ -29,25 +29,19 @@ trait ResponsiveRulesOptions extends StObject {
 }
 object ResponsiveRulesOptions {
   
-  @scala.inline
-  def apply(): ResponsiveRulesOptions = {
+  inline def apply(): ResponsiveRulesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResponsiveRulesOptions]
   }
   
-  @scala.inline
-  implicit class ResponsiveRulesOptionsMutableBuilder[Self <: ResponsiveRulesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ResponsiveRulesOptions](x: Self) {
     
-    @scala.inline
-    def setChartOptions(value: Options): Self = StObject.set(x, "chartOptions", value.asInstanceOf[js.Any])
+    inline def setChartOptions(value: Options): Self = StObject.set(x, "chartOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChartOptionsUndefined: Self = StObject.set(x, "chartOptions", js.undefined)
+    inline def setChartOptionsUndefined: Self = StObject.set(x, "chartOptions", js.undefined)
     
-    @scala.inline
-    def setCondition(value: ResponsiveRulesConditionOptions): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: ResponsiveRulesConditionOptions): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
+    inline def setConditionUndefined: Self = StObject.set(x, "condition", js.undefined)
   }
 }

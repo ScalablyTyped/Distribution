@@ -13,19 +13,15 @@ trait RequiredMenuOffsetData extends StObject {
 }
 object RequiredMenuOffsetData {
   
-  @scala.inline
-  def apply(left: Double, top: Double): RequiredMenuOffsetData = {
+  inline def apply(left: Double, top: Double): RequiredMenuOffsetData = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], top = top.asInstanceOf[js.Any])
     __obj.asInstanceOf[RequiredMenuOffsetData]
   }
   
-  @scala.inline
-  implicit class RequiredMenuOffsetDataMutableBuilder[Self <: RequiredMenuOffsetData] (val x: Self) extends AnyVal {
+  extension [Self <: RequiredMenuOffsetData](x: Self) {
     
-    @scala.inline
-    def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Double): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
   }
 }

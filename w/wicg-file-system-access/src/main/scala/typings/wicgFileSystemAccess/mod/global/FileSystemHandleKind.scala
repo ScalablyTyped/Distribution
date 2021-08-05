@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait FileSystemHandleKind extends StObject
 object FileSystemHandleKind {
   
-  @scala.inline
-  def directory: typings.wicgFileSystemAccess.wicgFileSystemAccessStrings.directory = "directory".asInstanceOf[typings.wicgFileSystemAccess.wicgFileSystemAccessStrings.directory]
+  inline def directory: typings.wicgFileSystemAccess.wicgFileSystemAccessStrings.directory = "directory".asInstanceOf[typings.wicgFileSystemAccess.wicgFileSystemAccessStrings.directory]
   
-  @scala.inline
-  def file: typings.wicgFileSystemAccess.wicgFileSystemAccessStrings.file = "file".asInstanceOf[typings.wicgFileSystemAccess.wicgFileSystemAccessStrings.file]
+  inline def file: typings.wicgFileSystemAccess.wicgFileSystemAccessStrings.file = "file".asInstanceOf[typings.wicgFileSystemAccess.wicgFileSystemAccessStrings.file]
 }

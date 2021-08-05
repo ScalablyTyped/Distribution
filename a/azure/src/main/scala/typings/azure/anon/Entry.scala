@@ -10,16 +10,13 @@ trait Entry extends StObject {
 }
 object Entry {
   
-  @scala.inline
-  def apply(entry: Author): Entry = {
+  inline def apply(entry: Author): Entry = {
     val __obj = js.Dynamic.literal(entry = entry.asInstanceOf[js.Any])
     __obj.asInstanceOf[Entry]
   }
   
-  @scala.inline
-  implicit class EntryMutableBuilder[Self <: Entry] (val x: Self) extends AnyVal {
+  extension [Self <: Entry](x: Self) {
     
-    @scala.inline
-    def setEntry(value: Author): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
+    inline def setEntry(value: Author): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
   }
 }

@@ -20,25 +20,19 @@ trait LegendAccessibilityOptions extends StObject {
 }
 object LegendAccessibilityOptions {
   
-  @scala.inline
-  def apply(): LegendAccessibilityOptions = {
+  inline def apply(): LegendAccessibilityOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LegendAccessibilityOptions]
   }
   
-  @scala.inline
-  implicit class LegendAccessibilityOptionsMutableBuilder[Self <: LegendAccessibilityOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LegendAccessibilityOptions](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setKeyboardNavigation(value: LegendAccessibilityKeyboardNavigationOptions): Self = StObject.set(x, "keyboardNavigation", value.asInstanceOf[js.Any])
+    inline def setKeyboardNavigation(value: LegendAccessibilityKeyboardNavigationOptions): Self = StObject.set(x, "keyboardNavigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboardNavigationUndefined: Self = StObject.set(x, "keyboardNavigation", js.undefined)
+    inline def setKeyboardNavigationUndefined: Self = StObject.set(x, "keyboardNavigation", js.undefined)
   }
 }

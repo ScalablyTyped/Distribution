@@ -18,25 +18,19 @@ trait NumberAttributeConstraintsType extends StObject {
 }
 object NumberAttributeConstraintsType {
   
-  @scala.inline
-  def apply(): NumberAttributeConstraintsType = {
+  inline def apply(): NumberAttributeConstraintsType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NumberAttributeConstraintsType]
   }
   
-  @scala.inline
-  implicit class NumberAttributeConstraintsTypeMutableBuilder[Self <: NumberAttributeConstraintsType] (val x: Self) extends AnyVal {
+  extension [Self <: NumberAttributeConstraintsType](x: Self) {
     
-    @scala.inline
-    def setMaxValue(value: StringType): Self = StObject.set(x, "MaxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: StringType): Self = StObject.set(x, "MaxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxValueUndefined: Self = StObject.set(x, "MaxValue", js.undefined)
+    inline def setMaxValueUndefined: Self = StObject.set(x, "MaxValue", js.undefined)
     
-    @scala.inline
-    def setMinValue(value: StringType): Self = StObject.set(x, "MinValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: StringType): Self = StObject.set(x, "MinValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValueUndefined: Self = StObject.set(x, "MinValue", js.undefined)
+    inline def setMinValueUndefined: Self = StObject.set(x, "MinValue", js.undefined)
   }
 }

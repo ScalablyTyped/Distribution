@@ -18,19 +18,15 @@ trait RotateIngestEndpointCredentialsRequest extends StObject {
 }
 object RotateIngestEndpointCredentialsRequest {
   
-  @scala.inline
-  def apply(Id: string, IngestEndpointId: string): RotateIngestEndpointCredentialsRequest = {
+  inline def apply(Id: string, IngestEndpointId: string): RotateIngestEndpointCredentialsRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], IngestEndpointId = IngestEndpointId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RotateIngestEndpointCredentialsRequest]
   }
   
-  @scala.inline
-  implicit class RotateIngestEndpointCredentialsRequestMutableBuilder[Self <: RotateIngestEndpointCredentialsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RotateIngestEndpointCredentialsRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIngestEndpointId(value: string): Self = StObject.set(x, "IngestEndpointId", value.asInstanceOf[js.Any])
+    inline def setIngestEndpointId(value: string): Self = StObject.set(x, "IngestEndpointId", value.asInstanceOf[js.Any])
   }
 }

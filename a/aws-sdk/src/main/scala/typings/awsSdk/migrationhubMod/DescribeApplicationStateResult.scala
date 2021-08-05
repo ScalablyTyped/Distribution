@@ -18,25 +18,19 @@ trait DescribeApplicationStateResult extends StObject {
 }
 object DescribeApplicationStateResult {
   
-  @scala.inline
-  def apply(): DescribeApplicationStateResult = {
+  inline def apply(): DescribeApplicationStateResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeApplicationStateResult]
   }
   
-  @scala.inline
-  implicit class DescribeApplicationStateResultMutableBuilder[Self <: DescribeApplicationStateResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeApplicationStateResult](x: Self) {
     
-    @scala.inline
-    def setApplicationStatus(value: ApplicationStatus): Self = StObject.set(x, "ApplicationStatus", value.asInstanceOf[js.Any])
+    inline def setApplicationStatus(value: ApplicationStatus): Self = StObject.set(x, "ApplicationStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationStatusUndefined: Self = StObject.set(x, "ApplicationStatus", js.undefined)
+    inline def setApplicationStatusUndefined: Self = StObject.set(x, "ApplicationStatus", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedTime(value: UpdateDateTime): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: UpdateDateTime): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
+    inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
   }
 }

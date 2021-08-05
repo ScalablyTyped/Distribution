@@ -33,28 +33,20 @@ object STATE_CHANGE_TYPE {
   @js.native
   val ^ : STATE_CHANGE_TYPE = js.native
   
-  @scala.inline
-  implicit class STATE_CHANGE_TYPEMutableBuilder[Self <: STATE_CHANGE_TYPE] (val x: Self) extends AnyVal {
+  extension [Self <: STATE_CHANGE_TYPE](x: Self) {
     
-    @scala.inline
-    def setChange(value: change_): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
+    inline def setChange(value: change_): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseLeave(value: mouseLeave): Self = StObject.set(x, "mouseLeave", value.asInstanceOf[js.Any])
+    inline def setMouseLeave(value: mouseLeave): Self = StObject.set(x, "mouseLeave", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMouseOver(value: mouseOver): Self = StObject.set(x, "mouseOver", value.asInstanceOf[js.Any])
+    inline def setMouseOver(value: mouseOver): Self = StObject.set(x, "mouseOver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveDown(value: moveDown): Self = StObject.set(x, "moveDown", value.asInstanceOf[js.Any])
+    inline def setMoveDown(value: moveDown): Self = StObject.set(x, "moveDown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveLeft(value: moveLeft): Self = StObject.set(x, "moveLeft", value.asInstanceOf[js.Any])
+    inline def setMoveLeft(value: moveLeft): Self = StObject.set(x, "moveLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveRight(value: moveRight): Self = StObject.set(x, "moveRight", value.asInstanceOf[js.Any])
+    inline def setMoveRight(value: moveRight): Self = StObject.set(x, "moveRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveUp(value: moveUp): Self = StObject.set(x, "moveUp", value.asInstanceOf[js.Any])
+    inline def setMoveUp(value: moveUp): Self = StObject.set(x, "moveUp", value.asInstanceOf[js.Any])
   }
 }

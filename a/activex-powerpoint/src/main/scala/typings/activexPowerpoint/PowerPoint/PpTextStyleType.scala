@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PpTextStyleType extends StObject
 object PpTextStyleType {
   
-  @scala.inline
-  def ppBodyStyle: `3` = 3.asInstanceOf[`3`]
+  inline def ppBodyStyle: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def ppDefaultStyle: `1` = 1.asInstanceOf[`1`]
+  inline def ppDefaultStyle: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def ppTitleStyle: `2` = 2.asInstanceOf[`2`]
+  inline def ppTitleStyle: `2` = 2.asInstanceOf[`2`]
 }

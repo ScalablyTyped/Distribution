@@ -53,7 +53,7 @@ object adjustMod {
       * @param mergedData 数据
       * @return 值的映射
       */
-    var getDimValues: js.Any = js.native
+    /* private */ var getDimValues: js.Any = js.native
     
     /**
       * 对数据进行分组adjustData

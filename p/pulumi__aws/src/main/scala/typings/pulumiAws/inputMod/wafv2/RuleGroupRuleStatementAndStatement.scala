@@ -14,19 +14,15 @@ trait RuleGroupRuleStatementAndStatement extends StObject {
 }
 object RuleGroupRuleStatementAndStatement {
   
-  @scala.inline
-  def apply(statements: Input[js.Array[Input[RuleGroupRuleStatementAndStatementStatement]]]): RuleGroupRuleStatementAndStatement = {
+  inline def apply(statements: Input[js.Array[Input[RuleGroupRuleStatementAndStatementStatement]]]): RuleGroupRuleStatementAndStatement = {
     val __obj = js.Dynamic.literal(statements = statements.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleGroupRuleStatementAndStatement]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleStatementAndStatementMutableBuilder[Self <: RuleGroupRuleStatementAndStatement] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleStatementAndStatement](x: Self) {
     
-    @scala.inline
-    def setStatements(value: Input[js.Array[Input[RuleGroupRuleStatementAndStatementStatement]]]): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
+    inline def setStatements(value: Input[js.Array[Input[RuleGroupRuleStatementAndStatementStatement]]]): Self = StObject.set(x, "statements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatementsVarargs(value: Input[RuleGroupRuleStatementAndStatementStatement]*): Self = StObject.set(x, "statements", js.Array(value :_*))
+    inline def setStatementsVarargs(value: Input[RuleGroupRuleStatementAndStatementStatement]*): Self = StObject.set(x, "statements", js.Array(value :_*))
   }
 }

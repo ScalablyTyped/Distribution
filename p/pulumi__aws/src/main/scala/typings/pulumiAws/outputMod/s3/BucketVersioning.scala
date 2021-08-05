@@ -18,25 +18,19 @@ trait BucketVersioning extends StObject {
 }
 object BucketVersioning {
   
-  @scala.inline
-  def apply(): BucketVersioning = {
+  inline def apply(): BucketVersioning = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BucketVersioning]
   }
   
-  @scala.inline
-  implicit class BucketVersioningMutableBuilder[Self <: BucketVersioning] (val x: Self) extends AnyVal {
+  extension [Self <: BucketVersioning](x: Self) {
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setMfaDelete(value: Boolean): Self = StObject.set(x, "mfaDelete", value.asInstanceOf[js.Any])
+    inline def setMfaDelete(value: Boolean): Self = StObject.set(x, "mfaDelete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMfaDeleteUndefined: Self = StObject.set(x, "mfaDelete", js.undefined)
+    inline def setMfaDeleteUndefined: Self = StObject.set(x, "mfaDelete", js.undefined)
   }
 }

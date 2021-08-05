@@ -33,22 +33,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object TableSortDescriptor2 {
   
-  @scala.inline
-  def apply(IsSortColumns: Boolean, MaxSortFieldsCount: Double, SortFields: SafeArray[TableSortField]): TableSortDescriptor2 = {
+  inline def apply(IsSortColumns: Boolean, MaxSortFieldsCount: Double, SortFields: SafeArray[TableSortField]): TableSortDescriptor2 = {
     val __obj = js.Dynamic.literal(IsSortColumns = IsSortColumns.asInstanceOf[js.Any], MaxSortFieldsCount = MaxSortFieldsCount.asInstanceOf[js.Any], SortFields = SortFields.asInstanceOf[js.Any])
     __obj.asInstanceOf[TableSortDescriptor2]
   }
   
-  @scala.inline
-  implicit class TableSortDescriptor2MutableBuilder[Self <: TableSortDescriptor2] (val x: Self) extends AnyVal {
+  extension [Self <: TableSortDescriptor2](x: Self) {
     
-    @scala.inline
-    def setIsSortColumns(value: Boolean): Self = StObject.set(x, "IsSortColumns", value.asInstanceOf[js.Any])
+    inline def setIsSortColumns(value: Boolean): Self = StObject.set(x, "IsSortColumns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxSortFieldsCount(value: Double): Self = StObject.set(x, "MaxSortFieldsCount", value.asInstanceOf[js.Any])
+    inline def setMaxSortFieldsCount(value: Double): Self = StObject.set(x, "MaxSortFieldsCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortFields(value: SafeArray[TableSortField]): Self = StObject.set(x, "SortFields", value.asInstanceOf[js.Any])
+    inline def setSortFields(value: SafeArray[TableSortField]): Self = StObject.set(x, "SortFields", value.asInstanceOf[js.Any])
   }
 }

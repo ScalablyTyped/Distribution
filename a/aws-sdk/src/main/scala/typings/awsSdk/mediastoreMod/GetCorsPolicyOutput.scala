@@ -13,19 +13,15 @@ trait GetCorsPolicyOutput extends StObject {
 }
 object GetCorsPolicyOutput {
   
-  @scala.inline
-  def apply(CorsPolicy: CorsPolicy): GetCorsPolicyOutput = {
+  inline def apply(CorsPolicy: CorsPolicy): GetCorsPolicyOutput = {
     val __obj = js.Dynamic.literal(CorsPolicy = CorsPolicy.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCorsPolicyOutput]
   }
   
-  @scala.inline
-  implicit class GetCorsPolicyOutputMutableBuilder[Self <: GetCorsPolicyOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetCorsPolicyOutput](x: Self) {
     
-    @scala.inline
-    def setCorsPolicy(value: CorsPolicy): Self = StObject.set(x, "CorsPolicy", value.asInstanceOf[js.Any])
+    inline def setCorsPolicy(value: CorsPolicy): Self = StObject.set(x, "CorsPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCorsPolicyVarargs(value: CorsRule*): Self = StObject.set(x, "CorsPolicy", js.Array(value :_*))
+    inline def setCorsPolicyVarargs(value: CorsRule*): Self = StObject.set(x, "CorsPolicy", js.Array(value :_*))
   }
 }

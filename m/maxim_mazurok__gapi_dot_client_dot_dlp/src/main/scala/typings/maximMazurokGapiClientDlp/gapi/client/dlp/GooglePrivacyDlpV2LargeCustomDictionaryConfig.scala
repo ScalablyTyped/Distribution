@@ -20,31 +20,23 @@ trait GooglePrivacyDlpV2LargeCustomDictionaryConfig extends StObject {
 }
 object GooglePrivacyDlpV2LargeCustomDictionaryConfig {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2LargeCustomDictionaryConfig = {
+  inline def apply(): GooglePrivacyDlpV2LargeCustomDictionaryConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2LargeCustomDictionaryConfig]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2LargeCustomDictionaryConfigMutableBuilder[Self <: GooglePrivacyDlpV2LargeCustomDictionaryConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2LargeCustomDictionaryConfig](x: Self) {
     
-    @scala.inline
-    def setBigQueryField(value: GooglePrivacyDlpV2BigQueryField): Self = StObject.set(x, "bigQueryField", value.asInstanceOf[js.Any])
+    inline def setBigQueryField(value: GooglePrivacyDlpV2BigQueryField): Self = StObject.set(x, "bigQueryField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBigQueryFieldUndefined: Self = StObject.set(x, "bigQueryField", js.undefined)
+    inline def setBigQueryFieldUndefined: Self = StObject.set(x, "bigQueryField", js.undefined)
     
-    @scala.inline
-    def setCloudStorageFileSet(value: GooglePrivacyDlpV2CloudStorageFileSet): Self = StObject.set(x, "cloudStorageFileSet", value.asInstanceOf[js.Any])
+    inline def setCloudStorageFileSet(value: GooglePrivacyDlpV2CloudStorageFileSet): Self = StObject.set(x, "cloudStorageFileSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCloudStorageFileSetUndefined: Self = StObject.set(x, "cloudStorageFileSet", js.undefined)
+    inline def setCloudStorageFileSetUndefined: Self = StObject.set(x, "cloudStorageFileSet", js.undefined)
     
-    @scala.inline
-    def setOutputPath(value: GooglePrivacyDlpV2CloudStoragePath): Self = StObject.set(x, "outputPath", value.asInstanceOf[js.Any])
+    inline def setOutputPath(value: GooglePrivacyDlpV2CloudStoragePath): Self = StObject.set(x, "outputPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutputPathUndefined: Self = StObject.set(x, "outputPath", js.undefined)
+    inline def setOutputPathUndefined: Self = StObject.set(x, "outputPath", js.undefined)
   }
 }

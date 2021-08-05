@@ -24,6 +24,5 @@ class Uint16Array ()
 }
 object Uint16Array {
   
-  @scala.inline
-  def apply: Uint16ArrayConstructor = js.Dynamic.global.selectDynamic("Uint16Array").asInstanceOf[Uint16ArrayConstructor]
+  inline def apply: Uint16ArrayConstructor = js.Dynamic.global.selectDynamic("Uint16Array").asInstanceOf[Uint16ArrayConstructor]
 }

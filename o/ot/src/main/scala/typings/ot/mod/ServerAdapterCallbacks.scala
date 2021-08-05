@@ -22,8 +22,7 @@ trait ServerAdapterCallbacks extends StObject {
 }
 object ServerAdapterCallbacks {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ack: () => Unit,
     client_left: String => Unit,
     clients: js.Any => Unit,
@@ -36,28 +35,20 @@ object ServerAdapterCallbacks {
     __obj.asInstanceOf[ServerAdapterCallbacks]
   }
   
-  @scala.inline
-  implicit class ServerAdapterCallbacksMutableBuilder[Self <: ServerAdapterCallbacks] (val x: Self) extends AnyVal {
+  extension [Self <: ServerAdapterCallbacks](x: Self) {
     
-    @scala.inline
-    def setAck(value: () => Unit): Self = StObject.set(x, "ack", js.Any.fromFunction0(value))
+    inline def setAck(value: () => Unit): Self = StObject.set(x, "ack", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClient_left(value: String => Unit): Self = StObject.set(x, "client_left", js.Any.fromFunction1(value))
+    inline def setClient_left(value: String => Unit): Self = StObject.set(x, "client_left", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClients(value: js.Any => Unit): Self = StObject.set(x, "clients", js.Any.fromFunction1(value))
+    inline def setClients(value: js.Any => Unit): Self = StObject.set(x, "clients", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOperation(value: SerializedTextOperation => Unit): Self = StObject.set(x, "operation", js.Any.fromFunction1(value))
+    inline def setOperation(value: SerializedTextOperation => Unit): Self = StObject.set(x, "operation", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReconnect(value: () => Unit): Self = StObject.set(x, "reconnect", js.Any.fromFunction0(value))
+    inline def setReconnect(value: () => Unit): Self = StObject.set(x, "reconnect", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSelection(value: (String, String) => Unit): Self = StObject.set(x, "selection", js.Any.fromFunction2(value))
+    inline def setSelection(value: (String, String) => Unit): Self = StObject.set(x, "selection", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSet_name(value: (String, String) => Unit): Self = StObject.set(x, "set_name", js.Any.fromFunction2(value))
+    inline def setSet_name(value: (String, String) => Unit): Self = StObject.set(x, "set_name", js.Any.fromFunction2(value))
   }
 }

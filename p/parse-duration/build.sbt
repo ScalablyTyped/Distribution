@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "parse-duration"
-version := "0.4.4-9cff86"
+version := "0.4.4-d547fa"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

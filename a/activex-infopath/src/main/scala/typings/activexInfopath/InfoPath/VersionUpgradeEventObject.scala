@@ -8,7 +8,7 @@ trait VersionUpgradeEventObject extends StObject {
   
   val DocumentVersion: String
   
-  @JSName("InfoPath.VersionUpgradeEventObject_typekey")
+  /* private */ @JSName("InfoPath.VersionUpgradeEventObject_typekey")
   var InfoPathDotVersionUpgradeEventObject_typekey: VersionUpgradeEventObject
   
   var ReturnStatus: Boolean
@@ -19,8 +19,7 @@ trait VersionUpgradeEventObject extends StObject {
 }
 object VersionUpgradeEventObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DocumentVersion: String,
     InfoPathDotVersionUpgradeEventObject_typekey: VersionUpgradeEventObject,
     ReturnStatus: Boolean,
@@ -32,22 +31,16 @@ object VersionUpgradeEventObject {
     __obj.asInstanceOf[VersionUpgradeEventObject]
   }
   
-  @scala.inline
-  implicit class VersionUpgradeEventObjectMutableBuilder[Self <: VersionUpgradeEventObject] (val x: Self) extends AnyVal {
+  extension [Self <: VersionUpgradeEventObject](x: Self) {
     
-    @scala.inline
-    def setDocumentVersion(value: String): Self = StObject.set(x, "DocumentVersion", value.asInstanceOf[js.Any])
+    inline def setDocumentVersion(value: String): Self = StObject.set(x, "DocumentVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfoPathDotVersionUpgradeEventObject_typekey(value: VersionUpgradeEventObject): Self = StObject.set(x, "InfoPath.VersionUpgradeEventObject_typekey", value.asInstanceOf[js.Any])
+    inline def setInfoPathDotVersionUpgradeEventObject_typekey(value: VersionUpgradeEventObject): Self = StObject.set(x, "InfoPath.VersionUpgradeEventObject_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnStatus(value: Boolean): Self = StObject.set(x, "ReturnStatus", value.asInstanceOf[js.Any])
+    inline def setReturnStatus(value: Boolean): Self = StObject.set(x, "ReturnStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSolutionVersion(value: String): Self = StObject.set(x, "SolutionVersion", value.asInstanceOf[js.Any])
+    inline def setSolutionVersion(value: String): Self = StObject.set(x, "SolutionVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXDocument(value: _XDocument): Self = StObject.set(x, "XDocument", value.asInstanceOf[js.Any])
+    inline def setXDocument(value: _XDocument): Self = StObject.set(x, "XDocument", value.asInstanceOf[js.Any])
   }
 }

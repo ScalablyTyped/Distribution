@@ -14,39 +14,39 @@ object headerRootCompMod {
     
     /* private */ def addPreventHeaderScroll(): js.Any = js.native
     
-    var autoWidthCalculator: js.Any = js.native
+    /* private */ var autoWidthCalculator: js.Any = js.native
     
-    var centerContainer: js.Any = js.native
+    /* private */ var centerContainer: js.Any = js.native
     
-    var childContainers: js.Any = js.native
+    /* private */ var childContainers: js.Any = js.native
     
-    var columnController: js.Any = js.native
+    /* private */ var columnController: js.Any = js.native
     
-    var context: js.Any = js.native
+    /* private */ var context: js.Any = js.native
     
-    var eHeaderContainer: js.Any = js.native
+    /* private */ var eHeaderContainer: js.Any = js.native
     
-    var eHeaderViewport: js.Any = js.native
+    /* private */ var eHeaderViewport: js.Any = js.native
     
-    var ePinnedLeftHeader: js.Any = js.native
+    /* private */ var ePinnedLeftHeader: js.Any = js.native
     
-    var ePinnedRightHeader: js.Any = js.native
+    /* private */ var ePinnedRightHeader: js.Any = js.native
     
-    var eventService: js.Any = js.native
+    /* private */ var eventService: js.Any = js.native
     
     def forEachHeaderElement(callback: js.Function1[/* renderedHeaderElement */ Component, Unit]): Unit = js.native
     
-    var gridApi: js.Any = js.native
+    /* private */ var gridApi: js.Any = js.native
     
-    var gridOptionsWrapper: js.Any = js.native
+    /* private */ var gridOptionsWrapper: js.Any = js.native
     
-    var gridPanel: js.Any = js.native
+    /* private */ var gridPanel: js.Any = js.native
     
     /* private */ def onPivotModeChanged(): js.Any = js.native
     
-    var pinnedLeftContainer: js.Any = js.native
+    /* private */ var pinnedLeftContainer: js.Any = js.native
     
-    var pinnedRightContainer: js.Any = js.native
+    /* private */ var pinnedRightContainer: js.Any = js.native
     
     /* private */ def postConstruct(): js.Any = js.native
     
@@ -54,7 +54,7 @@ object headerRootCompMod {
     
     def registerGridComp(gridPanel: GridPanel): Unit = js.native
     
-    var scrollVisibleService: js.Any = js.native
+    /* private */ var scrollVisibleService: js.Any = js.native
     
     def setHeight(height: Double): Unit = js.native
     
@@ -74,7 +74,6 @@ object headerRootCompMod {
     @JSImport("ag-grid/dist/lib/headerRendering/headerRootComp", "HeaderRootComp.TEMPLATE")
     @js.native
     def TEMPLATE: js.Any = js.native
-    @scala.inline
-    def TEMPLATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMPLATE")(x.asInstanceOf[js.Any])
+    inline def TEMPLATE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TEMPLATE")(x.asInstanceOf[js.Any])
   }
 }

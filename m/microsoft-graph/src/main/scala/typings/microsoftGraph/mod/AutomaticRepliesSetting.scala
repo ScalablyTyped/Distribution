@@ -32,67 +32,47 @@ trait AutomaticRepliesSetting extends StObject {
 }
 object AutomaticRepliesSetting {
   
-  @scala.inline
-  def apply(): AutomaticRepliesSetting = {
+  inline def apply(): AutomaticRepliesSetting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutomaticRepliesSetting]
   }
   
-  @scala.inline
-  implicit class AutomaticRepliesSettingMutableBuilder[Self <: AutomaticRepliesSetting] (val x: Self) extends AnyVal {
+  extension [Self <: AutomaticRepliesSetting](x: Self) {
     
-    @scala.inline
-    def setExternalAudience(value: NullableOption[ExternalAudienceScope]): Self = StObject.set(x, "externalAudience", value.asInstanceOf[js.Any])
+    inline def setExternalAudience(value: NullableOption[ExternalAudienceScope]): Self = StObject.set(x, "externalAudience", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalAudienceNull: Self = StObject.set(x, "externalAudience", null)
+    inline def setExternalAudienceNull: Self = StObject.set(x, "externalAudience", null)
     
-    @scala.inline
-    def setExternalAudienceUndefined: Self = StObject.set(x, "externalAudience", js.undefined)
+    inline def setExternalAudienceUndefined: Self = StObject.set(x, "externalAudience", js.undefined)
     
-    @scala.inline
-    def setExternalReplyMessage(value: NullableOption[String]): Self = StObject.set(x, "externalReplyMessage", value.asInstanceOf[js.Any])
+    inline def setExternalReplyMessage(value: NullableOption[String]): Self = StObject.set(x, "externalReplyMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalReplyMessageNull: Self = StObject.set(x, "externalReplyMessage", null)
+    inline def setExternalReplyMessageNull: Self = StObject.set(x, "externalReplyMessage", null)
     
-    @scala.inline
-    def setExternalReplyMessageUndefined: Self = StObject.set(x, "externalReplyMessage", js.undefined)
+    inline def setExternalReplyMessageUndefined: Self = StObject.set(x, "externalReplyMessage", js.undefined)
     
-    @scala.inline
-    def setInternalReplyMessage(value: NullableOption[String]): Self = StObject.set(x, "internalReplyMessage", value.asInstanceOf[js.Any])
+    inline def setInternalReplyMessage(value: NullableOption[String]): Self = StObject.set(x, "internalReplyMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternalReplyMessageNull: Self = StObject.set(x, "internalReplyMessage", null)
+    inline def setInternalReplyMessageNull: Self = StObject.set(x, "internalReplyMessage", null)
     
-    @scala.inline
-    def setInternalReplyMessageUndefined: Self = StObject.set(x, "internalReplyMessage", js.undefined)
+    inline def setInternalReplyMessageUndefined: Self = StObject.set(x, "internalReplyMessage", js.undefined)
     
-    @scala.inline
-    def setScheduledEndDateTime(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "scheduledEndDateTime", value.asInstanceOf[js.Any])
+    inline def setScheduledEndDateTime(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "scheduledEndDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledEndDateTimeNull: Self = StObject.set(x, "scheduledEndDateTime", null)
+    inline def setScheduledEndDateTimeNull: Self = StObject.set(x, "scheduledEndDateTime", null)
     
-    @scala.inline
-    def setScheduledEndDateTimeUndefined: Self = StObject.set(x, "scheduledEndDateTime", js.undefined)
+    inline def setScheduledEndDateTimeUndefined: Self = StObject.set(x, "scheduledEndDateTime", js.undefined)
     
-    @scala.inline
-    def setScheduledStartDateTime(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "scheduledStartDateTime", value.asInstanceOf[js.Any])
+    inline def setScheduledStartDateTime(value: NullableOption[DateTimeTimeZone]): Self = StObject.set(x, "scheduledStartDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduledStartDateTimeNull: Self = StObject.set(x, "scheduledStartDateTime", null)
+    inline def setScheduledStartDateTimeNull: Self = StObject.set(x, "scheduledStartDateTime", null)
     
-    @scala.inline
-    def setScheduledStartDateTimeUndefined: Self = StObject.set(x, "scheduledStartDateTime", js.undefined)
+    inline def setScheduledStartDateTimeUndefined: Self = StObject.set(x, "scheduledStartDateTime", js.undefined)
     
-    @scala.inline
-    def setStatus(value: NullableOption[AutomaticRepliesStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: NullableOption[AutomaticRepliesStatus]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusNull: Self = StObject.set(x, "status", null)
+    inline def setStatusNull: Self = StObject.set(x, "status", null)
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

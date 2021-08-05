@@ -18,8 +18,7 @@ trait EventHandler extends StObject {
 }
 object EventHandler {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     off: (String, js.Function) => Unit,
     on: (String, js.Function) => Unit,
     once: (String, js.Function) => Unit
@@ -28,16 +27,12 @@ object EventHandler {
     __obj.asInstanceOf[EventHandler]
   }
   
-  @scala.inline
-  implicit class EventHandlerMutableBuilder[Self <: EventHandler] (val x: Self) extends AnyVal {
+  extension [Self <: EventHandler](x: Self) {
     
-    @scala.inline
-    def setOff(value: (String, js.Function) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
+    inline def setOff(value: (String, js.Function) => Unit): Self = StObject.set(x, "off", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOn(value: (String, js.Function) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+    inline def setOn(value: (String, js.Function) => Unit): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnce(value: (String, js.Function) => Unit): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
+    inline def setOnce(value: (String, js.Function) => Unit): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
   }
 }

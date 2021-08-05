@@ -13,25 +13,19 @@ trait ManagedZonePeeringConfig extends StObject {
 }
 object ManagedZonePeeringConfig {
   
-  @scala.inline
-  def apply(): ManagedZonePeeringConfig = {
+  inline def apply(): ManagedZonePeeringConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManagedZonePeeringConfig]
   }
   
-  @scala.inline
-  implicit class ManagedZonePeeringConfigMutableBuilder[Self <: ManagedZonePeeringConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ManagedZonePeeringConfig](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setTargetNetwork(value: ManagedZonePeeringConfigTargetNetwork): Self = StObject.set(x, "targetNetwork", value.asInstanceOf[js.Any])
+    inline def setTargetNetwork(value: ManagedZonePeeringConfigTargetNetwork): Self = StObject.set(x, "targetNetwork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetNetworkUndefined: Self = StObject.set(x, "targetNetwork", js.undefined)
+    inline def setTargetNetworkUndefined: Self = StObject.set(x, "targetNetwork", js.undefined)
   }
 }

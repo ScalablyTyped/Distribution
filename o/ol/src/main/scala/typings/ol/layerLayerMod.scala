@@ -25,8 +25,7 @@ object layerLayerMod {
     def this(options: Options) = this()
   }
   
-  @scala.inline
-  def inView(layerState: State, viewState: typings.ol.viewMod.State): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("inView")(layerState.asInstanceOf[js.Any], viewState.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def inView(layerState: State, viewState: typings.ol.viewMod.State): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("inView")(layerState.asInstanceOf[js.Any], viewState.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @js.native
   trait Layer[SourceType /* <: typings.ol.sourceSourceMod.default */]
@@ -123,86 +122,60 @@ object layerLayerMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setExtent(value: Extent): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+      inline def setExtent(value: Extent): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
+      inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
       
-      @scala.inline
-      def setMap(value: typings.ol.pluggableMapMod.default): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: typings.ol.pluggableMapMod.default): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      @scala.inline
-      def setMaxResolution(value: Double): Self = StObject.set(x, "maxResolution", value.asInstanceOf[js.Any])
+      inline def setMaxResolution(value: Double): Self = StObject.set(x, "maxResolution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxResolutionUndefined: Self = StObject.set(x, "maxResolution", js.undefined)
+      inline def setMaxResolutionUndefined: Self = StObject.set(x, "maxResolution", js.undefined)
       
-      @scala.inline
-      def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+      inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
+      inline def setMaxZoomUndefined: Self = StObject.set(x, "maxZoom", js.undefined)
       
-      @scala.inline
-      def setMinResolution(value: Double): Self = StObject.set(x, "minResolution", value.asInstanceOf[js.Any])
+      inline def setMinResolution(value: Double): Self = StObject.set(x, "minResolution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinResolutionUndefined: Self = StObject.set(x, "minResolution", js.undefined)
+      inline def setMinResolutionUndefined: Self = StObject.set(x, "minResolution", js.undefined)
       
-      @scala.inline
-      def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
+      inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
+      inline def setMinZoomUndefined: Self = StObject.set(x, "minZoom", js.undefined)
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+      inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
       
-      @scala.inline
-      def setRender(value: /* p0 */ FrameState => HTMLElement): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+      inline def setRender(value: /* p0 */ FrameState => HTMLElement): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
-      @scala.inline
-      def setSource(value: typings.ol.sourceSourceMod.default): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: typings.ol.sourceSourceMod.default): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
       
-      @scala.inline
-      def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+      inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+      inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     }
   }
   
@@ -234,8 +207,7 @@ object layerLayerMod {
   }
   object State {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       layer: Layer[typings.ol.sourceSourceMod.default],
       managed: Boolean,
       maxResolution: Double,
@@ -251,44 +223,31 @@ object layerLayerMod {
       __obj.asInstanceOf[State]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State] (val x: Self) extends AnyVal {
+    extension [Self <: State](x: Self) {
       
-      @scala.inline
-      def setExtent(value: Extent): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
+      inline def setExtent(value: Extent): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
+      inline def setExtentUndefined: Self = StObject.set(x, "extent", js.undefined)
       
-      @scala.inline
-      def setLayer(value: Layer[typings.ol.sourceSourceMod.default]): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+      inline def setLayer(value: Layer[typings.ol.sourceSourceMod.default]): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManaged(value: Boolean): Self = StObject.set(x, "managed", value.asInstanceOf[js.Any])
+      inline def setManaged(value: Boolean): Self = StObject.set(x, "managed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxResolution(value: Double): Self = StObject.set(x, "maxResolution", value.asInstanceOf[js.Any])
+      inline def setMaxResolution(value: Double): Self = StObject.set(x, "maxResolution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
+      inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinResolution(value: Double): Self = StObject.set(x, "minResolution", value.asInstanceOf[js.Any])
+      inline def setMinResolution(value: Double): Self = StObject.set(x, "minResolution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
+      inline def setMinZoom(value: Double): Self = StObject.set(x, "minZoom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+      inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceState(value: typings.ol.stateMod.State): Self = StObject.set(x, "sourceState", value.asInstanceOf[js.Any])
+      inline def setSourceState(value: typings.ol.stateMod.State): Self = StObject.set(x, "sourceState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+      inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     }
   }
 }

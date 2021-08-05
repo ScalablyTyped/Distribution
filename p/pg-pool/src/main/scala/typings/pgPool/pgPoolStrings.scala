@@ -8,21 +8,17 @@ object pgPoolStrings {
   
   @js.native
   sealed trait acquire extends StObject
-  @scala.inline
-  def acquire: acquire = "acquire".asInstanceOf[acquire]
+  inline def acquire: acquire = "acquire".asInstanceOf[acquire]
   
   @js.native
   sealed trait connect extends StObject
-  @scala.inline
-  def connect: connect = "connect".asInstanceOf[connect]
+  inline def connect: connect = "connect".asInstanceOf[connect]
   
   @js.native
   sealed trait error extends StObject
-  @scala.inline
-  def error: error = "error".asInstanceOf[error]
+  inline def error: error = "error".asInstanceOf[error]
   
   @js.native
   sealed trait remove extends StObject
-  @scala.inline
-  def remove: remove = "remove".asInstanceOf[remove]
+  inline def remove: remove = "remove".asInstanceOf[remove]
 }

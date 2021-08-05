@@ -13,16 +13,13 @@ trait RotateChannelCredentialsRequest extends StObject {
 }
 object RotateChannelCredentialsRequest {
   
-  @scala.inline
-  def apply(Id: string): RotateChannelCredentialsRequest = {
+  inline def apply(Id: string): RotateChannelCredentialsRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[RotateChannelCredentialsRequest]
   }
   
-  @scala.inline
-  implicit class RotateChannelCredentialsRequestMutableBuilder[Self <: RotateChannelCredentialsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RotateChannelCredentialsRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

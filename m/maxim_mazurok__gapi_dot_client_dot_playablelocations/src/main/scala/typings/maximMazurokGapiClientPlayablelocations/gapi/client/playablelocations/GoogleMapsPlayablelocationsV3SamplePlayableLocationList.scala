@@ -11,22 +11,17 @@ trait GoogleMapsPlayablelocationsV3SamplePlayableLocationList extends StObject {
 }
 object GoogleMapsPlayablelocationsV3SamplePlayableLocationList {
   
-  @scala.inline
-  def apply(): GoogleMapsPlayablelocationsV3SamplePlayableLocationList = {
+  inline def apply(): GoogleMapsPlayablelocationsV3SamplePlayableLocationList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleMapsPlayablelocationsV3SamplePlayableLocationList]
   }
   
-  @scala.inline
-  implicit class GoogleMapsPlayablelocationsV3SamplePlayableLocationListMutableBuilder[Self <: GoogleMapsPlayablelocationsV3SamplePlayableLocationList] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleMapsPlayablelocationsV3SamplePlayableLocationList](x: Self) {
     
-    @scala.inline
-    def setLocations(value: js.Array[GoogleMapsPlayablelocationsV3SamplePlayableLocation]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+    inline def setLocations(value: js.Array[GoogleMapsPlayablelocationsV3SamplePlayableLocation]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
+    inline def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)
     
-    @scala.inline
-    def setLocationsVarargs(value: GoogleMapsPlayablelocationsV3SamplePlayableLocation*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: GoogleMapsPlayablelocationsV3SamplePlayableLocation*): Self = StObject.set(x, "locations", js.Array(value :_*))
   }
 }

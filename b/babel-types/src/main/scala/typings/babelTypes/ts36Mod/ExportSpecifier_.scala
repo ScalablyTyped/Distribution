@@ -21,8 +21,7 @@ trait ExportSpecifier_
 }
 object ExportSpecifier_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     end: Double,
     exported: Identifier_,
     imported: Identifier_,
@@ -35,19 +34,14 @@ object ExportSpecifier_ {
     __obj.asInstanceOf[ExportSpecifier_]
   }
   
-  @scala.inline
-  implicit class ExportSpecifier_MutableBuilder[Self <: ExportSpecifier_] (val x: Self) extends AnyVal {
+  extension [Self <: ExportSpecifier_](x: Self) {
     
-    @scala.inline
-    def setExported(value: Identifier_): Self = StObject.set(x, "exported", value.asInstanceOf[js.Any])
+    inline def setExported(value: Identifier_): Self = StObject.set(x, "exported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImported(value: Identifier_): Self = StObject.set(x, "imported", value.asInstanceOf[js.Any])
+    inline def setImported(value: Identifier_): Self = StObject.set(x, "imported", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocal(value: Identifier_): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+    inline def setLocal(value: Identifier_): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ExportSpecifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ExportSpecifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

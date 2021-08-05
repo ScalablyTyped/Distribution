@@ -19,6 +19,5 @@ object DropdownLayout {
   @JSImport("wix-style-react", "DropdownLayout.NONE_SELECTED_ID")
   @js.native
   def NONE_SELECTED_ID: NoneSelectedId = js.native
-  @scala.inline
-  def NONE_SELECTED_ID_=(x: NoneSelectedId): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NONE_SELECTED_ID")(x.asInstanceOf[js.Any])
+  inline def NONE_SELECTED_ID_=(x: NoneSelectedId): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NONE_SELECTED_ID")(x.asInstanceOf[js.Any])
 }

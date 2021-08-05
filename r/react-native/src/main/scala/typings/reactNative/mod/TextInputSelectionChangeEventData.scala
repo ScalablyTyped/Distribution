@@ -13,16 +13,13 @@ trait TextInputSelectionChangeEventData
 }
 object TextInputSelectionChangeEventData {
   
-  @scala.inline
-  def apply(selection: End, target: Double): TextInputSelectionChangeEventData = {
+  inline def apply(selection: End, target: Double): TextInputSelectionChangeEventData = {
     val __obj = js.Dynamic.literal(selection = selection.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[TextInputSelectionChangeEventData]
   }
   
-  @scala.inline
-  implicit class TextInputSelectionChangeEventDataMutableBuilder[Self <: TextInputSelectionChangeEventData] (val x: Self) extends AnyVal {
+  extension [Self <: TextInputSelectionChangeEventData](x: Self) {
     
-    @scala.inline
-    def setSelection(value: End): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+    inline def setSelection(value: End): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
   }
 }

@@ -23,49 +23,35 @@ trait Hashes extends StObject {
 }
 object Hashes {
   
-  @scala.inline
-  def apply(): Hashes = {
+  inline def apply(): Hashes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Hashes]
   }
   
-  @scala.inline
-  implicit class HashesMutableBuilder[Self <: Hashes] (val x: Self) extends AnyVal {
+  extension [Self <: Hashes](x: Self) {
     
-    @scala.inline
-    def setCrc32Hash(value: NullableOption[String]): Self = StObject.set(x, "crc32Hash", value.asInstanceOf[js.Any])
+    inline def setCrc32Hash(value: NullableOption[String]): Self = StObject.set(x, "crc32Hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrc32HashNull: Self = StObject.set(x, "crc32Hash", null)
+    inline def setCrc32HashNull: Self = StObject.set(x, "crc32Hash", null)
     
-    @scala.inline
-    def setCrc32HashUndefined: Self = StObject.set(x, "crc32Hash", js.undefined)
+    inline def setCrc32HashUndefined: Self = StObject.set(x, "crc32Hash", js.undefined)
     
-    @scala.inline
-    def setQuickXorHash(value: NullableOption[String]): Self = StObject.set(x, "quickXorHash", value.asInstanceOf[js.Any])
+    inline def setQuickXorHash(value: NullableOption[String]): Self = StObject.set(x, "quickXorHash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuickXorHashNull: Self = StObject.set(x, "quickXorHash", null)
+    inline def setQuickXorHashNull: Self = StObject.set(x, "quickXorHash", null)
     
-    @scala.inline
-    def setQuickXorHashUndefined: Self = StObject.set(x, "quickXorHash", js.undefined)
+    inline def setQuickXorHashUndefined: Self = StObject.set(x, "quickXorHash", js.undefined)
     
-    @scala.inline
-    def setSha1Hash(value: NullableOption[String]): Self = StObject.set(x, "sha1Hash", value.asInstanceOf[js.Any])
+    inline def setSha1Hash(value: NullableOption[String]): Self = StObject.set(x, "sha1Hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha1HashNull: Self = StObject.set(x, "sha1Hash", null)
+    inline def setSha1HashNull: Self = StObject.set(x, "sha1Hash", null)
     
-    @scala.inline
-    def setSha1HashUndefined: Self = StObject.set(x, "sha1Hash", js.undefined)
+    inline def setSha1HashUndefined: Self = StObject.set(x, "sha1Hash", js.undefined)
     
-    @scala.inline
-    def setSha256Hash(value: NullableOption[String]): Self = StObject.set(x, "sha256Hash", value.asInstanceOf[js.Any])
+    inline def setSha256Hash(value: NullableOption[String]): Self = StObject.set(x, "sha256Hash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSha256HashNull: Self = StObject.set(x, "sha256Hash", null)
+    inline def setSha256HashNull: Self = StObject.set(x, "sha256Hash", null)
     
-    @scala.inline
-    def setSha256HashUndefined: Self = StObject.set(x, "sha256Hash", js.undefined)
+    inline def setSha256HashUndefined: Self = StObject.set(x, "sha256Hash", js.undefined)
   }
 }

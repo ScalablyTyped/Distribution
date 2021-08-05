@@ -13,31 +13,23 @@ trait GetAccessTokenResponse extends StObject {
 }
 object GetAccessTokenResponse {
   
-  @scala.inline
-  def apply(): GetAccessTokenResponse = {
+  inline def apply(): GetAccessTokenResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetAccessTokenResponse]
   }
   
-  @scala.inline
-  implicit class GetAccessTokenResponseMutableBuilder[Self <: GetAccessTokenResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetAccessTokenResponse](x: Self) {
     
-    @scala.inline
-    def setRes(value: GaxiosResponse[js.Any]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+    inline def setRes(value: GaxiosResponse[js.Any]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResNull: Self = StObject.set(x, "res", null)
+    inline def setResNull: Self = StObject.set(x, "res", null)
     
-    @scala.inline
-    def setResUndefined: Self = StObject.set(x, "res", js.undefined)
+    inline def setResUndefined: Self = StObject.set(x, "res", js.undefined)
     
-    @scala.inline
-    def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenNull: Self = StObject.set(x, "token", null)
+    inline def setTokenNull: Self = StObject.set(x, "token", null)
     
-    @scala.inline
-    def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+    inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
   }
 }

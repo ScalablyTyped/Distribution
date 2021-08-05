@@ -17,26 +17,20 @@ object datePickerViewPropsTypeMod {
   }
   object DatePickerProps {
     
-    @scala.inline
-    def apply(): DatePickerProps = {
+    inline def apply(): DatePickerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DatePickerProps]
     }
     
-    @scala.inline
-    implicit class DatePickerPropsMutableBuilder[Self <: DatePickerProps] (val x: Self) extends AnyVal {
+    extension [Self <: DatePickerProps](x: Self) {
       
-      @scala.inline
-      def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: js.Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTriggerTypes(value: String): Self = StObject.set(x, "triggerTypes", value.asInstanceOf[js.Any])
+      inline def setTriggerTypes(value: String): Self = StObject.set(x, "triggerTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTriggerTypesUndefined: Self = StObject.set(x, "triggerTypes", js.undefined)
+      inline def setTriggerTypesUndefined: Self = StObject.set(x, "triggerTypes", js.undefined)
     }
   }
 }

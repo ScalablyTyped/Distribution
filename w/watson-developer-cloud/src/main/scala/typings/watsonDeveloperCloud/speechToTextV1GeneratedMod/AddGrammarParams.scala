@@ -29,8 +29,7 @@ trait AddGrammarParams extends StObject {
 }
 object AddGrammarParams {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     content_type: ContentType | String,
     customization_id: String,
     grammar_file: String,
@@ -40,37 +39,26 @@ object AddGrammarParams {
     __obj.asInstanceOf[AddGrammarParams]
   }
   
-  @scala.inline
-  implicit class AddGrammarParamsMutableBuilder[Self <: AddGrammarParams] (val x: Self) extends AnyVal {
+  extension [Self <: AddGrammarParams](x: Self) {
     
-    @scala.inline
-    def setAllow_overwrite(value: Boolean): Self = StObject.set(x, "allow_overwrite", value.asInstanceOf[js.Any])
+    inline def setAllow_overwrite(value: Boolean): Self = StObject.set(x, "allow_overwrite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllow_overwriteUndefined: Self = StObject.set(x, "allow_overwrite", js.undefined)
+    inline def setAllow_overwriteUndefined: Self = StObject.set(x, "allow_overwrite", js.undefined)
     
-    @scala.inline
-    def setContent_type(value: ContentType | String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
+    inline def setContent_type(value: ContentType | String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomization_id(value: String): Self = StObject.set(x, "customization_id", value.asInstanceOf[js.Any])
+    inline def setCustomization_id(value: String): Self = StObject.set(x, "customization_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrammar_file(value: String): Self = StObject.set(x, "grammar_file", value.asInstanceOf[js.Any])
+    inline def setGrammar_file(value: String): Self = StObject.set(x, "grammar_file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGrammar_name(value: String): Self = StObject.set(x, "grammar_name", value.asInstanceOf[js.Any])
+    inline def setGrammar_name(value: String): Self = StObject.set(x, "grammar_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
   }
 }

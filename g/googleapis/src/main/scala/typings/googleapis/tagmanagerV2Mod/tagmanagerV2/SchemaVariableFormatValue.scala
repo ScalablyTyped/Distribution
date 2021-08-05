@@ -34,43 +34,31 @@ trait SchemaVariableFormatValue extends StObject {
 }
 object SchemaVariableFormatValue {
   
-  @scala.inline
-  def apply(): SchemaVariableFormatValue = {
+  inline def apply(): SchemaVariableFormatValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaVariableFormatValue]
   }
   
-  @scala.inline
-  implicit class SchemaVariableFormatValueMutableBuilder[Self <: SchemaVariableFormatValue] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaVariableFormatValue](x: Self) {
     
-    @scala.inline
-    def setCaseConversionType(value: String): Self = StObject.set(x, "caseConversionType", value.asInstanceOf[js.Any])
+    inline def setCaseConversionType(value: String): Self = StObject.set(x, "caseConversionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaseConversionTypeUndefined: Self = StObject.set(x, "caseConversionType", js.undefined)
+    inline def setCaseConversionTypeUndefined: Self = StObject.set(x, "caseConversionType", js.undefined)
     
-    @scala.inline
-    def setConvertFalseToValue(value: SchemaParameter): Self = StObject.set(x, "convertFalseToValue", value.asInstanceOf[js.Any])
+    inline def setConvertFalseToValue(value: SchemaParameter): Self = StObject.set(x, "convertFalseToValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConvertFalseToValueUndefined: Self = StObject.set(x, "convertFalseToValue", js.undefined)
+    inline def setConvertFalseToValueUndefined: Self = StObject.set(x, "convertFalseToValue", js.undefined)
     
-    @scala.inline
-    def setConvertNullToValue(value: SchemaParameter): Self = StObject.set(x, "convertNullToValue", value.asInstanceOf[js.Any])
+    inline def setConvertNullToValue(value: SchemaParameter): Self = StObject.set(x, "convertNullToValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConvertNullToValueUndefined: Self = StObject.set(x, "convertNullToValue", js.undefined)
+    inline def setConvertNullToValueUndefined: Self = StObject.set(x, "convertNullToValue", js.undefined)
     
-    @scala.inline
-    def setConvertTrueToValue(value: SchemaParameter): Self = StObject.set(x, "convertTrueToValue", value.asInstanceOf[js.Any])
+    inline def setConvertTrueToValue(value: SchemaParameter): Self = StObject.set(x, "convertTrueToValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConvertTrueToValueUndefined: Self = StObject.set(x, "convertTrueToValue", js.undefined)
+    inline def setConvertTrueToValueUndefined: Self = StObject.set(x, "convertTrueToValue", js.undefined)
     
-    @scala.inline
-    def setConvertUndefinedToValue(value: SchemaParameter): Self = StObject.set(x, "convertUndefinedToValue", value.asInstanceOf[js.Any])
+    inline def setConvertUndefinedToValue(value: SchemaParameter): Self = StObject.set(x, "convertUndefinedToValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConvertUndefinedToValueUndefined: Self = StObject.set(x, "convertUndefinedToValue", js.undefined)
+    inline def setConvertUndefinedToValueUndefined: Self = StObject.set(x, "convertUndefinedToValue", js.undefined)
   }
 }

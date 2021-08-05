@@ -56,8 +56,7 @@ trait Typeofserial extends StObject {
 }
 object Typeofserial {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DataBits: EIGHT,
     ParityBit: EVEN,
     StopBits: ONE,
@@ -81,63 +80,44 @@ object Typeofserial {
     __obj.asInstanceOf[Typeofserial]
   }
   
-  @scala.inline
-  implicit class TypeofserialMutableBuilder[Self <: Typeofserial] (val x: Self) extends AnyVal {
+  extension [Self <: Typeofserial](x: Self) {
     
-    @scala.inline
-    def setClearBreak(value: (Double, js.Function1[/* result */ Boolean, Unit]) => Unit): Self = StObject.set(x, "clearBreak", js.Any.fromFunction2(value))
+    inline def setClearBreak(value: (Double, js.Function1[/* result */ Boolean, Unit]) => Unit): Self = StObject.set(x, "clearBreak", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setConnect(
+    inline def setConnect(
       value: (String, ConnectionOptions, js.Function1[/* connectionInfo */ ConnectionInfo, Unit]) => Unit
     ): Self = StObject.set(x, "connect", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setDataBits(value: EIGHT): Self = StObject.set(x, "DataBits", value.asInstanceOf[js.Any])
+    inline def setDataBits(value: EIGHT): Self = StObject.set(x, "DataBits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisconnect(value: (Double, js.Function1[/* result */ Boolean, Unit]) => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction2(value))
+    inline def setDisconnect(value: (Double, js.Function1[/* result */ Boolean, Unit]) => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setFlush(value: (Double, js.Function1[/* result */ Boolean, Unit]) => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction2(value))
+    inline def setFlush(value: (Double, js.Function1[/* result */ Boolean, Unit]) => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetConnections(value: js.Function1[/* connectionInfos */ js.Array[ConnectionInfo], Unit] => Unit): Self = StObject.set(x, "getConnections", js.Any.fromFunction1(value))
+    inline def setGetConnections(value: js.Function1[/* connectionInfos */ js.Array[ConnectionInfo], Unit] => Unit): Self = StObject.set(x, "getConnections", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetControlSignals(value: (Double, js.Function1[/* signals */ js.Object, Unit]) => Unit): Self = StObject.set(x, "getControlSignals", js.Any.fromFunction2(value))
+    inline def setGetControlSignals(value: (Double, js.Function1[/* signals */ js.Object, Unit]) => Unit): Self = StObject.set(x, "getControlSignals", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetDevices(value: js.Function1[/* ports */ js.Array[DeviceInfo], Unit] => Unit): Self = StObject.set(x, "getDevices", js.Any.fromFunction1(value))
+    inline def setGetDevices(value: js.Function1[/* ports */ js.Array[DeviceInfo], Unit] => Unit): Self = StObject.set(x, "getDevices", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetInfo(value: js.Function1[/* connectionInfos */ js.Array[ConnectionInfo], Unit] => Unit): Self = StObject.set(x, "getInfo", js.Any.fromFunction1(value))
+    inline def setGetInfo(value: js.Function1[/* connectionInfos */ js.Array[ConnectionInfo], Unit] => Unit): Self = StObject.set(x, "getInfo", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnReceive(value: TypeofonReceive): Self = StObject.set(x, "onReceive", value.asInstanceOf[js.Any])
+    inline def setOnReceive(value: TypeofonReceive): Self = StObject.set(x, "onReceive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnReceiveError(value: TypeofonReceiveError): Self = StObject.set(x, "onReceiveError", value.asInstanceOf[js.Any])
+    inline def setOnReceiveError(value: TypeofonReceiveError): Self = StObject.set(x, "onReceiveError", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParityBit(value: EVEN): Self = StObject.set(x, "ParityBit", value.asInstanceOf[js.Any])
+    inline def setParityBit(value: EVEN): Self = StObject.set(x, "ParityBit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSend(value: (Double, ArrayBuffer, js.Function1[/* sendInfo */ js.Object, Unit]) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction3(value))
+    inline def setSend(value: (Double, ArrayBuffer, js.Function1[/* sendInfo */ js.Object, Unit]) => Unit): Self = StObject.set(x, "send", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetBreak(value: (Double, js.Function1[/* result */ Boolean, Unit]) => Unit): Self = StObject.set(x, "setBreak", js.Any.fromFunction2(value))
+    inline def setSetBreak(value: (Double, js.Function1[/* result */ Boolean, Unit]) => Unit): Self = StObject.set(x, "setBreak", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetControlSignals(value: (Double, js.Object, js.Function1[/* result */ Boolean, Unit]) => Unit): Self = StObject.set(x, "setControlSignals", js.Any.fromFunction3(value))
+    inline def setSetControlSignals(value: (Double, js.Object, js.Function1[/* result */ Boolean, Unit]) => Unit): Self = StObject.set(x, "setControlSignals", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetPaused(value: (Double, Boolean, js.Function0[Unit]) => Unit): Self = StObject.set(x, "setPaused", js.Any.fromFunction3(value))
+    inline def setSetPaused(value: (Double, Boolean, js.Function0[Unit]) => Unit): Self = StObject.set(x, "setPaused", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setStopBits(value: ONE): Self = StObject.set(x, "StopBits", value.asInstanceOf[js.Any])
+    inline def setStopBits(value: ONE): Self = StObject.set(x, "StopBits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdate(value: (Double, ConnectionOptions, js.Function1[/* result */ Boolean, Unit]) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
+    inline def setUpdate(value: (Double, ConnectionOptions, js.Function1[/* result */ Boolean, Unit]) => Unit): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
   }
 }

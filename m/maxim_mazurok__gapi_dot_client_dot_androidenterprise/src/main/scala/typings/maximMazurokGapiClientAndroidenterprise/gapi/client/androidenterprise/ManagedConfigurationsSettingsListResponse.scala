@@ -11,22 +11,17 @@ trait ManagedConfigurationsSettingsListResponse extends StObject {
 }
 object ManagedConfigurationsSettingsListResponse {
   
-  @scala.inline
-  def apply(): ManagedConfigurationsSettingsListResponse = {
+  inline def apply(): ManagedConfigurationsSettingsListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ManagedConfigurationsSettingsListResponse]
   }
   
-  @scala.inline
-  implicit class ManagedConfigurationsSettingsListResponseMutableBuilder[Self <: ManagedConfigurationsSettingsListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ManagedConfigurationsSettingsListResponse](x: Self) {
     
-    @scala.inline
-    def setManagedConfigurationsSettings(value: js.Array[ManagedConfigurationsSettings]): Self = StObject.set(x, "managedConfigurationsSettings", value.asInstanceOf[js.Any])
+    inline def setManagedConfigurationsSettings(value: js.Array[ManagedConfigurationsSettings]): Self = StObject.set(x, "managedConfigurationsSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedConfigurationsSettingsUndefined: Self = StObject.set(x, "managedConfigurationsSettings", js.undefined)
+    inline def setManagedConfigurationsSettingsUndefined: Self = StObject.set(x, "managedConfigurationsSettings", js.undefined)
     
-    @scala.inline
-    def setManagedConfigurationsSettingsVarargs(value: ManagedConfigurationsSettings*): Self = StObject.set(x, "managedConfigurationsSettings", js.Array(value :_*))
+    inline def setManagedConfigurationsSettingsVarargs(value: ManagedConfigurationsSettings*): Self = StObject.set(x, "managedConfigurationsSettings", js.Array(value :_*))
   }
 }

@@ -15,8 +15,7 @@ trait ClientAsync
      with BaseClient
 object ClientAsync {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _getWindowSize: /* args */ Parameters[js.Function0[ProtocolCommandResponse]] => js.Promise[ReturnType[js.Function0[ProtocolCommandResponse]]],
     _setWindowSize: /* args */ Parameters[js.Function2[/* width */ Double, /* height */ Double, Unit]] => js.Promise[ReturnType[js.Function2[/* width */ Double, /* height */ Double, Unit]]],
     acceptAlert: /* args */ Parameters[js.Function0[Unit]] => js.Promise[ReturnType[js.Function0[Unit]]],

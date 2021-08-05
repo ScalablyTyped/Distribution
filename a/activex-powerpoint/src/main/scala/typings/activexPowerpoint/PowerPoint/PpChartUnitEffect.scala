@@ -21,21 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PpChartUnitEffect extends StObject
 object PpChartUnitEffect {
   
-  @scala.inline
-  def ppAnimateByCategory: `2` = 2.asInstanceOf[`2`]
+  inline def ppAnimateByCategory: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def ppAnimateByCategoryElements: `4` = 4.asInstanceOf[`4`]
+  inline def ppAnimateByCategoryElements: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def ppAnimateBySeries: `1` = 1.asInstanceOf[`1`]
+  inline def ppAnimateBySeries: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def ppAnimateBySeriesElements: `3` = 3.asInstanceOf[`3`]
+  inline def ppAnimateBySeriesElements: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def ppAnimateChartAllAtOnce: `5` = 5.asInstanceOf[`5`]
+  inline def ppAnimateChartAllAtOnce: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def ppAnimateChartMixed: `-2` = -2.asInstanceOf[`-2`]
+  inline def ppAnimateChartMixed: `-2` = -2.asInstanceOf[`-2`]
 }

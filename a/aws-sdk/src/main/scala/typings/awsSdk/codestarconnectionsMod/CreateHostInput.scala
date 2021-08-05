@@ -28,28 +28,21 @@ trait CreateHostInput extends StObject {
 }
 object CreateHostInput {
   
-  @scala.inline
-  def apply(Name: HostName, ProviderEndpoint: Url, ProviderType: ProviderType): CreateHostInput = {
+  inline def apply(Name: HostName, ProviderEndpoint: Url, ProviderType: ProviderType): CreateHostInput = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], ProviderEndpoint = ProviderEndpoint.asInstanceOf[js.Any], ProviderType = ProviderType.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateHostInput]
   }
   
-  @scala.inline
-  implicit class CreateHostInputMutableBuilder[Self <: CreateHostInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateHostInput](x: Self) {
     
-    @scala.inline
-    def setName(value: HostName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: HostName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderEndpoint(value: Url): Self = StObject.set(x, "ProviderEndpoint", value.asInstanceOf[js.Any])
+    inline def setProviderEndpoint(value: Url): Self = StObject.set(x, "ProviderEndpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProviderType(value: ProviderType): Self = StObject.set(x, "ProviderType", value.asInstanceOf[js.Any])
+    inline def setProviderType(value: ProviderType): Self = StObject.set(x, "ProviderType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcConfiguration(value: VpcConfiguration): Self = StObject.set(x, "VpcConfiguration", value.asInstanceOf[js.Any])
+    inline def setVpcConfiguration(value: VpcConfiguration): Self = StObject.set(x, "VpcConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpcConfigurationUndefined: Self = StObject.set(x, "VpcConfiguration", js.undefined)
+    inline def setVpcConfigurationUndefined: Self = StObject.set(x, "VpcConfiguration", js.undefined)
   }
 }

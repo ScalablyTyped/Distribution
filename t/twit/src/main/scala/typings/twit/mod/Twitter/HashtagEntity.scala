@@ -12,19 +12,15 @@ trait HashtagEntity extends StObject {
 }
 object HashtagEntity {
   
-  @scala.inline
-  def apply(indices: js.Tuple2[Double, Double], text: String): HashtagEntity = {
+  inline def apply(indices: js.Tuple2[Double, Double], text: String): HashtagEntity = {
     val __obj = js.Dynamic.literal(indices = indices.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[HashtagEntity]
   }
   
-  @scala.inline
-  implicit class HashtagEntityMutableBuilder[Self <: HashtagEntity] (val x: Self) extends AnyVal {
+  extension [Self <: HashtagEntity](x: Self) {
     
-    @scala.inline
-    def setIndices(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
+    inline def setIndices(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

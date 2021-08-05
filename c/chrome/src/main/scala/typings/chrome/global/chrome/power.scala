@@ -18,9 +18,7 @@ object power {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def releaseKeepAwake(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("releaseKeepAwake")().asInstanceOf[Unit]
+  inline def releaseKeepAwake(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("releaseKeepAwake")().asInstanceOf[Unit]
   
-  @scala.inline
-  def requestKeepAwake(level: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestKeepAwake")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def requestKeepAwake(level: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestKeepAwake")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

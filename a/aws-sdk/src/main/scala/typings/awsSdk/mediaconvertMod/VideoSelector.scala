@@ -43,55 +43,39 @@ trait VideoSelector extends StObject {
 }
 object VideoSelector {
   
-  @scala.inline
-  def apply(): VideoSelector = {
+  inline def apply(): VideoSelector = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoSelector]
   }
   
-  @scala.inline
-  implicit class VideoSelectorMutableBuilder[Self <: VideoSelector] (val x: Self) extends AnyVal {
+  extension [Self <: VideoSelector](x: Self) {
     
-    @scala.inline
-    def setAlphaBehavior(value: AlphaBehavior): Self = StObject.set(x, "AlphaBehavior", value.asInstanceOf[js.Any])
+    inline def setAlphaBehavior(value: AlphaBehavior): Self = StObject.set(x, "AlphaBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphaBehaviorUndefined: Self = StObject.set(x, "AlphaBehavior", js.undefined)
+    inline def setAlphaBehaviorUndefined: Self = StObject.set(x, "AlphaBehavior", js.undefined)
     
-    @scala.inline
-    def setColorSpace(value: ColorSpace): Self = StObject.set(x, "ColorSpace", value.asInstanceOf[js.Any])
+    inline def setColorSpace(value: ColorSpace): Self = StObject.set(x, "ColorSpace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorSpaceUndefined: Self = StObject.set(x, "ColorSpace", js.undefined)
+    inline def setColorSpaceUndefined: Self = StObject.set(x, "ColorSpace", js.undefined)
     
-    @scala.inline
-    def setColorSpaceUsage(value: ColorSpaceUsage): Self = StObject.set(x, "ColorSpaceUsage", value.asInstanceOf[js.Any])
+    inline def setColorSpaceUsage(value: ColorSpaceUsage): Self = StObject.set(x, "ColorSpaceUsage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorSpaceUsageUndefined: Self = StObject.set(x, "ColorSpaceUsage", js.undefined)
+    inline def setColorSpaceUsageUndefined: Self = StObject.set(x, "ColorSpaceUsage", js.undefined)
     
-    @scala.inline
-    def setHdr10Metadata(value: Hdr10Metadata): Self = StObject.set(x, "Hdr10Metadata", value.asInstanceOf[js.Any])
+    inline def setHdr10Metadata(value: Hdr10Metadata): Self = StObject.set(x, "Hdr10Metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHdr10MetadataUndefined: Self = StObject.set(x, "Hdr10Metadata", js.undefined)
+    inline def setHdr10MetadataUndefined: Self = StObject.set(x, "Hdr10Metadata", js.undefined)
     
-    @scala.inline
-    def setPid(value: integerMin1Max2147483647): Self = StObject.set(x, "Pid", value.asInstanceOf[js.Any])
+    inline def setPid(value: integerMin1Max2147483647): Self = StObject.set(x, "Pid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPidUndefined: Self = StObject.set(x, "Pid", js.undefined)
+    inline def setPidUndefined: Self = StObject.set(x, "Pid", js.undefined)
     
-    @scala.inline
-    def setProgramNumber(value: integerMinNegative2147483648Max2147483647): Self = StObject.set(x, "ProgramNumber", value.asInstanceOf[js.Any])
+    inline def setProgramNumber(value: integerMinNegative2147483648Max2147483647): Self = StObject.set(x, "ProgramNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgramNumberUndefined: Self = StObject.set(x, "ProgramNumber", js.undefined)
+    inline def setProgramNumberUndefined: Self = StObject.set(x, "ProgramNumber", js.undefined)
     
-    @scala.inline
-    def setRotate(value: InputRotate): Self = StObject.set(x, "Rotate", value.asInstanceOf[js.Any])
+    inline def setRotate(value: InputRotate): Self = StObject.set(x, "Rotate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRotateUndefined: Self = StObject.set(x, "Rotate", js.undefined)
+    inline def setRotateUndefined: Self = StObject.set(x, "Rotate", js.undefined)
   }
 }

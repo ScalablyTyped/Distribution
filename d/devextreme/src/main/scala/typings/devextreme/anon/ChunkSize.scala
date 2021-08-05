@@ -12,25 +12,19 @@ trait ChunkSize extends StObject {
 }
 object ChunkSize {
   
-  @scala.inline
-  def apply(): ChunkSize = {
+  inline def apply(): ChunkSize = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChunkSize]
   }
   
-  @scala.inline
-  implicit class ChunkSizeMutableBuilder[Self <: ChunkSize] (val x: Self) extends AnyVal {
+  extension [Self <: ChunkSize](x: Self) {
     
-    @scala.inline
-    def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
+    inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
+    inline def setChunkSizeUndefined: Self = StObject.set(x, "chunkSize", js.undefined)
     
-    @scala.inline
-    def setMaxFileSize(value: Double): Self = StObject.set(x, "maxFileSize", value.asInstanceOf[js.Any])
+    inline def setMaxFileSize(value: Double): Self = StObject.set(x, "maxFileSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFileSizeUndefined: Self = StObject.set(x, "maxFileSize", js.undefined)
+    inline def setMaxFileSizeUndefined: Self = StObject.set(x, "maxFileSize", js.undefined)
   }
 }

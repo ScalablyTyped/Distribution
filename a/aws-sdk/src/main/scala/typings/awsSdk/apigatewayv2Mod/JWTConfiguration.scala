@@ -19,28 +19,21 @@ trait JWTConfiguration extends StObject {
 }
 object JWTConfiguration {
   
-  @scala.inline
-  def apply(): JWTConfiguration = {
+  inline def apply(): JWTConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JWTConfiguration]
   }
   
-  @scala.inline
-  implicit class JWTConfigurationMutableBuilder[Self <: JWTConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: JWTConfiguration](x: Self) {
     
-    @scala.inline
-    def setAudience(value: listOfString): Self = StObject.set(x, "Audience", value.asInstanceOf[js.Any])
+    inline def setAudience(value: listOfString): Self = StObject.set(x, "Audience", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudienceUndefined: Self = StObject.set(x, "Audience", js.undefined)
+    inline def setAudienceUndefined: Self = StObject.set(x, "Audience", js.undefined)
     
-    @scala.inline
-    def setAudienceVarargs(value: string*): Self = StObject.set(x, "Audience", js.Array(value :_*))
+    inline def setAudienceVarargs(value: string*): Self = StObject.set(x, "Audience", js.Array(value :_*))
     
-    @scala.inline
-    def setIssuer(value: UriWithLengthBetween1And2048): Self = StObject.set(x, "Issuer", value.asInstanceOf[js.Any])
+    inline def setIssuer(value: UriWithLengthBetween1And2048): Self = StObject.set(x, "Issuer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIssuerUndefined: Self = StObject.set(x, "Issuer", js.undefined)
+    inline def setIssuerUndefined: Self = StObject.set(x, "Issuer", js.undefined)
   }
 }

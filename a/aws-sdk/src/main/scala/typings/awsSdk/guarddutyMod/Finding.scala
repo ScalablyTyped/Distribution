@@ -77,8 +77,7 @@ trait Finding extends StObject {
 }
 object Finding {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AccountId: String,
     Arn: String,
     CreatedAt: String,
@@ -94,67 +93,46 @@ object Finding {
     __obj.asInstanceOf[Finding]
   }
   
-  @scala.inline
-  implicit class FindingMutableBuilder[Self <: Finding] (val x: Self) extends AnyVal {
+  extension [Self <: Finding](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidence(value: Double): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Double): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
     
-    @scala.inline
-    def setCreatedAt(value: String): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: String): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartition(value: String): Self = StObject.set(x, "Partition", value.asInstanceOf[js.Any])
+    inline def setPartition(value: String): Self = StObject.set(x, "Partition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitionUndefined: Self = StObject.set(x, "Partition", js.undefined)
+    inline def setPartitionUndefined: Self = StObject.set(x, "Partition", js.undefined)
     
-    @scala.inline
-    def setRegion(value: String): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: String): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResource(value: Resource): Self = StObject.set(x, "Resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: Resource): Self = StObject.set(x, "Resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaVersion(value: String): Self = StObject.set(x, "SchemaVersion", value.asInstanceOf[js.Any])
+    inline def setSchemaVersion(value: String): Self = StObject.set(x, "SchemaVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setService(value: Service): Self = StObject.set(x, "Service", value.asInstanceOf[js.Any])
+    inline def setService(value: Service): Self = StObject.set(x, "Service", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceUndefined: Self = StObject.set(x, "Service", js.undefined)
+    inline def setServiceUndefined: Self = StObject.set(x, "Service", js.undefined)
     
-    @scala.inline
-    def setSeverity(value: Double): Self = StObject.set(x, "Severity", value.asInstanceOf[js.Any])
+    inline def setSeverity(value: Double): Self = StObject.set(x, "Severity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "Title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "Title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "Title", js.undefined)
     
-    @scala.inline
-    def setType(value: FindingType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: FindingType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedAt(value: String): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
+    inline def setUpdatedAt(value: String): Self = StObject.set(x, "UpdatedAt", value.asInstanceOf[js.Any])
   }
 }

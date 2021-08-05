@@ -13,22 +13,17 @@ trait DetachInstancesAnswer extends StObject {
 }
 object DetachInstancesAnswer {
   
-  @scala.inline
-  def apply(): DetachInstancesAnswer = {
+  inline def apply(): DetachInstancesAnswer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DetachInstancesAnswer]
   }
   
-  @scala.inline
-  implicit class DetachInstancesAnswerMutableBuilder[Self <: DetachInstancesAnswer] (val x: Self) extends AnyVal {
+  extension [Self <: DetachInstancesAnswer](x: Self) {
     
-    @scala.inline
-    def setActivities(value: Activities): Self = StObject.set(x, "Activities", value.asInstanceOf[js.Any])
+    inline def setActivities(value: Activities): Self = StObject.set(x, "Activities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivitiesUndefined: Self = StObject.set(x, "Activities", js.undefined)
+    inline def setActivitiesUndefined: Self = StObject.set(x, "Activities", js.undefined)
     
-    @scala.inline
-    def setActivitiesVarargs(value: Activity*): Self = StObject.set(x, "Activities", js.Array(value :_*))
+    inline def setActivitiesVarargs(value: Activity*): Self = StObject.set(x, "Activities", js.Array(value :_*))
   }
 }

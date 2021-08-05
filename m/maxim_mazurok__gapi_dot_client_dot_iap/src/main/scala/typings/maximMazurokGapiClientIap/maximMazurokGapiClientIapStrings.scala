@@ -8,16 +8,13 @@ object maximMazurokGapiClientIapStrings {
   
   @js.native
   sealed trait Resource extends StObject
-  @scala.inline
-  def Resource: Resource = "Resource".asInstanceOf[Resource]
+  inline def Resource: Resource = "Resource".asInstanceOf[Resource]
   
   @js.native
   sealed trait iap extends StObject
-  @scala.inline
-  def iap: iap = "iap".asInstanceOf[iap]
+  inline def iap: iap = "iap".asInstanceOf[iap]
   
   @js.native
   sealed trait v1 extends StObject
-  @scala.inline
-  def v1: v1 = "v1".asInstanceOf[v1]
+  inline def v1: v1 = "v1".asInstanceOf[v1]
 }

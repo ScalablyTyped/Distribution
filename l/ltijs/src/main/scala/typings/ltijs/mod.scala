@@ -25,17 +25,14 @@ object mod {
     }
     object Response {
       
-      @scala.inline
-      def apply(locals: Context): Response = {
+      inline def apply(locals: Context): Response = {
         val __obj = js.Dynamic.literal(locals = locals.asInstanceOf[js.Any])
         __obj.asInstanceOf[Response]
       }
       
-      @scala.inline
-      implicit class ResponseMutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
+      extension [Self <: Response](x: Self) {
         
-        @scala.inline
-        def setLocals(value: Context): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
+        inline def setLocals(value: Context): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
       }
     }
   }

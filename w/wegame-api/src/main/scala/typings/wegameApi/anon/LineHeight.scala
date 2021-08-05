@@ -10,16 +10,13 @@ trait LineHeight extends StObject {
 }
 object LineHeight {
   
-  @scala.inline
-  def apply(lineHeight: Double): LineHeight = {
+  inline def apply(lineHeight: Double): LineHeight = {
     val __obj = js.Dynamic.literal(lineHeight = lineHeight.asInstanceOf[js.Any])
     __obj.asInstanceOf[LineHeight]
   }
   
-  @scala.inline
-  implicit class LineHeightMutableBuilder[Self <: LineHeight] (val x: Self) extends AnyVal {
+  extension [Self <: LineHeight](x: Self) {
     
-    @scala.inline
-    def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+    inline def setLineHeight(value: Double): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
   }
 }

@@ -69,8 +69,7 @@ trait PaymentMethod
 }
 object PaymentMethod {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allow_buy: Boolean,
     allow_sell: Boolean,
     currency: String,
@@ -86,43 +85,30 @@ object PaymentMethod {
     __obj.asInstanceOf[PaymentMethod]
   }
   
-  @scala.inline
-  implicit class PaymentMethodMutableBuilder[Self <: PaymentMethod] (val x: Self) extends AnyVal {
+  extension [Self <: PaymentMethod](x: Self) {
     
-    @scala.inline
-    def setAllow_buy(value: Boolean): Self = StObject.set(x, "allow_buy", value.asInstanceOf[js.Any])
+    inline def setAllow_buy(value: Boolean): Self = StObject.set(x, "allow_buy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllow_sell(value: Boolean): Self = StObject.set(x, "allow_sell", value.asInstanceOf[js.Any])
+    inline def setAllow_sell(value: Boolean): Self = StObject.set(x, "allow_sell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
+    inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstant_buy(value: Boolean): Self = StObject.set(x, "instant_buy", value.asInstanceOf[js.Any])
+    inline def setInstant_buy(value: Boolean): Self = StObject.set(x, "instant_buy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstant_sell(value: Boolean): Self = StObject.set(x, "instant_sell", value.asInstanceOf[js.Any])
+    inline def setInstant_sell(value: Boolean): Self = StObject.set(x, "instant_sell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimits(value: PaymentMethodLimits): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
+    inline def setLimits(value: PaymentMethodLimits): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
+    inline def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimary_buy(value: Boolean): Self = StObject.set(x, "primary_buy", value.asInstanceOf[js.Any])
+    inline def setPrimary_buy(value: Boolean): Self = StObject.set(x, "primary_buy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimary_sell(value: Boolean): Self = StObject.set(x, "primary_sell", value.asInstanceOf[js.Any])
+    inline def setPrimary_sell(value: Boolean): Self = StObject.set(x, "primary_sell", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResource(value: payment_method): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
+    inline def setResource(value: payment_method): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: PaymentMethodType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: PaymentMethodType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

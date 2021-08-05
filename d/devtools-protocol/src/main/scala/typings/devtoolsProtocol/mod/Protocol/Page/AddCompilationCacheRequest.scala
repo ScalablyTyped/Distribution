@@ -15,19 +15,15 @@ trait AddCompilationCacheRequest extends StObject {
 }
 object AddCompilationCacheRequest {
   
-  @scala.inline
-  def apply(data: String, url: String): AddCompilationCacheRequest = {
+  inline def apply(data: String, url: String): AddCompilationCacheRequest = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[AddCompilationCacheRequest]
   }
   
-  @scala.inline
-  implicit class AddCompilationCacheRequestMutableBuilder[Self <: AddCompilationCacheRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AddCompilationCacheRequest](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

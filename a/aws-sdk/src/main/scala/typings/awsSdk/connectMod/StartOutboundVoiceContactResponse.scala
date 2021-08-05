@@ -13,19 +13,15 @@ trait StartOutboundVoiceContactResponse extends StObject {
 }
 object StartOutboundVoiceContactResponse {
   
-  @scala.inline
-  def apply(): StartOutboundVoiceContactResponse = {
+  inline def apply(): StartOutboundVoiceContactResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartOutboundVoiceContactResponse]
   }
   
-  @scala.inline
-  implicit class StartOutboundVoiceContactResponseMutableBuilder[Self <: StartOutboundVoiceContactResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StartOutboundVoiceContactResponse](x: Self) {
     
-    @scala.inline
-    def setContactId(value: ContactId): Self = StObject.set(x, "ContactId", value.asInstanceOf[js.Any])
+    inline def setContactId(value: ContactId): Self = StObject.set(x, "ContactId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactIdUndefined: Self = StObject.set(x, "ContactId", js.undefined)
+    inline def setContactIdUndefined: Self = StObject.set(x, "ContactId", js.undefined)
   }
 }

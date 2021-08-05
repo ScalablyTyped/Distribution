@@ -13,19 +13,15 @@ trait ImportSourceCredentialsOutput extends StObject {
 }
 object ImportSourceCredentialsOutput {
   
-  @scala.inline
-  def apply(): ImportSourceCredentialsOutput = {
+  inline def apply(): ImportSourceCredentialsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImportSourceCredentialsOutput]
   }
   
-  @scala.inline
-  implicit class ImportSourceCredentialsOutputMutableBuilder[Self <: ImportSourceCredentialsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ImportSourceCredentialsOutput](x: Self) {
     
-    @scala.inline
-    def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
   }
 }

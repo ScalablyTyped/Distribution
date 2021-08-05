@@ -33,28 +33,21 @@ trait EventSourceMessageReceivedEvent extends StObject {
 }
 object EventSourceMessageReceivedEvent {
   
-  @scala.inline
-  def apply(data: String, eventId: String, eventName: String, requestId: RequestId, timestamp: MonotonicTime): EventSourceMessageReceivedEvent = {
+  inline def apply(data: String, eventId: String, eventName: String, requestId: RequestId, timestamp: MonotonicTime): EventSourceMessageReceivedEvent = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], eventId = eventId.asInstanceOf[js.Any], eventName = eventName.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[EventSourceMessageReceivedEvent]
   }
   
-  @scala.inline
-  implicit class EventSourceMessageReceivedEventMutableBuilder[Self <: EventSourceMessageReceivedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: EventSourceMessageReceivedEvent](x: Self) {
     
-    @scala.inline
-    def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
+    inline def setEventId(value: String): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
+    inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+    inline def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimestamp(value: MonotonicTime): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+    inline def setTimestamp(value: MonotonicTime): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
   }
 }

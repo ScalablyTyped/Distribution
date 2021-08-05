@@ -79,17 +79,14 @@ object secretMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Secret = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Secret]
-    @scala.inline
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): Secret = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Secret]
+    inline def get(name: String, id: Input[ID]): Secret = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Secret]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): Secret = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Secret]
     
     /**
       * Returns true if the given object is an instance of Secret.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/secret.Secret */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/secret.Secret */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/secret.Secret */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/secret.Secret */ Boolean]
   }
   
   trait SecretArgs extends StObject {
@@ -131,56 +128,40 @@ object secretMod {
   }
   object SecretArgs {
     
-    @scala.inline
-    def apply(): SecretArgs = {
+    inline def apply(): SecretArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SecretArgs]
     }
     
-    @scala.inline
-    implicit class SecretArgsMutableBuilder[Self <: SecretArgs] (val x: Self) extends AnyVal {
+    extension [Self <: SecretArgs](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: Input[v1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: Input[v1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
       
-      @scala.inline
-      def setData(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setImmutable(value: Input[Boolean]): Self = StObject.set(x, "immutable", value.asInstanceOf[js.Any])
+      inline def setImmutable(value: Input[Boolean]): Self = StObject.set(x, "immutable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImmutableUndefined: Self = StObject.set(x, "immutable", js.undefined)
+      inline def setImmutableUndefined: Self = StObject.set(x, "immutable", js.undefined)
       
-      @scala.inline
-      def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Secret]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Secret]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+      inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setStringData(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "stringData", value.asInstanceOf[js.Any])
+      inline def setStringData(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "stringData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringDataUndefined: Self = StObject.set(x, "stringData", js.undefined)
+      inline def setStringDataUndefined: Self = StObject.set(x, "stringData", js.undefined)
       
-      @scala.inline
-      def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Input[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

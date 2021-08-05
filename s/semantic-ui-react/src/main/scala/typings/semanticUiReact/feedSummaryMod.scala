@@ -27,8 +27,7 @@ object feedSummaryMod extends Shortcut {
        with /* key */ StringDictionary[js.Any]
   object FeedSummaryProps {
     
-    @scala.inline
-    def apply(): FeedSummaryProps = {
+    inline def apply(): FeedSummaryProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FeedSummaryProps]
     }
@@ -56,60 +55,44 @@ object feedSummaryMod extends Shortcut {
   }
   object StrictFeedSummaryProps {
     
-    @scala.inline
-    def apply(): StrictFeedSummaryProps = {
+    inline def apply(): StrictFeedSummaryProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[StrictFeedSummaryProps]
     }
     
-    @scala.inline
-    implicit class StrictFeedSummaryPropsMutableBuilder[Self <: StrictFeedSummaryProps] (val x: Self) extends AnyVal {
+    extension [Self <: StrictFeedSummaryProps](x: Self) {
       
-      @scala.inline
-      def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+      inline def setAs(value: js.Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
+      inline def setAsUndefined: Self = StObject.set(x, "as", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setContent(value: SemanticShorthandContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      inline def setContent(value: SemanticShorthandContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+      inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
       
-      @scala.inline
-      def setDate(value: SemanticShorthandItem[FeedDateProps]): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: SemanticShorthandItem[FeedDateProps]): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateFunction3(
+      inline def setDateFunction3(
         value: (/* component */ ElementType[FeedDateProps], FeedDateProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "date", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def setUser(value: SemanticShorthandItem[FeedUserProps]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: SemanticShorthandItem[FeedUserProps]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserFunction3(
+      inline def setUserFunction3(
         value: (/* component */ ElementType[FeedUserProps], FeedUserProps, /* children */ js.UndefOr[ReactNode | ReactNodeArray]) => ReactElement | Null
       ): Self = StObject.set(x, "user", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+      inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     }
   }
   

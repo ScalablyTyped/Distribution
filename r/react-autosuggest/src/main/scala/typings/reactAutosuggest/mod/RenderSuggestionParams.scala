@@ -12,19 +12,15 @@ trait RenderSuggestionParams extends StObject {
 }
 object RenderSuggestionParams {
   
-  @scala.inline
-  def apply(isHighlighted: Boolean, query: String): RenderSuggestionParams = {
+  inline def apply(isHighlighted: Boolean, query: String): RenderSuggestionParams = {
     val __obj = js.Dynamic.literal(isHighlighted = isHighlighted.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenderSuggestionParams]
   }
   
-  @scala.inline
-  implicit class RenderSuggestionParamsMutableBuilder[Self <: RenderSuggestionParams] (val x: Self) extends AnyVal {
+  extension [Self <: RenderSuggestionParams](x: Self) {
     
-    @scala.inline
-    def setIsHighlighted(value: Boolean): Self = StObject.set(x, "isHighlighted", value.asInstanceOf[js.Any])
+    inline def setIsHighlighted(value: Boolean): Self = StObject.set(x, "isHighlighted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

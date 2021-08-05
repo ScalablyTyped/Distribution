@@ -12,28 +12,21 @@ trait ImageSourceOptions extends StObject {
 }
 object ImageSourceOptions {
   
-  @scala.inline
-  def apply(): ImageSourceOptions = {
+  inline def apply(): ImageSourceOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageSourceOptions]
   }
   
-  @scala.inline
-  implicit class ImageSourceOptionsMutableBuilder[Self <: ImageSourceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ImageSourceOptions](x: Self) {
     
-    @scala.inline
-    def setCoordinates(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
+    inline def setCoordinates(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoordinatesUndefined: Self = StObject.set(x, "coordinates", js.undefined)
+    inline def setCoordinatesUndefined: Self = StObject.set(x, "coordinates", js.undefined)
     
-    @scala.inline
-    def setCoordinatesVarargs(value: js.Array[Double]*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
+    inline def setCoordinatesVarargs(value: js.Array[Double]*): Self = StObject.set(x, "coordinates", js.Array(value :_*))
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
   }
 }

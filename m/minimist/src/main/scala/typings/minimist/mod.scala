@@ -7,14 +7,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): ParsedArgs = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ParsedArgs]
-  @scala.inline
-  def apply(args: js.Array[String]): ParsedArgs = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[ParsedArgs]
-  @scala.inline
-  def apply(args: js.Array[String], opts: Opts): ParsedArgs = (^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ParsedArgs]
-  @scala.inline
-  def apply(args: Unit, opts: Opts): ParsedArgs = (^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ParsedArgs]
+  inline def apply(): ParsedArgs = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ParsedArgs]
+  inline def apply(args: js.Array[String]): ParsedArgs = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[ParsedArgs]
+  inline def apply(args: js.Array[String], opts: Opts): ParsedArgs = (^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ParsedArgs]
+  inline def apply(args: Unit, opts: Opts): ParsedArgs = (^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ParsedArgs]
   
   @JSImport("minimist", JSImport.Namespace)
   @js.native
@@ -62,62 +58,44 @@ object mod {
   }
   object Opts {
     
-    @scala.inline
-    def apply(): Opts = {
+    inline def apply(): Opts = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Opts]
     }
     
-    @scala.inline
-    implicit class OptsMutableBuilder[Self <: Opts] (val x: Self) extends AnyVal {
+    extension [Self <: Opts](x: Self) {
       
-      @scala.inline
-      def `set--`(value: Boolean): Self = StObject.set(x, "--", value.asInstanceOf[js.Any])
+      inline def `set--`(value: Boolean): Self = StObject.set(x, "--", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `set--Undefined`: Self = StObject.set(x, "--", js.undefined)
+      inline def `set--Undefined`: Self = StObject.set(x, "--", js.undefined)
       
-      @scala.inline
-      def setAlias(value: StringDictionary[String | js.Array[String]]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: StringDictionary[String | js.Array[String]]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+      inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
       
-      @scala.inline
-      def setBoolean(value: Boolean | String | js.Array[String]): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
+      inline def setBoolean(value: Boolean | String | js.Array[String]): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBooleanUndefined: Self = StObject.set(x, "boolean", js.undefined)
+      inline def setBooleanUndefined: Self = StObject.set(x, "boolean", js.undefined)
       
-      @scala.inline
-      def setBooleanVarargs(value: String*): Self = StObject.set(x, "boolean", js.Array(value :_*))
+      inline def setBooleanVarargs(value: String*): Self = StObject.set(x, "boolean", js.Array(value :_*))
       
-      @scala.inline
-      def setDefault(value: StringDictionary[js.Any]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: StringDictionary[js.Any]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+      inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
-      @scala.inline
-      def setStopEarly(value: Boolean): Self = StObject.set(x, "stopEarly", value.asInstanceOf[js.Any])
+      inline def setStopEarly(value: Boolean): Self = StObject.set(x, "stopEarly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopEarlyUndefined: Self = StObject.set(x, "stopEarly", js.undefined)
+      inline def setStopEarlyUndefined: Self = StObject.set(x, "stopEarly", js.undefined)
       
-      @scala.inline
-      def setString(value: String | js.Array[String]): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+      inline def setString(value: String | js.Array[String]): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
+      inline def setStringUndefined: Self = StObject.set(x, "string", js.undefined)
       
-      @scala.inline
-      def setStringVarargs(value: String*): Self = StObject.set(x, "string", js.Array(value :_*))
+      inline def setStringVarargs(value: String*): Self = StObject.set(x, "string", js.Array(value :_*))
       
-      @scala.inline
-      def setUnknown(value: /* arg */ String => Boolean): Self = StObject.set(x, "unknown", js.Any.fromFunction1(value))
+      inline def setUnknown(value: /* arg */ String => Boolean): Self = StObject.set(x, "unknown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnknownUndefined: Self = StObject.set(x, "unknown", js.undefined)
+      inline def setUnknownUndefined: Self = StObject.set(x, "unknown", js.undefined)
     }
   }
   
@@ -138,30 +116,23 @@ object mod {
   }
   object ParsedArgs {
     
-    @scala.inline
-    def apply(_underscore: js.Array[String]): ParsedArgs = {
+    inline def apply(_underscore: js.Array[String]): ParsedArgs = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("_")(_underscore.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParsedArgs]
     }
     
-    @scala.inline
-    implicit class ParsedArgsMutableBuilder[Self <: ParsedArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ParsedArgs](x: Self) {
       
-      @scala.inline
-      def `set--`(value: js.Array[String]): Self = StObject.set(x, "--", value.asInstanceOf[js.Any])
+      inline def `set--`(value: js.Array[String]): Self = StObject.set(x, "--", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `set--Undefined`: Self = StObject.set(x, "--", js.undefined)
+      inline def `set--Undefined`: Self = StObject.set(x, "--", js.undefined)
       
-      @scala.inline
-      def `set--Varargs`(value: String*): Self = StObject.set(x, "--", js.Array(value :_*))
+      inline def `set--Varargs`(value: String*): Self = StObject.set(x, "--", js.Array(value :_*))
       
-      @scala.inline
-      def set_underscore(value: js.Array[String]): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
+      inline def set_underscore(value: js.Array[String]): Self = StObject.set(x, "_", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_underscoreVarargs(value: String*): Self = StObject.set(x, "_", js.Array(value :_*))
+      inline def set_underscoreVarargs(value: String*): Self = StObject.set(x, "_", js.Array(value :_*))
     }
   }
 }

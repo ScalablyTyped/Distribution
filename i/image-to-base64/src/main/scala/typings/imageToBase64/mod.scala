@@ -11,8 +11,7 @@ object mod {
     * @param path - a URL or a path
     * @returns a base64 code from an image
     */
-  @scala.inline
-  def apply(urlOrImage: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(urlOrImage.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def apply(urlOrImage: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(urlOrImage.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
   @JSImport("image-to-base64", JSImport.Namespace)
   @js.native

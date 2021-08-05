@@ -12,28 +12,21 @@ trait PropertySet extends StObject {
 }
 object PropertySet {
   
-  @scala.inline
-  def apply(): PropertySet = {
+  inline def apply(): PropertySet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PropertySet]
   }
   
-  @scala.inline
-  implicit class PropertySetMutableBuilder[Self <: PropertySet] (val x: Self) extends AnyVal {
+  extension [Self <: PropertySet](x: Self) {
     
-    @scala.inline
-    def setPropertySet(value: String): Self = StObject.set(x, "propertySet", value.asInstanceOf[js.Any])
+    inline def setPropertySet(value: String): Self = StObject.set(x, "propertySet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertySetUndefined: Self = StObject.set(x, "propertySet", js.undefined)
+    inline def setPropertySetUndefined: Self = StObject.set(x, "propertySet", js.undefined)
     
-    @scala.inline
-    def setStateProperties(value: js.Array[js.Any]): Self = StObject.set(x, "stateProperties", value.asInstanceOf[js.Any])
+    inline def setStateProperties(value: js.Array[js.Any]): Self = StObject.set(x, "stateProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatePropertiesUndefined: Self = StObject.set(x, "stateProperties", js.undefined)
+    inline def setStatePropertiesUndefined: Self = StObject.set(x, "stateProperties", js.undefined)
     
-    @scala.inline
-    def setStatePropertiesVarargs(value: js.Any*): Self = StObject.set(x, "stateProperties", js.Array(value :_*))
+    inline def setStatePropertiesVarargs(value: js.Any*): Self = StObject.set(x, "stateProperties", js.Array(value :_*))
   }
 }

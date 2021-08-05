@@ -28,25 +28,19 @@ trait DescribeAssetPropertyResponse extends StObject {
 }
 object DescribeAssetPropertyResponse {
   
-  @scala.inline
-  def apply(assetId: ID, assetModelId: ID, assetName: Name, assetProperty: Property): DescribeAssetPropertyResponse = {
+  inline def apply(assetId: ID, assetModelId: ID, assetName: Name, assetProperty: Property): DescribeAssetPropertyResponse = {
     val __obj = js.Dynamic.literal(assetId = assetId.asInstanceOf[js.Any], assetModelId = assetModelId.asInstanceOf[js.Any], assetName = assetName.asInstanceOf[js.Any], assetProperty = assetProperty.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAssetPropertyResponse]
   }
   
-  @scala.inline
-  implicit class DescribeAssetPropertyResponseMutableBuilder[Self <: DescribeAssetPropertyResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAssetPropertyResponse](x: Self) {
     
-    @scala.inline
-    def setAssetId(value: ID): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
+    inline def setAssetId(value: ID): Self = StObject.set(x, "assetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetModelId(value: ID): Self = StObject.set(x, "assetModelId", value.asInstanceOf[js.Any])
+    inline def setAssetModelId(value: ID): Self = StObject.set(x, "assetModelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetName(value: Name): Self = StObject.set(x, "assetName", value.asInstanceOf[js.Any])
+    inline def setAssetName(value: Name): Self = StObject.set(x, "assetName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetProperty(value: Property): Self = StObject.set(x, "assetProperty", value.asInstanceOf[js.Any])
+    inline def setAssetProperty(value: Property): Self = StObject.set(x, "assetProperty", value.asInstanceOf[js.Any])
   }
 }

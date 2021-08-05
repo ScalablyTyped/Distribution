@@ -40,8 +40,7 @@ trait XTypeProvider
 }
 object XTypeProvider {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ImplementationId: SafeArray[Double],
     Types: SafeArray[`type`],
     acquire: () => Unit,
@@ -54,19 +53,14 @@ object XTypeProvider {
     __obj.asInstanceOf[XTypeProvider]
   }
   
-  @scala.inline
-  implicit class XTypeProviderMutableBuilder[Self <: XTypeProvider] (val x: Self) extends AnyVal {
+  extension [Self <: XTypeProvider](x: Self) {
     
-    @scala.inline
-    def setGetImplementationId(value: () => SafeArray[Double]): Self = StObject.set(x, "getImplementationId", js.Any.fromFunction0(value))
+    inline def setGetImplementationId(value: () => SafeArray[Double]): Self = StObject.set(x, "getImplementationId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTypes(value: () => SafeArray[`type`]): Self = StObject.set(x, "getTypes", js.Any.fromFunction0(value))
+    inline def setGetTypes(value: () => SafeArray[`type`]): Self = StObject.set(x, "getTypes", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setImplementationId(value: SafeArray[Double]): Self = StObject.set(x, "ImplementationId", value.asInstanceOf[js.Any])
+    inline def setImplementationId(value: SafeArray[Double]): Self = StObject.set(x, "ImplementationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypes(value: SafeArray[`type`]): Self = StObject.set(x, "Types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: SafeArray[`type`]): Self = StObject.set(x, "Types", value.asInstanceOf[js.Any])
   }
 }

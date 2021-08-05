@@ -16,34 +16,25 @@ trait Topic extends StObject {
 }
 object Topic {
   
-  @scala.inline
-  def apply(topic: String): Topic = {
+  inline def apply(topic: String): Topic = {
     val __obj = js.Dynamic.literal(topic = topic.asInstanceOf[js.Any])
     __obj.asInstanceOf[Topic]
   }
   
-  @scala.inline
-  implicit class TopicMutableBuilder[Self <: Topic] (val x: Self) extends AnyVal {
+  extension [Self <: Topic](x: Self) {
     
-    @scala.inline
-    def setAutoCommit(value: Boolean): Self = StObject.set(x, "autoCommit", value.asInstanceOf[js.Any])
+    inline def setAutoCommit(value: Boolean): Self = StObject.set(x, "autoCommit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoCommitUndefined: Self = StObject.set(x, "autoCommit", js.undefined)
+    inline def setAutoCommitUndefined: Self = StObject.set(x, "autoCommit", js.undefined)
     
-    @scala.inline
-    def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
+    inline def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
+    inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
   }
 }

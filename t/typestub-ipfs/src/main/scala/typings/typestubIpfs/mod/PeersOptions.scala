@@ -12,25 +12,19 @@ trait PeersOptions extends StObject {
 }
 object PeersOptions {
   
-  @scala.inline
-  def apply(): PeersOptions = {
+  inline def apply(): PeersOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PeersOptions]
   }
   
-  @scala.inline
-  implicit class PeersOptionsMutableBuilder[Self <: PeersOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PeersOptions](x: Self) {
     
-    @scala.inline
-    def setV(value: Boolean): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+    inline def setV(value: Boolean): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVUndefined: Self = StObject.set(x, "v", js.undefined)
+    inline def setVUndefined: Self = StObject.set(x, "v", js.undefined)
     
-    @scala.inline
-    def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+    inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+    inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
   }
 }

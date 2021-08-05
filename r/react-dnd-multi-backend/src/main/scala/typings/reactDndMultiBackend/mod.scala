@@ -55,8 +55,7 @@ object mod {
   @js.native
   val TouchTransition: Transition = js.native
   
-  @scala.inline
-  def createTransition(eventType: String, check: CheckFunction[js.Any]): Transition = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransition")(eventType.asInstanceOf[js.Any], check.asInstanceOf[js.Any])).asInstanceOf[Transition]
+  inline def createTransition(eventType: String, check: CheckFunction[js.Any]): Transition = (^.asInstanceOf[js.Dynamic].applyDynamic("createTransition")(eventType.asInstanceOf[js.Any], check.asInstanceOf[js.Any])).asInstanceOf[Transition]
   
   trait BackendDeclaration extends StObject {
     
@@ -84,39 +83,30 @@ object mod {
   }
   object BackendDeclaration {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       backend: (/* manager */ DragDropManager, /* globalContext */ js.UndefOr[js.Any], /* configuration */ js.UndefOr[js.Any]) => Backend
     ): BackendDeclaration = {
       val __obj = js.Dynamic.literal(backend = js.Any.fromFunction3(backend))
       __obj.asInstanceOf[BackendDeclaration]
     }
     
-    @scala.inline
-    implicit class BackendDeclarationMutableBuilder[Self <: BackendDeclaration] (val x: Self) extends AnyVal {
+    extension [Self <: BackendDeclaration](x: Self) {
       
-      @scala.inline
-      def setBackend(
+      inline def setBackend(
         value: (/* manager */ DragDropManager, /* globalContext */ js.UndefOr[js.Any], /* configuration */ js.UndefOr[js.Any]) => Backend
       ): Self = StObject.set(x, "backend", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setPreview(value: Boolean): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
+      inline def setPreview(value: Boolean): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
+      inline def setPreviewUndefined: Self = StObject.set(x, "preview", js.undefined)
       
-      @scala.inline
-      def setTransition(value: Transition): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
+      inline def setTransition(value: Transition): Self = StObject.set(x, "transition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
+      inline def setTransitionUndefined: Self = StObject.set(x, "transition", js.undefined)
     }
   }
   
@@ -131,20 +121,16 @@ object mod {
   }
   object Backends {
     
-    @scala.inline
-    def apply(backends: js.Array[BackendDeclaration]): Backends = {
+    inline def apply(backends: js.Array[BackendDeclaration]): Backends = {
       val __obj = js.Dynamic.literal(backends = backends.asInstanceOf[js.Any])
       __obj.asInstanceOf[Backends]
     }
     
-    @scala.inline
-    implicit class BackendsMutableBuilder[Self <: Backends] (val x: Self) extends AnyVal {
+    extension [Self <: Backends](x: Self) {
       
-      @scala.inline
-      def setBackends(value: js.Array[BackendDeclaration]): Self = StObject.set(x, "backends", value.asInstanceOf[js.Any])
+      inline def setBackends(value: js.Array[BackendDeclaration]): Self = StObject.set(x, "backends", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackendsVarargs(value: BackendDeclaration*): Self = StObject.set(x, "backends", js.Array(value :_*))
+      inline def setBackendsVarargs(value: BackendDeclaration*): Self = StObject.set(x, "backends", js.Array(value :_*))
     }
   }
   
@@ -172,23 +158,18 @@ object mod {
   }
   object PreviewGeneratorArg {
     
-    @scala.inline
-    def apply[T](item: T, itemType: String, style: CSSProperties): PreviewGeneratorArg[T] = {
+    inline def apply[T](item: T, itemType: String, style: CSSProperties): PreviewGeneratorArg[T] = {
       val __obj = js.Dynamic.literal(item = item.asInstanceOf[js.Any], itemType = itemType.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
       __obj.asInstanceOf[PreviewGeneratorArg[T]]
     }
     
-    @scala.inline
-    implicit class PreviewGeneratorArgMutableBuilder[Self <: PreviewGeneratorArg[?], T] (val x: Self & PreviewGeneratorArg[T]) extends AnyVal {
+    extension [Self <: PreviewGeneratorArg[?], T](x: Self & PreviewGeneratorArg[T]) {
       
-      @scala.inline
-      def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
+      inline def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemType(value: String): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
+      inline def setItemType(value: String): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     }
   }
   
@@ -207,17 +188,14 @@ object mod {
   }
   object PreviewProps {
     
-    @scala.inline
-    def apply[T](generator: /* arg */ PreviewGeneratorArg[T] => ReactNode): PreviewProps[T] = {
+    inline def apply[T](generator: /* arg */ PreviewGeneratorArg[T] => ReactNode): PreviewProps[T] = {
       val __obj = js.Dynamic.literal(generator = js.Any.fromFunction1(generator))
       __obj.asInstanceOf[PreviewProps[T]]
     }
     
-    @scala.inline
-    implicit class PreviewPropsMutableBuilder[Self <: PreviewProps[?], T] (val x: Self & PreviewProps[T]) extends AnyVal {
+    extension [Self <: PreviewProps[?], T](x: Self & PreviewProps[T]) {
       
-      @scala.inline
-      def setGenerator(value: /* arg */ PreviewGeneratorArg[T] => ReactNode): Self = StObject.set(x, "generator", js.Any.fromFunction1(value))
+      inline def setGenerator(value: /* arg */ PreviewGeneratorArg[T] => ReactNode): Self = StObject.set(x, "generator", js.Any.fromFunction1(value))
     }
   }
   
@@ -241,23 +219,18 @@ object mod {
   }
   object Transition {
     
-    @scala.inline
-    def apply(_isMBTransition: Boolean, check: js.Any => Boolean, event: String): Transition = {
+    inline def apply(_isMBTransition: Boolean, check: js.Any => Boolean, event: String): Transition = {
       val __obj = js.Dynamic.literal(_isMBTransition = _isMBTransition.asInstanceOf[js.Any], check = js.Any.fromFunction1(check), event = event.asInstanceOf[js.Any])
       __obj.asInstanceOf[Transition]
     }
     
-    @scala.inline
-    implicit class TransitionMutableBuilder[Self <: Transition] (val x: Self) extends AnyVal {
+    extension [Self <: Transition](x: Self) {
       
-      @scala.inline
-      def setCheck(value: js.Any => Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
+      inline def setCheck(value: js.Any => Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+      inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set_isMBTransition(value: Boolean): Self = StObject.set(x, "_isMBTransition", value.asInstanceOf[js.Any])
+      inline def set_isMBTransition(value: Boolean): Self = StObject.set(x, "_isMBTransition", value.asInstanceOf[js.Any])
     }
   }
 }

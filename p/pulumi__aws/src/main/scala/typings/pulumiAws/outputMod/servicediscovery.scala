@@ -25,29 +25,22 @@ object servicediscovery {
   }
   object ServiceDnsConfig {
     
-    @scala.inline
-    def apply(dnsRecords: js.Array[ServiceDnsConfigDnsRecord], namespaceId: String): ServiceDnsConfig = {
+    inline def apply(dnsRecords: js.Array[ServiceDnsConfigDnsRecord], namespaceId: String): ServiceDnsConfig = {
       val __obj = js.Dynamic.literal(dnsRecords = dnsRecords.asInstanceOf[js.Any], namespaceId = namespaceId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServiceDnsConfig]
     }
     
-    @scala.inline
-    implicit class ServiceDnsConfigMutableBuilder[Self <: ServiceDnsConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceDnsConfig](x: Self) {
       
-      @scala.inline
-      def setDnsRecords(value: js.Array[ServiceDnsConfigDnsRecord]): Self = StObject.set(x, "dnsRecords", value.asInstanceOf[js.Any])
+      inline def setDnsRecords(value: js.Array[ServiceDnsConfigDnsRecord]): Self = StObject.set(x, "dnsRecords", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDnsRecordsVarargs(value: ServiceDnsConfigDnsRecord*): Self = StObject.set(x, "dnsRecords", js.Array(value :_*))
+      inline def setDnsRecordsVarargs(value: ServiceDnsConfigDnsRecord*): Self = StObject.set(x, "dnsRecords", js.Array(value :_*))
       
-      @scala.inline
-      def setNamespaceId(value: String): Self = StObject.set(x, "namespaceId", value.asInstanceOf[js.Any])
+      inline def setNamespaceId(value: String): Self = StObject.set(x, "namespaceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutingPolicy(value: String): Self = StObject.set(x, "routingPolicy", value.asInstanceOf[js.Any])
+      inline def setRoutingPolicy(value: String): Self = StObject.set(x, "routingPolicy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutingPolicyUndefined: Self = StObject.set(x, "routingPolicy", js.undefined)
+      inline def setRoutingPolicyUndefined: Self = StObject.set(x, "routingPolicy", js.undefined)
     }
   }
   
@@ -65,21 +58,17 @@ object servicediscovery {
   }
   object ServiceDnsConfigDnsRecord {
     
-    @scala.inline
-    def apply(ttl: Double, `type`: String): ServiceDnsConfigDnsRecord = {
+    inline def apply(ttl: Double, `type`: String): ServiceDnsConfigDnsRecord = {
       val __obj = js.Dynamic.literal(ttl = ttl.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ServiceDnsConfigDnsRecord]
     }
     
-    @scala.inline
-    implicit class ServiceDnsConfigDnsRecordMutableBuilder[Self <: ServiceDnsConfigDnsRecord] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceDnsConfigDnsRecord](x: Self) {
       
-      @scala.inline
-      def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
+      inline def setTtl(value: Double): Self = StObject.set(x, "ttl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -102,32 +91,24 @@ object servicediscovery {
   }
   object ServiceHealthCheckConfig {
     
-    @scala.inline
-    def apply(): ServiceHealthCheckConfig = {
+    inline def apply(): ServiceHealthCheckConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ServiceHealthCheckConfig]
     }
     
-    @scala.inline
-    implicit class ServiceHealthCheckConfigMutableBuilder[Self <: ServiceHealthCheckConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceHealthCheckConfig](x: Self) {
       
-      @scala.inline
-      def setFailureThreshold(value: Double): Self = StObject.set(x, "failureThreshold", value.asInstanceOf[js.Any])
+      inline def setFailureThreshold(value: Double): Self = StObject.set(x, "failureThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailureThresholdUndefined: Self = StObject.set(x, "failureThreshold", js.undefined)
+      inline def setFailureThresholdUndefined: Self = StObject.set(x, "failureThreshold", js.undefined)
       
-      @scala.inline
-      def setResourcePath(value: String): Self = StObject.set(x, "resourcePath", value.asInstanceOf[js.Any])
+      inline def setResourcePath(value: String): Self = StObject.set(x, "resourcePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourcePathUndefined: Self = StObject.set(x, "resourcePath", js.undefined)
+      inline def setResourcePathUndefined: Self = StObject.set(x, "resourcePath", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -140,20 +121,16 @@ object servicediscovery {
   }
   object ServiceHealthCheckCustomConfig {
     
-    @scala.inline
-    def apply(): ServiceHealthCheckCustomConfig = {
+    inline def apply(): ServiceHealthCheckCustomConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ServiceHealthCheckCustomConfig]
     }
     
-    @scala.inline
-    implicit class ServiceHealthCheckCustomConfigMutableBuilder[Self <: ServiceHealthCheckCustomConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceHealthCheckCustomConfig](x: Self) {
       
-      @scala.inline
-      def setFailureThreshold(value: Double): Self = StObject.set(x, "failureThreshold", value.asInstanceOf[js.Any])
+      inline def setFailureThreshold(value: Double): Self = StObject.set(x, "failureThreshold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailureThresholdUndefined: Self = StObject.set(x, "failureThreshold", js.undefined)
+      inline def setFailureThresholdUndefined: Self = StObject.set(x, "failureThreshold", js.undefined)
     }
   }
 }

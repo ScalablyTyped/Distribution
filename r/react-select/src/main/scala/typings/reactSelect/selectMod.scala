@@ -65,8 +65,7 @@ object selectMod {
     @JSImport("react-select/src/Select", "default.defaultProps")
     @js.native
     def defaultProps: Props[js.Any] = js.native
-    @scala.inline
-    def defaultProps_=(x: Props[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Props[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("react-select/src/Select", "defaultProps")
@@ -82,11 +81,9 @@ object selectMod {
   trait FormatOptionLabelContext extends StObject
   object FormatOptionLabelContext {
     
-    @scala.inline
-    def menu: typings.reactSelect.reactSelectStrings.menu = "menu".asInstanceOf[typings.reactSelect.reactSelectStrings.menu]
+    inline def menu: typings.reactSelect.reactSelectStrings.menu = "menu".asInstanceOf[typings.reactSelect.reactSelectStrings.menu]
     
-    @scala.inline
-    def value: typings.reactSelect.reactSelectStrings.value = "value".asInstanceOf[typings.reactSelect.reactSelectStrings.value]
+    inline def value: typings.reactSelect.reactSelectStrings.value = "value".asInstanceOf[typings.reactSelect.reactSelectStrings.value]
   }
   
   trait FormatOptionLabelMeta[OptionType /* <: OptionTypeBase */] extends StObject {
@@ -99,32 +96,24 @@ object selectMod {
   }
   object FormatOptionLabelMeta {
     
-    @scala.inline
-    def apply[OptionType /* <: OptionTypeBase */](context: FormatOptionLabelContext, inputValue: String): FormatOptionLabelMeta[OptionType] = {
+    inline def apply[OptionType /* <: OptionTypeBase */](context: FormatOptionLabelContext, inputValue: String): FormatOptionLabelMeta[OptionType] = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], inputValue = inputValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[FormatOptionLabelMeta[OptionType]]
     }
     
-    @scala.inline
-    implicit class FormatOptionLabelMetaMutableBuilder[Self <: FormatOptionLabelMeta[?], OptionType /* <: OptionTypeBase */] (val x: Self & FormatOptionLabelMeta[OptionType]) extends AnyVal {
+    extension [Self <: FormatOptionLabelMeta[?], OptionType /* <: OptionTypeBase */](x: Self & FormatOptionLabelMeta[OptionType]) {
       
-      @scala.inline
-      def setContext(value: FormatOptionLabelContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+      inline def setContext(value: FormatOptionLabelContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
+      inline def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectValue(value: ValueType[OptionType]): Self = StObject.set(x, "selectValue", value.asInstanceOf[js.Any])
+      inline def setSelectValue(value: ValueType[OptionType]): Self = StObject.set(x, "selectValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectValueNull: Self = StObject.set(x, "selectValue", null)
+      inline def setSelectValueNull: Self = StObject.set(x, "selectValue", null)
       
-      @scala.inline
-      def setSelectValueUndefined: Self = StObject.set(x, "selectValue", js.undefined)
+      inline def setSelectValueUndefined: Self = StObject.set(x, "selectValue", js.undefined)
       
-      @scala.inline
-      def setSelectValueVarargs(value: OptionType*): Self = StObject.set(x, "selectValue", js.Array(value :_*))
+      inline def setSelectValueVarargs(value: OptionType*): Self = StObject.set(x, "selectValue", js.Array(value :_*))
     }
   }
   
@@ -136,26 +125,20 @@ object selectMod {
   }
   object MenuOptions {
     
-    @scala.inline
-    def apply[OptionType /* <: OptionTypeBase */](focusable: js.Array[OptionType], render: js.Array[OptionType]): MenuOptions[OptionType] = {
+    inline def apply[OptionType /* <: OptionTypeBase */](focusable: js.Array[OptionType], render: js.Array[OptionType]): MenuOptions[OptionType] = {
       val __obj = js.Dynamic.literal(focusable = focusable.asInstanceOf[js.Any], render = render.asInstanceOf[js.Any])
       __obj.asInstanceOf[MenuOptions[OptionType]]
     }
     
-    @scala.inline
-    implicit class MenuOptionsMutableBuilder[Self <: MenuOptions[?], OptionType /* <: OptionTypeBase */] (val x: Self & MenuOptions[OptionType]) extends AnyVal {
+    extension [Self <: MenuOptions[?], OptionType /* <: OptionTypeBase */](x: Self & MenuOptions[OptionType]) {
       
-      @scala.inline
-      def setFocusable(value: js.Array[OptionType]): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
+      inline def setFocusable(value: js.Array[OptionType]): Self = StObject.set(x, "focusable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusableVarargs(value: OptionType*): Self = StObject.set(x, "focusable", js.Array(value :_*))
+      inline def setFocusableVarargs(value: OptionType*): Self = StObject.set(x, "focusable", js.Array(value :_*))
       
-      @scala.inline
-      def setRender(value: js.Array[OptionType]): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
+      inline def setRender(value: js.Array[OptionType]): Self = StObject.set(x, "render", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRenderVarargs(value: OptionType*): Self = StObject.set(x, "render", js.Array(value :_*))
+      inline def setRenderVarargs(value: OptionType*): Self = StObject.set(x, "render", js.Array(value :_*))
     }
   }
   
@@ -387,443 +370,298 @@ object selectMod {
   }
   object NamedProps {
     
-    @scala.inline
-    def apply[OptionType /* <: OptionTypeBase */](): NamedProps[OptionType] = {
+    inline def apply[OptionType /* <: OptionTypeBase */](): NamedProps[OptionType] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NamedProps[OptionType]]
     }
     
-    @scala.inline
-    implicit class NamedPropsMutableBuilder[Self <: NamedProps[?], OptionType /* <: OptionTypeBase */] (val x: Self & NamedProps[OptionType]) extends AnyVal {
+    extension [Self <: NamedProps[?], OptionType /* <: OptionTypeBase */](x: Self & NamedProps[OptionType]) {
       
-      @scala.inline
-      def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
+      inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
+      inline def `setAria-labelUndefined`: Self = StObject.set(x, "aria-label", js.undefined)
       
-      @scala.inline
-      def `setAria-labelledby`(value: String): Self = StObject.set(x, "aria-labelledby", value.asInstanceOf[js.Any])
+      inline def `setAria-labelledby`(value: String): Self = StObject.set(x, "aria-labelledby", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAria-labelledbyUndefined`: Self = StObject.set(x, "aria-labelledby", js.undefined)
+      inline def `setAria-labelledbyUndefined`: Self = StObject.set(x, "aria-labelledby", js.undefined)
       
-      @scala.inline
-      def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
-      @scala.inline
-      def setBackspaceRemovesValue(value: Boolean): Self = StObject.set(x, "backspaceRemovesValue", value.asInstanceOf[js.Any])
+      inline def setBackspaceRemovesValue(value: Boolean): Self = StObject.set(x, "backspaceRemovesValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackspaceRemovesValueUndefined: Self = StObject.set(x, "backspaceRemovesValue", js.undefined)
+      inline def setBackspaceRemovesValueUndefined: Self = StObject.set(x, "backspaceRemovesValue", js.undefined)
       
-      @scala.inline
-      def setBlurInputOnSelect(value: Boolean): Self = StObject.set(x, "blurInputOnSelect", value.asInstanceOf[js.Any])
+      inline def setBlurInputOnSelect(value: Boolean): Self = StObject.set(x, "blurInputOnSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlurInputOnSelectUndefined: Self = StObject.set(x, "blurInputOnSelect", js.undefined)
+      inline def setBlurInputOnSelectUndefined: Self = StObject.set(x, "blurInputOnSelect", js.undefined)
       
-      @scala.inline
-      def setCaptureMenuScroll(value: Boolean): Self = StObject.set(x, "captureMenuScroll", value.asInstanceOf[js.Any])
+      inline def setCaptureMenuScroll(value: Boolean): Self = StObject.set(x, "captureMenuScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaptureMenuScrollUndefined: Self = StObject.set(x, "captureMenuScroll", js.undefined)
+      inline def setCaptureMenuScrollUndefined: Self = StObject.set(x, "captureMenuScroll", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNamePrefix(value: String): Self = StObject.set(x, "classNamePrefix", value.asInstanceOf[js.Any])
+      inline def setClassNamePrefix(value: String): Self = StObject.set(x, "classNamePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNamePrefixNull: Self = StObject.set(x, "classNamePrefix", null)
+      inline def setClassNamePrefixNull: Self = StObject.set(x, "classNamePrefix", null)
       
-      @scala.inline
-      def setClassNamePrefixUndefined: Self = StObject.set(x, "classNamePrefix", js.undefined)
+      inline def setClassNamePrefixUndefined: Self = StObject.set(x, "classNamePrefix", js.undefined)
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setCloseMenuOnScroll(value: Boolean | EventListener): Self = StObject.set(x, "closeMenuOnScroll", value.asInstanceOf[js.Any])
+      inline def setCloseMenuOnScroll(value: Boolean | EventListener): Self = StObject.set(x, "closeMenuOnScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseMenuOnScrollFunction1(value: /* evt */ Event => Unit): Self = StObject.set(x, "closeMenuOnScroll", js.Any.fromFunction1(value))
+      inline def setCloseMenuOnScrollFunction1(value: /* evt */ Event => Unit): Self = StObject.set(x, "closeMenuOnScroll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCloseMenuOnScrollUndefined: Self = StObject.set(x, "closeMenuOnScroll", js.undefined)
+      inline def setCloseMenuOnScrollUndefined: Self = StObject.set(x, "closeMenuOnScroll", js.undefined)
       
-      @scala.inline
-      def setCloseMenuOnSelect(value: Boolean): Self = StObject.set(x, "closeMenuOnSelect", value.asInstanceOf[js.Any])
+      inline def setCloseMenuOnSelect(value: Boolean): Self = StObject.set(x, "closeMenuOnSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseMenuOnSelectUndefined: Self = StObject.set(x, "closeMenuOnSelect", js.undefined)
+      inline def setCloseMenuOnSelectUndefined: Self = StObject.set(x, "closeMenuOnSelect", js.undefined)
       
-      @scala.inline
-      def setComponents(value: SelectComponentsConfig[OptionType]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+      inline def setComponents(value: SelectComponentsConfig[OptionType]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
+      inline def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
       
-      @scala.inline
-      def setControlShouldRenderValue(value: Boolean): Self = StObject.set(x, "controlShouldRenderValue", value.asInstanceOf[js.Any])
+      inline def setControlShouldRenderValue(value: Boolean): Self = StObject.set(x, "controlShouldRenderValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setControlShouldRenderValueUndefined: Self = StObject.set(x, "controlShouldRenderValue", js.undefined)
+      inline def setControlShouldRenderValueUndefined: Self = StObject.set(x, "controlShouldRenderValue", js.undefined)
       
-      @scala.inline
-      def setDefaultInputValue(value: String): Self = StObject.set(x, "defaultInputValue", value.asInstanceOf[js.Any])
+      inline def setDefaultInputValue(value: String): Self = StObject.set(x, "defaultInputValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultInputValueUndefined: Self = StObject.set(x, "defaultInputValue", js.undefined)
+      inline def setDefaultInputValueUndefined: Self = StObject.set(x, "defaultInputValue", js.undefined)
       
-      @scala.inline
-      def setDefaultMenuIsOpen(value: Boolean): Self = StObject.set(x, "defaultMenuIsOpen", value.asInstanceOf[js.Any])
+      inline def setDefaultMenuIsOpen(value: Boolean): Self = StObject.set(x, "defaultMenuIsOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultMenuIsOpenUndefined: Self = StObject.set(x, "defaultMenuIsOpen", js.undefined)
+      inline def setDefaultMenuIsOpenUndefined: Self = StObject.set(x, "defaultMenuIsOpen", js.undefined)
       
-      @scala.inline
-      def setDefaultValue(value: ValueType[OptionType]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: ValueType[OptionType]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueNull: Self = StObject.set(x, "defaultValue", null)
+      inline def setDefaultValueNull: Self = StObject.set(x, "defaultValue", null)
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setDefaultValueVarargs(value: OptionType*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
+      inline def setDefaultValueVarargs(value: OptionType*): Self = StObject.set(x, "defaultValue", js.Array(value :_*))
       
-      @scala.inline
-      def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
+      inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
+      inline def setDelimiterUndefined: Self = StObject.set(x, "delimiter", js.undefined)
       
-      @scala.inline
-      def setEscapeClearsValue(value: Boolean): Self = StObject.set(x, "escapeClearsValue", value.asInstanceOf[js.Any])
+      inline def setEscapeClearsValue(value: Boolean): Self = StObject.set(x, "escapeClearsValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscapeClearsValueUndefined: Self = StObject.set(x, "escapeClearsValue", js.undefined)
+      inline def setEscapeClearsValueUndefined: Self = StObject.set(x, "escapeClearsValue", js.undefined)
       
-      @scala.inline
-      def setFilterOption(value: (/* option */ Option, /* rawInput */ String) => Boolean): Self = StObject.set(x, "filterOption", js.Any.fromFunction2(value))
+      inline def setFilterOption(value: (/* option */ Option, /* rawInput */ String) => Boolean): Self = StObject.set(x, "filterOption", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFilterOptionNull: Self = StObject.set(x, "filterOption", null)
+      inline def setFilterOptionNull: Self = StObject.set(x, "filterOption", null)
       
-      @scala.inline
-      def setFilterOptionUndefined: Self = StObject.set(x, "filterOption", js.undefined)
+      inline def setFilterOptionUndefined: Self = StObject.set(x, "filterOption", js.undefined)
       
-      @scala.inline
-      def setFormatGroupLabel(value: /* group */ GroupType[OptionType] => ReactNode): Self = StObject.set(x, "formatGroupLabel", js.Any.fromFunction1(value))
+      inline def setFormatGroupLabel(value: /* group */ GroupType[OptionType] => ReactNode): Self = StObject.set(x, "formatGroupLabel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFormatGroupLabelUndefined: Self = StObject.set(x, "formatGroupLabel", js.undefined)
+      inline def setFormatGroupLabelUndefined: Self = StObject.set(x, "formatGroupLabel", js.undefined)
       
-      @scala.inline
-      def setFormatOptionLabel(value: (/* option */ OptionType, /* labelMeta */ FormatOptionLabelMeta[OptionType]) => ReactNode): Self = StObject.set(x, "formatOptionLabel", js.Any.fromFunction2(value))
+      inline def setFormatOptionLabel(value: (/* option */ OptionType, /* labelMeta */ FormatOptionLabelMeta[OptionType]) => ReactNode): Self = StObject.set(x, "formatOptionLabel", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFormatOptionLabelUndefined: Self = StObject.set(x, "formatOptionLabel", js.undefined)
+      inline def setFormatOptionLabelUndefined: Self = StObject.set(x, "formatOptionLabel", js.undefined)
       
-      @scala.inline
-      def setGetOptionLabel(value: OptionType => String): Self = StObject.set(x, "getOptionLabel", js.Any.fromFunction1(value))
+      inline def setGetOptionLabel(value: OptionType => String): Self = StObject.set(x, "getOptionLabel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetOptionLabelUndefined: Self = StObject.set(x, "getOptionLabel", js.undefined)
+      inline def setGetOptionLabelUndefined: Self = StObject.set(x, "getOptionLabel", js.undefined)
       
-      @scala.inline
-      def setGetOptionValue(value: OptionType => String): Self = StObject.set(x, "getOptionValue", js.Any.fromFunction1(value))
+      inline def setGetOptionValue(value: OptionType => String): Self = StObject.set(x, "getOptionValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetOptionValueUndefined: Self = StObject.set(x, "getOptionValue", js.undefined)
+      inline def setGetOptionValueUndefined: Self = StObject.set(x, "getOptionValue", js.undefined)
       
-      @scala.inline
-      def setHideSelectedOptions(value: Boolean): Self = StObject.set(x, "hideSelectedOptions", value.asInstanceOf[js.Any])
+      inline def setHideSelectedOptions(value: Boolean): Self = StObject.set(x, "hideSelectedOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideSelectedOptionsUndefined: Self = StObject.set(x, "hideSelectedOptions", js.undefined)
+      inline def setHideSelectedOptionsUndefined: Self = StObject.set(x, "hideSelectedOptions", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setInputId(value: String): Self = StObject.set(x, "inputId", value.asInstanceOf[js.Any])
+      inline def setInputId(value: String): Self = StObject.set(x, "inputId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputIdUndefined: Self = StObject.set(x, "inputId", js.undefined)
+      inline def setInputIdUndefined: Self = StObject.set(x, "inputId", js.undefined)
       
-      @scala.inline
-      def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
+      inline def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputValueUndefined: Self = StObject.set(x, "inputValue", js.undefined)
+      inline def setInputValueUndefined: Self = StObject.set(x, "inputValue", js.undefined)
       
-      @scala.inline
-      def setInstanceId(value: Double | String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+      inline def setInstanceId(value: Double | String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
+      inline def setInstanceIdUndefined: Self = StObject.set(x, "instanceId", js.undefined)
       
-      @scala.inline
-      def setIsClearable(value: Boolean): Self = StObject.set(x, "isClearable", value.asInstanceOf[js.Any])
+      inline def setIsClearable(value: Boolean): Self = StObject.set(x, "isClearable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsClearableUndefined: Self = StObject.set(x, "isClearable", js.undefined)
+      inline def setIsClearableUndefined: Self = StObject.set(x, "isClearable", js.undefined)
       
-      @scala.inline
-      def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
+      inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsDisabledUndefined: Self = StObject.set(x, "isDisabled", js.undefined)
+      inline def setIsDisabledUndefined: Self = StObject.set(x, "isDisabled", js.undefined)
       
-      @scala.inline
-      def setIsLoading(value: Boolean): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
+      inline def setIsLoading(value: Boolean): Self = StObject.set(x, "isLoading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsLoadingUndefined: Self = StObject.set(x, "isLoading", js.undefined)
+      inline def setIsLoadingUndefined: Self = StObject.set(x, "isLoading", js.undefined)
       
-      @scala.inline
-      def setIsMulti(value: Boolean): Self = StObject.set(x, "isMulti", value.asInstanceOf[js.Any])
+      inline def setIsMulti(value: Boolean): Self = StObject.set(x, "isMulti", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsMultiUndefined: Self = StObject.set(x, "isMulti", js.undefined)
+      inline def setIsMultiUndefined: Self = StObject.set(x, "isMulti", js.undefined)
       
-      @scala.inline
-      def setIsOptionDisabled(value: (/* option */ OptionType, /* options */ OptionsType[OptionType]) => Boolean): Self = StObject.set(x, "isOptionDisabled", js.Any.fromFunction2(value))
+      inline def setIsOptionDisabled(value: (/* option */ OptionType, /* options */ OptionsType[OptionType]) => Boolean): Self = StObject.set(x, "isOptionDisabled", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIsOptionDisabledUndefined: Self = StObject.set(x, "isOptionDisabled", js.undefined)
+      inline def setIsOptionDisabledUndefined: Self = StObject.set(x, "isOptionDisabled", js.undefined)
       
-      @scala.inline
-      def setIsOptionSelected(value: (/* option */ OptionType, /* options */ OptionsType[OptionType]) => Boolean): Self = StObject.set(x, "isOptionSelected", js.Any.fromFunction2(value))
+      inline def setIsOptionSelected(value: (/* option */ OptionType, /* options */ OptionsType[OptionType]) => Boolean): Self = StObject.set(x, "isOptionSelected", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIsOptionSelectedUndefined: Self = StObject.set(x, "isOptionSelected", js.undefined)
+      inline def setIsOptionSelectedUndefined: Self = StObject.set(x, "isOptionSelected", js.undefined)
       
-      @scala.inline
-      def setIsRtl(value: Boolean): Self = StObject.set(x, "isRtl", value.asInstanceOf[js.Any])
+      inline def setIsRtl(value: Boolean): Self = StObject.set(x, "isRtl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsRtlUndefined: Self = StObject.set(x, "isRtl", js.undefined)
+      inline def setIsRtlUndefined: Self = StObject.set(x, "isRtl", js.undefined)
       
-      @scala.inline
-      def setIsSearchable(value: Boolean): Self = StObject.set(x, "isSearchable", value.asInstanceOf[js.Any])
+      inline def setIsSearchable(value: Boolean): Self = StObject.set(x, "isSearchable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsSearchableUndefined: Self = StObject.set(x, "isSearchable", js.undefined)
+      inline def setIsSearchableUndefined: Self = StObject.set(x, "isSearchable", js.undefined)
       
-      @scala.inline
-      def setLoadingMessage(value: /* obj */ InputValue => String | Null): Self = StObject.set(x, "loadingMessage", js.Any.fromFunction1(value))
+      inline def setLoadingMessage(value: /* obj */ InputValue => String | Null): Self = StObject.set(x, "loadingMessage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLoadingMessageUndefined: Self = StObject.set(x, "loadingMessage", js.undefined)
+      inline def setLoadingMessageUndefined: Self = StObject.set(x, "loadingMessage", js.undefined)
       
-      @scala.inline
-      def setMaxMenuHeight(value: Double): Self = StObject.set(x, "maxMenuHeight", value.asInstanceOf[js.Any])
+      inline def setMaxMenuHeight(value: Double): Self = StObject.set(x, "maxMenuHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxMenuHeightUndefined: Self = StObject.set(x, "maxMenuHeight", js.undefined)
+      inline def setMaxMenuHeightUndefined: Self = StObject.set(x, "maxMenuHeight", js.undefined)
       
-      @scala.inline
-      def setMenuIsOpen(value: Boolean): Self = StObject.set(x, "menuIsOpen", value.asInstanceOf[js.Any])
+      inline def setMenuIsOpen(value: Boolean): Self = StObject.set(x, "menuIsOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuIsOpenUndefined: Self = StObject.set(x, "menuIsOpen", js.undefined)
+      inline def setMenuIsOpenUndefined: Self = StObject.set(x, "menuIsOpen", js.undefined)
       
-      @scala.inline
-      def setMenuPlacement(value: MenuPlacement): Self = StObject.set(x, "menuPlacement", value.asInstanceOf[js.Any])
+      inline def setMenuPlacement(value: MenuPlacement): Self = StObject.set(x, "menuPlacement", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuPlacementUndefined: Self = StObject.set(x, "menuPlacement", js.undefined)
+      inline def setMenuPlacementUndefined: Self = StObject.set(x, "menuPlacement", js.undefined)
       
-      @scala.inline
-      def setMenuPortalTarget(value: HTMLElement): Self = StObject.set(x, "menuPortalTarget", value.asInstanceOf[js.Any])
+      inline def setMenuPortalTarget(value: HTMLElement): Self = StObject.set(x, "menuPortalTarget", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuPortalTargetNull: Self = StObject.set(x, "menuPortalTarget", null)
+      inline def setMenuPortalTargetNull: Self = StObject.set(x, "menuPortalTarget", null)
       
-      @scala.inline
-      def setMenuPortalTargetUndefined: Self = StObject.set(x, "menuPortalTarget", js.undefined)
+      inline def setMenuPortalTargetUndefined: Self = StObject.set(x, "menuPortalTarget", js.undefined)
       
-      @scala.inline
-      def setMenuPosition(value: MenuPosition): Self = StObject.set(x, "menuPosition", value.asInstanceOf[js.Any])
+      inline def setMenuPosition(value: MenuPosition): Self = StObject.set(x, "menuPosition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuPositionUndefined: Self = StObject.set(x, "menuPosition", js.undefined)
+      inline def setMenuPositionUndefined: Self = StObject.set(x, "menuPosition", js.undefined)
       
-      @scala.inline
-      def setMenuShouldBlockScroll(value: Boolean): Self = StObject.set(x, "menuShouldBlockScroll", value.asInstanceOf[js.Any])
+      inline def setMenuShouldBlockScroll(value: Boolean): Self = StObject.set(x, "menuShouldBlockScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuShouldBlockScrollUndefined: Self = StObject.set(x, "menuShouldBlockScroll", js.undefined)
+      inline def setMenuShouldBlockScrollUndefined: Self = StObject.set(x, "menuShouldBlockScroll", js.undefined)
       
-      @scala.inline
-      def setMenuShouldScrollIntoView(value: Boolean): Self = StObject.set(x, "menuShouldScrollIntoView", value.asInstanceOf[js.Any])
+      inline def setMenuShouldScrollIntoView(value: Boolean): Self = StObject.set(x, "menuShouldScrollIntoView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuShouldScrollIntoViewUndefined: Self = StObject.set(x, "menuShouldScrollIntoView", js.undefined)
+      inline def setMenuShouldScrollIntoViewUndefined: Self = StObject.set(x, "menuShouldScrollIntoView", js.undefined)
       
-      @scala.inline
-      def setMinMenuHeight(value: Double): Self = StObject.set(x, "minMenuHeight", value.asInstanceOf[js.Any])
+      inline def setMinMenuHeight(value: Double): Self = StObject.set(x, "minMenuHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinMenuHeightUndefined: Self = StObject.set(x, "minMenuHeight", js.undefined)
+      inline def setMinMenuHeightUndefined: Self = StObject.set(x, "minMenuHeight", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setNoOptionsMessage(value: /* obj */ InputValue => String | Null): Self = StObject.set(x, "noOptionsMessage", js.Any.fromFunction1(value))
+      inline def setNoOptionsMessage(value: /* obj */ InputValue => String | Null): Self = StObject.set(x, "noOptionsMessage", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNoOptionsMessageUndefined: Self = StObject.set(x, "noOptionsMessage", js.undefined)
+      inline def setNoOptionsMessageUndefined: Self = StObject.set(x, "noOptionsMessage", js.undefined)
       
-      @scala.inline
-      def setOnBlur(value: /* event */ FocusEvent[HTMLElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: /* event */ FocusEvent[HTMLElement] => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+      inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: (/* value */ ValueType[OptionType], /* action */ ActionMeta[OptionType]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      inline def setOnChange(value: (/* value */ ValueType[OptionType], /* action */ ActionMeta[OptionType]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOnFocus(value: /* event */ FocusEvent[HTMLElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: /* event */ FocusEvent[HTMLElement] => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+      inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      @scala.inline
-      def setOnInputChange(value: (/* newValue */ String, /* actionMeta */ InputActionMeta) => Unit): Self = StObject.set(x, "onInputChange", js.Any.fromFunction2(value))
+      inline def setOnInputChange(value: (/* newValue */ String, /* actionMeta */ InputActionMeta) => Unit): Self = StObject.set(x, "onInputChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnInputChangeUndefined: Self = StObject.set(x, "onInputChange", js.undefined)
+      inline def setOnInputChangeUndefined: Self = StObject.set(x, "onInputChange", js.undefined)
       
-      @scala.inline
-      def setOnKeyDown(value: /* event */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      inline def setOnKeyDown(value: /* event */ KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
+      inline def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
-      @scala.inline
-      def setOnMenuClose(value: () => Unit): Self = StObject.set(x, "onMenuClose", js.Any.fromFunction0(value))
+      inline def setOnMenuClose(value: () => Unit): Self = StObject.set(x, "onMenuClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnMenuCloseUndefined: Self = StObject.set(x, "onMenuClose", js.undefined)
+      inline def setOnMenuCloseUndefined: Self = StObject.set(x, "onMenuClose", js.undefined)
       
-      @scala.inline
-      def setOnMenuOpen(value: () => Unit): Self = StObject.set(x, "onMenuOpen", js.Any.fromFunction0(value))
+      inline def setOnMenuOpen(value: () => Unit): Self = StObject.set(x, "onMenuOpen", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnMenuOpenUndefined: Self = StObject.set(x, "onMenuOpen", js.undefined)
+      inline def setOnMenuOpenUndefined: Self = StObject.set(x, "onMenuOpen", js.undefined)
       
-      @scala.inline
-      def setOnMenuScrollToBottom(value: /* event */ SyntheticEvent[HTMLElement, Event] => Unit): Self = StObject.set(x, "onMenuScrollToBottom", js.Any.fromFunction1(value))
+      inline def setOnMenuScrollToBottom(value: /* event */ SyntheticEvent[HTMLElement, Event] => Unit): Self = StObject.set(x, "onMenuScrollToBottom", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMenuScrollToBottomUndefined: Self = StObject.set(x, "onMenuScrollToBottom", js.undefined)
+      inline def setOnMenuScrollToBottomUndefined: Self = StObject.set(x, "onMenuScrollToBottom", js.undefined)
       
-      @scala.inline
-      def setOnMenuScrollToTop(value: /* event */ SyntheticEvent[HTMLElement, Event] => Unit): Self = StObject.set(x, "onMenuScrollToTop", js.Any.fromFunction1(value))
+      inline def setOnMenuScrollToTop(value: /* event */ SyntheticEvent[HTMLElement, Event] => Unit): Self = StObject.set(x, "onMenuScrollToTop", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnMenuScrollToTopUndefined: Self = StObject.set(x, "onMenuScrollToTop", js.undefined)
+      inline def setOnMenuScrollToTopUndefined: Self = StObject.set(x, "onMenuScrollToTop", js.undefined)
       
-      @scala.inline
-      def setOpenMenuOnClick(value: Boolean): Self = StObject.set(x, "openMenuOnClick", value.asInstanceOf[js.Any])
+      inline def setOpenMenuOnClick(value: Boolean): Self = StObject.set(x, "openMenuOnClick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenMenuOnClickUndefined: Self = StObject.set(x, "openMenuOnClick", js.undefined)
+      inline def setOpenMenuOnClickUndefined: Self = StObject.set(x, "openMenuOnClick", js.undefined)
       
-      @scala.inline
-      def setOpenMenuOnFocus(value: Boolean): Self = StObject.set(x, "openMenuOnFocus", value.asInstanceOf[js.Any])
+      inline def setOpenMenuOnFocus(value: Boolean): Self = StObject.set(x, "openMenuOnFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenMenuOnFocusUndefined: Self = StObject.set(x, "openMenuOnFocus", js.undefined)
+      inline def setOpenMenuOnFocusUndefined: Self = StObject.set(x, "openMenuOnFocus", js.undefined)
       
-      @scala.inline
-      def setOptions(value: GroupedOptionsType[OptionType] | OptionsType[OptionType]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: GroupedOptionsType[OptionType] | OptionsType[OptionType]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setOptionsVarargs(value: (GroupType[OptionType] | OptionType)*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: (GroupType[OptionType] | OptionType)*): Self = StObject.set(x, "options", js.Array(value :_*))
       
-      @scala.inline
-      def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
+      inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
+      inline def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
       
-      @scala.inline
-      def setPlaceholder(value: ReactNode): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      inline def setPlaceholder(value: ReactNode): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+      inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
-      @scala.inline
-      def setScreenReaderStatus(value: /* obj */ Count => String): Self = StObject.set(x, "screenReaderStatus", js.Any.fromFunction1(value))
+      inline def setScreenReaderStatus(value: /* obj */ Count => String): Self = StObject.set(x, "screenReaderStatus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setScreenReaderStatusUndefined: Self = StObject.set(x, "screenReaderStatus", js.undefined)
+      inline def setScreenReaderStatusUndefined: Self = StObject.set(x, "screenReaderStatus", js.undefined)
       
-      @scala.inline
-      def setStyles(value: StylesConfig): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: StylesConfig): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setTabIndex(value: String): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+      inline def setTabIndex(value: String): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIndexNull: Self = StObject.set(x, "tabIndex", null)
+      inline def setTabIndexNull: Self = StObject.set(x, "tabIndex", null)
       
-      @scala.inline
-      def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+      inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
       
-      @scala.inline
-      def setTabSelectsValue(value: Boolean): Self = StObject.set(x, "tabSelectsValue", value.asInstanceOf[js.Any])
+      inline def setTabSelectsValue(value: Boolean): Self = StObject.set(x, "tabSelectsValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabSelectsValueUndefined: Self = StObject.set(x, "tabSelectsValue", js.undefined)
+      inline def setTabSelectsValueUndefined: Self = StObject.set(x, "tabSelectsValue", js.undefined)
       
-      @scala.inline
-      def setTheme(value: ThemeConfig): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: ThemeConfig): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeFunction1(value: /* theme */ Theme => Theme): Self = StObject.set(x, "theme", js.Any.fromFunction1(value))
+      inline def setThemeFunction1(value: /* theme */ Theme => Theme): Self = StObject.set(x, "theme", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
       
-      @scala.inline
-      def setValue(value: ValueType[OptionType]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: ValueType[OptionType]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueNull: Self = StObject.set(x, "value", null)
+      inline def setValueNull: Self = StObject.set(x, "value", null)
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
-      @scala.inline
-      def setValueVarargs(value: OptionType*): Self = StObject.set(x, "value", js.Array(value :_*))
+      inline def setValueVarargs(value: OptionType*): Self = StObject.set(x, "value", js.Array(value :_*))
     }
   }
   
@@ -833,8 +671,7 @@ object selectMod {
        with NamedProps[OptionType]
   object Props {
     
-    @scala.inline
-    def apply[OptionType /* <: OptionTypeBase */](): Props[OptionType] = {
+    inline def apply[OptionType /* <: OptionTypeBase */](): Props[OptionType] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Props[OptionType]]
     }
@@ -1106,8 +943,7 @@ object selectMod {
   }
   object State {
     
-    @scala.inline
-    def apply[OptionType /* <: OptionTypeBase */](
+    inline def apply[OptionType /* <: OptionTypeBase */](
       ariaLiveContext: String,
       ariaLiveSelection: String,
       inputIsHidden: Boolean,
@@ -1120,44 +956,31 @@ object selectMod {
       __obj.asInstanceOf[State[OptionType]]
     }
     
-    @scala.inline
-    implicit class StateMutableBuilder[Self <: State[?], OptionType /* <: OptionTypeBase */] (val x: Self & State[OptionType]) extends AnyVal {
+    extension [Self <: State[?], OptionType /* <: OptionTypeBase */](x: Self & State[OptionType]) {
       
-      @scala.inline
-      def setAriaLiveContext(value: String): Self = StObject.set(x, "ariaLiveContext", value.asInstanceOf[js.Any])
+      inline def setAriaLiveContext(value: String): Self = StObject.set(x, "ariaLiveContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLiveSelection(value: String): Self = StObject.set(x, "ariaLiveSelection", value.asInstanceOf[js.Any])
+      inline def setAriaLiveSelection(value: String): Self = StObject.set(x, "ariaLiveSelection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusedOption(value: OptionType): Self = StObject.set(x, "focusedOption", value.asInstanceOf[js.Any])
+      inline def setFocusedOption(value: OptionType): Self = StObject.set(x, "focusedOption", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusedOptionNull: Self = StObject.set(x, "focusedOption", null)
+      inline def setFocusedOptionNull: Self = StObject.set(x, "focusedOption", null)
       
-      @scala.inline
-      def setFocusedValue(value: OptionType): Self = StObject.set(x, "focusedValue", value.asInstanceOf[js.Any])
+      inline def setFocusedValue(value: OptionType): Self = StObject.set(x, "focusedValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusedValueNull: Self = StObject.set(x, "focusedValue", null)
+      inline def setFocusedValueNull: Self = StObject.set(x, "focusedValue", null)
       
-      @scala.inline
-      def setInputIsHidden(value: Boolean): Self = StObject.set(x, "inputIsHidden", value.asInstanceOf[js.Any])
+      inline def setInputIsHidden(value: Boolean): Self = StObject.set(x, "inputIsHidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsComposing(value: Boolean): Self = StObject.set(x, "isComposing", value.asInstanceOf[js.Any])
+      inline def setIsComposing(value: Boolean): Self = StObject.set(x, "isComposing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
+      inline def setIsFocused(value: Boolean): Self = StObject.set(x, "isFocused", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMenuOptions(value: MenuOptions[OptionType]): Self = StObject.set(x, "menuOptions", value.asInstanceOf[js.Any])
+      inline def setMenuOptions(value: MenuOptions[OptionType]): Self = StObject.set(x, "menuOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectValue(value: OptionsType[OptionType]): Self = StObject.set(x, "selectValue", value.asInstanceOf[js.Any])
+      inline def setSelectValue(value: OptionsType[OptionType]): Self = StObject.set(x, "selectValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectValueVarargs(value: OptionType*): Self = StObject.set(x, "selectValue", js.Array(value :_*))
+      inline def setSelectValueVarargs(value: OptionType*): Self = StObject.set(x, "selectValue", js.Array(value :_*))
     }
   }
 }

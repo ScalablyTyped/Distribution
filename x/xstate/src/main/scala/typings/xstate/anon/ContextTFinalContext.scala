@@ -12,19 +12,15 @@ trait ContextTFinalContext[TFinalContext] extends StObject {
 }
 object ContextTFinalContext {
   
-  @scala.inline
-  def apply[TFinalContext](context: TFinalContext, value: js.Any): ContextTFinalContext[TFinalContext] = {
+  inline def apply[TFinalContext](context: TFinalContext, value: js.Any): ContextTFinalContext[TFinalContext] = {
     val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextTFinalContext[TFinalContext]]
   }
   
-  @scala.inline
-  implicit class ContextTFinalContextMutableBuilder[Self <: ContextTFinalContext[?], TFinalContext] (val x: Self & ContextTFinalContext[TFinalContext]) extends AnyVal {
+  extension [Self <: ContextTFinalContext[?], TFinalContext](x: Self & ContextTFinalContext[TFinalContext]) {
     
-    @scala.inline
-    def setContext(value: TFinalContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: TFinalContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

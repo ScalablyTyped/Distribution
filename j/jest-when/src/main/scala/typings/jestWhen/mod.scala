@@ -10,11 +10,9 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def resetAllWhenMocks(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetAllWhenMocks")().asInstanceOf[Unit]
+  inline def resetAllWhenMocks(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetAllWhenMocks")().asInstanceOf[Unit]
   
-  @scala.inline
-  def verifyAllWhenMocksCalled(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyAllWhenMocksCalled")().asInstanceOf[Unit]
+  inline def verifyAllWhenMocksCalled(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyAllWhenMocksCalled")().asInstanceOf[Unit]
   
   @JSImport("jest-when", "when")
   @js.native

@@ -16,8 +16,7 @@ trait EffectStyle
 }
 object EffectStyle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     description: String,
     effects: js.Array[Effect],
     id: String,
@@ -31,16 +30,12 @@ object EffectStyle {
     __obj.asInstanceOf[EffectStyle]
   }
   
-  @scala.inline
-  implicit class EffectStyleMutableBuilder[Self <: EffectStyle] (val x: Self) extends AnyVal {
+  extension [Self <: EffectStyle](x: Self) {
     
-    @scala.inline
-    def setEffects(value: js.Array[Effect]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
+    inline def setEffects(value: js.Array[Effect]): Self = StObject.set(x, "effects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEffectsVarargs(value: Effect*): Self = StObject.set(x, "effects", js.Array(value :_*))
+    inline def setEffectsVarargs(value: Effect*): Self = StObject.set(x, "effects", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: EFFECT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: EFFECT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

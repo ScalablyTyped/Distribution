@@ -46,46 +46,34 @@ object anon {
   }
   object Filter {
     
-    @scala.inline
-    def apply(): Filter = {
+    inline def apply(): Filter = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Filter]
     }
     
-    @scala.inline
-    implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
+    extension [Self <: Filter](x: Self) {
       
-      @scala.inline
-      def setFilter(value: (/* input */ js.Any, /* prop */ String | js.Symbol) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
+      inline def setFilter(value: (/* input */ js.Any, /* prop */ String | js.Symbol) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+      inline def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+      inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
       
-      @scala.inline
-      def setInlineCharacterLimit(value: Double): Self = StObject.set(x, "inlineCharacterLimit", value.asInstanceOf[js.Any])
+      inline def setInlineCharacterLimit(value: Double): Self = StObject.set(x, "inlineCharacterLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInlineCharacterLimitUndefined: Self = StObject.set(x, "inlineCharacterLimit", js.undefined)
+      inline def setInlineCharacterLimitUndefined: Self = StObject.set(x, "inlineCharacterLimit", js.undefined)
       
-      @scala.inline
-      def setSingleQuotes(value: Boolean): Self = StObject.set(x, "singleQuotes", value.asInstanceOf[js.Any])
+      inline def setSingleQuotes(value: Boolean): Self = StObject.set(x, "singleQuotes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSingleQuotesUndefined: Self = StObject.set(x, "singleQuotes", js.undefined)
+      inline def setSingleQuotesUndefined: Self = StObject.set(x, "singleQuotes", js.undefined)
       
-      @scala.inline
-      def setTransform(
+      inline def setTransform(
         value: (/* input */ js.Array[js.Any] | js.Object, /* prop */ Double | String | js.Symbol, /* originalResult */ String) => String
       ): Self = StObject.set(x, "transform", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }
   }
 }

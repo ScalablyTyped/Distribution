@@ -17,31 +17,23 @@ trait GetOobConfirmationCodeResponse extends StObject {
 }
 object GetOobConfirmationCodeResponse {
   
-  @scala.inline
-  def apply(): GetOobConfirmationCodeResponse = {
+  inline def apply(): GetOobConfirmationCodeResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetOobConfirmationCodeResponse]
   }
   
-  @scala.inline
-  implicit class GetOobConfirmationCodeResponseMutableBuilder[Self <: GetOobConfirmationCodeResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetOobConfirmationCodeResponse](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setOobCode(value: String): Self = StObject.set(x, "oobCode", value.asInstanceOf[js.Any])
+    inline def setOobCode(value: String): Self = StObject.set(x, "oobCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOobCodeUndefined: Self = StObject.set(x, "oobCode", js.undefined)
+    inline def setOobCodeUndefined: Self = StObject.set(x, "oobCode", js.undefined)
   }
 }

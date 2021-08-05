@@ -18,19 +18,15 @@ trait PutNotificationChannelRequest extends StObject {
 }
 object PutNotificationChannelRequest {
   
-  @scala.inline
-  def apply(SnsRoleName: ResourceArn, SnsTopicArn: ResourceArn): PutNotificationChannelRequest = {
+  inline def apply(SnsRoleName: ResourceArn, SnsTopicArn: ResourceArn): PutNotificationChannelRequest = {
     val __obj = js.Dynamic.literal(SnsRoleName = SnsRoleName.asInstanceOf[js.Any], SnsTopicArn = SnsTopicArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutNotificationChannelRequest]
   }
   
-  @scala.inline
-  implicit class PutNotificationChannelRequestMutableBuilder[Self <: PutNotificationChannelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutNotificationChannelRequest](x: Self) {
     
-    @scala.inline
-    def setSnsRoleName(value: ResourceArn): Self = StObject.set(x, "SnsRoleName", value.asInstanceOf[js.Any])
+    inline def setSnsRoleName(value: ResourceArn): Self = StObject.set(x, "SnsRoleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnsTopicArn(value: ResourceArn): Self = StObject.set(x, "SnsTopicArn", value.asInstanceOf[js.Any])
+    inline def setSnsTopicArn(value: ResourceArn): Self = StObject.set(x, "SnsTopicArn", value.asInstanceOf[js.Any])
   }
 }

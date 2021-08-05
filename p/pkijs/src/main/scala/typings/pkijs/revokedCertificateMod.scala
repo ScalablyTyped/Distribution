@@ -39,13 +39,10 @@ object revokedCertificateMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @scala.inline
-    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
-    @scala.inline
-    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    inline def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    inline def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   trait RevokedCertificate extends StObject {
@@ -64,8 +61,7 @@ object revokedCertificateMod {
   }
   object RevokedCertificate {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       crlEntryExtensions: typings.pkijs.extensionsMod.default,
       fromSchema: js.Any => Unit,
       revocationDate: typings.pkijs.timeMod.default,
@@ -77,26 +73,19 @@ object revokedCertificateMod {
       __obj.asInstanceOf[RevokedCertificate]
     }
     
-    @scala.inline
-    implicit class RevokedCertificateMutableBuilder[Self <: RevokedCertificate] (val x: Self) extends AnyVal {
+    extension [Self <: RevokedCertificate](x: Self) {
       
-      @scala.inline
-      def setCrlEntryExtensions(value: typings.pkijs.extensionsMod.default): Self = StObject.set(x, "crlEntryExtensions", value.asInstanceOf[js.Any])
+      inline def setCrlEntryExtensions(value: typings.pkijs.extensionsMod.default): Self = StObject.set(x, "crlEntryExtensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
+      inline def setFromSchema(value: js.Any => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRevocationDate(value: typings.pkijs.timeMod.default): Self = StObject.set(x, "revocationDate", value.asInstanceOf[js.Any])
+      inline def setRevocationDate(value: typings.pkijs.timeMod.default): Self = StObject.set(x, "revocationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+      inline def setToJSON(value: () => js.Any): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
+      inline def setToSchema(value: () => js.Any): Self = StObject.set(x, "toSchema", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setUserCertificate(value: Integer): Self = StObject.set(x, "userCertificate", value.asInstanceOf[js.Any])
+      inline def setUserCertificate(value: Integer): Self = StObject.set(x, "userCertificate", value.asInstanceOf[js.Any])
     }
   }
 }

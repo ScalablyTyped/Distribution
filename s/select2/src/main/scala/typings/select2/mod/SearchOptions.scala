@@ -10,16 +10,13 @@ trait SearchOptions extends StObject {
 }
 object SearchOptions {
   
-  @scala.inline
-  def apply(term: String): SearchOptions = {
+  inline def apply(term: String): SearchOptions = {
     val __obj = js.Dynamic.literal(term = term.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchOptions]
   }
   
-  @scala.inline
-  implicit class SearchOptionsMutableBuilder[Self <: SearchOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SearchOptions](x: Self) {
     
-    @scala.inline
-    def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
+    inline def setTerm(value: String): Self = StObject.set(x, "term", value.asInstanceOf[js.Any])
   }
 }

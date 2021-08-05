@@ -13,19 +13,15 @@ trait GetClassifierResponse extends StObject {
 }
 object GetClassifierResponse {
   
-  @scala.inline
-  def apply(): GetClassifierResponse = {
+  inline def apply(): GetClassifierResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetClassifierResponse]
   }
   
-  @scala.inline
-  implicit class GetClassifierResponseMutableBuilder[Self <: GetClassifierResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetClassifierResponse](x: Self) {
     
-    @scala.inline
-    def setClassifier(value: Classifier): Self = StObject.set(x, "Classifier", value.asInstanceOf[js.Any])
+    inline def setClassifier(value: Classifier): Self = StObject.set(x, "Classifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassifierUndefined: Self = StObject.set(x, "Classifier", js.undefined)
+    inline def setClassifierUndefined: Self = StObject.set(x, "Classifier", js.undefined)
   }
 }

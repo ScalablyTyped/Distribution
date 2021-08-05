@@ -14,8 +14,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(options: RoadsReqOptions): js.Promise[RoadsRequestResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RoadsRequestResponse]]
+  inline def default(options: RoadsReqOptions): js.Promise[RoadsRequestResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RoadsRequestResponse]]
   
   trait RoadsReqOptions extends StObject {
     
@@ -31,41 +30,30 @@ object mod {
   }
   object RoadsReqOptions {
     
-    @scala.inline
-    def apply(request: RequestOptions | typings.node.httpsMod.RequestOptions): RoadsReqOptions = {
+    inline def apply(request: RequestOptions | typings.node.httpsMod.RequestOptions): RoadsReqOptions = {
       val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
       __obj.asInstanceOf[RoadsReqOptions]
     }
     
-    @scala.inline
-    implicit class RoadsReqOptionsMutableBuilder[Self <: RoadsReqOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RoadsReqOptions](x: Self) {
       
-      @scala.inline
-      def setBasicAuth(value: Pw): Self = StObject.set(x, "basicAuth", value.asInstanceOf[js.Any])
+      inline def setBasicAuth(value: Pw): Self = StObject.set(x, "basicAuth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasicAuthUndefined: Self = StObject.set(x, "basicAuth", js.undefined)
+      inline def setBasicAuthUndefined: Self = StObject.set(x, "basicAuth", js.undefined)
       
-      @scala.inline
-      def setFollowRedirects(value: Boolean): Self = StObject.set(x, "followRedirects", value.asInstanceOf[js.Any])
+      inline def setFollowRedirects(value: Boolean): Self = StObject.set(x, "followRedirects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowRedirectsUndefined: Self = StObject.set(x, "followRedirects", js.undefined)
+      inline def setFollowRedirectsUndefined: Self = StObject.set(x, "followRedirects", js.undefined)
       
-      @scala.inline
-      def setRequest(value: RequestOptions | typings.node.httpsMod.RequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      inline def setRequest(value: RequestOptions | typings.node.httpsMod.RequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestBody(value: String): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+      inline def setRequestBody(value: String): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+      inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
       
-      @scala.inline
-      def setResponse(value: Encoding): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: Encoding): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+      inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
     }
   }
   
@@ -77,20 +65,16 @@ object mod {
   }
   object RoadsRequestResponse {
     
-    @scala.inline
-    def apply(body: String, response: IncomingMessage): RoadsRequestResponse = {
+    inline def apply(body: String, response: IncomingMessage): RoadsRequestResponse = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
       __obj.asInstanceOf[RoadsRequestResponse]
     }
     
-    @scala.inline
-    implicit class RoadsRequestResponseMutableBuilder[Self <: RoadsRequestResponse] (val x: Self) extends AnyVal {
+    extension [Self <: RoadsRequestResponse](x: Self) {
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponse(value: IncomingMessage): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: IncomingMessage): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
   }
 }

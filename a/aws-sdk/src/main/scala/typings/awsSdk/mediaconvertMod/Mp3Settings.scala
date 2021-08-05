@@ -33,43 +33,31 @@ trait Mp3Settings extends StObject {
 }
 object Mp3Settings {
   
-  @scala.inline
-  def apply(): Mp3Settings = {
+  inline def apply(): Mp3Settings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Mp3Settings]
   }
   
-  @scala.inline
-  implicit class Mp3SettingsMutableBuilder[Self <: Mp3Settings] (val x: Self) extends AnyVal {
+  extension [Self <: Mp3Settings](x: Self) {
     
-    @scala.inline
-    def setBitrate(value: integerMin16000Max320000): Self = StObject.set(x, "Bitrate", value.asInstanceOf[js.Any])
+    inline def setBitrate(value: integerMin16000Max320000): Self = StObject.set(x, "Bitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitrateUndefined: Self = StObject.set(x, "Bitrate", js.undefined)
+    inline def setBitrateUndefined: Self = StObject.set(x, "Bitrate", js.undefined)
     
-    @scala.inline
-    def setChannels(value: integerMin1Max2): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: integerMin1Max2): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelsUndefined: Self = StObject.set(x, "Channels", js.undefined)
+    inline def setChannelsUndefined: Self = StObject.set(x, "Channels", js.undefined)
     
-    @scala.inline
-    def setRateControlMode(value: Mp3RateControlMode): Self = StObject.set(x, "RateControlMode", value.asInstanceOf[js.Any])
+    inline def setRateControlMode(value: Mp3RateControlMode): Self = StObject.set(x, "RateControlMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRateControlModeUndefined: Self = StObject.set(x, "RateControlMode", js.undefined)
+    inline def setRateControlModeUndefined: Self = StObject.set(x, "RateControlMode", js.undefined)
     
-    @scala.inline
-    def setSampleRate(value: integerMin22050Max48000): Self = StObject.set(x, "SampleRate", value.asInstanceOf[js.Any])
+    inline def setSampleRate(value: integerMin22050Max48000): Self = StObject.set(x, "SampleRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleRateUndefined: Self = StObject.set(x, "SampleRate", js.undefined)
+    inline def setSampleRateUndefined: Self = StObject.set(x, "SampleRate", js.undefined)
     
-    @scala.inline
-    def setVbrQuality(value: integerMin0Max9): Self = StObject.set(x, "VbrQuality", value.asInstanceOf[js.Any])
+    inline def setVbrQuality(value: integerMin0Max9): Self = StObject.set(x, "VbrQuality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVbrQualityUndefined: Self = StObject.set(x, "VbrQuality", js.undefined)
+    inline def setVbrQualityUndefined: Self = StObject.set(x, "VbrQuality", js.undefined)
   }
 }

@@ -39,49 +39,35 @@ trait FirebaseProject extends StObject {
 }
 object FirebaseProject {
   
-  @scala.inline
-  def apply(): FirebaseProject = {
+  inline def apply(): FirebaseProject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FirebaseProject]
   }
   
-  @scala.inline
-  implicit class FirebaseProjectMutableBuilder[Self <: FirebaseProject] (val x: Self) extends AnyVal {
+  extension [Self <: FirebaseProject](x: Self) {
     
-    @scala.inline
-    def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
-    @scala.inline
-    def setProjectNumber(value: String): Self = StObject.set(x, "projectNumber", value.asInstanceOf[js.Any])
+    inline def setProjectNumber(value: String): Self = StObject.set(x, "projectNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectNumberUndefined: Self = StObject.set(x, "projectNumber", js.undefined)
+    inline def setProjectNumberUndefined: Self = StObject.set(x, "projectNumber", js.undefined)
     
-    @scala.inline
-    def setResources(value: DefaultResources): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: DefaultResources): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
+    inline def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
     
-    @scala.inline
-    def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

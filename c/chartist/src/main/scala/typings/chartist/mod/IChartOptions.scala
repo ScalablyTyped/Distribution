@@ -15,28 +15,21 @@ trait IChartOptions extends StObject {
 }
 object IChartOptions {
   
-  @scala.inline
-  def apply(): IChartOptions = {
+  inline def apply(): IChartOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IChartOptions]
   }
   
-  @scala.inline
-  implicit class IChartOptionsMutableBuilder[Self <: IChartOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IChartOptions](x: Self) {
     
-    @scala.inline
-    def setPlugins(value: js.Array[js.Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    inline def setPlugins(value: js.Array[js.Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+    inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
     
-    @scala.inline
-    def setPluginsVarargs(value: js.Any*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+    inline def setPluginsVarargs(value: js.Any*): Self = StObject.set(x, "plugins", js.Array(value :_*))
     
-    @scala.inline
-    def setReverseData(value: Boolean): Self = StObject.set(x, "reverseData", value.asInstanceOf[js.Any])
+    inline def setReverseData(value: Boolean): Self = StObject.set(x, "reverseData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReverseDataUndefined: Self = StObject.set(x, "reverseData", js.undefined)
+    inline def setReverseDataUndefined: Self = StObject.set(x, "reverseData", js.undefined)
   }
 }

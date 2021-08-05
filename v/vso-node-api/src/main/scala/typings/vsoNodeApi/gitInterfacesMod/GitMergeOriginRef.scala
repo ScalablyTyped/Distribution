@@ -10,16 +10,13 @@ trait GitMergeOriginRef extends StObject {
 }
 object GitMergeOriginRef {
   
-  @scala.inline
-  def apply(pullRequestId: Double): GitMergeOriginRef = {
+  inline def apply(pullRequestId: Double): GitMergeOriginRef = {
     val __obj = js.Dynamic.literal(pullRequestId = pullRequestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitMergeOriginRef]
   }
   
-  @scala.inline
-  implicit class GitMergeOriginRefMutableBuilder[Self <: GitMergeOriginRef] (val x: Self) extends AnyVal {
+  extension [Self <: GitMergeOriginRef](x: Self) {
     
-    @scala.inline
-    def setPullRequestId(value: Double): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
+    inline def setPullRequestId(value: Double): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
   }
 }

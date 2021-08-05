@@ -16,17 +16,14 @@ trait JSXEmptyExpression_
 }
 object JSXEmptyExpression_ {
   
-  @scala.inline
-  def apply(end: Double, loc: SourceLocation, start: Double): JSXEmptyExpression_ = {
+  inline def apply(end: Double, loc: SourceLocation, start: Double): JSXEmptyExpression_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("JSXEmptyExpression")
     __obj.asInstanceOf[JSXEmptyExpression_]
   }
   
-  @scala.inline
-  implicit class JSXEmptyExpression_MutableBuilder[Self <: JSXEmptyExpression_] (val x: Self) extends AnyVal {
+  extension [Self <: JSXEmptyExpression_](x: Self) {
     
-    @scala.inline
-    def setType(value: JSXEmptyExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: JSXEmptyExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

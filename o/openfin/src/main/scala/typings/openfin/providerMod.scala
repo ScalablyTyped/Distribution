@@ -16,13 +16,13 @@ object providerMod {
   class ChannelProvider protected () extends ChannelBase {
     def this(providerIdentity: ProviderIdentity, send: FnCall) = this()
     
-    var connectListener: js.Any = js.native
+    /* private */ var connectListener: js.Any = js.native
     
     var connections: js.Array[ClientIdentity] = js.native
     
     def destroy(): js.Promise[Unit] = js.native
     
-    var disconnectListener: js.Any = js.native
+    /* private */ var disconnectListener: js.Any = js.native
     
     def dispatch(to: Identity, action: String): js.Promise[js.Any] = js.native
     def dispatch(to: Identity, action: String, payload: js.Any): js.Promise[js.Any] = js.native

@@ -19,8 +19,7 @@ trait ReaderRefetchMetadataconn extends StObject {
 }
 object ReaderRefetchMetadataconn {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     connection: (js.UndefOr[ReaderPaginationMetadata | Null]) & ReaderPaginationMetadata,
     fragmentPathInResult: js.Array[String],
     operation: String | ConcreteRequest
@@ -29,28 +28,20 @@ object ReaderRefetchMetadataconn {
     __obj.asInstanceOf[ReaderRefetchMetadataconn]
   }
   
-  @scala.inline
-  implicit class ReaderRefetchMetadataconnMutableBuilder[Self <: ReaderRefetchMetadataconn] (val x: Self) extends AnyVal {
+  extension [Self <: ReaderRefetchMetadataconn](x: Self) {
     
-    @scala.inline
-    def setConnection(value: (js.UndefOr[ReaderPaginationMetadata | Null]) & ReaderPaginationMetadata): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: (js.UndefOr[ReaderPaginationMetadata | Null]) & ReaderPaginationMetadata): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFragmentPathInResult(value: js.Array[String]): Self = StObject.set(x, "fragmentPathInResult", value.asInstanceOf[js.Any])
+    inline def setFragmentPathInResult(value: js.Array[String]): Self = StObject.set(x, "fragmentPathInResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFragmentPathInResultVarargs(value: String*): Self = StObject.set(x, "fragmentPathInResult", js.Array(value :_*))
+    inline def setFragmentPathInResultVarargs(value: String*): Self = StObject.set(x, "fragmentPathInResult", js.Array(value :_*))
     
-    @scala.inline
-    def setIdentifierField(value: String): Self = StObject.set(x, "identifierField", value.asInstanceOf[js.Any])
+    inline def setIdentifierField(value: String): Self = StObject.set(x, "identifierField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentifierFieldNull: Self = StObject.set(x, "identifierField", null)
+    inline def setIdentifierFieldNull: Self = StObject.set(x, "identifierField", null)
     
-    @scala.inline
-    def setIdentifierFieldUndefined: Self = StObject.set(x, "identifierField", js.undefined)
+    inline def setIdentifierFieldUndefined: Self = StObject.set(x, "identifierField", js.undefined)
     
-    @scala.inline
-    def setOperation(value: String | ConcreteRequest): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
+    inline def setOperation(value: String | ConcreteRequest): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
   }
 }

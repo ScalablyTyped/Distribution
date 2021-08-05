@@ -27,8 +27,7 @@ object mod {
   	})();
   	```
   	*/
-  @scala.inline
-  def apply[ValueType](
+  inline def apply[ValueType](
     input: Iterable[js.Thenable[ValueType] | ValueType],
     iterator: js.Function2[/* element */ ValueType, /* index */ Double, StopSymbol | js.Any]
   ): js.Promise[js.Array[ValueType]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ValueType]]]
@@ -41,8 +40,7 @@ object mod {
   @JSImport("p-each-series", "default")
   @js.native
   def default: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pEachSeries */ js.Any = js.native
-  @scala.inline
-  def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pEachSeries */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pEachSeries */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
   /**
   	Stop iterating through items by returning `pEachSeries.stop` from the iterator function.

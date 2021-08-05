@@ -19,8 +19,7 @@ trait XItemEventBroadcaster
 }
 object XItemEventBroadcaster {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     addItemListener: XItemListener => Unit,
     queryInterface: `type` => js.Any,
@@ -31,13 +30,10 @@ object XItemEventBroadcaster {
     __obj.asInstanceOf[XItemEventBroadcaster]
   }
   
-  @scala.inline
-  implicit class XItemEventBroadcasterMutableBuilder[Self <: XItemEventBroadcaster] (val x: Self) extends AnyVal {
+  extension [Self <: XItemEventBroadcaster](x: Self) {
     
-    @scala.inline
-    def setAddItemListener(value: XItemListener => Unit): Self = StObject.set(x, "addItemListener", js.Any.fromFunction1(value))
+    inline def setAddItemListener(value: XItemListener => Unit): Self = StObject.set(x, "addItemListener", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveItemListener(value: XItemListener => Unit): Self = StObject.set(x, "removeItemListener", js.Any.fromFunction1(value))
+    inline def setRemoveItemListener(value: XItemListener => Unit): Self = StObject.set(x, "removeItemListener", js.Any.fromFunction1(value))
   }
 }

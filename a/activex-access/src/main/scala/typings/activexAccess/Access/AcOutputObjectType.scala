@@ -27,30 +27,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait AcOutputObjectType extends StObject
 object AcOutputObjectType {
   
-  @scala.inline
-  def acOutputDataAccessPage: `6` = 6.asInstanceOf[`6`]
+  inline def acOutputDataAccessPage: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def acOutputForm: `2` = 2.asInstanceOf[`2`]
+  inline def acOutputForm: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def acOutputFunction: `10` = 10.asInstanceOf[`10`]
+  inline def acOutputFunction: `10` = 10.asInstanceOf[`10`]
   
-  @scala.inline
-  def acOutputModule: `5` = 5.asInstanceOf[`5`]
+  inline def acOutputModule: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def acOutputQuery: `1` = 1.asInstanceOf[`1`]
+  inline def acOutputQuery: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def acOutputReport: `3` = 3.asInstanceOf[`3`]
+  inline def acOutputReport: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def acOutputServerView: `7` = 7.asInstanceOf[`7`]
+  inline def acOutputServerView: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def acOutputStoredProcedure: `9` = 9.asInstanceOf[`9`]
+  inline def acOutputStoredProcedure: `9` = 9.asInstanceOf[`9`]
   
-  @scala.inline
-  def acOutputTable: `0` = 0.asInstanceOf[`0`]
+  inline def acOutputTable: `0` = 0.asInstanceOf[`0`]
 }

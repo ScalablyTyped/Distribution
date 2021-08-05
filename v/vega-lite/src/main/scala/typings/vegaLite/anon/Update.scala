@@ -11,16 +11,13 @@ trait Update extends StObject {
 }
 object Update {
   
-  @scala.inline
-  def apply(update: StringDictionary[Signal]): Update = {
+  inline def apply(update: StringDictionary[Signal]): Update = {
     val __obj = js.Dynamic.literal(update = update.asInstanceOf[js.Any])
     __obj.asInstanceOf[Update]
   }
   
-  @scala.inline
-  implicit class UpdateMutableBuilder[Self <: Update] (val x: Self) extends AnyVal {
+  extension [Self <: Update](x: Self) {
     
-    @scala.inline
-    def setUpdate(value: StringDictionary[Signal]): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    inline def setUpdate(value: StringDictionary[Signal]): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
   }
 }

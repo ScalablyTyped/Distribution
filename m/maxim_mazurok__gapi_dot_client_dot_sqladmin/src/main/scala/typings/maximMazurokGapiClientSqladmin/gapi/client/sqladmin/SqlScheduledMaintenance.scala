@@ -16,31 +16,23 @@ trait SqlScheduledMaintenance extends StObject {
 }
 object SqlScheduledMaintenance {
   
-  @scala.inline
-  def apply(): SqlScheduledMaintenance = {
+  inline def apply(): SqlScheduledMaintenance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SqlScheduledMaintenance]
   }
   
-  @scala.inline
-  implicit class SqlScheduledMaintenanceMutableBuilder[Self <: SqlScheduledMaintenance] (val x: Self) extends AnyVal {
+  extension [Self <: SqlScheduledMaintenance](x: Self) {
     
-    @scala.inline
-    def setCanDefer(value: Boolean): Self = StObject.set(x, "canDefer", value.asInstanceOf[js.Any])
+    inline def setCanDefer(value: Boolean): Self = StObject.set(x, "canDefer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanDeferUndefined: Self = StObject.set(x, "canDefer", js.undefined)
+    inline def setCanDeferUndefined: Self = StObject.set(x, "canDefer", js.undefined)
     
-    @scala.inline
-    def setCanReschedule(value: Boolean): Self = StObject.set(x, "canReschedule", value.asInstanceOf[js.Any])
+    inline def setCanReschedule(value: Boolean): Self = StObject.set(x, "canReschedule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanRescheduleUndefined: Self = StObject.set(x, "canReschedule", js.undefined)
+    inline def setCanRescheduleUndefined: Self = StObject.set(x, "canReschedule", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: String): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
+    inline def setStartTimeUndefined: Self = StObject.set(x, "startTime", js.undefined)
   }
 }

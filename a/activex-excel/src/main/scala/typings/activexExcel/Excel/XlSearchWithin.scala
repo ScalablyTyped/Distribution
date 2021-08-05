@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlSearchWithin extends StObject
 object XlSearchWithin {
   
-  @scala.inline
-  def xlWithinSheet: `1` = 1.asInstanceOf[`1`]
+  inline def xlWithinSheet: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlWithinWorkbook: `2` = 2.asInstanceOf[`2`]
+  inline def xlWithinWorkbook: `2` = 2.asInstanceOf[`2`]
 }

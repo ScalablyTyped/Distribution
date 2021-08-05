@@ -14,6 +14,5 @@ object wordlistsMod {
   @js.native
   def default: js.UndefOr[js.Array[String]] = js.native
   
-  @scala.inline
-  def default_=(x: js.UndefOr[js.Array[String]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_default")(x.asInstanceOf[js.Any])
+  inline def default_=(x: js.UndefOr[js.Array[String]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_default")(x.asInstanceOf[js.Any])
 }

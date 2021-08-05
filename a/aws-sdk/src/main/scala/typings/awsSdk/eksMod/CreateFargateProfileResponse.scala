@@ -13,19 +13,15 @@ trait CreateFargateProfileResponse extends StObject {
 }
 object CreateFargateProfileResponse {
   
-  @scala.inline
-  def apply(): CreateFargateProfileResponse = {
+  inline def apply(): CreateFargateProfileResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateFargateProfileResponse]
   }
   
-  @scala.inline
-  implicit class CreateFargateProfileResponseMutableBuilder[Self <: CreateFargateProfileResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateFargateProfileResponse](x: Self) {
     
-    @scala.inline
-    def setFargateProfile(value: FargateProfile): Self = StObject.set(x, "fargateProfile", value.asInstanceOf[js.Any])
+    inline def setFargateProfile(value: FargateProfile): Self = StObject.set(x, "fargateProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFargateProfileUndefined: Self = StObject.set(x, "fargateProfile", js.undefined)
+    inline def setFargateProfileUndefined: Self = StObject.set(x, "fargateProfile", js.undefined)
   }
 }

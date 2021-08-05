@@ -15,22 +15,17 @@ trait DirectionsResponse extends StObject {
 }
 object DirectionsResponse {
   
-  @scala.inline
-  def apply(request: js.Any, routes: js.Array[Route]): DirectionsResponse = {
+  inline def apply(request: js.Any, routes: js.Array[Route]): DirectionsResponse = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any])
     __obj.asInstanceOf[DirectionsResponse]
   }
   
-  @scala.inline
-  implicit class DirectionsResponseMutableBuilder[Self <: DirectionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DirectionsResponse](x: Self) {
     
-    @scala.inline
-    def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutes(value: js.Array[Route]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+    inline def setRoutes(value: js.Array[Route]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoutesVarargs(value: Route*): Self = StObject.set(x, "routes", js.Array(value :_*))
+    inline def setRoutesVarargs(value: Route*): Self = StObject.set(x, "routes", js.Array(value :_*))
   }
 }

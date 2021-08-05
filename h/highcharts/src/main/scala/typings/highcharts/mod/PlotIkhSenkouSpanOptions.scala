@@ -21,25 +21,19 @@ trait PlotIkhSenkouSpanOptions extends StObject {
 }
 object PlotIkhSenkouSpanOptions {
   
-  @scala.inline
-  def apply(): PlotIkhSenkouSpanOptions = {
+  inline def apply(): PlotIkhSenkouSpanOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotIkhSenkouSpanOptions]
   }
   
-  @scala.inline
-  implicit class PlotIkhSenkouSpanOptionsMutableBuilder[Self <: PlotIkhSenkouSpanOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlotIkhSenkouSpanOptions](x: Self) {
     
-    @scala.inline
-    def setColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setNegativeColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "negativeColor", value.asInstanceOf[js.Any])
+    inline def setNegativeColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "negativeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegativeColorUndefined: Self = StObject.set(x, "negativeColor", js.undefined)
+    inline def setNegativeColorUndefined: Self = StObject.set(x, "negativeColor", js.undefined)
   }
 }

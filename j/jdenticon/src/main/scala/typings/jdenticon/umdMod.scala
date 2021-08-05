@@ -233,8 +233,7 @@ object umdMod extends Shortcut {
     }
     object JdenticonCompatibleCanvas {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         getContext: `2d` => JdenticonCompatibleCanvasRenderingContext2D | Null,
         height: Double,
         width: Double
@@ -243,17 +242,13 @@ object umdMod extends Shortcut {
         __obj.asInstanceOf[JdenticonCompatibleCanvas]
       }
       
-      @scala.inline
-      implicit class JdenticonCompatibleCanvasMutableBuilder[Self <: JdenticonCompatibleCanvas] (val x: Self) extends AnyVal {
+      extension [Self <: JdenticonCompatibleCanvas](x: Self) {
         
-        @scala.inline
-        def setGetContext(value: `2d` => JdenticonCompatibleCanvasRenderingContext2D | Null): Self = StObject.set(x, "getContext", js.Any.fromFunction1(value))
+        inline def setGetContext(value: `2d` => JdenticonCompatibleCanvasRenderingContext2D | Null): Self = StObject.set(x, "getContext", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+        inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+        inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       }
     }
     
@@ -356,53 +351,38 @@ object umdMod extends Shortcut {
     }
     object JdenticonConfig {
       
-      @scala.inline
-      def apply(): JdenticonConfig = {
+      inline def apply(): JdenticonConfig = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[JdenticonConfig]
       }
       
-      @scala.inline
-      implicit class JdenticonConfigMutableBuilder[Self <: JdenticonConfig] (val x: Self) extends AnyVal {
+      extension [Self <: JdenticonConfig](x: Self) {
         
-        @scala.inline
-        def setBackColor(value: String): Self = StObject.set(x, "backColor", value.asInstanceOf[js.Any])
+        inline def setBackColor(value: String): Self = StObject.set(x, "backColor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBackColorUndefined: Self = StObject.set(x, "backColor", js.undefined)
+        inline def setBackColorUndefined: Self = StObject.set(x, "backColor", js.undefined)
         
-        @scala.inline
-        def setHues(value: js.Array[Double]): Self = StObject.set(x, "hues", value.asInstanceOf[js.Any])
+        inline def setHues(value: js.Array[Double]): Self = StObject.set(x, "hues", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHuesUndefined: Self = StObject.set(x, "hues", js.undefined)
+        inline def setHuesUndefined: Self = StObject.set(x, "hues", js.undefined)
         
-        @scala.inline
-        def setHuesVarargs(value: Double*): Self = StObject.set(x, "hues", js.Array(value :_*))
+        inline def setHuesVarargs(value: Double*): Self = StObject.set(x, "hues", js.Array(value :_*))
         
-        @scala.inline
-        def setLightness(value: Color): Self = StObject.set(x, "lightness", value.asInstanceOf[js.Any])
+        inline def setLightness(value: Color): Self = StObject.set(x, "lightness", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLightnessUndefined: Self = StObject.set(x, "lightness", js.undefined)
+        inline def setLightnessUndefined: Self = StObject.set(x, "lightness", js.undefined)
         
-        @scala.inline
-        def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+        inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+        inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
         
-        @scala.inline
-        def setReplaceMode(value: never | once | observe): Self = StObject.set(x, "replaceMode", value.asInstanceOf[js.Any])
+        inline def setReplaceMode(value: never | once | observe): Self = StObject.set(x, "replaceMode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReplaceModeUndefined: Self = StObject.set(x, "replaceMode", js.undefined)
+        inline def setReplaceModeUndefined: Self = StObject.set(x, "replaceMode", js.undefined)
         
-        @scala.inline
-        def setSaturation(value: Grayscale | Double): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
+        inline def setSaturation(value: Grayscale | Double): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSaturationUndefined: Self = StObject.set(x, "saturation", js.undefined)
+        inline def setSaturationUndefined: Self = StObject.set(x, "saturation", js.undefined)
       }
     }
     
@@ -417,20 +397,16 @@ object umdMod extends Shortcut {
     }
     object Window {
       
-      @scala.inline
-      def apply(): Window = {
+      inline def apply(): Window = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Window]
       }
       
-      @scala.inline
-      implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+      extension [Self <: Window](x: Self) {
         
-        @scala.inline
-        def setJdenticon_config(value: JdenticonConfig): Self = StObject.set(x, "jdenticon_config", value.asInstanceOf[js.Any])
+        inline def setJdenticon_config(value: JdenticonConfig): Self = StObject.set(x, "jdenticon_config", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setJdenticon_configUndefined: Self = StObject.set(x, "jdenticon_config", js.undefined)
+        inline def setJdenticon_configUndefined: Self = StObject.set(x, "jdenticon_config", js.undefined)
       }
     }
   }

@@ -18,25 +18,19 @@ trait ListWorkGroupsInput extends StObject {
 }
 object ListWorkGroupsInput {
   
-  @scala.inline
-  def apply(): ListWorkGroupsInput = {
+  inline def apply(): ListWorkGroupsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListWorkGroupsInput]
   }
   
-  @scala.inline
-  implicit class ListWorkGroupsInputMutableBuilder[Self <: ListWorkGroupsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListWorkGroupsInput](x: Self) {
     
-    @scala.inline
-    def setMaxResults(value: MaxWorkGroupsCount): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxWorkGroupsCount): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

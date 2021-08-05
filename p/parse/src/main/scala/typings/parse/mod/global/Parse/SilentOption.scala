@@ -13,19 +13,15 @@ trait SilentOption extends StObject {
 }
 object SilentOption {
   
-  @scala.inline
-  def apply(): SilentOption = {
+  inline def apply(): SilentOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SilentOption]
   }
   
-  @scala.inline
-  implicit class SilentOptionMutableBuilder[Self <: SilentOption] (val x: Self) extends AnyVal {
+  extension [Self <: SilentOption](x: Self) {
     
-    @scala.inline
-    def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+    inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
+    inline def setSilentUndefined: Self = StObject.set(x, "silent", js.undefined)
   }
 }

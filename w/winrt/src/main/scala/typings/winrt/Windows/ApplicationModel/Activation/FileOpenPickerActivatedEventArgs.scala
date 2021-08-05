@@ -10,8 +10,7 @@ trait FileOpenPickerActivatedEventArgs
      with IFileOpenPickerActivatedEventArgs
 object FileOpenPickerActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     fileOpenPickerUI: FileOpenPickerUI,
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,

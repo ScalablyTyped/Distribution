@@ -16,18 +16,15 @@ object AppCatalog {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def getAppInstances(context: typings.sharepoint.SP.ClientRuntimeContext, web: typings.sharepoint.SP.Web): typings.sharepoint.SP.ClientObjectList[typings.sharepoint.SP.AppInstance] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAppInstances")(context.asInstanceOf[js.Any], web.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.ClientObjectList[typings.sharepoint.SP.AppInstance]]
+  inline def getAppInstances(context: typings.sharepoint.SP.ClientRuntimeContext, web: typings.sharepoint.SP.Web): typings.sharepoint.SP.ClientObjectList[typings.sharepoint.SP.AppInstance] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAppInstances")(context.asInstanceOf[js.Any], web.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.ClientObjectList[typings.sharepoint.SP.AppInstance]]
   
   /* static member */
-  @scala.inline
-  def getDeveloperSiteAppInstancesByIds(
+  inline def getDeveloperSiteAppInstancesByIds(
     context: typings.sharepoint.SP.ClientRuntimeContext,
     site: typings.sharepoint.SP.Site,
     appInstanceIds: js.Array[typings.sharepoint.SP.Guid]
   ): typings.sharepoint.SP.ClientObjectList[typings.sharepoint.SP.AppInstance] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeveloperSiteAppInstancesByIds")(context.asInstanceOf[js.Any], site.asInstanceOf[js.Any], appInstanceIds.asInstanceOf[js.Any])).asInstanceOf[typings.sharepoint.SP.ClientObjectList[typings.sharepoint.SP.AppInstance]]
   
   /* static member */
-  @scala.inline
-  def isAppSideloadingEnabled(context: typings.sharepoint.SP.ClientRuntimeContext): typings.sharepoint.SP.BooleanResult = ^.asInstanceOf[js.Dynamic].applyDynamic("isAppSideloadingEnabled")(context.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.BooleanResult]
+  inline def isAppSideloadingEnabled(context: typings.sharepoint.SP.ClientRuntimeContext): typings.sharepoint.SP.BooleanResult = ^.asInstanceOf[js.Dynamic].applyDynamic("isAppSideloadingEnabled")(context.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SP.BooleanResult]
 }

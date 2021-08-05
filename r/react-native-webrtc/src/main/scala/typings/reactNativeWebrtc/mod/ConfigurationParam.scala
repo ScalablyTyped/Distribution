@@ -12,25 +12,19 @@ trait ConfigurationParam extends StObject {
 }
 object ConfigurationParam {
   
-  @scala.inline
-  def apply(): ConfigurationParam = {
+  inline def apply(): ConfigurationParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConfigurationParam]
   }
   
-  @scala.inline
-  implicit class ConfigurationParamMutableBuilder[Self <: ConfigurationParam] (val x: Self) extends AnyVal {
+  extension [Self <: ConfigurationParam](x: Self) {
     
-    @scala.inline
-    def setCredential(value: String): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
+    inline def setCredential(value: String): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialUndefined: Self = StObject.set(x, "credential", js.undefined)
+    inline def setCredentialUndefined: Self = StObject.set(x, "credential", js.undefined)
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+    inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
   }
 }

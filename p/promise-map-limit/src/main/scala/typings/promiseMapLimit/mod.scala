@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply[T, R](iterable: Iterable[T], concurrency: Double, iteratee: IIteratee[T, R]): js.Promise[js.Array[R]] = (^.asInstanceOf[js.Dynamic].apply(iterable.asInstanceOf[js.Any], concurrency.asInstanceOf[js.Any], iteratee.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[R]]]
+  inline def apply[T, R](iterable: Iterable[T], concurrency: Double, iteratee: IIteratee[T, R]): js.Promise[js.Array[R]] = (^.asInstanceOf[js.Dynamic].apply(iterable.asInstanceOf[js.Any], concurrency.asInstanceOf[js.Any], iteratee.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[R]]]
   
   @JSImport("promise-map-limit", JSImport.Namespace)
   @js.native

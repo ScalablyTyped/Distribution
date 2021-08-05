@@ -27,19 +27,15 @@ trait SchemaHtmlOperatorOptions extends StObject {
 }
 object SchemaHtmlOperatorOptions {
   
-  @scala.inline
-  def apply(): SchemaHtmlOperatorOptions = {
+  inline def apply(): SchemaHtmlOperatorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaHtmlOperatorOptions]
   }
   
-  @scala.inline
-  implicit class SchemaHtmlOperatorOptionsMutableBuilder[Self <: SchemaHtmlOperatorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaHtmlOperatorOptions](x: Self) {
     
-    @scala.inline
-    def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
+    inline def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorNameUndefined: Self = StObject.set(x, "operatorName", js.undefined)
+    inline def setOperatorNameUndefined: Self = StObject.set(x, "operatorName", js.undefined)
   }
 }

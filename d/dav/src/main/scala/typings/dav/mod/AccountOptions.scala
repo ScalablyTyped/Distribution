@@ -25,67 +25,47 @@ trait AccountOptions extends StObject {
 }
 object AccountOptions {
   
-  @scala.inline
-  def apply(): AccountOptions = {
+  inline def apply(): AccountOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountOptions]
   }
   
-  @scala.inline
-  implicit class AccountOptionsMutableBuilder[Self <: AccountOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AccountOptions](x: Self) {
     
-    @scala.inline
-    def setAddressBooks(value: js.Array[AddressBook]): Self = StObject.set(x, "addressBooks", value.asInstanceOf[js.Any])
+    inline def setAddressBooks(value: js.Array[AddressBook]): Self = StObject.set(x, "addressBooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressBooksUndefined: Self = StObject.set(x, "addressBooks", js.undefined)
+    inline def setAddressBooksUndefined: Self = StObject.set(x, "addressBooks", js.undefined)
     
-    @scala.inline
-    def setAddressBooksVarargs(value: AddressBook*): Self = StObject.set(x, "addressBooks", js.Array(value :_*))
+    inline def setAddressBooksVarargs(value: AddressBook*): Self = StObject.set(x, "addressBooks", js.Array(value :_*))
     
-    @scala.inline
-    def setCalendars(value: js.Array[Calendar]): Self = StObject.set(x, "calendars", value.asInstanceOf[js.Any])
+    inline def setCalendars(value: js.Array[Calendar]): Self = StObject.set(x, "calendars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalendarsUndefined: Self = StObject.set(x, "calendars", js.undefined)
+    inline def setCalendarsUndefined: Self = StObject.set(x, "calendars", js.undefined)
     
-    @scala.inline
-    def setCalendarsVarargs(value: Calendar*): Self = StObject.set(x, "calendars", js.Array(value :_*))
+    inline def setCalendarsVarargs(value: Calendar*): Self = StObject.set(x, "calendars", js.Array(value :_*))
     
-    @scala.inline
-    def setConstructor(value: /* options */ js.UndefOr[AccountOptions] => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
+    inline def setConstructor(value: /* options */ js.UndefOr[AccountOptions] => js.Any): Self = StObject.set(x, "constructor", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConstructorUndefined: Self = StObject.set(x, "constructor", js.undefined)
+    inline def setConstructorUndefined: Self = StObject.set(x, "constructor", js.undefined)
     
-    @scala.inline
-    def setCredentials(value: Credentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+    inline def setCredentials(value: Credentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+    inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
     
-    @scala.inline
-    def setHomeUrl(value: String): Self = StObject.set(x, "homeUrl", value.asInstanceOf[js.Any])
+    inline def setHomeUrl(value: String): Self = StObject.set(x, "homeUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHomeUrlUndefined: Self = StObject.set(x, "homeUrl", js.undefined)
+    inline def setHomeUrlUndefined: Self = StObject.set(x, "homeUrl", js.undefined)
     
-    @scala.inline
-    def setPrincipalUrl(value: String): Self = StObject.set(x, "principalUrl", value.asInstanceOf[js.Any])
+    inline def setPrincipalUrl(value: String): Self = StObject.set(x, "principalUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalUrlUndefined: Self = StObject.set(x, "principalUrl", js.undefined)
+    inline def setPrincipalUrlUndefined: Self = StObject.set(x, "principalUrl", js.undefined)
     
-    @scala.inline
-    def setRootUrl(value: String): Self = StObject.set(x, "rootUrl", value.asInstanceOf[js.Any])
+    inline def setRootUrl(value: String): Self = StObject.set(x, "rootUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUrlUndefined: Self = StObject.set(x, "rootUrl", js.undefined)
+    inline def setRootUrlUndefined: Self = StObject.set(x, "rootUrl", js.undefined)
     
-    @scala.inline
-    def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+    inline def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+    inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
   }
 }

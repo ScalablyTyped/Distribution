@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StackOffsetType extends StObject
 object StackOffsetType {
   
-  @scala.inline
-  def expand: typings.recharts.rechartsStrings.expand = "expand".asInstanceOf[typings.recharts.rechartsStrings.expand]
+  inline def expand: typings.recharts.rechartsStrings.expand = "expand".asInstanceOf[typings.recharts.rechartsStrings.expand]
   
-  @scala.inline
-  def none: typings.recharts.rechartsStrings.none = "none".asInstanceOf[typings.recharts.rechartsStrings.none]
+  inline def none: typings.recharts.rechartsStrings.none = "none".asInstanceOf[typings.recharts.rechartsStrings.none]
   
-  @scala.inline
-  def sign: typings.recharts.rechartsStrings.sign = "sign".asInstanceOf[typings.recharts.rechartsStrings.sign]
+  inline def sign: typings.recharts.rechartsStrings.sign = "sign".asInstanceOf[typings.recharts.rechartsStrings.sign]
   
-  @scala.inline
-  def silhouette: typings.recharts.rechartsStrings.silhouette = "silhouette".asInstanceOf[typings.recharts.rechartsStrings.silhouette]
+  inline def silhouette: typings.recharts.rechartsStrings.silhouette = "silhouette".asInstanceOf[typings.recharts.rechartsStrings.silhouette]
   
-  @scala.inline
-  def wiggle: typings.recharts.rechartsStrings.wiggle = "wiggle".asInstanceOf[typings.recharts.rechartsStrings.wiggle]
+  inline def wiggle: typings.recharts.rechartsStrings.wiggle = "wiggle".asInstanceOf[typings.recharts.rechartsStrings.wiggle]
 }

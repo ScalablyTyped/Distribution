@@ -81,10 +81,8 @@ object modalMod {
       * a DOM element
       */
     /* static member */
-    @scala.inline
-    def getInstance(element: Element): Modal = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[Modal]
-    @scala.inline
-    def getInstance(element: Element, options: PartialOptionsBackdrop): Modal = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Modal]
+    inline def getInstance(element: Element): Modal = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[Modal]
+    inline def getInstance(element: Element, options: PartialOptionsBackdrop): Modal = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Modal]
   }
   
   trait Modal extends StObject {
@@ -121,8 +119,7 @@ object modalMod {
   }
   object Modal {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dispose: () => Unit,
       handleUpdate: () => Unit,
       hide: () => Unit,
@@ -189,23 +186,17 @@ object modalMod {
            with Events
     }
     
-    @scala.inline
-    implicit class ModalMutableBuilder[Self <: Modal] (val x: Self) extends AnyVal {
+    extension [Self <: Modal](x: Self) {
       
-      @scala.inline
-      def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
+      inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHandleUpdate(value: () => Unit): Self = StObject.set(x, "handleUpdate", js.Any.fromFunction0(value))
+      inline def setHandleUpdate(value: () => Unit): Self = StObject.set(x, "handleUpdate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
+      inline def setToggle(value: () => Unit): Self = StObject.set(x, "toggle", js.Any.fromFunction0(value))
     }
     
     trait Options extends StObject {
@@ -241,26 +232,20 @@ object modalMod {
     }
     object Options {
       
-      @scala.inline
-      def apply(backdrop: static | Boolean, focus: Boolean, keyboard: Boolean, show: Boolean): Options = {
+      inline def apply(backdrop: static | Boolean, focus: Boolean, keyboard: Boolean, show: Boolean): Options = {
         val __obj = js.Dynamic.literal(backdrop = backdrop.asInstanceOf[js.Any], focus = focus.asInstanceOf[js.Any], keyboard = keyboard.asInstanceOf[js.Any], show = show.asInstanceOf[js.Any])
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setBackdrop(value: static | Boolean): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
+        inline def setBackdrop(value: static | Boolean): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
+        inline def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
+        inline def setKeyboard(value: Boolean): Self = StObject.set(x, "keyboard", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+        inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
       }
     }
   }

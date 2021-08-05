@@ -46,49 +46,35 @@ trait SchemaCompatibleFields extends StObject {
 }
 object SchemaCompatibleFields {
   
-  @scala.inline
-  def apply(): SchemaCompatibleFields = {
+  inline def apply(): SchemaCompatibleFields = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCompatibleFields]
   }
   
-  @scala.inline
-  implicit class SchemaCompatibleFieldsMutableBuilder[Self <: SchemaCompatibleFields] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCompatibleFields](x: Self) {
     
-    @scala.inline
-    def setCrossDimensionReachReportCompatibleFields(value: SchemaCrossDimensionReachReportCompatibleFields): Self = StObject.set(x, "crossDimensionReachReportCompatibleFields", value.asInstanceOf[js.Any])
+    inline def setCrossDimensionReachReportCompatibleFields(value: SchemaCrossDimensionReachReportCompatibleFields): Self = StObject.set(x, "crossDimensionReachReportCompatibleFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossDimensionReachReportCompatibleFieldsUndefined: Self = StObject.set(x, "crossDimensionReachReportCompatibleFields", js.undefined)
+    inline def setCrossDimensionReachReportCompatibleFieldsUndefined: Self = StObject.set(x, "crossDimensionReachReportCompatibleFields", js.undefined)
     
-    @scala.inline
-    def setFloodlightReportCompatibleFields(value: SchemaFloodlightReportCompatibleFields): Self = StObject.set(x, "floodlightReportCompatibleFields", value.asInstanceOf[js.Any])
+    inline def setFloodlightReportCompatibleFields(value: SchemaFloodlightReportCompatibleFields): Self = StObject.set(x, "floodlightReportCompatibleFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFloodlightReportCompatibleFieldsUndefined: Self = StObject.set(x, "floodlightReportCompatibleFields", js.undefined)
+    inline def setFloodlightReportCompatibleFieldsUndefined: Self = StObject.set(x, "floodlightReportCompatibleFields", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setPathToConversionReportCompatibleFields(value: SchemaPathToConversionReportCompatibleFields): Self = StObject.set(x, "pathToConversionReportCompatibleFields", value.asInstanceOf[js.Any])
+    inline def setPathToConversionReportCompatibleFields(value: SchemaPathToConversionReportCompatibleFields): Self = StObject.set(x, "pathToConversionReportCompatibleFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathToConversionReportCompatibleFieldsUndefined: Self = StObject.set(x, "pathToConversionReportCompatibleFields", js.undefined)
+    inline def setPathToConversionReportCompatibleFieldsUndefined: Self = StObject.set(x, "pathToConversionReportCompatibleFields", js.undefined)
     
-    @scala.inline
-    def setReachReportCompatibleFields(value: SchemaReachReportCompatibleFields): Self = StObject.set(x, "reachReportCompatibleFields", value.asInstanceOf[js.Any])
+    inline def setReachReportCompatibleFields(value: SchemaReachReportCompatibleFields): Self = StObject.set(x, "reachReportCompatibleFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReachReportCompatibleFieldsUndefined: Self = StObject.set(x, "reachReportCompatibleFields", js.undefined)
+    inline def setReachReportCompatibleFieldsUndefined: Self = StObject.set(x, "reachReportCompatibleFields", js.undefined)
     
-    @scala.inline
-    def setReportCompatibleFields(value: SchemaReportCompatibleFields): Self = StObject.set(x, "reportCompatibleFields", value.asInstanceOf[js.Any])
+    inline def setReportCompatibleFields(value: SchemaReportCompatibleFields): Self = StObject.set(x, "reportCompatibleFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportCompatibleFieldsUndefined: Self = StObject.set(x, "reportCompatibleFields", js.undefined)
+    inline def setReportCompatibleFieldsUndefined: Self = StObject.set(x, "reportCompatibleFields", js.undefined)
   }
 }

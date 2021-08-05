@@ -12,19 +12,15 @@ trait RetrieveSourceOptions extends StObject {
 }
 object RetrieveSourceOptions {
   
-  @scala.inline
-  def apply(client_secret: String, id: String): RetrieveSourceOptions = {
+  inline def apply(client_secret: String, id: String): RetrieveSourceOptions = {
     val __obj = js.Dynamic.literal(client_secret = client_secret.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[RetrieveSourceOptions]
   }
   
-  @scala.inline
-  implicit class RetrieveSourceOptionsMutableBuilder[Self <: RetrieveSourceOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RetrieveSourceOptions](x: Self) {
     
-    @scala.inline
-    def setClient_secret(value: String): Self = StObject.set(x, "client_secret", value.asInstanceOf[js.Any])
+    inline def setClient_secret(value: String): Self = StObject.set(x, "client_secret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

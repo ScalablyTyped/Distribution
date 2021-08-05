@@ -11,19 +11,15 @@ trait IDoubleValue extends StObject {
 }
 object IDoubleValue {
   
-  @scala.inline
-  def apply(): IDoubleValue = {
+  inline def apply(): IDoubleValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDoubleValue]
   }
   
-  @scala.inline
-  implicit class IDoubleValueMutableBuilder[Self <: IDoubleValue] (val x: Self) extends AnyVal {
+  extension [Self <: IDoubleValue](x: Self) {
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

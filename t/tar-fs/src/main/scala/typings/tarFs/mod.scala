@@ -16,15 +16,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def extract(cwd: String): typings.tarStream.mod.Extract_ = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(cwd.asInstanceOf[js.Any]).asInstanceOf[typings.tarStream.mod.Extract_]
-  @scala.inline
-  def extract(cwd: String, opts: ExtractOptions): typings.tarStream.mod.Extract_ = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(cwd.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.tarStream.mod.Extract_]
+  inline def extract(cwd: String): typings.tarStream.mod.Extract_ = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(cwd.asInstanceOf[js.Any]).asInstanceOf[typings.tarStream.mod.Extract_]
+  inline def extract(cwd: String, opts: ExtractOptions): typings.tarStream.mod.Extract_ = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(cwd.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.tarStream.mod.Extract_]
   
-  @scala.inline
-  def pack(cwd: String): typings.tarStream.mod.Pack_ = ^.asInstanceOf[js.Dynamic].applyDynamic("pack")(cwd.asInstanceOf[js.Any]).asInstanceOf[typings.tarStream.mod.Pack_]
-  @scala.inline
-  def pack(cwd: String, opts: PackOptions): typings.tarStream.mod.Pack_ = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(cwd.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.tarStream.mod.Pack_]
+  inline def pack(cwd: String): typings.tarStream.mod.Pack_ = ^.asInstanceOf[js.Dynamic].applyDynamic("pack")(cwd.asInstanceOf[js.Any]).asInstanceOf[typings.tarStream.mod.Pack_]
+  inline def pack(cwd: String, opts: PackOptions): typings.tarStream.mod.Pack_ = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(cwd.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.tarStream.mod.Pack_]
   
   trait ExtractOptions
     extends StObject
@@ -40,32 +36,24 @@ object mod {
   }
   object ExtractOptions {
     
-    @scala.inline
-    def apply(): ExtractOptions = {
+    inline def apply(): ExtractOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExtractOptions]
     }
     
-    @scala.inline
-    implicit class ExtractOptionsMutableBuilder[Self <: ExtractOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ExtractOptions](x: Self) {
       
-      @scala.inline
-      def setFilter(value: (/* name */ String, /* header */ js.UndefOr[Headers]) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
+      inline def setFilter(value: (/* name */ String, /* header */ js.UndefOr[Headers]) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setIgnore(value: (/* name */ String, /* header */ js.UndefOr[Headers]) => Boolean): Self = StObject.set(x, "ignore", js.Any.fromFunction2(value))
+      inline def setIgnore(value: (/* name */ String, /* header */ js.UndefOr[Headers]) => Boolean): Self = StObject.set(x, "ignore", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      @scala.inline
-      def setStrip(value: Double): Self = StObject.set(x, "strip", value.asInstanceOf[js.Any])
+      inline def setStrip(value: Double): Self = StObject.set(x, "strip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStripUndefined: Self = StObject.set(x, "strip", js.undefined)
+      inline def setStripUndefined: Self = StObject.set(x, "strip", js.undefined)
     }
   }
   
@@ -89,8 +77,7 @@ object mod {
   }
   object Headers {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       gid: Double,
       mode: Double,
       mtime: Date,
@@ -104,29 +91,21 @@ object mod {
       __obj.asInstanceOf[Headers]
     }
     
-    @scala.inline
-    implicit class HeadersMutableBuilder[Self <: Headers] (val x: Self) extends AnyVal {
+    extension [Self <: Headers](x: Self) {
       
-      @scala.inline
-      def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
+      inline def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
+      inline def setMtime(value: Date): Self = StObject.set(x, "mtime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: file | directory | link | symlink): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: file | directory | link | symlink): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+      inline def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
     }
   }
   
@@ -152,68 +131,48 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDmode(value: Double): Self = StObject.set(x, "dmode", value.asInstanceOf[js.Any])
+      inline def setDmode(value: Double): Self = StObject.set(x, "dmode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDmodeUndefined: Self = StObject.set(x, "dmode", js.undefined)
+      inline def setDmodeUndefined: Self = StObject.set(x, "dmode", js.undefined)
       
-      @scala.inline
-      def setFilter(value: /* name */ String => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      inline def setFilter(value: /* name */ String => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+      inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
-      @scala.inline
-      def setFmode(value: Double): Self = StObject.set(x, "fmode", value.asInstanceOf[js.Any])
+      inline def setFmode(value: Double): Self = StObject.set(x, "fmode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFmodeUndefined: Self = StObject.set(x, "fmode", js.undefined)
+      inline def setFmodeUndefined: Self = StObject.set(x, "fmode", js.undefined)
       
-      @scala.inline
-      def setIgnore(value: /* name */ String => Boolean): Self = StObject.set(x, "ignore", js.Any.fromFunction1(value))
+      inline def setIgnore(value: /* name */ String => Boolean): Self = StObject.set(x, "ignore", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+      inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
       
-      @scala.inline
-      def setMap(value: /* header */ Headers => Headers): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      inline def setMap(value: /* header */ Headers => Headers): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMapStream(value: (/* fileStream */ ReadStream, /* header */ Headers) => ReadStream): Self = StObject.set(x, "mapStream", js.Any.fromFunction2(value))
+      inline def setMapStream(value: (/* fileStream */ ReadStream, /* header */ Headers) => ReadStream): Self = StObject.set(x, "mapStream", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMapStreamUndefined: Self = StObject.set(x, "mapStream", js.undefined)
+      inline def setMapStreamUndefined: Self = StObject.set(x, "mapStream", js.undefined)
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      @scala.inline
-      def setReadable(value: Boolean): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
+      inline def setReadable(value: Boolean): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadableUndefined: Self = StObject.set(x, "readable", js.undefined)
+      inline def setReadableUndefined: Self = StObject.set(x, "readable", js.undefined)
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
       
-      @scala.inline
-      def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
+      inline def setWritable(value: Boolean): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWritableUndefined: Self = StObject.set(x, "writable", js.undefined)
+      inline def setWritableUndefined: Self = StObject.set(x, "writable", js.undefined)
     }
   }
   
@@ -234,47 +193,34 @@ object mod {
   }
   object PackOptions {
     
-    @scala.inline
-    def apply(): PackOptions = {
+    inline def apply(): PackOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PackOptions]
     }
     
-    @scala.inline
-    implicit class PackOptionsMutableBuilder[Self <: PackOptions] (val x: Self) extends AnyVal {
+    extension [Self <: PackOptions](x: Self) {
       
-      @scala.inline
-      def setDereference(value: Boolean): Self = StObject.set(x, "dereference", value.asInstanceOf[js.Any])
+      inline def setDereference(value: Boolean): Self = StObject.set(x, "dereference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDereferenceUndefined: Self = StObject.set(x, "dereference", js.undefined)
+      inline def setDereferenceUndefined: Self = StObject.set(x, "dereference", js.undefined)
       
-      @scala.inline
-      def setEntries(value: js.Array[String]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+      inline def setEntries(value: js.Array[String]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
+      inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
       
-      @scala.inline
-      def setEntriesVarargs(value: String*): Self = StObject.set(x, "entries", js.Array(value :_*))
+      inline def setEntriesVarargs(value: String*): Self = StObject.set(x, "entries", js.Array(value :_*))
       
-      @scala.inline
-      def setFinalize_(value: Boolean): Self = StObject.set(x, "finalize", value.asInstanceOf[js.Any])
+      inline def setFinalize_(value: Boolean): Self = StObject.set(x, "finalize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFinalize_Undefined: Self = StObject.set(x, "finalize", js.undefined)
+      inline def setFinalize_Undefined: Self = StObject.set(x, "finalize", js.undefined)
       
-      @scala.inline
-      def setFinish(value: /* pack */ typings.tarStream.mod.Pack_ => Unit): Self = StObject.set(x, "finish", js.Any.fromFunction1(value))
+      inline def setFinish(value: /* pack */ typings.tarStream.mod.Pack_ => Unit): Self = StObject.set(x, "finish", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFinishUndefined: Self = StObject.set(x, "finish", js.undefined)
+      inline def setFinishUndefined: Self = StObject.set(x, "finish", js.undefined)
       
-      @scala.inline
-      def setPack(value: typings.tarStream.mod.Pack_): Self = StObject.set(x, "pack", value.asInstanceOf[js.Any])
+      inline def setPack(value: typings.tarStream.mod.Pack_): Self = StObject.set(x, "pack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackUndefined: Self = StObject.set(x, "pack", js.undefined)
+      inline def setPackUndefined: Self = StObject.set(x, "pack", js.undefined)
     }
   }
   

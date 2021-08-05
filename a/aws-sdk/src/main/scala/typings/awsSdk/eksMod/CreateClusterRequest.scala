@@ -53,61 +53,43 @@ trait CreateClusterRequest extends StObject {
 }
 object CreateClusterRequest {
   
-  @scala.inline
-  def apply(name: ClusterName, resourcesVpcConfig: VpcConfigRequest, roleArn: String): CreateClusterRequest = {
+  inline def apply(name: ClusterName, resourcesVpcConfig: VpcConfigRequest, roleArn: String): CreateClusterRequest = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], resourcesVpcConfig = resourcesVpcConfig.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateClusterRequest]
   }
   
-  @scala.inline
-  implicit class CreateClusterRequestMutableBuilder[Self <: CreateClusterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateClusterRequest](x: Self) {
     
-    @scala.inline
-    def setClientRequestToken(value: String): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: String): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
+    inline def setClientRequestTokenUndefined: Self = StObject.set(x, "clientRequestToken", js.undefined)
     
-    @scala.inline
-    def setEncryptionConfig(value: EncryptionConfigList): Self = StObject.set(x, "encryptionConfig", value.asInstanceOf[js.Any])
+    inline def setEncryptionConfig(value: EncryptionConfigList): Self = StObject.set(x, "encryptionConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionConfigUndefined: Self = StObject.set(x, "encryptionConfig", js.undefined)
+    inline def setEncryptionConfigUndefined: Self = StObject.set(x, "encryptionConfig", js.undefined)
     
-    @scala.inline
-    def setEncryptionConfigVarargs(value: EncryptionConfig*): Self = StObject.set(x, "encryptionConfig", js.Array(value :_*))
+    inline def setEncryptionConfigVarargs(value: EncryptionConfig*): Self = StObject.set(x, "encryptionConfig", js.Array(value :_*))
     
-    @scala.inline
-    def setKubernetesNetworkConfig(value: KubernetesNetworkConfigRequest): Self = StObject.set(x, "kubernetesNetworkConfig", value.asInstanceOf[js.Any])
+    inline def setKubernetesNetworkConfig(value: KubernetesNetworkConfigRequest): Self = StObject.set(x, "kubernetesNetworkConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKubernetesNetworkConfigUndefined: Self = StObject.set(x, "kubernetesNetworkConfig", js.undefined)
+    inline def setKubernetesNetworkConfigUndefined: Self = StObject.set(x, "kubernetesNetworkConfig", js.undefined)
     
-    @scala.inline
-    def setLogging(value: Logging): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
+    inline def setLogging(value: Logging): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
+    inline def setLoggingUndefined: Self = StObject.set(x, "logging", js.undefined)
     
-    @scala.inline
-    def setName(value: ClusterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ClusterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesVpcConfig(value: VpcConfigRequest): Self = StObject.set(x, "resourcesVpcConfig", value.asInstanceOf[js.Any])
+    inline def setResourcesVpcConfig(value: VpcConfigRequest): Self = StObject.set(x, "resourcesVpcConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: String): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

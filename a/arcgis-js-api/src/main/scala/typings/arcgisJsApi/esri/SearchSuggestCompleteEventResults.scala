@@ -18,8 +18,7 @@ trait SearchSuggestCompleteEventResults
 }
 object SearchSuggestCompleteEventResults {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -31,19 +30,14 @@ object SearchSuggestCompleteEventResults {
     __obj.asInstanceOf[SearchSuggestCompleteEventResults]
   }
   
-  @scala.inline
-  implicit class SearchSuggestCompleteEventResultsMutableBuilder[Self <: SearchSuggestCompleteEventResults] (val x: Self) extends AnyVal {
+  extension [Self <: SearchSuggestCompleteEventResults](x: Self) {
     
-    @scala.inline
-    def setResults(value: js.Array[SuggestResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[SuggestResult]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsVarargs(value: SuggestResult*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: SuggestResult*): Self = StObject.set(x, "results", js.Array(value :_*))
     
-    @scala.inline
-    def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: js.Any): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceIndex(value: Double): Self = StObject.set(x, "sourceIndex", value.asInstanceOf[js.Any])
+    inline def setSourceIndex(value: Double): Self = StObject.set(x, "sourceIndex", value.asInstanceOf[js.Any])
   }
 }

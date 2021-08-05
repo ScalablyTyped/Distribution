@@ -48,31 +48,23 @@ trait LinearGradient extends StObject {
 }
 object LinearGradient {
   
-  @scala.inline
-  def apply(colors: js.Array[Color], endPoint: Point, locations: js.Array[Double], startPoint: Point): LinearGradient = {
+  inline def apply(colors: js.Array[Color], endPoint: Point, locations: js.Array[Double], startPoint: Point): LinearGradient = {
     val __obj = js.Dynamic.literal(colors = colors.asInstanceOf[js.Any], endPoint = endPoint.asInstanceOf[js.Any], locations = locations.asInstanceOf[js.Any], startPoint = startPoint.asInstanceOf[js.Any])
     __obj.asInstanceOf[LinearGradient]
   }
   
-  @scala.inline
-  implicit class LinearGradientMutableBuilder[Self <: LinearGradient] (val x: Self) extends AnyVal {
+  extension [Self <: LinearGradient](x: Self) {
     
-    @scala.inline
-    def setColors(value: js.Array[Color]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    inline def setColors(value: js.Array[Color]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorsVarargs(value: Color*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: Color*): Self = StObject.set(x, "colors", js.Array(value :_*))
     
-    @scala.inline
-    def setEndPoint(value: Point): Self = StObject.set(x, "endPoint", value.asInstanceOf[js.Any])
+    inline def setEndPoint(value: Point): Self = StObject.set(x, "endPoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocations(value: js.Array[Double]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+    inline def setLocations(value: js.Array[Double]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationsVarargs(value: Double*): Self = StObject.set(x, "locations", js.Array(value :_*))
+    inline def setLocationsVarargs(value: Double*): Self = StObject.set(x, "locations", js.Array(value :_*))
     
-    @scala.inline
-    def setStartPoint(value: Point): Self = StObject.set(x, "startPoint", value.asInstanceOf[js.Any])
+    inline def setStartPoint(value: Point): Self = StObject.set(x, "startPoint", value.asInstanceOf[js.Any])
   }
 }

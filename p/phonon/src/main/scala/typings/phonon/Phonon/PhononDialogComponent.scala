@@ -10,16 +10,13 @@ trait PhononDialogComponent extends StObject {
 }
 object PhononDialogComponent {
   
-  @scala.inline
-  def apply(on: (String, js.Function1[/* value */ js.UndefOr[js.Any], Unit]) => PhononDialogComponent): PhononDialogComponent = {
+  inline def apply(on: (String, js.Function1[/* value */ js.UndefOr[js.Any], Unit]) => PhononDialogComponent): PhononDialogComponent = {
     val __obj = js.Dynamic.literal(on = js.Any.fromFunction2(on))
     __obj.asInstanceOf[PhononDialogComponent]
   }
   
-  @scala.inline
-  implicit class PhononDialogComponentMutableBuilder[Self <: PhononDialogComponent] (val x: Self) extends AnyVal {
+  extension [Self <: PhononDialogComponent](x: Self) {
     
-    @scala.inline
-    def setOn(value: (String, js.Function1[/* value */ js.UndefOr[js.Any], Unit]) => PhononDialogComponent): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+    inline def setOn(value: (String, js.Function1[/* value */ js.UndefOr[js.Any], Unit]) => PhononDialogComponent): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
   }
 }

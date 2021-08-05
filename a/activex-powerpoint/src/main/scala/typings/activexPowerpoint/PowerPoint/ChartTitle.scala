@@ -56,7 +56,7 @@ trait ChartTitle extends StObject {
   
   var Position: XlChartElementPosition = js.native
   
-  @JSName("PowerPoint.ChartTitle_typekey")
+  /* private */ @JSName("PowerPoint.ChartTitle_typekey")
   var PowerPointDotChartTitle_typekey: ChartTitle = js.native
   
   var ReadingOrder: Double = js.native

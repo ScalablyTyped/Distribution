@@ -348,265 +348,179 @@ trait ChartAxisLoadOptions extends StObject {
 }
 object ChartAxisLoadOptions {
   
-  @scala.inline
-  def apply(): ChartAxisLoadOptions = {
+  inline def apply(): ChartAxisLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartAxisLoadOptions]
   }
   
-  @scala.inline
-  implicit class ChartAxisLoadOptionsMutableBuilder[Self <: ChartAxisLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChartAxisLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setAlignment(value: Boolean): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
+    inline def setAlignment(value: Boolean): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
+    inline def setAlignmentUndefined: Self = StObject.set(x, "alignment", js.undefined)
     
-    @scala.inline
-    def setAxisGroup(value: Boolean): Self = StObject.set(x, "axisGroup", value.asInstanceOf[js.Any])
+    inline def setAxisGroup(value: Boolean): Self = StObject.set(x, "axisGroup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisGroupUndefined: Self = StObject.set(x, "axisGroup", js.undefined)
+    inline def setAxisGroupUndefined: Self = StObject.set(x, "axisGroup", js.undefined)
     
-    @scala.inline
-    def setBaseTimeUnit(value: Boolean): Self = StObject.set(x, "baseTimeUnit", value.asInstanceOf[js.Any])
+    inline def setBaseTimeUnit(value: Boolean): Self = StObject.set(x, "baseTimeUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseTimeUnitUndefined: Self = StObject.set(x, "baseTimeUnit", js.undefined)
+    inline def setBaseTimeUnitUndefined: Self = StObject.set(x, "baseTimeUnit", js.undefined)
     
-    @scala.inline
-    def setCategoryType(value: Boolean): Self = StObject.set(x, "categoryType", value.asInstanceOf[js.Any])
+    inline def setCategoryType(value: Boolean): Self = StObject.set(x, "categoryType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryTypeUndefined: Self = StObject.set(x, "categoryType", js.undefined)
+    inline def setCategoryTypeUndefined: Self = StObject.set(x, "categoryType", js.undefined)
     
-    @scala.inline
-    def setCrosses(value: Boolean): Self = StObject.set(x, "crosses", value.asInstanceOf[js.Any])
+    inline def setCrosses(value: Boolean): Self = StObject.set(x, "crosses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossesAt(value: Boolean): Self = StObject.set(x, "crossesAt", value.asInstanceOf[js.Any])
+    inline def setCrossesAt(value: Boolean): Self = StObject.set(x, "crossesAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossesAtUndefined: Self = StObject.set(x, "crossesAt", js.undefined)
+    inline def setCrossesAtUndefined: Self = StObject.set(x, "crossesAt", js.undefined)
     
-    @scala.inline
-    def setCrossesUndefined: Self = StObject.set(x, "crosses", js.undefined)
+    inline def setCrossesUndefined: Self = StObject.set(x, "crosses", js.undefined)
     
-    @scala.inline
-    def setCustomDisplayUnit(value: Boolean): Self = StObject.set(x, "customDisplayUnit", value.asInstanceOf[js.Any])
+    inline def setCustomDisplayUnit(value: Boolean): Self = StObject.set(x, "customDisplayUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomDisplayUnitUndefined: Self = StObject.set(x, "customDisplayUnit", js.undefined)
+    inline def setCustomDisplayUnitUndefined: Self = StObject.set(x, "customDisplayUnit", js.undefined)
     
-    @scala.inline
-    def setDisplayUnit(value: Boolean): Self = StObject.set(x, "displayUnit", value.asInstanceOf[js.Any])
+    inline def setDisplayUnit(value: Boolean): Self = StObject.set(x, "displayUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayUnitUndefined: Self = StObject.set(x, "displayUnit", js.undefined)
+    inline def setDisplayUnitUndefined: Self = StObject.set(x, "displayUnit", js.undefined)
     
-    @scala.inline
-    def setFormat(value: ChartAxisFormatLoadOptions): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: ChartAxisFormatLoadOptions): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Boolean): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Boolean): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setIsBetweenCategories(value: Boolean): Self = StObject.set(x, "isBetweenCategories", value.asInstanceOf[js.Any])
+    inline def setIsBetweenCategories(value: Boolean): Self = StObject.set(x, "isBetweenCategories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBetweenCategoriesUndefined: Self = StObject.set(x, "isBetweenCategories", js.undefined)
+    inline def setIsBetweenCategoriesUndefined: Self = StObject.set(x, "isBetweenCategories", js.undefined)
     
-    @scala.inline
-    def setLeft(value: Boolean): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Boolean): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    @scala.inline
-    def setLinkNumberFormat(value: Boolean): Self = StObject.set(x, "linkNumberFormat", value.asInstanceOf[js.Any])
+    inline def setLinkNumberFormat(value: Boolean): Self = StObject.set(x, "linkNumberFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkNumberFormatUndefined: Self = StObject.set(x, "linkNumberFormat", js.undefined)
+    inline def setLinkNumberFormatUndefined: Self = StObject.set(x, "linkNumberFormat", js.undefined)
     
-    @scala.inline
-    def setLogBase(value: Boolean): Self = StObject.set(x, "logBase", value.asInstanceOf[js.Any])
+    inline def setLogBase(value: Boolean): Self = StObject.set(x, "logBase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogBaseUndefined: Self = StObject.set(x, "logBase", js.undefined)
+    inline def setLogBaseUndefined: Self = StObject.set(x, "logBase", js.undefined)
     
-    @scala.inline
-    def setMajorGridlines(value: ChartGridlinesLoadOptions): Self = StObject.set(x, "majorGridlines", value.asInstanceOf[js.Any])
+    inline def setMajorGridlines(value: ChartGridlinesLoadOptions): Self = StObject.set(x, "majorGridlines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMajorGridlinesUndefined: Self = StObject.set(x, "majorGridlines", js.undefined)
+    inline def setMajorGridlinesUndefined: Self = StObject.set(x, "majorGridlines", js.undefined)
     
-    @scala.inline
-    def setMajorTickMark(value: Boolean): Self = StObject.set(x, "majorTickMark", value.asInstanceOf[js.Any])
+    inline def setMajorTickMark(value: Boolean): Self = StObject.set(x, "majorTickMark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMajorTickMarkUndefined: Self = StObject.set(x, "majorTickMark", js.undefined)
+    inline def setMajorTickMarkUndefined: Self = StObject.set(x, "majorTickMark", js.undefined)
     
-    @scala.inline
-    def setMajorTimeUnitScale(value: Boolean): Self = StObject.set(x, "majorTimeUnitScale", value.asInstanceOf[js.Any])
+    inline def setMajorTimeUnitScale(value: Boolean): Self = StObject.set(x, "majorTimeUnitScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMajorTimeUnitScaleUndefined: Self = StObject.set(x, "majorTimeUnitScale", js.undefined)
+    inline def setMajorTimeUnitScaleUndefined: Self = StObject.set(x, "majorTimeUnitScale", js.undefined)
     
-    @scala.inline
-    def setMajorUnit(value: Boolean): Self = StObject.set(x, "majorUnit", value.asInstanceOf[js.Any])
+    inline def setMajorUnit(value: Boolean): Self = StObject.set(x, "majorUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMajorUnitUndefined: Self = StObject.set(x, "majorUnit", js.undefined)
+    inline def setMajorUnitUndefined: Self = StObject.set(x, "majorUnit", js.undefined)
     
-    @scala.inline
-    def setMaximum(value: Boolean): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
+    inline def setMaximum(value: Boolean): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
+    inline def setMaximumUndefined: Self = StObject.set(x, "maximum", js.undefined)
     
-    @scala.inline
-    def setMinimum(value: Boolean): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
+    inline def setMinimum(value: Boolean): Self = StObject.set(x, "minimum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
+    inline def setMinimumUndefined: Self = StObject.set(x, "minimum", js.undefined)
     
-    @scala.inline
-    def setMinorGridlines(value: ChartGridlinesLoadOptions): Self = StObject.set(x, "minorGridlines", value.asInstanceOf[js.Any])
+    inline def setMinorGridlines(value: ChartGridlinesLoadOptions): Self = StObject.set(x, "minorGridlines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinorGridlinesUndefined: Self = StObject.set(x, "minorGridlines", js.undefined)
+    inline def setMinorGridlinesUndefined: Self = StObject.set(x, "minorGridlines", js.undefined)
     
-    @scala.inline
-    def setMinorTickMark(value: Boolean): Self = StObject.set(x, "minorTickMark", value.asInstanceOf[js.Any])
+    inline def setMinorTickMark(value: Boolean): Self = StObject.set(x, "minorTickMark", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinorTickMarkUndefined: Self = StObject.set(x, "minorTickMark", js.undefined)
+    inline def setMinorTickMarkUndefined: Self = StObject.set(x, "minorTickMark", js.undefined)
     
-    @scala.inline
-    def setMinorTimeUnitScale(value: Boolean): Self = StObject.set(x, "minorTimeUnitScale", value.asInstanceOf[js.Any])
+    inline def setMinorTimeUnitScale(value: Boolean): Self = StObject.set(x, "minorTimeUnitScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinorTimeUnitScaleUndefined: Self = StObject.set(x, "minorTimeUnitScale", js.undefined)
+    inline def setMinorTimeUnitScaleUndefined: Self = StObject.set(x, "minorTimeUnitScale", js.undefined)
     
-    @scala.inline
-    def setMinorUnit(value: Boolean): Self = StObject.set(x, "minorUnit", value.asInstanceOf[js.Any])
+    inline def setMinorUnit(value: Boolean): Self = StObject.set(x, "minorUnit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinorUnitUndefined: Self = StObject.set(x, "minorUnit", js.undefined)
+    inline def setMinorUnitUndefined: Self = StObject.set(x, "minorUnit", js.undefined)
     
-    @scala.inline
-    def setMultiLevel(value: Boolean): Self = StObject.set(x, "multiLevel", value.asInstanceOf[js.Any])
+    inline def setMultiLevel(value: Boolean): Self = StObject.set(x, "multiLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiLevelUndefined: Self = StObject.set(x, "multiLevel", js.undefined)
+    inline def setMultiLevelUndefined: Self = StObject.set(x, "multiLevel", js.undefined)
     
-    @scala.inline
-    def setNumberFormat(value: Boolean): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
+    inline def setNumberFormat(value: Boolean): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
+    inline def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Boolean): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Boolean): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setPosition(value: Boolean): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Boolean): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionAt(value: Boolean): Self = StObject.set(x, "positionAt", value.asInstanceOf[js.Any])
+    inline def setPositionAt(value: Boolean): Self = StObject.set(x, "positionAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionAtUndefined: Self = StObject.set(x, "positionAt", js.undefined)
+    inline def setPositionAtUndefined: Self = StObject.set(x, "positionAt", js.undefined)
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setReversePlotOrder(value: Boolean): Self = StObject.set(x, "reversePlotOrder", value.asInstanceOf[js.Any])
+    inline def setReversePlotOrder(value: Boolean): Self = StObject.set(x, "reversePlotOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReversePlotOrderUndefined: Self = StObject.set(x, "reversePlotOrder", js.undefined)
+    inline def setReversePlotOrderUndefined: Self = StObject.set(x, "reversePlotOrder", js.undefined)
     
-    @scala.inline
-    def setScaleType(value: Boolean): Self = StObject.set(x, "scaleType", value.asInstanceOf[js.Any])
+    inline def setScaleType(value: Boolean): Self = StObject.set(x, "scaleType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleTypeUndefined: Self = StObject.set(x, "scaleType", js.undefined)
+    inline def setScaleTypeUndefined: Self = StObject.set(x, "scaleType", js.undefined)
     
-    @scala.inline
-    def setShowDisplayUnitLabel(value: Boolean): Self = StObject.set(x, "showDisplayUnitLabel", value.asInstanceOf[js.Any])
+    inline def setShowDisplayUnitLabel(value: Boolean): Self = StObject.set(x, "showDisplayUnitLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowDisplayUnitLabelUndefined: Self = StObject.set(x, "showDisplayUnitLabel", js.undefined)
+    inline def setShowDisplayUnitLabelUndefined: Self = StObject.set(x, "showDisplayUnitLabel", js.undefined)
     
-    @scala.inline
-    def setTextOrientation(value: Boolean): Self = StObject.set(x, "textOrientation", value.asInstanceOf[js.Any])
+    inline def setTextOrientation(value: Boolean): Self = StObject.set(x, "textOrientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextOrientationUndefined: Self = StObject.set(x, "textOrientation", js.undefined)
+    inline def setTextOrientationUndefined: Self = StObject.set(x, "textOrientation", js.undefined)
     
-    @scala.inline
-    def setTickLabelPosition(value: Boolean): Self = StObject.set(x, "tickLabelPosition", value.asInstanceOf[js.Any])
+    inline def setTickLabelPosition(value: Boolean): Self = StObject.set(x, "tickLabelPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTickLabelPositionUndefined: Self = StObject.set(x, "tickLabelPosition", js.undefined)
+    inline def setTickLabelPositionUndefined: Self = StObject.set(x, "tickLabelPosition", js.undefined)
     
-    @scala.inline
-    def setTickLabelSpacing(value: Boolean): Self = StObject.set(x, "tickLabelSpacing", value.asInstanceOf[js.Any])
+    inline def setTickLabelSpacing(value: Boolean): Self = StObject.set(x, "tickLabelSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTickLabelSpacingUndefined: Self = StObject.set(x, "tickLabelSpacing", js.undefined)
+    inline def setTickLabelSpacingUndefined: Self = StObject.set(x, "tickLabelSpacing", js.undefined)
     
-    @scala.inline
-    def setTickMarkSpacing(value: Boolean): Self = StObject.set(x, "tickMarkSpacing", value.asInstanceOf[js.Any])
+    inline def setTickMarkSpacing(value: Boolean): Self = StObject.set(x, "tickMarkSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTickMarkSpacingUndefined: Self = StObject.set(x, "tickMarkSpacing", js.undefined)
+    inline def setTickMarkSpacingUndefined: Self = StObject.set(x, "tickMarkSpacing", js.undefined)
     
-    @scala.inline
-    def setTitle(value: ChartAxisTitleLoadOptions): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: ChartAxisTitleLoadOptions): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setTop(value: Boolean): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Boolean): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
-    @scala.inline
-    def setType(value: Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Boolean): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Boolean): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

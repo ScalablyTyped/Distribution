@@ -17,8 +17,7 @@ trait Change extends StObject {
 }
 object Change {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     change: (String, Event) => Unit,
     close: () => Unit,
     event: RollupWatcherEvent => Unit,
@@ -28,19 +27,14 @@ object Change {
     __obj.asInstanceOf[Change]
   }
   
-  @scala.inline
-  implicit class ChangeMutableBuilder[Self <: Change] (val x: Self) extends AnyVal {
+  extension [Self <: Change](x: Self) {
     
-    @scala.inline
-    def setChange(value: (String, Event) => Unit): Self = StObject.set(x, "change", js.Any.fromFunction2(value))
+    inline def setChange(value: (String, Event) => Unit): Self = StObject.set(x, "change", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEvent(value: RollupWatcherEvent => Unit): Self = StObject.set(x, "event", js.Any.fromFunction1(value))
+    inline def setEvent(value: RollupWatcherEvent => Unit): Self = StObject.set(x, "event", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRestart(value: () => Unit): Self = StObject.set(x, "restart", js.Any.fromFunction0(value))
+    inline def setRestart(value: () => Unit): Self = StObject.set(x, "restart", js.Any.fromFunction0(value))
   }
 }

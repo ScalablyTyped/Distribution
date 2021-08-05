@@ -18,19 +18,15 @@ trait GetObjectListItem
 }
 object GetObjectListItem {
   
-  @scala.inline
-  def apply(doc: Object, id: String, value: Object): GetObjectListItem = {
+  inline def apply(doc: Object, id: String, value: Object): GetObjectListItem = {
     val __obj = js.Dynamic.literal(doc = doc.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetObjectListItem]
   }
   
-  @scala.inline
-  implicit class GetObjectListItemMutableBuilder[Self <: GetObjectListItem] (val x: Self) extends AnyVal {
+  extension [Self <: GetObjectListItem](x: Self) {
     
-    @scala.inline
-    def setDoc(value: Object): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
+    inline def setDoc(value: Object): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Object): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Object): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

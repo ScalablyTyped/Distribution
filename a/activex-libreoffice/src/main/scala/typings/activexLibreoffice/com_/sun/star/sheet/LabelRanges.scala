@@ -19,8 +19,7 @@ trait LabelRanges
      with XEnumerationAccess
 object LabelRanges {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementType: `type`,
     acquire: () => Unit,

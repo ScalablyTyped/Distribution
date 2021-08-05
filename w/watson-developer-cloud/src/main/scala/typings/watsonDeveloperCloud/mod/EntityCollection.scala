@@ -15,22 +15,17 @@ trait EntityCollection extends StObject {
 }
 object EntityCollection {
   
-  @scala.inline
-  def apply(entities: js.Array[Entity], pagination: Pagination): EntityCollection = {
+  inline def apply(entities: js.Array[Entity], pagination: Pagination): EntityCollection = {
     val __obj = js.Dynamic.literal(entities = entities.asInstanceOf[js.Any], pagination = pagination.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntityCollection]
   }
   
-  @scala.inline
-  implicit class EntityCollectionMutableBuilder[Self <: EntityCollection] (val x: Self) extends AnyVal {
+  extension [Self <: EntityCollection](x: Self) {
     
-    @scala.inline
-    def setEntities(value: js.Array[Entity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+    inline def setEntities(value: js.Array[Entity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitiesVarargs(value: Entity*): Self = StObject.set(x, "entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: Entity*): Self = StObject.set(x, "entities", js.Array(value :_*))
     
-    @scala.inline
-    def setPagination(value: Pagination): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
+    inline def setPagination(value: Pagination): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
   }
 }

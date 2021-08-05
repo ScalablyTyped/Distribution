@@ -17,22 +17,17 @@ trait AzureKeyVaultVariableValue
 }
 object AzureKeyVaultVariableValue {
   
-  @scala.inline
-  def apply(contentType: String, enabled: Boolean, expires: Date, isSecret: Boolean, value: String): AzureKeyVaultVariableValue = {
+  inline def apply(contentType: String, enabled: Boolean, expires: Date, isSecret: Boolean, value: String): AzureKeyVaultVariableValue = {
     val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], expires = expires.asInstanceOf[js.Any], isSecret = isSecret.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[AzureKeyVaultVariableValue]
   }
   
-  @scala.inline
-  implicit class AzureKeyVaultVariableValueMutableBuilder[Self <: AzureKeyVaultVariableValue] (val x: Self) extends AnyVal {
+  extension [Self <: AzureKeyVaultVariableValue](x: Self) {
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+    inline def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
   }
 }

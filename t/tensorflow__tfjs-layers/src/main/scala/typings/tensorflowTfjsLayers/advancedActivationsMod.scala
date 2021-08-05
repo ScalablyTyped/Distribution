@@ -34,8 +34,7 @@ object advancedActivationsMod {
     @JSImport("@tensorflow/tfjs-layers/dist/layers/advanced_activations", "ELU.className")
     @js.native
     def className: String = js.native
-    @scala.inline
-    def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+    inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/advanced_activations", "LeakyReLU")
@@ -58,8 +57,7 @@ object advancedActivationsMod {
     @JSImport("@tensorflow/tfjs-layers/dist/layers/advanced_activations", "LeakyReLU.className")
     @js.native
     def className: String = js.native
-    @scala.inline
-    def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+    inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/advanced_activations", "PReLU")
@@ -69,15 +67,15 @@ object advancedActivationsMod {
     
     val DEFAULT_ALPHA_INITIALIZER: InitializerIdentifier = js.native
     
-    var alpha: js.Any = js.native
+    /* private */ var alpha: js.Any = js.native
     
-    val alphaConstraint: js.Any = js.native
+    /* private */ val alphaConstraint: js.Any = js.native
     
-    val alphaInitializer: js.Any = js.native
+    /* private */ val alphaInitializer: js.Any = js.native
     
-    val alphaRegularizer: js.Any = js.native
+    /* private */ val alphaRegularizer: js.Any = js.native
     
-    val sharedAxes: js.Any = js.native
+    /* private */ val sharedAxes: js.Any = js.native
   }
   /* static members */
   object PReLU {
@@ -90,8 +88,7 @@ object advancedActivationsMod {
     @JSImport("@tensorflow/tfjs-layers/dist/layers/advanced_activations", "PReLU.className")
     @js.native
     def className: String = js.native
-    @scala.inline
-    def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+    inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/advanced_activations", "ReLU")
@@ -112,8 +109,7 @@ object advancedActivationsMod {
     @JSImport("@tensorflow/tfjs-layers/dist/layers/advanced_activations", "ReLU.className")
     @js.native
     def className: String = js.native
-    @scala.inline
-    def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+    inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/advanced_activations", "Softmax")
@@ -139,8 +135,7 @@ object advancedActivationsMod {
     @JSImport("@tensorflow/tfjs-layers/dist/layers/advanced_activations", "Softmax.className")
     @js.native
     def className: String = js.native
-    @scala.inline
-    def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+    inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/advanced_activations", "ThresholdedReLU")
@@ -163,8 +158,7 @@ object advancedActivationsMod {
     @JSImport("@tensorflow/tfjs-layers/dist/layers/advanced_activations", "ThresholdedReLU.className")
     @js.native
     def className: String = js.native
-    @scala.inline
-    def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+    inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
   }
   
   trait ELULayerArgs
@@ -178,20 +172,16 @@ object advancedActivationsMod {
   }
   object ELULayerArgs {
     
-    @scala.inline
-    def apply(): ELULayerArgs = {
+    inline def apply(): ELULayerArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ELULayerArgs]
     }
     
-    @scala.inline
-    implicit class ELULayerArgsMutableBuilder[Self <: ELULayerArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ELULayerArgs](x: Self) {
       
-      @scala.inline
-      def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+      inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     }
   }
   
@@ -206,20 +196,16 @@ object advancedActivationsMod {
   }
   object LeakyReLULayerArgs {
     
-    @scala.inline
-    def apply(): LeakyReLULayerArgs = {
+    inline def apply(): LeakyReLULayerArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LeakyReLULayerArgs]
     }
     
-    @scala.inline
-    implicit class LeakyReLULayerArgsMutableBuilder[Self <: LeakyReLULayerArgs] (val x: Self) extends AnyVal {
+    extension [Self <: LeakyReLULayerArgs](x: Self) {
       
-      @scala.inline
-      def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
+      inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
+      inline def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
     }
   }
   
@@ -254,41 +240,30 @@ object advancedActivationsMod {
   }
   object PReLULayerArgs {
     
-    @scala.inline
-    def apply(): PReLULayerArgs = {
+    inline def apply(): PReLULayerArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PReLULayerArgs]
     }
     
-    @scala.inline
-    implicit class PReLULayerArgsMutableBuilder[Self <: PReLULayerArgs] (val x: Self) extends AnyVal {
+    extension [Self <: PReLULayerArgs](x: Self) {
       
-      @scala.inline
-      def setAlphaConstraint(value: Constraint): Self = StObject.set(x, "alphaConstraint", value.asInstanceOf[js.Any])
+      inline def setAlphaConstraint(value: Constraint): Self = StObject.set(x, "alphaConstraint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlphaConstraintUndefined: Self = StObject.set(x, "alphaConstraint", js.undefined)
+      inline def setAlphaConstraintUndefined: Self = StObject.set(x, "alphaConstraint", js.undefined)
       
-      @scala.inline
-      def setAlphaInitializer(value: Initializer | InitializerIdentifier): Self = StObject.set(x, "alphaInitializer", value.asInstanceOf[js.Any])
+      inline def setAlphaInitializer(value: Initializer | InitializerIdentifier): Self = StObject.set(x, "alphaInitializer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlphaInitializerUndefined: Self = StObject.set(x, "alphaInitializer", js.undefined)
+      inline def setAlphaInitializerUndefined: Self = StObject.set(x, "alphaInitializer", js.undefined)
       
-      @scala.inline
-      def setAlphaRegularizer(value: Regularizer): Self = StObject.set(x, "alphaRegularizer", value.asInstanceOf[js.Any])
+      inline def setAlphaRegularizer(value: Regularizer): Self = StObject.set(x, "alphaRegularizer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlphaRegularizerUndefined: Self = StObject.set(x, "alphaRegularizer", js.undefined)
+      inline def setAlphaRegularizerUndefined: Self = StObject.set(x, "alphaRegularizer", js.undefined)
       
-      @scala.inline
-      def setSharedAxes(value: Double | js.Array[Double]): Self = StObject.set(x, "sharedAxes", value.asInstanceOf[js.Any])
+      inline def setSharedAxes(value: Double | js.Array[Double]): Self = StObject.set(x, "sharedAxes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSharedAxesUndefined: Self = StObject.set(x, "sharedAxes", js.undefined)
+      inline def setSharedAxesUndefined: Self = StObject.set(x, "sharedAxes", js.undefined)
       
-      @scala.inline
-      def setSharedAxesVarargs(value: Double*): Self = StObject.set(x, "sharedAxes", js.Array(value :_*))
+      inline def setSharedAxesVarargs(value: Double*): Self = StObject.set(x, "sharedAxes", js.Array(value :_*))
     }
   }
   
@@ -303,20 +278,16 @@ object advancedActivationsMod {
   }
   object ReLULayerArgs {
     
-    @scala.inline
-    def apply(): ReLULayerArgs = {
+    inline def apply(): ReLULayerArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReLULayerArgs]
     }
     
-    @scala.inline
-    implicit class ReLULayerArgsMutableBuilder[Self <: ReLULayerArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ReLULayerArgs](x: Self) {
       
-      @scala.inline
-      def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+      inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
+      inline def setMaxValueUndefined: Self = StObject.set(x, "maxValue", js.undefined)
     }
   }
   
@@ -332,20 +303,16 @@ object advancedActivationsMod {
   }
   object SoftmaxLayerArgs {
     
-    @scala.inline
-    def apply(): SoftmaxLayerArgs = {
+    inline def apply(): SoftmaxLayerArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SoftmaxLayerArgs]
     }
     
-    @scala.inline
-    implicit class SoftmaxLayerArgsMutableBuilder[Self <: SoftmaxLayerArgs] (val x: Self) extends AnyVal {
+    extension [Self <: SoftmaxLayerArgs](x: Self) {
       
-      @scala.inline
-      def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+      inline def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
+      inline def setAxisUndefined: Self = StObject.set(x, "axis", js.undefined)
     }
   }
   
@@ -360,20 +327,16 @@ object advancedActivationsMod {
   }
   object ThresholdedReLULayerArgs {
     
-    @scala.inline
-    def apply(): ThresholdedReLULayerArgs = {
+    inline def apply(): ThresholdedReLULayerArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ThresholdedReLULayerArgs]
     }
     
-    @scala.inline
-    implicit class ThresholdedReLULayerArgsMutableBuilder[Self <: ThresholdedReLULayerArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ThresholdedReLULayerArgs](x: Self) {
       
-      @scala.inline
-      def setTheta(value: Double): Self = StObject.set(x, "theta", value.asInstanceOf[js.Any])
+      inline def setTheta(value: Double): Self = StObject.set(x, "theta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThetaUndefined: Self = StObject.set(x, "theta", js.undefined)
+      inline def setThetaUndefined: Self = StObject.set(x, "theta", js.undefined)
     }
   }
 }

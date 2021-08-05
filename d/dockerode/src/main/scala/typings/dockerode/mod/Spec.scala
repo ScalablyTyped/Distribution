@@ -22,46 +22,33 @@ trait Spec
 }
 object Spec {
   
-  @scala.inline
-  def apply(Raft: RaftConfig): Spec = {
+  inline def apply(Raft: RaftConfig): Spec = {
     val __obj = js.Dynamic.literal(Raft = Raft.asInstanceOf[js.Any])
     __obj.asInstanceOf[Spec]
   }
   
-  @scala.inline
-  implicit class SpecMutableBuilder[Self <: Spec] (val x: Self) extends AnyVal {
+  extension [Self <: Spec](x: Self) {
     
-    @scala.inline
-    def setCAConfig(value: CAConfig): Self = StObject.set(x, "CAConfig", value.asInstanceOf[js.Any])
+    inline def setCAConfig(value: CAConfig): Self = StObject.set(x, "CAConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCAConfigUndefined: Self = StObject.set(x, "CAConfig", js.undefined)
+    inline def setCAConfigUndefined: Self = StObject.set(x, "CAConfig", js.undefined)
     
-    @scala.inline
-    def setDispatcher(value: DispatcherConfig): Self = StObject.set(x, "Dispatcher", value.asInstanceOf[js.Any])
+    inline def setDispatcher(value: DispatcherConfig): Self = StObject.set(x, "Dispatcher", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDispatcherUndefined: Self = StObject.set(x, "Dispatcher", js.undefined)
+    inline def setDispatcherUndefined: Self = StObject.set(x, "Dispatcher", js.undefined)
     
-    @scala.inline
-    def setEncryptionConfig(value: EncryptionConfig): Self = StObject.set(x, "EncryptionConfig", value.asInstanceOf[js.Any])
+    inline def setEncryptionConfig(value: EncryptionConfig): Self = StObject.set(x, "EncryptionConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionConfigUndefined: Self = StObject.set(x, "EncryptionConfig", js.undefined)
+    inline def setEncryptionConfigUndefined: Self = StObject.set(x, "EncryptionConfig", js.undefined)
     
-    @scala.inline
-    def setOrchestration(value: OrchestrationConfig): Self = StObject.set(x, "Orchestration", value.asInstanceOf[js.Any])
+    inline def setOrchestration(value: OrchestrationConfig): Self = StObject.set(x, "Orchestration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrchestrationUndefined: Self = StObject.set(x, "Orchestration", js.undefined)
+    inline def setOrchestrationUndefined: Self = StObject.set(x, "Orchestration", js.undefined)
     
-    @scala.inline
-    def setRaft(value: RaftConfig): Self = StObject.set(x, "Raft", value.asInstanceOf[js.Any])
+    inline def setRaft(value: RaftConfig): Self = StObject.set(x, "Raft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskDefaults(value: TaskDefaults): Self = StObject.set(x, "TaskDefaults", value.asInstanceOf[js.Any])
+    inline def setTaskDefaults(value: TaskDefaults): Self = StObject.set(x, "TaskDefaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaskDefaultsUndefined: Self = StObject.set(x, "TaskDefaults", js.undefined)
+    inline def setTaskDefaultsUndefined: Self = StObject.set(x, "TaskDefaults", js.undefined)
   }
 }

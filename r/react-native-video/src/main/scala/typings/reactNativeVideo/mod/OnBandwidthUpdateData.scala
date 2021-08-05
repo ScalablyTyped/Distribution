@@ -10,16 +10,13 @@ trait OnBandwidthUpdateData extends StObject {
 }
 object OnBandwidthUpdateData {
   
-  @scala.inline
-  def apply(bitrate: Double): OnBandwidthUpdateData = {
+  inline def apply(bitrate: Double): OnBandwidthUpdateData = {
     val __obj = js.Dynamic.literal(bitrate = bitrate.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnBandwidthUpdateData]
   }
   
-  @scala.inline
-  implicit class OnBandwidthUpdateDataMutableBuilder[Self <: OnBandwidthUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: OnBandwidthUpdateData](x: Self) {
     
-    @scala.inline
-    def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
+    inline def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
   }
 }

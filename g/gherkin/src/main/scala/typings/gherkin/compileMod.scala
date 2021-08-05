@@ -13,6 +13,5 @@ object compileMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(gherkinDocument: IGherkinDocument, uri: String, newId: NewId): js.Array[IPickle] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(gherkinDocument.asInstanceOf[js.Any], uri.asInstanceOf[js.Any], newId.asInstanceOf[js.Any])).asInstanceOf[js.Array[IPickle]]
+  inline def default(gherkinDocument: IGherkinDocument, uri: String, newId: NewId): js.Array[IPickle] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(gherkinDocument.asInstanceOf[js.Any], uri.asInstanceOf[js.Any], newId.asInstanceOf[js.Any])).asInstanceOf[js.Array[IPickle]]
 }

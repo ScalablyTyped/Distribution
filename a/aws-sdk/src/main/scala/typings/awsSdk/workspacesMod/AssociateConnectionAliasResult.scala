@@ -13,19 +13,15 @@ trait AssociateConnectionAliasResult extends StObject {
 }
 object AssociateConnectionAliasResult {
   
-  @scala.inline
-  def apply(): AssociateConnectionAliasResult = {
+  inline def apply(): AssociateConnectionAliasResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociateConnectionAliasResult]
   }
   
-  @scala.inline
-  implicit class AssociateConnectionAliasResultMutableBuilder[Self <: AssociateConnectionAliasResult] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateConnectionAliasResult](x: Self) {
     
-    @scala.inline
-    def setConnectionIdentifier(value: ConnectionIdentifier): Self = StObject.set(x, "ConnectionIdentifier", value.asInstanceOf[js.Any])
+    inline def setConnectionIdentifier(value: ConnectionIdentifier): Self = StObject.set(x, "ConnectionIdentifier", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionIdentifierUndefined: Self = StObject.set(x, "ConnectionIdentifier", js.undefined)
+    inline def setConnectionIdentifierUndefined: Self = StObject.set(x, "ConnectionIdentifier", js.undefined)
   }
 }

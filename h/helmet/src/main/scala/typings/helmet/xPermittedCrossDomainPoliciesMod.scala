@@ -13,8 +13,7 @@ object xPermittedCrossDomainPoliciesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): js.Function3[
+  inline def default(): js.Function3[
     /* _req */ IncomingMessage, 
     /* res */ ServerResponse, 
     /* next */ js.Function0[Unit], 
@@ -25,8 +24,7 @@ object xPermittedCrossDomainPoliciesMod {
     /* next */ js.Function0[Unit], 
     Unit
   ]]
-  @scala.inline
-  def default(options: ReadonlyXPermittedCrossDo): js.Function3[
+  inline def default(options: ReadonlyXPermittedCrossDo): js.Function3[
     /* _req */ IncomingMessage, 
     /* res */ ServerResponse, 
     /* next */ js.Function0[Unit], 
@@ -44,20 +42,16 @@ object xPermittedCrossDomainPoliciesMod {
   }
   object XPermittedCrossDomainPoliciesOptions {
     
-    @scala.inline
-    def apply(): XPermittedCrossDomainPoliciesOptions = {
+    inline def apply(): XPermittedCrossDomainPoliciesOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[XPermittedCrossDomainPoliciesOptions]
     }
     
-    @scala.inline
-    implicit class XPermittedCrossDomainPoliciesOptionsMutableBuilder[Self <: XPermittedCrossDomainPoliciesOptions] (val x: Self) extends AnyVal {
+    extension [Self <: XPermittedCrossDomainPoliciesOptions](x: Self) {
       
-      @scala.inline
-      def setPermittedPolicies(value: String): Self = StObject.set(x, "permittedPolicies", value.asInstanceOf[js.Any])
+      inline def setPermittedPolicies(value: String): Self = StObject.set(x, "permittedPolicies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPermittedPoliciesUndefined: Self = StObject.set(x, "permittedPolicies", js.undefined)
+      inline def setPermittedPoliciesUndefined: Self = StObject.set(x, "permittedPolicies", js.undefined)
     }
   }
 }

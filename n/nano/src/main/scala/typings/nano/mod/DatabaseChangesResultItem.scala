@@ -22,28 +22,21 @@ trait DatabaseChangesResultItem extends StObject {
 }
 object DatabaseChangesResultItem {
   
-  @scala.inline
-  def apply(changes: js.Array[Rev], deleted: Boolean, id: String, seq: js.Any): DatabaseChangesResultItem = {
+  inline def apply(changes: js.Array[Rev], deleted: Boolean, id: String, seq: js.Any): DatabaseChangesResultItem = {
     val __obj = js.Dynamic.literal(changes = changes.asInstanceOf[js.Any], deleted = deleted.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], seq = seq.asInstanceOf[js.Any])
     __obj.asInstanceOf[DatabaseChangesResultItem]
   }
   
-  @scala.inline
-  implicit class DatabaseChangesResultItemMutableBuilder[Self <: DatabaseChangesResultItem] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseChangesResultItem](x: Self) {
     
-    @scala.inline
-    def setChanges(value: js.Array[Rev]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
+    inline def setChanges(value: js.Array[Rev]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangesVarargs(value: Rev*): Self = StObject.set(x, "changes", js.Array(value :_*))
+    inline def setChangesVarargs(value: Rev*): Self = StObject.set(x, "changes", js.Array(value :_*))
     
-    @scala.inline
-    def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+    inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeq(value: js.Any): Self = StObject.set(x, "seq", value.asInstanceOf[js.Any])
+    inline def setSeq(value: js.Any): Self = StObject.set(x, "seq", value.asInstanceOf[js.Any])
   }
 }

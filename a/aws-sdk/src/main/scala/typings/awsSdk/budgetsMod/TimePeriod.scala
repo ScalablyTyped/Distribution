@@ -18,25 +18,19 @@ trait TimePeriod extends StObject {
 }
 object TimePeriod {
   
-  @scala.inline
-  def apply(): TimePeriod = {
+  inline def apply(): TimePeriod = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TimePeriod]
   }
   
-  @scala.inline
-  implicit class TimePeriodMutableBuilder[Self <: TimePeriod] (val x: Self) extends AnyVal {
+  extension [Self <: TimePeriod](x: Self) {
     
-    @scala.inline
-    def setEnd(value: GenericTimestamp): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
+    inline def setEnd(value: GenericTimestamp): Self = StObject.set(x, "End", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "End", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "End", js.undefined)
     
-    @scala.inline
-    def setStart(value: GenericTimestamp): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
+    inline def setStart(value: GenericTimestamp): Self = StObject.set(x, "Start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "Start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "Start", js.undefined)
   }
 }

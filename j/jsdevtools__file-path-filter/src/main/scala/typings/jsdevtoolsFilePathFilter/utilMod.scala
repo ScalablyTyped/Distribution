@@ -15,11 +15,9 @@ object utilMod {
   @js.native
   val filters: js.Symbol = js.native
   
-  @scala.inline
-  def isFilterCriterion(value: js.Any): /* is @jsdevtools/file-path-filter.@jsdevtools/file-path-filter/lib/types.FilterCriterion */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFilterCriterion")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @jsdevtools/file-path-filter.@jsdevtools/file-path-filter/lib/types.FilterCriterion */ Boolean]
+  inline def isFilterCriterion(value: js.Any): /* is @jsdevtools/file-path-filter.@jsdevtools/file-path-filter/lib/types.FilterCriterion */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFilterCriterion")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @jsdevtools/file-path-filter.@jsdevtools/file-path-filter/lib/types.FilterCriterion */ Boolean]
   
-  @scala.inline
-  def isPathFilter(value: js.Any): /* is @jsdevtools/file-path-filter.@jsdevtools/file-path-filter/lib/util.PathFilter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPathFilter")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @jsdevtools/file-path-filter.@jsdevtools/file-path-filter/lib/util.PathFilter */ Boolean]
+  inline def isPathFilter(value: js.Any): /* is @jsdevtools/file-path-filter.@jsdevtools/file-path-filter/lib/util.PathFilter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPathFilter")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @jsdevtools/file-path-filter.@jsdevtools/file-path-filter/lib/util.PathFilter */ Boolean]
   
   @js.native
   trait PathFilter

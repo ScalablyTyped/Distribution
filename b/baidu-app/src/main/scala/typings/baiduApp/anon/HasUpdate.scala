@@ -10,16 +10,13 @@ trait HasUpdate extends StObject {
 }
 object HasUpdate {
   
-  @scala.inline
-  def apply(hasUpdate: Boolean): HasUpdate = {
+  inline def apply(hasUpdate: Boolean): HasUpdate = {
     val __obj = js.Dynamic.literal(hasUpdate = hasUpdate.asInstanceOf[js.Any])
     __obj.asInstanceOf[HasUpdate]
   }
   
-  @scala.inline
-  implicit class HasUpdateMutableBuilder[Self <: HasUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: HasUpdate](x: Self) {
     
-    @scala.inline
-    def setHasUpdate(value: Boolean): Self = StObject.set(x, "hasUpdate", value.asInstanceOf[js.Any])
+    inline def setHasUpdate(value: Boolean): Self = StObject.set(x, "hasUpdate", value.asInstanceOf[js.Any])
   }
 }

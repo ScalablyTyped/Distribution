@@ -210,7 +210,7 @@ object cachedNodeRendererMod {
        with NodeRenderer[RenderableStylesheet, HTMLStyleElement] {
     def this(options: CachedNodeRendererOptions) = this()
     
-    var options: js.Any = js.native
+    /* private */ var options: js.Any = js.native
   }
   
   trait CachedNodeRendererOptions extends StObject {
@@ -708,20 +708,16 @@ object cachedNodeRendererMod {
   }
   object CachedNodeRendererOptions {
     
-    @scala.inline
-    def apply(attrKey: String, createElement: FnCall): CachedNodeRendererOptions = {
+    inline def apply(attrKey: String, createElement: FnCall): CachedNodeRendererOptions = {
       val __obj = js.Dynamic.literal(attrKey = attrKey.asInstanceOf[js.Any], createElement = createElement.asInstanceOf[js.Any])
       __obj.asInstanceOf[CachedNodeRendererOptions]
     }
     
-    @scala.inline
-    implicit class CachedNodeRendererOptionsMutableBuilder[Self <: CachedNodeRendererOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CachedNodeRendererOptions](x: Self) {
       
-      @scala.inline
-      def setAttrKey(value: String): Self = StObject.set(x, "attrKey", value.asInstanceOf[js.Any])
+      inline def setAttrKey(value: String): Self = StObject.set(x, "attrKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateElement(value: FnCall): Self = StObject.set(x, "createElement", value.asInstanceOf[js.Any])
+      inline def setCreateElement(value: FnCall): Self = StObject.set(x, "createElement", value.asInstanceOf[js.Any])
     }
   }
 }

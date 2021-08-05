@@ -28,31 +28,23 @@ trait SchemaGradientRule extends StObject {
 }
 object SchemaGradientRule {
   
-  @scala.inline
-  def apply(): SchemaGradientRule = {
+  inline def apply(): SchemaGradientRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGradientRule]
   }
   
-  @scala.inline
-  implicit class SchemaGradientRuleMutableBuilder[Self <: SchemaGradientRule] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGradientRule](x: Self) {
     
-    @scala.inline
-    def setMaxpoint(value: SchemaInterpolationPoint): Self = StObject.set(x, "maxpoint", value.asInstanceOf[js.Any])
+    inline def setMaxpoint(value: SchemaInterpolationPoint): Self = StObject.set(x, "maxpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxpointUndefined: Self = StObject.set(x, "maxpoint", js.undefined)
+    inline def setMaxpointUndefined: Self = StObject.set(x, "maxpoint", js.undefined)
     
-    @scala.inline
-    def setMidpoint(value: SchemaInterpolationPoint): Self = StObject.set(x, "midpoint", value.asInstanceOf[js.Any])
+    inline def setMidpoint(value: SchemaInterpolationPoint): Self = StObject.set(x, "midpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMidpointUndefined: Self = StObject.set(x, "midpoint", js.undefined)
+    inline def setMidpointUndefined: Self = StObject.set(x, "midpoint", js.undefined)
     
-    @scala.inline
-    def setMinpoint(value: SchemaInterpolationPoint): Self = StObject.set(x, "minpoint", value.asInstanceOf[js.Any])
+    inline def setMinpoint(value: SchemaInterpolationPoint): Self = StObject.set(x, "minpoint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinpointUndefined: Self = StObject.set(x, "minpoint", js.undefined)
+    inline def setMinpointUndefined: Self = StObject.set(x, "minpoint", js.undefined)
   }
 }

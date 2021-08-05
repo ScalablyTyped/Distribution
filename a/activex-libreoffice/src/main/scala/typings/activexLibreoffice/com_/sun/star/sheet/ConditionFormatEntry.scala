@@ -20,8 +20,7 @@ trait ConditionFormatEntry
 }
 object ConditionFormatEntry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Formula1: String,
     Formula2: String,
     Operator: Double,
@@ -36,19 +35,14 @@ object ConditionFormatEntry {
     __obj.asInstanceOf[ConditionFormatEntry]
   }
   
-  @scala.inline
-  implicit class ConditionFormatEntryMutableBuilder[Self <: ConditionFormatEntry] (val x: Self) extends AnyVal {
+  extension [Self <: ConditionFormatEntry](x: Self) {
     
-    @scala.inline
-    def setFormula1(value: String): Self = StObject.set(x, "Formula1", value.asInstanceOf[js.Any])
+    inline def setFormula1(value: String): Self = StObject.set(x, "Formula1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormula2(value: String): Self = StObject.set(x, "Formula2", value.asInstanceOf[js.Any])
+    inline def setFormula2(value: String): Self = StObject.set(x, "Formula2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperator(value: Double): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: Double): Self = StObject.set(x, "Operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleName(value: String): Self = StObject.set(x, "StyleName", value.asInstanceOf[js.Any])
+    inline def setStyleName(value: String): Self = StObject.set(x, "StyleName", value.asInstanceOf[js.Any])
   }
 }

@@ -8,11 +8,9 @@ object maximMazurokGapiClientKgsearchStrings {
   
   @js.native
   sealed trait kgsearch extends StObject
-  @scala.inline
-  def kgsearch: kgsearch = "kgsearch".asInstanceOf[kgsearch]
+  inline def kgsearch: kgsearch = "kgsearch".asInstanceOf[kgsearch]
   
   @js.native
   sealed trait v1 extends StObject
-  @scala.inline
-  def v1: v1 = "v1".asInstanceOf[v1]
+  inline def v1: v1 = "v1".asInstanceOf[v1]
 }

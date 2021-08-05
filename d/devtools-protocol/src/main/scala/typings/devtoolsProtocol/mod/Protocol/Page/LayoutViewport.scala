@@ -29,25 +29,19 @@ trait LayoutViewport extends StObject {
 }
 object LayoutViewport {
   
-  @scala.inline
-  def apply(clientHeight: integer, clientWidth: integer, pageX: integer, pageY: integer): LayoutViewport = {
+  inline def apply(clientHeight: integer, clientWidth: integer, pageX: integer, pageY: integer): LayoutViewport = {
     val __obj = js.Dynamic.literal(clientHeight = clientHeight.asInstanceOf[js.Any], clientWidth = clientWidth.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any])
     __obj.asInstanceOf[LayoutViewport]
   }
   
-  @scala.inline
-  implicit class LayoutViewportMutableBuilder[Self <: LayoutViewport] (val x: Self) extends AnyVal {
+  extension [Self <: LayoutViewport](x: Self) {
     
-    @scala.inline
-    def setClientHeight(value: integer): Self = StObject.set(x, "clientHeight", value.asInstanceOf[js.Any])
+    inline def setClientHeight(value: integer): Self = StObject.set(x, "clientHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientWidth(value: integer): Self = StObject.set(x, "clientWidth", value.asInstanceOf[js.Any])
+    inline def setClientWidth(value: integer): Self = StObject.set(x, "clientWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageX(value: integer): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
+    inline def setPageX(value: integer): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageY(value: integer): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
+    inline def setPageY(value: integer): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
   }
 }

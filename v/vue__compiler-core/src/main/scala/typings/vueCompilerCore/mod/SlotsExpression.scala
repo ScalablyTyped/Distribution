@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SlotsExpression extends StObject
 object SlotsExpression {
   
-  @scala.inline
-  def DynamicSlotsExpression(
+  inline def DynamicSlotsExpression(
     arguments: js.Tuple2[SlotsObjectExpression, DynamicSlotEntries],
     callee: js.Symbol,
     loc: SourceLocation
@@ -22,8 +21,7 @@ object SlotsExpression {
     __obj.asInstanceOf[typings.vueCompilerCore.mod.DynamicSlotsExpression]
   }
   
-  @scala.inline
-  def SlotsObjectExpression(loc: SourceLocation, properties: js.Array[SlotsObjectProperty]): typings.vueCompilerCore.mod.SlotsObjectExpression = {
+  inline def SlotsObjectExpression(loc: SourceLocation, properties: js.Array[SlotsObjectProperty]): typings.vueCompilerCore.mod.SlotsObjectExpression = {
     val __obj = js.Dynamic.literal(loc = loc.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(15)
     __obj.asInstanceOf[typings.vueCompilerCore.mod.SlotsObjectExpression]

@@ -17,22 +17,17 @@ trait GistsUpdateCommentEndpoint extends StObject {
 }
 object GistsUpdateCommentEndpoint {
   
-  @scala.inline
-  def apply(body: String, comment_id: Double, gist_id: String): GistsUpdateCommentEndpoint = {
+  inline def apply(body: String, comment_id: Double, gist_id: String): GistsUpdateCommentEndpoint = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], comment_id = comment_id.asInstanceOf[js.Any], gist_id = gist_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[GistsUpdateCommentEndpoint]
   }
   
-  @scala.inline
-  implicit class GistsUpdateCommentEndpointMutableBuilder[Self <: GistsUpdateCommentEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: GistsUpdateCommentEndpoint](x: Self) {
     
-    @scala.inline
-    def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComment_id(value: Double): Self = StObject.set(x, "comment_id", value.asInstanceOf[js.Any])
+    inline def setComment_id(value: Double): Self = StObject.set(x, "comment_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGist_id(value: String): Self = StObject.set(x, "gist_id", value.asInstanceOf[js.Any])
+    inline def setGist_id(value: String): Self = StObject.set(x, "gist_id", value.asInstanceOf[js.Any])
   }
 }

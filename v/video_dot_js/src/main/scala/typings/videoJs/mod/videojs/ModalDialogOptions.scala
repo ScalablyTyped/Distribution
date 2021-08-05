@@ -48,49 +48,35 @@ trait ModalDialogOptions
 }
 object ModalDialogOptions {
   
-  @scala.inline
-  def apply(): ModalDialogOptions = {
+  inline def apply(): ModalDialogOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ModalDialogOptions]
   }
   
-  @scala.inline
-  implicit class ModalDialogOptionsMutableBuilder[Self <: ModalDialogOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ModalDialogOptions](x: Self) {
     
-    @scala.inline
-    def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: js.Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setFillAlways(value: Boolean): Self = StObject.set(x, "fillAlways", value.asInstanceOf[js.Any])
+    inline def setFillAlways(value: Boolean): Self = StObject.set(x, "fillAlways", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillAlwaysUndefined: Self = StObject.set(x, "fillAlways", js.undefined)
+    inline def setFillAlwaysUndefined: Self = StObject.set(x, "fillAlways", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setTemporary(value: Boolean): Self = StObject.set(x, "temporary", value.asInstanceOf[js.Any])
+    inline def setTemporary(value: Boolean): Self = StObject.set(x, "temporary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemporaryUndefined: Self = StObject.set(x, "temporary", js.undefined)
+    inline def setTemporaryUndefined: Self = StObject.set(x, "temporary", js.undefined)
     
-    @scala.inline
-    def setUncloseable(value: Boolean): Self = StObject.set(x, "uncloseable", value.asInstanceOf[js.Any])
+    inline def setUncloseable(value: Boolean): Self = StObject.set(x, "uncloseable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUncloseableUndefined: Self = StObject.set(x, "uncloseable", js.undefined)
+    inline def setUncloseableUndefined: Self = StObject.set(x, "uncloseable", js.undefined)
   }
 }

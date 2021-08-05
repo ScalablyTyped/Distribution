@@ -23,19 +23,15 @@ trait ASPxClientXYDiagramBase
 }
 object ASPxClientXYDiagramBase {
   
-  @scala.inline
-  def apply(axisX: ASPxClientAxisBase, axisY: ASPxClientAxisBase, chart: ASPxClientWebChart): ASPxClientXYDiagramBase = {
+  inline def apply(axisX: ASPxClientAxisBase, axisY: ASPxClientAxisBase, chart: ASPxClientWebChart): ASPxClientXYDiagramBase = {
     val __obj = js.Dynamic.literal(axisX = axisX.asInstanceOf[js.Any], axisY = axisY.asInstanceOf[js.Any], chart = chart.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientXYDiagramBase]
   }
   
-  @scala.inline
-  implicit class ASPxClientXYDiagramBaseMutableBuilder[Self <: ASPxClientXYDiagramBase] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientXYDiagramBase](x: Self) {
     
-    @scala.inline
-    def setAxisX(value: ASPxClientAxisBase): Self = StObject.set(x, "axisX", value.asInstanceOf[js.Any])
+    inline def setAxisX(value: ASPxClientAxisBase): Self = StObject.set(x, "axisX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAxisY(value: ASPxClientAxisBase): Self = StObject.set(x, "axisY", value.asInstanceOf[js.Any])
+    inline def setAxisY(value: ASPxClientAxisBase): Self = StObject.set(x, "axisY", value.asInstanceOf[js.Any])
   }
 }

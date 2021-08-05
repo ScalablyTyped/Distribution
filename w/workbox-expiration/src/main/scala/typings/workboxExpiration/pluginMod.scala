@@ -42,32 +42,24 @@ object pluginMod {
   }
   object ExpirationPluginConfig {
     
-    @scala.inline
-    def apply(): ExpirationPluginConfig = {
+    inline def apply(): ExpirationPluginConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ExpirationPluginConfig]
     }
     
-    @scala.inline
-    implicit class ExpirationPluginConfigMutableBuilder[Self <: ExpirationPluginConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ExpirationPluginConfig](x: Self) {
       
-      @scala.inline
-      def setMaxAgeSeconds(value: Double): Self = StObject.set(x, "maxAgeSeconds", value.asInstanceOf[js.Any])
+      inline def setMaxAgeSeconds(value: Double): Self = StObject.set(x, "maxAgeSeconds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxAgeSecondsUndefined: Self = StObject.set(x, "maxAgeSeconds", js.undefined)
+      inline def setMaxAgeSecondsUndefined: Self = StObject.set(x, "maxAgeSeconds", js.undefined)
       
-      @scala.inline
-      def setMaxEntries(value: Double): Self = StObject.set(x, "maxEntries", value.asInstanceOf[js.Any])
+      inline def setMaxEntries(value: Double): Self = StObject.set(x, "maxEntries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxEntriesUndefined: Self = StObject.set(x, "maxEntries", js.undefined)
+      inline def setMaxEntriesUndefined: Self = StObject.set(x, "maxEntries", js.undefined)
       
-      @scala.inline
-      def setPurgeOnQuotaError(value: Boolean): Self = StObject.set(x, "purgeOnQuotaError", value.asInstanceOf[js.Any])
+      inline def setPurgeOnQuotaError(value: Boolean): Self = StObject.set(x, "purgeOnQuotaError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPurgeOnQuotaErrorUndefined: Self = StObject.set(x, "purgeOnQuotaError", js.undefined)
+      inline def setPurgeOnQuotaErrorUndefined: Self = StObject.set(x, "purgeOnQuotaError", js.undefined)
     }
   }
 }

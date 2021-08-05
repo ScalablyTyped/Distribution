@@ -26,34 +26,25 @@ trait SchemaDomainAliases extends StObject {
 }
 object SchemaDomainAliases {
   
-  @scala.inline
-  def apply(): SchemaDomainAliases = {
+  inline def apply(): SchemaDomainAliases = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDomainAliases]
   }
   
-  @scala.inline
-  implicit class SchemaDomainAliasesMutableBuilder[Self <: SchemaDomainAliases] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDomainAliases](x: Self) {
     
-    @scala.inline
-    def setDomainAliases(value: js.Array[SchemaDomainAlias]): Self = StObject.set(x, "domainAliases", value.asInstanceOf[js.Any])
+    inline def setDomainAliases(value: js.Array[SchemaDomainAlias]): Self = StObject.set(x, "domainAliases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainAliasesUndefined: Self = StObject.set(x, "domainAliases", js.undefined)
+    inline def setDomainAliasesUndefined: Self = StObject.set(x, "domainAliases", js.undefined)
     
-    @scala.inline
-    def setDomainAliasesVarargs(value: SchemaDomainAlias*): Self = StObject.set(x, "domainAliases", js.Array(value :_*))
+    inline def setDomainAliasesVarargs(value: SchemaDomainAlias*): Self = StObject.set(x, "domainAliases", js.Array(value :_*))
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

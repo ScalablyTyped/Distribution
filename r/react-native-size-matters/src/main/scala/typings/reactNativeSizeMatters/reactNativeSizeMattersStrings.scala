@@ -8,11 +8,9 @@ object reactNativeSizeMattersStrings {
   
   @js.native
   sealed trait NamedStyles extends StObject
-  @scala.inline
-  def NamedStyles: NamedStyles = "NamedStyles".asInstanceOf[NamedStyles]
+  inline def NamedStyles: NamedStyles = "NamedStyles".asInstanceOf[NamedStyles]
   
   @js.native
   sealed trait create extends StObject
-  @scala.inline
-  def create: create = "create".asInstanceOf[create]
+  inline def create: create = "create".asInstanceOf[create]
 }

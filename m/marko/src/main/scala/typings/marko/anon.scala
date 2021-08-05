@@ -12,17 +12,14 @@ object anon {
   }
   object AttributeGroups {
     
-    @scala.inline
-    def apply(attributeGroups: js.Any): AttributeGroups = {
+    inline def apply(attributeGroups: js.Any): AttributeGroups = {
       val __obj = js.Dynamic.literal(attributeGroups = attributeGroups.asInstanceOf[js.Any])
       __obj.asInstanceOf[AttributeGroups]
     }
     
-    @scala.inline
-    implicit class AttributeGroupsMutableBuilder[Self <: AttributeGroups] (val x: Self) extends AnyVal {
+    extension [Self <: AttributeGroups](x: Self) {
       
-      @scala.inline
-      def setAttributeGroups(value: js.Any): Self = StObject.set(x, "attributeGroups", value.asInstanceOf[js.Any])
+      inline def setAttributeGroups(value: js.Any): Self = StObject.set(x, "attributeGroups", value.asInstanceOf[js.Any])
     }
   }
   
@@ -32,17 +29,14 @@ object anon {
   }
   object Name {
     
-    @scala.inline
-    def apply(name: String): Name = {
+    inline def apply(name: String): Name = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Name]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+    extension [Self <: Name](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

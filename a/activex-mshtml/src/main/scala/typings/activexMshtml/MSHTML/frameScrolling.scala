@@ -17,15 +17,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait frameScrolling extends StObject
 object frameScrolling {
   
-  @scala.inline
-  def frameScrolling_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def frameScrolling_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
   
-  @scala.inline
-  def frameScrollingauto: `4` = 4.asInstanceOf[`4`]
+  inline def frameScrollingauto: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def frameScrollingno: `2` = 2.asInstanceOf[`2`]
+  inline def frameScrollingno: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def frameScrollingyes: `1` = 1.asInstanceOf[`1`]
+  inline def frameScrollingyes: `1` = 1.asInstanceOf[`1`]
 }

@@ -19,38 +19,28 @@ object anon {
   }
   object Billion {
     
-    @scala.inline
-    def apply(): Billion = {
+    inline def apply(): Billion = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Billion]
     }
     
-    @scala.inline
-    implicit class BillionMutableBuilder[Self <: Billion] (val x: Self) extends AnyVal {
+    extension [Self <: Billion](x: Self) {
       
-      @scala.inline
-      def setBillion(value: String): Self = StObject.set(x, "billion", value.asInstanceOf[js.Any])
+      inline def setBillion(value: String): Self = StObject.set(x, "billion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBillionUndefined: Self = StObject.set(x, "billion", js.undefined)
+      inline def setBillionUndefined: Self = StObject.set(x, "billion", js.undefined)
       
-      @scala.inline
-      def setMillion(value: String): Self = StObject.set(x, "million", value.asInstanceOf[js.Any])
+      inline def setMillion(value: String): Self = StObject.set(x, "million", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMillionUndefined: Self = StObject.set(x, "million", js.undefined)
+      inline def setMillionUndefined: Self = StObject.set(x, "million", js.undefined)
       
-      @scala.inline
-      def setThousand(value: String): Self = StObject.set(x, "thousand", value.asInstanceOf[js.Any])
+      inline def setThousand(value: String): Self = StObject.set(x, "thousand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThousandUndefined: Self = StObject.set(x, "thousand", js.undefined)
+      inline def setThousandUndefined: Self = StObject.set(x, "thousand", js.undefined)
       
-      @scala.inline
-      def setTrillion(value: String): Self = StObject.set(x, "trillion", value.asInstanceOf[js.Any])
+      inline def setTrillion(value: String): Self = StObject.set(x, "trillion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrillionUndefined: Self = StObject.set(x, "trillion", js.undefined)
+      inline def setTrillionUndefined: Self = StObject.set(x, "trillion", js.undefined)
     }
   }
   
@@ -64,23 +54,18 @@ object anon {
   }
   object Code {
     
-    @scala.inline
-    def apply(code: String, position: String, symbol: String): Code = {
+    inline def apply(code: String, position: String, symbol: String): Code = {
       val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
       __obj.asInstanceOf[Code]
     }
     
-    @scala.inline
-    implicit class CodeMutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
+    extension [Self <: Code](x: Self) {
       
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+      inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     }
   }
   
@@ -94,26 +79,20 @@ object anon {
   }
   object Decimal {
     
-    @scala.inline
-    def apply(decimal: String, thousands: String): Decimal = {
+    inline def apply(decimal: String, thousands: String): Decimal = {
       val __obj = js.Dynamic.literal(decimal = decimal.asInstanceOf[js.Any], thousands = thousands.asInstanceOf[js.Any])
       __obj.asInstanceOf[Decimal]
     }
     
-    @scala.inline
-    implicit class DecimalMutableBuilder[Self <: Decimal] (val x: Self) extends AnyVal {
+    extension [Self <: Decimal](x: Self) {
       
-      @scala.inline
-      def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
+      inline def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThousands(value: String): Self = StObject.set(x, "thousands", value.asInstanceOf[js.Any])
+      inline def setThousands(value: String): Self = StObject.set(x, "thousands", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThousandsSize(value: Double): Self = StObject.set(x, "thousandsSize", value.asInstanceOf[js.Any])
+      inline def setThousandsSize(value: Double): Self = StObject.set(x, "thousandsSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThousandsSizeUndefined: Self = StObject.set(x, "thousandsSize", js.undefined)
+      inline def setThousandsSizeUndefined: Self = StObject.set(x, "thousandsSize", js.undefined)
     }
   }
   
@@ -129,8 +108,7 @@ object anon {
   }
   object FourDigits {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       fourDigits: Format,
       fullWithNoDecimals: Format,
       fullWithTwoDecimals: Format,
@@ -140,20 +118,15 @@ object anon {
       __obj.asInstanceOf[FourDigits]
     }
     
-    @scala.inline
-    implicit class FourDigitsMutableBuilder[Self <: FourDigits] (val x: Self) extends AnyVal {
+    extension [Self <: FourDigits](x: Self) {
       
-      @scala.inline
-      def setFourDigits(value: Format): Self = StObject.set(x, "fourDigits", value.asInstanceOf[js.Any])
+      inline def setFourDigits(value: Format): Self = StObject.set(x, "fourDigits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullWithNoDecimals(value: Format): Self = StObject.set(x, "fullWithNoDecimals", value.asInstanceOf[js.Any])
+      inline def setFullWithNoDecimals(value: Format): Self = StObject.set(x, "fullWithNoDecimals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullWithTwoDecimals(value: Format): Self = StObject.set(x, "fullWithTwoDecimals", value.asInstanceOf[js.Any])
+      inline def setFullWithTwoDecimals(value: Format): Self = StObject.set(x, "fullWithTwoDecimals", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFullWithTwoDecimalsNoCurrency(value: Format): Self = StObject.set(x, "fullWithTwoDecimalsNoCurrency", value.asInstanceOf[js.Any])
+      inline def setFullWithTwoDecimalsNoCurrency(value: Format): Self = StObject.set(x, "fullWithTwoDecimalsNoCurrency", value.asInstanceOf[js.Any])
     }
   }
   
@@ -169,26 +142,20 @@ object anon {
   }
   object Million {
     
-    @scala.inline
-    def apply(billion: String, million: String, thousand: String, trillion: String): Million = {
+    inline def apply(billion: String, million: String, thousand: String, trillion: String): Million = {
       val __obj = js.Dynamic.literal(billion = billion.asInstanceOf[js.Any], million = million.asInstanceOf[js.Any], thousand = thousand.asInstanceOf[js.Any], trillion = trillion.asInstanceOf[js.Any])
       __obj.asInstanceOf[Million]
     }
     
-    @scala.inline
-    implicit class MillionMutableBuilder[Self <: Million] (val x: Self) extends AnyVal {
+    extension [Self <: Million](x: Self) {
       
-      @scala.inline
-      def setBillion(value: String): Self = StObject.set(x, "billion", value.asInstanceOf[js.Any])
+      inline def setBillion(value: String): Self = StObject.set(x, "billion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMillion(value: String): Self = StObject.set(x, "million", value.asInstanceOf[js.Any])
+      inline def setMillion(value: String): Self = StObject.set(x, "million", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThousand(value: String): Self = StObject.set(x, "thousand", value.asInstanceOf[js.Any])
+      inline def setThousand(value: String): Self = StObject.set(x, "thousand", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrillion(value: String): Self = StObject.set(x, "trillion", value.asInstanceOf[js.Any])
+      inline def setTrillion(value: String): Self = StObject.set(x, "trillion", value.asInstanceOf[js.Any])
     }
   }
 }

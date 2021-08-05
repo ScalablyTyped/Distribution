@@ -15,8 +15,7 @@ trait FieldInputValues
 }
 object FieldInputValues {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     defaultValue: String,
     error: InputValuesError,
     inputId: String,
@@ -30,13 +29,10 @@ object FieldInputValues {
     __obj.asInstanceOf[FieldInputValues]
   }
   
-  @scala.inline
-  implicit class FieldInputValuesMutableBuilder[Self <: FieldInputValues] (val x: Self) extends AnyVal {
+  extension [Self <: FieldInputValues](x: Self) {
     
-    @scala.inline
-    def setOperators(value: js.Array[Double]): Self = StObject.set(x, "operators", value.asInstanceOf[js.Any])
+    inline def setOperators(value: js.Array[Double]): Self = StObject.set(x, "operators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorsVarargs(value: Double*): Self = StObject.set(x, "operators", js.Array(value :_*))
+    inline def setOperatorsVarargs(value: Double*): Self = StObject.set(x, "operators", js.Array(value :_*))
   }
 }

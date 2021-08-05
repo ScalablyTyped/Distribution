@@ -24,38 +24,28 @@ object anon {
   }
   object Close {
     
-    @scala.inline
-    def apply(): Close = {
+    inline def apply(): Close = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Close]
     }
     
-    @scala.inline
-    implicit class CloseMutableBuilder[Self <: Close] (val x: Self) extends AnyVal {
+    extension [Self <: Close](x: Self) {
       
-      @scala.inline
-      def setClose(value: Boolean): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+      inline def setClose(value: Boolean): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+      inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
       
-      @scala.inline
-      def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+      inline def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      @scala.inline
-      def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setSplit(value: Boolean): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
+      inline def setSplit(value: Boolean): Self = StObject.set(x, "split", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
+      inline def setSplitUndefined: Self = StObject.set(x, "split", js.undefined)
     }
   }
   
@@ -69,20 +59,16 @@ object anon {
   }
   object Req {
     
-    @scala.inline
-    def apply(req: SimulatedRequestObject, res: SimulatedResponseObject): Req = {
+    inline def apply(req: SimulatedRequestObject, res: SimulatedResponseObject): Req = {
       val __obj = js.Dynamic.literal(req = req.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any])
       __obj.asInstanceOf[Req]
     }
     
-    @scala.inline
-    implicit class ReqMutableBuilder[Self <: Req] (val x: Self) extends AnyVal {
+    extension [Self <: Req](x: Self) {
       
-      @scala.inline
-      def setReq(value: SimulatedRequestObject): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+      inline def setReq(value: SimulatedRequestObject): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRes(value: SimulatedResponseObject): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
+      inline def setRes(value: SimulatedResponseObject): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
     }
   }
 }

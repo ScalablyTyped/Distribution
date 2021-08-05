@@ -17,13 +17,10 @@ object DataPilotFieldLayoutMode {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def OUTLINE_SUBTOTALS_BOTTOM: `2` = 2.asInstanceOf[`2`]
+    inline def OUTLINE_SUBTOTALS_BOTTOM: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def OUTLINE_SUBTOTALS_TOP: `1` = 1.asInstanceOf[`1`]
+    inline def OUTLINE_SUBTOTALS_TOP: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def TABULAR_LAYOUT: `0` = 0.asInstanceOf[`0`]
+    inline def TABULAR_LAYOUT: `0` = 0.asInstanceOf[`0`]
   }
 }

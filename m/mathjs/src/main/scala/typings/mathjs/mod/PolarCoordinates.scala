@@ -12,19 +12,15 @@ trait PolarCoordinates extends StObject {
 }
 object PolarCoordinates {
   
-  @scala.inline
-  def apply(phi: Double, r: Double): PolarCoordinates = {
+  inline def apply(phi: Double, r: Double): PolarCoordinates = {
     val __obj = js.Dynamic.literal(phi = phi.asInstanceOf[js.Any], r = r.asInstanceOf[js.Any])
     __obj.asInstanceOf[PolarCoordinates]
   }
   
-  @scala.inline
-  implicit class PolarCoordinatesMutableBuilder[Self <: PolarCoordinates] (val x: Self) extends AnyVal {
+  extension [Self <: PolarCoordinates](x: Self) {
     
-    @scala.inline
-    def setPhi(value: Double): Self = StObject.set(x, "phi", value.asInstanceOf[js.Any])
+    inline def setPhi(value: Double): Self = StObject.set(x, "phi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+    inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
   }
 }

@@ -67,59 +67,42 @@ object anon {
   }
   object objectfalseundefinedJsonO {
     
-    @scala.inline
-    def apply(): objectfalseundefinedJsonO = {
+    inline def apply(): objectfalseundefinedJsonO = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[objectfalseundefinedJsonO]
     }
     
-    @scala.inline
-    implicit class objectfalseundefinedJsonOMutableBuilder[Self <: objectfalseundefinedJsonO] (val x: Self) extends AnyVal {
+    extension [Self <: objectfalseundefinedJsonO](x: Self) {
       
-      @scala.inline
-      def setAlternateTextNode(value: Boolean | String): Self = StObject.set(x, "alternateTextNode", value.asInstanceOf[js.Any])
+      inline def setAlternateTextNode(value: Boolean | String): Self = StObject.set(x, "alternateTextNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlternateTextNodeUndefined: Self = StObject.set(x, "alternateTextNode", js.undefined)
+      inline def setAlternateTextNodeUndefined: Self = StObject.set(x, "alternateTextNode", js.undefined)
       
-      @scala.inline
-      def setArrayNotation(value: Boolean | js.Array[String]): Self = StObject.set(x, "arrayNotation", value.asInstanceOf[js.Any])
+      inline def setArrayNotation(value: Boolean | js.Array[String]): Self = StObject.set(x, "arrayNotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayNotationUndefined: Self = StObject.set(x, "arrayNotation", js.undefined)
+      inline def setArrayNotationUndefined: Self = StObject.set(x, "arrayNotation", js.undefined)
       
-      @scala.inline
-      def setArrayNotationVarargs(value: String*): Self = StObject.set(x, "arrayNotation", js.Array(value :_*))
+      inline def setArrayNotationVarargs(value: String*): Self = StObject.set(x, "arrayNotation", js.Array(value :_*))
       
-      @scala.inline
-      def setCoerce(value: Boolean): Self = StObject.set(x, "coerce", value.asInstanceOf[js.Any])
+      inline def setCoerce(value: Boolean): Self = StObject.set(x, "coerce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoerceUndefined: Self = StObject.set(x, "coerce", js.undefined)
+      inline def setCoerceUndefined: Self = StObject.set(x, "coerce", js.undefined)
       
-      @scala.inline
-      def setObject(value: `false`): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: `false`): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
+      inline def setObjectUndefined: Self = StObject.set(x, "object", js.undefined)
       
-      @scala.inline
-      def setReversible(value: Boolean): Self = StObject.set(x, "reversible", value.asInstanceOf[js.Any])
+      inline def setReversible(value: Boolean): Self = StObject.set(x, "reversible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReversibleUndefined: Self = StObject.set(x, "reversible", js.undefined)
+      inline def setReversibleUndefined: Self = StObject.set(x, "reversible", js.undefined)
       
-      @scala.inline
-      def setSanitize(value: Boolean): Self = StObject.set(x, "sanitize", value.asInstanceOf[js.Any])
+      inline def setSanitize(value: Boolean): Self = StObject.set(x, "sanitize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSanitizeUndefined: Self = StObject.set(x, "sanitize", js.undefined)
+      inline def setSanitizeUndefined: Self = StObject.set(x, "sanitize", js.undefined)
       
-      @scala.inline
-      def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
+      inline def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
+      inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
     }
   }
   
@@ -182,57 +165,41 @@ object anon {
   }
   object objecttrueJsonOptions {
     
-    @scala.inline
-    def apply(): objecttrueJsonOptions = {
+    inline def apply(): objecttrueJsonOptions = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("object")(true)
       __obj.asInstanceOf[objecttrueJsonOptions]
     }
     
-    @scala.inline
-    implicit class objecttrueJsonOptionsMutableBuilder[Self <: objecttrueJsonOptions] (val x: Self) extends AnyVal {
+    extension [Self <: objecttrueJsonOptions](x: Self) {
       
-      @scala.inline
-      def setAlternateTextNode(value: Boolean | String): Self = StObject.set(x, "alternateTextNode", value.asInstanceOf[js.Any])
+      inline def setAlternateTextNode(value: Boolean | String): Self = StObject.set(x, "alternateTextNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlternateTextNodeUndefined: Self = StObject.set(x, "alternateTextNode", js.undefined)
+      inline def setAlternateTextNodeUndefined: Self = StObject.set(x, "alternateTextNode", js.undefined)
       
-      @scala.inline
-      def setArrayNotation(value: Boolean | js.Array[String]): Self = StObject.set(x, "arrayNotation", value.asInstanceOf[js.Any])
+      inline def setArrayNotation(value: Boolean | js.Array[String]): Self = StObject.set(x, "arrayNotation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArrayNotationUndefined: Self = StObject.set(x, "arrayNotation", js.undefined)
+      inline def setArrayNotationUndefined: Self = StObject.set(x, "arrayNotation", js.undefined)
       
-      @scala.inline
-      def setArrayNotationVarargs(value: String*): Self = StObject.set(x, "arrayNotation", js.Array(value :_*))
+      inline def setArrayNotationVarargs(value: String*): Self = StObject.set(x, "arrayNotation", js.Array(value :_*))
       
-      @scala.inline
-      def setCoerce(value: Boolean): Self = StObject.set(x, "coerce", value.asInstanceOf[js.Any])
+      inline def setCoerce(value: Boolean): Self = StObject.set(x, "coerce", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCoerceUndefined: Self = StObject.set(x, "coerce", js.undefined)
+      inline def setCoerceUndefined: Self = StObject.set(x, "coerce", js.undefined)
       
-      @scala.inline
-      def setObject(value: `true`): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      inline def setObject(value: `true`): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReversible(value: Boolean): Self = StObject.set(x, "reversible", value.asInstanceOf[js.Any])
+      inline def setReversible(value: Boolean): Self = StObject.set(x, "reversible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReversibleUndefined: Self = StObject.set(x, "reversible", js.undefined)
+      inline def setReversibleUndefined: Self = StObject.set(x, "reversible", js.undefined)
       
-      @scala.inline
-      def setSanitize(value: Boolean): Self = StObject.set(x, "sanitize", value.asInstanceOf[js.Any])
+      inline def setSanitize(value: Boolean): Self = StObject.set(x, "sanitize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSanitizeUndefined: Self = StObject.set(x, "sanitize", js.undefined)
+      inline def setSanitizeUndefined: Self = StObject.set(x, "sanitize", js.undefined)
       
-      @scala.inline
-      def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
+      inline def setTrim(value: Boolean): Self = StObject.set(x, "trim", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
+      inline def setTrimUndefined: Self = StObject.set(x, "trim", js.undefined)
     }
   }
 }

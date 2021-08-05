@@ -22,25 +22,19 @@ trait Hdr10Settings extends StObject {
 }
 object Hdr10Settings {
   
-  @scala.inline
-  def apply(): Hdr10Settings = {
+  inline def apply(): Hdr10Settings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Hdr10Settings]
   }
   
-  @scala.inline
-  implicit class Hdr10SettingsMutableBuilder[Self <: Hdr10Settings] (val x: Self) extends AnyVal {
+  extension [Self <: Hdr10Settings](x: Self) {
     
-    @scala.inline
-    def setMaxCll(value: integerMin0Max32768): Self = StObject.set(x, "MaxCll", value.asInstanceOf[js.Any])
+    inline def setMaxCll(value: integerMin0Max32768): Self = StObject.set(x, "MaxCll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxCllUndefined: Self = StObject.set(x, "MaxCll", js.undefined)
+    inline def setMaxCllUndefined: Self = StObject.set(x, "MaxCll", js.undefined)
     
-    @scala.inline
-    def setMaxFall(value: integerMin0Max32768): Self = StObject.set(x, "MaxFall", value.asInstanceOf[js.Any])
+    inline def setMaxFall(value: integerMin0Max32768): Self = StObject.set(x, "MaxFall", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxFallUndefined: Self = StObject.set(x, "MaxFall", js.undefined)
+    inline def setMaxFallUndefined: Self = StObject.set(x, "MaxFall", js.undefined)
   }
 }

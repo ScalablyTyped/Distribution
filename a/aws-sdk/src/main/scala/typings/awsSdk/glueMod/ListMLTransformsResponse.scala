@@ -18,25 +18,19 @@ trait ListMLTransformsResponse extends StObject {
 }
 object ListMLTransformsResponse {
   
-  @scala.inline
-  def apply(TransformIds: TransformIdList): ListMLTransformsResponse = {
+  inline def apply(TransformIds: TransformIdList): ListMLTransformsResponse = {
     val __obj = js.Dynamic.literal(TransformIds = TransformIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListMLTransformsResponse]
   }
   
-  @scala.inline
-  implicit class ListMLTransformsResponseMutableBuilder[Self <: ListMLTransformsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListMLTransformsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setTransformIds(value: TransformIdList): Self = StObject.set(x, "TransformIds", value.asInstanceOf[js.Any])
+    inline def setTransformIds(value: TransformIdList): Self = StObject.set(x, "TransformIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransformIdsVarargs(value: HashString*): Self = StObject.set(x, "TransformIds", js.Array(value :_*))
+    inline def setTransformIdsVarargs(value: HashString*): Self = StObject.set(x, "TransformIds", js.Array(value :_*))
   }
 }

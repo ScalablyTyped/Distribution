@@ -29,7 +29,7 @@ trait PivotCell extends StObject {
   
   val Dummy18: String
   
-  @JSName("Excel.PivotCell_typekey")
+  /* private */ @JSName("Excel.PivotCell_typekey")
   var ExcelDotPivotCell_typekey: PivotCell
   
   val MDX: String
@@ -61,8 +61,7 @@ trait PivotCell extends StObject {
 }
 object PivotCell {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AllocateChange: () => Unit,
     Application: Application,
     CellChanged: XlCellChangedState,
@@ -90,70 +89,48 @@ object PivotCell {
     __obj.asInstanceOf[PivotCell]
   }
   
-  @scala.inline
-  implicit class PivotCellMutableBuilder[Self <: PivotCell] (val x: Self) extends AnyVal {
+  extension [Self <: PivotCell](x: Self) {
     
-    @scala.inline
-    def setAllocateChange(value: () => Unit): Self = StObject.set(x, "AllocateChange", js.Any.fromFunction0(value))
+    inline def setAllocateChange(value: () => Unit): Self = StObject.set(x, "AllocateChange", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCellChanged(value: XlCellChangedState): Self = StObject.set(x, "CellChanged", value.asInstanceOf[js.Any])
+    inline def setCellChanged(value: XlCellChangedState): Self = StObject.set(x, "CellChanged", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnItems(value: PivotItemList): Self = StObject.set(x, "ColumnItems", value.asInstanceOf[js.Any])
+    inline def setColumnItems(value: PivotItemList): Self = StObject.set(x, "ColumnItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomSubtotalFunction(value: XlConsolidationFunction): Self = StObject.set(x, "CustomSubtotalFunction", value.asInstanceOf[js.Any])
+    inline def setCustomSubtotalFunction(value: XlConsolidationFunction): Self = StObject.set(x, "CustomSubtotalFunction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataField(value: PivotField): Self = StObject.set(x, "DataField", value.asInstanceOf[js.Any])
+    inline def setDataField(value: PivotField): Self = StObject.set(x, "DataField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceValue(value: js.Any): Self = StObject.set(x, "DataSourceValue", value.asInstanceOf[js.Any])
+    inline def setDataSourceValue(value: js.Any): Self = StObject.set(x, "DataSourceValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiscardChange(value: () => Unit): Self = StObject.set(x, "DiscardChange", js.Any.fromFunction0(value))
+    inline def setDiscardChange(value: () => Unit): Self = StObject.set(x, "DiscardChange", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDummy18(value: String): Self = StObject.set(x, "Dummy18", value.asInstanceOf[js.Any])
+    inline def setDummy18(value: String): Self = StObject.set(x, "Dummy18", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotPivotCell_typekey(value: PivotCell): Self = StObject.set(x, "Excel.PivotCell_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotPivotCell_typekey(value: PivotCell): Self = StObject.set(x, "Excel.PivotCell_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMDX(value: String): Self = StObject.set(x, "MDX", value.asInstanceOf[js.Any])
+    inline def setMDX(value: String): Self = StObject.set(x, "MDX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPivotCellType(value: XlPivotCellType): Self = StObject.set(x, "PivotCellType", value.asInstanceOf[js.Any])
+    inline def setPivotCellType(value: XlPivotCellType): Self = StObject.set(x, "PivotCellType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPivotColumnLine(value: PivotLine): Self = StObject.set(x, "PivotColumnLine", value.asInstanceOf[js.Any])
+    inline def setPivotColumnLine(value: PivotLine): Self = StObject.set(x, "PivotColumnLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPivotField(value: PivotField): Self = StObject.set(x, "PivotField", value.asInstanceOf[js.Any])
+    inline def setPivotField(value: PivotField): Self = StObject.set(x, "PivotField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPivotItem(value: PivotItem): Self = StObject.set(x, "PivotItem", value.asInstanceOf[js.Any])
+    inline def setPivotItem(value: PivotItem): Self = StObject.set(x, "PivotItem", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPivotRowLine(value: PivotLine): Self = StObject.set(x, "PivotRowLine", value.asInstanceOf[js.Any])
+    inline def setPivotRowLine(value: PivotLine): Self = StObject.set(x, "PivotRowLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPivotTable(value: PivotTable): Self = StObject.set(x, "PivotTable", value.asInstanceOf[js.Any])
+    inline def setPivotTable(value: PivotTable): Self = StObject.set(x, "PivotTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
+    inline def setRange(value: Range): Self = StObject.set(x, "Range", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowItems(value: PivotItemList): Self = StObject.set(x, "RowItems", value.asInstanceOf[js.Any])
+    inline def setRowItems(value: PivotItemList): Self = StObject.set(x, "RowItems", value.asInstanceOf[js.Any])
   }
 }

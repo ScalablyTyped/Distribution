@@ -16,8 +16,7 @@ trait Dilation2DAttrs extends StObject {
 }
 object Dilation2DAttrs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     dilations: (js.Tuple2[Double, Double]) | Double,
     pad: valid_ | same_ | Double,
     strides: (js.Tuple2[Double, Double]) | Double
@@ -26,16 +25,12 @@ object Dilation2DAttrs {
     __obj.asInstanceOf[Dilation2DAttrs]
   }
   
-  @scala.inline
-  implicit class Dilation2DAttrsMutableBuilder[Self <: Dilation2DAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: Dilation2DAttrs](x: Self) {
     
-    @scala.inline
-    def setDilations(value: (js.Tuple2[Double, Double]) | Double): Self = StObject.set(x, "dilations", value.asInstanceOf[js.Any])
+    inline def setDilations(value: (js.Tuple2[Double, Double]) | Double): Self = StObject.set(x, "dilations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPad(value: valid_ | same_ | Double): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
+    inline def setPad(value: valid_ | same_ | Double): Self = StObject.set(x, "pad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrides(value: (js.Tuple2[Double, Double]) | Double): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
+    inline def setStrides(value: (js.Tuple2[Double, Double]) | Double): Self = StObject.set(x, "strides", value.asInstanceOf[js.Any])
   }
 }

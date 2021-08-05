@@ -40,8 +40,7 @@ trait Calendar2 extends StObject {
 }
 object Calendar2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Days: SafeArray[CalendarItem2],
     Default: Boolean,
     Eras: SafeArray[CalendarItem2],
@@ -56,34 +55,24 @@ object Calendar2 {
     __obj.asInstanceOf[Calendar2]
   }
   
-  @scala.inline
-  implicit class Calendar2MutableBuilder[Self <: Calendar2] (val x: Self) extends AnyVal {
+  extension [Self <: Calendar2](x: Self) {
     
-    @scala.inline
-    def setDays(value: SafeArray[CalendarItem2]): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
+    inline def setDays(value: SafeArray[CalendarItem2]): Self = StObject.set(x, "Days", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefault(value: Boolean): Self = StObject.set(x, "Default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: Boolean): Self = StObject.set(x, "Default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEras(value: SafeArray[CalendarItem2]): Self = StObject.set(x, "Eras", value.asInstanceOf[js.Any])
+    inline def setEras(value: SafeArray[CalendarItem2]): Self = StObject.set(x, "Eras", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenitiveMonths(value: SafeArray[CalendarItem2]): Self = StObject.set(x, "GenitiveMonths", value.asInstanceOf[js.Any])
+    inline def setGenitiveMonths(value: SafeArray[CalendarItem2]): Self = StObject.set(x, "GenitiveMonths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinimumNumberOfDaysForFirstWeek(value: Double): Self = StObject.set(x, "MinimumNumberOfDaysForFirstWeek", value.asInstanceOf[js.Any])
+    inline def setMinimumNumberOfDaysForFirstWeek(value: Double): Self = StObject.set(x, "MinimumNumberOfDaysForFirstWeek", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonths(value: SafeArray[CalendarItem2]): Self = StObject.set(x, "Months", value.asInstanceOf[js.Any])
+    inline def setMonths(value: SafeArray[CalendarItem2]): Self = StObject.set(x, "Months", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPartitiveMonths(value: SafeArray[CalendarItem2]): Self = StObject.set(x, "PartitiveMonths", value.asInstanceOf[js.Any])
+    inline def setPartitiveMonths(value: SafeArray[CalendarItem2]): Self = StObject.set(x, "PartitiveMonths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartOfWeek(value: String): Self = StObject.set(x, "StartOfWeek", value.asInstanceOf[js.Any])
+    inline def setStartOfWeek(value: String): Self = StObject.set(x, "StartOfWeek", value.asInstanceOf[js.Any])
   }
 }

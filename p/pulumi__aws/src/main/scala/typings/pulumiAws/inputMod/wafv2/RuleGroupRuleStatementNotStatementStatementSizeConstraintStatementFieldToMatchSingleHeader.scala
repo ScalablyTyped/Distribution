@@ -14,16 +14,13 @@ trait RuleGroupRuleStatementNotStatementStatementSizeConstraintStatementFieldToM
 }
 object RuleGroupRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchSingleHeader {
   
-  @scala.inline
-  def apply(name: Input[String]): RuleGroupRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchSingleHeader = {
+  inline def apply(name: Input[String]): RuleGroupRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchSingleHeader = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[RuleGroupRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchSingleHeader]
   }
   
-  @scala.inline
-  implicit class RuleGroupRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchSingleHeaderMutableBuilder[Self <: RuleGroupRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchSingleHeader] (val x: Self) extends AnyVal {
+  extension [Self <: RuleGroupRuleStatementNotStatementStatementSizeConstraintStatementFieldToMatchSingleHeader](x: Self) {
     
-    @scala.inline
-    def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

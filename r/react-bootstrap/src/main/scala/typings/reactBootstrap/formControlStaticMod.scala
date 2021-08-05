@@ -28,26 +28,20 @@ object formControlStaticMod {
   }
   object FormControlStaticProps {
     
-    @scala.inline
-    def apply(): FormControlStaticProps = {
+    inline def apply(): FormControlStaticProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[FormControlStaticProps]
     }
     
-    @scala.inline
-    implicit class FormControlStaticPropsMutableBuilder[Self <: FormControlStaticProps] (val x: Self) extends AnyVal {
+    extension [Self <: FormControlStaticProps](x: Self) {
       
-      @scala.inline
-      def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
+      inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
+      inline def setBsClassUndefined: Self = StObject.set(x, "bsClass", js.undefined)
       
-      @scala.inline
-      def setComponentClass(value: ReactType[js.Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
+      inline def setComponentClass(value: ReactType[js.Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentClassUndefined: Self = StObject.set(x, "componentClass", js.undefined)
+      inline def setComponentClassUndefined: Self = StObject.set(x, "componentClass", js.undefined)
     }
   }
 }

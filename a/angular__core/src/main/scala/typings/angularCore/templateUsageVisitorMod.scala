@@ -13,9 +13,9 @@ object templateUsageVisitorMod {
   class TemplateUsageVisitor protected () extends NullVisitor {
     def this(queryPropertyName: String) = this()
     
-    var expressionAstVisitor: js.Any = js.native
+    /* private */ var expressionAstVisitor: js.Any = js.native
     
-    var hasQueryTemplateReference: js.Any = js.native
+    /* private */ var hasQueryTemplateReference: js.Any = js.native
     
     /** Checks whether the given query is statically accessed within the specified HTML nodes. */
     def isQueryUsedStatically(htmlNodes: js.Array[Node]): Boolean = js.native

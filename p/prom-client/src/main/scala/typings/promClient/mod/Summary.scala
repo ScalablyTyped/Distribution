@@ -64,23 +64,18 @@ object Summary {
   }
   object Config {
     
-    @scala.inline
-    def apply(): Config = {
+    inline def apply(): Config = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Config]
     }
     
-    @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+    extension [Self <: Config](x: Self) {
       
-      @scala.inline
-      def setPercentiles(value: js.Array[Double]): Self = StObject.set(x, "percentiles", value.asInstanceOf[js.Any])
+      inline def setPercentiles(value: js.Array[Double]): Self = StObject.set(x, "percentiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPercentilesUndefined: Self = StObject.set(x, "percentiles", js.undefined)
+      inline def setPercentilesUndefined: Self = StObject.set(x, "percentiles", js.undefined)
       
-      @scala.inline
-      def setPercentilesVarargs(value: Double*): Self = StObject.set(x, "percentiles", js.Array(value :_*))
+      inline def setPercentilesVarargs(value: Double*): Self = StObject.set(x, "percentiles", js.Array(value :_*))
     }
   }
   
@@ -101,8 +96,7 @@ object Summary {
   }
   object Internal {
     
-    @scala.inline
-    def apply[T /* <: String */](
+    inline def apply[T /* <: String */](
       observe: Double => Unit,
       startTimer: () => js.Function1[/* labels */ js.UndefOr[LabelValues[T]], Unit]
     ): Internal[T] = {
@@ -110,14 +104,11 @@ object Summary {
       __obj.asInstanceOf[Internal[T]]
     }
     
-    @scala.inline
-    implicit class InternalMutableBuilder[Self <: Internal[?], T /* <: String */] (val x: Self & Internal[T]) extends AnyVal {
+    extension [Self <: Internal[?], T /* <: String */](x: Self & Internal[T]) {
       
-      @scala.inline
-      def setObserve(value: Double => Unit): Self = StObject.set(x, "observe", js.Any.fromFunction1(value))
+      inline def setObserve(value: Double => Unit): Self = StObject.set(x, "observe", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStartTimer(value: () => js.Function1[/* labels */ js.UndefOr[LabelValues[T]], Unit]): Self = StObject.set(x, "startTimer", js.Any.fromFunction0(value))
+      inline def setStartTimer(value: () => js.Function1[/* labels */ js.UndefOr[LabelValues[T]], Unit]): Self = StObject.set(x, "startTimer", js.Any.fromFunction0(value))
     }
   }
 }

@@ -21,44 +21,32 @@ object anon {
   }
   object ReadonlyFactoryOptions {
     
-    @scala.inline
-    def apply(): ReadonlyFactoryOptions = {
+    inline def apply(): ReadonlyFactoryOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReadonlyFactoryOptions]
     }
     
-    @scala.inline
-    implicit class ReadonlyFactoryOptionsMutableBuilder[Self <: ReadonlyFactoryOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyFactoryOptions](x: Self) {
       
-      @scala.inline
-      def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: Boolean): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+      inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
       
-      @scala.inline
-      def setHyphenChar(value: String): Self = StObject.set(x, "hyphenChar", value.asInstanceOf[js.Any])
+      inline def setHyphenChar(value: String): Self = StObject.set(x, "hyphenChar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHyphenCharUndefined: Self = StObject.set(x, "hyphenChar", js.undefined)
+      inline def setHyphenCharUndefined: Self = StObject.set(x, "hyphenChar", js.undefined)
       
-      @scala.inline
-      def setMinWordLength(value: Double): Self = StObject.set(x, "minWordLength", value.asInstanceOf[js.Any])
+      inline def setMinWordLength(value: Double): Self = StObject.set(x, "minWordLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinWordLengthUndefined: Self = StObject.set(x, "minWordLength", js.undefined)
+      inline def setMinWordLengthUndefined: Self = StObject.set(x, "minWordLength", js.undefined)
     }
   }
   
@@ -73,32 +61,24 @@ object anon {
   }
   object ReadonlyHyphenationOption {
     
-    @scala.inline
-    def apply(): ReadonlyHyphenationOption = {
+    inline def apply(): ReadonlyHyphenationOption = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ReadonlyHyphenationOption]
     }
     
-    @scala.inline
-    implicit class ReadonlyHyphenationOptionMutableBuilder[Self <: ReadonlyHyphenationOption] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyHyphenationOption](x: Self) {
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setHyphenChar(value: String): Self = StObject.set(x, "hyphenChar", value.asInstanceOf[js.Any])
+      inline def setHyphenChar(value: String): Self = StObject.set(x, "hyphenChar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHyphenCharUndefined: Self = StObject.set(x, "hyphenChar", js.undefined)
+      inline def setHyphenCharUndefined: Self = StObject.set(x, "hyphenChar", js.undefined)
       
-      @scala.inline
-      def setMinWordLength(value: Double): Self = StObject.set(x, "minWordLength", value.asInstanceOf[js.Any])
+      inline def setMinWordLength(value: Double): Self = StObject.set(x, "minWordLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinWordLengthUndefined: Self = StObject.set(x, "minWordLength", js.undefined)
+      inline def setMinWordLengthUndefined: Self = StObject.set(x, "minWordLength", js.undefined)
     }
   }
   
@@ -111,26 +91,20 @@ object anon {
   }
   object ReadonlyPatternsDefinitio {
     
-    @scala.inline
-    def apply(exceptions: js.Array[String], patterns: js.Array[String]): ReadonlyPatternsDefinitio = {
+    inline def apply(exceptions: js.Array[String], patterns: js.Array[String]): ReadonlyPatternsDefinitio = {
       val __obj = js.Dynamic.literal(exceptions = exceptions.asInstanceOf[js.Any], patterns = patterns.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReadonlyPatternsDefinitio]
     }
     
-    @scala.inline
-    implicit class ReadonlyPatternsDefinitioMutableBuilder[Self <: ReadonlyPatternsDefinitio] (val x: Self) extends AnyVal {
+    extension [Self <: ReadonlyPatternsDefinitio](x: Self) {
       
-      @scala.inline
-      def setExceptions(value: js.Array[String]): Self = StObject.set(x, "exceptions", value.asInstanceOf[js.Any])
+      inline def setExceptions(value: js.Array[String]): Self = StObject.set(x, "exceptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExceptionsVarargs(value: String*): Self = StObject.set(x, "exceptions", js.Array(value :_*))
+      inline def setExceptionsVarargs(value: String*): Self = StObject.set(x, "exceptions", js.Array(value :_*))
       
-      @scala.inline
-      def setPatterns(value: js.Array[String]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
+      inline def setPatterns(value: js.Array[String]): Self = StObject.set(x, "patterns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPatternsVarargs(value: String*): Self = StObject.set(x, "patterns", js.Array(value :_*))
+      inline def setPatternsVarargs(value: String*): Self = StObject.set(x, "patterns", js.Array(value :_*))
     }
   }
 }

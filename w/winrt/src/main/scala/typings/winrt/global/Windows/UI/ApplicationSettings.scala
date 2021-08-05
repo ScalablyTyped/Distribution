@@ -61,14 +61,11 @@ object ApplicationSettings {
     @JSGlobal("Windows.UI.ApplicationSettings.SettingsPane.edge")
     @js.native
     def edge: SettingsEdgeLocation = js.native
-    @scala.inline
-    def edge_=(x: SettingsEdgeLocation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("edge")(x.asInstanceOf[js.Any])
+    inline def edge_=(x: SettingsEdgeLocation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("edge")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def getForCurrentView(): typings.winrt.Windows.UI.ApplicationSettings.SettingsPane = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrt.Windows.UI.ApplicationSettings.SettingsPane]
+    inline def getForCurrentView(): typings.winrt.Windows.UI.ApplicationSettings.SettingsPane = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrt.Windows.UI.ApplicationSettings.SettingsPane]
     
-    @scala.inline
-    def show(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")().asInstanceOf[Unit]
+    inline def show(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")().asInstanceOf[Unit]
   }
   
   @JSGlobal("Windows.UI.ApplicationSettings.SettingsPaneCommandsRequest")

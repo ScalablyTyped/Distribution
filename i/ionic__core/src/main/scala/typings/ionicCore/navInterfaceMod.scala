@@ -32,29 +32,22 @@ object navInterfaceMod {
   }
   object NavComponentWithProps {
     
-    @scala.inline
-    def apply[T](): NavComponentWithProps[T] = {
+    inline def apply[T](): NavComponentWithProps[T] = {
       val __obj = js.Dynamic.literal(component = null)
       __obj.asInstanceOf[NavComponentWithProps[T]]
     }
     
-    @scala.inline
-    implicit class NavComponentWithPropsMutableBuilder[Self <: NavComponentWithProps[?], T] (val x: Self & NavComponentWithProps[T]) extends AnyVal {
+    extension [Self <: NavComponentWithProps[?], T](x: Self & NavComponentWithProps[T]) {
       
-      @scala.inline
-      def setComponent(value: NavComponent): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: NavComponent): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentNull: Self = StObject.set(x, "component", null)
+      inline def setComponentNull: Self = StObject.set(x, "component", null)
       
-      @scala.inline
-      def setComponentProps(value: ComponentProps[T]): Self = StObject.set(x, "componentProps", value.asInstanceOf[js.Any])
+      inline def setComponentProps(value: ComponentProps[T]): Self = StObject.set(x, "componentProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentPropsNull: Self = StObject.set(x, "componentProps", null)
+      inline def setComponentPropsNull: Self = StObject.set(x, "componentProps", null)
       
-      @scala.inline
-      def setComponentPropsUndefined: Self = StObject.set(x, "componentProps", js.undefined)
+      inline def setComponentPropsUndefined: Self = StObject.set(x, "componentProps", js.undefined)
     }
   }
   
@@ -65,11 +58,9 @@ object navInterfaceMod {
   trait NavDirection extends StObject
   object NavDirection {
     
-    @scala.inline
-    def back: typings.ionicCore.ionicCoreStrings.back = "back".asInstanceOf[typings.ionicCore.ionicCoreStrings.back]
+    inline def back: typings.ionicCore.ionicCoreStrings.back = "back".asInstanceOf[typings.ionicCore.ionicCoreStrings.back]
     
-    @scala.inline
-    def forward: typings.ionicCore.ionicCoreStrings.forward = "forward".asInstanceOf[typings.ionicCore.ionicCoreStrings.forward]
+    inline def forward: typings.ionicCore.ionicCoreStrings.forward = "forward".asInstanceOf[typings.ionicCore.ionicCoreStrings.forward]
   }
   
   trait NavOptions
@@ -84,32 +75,24 @@ object navInterfaceMod {
   }
   object NavOptions {
     
-    @scala.inline
-    def apply(): NavOptions = {
+    inline def apply(): NavOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NavOptions]
     }
     
-    @scala.inline
-    implicit class NavOptionsMutableBuilder[Self <: NavOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NavOptions](x: Self) {
       
-      @scala.inline
-      def setDelegate(value: FrameworkDelegate): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
+      inline def setDelegate(value: FrameworkDelegate): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelegateUndefined: Self = StObject.set(x, "delegate", js.undefined)
+      inline def setDelegateUndefined: Self = StObject.set(x, "delegate", js.undefined)
       
-      @scala.inline
-      def setUpdateURL(value: Boolean): Self = StObject.set(x, "updateURL", value.asInstanceOf[js.Any])
+      inline def setUpdateURL(value: Boolean): Self = StObject.set(x, "updateURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateURLUndefined: Self = StObject.set(x, "updateURL", js.undefined)
+      inline def setUpdateURLUndefined: Self = StObject.set(x, "updateURL", js.undefined)
       
-      @scala.inline
-      def setViewIsReady(value: /* enteringEl */ HTMLElement => js.Promise[js.Any]): Self = StObject.set(x, "viewIsReady", js.Any.fromFunction1(value))
+      inline def setViewIsReady(value: /* enteringEl */ HTMLElement => js.Promise[js.Any]): Self = StObject.set(x, "viewIsReady", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setViewIsReadyUndefined: Self = StObject.set(x, "viewIsReady", js.undefined)
+      inline def setViewIsReadyUndefined: Self = StObject.set(x, "viewIsReady", js.undefined)
     }
   }
   
@@ -127,38 +110,28 @@ object navInterfaceMod {
   }
   object NavResult {
     
-    @scala.inline
-    def apply(hasCompleted: Boolean, requiresTransition: Boolean): NavResult = {
+    inline def apply(hasCompleted: Boolean, requiresTransition: Boolean): NavResult = {
       val __obj = js.Dynamic.literal(hasCompleted = hasCompleted.asInstanceOf[js.Any], requiresTransition = requiresTransition.asInstanceOf[js.Any])
       __obj.asInstanceOf[NavResult]
     }
     
-    @scala.inline
-    implicit class NavResultMutableBuilder[Self <: NavResult] (val x: Self) extends AnyVal {
+    extension [Self <: NavResult](x: Self) {
       
-      @scala.inline
-      def setDirection(value: NavDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: NavDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setEnteringView(value: typings.ionicCore.viewControllerMod.ViewController): Self = StObject.set(x, "enteringView", value.asInstanceOf[js.Any])
+      inline def setEnteringView(value: typings.ionicCore.viewControllerMod.ViewController): Self = StObject.set(x, "enteringView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnteringViewUndefined: Self = StObject.set(x, "enteringView", js.undefined)
+      inline def setEnteringViewUndefined: Self = StObject.set(x, "enteringView", js.undefined)
       
-      @scala.inline
-      def setHasCompleted(value: Boolean): Self = StObject.set(x, "hasCompleted", value.asInstanceOf[js.Any])
+      inline def setHasCompleted(value: Boolean): Self = StObject.set(x, "hasCompleted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeavingView(value: typings.ionicCore.viewControllerMod.ViewController): Self = StObject.set(x, "leavingView", value.asInstanceOf[js.Any])
+      inline def setLeavingView(value: typings.ionicCore.viewControllerMod.ViewController): Self = StObject.set(x, "leavingView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeavingViewUndefined: Self = StObject.set(x, "leavingView", js.undefined)
+      inline def setLeavingViewUndefined: Self = StObject.set(x, "leavingView", js.undefined)
       
-      @scala.inline
-      def setRequiresTransition(value: Boolean): Self = StObject.set(x, "requiresTransition", value.asInstanceOf[js.Any])
+      inline def setRequiresTransition(value: Boolean): Self = StObject.set(x, "requiresTransition", value.asInstanceOf[js.Any])
     }
   }
   
@@ -190,80 +163,56 @@ object navInterfaceMod {
   }
   object RouterOutletOptions {
     
-    @scala.inline
-    def apply(): RouterOutletOptions = {
+    inline def apply(): RouterOutletOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RouterOutletOptions]
     }
     
-    @scala.inline
-    implicit class RouterOutletOptionsMutableBuilder[Self <: RouterOutletOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RouterOutletOptions](x: Self) {
       
-      @scala.inline
-      def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
+      inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
+      inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
       
-      @scala.inline
-      def setAnimationBuilder(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "animationBuilder", js.Any.fromFunction2(value))
+      inline def setAnimationBuilder(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "animationBuilder", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setAnimationBuilderUndefined: Self = StObject.set(x, "animationBuilder", js.undefined)
+      inline def setAnimationBuilderUndefined: Self = StObject.set(x, "animationBuilder", js.undefined)
       
-      @scala.inline
-      def setDeepWait(value: Boolean): Self = StObject.set(x, "deepWait", value.asInstanceOf[js.Any])
+      inline def setDeepWait(value: Boolean): Self = StObject.set(x, "deepWait", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeepWaitUndefined: Self = StObject.set(x, "deepWait", js.undefined)
+      inline def setDeepWaitUndefined: Self = StObject.set(x, "deepWait", js.undefined)
       
-      @scala.inline
-      def setDirection(value: NavDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
+      inline def setDirection(value: NavDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
+      inline def setDirectionUndefined: Self = StObject.set(x, "direction", js.undefined)
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+      inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+      inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
       
-      @scala.inline
-      def setKeyboardClose(value: Boolean): Self = StObject.set(x, "keyboardClose", value.asInstanceOf[js.Any])
+      inline def setKeyboardClose(value: Boolean): Self = StObject.set(x, "keyboardClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyboardCloseUndefined: Self = StObject.set(x, "keyboardClose", js.undefined)
+      inline def setKeyboardCloseUndefined: Self = StObject.set(x, "keyboardClose", js.undefined)
       
-      @scala.inline
-      def setMode(value: Mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: Mode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setProgressAnimation(value: Boolean): Self = StObject.set(x, "progressAnimation", value.asInstanceOf[js.Any])
+      inline def setProgressAnimation(value: Boolean): Self = StObject.set(x, "progressAnimation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProgressAnimationUndefined: Self = StObject.set(x, "progressAnimation", js.undefined)
+      inline def setProgressAnimationUndefined: Self = StObject.set(x, "progressAnimation", js.undefined)
       
-      @scala.inline
-      def setShowGoBack(value: Boolean): Self = StObject.set(x, "showGoBack", value.asInstanceOf[js.Any])
+      inline def setShowGoBack(value: Boolean): Self = StObject.set(x, "showGoBack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShowGoBackUndefined: Self = StObject.set(x, "showGoBack", js.undefined)
+      inline def setShowGoBackUndefined: Self = StObject.set(x, "showGoBack", js.undefined)
       
-      @scala.inline
-      def setSkipIfBusy(value: Boolean): Self = StObject.set(x, "skipIfBusy", value.asInstanceOf[js.Any])
+      inline def setSkipIfBusy(value: Boolean): Self = StObject.set(x, "skipIfBusy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipIfBusyUndefined: Self = StObject.set(x, "skipIfBusy", js.undefined)
+      inline def setSkipIfBusyUndefined: Self = StObject.set(x, "skipIfBusy", js.undefined)
     }
   }
   
@@ -277,23 +226,18 @@ object navInterfaceMod {
   }
   object SwipeGestureHandler {
     
-    @scala.inline
-    def apply(canStart: () => Boolean, onEnd: Boolean => Unit, onStart: () => Unit): SwipeGestureHandler = {
+    inline def apply(canStart: () => Boolean, onEnd: Boolean => Unit, onStart: () => Unit): SwipeGestureHandler = {
       val __obj = js.Dynamic.literal(canStart = js.Any.fromFunction0(canStart), onEnd = js.Any.fromFunction1(onEnd), onStart = js.Any.fromFunction0(onStart))
       __obj.asInstanceOf[SwipeGestureHandler]
     }
     
-    @scala.inline
-    implicit class SwipeGestureHandlerMutableBuilder[Self <: SwipeGestureHandler] (val x: Self) extends AnyVal {
+    extension [Self <: SwipeGestureHandler](x: Self) {
       
-      @scala.inline
-      def setCanStart(value: () => Boolean): Self = StObject.set(x, "canStart", js.Any.fromFunction0(value))
+      inline def setCanStart(value: () => Boolean): Self = StObject.set(x, "canStart", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnEnd(value: Boolean => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
+      inline def setOnEnd(value: Boolean => Unit): Self = StObject.set(x, "onEnd", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnStart(value: () => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction0(value))
+      inline def setOnStart(value: () => Unit): Self = StObject.set(x, "onStart", js.Any.fromFunction0(value))
     }
   }
   
@@ -332,88 +276,62 @@ object navInterfaceMod {
   }
   object TransitionInstruction {
     
-    @scala.inline
-    def apply(): TransitionInstruction = {
+    inline def apply(): TransitionInstruction = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TransitionInstruction]
     }
     
-    @scala.inline
-    implicit class TransitionInstructionMutableBuilder[Self <: TransitionInstruction] (val x: Self) extends AnyVal {
+    extension [Self <: TransitionInstruction](x: Self) {
       
-      @scala.inline
-      def setDone(
+      inline def setDone(
         value: (/* hasCompleted */ Boolean, /* requiresTransition */ Boolean, /* enteringView */ js.UndefOr[typings.ionicCore.viewControllerMod.ViewController], /* leavingView */ js.UndefOr[typings.ionicCore.viewControllerMod.ViewController], /* direction */ js.UndefOr[String]) => Unit
       ): Self = StObject.set(x, "done", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
+      inline def setDoneUndefined: Self = StObject.set(x, "done", js.undefined)
       
-      @scala.inline
-      def setEnteringRequiresTransition(value: Boolean): Self = StObject.set(x, "enteringRequiresTransition", value.asInstanceOf[js.Any])
+      inline def setEnteringRequiresTransition(value: Boolean): Self = StObject.set(x, "enteringRequiresTransition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnteringRequiresTransitionUndefined: Self = StObject.set(x, "enteringRequiresTransition", js.undefined)
+      inline def setEnteringRequiresTransitionUndefined: Self = StObject.set(x, "enteringRequiresTransition", js.undefined)
       
-      @scala.inline
-      def setInsertStart(value: Double): Self = StObject.set(x, "insertStart", value.asInstanceOf[js.Any])
+      inline def setInsertStart(value: Double): Self = StObject.set(x, "insertStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertStartUndefined: Self = StObject.set(x, "insertStart", js.undefined)
+      inline def setInsertStartUndefined: Self = StObject.set(x, "insertStart", js.undefined)
       
-      @scala.inline
-      def setInsertViews(value: js.Array[js.Any]): Self = StObject.set(x, "insertViews", value.asInstanceOf[js.Any])
+      inline def setInsertViews(value: js.Array[js.Any]): Self = StObject.set(x, "insertViews", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertViewsUndefined: Self = StObject.set(x, "insertViews", js.undefined)
+      inline def setInsertViewsUndefined: Self = StObject.set(x, "insertViews", js.undefined)
       
-      @scala.inline
-      def setInsertViewsVarargs(value: js.Any*): Self = StObject.set(x, "insertViews", js.Array(value :_*))
+      inline def setInsertViewsVarargs(value: js.Any*): Self = StObject.set(x, "insertViews", js.Array(value :_*))
       
-      @scala.inline
-      def setLeavingRequiresTransition(value: Boolean): Self = StObject.set(x, "leavingRequiresTransition", value.asInstanceOf[js.Any])
+      inline def setLeavingRequiresTransition(value: Boolean): Self = StObject.set(x, "leavingRequiresTransition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeavingRequiresTransitionUndefined: Self = StObject.set(x, "leavingRequiresTransition", js.undefined)
+      inline def setLeavingRequiresTransitionUndefined: Self = StObject.set(x, "leavingRequiresTransition", js.undefined)
       
-      @scala.inline
-      def setOpts(value: NavOptions): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
+      inline def setOpts(value: NavOptions): Self = StObject.set(x, "opts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptsNull: Self = StObject.set(x, "opts", null)
+      inline def setOptsNull: Self = StObject.set(x, "opts", null)
       
-      @scala.inline
-      def setOptsUndefined: Self = StObject.set(x, "opts", js.undefined)
+      inline def setOptsUndefined: Self = StObject.set(x, "opts", js.undefined)
       
-      @scala.inline
-      def setReject(value: /* rejectReason */ String => Unit): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
+      inline def setReject(value: /* rejectReason */ String => Unit): Self = StObject.set(x, "reject", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRejectUndefined: Self = StObject.set(x, "reject", js.undefined)
+      inline def setRejectUndefined: Self = StObject.set(x, "reject", js.undefined)
       
-      @scala.inline
-      def setRemoveCount(value: Double): Self = StObject.set(x, "removeCount", value.asInstanceOf[js.Any])
+      inline def setRemoveCount(value: Double): Self = StObject.set(x, "removeCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveCountUndefined: Self = StObject.set(x, "removeCount", js.undefined)
+      inline def setRemoveCountUndefined: Self = StObject.set(x, "removeCount", js.undefined)
       
-      @scala.inline
-      def setRemoveStart(value: Double): Self = StObject.set(x, "removeStart", value.asInstanceOf[js.Any])
+      inline def setRemoveStart(value: Double): Self = StObject.set(x, "removeStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveStartUndefined: Self = StObject.set(x, "removeStart", js.undefined)
+      inline def setRemoveStartUndefined: Self = StObject.set(x, "removeStart", js.undefined)
       
-      @scala.inline
-      def setRemoveView(value: typings.ionicCore.viewControllerMod.ViewController): Self = StObject.set(x, "removeView", value.asInstanceOf[js.Any])
+      inline def setRemoveView(value: typings.ionicCore.viewControllerMod.ViewController): Self = StObject.set(x, "removeView", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveViewUndefined: Self = StObject.set(x, "removeView", js.undefined)
+      inline def setRemoveViewUndefined: Self = StObject.set(x, "removeView", js.undefined)
       
-      @scala.inline
-      def setResolve(value: /* hasCompleted */ Boolean => Unit): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
+      inline def setResolve(value: /* hasCompleted */ Boolean => Unit): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
+      inline def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
     }
   }
   

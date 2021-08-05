@@ -18,28 +18,21 @@ trait JobAlbumArt extends StObject {
 }
 object JobAlbumArt {
   
-  @scala.inline
-  def apply(): JobAlbumArt = {
+  inline def apply(): JobAlbumArt = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JobAlbumArt]
   }
   
-  @scala.inline
-  implicit class JobAlbumArtMutableBuilder[Self <: JobAlbumArt] (val x: Self) extends AnyVal {
+  extension [Self <: JobAlbumArt](x: Self) {
     
-    @scala.inline
-    def setArtwork(value: Artworks): Self = StObject.set(x, "Artwork", value.asInstanceOf[js.Any])
+    inline def setArtwork(value: Artworks): Self = StObject.set(x, "Artwork", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtworkUndefined: Self = StObject.set(x, "Artwork", js.undefined)
+    inline def setArtworkUndefined: Self = StObject.set(x, "Artwork", js.undefined)
     
-    @scala.inline
-    def setArtworkVarargs(value: Artwork*): Self = StObject.set(x, "Artwork", js.Array(value :_*))
+    inline def setArtworkVarargs(value: Artwork*): Self = StObject.set(x, "Artwork", js.Array(value :_*))
     
-    @scala.inline
-    def setMergePolicy(value: MergePolicy): Self = StObject.set(x, "MergePolicy", value.asInstanceOf[js.Any])
+    inline def setMergePolicy(value: MergePolicy): Self = StObject.set(x, "MergePolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMergePolicyUndefined: Self = StObject.set(x, "MergePolicy", js.undefined)
+    inline def setMergePolicyUndefined: Self = StObject.set(x, "MergePolicy", js.undefined)
   }
 }

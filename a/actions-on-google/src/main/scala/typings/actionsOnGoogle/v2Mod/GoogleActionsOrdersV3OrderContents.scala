@@ -15,22 +15,17 @@ trait GoogleActionsOrdersV3OrderContents extends StObject {
 }
 object GoogleActionsOrdersV3OrderContents {
   
-  @scala.inline
-  def apply(): GoogleActionsOrdersV3OrderContents = {
+  inline def apply(): GoogleActionsOrdersV3OrderContents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsOrdersV3OrderContents]
   }
   
-  @scala.inline
-  implicit class GoogleActionsOrdersV3OrderContentsMutableBuilder[Self <: GoogleActionsOrdersV3OrderContents] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsOrdersV3OrderContents](x: Self) {
     
-    @scala.inline
-    def setLineItems(value: js.Array[GoogleActionsOrdersV3LineItem]): Self = StObject.set(x, "lineItems", value.asInstanceOf[js.Any])
+    inline def setLineItems(value: js.Array[GoogleActionsOrdersV3LineItem]): Self = StObject.set(x, "lineItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineItemsUndefined: Self = StObject.set(x, "lineItems", js.undefined)
+    inline def setLineItemsUndefined: Self = StObject.set(x, "lineItems", js.undefined)
     
-    @scala.inline
-    def setLineItemsVarargs(value: GoogleActionsOrdersV3LineItem*): Self = StObject.set(x, "lineItems", js.Array(value :_*))
+    inline def setLineItemsVarargs(value: GoogleActionsOrdersV3LineItem*): Self = StObject.set(x, "lineItems", js.Array(value :_*))
   }
 }

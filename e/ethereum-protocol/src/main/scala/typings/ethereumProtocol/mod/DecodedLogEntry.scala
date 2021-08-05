@@ -14,8 +14,7 @@ trait DecodedLogEntry[A]
 }
 object DecodedLogEntry {
   
-  @scala.inline
-  def apply[A](
+  inline def apply[A](
     address: String,
     args: A,
     data: String,
@@ -27,13 +26,10 @@ object DecodedLogEntry {
     __obj.asInstanceOf[DecodedLogEntry[A]]
   }
   
-  @scala.inline
-  implicit class DecodedLogEntryMutableBuilder[Self <: DecodedLogEntry[?], A] (val x: Self & DecodedLogEntry[A]) extends AnyVal {
+  extension [Self <: DecodedLogEntry[?], A](x: Self & DecodedLogEntry[A]) {
     
-    @scala.inline
-    def setArgs(value: A): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    inline def setArgs(value: A): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
   }
 }

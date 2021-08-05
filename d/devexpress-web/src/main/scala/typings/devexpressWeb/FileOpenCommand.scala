@@ -22,19 +22,15 @@ trait FileOpenCommand extends StObject {
 }
 object FileOpenCommand {
   
-  @scala.inline
-  def apply(execute: String => Boolean, getState: () => SimpleCommandState): FileOpenCommand = {
+  inline def apply(execute: String => Boolean, getState: () => SimpleCommandState): FileOpenCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction1(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[FileOpenCommand]
   }
   
-  @scala.inline
-  implicit class FileOpenCommandMutableBuilder[Self <: FileOpenCommand] (val x: Self) extends AnyVal {
+  extension [Self <: FileOpenCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: String => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
+    inline def setExecute(value: String => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetState(value: () => SimpleCommandState): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => SimpleCommandState): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
   }
 }

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "orderedmap"
-version := "1.0-dt-20200515Z-d5e107"
+version := "1.0-dt-20200515Z-4bd551"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

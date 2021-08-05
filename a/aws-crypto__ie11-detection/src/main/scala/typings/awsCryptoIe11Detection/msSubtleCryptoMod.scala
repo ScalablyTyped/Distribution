@@ -20,17 +20,14 @@ object msSubtleCryptoMod {
   }
   object HashAlgorithm {
     
-    @scala.inline
-    def apply(name: Ie11DigestAlgorithm): HashAlgorithm = {
+    inline def apply(name: Ie11DigestAlgorithm): HashAlgorithm = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[HashAlgorithm]
     }
     
-    @scala.inline
-    implicit class HashAlgorithmMutableBuilder[Self <: HashAlgorithm] (val x: Self) extends AnyVal {
+    extension [Self <: HashAlgorithm](x: Self) {
       
-      @scala.inline
-      def setName(value: Ie11DigestAlgorithm): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Ie11DigestAlgorithm): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -42,20 +39,16 @@ object msSubtleCryptoMod {
   }
   object HmacAlgorithm {
     
-    @scala.inline
-    def apply(hash: HashAlgorithm): HmacAlgorithm = {
+    inline def apply(hash: HashAlgorithm): HmacAlgorithm = {
       val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], name = "HMAC")
       __obj.asInstanceOf[HmacAlgorithm]
     }
     
-    @scala.inline
-    implicit class HmacAlgorithmMutableBuilder[Self <: HmacAlgorithm] (val x: Self) extends AnyVal {
+    extension [Self <: HmacAlgorithm](x: Self) {
       
-      @scala.inline
-      def setHash(value: HashAlgorithm): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
+      inline def setHash(value: HashAlgorithm): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: HMAC): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: HMAC): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -67,14 +60,11 @@ object msSubtleCryptoMod {
   trait Ie11DigestAlgorithm extends StObject
   object Ie11DigestAlgorithm {
     
-    @scala.inline
-    def `SHA-1`: typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.`SHA-1` = "SHA-1".asInstanceOf[typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.`SHA-1`]
+    inline def `SHA-1`: typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.`SHA-1` = "SHA-1".asInstanceOf[typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.`SHA-1`]
     
-    @scala.inline
-    def `SHA-256`: typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.`SHA-256` = "SHA-256".asInstanceOf[typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.`SHA-256`]
+    inline def `SHA-256`: typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.`SHA-256` = "SHA-256".asInstanceOf[typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.`SHA-256`]
     
-    @scala.inline
-    def `SHA-384`: typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.`SHA-384` = "SHA-384".asInstanceOf[typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.`SHA-384`]
+    inline def `SHA-384`: typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.`SHA-384` = "SHA-384".asInstanceOf[typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.`SHA-384`]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -98,29 +88,21 @@ object msSubtleCryptoMod {
   trait KeyUsage extends StObject
   object KeyUsage {
     
-    @scala.inline
-    def decrypt: typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.decrypt = "decrypt".asInstanceOf[typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.decrypt]
+    inline def decrypt: typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.decrypt = "decrypt".asInstanceOf[typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.decrypt]
     
-    @scala.inline
-    def derive: typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.derive = "derive".asInstanceOf[typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.derive]
+    inline def derive: typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.derive = "derive".asInstanceOf[typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.derive]
     
-    @scala.inline
-    def encrypt: typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.encrypt = "encrypt".asInstanceOf[typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.encrypt]
+    inline def encrypt: typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.encrypt = "encrypt".asInstanceOf[typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.encrypt]
     
-    @scala.inline
-    def importKey: typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.importKey = "importKey".asInstanceOf[typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.importKey]
+    inline def importKey: typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.importKey = "importKey".asInstanceOf[typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.importKey]
     
-    @scala.inline
-    def sign: typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.sign = "sign".asInstanceOf[typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.sign]
+    inline def sign: typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.sign = "sign".asInstanceOf[typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.sign]
     
-    @scala.inline
-    def unwrapKey: typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.unwrapKey = "unwrapKey".asInstanceOf[typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.unwrapKey]
+    inline def unwrapKey: typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.unwrapKey = "unwrapKey".asInstanceOf[typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.unwrapKey]
     
-    @scala.inline
-    def verify: typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.verify = "verify".asInstanceOf[typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.verify]
+    inline def verify: typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.verify = "verify".asInstanceOf[typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.verify]
     
-    @scala.inline
-    def wrapKey: typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.wrapKey = "wrapKey".asInstanceOf[typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.wrapKey]
+    inline def wrapKey: typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.wrapKey = "wrapKey".asInstanceOf[typings.awsCryptoIe11Detection.awsCryptoIe11DetectionStrings.wrapKey]
   }
   
   @js.native

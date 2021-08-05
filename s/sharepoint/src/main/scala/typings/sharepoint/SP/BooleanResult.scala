@@ -10,16 +10,13 @@ trait BooleanResult extends StObject {
 }
 object BooleanResult {
   
-  @scala.inline
-  def apply(get_value: () => Boolean): BooleanResult = {
+  inline def apply(get_value: () => Boolean): BooleanResult = {
     val __obj = js.Dynamic.literal(get_value = js.Any.fromFunction0(get_value))
     __obj.asInstanceOf[BooleanResult]
   }
   
-  @scala.inline
-  implicit class BooleanResultMutableBuilder[Self <: BooleanResult] (val x: Self) extends AnyVal {
+  extension [Self <: BooleanResult](x: Self) {
     
-    @scala.inline
-    def setGet_value(value: () => Boolean): Self = StObject.set(x, "get_value", js.Any.fromFunction0(value))
+    inline def setGet_value(value: () => Boolean): Self = StObject.set(x, "get_value", js.Any.fromFunction0(value))
   }
 }

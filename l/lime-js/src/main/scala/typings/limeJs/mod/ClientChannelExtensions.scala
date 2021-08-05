@@ -15,8 +15,7 @@ object ClientChannelExtensions {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def establishSession(
+  inline def establishSession(
     clientChannel: ClientChannel,
     compression: String,
     encryption: String,

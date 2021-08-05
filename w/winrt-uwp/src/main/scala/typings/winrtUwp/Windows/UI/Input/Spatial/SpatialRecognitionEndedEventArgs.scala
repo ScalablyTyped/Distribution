@@ -10,16 +10,13 @@ trait SpatialRecognitionEndedEventArgs extends StObject {
 }
 object SpatialRecognitionEndedEventArgs {
   
-  @scala.inline
-  def apply(interactionSourceKind: js.Any): SpatialRecognitionEndedEventArgs = {
+  inline def apply(interactionSourceKind: js.Any): SpatialRecognitionEndedEventArgs = {
     val __obj = js.Dynamic.literal(interactionSourceKind = interactionSourceKind.asInstanceOf[js.Any])
     __obj.asInstanceOf[SpatialRecognitionEndedEventArgs]
   }
   
-  @scala.inline
-  implicit class SpatialRecognitionEndedEventArgsMutableBuilder[Self <: SpatialRecognitionEndedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: SpatialRecognitionEndedEventArgs](x: Self) {
     
-    @scala.inline
-    def setInteractionSourceKind(value: js.Any): Self = StObject.set(x, "interactionSourceKind", value.asInstanceOf[js.Any])
+    inline def setInteractionSourceKind(value: js.Any): Self = StObject.set(x, "interactionSourceKind", value.asInstanceOf[js.Any])
   }
 }

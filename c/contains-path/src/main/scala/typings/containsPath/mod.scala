@@ -6,10 +6,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(filepath: String, substr: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(filepath.asInstanceOf[js.Any], substr.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def apply(filepath: String, substr: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].apply(filepath.asInstanceOf[js.Any], substr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(filepath: String, substr: String): Boolean = (^.asInstanceOf[js.Dynamic].apply(filepath.asInstanceOf[js.Any], substr.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def apply(filepath: String, substr: String, options: Options): Boolean = (^.asInstanceOf[js.Dynamic].apply(filepath.asInstanceOf[js.Any], substr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("contains-path", JSImport.Namespace)
   @js.native
@@ -23,26 +21,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setNocase(value: Boolean): Self = StObject.set(x, "nocase", value.asInstanceOf[js.Any])
+      inline def setNocase(value: Boolean): Self = StObject.set(x, "nocase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNocaseUndefined: Self = StObject.set(x, "nocase", js.undefined)
+      inline def setNocaseUndefined: Self = StObject.set(x, "nocase", js.undefined)
       
-      @scala.inline
-      def setPartialMatch(value: Boolean): Self = StObject.set(x, "partialMatch", value.asInstanceOf[js.Any])
+      inline def setPartialMatch(value: Boolean): Self = StObject.set(x, "partialMatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartialMatchUndefined: Self = StObject.set(x, "partialMatch", js.undefined)
+      inline def setPartialMatchUndefined: Self = StObject.set(x, "partialMatch", js.undefined)
     }
   }
 }

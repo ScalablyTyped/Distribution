@@ -10,8 +10,7 @@ trait IFileButton
      with IButton
 object IFileButton {
   
-  @scala.inline
-  def apply(): IFileButton = {
+  inline def apply(): IFileButton = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IFileButton]
   }

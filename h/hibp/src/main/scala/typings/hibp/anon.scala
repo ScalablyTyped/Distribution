@@ -22,50 +22,36 @@ object anon {
   }
   object ApiKey {
     
-    @scala.inline
-    def apply(): ApiKey = {
+    inline def apply(): ApiKey = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ApiKey]
     }
     
-    @scala.inline
-    implicit class ApiKeyMutableBuilder[Self <: ApiKey] (val x: Self) extends AnyVal {
+    extension [Self <: ApiKey](x: Self) {
       
-      @scala.inline
-      def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+      inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiKeyUndefined: Self = StObject.set(x, "apiKey", js.undefined)
+      inline def setApiKeyUndefined: Self = StObject.set(x, "apiKey", js.undefined)
       
-      @scala.inline
-      def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+      inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
+      inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      @scala.inline
-      def setIncludeUnverified(value: Boolean): Self = StObject.set(x, "includeUnverified", value.asInstanceOf[js.Any])
+      inline def setIncludeUnverified(value: Boolean): Self = StObject.set(x, "includeUnverified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeUnverifiedUndefined: Self = StObject.set(x, "includeUnverified", js.undefined)
+      inline def setIncludeUnverifiedUndefined: Self = StObject.set(x, "includeUnverified", js.undefined)
       
-      @scala.inline
-      def setTruncate(value: Boolean): Self = StObject.set(x, "truncate", value.asInstanceOf[js.Any])
+      inline def setTruncate(value: Boolean): Self = StObject.set(x, "truncate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTruncateUndefined: Self = StObject.set(x, "truncate", js.undefined)
+      inline def setTruncateUndefined: Self = StObject.set(x, "truncate", js.undefined)
       
-      @scala.inline
-      def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+      inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
+      inline def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
     }
   }
   
@@ -77,26 +63,20 @@ object anon {
   }
   object BaseUrl {
     
-    @scala.inline
-    def apply(): BaseUrl = {
+    inline def apply(): BaseUrl = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseUrl]
     }
     
-    @scala.inline
-    implicit class BaseUrlMutableBuilder[Self <: BaseUrl] (val x: Self) extends AnyVal {
+    extension [Self <: BaseUrl](x: Self) {
       
-      @scala.inline
-      def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+      inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
+      inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
       
-      @scala.inline
-      def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+      inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
+      inline def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
     }
   }
   
@@ -110,32 +90,24 @@ object anon {
   }
   object Domain {
     
-    @scala.inline
-    def apply(): Domain = {
+    inline def apply(): Domain = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Domain]
     }
     
-    @scala.inline
-    implicit class DomainMutableBuilder[Self <: Domain] (val x: Self) extends AnyVal {
+    extension [Self <: Domain](x: Self) {
       
-      @scala.inline
-      def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+      inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
+      inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      @scala.inline
-      def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+      inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
+      inline def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
     }
   }
   
@@ -153,44 +125,32 @@ object anon {
   }
   object Truncate {
     
-    @scala.inline
-    def apply(): Truncate = {
+    inline def apply(): Truncate = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Truncate]
     }
     
-    @scala.inline
-    implicit class TruncateMutableBuilder[Self <: Truncate] (val x: Self) extends AnyVal {
+    extension [Self <: Truncate](x: Self) {
       
-      @scala.inline
-      def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+      inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiKeyUndefined: Self = StObject.set(x, "apiKey", js.undefined)
+      inline def setApiKeyUndefined: Self = StObject.set(x, "apiKey", js.undefined)
       
-      @scala.inline
-      def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+      inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
+      inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      @scala.inline
-      def setTruncate(value: Boolean): Self = StObject.set(x, "truncate", value.asInstanceOf[js.Any])
+      inline def setTruncate(value: Boolean): Self = StObject.set(x, "truncate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTruncateUndefined: Self = StObject.set(x, "truncate", js.undefined)
+      inline def setTruncateUndefined: Self = StObject.set(x, "truncate", js.undefined)
       
-      @scala.inline
-      def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+      inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
+      inline def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
     }
   }
   
@@ -204,32 +164,24 @@ object anon {
   }
   object UserAgent {
     
-    @scala.inline
-    def apply(): UserAgent = {
+    inline def apply(): UserAgent = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UserAgent]
     }
     
-    @scala.inline
-    implicit class UserAgentMutableBuilder[Self <: UserAgent] (val x: Self) extends AnyVal {
+    extension [Self <: UserAgent](x: Self) {
       
-      @scala.inline
-      def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+      inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiKeyUndefined: Self = StObject.set(x, "apiKey", js.undefined)
+      inline def setApiKeyUndefined: Self = StObject.set(x, "apiKey", js.undefined)
       
-      @scala.inline
-      def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
+      inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
+      inline def setBaseUrlUndefined: Self = StObject.set(x, "baseUrl", js.undefined)
       
-      @scala.inline
-      def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+      inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
+      inline def setUserAgentUndefined: Self = StObject.set(x, "userAgent", js.undefined)
     }
   }
 }

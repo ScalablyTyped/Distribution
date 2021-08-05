@@ -15,20 +15,16 @@ object anon {
   }
   object AuthData {
     
-    @scala.inline
-    def apply(): AuthData = {
+    inline def apply(): AuthData = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AuthData]
     }
     
-    @scala.inline
-    implicit class AuthDataMutableBuilder[Self <: AuthData] (val x: Self) extends AnyVal {
+    extension [Self <: AuthData](x: Self) {
       
-      @scala.inline
-      def setAuthData(value: typings.parse.mod.global.Parse.AuthData): Self = StObject.set(x, "authData", value.asInstanceOf[js.Any])
+      inline def setAuthData(value: typings.parse.mod.global.Parse.AuthData): Self = StObject.set(x, "authData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthDataUndefined: Self = StObject.set(x, "authData", js.undefined)
+      inline def setAuthDataUndefined: Self = StObject.set(x, "authData", js.undefined)
     }
   }
   
@@ -38,17 +34,14 @@ object anon {
   }
   object Base64 {
     
-    @scala.inline
-    def apply(base64: String): Base64 = {
+    inline def apply(base64: String): Base64 = {
       val __obj = js.Dynamic.literal(base64 = base64.asInstanceOf[js.Any])
       __obj.asInstanceOf[Base64]
     }
     
-    @scala.inline
-    implicit class Base64MutableBuilder[Self <: Base64] (val x: Self) extends AnyVal {
+    extension [Self <: Base64](x: Self) {
       
-      @scala.inline
-      def setBase64(value: String): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
+      inline def setBase64(value: String): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
     }
   }
   
@@ -58,17 +51,14 @@ object anon {
   }
   object ClassName {
     
-    @scala.inline
-    def apply(className: String): ClassName = {
+    inline def apply(className: String): ClassName = {
       val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClassName]
     }
     
-    @scala.inline
-    implicit class ClassNameMutableBuilder[Self <: ClassName] (val x: Self) extends AnyVal {
+    extension [Self <: ClassName](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     }
   }
   
@@ -80,20 +70,16 @@ object anon {
   }
   object Dictkey {
     
-    @scala.inline
-    def apply(): Dictkey = {
+    inline def apply(): Dictkey = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Dictkey]
     }
     
-    @scala.inline
-    implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
+    extension [Self <: Dictkey](x: Self) {
       
-      @scala.inline
-      def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+      inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
+      inline def setObjectIdUndefined: Self = StObject.set(x, "objectId", js.undefined)
     }
   }
   
@@ -103,20 +89,16 @@ object anon {
   }
   object ForceSecure {
     
-    @scala.inline
-    def apply(): ForceSecure = {
+    inline def apply(): ForceSecure = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ForceSecure]
     }
     
-    @scala.inline
-    implicit class ForceSecureMutableBuilder[Self <: ForceSecure] (val x: Self) extends AnyVal {
+    extension [Self <: ForceSecure](x: Self) {
       
-      @scala.inline
-      def setForceSecure(value: Boolean): Self = StObject.set(x, "forceSecure", value.asInstanceOf[js.Any])
+      inline def setForceSecure(value: Boolean): Self = StObject.set(x, "forceSecure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceSecureUndefined: Self = StObject.set(x, "forceSecure", js.undefined)
+      inline def setForceSecureUndefined: Self = StObject.set(x, "forceSecure", js.undefined)
     }
   }
   
@@ -130,20 +112,16 @@ object anon {
   }
   object Iso {
     
-    @scala.inline
-    def apply(iso: String): Iso = {
+    inline def apply(iso: String): Iso = {
       val __obj = js.Dynamic.literal(__type = "Date", iso = iso.asInstanceOf[js.Any])
       __obj.asInstanceOf[Iso]
     }
     
-    @scala.inline
-    implicit class IsoMutableBuilder[Self <: Iso] (val x: Self) extends AnyVal {
+    extension [Self <: Iso](x: Self) {
       
-      @scala.inline
-      def setIso(value: String): Self = StObject.set(x, "iso", value.asInstanceOf[js.Any])
+      inline def setIso(value: String): Self = StObject.set(x, "iso", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__type(value: Date): Self = StObject.set(x, "__type", value.asInstanceOf[js.Any])
+      inline def set__type(value: Date): Self = StObject.set(x, "__type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -155,20 +133,16 @@ object anon {
   }
   object Latitude {
     
-    @scala.inline
-    def apply(latitude: Double, longitude: Double): Latitude = {
+    inline def apply(latitude: Double, longitude: Double): Latitude = {
       val __obj = js.Dynamic.literal(latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
       __obj.asInstanceOf[Latitude]
     }
     
-    @scala.inline
-    implicit class LatitudeMutableBuilder[Self <: Latitude] (val x: Self) extends AnyVal {
+    extension [Self <: Latitude](x: Self) {
       
-      @scala.inline
-      def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+      inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+      inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     }
   }
   
@@ -182,23 +156,18 @@ object anon {
   }
   object Name {
     
-    @scala.inline
-    def apply(__type: String, name: String, url: String): Name = {
+    inline def apply(__type: String, name: String, url: String): Name = {
       val __obj = js.Dynamic.literal(__type = __type.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Name]
     }
     
-    @scala.inline
-    implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+    extension [Self <: Name](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__type(value: String): Self = StObject.set(x, "__type", value.asInstanceOf[js.Any])
+      inline def set__type(value: String): Self = StObject.set(x, "__type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -210,21 +179,17 @@ object anon {
   }
   object Size {
     
-    @scala.inline
-    def apply(size: Double, `type`: String): Size = {
+    inline def apply(size: Double, `type`: String): Size = {
       val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Size]
     }
     
-    @scala.inline
-    implicit class SizeMutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
+    extension [Self <: Size](x: Self) {
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -234,17 +199,14 @@ object anon {
   }
   object SizeNumber {
     
-    @scala.inline
-    def apply(size: Double): SizeNumber = {
+    inline def apply(size: Double): SizeNumber = {
       val __obj = js.Dynamic.literal(size = size.asInstanceOf[js.Any])
       __obj.asInstanceOf[SizeNumber]
     }
     
-    @scala.inline
-    implicit class SizeNumberMutableBuilder[Self <: SizeNumber] (val x: Self) extends AnyVal {
+    extension [Self <: SizeNumber](x: Self) {
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
   
@@ -254,17 +216,14 @@ object anon {
   }
   object Uri {
     
-    @scala.inline
-    def apply(uri: String): Uri = {
+    inline def apply(uri: String): Uri = {
       val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[Uri]
     }
     
-    @scala.inline
-    implicit class UriMutableBuilder[Self <: Uri] (val x: Self) extends AnyVal {
+    extension [Self <: Uri](x: Self) {
       
-      @scala.inline
-      def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+      inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -74,59 +74,42 @@ object typesGrantListEntryMod {
   }
   object GrantListEntry {
     
-    @scala.inline
-    def apply(): GrantListEntry = {
+    inline def apply(): GrantListEntry = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GrantListEntry]
     }
     
-    @scala.inline
-    implicit class GrantListEntryMutableBuilder[Self <: GrantListEntry] (val x: Self) extends AnyVal {
+    extension [Self <: GrantListEntry](x: Self) {
       
-      @scala.inline
-      def setConstraints(value: GrantConstraints): Self = StObject.set(x, "Constraints", value.asInstanceOf[js.Any])
+      inline def setConstraints(value: GrantConstraints): Self = StObject.set(x, "Constraints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstraintsUndefined: Self = StObject.set(x, "Constraints", js.undefined)
+      inline def setConstraintsUndefined: Self = StObject.set(x, "Constraints", js.undefined)
       
-      @scala.inline
-      def setCreationDate(value: Date | String | Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+      inline def setCreationDate(value: Date | String | Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+      inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
       
-      @scala.inline
-      def setGrantId(value: String): Self = StObject.set(x, "GrantId", value.asInstanceOf[js.Any])
+      inline def setGrantId(value: String): Self = StObject.set(x, "GrantId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGrantIdUndefined: Self = StObject.set(x, "GrantId", js.undefined)
+      inline def setGrantIdUndefined: Self = StObject.set(x, "GrantId", js.undefined)
       
-      @scala.inline
-      def setGranteePrincipal(value: String): Self = StObject.set(x, "GranteePrincipal", value.asInstanceOf[js.Any])
+      inline def setGranteePrincipal(value: String): Self = StObject.set(x, "GranteePrincipal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGranteePrincipalUndefined: Self = StObject.set(x, "GranteePrincipal", js.undefined)
+      inline def setGranteePrincipalUndefined: Self = StObject.set(x, "GranteePrincipal", js.undefined)
       
-      @scala.inline
-      def setIssuingAccount(value: String): Self = StObject.set(x, "IssuingAccount", value.asInstanceOf[js.Any])
+      inline def setIssuingAccount(value: String): Self = StObject.set(x, "IssuingAccount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssuingAccountUndefined: Self = StObject.set(x, "IssuingAccount", js.undefined)
+      inline def setIssuingAccountUndefined: Self = StObject.set(x, "IssuingAccount", js.undefined)
       
-      @scala.inline
-      def setKeyId(value: String): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+      inline def setKeyId(value: String): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
+      inline def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
       
-      @scala.inline
-      def setOperations(
+      inline def setOperations(
         value: (js.Array[
               Decrypt | Encrypt | GenerateDataKey | GenerateDataKeyWithoutPlaintext | ReEncryptFrom | ReEncryptTo | CreateGrant | RetireGrant | DescribeKey | String
             ]) | (Iterable[
@@ -134,19 +117,15 @@ object typesGrantListEntryMod {
             ])
       ): Self = StObject.set(x, "Operations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperationsUndefined: Self = StObject.set(x, "Operations", js.undefined)
+      inline def setOperationsUndefined: Self = StObject.set(x, "Operations", js.undefined)
       
-      @scala.inline
-      def setOperationsVarargs(
+      inline def setOperationsVarargs(
         value: (Decrypt | Encrypt | GenerateDataKey | GenerateDataKeyWithoutPlaintext | ReEncryptFrom | ReEncryptTo | CreateGrant | RetireGrant | DescribeKey | String)*
       ): Self = StObject.set(x, "Operations", js.Array(value :_*))
       
-      @scala.inline
-      def setRetiringPrincipal(value: String): Self = StObject.set(x, "RetiringPrincipal", value.asInstanceOf[js.Any])
+      inline def setRetiringPrincipal(value: String): Self = StObject.set(x, "RetiringPrincipal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetiringPrincipalUndefined: Self = StObject.set(x, "RetiringPrincipal", js.undefined)
+      inline def setRetiringPrincipalUndefined: Self = StObject.set(x, "RetiringPrincipal", js.undefined)
     }
   }
   
@@ -178,39 +157,30 @@ object typesGrantListEntryMod {
   }
   object UnmarshalledGrantListEntry {
     
-    @scala.inline
-    def apply(): UnmarshalledGrantListEntry = {
+    inline def apply(): UnmarshalledGrantListEntry = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledGrantListEntry]
     }
     
-    @scala.inline
-    implicit class UnmarshalledGrantListEntryMutableBuilder[Self <: UnmarshalledGrantListEntry] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledGrantListEntry](x: Self) {
       
-      @scala.inline
-      def setConstraints(value: UnmarshalledGrantConstraints): Self = StObject.set(x, "Constraints", value.asInstanceOf[js.Any])
+      inline def setConstraints(value: UnmarshalledGrantConstraints): Self = StObject.set(x, "Constraints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConstraintsUndefined: Self = StObject.set(x, "Constraints", js.undefined)
+      inline def setConstraintsUndefined: Self = StObject.set(x, "Constraints", js.undefined)
       
-      @scala.inline
-      def setCreationDate(value: Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+      inline def setCreationDate(value: Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+      inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
       
-      @scala.inline
-      def setOperations(
+      inline def setOperations(
         value: js.Array[
               Decrypt | Encrypt | GenerateDataKey | GenerateDataKeyWithoutPlaintext | ReEncryptFrom | ReEncryptTo | CreateGrant | RetireGrant | DescribeKey | String
             ]
       ): Self = StObject.set(x, "Operations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOperationsUndefined: Self = StObject.set(x, "Operations", js.undefined)
+      inline def setOperationsUndefined: Self = StObject.set(x, "Operations", js.undefined)
       
-      @scala.inline
-      def setOperationsVarargs(
+      inline def setOperationsVarargs(
         value: (Decrypt | Encrypt | GenerateDataKey | GenerateDataKeyWithoutPlaintext | ReEncryptFrom | ReEncryptTo | CreateGrant | RetireGrant | DescribeKey | String)*
       ): Self = StObject.set(x, "Operations", js.Array(value :_*))
     }

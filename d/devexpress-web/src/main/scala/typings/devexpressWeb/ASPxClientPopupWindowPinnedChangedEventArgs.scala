@@ -18,16 +18,13 @@ trait ASPxClientPopupWindowPinnedChangedEventArgs
 }
 object ASPxClientPopupWindowPinnedChangedEventArgs {
   
-  @scala.inline
-  def apply(pinned: Boolean, window: ASPxClientPopupWindow): ASPxClientPopupWindowPinnedChangedEventArgs = {
+  inline def apply(pinned: Boolean, window: ASPxClientPopupWindow): ASPxClientPopupWindowPinnedChangedEventArgs = {
     val __obj = js.Dynamic.literal(pinned = pinned.asInstanceOf[js.Any], window = window.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientPopupWindowPinnedChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientPopupWindowPinnedChangedEventArgsMutableBuilder[Self <: ASPxClientPopupWindowPinnedChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientPopupWindowPinnedChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
+    inline def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
   }
 }

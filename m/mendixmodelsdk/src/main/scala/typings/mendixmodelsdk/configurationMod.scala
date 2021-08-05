@@ -21,26 +21,20 @@ object configurationMod {
     }
     object IBackendCredentials {
       
-      @scala.inline
-      def apply(password: String, username: String): IBackendCredentials = {
+      inline def apply(password: String, username: String): IBackendCredentials = {
         val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
         __obj.asInstanceOf[IBackendCredentials]
       }
       
-      @scala.inline
-      implicit class IBackendCredentialsMutableBuilder[Self <: IBackendCredentials] (val x: Self) extends AnyVal {
+      extension [Self <: IBackendCredentials](x: Self) {
         
-        @scala.inline
-        def setOpenid(value: String): Self = StObject.set(x, "openid", value.asInstanceOf[js.Any])
+        inline def setOpenid(value: String): Self = StObject.set(x, "openid", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOpenidUndefined: Self = StObject.set(x, "openid", js.undefined)
+        inline def setOpenidUndefined: Self = StObject.set(x, "openid", js.undefined)
         
-        @scala.inline
-        def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+        inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+        inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       }
     }
     
@@ -58,26 +52,20 @@ object configurationMod {
     }
     object ICreateWorkingCopyFromTeamServerParameters {
       
-      @scala.inline
-      def apply(name: String, projectId: String, teamServerBaseBranch: String): ICreateWorkingCopyFromTeamServerParameters = {
+      inline def apply(name: String, projectId: String, teamServerBaseBranch: String): ICreateWorkingCopyFromTeamServerParameters = {
         val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], projectId = projectId.asInstanceOf[js.Any], teamServerBaseBranch = teamServerBaseBranch.asInstanceOf[js.Any])
         __obj.asInstanceOf[ICreateWorkingCopyFromTeamServerParameters]
       }
       
-      @scala.inline
-      implicit class ICreateWorkingCopyFromTeamServerParametersMutableBuilder[Self <: ICreateWorkingCopyFromTeamServerParameters] (val x: Self) extends AnyVal {
+      extension [Self <: ICreateWorkingCopyFromTeamServerParameters](x: Self) {
         
-        @scala.inline
-        def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+        inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTeamServerBaseBranch(value: String): Self = StObject.set(x, "teamServerBaseBranch", value.asInstanceOf[js.Any])
+        inline def setTeamServerBaseBranch(value: String): Self = StObject.set(x, "teamServerBaseBranch", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTeamServerGitUrl(value: String): Self = StObject.set(x, "teamServerGitUrl", value.asInstanceOf[js.Any])
+        inline def setTeamServerGitUrl(value: String): Self = StObject.set(x, "teamServerGitUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTeamServerGitUrlUndefined: Self = StObject.set(x, "teamServerGitUrl", js.undefined)
+        inline def setTeamServerGitUrlUndefined: Self = StObject.set(x, "teamServerGitUrl", js.undefined)
       }
     }
     
@@ -92,17 +80,14 @@ object configurationMod {
     }
     object ICreateWorkingCopyParameters {
       
-      @scala.inline
-      def apply(name: String, template: String): ICreateWorkingCopyParameters = {
+      inline def apply(name: String, template: String): ICreateWorkingCopyParameters = {
         val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any])
         __obj.asInstanceOf[ICreateWorkingCopyParameters]
       }
       
-      @scala.inline
-      implicit class ICreateWorkingCopyParametersMutableBuilder[Self <: ICreateWorkingCopyParameters] (val x: Self) extends AnyVal {
+      extension [Self <: ICreateWorkingCopyParameters](x: Self) {
         
-        @scala.inline
-        def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+        inline def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
       }
     }
     
@@ -164,77 +149,54 @@ object configurationMod {
     }
     object ICreateWorkingCopyParametersBase {
       
-      @scala.inline
-      def apply(name: String): ICreateWorkingCopyParametersBase = {
+      inline def apply(name: String): ICreateWorkingCopyParametersBase = {
         val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
         __obj.asInstanceOf[ICreateWorkingCopyParametersBase]
       }
       
-      @scala.inline
-      implicit class ICreateWorkingCopyParametersBaseMutableBuilder[Self <: ICreateWorkingCopyParametersBase] (val x: Self) extends AnyVal {
+      extension [Self <: ICreateWorkingCopyParametersBase](x: Self) {
         
-        @scala.inline
-        def setAvatarUrl(value: String): Self = StObject.set(x, "avatarUrl", value.asInstanceOf[js.Any])
+        inline def setAvatarUrl(value: String): Self = StObject.set(x, "avatarUrl", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAvatarUrlUndefined: Self = StObject.set(x, "avatarUrl", js.undefined)
+        inline def setAvatarUrlUndefined: Self = StObject.set(x, "avatarUrl", js.undefined)
         
-        @scala.inline
-        def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+        inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+        inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
         
-        @scala.inline
-        def setIsCollaboration(value: Boolean): Self = StObject.set(x, "isCollaboration", value.asInstanceOf[js.Any])
+        inline def setIsCollaboration(value: Boolean): Self = StObject.set(x, "isCollaboration", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIsCollaborationUndefined: Self = StObject.set(x, "isCollaboration", js.undefined)
+        inline def setIsCollaborationUndefined: Self = StObject.set(x, "isCollaboration", js.undefined)
         
-        @scala.inline
-        def setLongLived(value: Boolean): Self = StObject.set(x, "longLived", value.asInstanceOf[js.Any])
+        inline def setLongLived(value: Boolean): Self = StObject.set(x, "longLived", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLongLivedUndefined: Self = StObject.set(x, "longLived", js.undefined)
+        inline def setLongLivedUndefined: Self = StObject.set(x, "longLived", js.undefined)
         
-        @scala.inline
-        def setMarkAsChanged(value: Boolean): Self = StObject.set(x, "markAsChanged", value.asInstanceOf[js.Any])
+        inline def setMarkAsChanged(value: Boolean): Self = StObject.set(x, "markAsChanged", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMarkAsChangedUndefined: Self = StObject.set(x, "markAsChanged", js.undefined)
+        inline def setMarkAsChangedUndefined: Self = StObject.set(x, "markAsChanged", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+        inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+        inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
         
-        @scala.inline
-        def setSetAsDefault(value: Boolean): Self = StObject.set(x, "setAsDefault", value.asInstanceOf[js.Any])
+        inline def setSetAsDefault(value: Boolean): Self = StObject.set(x, "setAsDefault", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSetAsDefaultUndefined: Self = StObject.set(x, "setAsDefault", js.undefined)
+        inline def setSetAsDefaultUndefined: Self = StObject.set(x, "setAsDefault", js.undefined)
         
-        @scala.inline
-        def setTeamServerBaseBranch(value: String): Self = StObject.set(x, "teamServerBaseBranch", value.asInstanceOf[js.Any])
+        inline def setTeamServerBaseBranch(value: String): Self = StObject.set(x, "teamServerBaseBranch", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTeamServerBaseBranchUndefined: Self = StObject.set(x, "teamServerBaseBranch", js.undefined)
+        inline def setTeamServerBaseBranchUndefined: Self = StObject.set(x, "teamServerBaseBranch", js.undefined)
         
-        @scala.inline
-        def setTeamServerBaseCommitId(value: String): Self = StObject.set(x, "teamServerBaseCommitId", value.asInstanceOf[js.Any])
+        inline def setTeamServerBaseCommitId(value: String): Self = StObject.set(x, "teamServerBaseCommitId", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTeamServerBaseCommitIdUndefined: Self = StObject.set(x, "teamServerBaseCommitId", js.undefined)
+        inline def setTeamServerBaseCommitIdUndefined: Self = StObject.set(x, "teamServerBaseCommitId", js.undefined)
         
-        @scala.inline
-        def setTeamServerBaseRevision(value: Double): Self = StObject.set(x, "teamServerBaseRevision", value.asInstanceOf[js.Any])
+        inline def setTeamServerBaseRevision(value: Double): Self = StObject.set(x, "teamServerBaseRevision", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTeamServerBaseRevisionUndefined: Self = StObject.set(x, "teamServerBaseRevision", js.undefined)
+        inline def setTeamServerBaseRevisionUndefined: Self = StObject.set(x, "teamServerBaseRevision", js.undefined)
       }
     }
     
@@ -250,38 +212,28 @@ object configurationMod {
     }
     object ISdkConfig {
       
-      @scala.inline
-      def apply(): ISdkConfig = {
+      inline def apply(): ISdkConfig = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ISdkConfig]
       }
       
-      @scala.inline
-      implicit class ISdkConfigMutableBuilder[Self <: ISdkConfig] (val x: Self) extends AnyVal {
+      extension [Self <: ISdkConfig](x: Self) {
         
-        @scala.inline
-        def setClient(value: IModelServerClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+        inline def setClient(value: IModelServerClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
+        inline def setClientUndefined: Self = StObject.set(x, "client", js.undefined)
         
-        @scala.inline
-        def setCredentials(value: IBackendCredentials | ISdkCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
+        inline def setCredentials(value: IBackendCredentials | ISdkCredentials): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
+        inline def setCredentialsUndefined: Self = StObject.set(x, "credentials", js.undefined)
         
-        @scala.inline
-        def setEndPoint(value: String): Self = StObject.set(x, "endPoint", value.asInstanceOf[js.Any])
+        inline def setEndPoint(value: String): Self = StObject.set(x, "endPoint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEndPointUndefined: Self = StObject.set(x, "endPoint", js.undefined)
+        inline def setEndPointUndefined: Self = StObject.set(x, "endPoint", js.undefined)
         
-        @scala.inline
-        def setTransportation(value: ITransportation): Self = StObject.set(x, "transportation", value.asInstanceOf[js.Any])
+        inline def setTransportation(value: ITransportation): Self = StObject.set(x, "transportation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTransportationUndefined: Self = StObject.set(x, "transportation", js.undefined)
+        inline def setTransportationUndefined: Self = StObject.set(x, "transportation", js.undefined)
       }
     }
     
@@ -293,20 +245,16 @@ object configurationMod {
     }
     object ISdkCredentials {
       
-      @scala.inline
-      def apply(apikey: String, username: String): ISdkCredentials = {
+      inline def apply(apikey: String, username: String): ISdkCredentials = {
         val __obj = js.Dynamic.literal(apikey = apikey.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
         __obj.asInstanceOf[ISdkCredentials]
       }
       
-      @scala.inline
-      implicit class ISdkCredentialsMutableBuilder[Self <: ISdkCredentials] (val x: Self) extends AnyVal {
+      extension [Self <: ISdkCredentials](x: Self) {
         
-        @scala.inline
-        def setApikey(value: String): Self = StObject.set(x, "apikey", value.asInstanceOf[js.Any])
+        inline def setApikey(value: String): Self = StObject.set(x, "apikey", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+        inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       }
     }
   }

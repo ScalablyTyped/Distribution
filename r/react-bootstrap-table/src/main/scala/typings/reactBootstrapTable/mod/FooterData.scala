@@ -33,31 +33,23 @@ trait FooterData extends StObject {
 }
 object FooterData {
   
-  @scala.inline
-  def apply(columnIndex: Double, label: String): FooterData = {
+  inline def apply(columnIndex: Double, label: String): FooterData = {
     val __obj = js.Dynamic.literal(columnIndex = columnIndex.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any])
     __obj.asInstanceOf[FooterData]
   }
   
-  @scala.inline
-  implicit class FooterDataMutableBuilder[Self <: FooterData] (val x: Self) extends AnyVal {
+  extension [Self <: FooterData](x: Self) {
     
-    @scala.inline
-    def setAlign(value: DataAlignType): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
+    inline def setAlign(value: DataAlignType): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
+    inline def setAlignUndefined: Self = StObject.set(x, "align", js.undefined)
     
-    @scala.inline
-    def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
+    inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatter(value: /* tableData */ js.Array[js.Any] => String | Double | ReactElement): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
+    inline def setFormatter(value: /* tableData */ js.Array[js.Any] => String | Double | ReactElement): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+    inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
   }
 }

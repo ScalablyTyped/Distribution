@@ -18,25 +18,19 @@ trait InputDeviceConfigurableSettings extends StObject {
 }
 object InputDeviceConfigurableSettings {
   
-  @scala.inline
-  def apply(): InputDeviceConfigurableSettings = {
+  inline def apply(): InputDeviceConfigurableSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InputDeviceConfigurableSettings]
   }
   
-  @scala.inline
-  implicit class InputDeviceConfigurableSettingsMutableBuilder[Self <: InputDeviceConfigurableSettings] (val x: Self) extends AnyVal {
+  extension [Self <: InputDeviceConfigurableSettings](x: Self) {
     
-    @scala.inline
-    def setConfiguredInput(value: InputDeviceConfiguredInput): Self = StObject.set(x, "ConfiguredInput", value.asInstanceOf[js.Any])
+    inline def setConfiguredInput(value: InputDeviceConfiguredInput): Self = StObject.set(x, "ConfiguredInput", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfiguredInputUndefined: Self = StObject.set(x, "ConfiguredInput", js.undefined)
+    inline def setConfiguredInputUndefined: Self = StObject.set(x, "ConfiguredInput", js.undefined)
     
-    @scala.inline
-    def setMaxBitrate(value: integer): Self = StObject.set(x, "MaxBitrate", value.asInstanceOf[js.Any])
+    inline def setMaxBitrate(value: integer): Self = StObject.set(x, "MaxBitrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxBitrateUndefined: Self = StObject.set(x, "MaxBitrate", js.undefined)
+    inline def setMaxBitrateUndefined: Self = StObject.set(x, "MaxBitrate", js.undefined)
   }
 }

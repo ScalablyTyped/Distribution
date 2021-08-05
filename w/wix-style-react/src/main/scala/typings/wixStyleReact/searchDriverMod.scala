@@ -23,8 +23,7 @@ object searchDriverMod {
   }
   object SearchDriver {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       driver: Blur & IsCollapsed,
       dropdownLayoutDriver: DropdownLayoutDriver,
       exists: () => Boolean,
@@ -34,20 +33,15 @@ object searchDriverMod {
       __obj.asInstanceOf[SearchDriver]
     }
     
-    @scala.inline
-    implicit class SearchDriverMutableBuilder[Self <: SearchDriver] (val x: Self) extends AnyVal {
+    extension [Self <: SearchDriver](x: Self) {
       
-      @scala.inline
-      def setDriver(value: Blur & IsCollapsed): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
+      inline def setDriver(value: Blur & IsCollapsed): Self = StObject.set(x, "driver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropdownLayoutDriver(value: DropdownLayoutDriver): Self = StObject.set(x, "dropdownLayoutDriver", value.asInstanceOf[js.Any])
+      inline def setDropdownLayoutDriver(value: DropdownLayoutDriver): Self = StObject.set(x, "dropdownLayoutDriver", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExists(value: () => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
+      inline def setExists(value: () => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setInputDriver(value: InputDriver): Self = StObject.set(x, "inputDriver", value.asInstanceOf[js.Any])
+      inline def setInputDriver(value: InputDriver): Self = StObject.set(x, "inputDriver", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -20,22 +20,17 @@ trait FilePathWithHeaders extends StObject {
 }
 object FilePathWithHeaders {
   
-  @scala.inline
-  def apply(path: String): FilePathWithHeaders = {
+  inline def apply(path: String): FilePathWithHeaders = {
     val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[FilePathWithHeaders]
   }
   
-  @scala.inline
-  implicit class FilePathWithHeadersMutableBuilder[Self <: FilePathWithHeaders] (val x: Self) extends AnyVal {
+  extension [Self <: FilePathWithHeaders](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }
 }

@@ -28,12 +28,10 @@ object Table {
   @JSImport("react-virtualized", "Table.defaultProps")
   @js.native
   def defaultProps: DisableHeader = js.native
-  @scala.inline
-  def defaultProps_=(x: DisableHeader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: DisableHeader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   
   @JSImport("react-virtualized", "Table.propTypes")
   @js.native
   def propTypes: ClassName = js.native
-  @scala.inline
-  def propTypes_=(x: ClassName): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+  inline def propTypes_=(x: ClassName): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
 }

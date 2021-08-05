@@ -13,19 +13,15 @@ trait DisableAlarmActionsInput extends StObject {
 }
 object DisableAlarmActionsInput {
   
-  @scala.inline
-  def apply(AlarmNames: AlarmNames): DisableAlarmActionsInput = {
+  inline def apply(AlarmNames: AlarmNames): DisableAlarmActionsInput = {
     val __obj = js.Dynamic.literal(AlarmNames = AlarmNames.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisableAlarmActionsInput]
   }
   
-  @scala.inline
-  implicit class DisableAlarmActionsInputMutableBuilder[Self <: DisableAlarmActionsInput] (val x: Self) extends AnyVal {
+  extension [Self <: DisableAlarmActionsInput](x: Self) {
     
-    @scala.inline
-    def setAlarmNames(value: AlarmNames): Self = StObject.set(x, "AlarmNames", value.asInstanceOf[js.Any])
+    inline def setAlarmNames(value: AlarmNames): Self = StObject.set(x, "AlarmNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlarmNamesVarargs(value: AlarmName*): Self = StObject.set(x, "AlarmNames", js.Array(value :_*))
+    inline def setAlarmNamesVarargs(value: AlarmName*): Self = StObject.set(x, "AlarmNames", js.Array(value :_*))
   }
 }

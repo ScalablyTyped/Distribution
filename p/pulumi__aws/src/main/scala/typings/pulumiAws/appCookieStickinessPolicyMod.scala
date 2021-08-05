@@ -64,21 +64,16 @@ object appCookieStickinessPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): AppCookieStickinessPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AppCookieStickinessPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AppCookieStickinessPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AppCookieStickinessPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AppCookieStickinessPolicyState): AppCookieStickinessPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AppCookieStickinessPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: AppCookieStickinessPolicyState, opts: CustomResourceOptions): AppCookieStickinessPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AppCookieStickinessPolicy]
+    inline def get(name: String, id: Input[ID]): AppCookieStickinessPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AppCookieStickinessPolicy]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AppCookieStickinessPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AppCookieStickinessPolicy]
+    inline def get(name: String, id: Input[ID], state: AppCookieStickinessPolicyState): AppCookieStickinessPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AppCookieStickinessPolicy]
+    inline def get(name: String, id: Input[ID], state: AppCookieStickinessPolicyState, opts: CustomResourceOptions): AppCookieStickinessPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AppCookieStickinessPolicy]
     
     /**
       * Returns true if the given object is an instance of AppCookieStickinessPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticloadbalancing/appCookieStickinessPolicy.AppCookieStickinessPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elasticloadbalancing/appCookieStickinessPolicy.AppCookieStickinessPolicy */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticloadbalancing/appCookieStickinessPolicy.AppCookieStickinessPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elasticloadbalancing/appCookieStickinessPolicy.AppCookieStickinessPolicy */ Boolean]
   }
   
   trait AppCookieStickinessPolicyArgs extends StObject {
@@ -108,29 +103,22 @@ object appCookieStickinessPolicyMod {
   }
   object AppCookieStickinessPolicyArgs {
     
-    @scala.inline
-    def apply(cookieName: Input[String], lbPort: Input[Double], loadBalancer: Input[String]): AppCookieStickinessPolicyArgs = {
+    inline def apply(cookieName: Input[String], lbPort: Input[Double], loadBalancer: Input[String]): AppCookieStickinessPolicyArgs = {
       val __obj = js.Dynamic.literal(cookieName = cookieName.asInstanceOf[js.Any], lbPort = lbPort.asInstanceOf[js.Any], loadBalancer = loadBalancer.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppCookieStickinessPolicyArgs]
     }
     
-    @scala.inline
-    implicit class AppCookieStickinessPolicyArgsMutableBuilder[Self <: AppCookieStickinessPolicyArgs] (val x: Self) extends AnyVal {
+    extension [Self <: AppCookieStickinessPolicyArgs](x: Self) {
       
-      @scala.inline
-      def setCookieName(value: Input[String]): Self = StObject.set(x, "cookieName", value.asInstanceOf[js.Any])
+      inline def setCookieName(value: Input[String]): Self = StObject.set(x, "cookieName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLbPort(value: Input[Double]): Self = StObject.set(x, "lbPort", value.asInstanceOf[js.Any])
+      inline def setLbPort(value: Input[Double]): Self = StObject.set(x, "lbPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadBalancer(value: Input[String]): Self = StObject.set(x, "loadBalancer", value.asInstanceOf[js.Any])
+      inline def setLoadBalancer(value: Input[String]): Self = StObject.set(x, "loadBalancer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -161,38 +149,28 @@ object appCookieStickinessPolicyMod {
   }
   object AppCookieStickinessPolicyState {
     
-    @scala.inline
-    def apply(): AppCookieStickinessPolicyState = {
+    inline def apply(): AppCookieStickinessPolicyState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[AppCookieStickinessPolicyState]
     }
     
-    @scala.inline
-    implicit class AppCookieStickinessPolicyStateMutableBuilder[Self <: AppCookieStickinessPolicyState] (val x: Self) extends AnyVal {
+    extension [Self <: AppCookieStickinessPolicyState](x: Self) {
       
-      @scala.inline
-      def setCookieName(value: Input[String]): Self = StObject.set(x, "cookieName", value.asInstanceOf[js.Any])
+      inline def setCookieName(value: Input[String]): Self = StObject.set(x, "cookieName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieNameUndefined: Self = StObject.set(x, "cookieName", js.undefined)
+      inline def setCookieNameUndefined: Self = StObject.set(x, "cookieName", js.undefined)
       
-      @scala.inline
-      def setLbPort(value: Input[Double]): Self = StObject.set(x, "lbPort", value.asInstanceOf[js.Any])
+      inline def setLbPort(value: Input[Double]): Self = StObject.set(x, "lbPort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLbPortUndefined: Self = StObject.set(x, "lbPort", js.undefined)
+      inline def setLbPortUndefined: Self = StObject.set(x, "lbPort", js.undefined)
       
-      @scala.inline
-      def setLoadBalancer(value: Input[String]): Self = StObject.set(x, "loadBalancer", value.asInstanceOf[js.Any])
+      inline def setLoadBalancer(value: Input[String]): Self = StObject.set(x, "loadBalancer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadBalancerUndefined: Self = StObject.set(x, "loadBalancer", js.undefined)
+      inline def setLoadBalancerUndefined: Self = StObject.set(x, "loadBalancer", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
 }

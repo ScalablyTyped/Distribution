@@ -28,40 +28,29 @@ trait ListFindingsRequest extends StObject {
 }
 object ListFindingsRequest {
   
-  @scala.inline
-  def apply(): ListFindingsRequest = {
+  inline def apply(): ListFindingsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListFindingsRequest]
   }
   
-  @scala.inline
-  implicit class ListFindingsRequestMutableBuilder[Self <: ListFindingsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListFindingsRequest](x: Self) {
     
-    @scala.inline
-    def setAssessmentRunArns(value: ListParentArnList): Self = StObject.set(x, "assessmentRunArns", value.asInstanceOf[js.Any])
+    inline def setAssessmentRunArns(value: ListParentArnList): Self = StObject.set(x, "assessmentRunArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssessmentRunArnsUndefined: Self = StObject.set(x, "assessmentRunArns", js.undefined)
+    inline def setAssessmentRunArnsUndefined: Self = StObject.set(x, "assessmentRunArns", js.undefined)
     
-    @scala.inline
-    def setAssessmentRunArnsVarargs(value: Arn*): Self = StObject.set(x, "assessmentRunArns", js.Array(value :_*))
+    inline def setAssessmentRunArnsVarargs(value: Arn*): Self = StObject.set(x, "assessmentRunArns", js.Array(value :_*))
     
-    @scala.inline
-    def setFilter(value: FindingFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: FindingFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: ListMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: ListMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

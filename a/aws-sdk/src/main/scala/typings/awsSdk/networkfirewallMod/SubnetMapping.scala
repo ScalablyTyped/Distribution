@@ -13,16 +13,13 @@ trait SubnetMapping extends StObject {
 }
 object SubnetMapping {
   
-  @scala.inline
-  def apply(SubnetId: CollectionMemberString): SubnetMapping = {
+  inline def apply(SubnetId: CollectionMemberString): SubnetMapping = {
     val __obj = js.Dynamic.literal(SubnetId = SubnetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[SubnetMapping]
   }
   
-  @scala.inline
-  implicit class SubnetMappingMutableBuilder[Self <: SubnetMapping] (val x: Self) extends AnyVal {
+  extension [Self <: SubnetMapping](x: Self) {
     
-    @scala.inline
-    def setSubnetId(value: CollectionMemberString): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
+    inline def setSubnetId(value: CollectionMemberString): Self = StObject.set(x, "SubnetId", value.asInstanceOf[js.Any])
   }
 }

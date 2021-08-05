@@ -10,19 +10,15 @@ trait ControlOptions extends StObject {
 }
 object ControlOptions {
   
-  @scala.inline
-  def apply(): ControlOptions = {
+  inline def apply(): ControlOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ControlOptions]
   }
   
-  @scala.inline
-  implicit class ControlOptionsMutableBuilder[Self <: ControlOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ControlOptions](x: Self) {
     
-    @scala.inline
-    def setPosition(value: ControlPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: ControlPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

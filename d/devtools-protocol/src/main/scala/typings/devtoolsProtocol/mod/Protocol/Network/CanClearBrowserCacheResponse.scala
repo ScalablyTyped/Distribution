@@ -13,16 +13,13 @@ trait CanClearBrowserCacheResponse extends StObject {
 }
 object CanClearBrowserCacheResponse {
   
-  @scala.inline
-  def apply(result: Boolean): CanClearBrowserCacheResponse = {
+  inline def apply(result: Boolean): CanClearBrowserCacheResponse = {
     val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanClearBrowserCacheResponse]
   }
   
-  @scala.inline
-  implicit class CanClearBrowserCacheResponseMutableBuilder[Self <: CanClearBrowserCacheResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CanClearBrowserCacheResponse](x: Self) {
     
-    @scala.inline
-    def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: Boolean): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
   }
 }

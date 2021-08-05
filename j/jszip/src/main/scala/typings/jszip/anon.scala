@@ -50,77 +50,54 @@ object anon {
   }
   object JSZipFileOptionsdirtrue {
     
-    @scala.inline
-    def apply(dir: js.UndefOr[Boolean] & `true`): JSZipFileOptionsdirtrue = {
+    inline def apply(dir: js.UndefOr[Boolean] & `true`): JSZipFileOptionsdirtrue = {
       val __obj = js.Dynamic.literal(dir = dir.asInstanceOf[js.Any])
       __obj.asInstanceOf[JSZipFileOptionsdirtrue]
     }
     
-    @scala.inline
-    implicit class JSZipFileOptionsdirtrueMutableBuilder[Self <: JSZipFileOptionsdirtrue] (val x: Self) extends AnyVal {
+    extension [Self <: JSZipFileOptionsdirtrue](x: Self) {
       
-      @scala.inline
-      def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
+      inline def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBase64Undefined: Self = StObject.set(x, "base64", js.undefined)
+      inline def setBase64Undefined: Self = StObject.set(x, "base64", js.undefined)
       
-      @scala.inline
-      def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
+      inline def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
+      inline def setBinaryUndefined: Self = StObject.set(x, "binary", js.undefined)
       
-      @scala.inline
-      def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+      inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
+      inline def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
       
-      @scala.inline
-      def setCompression(value: String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+      inline def setCompression(value: String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+      inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
       
-      @scala.inline
-      def setCreateFolders(value: Boolean): Self = StObject.set(x, "createFolders", value.asInstanceOf[js.Any])
+      inline def setCreateFolders(value: Boolean): Self = StObject.set(x, "createFolders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreateFoldersUndefined: Self = StObject.set(x, "createFolders", js.undefined)
+      inline def setCreateFoldersUndefined: Self = StObject.set(x, "createFolders", js.undefined)
       
-      @scala.inline
-      def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
+      inline def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
       
-      @scala.inline
-      def setDir(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDosPermissions(value: Double): Self = StObject.set(x, "dosPermissions", value.asInstanceOf[js.Any])
+      inline def setDosPermissions(value: Double): Self = StObject.set(x, "dosPermissions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDosPermissionsNull: Self = StObject.set(x, "dosPermissions", null)
+      inline def setDosPermissionsNull: Self = StObject.set(x, "dosPermissions", null)
       
-      @scala.inline
-      def setDosPermissionsUndefined: Self = StObject.set(x, "dosPermissions", js.undefined)
+      inline def setDosPermissionsUndefined: Self = StObject.set(x, "dosPermissions", js.undefined)
       
-      @scala.inline
-      def setOptimizedBinaryString(value: Boolean): Self = StObject.set(x, "optimizedBinaryString", value.asInstanceOf[js.Any])
+      inline def setOptimizedBinaryString(value: Boolean): Self = StObject.set(x, "optimizedBinaryString", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptimizedBinaryStringUndefined: Self = StObject.set(x, "optimizedBinaryString", js.undefined)
+      inline def setOptimizedBinaryStringUndefined: Self = StObject.set(x, "optimizedBinaryString", js.undefined)
       
-      @scala.inline
-      def setUnixPermissions(value: Double | String): Self = StObject.set(x, "unixPermissions", value.asInstanceOf[js.Any])
+      inline def setUnixPermissions(value: Double | String): Self = StObject.set(x, "unixPermissions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnixPermissionsNull: Self = StObject.set(x, "unixPermissions", null)
+      inline def setUnixPermissionsNull: Self = StObject.set(x, "unixPermissions", null)
       
-      @scala.inline
-      def setUnixPermissionsUndefined: Self = StObject.set(x, "unixPermissions", js.undefined)
+      inline def setUnixPermissionsUndefined: Self = StObject.set(x, "unixPermissions", js.undefined)
     }
   }
   
@@ -130,17 +107,14 @@ object anon {
   }
   object Level {
     
-    @scala.inline
-    def apply(level: Double): Level = {
+    inline def apply(level: Double): Level = {
       val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
       __obj.asInstanceOf[Level]
     }
     
-    @scala.inline
-    implicit class LevelMutableBuilder[Self <: Level] (val x: Self) extends AnyVal {
+    extension [Self <: Level](x: Self) {
       
-      @scala.inline
-      def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     }
   }
   
@@ -150,17 +124,14 @@ object anon {
   }
   object Promise {
     
-    @scala.inline
-    def apply(Promise: PromiseConstructorLike): Promise = {
+    inline def apply(Promise: PromiseConstructorLike): Promise = {
       val __obj = js.Dynamic.literal(Promise = Promise.asInstanceOf[js.Any])
       __obj.asInstanceOf[Promise]
     }
     
-    @scala.inline
-    implicit class PromiseMutableBuilder[Self <: Promise] (val x: Self) extends AnyVal {
+    extension [Self <: Promise](x: Self) {
       
-      @scala.inline
-      def setPromise(value: PromiseConstructorLike): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
+      inline def setPromise(value: PromiseConstructorLike): Self = StObject.set(x, "Promise", value.asInstanceOf[js.Any])
     }
   }
 }

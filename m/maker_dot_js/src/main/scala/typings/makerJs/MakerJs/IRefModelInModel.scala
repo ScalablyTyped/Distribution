@@ -17,22 +17,17 @@ trait IRefModelInModel extends StObject {
 }
 object IRefModelInModel {
   
-  @scala.inline
-  def apply(childId: String, childModel: IModel, parentModel: IModel): IRefModelInModel = {
+  inline def apply(childId: String, childModel: IModel, parentModel: IModel): IRefModelInModel = {
     val __obj = js.Dynamic.literal(childId = childId.asInstanceOf[js.Any], childModel = childModel.asInstanceOf[js.Any], parentModel = parentModel.asInstanceOf[js.Any])
     __obj.asInstanceOf[IRefModelInModel]
   }
   
-  @scala.inline
-  implicit class IRefModelInModelMutableBuilder[Self <: IRefModelInModel] (val x: Self) extends AnyVal {
+  extension [Self <: IRefModelInModel](x: Self) {
     
-    @scala.inline
-    def setChildId(value: String): Self = StObject.set(x, "childId", value.asInstanceOf[js.Any])
+    inline def setChildId(value: String): Self = StObject.set(x, "childId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildModel(value: IModel): Self = StObject.set(x, "childModel", value.asInstanceOf[js.Any])
+    inline def setChildModel(value: IModel): Self = StObject.set(x, "childModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentModel(value: IModel): Self = StObject.set(x, "parentModel", value.asInstanceOf[js.Any])
+    inline def setParentModel(value: IModel): Self = StObject.set(x, "parentModel", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait KeyCode extends StObject {
 }
 object KeyCode {
   
-  @scala.inline
-  def apply(KeyCode: Double, Shift: Double): KeyCode = {
+  inline def apply(KeyCode: Double, Shift: Double): KeyCode = {
     val __obj = js.Dynamic.literal(KeyCode = KeyCode.asInstanceOf[js.Any], Shift = Shift.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeyCode]
   }
   
-  @scala.inline
-  implicit class KeyCodeMutableBuilder[Self <: KeyCode] (val x: Self) extends AnyVal {
+  extension [Self <: KeyCode](x: Self) {
     
-    @scala.inline
-    def setKeyCode(value: Double): Self = StObject.set(x, "KeyCode", value.asInstanceOf[js.Any])
+    inline def setKeyCode(value: Double): Self = StObject.set(x, "KeyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShift(value: Double): Self = StObject.set(x, "Shift", value.asInstanceOf[js.Any])
+    inline def setShift(value: Double): Self = StObject.set(x, "Shift", value.asInstanceOf[js.Any])
   }
 }

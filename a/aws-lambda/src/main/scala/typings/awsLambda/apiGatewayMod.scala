@@ -43,95 +43,66 @@ object apiGatewayMod {
   }
   object APIGatewayEventIdentity {
     
-    @scala.inline
-    def apply(sourceIp: String): APIGatewayEventIdentity = {
+    inline def apply(sourceIp: String): APIGatewayEventIdentity = {
       val __obj = js.Dynamic.literal(sourceIp = sourceIp.asInstanceOf[js.Any], accessKey = null, accountId = null, apiKey = null, apiKeyId = null, caller = null, cognitoAuthenticationProvider = null, cognitoAuthenticationType = null, cognitoIdentityId = null, cognitoIdentityPoolId = null, principalOrgId = null, user = null, userAgent = null, userArn = null)
       __obj.asInstanceOf[APIGatewayEventIdentity]
     }
     
-    @scala.inline
-    implicit class APIGatewayEventIdentityMutableBuilder[Self <: APIGatewayEventIdentity] (val x: Self) extends AnyVal {
+    extension [Self <: APIGatewayEventIdentity](x: Self) {
       
-      @scala.inline
-      def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
+      inline def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessKeyNull: Self = StObject.set(x, "accessKey", null)
+      inline def setAccessKeyNull: Self = StObject.set(x, "accessKey", null)
       
-      @scala.inline
-      def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+      inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccountIdNull: Self = StObject.set(x, "accountId", null)
+      inline def setAccountIdNull: Self = StObject.set(x, "accountId", null)
       
-      @scala.inline
-      def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
+      inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiKeyId(value: String): Self = StObject.set(x, "apiKeyId", value.asInstanceOf[js.Any])
+      inline def setApiKeyId(value: String): Self = StObject.set(x, "apiKeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiKeyIdNull: Self = StObject.set(x, "apiKeyId", null)
+      inline def setApiKeyIdNull: Self = StObject.set(x, "apiKeyId", null)
       
-      @scala.inline
-      def setApiKeyNull: Self = StObject.set(x, "apiKey", null)
+      inline def setApiKeyNull: Self = StObject.set(x, "apiKey", null)
       
-      @scala.inline
-      def setCaller(value: String): Self = StObject.set(x, "caller", value.asInstanceOf[js.Any])
+      inline def setCaller(value: String): Self = StObject.set(x, "caller", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCallerNull: Self = StObject.set(x, "caller", null)
+      inline def setCallerNull: Self = StObject.set(x, "caller", null)
       
-      @scala.inline
-      def setCognitoAuthenticationProvider(value: String): Self = StObject.set(x, "cognitoAuthenticationProvider", value.asInstanceOf[js.Any])
+      inline def setCognitoAuthenticationProvider(value: String): Self = StObject.set(x, "cognitoAuthenticationProvider", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCognitoAuthenticationProviderNull: Self = StObject.set(x, "cognitoAuthenticationProvider", null)
+      inline def setCognitoAuthenticationProviderNull: Self = StObject.set(x, "cognitoAuthenticationProvider", null)
       
-      @scala.inline
-      def setCognitoAuthenticationType(value: String): Self = StObject.set(x, "cognitoAuthenticationType", value.asInstanceOf[js.Any])
+      inline def setCognitoAuthenticationType(value: String): Self = StObject.set(x, "cognitoAuthenticationType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCognitoAuthenticationTypeNull: Self = StObject.set(x, "cognitoAuthenticationType", null)
+      inline def setCognitoAuthenticationTypeNull: Self = StObject.set(x, "cognitoAuthenticationType", null)
       
-      @scala.inline
-      def setCognitoIdentityId(value: String): Self = StObject.set(x, "cognitoIdentityId", value.asInstanceOf[js.Any])
+      inline def setCognitoIdentityId(value: String): Self = StObject.set(x, "cognitoIdentityId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCognitoIdentityIdNull: Self = StObject.set(x, "cognitoIdentityId", null)
+      inline def setCognitoIdentityIdNull: Self = StObject.set(x, "cognitoIdentityId", null)
       
-      @scala.inline
-      def setCognitoIdentityPoolId(value: String): Self = StObject.set(x, "cognitoIdentityPoolId", value.asInstanceOf[js.Any])
+      inline def setCognitoIdentityPoolId(value: String): Self = StObject.set(x, "cognitoIdentityPoolId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCognitoIdentityPoolIdNull: Self = StObject.set(x, "cognitoIdentityPoolId", null)
+      inline def setCognitoIdentityPoolIdNull: Self = StObject.set(x, "cognitoIdentityPoolId", null)
       
-      @scala.inline
-      def setPrincipalOrgId(value: String): Self = StObject.set(x, "principalOrgId", value.asInstanceOf[js.Any])
+      inline def setPrincipalOrgId(value: String): Self = StObject.set(x, "principalOrgId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrincipalOrgIdNull: Self = StObject.set(x, "principalOrgId", null)
+      inline def setPrincipalOrgIdNull: Self = StObject.set(x, "principalOrgId", null)
       
-      @scala.inline
-      def setSourceIp(value: String): Self = StObject.set(x, "sourceIp", value.asInstanceOf[js.Any])
+      inline def setSourceIp(value: String): Self = StObject.set(x, "sourceIp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
+      inline def setUserAgent(value: String): Self = StObject.set(x, "userAgent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserAgentNull: Self = StObject.set(x, "userAgent", null)
+      inline def setUserAgentNull: Self = StObject.set(x, "userAgent", null)
       
-      @scala.inline
-      def setUserArn(value: String): Self = StObject.set(x, "userArn", value.asInstanceOf[js.Any])
+      inline def setUserArn(value: String): Self = StObject.set(x, "userArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserArnNull: Self = StObject.set(x, "userArn", null)
+      inline def setUserArnNull: Self = StObject.set(x, "userArn", null)
       
-      @scala.inline
-      def setUserNull: Self = StObject.set(x, "user", null)
+      inline def setUserNull: Self = StObject.set(x, "user", null)
     }
   }
   
@@ -190,8 +161,7 @@ object apiGatewayMod {
   }
   object APIGatewayEventRequestContextWithAuthorizer {
     
-    @scala.inline
-    def apply[TAuthorizerContext](
+    inline def apply[TAuthorizerContext](
       accountId: String,
       apiId: String,
       authorizer: TAuthorizerContext,
@@ -209,107 +179,73 @@ object apiGatewayMod {
       __obj.asInstanceOf[APIGatewayEventRequestContextWithAuthorizer[TAuthorizerContext]]
     }
     
-    @scala.inline
-    implicit class APIGatewayEventRequestContextWithAuthorizerMutableBuilder[Self <: APIGatewayEventRequestContextWithAuthorizer[?], TAuthorizerContext] (val x: Self & APIGatewayEventRequestContextWithAuthorizer[TAuthorizerContext]) extends AnyVal {
+    extension [Self <: APIGatewayEventRequestContextWithAuthorizer[?], TAuthorizerContext](x: Self & APIGatewayEventRequestContextWithAuthorizer[TAuthorizerContext]) {
       
-      @scala.inline
-      def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+      inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
+      inline def setApiId(value: String): Self = StObject.set(x, "apiId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorizer(value: TAuthorizerContext): Self = StObject.set(x, "authorizer", value.asInstanceOf[js.Any])
+      inline def setAuthorizer(value: TAuthorizerContext): Self = StObject.set(x, "authorizer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectedAt(value: Double): Self = StObject.set(x, "connectedAt", value.asInstanceOf[js.Any])
+      inline def setConnectedAt(value: Double): Self = StObject.set(x, "connectedAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectedAtUndefined: Self = StObject.set(x, "connectedAt", js.undefined)
+      inline def setConnectedAtUndefined: Self = StObject.set(x, "connectedAt", js.undefined)
       
-      @scala.inline
-      def setConnectionId(value: String): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
+      inline def setConnectionId(value: String): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionIdUndefined: Self = StObject.set(x, "connectionId", js.undefined)
+      inline def setConnectionIdUndefined: Self = StObject.set(x, "connectionId", js.undefined)
       
-      @scala.inline
-      def setDomainName(value: String): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
+      inline def setDomainName(value: String): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
+      inline def setDomainNameUndefined: Self = StObject.set(x, "domainName", js.undefined)
       
-      @scala.inline
-      def setDomainPrefix(value: String): Self = StObject.set(x, "domainPrefix", value.asInstanceOf[js.Any])
+      inline def setDomainPrefix(value: String): Self = StObject.set(x, "domainPrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainPrefixUndefined: Self = StObject.set(x, "domainPrefix", js.undefined)
+      inline def setDomainPrefixUndefined: Self = StObject.set(x, "domainPrefix", js.undefined)
       
-      @scala.inline
-      def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
+      inline def setEventType(value: String): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
+      inline def setEventTypeUndefined: Self = StObject.set(x, "eventType", js.undefined)
       
-      @scala.inline
-      def setExtendedRequestId(value: String): Self = StObject.set(x, "extendedRequestId", value.asInstanceOf[js.Any])
+      inline def setExtendedRequestId(value: String): Self = StObject.set(x, "extendedRequestId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtendedRequestIdUndefined: Self = StObject.set(x, "extendedRequestId", js.undefined)
+      inline def setExtendedRequestIdUndefined: Self = StObject.set(x, "extendedRequestId", js.undefined)
       
-      @scala.inline
-      def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
+      inline def setHttpMethod(value: String): Self = StObject.set(x, "httpMethod", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentity(value: APIGatewayEventIdentity): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: APIGatewayEventIdentity): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageDirection(value: String): Self = StObject.set(x, "messageDirection", value.asInstanceOf[js.Any])
+      inline def setMessageDirection(value: String): Self = StObject.set(x, "messageDirection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageDirectionUndefined: Self = StObject.set(x, "messageDirection", js.undefined)
+      inline def setMessageDirectionUndefined: Self = StObject.set(x, "messageDirection", js.undefined)
       
-      @scala.inline
-      def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+      inline def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageIdNull: Self = StObject.set(x, "messageId", null)
+      inline def setMessageIdNull: Self = StObject.set(x, "messageId", null)
       
-      @scala.inline
-      def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
+      inline def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
+      inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestTime(value: String): Self = StObject.set(x, "requestTime", value.asInstanceOf[js.Any])
+      inline def setRequestTime(value: String): Self = StObject.set(x, "requestTime", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestTimeEpoch(value: Double): Self = StObject.set(x, "requestTimeEpoch", value.asInstanceOf[js.Any])
+      inline def setRequestTimeEpoch(value: Double): Self = StObject.set(x, "requestTimeEpoch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestTimeUndefined: Self = StObject.set(x, "requestTime", js.undefined)
+      inline def setRequestTimeUndefined: Self = StObject.set(x, "requestTime", js.undefined)
       
-      @scala.inline
-      def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
+      inline def setResourceId(value: String): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourcePath(value: String): Self = StObject.set(x, "resourcePath", value.asInstanceOf[js.Any])
+      inline def setResourcePath(value: String): Self = StObject.set(x, "resourcePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouteKey(value: String): Self = StObject.set(x, "routeKey", value.asInstanceOf[js.Any])
+      inline def setRouteKey(value: String): Self = StObject.set(x, "routeKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouteKeyUndefined: Self = StObject.set(x, "routeKey", js.undefined)
+      inline def setRouteKeyUndefined: Self = StObject.set(x, "routeKey", js.undefined)
       
-      @scala.inline
-      def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
+      inline def setStage(value: String): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
     }
   }
 }

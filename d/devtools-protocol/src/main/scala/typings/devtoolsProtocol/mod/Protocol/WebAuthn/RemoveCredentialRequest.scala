@@ -12,19 +12,15 @@ trait RemoveCredentialRequest extends StObject {
 }
 object RemoveCredentialRequest {
   
-  @scala.inline
-  def apply(authenticatorId: AuthenticatorId, credentialId: String): RemoveCredentialRequest = {
+  inline def apply(authenticatorId: AuthenticatorId, credentialId: String): RemoveCredentialRequest = {
     val __obj = js.Dynamic.literal(authenticatorId = authenticatorId.asInstanceOf[js.Any], credentialId = credentialId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemoveCredentialRequest]
   }
   
-  @scala.inline
-  implicit class RemoveCredentialRequestMutableBuilder[Self <: RemoveCredentialRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveCredentialRequest](x: Self) {
     
-    @scala.inline
-    def setAuthenticatorId(value: AuthenticatorId): Self = StObject.set(x, "authenticatorId", value.asInstanceOf[js.Any])
+    inline def setAuthenticatorId(value: AuthenticatorId): Self = StObject.set(x, "authenticatorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCredentialId(value: String): Self = StObject.set(x, "credentialId", value.asInstanceOf[js.Any])
+    inline def setCredentialId(value: String): Self = StObject.set(x, "credentialId", value.asInstanceOf[js.Any])
   }
 }

@@ -18,22 +18,17 @@ trait EntryPreview extends StObject {
 }
 object EntryPreview {
   
-  @scala.inline
-  def apply(value: ObjectPreview): EntryPreview = {
+  inline def apply(value: ObjectPreview): EntryPreview = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[EntryPreview]
   }
   
-  @scala.inline
-  implicit class EntryPreviewMutableBuilder[Self <: EntryPreview] (val x: Self) extends AnyVal {
+  extension [Self <: EntryPreview](x: Self) {
     
-    @scala.inline
-    def setKey(value: ObjectPreview): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: ObjectPreview): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setValue(value: ObjectPreview): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: ObjectPreview): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

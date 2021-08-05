@@ -14,22 +14,17 @@ trait ReposTestPushWebhookEndpoint extends StObject {
 }
 object ReposTestPushWebhookEndpoint {
   
-  @scala.inline
-  def apply(hook_id: Double, owner: String, repo: String): ReposTestPushWebhookEndpoint = {
+  inline def apply(hook_id: Double, owner: String, repo: String): ReposTestPushWebhookEndpoint = {
     val __obj = js.Dynamic.literal(hook_id = hook_id.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReposTestPushWebhookEndpoint]
   }
   
-  @scala.inline
-  implicit class ReposTestPushWebhookEndpointMutableBuilder[Self <: ReposTestPushWebhookEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ReposTestPushWebhookEndpoint](x: Self) {
     
-    @scala.inline
-    def setHook_id(value: Double): Self = StObject.set(x, "hook_id", value.asInstanceOf[js.Any])
+    inline def setHook_id(value: Double): Self = StObject.set(x, "hook_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
+    inline def setRepo(value: String): Self = StObject.set(x, "repo", value.asInstanceOf[js.Any])
   }
 }

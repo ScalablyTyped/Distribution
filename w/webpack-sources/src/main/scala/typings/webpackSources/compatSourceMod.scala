@@ -18,8 +18,7 @@ object compatSourceMod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def from(sourceLike: SourceLike): typings.webpackSources.sourceMod.^ | CompatSource = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(sourceLike.asInstanceOf[js.Any]).asInstanceOf[typings.webpackSources.sourceMod.^ | CompatSource]
+  inline def from(sourceLike: SourceLike): typings.webpackSources.sourceMod.^ | CompatSource = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(sourceLike.asInstanceOf[js.Any]).asInstanceOf[typings.webpackSources.sourceMod.^ | CompatSource]
   
   type CompatSource = typings.webpackSources.sourceMod.^
 }

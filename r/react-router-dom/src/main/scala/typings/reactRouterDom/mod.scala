@@ -78,8 +78,7 @@ object mod {
     def this(props: HashRouterProps, context: js.Any) = this()
   }
   
-  @scala.inline
-  def Link[S](
+  inline def Link[S](
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param params because its type Parameters<Link<S>> is not an array type */ params: Parameters[Link[S]]
   ): ReturnType[Link[S]] = ^.asInstanceOf[js.Dynamic].applyDynamic("Link")(params.asInstanceOf[js.Any]).asInstanceOf[ReturnType[Link[S]]]
   type Link[S] = ForwardRefExoticComponent[PropsWithoutRef[LinkProps[S]] & RefAttributes[HTMLAnchorElement]]
@@ -97,8 +96,7 @@ object mod {
     def this(props: MemoryRouterProps, context: js.Any) = this()
   }
   
-  @scala.inline
-  def NavLink[S](
+  inline def NavLink[S](
     // TODO: Define this as ...params: Parameters<NavLink<S>> when only TypeScript >= 3.1 support is needed.
   props: PropsWithoutRef[NavLinkProps[S]] & RefAttributes[HTMLAnchorElement]
   ): ReturnType[NavLink[S]] = ^.asInstanceOf[js.Dynamic].applyDynamic("NavLink")(props.asInstanceOf[js.Any]).asInstanceOf[ReturnType[NavLink[S]]]
@@ -181,66 +179,50 @@ object mod {
     def this(props: SwitchProps, context: js.Any) = this()
   }
   
-  @scala.inline
-  def generatePath(pattern: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generatePath")(pattern.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def generatePath(pattern: String, params: StringDictionary[js.UndefOr[String | Double | Boolean]]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generatePath")(pattern.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def generatePath(pattern: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generatePath")(pattern.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def generatePath(pattern: String, params: StringDictionary[js.UndefOr[String | Double | Boolean]]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generatePath")(pattern.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  inline def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
     */ typings.reactRouterDom.reactRouterDomStrings.matchPath & TopLevel[js.Any] */](pathname: String, props: String): `match`[Params] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchPath")(pathname.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[`match`[Params] | Null]
-  @scala.inline
-  def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  inline def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
     */ typings.reactRouterDom.reactRouterDomStrings.matchPath & TopLevel[js.Any] */](pathname: String, props: String, parent: `match`[Params]): `match`[Params] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchPath")(pathname.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[`match`[Params] | Null]
-  @scala.inline
-  def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  inline def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
     */ typings.reactRouterDom.reactRouterDomStrings.matchPath & TopLevel[js.Any] */](pathname: String, props: js.Array[String]): `match`[Params] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchPath")(pathname.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[`match`[Params] | Null]
-  @scala.inline
-  def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  inline def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
     */ typings.reactRouterDom.reactRouterDomStrings.matchPath & TopLevel[js.Any] */](pathname: String, props: js.Array[String], parent: `match`[Params]): `match`[Params] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchPath")(pathname.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[`match`[Params] | Null]
-  @scala.inline
-  def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  inline def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
     */ typings.reactRouterDom.reactRouterDomStrings.matchPath & TopLevel[js.Any] */](pathname: String, props: RouteProps): `match`[Params] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchPath")(pathname.asInstanceOf[js.Any], props.asInstanceOf[js.Any])).asInstanceOf[`match`[Params] | Null]
-  @scala.inline
-  def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  inline def matchPath[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
     */ typings.reactRouterDom.reactRouterDomStrings.matchPath & TopLevel[js.Any] */](pathname: String, props: RouteProps, parent: `match`[Params]): `match`[Params] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("matchPath")(pathname.asInstanceOf[js.Any], props.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[`match`[Params] | Null]
   
-  @scala.inline
-  def useHistory[HistoryLocationState](): History[HistoryLocationState] = ^.asInstanceOf[js.Dynamic].applyDynamic("useHistory")().asInstanceOf[History[HistoryLocationState]]
+  inline def useHistory[HistoryLocationState](): History[HistoryLocationState] = ^.asInstanceOf[js.Dynamic].applyDynamic("useHistory")().asInstanceOf[History[HistoryLocationState]]
   
-  @scala.inline
-  def useLocation[S](): Location[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLocation")().asInstanceOf[Location[S]]
+  inline def useLocation[S](): Location[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLocation")().asInstanceOf[Location[S]]
   
-  @scala.inline
-  def useParams[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  inline def useParams[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
     */ typings.reactRouterDom.reactRouterDomStrings.useParams & TopLevel[js.Any] */](): Params = ^.asInstanceOf[js.Dynamic].applyDynamic("useParams")().asInstanceOf[Params]
   
-  @scala.inline
-  def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  inline def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
     */ typings.reactRouterDom.reactRouterDomStrings.useRouteMatch & TopLevel[js.Any] */](): `match`[Params] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRouteMatch")().asInstanceOf[`match`[Params]]
-  @scala.inline
-  def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  inline def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
     */ typings.reactRouterDom.reactRouterDomStrings.useRouteMatch & TopLevel[js.Any] */](path: String): `match`[Params] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("useRouteMatch")(path.asInstanceOf[js.Any]).asInstanceOf[`match`[Params] | Null]
-  @scala.inline
-  def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  inline def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
     */ typings.reactRouterDom.reactRouterDomStrings.useRouteMatch & TopLevel[js.Any] */](path: js.Array[String]): `match`[Params] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("useRouteMatch")(path.asInstanceOf[js.Any]).asInstanceOf[`match`[Params] | Null]
-  @scala.inline
-  def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  inline def useRouteMatch[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
     */ typings.reactRouterDom.reactRouterDomStrings.useRouteMatch & TopLevel[js.Any] */](path: RouteProps): `match`[Params] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("useRouteMatch")(path.asInstanceOf[js.Any]).asInstanceOf[`match`[Params] | Null]
   
-  @scala.inline
-  def withRouter[P /* <: RouteComponentProps[js.Any, StaticContext, LocationState] */, C /* <: ComponentType[P] */](component: C & ComponentType[P]): (ComponentClass[
+  inline def withRouter[P /* <: RouteComponentProps[js.Any, StaticContext, LocationState] */, C /* <: ComponentType[P] */](component: C & ComponentType[P]): (ComponentClass[
     (Omit[
       P, 
       /* keyof react-router.react-router.RouteComponentProps<any, react-router.react-router.StaticContext, history.history.LocationState> */ history | location | typings.reactRouterDom.reactRouterDomStrings.`match` | staticContext
@@ -268,38 +250,28 @@ object mod {
   }
   object BrowserRouterProps {
     
-    @scala.inline
-    def apply(): BrowserRouterProps = {
+    inline def apply(): BrowserRouterProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BrowserRouterProps]
     }
     
-    @scala.inline
-    implicit class BrowserRouterPropsMutableBuilder[Self <: BrowserRouterProps] (val x: Self) extends AnyVal {
+    extension [Self <: BrowserRouterProps](x: Self) {
       
-      @scala.inline
-      def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
+      inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasenameUndefined: Self = StObject.set(x, "basename", js.undefined)
+      inline def setBasenameUndefined: Self = StObject.set(x, "basename", js.undefined)
       
-      @scala.inline
-      def setForceRefresh(value: Boolean): Self = StObject.set(x, "forceRefresh", value.asInstanceOf[js.Any])
+      inline def setForceRefresh(value: Boolean): Self = StObject.set(x, "forceRefresh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForceRefreshUndefined: Self = StObject.set(x, "forceRefresh", js.undefined)
+      inline def setForceRefreshUndefined: Self = StObject.set(x, "forceRefresh", js.undefined)
       
-      @scala.inline
-      def setGetUserConfirmation(value: (/* message */ String, /* callback */ js.Function1[/* ok */ Boolean, Unit]) => Unit): Self = StObject.set(x, "getUserConfirmation", js.Any.fromFunction2(value))
+      inline def setGetUserConfirmation(value: (/* message */ String, /* callback */ js.Function1[/* ok */ Boolean, Unit]) => Unit): Self = StObject.set(x, "getUserConfirmation", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetUserConfirmationUndefined: Self = StObject.set(x, "getUserConfirmation", js.undefined)
+      inline def setGetUserConfirmationUndefined: Self = StObject.set(x, "getUserConfirmation", js.undefined)
       
-      @scala.inline
-      def setKeyLength(value: Double): Self = StObject.set(x, "keyLength", value.asInstanceOf[js.Any])
+      inline def setKeyLength(value: Double): Self = StObject.set(x, "keyLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyLengthUndefined: Self = StObject.set(x, "keyLength", js.undefined)
+      inline def setKeyLengthUndefined: Self = StObject.set(x, "keyLength", js.undefined)
     }
   }
   
@@ -315,32 +287,24 @@ object mod {
   }
   object HashRouterProps {
     
-    @scala.inline
-    def apply(): HashRouterProps = {
+    inline def apply(): HashRouterProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HashRouterProps]
     }
     
-    @scala.inline
-    implicit class HashRouterPropsMutableBuilder[Self <: HashRouterProps] (val x: Self) extends AnyVal {
+    extension [Self <: HashRouterProps](x: Self) {
       
-      @scala.inline
-      def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
+      inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBasenameUndefined: Self = StObject.set(x, "basename", js.undefined)
+      inline def setBasenameUndefined: Self = StObject.set(x, "basename", js.undefined)
       
-      @scala.inline
-      def setGetUserConfirmation(value: (/* message */ String, /* callback */ js.Function1[/* ok */ Boolean, Unit]) => Unit): Self = StObject.set(x, "getUserConfirmation", js.Any.fromFunction2(value))
+      inline def setGetUserConfirmation(value: (/* message */ String, /* callback */ js.Function1[/* ok */ Boolean, Unit]) => Unit): Self = StObject.set(x, "getUserConfirmation", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetUserConfirmationUndefined: Self = StObject.set(x, "getUserConfirmation", js.undefined)
+      inline def setGetUserConfirmationUndefined: Self = StObject.set(x, "getUserConfirmation", js.undefined)
       
-      @scala.inline
-      def setHashType(value: slash | noslash | hashbang): Self = StObject.set(x, "hashType", value.asInstanceOf[js.Any])
+      inline def setHashType(value: slash | noslash | hashbang): Self = StObject.set(x, "hashType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHashTypeUndefined: Self = StObject.set(x, "hashType", js.undefined)
+      inline def setHashTypeUndefined: Self = StObject.set(x, "hashType", js.undefined)
     }
   }
   
@@ -358,44 +322,32 @@ object mod {
   }
   object LinkProps {
     
-    @scala.inline
-    def apply[S](to: LocationDescriptor[S] | (js.Function1[/* location */ Location[S], LocationDescriptor[S]])): LinkProps[S] = {
+    inline def apply[S](to: LocationDescriptor[S] | (js.Function1[/* location */ Location[S], LocationDescriptor[S]])): LinkProps[S] = {
       val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[LinkProps[S]]
     }
     
-    @scala.inline
-    implicit class LinkPropsMutableBuilder[Self <: LinkProps[?], S] (val x: Self & LinkProps[S]) extends AnyVal {
+    extension [Self <: LinkProps[?], S](x: Self & LinkProps[S]) {
       
-      @scala.inline
-      def setComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setInnerRef(value: Ref[HTMLAnchorElement]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      inline def setInnerRef(value: Ref[HTMLAnchorElement]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerRefFunction1(value: /* instance */ HTMLAnchorElement | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      inline def setInnerRefFunction1(value: /* instance */ HTMLAnchorElement | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
+      inline def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
       
-      @scala.inline
-      def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
+      inline def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
       
-      @scala.inline
-      def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+      inline def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+      inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
       
-      @scala.inline
-      def setTo(value: LocationDescriptor[S] | (js.Function1[/* location */ Location[S], LocationDescriptor[S]])): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: LocationDescriptor[S] | (js.Function1[/* location */ Location[S], LocationDescriptor[S]])): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToFunction1(value: /* location */ Location[S] => LocationDescriptor[S]): Self = StObject.set(x, "to", js.Any.fromFunction1(value))
+      inline def setToFunction1(value: /* location */ Location[S] => LocationDescriptor[S]): Self = StObject.set(x, "to", js.Any.fromFunction1(value))
     }
   }
   
@@ -419,50 +371,36 @@ object mod {
   }
   object NavLinkProps {
     
-    @scala.inline
-    def apply[S](to: LocationDescriptor[S] | (js.Function1[/* location */ Location[S], LocationDescriptor[S]])): NavLinkProps[S] = {
+    inline def apply[S](to: LocationDescriptor[S] | (js.Function1[/* location */ Location[S], LocationDescriptor[S]])): NavLinkProps[S] = {
       val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[NavLinkProps[S]]
     }
     
-    @scala.inline
-    implicit class NavLinkPropsMutableBuilder[Self <: NavLinkProps[?], S] (val x: Self & NavLinkProps[S]) extends AnyVal {
+    extension [Self <: NavLinkProps[?], S](x: Self & NavLinkProps[S]) {
       
-      @scala.inline
-      def setActiveClassName(value: String): Self = StObject.set(x, "activeClassName", value.asInstanceOf[js.Any])
+      inline def setActiveClassName(value: String): Self = StObject.set(x, "activeClassName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveClassNameUndefined: Self = StObject.set(x, "activeClassName", js.undefined)
+      inline def setActiveClassNameUndefined: Self = StObject.set(x, "activeClassName", js.undefined)
       
-      @scala.inline
-      def setActiveStyle(value: CSSProperties): Self = StObject.set(x, "activeStyle", value.asInstanceOf[js.Any])
+      inline def setActiveStyle(value: CSSProperties): Self = StObject.set(x, "activeStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveStyleUndefined: Self = StObject.set(x, "activeStyle", js.undefined)
+      inline def setActiveStyleUndefined: Self = StObject.set(x, "activeStyle", js.undefined)
       
-      @scala.inline
-      def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
+      inline def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
+      inline def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
       
-      @scala.inline
-      def setIsActive(value: (/* match */ `match`[js.Any] | Null, /* location */ Location[S]) => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction2(value))
+      inline def setIsActive(value: (/* match */ `match`[js.Any] | Null, /* location */ Location[S]) => Boolean): Self = StObject.set(x, "isActive", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
+      inline def setIsActiveUndefined: Self = StObject.set(x, "isActive", js.undefined)
       
-      @scala.inline
-      def setLocation(value: Location[S]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Location[S]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+      inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     }
   }
 }

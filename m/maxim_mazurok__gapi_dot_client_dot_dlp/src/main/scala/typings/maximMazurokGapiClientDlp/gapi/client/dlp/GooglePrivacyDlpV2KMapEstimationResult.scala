@@ -15,22 +15,17 @@ trait GooglePrivacyDlpV2KMapEstimationResult extends StObject {
 }
 object GooglePrivacyDlpV2KMapEstimationResult {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2KMapEstimationResult = {
+  inline def apply(): GooglePrivacyDlpV2KMapEstimationResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2KMapEstimationResult]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2KMapEstimationResultMutableBuilder[Self <: GooglePrivacyDlpV2KMapEstimationResult] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2KMapEstimationResult](x: Self) {
     
-    @scala.inline
-    def setKMapEstimationHistogram(value: js.Array[GooglePrivacyDlpV2KMapEstimationHistogramBucket]): Self = StObject.set(x, "kMapEstimationHistogram", value.asInstanceOf[js.Any])
+    inline def setKMapEstimationHistogram(value: js.Array[GooglePrivacyDlpV2KMapEstimationHistogramBucket]): Self = StObject.set(x, "kMapEstimationHistogram", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKMapEstimationHistogramUndefined: Self = StObject.set(x, "kMapEstimationHistogram", js.undefined)
+    inline def setKMapEstimationHistogramUndefined: Self = StObject.set(x, "kMapEstimationHistogram", js.undefined)
     
-    @scala.inline
-    def setKMapEstimationHistogramVarargs(value: GooglePrivacyDlpV2KMapEstimationHistogramBucket*): Self = StObject.set(x, "kMapEstimationHistogram", js.Array(value :_*))
+    inline def setKMapEstimationHistogramVarargs(value: GooglePrivacyDlpV2KMapEstimationHistogramBucket*): Self = StObject.set(x, "kMapEstimationHistogram", js.Array(value :_*))
   }
 }

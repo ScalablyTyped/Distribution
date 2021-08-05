@@ -13,16 +13,13 @@ trait DeleteDeploymentConfigInput extends StObject {
 }
 object DeleteDeploymentConfigInput {
   
-  @scala.inline
-  def apply(deploymentConfigName: DeploymentConfigName): DeleteDeploymentConfigInput = {
+  inline def apply(deploymentConfigName: DeploymentConfigName): DeleteDeploymentConfigInput = {
     val __obj = js.Dynamic.literal(deploymentConfigName = deploymentConfigName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDeploymentConfigInput]
   }
   
-  @scala.inline
-  implicit class DeleteDeploymentConfigInputMutableBuilder[Self <: DeleteDeploymentConfigInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDeploymentConfigInput](x: Self) {
     
-    @scala.inline
-    def setDeploymentConfigName(value: DeploymentConfigName): Self = StObject.set(x, "deploymentConfigName", value.asInstanceOf[js.Any])
+    inline def setDeploymentConfigName(value: DeploymentConfigName): Self = StObject.set(x, "deploymentConfigName", value.asInstanceOf[js.Any])
   }
 }

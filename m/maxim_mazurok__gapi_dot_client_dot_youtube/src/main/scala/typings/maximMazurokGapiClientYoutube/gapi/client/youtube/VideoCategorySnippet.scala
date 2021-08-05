@@ -16,31 +16,23 @@ trait VideoCategorySnippet extends StObject {
 }
 object VideoCategorySnippet {
   
-  @scala.inline
-  def apply(): VideoCategorySnippet = {
+  inline def apply(): VideoCategorySnippet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoCategorySnippet]
   }
   
-  @scala.inline
-  implicit class VideoCategorySnippetMutableBuilder[Self <: VideoCategorySnippet] (val x: Self) extends AnyVal {
+  extension [Self <: VideoCategorySnippet](x: Self) {
     
-    @scala.inline
-    def setAssignable(value: Boolean): Self = StObject.set(x, "assignable", value.asInstanceOf[js.Any])
+    inline def setAssignable(value: Boolean): Self = StObject.set(x, "assignable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssignableUndefined: Self = StObject.set(x, "assignable", js.undefined)
+    inline def setAssignableUndefined: Self = StObject.set(x, "assignable", js.undefined)
     
-    @scala.inline
-    def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
+    inline def setChannelId(value: String): Self = StObject.set(x, "channelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
+    inline def setChannelIdUndefined: Self = StObject.set(x, "channelId", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

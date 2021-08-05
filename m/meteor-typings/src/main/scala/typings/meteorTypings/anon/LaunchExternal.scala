@@ -12,25 +12,19 @@ trait LaunchExternal extends StObject {
 }
 object LaunchExternal {
   
-  @scala.inline
-  def apply(): LaunchExternal = {
+  inline def apply(): LaunchExternal = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LaunchExternal]
   }
   
-  @scala.inline
-  implicit class LaunchExternalMutableBuilder[Self <: LaunchExternal] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchExternal](x: Self) {
     
-    @scala.inline
-    def setLaunchExternal(value: Boolean): Self = StObject.set(x, "launchExternal", value.asInstanceOf[js.Any])
+    inline def setLaunchExternal(value: Boolean): Self = StObject.set(x, "launchExternal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchExternalUndefined: Self = StObject.set(x, "launchExternal", js.undefined)
+    inline def setLaunchExternalUndefined: Self = StObject.set(x, "launchExternal", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

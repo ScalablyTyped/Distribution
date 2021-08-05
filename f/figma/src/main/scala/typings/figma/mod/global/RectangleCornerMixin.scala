@@ -16,25 +16,19 @@ trait RectangleCornerMixin extends StObject {
 }
 object RectangleCornerMixin {
   
-  @scala.inline
-  def apply(bottomLeftRadius: Double, bottomRightRadius: Double, topLeftRadius: Double, topRightRadius: Double): RectangleCornerMixin = {
+  inline def apply(bottomLeftRadius: Double, bottomRightRadius: Double, topLeftRadius: Double, topRightRadius: Double): RectangleCornerMixin = {
     val __obj = js.Dynamic.literal(bottomLeftRadius = bottomLeftRadius.asInstanceOf[js.Any], bottomRightRadius = bottomRightRadius.asInstanceOf[js.Any], topLeftRadius = topLeftRadius.asInstanceOf[js.Any], topRightRadius = topRightRadius.asInstanceOf[js.Any])
     __obj.asInstanceOf[RectangleCornerMixin]
   }
   
-  @scala.inline
-  implicit class RectangleCornerMixinMutableBuilder[Self <: RectangleCornerMixin] (val x: Self) extends AnyVal {
+  extension [Self <: RectangleCornerMixin](x: Self) {
     
-    @scala.inline
-    def setBottomLeftRadius(value: Double): Self = StObject.set(x, "bottomLeftRadius", value.asInstanceOf[js.Any])
+    inline def setBottomLeftRadius(value: Double): Self = StObject.set(x, "bottomLeftRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBottomRightRadius(value: Double): Self = StObject.set(x, "bottomRightRadius", value.asInstanceOf[js.Any])
+    inline def setBottomRightRadius(value: Double): Self = StObject.set(x, "bottomRightRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopLeftRadius(value: Double): Self = StObject.set(x, "topLeftRadius", value.asInstanceOf[js.Any])
+    inline def setTopLeftRadius(value: Double): Self = StObject.set(x, "topLeftRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopRightRadius(value: Double): Self = StObject.set(x, "topRightRadius", value.asInstanceOf[js.Any])
+    inline def setTopRightRadius(value: Double): Self = StObject.set(x, "topRightRadius", value.asInstanceOf[js.Any])
   }
 }

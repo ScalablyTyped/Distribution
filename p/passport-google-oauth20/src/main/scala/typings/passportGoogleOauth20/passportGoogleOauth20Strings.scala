@@ -8,16 +8,13 @@ object passportGoogleOauth20Strings {
   
   @js.native
   sealed trait google extends StObject
-  @scala.inline
-  def google: google = "google".asInstanceOf[google]
+  inline def google: google = "google".asInstanceOf[google]
   
   @js.native
   sealed trait offline extends StObject
-  @scala.inline
-  def offline: offline = "offline".asInstanceOf[offline]
+  inline def offline: offline = "offline".asInstanceOf[offline]
   
   @js.native
   sealed trait online extends StObject
-  @scala.inline
-  def online: online = "online".asInstanceOf[online]
+  inline def online: online = "online".asInstanceOf[online]
 }

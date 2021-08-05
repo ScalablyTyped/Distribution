@@ -28,61 +28,43 @@ trait PartialFile extends StObject {
 }
 object PartialFile {
   
-  @scala.inline
-  def apply(): PartialFile = {
+  inline def apply(): PartialFile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialFile]
   }
   
-  @scala.inline
-  implicit class PartialFileMutableBuilder[Self <: PartialFile] (val x: Self) extends AnyVal {
+  extension [Self <: PartialFile](x: Self) {
     
-    @scala.inline
-    def setArrayBuffer(value: () => js.Promise[ArrayBuffer]): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
+    inline def setArrayBuffer(value: () => js.Promise[ArrayBuffer]): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setArrayBufferUndefined: Self = StObject.set(x, "arrayBuffer", js.undefined)
+    inline def setArrayBufferUndefined: Self = StObject.set(x, "arrayBuffer", js.undefined)
     
-    @scala.inline
-    def setLastModified(value: Double): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: Double): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
+    inline def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setSlice(value: () => Blob): Self = StObject.set(x, "slice", js.Any.fromFunction0(value))
+    inline def setSlice(value: () => Blob): Self = StObject.set(x, "slice", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSliceUndefined: Self = StObject.set(x, "slice", js.undefined)
+    inline def setSliceUndefined: Self = StObject.set(x, "slice", js.undefined)
     
-    @scala.inline
-    def setStream(value: () => ReadableStream[js.Any]): Self = StObject.set(x, "stream", js.Any.fromFunction0(value))
+    inline def setStream(value: () => ReadableStream[js.Any]): Self = StObject.set(x, "stream", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+    inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
     
-    @scala.inline
-    def setText(value: () => js.Promise[String]): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
+    inline def setText(value: () => js.Promise[String]): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

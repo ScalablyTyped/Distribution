@@ -15,8 +15,7 @@ trait ResolvedId
 }
 object ResolvedId {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     external: Boolean,
     id: String,
     meta: CustomPluginOptions,
@@ -27,13 +26,10 @@ object ResolvedId {
     __obj.asInstanceOf[ResolvedId]
   }
   
-  @scala.inline
-  implicit class ResolvedIdMutableBuilder[Self <: ResolvedId] (val x: Self) extends AnyVal {
+  extension [Self <: ResolvedId](x: Self) {
     
-    @scala.inline
-    def setExternal(value: Boolean): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
+    inline def setExternal(value: Boolean): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }
 }

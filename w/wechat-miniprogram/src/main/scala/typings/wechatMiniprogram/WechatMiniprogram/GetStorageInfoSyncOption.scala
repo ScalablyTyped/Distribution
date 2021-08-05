@@ -17,25 +17,19 @@ trait GetStorageInfoSyncOption extends StObject {
 }
 object GetStorageInfoSyncOption {
   
-  @scala.inline
-  def apply(currentSize: Double, keys: js.Array[String], limitSize: Double): GetStorageInfoSyncOption = {
+  inline def apply(currentSize: Double, keys: js.Array[String], limitSize: Double): GetStorageInfoSyncOption = {
     val __obj = js.Dynamic.literal(currentSize = currentSize.asInstanceOf[js.Any], keys = keys.asInstanceOf[js.Any], limitSize = limitSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetStorageInfoSyncOption]
   }
   
-  @scala.inline
-  implicit class GetStorageInfoSyncOptionMutableBuilder[Self <: GetStorageInfoSyncOption] (val x: Self) extends AnyVal {
+  extension [Self <: GetStorageInfoSyncOption](x: Self) {
     
-    @scala.inline
-    def setCurrentSize(value: Double): Self = StObject.set(x, "currentSize", value.asInstanceOf[js.Any])
+    inline def setCurrentSize(value: Double): Self = StObject.set(x, "currentSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: String*): Self = StObject.set(x, "keys", js.Array(value :_*))
     
-    @scala.inline
-    def setLimitSize(value: Double): Self = StObject.set(x, "limitSize", value.asInstanceOf[js.Any])
+    inline def setLimitSize(value: Double): Self = StObject.set(x, "limitSize", value.asInstanceOf[js.Any])
   }
 }

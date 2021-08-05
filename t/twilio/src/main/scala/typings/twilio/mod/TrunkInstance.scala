@@ -20,8 +20,7 @@ trait TrunkInstance
 }
 object TrunkInstance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     credentialLists: CredentialListResource,
     delete: RestMethod,
     get: RestMethod,
@@ -35,19 +34,14 @@ object TrunkInstance {
     __obj.asInstanceOf[TrunkInstance]
   }
   
-  @scala.inline
-  implicit class TrunkInstanceMutableBuilder[Self <: TrunkInstance] (val x: Self) extends AnyVal {
+  extension [Self <: TrunkInstance](x: Self) {
     
-    @scala.inline
-    def setCredentialLists(value: CredentialListResource): Self = StObject.set(x, "credentialLists", value.asInstanceOf[js.Any])
+    inline def setCredentialLists(value: CredentialListResource): Self = StObject.set(x, "credentialLists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIpAccessControlLists(value: IPAccessControlListResource): Self = StObject.set(x, "ipAccessControlLists", value.asInstanceOf[js.Any])
+    inline def setIpAccessControlLists(value: IPAccessControlListResource): Self = StObject.set(x, "ipAccessControlLists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginationUrls(value: OriginationURLResource): Self = StObject.set(x, "originationUrls", value.asInstanceOf[js.Any])
+    inline def setOriginationUrls(value: OriginationURLResource): Self = StObject.set(x, "originationUrls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNumbers(value: /* resourceSid */ String => PhoneNumberInstance): Self = StObject.set(x, "phoneNumbers", js.Any.fromFunction1(value))
+    inline def setPhoneNumbers(value: /* resourceSid */ String => PhoneNumberInstance): Self = StObject.set(x, "phoneNumbers", js.Any.fromFunction1(value))
   }
 }

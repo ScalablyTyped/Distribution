@@ -58,8 +58,7 @@ trait ImageStoreStatic extends StObject {
 }
 object ImageStoreStatic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addImageFromBase64: (String, js.Function1[/* uri */ String, Unit], js.Function1[/* error */ js.Any, Unit]) => Unit,
     getBase64ForTag: (String, js.Function1[/* base64ImageData */ String, Unit], js.Function1[/* error */ js.Any, Unit]) => Unit,
     hasImageForTag: (String, js.Function1[/* hasImage */ Boolean, Unit]) => Unit,
@@ -69,23 +68,18 @@ object ImageStoreStatic {
     __obj.asInstanceOf[ImageStoreStatic]
   }
   
-  @scala.inline
-  implicit class ImageStoreStaticMutableBuilder[Self <: ImageStoreStatic] (val x: Self) extends AnyVal {
+  extension [Self <: ImageStoreStatic](x: Self) {
     
-    @scala.inline
-    def setAddImageFromBase64(
+    inline def setAddImageFromBase64(
       value: (String, js.Function1[/* uri */ String, Unit], js.Function1[/* error */ js.Any, Unit]) => Unit
     ): Self = StObject.set(x, "addImageFromBase64", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetBase64ForTag(
+    inline def setGetBase64ForTag(
       value: (String, js.Function1[/* base64ImageData */ String, Unit], js.Function1[/* error */ js.Any, Unit]) => Unit
     ): Self = StObject.set(x, "getBase64ForTag", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setHasImageForTag(value: (String, js.Function1[/* hasImage */ Boolean, Unit]) => Unit): Self = StObject.set(x, "hasImageForTag", js.Any.fromFunction2(value))
+    inline def setHasImageForTag(value: (String, js.Function1[/* hasImage */ Boolean, Unit]) => Unit): Self = StObject.set(x, "hasImageForTag", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveImageForTag(value: String => Unit): Self = StObject.set(x, "removeImageForTag", js.Any.fromFunction1(value))
+    inline def setRemoveImageForTag(value: String => Unit): Self = StObject.set(x, "removeImageForTag", js.Any.fromFunction1(value))
   }
 }

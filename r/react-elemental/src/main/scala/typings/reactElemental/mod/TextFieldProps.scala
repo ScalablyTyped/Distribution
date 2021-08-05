@@ -80,169 +80,115 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object TextFieldProps {
   
-  @scala.inline
-  def apply(): TextFieldProps = {
+  inline def apply(): TextFieldProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextFieldProps]
   }
   
-  @scala.inline
-  implicit class TextFieldPropsMutableBuilder[Self <: TextFieldProps] (val x: Self) extends AnyVal {
+  extension [Self <: TextFieldProps](x: Self) {
     
-    @scala.inline
-    def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
+    inline def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
+    inline def setAcceptUndefined: Self = StObject.set(x, "accept", js.undefined)
     
-    @scala.inline
-    def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
+    inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
+    inline def setAltUndefined: Self = StObject.set(x, "alt", js.undefined)
     
-    @scala.inline
-    def setCapture(value: Boolean | String): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
+    inline def setCapture(value: Boolean | String): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
+    inline def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
     
-    @scala.inline
-    def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+    inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+    inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
     
-    @scala.inline
-    def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
+    inline def setCrossOrigin(value: String): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
+    inline def setCrossOriginUndefined: Self = StObject.set(x, "crossOrigin", js.undefined)
     
-    @scala.inline
-    def setEnterKeyHint(value: enter | done | go | next | previous | search | send): Self = StObject.set(x, "enterKeyHint", value.asInstanceOf[js.Any])
+    inline def setEnterKeyHint(value: enter | done | go | next | previous | search | send): Self = StObject.set(x, "enterKeyHint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterKeyHintUndefined: Self = StObject.set(x, "enterKeyHint", js.undefined)
+    inline def setEnterKeyHintUndefined: Self = StObject.set(x, "enterKeyHint", js.undefined)
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
+    inline def setFormAction(value: String): Self = StObject.set(x, "formAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
+    inline def setFormActionUndefined: Self = StObject.set(x, "formAction", js.undefined)
     
-    @scala.inline
-    def setFormEncType(value: String): Self = StObject.set(x, "formEncType", value.asInstanceOf[js.Any])
+    inline def setFormEncType(value: String): Self = StObject.set(x, "formEncType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormEncTypeUndefined: Self = StObject.set(x, "formEncType", js.undefined)
+    inline def setFormEncTypeUndefined: Self = StObject.set(x, "formEncType", js.undefined)
     
-    @scala.inline
-    def setFormMethod(value: String): Self = StObject.set(x, "formMethod", value.asInstanceOf[js.Any])
+    inline def setFormMethod(value: String): Self = StObject.set(x, "formMethod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormMethodUndefined: Self = StObject.set(x, "formMethod", js.undefined)
+    inline def setFormMethodUndefined: Self = StObject.set(x, "formMethod", js.undefined)
     
-    @scala.inline
-    def setFormNoValidate(value: Boolean): Self = StObject.set(x, "formNoValidate", value.asInstanceOf[js.Any])
+    inline def setFormNoValidate(value: Boolean): Self = StObject.set(x, "formNoValidate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormNoValidateUndefined: Self = StObject.set(x, "formNoValidate", js.undefined)
+    inline def setFormNoValidateUndefined: Self = StObject.set(x, "formNoValidate", js.undefined)
     
-    @scala.inline
-    def setFormTarget(value: String): Self = StObject.set(x, "formTarget", value.asInstanceOf[js.Any])
+    inline def setFormTarget(value: String): Self = StObject.set(x, "formTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormTargetUndefined: Self = StObject.set(x, "formTarget", js.undefined)
+    inline def setFormTargetUndefined: Self = StObject.set(x, "formTarget", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setList(value: String): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    inline def setList(value: String): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListUndefined: Self = StObject.set(x, "list", js.undefined)
+    inline def setListUndefined: Self = StObject.set(x, "list", js.undefined)
     
-    @scala.inline
-    def setMax(value: Double | String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double | String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+    inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
-    @scala.inline
-    def setMin(value: Double | String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double | String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+    inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     
-    @scala.inline
-    def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+    inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+    inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
     
-    @scala.inline
-    def setOnChange(value: ChangeEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: ChangeEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    @scala.inline
-    def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
+    inline def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
     
-    @scala.inline
-    def setSecondary(value: Boolean): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
+    inline def setSecondary(value: Boolean): Self = StObject.set(x, "secondary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
+    inline def setSecondaryUndefined: Self = StObject.set(x, "secondary", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+    inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
     
-    @scala.inline
-    def setStep(value: Double | String): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: Double | String): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+    inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     
-    @scala.inline
-    def setTextarea(value: Boolean): Self = StObject.set(x, "textarea", value.asInstanceOf[js.Any])
+    inline def setTextarea(value: Boolean): Self = StObject.set(x, "textarea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextareaUndefined: Self = StObject.set(x, "textarea", js.undefined)
+    inline def setTextareaUndefined: Self = StObject.set(x, "textarea", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: Double | String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

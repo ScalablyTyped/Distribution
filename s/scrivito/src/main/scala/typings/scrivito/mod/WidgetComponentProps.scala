@@ -16,16 +16,13 @@ trait WidgetComponentProps
 }
 object WidgetComponentProps {
   
-  @scala.inline
-  def apply(widget: Widget): WidgetComponentProps = {
+  inline def apply(widget: Widget): WidgetComponentProps = {
     val __obj = js.Dynamic.literal(widget = widget.asInstanceOf[js.Any])
     __obj.asInstanceOf[WidgetComponentProps]
   }
   
-  @scala.inline
-  implicit class WidgetComponentPropsMutableBuilder[Self <: WidgetComponentProps] (val x: Self) extends AnyVal {
+  extension [Self <: WidgetComponentProps](x: Self) {
     
-    @scala.inline
-    def setWidget(value: Widget): Self = StObject.set(x, "widget", value.asInstanceOf[js.Any])
+    inline def setWidget(value: Widget): Self = StObject.set(x, "widget", value.asInstanceOf[js.Any])
   }
 }

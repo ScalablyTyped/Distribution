@@ -13,19 +13,15 @@ trait GetSnapshotLimitsResult extends StObject {
 }
 object GetSnapshotLimitsResult {
   
-  @scala.inline
-  def apply(): GetSnapshotLimitsResult = {
+  inline def apply(): GetSnapshotLimitsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetSnapshotLimitsResult]
   }
   
-  @scala.inline
-  implicit class GetSnapshotLimitsResultMutableBuilder[Self <: GetSnapshotLimitsResult] (val x: Self) extends AnyVal {
+  extension [Self <: GetSnapshotLimitsResult](x: Self) {
     
-    @scala.inline
-    def setSnapshotLimits(value: SnapshotLimits): Self = StObject.set(x, "SnapshotLimits", value.asInstanceOf[js.Any])
+    inline def setSnapshotLimits(value: SnapshotLimits): Self = StObject.set(x, "SnapshotLimits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotLimitsUndefined: Self = StObject.set(x, "SnapshotLimits", js.undefined)
+    inline def setSnapshotLimitsUndefined: Self = StObject.set(x, "SnapshotLimits", js.undefined)
   }
 }

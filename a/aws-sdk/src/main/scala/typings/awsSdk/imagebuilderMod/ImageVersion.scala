@@ -43,55 +43,39 @@ trait ImageVersion extends StObject {
 }
 object ImageVersion {
   
-  @scala.inline
-  def apply(): ImageVersion = {
+  inline def apply(): ImageVersion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageVersion]
   }
   
-  @scala.inline
-  implicit class ImageVersionMutableBuilder[Self <: ImageVersion] (val x: Self) extends AnyVal {
+  extension [Self <: ImageVersion](x: Self) {
     
-    @scala.inline
-    def setArn(value: ImageBuilderArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: ImageBuilderArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setDateCreated(value: DateTime): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
+    inline def setDateCreated(value: DateTime): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDateCreatedUndefined: Self = StObject.set(x, "dateCreated", js.undefined)
+    inline def setDateCreatedUndefined: Self = StObject.set(x, "dateCreated", js.undefined)
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setOsVersion(value: OsVersion): Self = StObject.set(x, "osVersion", value.asInstanceOf[js.Any])
+    inline def setOsVersion(value: OsVersion): Self = StObject.set(x, "osVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOsVersionUndefined: Self = StObject.set(x, "osVersion", js.undefined)
+    inline def setOsVersionUndefined: Self = StObject.set(x, "osVersion", js.undefined)
     
-    @scala.inline
-    def setOwner(value: NonEmptyString): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: NonEmptyString): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setPlatform(value: Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
+    inline def setPlatform(value: Platform): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
+    inline def setPlatformUndefined: Self = StObject.set(x, "platform", js.undefined)
     
-    @scala.inline
-    def setVersion(value: VersionNumber): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: VersionNumber): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

@@ -35,94 +35,65 @@ trait Photo extends StObject {
 }
 object Photo {
   
-  @scala.inline
-  def apply(): Photo = {
+  inline def apply(): Photo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Photo]
   }
   
-  @scala.inline
-  implicit class PhotoMutableBuilder[Self <: Photo] (val x: Self) extends AnyVal {
+  extension [Self <: Photo](x: Self) {
     
-    @scala.inline
-    def setCameraMake(value: NullableOption[String]): Self = StObject.set(x, "cameraMake", value.asInstanceOf[js.Any])
+    inline def setCameraMake(value: NullableOption[String]): Self = StObject.set(x, "cameraMake", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCameraMakeNull: Self = StObject.set(x, "cameraMake", null)
+    inline def setCameraMakeNull: Self = StObject.set(x, "cameraMake", null)
     
-    @scala.inline
-    def setCameraMakeUndefined: Self = StObject.set(x, "cameraMake", js.undefined)
+    inline def setCameraMakeUndefined: Self = StObject.set(x, "cameraMake", js.undefined)
     
-    @scala.inline
-    def setCameraModel(value: NullableOption[String]): Self = StObject.set(x, "cameraModel", value.asInstanceOf[js.Any])
+    inline def setCameraModel(value: NullableOption[String]): Self = StObject.set(x, "cameraModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCameraModelNull: Self = StObject.set(x, "cameraModel", null)
+    inline def setCameraModelNull: Self = StObject.set(x, "cameraModel", null)
     
-    @scala.inline
-    def setCameraModelUndefined: Self = StObject.set(x, "cameraModel", js.undefined)
+    inline def setCameraModelUndefined: Self = StObject.set(x, "cameraModel", js.undefined)
     
-    @scala.inline
-    def setExposureDenominator(value: NullableOption[Double]): Self = StObject.set(x, "exposureDenominator", value.asInstanceOf[js.Any])
+    inline def setExposureDenominator(value: NullableOption[Double]): Self = StObject.set(x, "exposureDenominator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExposureDenominatorNull: Self = StObject.set(x, "exposureDenominator", null)
+    inline def setExposureDenominatorNull: Self = StObject.set(x, "exposureDenominator", null)
     
-    @scala.inline
-    def setExposureDenominatorUndefined: Self = StObject.set(x, "exposureDenominator", js.undefined)
+    inline def setExposureDenominatorUndefined: Self = StObject.set(x, "exposureDenominator", js.undefined)
     
-    @scala.inline
-    def setExposureNumerator(value: NullableOption[Double]): Self = StObject.set(x, "exposureNumerator", value.asInstanceOf[js.Any])
+    inline def setExposureNumerator(value: NullableOption[Double]): Self = StObject.set(x, "exposureNumerator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExposureNumeratorNull: Self = StObject.set(x, "exposureNumerator", null)
+    inline def setExposureNumeratorNull: Self = StObject.set(x, "exposureNumerator", null)
     
-    @scala.inline
-    def setExposureNumeratorUndefined: Self = StObject.set(x, "exposureNumerator", js.undefined)
+    inline def setExposureNumeratorUndefined: Self = StObject.set(x, "exposureNumerator", js.undefined)
     
-    @scala.inline
-    def setFNumber(value: NullableOption[Double]): Self = StObject.set(x, "fNumber", value.asInstanceOf[js.Any])
+    inline def setFNumber(value: NullableOption[Double]): Self = StObject.set(x, "fNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFNumberNull: Self = StObject.set(x, "fNumber", null)
+    inline def setFNumberNull: Self = StObject.set(x, "fNumber", null)
     
-    @scala.inline
-    def setFNumberUndefined: Self = StObject.set(x, "fNumber", js.undefined)
+    inline def setFNumberUndefined: Self = StObject.set(x, "fNumber", js.undefined)
     
-    @scala.inline
-    def setFocalLength(value: NullableOption[Double]): Self = StObject.set(x, "focalLength", value.asInstanceOf[js.Any])
+    inline def setFocalLength(value: NullableOption[Double]): Self = StObject.set(x, "focalLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocalLengthNull: Self = StObject.set(x, "focalLength", null)
+    inline def setFocalLengthNull: Self = StObject.set(x, "focalLength", null)
     
-    @scala.inline
-    def setFocalLengthUndefined: Self = StObject.set(x, "focalLength", js.undefined)
+    inline def setFocalLengthUndefined: Self = StObject.set(x, "focalLength", js.undefined)
     
-    @scala.inline
-    def setIso(value: NullableOption[Double]): Self = StObject.set(x, "iso", value.asInstanceOf[js.Any])
+    inline def setIso(value: NullableOption[Double]): Self = StObject.set(x, "iso", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsoNull: Self = StObject.set(x, "iso", null)
+    inline def setIsoNull: Self = StObject.set(x, "iso", null)
     
-    @scala.inline
-    def setIsoUndefined: Self = StObject.set(x, "iso", js.undefined)
+    inline def setIsoUndefined: Self = StObject.set(x, "iso", js.undefined)
     
-    @scala.inline
-    def setOrientation(value: NullableOption[Double]): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: NullableOption[Double]): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationNull: Self = StObject.set(x, "orientation", null)
+    inline def setOrientationNull: Self = StObject.set(x, "orientation", null)
     
-    @scala.inline
-    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    @scala.inline
-    def setTakenDateTime(value: NullableOption[String]): Self = StObject.set(x, "takenDateTime", value.asInstanceOf[js.Any])
+    inline def setTakenDateTime(value: NullableOption[String]): Self = StObject.set(x, "takenDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTakenDateTimeNull: Self = StObject.set(x, "takenDateTime", null)
+    inline def setTakenDateTimeNull: Self = StObject.set(x, "takenDateTime", null)
     
-    @scala.inline
-    def setTakenDateTimeUndefined: Self = StObject.set(x, "takenDateTime", js.undefined)
+    inline def setTakenDateTimeUndefined: Self = StObject.set(x, "takenDateTime", js.undefined)
   }
 }

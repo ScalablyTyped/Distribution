@@ -13,16 +13,13 @@ trait UpdateEndpointOutput extends StObject {
 }
 object UpdateEndpointOutput {
   
-  @scala.inline
-  def apply(EndpointArn: EndpointArn): UpdateEndpointOutput = {
+  inline def apply(EndpointArn: EndpointArn): UpdateEndpointOutput = {
     val __obj = js.Dynamic.literal(EndpointArn = EndpointArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateEndpointOutput]
   }
   
-  @scala.inline
-  implicit class UpdateEndpointOutputMutableBuilder[Self <: UpdateEndpointOutput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateEndpointOutput](x: Self) {
     
-    @scala.inline
-    def setEndpointArn(value: EndpointArn): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
+    inline def setEndpointArn(value: EndpointArn): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
   }
 }

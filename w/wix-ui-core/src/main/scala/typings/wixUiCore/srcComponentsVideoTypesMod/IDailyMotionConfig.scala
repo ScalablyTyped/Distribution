@@ -10,19 +10,15 @@ trait IDailyMotionConfig extends StObject {
 }
 object IDailyMotionConfig {
   
-  @scala.inline
-  def apply(): IDailyMotionConfig = {
+  inline def apply(): IDailyMotionConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IDailyMotionConfig]
   }
   
-  @scala.inline
-  implicit class IDailyMotionConfigMutableBuilder[Self <: IDailyMotionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: IDailyMotionConfig](x: Self) {
     
-    @scala.inline
-    def setPlayerOptions(value: js.Object): Self = StObject.set(x, "playerOptions", value.asInstanceOf[js.Any])
+    inline def setPlayerOptions(value: js.Object): Self = StObject.set(x, "playerOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlayerOptionsUndefined: Self = StObject.set(x, "playerOptions", js.undefined)
+    inline def setPlayerOptionsUndefined: Self = StObject.set(x, "playerOptions", js.undefined)
   }
 }

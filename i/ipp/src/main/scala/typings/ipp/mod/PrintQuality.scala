@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PrintQuality extends StObject
 object PrintQuality {
   
-  @scala.inline
-  def draft: typings.ipp.ippStrings.draft = "draft".asInstanceOf[typings.ipp.ippStrings.draft]
+  inline def draft: typings.ipp.ippStrings.draft = "draft".asInstanceOf[typings.ipp.ippStrings.draft]
   
-  @scala.inline
-  def high: typings.ipp.ippStrings.high = "high".asInstanceOf[typings.ipp.ippStrings.high]
+  inline def high: typings.ipp.ippStrings.high = "high".asInstanceOf[typings.ipp.ippStrings.high]
   
-  @scala.inline
-  def normal: typings.ipp.ippStrings.normal = "normal".asInstanceOf[typings.ipp.ippStrings.normal]
+  inline def normal: typings.ipp.ippStrings.normal = "normal".asInstanceOf[typings.ipp.ippStrings.normal]
 }

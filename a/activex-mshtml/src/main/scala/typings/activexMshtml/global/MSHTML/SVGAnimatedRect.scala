@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.SVGAnimatedRect")
 @js.native
-class SVGAnimatedRect protected ()
+/* private */ class SVGAnimatedRect ()
   extends StObject
      with typings.activexMshtml.MSHTML.SVGAnimatedRect {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.SVGAnimatedRect_typekey")
   var MSHTMLDotSVGAnimatedRect_typekey: typings.activexMshtml.MSHTML.SVGAnimatedRect = js.native
   

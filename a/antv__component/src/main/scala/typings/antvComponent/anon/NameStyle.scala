@@ -10,16 +10,13 @@ trait NameStyle extends StObject {
 }
 object NameStyle {
   
-  @scala.inline
-  def apply(nameStyle: OpacityNumber): NameStyle = {
+  inline def apply(nameStyle: OpacityNumber): NameStyle = {
     val __obj = js.Dynamic.literal(nameStyle = nameStyle.asInstanceOf[js.Any])
     __obj.asInstanceOf[NameStyle]
   }
   
-  @scala.inline
-  implicit class NameStyleMutableBuilder[Self <: NameStyle] (val x: Self) extends AnyVal {
+  extension [Self <: NameStyle](x: Self) {
     
-    @scala.inline
-    def setNameStyle(value: OpacityNumber): Self = StObject.set(x, "nameStyle", value.asInstanceOf[js.Any])
+    inline def setNameStyle(value: OpacityNumber): Self = StObject.set(x, "nameStyle", value.asInstanceOf[js.Any])
   }
 }

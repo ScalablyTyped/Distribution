@@ -18,8 +18,8 @@ object windowMod {
     
     def assemble(): typings.vegaTypings.transformMod.WindowTransform | VgJoinAggregateTransform = js.native
     
-    var getDefaultName: js.Any = js.native
+    /* private */ var getDefaultName: js.Any = js.native
     
-    val transform: js.Any = js.native
+    /* private */ val transform: js.Any = js.native
   }
 }

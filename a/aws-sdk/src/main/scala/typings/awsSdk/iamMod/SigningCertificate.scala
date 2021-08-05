@@ -33,8 +33,7 @@ trait SigningCertificate extends StObject {
 }
 object SigningCertificate {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CertificateBody: certificateBodyType,
     CertificateId: certificateIdType,
     Status: statusType,
@@ -44,25 +43,18 @@ object SigningCertificate {
     __obj.asInstanceOf[SigningCertificate]
   }
   
-  @scala.inline
-  implicit class SigningCertificateMutableBuilder[Self <: SigningCertificate] (val x: Self) extends AnyVal {
+  extension [Self <: SigningCertificate](x: Self) {
     
-    @scala.inline
-    def setCertificateBody(value: certificateBodyType): Self = StObject.set(x, "CertificateBody", value.asInstanceOf[js.Any])
+    inline def setCertificateBody(value: certificateBodyType): Self = StObject.set(x, "CertificateBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateId(value: certificateIdType): Self = StObject.set(x, "CertificateId", value.asInstanceOf[js.Any])
+    inline def setCertificateId(value: certificateIdType): Self = StObject.set(x, "CertificateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: statusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: statusType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadDate(value: dateType): Self = StObject.set(x, "UploadDate", value.asInstanceOf[js.Any])
+    inline def setUploadDate(value: dateType): Self = StObject.set(x, "UploadDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadDateUndefined: Self = StObject.set(x, "UploadDate", js.undefined)
+    inline def setUploadDateUndefined: Self = StObject.set(x, "UploadDate", js.undefined)
     
-    @scala.inline
-    def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: userNameType): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

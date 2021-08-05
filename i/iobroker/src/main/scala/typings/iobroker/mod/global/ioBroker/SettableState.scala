@@ -28,71 +28,50 @@ trait SettableState extends StObject {
 }
 object SettableState {
   
-  @scala.inline
-  def apply(): SettableState = {
+  inline def apply(): SettableState = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("val")(null)
     __obj.asInstanceOf[SettableState]
   }
   
-  @scala.inline
-  implicit class SettableStateMutableBuilder[Self <: SettableState] (val x: Self) extends AnyVal {
+  extension [Self <: SettableState](x: Self) {
     
-    @scala.inline
-    def setAck(value: Boolean): Self = StObject.set(x, "ack", value.asInstanceOf[js.Any])
+    inline def setAck(value: Boolean): Self = StObject.set(x, "ack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAckUndefined: Self = StObject.set(x, "ack", js.undefined)
+    inline def setAckUndefined: Self = StObject.set(x, "ack", js.undefined)
     
-    @scala.inline
-    def setC(value: String): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
+    inline def setC(value: String): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCUndefined: Self = StObject.set(x, "c", js.undefined)
+    inline def setCUndefined: Self = StObject.set(x, "c", js.undefined)
     
-    @scala.inline
-    def setExpire(value: Double): Self = StObject.set(x, "expire", value.asInstanceOf[js.Any])
+    inline def setExpire(value: Double): Self = StObject.set(x, "expire", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpireUndefined: Self = StObject.set(x, "expire", js.undefined)
+    inline def setExpireUndefined: Self = StObject.set(x, "expire", js.undefined)
     
-    @scala.inline
-    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    @scala.inline
-    def setLc(value: Double): Self = StObject.set(x, "lc", value.asInstanceOf[js.Any])
+    inline def setLc(value: Double): Self = StObject.set(x, "lc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLcUndefined: Self = StObject.set(x, "lc", js.undefined)
+    inline def setLcUndefined: Self = StObject.set(x, "lc", js.undefined)
     
-    @scala.inline
-    def setQ(value: StateQuality): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
+    inline def setQ(value: StateQuality): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQUndefined: Self = StObject.set(x, "q", js.undefined)
+    inline def setQUndefined: Self = StObject.set(x, "q", js.undefined)
     
-    @scala.inline
-    def setTs(value: Double): Self = StObject.set(x, "ts", value.asInstanceOf[js.Any])
+    inline def setTs(value: Double): Self = StObject.set(x, "ts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTsUndefined: Self = StObject.set(x, "ts", js.undefined)
+    inline def setTsUndefined: Self = StObject.set(x, "ts", js.undefined)
     
-    @scala.inline
-    def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: String): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     
-    @scala.inline
-    def setVal(value: String | Double | Boolean | js.Array[js.Any] | (Record[String, js.Any])): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+    inline def setVal(value: String | Double | Boolean | js.Array[js.Any] | (Record[String, js.Any])): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValNull: Self = StObject.set(x, "val", null)
+    inline def setValNull: Self = StObject.set(x, "val", null)
     
-    @scala.inline
-    def setValVarargs(value: js.Any*): Self = StObject.set(x, "val", js.Array(value :_*))
+    inline def setValVarargs(value: js.Any*): Self = StObject.set(x, "val", js.Array(value :_*))
   }
 }

@@ -21,23 +21,22 @@ object bws {
         */
       def getResult(): js.Any
       
-      var instanceArray: InstanceArray
+      /* protected */ var instanceArray: InstanceArray
       
       def less(obj: GAWrapperArray): Boolean
       
-      var price: js.Any
+      /* private */ var price: js.Any
       
-      var result: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.HashMap<string, WrapperGroup> */ js.Any
+      /* protected */ var result: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.HashMap<string, WrapperGroup> */ js.Any
       
       /**
         * @brief Validity of this sequence list.
         */
-      var valid: js.Any
+      /* private */ var valid: js.Any
     }
     object GAWrapperArray {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         CHILD_TAG: () => String,
         TAG: () => String,
         constructResult: () => js.Any,
@@ -55,31 +54,23 @@ object bws {
         __obj.asInstanceOf[GAWrapperArray]
       }
       
-      @scala.inline
-      implicit class GAWrapperArrayMutableBuilder[Self <: GAWrapperArray] (val x: Self) extends AnyVal {
+      extension [Self <: GAWrapperArray](x: Self) {
         
-        @scala.inline
-        def setConstructResult(value: () => js.Any): Self = StObject.set(x, "constructResult", js.Any.fromFunction0(value))
+        inline def setConstructResult(value: () => js.Any): Self = StObject.set(x, "constructResult", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetResult(value: () => js.Any): Self = StObject.set(x, "getResult", js.Any.fromFunction0(value))
+        inline def setGetResult(value: () => js.Any): Self = StObject.set(x, "getResult", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setInstanceArray(value: InstanceArray): Self = StObject.set(x, "instanceArray", value.asInstanceOf[js.Any])
+        inline def setInstanceArray(value: InstanceArray): Self = StObject.set(x, "instanceArray", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLess(value: GAWrapperArray => Boolean): Self = StObject.set(x, "less", js.Any.fromFunction1(value))
+        inline def setLess(value: GAWrapperArray => Boolean): Self = StObject.set(x, "less", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setPrice(value: js.Any): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+        inline def setPrice(value: js.Any): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setResult(
+        inline def setResult(
           value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify std.HashMap<string, WrapperGroup> */ js.Any
         ): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setValid(value: js.Any): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
+        inline def setValid(value: js.Any): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
       }
     }
     
@@ -151,8 +142,7 @@ object bws {
     }
     object Instance {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         TYPE: () => String,
         getHeight: () => Double,
         getLength: () => Double,
@@ -168,38 +158,27 @@ object bws {
         __obj.asInstanceOf[Instance]
       }
       
-      @scala.inline
-      implicit class InstanceMutableBuilder[Self <: Instance] (val x: Self) extends AnyVal {
+      extension [Self <: Instance](x: Self) {
         
-        @scala.inline
-        def setGetHeight(value: () => Double): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
+        inline def setGetHeight(value: () => Double): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
+        inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+        inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetVolume(value: () => Double): Self = StObject.set(x, "getVolume", js.Any.fromFunction0(value))
+        inline def setGetVolume(value: () => Double): Self = StObject.set(x, "getVolume", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
+        inline def setGetWidth(value: () => Double): Self = StObject.set(x, "getWidth", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setSetHeight(value: Double => Unit): Self = StObject.set(x, "setHeight", js.Any.fromFunction1(value))
+        inline def setSetHeight(value: Double => Unit): Self = StObject.set(x, "setHeight", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetLength(value: Double => Unit): Self = StObject.set(x, "setLength", js.Any.fromFunction1(value))
+        inline def setSetLength(value: Double => Unit): Self = StObject.set(x, "setLength", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetName(value: String => Unit): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
+        inline def setSetName(value: String => Unit): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetWidth(value: Double => Unit): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
+        inline def setSetWidth(value: Double => Unit): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setTYPE(value: () => String): Self = StObject.set(x, "TYPE", js.Any.fromFunction0(value))
+        inline def setTYPE(value: () => String): Self = StObject.set(x, "TYPE", js.Any.fromFunction0(value))
       }
     }
     
@@ -230,8 +209,7 @@ object bws {
     }
     object InstanceArray {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         CHILD_TAG: () => String,
         TAG: () => String,
         createChild: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any => Instance
@@ -240,19 +218,15 @@ object bws {
         __obj.asInstanceOf[InstanceArray]
       }
       
-      @scala.inline
-      implicit class InstanceArrayMutableBuilder[Self <: InstanceArray] (val x: Self) extends AnyVal {
+      extension [Self <: InstanceArray](x: Self) {
         
-        @scala.inline
-        def setCHILD_TAG(value: () => String): Self = StObject.set(x, "CHILD_TAG", js.Any.fromFunction0(value))
+        inline def setCHILD_TAG(value: () => String): Self = StObject.set(x, "CHILD_TAG", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setCreateChild(
+        inline def setCreateChild(
           value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any => Instance
         ): Self = StObject.set(x, "createChild", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setTAG(value: () => String): Self = StObject.set(x, "TAG", js.Any.fromFunction0(value))
+        inline def setTAG(value: () => String): Self = StObject.set(x, "TAG", js.Any.fromFunction0(value))
       }
     }
     
@@ -297,7 +271,7 @@ object bws {
       /**
         * Repeated count of the {@link instance}.
         */
-      var count: js.Any
+      /* private */ var count: js.Any
       
       /* private */ def createInstance(xml: js.Any): js.Any
       
@@ -308,7 +282,7 @@ object bws {
       /**
         * A duplicated Instance.
         */
-      var instance: js.Any
+      /* private */ var instance: js.Any
       
       def key(): js.Any
       
@@ -333,8 +307,7 @@ object bws {
     }
     object InstanceForm {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         $count: String,
         $height: String,
         $length: String,
@@ -356,58 +329,41 @@ object bws {
         __obj.asInstanceOf[InstanceForm]
       }
       
-      @scala.inline
-      implicit class InstanceFormMutableBuilder[Self <: InstanceForm] (val x: Self) extends AnyVal {
+      extension [Self <: InstanceForm](x: Self) {
         
-        @scala.inline
-        def set$count(value: String): Self = StObject.set(x, "$count", value.asInstanceOf[js.Any])
+        inline def set$count(value: String): Self = StObject.set(x, "$count", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$height(value: String): Self = StObject.set(x, "$height", value.asInstanceOf[js.Any])
+        inline def set$height(value: String): Self = StObject.set(x, "$height", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$length(value: String): Self = StObject.set(x, "$length", value.asInstanceOf[js.Any])
+        inline def set$length(value: String): Self = StObject.set(x, "$length", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$name(value: String): Self = StObject.set(x, "$name", value.asInstanceOf[js.Any])
+        inline def set$name(value: String): Self = StObject.set(x, "$name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$width(value: String): Self = StObject.set(x, "$width", value.asInstanceOf[js.Any])
+        inline def set$width(value: String): Self = StObject.set(x, "$width", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConstruct(
+        inline def setConstruct(
           value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any => Unit
         ): Self = StObject.set(x, "construct", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setCount(value: js.Any): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+        inline def setCount(value: js.Any): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCreateInstance(value: js.Any => js.Any): Self = StObject.set(x, "createInstance", js.Any.fromFunction1(value))
+        inline def setCreateInstance(value: js.Any => js.Any): Self = StObject.set(x, "createInstance", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setGetCount(value: () => Double): Self = StObject.set(x, "getCount", js.Any.fromFunction0(value))
+        inline def setGetCount(value: () => Double): Self = StObject.set(x, "getCount", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetInstance(value: () => Instance): Self = StObject.set(x, "getInstance", js.Any.fromFunction0(value))
+        inline def setGetInstance(value: () => Instance): Self = StObject.set(x, "getInstance", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+        inline def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKey(value: () => js.Any): Self = StObject.set(x, "key", js.Any.fromFunction0(value))
+        inline def setKey(value: () => js.Any): Self = StObject.set(x, "key", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setSetCount(value: Double => Unit): Self = StObject.set(x, "setCount", js.Any.fromFunction1(value))
+        inline def setSetCount(value: Double => Unit): Self = StObject.set(x, "setCount", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setTAG(value: () => String): Self = StObject.set(x, "TAG", js.Any.fromFunction0(value))
+        inline def setTAG(value: () => String): Self = StObject.set(x, "TAG", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setToInstanceArray(value: () => InstanceArray): Self = StObject.set(x, "toInstanceArray", js.Any.fromFunction0(value))
+        inline def setToInstanceArray(value: () => InstanceArray): Self = StObject.set(x, "toInstanceArray", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setToXML(value: () => js.Any): Self = StObject.set(x, "toXML", js.Any.fromFunction0(value))
+        inline def setToXML(value: () => js.Any): Self = StObject.set(x, "toXML", js.Any.fromFunction0(value))
       }
     }
     
@@ -436,8 +392,7 @@ object bws {
     }
     object InstanceFormArray {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         CHILD_TAG: () => String,
         TAG: () => String,
         createChild: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any => InstanceForm,
@@ -447,22 +402,17 @@ object bws {
         __obj.asInstanceOf[InstanceFormArray]
       }
       
-      @scala.inline
-      implicit class InstanceFormArrayMutableBuilder[Self <: InstanceFormArray] (val x: Self) extends AnyVal {
+      extension [Self <: InstanceFormArray](x: Self) {
         
-        @scala.inline
-        def setCHILD_TAG(value: () => String): Self = StObject.set(x, "CHILD_TAG", js.Any.fromFunction0(value))
+        inline def setCHILD_TAG(value: () => String): Self = StObject.set(x, "CHILD_TAG", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setCreateChild(
+        inline def setCreateChild(
           value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any => InstanceForm
         ): Self = StObject.set(x, "createChild", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setTAG(value: () => String): Self = StObject.set(x, "TAG", js.Any.fromFunction0(value))
+        inline def setTAG(value: () => String): Self = StObject.set(x, "TAG", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setToInstanceArray(value: () => InstanceArray): Self = StObject.set(x, "toInstanceArray", js.Any.fromFunction0(value))
+        inline def setToInstanceArray(value: () => InstanceArray): Self = StObject.set(x, "toInstanceArray", js.Any.fromFunction0(value))
       }
     }
     
@@ -540,7 +490,7 @@ object bws {
       /**
         * Instances trying to pack into the wrapper.
         */
-      var instanceArray: InstanceArray
+      /* protected */ var instanceArray: InstanceArray
       
       /**
         * <p> Deduct
@@ -564,12 +514,11 @@ object bws {
       /**
         * Candidate wrappers who can contain instances.
         */
-      var wrapperArray: WrapperArray
+      /* protected */ var wrapperArray: WrapperArray
     }
     object Packer {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         TAG: () => String,
         construct: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any => Unit,
         getInstanceArray: () => InstanceArray,
@@ -585,40 +534,29 @@ object bws {
         __obj.asInstanceOf[Packer]
       }
       
-      @scala.inline
-      implicit class PackerMutableBuilder[Self <: Packer] (val x: Self) extends AnyVal {
+      extension [Self <: Packer](x: Self) {
         
-        @scala.inline
-        def setConstruct(
+        inline def setConstruct(
           value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any => Unit
         ): Self = StObject.set(x, "construct", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setGetInstanceArray(value: () => InstanceArray): Self = StObject.set(x, "getInstanceArray", js.Any.fromFunction0(value))
+        inline def setGetInstanceArray(value: () => InstanceArray): Self = StObject.set(x, "getInstanceArray", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetWrapperArray(value: () => WrapperArray): Self = StObject.set(x, "getWrapperArray", js.Any.fromFunction0(value))
+        inline def setGetWrapperArray(value: () => WrapperArray): Self = StObject.set(x, "getWrapperArray", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setInitGenes(value: () => GAWrapperArray): Self = StObject.set(x, "initGenes", js.Any.fromFunction0(value))
+        inline def setInitGenes(value: () => GAWrapperArray): Self = StObject.set(x, "initGenes", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setInstanceArray(value: InstanceArray): Self = StObject.set(x, "instanceArray", value.asInstanceOf[js.Any])
+        inline def setInstanceArray(value: InstanceArray): Self = StObject.set(x, "instanceArray", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOptimize(value: () => WrapperArray): Self = StObject.set(x, "optimize", js.Any.fromFunction0(value))
+        inline def setOptimize(value: () => WrapperArray): Self = StObject.set(x, "optimize", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setRepack(value: WrapperArray => WrapperArray): Self = StObject.set(x, "repack", js.Any.fromFunction1(value))
+        inline def setRepack(value: WrapperArray => WrapperArray): Self = StObject.set(x, "repack", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setTAG(value: () => String): Self = StObject.set(x, "TAG", js.Any.fromFunction0(value))
+        inline def setTAG(value: () => String): Self = StObject.set(x, "TAG", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setToXML(value: () => js.Any): Self = StObject.set(x, "toXML", js.Any.fromFunction0(value))
+        inline def setToXML(value: () => js.Any): Self = StObject.set(x, "toXML", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setWrapperArray(value: WrapperArray): Self = StObject.set(x, "wrapperArray", value.asInstanceOf[js.Any])
+        inline def setWrapperArray(value: WrapperArray): Self = StObject.set(x, "wrapperArray", value.asInstanceOf[js.Any])
       }
     }
     
@@ -643,7 +581,7 @@ object bws {
       /**
         * Form of Instances to pack.
         */
-      var instanceFormArray: js.Any
+      /* private */ var instanceFormArray: js.Any
       
       def optimize(): WrapperArray
       
@@ -654,12 +592,11 @@ object bws {
       /**
         * Type of Wrappers to be used.
         */
-      var wrapperArray: js.Any
+      /* private */ var wrapperArray: js.Any
     }
     object PackerForm {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         TAG: () => String,
         construct: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any => Unit,
         getInstanceFormArray: () => InstanceFormArray,
@@ -674,37 +611,27 @@ object bws {
         __obj.asInstanceOf[PackerForm]
       }
       
-      @scala.inline
-      implicit class PackerFormMutableBuilder[Self <: PackerForm] (val x: Self) extends AnyVal {
+      extension [Self <: PackerForm](x: Self) {
         
-        @scala.inline
-        def setConstruct(
+        inline def setConstruct(
           value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any => Unit
         ): Self = StObject.set(x, "construct", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setGetInstanceFormArray(value: () => InstanceFormArray): Self = StObject.set(x, "getInstanceFormArray", js.Any.fromFunction0(value))
+        inline def setGetInstanceFormArray(value: () => InstanceFormArray): Self = StObject.set(x, "getInstanceFormArray", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetWrapperArray(value: () => WrapperArray): Self = StObject.set(x, "getWrapperArray", js.Any.fromFunction0(value))
+        inline def setGetWrapperArray(value: () => WrapperArray): Self = StObject.set(x, "getWrapperArray", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setInstanceFormArray(value: js.Any): Self = StObject.set(x, "instanceFormArray", value.asInstanceOf[js.Any])
+        inline def setInstanceFormArray(value: js.Any): Self = StObject.set(x, "instanceFormArray", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOptimize(value: () => WrapperArray): Self = StObject.set(x, "optimize", js.Any.fromFunction0(value))
+        inline def setOptimize(value: () => WrapperArray): Self = StObject.set(x, "optimize", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setTAG(value: () => String): Self = StObject.set(x, "TAG", js.Any.fromFunction0(value))
+        inline def setTAG(value: () => String): Self = StObject.set(x, "TAG", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setToPacker(value: () => Packer): Self = StObject.set(x, "toPacker", js.Any.fromFunction0(value))
+        inline def setToPacker(value: () => Packer): Self = StObject.set(x, "toPacker", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setToXML(value: () => js.Any): Self = StObject.set(x, "toXML", js.Any.fromFunction0(value))
+        inline def setToXML(value: () => js.Any): Self = StObject.set(x, "toXML", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setWrapperArray(value: js.Any): Self = StObject.set(x, "wrapperArray", value.asInstanceOf[js.Any])
+        inline def setWrapperArray(value: js.Any): Self = StObject.set(x, "wrapperArray", value.asInstanceOf[js.Any])
       }
     }
     
@@ -726,7 +653,7 @@ object bws {
       /**
         * Height of the Product, length on the Y-axis in 3D.
         */
-      var height: Double
+      /* protected */ var height: Double
       
       /**
         * Key of a Product is its name.
@@ -736,14 +663,14 @@ object bws {
       /**
         * Length of the Product, length on the Z-axis in 3D.
         */
-      var length: Double
+      /* protected */ var length: Double
       
       /**
         * <p> Name, key of the Product. </p>
         *
         * <p> The name must be unique because a name identifies a {@link Product}. </p>
         */
-      var name: String
+      /* protected */ var name: String
       
       /**
         * @inheritdoc
@@ -753,12 +680,11 @@ object bws {
       /**
         * Width of the Product, length on the X-axis in 3D.
         */
-      var width: Double
+      /* protected */ var width: Double
     }
     object Product {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         TAG: () => String,
         TYPE: () => String,
         getHeight: () => Double,
@@ -781,29 +707,21 @@ object bws {
         __obj.asInstanceOf[Product]
       }
       
-      @scala.inline
-      implicit class ProductMutableBuilder[Self <: Product] (val x: Self) extends AnyVal {
+      extension [Self <: Product](x: Self) {
         
-        @scala.inline
-        def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+        inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKey(value: () => js.Any): Self = StObject.set(x, "key", js.Any.fromFunction0(value))
+        inline def setKey(value: () => js.Any): Self = StObject.set(x, "key", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+        inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTAG(value: () => String): Self = StObject.set(x, "TAG", js.Any.fromFunction0(value))
+        inline def setTAG(value: () => String): Self = StObject.set(x, "TAG", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setToXML(value: () => js.Any): Self = StObject.set(x, "toXML", js.Any.fromFunction0(value))
+        inline def setToXML(value: () => js.Any): Self = StObject.set(x, "toXML", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+        inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       }
     }
     
@@ -919,12 +837,12 @@ object bws {
       /**
         * An instance wrapped into the {@link wrapper}.
         */
-      var instance: Instance
+      /* protected */ var instance: Instance
       
       /**
         * Placement orientation of wrapped {@link instance}.
         */
-      var orientation: Double
+      /* protected */ var orientation: Double
       
       /**
         * Set orientation.
@@ -950,27 +868,26 @@ object bws {
       /**
         * A wrapper wrapping the {@link instance}.
         */
-      var wrapper: Wrapper
+      /* protected */ var wrapper: Wrapper
       
       /**
         * Coordinate-X of the instance placement in the wrapper.
         */
-      var x: Double
+      /* protected */ var x: Double
       
       /**
         * Coordinate-Y of the instance placement in the wrapper.
         */
-      var y: Double
+      /* protected */ var y: Double
       
       /**
         * Coordinate-Z of the instance placement in the wrapper.
         */
-      var z: Double
+      /* protected */ var z: Double
     }
     object Wrap {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         $instanceName: String,
         $layoutScale: String,
         $position: String,
@@ -1003,91 +920,63 @@ object bws {
         __obj.asInstanceOf[Wrap]
       }
       
-      @scala.inline
-      implicit class WrapMutableBuilder[Self <: Wrap] (val x: Self) extends AnyVal {
+      extension [Self <: Wrap](x: Self) {
         
-        @scala.inline
-        def set$instanceName(value: String): Self = StObject.set(x, "$instanceName", value.asInstanceOf[js.Any])
+        inline def set$instanceName(value: String): Self = StObject.set(x, "$instanceName", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$layoutScale(value: String): Self = StObject.set(x, "$layoutScale", value.asInstanceOf[js.Any])
+        inline def set$layoutScale(value: String): Self = StObject.set(x, "$layoutScale", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$position(value: String): Self = StObject.set(x, "$position", value.asInstanceOf[js.Any])
+        inline def set$position(value: String): Self = StObject.set(x, "$position", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChangeWrapperOrientation(value: Double => Unit): Self = StObject.set(x, "changeWrapperOrientation", js.Any.fromFunction1(value))
+        inline def setChangeWrapperOrientation(value: Double => Unit): Self = StObject.set(x, "changeWrapperOrientation", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setConstruct(
+        inline def setConstruct(
           value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any => Unit
         ): Self = StObject.set(x, "construct", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setCreateInstance(value: String => Instance): Self = StObject.set(x, "createInstance", js.Any.fromFunction1(value))
+        inline def setCreateInstance(value: String => Instance): Self = StObject.set(x, "createInstance", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setEstimateOrientation(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "estimateOrientation", js.Any.fromFunction3(value))
+        inline def setEstimateOrientation(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "estimateOrientation", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setGetInstance(value: () => Instance): Self = StObject.set(x, "getInstance", js.Any.fromFunction0(value))
+        inline def setGetInstance(value: () => Instance): Self = StObject.set(x, "getInstance", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetLayoutHeight(value: () => Double): Self = StObject.set(x, "getLayoutHeight", js.Any.fromFunction0(value))
+        inline def setGetLayoutHeight(value: () => Double): Self = StObject.set(x, "getLayoutHeight", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetLayoutWidth(value: () => Double): Self = StObject.set(x, "getLayoutWidth", js.Any.fromFunction0(value))
+        inline def setGetLayoutWidth(value: () => Double): Self = StObject.set(x, "getLayoutWidth", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
+        inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetOrientation(value: () => Double): Self = StObject.set(x, "getOrientation", js.Any.fromFunction0(value))
+        inline def setGetOrientation(value: () => Double): Self = StObject.set(x, "getOrientation", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetVolume(value: () => Double): Self = StObject.set(x, "getVolume", js.Any.fromFunction0(value))
+        inline def setGetVolume(value: () => Double): Self = StObject.set(x, "getVolume", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetWrapper(value: () => Wrapper): Self = StObject.set(x, "getWrapper", js.Any.fromFunction0(value))
+        inline def setGetWrapper(value: () => Wrapper): Self = StObject.set(x, "getWrapper", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetX(value: () => Double): Self = StObject.set(x, "getX", js.Any.fromFunction0(value))
+        inline def setGetX(value: () => Double): Self = StObject.set(x, "getX", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetY(value: () => Double): Self = StObject.set(x, "getY", js.Any.fromFunction0(value))
+        inline def setGetY(value: () => Double): Self = StObject.set(x, "getY", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetZ(value: () => Double): Self = StObject.set(x, "getZ", js.Any.fromFunction0(value))
+        inline def setGetZ(value: () => Double): Self = StObject.set(x, "getZ", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setInstance(value: Instance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+        inline def setInstance(value: Instance): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOrientation(value: Double): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+        inline def setOrientation(value: Double): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSetOrientation(value: Double => Unit): Self = StObject.set(x, "setOrientation", js.Any.fromFunction1(value))
+        inline def setSetOrientation(value: Double => Unit): Self = StObject.set(x, "setOrientation", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetPosition(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction3(value))
+        inline def setSetPosition(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "setPosition", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setTAG(value: () => String): Self = StObject.set(x, "TAG", js.Any.fromFunction0(value))
+        inline def setTAG(value: () => String): Self = StObject.set(x, "TAG", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setToXML(value: () => js.Any): Self = StObject.set(x, "toXML", js.Any.fromFunction0(value))
+        inline def setToXML(value: () => js.Any): Self = StObject.set(x, "toXML", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setWrapper(value: Wrapper): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
+        inline def setWrapper(value: Wrapper): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+        inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+        inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
+        inline def setZ(value: Double): Self = StObject.set(x, "z", value.asInstanceOf[js.Any])
       }
     }
     
@@ -1210,7 +1099,7 @@ object bws {
       /**
         * Height of the Wrapper, length on the Y-axis in 3D.
         */
-      var height: Double
+      /* protected */ var height: Double
       
       /**
         * Key of a Wrapper is its name.
@@ -1220,19 +1109,19 @@ object bws {
       /**
         * Length of the Wrapper, length on the Z-axis in 3D.
         */
-      var length: Double
+      /* protected */ var length: Double
       
       /**
         * <p> Name, key of the Wrapper. </p>
         *
         * <p> The name represents a type of Wrapper and identifies the Wrapper. </p>
         */
-      var name: String
+      /* protected */ var name: String
       
       /**
         * Price, cost of using an Wrapper.
         */
-      var price: Double
+      /* protected */ var price: Double
       
       /**
         * Set price.
@@ -1250,7 +1139,7 @@ object bws {
         * <p> The thickness reduces each dimension's containable size (dimension - 2*thickness),
         * so finally, it reduces total containable volume (-8 * thickness^3). </p>
         */
-      var thickness: Double
+      /* protected */ var thickness: Double
       
       /**
         * @inheritdoc
@@ -1260,12 +1149,11 @@ object bws {
       /**
         * Width of the Wrapper, length on the X-axis in 3D.
         */
-      var width: Double
+      /* protected */ var width: Double
     }
     object Wrapper {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         $height: String,
         $length: String,
         $name: String,
@@ -1312,100 +1200,69 @@ object bws {
         __obj.asInstanceOf[Wrapper]
       }
       
-      @scala.inline
-      implicit class WrapperMutableBuilder[Self <: Wrapper] (val x: Self) extends AnyVal {
+      extension [Self <: Wrapper](x: Self) {
         
-        @scala.inline
-        def set$height(value: String): Self = StObject.set(x, "$height", value.asInstanceOf[js.Any])
+        inline def set$height(value: String): Self = StObject.set(x, "$height", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$length(value: String): Self = StObject.set(x, "$length", value.asInstanceOf[js.Any])
+        inline def set$length(value: String): Self = StObject.set(x, "$length", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$name(value: String): Self = StObject.set(x, "$name", value.asInstanceOf[js.Any])
+        inline def set$name(value: String): Self = StObject.set(x, "$name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$price(value: String): Self = StObject.set(x, "$price", value.asInstanceOf[js.Any])
+        inline def set$price(value: String): Self = StObject.set(x, "$price", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$scale(value: String): Self = StObject.set(x, "$scale", value.asInstanceOf[js.Any])
+        inline def set$scale(value: String): Self = StObject.set(x, "$scale", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$spaceUtilization(value: String): Self = StObject.set(x, "$spaceUtilization", value.asInstanceOf[js.Any])
+        inline def set$spaceUtilization(value: String): Self = StObject.set(x, "$spaceUtilization", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$thickness(value: String): Self = StObject.set(x, "$thickness", value.asInstanceOf[js.Any])
+        inline def set$thickness(value: String): Self = StObject.set(x, "$thickness", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def set$width(value: String): Self = StObject.set(x, "$width", value.asInstanceOf[js.Any])
+        inline def set$width(value: String): Self = StObject.set(x, "$width", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCHILD_TAG(value: () => String): Self = StObject.set(x, "CHILD_TAG", js.Any.fromFunction0(value))
+        inline def setCHILD_TAG(value: () => String): Self = StObject.set(x, "CHILD_TAG", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setContainable(value: Instance => Boolean): Self = StObject.set(x, "containable", js.Any.fromFunction1(value))
+        inline def setContainable(value: Instance => Boolean): Self = StObject.set(x, "containable", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setCreateChild(
+        inline def setCreateChild(
           value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any => Wrap
         ): Self = StObject.set(x, "createChild", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setEquals_(value: Wrapper => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+        inline def setEquals_(value: Wrapper => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setGetContainableHeight(value: () => Double): Self = StObject.set(x, "getContainableHeight", js.Any.fromFunction0(value))
+        inline def setGetContainableHeight(value: () => Double): Self = StObject.set(x, "getContainableHeight", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetContainableLength(value: () => Double): Self = StObject.set(x, "getContainableLength", js.Any.fromFunction0(value))
+        inline def setGetContainableLength(value: () => Double): Self = StObject.set(x, "getContainableLength", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetContainableVolume(value: () => Double): Self = StObject.set(x, "getContainableVolume", js.Any.fromFunction0(value))
+        inline def setGetContainableVolume(value: () => Double): Self = StObject.set(x, "getContainableVolume", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetContainableWidth(value: () => Double): Self = StObject.set(x, "getContainableWidth", js.Any.fromFunction0(value))
+        inline def setGetContainableWidth(value: () => Double): Self = StObject.set(x, "getContainableWidth", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetPrice(value: () => Double): Self = StObject.set(x, "getPrice", js.Any.fromFunction0(value))
+        inline def setGetPrice(value: () => Double): Self = StObject.set(x, "getPrice", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetThickness(value: () => Double): Self = StObject.set(x, "getThickness", js.Any.fromFunction0(value))
+        inline def setGetThickness(value: () => Double): Self = StObject.set(x, "getThickness", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetUtilization(value: () => Double): Self = StObject.set(x, "getUtilization", js.Any.fromFunction0(value))
+        inline def setGetUtilization(value: () => Double): Self = StObject.set(x, "getUtilization", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+        inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setKey(value: () => js.Any): Self = StObject.set(x, "key", js.Any.fromFunction0(value))
+        inline def setKey(value: () => js.Any): Self = StObject.set(x, "key", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+        inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPrice(value: Double): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
+        inline def setPrice(value: Double): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSetPrice(value: Double => Unit): Self = StObject.set(x, "setPrice", js.Any.fromFunction1(value))
+        inline def setSetPrice(value: Double => Unit): Self = StObject.set(x, "setPrice", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetThickness(value: Double => Unit): Self = StObject.set(x, "setThickness", js.Any.fromFunction1(value))
+        inline def setSetThickness(value: Double => Unit): Self = StObject.set(x, "setThickness", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setTAG(value: () => String): Self = StObject.set(x, "TAG", js.Any.fromFunction0(value))
+        inline def setTAG(value: () => String): Self = StObject.set(x, "TAG", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setThickness(value: Double): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
+        inline def setThickness(value: Double): Self = StObject.set(x, "thickness", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setToXML(value: () => js.Any): Self = StObject.set(x, "toXML", js.Any.fromFunction0(value))
+        inline def setToXML(value: () => js.Any): Self = StObject.set(x, "toXML", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+        inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       }
     }
     
@@ -1441,8 +1298,7 @@ object bws {
     }
     object WrapperArray {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         CHILD_TAG: () => String,
         TAG: () => String,
         createChild: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any => Wrapper,
@@ -1453,25 +1309,19 @@ object bws {
         __obj.asInstanceOf[WrapperArray]
       }
       
-      @scala.inline
-      implicit class WrapperArrayMutableBuilder[Self <: WrapperArray] (val x: Self) extends AnyVal {
+      extension [Self <: WrapperArray](x: Self) {
         
-        @scala.inline
-        def setCHILD_TAG(value: () => String): Self = StObject.set(x, "CHILD_TAG", js.Any.fromFunction0(value))
+        inline def setCHILD_TAG(value: () => String): Self = StObject.set(x, "CHILD_TAG", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setCreateChild(
+        inline def setCreateChild(
           value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify library.XML */ js.Any => Wrapper
         ): Self = StObject.set(x, "createChild", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setGetPrice(value: () => Double): Self = StObject.set(x, "getPrice", js.Any.fromFunction0(value))
+        inline def setGetPrice(value: () => Double): Self = StObject.set(x, "getPrice", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetUtilization(value: () => Double): Self = StObject.set(x, "getUtilization", js.Any.fromFunction0(value))
+        inline def setGetUtilization(value: () => Double): Self = StObject.set(x, "getUtilization", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setTAG(value: () => String): Self = StObject.set(x, "TAG", js.Any.fromFunction0(value))
+        inline def setTAG(value: () => String): Self = StObject.set(x, "TAG", js.Any.fromFunction0(value))
       }
     }
     
@@ -1511,7 +1361,7 @@ object bws {
       /**
         * Allocated instances.
         */
-      var allocatedInstanceArray: InstanceArray = js.native
+      /* protected */ var allocatedInstanceArray: InstanceArray = js.native
       
       /**
         * Get allocated instances.
@@ -1564,7 +1414,7 @@ object bws {
         *
         * <p> The sample represents what type of Wrappers are grouped into the WrapperGroup. </p>
         */
-      var sample: Wrapper = js.native
+      /* protected */ var sample: Wrapper = js.native
     }
   }
 }

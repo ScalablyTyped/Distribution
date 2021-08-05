@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.Research")
 @js.native
-class Research protected ()
+/* private */ class Research ()
   extends StObject
      with typings.activexExcel.Excel.Research

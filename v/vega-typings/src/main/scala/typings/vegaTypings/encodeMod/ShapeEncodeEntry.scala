@@ -13,22 +13,17 @@ trait ShapeEncodeEntry
 }
 object ShapeEncodeEntry {
   
-  @scala.inline
-  def apply(): ShapeEncodeEntry = {
+  inline def apply(): ShapeEncodeEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShapeEncodeEntry]
   }
   
-  @scala.inline
-  implicit class ShapeEncodeEntryMutableBuilder[Self <: ShapeEncodeEntry] (val x: Self) extends AnyVal {
+  extension [Self <: ShapeEncodeEntry](x: Self) {
     
-    @scala.inline
-    def setShape(value: ProductionRule[StringValueRef]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: ProductionRule[StringValueRef]): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+    inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
     
-    @scala.inline
-    def setShapeVarargs(value: (Test & StringValueRef)*): Self = StObject.set(x, "shape", js.Array(value :_*))
+    inline def setShapeVarargs(value: (Test & StringValueRef)*): Self = StObject.set(x, "shape", js.Array(value :_*))
   }
 }

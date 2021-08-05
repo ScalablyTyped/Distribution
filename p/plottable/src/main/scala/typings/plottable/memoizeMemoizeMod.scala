@@ -10,8 +10,7 @@ object memoizeMemoizeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def memoize[F /* <: js.Function */](compute: F): MemoizedFunction[F] = ^.asInstanceOf[js.Dynamic].applyDynamic("memoize")(compute.asInstanceOf[js.Any]).asInstanceOf[MemoizedFunction[F]]
+  inline def memoize[F /* <: js.Function */](compute: F): MemoizedFunction[F] = ^.asInstanceOf[js.Dynamic].applyDynamic("memoize")(compute.asInstanceOf[js.Any]).asInstanceOf[MemoizedFunction[F]]
   
   trait IMemoizedFunctionMethods extends StObject {
     
@@ -35,20 +34,16 @@ object memoizeMemoizeMod {
   }
   object IMemoizedFunctionMethods {
     
-    @scala.inline
-    def apply(doLocked: js.Function0[js.Any] => js.Any, logPerformance: () => IMemoizedFunctionMethods): IMemoizedFunctionMethods = {
+    inline def apply(doLocked: js.Function0[js.Any] => js.Any, logPerformance: () => IMemoizedFunctionMethods): IMemoizedFunctionMethods = {
       val __obj = js.Dynamic.literal(doLocked = js.Any.fromFunction1(doLocked), logPerformance = js.Any.fromFunction0(logPerformance))
       __obj.asInstanceOf[IMemoizedFunctionMethods]
     }
     
-    @scala.inline
-    implicit class IMemoizedFunctionMethodsMutableBuilder[Self <: IMemoizedFunctionMethods] (val x: Self) extends AnyVal {
+    extension [Self <: IMemoizedFunctionMethods](x: Self) {
       
-      @scala.inline
-      def setDoLocked(value: js.Function0[js.Any] => js.Any): Self = StObject.set(x, "doLocked", js.Any.fromFunction1(value))
+      inline def setDoLocked(value: js.Function0[js.Any] => js.Any): Self = StObject.set(x, "doLocked", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLogPerformance(value: () => IMemoizedFunctionMethods): Self = StObject.set(x, "logPerformance", js.Any.fromFunction0(value))
+      inline def setLogPerformance(value: () => IMemoizedFunctionMethods): Self = StObject.set(x, "logPerformance", js.Any.fromFunction0(value))
     }
   }
   

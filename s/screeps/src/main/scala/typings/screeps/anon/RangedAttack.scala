@@ -12,19 +12,15 @@ trait RangedAttack extends StObject {
 }
 object RangedAttack {
   
-  @scala.inline
-  def apply(): RangedAttack = {
+  inline def apply(): RangedAttack = {
     val __obj = js.Dynamic.literal(rangedAttack = 2, rangedMassAttack = 2)
     __obj.asInstanceOf[RangedAttack]
   }
   
-  @scala.inline
-  implicit class RangedAttackMutableBuilder[Self <: RangedAttack] (val x: Self) extends AnyVal {
+  extension [Self <: RangedAttack](x: Self) {
     
-    @scala.inline
-    def setRangedAttack(value: typings.screeps.screepsNumbers.`2`): Self = StObject.set(x, "rangedAttack", value.asInstanceOf[js.Any])
+    inline def setRangedAttack(value: typings.screeps.screepsNumbers.`2`): Self = StObject.set(x, "rangedAttack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRangedMassAttack(value: typings.screeps.screepsNumbers.`2`): Self = StObject.set(x, "rangedMassAttack", value.asInstanceOf[js.Any])
+    inline def setRangedMassAttack(value: typings.screeps.screepsNumbers.`2`): Self = StObject.set(x, "rangedMassAttack", value.asInstanceOf[js.Any])
   }
 }

@@ -91,112 +91,77 @@ trait IonPicker extends StObject {
 }
 object IonPicker {
   
-  @scala.inline
-  def apply(): IonPicker = {
+  inline def apply(): IonPicker = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IonPicker]
   }
   
-  @scala.inline
-  implicit class IonPickerMutableBuilder[Self <: IonPicker] (val x: Self) extends AnyVal {
+  extension [Self <: IonPicker](x: Self) {
     
-    @scala.inline
-    def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
+    inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
+    inline def setAnimatedUndefined: Self = StObject.set(x, "animated", js.undefined)
     
-    @scala.inline
-    def setBackdropDismiss(value: Boolean): Self = StObject.set(x, "backdropDismiss", value.asInstanceOf[js.Any])
+    inline def setBackdropDismiss(value: Boolean): Self = StObject.set(x, "backdropDismiss", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackdropDismissUndefined: Self = StObject.set(x, "backdropDismiss", js.undefined)
+    inline def setBackdropDismissUndefined: Self = StObject.set(x, "backdropDismiss", js.undefined)
     
-    @scala.inline
-    def setButtons(value: js.Array[PickerButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: js.Array[PickerButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+    inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    @scala.inline
-    def setButtonsVarargs(value: PickerButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: PickerButton*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
-    @scala.inline
-    def setColumns(value: js.Array[PickerColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    inline def setColumns(value: js.Array[PickerColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+    inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
     
-    @scala.inline
-    def setColumnsVarargs(value: PickerColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
+    inline def setColumnsVarargs(value: PickerColumn*): Self = StObject.set(x, "columns", js.Array(value :_*))
     
-    @scala.inline
-    def setCssClass(value: String | js.Array[String]): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
+    inline def setCssClass(value: String | js.Array[String]): Self = StObject.set(x, "cssClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
+    inline def setCssClassUndefined: Self = StObject.set(x, "cssClass", js.undefined)
     
-    @scala.inline
-    def setCssClassVarargs(value: String*): Self = StObject.set(x, "cssClass", js.Array(value :_*))
+    inline def setCssClassVarargs(value: String*): Self = StObject.set(x, "cssClass", js.Array(value :_*))
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setEnterAnimation(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "enterAnimation", js.Any.fromFunction2(value))
+    inline def setEnterAnimation(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "enterAnimation", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEnterAnimationUndefined: Self = StObject.set(x, "enterAnimation", js.undefined)
+    inline def setEnterAnimationUndefined: Self = StObject.set(x, "enterAnimation", js.undefined)
     
-    @scala.inline
-    def setKeyboardClose(value: Boolean): Self = StObject.set(x, "keyboardClose", value.asInstanceOf[js.Any])
+    inline def setKeyboardClose(value: Boolean): Self = StObject.set(x, "keyboardClose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyboardCloseUndefined: Self = StObject.set(x, "keyboardClose", js.undefined)
+    inline def setKeyboardCloseUndefined: Self = StObject.set(x, "keyboardClose", js.undefined)
     
-    @scala.inline
-    def setLeaveAnimation(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "leaveAnimation", js.Any.fromFunction2(value))
+    inline def setLeaveAnimation(value: (/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any]) => Animation): Self = StObject.set(x, "leaveAnimation", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setLeaveAnimationUndefined: Self = StObject.set(x, "leaveAnimation", js.undefined)
+    inline def setLeaveAnimationUndefined: Self = StObject.set(x, "leaveAnimation", js.undefined)
     
-    @scala.inline
-    def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: ios | md): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setOnIonPickerDidDismiss(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onIonPickerDidDismiss", js.Any.fromFunction1(value))
+    inline def setOnIonPickerDidDismiss(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onIonPickerDidDismiss", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnIonPickerDidDismissUndefined: Self = StObject.set(x, "onIonPickerDidDismiss", js.undefined)
+    inline def setOnIonPickerDidDismissUndefined: Self = StObject.set(x, "onIonPickerDidDismiss", js.undefined)
     
-    @scala.inline
-    def setOnIonPickerDidPresent(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonPickerDidPresent", js.Any.fromFunction1(value))
+    inline def setOnIonPickerDidPresent(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonPickerDidPresent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnIonPickerDidPresentUndefined: Self = StObject.set(x, "onIonPickerDidPresent", js.undefined)
+    inline def setOnIonPickerDidPresentUndefined: Self = StObject.set(x, "onIonPickerDidPresent", js.undefined)
     
-    @scala.inline
-    def setOnIonPickerWillDismiss(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onIonPickerWillDismiss", js.Any.fromFunction1(value))
+    inline def setOnIonPickerWillDismiss(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onIonPickerWillDismiss", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnIonPickerWillDismissUndefined: Self = StObject.set(x, "onIonPickerWillDismiss", js.undefined)
+    inline def setOnIonPickerWillDismissUndefined: Self = StObject.set(x, "onIonPickerWillDismiss", js.undefined)
     
-    @scala.inline
-    def setOnIonPickerWillPresent(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonPickerWillPresent", js.Any.fromFunction1(value))
+    inline def setOnIonPickerWillPresent(value: /* event */ CustomEvent[Unit] => Unit): Self = StObject.set(x, "onIonPickerWillPresent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnIonPickerWillPresentUndefined: Self = StObject.set(x, "onIonPickerWillPresent", js.undefined)
+    inline def setOnIonPickerWillPresentUndefined: Self = StObject.set(x, "onIonPickerWillPresent", js.undefined)
     
-    @scala.inline
-    def setShowBackdrop(value: Boolean): Self = StObject.set(x, "showBackdrop", value.asInstanceOf[js.Any])
+    inline def setShowBackdrop(value: Boolean): Self = StObject.set(x, "showBackdrop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowBackdropUndefined: Self = StObject.set(x, "showBackdrop", js.undefined)
+    inline def setShowBackdropUndefined: Self = StObject.set(x, "showBackdrop", js.undefined)
   }
 }

@@ -66,9 +66,7 @@ object addressInputTestHelperMod {
   @js.native
   val PLACE_DETAILS_2: PlaceDetails = js.native
   
-  @scala.inline
-  def getOptionsText(driver: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOptionsText")(driver.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  inline def getOptionsText(driver: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOptionsText")(driver.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
-  @scala.inline
-  def waitForSingleOption(option: js.Any, driver: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForSingleOption")(option.asInstanceOf[js.Any], driver.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def waitForSingleOption(option: js.Any, driver: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForSingleOption")(option.asInstanceOf[js.Any], driver.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

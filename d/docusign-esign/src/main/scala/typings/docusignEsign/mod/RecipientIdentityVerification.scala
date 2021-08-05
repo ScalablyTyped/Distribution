@@ -16,28 +16,21 @@ trait RecipientIdentityVerification extends StObject {
 }
 object RecipientIdentityVerification {
   
-  @scala.inline
-  def apply(): RecipientIdentityVerification = {
+  inline def apply(): RecipientIdentityVerification = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecipientIdentityVerification]
   }
   
-  @scala.inline
-  implicit class RecipientIdentityVerificationMutableBuilder[Self <: RecipientIdentityVerification] (val x: Self) extends AnyVal {
+  extension [Self <: RecipientIdentityVerification](x: Self) {
     
-    @scala.inline
-    def setInputOptions(value: js.Array[RecipientIdentityInputOption]): Self = StObject.set(x, "inputOptions", value.asInstanceOf[js.Any])
+    inline def setInputOptions(value: js.Array[RecipientIdentityInputOption]): Self = StObject.set(x, "inputOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputOptionsUndefined: Self = StObject.set(x, "inputOptions", js.undefined)
+    inline def setInputOptionsUndefined: Self = StObject.set(x, "inputOptions", js.undefined)
     
-    @scala.inline
-    def setInputOptionsVarargs(value: RecipientIdentityInputOption*): Self = StObject.set(x, "inputOptions", js.Array(value :_*))
+    inline def setInputOptionsVarargs(value: RecipientIdentityInputOption*): Self = StObject.set(x, "inputOptions", js.Array(value :_*))
     
-    @scala.inline
-    def setWorkflowId(value: String): Self = StObject.set(x, "workflowId", value.asInstanceOf[js.Any])
+    inline def setWorkflowId(value: String): Self = StObject.set(x, "workflowId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkflowIdUndefined: Self = StObject.set(x, "workflowId", js.undefined)
+    inline def setWorkflowIdUndefined: Self = StObject.set(x, "workflowId", js.undefined)
   }
 }

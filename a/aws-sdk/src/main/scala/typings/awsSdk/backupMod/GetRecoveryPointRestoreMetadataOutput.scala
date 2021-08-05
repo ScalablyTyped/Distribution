@@ -23,31 +23,23 @@ trait GetRecoveryPointRestoreMetadataOutput extends StObject {
 }
 object GetRecoveryPointRestoreMetadataOutput {
   
-  @scala.inline
-  def apply(): GetRecoveryPointRestoreMetadataOutput = {
+  inline def apply(): GetRecoveryPointRestoreMetadataOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetRecoveryPointRestoreMetadataOutput]
   }
   
-  @scala.inline
-  implicit class GetRecoveryPointRestoreMetadataOutputMutableBuilder[Self <: GetRecoveryPointRestoreMetadataOutput] (val x: Self) extends AnyVal {
+  extension [Self <: GetRecoveryPointRestoreMetadataOutput](x: Self) {
     
-    @scala.inline
-    def setBackupVaultArn(value: ARN): Self = StObject.set(x, "BackupVaultArn", value.asInstanceOf[js.Any])
+    inline def setBackupVaultArn(value: ARN): Self = StObject.set(x, "BackupVaultArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackupVaultArnUndefined: Self = StObject.set(x, "BackupVaultArn", js.undefined)
+    inline def setBackupVaultArnUndefined: Self = StObject.set(x, "BackupVaultArn", js.undefined)
     
-    @scala.inline
-    def setRecoveryPointArn(value: ARN): Self = StObject.set(x, "RecoveryPointArn", value.asInstanceOf[js.Any])
+    inline def setRecoveryPointArn(value: ARN): Self = StObject.set(x, "RecoveryPointArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecoveryPointArnUndefined: Self = StObject.set(x, "RecoveryPointArn", js.undefined)
+    inline def setRecoveryPointArnUndefined: Self = StObject.set(x, "RecoveryPointArn", js.undefined)
     
-    @scala.inline
-    def setRestoreMetadata(value: Metadata): Self = StObject.set(x, "RestoreMetadata", value.asInstanceOf[js.Any])
+    inline def setRestoreMetadata(value: Metadata): Self = StObject.set(x, "RestoreMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestoreMetadataUndefined: Self = StObject.set(x, "RestoreMetadata", js.undefined)
+    inline def setRestoreMetadataUndefined: Self = StObject.set(x, "RestoreMetadata", js.undefined)
   }
 }

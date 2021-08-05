@@ -10,19 +10,15 @@ trait Center extends StObject {
 }
 object Center {
   
-  @scala.inline
-  def apply(): Center = {
+  inline def apply(): Center = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Center]
   }
   
-  @scala.inline
-  implicit class CenterMutableBuilder[Self <: Center] (val x: Self) extends AnyVal {
+  extension [Self <: Center](x: Self) {
     
-    @scala.inline
-    def setCenter(value: Boolean): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
+    inline def setCenter(value: Boolean): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
+    inline def setCenterUndefined: Self = StObject.set(x, "center", js.undefined)
   }
 }

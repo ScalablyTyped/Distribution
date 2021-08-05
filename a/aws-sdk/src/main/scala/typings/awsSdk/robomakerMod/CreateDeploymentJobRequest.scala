@@ -33,8 +33,7 @@ trait CreateDeploymentJobRequest extends StObject {
 }
 object CreateDeploymentJobRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     clientRequestToken: ClientRequestToken,
     deploymentApplicationConfigs: DeploymentApplicationConfigs,
     fleet: Arn
@@ -43,31 +42,22 @@ object CreateDeploymentJobRequest {
     __obj.asInstanceOf[CreateDeploymentJobRequest]
   }
   
-  @scala.inline
-  implicit class CreateDeploymentJobRequestMutableBuilder[Self <: CreateDeploymentJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDeploymentJobRequest](x: Self) {
     
-    @scala.inline
-    def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
+    inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentApplicationConfigs(value: DeploymentApplicationConfigs): Self = StObject.set(x, "deploymentApplicationConfigs", value.asInstanceOf[js.Any])
+    inline def setDeploymentApplicationConfigs(value: DeploymentApplicationConfigs): Self = StObject.set(x, "deploymentApplicationConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentApplicationConfigsVarargs(value: DeploymentApplicationConfig*): Self = StObject.set(x, "deploymentApplicationConfigs", js.Array(value :_*))
+    inline def setDeploymentApplicationConfigsVarargs(value: DeploymentApplicationConfig*): Self = StObject.set(x, "deploymentApplicationConfigs", js.Array(value :_*))
     
-    @scala.inline
-    def setDeploymentConfig(value: DeploymentConfig): Self = StObject.set(x, "deploymentConfig", value.asInstanceOf[js.Any])
+    inline def setDeploymentConfig(value: DeploymentConfig): Self = StObject.set(x, "deploymentConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentConfigUndefined: Self = StObject.set(x, "deploymentConfig", js.undefined)
+    inline def setDeploymentConfigUndefined: Self = StObject.set(x, "deploymentConfig", js.undefined)
     
-    @scala.inline
-    def setFleet(value: Arn): Self = StObject.set(x, "fleet", value.asInstanceOf[js.Any])
+    inline def setFleet(value: Arn): Self = StObject.set(x, "fleet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagMap): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
   }
 }

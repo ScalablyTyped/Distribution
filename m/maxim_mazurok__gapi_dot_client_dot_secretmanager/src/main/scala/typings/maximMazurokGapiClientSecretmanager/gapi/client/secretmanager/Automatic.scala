@@ -14,19 +14,15 @@ trait Automatic extends StObject {
 }
 object Automatic {
   
-  @scala.inline
-  def apply(): Automatic = {
+  inline def apply(): Automatic = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Automatic]
   }
   
-  @scala.inline
-  implicit class AutomaticMutableBuilder[Self <: Automatic] (val x: Self) extends AnyVal {
+  extension [Self <: Automatic](x: Self) {
     
-    @scala.inline
-    def setCustomerManagedEncryption(value: CustomerManagedEncryption): Self = StObject.set(x, "customerManagedEncryption", value.asInstanceOf[js.Any])
+    inline def setCustomerManagedEncryption(value: CustomerManagedEncryption): Self = StObject.set(x, "customerManagedEncryption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerManagedEncryptionUndefined: Self = StObject.set(x, "customerManagedEncryption", js.undefined)
+    inline def setCustomerManagedEncryptionUndefined: Self = StObject.set(x, "customerManagedEncryption", js.undefined)
   }
 }

@@ -11,16 +11,13 @@ trait `0` extends StObject {
 }
 object `0` {
   
-  @scala.inline
-  def apply(min: Date | String): `0` = {
+  inline def apply(min: Date | String): `0` = {
     val __obj = js.Dynamic.literal(min = min.asInstanceOf[js.Any])
     __obj.asInstanceOf[`0`]
   }
   
-  @scala.inline
-  implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+  extension [Self <: `0`](x: Self) {
     
-    @scala.inline
-    def setMin(value: Date | String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Date | String): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
   }
 }

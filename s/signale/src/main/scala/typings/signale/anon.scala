@@ -18,23 +18,18 @@ object anon {
   }
   object Label {
     
-    @scala.inline
-    def apply(label: String): Label = {
+    inline def apply(label: String): Label = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[Label]
     }
     
-    @scala.inline
-    implicit class LabelMutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
+    extension [Self <: Label](x: Self) {
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpan(value: Double): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
+      inline def setSpan(value: Double): Self = StObject.set(x, "span", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpanUndefined: Self = StObject.set(x, "span", js.undefined)
+      inline def setSpanUndefined: Self = StObject.set(x, "span", js.undefined)
     }
   }
   
@@ -123,8 +118,7 @@ object anon {
   }
   object RecordDefaultMethodsLogge {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       await: LoggerFunc,
       complete: LoggerFunc,
       debug: LoggerFunc,
@@ -146,56 +140,39 @@ object anon {
       __obj.asInstanceOf[RecordDefaultMethodsLogge]
     }
     
-    @scala.inline
-    implicit class RecordDefaultMethodsLoggeMutableBuilder[Self <: RecordDefaultMethodsLogge] (val x: Self) extends AnyVal {
+    extension [Self <: RecordDefaultMethodsLogge](x: Self) {
       
-      @scala.inline
-      def setAwait(value: LoggerFunc): Self = StObject.set(x, "await", value.asInstanceOf[js.Any])
+      inline def setAwait(value: LoggerFunc): Self = StObject.set(x, "await", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComplete(value: LoggerFunc): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      inline def setComplete(value: LoggerFunc): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebug(value: LoggerFunc): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: LoggerFunc): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: LoggerFunc): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: LoggerFunc): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFatal(value: LoggerFunc): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
+      inline def setFatal(value: LoggerFunc): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFav(value: LoggerFunc): Self = StObject.set(x, "fav", value.asInstanceOf[js.Any])
+      inline def setFav(value: LoggerFunc): Self = StObject.set(x, "fav", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInfo(value: LoggerFunc): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: LoggerFunc): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLog(value: LoggerFunc): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      inline def setLog(value: LoggerFunc): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNote(value: LoggerFunc): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
+      inline def setNote(value: LoggerFunc): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPause(value: LoggerFunc): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
+      inline def setPause(value: LoggerFunc): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPending(value: LoggerFunc): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+      inline def setPending(value: LoggerFunc): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStar(value: LoggerFunc): Self = StObject.set(x, "star", value.asInstanceOf[js.Any])
+      inline def setStar(value: LoggerFunc): Self = StObject.set(x, "star", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: LoggerFunc): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: LoggerFunc): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccess(value: LoggerFunc): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      inline def setSuccess(value: LoggerFunc): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarn(value: LoggerFunc): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+      inline def setWarn(value: LoggerFunc): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWatch(value: LoggerFunc): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
+      inline def setWatch(value: LoggerFunc): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
     }
   }
   

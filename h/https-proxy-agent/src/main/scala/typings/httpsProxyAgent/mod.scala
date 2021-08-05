@@ -10,10 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(opts: String): default = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[default]
-  @scala.inline
-  def apply(opts: HttpsProxyAgentOptions): default = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[default]
+  inline def apply(opts: String): default = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[default]
+  inline def apply(opts: HttpsProxyAgentOptions): default = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[default]
   
   @JSImport("https-proxy-agent", JSImport.Namespace)
   @js.native
@@ -46,53 +44,38 @@ object mod {
   }
   object BaseHttpsProxyAgentOptions {
     
-    @scala.inline
-    def apply(): BaseHttpsProxyAgentOptions = {
+    inline def apply(): BaseHttpsProxyAgentOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BaseHttpsProxyAgentOptions]
     }
     
-    @scala.inline
-    implicit class BaseHttpsProxyAgentOptionsMutableBuilder[Self <: BaseHttpsProxyAgentOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BaseHttpsProxyAgentOptions](x: Self) {
       
-      @scala.inline
-      def setHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      inline def setHeaders(value: OutgoingHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+      inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostNull: Self = StObject.set(x, "host", null)
+      inline def setHostNull: Self = StObject.set(x, "host", null)
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathNull: Self = StObject.set(x, "path", null)
+      inline def setPathNull: Self = StObject.set(x, "path", null)
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setPort(value: String | Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: String | Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPortNull: Self = StObject.set(x, "port", null)
+      inline def setPortNull: Self = StObject.set(x, "port", null)
       
-      @scala.inline
-      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
       
-      @scala.inline
-      def setSecureProxy(value: Boolean): Self = StObject.set(x, "secureProxy", value.asInstanceOf[js.Any])
+      inline def setSecureProxy(value: Boolean): Self = StObject.set(x, "secureProxy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecureProxyUndefined: Self = StObject.set(x, "secureProxy", js.undefined)
+      inline def setSecureProxyUndefined: Self = StObject.set(x, "secureProxy", js.undefined)
     }
   }
   
@@ -103,8 +86,7 @@ object mod {
        with BaseHttpsProxyAgentOptions
   object HttpsProxyAgentOptions {
     
-    @scala.inline
-    def apply(): HttpsProxyAgentOptions = {
+    inline def apply(): HttpsProxyAgentOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HttpsProxyAgentOptions]
     }

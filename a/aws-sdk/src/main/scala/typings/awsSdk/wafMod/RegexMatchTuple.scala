@@ -23,22 +23,17 @@ trait RegexMatchTuple extends StObject {
 }
 object RegexMatchTuple {
   
-  @scala.inline
-  def apply(FieldToMatch: FieldToMatch, RegexPatternSetId: ResourceId, TextTransformation: TextTransformation): RegexMatchTuple = {
+  inline def apply(FieldToMatch: FieldToMatch, RegexPatternSetId: ResourceId, TextTransformation: TextTransformation): RegexMatchTuple = {
     val __obj = js.Dynamic.literal(FieldToMatch = FieldToMatch.asInstanceOf[js.Any], RegexPatternSetId = RegexPatternSetId.asInstanceOf[js.Any], TextTransformation = TextTransformation.asInstanceOf[js.Any])
     __obj.asInstanceOf[RegexMatchTuple]
   }
   
-  @scala.inline
-  implicit class RegexMatchTupleMutableBuilder[Self <: RegexMatchTuple] (val x: Self) extends AnyVal {
+  extension [Self <: RegexMatchTuple](x: Self) {
     
-    @scala.inline
-    def setFieldToMatch(value: FieldToMatch): Self = StObject.set(x, "FieldToMatch", value.asInstanceOf[js.Any])
+    inline def setFieldToMatch(value: FieldToMatch): Self = StObject.set(x, "FieldToMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegexPatternSetId(value: ResourceId): Self = StObject.set(x, "RegexPatternSetId", value.asInstanceOf[js.Any])
+    inline def setRegexPatternSetId(value: ResourceId): Self = StObject.set(x, "RegexPatternSetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextTransformation(value: TextTransformation): Self = StObject.set(x, "TextTransformation", value.asInstanceOf[js.Any])
+    inline def setTextTransformation(value: TextTransformation): Self = StObject.set(x, "TextTransformation", value.asInstanceOf[js.Any])
   }
 }

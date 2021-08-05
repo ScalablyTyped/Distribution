@@ -9,8 +9,7 @@ trait AutomationProviderRequestedEventArgs
      with IAutomationProviderRequestedEventArgs
 object AutomationProviderRequestedEventArgs {
   
-  @scala.inline
-  def apply(automationProvider: js.Any, handled: Boolean): AutomationProviderRequestedEventArgs = {
+  inline def apply(automationProvider: js.Any, handled: Boolean): AutomationProviderRequestedEventArgs = {
     val __obj = js.Dynamic.literal(automationProvider = automationProvider.asInstanceOf[js.Any], handled = handled.asInstanceOf[js.Any])
     __obj.asInstanceOf[AutomationProviderRequestedEventArgs]
   }

@@ -10,16 +10,13 @@ trait UnpackAttrs extends StObject {
 }
 object UnpackAttrs {
   
-  @scala.inline
-  def apply(axis: Double): UnpackAttrs = {
+  inline def apply(axis: Double): UnpackAttrs = {
     val __obj = js.Dynamic.literal(axis = axis.asInstanceOf[js.Any])
     __obj.asInstanceOf[UnpackAttrs]
   }
   
-  @scala.inline
-  implicit class UnpackAttrsMutableBuilder[Self <: UnpackAttrs] (val x: Self) extends AnyVal {
+  extension [Self <: UnpackAttrs](x: Self) {
     
-    @scala.inline
-    def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
+    inline def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
   }
 }

@@ -18,25 +18,19 @@ trait UpdateAuthorizerResponse extends StObject {
 }
 object UpdateAuthorizerResponse {
   
-  @scala.inline
-  def apply(): UpdateAuthorizerResponse = {
+  inline def apply(): UpdateAuthorizerResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateAuthorizerResponse]
   }
   
-  @scala.inline
-  implicit class UpdateAuthorizerResponseMutableBuilder[Self <: UpdateAuthorizerResponse] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateAuthorizerResponse](x: Self) {
     
-    @scala.inline
-    def setAuthorizerArn(value: AuthorizerArn): Self = StObject.set(x, "authorizerArn", value.asInstanceOf[js.Any])
+    inline def setAuthorizerArn(value: AuthorizerArn): Self = StObject.set(x, "authorizerArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizerArnUndefined: Self = StObject.set(x, "authorizerArn", js.undefined)
+    inline def setAuthorizerArnUndefined: Self = StObject.set(x, "authorizerArn", js.undefined)
     
-    @scala.inline
-    def setAuthorizerName(value: AuthorizerName): Self = StObject.set(x, "authorizerName", value.asInstanceOf[js.Any])
+    inline def setAuthorizerName(value: AuthorizerName): Self = StObject.set(x, "authorizerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizerNameUndefined: Self = StObject.set(x, "authorizerName", js.undefined)
+    inline def setAuthorizerNameUndefined: Self = StObject.set(x, "authorizerName", js.undefined)
   }
 }

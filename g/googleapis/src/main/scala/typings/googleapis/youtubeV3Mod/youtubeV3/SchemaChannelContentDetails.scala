@@ -14,19 +14,15 @@ trait SchemaChannelContentDetails extends StObject {
 }
 object SchemaChannelContentDetails {
   
-  @scala.inline
-  def apply(): SchemaChannelContentDetails = {
+  inline def apply(): SchemaChannelContentDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaChannelContentDetails]
   }
   
-  @scala.inline
-  implicit class SchemaChannelContentDetailsMutableBuilder[Self <: SchemaChannelContentDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaChannelContentDetails](x: Self) {
     
-    @scala.inline
-    def setRelatedPlaylists(value: Favorites): Self = StObject.set(x, "relatedPlaylists", value.asInstanceOf[js.Any])
+    inline def setRelatedPlaylists(value: Favorites): Self = StObject.set(x, "relatedPlaylists", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedPlaylistsUndefined: Self = StObject.set(x, "relatedPlaylists", js.undefined)
+    inline def setRelatedPlaylistsUndefined: Self = StObject.set(x, "relatedPlaylists", js.undefined)
   }
 }

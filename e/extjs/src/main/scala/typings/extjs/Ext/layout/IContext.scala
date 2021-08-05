@@ -90,83 +90,59 @@ trait IContext
 }
 object IContext {
   
-  @scala.inline
-  def apply(): IContext = {
+  inline def apply(): IContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IContext]
   }
   
-  @scala.inline
-  implicit class IContextMutableBuilder[Self <: IContext] (val x: Self) extends AnyVal {
+  extension [Self <: IContext](x: Self) {
     
-    @scala.inline
-    def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+    inline def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFlushUndefined: Self = StObject.set(x, "flush", js.undefined)
+    inline def setFlushUndefined: Self = StObject.set(x, "flush", js.undefined)
     
-    @scala.inline
-    def setGetCmp(value: /* cmp */ js.UndefOr[IComponent] => Unit): Self = StObject.set(x, "getCmp", js.Any.fromFunction1(value))
+    inline def setGetCmp(value: /* cmp */ js.UndefOr[IComponent] => Unit): Self = StObject.set(x, "getCmp", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCmpUndefined: Self = StObject.set(x, "getCmp", js.undefined)
+    inline def setGetCmpUndefined: Self = StObject.set(x, "getCmp", js.undefined)
     
-    @scala.inline
-    def setGetEl(value: (/* parent */ js.UndefOr[IContextItem], /* el */ js.UndefOr[IElement]) => Unit): Self = StObject.set(x, "getEl", js.Any.fromFunction2(value))
+    inline def setGetEl(value: (/* parent */ js.UndefOr[IContextItem], /* el */ js.UndefOr[IElement]) => Unit): Self = StObject.set(x, "getEl", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetElUndefined: Self = StObject.set(x, "getEl", js.undefined)
+    inline def setGetElUndefined: Self = StObject.set(x, "getEl", js.undefined)
     
-    @scala.inline
-    def setInvalidate(value: (/* components */ js.UndefOr[js.Any], /* full */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "invalidate", js.Any.fromFunction2(value))
+    inline def setInvalidate(value: (/* components */ js.UndefOr[js.Any], /* full */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "invalidate", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setInvalidateUndefined: Self = StObject.set(x, "invalidate", js.undefined)
+    inline def setInvalidateUndefined: Self = StObject.set(x, "invalidate", js.undefined)
     
-    @scala.inline
-    def setLayoutQueue(value: IQueue): Self = StObject.set(x, "layoutQueue", value.asInstanceOf[js.Any])
+    inline def setLayoutQueue(value: IQueue): Self = StObject.set(x, "layoutQueue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayoutQueueUndefined: Self = StObject.set(x, "layoutQueue", js.undefined)
+    inline def setLayoutQueueUndefined: Self = StObject.set(x, "layoutQueue", js.undefined)
     
-    @scala.inline
-    def setRemoveEl(value: (/* parent */ js.UndefOr[IContextItem], /* el */ js.UndefOr[IElement]) => Unit): Self = StObject.set(x, "removeEl", js.Any.fromFunction2(value))
+    inline def setRemoveEl(value: (/* parent */ js.UndefOr[IContextItem], /* el */ js.UndefOr[IElement]) => Unit): Self = StObject.set(x, "removeEl", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemoveElUndefined: Self = StObject.set(x, "removeEl", js.undefined)
+    inline def setRemoveElUndefined: Self = StObject.set(x, "removeEl", js.undefined)
     
-    @scala.inline
-    def setResetLayout(
+    inline def setResetLayout(
       value: (/* layout */ js.UndefOr[js.Any], /* ownerContext */ js.UndefOr[js.Any], /* firstTime */ js.UndefOr[js.Any]) => Unit
     ): Self = StObject.set(x, "resetLayout", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setResetLayoutUndefined: Self = StObject.set(x, "resetLayout", js.undefined)
+    inline def setResetLayoutUndefined: Self = StObject.set(x, "resetLayout", js.undefined)
     
-    @scala.inline
-    def setRun(value: () => Boolean): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
+    inline def setRun(value: () => Boolean): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRunCycle(value: () => Boolean): Self = StObject.set(x, "runCycle", js.Any.fromFunction0(value))
+    inline def setRunCycle(value: () => Boolean): Self = StObject.set(x, "runCycle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRunCycleUndefined: Self = StObject.set(x, "runCycle", js.undefined)
+    inline def setRunCycleUndefined: Self = StObject.set(x, "runCycle", js.undefined)
     
-    @scala.inline
-    def setRunUndefined: Self = StObject.set(x, "run", js.undefined)
+    inline def setRunUndefined: Self = StObject.set(x, "run", js.undefined)
     
-    @scala.inline
-    def setSetItemSize(
+    inline def setSetItemSize(
       value: (/* items */ js.UndefOr[js.Any], /* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double]) => Unit
     ): Self = StObject.set(x, "setItemSize", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSetItemSizeUndefined: Self = StObject.set(x, "setItemSize", js.undefined)
+    inline def setSetItemSizeUndefined: Self = StObject.set(x, "setItemSize", js.undefined)
     
-    @scala.inline
-    def setState(value: Double): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: Double): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

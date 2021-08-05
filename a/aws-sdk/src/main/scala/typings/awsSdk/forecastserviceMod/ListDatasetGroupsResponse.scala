@@ -18,28 +18,21 @@ trait ListDatasetGroupsResponse extends StObject {
 }
 object ListDatasetGroupsResponse {
   
-  @scala.inline
-  def apply(): ListDatasetGroupsResponse = {
+  inline def apply(): ListDatasetGroupsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListDatasetGroupsResponse]
   }
   
-  @scala.inline
-  implicit class ListDatasetGroupsResponseMutableBuilder[Self <: ListDatasetGroupsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListDatasetGroupsResponse](x: Self) {
     
-    @scala.inline
-    def setDatasetGroups(value: DatasetGroups): Self = StObject.set(x, "DatasetGroups", value.asInstanceOf[js.Any])
+    inline def setDatasetGroups(value: DatasetGroups): Self = StObject.set(x, "DatasetGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetGroupsUndefined: Self = StObject.set(x, "DatasetGroups", js.undefined)
+    inline def setDatasetGroupsUndefined: Self = StObject.set(x, "DatasetGroups", js.undefined)
     
-    @scala.inline
-    def setDatasetGroupsVarargs(value: DatasetGroupSummary*): Self = StObject.set(x, "DatasetGroups", js.Array(value :_*))
+    inline def setDatasetGroupsVarargs(value: DatasetGroupSummary*): Self = StObject.set(x, "DatasetGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

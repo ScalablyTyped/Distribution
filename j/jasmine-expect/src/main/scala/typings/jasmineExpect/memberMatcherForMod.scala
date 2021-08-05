@@ -10,6 +10,5 @@ object memberMatcherForMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def memberMatcherFor(toBeX: js.Any): js.Function2[/* key */ js.Any, /* actual */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("memberMatcherFor")(toBeX.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* key */ js.Any, /* actual */ js.Any, js.Any]]
+  inline def memberMatcherFor(toBeX: js.Any): js.Function2[/* key */ js.Any, /* actual */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("memberMatcherFor")(toBeX.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* key */ js.Any, /* actual */ js.Any, js.Any]]
 }

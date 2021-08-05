@@ -23,52 +23,37 @@ trait Dictindex
 }
 object Dictindex {
   
-  @scala.inline
-  def apply(): Dictindex = {
+  inline def apply(): Dictindex = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Dictindex]
   }
   
-  @scala.inline
-  implicit class DictindexMutableBuilder[Self <: Dictindex] (val x: Self) extends AnyVal {
+  extension [Self <: Dictindex](x: Self) {
     
-    @scala.inline
-    def setActiveRouteAutoSelection(value: Boolean): Self = StObject.set(x, "activeRouteAutoSelection", value.asInstanceOf[js.Any])
+    inline def setActiveRouteAutoSelection(value: Boolean): Self = StObject.set(x, "activeRouteAutoSelection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveRouteAutoSelectionUndefined: Self = StObject.set(x, "activeRouteAutoSelection", js.undefined)
+    inline def setActiveRouteAutoSelectionUndefined: Self = StObject.set(x, "activeRouteAutoSelection", js.undefined)
     
-    @scala.inline
-    def setBoundsAutoApply(value: Boolean): Self = StObject.set(x, "boundsAutoApply", value.asInstanceOf[js.Any])
+    inline def setBoundsAutoApply(value: Boolean): Self = StObject.set(x, "boundsAutoApply", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundsAutoApplyUndefined: Self = StObject.set(x, "boundsAutoApply", js.undefined)
+    inline def setBoundsAutoApplyUndefined: Self = StObject.set(x, "boundsAutoApply", js.undefined)
     
-    @scala.inline
-    def setDragUpdateInterval(value: String | Double): Self = StObject.set(x, "dragUpdateInterval", value.asInstanceOf[js.Any])
+    inline def setDragUpdateInterval(value: String | Double): Self = StObject.set(x, "dragUpdateInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragUpdateIntervalUndefined: Self = StObject.set(x, "dragUpdateInterval", js.undefined)
+    inline def setDragUpdateIntervalUndefined: Self = StObject.set(x, "dragUpdateInterval", js.undefined)
     
-    @scala.inline
-    def setPreventDragUpdate(value: Boolean): Self = StObject.set(x, "preventDragUpdate", value.asInstanceOf[js.Any])
+    inline def setPreventDragUpdate(value: Boolean): Self = StObject.set(x, "preventDragUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreventDragUpdateUndefined: Self = StObject.set(x, "preventDragUpdate", js.undefined)
+    inline def setPreventDragUpdateUndefined: Self = StObject.set(x, "preventDragUpdate", js.undefined)
     
-    @scala.inline
-    def setUseMapMargin(value: Boolean): Self = StObject.set(x, "useMapMargin", value.asInstanceOf[js.Any])
+    inline def setUseMapMargin(value: Boolean): Self = StObject.set(x, "useMapMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseMapMarginUndefined: Self = StObject.set(x, "useMapMargin", js.undefined)
+    inline def setUseMapMarginUndefined: Self = StObject.set(x, "useMapMargin", js.undefined)
     
-    @scala.inline
-    def setZoomMargin(value: (js.Array[js.Array[Double] | Double]) | Double): Self = StObject.set(x, "zoomMargin", value.asInstanceOf[js.Any])
+    inline def setZoomMargin(value: (js.Array[js.Array[Double] | Double]) | Double): Self = StObject.set(x, "zoomMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZoomMarginUndefined: Self = StObject.set(x, "zoomMargin", js.undefined)
+    inline def setZoomMarginUndefined: Self = StObject.set(x, "zoomMargin", js.undefined)
     
-    @scala.inline
-    def setZoomMarginVarargs(value: (js.Array[Double] | Double)*): Self = StObject.set(x, "zoomMargin", js.Array(value :_*))
+    inline def setZoomMarginVarargs(value: (js.Array[Double] | Double)*): Self = StObject.set(x, "zoomMargin", js.Array(value :_*))
   }
 }

@@ -18,38 +18,28 @@ object anon {
   }
   object OnProgress {
     
-    @scala.inline
-    def apply(): OnProgress = {
+    inline def apply(): OnProgress = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OnProgress]
     }
     
-    @scala.inline
-    implicit class OnProgressMutableBuilder[Self <: OnProgress] (val x: Self) extends AnyVal {
+    extension [Self <: OnProgress](x: Self) {
       
-      @scala.inline
-      def setOnProgress(value: js.Any): Self = StObject.set(x, "onProgress", value.asInstanceOf[js.Any])
+      inline def setOnProgress(value: js.Any): Self = StObject.set(x, "onProgress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
+      inline def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
       
-      @scala.inline
-      def setOnStart(value: js.Any): Self = StObject.set(x, "onStart", value.asInstanceOf[js.Any])
+      inline def setOnStart(value: js.Any): Self = StObject.set(x, "onStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
+      inline def setOnStartUndefined: Self = StObject.set(x, "onStart", js.undefined)
       
-      @scala.inline
-      def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      inline def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
+      inline def setOutputUndefined: Self = StObject.set(x, "output", js.undefined)
       
-      @scala.inline
-      def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+      inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
+      inline def setVerboseUndefined: Self = StObject.set(x, "verbose", js.undefined)
     }
   }
 }

@@ -29,43 +29,31 @@ trait CreateClassifierParams extends StObject {
 }
 object CreateClassifierParams {
   
-  @scala.inline
-  def apply(name: String, positive_examples: Map[String, ReadableStream | FileObject | Buffer]): CreateClassifierParams = {
+  inline def apply(name: String, positive_examples: Map[String, ReadableStream | FileObject | Buffer]): CreateClassifierParams = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], positive_examples = positive_examples.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateClassifierParams]
   }
   
-  @scala.inline
-  implicit class CreateClassifierParamsMutableBuilder[Self <: CreateClassifierParams] (val x: Self) extends AnyVal {
+  extension [Self <: CreateClassifierParams](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegative_examples(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "negative_examples", value.asInstanceOf[js.Any])
+    inline def setNegative_examples(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "negative_examples", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegative_examplesUndefined: Self = StObject.set(x, "negative_examples", js.undefined)
+    inline def setNegative_examplesUndefined: Self = StObject.set(x, "negative_examples", js.undefined)
     
-    @scala.inline
-    def setNegative_examples_filename(value: String): Self = StObject.set(x, "negative_examples_filename", value.asInstanceOf[js.Any])
+    inline def setNegative_examples_filename(value: String): Self = StObject.set(x, "negative_examples_filename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNegative_examples_filenameUndefined: Self = StObject.set(x, "negative_examples_filename", js.undefined)
+    inline def setNegative_examples_filenameUndefined: Self = StObject.set(x, "negative_examples_filename", js.undefined)
     
-    @scala.inline
-    def setPositive_examples(value: Map[String, ReadableStream | FileObject | Buffer]): Self = StObject.set(x, "positive_examples", value.asInstanceOf[js.Any])
+    inline def setPositive_examples(value: Map[String, ReadableStream | FileObject | Buffer]): Self = StObject.set(x, "positive_examples", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
   }
 }

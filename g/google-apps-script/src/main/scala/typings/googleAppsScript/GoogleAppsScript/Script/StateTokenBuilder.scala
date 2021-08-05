@@ -34,8 +34,7 @@ trait StateTokenBuilder extends StObject {
 }
 object StateTokenBuilder {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createToken: () => String,
     withArgument: (String, String) => StateTokenBuilder,
     withMethod: String => StateTokenBuilder,
@@ -45,19 +44,14 @@ object StateTokenBuilder {
     __obj.asInstanceOf[StateTokenBuilder]
   }
   
-  @scala.inline
-  implicit class StateTokenBuilderMutableBuilder[Self <: StateTokenBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: StateTokenBuilder](x: Self) {
     
-    @scala.inline
-    def setCreateToken(value: () => String): Self = StObject.set(x, "createToken", js.Any.fromFunction0(value))
+    inline def setCreateToken(value: () => String): Self = StObject.set(x, "createToken", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setWithArgument(value: (String, String) => StateTokenBuilder): Self = StObject.set(x, "withArgument", js.Any.fromFunction2(value))
+    inline def setWithArgument(value: (String, String) => StateTokenBuilder): Self = StObject.set(x, "withArgument", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setWithMethod(value: String => StateTokenBuilder): Self = StObject.set(x, "withMethod", js.Any.fromFunction1(value))
+    inline def setWithMethod(value: String => StateTokenBuilder): Self = StObject.set(x, "withMethod", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWithTimeout(value: Integer => StateTokenBuilder): Self = StObject.set(x, "withTimeout", js.Any.fromFunction1(value))
+    inline def setWithTimeout(value: Integer => StateTokenBuilder): Self = StObject.set(x, "withTimeout", js.Any.fromFunction1(value))
   }
 }

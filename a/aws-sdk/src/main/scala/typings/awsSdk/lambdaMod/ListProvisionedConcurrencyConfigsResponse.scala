@@ -18,28 +18,21 @@ trait ListProvisionedConcurrencyConfigsResponse extends StObject {
 }
 object ListProvisionedConcurrencyConfigsResponse {
   
-  @scala.inline
-  def apply(): ListProvisionedConcurrencyConfigsResponse = {
+  inline def apply(): ListProvisionedConcurrencyConfigsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListProvisionedConcurrencyConfigsResponse]
   }
   
-  @scala.inline
-  implicit class ListProvisionedConcurrencyConfigsResponseMutableBuilder[Self <: ListProvisionedConcurrencyConfigsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListProvisionedConcurrencyConfigsResponse](x: Self) {
     
-    @scala.inline
-    def setNextMarker(value: String): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: String): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
+    inline def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
     
-    @scala.inline
-    def setProvisionedConcurrencyConfigs(value: ProvisionedConcurrencyConfigList): Self = StObject.set(x, "ProvisionedConcurrencyConfigs", value.asInstanceOf[js.Any])
+    inline def setProvisionedConcurrencyConfigs(value: ProvisionedConcurrencyConfigList): Self = StObject.set(x, "ProvisionedConcurrencyConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionedConcurrencyConfigsUndefined: Self = StObject.set(x, "ProvisionedConcurrencyConfigs", js.undefined)
+    inline def setProvisionedConcurrencyConfigsUndefined: Self = StObject.set(x, "ProvisionedConcurrencyConfigs", js.undefined)
     
-    @scala.inline
-    def setProvisionedConcurrencyConfigsVarargs(value: ProvisionedConcurrencyConfigListItem*): Self = StObject.set(x, "ProvisionedConcurrencyConfigs", js.Array(value :_*))
+    inline def setProvisionedConcurrencyConfigsVarargs(value: ProvisionedConcurrencyConfigListItem*): Self = StObject.set(x, "ProvisionedConcurrencyConfigs", js.Array(value :_*))
   }
 }

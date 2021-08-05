@@ -17,17 +17,13 @@ object client {
   trait BusinessType extends StObject
   object BusinessType {
     
-    @scala.inline
-    def CROWDFUNDING: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CROWDFUNDING = "CROWDFUNDING".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CROWDFUNDING]
+    inline def CROWDFUNDING: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CROWDFUNDING = "CROWDFUNDING".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CROWDFUNDING]
     
-    @scala.inline
-    def FRANCHISE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FRANCHISE = "FRANCHISE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FRANCHISE]
+    inline def FRANCHISE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FRANCHISE = "FRANCHISE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FRANCHISE]
     
-    @scala.inline
-    def MARKETPLACE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MARKETPLACE = "MARKETPLACE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MARKETPLACE]
+    inline def MARKETPLACE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MARKETPLACE = "MARKETPLACE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MARKETPLACE]
     
-    @scala.inline
-    def OTHER: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OTHER = "OTHER".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OTHER]
+    inline def OTHER: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OTHER = "OTHER".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OTHER]
   }
   
   trait ClientData
@@ -116,8 +112,7 @@ object client {
   }
   object ClientData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AdminEmails: js.Array[String],
       BillingEmails: js.Array[String],
       ClientId: String,
@@ -142,68 +137,47 @@ object client {
       __obj.asInstanceOf[ClientData]
     }
     
-    @scala.inline
-    implicit class ClientDataMutableBuilder[Self <: ClientData] (val x: Self) extends AnyVal {
+    extension [Self <: ClientData](x: Self) {
       
-      @scala.inline
-      def setAdminEmails(value: js.Array[String]): Self = StObject.set(x, "AdminEmails", value.asInstanceOf[js.Any])
+      inline def setAdminEmails(value: js.Array[String]): Self = StObject.set(x, "AdminEmails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdminEmailsVarargs(value: String*): Self = StObject.set(x, "AdminEmails", js.Array(value :_*))
+      inline def setAdminEmailsVarargs(value: String*): Self = StObject.set(x, "AdminEmails", js.Array(value :_*))
       
-      @scala.inline
-      def setBillingEmails(value: js.Array[String]): Self = StObject.set(x, "BillingEmails", value.asInstanceOf[js.Any])
+      inline def setBillingEmails(value: js.Array[String]): Self = StObject.set(x, "BillingEmails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBillingEmailsVarargs(value: String*): Self = StObject.set(x, "BillingEmails", js.Array(value :_*))
+      inline def setBillingEmailsVarargs(value: String*): Self = StObject.set(x, "BillingEmails", js.Array(value :_*))
       
-      @scala.inline
-      def setClientId(value: String): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
+      inline def setClientId(value: String): Self = StObject.set(x, "ClientId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompanyReference(value: String): Self = StObject.set(x, "CompanyReference", value.asInstanceOf[js.Any])
+      inline def setCompanyReference(value: String): Self = StObject.set(x, "CompanyReference", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFraudEmails(value: js.Array[String]): Self = StObject.set(x, "FraudEmails", value.asInstanceOf[js.Any])
+      inline def setFraudEmails(value: js.Array[String]): Self = StObject.set(x, "FraudEmails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFraudEmailsVarargs(value: String*): Self = StObject.set(x, "FraudEmails", js.Array(value :_*))
+      inline def setFraudEmailsVarargs(value: String*): Self = StObject.set(x, "FraudEmails", js.Array(value :_*))
       
-      @scala.inline
-      def setHeadquartersAddress(value: AddressType): Self = StObject.set(x, "HeadquartersAddress", value.asInstanceOf[js.Any])
+      inline def setHeadquartersAddress(value: AddressType): Self = StObject.set(x, "HeadquartersAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogo(value: String): Self = StObject.set(x, "Logo", value.asInstanceOf[js.Any])
+      inline def setLogo(value: String): Self = StObject.set(x, "Logo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformCategorization(value: PlatformCategorization): Self = StObject.set(x, "PlatformCategorization", value.asInstanceOf[js.Any])
+      inline def setPlatformCategorization(value: PlatformCategorization): Self = StObject.set(x, "PlatformCategorization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformDescription(value: String): Self = StObject.set(x, "PlatformDescription", value.asInstanceOf[js.Any])
+      inline def setPlatformDescription(value: String): Self = StObject.set(x, "PlatformDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformURL(value: String): Self = StObject.set(x, "PlatformURL", value.asInstanceOf[js.Any])
+      inline def setPlatformURL(value: String): Self = StObject.set(x, "PlatformURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryButtonColour(value: String): Self = StObject.set(x, "PrimaryButtonColour", value.asInstanceOf[js.Any])
+      inline def setPrimaryButtonColour(value: String): Self = StObject.set(x, "PrimaryButtonColour", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryThemeColour(value: String): Self = StObject.set(x, "PrimaryThemeColour", value.asInstanceOf[js.Any])
+      inline def setPrimaryThemeColour(value: String): Self = StObject.set(x, "PrimaryThemeColour", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRegisteredName(value: String): Self = StObject.set(x, "RegisteredName", value.asInstanceOf[js.Any])
+      inline def setRegisteredName(value: String): Self = StObject.set(x, "RegisteredName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaxNumber(value: String): Self = StObject.set(x, "TaxNumber", value.asInstanceOf[js.Any])
+      inline def setTaxNumber(value: String): Self = StObject.set(x, "TaxNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTechEmails(value: js.Array[String]): Self = StObject.set(x, "TechEmails", value.asInstanceOf[js.Any])
+      inline def setTechEmails(value: js.Array[String]): Self = StObject.set(x, "TechEmails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTechEmailsVarargs(value: String*): Self = StObject.set(x, "TechEmails", js.Array(value :_*))
+      inline def setTechEmailsVarargs(value: String*): Self = StObject.set(x, "TechEmails", js.Array(value :_*))
     }
   }
   
@@ -215,20 +189,16 @@ object client {
   }
   object PlatformCategorization {
     
-    @scala.inline
-    def apply(BusinessType: BusinessType, Sector: Sector): PlatformCategorization = {
+    inline def apply(BusinessType: BusinessType, Sector: Sector): PlatformCategorization = {
       val __obj = js.Dynamic.literal(BusinessType = BusinessType.asInstanceOf[js.Any], Sector = Sector.asInstanceOf[js.Any])
       __obj.asInstanceOf[PlatformCategorization]
     }
     
-    @scala.inline
-    implicit class PlatformCategorizationMutableBuilder[Self <: PlatformCategorization] (val x: Self) extends AnyVal {
+    extension [Self <: PlatformCategorization](x: Self) {
       
-      @scala.inline
-      def setBusinessType(value: BusinessType): Self = StObject.set(x, "BusinessType", value.asInstanceOf[js.Any])
+      inline def setBusinessType(value: BusinessType): Self = StObject.set(x, "BusinessType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSector(value: Sector): Self = StObject.set(x, "Sector", value.asInstanceOf[js.Any])
+      inline def setSector(value: Sector): Self = StObject.set(x, "Sector", value.asInstanceOf[js.Any])
     }
   }
   
@@ -246,29 +216,21 @@ object client {
   trait PlatformType extends StObject
   object PlatformType {
     
-    @scala.inline
-    def CROWDFUNDING_DONATION: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CROWDFUNDING_DONATION = "CROWDFUNDING_DONATION".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CROWDFUNDING_DONATION]
+    inline def CROWDFUNDING_DONATION: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CROWDFUNDING_DONATION = "CROWDFUNDING_DONATION".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CROWDFUNDING_DONATION]
     
-    @scala.inline
-    def CROWDFUNDING_EQUITY: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CROWDFUNDING_EQUITY = "CROWDFUNDING_EQUITY".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CROWDFUNDING_EQUITY]
+    inline def CROWDFUNDING_EQUITY: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CROWDFUNDING_EQUITY = "CROWDFUNDING_EQUITY".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CROWDFUNDING_EQUITY]
     
-    @scala.inline
-    def CROWDFUNDING_LOAN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CROWDFUNDING_LOAN = "CROWDFUNDING_LOAN".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CROWDFUNDING_LOAN]
+    inline def CROWDFUNDING_LOAN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CROWDFUNDING_LOAN = "CROWDFUNDING_LOAN".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CROWDFUNDING_LOAN]
     
-    @scala.inline
-    def CROWDFUNDING_REWARD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CROWDFUNDING_REWARD = "CROWDFUNDING_REWARD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CROWDFUNDING_REWARD]
+    inline def CROWDFUNDING_REWARD: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CROWDFUNDING_REWARD = "CROWDFUNDING_REWARD".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.CROWDFUNDING_REWARD]
     
-    @scala.inline
-    def MARKETPLACE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MARKETPLACE = "MARKETPLACE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MARKETPLACE]
+    inline def MARKETPLACE: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MARKETPLACE = "MARKETPLACE".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MARKETPLACE]
     
-    @scala.inline
-    def NotSpecified: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NotSpecified = "NotSpecified".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NotSpecified]
+    inline def NotSpecified: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NotSpecified = "NotSpecified".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.NotSpecified]
     
-    @scala.inline
-    def OTHER: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OTHER = "OTHER".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OTHER]
+    inline def OTHER: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OTHER = "OTHER".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.OTHER]
     
-    @scala.inline
-    def P2P_PAYMENT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.P2P_PAYMENT = "P2P_PAYMENT".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.P2P_PAYMENT]
+    inline def P2P_PAYMENT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.P2P_PAYMENT = "P2P_PAYMENT".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.P2P_PAYMENT]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -286,35 +248,25 @@ object client {
   trait Sector extends StObject
   object Sector {
     
-    @scala.inline
-    def ART_MUSIC_ENTERTAINMENT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ART_MUSIC_ENTERTAINMENT = "ART_MUSIC_ENTERTAINMENT".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ART_MUSIC_ENTERTAINMENT]
+    inline def ART_MUSIC_ENTERTAINMENT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ART_MUSIC_ENTERTAINMENT = "ART_MUSIC_ENTERTAINMENT".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.ART_MUSIC_ENTERTAINMENT]
     
-    @scala.inline
-    def BEAUTY_COSMETICS_HEALTH: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BEAUTY_COSMETICS_HEALTH = "BEAUTY_COSMETICS_HEALTH".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BEAUTY_COSMETICS_HEALTH]
+    inline def BEAUTY_COSMETICS_HEALTH: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BEAUTY_COSMETICS_HEALTH = "BEAUTY_COSMETICS_HEALTH".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.BEAUTY_COSMETICS_HEALTH]
     
-    @scala.inline
-    def FOOD_WINE_RESTAURANTS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FOOD_WINE_RESTAURANTS = "FOOD_WINE_RESTAURANTS".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FOOD_WINE_RESTAURANTS]
+    inline def FOOD_WINE_RESTAURANTS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FOOD_WINE_RESTAURANTS = "FOOD_WINE_RESTAURANTS".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FOOD_WINE_RESTAURANTS]
     
-    @scala.inline
-    def FURNITURE_GARDEN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FURNITURE_GARDEN = "FURNITURE_GARDEN".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FURNITURE_GARDEN]
+    inline def FURNITURE_GARDEN: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FURNITURE_GARDEN = "FURNITURE_GARDEN".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.FURNITURE_GARDEN]
     
-    @scala.inline
-    def HOSPITALITY_TRAVEL_CORIDING: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.HOSPITALITY_TRAVEL_CORIDING = "HOSPITALITY_TRAVEL_CORIDING".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.HOSPITALITY_TRAVEL_CORIDING]
+    inline def HOSPITALITY_TRAVEL_CORIDING: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.HOSPITALITY_TRAVEL_CORIDING = "HOSPITALITY_TRAVEL_CORIDING".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.HOSPITALITY_TRAVEL_CORIDING]
     
-    @scala.inline
-    def RENTALS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.RENTALS = "RENTALS".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.RENTALS]
+    inline def RENTALS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.RENTALS = "RENTALS".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.RENTALS]
     
-    @scala.inline
-    def SERVICES_JOBBING_EDUCATION: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SERVICES_JOBBING_EDUCATION = "SERVICES_JOBBING_EDUCATION".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SERVICES_JOBBING_EDUCATION]
+    inline def SERVICES_JOBBING_EDUCATION: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SERVICES_JOBBING_EDUCATION = "SERVICES_JOBBING_EDUCATION".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SERVICES_JOBBING_EDUCATION]
     
-    @scala.inline
-    def SPORT_RECREATION_ACTIVITIES: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SPORT_RECREATION_ACTIVITIES = "SPORT_RECREATION_ACTIVITIES".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SPORT_RECREATION_ACTIVITIES]
+    inline def SPORT_RECREATION_ACTIVITIES: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SPORT_RECREATION_ACTIVITIES = "SPORT_RECREATION_ACTIVITIES".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.SPORT_RECREATION_ACTIVITIES]
     
-    @scala.inline
-    def STORES_FASHION_ACCESSORIES_OBJECTS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.STORES_FASHION_ACCESSORIES_OBJECTS = "STORES_FASHION_ACCESSORIES_OBJECTS".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.STORES_FASHION_ACCESSORIES_OBJECTS]
+    inline def STORES_FASHION_ACCESSORIES_OBJECTS: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.STORES_FASHION_ACCESSORIES_OBJECTS = "STORES_FASHION_ACCESSORIES_OBJECTS".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.STORES_FASHION_ACCESSORIES_OBJECTS]
     
-    @scala.inline
-    def TICKETING: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TICKETING = "TICKETING".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TICKETING]
+    inline def TICKETING: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TICKETING = "TICKETING".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.TICKETING]
   }
   
   trait UpdateClient extends StObject {
@@ -376,92 +328,64 @@ object client {
   }
   object UpdateClient {
     
-    @scala.inline
-    def apply(): UpdateClient = {
+    inline def apply(): UpdateClient = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UpdateClient]
     }
     
-    @scala.inline
-    implicit class UpdateClientMutableBuilder[Self <: UpdateClient] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateClient](x: Self) {
       
-      @scala.inline
-      def setAdminEmails(value: js.Array[String]): Self = StObject.set(x, "AdminEmails", value.asInstanceOf[js.Any])
+      inline def setAdminEmails(value: js.Array[String]): Self = StObject.set(x, "AdminEmails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAdminEmailsUndefined: Self = StObject.set(x, "AdminEmails", js.undefined)
+      inline def setAdminEmailsUndefined: Self = StObject.set(x, "AdminEmails", js.undefined)
       
-      @scala.inline
-      def setAdminEmailsVarargs(value: String*): Self = StObject.set(x, "AdminEmails", js.Array(value :_*))
+      inline def setAdminEmailsVarargs(value: String*): Self = StObject.set(x, "AdminEmails", js.Array(value :_*))
       
-      @scala.inline
-      def setBillingEmails(value: js.Array[String]): Self = StObject.set(x, "BillingEmails", value.asInstanceOf[js.Any])
+      inline def setBillingEmails(value: js.Array[String]): Self = StObject.set(x, "BillingEmails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBillingEmailsUndefined: Self = StObject.set(x, "BillingEmails", js.undefined)
+      inline def setBillingEmailsUndefined: Self = StObject.set(x, "BillingEmails", js.undefined)
       
-      @scala.inline
-      def setBillingEmailsVarargs(value: String*): Self = StObject.set(x, "BillingEmails", js.Array(value :_*))
+      inline def setBillingEmailsVarargs(value: String*): Self = StObject.set(x, "BillingEmails", js.Array(value :_*))
       
-      @scala.inline
-      def setFraudEmails(value: js.Array[String]): Self = StObject.set(x, "FraudEmails", value.asInstanceOf[js.Any])
+      inline def setFraudEmails(value: js.Array[String]): Self = StObject.set(x, "FraudEmails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFraudEmailsUndefined: Self = StObject.set(x, "FraudEmails", js.undefined)
+      inline def setFraudEmailsUndefined: Self = StObject.set(x, "FraudEmails", js.undefined)
       
-      @scala.inline
-      def setFraudEmailsVarargs(value: String*): Self = StObject.set(x, "FraudEmails", js.Array(value :_*))
+      inline def setFraudEmailsVarargs(value: String*): Self = StObject.set(x, "FraudEmails", js.Array(value :_*))
       
-      @scala.inline
-      def setHeadquartersAddress(value: AddressType): Self = StObject.set(x, "HeadquartersAddress", value.asInstanceOf[js.Any])
+      inline def setHeadquartersAddress(value: AddressType): Self = StObject.set(x, "HeadquartersAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeadquartersAddressUndefined: Self = StObject.set(x, "HeadquartersAddress", js.undefined)
+      inline def setHeadquartersAddressUndefined: Self = StObject.set(x, "HeadquartersAddress", js.undefined)
       
-      @scala.inline
-      def setPlatformDescription(value: String): Self = StObject.set(x, "PlatformDescription", value.asInstanceOf[js.Any])
+      inline def setPlatformDescription(value: String): Self = StObject.set(x, "PlatformDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformDescriptionUndefined: Self = StObject.set(x, "PlatformDescription", js.undefined)
+      inline def setPlatformDescriptionUndefined: Self = StObject.set(x, "PlatformDescription", js.undefined)
       
-      @scala.inline
-      def setPlatformType(value: PlatformType): Self = StObject.set(x, "PlatformType", value.asInstanceOf[js.Any])
+      inline def setPlatformType(value: PlatformType): Self = StObject.set(x, "PlatformType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformTypeUndefined: Self = StObject.set(x, "PlatformType", js.undefined)
+      inline def setPlatformTypeUndefined: Self = StObject.set(x, "PlatformType", js.undefined)
       
-      @scala.inline
-      def setPlatformURL(value: String): Self = StObject.set(x, "PlatformURL", value.asInstanceOf[js.Any])
+      inline def setPlatformURL(value: String): Self = StObject.set(x, "PlatformURL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlatformURLUndefined: Self = StObject.set(x, "PlatformURL", js.undefined)
+      inline def setPlatformURLUndefined: Self = StObject.set(x, "PlatformURL", js.undefined)
       
-      @scala.inline
-      def setPrimaryButtonColour(value: String): Self = StObject.set(x, "PrimaryButtonColour", value.asInstanceOf[js.Any])
+      inline def setPrimaryButtonColour(value: String): Self = StObject.set(x, "PrimaryButtonColour", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryButtonColourUndefined: Self = StObject.set(x, "PrimaryButtonColour", js.undefined)
+      inline def setPrimaryButtonColourUndefined: Self = StObject.set(x, "PrimaryButtonColour", js.undefined)
       
-      @scala.inline
-      def setPrimaryThemeColour(value: String): Self = StObject.set(x, "PrimaryThemeColour", value.asInstanceOf[js.Any])
+      inline def setPrimaryThemeColour(value: String): Self = StObject.set(x, "PrimaryThemeColour", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrimaryThemeColourUndefined: Self = StObject.set(x, "PrimaryThemeColour", js.undefined)
+      inline def setPrimaryThemeColourUndefined: Self = StObject.set(x, "PrimaryThemeColour", js.undefined)
       
-      @scala.inline
-      def setTaxNumber(value: String): Self = StObject.set(x, "TaxNumber", value.asInstanceOf[js.Any])
+      inline def setTaxNumber(value: String): Self = StObject.set(x, "TaxNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaxNumberUndefined: Self = StObject.set(x, "TaxNumber", js.undefined)
+      inline def setTaxNumberUndefined: Self = StObject.set(x, "TaxNumber", js.undefined)
       
-      @scala.inline
-      def setTechEmails(value: js.Array[String]): Self = StObject.set(x, "TechEmails", value.asInstanceOf[js.Any])
+      inline def setTechEmails(value: js.Array[String]): Self = StObject.set(x, "TechEmails", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTechEmailsUndefined: Self = StObject.set(x, "TechEmails", js.undefined)
+      inline def setTechEmailsUndefined: Self = StObject.set(x, "TechEmails", js.undefined)
       
-      @scala.inline
-      def setTechEmailsVarargs(value: String*): Self = StObject.set(x, "TechEmails", js.Array(value :_*))
+      inline def setTechEmailsVarargs(value: String*): Self = StObject.set(x, "TechEmails", js.Array(value :_*))
     }
   }
   
@@ -474,17 +398,14 @@ object client {
   }
   object UpdateClientLogo {
     
-    @scala.inline
-    def apply(File: String): UpdateClientLogo = {
+    inline def apply(File: String): UpdateClientLogo = {
       val __obj = js.Dynamic.literal(File = File.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateClientLogo]
     }
     
-    @scala.inline
-    implicit class UpdateClientLogoMutableBuilder[Self <: UpdateClientLogo] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateClientLogo](x: Self) {
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "File", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "File", value.asInstanceOf[js.Any])
     }
   }
 }

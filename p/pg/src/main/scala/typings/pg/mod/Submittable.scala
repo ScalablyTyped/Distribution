@@ -10,16 +10,13 @@ trait Submittable extends StObject {
 }
 object Submittable {
   
-  @scala.inline
-  def apply(submit: Connection => Unit): Submittable = {
+  inline def apply(submit: Connection => Unit): Submittable = {
     val __obj = js.Dynamic.literal(submit = js.Any.fromFunction1(submit))
     __obj.asInstanceOf[Submittable]
   }
   
-  @scala.inline
-  implicit class SubmittableMutableBuilder[Self <: Submittable] (val x: Self) extends AnyVal {
+  extension [Self <: Submittable](x: Self) {
     
-    @scala.inline
-    def setSubmit(value: Connection => Unit): Self = StObject.set(x, "submit", js.Any.fromFunction1(value))
+    inline def setSubmit(value: Connection => Unit): Self = StObject.set(x, "submit", js.Any.fromFunction1(value))
   }
 }

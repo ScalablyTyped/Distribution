@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlDeleteShiftDirection extends StObject
 object XlDeleteShiftDirection {
   
-  @scala.inline
-  def xlShiftToLeft: `-4159` = -4159.asInstanceOf[`-4159`]
+  inline def xlShiftToLeft: `-4159` = -4159.asInstanceOf[`-4159`]
   
-  @scala.inline
-  def xlShiftUp: `-4162` = -4162.asInstanceOf[`-4162`]
+  inline def xlShiftUp: `-4162` = -4162.asInstanceOf[`-4162`]
 }

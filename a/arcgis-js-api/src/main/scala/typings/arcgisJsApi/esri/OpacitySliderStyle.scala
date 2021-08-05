@@ -19,8 +19,7 @@ trait OpacitySliderStyle
 }
 object OpacitySliderStyle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -30,13 +29,10 @@ object OpacitySliderStyle {
     __obj.asInstanceOf[OpacitySliderStyle]
   }
   
-  @scala.inline
-  implicit class OpacitySliderStyleMutableBuilder[Self <: OpacitySliderStyle] (val x: Self) extends AnyVal {
+  extension [Self <: OpacitySliderStyle](x: Self) {
     
-    @scala.inline
-    def setTrackFillColor(value: Color_): Self = StObject.set(x, "trackFillColor", value.asInstanceOf[js.Any])
+    inline def setTrackFillColor(value: Color_): Self = StObject.set(x, "trackFillColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackFillColorUndefined: Self = StObject.set(x, "trackFillColor", js.undefined)
+    inline def setTrackFillColorUndefined: Self = StObject.set(x, "trackFillColor", js.undefined)
   }
 }

@@ -31,31 +31,23 @@ trait SchemaSourceMetadata extends StObject {
 }
 object SchemaSourceMetadata {
   
-  @scala.inline
-  def apply(): SchemaSourceMetadata = {
+  inline def apply(): SchemaSourceMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSourceMetadata]
   }
   
-  @scala.inline
-  implicit class SchemaSourceMetadataMutableBuilder[Self <: SchemaSourceMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSourceMetadata](x: Self) {
     
-    @scala.inline
-    def setEstimatedSizeBytes(value: String): Self = StObject.set(x, "estimatedSizeBytes", value.asInstanceOf[js.Any])
+    inline def setEstimatedSizeBytes(value: String): Self = StObject.set(x, "estimatedSizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEstimatedSizeBytesUndefined: Self = StObject.set(x, "estimatedSizeBytes", js.undefined)
+    inline def setEstimatedSizeBytesUndefined: Self = StObject.set(x, "estimatedSizeBytes", js.undefined)
     
-    @scala.inline
-    def setInfinite(value: Boolean): Self = StObject.set(x, "infinite", value.asInstanceOf[js.Any])
+    inline def setInfinite(value: Boolean): Self = StObject.set(x, "infinite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInfiniteUndefined: Self = StObject.set(x, "infinite", js.undefined)
+    inline def setInfiniteUndefined: Self = StObject.set(x, "infinite", js.undefined)
     
-    @scala.inline
-    def setProducesSortedKeys(value: Boolean): Self = StObject.set(x, "producesSortedKeys", value.asInstanceOf[js.Any])
+    inline def setProducesSortedKeys(value: Boolean): Self = StObject.set(x, "producesSortedKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProducesSortedKeysUndefined: Self = StObject.set(x, "producesSortedKeys", js.undefined)
+    inline def setProducesSortedKeysUndefined: Self = StObject.set(x, "producesSortedKeys", js.undefined)
   }
 }

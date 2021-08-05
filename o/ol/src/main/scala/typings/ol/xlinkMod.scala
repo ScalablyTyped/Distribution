@@ -11,6 +11,5 @@ object xlinkMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def readHref(node: Element): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readHref")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  inline def readHref(node: Element): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readHref")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
 }

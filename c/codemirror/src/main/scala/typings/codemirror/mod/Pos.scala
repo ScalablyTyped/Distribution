@@ -24,6 +24,5 @@ class Pos protected ()
 }
 object Pos {
   
-  @scala.inline
-  def apply: PositionConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("Pos").asInstanceOf[PositionConstructor]
+  inline def apply: PositionConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("Pos").asInstanceOf[PositionConstructor]
 }

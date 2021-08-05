@@ -60,8 +60,7 @@ trait LoginItemSettings extends StObject {
 }
 object LoginItemSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     executableWillLaunchAtLogin: Boolean,
     launchItems: js.Array[LaunchItems],
     openAsHidden: Boolean,
@@ -74,31 +73,22 @@ object LoginItemSettings {
     __obj.asInstanceOf[LoginItemSettings]
   }
   
-  @scala.inline
-  implicit class LoginItemSettingsMutableBuilder[Self <: LoginItemSettings] (val x: Self) extends AnyVal {
+  extension [Self <: LoginItemSettings](x: Self) {
     
-    @scala.inline
-    def setExecutableWillLaunchAtLogin(value: Boolean): Self = StObject.set(x, "executableWillLaunchAtLogin", value.asInstanceOf[js.Any])
+    inline def setExecutableWillLaunchAtLogin(value: Boolean): Self = StObject.set(x, "executableWillLaunchAtLogin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchItems(value: js.Array[LaunchItems]): Self = StObject.set(x, "launchItems", value.asInstanceOf[js.Any])
+    inline def setLaunchItems(value: js.Array[LaunchItems]): Self = StObject.set(x, "launchItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchItemsVarargs(value: LaunchItems*): Self = StObject.set(x, "launchItems", js.Array(value :_*))
+    inline def setLaunchItemsVarargs(value: LaunchItems*): Self = StObject.set(x, "launchItems", js.Array(value :_*))
     
-    @scala.inline
-    def setOpenAsHidden(value: Boolean): Self = StObject.set(x, "openAsHidden", value.asInstanceOf[js.Any])
+    inline def setOpenAsHidden(value: Boolean): Self = StObject.set(x, "openAsHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpenAtLogin(value: Boolean): Self = StObject.set(x, "openAtLogin", value.asInstanceOf[js.Any])
+    inline def setOpenAtLogin(value: Boolean): Self = StObject.set(x, "openAtLogin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestoreState(value: Boolean): Self = StObject.set(x, "restoreState", value.asInstanceOf[js.Any])
+    inline def setRestoreState(value: Boolean): Self = StObject.set(x, "restoreState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWasOpenedAsHidden(value: Boolean): Self = StObject.set(x, "wasOpenedAsHidden", value.asInstanceOf[js.Any])
+    inline def setWasOpenedAsHidden(value: Boolean): Self = StObject.set(x, "wasOpenedAsHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWasOpenedAtLogin(value: Boolean): Self = StObject.set(x, "wasOpenedAtLogin", value.asInstanceOf[js.Any])
+    inline def setWasOpenedAtLogin(value: Boolean): Self = StObject.set(x, "wasOpenedAtLogin", value.asInstanceOf[js.Any])
   }
 }

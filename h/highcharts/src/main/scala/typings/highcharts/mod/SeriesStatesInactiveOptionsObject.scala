@@ -30,37 +30,27 @@ trait SeriesStatesInactiveOptionsObject extends StObject {
 }
 object SeriesStatesInactiveOptionsObject {
   
-  @scala.inline
-  def apply(): SeriesStatesInactiveOptionsObject = {
+  inline def apply(): SeriesStatesInactiveOptionsObject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SeriesStatesInactiveOptionsObject]
   }
   
-  @scala.inline
-  implicit class SeriesStatesInactiveOptionsObjectMutableBuilder[Self <: SeriesStatesInactiveOptionsObject] (val x: Self) extends AnyVal {
+  extension [Self <: SeriesStatesInactiveOptionsObject](x: Self) {
     
-    @scala.inline
-    def setAnimation(value: Boolean | PartialAnimationOptionsOb): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+    inline def setAnimation(value: Boolean | PartialAnimationOptionsOb): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
+    inline def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setLinkOpacity(value: Double): Self = StObject.set(x, "linkOpacity", value.asInstanceOf[js.Any])
+    inline def setLinkOpacity(value: Double): Self = StObject.set(x, "linkOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkOpacityUndefined: Self = StObject.set(x, "linkOpacity", js.undefined)
+    inline def setLinkOpacityUndefined: Self = StObject.set(x, "linkOpacity", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
   }
 }

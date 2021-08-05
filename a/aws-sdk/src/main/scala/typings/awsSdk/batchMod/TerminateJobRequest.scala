@@ -18,19 +18,15 @@ trait TerminateJobRequest extends StObject {
 }
 object TerminateJobRequest {
   
-  @scala.inline
-  def apply(jobId: String, reason: String): TerminateJobRequest = {
+  inline def apply(jobId: String, reason: String): TerminateJobRequest = {
     val __obj = js.Dynamic.literal(jobId = jobId.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[TerminateJobRequest]
   }
   
-  @scala.inline
-  implicit class TerminateJobRequestMutableBuilder[Self <: TerminateJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: TerminateJobRequest](x: Self) {
     
-    @scala.inline
-    def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
+    inline def setJobId(value: String): Self = StObject.set(x, "jobId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }
 }

@@ -20,19 +20,15 @@ trait SchemaGooglePrivacyDlpV2Schedule extends StObject {
 }
 object SchemaGooglePrivacyDlpV2Schedule {
   
-  @scala.inline
-  def apply(): SchemaGooglePrivacyDlpV2Schedule = {
+  inline def apply(): SchemaGooglePrivacyDlpV2Schedule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGooglePrivacyDlpV2Schedule]
   }
   
-  @scala.inline
-  implicit class SchemaGooglePrivacyDlpV2ScheduleMutableBuilder[Self <: SchemaGooglePrivacyDlpV2Schedule] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGooglePrivacyDlpV2Schedule](x: Self) {
     
-    @scala.inline
-    def setRecurrencePeriodDuration(value: String): Self = StObject.set(x, "recurrencePeriodDuration", value.asInstanceOf[js.Any])
+    inline def setRecurrencePeriodDuration(value: String): Self = StObject.set(x, "recurrencePeriodDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecurrencePeriodDurationUndefined: Self = StObject.set(x, "recurrencePeriodDuration", js.undefined)
+    inline def setRecurrencePeriodDurationUndefined: Self = StObject.set(x, "recurrencePeriodDuration", js.undefined)
   }
 }

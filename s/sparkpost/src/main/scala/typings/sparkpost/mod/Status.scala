@@ -37,8 +37,7 @@ trait Status extends StObject {
 }
 object Status {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     abuse_at_status: valid | invalid | unverified | pending,
     cname_status: valid | invalid | unverified | pending,
     compliance_status: valid | pending | blocked,
@@ -52,31 +51,22 @@ object Status {
     __obj.asInstanceOf[Status]
   }
   
-  @scala.inline
-  implicit class StatusMutableBuilder[Self <: Status] (val x: Self) extends AnyVal {
+  extension [Self <: Status](x: Self) {
     
-    @scala.inline
-    def setAbuse_at_status(value: valid | invalid | unverified | pending): Self = StObject.set(x, "abuse_at_status", value.asInstanceOf[js.Any])
+    inline def setAbuse_at_status(value: valid | invalid | unverified | pending): Self = StObject.set(x, "abuse_at_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCname_status(value: valid | invalid | unverified | pending): Self = StObject.set(x, "cname_status", value.asInstanceOf[js.Any])
+    inline def setCname_status(value: valid | invalid | unverified | pending): Self = StObject.set(x, "cname_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompliance_status(value: valid | pending | blocked): Self = StObject.set(x, "compliance_status", value.asInstanceOf[js.Any])
+    inline def setCompliance_status(value: valid | pending | blocked): Self = StObject.set(x, "compliance_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDkim_status(value: valid | invalid | unverified | pending): Self = StObject.set(x, "dkim_status", value.asInstanceOf[js.Any])
+    inline def setDkim_status(value: valid | invalid | unverified | pending): Self = StObject.set(x, "dkim_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMx_status(value: valid | invalid | unverified | pending): Self = StObject.set(x, "mx_status", value.asInstanceOf[js.Any])
+    inline def setMx_status(value: valid | invalid | unverified | pending): Self = StObject.set(x, "mx_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnership_verified(value: Boolean): Self = StObject.set(x, "ownership_verified", value.asInstanceOf[js.Any])
+    inline def setOwnership_verified(value: Boolean): Self = StObject.set(x, "ownership_verified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPostmaster_at_status(value: valid | invalid | unverified | pending): Self = StObject.set(x, "postmaster_at_status", value.asInstanceOf[js.Any])
+    inline def setPostmaster_at_status(value: valid | invalid | unverified | pending): Self = StObject.set(x, "postmaster_at_status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpf_status(value: valid | invalid | unverified | pending): Self = StObject.set(x, "spf_status", value.asInstanceOf[js.Any])
+    inline def setSpf_status(value: valid | invalid | unverified | pending): Self = StObject.set(x, "spf_status", value.asInstanceOf[js.Any])
   }
 }

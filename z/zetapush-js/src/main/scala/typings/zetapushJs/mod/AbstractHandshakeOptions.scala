@@ -14,22 +14,17 @@ trait AbstractHandshakeOptions extends StObject {
 }
 object AbstractHandshakeOptions {
   
-  @scala.inline
-  def apply(authType: String, deploymentId: String, sandboxId: String): AbstractHandshakeOptions = {
+  inline def apply(authType: String, deploymentId: String, sandboxId: String): AbstractHandshakeOptions = {
     val __obj = js.Dynamic.literal(authType = authType.asInstanceOf[js.Any], deploymentId = deploymentId.asInstanceOf[js.Any], sandboxId = sandboxId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AbstractHandshakeOptions]
   }
   
-  @scala.inline
-  implicit class AbstractHandshakeOptionsMutableBuilder[Self <: AbstractHandshakeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AbstractHandshakeOptions](x: Self) {
     
-    @scala.inline
-    def setAuthType(value: String): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
+    inline def setAuthType(value: String): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentId(value: String): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
+    inline def setDeploymentId(value: String): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSandboxId(value: String): Self = StObject.set(x, "sandboxId", value.asInstanceOf[js.Any])
+    inline def setSandboxId(value: String): Self = StObject.set(x, "sandboxId", value.asInstanceOf[js.Any])
   }
 }

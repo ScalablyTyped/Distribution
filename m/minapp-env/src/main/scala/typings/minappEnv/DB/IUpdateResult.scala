@@ -14,16 +14,13 @@ trait IUpdateResult
 }
 object IUpdateResult {
   
-  @scala.inline
-  def apply(errMsg: String, stats: Updated): IUpdateResult = {
+  inline def apply(errMsg: String, stats: Updated): IUpdateResult = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any], stats = stats.asInstanceOf[js.Any])
     __obj.asInstanceOf[IUpdateResult]
   }
   
-  @scala.inline
-  implicit class IUpdateResultMutableBuilder[Self <: IUpdateResult] (val x: Self) extends AnyVal {
+  extension [Self <: IUpdateResult](x: Self) {
     
-    @scala.inline
-    def setStats(value: Updated): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+    inline def setStats(value: Updated): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
   }
 }

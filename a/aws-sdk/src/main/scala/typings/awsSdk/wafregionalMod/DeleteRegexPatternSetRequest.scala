@@ -18,19 +18,15 @@ trait DeleteRegexPatternSetRequest extends StObject {
 }
 object DeleteRegexPatternSetRequest {
   
-  @scala.inline
-  def apply(ChangeToken: ChangeToken, RegexPatternSetId: ResourceId): DeleteRegexPatternSetRequest = {
+  inline def apply(ChangeToken: ChangeToken, RegexPatternSetId: ResourceId): DeleteRegexPatternSetRequest = {
     val __obj = js.Dynamic.literal(ChangeToken = ChangeToken.asInstanceOf[js.Any], RegexPatternSetId = RegexPatternSetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRegexPatternSetRequest]
   }
   
-  @scala.inline
-  implicit class DeleteRegexPatternSetRequestMutableBuilder[Self <: DeleteRegexPatternSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteRegexPatternSetRequest](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegexPatternSetId(value: ResourceId): Self = StObject.set(x, "RegexPatternSetId", value.asInstanceOf[js.Any])
+    inline def setRegexPatternSetId(value: ResourceId): Self = StObject.set(x, "RegexPatternSetId", value.asInstanceOf[js.Any])
   }
 }

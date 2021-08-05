@@ -59,71 +59,50 @@ object Create {
   }
   object GenerateTextureConfig {
     
-    @scala.inline
-    def apply(): GenerateTextureConfig = {
+    inline def apply(): GenerateTextureConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GenerateTextureConfig]
     }
     
-    @scala.inline
-    implicit class GenerateTextureConfigMutableBuilder[Self <: GenerateTextureConfig] (val x: Self) extends AnyVal {
+    extension [Self <: GenerateTextureConfig](x: Self) {
       
-      @scala.inline
-      def setCanvas(value: HTMLCanvasElement): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
+      inline def setCanvas(value: HTMLCanvasElement): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCanvasUndefined: Self = StObject.set(x, "canvas", js.undefined)
+      inline def setCanvasUndefined: Self = StObject.set(x, "canvas", js.undefined)
       
-      @scala.inline
-      def setClearCanvas(value: Boolean): Self = StObject.set(x, "clearCanvas", value.asInstanceOf[js.Any])
+      inline def setClearCanvas(value: Boolean): Self = StObject.set(x, "clearCanvas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClearCanvasUndefined: Self = StObject.set(x, "clearCanvas", js.undefined)
+      inline def setClearCanvasUndefined: Self = StObject.set(x, "clearCanvas", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: js.Any*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setPalette(value: Palette): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
+      inline def setPalette(value: Palette): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
+      inline def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
       
-      @scala.inline
-      def setPixelHeight(value: Double): Self = StObject.set(x, "pixelHeight", value.asInstanceOf[js.Any])
+      inline def setPixelHeight(value: Double): Self = StObject.set(x, "pixelHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPixelHeightUndefined: Self = StObject.set(x, "pixelHeight", js.undefined)
+      inline def setPixelHeightUndefined: Self = StObject.set(x, "pixelHeight", js.undefined)
       
-      @scala.inline
-      def setPixelWidth(value: Double): Self = StObject.set(x, "pixelWidth", value.asInstanceOf[js.Any])
+      inline def setPixelWidth(value: Double): Self = StObject.set(x, "pixelWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPixelWidthUndefined: Self = StObject.set(x, "pixelWidth", js.undefined)
+      inline def setPixelWidthUndefined: Self = StObject.set(x, "pixelWidth", js.undefined)
       
-      @scala.inline
-      def setPostRender(value: (/* canvas */ HTMLCanvasElement, /* context */ CanvasRenderingContext2D) => Unit): Self = StObject.set(x, "postRender", js.Any.fromFunction2(value))
+      inline def setPostRender(value: (/* canvas */ HTMLCanvasElement, /* context */ CanvasRenderingContext2D) => Unit): Self = StObject.set(x, "postRender", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPostRenderUndefined: Self = StObject.set(x, "postRender", js.undefined)
+      inline def setPostRenderUndefined: Self = StObject.set(x, "postRender", js.undefined)
       
-      @scala.inline
-      def setPreRender(value: (/* canvas */ HTMLCanvasElement, /* context */ CanvasRenderingContext2D) => Unit): Self = StObject.set(x, "preRender", js.Any.fromFunction2(value))
+      inline def setPreRender(value: (/* canvas */ HTMLCanvasElement, /* context */ CanvasRenderingContext2D) => Unit): Self = StObject.set(x, "preRender", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPreRenderUndefined: Self = StObject.set(x, "preRender", js.undefined)
+      inline def setPreRenderUndefined: Self = StObject.set(x, "preRender", js.undefined)
       
-      @scala.inline
-      def setResizeCanvas(value: Boolean): Self = StObject.set(x, "resizeCanvas", value.asInstanceOf[js.Any])
+      inline def setResizeCanvas(value: Boolean): Self = StObject.set(x, "resizeCanvas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResizeCanvasUndefined: Self = StObject.set(x, "resizeCanvas", js.undefined)
+      inline def setResizeCanvasUndefined: Self = StObject.set(x, "resizeCanvas", js.undefined)
     }
   }
   
@@ -211,8 +190,7 @@ object Create {
   }
   object Palette {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       `0`: String,
       `1`: String,
       `2`: String,
@@ -244,56 +222,39 @@ object Create {
       __obj.asInstanceOf[Palette]
     }
     
-    @scala.inline
-    implicit class PaletteMutableBuilder[Self <: Palette] (val x: Self) extends AnyVal {
+    extension [Self <: Palette](x: Self) {
       
-      @scala.inline
-      def set0(value: String): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
+      inline def set0(value: String): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set1(value: String): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
+      inline def set1(value: String): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set2(value: String): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
+      inline def set2(value: String): Self = StObject.set(x, "2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set3(value: String): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
+      inline def set3(value: String): Self = StObject.set(x, "3", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set4(value: String): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
+      inline def set4(value: String): Self = StObject.set(x, "4", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set5(value: String): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
+      inline def set5(value: String): Self = StObject.set(x, "5", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set6(value: String): Self = StObject.set(x, "6", value.asInstanceOf[js.Any])
+      inline def set6(value: String): Self = StObject.set(x, "6", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set7(value: String): Self = StObject.set(x, "7", value.asInstanceOf[js.Any])
+      inline def set7(value: String): Self = StObject.set(x, "7", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set8(value: String): Self = StObject.set(x, "8", value.asInstanceOf[js.Any])
+      inline def set8(value: String): Self = StObject.set(x, "8", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set9(value: String): Self = StObject.set(x, "9", value.asInstanceOf[js.Any])
+      inline def set9(value: String): Self = StObject.set(x, "9", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setA(value: String): Self = StObject.set(x, "A", value.asInstanceOf[js.Any])
+      inline def setA(value: String): Self = StObject.set(x, "A", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setB(value: String): Self = StObject.set(x, "B", value.asInstanceOf[js.Any])
+      inline def setB(value: String): Self = StObject.set(x, "B", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setC(value: String): Self = StObject.set(x, "C", value.asInstanceOf[js.Any])
+      inline def setC(value: String): Self = StObject.set(x, "C", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setD(value: String): Self = StObject.set(x, "D", value.asInstanceOf[js.Any])
+      inline def setD(value: String): Self = StObject.set(x, "D", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setE(value: String): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
+      inline def setE(value: String): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setF(value: String): Self = StObject.set(x, "F", value.asInstanceOf[js.Any])
+      inline def setF(value: String): Self = StObject.set(x, "F", value.asInstanceOf[js.Any])
     }
   }
 }

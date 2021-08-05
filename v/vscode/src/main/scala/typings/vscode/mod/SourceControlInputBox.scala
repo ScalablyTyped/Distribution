@@ -23,22 +23,17 @@ trait SourceControlInputBox extends StObject {
 }
 object SourceControlInputBox {
   
-  @scala.inline
-  def apply(placeholder: String, value: String, visible: Boolean): SourceControlInputBox = {
+  inline def apply(placeholder: String, value: String, visible: Boolean): SourceControlInputBox = {
     val __obj = js.Dynamic.literal(placeholder = placeholder.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceControlInputBox]
   }
   
-  @scala.inline
-  implicit class SourceControlInputBoxMutableBuilder[Self <: SourceControlInputBox] (val x: Self) extends AnyVal {
+  extension [Self <: SourceControlInputBox](x: Self) {
     
-    @scala.inline
-    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }
 }

@@ -27,22 +27,17 @@ trait IWeatherChangedEventData extends StObject {
 }
 object IWeatherChangedEventData {
   
-  @scala.inline
-  def apply(dimension: Dimension, lightning: Boolean, raining: Boolean): IWeatherChangedEventData = {
+  inline def apply(dimension: Dimension, lightning: Boolean, raining: Boolean): IWeatherChangedEventData = {
     val __obj = js.Dynamic.literal(dimension = dimension.asInstanceOf[js.Any], lightning = lightning.asInstanceOf[js.Any], raining = raining.asInstanceOf[js.Any])
     __obj.asInstanceOf[IWeatherChangedEventData]
   }
   
-  @scala.inline
-  implicit class IWeatherChangedEventDataMutableBuilder[Self <: IWeatherChangedEventData] (val x: Self) extends AnyVal {
+  extension [Self <: IWeatherChangedEventData](x: Self) {
     
-    @scala.inline
-    def setDimension(value: Dimension): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
+    inline def setDimension(value: Dimension): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLightning(value: Boolean): Self = StObject.set(x, "lightning", value.asInstanceOf[js.Any])
+    inline def setLightning(value: Boolean): Self = StObject.set(x, "lightning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaining(value: Boolean): Self = StObject.set(x, "raining", value.asInstanceOf[js.Any])
+    inline def setRaining(value: Boolean): Self = StObject.set(x, "raining", value.asInstanceOf[js.Any])
   }
 }

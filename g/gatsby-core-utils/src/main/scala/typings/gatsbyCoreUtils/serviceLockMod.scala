@@ -11,16 +11,12 @@ object serviceLockMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createServiceLock(programPath: String, serviceName: String, content: Record[String, js.Any]): js.Promise[UnlockFn | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServiceLock")(programPath.asInstanceOf[js.Any], serviceName.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UnlockFn | Null]]
+  inline def createServiceLock(programPath: String, serviceName: String, content: Record[String, js.Any]): js.Promise[UnlockFn | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServiceLock")(programPath.asInstanceOf[js.Any], serviceName.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UnlockFn | Null]]
   
-  @scala.inline
-  def getService[T](programPath: String, serviceName: String): js.Promise[T | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getService")(programPath.asInstanceOf[js.Any], serviceName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T | Null]]
-  @scala.inline
-  def getService[T](programPath: String, serviceName: String, ignoreLockfile: Boolean): js.Promise[T | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getService")(programPath.asInstanceOf[js.Any], serviceName.asInstanceOf[js.Any], ignoreLockfile.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T | Null]]
+  inline def getService[T](programPath: String, serviceName: String): js.Promise[T | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getService")(programPath.asInstanceOf[js.Any], serviceName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T | Null]]
+  inline def getService[T](programPath: String, serviceName: String, ignoreLockfile: Boolean): js.Promise[T | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getService")(programPath.asInstanceOf[js.Any], serviceName.asInstanceOf[js.Any], ignoreLockfile.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T | Null]]
   
-  @scala.inline
-  def getServices(programPath: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getServices")(programPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  inline def getServices(programPath: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getServices")(programPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
   type UnlockFn = js.Function0[js.Promise[Unit]]
 }

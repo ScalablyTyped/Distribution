@@ -12,25 +12,19 @@ trait RedrawResult extends StObject {
 }
 object RedrawResult {
   
-  @scala.inline
-  def apply(c: js.Array[Connection], e: js.Array[Endpoint]): RedrawResult = {
+  inline def apply(c: js.Array[Connection], e: js.Array[Endpoint]): RedrawResult = {
     val __obj = js.Dynamic.literal(c = c.asInstanceOf[js.Any], e = e.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedrawResult]
   }
   
-  @scala.inline
-  implicit class RedrawResultMutableBuilder[Self <: RedrawResult] (val x: Self) extends AnyVal {
+  extension [Self <: RedrawResult](x: Self) {
     
-    @scala.inline
-    def setC(value: js.Array[Connection]): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
+    inline def setC(value: js.Array[Connection]): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCVarargs(value: Connection*): Self = StObject.set(x, "c", js.Array(value :_*))
+    inline def setCVarargs(value: Connection*): Self = StObject.set(x, "c", js.Array(value :_*))
     
-    @scala.inline
-    def setE(value: js.Array[Endpoint]): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
+    inline def setE(value: js.Array[Endpoint]): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEVarargs(value: Endpoint*): Self = StObject.set(x, "e", js.Array(value :_*))
+    inline def setEVarargs(value: Endpoint*): Self = StObject.set(x, "e", js.Array(value :_*))
   }
 }

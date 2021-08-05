@@ -35,64 +35,45 @@ trait Metadata extends StObject {
 }
 object Metadata {
   
-  @scala.inline
-  def apply(): Metadata = {
+  inline def apply(): Metadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Metadata]
   }
   
-  @scala.inline
-  implicit class MetadataMutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
+  extension [Self <: Metadata](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setDisplayOptions(value: ResultDisplayMetadata): Self = StObject.set(x, "displayOptions", value.asInstanceOf[js.Any])
+    inline def setDisplayOptions(value: ResultDisplayMetadata): Self = StObject.set(x, "displayOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayOptionsUndefined: Self = StObject.set(x, "displayOptions", js.undefined)
+    inline def setDisplayOptionsUndefined: Self = StObject.set(x, "displayOptions", js.undefined)
     
-    @scala.inline
-    def setFields(value: js.Array[NamedProperty]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Array[NamedProperty]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+    inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
     
-    @scala.inline
-    def setFieldsVarargs(value: NamedProperty*): Self = StObject.set(x, "fields", js.Array(value :_*))
+    inline def setFieldsVarargs(value: NamedProperty*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
-    @scala.inline
-    def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
+    inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
+    inline def setMimeTypeUndefined: Self = StObject.set(x, "mimeType", js.undefined)
     
-    @scala.inline
-    def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
+    inline def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectTypeUndefined: Self = StObject.set(x, "objectType", js.undefined)
+    inline def setObjectTypeUndefined: Self = StObject.set(x, "objectType", js.undefined)
     
-    @scala.inline
-    def setOwner(value: Person): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: Person): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

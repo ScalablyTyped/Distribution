@@ -13,19 +13,15 @@ trait SubscribeResult extends StObject {
 }
 object SubscribeResult {
   
-  @scala.inline
-  def apply(): SubscribeResult = {
+  inline def apply(): SubscribeResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SubscribeResult]
   }
   
-  @scala.inline
-  implicit class SubscribeResultMutableBuilder[Self <: SubscribeResult] (val x: Self) extends AnyVal {
+  extension [Self <: SubscribeResult](x: Self) {
     
-    @scala.inline
-    def setArn(value: NotificationRuleArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: NotificationRuleArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "Arn", js.undefined)
   }
 }

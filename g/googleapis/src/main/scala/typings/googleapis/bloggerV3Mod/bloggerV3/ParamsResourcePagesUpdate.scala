@@ -46,49 +46,35 @@ trait ParamsResourcePagesUpdate
 }
 object ParamsResourcePagesUpdate {
   
-  @scala.inline
-  def apply(): ParamsResourcePagesUpdate = {
+  inline def apply(): ParamsResourcePagesUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourcePagesUpdate]
   }
   
-  @scala.inline
-  implicit class ParamsResourcePagesUpdateMutableBuilder[Self <: ParamsResourcePagesUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourcePagesUpdate](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setBlogId(value: String): Self = StObject.set(x, "blogId", value.asInstanceOf[js.Any])
+    inline def setBlogId(value: String): Self = StObject.set(x, "blogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlogIdUndefined: Self = StObject.set(x, "blogId", js.undefined)
+    inline def setBlogIdUndefined: Self = StObject.set(x, "blogId", js.undefined)
     
-    @scala.inline
-    def setPageId(value: String): Self = StObject.set(x, "pageId", value.asInstanceOf[js.Any])
+    inline def setPageId(value: String): Self = StObject.set(x, "pageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageIdUndefined: Self = StObject.set(x, "pageId", js.undefined)
+    inline def setPageIdUndefined: Self = StObject.set(x, "pageId", js.undefined)
     
-    @scala.inline
-    def setPublish(value: Boolean): Self = StObject.set(x, "publish", value.asInstanceOf[js.Any])
+    inline def setPublish(value: Boolean): Self = StObject.set(x, "publish", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishUndefined: Self = StObject.set(x, "publish", js.undefined)
+    inline def setPublishUndefined: Self = StObject.set(x, "publish", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaPage): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaPage): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
-    @scala.inline
-    def setRevert(value: Boolean): Self = StObject.set(x, "revert", value.asInstanceOf[js.Any])
+    inline def setRevert(value: Boolean): Self = StObject.set(x, "revert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRevertUndefined: Self = StObject.set(x, "revert", js.undefined)
+    inline def setRevertUndefined: Self = StObject.set(x, "revert", js.undefined)
   }
 }

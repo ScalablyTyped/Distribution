@@ -16,19 +16,15 @@ trait TableHeaderCellProps
 }
 object TableHeaderCellProps {
   
-  @scala.inline
-  def apply(): TableHeaderCellProps = {
+  inline def apply(): TableHeaderCellProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TableHeaderCellProps]
   }
   
-  @scala.inline
-  implicit class TableHeaderCellPropsMutableBuilder[Self <: TableHeaderCellProps] (val x: Self) extends AnyVal {
+  extension [Self <: TableHeaderCellProps](x: Self) {
     
-    @scala.inline
-    def setScope(value: col | row | colgroup | rowgroup): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: col | row | colgroup | rowgroup): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
   }
 }

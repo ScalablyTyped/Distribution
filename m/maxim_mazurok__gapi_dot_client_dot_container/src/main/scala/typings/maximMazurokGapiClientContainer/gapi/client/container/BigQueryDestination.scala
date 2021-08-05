@@ -11,19 +11,15 @@ trait BigQueryDestination extends StObject {
 }
 object BigQueryDestination {
   
-  @scala.inline
-  def apply(): BigQueryDestination = {
+  inline def apply(): BigQueryDestination = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BigQueryDestination]
   }
   
-  @scala.inline
-  implicit class BigQueryDestinationMutableBuilder[Self <: BigQueryDestination] (val x: Self) extends AnyVal {
+  extension [Self <: BigQueryDestination](x: Self) {
     
-    @scala.inline
-    def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
+    inline def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetIdUndefined: Self = StObject.set(x, "datasetId", js.undefined)
+    inline def setDatasetIdUndefined: Self = StObject.set(x, "datasetId", js.undefined)
   }
 }

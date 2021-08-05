@@ -17,19 +17,15 @@ trait JdbcSavepoint extends StObject {
 }
 object JdbcSavepoint {
   
-  @scala.inline
-  def apply(getSavepointId: () => Integer, getSavepointName: () => String): JdbcSavepoint = {
+  inline def apply(getSavepointId: () => Integer, getSavepointName: () => String): JdbcSavepoint = {
     val __obj = js.Dynamic.literal(getSavepointId = js.Any.fromFunction0(getSavepointId), getSavepointName = js.Any.fromFunction0(getSavepointName))
     __obj.asInstanceOf[JdbcSavepoint]
   }
   
-  @scala.inline
-  implicit class JdbcSavepointMutableBuilder[Self <: JdbcSavepoint] (val x: Self) extends AnyVal {
+  extension [Self <: JdbcSavepoint](x: Self) {
     
-    @scala.inline
-    def setGetSavepointId(value: () => Integer): Self = StObject.set(x, "getSavepointId", js.Any.fromFunction0(value))
+    inline def setGetSavepointId(value: () => Integer): Self = StObject.set(x, "getSavepointId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSavepointName(value: () => String): Self = StObject.set(x, "getSavepointName", js.Any.fromFunction0(value))
+    inline def setGetSavepointName(value: () => String): Self = StObject.set(x, "getSavepointName", js.Any.fromFunction0(value))
   }
 }

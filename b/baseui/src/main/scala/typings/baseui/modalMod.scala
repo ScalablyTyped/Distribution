@@ -40,17 +40,13 @@ object modalMod {
     @js.native
     val ^ : CLOSE_SOURCE = js.native
     
-    @scala.inline
-    implicit class CLOSE_SOURCEMutableBuilder[Self <: CLOSE_SOURCE] (val x: Self) extends AnyVal {
+    extension [Self <: CLOSE_SOURCE](x: Self) {
       
-      @scala.inline
-      def setBackdrop(value: backdrop): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
+      inline def setBackdrop(value: backdrop): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseButton(value: closeButton): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
+      inline def setCloseButton(value: closeButton): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEscape(value: escape_): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
+      inline def setEscape(value: escape_): Self = StObject.set(x, "escape", value.asInstanceOf[js.Any])
     }
   }
   
@@ -159,14 +155,11 @@ object modalMod {
     @js.native
     val ^ : ROLE = js.native
     
-    @scala.inline
-    implicit class ROLEMutableBuilder[Self <: ROLE] (val x: Self) extends AnyVal {
+    extension [Self <: ROLE](x: Self) {
       
-      @scala.inline
-      def setAlertdialog(value: alertdialog): Self = StObject.set(x, "alertdialog", value.asInstanceOf[js.Any])
+      inline def setAlertdialog(value: alertdialog): Self = StObject.set(x, "alertdialog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDialog(value: dialog): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
+      inline def setDialog(value: dialog): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
     }
   }
   
@@ -184,17 +177,13 @@ object modalMod {
     @js.native
     val ^ : SIZE = js.native
     
-    @scala.inline
-    implicit class SIZEMutableBuilder[Self <: SIZE] (val x: Self) extends AnyVal {
+    extension [Self <: SIZE](x: Self) {
       
-      @scala.inline
-      def setAuto(value: auto): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
+      inline def setAuto(value: auto): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefault(value: default_): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: default_): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFull(value: full): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
+      inline def setFull(value: full): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
     }
   }
   
@@ -212,17 +201,13 @@ object modalMod {
     @js.native
     val ^ : SIZE_WIDTHS = js.native
     
-    @scala.inline
-    implicit class SIZE_WIDTHSMutableBuilder[Self <: SIZE_WIDTHS] (val x: Self) extends AnyVal {
+    extension [Self <: SIZE_WIDTHS](x: Self) {
       
-      @scala.inline
-      def setAuto(value: auto): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
+      inline def setAuto(value: auto): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefault(value: `500px`): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: `500px`): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFull(value: `100Percentsign`): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
+      inline def setFull(value: `100Percentsign`): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
     }
   }
   
@@ -270,54 +255,42 @@ object modalMod {
   }
   object ModalOverrides {
     
-    @scala.inline
-    def apply(): ModalOverrides = {
+    inline def apply(): ModalOverrides = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ModalOverrides]
     }
     
-    @scala.inline
-    implicit class ModalOverridesMutableBuilder[Self <: ModalOverrides] (val x: Self) extends AnyVal {
+    extension [Self <: ModalOverrides](x: Self) {
       
-      @scala.inline
-      def setBackdrop(
+      inline def setBackdrop(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
       ): Self = StObject.set(x, "Backdrop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackdropUndefined: Self = StObject.set(x, "Backdrop", js.undefined)
+      inline def setBackdropUndefined: Self = StObject.set(x, "Backdrop", js.undefined)
       
-      @scala.inline
-      def setClose(
+      inline def setClose(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
       ): Self = StObject.set(x, "Close", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseUndefined: Self = StObject.set(x, "Close", js.undefined)
+      inline def setCloseUndefined: Self = StObject.set(x, "Close", js.undefined)
       
-      @scala.inline
-      def setDialog(
+      inline def setDialog(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
       ): Self = StObject.set(x, "Dialog", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDialogContainer(
+      inline def setDialogContainer(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
       ): Self = StObject.set(x, "DialogContainer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDialogContainerUndefined: Self = StObject.set(x, "DialogContainer", js.undefined)
+      inline def setDialogContainerUndefined: Self = StObject.set(x, "DialogContainer", js.undefined)
       
-      @scala.inline
-      def setDialogUndefined: Self = StObject.set(x, "Dialog", js.undefined)
+      inline def setDialogUndefined: Self = StObject.set(x, "Dialog", js.undefined)
       
-      @scala.inline
-      def setRoot(
+      inline def setRoot(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
       ): Self = StObject.set(x, "Root", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
+      inline def setRootUndefined: Self = StObject.set(x, "Root", js.undefined)
     }
   }
   
@@ -351,86 +324,60 @@ object modalMod {
   }
   object ModalProps {
     
-    @scala.inline
-    def apply(): ModalProps = {
+    inline def apply(): ModalProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ModalProps]
     }
     
-    @scala.inline
-    implicit class ModalPropsMutableBuilder[Self <: ModalProps] (val x: Self) extends AnyVal {
+    extension [Self <: ModalProps](x: Self) {
       
-      @scala.inline
-      def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+      inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
+      inline def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
       
-      @scala.inline
-      def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
+      inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
+      inline def setAutoFocusUndefined: Self = StObject.set(x, "autoFocus", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setCloseable(value: Boolean): Self = StObject.set(x, "closeable", value.asInstanceOf[js.Any])
+      inline def setCloseable(value: Boolean): Self = StObject.set(x, "closeable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseableUndefined: Self = StObject.set(x, "closeable", js.undefined)
+      inline def setCloseableUndefined: Self = StObject.set(x, "closeable", js.undefined)
       
-      @scala.inline
-      def setFocusLock(value: Boolean): Self = StObject.set(x, "focusLock", value.asInstanceOf[js.Any])
+      inline def setFocusLock(value: Boolean): Self = StObject.set(x, "focusLock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusLockUndefined: Self = StObject.set(x, "focusLock", js.undefined)
+      inline def setFocusLockUndefined: Self = StObject.set(x, "focusLock", js.undefined)
       
-      @scala.inline
-      def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
+      inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
+      inline def setIsOpenUndefined: Self = StObject.set(x, "isOpen", js.undefined)
       
-      @scala.inline
-      def setMountNode(value: HTMLElement): Self = StObject.set(x, "mountNode", value.asInstanceOf[js.Any])
+      inline def setMountNode(value: HTMLElement): Self = StObject.set(x, "mountNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMountNodeUndefined: Self = StObject.set(x, "mountNode", js.undefined)
+      inline def setMountNodeUndefined: Self = StObject.set(x, "mountNode", js.undefined)
       
-      @scala.inline
-      def setOnClose(value: /* args */ CloseSource => js.Any): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+      inline def setOnClose(value: /* args */ CloseSource => js.Any): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
+      inline def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
-      @scala.inline
-      def setOverrides(value: ModalOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+      inline def setOverrides(value: ModalOverrides): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+      inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
       
-      @scala.inline
-      def setRole(value: dialog | alertdialog): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: dialog | alertdialog): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
       
-      @scala.inline
-      def setSize(value: default_ | full | auto): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: default_ | full | auto): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setUnstable_ModalBackdropScroll(value: Boolean): Self = StObject.set(x, "unstable_ModalBackdropScroll", value.asInstanceOf[js.Any])
+      inline def setUnstable_ModalBackdropScroll(value: Boolean): Self = StObject.set(x, "unstable_ModalBackdropScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnstable_ModalBackdropScrollUndefined: Self = StObject.set(x, "unstable_ModalBackdropScroll", js.undefined)
+      inline def setUnstable_ModalBackdropScrollUndefined: Self = StObject.set(x, "unstable_ModalBackdropScroll", js.undefined)
     }
   }
   
@@ -442,20 +389,16 @@ object modalMod {
   }
   object ModalState {
     
-    @scala.inline
-    def apply(isVisible: Boolean, mounted: Boolean): ModalState = {
+    inline def apply(isVisible: Boolean, mounted: Boolean): ModalState = {
       val __obj = js.Dynamic.literal(isVisible = isVisible.asInstanceOf[js.Any], mounted = mounted.asInstanceOf[js.Any])
       __obj.asInstanceOf[ModalState]
     }
     
-    @scala.inline
-    implicit class ModalStateMutableBuilder[Self <: ModalState] (val x: Self) extends AnyVal {
+    extension [Self <: ModalState](x: Self) {
       
-      @scala.inline
-      def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
+      inline def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMounted(value: Boolean): Self = StObject.set(x, "mounted", value.asInstanceOf[js.Any])
+      inline def setMounted(value: Boolean): Self = StObject.set(x, "mounted", value.asInstanceOf[js.Any])
     }
   }
   
@@ -486,62 +429,44 @@ object modalMod {
   }
   object SharedStylePropsArg {
     
-    @scala.inline
-    def apply(): SharedStylePropsArg = {
+    inline def apply(): SharedStylePropsArg = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SharedStylePropsArg]
     }
     
-    @scala.inline
-    implicit class SharedStylePropsArgMutableBuilder[Self <: SharedStylePropsArg] (val x: Self) extends AnyVal {
+    extension [Self <: SharedStylePropsArg](x: Self) {
       
-      @scala.inline
-      def set$animate(value: Boolean): Self = StObject.set(x, "$animate", value.asInstanceOf[js.Any])
+      inline def set$animate(value: Boolean): Self = StObject.set(x, "$animate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$animateUndefined: Self = StObject.set(x, "$animate", js.undefined)
+      inline def set$animateUndefined: Self = StObject.set(x, "$animate", js.undefined)
       
-      @scala.inline
-      def set$closeable(value: Boolean): Self = StObject.set(x, "$closeable", value.asInstanceOf[js.Any])
+      inline def set$closeable(value: Boolean): Self = StObject.set(x, "$closeable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$closeableUndefined: Self = StObject.set(x, "$closeable", js.undefined)
+      inline def set$closeableUndefined: Self = StObject.set(x, "$closeable", js.undefined)
       
-      @scala.inline
-      def set$isOpen(value: Boolean): Self = StObject.set(x, "$isOpen", value.asInstanceOf[js.Any])
+      inline def set$isOpen(value: Boolean): Self = StObject.set(x, "$isOpen", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$isOpenUndefined: Self = StObject.set(x, "$isOpen", js.undefined)
+      inline def set$isOpenUndefined: Self = StObject.set(x, "$isOpen", js.undefined)
       
-      @scala.inline
-      def set$isVisible(value: Boolean): Self = StObject.set(x, "$isVisible", value.asInstanceOf[js.Any])
+      inline def set$isVisible(value: Boolean): Self = StObject.set(x, "$isVisible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$isVisibleUndefined: Self = StObject.set(x, "$isVisible", js.undefined)
+      inline def set$isVisibleUndefined: Self = StObject.set(x, "$isVisible", js.undefined)
       
-      @scala.inline
-      def set$role(value: dialog | alertdialog): Self = StObject.set(x, "$role", value.asInstanceOf[js.Any])
+      inline def set$role(value: dialog | alertdialog): Self = StObject.set(x, "$role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$roleUndefined: Self = StObject.set(x, "$role", js.undefined)
+      inline def set$roleUndefined: Self = StObject.set(x, "$role", js.undefined)
       
-      @scala.inline
-      def set$size(value: default_ | full | auto): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
+      inline def set$size(value: default_ | full | auto): Self = StObject.set(x, "$size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$sizeUndefined: Self = StObject.set(x, "$size", js.undefined)
+      inline def set$sizeUndefined: Self = StObject.set(x, "$size", js.undefined)
       
-      @scala.inline
-      def set$unstable_ModalBackdropScroll(value: Boolean): Self = StObject.set(x, "$unstable_ModalBackdropScroll", value.asInstanceOf[js.Any])
+      inline def set$unstable_ModalBackdropScroll(value: Boolean): Self = StObject.set(x, "$unstable_ModalBackdropScroll", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$unstable_ModalBackdropScrollUndefined: Self = StObject.set(x, "$unstable_ModalBackdropScroll", js.undefined)
+      inline def set$unstable_ModalBackdropScrollUndefined: Self = StObject.set(x, "$unstable_ModalBackdropScroll", js.undefined)
       
-      @scala.inline
-      def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     }
   }
 }

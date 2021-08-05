@@ -35,8 +35,7 @@ object swatchColorPickerMod {
     @JSImport("office-ui-fabric-react/lib/components/SwatchColorPicker", "ColorPickerGridCellBase.defaultProps")
     @js.native
     def defaultProps: PartialIColorPickerGridCe = js.native
-    @scala.inline
-    def defaultProps_=(x: PartialIColorPickerGridCe): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PartialIColorPickerGridCe): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("office-ui-fabric-react/lib/components/SwatchColorPicker", "SwatchColorPicker")
@@ -59,7 +58,6 @@ object swatchColorPickerMod {
     @JSImport("office-ui-fabric-react/lib/components/SwatchColorPicker", "SwatchColorPickerBase.defaultProps")
     @js.native
     def defaultProps: ISwatchColorPickerProps = js.native
-    @scala.inline
-    def defaultProps_=(x: ISwatchColorPickerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: ISwatchColorPickerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

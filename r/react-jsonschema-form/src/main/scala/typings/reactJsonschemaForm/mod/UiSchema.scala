@@ -35,58 +35,41 @@ trait UiSchema
 }
 object UiSchema {
   
-  @scala.inline
-  def apply(): UiSchema = {
+  inline def apply(): UiSchema = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UiSchema]
   }
   
-  @scala.inline
-  implicit class UiSchemaMutableBuilder[Self <: UiSchema] (val x: Self) extends AnyVal {
+  extension [Self <: UiSchema](x: Self) {
     
-    @scala.inline
-    def setUiColonArrayFieldTemplate(value: StatelessComponent[ArrayFieldTemplateProps[js.Any]]): Self = StObject.set(x, "ui:ArrayFieldTemplate", value.asInstanceOf[js.Any])
+    inline def setUiColonArrayFieldTemplate(value: StatelessComponent[ArrayFieldTemplateProps[js.Any]]): Self = StObject.set(x, "ui:ArrayFieldTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUiColonArrayFieldTemplateUndefined: Self = StObject.set(x, "ui:ArrayFieldTemplate", js.undefined)
+    inline def setUiColonArrayFieldTemplateUndefined: Self = StObject.set(x, "ui:ArrayFieldTemplate", js.undefined)
     
-    @scala.inline
-    def setUiColonFieldTemplate(value: StatelessComponent[FieldTemplateProps]): Self = StObject.set(x, "ui:FieldTemplate", value.asInstanceOf[js.Any])
+    inline def setUiColonFieldTemplate(value: StatelessComponent[FieldTemplateProps]): Self = StObject.set(x, "ui:FieldTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUiColonFieldTemplateUndefined: Self = StObject.set(x, "ui:FieldTemplate", js.undefined)
+    inline def setUiColonFieldTemplateUndefined: Self = StObject.set(x, "ui:FieldTemplate", js.undefined)
     
-    @scala.inline
-    def setUiColonObjectFieldTemplate(value: StatelessComponent[ObjectFieldTemplateProps[js.Any]]): Self = StObject.set(x, "ui:ObjectFieldTemplate", value.asInstanceOf[js.Any])
+    inline def setUiColonObjectFieldTemplate(value: StatelessComponent[ObjectFieldTemplateProps[js.Any]]): Self = StObject.set(x, "ui:ObjectFieldTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUiColonObjectFieldTemplateUndefined: Self = StObject.set(x, "ui:ObjectFieldTemplate", js.undefined)
+    inline def setUiColonObjectFieldTemplateUndefined: Self = StObject.set(x, "ui:ObjectFieldTemplate", js.undefined)
     
-    @scala.inline
-    def setUiColonfield(value: Field | String): Self = StObject.set(x, "ui:field", value.asInstanceOf[js.Any])
+    inline def setUiColonfield(value: Field | String): Self = StObject.set(x, "ui:field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUiColonfieldUndefined: Self = StObject.set(x, "ui:field", js.undefined)
+    inline def setUiColonfieldUndefined: Self = StObject.set(x, "ui:field", js.undefined)
     
-    @scala.inline
-    def setUiColonoptions(value: StringDictionary[Boolean | Double | String | js.Object | js.Array[js.Any] | Null]): Self = StObject.set(x, "ui:options", value.asInstanceOf[js.Any])
+    inline def setUiColonoptions(value: StringDictionary[Boolean | Double | String | js.Object | js.Array[js.Any] | Null]): Self = StObject.set(x, "ui:options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUiColonoptionsUndefined: Self = StObject.set(x, "ui:options", js.undefined)
+    inline def setUiColonoptionsUndefined: Self = StObject.set(x, "ui:options", js.undefined)
     
-    @scala.inline
-    def setUiColonorder(value: js.Array[String]): Self = StObject.set(x, "ui:order", value.asInstanceOf[js.Any])
+    inline def setUiColonorder(value: js.Array[String]): Self = StObject.set(x, "ui:order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUiColonorderUndefined: Self = StObject.set(x, "ui:order", js.undefined)
+    inline def setUiColonorderUndefined: Self = StObject.set(x, "ui:order", js.undefined)
     
-    @scala.inline
-    def setUiColonorderVarargs(value: String*): Self = StObject.set(x, "ui:order", js.Array(value :_*))
+    inline def setUiColonorderVarargs(value: String*): Self = StObject.set(x, "ui:order", js.Array(value :_*))
     
-    @scala.inline
-    def setUiColonwidget(value: Widget | String): Self = StObject.set(x, "ui:widget", value.asInstanceOf[js.Any])
+    inline def setUiColonwidget(value: Widget | String): Self = StObject.set(x, "ui:widget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUiColonwidgetUndefined: Self = StObject.set(x, "ui:widget", js.undefined)
+    inline def setUiColonwidgetUndefined: Self = StObject.set(x, "ui:widget", js.undefined)
   }
 }

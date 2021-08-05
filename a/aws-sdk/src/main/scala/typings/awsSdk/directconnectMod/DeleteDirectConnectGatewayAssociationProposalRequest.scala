@@ -13,16 +13,13 @@ trait DeleteDirectConnectGatewayAssociationProposalRequest extends StObject {
 }
 object DeleteDirectConnectGatewayAssociationProposalRequest {
   
-  @scala.inline
-  def apply(proposalId: DirectConnectGatewayAssociationProposalId): DeleteDirectConnectGatewayAssociationProposalRequest = {
+  inline def apply(proposalId: DirectConnectGatewayAssociationProposalId): DeleteDirectConnectGatewayAssociationProposalRequest = {
     val __obj = js.Dynamic.literal(proposalId = proposalId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteDirectConnectGatewayAssociationProposalRequest]
   }
   
-  @scala.inline
-  implicit class DeleteDirectConnectGatewayAssociationProposalRequestMutableBuilder[Self <: DeleteDirectConnectGatewayAssociationProposalRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteDirectConnectGatewayAssociationProposalRequest](x: Self) {
     
-    @scala.inline
-    def setProposalId(value: DirectConnectGatewayAssociationProposalId): Self = StObject.set(x, "proposalId", value.asInstanceOf[js.Any])
+    inline def setProposalId(value: DirectConnectGatewayAssociationProposalId): Self = StObject.set(x, "proposalId", value.asInstanceOf[js.Any])
   }
 }

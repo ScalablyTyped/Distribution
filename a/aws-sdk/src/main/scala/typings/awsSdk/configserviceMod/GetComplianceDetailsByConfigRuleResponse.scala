@@ -18,28 +18,21 @@ trait GetComplianceDetailsByConfigRuleResponse extends StObject {
 }
 object GetComplianceDetailsByConfigRuleResponse {
   
-  @scala.inline
-  def apply(): GetComplianceDetailsByConfigRuleResponse = {
+  inline def apply(): GetComplianceDetailsByConfigRuleResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetComplianceDetailsByConfigRuleResponse]
   }
   
-  @scala.inline
-  implicit class GetComplianceDetailsByConfigRuleResponseMutableBuilder[Self <: GetComplianceDetailsByConfigRuleResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetComplianceDetailsByConfigRuleResponse](x: Self) {
     
-    @scala.inline
-    def setEvaluationResults(value: EvaluationResults): Self = StObject.set(x, "EvaluationResults", value.asInstanceOf[js.Any])
+    inline def setEvaluationResults(value: EvaluationResults): Self = StObject.set(x, "EvaluationResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluationResultsUndefined: Self = StObject.set(x, "EvaluationResults", js.undefined)
+    inline def setEvaluationResultsUndefined: Self = StObject.set(x, "EvaluationResults", js.undefined)
     
-    @scala.inline
-    def setEvaluationResultsVarargs(value: EvaluationResult*): Self = StObject.set(x, "EvaluationResults", js.Array(value :_*))
+    inline def setEvaluationResultsVarargs(value: EvaluationResult*): Self = StObject.set(x, "EvaluationResults", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -23,19 +23,15 @@ trait InsertSymbolCommand extends StObject {
 }
 object InsertSymbolCommand {
   
-  @scala.inline
-  def apply(execute: (String, String) => Boolean, getState: () => SimpleCommandState): InsertSymbolCommand = {
+  inline def apply(execute: (String, String) => Boolean, getState: () => SimpleCommandState): InsertSymbolCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction2(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[InsertSymbolCommand]
   }
   
-  @scala.inline
-  implicit class InsertSymbolCommandMutableBuilder[Self <: InsertSymbolCommand] (val x: Self) extends AnyVal {
+  extension [Self <: InsertSymbolCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: (String, String) => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction2(value))
+    inline def setExecute(value: (String, String) => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetState(value: () => SimpleCommandState): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+    inline def setGetState(value: () => SimpleCommandState): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
   }
 }

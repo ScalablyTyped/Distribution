@@ -23,16 +23,12 @@ object ParseError {
   @js.native
   val ^ : Instantiable0[ParseError] = js.native
   
-  @scala.inline
-  implicit class ParseErrorMutableBuilder[Self <: ParseError] (val x: Self) extends AnyVal {
+  extension [Self <: ParseError](x: Self) {
     
-    @scala.inline
-    def setName(value: typings.got.gotStrings.ParseError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: typings.got.gotStrings.ParseError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: String): Self = StObject.set(x, "statusMessage", value.asInstanceOf[js.Any])
   }
 }

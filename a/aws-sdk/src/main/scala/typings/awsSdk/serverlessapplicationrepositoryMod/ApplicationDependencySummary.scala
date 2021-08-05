@@ -18,19 +18,15 @@ trait ApplicationDependencySummary extends StObject {
 }
 object ApplicationDependencySummary {
   
-  @scala.inline
-  def apply(ApplicationId: string, SemanticVersion: string): ApplicationDependencySummary = {
+  inline def apply(ApplicationId: string, SemanticVersion: string): ApplicationDependencySummary = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], SemanticVersion = SemanticVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApplicationDependencySummary]
   }
   
-  @scala.inline
-  implicit class ApplicationDependencySummaryMutableBuilder[Self <: ApplicationDependencySummary] (val x: Self) extends AnyVal {
+  extension [Self <: ApplicationDependencySummary](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSemanticVersion(value: string): Self = StObject.set(x, "SemanticVersion", value.asInstanceOf[js.Any])
+    inline def setSemanticVersion(value: string): Self = StObject.set(x, "SemanticVersion", value.asInstanceOf[js.Any])
   }
 }

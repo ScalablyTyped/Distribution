@@ -33,49 +33,35 @@ trait DescribeIpv6PoolsRequest extends StObject {
 }
 object DescribeIpv6PoolsRequest {
   
-  @scala.inline
-  def apply(): DescribeIpv6PoolsRequest = {
+  inline def apply(): DescribeIpv6PoolsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeIpv6PoolsRequest]
   }
   
-  @scala.inline
-  implicit class DescribeIpv6PoolsRequestMutableBuilder[Self <: DescribeIpv6PoolsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeIpv6PoolsRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: Filter*): Self = StObject.set(x, "Filters", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: Ipv6PoolMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Ipv6PoolMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPoolIds(value: Ipv6PoolIdList): Self = StObject.set(x, "PoolIds", value.asInstanceOf[js.Any])
+    inline def setPoolIds(value: Ipv6PoolIdList): Self = StObject.set(x, "PoolIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPoolIdsUndefined: Self = StObject.set(x, "PoolIds", js.undefined)
+    inline def setPoolIdsUndefined: Self = StObject.set(x, "PoolIds", js.undefined)
     
-    @scala.inline
-    def setPoolIdsVarargs(value: Ipv6PoolEc2Id*): Self = StObject.set(x, "PoolIds", js.Array(value :_*))
+    inline def setPoolIdsVarargs(value: Ipv6PoolEc2Id*): Self = StObject.set(x, "PoolIds", js.Array(value :_*))
   }
 }

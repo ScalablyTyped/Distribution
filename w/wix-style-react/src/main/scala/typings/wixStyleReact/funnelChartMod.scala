@@ -22,23 +22,18 @@ object funnelChartMod {
   }
   object FunnelChartItem {
     
-    @scala.inline
-    def apply(label: String): FunnelChartItem = {
+    inline def apply(label: String): FunnelChartItem = {
       val __obj = js.Dynamic.literal(label = label.asInstanceOf[js.Any])
       __obj.asInstanceOf[FunnelChartItem]
     }
     
-    @scala.inline
-    implicit class FunnelChartItemMutableBuilder[Self <: FunnelChartItem] (val x: Self) extends AnyVal {
+    extension [Self <: FunnelChartItem](x: Self) {
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -58,50 +53,36 @@ object funnelChartMod {
   }
   object FunnelChartProps {
     
-    @scala.inline
-    def apply(data: js.Array[FunnelChartItem]): FunnelChartProps = {
+    inline def apply(data: js.Array[FunnelChartItem]): FunnelChartProps = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[FunnelChartProps]
     }
     
-    @scala.inline
-    implicit class FunnelChartPropsMutableBuilder[Self <: FunnelChartProps] (val x: Self) extends AnyVal {
+    extension [Self <: FunnelChartProps](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Array[FunnelChartItem]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Array[FunnelChartItem]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setDataVarargs(value: FunnelChartItem*): Self = StObject.set(x, "data", js.Array(value :_*))
+      inline def setDataVarargs(value: FunnelChartItem*): Self = StObject.set(x, "data", js.Array(value :_*))
       
-      @scala.inline
-      def setDifferenceBadgeTooltipContent(value: /* hasCurrentIndexDifference */ percentageDifferenceCbData => String): Self = StObject.set(x, "differenceBadgeTooltipContent", js.Any.fromFunction1(value))
+      inline def setDifferenceBadgeTooltipContent(value: /* hasCurrentIndexDifference */ percentageDifferenceCbData => String): Self = StObject.set(x, "differenceBadgeTooltipContent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDifferenceBadgeTooltipContentUndefined: Self = StObject.set(x, "differenceBadgeTooltipContent", js.undefined)
+      inline def setDifferenceBadgeTooltipContentUndefined: Self = StObject.set(x, "differenceBadgeTooltipContent", js.undefined)
       
-      @scala.inline
-      def setHideDifferenceBadge(value: Boolean): Self = StObject.set(x, "hideDifferenceBadge", value.asInstanceOf[js.Any])
+      inline def setHideDifferenceBadge(value: Boolean): Self = StObject.set(x, "hideDifferenceBadge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideDifferenceBadgeUndefined: Self = StObject.set(x, "hideDifferenceBadge", js.undefined)
+      inline def setHideDifferenceBadgeUndefined: Self = StObject.set(x, "hideDifferenceBadge", js.undefined)
       
-      @scala.inline
-      def setOnDifferenceBadgeTooltipShow(value: /* hasCurrentIndexDifference */ percentageDifferenceCbData => Unit): Self = StObject.set(x, "onDifferenceBadgeTooltipShow", js.Any.fromFunction1(value))
+      inline def setOnDifferenceBadgeTooltipShow(value: /* hasCurrentIndexDifference */ percentageDifferenceCbData => Unit): Self = StObject.set(x, "onDifferenceBadgeTooltipShow", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnDifferenceBadgeTooltipShowUndefined: Self = StObject.set(x, "onDifferenceBadgeTooltipShow", js.undefined)
+      inline def setOnDifferenceBadgeTooltipShowUndefined: Self = StObject.set(x, "onDifferenceBadgeTooltipShow", js.undefined)
     }
   }
   
@@ -113,20 +94,16 @@ object funnelChartMod {
   }
   object percentageDifferenceCbData {
     
-    @scala.inline
-    def apply(currentIndex: Double, difference: String): percentageDifferenceCbData = {
+    inline def apply(currentIndex: Double, difference: String): percentageDifferenceCbData = {
       val __obj = js.Dynamic.literal(currentIndex = currentIndex.asInstanceOf[js.Any], difference = difference.asInstanceOf[js.Any])
       __obj.asInstanceOf[percentageDifferenceCbData]
     }
     
-    @scala.inline
-    implicit class percentageDifferenceCbDataMutableBuilder[Self <: percentageDifferenceCbData] (val x: Self) extends AnyVal {
+    extension [Self <: percentageDifferenceCbData](x: Self) {
       
-      @scala.inline
-      def setCurrentIndex(value: Double): Self = StObject.set(x, "currentIndex", value.asInstanceOf[js.Any])
+      inline def setCurrentIndex(value: Double): Self = StObject.set(x, "currentIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDifference(value: String): Self = StObject.set(x, "difference", value.asInstanceOf[js.Any])
+      inline def setDifference(value: String): Self = StObject.set(x, "difference", value.asInstanceOf[js.Any])
     }
   }
 }

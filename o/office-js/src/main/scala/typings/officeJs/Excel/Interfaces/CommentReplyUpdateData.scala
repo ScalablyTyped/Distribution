@@ -17,19 +17,15 @@ trait CommentReplyUpdateData extends StObject {
 }
 object CommentReplyUpdateData {
   
-  @scala.inline
-  def apply(): CommentReplyUpdateData = {
+  inline def apply(): CommentReplyUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CommentReplyUpdateData]
   }
   
-  @scala.inline
-  implicit class CommentReplyUpdateDataMutableBuilder[Self <: CommentReplyUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: CommentReplyUpdateData](x: Self) {
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
   }
 }

@@ -12,16 +12,13 @@ trait TypeofFieldPath extends StObject {
 }
 object TypeofFieldPath {
   
-  @scala.inline
-  def apply(documentId: () => FieldPath): TypeofFieldPath = {
+  inline def apply(documentId: () => FieldPath): TypeofFieldPath = {
     val __obj = js.Dynamic.literal(documentId = js.Any.fromFunction0(documentId))
     __obj.asInstanceOf[TypeofFieldPath]
   }
   
-  @scala.inline
-  implicit class TypeofFieldPathMutableBuilder[Self <: TypeofFieldPath] (val x: Self) extends AnyVal {
+  extension [Self <: TypeofFieldPath](x: Self) {
     
-    @scala.inline
-    def setDocumentId(value: () => FieldPath): Self = StObject.set(x, "documentId", js.Any.fromFunction0(value))
+    inline def setDocumentId(value: () => FieldPath): Self = StObject.set(x, "documentId", js.Any.fromFunction0(value))
   }
 }

@@ -28,37 +28,27 @@ trait ListGeoLocationsRequest extends StObject {
 }
 object ListGeoLocationsRequest {
   
-  @scala.inline
-  def apply(): ListGeoLocationsRequest = {
+  inline def apply(): ListGeoLocationsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListGeoLocationsRequest]
   }
   
-  @scala.inline
-  implicit class ListGeoLocationsRequestMutableBuilder[Self <: ListGeoLocationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ListGeoLocationsRequest](x: Self) {
     
-    @scala.inline
-    def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
+    inline def setMaxItems(value: PageMaxItems): Self = StObject.set(x, "MaxItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
+    inline def setMaxItemsUndefined: Self = StObject.set(x, "MaxItems", js.undefined)
     
-    @scala.inline
-    def setStartContinentCode(value: GeoLocationContinentCode): Self = StObject.set(x, "StartContinentCode", value.asInstanceOf[js.Any])
+    inline def setStartContinentCode(value: GeoLocationContinentCode): Self = StObject.set(x, "StartContinentCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartContinentCodeUndefined: Self = StObject.set(x, "StartContinentCode", js.undefined)
+    inline def setStartContinentCodeUndefined: Self = StObject.set(x, "StartContinentCode", js.undefined)
     
-    @scala.inline
-    def setStartCountryCode(value: GeoLocationCountryCode): Self = StObject.set(x, "StartCountryCode", value.asInstanceOf[js.Any])
+    inline def setStartCountryCode(value: GeoLocationCountryCode): Self = StObject.set(x, "StartCountryCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartCountryCodeUndefined: Self = StObject.set(x, "StartCountryCode", js.undefined)
+    inline def setStartCountryCodeUndefined: Self = StObject.set(x, "StartCountryCode", js.undefined)
     
-    @scala.inline
-    def setStartSubdivisionCode(value: GeoLocationSubdivisionCode): Self = StObject.set(x, "StartSubdivisionCode", value.asInstanceOf[js.Any])
+    inline def setStartSubdivisionCode(value: GeoLocationSubdivisionCode): Self = StObject.set(x, "StartSubdivisionCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartSubdivisionCodeUndefined: Self = StObject.set(x, "StartSubdivisionCode", js.undefined)
+    inline def setStartSubdivisionCodeUndefined: Self = StObject.set(x, "StartSubdivisionCode", js.undefined)
   }
 }

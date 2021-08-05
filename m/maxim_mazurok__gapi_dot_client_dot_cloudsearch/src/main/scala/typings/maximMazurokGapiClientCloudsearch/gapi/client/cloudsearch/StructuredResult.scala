@@ -11,19 +11,15 @@ trait StructuredResult extends StObject {
 }
 object StructuredResult {
   
-  @scala.inline
-  def apply(): StructuredResult = {
+  inline def apply(): StructuredResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StructuredResult]
   }
   
-  @scala.inline
-  implicit class StructuredResultMutableBuilder[Self <: StructuredResult] (val x: Self) extends AnyVal {
+  extension [Self <: StructuredResult](x: Self) {
     
-    @scala.inline
-    def setPerson(value: Person): Self = StObject.set(x, "person", value.asInstanceOf[js.Any])
+    inline def setPerson(value: Person): Self = StObject.set(x, "person", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersonUndefined: Self = StObject.set(x, "person", js.undefined)
+    inline def setPersonUndefined: Self = StObject.set(x, "person", js.undefined)
   }
 }

@@ -61,8 +61,7 @@ object cookiesMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromString(content: String): Cookie = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(content.asInstanceOf[js.Any]).asInstanceOf[Cookie]
+    inline def fromString(content: String): Cookie = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(content.asInstanceOf[js.Any]).asInstanceOf[Cookie]
   }
   
   @js.native

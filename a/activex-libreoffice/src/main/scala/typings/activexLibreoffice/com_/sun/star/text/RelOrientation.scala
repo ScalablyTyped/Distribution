@@ -31,34 +31,24 @@ object RelOrientation {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def CHAR: `2` = 2.asInstanceOf[`2`]
+    inline def CHAR: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def FRAME: `0` = 0.asInstanceOf[`0`]
+    inline def FRAME: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def FRAME_LEFT: `5` = 5.asInstanceOf[`5`]
+    inline def FRAME_LEFT: `5` = 5.asInstanceOf[`5`]
     
-    @scala.inline
-    def FRAME_RIGHT: `6` = 6.asInstanceOf[`6`]
+    inline def FRAME_RIGHT: `6` = 6.asInstanceOf[`6`]
     
-    @scala.inline
-    def PAGE_FRAME: `7` = 7.asInstanceOf[`7`]
+    inline def PAGE_FRAME: `7` = 7.asInstanceOf[`7`]
     
-    @scala.inline
-    def PAGE_LEFT: `3` = 3.asInstanceOf[`3`]
+    inline def PAGE_LEFT: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def PAGE_PRINT_AREA: `8` = 8.asInstanceOf[`8`]
+    inline def PAGE_PRINT_AREA: `8` = 8.asInstanceOf[`8`]
     
-    @scala.inline
-    def PAGE_RIGHT: `4` = 4.asInstanceOf[`4`]
+    inline def PAGE_RIGHT: `4` = 4.asInstanceOf[`4`]
     
-    @scala.inline
-    def PRINT_AREA: `1` = 1.asInstanceOf[`1`]
+    inline def PRINT_AREA: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def TEXT_LINE: `9` = 9.asInstanceOf[`9`]
+    inline def TEXT_LINE: `9` = 9.asInstanceOf[`9`]
   }
 }

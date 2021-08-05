@@ -8,11 +8,9 @@ object linkifyUrlsStrings {
   
   @js.native
   sealed trait dom extends StObject
-  @scala.inline
-  def dom: dom = "dom".asInstanceOf[dom]
+  inline def dom: dom = "dom".asInstanceOf[dom]
   
   @js.native
   sealed trait string extends StObject
-  @scala.inline
-  def string: string = "string".asInstanceOf[string]
+  inline def string: string = "string".asInstanceOf[string]
 }

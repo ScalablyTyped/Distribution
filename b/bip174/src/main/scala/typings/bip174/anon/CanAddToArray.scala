@@ -21,8 +21,7 @@ trait CanAddToArray extends StObject {
 }
 object CanAddToArray {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     canAddToArray: (js.Array[Bip32Derivation], Bip32Derivation, Set[String]) => Boolean,
     check: js.Any => /* is bip174.bip174/src/lib/interfaces.Bip32Derivation */ Boolean,
     decode: KeyValue => Bip32Derivation,
@@ -33,22 +32,16 @@ object CanAddToArray {
     __obj.asInstanceOf[CanAddToArray]
   }
   
-  @scala.inline
-  implicit class CanAddToArrayMutableBuilder[Self <: CanAddToArray] (val x: Self) extends AnyVal {
+  extension [Self <: CanAddToArray](x: Self) {
     
-    @scala.inline
-    def setCanAddToArray(value: (js.Array[Bip32Derivation], Bip32Derivation, Set[String]) => Boolean): Self = StObject.set(x, "canAddToArray", js.Any.fromFunction3(value))
+    inline def setCanAddToArray(value: (js.Array[Bip32Derivation], Bip32Derivation, Set[String]) => Boolean): Self = StObject.set(x, "canAddToArray", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setCheck(value: js.Any => /* is bip174.bip174/src/lib/interfaces.Bip32Derivation */ Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
+    inline def setCheck(value: js.Any => /* is bip174.bip174/src/lib/interfaces.Bip32Derivation */ Boolean): Self = StObject.set(x, "check", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDecode(value: KeyValue => Bip32Derivation): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
+    inline def setDecode(value: KeyValue => Bip32Derivation): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setEncode(value: Bip32Derivation => KeyValue): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+    inline def setEncode(value: Bip32Derivation => KeyValue): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setExpected(value: String): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
+    inline def setExpected(value: String): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
   }
 }

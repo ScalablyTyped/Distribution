@@ -18,25 +18,19 @@ trait UsageInstruction extends StObject {
 }
 object UsageInstruction {
   
-  @scala.inline
-  def apply(): UsageInstruction = {
+  inline def apply(): UsageInstruction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UsageInstruction]
   }
   
-  @scala.inline
-  implicit class UsageInstructionMutableBuilder[Self <: UsageInstruction] (val x: Self) extends AnyVal {
+  extension [Self <: UsageInstruction](x: Self) {
     
-    @scala.inline
-    def setType(value: InstructionType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: InstructionType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
-    @scala.inline
-    def setValue(value: InstructionValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: InstructionValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

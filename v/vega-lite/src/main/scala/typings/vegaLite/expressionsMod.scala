@@ -11,6 +11,5 @@ object expressionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getDependentFields(expression: String): Set[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDependentFields")(expression.asInstanceOf[js.Any]).asInstanceOf[Set[String]]
+  inline def getDependentFields(expression: String): Set[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDependentFields")(expression.asInstanceOf[js.Any]).asInstanceOf[Set[String]]
 }

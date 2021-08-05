@@ -26,8 +26,7 @@ trait WorkItemTypeFieldModel extends StObject {
 }
 object WorkItemTypeFieldModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allowGroups: Boolean,
     defaultValue: String,
     name: String,
@@ -43,34 +42,24 @@ object WorkItemTypeFieldModel {
     __obj.asInstanceOf[WorkItemTypeFieldModel]
   }
   
-  @scala.inline
-  implicit class WorkItemTypeFieldModelMutableBuilder[Self <: WorkItemTypeFieldModel] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItemTypeFieldModel](x: Self) {
     
-    @scala.inline
-    def setAllowGroups(value: Boolean): Self = StObject.set(x, "allowGroups", value.asInstanceOf[js.Any])
+    inline def setAllowGroups(value: Boolean): Self = StObject.set(x, "allowGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickList(value: PickListMetadataModel): Self = StObject.set(x, "pickList", value.asInstanceOf[js.Any])
+    inline def setPickList(value: PickListMetadataModel): Self = StObject.set(x, "pickList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+    inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceName(value: String): Self = StObject.set(x, "referenceName", value.asInstanceOf[js.Any])
+    inline def setReferenceName(value: String): Self = StObject.set(x, "referenceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+    inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: FieldType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: FieldType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

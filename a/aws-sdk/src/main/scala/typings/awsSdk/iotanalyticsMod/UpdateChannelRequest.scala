@@ -23,28 +23,21 @@ trait UpdateChannelRequest extends StObject {
 }
 object UpdateChannelRequest {
   
-  @scala.inline
-  def apply(channelName: ChannelName): UpdateChannelRequest = {
+  inline def apply(channelName: ChannelName): UpdateChannelRequest = {
     val __obj = js.Dynamic.literal(channelName = channelName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateChannelRequest]
   }
   
-  @scala.inline
-  implicit class UpdateChannelRequestMutableBuilder[Self <: UpdateChannelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateChannelRequest](x: Self) {
     
-    @scala.inline
-    def setChannelName(value: ChannelName): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
+    inline def setChannelName(value: ChannelName): Self = StObject.set(x, "channelName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelStorage(value: ChannelStorage): Self = StObject.set(x, "channelStorage", value.asInstanceOf[js.Any])
+    inline def setChannelStorage(value: ChannelStorage): Self = StObject.set(x, "channelStorage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelStorageUndefined: Self = StObject.set(x, "channelStorage", js.undefined)
+    inline def setChannelStorageUndefined: Self = StObject.set(x, "channelStorage", js.undefined)
     
-    @scala.inline
-    def setRetentionPeriod(value: RetentionPeriod): Self = StObject.set(x, "retentionPeriod", value.asInstanceOf[js.Any])
+    inline def setRetentionPeriod(value: RetentionPeriod): Self = StObject.set(x, "retentionPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetentionPeriodUndefined: Self = StObject.set(x, "retentionPeriod", js.undefined)
+    inline def setRetentionPeriodUndefined: Self = StObject.set(x, "retentionPeriod", js.undefined)
   }
 }

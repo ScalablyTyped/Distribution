@@ -24,28 +24,21 @@ trait MashupDataSourceMashupSettings
 }
 object MashupDataSourceMashupSettings {
   
-  @scala.inline
-  def apply(): MashupDataSourceMashupSettings = {
+  inline def apply(): MashupDataSourceMashupSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MashupDataSourceMashupSettings]
   }
   
-  @scala.inline
-  implicit class MashupDataSourceMashupSettingsMutableBuilder[Self <: MashupDataSourceMashupSettings] (val x: Self) extends AnyVal {
+  extension [Self <: MashupDataSourceMashupSettings](x: Self) {
     
-    @scala.inline
-    def setDataSource(value: js.Array[js.Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: js.Array[js.Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
-    @scala.inline
-    def setDataSourceVarargs(value: js.Any*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
+    inline def setDataSourceVarargs(value: js.Any*): Self = StObject.set(x, "dataSource", js.Array(value :_*))
     
-    @scala.inline
-    def setIgnorePartialRecords(value: Boolean): Self = StObject.set(x, "ignorePartialRecords", value.asInstanceOf[js.Any])
+    inline def setIgnorePartialRecords(value: Boolean): Self = StObject.set(x, "ignorePartialRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnorePartialRecordsUndefined: Self = StObject.set(x, "ignorePartialRecords", js.undefined)
+    inline def setIgnorePartialRecordsUndefined: Self = StObject.set(x, "ignorePartialRecords", js.undefined)
   }
 }

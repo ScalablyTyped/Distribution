@@ -137,142 +137,97 @@ trait PaginationOptions extends StObject {
 }
 object PaginationOptions {
   
-  @scala.inline
-  def apply(el: SelectableElement): PaginationOptions = {
+  inline def apply(el: SelectableElement): PaginationOptions = {
     val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any])
     __obj.asInstanceOf[PaginationOptions]
   }
   
-  @scala.inline
-  implicit class PaginationOptionsMutableBuilder[Self <: PaginationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PaginationOptions](x: Self) {
     
-    @scala.inline
-    def setBulletActiveClass(value: String): Self = StObject.set(x, "bulletActiveClass", value.asInstanceOf[js.Any])
+    inline def setBulletActiveClass(value: String): Self = StObject.set(x, "bulletActiveClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulletActiveClassUndefined: Self = StObject.set(x, "bulletActiveClass", js.undefined)
+    inline def setBulletActiveClassUndefined: Self = StObject.set(x, "bulletActiveClass", js.undefined)
     
-    @scala.inline
-    def setBulletClass(value: String): Self = StObject.set(x, "bulletClass", value.asInstanceOf[js.Any])
+    inline def setBulletClass(value: String): Self = StObject.set(x, "bulletClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulletClassUndefined: Self = StObject.set(x, "bulletClass", js.undefined)
+    inline def setBulletClassUndefined: Self = StObject.set(x, "bulletClass", js.undefined)
     
-    @scala.inline
-    def setBulletElement(value: String): Self = StObject.set(x, "bulletElement", value.asInstanceOf[js.Any])
+    inline def setBulletElement(value: String): Self = StObject.set(x, "bulletElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBulletElementUndefined: Self = StObject.set(x, "bulletElement", js.undefined)
+    inline def setBulletElementUndefined: Self = StObject.set(x, "bulletElement", js.undefined)
     
-    @scala.inline
-    def setClickable(value: Boolean): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
+    inline def setClickable(value: Boolean): Self = StObject.set(x, "clickable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickableClass(value: String): Self = StObject.set(x, "clickableClass", value.asInstanceOf[js.Any])
+    inline def setClickableClass(value: String): Self = StObject.set(x, "clickableClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClickableClassUndefined: Self = StObject.set(x, "clickableClass", js.undefined)
+    inline def setClickableClassUndefined: Self = StObject.set(x, "clickableClass", js.undefined)
     
-    @scala.inline
-    def setClickableUndefined: Self = StObject.set(x, "clickable", js.undefined)
+    inline def setClickableUndefined: Self = StObject.set(x, "clickable", js.undefined)
     
-    @scala.inline
-    def setCurrentClass(value: String): Self = StObject.set(x, "currentClass", value.asInstanceOf[js.Any])
+    inline def setCurrentClass(value: String): Self = StObject.set(x, "currentClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentClassUndefined: Self = StObject.set(x, "currentClass", js.undefined)
+    inline def setCurrentClassUndefined: Self = StObject.set(x, "currentClass", js.undefined)
     
-    @scala.inline
-    def setDynamicBullets(value: Boolean): Self = StObject.set(x, "dynamicBullets", value.asInstanceOf[js.Any])
+    inline def setDynamicBullets(value: Boolean): Self = StObject.set(x, "dynamicBullets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicBulletsUndefined: Self = StObject.set(x, "dynamicBullets", js.undefined)
+    inline def setDynamicBulletsUndefined: Self = StObject.set(x, "dynamicBullets", js.undefined)
     
-    @scala.inline
-    def setDynamicMainBullets(value: Double): Self = StObject.set(x, "dynamicMainBullets", value.asInstanceOf[js.Any])
+    inline def setDynamicMainBullets(value: Double): Self = StObject.set(x, "dynamicMainBullets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDynamicMainBulletsUndefined: Self = StObject.set(x, "dynamicMainBullets", js.undefined)
+    inline def setDynamicMainBulletsUndefined: Self = StObject.set(x, "dynamicMainBullets", js.undefined)
     
-    @scala.inline
-    def setEl(value: SelectableElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+    inline def setEl(value: SelectableElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatFractionCurrent(value: /* number */ Double => Double): Self = StObject.set(x, "formatFractionCurrent", js.Any.fromFunction1(value))
+    inline def setFormatFractionCurrent(value: /* number */ Double => Double): Self = StObject.set(x, "formatFractionCurrent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFormatFractionCurrentUndefined: Self = StObject.set(x, "formatFractionCurrent", js.undefined)
+    inline def setFormatFractionCurrentUndefined: Self = StObject.set(x, "formatFractionCurrent", js.undefined)
     
-    @scala.inline
-    def setFormatFractionTotal(value: /* number */ Double => Double): Self = StObject.set(x, "formatFractionTotal", js.Any.fromFunction1(value))
+    inline def setFormatFractionTotal(value: /* number */ Double => Double): Self = StObject.set(x, "formatFractionTotal", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFormatFractionTotalUndefined: Self = StObject.set(x, "formatFractionTotal", js.undefined)
+    inline def setFormatFractionTotalUndefined: Self = StObject.set(x, "formatFractionTotal", js.undefined)
     
-    @scala.inline
-    def setHiddenClass(value: String): Self = StObject.set(x, "hiddenClass", value.asInstanceOf[js.Any])
+    inline def setHiddenClass(value: String): Self = StObject.set(x, "hiddenClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenClassUndefined: Self = StObject.set(x, "hiddenClass", js.undefined)
+    inline def setHiddenClassUndefined: Self = StObject.set(x, "hiddenClass", js.undefined)
     
-    @scala.inline
-    def setHideOnClick(value: Boolean): Self = StObject.set(x, "hideOnClick", value.asInstanceOf[js.Any])
+    inline def setHideOnClick(value: Boolean): Self = StObject.set(x, "hideOnClick", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHideOnClickUndefined: Self = StObject.set(x, "hideOnClick", js.undefined)
+    inline def setHideOnClickUndefined: Self = StObject.set(x, "hideOnClick", js.undefined)
     
-    @scala.inline
-    def setModifierClass(value: String): Self = StObject.set(x, "modifierClass", value.asInstanceOf[js.Any])
+    inline def setModifierClass(value: String): Self = StObject.set(x, "modifierClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifierClassUndefined: Self = StObject.set(x, "modifierClass", js.undefined)
+    inline def setModifierClassUndefined: Self = StObject.set(x, "modifierClass", js.undefined)
     
-    @scala.inline
-    def setProgressbarFillClass(value: String): Self = StObject.set(x, "progressbarFillClass", value.asInstanceOf[js.Any])
+    inline def setProgressbarFillClass(value: String): Self = StObject.set(x, "progressbarFillClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressbarFillClassUndefined: Self = StObject.set(x, "progressbarFillClass", js.undefined)
+    inline def setProgressbarFillClassUndefined: Self = StObject.set(x, "progressbarFillClass", js.undefined)
     
-    @scala.inline
-    def setProgressbarOpposite(value: Boolean): Self = StObject.set(x, "progressbarOpposite", value.asInstanceOf[js.Any])
+    inline def setProgressbarOpposite(value: Boolean): Self = StObject.set(x, "progressbarOpposite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressbarOppositeUndefined: Self = StObject.set(x, "progressbarOpposite", js.undefined)
+    inline def setProgressbarOppositeUndefined: Self = StObject.set(x, "progressbarOpposite", js.undefined)
     
-    @scala.inline
-    def setRenderBullet(value: (/* index */ Double, /* className */ String) => Unit): Self = StObject.set(x, "renderBullet", js.Any.fromFunction2(value))
+    inline def setRenderBullet(value: (/* index */ Double, /* className */ String) => Unit): Self = StObject.set(x, "renderBullet", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRenderBulletUndefined: Self = StObject.set(x, "renderBullet", js.undefined)
+    inline def setRenderBulletUndefined: Self = StObject.set(x, "renderBullet", js.undefined)
     
-    @scala.inline
-    def setRenderCustom(value: (/* swiper */ Swiper, /* current */ Double, /* total */ Double) => Unit): Self = StObject.set(x, "renderCustom", js.Any.fromFunction3(value))
+    inline def setRenderCustom(value: (/* swiper */ Swiper, /* current */ Double, /* total */ Double) => Unit): Self = StObject.set(x, "renderCustom", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setRenderCustomUndefined: Self = StObject.set(x, "renderCustom", js.undefined)
+    inline def setRenderCustomUndefined: Self = StObject.set(x, "renderCustom", js.undefined)
     
-    @scala.inline
-    def setRenderFraction(value: (/* currentClass */ String, /* totalClass */ String) => Unit): Self = StObject.set(x, "renderFraction", js.Any.fromFunction2(value))
+    inline def setRenderFraction(value: (/* currentClass */ String, /* totalClass */ String) => Unit): Self = StObject.set(x, "renderFraction", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRenderFractionUndefined: Self = StObject.set(x, "renderFraction", js.undefined)
+    inline def setRenderFractionUndefined: Self = StObject.set(x, "renderFraction", js.undefined)
     
-    @scala.inline
-    def setRenderProgressbar(value: /* progressbarFillClass */ String => Unit): Self = StObject.set(x, "renderProgressbar", js.Any.fromFunction1(value))
+    inline def setRenderProgressbar(value: /* progressbarFillClass */ String => Unit): Self = StObject.set(x, "renderProgressbar", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenderProgressbarUndefined: Self = StObject.set(x, "renderProgressbar", js.undefined)
+    inline def setRenderProgressbarUndefined: Self = StObject.set(x, "renderProgressbar", js.undefined)
     
-    @scala.inline
-    def setTotalClass(value: String): Self = StObject.set(x, "totalClass", value.asInstanceOf[js.Any])
+    inline def setTotalClass(value: String): Self = StObject.set(x, "totalClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalClassUndefined: Self = StObject.set(x, "totalClass", js.undefined)
+    inline def setTotalClassUndefined: Self = StObject.set(x, "totalClass", js.undefined)
     
-    @scala.inline
-    def setType(value: bullets | fraction | progressbar | custom): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: bullets | fraction | progressbar | custom): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

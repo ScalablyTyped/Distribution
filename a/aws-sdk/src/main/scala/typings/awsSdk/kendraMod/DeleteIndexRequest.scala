@@ -13,16 +13,13 @@ trait DeleteIndexRequest extends StObject {
 }
 object DeleteIndexRequest {
   
-  @scala.inline
-  def apply(Id: IndexId): DeleteIndexRequest = {
+  inline def apply(Id: IndexId): DeleteIndexRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteIndexRequest]
   }
   
-  @scala.inline
-  implicit class DeleteIndexRequestMutableBuilder[Self <: DeleteIndexRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteIndexRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: IndexId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: IndexId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

@@ -19,19 +19,15 @@ trait ChartAxisYOptions
 }
 object ChartAxisYOptions {
   
-  @scala.inline
-  def apply(): ChartAxisYOptions = {
+  inline def apply(): ChartAxisYOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartAxisYOptions]
   }
   
-  @scala.inline
-  implicit class ChartAxisYOptionsMutableBuilder[Self <: ChartAxisYOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChartAxisYOptions](x: Self) {
     
-    @scala.inline
-    def setIncludeZero(value: Boolean): Self = StObject.set(x, "includeZero", value.asInstanceOf[js.Any])
+    inline def setIncludeZero(value: Boolean): Self = StObject.set(x, "includeZero", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeZeroUndefined: Self = StObject.set(x, "includeZero", js.undefined)
+    inline def setIncludeZeroUndefined: Self = StObject.set(x, "includeZero", js.undefined)
   }
 }

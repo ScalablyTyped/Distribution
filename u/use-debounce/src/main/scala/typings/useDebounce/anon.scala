@@ -18,38 +18,28 @@ object anon {
   }
   object EqualityFn {
     
-    @scala.inline
-    def apply[T](): EqualityFn[T] = {
+    inline def apply[T](): EqualityFn[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EqualityFn[T]]
     }
     
-    @scala.inline
-    implicit class EqualityFnMutableBuilder[Self <: EqualityFn[?], T] (val x: Self & EqualityFn[T]) extends AnyVal {
+    extension [Self <: EqualityFn[?], T](x: Self & EqualityFn[T]) {
       
-      @scala.inline
-      def setEqualityFn(value: (/* left */ T, /* right */ T) => Boolean): Self = StObject.set(x, "equalityFn", js.Any.fromFunction2(value))
+      inline def setEqualityFn(value: (/* left */ T, /* right */ T) => Boolean): Self = StObject.set(x, "equalityFn", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setEqualityFnUndefined: Self = StObject.set(x, "equalityFn", js.undefined)
+      inline def setEqualityFnUndefined: Self = StObject.set(x, "equalityFn", js.undefined)
       
-      @scala.inline
-      def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
+      inline def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
+      inline def setLeadingUndefined: Self = StObject.set(x, "leading", js.undefined)
       
-      @scala.inline
-      def setMaxWait(value: Double): Self = StObject.set(x, "maxWait", value.asInstanceOf[js.Any])
+      inline def setMaxWait(value: Double): Self = StObject.set(x, "maxWait", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWaitUndefined: Self = StObject.set(x, "maxWait", js.undefined)
+      inline def setMaxWaitUndefined: Self = StObject.set(x, "maxWait", js.undefined)
       
-      @scala.inline
-      def setTrailing(value: Boolean): Self = StObject.set(x, "trailing", value.asInstanceOf[js.Any])
+      inline def setTrailing(value: Boolean): Self = StObject.set(x, "trailing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrailingUndefined: Self = StObject.set(x, "trailing", js.undefined)
+      inline def setTrailingUndefined: Self = StObject.set(x, "trailing", js.undefined)
     }
   }
 }

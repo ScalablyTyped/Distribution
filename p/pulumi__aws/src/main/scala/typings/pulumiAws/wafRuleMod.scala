@@ -67,21 +67,16 @@ object wafRuleMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): Rule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Rule]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Rule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Rule]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: RuleState): Rule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Rule]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: RuleState, opts: CustomResourceOptions): Rule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Rule]
+    inline def get(name: String, id: Input[ID]): Rule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Rule]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Rule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Rule]
+    inline def get(name: String, id: Input[ID], state: RuleState): Rule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Rule]
+    inline def get(name: String, id: Input[ID], state: RuleState, opts: CustomResourceOptions): Rule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Rule]
     
     /**
       * Returns true if the given object is an instance of Rule.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/rule.Rule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/waf/rule.Rule */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/rule.Rule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/waf/rule.Rule */ Boolean]
   }
   
   trait RuleArgs extends StObject {
@@ -108,38 +103,28 @@ object wafRuleMod {
   }
   object RuleArgs {
     
-    @scala.inline
-    def apply(metricName: Input[String]): RuleArgs = {
+    inline def apply(metricName: Input[String]): RuleArgs = {
       val __obj = js.Dynamic.literal(metricName = metricName.asInstanceOf[js.Any])
       __obj.asInstanceOf[RuleArgs]
     }
     
-    @scala.inline
-    implicit class RuleArgsMutableBuilder[Self <: RuleArgs] (val x: Self) extends AnyVal {
+    extension [Self <: RuleArgs](x: Self) {
       
-      @scala.inline
-      def setMetricName(value: Input[String]): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
+      inline def setMetricName(value: Input[String]): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPredicates(value: Input[js.Array[Input[typings.pulumiAws.inputMod.waf.RulePredicate]]]): Self = StObject.set(x, "predicates", value.asInstanceOf[js.Any])
+      inline def setPredicates(value: Input[js.Array[Input[typings.pulumiAws.inputMod.waf.RulePredicate]]]): Self = StObject.set(x, "predicates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPredicatesUndefined: Self = StObject.set(x, "predicates", js.undefined)
+      inline def setPredicatesUndefined: Self = StObject.set(x, "predicates", js.undefined)
       
-      @scala.inline
-      def setPredicatesVarargs(value: Input[typings.pulumiAws.inputMod.waf.RulePredicate]*): Self = StObject.set(x, "predicates", js.Array(value :_*))
+      inline def setPredicatesVarargs(value: Input[typings.pulumiAws.inputMod.waf.RulePredicate]*): Self = StObject.set(x, "predicates", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -172,47 +157,34 @@ object wafRuleMod {
   }
   object RuleState {
     
-    @scala.inline
-    def apply(): RuleState = {
+    inline def apply(): RuleState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RuleState]
     }
     
-    @scala.inline
-    implicit class RuleStateMutableBuilder[Self <: RuleState] (val x: Self) extends AnyVal {
+    extension [Self <: RuleState](x: Self) {
       
-      @scala.inline
-      def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: Input[String]): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setMetricName(value: Input[String]): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
+      inline def setMetricName(value: Input[String]): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
+      inline def setMetricNameUndefined: Self = StObject.set(x, "metricName", js.undefined)
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPredicates(value: Input[js.Array[Input[typings.pulumiAws.inputMod.waf.RulePredicate]]]): Self = StObject.set(x, "predicates", value.asInstanceOf[js.Any])
+      inline def setPredicates(value: Input[js.Array[Input[typings.pulumiAws.inputMod.waf.RulePredicate]]]): Self = StObject.set(x, "predicates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPredicatesUndefined: Self = StObject.set(x, "predicates", js.undefined)
+      inline def setPredicatesUndefined: Self = StObject.set(x, "predicates", js.undefined)
       
-      @scala.inline
-      def setPredicatesVarargs(value: Input[typings.pulumiAws.inputMod.waf.RulePredicate]*): Self = StObject.set(x, "predicates", js.Array(value :_*))
+      inline def setPredicatesVarargs(value: Input[typings.pulumiAws.inputMod.waf.RulePredicate]*): Self = StObject.set(x, "predicates", js.Array(value :_*))
       
-      @scala.inline
-      def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: Input[StringDictionary[Input[String]]]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
 }

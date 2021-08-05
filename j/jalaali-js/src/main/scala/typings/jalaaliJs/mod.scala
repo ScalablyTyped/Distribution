@@ -11,37 +11,26 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def d2g(jdn: Double): GregorianDateObject = ^.asInstanceOf[js.Dynamic].applyDynamic("d2g")(jdn.asInstanceOf[js.Any]).asInstanceOf[GregorianDateObject]
+  inline def d2g(jdn: Double): GregorianDateObject = ^.asInstanceOf[js.Dynamic].applyDynamic("d2g")(jdn.asInstanceOf[js.Any]).asInstanceOf[GregorianDateObject]
   
-  @scala.inline
-  def d2j(jdn: Double): JalaaliDateObject = ^.asInstanceOf[js.Dynamic].applyDynamic("d2j")(jdn.asInstanceOf[js.Any]).asInstanceOf[JalaaliDateObject]
+  inline def d2j(jdn: Double): JalaaliDateObject = ^.asInstanceOf[js.Dynamic].applyDynamic("d2j")(jdn.asInstanceOf[js.Any]).asInstanceOf[JalaaliDateObject]
   
-  @scala.inline
-  def g2d(gy: Double, gm: Double, gd: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("g2d")(gy.asInstanceOf[js.Any], gm.asInstanceOf[js.Any], gd.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def g2d(gy: Double, gm: Double, gd: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("g2d")(gy.asInstanceOf[js.Any], gm.asInstanceOf[js.Any], gd.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def isLeapJalaaliYear(jy: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLeapJalaaliYear")(jy.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isLeapJalaaliYear(jy: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLeapJalaaliYear")(jy.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isValidJalaaliDate(jy: Double, jm: Double, jd: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidJalaaliDate")(jy.asInstanceOf[js.Any], jm.asInstanceOf[js.Any], jd.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def isValidJalaaliDate(jy: Double, jm: Double, jd: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidJalaaliDate")(jy.asInstanceOf[js.Any], jm.asInstanceOf[js.Any], jd.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @scala.inline
-  def j2d(jy: Double, jm: Double, jd: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("j2d")(jy.asInstanceOf[js.Any], jm.asInstanceOf[js.Any], jd.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def j2d(jy: Double, jm: Double, jd: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("j2d")(jy.asInstanceOf[js.Any], jm.asInstanceOf[js.Any], jd.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def jalCal(jy: Double): JalCalResult = ^.asInstanceOf[js.Dynamic].applyDynamic("jalCal")(jy.asInstanceOf[js.Any]).asInstanceOf[JalCalResult]
+  inline def jalCal(jy: Double): JalCalResult = ^.asInstanceOf[js.Dynamic].applyDynamic("jalCal")(jy.asInstanceOf[js.Any]).asInstanceOf[JalCalResult]
   
-  @scala.inline
-  def jalaaliMonthLength(jy: Double, jm: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("jalaaliMonthLength")(jy.asInstanceOf[js.Any], jm.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def jalaaliMonthLength(jy: Double, jm: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("jalaaliMonthLength")(jy.asInstanceOf[js.Any], jm.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @scala.inline
-  def toGregorian(jy: Double, jm: Double, jd: Double): GregorianDateObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toGregorian")(jy.asInstanceOf[js.Any], jm.asInstanceOf[js.Any], jd.asInstanceOf[js.Any])).asInstanceOf[GregorianDateObject]
+  inline def toGregorian(jy: Double, jm: Double, jd: Double): GregorianDateObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toGregorian")(jy.asInstanceOf[js.Any], jm.asInstanceOf[js.Any], jd.asInstanceOf[js.Any])).asInstanceOf[GregorianDateObject]
   
-  @scala.inline
-  def toJalaali(date: Date): JalaaliDateObject = ^.asInstanceOf[js.Dynamic].applyDynamic("toJalaali")(date.asInstanceOf[js.Any]).asInstanceOf[JalaaliDateObject]
-  @scala.inline
-  def toJalaali(gy: Double, gm: Double, gd: Double): JalaaliDateObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toJalaali")(gy.asInstanceOf[js.Any], gm.asInstanceOf[js.Any], gd.asInstanceOf[js.Any])).asInstanceOf[JalaaliDateObject]
+  inline def toJalaali(date: Date): JalaaliDateObject = ^.asInstanceOf[js.Dynamic].applyDynamic("toJalaali")(date.asInstanceOf[js.Any]).asInstanceOf[JalaaliDateObject]
+  inline def toJalaali(gy: Double, gm: Double, gd: Double): JalaaliDateObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toJalaali")(gy.asInstanceOf[js.Any], gm.asInstanceOf[js.Any], gd.asInstanceOf[js.Any])).asInstanceOf[JalaaliDateObject]
   
   trait GregorianDateObject extends StObject {
     
@@ -56,23 +45,18 @@ object mod {
   }
   object GregorianDateObject {
     
-    @scala.inline
-    def apply(gd: Double, gm: Double, gy: Double): GregorianDateObject = {
+    inline def apply(gd: Double, gm: Double, gy: Double): GregorianDateObject = {
       val __obj = js.Dynamic.literal(gd = gd.asInstanceOf[js.Any], gm = gm.asInstanceOf[js.Any], gy = gy.asInstanceOf[js.Any])
       __obj.asInstanceOf[GregorianDateObject]
     }
     
-    @scala.inline
-    implicit class GregorianDateObjectMutableBuilder[Self <: GregorianDateObject] (val x: Self) extends AnyVal {
+    extension [Self <: GregorianDateObject](x: Self) {
       
-      @scala.inline
-      def setGd(value: Double): Self = StObject.set(x, "gd", value.asInstanceOf[js.Any])
+      inline def setGd(value: Double): Self = StObject.set(x, "gd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGm(value: Double): Self = StObject.set(x, "gm", value.asInstanceOf[js.Any])
+      inline def setGm(value: Double): Self = StObject.set(x, "gm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGy(value: Double): Self = StObject.set(x, "gy", value.asInstanceOf[js.Any])
+      inline def setGy(value: Double): Self = StObject.set(x, "gy", value.asInstanceOf[js.Any])
     }
   }
   
@@ -89,23 +73,18 @@ object mod {
   }
   object JalCalResult {
     
-    @scala.inline
-    def apply(gy: Double, leap: Double, march: Double): JalCalResult = {
+    inline def apply(gy: Double, leap: Double, march: Double): JalCalResult = {
       val __obj = js.Dynamic.literal(gy = gy.asInstanceOf[js.Any], leap = leap.asInstanceOf[js.Any], march = march.asInstanceOf[js.Any])
       __obj.asInstanceOf[JalCalResult]
     }
     
-    @scala.inline
-    implicit class JalCalResultMutableBuilder[Self <: JalCalResult] (val x: Self) extends AnyVal {
+    extension [Self <: JalCalResult](x: Self) {
       
-      @scala.inline
-      def setGy(value: Double): Self = StObject.set(x, "gy", value.asInstanceOf[js.Any])
+      inline def setGy(value: Double): Self = StObject.set(x, "gy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeap(value: Double): Self = StObject.set(x, "leap", value.asInstanceOf[js.Any])
+      inline def setLeap(value: Double): Self = StObject.set(x, "leap", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMarch(value: Double): Self = StObject.set(x, "march", value.asInstanceOf[js.Any])
+      inline def setMarch(value: Double): Self = StObject.set(x, "march", value.asInstanceOf[js.Any])
     }
   }
   
@@ -122,23 +101,18 @@ object mod {
   }
   object JalaaliDateObject {
     
-    @scala.inline
-    def apply(jd: Double, jm: Double, jy: Double): JalaaliDateObject = {
+    inline def apply(jd: Double, jm: Double, jy: Double): JalaaliDateObject = {
       val __obj = js.Dynamic.literal(jd = jd.asInstanceOf[js.Any], jm = jm.asInstanceOf[js.Any], jy = jy.asInstanceOf[js.Any])
       __obj.asInstanceOf[JalaaliDateObject]
     }
     
-    @scala.inline
-    implicit class JalaaliDateObjectMutableBuilder[Self <: JalaaliDateObject] (val x: Self) extends AnyVal {
+    extension [Self <: JalaaliDateObject](x: Self) {
       
-      @scala.inline
-      def setJd(value: Double): Self = StObject.set(x, "jd", value.asInstanceOf[js.Any])
+      inline def setJd(value: Double): Self = StObject.set(x, "jd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJm(value: Double): Self = StObject.set(x, "jm", value.asInstanceOf[js.Any])
+      inline def setJm(value: Double): Self = StObject.set(x, "jm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJy(value: Double): Self = StObject.set(x, "jy", value.asInstanceOf[js.Any])
+      inline def setJy(value: Double): Self = StObject.set(x, "jy", value.asInstanceOf[js.Any])
     }
   }
 }

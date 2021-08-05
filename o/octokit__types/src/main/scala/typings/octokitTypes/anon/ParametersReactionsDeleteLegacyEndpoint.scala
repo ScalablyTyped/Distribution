@@ -17,8 +17,7 @@ trait ParametersReactionsDeleteLegacyEndpoint extends StObject {
 }
 object ParametersReactionsDeleteLegacyEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: ReactionsDeleteLegacyEndpoint,
     request: ReactionsDeleteLegacyRequestOptions,
     response: OctokitResponse[js.Any]
@@ -27,16 +26,12 @@ object ParametersReactionsDeleteLegacyEndpoint {
     __obj.asInstanceOf[ParametersReactionsDeleteLegacyEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersReactionsDeleteLegacyEndpointMutableBuilder[Self <: ParametersReactionsDeleteLegacyEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersReactionsDeleteLegacyEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: ReactionsDeleteLegacyEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: ReactionsDeleteLegacyEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ReactionsDeleteLegacyRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ReactionsDeleteLegacyRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

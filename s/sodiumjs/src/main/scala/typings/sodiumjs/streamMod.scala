@@ -81,7 +81,7 @@ object streamMod {
       */
     def filterNotNull(): Stream[A] = js.native
     
-    var firings: js.Array[A] = js.native
+    /* protected */ var firings: js.Array[A] = js.native
     
     /**
       * Return a stream that only outputs events from the input stream
@@ -112,7 +112,7 @@ object streamMod {
     
     def listen_(target: Vertex, h: js.Function1[/* a */ A, Unit], suppressEarlierFirings: Boolean): js.Function0[Unit] = js.native
     
-    var listeners: js.Array[Listener[A]] = js.native
+    /* protected */ var listeners: js.Array[Listener[A]] = js.native
     
     /**
       * Transform the stream's event values according to the supplied function, so the returned
@@ -256,7 +256,7 @@ object streamMod {
     ): Stream[G] = js.native
     def snapshot6[B, C, D, E, F, G](b: Cell[B], c: Cell[C], d: Cell[D], e: Cell[E], f: Cell[F], f_ : Lambda6_[A, B, C, D, E, F, G]): Stream[G] = js.native
     
-    var vertex: Vertex = js.native
+    /* protected */ var vertex: Vertex = js.native
   }
   
   @JSImport("sodiumjs/dist/typings/sodium/Stream", "StreamLoop")

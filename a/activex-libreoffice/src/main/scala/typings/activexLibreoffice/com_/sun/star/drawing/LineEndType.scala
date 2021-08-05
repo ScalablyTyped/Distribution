@@ -24,12 +24,10 @@ trait LineEndType extends StObject
 object LineEndType {
   
   /** the line uses an arrow for the line end. */
-  @scala.inline
-  def ARROW: `1` = 1.asInstanceOf[`1`]
+  inline def ARROW: `1` = 1.asInstanceOf[`1`]
   
   /** the line uses a circle for the line end. */
-  @scala.inline
-  def CIRCLE: `2` = 2.asInstanceOf[`2`]
+  inline def CIRCLE: `2` = 2.asInstanceOf[`2`]
   
   /**
     * the area is not filled.
@@ -44,22 +42,19 @@ object LineEndType {
     *
     * the text size is only defined by the font properties
     */
-  @scala.inline
-  def NONE: `0` = 0.asInstanceOf[`0`]
+  inline def NONE: `0` = 0.asInstanceOf[`0`]
   
   /**
     * not implemented, yet.
     *
     * deprecated
     */
-  @scala.inline
-  def SPECIAL: `4` = 4.asInstanceOf[`4`]
+  inline def SPECIAL: `4` = 4.asInstanceOf[`4`]
   
   /**
     * the line will get a half square as additional cap
     *
     * the line uses a square for the line end.
     */
-  @scala.inline
-  def SQUARE: `3` = 3.asInstanceOf[`3`]
+  inline def SQUARE: `3` = 3.asInstanceOf[`3`]
 }

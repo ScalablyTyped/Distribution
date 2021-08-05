@@ -38,40 +38,29 @@ trait SchemaModifyAckDeadlineRequest extends StObject {
 }
 object SchemaModifyAckDeadlineRequest {
   
-  @scala.inline
-  def apply(): SchemaModifyAckDeadlineRequest = {
+  inline def apply(): SchemaModifyAckDeadlineRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaModifyAckDeadlineRequest]
   }
   
-  @scala.inline
-  implicit class SchemaModifyAckDeadlineRequestMutableBuilder[Self <: SchemaModifyAckDeadlineRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaModifyAckDeadlineRequest](x: Self) {
     
-    @scala.inline
-    def setAckDeadlineSeconds(value: Double): Self = StObject.set(x, "ackDeadlineSeconds", value.asInstanceOf[js.Any])
+    inline def setAckDeadlineSeconds(value: Double): Self = StObject.set(x, "ackDeadlineSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAckDeadlineSecondsUndefined: Self = StObject.set(x, "ackDeadlineSeconds", js.undefined)
+    inline def setAckDeadlineSecondsUndefined: Self = StObject.set(x, "ackDeadlineSeconds", js.undefined)
     
-    @scala.inline
-    def setAckId(value: String): Self = StObject.set(x, "ackId", value.asInstanceOf[js.Any])
+    inline def setAckId(value: String): Self = StObject.set(x, "ackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAckIdUndefined: Self = StObject.set(x, "ackId", js.undefined)
+    inline def setAckIdUndefined: Self = StObject.set(x, "ackId", js.undefined)
     
-    @scala.inline
-    def setAckIds(value: js.Array[String]): Self = StObject.set(x, "ackIds", value.asInstanceOf[js.Any])
+    inline def setAckIds(value: js.Array[String]): Self = StObject.set(x, "ackIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAckIdsUndefined: Self = StObject.set(x, "ackIds", js.undefined)
+    inline def setAckIdsUndefined: Self = StObject.set(x, "ackIds", js.undefined)
     
-    @scala.inline
-    def setAckIdsVarargs(value: String*): Self = StObject.set(x, "ackIds", js.Array(value :_*))
+    inline def setAckIdsVarargs(value: String*): Self = StObject.set(x, "ackIds", js.Array(value :_*))
     
-    @scala.inline
-    def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
+    inline def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
+    inline def setSubscriptionUndefined: Self = StObject.set(x, "subscription", js.undefined)
   }
 }

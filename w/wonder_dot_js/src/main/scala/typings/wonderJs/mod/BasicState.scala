@@ -15,6 +15,5 @@ object BasicState {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(): typings.wonderJs.basicStateMod.BasicState = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.basicStateMod.BasicState]
+  inline def create(): typings.wonderJs.basicStateMod.BasicState = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.basicStateMod.BasicState]
 }

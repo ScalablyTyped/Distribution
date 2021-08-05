@@ -22,14 +22,12 @@ object global {
     @JSGlobal("Meteor.isClient")
     @js.native
     def isClient: Boolean = js.native
-    @scala.inline
-    def isClient_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isClient")(x.asInstanceOf[js.Any])
+    inline def isClient_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isClient")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Meteor.isServer")
     @js.native
     def isServer: Boolean = js.native
-    @scala.inline
-    def isServer_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isServer")(x.asInstanceOf[js.Any])
+    inline def isServer_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isServer")(x.asInstanceOf[js.Any])
   }
   
   object Mongo {
@@ -52,8 +50,7 @@ object global {
       def this(name: String, options: Connection) = this()
     }
     
-    @scala.inline
-    def Collection_=(x: CollectionStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Collection")(x.asInstanceOf[js.Any])
+    inline def Collection_=(x: CollectionStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Collection")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Mongo.Cursor")
     @js.native
@@ -66,8 +63,7 @@ object global {
       extends StObject
          with Cursor[T]
     
-    @scala.inline
-    def Cursor_=(x: CursorStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Cursor")(x.asInstanceOf[js.Any])
+    inline def Cursor_=(x: CursorStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Cursor")(x.asInstanceOf[js.Any])
     
     @JSGlobal("Mongo.ObjectID")
     @js.native
@@ -82,7 +78,6 @@ object global {
       def this(hexString: String) = this()
     }
     
-    @scala.inline
-    def ObjectID_=(x: ObjectIDStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ObjectID")(x.asInstanceOf[js.Any])
+    inline def ObjectID_=(x: ObjectIDStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ObjectID")(x.asInstanceOf[js.Any])
   }
 }

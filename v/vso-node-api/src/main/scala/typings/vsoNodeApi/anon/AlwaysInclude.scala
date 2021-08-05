@@ -14,22 +14,17 @@ trait AlwaysInclude extends StObject {
 }
 object AlwaysInclude {
   
-  @scala.inline
-  def apply(alwaysInclude: scala.Double, onlyIfLicensed: scala.Double, onlyIfUnlicensed: scala.Double): AlwaysInclude = {
+  inline def apply(alwaysInclude: scala.Double, onlyIfLicensed: scala.Double, onlyIfUnlicensed: scala.Double): AlwaysInclude = {
     val __obj = js.Dynamic.literal(alwaysInclude = alwaysInclude.asInstanceOf[js.Any], onlyIfLicensed = onlyIfLicensed.asInstanceOf[js.Any], onlyIfUnlicensed = onlyIfUnlicensed.asInstanceOf[js.Any])
     __obj.asInstanceOf[AlwaysInclude]
   }
   
-  @scala.inline
-  implicit class AlwaysIncludeMutableBuilder[Self <: AlwaysInclude] (val x: Self) extends AnyVal {
+  extension [Self <: AlwaysInclude](x: Self) {
     
-    @scala.inline
-    def setAlwaysInclude(value: scala.Double): Self = StObject.set(x, "alwaysInclude", value.asInstanceOf[js.Any])
+    inline def setAlwaysInclude(value: scala.Double): Self = StObject.set(x, "alwaysInclude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyIfLicensed(value: scala.Double): Self = StObject.set(x, "onlyIfLicensed", value.asInstanceOf[js.Any])
+    inline def setOnlyIfLicensed(value: scala.Double): Self = StObject.set(x, "onlyIfLicensed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnlyIfUnlicensed(value: scala.Double): Self = StObject.set(x, "onlyIfUnlicensed", value.asInstanceOf[js.Any])
+    inline def setOnlyIfUnlicensed(value: scala.Double): Self = StObject.set(x, "onlyIfUnlicensed", value.asInstanceOf[js.Any])
   }
 }

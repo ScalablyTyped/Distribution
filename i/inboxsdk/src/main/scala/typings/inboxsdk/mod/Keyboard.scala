@@ -12,17 +12,14 @@ object Keyboard {
   }
   object KeyboardInstance {
     
-    @scala.inline
-    def apply(createShortcutHandle: KeyboardShortcutDescriptor => KeyboardShortcutHandle): KeyboardInstance = {
+    inline def apply(createShortcutHandle: KeyboardShortcutDescriptor => KeyboardShortcutHandle): KeyboardInstance = {
       val __obj = js.Dynamic.literal(createShortcutHandle = js.Any.fromFunction1(createShortcutHandle))
       __obj.asInstanceOf[KeyboardInstance]
     }
     
-    @scala.inline
-    implicit class KeyboardInstanceMutableBuilder[Self <: KeyboardInstance] (val x: Self) extends AnyVal {
+    extension [Self <: KeyboardInstance](x: Self) {
       
-      @scala.inline
-      def setCreateShortcutHandle(value: KeyboardShortcutDescriptor => KeyboardShortcutHandle): Self = StObject.set(x, "createShortcutHandle", js.Any.fromFunction1(value))
+      inline def setCreateShortcutHandle(value: KeyboardShortcutDescriptor => KeyboardShortcutHandle): Self = StObject.set(x, "createShortcutHandle", js.Any.fromFunction1(value))
     }
   }
   
@@ -34,20 +31,16 @@ object Keyboard {
   }
   object KeyboardShortcutDescriptor {
     
-    @scala.inline
-    def apply(chord: String, description: String): KeyboardShortcutDescriptor = {
+    inline def apply(chord: String, description: String): KeyboardShortcutDescriptor = {
       val __obj = js.Dynamic.literal(chord = chord.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeyboardShortcutDescriptor]
     }
     
-    @scala.inline
-    implicit class KeyboardShortcutDescriptorMutableBuilder[Self <: KeyboardShortcutDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: KeyboardShortcutDescriptor](x: Self) {
       
-      @scala.inline
-      def setChord(value: String): Self = StObject.set(x, "chord", value.asInstanceOf[js.Any])
+      inline def setChord(value: String): Self = StObject.set(x, "chord", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     }
   }
   
@@ -57,17 +50,14 @@ object Keyboard {
   }
   object KeyboardShortcutHandle {
     
-    @scala.inline
-    def apply(remove: () => Unit): KeyboardShortcutHandle = {
+    inline def apply(remove: () => Unit): KeyboardShortcutHandle = {
       val __obj = js.Dynamic.literal(remove = js.Any.fromFunction0(remove))
       __obj.asInstanceOf[KeyboardShortcutHandle]
     }
     
-    @scala.inline
-    implicit class KeyboardShortcutHandleMutableBuilder[Self <: KeyboardShortcutHandle] (val x: Self) extends AnyVal {
+    extension [Self <: KeyboardShortcutHandle](x: Self) {
       
-      @scala.inline
-      def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
+      inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     }
   }
 }

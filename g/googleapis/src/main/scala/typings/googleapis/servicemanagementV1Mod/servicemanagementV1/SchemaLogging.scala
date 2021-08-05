@@ -39,31 +39,23 @@ trait SchemaLogging extends StObject {
 }
 object SchemaLogging {
   
-  @scala.inline
-  def apply(): SchemaLogging = {
+  inline def apply(): SchemaLogging = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLogging]
   }
   
-  @scala.inline
-  implicit class SchemaLoggingMutableBuilder[Self <: SchemaLogging] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLogging](x: Self) {
     
-    @scala.inline
-    def setConsumerDestinations(value: js.Array[SchemaLoggingDestination]): Self = StObject.set(x, "consumerDestinations", value.asInstanceOf[js.Any])
+    inline def setConsumerDestinations(value: js.Array[SchemaLoggingDestination]): Self = StObject.set(x, "consumerDestinations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumerDestinationsUndefined: Self = StObject.set(x, "consumerDestinations", js.undefined)
+    inline def setConsumerDestinationsUndefined: Self = StObject.set(x, "consumerDestinations", js.undefined)
     
-    @scala.inline
-    def setConsumerDestinationsVarargs(value: SchemaLoggingDestination*): Self = StObject.set(x, "consumerDestinations", js.Array(value :_*))
+    inline def setConsumerDestinationsVarargs(value: SchemaLoggingDestination*): Self = StObject.set(x, "consumerDestinations", js.Array(value :_*))
     
-    @scala.inline
-    def setProducerDestinations(value: js.Array[SchemaLoggingDestination]): Self = StObject.set(x, "producerDestinations", value.asInstanceOf[js.Any])
+    inline def setProducerDestinations(value: js.Array[SchemaLoggingDestination]): Self = StObject.set(x, "producerDestinations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProducerDestinationsUndefined: Self = StObject.set(x, "producerDestinations", js.undefined)
+    inline def setProducerDestinationsUndefined: Self = StObject.set(x, "producerDestinations", js.undefined)
     
-    @scala.inline
-    def setProducerDestinationsVarargs(value: SchemaLoggingDestination*): Self = StObject.set(x, "producerDestinations", js.Array(value :_*))
+    inline def setProducerDestinationsVarargs(value: SchemaLoggingDestination*): Self = StObject.set(x, "producerDestinations", js.Array(value :_*))
   }
 }

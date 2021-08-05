@@ -13,19 +13,15 @@ trait R extends StObject {
 }
 object R {
   
-  @scala.inline
-  def apply(): R = {
+  inline def apply(): R = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[R]
   }
   
-  @scala.inline
-  implicit class RMutableBuilder[Self <: R] (val x: Self) extends AnyVal {
+  extension [Self <: R](x: Self) {
     
-    @scala.inline
-    def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+    inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRUndefined: Self = StObject.set(x, "r", js.undefined)
+    inline def setRUndefined: Self = StObject.set(x, "r", js.undefined)
   }
 }

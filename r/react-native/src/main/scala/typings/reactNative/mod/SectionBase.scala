@@ -20,46 +20,33 @@ trait SectionBase[ItemT, SectionT] extends StObject {
 }
 object SectionBase {
   
-  @scala.inline
-  def apply[ItemT, SectionT](data: js.Array[ItemT]): SectionBase[ItemT, SectionT] = {
+  inline def apply[ItemT, SectionT](data: js.Array[ItemT]): SectionBase[ItemT, SectionT] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[SectionBase[ItemT, SectionT]]
   }
   
-  @scala.inline
-  implicit class SectionBaseMutableBuilder[Self <: SectionBase[?, ?], ItemT, SectionT] (val x: Self & (SectionBase[ItemT, SectionT])) extends AnyVal {
+  extension [Self <: SectionBase[?, ?], ItemT, SectionT](x: Self & (SectionBase[ItemT, SectionT])) {
     
-    @scala.inline
-    def setData(value: js.Array[ItemT]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Array[ItemT]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataVarargs(value: ItemT*): Self = StObject.set(x, "data", js.Array(value :_*))
+    inline def setDataVarargs(value: ItemT*): Self = StObject.set(x, "data", js.Array(value :_*))
     
-    @scala.inline
-    def setItemSeparatorComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "ItemSeparatorComponent", value.asInstanceOf[js.Any])
+    inline def setItemSeparatorComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "ItemSeparatorComponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemSeparatorComponentNull: Self = StObject.set(x, "ItemSeparatorComponent", null)
+    inline def setItemSeparatorComponentNull: Self = StObject.set(x, "ItemSeparatorComponent", null)
     
-    @scala.inline
-    def setItemSeparatorComponentUndefined: Self = StObject.set(x, "ItemSeparatorComponent", js.undefined)
+    inline def setItemSeparatorComponentUndefined: Self = StObject.set(x, "ItemSeparatorComponent", js.undefined)
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyExtractor(value: (/* item */ ItemT, /* index */ Double) => String): Self = StObject.set(x, "keyExtractor", js.Any.fromFunction2(value))
+    inline def setKeyExtractor(value: (/* item */ ItemT, /* index */ Double) => String): Self = StObject.set(x, "keyExtractor", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setKeyExtractorUndefined: Self = StObject.set(x, "keyExtractor", js.undefined)
+    inline def setKeyExtractorUndefined: Self = StObject.set(x, "keyExtractor", js.undefined)
     
-    @scala.inline
-    def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+    inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
-    @scala.inline
-    def setRenderItem(value: /* info */ SectionListRenderItemInfo[ItemT, SectionT] => ReactElement | Null): Self = StObject.set(x, "renderItem", js.Any.fromFunction1(value))
+    inline def setRenderItem(value: /* info */ SectionListRenderItemInfo[ItemT, SectionT] => ReactElement | Null): Self = StObject.set(x, "renderItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRenderItemUndefined: Self = StObject.set(x, "renderItem", js.undefined)
+    inline def setRenderItemUndefined: Self = StObject.set(x, "renderItem", js.undefined)
   }
 }

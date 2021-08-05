@@ -19,16 +19,12 @@ object PathJoinType {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def BEVEL: `3` = 3.asInstanceOf[`3`]
+    inline def BEVEL: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def MITER: `1` = 1.asInstanceOf[`1`]
+    inline def MITER: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def NONE: `0` = 0.asInstanceOf[`0`]
+    inline def NONE: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def ROUND: `2` = 2.asInstanceOf[`2`]
+    inline def ROUND: `2` = 2.asInstanceOf[`2`]
   }
 }

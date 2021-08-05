@@ -33,8 +33,7 @@ trait CSVLayerCapabilitiesData
 }
 object CSVLayerCapabilitiesData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean,
@@ -46,16 +45,12 @@ object CSVLayerCapabilitiesData {
     __obj.asInstanceOf[CSVLayerCapabilitiesData]
   }
   
-  @scala.inline
-  implicit class CSVLayerCapabilitiesDataMutableBuilder[Self <: CSVLayerCapabilitiesData] (val x: Self) extends AnyVal {
+  extension [Self <: CSVLayerCapabilitiesData](x: Self) {
     
-    @scala.inline
-    def setSupportsAttachment(value: Boolean): Self = StObject.set(x, "supportsAttachment", value.asInstanceOf[js.Any])
+    inline def setSupportsAttachment(value: Boolean): Self = StObject.set(x, "supportsAttachment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsM(value: Boolean): Self = StObject.set(x, "supportsM", value.asInstanceOf[js.Any])
+    inline def setSupportsM(value: Boolean): Self = StObject.set(x, "supportsM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportsZ(value: Boolean): Self = StObject.set(x, "supportsZ", value.asInstanceOf[js.Any])
+    inline def setSupportsZ(value: Boolean): Self = StObject.set(x, "supportsZ", value.asInstanceOf[js.Any])
   }
 }

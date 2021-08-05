@@ -22,42 +22,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait SizeProp extends StObject
 object SizeProp {
   
-  @scala.inline
-  def `10x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`10x` = "10x".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`10x`]
+  inline def `10x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`10x` = "10x".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`10x`]
   
-  @scala.inline
-  def `1x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`1x` = "1x".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`1x`]
+  inline def `1x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`1x` = "1x".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`1x`]
   
-  @scala.inline
-  def `2x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`2x` = "2x".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`2x`]
+  inline def `2x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`2x` = "2x".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`2x`]
   
-  @scala.inline
-  def `3x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`3x` = "3x".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`3x`]
+  inline def `3x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`3x` = "3x".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`3x`]
   
-  @scala.inline
-  def `4x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`4x` = "4x".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`4x`]
+  inline def `4x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`4x` = "4x".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`4x`]
   
-  @scala.inline
-  def `5x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`5x` = "5x".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`5x`]
+  inline def `5x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`5x` = "5x".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`5x`]
   
-  @scala.inline
-  def `6x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`6x` = "6x".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`6x`]
+  inline def `6x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`6x` = "6x".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`6x`]
   
-  @scala.inline
-  def `7x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`7x` = "7x".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`7x`]
+  inline def `7x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`7x` = "7x".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`7x`]
   
-  @scala.inline
-  def `8x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`8x` = "8x".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`8x`]
+  inline def `8x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`8x` = "8x".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`8x`]
   
-  @scala.inline
-  def `9x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`9x` = "9x".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`9x`]
+  inline def `9x`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`9x` = "9x".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.`9x`]
   
-  @scala.inline
-  def lg: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.lg = "lg".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.lg]
+  inline def lg: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.lg = "lg".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.lg]
   
-  @scala.inline
-  def sm: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.sm = "sm".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.sm]
+  inline def sm: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.sm = "sm".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.sm]
   
-  @scala.inline
-  def xs: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.xs = "xs".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.xs]
+  inline def xs: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.xs = "xs".asInstanceOf[typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.xs]
 }

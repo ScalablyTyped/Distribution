@@ -28,37 +28,28 @@ object metadataArgsUniqueMetadataArgsMod {
   }
   object UniqueMetadataArgs {
     
-    @scala.inline
-    def apply(target: js.Function | String): UniqueMetadataArgs = {
+    inline def apply(target: js.Function | String): UniqueMetadataArgs = {
       val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[UniqueMetadataArgs]
     }
     
-    @scala.inline
-    implicit class UniqueMetadataArgsMutableBuilder[Self <: UniqueMetadataArgs] (val x: Self) extends AnyVal {
+    extension [Self <: UniqueMetadataArgs](x: Self) {
       
-      @scala.inline
-      def setColumns(
+      inline def setColumns(
         value: (js.Function1[/* object */ js.UndefOr[js.Any], js.Array[js.Any] | StringDictionary[Double]]) | js.Array[String]
       ): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColumnsFunction1(value: /* object */ js.UndefOr[js.Any] => js.Array[js.Any] | StringDictionary[Double]): Self = StObject.set(x, "columns", js.Any.fromFunction1(value))
+      inline def setColumnsFunction1(value: /* object */ js.UndefOr[js.Any] => js.Array[js.Any] | StringDictionary[Double]): Self = StObject.set(x, "columns", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
+      inline def setColumnsUndefined: Self = StObject.set(x, "columns", js.undefined)
       
-      @scala.inline
-      def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value :_*))
+      inline def setColumnsVarargs(value: String*): Self = StObject.set(x, "columns", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTarget(value: js.Function | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: js.Function | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -21,35 +21,26 @@ trait BaseFunction
 }
 object BaseFunction {
   
-  @scala.inline
-  def apply(body: BlockStatement | Expression, params: js.Array[Pattern], `type`: String): BaseFunction = {
+  inline def apply(body: BlockStatement | Expression, params: js.Array[Pattern], `type`: String): BaseFunction = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseFunction]
   }
   
-  @scala.inline
-  implicit class BaseFunctionMutableBuilder[Self <: BaseFunction] (val x: Self) extends AnyVal {
+  extension [Self <: BaseFunction](x: Self) {
     
-    @scala.inline
-    def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+    inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+    inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
     
-    @scala.inline
-    def setBody(value: BlockStatement | Expression): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: BlockStatement | Expression): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGenerator(value: Boolean): Self = StObject.set(x, "generator", value.asInstanceOf[js.Any])
+    inline def setGenerator(value: Boolean): Self = StObject.set(x, "generator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeneratorUndefined: Self = StObject.set(x, "generator", js.undefined)
+    inline def setGeneratorUndefined: Self = StObject.set(x, "generator", js.undefined)
     
-    @scala.inline
-    def setParams(value: js.Array[Pattern]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Array[Pattern]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsVarargs(value: Pattern*): Self = StObject.set(x, "params", js.Array(value :_*))
+    inline def setParamsVarargs(value: Pattern*): Self = StObject.set(x, "params", js.Array(value :_*))
   }
 }

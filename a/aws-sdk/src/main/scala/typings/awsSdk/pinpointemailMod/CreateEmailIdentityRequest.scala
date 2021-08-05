@@ -18,25 +18,19 @@ trait CreateEmailIdentityRequest extends StObject {
 }
 object CreateEmailIdentityRequest {
   
-  @scala.inline
-  def apply(EmailIdentity: Identity): CreateEmailIdentityRequest = {
+  inline def apply(EmailIdentity: Identity): CreateEmailIdentityRequest = {
     val __obj = js.Dynamic.literal(EmailIdentity = EmailIdentity.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateEmailIdentityRequest]
   }
   
-  @scala.inline
-  implicit class CreateEmailIdentityRequestMutableBuilder[Self <: CreateEmailIdentityRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateEmailIdentityRequest](x: Self) {
     
-    @scala.inline
-    def setEmailIdentity(value: Identity): Self = StObject.set(x, "EmailIdentity", value.asInstanceOf[js.Any])
+    inline def setEmailIdentity(value: Identity): Self = StObject.set(x, "EmailIdentity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

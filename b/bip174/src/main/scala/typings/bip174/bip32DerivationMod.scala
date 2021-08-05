@@ -11,6 +11,5 @@ object bip32DerivationMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def makeConverter(TYPE_BYTE: Double): CanAddToArray = ^.asInstanceOf[js.Dynamic].applyDynamic("makeConverter")(TYPE_BYTE.asInstanceOf[js.Any]).asInstanceOf[CanAddToArray]
+  inline def makeConverter(TYPE_BYTE: Double): CanAddToArray = ^.asInstanceOf[js.Dynamic].applyDynamic("makeConverter")(TYPE_BYTE.asInstanceOf[js.Any]).asInstanceOf[CanAddToArray]
 }

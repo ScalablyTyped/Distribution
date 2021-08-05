@@ -20,26 +20,20 @@ trait CIMMarkerStrokePlacement
 }
 object CIMMarkerStrokePlacement {
   
-  @scala.inline
-  def apply(`type`: String): CIMMarkerStrokePlacement = {
+  inline def apply(`type`: String): CIMMarkerStrokePlacement = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CIMMarkerStrokePlacement]
   }
   
-  @scala.inline
-  implicit class CIMMarkerStrokePlacementMutableBuilder[Self <: CIMMarkerStrokePlacement] (val x: Self) extends AnyVal {
+  extension [Self <: CIMMarkerStrokePlacement](x: Self) {
     
-    @scala.inline
-    def setAngleToLine(value: Boolean): Self = StObject.set(x, "angleToLine", value.asInstanceOf[js.Any])
+    inline def setAngleToLine(value: Boolean): Self = StObject.set(x, "angleToLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngleToLineUndefined: Self = StObject.set(x, "angleToLine", js.undefined)
+    inline def setAngleToLineUndefined: Self = StObject.set(x, "angleToLine", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
   }
 }

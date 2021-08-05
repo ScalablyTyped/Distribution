@@ -13,16 +13,13 @@ trait StartReplicationTaskAssessmentMessage extends StObject {
 }
 object StartReplicationTaskAssessmentMessage {
   
-  @scala.inline
-  def apply(ReplicationTaskArn: String): StartReplicationTaskAssessmentMessage = {
+  inline def apply(ReplicationTaskArn: String): StartReplicationTaskAssessmentMessage = {
     val __obj = js.Dynamic.literal(ReplicationTaskArn = ReplicationTaskArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[StartReplicationTaskAssessmentMessage]
   }
   
-  @scala.inline
-  implicit class StartReplicationTaskAssessmentMessageMutableBuilder[Self <: StartReplicationTaskAssessmentMessage] (val x: Self) extends AnyVal {
+  extension [Self <: StartReplicationTaskAssessmentMessage](x: Self) {
     
-    @scala.inline
-    def setReplicationTaskArn(value: String): Self = StObject.set(x, "ReplicationTaskArn", value.asInstanceOf[js.Any])
+    inline def setReplicationTaskArn(value: String): Self = StObject.set(x, "ReplicationTaskArn", value.asInstanceOf[js.Any])
   }
 }

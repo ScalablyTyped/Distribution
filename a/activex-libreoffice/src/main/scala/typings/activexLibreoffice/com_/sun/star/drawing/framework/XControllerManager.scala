@@ -37,8 +37,7 @@ trait XControllerManager extends StObject {
 }
 object XControllerManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ConfigurationController: XConfigurationController,
     ModuleController: XModuleController,
     getConfigurationController: () => XConfigurationController,
@@ -48,19 +47,14 @@ object XControllerManager {
     __obj.asInstanceOf[XControllerManager]
   }
   
-  @scala.inline
-  implicit class XControllerManagerMutableBuilder[Self <: XControllerManager] (val x: Self) extends AnyVal {
+  extension [Self <: XControllerManager](x: Self) {
     
-    @scala.inline
-    def setConfigurationController(value: XConfigurationController): Self = StObject.set(x, "ConfigurationController", value.asInstanceOf[js.Any])
+    inline def setConfigurationController(value: XConfigurationController): Self = StObject.set(x, "ConfigurationController", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetConfigurationController(value: () => XConfigurationController): Self = StObject.set(x, "getConfigurationController", js.Any.fromFunction0(value))
+    inline def setGetConfigurationController(value: () => XConfigurationController): Self = StObject.set(x, "getConfigurationController", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetModuleController(value: () => XModuleController): Self = StObject.set(x, "getModuleController", js.Any.fromFunction0(value))
+    inline def setGetModuleController(value: () => XModuleController): Self = StObject.set(x, "getModuleController", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setModuleController(value: XModuleController): Self = StObject.set(x, "ModuleController", value.asInstanceOf[js.Any])
+    inline def setModuleController(value: XModuleController): Self = StObject.set(x, "ModuleController", value.asInstanceOf[js.Any])
   }
 }

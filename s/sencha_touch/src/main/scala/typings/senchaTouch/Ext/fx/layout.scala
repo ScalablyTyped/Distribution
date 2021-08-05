@@ -58,62 +58,44 @@ object layout {
     }
     object IAbstract {
       
-      @scala.inline
-      def apply(): IAbstract = {
+      inline def apply(): IAbstract = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IAbstract]
       }
       
-      @scala.inline
-      implicit class IAbstractMutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
+      extension [Self <: IAbstract](x: Self) {
         
-        @scala.inline
-        def setGetDirection(value: () => String): Self = StObject.set(x, "getDirection", js.Any.fromFunction0(value))
+        inline def setGetDirection(value: () => String): Self = StObject.set(x, "getDirection", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetDirectionUndefined: Self = StObject.set(x, "getDirection", js.undefined)
+        inline def setGetDirectionUndefined: Self = StObject.set(x, "getDirection", js.undefined)
         
-        @scala.inline
-        def setGetDuration(value: () => js.Any): Self = StObject.set(x, "getDuration", js.Any.fromFunction0(value))
+        inline def setGetDuration(value: () => js.Any): Self = StObject.set(x, "getDuration", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetDurationUndefined: Self = StObject.set(x, "getDuration", js.undefined)
+        inline def setGetDurationUndefined: Self = StObject.set(x, "getDuration", js.undefined)
         
-        @scala.inline
-        def setGetLayout(value: () => js.Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
+        inline def setGetLayout(value: () => js.Any): Self = StObject.set(x, "getLayout", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetLayoutUndefined: Self = StObject.set(x, "getLayout", js.undefined)
+        inline def setGetLayoutUndefined: Self = StObject.set(x, "getLayout", js.undefined)
         
-        @scala.inline
-        def setGetReverse(value: () => js.Any): Self = StObject.set(x, "getReverse", js.Any.fromFunction0(value))
+        inline def setGetReverse(value: () => js.Any): Self = StObject.set(x, "getReverse", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetReverseUndefined: Self = StObject.set(x, "getReverse", js.undefined)
+        inline def setGetReverseUndefined: Self = StObject.set(x, "getReverse", js.undefined)
         
-        @scala.inline
-        def setSetDirection(value: /* direction */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setDirection", js.Any.fromFunction1(value))
+        inline def setSetDirection(value: /* direction */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setDirection", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetDirectionUndefined: Self = StObject.set(x, "setDirection", js.undefined)
+        inline def setSetDirectionUndefined: Self = StObject.set(x, "setDirection", js.undefined)
         
-        @scala.inline
-        def setSetDuration(value: /* duration */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDuration", js.Any.fromFunction1(value))
+        inline def setSetDuration(value: /* duration */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setDuration", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetDurationUndefined: Self = StObject.set(x, "setDuration", js.undefined)
+        inline def setSetDurationUndefined: Self = StObject.set(x, "setDuration", js.undefined)
         
-        @scala.inline
-        def setSetLayout(value: /* layout */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setLayout", js.Any.fromFunction1(value))
+        inline def setSetLayout(value: /* layout */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setLayout", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetLayoutUndefined: Self = StObject.set(x, "setLayout", js.undefined)
+        inline def setSetLayoutUndefined: Self = StObject.set(x, "setLayout", js.undefined)
         
-        @scala.inline
-        def setSetReverse(value: /* reverse */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setReverse", js.Any.fromFunction1(value))
+        inline def setSetReverse(value: /* reverse */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setReverse", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetReverseUndefined: Self = StObject.set(x, "setReverse", js.undefined)
+        inline def setSetReverseUndefined: Self = StObject.set(x, "setReverse", js.undefined)
       }
     }
     
@@ -122,8 +104,7 @@ object layout {
          with IStyle
     object ICover {
       
-      @scala.inline
-      def apply(): ICover = {
+      inline def apply(): ICover = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ICover]
       }
@@ -134,8 +115,7 @@ object layout {
          with IStyle
     object ICube {
       
-      @scala.inline
-      def apply(): ICube = {
+      inline def apply(): ICube = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ICube]
       }
@@ -146,8 +126,7 @@ object layout {
          with IStyle
     object IFade {
       
-      @scala.inline
-      def apply(): IFade = {
+      inline def apply(): IFade = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IFade]
       }
@@ -171,26 +150,20 @@ object layout {
     }
     object IFlip {
       
-      @scala.inline
-      def apply(): IFlip = {
+      inline def apply(): IFlip = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IFlip]
       }
       
-      @scala.inline
-      implicit class IFlipMutableBuilder[Self <: IFlip] (val x: Self) extends AnyVal {
+      extension [Self <: IFlip](x: Self) {
         
-        @scala.inline
-        def setGetDuration(value: () => Double): Self = StObject.set(x, "getDuration", js.Any.fromFunction0(value))
+        inline def setGetDuration(value: () => Double): Self = StObject.set(x, "getDuration", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetDurationUndefined: Self = StObject.set(x, "getDuration", js.undefined)
+        inline def setGetDurationUndefined: Self = StObject.set(x, "getDuration", js.undefined)
         
-        @scala.inline
-        def setSetDuration(value: /* duration */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setDuration", js.Any.fromFunction1(value))
+        inline def setSetDuration(value: /* duration */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setDuration", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetDurationUndefined: Self = StObject.set(x, "setDuration", js.undefined)
+        inline def setSetDurationUndefined: Self = StObject.set(x, "setDuration", js.undefined)
       }
     }
     
@@ -212,26 +185,20 @@ object layout {
     }
     object IPop {
       
-      @scala.inline
-      def apply(): IPop = {
+      inline def apply(): IPop = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IPop]
       }
       
-      @scala.inline
-      implicit class IPopMutableBuilder[Self <: IPop] (val x: Self) extends AnyVal {
+      extension [Self <: IPop](x: Self) {
         
-        @scala.inline
-        def setGetDuration(value: () => Double): Self = StObject.set(x, "getDuration", js.Any.fromFunction0(value))
+        inline def setGetDuration(value: () => Double): Self = StObject.set(x, "getDuration", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetDurationUndefined: Self = StObject.set(x, "getDuration", js.undefined)
+        inline def setGetDurationUndefined: Self = StObject.set(x, "getDuration", js.undefined)
         
-        @scala.inline
-        def setSetDuration(value: /* duration */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setDuration", js.Any.fromFunction1(value))
+        inline def setSetDuration(value: /* duration */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setDuration", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetDurationUndefined: Self = StObject.set(x, "setDuration", js.undefined)
+        inline def setSetDurationUndefined: Self = StObject.set(x, "setDuration", js.undefined)
       }
     }
     
@@ -240,8 +207,7 @@ object layout {
          with IStyle
     object IReveal {
       
-      @scala.inline
-      def apply(): IReveal = {
+      inline def apply(): IReveal = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IReveal]
       }
@@ -265,26 +231,20 @@ object layout {
     }
     object IScroll {
       
-      @scala.inline
-      def apply(): IScroll = {
+      inline def apply(): IScroll = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IScroll]
       }
       
-      @scala.inline
-      implicit class IScrollMutableBuilder[Self <: IScroll] (val x: Self) extends AnyVal {
+      extension [Self <: IScroll](x: Self) {
         
-        @scala.inline
-        def setGetDuration(value: () => Double): Self = StObject.set(x, "getDuration", js.Any.fromFunction0(value))
+        inline def setGetDuration(value: () => Double): Self = StObject.set(x, "getDuration", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetDurationUndefined: Self = StObject.set(x, "getDuration", js.undefined)
+        inline def setGetDurationUndefined: Self = StObject.set(x, "getDuration", js.undefined)
         
-        @scala.inline
-        def setSetDuration(value: /* duration */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setDuration", js.Any.fromFunction1(value))
+        inline def setSetDuration(value: /* duration */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setDuration", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetDurationUndefined: Self = StObject.set(x, "setDuration", js.undefined)
+        inline def setSetDurationUndefined: Self = StObject.set(x, "setDuration", js.undefined)
       }
     }
     
@@ -297,8 +257,7 @@ object layout {
          with IStyle
     object ISlide {
       
-      @scala.inline
-      def apply(): ISlide = {
+      inline def apply(): ISlide = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ISlide]
       }
@@ -330,38 +289,28 @@ object layout {
     }
     object IStyle {
       
-      @scala.inline
-      def apply(): IStyle = {
+      inline def apply(): IStyle = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IStyle]
       }
       
-      @scala.inline
-      implicit class IStyleMutableBuilder[Self <: IStyle] (val x: Self) extends AnyVal {
+      extension [Self <: IStyle](x: Self) {
         
-        @scala.inline
-        def setGetInAnimation(value: () => js.Any): Self = StObject.set(x, "getInAnimation", js.Any.fromFunction0(value))
+        inline def setGetInAnimation(value: () => js.Any): Self = StObject.set(x, "getInAnimation", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetInAnimationUndefined: Self = StObject.set(x, "getInAnimation", js.undefined)
+        inline def setGetInAnimationUndefined: Self = StObject.set(x, "getInAnimation", js.undefined)
         
-        @scala.inline
-        def setGetOutAnimation(value: () => js.Any): Self = StObject.set(x, "getOutAnimation", js.Any.fromFunction0(value))
+        inline def setGetOutAnimation(value: () => js.Any): Self = StObject.set(x, "getOutAnimation", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setGetOutAnimationUndefined: Self = StObject.set(x, "getOutAnimation", js.undefined)
+        inline def setGetOutAnimationUndefined: Self = StObject.set(x, "getOutAnimation", js.undefined)
         
-        @scala.inline
-        def setSetInAnimation(value: /* inAnimation */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setInAnimation", js.Any.fromFunction1(value))
+        inline def setSetInAnimation(value: /* inAnimation */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setInAnimation", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetInAnimationUndefined: Self = StObject.set(x, "setInAnimation", js.undefined)
+        inline def setSetInAnimationUndefined: Self = StObject.set(x, "setInAnimation", js.undefined)
         
-        @scala.inline
-        def setSetOutAnimation(value: /* outAnimation */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setOutAnimation", js.Any.fromFunction1(value))
+        inline def setSetOutAnimation(value: /* outAnimation */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setOutAnimation", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSetOutAnimationUndefined: Self = StObject.set(x, "setOutAnimation", js.undefined)
+        inline def setSetOutAnimationUndefined: Self = StObject.set(x, "setOutAnimation", js.undefined)
       }
     }
   }

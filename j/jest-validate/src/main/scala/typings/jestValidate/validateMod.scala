@@ -13,6 +13,5 @@ object validateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(config: Record[String, js.Any], options: ValidationOptions): HasDeprecationWarnings = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HasDeprecationWarnings]
+  inline def default(config: Record[String, js.Any], options: ValidationOptions): HasDeprecationWarnings = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[HasDeprecationWarnings]
 }

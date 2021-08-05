@@ -9,8 +9,7 @@ trait PlayToSourceRequestedEventArgs
      with IPlayToSourceRequestedEventArgs
 object PlayToSourceRequestedEventArgs {
   
-  @scala.inline
-  def apply(sourceRequest: PlayToSourceRequest): PlayToSourceRequestedEventArgs = {
+  inline def apply(sourceRequest: PlayToSourceRequest): PlayToSourceRequestedEventArgs = {
     val __obj = js.Dynamic.literal(sourceRequest = sourceRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[PlayToSourceRequestedEventArgs]
   }

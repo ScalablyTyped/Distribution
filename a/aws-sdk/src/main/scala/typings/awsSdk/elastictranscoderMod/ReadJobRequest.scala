@@ -13,16 +13,13 @@ trait ReadJobRequest extends StObject {
 }
 object ReadJobRequest {
   
-  @scala.inline
-  def apply(Id: Id): ReadJobRequest = {
+  inline def apply(Id: Id): ReadJobRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadJobRequest]
   }
   
-  @scala.inline
-  implicit class ReadJobRequestMutableBuilder[Self <: ReadJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ReadJobRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: Id): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: Id): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

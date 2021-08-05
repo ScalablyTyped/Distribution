@@ -26,7 +26,7 @@ trait DataLabel extends StObject {
   
   def Delete(): js.Any = js.native
   
-  @JSName("Excel.DataLabel_typekey")
+  /* private */ @JSName("Excel.DataLabel_typekey")
   var ExcelDotDataLabel_typekey: DataLabel = js.native
   
   val Fill: ChartFillFormat = js.native

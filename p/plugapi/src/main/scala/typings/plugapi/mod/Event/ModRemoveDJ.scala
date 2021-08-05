@@ -14,22 +14,17 @@ trait ModRemoveDJ extends StObject {
 }
 object ModRemoveDJ {
   
-  @scala.inline
-  def apply(moderator: String, userID: String, username: String): ModRemoveDJ = {
+  inline def apply(moderator: String, userID: String, username: String): ModRemoveDJ = {
     val __obj = js.Dynamic.literal(moderator = moderator.asInstanceOf[js.Any], userID = userID.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModRemoveDJ]
   }
   
-  @scala.inline
-  implicit class ModRemoveDJMutableBuilder[Self <: ModRemoveDJ] (val x: Self) extends AnyVal {
+  extension [Self <: ModRemoveDJ](x: Self) {
     
-    @scala.inline
-    def setModerator(value: String): Self = StObject.set(x, "moderator", value.asInstanceOf[js.Any])
+    inline def setModerator(value: String): Self = StObject.set(x, "moderator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserID(value: String): Self = StObject.set(x, "userID", value.asInstanceOf[js.Any])
+    inline def setUserID(value: String): Self = StObject.set(x, "userID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

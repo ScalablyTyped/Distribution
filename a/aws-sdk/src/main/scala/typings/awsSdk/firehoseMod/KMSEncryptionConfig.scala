@@ -13,16 +13,13 @@ trait KMSEncryptionConfig extends StObject {
 }
 object KMSEncryptionConfig {
   
-  @scala.inline
-  def apply(AWSKMSKeyARN: AWSKMSKeyARN): KMSEncryptionConfig = {
+  inline def apply(AWSKMSKeyARN: AWSKMSKeyARN): KMSEncryptionConfig = {
     val __obj = js.Dynamic.literal(AWSKMSKeyARN = AWSKMSKeyARN.asInstanceOf[js.Any])
     __obj.asInstanceOf[KMSEncryptionConfig]
   }
   
-  @scala.inline
-  implicit class KMSEncryptionConfigMutableBuilder[Self <: KMSEncryptionConfig] (val x: Self) extends AnyVal {
+  extension [Self <: KMSEncryptionConfig](x: Self) {
     
-    @scala.inline
-    def setAWSKMSKeyARN(value: AWSKMSKeyARN): Self = StObject.set(x, "AWSKMSKeyARN", value.asInstanceOf[js.Any])
+    inline def setAWSKMSKeyARN(value: AWSKMSKeyARN): Self = StObject.set(x, "AWSKMSKeyARN", value.asInstanceOf[js.Any])
   }
 }

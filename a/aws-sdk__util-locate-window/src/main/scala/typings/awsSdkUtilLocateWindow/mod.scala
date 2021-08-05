@@ -11,6 +11,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def locateWindow(): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("locateWindow")().asInstanceOf[Window]
+  inline def locateWindow(): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("locateWindow")().asInstanceOf[Window]
 }

@@ -13,19 +13,15 @@ trait PutAccountDedicatedIpWarmupAttributesRequest extends StObject {
 }
 object PutAccountDedicatedIpWarmupAttributesRequest {
   
-  @scala.inline
-  def apply(): PutAccountDedicatedIpWarmupAttributesRequest = {
+  inline def apply(): PutAccountDedicatedIpWarmupAttributesRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PutAccountDedicatedIpWarmupAttributesRequest]
   }
   
-  @scala.inline
-  implicit class PutAccountDedicatedIpWarmupAttributesRequestMutableBuilder[Self <: PutAccountDedicatedIpWarmupAttributesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PutAccountDedicatedIpWarmupAttributesRequest](x: Self) {
     
-    @scala.inline
-    def setAutoWarmupEnabled(value: Enabled): Self = StObject.set(x, "AutoWarmupEnabled", value.asInstanceOf[js.Any])
+    inline def setAutoWarmupEnabled(value: Enabled): Self = StObject.set(x, "AutoWarmupEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoWarmupEnabledUndefined: Self = StObject.set(x, "AutoWarmupEnabled", js.undefined)
+    inline def setAutoWarmupEnabledUndefined: Self = StObject.set(x, "AutoWarmupEnabled", js.undefined)
   }
 }

@@ -17,31 +17,23 @@ trait Name extends StObject {
 }
 object Name {
   
-  @scala.inline
-  def apply(): Name = {
+  inline def apply(): Name = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Name]
   }
   
-  @scala.inline
-  implicit class NameMutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
+  extension [Self <: Name](x: Self) {
     
-    @scala.inline
-    def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
+    inline def setFamilyName(value: String): Self = StObject.set(x, "familyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFamilyNameUndefined: Self = StObject.set(x, "familyName", js.undefined)
+    inline def setFamilyNameUndefined: Self = StObject.set(x, "familyName", js.undefined)
     
-    @scala.inline
-    def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
+    inline def setFullName(value: String): Self = StObject.set(x, "fullName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullNameUndefined: Self = StObject.set(x, "fullName", js.undefined)
+    inline def setFullNameUndefined: Self = StObject.set(x, "fullName", js.undefined)
     
-    @scala.inline
-    def setGivenName(value: String): Self = StObject.set(x, "givenName", value.asInstanceOf[js.Any])
+    inline def setGivenName(value: String): Self = StObject.set(x, "givenName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGivenNameUndefined: Self = StObject.set(x, "givenName", js.undefined)
+    inline def setGivenNameUndefined: Self = StObject.set(x, "givenName", js.undefined)
   }
 }

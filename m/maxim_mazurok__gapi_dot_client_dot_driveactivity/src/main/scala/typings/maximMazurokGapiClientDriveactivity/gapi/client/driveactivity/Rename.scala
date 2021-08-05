@@ -14,25 +14,19 @@ trait Rename extends StObject {
 }
 object Rename {
   
-  @scala.inline
-  def apply(): Rename = {
+  inline def apply(): Rename = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Rename]
   }
   
-  @scala.inline
-  implicit class RenameMutableBuilder[Self <: Rename] (val x: Self) extends AnyVal {
+  extension [Self <: Rename](x: Self) {
     
-    @scala.inline
-    def setNewTitle(value: String): Self = StObject.set(x, "newTitle", value.asInstanceOf[js.Any])
+    inline def setNewTitle(value: String): Self = StObject.set(x, "newTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewTitleUndefined: Self = StObject.set(x, "newTitle", js.undefined)
+    inline def setNewTitleUndefined: Self = StObject.set(x, "newTitle", js.undefined)
     
-    @scala.inline
-    def setOldTitle(value: String): Self = StObject.set(x, "oldTitle", value.asInstanceOf[js.Any])
+    inline def setOldTitle(value: String): Self = StObject.set(x, "oldTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldTitleUndefined: Self = StObject.set(x, "oldTitle", js.undefined)
+    inline def setOldTitleUndefined: Self = StObject.set(x, "oldTitle", js.undefined)
   }
 }

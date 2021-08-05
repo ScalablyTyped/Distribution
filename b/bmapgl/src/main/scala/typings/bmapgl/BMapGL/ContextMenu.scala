@@ -22,8 +22,7 @@ trait ContextMenu extends StObject {
 }
 object ContextMenu {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addItem: MenuItem => Unit,
     addSeparator: () => Unit,
     getItem: Double => MenuItem,
@@ -36,28 +35,20 @@ object ContextMenu {
     __obj.asInstanceOf[ContextMenu]
   }
   
-  @scala.inline
-  implicit class ContextMenuMutableBuilder[Self <: ContextMenu] (val x: Self) extends AnyVal {
+  extension [Self <: ContextMenu](x: Self) {
     
-    @scala.inline
-    def setAddItem(value: MenuItem => Unit): Self = StObject.set(x, "addItem", js.Any.fromFunction1(value))
+    inline def setAddItem(value: MenuItem => Unit): Self = StObject.set(x, "addItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setAddSeparator(value: () => Unit): Self = StObject.set(x, "addSeparator", js.Any.fromFunction0(value))
+    inline def setAddSeparator(value: () => Unit): Self = StObject.set(x, "addSeparator", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetItem(value: Double => MenuItem): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
+    inline def setGetItem(value: Double => MenuItem): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnclose(value: typings.bmapgl.anon.Pixel => Unit): Self = StObject.set(x, "onclose", js.Any.fromFunction1(value))
+    inline def setOnclose(value: typings.bmapgl.anon.Pixel => Unit): Self = StObject.set(x, "onclose", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnopen(value: typings.bmapgl.anon.Pixel => Unit): Self = StObject.set(x, "onopen", js.Any.fromFunction1(value))
+    inline def setOnopen(value: typings.bmapgl.anon.Pixel => Unit): Self = StObject.set(x, "onopen", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveItem(value: MenuItem => Unit): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
+    inline def setRemoveItem(value: MenuItem => Unit): Self = StObject.set(x, "removeItem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRemoveSeparator(value: Double => Unit): Self = StObject.set(x, "removeSeparator", js.Any.fromFunction1(value))
+    inline def setRemoveSeparator(value: Double => Unit): Self = StObject.set(x, "removeSeparator", js.Any.fromFunction1(value))
   }
 }

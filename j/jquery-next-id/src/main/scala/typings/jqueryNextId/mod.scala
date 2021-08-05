@@ -28,17 +28,14 @@ object mod {
     }
     object JQuery {
       
-      @scala.inline
-      def apply(nextId: JQueryNextId): JQuery = {
+      inline def apply(nextId: JQueryNextId): JQuery = {
         val __obj = js.Dynamic.literal(nextId = nextId.asInstanceOf[js.Any])
         __obj.asInstanceOf[JQuery]
       }
       
-      @scala.inline
-      implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+      extension [Self <: JQuery](x: Self) {
         
-        @scala.inline
-        def setNextId(value: JQueryNextId): Self = StObject.set(x, "nextId", value.asInstanceOf[js.Any])
+        inline def setNextId(value: JQueryNextId): Self = StObject.set(x, "nextId", value.asInstanceOf[js.Any])
       }
     }
   }

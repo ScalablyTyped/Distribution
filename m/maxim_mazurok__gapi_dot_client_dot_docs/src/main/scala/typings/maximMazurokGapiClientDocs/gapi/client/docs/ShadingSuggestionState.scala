@@ -11,19 +11,15 @@ trait ShadingSuggestionState extends StObject {
 }
 object ShadingSuggestionState {
   
-  @scala.inline
-  def apply(): ShadingSuggestionState = {
+  inline def apply(): ShadingSuggestionState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShadingSuggestionState]
   }
   
-  @scala.inline
-  implicit class ShadingSuggestionStateMutableBuilder[Self <: ShadingSuggestionState] (val x: Self) extends AnyVal {
+  extension [Self <: ShadingSuggestionState](x: Self) {
     
-    @scala.inline
-    def setBackgroundColorSuggested(value: Boolean): Self = StObject.set(x, "backgroundColorSuggested", value.asInstanceOf[js.Any])
+    inline def setBackgroundColorSuggested(value: Boolean): Self = StObject.set(x, "backgroundColorSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorSuggestedUndefined: Self = StObject.set(x, "backgroundColorSuggested", js.undefined)
+    inline def setBackgroundColorSuggestedUndefined: Self = StObject.set(x, "backgroundColorSuggested", js.undefined)
   }
 }

@@ -16,40 +16,29 @@ trait IReadyobject extends StObject {
 }
 object IReadyobject {
   
-  @scala.inline
-  def apply(): IReadyobject = {
+  inline def apply(): IReadyobject = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IReadyobject]
   }
   
-  @scala.inline
-  implicit class IReadyobjectMutableBuilder[Self <: IReadyobject] (val x: Self) extends AnyVal {
+  extension [Self <: IReadyobject](x: Self) {
     
-    @scala.inline
-    def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setErrorCallback(value: () => Unit): Self = StObject.set(x, "errorCallback", js.Any.fromFunction0(value))
+    inline def setErrorCallback(value: () => Unit): Self = StObject.set(x, "errorCallback", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setErrorCallbackUndefined: Self = StObject.set(x, "errorCallback", js.undefined)
+    inline def setErrorCallbackUndefined: Self = StObject.set(x, "errorCallback", js.undefined)
     
-    @scala.inline
-    def setRequire(value: js.Array[String]): Self = StObject.set(x, "require", value.asInstanceOf[js.Any])
+    inline def setRequire(value: js.Array[String]): Self = StObject.set(x, "require", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequireUndefined: Self = StObject.set(x, "require", js.undefined)
+    inline def setRequireUndefined: Self = StObject.set(x, "require", js.undefined)
     
-    @scala.inline
-    def setRequireVarargs(value: String*): Self = StObject.set(x, "require", js.Array(value :_*))
+    inline def setRequireVarargs(value: String*): Self = StObject.set(x, "require", js.Array(value :_*))
     
-    @scala.inline
-    def setSuccessCallback(value: () => Unit): Self = StObject.set(x, "successCallback", js.Any.fromFunction0(value))
+    inline def setSuccessCallback(value: () => Unit): Self = StObject.set(x, "successCallback", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSuccessCallbackUndefined: Self = StObject.set(x, "successCallback", js.undefined)
+    inline def setSuccessCallbackUndefined: Self = StObject.set(x, "successCallback", js.undefined)
   }
 }

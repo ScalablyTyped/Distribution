@@ -20,26 +20,20 @@ object typesNumberValidateRequestMod {
   }
   object NumberValidateRequest {
     
-    @scala.inline
-    def apply(): NumberValidateRequest = {
+    inline def apply(): NumberValidateRequest = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NumberValidateRequest]
     }
     
-    @scala.inline
-    implicit class NumberValidateRequestMutableBuilder[Self <: NumberValidateRequest] (val x: Self) extends AnyVal {
+    extension [Self <: NumberValidateRequest](x: Self) {
       
-      @scala.inline
-      def setIsoCountryCode(value: String): Self = StObject.set(x, "IsoCountryCode", value.asInstanceOf[js.Any])
+      inline def setIsoCountryCode(value: String): Self = StObject.set(x, "IsoCountryCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsoCountryCodeUndefined: Self = StObject.set(x, "IsoCountryCode", js.undefined)
+      inline def setIsoCountryCodeUndefined: Self = StObject.set(x, "IsoCountryCode", js.undefined)
       
-      @scala.inline
-      def setPhoneNumber(value: String): Self = StObject.set(x, "PhoneNumber", value.asInstanceOf[js.Any])
+      inline def setPhoneNumber(value: String): Self = StObject.set(x, "PhoneNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhoneNumberUndefined: Self = StObject.set(x, "PhoneNumber", js.undefined)
+      inline def setPhoneNumberUndefined: Self = StObject.set(x, "PhoneNumber", js.undefined)
     }
   }
   

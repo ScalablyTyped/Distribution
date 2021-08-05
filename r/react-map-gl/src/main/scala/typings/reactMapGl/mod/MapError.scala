@@ -13,22 +13,17 @@ trait MapError extends StObject {
 }
 object MapError {
   
-  @scala.inline
-  def apply(status: Double): MapError = {
+  inline def apply(status: Double): MapError = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapError]
   }
   
-  @scala.inline
-  implicit class MapErrorMutableBuilder[Self <: MapError] (val x: Self) extends AnyVal {
+  extension [Self <: MapError](x: Self) {
     
-    @scala.inline
-    def setError(value: Message): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Message): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

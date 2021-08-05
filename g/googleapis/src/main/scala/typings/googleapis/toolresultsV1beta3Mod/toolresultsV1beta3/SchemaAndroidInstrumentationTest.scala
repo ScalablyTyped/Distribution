@@ -38,40 +38,29 @@ trait SchemaAndroidInstrumentationTest extends StObject {
 }
 object SchemaAndroidInstrumentationTest {
   
-  @scala.inline
-  def apply(): SchemaAndroidInstrumentationTest = {
+  inline def apply(): SchemaAndroidInstrumentationTest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAndroidInstrumentationTest]
   }
   
-  @scala.inline
-  implicit class SchemaAndroidInstrumentationTestMutableBuilder[Self <: SchemaAndroidInstrumentationTest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAndroidInstrumentationTest](x: Self) {
     
-    @scala.inline
-    def setTestPackageId(value: String): Self = StObject.set(x, "testPackageId", value.asInstanceOf[js.Any])
+    inline def setTestPackageId(value: String): Self = StObject.set(x, "testPackageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestPackageIdUndefined: Self = StObject.set(x, "testPackageId", js.undefined)
+    inline def setTestPackageIdUndefined: Self = StObject.set(x, "testPackageId", js.undefined)
     
-    @scala.inline
-    def setTestRunnerClass(value: String): Self = StObject.set(x, "testRunnerClass", value.asInstanceOf[js.Any])
+    inline def setTestRunnerClass(value: String): Self = StObject.set(x, "testRunnerClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestRunnerClassUndefined: Self = StObject.set(x, "testRunnerClass", js.undefined)
+    inline def setTestRunnerClassUndefined: Self = StObject.set(x, "testRunnerClass", js.undefined)
     
-    @scala.inline
-    def setTestTargets(value: js.Array[String]): Self = StObject.set(x, "testTargets", value.asInstanceOf[js.Any])
+    inline def setTestTargets(value: js.Array[String]): Self = StObject.set(x, "testTargets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestTargetsUndefined: Self = StObject.set(x, "testTargets", js.undefined)
+    inline def setTestTargetsUndefined: Self = StObject.set(x, "testTargets", js.undefined)
     
-    @scala.inline
-    def setTestTargetsVarargs(value: String*): Self = StObject.set(x, "testTargets", js.Array(value :_*))
+    inline def setTestTargetsVarargs(value: String*): Self = StObject.set(x, "testTargets", js.Array(value :_*))
     
-    @scala.inline
-    def setUseOrchestrator(value: Boolean): Self = StObject.set(x, "useOrchestrator", value.asInstanceOf[js.Any])
+    inline def setUseOrchestrator(value: Boolean): Self = StObject.set(x, "useOrchestrator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseOrchestratorUndefined: Self = StObject.set(x, "useOrchestrator", js.undefined)
+    inline def setUseOrchestratorUndefined: Self = StObject.set(x, "useOrchestrator", js.undefined)
   }
 }

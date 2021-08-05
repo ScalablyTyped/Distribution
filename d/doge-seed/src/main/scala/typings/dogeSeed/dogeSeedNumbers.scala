@@ -8,26 +8,21 @@ object dogeSeedNumbers {
   
   @js.native
   sealed trait `128` extends StObject
-  @scala.inline
-  def `128`: `128` = 128.asInstanceOf[`128`]
+  inline def `128`: `128` = 128.asInstanceOf[`128`]
   
   @js.native
   sealed trait `160` extends StObject
-  @scala.inline
-  def `160`: `160` = 160.asInstanceOf[`160`]
+  inline def `160`: `160` = 160.asInstanceOf[`160`]
   
   @js.native
   sealed trait `192` extends StObject
-  @scala.inline
-  def `192`: `192` = 192.asInstanceOf[`192`]
+  inline def `192`: `192` = 192.asInstanceOf[`192`]
   
   @js.native
   sealed trait `224` extends StObject
-  @scala.inline
-  def `224`: `224` = 224.asInstanceOf[`224`]
+  inline def `224`: `224` = 224.asInstanceOf[`224`]
   
   @js.native
   sealed trait `256` extends StObject
-  @scala.inline
-  def `256`: `256` = 256.asInstanceOf[`256`]
+  inline def `256`: `256` = 256.asInstanceOf[`256`]
 }

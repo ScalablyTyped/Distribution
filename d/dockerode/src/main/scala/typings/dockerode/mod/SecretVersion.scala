@@ -10,16 +10,13 @@ trait SecretVersion extends StObject {
 }
 object SecretVersion {
   
-  @scala.inline
-  def apply(Index: Double): SecretVersion = {
+  inline def apply(Index: Double): SecretVersion = {
     val __obj = js.Dynamic.literal(Index = Index.asInstanceOf[js.Any])
     __obj.asInstanceOf[SecretVersion]
   }
   
-  @scala.inline
-  implicit class SecretVersionMutableBuilder[Self <: SecretVersion] (val x: Self) extends AnyVal {
+  extension [Self <: SecretVersion](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
   }
 }

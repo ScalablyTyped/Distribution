@@ -23,34 +23,25 @@ trait ReactionForComment extends StObject {
 }
 object ReactionForComment {
   
-  @scala.inline
-  def apply(): ReactionForComment = {
+  inline def apply(): ReactionForComment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReactionForComment]
   }
   
-  @scala.inline
-  implicit class ReactionForCommentMutableBuilder[Self <: ReactionForComment] (val x: Self) extends AnyVal {
+  extension [Self <: ReactionForComment](x: Self) {
     
-    @scala.inline
-    def setReaction(value: ReactionValueFormats): Self = StObject.set(x, "reaction", value.asInstanceOf[js.Any])
+    inline def setReaction(value: ReactionValueFormats): Self = StObject.set(x, "reaction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReactionUndefined: Self = StObject.set(x, "reaction", js.undefined)
+    inline def setReactionUndefined: Self = StObject.set(x, "reaction", js.undefined)
     
-    @scala.inline
-    def setReactionUsers(value: ReactionUsersList): Self = StObject.set(x, "reactionUsers", value.asInstanceOf[js.Any])
+    inline def setReactionUsers(value: ReactionUsersList): Self = StObject.set(x, "reactionUsers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReactionUsersUndefined: Self = StObject.set(x, "reactionUsers", js.undefined)
+    inline def setReactionUsersUndefined: Self = StObject.set(x, "reactionUsers", js.undefined)
     
-    @scala.inline
-    def setReactionUsersVarargs(value: Arn*): Self = StObject.set(x, "reactionUsers", js.Array(value :_*))
+    inline def setReactionUsersVarargs(value: Arn*): Self = StObject.set(x, "reactionUsers", js.Array(value :_*))
     
-    @scala.inline
-    def setReactionsFromDeletedUsersCount(value: Count): Self = StObject.set(x, "reactionsFromDeletedUsersCount", value.asInstanceOf[js.Any])
+    inline def setReactionsFromDeletedUsersCount(value: Count): Self = StObject.set(x, "reactionsFromDeletedUsersCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReactionsFromDeletedUsersCountUndefined: Self = StObject.set(x, "reactionsFromDeletedUsersCount", js.undefined)
+    inline def setReactionsFromDeletedUsersCountUndefined: Self = StObject.set(x, "reactionsFromDeletedUsersCount", js.undefined)
   }
 }

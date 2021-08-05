@@ -38,14 +38,11 @@ object RawAudioRecorder {
     *     excluding any parameters. If the necessary JavaScript APIs for recording
     *     raw audio are absent, this list will be empty.
     */
-  @scala.inline
-  def getSupportedTypes(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedTypes")().asInstanceOf[js.Array[String]]
+  inline def getSupportedTypes(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedTypes")().asInstanceOf[js.Array[String]]
   
   @JSImport("guacamole-client", "RawAudioRecorder.isSupportedType")
   @js.native
   def isSupportedType: js.Function1[/* mimetype */ Mimetype, Boolean] = js.native
-  @scala.inline
-  def isSupportedType(mimetype: Mimetype): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupportedType")(mimetype.asInstanceOf[js.Any]).asInstanceOf[Boolean]
-  @scala.inline
-  def isSupportedType_=(x: js.Function1[/* mimetype */ Mimetype, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSupportedType")(x.asInstanceOf[js.Any])
+  inline def isSupportedType(mimetype: Mimetype): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupportedType")(mimetype.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isSupportedType_=(x: js.Function1[/* mimetype */ Mimetype, Boolean]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isSupportedType")(x.asInstanceOf[js.Any])
 }

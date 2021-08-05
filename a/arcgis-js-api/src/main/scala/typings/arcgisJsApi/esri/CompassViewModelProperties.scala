@@ -24,25 +24,19 @@ trait CompassViewModelProperties
 }
 object CompassViewModelProperties {
   
-  @scala.inline
-  def apply(): CompassViewModelProperties = {
+  inline def apply(): CompassViewModelProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CompassViewModelProperties]
   }
   
-  @scala.inline
-  implicit class CompassViewModelPropertiesMutableBuilder[Self <: CompassViewModelProperties] (val x: Self) extends AnyVal {
+  extension [Self <: CompassViewModelProperties](x: Self) {
     
-    @scala.inline
-    def setOrientation(value: js.Any): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: js.Any): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

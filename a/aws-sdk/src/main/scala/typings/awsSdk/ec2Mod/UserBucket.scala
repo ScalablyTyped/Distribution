@@ -18,25 +18,19 @@ trait UserBucket extends StObject {
 }
 object UserBucket {
   
-  @scala.inline
-  def apply(): UserBucket = {
+  inline def apply(): UserBucket = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserBucket]
   }
   
-  @scala.inline
-  implicit class UserBucketMutableBuilder[Self <: UserBucket] (val x: Self) extends AnyVal {
+  extension [Self <: UserBucket](x: Self) {
     
-    @scala.inline
-    def setS3Bucket(value: String): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
+    inline def setS3Bucket(value: String): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3BucketUndefined: Self = StObject.set(x, "S3Bucket", js.undefined)
+    inline def setS3BucketUndefined: Self = StObject.set(x, "S3Bucket", js.undefined)
     
-    @scala.inline
-    def setS3Key(value: String): Self = StObject.set(x, "S3Key", value.asInstanceOf[js.Any])
+    inline def setS3Key(value: String): Self = StObject.set(x, "S3Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3KeyUndefined: Self = StObject.set(x, "S3Key", js.undefined)
+    inline def setS3KeyUndefined: Self = StObject.set(x, "S3Key", js.undefined)
   }
 }

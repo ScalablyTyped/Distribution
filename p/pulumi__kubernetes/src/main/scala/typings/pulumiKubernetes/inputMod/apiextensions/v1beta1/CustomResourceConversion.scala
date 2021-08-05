@@ -28,31 +28,23 @@ trait CustomResourceConversion extends StObject {
 }
 object CustomResourceConversion {
   
-  @scala.inline
-  def apply(strategy: Input[String]): CustomResourceConversion = {
+  inline def apply(strategy: Input[String]): CustomResourceConversion = {
     val __obj = js.Dynamic.literal(strategy = strategy.asInstanceOf[js.Any])
     __obj.asInstanceOf[CustomResourceConversion]
   }
   
-  @scala.inline
-  implicit class CustomResourceConversionMutableBuilder[Self <: CustomResourceConversion] (val x: Self) extends AnyVal {
+  extension [Self <: CustomResourceConversion](x: Self) {
     
-    @scala.inline
-    def setConversionReviewVersions(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "conversionReviewVersions", value.asInstanceOf[js.Any])
+    inline def setConversionReviewVersions(value: Input[js.Array[Input[String]]]): Self = StObject.set(x, "conversionReviewVersions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversionReviewVersionsUndefined: Self = StObject.set(x, "conversionReviewVersions", js.undefined)
+    inline def setConversionReviewVersionsUndefined: Self = StObject.set(x, "conversionReviewVersions", js.undefined)
     
-    @scala.inline
-    def setConversionReviewVersionsVarargs(value: Input[String]*): Self = StObject.set(x, "conversionReviewVersions", js.Array(value :_*))
+    inline def setConversionReviewVersionsVarargs(value: Input[String]*): Self = StObject.set(x, "conversionReviewVersions", js.Array(value :_*))
     
-    @scala.inline
-    def setStrategy(value: Input[String]): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
+    inline def setStrategy(value: Input[String]): Self = StObject.set(x, "strategy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebhookClientConfig(value: Input[WebhookClientConfig]): Self = StObject.set(x, "webhookClientConfig", value.asInstanceOf[js.Any])
+    inline def setWebhookClientConfig(value: Input[WebhookClientConfig]): Self = StObject.set(x, "webhookClientConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebhookClientConfigUndefined: Self = StObject.set(x, "webhookClientConfig", js.undefined)
+    inline def setWebhookClientConfigUndefined: Self = StObject.set(x, "webhookClientConfig", js.undefined)
   }
 }

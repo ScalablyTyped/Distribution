@@ -12,44 +12,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
-  @scala.inline
-  def apply(xmlObject: js.Array[XmlObject]): String = ^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(xmlObject: js.Array[XmlObject], options: String): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(xmlObject: js.Array[XmlObject], options: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(xmlObject: js.Array[XmlObject], options: Indent): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
-  @scala.inline
-  def apply(xmlObject: js.Array[XmlObject], options: Option): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(xmlObject: Unit, options: String): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(xmlObject: Unit, options: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(xmlObject: Unit, options: Option): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(xmlObject: XmlObject): String = ^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(xmlObject: XmlObject, options: String): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(xmlObject: XmlObject, options: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(xmlObject: XmlObject, options: Indent): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
-  @scala.inline
-  def apply(xmlObject: XmlObject, options: Option): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
+  inline def apply(xmlObject: js.Array[XmlObject]): String = ^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(xmlObject: js.Array[XmlObject], options: String): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(xmlObject: js.Array[XmlObject], options: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(xmlObject: js.Array[XmlObject], options: Indent): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  inline def apply(xmlObject: js.Array[XmlObject], options: Option): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(xmlObject: Unit, options: String): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(xmlObject: Unit, options: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(xmlObject: Unit, options: Option): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(xmlObject: XmlObject): String = ^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(xmlObject: XmlObject, options: String): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(xmlObject: XmlObject, options: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(xmlObject: XmlObject, options: Indent): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  inline def apply(xmlObject: XmlObject, options: Option): String = (^.asInstanceOf[js.Dynamic].apply(xmlObject.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("xml", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def Element_(xmlObjects: XmlObject*): ElementObject = ^.asInstanceOf[js.Dynamic].applyDynamic("Element")(xmlObjects.asInstanceOf[js.Any]).asInstanceOf[ElementObject]
+  inline def Element_(xmlObjects: XmlObject*): ElementObject = ^.asInstanceOf[js.Dynamic].applyDynamic("Element")(xmlObjects.asInstanceOf[js.Any]).asInstanceOf[ElementObject]
   
-  @scala.inline
-  def element(xmlObjects: XmlObject*): ElementObject = ^.asInstanceOf[js.Dynamic].applyDynamic("element")(xmlObjects.asInstanceOf[js.Any]).asInstanceOf[ElementObject]
+  inline def element(xmlObjects: XmlObject*): ElementObject = ^.asInstanceOf[js.Dynamic].applyDynamic("element")(xmlObjects.asInstanceOf[js.Any]).asInstanceOf[ElementObject]
   
   @js.native
   trait ElementObject extends StObject {
@@ -79,32 +63,24 @@ object mod {
   }
   object Option {
     
-    @scala.inline
-    def apply(): Option = {
+    inline def apply(): Option = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Option]
     }
     
-    @scala.inline
-    implicit class OptionMutableBuilder[Self <: Option] (val x: Self) extends AnyVal {
+    extension [Self <: Option](x: Self) {
       
-      @scala.inline
-      def setDeclaration(value: Boolean | Encoding): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
+      inline def setDeclaration(value: Boolean | Encoding): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeclarationUndefined: Self = StObject.set(x, "declaration", js.undefined)
+      inline def setDeclarationUndefined: Self = StObject.set(x, "declaration", js.undefined)
       
-      @scala.inline
-      def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+      inline def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+      inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
       
-      @scala.inline
-      def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+      inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
     }
   }
   
@@ -128,8 +104,7 @@ object mod {
        with _XmlDesc
   object XmlDescArray {
     
-    @scala.inline
-    def apply(): XmlDescArray = {
+    inline def apply(): XmlDescArray = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[XmlDescArray]
     }
@@ -140,26 +115,22 @@ object mod {
   trait _XmlDesc extends StObject
   object _XmlDesc {
     
-    @scala.inline
-    def Attr(_attr: XmlAttrs): typings.xml.anon.Attr = {
+    inline def Attr(_attr: XmlAttrs): typings.xml.anon.Attr = {
       val __obj = js.Dynamic.literal(_attr = _attr.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.xml.anon.Attr]
     }
     
-    @scala.inline
-    def AttrCdata(_attr: XmlAttrs, _cdata: String): typings.xml.anon.AttrCdata = {
+    inline def AttrCdata(_attr: XmlAttrs, _cdata: String): typings.xml.anon.AttrCdata = {
       val __obj = js.Dynamic.literal(_attr = _attr.asInstanceOf[js.Any], _cdata = _cdata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.xml.anon.AttrCdata]
     }
     
-    @scala.inline
-    def Cdata(_cdata: String): typings.xml.anon.Cdata = {
+    inline def Cdata(_cdata: String): typings.xml.anon.Cdata = {
       val __obj = js.Dynamic.literal(_cdata = _cdata.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.xml.anon.Cdata]
     }
     
-    @scala.inline
-    def XmlDescArray(): typings.xml.mod.XmlDescArray = {
+    inline def XmlDescArray(): typings.xml.mod.XmlDescArray = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.xml.mod.XmlDescArray]
     }

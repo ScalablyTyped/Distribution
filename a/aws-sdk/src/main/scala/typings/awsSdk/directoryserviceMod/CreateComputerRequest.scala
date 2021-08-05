@@ -33,37 +33,27 @@ trait CreateComputerRequest extends StObject {
 }
 object CreateComputerRequest {
   
-  @scala.inline
-  def apply(ComputerName: ComputerName, DirectoryId: DirectoryId, Password: ComputerPassword): CreateComputerRequest = {
+  inline def apply(ComputerName: ComputerName, DirectoryId: DirectoryId, Password: ComputerPassword): CreateComputerRequest = {
     val __obj = js.Dynamic.literal(ComputerName = ComputerName.asInstanceOf[js.Any], DirectoryId = DirectoryId.asInstanceOf[js.Any], Password = Password.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateComputerRequest]
   }
   
-  @scala.inline
-  implicit class CreateComputerRequestMutableBuilder[Self <: CreateComputerRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateComputerRequest](x: Self) {
     
-    @scala.inline
-    def setComputerAttributes(value: Attributes): Self = StObject.set(x, "ComputerAttributes", value.asInstanceOf[js.Any])
+    inline def setComputerAttributes(value: Attributes): Self = StObject.set(x, "ComputerAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputerAttributesUndefined: Self = StObject.set(x, "ComputerAttributes", js.undefined)
+    inline def setComputerAttributesUndefined: Self = StObject.set(x, "ComputerAttributes", js.undefined)
     
-    @scala.inline
-    def setComputerAttributesVarargs(value: Attribute*): Self = StObject.set(x, "ComputerAttributes", js.Array(value :_*))
+    inline def setComputerAttributesVarargs(value: Attribute*): Self = StObject.set(x, "ComputerAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setComputerName(value: ComputerName): Self = StObject.set(x, "ComputerName", value.asInstanceOf[js.Any])
+    inline def setComputerName(value: ComputerName): Self = StObject.set(x, "ComputerName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationalUnitDistinguishedName(value: OrganizationalUnitDN): Self = StObject.set(x, "OrganizationalUnitDistinguishedName", value.asInstanceOf[js.Any])
+    inline def setOrganizationalUnitDistinguishedName(value: OrganizationalUnitDN): Self = StObject.set(x, "OrganizationalUnitDistinguishedName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganizationalUnitDistinguishedNameUndefined: Self = StObject.set(x, "OrganizationalUnitDistinguishedName", js.undefined)
+    inline def setOrganizationalUnitDistinguishedNameUndefined: Self = StObject.set(x, "OrganizationalUnitDistinguishedName", js.undefined)
     
-    @scala.inline
-    def setPassword(value: ComputerPassword): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: ComputerPassword): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
   }
 }

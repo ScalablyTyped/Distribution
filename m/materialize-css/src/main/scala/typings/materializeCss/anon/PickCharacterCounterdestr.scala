@@ -11,19 +11,15 @@ trait PickCharacterCounterdestr extends StObject {
 }
 object PickCharacterCounterdestr {
   
-  @scala.inline
-  def apply(): PickCharacterCounterdestr = {
+  inline def apply(): PickCharacterCounterdestr = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PickCharacterCounterdestr]
   }
   
-  @scala.inline
-  implicit class PickCharacterCounterdestrMutableBuilder[Self <: PickCharacterCounterdestr] (val x: Self) extends AnyVal {
+  extension [Self <: PickCharacterCounterdestr](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: js.Any): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
+    inline def setDestroy(value: js.Any): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
+    inline def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
   }
 }

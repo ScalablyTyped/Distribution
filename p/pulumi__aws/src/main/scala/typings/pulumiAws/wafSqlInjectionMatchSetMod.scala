@@ -53,21 +53,16 @@ object wafSqlInjectionMatchSetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): SqlInjectionMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SqlInjectionMatchSet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SqlInjectionMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SqlInjectionMatchSet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: SqlInjectionMatchSetState): SqlInjectionMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SqlInjectionMatchSet]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: SqlInjectionMatchSetState, opts: CustomResourceOptions): SqlInjectionMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SqlInjectionMatchSet]
+    inline def get(name: String, id: Input[ID]): SqlInjectionMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SqlInjectionMatchSet]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SqlInjectionMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SqlInjectionMatchSet]
+    inline def get(name: String, id: Input[ID], state: SqlInjectionMatchSetState): SqlInjectionMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SqlInjectionMatchSet]
+    inline def get(name: String, id: Input[ID], state: SqlInjectionMatchSetState, opts: CustomResourceOptions): SqlInjectionMatchSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SqlInjectionMatchSet]
     
     /**
       * Returns true if the given object is an instance of SqlInjectionMatchSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/sqlInjectionMatchSet.SqlInjectionMatchSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/waf/sqlInjectionMatchSet.SqlInjectionMatchSet */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/waf/sqlInjectionMatchSet.SqlInjectionMatchSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/waf/sqlInjectionMatchSet.SqlInjectionMatchSet */ Boolean]
   }
   
   trait SqlInjectionMatchSetArgs extends StObject {
@@ -88,33 +83,26 @@ object wafSqlInjectionMatchSetMod {
   }
   object SqlInjectionMatchSetArgs {
     
-    @scala.inline
-    def apply(): SqlInjectionMatchSetArgs = {
+    inline def apply(): SqlInjectionMatchSetArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SqlInjectionMatchSetArgs]
     }
     
-    @scala.inline
-    implicit class SqlInjectionMatchSetArgsMutableBuilder[Self <: SqlInjectionMatchSetArgs] (val x: Self) extends AnyVal {
+    extension [Self <: SqlInjectionMatchSetArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setSqlInjectionMatchTuples(
+      inline def setSqlInjectionMatchTuples(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.waf.SqlInjectionMatchSetSqlInjectionMatchTuple]]
             ]
       ): Self = StObject.set(x, "sqlInjectionMatchTuples", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSqlInjectionMatchTuplesUndefined: Self = StObject.set(x, "sqlInjectionMatchTuples", js.undefined)
+      inline def setSqlInjectionMatchTuplesUndefined: Self = StObject.set(x, "sqlInjectionMatchTuples", js.undefined)
       
-      @scala.inline
-      def setSqlInjectionMatchTuplesVarargs(value: Input[typings.pulumiAws.inputMod.waf.SqlInjectionMatchSetSqlInjectionMatchTuple]*): Self = StObject.set(x, "sqlInjectionMatchTuples", js.Array(value :_*))
+      inline def setSqlInjectionMatchTuplesVarargs(value: Input[typings.pulumiAws.inputMod.waf.SqlInjectionMatchSetSqlInjectionMatchTuple]*): Self = StObject.set(x, "sqlInjectionMatchTuples", js.Array(value :_*))
     }
   }
   
@@ -136,33 +124,26 @@ object wafSqlInjectionMatchSetMod {
   }
   object SqlInjectionMatchSetState {
     
-    @scala.inline
-    def apply(): SqlInjectionMatchSetState = {
+    inline def apply(): SqlInjectionMatchSetState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SqlInjectionMatchSetState]
     }
     
-    @scala.inline
-    implicit class SqlInjectionMatchSetStateMutableBuilder[Self <: SqlInjectionMatchSetState] (val x: Self) extends AnyVal {
+    extension [Self <: SqlInjectionMatchSetState](x: Self) {
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setSqlInjectionMatchTuples(
+      inline def setSqlInjectionMatchTuples(
         value: Input[
               js.Array[Input[typings.pulumiAws.inputMod.waf.SqlInjectionMatchSetSqlInjectionMatchTuple]]
             ]
       ): Self = StObject.set(x, "sqlInjectionMatchTuples", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSqlInjectionMatchTuplesUndefined: Self = StObject.set(x, "sqlInjectionMatchTuples", js.undefined)
+      inline def setSqlInjectionMatchTuplesUndefined: Self = StObject.set(x, "sqlInjectionMatchTuples", js.undefined)
       
-      @scala.inline
-      def setSqlInjectionMatchTuplesVarargs(value: Input[typings.pulumiAws.inputMod.waf.SqlInjectionMatchSetSqlInjectionMatchTuple]*): Self = StObject.set(x, "sqlInjectionMatchTuples", js.Array(value :_*))
+      inline def setSqlInjectionMatchTuplesVarargs(value: Input[typings.pulumiAws.inputMod.waf.SqlInjectionMatchSetSqlInjectionMatchTuple]*): Self = StObject.set(x, "sqlInjectionMatchTuples", js.Array(value :_*))
     }
   }
 }

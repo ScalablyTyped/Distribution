@@ -29,61 +29,43 @@ trait AnnotateTextResponse extends StObject {
 }
 object AnnotateTextResponse {
   
-  @scala.inline
-  def apply(): AnnotateTextResponse = {
+  inline def apply(): AnnotateTextResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnnotateTextResponse]
   }
   
-  @scala.inline
-  implicit class AnnotateTextResponseMutableBuilder[Self <: AnnotateTextResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotateTextResponse](x: Self) {
     
-    @scala.inline
-    def setCategories(value: js.Array[ClassificationCategory]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
+    inline def setCategories(value: js.Array[ClassificationCategory]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
+    inline def setCategoriesUndefined: Self = StObject.set(x, "categories", js.undefined)
     
-    @scala.inline
-    def setCategoriesVarargs(value: ClassificationCategory*): Self = StObject.set(x, "categories", js.Array(value :_*))
+    inline def setCategoriesVarargs(value: ClassificationCategory*): Self = StObject.set(x, "categories", js.Array(value :_*))
     
-    @scala.inline
-    def setDocumentSentiment(value: Sentiment): Self = StObject.set(x, "documentSentiment", value.asInstanceOf[js.Any])
+    inline def setDocumentSentiment(value: Sentiment): Self = StObject.set(x, "documentSentiment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentSentimentUndefined: Self = StObject.set(x, "documentSentiment", js.undefined)
+    inline def setDocumentSentimentUndefined: Self = StObject.set(x, "documentSentiment", js.undefined)
     
-    @scala.inline
-    def setEntities(value: js.Array[Entity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
+    inline def setEntities(value: js.Array[Entity]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
+    inline def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
-    @scala.inline
-    def setEntitiesVarargs(value: Entity*): Self = StObject.set(x, "entities", js.Array(value :_*))
+    inline def setEntitiesVarargs(value: Entity*): Self = StObject.set(x, "entities", js.Array(value :_*))
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setSentences(value: js.Array[Sentence]): Self = StObject.set(x, "sentences", value.asInstanceOf[js.Any])
+    inline def setSentences(value: js.Array[Sentence]): Self = StObject.set(x, "sentences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSentencesUndefined: Self = StObject.set(x, "sentences", js.undefined)
+    inline def setSentencesUndefined: Self = StObject.set(x, "sentences", js.undefined)
     
-    @scala.inline
-    def setSentencesVarargs(value: Sentence*): Self = StObject.set(x, "sentences", js.Array(value :_*))
+    inline def setSentencesVarargs(value: Sentence*): Self = StObject.set(x, "sentences", js.Array(value :_*))
     
-    @scala.inline
-    def setTokens(value: js.Array[Token]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+    inline def setTokens(value: js.Array[Token]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
+    inline def setTokensUndefined: Self = StObject.set(x, "tokens", js.undefined)
     
-    @scala.inline
-    def setTokensVarargs(value: Token*): Self = StObject.set(x, "tokens", js.Array(value :_*))
+    inline def setTokensVarargs(value: Token*): Self = StObject.set(x, "tokens", js.Array(value :_*))
   }
 }

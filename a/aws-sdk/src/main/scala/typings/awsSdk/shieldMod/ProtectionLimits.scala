@@ -13,19 +13,15 @@ trait ProtectionLimits extends StObject {
 }
 object ProtectionLimits {
   
-  @scala.inline
-  def apply(ProtectedResourceTypeLimits: Limits): ProtectionLimits = {
+  inline def apply(ProtectedResourceTypeLimits: Limits): ProtectionLimits = {
     val __obj = js.Dynamic.literal(ProtectedResourceTypeLimits = ProtectedResourceTypeLimits.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProtectionLimits]
   }
   
-  @scala.inline
-  implicit class ProtectionLimitsMutableBuilder[Self <: ProtectionLimits] (val x: Self) extends AnyVal {
+  extension [Self <: ProtectionLimits](x: Self) {
     
-    @scala.inline
-    def setProtectedResourceTypeLimits(value: Limits): Self = StObject.set(x, "ProtectedResourceTypeLimits", value.asInstanceOf[js.Any])
+    inline def setProtectedResourceTypeLimits(value: Limits): Self = StObject.set(x, "ProtectedResourceTypeLimits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtectedResourceTypeLimitsVarargs(value: Limit*): Self = StObject.set(x, "ProtectedResourceTypeLimits", js.Array(value :_*))
+    inline def setProtectedResourceTypeLimitsVarargs(value: Limit*): Self = StObject.set(x, "ProtectedResourceTypeLimits", js.Array(value :_*))
   }
 }

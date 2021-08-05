@@ -13,16 +13,13 @@ trait SendTaskHeartbeatInput extends StObject {
 }
 object SendTaskHeartbeatInput {
   
-  @scala.inline
-  def apply(taskToken: TaskToken): SendTaskHeartbeatInput = {
+  inline def apply(taskToken: TaskToken): SendTaskHeartbeatInput = {
     val __obj = js.Dynamic.literal(taskToken = taskToken.asInstanceOf[js.Any])
     __obj.asInstanceOf[SendTaskHeartbeatInput]
   }
   
-  @scala.inline
-  implicit class SendTaskHeartbeatInputMutableBuilder[Self <: SendTaskHeartbeatInput] (val x: Self) extends AnyVal {
+  extension [Self <: SendTaskHeartbeatInput](x: Self) {
     
-    @scala.inline
-    def setTaskToken(value: TaskToken): Self = StObject.set(x, "taskToken", value.asInstanceOf[js.Any])
+    inline def setTaskToken(value: TaskToken): Self = StObject.set(x, "taskToken", value.asInstanceOf[js.Any])
   }
 }

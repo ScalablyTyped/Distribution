@@ -10,16 +10,13 @@ trait IServerDataPushSink extends StObject {
 }
 object IServerDataPushSink {
   
-  @scala.inline
-  def apply(OnServerDataPush: (Double, String) => Unit): IServerDataPushSink = {
+  inline def apply(OnServerDataPush: (Double, String) => Unit): IServerDataPushSink = {
     val __obj = js.Dynamic.literal(OnServerDataPush = js.Any.fromFunction2(OnServerDataPush))
     __obj.asInstanceOf[IServerDataPushSink]
   }
   
-  @scala.inline
-  implicit class IServerDataPushSinkMutableBuilder[Self <: IServerDataPushSink] (val x: Self) extends AnyVal {
+  extension [Self <: IServerDataPushSink](x: Self) {
     
-    @scala.inline
-    def setOnServerDataPush(value: (Double, String) => Unit): Self = StObject.set(x, "OnServerDataPush", js.Any.fromFunction2(value))
+    inline def setOnServerDataPush(value: (Double, String) => Unit): Self = StObject.set(x, "OnServerDataPush", js.Any.fromFunction2(value))
   }
 }

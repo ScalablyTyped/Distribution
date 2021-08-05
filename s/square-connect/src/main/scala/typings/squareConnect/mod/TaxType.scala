@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TaxType extends StObject
 object TaxType {
   
-  @scala.inline
-  def ADDITIVE: typings.squareConnect.squareConnectStrings.ADDITIVE = "ADDITIVE".asInstanceOf[typings.squareConnect.squareConnectStrings.ADDITIVE]
+  inline def ADDITIVE: typings.squareConnect.squareConnectStrings.ADDITIVE = "ADDITIVE".asInstanceOf[typings.squareConnect.squareConnectStrings.ADDITIVE]
   
-  @scala.inline
-  def INCLUSIVE: typings.squareConnect.squareConnectStrings.INCLUSIVE = "INCLUSIVE".asInstanceOf[typings.squareConnect.squareConnectStrings.INCLUSIVE]
+  inline def INCLUSIVE: typings.squareConnect.squareConnectStrings.INCLUSIVE = "INCLUSIVE".asInstanceOf[typings.squareConnect.squareConnectStrings.INCLUSIVE]
   
-  @scala.inline
-  def UNKNOWN_TAX: typings.squareConnect.squareConnectStrings.UNKNOWN_TAX = "UNKNOWN_TAX".asInstanceOf[typings.squareConnect.squareConnectStrings.UNKNOWN_TAX]
+  inline def UNKNOWN_TAX: typings.squareConnect.squareConnectStrings.UNKNOWN_TAX = "UNKNOWN_TAX".asInstanceOf[typings.squareConnect.squareConnectStrings.UNKNOWN_TAX]
 }

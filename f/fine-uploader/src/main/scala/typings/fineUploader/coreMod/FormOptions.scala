@@ -32,31 +32,23 @@ trait FormOptions extends StObject {
 }
 object FormOptions {
   
-  @scala.inline
-  def apply(): FormOptions = {
+  inline def apply(): FormOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FormOptions]
   }
   
-  @scala.inline
-  implicit class FormOptionsMutableBuilder[Self <: FormOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FormOptions](x: Self) {
     
-    @scala.inline
-    def setAutoUpload(value: Boolean): Self = StObject.set(x, "autoUpload", value.asInstanceOf[js.Any])
+    inline def setAutoUpload(value: Boolean): Self = StObject.set(x, "autoUpload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoUploadUndefined: Self = StObject.set(x, "autoUpload", js.undefined)
+    inline def setAutoUploadUndefined: Self = StObject.set(x, "autoUpload", js.undefined)
     
-    @scala.inline
-    def setElement(value: String | HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: String | HTMLElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    @scala.inline
-    def setInterceptSubmit(value: Boolean): Self = StObject.set(x, "interceptSubmit", value.asInstanceOf[js.Any])
+    inline def setInterceptSubmit(value: Boolean): Self = StObject.set(x, "interceptSubmit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterceptSubmitUndefined: Self = StObject.set(x, "interceptSubmit", js.undefined)
+    inline def setInterceptSubmitUndefined: Self = StObject.set(x, "interceptSubmit", js.undefined)
   }
 }

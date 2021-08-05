@@ -12,20 +12,15 @@ object nixLaunchMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(config: ConfigWithRuntime, osConfig: OsConfig): js.Promise[ChildProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any], osConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ChildProcess]]
+  inline def default(config: ConfigWithRuntime, osConfig: OsConfig): js.Promise[ChildProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any], osConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ChildProcess]]
   
-  @scala.inline
-  def download(version: String, folder: String, osConfig: OsConfig): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("download")(version.asInstanceOf[js.Any], folder.asInstanceOf[js.Any], osConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def download(version: String, folder: String, osConfig: OsConfig): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("download")(version.asInstanceOf[js.Any], folder.asInstanceOf[js.Any], osConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def getRuntimePath(version: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRuntimePath")(version.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  inline def getRuntimePath(version: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRuntimePath")(version.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @scala.inline
-  def getUrl(version: String, urlPath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(version.asInstanceOf[js.Any], urlPath.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def getUrl(version: String, urlPath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(version.asInstanceOf[js.Any], urlPath.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @scala.inline
-  def install(versionOrChannel: String, osConfig: OsConfig): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(versionOrChannel.asInstanceOf[js.Any], osConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  inline def install(versionOrChannel: String, osConfig: OsConfig): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("install")(versionOrChannel.asInstanceOf[js.Any], osConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   trait OsConfig extends StObject {
     
@@ -39,26 +34,20 @@ object nixLaunchMod {
   }
   object OsConfig {
     
-    @scala.inline
-    def apply(executablePath: String, manifestLocation: String, namedPipeName: String, urlPath: String): OsConfig = {
+    inline def apply(executablePath: String, manifestLocation: String, namedPipeName: String, urlPath: String): OsConfig = {
       val __obj = js.Dynamic.literal(executablePath = executablePath.asInstanceOf[js.Any], manifestLocation = manifestLocation.asInstanceOf[js.Any], namedPipeName = namedPipeName.asInstanceOf[js.Any], urlPath = urlPath.asInstanceOf[js.Any])
       __obj.asInstanceOf[OsConfig]
     }
     
-    @scala.inline
-    implicit class OsConfigMutableBuilder[Self <: OsConfig] (val x: Self) extends AnyVal {
+    extension [Self <: OsConfig](x: Self) {
       
-      @scala.inline
-      def setExecutablePath(value: String): Self = StObject.set(x, "executablePath", value.asInstanceOf[js.Any])
+      inline def setExecutablePath(value: String): Self = StObject.set(x, "executablePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setManifestLocation(value: String): Self = StObject.set(x, "manifestLocation", value.asInstanceOf[js.Any])
+      inline def setManifestLocation(value: String): Self = StObject.set(x, "manifestLocation", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamedPipeName(value: String): Self = StObject.set(x, "namedPipeName", value.asInstanceOf[js.Any])
+      inline def setNamedPipeName(value: String): Self = StObject.set(x, "namedPipeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlPath(value: String): Self = StObject.set(x, "urlPath", value.asInstanceOf[js.Any])
+      inline def setUrlPath(value: String): Self = StObject.set(x, "urlPath", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -15,20 +15,16 @@ object anon {
   }
   object Callback {
     
-    @scala.inline
-    def apply(callback: String => Unit, routePattern: RegExp): Callback = {
+    inline def apply(callback: String => Unit, routePattern: RegExp): Callback = {
       val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback), routePattern = routePattern.asInstanceOf[js.Any])
       __obj.asInstanceOf[Callback]
     }
     
-    @scala.inline
-    implicit class CallbackMutableBuilder[Self <: Callback] (val x: Self) extends AnyVal {
+    extension [Self <: Callback](x: Self) {
       
-      @scala.inline
-      def setCallback(value: String => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+      inline def setCallback(value: String => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRoutePattern(value: RegExp): Self = StObject.set(x, "routePattern", value.asInstanceOf[js.Any])
+      inline def setRoutePattern(value: RegExp): Self = StObject.set(x, "routePattern", value.asInstanceOf[js.Any])
     }
   }
 }

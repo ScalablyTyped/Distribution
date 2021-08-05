@@ -26,8 +26,7 @@ object anon {
   }
   object AutoClose {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       autoClose: Boolean,
       disabled: Boolean,
       left: js.Array[scala.Nothing],
@@ -40,35 +39,25 @@ object anon {
       __obj.asInstanceOf[AutoClose]
     }
     
-    @scala.inline
-    implicit class AutoCloseMutableBuilder[Self <: AutoClose] (val x: Self) extends AnyVal {
+    extension [Self <: AutoClose](x: Self) {
       
-      @scala.inline
-      def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
+      inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeft(value: js.Array[scala.Nothing]): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+      inline def setLeft(value: js.Array[scala.Nothing]): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftVarargs(value: scala.Nothing*): Self = StObject.set(x, "left", js.Array(value :_*))
+      inline def setLeftVarargs(value: scala.Nothing*): Self = StObject.set(x, "left", js.Array(value :_*))
       
-      @scala.inline
-      def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
+      inline def setOnClose(value: () => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnOpen(value: () => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction0(value))
+      inline def setOnOpen(value: () => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRight(value: js.Array[scala.Nothing]): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+      inline def setRight(value: js.Array[scala.Nothing]): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightVarargs(value: scala.Nothing*): Self = StObject.set(x, "right", js.Array(value :_*))
+      inline def setRightVarargs(value: scala.Nothing*): Self = StObject.set(x, "right", js.Array(value :_*))
     }
   }
   
@@ -90,8 +79,7 @@ object anon {
   }
   object BackgroundColor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       backgroundColor: String,
       color: String,
       component: Element,
@@ -105,29 +93,21 @@ object anon {
       __obj.asInstanceOf[BackgroundColor]
     }
     
-    @scala.inline
-    implicit class BackgroundColorMutableBuilder[Self <: BackgroundColor] (val x: Self) extends AnyVal {
+    extension [Self <: BackgroundColor](x: Self) {
       
-      @scala.inline
-      def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+      inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponent(value: Element): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: Element): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnPress(value: js.Any): Self = StObject.set(x, "onPress", value.asInstanceOf[js.Any])
+      inline def setOnPress(value: js.Any): Self = StObject.set(x, "onPress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setText(value: js.Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: js.Any): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -145,44 +125,32 @@ object anon {
   }
   object ClassName {
     
-    @scala.inline
-    def apply(): ClassName = {
+    inline def apply(): ClassName = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClassName]
     }
     
-    @scala.inline
-    implicit class ClassNameMutableBuilder[Self <: ClassName] (val x: Self) extends AnyVal {
+    extension [Self <: ClassName](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
+      inline def setOnPress(value: () => Unit): Self = StObject.set(x, "onPress", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
+      inline def setOnPressUndefined: Self = StObject.set(x, "onPress", js.undefined)
       
-      @scala.inline
-      def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: js.Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setText(value: ReactNode): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: ReactNode): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: js.Any): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

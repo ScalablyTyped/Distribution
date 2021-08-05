@@ -43,8 +43,7 @@ trait User extends StObject {
 }
 object User {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authenticationStatus: UserAuthenticationStatus,
     getPictureAsync: UserPictureSize => IPromiseWithIAsyncOperation[IRandomAccessStreamReference],
     getPropertiesAsync: IVectorView[String] => IPromiseWithIAsyncOperation[IPropertySet],
@@ -57,25 +56,18 @@ object User {
     __obj.asInstanceOf[User]
   }
   
-  @scala.inline
-  implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
+  extension [Self <: User](x: Self) {
     
-    @scala.inline
-    def setAuthenticationStatus(value: UserAuthenticationStatus): Self = StObject.set(x, "authenticationStatus", value.asInstanceOf[js.Any])
+    inline def setAuthenticationStatus(value: UserAuthenticationStatus): Self = StObject.set(x, "authenticationStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetPictureAsync(value: UserPictureSize => IPromiseWithIAsyncOperation[IRandomAccessStreamReference]): Self = StObject.set(x, "getPictureAsync", js.Any.fromFunction1(value))
+    inline def setGetPictureAsync(value: UserPictureSize => IPromiseWithIAsyncOperation[IRandomAccessStreamReference]): Self = StObject.set(x, "getPictureAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPropertiesAsync(value: IVectorView[String] => IPromiseWithIAsyncOperation[IPropertySet]): Self = StObject.set(x, "getPropertiesAsync", js.Any.fromFunction1(value))
+    inline def setGetPropertiesAsync(value: IVectorView[String] => IPromiseWithIAsyncOperation[IPropertySet]): Self = StObject.set(x, "getPropertiesAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetPropertyAsync(value: String => IPromiseWithIAsyncOperation[js.Any]): Self = StObject.set(x, "getPropertyAsync", js.Any.fromFunction1(value))
+    inline def setGetPropertyAsync(value: String => IPromiseWithIAsyncOperation[js.Any]): Self = StObject.set(x, "getPropertyAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setNonRoamableId(value: String): Self = StObject.set(x, "nonRoamableId", value.asInstanceOf[js.Any])
+    inline def setNonRoamableId(value: String): Self = StObject.set(x, "nonRoamableId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: UserType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: UserType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

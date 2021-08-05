@@ -23,31 +23,23 @@ trait LinkOpts extends StObject {
 }
 object LinkOpts {
   
-  @scala.inline
-  def apply(): LinkOpts = {
+  inline def apply(): LinkOpts = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LinkOpts]
   }
   
-  @scala.inline
-  implicit class LinkOptsMutableBuilder[Self <: LinkOpts] (val x: Self) extends AnyVal {
+  extension [Self <: LinkOpts](x: Self) {
     
-    @scala.inline
-    def setInstance(value: Ractive[Ractive[js.Any]]): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+    inline def setInstance(value: Ractive[Ractive[js.Any]]): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
+    inline def setInstanceUndefined: Self = StObject.set(x, "instance", js.undefined)
     
-    @scala.inline
-    def setKeypath(value: String): Self = StObject.set(x, "keypath", value.asInstanceOf[js.Any])
+    inline def setKeypath(value: String): Self = StObject.set(x, "keypath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeypathUndefined: Self = StObject.set(x, "keypath", js.undefined)
+    inline def setKeypathUndefined: Self = StObject.set(x, "keypath", js.undefined)
     
-    @scala.inline
-    def setRactive(value: Ractive[Ractive[js.Any]]): Self = StObject.set(x, "ractive", value.asInstanceOf[js.Any])
+    inline def setRactive(value: Ractive[Ractive[js.Any]]): Self = StObject.set(x, "ractive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRactiveUndefined: Self = StObject.set(x, "ractive", js.undefined)
+    inline def setRactiveUndefined: Self = StObject.set(x, "ractive", js.undefined)
   }
 }

@@ -18,15 +18,15 @@ object networkMod {
        with Network {
     def this(clientInfo: ClientInfo, config: js.Any, transport: js.Any) = this()
     
-    var backoffConfig: js.Any = js.native
+    /* private */ var backoffConfig: js.Any = js.native
     
     var clientInfo: ClientInfo = js.native
     
     var config: js.Any = js.native
     
-    var createHeaders: js.Any = js.native
+    /* private */ var createHeaders: js.Any = js.native
     
-    var executeWithRetry: js.Any = js.native
+    /* private */ var executeWithRetry: js.Any = js.native
     
     var transport: js.Any = js.native
   }

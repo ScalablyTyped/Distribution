@@ -21,23 +21,18 @@ object convertFrom {
   }
   object Result {
     
-    @scala.inline
-    def apply(info: String, locations: js.Array[LngLat]): Result = {
+    inline def apply(info: String, locations: js.Array[LngLat]): Result = {
       val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any], locations = locations.asInstanceOf[js.Any])
       __obj.asInstanceOf[Result]
     }
     
-    @scala.inline
-    implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+    extension [Self <: Result](x: Self) {
       
-      @scala.inline
-      def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocations(value: js.Array[LngLat]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+      inline def setLocations(value: js.Array[LngLat]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationsVarargs(value: LngLat*): Self = StObject.set(x, "locations", js.Array(value :_*))
+      inline def setLocationsVarargs(value: LngLat*): Self = StObject.set(x, "locations", js.Array(value :_*))
     }
   }
   
@@ -48,11 +43,9 @@ object convertFrom {
   trait SearchStatus extends StObject
   object SearchStatus {
     
-    @scala.inline
-    def complete: typings.amapJsApi.amapJsApiStrings.complete = "complete".asInstanceOf[typings.amapJsApi.amapJsApiStrings.complete]
+    inline def complete: typings.amapJsApi.amapJsApiStrings.complete = "complete".asInstanceOf[typings.amapJsApi.amapJsApiStrings.complete]
     
-    @scala.inline
-    def error: typings.amapJsApi.amapJsApiStrings.error = "error".asInstanceOf[typings.amapJsApi.amapJsApiStrings.error]
+    inline def error: typings.amapJsApi.amapJsApiStrings.error = "error".asInstanceOf[typings.amapJsApi.amapJsApiStrings.error]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -63,13 +56,10 @@ object convertFrom {
   trait Type extends StObject
   object Type {
     
-    @scala.inline
-    def baidu: typings.amapJsApi.amapJsApiStrings.baidu = "baidu".asInstanceOf[typings.amapJsApi.amapJsApiStrings.baidu]
+    inline def baidu: typings.amapJsApi.amapJsApiStrings.baidu = "baidu".asInstanceOf[typings.amapJsApi.amapJsApiStrings.baidu]
     
-    @scala.inline
-    def gps: typings.amapJsApi.amapJsApiStrings.gps = "gps".asInstanceOf[typings.amapJsApi.amapJsApiStrings.gps]
+    inline def gps: typings.amapJsApi.amapJsApiStrings.gps = "gps".asInstanceOf[typings.amapJsApi.amapJsApiStrings.gps]
     
-    @scala.inline
-    def mapbar: typings.amapJsApi.amapJsApiStrings.mapbar = "mapbar".asInstanceOf[typings.amapJsApi.amapJsApiStrings.mapbar]
+    inline def mapbar: typings.amapJsApi.amapJsApiStrings.mapbar = "mapbar".asInstanceOf[typings.amapJsApi.amapJsApiStrings.mapbar]
   }
 }

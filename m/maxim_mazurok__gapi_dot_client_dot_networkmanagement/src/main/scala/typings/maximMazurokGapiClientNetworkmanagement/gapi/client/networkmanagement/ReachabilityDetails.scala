@@ -20,40 +20,29 @@ trait ReachabilityDetails extends StObject {
 }
 object ReachabilityDetails {
   
-  @scala.inline
-  def apply(): ReachabilityDetails = {
+  inline def apply(): ReachabilityDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReachabilityDetails]
   }
   
-  @scala.inline
-  implicit class ReachabilityDetailsMutableBuilder[Self <: ReachabilityDetails] (val x: Self) extends AnyVal {
+  extension [Self <: ReachabilityDetails](x: Self) {
     
-    @scala.inline
-    def setError(value: Status): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Status): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: String): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
-    @scala.inline
-    def setTraces(value: js.Array[Trace]): Self = StObject.set(x, "traces", value.asInstanceOf[js.Any])
+    inline def setTraces(value: js.Array[Trace]): Self = StObject.set(x, "traces", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTracesUndefined: Self = StObject.set(x, "traces", js.undefined)
+    inline def setTracesUndefined: Self = StObject.set(x, "traces", js.undefined)
     
-    @scala.inline
-    def setTracesVarargs(value: Trace*): Self = StObject.set(x, "traces", js.Array(value :_*))
+    inline def setTracesVarargs(value: Trace*): Self = StObject.set(x, "traces", js.Array(value :_*))
     
-    @scala.inline
-    def setVerifyTime(value: String): Self = StObject.set(x, "verifyTime", value.asInstanceOf[js.Any])
+    inline def setVerifyTime(value: String): Self = StObject.set(x, "verifyTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerifyTimeUndefined: Self = StObject.set(x, "verifyTime", js.undefined)
+    inline def setVerifyTimeUndefined: Self = StObject.set(x, "verifyTime", js.undefined)
   }
 }

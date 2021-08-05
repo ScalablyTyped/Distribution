@@ -11,6 +11,5 @@ object projectionParseMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def parseProjection(model: Model): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("parseProjection")(model.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def parseProjection(model: Model): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("parseProjection")(model.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

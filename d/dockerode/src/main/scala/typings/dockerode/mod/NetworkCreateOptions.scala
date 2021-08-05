@@ -29,70 +29,49 @@ trait NetworkCreateOptions extends StObject {
 }
 object NetworkCreateOptions {
   
-  @scala.inline
-  def apply(Name: String): NetworkCreateOptions = {
+  inline def apply(Name: String): NetworkCreateOptions = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[NetworkCreateOptions]
   }
   
-  @scala.inline
-  implicit class NetworkCreateOptionsMutableBuilder[Self <: NetworkCreateOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkCreateOptions](x: Self) {
     
-    @scala.inline
-    def setAttachable(value: Boolean): Self = StObject.set(x, "Attachable", value.asInstanceOf[js.Any])
+    inline def setAttachable(value: Boolean): Self = StObject.set(x, "Attachable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachableUndefined: Self = StObject.set(x, "Attachable", js.undefined)
+    inline def setAttachableUndefined: Self = StObject.set(x, "Attachable", js.undefined)
     
-    @scala.inline
-    def setCheckDuplicate(value: Boolean): Self = StObject.set(x, "CheckDuplicate", value.asInstanceOf[js.Any])
+    inline def setCheckDuplicate(value: Boolean): Self = StObject.set(x, "CheckDuplicate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckDuplicateUndefined: Self = StObject.set(x, "CheckDuplicate", js.undefined)
+    inline def setCheckDuplicateUndefined: Self = StObject.set(x, "CheckDuplicate", js.undefined)
     
-    @scala.inline
-    def setDriver(value: String): Self = StObject.set(x, "Driver", value.asInstanceOf[js.Any])
+    inline def setDriver(value: String): Self = StObject.set(x, "Driver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriverUndefined: Self = StObject.set(x, "Driver", js.undefined)
+    inline def setDriverUndefined: Self = StObject.set(x, "Driver", js.undefined)
     
-    @scala.inline
-    def setEnableIPv6(value: Boolean): Self = StObject.set(x, "EnableIPv6", value.asInstanceOf[js.Any])
+    inline def setEnableIPv6(value: Boolean): Self = StObject.set(x, "EnableIPv6", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableIPv6Undefined: Self = StObject.set(x, "EnableIPv6", js.undefined)
+    inline def setEnableIPv6Undefined: Self = StObject.set(x, "EnableIPv6", js.undefined)
     
-    @scala.inline
-    def setIPAM(value: IPAM): Self = StObject.set(x, "IPAM", value.asInstanceOf[js.Any])
+    inline def setIPAM(value: IPAM): Self = StObject.set(x, "IPAM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIPAMUndefined: Self = StObject.set(x, "IPAM", js.undefined)
+    inline def setIPAMUndefined: Self = StObject.set(x, "IPAM", js.undefined)
     
-    @scala.inline
-    def setIngress(value: Boolean): Self = StObject.set(x, "Ingress", value.asInstanceOf[js.Any])
+    inline def setIngress(value: Boolean): Self = StObject.set(x, "Ingress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIngressUndefined: Self = StObject.set(x, "Ingress", js.undefined)
+    inline def setIngressUndefined: Self = StObject.set(x, "Ingress", js.undefined)
     
-    @scala.inline
-    def setInternal(value: Boolean): Self = StObject.set(x, "Internal", value.asInstanceOf[js.Any])
+    inline def setInternal(value: Boolean): Self = StObject.set(x, "Internal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInternalUndefined: Self = StObject.set(x, "Internal", js.undefined)
+    inline def setInternalUndefined: Self = StObject.set(x, "Internal", js.undefined)
     
-    @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "Labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "Labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "Labels", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptions(value: StringDictionary[String]): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: StringDictionary[String]): Self = StObject.set(x, "Options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "Options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "Options", js.undefined)
   }
 }

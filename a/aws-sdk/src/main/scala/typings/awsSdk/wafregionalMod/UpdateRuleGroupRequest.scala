@@ -23,25 +23,19 @@ trait UpdateRuleGroupRequest extends StObject {
 }
 object UpdateRuleGroupRequest {
   
-  @scala.inline
-  def apply(ChangeToken: ChangeToken, RuleGroupId: ResourceId, Updates: RuleGroupUpdates): UpdateRuleGroupRequest = {
+  inline def apply(ChangeToken: ChangeToken, RuleGroupId: ResourceId, Updates: RuleGroupUpdates): UpdateRuleGroupRequest = {
     val __obj = js.Dynamic.literal(ChangeToken = ChangeToken.asInstanceOf[js.Any], RuleGroupId = RuleGroupId.asInstanceOf[js.Any], Updates = Updates.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateRuleGroupRequest]
   }
   
-  @scala.inline
-  implicit class UpdateRuleGroupRequestMutableBuilder[Self <: UpdateRuleGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateRuleGroupRequest](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleGroupId(value: ResourceId): Self = StObject.set(x, "RuleGroupId", value.asInstanceOf[js.Any])
+    inline def setRuleGroupId(value: ResourceId): Self = StObject.set(x, "RuleGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdates(value: RuleGroupUpdates): Self = StObject.set(x, "Updates", value.asInstanceOf[js.Any])
+    inline def setUpdates(value: RuleGroupUpdates): Self = StObject.set(x, "Updates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatesVarargs(value: RuleGroupUpdate*): Self = StObject.set(x, "Updates", js.Array(value :_*))
+    inline def setUpdatesVarargs(value: RuleGroupUpdate*): Self = StObject.set(x, "Updates", js.Array(value :_*))
   }
 }

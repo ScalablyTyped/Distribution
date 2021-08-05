@@ -15,19 +15,15 @@ trait FieldScale
 }
 object FieldScale {
   
-  @scala.inline
-  def apply(field: typings.vegaTypings.encodeMod.Field, scale: typings.vegaTypings.encodeMod.Field): FieldScale = {
+  inline def apply(field: typings.vegaTypings.encodeMod.Field, scale: typings.vegaTypings.encodeMod.Field): FieldScale = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any])
     __obj.asInstanceOf[FieldScale]
   }
   
-  @scala.inline
-  implicit class FieldScaleMutableBuilder[Self <: FieldScale] (val x: Self) extends AnyVal {
+  extension [Self <: FieldScale](x: Self) {
     
-    @scala.inline
-    def setField(value: typings.vegaTypings.encodeMod.Field): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: typings.vegaTypings.encodeMod.Field): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScale(value: typings.vegaTypings.encodeMod.Field): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: typings.vegaTypings.encodeMod.Field): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
   }
 }

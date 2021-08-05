@@ -9,8 +9,7 @@ trait MouseDevice
      with IMouseDevice
 object MouseDevice {
   
-  @scala.inline
-  def apply(onmousemoved: js.Any): MouseDevice = {
+  inline def apply(onmousemoved: js.Any): MouseDevice = {
     val __obj = js.Dynamic.literal(onmousemoved = onmousemoved.asInstanceOf[js.Any])
     __obj.asInstanceOf[MouseDevice]
   }

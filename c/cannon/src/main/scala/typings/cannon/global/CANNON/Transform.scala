@@ -16,28 +16,24 @@ object Transform {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def pointToLocalFrame(
+  inline def pointToLocalFrame(
     position: typings.cannon.CANNON.Vec3,
     quaternion: typings.cannon.CANNON.Quaternion,
     worldPoint: typings.cannon.CANNON.Vec3
   ): typings.cannon.CANNON.Vec3 = (^.asInstanceOf[js.Dynamic].applyDynamic("pointToLocalFrame")(position.asInstanceOf[js.Any], quaternion.asInstanceOf[js.Any], worldPoint.asInstanceOf[js.Any])).asInstanceOf[typings.cannon.CANNON.Vec3]
-  @scala.inline
-  def pointToLocalFrame(
+  inline def pointToLocalFrame(
     position: typings.cannon.CANNON.Vec3,
     quaternion: typings.cannon.CANNON.Quaternion,
     worldPoint: typings.cannon.CANNON.Vec3,
     result: typings.cannon.CANNON.Vec3
   ): typings.cannon.CANNON.Vec3 = (^.asInstanceOf[js.Dynamic].applyDynamic("pointToLocalFrame")(position.asInstanceOf[js.Any], quaternion.asInstanceOf[js.Any], worldPoint.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[typings.cannon.CANNON.Vec3]
   
-  @scala.inline
-  def pointToWorldFrame(
+  inline def pointToWorldFrame(
     position: typings.cannon.CANNON.Vec3,
     quaternion: typings.cannon.CANNON.Quaternion,
     localPoint: typings.cannon.CANNON.Vec3
   ): typings.cannon.CANNON.Vec3 = (^.asInstanceOf[js.Dynamic].applyDynamic("pointToWorldFrame")(position.asInstanceOf[js.Any], quaternion.asInstanceOf[js.Any], localPoint.asInstanceOf[js.Any])).asInstanceOf[typings.cannon.CANNON.Vec3]
-  @scala.inline
-  def pointToWorldFrame(
+  inline def pointToWorldFrame(
     position: typings.cannon.CANNON.Vec3,
     quaternion: typings.cannon.CANNON.Quaternion,
     localPoint: typings.cannon.CANNON.Vec3,

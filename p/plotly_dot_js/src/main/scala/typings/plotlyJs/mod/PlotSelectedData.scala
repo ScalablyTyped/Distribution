@@ -27,76 +27,53 @@ trait PlotSelectedData extends StObject {
 }
 object PlotSelectedData {
   
-  @scala.inline
-  def apply(): PlotSelectedData = {
+  inline def apply(): PlotSelectedData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlotSelectedData]
   }
   
-  @scala.inline
-  implicit class PlotSelectedDataMutableBuilder[Self <: PlotSelectedData] (val x: Self) extends AnyVal {
+  extension [Self <: PlotSelectedData](x: Self) {
     
-    @scala.inline
-    def setCurveNumber(value: Double): Self = StObject.set(x, "curveNumber", value.asInstanceOf[js.Any])
+    inline def setCurveNumber(value: Double): Self = StObject.set(x, "curveNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurveNumberUndefined: Self = StObject.set(x, "curveNumber", js.undefined)
+    inline def setCurveNumberUndefined: Self = StObject.set(x, "curveNumber", js.undefined)
     
-    @scala.inline
-    def setCustomdata(value: Datum): Self = StObject.set(x, "customdata", value.asInstanceOf[js.Any])
+    inline def setCustomdata(value: Datum): Self = StObject.set(x, "customdata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomdataNull: Self = StObject.set(x, "customdata", null)
+    inline def setCustomdataNull: Self = StObject.set(x, "customdata", null)
     
-    @scala.inline
-    def setCustomdataUndefined: Self = StObject.set(x, "customdata", js.undefined)
+    inline def setCustomdataUndefined: Self = StObject.set(x, "customdata", js.undefined)
     
-    @scala.inline
-    def setData(value: PlotData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: PlotData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setPointIndex(value: Double): Self = StObject.set(x, "pointIndex", value.asInstanceOf[js.Any])
+    inline def setPointIndex(value: Double): Self = StObject.set(x, "pointIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointIndexUndefined: Self = StObject.set(x, "pointIndex", js.undefined)
+    inline def setPointIndexUndefined: Self = StObject.set(x, "pointIndex", js.undefined)
     
-    @scala.inline
-    def setPointNumber(value: Double): Self = StObject.set(x, "pointNumber", value.asInstanceOf[js.Any])
+    inline def setPointNumber(value: Double): Self = StObject.set(x, "pointNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointNumberUndefined: Self = StObject.set(x, "pointNumber", js.undefined)
+    inline def setPointNumberUndefined: Self = StObject.set(x, "pointNumber", js.undefined)
     
-    @scala.inline
-    def setX(value: Datum): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: Datum): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXNull: Self = StObject.set(x, "x", null)
+    inline def setXNull: Self = StObject.set(x, "x", null)
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setXaxis(value: LayoutAxis): Self = StObject.set(x, "xaxis", value.asInstanceOf[js.Any])
+    inline def setXaxis(value: LayoutAxis): Self = StObject.set(x, "xaxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXaxisUndefined: Self = StObject.set(x, "xaxis", js.undefined)
+    inline def setXaxisUndefined: Self = StObject.set(x, "xaxis", js.undefined)
     
-    @scala.inline
-    def setY(value: Datum): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: Datum): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYNull: Self = StObject.set(x, "y", null)
+    inline def setYNull: Self = StObject.set(x, "y", null)
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     
-    @scala.inline
-    def setYaxis(value: LayoutAxis): Self = StObject.set(x, "yaxis", value.asInstanceOf[js.Any])
+    inline def setYaxis(value: LayoutAxis): Self = StObject.set(x, "yaxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYaxisUndefined: Self = StObject.set(x, "yaxis", js.undefined)
+    inline def setYaxisUndefined: Self = StObject.set(x, "yaxis", js.undefined)
   }
 }

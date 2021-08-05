@@ -13,19 +13,15 @@ trait MergeDeveloperIdentitiesResponse extends StObject {
 }
 object MergeDeveloperIdentitiesResponse {
   
-  @scala.inline
-  def apply(): MergeDeveloperIdentitiesResponse = {
+  inline def apply(): MergeDeveloperIdentitiesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MergeDeveloperIdentitiesResponse]
   }
   
-  @scala.inline
-  implicit class MergeDeveloperIdentitiesResponseMutableBuilder[Self <: MergeDeveloperIdentitiesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: MergeDeveloperIdentitiesResponse](x: Self) {
     
-    @scala.inline
-    def setIdentityId(value: IdentityId): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
+    inline def setIdentityId(value: IdentityId): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
+    inline def setIdentityIdUndefined: Self = StObject.set(x, "IdentityId", js.undefined)
   }
 }

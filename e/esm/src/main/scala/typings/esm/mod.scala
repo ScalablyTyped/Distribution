@@ -13,10 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(mod: NodeModule): NodeRequire = ^.asInstanceOf[js.Dynamic].apply(mod.asInstanceOf[js.Any]).asInstanceOf[NodeRequire]
-  @scala.inline
-  def apply(mod: NodeModule, options: PartialOptions): NodeRequire = (^.asInstanceOf[js.Dynamic].apply(mod.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[NodeRequire]
+  inline def apply(mod: NodeModule): NodeRequire = ^.asInstanceOf[js.Dynamic].apply(mod.asInstanceOf[js.Any]).asInstanceOf[NodeRequire]
+  inline def apply(mod: NodeModule, options: PartialOptions): NodeRequire = (^.asInstanceOf[js.Dynamic].apply(mod.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[NodeRequire]
   
   @JSImport("esm", JSImport.Namespace)
   @js.native
@@ -46,8 +44,7 @@ object mod {
     }
     object Esm {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         cache: Boolean,
         dedefault: Boolean,
         esModule: Boolean,
@@ -62,35 +59,25 @@ object mod {
         __obj.asInstanceOf[Esm]
       }
       
-      @scala.inline
-      implicit class EsmMutableBuilder[Self <: Esm] (val x: Self) extends AnyVal {
+      extension [Self <: Esm](x: Self) {
         
-        @scala.inline
-        def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+        inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDedefault(value: Boolean): Self = StObject.set(x, "dedefault", value.asInstanceOf[js.Any])
+        inline def setDedefault(value: Boolean): Self = StObject.set(x, "dedefault", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEsModule(value: Boolean): Self = StObject.set(x, "esModule", value.asInstanceOf[js.Any])
+        inline def setEsModule(value: Boolean): Self = StObject.set(x, "esModule", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setExtensions(value: Boolean): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+        inline def setExtensions(value: Boolean): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMutableNamespace(value: Boolean): Self = StObject.set(x, "mutableNamespace", value.asInstanceOf[js.Any])
+        inline def setMutableNamespace(value: Boolean): Self = StObject.set(x, "mutableNamespace", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNamedExports(value: Boolean): Self = StObject.set(x, "namedExports", value.asInstanceOf[js.Any])
+        inline def setNamedExports(value: Boolean): Self = StObject.set(x, "namedExports", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPaths(value: Boolean): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+        inline def setPaths(value: Boolean): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTopLevelReturn(value: Boolean): Self = StObject.set(x, "topLevelReturn", value.asInstanceOf[js.Any])
+        inline def setTopLevelReturn(value: Boolean): Self = StObject.set(x, "topLevelReturn", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setVars(value: Boolean): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
+        inline def setVars(value: Boolean): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
       }
     }
     
@@ -110,8 +97,7 @@ object mod {
     }
     object Options {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         await: Boolean,
         cjs: Boolean | PartialEsm,
         force: Boolean,
@@ -123,29 +109,21 @@ object mod {
         __obj.asInstanceOf[typings.esm.mod.Options.Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: typings.esm.mod.Options.Options] (val x: Self) extends AnyVal {
+      extension [Self <: typings.esm.mod.Options.Options](x: Self) {
         
-        @scala.inline
-        def setAwait(value: Boolean): Self = StObject.set(x, "await", value.asInstanceOf[js.Any])
+        inline def setAwait(value: Boolean): Self = StObject.set(x, "await", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCjs(value: Boolean | PartialEsm): Self = StObject.set(x, "cjs", value.asInstanceOf[js.Any])
+        inline def setCjs(value: Boolean | PartialEsm): Self = StObject.set(x, "cjs", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+        inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMainFields(value: js.Array[String]): Self = StObject.set(x, "mainFields", value.asInstanceOf[js.Any])
+        inline def setMainFields(value: js.Array[String]): Self = StObject.set(x, "mainFields", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMainFieldsVarargs(value: String*): Self = StObject.set(x, "mainFields", js.Array(value :_*))
+        inline def setMainFieldsVarargs(value: String*): Self = StObject.set(x, "mainFields", js.Array(value :_*))
         
-        @scala.inline
-        def setMode(value: auto | all | strict): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+        inline def setMode(value: auto | all | strict): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setWasm(value: Boolean): Self = StObject.set(x, "wasm", value.asInstanceOf[js.Any])
+        inline def setWasm(value: Boolean): Self = StObject.set(x, "wasm", value.asInstanceOf[js.Any])
       }
     }
   }

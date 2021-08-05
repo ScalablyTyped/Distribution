@@ -19,33 +19,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MailTipsType extends StObject
 object MailTipsType {
   
-  @scala.inline
-  def automaticReplies: typings.microsoftGraph.microsoftGraphStrings.automaticReplies = "automaticReplies".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.automaticReplies]
+  inline def automaticReplies: typings.microsoftGraph.microsoftGraphStrings.automaticReplies = "automaticReplies".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.automaticReplies]
   
-  @scala.inline
-  def customMailTip: typings.microsoftGraph.microsoftGraphStrings.customMailTip = "customMailTip".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.customMailTip]
+  inline def customMailTip: typings.microsoftGraph.microsoftGraphStrings.customMailTip = "customMailTip".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.customMailTip]
   
-  @scala.inline
-  def deliveryRestriction: typings.microsoftGraph.microsoftGraphStrings.deliveryRestriction = "deliveryRestriction".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deliveryRestriction]
+  inline def deliveryRestriction: typings.microsoftGraph.microsoftGraphStrings.deliveryRestriction = "deliveryRestriction".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.deliveryRestriction]
   
-  @scala.inline
-  def externalMemberCount: typings.microsoftGraph.microsoftGraphStrings.externalMemberCount = "externalMemberCount".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.externalMemberCount]
+  inline def externalMemberCount: typings.microsoftGraph.microsoftGraphStrings.externalMemberCount = "externalMemberCount".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.externalMemberCount]
   
-  @scala.inline
-  def mailboxFullStatus: typings.microsoftGraph.microsoftGraphStrings.mailboxFullStatus = "mailboxFullStatus".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.mailboxFullStatus]
+  inline def mailboxFullStatus: typings.microsoftGraph.microsoftGraphStrings.mailboxFullStatus = "mailboxFullStatus".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.mailboxFullStatus]
   
-  @scala.inline
-  def maxMessageSize: typings.microsoftGraph.microsoftGraphStrings.maxMessageSize = "maxMessageSize".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.maxMessageSize]
+  inline def maxMessageSize: typings.microsoftGraph.microsoftGraphStrings.maxMessageSize = "maxMessageSize".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.maxMessageSize]
   
-  @scala.inline
-  def moderationStatus: typings.microsoftGraph.microsoftGraphStrings.moderationStatus = "moderationStatus".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.moderationStatus]
+  inline def moderationStatus: typings.microsoftGraph.microsoftGraphStrings.moderationStatus = "moderationStatus".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.moderationStatus]
   
-  @scala.inline
-  def recipientScope: typings.microsoftGraph.microsoftGraphStrings.recipientScope = "recipientScope".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.recipientScope]
+  inline def recipientScope: typings.microsoftGraph.microsoftGraphStrings.recipientScope = "recipientScope".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.recipientScope]
   
-  @scala.inline
-  def recipientSuggestions: typings.microsoftGraph.microsoftGraphStrings.recipientSuggestions = "recipientSuggestions".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.recipientSuggestions]
+  inline def recipientSuggestions: typings.microsoftGraph.microsoftGraphStrings.recipientSuggestions = "recipientSuggestions".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.recipientSuggestions]
   
-  @scala.inline
-  def totalMemberCount: typings.microsoftGraph.microsoftGraphStrings.totalMemberCount = "totalMemberCount".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.totalMemberCount]
+  inline def totalMemberCount: typings.microsoftGraph.microsoftGraphStrings.totalMemberCount = "totalMemberCount".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.totalMemberCount]
 }

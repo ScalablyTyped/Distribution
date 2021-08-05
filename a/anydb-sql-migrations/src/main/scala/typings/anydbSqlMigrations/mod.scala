@@ -15,10 +15,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(db: AnydbSql, tasks: String): Check = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(db.asInstanceOf[js.Any], tasks.asInstanceOf[js.Any])).asInstanceOf[Check]
-  @scala.inline
-  def create(db: AnydbSql, tasks: js.Array[MigrationTask]): Check = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(db.asInstanceOf[js.Any], tasks.asInstanceOf[js.Any])).asInstanceOf[Check]
+  inline def create(db: AnydbSql, tasks: String): Check = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(db.asInstanceOf[js.Any], tasks.asInstanceOf[js.Any])).asInstanceOf[Check]
+  inline def create(db: AnydbSql, tasks: js.Array[MigrationTask]): Check = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(db.asInstanceOf[js.Any], tasks.asInstanceOf[js.Any])).asInstanceOf[Check]
   
   type MigFn = js.Function1[/* tx */ Transaction, typings.bluebird.mod.^[js.Any]]
   
@@ -28,17 +26,14 @@ object mod {
   }
   object Migration {
     
-    @scala.inline
-    def apply(version: String): Migration = {
+    inline def apply(version: String): Migration = {
       val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[Migration]
     }
     
-    @scala.inline
-    implicit class MigrationMutableBuilder[Self <: Migration] (val x: Self) extends AnyVal {
+    extension [Self <: Migration](x: Self) {
       
-      @scala.inline
-      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+      inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
   }
   
@@ -54,38 +49,28 @@ object mod {
   }
   object MigrationOptions {
     
-    @scala.inline
-    def apply(): MigrationOptions = {
+    inline def apply(): MigrationOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MigrationOptions]
     }
     
-    @scala.inline
-    implicit class MigrationOptionsMutableBuilder[Self <: MigrationOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MigrationOptions](x: Self) {
       
-      @scala.inline
-      def setCheck(value: Boolean): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
+      inline def setCheck(value: Boolean): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
+      inline def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
       
-      @scala.inline
-      def setDrop(value: Boolean): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
+      inline def setDrop(value: Boolean): Self = StObject.set(x, "drop", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
+      inline def setDropUndefined: Self = StObject.set(x, "drop", js.undefined)
       
-      @scala.inline
-      def setExecute(value: Boolean): Self = StObject.set(x, "execute", value.asInstanceOf[js.Any])
+      inline def setExecute(value: Boolean): Self = StObject.set(x, "execute", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExecuteUndefined: Self = StObject.set(x, "execute", js.undefined)
+      inline def setExecuteUndefined: Self = StObject.set(x, "execute", js.undefined)
       
-      @scala.inline
-      def setRollback(value: Boolean): Self = StObject.set(x, "rollback", value.asInstanceOf[js.Any])
+      inline def setRollback(value: Boolean): Self = StObject.set(x, "rollback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRollbackUndefined: Self = StObject.set(x, "rollback", js.undefined)
+      inline def setRollbackUndefined: Self = StObject.set(x, "rollback", js.undefined)
     }
   }
   
@@ -103,8 +88,7 @@ object mod {
   }
   object MigrationTask {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       down: /* tx */ Transaction => typings.bluebird.mod.^[js.Any],
       name: String,
       up: /* tx */ Transaction => typings.bluebird.mod.^[js.Any]
@@ -113,17 +97,13 @@ object mod {
       __obj.asInstanceOf[MigrationTask]
     }
     
-    @scala.inline
-    implicit class MigrationTaskMutableBuilder[Self <: MigrationTask] (val x: Self) extends AnyVal {
+    extension [Self <: MigrationTask](x: Self) {
       
-      @scala.inline
-      def setDown(value: /* tx */ Transaction => typings.bluebird.mod.^[js.Any]): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
+      inline def setDown(value: /* tx */ Transaction => typings.bluebird.mod.^[js.Any]): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUp(value: /* tx */ Transaction => typings.bluebird.mod.^[js.Any]): Self = StObject.set(x, "up", js.Any.fromFunction1(value))
+      inline def setUp(value: /* tx */ Transaction => typings.bluebird.mod.^[js.Any]): Self = StObject.set(x, "up", js.Any.fromFunction1(value))
     }
   }
   

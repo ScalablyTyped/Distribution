@@ -17,14 +17,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object mod {
   
-  @scala.inline
-  def apply[T](`type`: String): ArrayType[T] = ^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any]).asInstanceOf[ArrayType[T]]
-  @scala.inline
-  def apply[T](`type`: String, length: Double): ArrayType[T] = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ArrayType[T]]
-  @scala.inline
-  def apply[T](`type`: Type): ArrayType[T] = ^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any]).asInstanceOf[ArrayType[T]]
-  @scala.inline
-  def apply[T](`type`: Type, length: Double): ArrayType[T] = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ArrayType[T]]
+  inline def apply[T](`type`: String): ArrayType[T] = ^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any]).asInstanceOf[ArrayType[T]]
+  inline def apply[T](`type`: String, length: Double): ArrayType[T] = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ArrayType[T]]
+  inline def apply[T](`type`: Type): ArrayType[T] = ^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any]).asInstanceOf[ArrayType[T]]
+  inline def apply[T](`type`: Type, length: Double): ArrayType[T] = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ArrayType[T]]
   
   @JSImport("ref-array-di", JSImport.Namespace)
   @js.native

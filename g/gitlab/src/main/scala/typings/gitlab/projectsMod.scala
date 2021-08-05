@@ -148,8 +148,7 @@ object projectsMod {
   }
   object NamespaceInfoSchema {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       avatar_url: String,
       full_path: String,
       id: Double,
@@ -162,35 +161,25 @@ object projectsMod {
       __obj.asInstanceOf[NamespaceInfoSchema]
     }
     
-    @scala.inline
-    implicit class NamespaceInfoSchemaMutableBuilder[Self <: NamespaceInfoSchema] (val x: Self) extends AnyVal {
+    extension [Self <: NamespaceInfoSchema](x: Self) {
       
-      @scala.inline
-      def setAvatar_url(value: String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
+      inline def setAvatar_url(value: String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFull_path(value: String): Self = StObject.set(x, "full_path", value.asInstanceOf[js.Any])
+      inline def setFull_path(value: String): Self = StObject.set(x, "full_path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent_id(value: Double): Self = StObject.set(x, "parent_id", value.asInstanceOf[js.Any])
+      inline def setParent_id(value: Double): Self = StObject.set(x, "parent_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent_idUndefined: Self = StObject.set(x, "parent_id", js.undefined)
+      inline def setParent_idUndefined: Self = StObject.set(x, "parent_id", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeb_url(value: String): Self = StObject.set(x, "web_url", value.asInstanceOf[js.Any])
+      inline def setWeb_url(value: String): Self = StObject.set(x, "web_url", value.asInstanceOf[js.Any])
     }
   }
   
@@ -308,8 +297,7 @@ object projectsMod {
   }
   object ProjectSchema {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       archived: Boolean,
       auto_devops_deploy_strategy: String,
       auto_devops_enabled: Boolean,
@@ -367,188 +355,127 @@ object projectsMod {
       __obj.asInstanceOf[ProjectSchema]
     }
     
-    @scala.inline
-    implicit class ProjectSchemaMutableBuilder[Self <: ProjectSchema] (val x: Self) extends AnyVal {
+    extension [Self <: ProjectSchema](x: Self) {
       
-      @scala.inline
-      def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
+      inline def setArchived(value: Boolean): Self = StObject.set(x, "archived", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuto_cancel_pending_pipelines(value: String): Self = StObject.set(x, "auto_cancel_pending_pipelines", value.asInstanceOf[js.Any])
+      inline def setAuto_cancel_pending_pipelines(value: String): Self = StObject.set(x, "auto_cancel_pending_pipelines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuto_cancel_pending_pipelinesUndefined: Self = StObject.set(x, "auto_cancel_pending_pipelines", js.undefined)
+      inline def setAuto_cancel_pending_pipelinesUndefined: Self = StObject.set(x, "auto_cancel_pending_pipelines", js.undefined)
       
-      @scala.inline
-      def setAuto_devops_deploy_strategy(value: String): Self = StObject.set(x, "auto_devops_deploy_strategy", value.asInstanceOf[js.Any])
+      inline def setAuto_devops_deploy_strategy(value: String): Self = StObject.set(x, "auto_devops_deploy_strategy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuto_devops_enabled(value: Boolean): Self = StObject.set(x, "auto_devops_enabled", value.asInstanceOf[js.Any])
+      inline def setAuto_devops_enabled(value: Boolean): Self = StObject.set(x, "auto_devops_enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvatar_url(value: String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
+      inline def setAvatar_url(value: String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuild_coverage_regex(value: String): Self = StObject.set(x, "build_coverage_regex", value.asInstanceOf[js.Any])
+      inline def setBuild_coverage_regex(value: String): Self = StObject.set(x, "build_coverage_regex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuild_coverage_regexUndefined: Self = StObject.set(x, "build_coverage_regex", js.undefined)
+      inline def setBuild_coverage_regexUndefined: Self = StObject.set(x, "build_coverage_regex", js.undefined)
       
-      @scala.inline
-      def setBuild_timeout(value: Double): Self = StObject.set(x, "build_timeout", value.asInstanceOf[js.Any])
+      inline def setBuild_timeout(value: Double): Self = StObject.set(x, "build_timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBuilds_access_level(value: String): Self = StObject.set(x, "builds_access_level", value.asInstanceOf[js.Any])
+      inline def setBuilds_access_level(value: String): Self = StObject.set(x, "builds_access_level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCi_config_path(value: String): Self = StObject.set(x, "ci_config_path", value.asInstanceOf[js.Any])
+      inline def setCi_config_path(value: String): Self = StObject.set(x, "ci_config_path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCi_config_pathUndefined: Self = StObject.set(x, "ci_config_path", js.undefined)
+      inline def setCi_config_pathUndefined: Self = StObject.set(x, "ci_config_path", js.undefined)
       
-      @scala.inline
-      def setCi_default_git_depth(value: Double): Self = StObject.set(x, "ci_default_git_depth", value.asInstanceOf[js.Any])
+      inline def setCi_default_git_depth(value: Double): Self = StObject.set(x, "ci_default_git_depth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContainer_registry_enabled(value: Boolean): Self = StObject.set(x, "container_registry_enabled", value.asInstanceOf[js.Any])
+      inline def setContainer_registry_enabled(value: Boolean): Self = StObject.set(x, "container_registry_enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreated_at(value: Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
+      inline def setCreated_at(value: Date): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreator_id(value: Double): Self = StObject.set(x, "creator_id", value.asInstanceOf[js.Any])
+      inline def setCreator_id(value: Double): Self = StObject.set(x, "creator_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefault_branch(value: String): Self = StObject.set(x, "default_branch", value.asInstanceOf[js.Any])
+      inline def setDefault_branch(value: String): Self = StObject.set(x, "default_branch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmpty_repo(value: Boolean): Self = StObject.set(x, "empty_repo", value.asInstanceOf[js.Any])
+      inline def setEmpty_repo(value: Boolean): Self = StObject.set(x, "empty_repo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setForks_count(value: Double): Self = StObject.set(x, "forks_count", value.asInstanceOf[js.Any])
+      inline def setForks_count(value: Double): Self = StObject.set(x, "forks_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttp_url_to_repo(value: String): Self = StObject.set(x, "http_url_to_repo", value.asInstanceOf[js.Any])
+      inline def setHttp_url_to_repo(value: String): Self = StObject.set(x, "http_url_to_repo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImport_status(value: String): Self = StObject.set(x, "import_status", value.asInstanceOf[js.Any])
+      inline def setImport_status(value: String): Self = StObject.set(x, "import_status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssues_access_level(value: String): Self = StObject.set(x, "issues_access_level", value.asInstanceOf[js.Any])
+      inline def setIssues_access_level(value: String): Self = StObject.set(x, "issues_access_level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIssues_enabled(value: Boolean): Self = StObject.set(x, "issues_enabled", value.asInstanceOf[js.Any])
+      inline def setIssues_enabled(value: Boolean): Self = StObject.set(x, "issues_enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJobs_enabled(value: Boolean): Self = StObject.set(x, "jobs_enabled", value.asInstanceOf[js.Any])
+      inline def setJobs_enabled(value: Boolean): Self = StObject.set(x, "jobs_enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLast_activity_at(value: Date): Self = StObject.set(x, "last_activity_at", value.asInstanceOf[js.Any])
+      inline def setLast_activity_at(value: Date): Self = StObject.set(x, "last_activity_at", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLfs_enabled(value: Boolean): Self = StObject.set(x, "lfs_enabled", value.asInstanceOf[js.Any])
+      inline def setLfs_enabled(value: Boolean): Self = StObject.set(x, "lfs_enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMerge_method(value: String): Self = StObject.set(x, "merge_method", value.asInstanceOf[js.Any])
+      inline def setMerge_method(value: String): Self = StObject.set(x, "merge_method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMerge_requests_access_level(value: String): Self = StObject.set(x, "merge_requests_access_level", value.asInstanceOf[js.Any])
+      inline def setMerge_requests_access_level(value: String): Self = StObject.set(x, "merge_requests_access_level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMerge_requests_enabled(value: Boolean): Self = StObject.set(x, "merge_requests_enabled", value.asInstanceOf[js.Any])
+      inline def setMerge_requests_enabled(value: Boolean): Self = StObject.set(x, "merge_requests_enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName_with_namespace(value: String): Self = StObject.set(x, "name_with_namespace", value.asInstanceOf[js.Any])
+      inline def setName_with_namespace(value: String): Self = StObject.set(x, "name_with_namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamespace(value: NamespaceInfoSchema): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+      inline def setNamespace(value: NamespaceInfoSchema): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnly_allow_merge_if_all_discussions_are_resolved(value: Boolean): Self = StObject.set(x, "only_allow_merge_if_all_discussions_are_resolved", value.asInstanceOf[js.Any])
+      inline def setOnly_allow_merge_if_all_discussions_are_resolved(value: Boolean): Self = StObject.set(x, "only_allow_merge_if_all_discussions_are_resolved", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnly_allow_merge_if_pipeline_succeeds(value: Boolean): Self = StObject.set(x, "only_allow_merge_if_pipeline_succeeds", value.asInstanceOf[js.Any])
+      inline def setOnly_allow_merge_if_pipeline_succeeds(value: Boolean): Self = StObject.set(x, "only_allow_merge_if_pipeline_succeeds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpen_issues_count(value: Double): Self = StObject.set(x, "open_issues_count", value.asInstanceOf[js.Any])
+      inline def setOpen_issues_count(value: Double): Self = StObject.set(x, "open_issues_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOwner(value: UserSchema): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+      inline def setOwner(value: UserSchema): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath_with_namespace(value: String): Self = StObject.set(x, "path_with_namespace", value.asInstanceOf[js.Any])
+      inline def setPath_with_namespace(value: String): Self = StObject.set(x, "path_with_namespace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrinting_merge_request_link_enabled(value: Boolean): Self = StObject.set(x, "printing_merge_request_link_enabled", value.asInstanceOf[js.Any])
+      inline def setPrinting_merge_request_link_enabled(value: Boolean): Self = StObject.set(x, "printing_merge_request_link_enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublic_jobs(value: Boolean): Self = StObject.set(x, "public_jobs", value.asInstanceOf[js.Any])
+      inline def setPublic_jobs(value: Boolean): Self = StObject.set(x, "public_jobs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadme_url(value: String): Self = StObject.set(x, "readme_url", value.asInstanceOf[js.Any])
+      inline def setReadme_url(value: String): Self = StObject.set(x, "readme_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemove_source_branch_after_merge(value: Boolean): Self = StObject.set(x, "remove_source_branch_after_merge", value.asInstanceOf[js.Any])
+      inline def setRemove_source_branch_after_merge(value: Boolean): Self = StObject.set(x, "remove_source_branch_after_merge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRepository_access_level(value: String): Self = StObject.set(x, "repository_access_level", value.asInstanceOf[js.Any])
+      inline def setRepository_access_level(value: String): Self = StObject.set(x, "repository_access_level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequest_access_enabled(value: Boolean): Self = StObject.set(x, "request_access_enabled", value.asInstanceOf[js.Any])
+      inline def setRequest_access_enabled(value: Boolean): Self = StObject.set(x, "request_access_enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolve_outdated_diff_discussions(value: Boolean): Self = StObject.set(x, "resolve_outdated_diff_discussions", value.asInstanceOf[js.Any])
+      inline def setResolve_outdated_diff_discussions(value: Boolean): Self = StObject.set(x, "resolve_outdated_diff_discussions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShared_runners_enabled(value: Boolean): Self = StObject.set(x, "shared_runners_enabled", value.asInstanceOf[js.Any])
+      inline def setShared_runners_enabled(value: Boolean): Self = StObject.set(x, "shared_runners_enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShared_with_groups(value: js.Array[GroupSchema]): Self = StObject.set(x, "shared_with_groups", value.asInstanceOf[js.Any])
+      inline def setShared_with_groups(value: js.Array[GroupSchema]): Self = StObject.set(x, "shared_with_groups", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShared_with_groupsVarargs(value: GroupSchema*): Self = StObject.set(x, "shared_with_groups", js.Array(value :_*))
+      inline def setShared_with_groupsVarargs(value: GroupSchema*): Self = StObject.set(x, "shared_with_groups", js.Array(value :_*))
       
-      @scala.inline
-      def setSnippets_access_level(value: String): Self = StObject.set(x, "snippets_access_level", value.asInstanceOf[js.Any])
+      inline def setSnippets_access_level(value: String): Self = StObject.set(x, "snippets_access_level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSnippets_enabled(value: Boolean): Self = StObject.set(x, "snippets_enabled", value.asInstanceOf[js.Any])
+      inline def setSnippets_enabled(value: Boolean): Self = StObject.set(x, "snippets_enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSsh_url_to_repo(value: String): Self = StObject.set(x, "ssh_url_to_repo", value.asInstanceOf[js.Any])
+      inline def setSsh_url_to_repo(value: String): Self = StObject.set(x, "ssh_url_to_repo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStar_count(value: Double): Self = StObject.set(x, "star_count", value.asInstanceOf[js.Any])
+      inline def setStar_count(value: Double): Self = StObject.set(x, "star_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag_list(value: js.Array[String]): Self = StObject.set(x, "tag_list", value.asInstanceOf[js.Any])
+      inline def setTag_list(value: js.Array[String]): Self = StObject.set(x, "tag_list", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTag_listVarargs(value: String*): Self = StObject.set(x, "tag_list", js.Array(value :_*))
+      inline def setTag_listVarargs(value: String*): Self = StObject.set(x, "tag_list", js.Array(value :_*))
       
-      @scala.inline
-      def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+      inline def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeb_url(value: String): Self = StObject.set(x, "web_url", value.asInstanceOf[js.Any])
+      inline def setWeb_url(value: String): Self = StObject.set(x, "web_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWiki_access_level(value: String): Self = StObject.set(x, "wiki_access_level", value.asInstanceOf[js.Any])
+      inline def setWiki_access_level(value: String): Self = StObject.set(x, "wiki_access_level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWiki_enabled(value: Boolean): Self = StObject.set(x, "wiki_enabled", value.asInstanceOf[js.Any])
+      inline def setWiki_enabled(value: Boolean): Self = StObject.set(x, "wiki_enabled", value.asInstanceOf[js.Any])
     }
   }
 }

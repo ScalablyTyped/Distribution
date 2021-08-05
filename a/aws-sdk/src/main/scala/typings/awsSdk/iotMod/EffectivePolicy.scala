@@ -23,31 +23,23 @@ trait EffectivePolicy extends StObject {
 }
 object EffectivePolicy {
   
-  @scala.inline
-  def apply(): EffectivePolicy = {
+  inline def apply(): EffectivePolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EffectivePolicy]
   }
   
-  @scala.inline
-  implicit class EffectivePolicyMutableBuilder[Self <: EffectivePolicy] (val x: Self) extends AnyVal {
+  extension [Self <: EffectivePolicy](x: Self) {
     
-    @scala.inline
-    def setPolicyArn(value: PolicyArn): Self = StObject.set(x, "policyArn", value.asInstanceOf[js.Any])
+    inline def setPolicyArn(value: PolicyArn): Self = StObject.set(x, "policyArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyArnUndefined: Self = StObject.set(x, "policyArn", js.undefined)
+    inline def setPolicyArnUndefined: Self = StObject.set(x, "policyArn", js.undefined)
     
-    @scala.inline
-    def setPolicyDocument(value: PolicyDocument): Self = StObject.set(x, "policyDocument", value.asInstanceOf[js.Any])
+    inline def setPolicyDocument(value: PolicyDocument): Self = StObject.set(x, "policyDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyDocumentUndefined: Self = StObject.set(x, "policyDocument", js.undefined)
+    inline def setPolicyDocumentUndefined: Self = StObject.set(x, "policyDocument", js.undefined)
     
-    @scala.inline
-    def setPolicyName(value: PolicyName): Self = StObject.set(x, "policyName", value.asInstanceOf[js.Any])
+    inline def setPolicyName(value: PolicyName): Self = StObject.set(x, "policyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyNameUndefined: Self = StObject.set(x, "policyName", js.undefined)
+    inline def setPolicyNameUndefined: Self = StObject.set(x, "policyName", js.undefined)
   }
 }

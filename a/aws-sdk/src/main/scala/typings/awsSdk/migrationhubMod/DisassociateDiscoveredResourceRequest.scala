@@ -28,8 +28,7 @@ trait DisassociateDiscoveredResourceRequest extends StObject {
 }
 object DisassociateDiscoveredResourceRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ConfigurationId: ConfigurationId,
     MigrationTaskName: MigrationTaskName,
     ProgressUpdateStream: ProgressUpdateStream
@@ -38,22 +37,16 @@ object DisassociateDiscoveredResourceRequest {
     __obj.asInstanceOf[DisassociateDiscoveredResourceRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateDiscoveredResourceRequestMutableBuilder[Self <: DisassociateDiscoveredResourceRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateDiscoveredResourceRequest](x: Self) {
     
-    @scala.inline
-    def setConfigurationId(value: ConfigurationId): Self = StObject.set(x, "ConfigurationId", value.asInstanceOf[js.Any])
+    inline def setConfigurationId(value: ConfigurationId): Self = StObject.set(x, "ConfigurationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRun(value: DryRun): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: DryRun): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setMigrationTaskName(value: MigrationTaskName): Self = StObject.set(x, "MigrationTaskName", value.asInstanceOf[js.Any])
+    inline def setMigrationTaskName(value: MigrationTaskName): Self = StObject.set(x, "MigrationTaskName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressUpdateStream(value: ProgressUpdateStream): Self = StObject.set(x, "ProgressUpdateStream", value.asInstanceOf[js.Any])
+    inline def setProgressUpdateStream(value: ProgressUpdateStream): Self = StObject.set(x, "ProgressUpdateStream", value.asInstanceOf[js.Any])
   }
 }

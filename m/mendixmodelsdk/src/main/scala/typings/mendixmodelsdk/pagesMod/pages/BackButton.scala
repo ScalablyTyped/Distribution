@@ -41,8 +41,7 @@ object BackButton {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[BackButton]
+  inline def create(model: IModel): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -53,8 +52,7 @@ object BackButton {
     *  6.7.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInDataViewUnderFooterWidget(container: DataView): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
+  inline def createInDataViewUnderFooterWidget(container: DataView): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -65,8 +63,7 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInDataViewUnderWidget(container: DataView): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
+  inline def createInDataViewUnderWidget(container: DataView): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -77,8 +74,7 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInDivContainerUnderWidget(container: DivContainer): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
+  inline def createInDivContainerUnderWidget(container: DivContainer): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -89,8 +85,7 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInGroupBoxUnderWidget(container: GroupBox): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
+  inline def createInGroupBoxUnderWidget(container: GroupBox): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -101,8 +96,7 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInHeaderUnderLeftWidget(container: Header): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
+  inline def createInHeaderUnderLeftWidget(container: Header): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -113,8 +107,7 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInHeaderUnderRightWidget(container: Header): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
+  inline def createInHeaderUnderRightWidget(container: Header): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -125,8 +118,7 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
+  inline def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -137,8 +129,7 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
+  inline def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -149,8 +140,7 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInLayoutUnderWidget(container: Layout): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
+  inline def createInLayoutUnderWidget(container: Layout): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -161,8 +151,7 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInListViewTemplateUnderWidget(container: ListViewTemplate): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
+  inline def createInListViewTemplateUnderWidget(container: ListViewTemplate): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -173,8 +162,7 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInListViewUnderWidget(container: ListView): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
+  inline def createInListViewUnderWidget(container: ListView): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -185,8 +173,7 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInNavigationListItemUnderWidget(container: NavigationListItem): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
+  inline def createInNavigationListItemUnderWidget(container: NavigationListItem): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -197,8 +184,7 @@ object BackButton {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @scala.inline
-  def createInReportPaneUnderParameterWidget(container: ReportPane): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
+  inline def createInReportPaneUnderParameterWidget(container: ReportPane): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderParameterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -209,8 +195,7 @@ object BackButton {
     *  6.0.0 to 6.9.0
     */
   /* static member */
-  @scala.inline
-  def createInReportPaneUnderReportWidget(container: ReportPane): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
+  inline def createInReportPaneUnderReportWidget(container: ReportPane): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReportPaneUnderReportWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -221,8 +206,7 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
+  inline def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -233,8 +217,7 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInSnippetUnderWidget(container: Snippet): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
+  inline def createInSnippetUnderWidget(container: Snippet): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -245,8 +228,7 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInSplitPaneUnderFirstWidget(container: SplitPane): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
+  inline def createInSplitPaneUnderFirstWidget(container: SplitPane): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -257,8 +239,7 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInSplitPaneUnderSecondWidget(container: SplitPane): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
+  inline def createInSplitPaneUnderSecondWidget(container: SplitPane): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -269,8 +250,7 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInTabPageUnderWidget(container: TabPage): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
+  inline def createInTabPageUnderWidget(container: TabPage): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -281,8 +261,7 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInTableCellUnderWidget(container: TableCell): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
+  inline def createInTableCellUnderWidget(container: TableCell): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -293,8 +272,7 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
+  inline def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /**
     * Creates and returns a new BackButton instance in the SDK and on the server.
@@ -305,20 +283,17 @@ object BackButton {
     *  6.0.0 to 7.0.1
     */
   /* static member */
-  @scala.inline
-  def createInVerticalFlowUnderWidgets(container: VerticalFlow): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
+  inline def createInVerticalFlowUnderWidgets(container: VerticalFlow): BackButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[BackButton]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.BackButton.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.BackButton.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

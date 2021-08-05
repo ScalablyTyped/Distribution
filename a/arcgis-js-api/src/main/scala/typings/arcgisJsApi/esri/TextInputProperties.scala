@@ -24,25 +24,19 @@ trait TextInputProperties
 }
 object TextInputProperties {
   
-  @scala.inline
-  def apply(): TextInputProperties = {
+  inline def apply(): TextInputProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TextInputProperties]
   }
   
-  @scala.inline
-  implicit class TextInputPropertiesMutableBuilder[Self <: TextInputProperties] (val x: Self) extends AnyVal {
+  extension [Self <: TextInputProperties](x: Self) {
     
-    @scala.inline
-    def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
+    inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
+    inline def setMaxLengthUndefined: Self = StObject.set(x, "maxLength", js.undefined)
     
-    @scala.inline
-    def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
+    inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
+    inline def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
   }
 }

@@ -69,40 +69,29 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def all(values: js.Array[js.Any]): Future[js.Any, Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Future[js.Any, Error]]
+    inline def all(values: js.Array[js.Any]): Future[js.Any, Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(values.asInstanceOf[js.Any]).asInstanceOf[Future[js.Any, Error]]
     
-    @scala.inline
-    def from[T, E /* <: Error */](): Future[T, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")().asInstanceOf[Future[T, E]]
-    @scala.inline
-    def from[T, E /* <: Error */](result: T): Future[T, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(result.asInstanceOf[js.Any]).asInstanceOf[Future[T, E]]
-    @scala.inline
-    def from[T, E /* <: Error */](result: T, error: E): Future[T, E] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(result.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Future[T, E]]
-    @scala.inline
-    def from[T, E /* <: Error */](result: Unit, error: E): Future[T, E] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(result.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Future[T, E]]
+    inline def from[T, E /* <: Error */](): Future[T, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")().asInstanceOf[Future[T, E]]
+    inline def from[T, E /* <: Error */](result: T): Future[T, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(result.asInstanceOf[js.Any]).asInstanceOf[Future[T, E]]
+    inline def from[T, E /* <: Error */](result: T, error: E): Future[T, E] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(result.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Future[T, E]]
+    inline def from[T, E /* <: Error */](result: Unit, error: E): Future[T, E] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(result.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Future[T, E]]
     
-    @scala.inline
-    def fromError[E /* <: Error */](error: E): Future[Unit, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromError")(error.asInstanceOf[js.Any]).asInstanceOf[Future[Unit, E]]
+    inline def fromError[E /* <: Error */](error: E): Future[Unit, E] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromError")(error.asInstanceOf[js.Any]).asInstanceOf[Future[Unit, E]]
     
-    @scala.inline
-    def fromPromise[T](promise: js.Promise[T]): Future[T, Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPromise")(promise.asInstanceOf[js.Any]).asInstanceOf[Future[T, Error]]
+    inline def fromPromise[T](promise: js.Promise[T]): Future[T, Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPromise")(promise.asInstanceOf[js.Any]).asInstanceOf[Future[T, Error]]
     
-    @scala.inline
-    def fromResult[T](
+    inline def fromResult[T](
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type T extends undefined ? [] | [undefined] : [T] is not an array type */ args: js.Array[js.Any | T | Unit]
     ): Future[T, Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromResult")(args.asInstanceOf[js.Any]).asInstanceOf[Future[T, Error]]
     
-    @scala.inline
-    def onUnhandledRejection(future: Future[js.Any, Error]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onUnhandledRejection")(future.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onUnhandledRejection(future: Future[js.Any, Error]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onUnhandledRejection")(future.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def race(values: js.Array[js.Any]): Future[js.Any, Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(values.asInstanceOf[js.Any]).asInstanceOf[Future[js.Any, Error]]
+    inline def race(values: js.Array[js.Any]): Future[js.Any, Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(values.asInstanceOf[js.Any]).asInstanceOf[Future[js.Any, Error]]
     
     @JSImport("posterus", "Future.scheduler")
     @js.native
     def scheduler: Scheduler = js.native
-    @scala.inline
-    def scheduler_=(x: Scheduler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scheduler")(x.asInstanceOf[js.Any])
+    inline def scheduler_=(x: Scheduler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scheduler")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("posterus", "Scheduler")
@@ -116,9 +105,7 @@ object mod {
     def tick(): Unit = js.native
   }
   
-  @scala.inline
-  def isDeinitError(error: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDeinitError")(error.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isDeinitError(error: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDeinitError")(error.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def isFuture(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFuture")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isFuture(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFuture")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -11,6 +11,5 @@ object formatjsEcma402AbstractBestAvailableLocaleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def BestAvailableLocale(availableLocales: Set[String], locale: String): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("BestAvailableLocale")(availableLocales.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  inline def BestAvailableLocale(availableLocales: Set[String], locale: String): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("BestAvailableLocale")(availableLocales.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
 }

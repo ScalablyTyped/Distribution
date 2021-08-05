@@ -10,16 +10,13 @@ trait SearchQuery extends StObject {
 }
 object SearchQuery {
   
-  @scala.inline
-  def apply(query: String): SearchQuery = {
+  inline def apply(query: String): SearchQuery = {
     val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchQuery]
   }
   
-  @scala.inline
-  implicit class SearchQueryMutableBuilder[Self <: SearchQuery] (val x: Self) extends AnyVal {
+  extension [Self <: SearchQuery](x: Self) {
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

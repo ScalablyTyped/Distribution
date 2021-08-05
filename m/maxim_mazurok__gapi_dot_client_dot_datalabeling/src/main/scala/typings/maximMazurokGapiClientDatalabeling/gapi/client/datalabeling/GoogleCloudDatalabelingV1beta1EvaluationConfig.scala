@@ -11,19 +11,15 @@ trait GoogleCloudDatalabelingV1beta1EvaluationConfig extends StObject {
 }
 object GoogleCloudDatalabelingV1beta1EvaluationConfig {
   
-  @scala.inline
-  def apply(): GoogleCloudDatalabelingV1beta1EvaluationConfig = {
+  inline def apply(): GoogleCloudDatalabelingV1beta1EvaluationConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1EvaluationConfig]
   }
   
-  @scala.inline
-  implicit class GoogleCloudDatalabelingV1beta1EvaluationConfigMutableBuilder[Self <: GoogleCloudDatalabelingV1beta1EvaluationConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudDatalabelingV1beta1EvaluationConfig](x: Self) {
     
-    @scala.inline
-    def setBoundingBoxEvaluationOptions(value: GoogleCloudDatalabelingV1beta1BoundingBoxEvaluationOptions): Self = StObject.set(x, "boundingBoxEvaluationOptions", value.asInstanceOf[js.Any])
+    inline def setBoundingBoxEvaluationOptions(value: GoogleCloudDatalabelingV1beta1BoundingBoxEvaluationOptions): Self = StObject.set(x, "boundingBoxEvaluationOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundingBoxEvaluationOptionsUndefined: Self = StObject.set(x, "boundingBoxEvaluationOptions", js.undefined)
+    inline def setBoundingBoxEvaluationOptionsUndefined: Self = StObject.set(x, "boundingBoxEvaluationOptions", js.undefined)
   }
 }

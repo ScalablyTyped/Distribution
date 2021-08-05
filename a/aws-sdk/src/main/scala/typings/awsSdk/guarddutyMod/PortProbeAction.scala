@@ -18,28 +18,21 @@ trait PortProbeAction extends StObject {
 }
 object PortProbeAction {
   
-  @scala.inline
-  def apply(): PortProbeAction = {
+  inline def apply(): PortProbeAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PortProbeAction]
   }
   
-  @scala.inline
-  implicit class PortProbeActionMutableBuilder[Self <: PortProbeAction] (val x: Self) extends AnyVal {
+  extension [Self <: PortProbeAction](x: Self) {
     
-    @scala.inline
-    def setBlocked(value: Boolean): Self = StObject.set(x, "Blocked", value.asInstanceOf[js.Any])
+    inline def setBlocked(value: Boolean): Self = StObject.set(x, "Blocked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockedUndefined: Self = StObject.set(x, "Blocked", js.undefined)
+    inline def setBlockedUndefined: Self = StObject.set(x, "Blocked", js.undefined)
     
-    @scala.inline
-    def setPortProbeDetails(value: PortProbeDetails): Self = StObject.set(x, "PortProbeDetails", value.asInstanceOf[js.Any])
+    inline def setPortProbeDetails(value: PortProbeDetails): Self = StObject.set(x, "PortProbeDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortProbeDetailsUndefined: Self = StObject.set(x, "PortProbeDetails", js.undefined)
+    inline def setPortProbeDetailsUndefined: Self = StObject.set(x, "PortProbeDetails", js.undefined)
     
-    @scala.inline
-    def setPortProbeDetailsVarargs(value: PortProbeDetail*): Self = StObject.set(x, "PortProbeDetails", js.Array(value :_*))
+    inline def setPortProbeDetailsVarargs(value: PortProbeDetail*): Self = StObject.set(x, "PortProbeDetails", js.Array(value :_*))
   }
 }

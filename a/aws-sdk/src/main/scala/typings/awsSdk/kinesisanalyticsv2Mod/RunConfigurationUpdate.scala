@@ -18,25 +18,19 @@ trait RunConfigurationUpdate extends StObject {
 }
 object RunConfigurationUpdate {
   
-  @scala.inline
-  def apply(): RunConfigurationUpdate = {
+  inline def apply(): RunConfigurationUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RunConfigurationUpdate]
   }
   
-  @scala.inline
-  implicit class RunConfigurationUpdateMutableBuilder[Self <: RunConfigurationUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: RunConfigurationUpdate](x: Self) {
     
-    @scala.inline
-    def setApplicationRestoreConfiguration(value: ApplicationRestoreConfiguration): Self = StObject.set(x, "ApplicationRestoreConfiguration", value.asInstanceOf[js.Any])
+    inline def setApplicationRestoreConfiguration(value: ApplicationRestoreConfiguration): Self = StObject.set(x, "ApplicationRestoreConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationRestoreConfigurationUndefined: Self = StObject.set(x, "ApplicationRestoreConfiguration", js.undefined)
+    inline def setApplicationRestoreConfigurationUndefined: Self = StObject.set(x, "ApplicationRestoreConfiguration", js.undefined)
     
-    @scala.inline
-    def setFlinkRunConfiguration(value: FlinkRunConfiguration): Self = StObject.set(x, "FlinkRunConfiguration", value.asInstanceOf[js.Any])
+    inline def setFlinkRunConfiguration(value: FlinkRunConfiguration): Self = StObject.set(x, "FlinkRunConfiguration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlinkRunConfigurationUndefined: Self = StObject.set(x, "FlinkRunConfiguration", js.undefined)
+    inline def setFlinkRunConfigurationUndefined: Self = StObject.set(x, "FlinkRunConfiguration", js.undefined)
   }
 }

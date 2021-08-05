@@ -27,7 +27,7 @@ object longRunningApiCallerMod {
       */
     def this(longrunningDescriptor: LongRunningDescriptor) = this()
     
-    var _wrapOperation: js.Any = js.native
+    /* private */ var _wrapOperation: js.Any = js.native
     
     def call(
       apiCall: SimpleCallbackFunction,

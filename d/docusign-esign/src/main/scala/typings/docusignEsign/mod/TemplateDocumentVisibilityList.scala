@@ -17,27 +17,22 @@ trait TemplateDocumentVisibilityList extends StObject {
 }
 object TemplateDocumentVisibilityList {
   
-  @scala.inline
-  def apply(): TemplateDocumentVisibilityList = {
+  inline def apply(): TemplateDocumentVisibilityList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TemplateDocumentVisibilityList]
   }
   
-  @scala.inline
-  implicit class TemplateDocumentVisibilityListMutableBuilder[Self <: TemplateDocumentVisibilityList] (val x: Self) extends AnyVal {
+  extension [Self <: TemplateDocumentVisibilityList](x: Self) {
     
-    @scala.inline
-    def setDocumentVisibility(
+    inline def setDocumentVisibility(
       value: js.Array[
           /* This object configures a recipient's read/write access to a document. */ DocumentVisibility
         ]
     ): Self = StObject.set(x, "documentVisibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocumentVisibilityUndefined: Self = StObject.set(x, "documentVisibility", js.undefined)
+    inline def setDocumentVisibilityUndefined: Self = StObject.set(x, "documentVisibility", js.undefined)
     
-    @scala.inline
-    def setDocumentVisibilityVarargs(
+    inline def setDocumentVisibilityVarargs(
       value: (/* This object configures a recipient's read/write access to a document. */ DocumentVisibility)*
     ): Self = StObject.set(x, "documentVisibility", js.Array(value :_*))
   }

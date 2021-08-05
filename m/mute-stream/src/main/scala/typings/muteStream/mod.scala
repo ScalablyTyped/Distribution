@@ -41,26 +41,20 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+      inline def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
+      inline def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
       
-      @scala.inline
-      def setReplace(value: String): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+      inline def setReplace(value: String): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+      inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
     }
   }
 }

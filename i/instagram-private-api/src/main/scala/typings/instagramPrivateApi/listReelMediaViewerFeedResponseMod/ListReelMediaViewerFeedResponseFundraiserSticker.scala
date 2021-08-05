@@ -30,8 +30,7 @@ trait ListReelMediaViewerFeedResponseFundraiserSticker extends StObject {
 }
 object ListReelMediaViewerFeedResponseFundraiserSticker {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     button_text_color: String,
     consumption_sheet_config: ListReelMediaViewerFeedResponseConsumptionSheetConfig,
     end_background_color: String,
@@ -48,40 +47,28 @@ object ListReelMediaViewerFeedResponseFundraiserSticker {
     __obj.asInstanceOf[ListReelMediaViewerFeedResponseFundraiserSticker]
   }
   
-  @scala.inline
-  implicit class ListReelMediaViewerFeedResponseFundraiserStickerMutableBuilder[Self <: ListReelMediaViewerFeedResponseFundraiserSticker] (val x: Self) extends AnyVal {
+  extension [Self <: ListReelMediaViewerFeedResponseFundraiserSticker](x: Self) {
     
-    @scala.inline
-    def setButton_text_color(value: String): Self = StObject.set(x, "button_text_color", value.asInstanceOf[js.Any])
+    inline def setButton_text_color(value: String): Self = StObject.set(x, "button_text_color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsumption_sheet_config(value: ListReelMediaViewerFeedResponseConsumptionSheetConfig): Self = StObject.set(x, "consumption_sheet_config", value.asInstanceOf[js.Any])
+    inline def setConsumption_sheet_config(value: ListReelMediaViewerFeedResponseConsumptionSheetConfig): Self = StObject.set(x, "consumption_sheet_config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnd_background_color(value: String): Self = StObject.set(x, "end_background_color", value.asInstanceOf[js.Any])
+    inline def setEnd_background_color(value: String): Self = StObject.set(x, "end_background_color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginal_subtitle_height(value: Double): Self = StObject.set(x, "original_subtitle_height", value.asInstanceOf[js.Any])
+    inline def setOriginal_subtitle_height(value: Double): Self = StObject.set(x, "original_subtitle_height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+    inline def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSource_name(value: String): Self = StObject.set(x, "source_name", value.asInstanceOf[js.Any])
+    inline def setSource_name(value: String): Self = StObject.set(x, "source_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart_background_color(value: String): Self = StObject.set(x, "start_background_color", value.asInstanceOf[js.Any])
+    inline def setStart_background_color(value: String): Self = StObject.set(x, "start_background_color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtitle_color(value: String): Self = StObject.set(x, "subtitle_color", value.asInstanceOf[js.Any])
+    inline def setSubtitle_color(value: String): Self = StObject.set(x, "subtitle_color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle_color(value: String): Self = StObject.set(x, "title_color", value.asInstanceOf[js.Any])
+    inline def setTitle_color(value: String): Self = StObject.set(x, "title_color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: ListReelMediaViewerFeedResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: ListReelMediaViewerFeedResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

@@ -37,8 +37,7 @@ trait XDDELinkResults
 }
 object XDDELinkResults {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Results: SafeArray[SafeArray[js.Any]],
     acquire: () => Unit,
     getResults: () => SafeArray[SafeArray[js.Any]],
@@ -50,16 +49,12 @@ object XDDELinkResults {
     __obj.asInstanceOf[XDDELinkResults]
   }
   
-  @scala.inline
-  implicit class XDDELinkResultsMutableBuilder[Self <: XDDELinkResults] (val x: Self) extends AnyVal {
+  extension [Self <: XDDELinkResults](x: Self) {
     
-    @scala.inline
-    def setGetResults(value: () => SafeArray[SafeArray[js.Any]]): Self = StObject.set(x, "getResults", js.Any.fromFunction0(value))
+    inline def setGetResults(value: () => SafeArray[SafeArray[js.Any]]): Self = StObject.set(x, "getResults", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setResults(value: SafeArray[SafeArray[js.Any]]): Self = StObject.set(x, "Results", value.asInstanceOf[js.Any])
+    inline def setResults(value: SafeArray[SafeArray[js.Any]]): Self = StObject.set(x, "Results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetResults(value: SeqEquiv[SeqEquiv[js.Any]] => Unit): Self = StObject.set(x, "setResults", js.Any.fromFunction1(value))
+    inline def setSetResults(value: SeqEquiv[SeqEquiv[js.Any]] => Unit): Self = StObject.set(x, "setResults", js.Any.fromFunction1(value))
   }
 }

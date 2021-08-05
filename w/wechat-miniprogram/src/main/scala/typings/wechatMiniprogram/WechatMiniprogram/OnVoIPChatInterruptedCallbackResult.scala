@@ -14,19 +14,15 @@ trait OnVoIPChatInterruptedCallbackResult extends StObject {
 }
 object OnVoIPChatInterruptedCallbackResult {
   
-  @scala.inline
-  def apply(errCode: Double, errMsg: String): OnVoIPChatInterruptedCallbackResult = {
+  inline def apply(errCode: Double, errMsg: String): OnVoIPChatInterruptedCallbackResult = {
     val __obj = js.Dynamic.literal(errCode = errCode.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnVoIPChatInterruptedCallbackResult]
   }
   
-  @scala.inline
-  implicit class OnVoIPChatInterruptedCallbackResultMutableBuilder[Self <: OnVoIPChatInterruptedCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: OnVoIPChatInterruptedCallbackResult](x: Self) {
     
-    @scala.inline
-    def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
+    inline def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

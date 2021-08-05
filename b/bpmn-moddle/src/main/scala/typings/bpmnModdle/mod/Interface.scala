@@ -16,8 +16,7 @@ trait Interface
 }
 object Interface {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     $parent: TypeDerived,
     $type: ElementType,
     id: String,
@@ -29,19 +28,14 @@ object Interface {
     __obj.asInstanceOf[Interface]
   }
   
-  @scala.inline
-  implicit class InterfaceMutableBuilder[Self <: Interface] (val x: Self) extends AnyVal {
+  extension [Self <: Interface](x: Self) {
     
-    @scala.inline
-    def setImplementationRef(value: String): Self = StObject.set(x, "implementationRef", value.asInstanceOf[js.Any])
+    inline def setImplementationRef(value: String): Self = StObject.set(x, "implementationRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperations(value: js.Array[Operation]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: js.Array[Operation]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationsVarargs(value: Operation*): Self = StObject.set(x, "operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: Operation*): Self = StObject.set(x, "operations", js.Array(value :_*))
   }
 }

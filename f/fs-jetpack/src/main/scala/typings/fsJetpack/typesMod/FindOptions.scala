@@ -18,46 +18,33 @@ trait FindOptions extends StObject {
 }
 object FindOptions {
   
-  @scala.inline
-  def apply(): FindOptions = {
+  inline def apply(): FindOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FindOptions]
   }
   
-  @scala.inline
-  implicit class FindOptionsMutableBuilder[Self <: FindOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FindOptions](x: Self) {
     
-    @scala.inline
-    def setDirectories(value: Boolean): Self = StObject.set(x, "directories", value.asInstanceOf[js.Any])
+    inline def setDirectories(value: Boolean): Self = StObject.set(x, "directories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoriesUndefined: Self = StObject.set(x, "directories", js.undefined)
+    inline def setDirectoriesUndefined: Self = StObject.set(x, "directories", js.undefined)
     
-    @scala.inline
-    def setFiles(value: Boolean): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: Boolean): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+    inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
     
-    @scala.inline
-    def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
+    inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
+    inline def setIgnoreCaseUndefined: Self = StObject.set(x, "ignoreCase", js.undefined)
     
-    @scala.inline
-    def setMatching(value: String | js.Array[String]): Self = StObject.set(x, "matching", value.asInstanceOf[js.Any])
+    inline def setMatching(value: String | js.Array[String]): Self = StObject.set(x, "matching", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchingUndefined: Self = StObject.set(x, "matching", js.undefined)
+    inline def setMatchingUndefined: Self = StObject.set(x, "matching", js.undefined)
     
-    @scala.inline
-    def setMatchingVarargs(value: String*): Self = StObject.set(x, "matching", js.Array(value :_*))
+    inline def setMatchingVarargs(value: String*): Self = StObject.set(x, "matching", js.Array(value :_*))
     
-    @scala.inline
-    def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
+    inline def setRecursiveUndefined: Self = StObject.set(x, "recursive", js.undefined)
   }
 }

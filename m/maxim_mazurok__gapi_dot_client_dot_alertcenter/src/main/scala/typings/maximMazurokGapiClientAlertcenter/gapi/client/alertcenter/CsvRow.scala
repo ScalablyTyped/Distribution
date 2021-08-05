@@ -11,22 +11,17 @@ trait CsvRow extends StObject {
 }
 object CsvRow {
   
-  @scala.inline
-  def apply(): CsvRow = {
+  inline def apply(): CsvRow = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CsvRow]
   }
   
-  @scala.inline
-  implicit class CsvRowMutableBuilder[Self <: CsvRow] (val x: Self) extends AnyVal {
+  extension [Self <: CsvRow](x: Self) {
     
-    @scala.inline
-    def setEntries(value: js.Array[String]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
+    inline def setEntries(value: js.Array[String]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
+    inline def setEntriesUndefined: Self = StObject.set(x, "entries", js.undefined)
     
-    @scala.inline
-    def setEntriesVarargs(value: String*): Self = StObject.set(x, "entries", js.Array(value :_*))
+    inline def setEntriesVarargs(value: String*): Self = StObject.set(x, "entries", js.Array(value :_*))
   }
 }

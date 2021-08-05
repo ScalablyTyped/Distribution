@@ -12,22 +12,17 @@ trait Y2 extends StObject {
 }
 object Y2 {
   
-  @scala.inline
-  def apply(y1: String): Y2 = {
+  inline def apply(y1: String): Y2 = {
     val __obj = js.Dynamic.literal(y1 = y1.asInstanceOf[js.Any])
     __obj.asInstanceOf[Y2]
   }
   
-  @scala.inline
-  implicit class Y2MutableBuilder[Self <: Y2] (val x: Self) extends AnyVal {
+  extension [Self <: Y2](x: Self) {
     
-    @scala.inline
-    def setY1(value: String): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
+    inline def setY1(value: String): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY2(value: String): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
+    inline def setY2(value: String): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setY2Undefined: Self = StObject.set(x, "y2", js.undefined)
+    inline def setY2Undefined: Self = StObject.set(x, "y2", js.undefined)
   }
 }

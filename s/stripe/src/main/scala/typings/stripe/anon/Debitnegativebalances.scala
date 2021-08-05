@@ -29,31 +29,23 @@ trait Debitnegativebalances extends StObject {
 }
 object Debitnegativebalances {
   
-  @scala.inline
-  def apply(): Debitnegativebalances = {
+  inline def apply(): Debitnegativebalances = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Debitnegativebalances]
   }
   
-  @scala.inline
-  implicit class DebitnegativebalancesMutableBuilder[Self <: Debitnegativebalances] (val x: Self) extends AnyVal {
+  extension [Self <: Debitnegativebalances](x: Self) {
     
-    @scala.inline
-    def setDebit_negative_balances(value: Boolean): Self = StObject.set(x, "debit_negative_balances", value.asInstanceOf[js.Any])
+    inline def setDebit_negative_balances(value: Boolean): Self = StObject.set(x, "debit_negative_balances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDebit_negative_balancesUndefined: Self = StObject.set(x, "debit_negative_balances", js.undefined)
+    inline def setDebit_negative_balancesUndefined: Self = StObject.set(x, "debit_negative_balances", js.undefined)
     
-    @scala.inline
-    def setSchedule(value: Delaydays): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
+    inline def setSchedule(value: Delaydays): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
+    inline def setScheduleUndefined: Self = StObject.set(x, "schedule", js.undefined)
     
-    @scala.inline
-    def setStatement_descriptor(value: String): Self = StObject.set(x, "statement_descriptor", value.asInstanceOf[js.Any])
+    inline def setStatement_descriptor(value: String): Self = StObject.set(x, "statement_descriptor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatement_descriptorUndefined: Self = StObject.set(x, "statement_descriptor", js.undefined)
+    inline def setStatement_descriptorUndefined: Self = StObject.set(x, "statement_descriptor", js.undefined)
   }
 }

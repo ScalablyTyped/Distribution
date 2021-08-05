@@ -25,31 +25,23 @@ trait WebViewProperties
 }
 object WebViewProperties {
   
-  @scala.inline
-  def apply(): WebViewProperties = {
+  inline def apply(): WebViewProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WebViewProperties]
   }
   
-  @scala.inline
-  implicit class WebViewPropertiesMutableBuilder[Self <: WebViewProperties] (val x: Self) extends AnyVal {
+  extension [Self <: WebViewProperties](x: Self) {
     
-    @scala.inline
-    def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+    inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
+    inline def setHtmlUndefined: Self = StObject.set(x, "html", js.undefined)
     
-    @scala.inline
-    def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: js.Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setOptions(value: WebviewOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: WebviewOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

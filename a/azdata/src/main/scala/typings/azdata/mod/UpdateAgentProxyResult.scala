@@ -14,19 +14,15 @@ trait UpdateAgentProxyResult
 }
 object UpdateAgentProxyResult {
   
-  @scala.inline
-  def apply(errorMessage: String, proxy: AgentProxyInfo, step: AgentJobStepInfo, success: Boolean): UpdateAgentProxyResult = {
+  inline def apply(errorMessage: String, proxy: AgentProxyInfo, step: AgentJobStepInfo, success: Boolean): UpdateAgentProxyResult = {
     val __obj = js.Dynamic.literal(errorMessage = errorMessage.asInstanceOf[js.Any], proxy = proxy.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateAgentProxyResult]
   }
   
-  @scala.inline
-  implicit class UpdateAgentProxyResultMutableBuilder[Self <: UpdateAgentProxyResult] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateAgentProxyResult](x: Self) {
     
-    @scala.inline
-    def setProxy(value: AgentProxyInfo): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+    inline def setProxy(value: AgentProxyInfo): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStep(value: AgentJobStepInfo): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    inline def setStep(value: AgentJobStepInfo): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
   }
 }

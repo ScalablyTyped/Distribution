@@ -18,8 +18,7 @@ trait ICustomString
 }
 object ICustomString {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     defaultValue: String,
     expression: ExpressionType,
     label: String,
@@ -33,22 +32,16 @@ object ICustomString {
     __obj.asInstanceOf[ICustomString]
   }
   
-  @scala.inline
-  implicit class ICustomStringMutableBuilder[Self <: ICustomString] (val x: Self) extends AnyVal {
+  extension [Self <: ICustomString](x: Self) {
     
-    @scala.inline
-    def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpression(value: ExpressionType): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: ExpressionType): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxlength(value: Double): Self = StObject.set(x, "maxlength", value.asInstanceOf[js.Any])
+    inline def setMaxlength(value: Double): Self = StObject.set(x, "maxlength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShow(value: valueOrfunc[Boolean]): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+    inline def setShow(value: valueOrfunc[Boolean]): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowFunction0(value: () => Boolean): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+    inline def setShowFunction0(value: () => Boolean): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
   }
 }

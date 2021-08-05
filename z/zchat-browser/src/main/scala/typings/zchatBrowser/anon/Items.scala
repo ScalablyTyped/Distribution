@@ -17,23 +17,18 @@ trait Items
 }
 object Items {
   
-  @scala.inline
-  def apply(items: js.Array[PanelTemplate]): Items = {
+  inline def apply(items: js.Array[PanelTemplate]): Items = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("PANEL_TEMPLATE_CAROUSEL")
     __obj.asInstanceOf[Items]
   }
   
-  @scala.inline
-  implicit class ItemsMutableBuilder[Self <: Items] (val x: Self) extends AnyVal {
+  extension [Self <: Items](x: Self) {
     
-    @scala.inline
-    def setItems(value: js.Array[PanelTemplate]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[PanelTemplate]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: PanelTemplate*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: PanelTemplate*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: PANEL_TEMPLATE_CAROUSEL): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: PANEL_TEMPLATE_CAROUSEL): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

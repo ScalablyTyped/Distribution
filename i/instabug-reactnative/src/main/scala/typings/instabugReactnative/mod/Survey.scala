@@ -10,16 +10,13 @@ trait Survey extends StObject {
 }
 object Survey {
   
-  @scala.inline
-  def apply(title: String): Survey = {
+  inline def apply(title: String): Survey = {
     val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Survey]
   }
   
-  @scala.inline
-  implicit class SurveyMutableBuilder[Self <: Survey] (val x: Self) extends AnyVal {
+  extension [Self <: Survey](x: Self) {
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
   }
 }

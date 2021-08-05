@@ -13,16 +13,13 @@ trait DeleteRetentionPolicyRequest extends StObject {
 }
 object DeleteRetentionPolicyRequest {
   
-  @scala.inline
-  def apply(logGroupName: LogGroupName): DeleteRetentionPolicyRequest = {
+  inline def apply(logGroupName: LogGroupName): DeleteRetentionPolicyRequest = {
     val __obj = js.Dynamic.literal(logGroupName = logGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRetentionPolicyRequest]
   }
   
-  @scala.inline
-  implicit class DeleteRetentionPolicyRequestMutableBuilder[Self <: DeleteRetentionPolicyRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteRetentionPolicyRequest](x: Self) {
     
-    @scala.inline
-    def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
+    inline def setLogGroupName(value: LogGroupName): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
   }
 }

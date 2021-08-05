@@ -43,37 +43,27 @@ trait Route extends StObject {
 }
 object Route {
   
-  @scala.inline
-  def apply(distance: Double, duration: Double, legs: js.Array[RouteLeg], weight: Double, weight_name: String): Route = {
+  inline def apply(distance: Double, duration: Double, legs: js.Array[RouteLeg], weight: Double, weight_name: String): Route = {
     val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], legs = legs.asInstanceOf[js.Any], weight = weight.asInstanceOf[js.Any], weight_name = weight_name.asInstanceOf[js.Any])
     __obj.asInstanceOf[Route]
   }
   
-  @scala.inline
-  implicit class RouteMutableBuilder[Self <: Route] (val x: Self) extends AnyVal {
+  extension [Self <: Route](x: Self) {
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometry(value: js.Any): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: js.Any): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometryUndefined: Self = StObject.set(x, "geometry", js.undefined)
+    inline def setGeometryUndefined: Self = StObject.set(x, "geometry", js.undefined)
     
-    @scala.inline
-    def setLegs(value: js.Array[RouteLeg]): Self = StObject.set(x, "legs", value.asInstanceOf[js.Any])
+    inline def setLegs(value: js.Array[RouteLeg]): Self = StObject.set(x, "legs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegsVarargs(value: RouteLeg*): Self = StObject.set(x, "legs", js.Array(value :_*))
+    inline def setLegsVarargs(value: RouteLeg*): Self = StObject.set(x, "legs", js.Array(value :_*))
     
-    @scala.inline
-    def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
+    inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeight_name(value: String): Self = StObject.set(x, "weight_name", value.asInstanceOf[js.Any])
+    inline def setWeight_name(value: String): Self = StObject.set(x, "weight_name", value.asInstanceOf[js.Any])
   }
 }

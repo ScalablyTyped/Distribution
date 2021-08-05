@@ -21,49 +21,35 @@ trait ButtonProps extends StObject {
 }
 object ButtonProps {
   
-  @scala.inline
-  def apply(): ButtonProps = {
+  inline def apply(): ButtonProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ButtonProps]
   }
   
-  @scala.inline
-  implicit class ButtonPropsMutableBuilder[Self <: ButtonProps] (val x: Self) extends AnyVal {
+  extension [Self <: ButtonProps](x: Self) {
     
-    @scala.inline
-    def setButtonProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "buttonProps", value.asInstanceOf[js.Any])
+    inline def setButtonProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "buttonProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonPropsUndefined: Self = StObject.set(x, "buttonProps", js.undefined)
+    inline def setButtonPropsUndefined: Self = StObject.set(x, "buttonProps", js.undefined)
     
-    @scala.inline
-    def setInputProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
+    inline def setInputProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
+    inline def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "labelProps", value.asInstanceOf[js.Any])
+    inline def setLabelProps(value: StringDictionary[js.Any]): Self = StObject.set(x, "labelProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelPropsUndefined: Self = StObject.set(x, "labelProps", js.undefined)
+    inline def setLabelPropsUndefined: Self = StObject.set(x, "labelProps", js.undefined)
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
   }
 }

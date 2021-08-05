@@ -50,49 +50,35 @@ trait ParamsResourceElectionsVoterinfoquery
 }
 object ParamsResourceElectionsVoterinfoquery {
   
-  @scala.inline
-  def apply(): ParamsResourceElectionsVoterinfoquery = {
+  inline def apply(): ParamsResourceElectionsVoterinfoquery = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceElectionsVoterinfoquery]
   }
   
-  @scala.inline
-  implicit class ParamsResourceElectionsVoterinfoqueryMutableBuilder[Self <: ParamsResourceElectionsVoterinfoquery] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceElectionsVoterinfoquery](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setElectionId(value: String): Self = StObject.set(x, "electionId", value.asInstanceOf[js.Any])
+    inline def setElectionId(value: String): Self = StObject.set(x, "electionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElectionIdUndefined: Self = StObject.set(x, "electionId", js.undefined)
+    inline def setElectionIdUndefined: Self = StObject.set(x, "electionId", js.undefined)
     
-    @scala.inline
-    def setOfficialOnly(value: Boolean): Self = StObject.set(x, "officialOnly", value.asInstanceOf[js.Any])
+    inline def setOfficialOnly(value: Boolean): Self = StObject.set(x, "officialOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfficialOnlyUndefined: Self = StObject.set(x, "officialOnly", js.undefined)
+    inline def setOfficialOnlyUndefined: Self = StObject.set(x, "officialOnly", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaVoterInfoRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaVoterInfoRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
     
-    @scala.inline
-    def setReturnAllAvailableData(value: Boolean): Self = StObject.set(x, "returnAllAvailableData", value.asInstanceOf[js.Any])
+    inline def setReturnAllAvailableData(value: Boolean): Self = StObject.set(x, "returnAllAvailableData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnAllAvailableDataUndefined: Self = StObject.set(x, "returnAllAvailableData", js.undefined)
+    inline def setReturnAllAvailableDataUndefined: Self = StObject.set(x, "returnAllAvailableData", js.undefined)
   }
 }

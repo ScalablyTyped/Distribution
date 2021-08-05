@@ -10,19 +10,15 @@ trait Saturation extends StObject {
 }
 object Saturation {
   
-  @scala.inline
-  def apply(): Saturation = {
+  inline def apply(): Saturation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Saturation]
   }
   
-  @scala.inline
-  implicit class SaturationMutableBuilder[Self <: Saturation] (val x: Self) extends AnyVal {
+  extension [Self <: Saturation](x: Self) {
     
-    @scala.inline
-    def setSaturation(value: Double): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
+    inline def setSaturation(value: Double): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSaturationUndefined: Self = StObject.set(x, "saturation", js.undefined)
+    inline def setSaturationUndefined: Self = StObject.set(x, "saturation", js.undefined)
   }
 }

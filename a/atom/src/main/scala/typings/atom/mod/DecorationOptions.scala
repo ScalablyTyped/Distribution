@@ -24,25 +24,19 @@ trait DecorationOptions
 }
 object DecorationOptions {
   
-  @scala.inline
-  def apply(): DecorationOptions = {
+  inline def apply(): DecorationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DecorationOptions]
   }
   
-  @scala.inline
-  implicit class DecorationOptionsMutableBuilder[Self <: DecorationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DecorationOptions](x: Self) {
     
-    @scala.inline
-    def setGutterName(value: String): Self = StObject.set(x, "gutterName", value.asInstanceOf[js.Any])
+    inline def setGutterName(value: String): Self = StObject.set(x, "gutterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGutterNameUndefined: Self = StObject.set(x, "gutterName", js.undefined)
+    inline def setGutterNameUndefined: Self = StObject.set(x, "gutterName", js.undefined)
     
-    @scala.inline
-    def setType(value: line | `line-number` | text | highlight | overlay | gutter | block | cursor_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: line | `line-number` | text | highlight | overlay | gutter | block | cursor_): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

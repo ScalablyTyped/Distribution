@@ -27,31 +27,23 @@ trait CardChecks extends StObject {
 }
 object CardChecks {
   
-  @scala.inline
-  def apply(): CardChecks = {
+  inline def apply(): CardChecks = {
     val __obj = js.Dynamic.literal(address_line1_check = null, address_postal_code_check = null, cvc_check = null)
     __obj.asInstanceOf[CardChecks]
   }
   
-  @scala.inline
-  implicit class CardChecksMutableBuilder[Self <: CardChecks] (val x: Self) extends AnyVal {
+  extension [Self <: CardChecks](x: Self) {
     
-    @scala.inline
-    def setAddress_line1_check(value: pass | failed | unavailable | unchecked): Self = StObject.set(x, "address_line1_check", value.asInstanceOf[js.Any])
+    inline def setAddress_line1_check(value: pass | failed | unavailable | unchecked): Self = StObject.set(x, "address_line1_check", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddress_line1_checkNull: Self = StObject.set(x, "address_line1_check", null)
+    inline def setAddress_line1_checkNull: Self = StObject.set(x, "address_line1_check", null)
     
-    @scala.inline
-    def setAddress_postal_code_check(value: pass | failed | unavailable | unchecked): Self = StObject.set(x, "address_postal_code_check", value.asInstanceOf[js.Any])
+    inline def setAddress_postal_code_check(value: pass | failed | unavailable | unchecked): Self = StObject.set(x, "address_postal_code_check", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddress_postal_code_checkNull: Self = StObject.set(x, "address_postal_code_check", null)
+    inline def setAddress_postal_code_checkNull: Self = StObject.set(x, "address_postal_code_check", null)
     
-    @scala.inline
-    def setCvc_check(value: pass | failed | unavailable | unchecked): Self = StObject.set(x, "cvc_check", value.asInstanceOf[js.Any])
+    inline def setCvc_check(value: pass | failed | unavailable | unchecked): Self = StObject.set(x, "cvc_check", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCvc_checkNull: Self = StObject.set(x, "cvc_check", null)
+    inline def setCvc_checkNull: Self = StObject.set(x, "cvc_check", null)
   }
 }

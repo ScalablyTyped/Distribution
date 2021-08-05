@@ -57,8 +57,7 @@ trait GetReference
 }
 object GetReference {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
     AnchorTypes: SafeArray[TextContentAnchorType],
@@ -92,22 +91,16 @@ object GetReference {
     __obj.asInstanceOf[GetReference]
   }
   
-  @scala.inline
-  implicit class GetReferenceMutableBuilder[Self <: GetReference] (val x: Self) extends AnyVal {
+  extension [Self <: GetReference](x: Self) {
     
-    @scala.inline
-    def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
+    inline def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceFieldPart(value: Double): Self = StObject.set(x, "ReferenceFieldPart", value.asInstanceOf[js.Any])
+    inline def setReferenceFieldPart(value: Double): Self = StObject.set(x, "ReferenceFieldPart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceFieldSource(value: Double): Self = StObject.set(x, "ReferenceFieldSource", value.asInstanceOf[js.Any])
+    inline def setReferenceFieldSource(value: Double): Self = StObject.set(x, "ReferenceFieldSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSequenceNumber(value: Double): Self = StObject.set(x, "SequenceNumber", value.asInstanceOf[js.Any])
+    inline def setSequenceNumber(value: Double): Self = StObject.set(x, "SequenceNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceName(value: String): Self = StObject.set(x, "SourceName", value.asInstanceOf[js.Any])
+    inline def setSourceName(value: String): Self = StObject.set(x, "SourceName", value.asInstanceOf[js.Any])
   }
 }

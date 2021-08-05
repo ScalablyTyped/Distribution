@@ -43,10 +43,8 @@ object CreateSessionEntityTypeRequest {
     * @returns CreateSessionEntityTypeRequest instance
     */
   /* static member */
-  @scala.inline
-  def create(): CreateSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[CreateSessionEntityTypeRequest]
-  @scala.inline
-  def create(properties: ICreateSessionEntityTypeRequest): CreateSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[CreateSessionEntityTypeRequest]
+  inline def create(): CreateSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[CreateSessionEntityTypeRequest]
+  inline def create(properties: ICreateSessionEntityTypeRequest): CreateSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[CreateSessionEntityTypeRequest]
   
   /**
     * Decodes a CreateSessionEntityTypeRequest message from the specified reader or buffer.
@@ -57,14 +55,10 @@ object CreateSessionEntityTypeRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decode(reader: Reader): CreateSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CreateSessionEntityTypeRequest]
-  @scala.inline
-  def decode(reader: Reader, length: Double): CreateSessionEntityTypeRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CreateSessionEntityTypeRequest]
-  @scala.inline
-  def decode(reader: Uint8Array): CreateSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CreateSessionEntityTypeRequest]
-  @scala.inline
-  def decode(reader: Uint8Array, length: Double): CreateSessionEntityTypeRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CreateSessionEntityTypeRequest]
+  inline def decode(reader: Reader): CreateSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CreateSessionEntityTypeRequest]
+  inline def decode(reader: Reader, length: Double): CreateSessionEntityTypeRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CreateSessionEntityTypeRequest]
+  inline def decode(reader: Uint8Array): CreateSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CreateSessionEntityTypeRequest]
+  inline def decode(reader: Uint8Array, length: Double): CreateSessionEntityTypeRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CreateSessionEntityTypeRequest]
   
   /**
     * Decodes a CreateSessionEntityTypeRequest message from the specified reader or buffer, length delimited.
@@ -74,10 +68,8 @@ object CreateSessionEntityTypeRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @scala.inline
-  def decodeDelimited(reader: Reader): CreateSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CreateSessionEntityTypeRequest]
-  @scala.inline
-  def decodeDelimited(reader: Uint8Array): CreateSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CreateSessionEntityTypeRequest]
+  inline def decodeDelimited(reader: Reader): CreateSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CreateSessionEntityTypeRequest]
+  inline def decodeDelimited(reader: Uint8Array): CreateSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CreateSessionEntityTypeRequest]
   
   /**
     * Encodes the specified CreateSessionEntityTypeRequest message. Does not implicitly {@link google.cloud.dialogflow.v2.CreateSessionEntityTypeRequest.verify|verify} messages.
@@ -86,10 +78,8 @@ object CreateSessionEntityTypeRequest {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encode(message: ICreateSessionEntityTypeRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encode(message: ICreateSessionEntityTypeRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encode(message: ICreateSessionEntityTypeRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encode(message: ICreateSessionEntityTypeRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified CreateSessionEntityTypeRequest message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.CreateSessionEntityTypeRequest.verify|verify} messages.
@@ -98,10 +88,8 @@ object CreateSessionEntityTypeRequest {
     * @returns Writer
     */
   /* static member */
-  @scala.inline
-  def encodeDelimited(message: ICreateSessionEntityTypeRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encodeDelimited(message: ICreateSessionEntityTypeRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encodeDelimited(message: ICreateSessionEntityTypeRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encodeDelimited(message: ICreateSessionEntityTypeRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a CreateSessionEntityTypeRequest message from a plain object. Also converts values to their respective internal types.
@@ -109,8 +97,7 @@ object CreateSessionEntityTypeRequest {
     * @returns CreateSessionEntityTypeRequest
     */
   /* static member */
-  @scala.inline
-  def fromObject(`object`: StringDictionary[js.Any]): CreateSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[CreateSessionEntityTypeRequest]
+  inline def fromObject(`object`: StringDictionary[js.Any]): CreateSessionEntityTypeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[CreateSessionEntityTypeRequest]
   
   /**
     * Creates a plain object from a CreateSessionEntityTypeRequest message. Also converts values to other types if specified.
@@ -119,10 +106,8 @@ object CreateSessionEntityTypeRequest {
     * @returns Plain object
     */
   /* static member */
-  @scala.inline
-  def toObject(message: CreateSessionEntityTypeRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def toObject(message: CreateSessionEntityTypeRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: CreateSessionEntityTypeRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: CreateSessionEntityTypeRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a CreateSessionEntityTypeRequest message.
@@ -130,6 +115,5 @@ object CreateSessionEntityTypeRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @scala.inline
-  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

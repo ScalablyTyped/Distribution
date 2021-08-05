@@ -28,49 +28,35 @@ trait JsonpOptions extends StObject {
 }
 object JsonpOptions {
   
-  @scala.inline
-  def apply(): JsonpOptions = {
+  inline def apply(): JsonpOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[JsonpOptions]
   }
   
-  @scala.inline
-  implicit class JsonpOptionsMutableBuilder[Self <: JsonpOptions] (val x: Self) extends AnyVal {
+  extension [Self <: JsonpOptions](x: Self) {
     
-    @scala.inline
-    def setBackground(value: Boolean): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: Boolean): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
     
-    @scala.inline
-    def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+    inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
     
-    @scala.inline
-    def setCallbackKey(value: String): Self = StObject.set(x, "callbackKey", value.asInstanceOf[js.Any])
+    inline def setCallbackKey(value: String): Self = StObject.set(x, "callbackKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackKeyUndefined: Self = StObject.set(x, "callbackKey", js.undefined)
+    inline def setCallbackKeyUndefined: Self = StObject.set(x, "callbackKey", js.undefined)
     
-    @scala.inline
-    def setCallbackName(value: String): Self = StObject.set(x, "callbackName", value.asInstanceOf[js.Any])
+    inline def setCallbackName(value: String): Self = StObject.set(x, "callbackName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbackNameUndefined: Self = StObject.set(x, "callbackName", js.undefined)
+    inline def setCallbackNameUndefined: Self = StObject.set(x, "callbackName", js.undefined)
     
-    @scala.inline
-    def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
+    inline def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
     
-    @scala.inline
-    def setType(value: Instantiable1[/* o */ js.Any, js.Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Instantiable1[/* o */ js.Any, js.Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

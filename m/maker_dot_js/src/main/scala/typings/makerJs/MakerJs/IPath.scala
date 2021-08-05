@@ -26,26 +26,20 @@ trait IPath extends StObject {
 }
 object IPath {
   
-  @scala.inline
-  def apply(origin: IPoint, `type`: String): IPath = {
+  inline def apply(origin: IPoint, `type`: String): IPath = {
     val __obj = js.Dynamic.literal(origin = origin.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IPath]
   }
   
-  @scala.inline
-  implicit class IPathMutableBuilder[Self <: IPath] (val x: Self) extends AnyVal {
+  extension [Self <: IPath](x: Self) {
     
-    @scala.inline
-    def setLayer(value: String): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: String): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
+    inline def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
     
-    @scala.inline
-    def setOrigin(value: IPoint): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: IPoint): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

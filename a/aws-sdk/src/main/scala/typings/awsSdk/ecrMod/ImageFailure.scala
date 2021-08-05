@@ -23,31 +23,23 @@ trait ImageFailure extends StObject {
 }
 object ImageFailure {
   
-  @scala.inline
-  def apply(): ImageFailure = {
+  inline def apply(): ImageFailure = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageFailure]
   }
   
-  @scala.inline
-  implicit class ImageFailureMutableBuilder[Self <: ImageFailure] (val x: Self) extends AnyVal {
+  extension [Self <: ImageFailure](x: Self) {
     
-    @scala.inline
-    def setFailureCode(value: ImageFailureCode): Self = StObject.set(x, "failureCode", value.asInstanceOf[js.Any])
+    inline def setFailureCode(value: ImageFailureCode): Self = StObject.set(x, "failureCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureCodeUndefined: Self = StObject.set(x, "failureCode", js.undefined)
+    inline def setFailureCodeUndefined: Self = StObject.set(x, "failureCode", js.undefined)
     
-    @scala.inline
-    def setFailureReason(value: ImageFailureReason): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
+    inline def setFailureReason(value: ImageFailureReason): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
+    inline def setFailureReasonUndefined: Self = StObject.set(x, "failureReason", js.undefined)
     
-    @scala.inline
-    def setImageId(value: ImageIdentifier): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
+    inline def setImageId(value: ImageIdentifier): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageIdUndefined: Self = StObject.set(x, "imageId", js.undefined)
+    inline def setImageIdUndefined: Self = StObject.set(x, "imageId", js.undefined)
   }
 }

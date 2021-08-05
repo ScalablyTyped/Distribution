@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "feather-route-matcher"
-version := "3.1-dt-20200515Z-7951b5"
+version := "3.1-dt-20200515Z-d2b266"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

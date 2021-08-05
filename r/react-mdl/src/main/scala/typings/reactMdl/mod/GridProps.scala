@@ -15,19 +15,15 @@ trait GridProps
 }
 object GridProps {
   
-  @scala.inline
-  def apply(): GridProps = {
+  inline def apply(): GridProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridProps]
   }
   
-  @scala.inline
-  implicit class GridPropsMutableBuilder[Self <: GridProps] (val x: Self) extends AnyVal {
+  extension [Self <: GridProps](x: Self) {
     
-    @scala.inline
-    def setNoSpacing(value: Boolean): Self = StObject.set(x, "noSpacing", value.asInstanceOf[js.Any])
+    inline def setNoSpacing(value: Boolean): Self = StObject.set(x, "noSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoSpacingUndefined: Self = StObject.set(x, "noSpacing", js.undefined)
+    inline def setNoSpacingUndefined: Self = StObject.set(x, "noSpacing", js.undefined)
   }
 }

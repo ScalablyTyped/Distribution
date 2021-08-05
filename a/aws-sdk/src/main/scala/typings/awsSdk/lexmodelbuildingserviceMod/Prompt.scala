@@ -23,28 +23,21 @@ trait Prompt extends StObject {
 }
 object Prompt {
   
-  @scala.inline
-  def apply(maxAttempts: PromptMaxAttempts, messages: MessageList): Prompt = {
+  inline def apply(maxAttempts: PromptMaxAttempts, messages: MessageList): Prompt = {
     val __obj = js.Dynamic.literal(maxAttempts = maxAttempts.asInstanceOf[js.Any], messages = messages.asInstanceOf[js.Any])
     __obj.asInstanceOf[Prompt]
   }
   
-  @scala.inline
-  implicit class PromptMutableBuilder[Self <: Prompt] (val x: Self) extends AnyVal {
+  extension [Self <: Prompt](x: Self) {
     
-    @scala.inline
-    def setMaxAttempts(value: PromptMaxAttempts): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
+    inline def setMaxAttempts(value: PromptMaxAttempts): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessages(value: MessageList): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+    inline def setMessages(value: MessageList): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value :_*))
+    inline def setMessagesVarargs(value: Message*): Self = StObject.set(x, "messages", js.Array(value :_*))
     
-    @scala.inline
-    def setResponseCard(value: ResponseCard): Self = StObject.set(x, "responseCard", value.asInstanceOf[js.Any])
+    inline def setResponseCard(value: ResponseCard): Self = StObject.set(x, "responseCard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseCardUndefined: Self = StObject.set(x, "responseCard", js.undefined)
+    inline def setResponseCardUndefined: Self = StObject.set(x, "responseCard", js.undefined)
   }
 }

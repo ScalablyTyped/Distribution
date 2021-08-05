@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(ajv: Ajv): Ajv = ^.asInstanceOf[js.Dynamic].apply(ajv.asInstanceOf[js.Any]).asInstanceOf[Ajv]
-  @scala.inline
-  def apply(ajv: Ajv, options: js.Object): Ajv = (^.asInstanceOf[js.Dynamic].apply(ajv.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Ajv]
+  inline def apply(ajv: Ajv): Ajv = ^.asInstanceOf[js.Dynamic].apply(ajv.asInstanceOf[js.Any]).asInstanceOf[Ajv]
+  inline def apply(ajv: Ajv, options: js.Object): Ajv = (^.asInstanceOf[js.Dynamic].apply(ajv.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Ajv]
   
   @JSImport("ajv-errors", JSImport.Namespace)
   @js.native

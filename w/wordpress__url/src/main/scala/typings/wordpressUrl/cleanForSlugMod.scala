@@ -10,6 +10,5 @@ object cleanForSlugMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def cleanForSlug(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanForSlug")(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def cleanForSlug(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanForSlug")(string.asInstanceOf[js.Any]).asInstanceOf[String]
 }

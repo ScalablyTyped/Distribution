@@ -50,8 +50,7 @@ trait SocialActorInfo
 }
 object SocialActorInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -72,37 +71,26 @@ object SocialActorInfo {
     __obj.asInstanceOf[SocialActorInfo]
   }
   
-  @scala.inline
-  implicit class SocialActorInfoMutableBuilder[Self <: SocialActorInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SocialActorInfo](x: Self) {
     
-    @scala.inline
-    def setGet_accountName(value: () => String): Self = StObject.set(x, "get_accountName", js.Any.fromFunction0(value))
+    inline def setGet_accountName(value: () => String): Self = StObject.set(x, "get_accountName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_actorType(value: () => SocialActorType): Self = StObject.set(x, "get_actorType", js.Any.fromFunction0(value))
+    inline def setGet_actorType(value: () => SocialActorType): Self = StObject.set(x, "get_actorType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_contentUri(value: () => String): Self = StObject.set(x, "get_contentUri", js.Any.fromFunction0(value))
+    inline def setGet_contentUri(value: () => String): Self = StObject.set(x, "get_contentUri", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_id(value: () => String): Self = StObject.set(x, "get_id", js.Any.fromFunction0(value))
+    inline def setGet_id(value: () => String): Self = StObject.set(x, "get_id", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_tagGuid(value: () => String): Self = StObject.set(x, "get_tagGuid", js.Any.fromFunction0(value))
+    inline def setGet_tagGuid(value: () => String): Self = StObject.set(x, "get_tagGuid", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_accountName(value: String => String): Self = StObject.set(x, "set_accountName", js.Any.fromFunction1(value))
+    inline def setSet_accountName(value: String => String): Self = StObject.set(x, "set_accountName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_actorType(value: SocialActorType => SocialActorType): Self = StObject.set(x, "set_actorType", js.Any.fromFunction1(value))
+    inline def setSet_actorType(value: SocialActorType => SocialActorType): Self = StObject.set(x, "set_actorType", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_contentUri(value: String => String): Self = StObject.set(x, "set_contentUri", js.Any.fromFunction1(value))
+    inline def setSet_contentUri(value: String => String): Self = StObject.set(x, "set_contentUri", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_id(value: String => String): Self = StObject.set(x, "set_id", js.Any.fromFunction1(value))
+    inline def setSet_id(value: String => String): Self = StObject.set(x, "set_id", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_tagGuid(value: String => String): Self = StObject.set(x, "set_tagGuid", js.Any.fromFunction1(value))
+    inline def setSet_tagGuid(value: String => String): Self = StObject.set(x, "set_tagGuid", js.Any.fromFunction1(value))
   }
 }

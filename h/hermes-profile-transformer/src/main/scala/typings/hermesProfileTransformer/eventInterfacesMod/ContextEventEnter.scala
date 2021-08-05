@@ -15,16 +15,13 @@ trait ContextEventEnter
 }
 object ContextEventEnter {
   
-  @scala.inline
-  def apply(ph: CONTEXT_EVENTS_ENTER): ContextEventEnter = {
+  inline def apply(ph: CONTEXT_EVENTS_ENTER): ContextEventEnter = {
     val __obj = js.Dynamic.literal(ph = ph.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextEventEnter]
   }
   
-  @scala.inline
-  implicit class ContextEventEnterMutableBuilder[Self <: ContextEventEnter] (val x: Self) extends AnyVal {
+  extension [Self <: ContextEventEnter](x: Self) {
     
-    @scala.inline
-    def setPh(value: CONTEXT_EVENTS_ENTER): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
+    inline def setPh(value: CONTEXT_EVENTS_ENTER): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
   }
 }

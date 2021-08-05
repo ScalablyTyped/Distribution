@@ -34,40 +34,29 @@ trait SchemaGoogleOperations extends StObject {
 }
 object SchemaGoogleOperations {
   
-  @scala.inline
-  def apply(): SchemaGoogleOperations = {
+  inline def apply(): SchemaGoogleOperations = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleOperations]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleOperationsMutableBuilder[Self <: SchemaGoogleOperations] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleOperations](x: Self) {
     
-    @scala.inline
-    def setAffectedUserEmails(value: js.Array[String]): Self = StObject.set(x, "affectedUserEmails", value.asInstanceOf[js.Any])
+    inline def setAffectedUserEmails(value: js.Array[String]): Self = StObject.set(x, "affectedUserEmails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAffectedUserEmailsUndefined: Self = StObject.set(x, "affectedUserEmails", js.undefined)
+    inline def setAffectedUserEmailsUndefined: Self = StObject.set(x, "affectedUserEmails", js.undefined)
     
-    @scala.inline
-    def setAffectedUserEmailsVarargs(value: String*): Self = StObject.set(x, "affectedUserEmails", js.Array(value :_*))
+    inline def setAffectedUserEmailsVarargs(value: String*): Self = StObject.set(x, "affectedUserEmails", js.Array(value :_*))
     
-    @scala.inline
-    def setAttachmentData(value: SchemaAttachment): Self = StObject.set(x, "attachmentData", value.asInstanceOf[js.Any])
+    inline def setAttachmentData(value: SchemaAttachment): Self = StObject.set(x, "attachmentData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachmentDataUndefined: Self = StObject.set(x, "attachmentData", js.undefined)
+    inline def setAttachmentDataUndefined: Self = StObject.set(x, "attachmentData", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

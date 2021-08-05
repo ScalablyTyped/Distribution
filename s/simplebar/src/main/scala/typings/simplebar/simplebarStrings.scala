@@ -8,21 +8,17 @@ object simplebarStrings {
   
   @js.native
   sealed trait ltr extends StObject
-  @scala.inline
-  def ltr: ltr = "ltr".asInstanceOf[ltr]
+  inline def ltr: ltr = "ltr".asInstanceOf[ltr]
   
   @js.native
   sealed trait rtl extends StObject
-  @scala.inline
-  def rtl: rtl = "rtl".asInstanceOf[rtl]
+  inline def rtl: rtl = "rtl".asInstanceOf[rtl]
   
   @js.native
   sealed trait x extends StObject
-  @scala.inline
-  def x: x = "x".asInstanceOf[x]
+  inline def x: x = "x".asInstanceOf[x]
   
   @js.native
   sealed trait y extends StObject
-  @scala.inline
-  def y: y = "y".asInstanceOf[y]
+  inline def y: y = "y".asInstanceOf[y]
 }

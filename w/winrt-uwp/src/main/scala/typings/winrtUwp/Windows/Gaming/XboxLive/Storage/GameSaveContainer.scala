@@ -59,8 +59,7 @@ trait GameSaveContainer extends StObject {
 }
 object GameSaveContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createBlobInfoQuery: String => GameSaveBlobInfoQuery,
     getAsync: IIterable[String] => IPromiseWithIAsyncOperation[GameSaveBlobGetResult],
     name: String,
@@ -73,31 +72,23 @@ object GameSaveContainer {
     __obj.asInstanceOf[GameSaveContainer]
   }
   
-  @scala.inline
-  implicit class GameSaveContainerMutableBuilder[Self <: GameSaveContainer] (val x: Self) extends AnyVal {
+  extension [Self <: GameSaveContainer](x: Self) {
     
-    @scala.inline
-    def setCreateBlobInfoQuery(value: String => GameSaveBlobInfoQuery): Self = StObject.set(x, "createBlobInfoQuery", js.Any.fromFunction1(value))
+    inline def setCreateBlobInfoQuery(value: String => GameSaveBlobInfoQuery): Self = StObject.set(x, "createBlobInfoQuery", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetAsync(value: IIterable[String] => IPromiseWithIAsyncOperation[GameSaveBlobGetResult]): Self = StObject.set(x, "getAsync", js.Any.fromFunction1(value))
+    inline def setGetAsync(value: IIterable[String] => IPromiseWithIAsyncOperation[GameSaveBlobGetResult]): Self = StObject.set(x, "getAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvider(value: GameSaveProvider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    inline def setProvider(value: GameSaveProvider): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadAsync(value: IMapView[String, IBuffer] => IPromiseWithIAsyncOperation[GameSaveOperationResult]): Self = StObject.set(x, "readAsync", js.Any.fromFunction1(value))
+    inline def setReadAsync(value: IMapView[String, IBuffer] => IPromiseWithIAsyncOperation[GameSaveOperationResult]): Self = StObject.set(x, "readAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSubmitPropertySetUpdatesAsync(
+    inline def setSubmitPropertySetUpdatesAsync(
       value: (IPropertySet, IIterable[String], String) => IPromiseWithIAsyncOperation[GameSaveOperationResult]
     ): Self = StObject.set(x, "submitPropertySetUpdatesAsync", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setSubmitUpdatesAsync(
+    inline def setSubmitUpdatesAsync(
       value: (IMapView[String, IBuffer], IIterable[String], String) => IPromiseWithIAsyncOperation[GameSaveOperationResult]
     ): Self = StObject.set(x, "submitUpdatesAsync", js.Any.fromFunction3(value))
   }

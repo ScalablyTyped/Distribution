@@ -13,19 +13,15 @@ trait HierarchicalDataSourceSchema
 }
 object HierarchicalDataSourceSchema {
   
-  @scala.inline
-  def apply(): HierarchicalDataSourceSchema = {
+  inline def apply(): HierarchicalDataSourceSchema = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HierarchicalDataSourceSchema]
   }
   
-  @scala.inline
-  implicit class HierarchicalDataSourceSchemaMutableBuilder[Self <: HierarchicalDataSourceSchema] (val x: Self) extends AnyVal {
+  extension [Self <: HierarchicalDataSourceSchema](x: Self) {
     
-    @scala.inline
-    def setModel(value: HierarchicalDataSourceSchemaModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: HierarchicalDataSourceSchemaModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
   }
 }

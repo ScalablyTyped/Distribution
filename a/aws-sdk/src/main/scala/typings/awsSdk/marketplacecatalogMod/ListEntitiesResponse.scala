@@ -18,28 +18,21 @@ trait ListEntitiesResponse extends StObject {
 }
 object ListEntitiesResponse {
   
-  @scala.inline
-  def apply(): ListEntitiesResponse = {
+  inline def apply(): ListEntitiesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListEntitiesResponse]
   }
   
-  @scala.inline
-  implicit class ListEntitiesResponseMutableBuilder[Self <: ListEntitiesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListEntitiesResponse](x: Self) {
     
-    @scala.inline
-    def setEntitySummaryList(value: EntitySummaryList): Self = StObject.set(x, "EntitySummaryList", value.asInstanceOf[js.Any])
+    inline def setEntitySummaryList(value: EntitySummaryList): Self = StObject.set(x, "EntitySummaryList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntitySummaryListUndefined: Self = StObject.set(x, "EntitySummaryList", js.undefined)
+    inline def setEntitySummaryListUndefined: Self = StObject.set(x, "EntitySummaryList", js.undefined)
     
-    @scala.inline
-    def setEntitySummaryListVarargs(value: EntitySummary*): Self = StObject.set(x, "EntitySummaryList", js.Array(value :_*))
+    inline def setEntitySummaryListVarargs(value: EntitySummary*): Self = StObject.set(x, "EntitySummaryList", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

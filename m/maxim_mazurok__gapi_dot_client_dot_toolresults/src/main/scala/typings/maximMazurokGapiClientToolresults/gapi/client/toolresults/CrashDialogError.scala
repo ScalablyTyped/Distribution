@@ -11,19 +11,15 @@ trait CrashDialogError extends StObject {
 }
 object CrashDialogError {
   
-  @scala.inline
-  def apply(): CrashDialogError = {
+  inline def apply(): CrashDialogError = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CrashDialogError]
   }
   
-  @scala.inline
-  implicit class CrashDialogErrorMutableBuilder[Self <: CrashDialogError] (val x: Self) extends AnyVal {
+  extension [Self <: CrashDialogError](x: Self) {
     
-    @scala.inline
-    def setCrashPackage(value: String): Self = StObject.set(x, "crashPackage", value.asInstanceOf[js.Any])
+    inline def setCrashPackage(value: String): Self = StObject.set(x, "crashPackage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrashPackageUndefined: Self = StObject.set(x, "crashPackage", js.undefined)
+    inline def setCrashPackageUndefined: Self = StObject.set(x, "crashPackage", js.undefined)
   }
 }

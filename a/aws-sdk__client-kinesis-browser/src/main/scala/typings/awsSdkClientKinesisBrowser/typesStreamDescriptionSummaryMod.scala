@@ -70,8 +70,7 @@ object typesStreamDescriptionSummaryMod {
   }
   object StreamDescriptionSummary {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       EnhancedMonitoring: js.Array[EnhancedMetrics] | Iterable[EnhancedMetrics],
       OpenShardCount: Double,
       RetentionPeriodHours: Double,
@@ -84,50 +83,35 @@ object typesStreamDescriptionSummaryMod {
       __obj.asInstanceOf[StreamDescriptionSummary]
     }
     
-    @scala.inline
-    implicit class StreamDescriptionSummaryMutableBuilder[Self <: StreamDescriptionSummary] (val x: Self) extends AnyVal {
+    extension [Self <: StreamDescriptionSummary](x: Self) {
       
-      @scala.inline
-      def setConsumerCount(value: Double): Self = StObject.set(x, "ConsumerCount", value.asInstanceOf[js.Any])
+      inline def setConsumerCount(value: Double): Self = StObject.set(x, "ConsumerCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumerCountUndefined: Self = StObject.set(x, "ConsumerCount", js.undefined)
+      inline def setConsumerCountUndefined: Self = StObject.set(x, "ConsumerCount", js.undefined)
       
-      @scala.inline
-      def setEncryptionType(value: NONE | KMS | String): Self = StObject.set(x, "EncryptionType", value.asInstanceOf[js.Any])
+      inline def setEncryptionType(value: NONE | KMS | String): Self = StObject.set(x, "EncryptionType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncryptionTypeUndefined: Self = StObject.set(x, "EncryptionType", js.undefined)
+      inline def setEncryptionTypeUndefined: Self = StObject.set(x, "EncryptionType", js.undefined)
       
-      @scala.inline
-      def setEnhancedMonitoring(value: js.Array[EnhancedMetrics] | Iterable[EnhancedMetrics]): Self = StObject.set(x, "EnhancedMonitoring", value.asInstanceOf[js.Any])
+      inline def setEnhancedMonitoring(value: js.Array[EnhancedMetrics] | Iterable[EnhancedMetrics]): Self = StObject.set(x, "EnhancedMonitoring", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnhancedMonitoringVarargs(value: EnhancedMetrics*): Self = StObject.set(x, "EnhancedMonitoring", js.Array(value :_*))
+      inline def setEnhancedMonitoringVarargs(value: EnhancedMetrics*): Self = StObject.set(x, "EnhancedMonitoring", js.Array(value :_*))
       
-      @scala.inline
-      def setKeyId(value: String): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+      inline def setKeyId(value: String): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
+      inline def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
       
-      @scala.inline
-      def setOpenShardCount(value: Double): Self = StObject.set(x, "OpenShardCount", value.asInstanceOf[js.Any])
+      inline def setOpenShardCount(value: Double): Self = StObject.set(x, "OpenShardCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRetentionPeriodHours(value: Double): Self = StObject.set(x, "RetentionPeriodHours", value.asInstanceOf[js.Any])
+      inline def setRetentionPeriodHours(value: Double): Self = StObject.set(x, "RetentionPeriodHours", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamARN(value: String): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
+      inline def setStreamARN(value: String): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamCreationTimestamp(value: Date | String | Double): Self = StObject.set(x, "StreamCreationTimestamp", value.asInstanceOf[js.Any])
+      inline def setStreamCreationTimestamp(value: Date | String | Double): Self = StObject.set(x, "StreamCreationTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamName(value: String): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
+      inline def setStreamName(value: String): Self = StObject.set(x, "StreamName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamStatus(value: CREATING | DELETING | ACTIVE | UPDATING | String): Self = StObject.set(x, "StreamStatus", value.asInstanceOf[js.Any])
+      inline def setStreamStatus(value: CREATING | DELETING | ACTIVE | UPDATING | String): Self = StObject.set(x, "StreamStatus", value.asInstanceOf[js.Any])
     }
   }
   
@@ -149,8 +133,7 @@ object typesStreamDescriptionSummaryMod {
   }
   object UnmarshalledStreamDescriptionSummary {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       EnhancedMonitoring: js.Array[UnmarshalledEnhancedMetrics],
       OpenShardCount: Double,
       RetentionPeriodHours: Double,
@@ -163,17 +146,13 @@ object typesStreamDescriptionSummaryMod {
       __obj.asInstanceOf[UnmarshalledStreamDescriptionSummary]
     }
     
-    @scala.inline
-    implicit class UnmarshalledStreamDescriptionSummaryMutableBuilder[Self <: UnmarshalledStreamDescriptionSummary] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledStreamDescriptionSummary](x: Self) {
       
-      @scala.inline
-      def setEnhancedMonitoring(value: js.Array[UnmarshalledEnhancedMetrics]): Self = StObject.set(x, "EnhancedMonitoring", value.asInstanceOf[js.Any])
+      inline def setEnhancedMonitoring(value: js.Array[UnmarshalledEnhancedMetrics]): Self = StObject.set(x, "EnhancedMonitoring", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnhancedMonitoringVarargs(value: UnmarshalledEnhancedMetrics*): Self = StObject.set(x, "EnhancedMonitoring", js.Array(value :_*))
+      inline def setEnhancedMonitoringVarargs(value: UnmarshalledEnhancedMetrics*): Self = StObject.set(x, "EnhancedMonitoring", js.Array(value :_*))
       
-      @scala.inline
-      def setStreamCreationTimestamp(value: Date): Self = StObject.set(x, "StreamCreationTimestamp", value.asInstanceOf[js.Any])
+      inline def setStreamCreationTimestamp(value: Date): Self = StObject.set(x, "StreamCreationTimestamp", value.asInstanceOf[js.Any])
     }
   }
 }

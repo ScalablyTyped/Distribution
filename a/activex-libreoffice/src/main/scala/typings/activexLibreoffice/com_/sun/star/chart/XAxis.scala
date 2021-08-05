@@ -35,8 +35,7 @@ trait XAxis
 }
 object XAxis {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AxisTitle: XPropertySet,
     MajorGrid: XPropertySet,
     MinorGrid: XPropertySet,
@@ -51,25 +50,18 @@ object XAxis {
     __obj.asInstanceOf[XAxis]
   }
   
-  @scala.inline
-  implicit class XAxisMutableBuilder[Self <: XAxis] (val x: Self) extends AnyVal {
+  extension [Self <: XAxis](x: Self) {
     
-    @scala.inline
-    def setAxisTitle(value: XPropertySet): Self = StObject.set(x, "AxisTitle", value.asInstanceOf[js.Any])
+    inline def setAxisTitle(value: XPropertySet): Self = StObject.set(x, "AxisTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAxisTitle(value: () => XPropertySet): Self = StObject.set(x, "getAxisTitle", js.Any.fromFunction0(value))
+    inline def setGetAxisTitle(value: () => XPropertySet): Self = StObject.set(x, "getAxisTitle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMajorGrid(value: () => XPropertySet): Self = StObject.set(x, "getMajorGrid", js.Any.fromFunction0(value))
+    inline def setGetMajorGrid(value: () => XPropertySet): Self = StObject.set(x, "getMajorGrid", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMinorGrid(value: () => XPropertySet): Self = StObject.set(x, "getMinorGrid", js.Any.fromFunction0(value))
+    inline def setGetMinorGrid(value: () => XPropertySet): Self = StObject.set(x, "getMinorGrid", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMajorGrid(value: XPropertySet): Self = StObject.set(x, "MajorGrid", value.asInstanceOf[js.Any])
+    inline def setMajorGrid(value: XPropertySet): Self = StObject.set(x, "MajorGrid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinorGrid(value: XPropertySet): Self = StObject.set(x, "MinorGrid", value.asInstanceOf[js.Any])
+    inline def setMinorGrid(value: XPropertySet): Self = StObject.set(x, "MinorGrid", value.asInstanceOf[js.Any])
   }
 }

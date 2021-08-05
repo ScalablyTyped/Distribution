@@ -20,8 +20,7 @@ trait Id extends StObject {
 }
 object Id {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     id: Double,
     name: String,
     position: js.Tuple2[Double | String, Double | String],
@@ -31,31 +30,22 @@ object Id {
     __obj.asInstanceOf[Id]
   }
   
-  @scala.inline
-  implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
+  extension [Self <: Id](x: Self) {
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosition(value: js.Tuple2[Double | String, Double | String]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: js.Tuple2[Double | String, Double | String]): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
+    inline def setRank(value: Double): Self = StObject.set(x, "rank", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
+    inline def setRankUndefined: Self = StObject.set(x, "rank", js.undefined)
     
-    @scala.inline
-    def setTxt(value: String): Self = StObject.set(x, "txt", value.asInstanceOf[js.Any])
+    inline def setTxt(value: String): Self = StObject.set(x, "txt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTxtUndefined: Self = StObject.set(x, "txt", js.undefined)
+    inline def setTxtUndefined: Self = StObject.set(x, "txt", js.undefined)
     
-    @scala.inline
-    def setZooms(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "zooms", value.asInstanceOf[js.Any])
+    inline def setZooms(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "zooms", value.asInstanceOf[js.Any])
   }
 }

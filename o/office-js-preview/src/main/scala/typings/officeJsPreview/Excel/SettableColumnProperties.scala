@@ -34,25 +34,19 @@ trait SettableColumnProperties
 }
 object SettableColumnProperties {
   
-  @scala.inline
-  def apply(): SettableColumnProperties = {
+  inline def apply(): SettableColumnProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SettableColumnProperties]
   }
   
-  @scala.inline
-  implicit class SettableColumnPropertiesMutableBuilder[Self <: SettableColumnProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SettableColumnProperties](x: Self) {
     
-    @scala.inline
-    def setColumnHidden(value: Boolean): Self = StObject.set(x, "columnHidden", value.asInstanceOf[js.Any])
+    inline def setColumnHidden(value: Boolean): Self = StObject.set(x, "columnHidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnHiddenUndefined: Self = StObject.set(x, "columnHidden", js.undefined)
+    inline def setColumnHiddenUndefined: Self = StObject.set(x, "columnHidden", js.undefined)
     
-    @scala.inline
-    def setFormat(value: CellPropertiesFormatcolum): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: CellPropertiesFormatcolum): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
   }
 }

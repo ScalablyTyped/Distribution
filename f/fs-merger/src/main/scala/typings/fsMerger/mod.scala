@@ -81,8 +81,7 @@ object mod {
   }
   object FS {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       at: /* index */ Double => FSMerger,
       entries: (/* dirPath */ js.UndefOr[String], /* options */ js.UndefOr[Options]) => js.Array[Entry],
       existsSync: /* path */ PathLike => Boolean,
@@ -98,38 +97,27 @@ object mod {
       __obj.asInstanceOf[FS]
     }
     
-    @scala.inline
-    implicit class FSMutableBuilder[Self <: FS] (val x: Self) extends AnyVal {
+    extension [Self <: FS](x: Self) {
       
-      @scala.inline
-      def setAt(value: /* index */ Double => FSMerger): Self = StObject.set(x, "at", js.Any.fromFunction1(value))
+      inline def setAt(value: /* index */ Double => FSMerger): Self = StObject.set(x, "at", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEntries(value: (/* dirPath */ js.UndefOr[String], /* options */ js.UndefOr[Options]) => js.Array[Entry]): Self = StObject.set(x, "entries", js.Any.fromFunction2(value))
+      inline def setEntries(value: (/* dirPath */ js.UndefOr[String], /* options */ js.UndefOr[Options]) => js.Array[Entry]): Self = StObject.set(x, "entries", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setExistsSync(value: /* path */ PathLike => Boolean): Self = StObject.set(x, "existsSync", js.Any.fromFunction1(value))
+      inline def setExistsSync(value: /* path */ PathLike => Boolean): Self = StObject.set(x, "existsSync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLstatSync(value: /* path */ PathLike => Stats): Self = StObject.set(x, "lstatSync", js.Any.fromFunction1(value))
+      inline def setLstatSync(value: /* path */ PathLike => Stats): Self = StObject.set(x, "lstatSync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReadFileMeta(value: (/* filePath */ String, /* options */ js.UndefOr[FileMetaOption]) => js.UndefOr[FileMeta]): Self = StObject.set(x, "readFileMeta", js.Any.fromFunction2(value))
+      inline def setReadFileMeta(value: (/* filePath */ String, /* options */ js.UndefOr[FileMetaOption]) => js.UndefOr[FileMeta]): Self = StObject.set(x, "readFileMeta", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReadFileSync(value: /* path */ PathLike => Buffer): Self = StObject.set(x, "readFileSync", js.Any.fromFunction1(value))
+      inline def setReadFileSync(value: /* path */ PathLike => Buffer): Self = StObject.set(x, "readFileSync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReaddir(value: Typeofreaddir): Self = StObject.set(x, "readdir", value.asInstanceOf[js.Any])
+      inline def setReaddir(value: Typeofreaddir): Self = StObject.set(x, "readdir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReaddirSync(value: /* path */ PathLike => js.Array[String]): Self = StObject.set(x, "readdirSync", js.Any.fromFunction1(value))
+      inline def setReaddirSync(value: /* path */ PathLike => js.Array[String]): Self = StObject.set(x, "readdirSync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRelativePathTo(value: /* absolutePath */ String => At | Null): Self = StObject.set(x, "relativePathTo", js.Any.fromFunction1(value))
+      inline def setRelativePathTo(value: /* absolutePath */ String => At | Null): Self = StObject.set(x, "relativePathTo", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStatSync(value: (/* path */ PathLike, /* options */ BigIntOptions) => BigIntStats): Self = StObject.set(x, "statSync", js.Any.fromFunction2(value))
+      inline def setStatSync(value: (/* path */ PathLike, /* options */ BigIntOptions) => BigIntStats): Self = StObject.set(x, "statSync", js.Any.fromFunction2(value))
     }
   }
   
@@ -233,32 +221,24 @@ object mod {
   }
   object FSMergerObject {
     
-    @scala.inline
-    def apply(absRootWithSep: String, root: String): FSMergerObject = {
+    inline def apply(absRootWithSep: String, root: String): FSMergerObject = {
       val __obj = js.Dynamic.literal(absRootWithSep = absRootWithSep.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any])
       __obj.asInstanceOf[FSMergerObject]
     }
     
-    @scala.inline
-    implicit class FSMergerObjectMutableBuilder[Self <: FSMergerObject] (val x: Self) extends AnyVal {
+    extension [Self <: FSMergerObject](x: Self) {
       
-      @scala.inline
-      def setAbsRootWithSep(value: String): Self = StObject.set(x, "absRootWithSep", value.asInstanceOf[js.Any])
+      inline def setAbsRootWithSep(value: String): Self = StObject.set(x, "absRootWithSep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetDestinationPath(value: js.Function): Self = StObject.set(x, "getDestinationPath", value.asInstanceOf[js.Any])
+      inline def setGetDestinationPath(value: js.Function): Self = StObject.set(x, "getDestinationPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetDestinationPathUndefined: Self = StObject.set(x, "getDestinationPath", js.undefined)
+      inline def setGetDestinationPathUndefined: Self = StObject.set(x, "getDestinationPath", js.undefined)
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
       
-      @scala.inline
-      def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+      inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     }
   }
   
@@ -274,29 +254,22 @@ object mod {
   }
   object FileMeta {
     
-    @scala.inline
-    def apply(path: String): FileMeta = {
+    inline def apply(path: String): FileMeta = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileMeta]
     }
     
-    @scala.inline
-    implicit class FileMetaMutableBuilder[Self <: FileMeta] (val x: Self) extends AnyVal {
+    extension [Self <: FileMeta](x: Self) {
       
-      @scala.inline
-      def setGetDestinationPath(value: js.Function): Self = StObject.set(x, "getDestinationPath", value.asInstanceOf[js.Any])
+      inline def setGetDestinationPath(value: js.Function): Self = StObject.set(x, "getDestinationPath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetDestinationPathUndefined: Self = StObject.set(x, "getDestinationPath", js.undefined)
+      inline def setGetDestinationPathUndefined: Self = StObject.set(x, "getDestinationPath", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      inline def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
     }
   }
   
@@ -306,17 +279,14 @@ object mod {
   }
   object FileMetaOption {
     
-    @scala.inline
-    def apply(basePath: String): FileMetaOption = {
+    inline def apply(basePath: String): FileMetaOption = {
       val __obj = js.Dynamic.literal(basePath = basePath.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileMetaOption]
     }
     
-    @scala.inline
-    implicit class FileMetaOptionMutableBuilder[Self <: FileMetaOption] (val x: Self) extends AnyVal {
+    extension [Self <: FileMetaOption](x: Self) {
       
-      @scala.inline
-      def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
+      inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
     }
   }
   

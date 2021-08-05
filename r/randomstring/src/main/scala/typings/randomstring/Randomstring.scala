@@ -18,38 +18,28 @@ object Randomstring {
   }
   object GenerateOptions {
     
-    @scala.inline
-    def apply(): GenerateOptions = {
+    inline def apply(): GenerateOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GenerateOptions]
     }
     
-    @scala.inline
-    implicit class GenerateOptionsMutableBuilder[Self <: GenerateOptions] (val x: Self) extends AnyVal {
+    extension [Self <: GenerateOptions](x: Self) {
       
-      @scala.inline
-      def setCapitalization(value: String): Self = StObject.set(x, "capitalization", value.asInstanceOf[js.Any])
+      inline def setCapitalization(value: String): Self = StObject.set(x, "capitalization", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCapitalizationUndefined: Self = StObject.set(x, "capitalization", js.undefined)
+      inline def setCapitalizationUndefined: Self = StObject.set(x, "capitalization", js.undefined)
       
-      @scala.inline
-      def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
+      inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCharsetUndefined: Self = StObject.set(x, "charset", js.undefined)
+      inline def setCharsetUndefined: Self = StObject.set(x, "charset", js.undefined)
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+      inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
       
-      @scala.inline
-      def setReadable(value: Boolean): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
+      inline def setReadable(value: Boolean): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadableUndefined: Self = StObject.set(x, "readable", js.undefined)
+      inline def setReadableUndefined: Self = StObject.set(x, "readable", js.undefined)
     }
   }
 }

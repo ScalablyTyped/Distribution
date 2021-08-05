@@ -54,58 +54,41 @@ trait ComponentOptions extends StObject {
 }
 object ComponentOptions {
   
-  @scala.inline
-  def apply(tag: String): ComponentOptions = {
+  inline def apply(tag: String): ComponentOptions = {
     val __obj = js.Dynamic.literal(tag = tag.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentOptions]
   }
   
-  @scala.inline
-  implicit class ComponentOptionsMutableBuilder[Self <: ComponentOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ComponentOptions](x: Self) {
     
-    @scala.inline
-    def setAssetsDirs(value: js.Array[String]): Self = StObject.set(x, "assetsDirs", value.asInstanceOf[js.Any])
+    inline def setAssetsDirs(value: js.Array[String]): Self = StObject.set(x, "assetsDirs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssetsDirsUndefined: Self = StObject.set(x, "assetsDirs", js.undefined)
+    inline def setAssetsDirsUndefined: Self = StObject.set(x, "assetsDirs", js.undefined)
     
-    @scala.inline
-    def setAssetsDirsVarargs(value: String*): Self = StObject.set(x, "assetsDirs", js.Array(value :_*))
+    inline def setAssetsDirsVarargs(value: String*): Self = StObject.set(x, "assetsDirs", js.Array(value :_*))
     
-    @scala.inline
-    def setScoped(value: Boolean): Self = StObject.set(x, "scoped", value.asInstanceOf[js.Any])
+    inline def setScoped(value: Boolean): Self = StObject.set(x, "scoped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopedUndefined: Self = StObject.set(x, "scoped", js.undefined)
+    inline def setScopedUndefined: Self = StObject.set(x, "scoped", js.undefined)
     
-    @scala.inline
-    def setShadow(value: Boolean | ShadowRootOptions): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
+    inline def setShadow(value: Boolean | ShadowRootOptions): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
+    inline def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
     
-    @scala.inline
-    def setStyleUrl(value: String): Self = StObject.set(x, "styleUrl", value.asInstanceOf[js.Any])
+    inline def setStyleUrl(value: String): Self = StObject.set(x, "styleUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUrlUndefined: Self = StObject.set(x, "styleUrl", js.undefined)
+    inline def setStyleUrlUndefined: Self = StObject.set(x, "styleUrl", js.undefined)
     
-    @scala.inline
-    def setStyleUrls(value: js.Array[String] | ModeStyles): Self = StObject.set(x, "styleUrls", value.asInstanceOf[js.Any])
+    inline def setStyleUrls(value: js.Array[String] | ModeStyles): Self = StObject.set(x, "styleUrls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUrlsUndefined: Self = StObject.set(x, "styleUrls", js.undefined)
+    inline def setStyleUrlsUndefined: Self = StObject.set(x, "styleUrls", js.undefined)
     
-    @scala.inline
-    def setStyleUrlsVarargs(value: String*): Self = StObject.set(x, "styleUrls", js.Array(value :_*))
+    inline def setStyleUrlsVarargs(value: String*): Self = StObject.set(x, "styleUrls", js.Array(value :_*))
     
-    @scala.inline
-    def setStyles(value: String | StringDictionary[js.Any]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: String | StringDictionary[js.Any]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
   }
 }

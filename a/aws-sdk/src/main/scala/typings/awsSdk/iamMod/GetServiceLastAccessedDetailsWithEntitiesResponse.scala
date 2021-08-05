@@ -43,8 +43,7 @@ trait GetServiceLastAccessedDetailsWithEntitiesResponse extends StObject {
 }
 object GetServiceLastAccessedDetailsWithEntitiesResponse {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EntityDetailsList: entityDetailsListType,
     JobCompletionDate: dateType,
     JobCreationDate: dateType,
@@ -54,40 +53,28 @@ object GetServiceLastAccessedDetailsWithEntitiesResponse {
     __obj.asInstanceOf[GetServiceLastAccessedDetailsWithEntitiesResponse]
   }
   
-  @scala.inline
-  implicit class GetServiceLastAccessedDetailsWithEntitiesResponseMutableBuilder[Self <: GetServiceLastAccessedDetailsWithEntitiesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetServiceLastAccessedDetailsWithEntitiesResponse](x: Self) {
     
-    @scala.inline
-    def setEntityDetailsList(value: entityDetailsListType): Self = StObject.set(x, "EntityDetailsList", value.asInstanceOf[js.Any])
+    inline def setEntityDetailsList(value: entityDetailsListType): Self = StObject.set(x, "EntityDetailsList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityDetailsListVarargs(value: EntityDetails*): Self = StObject.set(x, "EntityDetailsList", js.Array(value :_*))
+    inline def setEntityDetailsListVarargs(value: EntityDetails*): Self = StObject.set(x, "EntityDetailsList", js.Array(value :_*))
     
-    @scala.inline
-    def setError(value: ErrorDetails): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
+    inline def setError(value: ErrorDetails): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "Error", js.undefined)
     
-    @scala.inline
-    def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
+    inline def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
+    inline def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
     
-    @scala.inline
-    def setJobCompletionDate(value: dateType): Self = StObject.set(x, "JobCompletionDate", value.asInstanceOf[js.Any])
+    inline def setJobCompletionDate(value: dateType): Self = StObject.set(x, "JobCompletionDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobCreationDate(value: dateType): Self = StObject.set(x, "JobCreationDate", value.asInstanceOf[js.Any])
+    inline def setJobCreationDate(value: dateType): Self = StObject.set(x, "JobCreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobStatus(value: jobStatusType): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
+    inline def setJobStatus(value: jobStatusType): Self = StObject.set(x, "JobStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarker(value: responseMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: responseMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
+    inline def setMarkerUndefined: Self = StObject.set(x, "Marker", js.undefined)
   }
 }

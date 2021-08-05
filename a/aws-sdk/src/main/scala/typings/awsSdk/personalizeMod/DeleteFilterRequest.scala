@@ -13,16 +13,13 @@ trait DeleteFilterRequest extends StObject {
 }
 object DeleteFilterRequest {
   
-  @scala.inline
-  def apply(filterArn: Arn): DeleteFilterRequest = {
+  inline def apply(filterArn: Arn): DeleteFilterRequest = {
     val __obj = js.Dynamic.literal(filterArn = filterArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFilterRequest]
   }
   
-  @scala.inline
-  implicit class DeleteFilterRequestMutableBuilder[Self <: DeleteFilterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFilterRequest](x: Self) {
     
-    @scala.inline
-    def setFilterArn(value: Arn): Self = StObject.set(x, "filterArn", value.asInstanceOf[js.Any])
+    inline def setFilterArn(value: Arn): Self = StObject.set(x, "filterArn", value.asInstanceOf[js.Any])
   }
 }

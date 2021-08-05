@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.DOMProcessingInstruction")
 @js.native
-class DOMProcessingInstruction protected ()
+/* private */ class DOMProcessingInstruction ()
   extends StObject
      with typings.activexMshtml.MSHTML.DOMProcessingInstruction

@@ -18,28 +18,21 @@ trait GetRateBasedRuleManagedKeysResponse extends StObject {
 }
 object GetRateBasedRuleManagedKeysResponse {
   
-  @scala.inline
-  def apply(): GetRateBasedRuleManagedKeysResponse = {
+  inline def apply(): GetRateBasedRuleManagedKeysResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetRateBasedRuleManagedKeysResponse]
   }
   
-  @scala.inline
-  implicit class GetRateBasedRuleManagedKeysResponseMutableBuilder[Self <: GetRateBasedRuleManagedKeysResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetRateBasedRuleManagedKeysResponse](x: Self) {
     
-    @scala.inline
-    def setManagedKeys(value: ManagedKeys): Self = StObject.set(x, "ManagedKeys", value.asInstanceOf[js.Any])
+    inline def setManagedKeys(value: ManagedKeys): Self = StObject.set(x, "ManagedKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManagedKeysUndefined: Self = StObject.set(x, "ManagedKeys", js.undefined)
+    inline def setManagedKeysUndefined: Self = StObject.set(x, "ManagedKeys", js.undefined)
     
-    @scala.inline
-    def setManagedKeysVarargs(value: ManagedKey*): Self = StObject.set(x, "ManagedKeys", js.Array(value :_*))
+    inline def setManagedKeysVarargs(value: ManagedKey*): Self = StObject.set(x, "ManagedKeys", js.Array(value :_*))
     
-    @scala.inline
-    def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
+    inline def setNextMarker(value: NextMarker): Self = StObject.set(x, "NextMarker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
+    inline def setNextMarkerUndefined: Self = StObject.set(x, "NextMarker", js.undefined)
   }
 }

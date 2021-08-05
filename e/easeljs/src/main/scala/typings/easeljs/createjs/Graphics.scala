@@ -307,32 +307,24 @@ object Graphics {
   }
   object Arc {
     
-    @scala.inline
-    def apply(anticlockwise: Double, endAngle: Double, radius: Double, startAngle: Double, x: Double, y: Double): Arc = {
+    inline def apply(anticlockwise: Double, endAngle: Double, radius: Double, startAngle: Double, x: Double, y: Double): Arc = {
       val __obj = js.Dynamic.literal(anticlockwise = anticlockwise.asInstanceOf[js.Any], endAngle = endAngle.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], startAngle = startAngle.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[Arc]
     }
     
-    @scala.inline
-    implicit class ArcMutableBuilder[Self <: Arc] (val x: Self) extends AnyVal {
+    extension [Self <: Arc](x: Self) {
       
-      @scala.inline
-      def setAnticlockwise(value: Double): Self = StObject.set(x, "anticlockwise", value.asInstanceOf[js.Any])
+      inline def setAnticlockwise(value: Double): Self = StObject.set(x, "anticlockwise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
+      inline def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
+      inline def setStartAngle(value: Double): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -351,29 +343,22 @@ object Graphics {
   }
   object ArcTo {
     
-    @scala.inline
-    def apply(radius: Double, x1: Double, x2: Double, y1: Double, y2: Double): ArcTo = {
+    inline def apply(radius: Double, x1: Double, x2: Double, y1: Double, y2: Double): ArcTo = {
       val __obj = js.Dynamic.literal(radius = radius.asInstanceOf[js.Any], x1 = x1.asInstanceOf[js.Any], x2 = x2.asInstanceOf[js.Any], y1 = y1.asInstanceOf[js.Any], y2 = y2.asInstanceOf[js.Any])
       __obj.asInstanceOf[ArcTo]
     }
     
-    @scala.inline
-    implicit class ArcToMutableBuilder[Self <: ArcTo] (val x: Self) extends AnyVal {
+    extension [Self <: ArcTo](x: Self) {
       
-      @scala.inline
-      def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
+      inline def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX2(value: Double): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
+      inline def setX2(value: Double): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
+      inline def setY1(value: Double): Self = StObject.set(x, "y1", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY2(value: Double): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
+      inline def setY2(value: Double): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
     }
   }
   
@@ -396,32 +381,24 @@ object Graphics {
   }
   object BezierCurveTo {
     
-    @scala.inline
-    def apply(cp1x: Double, cp1y: Double, cp2x: Double, cp2y: Double, x: Double, y: Double): BezierCurveTo = {
+    inline def apply(cp1x: Double, cp1y: Double, cp2x: Double, cp2y: Double, x: Double, y: Double): BezierCurveTo = {
       val __obj = js.Dynamic.literal(cp1x = cp1x.asInstanceOf[js.Any], cp1y = cp1y.asInstanceOf[js.Any], cp2x = cp2x.asInstanceOf[js.Any], cp2y = cp2y.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[BezierCurveTo]
     }
     
-    @scala.inline
-    implicit class BezierCurveToMutableBuilder[Self <: BezierCurveTo] (val x: Self) extends AnyVal {
+    extension [Self <: BezierCurveTo](x: Self) {
       
-      @scala.inline
-      def setCp1x(value: Double): Self = StObject.set(x, "cp1x", value.asInstanceOf[js.Any])
+      inline def setCp1x(value: Double): Self = StObject.set(x, "cp1x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCp1y(value: Double): Self = StObject.set(x, "cp1y", value.asInstanceOf[js.Any])
+      inline def setCp1y(value: Double): Self = StObject.set(x, "cp1y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCp2x(value: Double): Self = StObject.set(x, "cp2x", value.asInstanceOf[js.Any])
+      inline def setCp2x(value: Double): Self = StObject.set(x, "cp2x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCp2y(value: Double): Self = StObject.set(x, "cp2y", value.asInstanceOf[js.Any])
+      inline def setCp2y(value: Double): Self = StObject.set(x, "cp2y", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -436,23 +413,18 @@ object Graphics {
   }
   object Circle {
     
-    @scala.inline
-    def apply(radius: Double, x: Double, y: Double): Circle = {
+    inline def apply(radius: Double, x: Double, y: Double): Circle = {
       val __obj = js.Dynamic.literal(radius = radius.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[Circle]
     }
     
-    @scala.inline
-    implicit class CircleMutableBuilder[Self <: Circle] (val x: Self) extends AnyVal {
+    extension [Self <: Circle](x: Self) {
       
-      @scala.inline
-      def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -493,20 +465,16 @@ object Graphics {
   }
   object LineTo {
     
-    @scala.inline
-    def apply(x: Double, y: Double): LineTo = {
+    inline def apply(x: Double, y: Double): LineTo = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[LineTo]
     }
     
-    @scala.inline
-    implicit class LineToMutableBuilder[Self <: LineTo] (val x: Self) extends AnyVal {
+    extension [Self <: LineTo](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -518,20 +486,16 @@ object Graphics {
   }
   object MoveTo {
     
-    @scala.inline
-    def apply(x: Double, y: Double): MoveTo = {
+    inline def apply(x: Double, y: Double): MoveTo = {
       val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[MoveTo]
     }
     
-    @scala.inline
-    implicit class MoveToMutableBuilder[Self <: MoveTo] (val x: Self) extends AnyVal {
+    extension [Self <: MoveTo](x: Self) {
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -552,32 +516,24 @@ object Graphics {
   }
   object PolyStar {
     
-    @scala.inline
-    def apply(angle: Double, pointSize: Double, radius: Double, sides: Double, x: Double, y: Double): PolyStar = {
+    inline def apply(angle: Double, pointSize: Double, radius: Double, sides: Double, x: Double, y: Double): PolyStar = {
       val __obj = js.Dynamic.literal(angle = angle.asInstanceOf[js.Any], pointSize = pointSize.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any], sides = sides.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[PolyStar]
     }
     
-    @scala.inline
-    implicit class PolyStarMutableBuilder[Self <: PolyStar] (val x: Self) extends AnyVal {
+    extension [Self <: PolyStar](x: Self) {
       
-      @scala.inline
-      def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+      inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPointSize(value: Double): Self = StObject.set(x, "pointSize", value.asInstanceOf[js.Any])
+      inline def setPointSize(value: Double): Self = StObject.set(x, "pointSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSides(value: Double): Self = StObject.set(x, "sides", value.asInstanceOf[js.Any])
+      inline def setSides(value: Double): Self = StObject.set(x, "sides", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -594,26 +550,20 @@ object Graphics {
   }
   object QuadraticCurveTo {
     
-    @scala.inline
-    def apply(cpx: Double, cpy: Double, x: Double, y: Double): QuadraticCurveTo = {
+    inline def apply(cpx: Double, cpy: Double, x: Double, y: Double): QuadraticCurveTo = {
       val __obj = js.Dynamic.literal(cpx = cpx.asInstanceOf[js.Any], cpy = cpy.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[QuadraticCurveTo]
     }
     
-    @scala.inline
-    implicit class QuadraticCurveToMutableBuilder[Self <: QuadraticCurveTo] (val x: Self) extends AnyVal {
+    extension [Self <: QuadraticCurveTo](x: Self) {
       
-      @scala.inline
-      def setCpx(value: Double): Self = StObject.set(x, "cpx", value.asInstanceOf[js.Any])
+      inline def setCpx(value: Double): Self = StObject.set(x, "cpx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCpy(value: Double): Self = StObject.set(x, "cpy", value.asInstanceOf[js.Any])
+      inline def setCpy(value: Double): Self = StObject.set(x, "cpy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -630,26 +580,20 @@ object Graphics {
   }
   object Rect {
     
-    @scala.inline
-    def apply(h: Double, w: Double, x: Double, y: Double): Rect = {
+    inline def apply(h: Double, w: Double, x: Double, y: Double): Rect = {
       val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
       __obj.asInstanceOf[Rect]
     }
     
-    @scala.inline
-    implicit class RectMutableBuilder[Self <: Rect] (val x: Self) extends AnyVal {
+    extension [Self <: Rect](x: Self) {
       
-      @scala.inline
-      def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+      inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+      inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -674,8 +618,7 @@ object Graphics {
   }
   object RoundRect {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       h: Double,
       radiusBL: Double,
       radiusBR: Double,
@@ -689,32 +632,23 @@ object Graphics {
       __obj.asInstanceOf[RoundRect]
     }
     
-    @scala.inline
-    implicit class RoundRectMutableBuilder[Self <: RoundRect] (val x: Self) extends AnyVal {
+    extension [Self <: RoundRect](x: Self) {
       
-      @scala.inline
-      def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
+      inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiusBL(value: Double): Self = StObject.set(x, "radiusBL", value.asInstanceOf[js.Any])
+      inline def setRadiusBL(value: Double): Self = StObject.set(x, "radiusBL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiusBR(value: Double): Self = StObject.set(x, "radiusBR", value.asInstanceOf[js.Any])
+      inline def setRadiusBR(value: Double): Self = StObject.set(x, "radiusBR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiusTL(value: Double): Self = StObject.set(x, "radiusTL", value.asInstanceOf[js.Any])
+      inline def setRadiusTL(value: Double): Self = StObject.set(x, "radiusTL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiusTR(value: Double): Self = StObject.set(x, "radiusTR", value.asInstanceOf[js.Any])
+      inline def setRadiusTR(value: Double): Self = StObject.set(x, "radiusTR", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
+      inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+      inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+      inline def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
@@ -757,26 +691,20 @@ object Graphics {
   }
   object StrokeStyle {
     
-    @scala.inline
-    def apply(caps: String, joints: String, miterLimit: Double, width: Double): StrokeStyle = {
+    inline def apply(caps: String, joints: String, miterLimit: Double, width: Double): StrokeStyle = {
       val __obj = js.Dynamic.literal(caps = caps.asInstanceOf[js.Any], joints = joints.asInstanceOf[js.Any], miterLimit = miterLimit.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
       __obj.asInstanceOf[StrokeStyle]
     }
     
-    @scala.inline
-    implicit class StrokeStyleMutableBuilder[Self <: StrokeStyle] (val x: Self) extends AnyVal {
+    extension [Self <: StrokeStyle](x: Self) {
       
-      @scala.inline
-      def setCaps(value: String): Self = StObject.set(x, "caps", value.asInstanceOf[js.Any])
+      inline def setCaps(value: String): Self = StObject.set(x, "caps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJoints(value: String): Self = StObject.set(x, "joints", value.asInstanceOf[js.Any])
+      inline def setJoints(value: String): Self = StObject.set(x, "joints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMiterLimit(value: Double): Self = StObject.set(x, "miterLimit", value.asInstanceOf[js.Any])
+      inline def setMiterLimit(value: Double): Self = StObject.set(x, "miterLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

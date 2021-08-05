@@ -60,68 +60,48 @@ object Twitter {
     }
     object ClassNames {
       
-      @scala.inline
-      def apply(): ClassNames = {
+      inline def apply(): ClassNames = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ClassNames]
       }
       
-      @scala.inline
-      implicit class ClassNamesMutableBuilder[Self <: ClassNames] (val x: Self) extends AnyVal {
+      extension [Self <: ClassNames](x: Self) {
         
-        @scala.inline
-        def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+        inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+        inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
         
-        @scala.inline
-        def setDataset(value: String): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
+        inline def setDataset(value: String): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
+        inline def setDatasetUndefined: Self = StObject.set(x, "dataset", js.undefined)
         
-        @scala.inline
-        def setEmpty(value: String): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+        inline def setEmpty(value: String): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
+        inline def setEmptyUndefined: Self = StObject.set(x, "empty", js.undefined)
         
-        @scala.inline
-        def setHighlight(value: String): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+        inline def setHighlight(value: String): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
+        inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
         
-        @scala.inline
-        def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
+        inline def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
+        inline def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
         
-        @scala.inline
-        def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
+        inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
+        inline def setInputUndefined: Self = StObject.set(x, "input", js.undefined)
         
-        @scala.inline
-        def setMenu(value: String): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+        inline def setMenu(value: String): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
+        inline def setMenuUndefined: Self = StObject.set(x, "menu", js.undefined)
         
-        @scala.inline
-        def setOpen(value: String): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+        inline def setOpen(value: String): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
+        inline def setOpenUndefined: Self = StObject.set(x, "open", js.undefined)
         
-        @scala.inline
-        def setSuggestion(value: String): Self = StObject.set(x, "suggestion", value.asInstanceOf[js.Any])
+        inline def setSuggestion(value: String): Self = StObject.set(x, "suggestion", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSuggestionUndefined: Self = StObject.set(x, "suggestion", js.undefined)
+        inline def setSuggestionUndefined: Self = StObject.set(x, "suggestion", js.undefined)
       }
     }
     
@@ -192,8 +172,7 @@ object Twitter {
     }
     object Dataset {
       
-      @scala.inline
-      def apply[T](
+      inline def apply[T](
         source: Bloodhound[T] | (js.Function3[
               /* query */ String, 
               /* syncResults */ js.Function1[/* result */ js.Array[T], Unit], 
@@ -205,38 +184,27 @@ object Twitter {
         __obj.asInstanceOf[Dataset[T]]
       }
       
-      @scala.inline
-      implicit class DatasetMutableBuilder[Self <: Dataset[?], T] (val x: Self & Dataset[T]) extends AnyVal {
+      extension [Self <: Dataset[?], T](x: Self & Dataset[T]) {
         
-        @scala.inline
-        def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+        inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+        inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
         
-        @scala.inline
-        def setDisplay(value: String | (js.Function1[/* obj */ T, String])): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+        inline def setDisplay(value: String | (js.Function1[/* obj */ T, String])): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDisplayFunction1(value: /* obj */ T => String): Self = StObject.set(x, "display", js.Any.fromFunction1(value))
+        inline def setDisplayFunction1(value: /* obj */ T => String): Self = StObject.set(x, "display", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
+        inline def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
         
-        @scala.inline
-        def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+        inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+        inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
         
-        @scala.inline
-        def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+        inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+        inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
-        @scala.inline
-        def setSource(
+        inline def setSource(
           value: Bloodhound[T] | (js.Function3[
                   /* query */ String, 
                   /* syncResults */ js.Function1[/* result */ js.Array[T], Unit], 
@@ -245,16 +213,13 @@ object Twitter {
                 ])
         ): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSourceFunction3(
+        inline def setSourceFunction3(
           value: (/* query */ String, /* syncResults */ js.Function1[/* result */ js.Array[T], Unit], /* asyncResults */ js.UndefOr[js.Function1[/* result */ js.Array[T], Unit]]) => Unit
         ): Self = StObject.set(x, "source", js.Any.fromFunction3(value))
         
-        @scala.inline
-        def setTemplates(value: Templates[T]): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
+        inline def setTemplates(value: Templates[T]): Self = StObject.set(x, "templates", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setTemplatesUndefined: Self = StObject.set(x, "templates", js.undefined)
+        inline def setTemplatesUndefined: Self = StObject.set(x, "templates", js.undefined)
       }
     }
     
@@ -285,38 +250,28 @@ object Twitter {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setClassNames(value: ClassNames): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
+        inline def setClassNames(value: ClassNames): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
+        inline def setClassNamesUndefined: Self = StObject.set(x, "classNames", js.undefined)
         
-        @scala.inline
-        def setHighlight(value: Boolean): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
+        inline def setHighlight(value: Boolean): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
+        inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
         
-        @scala.inline
-        def setHint(value: Boolean): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
+        inline def setHint(value: Boolean): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
+        inline def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
         
-        @scala.inline
-        def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
+        inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
+        inline def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
       }
     }
     
@@ -368,56 +323,40 @@ object Twitter {
     }
     object Templates {
       
-      @scala.inline
-      def apply[T](): Templates[T] = {
+      inline def apply[T](): Templates[T] = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Templates[T]]
       }
       
-      @scala.inline
-      implicit class TemplatesMutableBuilder[Self <: Templates[?], T] (val x: Self & Templates[T]) extends AnyVal {
+      extension [Self <: Templates[?], T](x: Self & Templates[T]) {
         
-        @scala.inline
-        def setFooter(value: String | (js.Function2[/* query */ String, /* suggestions */ js.Array[T], String])): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
+        inline def setFooter(value: String | (js.Function2[/* query */ String, /* suggestions */ js.Array[T], String])): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFooterFunction2(value: (/* query */ String, /* suggestions */ js.Array[T]) => String): Self = StObject.set(x, "footer", js.Any.fromFunction2(value))
+        inline def setFooterFunction2(value: (/* query */ String, /* suggestions */ js.Array[T]) => String): Self = StObject.set(x, "footer", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
+        inline def setFooterUndefined: Self = StObject.set(x, "footer", js.undefined)
         
-        @scala.inline
-        def setHeader(value: String | (js.Function2[/* query */ String, /* suggestions */ js.Array[T], String])): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
+        inline def setHeader(value: String | (js.Function2[/* query */ String, /* suggestions */ js.Array[T], String])): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setHeaderFunction2(value: (/* query */ String, /* suggestions */ js.Array[T]) => String): Self = StObject.set(x, "header", js.Any.fromFunction2(value))
+        inline def setHeaderFunction2(value: (/* query */ String, /* suggestions */ js.Array[T]) => String): Self = StObject.set(x, "header", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
+        inline def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
         
-        @scala.inline
-        def setNotFound(value: String | (js.Function1[/* query */ String, String])): Self = StObject.set(x, "notFound", value.asInstanceOf[js.Any])
+        inline def setNotFound(value: String | (js.Function1[/* query */ String, String])): Self = StObject.set(x, "notFound", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNotFoundFunction1(value: /* query */ String => String): Self = StObject.set(x, "notFound", js.Any.fromFunction1(value))
+        inline def setNotFoundFunction1(value: /* query */ String => String): Self = StObject.set(x, "notFound", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setNotFoundUndefined: Self = StObject.set(x, "notFound", js.undefined)
+        inline def setNotFoundUndefined: Self = StObject.set(x, "notFound", js.undefined)
         
-        @scala.inline
-        def setPending(value: String | (js.Function1[/* query */ String, String])): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+        inline def setPending(value: String | (js.Function1[/* query */ String, String])): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPendingFunction1(value: /* query */ String => String): Self = StObject.set(x, "pending", js.Any.fromFunction1(value))
+        inline def setPendingFunction1(value: /* query */ String => String): Self = StObject.set(x, "pending", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setPendingUndefined: Self = StObject.set(x, "pending", js.undefined)
+        inline def setPendingUndefined: Self = StObject.set(x, "pending", js.undefined)
         
-        @scala.inline
-        def setSuggestion(value: /* suggestion */ T => String): Self = StObject.set(x, "suggestion", js.Any.fromFunction1(value))
+        inline def setSuggestion(value: /* suggestion */ T => String): Self = StObject.set(x, "suggestion", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setSuggestionUndefined: Self = StObject.set(x, "suggestion", js.undefined)
+        inline def setSuggestionUndefined: Self = StObject.set(x, "suggestion", js.undefined)
       }
     }
   }

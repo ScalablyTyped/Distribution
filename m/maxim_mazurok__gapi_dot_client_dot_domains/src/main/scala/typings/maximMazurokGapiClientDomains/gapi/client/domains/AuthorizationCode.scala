@@ -11,19 +11,15 @@ trait AuthorizationCode extends StObject {
 }
 object AuthorizationCode {
   
-  @scala.inline
-  def apply(): AuthorizationCode = {
+  inline def apply(): AuthorizationCode = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuthorizationCode]
   }
   
-  @scala.inline
-  implicit class AuthorizationCodeMutableBuilder[Self <: AuthorizationCode] (val x: Self) extends AnyVal {
+  extension [Self <: AuthorizationCode](x: Self) {
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
+    inline def setCodeUndefined: Self = StObject.set(x, "code", js.undefined)
   }
 }

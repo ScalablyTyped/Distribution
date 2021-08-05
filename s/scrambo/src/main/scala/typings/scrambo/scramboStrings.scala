@@ -13,81 +13,70 @@ object scramboStrings {
     extends StObject
        with NNN
        with ScrambleType
-  @scala.inline
-  def `222`: `222` = "222".asInstanceOf[`222`]
+  inline def `222`: `222` = "222".asInstanceOf[`222`]
   
   @js.native
   sealed trait `333`
     extends StObject
        with NNN
        with ScrambleType
-  @scala.inline
-  def `333`: `333` = "333".asInstanceOf[`333`]
+  inline def `333`: `333` = "333".asInstanceOf[`333`]
   
   @js.native
   sealed trait `444`
     extends StObject
        with NNN
        with ScrambleType
-  @scala.inline
-  def `444`: `444` = "444".asInstanceOf[`444`]
+  inline def `444`: `444` = "444".asInstanceOf[`444`]
   
   @js.native
   sealed trait `555`
     extends StObject
        with NNN
        with ScrambleType
-  @scala.inline
-  def `555`: `555` = "555".asInstanceOf[`555`]
+  inline def `555`: `555` = "555".asInstanceOf[`555`]
   
   @js.native
   sealed trait `666`
     extends StObject
        with NNN
        with ScrambleType
-  @scala.inline
-  def `666`: `666` = "666".asInstanceOf[`666`]
+  inline def `666`: `666` = "666".asInstanceOf[`666`]
   
   @js.native
   sealed trait `777`
     extends StObject
        with NNN
        with ScrambleType
-  @scala.inline
-  def `777`: `777` = "777".asInstanceOf[`777`]
+  inline def `777`: `777` = "777".asInstanceOf[`777`]
   
   @js.native
   sealed trait clock
     extends StObject
        with ScrambleType
-  @scala.inline
-  def clock: clock = "clock".asInstanceOf[clock]
+  inline def clock: clock = "clock".asInstanceOf[clock]
   
   @js.native
   sealed trait minx
     extends StObject
        with ScrambleType
-  @scala.inline
-  def minx: minx = "minx".asInstanceOf[minx]
+  inline def minx: minx = "minx".asInstanceOf[minx]
   
   @js.native
   sealed trait pyram
     extends StObject
        with ScrambleType
-  @scala.inline
-  def pyram: pyram = "pyram".asInstanceOf[pyram]
+  inline def pyram: pyram = "pyram".asInstanceOf[pyram]
   
   @js.native
   sealed trait skewb
     extends StObject
        with ScrambleType
-  @scala.inline
-  def skewb: skewb = "skewb".asInstanceOf[skewb]
+  inline def skewb: skewb = "skewb".asInstanceOf[skewb]
   
   @js.native
   sealed trait sq1
     extends StObject
        with ScrambleType
-  @scala.inline
-  def sq1: sq1 = "sq1".asInstanceOf[sq1]
+  inline def sq1: sq1 = "sq1".asInstanceOf[sq1]
 }

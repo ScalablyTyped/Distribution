@@ -21,44 +21,32 @@ trait ILightGroup extends StObject {
 }
 object ILightGroup {
   
-  @scala.inline
-  def apply(id: String, name: String, `type`: LightGroupType): ILightGroup = {
+  inline def apply(id: String, name: String, `type`: LightGroupType): ILightGroup = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILightGroup]
   }
   
-  @scala.inline
-  implicit class ILightGroupMutableBuilder[Self <: ILightGroup] (val x: Self) extends AnyVal {
+  extension [Self <: ILightGroup](x: Self) {
     
-    @scala.inline
-    def setAction(value: Bri): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: Bri): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+    inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
     
-    @scala.inline
-    def setClass(value: RoomType): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
+    inline def setClass(value: RoomType): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
+    inline def setClassUndefined: Self = StObject.set(x, "class", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLights(value: js.Array[String]): Self = StObject.set(x, "lights", value.asInstanceOf[js.Any])
+    inline def setLights(value: js.Array[String]): Self = StObject.set(x, "lights", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLightsUndefined: Self = StObject.set(x, "lights", js.undefined)
+    inline def setLightsUndefined: Self = StObject.set(x, "lights", js.undefined)
     
-    @scala.inline
-    def setLightsVarargs(value: String*): Self = StObject.set(x, "lights", js.Array(value :_*))
+    inline def setLightsVarargs(value: String*): Self = StObject.set(x, "lights", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: LightGroupType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: LightGroupType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

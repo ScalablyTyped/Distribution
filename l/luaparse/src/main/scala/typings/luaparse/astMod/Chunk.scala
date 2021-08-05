@@ -15,29 +15,22 @@ trait Chunk
 }
 object Chunk {
   
-  @scala.inline
-  def apply(body: js.Array[Statement]): Chunk = {
+  inline def apply(body: js.Array[Statement]): Chunk = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Chunk")
     __obj.asInstanceOf[Chunk]
   }
   
-  @scala.inline
-  implicit class ChunkMutableBuilder[Self <: Chunk] (val x: Self) extends AnyVal {
+  extension [Self <: Chunk](x: Self) {
     
-    @scala.inline
-    def setBody(value: js.Array[Statement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: js.Array[Statement]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBodyVarargs(value: Statement*): Self = StObject.set(x, "body", js.Array(value :_*))
+    inline def setBodyVarargs(value: Statement*): Self = StObject.set(x, "body", js.Array(value :_*))
     
-    @scala.inline
-    def setComments(value: js.Array[String]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
+    inline def setComments(value: js.Array[String]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
+    inline def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
     
-    @scala.inline
-    def setCommentsVarargs(value: String*): Self = StObject.set(x, "comments", js.Array(value :_*))
+    inline def setCommentsVarargs(value: String*): Self = StObject.set(x, "comments", js.Array(value :_*))
   }
 }

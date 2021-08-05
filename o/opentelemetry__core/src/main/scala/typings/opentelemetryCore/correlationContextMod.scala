@@ -12,9 +12,7 @@ object correlationContextMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getCorrelationContext(context: Context): js.UndefOr[CorrelationContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCorrelationContext")(context.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[CorrelationContext]]
+  inline def getCorrelationContext(context: Context): js.UndefOr[CorrelationContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCorrelationContext")(context.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[CorrelationContext]]
   
-  @scala.inline
-  def setCorrelationContext(context: Context, correlationContext: CorrelationContext): Context = (^.asInstanceOf[js.Dynamic].applyDynamic("setCorrelationContext")(context.asInstanceOf[js.Any], correlationContext.asInstanceOf[js.Any])).asInstanceOf[Context]
+  inline def setCorrelationContext(context: Context, correlationContext: CorrelationContext): Context = (^.asInstanceOf[js.Dynamic].applyDynamic("setCorrelationContext")(context.asInstanceOf[js.Any], correlationContext.asInstanceOf[js.Any])).asInstanceOf[Context]
 }

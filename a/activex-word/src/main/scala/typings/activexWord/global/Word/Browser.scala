@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Browser")
 @js.native
-class Browser protected ()
+/* private */ class Browser ()
   extends StObject
      with typings.activexWord.Word.Browser {
   
@@ -29,7 +29,7 @@ class Browser protected ()
   /* CompleteClass */
   var Target: WdBrowseTarget = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.Browser_typekey")
   var WordDotBrowser_typekey: typings.activexWord.Word.Browser = js.native
 }

@@ -108,8 +108,7 @@ trait LaunchConfiguration extends StObject {
 }
 object LaunchConfiguration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CreatedTime: TimestampType,
     ImageId: XmlStringMaxLen255,
     InstanceType: XmlStringMaxLen255,
@@ -119,124 +118,84 @@ object LaunchConfiguration {
     __obj.asInstanceOf[LaunchConfiguration]
   }
   
-  @scala.inline
-  implicit class LaunchConfigurationMutableBuilder[Self <: LaunchConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: LaunchConfiguration](x: Self) {
     
-    @scala.inline
-    def setAssociatePublicIpAddress(value: AssociatePublicIpAddress): Self = StObject.set(x, "AssociatePublicIpAddress", value.asInstanceOf[js.Any])
+    inline def setAssociatePublicIpAddress(value: AssociatePublicIpAddress): Self = StObject.set(x, "AssociatePublicIpAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociatePublicIpAddressUndefined: Self = StObject.set(x, "AssociatePublicIpAddress", js.undefined)
+    inline def setAssociatePublicIpAddressUndefined: Self = StObject.set(x, "AssociatePublicIpAddress", js.undefined)
     
-    @scala.inline
-    def setBlockDeviceMappings(value: BlockDeviceMappings): Self = StObject.set(x, "BlockDeviceMappings", value.asInstanceOf[js.Any])
+    inline def setBlockDeviceMappings(value: BlockDeviceMappings): Self = StObject.set(x, "BlockDeviceMappings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockDeviceMappingsUndefined: Self = StObject.set(x, "BlockDeviceMappings", js.undefined)
+    inline def setBlockDeviceMappingsUndefined: Self = StObject.set(x, "BlockDeviceMappings", js.undefined)
     
-    @scala.inline
-    def setBlockDeviceMappingsVarargs(value: BlockDeviceMapping*): Self = StObject.set(x, "BlockDeviceMappings", js.Array(value :_*))
+    inline def setBlockDeviceMappingsVarargs(value: BlockDeviceMapping*): Self = StObject.set(x, "BlockDeviceMappings", js.Array(value :_*))
     
-    @scala.inline
-    def setClassicLinkVPCId(value: XmlStringMaxLen255): Self = StObject.set(x, "ClassicLinkVPCId", value.asInstanceOf[js.Any])
+    inline def setClassicLinkVPCId(value: XmlStringMaxLen255): Self = StObject.set(x, "ClassicLinkVPCId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassicLinkVPCIdUndefined: Self = StObject.set(x, "ClassicLinkVPCId", js.undefined)
+    inline def setClassicLinkVPCIdUndefined: Self = StObject.set(x, "ClassicLinkVPCId", js.undefined)
     
-    @scala.inline
-    def setClassicLinkVPCSecurityGroups(value: ClassicLinkVPCSecurityGroups): Self = StObject.set(x, "ClassicLinkVPCSecurityGroups", value.asInstanceOf[js.Any])
+    inline def setClassicLinkVPCSecurityGroups(value: ClassicLinkVPCSecurityGroups): Self = StObject.set(x, "ClassicLinkVPCSecurityGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassicLinkVPCSecurityGroupsUndefined: Self = StObject.set(x, "ClassicLinkVPCSecurityGroups", js.undefined)
+    inline def setClassicLinkVPCSecurityGroupsUndefined: Self = StObject.set(x, "ClassicLinkVPCSecurityGroups", js.undefined)
     
-    @scala.inline
-    def setClassicLinkVPCSecurityGroupsVarargs(value: XmlStringMaxLen255*): Self = StObject.set(x, "ClassicLinkVPCSecurityGroups", js.Array(value :_*))
+    inline def setClassicLinkVPCSecurityGroupsVarargs(value: XmlStringMaxLen255*): Self = StObject.set(x, "ClassicLinkVPCSecurityGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setCreatedTime(value: TimestampType): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: TimestampType): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEbsOptimized(value: EbsOptimized): Self = StObject.set(x, "EbsOptimized", value.asInstanceOf[js.Any])
+    inline def setEbsOptimized(value: EbsOptimized): Self = StObject.set(x, "EbsOptimized", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEbsOptimizedUndefined: Self = StObject.set(x, "EbsOptimized", js.undefined)
+    inline def setEbsOptimizedUndefined: Self = StObject.set(x, "EbsOptimized", js.undefined)
     
-    @scala.inline
-    def setIamInstanceProfile(value: XmlStringMaxLen1600): Self = StObject.set(x, "IamInstanceProfile", value.asInstanceOf[js.Any])
+    inline def setIamInstanceProfile(value: XmlStringMaxLen1600): Self = StObject.set(x, "IamInstanceProfile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIamInstanceProfileUndefined: Self = StObject.set(x, "IamInstanceProfile", js.undefined)
+    inline def setIamInstanceProfileUndefined: Self = StObject.set(x, "IamInstanceProfile", js.undefined)
     
-    @scala.inline
-    def setImageId(value: XmlStringMaxLen255): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
+    inline def setImageId(value: XmlStringMaxLen255): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceMonitoring(value: InstanceMonitoring): Self = StObject.set(x, "InstanceMonitoring", value.asInstanceOf[js.Any])
+    inline def setInstanceMonitoring(value: InstanceMonitoring): Self = StObject.set(x, "InstanceMonitoring", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceMonitoringUndefined: Self = StObject.set(x, "InstanceMonitoring", js.undefined)
+    inline def setInstanceMonitoringUndefined: Self = StObject.set(x, "InstanceMonitoring", js.undefined)
     
-    @scala.inline
-    def setInstanceType(value: XmlStringMaxLen255): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: XmlStringMaxLen255): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKernelId(value: XmlStringMaxLen255): Self = StObject.set(x, "KernelId", value.asInstanceOf[js.Any])
+    inline def setKernelId(value: XmlStringMaxLen255): Self = StObject.set(x, "KernelId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKernelIdUndefined: Self = StObject.set(x, "KernelId", js.undefined)
+    inline def setKernelIdUndefined: Self = StObject.set(x, "KernelId", js.undefined)
     
-    @scala.inline
-    def setKeyName(value: XmlStringMaxLen255): Self = StObject.set(x, "KeyName", value.asInstanceOf[js.Any])
+    inline def setKeyName(value: XmlStringMaxLen255): Self = StObject.set(x, "KeyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyNameUndefined: Self = StObject.set(x, "KeyName", js.undefined)
+    inline def setKeyNameUndefined: Self = StObject.set(x, "KeyName", js.undefined)
     
-    @scala.inline
-    def setLaunchConfigurationARN(value: ResourceName): Self = StObject.set(x, "LaunchConfigurationARN", value.asInstanceOf[js.Any])
+    inline def setLaunchConfigurationARN(value: ResourceName): Self = StObject.set(x, "LaunchConfigurationARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunchConfigurationARNUndefined: Self = StObject.set(x, "LaunchConfigurationARN", js.undefined)
+    inline def setLaunchConfigurationARNUndefined: Self = StObject.set(x, "LaunchConfigurationARN", js.undefined)
     
-    @scala.inline
-    def setLaunchConfigurationName(value: XmlStringMaxLen255): Self = StObject.set(x, "LaunchConfigurationName", value.asInstanceOf[js.Any])
+    inline def setLaunchConfigurationName(value: XmlStringMaxLen255): Self = StObject.set(x, "LaunchConfigurationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataOptions(value: InstanceMetadataOptions): Self = StObject.set(x, "MetadataOptions", value.asInstanceOf[js.Any])
+    inline def setMetadataOptions(value: InstanceMetadataOptions): Self = StObject.set(x, "MetadataOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataOptionsUndefined: Self = StObject.set(x, "MetadataOptions", js.undefined)
+    inline def setMetadataOptionsUndefined: Self = StObject.set(x, "MetadataOptions", js.undefined)
     
-    @scala.inline
-    def setPlacementTenancy(value: XmlStringMaxLen64): Self = StObject.set(x, "PlacementTenancy", value.asInstanceOf[js.Any])
+    inline def setPlacementTenancy(value: XmlStringMaxLen64): Self = StObject.set(x, "PlacementTenancy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacementTenancyUndefined: Self = StObject.set(x, "PlacementTenancy", js.undefined)
+    inline def setPlacementTenancyUndefined: Self = StObject.set(x, "PlacementTenancy", js.undefined)
     
-    @scala.inline
-    def setRamdiskId(value: XmlStringMaxLen255): Self = StObject.set(x, "RamdiskId", value.asInstanceOf[js.Any])
+    inline def setRamdiskId(value: XmlStringMaxLen255): Self = StObject.set(x, "RamdiskId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRamdiskIdUndefined: Self = StObject.set(x, "RamdiskId", js.undefined)
+    inline def setRamdiskIdUndefined: Self = StObject.set(x, "RamdiskId", js.undefined)
     
-    @scala.inline
-    def setSecurityGroups(value: SecurityGroups): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
+    inline def setSecurityGroups(value: SecurityGroups): Self = StObject.set(x, "SecurityGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
+    inline def setSecurityGroupsUndefined: Self = StObject.set(x, "SecurityGroups", js.undefined)
     
-    @scala.inline
-    def setSecurityGroupsVarargs(value: XmlString*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
+    inline def setSecurityGroupsVarargs(value: XmlString*): Self = StObject.set(x, "SecurityGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setSpotPrice(value: SpotPrice): Self = StObject.set(x, "SpotPrice", value.asInstanceOf[js.Any])
+    inline def setSpotPrice(value: SpotPrice): Self = StObject.set(x, "SpotPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpotPriceUndefined: Self = StObject.set(x, "SpotPrice", js.undefined)
+    inline def setSpotPriceUndefined: Self = StObject.set(x, "SpotPrice", js.undefined)
     
-    @scala.inline
-    def setUserData(value: XmlStringUserData): Self = StObject.set(x, "UserData", value.asInstanceOf[js.Any])
+    inline def setUserData(value: XmlStringUserData): Self = StObject.set(x, "UserData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserDataUndefined: Self = StObject.set(x, "UserData", js.undefined)
+    inline def setUserDataUndefined: Self = StObject.set(x, "UserData", js.undefined)
   }
 }

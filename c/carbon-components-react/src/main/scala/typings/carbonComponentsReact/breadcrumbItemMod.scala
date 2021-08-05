@@ -24,26 +24,20 @@ object breadcrumbItemMod extends Shortcut {
   }
   object BreadcrumbItemProps {
     
-    @scala.inline
-    def apply(): BreadcrumbItemProps = {
+    inline def apply(): BreadcrumbItemProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BreadcrumbItemProps]
     }
     
-    @scala.inline
-    implicit class BreadcrumbItemPropsMutableBuilder[Self <: BreadcrumbItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: BreadcrumbItemProps](x: Self) {
       
-      @scala.inline
-      def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+      inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
+      inline def setHrefUndefined: Self = StObject.set(x, "href", js.undefined)
       
-      @scala.inline
-      def setIsCurrentPage(value: Boolean): Self = StObject.set(x, "isCurrentPage", value.asInstanceOf[js.Any])
+      inline def setIsCurrentPage(value: Boolean): Self = StObject.set(x, "isCurrentPage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsCurrentPageUndefined: Self = StObject.set(x, "isCurrentPage", js.undefined)
+      inline def setIsCurrentPageUndefined: Self = StObject.set(x, "isCurrentPage", js.undefined)
     }
   }
   

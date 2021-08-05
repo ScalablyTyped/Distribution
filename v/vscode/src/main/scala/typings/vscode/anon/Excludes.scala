@@ -12,22 +12,17 @@ trait Excludes extends StObject {
 }
 object Excludes {
   
-  @scala.inline
-  def apply(excludes: js.Array[String], recursive: Boolean): Excludes = {
+  inline def apply(excludes: js.Array[String], recursive: Boolean): Excludes = {
     val __obj = js.Dynamic.literal(excludes = excludes.asInstanceOf[js.Any], recursive = recursive.asInstanceOf[js.Any])
     __obj.asInstanceOf[Excludes]
   }
   
-  @scala.inline
-  implicit class ExcludesMutableBuilder[Self <: Excludes] (val x: Self) extends AnyVal {
+  extension [Self <: Excludes](x: Self) {
     
-    @scala.inline
-    def setExcludes(value: js.Array[String]): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
+    inline def setExcludes(value: js.Array[String]): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcludesVarargs(value: String*): Self = StObject.set(x, "excludes", js.Array(value :_*))
+    inline def setExcludesVarargs(value: String*): Self = StObject.set(x, "excludes", js.Array(value :_*))
     
-    @scala.inline
-    def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
+    inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
   }
 }

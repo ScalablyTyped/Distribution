@@ -24,8 +24,7 @@ trait HighlightsRepositoryHighlightsTrayResponseTvChannel extends StObject {
 }
 object HighlightsRepositoryHighlightsTrayResponseTvChannel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     id: String,
     items: js.Array[HighlightsRepositoryHighlightsTrayResponseItemsItem],
     max_id: Null,
@@ -40,34 +39,24 @@ object HighlightsRepositoryHighlightsTrayResponseTvChannel {
     __obj.asInstanceOf[HighlightsRepositoryHighlightsTrayResponseTvChannel]
   }
   
-  @scala.inline
-  implicit class HighlightsRepositoryHighlightsTrayResponseTvChannelMutableBuilder[Self <: HighlightsRepositoryHighlightsTrayResponseTvChannel] (val x: Self) extends AnyVal {
+  extension [Self <: HighlightsRepositoryHighlightsTrayResponseTvChannel](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItems(value: js.Array[HighlightsRepositoryHighlightsTrayResponseItemsItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[HighlightsRepositoryHighlightsTrayResponseItemsItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: HighlightsRepositoryHighlightsTrayResponseItemsItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: HighlightsRepositoryHighlightsTrayResponseItemsItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setMax_id(value: Null): Self = StObject.set(x, "max_id", value.asInstanceOf[js.Any])
+    inline def setMax_id(value: Null): Self = StObject.set(x, "max_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMore_available(value: Boolean): Self = StObject.set(x, "more_available", value.asInstanceOf[js.Any])
+    inline def setMore_available(value: Boolean): Self = StObject.set(x, "more_available", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeen_state(value: HighlightsRepositoryHighlightsTrayResponseSeenState): Self = StObject.set(x, "seen_state", value.asInstanceOf[js.Any])
+    inline def setSeen_state(value: HighlightsRepositoryHighlightsTrayResponseSeenState): Self = StObject.set(x, "seen_state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser_dict(value: HighlightsRepositoryHighlightsTrayResponseUserDict): Self = StObject.set(x, "user_dict", value.asInstanceOf[js.Any])
+    inline def setUser_dict(value: HighlightsRepositoryHighlightsTrayResponseUserDict): Self = StObject.set(x, "user_dict", value.asInstanceOf[js.Any])
   }
 }

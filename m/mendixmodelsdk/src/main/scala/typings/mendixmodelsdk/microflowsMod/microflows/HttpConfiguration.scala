@@ -121,8 +121,7 @@ object HttpConfiguration {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): HttpConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[HttpConfiguration]
+  inline def create(model: IModel): HttpConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[HttpConfiguration]
   
   /**
     * Creates and returns a new HttpConfiguration instance in the SDK and on the server.
@@ -133,8 +132,7 @@ object HttpConfiguration {
     *  6.0.0 to 6.5.0
     */
   /* static member */
-  @scala.inline
-  def createIn(container: WebServiceCallAction): HttpConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[HttpConfiguration]
+  inline def createIn(container: WebServiceCallAction): HttpConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[HttpConfiguration]
   
   /**
     * Creates and returns a new HttpConfiguration instance in the SDK and on the server.
@@ -145,8 +143,7 @@ object HttpConfiguration {
     *  8.0.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInConsumedODataServiceUnderHttpConfiguration(container: ConsumedODataService): HttpConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConsumedODataServiceUnderHttpConfiguration")(container.asInstanceOf[js.Any]).asInstanceOf[HttpConfiguration]
+  inline def createInConsumedODataServiceUnderHttpConfiguration(container: ConsumedODataService): HttpConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createInConsumedODataServiceUnderHttpConfiguration")(container.asInstanceOf[js.Any]).asInstanceOf[HttpConfiguration]
   
   /**
     * Creates and returns a new HttpConfiguration instance in the SDK and on the server.
@@ -157,8 +154,7 @@ object HttpConfiguration {
     *  6.6.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInRestCallActionUnderHttpConfiguration(container: RestCallAction): HttpConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestCallActionUnderHttpConfiguration")(container.asInstanceOf[js.Any]).asInstanceOf[HttpConfiguration]
+  inline def createInRestCallActionUnderHttpConfiguration(container: RestCallAction): HttpConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestCallActionUnderHttpConfiguration")(container.asInstanceOf[js.Any]).asInstanceOf[HttpConfiguration]
   
   /**
     * Creates and returns a new HttpConfiguration instance in the SDK and on the server.
@@ -166,20 +162,17 @@ object HttpConfiguration {
     * of the parent WebServiceCallAction element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInWebServiceCallActionUnderHttpConfiguration(container: WebServiceCallAction): HttpConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderHttpConfiguration")(container.asInstanceOf[js.Any]).asInstanceOf[HttpConfiguration]
+  inline def createInWebServiceCallActionUnderHttpConfiguration(container: WebServiceCallAction): HttpConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderHttpConfiguration")(container.asInstanceOf[js.Any]).asInstanceOf[HttpConfiguration]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.HttpConfiguration.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.HttpConfiguration.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

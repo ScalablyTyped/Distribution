@@ -12,16 +12,14 @@ object treeItemExpanderIconMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def TreeItemExpanderIcon(hasClassNameChildrenRotatedProps: TreeItemExpanderIconProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("TreeItemExpanderIcon")(hasClassNameChildrenRotatedProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def TreeItemExpanderIcon(hasClassNameChildrenRotatedProps: TreeItemExpanderIconProps): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("TreeItemExpanderIcon")(hasClassNameChildrenRotatedProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
   trait TreeItemExpanderIconProps
     extends StObject
        with IconRotatorBaseProps
   object TreeItemExpanderIconProps {
     
-    @scala.inline
-    def apply(rotated: Boolean): TreeItemExpanderIconProps = {
+    inline def apply(rotated: Boolean): TreeItemExpanderIconProps = {
       val __obj = js.Dynamic.literal(rotated = rotated.asInstanceOf[js.Any])
       __obj.asInstanceOf[TreeItemExpanderIconProps]
     }

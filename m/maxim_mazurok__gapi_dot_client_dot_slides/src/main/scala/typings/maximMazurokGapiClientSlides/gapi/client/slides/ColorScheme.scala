@@ -11,22 +11,17 @@ trait ColorScheme extends StObject {
 }
 object ColorScheme {
   
-  @scala.inline
-  def apply(): ColorScheme = {
+  inline def apply(): ColorScheme = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColorScheme]
   }
   
-  @scala.inline
-  implicit class ColorSchemeMutableBuilder[Self <: ColorScheme] (val x: Self) extends AnyVal {
+  extension [Self <: ColorScheme](x: Self) {
     
-    @scala.inline
-    def setColors(value: js.Array[ThemeColorPair]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    inline def setColors(value: js.Array[ThemeColorPair]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+    inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
     
-    @scala.inline
-    def setColorsVarargs(value: ThemeColorPair*): Self = StObject.set(x, "colors", js.Array(value :_*))
+    inline def setColorsVarargs(value: ThemeColorPair*): Self = StObject.set(x, "colors", js.Array(value :_*))
   }
 }

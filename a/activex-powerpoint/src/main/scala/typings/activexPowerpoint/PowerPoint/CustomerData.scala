@@ -19,13 +19,12 @@ trait CustomerData extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.CustomerData_typekey")
+  /* private */ @JSName("PowerPoint.CustomerData_typekey")
   var PowerPointDotCustomerData_typekey: CustomerData
 }
 object CustomerData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Add: () => CustomXMLPart,
     Application: Application,
     Count: Double,
@@ -39,28 +38,20 @@ object CustomerData {
     __obj.asInstanceOf[CustomerData]
   }
   
-  @scala.inline
-  implicit class CustomerDataMutableBuilder[Self <: CustomerData] (val x: Self) extends AnyVal {
+  extension [Self <: CustomerData](x: Self) {
     
-    @scala.inline
-    def setAdd(value: () => CustomXMLPart): Self = StObject.set(x, "Add", js.Any.fromFunction0(value))
+    inline def setAdd(value: () => CustomXMLPart): Self = StObject.set(x, "Add", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: String => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction1(value))
+    inline def setDelete(value: String => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setItem(value: String => CustomXMLPart): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
+    inline def setItem(value: String => CustomXMLPart): Self = StObject.set(x, "Item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotCustomerData_typekey(value: CustomerData): Self = StObject.set(x, "PowerPoint.CustomerData_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotCustomerData_typekey(value: CustomerData): Self = StObject.set(x, "PowerPoint.CustomerData_typekey", value.asInstanceOf[js.Any])
   }
 }

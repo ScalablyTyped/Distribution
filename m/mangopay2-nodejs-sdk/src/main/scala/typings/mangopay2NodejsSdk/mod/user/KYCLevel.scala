@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait KYCLevel extends StObject
 object KYCLevel {
   
-  @scala.inline
-  def LIGHT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LIGHT = "LIGHT".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LIGHT]
+  inline def LIGHT: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LIGHT = "LIGHT".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.LIGHT]
   
-  @scala.inline
-  def REGULAR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REGULAR = "REGULAR".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REGULAR]
+  inline def REGULAR: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REGULAR = "REGULAR".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.REGULAR]
 }

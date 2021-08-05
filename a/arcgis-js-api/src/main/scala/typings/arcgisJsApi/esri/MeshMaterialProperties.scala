@@ -61,52 +61,37 @@ trait MeshMaterialProperties extends StObject {
 }
 object MeshMaterialProperties {
   
-  @scala.inline
-  def apply(): MeshMaterialProperties = {
+  inline def apply(): MeshMaterialProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MeshMaterialProperties]
   }
   
-  @scala.inline
-  implicit class MeshMaterialPropertiesMutableBuilder[Self <: MeshMaterialProperties] (val x: Self) extends AnyVal {
+  extension [Self <: MeshMaterialProperties](x: Self) {
     
-    @scala.inline
-    def setAlphaCutoff(value: Double): Self = StObject.set(x, "alphaCutoff", value.asInstanceOf[js.Any])
+    inline def setAlphaCutoff(value: Double): Self = StObject.set(x, "alphaCutoff", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphaCutoffUndefined: Self = StObject.set(x, "alphaCutoff", js.undefined)
+    inline def setAlphaCutoffUndefined: Self = StObject.set(x, "alphaCutoff", js.undefined)
     
-    @scala.inline
-    def setAlphaMode(value: auto | blend | opaque | mask): Self = StObject.set(x, "alphaMode", value.asInstanceOf[js.Any])
+    inline def setAlphaMode(value: auto | blend | opaque | mask): Self = StObject.set(x, "alphaMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlphaModeUndefined: Self = StObject.set(x, "alphaMode", js.undefined)
+    inline def setAlphaModeUndefined: Self = StObject.set(x, "alphaMode", js.undefined)
     
-    @scala.inline
-    def setColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorTexture(value: MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String): Self = StObject.set(x, "colorTexture", value.asInstanceOf[js.Any])
+    inline def setColorTexture(value: MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String): Self = StObject.set(x, "colorTexture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorTextureUndefined: Self = StObject.set(x, "colorTexture", js.undefined)
+    inline def setColorTextureUndefined: Self = StObject.set(x, "colorTexture", js.undefined)
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
+    inline def setColorVarargs(value: Double*): Self = StObject.set(x, "color", js.Array(value :_*))
     
-    @scala.inline
-    def setDoubleSided(value: Boolean): Self = StObject.set(x, "doubleSided", value.asInstanceOf[js.Any])
+    inline def setDoubleSided(value: Boolean): Self = StObject.set(x, "doubleSided", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDoubleSidedUndefined: Self = StObject.set(x, "doubleSided", js.undefined)
+    inline def setDoubleSidedUndefined: Self = StObject.set(x, "doubleSided", js.undefined)
     
-    @scala.inline
-    def setNormalTexture(value: MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String): Self = StObject.set(x, "normalTexture", value.asInstanceOf[js.Any])
+    inline def setNormalTexture(value: MeshTextureProperties | HTMLImageElement | HTMLCanvasElement | ImageData | String): Self = StObject.set(x, "normalTexture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalTextureUndefined: Self = StObject.set(x, "normalTexture", js.undefined)
+    inline def setNormalTextureUndefined: Self = StObject.set(x, "normalTexture", js.undefined)
   }
 }

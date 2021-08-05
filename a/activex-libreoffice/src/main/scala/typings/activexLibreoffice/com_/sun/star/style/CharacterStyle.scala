@@ -53,8 +53,7 @@ trait CharacterStyle
 }
 object CharacterStyle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CharAutoKerning: Boolean,
     CharBackColor: Color,
     CharBackTransparent: Boolean,
@@ -166,28 +165,20 @@ object CharacterStyle {
     __obj.asInstanceOf[CharacterStyle]
   }
   
-  @scala.inline
-  implicit class CharacterStyleMutableBuilder[Self <: CharacterStyle] (val x: Self) extends AnyVal {
+  extension [Self <: CharacterStyle](x: Self) {
     
-    @scala.inline
-    def setCharDiffHeight(value: Double): Self = StObject.set(x, "CharDiffHeight", value.asInstanceOf[js.Any])
+    inline def setCharDiffHeight(value: Double): Self = StObject.set(x, "CharDiffHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharDiffHeightAsian(value: Double): Self = StObject.set(x, "CharDiffHeightAsian", value.asInstanceOf[js.Any])
+    inline def setCharDiffHeightAsian(value: Double): Self = StObject.set(x, "CharDiffHeightAsian", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharDiffHeightComplex(value: Double): Self = StObject.set(x, "CharDiffHeightComplex", value.asInstanceOf[js.Any])
+    inline def setCharDiffHeightComplex(value: Double): Self = StObject.set(x, "CharDiffHeightComplex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharPropHeight(value: Double): Self = StObject.set(x, "CharPropHeight", value.asInstanceOf[js.Any])
+    inline def setCharPropHeight(value: Double): Self = StObject.set(x, "CharPropHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharPropHeightAsian(value: Double): Self = StObject.set(x, "CharPropHeightAsian", value.asInstanceOf[js.Any])
+    inline def setCharPropHeightAsian(value: Double): Self = StObject.set(x, "CharPropHeightAsian", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharPropHeightComplex(value: Double): Self = StObject.set(x, "CharPropHeightComplex", value.asInstanceOf[js.Any])
+    inline def setCharPropHeightComplex(value: Double): Self = StObject.set(x, "CharPropHeightComplex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
+    inline def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
   }
 }

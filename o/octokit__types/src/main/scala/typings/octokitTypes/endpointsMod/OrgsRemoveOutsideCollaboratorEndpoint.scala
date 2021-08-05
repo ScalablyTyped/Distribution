@@ -13,20 +13,16 @@ trait OrgsRemoveOutsideCollaboratorEndpoint extends StObject {
 }
 object OrgsRemoveOutsideCollaboratorEndpoint {
   
-  @scala.inline
-  def apply(org_ : String, username: String): OrgsRemoveOutsideCollaboratorEndpoint = {
+  inline def apply(org_ : String, username: String): OrgsRemoveOutsideCollaboratorEndpoint = {
     val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[OrgsRemoveOutsideCollaboratorEndpoint]
   }
   
-  @scala.inline
-  implicit class OrgsRemoveOutsideCollaboratorEndpointMutableBuilder[Self <: OrgsRemoveOutsideCollaboratorEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: OrgsRemoveOutsideCollaboratorEndpoint](x: Self) {
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+    inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }
 }

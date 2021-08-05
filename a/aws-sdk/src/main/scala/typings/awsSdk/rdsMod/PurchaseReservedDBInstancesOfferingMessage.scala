@@ -25,37 +25,27 @@ trait PurchaseReservedDBInstancesOfferingMessage extends StObject {
 }
 object PurchaseReservedDBInstancesOfferingMessage {
   
-  @scala.inline
-  def apply(ReservedDBInstancesOfferingId: String): PurchaseReservedDBInstancesOfferingMessage = {
+  inline def apply(ReservedDBInstancesOfferingId: String): PurchaseReservedDBInstancesOfferingMessage = {
     val __obj = js.Dynamic.literal(ReservedDBInstancesOfferingId = ReservedDBInstancesOfferingId.asInstanceOf[js.Any])
     __obj.asInstanceOf[PurchaseReservedDBInstancesOfferingMessage]
   }
   
-  @scala.inline
-  implicit class PurchaseReservedDBInstancesOfferingMessageMutableBuilder[Self <: PurchaseReservedDBInstancesOfferingMessage] (val x: Self) extends AnyVal {
+  extension [Self <: PurchaseReservedDBInstancesOfferingMessage](x: Self) {
     
-    @scala.inline
-    def setDBInstanceCount(value: IntegerOptional): Self = StObject.set(x, "DBInstanceCount", value.asInstanceOf[js.Any])
+    inline def setDBInstanceCount(value: IntegerOptional): Self = StObject.set(x, "DBInstanceCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDBInstanceCountUndefined: Self = StObject.set(x, "DBInstanceCount", js.undefined)
+    inline def setDBInstanceCountUndefined: Self = StObject.set(x, "DBInstanceCount", js.undefined)
     
-    @scala.inline
-    def setReservedDBInstanceId(value: String): Self = StObject.set(x, "ReservedDBInstanceId", value.asInstanceOf[js.Any])
+    inline def setReservedDBInstanceId(value: String): Self = StObject.set(x, "ReservedDBInstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedDBInstanceIdUndefined: Self = StObject.set(x, "ReservedDBInstanceId", js.undefined)
+    inline def setReservedDBInstanceIdUndefined: Self = StObject.set(x, "ReservedDBInstanceId", js.undefined)
     
-    @scala.inline
-    def setReservedDBInstancesOfferingId(value: String): Self = StObject.set(x, "ReservedDBInstancesOfferingId", value.asInstanceOf[js.Any])
+    inline def setReservedDBInstancesOfferingId(value: String): Self = StObject.set(x, "ReservedDBInstancesOfferingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

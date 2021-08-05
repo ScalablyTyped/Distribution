@@ -121,8 +121,7 @@ object ASPxClientHtmlEditor {
     * @param obj The client object to be type cast.
     */
   /* static member */
-  @scala.inline
-  def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientHtmlEditor = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientHtmlEditor]
+  inline def Cast(obj: js.Any): typings.devexpressWeb.ASPxClientHtmlEditor = ^.asInstanceOf[js.Dynamic].applyDynamic("Cast")(obj.asInstanceOf[js.Any]).asInstanceOf[typings.devexpressWeb.ASPxClientHtmlEditor]
   
   /**
     * Programmatically closes a custom dialog, supplying it with specific parameters.
@@ -130,8 +129,7 @@ object ASPxClientHtmlEditor {
     * @param data An object representing custom data associated with a custom dialog.
     */
   /* static member */
-  @scala.inline
-  def CustomDialogComplete(status: js.Any, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CustomDialogComplete")(status.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def CustomDialogComplete(status: js.Any, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CustomDialogComplete")(status.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Highlights the text with the specified text color and background color.
@@ -141,12 +139,8 @@ object ASPxClientHtmlEditor {
     * @param backgroundColor A string value specifying the background color.
     */
   /* static member */
-  @scala.inline
-  def HighlightText(text: String, searchContainer: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("HighlightText")(text.asInstanceOf[js.Any], searchContainer.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def HighlightText(text: String, searchContainer: js.Any, color: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("HighlightText")(text.asInstanceOf[js.Any], searchContainer.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def HighlightText(text: String, searchContainer: js.Any, color: String, backgroundColor: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("HighlightText")(text.asInstanceOf[js.Any], searchContainer.asInstanceOf[js.Any], color.asInstanceOf[js.Any], backgroundColor.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def HighlightText(text: String, searchContainer: js.Any, color: Unit, backgroundColor: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("HighlightText")(text.asInstanceOf[js.Any], searchContainer.asInstanceOf[js.Any], color.asInstanceOf[js.Any], backgroundColor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def HighlightText(text: String, searchContainer: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("HighlightText")(text.asInstanceOf[js.Any], searchContainer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def HighlightText(text: String, searchContainer: js.Any, color: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("HighlightText")(text.asInstanceOf[js.Any], searchContainer.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def HighlightText(text: String, searchContainer: js.Any, color: String, backgroundColor: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("HighlightText")(text.asInstanceOf[js.Any], searchContainer.asInstanceOf[js.Any], color.asInstanceOf[js.Any], backgroundColor.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def HighlightText(text: String, searchContainer: js.Any, color: Unit, backgroundColor: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("HighlightText")(text.asInstanceOf[js.Any], searchContainer.asInstanceOf[js.Any], color.asInstanceOf[js.Any], backgroundColor.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -27,8 +27,7 @@ trait LoggerHttpOptions extends StObject {
 }
 object LoggerHttpOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     auth: String,
     headers: js.Any,
     hostname: String,
@@ -42,34 +41,24 @@ object LoggerHttpOptions {
     __obj.asInstanceOf[LoggerHttpOptions]
   }
   
-  @scala.inline
-  implicit class LoggerHttpOptionsMutableBuilder[Self <: LoggerHttpOptions] (val x: Self) extends AnyVal {
+  extension [Self <: LoggerHttpOptions](x: Self) {
     
-    @scala.inline
-    def setAgent(value: `false`): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
+    inline def setAgent(value: `false`): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Any): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+    inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

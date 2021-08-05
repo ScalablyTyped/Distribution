@@ -30,8 +30,7 @@ trait AutocompletePrediction extends StObject {
 }
 object AutocompletePrediction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     description: String,
     matched_substrings: js.Array[PredictionSubstring],
     place_id: String,
@@ -44,49 +43,34 @@ object AutocompletePrediction {
     __obj.asInstanceOf[AutocompletePrediction]
   }
   
-  @scala.inline
-  implicit class AutocompletePredictionMutableBuilder[Self <: AutocompletePrediction] (val x: Self) extends AnyVal {
+  extension [Self <: AutocompletePrediction](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistance_meters(value: Double): Self = StObject.set(x, "distance_meters", value.asInstanceOf[js.Any])
+    inline def setDistance_meters(value: Double): Self = StObject.set(x, "distance_meters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistance_metersUndefined: Self = StObject.set(x, "distance_meters", js.undefined)
+    inline def setDistance_metersUndefined: Self = StObject.set(x, "distance_meters", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setMatched_substrings(value: js.Array[PredictionSubstring]): Self = StObject.set(x, "matched_substrings", value.asInstanceOf[js.Any])
+    inline def setMatched_substrings(value: js.Array[PredictionSubstring]): Self = StObject.set(x, "matched_substrings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatched_substringsVarargs(value: PredictionSubstring*): Self = StObject.set(x, "matched_substrings", js.Array(value :_*))
+    inline def setMatched_substringsVarargs(value: PredictionSubstring*): Self = StObject.set(x, "matched_substrings", js.Array(value :_*))
     
-    @scala.inline
-    def setPlace_id(value: String): Self = StObject.set(x, "place_id", value.asInstanceOf[js.Any])
+    inline def setPlace_id(value: String): Self = StObject.set(x, "place_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReference(value: String): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
+    inline def setReference(value: String): Self = StObject.set(x, "reference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructured_formatting(value: AutocompleteStructuredFormatting): Self = StObject.set(x, "structured_formatting", value.asInstanceOf[js.Any])
+    inline def setStructured_formatting(value: AutocompleteStructuredFormatting): Self = StObject.set(x, "structured_formatting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTerms(value: js.Array[PredictionTerm]): Self = StObject.set(x, "terms", value.asInstanceOf[js.Any])
+    inline def setTerms(value: js.Array[PredictionTerm]): Self = StObject.set(x, "terms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTermsVarargs(value: PredictionTerm*): Self = StObject.set(x, "terms", js.Array(value :_*))
+    inline def setTermsVarargs(value: PredictionTerm*): Self = StObject.set(x, "terms", js.Array(value :_*))
     
-    @scala.inline
-    def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Array[String]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
+    inline def setTypesVarargs(value: String*): Self = StObject.set(x, "types", js.Array(value :_*))
   }
 }

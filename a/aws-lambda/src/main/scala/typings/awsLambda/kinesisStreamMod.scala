@@ -13,20 +13,16 @@ object kinesisStreamMod {
   }
   object KinesisStreamEvent {
     
-    @scala.inline
-    def apply(Records: js.Array[KinesisStreamRecord]): KinesisStreamEvent = {
+    inline def apply(Records: js.Array[KinesisStreamRecord]): KinesisStreamEvent = {
       val __obj = js.Dynamic.literal(Records = Records.asInstanceOf[js.Any])
       __obj.asInstanceOf[KinesisStreamEvent]
     }
     
-    @scala.inline
-    implicit class KinesisStreamEventMutableBuilder[Self <: KinesisStreamEvent] (val x: Self) extends AnyVal {
+    extension [Self <: KinesisStreamEvent](x: Self) {
       
-      @scala.inline
-      def setRecords(value: js.Array[KinesisStreamRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
+      inline def setRecords(value: js.Array[KinesisStreamRecord]): Self = StObject.set(x, "Records", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRecordsVarargs(value: KinesisStreamRecord*): Self = StObject.set(x, "Records", js.Array(value :_*))
+      inline def setRecordsVarargs(value: KinesisStreamRecord*): Self = StObject.set(x, "Records", js.Array(value :_*))
     }
   }
   
@@ -52,8 +48,7 @@ object kinesisStreamMod {
   }
   object KinesisStreamRecord {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       awsRegion: String,
       eventID: String,
       eventName: String,
@@ -67,32 +62,23 @@ object kinesisStreamMod {
       __obj.asInstanceOf[KinesisStreamRecord]
     }
     
-    @scala.inline
-    implicit class KinesisStreamRecordMutableBuilder[Self <: KinesisStreamRecord] (val x: Self) extends AnyVal {
+    extension [Self <: KinesisStreamRecord](x: Self) {
       
-      @scala.inline
-      def setAwsRegion(value: String): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
+      inline def setAwsRegion(value: String): Self = StObject.set(x, "awsRegion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventID(value: String): Self = StObject.set(x, "eventID", value.asInstanceOf[js.Any])
+      inline def setEventID(value: String): Self = StObject.set(x, "eventID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
+      inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventSource(value: String): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
+      inline def setEventSource(value: String): Self = StObject.set(x, "eventSource", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventSourceARN(value: String): Self = StObject.set(x, "eventSourceARN", value.asInstanceOf[js.Any])
+      inline def setEventSourceARN(value: String): Self = StObject.set(x, "eventSourceARN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventVersion(value: String): Self = StObject.set(x, "eventVersion", value.asInstanceOf[js.Any])
+      inline def setEventVersion(value: String): Self = StObject.set(x, "eventVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvokeIdentityArn(value: String): Self = StObject.set(x, "invokeIdentityArn", value.asInstanceOf[js.Any])
+      inline def setInvokeIdentityArn(value: String): Self = StObject.set(x, "invokeIdentityArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKinesis(value: KinesisStreamRecordPayload): Self = StObject.set(x, "kinesis", value.asInstanceOf[js.Any])
+      inline def setKinesis(value: KinesisStreamRecordPayload): Self = StObject.set(x, "kinesis", value.asInstanceOf[js.Any])
     }
   }
   
@@ -110,8 +96,7 @@ object kinesisStreamMod {
   }
   object KinesisStreamRecordPayload {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       approximateArrivalTimestamp: Double,
       data: String,
       kinesisSchemaVersion: String,
@@ -122,23 +107,17 @@ object kinesisStreamMod {
       __obj.asInstanceOf[KinesisStreamRecordPayload]
     }
     
-    @scala.inline
-    implicit class KinesisStreamRecordPayloadMutableBuilder[Self <: KinesisStreamRecordPayload] (val x: Self) extends AnyVal {
+    extension [Self <: KinesisStreamRecordPayload](x: Self) {
       
-      @scala.inline
-      def setApproximateArrivalTimestamp(value: Double): Self = StObject.set(x, "approximateArrivalTimestamp", value.asInstanceOf[js.Any])
+      inline def setApproximateArrivalTimestamp(value: Double): Self = StObject.set(x, "approximateArrivalTimestamp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKinesisSchemaVersion(value: String): Self = StObject.set(x, "kinesisSchemaVersion", value.asInstanceOf[js.Any])
+      inline def setKinesisSchemaVersion(value: String): Self = StObject.set(x, "kinesisSchemaVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPartitionKey(value: String): Self = StObject.set(x, "partitionKey", value.asInstanceOf[js.Any])
+      inline def setPartitionKey(value: String): Self = StObject.set(x, "partitionKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSequenceNumber(value: String): Self = StObject.set(x, "sequenceNumber", value.asInstanceOf[js.Any])
+      inline def setSequenceNumber(value: String): Self = StObject.set(x, "sequenceNumber", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -10,16 +10,13 @@ trait GridGrouping extends StObject {
 }
 object GridGrouping {
   
-  @scala.inline
-  def apply(groupBy: String): GridGrouping = {
+  inline def apply(groupBy: String): GridGrouping = {
     val __obj = js.Dynamic.literal(groupBy = groupBy.asInstanceOf[js.Any])
     __obj.asInstanceOf[GridGrouping]
   }
   
-  @scala.inline
-  implicit class GridGroupingMutableBuilder[Self <: GridGrouping] (val x: Self) extends AnyVal {
+  extension [Self <: GridGrouping](x: Self) {
     
-    @scala.inline
-    def setGroupBy(value: String): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
+    inline def setGroupBy(value: String): Self = StObject.set(x, "groupBy", value.asInstanceOf[js.Any])
   }
 }

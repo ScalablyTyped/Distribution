@@ -11,16 +11,13 @@ trait GetScreenBrightnessSuccessCallbackOption extends StObject {
 }
 object GetScreenBrightnessSuccessCallbackOption {
   
-  @scala.inline
-  def apply(value: Double): GetScreenBrightnessSuccessCallbackOption = {
+  inline def apply(value: Double): GetScreenBrightnessSuccessCallbackOption = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetScreenBrightnessSuccessCallbackOption]
   }
   
-  @scala.inline
-  implicit class GetScreenBrightnessSuccessCallbackOptionMutableBuilder[Self <: GetScreenBrightnessSuccessCallbackOption] (val x: Self) extends AnyVal {
+  extension [Self <: GetScreenBrightnessSuccessCallbackOption](x: Self) {
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

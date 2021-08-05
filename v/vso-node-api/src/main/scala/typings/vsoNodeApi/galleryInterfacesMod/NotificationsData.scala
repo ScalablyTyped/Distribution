@@ -24,8 +24,7 @@ trait NotificationsData extends StObject {
 }
 object NotificationsData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     data: StringDictionary[js.Any],
     identities: StringDictionary[js.Any],
     `type`: NotificationTemplateType
@@ -35,16 +34,12 @@ object NotificationsData {
     __obj.asInstanceOf[NotificationsData]
   }
   
-  @scala.inline
-  implicit class NotificationsDataMutableBuilder[Self <: NotificationsData] (val x: Self) extends AnyVal {
+  extension [Self <: NotificationsData](x: Self) {
     
-    @scala.inline
-    def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentities(value: StringDictionary[js.Any]): Self = StObject.set(x, "identities", value.asInstanceOf[js.Any])
+    inline def setIdentities(value: StringDictionary[js.Any]): Self = StObject.set(x, "identities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: NotificationTemplateType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NotificationTemplateType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

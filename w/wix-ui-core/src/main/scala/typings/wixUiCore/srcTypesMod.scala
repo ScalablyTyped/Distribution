@@ -13,10 +13,8 @@ object srcTypesMod {
   trait Direction extends StObject
   object Direction {
     
-    @scala.inline
-    def ltr: typings.wixUiCore.wixUiCoreStrings.ltr = "ltr".asInstanceOf[typings.wixUiCore.wixUiCoreStrings.ltr]
+    inline def ltr: typings.wixUiCore.wixUiCoreStrings.ltr = "ltr".asInstanceOf[typings.wixUiCore.wixUiCoreStrings.ltr]
     
-    @scala.inline
-    def rtl: typings.wixUiCore.wixUiCoreStrings.rtl = "rtl".asInstanceOf[typings.wixUiCore.wixUiCoreStrings.rtl]
+    inline def rtl: typings.wixUiCore.wixUiCoreStrings.rtl = "rtl".asInstanceOf[typings.wixUiCore.wixUiCoreStrings.rtl]
   }
 }

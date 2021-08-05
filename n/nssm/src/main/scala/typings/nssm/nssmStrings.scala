@@ -11,83 +11,71 @@ object nssmStrings {
   sealed trait continue
     extends StObject
        with Command
-  @scala.inline
-  def continue: continue = "continue".asInstanceOf[continue]
+  inline def continue: continue = "continue".asInstanceOf[continue]
   
   @js.native
   sealed trait get
     extends StObject
        with Command
-  @scala.inline
-  def get: get = "get".asInstanceOf[get]
+  inline def get: get = "get".asInstanceOf[get]
   
   @js.native
   sealed trait install
     extends StObject
        with Command
-  @scala.inline
-  def install: install = "install".asInstanceOf[install]
+  inline def install: install = "install".asInstanceOf[install]
   
   @js.native
   sealed trait pause
     extends StObject
        with Command
-  @scala.inline
-  def pause: pause = "pause".asInstanceOf[pause]
+  inline def pause: pause = "pause".asInstanceOf[pause]
   
   @js.native
   sealed trait remove
     extends StObject
        with Command
-  @scala.inline
-  def remove: remove = "remove".asInstanceOf[remove]
+  inline def remove: remove = "remove".asInstanceOf[remove]
   
   @js.native
   sealed trait reset
     extends StObject
        with Command
-  @scala.inline
-  def reset: reset = "reset".asInstanceOf[reset]
+  inline def reset: reset = "reset".asInstanceOf[reset]
   
   @js.native
   sealed trait restart
     extends StObject
        with Command
-  @scala.inline
-  def restart: restart = "restart".asInstanceOf[restart]
+  inline def restart: restart = "restart".asInstanceOf[restart]
   
   @js.native
   sealed trait rotate
     extends StObject
        with Command
-  @scala.inline
-  def rotate: rotate = "rotate".asInstanceOf[rotate]
+  inline def rotate: rotate = "rotate".asInstanceOf[rotate]
   
   @js.native
   sealed trait set
     extends StObject
        with Command
-  @scala.inline
-  def set: set = "set".asInstanceOf[set]
+  inline def set: set = "set".asInstanceOf[set]
   
   @js.native
   sealed trait start
     extends StObject
        with Command
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
+  inline def start: start = "start".asInstanceOf[start]
   
   @js.native
   sealed trait status
     extends StObject
        with Command
-  @scala.inline
-  def status: status = "status".asInstanceOf[status]
+  inline def status: status = "status".asInstanceOf[status]
   
   @js.native
   sealed trait stop
     extends StObject
        with Command
-  @scala.inline
-  def stop: stop = "stop".asInstanceOf[stop]
+  inline def stop: stop = "stop".asInstanceOf[stop]
 }

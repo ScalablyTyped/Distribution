@@ -23,12 +23,10 @@ object Sticky {
   @JSImport("office-ui-fabric-react/lib/index.bundle", "Sticky.contextType")
   @js.native
   def contextType: Context[IScrollablePaneContext] = js.native
-  @scala.inline
-  def contextType_=(x: Context[IScrollablePaneContext]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
+  inline def contextType_=(x: Context[IScrollablePaneContext]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("contextType")(x.asInstanceOf[js.Any])
   
   @JSImport("office-ui-fabric-react/lib/index.bundle", "Sticky.defaultProps")
   @js.native
   def defaultProps: IStickyProps = js.native
-  @scala.inline
-  def defaultProps_=(x: IStickyProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+  inline def defaultProps_=(x: IStickyProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
 }

@@ -36,64 +36,45 @@ trait SearchFieldProps extends StObject {
 }
 object SearchFieldProps {
   
-  @scala.inline
-  def apply(accessibilityLabel: String, id: String, onChange: SyntheticEvent => Unit): SearchFieldProps = {
+  inline def apply(accessibilityLabel: String, id: String, onChange: SyntheticEvent => Unit): SearchFieldProps = {
     val __obj = js.Dynamic.literal(accessibilityLabel = accessibilityLabel.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
     __obj.asInstanceOf[SearchFieldProps]
   }
   
-  @scala.inline
-  implicit class SearchFieldPropsMutableBuilder[Self <: SearchFieldProps] (val x: Self) extends AnyVal {
+  extension [Self <: SearchFieldProps](x: Self) {
     
-    @scala.inline
-    def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
+    inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoComplete(value: on | off | username | name): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
+    inline def setAutoComplete(value: on | off | username | name): Self = StObject.set(x, "autoComplete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
+    inline def setAutoCompleteUndefined: Self = StObject.set(x, "autoComplete", js.undefined)
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+    inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnBlur(value: /* args */ `0` => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+    inline def setOnBlur(value: /* args */ `0` => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+    inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
     
-    @scala.inline
-    def setOnChange(value: SyntheticEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: SyntheticEvent => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnFocus(value: /* args */ SyntheticEvent => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+    inline def setOnFocus(value: /* args */ SyntheticEvent => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+    inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
     
-    @scala.inline
-    def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+    inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
+    inline def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
     
-    @scala.inline
-    def setSize(value: md | lg): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: md | lg): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

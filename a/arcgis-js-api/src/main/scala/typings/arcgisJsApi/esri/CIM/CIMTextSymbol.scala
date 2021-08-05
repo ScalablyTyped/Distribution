@@ -293,350 +293,244 @@ trait CIMTextSymbol
 }
 object CIMTextSymbol {
   
-  @scala.inline
-  def apply(): CIMTextSymbol = {
+  inline def apply(): CIMTextSymbol = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CIMTextSymbol")
     __obj.asInstanceOf[CIMTextSymbol]
   }
   
-  @scala.inline
-  implicit class CIMTextSymbolMutableBuilder[Self <: CIMTextSymbol] (val x: Self) extends AnyVal {
+  extension [Self <: CIMTextSymbol](x: Self) {
     
-    @scala.inline
-    def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
+    inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
+    inline def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
     
-    @scala.inline
-    def setAngleX(value: Double): Self = StObject.set(x, "angleX", value.asInstanceOf[js.Any])
+    inline def setAngleX(value: Double): Self = StObject.set(x, "angleX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngleXUndefined: Self = StObject.set(x, "angleX", js.undefined)
+    inline def setAngleXUndefined: Self = StObject.set(x, "angleX", js.undefined)
     
-    @scala.inline
-    def setAngleY(value: Double): Self = StObject.set(x, "angleY", value.asInstanceOf[js.Any])
+    inline def setAngleY(value: Double): Self = StObject.set(x, "angleY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAngleYUndefined: Self = StObject.set(x, "angleY", js.undefined)
+    inline def setAngleYUndefined: Self = StObject.set(x, "angleY", js.undefined)
     
-    @scala.inline
-    def setBillboardMode3D(
+    inline def setBillboardMode3D(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BillboardMode * / any */ String
     ): Self = StObject.set(x, "billboardMode3D", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillboardMode3DUndefined: Self = StObject.set(x, "billboardMode3D", js.undefined)
+    inline def setBillboardMode3DUndefined: Self = StObject.set(x, "billboardMode3D", js.undefined)
     
-    @scala.inline
-    def setBlockProgression(
+    inline def setBlockProgression(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BlockProgression * / any */ String
     ): Self = StObject.set(x, "blockProgression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockProgressionUndefined: Self = StObject.set(x, "blockProgression", js.undefined)
+    inline def setBlockProgressionUndefined: Self = StObject.set(x, "blockProgression", js.undefined)
     
-    @scala.inline
-    def setCallout(value: CIMCalloutType): Self = StObject.set(x, "callout", value.asInstanceOf[js.Any])
+    inline def setCallout(value: CIMCalloutType): Self = StObject.set(x, "callout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCalloutUndefined: Self = StObject.set(x, "callout", js.undefined)
+    inline def setCalloutUndefined: Self = StObject.set(x, "callout", js.undefined)
     
-    @scala.inline
-    def setCompatibilityMode(value: Boolean): Self = StObject.set(x, "compatibilityMode", value.asInstanceOf[js.Any])
+    inline def setCompatibilityMode(value: Boolean): Self = StObject.set(x, "compatibilityMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompatibilityModeUndefined: Self = StObject.set(x, "compatibilityMode", js.undefined)
+    inline def setCompatibilityModeUndefined: Self = StObject.set(x, "compatibilityMode", js.undefined)
     
-    @scala.inline
-    def setCountryISO(value: String): Self = StObject.set(x, "countryISO", value.asInstanceOf[js.Any])
+    inline def setCountryISO(value: String): Self = StObject.set(x, "countryISO", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryISOUndefined: Self = StObject.set(x, "countryISO", js.undefined)
+    inline def setCountryISOUndefined: Self = StObject.set(x, "countryISO", js.undefined)
     
-    @scala.inline
-    def setDepth3D(value: Double): Self = StObject.set(x, "depth3D", value.asInstanceOf[js.Any])
+    inline def setDepth3D(value: Double): Self = StObject.set(x, "depth3D", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDepth3DUndefined: Self = StObject.set(x, "depth3D", js.undefined)
+    inline def setDepth3DUndefined: Self = StObject.set(x, "depth3D", js.undefined)
     
-    @scala.inline
-    def setDrawGlyphsAsGeometry(value: Boolean): Self = StObject.set(x, "drawGlyphsAsGeometry", value.asInstanceOf[js.Any])
+    inline def setDrawGlyphsAsGeometry(value: Boolean): Self = StObject.set(x, "drawGlyphsAsGeometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawGlyphsAsGeometryUndefined: Self = StObject.set(x, "drawGlyphsAsGeometry", js.undefined)
+    inline def setDrawGlyphsAsGeometryUndefined: Self = StObject.set(x, "drawGlyphsAsGeometry", js.undefined)
     
-    @scala.inline
-    def setDrawSoftHyphen(value: Boolean): Self = StObject.set(x, "drawSoftHyphen", value.asInstanceOf[js.Any])
+    inline def setDrawSoftHyphen(value: Boolean): Self = StObject.set(x, "drawSoftHyphen", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDrawSoftHyphenUndefined: Self = StObject.set(x, "drawSoftHyphen", js.undefined)
+    inline def setDrawSoftHyphenUndefined: Self = StObject.set(x, "drawSoftHyphen", js.undefined)
     
-    @scala.inline
-    def setExtrapolateBaselines(value: Boolean): Self = StObject.set(x, "extrapolateBaselines", value.asInstanceOf[js.Any])
+    inline def setExtrapolateBaselines(value: Boolean): Self = StObject.set(x, "extrapolateBaselines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtrapolateBaselinesUndefined: Self = StObject.set(x, "extrapolateBaselines", js.undefined)
+    inline def setExtrapolateBaselinesUndefined: Self = StObject.set(x, "extrapolateBaselines", js.undefined)
     
-    @scala.inline
-    def setFlipAngle(value: Double): Self = StObject.set(x, "flipAngle", value.asInstanceOf[js.Any])
+    inline def setFlipAngle(value: Double): Self = StObject.set(x, "flipAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlipAngleUndefined: Self = StObject.set(x, "flipAngle", js.undefined)
+    inline def setFlipAngleUndefined: Self = StObject.set(x, "flipAngle", js.undefined)
     
-    @scala.inline
-    def setFontEffects(
+    inline def setFontEffects(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FontEffects * / any */ String
     ): Self = StObject.set(x, "fontEffects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontEffectsUndefined: Self = StObject.set(x, "fontEffects", js.undefined)
+    inline def setFontEffectsUndefined: Self = StObject.set(x, "fontEffects", js.undefined)
     
-    @scala.inline
-    def setFontEncoding(
+    inline def setFontEncoding(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FontEncoding * / any */ String
     ): Self = StObject.set(x, "fontEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontEncodingUndefined: Self = StObject.set(x, "fontEncoding", js.undefined)
+    inline def setFontEncodingUndefined: Self = StObject.set(x, "fontEncoding", js.undefined)
     
-    @scala.inline
-    def setFontFamilyName(value: String): Self = StObject.set(x, "fontFamilyName", value.asInstanceOf[js.Any])
+    inline def setFontFamilyName(value: String): Self = StObject.set(x, "fontFamilyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontFamilyNameUndefined: Self = StObject.set(x, "fontFamilyName", js.undefined)
+    inline def setFontFamilyNameUndefined: Self = StObject.set(x, "fontFamilyName", js.undefined)
     
-    @scala.inline
-    def setFontStyleName(value: String): Self = StObject.set(x, "fontStyleName", value.asInstanceOf[js.Any])
+    inline def setFontStyleName(value: String): Self = StObject.set(x, "fontStyleName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontStyleNameUndefined: Self = StObject.set(x, "fontStyleName", js.undefined)
+    inline def setFontStyleNameUndefined: Self = StObject.set(x, "fontStyleName", js.undefined)
     
-    @scala.inline
-    def setFontType(
+    inline def setFontType(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof FontType * / any */ String
     ): Self = StObject.set(x, "fontType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontTypeUndefined: Self = StObject.set(x, "fontType", js.undefined)
+    inline def setFontTypeUndefined: Self = StObject.set(x, "fontType", js.undefined)
     
-    @scala.inline
-    def setGlyphRotation(value: Double): Self = StObject.set(x, "glyphRotation", value.asInstanceOf[js.Any])
+    inline def setGlyphRotation(value: Double): Self = StObject.set(x, "glyphRotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlyphRotationUndefined: Self = StObject.set(x, "glyphRotation", js.undefined)
+    inline def setGlyphRotationUndefined: Self = StObject.set(x, "glyphRotation", js.undefined)
     
-    @scala.inline
-    def setHaloSize(value: Double): Self = StObject.set(x, "haloSize", value.asInstanceOf[js.Any])
+    inline def setHaloSize(value: Double): Self = StObject.set(x, "haloSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHaloSizeUndefined: Self = StObject.set(x, "haloSize", js.undefined)
+    inline def setHaloSizeUndefined: Self = StObject.set(x, "haloSize", js.undefined)
     
-    @scala.inline
-    def setHaloSymbol(value: CIMPolygonSymbol): Self = StObject.set(x, "haloSymbol", value.asInstanceOf[js.Any])
+    inline def setHaloSymbol(value: CIMPolygonSymbol): Self = StObject.set(x, "haloSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHaloSymbolUndefined: Self = StObject.set(x, "haloSymbol", js.undefined)
+    inline def setHaloSymbolUndefined: Self = StObject.set(x, "haloSymbol", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setHinting(
+    inline def setHinting(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GlyphHinting * / any */ String
     ): Self = StObject.set(x, "hinting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHintingUndefined: Self = StObject.set(x, "hinting", js.undefined)
+    inline def setHintingUndefined: Self = StObject.set(x, "hinting", js.undefined)
     
-    @scala.inline
-    def setHorizontalAlignment(
+    inline def setHorizontalAlignment(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof HorizontalAlignment * / any */ String
     ): Self = StObject.set(x, "horizontalAlignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
+    inline def setHorizontalAlignmentUndefined: Self = StObject.set(x, "horizontalAlignment", js.undefined)
     
-    @scala.inline
-    def setIndentAfter(value: Double): Self = StObject.set(x, "indentAfter", value.asInstanceOf[js.Any])
+    inline def setIndentAfter(value: Double): Self = StObject.set(x, "indentAfter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndentAfterUndefined: Self = StObject.set(x, "indentAfter", js.undefined)
+    inline def setIndentAfterUndefined: Self = StObject.set(x, "indentAfter", js.undefined)
     
-    @scala.inline
-    def setIndentBefore(value: Double): Self = StObject.set(x, "indentBefore", value.asInstanceOf[js.Any])
+    inline def setIndentBefore(value: Double): Self = StObject.set(x, "indentBefore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndentBeforeUndefined: Self = StObject.set(x, "indentBefore", js.undefined)
+    inline def setIndentBeforeUndefined: Self = StObject.set(x, "indentBefore", js.undefined)
     
-    @scala.inline
-    def setIndentFirstLine(value: Double): Self = StObject.set(x, "indentFirstLine", value.asInstanceOf[js.Any])
+    inline def setIndentFirstLine(value: Double): Self = StObject.set(x, "indentFirstLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndentFirstLineUndefined: Self = StObject.set(x, "indentFirstLine", js.undefined)
+    inline def setIndentFirstLineUndefined: Self = StObject.set(x, "indentFirstLine", js.undefined)
     
-    @scala.inline
-    def setKerning(value: Boolean): Self = StObject.set(x, "kerning", value.asInstanceOf[js.Any])
+    inline def setKerning(value: Boolean): Self = StObject.set(x, "kerning", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKerningUndefined: Self = StObject.set(x, "kerning", js.undefined)
+    inline def setKerningUndefined: Self = StObject.set(x, "kerning", js.undefined)
     
-    @scala.inline
-    def setLanguageISO(value: String): Self = StObject.set(x, "languageISO", value.asInstanceOf[js.Any])
+    inline def setLanguageISO(value: String): Self = StObject.set(x, "languageISO", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageISOUndefined: Self = StObject.set(x, "languageISO", js.undefined)
+    inline def setLanguageISOUndefined: Self = StObject.set(x, "languageISO", js.undefined)
     
-    @scala.inline
-    def setLetterSpacing(value: Double): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
+    inline def setLetterSpacing(value: Double): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
+    inline def setLetterSpacingUndefined: Self = StObject.set(x, "letterSpacing", js.undefined)
     
-    @scala.inline
-    def setLetterWidth(value: Double): Self = StObject.set(x, "letterWidth", value.asInstanceOf[js.Any])
+    inline def setLetterWidth(value: Double): Self = StObject.set(x, "letterWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLetterWidthUndefined: Self = StObject.set(x, "letterWidth", js.undefined)
+    inline def setLetterWidthUndefined: Self = StObject.set(x, "letterWidth", js.undefined)
     
-    @scala.inline
-    def setLigatures(value: Boolean): Self = StObject.set(x, "ligatures", value.asInstanceOf[js.Any])
+    inline def setLigatures(value: Boolean): Self = StObject.set(x, "ligatures", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLigaturesUndefined: Self = StObject.set(x, "ligatures", js.undefined)
+    inline def setLigaturesUndefined: Self = StObject.set(x, "ligatures", js.undefined)
     
-    @scala.inline
-    def setLineGap(value: Double): Self = StObject.set(x, "lineGap", value.asInstanceOf[js.Any])
+    inline def setLineGap(value: Double): Self = StObject.set(x, "lineGap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineGapType(
+    inline def setLineGapType(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineGapType * / any */ String
     ): Self = StObject.set(x, "lineGapType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLineGapTypeUndefined: Self = StObject.set(x, "lineGapType", js.undefined)
+    inline def setLineGapTypeUndefined: Self = StObject.set(x, "lineGapType", js.undefined)
     
-    @scala.inline
-    def setLineGapUndefined: Self = StObject.set(x, "lineGap", js.undefined)
+    inline def setLineGapUndefined: Self = StObject.set(x, "lineGap", js.undefined)
     
-    @scala.inline
-    def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
+    inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
+    inline def setOffsetXUndefined: Self = StObject.set(x, "offsetX", js.undefined)
     
-    @scala.inline
-    def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
+    inline def setOffsetY(value: Double): Self = StObject.set(x, "offsetY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
+    inline def setOffsetYUndefined: Self = StObject.set(x, "offsetY", js.undefined)
     
-    @scala.inline
-    def setOffsetZ(value: Double): Self = StObject.set(x, "offsetZ", value.asInstanceOf[js.Any])
+    inline def setOffsetZ(value: Double): Self = StObject.set(x, "offsetZ", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetZUndefined: Self = StObject.set(x, "offsetZ", js.undefined)
+    inline def setOffsetZUndefined: Self = StObject.set(x, "offsetZ", js.undefined)
     
-    @scala.inline
-    def setOverprint(value: Boolean): Self = StObject.set(x, "overprint", value.asInstanceOf[js.Any])
+    inline def setOverprint(value: Boolean): Self = StObject.set(x, "overprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverprintUndefined: Self = StObject.set(x, "overprint", js.undefined)
+    inline def setOverprintUndefined: Self = StObject.set(x, "overprint", js.undefined)
     
-    @scala.inline
-    def setShadowColor(value: js.Array[Double]): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
+    inline def setShadowColor(value: js.Array[Double]): Self = StObject.set(x, "shadowColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowColorUndefined: Self = StObject.set(x, "shadowColor", js.undefined)
+    inline def setShadowColorUndefined: Self = StObject.set(x, "shadowColor", js.undefined)
     
-    @scala.inline
-    def setShadowColorVarargs(value: Double*): Self = StObject.set(x, "shadowColor", js.Array(value :_*))
+    inline def setShadowColorVarargs(value: Double*): Self = StObject.set(x, "shadowColor", js.Array(value :_*))
     
-    @scala.inline
-    def setShadowOffsetX(value: Double): Self = StObject.set(x, "shadowOffsetX", value.asInstanceOf[js.Any])
+    inline def setShadowOffsetX(value: Double): Self = StObject.set(x, "shadowOffsetX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowOffsetXUndefined: Self = StObject.set(x, "shadowOffsetX", js.undefined)
+    inline def setShadowOffsetXUndefined: Self = StObject.set(x, "shadowOffsetX", js.undefined)
     
-    @scala.inline
-    def setShadowOffsetY(value: Double): Self = StObject.set(x, "shadowOffsetY", value.asInstanceOf[js.Any])
+    inline def setShadowOffsetY(value: Double): Self = StObject.set(x, "shadowOffsetY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowOffsetYUndefined: Self = StObject.set(x, "shadowOffsetY", js.undefined)
+    inline def setShadowOffsetYUndefined: Self = StObject.set(x, "shadowOffsetY", js.undefined)
     
-    @scala.inline
-    def setSmallCaps(value: Boolean): Self = StObject.set(x, "smallCaps", value.asInstanceOf[js.Any])
+    inline def setSmallCaps(value: Boolean): Self = StObject.set(x, "smallCaps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmallCapsUndefined: Self = StObject.set(x, "smallCaps", js.undefined)
+    inline def setSmallCapsUndefined: Self = StObject.set(x, "smallCaps", js.undefined)
     
-    @scala.inline
-    def setStrikethrough(value: Boolean): Self = StObject.set(x, "strikethrough", value.asInstanceOf[js.Any])
+    inline def setStrikethrough(value: Boolean): Self = StObject.set(x, "strikethrough", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrikethroughUndefined: Self = StObject.set(x, "strikethrough", js.undefined)
+    inline def setStrikethroughUndefined: Self = StObject.set(x, "strikethrough", js.undefined)
     
-    @scala.inline
-    def setSymbol(value: CIMPolygonSymbol): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: CIMPolygonSymbol): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbol3DProperties(value: CIM3DSymbolProperties): Self = StObject.set(x, "symbol3DProperties", value.asInstanceOf[js.Any])
+    inline def setSymbol3DProperties(value: CIM3DSymbolProperties): Self = StObject.set(x, "symbol3DProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbol3DPropertiesUndefined: Self = StObject.set(x, "symbol3DProperties", js.undefined)
+    inline def setSymbol3DPropertiesUndefined: Self = StObject.set(x, "symbol3DProperties", js.undefined)
     
-    @scala.inline
-    def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
+    inline def setSymbolUndefined: Self = StObject.set(x, "symbol", js.undefined)
     
-    @scala.inline
-    def setTextCase(
+    inline def setTextCase(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextCase * / any */ String
     ): Self = StObject.set(x, "textCase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextCaseUndefined: Self = StObject.set(x, "textCase", js.undefined)
+    inline def setTextCaseUndefined: Self = StObject.set(x, "textCase", js.undefined)
     
-    @scala.inline
-    def setTextDirection(
+    inline def setTextDirection(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextReadingDirection * / any */ String
     ): Self = StObject.set(x, "textDirection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextDirectionUndefined: Self = StObject.set(x, "textDirection", js.undefined)
+    inline def setTextDirectionUndefined: Self = StObject.set(x, "textDirection", js.undefined)
     
-    @scala.inline
-    def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMTextSymbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMTextSymbol): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnderline(value: Boolean): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
+    inline def setUnderline(value: Boolean): Self = StObject.set(x, "underline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
+    inline def setUnderlineUndefined: Self = StObject.set(x, "underline", js.undefined)
     
-    @scala.inline
-    def setVerticalAlignment(
+    inline def setVerticalAlignment(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VerticalAlignment * / any */ String
     ): Self = StObject.set(x, "verticalAlignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
+    inline def setVerticalAlignmentUndefined: Self = StObject.set(x, "verticalAlignment", js.undefined)
     
-    @scala.inline
-    def setVerticalGlyphOrientation(
+    inline def setVerticalGlyphOrientation(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof VerticalGlyphOrientation * / any */ String
     ): Self = StObject.set(x, "verticalGlyphOrientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalGlyphOrientationUndefined: Self = StObject.set(x, "verticalGlyphOrientation", js.undefined)
+    inline def setVerticalGlyphOrientationUndefined: Self = StObject.set(x, "verticalGlyphOrientation", js.undefined)
     
-    @scala.inline
-    def setWordSpacing(value: Double): Self = StObject.set(x, "wordSpacing", value.asInstanceOf[js.Any])
+    inline def setWordSpacing(value: Double): Self = StObject.set(x, "wordSpacing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordSpacingUndefined: Self = StObject.set(x, "wordSpacing", js.undefined)
+    inline def setWordSpacingUndefined: Self = StObject.set(x, "wordSpacing", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait GetTopicAttributesInput extends StObject {
 }
 object GetTopicAttributesInput {
   
-  @scala.inline
-  def apply(TopicArn: topicARN): GetTopicAttributesInput = {
+  inline def apply(TopicArn: topicARN): GetTopicAttributesInput = {
     val __obj = js.Dynamic.literal(TopicArn = TopicArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTopicAttributesInput]
   }
   
-  @scala.inline
-  implicit class GetTopicAttributesInputMutableBuilder[Self <: GetTopicAttributesInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetTopicAttributesInput](x: Self) {
     
-    @scala.inline
-    def setTopicArn(value: topicARN): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
+    inline def setTopicArn(value: topicARN): Self = StObject.set(x, "TopicArn", value.asInstanceOf[js.Any])
   }
 }

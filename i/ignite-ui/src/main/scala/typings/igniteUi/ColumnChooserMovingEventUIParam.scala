@@ -28,37 +28,27 @@ trait ColumnChooserMovingEventUIParam extends StObject {
 }
 object ColumnChooserMovingEventUIParam {
   
-  @scala.inline
-  def apply(): ColumnChooserMovingEventUIParam = {
+  inline def apply(): ColumnChooserMovingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ColumnChooserMovingEventUIParam]
   }
   
-  @scala.inline
-  implicit class ColumnChooserMovingEventUIParamMutableBuilder[Self <: ColumnChooserMovingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: ColumnChooserMovingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setColumnChooserElement(value: String): Self = StObject.set(x, "columnChooserElement", value.asInstanceOf[js.Any])
+    inline def setColumnChooserElement(value: String): Self = StObject.set(x, "columnChooserElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnChooserElementUndefined: Self = StObject.set(x, "columnChooserElement", js.undefined)
+    inline def setColumnChooserElementUndefined: Self = StObject.set(x, "columnChooserElement", js.undefined)
     
-    @scala.inline
-    def setOriginalPosition(value: js.Any): Self = StObject.set(x, "originalPosition", value.asInstanceOf[js.Any])
+    inline def setOriginalPosition(value: js.Any): Self = StObject.set(x, "originalPosition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginalPositionUndefined: Self = StObject.set(x, "originalPosition", js.undefined)
+    inline def setOriginalPositionUndefined: Self = StObject.set(x, "originalPosition", js.undefined)
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
-    @scala.inline
-    def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
   }
 }

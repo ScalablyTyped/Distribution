@@ -33,8 +33,7 @@ object anon {
   }
   object DateSaved {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dateSaved: Date,
       modelTopologyBytes: Double,
       modelTopologyType: String,
@@ -45,23 +44,17 @@ object anon {
       __obj.asInstanceOf[DateSaved]
     }
     
-    @scala.inline
-    implicit class DateSavedMutableBuilder[Self <: DateSaved] (val x: Self) extends AnyVal {
+    extension [Self <: DateSaved](x: Self) {
       
-      @scala.inline
-      def setDateSaved(value: Date): Self = StObject.set(x, "dateSaved", value.asInstanceOf[js.Any])
+      inline def setDateSaved(value: Date): Self = StObject.set(x, "dateSaved", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelTopologyBytes(value: Double): Self = StObject.set(x, "modelTopologyBytes", value.asInstanceOf[js.Any])
+      inline def setModelTopologyBytes(value: Double): Self = StObject.set(x, "modelTopologyBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModelTopologyType(value: String): Self = StObject.set(x, "modelTopologyType", value.asInstanceOf[js.Any])
+      inline def setModelTopologyType(value: String): Self = StObject.set(x, "modelTopologyType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeightDataBytes(value: Double): Self = StObject.set(x, "weightDataBytes", value.asInstanceOf[js.Any])
+      inline def setWeightDataBytes(value: Double): Self = StObject.set(x, "weightDataBytes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWeightSpecsBytes(value: Double): Self = StObject.set(x, "weightSpecsBytes", value.asInstanceOf[js.Any])
+      inline def setWeightSpecsBytes(value: Double): Self = StObject.set(x, "weightSpecsBytes", value.asInstanceOf[js.Any])
     }
   }
   
@@ -175,17 +168,14 @@ object anon {
   }
   object Unreliable {
     
-    @scala.inline
-    def apply(unreliable: Boolean): Unreliable = {
+    inline def apply(unreliable: Boolean): Unreliable = {
       val __obj = js.Dynamic.literal(unreliable = unreliable.asInstanceOf[js.Any])
       __obj.asInstanceOf[Unreliable]
     }
     
-    @scala.inline
-    implicit class UnreliableMutableBuilder[Self <: Unreliable] (val x: Self) extends AnyVal {
+    extension [Self <: Unreliable](x: Self) {
       
-      @scala.inline
-      def setUnreliable(value: Boolean): Self = StObject.set(x, "unreliable", value.asInstanceOf[js.Any])
+      inline def setUnreliable(value: Boolean): Self = StObject.set(x, "unreliable", value.asInstanceOf[js.Any])
     }
   }
 }

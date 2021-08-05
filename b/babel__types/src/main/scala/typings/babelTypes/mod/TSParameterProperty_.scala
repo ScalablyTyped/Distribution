@@ -25,32 +25,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object TSParameterProperty_ {
   
-  @scala.inline
-  def apply(parameter: Identifier_ | AssignmentPattern_): TSParameterProperty_ = {
+  inline def apply(parameter: Identifier_ | AssignmentPattern_): TSParameterProperty_ = {
     val __obj = js.Dynamic.literal(parameter = parameter.asInstanceOf[js.Any], accessibility = null, end = null, innerComments = null, leadingComments = null, loc = null, readonly = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("TSParameterProperty")
     __obj.asInstanceOf[TSParameterProperty_]
   }
   
-  @scala.inline
-  implicit class TSParameterProperty_MutableBuilder[Self <: TSParameterProperty_] (val x: Self) extends AnyVal {
+  extension [Self <: TSParameterProperty_](x: Self) {
     
-    @scala.inline
-    def setAccessibility(value: public | `private` | `protected`): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
+    inline def setAccessibility(value: public | `private` | `protected`): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessibilityNull: Self = StObject.set(x, "accessibility", null)
+    inline def setAccessibilityNull: Self = StObject.set(x, "accessibility", null)
     
-    @scala.inline
-    def setParameter(value: Identifier_ | AssignmentPattern_): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
+    inline def setParameter(value: Identifier_ | AssignmentPattern_): Self = StObject.set(x, "parameter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
+    inline def setReadonly(value: Boolean): Self = StObject.set(x, "readonly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadonlyNull: Self = StObject.set(x, "readonly", null)
+    inline def setReadonlyNull: Self = StObject.set(x, "readonly", null)
     
-    @scala.inline
-    def setType(value: TSParameterProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TSParameterProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

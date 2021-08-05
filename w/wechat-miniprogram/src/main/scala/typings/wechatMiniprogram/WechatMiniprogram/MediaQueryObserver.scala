@@ -23,19 +23,15 @@ trait MediaQueryObserver extends StObject {
 }
 object MediaQueryObserver {
   
-  @scala.inline
-  def apply(disconnect: () => Unit, observe: (ObserveDescriptor, MediaQueryObserverObserveCallback) => Unit): MediaQueryObserver = {
+  inline def apply(disconnect: () => Unit, observe: (ObserveDescriptor, MediaQueryObserverObserveCallback) => Unit): MediaQueryObserver = {
     val __obj = js.Dynamic.literal(disconnect = js.Any.fromFunction0(disconnect), observe = js.Any.fromFunction2(observe))
     __obj.asInstanceOf[MediaQueryObserver]
   }
   
-  @scala.inline
-  implicit class MediaQueryObserverMutableBuilder[Self <: MediaQueryObserver] (val x: Self) extends AnyVal {
+  extension [Self <: MediaQueryObserver](x: Self) {
     
-    @scala.inline
-    def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
+    inline def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setObserve(value: (ObserveDescriptor, MediaQueryObserverObserveCallback) => Unit): Self = StObject.set(x, "observe", js.Any.fromFunction2(value))
+    inline def setObserve(value: (ObserveDescriptor, MediaQueryObserverObserveCallback) => Unit): Self = StObject.set(x, "observe", js.Any.fromFunction2(value))
   }
 }

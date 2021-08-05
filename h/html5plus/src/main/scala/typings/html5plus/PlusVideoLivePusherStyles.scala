@@ -135,91 +135,63 @@ trait PlusVideoLivePusherStyles extends StObject {
 }
 object PlusVideoLivePusherStyles {
   
-  @scala.inline
-  def apply(): PlusVideoLivePusherStyles = {
+  inline def apply(): PlusVideoLivePusherStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusVideoLivePusherStyles]
   }
   
-  @scala.inline
-  implicit class PlusVideoLivePusherStylesMutableBuilder[Self <: PlusVideoLivePusherStyles] (val x: Self) extends AnyVal {
+  extension [Self <: PlusVideoLivePusherStyles](x: Self) {
     
-    @scala.inline
-    def setAspect(value: String): Self = StObject.set(x, "aspect", value.asInstanceOf[js.Any])
+    inline def setAspect(value: String): Self = StObject.set(x, "aspect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAspectUndefined: Self = StObject.set(x, "aspect", js.undefined)
+    inline def setAspectUndefined: Self = StObject.set(x, "aspect", js.undefined)
     
-    @scala.inline
-    def `setAuto-focus`(value: Boolean): Self = StObject.set(x, "auto-focus", value.asInstanceOf[js.Any])
+    inline def `setAuto-focus`(value: Boolean): Self = StObject.set(x, "auto-focus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setAuto-focusUndefined`: Self = StObject.set(x, "auto-focus", js.undefined)
+    inline def `setAuto-focusUndefined`: Self = StObject.set(x, "auto-focus", js.undefined)
     
-    @scala.inline
-    def setBeauty(value: Double): Self = StObject.set(x, "beauty", value.asInstanceOf[js.Any])
+    inline def setBeauty(value: Double): Self = StObject.set(x, "beauty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBeautyUndefined: Self = StObject.set(x, "beauty", js.undefined)
+    inline def setBeautyUndefined: Self = StObject.set(x, "beauty", js.undefined)
     
-    @scala.inline
-    def `setEnable-camera`(value: Boolean): Self = StObject.set(x, "enable-camera", value.asInstanceOf[js.Any])
+    inline def `setEnable-camera`(value: Boolean): Self = StObject.set(x, "enable-camera", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setEnable-cameraUndefined`: Self = StObject.set(x, "enable-camera", js.undefined)
+    inline def `setEnable-cameraUndefined`: Self = StObject.set(x, "enable-camera", js.undefined)
     
-    @scala.inline
-    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    @scala.inline
-    def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
+    inline def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMutedUndefined: Self = StObject.set(x, "muted", js.undefined)
+    inline def setMutedUndefined: Self = StObject.set(x, "muted", js.undefined)
     
-    @scala.inline
-    def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: String): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setTop(value: String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: String): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
-    @scala.inline
-    def setWhiteness(value: Double): Self = StObject.set(x, "whiteness", value.asInstanceOf[js.Any])
+    inline def setWhiteness(value: Double): Self = StObject.set(x, "whiteness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhitenessUndefined: Self = StObject.set(x, "whiteness", js.undefined)
+    inline def setWhitenessUndefined: Self = StObject.set(x, "whiteness", js.undefined)
     
-    @scala.inline
-    def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+    inline def setWidth(value: String): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+    inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
   }
 }

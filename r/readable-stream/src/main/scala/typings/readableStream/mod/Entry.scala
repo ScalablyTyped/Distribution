@@ -13,22 +13,17 @@ trait Entry[D] extends StObject {
 }
 object Entry {
   
-  @scala.inline
-  def apply[D](data: D): Entry[D] = {
+  inline def apply[D](data: D): Entry[D] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], next = null)
     __obj.asInstanceOf[Entry[D]]
   }
   
-  @scala.inline
-  implicit class EntryMutableBuilder[Self <: Entry[?], D] (val x: Self & Entry[D]) extends AnyVal {
+  extension [Self <: Entry[?], D](x: Self & Entry[D]) {
     
-    @scala.inline
-    def setData(value: D): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: D): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext(value: Entry[D]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: Entry[D]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextNull: Self = StObject.set(x, "next", null)
+    inline def setNextNull: Self = StObject.set(x, "next", null)
   }
 }

@@ -14,8 +14,7 @@ object srcCommonTestkitTestsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def runTestkitExistsSuite[T /* <: BaseDriver */](params: TestkitSuiteParams[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("runTestkitExistsSuite")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def runTestkitExistsSuite[T /* <: BaseDriver */](params: TestkitSuiteParams[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("runTestkitExistsSuite")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait TestkitSuiteParams[T /* <: BaseDriver */] extends StObject {
     
@@ -27,23 +26,18 @@ object srcCommonTestkitTestsMod {
   }
   object TestkitSuiteParams {
     
-    @scala.inline
-    def apply[T /* <: BaseDriver */](Element: ReactElement, enzymeTestkitFactory: WrapperData => T, testkitFactory: DataHook_ => T): TestkitSuiteParams[T] = {
+    inline def apply[T /* <: BaseDriver */](Element: ReactElement, enzymeTestkitFactory: WrapperData => T, testkitFactory: DataHook_ => T): TestkitSuiteParams[T] = {
       val __obj = js.Dynamic.literal(Element = Element.asInstanceOf[js.Any], enzymeTestkitFactory = js.Any.fromFunction1(enzymeTestkitFactory), testkitFactory = js.Any.fromFunction1(testkitFactory))
       __obj.asInstanceOf[TestkitSuiteParams[T]]
     }
     
-    @scala.inline
-    implicit class TestkitSuiteParamsMutableBuilder[Self <: TestkitSuiteParams[?], T /* <: BaseDriver */] (val x: Self & TestkitSuiteParams[T]) extends AnyVal {
+    extension [Self <: TestkitSuiteParams[?], T /* <: BaseDriver */](x: Self & TestkitSuiteParams[T]) {
       
-      @scala.inline
-      def setElement(value: ReactElement): Self = StObject.set(x, "Element", value.asInstanceOf[js.Any])
+      inline def setElement(value: ReactElement): Self = StObject.set(x, "Element", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnzymeTestkitFactory(value: WrapperData => T): Self = StObject.set(x, "enzymeTestkitFactory", js.Any.fromFunction1(value))
+      inline def setEnzymeTestkitFactory(value: WrapperData => T): Self = StObject.set(x, "enzymeTestkitFactory", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTestkitFactory(value: DataHook_ => T): Self = StObject.set(x, "testkitFactory", js.Any.fromFunction1(value))
+      inline def setTestkitFactory(value: DataHook_ => T): Self = StObject.set(x, "testkitFactory", js.Any.fromFunction1(value))
     }
   }
 }

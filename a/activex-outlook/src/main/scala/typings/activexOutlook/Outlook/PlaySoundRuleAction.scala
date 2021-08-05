@@ -16,7 +16,7 @@ trait PlaySoundRuleAction extends StObject {
   
   var FilePath: String
   
-  @JSName("Outlook.PlaySoundRuleAction_typekey")
+  /* private */ @JSName("Outlook.PlaySoundRuleAction_typekey")
   var OutlookDotPlaySoundRuleAction_typekey: PlaySoundRuleAction
   
   val Parent: js.Any
@@ -25,8 +25,7 @@ trait PlaySoundRuleAction extends StObject {
 }
 object PlaySoundRuleAction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ActionType: OlRuleActionType,
     Application: Application,
     Class: OlObjectClass,
@@ -41,31 +40,22 @@ object PlaySoundRuleAction {
     __obj.asInstanceOf[PlaySoundRuleAction]
   }
   
-  @scala.inline
-  implicit class PlaySoundRuleActionMutableBuilder[Self <: PlaySoundRuleAction] (val x: Self) extends AnyVal {
+  extension [Self <: PlaySoundRuleAction](x: Self) {
     
-    @scala.inline
-    def setActionType(value: OlRuleActionType): Self = StObject.set(x, "ActionType", value.asInstanceOf[js.Any])
+    inline def setActionType(value: OlRuleActionType): Self = StObject.set(x, "ActionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
+    inline def setClass(value: OlObjectClass): Self = StObject.set(x, "Class", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilePath(value: String): Self = StObject.set(x, "FilePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: String): Self = StObject.set(x, "FilePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlookDotPlaySoundRuleAction_typekey(value: PlaySoundRuleAction): Self = StObject.set(x, "Outlook.PlaySoundRuleAction_typekey", value.asInstanceOf[js.Any])
+    inline def setOutlookDotPlaySoundRuleAction_typekey(value: PlaySoundRuleAction): Self = StObject.set(x, "Outlook.PlaySoundRuleAction_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: NameSpace): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
   }
 }

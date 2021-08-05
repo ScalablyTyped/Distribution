@@ -11,16 +11,13 @@ trait OpaqueViewState extends StObject {
 }
 object OpaqueViewState {
   
-  @scala.inline
-  def apply(): OpaqueViewState = {
+  inline def apply(): OpaqueViewState = {
     val __obj = js.Dynamic.literal(__brand__ = "Brand for OpaqueViewState that nothing will match")
     __obj.asInstanceOf[OpaqueViewState]
   }
   
-  @scala.inline
-  implicit class OpaqueViewStateMutableBuilder[Self <: OpaqueViewState] (val x: Self) extends AnyVal {
+  extension [Self <: OpaqueViewState](x: Self) {
     
-    @scala.inline
-    def set__brand__(value: `Brand for OpaqueViewState that nothing will match`): Self = StObject.set(x, "__brand__", value.asInstanceOf[js.Any])
+    inline def set__brand__(value: `Brand for OpaqueViewState that nothing will match`): Self = StObject.set(x, "__brand__", value.asInstanceOf[js.Any])
   }
 }

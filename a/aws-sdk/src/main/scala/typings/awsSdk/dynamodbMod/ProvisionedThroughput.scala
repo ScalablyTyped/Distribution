@@ -18,19 +18,15 @@ trait ProvisionedThroughput extends StObject {
 }
 object ProvisionedThroughput {
   
-  @scala.inline
-  def apply(ReadCapacityUnits: PositiveLongObject, WriteCapacityUnits: PositiveLongObject): ProvisionedThroughput = {
+  inline def apply(ReadCapacityUnits: PositiveLongObject, WriteCapacityUnits: PositiveLongObject): ProvisionedThroughput = {
     val __obj = js.Dynamic.literal(ReadCapacityUnits = ReadCapacityUnits.asInstanceOf[js.Any], WriteCapacityUnits = WriteCapacityUnits.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProvisionedThroughput]
   }
   
-  @scala.inline
-  implicit class ProvisionedThroughputMutableBuilder[Self <: ProvisionedThroughput] (val x: Self) extends AnyVal {
+  extension [Self <: ProvisionedThroughput](x: Self) {
     
-    @scala.inline
-    def setReadCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "ReadCapacityUnits", value.asInstanceOf[js.Any])
+    inline def setReadCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "ReadCapacityUnits", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriteCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "WriteCapacityUnits", value.asInstanceOf[js.Any])
+    inline def setWriteCapacityUnits(value: PositiveLongObject): Self = StObject.set(x, "WriteCapacityUnits", value.asInstanceOf[js.Any])
   }
 }

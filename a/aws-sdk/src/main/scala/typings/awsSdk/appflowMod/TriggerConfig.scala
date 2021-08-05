@@ -18,22 +18,17 @@ trait TriggerConfig extends StObject {
 }
 object TriggerConfig {
   
-  @scala.inline
-  def apply(triggerType: TriggerType): TriggerConfig = {
+  inline def apply(triggerType: TriggerType): TriggerConfig = {
     val __obj = js.Dynamic.literal(triggerType = triggerType.asInstanceOf[js.Any])
     __obj.asInstanceOf[TriggerConfig]
   }
   
-  @scala.inline
-  implicit class TriggerConfigMutableBuilder[Self <: TriggerConfig] (val x: Self) extends AnyVal {
+  extension [Self <: TriggerConfig](x: Self) {
     
-    @scala.inline
-    def setTriggerProperties(value: TriggerProperties): Self = StObject.set(x, "triggerProperties", value.asInstanceOf[js.Any])
+    inline def setTriggerProperties(value: TriggerProperties): Self = StObject.set(x, "triggerProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerPropertiesUndefined: Self = StObject.set(x, "triggerProperties", js.undefined)
+    inline def setTriggerPropertiesUndefined: Self = StObject.set(x, "triggerProperties", js.undefined)
     
-    @scala.inline
-    def setTriggerType(value: TriggerType): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
+    inline def setTriggerType(value: TriggerType): Self = StObject.set(x, "triggerType", value.asInstanceOf[js.Any])
   }
 }

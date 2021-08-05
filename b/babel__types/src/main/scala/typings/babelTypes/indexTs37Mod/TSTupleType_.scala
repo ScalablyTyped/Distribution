@@ -18,23 +18,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object TSTupleType_ {
   
-  @scala.inline
-  def apply(elementTypes: js.Array[TSType | TSNamedTupleMember_]): TSTupleType_ = {
+  inline def apply(elementTypes: js.Array[TSType | TSNamedTupleMember_]): TSTupleType_ = {
     val __obj = js.Dynamic.literal(elementTypes = elementTypes.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")("TSTupleType")
     __obj.asInstanceOf[TSTupleType_]
   }
   
-  @scala.inline
-  implicit class TSTupleType_MutableBuilder[Self <: TSTupleType_] (val x: Self) extends AnyVal {
+  extension [Self <: TSTupleType_](x: Self) {
     
-    @scala.inline
-    def setElementTypes(value: js.Array[TSType | TSNamedTupleMember_]): Self = StObject.set(x, "elementTypes", value.asInstanceOf[js.Any])
+    inline def setElementTypes(value: js.Array[TSType | TSNamedTupleMember_]): Self = StObject.set(x, "elementTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementTypesVarargs(value: (TSType | TSNamedTupleMember_)*): Self = StObject.set(x, "elementTypes", js.Array(value :_*))
+    inline def setElementTypesVarargs(value: (TSType | TSNamedTupleMember_)*): Self = StObject.set(x, "elementTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: TSTupleType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TSTupleType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

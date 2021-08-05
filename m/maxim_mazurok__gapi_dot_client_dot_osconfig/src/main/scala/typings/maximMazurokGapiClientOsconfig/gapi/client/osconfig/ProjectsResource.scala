@@ -12,19 +12,15 @@ trait ProjectsResource extends StObject {
 }
 object ProjectsResource {
   
-  @scala.inline
-  def apply(patchDeployments: PatchDeploymentsResource, patchJobs: PatchJobsResource): ProjectsResource = {
+  inline def apply(patchDeployments: PatchDeploymentsResource, patchJobs: PatchJobsResource): ProjectsResource = {
     val __obj = js.Dynamic.literal(patchDeployments = patchDeployments.asInstanceOf[js.Any], patchJobs = patchJobs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectsResource]
   }
   
-  @scala.inline
-  implicit class ProjectsResourceMutableBuilder[Self <: ProjectsResource] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectsResource](x: Self) {
     
-    @scala.inline
-    def setPatchDeployments(value: PatchDeploymentsResource): Self = StObject.set(x, "patchDeployments", value.asInstanceOf[js.Any])
+    inline def setPatchDeployments(value: PatchDeploymentsResource): Self = StObject.set(x, "patchDeployments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatchJobs(value: PatchJobsResource): Self = StObject.set(x, "patchJobs", value.asInstanceOf[js.Any])
+    inline def setPatchJobs(value: PatchJobsResource): Self = StObject.set(x, "patchJobs", value.asInstanceOf[js.Any])
   }
 }

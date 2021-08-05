@@ -18,40 +18,29 @@ trait SnapshotStatus
 }
 object SnapshotStatus {
   
-  @scala.inline
-  def apply(): SnapshotStatus = {
+  inline def apply(): SnapshotStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SnapshotStatus]
   }
   
-  @scala.inline
-  implicit class SnapshotStatusMutableBuilder[Self <: SnapshotStatus] (val x: Self) extends AnyVal {
+  extension [Self <: SnapshotStatus](x: Self) {
     
-    @scala.inline
-    def setIgnore_unavailable(value: Boolean): Self = StObject.set(x, "ignore_unavailable", value.asInstanceOf[js.Any])
+    inline def setIgnore_unavailable(value: Boolean): Self = StObject.set(x, "ignore_unavailable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnore_unavailableUndefined: Self = StObject.set(x, "ignore_unavailable", js.undefined)
+    inline def setIgnore_unavailableUndefined: Self = StObject.set(x, "ignore_unavailable", js.undefined)
     
-    @scala.inline
-    def setMaster_timeout(value: String): Self = StObject.set(x, "master_timeout", value.asInstanceOf[js.Any])
+    inline def setMaster_timeout(value: String): Self = StObject.set(x, "master_timeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaster_timeoutUndefined: Self = StObject.set(x, "master_timeout", js.undefined)
+    inline def setMaster_timeoutUndefined: Self = StObject.set(x, "master_timeout", js.undefined)
     
-    @scala.inline
-    def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
+    inline def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
+    inline def setRepositoryUndefined: Self = StObject.set(x, "repository", js.undefined)
     
-    @scala.inline
-    def setSnapshot(value: String | js.Array[String]): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
+    inline def setSnapshot(value: String | js.Array[String]): Self = StObject.set(x, "snapshot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSnapshotUndefined: Self = StObject.set(x, "snapshot", js.undefined)
+    inline def setSnapshotUndefined: Self = StObject.set(x, "snapshot", js.undefined)
     
-    @scala.inline
-    def setSnapshotVarargs(value: String*): Self = StObject.set(x, "snapshot", js.Array(value :_*))
+    inline def setSnapshotVarargs(value: String*): Self = StObject.set(x, "snapshot", js.Array(value :_*))
   }
 }

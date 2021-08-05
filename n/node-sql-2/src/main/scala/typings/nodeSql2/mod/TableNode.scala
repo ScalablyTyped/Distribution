@@ -12,19 +12,15 @@ trait TableNode extends StObject {
 }
 object TableNode {
   
-  @scala.inline
-  def apply(join: TableNode => JoinTableNode, leftJoin: TableNode => JoinTableNode): TableNode = {
+  inline def apply(join: TableNode => JoinTableNode, leftJoin: TableNode => JoinTableNode): TableNode = {
     val __obj = js.Dynamic.literal(join = js.Any.fromFunction1(join), leftJoin = js.Any.fromFunction1(leftJoin))
     __obj.asInstanceOf[TableNode]
   }
   
-  @scala.inline
-  implicit class TableNodeMutableBuilder[Self <: TableNode] (val x: Self) extends AnyVal {
+  extension [Self <: TableNode](x: Self) {
     
-    @scala.inline
-    def setJoin(value: TableNode => JoinTableNode): Self = StObject.set(x, "join", js.Any.fromFunction1(value))
+    inline def setJoin(value: TableNode => JoinTableNode): Self = StObject.set(x, "join", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLeftJoin(value: TableNode => JoinTableNode): Self = StObject.set(x, "leftJoin", js.Any.fromFunction1(value))
+    inline def setLeftJoin(value: TableNode => JoinTableNode): Self = StObject.set(x, "leftJoin", js.Any.fromFunction1(value))
   }
 }

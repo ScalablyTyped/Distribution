@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait fmEnterFieldBehavior extends StObject
 object fmEnterFieldBehavior {
   
-  @scala.inline
-  def fmEnterFieldBehaviorRecallSelection: `1` = 1.asInstanceOf[`1`]
+  inline def fmEnterFieldBehaviorRecallSelection: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def fmEnterFieldBehaviorSelectAll: `0` = 0.asInstanceOf[`0`]
+  inline def fmEnterFieldBehaviorSelectAll: `0` = 0.asInstanceOf[`0`]
 }

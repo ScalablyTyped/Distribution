@@ -12,16 +12,13 @@ trait RTCStatsEventInit
 }
 object RTCStatsEventInit {
   
-  @scala.inline
-  def apply(report: RTCStatsReport): RTCStatsEventInit = {
+  inline def apply(report: RTCStatsReport): RTCStatsEventInit = {
     val __obj = js.Dynamic.literal(report = report.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCStatsEventInit]
   }
   
-  @scala.inline
-  implicit class RTCStatsEventInitMutableBuilder[Self <: RTCStatsEventInit] (val x: Self) extends AnyVal {
+  extension [Self <: RTCStatsEventInit](x: Self) {
     
-    @scala.inline
-    def setReport(value: RTCStatsReport): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
+    inline def setReport(value: RTCStatsReport): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
   }
 }

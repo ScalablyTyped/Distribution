@@ -76,53 +76,38 @@ object cookiesMod {
   }
   object Cookie {
     
-    @scala.inline
-    def apply(name: String): Cookie = {
+    inline def apply(name: String): Cookie = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Cookie]
     }
     
-    @scala.inline
-    implicit class CookieMutableBuilder[Self <: Cookie] (val x: Self) extends AnyVal {
+    extension [Self <: Cookie](x: Self) {
       
-      @scala.inline
-      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      inline def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
       
-      @scala.inline
-      def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      inline def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+      inline def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
       
-      @scala.inline
-      def setHttponly(value: Boolean): Self = StObject.set(x, "httponly", value.asInstanceOf[js.Any])
+      inline def setHttponly(value: Boolean): Self = StObject.set(x, "httponly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttponlyUndefined: Self = StObject.set(x, "httponly", js.undefined)
+      inline def setHttponlyUndefined: Self = StObject.set(x, "httponly", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+      inline def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
+      inline def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -162,8 +147,7 @@ object cookiesMod {
   }
   object Cookies {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       add: Cookie => Boolean,
       compare: (Cookie, Cookie) => Boolean,
       cookies: js.Array[Cookie],
@@ -181,44 +165,31 @@ object cookiesMod {
       __obj.asInstanceOf[Cookies]
     }
     
-    @scala.inline
-    implicit class CookiesMutableBuilder[Self <: Cookies] (val x: Self) extends AnyVal {
+    extension [Self <: Cookies](x: Self) {
       
-      @scala.inline
-      def setAdd(value: Cookie => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
+      inline def setAdd(value: Cookie => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCompare(value: (Cookie, Cookie) => Boolean): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
+      inline def setCompare(value: (Cookie, Cookie) => Boolean): Self = StObject.set(x, "compare", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCookies(value: js.Array[Cookie]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
+      inline def setCookies(value: js.Array[Cookie]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookiesVarargs(value: Cookie*): Self = StObject.set(x, "cookies", js.Array(value :_*))
+      inline def setCookiesVarargs(value: Cookie*): Self = StObject.set(x, "cookies", js.Array(value :_*))
       
-      @scala.inline
-      def setGet(value: String => String): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => String): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetPath(value: String => String): Self = StObject.set(x, "getPath", js.Any.fromFunction1(value))
+      inline def setGetPath(value: String => String): Self = StObject.set(x, "getPath", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsExpired(value: Cookie => Boolean): Self = StObject.set(x, "isExpired", js.Any.fromFunction1(value))
+      inline def setIsExpired(value: Cookie => Boolean): Self = StObject.set(x, "isExpired", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setList(value: String => js.Array[Cookie]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
+      inline def setList(value: String => js.Array[Cookie]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMatch(value: (Cookie, String) => Boolean): Self = StObject.set(x, "match", js.Any.fromFunction2(value))
+      inline def setMatch(value: (Cookie, String) => Boolean): Self = StObject.set(x, "match", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParse(value: String => Cookie): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+      inline def setParse(value: String => Cookie): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet(value: (String, String) => Boolean): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (String, String) => Boolean): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     }
   }
   
@@ -228,20 +199,16 @@ object cookiesMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setSessionTimeout(value: s): Self = StObject.set(x, "sessionTimeout", value.asInstanceOf[js.Any])
+      inline def setSessionTimeout(value: s): Self = StObject.set(x, "sessionTimeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSessionTimeoutUndefined: Self = StObject.set(x, "sessionTimeout", js.undefined)
+      inline def setSessionTimeoutUndefined: Self = StObject.set(x, "sessionTimeout", js.undefined)
     }
   }
   

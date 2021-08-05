@@ -19,6 +19,5 @@ object List {
   @JSImport("@ant-design/react-native", "List.Item")
   @js.native
   def Item: TypeofItem = js.native
-  @scala.inline
-  def Item_=(x: TypeofItem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+  inline def Item_=(x: TypeofItem): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
 }

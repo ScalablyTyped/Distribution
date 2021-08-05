@@ -29,22 +29,17 @@ trait SystemInfoOptions extends StObject {
 }
 object SystemInfoOptions {
   
-  @scala.inline
-  def apply(highThreshold: Double, lowThreshold: Double, timeout: Double): SystemInfoOptions = {
+  inline def apply(highThreshold: Double, lowThreshold: Double, timeout: Double): SystemInfoOptions = {
     val __obj = js.Dynamic.literal(highThreshold = highThreshold.asInstanceOf[js.Any], lowThreshold = lowThreshold.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemInfoOptions]
   }
   
-  @scala.inline
-  implicit class SystemInfoOptionsMutableBuilder[Self <: SystemInfoOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SystemInfoOptions](x: Self) {
     
-    @scala.inline
-    def setHighThreshold(value: Double): Self = StObject.set(x, "highThreshold", value.asInstanceOf[js.Any])
+    inline def setHighThreshold(value: Double): Self = StObject.set(x, "highThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowThreshold(value: Double): Self = StObject.set(x, "lowThreshold", value.asInstanceOf[js.Any])
+    inline def setLowThreshold(value: Double): Self = StObject.set(x, "lowThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

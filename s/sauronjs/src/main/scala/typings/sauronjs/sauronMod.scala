@@ -10,10 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object sauronMod {
   
-  @scala.inline
-  def apply(componentMap: SauronComponentMap): SauronInstance = ^.asInstanceOf[js.Dynamic].apply(componentMap.asInstanceOf[js.Any]).asInstanceOf[SauronInstance]
-  @scala.inline
-  def apply(componentMap: SauronComponentMap, id: String): SauronInstance = (^.asInstanceOf[js.Dynamic].apply(componentMap.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SauronInstance]
+  inline def apply(componentMap: SauronComponentMap): SauronInstance = ^.asInstanceOf[js.Dynamic].apply(componentMap.asInstanceOf[js.Any]).asInstanceOf[SauronInstance]
+  inline def apply(componentMap: SauronComponentMap, id: String): SauronInstance = (^.asInstanceOf[js.Dynamic].apply(componentMap.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SauronInstance]
   
   @JSImport("sauronjs/src/core/sauron", JSImport.Namespace)
   @js.native
@@ -25,17 +23,14 @@ object sauronMod {
   }
   object Info {
     
-    @scala.inline
-    def apply(total: Double): Info = {
+    inline def apply(total: Double): Info = {
       val __obj = js.Dynamic.literal(total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[Info]
     }
     
-    @scala.inline
-    implicit class InfoMutableBuilder[Self <: Info] (val x: Self) extends AnyVal {
+    extension [Self <: Info](x: Self) {
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
   }
   

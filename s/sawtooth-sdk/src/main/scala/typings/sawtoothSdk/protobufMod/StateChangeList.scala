@@ -42,10 +42,8 @@ object StateChangeList {
     * @param [properties] Properties to set
     * @returns StateChangeList instance
     */
-  @scala.inline
-  def create(): StateChangeList = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[StateChangeList]
-  @scala.inline
-  def create(properties: IStateChangeList): StateChangeList = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[StateChangeList]
+  inline def create(): StateChangeList = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[StateChangeList]
+  inline def create(properties: IStateChangeList): StateChangeList = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[StateChangeList]
   
   /**
     * Decodes a StateChangeList message from the specified reader or buffer.
@@ -55,14 +53,10 @@ object StateChangeList {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @scala.inline
-  def decode(reader: Reader): StateChangeList = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[StateChangeList]
-  @scala.inline
-  def decode(reader: Reader, length: Double): StateChangeList = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[StateChangeList]
-  @scala.inline
-  def decode(reader: Uint8Array): StateChangeList = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[StateChangeList]
-  @scala.inline
-  def decode(reader: Uint8Array, length: Double): StateChangeList = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[StateChangeList]
+  inline def decode(reader: Reader): StateChangeList = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[StateChangeList]
+  inline def decode(reader: Reader, length: Double): StateChangeList = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[StateChangeList]
+  inline def decode(reader: Uint8Array): StateChangeList = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[StateChangeList]
+  inline def decode(reader: Uint8Array, length: Double): StateChangeList = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[StateChangeList]
   
   /**
     * Decodes a StateChangeList message from the specified reader or buffer, length delimited.
@@ -71,10 +65,8 @@ object StateChangeList {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @scala.inline
-  def decodeDelimited(reader: Reader): StateChangeList = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[StateChangeList]
-  @scala.inline
-  def decodeDelimited(reader: Uint8Array): StateChangeList = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[StateChangeList]
+  inline def decodeDelimited(reader: Reader): StateChangeList = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[StateChangeList]
+  inline def decodeDelimited(reader: Uint8Array): StateChangeList = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[StateChangeList]
   
   /**
     * Encodes the specified StateChangeList message. Does not implicitly {@link StateChangeList.verify|verify} messages.
@@ -82,10 +74,8 @@ object StateChangeList {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @scala.inline
-  def encode(message: IStateChangeList): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encode(message: IStateChangeList, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encode(message: IStateChangeList): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encode(message: IStateChangeList, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified StateChangeList message, length delimited. Does not implicitly {@link StateChangeList.verify|verify} messages.
@@ -93,18 +83,15 @@ object StateChangeList {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @scala.inline
-  def encodeDelimited(message: IStateChangeList): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
-  @scala.inline
-  def encodeDelimited(message: IStateChangeList, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IStateChangeList): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  inline def encodeDelimited(message: IStateChangeList, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a StateChangeList message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns StateChangeList
     */
-  @scala.inline
-  def fromObject(`object`: StringDictionary[js.Any]): StateChangeList = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[StateChangeList]
+  inline def fromObject(`object`: StringDictionary[js.Any]): StateChangeList = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[StateChangeList]
   
   /**
     * Creates a plain object from a StateChangeList message. Also converts values to other types if specified.
@@ -112,16 +99,13 @@ object StateChangeList {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  @scala.inline
-  def toObject(message: StateChangeList): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
-  @scala.inline
-  def toObject(message: StateChangeList, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: StateChangeList): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  inline def toObject(message: StateChangeList, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a StateChangeList message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  @scala.inline
-  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  inline def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

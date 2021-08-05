@@ -13,19 +13,15 @@ trait AssociateWebsiteAuthorizationProviderResponse extends StObject {
 }
 object AssociateWebsiteAuthorizationProviderResponse {
   
-  @scala.inline
-  def apply(): AssociateWebsiteAuthorizationProviderResponse = {
+  inline def apply(): AssociateWebsiteAuthorizationProviderResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AssociateWebsiteAuthorizationProviderResponse]
   }
   
-  @scala.inline
-  implicit class AssociateWebsiteAuthorizationProviderResponseMutableBuilder[Self <: AssociateWebsiteAuthorizationProviderResponse] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateWebsiteAuthorizationProviderResponse](x: Self) {
     
-    @scala.inline
-    def setAuthorizationProviderId(value: Id): Self = StObject.set(x, "AuthorizationProviderId", value.asInstanceOf[js.Any])
+    inline def setAuthorizationProviderId(value: Id): Self = StObject.set(x, "AuthorizationProviderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorizationProviderIdUndefined: Self = StObject.set(x, "AuthorizationProviderId", js.undefined)
+    inline def setAuthorizationProviderIdUndefined: Self = StObject.set(x, "AuthorizationProviderId", js.undefined)
   }
 }

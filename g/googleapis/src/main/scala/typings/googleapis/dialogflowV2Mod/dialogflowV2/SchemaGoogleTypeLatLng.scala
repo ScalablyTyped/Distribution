@@ -25,25 +25,19 @@ trait SchemaGoogleTypeLatLng extends StObject {
 }
 object SchemaGoogleTypeLatLng {
   
-  @scala.inline
-  def apply(): SchemaGoogleTypeLatLng = {
+  inline def apply(): SchemaGoogleTypeLatLng = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleTypeLatLng]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleTypeLatLngMutableBuilder[Self <: SchemaGoogleTypeLatLng] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleTypeLatLng](x: Self) {
     
-    @scala.inline
-    def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+    inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
+    inline def setLatitudeUndefined: Self = StObject.set(x, "latitude", js.undefined)
     
-    @scala.inline
-    def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+    inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
+    inline def setLongitudeUndefined: Self = StObject.set(x, "longitude", js.undefined)
   }
 }

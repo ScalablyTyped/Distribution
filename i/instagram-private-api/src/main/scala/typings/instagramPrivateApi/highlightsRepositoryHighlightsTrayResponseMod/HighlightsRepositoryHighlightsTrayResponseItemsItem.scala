@@ -90,8 +90,7 @@ trait HighlightsRepositoryHighlightsTrayResponseItemsItem extends StObject {
 }
 object HighlightsRepositoryHighlightsTrayResponseItemsItem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     can_view_more_preview_comments: Boolean,
     can_viewer_reshare: Boolean,
     can_viewer_save: Boolean,
@@ -138,136 +137,92 @@ object HighlightsRepositoryHighlightsTrayResponseItemsItem {
     __obj.asInstanceOf[HighlightsRepositoryHighlightsTrayResponseItemsItem]
   }
   
-  @scala.inline
-  implicit class HighlightsRepositoryHighlightsTrayResponseItemsItemMutableBuilder[Self <: HighlightsRepositoryHighlightsTrayResponseItemsItem] (val x: Self) extends AnyVal {
+  extension [Self <: HighlightsRepositoryHighlightsTrayResponseItemsItem](x: Self) {
     
-    @scala.inline
-    def setCan_view_more_preview_comments(value: Boolean): Self = StObject.set(x, "can_view_more_preview_comments", value.asInstanceOf[js.Any])
+    inline def setCan_view_more_preview_comments(value: Boolean): Self = StObject.set(x, "can_view_more_preview_comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCan_viewer_reshare(value: Boolean): Self = StObject.set(x, "can_viewer_reshare", value.asInstanceOf[js.Any])
+    inline def setCan_viewer_reshare(value: Boolean): Self = StObject.set(x, "can_viewer_reshare", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCan_viewer_save(value: Boolean): Self = StObject.set(x, "can_viewer_save", value.asInstanceOf[js.Any])
+    inline def setCan_viewer_save(value: Boolean): Self = StObject.set(x, "can_viewer_save", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaption(value: HighlightsRepositoryHighlightsTrayResponseCaption): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
+    inline def setCaption(value: HighlightsRepositoryHighlightsTrayResponseCaption): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaption_is_edited(value: Boolean): Self = StObject.set(x, "caption_is_edited", value.asInstanceOf[js.Any])
+    inline def setCaption_is_edited(value: Boolean): Self = StObject.set(x, "caption_is_edited", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClient_cache_key(value: String): Self = StObject.set(x, "client_cache_key", value.asInstanceOf[js.Any])
+    inline def setClient_cache_key(value: String): Self = StObject.set(x, "client_cache_key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComment_count(value: Double): Self = StObject.set(x, "comment_count", value.asInstanceOf[js.Any])
+    inline def setComment_count(value: Double): Self = StObject.set(x, "comment_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComment_likes_enabled(value: Boolean): Self = StObject.set(x, "comment_likes_enabled", value.asInstanceOf[js.Any])
+    inline def setComment_likes_enabled(value: Boolean): Self = StObject.set(x, "comment_likes_enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComment_threading_enabled(value: Boolean): Self = StObject.set(x, "comment_threading_enabled", value.asInstanceOf[js.Any])
+    inline def setComment_threading_enabled(value: Boolean): Self = StObject.set(x, "comment_threading_enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevice_timestamp(value: Double): Self = StObject.set(x, "device_timestamp", value.asInstanceOf[js.Any])
+    inline def setDevice_timestamp(value: Double): Self = StObject.set(x, "device_timestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilter_type(value: Double): Self = StObject.set(x, "filter_type", value.asInstanceOf[js.Any])
+    inline def setFilter_type(value: Double): Self = StObject.set(x, "filter_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHas_audio(value: Boolean): Self = StObject.set(x, "has_audio", value.asInstanceOf[js.Any])
+    inline def setHas_audio(value: Boolean): Self = StObject.set(x, "has_audio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHas_liked(value: Boolean): Self = StObject.set(x, "has_liked", value.asInstanceOf[js.Any])
+    inline def setHas_liked(value: Boolean): Self = StObject.set(x, "has_liked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHas_more_comments(value: Boolean): Self = StObject.set(x, "has_more_comments", value.asInstanceOf[js.Any])
+    inline def setHas_more_comments(value: Boolean): Self = StObject.set(x, "has_more_comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage_versions2(value: HighlightsRepositoryHighlightsTrayResponseImageVersions2): Self = StObject.set(x, "image_versions2", value.asInstanceOf[js.Any])
+    inline def setImage_versions2(value: HighlightsRepositoryHighlightsTrayResponseImageVersions2): Self = StObject.set(x, "image_versions2", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_dash_eligible(value: Double): Self = StObject.set(x, "is_dash_eligible", value.asInstanceOf[js.Any])
+    inline def setIs_dash_eligible(value: Double): Self = StObject.set(x, "is_dash_eligible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLike_count(value: Double): Self = StObject.set(x, "like_count", value.asInstanceOf[js.Any])
+    inline def setLike_count(value: Double): Self = StObject.set(x, "like_count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax_num_visible_preview_comments(value: Double): Self = StObject.set(x, "max_num_visible_preview_comments", value.asInstanceOf[js.Any])
+    inline def setMax_num_visible_preview_comments(value: Double): Self = StObject.set(x, "max_num_visible_preview_comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedia_cropping_info(value: HighlightsRepositoryHighlightsTrayResponseMediaCroppingInfo): Self = StObject.set(x, "media_cropping_info", value.asInstanceOf[js.Any])
+    inline def setMedia_cropping_info(value: HighlightsRepositoryHighlightsTrayResponseMediaCroppingInfo): Self = StObject.set(x, "media_cropping_info", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMedia_type(value: Double): Self = StObject.set(x, "media_type", value.asInstanceOf[js.Any])
+    inline def setMedia_type(value: Double): Self = StObject.set(x, "media_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNearly_complete_copyright_match(value: Boolean): Self = StObject.set(x, "nearly_complete_copyright_match", value.asInstanceOf[js.Any])
+    inline def setNearly_complete_copyright_match(value: Boolean): Self = StObject.set(x, "nearly_complete_copyright_match", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext_max_id(value: String): Self = StObject.set(x, "next_max_id", value.asInstanceOf[js.Any])
+    inline def setNext_max_id(value: String): Self = StObject.set(x, "next_max_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumber_of_qualities(value: Double): Self = StObject.set(x, "number_of_qualities", value.asInstanceOf[js.Any])
+    inline def setNumber_of_qualities(value: Double): Self = StObject.set(x, "number_of_qualities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrganic_tracking_token(value: String): Self = StObject.set(x, "organic_tracking_token", value.asInstanceOf[js.Any])
+    inline def setOrganic_tracking_token(value: String): Self = StObject.set(x, "organic_tracking_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginal_height(value: Double): Self = StObject.set(x, "original_height", value.asInstanceOf[js.Any])
+    inline def setOriginal_height(value: Double): Self = StObject.set(x, "original_height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOriginal_width(value: Double): Self = StObject.set(x, "original_width", value.asInstanceOf[js.Any])
+    inline def setOriginal_width(value: Double): Self = StObject.set(x, "original_width", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoto_of_you(value: Boolean): Self = StObject.set(x, "photo_of_you", value.asInstanceOf[js.Any])
+    inline def setPhoto_of_you(value: Boolean): Self = StObject.set(x, "photo_of_you", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
+    inline def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreview_comments(value: js.Array[HighlightsRepositoryHighlightsTrayResponsePreviewCommentsItem]): Self = StObject.set(x, "preview_comments", value.asInstanceOf[js.Any])
+    inline def setPreview_comments(value: js.Array[HighlightsRepositoryHighlightsTrayResponsePreviewCommentsItem]): Self = StObject.set(x, "preview_comments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreview_commentsVarargs(value: HighlightsRepositoryHighlightsTrayResponsePreviewCommentsItem*): Self = StObject.set(x, "preview_comments", js.Array(value :_*))
+    inline def setPreview_commentsVarargs(value: HighlightsRepositoryHighlightsTrayResponsePreviewCommentsItem*): Self = StObject.set(x, "preview_comments", js.Array(value :_*))
     
-    @scala.inline
-    def setProduct_type(value: String): Self = StObject.set(x, "product_type", value.asInstanceOf[js.Any])
+    inline def setProduct_type(value: String): Self = StObject.set(x, "product_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaken_at(value: Double): Self = StObject.set(x, "taken_at", value.asInstanceOf[js.Any])
+    inline def setTaken_at(value: Double): Self = StObject.set(x, "taken_at", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThumbnails(value: HighlightsRepositoryHighlightsTrayResponseThumbnails): Self = StObject.set(x, "thumbnails", value.asInstanceOf[js.Any])
+    inline def setThumbnails(value: HighlightsRepositoryHighlightsTrayResponseThumbnails): Self = StObject.set(x, "thumbnails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: HighlightsRepositoryHighlightsTrayResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: HighlightsRepositoryHighlightsTrayResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideo_codec(value: String): Self = StObject.set(x, "video_codec", value.asInstanceOf[js.Any])
+    inline def setVideo_codec(value: String): Self = StObject.set(x, "video_codec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideo_dash_manifest(value: String): Self = StObject.set(x, "video_dash_manifest", value.asInstanceOf[js.Any])
+    inline def setVideo_dash_manifest(value: String): Self = StObject.set(x, "video_dash_manifest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideo_duration(value: Double): Self = StObject.set(x, "video_duration", value.asInstanceOf[js.Any])
+    inline def setVideo_duration(value: Double): Self = StObject.set(x, "video_duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideo_versions(value: js.Array[HighlightsRepositoryHighlightsTrayResponseVideoVersionsItem]): Self = StObject.set(x, "video_versions", value.asInstanceOf[js.Any])
+    inline def setVideo_versions(value: js.Array[HighlightsRepositoryHighlightsTrayResponseVideoVersionsItem]): Self = StObject.set(x, "video_versions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideo_versionsVarargs(value: HighlightsRepositoryHighlightsTrayResponseVideoVersionsItem*): Self = StObject.set(x, "video_versions", js.Array(value :_*))
+    inline def setVideo_versionsVarargs(value: HighlightsRepositoryHighlightsTrayResponseVideoVersionsItem*): Self = StObject.set(x, "video_versions", js.Array(value :_*))
     
-    @scala.inline
-    def setView_count(value: Double): Self = StObject.set(x, "view_count", value.asInstanceOf[js.Any])
+    inline def setView_count(value: Double): Self = StObject.set(x, "view_count", value.asInstanceOf[js.Any])
   }
 }

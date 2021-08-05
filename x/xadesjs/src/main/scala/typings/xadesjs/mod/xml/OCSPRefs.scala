@@ -13,6 +13,5 @@ class OCSPRefs ()
   extends typings.xadesjs.xmlMod.OCSPRefs
 object OCSPRefs {
   
-  @scala.inline
-  def apply: Instantiable0[typings.xadesjs.xmlMod.OCSPRefs] = ^.asInstanceOf[js.Dynamic].selectDynamic("OCSPRefs").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.OCSPRefs]]
+  inline def apply: Instantiable0[typings.xadesjs.xmlMod.OCSPRefs] = ^.asInstanceOf[js.Dynamic].selectDynamic("OCSPRefs").asInstanceOf[Instantiable0[typings.xadesjs.xmlMod.OCSPRefs]]
 }

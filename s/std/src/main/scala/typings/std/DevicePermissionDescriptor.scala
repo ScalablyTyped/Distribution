@@ -18,22 +18,17 @@ trait DevicePermissionDescriptor
 }
 object DevicePermissionDescriptor {
   
-  @scala.inline
-  def apply(name: camera | microphone | speaker): DevicePermissionDescriptor = {
+  inline def apply(name: camera | microphone | speaker): DevicePermissionDescriptor = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[DevicePermissionDescriptor]
   }
   
-  @scala.inline
-  implicit class DevicePermissionDescriptorMutableBuilder[Self <: DevicePermissionDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: DevicePermissionDescriptor](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: java.lang.String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: java.lang.String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
+    inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
     
-    @scala.inline
-    def setName(value: camera | microphone | speaker): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: camera | microphone | speaker): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

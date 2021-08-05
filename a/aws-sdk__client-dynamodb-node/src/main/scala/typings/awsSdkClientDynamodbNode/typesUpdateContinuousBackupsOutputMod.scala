@@ -26,23 +26,18 @@ object typesUpdateContinuousBackupsOutputMod {
   }
   object UpdateContinuousBackupsOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): UpdateContinuousBackupsOutput = {
+    inline def apply($metadata: ResponseMetadata): UpdateContinuousBackupsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[UpdateContinuousBackupsOutput]
     }
     
-    @scala.inline
-    implicit class UpdateContinuousBackupsOutputMutableBuilder[Self <: UpdateContinuousBackupsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: UpdateContinuousBackupsOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContinuousBackupsDescription(value: UnmarshalledContinuousBackupsDescription): Self = StObject.set(x, "ContinuousBackupsDescription", value.asInstanceOf[js.Any])
+      inline def setContinuousBackupsDescription(value: UnmarshalledContinuousBackupsDescription): Self = StObject.set(x, "ContinuousBackupsDescription", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContinuousBackupsDescriptionUndefined: Self = StObject.set(x, "ContinuousBackupsDescription", js.undefined)
+      inline def setContinuousBackupsDescriptionUndefined: Self = StObject.set(x, "ContinuousBackupsDescription", js.undefined)
     }
   }
 }

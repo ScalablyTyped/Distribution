@@ -17,19 +17,15 @@ trait PageScrollToOptions
 }
 object PageScrollToOptions {
   
-  @scala.inline
-  def apply(duration: Double, scrollTop: Double): PageScrollToOptions = {
+  inline def apply(duration: Double, scrollTop: Double): PageScrollToOptions = {
     val __obj = js.Dynamic.literal(duration = duration.asInstanceOf[js.Any], scrollTop = scrollTop.asInstanceOf[js.Any])
     __obj.asInstanceOf[PageScrollToOptions]
   }
   
-  @scala.inline
-  implicit class PageScrollToOptionsMutableBuilder[Self <: PageScrollToOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PageScrollToOptions](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
+    inline def setScrollTop(value: Double): Self = StObject.set(x, "scrollTop", value.asInstanceOf[js.Any])
   }
 }

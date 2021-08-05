@@ -11,6 +11,5 @@ object forceHiddenStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(node: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def default(node: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

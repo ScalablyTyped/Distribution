@@ -67,8 +67,7 @@ object global {
   @JSGlobal("OidcClient")
   @js.native
   def OidcClient: OidcClientStatic = js.native
-  @scala.inline
-  def OidcClient_=(x: OidcClientStatic): Unit = js.Dynamic.global.updateDynamic("OidcClient")(x.asInstanceOf[js.Any])
+  inline def OidcClient_=(x: OidcClientStatic): Unit = js.Dynamic.global.updateDynamic("OidcClient")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSGlobal("OidcTokenManager")
@@ -81,6 +80,5 @@ object global {
   @JSGlobal("OidcTokenManager")
   @js.native
   def OidcTokenManager: OidcTokenManagerStatic = js.native
-  @scala.inline
-  def OidcTokenManager_=(x: OidcTokenManagerStatic): Unit = js.Dynamic.global.updateDynamic("OidcTokenManager")(x.asInstanceOf[js.Any])
+  inline def OidcTokenManager_=(x: OidcTokenManagerStatic): Unit = js.Dynamic.global.updateDynamic("OidcTokenManager")(x.asInstanceOf[js.Any])
 }

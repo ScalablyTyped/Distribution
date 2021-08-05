@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait HookType extends StObject
 object HookType {
   
-  @scala.inline
-  def afterAll: typings.jestTypes.jestTypesStrings.afterAll = "afterAll".asInstanceOf[typings.jestTypes.jestTypesStrings.afterAll]
+  inline def afterAll: typings.jestTypes.jestTypesStrings.afterAll = "afterAll".asInstanceOf[typings.jestTypes.jestTypesStrings.afterAll]
   
-  @scala.inline
-  def afterEach: typings.jestTypes.jestTypesStrings.afterEach = "afterEach".asInstanceOf[typings.jestTypes.jestTypesStrings.afterEach]
+  inline def afterEach: typings.jestTypes.jestTypesStrings.afterEach = "afterEach".asInstanceOf[typings.jestTypes.jestTypesStrings.afterEach]
   
-  @scala.inline
-  def beforeAll: typings.jestTypes.jestTypesStrings.beforeAll = "beforeAll".asInstanceOf[typings.jestTypes.jestTypesStrings.beforeAll]
+  inline def beforeAll: typings.jestTypes.jestTypesStrings.beforeAll = "beforeAll".asInstanceOf[typings.jestTypes.jestTypesStrings.beforeAll]
   
-  @scala.inline
-  def beforeEach: typings.jestTypes.jestTypesStrings.beforeEach = "beforeEach".asInstanceOf[typings.jestTypes.jestTypesStrings.beforeEach]
+  inline def beforeEach: typings.jestTypes.jestTypesStrings.beforeEach = "beforeEach".asInstanceOf[typings.jestTypes.jestTypesStrings.beforeEach]
 }

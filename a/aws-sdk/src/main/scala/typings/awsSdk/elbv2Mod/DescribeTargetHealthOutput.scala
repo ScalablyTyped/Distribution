@@ -13,22 +13,17 @@ trait DescribeTargetHealthOutput extends StObject {
 }
 object DescribeTargetHealthOutput {
   
-  @scala.inline
-  def apply(): DescribeTargetHealthOutput = {
+  inline def apply(): DescribeTargetHealthOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeTargetHealthOutput]
   }
   
-  @scala.inline
-  implicit class DescribeTargetHealthOutputMutableBuilder[Self <: DescribeTargetHealthOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeTargetHealthOutput](x: Self) {
     
-    @scala.inline
-    def setTargetHealthDescriptions(value: TargetHealthDescriptions): Self = StObject.set(x, "TargetHealthDescriptions", value.asInstanceOf[js.Any])
+    inline def setTargetHealthDescriptions(value: TargetHealthDescriptions): Self = StObject.set(x, "TargetHealthDescriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetHealthDescriptionsUndefined: Self = StObject.set(x, "TargetHealthDescriptions", js.undefined)
+    inline def setTargetHealthDescriptionsUndefined: Self = StObject.set(x, "TargetHealthDescriptions", js.undefined)
     
-    @scala.inline
-    def setTargetHealthDescriptionsVarargs(value: TargetHealthDescription*): Self = StObject.set(x, "TargetHealthDescriptions", js.Array(value :_*))
+    inline def setTargetHealthDescriptionsVarargs(value: TargetHealthDescription*): Self = StObject.set(x, "TargetHealthDescriptions", js.Array(value :_*))
   }
 }

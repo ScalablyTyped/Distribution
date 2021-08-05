@@ -25,19 +25,15 @@ trait SystemError
 }
 object SystemError {
   
-  @scala.inline
-  def apply(errorData: js.Object, errorType: IMErrorType): SystemError = {
+  inline def apply(errorData: js.Object, errorType: IMErrorType): SystemError = {
     val __obj = js.Dynamic.literal(errorData = errorData.asInstanceOf[js.Any], errorType = errorType.asInstanceOf[js.Any])
     __obj.asInstanceOf[SystemError]
   }
   
-  @scala.inline
-  implicit class SystemErrorMutableBuilder[Self <: SystemError] (val x: Self) extends AnyVal {
+  extension [Self <: SystemError](x: Self) {
     
-    @scala.inline
-    def setErrorData(value: js.Object): Self = StObject.set(x, "errorData", value.asInstanceOf[js.Any])
+    inline def setErrorData(value: js.Object): Self = StObject.set(x, "errorData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorType(value: IMErrorType): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
+    inline def setErrorType(value: IMErrorType): Self = StObject.set(x, "errorType", value.asInstanceOf[js.Any])
   }
 }

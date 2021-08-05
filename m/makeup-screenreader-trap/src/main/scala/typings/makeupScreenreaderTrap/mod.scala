@@ -11,9 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def trap(el: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trap")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def trap(el: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("trap")(el.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def untrap(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("untrap")().asInstanceOf[Unit]
+  inline def untrap(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("untrap")().asInstanceOf[Unit]
 }

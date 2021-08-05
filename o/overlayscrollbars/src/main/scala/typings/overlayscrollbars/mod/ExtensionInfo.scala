@@ -14,25 +14,19 @@ trait ExtensionInfo extends StObject {
 }
 object ExtensionInfo {
   
-  @scala.inline
-  def apply(extensionFactory: (js.Object, Compatibility, js.Any) => Extension, name: String): ExtensionInfo = {
+  inline def apply(extensionFactory: (js.Object, Compatibility, js.Any) => Extension, name: String): ExtensionInfo = {
     val __obj = js.Dynamic.literal(extensionFactory = js.Any.fromFunction3(extensionFactory), name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionInfo]
   }
   
-  @scala.inline
-  implicit class ExtensionInfoMutableBuilder[Self <: ExtensionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionInfo](x: Self) {
     
-    @scala.inline
-    def setDefaultOptions(value: js.Object): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
+    inline def setDefaultOptions(value: js.Object): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultOptionsUndefined: Self = StObject.set(x, "defaultOptions", js.undefined)
+    inline def setDefaultOptionsUndefined: Self = StObject.set(x, "defaultOptions", js.undefined)
     
-    @scala.inline
-    def setExtensionFactory(value: (js.Object, Compatibility, js.Any) => Extension): Self = StObject.set(x, "extensionFactory", js.Any.fromFunction3(value))
+    inline def setExtensionFactory(value: (js.Object, Compatibility, js.Any) => Extension): Self = StObject.set(x, "extensionFactory", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

@@ -13,17 +13,14 @@ trait AmplitudeSourceProperties extends StObject {
 }
 object AmplitudeSourceProperties {
   
-  @scala.inline
-  def apply(`object`: Object): AmplitudeSourceProperties = {
+  inline def apply(`object`: Object): AmplitudeSourceProperties = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AmplitudeSourceProperties]
   }
   
-  @scala.inline
-  implicit class AmplitudeSourcePropertiesMutableBuilder[Self <: AmplitudeSourceProperties] (val x: Self) extends AnyVal {
+  extension [Self <: AmplitudeSourceProperties](x: Self) {
     
-    @scala.inline
-    def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    inline def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }
 }

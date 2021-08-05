@@ -26,49 +26,35 @@ trait BillingPlanPreview extends StObject {
 }
 object BillingPlanPreview {
   
-  @scala.inline
-  def apply(): BillingPlanPreview = {
+  inline def apply(): BillingPlanPreview = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BillingPlanPreview]
   }
   
-  @scala.inline
-  implicit class BillingPlanPreviewMutableBuilder[Self <: BillingPlanPreview] (val x: Self) extends AnyVal {
+  extension [Self <: BillingPlanPreview](x: Self) {
     
-    @scala.inline
-    def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
+    inline def setCurrencyCode(value: String): Self = StObject.set(x, "currencyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
+    inline def setCurrencyCodeUndefined: Self = StObject.set(x, "currencyCode", js.undefined)
     
-    @scala.inline
-    def setInvoice(value: BillingInvoice): Self = StObject.set(x, "invoice", value.asInstanceOf[js.Any])
+    inline def setInvoice(value: BillingInvoice): Self = StObject.set(x, "invoice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvoiceUndefined: Self = StObject.set(x, "invoice", js.undefined)
+    inline def setInvoiceUndefined: Self = StObject.set(x, "invoice", js.undefined)
     
-    @scala.inline
-    def setIsProrated(value: String): Self = StObject.set(x, "isProrated", value.asInstanceOf[js.Any])
+    inline def setIsProrated(value: String): Self = StObject.set(x, "isProrated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsProratedUndefined: Self = StObject.set(x, "isProrated", js.undefined)
+    inline def setIsProratedUndefined: Self = StObject.set(x, "isProrated", js.undefined)
     
-    @scala.inline
-    def setSubtotalAmount(value: String): Self = StObject.set(x, "subtotalAmount", value.asInstanceOf[js.Any])
+    inline def setSubtotalAmount(value: String): Self = StObject.set(x, "subtotalAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubtotalAmountUndefined: Self = StObject.set(x, "subtotalAmount", js.undefined)
+    inline def setSubtotalAmountUndefined: Self = StObject.set(x, "subtotalAmount", js.undefined)
     
-    @scala.inline
-    def setTaxAmount(value: String): Self = StObject.set(x, "taxAmount", value.asInstanceOf[js.Any])
+    inline def setTaxAmount(value: String): Self = StObject.set(x, "taxAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTaxAmountUndefined: Self = StObject.set(x, "taxAmount", js.undefined)
+    inline def setTaxAmountUndefined: Self = StObject.set(x, "taxAmount", js.undefined)
     
-    @scala.inline
-    def setTotalAmount(value: String): Self = StObject.set(x, "totalAmount", value.asInstanceOf[js.Any])
+    inline def setTotalAmount(value: String): Self = StObject.set(x, "totalAmount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalAmountUndefined: Self = StObject.set(x, "totalAmount", js.undefined)
+    inline def setTotalAmountUndefined: Self = StObject.set(x, "totalAmount", js.undefined)
   }
 }

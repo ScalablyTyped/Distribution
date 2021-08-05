@@ -41,34 +41,25 @@ trait PlusNativeUIConfirmOptions extends StObject {
 }
 object PlusNativeUIConfirmOptions {
   
-  @scala.inline
-  def apply(): PlusNativeUIConfirmOptions = {
+  inline def apply(): PlusNativeUIConfirmOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusNativeUIConfirmOptions]
   }
   
-  @scala.inline
-  implicit class PlusNativeUIConfirmOptionsMutableBuilder[Self <: PlusNativeUIConfirmOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PlusNativeUIConfirmOptions](x: Self) {
     
-    @scala.inline
-    def setButtons(value: js.Array[js.Any]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: js.Array[js.Any]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+    inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    @scala.inline
-    def setButtonsVarargs(value: js.Any*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: js.Any*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setVerticalAlign(value: String): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
+    inline def setVerticalAlign(value: String): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
+    inline def setVerticalAlignUndefined: Self = StObject.set(x, "verticalAlign", js.undefined)
   }
 }

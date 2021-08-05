@@ -30,8 +30,7 @@ trait Any extends StObject {
 }
 object Any {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     any: Out,
     boolean: BooleanConstructor,
     json: In,
@@ -42,22 +41,16 @@ object Any {
     __obj.asInstanceOf[Any]
   }
   
-  @scala.inline
-  implicit class AnyMutableBuilder[Self <: Any] (val x: Self) extends AnyVal {
+  extension [Self <: Any](x: Self) {
     
-    @scala.inline
-    def setAny(value: Out): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
+    inline def setAny(value: Out): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoolean(value: BooleanConstructor): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
+    inline def setBoolean(value: BooleanConstructor): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJson(value: In): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+    inline def setJson(value: In): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumber(value: NumberConstructor): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
+    inline def setNumber(value: NumberConstructor): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setString(value: StringConstructor): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+    inline def setString(value: StringConstructor): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
   }
 }

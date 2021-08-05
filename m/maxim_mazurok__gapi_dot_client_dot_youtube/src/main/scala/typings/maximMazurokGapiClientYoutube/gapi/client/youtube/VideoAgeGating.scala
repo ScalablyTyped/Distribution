@@ -20,31 +20,23 @@ trait VideoAgeGating extends StObject {
 }
 object VideoAgeGating {
   
-  @scala.inline
-  def apply(): VideoAgeGating = {
+  inline def apply(): VideoAgeGating = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VideoAgeGating]
   }
   
-  @scala.inline
-  implicit class VideoAgeGatingMutableBuilder[Self <: VideoAgeGating] (val x: Self) extends AnyVal {
+  extension [Self <: VideoAgeGating](x: Self) {
     
-    @scala.inline
-    def setAlcoholContent(value: Boolean): Self = StObject.set(x, "alcoholContent", value.asInstanceOf[js.Any])
+    inline def setAlcoholContent(value: Boolean): Self = StObject.set(x, "alcoholContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlcoholContentUndefined: Self = StObject.set(x, "alcoholContent", js.undefined)
+    inline def setAlcoholContentUndefined: Self = StObject.set(x, "alcoholContent", js.undefined)
     
-    @scala.inline
-    def setRestricted(value: Boolean): Self = StObject.set(x, "restricted", value.asInstanceOf[js.Any])
+    inline def setRestricted(value: Boolean): Self = StObject.set(x, "restricted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestrictedUndefined: Self = StObject.set(x, "restricted", js.undefined)
+    inline def setRestrictedUndefined: Self = StObject.set(x, "restricted", js.undefined)
     
-    @scala.inline
-    def setVideoGameRating(value: String): Self = StObject.set(x, "videoGameRating", value.asInstanceOf[js.Any])
+    inline def setVideoGameRating(value: String): Self = StObject.set(x, "videoGameRating", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoGameRatingUndefined: Self = StObject.set(x, "videoGameRating", js.undefined)
+    inline def setVideoGameRatingUndefined: Self = StObject.set(x, "videoGameRating", js.undefined)
   }
 }

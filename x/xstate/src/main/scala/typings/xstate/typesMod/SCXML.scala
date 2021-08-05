@@ -81,52 +81,38 @@ object SCXML {
   }
   object Event {
     
-    @scala.inline
-    def apply[TEvent /* <: EventObject */](data: TEvent, name: String, `type`: platform | internal | external): typings.xstate.typesMod.SCXML.Event[TEvent] = {
+    inline def apply[TEvent /* <: EventObject */](data: TEvent, name: String, `type`: platform | internal | external): typings.xstate.typesMod.SCXML.Event[TEvent] = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("$$type")("scxml")
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.xstate.typesMod.SCXML.Event[TEvent]]
     }
     
-    @scala.inline
-    implicit class EventMutableBuilder[Self <: typings.xstate.typesMod.SCXML.Event[?], TEvent /* <: EventObject */] (val x: Self & typings.xstate.typesMod.SCXML.Event[TEvent]) extends AnyVal {
+    extension [Self <: typings.xstate.typesMod.SCXML.Event[?], TEvent /* <: EventObject */](x: Self & typings.xstate.typesMod.SCXML.Event[TEvent]) {
       
-      @scala.inline
-      def setData(value: TEvent): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: TEvent): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDollarDollartype(value: scxml): Self = StObject.set(x, "$$type", value.asInstanceOf[js.Any])
+      inline def setDollarDollartype(value: scxml): Self = StObject.set(x, "$$type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvokeid(value: String): Self = StObject.set(x, "invokeid", value.asInstanceOf[js.Any])
+      inline def setInvokeid(value: String): Self = StObject.set(x, "invokeid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInvokeidUndefined: Self = StObject.set(x, "invokeid", js.undefined)
+      inline def setInvokeidUndefined: Self = StObject.set(x, "invokeid", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+      inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
+      inline def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
       
-      @scala.inline
-      def setOrigintype(value: String): Self = StObject.set(x, "origintype", value.asInstanceOf[js.Any])
+      inline def setOrigintype(value: String): Self = StObject.set(x, "origintype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrigintypeUndefined: Self = StObject.set(x, "origintype", js.undefined)
+      inline def setOrigintypeUndefined: Self = StObject.set(x, "origintype", js.undefined)
       
-      @scala.inline
-      def setSendid(value: String): Self = StObject.set(x, "sendid", value.asInstanceOf[js.Any])
+      inline def setSendid(value: String): Self = StObject.set(x, "sendid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSendidUndefined: Self = StObject.set(x, "sendid", js.undefined)
+      inline def setSendidUndefined: Self = StObject.set(x, "sendid", js.undefined)
       
-      @scala.inline
-      def setType(value: platform | internal | external): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: platform | internal | external): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

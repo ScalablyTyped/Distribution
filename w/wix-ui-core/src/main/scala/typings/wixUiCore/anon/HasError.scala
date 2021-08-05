@@ -10,16 +10,13 @@ trait HasError extends StObject {
 }
 object HasError {
   
-  @scala.inline
-  def apply(hasError: Boolean): HasError = {
+  inline def apply(hasError: Boolean): HasError = {
     val __obj = js.Dynamic.literal(hasError = hasError.asInstanceOf[js.Any])
     __obj.asInstanceOf[HasError]
   }
   
-  @scala.inline
-  implicit class HasErrorMutableBuilder[Self <: HasError] (val x: Self) extends AnyVal {
+  extension [Self <: HasError](x: Self) {
     
-    @scala.inline
-    def setHasError(value: Boolean): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
+    inline def setHasError(value: Boolean): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
   }
 }

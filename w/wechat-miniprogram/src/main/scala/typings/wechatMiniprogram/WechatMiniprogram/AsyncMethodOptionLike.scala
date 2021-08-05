@@ -10,19 +10,15 @@ trait AsyncMethodOptionLike extends StObject {
 }
 object AsyncMethodOptionLike {
   
-  @scala.inline
-  def apply(): AsyncMethodOptionLike = {
+  inline def apply(): AsyncMethodOptionLike = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AsyncMethodOptionLike]
   }
   
-  @scala.inline
-  implicit class AsyncMethodOptionLikeMutableBuilder[Self <: AsyncMethodOptionLike] (val x: Self) extends AnyVal {
+  extension [Self <: AsyncMethodOptionLike](x: Self) {
     
-    @scala.inline
-    def setSuccess(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+    inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
   }
 }

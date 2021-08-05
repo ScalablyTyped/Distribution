@@ -68,88 +68,61 @@ trait CaseDetails extends StObject {
 }
 object CaseDetails {
   
-  @scala.inline
-  def apply(): CaseDetails = {
+  inline def apply(): CaseDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CaseDetails]
   }
   
-  @scala.inline
-  implicit class CaseDetailsMutableBuilder[Self <: CaseDetails] (val x: Self) extends AnyVal {
+  extension [Self <: CaseDetails](x: Self) {
     
-    @scala.inline
-    def setCaseId(value: CaseId): Self = StObject.set(x, "caseId", value.asInstanceOf[js.Any])
+    inline def setCaseId(value: CaseId): Self = StObject.set(x, "caseId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaseIdUndefined: Self = StObject.set(x, "caseId", js.undefined)
+    inline def setCaseIdUndefined: Self = StObject.set(x, "caseId", js.undefined)
     
-    @scala.inline
-    def setCategoryCode(value: CategoryCode): Self = StObject.set(x, "categoryCode", value.asInstanceOf[js.Any])
+    inline def setCategoryCode(value: CategoryCode): Self = StObject.set(x, "categoryCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCategoryCodeUndefined: Self = StObject.set(x, "categoryCode", js.undefined)
+    inline def setCategoryCodeUndefined: Self = StObject.set(x, "categoryCode", js.undefined)
     
-    @scala.inline
-    def setCcEmailAddresses(value: CcEmailAddressList): Self = StObject.set(x, "ccEmailAddresses", value.asInstanceOf[js.Any])
+    inline def setCcEmailAddresses(value: CcEmailAddressList): Self = StObject.set(x, "ccEmailAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCcEmailAddressesUndefined: Self = StObject.set(x, "ccEmailAddresses", js.undefined)
+    inline def setCcEmailAddressesUndefined: Self = StObject.set(x, "ccEmailAddresses", js.undefined)
     
-    @scala.inline
-    def setCcEmailAddressesVarargs(value: CcEmailAddress*): Self = StObject.set(x, "ccEmailAddresses", js.Array(value :_*))
+    inline def setCcEmailAddressesVarargs(value: CcEmailAddress*): Self = StObject.set(x, "ccEmailAddresses", js.Array(value :_*))
     
-    @scala.inline
-    def setDisplayId(value: DisplayId): Self = StObject.set(x, "displayId", value.asInstanceOf[js.Any])
+    inline def setDisplayId(value: DisplayId): Self = StObject.set(x, "displayId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayIdUndefined: Self = StObject.set(x, "displayId", js.undefined)
+    inline def setDisplayIdUndefined: Self = StObject.set(x, "displayId", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: Language): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: Language): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setRecentCommunications(value: RecentCaseCommunications): Self = StObject.set(x, "recentCommunications", value.asInstanceOf[js.Any])
+    inline def setRecentCommunications(value: RecentCaseCommunications): Self = StObject.set(x, "recentCommunications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecentCommunicationsUndefined: Self = StObject.set(x, "recentCommunications", js.undefined)
+    inline def setRecentCommunicationsUndefined: Self = StObject.set(x, "recentCommunications", js.undefined)
     
-    @scala.inline
-    def setServiceCode(value: ServiceCode): Self = StObject.set(x, "serviceCode", value.asInstanceOf[js.Any])
+    inline def setServiceCode(value: ServiceCode): Self = StObject.set(x, "serviceCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceCodeUndefined: Self = StObject.set(x, "serviceCode", js.undefined)
+    inline def setServiceCodeUndefined: Self = StObject.set(x, "serviceCode", js.undefined)
     
-    @scala.inline
-    def setSeverityCode(value: SeverityCode): Self = StObject.set(x, "severityCode", value.asInstanceOf[js.Any])
+    inline def setSeverityCode(value: SeverityCode): Self = StObject.set(x, "severityCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeverityCodeUndefined: Self = StObject.set(x, "severityCode", js.undefined)
+    inline def setSeverityCodeUndefined: Self = StObject.set(x, "severityCode", js.undefined)
     
-    @scala.inline
-    def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Status): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setSubject(value: Subject): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: Subject): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
+    inline def setSubjectUndefined: Self = StObject.set(x, "subject", js.undefined)
     
-    @scala.inline
-    def setSubmittedBy(value: SubmittedBy): Self = StObject.set(x, "submittedBy", value.asInstanceOf[js.Any])
+    inline def setSubmittedBy(value: SubmittedBy): Self = StObject.set(x, "submittedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubmittedByUndefined: Self = StObject.set(x, "submittedBy", js.undefined)
+    inline def setSubmittedByUndefined: Self = StObject.set(x, "submittedBy", js.undefined)
     
-    @scala.inline
-    def setTimeCreated(value: TimeCreated): Self = StObject.set(x, "timeCreated", value.asInstanceOf[js.Any])
+    inline def setTimeCreated(value: TimeCreated): Self = StObject.set(x, "timeCreated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeCreatedUndefined: Self = StObject.set(x, "timeCreated", js.undefined)
+    inline def setTimeCreatedUndefined: Self = StObject.set(x, "timeCreated", js.undefined)
   }
 }

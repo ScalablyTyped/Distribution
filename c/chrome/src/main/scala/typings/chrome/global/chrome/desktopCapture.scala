@@ -19,11 +19,8 @@ object desktopCapture {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def cancelChooseDesktopMedia(desktopMediaRequestId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelChooseDesktopMedia")(desktopMediaRequestId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def cancelChooseDesktopMedia(desktopMediaRequestId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelChooseDesktopMedia")(desktopMediaRequestId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def chooseDesktopMedia(sources: js.Array[String], callback: js.Function1[/* streamId */ String, Unit]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("chooseDesktopMedia")(sources.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def chooseDesktopMedia(sources: js.Array[String], targetTab: Tab, callback: js.Function1[/* streamId */ String, Unit]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("chooseDesktopMedia")(sources.asInstanceOf[js.Any], targetTab.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def chooseDesktopMedia(sources: js.Array[String], callback: js.Function1[/* streamId */ String, Unit]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("chooseDesktopMedia")(sources.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def chooseDesktopMedia(sources: js.Array[String], targetTab: Tab, callback: js.Function1[/* streamId */ String, Unit]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("chooseDesktopMedia")(sources.asInstanceOf[js.Any], targetTab.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

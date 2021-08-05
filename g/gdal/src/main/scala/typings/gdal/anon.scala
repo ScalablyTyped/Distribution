@@ -14,20 +14,16 @@ object anon {
   }
   object GeoTransform {
     
-    @scala.inline
-    def apply(geoTransform: js.Any, rasterSize: js.Any): GeoTransform = {
+    inline def apply(geoTransform: js.Any, rasterSize: js.Any): GeoTransform = {
       val __obj = js.Dynamic.literal(geoTransform = geoTransform.asInstanceOf[js.Any], rasterSize = rasterSize.asInstanceOf[js.Any])
       __obj.asInstanceOf[GeoTransform]
     }
     
-    @scala.inline
-    implicit class GeoTransformMutableBuilder[Self <: GeoTransform] (val x: Self) extends AnyVal {
+    extension [Self <: GeoTransform](x: Self) {
       
-      @scala.inline
-      def setGeoTransform(value: js.Any): Self = StObject.set(x, "geoTransform", value.asInstanceOf[js.Any])
+      inline def setGeoTransform(value: js.Any): Self = StObject.set(x, "geoTransform", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRasterSize(value: js.Any): Self = StObject.set(x, "rasterSize", value.asInstanceOf[js.Any])
+      inline def setRasterSize(value: js.Any): Self = StObject.set(x, "rasterSize", value.asInstanceOf[js.Any])
     }
   }
   
@@ -39,20 +35,16 @@ object anon {
   }
   object Unit {
     
-    @scala.inline
-    def apply(unit: js.Any, value: js.Any): Unit = {
+    inline def apply(unit: js.Any, value: js.Any): Unit = {
       val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Unit]
     }
     
-    @scala.inline
-    implicit class UnitMutableBuilder[Self <: Unit] (val x: Self) extends AnyVal {
+    extension [Self <: Unit](x: Self) {
       
-      @scala.inline
-      def setUnit(value: js.Any): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+      inline def setUnit(value: js.Any): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

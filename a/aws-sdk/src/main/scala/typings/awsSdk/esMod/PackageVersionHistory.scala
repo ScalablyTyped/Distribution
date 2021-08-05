@@ -23,31 +23,23 @@ trait PackageVersionHistory extends StObject {
 }
 object PackageVersionHistory {
   
-  @scala.inline
-  def apply(): PackageVersionHistory = {
+  inline def apply(): PackageVersionHistory = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PackageVersionHistory]
   }
   
-  @scala.inline
-  implicit class PackageVersionHistoryMutableBuilder[Self <: PackageVersionHistory] (val x: Self) extends AnyVal {
+  extension [Self <: PackageVersionHistory](x: Self) {
     
-    @scala.inline
-    def setCommitMessage(value: CommitMessage): Self = StObject.set(x, "CommitMessage", value.asInstanceOf[js.Any])
+    inline def setCommitMessage(value: CommitMessage): Self = StObject.set(x, "CommitMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitMessageUndefined: Self = StObject.set(x, "CommitMessage", js.undefined)
+    inline def setCommitMessageUndefined: Self = StObject.set(x, "CommitMessage", js.undefined)
     
-    @scala.inline
-    def setCreatedAt(value: CreatedAt): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
+    inline def setCreatedAt(value: CreatedAt): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
+    inline def setCreatedAtUndefined: Self = StObject.set(x, "CreatedAt", js.undefined)
     
-    @scala.inline
-    def setPackageVersion(value: PackageVersion): Self = StObject.set(x, "PackageVersion", value.asInstanceOf[js.Any])
+    inline def setPackageVersion(value: PackageVersion): Self = StObject.set(x, "PackageVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageVersionUndefined: Self = StObject.set(x, "PackageVersion", js.undefined)
+    inline def setPackageVersionUndefined: Self = StObject.set(x, "PackageVersion", js.undefined)
   }
 }

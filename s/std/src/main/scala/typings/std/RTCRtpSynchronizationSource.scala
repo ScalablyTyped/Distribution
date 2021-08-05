@@ -12,19 +12,15 @@ trait RTCRtpSynchronizationSource
 }
 object RTCRtpSynchronizationSource {
   
-  @scala.inline
-  def apply(rtpTimestamp: Double, source: Double, timestamp: Double): RTCRtpSynchronizationSource = {
+  inline def apply(rtpTimestamp: Double, source: Double, timestamp: Double): RTCRtpSynchronizationSource = {
     val __obj = js.Dynamic.literal(rtpTimestamp = rtpTimestamp.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
     __obj.asInstanceOf[RTCRtpSynchronizationSource]
   }
   
-  @scala.inline
-  implicit class RTCRtpSynchronizationSourceMutableBuilder[Self <: RTCRtpSynchronizationSource] (val x: Self) extends AnyVal {
+  extension [Self <: RTCRtpSynchronizationSource](x: Self) {
     
-    @scala.inline
-    def setVoiceActivityFlag(value: scala.Boolean): Self = StObject.set(x, "voiceActivityFlag", value.asInstanceOf[js.Any])
+    inline def setVoiceActivityFlag(value: scala.Boolean): Self = StObject.set(x, "voiceActivityFlag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoiceActivityFlagUndefined: Self = StObject.set(x, "voiceActivityFlag", js.undefined)
+    inline def setVoiceActivityFlagUndefined: Self = StObject.set(x, "voiceActivityFlag", js.undefined)
   }
 }

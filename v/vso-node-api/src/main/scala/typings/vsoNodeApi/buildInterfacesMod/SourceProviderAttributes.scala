@@ -24,8 +24,7 @@ trait SourceProviderAttributes extends StObject {
 }
 object SourceProviderAttributes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     name: String,
     supportedCapabilities: StringDictionary[Boolean],
     supportedTriggers: js.Array[SupportedTrigger]
@@ -34,19 +33,14 @@ object SourceProviderAttributes {
     __obj.asInstanceOf[SourceProviderAttributes]
   }
   
-  @scala.inline
-  implicit class SourceProviderAttributesMutableBuilder[Self <: SourceProviderAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: SourceProviderAttributes](x: Self) {
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedCapabilities(value: StringDictionary[Boolean]): Self = StObject.set(x, "supportedCapabilities", value.asInstanceOf[js.Any])
+    inline def setSupportedCapabilities(value: StringDictionary[Boolean]): Self = StObject.set(x, "supportedCapabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedTriggers(value: js.Array[SupportedTrigger]): Self = StObject.set(x, "supportedTriggers", value.asInstanceOf[js.Any])
+    inline def setSupportedTriggers(value: js.Array[SupportedTrigger]): Self = StObject.set(x, "supportedTriggers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedTriggersVarargs(value: SupportedTrigger*): Self = StObject.set(x, "supportedTriggers", js.Array(value :_*))
+    inline def setSupportedTriggersVarargs(value: SupportedTrigger*): Self = StObject.set(x, "supportedTriggers", js.Array(value :_*))
   }
 }

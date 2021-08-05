@@ -18,22 +18,17 @@ trait RemovedFields[TSchema /* <: StringDictionary[js.Any] */] extends StObject 
 }
 object RemovedFields {
   
-  @scala.inline
-  def apply[TSchema /* <: StringDictionary[js.Any] */](removedFields: js.Array[/* keyof TSchema */ String], updatedFields: FieldUpdates[TSchema]): RemovedFields[TSchema] = {
+  inline def apply[TSchema /* <: StringDictionary[js.Any] */](removedFields: js.Array[/* keyof TSchema */ String], updatedFields: FieldUpdates[TSchema]): RemovedFields[TSchema] = {
     val __obj = js.Dynamic.literal(removedFields = removedFields.asInstanceOf[js.Any], updatedFields = updatedFields.asInstanceOf[js.Any])
     __obj.asInstanceOf[RemovedFields[TSchema]]
   }
   
-  @scala.inline
-  implicit class RemovedFieldsMutableBuilder[Self <: RemovedFields[?], TSchema /* <: StringDictionary[js.Any] */] (val x: Self & RemovedFields[TSchema]) extends AnyVal {
+  extension [Self <: RemovedFields[?], TSchema /* <: StringDictionary[js.Any] */](x: Self & RemovedFields[TSchema]) {
     
-    @scala.inline
-    def setRemovedFields(value: js.Array[/* keyof TSchema */ String]): Self = StObject.set(x, "removedFields", value.asInstanceOf[js.Any])
+    inline def setRemovedFields(value: js.Array[/* keyof TSchema */ String]): Self = StObject.set(x, "removedFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovedFieldsVarargs(value: (/* keyof TSchema */ String)*): Self = StObject.set(x, "removedFields", js.Array(value :_*))
+    inline def setRemovedFieldsVarargs(value: (/* keyof TSchema */ String)*): Self = StObject.set(x, "removedFields", js.Array(value :_*))
     
-    @scala.inline
-    def setUpdatedFields(value: FieldUpdates[TSchema]): Self = StObject.set(x, "updatedFields", value.asInstanceOf[js.Any])
+    inline def setUpdatedFields(value: FieldUpdates[TSchema]): Self = StObject.set(x, "updatedFields", value.asInstanceOf[js.Any])
   }
 }

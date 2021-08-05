@@ -24,41 +24,41 @@ object shadowCssMod {
   @js.native
   class ShadowCss () extends StObject {
     
-    var _applySelectorScope: js.Any = js.native
+    /* private */ var _applySelectorScope: js.Any = js.native
     
-    var _applySimpleSelectorScope: js.Any = js.native
+    /* private */ var _applySimpleSelectorScope: js.Any = js.native
     
-    var _colonHostContextPartReplacer: js.Any = js.native
+    /* private */ var _colonHostContextPartReplacer: js.Any = js.native
     
-    var _colonHostPartReplacer: js.Any = js.native
+    /* private */ var _colonHostPartReplacer: js.Any = js.native
     
-    var _convertColonHost: js.Any = js.native
+    /* private */ var _convertColonHost: js.Any = js.native
     
-    var _convertColonHostContext: js.Any = js.native
+    /* private */ var _convertColonHostContext: js.Any = js.native
     
-    var _convertColonRule: js.Any = js.native
+    /* private */ var _convertColonRule: js.Any = js.native
     
-    var _convertShadowDOMSelectors: js.Any = js.native
+    /* private */ var _convertShadowDOMSelectors: js.Any = js.native
     
-    var _extractUnscopedRulesFromCssText: js.Any = js.native
+    /* private */ var _extractUnscopedRulesFromCssText: js.Any = js.native
     
-    var _insertDirectives: js.Any = js.native
+    /* private */ var _insertDirectives: js.Any = js.native
     
-    var _insertPolyfillDirectivesInCssText: js.Any = js.native
+    /* private */ var _insertPolyfillDirectivesInCssText: js.Any = js.native
     
-    var _insertPolyfillHostInCssText: js.Any = js.native
+    /* private */ var _insertPolyfillHostInCssText: js.Any = js.native
     
-    var _insertPolyfillRulesInCssText: js.Any = js.native
+    /* private */ var _insertPolyfillRulesInCssText: js.Any = js.native
     
-    var _makeScopeMatcher: js.Any = js.native
+    /* private */ var _makeScopeMatcher: js.Any = js.native
     
-    var _scopeCssText: js.Any = js.native
+    /* private */ var _scopeCssText: js.Any = js.native
     
-    var _scopeSelector: js.Any = js.native
+    /* private */ var _scopeSelector: js.Any = js.native
     
-    var _scopeSelectors: js.Any = js.native
+    /* private */ var _scopeSelectors: js.Any = js.native
     
-    var _selectorNeedsScoping: js.Any = js.native
+    /* private */ var _selectorNeedsScoping: js.Any = js.native
     
     def shimCssText(cssText: String, selector: String): String = js.native
     def shimCssText(cssText: String, selector: String, hostSelector: String): String = js.native
@@ -66,6 +66,5 @@ object shadowCssMod {
     var strictStyling: Boolean = js.native
   }
   
-  @scala.inline
-  def processRules(input: String, ruleCallback: js.Function1[/* rule */ CssRule, CssRule]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("processRules")(input.asInstanceOf[js.Any], ruleCallback.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def processRules(input: String, ruleCallback: js.Function1[/* rule */ CssRule, CssRule]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("processRules")(input.asInstanceOf[js.Any], ruleCallback.asInstanceOf[js.Any])).asInstanceOf[String]
 }

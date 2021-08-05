@@ -23,22 +23,17 @@ trait ResetUserPasswordRequest extends StObject {
 }
 object ResetUserPasswordRequest {
   
-  @scala.inline
-  def apply(DirectoryId: DirectoryId, NewPassword: UserPassword, UserName: CustomerUserName): ResetUserPasswordRequest = {
+  inline def apply(DirectoryId: DirectoryId, NewPassword: UserPassword, UserName: CustomerUserName): ResetUserPasswordRequest = {
     val __obj = js.Dynamic.literal(DirectoryId = DirectoryId.asInstanceOf[js.Any], NewPassword = NewPassword.asInstanceOf[js.Any], UserName = UserName.asInstanceOf[js.Any])
     __obj.asInstanceOf[ResetUserPasswordRequest]
   }
   
-  @scala.inline
-  implicit class ResetUserPasswordRequestMutableBuilder[Self <: ResetUserPasswordRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ResetUserPasswordRequest](x: Self) {
     
-    @scala.inline
-    def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
+    inline def setDirectoryId(value: DirectoryId): Self = StObject.set(x, "DirectoryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewPassword(value: UserPassword): Self = StObject.set(x, "NewPassword", value.asInstanceOf[js.Any])
+    inline def setNewPassword(value: UserPassword): Self = StObject.set(x, "NewPassword", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserName(value: CustomerUserName): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: CustomerUserName): Self = StObject.set(x, "UserName", value.asInstanceOf[js.Any])
   }
 }

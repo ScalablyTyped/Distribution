@@ -18,28 +18,21 @@ trait ListResolversResponse extends StObject {
 }
 object ListResolversResponse {
   
-  @scala.inline
-  def apply(): ListResolversResponse = {
+  inline def apply(): ListResolversResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListResolversResponse]
   }
   
-  @scala.inline
-  implicit class ListResolversResponseMutableBuilder[Self <: ListResolversResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListResolversResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setResolvers(value: Resolvers): Self = StObject.set(x, "resolvers", value.asInstanceOf[js.Any])
+    inline def setResolvers(value: Resolvers): Self = StObject.set(x, "resolvers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolversUndefined: Self = StObject.set(x, "resolvers", js.undefined)
+    inline def setResolversUndefined: Self = StObject.set(x, "resolvers", js.undefined)
     
-    @scala.inline
-    def setResolversVarargs(value: Resolver*): Self = StObject.set(x, "resolvers", js.Array(value :_*))
+    inline def setResolversVarargs(value: Resolver*): Self = StObject.set(x, "resolvers", js.Array(value :_*))
   }
 }

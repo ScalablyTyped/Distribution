@@ -17,31 +17,23 @@ trait Residence extends StObject {
 }
 object Residence {
   
-  @scala.inline
-  def apply(): Residence = {
+  inline def apply(): Residence = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Residence]
   }
   
-  @scala.inline
-  implicit class ResidenceMutableBuilder[Self <: Residence] (val x: Self) extends AnyVal {
+  extension [Self <: Residence](x: Self) {
     
-    @scala.inline
-    def setCurrent(value: Boolean): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
+    inline def setCurrent(value: Boolean): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
+    inline def setCurrentUndefined: Self = StObject.set(x, "current", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: FieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: FieldMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

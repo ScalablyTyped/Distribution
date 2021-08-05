@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait DeviceManagementExchangeConnectorType extends StObject
 object DeviceManagementExchangeConnectorType {
   
-  @scala.inline
-  def dedicated: typings.microsoftGraph.microsoftGraphStrings.dedicated = "dedicated".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.dedicated]
+  inline def dedicated: typings.microsoftGraph.microsoftGraphStrings.dedicated = "dedicated".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.dedicated]
   
-  @scala.inline
-  def hosted: typings.microsoftGraph.microsoftGraphStrings.hosted = "hosted".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.hosted]
+  inline def hosted: typings.microsoftGraph.microsoftGraphStrings.hosted = "hosted".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.hosted]
   
-  @scala.inline
-  def onPremises: typings.microsoftGraph.microsoftGraphStrings.onPremises = "onPremises".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.onPremises]
+  inline def onPremises: typings.microsoftGraph.microsoftGraphStrings.onPremises = "onPremises".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.onPremises]
   
-  @scala.inline
-  def serviceToService: typings.microsoftGraph.microsoftGraphStrings.serviceToService = "serviceToService".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.serviceToService]
+  inline def serviceToService: typings.microsoftGraph.microsoftGraphStrings.serviceToService = "serviceToService".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.serviceToService]
 }

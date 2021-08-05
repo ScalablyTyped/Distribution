@@ -13,19 +13,15 @@ trait HeaderRenderingEventUIParam extends StObject {
 }
 object HeaderRenderingEventUIParam {
   
-  @scala.inline
-  def apply(): HeaderRenderingEventUIParam = {
+  inline def apply(): HeaderRenderingEventUIParam = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HeaderRenderingEventUIParam]
   }
   
-  @scala.inline
-  implicit class HeaderRenderingEventUIParamMutableBuilder[Self <: HeaderRenderingEventUIParam] (val x: Self) extends AnyVal {
+  extension [Self <: HeaderRenderingEventUIParam](x: Self) {
     
-    @scala.inline
-    def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
+    inline def setOwner(value: js.Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
+    inline def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
   }
 }

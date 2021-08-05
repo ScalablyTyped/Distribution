@@ -11,6 +11,5 @@ object useBreakpointMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): ScreenMap = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[ScreenMap]
+  inline def default(): ScreenMap = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[ScreenMap]
 }

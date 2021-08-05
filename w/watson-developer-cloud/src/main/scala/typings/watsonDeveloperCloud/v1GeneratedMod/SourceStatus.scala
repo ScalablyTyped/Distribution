@@ -15,25 +15,19 @@ trait SourceStatus extends StObject {
 }
 object SourceStatus {
   
-  @scala.inline
-  def apply(): SourceStatus = {
+  inline def apply(): SourceStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SourceStatus]
   }
   
-  @scala.inline
-  implicit class SourceStatusMutableBuilder[Self <: SourceStatus] (val x: Self) extends AnyVal {
+  extension [Self <: SourceStatus](x: Self) {
     
-    @scala.inline
-    def setLast_updated(value: String): Self = StObject.set(x, "last_updated", value.asInstanceOf[js.Any])
+    inline def setLast_updated(value: String): Self = StObject.set(x, "last_updated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast_updatedUndefined: Self = StObject.set(x, "last_updated", js.undefined)
+    inline def setLast_updatedUndefined: Self = StObject.set(x, "last_updated", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

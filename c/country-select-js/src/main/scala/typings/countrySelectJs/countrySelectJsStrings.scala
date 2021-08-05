@@ -8,11 +8,9 @@ object countrySelectJsStrings {
   
   @js.native
   sealed trait destroy extends StObject
-  @scala.inline
-  def destroy: destroy = "destroy".asInstanceOf[destroy]
+  inline def destroy: destroy = "destroy".asInstanceOf[destroy]
   
   @js.native
   sealed trait getSelectedCountryData extends StObject
-  @scala.inline
-  def getSelectedCountryData: getSelectedCountryData = "getSelectedCountryData".asInstanceOf[getSelectedCountryData]
+  inline def getSelectedCountryData: getSelectedCountryData = "getSelectedCountryData".asInstanceOf[getSelectedCountryData]
 }

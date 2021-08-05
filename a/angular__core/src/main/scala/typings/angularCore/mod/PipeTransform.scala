@@ -10,16 +10,13 @@ trait PipeTransform extends StObject {
 }
 object PipeTransform {
   
-  @scala.inline
-  def apply(transform: (js.Any, /* repeated */ js.Any) => js.Any): PipeTransform = {
+  inline def apply(transform: (js.Any, /* repeated */ js.Any) => js.Any): PipeTransform = {
     val __obj = js.Dynamic.literal(transform = js.Any.fromFunction2(transform))
     __obj.asInstanceOf[PipeTransform]
   }
   
-  @scala.inline
-  implicit class PipeTransformMutableBuilder[Self <: PipeTransform] (val x: Self) extends AnyVal {
+  extension [Self <: PipeTransform](x: Self) {
     
-    @scala.inline
-    def setTransform(value: (js.Any, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
+    inline def setTransform(value: (js.Any, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
   }
 }

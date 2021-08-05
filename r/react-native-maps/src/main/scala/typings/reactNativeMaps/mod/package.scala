@@ -5,11 +5,9 @@ import scala.scalajs.js
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 
-@scala.inline
-def PROVIDER_DEFAULT: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any = typings.reactNativeMaps.mod.^.asInstanceOf[js.Dynamic].selectDynamic("PROVIDER_DEFAULT").asInstanceOf[/* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any]
+inline def PROVIDER_DEFAULT: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any = typings.reactNativeMaps.mod.^.asInstanceOf[js.Dynamic].selectDynamic("PROVIDER_DEFAULT").asInstanceOf[/* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any]
 
-@scala.inline
-def PROVIDER_GOOGLE: typings.reactNativeMaps.reactNativeMapsStrings.google = typings.reactNativeMaps.mod.^.asInstanceOf[js.Dynamic].selectDynamic("PROVIDER_GOOGLE").asInstanceOf[typings.reactNativeMaps.reactNativeMapsStrings.google]
+inline def PROVIDER_GOOGLE: typings.reactNativeMaps.reactNativeMapsStrings.google = typings.reactNativeMaps.mod.^.asInstanceOf[js.Dynamic].selectDynamic("PROVIDER_GOOGLE").asInstanceOf[typings.reactNativeMaps.reactNativeMapsStrings.google]
 
 // =======================================================================
 //  Overlay

@@ -12,22 +12,17 @@ trait SDPDtlsParameters extends StObject {
 }
 object SDPDtlsParameters {
   
-  @scala.inline
-  def apply(fingerprints: js.Array[SDPFingerprint], role: String): SDPDtlsParameters = {
+  inline def apply(fingerprints: js.Array[SDPFingerprint], role: String): SDPDtlsParameters = {
     val __obj = js.Dynamic.literal(fingerprints = fingerprints.asInstanceOf[js.Any], role = role.asInstanceOf[js.Any])
     __obj.asInstanceOf[SDPDtlsParameters]
   }
   
-  @scala.inline
-  implicit class SDPDtlsParametersMutableBuilder[Self <: SDPDtlsParameters] (val x: Self) extends AnyVal {
+  extension [Self <: SDPDtlsParameters](x: Self) {
     
-    @scala.inline
-    def setFingerprints(value: js.Array[SDPFingerprint]): Self = StObject.set(x, "fingerprints", value.asInstanceOf[js.Any])
+    inline def setFingerprints(value: js.Array[SDPFingerprint]): Self = StObject.set(x, "fingerprints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFingerprintsVarargs(value: SDPFingerprint*): Self = StObject.set(x, "fingerprints", js.Array(value :_*))
+    inline def setFingerprintsVarargs(value: SDPFingerprint*): Self = StObject.set(x, "fingerprints", js.Array(value :_*))
     
-    @scala.inline
-    def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
   }
 }

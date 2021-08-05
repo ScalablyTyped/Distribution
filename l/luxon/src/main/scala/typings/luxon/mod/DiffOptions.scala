@@ -10,19 +10,15 @@ trait DiffOptions extends StObject {
 }
 object DiffOptions {
   
-  @scala.inline
-  def apply(): DiffOptions = {
+  inline def apply(): DiffOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DiffOptions]
   }
   
-  @scala.inline
-  implicit class DiffOptionsMutableBuilder[Self <: DiffOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DiffOptions](x: Self) {
     
-    @scala.inline
-    def setConversionAccuracy(value: ConversionAccuracy): Self = StObject.set(x, "conversionAccuracy", value.asInstanceOf[js.Any])
+    inline def setConversionAccuracy(value: ConversionAccuracy): Self = StObject.set(x, "conversionAccuracy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversionAccuracyUndefined: Self = StObject.set(x, "conversionAccuracy", js.undefined)
+    inline def setConversionAccuracyUndefined: Self = StObject.set(x, "conversionAccuracy", js.undefined)
   }
 }

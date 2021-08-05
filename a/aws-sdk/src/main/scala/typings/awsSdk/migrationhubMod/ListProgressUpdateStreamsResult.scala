@@ -18,28 +18,21 @@ trait ListProgressUpdateStreamsResult extends StObject {
 }
 object ListProgressUpdateStreamsResult {
   
-  @scala.inline
-  def apply(): ListProgressUpdateStreamsResult = {
+  inline def apply(): ListProgressUpdateStreamsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListProgressUpdateStreamsResult]
   }
   
-  @scala.inline
-  implicit class ListProgressUpdateStreamsResultMutableBuilder[Self <: ListProgressUpdateStreamsResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListProgressUpdateStreamsResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setProgressUpdateStreamSummaryList(value: ProgressUpdateStreamSummaryList): Self = StObject.set(x, "ProgressUpdateStreamSummaryList", value.asInstanceOf[js.Any])
+    inline def setProgressUpdateStreamSummaryList(value: ProgressUpdateStreamSummaryList): Self = StObject.set(x, "ProgressUpdateStreamSummaryList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProgressUpdateStreamSummaryListUndefined: Self = StObject.set(x, "ProgressUpdateStreamSummaryList", js.undefined)
+    inline def setProgressUpdateStreamSummaryListUndefined: Self = StObject.set(x, "ProgressUpdateStreamSummaryList", js.undefined)
     
-    @scala.inline
-    def setProgressUpdateStreamSummaryListVarargs(value: ProgressUpdateStreamSummary*): Self = StObject.set(x, "ProgressUpdateStreamSummaryList", js.Array(value :_*))
+    inline def setProgressUpdateStreamSummaryListVarargs(value: ProgressUpdateStreamSummary*): Self = StObject.set(x, "ProgressUpdateStreamSummaryList", js.Array(value :_*))
   }
 }

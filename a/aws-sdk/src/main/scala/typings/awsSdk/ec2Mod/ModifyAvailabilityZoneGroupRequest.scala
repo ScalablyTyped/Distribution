@@ -23,25 +23,19 @@ trait ModifyAvailabilityZoneGroupRequest extends StObject {
 }
 object ModifyAvailabilityZoneGroupRequest {
   
-  @scala.inline
-  def apply(GroupName: String, OptInStatus: ModifyAvailabilityZoneOptInStatus): ModifyAvailabilityZoneGroupRequest = {
+  inline def apply(GroupName: String, OptInStatus: ModifyAvailabilityZoneOptInStatus): ModifyAvailabilityZoneGroupRequest = {
     val __obj = js.Dynamic.literal(GroupName = GroupName.asInstanceOf[js.Any], OptInStatus = OptInStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[ModifyAvailabilityZoneGroupRequest]
   }
   
-  @scala.inline
-  implicit class ModifyAvailabilityZoneGroupRequestMutableBuilder[Self <: ModifyAvailabilityZoneGroupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ModifyAvailabilityZoneGroupRequest](x: Self) {
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setGroupName(value: String): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: String): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptInStatus(value: ModifyAvailabilityZoneOptInStatus): Self = StObject.set(x, "OptInStatus", value.asInstanceOf[js.Any])
+    inline def setOptInStatus(value: ModifyAvailabilityZoneOptInStatus): Self = StObject.set(x, "OptInStatus", value.asInstanceOf[js.Any])
   }
 }

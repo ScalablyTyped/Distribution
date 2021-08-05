@@ -27,26 +27,22 @@ object cardMod {
     @JSImport("antd-mobile/lib/card", "default.Body")
     @js.native
     def Body: TypeofCardBody = js.native
-    @scala.inline
-    def Body_=(x: TypeofCardBody): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Body")(x.asInstanceOf[js.Any])
+    inline def Body_=(x: TypeofCardBody): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Body")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile/lib/card", "default.Footer")
     @js.native
     def Footer: TypeofCardFooter = js.native
-    @scala.inline
-    def Footer_=(x: TypeofCardFooter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Footer")(x.asInstanceOf[js.Any])
+    inline def Footer_=(x: TypeofCardFooter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Footer")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile/lib/card", "default.Header")
     @js.native
     def Header: TypeofCardHeader = js.native
-    @scala.inline
-    def Header_=(x: TypeofCardHeader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Header")(x.asInstanceOf[js.Any])
+    inline def Header_=(x: TypeofCardHeader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Header")(x.asInstanceOf[js.Any])
     
     @JSImport("antd-mobile/lib/card", "default.defaultProps")
     @js.native
     def defaultProps: Full = js.native
-    @scala.inline
-    def defaultProps_=(x: Full): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Full): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
@@ -62,20 +58,16 @@ object cardMod {
   }
   object CardProps {
     
-    @scala.inline
-    def apply(): CardProps = {
+    inline def apply(): CardProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CardProps]
     }
     
-    @scala.inline
-    implicit class CardPropsMutableBuilder[Self <: CardProps] (val x: Self) extends AnyVal {
+    extension [Self <: CardProps](x: Self) {
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
     }
   }
 }

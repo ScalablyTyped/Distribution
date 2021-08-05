@@ -35,10 +35,8 @@ object mod {
     def on_swipedRight(event: swipedRight, listener: js.Function): this.type = js.native
   }
   
-  @scala.inline
-  def notify_(title: String): NotificationWindow = ^.asInstanceOf[js.Dynamic].applyDynamic("notify")(title.asInstanceOf[js.Any]).asInstanceOf[NotificationWindow]
-  @scala.inline
-  def notify_(title: String, data: NotifierOptions): NotificationWindow = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(title.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[NotificationWindow]
+  inline def notify_(title: String): NotificationWindow = ^.asInstanceOf[js.Dynamic].applyDynamic("notify")(title.asInstanceOf[js.Any]).asInstanceOf[NotificationWindow]
+  inline def notify_(title: String, data: NotifierOptions): NotificationWindow = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(title.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[NotificationWindow]
   
   trait NotifierOptions extends StObject {
     
@@ -53,35 +51,26 @@ object mod {
   }
   object NotifierOptions {
     
-    @scala.inline
-    def apply(): NotifierOptions = {
+    inline def apply(): NotifierOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NotifierOptions]
     }
     
-    @scala.inline
-    implicit class NotifierOptionsMutableBuilder[Self <: NotifierOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NotifierOptions](x: Self) {
       
-      @scala.inline
-      def setButtons(value: js.Array[String]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      inline def setButtons(value: js.Array[String]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+      inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
       
-      @scala.inline
-      def setButtonsVarargs(value: String*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+      inline def setButtonsVarargs(value: String*): Self = StObject.set(x, "buttons", js.Array(value :_*))
       
-      @scala.inline
-      def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

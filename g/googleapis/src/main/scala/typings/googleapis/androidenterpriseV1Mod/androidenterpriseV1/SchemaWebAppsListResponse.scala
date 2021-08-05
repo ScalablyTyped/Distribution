@@ -22,28 +22,21 @@ trait SchemaWebAppsListResponse extends StObject {
 }
 object SchemaWebAppsListResponse {
   
-  @scala.inline
-  def apply(): SchemaWebAppsListResponse = {
+  inline def apply(): SchemaWebAppsListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaWebAppsListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaWebAppsListResponseMutableBuilder[Self <: SchemaWebAppsListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaWebAppsListResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setWebApp(value: js.Array[SchemaWebApp]): Self = StObject.set(x, "webApp", value.asInstanceOf[js.Any])
+    inline def setWebApp(value: js.Array[SchemaWebApp]): Self = StObject.set(x, "webApp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWebAppUndefined: Self = StObject.set(x, "webApp", js.undefined)
+    inline def setWebAppUndefined: Self = StObject.set(x, "webApp", js.undefined)
     
-    @scala.inline
-    def setWebAppVarargs(value: SchemaWebApp*): Self = StObject.set(x, "webApp", js.Array(value :_*))
+    inline def setWebAppVarargs(value: SchemaWebApp*): Self = StObject.set(x, "webApp", js.Array(value :_*))
   }
 }

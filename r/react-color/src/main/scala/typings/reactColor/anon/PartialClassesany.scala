@@ -12,19 +12,15 @@ trait PartialClassesany extends StObject {
 }
 object PartialClassesany {
   
-  @scala.inline
-  def apply(): PartialClassesany = {
+  inline def apply(): PartialClassesany = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialClassesany]
   }
   
-  @scala.inline
-  implicit class PartialClassesanyMutableBuilder[Self <: PartialClassesany] (val x: Self) extends AnyVal {
+  extension [Self <: PartialClassesany](x: Self) {
     
-    @scala.inline
-    def setDefault(value: Partial[js.Any]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: Partial[js.Any]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
+    inline def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
   }
 }

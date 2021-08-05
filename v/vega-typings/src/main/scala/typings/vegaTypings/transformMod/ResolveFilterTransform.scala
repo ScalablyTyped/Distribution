@@ -18,23 +18,18 @@ trait ResolveFilterTransform
 }
 object ResolveFilterTransform {
   
-  @scala.inline
-  def apply(filter: SignalRef, ignore: Double | SignalRef): ResolveFilterTransform = {
+  inline def apply(filter: SignalRef, ignore: Double | SignalRef): ResolveFilterTransform = {
     val __obj = js.Dynamic.literal(filter = filter.asInstanceOf[js.Any], ignore = ignore.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("resolvefilter")
     __obj.asInstanceOf[ResolveFilterTransform]
   }
   
-  @scala.inline
-  implicit class ResolveFilterTransformMutableBuilder[Self <: ResolveFilterTransform] (val x: Self) extends AnyVal {
+  extension [Self <: ResolveFilterTransform](x: Self) {
     
-    @scala.inline
-    def setFilter(value: SignalRef): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: SignalRef): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnore(value: Double | SignalRef): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+    inline def setIgnore(value: Double | SignalRef): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: resolvefilter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: resolvefilter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

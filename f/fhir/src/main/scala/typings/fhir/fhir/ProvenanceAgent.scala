@@ -53,64 +53,45 @@ trait ProvenanceAgent
 }
 object ProvenanceAgent {
   
-  @scala.inline
-  def apply(): ProvenanceAgent = {
+  inline def apply(): ProvenanceAgent = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ProvenanceAgent]
   }
   
-  @scala.inline
-  implicit class ProvenanceAgentMutableBuilder[Self <: ProvenanceAgent] (val x: Self) extends AnyVal {
+  extension [Self <: ProvenanceAgent](x: Self) {
     
-    @scala.inline
-    def setOnBehalfOfReference(value: Reference): Self = StObject.set(x, "onBehalfOfReference", value.asInstanceOf[js.Any])
+    inline def setOnBehalfOfReference(value: Reference): Self = StObject.set(x, "onBehalfOfReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnBehalfOfReferenceUndefined: Self = StObject.set(x, "onBehalfOfReference", js.undefined)
+    inline def setOnBehalfOfReferenceUndefined: Self = StObject.set(x, "onBehalfOfReference", js.undefined)
     
-    @scala.inline
-    def setOnBehalfOfUri(value: uri): Self = StObject.set(x, "onBehalfOfUri", value.asInstanceOf[js.Any])
+    inline def setOnBehalfOfUri(value: uri): Self = StObject.set(x, "onBehalfOfUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnBehalfOfUriUndefined: Self = StObject.set(x, "onBehalfOfUri", js.undefined)
+    inline def setOnBehalfOfUriUndefined: Self = StObject.set(x, "onBehalfOfUri", js.undefined)
     
-    @scala.inline
-    def setRelatedAgentType(value: CodeableConcept): Self = StObject.set(x, "relatedAgentType", value.asInstanceOf[js.Any])
+    inline def setRelatedAgentType(value: CodeableConcept): Self = StObject.set(x, "relatedAgentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRelatedAgentTypeUndefined: Self = StObject.set(x, "relatedAgentType", js.undefined)
+    inline def setRelatedAgentTypeUndefined: Self = StObject.set(x, "relatedAgentType", js.undefined)
     
-    @scala.inline
-    def setRole(value: js.Array[CodeableConcept]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+    inline def setRole(value: js.Array[CodeableConcept]): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+    inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     
-    @scala.inline
-    def setRoleVarargs(value: CodeableConcept*): Self = StObject.set(x, "role", js.Array(value :_*))
+    inline def setRoleVarargs(value: CodeableConcept*): Self = StObject.set(x, "role", js.Array(value :_*))
     
-    @scala.inline
-    def setWhoReference(value: Reference): Self = StObject.set(x, "whoReference", value.asInstanceOf[js.Any])
+    inline def setWhoReference(value: Reference): Self = StObject.set(x, "whoReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhoReferenceUndefined: Self = StObject.set(x, "whoReference", js.undefined)
+    inline def setWhoReferenceUndefined: Self = StObject.set(x, "whoReference", js.undefined)
     
-    @scala.inline
-    def setWhoUri(value: uri): Self = StObject.set(x, "whoUri", value.asInstanceOf[js.Any])
+    inline def setWhoUri(value: uri): Self = StObject.set(x, "whoUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWhoUriUndefined: Self = StObject.set(x, "whoUri", js.undefined)
+    inline def setWhoUriUndefined: Self = StObject.set(x, "whoUri", js.undefined)
     
-    @scala.inline
-    def set_onBehalfOfUri(value: Element): Self = StObject.set(x, "_onBehalfOfUri", value.asInstanceOf[js.Any])
+    inline def set_onBehalfOfUri(value: Element): Self = StObject.set(x, "_onBehalfOfUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_onBehalfOfUriUndefined: Self = StObject.set(x, "_onBehalfOfUri", js.undefined)
+    inline def set_onBehalfOfUriUndefined: Self = StObject.set(x, "_onBehalfOfUri", js.undefined)
     
-    @scala.inline
-    def set_whoUri(value: Element): Self = StObject.set(x, "_whoUri", value.asInstanceOf[js.Any])
+    inline def set_whoUri(value: Element): Self = StObject.set(x, "_whoUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_whoUriUndefined: Self = StObject.set(x, "_whoUri", js.undefined)
+    inline def set_whoUriUndefined: Self = StObject.set(x, "_whoUri", js.undefined)
   }
 }

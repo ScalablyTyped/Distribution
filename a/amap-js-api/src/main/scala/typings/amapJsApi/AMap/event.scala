@@ -14,18 +14,15 @@ object event {
   }
   object EventListener {
     
-    @scala.inline
-    def apply[T /* <: `0` | `1` */](`type`: T): EventListener[T] = {
+    inline def apply[T /* <: `0` | `1` */](`type`: T): EventListener[T] = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventListener[T]]
     }
     
-    @scala.inline
-    implicit class EventListenerMutableBuilder[Self <: EventListener[?], T /* <: `0` | `1` */] (val x: Self & EventListener[T]) extends AnyVal {
+    extension [Self <: EventListener[?], T /* <: `0` | `1` */](x: Self & EventListener[T]) {
       
-      @scala.inline
-      def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

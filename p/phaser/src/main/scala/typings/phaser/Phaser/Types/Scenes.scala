@@ -49,50 +49,36 @@ object Scenes {
   }
   object CreateSceneFromObjectConfig {
     
-    @scala.inline
-    def apply(): CreateSceneFromObjectConfig = {
+    inline def apply(): CreateSceneFromObjectConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateSceneFromObjectConfig]
     }
     
-    @scala.inline
-    implicit class CreateSceneFromObjectConfigMutableBuilder[Self <: CreateSceneFromObjectConfig] (val x: Self) extends AnyVal {
+    extension [Self <: CreateSceneFromObjectConfig](x: Self) {
       
-      @scala.inline
-      def setCreate(value: /* data */ js.Object => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      inline def setCreate(value: /* data */ js.Object => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
+      inline def setCreateUndefined: Self = StObject.set(x, "create", js.undefined)
       
-      @scala.inline
-      def setExtend(value: js.Any): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+      inline def setExtend(value: js.Any): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtendDotdata(value: js.Any): Self = StObject.set(x, "extend.data", value.asInstanceOf[js.Any])
+      inline def setExtendDotdata(value: js.Any): Self = StObject.set(x, "extend.data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtendDotdataUndefined: Self = StObject.set(x, "extend.data", js.undefined)
+      inline def setExtendDotdataUndefined: Self = StObject.set(x, "extend.data", js.undefined)
       
-      @scala.inline
-      def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
+      inline def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)
       
-      @scala.inline
-      def setInit(value: /* data */ js.Object => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+      inline def setInit(value: /* data */ js.Object => Unit): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
+      inline def setInitUndefined: Self = StObject.set(x, "init", js.undefined)
       
-      @scala.inline
-      def setPreload(value: () => Unit): Self = StObject.set(x, "preload", js.Any.fromFunction0(value))
+      inline def setPreload(value: () => Unit): Self = StObject.set(x, "preload", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
+      inline def setPreloadUndefined: Self = StObject.set(x, "preload", js.undefined)
       
-      @scala.inline
-      def setUpdate(value: js.Function): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+      inline def setUpdate(value: js.Function): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
+      inline def setUpdateUndefined: Self = StObject.set(x, "update", js.undefined)
     }
   }
   
@@ -170,71 +156,50 @@ object Scenes {
   }
   object SceneTransitionConfig {
     
-    @scala.inline
-    def apply(target: String): SceneTransitionConfig = {
+    inline def apply(target: String): SceneTransitionConfig = {
       val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any])
       __obj.asInstanceOf[SceneTransitionConfig]
     }
     
-    @scala.inline
-    implicit class SceneTransitionConfigMutableBuilder[Self <: SceneTransitionConfig] (val x: Self) extends AnyVal {
+    extension [Self <: SceneTransitionConfig](x: Self) {
       
-      @scala.inline
-      def setAllowInput(value: Boolean): Self = StObject.set(x, "allowInput", value.asInstanceOf[js.Any])
+      inline def setAllowInput(value: Boolean): Self = StObject.set(x, "allowInput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowInputUndefined: Self = StObject.set(x, "allowInput", js.undefined)
+      inline def setAllowInputUndefined: Self = StObject.set(x, "allowInput", js.undefined)
       
-      @scala.inline
-      def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+      inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
-      @scala.inline
-      def setDuration(value: integer): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: integer): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setMoveAbove(value: Boolean): Self = StObject.set(x, "moveAbove", value.asInstanceOf[js.Any])
+      inline def setMoveAbove(value: Boolean): Self = StObject.set(x, "moveAbove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoveAboveUndefined: Self = StObject.set(x, "moveAbove", js.undefined)
+      inline def setMoveAboveUndefined: Self = StObject.set(x, "moveAbove", js.undefined)
       
-      @scala.inline
-      def setMoveBelow(value: Boolean): Self = StObject.set(x, "moveBelow", value.asInstanceOf[js.Any])
+      inline def setMoveBelow(value: Boolean): Self = StObject.set(x, "moveBelow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoveBelowUndefined: Self = StObject.set(x, "moveBelow", js.undefined)
+      inline def setMoveBelowUndefined: Self = StObject.set(x, "moveBelow", js.undefined)
       
-      @scala.inline
-      def setOnUpdate(value: js.Function): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
+      inline def setOnUpdate(value: js.Function): Self = StObject.set(x, "onUpdate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnUpdateScope(value: js.Any): Self = StObject.set(x, "onUpdateScope", value.asInstanceOf[js.Any])
+      inline def setOnUpdateScope(value: js.Any): Self = StObject.set(x, "onUpdateScope", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnUpdateScopeUndefined: Self = StObject.set(x, "onUpdateScope", js.undefined)
+      inline def setOnUpdateScopeUndefined: Self = StObject.set(x, "onUpdateScope", js.undefined)
       
-      @scala.inline
-      def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
+      inline def setOnUpdateUndefined: Self = StObject.set(x, "onUpdate", js.undefined)
       
-      @scala.inline
-      def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+      inline def setRemove(value: Boolean): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+      inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
       
-      @scala.inline
-      def setSleep(value: Boolean): Self = StObject.set(x, "sleep", value.asInstanceOf[js.Any])
+      inline def setSleep(value: Boolean): Self = StObject.set(x, "sleep", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSleepUndefined: Self = StObject.set(x, "sleep", js.undefined)
+      inline def setSleepUndefined: Self = StObject.set(x, "sleep", js.undefined)
       
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
   }
   
@@ -292,77 +257,54 @@ object Scenes {
   }
   object SettingsConfig {
     
-    @scala.inline
-    def apply(): SettingsConfig = {
+    inline def apply(): SettingsConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SettingsConfig]
     }
     
-    @scala.inline
-    implicit class SettingsConfigMutableBuilder[Self <: SettingsConfig] (val x: Self) extends AnyVal {
+    extension [Self <: SettingsConfig](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
+      inline def setActiveUndefined: Self = StObject.set(x, "active", js.undefined)
       
-      @scala.inline
-      def setCameras(value: JSONCamera | js.Array[JSONCamera]): Self = StObject.set(x, "cameras", value.asInstanceOf[js.Any])
+      inline def setCameras(value: JSONCamera | js.Array[JSONCamera]): Self = StObject.set(x, "cameras", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCamerasUndefined: Self = StObject.set(x, "cameras", js.undefined)
+      inline def setCamerasUndefined: Self = StObject.set(x, "cameras", js.undefined)
       
-      @scala.inline
-      def setCamerasVarargs(value: JSONCamera*): Self = StObject.set(x, "cameras", js.Array(value :_*))
+      inline def setCamerasVarargs(value: JSONCamera*): Self = StObject.set(x, "cameras", js.Array(value :_*))
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setLoader(value: LoaderConfig): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
+      inline def setLoader(value: LoaderConfig): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
+      inline def setLoaderUndefined: Self = StObject.set(x, "loader", js.undefined)
       
-      @scala.inline
-      def setMap(value: StringDictionary[String]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: StringDictionary[String]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapAdd(value: StringDictionary[String]): Self = StObject.set(x, "mapAdd", value.asInstanceOf[js.Any])
+      inline def setMapAdd(value: StringDictionary[String]): Self = StObject.set(x, "mapAdd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMapAddUndefined: Self = StObject.set(x, "mapAdd", js.undefined)
+      inline def setMapAddUndefined: Self = StObject.set(x, "mapAdd", js.undefined)
       
-      @scala.inline
-      def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
+      inline def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
-      @scala.inline
-      def setPack(value: `false` | PackFileSection): Self = StObject.set(x, "pack", value.asInstanceOf[js.Any])
+      inline def setPack(value: `false` | PackFileSection): Self = StObject.set(x, "pack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPackUndefined: Self = StObject.set(x, "pack", js.undefined)
+      inline def setPackUndefined: Self = StObject.set(x, "pack", js.undefined)
       
-      @scala.inline
-      def setPhysics(value: PhysicsConfig): Self = StObject.set(x, "physics", value.asInstanceOf[js.Any])
+      inline def setPhysics(value: PhysicsConfig): Self = StObject.set(x, "physics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhysicsUndefined: Self = StObject.set(x, "physics", js.undefined)
+      inline def setPhysicsUndefined: Self = StObject.set(x, "physics", js.undefined)
       
-      @scala.inline
-      def setPlugins(value: `false` | js.Any): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: `false` | js.Any): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+      inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
     }
   }
   
@@ -450,8 +392,7 @@ object Scenes {
   }
   object SettingsObject {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       active: Boolean,
       cameras: JSONCamera | js.Array[JSONCamera],
       data: js.Object,
@@ -473,59 +414,41 @@ object Scenes {
       __obj.asInstanceOf[SettingsObject]
     }
     
-    @scala.inline
-    implicit class SettingsObjectMutableBuilder[Self <: SettingsObject] (val x: Self) extends AnyVal {
+    extension [Self <: SettingsObject](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCameras(value: JSONCamera | js.Array[JSONCamera]): Self = StObject.set(x, "cameras", value.asInstanceOf[js.Any])
+      inline def setCameras(value: JSONCamera | js.Array[JSONCamera]): Self = StObject.set(x, "cameras", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCamerasVarargs(value: JSONCamera*): Self = StObject.set(x, "cameras", js.Array(value :_*))
+      inline def setCamerasVarargs(value: JSONCamera*): Self = StObject.set(x, "cameras", js.Array(value :_*))
       
-      @scala.inline
-      def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsBooted(value: Boolean): Self = StObject.set(x, "isBooted", value.asInstanceOf[js.Any])
+      inline def setIsBooted(value: Boolean): Self = StObject.set(x, "isBooted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsTransition(value: Boolean): Self = StObject.set(x, "isTransition", value.asInstanceOf[js.Any])
+      inline def setIsTransition(value: Boolean): Self = StObject.set(x, "isTransition", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoader(value: LoaderConfig): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
+      inline def setLoader(value: LoaderConfig): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMap(value: StringDictionary[String]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: StringDictionary[String]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPack(value: `false` | PackFileSection): Self = StObject.set(x, "pack", value.asInstanceOf[js.Any])
+      inline def setPack(value: `false` | PackFileSection): Self = StObject.set(x, "pack", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPhysics(value: PhysicsConfig): Self = StObject.set(x, "physics", value.asInstanceOf[js.Any])
+      inline def setPhysics(value: PhysicsConfig): Self = StObject.set(x, "physics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPlugins(value: `false` | js.Any): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: `false` | js.Any): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionAllowInput(value: Boolean): Self = StObject.set(x, "transitionAllowInput", value.asInstanceOf[js.Any])
+      inline def setTransitionAllowInput(value: Boolean): Self = StObject.set(x, "transitionAllowInput", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionDuration(value: integer): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
+      inline def setTransitionDuration(value: integer): Self = StObject.set(x, "transitionDuration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionFrom(value: Scene): Self = StObject.set(x, "transitionFrom", value.asInstanceOf[js.Any])
+      inline def setTransitionFrom(value: Scene): Self = StObject.set(x, "transitionFrom", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+      inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
 }

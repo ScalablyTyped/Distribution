@@ -21,8 +21,7 @@ trait TryStatement_
 }
 object TryStatement_ {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     block: BlockStatement_,
     end: Double,
     finalizer: BlockStatement_,
@@ -35,19 +34,14 @@ object TryStatement_ {
     __obj.asInstanceOf[TryStatement_]
   }
   
-  @scala.inline
-  implicit class TryStatement_MutableBuilder[Self <: TryStatement_] (val x: Self) extends AnyVal {
+  extension [Self <: TryStatement_](x: Self) {
     
-    @scala.inline
-    def setBlock(value: BlockStatement_): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    inline def setBlock(value: BlockStatement_): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFinalizer(value: BlockStatement_): Self = StObject.set(x, "finalizer", value.asInstanceOf[js.Any])
+    inline def setFinalizer(value: BlockStatement_): Self = StObject.set(x, "finalizer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandler(value: CatchClause_): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+    inline def setHandler(value: CatchClause_): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: TryStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TryStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

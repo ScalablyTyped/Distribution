@@ -37,62 +37,44 @@ object toggleSwitchMod {
   }
   object ToggleSwitchProps {
     
-    @scala.inline
-    def apply(): ToggleSwitchProps = {
+    inline def apply(): ToggleSwitchProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ToggleSwitchProps]
     }
     
-    @scala.inline
-    implicit class ToggleSwitchPropsMutableBuilder[Self <: ToggleSwitchProps] (val x: Self) extends AnyVal {
+    extension [Self <: ToggleSwitchProps](x: Self) {
       
-      @scala.inline
-      def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
+      inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
+      inline def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
       
-      @scala.inline
-      def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+      inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+      inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+      inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: ChangeEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: ChangeEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setSize(value: ToggleSwitchSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: ToggleSwitchSize): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
-      @scala.inline
-      def setSkin(value: ToggleSwitchSkin): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
+      inline def setSkin(value: ToggleSwitchSkin): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
+      inline def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
       
-      @scala.inline
-      def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
+      inline def setTabIndex(value: Double): Self = StObject.set(x, "tabIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
+      inline def setTabIndexUndefined: Self = StObject.set(x, "tabIndex", js.undefined)
     }
   }
   
@@ -104,14 +86,11 @@ object toggleSwitchMod {
   trait ToggleSwitchSize extends StObject
   object ToggleSwitchSize {
     
-    @scala.inline
-    def large: typings.wixStyleReact.wixStyleReactStrings.large = "large".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.large]
+    inline def large: typings.wixStyleReact.wixStyleReactStrings.large = "large".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.large]
     
-    @scala.inline
-    def medium: typings.wixStyleReact.wixStyleReactStrings.medium = "medium".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.medium]
+    inline def medium: typings.wixStyleReact.wixStyleReactStrings.medium = "medium".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.medium]
     
-    @scala.inline
-    def small: typings.wixStyleReact.wixStyleReactStrings.small = "small".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.small]
+    inline def small: typings.wixStyleReact.wixStyleReactStrings.small = "small".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.small]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -122,13 +101,10 @@ object toggleSwitchMod {
   trait ToggleSwitchSkin extends StObject
   object ToggleSwitchSkin {
     
-    @scala.inline
-    def error: typings.wixStyleReact.wixStyleReactStrings.error = "error".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.error]
+    inline def error: typings.wixStyleReact.wixStyleReactStrings.error = "error".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.error]
     
-    @scala.inline
-    def standard: typings.wixStyleReact.wixStyleReactStrings.standard = "standard".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.standard]
+    inline def standard: typings.wixStyleReact.wixStyleReactStrings.standard = "standard".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.standard]
     
-    @scala.inline
-    def success: typings.wixStyleReact.wixStyleReactStrings.success = "success".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.success]
+    inline def success: typings.wixStyleReact.wixStyleReactStrings.success = "success".asInstanceOf[typings.wixStyleReact.wixStyleReactStrings.success]
   }
 }

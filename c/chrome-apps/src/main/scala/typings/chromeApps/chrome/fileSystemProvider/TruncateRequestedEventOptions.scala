@@ -16,16 +16,13 @@ trait TruncateRequestedEventOptions
 }
 object TruncateRequestedEventOptions {
   
-  @scala.inline
-  def apply(filePath: String, fileSystemId: String, length: double, requestId: integer): TruncateRequestedEventOptions = {
+  inline def apply(filePath: String, fileSystemId: String, length: double, requestId: integer): TruncateRequestedEventOptions = {
     val __obj = js.Dynamic.literal(filePath = filePath.asInstanceOf[js.Any], fileSystemId = fileSystemId.asInstanceOf[js.Any], length = length.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[TruncateRequestedEventOptions]
   }
   
-  @scala.inline
-  implicit class TruncateRequestedEventOptionsMutableBuilder[Self <: TruncateRequestedEventOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TruncateRequestedEventOptions](x: Self) {
     
-    @scala.inline
-    def setLength(value: double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }
 }

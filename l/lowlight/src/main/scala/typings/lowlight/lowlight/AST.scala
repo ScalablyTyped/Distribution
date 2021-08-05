@@ -23,18 +23,15 @@ object AST {
   }
   object Comment {
     
-    @scala.inline
-    def apply(value: String): Comment = {
+    inline def apply(value: String): Comment = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("comment")
       __obj.asInstanceOf[Comment]
     }
     
-    @scala.inline
-    implicit class CommentMutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
+    extension [Self <: Comment](x: Self) {
       
-      @scala.inline
-      def setType(value: comment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: comment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -54,33 +51,25 @@ object AST {
   }
   object Doctype {
     
-    @scala.inline
-    def apply(name: String): Doctype = {
+    inline def apply(name: String): Doctype = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("doctype")
       __obj.asInstanceOf[Doctype]
     }
     
-    @scala.inline
-    implicit class DoctypeMutableBuilder[Self <: Doctype] (val x: Self) extends AnyVal {
+    extension [Self <: Doctype](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublic(value: String): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+      inline def setPublic(value: String): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
+      inline def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
       
-      @scala.inline
-      def setSystem(value: String): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
+      inline def setSystem(value: String): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
+      inline def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)
       
-      @scala.inline
-      def setType(value: doctype): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: doctype): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -98,24 +87,19 @@ object AST {
   }
   object Element {
     
-    @scala.inline
-    def apply(children: js.Array[Node], properties: Properties, tagName: String): Element = {
+    inline def apply(children: js.Array[Node], properties: Properties, tagName: String): Element = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("element")
       __obj.asInstanceOf[Element]
     }
     
-    @scala.inline
-    implicit class ElementMutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
+    extension [Self <: Element](x: Self) {
       
-      @scala.inline
-      def setProperties(value: Properties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: Properties): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
+      inline def setTagName(value: String): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: element): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: element): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -131,18 +115,15 @@ object AST {
   }
   object Root {
     
-    @scala.inline
-    def apply(children: js.Array[Node]): Root = {
+    inline def apply(children: js.Array[Node]): Root = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("root")
       __obj.asInstanceOf[Root]
     }
     
-    @scala.inline
-    implicit class RootMutableBuilder[Self <: Root] (val x: Self) extends AnyVal {
+    extension [Self <: Root](x: Self) {
       
-      @scala.inline
-      def setType(value: root): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: root): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -152,8 +133,7 @@ object AST {
        with HastNode
   object Text {
     
-    @scala.inline
-    def apply(`type`: String, value: String): Text = {
+    inline def apply(`type`: String, value: String): Text = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Text]
@@ -174,29 +154,22 @@ object AST {
     }
     object Location {
       
-      @scala.inline
-      def apply(end: Position, start: Position): Location = {
+      inline def apply(end: Position, start: Position): Location = {
         val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
         __obj.asInstanceOf[Location]
       }
       
-      @scala.inline
-      implicit class LocationMutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
+      extension [Self <: Location](x: Self) {
         
-        @scala.inline
-        def setEnd(value: Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+        inline def setEnd(value: Position): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndent(value: js.Array[Double]): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
+        inline def setIndent(value: js.Array[Double]): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
+        inline def setIndentUndefined: Self = StObject.set(x, "indent", js.undefined)
         
-        @scala.inline
-        def setIndentVarargs(value: Double*): Self = StObject.set(x, "indent", js.Array(value :_*))
+        inline def setIndentVarargs(value: Double*): Self = StObject.set(x, "indent", js.Array(value :_*))
         
-        @scala.inline
-        def setStart(value: Position): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+        inline def setStart(value: Position): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
       }
     }
     
@@ -210,30 +183,23 @@ object AST {
     }
     object Node {
       
-      @scala.inline
-      def apply(`type`: String): Node = {
+      inline def apply(`type`: String): Node = {
         val __obj = js.Dynamic.literal()
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[Node]
       }
       
-      @scala.inline
-      implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
+      extension [Self <: Node](x: Self) {
         
-        @scala.inline
-        def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+        inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+        inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
         
-        @scala.inline
-        def setPosition(value: Location): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: Location): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+        inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
         
-        @scala.inline
-        def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
     }
     
@@ -245,21 +211,17 @@ object AST {
     }
     object Parent {
       
-      @scala.inline
-      def apply(children: js.Array[Node], `type`: String): Parent = {
+      inline def apply(children: js.Array[Node], `type`: String): Parent = {
         val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[Parent]
       }
       
-      @scala.inline
-      implicit class ParentMutableBuilder[Self <: Parent] (val x: Self) extends AnyVal {
+      extension [Self <: Parent](x: Self) {
         
-        @scala.inline
-        def setChildren(value: js.Array[Node]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+        inline def setChildren(value: js.Array[Node]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setChildrenVarargs(value: Node*): Self = StObject.set(x, "children", js.Array(value :_*))
+        inline def setChildrenVarargs(value: Node*): Self = StObject.set(x, "children", js.Array(value :_*))
       }
     }
     
@@ -273,26 +235,20 @@ object AST {
     }
     object Position {
       
-      @scala.inline
-      def apply(column: Double, line: Double): Position = {
+      inline def apply(column: Double, line: Double): Position = {
         val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
         __obj.asInstanceOf[Position]
       }
       
-      @scala.inline
-      implicit class PositionMutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
+      extension [Self <: Position](x: Self) {
         
-        @scala.inline
-        def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
+        inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+        inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+        inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+        inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
       }
     }
     
@@ -304,18 +260,15 @@ object AST {
     }
     object Text {
       
-      @scala.inline
-      def apply(`type`: String, value: String): typings.lowlight.lowlight.AST.Unist.Text = {
+      inline def apply(`type`: String, value: String): typings.lowlight.lowlight.AST.Unist.Text = {
         val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
         __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.lowlight.lowlight.AST.Unist.Text]
       }
       
-      @scala.inline
-      implicit class TextMutableBuilder[Self <: typings.lowlight.lowlight.AST.Unist.Text] (val x: Self) extends AnyVal {
+      extension [Self <: typings.lowlight.lowlight.AST.Unist.Text](x: Self) {
         
-        @scala.inline
-        def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+        inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       }
     }
   }

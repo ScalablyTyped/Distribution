@@ -13,20 +13,16 @@ trait ActionsDeleteOrgSecretEndpoint extends StObject {
 }
 object ActionsDeleteOrgSecretEndpoint {
   
-  @scala.inline
-  def apply(org_ : String, secret_name: String): ActionsDeleteOrgSecretEndpoint = {
+  inline def apply(org_ : String, secret_name: String): ActionsDeleteOrgSecretEndpoint = {
     val __obj = js.Dynamic.literal(secret_name = secret_name.asInstanceOf[js.Any])
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActionsDeleteOrgSecretEndpoint]
   }
   
-  @scala.inline
-  implicit class ActionsDeleteOrgSecretEndpointMutableBuilder[Self <: ActionsDeleteOrgSecretEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ActionsDeleteOrgSecretEndpoint](x: Self) {
     
-    @scala.inline
-    def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecret_name(value: String): Self = StObject.set(x, "secret_name", value.asInstanceOf[js.Any])
+    inline def setSecret_name(value: String): Self = StObject.set(x, "secret_name", value.asInstanceOf[js.Any])
   }
 }

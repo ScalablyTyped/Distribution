@@ -30,8 +30,7 @@ trait XSheetOperation
 }
 object XSheetOperation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     clearContents: Double => Unit,
     computeFunction: GeneralFunction => Double,
@@ -42,13 +41,10 @@ object XSheetOperation {
     __obj.asInstanceOf[XSheetOperation]
   }
   
-  @scala.inline
-  implicit class XSheetOperationMutableBuilder[Self <: XSheetOperation] (val x: Self) extends AnyVal {
+  extension [Self <: XSheetOperation](x: Self) {
     
-    @scala.inline
-    def setClearContents(value: Double => Unit): Self = StObject.set(x, "clearContents", js.Any.fromFunction1(value))
+    inline def setClearContents(value: Double => Unit): Self = StObject.set(x, "clearContents", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setComputeFunction(value: GeneralFunction => Double): Self = StObject.set(x, "computeFunction", js.Any.fromFunction1(value))
+    inline def setComputeFunction(value: GeneralFunction => Double): Self = StObject.set(x, "computeFunction", js.Any.fromFunction1(value))
   }
 }

@@ -28,40 +28,29 @@ trait ListBucketInventoryConfigurationsOutput extends StObject {
 }
 object ListBucketInventoryConfigurationsOutput {
   
-  @scala.inline
-  def apply(): ListBucketInventoryConfigurationsOutput = {
+  inline def apply(): ListBucketInventoryConfigurationsOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListBucketInventoryConfigurationsOutput]
   }
   
-  @scala.inline
-  implicit class ListBucketInventoryConfigurationsOutputMutableBuilder[Self <: ListBucketInventoryConfigurationsOutput] (val x: Self) extends AnyVal {
+  extension [Self <: ListBucketInventoryConfigurationsOutput](x: Self) {
     
-    @scala.inline
-    def setContinuationToken(value: Token): Self = StObject.set(x, "ContinuationToken", value.asInstanceOf[js.Any])
+    inline def setContinuationToken(value: Token): Self = StObject.set(x, "ContinuationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinuationTokenUndefined: Self = StObject.set(x, "ContinuationToken", js.undefined)
+    inline def setContinuationTokenUndefined: Self = StObject.set(x, "ContinuationToken", js.undefined)
     
-    @scala.inline
-    def setInventoryConfigurationList(value: InventoryConfigurationList): Self = StObject.set(x, "InventoryConfigurationList", value.asInstanceOf[js.Any])
+    inline def setInventoryConfigurationList(value: InventoryConfigurationList): Self = StObject.set(x, "InventoryConfigurationList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInventoryConfigurationListUndefined: Self = StObject.set(x, "InventoryConfigurationList", js.undefined)
+    inline def setInventoryConfigurationListUndefined: Self = StObject.set(x, "InventoryConfigurationList", js.undefined)
     
-    @scala.inline
-    def setInventoryConfigurationListVarargs(value: InventoryConfiguration*): Self = StObject.set(x, "InventoryConfigurationList", js.Array(value :_*))
+    inline def setInventoryConfigurationListVarargs(value: InventoryConfiguration*): Self = StObject.set(x, "InventoryConfigurationList", js.Array(value :_*))
     
-    @scala.inline
-    def setIsTruncated(value: IsTruncated): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
+    inline def setIsTruncated(value: IsTruncated): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
+    inline def setIsTruncatedUndefined: Self = StObject.set(x, "IsTruncated", js.undefined)
     
-    @scala.inline
-    def setNextContinuationToken(value: NextToken): Self = StObject.set(x, "NextContinuationToken", value.asInstanceOf[js.Any])
+    inline def setNextContinuationToken(value: NextToken): Self = StObject.set(x, "NextContinuationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextContinuationTokenUndefined: Self = StObject.set(x, "NextContinuationToken", js.undefined)
+    inline def setNextContinuationTokenUndefined: Self = StObject.set(x, "NextContinuationToken", js.undefined)
   }
 }

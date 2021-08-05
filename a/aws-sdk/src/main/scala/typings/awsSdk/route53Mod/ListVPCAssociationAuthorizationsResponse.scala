@@ -23,28 +23,21 @@ trait ListVPCAssociationAuthorizationsResponse extends StObject {
 }
 object ListVPCAssociationAuthorizationsResponse {
   
-  @scala.inline
-  def apply(HostedZoneId: ResourceId, VPCs: VPCs): ListVPCAssociationAuthorizationsResponse = {
+  inline def apply(HostedZoneId: ResourceId, VPCs: VPCs): ListVPCAssociationAuthorizationsResponse = {
     val __obj = js.Dynamic.literal(HostedZoneId = HostedZoneId.asInstanceOf[js.Any], VPCs = VPCs.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListVPCAssociationAuthorizationsResponse]
   }
   
-  @scala.inline
-  implicit class ListVPCAssociationAuthorizationsResponseMutableBuilder[Self <: ListVPCAssociationAuthorizationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListVPCAssociationAuthorizationsResponse](x: Self) {
     
-    @scala.inline
-    def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
+    inline def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setVPCs(value: VPCs): Self = StObject.set(x, "VPCs", value.asInstanceOf[js.Any])
+    inline def setVPCs(value: VPCs): Self = StObject.set(x, "VPCs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVPCsVarargs(value: VPC*): Self = StObject.set(x, "VPCs", js.Array(value :_*))
+    inline def setVPCsVarargs(value: VPC*): Self = StObject.set(x, "VPCs", js.Array(value :_*))
   }
 }

@@ -11,16 +11,13 @@ trait RealtimeListener extends StObject {
 }
 object RealtimeListener {
   
-  @scala.inline
-  def apply(close: () => js.Promise[Unit]): RealtimeListener = {
+  inline def apply(close: () => js.Promise[Unit]): RealtimeListener = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close))
     __obj.asInstanceOf[RealtimeListener]
   }
   
-  @scala.inline
-  implicit class RealtimeListenerMutableBuilder[Self <: RealtimeListener] (val x: Self) extends AnyVal {
+  extension [Self <: RealtimeListener](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
   }
 }

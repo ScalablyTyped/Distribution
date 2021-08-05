@@ -15,20 +15,16 @@ trait SaveAction
 }
 object SaveAction {
   
-  @scala.inline
-  def apply(fields: js.Object, `type`: SAVE): SaveAction = {
+  inline def apply(fields: js.Object, `type`: SAVE): SaveAction = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SaveAction]
   }
   
-  @scala.inline
-  implicit class SaveActionMutableBuilder[Self <: SaveAction] (val x: Self) extends AnyVal {
+  extension [Self <: SaveAction](x: Self) {
     
-    @scala.inline
-    def setFields(value: js.Object): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    inline def setFields(value: js.Object): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: SAVE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: SAVE): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -8,6 +8,5 @@ object argparseStrings {
   
   @js.native
   sealed trait ActionConstructorOptions extends StObject
-  @scala.inline
-  def ActionConstructorOptions: ActionConstructorOptions = "ActionConstructorOptions".asInstanceOf[ActionConstructorOptions]
+  inline def ActionConstructorOptions: ActionConstructorOptions = "ActionConstructorOptions".asInstanceOf[ActionConstructorOptions]
 }

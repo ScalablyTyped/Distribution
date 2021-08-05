@@ -11,19 +11,15 @@ trait PartialMDCTextFieldCharac extends StObject {
 }
 object PartialMDCTextFieldCharac {
   
-  @scala.inline
-  def apply(): PartialMDCTextFieldCharac = {
+  inline def apply(): PartialMDCTextFieldCharac = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialMDCTextFieldCharac]
   }
   
-  @scala.inline
-  implicit class PartialMDCTextFieldCharacMutableBuilder[Self <: PartialMDCTextFieldCharac] (val x: Self) extends AnyVal {
+  extension [Self <: PartialMDCTextFieldCharac](x: Self) {
     
-    @scala.inline
-    def setSetContent(value: /* content */ String => Unit): Self = StObject.set(x, "setContent", js.Any.fromFunction1(value))
+    inline def setSetContent(value: /* content */ String => Unit): Self = StObject.set(x, "setContent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetContentUndefined: Self = StObject.set(x, "setContent", js.undefined)
+    inline def setSetContentUndefined: Self = StObject.set(x, "setContent", js.undefined)
   }
 }

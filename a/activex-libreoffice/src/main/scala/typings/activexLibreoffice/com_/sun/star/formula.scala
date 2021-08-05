@@ -36,8 +36,7 @@ object formula {
        with XAccessibleEventBroadcaster
   object AccessibleFormulaText {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AccessibleChildCount: Double,
       AccessibleContext: XAccessibleContext,
       AccessibleDescription: String,
@@ -98,8 +97,7 @@ object formula {
        with XAccessibleEventBroadcaster
   object AccessibleFormulaView {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       AccessibleChildCount: Double,
       AccessibleContext: XAccessibleContext,
       AccessibleDescription: String,
@@ -373,8 +371,7 @@ object formula {
   }
   object FormulaProperties {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Alignment: Double,
       BaseFontHeight: Double,
       BaseLine: Double,
@@ -436,176 +433,119 @@ object formula {
       __obj.asInstanceOf[FormulaProperties]
     }
     
-    @scala.inline
-    implicit class FormulaPropertiesMutableBuilder[Self <: FormulaProperties] (val x: Self) extends AnyVal {
+    extension [Self <: FormulaProperties](x: Self) {
       
-      @scala.inline
-      def setAlignment(value: Double): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
+      inline def setAlignment(value: Double): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseFontHeight(value: Double): Self = StObject.set(x, "BaseFontHeight", value.asInstanceOf[js.Any])
+      inline def setBaseFontHeight(value: Double): Self = StObject.set(x, "BaseFontHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaseLine(value: Double): Self = StObject.set(x, "BaseLine", value.asInstanceOf[js.Any])
+      inline def setBaseLine(value: Double): Self = StObject.set(x, "BaseLine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBottomMargin(value: Double): Self = StObject.set(x, "BottomMargin", value.asInstanceOf[js.Any])
+      inline def setBottomMargin(value: Double): Self = StObject.set(x, "BottomMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomFontNameFixed(value: String): Self = StObject.set(x, "CustomFontNameFixed", value.asInstanceOf[js.Any])
+      inline def setCustomFontNameFixed(value: String): Self = StObject.set(x, "CustomFontNameFixed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomFontNameSans(value: String): Self = StObject.set(x, "CustomFontNameSans", value.asInstanceOf[js.Any])
+      inline def setCustomFontNameSans(value: String): Self = StObject.set(x, "CustomFontNameSans", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomFontNameSerif(value: String): Self = StObject.set(x, "CustomFontNameSerif", value.asInstanceOf[js.Any])
+      inline def setCustomFontNameSerif(value: String): Self = StObject.set(x, "CustomFontNameSerif", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontFixedIsBold(value: Boolean): Self = StObject.set(x, "FontFixedIsBold", value.asInstanceOf[js.Any])
+      inline def setFontFixedIsBold(value: Boolean): Self = StObject.set(x, "FontFixedIsBold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontFixedIsItalic(value: Boolean): Self = StObject.set(x, "FontFixedIsItalic", value.asInstanceOf[js.Any])
+      inline def setFontFixedIsItalic(value: Boolean): Self = StObject.set(x, "FontFixedIsItalic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontFunctionsIsBold(value: Boolean): Self = StObject.set(x, "FontFunctionsIsBold", value.asInstanceOf[js.Any])
+      inline def setFontFunctionsIsBold(value: Boolean): Self = StObject.set(x, "FontFunctionsIsBold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontFunctionsIsItalic(value: Boolean): Self = StObject.set(x, "FontFunctionsIsItalic", value.asInstanceOf[js.Any])
+      inline def setFontFunctionsIsItalic(value: Boolean): Self = StObject.set(x, "FontFunctionsIsItalic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontNameFunctions(value: String): Self = StObject.set(x, "FontNameFunctions", value.asInstanceOf[js.Any])
+      inline def setFontNameFunctions(value: String): Self = StObject.set(x, "FontNameFunctions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontNameNumbers(value: String): Self = StObject.set(x, "FontNameNumbers", value.asInstanceOf[js.Any])
+      inline def setFontNameNumbers(value: String): Self = StObject.set(x, "FontNameNumbers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontNameText(value: String): Self = StObject.set(x, "FontNameText", value.asInstanceOf[js.Any])
+      inline def setFontNameText(value: String): Self = StObject.set(x, "FontNameText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontNameVariables(value: String): Self = StObject.set(x, "FontNameVariables", value.asInstanceOf[js.Any])
+      inline def setFontNameVariables(value: String): Self = StObject.set(x, "FontNameVariables", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontNumbersIsBold(value: Boolean): Self = StObject.set(x, "FontNumbersIsBold", value.asInstanceOf[js.Any])
+      inline def setFontNumbersIsBold(value: Boolean): Self = StObject.set(x, "FontNumbersIsBold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontNumbersIsItalic(value: Boolean): Self = StObject.set(x, "FontNumbersIsItalic", value.asInstanceOf[js.Any])
+      inline def setFontNumbersIsItalic(value: Boolean): Self = StObject.set(x, "FontNumbersIsItalic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSansIsBold(value: Boolean): Self = StObject.set(x, "FontSansIsBold", value.asInstanceOf[js.Any])
+      inline def setFontSansIsBold(value: Boolean): Self = StObject.set(x, "FontSansIsBold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSansIsItalic(value: Boolean): Self = StObject.set(x, "FontSansIsItalic", value.asInstanceOf[js.Any])
+      inline def setFontSansIsItalic(value: Boolean): Self = StObject.set(x, "FontSansIsItalic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSerifIsBold(value: Boolean): Self = StObject.set(x, "FontSerifIsBold", value.asInstanceOf[js.Any])
+      inline def setFontSerifIsBold(value: Boolean): Self = StObject.set(x, "FontSerifIsBold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSerifIsItalic(value: Boolean): Self = StObject.set(x, "FontSerifIsItalic", value.asInstanceOf[js.Any])
+      inline def setFontSerifIsItalic(value: Boolean): Self = StObject.set(x, "FontSerifIsItalic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontTextIsBold(value: Boolean): Self = StObject.set(x, "FontTextIsBold", value.asInstanceOf[js.Any])
+      inline def setFontTextIsBold(value: Boolean): Self = StObject.set(x, "FontTextIsBold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontTextIsItalic(value: Boolean): Self = StObject.set(x, "FontTextIsItalic", value.asInstanceOf[js.Any])
+      inline def setFontTextIsItalic(value: Boolean): Self = StObject.set(x, "FontTextIsItalic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontVariablesIsBold(value: Boolean): Self = StObject.set(x, "FontVariablesIsBold", value.asInstanceOf[js.Any])
+      inline def setFontVariablesIsBold(value: Boolean): Self = StObject.set(x, "FontVariablesIsBold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontVariablesIsItalic(value: Boolean): Self = StObject.set(x, "FontVariablesIsItalic", value.asInstanceOf[js.Any])
+      inline def setFontVariablesIsItalic(value: Boolean): Self = StObject.set(x, "FontVariablesIsItalic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormula(value: String): Self = StObject.set(x, "Formula", value.asInstanceOf[js.Any])
+      inline def setFormula(value: String): Self = StObject.set(x, "Formula", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsScaleAllBrackets(value: Boolean): Self = StObject.set(x, "IsScaleAllBrackets", value.asInstanceOf[js.Any])
+      inline def setIsScaleAllBrackets(value: Boolean): Self = StObject.set(x, "IsScaleAllBrackets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsTextMode(value: Boolean): Self = StObject.set(x, "IsTextMode", value.asInstanceOf[js.Any])
+      inline def setIsTextMode(value: Boolean): Self = StObject.set(x, "IsTextMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeftMargin(value: Double): Self = StObject.set(x, "LeftMargin", value.asInstanceOf[js.Any])
+      inline def setLeftMargin(value: Double): Self = StObject.set(x, "LeftMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeBracketDistance(value: Double): Self = StObject.set(x, "RelativeBracketDistance", value.asInstanceOf[js.Any])
+      inline def setRelativeBracketDistance(value: Double): Self = StObject.set(x, "RelativeBracketDistance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeBracketExcessSize(value: Double): Self = StObject.set(x, "RelativeBracketExcessSize", value.asInstanceOf[js.Any])
+      inline def setRelativeBracketExcessSize(value: Double): Self = StObject.set(x, "RelativeBracketExcessSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeFontHeightFunctions(value: Double): Self = StObject.set(x, "RelativeFontHeightFunctions", value.asInstanceOf[js.Any])
+      inline def setRelativeFontHeightFunctions(value: Double): Self = StObject.set(x, "RelativeFontHeightFunctions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeFontHeightIndices(value: Double): Self = StObject.set(x, "RelativeFontHeightIndices", value.asInstanceOf[js.Any])
+      inline def setRelativeFontHeightIndices(value: Double): Self = StObject.set(x, "RelativeFontHeightIndices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeFontHeightLimits(value: Double): Self = StObject.set(x, "RelativeFontHeightLimits", value.asInstanceOf[js.Any])
+      inline def setRelativeFontHeightLimits(value: Double): Self = StObject.set(x, "RelativeFontHeightLimits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeFontHeightOperators(value: Double): Self = StObject.set(x, "RelativeFontHeightOperators", value.asInstanceOf[js.Any])
+      inline def setRelativeFontHeightOperators(value: Double): Self = StObject.set(x, "RelativeFontHeightOperators", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeFontHeightText(value: Double): Self = StObject.set(x, "RelativeFontHeightText", value.asInstanceOf[js.Any])
+      inline def setRelativeFontHeightText(value: Double): Self = StObject.set(x, "RelativeFontHeightText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeFractionBarExcessLength(value: Double): Self = StObject.set(x, "RelativeFractionBarExcessLength", value.asInstanceOf[js.Any])
+      inline def setRelativeFractionBarExcessLength(value: Double): Self = StObject.set(x, "RelativeFractionBarExcessLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeFractionBarLineWeight(value: Double): Self = StObject.set(x, "RelativeFractionBarLineWeight", value.asInstanceOf[js.Any])
+      inline def setRelativeFractionBarLineWeight(value: Double): Self = StObject.set(x, "RelativeFractionBarLineWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeFractionDenominatorDepth(value: Double): Self = StObject.set(x, "RelativeFractionDenominatorDepth", value.asInstanceOf[js.Any])
+      inline def setRelativeFractionDenominatorDepth(value: Double): Self = StObject.set(x, "RelativeFractionDenominatorDepth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeFractionNumeratorHeight(value: Double): Self = StObject.set(x, "RelativeFractionNumeratorHeight", value.asInstanceOf[js.Any])
+      inline def setRelativeFractionNumeratorHeight(value: Double): Self = StObject.set(x, "RelativeFractionNumeratorHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeIndexSubscript(value: Double): Self = StObject.set(x, "RelativeIndexSubscript", value.asInstanceOf[js.Any])
+      inline def setRelativeIndexSubscript(value: Double): Self = StObject.set(x, "RelativeIndexSubscript", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeIndexSuperscript(value: Double): Self = StObject.set(x, "RelativeIndexSuperscript", value.asInstanceOf[js.Any])
+      inline def setRelativeIndexSuperscript(value: Double): Self = StObject.set(x, "RelativeIndexSuperscript", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeLineSpacing(value: Double): Self = StObject.set(x, "RelativeLineSpacing", value.asInstanceOf[js.Any])
+      inline def setRelativeLineSpacing(value: Double): Self = StObject.set(x, "RelativeLineSpacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeLowerLimitDistance(value: Double): Self = StObject.set(x, "RelativeLowerLimitDistance", value.asInstanceOf[js.Any])
+      inline def setRelativeLowerLimitDistance(value: Double): Self = StObject.set(x, "RelativeLowerLimitDistance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeMatrixColumnSpacing(value: Double): Self = StObject.set(x, "RelativeMatrixColumnSpacing", value.asInstanceOf[js.Any])
+      inline def setRelativeMatrixColumnSpacing(value: Double): Self = StObject.set(x, "RelativeMatrixColumnSpacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeMatrixLineSpacing(value: Double): Self = StObject.set(x, "RelativeMatrixLineSpacing", value.asInstanceOf[js.Any])
+      inline def setRelativeMatrixLineSpacing(value: Double): Self = StObject.set(x, "RelativeMatrixLineSpacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeOperatorExcessSize(value: Double): Self = StObject.set(x, "RelativeOperatorExcessSize", value.asInstanceOf[js.Any])
+      inline def setRelativeOperatorExcessSize(value: Double): Self = StObject.set(x, "RelativeOperatorExcessSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeOperatorSpacing(value: Double): Self = StObject.set(x, "RelativeOperatorSpacing", value.asInstanceOf[js.Any])
+      inline def setRelativeOperatorSpacing(value: Double): Self = StObject.set(x, "RelativeOperatorSpacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeRootSpacing(value: Double): Self = StObject.set(x, "RelativeRootSpacing", value.asInstanceOf[js.Any])
+      inline def setRelativeRootSpacing(value: Double): Self = StObject.set(x, "RelativeRootSpacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeScaleBracketExcessSize(value: Double): Self = StObject.set(x, "RelativeScaleBracketExcessSize", value.asInstanceOf[js.Any])
+      inline def setRelativeScaleBracketExcessSize(value: Double): Self = StObject.set(x, "RelativeScaleBracketExcessSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeSpacing(value: Double): Self = StObject.set(x, "RelativeSpacing", value.asInstanceOf[js.Any])
+      inline def setRelativeSpacing(value: Double): Self = StObject.set(x, "RelativeSpacing", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeSymbolMinimumHeight(value: Double): Self = StObject.set(x, "RelativeSymbolMinimumHeight", value.asInstanceOf[js.Any])
+      inline def setRelativeSymbolMinimumHeight(value: Double): Self = StObject.set(x, "RelativeSymbolMinimumHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeSymbolPrimaryHeight(value: Double): Self = StObject.set(x, "RelativeSymbolPrimaryHeight", value.asInstanceOf[js.Any])
+      inline def setRelativeSymbolPrimaryHeight(value: Double): Self = StObject.set(x, "RelativeSymbolPrimaryHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeUpperLimitDistance(value: Double): Self = StObject.set(x, "RelativeUpperLimitDistance", value.asInstanceOf[js.Any])
+      inline def setRelativeUpperLimitDistance(value: Double): Self = StObject.set(x, "RelativeUpperLimitDistance", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRightMargin(value: Double): Self = StObject.set(x, "RightMargin", value.asInstanceOf[js.Any])
+      inline def setRightMargin(value: Double): Self = StObject.set(x, "RightMargin", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTopMargin(value: Double): Self = StObject.set(x, "TopMargin", value.asInstanceOf[js.Any])
+      inline def setTopMargin(value: Double): Self = StObject.set(x, "TopMargin", value.asInstanceOf[js.Any])
     }
   }
   
@@ -659,8 +599,7 @@ object formula {
   }
   object SymbolDescriptor {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       nCharSet: Double,
       nCharacter: Double,
       nFamily: Double,
@@ -676,38 +615,27 @@ object formula {
       __obj.asInstanceOf[SymbolDescriptor]
     }
     
-    @scala.inline
-    implicit class SymbolDescriptorMutableBuilder[Self <: SymbolDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: SymbolDescriptor](x: Self) {
       
-      @scala.inline
-      def setNCharSet(value: Double): Self = StObject.set(x, "nCharSet", value.asInstanceOf[js.Any])
+      inline def setNCharSet(value: Double): Self = StObject.set(x, "nCharSet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNCharacter(value: Double): Self = StObject.set(x, "nCharacter", value.asInstanceOf[js.Any])
+      inline def setNCharacter(value: Double): Self = StObject.set(x, "nCharacter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNFamily(value: Double): Self = StObject.set(x, "nFamily", value.asInstanceOf[js.Any])
+      inline def setNFamily(value: Double): Self = StObject.set(x, "nFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNItalic(value: Double): Self = StObject.set(x, "nItalic", value.asInstanceOf[js.Any])
+      inline def setNItalic(value: Double): Self = StObject.set(x, "nItalic", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNPitch(value: Double): Self = StObject.set(x, "nPitch", value.asInstanceOf[js.Any])
+      inline def setNPitch(value: Double): Self = StObject.set(x, "nPitch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNWeight(value: Double): Self = StObject.set(x, "nWeight", value.asInstanceOf[js.Any])
+      inline def setNWeight(value: Double): Self = StObject.set(x, "nWeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSExportName(value: String): Self = StObject.set(x, "sExportName", value.asInstanceOf[js.Any])
+      inline def setSExportName(value: String): Self = StObject.set(x, "sExportName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSFontName(value: String): Self = StObject.set(x, "sFontName", value.asInstanceOf[js.Any])
+      inline def setSFontName(value: String): Self = StObject.set(x, "sFontName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSName(value: String): Self = StObject.set(x, "sName", value.asInstanceOf[js.Any])
+      inline def setSName(value: String): Self = StObject.set(x, "sName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSSymbolSet(value: String): Self = StObject.set(x, "sSymbolSet", value.asInstanceOf[js.Any])
+      inline def setSSymbolSet(value: String): Self = StObject.set(x, "sSymbolSet", value.asInstanceOf[js.Any])
     }
   }
 }

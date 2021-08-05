@@ -20,23 +20,15 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def load(filename: String): js.Promise[PackageDefinition] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(filename.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PackageDefinition]]
-  @scala.inline
-  def load(filename: String, options: Options): js.Promise[PackageDefinition] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PackageDefinition]]
-  @scala.inline
-  def load(filename: js.Array[String]): js.Promise[PackageDefinition] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(filename.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PackageDefinition]]
-  @scala.inline
-  def load(filename: js.Array[String], options: Options): js.Promise[PackageDefinition] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PackageDefinition]]
+  inline def load(filename: String): js.Promise[PackageDefinition] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(filename.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PackageDefinition]]
+  inline def load(filename: String, options: Options): js.Promise[PackageDefinition] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PackageDefinition]]
+  inline def load(filename: js.Array[String]): js.Promise[PackageDefinition] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(filename.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PackageDefinition]]
+  inline def load(filename: js.Array[String], options: Options): js.Promise[PackageDefinition] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PackageDefinition]]
   
-  @scala.inline
-  def loadSync(filename: String): PackageDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSync")(filename.asInstanceOf[js.Any]).asInstanceOf[PackageDefinition]
-  @scala.inline
-  def loadSync(filename: String, options: Options): PackageDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("loadSync")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PackageDefinition]
-  @scala.inline
-  def loadSync(filename: js.Array[String]): PackageDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSync")(filename.asInstanceOf[js.Any]).asInstanceOf[PackageDefinition]
-  @scala.inline
-  def loadSync(filename: js.Array[String], options: Options): PackageDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("loadSync")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PackageDefinition]
+  inline def loadSync(filename: String): PackageDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSync")(filename.asInstanceOf[js.Any]).asInstanceOf[PackageDefinition]
+  inline def loadSync(filename: String, options: Options): PackageDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("loadSync")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PackageDefinition]
+  inline def loadSync(filename: js.Array[String]): PackageDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSync")(filename.asInstanceOf[js.Any]).asInstanceOf[PackageDefinition]
+  inline def loadSync(filename: js.Array[String], options: Options): PackageDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("loadSync")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PackageDefinition]
   
   /* Rewritten from type alias, can be one of: 
     - typings.grpcProtoLoader.mod.ServiceDefinition
@@ -57,18 +49,15 @@ object mod {
   }
   object EnumTypeDefinition {
     
-    @scala.inline
-    def apply(fileDescriptorProtos: js.Array[Buffer], `type`: js.Object): EnumTypeDefinition = {
+    inline def apply(fileDescriptorProtos: js.Array[Buffer], `type`: js.Object): EnumTypeDefinition = {
       val __obj = js.Dynamic.literal(fileDescriptorProtos = fileDescriptorProtos.asInstanceOf[js.Any], format = "Protocol Buffer 3 EnumDescriptorProto")
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[EnumTypeDefinition]
     }
     
-    @scala.inline
-    implicit class EnumTypeDefinitionMutableBuilder[Self <: EnumTypeDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: EnumTypeDefinition](x: Self) {
       
-      @scala.inline
-      def setFormat(value: `Protocol Buffer 3 EnumDescriptorProto`): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: `Protocol Buffer 3 EnumDescriptorProto`): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     }
   }
   
@@ -82,18 +71,15 @@ object mod {
   }
   object MessageTypeDefinition {
     
-    @scala.inline
-    def apply(fileDescriptorProtos: js.Array[Buffer], `type`: js.Object): MessageTypeDefinition = {
+    inline def apply(fileDescriptorProtos: js.Array[Buffer], `type`: js.Object): MessageTypeDefinition = {
       val __obj = js.Dynamic.literal(fileDescriptorProtos = fileDescriptorProtos.asInstanceOf[js.Any], format = "Protocol Buffer 3 DescriptorProto")
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MessageTypeDefinition]
     }
     
-    @scala.inline
-    implicit class MessageTypeDefinitionMutableBuilder[Self <: MessageTypeDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: MessageTypeDefinition](x: Self) {
       
-      @scala.inline
-      def setFormat(value: `Protocol Buffer 3 DescriptorProto`): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: `Protocol Buffer 3 DescriptorProto`): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     }
   }
   
@@ -129,8 +115,7 @@ object mod {
   }
   object MethodDefinition {
     
-    @scala.inline
-    def apply[RequestType, ResponseType](
+    inline def apply[RequestType, ResponseType](
       path: String,
       requestDeserialize: /* bytes */ Buffer => RequestType,
       requestSerialize: RequestType => Buffer,
@@ -145,41 +130,29 @@ object mod {
       __obj.asInstanceOf[MethodDefinition[RequestType, ResponseType]]
     }
     
-    @scala.inline
-    implicit class MethodDefinitionMutableBuilder[Self <: MethodDefinition[?, ?], RequestType, ResponseType] (val x: Self & (MethodDefinition[RequestType, ResponseType])) extends AnyVal {
+    extension [Self <: MethodDefinition[?, ?], RequestType, ResponseType](x: Self & (MethodDefinition[RequestType, ResponseType])) {
       
-      @scala.inline
-      def setOriginalName(value: String): Self = StObject.set(x, "originalName", value.asInstanceOf[js.Any])
+      inline def setOriginalName(value: String): Self = StObject.set(x, "originalName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalNameUndefined: Self = StObject.set(x, "originalName", js.undefined)
+      inline def setOriginalNameUndefined: Self = StObject.set(x, "originalName", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestDeserialize(value: /* bytes */ Buffer => RequestType): Self = StObject.set(x, "requestDeserialize", js.Any.fromFunction1(value))
+      inline def setRequestDeserialize(value: /* bytes */ Buffer => RequestType): Self = StObject.set(x, "requestDeserialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRequestSerialize(value: RequestType => Buffer): Self = StObject.set(x, "requestSerialize", js.Any.fromFunction1(value))
+      inline def setRequestSerialize(value: RequestType => Buffer): Self = StObject.set(x, "requestSerialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRequestStream(value: Boolean): Self = StObject.set(x, "requestStream", value.asInstanceOf[js.Any])
+      inline def setRequestStream(value: Boolean): Self = StObject.set(x, "requestStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequestType(value: MessageTypeDefinition): Self = StObject.set(x, "requestType", value.asInstanceOf[js.Any])
+      inline def setRequestType(value: MessageTypeDefinition): Self = StObject.set(x, "requestType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseDeserialize(value: /* bytes */ Buffer => ResponseType): Self = StObject.set(x, "responseDeserialize", js.Any.fromFunction1(value))
+      inline def setResponseDeserialize(value: /* bytes */ Buffer => ResponseType): Self = StObject.set(x, "responseDeserialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResponseSerialize(value: ResponseType => Buffer): Self = StObject.set(x, "responseSerialize", js.Any.fromFunction1(value))
+      inline def setResponseSerialize(value: ResponseType => Buffer): Self = StObject.set(x, "responseSerialize", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResponseStream(value: Boolean): Self = StObject.set(x, "responseStream", value.asInstanceOf[js.Any])
+      inline def setResponseStream(value: Boolean): Self = StObject.set(x, "responseStream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseType(value: MessageTypeDefinition): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
+      inline def setResponseType(value: MessageTypeDefinition): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
     }
   }
   
@@ -192,23 +165,18 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setIncludeDirs(value: js.Array[String]): Self = StObject.set(x, "includeDirs", value.asInstanceOf[js.Any])
+      inline def setIncludeDirs(value: js.Array[String]): Self = StObject.set(x, "includeDirs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeDirsUndefined: Self = StObject.set(x, "includeDirs", js.undefined)
+      inline def setIncludeDirsUndefined: Self = StObject.set(x, "includeDirs", js.undefined)
       
-      @scala.inline
-      def setIncludeDirsVarargs(value: String*): Self = StObject.set(x, "includeDirs", js.Array(value :_*))
+      inline def setIncludeDirsVarargs(value: String*): Self = StObject.set(x, "includeDirs", js.Array(value :_*))
     }
   }
   
@@ -224,27 +192,21 @@ object mod {
   }
   object ProtobufTypeDefinition {
     
-    @scala.inline
-    def apply(fileDescriptorProtos: js.Array[Buffer], format: String, `type`: js.Object): ProtobufTypeDefinition = {
+    inline def apply(fileDescriptorProtos: js.Array[Buffer], format: String, `type`: js.Object): ProtobufTypeDefinition = {
       val __obj = js.Dynamic.literal(fileDescriptorProtos = fileDescriptorProtos.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProtobufTypeDefinition]
     }
     
-    @scala.inline
-    implicit class ProtobufTypeDefinitionMutableBuilder[Self <: ProtobufTypeDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: ProtobufTypeDefinition](x: Self) {
       
-      @scala.inline
-      def setFileDescriptorProtos(value: js.Array[Buffer]): Self = StObject.set(x, "fileDescriptorProtos", value.asInstanceOf[js.Any])
+      inline def setFileDescriptorProtos(value: js.Array[Buffer]): Self = StObject.set(x, "fileDescriptorProtos", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileDescriptorProtosVarargs(value: Buffer*): Self = StObject.set(x, "fileDescriptorProtos", js.Array(value :_*))
+      inline def setFileDescriptorProtosVarargs(value: Buffer*): Self = StObject.set(x, "fileDescriptorProtos", js.Array(value :_*))
       
-      @scala.inline
-      def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: js.Object): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: js.Object): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -255,15 +217,13 @@ object mod {
   trait _AnyDefinition extends StObject
   object _AnyDefinition {
     
-    @scala.inline
-    def EnumTypeDefinition(fileDescriptorProtos: js.Array[Buffer], `type`: js.Object): typings.grpcProtoLoader.mod.EnumTypeDefinition = {
+    inline def EnumTypeDefinition(fileDescriptorProtos: js.Array[Buffer], `type`: js.Object): typings.grpcProtoLoader.mod.EnumTypeDefinition = {
       val __obj = js.Dynamic.literal(fileDescriptorProtos = fileDescriptorProtos.asInstanceOf[js.Any], format = "Protocol Buffer 3 EnumDescriptorProto")
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.grpcProtoLoader.mod.EnumTypeDefinition]
     }
     
-    @scala.inline
-    def MessageTypeDefinition(fileDescriptorProtos: js.Array[Buffer], `type`: js.Object): typings.grpcProtoLoader.mod.MessageTypeDefinition = {
+    inline def MessageTypeDefinition(fileDescriptorProtos: js.Array[Buffer], `type`: js.Object): typings.grpcProtoLoader.mod.MessageTypeDefinition = {
       val __obj = js.Dynamic.literal(fileDescriptorProtos = fileDescriptorProtos.asInstanceOf[js.Any], format = "Protocol Buffer 3 DescriptorProto")
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.grpcProtoLoader.mod.MessageTypeDefinition]
@@ -279,17 +239,14 @@ object mod {
     }
     object Enum {
       
-      @scala.inline
-      def apply(toDescriptor: String => Message[IEnumDescriptorProto] & IEnumDescriptorProto): Enum = {
+      inline def apply(toDescriptor: String => Message[IEnumDescriptorProto] & IEnumDescriptorProto): Enum = {
         val __obj = js.Dynamic.literal(toDescriptor = js.Any.fromFunction1(toDescriptor))
         __obj.asInstanceOf[Enum]
       }
       
-      @scala.inline
-      implicit class EnumMutableBuilder[Self <: Enum] (val x: Self) extends AnyVal {
+      extension [Self <: Enum](x: Self) {
         
-        @scala.inline
-        def setToDescriptor(value: String => Message[IEnumDescriptorProto] & IEnumDescriptorProto): Self = StObject.set(x, "toDescriptor", js.Any.fromFunction1(value))
+        inline def setToDescriptor(value: String => Message[IEnumDescriptorProto] & IEnumDescriptorProto): Self = StObject.set(x, "toDescriptor", js.Any.fromFunction1(value))
       }
     }
     
@@ -299,17 +256,14 @@ object mod {
     }
     object Root {
       
-      @scala.inline
-      def apply(toDescriptor: String => Message[IFileDescriptorSet] & IFileDescriptorSet): Root = {
+      inline def apply(toDescriptor: String => Message[IFileDescriptorSet] & IFileDescriptorSet): Root = {
         val __obj = js.Dynamic.literal(toDescriptor = js.Any.fromFunction1(toDescriptor))
         __obj.asInstanceOf[Root]
       }
       
-      @scala.inline
-      implicit class RootMutableBuilder[Self <: Root] (val x: Self) extends AnyVal {
+      extension [Self <: Root](x: Self) {
         
-        @scala.inline
-        def setToDescriptor(value: String => Message[IFileDescriptorSet] & IFileDescriptorSet): Self = StObject.set(x, "toDescriptor", js.Any.fromFunction1(value))
+        inline def setToDescriptor(value: String => Message[IFileDescriptorSet] & IFileDescriptorSet): Self = StObject.set(x, "toDescriptor", js.Any.fromFunction1(value))
       }
     }
     
@@ -319,17 +273,14 @@ object mod {
     }
     object Type {
       
-      @scala.inline
-      def apply(toDescriptor: String => Message[IDescriptorProto] & IDescriptorProto): Type = {
+      inline def apply(toDescriptor: String => Message[IDescriptorProto] & IDescriptorProto): Type = {
         val __obj = js.Dynamic.literal(toDescriptor = js.Any.fromFunction1(toDescriptor))
         __obj.asInstanceOf[Type]
       }
       
-      @scala.inline
-      implicit class TypeMutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
+      extension [Self <: Type](x: Self) {
         
-        @scala.inline
-        def setToDescriptor(value: String => Message[IDescriptorProto] & IDescriptorProto): Self = StObject.set(x, "toDescriptor", js.Any.fromFunction1(value))
+        inline def setToDescriptor(value: String => Message[IDescriptorProto] & IDescriptorProto): Self = StObject.set(x, "toDescriptor", js.Any.fromFunction1(value))
       }
     }
   }

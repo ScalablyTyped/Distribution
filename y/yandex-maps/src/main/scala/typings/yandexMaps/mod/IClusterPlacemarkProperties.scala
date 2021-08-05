@@ -12,8 +12,7 @@ trait IClusterPlacemarkProperties
 }
 object IClusterPlacemarkProperties {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     events: IEventManager[js.Object],
     geoObjects: js.Array[IGeoObject[IGeometry]],
     get: (String, js.Object) => js.Object
@@ -22,13 +21,10 @@ object IClusterPlacemarkProperties {
     __obj.asInstanceOf[IClusterPlacemarkProperties]
   }
   
-  @scala.inline
-  implicit class IClusterPlacemarkPropertiesMutableBuilder[Self <: IClusterPlacemarkProperties] (val x: Self) extends AnyVal {
+  extension [Self <: IClusterPlacemarkProperties](x: Self) {
     
-    @scala.inline
-    def setGeoObjects(value: js.Array[IGeoObject[IGeometry]]): Self = StObject.set(x, "geoObjects", value.asInstanceOf[js.Any])
+    inline def setGeoObjects(value: js.Array[IGeoObject[IGeometry]]): Self = StObject.set(x, "geoObjects", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeoObjectsVarargs(value: IGeoObject[IGeometry]*): Self = StObject.set(x, "geoObjects", js.Array(value :_*))
+    inline def setGeoObjectsVarargs(value: IGeoObject[IGeometry]*): Self = StObject.set(x, "geoObjects", js.Array(value :_*))
   }
 }

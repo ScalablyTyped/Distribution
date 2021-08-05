@@ -11,6 +11,5 @@ object switchToFrameMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(hasId: Id): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null]]
+  inline def default(hasId: Id): js.Promise[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Null]]
 }

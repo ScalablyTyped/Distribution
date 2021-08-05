@@ -16,31 +16,23 @@ trait PartialGithubPickerStyles extends StObject {
 }
 object PartialGithubPickerStyles {
   
-  @scala.inline
-  def apply(): PartialGithubPickerStyles = {
+  inline def apply(): PartialGithubPickerStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialGithubPickerStyles]
   }
   
-  @scala.inline
-  implicit class PartialGithubPickerStylesMutableBuilder[Self <: PartialGithubPickerStyles] (val x: Self) extends AnyVal {
+  extension [Self <: PartialGithubPickerStyles](x: Self) {
     
-    @scala.inline
-    def setCard(value: CSSProperties): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
+    inline def setCard(value: CSSProperties): Self = StObject.set(x, "card", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
+    inline def setCardUndefined: Self = StObject.set(x, "card", js.undefined)
     
-    @scala.inline
-    def setTriangle(value: CSSProperties): Self = StObject.set(x, "triangle", value.asInstanceOf[js.Any])
+    inline def setTriangle(value: CSSProperties): Self = StObject.set(x, "triangle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriangleShadow(value: CSSProperties): Self = StObject.set(x, "triangleShadow", value.asInstanceOf[js.Any])
+    inline def setTriangleShadow(value: CSSProperties): Self = StObject.set(x, "triangleShadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriangleShadowUndefined: Self = StObject.set(x, "triangleShadow", js.undefined)
+    inline def setTriangleShadowUndefined: Self = StObject.set(x, "triangleShadow", js.undefined)
     
-    @scala.inline
-    def setTriangleUndefined: Self = StObject.set(x, "triangle", js.undefined)
+    inline def setTriangleUndefined: Self = StObject.set(x, "triangle", js.undefined)
   }
 }

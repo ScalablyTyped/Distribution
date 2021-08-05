@@ -43,91 +43,63 @@ trait Notebook
 }
 object Notebook {
   
-  @scala.inline
-  def apply(): Notebook = {
+  inline def apply(): Notebook = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Notebook]
   }
   
-  @scala.inline
-  implicit class NotebookMutableBuilder[Self <: Notebook] (val x: Self) extends AnyVal {
+  extension [Self <: Notebook](x: Self) {
     
-    @scala.inline
-    def setIsDefault(value: NullableOption[Boolean]): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
+    inline def setIsDefault(value: NullableOption[Boolean]): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDefaultNull: Self = StObject.set(x, "isDefault", null)
+    inline def setIsDefaultNull: Self = StObject.set(x, "isDefault", null)
     
-    @scala.inline
-    def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
+    inline def setIsDefaultUndefined: Self = StObject.set(x, "isDefault", js.undefined)
     
-    @scala.inline
-    def setIsShared(value: NullableOption[Boolean]): Self = StObject.set(x, "isShared", value.asInstanceOf[js.Any])
+    inline def setIsShared(value: NullableOption[Boolean]): Self = StObject.set(x, "isShared", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsSharedNull: Self = StObject.set(x, "isShared", null)
+    inline def setIsSharedNull: Self = StObject.set(x, "isShared", null)
     
-    @scala.inline
-    def setIsSharedUndefined: Self = StObject.set(x, "isShared", js.undefined)
+    inline def setIsSharedUndefined: Self = StObject.set(x, "isShared", js.undefined)
     
-    @scala.inline
-    def setLinks(value: NullableOption[NotebookLinks]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: NullableOption[NotebookLinks]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinksNull: Self = StObject.set(x, "links", null)
+    inline def setLinksNull: Self = StObject.set(x, "links", null)
     
-    @scala.inline
-    def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+    inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
     
-    @scala.inline
-    def setSectionGroups(value: NullableOption[js.Array[SectionGroup]]): Self = StObject.set(x, "sectionGroups", value.asInstanceOf[js.Any])
+    inline def setSectionGroups(value: NullableOption[js.Array[SectionGroup]]): Self = StObject.set(x, "sectionGroups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionGroupsNull: Self = StObject.set(x, "sectionGroups", null)
+    inline def setSectionGroupsNull: Self = StObject.set(x, "sectionGroups", null)
     
-    @scala.inline
-    def setSectionGroupsUndefined: Self = StObject.set(x, "sectionGroups", js.undefined)
+    inline def setSectionGroupsUndefined: Self = StObject.set(x, "sectionGroups", js.undefined)
     
-    @scala.inline
-    def setSectionGroupsUrl(value: NullableOption[String]): Self = StObject.set(x, "sectionGroupsUrl", value.asInstanceOf[js.Any])
+    inline def setSectionGroupsUrl(value: NullableOption[String]): Self = StObject.set(x, "sectionGroupsUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionGroupsUrlNull: Self = StObject.set(x, "sectionGroupsUrl", null)
+    inline def setSectionGroupsUrlNull: Self = StObject.set(x, "sectionGroupsUrl", null)
     
-    @scala.inline
-    def setSectionGroupsUrlUndefined: Self = StObject.set(x, "sectionGroupsUrl", js.undefined)
+    inline def setSectionGroupsUrlUndefined: Self = StObject.set(x, "sectionGroupsUrl", js.undefined)
     
-    @scala.inline
-    def setSectionGroupsVarargs(value: SectionGroup*): Self = StObject.set(x, "sectionGroups", js.Array(value :_*))
+    inline def setSectionGroupsVarargs(value: SectionGroup*): Self = StObject.set(x, "sectionGroups", js.Array(value :_*))
     
-    @scala.inline
-    def setSections(value: NullableOption[js.Array[OnenoteSection]]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
+    inline def setSections(value: NullableOption[js.Array[OnenoteSection]]): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionsNull: Self = StObject.set(x, "sections", null)
+    inline def setSectionsNull: Self = StObject.set(x, "sections", null)
     
-    @scala.inline
-    def setSectionsUndefined: Self = StObject.set(x, "sections", js.undefined)
+    inline def setSectionsUndefined: Self = StObject.set(x, "sections", js.undefined)
     
-    @scala.inline
-    def setSectionsUrl(value: NullableOption[String]): Self = StObject.set(x, "sectionsUrl", value.asInstanceOf[js.Any])
+    inline def setSectionsUrl(value: NullableOption[String]): Self = StObject.set(x, "sectionsUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionsUrlNull: Self = StObject.set(x, "sectionsUrl", null)
+    inline def setSectionsUrlNull: Self = StObject.set(x, "sectionsUrl", null)
     
-    @scala.inline
-    def setSectionsUrlUndefined: Self = StObject.set(x, "sectionsUrl", js.undefined)
+    inline def setSectionsUrlUndefined: Self = StObject.set(x, "sectionsUrl", js.undefined)
     
-    @scala.inline
-    def setSectionsVarargs(value: OnenoteSection*): Self = StObject.set(x, "sections", js.Array(value :_*))
+    inline def setSectionsVarargs(value: OnenoteSection*): Self = StObject.set(x, "sections", js.Array(value :_*))
     
-    @scala.inline
-    def setUserRole(value: NullableOption[OnenoteUserRole]): Self = StObject.set(x, "userRole", value.asInstanceOf[js.Any])
+    inline def setUserRole(value: NullableOption[OnenoteUserRole]): Self = StObject.set(x, "userRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserRoleNull: Self = StObject.set(x, "userRole", null)
+    inline def setUserRoleNull: Self = StObject.set(x, "userRole", null)
     
-    @scala.inline
-    def setUserRoleUndefined: Self = StObject.set(x, "userRole", js.undefined)
+    inline def setUserRoleUndefined: Self = StObject.set(x, "userRole", js.undefined)
   }
 }

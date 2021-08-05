@@ -23,22 +23,17 @@ trait ChildType extends StObject {
 }
 object ChildType {
   
-  @scala.inline
-  def apply(id: String, max: Double, min: Double): ChildType = {
+  inline def apply(id: String, max: Double, min: Double): ChildType = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChildType]
   }
   
-  @scala.inline
-  implicit class ChildTypeMutableBuilder[Self <: ChildType] (val x: Self) extends AnyVal {
+  extension [Self <: ChildType](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+    inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+    inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
   }
 }

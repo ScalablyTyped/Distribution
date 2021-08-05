@@ -30,8 +30,7 @@ object Core {
   }
   object VariablePhotoCapturedEventArgs {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       captureTimeOffset: Double,
       capturedFrameControlValues: CapturedFrameControlValues,
       frame: CapturedFrame,
@@ -41,20 +40,15 @@ object Core {
       __obj.asInstanceOf[VariablePhotoCapturedEventArgs]
     }
     
-    @scala.inline
-    implicit class VariablePhotoCapturedEventArgsMutableBuilder[Self <: VariablePhotoCapturedEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: VariablePhotoCapturedEventArgs](x: Self) {
       
-      @scala.inline
-      def setCaptureTimeOffset(value: Double): Self = StObject.set(x, "captureTimeOffset", value.asInstanceOf[js.Any])
+      inline def setCaptureTimeOffset(value: Double): Self = StObject.set(x, "captureTimeOffset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCapturedFrameControlValues(value: CapturedFrameControlValues): Self = StObject.set(x, "capturedFrameControlValues", value.asInstanceOf[js.Any])
+      inline def setCapturedFrameControlValues(value: CapturedFrameControlValues): Self = StObject.set(x, "capturedFrameControlValues", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFrame(value: CapturedFrame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
+      inline def setFrame(value: CapturedFrame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsedFrameControllerIndex(value: Double): Self = StObject.set(x, "usedFrameControllerIndex", value.asInstanceOf[js.Any])
+      inline def setUsedFrameControllerIndex(value: Double): Self = StObject.set(x, "usedFrameControllerIndex", value.asInstanceOf[js.Any])
     }
   }
   

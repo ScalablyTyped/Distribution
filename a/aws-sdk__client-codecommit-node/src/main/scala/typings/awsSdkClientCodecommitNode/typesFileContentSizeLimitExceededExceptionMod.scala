@@ -16,17 +16,14 @@ object typesFileContentSizeLimitExceededExceptionMod {
   }
   object FileContentSizeLimitExceededException {
     
-    @scala.inline
-    def apply(): FileContentSizeLimitExceededException = {
+    inline def apply(): FileContentSizeLimitExceededException = {
       val __obj = js.Dynamic.literal(name = "FileContentSizeLimitExceededException")
       __obj.asInstanceOf[FileContentSizeLimitExceededException]
     }
     
-    @scala.inline
-    implicit class FileContentSizeLimitExceededExceptionMutableBuilder[Self <: FileContentSizeLimitExceededException] (val x: Self) extends AnyVal {
+    extension [Self <: FileContentSizeLimitExceededException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.FileContentSizeLimitExceededException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

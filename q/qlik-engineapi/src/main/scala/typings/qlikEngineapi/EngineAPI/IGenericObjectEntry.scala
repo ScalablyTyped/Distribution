@@ -26,8 +26,7 @@ trait IGenericObjectEntry extends StObject {
 }
 object IGenericObjectEntry {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qChildren: js.Array[IGenericObjectEntry],
     qEmbeddedSnapshotRef: IGenericBookmarkEntry,
     qProperty: IGenericObjectProperties
@@ -36,19 +35,14 @@ object IGenericObjectEntry {
     __obj.asInstanceOf[IGenericObjectEntry]
   }
   
-  @scala.inline
-  implicit class IGenericObjectEntryMutableBuilder[Self <: IGenericObjectEntry] (val x: Self) extends AnyVal {
+  extension [Self <: IGenericObjectEntry](x: Self) {
     
-    @scala.inline
-    def setQChildren(value: js.Array[IGenericObjectEntry]): Self = StObject.set(x, "qChildren", value.asInstanceOf[js.Any])
+    inline def setQChildren(value: js.Array[IGenericObjectEntry]): Self = StObject.set(x, "qChildren", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQChildrenVarargs(value: IGenericObjectEntry*): Self = StObject.set(x, "qChildren", js.Array(value :_*))
+    inline def setQChildrenVarargs(value: IGenericObjectEntry*): Self = StObject.set(x, "qChildren", js.Array(value :_*))
     
-    @scala.inline
-    def setQEmbeddedSnapshotRef(value: IGenericBookmarkEntry): Self = StObject.set(x, "qEmbeddedSnapshotRef", value.asInstanceOf[js.Any])
+    inline def setQEmbeddedSnapshotRef(value: IGenericBookmarkEntry): Self = StObject.set(x, "qEmbeddedSnapshotRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQProperty(value: IGenericObjectProperties): Self = StObject.set(x, "qProperty", value.asInstanceOf[js.Any])
+    inline def setQProperty(value: IGenericObjectProperties): Self = StObject.set(x, "qProperty", value.asInstanceOf[js.Any])
   }
 }

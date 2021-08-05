@@ -32,43 +32,31 @@ trait ClassNameBottomRightGrid extends StObject {
 }
 object ClassNameBottomRightGrid {
   
-  @scala.inline
-  def apply(): ClassNameBottomRightGrid = {
+  inline def apply(): ClassNameBottomRightGrid = {
     val __obj = js.Dynamic.literal(classNameBottomLeftGrid = "", classNameBottomRightGrid = "", classNameTopLeftGrid = "", classNameTopRightGrid = "", enableFixedColumnScroll = false, enableFixedRowScroll = false, fixedColumnCount = 0, fixedRowCount = 0, scrollToColumn = -1, scrollToRow = -1)
     __obj.asInstanceOf[ClassNameBottomRightGrid]
   }
   
-  @scala.inline
-  implicit class ClassNameBottomRightGridMutableBuilder[Self <: ClassNameBottomRightGrid] (val x: Self) extends AnyVal {
+  extension [Self <: ClassNameBottomRightGrid](x: Self) {
     
-    @scala.inline
-    def setClassNameBottomLeftGrid(value: _empty): Self = StObject.set(x, "classNameBottomLeftGrid", value.asInstanceOf[js.Any])
+    inline def setClassNameBottomLeftGrid(value: _empty): Self = StObject.set(x, "classNameBottomLeftGrid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameBottomRightGrid(value: _empty): Self = StObject.set(x, "classNameBottomRightGrid", value.asInstanceOf[js.Any])
+    inline def setClassNameBottomRightGrid(value: _empty): Self = StObject.set(x, "classNameBottomRightGrid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameTopLeftGrid(value: _empty): Self = StObject.set(x, "classNameTopLeftGrid", value.asInstanceOf[js.Any])
+    inline def setClassNameTopLeftGrid(value: _empty): Self = StObject.set(x, "classNameTopLeftGrid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameTopRightGrid(value: _empty): Self = StObject.set(x, "classNameTopRightGrid", value.asInstanceOf[js.Any])
+    inline def setClassNameTopRightGrid(value: _empty): Self = StObject.set(x, "classNameTopRightGrid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableFixedColumnScroll(value: `false`): Self = StObject.set(x, "enableFixedColumnScroll", value.asInstanceOf[js.Any])
+    inline def setEnableFixedColumnScroll(value: `false`): Self = StObject.set(x, "enableFixedColumnScroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableFixedRowScroll(value: `false`): Self = StObject.set(x, "enableFixedRowScroll", value.asInstanceOf[js.Any])
+    inline def setEnableFixedRowScroll(value: `false`): Self = StObject.set(x, "enableFixedRowScroll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedColumnCount(value: `0`): Self = StObject.set(x, "fixedColumnCount", value.asInstanceOf[js.Any])
+    inline def setFixedColumnCount(value: `0`): Self = StObject.set(x, "fixedColumnCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedRowCount(value: `0`): Self = StObject.set(x, "fixedRowCount", value.asInstanceOf[js.Any])
+    inline def setFixedRowCount(value: `0`): Self = StObject.set(x, "fixedRowCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollToColumn(value: `-1`): Self = StObject.set(x, "scrollToColumn", value.asInstanceOf[js.Any])
+    inline def setScrollToColumn(value: `-1`): Self = StObject.set(x, "scrollToColumn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollToRow(value: `-1`): Self = StObject.set(x, "scrollToRow", value.asInstanceOf[js.Any])
+    inline def setScrollToRow(value: `-1`): Self = StObject.set(x, "scrollToRow", value.asInstanceOf[js.Any])
   }
 }

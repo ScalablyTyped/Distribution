@@ -24,38 +24,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object TypeParameter_ {
   
-  @scala.inline
-  def apply(name: String): TypeParameter_ = {
+  inline def apply(name: String): TypeParameter_ = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], bound = null, default = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, variance = null)
     __obj.updateDynamic("type")("TypeParameter")
     __obj.asInstanceOf[TypeParameter_]
   }
   
-  @scala.inline
-  implicit class TypeParameter_MutableBuilder[Self <: TypeParameter_] (val x: Self) extends AnyVal {
+  extension [Self <: TypeParameter_](x: Self) {
     
-    @scala.inline
-    def setBound(value: TypeAnnotation_): Self = StObject.set(x, "bound", value.asInstanceOf[js.Any])
+    inline def setBound(value: TypeAnnotation_): Self = StObject.set(x, "bound", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoundNull: Self = StObject.set(x, "bound", null)
+    inline def setBoundNull: Self = StObject.set(x, "bound", null)
     
-    @scala.inline
-    def setDefault(value: FlowType): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+    inline def setDefault(value: FlowType): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultNull: Self = StObject.set(x, "default", null)
+    inline def setDefaultNull: Self = StObject.set(x, "default", null)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: TypeParameter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: TypeParameter): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVariance(value: Variance_): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
+    inline def setVariance(value: Variance_): Self = StObject.set(x, "variance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVarianceNull: Self = StObject.set(x, "variance", null)
+    inline def setVarianceNull: Self = StObject.set(x, "variance", null)
   }
 }

@@ -13,19 +13,15 @@ trait ListPublicKeysResult extends StObject {
 }
 object ListPublicKeysResult {
   
-  @scala.inline
-  def apply(): ListPublicKeysResult = {
+  inline def apply(): ListPublicKeysResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListPublicKeysResult]
   }
   
-  @scala.inline
-  implicit class ListPublicKeysResultMutableBuilder[Self <: ListPublicKeysResult] (val x: Self) extends AnyVal {
+  extension [Self <: ListPublicKeysResult](x: Self) {
     
-    @scala.inline
-    def setPublicKeyList(value: PublicKeyList): Self = StObject.set(x, "PublicKeyList", value.asInstanceOf[js.Any])
+    inline def setPublicKeyList(value: PublicKeyList): Self = StObject.set(x, "PublicKeyList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicKeyListUndefined: Self = StObject.set(x, "PublicKeyList", js.undefined)
+    inline def setPublicKeyListUndefined: Self = StObject.set(x, "PublicKeyList", js.undefined)
   }
 }

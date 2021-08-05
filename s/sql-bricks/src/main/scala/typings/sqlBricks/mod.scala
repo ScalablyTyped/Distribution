@@ -536,23 +536,18 @@ object mod extends Shortcut {
   }
   object SqlBricksParam {
     
-    @scala.inline
-    def apply(text: String, values: js.Array[js.Any]): SqlBricksParam = {
+    inline def apply(text: String, values: js.Array[js.Any]): SqlBricksParam = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[SqlBricksParam]
     }
     
-    @scala.inline
-    implicit class SqlBricksParamMutableBuilder[Self <: SqlBricksParam] (val x: Self) extends AnyVal {
+    extension [Self <: SqlBricksParam](x: Self) {
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+      inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
     }
   }
   
@@ -619,27 +614,21 @@ object mod extends Shortcut {
   }
   object WhereBinary {
     
-    @scala.inline
-    def apply(col: String | SelectStatement, op: String, quantifier: String, `val`: js.Any): WhereBinary = {
+    inline def apply(col: String | SelectStatement, op: String, quantifier: String, `val`: js.Any): WhereBinary = {
       val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], quantifier = quantifier.asInstanceOf[js.Any])
       __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
       __obj.asInstanceOf[WhereBinary]
     }
     
-    @scala.inline
-    implicit class WhereBinaryMutableBuilder[Self <: WhereBinary] (val x: Self) extends AnyVal {
+    extension [Self <: WhereBinary](x: Self) {
       
-      @scala.inline
-      def setCol(value: String | SelectStatement): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
+      inline def setCol(value: String | SelectStatement): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOp(value: String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+      inline def setOp(value: String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQuantifier(value: String): Self = StObject.set(x, "quantifier", value.asInstanceOf[js.Any])
+      inline def setQuantifier(value: String): Self = StObject.set(x, "quantifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVal(value: js.Any): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
+      inline def setVal(value: js.Any): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
     }
   }
   
@@ -665,26 +654,20 @@ object mod extends Shortcut {
   }
   object WhereGroup {
     
-    @scala.inline
-    def apply(expressions: js.Array[WhereExpression]): WhereGroup = {
+    inline def apply(expressions: js.Array[WhereExpression]): WhereGroup = {
       val __obj = js.Dynamic.literal(expressions = expressions.asInstanceOf[js.Any])
       __obj.asInstanceOf[WhereGroup]
     }
     
-    @scala.inline
-    implicit class WhereGroupMutableBuilder[Self <: WhereGroup] (val x: Self) extends AnyVal {
+    extension [Self <: WhereGroup](x: Self) {
       
-      @scala.inline
-      def setExpressions(value: js.Array[WhereExpression]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
+      inline def setExpressions(value: js.Array[WhereExpression]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpressionsVarargs(value: WhereExpression*): Self = StObject.set(x, "expressions", js.Array(value :_*))
+      inline def setExpressionsVarargs(value: WhereExpression*): Self = StObject.set(x, "expressions", js.Array(value :_*))
       
-      @scala.inline
-      def setOp(value: String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
+      inline def setOp(value: String): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
+      inline def setOpUndefined: Self = StObject.set(x, "op", js.undefined)
     }
   }
   
@@ -695,15 +678,13 @@ object mod extends Shortcut {
   trait _WhereExpression extends StObject
   object _WhereExpression {
     
-    @scala.inline
-    def WhereBinary(col: String | SelectStatement, op: String, quantifier: String, `val`: js.Any): typings.sqlBricks.mod.WhereBinary = {
+    inline def WhereBinary(col: String | SelectStatement, op: String, quantifier: String, `val`: js.Any): typings.sqlBricks.mod.WhereBinary = {
       val __obj = js.Dynamic.literal(col = col.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], quantifier = quantifier.asInstanceOf[js.Any])
       __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.sqlBricks.mod.WhereBinary]
     }
     
-    @scala.inline
-    def WhereGroup(expressions: js.Array[WhereExpression]): typings.sqlBricks.mod.WhereGroup = {
+    inline def WhereGroup(expressions: js.Array[WhereExpression]): typings.sqlBricks.mod.WhereGroup = {
       val __obj = js.Dynamic.literal(expressions = expressions.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.sqlBricks.mod.WhereGroup]
     }

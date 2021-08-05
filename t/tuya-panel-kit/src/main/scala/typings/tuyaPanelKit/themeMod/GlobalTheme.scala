@@ -38,8 +38,7 @@ trait GlobalTheme extends StObject {
 }
 object GlobalTheme {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     brickButton: BrickButton,
     button: Button,
     checkbox: Checkbox,
@@ -60,49 +59,34 @@ object GlobalTheme {
     __obj.asInstanceOf[GlobalTheme]
   }
   
-  @scala.inline
-  implicit class GlobalThemeMutableBuilder[Self <: GlobalTheme] (val x: Self) extends AnyVal {
+  extension [Self <: GlobalTheme](x: Self) {
     
-    @scala.inline
-    def setBrickButton(value: BrickButton): Self = StObject.set(x, "brickButton", value.asInstanceOf[js.Any])
+    inline def setBrickButton(value: BrickButton): Self = StObject.set(x, "brickButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButton(value: Button): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
+    inline def setButton(value: Button): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCheckbox(value: Checkbox): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
+    inline def setCheckbox(value: Checkbox): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDialog(value: Dialog): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
+    inline def setDialog(value: Dialog): Self = StObject.set(x, "dialog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobal(value: Global): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+    inline def setGlobal(value: Global): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setList(value: List): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    inline def setList(value: List): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPicker(value: Picker): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
+    inline def setPicker(value: Picker): Self = StObject.set(x, "picker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPopup(value: Popup): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
+    inline def setPopup(value: Popup): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlider(value: Slider): Self = StObject.set(x, "slider", value.asInstanceOf[js.Any])
+    inline def setSlider(value: Slider): Self = StObject.set(x, "slider", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwitchButton(value: SwitchButton): Self = StObject.set(x, "switchButton", value.asInstanceOf[js.Any])
+    inline def setSwitchButton(value: SwitchButton): Self = StObject.set(x, "switchButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: Text): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: Text): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTips(value: Tips): Self = StObject.set(x, "tips", value.asInstanceOf[js.Any])
+    inline def setTips(value: Tips): Self = StObject.set(x, "tips", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopbar(value: Topbar): Self = StObject.set(x, "topbar", value.asInstanceOf[js.Any])
+    inline def setTopbar(value: Topbar): Self = StObject.set(x, "topbar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: light | dark | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: light | dark | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

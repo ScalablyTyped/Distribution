@@ -11,19 +11,15 @@ trait MaxPodsConstraint extends StObject {
 }
 object MaxPodsConstraint {
   
-  @scala.inline
-  def apply(): MaxPodsConstraint = {
+  inline def apply(): MaxPodsConstraint = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MaxPodsConstraint]
   }
   
-  @scala.inline
-  implicit class MaxPodsConstraintMutableBuilder[Self <: MaxPodsConstraint] (val x: Self) extends AnyVal {
+  extension [Self <: MaxPodsConstraint](x: Self) {
     
-    @scala.inline
-    def setMaxPodsPerNode(value: String): Self = StObject.set(x, "maxPodsPerNode", value.asInstanceOf[js.Any])
+    inline def setMaxPodsPerNode(value: String): Self = StObject.set(x, "maxPodsPerNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxPodsPerNodeUndefined: Self = StObject.set(x, "maxPodsPerNode", js.undefined)
+    inline def setMaxPodsPerNodeUndefined: Self = StObject.set(x, "maxPodsPerNode", js.undefined)
   }
 }

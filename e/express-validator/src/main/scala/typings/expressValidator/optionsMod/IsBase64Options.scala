@@ -10,19 +10,15 @@ trait IsBase64Options extends StObject {
 }
 object IsBase64Options {
   
-  @scala.inline
-  def apply(): IsBase64Options = {
+  inline def apply(): IsBase64Options = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IsBase64Options]
   }
   
-  @scala.inline
-  implicit class IsBase64OptionsMutableBuilder[Self <: IsBase64Options] (val x: Self) extends AnyVal {
+  extension [Self <: IsBase64Options](x: Self) {
     
-    @scala.inline
-    def setUrlSafe(value: Boolean): Self = StObject.set(x, "urlSafe", value.asInstanceOf[js.Any])
+    inline def setUrlSafe(value: Boolean): Self = StObject.set(x, "urlSafe", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlSafeUndefined: Self = StObject.set(x, "urlSafe", js.undefined)
+    inline def setUrlSafeUndefined: Self = StObject.set(x, "urlSafe", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait BluetoothLEAdvertisementPublisherTrigger extends StObject {
 }
 object BluetoothLEAdvertisementPublisherTrigger {
   
-  @scala.inline
-  def apply(advertisement: BluetoothLEAdvertisement): BluetoothLEAdvertisementPublisherTrigger = {
+  inline def apply(advertisement: BluetoothLEAdvertisement): BluetoothLEAdvertisementPublisherTrigger = {
     val __obj = js.Dynamic.literal(advertisement = advertisement.asInstanceOf[js.Any])
     __obj.asInstanceOf[BluetoothLEAdvertisementPublisherTrigger]
   }
   
-  @scala.inline
-  implicit class BluetoothLEAdvertisementPublisherTriggerMutableBuilder[Self <: BluetoothLEAdvertisementPublisherTrigger] (val x: Self) extends AnyVal {
+  extension [Self <: BluetoothLEAdvertisementPublisherTrigger](x: Self) {
     
-    @scala.inline
-    def setAdvertisement(value: BluetoothLEAdvertisement): Self = StObject.set(x, "advertisement", value.asInstanceOf[js.Any])
+    inline def setAdvertisement(value: BluetoothLEAdvertisement): Self = StObject.set(x, "advertisement", value.asInstanceOf[js.Any])
   }
 }

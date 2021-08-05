@@ -14,14 +14,12 @@ object mod {
   trait Options extends StObject
   object Options {
     
-    @scala.inline
-    def ReplaceEntries(multiple: js.Array[ReplaceEntry]): typings.stringReplaceLoader.mod.ReplaceEntries = {
+    inline def ReplaceEntries(multiple: js.Array[ReplaceEntry]): typings.stringReplaceLoader.mod.ReplaceEntries = {
       val __obj = js.Dynamic.literal(multiple = multiple.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.stringReplaceLoader.mod.ReplaceEntries]
     }
     
-    @scala.inline
-    def ReplaceEntry(replace: String | ReplaceCallback, search: String | RegExp): typings.stringReplaceLoader.mod.ReplaceEntry = {
+    inline def ReplaceEntry(replace: String | ReplaceCallback, search: String | RegExp): typings.stringReplaceLoader.mod.ReplaceEntry = {
       val __obj = js.Dynamic.literal(replace = replace.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.stringReplaceLoader.mod.ReplaceEntry]
     }
@@ -37,20 +35,16 @@ object mod {
   }
   object ReplaceEntries {
     
-    @scala.inline
-    def apply(multiple: js.Array[ReplaceEntry]): ReplaceEntries = {
+    inline def apply(multiple: js.Array[ReplaceEntry]): ReplaceEntries = {
       val __obj = js.Dynamic.literal(multiple = multiple.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReplaceEntries]
     }
     
-    @scala.inline
-    implicit class ReplaceEntriesMutableBuilder[Self <: ReplaceEntries] (val x: Self) extends AnyVal {
+    extension [Self <: ReplaceEntries](x: Self) {
       
-      @scala.inline
-      def setMultiple(value: js.Array[ReplaceEntry]): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+      inline def setMultiple(value: js.Array[ReplaceEntry]): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultipleVarargs(value: ReplaceEntry*): Self = StObject.set(x, "multiple", js.Array(value :_*))
+      inline def setMultipleVarargs(value: ReplaceEntry*): Self = StObject.set(x, "multiple", js.Array(value :_*))
     }
   }
   
@@ -68,35 +62,26 @@ object mod {
   }
   object ReplaceEntry {
     
-    @scala.inline
-    def apply(replace: String | ReplaceCallback, search: String | RegExp): ReplaceEntry = {
+    inline def apply(replace: String | ReplaceCallback, search: String | RegExp): ReplaceEntry = {
       val __obj = js.Dynamic.literal(replace = replace.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReplaceEntry]
     }
     
-    @scala.inline
-    implicit class ReplaceEntryMutableBuilder[Self <: ReplaceEntry] (val x: Self) extends AnyVal {
+    extension [Self <: ReplaceEntry](x: Self) {
       
-      @scala.inline
-      def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      inline def setFlags(value: String): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
+      inline def setFlagsUndefined: Self = StObject.set(x, "flags", js.undefined)
       
-      @scala.inline
-      def setReplace(value: String | ReplaceCallback): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+      inline def setReplace(value: String | ReplaceCallback): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplaceFunction2(value: (/* substring */ String, /* repeated */ js.Any) => String): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
+      inline def setReplaceFunction2(value: (/* substring */ String, /* repeated */ js.Any) => String): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSearch(value: String | RegExp): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+      inline def setSearch(value: String | RegExp): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
+      inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
+      inline def setStrictUndefined: Self = StObject.set(x, "strict", js.undefined)
     }
   }
 }

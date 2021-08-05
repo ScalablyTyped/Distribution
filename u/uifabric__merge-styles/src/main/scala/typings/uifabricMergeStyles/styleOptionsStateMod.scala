@@ -11,12 +11,9 @@ object styleOptionsStateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getRTL(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getRTL")().asInstanceOf[Boolean]
+  inline def getRTL(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("getRTL")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def getStyleOptions(): IStyleOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyleOptions")().asInstanceOf[IStyleOptions]
+  inline def getStyleOptions(): IStyleOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyleOptions")().asInstanceOf[IStyleOptions]
   
-  @scala.inline
-  def setRTL(isRTL: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRTL")(isRTL.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setRTL(isRTL: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setRTL")(isRTL.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

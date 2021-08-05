@@ -22,8 +22,7 @@ trait PhiStart extends StObject {
 }
 object PhiStart {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     heightSegments: Double,
     phiLength: Double,
     phiStart: Double,
@@ -36,28 +35,20 @@ object PhiStart {
     __obj.asInstanceOf[PhiStart]
   }
   
-  @scala.inline
-  implicit class PhiStartMutableBuilder[Self <: PhiStart] (val x: Self) extends AnyVal {
+  extension [Self <: PhiStart](x: Self) {
     
-    @scala.inline
-    def setHeightSegments(value: Double): Self = StObject.set(x, "heightSegments", value.asInstanceOf[js.Any])
+    inline def setHeightSegments(value: Double): Self = StObject.set(x, "heightSegments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhiLength(value: Double): Self = StObject.set(x, "phiLength", value.asInstanceOf[js.Any])
+    inline def setPhiLength(value: Double): Self = StObject.set(x, "phiLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhiStart(value: Double): Self = StObject.set(x, "phiStart", value.asInstanceOf[js.Any])
+    inline def setPhiStart(value: Double): Self = StObject.set(x, "phiStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThetaLength(value: Double): Self = StObject.set(x, "thetaLength", value.asInstanceOf[js.Any])
+    inline def setThetaLength(value: Double): Self = StObject.set(x, "thetaLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThetaStart(value: Double): Self = StObject.set(x, "thetaStart", value.asInstanceOf[js.Any])
+    inline def setThetaStart(value: Double): Self = StObject.set(x, "thetaStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthSegments(value: Double): Self = StObject.set(x, "widthSegments", value.asInstanceOf[js.Any])
+    inline def setWidthSegments(value: Double): Self = StObject.set(x, "widthSegments", value.asInstanceOf[js.Any])
   }
 }

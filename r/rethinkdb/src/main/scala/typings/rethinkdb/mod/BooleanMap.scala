@@ -10,8 +10,7 @@ trait BooleanMap
      with /* key */ StringDictionary[Boolean | BooleanMap]
 object BooleanMap {
   
-  @scala.inline
-  def apply(): BooleanMap = {
+  inline def apply(): BooleanMap = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BooleanMap]
   }

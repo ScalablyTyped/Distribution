@@ -93,8 +93,7 @@ trait XMap
 }
 object XMap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ElementType: `type`,
     KeyType: `type`,
     ValueType: `type`,
@@ -114,31 +113,22 @@ object XMap {
     __obj.asInstanceOf[XMap]
   }
   
-  @scala.inline
-  implicit class XMapMutableBuilder[Self <: XMap] (val x: Self) extends AnyVal {
+  extension [Self <: XMap](x: Self) {
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setContainsKey(value: js.Any => Boolean): Self = StObject.set(x, "containsKey", js.Any.fromFunction1(value))
+    inline def setContainsKey(value: js.Any => Boolean): Self = StObject.set(x, "containsKey", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setContainsValue(value: js.Any => Boolean): Self = StObject.set(x, "containsValue", js.Any.fromFunction1(value))
+    inline def setContainsValue(value: js.Any => Boolean): Self = StObject.set(x, "containsValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGet(value: js.Any => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: js.Any => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setKeyType(value: `type`): Self = StObject.set(x, "KeyType", value.asInstanceOf[js.Any])
+    inline def setKeyType(value: `type`): Self = StObject.set(x, "KeyType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPut(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "put", js.Any.fromFunction2(value))
+    inline def setPut(value: (js.Any, js.Any) => js.Any): Self = StObject.set(x, "put", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setRemove(value: js.Any => js.Any): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+    inline def setRemove(value: js.Any => js.Any): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValueType(value: `type`): Self = StObject.set(x, "ValueType", value.asInstanceOf[js.Any])
+    inline def setValueType(value: `type`): Self = StObject.set(x, "ValueType", value.asInstanceOf[js.Any])
   }
 }

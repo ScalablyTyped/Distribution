@@ -13,22 +13,17 @@ trait PowerFormsRequest extends StObject {
 }
 object PowerFormsRequest {
   
-  @scala.inline
-  def apply(): PowerFormsRequest = {
+  inline def apply(): PowerFormsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PowerFormsRequest]
   }
   
-  @scala.inline
-  implicit class PowerFormsRequestMutableBuilder[Self <: PowerFormsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: PowerFormsRequest](x: Self) {
     
-    @scala.inline
-    def setPowerForms(value: js.Array[/* Contains details about a PowerForm. */ PowerForm]): Self = StObject.set(x, "powerForms", value.asInstanceOf[js.Any])
+    inline def setPowerForms(value: js.Array[/* Contains details about a PowerForm. */ PowerForm]): Self = StObject.set(x, "powerForms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerFormsUndefined: Self = StObject.set(x, "powerForms", js.undefined)
+    inline def setPowerFormsUndefined: Self = StObject.set(x, "powerForms", js.undefined)
     
-    @scala.inline
-    def setPowerFormsVarargs(value: (/* Contains details about a PowerForm. */ PowerForm)*): Self = StObject.set(x, "powerForms", js.Array(value :_*))
+    inline def setPowerFormsVarargs(value: (/* Contains details about a PowerForm. */ PowerForm)*): Self = StObject.set(x, "powerForms", js.Array(value :_*))
   }
 }

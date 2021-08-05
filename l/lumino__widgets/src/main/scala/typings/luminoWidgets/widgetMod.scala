@@ -33,13 +33,13 @@ object widgetMod {
        with IObservableDisposable {
     def this(options: IOptions) = this()
     
-    var _disposed: js.Any = js.native
+    /* private */ var _disposed: js.Any = js.native
     
-    var _flags: js.Any = js.native
+    /* private */ var _flags: js.Any = js.native
     
-    var _layout: js.Any = js.native
+    /* private */ var _layout: js.Any = js.native
     
-    var _parent: js.Any = js.native
+    /* private */ var _parent: js.Any = js.native
     
     /**
       * Post an `'activate-request'` message to the widget.
@@ -750,10 +750,8 @@ object widgetMod {
       * the widget is already attached, or if the host is not attached
       * to the DOM.
       */
-    @scala.inline
-    def attach(widget: Widget, host: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(widget.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[Unit]
-    @scala.inline
-    def attach(widget: Widget, host: HTMLElement, ref: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(widget.asInstanceOf[js.Any], host.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def attach(widget: Widget, host: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(widget.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def attach(widget: Widget, host: HTMLElement, ref: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(widget.asInstanceOf[js.Any], host.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Detach the widget from its host DOM node.
@@ -764,8 +762,7 @@ object widgetMod {
       * This will throw an error if the widget is not a root widget,
       * or if the widget is not attached to the DOM.
       */
-    @scala.inline
-    def detach(widget: Widget): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detach")(widget.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def detach(widget: Widget): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detach")(widget.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * An options object for initializing a widget.
@@ -784,20 +781,16 @@ object widgetMod {
     }
     object IOptions {
       
-      @scala.inline
-      def apply(): IOptions = {
+      inline def apply(): IOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[IOptions]
       }
       
-      @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+      extension [Self <: IOptions](x: Self) {
         
-        @scala.inline
-        def setNode(value: HTMLElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+        inline def setNode(value: HTMLElement): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
+        inline def setNodeUndefined: Self = StObject.set(x, "node", js.undefined)
       }
     }
   }

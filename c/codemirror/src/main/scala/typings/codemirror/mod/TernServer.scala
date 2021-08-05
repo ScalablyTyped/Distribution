@@ -196,6 +196,5 @@ trait TernServer extends StObject {
 }
 object TernServer {
   
-  @scala.inline
-  def apply: TernConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("TernServer").asInstanceOf[TernConstructor]
+  inline def apply: TernConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("TernServer").asInstanceOf[TernConstructor]
 }

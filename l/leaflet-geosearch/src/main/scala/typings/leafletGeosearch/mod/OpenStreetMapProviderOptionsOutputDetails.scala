@@ -16,31 +16,23 @@ trait OpenStreetMapProviderOptionsOutputDetails extends StObject {
 }
 object OpenStreetMapProviderOptionsOutputDetails {
   
-  @scala.inline
-  def apply(): OpenStreetMapProviderOptionsOutputDetails = {
+  inline def apply(): OpenStreetMapProviderOptionsOutputDetails = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OpenStreetMapProviderOptionsOutputDetails]
   }
   
-  @scala.inline
-  implicit class OpenStreetMapProviderOptionsOutputDetailsMutableBuilder[Self <: OpenStreetMapProviderOptionsOutputDetails] (val x: Self) extends AnyVal {
+  extension [Self <: OpenStreetMapProviderOptionsOutputDetails](x: Self) {
     
-    @scala.inline
-    def setAddressdetails(value: `0` | `1`): Self = StObject.set(x, "addressdetails", value.asInstanceOf[js.Any])
+    inline def setAddressdetails(value: `0` | `1`): Self = StObject.set(x, "addressdetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressdetailsUndefined: Self = StObject.set(x, "addressdetails", js.undefined)
+    inline def setAddressdetailsUndefined: Self = StObject.set(x, "addressdetails", js.undefined)
     
-    @scala.inline
-    def setExtratags(value: `0` | `1`): Self = StObject.set(x, "extratags", value.asInstanceOf[js.Any])
+    inline def setExtratags(value: `0` | `1`): Self = StObject.set(x, "extratags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtratagsUndefined: Self = StObject.set(x, "extratags", js.undefined)
+    inline def setExtratagsUndefined: Self = StObject.set(x, "extratags", js.undefined)
     
-    @scala.inline
-    def setNamedetails(value: `0` | `1`): Self = StObject.set(x, "namedetails", value.asInstanceOf[js.Any])
+    inline def setNamedetails(value: `0` | `1`): Self = StObject.set(x, "namedetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamedetailsUndefined: Self = StObject.set(x, "namedetails", js.undefined)
+    inline def setNamedetailsUndefined: Self = StObject.set(x, "namedetails", js.undefined)
   }
 }

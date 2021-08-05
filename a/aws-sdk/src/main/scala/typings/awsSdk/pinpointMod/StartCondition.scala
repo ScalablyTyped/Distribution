@@ -20,31 +20,23 @@ trait StartCondition extends StObject {
 }
 object StartCondition {
   
-  @scala.inline
-  def apply(): StartCondition = {
+  inline def apply(): StartCondition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartCondition]
   }
   
-  @scala.inline
-  implicit class StartConditionMutableBuilder[Self <: StartCondition] (val x: Self) extends AnyVal {
+  extension [Self <: StartCondition](x: Self) {
     
-    @scala.inline
-    def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: string): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setEventStartCondition(value: EventStartCondition): Self = StObject.set(x, "EventStartCondition", value.asInstanceOf[js.Any])
+    inline def setEventStartCondition(value: EventStartCondition): Self = StObject.set(x, "EventStartCondition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventStartConditionUndefined: Self = StObject.set(x, "EventStartCondition", js.undefined)
+    inline def setEventStartConditionUndefined: Self = StObject.set(x, "EventStartCondition", js.undefined)
     
-    @scala.inline
-    def setSegmentStartCondition(value: SegmentCondition): Self = StObject.set(x, "SegmentStartCondition", value.asInstanceOf[js.Any])
+    inline def setSegmentStartCondition(value: SegmentCondition): Self = StObject.set(x, "SegmentStartCondition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentStartConditionUndefined: Self = StObject.set(x, "SegmentStartCondition", js.undefined)
+    inline def setSegmentStartConditionUndefined: Self = StObject.set(x, "SegmentStartCondition", js.undefined)
   }
 }

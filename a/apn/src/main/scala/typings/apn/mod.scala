@@ -118,10 +118,8 @@ object mod {
     def shutdown(): Unit = js.native
   }
   
-  @scala.inline
-  def token(token: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("token")(token.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def token(token: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("token")(token.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def token(token: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("token")(token.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def token(token: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("token")(token.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait Aps extends StObject {
     
@@ -143,65 +141,46 @@ object mod {
   }
   object Aps {
     
-    @scala.inline
-    def apply(): Aps = {
+    inline def apply(): Aps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Aps]
     }
     
-    @scala.inline
-    implicit class ApsMutableBuilder[Self <: Aps] (val x: Self) extends AnyVal {
+    extension [Self <: Aps](x: Self) {
       
-      @scala.inline
-      def setAlert(value: String | ApsAlert): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
+      inline def setAlert(value: String | ApsAlert): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlertUndefined: Self = StObject.set(x, "alert", js.undefined)
+      inline def setAlertUndefined: Self = StObject.set(x, "alert", js.undefined)
       
-      @scala.inline
-      def setBadge(value: Double): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
+      inline def setBadge(value: Double): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
+      inline def setBadgeUndefined: Self = StObject.set(x, "badge", js.undefined)
       
-      @scala.inline
-      def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
+      inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
+      inline def setCategoryUndefined: Self = StObject.set(x, "category", js.undefined)
       
-      @scala.inline
-      def `setContent-available`(value: `1`): Self = StObject.set(x, "content-available", value.asInstanceOf[js.Any])
+      inline def `setContent-available`(value: `1`): Self = StObject.set(x, "content-available", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setContent-availableUndefined`: Self = StObject.set(x, "content-available", js.undefined)
+      inline def `setContent-availableUndefined`: Self = StObject.set(x, "content-available", js.undefined)
       
-      @scala.inline
-      def `setLaunch-image`(value: String): Self = StObject.set(x, "launch-image", value.asInstanceOf[js.Any])
+      inline def `setLaunch-image`(value: String): Self = StObject.set(x, "launch-image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setLaunch-imageUndefined`: Self = StObject.set(x, "launch-image", js.undefined)
+      inline def `setLaunch-imageUndefined`: Self = StObject.set(x, "launch-image", js.undefined)
       
-      @scala.inline
-      def `setMutable-content`(value: `1`): Self = StObject.set(x, "mutable-content", value.asInstanceOf[js.Any])
+      inline def `setMutable-content`(value: `1`): Self = StObject.set(x, "mutable-content", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setMutable-contentUndefined`: Self = StObject.set(x, "mutable-content", js.undefined)
+      inline def `setMutable-contentUndefined`: Self = StObject.set(x, "mutable-content", js.undefined)
       
-      @scala.inline
-      def setSound(value: String): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
+      inline def setSound(value: String): Self = StObject.set(x, "sound", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSoundUndefined: Self = StObject.set(x, "sound", js.undefined)
+      inline def setSoundUndefined: Self = StObject.set(x, "sound", js.undefined)
       
-      @scala.inline
-      def `setUrl-args`(value: js.Array[String]): Self = StObject.set(x, "url-args", value.asInstanceOf[js.Any])
+      inline def `setUrl-args`(value: js.Array[String]): Self = StObject.set(x, "url-args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setUrl-argsUndefined`: Self = StObject.set(x, "url-args", js.undefined)
+      inline def `setUrl-argsUndefined`: Self = StObject.set(x, "url-args", js.undefined)
       
-      @scala.inline
-      def `setUrl-argsVarargs`(value: String*): Self = StObject.set(x, "url-args", js.Array(value :_*))
+      inline def `setUrl-argsVarargs`(value: String*): Self = StObject.set(x, "url-args", js.Array(value :_*))
     }
   }
   
@@ -225,68 +204,48 @@ object mod {
   }
   object ApsAlert {
     
-    @scala.inline
-    def apply(): ApsAlert = {
+    inline def apply(): ApsAlert = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ApsAlert]
     }
     
-    @scala.inline
-    implicit class ApsAlertMutableBuilder[Self <: ApsAlert] (val x: Self) extends AnyVal {
+    extension [Self <: ApsAlert](x: Self) {
       
-      @scala.inline
-      def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAction-loc-key`(value: String): Self = StObject.set(x, "action-loc-key", value.asInstanceOf[js.Any])
+      inline def `setAction-loc-key`(value: String): Self = StObject.set(x, "action-loc-key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAction-loc-keyUndefined`: Self = StObject.set(x, "action-loc-key", js.undefined)
+      inline def `setAction-loc-keyUndefined`: Self = StObject.set(x, "action-loc-key", js.undefined)
       
-      @scala.inline
-      def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
+      inline def setActionUndefined: Self = StObject.set(x, "action", js.undefined)
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
+      inline def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
-      @scala.inline
-      def `setLoc-args`(value: js.Array[js.Any]): Self = StObject.set(x, "loc-args", value.asInstanceOf[js.Any])
+      inline def `setLoc-args`(value: js.Array[js.Any]): Self = StObject.set(x, "loc-args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setLoc-argsUndefined`: Self = StObject.set(x, "loc-args", js.undefined)
+      inline def `setLoc-argsUndefined`: Self = StObject.set(x, "loc-args", js.undefined)
       
-      @scala.inline
-      def `setLoc-argsVarargs`(value: js.Any*): Self = StObject.set(x, "loc-args", js.Array(value :_*))
+      inline def `setLoc-argsVarargs`(value: js.Any*): Self = StObject.set(x, "loc-args", js.Array(value :_*))
       
-      @scala.inline
-      def `setLoc-key`(value: String): Self = StObject.set(x, "loc-key", value.asInstanceOf[js.Any])
+      inline def `setLoc-key`(value: String): Self = StObject.set(x, "loc-key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setLoc-keyUndefined`: Self = StObject.set(x, "loc-key", js.undefined)
+      inline def `setLoc-keyUndefined`: Self = StObject.set(x, "loc-key", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTitle-loc-args`(value: js.Array[js.Any]): Self = StObject.set(x, "title-loc-args", value.asInstanceOf[js.Any])
+      inline def `setTitle-loc-args`(value: js.Array[js.Any]): Self = StObject.set(x, "title-loc-args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTitle-loc-argsUndefined`: Self = StObject.set(x, "title-loc-args", js.undefined)
+      inline def `setTitle-loc-argsUndefined`: Self = StObject.set(x, "title-loc-args", js.undefined)
       
-      @scala.inline
-      def `setTitle-loc-argsVarargs`(value: js.Any*): Self = StObject.set(x, "title-loc-args", js.Array(value :_*))
+      inline def `setTitle-loc-argsVarargs`(value: js.Any*): Self = StObject.set(x, "title-loc-args", js.Array(value :_*))
       
-      @scala.inline
-      def `setTitle-loc-key`(value: String): Self = StObject.set(x, "title-loc-key", value.asInstanceOf[js.Any])
+      inline def `setTitle-loc-key`(value: String): Self = StObject.set(x, "title-loc-key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTitle-loc-keyUndefined`: Self = StObject.set(x, "title-loc-key", js.undefined)
+      inline def `setTitle-loc-keyUndefined`: Self = StObject.set(x, "title-loc-key", js.undefined)
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -312,71 +271,50 @@ object mod {
   }
   object NotificationAlertOptions {
     
-    @scala.inline
-    def apply(body: String): NotificationAlertOptions = {
+    inline def apply(body: String): NotificationAlertOptions = {
       val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
       __obj.asInstanceOf[NotificationAlertOptions]
     }
     
-    @scala.inline
-    implicit class NotificationAlertOptionsMutableBuilder[Self <: NotificationAlertOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NotificationAlertOptions](x: Self) {
       
-      @scala.inline
-      def `setAction-loc-key`(value: String): Self = StObject.set(x, "action-loc-key", value.asInstanceOf[js.Any])
+      inline def `setAction-loc-key`(value: String): Self = StObject.set(x, "action-loc-key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setAction-loc-keyUndefined`: Self = StObject.set(x, "action-loc-key", js.undefined)
+      inline def `setAction-loc-keyUndefined`: Self = StObject.set(x, "action-loc-key", js.undefined)
       
-      @scala.inline
-      def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+      inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setLaunch-image`(value: String): Self = StObject.set(x, "launch-image", value.asInstanceOf[js.Any])
+      inline def `setLaunch-image`(value: String): Self = StObject.set(x, "launch-image", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setLaunch-imageUndefined`: Self = StObject.set(x, "launch-image", js.undefined)
+      inline def `setLaunch-imageUndefined`: Self = StObject.set(x, "launch-image", js.undefined)
       
-      @scala.inline
-      def `setLoc-args`(value: js.Array[String]): Self = StObject.set(x, "loc-args", value.asInstanceOf[js.Any])
+      inline def `setLoc-args`(value: js.Array[String]): Self = StObject.set(x, "loc-args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setLoc-argsUndefined`: Self = StObject.set(x, "loc-args", js.undefined)
+      inline def `setLoc-argsUndefined`: Self = StObject.set(x, "loc-args", js.undefined)
       
-      @scala.inline
-      def `setLoc-argsVarargs`(value: String*): Self = StObject.set(x, "loc-args", js.Array(value :_*))
+      inline def `setLoc-argsVarargs`(value: String*): Self = StObject.set(x, "loc-args", js.Array(value :_*))
       
-      @scala.inline
-      def `setLoc-key`(value: String): Self = StObject.set(x, "loc-key", value.asInstanceOf[js.Any])
+      inline def `setLoc-key`(value: String): Self = StObject.set(x, "loc-key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setLoc-keyUndefined`: Self = StObject.set(x, "loc-key", js.undefined)
+      inline def `setLoc-keyUndefined`: Self = StObject.set(x, "loc-key", js.undefined)
       
-      @scala.inline
-      def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
+      inline def setSubtitle(value: String): Self = StObject.set(x, "subtitle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
+      inline def setSubtitleUndefined: Self = StObject.set(x, "subtitle", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTitle-loc-args`(value: js.Array[String]): Self = StObject.set(x, "title-loc-args", value.asInstanceOf[js.Any])
+      inline def `setTitle-loc-args`(value: js.Array[String]): Self = StObject.set(x, "title-loc-args", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTitle-loc-argsUndefined`: Self = StObject.set(x, "title-loc-args", js.undefined)
+      inline def `setTitle-loc-argsUndefined`: Self = StObject.set(x, "title-loc-args", js.undefined)
       
-      @scala.inline
-      def `setTitle-loc-argsVarargs`(value: String*): Self = StObject.set(x, "title-loc-args", js.Array(value :_*))
+      inline def `setTitle-loc-argsVarargs`(value: String*): Self = StObject.set(x, "title-loc-args", js.Array(value :_*))
       
-      @scala.inline
-      def `setTitle-loc-key`(value: String): Self = StObject.set(x, "title-loc-key", value.asInstanceOf[js.Any])
+      inline def `setTitle-loc-key`(value: String): Self = StObject.set(x, "title-loc-key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def `setTitle-loc-keyUndefined`: Self = StObject.set(x, "title-loc-key", js.undefined)
+      inline def `setTitle-loc-keyUndefined`: Self = StObject.set(x, "title-loc-key", js.undefined)
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -429,71 +367,50 @@ object mod {
   }
   object ProviderOptions {
     
-    @scala.inline
-    def apply(): ProviderOptions = {
+    inline def apply(): ProviderOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ProviderOptions]
     }
     
-    @scala.inline
-    implicit class ProviderOptionsMutableBuilder[Self <: ProviderOptions] (val x: Self) extends AnyVal {
+    extension [Self <: ProviderOptions](x: Self) {
       
-      @scala.inline
-      def setCa(value: js.Array[String | Buffer]): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
+      inline def setCa(value: js.Array[String | Buffer]): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
+      inline def setCaUndefined: Self = StObject.set(x, "ca", js.undefined)
       
-      @scala.inline
-      def setCaVarargs(value: (String | Buffer)*): Self = StObject.set(x, "ca", js.Array(value :_*))
+      inline def setCaVarargs(value: (String | Buffer)*): Self = StObject.set(x, "ca", js.Array(value :_*))
       
-      @scala.inline
-      def setCert(value: String | Buffer): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+      inline def setCert(value: String | Buffer): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
+      inline def setCertUndefined: Self = StObject.set(x, "cert", js.undefined)
       
-      @scala.inline
-      def setConnectionRetryLimit(value: Double): Self = StObject.set(x, "connectionRetryLimit", value.asInstanceOf[js.Any])
+      inline def setConnectionRetryLimit(value: Double): Self = StObject.set(x, "connectionRetryLimit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectionRetryLimitUndefined: Self = StObject.set(x, "connectionRetryLimit", js.undefined)
+      inline def setConnectionRetryLimitUndefined: Self = StObject.set(x, "connectionRetryLimit", js.undefined)
       
-      @scala.inline
-      def setKey(value: String | Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String | Buffer): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
+      inline def setPassphrase(value: String): Self = StObject.set(x, "passphrase", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
+      inline def setPassphraseUndefined: Self = StObject.set(x, "passphrase", js.undefined)
       
-      @scala.inline
-      def setPfx(value: String | Buffer): Self = StObject.set(x, "pfx", value.asInstanceOf[js.Any])
+      inline def setPfx(value: String | Buffer): Self = StObject.set(x, "pfx", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPfxUndefined: Self = StObject.set(x, "pfx", js.undefined)
+      inline def setPfxUndefined: Self = StObject.set(x, "pfx", js.undefined)
       
-      @scala.inline
-      def setProduction(value: Boolean): Self = StObject.set(x, "production", value.asInstanceOf[js.Any])
+      inline def setProduction(value: Boolean): Self = StObject.set(x, "production", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProductionUndefined: Self = StObject.set(x, "production", js.undefined)
+      inline def setProductionUndefined: Self = StObject.set(x, "production", js.undefined)
       
-      @scala.inline
-      def setRejectUnauthorized(value: Boolean): Self = StObject.set(x, "rejectUnauthorized", value.asInstanceOf[js.Any])
+      inline def setRejectUnauthorized(value: Boolean): Self = StObject.set(x, "rejectUnauthorized", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRejectUnauthorizedUndefined: Self = StObject.set(x, "rejectUnauthorized", js.undefined)
+      inline def setRejectUnauthorizedUndefined: Self = StObject.set(x, "rejectUnauthorized", js.undefined)
       
-      @scala.inline
-      def setToken(value: ProviderToken): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: ProviderToken): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
+      inline def setTokenUndefined: Self = StObject.set(x, "token", js.undefined)
     }
   }
   
@@ -516,23 +433,18 @@ object mod {
   }
   object ProviderToken {
     
-    @scala.inline
-    def apply(key: Buffer | String, keyId: String, teamId: String): ProviderToken = {
+    inline def apply(key: Buffer | String, keyId: String, teamId: String): ProviderToken = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], keyId = keyId.asInstanceOf[js.Any], teamId = teamId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProviderToken]
     }
     
-    @scala.inline
-    implicit class ProviderTokenMutableBuilder[Self <: ProviderToken] (val x: Self) extends AnyVal {
+    extension [Self <: ProviderToken](x: Self) {
       
-      @scala.inline
-      def setKey(value: Buffer | String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Buffer | String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
+      inline def setKeyId(value: String): Self = StObject.set(x, "keyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTeamId(value: String): Self = StObject.set(x, "teamId", value.asInstanceOf[js.Any])
+      inline def setTeamId(value: String): Self = StObject.set(x, "teamId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -548,35 +460,26 @@ object mod {
   }
   object ResponseFailure {
     
-    @scala.inline
-    def apply(device: String): ResponseFailure = {
+    inline def apply(device: String): ResponseFailure = {
       val __obj = js.Dynamic.literal(device = device.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResponseFailure]
     }
     
-    @scala.inline
-    implicit class ResponseFailureMutableBuilder[Self <: ResponseFailure] (val x: Self) extends AnyVal {
+    extension [Self <: ResponseFailure](x: Self) {
       
-      @scala.inline
-      def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+      inline def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setResponse(value: Reason): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      inline def setResponse(value: Reason): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
+      inline def setResponseUndefined: Self = StObject.set(x, "response", js.undefined)
       
-      @scala.inline
-      def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     }
   }
   
@@ -586,17 +489,14 @@ object mod {
   }
   object ResponseSent {
     
-    @scala.inline
-    def apply(device: String): ResponseSent = {
+    inline def apply(device: String): ResponseSent = {
       val __obj = js.Dynamic.literal(device = device.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResponseSent]
     }
     
-    @scala.inline
-    implicit class ResponseSentMutableBuilder[Self <: ResponseSent] (val x: Self) extends AnyVal {
+    extension [Self <: ResponseSent](x: Self) {
       
-      @scala.inline
-      def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+      inline def setDevice(value: String): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     }
   }
   
@@ -608,26 +508,20 @@ object mod {
   }
   object Responses {
     
-    @scala.inline
-    def apply(failed: js.Array[ResponseFailure], sent: js.Array[ResponseSent]): Responses = {
+    inline def apply(failed: js.Array[ResponseFailure], sent: js.Array[ResponseSent]): Responses = {
       val __obj = js.Dynamic.literal(failed = failed.asInstanceOf[js.Any], sent = sent.asInstanceOf[js.Any])
       __obj.asInstanceOf[Responses]
     }
     
-    @scala.inline
-    implicit class ResponsesMutableBuilder[Self <: Responses] (val x: Self) extends AnyVal {
+    extension [Self <: Responses](x: Self) {
       
-      @scala.inline
-      def setFailed(value: js.Array[ResponseFailure]): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
+      inline def setFailed(value: js.Array[ResponseFailure]): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFailedVarargs(value: ResponseFailure*): Self = StObject.set(x, "failed", js.Array(value :_*))
+      inline def setFailedVarargs(value: ResponseFailure*): Self = StObject.set(x, "failed", js.Array(value :_*))
       
-      @scala.inline
-      def setSent(value: js.Array[ResponseSent]): Self = StObject.set(x, "sent", value.asInstanceOf[js.Any])
+      inline def setSent(value: js.Array[ResponseSent]): Self = StObject.set(x, "sent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSentVarargs(value: ResponseSent*): Self = StObject.set(x, "sent", js.Array(value :_*))
+      inline def setSentVarargs(value: ResponseSent*): Self = StObject.set(x, "sent", js.Array(value :_*))
     }
   }
 }

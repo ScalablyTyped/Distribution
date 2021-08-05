@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MdmAppConfigKeyType extends StObject
 object MdmAppConfigKeyType {
   
-  @scala.inline
-  def booleanType: typings.microsoftGraph.microsoftGraphStrings.booleanType = "booleanType".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.booleanType]
+  inline def booleanType: typings.microsoftGraph.microsoftGraphStrings.booleanType = "booleanType".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.booleanType]
   
-  @scala.inline
-  def integerType: typings.microsoftGraph.microsoftGraphStrings.integerType = "integerType".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.integerType]
+  inline def integerType: typings.microsoftGraph.microsoftGraphStrings.integerType = "integerType".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.integerType]
   
-  @scala.inline
-  def realType: typings.microsoftGraph.microsoftGraphStrings.realType = "realType".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.realType]
+  inline def realType: typings.microsoftGraph.microsoftGraphStrings.realType = "realType".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.realType]
   
-  @scala.inline
-  def stringType: typings.microsoftGraph.microsoftGraphStrings.stringType = "stringType".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.stringType]
+  inline def stringType: typings.microsoftGraph.microsoftGraphStrings.stringType = "stringType".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.stringType]
   
-  @scala.inline
-  def tokenType: typings.microsoftGraph.microsoftGraphStrings.tokenType = "tokenType".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.tokenType]
+  inline def tokenType: typings.microsoftGraph.microsoftGraphStrings.tokenType = "tokenType".asInstanceOf[typings.microsoftGraph.microsoftGraphStrings.tokenType]
 }

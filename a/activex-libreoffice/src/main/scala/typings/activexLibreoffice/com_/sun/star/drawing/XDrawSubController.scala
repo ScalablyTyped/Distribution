@@ -22,8 +22,7 @@ trait XDrawSubController
      with XFastPropertySet
 object XDrawSubController {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CurrentPage: XDrawPage,
     Selection: js.Any,
     acquire: () => Unit,

@@ -43,6 +43,5 @@ trait Date extends StObject {
 }
 object Date {
   
-  @scala.inline
-  def apply: Date = ^.asInstanceOf[js.Dynamic].selectDynamic("Date").asInstanceOf[Date]
+  inline def apply: Date = ^.asInstanceOf[js.Dynamic].selectDynamic("Date").asInstanceOf[Date]
 }

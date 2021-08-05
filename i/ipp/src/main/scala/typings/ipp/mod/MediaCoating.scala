@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MediaCoating extends StObject
 object MediaCoating {
   
-  @scala.inline
-  def glossy: typings.ipp.ippStrings.glossy = "glossy".asInstanceOf[typings.ipp.ippStrings.glossy]
+  inline def glossy: typings.ipp.ippStrings.glossy = "glossy".asInstanceOf[typings.ipp.ippStrings.glossy]
   
-  @scala.inline
-  def `high-gloss`: typings.ipp.ippStrings.`high-gloss` = "high-gloss".asInstanceOf[typings.ipp.ippStrings.`high-gloss`]
+  inline def `high-gloss`: typings.ipp.ippStrings.`high-gloss` = "high-gloss".asInstanceOf[typings.ipp.ippStrings.`high-gloss`]
   
-  @scala.inline
-  def matte: typings.ipp.ippStrings.matte = "matte".asInstanceOf[typings.ipp.ippStrings.matte]
+  inline def matte: typings.ipp.ippStrings.matte = "matte".asInstanceOf[typings.ipp.ippStrings.matte]
   
-  @scala.inline
-  def none: typings.ipp.ippStrings.none = "none".asInstanceOf[typings.ipp.ippStrings.none]
+  inline def none: typings.ipp.ippStrings.none = "none".asInstanceOf[typings.ipp.ippStrings.none]
   
-  @scala.inline
-  def satin: typings.ipp.ippStrings.satin = "satin".asInstanceOf[typings.ipp.ippStrings.satin]
+  inline def satin: typings.ipp.ippStrings.satin = "satin".asInstanceOf[typings.ipp.ippStrings.satin]
   
-  @scala.inline
-  def `semi-gloss`: typings.ipp.ippStrings.`semi-gloss` = "semi-gloss".asInstanceOf[typings.ipp.ippStrings.`semi-gloss`]
+  inline def `semi-gloss`: typings.ipp.ippStrings.`semi-gloss` = "semi-gloss".asInstanceOf[typings.ipp.ippStrings.`semi-gloss`]
 }

@@ -37,79 +37,55 @@ trait DeviceInstallState
 }
 object DeviceInstallState {
   
-  @scala.inline
-  def apply(): DeviceInstallState = {
+  inline def apply(): DeviceInstallState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceInstallState]
   }
   
-  @scala.inline
-  implicit class DeviceInstallStateMutableBuilder[Self <: DeviceInstallState] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceInstallState](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: NullableOption[String]): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: NullableOption[String]): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceIdNull: Self = StObject.set(x, "deviceId", null)
+    inline def setDeviceIdNull: Self = StObject.set(x, "deviceId", null)
     
-    @scala.inline
-    def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
+    inline def setDeviceIdUndefined: Self = StObject.set(x, "deviceId", js.undefined)
     
-    @scala.inline
-    def setDeviceName(value: NullableOption[String]): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
+    inline def setDeviceName(value: NullableOption[String]): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceNameNull: Self = StObject.set(x, "deviceName", null)
+    inline def setDeviceNameNull: Self = StObject.set(x, "deviceName", null)
     
-    @scala.inline
-    def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
+    inline def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
     
-    @scala.inline
-    def setErrorCode(value: NullableOption[String]): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+    inline def setErrorCode(value: NullableOption[String]): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorCodeNull: Self = StObject.set(x, "errorCode", null)
+    inline def setErrorCodeNull: Self = StObject.set(x, "errorCode", null)
     
-    @scala.inline
-    def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+    inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
     
-    @scala.inline
-    def setInstallState(value: InstallState): Self = StObject.set(x, "installState", value.asInstanceOf[js.Any])
+    inline def setInstallState(value: InstallState): Self = StObject.set(x, "installState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallStateUndefined: Self = StObject.set(x, "installState", js.undefined)
+    inline def setInstallStateUndefined: Self = StObject.set(x, "installState", js.undefined)
     
-    @scala.inline
-    def setLastSyncDateTime(value: String): Self = StObject.set(x, "lastSyncDateTime", value.asInstanceOf[js.Any])
+    inline def setLastSyncDateTime(value: String): Self = StObject.set(x, "lastSyncDateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastSyncDateTimeUndefined: Self = StObject.set(x, "lastSyncDateTime", js.undefined)
+    inline def setLastSyncDateTimeUndefined: Self = StObject.set(x, "lastSyncDateTime", js.undefined)
     
-    @scala.inline
-    def setOsDescription(value: NullableOption[String]): Self = StObject.set(x, "osDescription", value.asInstanceOf[js.Any])
+    inline def setOsDescription(value: NullableOption[String]): Self = StObject.set(x, "osDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOsDescriptionNull: Self = StObject.set(x, "osDescription", null)
+    inline def setOsDescriptionNull: Self = StObject.set(x, "osDescription", null)
     
-    @scala.inline
-    def setOsDescriptionUndefined: Self = StObject.set(x, "osDescription", js.undefined)
+    inline def setOsDescriptionUndefined: Self = StObject.set(x, "osDescription", js.undefined)
     
-    @scala.inline
-    def setOsVersion(value: NullableOption[String]): Self = StObject.set(x, "osVersion", value.asInstanceOf[js.Any])
+    inline def setOsVersion(value: NullableOption[String]): Self = StObject.set(x, "osVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOsVersionNull: Self = StObject.set(x, "osVersion", null)
+    inline def setOsVersionNull: Self = StObject.set(x, "osVersion", null)
     
-    @scala.inline
-    def setOsVersionUndefined: Self = StObject.set(x, "osVersion", js.undefined)
+    inline def setOsVersionUndefined: Self = StObject.set(x, "osVersion", js.undefined)
     
-    @scala.inline
-    def setUserName(value: NullableOption[String]): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: NullableOption[String]): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNameNull: Self = StObject.set(x, "userName", null)
+    inline def setUserNameNull: Self = StObject.set(x, "userName", null)
     
-    @scala.inline
-    def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
+    inline def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
   }
 }

@@ -62,169 +62,115 @@ trait PartialStyleRulesButtonCl extends StObject {
 }
 object PartialStyleRulesButtonCl {
   
-  @scala.inline
-  def apply(): PartialStyleRulesButtonCl = {
+  inline def apply(): PartialStyleRulesButtonCl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesButtonCl]
   }
   
-  @scala.inline
-  implicit class PartialStyleRulesButtonClMutableBuilder[Self <: PartialStyleRulesButtonCl] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleRulesButtonCl](x: Self) {
     
-    @scala.inline
-    def setColorInherit(value: CSSProperties): Self = StObject.set(x, "colorInherit", value.asInstanceOf[js.Any])
+    inline def setColorInherit(value: CSSProperties): Self = StObject.set(x, "colorInherit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorInheritUndefined: Self = StObject.set(x, "colorInherit", js.undefined)
+    inline def setColorInheritUndefined: Self = StObject.set(x, "colorInherit", js.undefined)
     
-    @scala.inline
-    def setContained(value: CSSProperties): Self = StObject.set(x, "contained", value.asInstanceOf[js.Any])
+    inline def setContained(value: CSSProperties): Self = StObject.set(x, "contained", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainedPrimary(value: CSSProperties): Self = StObject.set(x, "containedPrimary", value.asInstanceOf[js.Any])
+    inline def setContainedPrimary(value: CSSProperties): Self = StObject.set(x, "containedPrimary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainedPrimaryUndefined: Self = StObject.set(x, "containedPrimary", js.undefined)
+    inline def setContainedPrimaryUndefined: Self = StObject.set(x, "containedPrimary", js.undefined)
     
-    @scala.inline
-    def setContainedSecondary(value: CSSProperties): Self = StObject.set(x, "containedSecondary", value.asInstanceOf[js.Any])
+    inline def setContainedSecondary(value: CSSProperties): Self = StObject.set(x, "containedSecondary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainedSecondaryUndefined: Self = StObject.set(x, "containedSecondary", js.undefined)
+    inline def setContainedSecondaryUndefined: Self = StObject.set(x, "containedSecondary", js.undefined)
     
-    @scala.inline
-    def setContainedUndefined: Self = StObject.set(x, "contained", js.undefined)
+    inline def setContainedUndefined: Self = StObject.set(x, "contained", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: CSSProperties): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: CSSProperties): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setExtendedFab(value: CSSProperties): Self = StObject.set(x, "extendedFab", value.asInstanceOf[js.Any])
+    inline def setExtendedFab(value: CSSProperties): Self = StObject.set(x, "extendedFab", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExtendedFabUndefined: Self = StObject.set(x, "extendedFab", js.undefined)
+    inline def setExtendedFabUndefined: Self = StObject.set(x, "extendedFab", js.undefined)
     
-    @scala.inline
-    def setFab(value: CSSProperties): Self = StObject.set(x, "fab", value.asInstanceOf[js.Any])
+    inline def setFab(value: CSSProperties): Self = StObject.set(x, "fab", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFabUndefined: Self = StObject.set(x, "fab", js.undefined)
+    inline def setFabUndefined: Self = StObject.set(x, "fab", js.undefined)
     
-    @scala.inline
-    def setFlat(value: CSSProperties): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
+    inline def setFlat(value: CSSProperties): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlatPrimary(value: CSSProperties): Self = StObject.set(x, "flatPrimary", value.asInstanceOf[js.Any])
+    inline def setFlatPrimary(value: CSSProperties): Self = StObject.set(x, "flatPrimary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlatPrimaryUndefined: Self = StObject.set(x, "flatPrimary", js.undefined)
+    inline def setFlatPrimaryUndefined: Self = StObject.set(x, "flatPrimary", js.undefined)
     
-    @scala.inline
-    def setFlatSecondary(value: CSSProperties): Self = StObject.set(x, "flatSecondary", value.asInstanceOf[js.Any])
+    inline def setFlatSecondary(value: CSSProperties): Self = StObject.set(x, "flatSecondary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlatSecondaryUndefined: Self = StObject.set(x, "flatSecondary", js.undefined)
+    inline def setFlatSecondaryUndefined: Self = StObject.set(x, "flatSecondary", js.undefined)
     
-    @scala.inline
-    def setFlatUndefined: Self = StObject.set(x, "flat", js.undefined)
+    inline def setFlatUndefined: Self = StObject.set(x, "flat", js.undefined)
     
-    @scala.inline
-    def setFocusVisible(value: CSSProperties): Self = StObject.set(x, "focusVisible", value.asInstanceOf[js.Any])
+    inline def setFocusVisible(value: CSSProperties): Self = StObject.set(x, "focusVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFocusVisibleUndefined: Self = StObject.set(x, "focusVisible", js.undefined)
+    inline def setFocusVisibleUndefined: Self = StObject.set(x, "focusVisible", js.undefined)
     
-    @scala.inline
-    def setFullWidth(value: CSSProperties): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
+    inline def setFullWidth(value: CSSProperties): Self = StObject.set(x, "fullWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
+    inline def setFullWidthUndefined: Self = StObject.set(x, "fullWidth", js.undefined)
     
-    @scala.inline
-    def setLabel(value: CSSProperties): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: CSSProperties): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setMini(value: CSSProperties): Self = StObject.set(x, "mini", value.asInstanceOf[js.Any])
+    inline def setMini(value: CSSProperties): Self = StObject.set(x, "mini", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMiniUndefined: Self = StObject.set(x, "mini", js.undefined)
+    inline def setMiniUndefined: Self = StObject.set(x, "mini", js.undefined)
     
-    @scala.inline
-    def setOutlined(value: CSSProperties): Self = StObject.set(x, "outlined", value.asInstanceOf[js.Any])
+    inline def setOutlined(value: CSSProperties): Self = StObject.set(x, "outlined", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlinedPrimary(value: CSSProperties): Self = StObject.set(x, "outlinedPrimary", value.asInstanceOf[js.Any])
+    inline def setOutlinedPrimary(value: CSSProperties): Self = StObject.set(x, "outlinedPrimary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlinedPrimaryUndefined: Self = StObject.set(x, "outlinedPrimary", js.undefined)
+    inline def setOutlinedPrimaryUndefined: Self = StObject.set(x, "outlinedPrimary", js.undefined)
     
-    @scala.inline
-    def setOutlinedSecondary(value: CSSProperties): Self = StObject.set(x, "outlinedSecondary", value.asInstanceOf[js.Any])
+    inline def setOutlinedSecondary(value: CSSProperties): Self = StObject.set(x, "outlinedSecondary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlinedSecondaryUndefined: Self = StObject.set(x, "outlinedSecondary", js.undefined)
+    inline def setOutlinedSecondaryUndefined: Self = StObject.set(x, "outlinedSecondary", js.undefined)
     
-    @scala.inline
-    def setOutlinedUndefined: Self = StObject.set(x, "outlined", js.undefined)
+    inline def setOutlinedUndefined: Self = StObject.set(x, "outlined", js.undefined)
     
-    @scala.inline
-    def setRaised(value: CSSProperties): Self = StObject.set(x, "raised", value.asInstanceOf[js.Any])
+    inline def setRaised(value: CSSProperties): Self = StObject.set(x, "raised", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaisedPrimary(value: CSSProperties): Self = StObject.set(x, "raisedPrimary", value.asInstanceOf[js.Any])
+    inline def setRaisedPrimary(value: CSSProperties): Self = StObject.set(x, "raisedPrimary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaisedPrimaryUndefined: Self = StObject.set(x, "raisedPrimary", js.undefined)
+    inline def setRaisedPrimaryUndefined: Self = StObject.set(x, "raisedPrimary", js.undefined)
     
-    @scala.inline
-    def setRaisedSecondary(value: CSSProperties): Self = StObject.set(x, "raisedSecondary", value.asInstanceOf[js.Any])
+    inline def setRaisedSecondary(value: CSSProperties): Self = StObject.set(x, "raisedSecondary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRaisedSecondaryUndefined: Self = StObject.set(x, "raisedSecondary", js.undefined)
+    inline def setRaisedSecondaryUndefined: Self = StObject.set(x, "raisedSecondary", js.undefined)
     
-    @scala.inline
-    def setRaisedUndefined: Self = StObject.set(x, "raised", js.undefined)
+    inline def setRaisedUndefined: Self = StObject.set(x, "raised", js.undefined)
     
-    @scala.inline
-    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setSizeLarge(value: CSSProperties): Self = StObject.set(x, "sizeLarge", value.asInstanceOf[js.Any])
+    inline def setSizeLarge(value: CSSProperties): Self = StObject.set(x, "sizeLarge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeLargeUndefined: Self = StObject.set(x, "sizeLarge", js.undefined)
+    inline def setSizeLargeUndefined: Self = StObject.set(x, "sizeLarge", js.undefined)
     
-    @scala.inline
-    def setSizeSmall(value: CSSProperties): Self = StObject.set(x, "sizeSmall", value.asInstanceOf[js.Any])
+    inline def setSizeSmall(value: CSSProperties): Self = StObject.set(x, "sizeSmall", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeSmallUndefined: Self = StObject.set(x, "sizeSmall", js.undefined)
+    inline def setSizeSmallUndefined: Self = StObject.set(x, "sizeSmall", js.undefined)
     
-    @scala.inline
-    def setText(value: CSSProperties): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: CSSProperties): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextPrimary(value: CSSProperties): Self = StObject.set(x, "textPrimary", value.asInstanceOf[js.Any])
+    inline def setTextPrimary(value: CSSProperties): Self = StObject.set(x, "textPrimary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextPrimaryUndefined: Self = StObject.set(x, "textPrimary", js.undefined)
+    inline def setTextPrimaryUndefined: Self = StObject.set(x, "textPrimary", js.undefined)
     
-    @scala.inline
-    def setTextSecondary(value: CSSProperties): Self = StObject.set(x, "textSecondary", value.asInstanceOf[js.Any])
+    inline def setTextSecondary(value: CSSProperties): Self = StObject.set(x, "textSecondary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextSecondaryUndefined: Self = StObject.set(x, "textSecondary", js.undefined)
+    inline def setTextSecondaryUndefined: Self = StObject.set(x, "textSecondary", js.undefined)
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

@@ -66,22 +66,17 @@ trait GetAllCommonlyUsed extends StObject {
 }
 object GetAllCommonlyUsed {
   
-  @scala.inline
-  def apply(get: `204`, getAllCommonlyUsed: `205`, getForRepo: `206`): GetAllCommonlyUsed = {
+  inline def apply(get: `204`, getAllCommonlyUsed: `205`, getForRepo: `206`): GetAllCommonlyUsed = {
     val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], getAllCommonlyUsed = getAllCommonlyUsed.asInstanceOf[js.Any], getForRepo = getForRepo.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetAllCommonlyUsed]
   }
   
-  @scala.inline
-  implicit class GetAllCommonlyUsedMutableBuilder[Self <: GetAllCommonlyUsed] (val x: Self) extends AnyVal {
+  extension [Self <: GetAllCommonlyUsed](x: Self) {
     
-    @scala.inline
-    def setGet(value: `204`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    inline def setGet(value: `204`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAllCommonlyUsed(value: `205`): Self = StObject.set(x, "getAllCommonlyUsed", value.asInstanceOf[js.Any])
+    inline def setGetAllCommonlyUsed(value: `205`): Self = StObject.set(x, "getAllCommonlyUsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetForRepo(value: `206`): Self = StObject.set(x, "getForRepo", value.asInstanceOf[js.Any])
+    inline def setGetForRepo(value: `206`): Self = StObject.set(x, "getForRepo", value.asInstanceOf[js.Any])
   }
 }

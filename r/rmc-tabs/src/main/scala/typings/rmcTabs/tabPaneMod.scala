@@ -42,8 +42,7 @@ object tabPaneMod {
     @JSImport("rmc-tabs/lib/TabPane", "TabPane.defaultProps")
     @js.native
     def defaultProps: FixX = js.native
-    @scala.inline
-    def defaultProps_=(x: FixX): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: FixX): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   trait PropsType extends StObject {
@@ -62,47 +61,34 @@ object tabPaneMod {
   }
   object PropsType {
     
-    @scala.inline
-    def apply(active: Boolean): PropsType = {
+    inline def apply(active: Boolean): PropsType = {
       val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
       __obj.asInstanceOf[PropsType]
     }
     
-    @scala.inline
-    implicit class PropsTypeMutableBuilder[Self <: PropsType] (val x: Self) extends AnyVal {
+    extension [Self <: PropsType](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setFixX(value: Boolean): Self = StObject.set(x, "fixX", value.asInstanceOf[js.Any])
+      inline def setFixX(value: Boolean): Self = StObject.set(x, "fixX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixXUndefined: Self = StObject.set(x, "fixX", js.undefined)
+      inline def setFixXUndefined: Self = StObject.set(x, "fixX", js.undefined)
       
-      @scala.inline
-      def setFixY(value: Boolean): Self = StObject.set(x, "fixY", value.asInstanceOf[js.Any])
+      inline def setFixY(value: Boolean): Self = StObject.set(x, "fixY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFixYUndefined: Self = StObject.set(x, "fixY", js.undefined)
+      inline def setFixYUndefined: Self = StObject.set(x, "fixY", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
+      inline def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
+      inline def setRoleUndefined: Self = StObject.set(x, "role", js.undefined)
     }
   }
 }

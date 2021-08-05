@@ -12,19 +12,15 @@ trait InstallPackageOptions extends StObject {
 }
 object InstallPackageOptions {
   
-  @scala.inline
-  def apply(fileName: Path, packageName: java.lang.String): InstallPackageOptions = {
+  inline def apply(fileName: Path, packageName: java.lang.String): InstallPackageOptions = {
     val __obj = js.Dynamic.literal(fileName = fileName.asInstanceOf[js.Any], packageName = packageName.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstallPackageOptions]
   }
   
-  @scala.inline
-  implicit class InstallPackageOptionsMutableBuilder[Self <: InstallPackageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: InstallPackageOptions](x: Self) {
     
-    @scala.inline
-    def setFileName(value: Path): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: Path): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPackageName(value: java.lang.String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
+    inline def setPackageName(value: java.lang.String): Self = StObject.set(x, "packageName", value.asInstanceOf[js.Any])
   }
 }

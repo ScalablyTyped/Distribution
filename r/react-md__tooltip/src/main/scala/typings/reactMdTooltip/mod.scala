@@ -44,8 +44,7 @@ object mod {
   
   object TooltipHoverModeConfig {
     
-    @scala.inline
-    def apply(hasDefaultDelayDelayTimeoutEnabledChildren: TooltipHoverModeConfigProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasDefaultDelayDelayTimeoutEnabledChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+    inline def apply(hasDefaultDelayDelayTimeoutEnabledChildren: TooltipHoverModeConfigProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasDefaultDelayDelayTimeoutEnabledChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
     
     @JSImport("@react-md/tooltip", "TooltipHoverModeConfig")
     @js.native
@@ -60,33 +59,28 @@ object mod {
       @JSImport("@react-md/tooltip", "TooltipHoverModeConfig.propTypes.children")
       @js.native
       def children: js.Any = js.native
-      @scala.inline
-      def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
+      inline def children_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("children")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/tooltip", "TooltipHoverModeConfig.propTypes.defaultDelay")
       @js.native
       def defaultDelay: js.Any = js.native
-      @scala.inline
-      def defaultDelay_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultDelay")(x.asInstanceOf[js.Any])
+      inline def defaultDelay_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultDelay")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/tooltip", "TooltipHoverModeConfig.propTypes.delayTimeout")
       @js.native
       def delayTimeout: js.Any = js.native
-      @scala.inline
-      def delayTimeout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("delayTimeout")(x.asInstanceOf[js.Any])
+      inline def delayTimeout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("delayTimeout")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/tooltip", "TooltipHoverModeConfig.propTypes.enabled")
       @js.native
       def enabled: js.Any = js.native
-      @scala.inline
-      def enabled_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enabled")(x.asInstanceOf[js.Any])
+      inline def enabled_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enabled")(x.asInstanceOf[js.Any])
     }
   }
   
   object Tooltipped {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       hasIdChildrenTooltipChildrenDenseVhMarginVwMarginHoverDelayFocusDelayTouchTimeoutSpacingDenseSpacingPropPositionPositionThresholdPortalPortalIntoPortalIntoIdOnMouseEnterOnMouseLeaveOnTouchStartOnTouchMoveOnContextMenuOnFocusOnKeyDownOnShowOnHideDisableHoverModeDescribedByDefaultPositionDisableSwappingMountOnEnterUnmountOnExitDisableAutoSpacingProps: TooltippedProps
     ): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasIdChildrenTooltipChildrenDenseVhMarginVwMarginHoverDelayFocusDelayTouchTimeoutSpacingDenseSpacingPropPositionPositionThresholdPortalPortalIntoPortalIntoIdOnMouseEnterOnMouseLeaveOnTouchStartOnTouchMoveOnContextMenuOnFocusOnKeyDownOnShowOnHideDisableHoverModeDescribedByDefaultPositionDisableSwappingMountOnEnterUnmountOnExitDisableAutoSpacingProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
     
@@ -103,8 +97,7 @@ object mod {
       @JSImport("@react-md/tooltip", "Tooltipped.propTypes.defaultPosition")
       @js.native
       def defaultPosition: js.Any = js.native
-      @scala.inline
-      def defaultPosition_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultPosition")(x.asInstanceOf[js.Any])
+      inline def defaultPosition_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultPosition")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/tooltip", "Tooltipped.propTypes.dense")
       @js.native
@@ -113,97 +106,80 @@ object mod {
       @JSImport("@react-md/tooltip", "Tooltipped.propTypes.denseSpacing")
       @js.native
       def denseSpacing: js.Any = js.native
-      @scala.inline
-      def denseSpacing_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("denseSpacing")(x.asInstanceOf[js.Any])
+      inline def denseSpacing_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("denseSpacing")(x.asInstanceOf[js.Any])
       
-      @scala.inline
-      def dense_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dense")(x.asInstanceOf[js.Any])
+      inline def dense_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("dense")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/tooltip", "Tooltipped.propTypes.disableAutoSpacing")
       @js.native
       def disableAutoSpacing: js.Any = js.native
-      @scala.inline
-      def disableAutoSpacing_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableAutoSpacing")(x.asInstanceOf[js.Any])
+      inline def disableAutoSpacing_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("disableAutoSpacing")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/tooltip", "Tooltipped.propTypes.focusDelay")
       @js.native
       def focusDelay: js.Any = js.native
-      @scala.inline
-      def focusDelay_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("focusDelay")(x.asInstanceOf[js.Any])
+      inline def focusDelay_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("focusDelay")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/tooltip", "Tooltipped.propTypes.hoverDelay")
       @js.native
       def hoverDelay: js.Any = js.native
-      @scala.inline
-      def hoverDelay_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hoverDelay")(x.asInstanceOf[js.Any])
+      inline def hoverDelay_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hoverDelay")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/tooltip", "Tooltipped.propTypes.lineWrap")
       @js.native
       def lineWrap: js.Any = js.native
-      @scala.inline
-      def lineWrap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lineWrap")(x.asInstanceOf[js.Any])
+      inline def lineWrap_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lineWrap")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/tooltip", "Tooltipped.propTypes.mountOnEnter")
       @js.native
       def mountOnEnter: js.Any = js.native
-      @scala.inline
-      def mountOnEnter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mountOnEnter")(x.asInstanceOf[js.Any])
+      inline def mountOnEnter_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("mountOnEnter")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/tooltip", "Tooltipped.propTypes.portal")
       @js.native
       def portal: js.Any = js.native
-      @scala.inline
-      def portal_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("portal")(x.asInstanceOf[js.Any])
+      inline def portal_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("portal")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/tooltip", "Tooltipped.propTypes.positionThreshold")
       @js.native
       def positionThreshold: js.Any = js.native
-      @scala.inline
-      def positionThreshold_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("positionThreshold")(x.asInstanceOf[js.Any])
+      inline def positionThreshold_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("positionThreshold")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/tooltip", "Tooltipped.propTypes.spacing")
       @js.native
       def spacing: js.Any = js.native
-      @scala.inline
-      def spacing_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing")(x.asInstanceOf[js.Any])
+      inline def spacing_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("spacing")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/tooltip", "Tooltipped.propTypes.tooltipId")
       @js.native
       def tooltipId: js.Any = js.native
-      @scala.inline
-      def tooltipId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tooltipId")(x.asInstanceOf[js.Any])
+      inline def tooltipId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tooltipId")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/tooltip", "Tooltipped.propTypes.touchTimeout")
       @js.native
       def touchTimeout: js.Any = js.native
-      @scala.inline
-      def touchTimeout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("touchTimeout")(x.asInstanceOf[js.Any])
+      inline def touchTimeout_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("touchTimeout")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/tooltip", "Tooltipped.propTypes.unmountOnExit")
       @js.native
       def unmountOnExit: js.Any = js.native
-      @scala.inline
-      def unmountOnExit_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unmountOnExit")(x.asInstanceOf[js.Any])
+      inline def unmountOnExit_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("unmountOnExit")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/tooltip", "Tooltipped.propTypes.vhMargin")
       @js.native
       def vhMargin: js.Any = js.native
-      @scala.inline
-      def vhMargin_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vhMargin")(x.asInstanceOf[js.Any])
+      inline def vhMargin_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vhMargin")(x.asInstanceOf[js.Any])
       
       @JSImport("@react-md/tooltip", "Tooltipped.propTypes.vwMargin")
       @js.native
       def vwMargin: js.Any = js.native
-      @scala.inline
-      def vwMargin_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vwMargin")(x.asInstanceOf[js.Any])
+      inline def vwMargin_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vwMargin")(x.asInstanceOf[js.Any])
     }
   }
   
-  @scala.inline
-  def useTooltipHoverModeState(defaultDelay: Double, delayTimeout: Double): TooltipHoverModeState = (^.asInstanceOf[js.Dynamic].applyDynamic("useTooltipHoverModeState")(defaultDelay.asInstanceOf[js.Any], delayTimeout.asInstanceOf[js.Any])).asInstanceOf[TooltipHoverModeState]
+  inline def useTooltipHoverModeState(defaultDelay: Double, delayTimeout: Double): TooltipHoverModeState = (^.asInstanceOf[js.Dynamic].applyDynamic("useTooltipHoverModeState")(defaultDelay.asInstanceOf[js.Any], delayTimeout.asInstanceOf[js.Any])).asInstanceOf[TooltipHoverModeState]
   
-  @scala.inline
-  def useTooltipState(
+  inline def useTooltipState(
     hasPropPositionDefaultPositionPositionThresholdHoverDelayTouchTimeoutFocusDelayDisableHoverModeOnMouseEnterOnMouseLeaveOnTouchStartOnTouchMoveOnFocusOnBlurOnKeyDownOnShowOnHide: TooltipStateOptions
   ): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useTooltipState")(hasPropPositionDefaultPositionPositionThresholdHoverDelayTouchTimeoutFocusDelayDisableHoverModeOnMouseEnterOnMouseLeaveOnTouchStartOnTouchMoveOnFocusOnBlurOnKeyDownOnShowOnHide.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
 }

@@ -15,16 +15,13 @@ trait ContactChangedEventArgs extends StObject {
 }
 object ContactChangedEventArgs {
   
-  @scala.inline
-  def apply(getDeferral: () => ContactChangedDeferral): ContactChangedEventArgs = {
+  inline def apply(getDeferral: () => ContactChangedDeferral): ContactChangedEventArgs = {
     val __obj = js.Dynamic.literal(getDeferral = js.Any.fromFunction0(getDeferral))
     __obj.asInstanceOf[ContactChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class ContactChangedEventArgsMutableBuilder[Self <: ContactChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ContactChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setGetDeferral(value: () => ContactChangedDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
+    inline def setGetDeferral(value: () => ContactChangedDeferral): Self = StObject.set(x, "getDeferral", js.Any.fromFunction0(value))
   }
 }

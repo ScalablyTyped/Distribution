@@ -31,37 +31,27 @@ trait InsertInlineImageRequest extends StObject {
 }
 object InsertInlineImageRequest {
   
-  @scala.inline
-  def apply(): InsertInlineImageRequest = {
+  inline def apply(): InsertInlineImageRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InsertInlineImageRequest]
   }
   
-  @scala.inline
-  implicit class InsertInlineImageRequestMutableBuilder[Self <: InsertInlineImageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: InsertInlineImageRequest](x: Self) {
     
-    @scala.inline
-    def setEndOfSegmentLocation(value: EndOfSegmentLocation): Self = StObject.set(x, "endOfSegmentLocation", value.asInstanceOf[js.Any])
+    inline def setEndOfSegmentLocation(value: EndOfSegmentLocation): Self = StObject.set(x, "endOfSegmentLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndOfSegmentLocationUndefined: Self = StObject.set(x, "endOfSegmentLocation", js.undefined)
+    inline def setEndOfSegmentLocationUndefined: Self = StObject.set(x, "endOfSegmentLocation", js.undefined)
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setObjectSize(value: Size): Self = StObject.set(x, "objectSize", value.asInstanceOf[js.Any])
+    inline def setObjectSize(value: Size): Self = StObject.set(x, "objectSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectSizeUndefined: Self = StObject.set(x, "objectSize", js.undefined)
+    inline def setObjectSizeUndefined: Self = StObject.set(x, "objectSize", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

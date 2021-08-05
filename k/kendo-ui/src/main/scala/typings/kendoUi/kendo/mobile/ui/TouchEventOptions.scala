@@ -15,31 +15,23 @@ trait TouchEventOptions extends StObject {
 }
 object TouchEventOptions {
   
-  @scala.inline
-  def apply(): TouchEventOptions = {
+  inline def apply(): TouchEventOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TouchEventOptions]
   }
   
-  @scala.inline
-  implicit class TouchEventOptionsMutableBuilder[Self <: TouchEventOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TouchEventOptions](x: Self) {
     
-    @scala.inline
-    def setTarget(value: JQuery): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: JQuery): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+    inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
     
-    @scala.inline
-    def setX(value: TouchAxis): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: TouchAxis): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
-    @scala.inline
-    def setY(value: TouchAxis): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+    inline def setY(value: TouchAxis): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
+    inline def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

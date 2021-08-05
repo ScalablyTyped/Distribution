@@ -21,52 +21,37 @@ trait Buttons extends StObject {
 }
 object Buttons {
   
-  @scala.inline
-  def apply(): Buttons = {
+  inline def apply(): Buttons = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Buttons]
   }
   
-  @scala.inline
-  implicit class ButtonsMutableBuilder[Self <: Buttons] (val x: Self) extends AnyVal {
+  extension [Self <: Buttons](x: Self) {
     
-    @scala.inline
-    def setButtons(value: js.Array[dxButtonOptions]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    inline def setButtons(value: js.Array[dxButtonOptions]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+    inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
     
-    @scala.inline
-    def setButtonsVarargs(value: dxButtonOptions*): Self = StObject.set(x, "buttons", js.Array(value :_*))
+    inline def setButtonsVarargs(value: dxButtonOptions*): Self = StObject.set(x, "buttons", js.Array(value :_*))
     
-    @scala.inline
-    def setDragEnabled(value: Boolean): Self = StObject.set(x, "dragEnabled", value.asInstanceOf[js.Any])
+    inline def setDragEnabled(value: Boolean): Self = StObject.set(x, "dragEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDragEnabledUndefined: Self = StObject.set(x, "dragEnabled", js.undefined)
+    inline def setDragEnabledUndefined: Self = StObject.set(x, "dragEnabled", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageHtml(value: String): Self = StObject.set(x, "messageHtml", value.asInstanceOf[js.Any])
+    inline def setMessageHtml(value: String): Self = StObject.set(x, "messageHtml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageHtmlUndefined: Self = StObject.set(x, "messageHtml", js.undefined)
+    inline def setMessageHtmlUndefined: Self = StObject.set(x, "messageHtml", js.undefined)
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setShowTitle(value: Boolean): Self = StObject.set(x, "showTitle", value.asInstanceOf[js.Any])
+    inline def setShowTitle(value: Boolean): Self = StObject.set(x, "showTitle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowTitleUndefined: Self = StObject.set(x, "showTitle", js.undefined)
+    inline def setShowTitleUndefined: Self = StObject.set(x, "showTitle", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

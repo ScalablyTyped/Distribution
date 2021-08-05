@@ -14,16 +14,13 @@ trait SetReturnValueRequest extends StObject {
 }
 object SetReturnValueRequest {
   
-  @scala.inline
-  def apply(newValue: CallArgument): SetReturnValueRequest = {
+  inline def apply(newValue: CallArgument): SetReturnValueRequest = {
     val __obj = js.Dynamic.literal(newValue = newValue.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetReturnValueRequest]
   }
   
-  @scala.inline
-  implicit class SetReturnValueRequestMutableBuilder[Self <: SetReturnValueRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetReturnValueRequest](x: Self) {
     
-    @scala.inline
-    def setNewValue(value: CallArgument): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
+    inline def setNewValue(value: CallArgument): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
   }
 }

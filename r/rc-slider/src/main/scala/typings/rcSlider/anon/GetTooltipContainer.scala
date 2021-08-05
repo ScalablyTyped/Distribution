@@ -14,8 +14,7 @@ trait GetTooltipContainer extends StObject {
 }
 object GetTooltipContainer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getTooltipContainer: js.Any => js.Any,
     handleStyle: js.Array[js.Object],
     tipFormatter: Double => Double
@@ -24,19 +23,14 @@ object GetTooltipContainer {
     __obj.asInstanceOf[GetTooltipContainer]
   }
   
-  @scala.inline
-  implicit class GetTooltipContainerMutableBuilder[Self <: GetTooltipContainer] (val x: Self) extends AnyVal {
+  extension [Self <: GetTooltipContainer](x: Self) {
     
-    @scala.inline
-    def setGetTooltipContainer(value: js.Any => js.Any): Self = StObject.set(x, "getTooltipContainer", js.Any.fromFunction1(value))
+    inline def setGetTooltipContainer(value: js.Any => js.Any): Self = StObject.set(x, "getTooltipContainer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHandleStyle(value: js.Array[js.Object]): Self = StObject.set(x, "handleStyle", value.asInstanceOf[js.Any])
+    inline def setHandleStyle(value: js.Array[js.Object]): Self = StObject.set(x, "handleStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandleStyleVarargs(value: js.Object*): Self = StObject.set(x, "handleStyle", js.Array(value :_*))
+    inline def setHandleStyleVarargs(value: js.Object*): Self = StObject.set(x, "handleStyle", js.Array(value :_*))
     
-    @scala.inline
-    def setTipFormatter(value: Double => Double): Self = StObject.set(x, "tipFormatter", js.Any.fromFunction1(value))
+    inline def setTipFormatter(value: Double => Double): Self = StObject.set(x, "tipFormatter", js.Any.fromFunction1(value))
   }
 }

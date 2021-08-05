@@ -11,19 +11,15 @@ trait GooglePrivacyDlpV2LargeCustomDictionaryStats extends StObject {
 }
 object GooglePrivacyDlpV2LargeCustomDictionaryStats {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2LargeCustomDictionaryStats = {
+  inline def apply(): GooglePrivacyDlpV2LargeCustomDictionaryStats = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2LargeCustomDictionaryStats]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2LargeCustomDictionaryStatsMutableBuilder[Self <: GooglePrivacyDlpV2LargeCustomDictionaryStats] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2LargeCustomDictionaryStats](x: Self) {
     
-    @scala.inline
-    def setApproxNumPhrases(value: String): Self = StObject.set(x, "approxNumPhrases", value.asInstanceOf[js.Any])
+    inline def setApproxNumPhrases(value: String): Self = StObject.set(x, "approxNumPhrases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApproxNumPhrasesUndefined: Self = StObject.set(x, "approxNumPhrases", js.undefined)
+    inline def setApproxNumPhrasesUndefined: Self = StObject.set(x, "approxNumPhrases", js.undefined)
   }
 }

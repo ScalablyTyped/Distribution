@@ -14,6 +14,5 @@ object transports {
   @JSGlobal("kendo.data.transports.odata")
   @js.native
   def odata: DataSourceTransport = js.native
-  @scala.inline
-  def odata_=(x: DataSourceTransport): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("odata")(x.asInstanceOf[js.Any])
+  inline def odata_=(x: DataSourceTransport): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("odata")(x.asInstanceOf[js.Any])
 }

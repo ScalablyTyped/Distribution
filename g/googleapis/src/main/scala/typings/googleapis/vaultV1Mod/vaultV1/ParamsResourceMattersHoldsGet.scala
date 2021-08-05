@@ -34,37 +34,27 @@ trait ParamsResourceMattersHoldsGet
 }
 object ParamsResourceMattersHoldsGet {
   
-  @scala.inline
-  def apply(): ParamsResourceMattersHoldsGet = {
+  inline def apply(): ParamsResourceMattersHoldsGet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceMattersHoldsGet]
   }
   
-  @scala.inline
-  implicit class ParamsResourceMattersHoldsGetMutableBuilder[Self <: ParamsResourceMattersHoldsGet] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceMattersHoldsGet](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setHoldId(value: String): Self = StObject.set(x, "holdId", value.asInstanceOf[js.Any])
+    inline def setHoldId(value: String): Self = StObject.set(x, "holdId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHoldIdUndefined: Self = StObject.set(x, "holdId", js.undefined)
+    inline def setHoldIdUndefined: Self = StObject.set(x, "holdId", js.undefined)
     
-    @scala.inline
-    def setMatterId(value: String): Self = StObject.set(x, "matterId", value.asInstanceOf[js.Any])
+    inline def setMatterId(value: String): Self = StObject.set(x, "matterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatterIdUndefined: Self = StObject.set(x, "matterId", js.undefined)
+    inline def setMatterIdUndefined: Self = StObject.set(x, "matterId", js.undefined)
     
-    @scala.inline
-    def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: String): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

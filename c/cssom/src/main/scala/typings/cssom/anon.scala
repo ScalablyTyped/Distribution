@@ -12,17 +12,14 @@ object anon {
   }
   object Error {
     
-    @scala.inline
-    def apply(error: js.Any): Error = {
+    inline def apply(error: js.Any): Error = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[Error]
     }
     
-    @scala.inline
-    implicit class ErrorMutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
+    extension [Self <: Error](x: Self) {
       
-      @scala.inline
-      def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
   }
   
@@ -34,20 +31,16 @@ object anon {
   }
   object Expression {
     
-    @scala.inline
-    def apply(expression: String, idx: Double): Expression = {
+    inline def apply(expression: String, idx: Double): Expression = {
       val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], idx = idx.asInstanceOf[js.Any])
       __obj.asInstanceOf[Expression]
     }
     
-    @scala.inline
-    implicit class ExpressionMutableBuilder[Self <: Expression] (val x: Self) extends AnyVal {
+    extension [Self <: Expression](x: Self) {
       
-      @scala.inline
-      def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+      inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
+      inline def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
     }
   }
 }

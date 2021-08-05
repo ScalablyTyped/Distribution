@@ -28,34 +28,25 @@ trait UpdateInsightRequest extends StObject {
 }
 object UpdateInsightRequest {
   
-  @scala.inline
-  def apply(InsightArn: NonEmptyString): UpdateInsightRequest = {
+  inline def apply(InsightArn: NonEmptyString): UpdateInsightRequest = {
     val __obj = js.Dynamic.literal(InsightArn = InsightArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateInsightRequest]
   }
   
-  @scala.inline
-  implicit class UpdateInsightRequestMutableBuilder[Self <: UpdateInsightRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateInsightRequest](x: Self) {
     
-    @scala.inline
-    def setFilters(value: AwsSecurityFindingFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: AwsSecurityFindingFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
+    inline def setFiltersUndefined: Self = StObject.set(x, "Filters", js.undefined)
     
-    @scala.inline
-    def setGroupByAttribute(value: NonEmptyString): Self = StObject.set(x, "GroupByAttribute", value.asInstanceOf[js.Any])
+    inline def setGroupByAttribute(value: NonEmptyString): Self = StObject.set(x, "GroupByAttribute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupByAttributeUndefined: Self = StObject.set(x, "GroupByAttribute", js.undefined)
+    inline def setGroupByAttributeUndefined: Self = StObject.set(x, "GroupByAttribute", js.undefined)
     
-    @scala.inline
-    def setInsightArn(value: NonEmptyString): Self = StObject.set(x, "InsightArn", value.asInstanceOf[js.Any])
+    inline def setInsightArn(value: NonEmptyString): Self = StObject.set(x, "InsightArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: NonEmptyString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

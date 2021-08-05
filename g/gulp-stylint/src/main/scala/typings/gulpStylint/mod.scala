@@ -38,17 +38,14 @@ object mod extends Shortcut {
     }
     object FailReporterOptions {
       
-      @scala.inline
-      def apply(): FailReporterOptions = {
+      inline def apply(): FailReporterOptions = {
         val __obj = js.Dynamic.literal(failOnWarning = true)
         __obj.asInstanceOf[FailReporterOptions]
       }
       
-      @scala.inline
-      implicit class FailReporterOptionsMutableBuilder[Self <: FailReporterOptions] (val x: Self) extends AnyVal {
+      extension [Self <: FailReporterOptions](x: Self) {
         
-        @scala.inline
-        def setFailOnWarning(value: `true`): Self = StObject.set(x, "failOnWarning", value.asInstanceOf[js.Any])
+        inline def setFailOnWarning(value: `true`): Self = StObject.set(x, "failOnWarning", value.asInstanceOf[js.Any])
       }
     }
     
@@ -62,32 +59,24 @@ object mod extends Shortcut {
     }
     object Options {
       
-      @scala.inline
-      def apply(): Options = {
+      inline def apply(): Options = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[Options]
       }
       
-      @scala.inline
-      implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+      extension [Self <: Options](x: Self) {
         
-        @scala.inline
-        def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+        inline def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+        inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
         
-        @scala.inline
-        def setReporter(value: js.Any): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
+        inline def setReporter(value: js.Any): Self = StObject.set(x, "reporter", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
+        inline def setReporterUndefined: Self = StObject.set(x, "reporter", js.undefined)
         
-        @scala.inline
-        def setRules(value: StringDictionary[js.Any]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+        inline def setRules(value: StringDictionary[js.Any]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+        inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
       }
     }
     
@@ -97,20 +86,16 @@ object mod extends Shortcut {
     }
     object ReporterOptions {
       
-      @scala.inline
-      def apply(): ReporterOptions = {
+      inline def apply(): ReporterOptions = {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[ReporterOptions]
       }
       
-      @scala.inline
-      implicit class ReporterOptionsMutableBuilder[Self <: ReporterOptions] (val x: Self) extends AnyVal {
+      extension [Self <: ReporterOptions](x: Self) {
         
-        @scala.inline
-        def setLogger(value: () => Unit): Self = StObject.set(x, "logger", js.Any.fromFunction0(value))
+        inline def setLogger(value: () => Unit): Self = StObject.set(x, "logger", js.Any.fromFunction0(value))
         
-        @scala.inline
-        def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+        inline def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
       }
     }
   }

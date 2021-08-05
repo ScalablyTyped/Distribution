@@ -100,106 +100,79 @@ trait CollectionViewOptions[TModel /* <: Model[js.Any, ModelSetOptions, js.Objec
 }
 object CollectionViewOptions {
   
-  @scala.inline
-  def apply[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */, TCollection /* <: Collection[TModel] */](): CollectionViewOptions[TModel, TCollection] = {
+  inline def apply[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */, TCollection /* <: Collection[TModel] */](): CollectionViewOptions[TModel, TCollection] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CollectionViewOptions[TModel, TCollection]]
   }
   
-  @scala.inline
-  implicit class CollectionViewOptionsMutableBuilder[Self <: CollectionViewOptions[?, ?], TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */, TCollection /* <: Collection[TModel] */] (val x: Self & (CollectionViewOptions[TModel, TCollection])) extends AnyVal {
+  extension [Self <: CollectionViewOptions[?, ?], TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */, TCollection /* <: Collection[TModel] */](x: Self & (CollectionViewOptions[TModel, TCollection])) {
     
-    @scala.inline
-    def setChildView(
+    inline def setChildView(
       value: (js.Function1[
           /* model */ TModel, 
           TypeofView & (Instantiable0[typings.backbone.mod.View[Model[js.Any, ModelSetOptions, js.Object]]])
         ]) | (TypeofView & (Instantiable0[typings.backbone.mod.View[Model[js.Any, ModelSetOptions, js.Object]]]))
     ): Self = StObject.set(x, "childView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildViewFunction1(
+    inline def setChildViewFunction1(
       value: /* model */ TModel => TypeofView & (Instantiable0[typings.backbone.mod.View[Model[js.Any, ModelSetOptions, js.Object]]])
     ): Self = StObject.set(x, "childView", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setChildViewOptions(value: js.Function0[ViewOptions[TModel]] | ViewOptions[TModel]): Self = StObject.set(x, "childViewOptions", value.asInstanceOf[js.Any])
+    inline def setChildViewOptions(value: js.Function0[ViewOptions[TModel]] | ViewOptions[TModel]): Self = StObject.set(x, "childViewOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildViewOptionsFunction0(value: () => ViewOptions[TModel]): Self = StObject.set(x, "childViewOptions", js.Any.fromFunction0(value))
+    inline def setChildViewOptionsFunction0(value: () => ViewOptions[TModel]): Self = StObject.set(x, "childViewOptions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setChildViewOptionsUndefined: Self = StObject.set(x, "childViewOptions", js.undefined)
+    inline def setChildViewOptionsUndefined: Self = StObject.set(x, "childViewOptions", js.undefined)
     
-    @scala.inline
-    def setChildViewUndefined: Self = StObject.set(x, "childView", js.undefined)
+    inline def setChildViewUndefined: Self = StObject.set(x, "childView", js.undefined)
     
-    @scala.inline
-    def setEmptyView(
+    inline def setEmptyView(
       value: (js.Function0[
           TypeofView & (Instantiable0[typings.backbone.mod.View[Model[js.Any, ModelSetOptions, js.Object]]])
         ]) | (TypeofView & (Instantiable0[typings.backbone.mod.View[Model[js.Any, ModelSetOptions, js.Object]]]))
     ): Self = StObject.set(x, "emptyView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmptyViewFunction0(
+    inline def setEmptyViewFunction0(
       value: () => TypeofView & (Instantiable0[typings.backbone.mod.View[Model[js.Any, ModelSetOptions, js.Object]]])
     ): Self = StObject.set(x, "emptyView", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEmptyViewOptions(value: js.Function0[ViewOptions[TModel]] | ViewOptions[TModel]): Self = StObject.set(x, "emptyViewOptions", value.asInstanceOf[js.Any])
+    inline def setEmptyViewOptions(value: js.Function0[ViewOptions[TModel]] | ViewOptions[TModel]): Self = StObject.set(x, "emptyViewOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmptyViewOptionsFunction0(value: () => ViewOptions[TModel]): Self = StObject.set(x, "emptyViewOptions", js.Any.fromFunction0(value))
+    inline def setEmptyViewOptionsFunction0(value: () => ViewOptions[TModel]): Self = StObject.set(x, "emptyViewOptions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setEmptyViewOptionsUndefined: Self = StObject.set(x, "emptyViewOptions", js.undefined)
+    inline def setEmptyViewOptionsUndefined: Self = StObject.set(x, "emptyViewOptions", js.undefined)
     
-    @scala.inline
-    def setEmptyViewUndefined: Self = StObject.set(x, "emptyView", js.undefined)
+    inline def setEmptyViewUndefined: Self = StObject.set(x, "emptyView", js.undefined)
     
-    @scala.inline
-    def setEvents(value: EventsHash): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: EventsHash): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
     
-    @scala.inline
-    def setFilter(
+    inline def setFilter(
       value: (/* child */ js.UndefOr[TModel], /* index */ js.UndefOr[Double], /* collection */ js.UndefOr[TCollection]) => Boolean
     ): Self = StObject.set(x, "filter", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
     
-    @scala.inline
-    def setReorderOnSort(value: Boolean): Self = StObject.set(x, "reorderOnSort", value.asInstanceOf[js.Any])
+    inline def setReorderOnSort(value: Boolean): Self = StObject.set(x, "reorderOnSort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReorderOnSortUndefined: Self = StObject.set(x, "reorderOnSort", js.undefined)
+    inline def setReorderOnSortUndefined: Self = StObject.set(x, "reorderOnSort", js.undefined)
     
-    @scala.inline
-    def setSort(value: Boolean): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+    inline def setSort(value: Boolean): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+    inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     
-    @scala.inline
-    def setViewComparator(
+    inline def setViewComparator(
       value: String | (js.Function1[/* element */ TModel, Double | String]) | (js.Function2[/* compare */ TModel, /* to */ js.UndefOr[TModel], Double])
     ): Self = StObject.set(x, "viewComparator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewComparatorFunction1(value: /* element */ TModel => Double | String): Self = StObject.set(x, "viewComparator", js.Any.fromFunction1(value))
+    inline def setViewComparatorFunction1(value: /* element */ TModel => Double | String): Self = StObject.set(x, "viewComparator", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setViewComparatorFunction2(value: (/* compare */ TModel, /* to */ js.UndefOr[TModel]) => Double): Self = StObject.set(x, "viewComparator", js.Any.fromFunction2(value))
+    inline def setViewComparatorFunction2(value: (/* compare */ TModel, /* to */ js.UndefOr[TModel]) => Double): Self = StObject.set(x, "viewComparator", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setViewComparatorUndefined: Self = StObject.set(x, "viewComparator", js.undefined)
+    inline def setViewComparatorUndefined: Self = StObject.set(x, "viewComparator", js.undefined)
     
-    @scala.inline
-    def setViewFilter(
+    inline def setViewFilter(
       value: (js.Function3[
           /* view */ js.UndefOr[
             TypeofView & (Instantiable0[typings.backbone.mod.View[Model[js.Any, ModelSetOptions, js.Object]]])
@@ -210,14 +183,12 @@ object CollectionViewOptions {
         ]) | ObjectHash | String
     ): Self = StObject.set(x, "viewFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewFilterFunction3(
+    inline def setViewFilterFunction3(
       value: (/* view */ js.UndefOr[
           TypeofView & (Instantiable0[typings.backbone.mod.View[Model[js.Any, ModelSetOptions, js.Object]]])
         ], /* index */ js.UndefOr[Double], /* children */ js.UndefOr[js.Array[typings.backbone.mod.View[Model[js.Any, ModelSetOptions, js.Object]]]]) => Boolean
     ): Self = StObject.set(x, "viewFilter", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setViewFilterUndefined: Self = StObject.set(x, "viewFilter", js.undefined)
+    inline def setViewFilterUndefined: Self = StObject.set(x, "viewFilter", js.undefined)
   }
 }

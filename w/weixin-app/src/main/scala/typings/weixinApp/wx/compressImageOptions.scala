@@ -22,25 +22,19 @@ trait compressImageOptions
 }
 object compressImageOptions {
   
-  @scala.inline
-  def apply(src: String, success: String => Unit): compressImageOptions = {
+  inline def apply(src: String, success: String => Unit): compressImageOptions = {
     val __obj = js.Dynamic.literal(src = src.asInstanceOf[js.Any], success = js.Any.fromFunction1(success))
     __obj.asInstanceOf[compressImageOptions]
   }
   
-  @scala.inline
-  implicit class compressImageOptionsMutableBuilder[Self <: compressImageOptions] (val x: Self) extends AnyVal {
+  extension [Self <: compressImageOptions](x: Self) {
     
-    @scala.inline
-    def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+    inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
     
-    @scala.inline
-    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+    inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: String => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+    inline def setSuccess(value: String => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
   }
 }

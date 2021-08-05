@@ -16,16 +16,13 @@ trait IUpdateDisplayData
 }
 object IUpdateDisplayData {
   
-  @scala.inline
-  def apply(data: StringDictionary[js.Any]): IUpdateDisplayData = {
+  inline def apply(data: StringDictionary[js.Any]): IUpdateDisplayData = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], output_type = "update_display_data")
     __obj.asInstanceOf[IUpdateDisplayData]
   }
   
-  @scala.inline
-  implicit class IUpdateDisplayDataMutableBuilder[Self <: IUpdateDisplayData] (val x: Self) extends AnyVal {
+  extension [Self <: IUpdateDisplayData](x: Self) {
     
-    @scala.inline
-    def setOutput_type(value: update_display_data): Self = StObject.set(x, "output_type", value.asInstanceOf[js.Any])
+    inline def setOutput_type(value: update_display_data): Self = StObject.set(x, "output_type", value.asInstanceOf[js.Any])
   }
 }

@@ -18,16 +18,13 @@ trait ASPxClientVerticalGridBatchEditRecordInsertingEventArgs
 }
 object ASPxClientVerticalGridBatchEditRecordInsertingEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, visibleIndex: Double): ASPxClientVerticalGridBatchEditRecordInsertingEventArgs = {
+  inline def apply(cancel: Boolean, visibleIndex: Double): ASPxClientVerticalGridBatchEditRecordInsertingEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], visibleIndex = visibleIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientVerticalGridBatchEditRecordInsertingEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientVerticalGridBatchEditRecordInsertingEventArgsMutableBuilder[Self <: ASPxClientVerticalGridBatchEditRecordInsertingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientVerticalGridBatchEditRecordInsertingEventArgs](x: Self) {
     
-    @scala.inline
-    def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
+    inline def setVisibleIndex(value: Double): Self = StObject.set(x, "visibleIndex", value.asInstanceOf[js.Any])
   }
 }

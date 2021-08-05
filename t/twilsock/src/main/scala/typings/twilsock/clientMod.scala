@@ -85,9 +85,9 @@ object clientMod {
       */
     def addTelemetryEvent(event: TelemetryEventDescription): Unit = js.native
     
-    val channel: js.Any = js.native
+    /* private */ val channel: js.Any = js.native
     
-    val config: js.Any = js.native
+    /* private */ val config: js.Any = js.native
     
     /**
       * Connect to the server
@@ -121,7 +121,7 @@ object clientMod {
       */
     def get(url: String, headers: js.Any): js.Promise[Result] = js.native
     
-    var handleStorageId: js.Any = js.native
+    /* private */ var handleStorageId: js.Any = js.native
     
     /**
       * Indicates if twilsock is connected now
@@ -129,7 +129,7 @@ object clientMod {
       */
     def isConnected: Boolean = js.native
     
-    var offlineStorageDeferred: js.Any = js.native
+    /* private */ var offlineStorageDeferred: js.Any = js.native
     
     /**
       * Post HTTP request to upstream service
@@ -149,7 +149,7 @@ object clientMod {
       */
     def put(url: String, headers: js.Any, body: js.Any): js.Promise[Result] = js.native
     
-    val registrations: js.Any = js.native
+    /* private */ val registrations: js.Any = js.native
     
     /**
       * Remove notification context.
@@ -180,7 +180,7 @@ object clientMod {
       */
     def storageId(): js.Promise[OfflineProductStorage] = js.native
     
-    val telemetryTracker: js.Any = js.native
+    /* private */ val telemetryTracker: js.Any = js.native
     
     /**
       * Update token
@@ -189,7 +189,7 @@ object clientMod {
       */
     def updateToken(token: String): js.Promise[Unit] = js.native
     
-    val upstream: js.Any = js.native
+    /* private */ val upstream: js.Any = js.native
   }
   
   type Context = typings.twilsock.protocolMod.Protocol.Context

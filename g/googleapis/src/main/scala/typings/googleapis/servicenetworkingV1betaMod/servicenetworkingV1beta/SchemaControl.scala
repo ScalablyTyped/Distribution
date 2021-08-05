@@ -19,19 +19,15 @@ trait SchemaControl extends StObject {
 }
 object SchemaControl {
   
-  @scala.inline
-  def apply(): SchemaControl = {
+  inline def apply(): SchemaControl = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaControl]
   }
   
-  @scala.inline
-  implicit class SchemaControlMutableBuilder[Self <: SchemaControl] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaControl](x: Self) {
     
-    @scala.inline
-    def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+    inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
   }
 }

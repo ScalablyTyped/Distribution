@@ -51,7 +51,7 @@ object editorMod {
     /**
       * Gets or sets the initial text.
       */
-    var currentText: String = js.native
+    /* protected */ var currentText: String = js.native
     
     /**
       * Resolves the value of the prompt.
@@ -61,7 +61,7 @@ object editorMod {
     /**
       * Gets or sets an object for subscribing to the editor-result.
       */
-    var editorResult: Subject[String] = js.native
+    /* protected */ var editorResult: Subject[String] = js.native
     
     /**
       * Closes the external editor.
@@ -77,7 +77,7 @@ object editorMod {
     /**
       * Gets or sets a subscription to the `line`-event.
       */
-    var lineSubscription: Subscription = js.native
+    /* protected */ var lineSubscription: Subscription = js.native
     
     /**
       * Handles the `success`-event of the prompt.

@@ -25,37 +25,27 @@ trait IXmlReader
 }
 object IXmlReader {
   
-  @scala.inline
-  def apply(): IXmlReader = {
+  inline def apply(): IXmlReader = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IXmlReader]
   }
   
-  @scala.inline
-  implicit class IXmlReaderMutableBuilder[Self <: IXmlReader] (val x: Self) extends AnyVal {
+  extension [Self <: IXmlReader](x: Self) {
     
-    @scala.inline
-    def setGetData(value: /* data */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
+    inline def setGetData(value: /* data */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDataUndefined: Self = StObject.set(x, "getData", js.undefined)
+    inline def setGetDataUndefined: Self = StObject.set(x, "getData", js.undefined)
     
-    @scala.inline
-    def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
+    inline def setNamespaceUndefined: Self = StObject.set(x, "namespace", js.undefined)
     
-    @scala.inline
-    def setRecord(value: String): Self = StObject.set(x, "record", value.asInstanceOf[js.Any])
+    inline def setRecord(value: String): Self = StObject.set(x, "record", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecordUndefined: Self = StObject.set(x, "record", js.undefined)
+    inline def setRecordUndefined: Self = StObject.set(x, "record", js.undefined)
     
-    @scala.inline
-    def setXmlData(value: js.Any): Self = StObject.set(x, "xmlData", value.asInstanceOf[js.Any])
+    inline def setXmlData(value: js.Any): Self = StObject.set(x, "xmlData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXmlDataUndefined: Self = StObject.set(x, "xmlData", js.undefined)
+    inline def setXmlDataUndefined: Self = StObject.set(x, "xmlData", js.undefined)
   }
 }

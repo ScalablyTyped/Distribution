@@ -21,6 +21,5 @@ object PopupEditorWrapper {
   @JSImport("ag-grid/dist/lib/main", "PopupEditorWrapper.DOM_KEY_POPUP_EDITOR_WRAPPER")
   @js.native
   def DOM_KEY_POPUP_EDITOR_WRAPPER: String = js.native
-  @scala.inline
-  def DOM_KEY_POPUP_EDITOR_WRAPPER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOM_KEY_POPUP_EDITOR_WRAPPER")(x.asInstanceOf[js.Any])
+  inline def DOM_KEY_POPUP_EDITOR_WRAPPER_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DOM_KEY_POPUP_EDITOR_WRAPPER")(x.asInstanceOf[js.Any])
 }

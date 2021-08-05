@@ -9,7 +9,7 @@ trait PositionedSkippedToken
   extends StObject
      with PositionedToken {
   
-  var _parentToken: js.Any = js.native
+  /* private */ var _parentToken: js.Any = js.native
   
   def parentToken(): PositionedToken = js.native
 }

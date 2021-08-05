@@ -11,8 +11,7 @@ trait AnyObjectSchema
      with _AnySchema
 object AnyObjectSchema {
   
-  @scala.inline
-  def apply(properties: Record[String, AnySchema], required: js.Array[String]): AnyObjectSchema = {
+  inline def apply(properties: Record[String, AnySchema], required: js.Array[String]): AnyObjectSchema = {
     val __obj = js.Dynamic.literal(properties = properties.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("object")
     __obj.asInstanceOf[AnyObjectSchema]

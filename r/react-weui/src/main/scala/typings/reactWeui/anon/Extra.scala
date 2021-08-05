@@ -10,16 +10,13 @@ trait Extra extends StObject {
 }
 object Extra {
   
-  @scala.inline
-  def apply(extra: Boolean): Extra = {
+  inline def apply(extra: Boolean): Extra = {
     val __obj = js.Dynamic.literal(extra = extra.asInstanceOf[js.Any])
     __obj.asInstanceOf[Extra]
   }
   
-  @scala.inline
-  implicit class ExtraMutableBuilder[Self <: Extra] (val x: Self) extends AnyVal {
+  extension [Self <: Extra](x: Self) {
     
-    @scala.inline
-    def setExtra(value: Boolean): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+    inline def setExtra(value: Boolean): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
   }
 }

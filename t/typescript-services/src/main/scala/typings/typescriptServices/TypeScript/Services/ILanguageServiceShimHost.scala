@@ -35,8 +35,7 @@ trait ILanguageServiceShimHost
 }
 object ILanguageServiceShimHost {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     debug: () => Boolean,
     directoryExists: String => Boolean,
     error: () => Boolean,
@@ -60,43 +59,30 @@ object ILanguageServiceShimHost {
     __obj.asInstanceOf[ILanguageServiceShimHost]
   }
   
-  @scala.inline
-  implicit class ILanguageServiceShimHostMutableBuilder[Self <: ILanguageServiceShimHost] (val x: Self) extends AnyVal {
+  extension [Self <: ILanguageServiceShimHost](x: Self) {
     
-    @scala.inline
-    def setDirectoryExists(value: String => Boolean): Self = StObject.set(x, "directoryExists", js.Any.fromFunction1(value))
+    inline def setDirectoryExists(value: String => Boolean): Self = StObject.set(x, "directoryExists", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFileExists(value: String => Boolean): Self = StObject.set(x, "fileExists", js.Any.fromFunction1(value))
+    inline def setFileExists(value: String => Boolean): Self = StObject.set(x, "fileExists", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetCompilationSettings(value: () => String): Self = StObject.set(x, "getCompilationSettings", js.Any.fromFunction0(value))
+    inline def setGetCompilationSettings(value: () => String): Self = StObject.set(x, "getCompilationSettings", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDiagnosticsObject(value: () => ILanguageServicesDiagnostics): Self = StObject.set(x, "getDiagnosticsObject", js.Any.fromFunction0(value))
+    inline def setGetDiagnosticsObject(value: () => ILanguageServicesDiagnostics): Self = StObject.set(x, "getDiagnosticsObject", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetLocalizedDiagnosticMessages(value: () => String): Self = StObject.set(x, "getLocalizedDiagnosticMessages", js.Any.fromFunction0(value))
+    inline def setGetLocalizedDiagnosticMessages(value: () => String): Self = StObject.set(x, "getLocalizedDiagnosticMessages", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetParentDirectory(value: String => String): Self = StObject.set(x, "getParentDirectory", js.Any.fromFunction1(value))
+    inline def setGetParentDirectory(value: String => String): Self = StObject.set(x, "getParentDirectory", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetScriptByteOrderMark(value: String => Double): Self = StObject.set(x, "getScriptByteOrderMark", js.Any.fromFunction1(value))
+    inline def setGetScriptByteOrderMark(value: String => Double): Self = StObject.set(x, "getScriptByteOrderMark", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetScriptFileNames(value: () => String): Self = StObject.set(x, "getScriptFileNames", js.Any.fromFunction0(value))
+    inline def setGetScriptFileNames(value: () => String): Self = StObject.set(x, "getScriptFileNames", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetScriptIsOpen(value: String => Boolean): Self = StObject.set(x, "getScriptIsOpen", js.Any.fromFunction1(value))
+    inline def setGetScriptIsOpen(value: String => Boolean): Self = StObject.set(x, "getScriptIsOpen", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetScriptSnapshot(value: String => IScriptSnapshotShim): Self = StObject.set(x, "getScriptSnapshot", js.Any.fromFunction1(value))
+    inline def setGetScriptSnapshot(value: String => IScriptSnapshotShim): Self = StObject.set(x, "getScriptSnapshot", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetScriptVersion(value: String => Double): Self = StObject.set(x, "getScriptVersion", js.Any.fromFunction1(value))
+    inline def setGetScriptVersion(value: String => Double): Self = StObject.set(x, "getScriptVersion", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setResolveRelativePath(value: (String, String) => String): Self = StObject.set(x, "resolveRelativePath", js.Any.fromFunction2(value))
+    inline def setResolveRelativePath(value: (String, String) => String): Self = StObject.set(x, "resolveRelativePath", js.Any.fromFunction2(value))
   }
 }

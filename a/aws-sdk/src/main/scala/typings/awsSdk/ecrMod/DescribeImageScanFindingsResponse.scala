@@ -35,49 +35,35 @@ trait DescribeImageScanFindingsResponse extends StObject {
 }
 object DescribeImageScanFindingsResponse {
   
-  @scala.inline
-  def apply(): DescribeImageScanFindingsResponse = {
+  inline def apply(): DescribeImageScanFindingsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeImageScanFindingsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeImageScanFindingsResponseMutableBuilder[Self <: DescribeImageScanFindingsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeImageScanFindingsResponse](x: Self) {
     
-    @scala.inline
-    def setImageId(value: ImageIdentifier): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
+    inline def setImageId(value: ImageIdentifier): Self = StObject.set(x, "imageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageIdUndefined: Self = StObject.set(x, "imageId", js.undefined)
+    inline def setImageIdUndefined: Self = StObject.set(x, "imageId", js.undefined)
     
-    @scala.inline
-    def setImageScanFindings(value: ImageScanFindings): Self = StObject.set(x, "imageScanFindings", value.asInstanceOf[js.Any])
+    inline def setImageScanFindings(value: ImageScanFindings): Self = StObject.set(x, "imageScanFindings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageScanFindingsUndefined: Self = StObject.set(x, "imageScanFindings", js.undefined)
+    inline def setImageScanFindingsUndefined: Self = StObject.set(x, "imageScanFindings", js.undefined)
     
-    @scala.inline
-    def setImageScanStatus(value: ImageScanStatus): Self = StObject.set(x, "imageScanStatus", value.asInstanceOf[js.Any])
+    inline def setImageScanStatus(value: ImageScanStatus): Self = StObject.set(x, "imageScanStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImageScanStatusUndefined: Self = StObject.set(x, "imageScanStatus", js.undefined)
+    inline def setImageScanStatusUndefined: Self = StObject.set(x, "imageScanStatus", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
+    inline def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
+    inline def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
     
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
+    inline def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
   }
 }

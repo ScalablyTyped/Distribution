@@ -12,19 +12,15 @@ trait LocationsResource extends StObject {
 }
 object LocationsResource {
   
-  @scala.inline
-  def apply(insightTypes: InsightTypesResource, recommenders: RecommendersResource): LocationsResource = {
+  inline def apply(insightTypes: InsightTypesResource, recommenders: RecommendersResource): LocationsResource = {
     val __obj = js.Dynamic.literal(insightTypes = insightTypes.asInstanceOf[js.Any], recommenders = recommenders.asInstanceOf[js.Any])
     __obj.asInstanceOf[LocationsResource]
   }
   
-  @scala.inline
-  implicit class LocationsResourceMutableBuilder[Self <: LocationsResource] (val x: Self) extends AnyVal {
+  extension [Self <: LocationsResource](x: Self) {
     
-    @scala.inline
-    def setInsightTypes(value: InsightTypesResource): Self = StObject.set(x, "insightTypes", value.asInstanceOf[js.Any])
+    inline def setInsightTypes(value: InsightTypesResource): Self = StObject.set(x, "insightTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecommenders(value: RecommendersResource): Self = StObject.set(x, "recommenders", value.asInstanceOf[js.Any])
+    inline def setRecommenders(value: RecommendersResource): Self = StObject.set(x, "recommenders", value.asInstanceOf[js.Any])
   }
 }

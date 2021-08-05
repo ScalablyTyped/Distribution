@@ -10,6 +10,5 @@ object formatjsEcma402AbstractUnicodeExtensionValueMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def UnicodeExtensionValue(`extension`: String, key: String): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("UnicodeExtensionValue")(`extension`.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  inline def UnicodeExtensionValue(`extension`: String, key: String): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("UnicodeExtensionValue")(`extension`.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
 }

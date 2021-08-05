@@ -26,8 +26,7 @@ object Power {
     @JSGlobal("Windows.Devices.Power.Battery.aggregateBattery")
     @js.native
     def aggregateBattery: typings.winrtUwp.Windows.Devices.Power.Battery = js.native
-    @scala.inline
-    def aggregateBattery_=(x: typings.winrtUwp.Windows.Devices.Power.Battery): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("aggregateBattery")(x.asInstanceOf[js.Any])
+    inline def aggregateBattery_=(x: typings.winrtUwp.Windows.Devices.Power.Battery): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("aggregateBattery")(x.asInstanceOf[js.Any])
     
     /**
       * Gets a Battery object that represents an individual battery controller connected to the device.
@@ -35,16 +34,14 @@ object Power {
       * @return A Battery object that corresponds to the specified battery controller.
       */
     /* static member */
-    @scala.inline
-    def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Power.Battery] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Power.Battery]]
+    inline def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Power.Battery] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Power.Battery]]
     
     /**
       * Gets an Advanced Query Syntax (AQS) string that can be used to find all battery controllers that are connected to the device.
       * @return An AQS string that can be used to find all battery controllers connected to the device.
       */
     /* static member */
-    @scala.inline
-    def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
+    inline def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
   }
   
   /** Provides properties that indicate the charge, capacity, and status of the battery. For more info, see Get battery information. */

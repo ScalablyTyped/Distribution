@@ -13,19 +13,15 @@ trait EgressAccessLogs extends StObject {
 }
 object EgressAccessLogs {
   
-  @scala.inline
-  def apply(): EgressAccessLogs = {
+  inline def apply(): EgressAccessLogs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EgressAccessLogs]
   }
   
-  @scala.inline
-  implicit class EgressAccessLogsMutableBuilder[Self <: EgressAccessLogs] (val x: Self) extends AnyVal {
+  extension [Self <: EgressAccessLogs](x: Self) {
     
-    @scala.inline
-    def setLogGroupName(value: string): Self = StObject.set(x, "LogGroupName", value.asInstanceOf[js.Any])
+    inline def setLogGroupName(value: string): Self = StObject.set(x, "LogGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogGroupNameUndefined: Self = StObject.set(x, "LogGroupName", js.undefined)
+    inline def setLogGroupNameUndefined: Self = StObject.set(x, "LogGroupName", js.undefined)
   }
 }

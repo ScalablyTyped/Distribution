@@ -26,21 +26,17 @@ trait IXTemplate
 }
 object IXTemplate {
   
-  @scala.inline
-  def apply(): IXTemplate = {
+  inline def apply(): IXTemplate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IXTemplate]
   }
   
-  @scala.inline
-  implicit class IXTemplateMutableBuilder[Self <: IXTemplate] (val x: Self) extends AnyVal {
+  extension [Self <: IXTemplate](x: Self) {
     
-    @scala.inline
-    def setApplyOut(
+    inline def setApplyOut(
       value: (/* values */ js.UndefOr[js.Any], /* out */ js.UndefOr[Array], /* parent */ js.UndefOr[js.Any]) => Array
     ): Self = StObject.set(x, "applyOut", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setApplyOutUndefined: Self = StObject.set(x, "applyOut", js.undefined)
+    inline def setApplyOutUndefined: Self = StObject.set(x, "applyOut", js.undefined)
   }
 }

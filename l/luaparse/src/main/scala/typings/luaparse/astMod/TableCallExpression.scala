@@ -15,20 +15,16 @@ trait TableCallExpression
 }
 object TableCallExpression {
   
-  @scala.inline
-  def apply(arguments: Expression, base: Expression): TableCallExpression = {
+  inline def apply(arguments: Expression, base: Expression): TableCallExpression = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TableCallExpression")
     __obj.asInstanceOf[TableCallExpression]
   }
   
-  @scala.inline
-  implicit class TableCallExpressionMutableBuilder[Self <: TableCallExpression] (val x: Self) extends AnyVal {
+  extension [Self <: TableCallExpression](x: Self) {
     
-    @scala.inline
-    def setArguments(value: Expression): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    inline def setArguments(value: Expression): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBase(value: Expression): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+    inline def setBase(value: Expression): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
   }
 }

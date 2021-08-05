@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "karma-jsdom-launcher"
-version := "8.0-dt-20200327Z-8f7901"
+version := "8.0-dt-20200327Z-1731ad"
 scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

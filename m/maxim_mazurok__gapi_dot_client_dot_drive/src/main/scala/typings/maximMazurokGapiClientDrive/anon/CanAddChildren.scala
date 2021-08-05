@@ -62,121 +62,83 @@ trait CanAddChildren extends StObject {
 }
 object CanAddChildren {
   
-  @scala.inline
-  def apply(): CanAddChildren = {
+  inline def apply(): CanAddChildren = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CanAddChildren]
   }
   
-  @scala.inline
-  implicit class CanAddChildrenMutableBuilder[Self <: CanAddChildren] (val x: Self) extends AnyVal {
+  extension [Self <: CanAddChildren](x: Self) {
     
-    @scala.inline
-    def setCanAddChildren(value: Boolean): Self = StObject.set(x, "canAddChildren", value.asInstanceOf[js.Any])
+    inline def setCanAddChildren(value: Boolean): Self = StObject.set(x, "canAddChildren", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanAddChildrenUndefined: Self = StObject.set(x, "canAddChildren", js.undefined)
+    inline def setCanAddChildrenUndefined: Self = StObject.set(x, "canAddChildren", js.undefined)
     
-    @scala.inline
-    def setCanChangeCopyRequiresWriterPermissionRestriction(value: Boolean): Self = StObject.set(x, "canChangeCopyRequiresWriterPermissionRestriction", value.asInstanceOf[js.Any])
+    inline def setCanChangeCopyRequiresWriterPermissionRestriction(value: Boolean): Self = StObject.set(x, "canChangeCopyRequiresWriterPermissionRestriction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanChangeCopyRequiresWriterPermissionRestrictionUndefined: Self = StObject.set(x, "canChangeCopyRequiresWriterPermissionRestriction", js.undefined)
+    inline def setCanChangeCopyRequiresWriterPermissionRestrictionUndefined: Self = StObject.set(x, "canChangeCopyRequiresWriterPermissionRestriction", js.undefined)
     
-    @scala.inline
-    def setCanChangeDomainUsersOnlyRestriction(value: Boolean): Self = StObject.set(x, "canChangeDomainUsersOnlyRestriction", value.asInstanceOf[js.Any])
+    inline def setCanChangeDomainUsersOnlyRestriction(value: Boolean): Self = StObject.set(x, "canChangeDomainUsersOnlyRestriction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanChangeDomainUsersOnlyRestrictionUndefined: Self = StObject.set(x, "canChangeDomainUsersOnlyRestriction", js.undefined)
+    inline def setCanChangeDomainUsersOnlyRestrictionUndefined: Self = StObject.set(x, "canChangeDomainUsersOnlyRestriction", js.undefined)
     
-    @scala.inline
-    def setCanChangeDriveBackground(value: Boolean): Self = StObject.set(x, "canChangeDriveBackground", value.asInstanceOf[js.Any])
+    inline def setCanChangeDriveBackground(value: Boolean): Self = StObject.set(x, "canChangeDriveBackground", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanChangeDriveBackgroundUndefined: Self = StObject.set(x, "canChangeDriveBackground", js.undefined)
+    inline def setCanChangeDriveBackgroundUndefined: Self = StObject.set(x, "canChangeDriveBackground", js.undefined)
     
-    @scala.inline
-    def setCanChangeDriveMembersOnlyRestriction(value: Boolean): Self = StObject.set(x, "canChangeDriveMembersOnlyRestriction", value.asInstanceOf[js.Any])
+    inline def setCanChangeDriveMembersOnlyRestriction(value: Boolean): Self = StObject.set(x, "canChangeDriveMembersOnlyRestriction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanChangeDriveMembersOnlyRestrictionUndefined: Self = StObject.set(x, "canChangeDriveMembersOnlyRestriction", js.undefined)
+    inline def setCanChangeDriveMembersOnlyRestrictionUndefined: Self = StObject.set(x, "canChangeDriveMembersOnlyRestriction", js.undefined)
     
-    @scala.inline
-    def setCanComment(value: Boolean): Self = StObject.set(x, "canComment", value.asInstanceOf[js.Any])
+    inline def setCanComment(value: Boolean): Self = StObject.set(x, "canComment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanCommentUndefined: Self = StObject.set(x, "canComment", js.undefined)
+    inline def setCanCommentUndefined: Self = StObject.set(x, "canComment", js.undefined)
     
-    @scala.inline
-    def setCanCopy(value: Boolean): Self = StObject.set(x, "canCopy", value.asInstanceOf[js.Any])
+    inline def setCanCopy(value: Boolean): Self = StObject.set(x, "canCopy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanCopyUndefined: Self = StObject.set(x, "canCopy", js.undefined)
+    inline def setCanCopyUndefined: Self = StObject.set(x, "canCopy", js.undefined)
     
-    @scala.inline
-    def setCanDeleteChildren(value: Boolean): Self = StObject.set(x, "canDeleteChildren", value.asInstanceOf[js.Any])
+    inline def setCanDeleteChildren(value: Boolean): Self = StObject.set(x, "canDeleteChildren", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanDeleteChildrenUndefined: Self = StObject.set(x, "canDeleteChildren", js.undefined)
+    inline def setCanDeleteChildrenUndefined: Self = StObject.set(x, "canDeleteChildren", js.undefined)
     
-    @scala.inline
-    def setCanDeleteDrive(value: Boolean): Self = StObject.set(x, "canDeleteDrive", value.asInstanceOf[js.Any])
+    inline def setCanDeleteDrive(value: Boolean): Self = StObject.set(x, "canDeleteDrive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanDeleteDriveUndefined: Self = StObject.set(x, "canDeleteDrive", js.undefined)
+    inline def setCanDeleteDriveUndefined: Self = StObject.set(x, "canDeleteDrive", js.undefined)
     
-    @scala.inline
-    def setCanDownload(value: Boolean): Self = StObject.set(x, "canDownload", value.asInstanceOf[js.Any])
+    inline def setCanDownload(value: Boolean): Self = StObject.set(x, "canDownload", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanDownloadUndefined: Self = StObject.set(x, "canDownload", js.undefined)
+    inline def setCanDownloadUndefined: Self = StObject.set(x, "canDownload", js.undefined)
     
-    @scala.inline
-    def setCanEdit(value: Boolean): Self = StObject.set(x, "canEdit", value.asInstanceOf[js.Any])
+    inline def setCanEdit(value: Boolean): Self = StObject.set(x, "canEdit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanEditUndefined: Self = StObject.set(x, "canEdit", js.undefined)
+    inline def setCanEditUndefined: Self = StObject.set(x, "canEdit", js.undefined)
     
-    @scala.inline
-    def setCanListChildren(value: Boolean): Self = StObject.set(x, "canListChildren", value.asInstanceOf[js.Any])
+    inline def setCanListChildren(value: Boolean): Self = StObject.set(x, "canListChildren", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanListChildrenUndefined: Self = StObject.set(x, "canListChildren", js.undefined)
+    inline def setCanListChildrenUndefined: Self = StObject.set(x, "canListChildren", js.undefined)
     
-    @scala.inline
-    def setCanManageMembers(value: Boolean): Self = StObject.set(x, "canManageMembers", value.asInstanceOf[js.Any])
+    inline def setCanManageMembers(value: Boolean): Self = StObject.set(x, "canManageMembers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanManageMembersUndefined: Self = StObject.set(x, "canManageMembers", js.undefined)
+    inline def setCanManageMembersUndefined: Self = StObject.set(x, "canManageMembers", js.undefined)
     
-    @scala.inline
-    def setCanReadRevisions(value: Boolean): Self = StObject.set(x, "canReadRevisions", value.asInstanceOf[js.Any])
+    inline def setCanReadRevisions(value: Boolean): Self = StObject.set(x, "canReadRevisions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanReadRevisionsUndefined: Self = StObject.set(x, "canReadRevisions", js.undefined)
+    inline def setCanReadRevisionsUndefined: Self = StObject.set(x, "canReadRevisions", js.undefined)
     
-    @scala.inline
-    def setCanRename(value: Boolean): Self = StObject.set(x, "canRename", value.asInstanceOf[js.Any])
+    inline def setCanRename(value: Boolean): Self = StObject.set(x, "canRename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanRenameDrive(value: Boolean): Self = StObject.set(x, "canRenameDrive", value.asInstanceOf[js.Any])
+    inline def setCanRenameDrive(value: Boolean): Self = StObject.set(x, "canRenameDrive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanRenameDriveUndefined: Self = StObject.set(x, "canRenameDrive", js.undefined)
+    inline def setCanRenameDriveUndefined: Self = StObject.set(x, "canRenameDrive", js.undefined)
     
-    @scala.inline
-    def setCanRenameUndefined: Self = StObject.set(x, "canRename", js.undefined)
+    inline def setCanRenameUndefined: Self = StObject.set(x, "canRename", js.undefined)
     
-    @scala.inline
-    def setCanShare(value: Boolean): Self = StObject.set(x, "canShare", value.asInstanceOf[js.Any])
+    inline def setCanShare(value: Boolean): Self = StObject.set(x, "canShare", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanShareUndefined: Self = StObject.set(x, "canShare", js.undefined)
+    inline def setCanShareUndefined: Self = StObject.set(x, "canShare", js.undefined)
     
-    @scala.inline
-    def setCanTrashChildren(value: Boolean): Self = StObject.set(x, "canTrashChildren", value.asInstanceOf[js.Any])
+    inline def setCanTrashChildren(value: Boolean): Self = StObject.set(x, "canTrashChildren", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanTrashChildrenUndefined: Self = StObject.set(x, "canTrashChildren", js.undefined)
+    inline def setCanTrashChildrenUndefined: Self = StObject.set(x, "canTrashChildren", js.undefined)
   }
 }

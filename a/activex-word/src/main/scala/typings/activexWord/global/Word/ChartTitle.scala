@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.ChartTitle")
 @js.native
-class ChartTitle protected ()
+/* private */ class ChartTitle ()
   extends StObject
      with typings.activexWord.Word.ChartTitle

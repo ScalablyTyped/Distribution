@@ -28,31 +28,23 @@ trait CopySnapshotMessage extends StObject {
 }
 object CopySnapshotMessage {
   
-  @scala.inline
-  def apply(SourceSnapshotName: String, TargetSnapshotName: String): CopySnapshotMessage = {
+  inline def apply(SourceSnapshotName: String, TargetSnapshotName: String): CopySnapshotMessage = {
     val __obj = js.Dynamic.literal(SourceSnapshotName = SourceSnapshotName.asInstanceOf[js.Any], TargetSnapshotName = TargetSnapshotName.asInstanceOf[js.Any])
     __obj.asInstanceOf[CopySnapshotMessage]
   }
   
-  @scala.inline
-  implicit class CopySnapshotMessageMutableBuilder[Self <: CopySnapshotMessage] (val x: Self) extends AnyVal {
+  extension [Self <: CopySnapshotMessage](x: Self) {
     
-    @scala.inline
-    def setKmsKeyId(value: String): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
+    inline def setKmsKeyId(value: String): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
+    inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
-    @scala.inline
-    def setSourceSnapshotName(value: String): Self = StObject.set(x, "SourceSnapshotName", value.asInstanceOf[js.Any])
+    inline def setSourceSnapshotName(value: String): Self = StObject.set(x, "SourceSnapshotName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetBucket(value: String): Self = StObject.set(x, "TargetBucket", value.asInstanceOf[js.Any])
+    inline def setTargetBucket(value: String): Self = StObject.set(x, "TargetBucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetBucketUndefined: Self = StObject.set(x, "TargetBucket", js.undefined)
+    inline def setTargetBucketUndefined: Self = StObject.set(x, "TargetBucket", js.undefined)
     
-    @scala.inline
-    def setTargetSnapshotName(value: String): Self = StObject.set(x, "TargetSnapshotName", value.asInstanceOf[js.Any])
+    inline def setTargetSnapshotName(value: String): Self = StObject.set(x, "TargetSnapshotName", value.asInstanceOf[js.Any])
   }
 }

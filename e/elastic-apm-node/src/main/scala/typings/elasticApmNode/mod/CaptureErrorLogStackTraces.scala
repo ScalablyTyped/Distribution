@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CaptureErrorLogStackTraces extends StObject
 object CaptureErrorLogStackTraces {
   
-  @scala.inline
-  def always: typings.elasticApmNode.elasticApmNodeStrings.always = "always".asInstanceOf[typings.elasticApmNode.elasticApmNodeStrings.always]
+  inline def always: typings.elasticApmNode.elasticApmNodeStrings.always = "always".asInstanceOf[typings.elasticApmNode.elasticApmNodeStrings.always]
   
-  @scala.inline
-  def messages: typings.elasticApmNode.elasticApmNodeStrings.messages = "messages".asInstanceOf[typings.elasticApmNode.elasticApmNodeStrings.messages]
+  inline def messages: typings.elasticApmNode.elasticApmNodeStrings.messages = "messages".asInstanceOf[typings.elasticApmNode.elasticApmNodeStrings.messages]
   
-  @scala.inline
-  def never: typings.elasticApmNode.elasticApmNodeStrings.never = "never".asInstanceOf[typings.elasticApmNode.elasticApmNodeStrings.never]
+  inline def never: typings.elasticApmNode.elasticApmNodeStrings.never = "never".asInstanceOf[typings.elasticApmNode.elasticApmNodeStrings.never]
 }

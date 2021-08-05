@@ -27,8 +27,7 @@ trait SpeechModel extends StObject {
 }
 object SpeechModel {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     description: String,
     language: String,
     name: String,
@@ -40,25 +39,18 @@ object SpeechModel {
     __obj.asInstanceOf[SpeechModel]
   }
   
-  @scala.inline
-  implicit class SpeechModelMutableBuilder[Self <: SpeechModel] (val x: Self) extends AnyVal {
+  extension [Self <: SpeechModel](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
+    inline def setRate(value: Double): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupported_features(value: SupportedFeatures): Self = StObject.set(x, "supported_features", value.asInstanceOf[js.Any])
+    inline def setSupported_features(value: SupportedFeatures): Self = StObject.set(x, "supported_features", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

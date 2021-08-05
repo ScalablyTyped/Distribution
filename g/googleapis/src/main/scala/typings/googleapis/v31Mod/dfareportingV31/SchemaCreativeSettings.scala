@@ -23,25 +23,19 @@ trait SchemaCreativeSettings extends StObject {
 }
 object SchemaCreativeSettings {
   
-  @scala.inline
-  def apply(): SchemaCreativeSettings = {
+  inline def apply(): SchemaCreativeSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCreativeSettings]
   }
   
-  @scala.inline
-  implicit class SchemaCreativeSettingsMutableBuilder[Self <: SchemaCreativeSettings] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCreativeSettings](x: Self) {
     
-    @scala.inline
-    def setIFrameFooter(value: String): Self = StObject.set(x, "iFrameFooter", value.asInstanceOf[js.Any])
+    inline def setIFrameFooter(value: String): Self = StObject.set(x, "iFrameFooter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIFrameFooterUndefined: Self = StObject.set(x, "iFrameFooter", js.undefined)
+    inline def setIFrameFooterUndefined: Self = StObject.set(x, "iFrameFooter", js.undefined)
     
-    @scala.inline
-    def setIFrameHeader(value: String): Self = StObject.set(x, "iFrameHeader", value.asInstanceOf[js.Any])
+    inline def setIFrameHeader(value: String): Self = StObject.set(x, "iFrameHeader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIFrameHeaderUndefined: Self = StObject.set(x, "iFrameHeader", js.undefined)
+    inline def setIFrameHeaderUndefined: Self = StObject.set(x, "iFrameHeader", js.undefined)
   }
 }

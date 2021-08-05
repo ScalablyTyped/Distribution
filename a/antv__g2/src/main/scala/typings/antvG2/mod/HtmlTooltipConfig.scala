@@ -40,85 +40,59 @@ trait HtmlTooltipConfig
 }
 object HtmlTooltipConfig {
   
-  @scala.inline
-  def apply(): HtmlTooltipConfig = {
+  inline def apply(): HtmlTooltipConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HtmlTooltipConfig]
   }
   
-  @scala.inline
-  implicit class HtmlTooltipConfigMutableBuilder[Self <: HtmlTooltipConfig] (val x: Self) extends AnyVal {
+  extension [Self <: HtmlTooltipConfig](x: Self) {
     
-    @scala.inline
-    def setContainerTpl(value: String): Self = StObject.set(x, "containerTpl", value.asInstanceOf[js.Any])
+    inline def setContainerTpl(value: String): Self = StObject.set(x, "containerTpl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainerTplUndefined: Self = StObject.set(x, "containerTpl", js.undefined)
+    inline def setContainerTplUndefined: Self = StObject.set(x, "containerTpl", js.undefined)
     
-    @scala.inline
-    def setEnterable(value: Boolean): Self = StObject.set(x, "enterable", value.asInstanceOf[js.Any])
+    inline def setEnterable(value: Boolean): Self = StObject.set(x, "enterable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnterableUndefined: Self = StObject.set(x, "enterable", js.undefined)
+    inline def setEnterableUndefined: Self = StObject.set(x, "enterable", js.undefined)
     
-    @scala.inline
-    def `setG2-tooltip`(value: Record[String, js.Any]): Self = StObject.set(x, "g2-tooltip", value.asInstanceOf[js.Any])
+    inline def `setG2-tooltip`(value: Record[String, js.Any]): Self = StObject.set(x, "g2-tooltip", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setG2-tooltip-list`(value: Record[String, js.Any]): Self = StObject.set(x, "g2-tooltip-list", value.asInstanceOf[js.Any])
+    inline def `setG2-tooltip-list`(value: Record[String, js.Any]): Self = StObject.set(x, "g2-tooltip-list", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setG2-tooltip-list-item`(value: Record[String, js.Any]): Self = StObject.set(x, "g2-tooltip-list-item", value.asInstanceOf[js.Any])
+    inline def `setG2-tooltip-list-item`(value: Record[String, js.Any]): Self = StObject.set(x, "g2-tooltip-list-item", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setG2-tooltip-list-itemUndefined`: Self = StObject.set(x, "g2-tooltip-list-item", js.undefined)
+    inline def `setG2-tooltip-list-itemUndefined`: Self = StObject.set(x, "g2-tooltip-list-item", js.undefined)
     
-    @scala.inline
-    def `setG2-tooltip-listUndefined`: Self = StObject.set(x, "g2-tooltip-list", js.undefined)
+    inline def `setG2-tooltip-listUndefined`: Self = StObject.set(x, "g2-tooltip-list", js.undefined)
     
-    @scala.inline
-    def `setG2-tooltip-marker`(value: Record[String, js.Any]): Self = StObject.set(x, "g2-tooltip-marker", value.asInstanceOf[js.Any])
+    inline def `setG2-tooltip-marker`(value: Record[String, js.Any]): Self = StObject.set(x, "g2-tooltip-marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setG2-tooltip-markerUndefined`: Self = StObject.set(x, "g2-tooltip-marker", js.undefined)
+    inline def `setG2-tooltip-markerUndefined`: Self = StObject.set(x, "g2-tooltip-marker", js.undefined)
     
-    @scala.inline
-    def `setG2-tooltip-title`(value: Record[String, js.Any]): Self = StObject.set(x, "g2-tooltip-title", value.asInstanceOf[js.Any])
+    inline def `setG2-tooltip-title`(value: Record[String, js.Any]): Self = StObject.set(x, "g2-tooltip-title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setG2-tooltip-titleUndefined`: Self = StObject.set(x, "g2-tooltip-title", js.undefined)
+    inline def `setG2-tooltip-titleUndefined`: Self = StObject.set(x, "g2-tooltip-title", js.undefined)
     
-    @scala.inline
-    def `setG2-tooltip-value`(value: Record[String, js.Any]): Self = StObject.set(x, "g2-tooltip-value", value.asInstanceOf[js.Any])
+    inline def `setG2-tooltip-value`(value: Record[String, js.Any]): Self = StObject.set(x, "g2-tooltip-value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def `setG2-tooltip-valueUndefined`: Self = StObject.set(x, "g2-tooltip-value", js.undefined)
+    inline def `setG2-tooltip-valueUndefined`: Self = StObject.set(x, "g2-tooltip-value", js.undefined)
     
-    @scala.inline
-    def `setG2-tooltipUndefined`: Self = StObject.set(x, "g2-tooltip", js.undefined)
+    inline def `setG2-tooltipUndefined`: Self = StObject.set(x, "g2-tooltip", js.undefined)
     
-    @scala.inline
-    def setHtmlContent(value: (/* title */ String, /* items */ js.Array[TooltipItem]) => String): Self = StObject.set(x, "htmlContent", js.Any.fromFunction2(value))
+    inline def setHtmlContent(value: (/* title */ String, /* items */ js.Array[TooltipItem]) => String): Self = StObject.set(x, "htmlContent", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setHtmlContentUndefined: Self = StObject.set(x, "htmlContent", js.undefined)
+    inline def setHtmlContentUndefined: Self = StObject.set(x, "htmlContent", js.undefined)
     
-    @scala.inline
-    def setItemTpl(value: String): Self = StObject.set(x, "itemTpl", value.asInstanceOf[js.Any])
+    inline def setItemTpl(value: String): Self = StObject.set(x, "itemTpl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemTplUndefined: Self = StObject.set(x, "itemTpl", js.undefined)
+    inline def setItemTplUndefined: Self = StObject.set(x, "itemTpl", js.undefined)
     
-    @scala.inline
-    def setType(value: default): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: default): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUseHtml(value: `true`): Self = StObject.set(x, "useHtml", value.asInstanceOf[js.Any])
+    inline def setUseHtml(value: `true`): Self = StObject.set(x, "useHtml", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseHtmlUndefined: Self = StObject.set(x, "useHtml", js.undefined)
+    inline def setUseHtmlUndefined: Self = StObject.set(x, "useHtml", js.undefined)
   }
 }

@@ -7,10 +7,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
-  @scala.inline
-  def apply(options: IOptions): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  inline def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
+  inline def apply(options: IOptions): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
   @JSImport("gulp-less", JSImport.Namespace)
   @js.native
@@ -28,44 +26,32 @@ object mod {
   }
   object IOptions {
     
-    @scala.inline
-    def apply(): IOptions = {
+    inline def apply(): IOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IOptions]
     }
     
-    @scala.inline
-    implicit class IOptionsMutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IOptions](x: Self) {
       
-      @scala.inline
-      def setModifyVars(value: js.Object): Self = StObject.set(x, "modifyVars", value.asInstanceOf[js.Any])
+      inline def setModifyVars(value: js.Object): Self = StObject.set(x, "modifyVars", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModifyVarsUndefined: Self = StObject.set(x, "modifyVars", js.undefined)
+      inline def setModifyVarsUndefined: Self = StObject.set(x, "modifyVars", js.undefined)
       
-      @scala.inline
-      def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
+      inline def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
+      inline def setPathsUndefined: Self = StObject.set(x, "paths", js.undefined)
       
-      @scala.inline
-      def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
+      inline def setPathsVarargs(value: String*): Self = StObject.set(x, "paths", js.Array(value :_*))
       
-      @scala.inline
-      def setPlugins(value: js.Array[js.Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Array[js.Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      @scala.inline
-      def setPluginsVarargs(value: js.Any*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: js.Any*): Self = StObject.set(x, "plugins", js.Array(value :_*))
       
-      @scala.inline
-      def setRelativeUrls(value: Boolean): Self = StObject.set(x, "relativeUrls", value.asInstanceOf[js.Any])
+      inline def setRelativeUrls(value: Boolean): Self = StObject.set(x, "relativeUrls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeUrlsUndefined: Self = StObject.set(x, "relativeUrls", js.undefined)
+      inline def setRelativeUrlsUndefined: Self = StObject.set(x, "relativeUrls", js.undefined)
     }
   }
 }

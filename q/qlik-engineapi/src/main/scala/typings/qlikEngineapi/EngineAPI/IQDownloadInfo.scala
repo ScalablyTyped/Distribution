@@ -18,19 +18,15 @@ trait IQDownloadInfo extends StObject {
 }
 object IQDownloadInfo {
   
-  @scala.inline
-  def apply(qFileSize: Double, qUrl: String): IQDownloadInfo = {
+  inline def apply(qFileSize: Double, qUrl: String): IQDownloadInfo = {
     val __obj = js.Dynamic.literal(qFileSize = qFileSize.asInstanceOf[js.Any], qUrl = qUrl.asInstanceOf[js.Any])
     __obj.asInstanceOf[IQDownloadInfo]
   }
   
-  @scala.inline
-  implicit class IQDownloadInfoMutableBuilder[Self <: IQDownloadInfo] (val x: Self) extends AnyVal {
+  extension [Self <: IQDownloadInfo](x: Self) {
     
-    @scala.inline
-    def setQFileSize(value: Double): Self = StObject.set(x, "qFileSize", value.asInstanceOf[js.Any])
+    inline def setQFileSize(value: Double): Self = StObject.set(x, "qFileSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQUrl(value: String): Self = StObject.set(x, "qUrl", value.asInstanceOf[js.Any])
+    inline def setQUrl(value: String): Self = StObject.set(x, "qUrl", value.asInstanceOf[js.Any])
   }
 }

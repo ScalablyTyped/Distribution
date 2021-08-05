@@ -11,6 +11,5 @@ object stringifyMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(token: js.Array[js.Array[Selector]]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(token.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def default(token: js.Array[js.Array[Selector]]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(token.asInstanceOf[js.Any]).asInstanceOf[String]
 }

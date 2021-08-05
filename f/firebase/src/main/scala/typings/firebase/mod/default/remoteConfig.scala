@@ -24,10 +24,8 @@ object remoteConfig {
     *
     * @param app The app to create a Remote Config service for. If not passed, uses the default app.
     */
-  @scala.inline
-  def apply(): typings.firebase.mod.firebase.remoteConfig.RemoteConfig = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.firebase.mod.firebase.remoteConfig.RemoteConfig]
-  @scala.inline
-  def apply(app: App): typings.firebase.mod.firebase.remoteConfig.RemoteConfig = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.remoteConfig.RemoteConfig]
+  inline def apply(): typings.firebase.mod.firebase.remoteConfig.RemoteConfig = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.firebase.mod.firebase.remoteConfig.RemoteConfig]
+  inline def apply(app: App): typings.firebase.mod.firebase.remoteConfig.RemoteConfig = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.remoteConfig.RemoteConfig]
   
   @JSImport("firebase", "default.remoteConfig")
   @js.native
@@ -42,17 +40,13 @@ object remoteConfig {
   trait FetchStatus extends StObject
   object FetchStatus {
     
-    @scala.inline
-    def failure: typings.firebase.firebaseStrings.failure = "failure".asInstanceOf[typings.firebase.firebaseStrings.failure]
+    inline def failure: typings.firebase.firebaseStrings.failure = "failure".asInstanceOf[typings.firebase.firebaseStrings.failure]
     
-    @scala.inline
-    def `no-fetch-yet`: typings.firebase.firebaseStrings.`no-fetch-yet` = "no-fetch-yet".asInstanceOf[typings.firebase.firebaseStrings.`no-fetch-yet`]
+    inline def `no-fetch-yet`: typings.firebase.firebaseStrings.`no-fetch-yet` = "no-fetch-yet".asInstanceOf[typings.firebase.firebaseStrings.`no-fetch-yet`]
     
-    @scala.inline
-    def success: typings.firebase.firebaseStrings.success = "success".asInstanceOf[typings.firebase.firebaseStrings.success]
+    inline def success: typings.firebase.firebaseStrings.success = "success".asInstanceOf[typings.firebase.firebaseStrings.success]
     
-    @scala.inline
-    def throttle: typings.firebase.firebaseStrings.throttle = "throttle".asInstanceOf[typings.firebase.firebaseStrings.throttle]
+    inline def throttle: typings.firebase.firebaseStrings.throttle = "throttle".asInstanceOf[typings.firebase.firebaseStrings.throttle]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -63,14 +57,11 @@ object remoteConfig {
   trait LogLevel extends StObject
   object LogLevel {
     
-    @scala.inline
-    def debug: typings.firebase.firebaseStrings.debug = "debug".asInstanceOf[typings.firebase.firebaseStrings.debug]
+    inline def debug: typings.firebase.firebaseStrings.debug = "debug".asInstanceOf[typings.firebase.firebaseStrings.debug]
     
-    @scala.inline
-    def error: typings.firebase.firebaseStrings.error = "error".asInstanceOf[typings.firebase.firebaseStrings.error]
+    inline def error: typings.firebase.firebaseStrings.error = "error".asInstanceOf[typings.firebase.firebaseStrings.error]
     
-    @scala.inline
-    def silent: typings.firebase.firebaseStrings.silent = "silent".asInstanceOf[typings.firebase.firebaseStrings.silent]
+    inline def silent: typings.firebase.firebaseStrings.silent = "silent".asInstanceOf[typings.firebase.firebaseStrings.silent]
   }
   
   trait RemoteConfig extends StObject {
@@ -159,8 +150,7 @@ object remoteConfig {
   }
   object RemoteConfig {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       activate: () => js.Promise[Boolean],
       defaultConfig: StringDictionary[String | Double | Boolean],
       ensureInitialized: () => js.Promise[Unit],
@@ -180,50 +170,35 @@ object remoteConfig {
       __obj.asInstanceOf[RemoteConfig]
     }
     
-    @scala.inline
-    implicit class RemoteConfigMutableBuilder[Self <: RemoteConfig] (val x: Self) extends AnyVal {
+    extension [Self <: RemoteConfig](x: Self) {
       
-      @scala.inline
-      def setActivate(value: () => js.Promise[Boolean]): Self = StObject.set(x, "activate", js.Any.fromFunction0(value))
+      inline def setActivate(value: () => js.Promise[Boolean]): Self = StObject.set(x, "activate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDefaultConfig(value: StringDictionary[String | Double | Boolean]): Self = StObject.set(x, "defaultConfig", value.asInstanceOf[js.Any])
+      inline def setDefaultConfig(value: StringDictionary[String | Double | Boolean]): Self = StObject.set(x, "defaultConfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnsureInitialized(value: () => js.Promise[Unit]): Self = StObject.set(x, "ensureInitialized", js.Any.fromFunction0(value))
+      inline def setEnsureInitialized(value: () => js.Promise[Unit]): Self = StObject.set(x, "ensureInitialized", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFetch(value: () => js.Promise[Unit]): Self = StObject.set(x, "fetch", js.Any.fromFunction0(value))
+      inline def setFetch(value: () => js.Promise[Unit]): Self = StObject.set(x, "fetch", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFetchAndActivate(value: () => js.Promise[Boolean]): Self = StObject.set(x, "fetchAndActivate", js.Any.fromFunction0(value))
+      inline def setFetchAndActivate(value: () => js.Promise[Boolean]): Self = StObject.set(x, "fetchAndActivate", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setFetchTimeMillis(value: Double): Self = StObject.set(x, "fetchTimeMillis", value.asInstanceOf[js.Any])
+      inline def setFetchTimeMillis(value: Double): Self = StObject.set(x, "fetchTimeMillis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGetAll(value: () => StringDictionary[typings.firebase.mod.firebase.remoteConfig.Value]): Self = StObject.set(x, "getAll", js.Any.fromFunction0(value))
+      inline def setGetAll(value: () => StringDictionary[typings.firebase.mod.firebase.remoteConfig.Value]): Self = StObject.set(x, "getAll", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetBoolean(value: String => Boolean): Self = StObject.set(x, "getBoolean", js.Any.fromFunction1(value))
+      inline def setGetBoolean(value: String => Boolean): Self = StObject.set(x, "getBoolean", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetNumber(value: String => Double): Self = StObject.set(x, "getNumber", js.Any.fromFunction1(value))
+      inline def setGetNumber(value: String => Double): Self = StObject.set(x, "getNumber", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetString(value: String => String): Self = StObject.set(x, "getString", js.Any.fromFunction1(value))
+      inline def setGetString(value: String => String): Self = StObject.set(x, "getString", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetValue(value: String => typings.firebase.mod.firebase.remoteConfig.Value): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
+      inline def setGetValue(value: String => typings.firebase.mod.firebase.remoteConfig.Value): Self = StObject.set(x, "getValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLastFetchStatus(value: typings.firebase.mod.firebase.remoteConfig.FetchStatus): Self = StObject.set(x, "lastFetchStatus", value.asInstanceOf[js.Any])
+      inline def setLastFetchStatus(value: typings.firebase.mod.firebase.remoteConfig.FetchStatus): Self = StObject.set(x, "lastFetchStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSetLogLevel(value: typings.firebase.mod.firebase.remoteConfig.LogLevel => Unit): Self = StObject.set(x, "setLogLevel", js.Any.fromFunction1(value))
+      inline def setSetLogLevel(value: typings.firebase.mod.firebase.remoteConfig.LogLevel => Unit): Self = StObject.set(x, "setLogLevel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSettings(value: typings.firebase.mod.firebase.remoteConfig.Settings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      inline def setSettings(value: typings.firebase.mod.firebase.remoteConfig.Settings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
     }
   }
   
@@ -243,20 +218,16 @@ object remoteConfig {
   }
   object Settings {
     
-    @scala.inline
-    def apply(fetchTimeoutMillis: Double, minimumFetchIntervalMillis: Double): Settings = {
+    inline def apply(fetchTimeoutMillis: Double, minimumFetchIntervalMillis: Double): Settings = {
       val __obj = js.Dynamic.literal(fetchTimeoutMillis = fetchTimeoutMillis.asInstanceOf[js.Any], minimumFetchIntervalMillis = minimumFetchIntervalMillis.asInstanceOf[js.Any])
       __obj.asInstanceOf[Settings]
     }
     
-    @scala.inline
-    implicit class SettingsMutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
+    extension [Self <: Settings](x: Self) {
       
-      @scala.inline
-      def setFetchTimeoutMillis(value: Double): Self = StObject.set(x, "fetchTimeoutMillis", value.asInstanceOf[js.Any])
+      inline def setFetchTimeoutMillis(value: Double): Self = StObject.set(x, "fetchTimeoutMillis", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinimumFetchIntervalMillis(value: Double): Self = StObject.set(x, "minimumFetchIntervalMillis", value.asInstanceOf[js.Any])
+      inline def setMinimumFetchIntervalMillis(value: Double): Self = StObject.set(x, "minimumFetchIntervalMillis", value.asInstanceOf[js.Any])
     }
   }
   
@@ -287,8 +258,7 @@ object remoteConfig {
   }
   object Value {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       asBoolean: () => Boolean,
       asNumber: () => Double,
       asString: () => String,
@@ -298,20 +268,15 @@ object remoteConfig {
       __obj.asInstanceOf[Value]
     }
     
-    @scala.inline
-    implicit class ValueMutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
+    extension [Self <: Value](x: Self) {
       
-      @scala.inline
-      def setAsBoolean(value: () => Boolean): Self = StObject.set(x, "asBoolean", js.Any.fromFunction0(value))
+      inline def setAsBoolean(value: () => Boolean): Self = StObject.set(x, "asBoolean", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAsNumber(value: () => Double): Self = StObject.set(x, "asNumber", js.Any.fromFunction0(value))
+      inline def setAsNumber(value: () => Double): Self = StObject.set(x, "asNumber", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setAsString(value: () => String): Self = StObject.set(x, "asString", js.Any.fromFunction0(value))
+      inline def setAsString(value: () => String): Self = StObject.set(x, "asString", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSource(value: () => typings.firebase.mod.firebase.remoteConfig.ValueSource): Self = StObject.set(x, "getSource", js.Any.fromFunction0(value))
+      inline def setGetSource(value: () => typings.firebase.mod.firebase.remoteConfig.ValueSource): Self = StObject.set(x, "getSource", js.Any.fromFunction0(value))
     }
   }
   
@@ -323,13 +288,10 @@ object remoteConfig {
   trait ValueSource extends StObject
   object ValueSource {
     
-    @scala.inline
-    def default: typings.firebase.firebaseStrings.default = "default".asInstanceOf[typings.firebase.firebaseStrings.default]
+    inline def default: typings.firebase.firebaseStrings.default = "default".asInstanceOf[typings.firebase.firebaseStrings.default]
     
-    @scala.inline
-    def remote: typings.firebase.firebaseStrings.remote = "remote".asInstanceOf[typings.firebase.firebaseStrings.remote]
+    inline def remote: typings.firebase.firebaseStrings.remote = "remote".asInstanceOf[typings.firebase.firebaseStrings.remote]
     
-    @scala.inline
-    def static: typings.firebase.firebaseStrings.static = "static".asInstanceOf[typings.firebase.firebaseStrings.static]
+    inline def static: typings.firebase.firebaseStrings.static = "static".asInstanceOf[typings.firebase.firebaseStrings.static]
   }
 }

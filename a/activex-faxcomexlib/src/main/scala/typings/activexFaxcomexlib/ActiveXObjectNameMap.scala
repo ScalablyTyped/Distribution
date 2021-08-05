@@ -16,21 +16,17 @@ trait ActiveXObjectNameMap extends StObject {
 }
 object ActiveXObjectNameMap {
   
-  @scala.inline
-  def apply(FaxComExDotFaxDocument: FaxDocument, FaxComExDotFaxServer: FaxServer): ActiveXObjectNameMap = {
+  inline def apply(FaxComExDotFaxDocument: FaxDocument, FaxComExDotFaxServer: FaxServer): ActiveXObjectNameMap = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("FaxComEx.FaxDocument")(FaxComExDotFaxDocument.asInstanceOf[js.Any])
     __obj.updateDynamic("FaxComEx.FaxServer")(FaxComExDotFaxServer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
   
-  @scala.inline
-  implicit class ActiveXObjectNameMapMutableBuilder[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveXObjectNameMap](x: Self) {
     
-    @scala.inline
-    def setFaxComExDotFaxDocument(value: FaxDocument): Self = StObject.set(x, "FaxComEx.FaxDocument", value.asInstanceOf[js.Any])
+    inline def setFaxComExDotFaxDocument(value: FaxDocument): Self = StObject.set(x, "FaxComEx.FaxDocument", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFaxComExDotFaxServer(value: FaxServer): Self = StObject.set(x, "FaxComEx.FaxServer", value.asInstanceOf[js.Any])
+    inline def setFaxComExDotFaxServer(value: FaxServer): Self = StObject.set(x, "FaxComEx.FaxServer", value.asInstanceOf[js.Any])
   }
 }

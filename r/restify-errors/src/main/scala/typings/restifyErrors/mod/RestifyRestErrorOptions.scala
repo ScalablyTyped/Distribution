@@ -12,19 +12,15 @@ trait RestifyRestErrorOptions
 }
 object RestifyRestErrorOptions {
   
-  @scala.inline
-  def apply(): RestifyRestErrorOptions = {
+  inline def apply(): RestifyRestErrorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RestifyRestErrorOptions]
   }
   
-  @scala.inline
-  implicit class RestifyRestErrorOptionsMutableBuilder[Self <: RestifyRestErrorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RestifyRestErrorOptions](x: Self) {
     
-    @scala.inline
-    def setRestCode(value: String): Self = StObject.set(x, "restCode", value.asInstanceOf[js.Any])
+    inline def setRestCode(value: String): Self = StObject.set(x, "restCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestCodeUndefined: Self = StObject.set(x, "restCode", js.undefined)
+    inline def setRestCodeUndefined: Self = StObject.set(x, "restCode", js.undefined)
   }
 }

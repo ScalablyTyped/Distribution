@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait CSVFieldType extends StObject
 object CSVFieldType {
   
-  @scala.inline
-  def number: typings.reactBootstrapTable.reactBootstrapTableStrings.number = "number".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.number]
+  inline def number: typings.reactBootstrapTable.reactBootstrapTableStrings.number = "number".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.number]
   
-  @scala.inline
-  def string: typings.reactBootstrapTable.reactBootstrapTableStrings.string = "string".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.string]
+  inline def string: typings.reactBootstrapTable.reactBootstrapTableStrings.string = "string".asInstanceOf[typings.reactBootstrapTable.reactBootstrapTableStrings.string]
 }

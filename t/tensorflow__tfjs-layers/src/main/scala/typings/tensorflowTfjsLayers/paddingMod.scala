@@ -35,27 +35,20 @@ object paddingMod {
     @JSImport("@tensorflow/tfjs-layers/dist/layers/padding", "ZeroPadding2D.className")
     @js.native
     def className: String = js.native
-    @scala.inline
-    def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
+    inline def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def spatial2dPadding(x: Tensor[Rank]): Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("spatial2dPadding")(x.asInstanceOf[js.Any]).asInstanceOf[Tensor[Rank]]
-  @scala.inline
-  def spatial2dPadding(x: Tensor[Rank], padding: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("spatial2dPadding")(x.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
-  @scala.inline
-  def spatial2dPadding(
+  inline def spatial2dPadding(x: Tensor[Rank]): Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("spatial2dPadding")(x.asInstanceOf[js.Any]).asInstanceOf[Tensor[Rank]]
+  inline def spatial2dPadding(x: Tensor[Rank], padding: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("spatial2dPadding")(x.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  inline def spatial2dPadding(
     x: Tensor[Rank],
     padding: js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]],
     dataFormat: DataFormat
   ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("spatial2dPadding")(x.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
-  @scala.inline
-  def spatial2dPadding(x: Tensor[Rank], padding: Unit, dataFormat: DataFormat): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("spatial2dPadding")(x.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  inline def spatial2dPadding(x: Tensor[Rank], padding: Unit, dataFormat: DataFormat): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("spatial2dPadding")(x.asInstanceOf[js.Any], padding.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
-  @scala.inline
-  def temporalPadding(x: Tensor[Rank]): Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("temporalPadding")(x.asInstanceOf[js.Any]).asInstanceOf[Tensor[Rank]]
-  @scala.inline
-  def temporalPadding(x: Tensor[Rank], padding: js.Tuple2[Double, Double]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("temporalPadding")(x.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+  inline def temporalPadding(x: Tensor[Rank]): Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("temporalPadding")(x.asInstanceOf[js.Any]).asInstanceOf[Tensor[Rank]]
+  inline def temporalPadding(x: Tensor[Rank], padding: js.Tuple2[Double, Double]): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("temporalPadding")(x.asInstanceOf[js.Any], padding.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
   trait ZeroPadding2DLayerArgs
     extends StObject
@@ -88,28 +81,22 @@ object paddingMod {
   }
   object ZeroPadding2DLayerArgs {
     
-    @scala.inline
-    def apply(): ZeroPadding2DLayerArgs = {
+    inline def apply(): ZeroPadding2DLayerArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ZeroPadding2DLayerArgs]
     }
     
-    @scala.inline
-    implicit class ZeroPadding2DLayerArgsMutableBuilder[Self <: ZeroPadding2DLayerArgs] (val x: Self) extends AnyVal {
+    extension [Self <: ZeroPadding2DLayerArgs](x: Self) {
       
-      @scala.inline
-      def setDataFormat(value: DataFormat): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
+      inline def setDataFormat(value: DataFormat): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataFormatUndefined: Self = StObject.set(x, "dataFormat", js.undefined)
+      inline def setDataFormatUndefined: Self = StObject.set(x, "dataFormat", js.undefined)
       
-      @scala.inline
-      def setPadding(
+      inline def setPadding(
         value: Double | (js.Tuple2[Double | (js.Tuple2[Double, Double]), Double | (js.Tuple2[Double, Double])])
       ): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+      inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     }
   }
 }

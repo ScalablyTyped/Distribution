@@ -17,31 +17,23 @@ trait Message extends StObject {
 }
 object Message {
   
-  @scala.inline
-  def apply(id: String, message: String): Message = {
+  inline def apply(id: String, message: String): Message = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[Message]
   }
   
-  @scala.inline
-  implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
+  extension [Self <: Message](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReq(value: js.Object): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+    inline def setReq(value: js.Object): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
+    inline def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
     
-    @scala.inline
-    def setUser(value: ProjectUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: ProjectUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+    inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
   }
 }

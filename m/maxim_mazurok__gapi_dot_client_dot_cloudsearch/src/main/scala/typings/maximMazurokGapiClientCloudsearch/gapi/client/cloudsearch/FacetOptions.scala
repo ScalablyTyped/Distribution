@@ -20,37 +20,27 @@ trait FacetOptions extends StObject {
 }
 object FacetOptions {
   
-  @scala.inline
-  def apply(): FacetOptions = {
+  inline def apply(): FacetOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FacetOptions]
   }
   
-  @scala.inline
-  implicit class FacetOptionsMutableBuilder[Self <: FacetOptions] (val x: Self) extends AnyVal {
+  extension [Self <: FacetOptions](x: Self) {
     
-    @scala.inline
-    def setNumFacetBuckets(value: Double): Self = StObject.set(x, "numFacetBuckets", value.asInstanceOf[js.Any])
+    inline def setNumFacetBuckets(value: Double): Self = StObject.set(x, "numFacetBuckets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumFacetBucketsUndefined: Self = StObject.set(x, "numFacetBuckets", js.undefined)
+    inline def setNumFacetBucketsUndefined: Self = StObject.set(x, "numFacetBuckets", js.undefined)
     
-    @scala.inline
-    def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
+    inline def setObjectType(value: String): Self = StObject.set(x, "objectType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectTypeUndefined: Self = StObject.set(x, "objectType", js.undefined)
+    inline def setObjectTypeUndefined: Self = StObject.set(x, "objectType", js.undefined)
     
-    @scala.inline
-    def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
+    inline def setOperatorName(value: String): Self = StObject.set(x, "operatorName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorNameUndefined: Self = StObject.set(x, "operatorName", js.undefined)
+    inline def setOperatorNameUndefined: Self = StObject.set(x, "operatorName", js.undefined)
     
-    @scala.inline
-    def setSourceName(value: String): Self = StObject.set(x, "sourceName", value.asInstanceOf[js.Any])
+    inline def setSourceName(value: String): Self = StObject.set(x, "sourceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceNameUndefined: Self = StObject.set(x, "sourceName", js.undefined)
+    inline def setSourceNameUndefined: Self = StObject.set(x, "sourceName", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait HumanLoopDataAttributes extends StObject {
 }
 object HumanLoopDataAttributes {
   
-  @scala.inline
-  def apply(ContentClassifiers: ContentClassifiers): HumanLoopDataAttributes = {
+  inline def apply(ContentClassifiers: ContentClassifiers): HumanLoopDataAttributes = {
     val __obj = js.Dynamic.literal(ContentClassifiers = ContentClassifiers.asInstanceOf[js.Any])
     __obj.asInstanceOf[HumanLoopDataAttributes]
   }
   
-  @scala.inline
-  implicit class HumanLoopDataAttributesMutableBuilder[Self <: HumanLoopDataAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: HumanLoopDataAttributes](x: Self) {
     
-    @scala.inline
-    def setContentClassifiers(value: ContentClassifiers): Self = StObject.set(x, "ContentClassifiers", value.asInstanceOf[js.Any])
+    inline def setContentClassifiers(value: ContentClassifiers): Self = StObject.set(x, "ContentClassifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentClassifiersVarargs(value: ContentClassifier*): Self = StObject.set(x, "ContentClassifiers", js.Array(value :_*))
+    inline def setContentClassifiersVarargs(value: ContentClassifier*): Self = StObject.set(x, "ContentClassifiers", js.Array(value :_*))
   }
 }

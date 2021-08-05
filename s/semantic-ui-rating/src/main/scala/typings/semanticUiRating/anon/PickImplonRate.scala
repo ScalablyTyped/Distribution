@@ -14,16 +14,13 @@ trait PickImplonRate extends StObject {
 }
 object PickImplonRate {
   
-  @scala.inline
-  def apply(onRate: js.ThisFunction1[/* this */ JQuery, /* value */ Double, Unit]): PickImplonRate = {
+  inline def apply(onRate: js.ThisFunction1[/* this */ JQuery, /* value */ Double, Unit]): PickImplonRate = {
     val __obj = js.Dynamic.literal(onRate = onRate.asInstanceOf[js.Any])
     __obj.asInstanceOf[PickImplonRate]
   }
   
-  @scala.inline
-  implicit class PickImplonRateMutableBuilder[Self <: PickImplonRate] (val x: Self) extends AnyVal {
+  extension [Self <: PickImplonRate](x: Self) {
     
-    @scala.inline
-    def setOnRate(value: js.ThisFunction1[/* this */ JQuery, /* value */ Double, Unit]): Self = StObject.set(x, "onRate", value.asInstanceOf[js.Any])
+    inline def setOnRate(value: js.ThisFunction1[/* this */ JQuery, /* value */ Double, Unit]): Self = StObject.set(x, "onRate", value.asInstanceOf[js.Any])
   }
 }

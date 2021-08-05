@@ -17,19 +17,15 @@ trait SchemaGoogleCloudVisionV1p1beta1GcsSource extends StObject {
 }
 object SchemaGoogleCloudVisionV1p1beta1GcsSource {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudVisionV1p1beta1GcsSource = {
+  inline def apply(): SchemaGoogleCloudVisionV1p1beta1GcsSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudVisionV1p1beta1GcsSource]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudVisionV1p1beta1GcsSourceMutableBuilder[Self <: SchemaGoogleCloudVisionV1p1beta1GcsSource] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudVisionV1p1beta1GcsSource](x: Self) {
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

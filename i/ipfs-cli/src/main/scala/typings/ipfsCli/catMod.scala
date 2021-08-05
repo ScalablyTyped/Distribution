@@ -59,6 +59,5 @@ object catMod {
   @js.native
   val describe: String = js.native
   
-  @scala.inline
-  def handler(hasHasIpfsPrintIpfsPathOffsetLengthTimeout: IpfsPath): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintIpfsPathOffsetLengthTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def handler(hasHasIpfsPrintIpfsPathOffsetLengthTimeout: IpfsPath): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("handler")(hasHasIpfsPrintIpfsPathOffsetLengthTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

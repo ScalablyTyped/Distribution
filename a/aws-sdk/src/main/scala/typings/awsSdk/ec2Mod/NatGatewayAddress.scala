@@ -28,37 +28,27 @@ trait NatGatewayAddress extends StObject {
 }
 object NatGatewayAddress {
   
-  @scala.inline
-  def apply(): NatGatewayAddress = {
+  inline def apply(): NatGatewayAddress = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NatGatewayAddress]
   }
   
-  @scala.inline
-  implicit class NatGatewayAddressMutableBuilder[Self <: NatGatewayAddress] (val x: Self) extends AnyVal {
+  extension [Self <: NatGatewayAddress](x: Self) {
     
-    @scala.inline
-    def setAllocationId(value: String): Self = StObject.set(x, "AllocationId", value.asInstanceOf[js.Any])
+    inline def setAllocationId(value: String): Self = StObject.set(x, "AllocationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllocationIdUndefined: Self = StObject.set(x, "AllocationId", js.undefined)
+    inline def setAllocationIdUndefined: Self = StObject.set(x, "AllocationId", js.undefined)
     
-    @scala.inline
-    def setNetworkInterfaceId(value: String): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
+    inline def setNetworkInterfaceId(value: String): Self = StObject.set(x, "NetworkInterfaceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkInterfaceIdUndefined: Self = StObject.set(x, "NetworkInterfaceId", js.undefined)
+    inline def setNetworkInterfaceIdUndefined: Self = StObject.set(x, "NetworkInterfaceId", js.undefined)
     
-    @scala.inline
-    def setPrivateIp(value: String): Self = StObject.set(x, "PrivateIp", value.asInstanceOf[js.Any])
+    inline def setPrivateIp(value: String): Self = StObject.set(x, "PrivateIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrivateIpUndefined: Self = StObject.set(x, "PrivateIp", js.undefined)
+    inline def setPrivateIpUndefined: Self = StObject.set(x, "PrivateIp", js.undefined)
     
-    @scala.inline
-    def setPublicIp(value: String): Self = StObject.set(x, "PublicIp", value.asInstanceOf[js.Any])
+    inline def setPublicIp(value: String): Self = StObject.set(x, "PublicIp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicIpUndefined: Self = StObject.set(x, "PublicIp", js.undefined)
+    inline def setPublicIpUndefined: Self = StObject.set(x, "PublicIp", js.undefined)
   }
 }

@@ -20,8 +20,7 @@ trait Conflicts extends StObject {
 }
 object Conflicts {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     conflicts: scala.Double,
     failure: scala.Double,
     notSet: scala.Double,
@@ -33,25 +32,18 @@ object Conflicts {
     __obj.asInstanceOf[Conflicts]
   }
   
-  @scala.inline
-  implicit class ConflictsMutableBuilder[Self <: Conflicts] (val x: Self) extends AnyVal {
+  extension [Self <: Conflicts](x: Self) {
     
-    @scala.inline
-    def setConflicts(value: scala.Double): Self = StObject.set(x, "conflicts", value.asInstanceOf[js.Any])
+    inline def setConflicts(value: scala.Double): Self = StObject.set(x, "conflicts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailure(value: scala.Double): Self = StObject.set(x, "failure", value.asInstanceOf[js.Any])
+    inline def setFailure(value: scala.Double): Self = StObject.set(x, "failure", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotSet(value: scala.Double): Self = StObject.set(x, "notSet", value.asInstanceOf[js.Any])
+    inline def setNotSet(value: scala.Double): Self = StObject.set(x, "notSet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueued(value: scala.Double): Self = StObject.set(x, "queued", value.asInstanceOf[js.Any])
+    inline def setQueued(value: scala.Double): Self = StObject.set(x, "queued", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRejectedByPolicy(value: scala.Double): Self = StObject.set(x, "rejectedByPolicy", value.asInstanceOf[js.Any])
+    inline def setRejectedByPolicy(value: scala.Double): Self = StObject.set(x, "rejectedByPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSucceeded(value: scala.Double): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
+    inline def setSucceeded(value: scala.Double): Self = StObject.set(x, "succeeded", value.asInstanceOf[js.Any])
   }
 }

@@ -13,16 +13,13 @@ trait DeleteRealtimeEndpointInput extends StObject {
 }
 object DeleteRealtimeEndpointInput {
   
-  @scala.inline
-  def apply(MLModelId: EntityId): DeleteRealtimeEndpointInput = {
+  inline def apply(MLModelId: EntityId): DeleteRealtimeEndpointInput = {
     val __obj = js.Dynamic.literal(MLModelId = MLModelId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteRealtimeEndpointInput]
   }
   
-  @scala.inline
-  implicit class DeleteRealtimeEndpointInputMutableBuilder[Self <: DeleteRealtimeEndpointInput] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteRealtimeEndpointInput](x: Self) {
     
-    @scala.inline
-    def setMLModelId(value: EntityId): Self = StObject.set(x, "MLModelId", value.asInstanceOf[js.Any])
+    inline def setMLModelId(value: EntityId): Self = StObject.set(x, "MLModelId", value.asInstanceOf[js.Any])
   }
 }

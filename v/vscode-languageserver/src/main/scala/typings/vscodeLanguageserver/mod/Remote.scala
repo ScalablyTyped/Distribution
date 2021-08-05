@@ -40,8 +40,7 @@ trait Remote extends StObject {
 }
 object Remote {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     attach: IConnection => Unit,
     connection: IConnection,
     fillServerCapabilities: ServerCapabilities[js.Any] => Unit,
@@ -51,19 +50,14 @@ object Remote {
     __obj.asInstanceOf[Remote]
   }
   
-  @scala.inline
-  implicit class RemoteMutableBuilder[Self <: Remote] (val x: Self) extends AnyVal {
+  extension [Self <: Remote](x: Self) {
     
-    @scala.inline
-    def setAttach(value: IConnection => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction1(value))
+    inline def setAttach(value: IConnection => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setConnection(value: IConnection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: IConnection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillServerCapabilities(value: ServerCapabilities[js.Any] => Unit): Self = StObject.set(x, "fillServerCapabilities", js.Any.fromFunction1(value))
+    inline def setFillServerCapabilities(value: ServerCapabilities[js.Any] => Unit): Self = StObject.set(x, "fillServerCapabilities", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInitialize(value: ClientCapabilities => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
+    inline def setInitialize(value: ClientCapabilities => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
   }
 }

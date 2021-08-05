@@ -49,29 +49,24 @@ object mockXMLHttpRequestMod {
     /**
       * Add a mock handler
       */
-    @scala.inline
-    def addHandler(fn: MockFunction): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addHandler")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def addHandler(fn: MockFunction): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addHandler")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def errorCallback(event: ErrorCallbackEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("errorCallback")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def errorCallback(event: ErrorCallbackEvent): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("errorCallback")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("xhr-mock/lib/MockXMLHttpRequest", "default.handlers")
     @js.native
     def handlers: js.Array[MockFunction] = js.native
-    @scala.inline
-    def handlers_=(x: js.Array[MockFunction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("handlers")(x.asInstanceOf[js.Any])
+    inline def handlers_=(x: js.Array[MockFunction]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("handlers")(x.asInstanceOf[js.Any])
     
     /**
       * Remove all request handlers
       */
-    @scala.inline
-    def removeAllHandlers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllHandlers")().asInstanceOf[Unit]
+    inline def removeAllHandlers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllHandlers")().asInstanceOf[Unit]
     
     /**
       * Remove a mock handler
       */
-    @scala.inline
-    def removeHandler(fn: MockFunction): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeHandler")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def removeHandler(fn: MockFunction): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeHandler")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @js.native
@@ -131,9 +126,9 @@ object mockXMLHttpRequestMod {
     
     val UNSENT: Double | ReadyState = js.native
     
-    var _timeout: js.Any = js.native
+    /* private */ var _timeout: js.Any = js.native
     
-    var _timeoutTimer: js.Any = js.native
+    /* private */ var _timeoutTimer: js.Any = js.native
     
     /**
       * Cancels any network activity.
@@ -165,15 +160,15 @@ object mockXMLHttpRequestMod {
     
     /* private */ def handleResponseBody(res: js.Any): js.Any = js.native
     
-    var isAborted: js.Any = js.native
+    /* private */ var isAborted: js.Any = js.native
     
-    var isSending: js.Any = js.native
+    /* private */ var isSending: js.Any = js.native
     
-    var isSynchronous: js.Any = js.native
+    /* private */ var isSynchronous: js.Any = js.native
     
-    var isTimedOut: js.Any = js.native
+    /* private */ var isTimedOut: js.Any = js.native
     
-    var isUploadComplete: js.Any = js.native
+    /* private */ var isUploadComplete: js.Any = js.native
     
     def msCachingEnabled(): Boolean = js.native
     
@@ -228,9 +223,9 @@ object mockXMLHttpRequestMod {
     
     /* private */ def reportError(event: js.Any): js.Any = js.native
     
-    var req: js.Any = js.native
+    /* private */ var req: js.Any = js.native
     
-    var res: js.Any = js.native
+    /* private */ var res: js.Any = js.native
     
     val response: js.Any = js.native
     

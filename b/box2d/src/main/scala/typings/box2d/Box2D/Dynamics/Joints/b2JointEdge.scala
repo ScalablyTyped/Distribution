@@ -29,25 +29,19 @@ trait b2JointEdge extends StObject {
 }
 object b2JointEdge {
   
-  @scala.inline
-  def apply(joint: b2Joint, next: b2JointEdge, other: b2Body, prev: b2JointEdge): b2JointEdge = {
+  inline def apply(joint: b2Joint, next: b2JointEdge, other: b2Body, prev: b2JointEdge): b2JointEdge = {
     val __obj = js.Dynamic.literal(joint = joint.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any], other = other.asInstanceOf[js.Any], prev = prev.asInstanceOf[js.Any])
     __obj.asInstanceOf[b2JointEdge]
   }
   
-  @scala.inline
-  implicit class b2JointEdgeMutableBuilder[Self <: b2JointEdge] (val x: Self) extends AnyVal {
+  extension [Self <: b2JointEdge](x: Self) {
     
-    @scala.inline
-    def setJoint(value: b2Joint): Self = StObject.set(x, "joint", value.asInstanceOf[js.Any])
+    inline def setJoint(value: b2Joint): Self = StObject.set(x, "joint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNext(value: b2JointEdge): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
+    inline def setNext(value: b2JointEdge): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOther(value: b2Body): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
+    inline def setOther(value: b2Body): Self = StObject.set(x, "other", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrev(value: b2JointEdge): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
+    inline def setPrev(value: b2JointEdge): Self = StObject.set(x, "prev", value.asInstanceOf[js.Any])
   }
 }

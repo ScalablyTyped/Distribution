@@ -12,19 +12,15 @@ trait ExtensionFields extends StObject {
 }
 object ExtensionFields {
   
-  @scala.inline
-  def apply(extensionFields: scala.Double, none: scala.Double): ExtensionFields = {
+  inline def apply(extensionFields: scala.Double, none: scala.Double): ExtensionFields = {
     val __obj = js.Dynamic.literal(extensionFields = extensionFields.asInstanceOf[js.Any], none = none.asInstanceOf[js.Any])
     __obj.asInstanceOf[ExtensionFields]
   }
   
-  @scala.inline
-  implicit class ExtensionFieldsMutableBuilder[Self <: ExtensionFields] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionFields](x: Self) {
     
-    @scala.inline
-    def setExtensionFields(value: scala.Double): Self = StObject.set(x, "extensionFields", value.asInstanceOf[js.Any])
+    inline def setExtensionFields(value: scala.Double): Self = StObject.set(x, "extensionFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
   }
 }

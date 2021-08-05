@@ -23,31 +23,23 @@ trait CustomLabel extends StObject {
 }
 object CustomLabel {
   
-  @scala.inline
-  def apply(): CustomLabel = {
+  inline def apply(): CustomLabel = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CustomLabel]
   }
   
-  @scala.inline
-  implicit class CustomLabelMutableBuilder[Self <: CustomLabel] (val x: Self) extends AnyVal {
+  extension [Self <: CustomLabel](x: Self) {
     
-    @scala.inline
-    def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
     
-    @scala.inline
-    def setGeometry(value: Geometry): Self = StObject.set(x, "Geometry", value.asInstanceOf[js.Any])
+    inline def setGeometry(value: Geometry): Self = StObject.set(x, "Geometry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeometryUndefined: Self = StObject.set(x, "Geometry", js.undefined)
+    inline def setGeometryUndefined: Self = StObject.set(x, "Geometry", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
   }
 }

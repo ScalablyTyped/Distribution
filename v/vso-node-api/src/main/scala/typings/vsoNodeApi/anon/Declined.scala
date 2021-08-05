@@ -20,8 +20,7 @@ trait Declined extends StObject {
 }
 object Declined {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     completed: scala.Double,
     declined: scala.Double,
     inProgress: scala.Double,
@@ -33,25 +32,18 @@ object Declined {
     __obj.asInstanceOf[Declined]
   }
   
-  @scala.inline
-  implicit class DeclinedMutableBuilder[Self <: Declined] (val x: Self) extends AnyVal {
+  extension [Self <: Declined](x: Self) {
     
-    @scala.inline
-    def setCompleted(value: scala.Double): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
+    inline def setCompleted(value: scala.Double): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeclined(value: scala.Double): Self = StObject.set(x, "declined", value.asInstanceOf[js.Any])
+    inline def setDeclined(value: scala.Double): Self = StObject.set(x, "declined", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInProgress(value: scala.Double): Self = StObject.set(x, "inProgress", value.asInstanceOf[js.Any])
+    inline def setInProgress(value: scala.Double): Self = StObject.set(x, "inProgress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotStarted(value: scala.Double): Self = StObject.set(x, "notStarted", value.asInstanceOf[js.Any])
+    inline def setNotStarted(value: scala.Double): Self = StObject.set(x, "notStarted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaused(value: scala.Double): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
+    inline def setPaused(value: scala.Double): Self = StObject.set(x, "paused", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnspecified(value: scala.Double): Self = StObject.set(x, "unspecified", value.asInstanceOf[js.Any])
+    inline def setUnspecified(value: scala.Double): Self = StObject.set(x, "unspecified", value.asInstanceOf[js.Any])
   }
 }

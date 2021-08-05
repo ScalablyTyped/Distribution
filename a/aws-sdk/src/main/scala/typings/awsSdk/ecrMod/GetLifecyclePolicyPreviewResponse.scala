@@ -43,58 +43,41 @@ trait GetLifecyclePolicyPreviewResponse extends StObject {
 }
 object GetLifecyclePolicyPreviewResponse {
   
-  @scala.inline
-  def apply(): GetLifecyclePolicyPreviewResponse = {
+  inline def apply(): GetLifecyclePolicyPreviewResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetLifecyclePolicyPreviewResponse]
   }
   
-  @scala.inline
-  implicit class GetLifecyclePolicyPreviewResponseMutableBuilder[Self <: GetLifecyclePolicyPreviewResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetLifecyclePolicyPreviewResponse](x: Self) {
     
-    @scala.inline
-    def setLifecyclePolicyText(value: LifecyclePolicyText): Self = StObject.set(x, "lifecyclePolicyText", value.asInstanceOf[js.Any])
+    inline def setLifecyclePolicyText(value: LifecyclePolicyText): Self = StObject.set(x, "lifecyclePolicyText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifecyclePolicyTextUndefined: Self = StObject.set(x, "lifecyclePolicyText", js.undefined)
+    inline def setLifecyclePolicyTextUndefined: Self = StObject.set(x, "lifecyclePolicyText", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setPreviewResults(value: LifecyclePolicyPreviewResultList): Self = StObject.set(x, "previewResults", value.asInstanceOf[js.Any])
+    inline def setPreviewResults(value: LifecyclePolicyPreviewResultList): Self = StObject.set(x, "previewResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviewResultsUndefined: Self = StObject.set(x, "previewResults", js.undefined)
+    inline def setPreviewResultsUndefined: Self = StObject.set(x, "previewResults", js.undefined)
     
-    @scala.inline
-    def setPreviewResultsVarargs(value: LifecyclePolicyPreviewResult*): Self = StObject.set(x, "previewResults", js.Array(value :_*))
+    inline def setPreviewResultsVarargs(value: LifecyclePolicyPreviewResult*): Self = StObject.set(x, "previewResults", js.Array(value :_*))
     
-    @scala.inline
-    def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
+    inline def setRegistryId(value: RegistryId): Self = StObject.set(x, "registryId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
+    inline def setRegistryIdUndefined: Self = StObject.set(x, "registryId", js.undefined)
     
-    @scala.inline
-    def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
+    inline def setRepositoryName(value: RepositoryName): Self = StObject.set(x, "repositoryName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
+    inline def setRepositoryNameUndefined: Self = StObject.set(x, "repositoryName", js.undefined)
     
-    @scala.inline
-    def setStatus(value: LifecyclePolicyPreviewStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: LifecyclePolicyPreviewStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setSummary(value: LifecyclePolicyPreviewSummary): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
+    inline def setSummary(value: LifecyclePolicyPreviewSummary): Self = StObject.set(x, "summary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
+    inline def setSummaryUndefined: Self = StObject.set(x, "summary", js.undefined)
   }
 }

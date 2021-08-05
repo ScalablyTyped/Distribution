@@ -13,19 +13,15 @@ trait PublisherFilterResult extends StObject {
 }
 object PublisherFilterResult {
   
-  @scala.inline
-  def apply(publishers: js.Array[Publisher]): PublisherFilterResult = {
+  inline def apply(publishers: js.Array[Publisher]): PublisherFilterResult = {
     val __obj = js.Dynamic.literal(publishers = publishers.asInstanceOf[js.Any])
     __obj.asInstanceOf[PublisherFilterResult]
   }
   
-  @scala.inline
-  implicit class PublisherFilterResultMutableBuilder[Self <: PublisherFilterResult] (val x: Self) extends AnyVal {
+  extension [Self <: PublisherFilterResult](x: Self) {
     
-    @scala.inline
-    def setPublishers(value: js.Array[Publisher]): Self = StObject.set(x, "publishers", value.asInstanceOf[js.Any])
+    inline def setPublishers(value: js.Array[Publisher]): Self = StObject.set(x, "publishers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishersVarargs(value: Publisher*): Self = StObject.set(x, "publishers", js.Array(value :_*))
+    inline def setPublishersVarargs(value: Publisher*): Self = StObject.set(x, "publishers", js.Array(value :_*))
   }
 }

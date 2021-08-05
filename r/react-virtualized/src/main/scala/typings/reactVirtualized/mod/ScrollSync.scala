@@ -27,6 +27,5 @@ object ScrollSync {
   @JSImport("react-virtualized", "ScrollSync.propTypes")
   @js.native
   def propTypes: ChildrenValidator = js.native
-  @scala.inline
-  def propTypes_=(x: ChildrenValidator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
+  inline def propTypes_=(x: ChildrenValidator): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
 }

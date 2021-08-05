@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdVisualSelection extends StObject
 object WdVisualSelection {
   
-  @scala.inline
-  def wdVisualSelectionBlock: `0` = 0.asInstanceOf[`0`]
+  inline def wdVisualSelectionBlock: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def wdVisualSelectionContinuous: `1` = 1.asInstanceOf[`1`]
+  inline def wdVisualSelectionContinuous: `1` = 1.asInstanceOf[`1`]
 }

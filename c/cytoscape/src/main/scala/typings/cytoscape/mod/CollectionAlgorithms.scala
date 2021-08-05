@@ -169,8 +169,7 @@ trait CollectionAlgorithms extends StObject {
 }
 object CollectionAlgorithms {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     aStar: SearchAStarOptions => SearchAStarResult,
     bellmanFord: SearchBellmanFordOptions => SearchBellmanFordResult,
     betweennessCentrality: SearchBetweennessOptions => SearchBetweennessResult,
@@ -200,85 +199,60 @@ object CollectionAlgorithms {
     __obj.asInstanceOf[CollectionAlgorithms]
   }
   
-  @scala.inline
-  implicit class CollectionAlgorithmsMutableBuilder[Self <: CollectionAlgorithms] (val x: Self) extends AnyVal {
+  extension [Self <: CollectionAlgorithms](x: Self) {
     
-    @scala.inline
-    def setAStar(value: SearchAStarOptions => SearchAStarResult): Self = StObject.set(x, "aStar", js.Any.fromFunction1(value))
+    inline def setAStar(value: SearchAStarOptions => SearchAStarResult): Self = StObject.set(x, "aStar", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBellmanFord(value: SearchBellmanFordOptions => SearchBellmanFordResult): Self = StObject.set(x, "bellmanFord", js.Any.fromFunction1(value))
+    inline def setBellmanFord(value: SearchBellmanFordOptions => SearchBellmanFordResult): Self = StObject.set(x, "bellmanFord", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBetweennessCentrality(value: SearchBetweennessOptions => SearchBetweennessResult): Self = StObject.set(x, "betweennessCentrality", js.Any.fromFunction1(value))
+    inline def setBetweennessCentrality(value: SearchBetweennessOptions => SearchBetweennessResult): Self = StObject.set(x, "betweennessCentrality", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBfs(value: SearchFirstOptions => SearchFirstResult): Self = StObject.set(x, "bfs", js.Any.fromFunction1(value))
+    inline def setBfs(value: SearchFirstOptions => SearchFirstResult): Self = StObject.set(x, "bfs", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBreadthFirstSearch(value: SearchFirstOptions => SearchFirstResult): Self = StObject.set(x, "breadthFirstSearch", js.Any.fromFunction1(value))
+    inline def setBreadthFirstSearch(value: SearchFirstOptions => SearchFirstResult): Self = StObject.set(x, "breadthFirstSearch", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClosenessCentrality(value: SearchClosenessCentralityOptions => Double): Self = StObject.set(x, "closenessCentrality", js.Any.fromFunction1(value))
+    inline def setClosenessCentrality(value: SearchClosenessCentralityOptions => Double): Self = StObject.set(x, "closenessCentrality", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setClosenessCentralityNormalized(
+    inline def setClosenessCentralityNormalized(
       value: SearchClosenessCentralityNormalizedOptions => SearchDegreeCentralityNormalizedResultDirected | SearchDegreeCentralityNormalizedResultUndirected
     ): Self = StObject.set(x, "closenessCentralityNormalized", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDegreeCentrality(
+    inline def setDegreeCentrality(
       value: SearchDegreeCentralityOptions => SearchDegreeCentralityResultDirected | SearchDegreeCentralityResultUndirected
     ): Self = StObject.set(x, "degreeCentrality", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDegreeCentralityNormalized(
+    inline def setDegreeCentralityNormalized(
       value: SearchDegreeCentralityNormalizedOptions => SearchDegreeCentralityNormalizedResultDirected | SearchDegreeCentralityNormalizedResultUndirected
     ): Self = StObject.set(x, "degreeCentralityNormalized", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDepthFirstSearch(value: SearchFirstOptions => SearchFirstResult): Self = StObject.set(x, "depthFirstSearch", js.Any.fromFunction1(value))
+    inline def setDepthFirstSearch(value: SearchFirstOptions => SearchFirstResult): Self = StObject.set(x, "depthFirstSearch", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDfs(value: SearchFirstOptions => SearchFirstResult): Self = StObject.set(x, "dfs", js.Any.fromFunction1(value))
+    inline def setDfs(value: SearchFirstOptions => SearchFirstResult): Self = StObject.set(x, "dfs", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setDijkstra(value: SearchDijkstraOptions => SearchDijkstraResult): Self = StObject.set(x, "dijkstra", js.Any.fromFunction1(value))
+    inline def setDijkstra(value: SearchDijkstraOptions => SearchDijkstraResult): Self = StObject.set(x, "dijkstra", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFloydWarshall(value: SearchFloydWarshallOptions => SearchFloydWarshallResult): Self = StObject.set(x, "floydWarshall", js.Any.fromFunction1(value))
+    inline def setFloydWarshall(value: SearchFloydWarshallOptions => SearchFloydWarshallResult): Self = StObject.set(x, "floydWarshall", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHopcroftTarjanBiconnected(value: () => Cut): Self = StObject.set(x, "hopcroftTarjanBiconnected", js.Any.fromFunction0(value))
+    inline def setHopcroftTarjanBiconnected(value: () => Cut): Self = StObject.set(x, "hopcroftTarjanBiconnected", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHopcroftTarjanBiconnectedComponents(value: () => Cut): Self = StObject.set(x, "hopcroftTarjanBiconnectedComponents", js.Any.fromFunction0(value))
+    inline def setHopcroftTarjanBiconnectedComponents(value: () => Cut): Self = StObject.set(x, "hopcroftTarjanBiconnectedComponents", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHtb(value: () => Cut): Self = StObject.set(x, "htb", js.Any.fromFunction0(value))
+    inline def setHtb(value: () => Cut): Self = StObject.set(x, "htb", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHtbc(value: () => Cut): Self = StObject.set(x, "htbc", js.Any.fromFunction0(value))
+    inline def setHtbc(value: () => Cut): Self = StObject.set(x, "htbc", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setKargerStein(value: () => Components): Self = StObject.set(x, "kargerStein", js.Any.fromFunction0(value))
+    inline def setKargerStein(value: () => Components): Self = StObject.set(x, "kargerStein", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setKruskal(value: js.Function1[/* edge */ EdgeCollection, Double] => CollectionReturnValue): Self = StObject.set(x, "kruskal", js.Any.fromFunction1(value))
+    inline def setKruskal(value: js.Function1[/* edge */ EdgeCollection, Double] => CollectionReturnValue): Self = StObject.set(x, "kruskal", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPageRank(value: SearchPageRankOptions => SearchPageRankResult): Self = StObject.set(x, "pageRank", js.Any.fromFunction1(value))
+    inline def setPageRank(value: SearchPageRankOptions => SearchPageRankResult): Self = StObject.set(x, "pageRank", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTarjanStronglyConnected(value: () => ComponentsCut): Self = StObject.set(x, "tarjanStronglyConnected", js.Any.fromFunction0(value))
+    inline def setTarjanStronglyConnected(value: () => ComponentsCut): Self = StObject.set(x, "tarjanStronglyConnected", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTarjanStronglyConnectedComponents(value: () => ComponentsCut): Self = StObject.set(x, "tarjanStronglyConnectedComponents", js.Any.fromFunction0(value))
+    inline def setTarjanStronglyConnectedComponents(value: () => ComponentsCut): Self = StObject.set(x, "tarjanStronglyConnectedComponents", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTsc(value: () => ComponentsCut): Self = StObject.set(x, "tsc", js.Any.fromFunction0(value))
+    inline def setTsc(value: () => ComponentsCut): Self = StObject.set(x, "tsc", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTscc(value: () => ComponentsCut): Self = StObject.set(x, "tscc", js.Any.fromFunction0(value))
+    inline def setTscc(value: () => ComponentsCut): Self = StObject.set(x, "tscc", js.Any.fromFunction0(value))
   }
 }

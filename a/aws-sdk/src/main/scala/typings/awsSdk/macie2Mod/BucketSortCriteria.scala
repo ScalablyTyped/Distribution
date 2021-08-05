@@ -18,25 +18,19 @@ trait BucketSortCriteria extends StObject {
 }
 object BucketSortCriteria {
   
-  @scala.inline
-  def apply(): BucketSortCriteria = {
+  inline def apply(): BucketSortCriteria = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BucketSortCriteria]
   }
   
-  @scala.inline
-  implicit class BucketSortCriteriaMutableBuilder[Self <: BucketSortCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: BucketSortCriteria](x: Self) {
     
-    @scala.inline
-    def setAttributeName(value: string): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
+    inline def setAttributeName(value: string): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributeNameUndefined: Self = StObject.set(x, "attributeName", js.undefined)
+    inline def setAttributeNameUndefined: Self = StObject.set(x, "attributeName", js.undefined)
     
-    @scala.inline
-    def setOrderBy(value: OrderBy): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
+    inline def setOrderBy(value: OrderBy): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
+    inline def setOrderByUndefined: Self = StObject.set(x, "orderBy", js.undefined)
   }
 }

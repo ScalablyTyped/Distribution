@@ -12,19 +12,15 @@ trait InstallationTarget extends StObject {
 }
 object InstallationTarget {
   
-  @scala.inline
-  def apply(target: String, targetVersion: String): InstallationTarget = {
+  inline def apply(target: String, targetVersion: String): InstallationTarget = {
     val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any], targetVersion = targetVersion.asInstanceOf[js.Any])
     __obj.asInstanceOf[InstallationTarget]
   }
   
-  @scala.inline
-  implicit class InstallationTargetMutableBuilder[Self <: InstallationTarget] (val x: Self) extends AnyVal {
+  extension [Self <: InstallationTarget](x: Self) {
     
-    @scala.inline
-    def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetVersion(value: String): Self = StObject.set(x, "targetVersion", value.asInstanceOf[js.Any])
+    inline def setTargetVersion(value: String): Self = StObject.set(x, "targetVersion", value.asInstanceOf[js.Any])
   }
 }

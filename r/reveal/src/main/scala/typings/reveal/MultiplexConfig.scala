@@ -18,25 +18,19 @@ trait MultiplexConfig extends StObject {
 }
 object MultiplexConfig {
   
-  @scala.inline
-  def apply(id: String, url: String): MultiplexConfig = {
+  inline def apply(id: String, url: String): MultiplexConfig = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[MultiplexConfig]
   }
   
-  @scala.inline
-  implicit class MultiplexConfigMutableBuilder[Self <: MultiplexConfig] (val x: Self) extends AnyVal {
+  extension [Self <: MultiplexConfig](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
+    inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
+    inline def setSecretUndefined: Self = StObject.set(x, "secret", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

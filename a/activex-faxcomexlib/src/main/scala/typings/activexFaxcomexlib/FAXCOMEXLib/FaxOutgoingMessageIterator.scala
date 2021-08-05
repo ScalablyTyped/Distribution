@@ -10,7 +10,7 @@ trait FaxOutgoingMessageIterator extends StObject {
   /** End of archive marker */
   val AtEOF: Boolean
   
-  @JSName("FAXCOMEXLib.FaxOutgoingMessageIterator_typekey")
+  /* private */ @JSName("FAXCOMEXLib.FaxOutgoingMessageIterator_typekey")
   var FAXCOMEXLibDotFaxOutgoingMessageIterator_typekey: FaxOutgoingMessageIterator
   
   /** Current message */
@@ -27,8 +27,7 @@ trait FaxOutgoingMessageIterator extends StObject {
 }
 object FaxOutgoingMessageIterator {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AtEOF: Boolean,
     FAXCOMEXLibDotFaxOutgoingMessageIterator_typekey: FaxOutgoingMessageIterator,
     Message: IFaxOutgoingMessage,
@@ -41,25 +40,18 @@ object FaxOutgoingMessageIterator {
     __obj.asInstanceOf[FaxOutgoingMessageIterator]
   }
   
-  @scala.inline
-  implicit class FaxOutgoingMessageIteratorMutableBuilder[Self <: FaxOutgoingMessageIterator] (val x: Self) extends AnyVal {
+  extension [Self <: FaxOutgoingMessageIterator](x: Self) {
     
-    @scala.inline
-    def setAtEOF(value: Boolean): Self = StObject.set(x, "AtEOF", value.asInstanceOf[js.Any])
+    inline def setAtEOF(value: Boolean): Self = StObject.set(x, "AtEOF", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFAXCOMEXLibDotFaxOutgoingMessageIterator_typekey(value: FaxOutgoingMessageIterator): Self = StObject.set(x, "FAXCOMEXLib.FaxOutgoingMessageIterator_typekey", value.asInstanceOf[js.Any])
+    inline def setFAXCOMEXLibDotFaxOutgoingMessageIterator_typekey(value: FaxOutgoingMessageIterator): Self = StObject.set(x, "FAXCOMEXLib.FaxOutgoingMessageIterator_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: IFaxOutgoingMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: IFaxOutgoingMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoveFirst(value: () => Unit): Self = StObject.set(x, "MoveFirst", js.Any.fromFunction0(value))
+    inline def setMoveFirst(value: () => Unit): Self = StObject.set(x, "MoveFirst", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMoveNext(value: () => Unit): Self = StObject.set(x, "MoveNext", js.Any.fromFunction0(value))
+    inline def setMoveNext(value: () => Unit): Self = StObject.set(x, "MoveNext", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPrefetchSize(value: Double): Self = StObject.set(x, "PrefetchSize", value.asInstanceOf[js.Any])
+    inline def setPrefetchSize(value: Double): Self = StObject.set(x, "PrefetchSize", value.asInstanceOf[js.Any])
   }
 }

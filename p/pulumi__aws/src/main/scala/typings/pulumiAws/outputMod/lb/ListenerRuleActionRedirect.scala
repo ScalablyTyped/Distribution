@@ -38,46 +38,33 @@ trait ListenerRuleActionRedirect extends StObject {
 }
 object ListenerRuleActionRedirect {
   
-  @scala.inline
-  def apply(statusCode: String): ListenerRuleActionRedirect = {
+  inline def apply(statusCode: String): ListenerRuleActionRedirect = {
     val __obj = js.Dynamic.literal(statusCode = statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListenerRuleActionRedirect]
   }
   
-  @scala.inline
-  implicit class ListenerRuleActionRedirectMutableBuilder[Self <: ListenerRuleActionRedirect] (val x: Self) extends AnyVal {
+  extension [Self <: ListenerRuleActionRedirect](x: Self) {
     
-    @scala.inline
-    def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+    inline def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
-    @scala.inline
-    def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+    inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+    inline def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
   }
 }

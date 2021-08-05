@@ -13,22 +13,17 @@ trait Char extends StObject {
 }
 object Char {
   
-  @scala.inline
-  def apply(attr: Attributes | Double): Char = {
+  inline def apply(attr: Attributes | Double): Char = {
     val __obj = js.Dynamic.literal(attr = attr.asInstanceOf[js.Any])
     __obj.asInstanceOf[Char]
   }
   
-  @scala.inline
-  implicit class CharMutableBuilder[Self <: Char] (val x: Self) extends AnyVal {
+  extension [Self <: Char](x: Self) {
     
-    @scala.inline
-    def setAttr(value: Attributes | Double): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
+    inline def setAttr(value: Attributes | Double): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChar(value: String): Self = StObject.set(x, "char", value.asInstanceOf[js.Any])
+    inline def setChar(value: String): Self = StObject.set(x, "char", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCharUndefined: Self = StObject.set(x, "char", js.undefined)
+    inline def setCharUndefined: Self = StObject.set(x, "char", js.undefined)
   }
 }

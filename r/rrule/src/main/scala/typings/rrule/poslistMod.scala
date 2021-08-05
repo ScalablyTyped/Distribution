@@ -13,8 +13,7 @@ object poslistMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def buildPoslist(
+  inline def buildPoslist(
     bysetpos: js.Array[Double],
     timeset: js.Array[Time],
     start: Double,

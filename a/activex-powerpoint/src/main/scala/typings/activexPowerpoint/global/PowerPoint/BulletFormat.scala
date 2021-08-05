@@ -9,7 +9,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("PowerPoint.BulletFormat")
 @js.native
-class BulletFormat protected ()
+/* private */ class BulletFormat ()
   extends StObject
      with typings.activexPowerpoint.PowerPoint.BulletFormat {
   
@@ -31,7 +31,7 @@ class BulletFormat protected ()
   /* CompleteClass */
   override def Picture(Picture: String): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("PowerPoint.BulletFormat_typekey")
   var PowerPointDotBulletFormat_typekey: typings.activexPowerpoint.PowerPoint.BulletFormat = js.native
   

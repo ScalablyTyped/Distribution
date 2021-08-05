@@ -11,12 +11,9 @@ object exampleDataMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createGroups(groupCount: Double, groupDepth: Double, startIndex: Double, itemsPerGroup: Double): js.Array[IGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGroups")(groupCount.asInstanceOf[js.Any], groupDepth.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], itemsPerGroup.asInstanceOf[js.Any])).asInstanceOf[js.Array[IGroup]]
-  @scala.inline
-  def createGroups(groupCount: Double, groupDepth: Double, startIndex: Double, itemsPerGroup: Double, level: Double): js.Array[IGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGroups")(groupCount.asInstanceOf[js.Any], groupDepth.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], itemsPerGroup.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[js.Array[IGroup]]
-  @scala.inline
-  def createGroups(
+  inline def createGroups(groupCount: Double, groupDepth: Double, startIndex: Double, itemsPerGroup: Double): js.Array[IGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGroups")(groupCount.asInstanceOf[js.Any], groupDepth.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], itemsPerGroup.asInstanceOf[js.Any])).asInstanceOf[js.Array[IGroup]]
+  inline def createGroups(groupCount: Double, groupDepth: Double, startIndex: Double, itemsPerGroup: Double, level: Double): js.Array[IGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGroups")(groupCount.asInstanceOf[js.Any], groupDepth.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], itemsPerGroup.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[js.Array[IGroup]]
+  inline def createGroups(
     groupCount: Double,
     groupDepth: Double,
     startIndex: Double,
@@ -24,8 +21,7 @@ object exampleDataMod {
     level: Double,
     key: String
   ): js.Array[IGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGroups")(groupCount.asInstanceOf[js.Any], groupDepth.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], itemsPerGroup.asInstanceOf[js.Any], level.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Array[IGroup]]
-  @scala.inline
-  def createGroups(
+  inline def createGroups(
     groupCount: Double,
     groupDepth: Double,
     startIndex: Double,
@@ -34,8 +30,7 @@ object exampleDataMod {
     key: String,
     isCollapsed: Boolean
   ): js.Array[IGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGroups")(groupCount.asInstanceOf[js.Any], groupDepth.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], itemsPerGroup.asInstanceOf[js.Any], level.asInstanceOf[js.Any], key.asInstanceOf[js.Any], isCollapsed.asInstanceOf[js.Any])).asInstanceOf[js.Array[IGroup]]
-  @scala.inline
-  def createGroups(
+  inline def createGroups(
     groupCount: Double,
     groupDepth: Double,
     startIndex: Double,
@@ -44,8 +39,7 @@ object exampleDataMod {
     key: Unit,
     isCollapsed: Boolean
   ): js.Array[IGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGroups")(groupCount.asInstanceOf[js.Any], groupDepth.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], itemsPerGroup.asInstanceOf[js.Any], level.asInstanceOf[js.Any], key.asInstanceOf[js.Any], isCollapsed.asInstanceOf[js.Any])).asInstanceOf[js.Array[IGroup]]
-  @scala.inline
-  def createGroups(
+  inline def createGroups(
     groupCount: Double,
     groupDepth: Double,
     startIndex: Double,
@@ -53,8 +47,7 @@ object exampleDataMod {
     level: Unit,
     key: String
   ): js.Array[IGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGroups")(groupCount.asInstanceOf[js.Any], groupDepth.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], itemsPerGroup.asInstanceOf[js.Any], level.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Array[IGroup]]
-  @scala.inline
-  def createGroups(
+  inline def createGroups(
     groupCount: Double,
     groupDepth: Double,
     startIndex: Double,
@@ -63,8 +56,7 @@ object exampleDataMod {
     key: String,
     isCollapsed: Boolean
   ): js.Array[IGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGroups")(groupCount.asInstanceOf[js.Any], groupDepth.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], itemsPerGroup.asInstanceOf[js.Any], level.asInstanceOf[js.Any], key.asInstanceOf[js.Any], isCollapsed.asInstanceOf[js.Any])).asInstanceOf[js.Array[IGroup]]
-  @scala.inline
-  def createGroups(
+  inline def createGroups(
     groupCount: Double,
     groupDepth: Double,
     startIndex: Double,
@@ -74,16 +66,12 @@ object exampleDataMod {
     isCollapsed: Boolean
   ): js.Array[IGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGroups")(groupCount.asInstanceOf[js.Any], groupDepth.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], itemsPerGroup.asInstanceOf[js.Any], level.asInstanceOf[js.Any], key.asInstanceOf[js.Any], isCollapsed.asInstanceOf[js.Any])).asInstanceOf[js.Array[IGroup]]
   
-  @scala.inline
-  def createListItems(count: Double): js.Array[IExampleItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("createListItems")(count.asInstanceOf[js.Any]).asInstanceOf[js.Array[IExampleItem]]
-  @scala.inline
-  def createListItems(count: Double, startIndex: Double): js.Array[IExampleItem] = (^.asInstanceOf[js.Dynamic].applyDynamic("createListItems")(count.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[IExampleItem]]
+  inline def createListItems(count: Double): js.Array[IExampleItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("createListItems")(count.asInstanceOf[js.Any]).asInstanceOf[js.Array[IExampleItem]]
+  inline def createListItems(count: Double, startIndex: Double): js.Array[IExampleItem] = (^.asInstanceOf[js.Dynamic].applyDynamic("createListItems")(count.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[IExampleItem]]
   
-  @scala.inline
-  def isGroupable(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGroupable")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def isGroupable(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGroupable")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @scala.inline
-  def lorem(wordCount: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lorem")(wordCount.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def lorem(wordCount: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lorem")(wordCount.asInstanceOf[js.Any]).asInstanceOf[String]
   
   trait IExampleItem extends StObject {
     
@@ -107,8 +95,7 @@ object exampleDataMod {
   }
   object IExampleItem {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       color: String,
       description: String,
       height: Double,
@@ -123,35 +110,25 @@ object exampleDataMod {
       __obj.asInstanceOf[IExampleItem]
     }
     
-    @scala.inline
-    implicit class IExampleItemMutableBuilder[Self <: IExampleItem] (val x: Self) extends AnyVal {
+    extension [Self <: IExampleItem](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShape(value: String): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+      inline def setShape(value: String): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
+      inline def setThumbnail(value: String): Self = StObject.set(x, "thumbnail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
 }

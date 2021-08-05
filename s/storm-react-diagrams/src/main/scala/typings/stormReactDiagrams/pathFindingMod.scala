@@ -88,8 +88,7 @@ object pathFindingMod {
   }
   object PathFinding {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       calculateDirectPath: (X, X) => js.Array[js.Array[Double]],
       calculateDynamicPath: (js.Array[js.Array[Double]], X, X, js.Array[js.Array[Double]], js.Array[js.Array[Double]]) => js.Any,
       calculateLinkStartEndCoords: (js.Array[js.Array[Double]], js.Array[js.Array[Double]]) => End,
@@ -100,25 +99,19 @@ object pathFindingMod {
       __obj.asInstanceOf[PathFinding]
     }
     
-    @scala.inline
-    implicit class PathFindingMutableBuilder[Self <: PathFinding] (val x: Self) extends AnyVal {
+    extension [Self <: PathFinding](x: Self) {
       
-      @scala.inline
-      def setCalculateDirectPath(value: (X, X) => js.Array[js.Array[Double]]): Self = StObject.set(x, "calculateDirectPath", js.Any.fromFunction2(value))
+      inline def setCalculateDirectPath(value: (X, X) => js.Array[js.Array[Double]]): Self = StObject.set(x, "calculateDirectPath", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCalculateDynamicPath(
+      inline def setCalculateDynamicPath(
         value: (js.Array[js.Array[Double]], X, X, js.Array[js.Array[Double]], js.Array[js.Array[Double]]) => js.Any
       ): Self = StObject.set(x, "calculateDynamicPath", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setCalculateLinkStartEndCoords(value: (js.Array[js.Array[Double]], js.Array[js.Array[Double]]) => End): Self = StObject.set(x, "calculateLinkStartEndCoords", js.Any.fromFunction2(value))
+      inline def setCalculateLinkStartEndCoords(value: (js.Array[js.Array[Double]], js.Array[js.Array[Double]]) => End): Self = StObject.set(x, "calculateLinkStartEndCoords", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDiagramEngine(value: DiagramEngine): Self = StObject.set(x, "diagramEngine", value.asInstanceOf[js.Any])
+      inline def setDiagramEngine(value: DiagramEngine): Self = StObject.set(x, "diagramEngine", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
+      inline def setInstance(value: js.Any): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])
     }
   }
 }

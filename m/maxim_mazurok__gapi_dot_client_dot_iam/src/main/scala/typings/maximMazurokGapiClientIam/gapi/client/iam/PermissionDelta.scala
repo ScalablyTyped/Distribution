@@ -14,31 +14,23 @@ trait PermissionDelta extends StObject {
 }
 object PermissionDelta {
   
-  @scala.inline
-  def apply(): PermissionDelta = {
+  inline def apply(): PermissionDelta = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PermissionDelta]
   }
   
-  @scala.inline
-  implicit class PermissionDeltaMutableBuilder[Self <: PermissionDelta] (val x: Self) extends AnyVal {
+  extension [Self <: PermissionDelta](x: Self) {
     
-    @scala.inline
-    def setAddedPermissions(value: js.Array[String]): Self = StObject.set(x, "addedPermissions", value.asInstanceOf[js.Any])
+    inline def setAddedPermissions(value: js.Array[String]): Self = StObject.set(x, "addedPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddedPermissionsUndefined: Self = StObject.set(x, "addedPermissions", js.undefined)
+    inline def setAddedPermissionsUndefined: Self = StObject.set(x, "addedPermissions", js.undefined)
     
-    @scala.inline
-    def setAddedPermissionsVarargs(value: String*): Self = StObject.set(x, "addedPermissions", js.Array(value :_*))
+    inline def setAddedPermissionsVarargs(value: String*): Self = StObject.set(x, "addedPermissions", js.Array(value :_*))
     
-    @scala.inline
-    def setRemovedPermissions(value: js.Array[String]): Self = StObject.set(x, "removedPermissions", value.asInstanceOf[js.Any])
+    inline def setRemovedPermissions(value: js.Array[String]): Self = StObject.set(x, "removedPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemovedPermissionsUndefined: Self = StObject.set(x, "removedPermissions", js.undefined)
+    inline def setRemovedPermissionsUndefined: Self = StObject.set(x, "removedPermissions", js.undefined)
     
-    @scala.inline
-    def setRemovedPermissionsVarargs(value: String*): Self = StObject.set(x, "removedPermissions", js.Array(value :_*))
+    inline def setRemovedPermissionsVarargs(value: String*): Self = StObject.set(x, "removedPermissions", js.Array(value :_*))
   }
 }

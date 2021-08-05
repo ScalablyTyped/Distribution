@@ -16,22 +16,17 @@ trait SchemaSearchDeveloperMetadataResponse extends StObject {
 }
 object SchemaSearchDeveloperMetadataResponse {
   
-  @scala.inline
-  def apply(): SchemaSearchDeveloperMetadataResponse = {
+  inline def apply(): SchemaSearchDeveloperMetadataResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSearchDeveloperMetadataResponse]
   }
   
-  @scala.inline
-  implicit class SchemaSearchDeveloperMetadataResponseMutableBuilder[Self <: SchemaSearchDeveloperMetadataResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSearchDeveloperMetadataResponse](x: Self) {
     
-    @scala.inline
-    def setMatchedDeveloperMetadata(value: js.Array[SchemaMatchedDeveloperMetadata]): Self = StObject.set(x, "matchedDeveloperMetadata", value.asInstanceOf[js.Any])
+    inline def setMatchedDeveloperMetadata(value: js.Array[SchemaMatchedDeveloperMetadata]): Self = StObject.set(x, "matchedDeveloperMetadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchedDeveloperMetadataUndefined: Self = StObject.set(x, "matchedDeveloperMetadata", js.undefined)
+    inline def setMatchedDeveloperMetadataUndefined: Self = StObject.set(x, "matchedDeveloperMetadata", js.undefined)
     
-    @scala.inline
-    def setMatchedDeveloperMetadataVarargs(value: SchemaMatchedDeveloperMetadata*): Self = StObject.set(x, "matchedDeveloperMetadata", js.Array(value :_*))
+    inline def setMatchedDeveloperMetadataVarargs(value: SchemaMatchedDeveloperMetadata*): Self = StObject.set(x, "matchedDeveloperMetadata", js.Array(value :_*))
   }
 }

@@ -17,20 +17,16 @@ object typesMod {
   }
   object FrameData {
     
-    @scala.inline
-    def apply(delta: Double, timestamp: Double): FrameData = {
+    inline def apply(delta: Double, timestamp: Double): FrameData = {
       val __obj = js.Dynamic.literal(delta = delta.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
       __obj.asInstanceOf[FrameData]
     }
     
-    @scala.inline
-    implicit class FrameDataMutableBuilder[Self <: FrameData] (val x: Self) extends AnyVal {
+    extension [Self <: FrameData](x: Self) {
       
-      @scala.inline
-      def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
+      inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
+      inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }
   }
   
@@ -59,20 +55,15 @@ object typesMod {
   trait StepId extends StObject
   object StepId {
     
-    @scala.inline
-    def postRender: typings.framesync.framesyncStrings.postRender = "postRender".asInstanceOf[typings.framesync.framesyncStrings.postRender]
+    inline def postRender: typings.framesync.framesyncStrings.postRender = "postRender".asInstanceOf[typings.framesync.framesyncStrings.postRender]
     
-    @scala.inline
-    def preRender: typings.framesync.framesyncStrings.preRender = "preRender".asInstanceOf[typings.framesync.framesyncStrings.preRender]
+    inline def preRender: typings.framesync.framesyncStrings.preRender = "preRender".asInstanceOf[typings.framesync.framesyncStrings.preRender]
     
-    @scala.inline
-    def read: typings.framesync.framesyncStrings.read = "read".asInstanceOf[typings.framesync.framesyncStrings.read]
+    inline def read: typings.framesync.framesyncStrings.read = "read".asInstanceOf[typings.framesync.framesyncStrings.read]
     
-    @scala.inline
-    def render: typings.framesync.framesyncStrings.render = "render".asInstanceOf[typings.framesync.framesyncStrings.render]
+    inline def render: typings.framesync.framesyncStrings.render = "render".asInstanceOf[typings.framesync.framesyncStrings.render]
     
-    @scala.inline
-    def update: typings.framesync.framesyncStrings.update = "update".asInstanceOf[typings.framesync.framesyncStrings.update]
+    inline def update: typings.framesync.framesyncStrings.update = "update".asInstanceOf[typings.framesync.framesyncStrings.update]
   }
   
   trait SyncApi extends StObject {
@@ -85,8 +76,7 @@ object typesMod {
   }
   object SyncApi {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cancelSync: keyinStepIdprocessProcessPostRender,
       steps: keyinStepIdStep,
       sync: keyinStepIdprocessProcess
@@ -95,17 +85,13 @@ object typesMod {
       __obj.asInstanceOf[SyncApi]
     }
     
-    @scala.inline
-    implicit class SyncApiMutableBuilder[Self <: SyncApi] (val x: Self) extends AnyVal {
+    extension [Self <: SyncApi](x: Self) {
       
-      @scala.inline
-      def setCancelSync(value: keyinStepIdprocessProcessPostRender): Self = StObject.set(x, "cancelSync", value.asInstanceOf[js.Any])
+      inline def setCancelSync(value: keyinStepIdprocessProcessPostRender): Self = StObject.set(x, "cancelSync", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSteps(value: keyinStepIdStep): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
+      inline def setSteps(value: keyinStepIdStep): Self = StObject.set(x, "steps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSync(value: keyinStepIdprocessProcess): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
+      inline def setSync(value: keyinStepIdprocessProcess): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
     }
   }
 }

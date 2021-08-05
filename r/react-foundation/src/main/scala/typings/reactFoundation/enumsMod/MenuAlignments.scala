@@ -18,12 +18,10 @@ object MenuAlignments {
   @JSImport("react-foundation/enums", "MenuAlignments.CENTER")
   @js.native
   def CENTER: MenuAlignments = js.native
-  @scala.inline
-  def CENTER_=(x: MenuAlignments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CENTER")(x.asInstanceOf[js.Any])
+  inline def CENTER_=(x: MenuAlignments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("CENTER")(x.asInstanceOf[js.Any])
   
   @JSImport("react-foundation/enums", "MenuAlignments.RIGHT")
   @js.native
   def RIGHT: MenuAlignments = js.native
-  @scala.inline
-  def RIGHT_=(x: MenuAlignments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RIGHT")(x.asInstanceOf[js.Any])
+  inline def RIGHT_=(x: MenuAlignments): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RIGHT")(x.asInstanceOf[js.Any])
 }

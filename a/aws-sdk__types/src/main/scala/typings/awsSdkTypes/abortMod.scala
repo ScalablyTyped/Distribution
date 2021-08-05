@@ -22,20 +22,16 @@ object abortMod {
   }
   object AbortController {
     
-    @scala.inline
-    def apply(abort: () => Unit, signal: AbortSignal): AbortController = {
+    inline def apply(abort: () => Unit, signal: AbortSignal): AbortController = {
       val __obj = js.Dynamic.literal(abort = js.Any.fromFunction0(abort), signal = signal.asInstanceOf[js.Any])
       __obj.asInstanceOf[AbortController]
     }
     
-    @scala.inline
-    implicit class AbortControllerMutableBuilder[Self <: AbortController] (val x: Self) extends AnyVal {
+    extension [Self <: AbortController](x: Self) {
       
-      @scala.inline
-      def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
+      inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
+      inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     }
   }
   
@@ -56,23 +52,18 @@ object abortMod {
   }
   object AbortSignal {
     
-    @scala.inline
-    def apply(aborted: Boolean): AbortSignal = {
+    inline def apply(aborted: Boolean): AbortSignal = {
       val __obj = js.Dynamic.literal(aborted = aborted.asInstanceOf[js.Any], onabort = null)
       __obj.asInstanceOf[AbortSignal]
     }
     
-    @scala.inline
-    implicit class AbortSignalMutableBuilder[Self <: AbortSignal] (val x: Self) extends AnyVal {
+    extension [Self <: AbortSignal](x: Self) {
       
-      @scala.inline
-      def setAborted(value: Boolean): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
+      inline def setAborted(value: Boolean): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnabort(value: AbortHandler): Self = StObject.set(x, "onabort", value.asInstanceOf[js.Any])
+      inline def setOnabort(value: AbortHandler): Self = StObject.set(x, "onabort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnabortNull: Self = StObject.set(x, "onabort", null)
+      inline def setOnabortNull: Self = StObject.set(x, "onabort", null)
     }
   }
 }

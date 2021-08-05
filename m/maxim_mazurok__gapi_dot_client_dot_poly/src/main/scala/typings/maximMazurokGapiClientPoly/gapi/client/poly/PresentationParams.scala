@@ -26,31 +26,23 @@ trait PresentationParams extends StObject {
 }
 object PresentationParams {
   
-  @scala.inline
-  def apply(): PresentationParams = {
+  inline def apply(): PresentationParams = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PresentationParams]
   }
   
-  @scala.inline
-  implicit class PresentationParamsMutableBuilder[Self <: PresentationParams] (val x: Self) extends AnyVal {
+  extension [Self <: PresentationParams](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setColorSpace(value: String): Self = StObject.set(x, "colorSpace", value.asInstanceOf[js.Any])
+    inline def setColorSpace(value: String): Self = StObject.set(x, "colorSpace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorSpaceUndefined: Self = StObject.set(x, "colorSpace", js.undefined)
+    inline def setColorSpaceUndefined: Self = StObject.set(x, "colorSpace", js.undefined)
     
-    @scala.inline
-    def setOrientingRotation(value: Quaternion): Self = StObject.set(x, "orientingRotation", value.asInstanceOf[js.Any])
+    inline def setOrientingRotation(value: Quaternion): Self = StObject.set(x, "orientingRotation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientingRotationUndefined: Self = StObject.set(x, "orientingRotation", js.undefined)
+    inline def setOrientingRotationUndefined: Self = StObject.set(x, "orientingRotation", js.undefined)
   }
 }

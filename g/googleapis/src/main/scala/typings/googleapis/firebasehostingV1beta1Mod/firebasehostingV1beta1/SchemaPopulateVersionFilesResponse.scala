@@ -22,28 +22,21 @@ trait SchemaPopulateVersionFilesResponse extends StObject {
 }
 object SchemaPopulateVersionFilesResponse {
   
-  @scala.inline
-  def apply(): SchemaPopulateVersionFilesResponse = {
+  inline def apply(): SchemaPopulateVersionFilesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPopulateVersionFilesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaPopulateVersionFilesResponseMutableBuilder[Self <: SchemaPopulateVersionFilesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPopulateVersionFilesResponse](x: Self) {
     
-    @scala.inline
-    def setUploadRequiredHashes(value: js.Array[String]): Self = StObject.set(x, "uploadRequiredHashes", value.asInstanceOf[js.Any])
+    inline def setUploadRequiredHashes(value: js.Array[String]): Self = StObject.set(x, "uploadRequiredHashes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadRequiredHashesUndefined: Self = StObject.set(x, "uploadRequiredHashes", js.undefined)
+    inline def setUploadRequiredHashesUndefined: Self = StObject.set(x, "uploadRequiredHashes", js.undefined)
     
-    @scala.inline
-    def setUploadRequiredHashesVarargs(value: String*): Self = StObject.set(x, "uploadRequiredHashes", js.Array(value :_*))
+    inline def setUploadRequiredHashesVarargs(value: String*): Self = StObject.set(x, "uploadRequiredHashes", js.Array(value :_*))
     
-    @scala.inline
-    def setUploadUrl(value: String): Self = StObject.set(x, "uploadUrl", value.asInstanceOf[js.Any])
+    inline def setUploadUrl(value: String): Self = StObject.set(x, "uploadUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadUrlUndefined: Self = StObject.set(x, "uploadUrl", js.undefined)
+    inline def setUploadUrlUndefined: Self = StObject.set(x, "uploadUrl", js.undefined)
   }
 }

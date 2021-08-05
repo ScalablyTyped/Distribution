@@ -22,43 +22,31 @@ trait ShiftItem
 }
 object ShiftItem {
   
-  @scala.inline
-  def apply(): ShiftItem = {
+  inline def apply(): ShiftItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ShiftItem]
   }
   
-  @scala.inline
-  implicit class ShiftItemMutableBuilder[Self <: ShiftItem] (val x: Self) extends AnyVal {
+  extension [Self <: ShiftItem](x: Self) {
     
-    @scala.inline
-    def setActivities(value: NullableOption[js.Array[ShiftActivity]]): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
+    inline def setActivities(value: NullableOption[js.Array[ShiftActivity]]): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActivitiesNull: Self = StObject.set(x, "activities", null)
+    inline def setActivitiesNull: Self = StObject.set(x, "activities", null)
     
-    @scala.inline
-    def setActivitiesUndefined: Self = StObject.set(x, "activities", js.undefined)
+    inline def setActivitiesUndefined: Self = StObject.set(x, "activities", js.undefined)
     
-    @scala.inline
-    def setActivitiesVarargs(value: ShiftActivity*): Self = StObject.set(x, "activities", js.Array(value :_*))
+    inline def setActivitiesVarargs(value: ShiftActivity*): Self = StObject.set(x, "activities", js.Array(value :_*))
     
-    @scala.inline
-    def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+    inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
+    inline def setDisplayNameNull: Self = StObject.set(x, "displayName", null)
     
-    @scala.inline
-    def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
+    inline def setDisplayNameUndefined: Self = StObject.set(x, "displayName", js.undefined)
     
-    @scala.inline
-    def setNotes(value: NullableOption[String]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
+    inline def setNotes(value: NullableOption[String]): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotesNull: Self = StObject.set(x, "notes", null)
+    inline def setNotesNull: Self = StObject.set(x, "notes", null)
     
-    @scala.inline
-    def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
+    inline def setNotesUndefined: Self = StObject.set(x, "notes", js.undefined)
   }
 }

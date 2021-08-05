@@ -16,19 +16,15 @@ trait SchemaInstancesRestoreBackupRequest extends StObject {
 }
 object SchemaInstancesRestoreBackupRequest {
   
-  @scala.inline
-  def apply(): SchemaInstancesRestoreBackupRequest = {
+  inline def apply(): SchemaInstancesRestoreBackupRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaInstancesRestoreBackupRequest]
   }
   
-  @scala.inline
-  implicit class SchemaInstancesRestoreBackupRequestMutableBuilder[Self <: SchemaInstancesRestoreBackupRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaInstancesRestoreBackupRequest](x: Self) {
     
-    @scala.inline
-    def setRestoreBackupContext(value: SchemaRestoreBackupContext): Self = StObject.set(x, "restoreBackupContext", value.asInstanceOf[js.Any])
+    inline def setRestoreBackupContext(value: SchemaRestoreBackupContext): Self = StObject.set(x, "restoreBackupContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRestoreBackupContextUndefined: Self = StObject.set(x, "restoreBackupContext", js.undefined)
+    inline def setRestoreBackupContextUndefined: Self = StObject.set(x, "restoreBackupContext", js.undefined)
   }
 }

@@ -16,22 +16,17 @@ trait RegSymbolSymbol extends StObject {
 }
 object RegSymbolSymbol {
   
-  @scala.inline
-  def apply(func: PrecedenceRightToLeftSymbol): RegSymbolSymbol = {
+  inline def apply(func: PrecedenceRightToLeftSymbol): RegSymbolSymbol = {
     val __obj = js.Dynamic.literal(func = func.asInstanceOf[js.Any], regSymbol = "sqrt\\b", symbol = "sqrt")
     __obj.asInstanceOf[RegSymbolSymbol]
   }
   
-  @scala.inline
-  implicit class RegSymbolSymbolMutableBuilder[Self <: RegSymbolSymbol] (val x: Self) extends AnyVal {
+  extension [Self <: RegSymbolSymbol](x: Self) {
     
-    @scala.inline
-    def setFunc(value: PrecedenceRightToLeftSymbol): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
+    inline def setFunc(value: PrecedenceRightToLeftSymbol): Self = StObject.set(x, "func", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegSymbol(value: sqrtBackslashb): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
+    inline def setRegSymbol(value: sqrtBackslashb): Self = StObject.set(x, "regSymbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbol(value: sqrt): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: sqrt): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
   }
 }

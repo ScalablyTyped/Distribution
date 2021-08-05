@@ -25,9 +25,9 @@ object packedArrayContextMod {
       */
     def addAtByteIndex(byteIndex: Double, valueToAdd: Double): Double = js.native
     
-    var array: js.Any = js.native
+    /* private */ var array: js.Any = js.native
     
-    var byteArray: js.Any = js.native
+    /* private */ var byteArray: js.Any = js.native
     
     def clear(): Unit = js.native
     
@@ -37,15 +37,15 @@ object packedArrayContextMod {
       * @param entryIndex The shortIndex of the entry to be consolidated
       * @param previousVersionIndex the index of the previous version of the entry
       */
-    var consolidateEntry: js.Any = js.native
+    /* private */ var consolidateEntry: js.Any = js.native
     
     def copyAndIncreaseSize(newPhysicalArrayLength: Double, newVirtualArrayLength: Double): PackedArrayContext = js.native
     
-    var copyEntriesAtLevelFromOther: js.Any = js.native
+    /* private */ var copyEntriesAtLevelFromOther: js.Any = js.native
     
     def determineTopLevelShiftForVirtualLength(virtualLength: Double): Double = js.native
     
-    var expandArrayIfNeeded: js.Any = js.native
+    /* private */ var expandArrayIfNeeded: js.Any = js.native
     
     /**
       * Expand entry as indicated.
@@ -72,7 +72,7 @@ object packedArrayContextMod {
     
     def getAtUnpackedIndex(index: Double): Double = js.native
     
-    var getIndexAtEntrySlot: js.Any = js.native
+    /* private */ var getIndexAtEntrySlot: js.Any = js.native
     
     def getIndexAtShortIndex(shortIndex: Double): Double = js.native
     
@@ -102,31 +102,31 @@ object packedArrayContextMod {
     
     def incrementAndGetAtUnpackedIndex(index: Double): Double = js.native
     
-    var init: js.Any = js.native
+    /* private */ var init: js.Any = js.native
     
-    var initArrayViews: js.Any = js.native
+    /* private */ var initArrayViews: js.Any = js.native
     
     val isPacked: Boolean = js.native
     
     def lazysetAtUnpackedIndex(index: Double, newValue: Double): Unit = js.native
     
-    var leafEntryToString: js.Any = js.native
+    /* private */ var leafEntryToString: js.Any = js.native
     
     def length(): Double = js.native
     
-    var longArray: js.Any = js.native
+    /* private */ var longArray: js.Any = js.native
     
-    var newEntry: js.Any = js.native
+    /* private */ var newEntry: js.Any = js.native
     
-    var newLeafEntry: js.Any = js.native
+    /* private */ var newLeafEntry: js.Any = js.native
     
-    var nonLeafEntryToString: js.Any = js.native
+    /* private */ var nonLeafEntryToString: js.Any = js.native
     
     var physicalLength: Double = js.native
     
-    var populateEquivalentEntriesWithEntriesFromOther: js.Any = js.native
+    /* private */ var populateEquivalentEntriesWithEntriesFromOther: js.Any = js.native
     
-    var populatedShortLength: js.Any = js.native
+    /* private */ var populatedShortLength: js.Any = js.native
     
     def resizeArray(newLength: Double): Unit = js.native
     
@@ -146,10 +146,10 @@ object packedArrayContextMod {
     
     def setVirtualLength(virtualLength: Double): Unit = js.native
     
-    var shortArray: js.Any = js.native
+    /* private */ var shortArray: js.Any = js.native
     
-    var topLevelShift: js.Any = js.native
+    /* private */ var topLevelShift: js.Any = js.native
     
-    var virtualLength: js.Any = js.native
+    /* private */ var virtualLength: js.Any = js.native
   }
 }

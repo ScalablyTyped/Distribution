@@ -33,25 +33,19 @@ trait PlusWebviewWebviewSplitLineStyles extends StObject {
 }
 object PlusWebviewWebviewSplitLineStyles {
   
-  @scala.inline
-  def apply(): PlusWebviewWebviewSplitLineStyles = {
+  inline def apply(): PlusWebviewWebviewSplitLineStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusWebviewWebviewSplitLineStyles]
   }
   
-  @scala.inline
-  implicit class PlusWebviewWebviewSplitLineStylesMutableBuilder[Self <: PlusWebviewWebviewSplitLineStyles] (val x: Self) extends AnyVal {
+  extension [Self <: PlusWebviewWebviewSplitLineStyles](x: Self) {
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
   }
 }

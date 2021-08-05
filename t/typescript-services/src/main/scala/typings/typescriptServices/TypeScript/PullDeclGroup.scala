@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait PullDeclGroup extends StObject {
   
-  var _decls: js.Any
+  /* private */ var _decls: js.Any
   
   def addDecl(decl: PullDecl): Unit
   
@@ -16,25 +16,19 @@ trait PullDeclGroup extends StObject {
 }
 object PullDeclGroup {
   
-  @scala.inline
-  def apply(_decls: js.Any, addDecl: PullDecl => Unit, getDecls: () => js.Array[PullDecl], name: String): PullDeclGroup = {
+  inline def apply(_decls: js.Any, addDecl: PullDecl => Unit, getDecls: () => js.Array[PullDecl], name: String): PullDeclGroup = {
     val __obj = js.Dynamic.literal(_decls = _decls.asInstanceOf[js.Any], addDecl = js.Any.fromFunction1(addDecl), getDecls = js.Any.fromFunction0(getDecls), name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[PullDeclGroup]
   }
   
-  @scala.inline
-  implicit class PullDeclGroupMutableBuilder[Self <: PullDeclGroup] (val x: Self) extends AnyVal {
+  extension [Self <: PullDeclGroup](x: Self) {
     
-    @scala.inline
-    def setAddDecl(value: PullDecl => Unit): Self = StObject.set(x, "addDecl", js.Any.fromFunction1(value))
+    inline def setAddDecl(value: PullDecl => Unit): Self = StObject.set(x, "addDecl", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetDecls(value: () => js.Array[PullDecl]): Self = StObject.set(x, "getDecls", js.Any.fromFunction0(value))
+    inline def setGetDecls(value: () => js.Array[PullDecl]): Self = StObject.set(x, "getDecls", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_decls(value: js.Any): Self = StObject.set(x, "_decls", value.asInstanceOf[js.Any])
+    inline def set_decls(value: js.Any): Self = StObject.set(x, "_decls", value.asInstanceOf[js.Any])
   }
 }

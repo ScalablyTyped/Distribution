@@ -66,42 +66,31 @@ trait IconSetConditionalFormatUpdateData extends StObject {
 }
 object IconSetConditionalFormatUpdateData {
   
-  @scala.inline
-  def apply(): IconSetConditionalFormatUpdateData = {
+  inline def apply(): IconSetConditionalFormatUpdateData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IconSetConditionalFormatUpdateData]
   }
   
-  @scala.inline
-  implicit class IconSetConditionalFormatUpdateDataMutableBuilder[Self <: IconSetConditionalFormatUpdateData] (val x: Self) extends AnyVal {
+  extension [Self <: IconSetConditionalFormatUpdateData](x: Self) {
     
-    @scala.inline
-    def setCriteria(value: js.Array[ConditionalIconCriterion]): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
+    inline def setCriteria(value: js.Array[ConditionalIconCriterion]): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
+    inline def setCriteriaUndefined: Self = StObject.set(x, "criteria", js.undefined)
     
-    @scala.inline
-    def setCriteriaVarargs(value: ConditionalIconCriterion*): Self = StObject.set(x, "criteria", js.Array(value :_*))
+    inline def setCriteriaVarargs(value: ConditionalIconCriterion*): Self = StObject.set(x, "criteria", js.Array(value :_*))
     
-    @scala.inline
-    def setReverseIconOrder(value: Boolean): Self = StObject.set(x, "reverseIconOrder", value.asInstanceOf[js.Any])
+    inline def setReverseIconOrder(value: Boolean): Self = StObject.set(x, "reverseIconOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReverseIconOrderUndefined: Self = StObject.set(x, "reverseIconOrder", js.undefined)
+    inline def setReverseIconOrderUndefined: Self = StObject.set(x, "reverseIconOrder", js.undefined)
     
-    @scala.inline
-    def setShowIconOnly(value: Boolean): Self = StObject.set(x, "showIconOnly", value.asInstanceOf[js.Any])
+    inline def setShowIconOnly(value: Boolean): Self = StObject.set(x, "showIconOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowIconOnlyUndefined: Self = StObject.set(x, "showIconOnly", js.undefined)
+    inline def setShowIconOnlyUndefined: Self = StObject.set(x, "showIconOnly", js.undefined)
     
-    @scala.inline
-    def setStyle(
+    inline def setStyle(
       value: IconSet | Invalid | ThreeArrows | ThreeArrowsGray | ThreeFlags | ThreeTrafficLights1 | ThreeTrafficLights2 | ThreeSigns | ThreeSymbols | ThreeSymbols2 | FourArrows | FourArrowsGray | FourRedToBlack | FourRating | FourTrafficLights | FiveArrows | FiveArrowsGray | FiveRating | FiveQuarters | ThreeStars | ThreeTriangles | FiveBoxes
     ): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

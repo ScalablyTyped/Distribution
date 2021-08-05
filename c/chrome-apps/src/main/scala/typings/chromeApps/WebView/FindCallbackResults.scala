@@ -22,8 +22,7 @@ trait FindCallbackResults extends StObject {
 }
 object FindCallbackResults {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activeMatchOrdinal: integer,
     canceled: Boolean,
     numberOfMatches: integer,
@@ -33,19 +32,14 @@ object FindCallbackResults {
     __obj.asInstanceOf[FindCallbackResults]
   }
   
-  @scala.inline
-  implicit class FindCallbackResultsMutableBuilder[Self <: FindCallbackResults] (val x: Self) extends AnyVal {
+  extension [Self <: FindCallbackResults](x: Self) {
     
-    @scala.inline
-    def setActiveMatchOrdinal(value: integer): Self = StObject.set(x, "activeMatchOrdinal", value.asInstanceOf[js.Any])
+    inline def setActiveMatchOrdinal(value: integer): Self = StObject.set(x, "activeMatchOrdinal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCanceled(value: Boolean): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
+    inline def setCanceled(value: Boolean): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfMatches(value: integer): Self = StObject.set(x, "numberOfMatches", value.asInstanceOf[js.Any])
+    inline def setNumberOfMatches(value: integer): Self = StObject.set(x, "numberOfMatches", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectionRect(value: SelectionRect): Self = StObject.set(x, "selectionRect", value.asInstanceOf[js.Any])
+    inline def setSelectionRect(value: SelectionRect): Self = StObject.set(x, "selectionRect", value.asInstanceOf[js.Any])
   }
 }

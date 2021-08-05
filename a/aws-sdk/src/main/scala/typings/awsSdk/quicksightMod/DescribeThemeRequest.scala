@@ -28,31 +28,23 @@ trait DescribeThemeRequest extends StObject {
 }
 object DescribeThemeRequest {
   
-  @scala.inline
-  def apply(AwsAccountId: AwsAndAccountId, ThemeId: RestrictiveResourceId): DescribeThemeRequest = {
+  inline def apply(AwsAccountId: AwsAndAccountId, ThemeId: RestrictiveResourceId): DescribeThemeRequest = {
     val __obj = js.Dynamic.literal(AwsAccountId = AwsAccountId.asInstanceOf[js.Any], ThemeId = ThemeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeThemeRequest]
   }
   
-  @scala.inline
-  implicit class DescribeThemeRequestMutableBuilder[Self <: DescribeThemeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeThemeRequest](x: Self) {
     
-    @scala.inline
-    def setAliasName(value: AliasName): Self = StObject.set(x, "AliasName", value.asInstanceOf[js.Any])
+    inline def setAliasName(value: AliasName): Self = StObject.set(x, "AliasName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAliasNameUndefined: Self = StObject.set(x, "AliasName", js.undefined)
+    inline def setAliasNameUndefined: Self = StObject.set(x, "AliasName", js.undefined)
     
-    @scala.inline
-    def setAwsAccountId(value: AwsAndAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
+    inline def setAwsAccountId(value: AwsAndAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeId(value: RestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
+    inline def setThemeId(value: RestrictiveResourceId): Self = StObject.set(x, "ThemeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionNumber(value: VersionNumber): Self = StObject.set(x, "VersionNumber", value.asInstanceOf[js.Any])
+    inline def setVersionNumber(value: VersionNumber): Self = StObject.set(x, "VersionNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionNumberUndefined: Self = StObject.set(x, "VersionNumber", js.undefined)
+    inline def setVersionNumberUndefined: Self = StObject.set(x, "VersionNumber", js.undefined)
   }
 }

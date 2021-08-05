@@ -42,8 +42,7 @@ trait XPrintJob
 }
 object XPrintJob {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PrintOptions: SafeArray[PropertyValue],
     Printable: XPrintable,
     Printer: SafeArray[PropertyValue],
@@ -59,28 +58,20 @@ object XPrintJob {
     __obj.asInstanceOf[XPrintJob]
   }
   
-  @scala.inline
-  implicit class XPrintJobMutableBuilder[Self <: XPrintJob] (val x: Self) extends AnyVal {
+  extension [Self <: XPrintJob](x: Self) {
     
-    @scala.inline
-    def setCancelJob(value: () => Unit): Self = StObject.set(x, "cancelJob", js.Any.fromFunction0(value))
+    inline def setCancelJob(value: () => Unit): Self = StObject.set(x, "cancelJob", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPrintOptions(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "getPrintOptions", js.Any.fromFunction0(value))
+    inline def setGetPrintOptions(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "getPrintOptions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPrintable(value: () => XPrintable): Self = StObject.set(x, "getPrintable", js.Any.fromFunction0(value))
+    inline def setGetPrintable(value: () => XPrintable): Self = StObject.set(x, "getPrintable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPrinter(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "getPrinter", js.Any.fromFunction0(value))
+    inline def setGetPrinter(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "getPrinter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setPrintOptions(value: SafeArray[PropertyValue]): Self = StObject.set(x, "PrintOptions", value.asInstanceOf[js.Any])
+    inline def setPrintOptions(value: SafeArray[PropertyValue]): Self = StObject.set(x, "PrintOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrintable(value: XPrintable): Self = StObject.set(x, "Printable", value.asInstanceOf[js.Any])
+    inline def setPrintable(value: XPrintable): Self = StObject.set(x, "Printable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrinter(value: SafeArray[PropertyValue]): Self = StObject.set(x, "Printer", value.asInstanceOf[js.Any])
+    inline def setPrinter(value: SafeArray[PropertyValue]): Self = StObject.set(x, "Printer", value.asInstanceOf[js.Any])
   }
 }

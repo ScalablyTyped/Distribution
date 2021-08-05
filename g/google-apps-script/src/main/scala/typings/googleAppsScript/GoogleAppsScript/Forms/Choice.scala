@@ -39,8 +39,7 @@ trait Choice extends StObject {
 }
 object Choice {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getGotoPage: () => PageBreakItem,
     getPageNavigationType: () => PageNavigationType,
     getValue: () => String,
@@ -50,19 +49,14 @@ object Choice {
     __obj.asInstanceOf[Choice]
   }
   
-  @scala.inline
-  implicit class ChoiceMutableBuilder[Self <: Choice] (val x: Self) extends AnyVal {
+  extension [Self <: Choice](x: Self) {
     
-    @scala.inline
-    def setGetGotoPage(value: () => PageBreakItem): Self = StObject.set(x, "getGotoPage", js.Any.fromFunction0(value))
+    inline def setGetGotoPage(value: () => PageBreakItem): Self = StObject.set(x, "getGotoPage", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPageNavigationType(value: () => PageNavigationType): Self = StObject.set(x, "getPageNavigationType", js.Any.fromFunction0(value))
+    inline def setGetPageNavigationType(value: () => PageNavigationType): Self = StObject.set(x, "getPageNavigationType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => String): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsCorrectAnswer(value: () => Boolean): Self = StObject.set(x, "isCorrectAnswer", js.Any.fromFunction0(value))
+    inline def setIsCorrectAnswer(value: () => Boolean): Self = StObject.set(x, "isCorrectAnswer", js.Any.fromFunction0(value))
   }
 }

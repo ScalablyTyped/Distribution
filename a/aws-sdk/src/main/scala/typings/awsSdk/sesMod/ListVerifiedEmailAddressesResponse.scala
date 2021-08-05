@@ -13,22 +13,17 @@ trait ListVerifiedEmailAddressesResponse extends StObject {
 }
 object ListVerifiedEmailAddressesResponse {
   
-  @scala.inline
-  def apply(): ListVerifiedEmailAddressesResponse = {
+  inline def apply(): ListVerifiedEmailAddressesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListVerifiedEmailAddressesResponse]
   }
   
-  @scala.inline
-  implicit class ListVerifiedEmailAddressesResponseMutableBuilder[Self <: ListVerifiedEmailAddressesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListVerifiedEmailAddressesResponse](x: Self) {
     
-    @scala.inline
-    def setVerifiedEmailAddresses(value: AddressList): Self = StObject.set(x, "VerifiedEmailAddresses", value.asInstanceOf[js.Any])
+    inline def setVerifiedEmailAddresses(value: AddressList): Self = StObject.set(x, "VerifiedEmailAddresses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVerifiedEmailAddressesUndefined: Self = StObject.set(x, "VerifiedEmailAddresses", js.undefined)
+    inline def setVerifiedEmailAddressesUndefined: Self = StObject.set(x, "VerifiedEmailAddresses", js.undefined)
     
-    @scala.inline
-    def setVerifiedEmailAddressesVarargs(value: Address*): Self = StObject.set(x, "VerifiedEmailAddresses", js.Array(value :_*))
+    inline def setVerifiedEmailAddressesVarargs(value: Address*): Self = StObject.set(x, "VerifiedEmailAddresses", js.Array(value :_*))
   }
 }

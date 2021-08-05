@@ -18,22 +18,17 @@ trait AssignVolumeRequest extends StObject {
 }
 object AssignVolumeRequest {
   
-  @scala.inline
-  def apply(VolumeId: String): AssignVolumeRequest = {
+  inline def apply(VolumeId: String): AssignVolumeRequest = {
     val __obj = js.Dynamic.literal(VolumeId = VolumeId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssignVolumeRequest]
   }
   
-  @scala.inline
-  implicit class AssignVolumeRequestMutableBuilder[Self <: AssignVolumeRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssignVolumeRequest](x: Self) {
     
-    @scala.inline
-    def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: String): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
+    inline def setInstanceIdUndefined: Self = StObject.set(x, "InstanceId", js.undefined)
     
-    @scala.inline
-    def setVolumeId(value: String): Self = StObject.set(x, "VolumeId", value.asInstanceOf[js.Any])
+    inline def setVolumeId(value: String): Self = StObject.set(x, "VolumeId", value.asInstanceOf[js.Any])
   }
 }

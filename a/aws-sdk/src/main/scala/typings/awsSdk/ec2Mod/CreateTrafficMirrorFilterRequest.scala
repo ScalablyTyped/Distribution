@@ -28,40 +28,29 @@ trait CreateTrafficMirrorFilterRequest extends StObject {
 }
 object CreateTrafficMirrorFilterRequest {
   
-  @scala.inline
-  def apply(): CreateTrafficMirrorFilterRequest = {
+  inline def apply(): CreateTrafficMirrorFilterRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateTrafficMirrorFilterRequest]
   }
   
-  @scala.inline
-  implicit class CreateTrafficMirrorFilterRequestMutableBuilder[Self <: CreateTrafficMirrorFilterRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTrafficMirrorFilterRequest](x: Self) {
     
-    @scala.inline
-    def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
+    inline def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
+    inline def setClientTokenUndefined: Self = StObject.set(x, "ClientToken", js.undefined)
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
+    inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
+    inline def setDryRunUndefined: Self = StObject.set(x, "DryRun", js.undefined)
     
-    @scala.inline
-    def setTagSpecifications(value: TagSpecificationList): Self = StObject.set(x, "TagSpecifications", value.asInstanceOf[js.Any])
+    inline def setTagSpecifications(value: TagSpecificationList): Self = StObject.set(x, "TagSpecifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
+    inline def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
     
-    @scala.inline
-    def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
+    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
   }
 }

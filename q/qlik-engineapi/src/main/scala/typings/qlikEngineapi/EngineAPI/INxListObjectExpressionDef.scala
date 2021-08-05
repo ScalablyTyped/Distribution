@@ -21,19 +21,15 @@ trait INxListObjectExpressionDef extends StObject {
 }
 object INxListObjectExpressionDef {
   
-  @scala.inline
-  def apply(qExpr: String, qLibraryId: String): INxListObjectExpressionDef = {
+  inline def apply(qExpr: String, qLibraryId: String): INxListObjectExpressionDef = {
     val __obj = js.Dynamic.literal(qExpr = qExpr.asInstanceOf[js.Any], qLibraryId = qLibraryId.asInstanceOf[js.Any])
     __obj.asInstanceOf[INxListObjectExpressionDef]
   }
   
-  @scala.inline
-  implicit class INxListObjectExpressionDefMutableBuilder[Self <: INxListObjectExpressionDef] (val x: Self) extends AnyVal {
+  extension [Self <: INxListObjectExpressionDef](x: Self) {
     
-    @scala.inline
-    def setQExpr(value: String): Self = StObject.set(x, "qExpr", value.asInstanceOf[js.Any])
+    inline def setQExpr(value: String): Self = StObject.set(x, "qExpr", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQLibraryId(value: String): Self = StObject.set(x, "qLibraryId", value.asInstanceOf[js.Any])
+    inline def setQLibraryId(value: String): Self = StObject.set(x, "qLibraryId", value.asInstanceOf[js.Any])
   }
 }

@@ -63,67 +63,47 @@ trait Step extends StObject {
 }
 object Step {
   
-  @scala.inline
-  def apply(endTime: EndTime, startTime: StartTime, status: JobStatus, stepName: StepName): Step = {
+  inline def apply(endTime: EndTime, startTime: StartTime, status: JobStatus, stepName: StepName): Step = {
     val __obj = js.Dynamic.literal(endTime = endTime.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], stepName = stepName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Step]
   }
   
-  @scala.inline
-  implicit class StepMutableBuilder[Self <: Step] (val x: Self) extends AnyVal {
+  extension [Self <: Step](x: Self) {
     
-    @scala.inline
-    def setArtifactsUrl(value: ArtifactsUrl): Self = StObject.set(x, "artifactsUrl", value.asInstanceOf[js.Any])
+    inline def setArtifactsUrl(value: ArtifactsUrl): Self = StObject.set(x, "artifactsUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtifactsUrlUndefined: Self = StObject.set(x, "artifactsUrl", js.undefined)
+    inline def setArtifactsUrlUndefined: Self = StObject.set(x, "artifactsUrl", js.undefined)
     
-    @scala.inline
-    def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: EndTime): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: EndTime): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogUrl(value: LogUrl): Self = StObject.set(x, "logUrl", value.asInstanceOf[js.Any])
+    inline def setLogUrl(value: LogUrl): Self = StObject.set(x, "logUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogUrlUndefined: Self = StObject.set(x, "logUrl", js.undefined)
+    inline def setLogUrlUndefined: Self = StObject.set(x, "logUrl", js.undefined)
     
-    @scala.inline
-    def setScreenshots(value: Screenshots): Self = StObject.set(x, "screenshots", value.asInstanceOf[js.Any])
+    inline def setScreenshots(value: Screenshots): Self = StObject.set(x, "screenshots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenshotsUndefined: Self = StObject.set(x, "screenshots", js.undefined)
+    inline def setScreenshotsUndefined: Self = StObject.set(x, "screenshots", js.undefined)
     
-    @scala.inline
-    def setStartTime(value: StartTime): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: StartTime): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: JobStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: JobStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusReason(value: StatusReason): Self = StObject.set(x, "statusReason", value.asInstanceOf[js.Any])
+    inline def setStatusReason(value: StatusReason): Self = StObject.set(x, "statusReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusReasonUndefined: Self = StObject.set(x, "statusReason", js.undefined)
+    inline def setStatusReasonUndefined: Self = StObject.set(x, "statusReason", js.undefined)
     
-    @scala.inline
-    def setStepName(value: StepName): Self = StObject.set(x, "stepName", value.asInstanceOf[js.Any])
+    inline def setStepName(value: StepName): Self = StObject.set(x, "stepName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestArtifactsUrl(value: TestArtifactsUrl): Self = StObject.set(x, "testArtifactsUrl", value.asInstanceOf[js.Any])
+    inline def setTestArtifactsUrl(value: TestArtifactsUrl): Self = StObject.set(x, "testArtifactsUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestArtifactsUrlUndefined: Self = StObject.set(x, "testArtifactsUrl", js.undefined)
+    inline def setTestArtifactsUrlUndefined: Self = StObject.set(x, "testArtifactsUrl", js.undefined)
     
-    @scala.inline
-    def setTestConfigUrl(value: TestConfigUrl): Self = StObject.set(x, "testConfigUrl", value.asInstanceOf[js.Any])
+    inline def setTestConfigUrl(value: TestConfigUrl): Self = StObject.set(x, "testConfigUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestConfigUrlUndefined: Self = StObject.set(x, "testConfigUrl", js.undefined)
+    inline def setTestConfigUrlUndefined: Self = StObject.set(x, "testConfigUrl", js.undefined)
   }
 }

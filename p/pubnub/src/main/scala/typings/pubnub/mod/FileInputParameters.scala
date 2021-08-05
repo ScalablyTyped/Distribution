@@ -14,22 +14,17 @@ trait FileInputParameters extends StObject {
 }
 object FileInputParameters {
   
-  @scala.inline
-  def apply(channel: String, id: String, name: String): FileInputParameters = {
+  inline def apply(channel: String, id: String, name: String): FileInputParameters = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileInputParameters]
   }
   
-  @scala.inline
-  implicit class FileInputParametersMutableBuilder[Self <: FileInputParameters] (val x: Self) extends AnyVal {
+  extension [Self <: FileInputParameters](x: Self) {
     
-    @scala.inline
-    def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
+    inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

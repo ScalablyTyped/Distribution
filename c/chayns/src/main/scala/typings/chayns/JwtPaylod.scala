@@ -31,8 +31,7 @@ trait JwtPaylod extends StObject {
 }
 object JwtPaylod {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FacebookUserID: String,
     FirstName: String,
     LastName: String,
@@ -46,31 +45,22 @@ object JwtPaylod {
     __obj.asInstanceOf[JwtPaylod]
   }
   
-  @scala.inline
-  implicit class JwtPaylodMutableBuilder[Self <: JwtPaylod] (val x: Self) extends AnyVal {
+  extension [Self <: JwtPaylod](x: Self) {
     
-    @scala.inline
-    def setFacebookUserID(value: String): Self = StObject.set(x, "FacebookUserID", value.asInstanceOf[js.Any])
+    inline def setFacebookUserID(value: String): Self = StObject.set(x, "FacebookUserID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstName(value: String): Self = StObject.set(x, "FirstName", value.asInstanceOf[js.Any])
+    inline def setFirstName(value: String): Self = StObject.set(x, "FirstName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAdmin(value: Boolean): Self = StObject.set(x, "isAdmin", value.asInstanceOf[js.Any])
+    inline def setIsAdmin(value: Boolean): Self = StObject.set(x, "isAdmin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastName(value: String): Self = StObject.set(x, "LastName", value.asInstanceOf[js.Any])
+    inline def setLastName(value: String): Self = StObject.set(x, "LastName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationID(value: Double): Self = StObject.set(x, "LocationID", value.asInstanceOf[js.Any])
+    inline def setLocationID(value: Double): Self = StObject.set(x, "LocationID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoginType(value: Double): Self = StObject.set(x, "LoginType", value.asInstanceOf[js.Any])
+    inline def setLoginType(value: Double): Self = StObject.set(x, "LoginType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersonID(value: String): Self = StObject.set(x, "PersonID", value.asInstanceOf[js.Any])
+    inline def setPersonID(value: String): Self = StObject.set(x, "PersonID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTobitUserID(value: Double): Self = StObject.set(x, "TobitUserID", value.asInstanceOf[js.Any])
+    inline def setTobitUserID(value: Double): Self = StObject.set(x, "TobitUserID", value.asInstanceOf[js.Any])
   }
 }

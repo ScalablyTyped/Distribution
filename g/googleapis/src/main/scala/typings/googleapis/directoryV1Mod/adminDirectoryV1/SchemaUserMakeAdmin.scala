@@ -17,19 +17,15 @@ trait SchemaUserMakeAdmin extends StObject {
 }
 object SchemaUserMakeAdmin {
   
-  @scala.inline
-  def apply(): SchemaUserMakeAdmin = {
+  inline def apply(): SchemaUserMakeAdmin = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUserMakeAdmin]
   }
   
-  @scala.inline
-  implicit class SchemaUserMakeAdminMutableBuilder[Self <: SchemaUserMakeAdmin] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUserMakeAdmin](x: Self) {
     
-    @scala.inline
-    def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Boolean): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

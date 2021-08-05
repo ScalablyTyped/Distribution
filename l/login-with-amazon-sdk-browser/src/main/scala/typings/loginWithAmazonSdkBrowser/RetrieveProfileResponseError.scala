@@ -25,19 +25,15 @@ trait RetrieveProfileResponseError
 }
 object RetrieveProfileResponseError {
   
-  @scala.inline
-  def apply(error: String): RetrieveProfileResponseError = {
+  inline def apply(error: String): RetrieveProfileResponseError = {
     val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], success = false)
     __obj.asInstanceOf[RetrieveProfileResponseError]
   }
   
-  @scala.inline
-  implicit class RetrieveProfileResponseErrorMutableBuilder[Self <: RetrieveProfileResponseError] (val x: Self) extends AnyVal {
+  extension [Self <: RetrieveProfileResponseError](x: Self) {
     
-    @scala.inline
-    def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: `false`): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: `false`): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }
 }

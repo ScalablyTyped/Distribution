@@ -55,56 +55,40 @@ object fullScreenMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setKeys(value: Boolean): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
+      inline def setKeys(value: Boolean): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
+      inline def setKeysUndefined: Self = StObject.set(x, "keys", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String | Text | HTMLElement): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String | Text | HTMLElement): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelActive(value: String | Text | HTMLElement): Self = StObject.set(x, "labelActive", value.asInstanceOf[js.Any])
+      inline def setLabelActive(value: String | Text | HTMLElement): Self = StObject.set(x, "labelActive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelActiveUndefined: Self = StObject.set(x, "labelActive", js.undefined)
+      inline def setLabelActiveUndefined: Self = StObject.set(x, "labelActive", js.undefined)
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setSource(value: HTMLElement | String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: HTMLElement | String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+      inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
       
-      @scala.inline
-      def setTarget(value: HTMLElement | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: HTMLElement | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
+      inline def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
       
-      @scala.inline
-      def setTipLabel(value: String): Self = StObject.set(x, "tipLabel", value.asInstanceOf[js.Any])
+      inline def setTipLabel(value: String): Self = StObject.set(x, "tipLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTipLabelUndefined: Self = StObject.set(x, "tipLabel", js.undefined)
+      inline def setTipLabelUndefined: Self = StObject.set(x, "tipLabel", js.undefined)
     }
   }
 }

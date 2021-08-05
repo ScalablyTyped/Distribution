@@ -15,17 +15,14 @@ trait CDO
 }
 object CDO {
   
-  @scala.inline
-  def apply(): CDO = {
+  inline def apply(): CDO = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("CDO")
     __obj.asInstanceOf[CDO]
   }
   
-  @scala.inline
-  implicit class CDOMutableBuilder[Self <: CDO] (val x: Self) extends AnyVal {
+  extension [Self <: CDO](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.cssTree.cssTreeStrings.CDO): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.cssTree.cssTreeStrings.CDO): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

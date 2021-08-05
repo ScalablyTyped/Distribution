@@ -18,28 +18,21 @@ trait DescribeReservedInstancesModificationsResult extends StObject {
 }
 object DescribeReservedInstancesModificationsResult {
   
-  @scala.inline
-  def apply(): DescribeReservedInstancesModificationsResult = {
+  inline def apply(): DescribeReservedInstancesModificationsResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeReservedInstancesModificationsResult]
   }
   
-  @scala.inline
-  implicit class DescribeReservedInstancesModificationsResultMutableBuilder[Self <: DescribeReservedInstancesModificationsResult] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeReservedInstancesModificationsResult](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setReservedInstancesModifications(value: ReservedInstancesModificationList): Self = StObject.set(x, "ReservedInstancesModifications", value.asInstanceOf[js.Any])
+    inline def setReservedInstancesModifications(value: ReservedInstancesModificationList): Self = StObject.set(x, "ReservedInstancesModifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedInstancesModificationsUndefined: Self = StObject.set(x, "ReservedInstancesModifications", js.undefined)
+    inline def setReservedInstancesModificationsUndefined: Self = StObject.set(x, "ReservedInstancesModifications", js.undefined)
     
-    @scala.inline
-    def setReservedInstancesModificationsVarargs(value: ReservedInstancesModification*): Self = StObject.set(x, "ReservedInstancesModifications", js.Array(value :_*))
+    inline def setReservedInstancesModificationsVarargs(value: ReservedInstancesModification*): Self = StObject.set(x, "ReservedInstancesModifications", js.Array(value :_*))
   }
 }

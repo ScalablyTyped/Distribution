@@ -11,15 +11,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def setBubble(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBubble")().asInstanceOf[Unit]
-  @scala.inline
-  def setBubble(count: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBubble")(count.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def setBubble(count: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBubble")(count.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setBubble(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBubble")().asInstanceOf[Unit]
+  inline def setBubble(count: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBubble")(count.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setBubble(count: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBubble")(count.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def setOptions(options: TinyconOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def setOptions(options: TinyconOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOptions")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   trait TinyconOptions extends StObject {
     
@@ -39,56 +35,40 @@ object mod {
   }
   object TinyconOptions {
     
-    @scala.inline
-    def apply(): TinyconOptions = {
+    inline def apply(): TinyconOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TinyconOptions]
     }
     
-    @scala.inline
-    implicit class TinyconOptionsMutableBuilder[Self <: TinyconOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TinyconOptions](x: Self) {
       
-      @scala.inline
-      def setAbbreviate(value: Boolean): Self = StObject.set(x, "abbreviate", value.asInstanceOf[js.Any])
+      inline def setAbbreviate(value: Boolean): Self = StObject.set(x, "abbreviate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAbbreviateUndefined: Self = StObject.set(x, "abbreviate", js.undefined)
+      inline def setAbbreviateUndefined: Self = StObject.set(x, "abbreviate", js.undefined)
       
-      @scala.inline
-      def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+      inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+      inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setFallback(value: Boolean | force): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      inline def setFallback(value: Boolean | force): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
+      inline def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
       
-      @scala.inline
-      def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
+      inline def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
+      inline def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
 }

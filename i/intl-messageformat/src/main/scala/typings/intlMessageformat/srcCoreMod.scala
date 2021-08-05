@@ -67,7 +67,7 @@ object srcCoreMod {
       opts: Options
     ) = this()
     
-    val ast: js.Any = js.native
+    /* private */ val ast: js.Any = js.native
     
     def format[T](): String | T | (js.Array[String | T]) = js.native
     def format[T](
@@ -89,17 +89,17 @@ object srcCoreMod {
         ]
     ): js.Array[MessageFormatPart[T]] = js.native
     
-    val formats: js.Any = js.native
+    /* private */ val formats: js.Any = js.native
     
-    val formatterCache: js.Any = js.native
+    /* private */ val formatterCache: js.Any = js.native
     
-    val formatters: js.Any = js.native
+    /* private */ val formatters: js.Any = js.native
     
     def getAst(): js.Array[MessageFormatElement] = js.native
     
-    val locales: js.Any = js.native
+    /* private */ val locales: js.Any = js.native
     
-    val message: js.Any = js.native
+    /* private */ val message: js.Any = js.native
     
     def resolvedOptions(): Locale = js.native
   }
@@ -113,20 +113,17 @@ object srcCoreMod {
     @JSImport("intl-messageformat/src/core", "IntlMessageFormat.__parse")
     @js.native
     def __parse: js.UndefOr[FnCall] = js.native
-    @scala.inline
-    def __parse_=(x: js.UndefOr[FnCall]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__parse")(x.asInstanceOf[js.Any])
+    inline def __parse_=(x: js.UndefOr[FnCall]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("__parse")(x.asInstanceOf[js.Any])
     
     @JSImport("intl-messageformat/src/core", "IntlMessageFormat.formats")
     @js.native
     def formats: typings.intlMessageformat.anon.Date = js.native
-    @scala.inline
-    def formats_=(x: typings.intlMessageformat.anon.Date): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formats")(x.asInstanceOf[js.Any])
+    inline def formats_=(x: typings.intlMessageformat.anon.Date): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formats")(x.asInstanceOf[js.Any])
     
     @JSImport("intl-messageformat/src/core", "IntlMessageFormat.memoizedDefaultLocale")
     @js.native
     def memoizedDefaultLocale: js.Any = js.native
-    @scala.inline
-    def memoizedDefaultLocale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("memoizedDefaultLocale")(x.asInstanceOf[js.Any])
+    inline def memoizedDefaultLocale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("memoizedDefaultLocale")(x.asInstanceOf[js.Any])
   }
   
   trait Options extends StObject {
@@ -143,26 +140,20 @@ object srcCoreMod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setFormatters(value: Formatters): Self = StObject.set(x, "formatters", value.asInstanceOf[js.Any])
+      inline def setFormatters(value: Formatters): Self = StObject.set(x, "formatters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormattersUndefined: Self = StObject.set(x, "formatters", js.undefined)
+      inline def setFormattersUndefined: Self = StObject.set(x, "formatters", js.undefined)
       
-      @scala.inline
-      def setIgnoreTag(value: Boolean): Self = StObject.set(x, "ignoreTag", value.asInstanceOf[js.Any])
+      inline def setIgnoreTag(value: Boolean): Self = StObject.set(x, "ignoreTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIgnoreTagUndefined: Self = StObject.set(x, "ignoreTag", js.undefined)
+      inline def setIgnoreTagUndefined: Self = StObject.set(x, "ignoreTag", js.undefined)
     }
   }
 }

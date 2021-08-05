@@ -53,70 +53,49 @@ trait ReservedNodeOffering extends StObject {
 }
 object ReservedNodeOffering {
   
-  @scala.inline
-  def apply(): ReservedNodeOffering = {
+  inline def apply(): ReservedNodeOffering = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ReservedNodeOffering]
   }
   
-  @scala.inline
-  implicit class ReservedNodeOfferingMutableBuilder[Self <: ReservedNodeOffering] (val x: Self) extends AnyVal {
+  extension [Self <: ReservedNodeOffering](x: Self) {
     
-    @scala.inline
-    def setCurrencyCode(value: String): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
+    inline def setCurrencyCode(value: String): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrencyCodeUndefined: Self = StObject.set(x, "CurrencyCode", js.undefined)
+    inline def setCurrencyCodeUndefined: Self = StObject.set(x, "CurrencyCode", js.undefined)
     
-    @scala.inline
-    def setDuration(value: Integer): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Integer): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "Duration", js.undefined)
     
-    @scala.inline
-    def setFixedPrice(value: Double): Self = StObject.set(x, "FixedPrice", value.asInstanceOf[js.Any])
+    inline def setFixedPrice(value: Double): Self = StObject.set(x, "FixedPrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFixedPriceUndefined: Self = StObject.set(x, "FixedPrice", js.undefined)
+    inline def setFixedPriceUndefined: Self = StObject.set(x, "FixedPrice", js.undefined)
     
-    @scala.inline
-    def setNodeType(value: String): Self = StObject.set(x, "NodeType", value.asInstanceOf[js.Any])
+    inline def setNodeType(value: String): Self = StObject.set(x, "NodeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNodeTypeUndefined: Self = StObject.set(x, "NodeType", js.undefined)
+    inline def setNodeTypeUndefined: Self = StObject.set(x, "NodeType", js.undefined)
     
-    @scala.inline
-    def setOfferingType(value: String): Self = StObject.set(x, "OfferingType", value.asInstanceOf[js.Any])
+    inline def setOfferingType(value: String): Self = StObject.set(x, "OfferingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOfferingTypeUndefined: Self = StObject.set(x, "OfferingType", js.undefined)
+    inline def setOfferingTypeUndefined: Self = StObject.set(x, "OfferingType", js.undefined)
     
-    @scala.inline
-    def setRecurringCharges(value: RecurringChargeList): Self = StObject.set(x, "RecurringCharges", value.asInstanceOf[js.Any])
+    inline def setRecurringCharges(value: RecurringChargeList): Self = StObject.set(x, "RecurringCharges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecurringChargesUndefined: Self = StObject.set(x, "RecurringCharges", js.undefined)
+    inline def setRecurringChargesUndefined: Self = StObject.set(x, "RecurringCharges", js.undefined)
     
-    @scala.inline
-    def setRecurringChargesVarargs(value: RecurringCharge*): Self = StObject.set(x, "RecurringCharges", js.Array(value :_*))
+    inline def setRecurringChargesVarargs(value: RecurringCharge*): Self = StObject.set(x, "RecurringCharges", js.Array(value :_*))
     
-    @scala.inline
-    def setReservedNodeOfferingId(value: String): Self = StObject.set(x, "ReservedNodeOfferingId", value.asInstanceOf[js.Any])
+    inline def setReservedNodeOfferingId(value: String): Self = StObject.set(x, "ReservedNodeOfferingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedNodeOfferingIdUndefined: Self = StObject.set(x, "ReservedNodeOfferingId", js.undefined)
+    inline def setReservedNodeOfferingIdUndefined: Self = StObject.set(x, "ReservedNodeOfferingId", js.undefined)
     
-    @scala.inline
-    def setReservedNodeOfferingType(value: ReservedNodeOfferingType): Self = StObject.set(x, "ReservedNodeOfferingType", value.asInstanceOf[js.Any])
+    inline def setReservedNodeOfferingType(value: ReservedNodeOfferingType): Self = StObject.set(x, "ReservedNodeOfferingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedNodeOfferingTypeUndefined: Self = StObject.set(x, "ReservedNodeOfferingType", js.undefined)
+    inline def setReservedNodeOfferingTypeUndefined: Self = StObject.set(x, "ReservedNodeOfferingType", js.undefined)
     
-    @scala.inline
-    def setUsagePrice(value: Double): Self = StObject.set(x, "UsagePrice", value.asInstanceOf[js.Any])
+    inline def setUsagePrice(value: Double): Self = StObject.set(x, "UsagePrice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsagePriceUndefined: Self = StObject.set(x, "UsagePrice", js.undefined)
+    inline def setUsagePriceUndefined: Self = StObject.set(x, "UsagePrice", js.undefined)
   }
 }

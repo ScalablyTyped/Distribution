@@ -670,8 +670,7 @@ trait RaxSVG extends StObject {
 }
 object RaxSVG {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     animate: SVGFactory,
     circle: SVGFactory,
     clipPath: SVGFactory,
@@ -732,172 +731,116 @@ object RaxSVG {
     __obj.asInstanceOf[RaxSVG]
   }
   
-  @scala.inline
-  implicit class RaxSVGMutableBuilder[Self <: RaxSVG] (val x: Self) extends AnyVal {
+  extension [Self <: RaxSVG](x: Self) {
     
-    @scala.inline
-    def setAnimate(value: SVGFactory): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
+    inline def setAnimate(value: SVGFactory): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCircle(value: SVGFactory): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
+    inline def setCircle(value: SVGFactory): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipPath(value: SVGFactory): Self = StObject.set(x, "clipPath", value.asInstanceOf[js.Any])
+    inline def setClipPath(value: SVGFactory): Self = StObject.set(x, "clipPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefs(value: SVGFactory): Self = StObject.set(x, "defs", value.asInstanceOf[js.Any])
+    inline def setDefs(value: SVGFactory): Self = StObject.set(x, "defs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesc(value: SVGFactory): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+    inline def setDesc(value: SVGFactory): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEllipse(value: SVGFactory): Self = StObject.set(x, "ellipse", value.asInstanceOf[js.Any])
+    inline def setEllipse(value: SVGFactory): Self = StObject.set(x, "ellipse", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeBlend(value: SVGFactory): Self = StObject.set(x, "feBlend", value.asInstanceOf[js.Any])
+    inline def setFeBlend(value: SVGFactory): Self = StObject.set(x, "feBlend", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeColorMatrix(value: SVGFactory): Self = StObject.set(x, "feColorMatrix", value.asInstanceOf[js.Any])
+    inline def setFeColorMatrix(value: SVGFactory): Self = StObject.set(x, "feColorMatrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeComponentTransfer(value: SVGFactory): Self = StObject.set(x, "feComponentTransfer", value.asInstanceOf[js.Any])
+    inline def setFeComponentTransfer(value: SVGFactory): Self = StObject.set(x, "feComponentTransfer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeComposite(value: SVGFactory): Self = StObject.set(x, "feComposite", value.asInstanceOf[js.Any])
+    inline def setFeComposite(value: SVGFactory): Self = StObject.set(x, "feComposite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeConvolveMatrix(value: SVGFactory): Self = StObject.set(x, "feConvolveMatrix", value.asInstanceOf[js.Any])
+    inline def setFeConvolveMatrix(value: SVGFactory): Self = StObject.set(x, "feConvolveMatrix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeDiffuseLighting(value: SVGFactory): Self = StObject.set(x, "feDiffuseLighting", value.asInstanceOf[js.Any])
+    inline def setFeDiffuseLighting(value: SVGFactory): Self = StObject.set(x, "feDiffuseLighting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeDisplacementMap(value: SVGFactory): Self = StObject.set(x, "feDisplacementMap", value.asInstanceOf[js.Any])
+    inline def setFeDisplacementMap(value: SVGFactory): Self = StObject.set(x, "feDisplacementMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeDistantLight(value: SVGFactory): Self = StObject.set(x, "feDistantLight", value.asInstanceOf[js.Any])
+    inline def setFeDistantLight(value: SVGFactory): Self = StObject.set(x, "feDistantLight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeDropShadow(value: SVGFactory): Self = StObject.set(x, "feDropShadow", value.asInstanceOf[js.Any])
+    inline def setFeDropShadow(value: SVGFactory): Self = StObject.set(x, "feDropShadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeFlood(value: SVGFactory): Self = StObject.set(x, "feFlood", value.asInstanceOf[js.Any])
+    inline def setFeFlood(value: SVGFactory): Self = StObject.set(x, "feFlood", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeFuncA(value: SVGFactory): Self = StObject.set(x, "feFuncA", value.asInstanceOf[js.Any])
+    inline def setFeFuncA(value: SVGFactory): Self = StObject.set(x, "feFuncA", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeFuncB(value: SVGFactory): Self = StObject.set(x, "feFuncB", value.asInstanceOf[js.Any])
+    inline def setFeFuncB(value: SVGFactory): Self = StObject.set(x, "feFuncB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeFuncG(value: SVGFactory): Self = StObject.set(x, "feFuncG", value.asInstanceOf[js.Any])
+    inline def setFeFuncG(value: SVGFactory): Self = StObject.set(x, "feFuncG", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeFuncR(value: SVGFactory): Self = StObject.set(x, "feFuncR", value.asInstanceOf[js.Any])
+    inline def setFeFuncR(value: SVGFactory): Self = StObject.set(x, "feFuncR", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeGaussianBlur(value: SVGFactory): Self = StObject.set(x, "feGaussianBlur", value.asInstanceOf[js.Any])
+    inline def setFeGaussianBlur(value: SVGFactory): Self = StObject.set(x, "feGaussianBlur", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeImage(value: SVGFactory): Self = StObject.set(x, "feImage", value.asInstanceOf[js.Any])
+    inline def setFeImage(value: SVGFactory): Self = StObject.set(x, "feImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeMerge(value: SVGFactory): Self = StObject.set(x, "feMerge", value.asInstanceOf[js.Any])
+    inline def setFeMerge(value: SVGFactory): Self = StObject.set(x, "feMerge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeMergeNode(value: SVGFactory): Self = StObject.set(x, "feMergeNode", value.asInstanceOf[js.Any])
+    inline def setFeMergeNode(value: SVGFactory): Self = StObject.set(x, "feMergeNode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeMorphology(value: SVGFactory): Self = StObject.set(x, "feMorphology", value.asInstanceOf[js.Any])
+    inline def setFeMorphology(value: SVGFactory): Self = StObject.set(x, "feMorphology", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeOffset(value: SVGFactory): Self = StObject.set(x, "feOffset", value.asInstanceOf[js.Any])
+    inline def setFeOffset(value: SVGFactory): Self = StObject.set(x, "feOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFePointLight(value: SVGFactory): Self = StObject.set(x, "fePointLight", value.asInstanceOf[js.Any])
+    inline def setFePointLight(value: SVGFactory): Self = StObject.set(x, "fePointLight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeSpecularLighting(value: SVGFactory): Self = StObject.set(x, "feSpecularLighting", value.asInstanceOf[js.Any])
+    inline def setFeSpecularLighting(value: SVGFactory): Self = StObject.set(x, "feSpecularLighting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeSpotLight(value: SVGFactory): Self = StObject.set(x, "feSpotLight", value.asInstanceOf[js.Any])
+    inline def setFeSpotLight(value: SVGFactory): Self = StObject.set(x, "feSpotLight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeTile(value: SVGFactory): Self = StObject.set(x, "feTile", value.asInstanceOf[js.Any])
+    inline def setFeTile(value: SVGFactory): Self = StObject.set(x, "feTile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeTurbulence(value: SVGFactory): Self = StObject.set(x, "feTurbulence", value.asInstanceOf[js.Any])
+    inline def setFeTurbulence(value: SVGFactory): Self = StObject.set(x, "feTurbulence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilter(value: SVGFactory): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: SVGFactory): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForeignObject(value: SVGFactory): Self = StObject.set(x, "foreignObject", value.asInstanceOf[js.Any])
+    inline def setForeignObject(value: SVGFactory): Self = StObject.set(x, "foreignObject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setG(value: SVGFactory): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+    inline def setG(value: SVGFactory): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImage(value: SVGFactory): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
+    inline def setImage(value: SVGFactory): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLine(value: SVGFactory): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: SVGFactory): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinearGradient(value: SVGFactory): Self = StObject.set(x, "linearGradient", value.asInstanceOf[js.Any])
+    inline def setLinearGradient(value: SVGFactory): Self = StObject.set(x, "linearGradient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarker(value: SVGFactory): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
+    inline def setMarker(value: SVGFactory): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMask(value: SVGFactory): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
+    inline def setMask(value: SVGFactory): Self = StObject.set(x, "mask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: SVGFactory): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: SVGFactory): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPath(value: SVGFactory): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: SVGFactory): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPattern(value: SVGFactory): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
+    inline def setPattern(value: SVGFactory): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolygon(value: SVGFactory): Self = StObject.set(x, "polygon", value.asInstanceOf[js.Any])
+    inline def setPolygon(value: SVGFactory): Self = StObject.set(x, "polygon", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolyline(value: SVGFactory): Self = StObject.set(x, "polyline", value.asInstanceOf[js.Any])
+    inline def setPolyline(value: SVGFactory): Self = StObject.set(x, "polyline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadialGradient(value: SVGFactory): Self = StObject.set(x, "radialGradient", value.asInstanceOf[js.Any])
+    inline def setRadialGradient(value: SVGFactory): Self = StObject.set(x, "radialGradient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRect(value: SVGFactory): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
+    inline def setRect(value: SVGFactory): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStop(value: SVGFactory): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
+    inline def setStop(value: SVGFactory): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSvg(value: SVGFactory): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
+    inline def setSvg(value: SVGFactory): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwitch(value: SVGFactory): Self = StObject.set(x, "switch", value.asInstanceOf[js.Any])
+    inline def setSwitch(value: SVGFactory): Self = StObject.set(x, "switch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSymbol(value: SVGFactory): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+    inline def setSymbol(value: SVGFactory): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: SVGFactory): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: SVGFactory): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextPath(value: SVGFactory): Self = StObject.set(x, "textPath", value.asInstanceOf[js.Any])
+    inline def setTextPath(value: SVGFactory): Self = StObject.set(x, "textPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTspan(value: SVGFactory): Self = StObject.set(x, "tspan", value.asInstanceOf[js.Any])
+    inline def setTspan(value: SVGFactory): Self = StObject.set(x, "tspan", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUse(value: SVGFactory): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
+    inline def setUse(value: SVGFactory): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView(value: SVGFactory): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: SVGFactory): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }
 }

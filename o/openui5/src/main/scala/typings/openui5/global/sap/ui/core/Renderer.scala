@@ -16,8 +16,7 @@ object Renderer {
     * @param oTextDirection the text direction of the Control
     * @returns the actual text alignment that must be set for this environment
     */
-  @scala.inline
-  def getTextAlign(
+  inline def getTextAlign(
     oTextAlign: typings.openui5.sap.ui.core.TextAlign,
     oTextDirection: typings.openui5.sap.ui.core.TextDirection
   ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTextAlign")(oTextAlign.asInstanceOf[js.Any], oTextDirection.asInstanceOf[js.Any])).asInstanceOf[String]

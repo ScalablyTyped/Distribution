@@ -41,8 +41,7 @@ object isoFSMod {
     /**
       * Creates an IsoFS instance with the given options.
       */
-    @scala.inline
-    def Create(opts: IsoFSOptions, cb: BFSCallback[IsoFS]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def Create(opts: IsoFSOptions, cb: BFSCallback[IsoFS]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("browserfs/dist/node/backend/IsoFS", "default.Name")
     @js.native
@@ -52,8 +51,7 @@ object isoFSMod {
     @js.native
     val Options: FileSystemOptions = js.native
     
-    @scala.inline
-    def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
+    inline def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
   }
   
   @js.native
@@ -61,17 +59,17 @@ object isoFSMod {
     extends SynchronousFileSystem
        with FileSystem {
     
-    var _data: js.Any = js.native
+    /* private */ var _data: js.Any = js.native
     
     /* private */ def _getDirectoryRecord(path: js.Any): js.Any = js.native
     
     /* private */ def _getStats(p: js.Any, record: js.Any): js.Any = js.native
     
-    var _name: js.Any = js.native
+    /* private */ var _name: js.Any = js.native
     
-    var _pvd: js.Any = js.native
+    /* private */ var _pvd: js.Any = js.native
     
-    var _root: js.Any = js.native
+    /* private */ var _root: js.Any = js.native
     
     /* InferMemberOverrides */
     override def chmod(p: String, isLchmod: Boolean, mode: Double, cb: BFSOneArgCallback): Unit = js.native
@@ -206,23 +204,18 @@ object isoFSMod {
   }
   object IsoFSOptions {
     
-    @scala.inline
-    def apply(data: Buffer): IsoFSOptions = {
+    inline def apply(data: Buffer): IsoFSOptions = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[IsoFSOptions]
     }
     
-    @scala.inline
-    implicit class IsoFSOptionsMutableBuilder[Self <: IsoFSOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IsoFSOptions](x: Self) {
       
-      @scala.inline
-      def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
 }

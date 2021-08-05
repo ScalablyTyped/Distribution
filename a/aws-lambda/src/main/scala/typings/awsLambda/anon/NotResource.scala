@@ -10,19 +10,15 @@ trait NotResource extends StObject {
 }
 object NotResource {
   
-  @scala.inline
-  def apply(NotResource: String | js.Array[String]): NotResource = {
+  inline def apply(NotResource: String | js.Array[String]): NotResource = {
     val __obj = js.Dynamic.literal(NotResource = NotResource.asInstanceOf[js.Any])
     __obj.asInstanceOf[NotResource]
   }
   
-  @scala.inline
-  implicit class NotResourceMutableBuilder[Self <: NotResource] (val x: Self) extends AnyVal {
+  extension [Self <: NotResource](x: Self) {
     
-    @scala.inline
-    def setNotResource(value: String | js.Array[String]): Self = StObject.set(x, "NotResource", value.asInstanceOf[js.Any])
+    inline def setNotResource(value: String | js.Array[String]): Self = StObject.set(x, "NotResource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotResourceVarargs(value: String*): Self = StObject.set(x, "NotResource", js.Array(value :_*))
+    inline def setNotResourceVarargs(value: String*): Self = StObject.set(x, "NotResource", js.Array(value :_*))
   }
 }

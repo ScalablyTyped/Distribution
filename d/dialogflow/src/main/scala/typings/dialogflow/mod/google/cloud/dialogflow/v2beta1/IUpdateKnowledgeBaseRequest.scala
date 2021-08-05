@@ -16,31 +16,23 @@ trait IUpdateKnowledgeBaseRequest extends StObject {
 }
 object IUpdateKnowledgeBaseRequest {
   
-  @scala.inline
-  def apply(): IUpdateKnowledgeBaseRequest = {
+  inline def apply(): IUpdateKnowledgeBaseRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IUpdateKnowledgeBaseRequest]
   }
   
-  @scala.inline
-  implicit class IUpdateKnowledgeBaseRequestMutableBuilder[Self <: IUpdateKnowledgeBaseRequest] (val x: Self) extends AnyVal {
+  extension [Self <: IUpdateKnowledgeBaseRequest](x: Self) {
     
-    @scala.inline
-    def setKnowledgeBase(value: IKnowledgeBase): Self = StObject.set(x, "knowledgeBase", value.asInstanceOf[js.Any])
+    inline def setKnowledgeBase(value: IKnowledgeBase): Self = StObject.set(x, "knowledgeBase", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKnowledgeBaseNull: Self = StObject.set(x, "knowledgeBase", null)
+    inline def setKnowledgeBaseNull: Self = StObject.set(x, "knowledgeBase", null)
     
-    @scala.inline
-    def setKnowledgeBaseUndefined: Self = StObject.set(x, "knowledgeBase", js.undefined)
+    inline def setKnowledgeBaseUndefined: Self = StObject.set(x, "knowledgeBase", js.undefined)
     
-    @scala.inline
-    def setUpdateMask(value: IFieldMask): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: IFieldMask): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMaskNull: Self = StObject.set(x, "updateMask", null)
+    inline def setUpdateMaskNull: Self = StObject.set(x, "updateMask", null)
     
-    @scala.inline
-    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
   }
 }

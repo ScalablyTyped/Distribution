@@ -36,23 +36,18 @@ object basePathMod {
   }
   object BasePath {
     
-    @scala.inline
-    def apply(hasVariables: () => Boolean, path: String, variables: StringDictionary[Enum]): BasePath = {
+    inline def apply(hasVariables: () => Boolean, path: String, variables: StringDictionary[Enum]): BasePath = {
       val __obj = js.Dynamic.literal(hasVariables = js.Any.fromFunction0(hasVariables), path = path.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
       __obj.asInstanceOf[BasePath]
     }
     
-    @scala.inline
-    implicit class BasePathMutableBuilder[Self <: BasePath] (val x: Self) extends AnyVal {
+    extension [Self <: BasePath](x: Self) {
       
-      @scala.inline
-      def setHasVariables(value: () => Boolean): Self = StObject.set(x, "hasVariables", js.Any.fromFunction0(value))
+      inline def setHasVariables(value: () => Boolean): Self = StObject.set(x, "hasVariables", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVariables(value: StringDictionary[Enum]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+      inline def setVariables(value: StringDictionary[Enum]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
     }
   }
 }

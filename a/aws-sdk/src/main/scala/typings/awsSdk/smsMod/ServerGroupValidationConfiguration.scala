@@ -18,28 +18,21 @@ trait ServerGroupValidationConfiguration extends StObject {
 }
 object ServerGroupValidationConfiguration {
   
-  @scala.inline
-  def apply(): ServerGroupValidationConfiguration = {
+  inline def apply(): ServerGroupValidationConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ServerGroupValidationConfiguration]
   }
   
-  @scala.inline
-  implicit class ServerGroupValidationConfigurationMutableBuilder[Self <: ServerGroupValidationConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ServerGroupValidationConfiguration](x: Self) {
     
-    @scala.inline
-    def setServerGroupId(value: ServerGroupId): Self = StObject.set(x, "serverGroupId", value.asInstanceOf[js.Any])
+    inline def setServerGroupId(value: ServerGroupId): Self = StObject.set(x, "serverGroupId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerGroupIdUndefined: Self = StObject.set(x, "serverGroupId", js.undefined)
+    inline def setServerGroupIdUndefined: Self = StObject.set(x, "serverGroupId", js.undefined)
     
-    @scala.inline
-    def setServerValidationConfigurations(value: ServerValidationConfigurations): Self = StObject.set(x, "serverValidationConfigurations", value.asInstanceOf[js.Any])
+    inline def setServerValidationConfigurations(value: ServerValidationConfigurations): Self = StObject.set(x, "serverValidationConfigurations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerValidationConfigurationsUndefined: Self = StObject.set(x, "serverValidationConfigurations", js.undefined)
+    inline def setServerValidationConfigurationsUndefined: Self = StObject.set(x, "serverValidationConfigurations", js.undefined)
     
-    @scala.inline
-    def setServerValidationConfigurationsVarargs(value: ServerValidationConfiguration*): Self = StObject.set(x, "serverValidationConfigurations", js.Array(value :_*))
+    inline def setServerValidationConfigurationsVarargs(value: ServerValidationConfiguration*): Self = StObject.set(x, "serverValidationConfigurations", js.Array(value :_*))
   }
 }

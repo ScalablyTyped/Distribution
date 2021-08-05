@@ -50,8 +50,7 @@ trait KmlObject
 }
 object KmlObject {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     equals_ : KmlObject => Boolean,
@@ -72,28 +71,20 @@ object KmlObject {
     __obj.asInstanceOf[KmlObject]
   }
   
-  @scala.inline
-  implicit class KmlObjectMutableBuilder[Self <: KmlObject] (val x: Self) extends AnyVal {
+  extension [Self <: KmlObject](x: Self) {
     
-    @scala.inline
-    def setEquals_(value: KmlObject => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+    inline def setEquals_(value: KmlObject => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+    inline def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOwnerDocument(value: () => KmlDocument): Self = StObject.set(x, "getOwnerDocument", js.Any.fromFunction0(value))
+    inline def setGetOwnerDocument(value: () => KmlDocument): Self = StObject.set(x, "getOwnerDocument", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetParentNode(value: () => KmlObject): Self = StObject.set(x, "getParentNode", js.Any.fromFunction0(value))
+    inline def setGetParentNode(value: () => KmlObject): Self = StObject.set(x, "getParentNode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetType(value: () => String): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
+    inline def setGetType(value: () => String): Self = StObject.set(x, "getType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUrl(value: () => String): Self = StObject.set(x, "getUrl", js.Any.fromFunction0(value))
+    inline def setGetUrl(value: () => String): Self = StObject.set(x, "getUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
+    inline def setRelease(value: () => Unit): Self = StObject.set(x, "release", js.Any.fromFunction0(value))
   }
 }

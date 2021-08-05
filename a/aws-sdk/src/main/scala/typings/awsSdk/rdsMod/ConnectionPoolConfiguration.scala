@@ -33,46 +33,33 @@ trait ConnectionPoolConfiguration extends StObject {
 }
 object ConnectionPoolConfiguration {
   
-  @scala.inline
-  def apply(): ConnectionPoolConfiguration = {
+  inline def apply(): ConnectionPoolConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectionPoolConfiguration]
   }
   
-  @scala.inline
-  implicit class ConnectionPoolConfigurationMutableBuilder[Self <: ConnectionPoolConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectionPoolConfiguration](x: Self) {
     
-    @scala.inline
-    def setConnectionBorrowTimeout(value: IntegerOptional): Self = StObject.set(x, "ConnectionBorrowTimeout", value.asInstanceOf[js.Any])
+    inline def setConnectionBorrowTimeout(value: IntegerOptional): Self = StObject.set(x, "ConnectionBorrowTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionBorrowTimeoutUndefined: Self = StObject.set(x, "ConnectionBorrowTimeout", js.undefined)
+    inline def setConnectionBorrowTimeoutUndefined: Self = StObject.set(x, "ConnectionBorrowTimeout", js.undefined)
     
-    @scala.inline
-    def setInitQuery(value: String): Self = StObject.set(x, "InitQuery", value.asInstanceOf[js.Any])
+    inline def setInitQuery(value: String): Self = StObject.set(x, "InitQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitQueryUndefined: Self = StObject.set(x, "InitQuery", js.undefined)
+    inline def setInitQueryUndefined: Self = StObject.set(x, "InitQuery", js.undefined)
     
-    @scala.inline
-    def setMaxConnectionsPercent(value: IntegerOptional): Self = StObject.set(x, "MaxConnectionsPercent", value.asInstanceOf[js.Any])
+    inline def setMaxConnectionsPercent(value: IntegerOptional): Self = StObject.set(x, "MaxConnectionsPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxConnectionsPercentUndefined: Self = StObject.set(x, "MaxConnectionsPercent", js.undefined)
+    inline def setMaxConnectionsPercentUndefined: Self = StObject.set(x, "MaxConnectionsPercent", js.undefined)
     
-    @scala.inline
-    def setMaxIdleConnectionsPercent(value: IntegerOptional): Self = StObject.set(x, "MaxIdleConnectionsPercent", value.asInstanceOf[js.Any])
+    inline def setMaxIdleConnectionsPercent(value: IntegerOptional): Self = StObject.set(x, "MaxIdleConnectionsPercent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxIdleConnectionsPercentUndefined: Self = StObject.set(x, "MaxIdleConnectionsPercent", js.undefined)
+    inline def setMaxIdleConnectionsPercentUndefined: Self = StObject.set(x, "MaxIdleConnectionsPercent", js.undefined)
     
-    @scala.inline
-    def setSessionPinningFilters(value: StringList): Self = StObject.set(x, "SessionPinningFilters", value.asInstanceOf[js.Any])
+    inline def setSessionPinningFilters(value: StringList): Self = StObject.set(x, "SessionPinningFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionPinningFiltersUndefined: Self = StObject.set(x, "SessionPinningFilters", js.undefined)
+    inline def setSessionPinningFiltersUndefined: Self = StObject.set(x, "SessionPinningFilters", js.undefined)
     
-    @scala.inline
-    def setSessionPinningFiltersVarargs(value: String*): Self = StObject.set(x, "SessionPinningFilters", js.Array(value :_*))
+    inline def setSessionPinningFiltersVarargs(value: String*): Self = StObject.set(x, "SessionPinningFilters", js.Array(value :_*))
   }
 }

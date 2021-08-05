@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.FileDialog")
 @js.native
-class FileDialog protected ()
+/* private */ class FileDialog ()
   extends StObject
      with typings.activexOffice.Office.FileDialog {
   
@@ -50,7 +50,7 @@ class FileDialog protected ()
   /* CompleteClass */
   override val Item: String = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Office.FileDialog_typekey")
   var OfficeDotFileDialog_typekey: typings.activexOffice.Office.FileDialog = js.native
   

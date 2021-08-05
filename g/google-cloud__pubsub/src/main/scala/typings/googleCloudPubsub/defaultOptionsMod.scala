@@ -17,13 +17,11 @@ object defaultOptionsMod {
     @JSImport("@google-cloud/pubsub/build/src/default-options", "defaultOptions.publish")
     @js.native
     def publish: MaxDelayMillis = js.native
-    @scala.inline
-    def publish_=(x: MaxDelayMillis): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("publish")(x.asInstanceOf[js.Any])
+    inline def publish_=(x: MaxDelayMillis): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("publish")(x.asInstanceOf[js.Any])
     
     @JSImport("@google-cloud/pubsub/build/src/default-options", "defaultOptions.subscription")
     @js.native
     def subscription: MaxExtensionMinutes = js.native
-    @scala.inline
-    def subscription_=(x: MaxExtensionMinutes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("subscription")(x.asInstanceOf[js.Any])
+    inline def subscription_=(x: MaxExtensionMinutes): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("subscription")(x.asInstanceOf[js.Any])
   }
 }

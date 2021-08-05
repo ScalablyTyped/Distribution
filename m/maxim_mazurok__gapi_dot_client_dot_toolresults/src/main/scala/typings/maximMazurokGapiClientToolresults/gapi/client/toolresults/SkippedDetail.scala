@@ -17,31 +17,23 @@ trait SkippedDetail extends StObject {
 }
 object SkippedDetail {
   
-  @scala.inline
-  def apply(): SkippedDetail = {
+  inline def apply(): SkippedDetail = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SkippedDetail]
   }
   
-  @scala.inline
-  implicit class SkippedDetailMutableBuilder[Self <: SkippedDetail] (val x: Self) extends AnyVal {
+  extension [Self <: SkippedDetail](x: Self) {
     
-    @scala.inline
-    def setIncompatibleAppVersion(value: Boolean): Self = StObject.set(x, "incompatibleAppVersion", value.asInstanceOf[js.Any])
+    inline def setIncompatibleAppVersion(value: Boolean): Self = StObject.set(x, "incompatibleAppVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncompatibleAppVersionUndefined: Self = StObject.set(x, "incompatibleAppVersion", js.undefined)
+    inline def setIncompatibleAppVersionUndefined: Self = StObject.set(x, "incompatibleAppVersion", js.undefined)
     
-    @scala.inline
-    def setIncompatibleArchitecture(value: Boolean): Self = StObject.set(x, "incompatibleArchitecture", value.asInstanceOf[js.Any])
+    inline def setIncompatibleArchitecture(value: Boolean): Self = StObject.set(x, "incompatibleArchitecture", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncompatibleArchitectureUndefined: Self = StObject.set(x, "incompatibleArchitecture", js.undefined)
+    inline def setIncompatibleArchitectureUndefined: Self = StObject.set(x, "incompatibleArchitecture", js.undefined)
     
-    @scala.inline
-    def setIncompatibleDevice(value: Boolean): Self = StObject.set(x, "incompatibleDevice", value.asInstanceOf[js.Any])
+    inline def setIncompatibleDevice(value: Boolean): Self = StObject.set(x, "incompatibleDevice", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncompatibleDeviceUndefined: Self = StObject.set(x, "incompatibleDevice", js.undefined)
+    inline def setIncompatibleDeviceUndefined: Self = StObject.set(x, "incompatibleDevice", js.undefined)
   }
 }

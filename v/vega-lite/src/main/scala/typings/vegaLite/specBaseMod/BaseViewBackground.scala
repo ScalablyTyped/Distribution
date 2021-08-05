@@ -103,145 +103,114 @@ trait BaseViewBackground[ES /* <: ExprRef | SignalRef */] extends StObject {
 }
 object BaseViewBackground {
   
-  @scala.inline
-  def apply[ES /* <: ExprRef | SignalRef */](): BaseViewBackground[ES] = {
+  inline def apply[ES /* <: ExprRef | SignalRef */](): BaseViewBackground[ES] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BaseViewBackground[ES]]
   }
   
-  @scala.inline
-  implicit class BaseViewBackgroundMutableBuilder[Self <: BaseViewBackground[?], ES /* <: ExprRef | SignalRef */] (val x: Self & BaseViewBackground[ES]) extends AnyVal {
+  extension [Self <: BaseViewBackground[?], ES /* <: ExprRef | SignalRef */](x: Self & BaseViewBackground[ES]) {
     
-    @scala.inline
-    def setCornerRadius(
+    inline def setCornerRadius(
       value: (Exclude[
           js.UndefOr[Double | SignalRef], 
           ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCornerRadiusUndefined: Self = StObject.set(x, "cornerRadius", js.undefined)
+    inline def setCornerRadiusUndefined: Self = StObject.set(x, "cornerRadius", js.undefined)
     
-    @scala.inline
-    def setCursor(value: Cursor): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    inline def setCursor(value: Cursor): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
+    inline def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
-    @scala.inline
-    def setFill(value: Color | ES): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
+    inline def setFill(value: Color | ES): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillNull: Self = StObject.set(x, "fill", null)
+    inline def setFillNull: Self = StObject.set(x, "fill", null)
     
-    @scala.inline
-    def setFillOpacity(
+    inline def setFillOpacity(
       value: (Exclude[
           js.UndefOr[Double | SignalRef], 
           ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
+    inline def setFillOpacityUndefined: Self = StObject.set(x, "fillOpacity", js.undefined)
     
-    @scala.inline
-    def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
+    inline def setFillUndefined: Self = StObject.set(x, "fill", js.undefined)
     
-    @scala.inline
-    def setOpacity(value: Double | ES): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Double | ES): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
-    @scala.inline
-    def setStroke(value: Color | ES): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
+    inline def setStroke(value: Color | ES): Self = StObject.set(x, "stroke", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeCap(
+    inline def setStrokeCap(
       value: (Exclude[
           js.UndefOr[StrokeCap | SignalRef], 
           ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "strokeCap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeCapUndefined: Self = StObject.set(x, "strokeCap", js.undefined)
+    inline def setStrokeCapUndefined: Self = StObject.set(x, "strokeCap", js.undefined)
     
-    @scala.inline
-    def setStrokeDash(
+    inline def setStrokeDash(
       value: (Exclude[
           js.UndefOr[js.Array[Double] | SignalRef], 
           ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "strokeDash", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeDashOffset(
+    inline def setStrokeDashOffset(
       value: (Exclude[
           js.UndefOr[Double | SignalRef], 
           ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "strokeDashOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeDashOffsetUndefined: Self = StObject.set(x, "strokeDashOffset", js.undefined)
+    inline def setStrokeDashOffsetUndefined: Self = StObject.set(x, "strokeDashOffset", js.undefined)
     
-    @scala.inline
-    def setStrokeDashUndefined: Self = StObject.set(x, "strokeDash", js.undefined)
+    inline def setStrokeDashUndefined: Self = StObject.set(x, "strokeDash", js.undefined)
     
-    @scala.inline
-    def setStrokeDashVarargs(value: Double*): Self = StObject.set(x, "strokeDash", js.Array(value :_*))
+    inline def setStrokeDashVarargs(value: Double*): Self = StObject.set(x, "strokeDash", js.Array(value :_*))
     
-    @scala.inline
-    def setStrokeJoin(
+    inline def setStrokeJoin(
       value: (Exclude[
           js.UndefOr[StrokeJoin | SignalRef], 
           ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "strokeJoin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeJoinUndefined: Self = StObject.set(x, "strokeJoin", js.undefined)
+    inline def setStrokeJoinUndefined: Self = StObject.set(x, "strokeJoin", js.undefined)
     
-    @scala.inline
-    def setStrokeMiterLimit(
+    inline def setStrokeMiterLimit(
       value: (Exclude[
           js.UndefOr[Double | SignalRef], 
           ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "strokeMiterLimit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeMiterLimitUndefined: Self = StObject.set(x, "strokeMiterLimit", js.undefined)
+    inline def setStrokeMiterLimitUndefined: Self = StObject.set(x, "strokeMiterLimit", js.undefined)
     
-    @scala.inline
-    def setStrokeNull: Self = StObject.set(x, "stroke", null)
+    inline def setStrokeNull: Self = StObject.set(x, "stroke", null)
     
-    @scala.inline
-    def setStrokeOpacity(
+    inline def setStrokeOpacity(
       value: (Exclude[
           js.UndefOr[Double | SignalRef], 
           ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
+    inline def setStrokeOpacityUndefined: Self = StObject.set(x, "strokeOpacity", js.undefined)
     
-    @scala.inline
-    def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
+    inline def setStrokeUndefined: Self = StObject.set(x, "stroke", js.undefined)
     
-    @scala.inline
-    def setStrokeWidth(
+    inline def setStrokeWidth(
       value: (Exclude[
           js.UndefOr[Double | SignalRef], 
           ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
+    inline def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
   }
 }

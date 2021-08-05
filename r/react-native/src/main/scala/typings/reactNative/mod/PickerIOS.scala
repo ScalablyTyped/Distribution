@@ -21,6 +21,5 @@ object PickerIOS {
   @JSImport("react-native", "PickerIOS.Item")
   @js.native
   def Item: Instantiable0[PickerIOSItem] = js.native
-  @scala.inline
-  def Item_=(x: Instantiable0[PickerIOSItem]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+  inline def Item_=(x: Instantiable0[PickerIOSItem]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
 }

@@ -29,8 +29,7 @@ trait SketchMSStyleFill extends StObject {
 }
 object SketchMSStyleFill {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     color: SketchMSColor,
     contextSettings: SketchMSGraphicsContextSettings,
     fillType: Double,
@@ -45,37 +44,26 @@ object SketchMSStyleFill {
     __obj.asInstanceOf[SketchMSStyleFill]
   }
   
-  @scala.inline
-  implicit class SketchMSStyleFillMutableBuilder[Self <: SketchMSStyleFill] (val x: Self) extends AnyVal {
+  extension [Self <: SketchMSStyleFill](x: Self) {
     
-    @scala.inline
-    def setColor(value: SketchMSColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: SketchMSColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextSettings(value: SketchMSGraphicsContextSettings): Self = StObject.set(x, "contextSettings", value.asInstanceOf[js.Any])
+    inline def setContextSettings(value: SketchMSGraphicsContextSettings): Self = StObject.set(x, "contextSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFillType(value: Double): Self = StObject.set(x, "fillType", value.asInstanceOf[js.Any])
+    inline def setFillType(value: Double): Self = StObject.set(x, "fillType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGradient(value: SketchMSGradient): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
+    inline def setGradient(value: SketchMSGradient): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsEnabled(value: Double): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
+    inline def setIsEnabled(value: Double): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoiseIndex(value: Double): Self = StObject.set(x, "noiseIndex", value.asInstanceOf[js.Any])
+    inline def setNoiseIndex(value: Double): Self = StObject.set(x, "noiseIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoiseIntensity(value: Double): Self = StObject.set(x, "noiseIntensity", value.asInstanceOf[js.Any])
+    inline def setNoiseIntensity(value: Double): Self = StObject.set(x, "noiseIntensity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternFillType(value: Double): Self = StObject.set(x, "patternFillType", value.asInstanceOf[js.Any])
+    inline def setPatternFillType(value: Double): Self = StObject.set(x, "patternFillType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPatternTileScale(value: Double): Self = StObject.set(x, "patternTileScale", value.asInstanceOf[js.Any])
+    inline def setPatternTileScale(value: Double): Self = StObject.set(x, "patternTileScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_class(value: styleFill): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
+    inline def set_class(value: styleFill): Self = StObject.set(x, "_class", value.asInstanceOf[js.Any])
   }
 }

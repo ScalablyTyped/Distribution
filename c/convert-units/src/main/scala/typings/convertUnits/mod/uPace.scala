@@ -13,12 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait uPace extends StObject
 object uPace {
   
-  @scala.inline
-  def minSlashkm: typings.convertUnits.convertUnitsStrings.minSlashkm = "min/km".asInstanceOf[typings.convertUnits.convertUnitsStrings.minSlashkm]
+  inline def minSlashkm: typings.convertUnits.convertUnitsStrings.minSlashkm = "min/km".asInstanceOf[typings.convertUnits.convertUnitsStrings.minSlashkm]
   
-  @scala.inline
-  def sSlashft: typings.convertUnits.convertUnitsStrings.sSlashft = "s/ft".asInstanceOf[typings.convertUnits.convertUnitsStrings.sSlashft]
+  inline def sSlashft: typings.convertUnits.convertUnitsStrings.sSlashft = "s/ft".asInstanceOf[typings.convertUnits.convertUnitsStrings.sSlashft]
   
-  @scala.inline
-  def sSlashm: typings.convertUnits.convertUnitsStrings.sSlashm = "s/m".asInstanceOf[typings.convertUnits.convertUnitsStrings.sSlashm]
+  inline def sSlashm: typings.convertUnits.convertUnitsStrings.sSlashm = "s/m".asInstanceOf[typings.convertUnits.convertUnitsStrings.sSlashm]
 }

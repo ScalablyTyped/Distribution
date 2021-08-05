@@ -12,25 +12,19 @@ trait PinSettings extends StObject {
 }
 object PinSettings {
   
-  @scala.inline
-  def apply(): PinSettings = {
+  inline def apply(): PinSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PinSettings]
   }
   
-  @scala.inline
-  implicit class PinSettingsMutableBuilder[Self <: PinSettings] (val x: Self) extends AnyVal {
+  extension [Self <: PinSettings](x: Self) {
     
-    @scala.inline
-    def setPushFollowers(value: Boolean): Self = StObject.set(x, "pushFollowers", value.asInstanceOf[js.Any])
+    inline def setPushFollowers(value: Boolean): Self = StObject.set(x, "pushFollowers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPushFollowersUndefined: Self = StObject.set(x, "pushFollowers", js.undefined)
+    inline def setPushFollowersUndefined: Self = StObject.set(x, "pushFollowers", js.undefined)
     
-    @scala.inline
-    def setSpacerClass(value: String): Self = StObject.set(x, "spacerClass", value.asInstanceOf[js.Any])
+    inline def setSpacerClass(value: String): Self = StObject.set(x, "spacerClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpacerClassUndefined: Self = StObject.set(x, "spacerClass", js.undefined)
+    inline def setSpacerClassUndefined: Self = StObject.set(x, "spacerClass", js.undefined)
   }
 }

@@ -21,8 +21,7 @@ object useNavigationHelpersMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default[State /* <: NavigationState[ParamListBase] */, ActionHelpers /* <: Record[String, js.Function0[Unit]] */, Action /* <: NavigationAction */, EventMap /* <: Record[String, js.Any] */](hasOnActionGetStateEmitterRouter: Options[State, Action]): DangerouslyGetParent & (PrivateValueStore[Record[String, js.UndefOr[js.Object]], String, js.Object]) & EventEmitter[EventMap] & EventConsumer[js.Any] & (PrivateValueStore[Record[String, js.UndefOr[js.Object]], String, js.Any]) & ActionHelpers = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasOnActionGetStateEmitterRouter.asInstanceOf[js.Any]).asInstanceOf[DangerouslyGetParent & (PrivateValueStore[Record[String, js.UndefOr[js.Object]], String, js.Object]) & EventEmitter[EventMap] & EventConsumer[js.Any] & (PrivateValueStore[Record[String, js.UndefOr[js.Object]], String, js.Any]) & ActionHelpers]
+  inline def default[State /* <: NavigationState[ParamListBase] */, ActionHelpers /* <: Record[String, js.Function0[Unit]] */, Action /* <: NavigationAction */, EventMap /* <: Record[String, js.Any] */](hasOnActionGetStateEmitterRouter: Options[State, Action]): DangerouslyGetParent & (PrivateValueStore[Record[String, js.UndefOr[js.Object]], String, js.Object]) & EventEmitter[EventMap] & EventConsumer[js.Any] & (PrivateValueStore[Record[String, js.UndefOr[js.Object]], String, js.Any]) & ActionHelpers = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasOnActionGetStateEmitterRouter.asInstanceOf[js.Any]).asInstanceOf[DangerouslyGetParent & (PrivateValueStore[Record[String, js.UndefOr[js.Object]], String, js.Object]) & EventEmitter[EventMap] & EventConsumer[js.Any] & (PrivateValueStore[Record[String, js.UndefOr[js.Object]], String, js.Any]) & ActionHelpers]
   
   @js.native
   trait Options[State /* <: NavigationState[ParamListBase] */, Action /* <: NavigationAction */] extends StObject {

@@ -11,8 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def inputDefault[Input /* <: js.Object */](inputBag: InputDefaultArgs[Input]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("inputDefault")(inputBag.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def inputDefault[Input /* <: js.Object */](inputBag: InputDefaultArgs[Input]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("inputDefault")(inputBag.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   type InputDefaultArgs[Input /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ field in keyof Input ]:? Input[field]}

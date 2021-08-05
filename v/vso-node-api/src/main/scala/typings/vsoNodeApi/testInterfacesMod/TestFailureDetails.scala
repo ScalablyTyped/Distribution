@@ -12,22 +12,17 @@ trait TestFailureDetails extends StObject {
 }
 object TestFailureDetails {
   
-  @scala.inline
-  def apply(count: Double, testResults: js.Array[TestCaseResultIdentifier]): TestFailureDetails = {
+  inline def apply(count: Double, testResults: js.Array[TestCaseResultIdentifier]): TestFailureDetails = {
     val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], testResults = testResults.asInstanceOf[js.Any])
     __obj.asInstanceOf[TestFailureDetails]
   }
   
-  @scala.inline
-  implicit class TestFailureDetailsMutableBuilder[Self <: TestFailureDetails] (val x: Self) extends AnyVal {
+  extension [Self <: TestFailureDetails](x: Self) {
     
-    @scala.inline
-    def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+    inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestResults(value: js.Array[TestCaseResultIdentifier]): Self = StObject.set(x, "testResults", value.asInstanceOf[js.Any])
+    inline def setTestResults(value: js.Array[TestCaseResultIdentifier]): Self = StObject.set(x, "testResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTestResultsVarargs(value: TestCaseResultIdentifier*): Self = StObject.set(x, "testResults", js.Array(value :_*))
+    inline def setTestResultsVarargs(value: TestCaseResultIdentifier*): Self = StObject.set(x, "testResults", js.Array(value :_*))
   }
 }

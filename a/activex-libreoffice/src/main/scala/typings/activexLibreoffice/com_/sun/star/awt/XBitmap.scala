@@ -32,8 +32,7 @@ trait XBitmap
 }
 object XBitmap {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DIB: SafeArray[Double],
     MaskDIB: SafeArray[Double],
     Size: Size,
@@ -48,25 +47,18 @@ object XBitmap {
     __obj.asInstanceOf[XBitmap]
   }
   
-  @scala.inline
-  implicit class XBitmapMutableBuilder[Self <: XBitmap] (val x: Self) extends AnyVal {
+  extension [Self <: XBitmap](x: Self) {
     
-    @scala.inline
-    def setDIB(value: SafeArray[Double]): Self = StObject.set(x, "DIB", value.asInstanceOf[js.Any])
+    inline def setDIB(value: SafeArray[Double]): Self = StObject.set(x, "DIB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetDIB(value: () => SafeArray[Double]): Self = StObject.set(x, "getDIB", js.Any.fromFunction0(value))
+    inline def setGetDIB(value: () => SafeArray[Double]): Self = StObject.set(x, "getDIB", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMaskDIB(value: () => SafeArray[Double]): Self = StObject.set(x, "getMaskDIB", js.Any.fromFunction0(value))
+    inline def setGetMaskDIB(value: () => SafeArray[Double]): Self = StObject.set(x, "getMaskDIB", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSize(value: () => Size): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
+    inline def setGetSize(value: () => Size): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMaskDIB(value: SafeArray[Double]): Self = StObject.set(x, "MaskDIB", value.asInstanceOf[js.Any])
+    inline def setMaskDIB(value: SafeArray[Double]): Self = StObject.set(x, "MaskDIB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Size): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Size): Self = StObject.set(x, "Size", value.asInstanceOf[js.Any])
   }
 }

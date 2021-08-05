@@ -14,8 +14,7 @@ trait Background extends StObject {
 }
 object Background {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     background: typings.storybookTheming.typesMod.Background,
     color: typings.storybookTheming.typesMod.Color,
     typography: typings.storybookTheming.typesMod.Typography
@@ -24,16 +23,12 @@ object Background {
     __obj.asInstanceOf[Background]
   }
   
-  @scala.inline
-  implicit class BackgroundMutableBuilder[Self <: Background] (val x: Self) extends AnyVal {
+  extension [Self <: Background](x: Self) {
     
-    @scala.inline
-    def setBackground(value: typings.storybookTheming.typesMod.Background): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: typings.storybookTheming.typesMod.Background): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: typings.storybookTheming.typesMod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: typings.storybookTheming.typesMod.Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypography(value: typings.storybookTheming.typesMod.Typography): Self = StObject.set(x, "typography", value.asInstanceOf[js.Any])
+    inline def setTypography(value: typings.storybookTheming.typesMod.Typography): Self = StObject.set(x, "typography", value.asInstanceOf[js.Any])
   }
 }

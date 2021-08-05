@@ -18,40 +18,29 @@ trait RedirectProps[TState] extends StObject {
 }
 object RedirectProps {
   
-  @scala.inline
-  def apply[TState](to: String): RedirectProps[TState] = {
+  inline def apply[TState](to: String): RedirectProps[TState] = {
     val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
     __obj.asInstanceOf[RedirectProps[TState]]
   }
   
-  @scala.inline
-  implicit class RedirectPropsMutableBuilder[Self <: RedirectProps[?], TState] (val x: Self & RedirectProps[TState]) extends AnyVal {
+  extension [Self <: RedirectProps[?], TState](x: Self & RedirectProps[TState]) {
     
-    @scala.inline
-    def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    @scala.inline
-    def setNoThrow(value: Boolean): Self = StObject.set(x, "noThrow", value.asInstanceOf[js.Any])
+    inline def setNoThrow(value: Boolean): Self = StObject.set(x, "noThrow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoThrowUndefined: Self = StObject.set(x, "noThrow", js.undefined)
+    inline def setNoThrowUndefined: Self = StObject.set(x, "noThrow", js.undefined)
     
-    @scala.inline
-    def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+    inline def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+    inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
     
-    @scala.inline
-    def setState(value: TState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: TState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
     
-    @scala.inline
-    def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: String): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
   }
 }

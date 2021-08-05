@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait OlMobileFormat extends StObject
 object OlMobileFormat {
   
-  @scala.inline
-  def olMMS: `1` = 1.asInstanceOf[`1`]
+  inline def olMMS: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def olSMS: `0` = 0.asInstanceOf[`0`]
+  inline def olSMS: `0` = 0.asInstanceOf[`0`]
 }

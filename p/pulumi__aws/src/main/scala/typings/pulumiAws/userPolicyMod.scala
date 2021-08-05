@@ -61,21 +61,16 @@ object userPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): UserPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[UserPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): UserPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: UserPolicyState): UserPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[UserPolicy]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: UserPolicyState, opts: CustomResourceOptions): UserPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserPolicy]
+    inline def get(name: String, id: Input[ID]): UserPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[UserPolicy]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): UserPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserPolicy]
+    inline def get(name: String, id: Input[ID], state: UserPolicyState): UserPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[UserPolicy]
+    inline def get(name: String, id: Input[ID], state: UserPolicyState, opts: CustomResourceOptions): UserPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[UserPolicy]
     
     /**
       * Returns true if the given object is an instance of UserPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/userPolicy.UserPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/userPolicy.UserPolicy */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/userPolicy.UserPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/userPolicy.UserPolicy */ Boolean]
   }
   
   trait UserPolicyArgs extends StObject {
@@ -102,32 +97,24 @@ object userPolicyMod {
   }
   object UserPolicyArgs {
     
-    @scala.inline
-    def apply(policy: Input[String | PolicyDocument], user: Input[String]): UserPolicyArgs = {
+    inline def apply(policy: Input[String | PolicyDocument], user: Input[String]): UserPolicyArgs = {
       val __obj = js.Dynamic.literal(policy = policy.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
       __obj.asInstanceOf[UserPolicyArgs]
     }
     
-    @scala.inline
-    implicit class UserPolicyArgsMutableBuilder[Self <: UserPolicyArgs] (val x: Self) extends AnyVal {
+    extension [Self <: UserPolicyArgs](x: Self) {
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
+      inline def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
+      inline def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPolicy(value: Input[String | PolicyDocument]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String | PolicyDocument]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUser(value: Input[String]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: Input[String]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
   
@@ -155,38 +142,28 @@ object userPolicyMod {
   }
   object UserPolicyState {
     
-    @scala.inline
-    def apply(): UserPolicyState = {
+    inline def apply(): UserPolicyState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UserPolicyState]
     }
     
-    @scala.inline
-    implicit class UserPolicyStateMutableBuilder[Self <: UserPolicyState] (val x: Self) extends AnyVal {
+    extension [Self <: UserPolicyState](x: Self) {
       
-      @scala.inline
-      def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: Input[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
+      inline def setNamePrefix(value: Input[String]): Self = StObject.set(x, "namePrefix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
+      inline def setNamePrefixUndefined: Self = StObject.set(x, "namePrefix", js.undefined)
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPolicy(value: Input[String | PolicyDocument]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
+      inline def setPolicy(value: Input[String | PolicyDocument]): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
+      inline def setPolicyUndefined: Self = StObject.set(x, "policy", js.undefined)
       
-      @scala.inline
-      def setUser(value: Input[String]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: Input[String]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
+      inline def setUserUndefined: Self = StObject.set(x, "user", js.undefined)
     }
   }
 }

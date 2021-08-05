@@ -18,28 +18,21 @@ trait InstanceNetworking extends StObject {
 }
 object InstanceNetworking {
   
-  @scala.inline
-  def apply(): InstanceNetworking = {
+  inline def apply(): InstanceNetworking = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InstanceNetworking]
   }
   
-  @scala.inline
-  implicit class InstanceNetworkingMutableBuilder[Self <: InstanceNetworking] (val x: Self) extends AnyVal {
+  extension [Self <: InstanceNetworking](x: Self) {
     
-    @scala.inline
-    def setMonthlyTransfer(value: MonthlyTransfer): Self = StObject.set(x, "monthlyTransfer", value.asInstanceOf[js.Any])
+    inline def setMonthlyTransfer(value: MonthlyTransfer): Self = StObject.set(x, "monthlyTransfer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonthlyTransferUndefined: Self = StObject.set(x, "monthlyTransfer", js.undefined)
+    inline def setMonthlyTransferUndefined: Self = StObject.set(x, "monthlyTransfer", js.undefined)
     
-    @scala.inline
-    def setPorts(value: InstancePortInfoList): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
+    inline def setPorts(value: InstancePortInfoList): Self = StObject.set(x, "ports", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
+    inline def setPortsUndefined: Self = StObject.set(x, "ports", js.undefined)
     
-    @scala.inline
-    def setPortsVarargs(value: InstancePortInfo*): Self = StObject.set(x, "ports", js.Array(value :_*))
+    inline def setPortsVarargs(value: InstancePortInfo*): Self = StObject.set(x, "ports", js.Array(value :_*))
   }
 }

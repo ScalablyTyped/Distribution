@@ -21,19 +21,15 @@ trait Less extends StObject {
 }
 object Less {
   
-  @scala.inline
-  def apply(css: RegExp, less: RegExp): Less = {
+  inline def apply(css: RegExp, less: RegExp): Less = {
     val __obj = js.Dynamic.literal(css = css.asInstanceOf[js.Any], less = less.asInstanceOf[js.Any])
     __obj.asInstanceOf[Less]
   }
   
-  @scala.inline
-  implicit class LessMutableBuilder[Self <: Less] (val x: Self) extends AnyVal {
+  extension [Self <: Less](x: Self) {
     
-    @scala.inline
-    def setCss(value: RegExp): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
+    inline def setCss(value: RegExp): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLess(value: RegExp): Self = StObject.set(x, "less", value.asInstanceOf[js.Any])
+    inline def setLess(value: RegExp): Self = StObject.set(x, "less", value.asInstanceOf[js.Any])
   }
 }

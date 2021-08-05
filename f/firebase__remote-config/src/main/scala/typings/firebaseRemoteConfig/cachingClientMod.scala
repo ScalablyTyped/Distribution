@@ -19,7 +19,7 @@ object cachingClientMod {
        with RemoteConfigFetchClient {
     def this(client: RemoteConfigFetchClient, storage: Storage, storageCache: StorageCache, logger: Logger) = this()
     
-    val client: js.Any = js.native
+    /* private */ val client: js.Any = js.native
     
     /**
       * @throws if response status is not 200 or 304.
@@ -39,10 +39,10 @@ object cachingClientMod {
     def isCachedDataFresh(cacheMaxAgeMillis: Double): Boolean = js.native
     def isCachedDataFresh(cacheMaxAgeMillis: Double, lastSuccessfulFetchTimestampMillis: Double): Boolean = js.native
     
-    val logger: js.Any = js.native
+    /* private */ val logger: js.Any = js.native
     
-    val storage: js.Any = js.native
+    /* private */ val storage: js.Any = js.native
     
-    val storageCache: js.Any = js.native
+    /* private */ val storageCache: js.Any = js.native
   }
 }

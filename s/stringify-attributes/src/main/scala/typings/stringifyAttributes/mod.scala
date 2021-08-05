@@ -22,8 +22,7 @@ object mod {
   //=> ' unicorn="🦄" rainbow number="1" multiple="a b"'
   ```
   */
-  @scala.inline
-  def apply(attributes: Attributes): String = ^.asInstanceOf[js.Dynamic].apply(attributes.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(attributes: Attributes): String = ^.asInstanceOf[js.Dynamic].apply(attributes.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("stringify-attributes", JSImport.Namespace)
   @js.native

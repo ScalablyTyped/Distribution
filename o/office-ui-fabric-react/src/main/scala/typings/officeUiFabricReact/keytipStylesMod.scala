@@ -16,12 +16,9 @@ object keytipStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getCalloutOffsetStyles(offset: Point): IStyleFunction[ICalloutContentStyleProps, ICalloutContentStyles] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCalloutOffsetStyles")(offset.asInstanceOf[js.Any]).asInstanceOf[IStyleFunction[ICalloutContentStyleProps, ICalloutContentStyles]]
+  inline def getCalloutOffsetStyles(offset: Point): IStyleFunction[ICalloutContentStyleProps, ICalloutContentStyles] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCalloutOffsetStyles")(offset.asInstanceOf[js.Any]).asInstanceOf[IStyleFunction[ICalloutContentStyleProps, ICalloutContentStyles]]
   
-  @scala.inline
-  def getCalloutStyles(props: ICalloutContentStyleProps): ICalloutContentStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getCalloutStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ICalloutContentStyles]
+  inline def getCalloutStyles(props: ICalloutContentStyleProps): ICalloutContentStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getCalloutStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ICalloutContentStyles]
   
-  @scala.inline
-  def getStyles(props: IKeytipStyleProps): IKeytipStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IKeytipStyles]
+  inline def getStyles(props: IKeytipStyleProps): IKeytipStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IKeytipStyles]
 }

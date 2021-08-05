@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait StreamWriteEnum extends StObject
 object StreamWriteEnum {
   
-  @scala.inline
-  def adWriteChar: `0` = 0.asInstanceOf[`0`]
+  inline def adWriteChar: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def adWriteLine: `1` = 1.asInstanceOf[`1`]
+  inline def adWriteLine: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def stWriteChar: `0` = 0.asInstanceOf[`0`]
+  inline def stWriteChar: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def stWriteLine: `1` = 1.asInstanceOf[`1`]
+  inline def stWriteLine: `1` = 1.asInstanceOf[`1`]
 }

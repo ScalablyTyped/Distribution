@@ -33,73 +33,51 @@ trait CollectionDefinition
 }
 object CollectionDefinition {
   
-  @scala.inline
-  def apply(): CollectionDefinition = {
+  inline def apply(): CollectionDefinition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CollectionDefinition]
   }
   
-  @scala.inline
-  implicit class CollectionDefinitionMutableBuilder[Self <: CollectionDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: CollectionDefinition](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
     
-    @scala.inline
-    def setConnection(value: String): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: String): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
+    inline def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
     
-    @scala.inline
-    def setDataEncryptionKeys(value: js.Any): Self = StObject.set(x, "dataEncryptionKeys", value.asInstanceOf[js.Any])
+    inline def setDataEncryptionKeys(value: js.Any): Self = StObject.set(x, "dataEncryptionKeys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataEncryptionKeysUndefined: Self = StObject.set(x, "dataEncryptionKeys", js.undefined)
+    inline def setDataEncryptionKeysUndefined: Self = StObject.set(x, "dataEncryptionKeys", js.undefined)
     
-    @scala.inline
-    def setDatastore(value: String): Self = StObject.set(x, "datastore", value.asInstanceOf[js.Any])
+    inline def setDatastore(value: String): Self = StObject.set(x, "datastore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatastoreUndefined: Self = StObject.set(x, "datastore", js.undefined)
+    inline def setDatastoreUndefined: Self = StObject.set(x, "datastore", js.undefined)
     
-    @scala.inline
-    def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+    inline def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
+    inline def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
     
-    @scala.inline
-    def setMigrate(value: alter | drop | safe): Self = StObject.set(x, "migrate", value.asInstanceOf[js.Any])
+    inline def setMigrate(value: alter | drop | safe): Self = StObject.set(x, "migrate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMigrateUndefined: Self = StObject.set(x, "migrate", js.undefined)
+    inline def setMigrateUndefined: Self = StObject.set(x, "migrate", js.undefined)
     
-    @scala.inline
-    def setPrimaryKey(value: String): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
+    inline def setPrimaryKey(value: String): Self = StObject.set(x, "primaryKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
+    inline def setPrimaryKeyUndefined: Self = StObject.set(x, "primaryKey", js.undefined)
     
-    @scala.inline
-    def setSchema(value: Boolean): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    inline def setSchema(value: Boolean): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
+    inline def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
-    @scala.inline
-    def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: String): Self = StObject.set(x, "tableName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableNameUndefined: Self = StObject.set(x, "tableName", js.undefined)
+    inline def setTableNameUndefined: Self = StObject.set(x, "tableName", js.undefined)
     
-    @scala.inline
-    def setTypes(value: js.Any): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    inline def setTypes(value: js.Any): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+    inline def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
   }
 }

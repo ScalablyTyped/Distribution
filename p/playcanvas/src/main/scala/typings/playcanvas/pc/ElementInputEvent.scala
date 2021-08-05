@@ -37,8 +37,7 @@ trait ElementInputEvent extends StObject {
 }
 object ElementInputEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     camera: CameraComponent,
     element: ElementComponent,
     event: MouseEvent | TouchEvent,
@@ -48,19 +47,14 @@ object ElementInputEvent {
     __obj.asInstanceOf[ElementInputEvent]
   }
   
-  @scala.inline
-  implicit class ElementInputEventMutableBuilder[Self <: ElementInputEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ElementInputEvent](x: Self) {
     
-    @scala.inline
-    def setCamera(value: CameraComponent): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
+    inline def setCamera(value: CameraComponent): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElement(value: ElementComponent): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: ElementComponent): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent(value: MouseEvent | TouchEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: MouseEvent | TouchEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
+    inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
   }
 }

@@ -26,8 +26,7 @@ trait XInteractionDocumentSave
 }
 object XInteractionDocumentSave {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
@@ -38,10 +37,8 @@ object XInteractionDocumentSave {
     __obj.asInstanceOf[XInteractionDocumentSave]
   }
   
-  @scala.inline
-  implicit class XInteractionDocumentSaveMutableBuilder[Self <: XInteractionDocumentSave] (val x: Self) extends AnyVal {
+  extension [Self <: XInteractionDocumentSave](x: Self) {
     
-    @scala.inline
-    def setSetName(value: (String, XContent) => Unit): Self = StObject.set(x, "setName", js.Any.fromFunction2(value))
+    inline def setSetName(value: (String, XContent) => Unit): Self = StObject.set(x, "setName", js.Any.fromFunction2(value))
   }
 }

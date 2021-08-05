@@ -34,9 +34,9 @@ object v1Mod {
       */
     def getToken(cb: js.Function): js.Any = js.native
     
-    var iamApikey: js.Any = js.native
+    /* private */ var iamApikey: js.Any = js.native
     
-    var iamUrl: String = js.native
+    /* protected */ var iamUrl: String = js.native
     
     /**
       * Used as a fail-safe to prevent the condition of a refresh token expiring,
@@ -47,7 +47,7 @@ object v1Mod {
       * @private
       * @returns {boolean}
       */
-    var isRefreshTokenExpired: js.Any = js.native
+    /* private */ var isRefreshTokenExpired: js.Any = js.native
     
     /**
       * Check if currently stored token is expired.
@@ -60,7 +60,7 @@ object v1Mod {
       * @private
       * @returns {boolean}
       */
-    var isTokenExpired: js.Any = js.native
+    /* private */ var isTokenExpired: js.Any = js.native
     
     var name: String = js.native
     
@@ -70,7 +70,7 @@ object v1Mod {
       * @param {Function} cb - The callback that handles the response.
       * @returns {void}
       */
-    var refreshToken: js.Any = js.native
+    /* private */ var refreshToken: js.Any = js.native
     
     /**
       * Request an IAM token using an API key.
@@ -78,7 +78,7 @@ object v1Mod {
       * @param {Function} cb - The callback that handles the response.
       * @returns {void}
       */
-    var requestToken: js.Any = js.native
+    /* private */ var requestToken: js.Any = js.native
     
     /**
       * Save the response from the IAM service request to the object's state.
@@ -87,7 +87,7 @@ object v1Mod {
       * @private
       * @returns {void}
       */
-    var saveTokenInfo: js.Any = js.native
+    /* private */ var saveTokenInfo: js.Any = js.native
     
     var serviceVersion: String = js.native
     
@@ -105,9 +105,9 @@ object v1Mod {
       */
     def setAccessToken(iamAccessToken: String): Unit = js.native
     
-    var tokenInfo: IamTokenData = js.native
+    /* protected */ var tokenInfo: IamTokenData = js.native
     
-    var userAccessToken: js.Any = js.native
+    /* private */ var userAccessToken: js.Any = js.native
   }
   
   trait IamTokenData extends StObject {
@@ -124,8 +124,7 @@ object v1Mod {
   }
   object IamTokenData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       access_token: String,
       expiration: Double,
       expires_in: Double,
@@ -136,23 +135,17 @@ object v1Mod {
       __obj.asInstanceOf[IamTokenData]
     }
     
-    @scala.inline
-    implicit class IamTokenDataMutableBuilder[Self <: IamTokenData] (val x: Self) extends AnyVal {
+    extension [Self <: IamTokenData](x: Self) {
       
-      @scala.inline
-      def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
+      inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpiration(value: Double): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
+      inline def setExpiration(value: Double): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpires_in(value: Double): Self = StObject.set(x, "expires_in", value.asInstanceOf[js.Any])
+      inline def setExpires_in(value: Double): Self = StObject.set(x, "expires_in", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRefresh_token(value: String): Self = StObject.set(x, "refresh_token", value.asInstanceOf[js.Any])
+      inline def setRefresh_token(value: String): Self = StObject.set(x, "refresh_token", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken_type(value: String): Self = StObject.set(x, "token_type", value.asInstanceOf[js.Any])
+      inline def setToken_type(value: String): Self = StObject.set(x, "token_type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -166,32 +159,24 @@ object v1Mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setIamAccessToken(value: String): Self = StObject.set(x, "iamAccessToken", value.asInstanceOf[js.Any])
+      inline def setIamAccessToken(value: String): Self = StObject.set(x, "iamAccessToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIamAccessTokenUndefined: Self = StObject.set(x, "iamAccessToken", js.undefined)
+      inline def setIamAccessTokenUndefined: Self = StObject.set(x, "iamAccessToken", js.undefined)
       
-      @scala.inline
-      def setIamApikey(value: String): Self = StObject.set(x, "iamApikey", value.asInstanceOf[js.Any])
+      inline def setIamApikey(value: String): Self = StObject.set(x, "iamApikey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIamApikeyUndefined: Self = StObject.set(x, "iamApikey", js.undefined)
+      inline def setIamApikeyUndefined: Self = StObject.set(x, "iamApikey", js.undefined)
       
-      @scala.inline
-      def setIamUrl(value: String): Self = StObject.set(x, "iamUrl", value.asInstanceOf[js.Any])
+      inline def setIamUrl(value: String): Self = StObject.set(x, "iamUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIamUrlUndefined: Self = StObject.set(x, "iamUrl", js.undefined)
+      inline def setIamUrlUndefined: Self = StObject.set(x, "iamUrl", js.undefined)
     }
   }
 }

@@ -11,13 +11,9 @@ object actionsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def addFormatTypes(configs: js.Array[NamedFormatConfiguration]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addFormatTypes")(configs.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def addFormatTypes(configs: NamedFormatConfiguration): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addFormatTypes")(configs.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addFormatTypes(configs: js.Array[NamedFormatConfiguration]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addFormatTypes")(configs.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def addFormatTypes(configs: NamedFormatConfiguration): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addFormatTypes")(configs.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @scala.inline
-  def removeFormatTypes(names: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFormatTypes")(names.asInstanceOf[js.Any]).asInstanceOf[Unit]
-  @scala.inline
-  def removeFormatTypes(names: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFormatTypes")(names.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeFormatTypes(names: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFormatTypes")(names.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def removeFormatTypes(names: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeFormatTypes")(names.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

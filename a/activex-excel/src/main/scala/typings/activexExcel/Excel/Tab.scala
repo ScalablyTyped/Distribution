@@ -14,7 +14,7 @@ trait Tab extends StObject {
   
   val Creator: XlCreator
   
-  @JSName("Excel.Tab_typekey")
+  /* private */ @JSName("Excel.Tab_typekey")
   var ExcelDotTab_typekey: Tab
   
   val Parent: js.Any
@@ -25,8 +25,7 @@ trait Tab extends StObject {
 }
 object Tab {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     Color: XlRgbColor | Double,
     ColorIndex: XlColorIndex,
@@ -41,31 +40,22 @@ object Tab {
     __obj.asInstanceOf[Tab]
   }
   
-  @scala.inline
-  implicit class TabMutableBuilder[Self <: Tab] (val x: Self) extends AnyVal {
+  extension [Self <: Tab](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: XlRgbColor | Double): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
+    inline def setColor(value: XlRgbColor | Double): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorIndex(value: XlColorIndex): Self = StObject.set(x, "ColorIndex", value.asInstanceOf[js.Any])
+    inline def setColorIndex(value: XlColorIndex): Self = StObject.set(x, "ColorIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExcelDotTab_typekey(value: Tab): Self = StObject.set(x, "Excel.Tab_typekey", value.asInstanceOf[js.Any])
+    inline def setExcelDotTab_typekey(value: Tab): Self = StObject.set(x, "Excel.Tab_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeColor(value: XlThemeColor): Self = StObject.set(x, "ThemeColor", value.asInstanceOf[js.Any])
+    inline def setThemeColor(value: XlThemeColor): Self = StObject.set(x, "ThemeColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTintAndShade(value: Double): Self = StObject.set(x, "TintAndShade", value.asInstanceOf[js.Any])
+    inline def setTintAndShade(value: Double): Self = StObject.set(x, "TintAndShade", value.asInstanceOf[js.Any])
   }
 }

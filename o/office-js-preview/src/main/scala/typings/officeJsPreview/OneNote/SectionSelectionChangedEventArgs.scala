@@ -31,20 +31,16 @@ trait SectionSelectionChangedEventArgs extends StObject {
 }
 object SectionSelectionChangedEventArgs {
   
-  @scala.inline
-  def apply(oldId: String): SectionSelectionChangedEventArgs = {
+  inline def apply(oldId: String): SectionSelectionChangedEventArgs = {
     val __obj = js.Dynamic.literal(oldId = oldId.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("SectionSelectionChanged")
     __obj.asInstanceOf[SectionSelectionChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class SectionSelectionChangedEventArgsMutableBuilder[Self <: SectionSelectionChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: SectionSelectionChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setOldId(value: String): Self = StObject.set(x, "oldId", value.asInstanceOf[js.Any])
+    inline def setOldId(value: String): Self = StObject.set(x, "oldId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: SectionSelectionChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: SectionSelectionChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

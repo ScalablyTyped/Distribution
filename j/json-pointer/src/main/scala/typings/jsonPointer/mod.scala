@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(`object`: js.Object): JSONPointerWrap = ^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any]).asInstanceOf[JSONPointerWrap]
+  inline def apply(`object`: js.Object): JSONPointerWrap = ^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any]).asInstanceOf[JSONPointerWrap]
   
   @JSImport("json-pointer", JSImport.Namespace)
   @js.native
@@ -16,20 +15,17 @@ object mod {
   /**
     *  Builds a json pointer from an array of reference tokens.
     */
-  @scala.inline
-  def compile(str: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def compile(str: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     *  Creates a dictionary object (pointer -> value).
     */
-  @scala.inline
-  def dict(`object`: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("dict")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  inline def dict(`object`: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("dict")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
   /**
     *  Escapes a reference token.
     */
-  @scala.inline
-  def escape(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def escape(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     *  Wrap an object with accessors
@@ -37,44 +33,37 @@ object mod {
   /**
     *  Looks up a JSON pointer in an object.
     */
-  @scala.inline
-  def get(`object`: js.Object, pointer: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def get(`object`: js.Object, pointer: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     *  Tests if an object has a value for a JSON pointer.
     */
-  @scala.inline
-  def has(`object`: js.Object, pointer: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(`object`.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def has(`object`: js.Object, pointer: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(`object`.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     *  Converts a JSON pointer into an array of reference tokens.
     */
-  @scala.inline
-  def parse(str: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  inline def parse(str: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   /**
     *  Removes an attribute of object referenced by pointer
     */
-  @scala.inline
-  def remove(`object`: js.Object, pointer: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(`object`.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def remove(`object`: js.Object, pointer: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(`object`.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     *  Set a value for a JSON pointer on object.
     */
-  @scala.inline
-  def set(`object`: js.Object, pointer: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(`object`.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def set(`object`: js.Object, pointer: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(`object`.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     *  Unescape a reference token.
     */
-  @scala.inline
-  def unescape(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescape")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def unescape(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unescape")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     *  Just like: each(pointer.dict(obj), iterator);
     */
-  @scala.inline
-  def walk(`object`: js.Object, iterator: js.Function2[/* value */ js.Any, /* key */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("walk")(`object`.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def walk(`object`: js.Object, iterator: js.Function2[/* value */ js.Any, /* key */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("walk")(`object`.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   trait JSONPointerWrap extends StObject {
     
@@ -110,8 +99,7 @@ object mod {
   }
   object JSONPointerWrap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       dict: () => js.Object,
       get: String => js.Any,
       has: String => Boolean,
@@ -123,26 +111,19 @@ object mod {
       __obj.asInstanceOf[JSONPointerWrap]
     }
     
-    @scala.inline
-    implicit class JSONPointerWrapMutableBuilder[Self <: JSONPointerWrap] (val x: Self) extends AnyVal {
+    extension [Self <: JSONPointerWrap](x: Self) {
       
-      @scala.inline
-      def setDict(value: () => js.Object): Self = StObject.set(x, "dict", js.Any.fromFunction0(value))
+      inline def setDict(value: () => js.Object): Self = StObject.set(x, "dict", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+      inline def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: String => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSet(value: (String, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+      inline def setSet(value: (String, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWalk(value: js.Function2[/* value */ js.Any, /* key */ String, Unit] => Unit): Self = StObject.set(x, "walk", js.Any.fromFunction1(value))
+      inline def setWalk(value: js.Function2[/* value */ js.Any, /* key */ String, Unit] => Unit): Self = StObject.set(x, "walk", js.Any.fromFunction1(value))
     }
   }
 }

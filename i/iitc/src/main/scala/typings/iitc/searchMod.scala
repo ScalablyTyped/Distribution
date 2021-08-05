@@ -70,8 +70,7 @@ object searchMod {
     @JSGlobal("search")
     @js.native
     def search: Search_ = js.native
-    @scala.inline
-    def search_=(x: Search_): Unit = js.Dynamic.global.updateDynamic("search")(x.asInstanceOf[js.Any])
+    inline def search_=(x: Search_): Unit = js.Dynamic.global.updateDynamic("search")(x.asInstanceOf[js.Any])
     
     /* Rewritten from type alias, can be one of: 
       - typings.iitc.searchMod.global.SearchResultPosition
@@ -80,8 +79,7 @@ object searchMod {
     trait SearchResult extends StObject
     object SearchResult {
       
-      @scala.inline
-      def SearchResultBounds(
+      inline def SearchResultBounds(
         bounds: LatLngBoundsExpression,
         description: JQuery | js.Array[js.Any] | Element | Text | String,
         title: String
@@ -90,8 +88,7 @@ object searchMod {
         __obj.asInstanceOf[typings.iitc.searchMod.global.SearchResultBounds]
       }
       
-      @scala.inline
-      def SearchResultPosition(
+      inline def SearchResultPosition(
         description: JQuery | js.Array[js.Any] | Element | Text | String,
         position: LatLngExpression,
         title: String
@@ -131,47 +128,34 @@ object searchMod {
     }
     object SearchResultBase {
       
-      @scala.inline
-      def apply(description: JQuery | js.Array[js.Any] | Element | Text | String, title: String): SearchResultBase = {
+      inline def apply(description: JQuery | js.Array[js.Any] | Element | Text | String, title: String): SearchResultBase = {
         val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
         __obj.asInstanceOf[SearchResultBase]
       }
       
-      @scala.inline
-      implicit class SearchResultBaseMutableBuilder[Self <: SearchResultBase] (val x: Self) extends AnyVal {
+      extension [Self <: SearchResultBase](x: Self) {
         
-        @scala.inline
-        def setDescription(value: JQuery | js.Array[js.Any] | Element | Text | String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+        inline def setDescription(value: JQuery | js.Array[js.Any] | Element | Text | String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setDescriptionVarargs(value: js.Any*): Self = StObject.set(x, "description", js.Array(value :_*))
+        inline def setDescriptionVarargs(value: js.Any*): Self = StObject.set(x, "description", js.Array(value :_*))
         
-        @scala.inline
-        def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+        inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+        inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
         
-        @scala.inline
-        def setLayer(value: Layer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+        inline def setLayer(value: Layer): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
+        inline def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
         
-        @scala.inline
-        def setOnRemove(value: /* result */ SearchResult => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction1(value))
+        inline def setOnRemove(value: /* result */ SearchResult => Unit): Self = StObject.set(x, "onRemove", js.Any.fromFunction1(value))
         
-        @scala.inline
-        def setOnRemoveUndefined: Self = StObject.set(x, "onRemove", js.undefined)
+        inline def setOnRemoveUndefined: Self = StObject.set(x, "onRemove", js.undefined)
         
-        @scala.inline
-        def setOnSelected(value: (/* result */ SearchResult, /* event */ UIEvent) => js.UndefOr[Boolean]): Self = StObject.set(x, "onSelected", js.Any.fromFunction2(value))
+        inline def setOnSelected(value: (/* result */ SearchResult, /* event */ UIEvent) => js.UndefOr[Boolean]): Self = StObject.set(x, "onSelected", js.Any.fromFunction2(value))
         
-        @scala.inline
-        def setOnSelectedUndefined: Self = StObject.set(x, "onSelected", js.undefined)
+        inline def setOnSelectedUndefined: Self = StObject.set(x, "onSelected", js.undefined)
         
-        @scala.inline
-        def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+        inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       }
     }
     
@@ -184,8 +168,7 @@ object searchMod {
     }
     object SearchResultBounds {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         bounds: LatLngBoundsExpression,
         description: JQuery | js.Array[js.Any] | Element | Text | String,
         title: String
@@ -194,14 +177,11 @@ object searchMod {
         __obj.asInstanceOf[SearchResultBounds]
       }
       
-      @scala.inline
-      implicit class SearchResultBoundsMutableBuilder[Self <: SearchResultBounds] (val x: Self) extends AnyVal {
+      extension [Self <: SearchResultBounds](x: Self) {
         
-        @scala.inline
-        def setBounds(value: LatLngBoundsExpression): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
+        inline def setBounds(value: LatLngBoundsExpression): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setBoundsVarargs(value: LatLngTuple*): Self = StObject.set(x, "bounds", js.Array(value :_*))
+        inline def setBoundsVarargs(value: LatLngTuple*): Self = StObject.set(x, "bounds", js.Array(value :_*))
       }
     }
     
@@ -214,8 +194,7 @@ object searchMod {
     }
     object SearchResultPosition {
       
-      @scala.inline
-      def apply(
+      inline def apply(
         description: JQuery | js.Array[js.Any] | Element | Text | String,
         position: LatLngExpression,
         title: String
@@ -224,11 +203,9 @@ object searchMod {
         __obj.asInstanceOf[SearchResultPosition]
       }
       
-      @scala.inline
-      implicit class SearchResultPositionMutableBuilder[Self <: SearchResultPosition] (val x: Self) extends AnyVal {
+      extension [Self <: SearchResultPosition](x: Self) {
         
-        @scala.inline
-        def setPosition(value: LatLngExpression): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+        inline def setPosition(value: LatLngExpression): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       }
     }
   }

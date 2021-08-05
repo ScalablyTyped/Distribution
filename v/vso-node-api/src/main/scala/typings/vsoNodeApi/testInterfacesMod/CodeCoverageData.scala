@@ -23,25 +23,19 @@ trait CodeCoverageData extends StObject {
 }
 object CodeCoverageData {
   
-  @scala.inline
-  def apply(buildFlavor: String, buildPlatform: String, coverageStats: js.Array[CodeCoverageStatistics]): CodeCoverageData = {
+  inline def apply(buildFlavor: String, buildPlatform: String, coverageStats: js.Array[CodeCoverageStatistics]): CodeCoverageData = {
     val __obj = js.Dynamic.literal(buildFlavor = buildFlavor.asInstanceOf[js.Any], buildPlatform = buildPlatform.asInstanceOf[js.Any], coverageStats = coverageStats.asInstanceOf[js.Any])
     __obj.asInstanceOf[CodeCoverageData]
   }
   
-  @scala.inline
-  implicit class CodeCoverageDataMutableBuilder[Self <: CodeCoverageData] (val x: Self) extends AnyVal {
+  extension [Self <: CodeCoverageData](x: Self) {
     
-    @scala.inline
-    def setBuildFlavor(value: String): Self = StObject.set(x, "buildFlavor", value.asInstanceOf[js.Any])
+    inline def setBuildFlavor(value: String): Self = StObject.set(x, "buildFlavor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBuildPlatform(value: String): Self = StObject.set(x, "buildPlatform", value.asInstanceOf[js.Any])
+    inline def setBuildPlatform(value: String): Self = StObject.set(x, "buildPlatform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoverageStats(value: js.Array[CodeCoverageStatistics]): Self = StObject.set(x, "coverageStats", value.asInstanceOf[js.Any])
+    inline def setCoverageStats(value: js.Array[CodeCoverageStatistics]): Self = StObject.set(x, "coverageStats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCoverageStatsVarargs(value: CodeCoverageStatistics*): Self = StObject.set(x, "coverageStats", js.Array(value :_*))
+    inline def setCoverageStatsVarargs(value: CodeCoverageStatistics*): Self = StObject.set(x, "coverageStats", js.Array(value :_*))
   }
 }

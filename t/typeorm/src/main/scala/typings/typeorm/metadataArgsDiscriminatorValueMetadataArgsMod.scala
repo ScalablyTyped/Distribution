@@ -20,20 +20,16 @@ object metadataArgsDiscriminatorValueMetadataArgsMod {
   }
   object DiscriminatorValueMetadataArgs {
     
-    @scala.inline
-    def apply(target: js.Function | String, value: js.Any): DiscriminatorValueMetadataArgs = {
+    inline def apply(target: js.Function | String, value: js.Any): DiscriminatorValueMetadataArgs = {
       val __obj = js.Dynamic.literal(target = target.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[DiscriminatorValueMetadataArgs]
     }
     
-    @scala.inline
-    implicit class DiscriminatorValueMetadataArgsMutableBuilder[Self <: DiscriminatorValueMetadataArgs] (val x: Self) extends AnyVal {
+    extension [Self <: DiscriminatorValueMetadataArgs](x: Self) {
       
-      @scala.inline
-      def setTarget(value: js.Function | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      inline def setTarget(value: js.Function | String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

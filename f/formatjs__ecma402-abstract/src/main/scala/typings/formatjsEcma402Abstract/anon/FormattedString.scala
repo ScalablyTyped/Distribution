@@ -12,19 +12,15 @@ trait FormattedString extends StObject {
 }
 object FormattedString {
   
-  @scala.inline
-  def apply(formattedString: String, roundedNumber: Double): FormattedString = {
+  inline def apply(formattedString: String, roundedNumber: Double): FormattedString = {
     val __obj = js.Dynamic.literal(formattedString = formattedString.asInstanceOf[js.Any], roundedNumber = roundedNumber.asInstanceOf[js.Any])
     __obj.asInstanceOf[FormattedString]
   }
   
-  @scala.inline
-  implicit class FormattedStringMutableBuilder[Self <: FormattedString] (val x: Self) extends AnyVal {
+  extension [Self <: FormattedString](x: Self) {
     
-    @scala.inline
-    def setFormattedString(value: String): Self = StObject.set(x, "formattedString", value.asInstanceOf[js.Any])
+    inline def setFormattedString(value: String): Self = StObject.set(x, "formattedString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoundedNumber(value: Double): Self = StObject.set(x, "roundedNumber", value.asInstanceOf[js.Any])
+    inline def setRoundedNumber(value: Double): Self = StObject.set(x, "roundedNumber", value.asInstanceOf[js.Any])
   }
 }

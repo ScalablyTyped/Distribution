@@ -31,8 +31,7 @@ trait Artifact extends StObject {
 }
 object Artifact {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     alias: String,
     definitionReference: StringDictionary[ArtifactSourceReference],
     isPrimary: Boolean,
@@ -44,22 +43,16 @@ object Artifact {
     __obj.asInstanceOf[Artifact]
   }
   
-  @scala.inline
-  implicit class ArtifactMutableBuilder[Self <: Artifact] (val x: Self) extends AnyVal {
+  extension [Self <: Artifact](x: Self) {
     
-    @scala.inline
-    def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+    inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinitionReference(value: StringDictionary[ArtifactSourceReference]): Self = StObject.set(x, "definitionReference", value.asInstanceOf[js.Any])
+    inline def setDefinitionReference(value: StringDictionary[ArtifactSourceReference]): Self = StObject.set(x, "definitionReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
+    inline def setIsPrimary(value: Boolean): Self = StObject.set(x, "isPrimary", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceId(value: String): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
+    inline def setSourceId(value: String): Self = StObject.set(x, "sourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -25,8 +25,7 @@ trait DataPilotFieldGroups
      with XNameContainer
 object DataPilotFieldGroups {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Count: Double,
     ElementNames: SafeArray[String],
     ElementType: `type`,

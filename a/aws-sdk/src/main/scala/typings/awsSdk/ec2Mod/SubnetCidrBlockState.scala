@@ -18,25 +18,19 @@ trait SubnetCidrBlockState extends StObject {
 }
 object SubnetCidrBlockState {
   
-  @scala.inline
-  def apply(): SubnetCidrBlockState = {
+  inline def apply(): SubnetCidrBlockState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SubnetCidrBlockState]
   }
   
-  @scala.inline
-  implicit class SubnetCidrBlockStateMutableBuilder[Self <: SubnetCidrBlockState] (val x: Self) extends AnyVal {
+  extension [Self <: SubnetCidrBlockState](x: Self) {
     
-    @scala.inline
-    def setState(value: SubnetCidrBlockStateCode): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: SubnetCidrBlockStateCode): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
-    @scala.inline
-    def setStatusMessage(value: String): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: String): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
+    inline def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
   }
 }

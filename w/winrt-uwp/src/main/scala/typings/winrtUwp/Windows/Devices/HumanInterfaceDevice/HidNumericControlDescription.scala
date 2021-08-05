@@ -58,8 +58,7 @@ trait HidNumericControlDescription extends StObject {
 }
 object HidNumericControlDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     hasNull: Boolean,
     id: Double,
     isAbsolute: Boolean,
@@ -81,55 +80,38 @@ object HidNumericControlDescription {
     __obj.asInstanceOf[HidNumericControlDescription]
   }
   
-  @scala.inline
-  implicit class HidNumericControlDescriptionMutableBuilder[Self <: HidNumericControlDescription] (val x: Self) extends AnyVal {
+  extension [Self <: HidNumericControlDescription](x: Self) {
     
-    @scala.inline
-    def setHasNull(value: Boolean): Self = StObject.set(x, "hasNull", value.asInstanceOf[js.Any])
+    inline def setHasNull(value: Boolean): Self = StObject.set(x, "hasNull", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAbsolute(value: Boolean): Self = StObject.set(x, "isAbsolute", value.asInstanceOf[js.Any])
+    inline def setIsAbsolute(value: Boolean): Self = StObject.set(x, "isAbsolute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogicalMaximum(value: Double): Self = StObject.set(x, "logicalMaximum", value.asInstanceOf[js.Any])
+    inline def setLogicalMaximum(value: Double): Self = StObject.set(x, "logicalMaximum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogicalMinimum(value: Double): Self = StObject.set(x, "logicalMinimum", value.asInstanceOf[js.Any])
+    inline def setLogicalMinimum(value: Double): Self = StObject.set(x, "logicalMinimum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentCollections(value: IVectorView[HidCollection]): Self = StObject.set(x, "parentCollections", value.asInstanceOf[js.Any])
+    inline def setParentCollections(value: IVectorView[HidCollection]): Self = StObject.set(x, "parentCollections", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhysicalMaximum(value: Double): Self = StObject.set(x, "physicalMaximum", value.asInstanceOf[js.Any])
+    inline def setPhysicalMaximum(value: Double): Self = StObject.set(x, "physicalMaximum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhysicalMinimum(value: Double): Self = StObject.set(x, "physicalMinimum", value.asInstanceOf[js.Any])
+    inline def setPhysicalMinimum(value: Double): Self = StObject.set(x, "physicalMinimum", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportCount(value: Double): Self = StObject.set(x, "reportCount", value.asInstanceOf[js.Any])
+    inline def setReportCount(value: Double): Self = StObject.set(x, "reportCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportId(value: Double): Self = StObject.set(x, "reportId", value.asInstanceOf[js.Any])
+    inline def setReportId(value: Double): Self = StObject.set(x, "reportId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportSize(value: Double): Self = StObject.set(x, "reportSize", value.asInstanceOf[js.Any])
+    inline def setReportSize(value: Double): Self = StObject.set(x, "reportSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReportType(value: HidReportType): Self = StObject.set(x, "reportType", value.asInstanceOf[js.Any])
+    inline def setReportType(value: HidReportType): Self = StObject.set(x, "reportType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnit(value: Double): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
+    inline def setUnit(value: Double): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnitExponent(value: Double): Self = StObject.set(x, "unitExponent", value.asInstanceOf[js.Any])
+    inline def setUnitExponent(value: Double): Self = StObject.set(x, "unitExponent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsageId(value: Double): Self = StObject.set(x, "usageId", value.asInstanceOf[js.Any])
+    inline def setUsageId(value: Double): Self = StObject.set(x, "usageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsagePage(value: Double): Self = StObject.set(x, "usagePage", value.asInstanceOf[js.Any])
+    inline def setUsagePage(value: Double): Self = StObject.set(x, "usagePage", value.asInstanceOf[js.Any])
   }
 }

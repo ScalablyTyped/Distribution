@@ -274,17 +274,14 @@ object global {
   }
   object JQuery {
     
-    @scala.inline
-    def apply(intlTelInput: JQueryPlugin): JQuery = {
+    inline def apply(intlTelInput: JQueryPlugin): JQuery = {
       val __obj = js.Dynamic.literal(intlTelInput = intlTelInput.asInstanceOf[js.Any])
       __obj.asInstanceOf[JQuery]
     }
     
-    @scala.inline
-    implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+    extension [Self <: JQuery](x: Self) {
       
-      @scala.inline
-      def setIntlTelInput(value: JQueryPlugin): Self = StObject.set(x, "intlTelInput", value.asInstanceOf[js.Any])
+      inline def setIntlTelInput(value: JQueryPlugin): Self = StObject.set(x, "intlTelInput", value.asInstanceOf[js.Any])
     }
   }
   

@@ -25,8 +25,8 @@ object measurerMod {
     
     /* private */ def getGuardWidth(): js.Any = js.native
     
-    var guardWidth: js.Any = js.native
+    /* private */ var guardWidth: js.Any = js.native
     
-    var useGuards: js.Any = js.native
+    /* private */ var useGuards: js.Any = js.native
   }
 }

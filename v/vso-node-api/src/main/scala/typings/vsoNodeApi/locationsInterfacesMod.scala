@@ -116,38 +116,32 @@ object locationsInterfacesMod {
     @JSImport("vso-node-api/interfaces/LocationsInterfaces", "TypeInfo.ConnectionData")
     @js.native
     def ConnectionData: js.Any = js.native
-    @scala.inline
-    def ConnectionData_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConnectionData")(x.asInstanceOf[js.Any])
+    inline def ConnectionData_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConnectionData")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/LocationsInterfaces", "TypeInfo.InheritLevel")
     @js.native
     def InheritLevel: EnumValuesAccount = js.native
-    @scala.inline
-    def InheritLevel_=(x: EnumValuesAccount): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InheritLevel")(x.asInstanceOf[js.Any])
+    inline def InheritLevel_=(x: EnumValuesAccount): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("InheritLevel")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/LocationsInterfaces", "TypeInfo.LocationServiceData")
     @js.native
     def LocationServiceData: js.Any = js.native
-    @scala.inline
-    def LocationServiceData_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LocationServiceData")(x.asInstanceOf[js.Any])
+    inline def LocationServiceData_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("LocationServiceData")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/LocationsInterfaces", "TypeInfo.RelativeToSetting")
     @js.native
     def RelativeToSetting: EnumValuesContext = js.native
-    @scala.inline
-    def RelativeToSetting_=(x: EnumValuesContext): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RelativeToSetting")(x.asInstanceOf[js.Any])
+    inline def RelativeToSetting_=(x: EnumValuesContext): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RelativeToSetting")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/LocationsInterfaces", "TypeInfo.ServiceDefinition")
     @js.native
     def ServiceDefinition: js.Any = js.native
-    @scala.inline
-    def ServiceDefinition_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ServiceDefinition")(x.asInstanceOf[js.Any])
+    inline def ServiceDefinition_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ServiceDefinition")(x.asInstanceOf[js.Any])
     
     @JSImport("vso-node-api/interfaces/LocationsInterfaces", "TypeInfo.ServiceStatus")
     @js.native
     def ServiceStatus: EnumValuesAssigned = js.native
-    @scala.inline
-    def ServiceStatus_=(x: EnumValuesAssigned): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ServiceStatus")(x.asInstanceOf[js.Any])
+    inline def ServiceStatus_=(x: EnumValuesAssigned): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ServiceStatus")(x.asInstanceOf[js.Any])
   }
   
   trait AccessMapping extends StObject {
@@ -170,8 +164,7 @@ object locationsInterfacesMod {
   }
   object AccessMapping {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accessPoint: String,
       displayName: String,
       moniker: String,
@@ -182,23 +175,17 @@ object locationsInterfacesMod {
       __obj.asInstanceOf[AccessMapping]
     }
     
-    @scala.inline
-    implicit class AccessMappingMutableBuilder[Self <: AccessMapping] (val x: Self) extends AnyVal {
+    extension [Self <: AccessMapping](x: Self) {
       
-      @scala.inline
-      def setAccessPoint(value: String): Self = StObject.set(x, "accessPoint", value.asInstanceOf[js.Any])
+      inline def setAccessPoint(value: String): Self = StObject.set(x, "accessPoint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMoniker(value: String): Self = StObject.set(x, "moniker", value.asInstanceOf[js.Any])
+      inline def setMoniker(value: String): Self = StObject.set(x, "moniker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceOwner(value: String): Self = StObject.set(x, "serviceOwner", value.asInstanceOf[js.Any])
+      inline def setServiceOwner(value: String): Self = StObject.set(x, "serviceOwner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualDirectory(value: String): Self = StObject.set(x, "virtualDirectory", value.asInstanceOf[js.Any])
+      inline def setVirtualDirectory(value: String): Self = StObject.set(x, "virtualDirectory", value.asInstanceOf[js.Any])
     }
   }
   
@@ -241,8 +228,7 @@ object locationsInterfacesMod {
   }
   object ConnectionData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       authenticatedUser: Identity,
       authorizedUser: Identity,
       deploymentId: String,
@@ -255,29 +241,21 @@ object locationsInterfacesMod {
       __obj.asInstanceOf[ConnectionData]
     }
     
-    @scala.inline
-    implicit class ConnectionDataMutableBuilder[Self <: ConnectionData] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectionData](x: Self) {
       
-      @scala.inline
-      def setAuthenticatedUser(value: Identity): Self = StObject.set(x, "authenticatedUser", value.asInstanceOf[js.Any])
+      inline def setAuthenticatedUser(value: Identity): Self = StObject.set(x, "authenticatedUser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAuthorizedUser(value: Identity): Self = StObject.set(x, "authorizedUser", value.asInstanceOf[js.Any])
+      inline def setAuthorizedUser(value: Identity): Self = StObject.set(x, "authorizedUser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeploymentId(value: String): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
+      inline def setDeploymentId(value: String): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
+      inline def setInstanceId(value: String): Self = StObject.set(x, "instanceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastUserAccess(value: Date): Self = StObject.set(x, "lastUserAccess", value.asInstanceOf[js.Any])
+      inline def setLastUserAccess(value: Date): Self = StObject.set(x, "lastUserAccess", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationServiceData(value: LocationServiceData): Self = StObject.set(x, "locationServiceData", value.asInstanceOf[js.Any])
+      inline def setLocationServiceData(value: LocationServiceData): Self = StObject.set(x, "locationServiceData", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebApplicationRelativeDirectory(value: String): Self = StObject.set(x, "webApplicationRelativeDirectory", value.asInstanceOf[js.Any])
+      inline def setWebApplicationRelativeDirectory(value: String): Self = StObject.set(x, "webApplicationRelativeDirectory", value.asInstanceOf[js.Any])
     }
   }
   
@@ -289,20 +267,16 @@ object locationsInterfacesMod {
   }
   object LocationMapping {
     
-    @scala.inline
-    def apply(accessMappingMoniker: String, location: String): LocationMapping = {
+    inline def apply(accessMappingMoniker: String, location: String): LocationMapping = {
       val __obj = js.Dynamic.literal(accessMappingMoniker = accessMappingMoniker.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any])
       __obj.asInstanceOf[LocationMapping]
     }
     
-    @scala.inline
-    implicit class LocationMappingMutableBuilder[Self <: LocationMapping] (val x: Self) extends AnyVal {
+    extension [Self <: LocationMapping](x: Self) {
       
-      @scala.inline
-      def setAccessMappingMoniker(value: String): Self = StObject.set(x, "accessMappingMoniker", value.asInstanceOf[js.Any])
+      inline def setAccessMappingMoniker(value: String): Self = StObject.set(x, "accessMappingMoniker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     }
   }
   
@@ -350,8 +324,7 @@ object locationsInterfacesMod {
   }
   object LocationServiceData {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       accessMappings: js.Array[AccessMapping],
       clientCacheFresh: Boolean,
       clientCacheTimeToLive: Double,
@@ -365,38 +338,27 @@ object locationsInterfacesMod {
       __obj.asInstanceOf[LocationServiceData]
     }
     
-    @scala.inline
-    implicit class LocationServiceDataMutableBuilder[Self <: LocationServiceData] (val x: Self) extends AnyVal {
+    extension [Self <: LocationServiceData](x: Self) {
       
-      @scala.inline
-      def setAccessMappings(value: js.Array[AccessMapping]): Self = StObject.set(x, "accessMappings", value.asInstanceOf[js.Any])
+      inline def setAccessMappings(value: js.Array[AccessMapping]): Self = StObject.set(x, "accessMappings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAccessMappingsVarargs(value: AccessMapping*): Self = StObject.set(x, "accessMappings", js.Array(value :_*))
+      inline def setAccessMappingsVarargs(value: AccessMapping*): Self = StObject.set(x, "accessMappings", js.Array(value :_*))
       
-      @scala.inline
-      def setClientCacheFresh(value: Boolean): Self = StObject.set(x, "clientCacheFresh", value.asInstanceOf[js.Any])
+      inline def setClientCacheFresh(value: Boolean): Self = StObject.set(x, "clientCacheFresh", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClientCacheTimeToLive(value: Double): Self = StObject.set(x, "clientCacheTimeToLive", value.asInstanceOf[js.Any])
+      inline def setClientCacheTimeToLive(value: Double): Self = StObject.set(x, "clientCacheTimeToLive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultAccessMappingMoniker(value: String): Self = StObject.set(x, "defaultAccessMappingMoniker", value.asInstanceOf[js.Any])
+      inline def setDefaultAccessMappingMoniker(value: String): Self = StObject.set(x, "defaultAccessMappingMoniker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastChangeId(value: Double): Self = StObject.set(x, "lastChangeId", value.asInstanceOf[js.Any])
+      inline def setLastChangeId(value: Double): Self = StObject.set(x, "lastChangeId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastChangeId64(value: Double): Self = StObject.set(x, "lastChangeId64", value.asInstanceOf[js.Any])
+      inline def setLastChangeId64(value: Double): Self = StObject.set(x, "lastChangeId64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceDefinitions(value: js.Array[ServiceDefinition]): Self = StObject.set(x, "serviceDefinitions", value.asInstanceOf[js.Any])
+      inline def setServiceDefinitions(value: js.Array[ServiceDefinition]): Self = StObject.set(x, "serviceDefinitions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceDefinitionsVarargs(value: ServiceDefinition*): Self = StObject.set(x, "serviceDefinitions", js.Array(value :_*))
+      inline def setServiceDefinitionsVarargs(value: ServiceDefinition*): Self = StObject.set(x, "serviceDefinitions", js.Array(value :_*))
       
-      @scala.inline
-      def setServiceOwner(value: String): Self = StObject.set(x, "serviceOwner", value.asInstanceOf[js.Any])
+      inline def setServiceOwner(value: String): Self = StObject.set(x, "serviceOwner", value.asInstanceOf[js.Any])
     }
   }
   
@@ -410,23 +372,18 @@ object locationsInterfacesMod {
   }
   object ResourceAreaInfo {
     
-    @scala.inline
-    def apply(id: String, locationUrl: String, name: String): ResourceAreaInfo = {
+    inline def apply(id: String, locationUrl: String, name: String): ResourceAreaInfo = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], locationUrl = locationUrl.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResourceAreaInfo]
     }
     
-    @scala.inline
-    implicit class ResourceAreaInfoMutableBuilder[Self <: ResourceAreaInfo] (val x: Self) extends AnyVal {
+    extension [Self <: ResourceAreaInfo](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationUrl(value: String): Self = StObject.set(x, "locationUrl", value.asInstanceOf[js.Any])
+      inline def setLocationUrl(value: String): Self = StObject.set(x, "locationUrl", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -485,8 +442,7 @@ object locationsInterfacesMod {
   }
   object ServiceDefinition {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       description: String,
       displayName: String,
       identifier: String,
@@ -510,65 +466,45 @@ object locationsInterfacesMod {
       __obj.asInstanceOf[ServiceDefinition]
     }
     
-    @scala.inline
-    implicit class ServiceDefinitionMutableBuilder[Self <: ServiceDefinition] (val x: Self) extends AnyVal {
+    extension [Self <: ServiceDefinition](x: Self) {
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
+      inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
+      inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInheritLevel(value: InheritLevel): Self = StObject.set(x, "inheritLevel", value.asInstanceOf[js.Any])
+      inline def setInheritLevel(value: InheritLevel): Self = StObject.set(x, "inheritLevel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationMappings(value: js.Array[LocationMapping]): Self = StObject.set(x, "locationMappings", value.asInstanceOf[js.Any])
+      inline def setLocationMappings(value: js.Array[LocationMapping]): Self = StObject.set(x, "locationMappings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocationMappingsVarargs(value: LocationMapping*): Self = StObject.set(x, "locationMappings", js.Array(value :_*))
+      inline def setLocationMappingsVarargs(value: LocationMapping*): Self = StObject.set(x, "locationMappings", js.Array(value :_*))
       
-      @scala.inline
-      def setMaxVersion(value: String): Self = StObject.set(x, "maxVersion", value.asInstanceOf[js.Any])
+      inline def setMaxVersion(value: String): Self = StObject.set(x, "maxVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinVersion(value: String): Self = StObject.set(x, "minVersion", value.asInstanceOf[js.Any])
+      inline def setMinVersion(value: String): Self = StObject.set(x, "minVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentIdentifier(value: String): Self = StObject.set(x, "parentIdentifier", value.asInstanceOf[js.Any])
+      inline def setParentIdentifier(value: String): Self = StObject.set(x, "parentIdentifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentServiceType(value: String): Self = StObject.set(x, "parentServiceType", value.asInstanceOf[js.Any])
+      inline def setParentServiceType(value: String): Self = StObject.set(x, "parentServiceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+      inline def setProperties(value: js.Any): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativePath(value: String): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
+      inline def setRelativePath(value: String): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRelativeToSetting(value: RelativeToSetting): Self = StObject.set(x, "relativeToSetting", value.asInstanceOf[js.Any])
+      inline def setRelativeToSetting(value: RelativeToSetting): Self = StObject.set(x, "relativeToSetting", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReleasedVersion(value: String): Self = StObject.set(x, "releasedVersion", value.asInstanceOf[js.Any])
+      inline def setReleasedVersion(value: String): Self = StObject.set(x, "releasedVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResourceVersion(value: Double): Self = StObject.set(x, "resourceVersion", value.asInstanceOf[js.Any])
+      inline def setResourceVersion(value: Double): Self = StObject.set(x, "resourceVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceOwner(value: String): Self = StObject.set(x, "serviceOwner", value.asInstanceOf[js.Any])
+      inline def setServiceOwner(value: String): Self = StObject.set(x, "serviceOwner", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServiceType(value: String): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
+      inline def setServiceType(value: String): Self = StObject.set(x, "serviceType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatus(value: ServiceStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: ServiceStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToolId(value: String): Self = StObject.set(x, "toolId", value.asInstanceOf[js.Any])
+      inline def setToolId(value: String): Self = StObject.set(x, "toolId", value.asInstanceOf[js.Any])
     }
   }
 }

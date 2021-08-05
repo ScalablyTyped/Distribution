@@ -43,13 +43,10 @@ object PushNotifications {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def createPushNotificationChannelForApplicationAsync(): IAsyncOperation[typings.winrt.Windows.Networking.PushNotifications.PushNotificationChannel] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPushNotificationChannelForApplicationAsync")().asInstanceOf[IAsyncOperation[typings.winrt.Windows.Networking.PushNotifications.PushNotificationChannel]]
-    @scala.inline
-    def createPushNotificationChannelForApplicationAsync(applicationId: String): IAsyncOperation[typings.winrt.Windows.Networking.PushNotifications.PushNotificationChannel] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPushNotificationChannelForApplicationAsync")(applicationId.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Networking.PushNotifications.PushNotificationChannel]]
+    inline def createPushNotificationChannelForApplicationAsync(): IAsyncOperation[typings.winrt.Windows.Networking.PushNotifications.PushNotificationChannel] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPushNotificationChannelForApplicationAsync")().asInstanceOf[IAsyncOperation[typings.winrt.Windows.Networking.PushNotifications.PushNotificationChannel]]
+    inline def createPushNotificationChannelForApplicationAsync(applicationId: String): IAsyncOperation[typings.winrt.Windows.Networking.PushNotifications.PushNotificationChannel] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPushNotificationChannelForApplicationAsync")(applicationId.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Networking.PushNotifications.PushNotificationChannel]]
     
-    @scala.inline
-    def createPushNotificationChannelForSecondaryTileAsync(tileId: String): IAsyncOperation[typings.winrt.Windows.Networking.PushNotifications.PushNotificationChannel] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPushNotificationChannelForSecondaryTileAsync")(tileId.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Networking.PushNotifications.PushNotificationChannel]]
+    inline def createPushNotificationChannelForSecondaryTileAsync(tileId: String): IAsyncOperation[typings.winrt.Windows.Networking.PushNotifications.PushNotificationChannel] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPushNotificationChannelForSecondaryTileAsync")(tileId.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[typings.winrt.Windows.Networking.PushNotifications.PushNotificationChannel]]
   }
   
   @JSGlobal("Windows.Networking.PushNotifications.PushNotificationReceivedEventArgs")

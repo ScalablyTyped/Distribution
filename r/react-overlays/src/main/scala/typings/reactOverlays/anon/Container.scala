@@ -17,8 +17,7 @@ trait Container extends StObject {
 }
 object Container {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     container: Requireable[js.Any],
     onRendered: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
   ): Container = {
@@ -26,13 +25,10 @@ object Container {
     __obj.asInstanceOf[Container]
   }
   
-  @scala.inline
-  implicit class ContainerMutableBuilder[Self <: Container] (val x: Self) extends AnyVal {
+  extension [Self <: Container](x: Self) {
     
-    @scala.inline
-    def setContainer(value: Requireable[js.Any]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
+    inline def setContainer(value: Requireable[js.Any]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnRendered(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onRendered", value.asInstanceOf[js.Any])
+    inline def setOnRendered(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onRendered", value.asInstanceOf[js.Any])
   }
 }

@@ -8,6 +8,5 @@ object beanstalkdWorkerStrings {
   
   @js.native
   sealed trait success extends StObject
-  @scala.inline
-  def success: success = "success".asInstanceOf[success]
+  inline def success: success = "success".asInstanceOf[success]
 }

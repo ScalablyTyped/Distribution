@@ -72,82 +72,57 @@ trait ParamsResourceMylibraryAnnotationsList
 }
 object ParamsResourceMylibraryAnnotationsList {
   
-  @scala.inline
-  def apply(): ParamsResourceMylibraryAnnotationsList = {
+  inline def apply(): ParamsResourceMylibraryAnnotationsList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceMylibraryAnnotationsList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceMylibraryAnnotationsListMutableBuilder[Self <: ParamsResourceMylibraryAnnotationsList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceMylibraryAnnotationsList](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setContentVersion(value: String): Self = StObject.set(x, "contentVersion", value.asInstanceOf[js.Any])
+    inline def setContentVersion(value: String): Self = StObject.set(x, "contentVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentVersionUndefined: Self = StObject.set(x, "contentVersion", js.undefined)
+    inline def setContentVersionUndefined: Self = StObject.set(x, "contentVersion", js.undefined)
     
-    @scala.inline
-    def setLayerId(value: String): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
+    inline def setLayerId(value: String): Self = StObject.set(x, "layerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerIdUndefined: Self = StObject.set(x, "layerId", js.undefined)
+    inline def setLayerIdUndefined: Self = StObject.set(x, "layerId", js.undefined)
     
-    @scala.inline
-    def setLayerIds(value: js.Array[String]): Self = StObject.set(x, "layerIds", value.asInstanceOf[js.Any])
+    inline def setLayerIds(value: js.Array[String]): Self = StObject.set(x, "layerIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerIdsUndefined: Self = StObject.set(x, "layerIds", js.undefined)
+    inline def setLayerIdsUndefined: Self = StObject.set(x, "layerIds", js.undefined)
     
-    @scala.inline
-    def setLayerIdsVarargs(value: String*): Self = StObject.set(x, "layerIds", js.Array(value :_*))
+    inline def setLayerIdsVarargs(value: String*): Self = StObject.set(x, "layerIds", js.Array(value :_*))
     
-    @scala.inline
-    def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
     
-    @scala.inline
-    def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
+    inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
+    inline def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
     
-    @scala.inline
-    def setShowDeleted(value: Boolean): Self = StObject.set(x, "showDeleted", value.asInstanceOf[js.Any])
+    inline def setShowDeleted(value: Boolean): Self = StObject.set(x, "showDeleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowDeletedUndefined: Self = StObject.set(x, "showDeleted", js.undefined)
+    inline def setShowDeletedUndefined: Self = StObject.set(x, "showDeleted", js.undefined)
     
-    @scala.inline
-    def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
     
-    @scala.inline
-    def setUpdatedMax(value: String): Self = StObject.set(x, "updatedMax", value.asInstanceOf[js.Any])
+    inline def setUpdatedMax(value: String): Self = StObject.set(x, "updatedMax", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedMaxUndefined: Self = StObject.set(x, "updatedMax", js.undefined)
+    inline def setUpdatedMaxUndefined: Self = StObject.set(x, "updatedMax", js.undefined)
     
-    @scala.inline
-    def setUpdatedMin(value: String): Self = StObject.set(x, "updatedMin", value.asInstanceOf[js.Any])
+    inline def setUpdatedMin(value: String): Self = StObject.set(x, "updatedMin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdatedMinUndefined: Self = StObject.set(x, "updatedMin", js.undefined)
+    inline def setUpdatedMinUndefined: Self = StObject.set(x, "updatedMin", js.undefined)
     
-    @scala.inline
-    def setVolumeId(value: String): Self = StObject.set(x, "volumeId", value.asInstanceOf[js.Any])
+    inline def setVolumeId(value: String): Self = StObject.set(x, "volumeId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeIdUndefined: Self = StObject.set(x, "volumeId", js.undefined)
+    inline def setVolumeIdUndefined: Self = StObject.set(x, "volumeId", js.undefined)
   }
 }

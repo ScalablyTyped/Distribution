@@ -14,16 +14,13 @@ trait PostDispatch[TTarget]
 }
 object PostDispatch {
   
-  @scala.inline
-  def apply[TTarget](postDispatch: Event => Unit): PostDispatch[TTarget] = {
+  inline def apply[TTarget](postDispatch: Event => Unit): PostDispatch[TTarget] = {
     val __obj = js.Dynamic.literal(postDispatch = js.Any.fromFunction1(postDispatch))
     __obj.asInstanceOf[PostDispatch[TTarget]]
   }
   
-  @scala.inline
-  implicit class PostDispatchMutableBuilder[Self <: PostDispatch[?], TTarget] (val x: Self & PostDispatch[TTarget]) extends AnyVal {
+  extension [Self <: PostDispatch[?], TTarget](x: Self & PostDispatch[TTarget]) {
     
-    @scala.inline
-    def setPostDispatch(value: Event => Unit): Self = StObject.set(x, "postDispatch", js.Any.fromFunction1(value))
+    inline def setPostDispatch(value: Event => Unit): Self = StObject.set(x, "postDispatch", js.Any.fromFunction1(value))
   }
 }

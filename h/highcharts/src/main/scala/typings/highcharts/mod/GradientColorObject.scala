@@ -29,31 +29,23 @@ trait GradientColorObject
 }
 object GradientColorObject {
   
-  @scala.inline
-  def apply(stops: js.Array[GradientColorStopObject]): GradientColorObject = {
+  inline def apply(stops: js.Array[GradientColorStopObject]): GradientColorObject = {
     val __obj = js.Dynamic.literal(stops = stops.asInstanceOf[js.Any])
     __obj.asInstanceOf[GradientColorObject]
   }
   
-  @scala.inline
-  implicit class GradientColorObjectMutableBuilder[Self <: GradientColorObject] (val x: Self) extends AnyVal {
+  extension [Self <: GradientColorObject](x: Self) {
     
-    @scala.inline
-    def setLinearGradient(value: LinearGradientColorObject): Self = StObject.set(x, "linearGradient", value.asInstanceOf[js.Any])
+    inline def setLinearGradient(value: LinearGradientColorObject): Self = StObject.set(x, "linearGradient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinearGradientUndefined: Self = StObject.set(x, "linearGradient", js.undefined)
+    inline def setLinearGradientUndefined: Self = StObject.set(x, "linearGradient", js.undefined)
     
-    @scala.inline
-    def setRadialGradient(value: RadialGradientColorObject): Self = StObject.set(x, "radialGradient", value.asInstanceOf[js.Any])
+    inline def setRadialGradient(value: RadialGradientColorObject): Self = StObject.set(x, "radialGradient", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadialGradientUndefined: Self = StObject.set(x, "radialGradient", js.undefined)
+    inline def setRadialGradientUndefined: Self = StObject.set(x, "radialGradient", js.undefined)
     
-    @scala.inline
-    def setStops(value: js.Array[GradientColorStopObject]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
+    inline def setStops(value: js.Array[GradientColorStopObject]): Self = StObject.set(x, "stops", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStopsVarargs(value: GradientColorStopObject*): Self = StObject.set(x, "stops", js.Array(value :_*))
+    inline def setStopsVarargs(value: GradientColorStopObject*): Self = StObject.set(x, "stops", js.Array(value :_*))
   }
 }

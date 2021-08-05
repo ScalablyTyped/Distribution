@@ -16,8 +16,7 @@ trait XEmbedPersist2
 }
 object XEmbedPersist2 {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     EntryName: String,
     acquire: () => Unit,
     getEntryName: () => String,
@@ -37,10 +36,8 @@ object XEmbedPersist2 {
     __obj.asInstanceOf[XEmbedPersist2]
   }
   
-  @scala.inline
-  implicit class XEmbedPersist2MutableBuilder[Self <: XEmbedPersist2] (val x: Self) extends AnyVal {
+  extension [Self <: XEmbedPersist2](x: Self) {
     
-    @scala.inline
-    def setIsStored(value: () => Boolean): Self = StObject.set(x, "isStored", js.Any.fromFunction0(value))
+    inline def setIsStored(value: () => Boolean): Self = StObject.set(x, "isStored", js.Any.fromFunction0(value))
   }
 }

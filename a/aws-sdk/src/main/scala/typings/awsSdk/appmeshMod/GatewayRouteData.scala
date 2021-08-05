@@ -35,8 +35,7 @@ trait GatewayRouteData extends StObject {
 }
 object GatewayRouteData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     gatewayRouteName: ResourceName,
     meshName: ResourceName,
     metadata: ResourceMetadata,
@@ -48,25 +47,18 @@ object GatewayRouteData {
     __obj.asInstanceOf[GatewayRouteData]
   }
   
-  @scala.inline
-  implicit class GatewayRouteDataMutableBuilder[Self <: GatewayRouteData] (val x: Self) extends AnyVal {
+  extension [Self <: GatewayRouteData](x: Self) {
     
-    @scala.inline
-    def setGatewayRouteName(value: ResourceName): Self = StObject.set(x, "gatewayRouteName", value.asInstanceOf[js.Any])
+    inline def setGatewayRouteName(value: ResourceName): Self = StObject.set(x, "gatewayRouteName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeshName(value: ResourceName): Self = StObject.set(x, "meshName", value.asInstanceOf[js.Any])
+    inline def setMeshName(value: ResourceName): Self = StObject.set(x, "meshName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadata(value: ResourceMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: ResourceMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpec(value: GatewayRouteSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+    inline def setSpec(value: GatewayRouteSpec): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: GatewayRouteStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: GatewayRouteStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualGatewayName(value: ResourceName): Self = StObject.set(x, "virtualGatewayName", value.asInstanceOf[js.Any])
+    inline def setVirtualGatewayName(value: ResourceName): Self = StObject.set(x, "virtualGatewayName", value.asInstanceOf[js.Any])
   }
 }

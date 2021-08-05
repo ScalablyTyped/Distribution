@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait TokenScopeOption extends StObject
 object TokenScopeOption {
   
-  @scala.inline
-  def default: typings.xregexp.xregexpStrings.default = "default".asInstanceOf[typings.xregexp.xregexpStrings.default]
+  inline def default: typings.xregexp.xregexpStrings.default = "default".asInstanceOf[typings.xregexp.xregexpStrings.default]
   
-  @scala.inline
-  def all: typings.xregexp.xregexpStrings.all = "all".asInstanceOf[typings.xregexp.xregexpStrings.all]
+  inline def all: typings.xregexp.xregexpStrings.all = "all".asInstanceOf[typings.xregexp.xregexpStrings.all]
   
-  @scala.inline
-  def `class`: typings.xregexp.xregexpStrings.`class` = "class".asInstanceOf[typings.xregexp.xregexpStrings.`class`]
+  inline def `class`: typings.xregexp.xregexpStrings.`class` = "class".asInstanceOf[typings.xregexp.xregexpStrings.`class`]
 }

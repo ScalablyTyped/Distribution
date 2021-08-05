@@ -17,31 +17,23 @@ trait PivotFilterSpec extends StObject {
 }
 object PivotFilterSpec {
   
-  @scala.inline
-  def apply(): PivotFilterSpec = {
+  inline def apply(): PivotFilterSpec = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PivotFilterSpec]
   }
   
-  @scala.inline
-  implicit class PivotFilterSpecMutableBuilder[Self <: PivotFilterSpec] (val x: Self) extends AnyVal {
+  extension [Self <: PivotFilterSpec](x: Self) {
     
-    @scala.inline
-    def setColumnOffsetIndex(value: Double): Self = StObject.set(x, "columnOffsetIndex", value.asInstanceOf[js.Any])
+    inline def setColumnOffsetIndex(value: Double): Self = StObject.set(x, "columnOffsetIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnOffsetIndexUndefined: Self = StObject.set(x, "columnOffsetIndex", js.undefined)
+    inline def setColumnOffsetIndexUndefined: Self = StObject.set(x, "columnOffsetIndex", js.undefined)
     
-    @scala.inline
-    def setDataSourceColumnReference(value: DataSourceColumnReference): Self = StObject.set(x, "dataSourceColumnReference", value.asInstanceOf[js.Any])
+    inline def setDataSourceColumnReference(value: DataSourceColumnReference): Self = StObject.set(x, "dataSourceColumnReference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceColumnReferenceUndefined: Self = StObject.set(x, "dataSourceColumnReference", js.undefined)
+    inline def setDataSourceColumnReferenceUndefined: Self = StObject.set(x, "dataSourceColumnReference", js.undefined)
     
-    @scala.inline
-    def setFilterCriteria(value: PivotFilterCriteria): Self = StObject.set(x, "filterCriteria", value.asInstanceOf[js.Any])
+    inline def setFilterCriteria(value: PivotFilterCriteria): Self = StObject.set(x, "filterCriteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterCriteriaUndefined: Self = StObject.set(x, "filterCriteria", js.undefined)
+    inline def setFilterCriteriaUndefined: Self = StObject.set(x, "filterCriteria", js.undefined)
   }
 }

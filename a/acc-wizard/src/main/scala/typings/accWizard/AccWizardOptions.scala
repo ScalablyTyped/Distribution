@@ -106,8 +106,7 @@ trait AccWizardOptions extends StObject {
 }
 object AccWizardOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activeClass: String,
     addButtons: Boolean,
     autoScrolling: Boolean,
@@ -130,58 +129,40 @@ object AccWizardOptions {
     __obj.asInstanceOf[AccWizardOptions]
   }
   
-  @scala.inline
-  implicit class AccWizardOptionsMutableBuilder[Self <: AccWizardOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AccWizardOptions](x: Self) {
     
-    @scala.inline
-    def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
+    inline def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddButtons(value: Boolean): Self = StObject.set(x, "addButtons", value.asInstanceOf[js.Any])
+    inline def setAddButtons(value: Boolean): Self = StObject.set(x, "addButtons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoScrolling(value: Boolean): Self = StObject.set(x, "autoScrolling", value.asInstanceOf[js.Any])
+    inline def setAutoScrolling(value: Boolean): Self = StObject.set(x, "autoScrolling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackClasses(value: String): Self = StObject.set(x, "backClasses", value.asInstanceOf[js.Any])
+    inline def setBackClasses(value: String): Self = StObject.set(x, "backClasses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackText(value: String): Self = StObject.set(x, "backText", value.asInstanceOf[js.Any])
+    inline def setBackText(value: String): Self = StObject.set(x, "backText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackType(value: String): Self = StObject.set(x, "backType", value.asInstanceOf[js.Any])
+    inline def setBackType(value: String): Self = StObject.set(x, "backType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompletedClass(value: String): Self = StObject.set(x, "completedClass", value.asInstanceOf[js.Any])
+    inline def setCompletedClass(value: String): Self = StObject.set(x, "completedClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextClasses(value: String): Self = StObject.set(x, "nextClasses", value.asInstanceOf[js.Any])
+    inline def setNextClasses(value: String): Self = StObject.set(x, "nextClasses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextText(value: String): Self = StObject.set(x, "nextText", value.asInstanceOf[js.Any])
+    inline def setNextText(value: String): Self = StObject.set(x, "nextText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextType(value: String): Self = StObject.set(x, "nextType", value.asInstanceOf[js.Any])
+    inline def setNextType(value: String): Self = StObject.set(x, "nextType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnBack(value: js.Function): Self = StObject.set(x, "onBack", value.asInstanceOf[js.Any])
+    inline def setOnBack(value: js.Function): Self = StObject.set(x, "onBack", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnDestroy(value: js.Function): Self = StObject.set(x, "onDestroy", value.asInstanceOf[js.Any])
+    inline def setOnDestroy(value: js.Function): Self = StObject.set(x, "onDestroy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnInit(value: js.Function): Self = StObject.set(x, "onInit", value.asInstanceOf[js.Any])
+    inline def setOnInit(value: js.Function): Self = StObject.set(x, "onInit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnNext(value: js.Function): Self = StObject.set(x, "onNext", value.asInstanceOf[js.Any])
+    inline def setOnNext(value: js.Function): Self = StObject.set(x, "onNext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSidebar(value: String): Self = StObject.set(x, "sidebar", value.asInstanceOf[js.Any])
+    inline def setSidebar(value: String): Self = StObject.set(x, "sidebar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStepClass(value: String): Self = StObject.set(x, "stepClass", value.asInstanceOf[js.Any])
+    inline def setStepClass(value: String): Self = StObject.set(x, "stepClass", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTodoClass(value: String): Self = StObject.set(x, "todoClass", value.asInstanceOf[js.Any])
+    inline def setTodoClass(value: String): Self = StObject.set(x, "todoClass", value.asInstanceOf[js.Any])
   }
 }

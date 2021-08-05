@@ -14,22 +14,17 @@ trait IEXTENSION_RESPONSE extends StObject {
 }
 object IEXTENSION_RESPONSE {
   
-  @scala.inline
-  def apply(cmd: String, params: js.Object, sourceRoom: Double): IEXTENSION_RESPONSE = {
+  inline def apply(cmd: String, params: js.Object, sourceRoom: Double): IEXTENSION_RESPONSE = {
     val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], sourceRoom = sourceRoom.asInstanceOf[js.Any])
     __obj.asInstanceOf[IEXTENSION_RESPONSE]
   }
   
-  @scala.inline
-  implicit class IEXTENSION_RESPONSEMutableBuilder[Self <: IEXTENSION_RESPONSE] (val x: Self) extends AnyVal {
+  extension [Self <: IEXTENSION_RESPONSE](x: Self) {
     
-    @scala.inline
-    def setCmd(value: String): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
+    inline def setCmd(value: String): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceRoom(value: Double): Self = StObject.set(x, "sourceRoom", value.asInstanceOf[js.Any])
+    inline def setSourceRoom(value: Double): Self = StObject.set(x, "sourceRoom", value.asInstanceOf[js.Any])
   }
 }

@@ -11,14 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ProtocolMethodSpec extends StObject
 object ProtocolMethodSpec {
   
-  @scala.inline
-  def DetailedProtocolMethodSpec(types: String): typings.fridaGum.ObjC.DetailedProtocolMethodSpec = {
+  inline def DetailedProtocolMethodSpec(types: String): typings.fridaGum.ObjC.DetailedProtocolMethodSpec = {
     val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fridaGum.ObjC.DetailedProtocolMethodSpec]
   }
   
-  @scala.inline
-  def SimpleProtocolMethodSpec(argTypes: js.Array[String], retType: String): typings.fridaGum.ObjC.SimpleProtocolMethodSpec = {
+  inline def SimpleProtocolMethodSpec(argTypes: js.Array[String], retType: String): typings.fridaGum.ObjC.SimpleProtocolMethodSpec = {
     val __obj = js.Dynamic.literal(argTypes = argTypes.asInstanceOf[js.Any], retType = retType.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.fridaGum.ObjC.SimpleProtocolMethodSpec]
   }

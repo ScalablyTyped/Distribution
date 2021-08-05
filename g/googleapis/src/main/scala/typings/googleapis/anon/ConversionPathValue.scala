@@ -12,28 +12,21 @@ trait ConversionPathValue extends StObject {
 }
 object ConversionPathValue {
   
-  @scala.inline
-  def apply(): ConversionPathValue = {
+  inline def apply(): ConversionPathValue = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConversionPathValue]
   }
   
-  @scala.inline
-  implicit class ConversionPathValueMutableBuilder[Self <: ConversionPathValue] (val x: Self) extends AnyVal {
+  extension [Self <: ConversionPathValue](x: Self) {
     
-    @scala.inline
-    def setConversionPathValue(value: js.Array[InteractionType]): Self = StObject.set(x, "conversionPathValue", value.asInstanceOf[js.Any])
+    inline def setConversionPathValue(value: js.Array[InteractionType]): Self = StObject.set(x, "conversionPathValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversionPathValueUndefined: Self = StObject.set(x, "conversionPathValue", js.undefined)
+    inline def setConversionPathValueUndefined: Self = StObject.set(x, "conversionPathValue", js.undefined)
     
-    @scala.inline
-    def setConversionPathValueVarargs(value: InteractionType*): Self = StObject.set(x, "conversionPathValue", js.Array(value :_*))
+    inline def setConversionPathValueVarargs(value: InteractionType*): Self = StObject.set(x, "conversionPathValue", js.Array(value :_*))
     
-    @scala.inline
-    def setPrimitiveValue(value: String): Self = StObject.set(x, "primitiveValue", value.asInstanceOf[js.Any])
+    inline def setPrimitiveValue(value: String): Self = StObject.set(x, "primitiveValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrimitiveValueUndefined: Self = StObject.set(x, "primitiveValue", js.undefined)
+    inline def setPrimitiveValueUndefined: Self = StObject.set(x, "primitiveValue", js.undefined)
   }
 }

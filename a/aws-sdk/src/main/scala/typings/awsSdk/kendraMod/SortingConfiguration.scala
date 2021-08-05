@@ -18,19 +18,15 @@ trait SortingConfiguration extends StObject {
 }
 object SortingConfiguration {
   
-  @scala.inline
-  def apply(DocumentAttributeKey: DocumentAttributeKey, SortOrder: SortOrder): SortingConfiguration = {
+  inline def apply(DocumentAttributeKey: DocumentAttributeKey, SortOrder: SortOrder): SortingConfiguration = {
     val __obj = js.Dynamic.literal(DocumentAttributeKey = DocumentAttributeKey.asInstanceOf[js.Any], SortOrder = SortOrder.asInstanceOf[js.Any])
     __obj.asInstanceOf[SortingConfiguration]
   }
   
-  @scala.inline
-  implicit class SortingConfigurationMutableBuilder[Self <: SortingConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: SortingConfiguration](x: Self) {
     
-    @scala.inline
-    def setDocumentAttributeKey(value: DocumentAttributeKey): Self = StObject.set(x, "DocumentAttributeKey", value.asInstanceOf[js.Any])
+    inline def setDocumentAttributeKey(value: DocumentAttributeKey): Self = StObject.set(x, "DocumentAttributeKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOrder(value: SortOrder): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
+    inline def setSortOrder(value: SortOrder): Self = StObject.set(x, "SortOrder", value.asInstanceOf[js.Any])
   }
 }

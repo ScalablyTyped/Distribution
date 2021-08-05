@@ -17,8 +17,7 @@ trait Experience extends StObject {
 }
 object Experience {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     id: String,
     initial_url: String,
     metrics: StringDictionary[typings.psi.anon.Category],
@@ -28,19 +27,14 @@ object Experience {
     __obj.asInstanceOf[Experience]
   }
   
-  @scala.inline
-  implicit class ExperienceMutableBuilder[Self <: Experience] (val x: Self) extends AnyVal {
+  extension [Self <: Experience](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInitial_url(value: String): Self = StObject.set(x, "initial_url", value.asInstanceOf[js.Any])
+    inline def setInitial_url(value: String): Self = StObject.set(x, "initial_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetrics(value: StringDictionary[typings.psi.anon.Category]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: StringDictionary[typings.psi.anon.Category]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverall_category(value: String): Self = StObject.set(x, "overall_category", value.asInstanceOf[js.Any])
+    inline def setOverall_category(value: String): Self = StObject.set(x, "overall_category", value.asInstanceOf[js.Any])
   }
 }

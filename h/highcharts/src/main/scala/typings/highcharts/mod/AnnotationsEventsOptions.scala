@@ -26,31 +26,23 @@ trait AnnotationsEventsOptions extends StObject {
 }
 object AnnotationsEventsOptions {
   
-  @scala.inline
-  def apply(): AnnotationsEventsOptions = {
+  inline def apply(): AnnotationsEventsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnnotationsEventsOptions]
   }
   
-  @scala.inline
-  implicit class AnnotationsEventsOptionsMutableBuilder[Self <: AnnotationsEventsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotationsEventsOptions](x: Self) {
     
-    @scala.inline
-    def setAdd(value: EventCallbackFunction[Annotation]): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
+    inline def setAdd(value: EventCallbackFunction[Annotation]): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
+    inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
-    @scala.inline
-    def setAfterUpdate(value: EventCallbackFunction[Annotation]): Self = StObject.set(x, "afterUpdate", value.asInstanceOf[js.Any])
+    inline def setAfterUpdate(value: EventCallbackFunction[Annotation]): Self = StObject.set(x, "afterUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAfterUpdateUndefined: Self = StObject.set(x, "afterUpdate", js.undefined)
+    inline def setAfterUpdateUndefined: Self = StObject.set(x, "afterUpdate", js.undefined)
     
-    @scala.inline
-    def setRemove(value: EventCallbackFunction[Annotation]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+    inline def setRemove(value: EventCallbackFunction[Annotation]): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+    inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
   }
 }

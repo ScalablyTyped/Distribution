@@ -26,17 +26,16 @@ object borderlessButtonMod {
     @JSImport("react-navigation-stack/lib/typescript/src/vendor/views/BorderlessButton", "default.defaultProps")
     @js.native
     def defaultProps: Borderless = js.native
-    @scala.inline
-    def defaultProps_=(x: Borderless): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: Borderless): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @js.native
   trait BorderlessButton
     extends Component[Props, js.Object, js.Any] {
     
-    var handleActiveStateChange: js.Any = js.native
+    /* private */ var handleActiveStateChange: js.Any = js.native
     
-    var opacity: js.Any = js.native
+    /* private */ var opacity: js.Any = js.native
   }
   
   type Props = (ComponentProps[Instantiable1[/* props */ ReadonlyBaseButtonPropert, BaseButton]]) & ActiveOpacity

@@ -22,25 +22,19 @@ trait ScaleRangeLayerProperties extends StObject {
 }
 object ScaleRangeLayerProperties {
   
-  @scala.inline
-  def apply(): ScaleRangeLayerProperties = {
+  inline def apply(): ScaleRangeLayerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ScaleRangeLayerProperties]
   }
   
-  @scala.inline
-  implicit class ScaleRangeLayerPropertiesMutableBuilder[Self <: ScaleRangeLayerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ScaleRangeLayerProperties](x: Self) {
     
-    @scala.inline
-    def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
+    inline def setMaxScale(value: Double): Self = StObject.set(x, "maxScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxScaleUndefined: Self = StObject.set(x, "maxScale", js.undefined)
+    inline def setMaxScaleUndefined: Self = StObject.set(x, "maxScale", js.undefined)
     
-    @scala.inline
-    def setMinScale(value: Double): Self = StObject.set(x, "minScale", value.asInstanceOf[js.Any])
+    inline def setMinScale(value: Double): Self = StObject.set(x, "minScale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinScaleUndefined: Self = StObject.set(x, "minScale", js.undefined)
+    inline def setMinScaleUndefined: Self = StObject.set(x, "minScale", js.undefined)
   }
 }

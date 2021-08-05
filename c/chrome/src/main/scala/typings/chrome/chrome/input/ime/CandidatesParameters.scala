@@ -14,22 +14,17 @@ trait CandidatesParameters extends StObject {
 }
 object CandidatesParameters {
   
-  @scala.inline
-  def apply(candidates: js.Array[CandidateTemplate], contextID: Double): CandidatesParameters = {
+  inline def apply(candidates: js.Array[CandidateTemplate], contextID: Double): CandidatesParameters = {
     val __obj = js.Dynamic.literal(candidates = candidates.asInstanceOf[js.Any], contextID = contextID.asInstanceOf[js.Any])
     __obj.asInstanceOf[CandidatesParameters]
   }
   
-  @scala.inline
-  implicit class CandidatesParametersMutableBuilder[Self <: CandidatesParameters] (val x: Self) extends AnyVal {
+  extension [Self <: CandidatesParameters](x: Self) {
     
-    @scala.inline
-    def setCandidates(value: js.Array[CandidateTemplate]): Self = StObject.set(x, "candidates", value.asInstanceOf[js.Any])
+    inline def setCandidates(value: js.Array[CandidateTemplate]): Self = StObject.set(x, "candidates", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCandidatesVarargs(value: CandidateTemplate*): Self = StObject.set(x, "candidates", js.Array(value :_*))
+    inline def setCandidatesVarargs(value: CandidateTemplate*): Self = StObject.set(x, "candidates", js.Array(value :_*))
     
-    @scala.inline
-    def setContextID(value: Double): Self = StObject.set(x, "contextID", value.asInstanceOf[js.Any])
+    inline def setContextID(value: Double): Self = StObject.set(x, "contextID", value.asInstanceOf[js.Any])
   }
 }

@@ -48,8 +48,7 @@ trait ISearchCriteria extends StObject {
 }
 object ISearchCriteria {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AdditionalConditions: ISearchConditionExs,
     Clone: () => ISearchCriteria,
     ExpandUI: Boolean,
@@ -71,55 +70,38 @@ object ISearchCriteria {
     __obj.asInstanceOf[ISearchCriteria]
   }
   
-  @scala.inline
-  implicit class ISearchCriteriaMutableBuilder[Self <: ISearchCriteria] (val x: Self) extends AnyVal {
+  extension [Self <: ISearchCriteria](x: Self) {
     
-    @scala.inline
-    def setAdditionalConditions(value: ISearchConditionExs): Self = StObject.set(x, "AdditionalConditions", value.asInstanceOf[js.Any])
+    inline def setAdditionalConditions(value: ISearchConditionExs): Self = StObject.set(x, "AdditionalConditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClone(value: () => ISearchCriteria): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => ISearchCriteria): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setExpandUI(value: Boolean): Self = StObject.set(x, "ExpandUI", value.asInstanceOf[js.Any])
+    inline def setExpandUI(value: Boolean): Self = StObject.set(x, "ExpandUI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacetFilterAsJSON(value: String): Self = StObject.set(x, "FacetFilterAsJSON", value.asInstanceOf[js.Any])
+    inline def setFacetFilterAsJSON(value: String): Self = StObject.set(x, "FacetFilterAsJSON", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFacetFilterStatusFlags(value: MFFacetFilterStatusFlags): Self = StObject.set(x, "FacetFilterStatusFlags", value.asInstanceOf[js.Any])
+    inline def setFacetFilterStatusFlags(value: MFFacetFilterStatusFlags): Self = StObject.set(x, "FacetFilterStatusFlags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstCondition(value: ISearchConditionEx): Self = StObject.set(x, "FirstCondition", value.asInstanceOf[js.Any])
+    inline def setFirstCondition(value: ISearchConditionEx): Self = StObject.set(x, "FirstCondition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullTextSearchFlags(value: MFFullTextSearchFlags): Self = StObject.set(x, "FullTextSearchFlags", value.asInstanceOf[js.Any])
+    inline def setFullTextSearchFlags(value: MFFullTextSearchFlags): Self = StObject.set(x, "FullTextSearchFlags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullTextSearchString(value: String): Self = StObject.set(x, "FullTextSearchString", value.asInstanceOf[js.Any])
+    inline def setFullTextSearchString(value: String): Self = StObject.set(x, "FullTextSearchString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAsSearchConditions(value: (Boolean, Boolean, Boolean) => ISearchConditions): Self = StObject.set(x, "GetAsSearchConditions", js.Any.fromFunction3(value))
+    inline def setGetAsSearchConditions(value: (Boolean, Boolean, Boolean) => ISearchConditions): Self = StObject.set(x, "GetAsSearchConditions", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setObjectTypeCondition(value: ISearchConditionEx): Self = StObject.set(x, "ObjectTypeCondition", value.asInstanceOf[js.Any])
+    inline def setObjectTypeCondition(value: ISearchConditionEx): Self = StObject.set(x, "ObjectTypeCondition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredefinedSearchFilter(value: MFPredefinedSearchFilterType): Self = StObject.set(x, "PredefinedSearchFilter", value.asInstanceOf[js.Any])
+    inline def setPredefinedSearchFilter(value: MFPredefinedSearchFilterType): Self = StObject.set(x, "PredefinedSearchFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousBaseConditions(value: ISearchConditions): Self = StObject.set(x, "PreviousBaseConditions", value.asInstanceOf[js.Any])
+    inline def setPreviousBaseConditions(value: ISearchConditions): Self = StObject.set(x, "PreviousBaseConditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchFlags(value: MFSearchFlags): Self = StObject.set(x, "SearchFlags", value.asInstanceOf[js.Any])
+    inline def setSearchFlags(value: MFSearchFlags): Self = StObject.set(x, "SearchFlags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchRefinement(value: ISearchConditions): Self = StObject.set(x, "SearchRefinement", value.asInstanceOf[js.Any])
+    inline def setSearchRefinement(value: ISearchConditions): Self = StObject.set(x, "SearchRefinement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSearchWithinThisFolder(value: Boolean): Self = StObject.set(x, "SearchWithinThisFolder", value.asInstanceOf[js.Any])
+    inline def setSearchWithinThisFolder(value: Boolean): Self = StObject.set(x, "SearchWithinThisFolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSecondCondition(value: ISearchConditionEx): Self = StObject.set(x, "SecondCondition", value.asInstanceOf[js.Any])
+    inline def setSecondCondition(value: ISearchConditionEx): Self = StObject.set(x, "SecondCondition", value.asInstanceOf[js.Any])
   }
 }

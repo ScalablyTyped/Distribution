@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ThreadState extends StObject
 object ThreadState {
   
-  @scala.inline
-  def halted: typings.fridaGum.fridaGumStrings.halted = "halted".asInstanceOf[typings.fridaGum.fridaGumStrings.halted]
+  inline def halted: typings.fridaGum.fridaGumStrings.halted = "halted".asInstanceOf[typings.fridaGum.fridaGumStrings.halted]
   
-  @scala.inline
-  def running: typings.fridaGum.fridaGumStrings.running = "running".asInstanceOf[typings.fridaGum.fridaGumStrings.running]
+  inline def running: typings.fridaGum.fridaGumStrings.running = "running".asInstanceOf[typings.fridaGum.fridaGumStrings.running]
   
-  @scala.inline
-  def stopped: typings.fridaGum.fridaGumStrings.stopped = "stopped".asInstanceOf[typings.fridaGum.fridaGumStrings.stopped]
+  inline def stopped: typings.fridaGum.fridaGumStrings.stopped = "stopped".asInstanceOf[typings.fridaGum.fridaGumStrings.stopped]
   
-  @scala.inline
-  def uninterruptible: typings.fridaGum.fridaGumStrings.uninterruptible = "uninterruptible".asInstanceOf[typings.fridaGum.fridaGumStrings.uninterruptible]
+  inline def uninterruptible: typings.fridaGum.fridaGumStrings.uninterruptible = "uninterruptible".asInstanceOf[typings.fridaGum.fridaGumStrings.uninterruptible]
   
-  @scala.inline
-  def waiting: typings.fridaGum.fridaGumStrings.waiting = "waiting".asInstanceOf[typings.fridaGum.fridaGumStrings.waiting]
+  inline def waiting: typings.fridaGum.fridaGumStrings.waiting = "waiting".asInstanceOf[typings.fridaGum.fridaGumStrings.waiting]
 }

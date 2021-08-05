@@ -33,43 +33,31 @@ trait VPCEConfiguration extends StObject {
 }
 object VPCEConfiguration {
   
-  @scala.inline
-  def apply(): VPCEConfiguration = {
+  inline def apply(): VPCEConfiguration = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VPCEConfiguration]
   }
   
-  @scala.inline
-  implicit class VPCEConfigurationMutableBuilder[Self <: VPCEConfiguration] (val x: Self) extends AnyVal {
+  extension [Self <: VPCEConfiguration](x: Self) {
     
-    @scala.inline
-    def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: AmazonResourceName): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+    inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
     
-    @scala.inline
-    def setServiceDnsName(value: ServiceDnsName): Self = StObject.set(x, "serviceDnsName", value.asInstanceOf[js.Any])
+    inline def setServiceDnsName(value: ServiceDnsName): Self = StObject.set(x, "serviceDnsName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceDnsNameUndefined: Self = StObject.set(x, "serviceDnsName", js.undefined)
+    inline def setServiceDnsNameUndefined: Self = StObject.set(x, "serviceDnsName", js.undefined)
     
-    @scala.inline
-    def setVpceConfigurationDescription(value: VPCEConfigurationDescription): Self = StObject.set(x, "vpceConfigurationDescription", value.asInstanceOf[js.Any])
+    inline def setVpceConfigurationDescription(value: VPCEConfigurationDescription): Self = StObject.set(x, "vpceConfigurationDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpceConfigurationDescriptionUndefined: Self = StObject.set(x, "vpceConfigurationDescription", js.undefined)
+    inline def setVpceConfigurationDescriptionUndefined: Self = StObject.set(x, "vpceConfigurationDescription", js.undefined)
     
-    @scala.inline
-    def setVpceConfigurationName(value: VPCEConfigurationName): Self = StObject.set(x, "vpceConfigurationName", value.asInstanceOf[js.Any])
+    inline def setVpceConfigurationName(value: VPCEConfigurationName): Self = StObject.set(x, "vpceConfigurationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpceConfigurationNameUndefined: Self = StObject.set(x, "vpceConfigurationName", js.undefined)
+    inline def setVpceConfigurationNameUndefined: Self = StObject.set(x, "vpceConfigurationName", js.undefined)
     
-    @scala.inline
-    def setVpceServiceName(value: VPCEServiceName): Self = StObject.set(x, "vpceServiceName", value.asInstanceOf[js.Any])
+    inline def setVpceServiceName(value: VPCEServiceName): Self = StObject.set(x, "vpceServiceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVpceServiceNameUndefined: Self = StObject.set(x, "vpceServiceName", js.undefined)
+    inline def setVpceServiceNameUndefined: Self = StObject.set(x, "vpceServiceName", js.undefined)
   }
 }

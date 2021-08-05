@@ -22,46 +22,33 @@ trait EntityTypes extends StObject {
 }
 object EntityTypes {
   
-  @scala.inline
-  def apply(): EntityTypes = {
+  inline def apply(): EntityTypes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EntityTypes]
   }
   
-  @scala.inline
-  implicit class EntityTypesMutableBuilder[Self <: EntityTypes] (val x: Self) extends AnyVal {
+  extension [Self <: EntityTypes](x: Self) {
     
-    @scala.inline
-    def setCallback(value: (/* err */ Error | Null, /* hitTestSource */ XrHitTestSource | Null) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
+    inline def setCallback(value: (/* err */ Error | Null, /* hitTestSource */ XrHitTestSource | Null) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
+    inline def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
     
-    @scala.inline
-    def setEntityTypes(value: js.Array[String]): Self = StObject.set(x, "entityTypes", value.asInstanceOf[js.Any])
+    inline def setEntityTypes(value: js.Array[String]): Self = StObject.set(x, "entityTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEntityTypesUndefined: Self = StObject.set(x, "entityTypes", js.undefined)
+    inline def setEntityTypesUndefined: Self = StObject.set(x, "entityTypes", js.undefined)
     
-    @scala.inline
-    def setEntityTypesVarargs(value: String*): Self = StObject.set(x, "entityTypes", js.Array(value :_*))
+    inline def setEntityTypesVarargs(value: String*): Self = StObject.set(x, "entityTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setOffsetRay(value: Ray): Self = StObject.set(x, "offsetRay", value.asInstanceOf[js.Any])
+    inline def setOffsetRay(value: Ray): Self = StObject.set(x, "offsetRay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetRayUndefined: Self = StObject.set(x, "offsetRay", js.undefined)
+    inline def setOffsetRayUndefined: Self = StObject.set(x, "offsetRay", js.undefined)
     
-    @scala.inline
-    def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+    inline def setProfile(value: String): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
+    inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
     
-    @scala.inline
-    def setSpaceType(value: String): Self = StObject.set(x, "spaceType", value.asInstanceOf[js.Any])
+    inline def setSpaceType(value: String): Self = StObject.set(x, "spaceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpaceTypeUndefined: Self = StObject.set(x, "spaceType", js.undefined)
+    inline def setSpaceTypeUndefined: Self = StObject.set(x, "spaceType", js.undefined)
   }
 }

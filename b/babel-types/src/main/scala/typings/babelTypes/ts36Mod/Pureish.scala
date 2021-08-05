@@ -18,8 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait Pureish extends StObject
 object Pureish {
   
-  @scala.inline
-  def ArrowFunctionExpression_(
+  inline def ArrowFunctionExpression_(
     async: Boolean,
     body: BlockStatement_ | Expression,
     end: Double,
@@ -35,15 +34,13 @@ object Pureish {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ArrowFunctionExpression_]
   }
   
-  @scala.inline
-  def BooleanLiteral_(end: Double, loc: SourceLocation, start: Double, value: Boolean): typings.babelTypes.ts36Mod.BooleanLiteral_ = {
+  inline def BooleanLiteral_(end: Double, loc: SourceLocation, start: Double, value: Boolean): typings.babelTypes.ts36Mod.BooleanLiteral_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("BooleanLiteral")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.BooleanLiteral_]
   }
   
-  @scala.inline
-  def ClassDeclaration_(
+  inline def ClassDeclaration_(
     body: ClassBody_,
     end: Double,
     id: Identifier_,
@@ -56,8 +53,7 @@ object Pureish {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ClassDeclaration_]
   }
   
-  @scala.inline
-  def ClassExpression_(
+  inline def ClassExpression_(
     body: ClassBody_,
     end: Double,
     id: Identifier_,
@@ -70,8 +66,7 @@ object Pureish {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ClassExpression_]
   }
   
-  @scala.inline
-  def FunctionDeclaration_(
+  inline def FunctionDeclaration_(
     async: Boolean,
     body: BlockStatement_,
     end: Double,
@@ -86,8 +81,7 @@ object Pureish {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.FunctionDeclaration_]
   }
   
-  @scala.inline
-  def FunctionExpression_(
+  inline def FunctionExpression_(
     async: Boolean,
     body: BlockStatement_,
     end: Double,
@@ -102,22 +96,19 @@ object Pureish {
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.FunctionExpression_]
   }
   
-  @scala.inline
-  def NullLiteral_(end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.NullLiteral_ = {
+  inline def NullLiteral_(end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.NullLiteral_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("NullLiteral")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.NullLiteral_]
   }
   
-  @scala.inline
-  def NumericLiteral_(end: Double, loc: SourceLocation, start: Double, value: Double): typings.babelTypes.ts36Mod.NumericLiteral_ = {
+  inline def NumericLiteral_(end: Double, loc: SourceLocation, start: Double, value: Double): typings.babelTypes.ts36Mod.NumericLiteral_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("NumericLiteral")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.NumericLiteral_]
   }
   
-  @scala.inline
-  def StringLiteral_(end: Double, loc: SourceLocation, start: Double, value: String): typings.babelTypes.ts36Mod.StringLiteral_ = {
+  inline def StringLiteral_(end: Double, loc: SourceLocation, start: Double, value: String): typings.babelTypes.ts36Mod.StringLiteral_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("StringLiteral")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.StringLiteral_]

@@ -18,25 +18,19 @@ trait LabelOptionsWithThreshold
 }
 object LabelOptionsWithThreshold {
   
-  @scala.inline
-  def apply(): LabelOptionsWithThreshold = {
+  inline def apply(): LabelOptionsWithThreshold = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LabelOptionsWithThreshold]
   }
   
-  @scala.inline
-  implicit class LabelOptionsWithThresholdMutableBuilder[Self <: LabelOptionsWithThreshold] (val x: Self) extends AnyVal {
+  extension [Self <: LabelOptionsWithThreshold](x: Self) {
     
-    @scala.inline
-    def setRatio(value: js.Any): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
+    inline def setRatio(value: js.Any): Self = StObject.set(x, "ratio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
+    inline def setRatioUndefined: Self = StObject.set(x, "ratio", js.undefined)
     
-    @scala.inline
-    def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
+    inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
+    inline def setThresholdUndefined: Self = StObject.set(x, "threshold", js.undefined)
   }
 }

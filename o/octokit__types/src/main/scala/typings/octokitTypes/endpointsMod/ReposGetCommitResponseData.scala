@@ -35,8 +35,7 @@ trait ReposGetCommitResponseData extends StObject {
 }
 object ReposGetCommitResponseData {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     author: Avatarurl,
     comments_url: String,
     commit: Commentcount,
@@ -53,46 +52,32 @@ object ReposGetCommitResponseData {
     __obj.asInstanceOf[ReposGetCommitResponseData]
   }
   
-  @scala.inline
-  implicit class ReposGetCommitResponseDataMutableBuilder[Self <: ReposGetCommitResponseData] (val x: Self) extends AnyVal {
+  extension [Self <: ReposGetCommitResponseData](x: Self) {
     
-    @scala.inline
-    def setAuthor(value: Avatarurl): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: Avatarurl): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComments_url(value: String): Self = StObject.set(x, "comments_url", value.asInstanceOf[js.Any])
+    inline def setComments_url(value: String): Self = StObject.set(x, "comments_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommit(value: Commentcount): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
+    inline def setCommit(value: Commentcount): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommitter(value: Avatarurl): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
+    inline def setCommitter(value: Avatarurl): Self = StObject.set(x, "committer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiles(value: js.Array[Changes]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+    inline def setFiles(value: js.Array[Changes]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilesVarargs(value: Changes*): Self = StObject.set(x, "files", js.Array(value :_*))
+    inline def setFilesVarargs(value: Changes*): Self = StObject.set(x, "files", js.Array(value :_*))
     
-    @scala.inline
-    def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
+    inline def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
+    inline def setNode_id(value: String): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParents(value: js.Array[Sha]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
+    inline def setParents(value: js.Array[Sha]): Self = StObject.set(x, "parents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentsVarargs(value: Sha*): Self = StObject.set(x, "parents", js.Array(value :_*))
+    inline def setParentsVarargs(value: Sha*): Self = StObject.set(x, "parents", js.Array(value :_*))
     
-    @scala.inline
-    def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
+    inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStats(value: Deletions): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+    inline def setStats(value: Deletions): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

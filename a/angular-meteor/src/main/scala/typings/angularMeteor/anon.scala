@@ -17,17 +17,14 @@ object anon {
   }
   object Bind {
     
-    @scala.inline
-    def apply(bind: (IScope, String) => Unit): Bind = {
+    inline def apply(bind: (IScope, String) => Unit): Bind = {
       val __obj = js.Dynamic.literal(bind = js.Any.fromFunction2(bind))
       __obj.asInstanceOf[Bind]
     }
     
-    @scala.inline
-    implicit class BindMutableBuilder[Self <: Bind] (val x: Self) extends AnyVal {
+    extension [Self <: Bind](x: Self) {
       
-      @scala.inline
-      def setBind(value: (IScope, String) => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction2(value))
+      inline def setBind(value: (IScope, String) => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction2(value))
     }
   }
   
@@ -37,17 +34,14 @@ object anon {
   }
   object Email {
     
-    @scala.inline
-    def apply(email: String): Email = {
+    inline def apply(email: String): Email = {
       val __obj = js.Dynamic.literal(email = email.asInstanceOf[js.Any])
       __obj.asInstanceOf[Email]
     }
     
-    @scala.inline
-    implicit class EmailMutableBuilder[Self <: Email] (val x: Self) extends AnyVal {
+    extension [Self <: Email](x: Self) {
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     }
   }
   
@@ -61,32 +55,24 @@ object anon {
   }
   object Height {
     
-    @scala.inline
-    def apply(): Height = {
+    inline def apply(): Height = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Height]
     }
     
-    @scala.inline
-    implicit class HeightMutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
+    extension [Self <: Height](x: Self) {
       
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+      inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+      inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
       
-      @scala.inline
-      def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+      inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+      inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
       
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
+      inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
+      inline def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     }
   }
   
@@ -96,17 +82,14 @@ object anon {
   }
   object Id {
     
-    @scala.inline
-    def apply(id: String): Id = {
+    inline def apply(id: String): Id = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[Id]
     }
     
-    @scala.inline
-    implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
+    extension [Self <: Id](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -122,35 +105,26 @@ object anon {
   }
   object Password {
     
-    @scala.inline
-    def apply(password: String): Password = {
+    inline def apply(password: String): Password = {
       val __obj = js.Dynamic.literal(password = password.asInstanceOf[js.Any])
       __obj.asInstanceOf[Password]
     }
     
-    @scala.inline
-    implicit class PasswordMutableBuilder[Self <: Password] (val x: Self) extends AnyVal {
+    extension [Self <: Password](x: Self) {
       
-      @scala.inline
-      def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+      inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+      inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfile(value: js.Object): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
+      inline def setProfile(value: js.Object): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
+      inline def setProfileUndefined: Self = StObject.set(x, "profile", js.undefined)
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
+      inline def setUsernameUndefined: Self = StObject.set(x, "username", js.undefined)
     }
   }
   
@@ -160,17 +134,14 @@ object anon {
   }
   object Username {
     
-    @scala.inline
-    def apply(username: String): Username = {
+    inline def apply(username: String): Username = {
       val __obj = js.Dynamic.literal(username = username.asInstanceOf[js.Any])
       __obj.asInstanceOf[Username]
     }
     
-    @scala.inline
-    implicit class UsernameMutableBuilder[Self <: Username] (val x: Self) extends AnyVal {
+    extension [Self <: Username](x: Self) {
       
-      @scala.inline
-      def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
+      inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }
   }
 }

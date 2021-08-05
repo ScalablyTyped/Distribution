@@ -26,8 +26,7 @@ trait BottomBlock extends StObject {
 }
 object BottomBlock {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     bottomBlock: IBottomBlock,
     chromecastManager: IChromecastManager,
     eventEmitter: IEventEmitter,
@@ -39,25 +38,18 @@ object BottomBlock {
     __obj.asInstanceOf[BottomBlock]
   }
   
-  @scala.inline
-  implicit class BottomBlockMutableBuilder[Self <: BottomBlock] (val x: Self) extends AnyVal {
+  extension [Self <: BottomBlock](x: Self) {
     
-    @scala.inline
-    def setBottomBlock(value: IBottomBlock): Self = StObject.set(x, "bottomBlock", value.asInstanceOf[js.Any])
+    inline def setBottomBlock(value: IBottomBlock): Self = StObject.set(x, "bottomBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChromecastManager(value: IChromecastManager): Self = StObject.set(x, "chromecastManager", value.asInstanceOf[js.Any])
+    inline def setChromecastManager(value: IChromecastManager): Self = StObject.set(x, "chromecastManager", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
+    inline def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextMap(value: ITextMap): Self = StObject.set(x, "textMap", value.asInstanceOf[js.Any])
+    inline def setTextMap(value: ITextMap): Self = StObject.set(x, "textMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: IThemeService): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipService(value: ITooltipService): Self = StObject.set(x, "tooltipService", value.asInstanceOf[js.Any])
+    inline def setTooltipService(value: ITooltipService): Self = StObject.set(x, "tooltipService", value.asInstanceOf[js.Any])
   }
 }

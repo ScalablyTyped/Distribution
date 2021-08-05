@@ -15,17 +15,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object LinkCloseToken {
   
-  @scala.inline
-  def apply(level: Double): LinkCloseToken = {
+  inline def apply(level: Double): LinkCloseToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("link_close")
     __obj.asInstanceOf[LinkCloseToken]
   }
   
-  @scala.inline
-  implicit class LinkCloseTokenMutableBuilder[Self <: LinkCloseToken] (val x: Self) extends AnyVal {
+  extension [Self <: LinkCloseToken](x: Self) {
     
-    @scala.inline
-    def setType(value: link_close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: link_close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

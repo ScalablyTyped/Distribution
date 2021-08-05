@@ -26,47 +26,34 @@ trait RefetchVariables
 }
 object RefetchVariables {
   
-  @scala.inline
-  def apply(refetchVariables: Variables): RefetchVariables = {
+  inline def apply(refetchVariables: Variables): RefetchVariables = {
     val __obj = js.Dynamic.literal(refetchVariables = refetchVariables.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("refetch")
     __obj.asInstanceOf[RefetchVariables]
   }
   
-  @scala.inline
-  implicit class RefetchVariablesMutableBuilder[Self <: RefetchVariables] (val x: Self) extends AnyVal {
+  extension [Self <: RefetchVariables](x: Self) {
     
-    @scala.inline
-    def setEnvironment(value: typings.relayRuntime.relayStoreTypesMod.Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: typings.relayRuntime.relayStoreTypesMod.Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentNull: Self = StObject.set(x, "environment", null)
+    inline def setEnvironmentNull: Self = StObject.set(x, "environment", null)
     
-    @scala.inline
-    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+    inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
-    @scala.inline
-    def setFetchPolicy(value: typings.relayRuntime.relayRuntimeTypesMod.FetchPolicy): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
+    inline def setFetchPolicy(value: typings.relayRuntime.relayRuntimeTypesMod.FetchPolicy): Self = StObject.set(x, "fetchPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFetchPolicyUndefined: Self = StObject.set(x, "fetchPolicy", js.undefined)
+    inline def setFetchPolicyUndefined: Self = StObject.set(x, "fetchPolicy", js.undefined)
     
-    @scala.inline
-    def setOnComplete(value: /* args */ typings.std.Error | Null => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
+    inline def setOnComplete(value: /* args */ typings.std.Error | Null => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
+    inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
     
-    @scala.inline
-    def setRefetchVariables(value: Variables): Self = StObject.set(x, "refetchVariables", value.asInstanceOf[js.Any])
+    inline def setRefetchVariables(value: Variables): Self = StObject.set(x, "refetchVariables", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderPolicy(value: RenderPolicy): Self = StObject.set(x, "renderPolicy", value.asInstanceOf[js.Any])
+    inline def setRenderPolicy(value: RenderPolicy): Self = StObject.set(x, "renderPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderPolicyUndefined: Self = StObject.set(x, "renderPolicy", js.undefined)
+    inline def setRenderPolicyUndefined: Self = StObject.set(x, "renderPolicy", js.undefined)
     
-    @scala.inline
-    def setType(value: refetch): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: refetch): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

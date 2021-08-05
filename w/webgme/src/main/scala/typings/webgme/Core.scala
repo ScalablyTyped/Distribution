@@ -50,23 +50,18 @@ object Core {
   }
   object Constraint {
     
-    @scala.inline
-    def apply(info: String, priority: Double, script: String): Constraint = {
+    inline def apply(info: String, priority: Double, script: String): Constraint = {
       val __obj = js.Dynamic.literal(info = info.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any], script = script.asInstanceOf[js.Any])
       __obj.asInstanceOf[Constraint]
     }
     
-    @scala.inline
-    implicit class ConstraintMutableBuilder[Self <: Constraint] (val x: Self) extends AnyVal {
+    extension [Self <: Constraint](x: Self) {
       
-      @scala.inline
-      def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
+      inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+      inline def setScript(value: String): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
     }
   }
   
@@ -82,20 +77,16 @@ object Core {
   }
   object GmePersisted {
     
-    @scala.inline
-    def apply(objects: StringDictionary[DataObject], rootHash: ObjectHash): GmePersisted = {
+    inline def apply(objects: StringDictionary[DataObject], rootHash: ObjectHash): GmePersisted = {
       val __obj = js.Dynamic.literal(objects = objects.asInstanceOf[js.Any], rootHash = rootHash.asInstanceOf[js.Any])
       __obj.asInstanceOf[GmePersisted]
     }
     
-    @scala.inline
-    implicit class GmePersistedMutableBuilder[Self <: GmePersisted] (val x: Self) extends AnyVal {
+    extension [Self <: GmePersisted](x: Self) {
       
-      @scala.inline
-      def setObjects(value: StringDictionary[DataObject]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
+      inline def setObjects(value: StringDictionary[DataObject]): Self = StObject.set(x, "objects", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRootHash(value: ObjectHash): Self = StObject.set(x, "rootHash", value.asInstanceOf[js.Any])
+      inline def setRootHash(value: ObjectHash): Self = StObject.set(x, "rootHash", value.asInstanceOf[js.Any])
     }
   }
   
@@ -132,76 +123,54 @@ object Core {
   }
   object MixinViolation {
     
-    @scala.inline
-    def apply(): MixinViolation = {
+    inline def apply(): MixinViolation = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MixinViolation]
     }
     
-    @scala.inline
-    implicit class MixinViolationMutableBuilder[Self <: MixinViolation] (val x: Self) extends AnyVal {
+    extension [Self <: MixinViolation](x: Self) {
       
-      @scala.inline
-      def setCollisionNodes(value: js.Array[Node]): Self = StObject.set(x, "collisionNodes", value.asInstanceOf[js.Any])
+      inline def setCollisionNodes(value: js.Array[Node]): Self = StObject.set(x, "collisionNodes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollisionNodesUndefined: Self = StObject.set(x, "collisionNodes", js.undefined)
+      inline def setCollisionNodesUndefined: Self = StObject.set(x, "collisionNodes", js.undefined)
       
-      @scala.inline
-      def setCollisionNodesVarargs(value: Node*): Self = StObject.set(x, "collisionNodes", js.Array(value :_*))
+      inline def setCollisionNodesVarargs(value: Node*): Self = StObject.set(x, "collisionNodes", js.Array(value :_*))
       
-      @scala.inline
-      def setCollisionPaths(value: js.Array[String]): Self = StObject.set(x, "collisionPaths", value.asInstanceOf[js.Any])
+      inline def setCollisionPaths(value: js.Array[String]): Self = StObject.set(x, "collisionPaths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCollisionPathsUndefined: Self = StObject.set(x, "collisionPaths", js.undefined)
+      inline def setCollisionPathsUndefined: Self = StObject.set(x, "collisionPaths", js.undefined)
       
-      @scala.inline
-      def setCollisionPathsVarargs(value: String*): Self = StObject.set(x, "collisionPaths", js.Array(value :_*))
+      inline def setCollisionPathsVarargs(value: String*): Self = StObject.set(x, "collisionPaths", js.Array(value :_*))
       
-      @scala.inline
-      def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
+      inline def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
+      inline def setHintUndefined: Self = StObject.set(x, "hint", js.undefined)
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
       
-      @scala.inline
-      def setRuleName(value: String): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
+      inline def setRuleName(value: String): Self = StObject.set(x, "ruleName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRuleNameUndefined: Self = StObject.set(x, "ruleName", js.undefined)
+      inline def setRuleNameUndefined: Self = StObject.set(x, "ruleName", js.undefined)
       
-      @scala.inline
-      def setSeverity(value: error | warning): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
+      inline def setSeverity(value: error | warning): Self = StObject.set(x, "severity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
+      inline def setSeverityUndefined: Self = StObject.set(x, "severity", js.undefined)
       
-      @scala.inline
-      def setTargetInfo(value: String): Self = StObject.set(x, "targetInfo", value.asInstanceOf[js.Any])
+      inline def setTargetInfo(value: String): Self = StObject.set(x, "targetInfo", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetInfoUndefined: Self = StObject.set(x, "targetInfo", js.undefined)
+      inline def setTargetInfoUndefined: Self = StObject.set(x, "targetInfo", js.undefined)
       
-      @scala.inline
-      def setTargetNode(value: Node): Self = StObject.set(x, "targetNode", value.asInstanceOf[js.Any])
+      inline def setTargetNode(value: Node): Self = StObject.set(x, "targetNode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetNodeUndefined: Self = StObject.set(x, "targetNode", js.undefined)
+      inline def setTargetNodeUndefined: Self = StObject.set(x, "targetNode", js.undefined)
       
-      @scala.inline
-      def setType(
+      inline def setType(
         value: missing | (`attribute collision`) | (`set collision`) | (`pointer collision`) | (`containment collision`) | (`aspect collision`) | (`constraint collision`)
       ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -360,8 +329,7 @@ object Core {
   }
   object Node {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _id: String,
       canSetAsMixin: Path => Boolean,
       getAspectMeta: () => Metadata,
@@ -441,230 +409,155 @@ object Core {
       __obj.asInstanceOf[Node]
     }
     
-    @scala.inline
-    implicit class NodeMutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
+    extension [Self <: Node](x: Self) {
       
-      @scala.inline
-      def setCanSetAsMixin(value: Path => Boolean): Self = StObject.set(x, "canSetAsMixin", js.Any.fromFunction1(value))
+      inline def setCanSetAsMixin(value: Path => Boolean): Self = StObject.set(x, "canSetAsMixin", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetAspectMeta(value: () => Metadata): Self = StObject.set(x, "getAspectMeta", js.Any.fromFunction0(value))
+      inline def setGetAspectMeta(value: () => Metadata): Self = StObject.set(x, "getAspectMeta", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetAttribute(value: Name => OutAttr): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
+      inline def setGetAttribute(value: Name => OutAttr): Self = StObject.set(x, "getAttribute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetAttributeMeta(value: Name => AttrMeta): Self = StObject.set(x, "getAttributeMeta", js.Any.fromFunction1(value))
+      inline def setGetAttributeMeta(value: Name => AttrMeta): Self = StObject.set(x, "getAttributeMeta", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetAttributeNames(value: () => js.Array[Name]): Self = StObject.set(x, "getAttributeNames", js.Any.fromFunction0(value))
+      inline def setGetAttributeNames(value: () => js.Array[Name]): Self = StObject.set(x, "getAttributeNames", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetBaseId(value: () => NodeId): Self = StObject.set(x, "getBaseId", js.Any.fromFunction0(value))
+      inline def setGetBaseId(value: () => NodeId): Self = StObject.set(x, "getBaseId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetBaseTypeId(value: () => Node | Null): Self = StObject.set(x, "getBaseTypeId", js.Any.fromFunction0(value))
+      inline def setGetBaseTypeId(value: () => Node | Null): Self = StObject.set(x, "getBaseTypeId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetChildrenIds(value: () => js.Array[NodeId]): Self = StObject.set(x, "getChildrenIds", js.Any.fromFunction0(value))
+      inline def setGetChildrenIds(value: () => js.Array[NodeId]): Self = StObject.set(x, "getChildrenIds", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCollectionPaths(value: Name => js.Array[Path]): Self = StObject.set(x, "getCollectionPaths", js.Any.fromFunction1(value))
+      inline def setGetCollectionPaths(value: Name => js.Array[Path]): Self = StObject.set(x, "getCollectionPaths", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetConstraint(value: Name => Constraint): Self = StObject.set(x, "getConstraint", js.Any.fromFunction1(value))
+      inline def setGetConstraint(value: Name => Constraint): Self = StObject.set(x, "getConstraint", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetConstraintNames(value: () => js.Array[Name]): Self = StObject.set(x, "getConstraintNames", js.Any.fromFunction0(value))
+      inline def setGetConstraintNames(value: () => js.Array[Name]): Self = StObject.set(x, "getConstraintNames", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCrosscutsInfo(value: () => CrosscutsInfo): Self = StObject.set(x, "getCrosscutsInfo", js.Any.fromFunction0(value))
+      inline def setGetCrosscutsInfo(value: () => CrosscutsInfo): Self = StObject.set(x, "getCrosscutsInfo", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetEditableAttribute(value: Name => OutAttr): Self = StObject.set(x, "getEditableAttribute", js.Any.fromFunction1(value))
+      inline def setGetEditableAttribute(value: Name => OutAttr): Self = StObject.set(x, "getEditableAttribute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetEditableMemberAttribute(value: (SetId, MemberId, Name) => OutAttr): Self = StObject.set(x, "getEditableMemberAttribute", js.Any.fromFunction3(value))
+      inline def setGetEditableMemberAttribute(value: (SetId, MemberId, Name) => OutAttr): Self = StObject.set(x, "getEditableMemberAttribute", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetEditableMemberRegistry(value: (SetId, MemberId, Name) => Registry): Self = StObject.set(x, "getEditableMemberRegistry", js.Any.fromFunction3(value))
+      inline def setGetEditableMemberRegistry(value: (SetId, MemberId, Name) => Registry): Self = StObject.set(x, "getEditableMemberRegistry", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetEditableRegistry(value: Name => Registry): Self = StObject.set(x, "getEditableRegistry", js.Any.fromFunction1(value))
+      inline def setGetEditableRegistry(value: Name => Registry): Self = StObject.set(x, "getEditableRegistry", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetFullyQualifiedName(value: () => Name): Self = StObject.set(x, "getFullyQualifiedName", js.Any.fromFunction0(value))
+      inline def setGetFullyQualifiedName(value: () => Name): Self = StObject.set(x, "getFullyQualifiedName", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetGuid(value: () => GUID): Self = StObject.set(x, "getGuid", js.Any.fromFunction0(value))
+      inline def setGetGuid(value: () => GUID): Self = StObject.set(x, "getGuid", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetId(value: () => NodeId): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+      inline def setGetId(value: () => NodeId): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetInheritorIds(value: () => js.Array[NodeId]): Self = StObject.set(x, "getInheritorIds", js.Any.fromFunction0(value))
+      inline def setGetInheritorIds(value: () => js.Array[NodeId]): Self = StObject.set(x, "getInheritorIds", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetInstancePaths(value: () => js.Array[Path]): Self = StObject.set(x, "getInstancePaths", js.Any.fromFunction0(value))
+      inline def setGetInstancePaths(value: () => js.Array[Path]): Self = StObject.set(x, "getInstancePaths", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetJsonMeta(value: () => js.Array[Metadata]): Self = StObject.set(x, "getJsonMeta", js.Any.fromFunction0(value))
+      inline def setGetJsonMeta(value: () => js.Array[Metadata]): Self = StObject.set(x, "getJsonMeta", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetLibraryGuid(value: () => GUID): Self = StObject.set(x, "getLibraryGuid", js.Any.fromFunction0(value))
+      inline def setGetLibraryGuid(value: () => GUID): Self = StObject.set(x, "getLibraryGuid", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMemberAttribute(value: (SetId, MemberId) => OutAttr): Self = StObject.set(x, "getMemberAttribute", js.Any.fromFunction2(value))
+      inline def setGetMemberAttribute(value: (SetId, MemberId) => OutAttr): Self = StObject.set(x, "getMemberAttribute", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetMemberAttributeNames(value: (SetId, MemberId) => js.Array[Name]): Self = StObject.set(x, "getMemberAttributeNames", js.Any.fromFunction2(value))
+      inline def setGetMemberAttributeNames(value: (SetId, MemberId) => js.Array[Name]): Self = StObject.set(x, "getMemberAttributeNames", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetMemberIds(value: SetId => js.Array[Path]): Self = StObject.set(x, "getMemberIds", js.Any.fromFunction1(value))
+      inline def setGetMemberIds(value: SetId => js.Array[Path]): Self = StObject.set(x, "getMemberIds", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetMemberRegistry(value: (SetId, MemberId, Name) => Registry): Self = StObject.set(x, "getMemberRegistry", js.Any.fromFunction3(value))
+      inline def setGetMemberRegistry(value: (SetId, MemberId, Name) => Registry): Self = StObject.set(x, "getMemberRegistry", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setGetMemberRegistryNames(value: (SetId, MemberId) => js.Array[Name]): Self = StObject.set(x, "getMemberRegistryNames", js.Any.fromFunction2(value))
+      inline def setGetMemberRegistryNames(value: (SetId, MemberId) => js.Array[Name]): Self = StObject.set(x, "getMemberRegistryNames", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetMetaTypeId(value: () => Node | Null): Self = StObject.set(x, "getMetaTypeId", js.Any.fromFunction0(value))
+      inline def setGetMetaTypeId(value: () => Node | Null): Self = StObject.set(x, "getMetaTypeId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetMixinPaths(value: () => js.Array[Path]): Self = StObject.set(x, "getMixinPaths", js.Any.fromFunction0(value))
+      inline def setGetMixinPaths(value: () => js.Array[Path]): Self = StObject.set(x, "getMixinPaths", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetNamespace(value: () => Name): Self = StObject.set(x, "getNamespace", js.Any.fromFunction0(value))
+      inline def setGetNamespace(value: () => Name): Self = StObject.set(x, "getNamespace", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetNode(value: (NodeId, GmeLogger, js.Any, ResultCallback[Storage]) => Node): Self = StObject.set(x, "getNode", js.Any.fromFunction4(value))
+      inline def setGetNode(value: (NodeId, GmeLogger, js.Any, ResultCallback[Storage]) => Node): Self = StObject.set(x, "getNode", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setGetOwnAttribute(value: Name => OutAttr): Self = StObject.set(x, "getOwnAttribute", js.Any.fromFunction1(value))
+      inline def setGetOwnAttribute(value: Name => OutAttr): Self = StObject.set(x, "getOwnAttribute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetOwnAttributeNames(value: () => js.Array[Name]): Self = StObject.set(x, "getOwnAttributeNames", js.Any.fromFunction0(value))
+      inline def setGetOwnAttributeNames(value: () => js.Array[Name]): Self = StObject.set(x, "getOwnAttributeNames", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetOwnConstraintNames(value: () => js.Array[Name]): Self = StObject.set(x, "getOwnConstraintNames", js.Any.fromFunction0(value))
+      inline def setGetOwnConstraintNames(value: () => js.Array[Name]): Self = StObject.set(x, "getOwnConstraintNames", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetOwnEditableAttribute(value: Name => OutAttr): Self = StObject.set(x, "getOwnEditableAttribute", js.Any.fromFunction1(value))
+      inline def setGetOwnEditableAttribute(value: Name => OutAttr): Self = StObject.set(x, "getOwnEditableAttribute", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetOwnEditableRegistry(value: Name => Registry): Self = StObject.set(x, "getOwnEditableRegistry", js.Any.fromFunction1(value))
+      inline def setGetOwnEditableRegistry(value: Name => Registry): Self = StObject.set(x, "getOwnEditableRegistry", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetOwnPointer(value: Name => Pointer): Self = StObject.set(x, "getOwnPointer", js.Any.fromFunction1(value))
+      inline def setGetOwnPointer(value: Name => Pointer): Self = StObject.set(x, "getOwnPointer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetOwnPointerId(value: Name => SetId): Self = StObject.set(x, "getOwnPointerId", js.Any.fromFunction1(value))
+      inline def setGetOwnPointerId(value: Name => SetId): Self = StObject.set(x, "getOwnPointerId", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetOwnPointerNames(value: () => js.Array[Name]): Self = StObject.set(x, "getOwnPointerNames", js.Any.fromFunction0(value))
+      inline def setGetOwnPointerNames(value: () => js.Array[Name]): Self = StObject.set(x, "getOwnPointerNames", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetOwnRegistry(value: Name => Registry): Self = StObject.set(x, "getOwnRegistry", js.Any.fromFunction1(value))
+      inline def setGetOwnRegistry(value: Name => Registry): Self = StObject.set(x, "getOwnRegistry", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetOwnRegistryNames(value: () => js.Array[Name]): Self = StObject.set(x, "getOwnRegistryNames", js.Any.fromFunction0(value))
+      inline def setGetOwnRegistryNames(value: () => js.Array[Name]): Self = StObject.set(x, "getOwnRegistryNames", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetOwnValidAspectNames(value: () => js.Array[Name]): Self = StObject.set(x, "getOwnValidAspectNames", js.Any.fromFunction0(value))
+      inline def setGetOwnValidAspectNames(value: () => js.Array[Name]): Self = StObject.set(x, "getOwnValidAspectNames", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetOwnValidAttributeNames(value: () => js.Array[Name]): Self = StObject.set(x, "getOwnValidAttributeNames", js.Any.fromFunction0(value))
+      inline def setGetOwnValidAttributeNames(value: () => js.Array[Name]): Self = StObject.set(x, "getOwnValidAttributeNames", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetParentId(value: () => NodeId): Self = StObject.set(x, "getParentId", js.Any.fromFunction0(value))
+      inline def setGetParentId(value: () => NodeId): Self = StObject.set(x, "getParentId", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetPointer(value: Name => Pointer): Self = StObject.set(x, "getPointer", js.Any.fromFunction1(value))
+      inline def setGetPointer(value: Name => Pointer): Self = StObject.set(x, "getPointer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetPointerId(value: Name => SetId): Self = StObject.set(x, "getPointerId", js.Any.fromFunction1(value))
+      inline def setGetPointerId(value: Name => SetId): Self = StObject.set(x, "getPointerId", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetPointerNames(value: () => js.Array[Name]): Self = StObject.set(x, "getPointerNames", js.Any.fromFunction0(value))
+      inline def setGetPointerNames(value: () => js.Array[Name]): Self = StObject.set(x, "getPointerNames", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRegistry(value: Name => Registry): Self = StObject.set(x, "getRegistry", js.Any.fromFunction1(value))
+      inline def setGetRegistry(value: Name => Registry): Self = StObject.set(x, "getRegistry", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetRegistryNames(value: () => js.Array[Name]): Self = StObject.set(x, "getRegistryNames", js.Any.fromFunction0(value))
+      inline def setGetRegistryNames(value: () => js.Array[Name]): Self = StObject.set(x, "getRegistryNames", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetRelid(value: () => RelId): Self = StObject.set(x, "getRelid", js.Any.fromFunction0(value))
+      inline def setGetRelid(value: () => RelId): Self = StObject.set(x, "getRelid", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSetNames(value: () => js.Array[Name]): Self = StObject.set(x, "getSetNames", js.Any.fromFunction0(value))
+      inline def setGetSetNames(value: () => js.Array[Name]): Self = StObject.set(x, "getSetNames", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValidAspectNames(value: () => js.Array[Name]): Self = StObject.set(x, "getValidAspectNames", js.Any.fromFunction0(value))
+      inline def setGetValidAspectNames(value: () => js.Array[Name]): Self = StObject.set(x, "getValidAspectNames", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValidAttributeNames(value: () => js.Array[Name]): Self = StObject.set(x, "getValidAttributeNames", js.Any.fromFunction0(value))
+      inline def setGetValidAttributeNames(value: () => js.Array[Name]): Self = StObject.set(x, "getValidAttributeNames", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValidChildrenIds(value: () => js.Array[NodeId]): Self = StObject.set(x, "getValidChildrenIds", js.Any.fromFunction0(value))
+      inline def setGetValidChildrenIds(value: () => js.Array[NodeId]): Self = StObject.set(x, "getValidChildrenIds", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValidChildrenTypes(value: () => js.Array[NodeId]): Self = StObject.set(x, "getValidChildrenTypes", js.Any.fromFunction0(value))
+      inline def setGetValidChildrenTypes(value: () => js.Array[NodeId]): Self = StObject.set(x, "getValidChildrenTypes", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValidChildrenTypesDetailed(value: (Aspect, Boolean) => Dictionary[js.Any]): Self = StObject.set(x, "getValidChildrenTypesDetailed", js.Any.fromFunction2(value))
+      inline def setGetValidChildrenTypesDetailed(value: (Aspect, Boolean) => Dictionary[js.Any]): Self = StObject.set(x, "getValidChildrenTypesDetailed", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGetValidPointerNames(value: () => js.Array[Name]): Self = StObject.set(x, "getValidPointerNames", js.Any.fromFunction0(value))
+      inline def setGetValidPointerNames(value: () => js.Array[Name]): Self = StObject.set(x, "getValidPointerNames", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValidSetMemberTypesDetailed(value: Name => StringDictionary[js.Any]): Self = StObject.set(x, "getValidSetMemberTypesDetailed", js.Any.fromFunction1(value))
+      inline def setGetValidSetMemberTypesDetailed(value: Name => StringDictionary[js.Any]): Self = StObject.set(x, "getValidSetMemberTypesDetailed", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setGetValidSetNames(value: () => js.Array[Name]): Self = StObject.set(x, "getValidSetNames", js.Any.fromFunction0(value))
+      inline def setGetValidSetNames(value: () => js.Array[Name]): Self = StObject.set(x, "getValidSetNames", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetValildAttributeNames(value: () => js.Array[Name]): Self = StObject.set(x, "getValildAttributeNames", js.Any.fromFunction0(value))
+      inline def setGetValildAttributeNames(value: () => js.Array[Name]): Self = StObject.set(x, "getValildAttributeNames", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsAbstract(value: () => Boolean): Self = StObject.set(x, "isAbstract", js.Any.fromFunction0(value))
+      inline def setIsAbstract(value: () => Boolean): Self = StObject.set(x, "isAbstract", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsConnection(value: () => Boolean): Self = StObject.set(x, "isConnection", js.Any.fromFunction0(value))
+      inline def setIsConnection(value: () => Boolean): Self = StObject.set(x, "isConnection", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsLibraryElement(value: () => Boolean): Self = StObject.set(x, "isLibraryElement", js.Any.fromFunction0(value))
+      inline def setIsLibraryElement(value: () => Boolean): Self = StObject.set(x, "isLibraryElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsLibraryRoot(value: () => Boolean): Self = StObject.set(x, "isLibraryRoot", js.Any.fromFunction0(value))
+      inline def setIsLibraryRoot(value: () => Boolean): Self = StObject.set(x, "isLibraryRoot", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsMetaNode(value: () => Boolean): Self = StObject.set(x, "isMetaNode", js.Any.fromFunction0(value))
+      inline def setIsMetaNode(value: () => Boolean): Self = StObject.set(x, "isMetaNode", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsReadOnly(value: () => Boolean): Self = StObject.set(x, "isReadOnly", js.Any.fromFunction0(value))
+      inline def setIsReadOnly(value: () => Boolean): Self = StObject.set(x, "isReadOnly", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsTypeOf(value: Path => Boolean): Self = StObject.set(x, "isTypeOf", js.Any.fromFunction1(value))
+      inline def setIsTypeOf(value: Path => Boolean): Self = StObject.set(x, "isTypeOf", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsValidAttributeValueOf(value: (Name, js.Any) => Boolean): Self = StObject.set(x, "isValidAttributeValueOf", js.Any.fromFunction2(value))
+      inline def setIsValidAttributeValueOf(value: (Name, js.Any) => Boolean): Self = StObject.set(x, "isValidAttributeValueOf", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setIsValidChildOf(value: Path => Boolean): Self = StObject.set(x, "isValidChildOf", js.Any.fromFunction1(value))
+      inline def setIsValidChildOf(value: Path => Boolean): Self = StObject.set(x, "isValidChildOf", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsValidNewBase(value: Path => Boolean): Self = StObject.set(x, "isValidNewBase", js.Any.fromFunction1(value))
+      inline def setIsValidNewBase(value: Path => Boolean): Self = StObject.set(x, "isValidNewBase", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsValidNewParent(value: Path => Boolean): Self = StObject.set(x, "isValidNewParent", js.Any.fromFunction1(value))
+      inline def setIsValidNewParent(value: Path => Boolean): Self = StObject.set(x, "isValidNewParent", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setIsValidTargetOf(value: (Path, Name) => Boolean): Self = StObject.set(x, "isValidTargetOf", js.Any.fromFunction2(value))
+      inline def setIsValidTargetOf(value: (Path, Name) => Boolean): Self = StObject.set(x, "isValidTargetOf", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
+      inline def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -676,8 +569,7 @@ object Core {
        with RelationRuleDictionary
   object RelationRule {
     
-    @scala.inline
-    def apply(): RelationRule = {
+    inline def apply(): RelationRule = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RelationRule]
     }
@@ -699,26 +591,20 @@ object Core {
   }
   object RelationRuleDetail {
     
-    @scala.inline
-    def apply(): RelationRuleDetail = {
+    inline def apply(): RelationRuleDetail = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RelationRuleDetail]
     }
     
-    @scala.inline
-    implicit class RelationRuleDetailMutableBuilder[Self <: RelationRuleDetail] (val x: Self) extends AnyVal {
+    extension [Self <: RelationRuleDetail](x: Self) {
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     }
   }
   

@@ -38,40 +38,29 @@ trait TypedLinkAttributeDefinition extends StObject {
 }
 object TypedLinkAttributeDefinition {
   
-  @scala.inline
-  def apply(Name: AttributeName, RequiredBehavior: RequiredAttributeBehavior, Type: FacetAttributeType): TypedLinkAttributeDefinition = {
+  inline def apply(Name: AttributeName, RequiredBehavior: RequiredAttributeBehavior, Type: FacetAttributeType): TypedLinkAttributeDefinition = {
     val __obj = js.Dynamic.literal(Name = Name.asInstanceOf[js.Any], RequiredBehavior = RequiredBehavior.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
     __obj.asInstanceOf[TypedLinkAttributeDefinition]
   }
   
-  @scala.inline
-  implicit class TypedLinkAttributeDefinitionMutableBuilder[Self <: TypedLinkAttributeDefinition] (val x: Self) extends AnyVal {
+  extension [Self <: TypedLinkAttributeDefinition](x: Self) {
     
-    @scala.inline
-    def setDefaultValue(value: TypedAttributeValue): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
+    inline def setDefaultValue(value: TypedAttributeValue): Self = StObject.set(x, "DefaultValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultValueUndefined: Self = StObject.set(x, "DefaultValue", js.undefined)
+    inline def setDefaultValueUndefined: Self = StObject.set(x, "DefaultValue", js.undefined)
     
-    @scala.inline
-    def setIsImmutable(value: Bool): Self = StObject.set(x, "IsImmutable", value.asInstanceOf[js.Any])
+    inline def setIsImmutable(value: Bool): Self = StObject.set(x, "IsImmutable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsImmutableUndefined: Self = StObject.set(x, "IsImmutable", js.undefined)
+    inline def setIsImmutableUndefined: Self = StObject.set(x, "IsImmutable", js.undefined)
     
-    @scala.inline
-    def setName(value: AttributeName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: AttributeName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequiredBehavior(value: RequiredAttributeBehavior): Self = StObject.set(x, "RequiredBehavior", value.asInstanceOf[js.Any])
+    inline def setRequiredBehavior(value: RequiredAttributeBehavior): Self = StObject.set(x, "RequiredBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRules(value: RuleMap): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: RuleMap): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
+    inline def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
     
-    @scala.inline
-    def setType(value: FacetAttributeType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: FacetAttributeType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

@@ -33,49 +33,35 @@ trait DescribePoliciesType extends StObject {
 }
 object DescribePoliciesType {
   
-  @scala.inline
-  def apply(): DescribePoliciesType = {
+  inline def apply(): DescribePoliciesType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribePoliciesType]
   }
   
-  @scala.inline
-  implicit class DescribePoliciesTypeMutableBuilder[Self <: DescribePoliciesType] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePoliciesType](x: Self) {
     
-    @scala.inline
-    def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
+    inline def setAutoScalingGroupName(value: ResourceName): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoScalingGroupNameUndefined: Self = StObject.set(x, "AutoScalingGroupName", js.undefined)
+    inline def setAutoScalingGroupNameUndefined: Self = StObject.set(x, "AutoScalingGroupName", js.undefined)
     
-    @scala.inline
-    def setMaxRecords(value: MaxRecords): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
+    inline def setMaxRecords(value: MaxRecords): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
+    inline def setMaxRecordsUndefined: Self = StObject.set(x, "MaxRecords", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setPolicyNames(value: PolicyNames): Self = StObject.set(x, "PolicyNames", value.asInstanceOf[js.Any])
+    inline def setPolicyNames(value: PolicyNames): Self = StObject.set(x, "PolicyNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyNamesUndefined: Self = StObject.set(x, "PolicyNames", js.undefined)
+    inline def setPolicyNamesUndefined: Self = StObject.set(x, "PolicyNames", js.undefined)
     
-    @scala.inline
-    def setPolicyNamesVarargs(value: ResourceName*): Self = StObject.set(x, "PolicyNames", js.Array(value :_*))
+    inline def setPolicyNamesVarargs(value: ResourceName*): Self = StObject.set(x, "PolicyNames", js.Array(value :_*))
     
-    @scala.inline
-    def setPolicyTypes(value: PolicyTypes): Self = StObject.set(x, "PolicyTypes", value.asInstanceOf[js.Any])
+    inline def setPolicyTypes(value: PolicyTypes): Self = StObject.set(x, "PolicyTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyTypesUndefined: Self = StObject.set(x, "PolicyTypes", js.undefined)
+    inline def setPolicyTypesUndefined: Self = StObject.set(x, "PolicyTypes", js.undefined)
     
-    @scala.inline
-    def setPolicyTypesVarargs(value: XmlStringMaxLen64*): Self = StObject.set(x, "PolicyTypes", js.Array(value :_*))
+    inline def setPolicyTypesVarargs(value: XmlStringMaxLen64*): Self = StObject.set(x, "PolicyTypes", js.Array(value :_*))
   }
 }

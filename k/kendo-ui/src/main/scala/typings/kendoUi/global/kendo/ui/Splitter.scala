@@ -21,13 +21,11 @@ object Splitter {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.Splitter = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.Splitter]
+  inline def extend(proto: js.Object): typings.kendoUi.kendo.ui.Splitter = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.Splitter]
   
   /* static member */
   @JSGlobal("kendo.ui.Splitter.fn")
   @js.native
   def fn: typings.kendoUi.kendo.ui.Splitter = js.native
-  @scala.inline
-  def fn_=(x: typings.kendoUi.kendo.ui.Splitter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
+  inline def fn_=(x: typings.kendoUi.kendo.ui.Splitter): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fn")(x.asInstanceOf[js.Any])
 }

@@ -50,20 +50,16 @@ object resourceMembersMod {
   }
   object IncludeInherited {
     
-    @scala.inline
-    def apply(): IncludeInherited = {
+    inline def apply(): IncludeInherited = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IncludeInherited]
     }
     
-    @scala.inline
-    implicit class IncludeInheritedMutableBuilder[Self <: IncludeInherited] (val x: Self) extends AnyVal {
+    extension [Self <: IncludeInherited](x: Self) {
       
-      @scala.inline
-      def setIncludeInherited(value: Boolean): Self = StObject.set(x, "includeInherited", value.asInstanceOf[js.Any])
+      inline def setIncludeInherited(value: Boolean): Self = StObject.set(x, "includeInherited", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeInheritedUndefined: Self = StObject.set(x, "includeInherited", js.undefined)
+      inline def setIncludeInheritedUndefined: Self = StObject.set(x, "includeInherited", js.undefined)
     }
   }
 }

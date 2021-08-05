@@ -11,19 +11,15 @@ trait Data[D /* <: DataOption */] extends StObject {
 }
 object Data {
   
-  @scala.inline
-  def apply[D /* <: DataOption */](): Data[D] = {
+  inline def apply[D /* <: DataOption */](): Data[D] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Data[D]]
   }
   
-  @scala.inline
-  implicit class DataMutableBuilder[Self <: Data[?], D /* <: DataOption */] (val x: Self & Data[D]) extends AnyVal {
+  extension [Self <: Data[?], D /* <: DataOption */](x: Self & Data[D]) {
     
-    @scala.inline
-    def setData(value: D): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: D): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
   }
 }

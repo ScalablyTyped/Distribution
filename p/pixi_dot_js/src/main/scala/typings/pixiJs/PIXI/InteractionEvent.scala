@@ -64,8 +64,7 @@ trait InteractionEvent extends StObject {
 }
 object InteractionEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     currentTarget: DisplayObject,
     data: InteractionData,
     reset: () => Unit,
@@ -79,28 +78,20 @@ object InteractionEvent {
     __obj.asInstanceOf[InteractionEvent]
   }
   
-  @scala.inline
-  implicit class InteractionEventMutableBuilder[Self <: InteractionEvent] (val x: Self) extends AnyVal {
+  extension [Self <: InteractionEvent](x: Self) {
     
-    @scala.inline
-    def setCurrentTarget(value: DisplayObject): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+    inline def setCurrentTarget(value: DisplayObject): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setData(value: InteractionData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: InteractionData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
+    inline def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStopped(value: Boolean): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
+    inline def setStopped(value: Boolean): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTarget(value: DisplayObject): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: DisplayObject): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

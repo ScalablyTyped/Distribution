@@ -22,8 +22,7 @@ trait ContactPickerActivatedEventArgs extends StObject {
 }
 object ContactPickerActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     contactPickerUI: ContactPickerUI,
     kind: ActivationKind,
     previousExecutionState: ApplicationExecutionState,
@@ -33,19 +32,14 @@ object ContactPickerActivatedEventArgs {
     __obj.asInstanceOf[ContactPickerActivatedEventArgs]
   }
   
-  @scala.inline
-  implicit class ContactPickerActivatedEventArgsMutableBuilder[Self <: ContactPickerActivatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ContactPickerActivatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setContactPickerUI(value: ContactPickerUI): Self = StObject.set(x, "contactPickerUI", value.asInstanceOf[js.Any])
+    inline def setContactPickerUI(value: ContactPickerUI): Self = StObject.set(x, "contactPickerUI", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
+    inline def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
+    inline def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
   }
 }

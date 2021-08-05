@@ -62,80 +62,56 @@ object anon {
   }
   object KarmaCoverageReporterrepo {
     
-    @scala.inline
-    def apply(reporters: js.UndefOr[js.Array[Reporter]] & js.UndefOr[js.Array[KarmaCoverageReporter]]): KarmaCoverageReporterrepo = {
+    inline def apply(reporters: js.UndefOr[js.Array[Reporter]] & js.UndefOr[js.Array[KarmaCoverageReporter]]): KarmaCoverageReporterrepo = {
       val __obj = js.Dynamic.literal(reporters = reporters.asInstanceOf[js.Any])
       __obj.asInstanceOf[KarmaCoverageReporterrepo]
     }
     
-    @scala.inline
-    implicit class KarmaCoverageReporterrepoMutableBuilder[Self <: KarmaCoverageReporterrepo] (val x: Self) extends AnyVal {
+    extension [Self <: KarmaCoverageReporterrepo](x: Self) {
       
-      @scala.inline
-      def setCheck(value: js.Any): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
+      inline def setCheck(value: js.Any): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
+      inline def setCheckUndefined: Self = StObject.set(x, "check", js.undefined)
       
-      @scala.inline
-      def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
+      inline def setDir(value: String): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
+      inline def setDirUndefined: Self = StObject.set(x, "dir", js.undefined)
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
-      @scala.inline
-      def setIncludeAllSources(value: Boolean): Self = StObject.set(x, "includeAllSources", value.asInstanceOf[js.Any])
+      inline def setIncludeAllSources(value: Boolean): Self = StObject.set(x, "includeAllSources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeAllSourcesUndefined: Self = StObject.set(x, "includeAllSources", js.undefined)
+      inline def setIncludeAllSourcesUndefined: Self = StObject.set(x, "includeAllSources", js.undefined)
       
-      @scala.inline
-      def setInstrumenter(value: js.Any): Self = StObject.set(x, "instrumenter", value.asInstanceOf[js.Any])
+      inline def setInstrumenter(value: js.Any): Self = StObject.set(x, "instrumenter", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstrumenterUndefined: Self = StObject.set(x, "instrumenter", js.undefined)
+      inline def setInstrumenterUndefined: Self = StObject.set(x, "instrumenter", js.undefined)
       
-      @scala.inline
-      def setReporters(value: js.UndefOr[js.Array[Reporter]] & js.UndefOr[js.Array[KarmaCoverageReporter]]): Self = StObject.set(x, "reporters", value.asInstanceOf[js.Any])
+      inline def setReporters(value: js.UndefOr[js.Array[Reporter]] & js.UndefOr[js.Array[KarmaCoverageReporter]]): Self = StObject.set(x, "reporters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceStore(value: Store): Self = StObject.set(x, "sourceStore", value.asInstanceOf[js.Any])
+      inline def setSourceStore(value: Store): Self = StObject.set(x, "sourceStore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourceStoreUndefined: Self = StObject.set(x, "sourceStore", js.undefined)
+      inline def setSourceStoreUndefined: Self = StObject.set(x, "sourceStore", js.undefined)
       
-      @scala.inline
-      def setSubdir(value: String | (js.Function1[/* browser */ String, String])): Self = StObject.set(x, "subdir", value.asInstanceOf[js.Any])
+      inline def setSubdir(value: String | (js.Function1[/* browser */ String, String])): Self = StObject.set(x, "subdir", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSubdirFunction1(value: /* browser */ String => String): Self = StObject.set(x, "subdir", js.Any.fromFunction1(value))
+      inline def setSubdirFunction1(value: /* browser */ String => String): Self = StObject.set(x, "subdir", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSubdirUndefined: Self = StObject.set(x, "subdir", js.undefined)
+      inline def setSubdirUndefined: Self = StObject.set(x, "subdir", js.undefined)
       
-      @scala.inline
-      def setType(value: ReporterType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: ReporterType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
-      @scala.inline
-      def setUseJSExtensionForCoffeeScript(value: Boolean): Self = StObject.set(x, "useJSExtensionForCoffeeScript", value.asInstanceOf[js.Any])
+      inline def setUseJSExtensionForCoffeeScript(value: Boolean): Self = StObject.set(x, "useJSExtensionForCoffeeScript", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseJSExtensionForCoffeeScriptUndefined: Self = StObject.set(x, "useJSExtensionForCoffeeScript", js.undefined)
+      inline def setUseJSExtensionForCoffeeScriptUndefined: Self = StObject.set(x, "useJSExtensionForCoffeeScript", js.undefined)
       
-      @scala.inline
-      def setWatermarks(value: js.Any): Self = StObject.set(x, "watermarks", value.asInstanceOf[js.Any])
+      inline def setWatermarks(value: js.Any): Self = StObject.set(x, "watermarks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWatermarksUndefined: Self = StObject.set(x, "watermarks", js.undefined)
+      inline def setWatermarksUndefined: Self = StObject.set(x, "watermarks", js.undefined)
     }
   }
 }

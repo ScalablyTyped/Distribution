@@ -13,9 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlTextParsingType extends StObject
 object XlTextParsingType {
   
-  @scala.inline
-  def xlDelimited: `1` = 1.asInstanceOf[`1`]
+  inline def xlDelimited: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def xlFixedWidth: `2` = 2.asInstanceOf[`2`]
+  inline def xlFixedWidth: `2` = 2.asInstanceOf[`2`]
 }

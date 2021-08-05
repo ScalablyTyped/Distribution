@@ -19,19 +19,15 @@ trait Sepadebit extends StObject {
 }
 object Sepadebit {
   
-  @scala.inline
-  def apply(billing_details: Email, sepa_debit: Element | Iban): Sepadebit = {
+  inline def apply(billing_details: Email, sepa_debit: Element | Iban): Sepadebit = {
     val __obj = js.Dynamic.literal(billing_details = billing_details.asInstanceOf[js.Any], sepa_debit = sepa_debit.asInstanceOf[js.Any])
     __obj.asInstanceOf[Sepadebit]
   }
   
-  @scala.inline
-  implicit class SepadebitMutableBuilder[Self <: Sepadebit] (val x: Self) extends AnyVal {
+  extension [Self <: Sepadebit](x: Self) {
     
-    @scala.inline
-    def setBilling_details(value: Email): Self = StObject.set(x, "billing_details", value.asInstanceOf[js.Any])
+    inline def setBilling_details(value: Email): Self = StObject.set(x, "billing_details", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSepa_debit(value: Element | Iban): Self = StObject.set(x, "sepa_debit", value.asInstanceOf[js.Any])
+    inline def setSepa_debit(value: Element | Iban): Self = StObject.set(x, "sepa_debit", value.asInstanceOf[js.Any])
   }
 }

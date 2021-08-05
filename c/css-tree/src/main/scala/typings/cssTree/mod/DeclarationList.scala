@@ -16,20 +16,16 @@ trait DeclarationList
 }
 object DeclarationList {
   
-  @scala.inline
-  def apply(children: List[CssNode]): DeclarationList = {
+  inline def apply(children: List[CssNode]): DeclarationList = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("DeclarationList")
     __obj.asInstanceOf[DeclarationList]
   }
   
-  @scala.inline
-  implicit class DeclarationListMutableBuilder[Self <: DeclarationList] (val x: Self) extends AnyVal {
+  extension [Self <: DeclarationList](x: Self) {
     
-    @scala.inline
-    def setChildren(value: List[CssNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: List[CssNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.cssTree.cssTreeStrings.DeclarationList): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.cssTree.cssTreeStrings.DeclarationList): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

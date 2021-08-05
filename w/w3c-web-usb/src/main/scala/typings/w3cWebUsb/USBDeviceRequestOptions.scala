@@ -10,19 +10,15 @@ trait USBDeviceRequestOptions extends StObject {
 }
 object USBDeviceRequestOptions {
   
-  @scala.inline
-  def apply(filters: js.Array[USBDeviceFilter]): USBDeviceRequestOptions = {
+  inline def apply(filters: js.Array[USBDeviceFilter]): USBDeviceRequestOptions = {
     val __obj = js.Dynamic.literal(filters = filters.asInstanceOf[js.Any])
     __obj.asInstanceOf[USBDeviceRequestOptions]
   }
   
-  @scala.inline
-  implicit class USBDeviceRequestOptionsMutableBuilder[Self <: USBDeviceRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: USBDeviceRequestOptions](x: Self) {
     
-    @scala.inline
-    def setFilters(value: js.Array[USBDeviceFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    inline def setFilters(value: js.Array[USBDeviceFilter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFiltersVarargs(value: USBDeviceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
+    inline def setFiltersVarargs(value: USBDeviceFilter*): Self = StObject.set(x, "filters", js.Array(value :_*))
   }
 }

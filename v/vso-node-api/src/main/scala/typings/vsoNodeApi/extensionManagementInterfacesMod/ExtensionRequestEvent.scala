@@ -39,8 +39,7 @@ trait ExtensionRequestEvent extends StObject {
 }
 object ExtensionRequestEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `extension`: PublishedExtension,
     host: ExtensionHost,
     hostName: String,
@@ -53,25 +52,18 @@ object ExtensionRequestEvent {
     __obj.asInstanceOf[ExtensionRequestEvent]
   }
   
-  @scala.inline
-  implicit class ExtensionRequestEventMutableBuilder[Self <: ExtensionRequestEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionRequestEvent](x: Self) {
     
-    @scala.inline
-    def setExtension(value: PublishedExtension): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    inline def setExtension(value: PublishedExtension): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHost(value: ExtensionHost): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+    inline def setHost(value: ExtensionHost): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHostName(value: String): Self = StObject.set(x, "hostName", value.asInstanceOf[js.Any])
+    inline def setHostName(value: String): Self = StObject.set(x, "hostName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinks(value: ExtensionRequestUrls): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+    inline def setLinks(value: ExtensionRequestUrls): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: ExtensionRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: ExtensionRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateType(value: ExtensionRequestUpdateType): Self = StObject.set(x, "updateType", value.asInstanceOf[js.Any])
+    inline def setUpdateType(value: ExtensionRequestUpdateType): Self = StObject.set(x, "updateType", value.asInstanceOf[js.Any])
   }
 }

@@ -12,19 +12,15 @@ trait TtlableQueryBuilder extends StObject {
 }
 object TtlableQueryBuilder {
   
-  @scala.inline
-  def apply(usingTTL: Double => TtlableQueryBuilder, usingTimestamp: Double => TtlableQueryBuilder): TtlableQueryBuilder = {
+  inline def apply(usingTTL: Double => TtlableQueryBuilder, usingTimestamp: Double => TtlableQueryBuilder): TtlableQueryBuilder = {
     val __obj = js.Dynamic.literal(usingTTL = js.Any.fromFunction1(usingTTL), usingTimestamp = js.Any.fromFunction1(usingTimestamp))
     __obj.asInstanceOf[TtlableQueryBuilder]
   }
   
-  @scala.inline
-  implicit class TtlableQueryBuilderMutableBuilder[Self <: TtlableQueryBuilder] (val x: Self) extends AnyVal {
+  extension [Self <: TtlableQueryBuilder](x: Self) {
     
-    @scala.inline
-    def setUsingTTL(value: Double => TtlableQueryBuilder): Self = StObject.set(x, "usingTTL", js.Any.fromFunction1(value))
+    inline def setUsingTTL(value: Double => TtlableQueryBuilder): Self = StObject.set(x, "usingTTL", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setUsingTimestamp(value: Double => TtlableQueryBuilder): Self = StObject.set(x, "usingTimestamp", js.Any.fromFunction1(value))
+    inline def setUsingTimestamp(value: Double => TtlableQueryBuilder): Self = StObject.set(x, "usingTimestamp", js.Any.fromFunction1(value))
   }
 }

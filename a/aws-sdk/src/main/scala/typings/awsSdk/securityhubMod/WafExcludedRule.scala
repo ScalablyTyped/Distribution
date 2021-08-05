@@ -13,19 +13,15 @@ trait WafExcludedRule extends StObject {
 }
 object WafExcludedRule {
   
-  @scala.inline
-  def apply(): WafExcludedRule = {
+  inline def apply(): WafExcludedRule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WafExcludedRule]
   }
   
-  @scala.inline
-  implicit class WafExcludedRuleMutableBuilder[Self <: WafExcludedRule] (val x: Self) extends AnyVal {
+  extension [Self <: WafExcludedRule](x: Self) {
     
-    @scala.inline
-    def setRuleId(value: NonEmptyString): Self = StObject.set(x, "RuleId", value.asInstanceOf[js.Any])
+    inline def setRuleId(value: NonEmptyString): Self = StObject.set(x, "RuleId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRuleIdUndefined: Self = StObject.set(x, "RuleId", js.undefined)
+    inline def setRuleIdUndefined: Self = StObject.set(x, "RuleId", js.undefined)
   }
 }

@@ -36,8 +36,7 @@ trait SPClientRenderer extends StObject {
 }
 object SPClientRenderer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AddCallStackInfoToErrors: Boolean,
     AddPostRenderCallback: (js.Any, js.Function0[Unit]) => Unit,
     CoreRender: () => Unit,
@@ -57,49 +56,34 @@ object SPClientRenderer {
     __obj.asInstanceOf[SPClientRenderer]
   }
   
-  @scala.inline
-  implicit class SPClientRendererMutableBuilder[Self <: SPClientRenderer] (val x: Self) extends AnyVal {
+  extension [Self <: SPClientRenderer](x: Self) {
     
-    @scala.inline
-    def setAddCallStackInfoToErrors(value: Boolean): Self = StObject.set(x, "AddCallStackInfoToErrors", value.asInstanceOf[js.Any])
+    inline def setAddCallStackInfoToErrors(value: Boolean): Self = StObject.set(x, "AddCallStackInfoToErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddPostRenderCallback(value: (js.Any, js.Function0[Unit]) => Unit): Self = StObject.set(x, "AddPostRenderCallback", js.Any.fromFunction2(value))
+    inline def setAddPostRenderCallback(value: (js.Any, js.Function0[Unit]) => Unit): Self = StObject.set(x, "AddPostRenderCallback", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCoreRender(value: () => Unit): Self = StObject.set(x, "CoreRender", js.Any.fromFunction0(value))
+    inline def setCoreRender(value: () => Unit): Self = StObject.set(x, "CoreRender", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGlobalDebugMode(value: Boolean): Self = StObject.set(x, "GlobalDebugMode", value.asInstanceOf[js.Any])
+    inline def setGlobalDebugMode(value: Boolean): Self = StObject.set(x, "GlobalDebugMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDebugMode(value: () => Boolean): Self = StObject.set(x, "IsDebugMode", js.Any.fromFunction0(value))
+    inline def setIsDebugMode(value: () => Boolean): Self = StObject.set(x, "IsDebugMode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setParseTemplateString(value: String => js.Function0[String]): Self = StObject.set(x, "ParseTemplateString", js.Any.fromFunction1(value))
+    inline def setParseTemplateString(value: String => js.Function0[String]): Self = StObject.set(x, "ParseTemplateString", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setParseTemplateStringWorker(value: String => js.Function0[String]): Self = StObject.set(x, "ParseTemplateStringWorker", js.Any.fromFunction1(value))
+    inline def setParseTemplateStringWorker(value: String => js.Function0[String]): Self = StObject.set(x, "ParseTemplateStringWorker", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRender(value: () => Unit): Self = StObject.set(x, "Render", js.Any.fromFunction0(value))
+    inline def setRender(value: () => Unit): Self = StObject.set(x, "Render", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRenderCore(value: () => Unit): Self = StObject.set(x, "RenderCore", js.Any.fromFunction0(value))
+    inline def setRenderCore(value: () => Unit): Self = StObject.set(x, "RenderCore", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRenderErrors(value: Boolean): Self = StObject.set(x, "RenderErrors", value.asInstanceOf[js.Any])
+    inline def setRenderErrors(value: Boolean): Self = StObject.set(x, "RenderErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderReplace(value: () => Unit): Self = StObject.set(x, "RenderReplace", js.Any.fromFunction0(value))
+    inline def setRenderReplace(value: () => Unit): Self = StObject.set(x, "RenderReplace", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReplaceUrlTokens(value: String => js.Function0[String]): Self = StObject.set(x, "ReplaceUrlTokens", js.Any.fromFunction1(value))
+    inline def setReplaceUrlTokens(value: String => js.Function0[String]): Self = StObject.set(x, "ReplaceUrlTokens", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def set_ExecuteRenderCallbacks(value: () => Unit): Self = StObject.set(x, "_ExecuteRenderCallbacks", js.Any.fromFunction0(value))
+    inline def set_ExecuteRenderCallbacks(value: () => Unit): Self = StObject.set(x, "_ExecuteRenderCallbacks", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def set_ExecuteRenderCallbacksWorker(value: () => Unit): Self = StObject.set(x, "_ExecuteRenderCallbacksWorker", js.Any.fromFunction0(value))
+    inline def set_ExecuteRenderCallbacksWorker(value: () => Unit): Self = StObject.set(x, "_ExecuteRenderCallbacksWorker", js.Any.fromFunction0(value))
   }
 }

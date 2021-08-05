@@ -13,16 +13,13 @@ trait GetApplicationInput extends StObject {
 }
 object GetApplicationInput {
   
-  @scala.inline
-  def apply(applicationName: ApplicationName): GetApplicationInput = {
+  inline def apply(applicationName: ApplicationName): GetApplicationInput = {
     val __obj = js.Dynamic.literal(applicationName = applicationName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetApplicationInput]
   }
   
-  @scala.inline
-  implicit class GetApplicationInputMutableBuilder[Self <: GetApplicationInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetApplicationInput](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
   }
 }

@@ -17,37 +17,27 @@ trait ParentEntityFilter extends StObject {
 }
 object ParentEntityFilter {
   
-  @scala.inline
-  def apply(): ParentEntityFilter = {
+  inline def apply(): ParentEntityFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParentEntityFilter]
   }
   
-  @scala.inline
-  implicit class ParentEntityFilterMutableBuilder[Self <: ParentEntityFilter] (val x: Self) extends AnyVal {
+  extension [Self <: ParentEntityFilter](x: Self) {
     
-    @scala.inline
-    def setFileType(value: js.Array[String]): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
+    inline def setFileType(value: js.Array[String]): Self = StObject.set(x, "fileType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
+    inline def setFileTypeUndefined: Self = StObject.set(x, "fileType", js.undefined)
     
-    @scala.inline
-    def setFileTypeVarargs(value: String*): Self = StObject.set(x, "fileType", js.Array(value :_*))
+    inline def setFileTypeVarargs(value: String*): Self = StObject.set(x, "fileType", js.Array(value :_*))
     
-    @scala.inline
-    def setFilterIds(value: js.Array[String]): Self = StObject.set(x, "filterIds", value.asInstanceOf[js.Any])
+    inline def setFilterIds(value: js.Array[String]): Self = StObject.set(x, "filterIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterIdsUndefined: Self = StObject.set(x, "filterIds", js.undefined)
+    inline def setFilterIdsUndefined: Self = StObject.set(x, "filterIds", js.undefined)
     
-    @scala.inline
-    def setFilterIdsVarargs(value: String*): Self = StObject.set(x, "filterIds", js.Array(value :_*))
+    inline def setFilterIdsVarargs(value: String*): Self = StObject.set(x, "filterIds", js.Array(value :_*))
     
-    @scala.inline
-    def setFilterType(value: String): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
+    inline def setFilterType(value: String): Self = StObject.set(x, "filterType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
+    inline def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
   }
 }

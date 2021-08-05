@@ -12,19 +12,15 @@ trait Small extends StObject {
 }
 object Small {
   
-  @scala.inline
-  def apply(root: String, small: String): Small = {
+  inline def apply(root: String, small: String): Small = {
     val __obj = js.Dynamic.literal(root = root.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any])
     __obj.asInstanceOf[Small]
   }
   
-  @scala.inline
-  implicit class SmallMutableBuilder[Self <: Small] (val x: Self) extends AnyVal {
+  extension [Self <: Small](x: Self) {
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmall(value: String): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
+    inline def setSmall(value: String): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
   }
 }

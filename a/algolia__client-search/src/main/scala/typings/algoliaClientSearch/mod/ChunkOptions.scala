@@ -13,19 +13,15 @@ trait ChunkOptions extends StObject {
 }
 object ChunkOptions {
   
-  @scala.inline
-  def apply(): ChunkOptions = {
+  inline def apply(): ChunkOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChunkOptions]
   }
   
-  @scala.inline
-  implicit class ChunkOptionsMutableBuilder[Self <: ChunkOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChunkOptions](x: Self) {
     
-    @scala.inline
-    def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+    inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
+    inline def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
   }
 }

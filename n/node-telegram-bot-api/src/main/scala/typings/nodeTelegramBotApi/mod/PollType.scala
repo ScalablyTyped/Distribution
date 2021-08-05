@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait PollType extends StObject
 object PollType {
   
-  @scala.inline
-  def quiz: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.quiz = "quiz".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.quiz]
+  inline def quiz: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.quiz = "quiz".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.quiz]
   
-  @scala.inline
-  def regular: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.regular = "regular".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.regular]
+  inline def regular: typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.regular = "regular".asInstanceOf[typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.regular]
 }

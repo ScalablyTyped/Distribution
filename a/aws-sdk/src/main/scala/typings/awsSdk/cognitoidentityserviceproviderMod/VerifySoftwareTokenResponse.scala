@@ -18,25 +18,19 @@ trait VerifySoftwareTokenResponse extends StObject {
 }
 object VerifySoftwareTokenResponse {
   
-  @scala.inline
-  def apply(): VerifySoftwareTokenResponse = {
+  inline def apply(): VerifySoftwareTokenResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VerifySoftwareTokenResponse]
   }
   
-  @scala.inline
-  implicit class VerifySoftwareTokenResponseMutableBuilder[Self <: VerifySoftwareTokenResponse] (val x: Self) extends AnyVal {
+  extension [Self <: VerifySoftwareTokenResponse](x: Self) {
     
-    @scala.inline
-    def setSession(value: SessionType): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+    inline def setSession(value: SessionType): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionUndefined: Self = StObject.set(x, "Session", js.undefined)
+    inline def setSessionUndefined: Self = StObject.set(x, "Session", js.undefined)
     
-    @scala.inline
-    def setStatus(value: VerifySoftwareTokenResponseType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: VerifySoftwareTokenResponseType): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

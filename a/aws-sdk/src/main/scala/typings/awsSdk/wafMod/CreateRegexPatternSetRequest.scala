@@ -18,19 +18,15 @@ trait CreateRegexPatternSetRequest extends StObject {
 }
 object CreateRegexPatternSetRequest {
   
-  @scala.inline
-  def apply(ChangeToken: ChangeToken, Name: ResourceName): CreateRegexPatternSetRequest = {
+  inline def apply(ChangeToken: ChangeToken, Name: ResourceName): CreateRegexPatternSetRequest = {
     val __obj = js.Dynamic.literal(ChangeToken = ChangeToken.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateRegexPatternSetRequest]
   }
   
-  @scala.inline
-  implicit class CreateRegexPatternSetRequestMutableBuilder[Self <: CreateRegexPatternSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateRegexPatternSetRequest](x: Self) {
     
-    @scala.inline
-    def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
+    inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }
 }

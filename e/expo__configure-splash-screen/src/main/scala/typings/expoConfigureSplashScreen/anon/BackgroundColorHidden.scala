@@ -16,31 +16,23 @@ trait BackgroundColorHidden extends StObject {
 }
 object BackgroundColorHidden {
   
-  @scala.inline
-  def apply(): BackgroundColorHidden = {
+  inline def apply(): BackgroundColorHidden = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BackgroundColorHidden]
   }
   
-  @scala.inline
-  implicit class BackgroundColorHiddenMutableBuilder[Self <: BackgroundColorHidden] (val x: Self) extends AnyVal {
+  extension [Self <: BackgroundColorHidden](x: Self) {
     
-    @scala.inline
-    def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
+    inline def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
+    inline def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
     
-    @scala.inline
-    def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+    inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
+    inline def setHiddenUndefined: Self = StObject.set(x, "hidden", js.undefined)
     
-    @scala.inline
-    def setStyle(value: SplashScreenStatusBarStyleType): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: SplashScreenStatusBarStyleType): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

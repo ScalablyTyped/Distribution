@@ -48,67 +48,47 @@ trait GetContactResponse extends StObject {
 }
 object GetContactResponse {
   
-  @scala.inline
-  def apply(): GetContactResponse = {
+  inline def apply(): GetContactResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetContactResponse]
   }
   
-  @scala.inline
-  implicit class GetContactResponseMutableBuilder[Self <: GetContactResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetContactResponse](x: Self) {
     
-    @scala.inline
-    def setAttributesData(value: AttributesData): Self = StObject.set(x, "AttributesData", value.asInstanceOf[js.Any])
+    inline def setAttributesData(value: AttributesData): Self = StObject.set(x, "AttributesData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesDataUndefined: Self = StObject.set(x, "AttributesData", js.undefined)
+    inline def setAttributesDataUndefined: Self = StObject.set(x, "AttributesData", js.undefined)
     
-    @scala.inline
-    def setContactListName(value: ContactListName): Self = StObject.set(x, "ContactListName", value.asInstanceOf[js.Any])
+    inline def setContactListName(value: ContactListName): Self = StObject.set(x, "ContactListName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactListNameUndefined: Self = StObject.set(x, "ContactListName", js.undefined)
+    inline def setContactListNameUndefined: Self = StObject.set(x, "ContactListName", js.undefined)
     
-    @scala.inline
-    def setCreatedTimestamp(value: Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setCreatedTimestamp(value: Timestamp): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
+    inline def setCreatedTimestampUndefined: Self = StObject.set(x, "CreatedTimestamp", js.undefined)
     
-    @scala.inline
-    def setEmailAddress(value: EmailAddress): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
+    inline def setEmailAddress(value: EmailAddress): Self = StObject.set(x, "EmailAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailAddressUndefined: Self = StObject.set(x, "EmailAddress", js.undefined)
+    inline def setEmailAddressUndefined: Self = StObject.set(x, "EmailAddress", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedTimestamp(value: Timestamp): Self = StObject.set(x, "LastUpdatedTimestamp", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTimestamp(value: Timestamp): Self = StObject.set(x, "LastUpdatedTimestamp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedTimestampUndefined: Self = StObject.set(x, "LastUpdatedTimestamp", js.undefined)
+    inline def setLastUpdatedTimestampUndefined: Self = StObject.set(x, "LastUpdatedTimestamp", js.undefined)
     
-    @scala.inline
-    def setTopicDefaultPreferences(value: TopicPreferenceList): Self = StObject.set(x, "TopicDefaultPreferences", value.asInstanceOf[js.Any])
+    inline def setTopicDefaultPreferences(value: TopicPreferenceList): Self = StObject.set(x, "TopicDefaultPreferences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicDefaultPreferencesUndefined: Self = StObject.set(x, "TopicDefaultPreferences", js.undefined)
+    inline def setTopicDefaultPreferencesUndefined: Self = StObject.set(x, "TopicDefaultPreferences", js.undefined)
     
-    @scala.inline
-    def setTopicDefaultPreferencesVarargs(value: TopicPreference*): Self = StObject.set(x, "TopicDefaultPreferences", js.Array(value :_*))
+    inline def setTopicDefaultPreferencesVarargs(value: TopicPreference*): Self = StObject.set(x, "TopicDefaultPreferences", js.Array(value :_*))
     
-    @scala.inline
-    def setTopicPreferences(value: TopicPreferenceList): Self = StObject.set(x, "TopicPreferences", value.asInstanceOf[js.Any])
+    inline def setTopicPreferences(value: TopicPreferenceList): Self = StObject.set(x, "TopicPreferences", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopicPreferencesUndefined: Self = StObject.set(x, "TopicPreferences", js.undefined)
+    inline def setTopicPreferencesUndefined: Self = StObject.set(x, "TopicPreferences", js.undefined)
     
-    @scala.inline
-    def setTopicPreferencesVarargs(value: TopicPreference*): Self = StObject.set(x, "TopicPreferences", js.Array(value :_*))
+    inline def setTopicPreferencesVarargs(value: TopicPreference*): Self = StObject.set(x, "TopicPreferences", js.Array(value :_*))
     
-    @scala.inline
-    def setUnsubscribeAll(value: UnsubscribeAll): Self = StObject.set(x, "UnsubscribeAll", value.asInstanceOf[js.Any])
+    inline def setUnsubscribeAll(value: UnsubscribeAll): Self = StObject.set(x, "UnsubscribeAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnsubscribeAllUndefined: Self = StObject.set(x, "UnsubscribeAll", js.undefined)
+    inline def setUnsubscribeAllUndefined: Self = StObject.set(x, "UnsubscribeAll", js.undefined)
   }
 }

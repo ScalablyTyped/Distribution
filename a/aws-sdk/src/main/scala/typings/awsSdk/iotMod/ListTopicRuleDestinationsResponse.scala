@@ -18,28 +18,21 @@ trait ListTopicRuleDestinationsResponse extends StObject {
 }
 object ListTopicRuleDestinationsResponse {
   
-  @scala.inline
-  def apply(): ListTopicRuleDestinationsResponse = {
+  inline def apply(): ListTopicRuleDestinationsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTopicRuleDestinationsResponse]
   }
   
-  @scala.inline
-  implicit class ListTopicRuleDestinationsResponseMutableBuilder[Self <: ListTopicRuleDestinationsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListTopicRuleDestinationsResponse](x: Self) {
     
-    @scala.inline
-    def setDestinationSummaries(value: TopicRuleDestinationSummaries): Self = StObject.set(x, "destinationSummaries", value.asInstanceOf[js.Any])
+    inline def setDestinationSummaries(value: TopicRuleDestinationSummaries): Self = StObject.set(x, "destinationSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationSummariesUndefined: Self = StObject.set(x, "destinationSummaries", js.undefined)
+    inline def setDestinationSummariesUndefined: Self = StObject.set(x, "destinationSummaries", js.undefined)
     
-    @scala.inline
-    def setDestinationSummariesVarargs(value: TopicRuleDestinationSummary*): Self = StObject.set(x, "destinationSummaries", js.Array(value :_*))
+    inline def setDestinationSummariesVarargs(value: TopicRuleDestinationSummary*): Self = StObject.set(x, "destinationSummaries", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
   }
 }

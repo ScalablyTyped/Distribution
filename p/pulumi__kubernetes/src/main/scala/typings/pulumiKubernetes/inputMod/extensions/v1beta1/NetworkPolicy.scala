@@ -34,37 +34,27 @@ trait NetworkPolicy extends StObject {
 }
 object NetworkPolicy {
   
-  @scala.inline
-  def apply(): NetworkPolicy = {
+  inline def apply(): NetworkPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NetworkPolicy]
   }
   
-  @scala.inline
-  implicit class NetworkPolicyMutableBuilder[Self <: NetworkPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: NetworkPolicy](x: Self) {
     
-    @scala.inline
-    def setApiVersion(value: Input[extensionsSlashv1beta1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+    inline def setApiVersion(value: Input[extensionsSlashv1beta1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+    inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     
-    @scala.inline
-    def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.NetworkPolicy]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.NetworkPolicy]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: Input[ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setSpec(value: Input[NetworkPolicySpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+    inline def setSpec(value: Input[NetworkPolicySpec]): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
+    inline def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
   }
 }

@@ -30,12 +30,9 @@ object typedefRuleMod {
     @JSImport("tslint/lib/rules/typedefRule", "Rule.metadata")
     @js.native
     def metadata: IRuleMetadata = js.native
-    @scala.inline
-    def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
+    inline def metadata_=(x: IRuleMetadata): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("metadata")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def isNodeArray(nodeOrArray: Node): /* is typescript.typescript.NodeArray<typescript.typescript.Node> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNodeArray")(nodeOrArray.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.NodeArray<typescript.typescript.Node> */ Boolean]
-  @scala.inline
-  def isNodeArray(nodeOrArray: NodeArray[Node]): /* is typescript.typescript.NodeArray<typescript.typescript.Node> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNodeArray")(nodeOrArray.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.NodeArray<typescript.typescript.Node> */ Boolean]
+  inline def isNodeArray(nodeOrArray: Node): /* is typescript.typescript.NodeArray<typescript.typescript.Node> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNodeArray")(nodeOrArray.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.NodeArray<typescript.typescript.Node> */ Boolean]
+  inline def isNodeArray(nodeOrArray: NodeArray[Node]): /* is typescript.typescript.NodeArray<typescript.typescript.Node> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNodeArray")(nodeOrArray.asInstanceOf[js.Any]).asInstanceOf[/* is typescript.typescript.NodeArray<typescript.typescript.Node> */ Boolean]
 }

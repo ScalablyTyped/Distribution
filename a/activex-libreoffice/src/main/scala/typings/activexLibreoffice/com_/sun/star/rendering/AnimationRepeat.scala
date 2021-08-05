@@ -19,16 +19,12 @@ object AnimationRepeat {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def ONE_SHOT: `0` = 0.asInstanceOf[`0`]
+    inline def ONE_SHOT: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def ONE_SHOT_PINGPONG: `1` = 1.asInstanceOf[`1`]
+    inline def ONE_SHOT_PINGPONG: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def PINGPONG: `2` = 2.asInstanceOf[`2`]
+    inline def PINGPONG: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def REPEAT: `3` = 3.asInstanceOf[`3`]
+    inline def REPEAT: `3` = 3.asInstanceOf[`3`]
   }
 }

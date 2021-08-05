@@ -19,7 +19,7 @@ class ClassifierShim protected ()
   /* CompleteClass */
   override def dispose(dummy: js.Any): Unit = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var factory: js.Any = js.native
   
   /* CompleteClass */

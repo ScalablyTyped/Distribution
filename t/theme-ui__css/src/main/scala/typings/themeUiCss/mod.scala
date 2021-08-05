@@ -35,63 +35,37 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def css(): js.Function1[/* props */ js.UndefOr[CssPropsArgument], CSSObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("css")().asInstanceOf[js.Function1[/* props */ js.UndefOr[CssPropsArgument], CSSObject]]
-  @scala.inline
-  def css(args: ThemeUIStyleObject): js.Function1[/* props */ js.UndefOr[CssPropsArgument], CSSObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(args.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* props */ js.UndefOr[CssPropsArgument], CSSObject]]
+  inline def css(): js.Function1[/* props */ js.UndefOr[CssPropsArgument], CSSObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("css")().asInstanceOf[js.Function1[/* props */ js.UndefOr[CssPropsArgument], CSSObject]]
+  inline def css(args: ThemeUIStyleObject): js.Function1[/* props */ js.UndefOr[CssPropsArgument], CSSObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("css")(args.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* props */ js.UndefOr[CssPropsArgument], CSSObject]]
   
   @JSImport("@theme-ui/css/dist", "defaultBreakpoints")
   @js.native
   val defaultBreakpoints: js.Array[String] = js.native
   
-  @scala.inline
-  def get(obj: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def get(obj: js.Object, key: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def get(obj: js.Object, key: String, `def`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def get(obj: js.Object, key: String, `def`: js.Any, p: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def get(obj: js.Object, key: String, `def`: js.Any, p: Double, undef: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], p.asInstanceOf[js.Any], undef.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def get(obj: js.Object, key: String, `def`: js.Any, p: Unit, undef: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], p.asInstanceOf[js.Any], undef.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def get(obj: js.Object, key: String, `def`: Unit, p: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def get(obj: js.Object, key: String, `def`: Unit, p: Double, undef: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], p.asInstanceOf[js.Any], undef.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def get(obj: js.Object, key: String, `def`: Unit, p: Unit, undef: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], p.asInstanceOf[js.Any], undef.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def get(obj: js.Object, key: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def get(obj: js.Object, key: Double, `def`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def get(obj: js.Object, key: Double, `def`: js.Any, p: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def get(obj: js.Object, key: Double, `def`: js.Any, p: Double, undef: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], p.asInstanceOf[js.Any], undef.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def get(obj: js.Object, key: Double, `def`: js.Any, p: Unit, undef: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], p.asInstanceOf[js.Any], undef.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def get(obj: js.Object, key: Double, `def`: Unit, p: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def get(obj: js.Object, key: Double, `def`: Unit, p: Double, undef: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], p.asInstanceOf[js.Any], undef.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def get(obj: js.Object, key: Double, `def`: Unit, p: Unit, undef: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], p.asInstanceOf[js.Any], undef.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def get(obj: js.Object, key: Unit, `def`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def get(obj: js.Object, key: Unit, `def`: js.Any, p: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def get(obj: js.Object, key: Unit, `def`: js.Any, p: Double, undef: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], p.asInstanceOf[js.Any], undef.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def get(obj: js.Object, key: Unit, `def`: js.Any, p: Unit, undef: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], p.asInstanceOf[js.Any], undef.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def get(obj: js.Object, key: Unit, `def`: Unit, p: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def get(obj: js.Object, key: Unit, `def`: Unit, p: Double, undef: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], p.asInstanceOf[js.Any], undef.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-  @scala.inline
-  def get(obj: js.Object, key: Unit, `def`: Unit, p: Unit, undef: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], p.asInstanceOf[js.Any], undef.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def get(obj: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def get(obj: js.Object, key: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def get(obj: js.Object, key: String, `def`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def get(obj: js.Object, key: String, `def`: js.Any, p: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def get(obj: js.Object, key: String, `def`: js.Any, p: Double, undef: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], p.asInstanceOf[js.Any], undef.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def get(obj: js.Object, key: String, `def`: js.Any, p: Unit, undef: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], p.asInstanceOf[js.Any], undef.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def get(obj: js.Object, key: String, `def`: Unit, p: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def get(obj: js.Object, key: String, `def`: Unit, p: Double, undef: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], p.asInstanceOf[js.Any], undef.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def get(obj: js.Object, key: String, `def`: Unit, p: Unit, undef: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], p.asInstanceOf[js.Any], undef.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def get(obj: js.Object, key: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def get(obj: js.Object, key: Double, `def`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def get(obj: js.Object, key: Double, `def`: js.Any, p: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def get(obj: js.Object, key: Double, `def`: js.Any, p: Double, undef: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], p.asInstanceOf[js.Any], undef.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def get(obj: js.Object, key: Double, `def`: js.Any, p: Unit, undef: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], p.asInstanceOf[js.Any], undef.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def get(obj: js.Object, key: Double, `def`: Unit, p: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def get(obj: js.Object, key: Double, `def`: Unit, p: Double, undef: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], p.asInstanceOf[js.Any], undef.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def get(obj: js.Object, key: Double, `def`: Unit, p: Unit, undef: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], p.asInstanceOf[js.Any], undef.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def get(obj: js.Object, key: Unit, `def`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def get(obj: js.Object, key: Unit, `def`: js.Any, p: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def get(obj: js.Object, key: Unit, `def`: js.Any, p: Double, undef: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], p.asInstanceOf[js.Any], undef.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def get(obj: js.Object, key: Unit, `def`: js.Any, p: Unit, undef: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], p.asInstanceOf[js.Any], undef.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def get(obj: js.Object, key: Unit, `def`: Unit, p: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def get(obj: js.Object, key: Unit, `def`: Unit, p: Double, undef: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], p.asInstanceOf[js.Any], undef.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def get(obj: js.Object, key: Unit, `def`: Unit, p: Unit, undef: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], p.asInstanceOf[js.Any], undef.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   object multiples {
     
@@ -102,44 +76,37 @@ object mod {
     @JSImport("@theme-ui/css/dist", "multiples.marginX")
     @js.native
     def marginX: js.Array[String] = js.native
-    @scala.inline
-    def marginX_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("marginX")(x.asInstanceOf[js.Any])
+    inline def marginX_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("marginX")(x.asInstanceOf[js.Any])
     
     @JSImport("@theme-ui/css/dist", "multiples.marginY")
     @js.native
     def marginY: js.Array[String] = js.native
-    @scala.inline
-    def marginY_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("marginY")(x.asInstanceOf[js.Any])
+    inline def marginY_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("marginY")(x.asInstanceOf[js.Any])
     
     @JSImport("@theme-ui/css/dist", "multiples.paddingX")
     @js.native
     def paddingX: js.Array[String] = js.native
-    @scala.inline
-    def paddingX_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("paddingX")(x.asInstanceOf[js.Any])
+    inline def paddingX_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("paddingX")(x.asInstanceOf[js.Any])
     
     @JSImport("@theme-ui/css/dist", "multiples.paddingY")
     @js.native
     def paddingY: js.Array[String] = js.native
-    @scala.inline
-    def paddingY_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("paddingY")(x.asInstanceOf[js.Any])
+    inline def paddingY_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("paddingY")(x.asInstanceOf[js.Any])
     
     @JSImport("@theme-ui/css/dist", "multiples.scrollPaddingX")
     @js.native
     def scrollPaddingX: js.Array[String] = js.native
-    @scala.inline
-    def scrollPaddingX_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scrollPaddingX")(x.asInstanceOf[js.Any])
+    inline def scrollPaddingX_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scrollPaddingX")(x.asInstanceOf[js.Any])
     
     @JSImport("@theme-ui/css/dist", "multiples.scrollPaddingY")
     @js.native
     def scrollPaddingY: js.Array[String] = js.native
-    @scala.inline
-    def scrollPaddingY_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scrollPaddingY")(x.asInstanceOf[js.Any])
+    inline def scrollPaddingY_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scrollPaddingY")(x.asInstanceOf[js.Any])
     
     @JSImport("@theme-ui/css/dist", "multiples.size")
     @js.native
     def size: js.Array[String] = js.native
-    @scala.inline
-    def size_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("size")(x.asInstanceOf[js.Any])
+    inline def size_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("size")(x.asInstanceOf[js.Any])
   }
   
   object scales {
@@ -664,390 +631,292 @@ object mod {
   trait CssPropsArgument extends StObject
   object CssPropsArgument {
     
-    @scala.inline
-    def apply(): CssPropsArgument = {
+    inline def apply(): CssPropsArgument = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CssPropsArgument]
     }
     
-    @scala.inline
-    implicit class CssPropsArgumentMutableBuilder[Self <: CssPropsArgument] (val x: Self) extends AnyVal {
+    extension [Self <: CssPropsArgument](x: Self) {
       
-      @scala.inline
-      def setAlerts(value: Record[String, ThemeUIStyleObject]): Self = StObject.set(x, "alerts", value.asInstanceOf[js.Any])
+      inline def setAlerts(value: Record[String, ThemeUIStyleObject]): Self = StObject.set(x, "alerts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAlertsUndefined: Self = StObject.set(x, "alerts", js.undefined)
+      inline def setAlertsUndefined: Self = StObject.set(x, "alerts", js.undefined)
       
-      @scala.inline
-      def setBadges(value: Record[String, ThemeUIStyleObject]): Self = StObject.set(x, "badges", value.asInstanceOf[js.Any])
+      inline def setBadges(value: Record[String, ThemeUIStyleObject]): Self = StObject.set(x, "badges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBadgesUndefined: Self = StObject.set(x, "badges", js.undefined)
+      inline def setBadgesUndefined: Self = StObject.set(x, "badges", js.undefined)
       
-      @scala.inline
-      def setBorderStyles(
+      inline def setBorderStyles(
         value: Scale[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<{}> */ js.Any
             ]
       ): Self = StObject.set(x, "borderStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderStylesUndefined: Self = StObject.set(x, "borderStyles", js.undefined)
+      inline def setBorderStylesUndefined: Self = StObject.set(x, "borderStyles", js.undefined)
       
-      @scala.inline
-      def setBorderStylesVarargs(
+      inline def setBorderStylesVarargs(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<{}> */ js.Any)*
       ): Self = StObject.set(x, "borderStyles", js.Array(value :_*))
       
-      @scala.inline
-      def setBorderWidths(
+      inline def setBorderWidths(
         value: Scale[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderWidth<TLengthStyledSystem> */ js.Any
             ]
       ): Self = StObject.set(x, "borderWidths", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBorderWidthsUndefined: Self = StObject.set(x, "borderWidths", js.undefined)
+      inline def setBorderWidthsUndefined: Self = StObject.set(x, "borderWidths", js.undefined)
       
-      @scala.inline
-      def setBorderWidthsVarargs(
+      inline def setBorderWidthsVarargs(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderWidth<TLengthStyledSystem> */ js.Any)*
       ): Self = StObject.set(x, "borderWidths", js.Array(value :_*))
       
-      @scala.inline
-      def setBorders(
+      inline def setBorders(
         value: Scale[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<{}> */ js.Any
             ]
       ): Self = StObject.set(x, "borders", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBordersUndefined: Self = StObject.set(x, "borders", js.undefined)
+      inline def setBordersUndefined: Self = StObject.set(x, "borders", js.undefined)
       
-      @scala.inline
-      def setBordersVarargs(
+      inline def setBordersVarargs(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Border<{}> */ js.Any)*
       ): Self = StObject.set(x, "borders", js.Array(value :_*))
       
-      @scala.inline
-      def setBreakpoints(value: js.Array[String]): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
+      inline def setBreakpoints(value: js.Array[String]): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBreakpointsUndefined: Self = StObject.set(x, "breakpoints", js.undefined)
+      inline def setBreakpointsUndefined: Self = StObject.set(x, "breakpoints", js.undefined)
       
-      @scala.inline
-      def setBreakpointsVarargs(value: String*): Self = StObject.set(x, "breakpoints", js.Array(value :_*))
+      inline def setBreakpointsVarargs(value: String*): Self = StObject.set(x, "breakpoints", js.Array(value :_*))
       
-      @scala.inline
-      def setButtons(value: Record[String, ThemeUIStyleObject]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      inline def setButtons(value: Record[String, ThemeUIStyleObject]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
+      inline def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)
       
-      @scala.inline
-      def setCards(value: Record[String, ThemeUIStyleObject]): Self = StObject.set(x, "cards", value.asInstanceOf[js.Any])
+      inline def setCards(value: Record[String, ThemeUIStyleObject]): Self = StObject.set(x, "cards", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCardsUndefined: Self = StObject.set(x, "cards", js.undefined)
+      inline def setCardsUndefined: Self = StObject.set(x, "cards", js.undefined)
       
-      @scala.inline
-      def setColorStyles(value: Scale[ThemeUICSSProperties]): Self = StObject.set(x, "colorStyles", value.asInstanceOf[js.Any])
+      inline def setColorStyles(value: Scale[ThemeUICSSProperties]): Self = StObject.set(x, "colorStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorStylesUndefined: Self = StObject.set(x, "colorStyles", js.undefined)
+      inline def setColorStylesUndefined: Self = StObject.set(x, "colorStyles", js.undefined)
       
-      @scala.inline
-      def setColorStylesVarargs(value: ThemeUICSSProperties*): Self = StObject.set(x, "colorStyles", js.Array(value :_*))
+      inline def setColorStylesVarargs(value: ThemeUICSSProperties*): Self = StObject.set(x, "colorStyles", js.Array(value :_*))
       
-      @scala.inline
-      def setColors(value: ColorModesScale): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: ColorModesScale): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
+      inline def setColorsUndefined: Self = StObject.set(x, "colors", js.undefined)
       
-      @scala.inline
-      def setFontSizes(
+      inline def setFontSizes(
         value: Scale[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontSize<number> */ js.Any
             ]
       ): Self = StObject.set(x, "fontSizes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSizesUndefined: Self = StObject.set(x, "fontSizes", js.undefined)
+      inline def setFontSizesUndefined: Self = StObject.set(x, "fontSizes", js.undefined)
       
-      @scala.inline
-      def setFontSizesVarargs(
+      inline def setFontSizesVarargs(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontSize<number> */ js.Any)*
       ): Self = StObject.set(x, "fontSizes", js.Array(value :_*))
       
-      @scala.inline
-      def setFontWeights(
+      inline def setFontWeights(
         value: Scale[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ js.Any
             ]
       ): Self = StObject.set(x, "fontWeights", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontWeightsUndefined: Self = StObject.set(x, "fontWeights", js.undefined)
+      inline def setFontWeightsUndefined: Self = StObject.set(x, "fontWeights", js.undefined)
       
-      @scala.inline
-      def setFontWeightsVarargs(
+      inline def setFontWeightsVarargs(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ js.Any)*
       ): Self = StObject.set(x, "fontWeights", js.Array(value :_*))
       
-      @scala.inline
-      def setFonts(
+      inline def setFonts(
         value: Scale[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontFamily */ js.Any
             ]
       ): Self = StObject.set(x, "fonts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontsUndefined: Self = StObject.set(x, "fonts", js.undefined)
+      inline def setFontsUndefined: Self = StObject.set(x, "fonts", js.undefined)
       
-      @scala.inline
-      def setFontsVarargs(
+      inline def setFontsVarargs(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontFamily */ js.Any)*
       ): Self = StObject.set(x, "fonts", js.Array(value :_*))
       
-      @scala.inline
-      def setForms(value: Record[String, ThemeUIStyleObject]): Self = StObject.set(x, "forms", value.asInstanceOf[js.Any])
+      inline def setForms(value: Record[String, ThemeUIStyleObject]): Self = StObject.set(x, "forms", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFormsUndefined: Self = StObject.set(x, "forms", js.undefined)
+      inline def setFormsUndefined: Self = StObject.set(x, "forms", js.undefined)
       
-      @scala.inline
-      def setGrids(value: Record[String, ThemeUIStyleObject]): Self = StObject.set(x, "grids", value.asInstanceOf[js.Any])
+      inline def setGrids(value: Record[String, ThemeUIStyleObject]): Self = StObject.set(x, "grids", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGridsUndefined: Self = StObject.set(x, "grids", js.undefined)
+      inline def setGridsUndefined: Self = StObject.set(x, "grids", js.undefined)
       
-      @scala.inline
-      def setImages(value: Record[String, ThemeUIStyleObject]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+      inline def setImages(value: Record[String, ThemeUIStyleObject]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
+      inline def setImagesUndefined: Self = StObject.set(x, "images", js.undefined)
       
-      @scala.inline
-      def setInitialColorModeName(value: String): Self = StObject.set(x, "initialColorModeName", value.asInstanceOf[js.Any])
+      inline def setInitialColorModeName(value: String): Self = StObject.set(x, "initialColorModeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialColorModeNameUndefined: Self = StObject.set(x, "initialColorModeName", js.undefined)
+      inline def setInitialColorModeNameUndefined: Self = StObject.set(x, "initialColorModeName", js.undefined)
       
-      @scala.inline
-      def setLayout(value: Record[String, ThemeUIStyleObject]): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
+      inline def setLayout(value: Record[String, ThemeUIStyleObject]): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
+      inline def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
       
-      @scala.inline
-      def setLetterSpacings(
+      inline def setLetterSpacings(
         value: Scale[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LetterSpacing<TLengthStyledSystem> */ js.Any
             ]
       ): Self = StObject.set(x, "letterSpacings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLetterSpacingsUndefined: Self = StObject.set(x, "letterSpacings", js.undefined)
+      inline def setLetterSpacingsUndefined: Self = StObject.set(x, "letterSpacings", js.undefined)
       
-      @scala.inline
-      def setLetterSpacingsVarargs(
+      inline def setLetterSpacingsVarargs(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LetterSpacing<TLengthStyledSystem> */ js.Any)*
       ): Self = StObject.set(x, "letterSpacings", js.Array(value :_*))
       
-      @scala.inline
-      def setLineHeights(
+      inline def setLineHeights(
         value: Scale[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LineHeight<TLengthStyledSystem> */ js.Any
             ]
       ): Self = StObject.set(x, "lineHeights", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineHeightsUndefined: Self = StObject.set(x, "lineHeights", js.undefined)
+      inline def setLineHeightsUndefined: Self = StObject.set(x, "lineHeights", js.undefined)
       
-      @scala.inline
-      def setLineHeightsVarargs(
+      inline def setLineHeightsVarargs(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.LineHeight<TLengthStyledSystem> */ js.Any)*
       ): Self = StObject.set(x, "lineHeights", js.Array(value :_*))
       
-      @scala.inline
-      def setLinks(value: Record[String, ThemeUIStyleObject]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
+      inline def setLinks(value: Record[String, ThemeUIStyleObject]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
+      inline def setLinksUndefined: Self = StObject.set(x, "links", js.undefined)
       
-      @scala.inline
-      def setMediaQueries(value: StringDictionary[String]): Self = StObject.set(x, "mediaQueries", value.asInstanceOf[js.Any])
+      inline def setMediaQueries(value: StringDictionary[String]): Self = StObject.set(x, "mediaQueries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMediaQueriesUndefined: Self = StObject.set(x, "mediaQueries", js.undefined)
+      inline def setMediaQueriesUndefined: Self = StObject.set(x, "mediaQueries", js.undefined)
       
-      @scala.inline
-      def setMessages(value: Record[String, ThemeUIStyleObject]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
+      inline def setMessages(value: Record[String, ThemeUIStyleObject]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
+      inline def setMessagesUndefined: Self = StObject.set(x, "messages", js.undefined)
       
-      @scala.inline
-      def setOpacities(
+      inline def setOpacities(
         value: Scale[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ js.Any
             ]
       ): Self = StObject.set(x, "opacities", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpacitiesUndefined: Self = StObject.set(x, "opacities", js.undefined)
+      inline def setOpacitiesUndefined: Self = StObject.set(x, "opacities", js.undefined)
       
-      @scala.inline
-      def setOpacitiesVarargs(
+      inline def setOpacitiesVarargs(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Opacity */ js.Any)*
       ): Self = StObject.set(x, "opacities", js.Array(value :_*))
       
-      @scala.inline
-      def setPrintColorModeName(value: String): Self = StObject.set(x, "printColorModeName", value.asInstanceOf[js.Any])
+      inline def setPrintColorModeName(value: String): Self = StObject.set(x, "printColorModeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrintColorModeNameUndefined: Self = StObject.set(x, "printColorModeName", js.undefined)
+      inline def setPrintColorModeNameUndefined: Self = StObject.set(x, "printColorModeName", js.undefined)
       
-      @scala.inline
-      def setRadii(
+      inline def setRadii(
         value: Scale[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRadius<TLengthStyledSystem> */ js.Any
             ]
       ): Self = StObject.set(x, "radii", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRadiiUndefined: Self = StObject.set(x, "radii", js.undefined)
+      inline def setRadiiUndefined: Self = StObject.set(x, "radii", js.undefined)
       
-      @scala.inline
-      def setRadiiVarargs(
+      inline def setRadiiVarargs(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BorderRadius<TLengthStyledSystem> */ js.Any)*
       ): Self = StObject.set(x, "radii", js.Array(value :_*))
       
-      @scala.inline
-      def setShadows(
+      inline def setShadows(
         value: Scale[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any
             ]
       ): Self = StObject.set(x, "shadows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShadowsUndefined: Self = StObject.set(x, "shadows", js.undefined)
+      inline def setShadowsUndefined: Self = StObject.set(x, "shadows", js.undefined)
       
-      @scala.inline
-      def setShadowsVarargs(
+      inline def setShadowsVarargs(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any)*
       ): Self = StObject.set(x, "shadows", js.Array(value :_*))
       
-      @scala.inline
-      def setSizes(
+      inline def setSizes(
         value: Scale[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<{}> */ js.Any
             ]
       ): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
+      inline def setSizesUndefined: Self = StObject.set(x, "sizes", js.undefined)
       
-      @scala.inline
-      def setSizesVarargs(
+      inline def setSizesVarargs(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Height<{}> */ js.Any)*
       ): Self = StObject.set(x, "sizes", js.Array(value :_*))
       
-      @scala.inline
-      def setSpace(
+      inline def setSpace(
         value: Scale[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Margin<number | string> */ js.Any
             ]
       ): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
+      inline def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
       
-      @scala.inline
-      def setSpaceVarargs(
+      inline def setSpaceVarargs(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Margin<number | string> */ js.Any)*
       ): Self = StObject.set(x, "space", js.Array(value :_*))
       
-      @scala.inline
-      def setStyles(value: ThemeStyles): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: ThemeStyles): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+      inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
       
-      @scala.inline
-      def setText(value: Record[String, ThemeUIStyleObject]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: Record[String, ThemeUIStyleObject]): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextStyles(value: Scale[ThemeUICSSProperties]): Self = StObject.set(x, "textStyles", value.asInstanceOf[js.Any])
+      inline def setTextStyles(value: Scale[ThemeUICSSProperties]): Self = StObject.set(x, "textStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTextStylesUndefined: Self = StObject.set(x, "textStyles", js.undefined)
+      inline def setTextStylesUndefined: Self = StObject.set(x, "textStyles", js.undefined)
       
-      @scala.inline
-      def setTextStylesVarargs(value: ThemeUICSSProperties*): Self = StObject.set(x, "textStyles", js.Array(value :_*))
+      inline def setTextStylesVarargs(value: ThemeUICSSProperties*): Self = StObject.set(x, "textStyles", js.Array(value :_*))
       
-      @scala.inline
-      def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+      inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
       
-      @scala.inline
-      def setTransitions(
+      inline def setTransitions(
         value: Scale[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Transition */ js.Any
             ]
       ): Self = StObject.set(x, "transitions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTransitionsUndefined: Self = StObject.set(x, "transitions", js.undefined)
+      inline def setTransitionsUndefined: Self = StObject.set(x, "transitions", js.undefined)
       
-      @scala.inline
-      def setTransitionsVarargs(
+      inline def setTransitionsVarargs(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Transition */ js.Any)*
       ): Self = StObject.set(x, "transitions", js.Array(value :_*))
       
-      @scala.inline
-      def setUseBodyStyles(value: Boolean): Self = StObject.set(x, "useBodyStyles", value.asInstanceOf[js.Any])
+      inline def setUseBodyStyles(value: Boolean): Self = StObject.set(x, "useBodyStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseBodyStylesUndefined: Self = StObject.set(x, "useBodyStyles", js.undefined)
+      inline def setUseBodyStylesUndefined: Self = StObject.set(x, "useBodyStyles", js.undefined)
       
-      @scala.inline
-      def setUseBorderBox(value: Boolean): Self = StObject.set(x, "useBorderBox", value.asInstanceOf[js.Any])
+      inline def setUseBorderBox(value: Boolean): Self = StObject.set(x, "useBorderBox", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseBorderBoxUndefined: Self = StObject.set(x, "useBorderBox", js.undefined)
+      inline def setUseBorderBoxUndefined: Self = StObject.set(x, "useBorderBox", js.undefined)
       
-      @scala.inline
-      def setUseColorSchemeMediaQuery(value: Boolean): Self = StObject.set(x, "useColorSchemeMediaQuery", value.asInstanceOf[js.Any])
+      inline def setUseColorSchemeMediaQuery(value: Boolean): Self = StObject.set(x, "useColorSchemeMediaQuery", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseColorSchemeMediaQueryUndefined: Self = StObject.set(x, "useColorSchemeMediaQuery", js.undefined)
+      inline def setUseColorSchemeMediaQueryUndefined: Self = StObject.set(x, "useColorSchemeMediaQuery", js.undefined)
       
-      @scala.inline
-      def setUseCustomProperties(value: Boolean): Self = StObject.set(x, "useCustomProperties", value.asInstanceOf[js.Any])
+      inline def setUseCustomProperties(value: Boolean): Self = StObject.set(x, "useCustomProperties", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseCustomPropertiesUndefined: Self = StObject.set(x, "useCustomProperties", js.undefined)
+      inline def setUseCustomPropertiesUndefined: Self = StObject.set(x, "useCustomProperties", js.undefined)
       
-      @scala.inline
-      def setUseLocalStorage(value: Boolean): Self = StObject.set(x, "useLocalStorage", value.asInstanceOf[js.Any])
+      inline def setUseLocalStorage(value: Boolean): Self = StObject.set(x, "useLocalStorage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUseLocalStorageUndefined: Self = StObject.set(x, "useLocalStorage", js.undefined)
+      inline def setUseLocalStorageUndefined: Self = StObject.set(x, "useLocalStorage", js.undefined)
       
-      @scala.inline
-      def setZIndices(
+      inline def setZIndices(
         value: Scale[
               /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any
             ]
       ): Self = StObject.set(x, "zIndices", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setZIndicesUndefined: Self = StObject.set(x, "zIndices", js.undefined)
+      inline def setZIndicesUndefined: Self = StObject.set(x, "zIndices", js.undefined)
       
-      @scala.inline
-      def setZIndicesVarargs(
+      inline def setZIndicesVarargs(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any)*
       ): Self = StObject.set(x, "zIndices", js.Array(value :_*))
     }

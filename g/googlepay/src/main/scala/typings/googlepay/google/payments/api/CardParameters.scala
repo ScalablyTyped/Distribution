@@ -108,58 +108,41 @@ trait CardParameters extends StObject {
 }
 object CardParameters {
   
-  @scala.inline
-  def apply(allowedAuthMethods: js.Array[CardAuthMethod], allowedCardNetworks: js.Array[CardNetwork]): CardParameters = {
+  inline def apply(allowedAuthMethods: js.Array[CardAuthMethod], allowedCardNetworks: js.Array[CardNetwork]): CardParameters = {
     val __obj = js.Dynamic.literal(allowedAuthMethods = allowedAuthMethods.asInstanceOf[js.Any], allowedCardNetworks = allowedCardNetworks.asInstanceOf[js.Any])
     __obj.asInstanceOf[CardParameters]
   }
   
-  @scala.inline
-  implicit class CardParametersMutableBuilder[Self <: CardParameters] (val x: Self) extends AnyVal {
+  extension [Self <: CardParameters](x: Self) {
     
-    @scala.inline
-    def setAllowCreditCards(value: `false` | `true`): Self = StObject.set(x, "allowCreditCards", value.asInstanceOf[js.Any])
+    inline def setAllowCreditCards(value: `false` | `true`): Self = StObject.set(x, "allowCreditCards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowCreditCardsUndefined: Self = StObject.set(x, "allowCreditCards", js.undefined)
+    inline def setAllowCreditCardsUndefined: Self = StObject.set(x, "allowCreditCards", js.undefined)
     
-    @scala.inline
-    def setAllowPrepaidCards(value: `false` | `true`): Self = StObject.set(x, "allowPrepaidCards", value.asInstanceOf[js.Any])
+    inline def setAllowPrepaidCards(value: `false` | `true`): Self = StObject.set(x, "allowPrepaidCards", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowPrepaidCardsUndefined: Self = StObject.set(x, "allowPrepaidCards", js.undefined)
+    inline def setAllowPrepaidCardsUndefined: Self = StObject.set(x, "allowPrepaidCards", js.undefined)
     
-    @scala.inline
-    def setAllowedAuthMethods(value: js.Array[CardAuthMethod]): Self = StObject.set(x, "allowedAuthMethods", value.asInstanceOf[js.Any])
+    inline def setAllowedAuthMethods(value: js.Array[CardAuthMethod]): Self = StObject.set(x, "allowedAuthMethods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedAuthMethodsVarargs(value: CardAuthMethod*): Self = StObject.set(x, "allowedAuthMethods", js.Array(value :_*))
+    inline def setAllowedAuthMethodsVarargs(value: CardAuthMethod*): Self = StObject.set(x, "allowedAuthMethods", js.Array(value :_*))
     
-    @scala.inline
-    def setAllowedCardNetworks(value: js.Array[CardNetwork]): Self = StObject.set(x, "allowedCardNetworks", value.asInstanceOf[js.Any])
+    inline def setAllowedCardNetworks(value: js.Array[CardNetwork]): Self = StObject.set(x, "allowedCardNetworks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedCardNetworksVarargs(value: CardNetwork*): Self = StObject.set(x, "allowedCardNetworks", js.Array(value :_*))
+    inline def setAllowedCardNetworksVarargs(value: CardNetwork*): Self = StObject.set(x, "allowedCardNetworks", js.Array(value :_*))
     
-    @scala.inline
-    def setBillingAddressParameters(value: BillingAddressParameters): Self = StObject.set(x, "billingAddressParameters", value.asInstanceOf[js.Any])
+    inline def setBillingAddressParameters(value: BillingAddressParameters): Self = StObject.set(x, "billingAddressParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingAddressParametersUndefined: Self = StObject.set(x, "billingAddressParameters", js.undefined)
+    inline def setBillingAddressParametersUndefined: Self = StObject.set(x, "billingAddressParameters", js.undefined)
     
-    @scala.inline
-    def setBillingAddressRequired(value: `false` | `true`): Self = StObject.set(x, "billingAddressRequired", value.asInstanceOf[js.Any])
+    inline def setBillingAddressRequired(value: `false` | `true`): Self = StObject.set(x, "billingAddressRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBillingAddressRequiredUndefined: Self = StObject.set(x, "billingAddressRequired", js.undefined)
+    inline def setBillingAddressRequiredUndefined: Self = StObject.set(x, "billingAddressRequired", js.undefined)
     
-    @scala.inline
-    def setCardNetworkParameters(value: js.Array[CardNetworkParameters]): Self = StObject.set(x, "cardNetworkParameters", value.asInstanceOf[js.Any])
+    inline def setCardNetworkParameters(value: js.Array[CardNetworkParameters]): Self = StObject.set(x, "cardNetworkParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCardNetworkParametersUndefined: Self = StObject.set(x, "cardNetworkParameters", js.undefined)
+    inline def setCardNetworkParametersUndefined: Self = StObject.set(x, "cardNetworkParameters", js.undefined)
     
-    @scala.inline
-    def setCardNetworkParametersVarargs(value: CardNetworkParameters*): Self = StObject.set(x, "cardNetworkParameters", js.Array(value :_*))
+    inline def setCardNetworkParametersVarargs(value: CardNetworkParameters*): Self = StObject.set(x, "cardNetworkParameters", js.Array(value :_*))
   }
 }

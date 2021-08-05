@@ -30,8 +30,7 @@ trait PlanMetadata extends StObject {
 }
 object PlanMetadata {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     createdByIdentity: IdentityRef,
     description: String,
     modifiedDate: Date,
@@ -41,19 +40,14 @@ object PlanMetadata {
     __obj.asInstanceOf[PlanMetadata]
   }
   
-  @scala.inline
-  implicit class PlanMetadataMutableBuilder[Self <: PlanMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: PlanMetadata](x: Self) {
     
-    @scala.inline
-    def setCreatedByIdentity(value: IdentityRef): Self = StObject.set(x, "createdByIdentity", value.asInstanceOf[js.Any])
+    inline def setCreatedByIdentity(value: IdentityRef): Self = StObject.set(x, "createdByIdentity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedDate(value: Date): Self = StObject.set(x, "modifiedDate", value.asInstanceOf[js.Any])
+    inline def setModifiedDate(value: Date): Self = StObject.set(x, "modifiedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserPermissions(value: PlanUserPermissions): Self = StObject.set(x, "userPermissions", value.asInstanceOf[js.Any])
+    inline def setUserPermissions(value: PlanUserPermissions): Self = StObject.set(x, "userPermissions", value.asInstanceOf[js.Any])
   }
 }

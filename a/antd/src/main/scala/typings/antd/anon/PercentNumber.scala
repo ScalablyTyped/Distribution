@@ -10,16 +10,13 @@ trait PercentNumber extends StObject {
 }
 object PercentNumber {
   
-  @scala.inline
-  def apply(percent: Double): PercentNumber = {
+  inline def apply(percent: Double): PercentNumber = {
     val __obj = js.Dynamic.literal(percent = percent.asInstanceOf[js.Any])
     __obj.asInstanceOf[PercentNumber]
   }
   
-  @scala.inline
-  implicit class PercentNumberMutableBuilder[Self <: PercentNumber] (val x: Self) extends AnyVal {
+  extension [Self <: PercentNumber](x: Self) {
     
-    @scala.inline
-    def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
+    inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
   }
 }

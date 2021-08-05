@@ -74,17 +74,14 @@ object oc {
   }
   object ILazyLoadProvider {
     
-    @scala.inline
-    def apply(config: IProviderConfig => Unit): ILazyLoadProvider = {
+    inline def apply(config: IProviderConfig => Unit): ILazyLoadProvider = {
       val __obj = js.Dynamic.literal(config = js.Any.fromFunction1(config))
       __obj.asInstanceOf[ILazyLoadProvider]
     }
     
-    @scala.inline
-    implicit class ILazyLoadProviderMutableBuilder[Self <: ILazyLoadProvider] (val x: Self) extends AnyVal {
+    extension [Self <: ILazyLoadProvider](x: Self) {
       
-      @scala.inline
-      def setConfig(value: IProviderConfig => Unit): Self = StObject.set(x, "config", js.Any.fromFunction1(value))
+      inline def setConfig(value: IProviderConfig => Unit): Self = StObject.set(x, "config", js.Any.fromFunction1(value))
     }
   }
   
@@ -104,29 +101,22 @@ object oc {
   }
   object IModuleConfig {
     
-    @scala.inline
-    def apply(): IModuleConfig = {
+    inline def apply(): IModuleConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IModuleConfig]
     }
     
-    @scala.inline
-    implicit class IModuleConfigMutableBuilder[Self <: IModuleConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IModuleConfig](x: Self) {
       
-      @scala.inline
-      def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+      inline def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      @scala.inline
-      def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
+      inline def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -165,44 +155,32 @@ object oc {
   }
   object IOptionsConfig {
     
-    @scala.inline
-    def apply(): IOptionsConfig = {
+    inline def apply(): IOptionsConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IOptionsConfig]
     }
     
-    @scala.inline
-    implicit class IOptionsConfigMutableBuilder[Self <: IOptionsConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IOptionsConfig](x: Self) {
       
-      @scala.inline
-      def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+      inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
       
-      @scala.inline
-      def setInsertBefore(value: String): Self = StObject.set(x, "insertBefore", value.asInstanceOf[js.Any])
+      inline def setInsertBefore(value: String): Self = StObject.set(x, "insertBefore", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertBeforeUndefined: Self = StObject.set(x, "insertBefore", js.undefined)
+      inline def setInsertBeforeUndefined: Self = StObject.set(x, "insertBefore", js.undefined)
       
-      @scala.inline
-      def setReconfig(value: Boolean): Self = StObject.set(x, "reconfig", value.asInstanceOf[js.Any])
+      inline def setReconfig(value: Boolean): Self = StObject.set(x, "reconfig", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReconfigUndefined: Self = StObject.set(x, "reconfig", js.undefined)
+      inline def setReconfigUndefined: Self = StObject.set(x, "reconfig", js.undefined)
       
-      @scala.inline
-      def setRerun(value: Boolean): Self = StObject.set(x, "rerun", value.asInstanceOf[js.Any])
+      inline def setRerun(value: Boolean): Self = StObject.set(x, "rerun", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRerunUndefined: Self = StObject.set(x, "rerun", js.undefined)
+      inline def setRerunUndefined: Self = StObject.set(x, "rerun", js.undefined)
       
-      @scala.inline
-      def setSerie(value: Boolean): Self = StObject.set(x, "serie", value.asInstanceOf[js.Any])
+      inline def setSerie(value: Boolean): Self = StObject.set(x, "serie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerieUndefined: Self = StObject.set(x, "serie", js.undefined)
+      inline def setSerieUndefined: Self = StObject.set(x, "serie", js.undefined)
     }
   }
   
@@ -226,35 +204,26 @@ object oc {
   }
   object IProviderConfig {
     
-    @scala.inline
-    def apply(): IProviderConfig = {
+    inline def apply(): IProviderConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IProviderConfig]
     }
     
-    @scala.inline
-    implicit class IProviderConfigMutableBuilder[Self <: IProviderConfig] (val x: Self) extends AnyVal {
+    extension [Self <: IProviderConfig](x: Self) {
       
-      @scala.inline
-      def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
+      inline def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
-      @scala.inline
-      def setEvents(value: Boolean): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+      inline def setEvents(value: Boolean): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+      inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
       
-      @scala.inline
-      def setModules(value: js.Array[IModuleConfig]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
+      inline def setModules(value: js.Array[IModuleConfig]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
+      inline def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
       
-      @scala.inline
-      def setModulesVarargs(value: IModuleConfig*): Self = StObject.set(x, "modules", js.Array(value :_*))
+      inline def setModulesVarargs(value: IModuleConfig*): Self = StObject.set(x, "modules", js.Array(value :_*))
     }
   }
   
@@ -274,21 +243,17 @@ object oc {
   }
   object ITypedModuleConfig {
     
-    @scala.inline
-    def apply(path: String, `type`: String): ITypedModuleConfig = {
+    inline def apply(path: String, `type`: String): ITypedModuleConfig = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ITypedModuleConfig]
     }
     
-    @scala.inline
-    implicit class ITypedModuleConfigMutableBuilder[Self <: ITypedModuleConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ITypedModuleConfig](x: Self) {
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

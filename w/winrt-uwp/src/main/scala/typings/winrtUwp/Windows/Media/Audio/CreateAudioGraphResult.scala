@@ -15,19 +15,15 @@ trait CreateAudioGraphResult extends StObject {
 }
 object CreateAudioGraphResult {
   
-  @scala.inline
-  def apply(graph: AudioGraph, status: AudioGraphCreationStatus): CreateAudioGraphResult = {
+  inline def apply(graph: AudioGraph, status: AudioGraphCreationStatus): CreateAudioGraphResult = {
     val __obj = js.Dynamic.literal(graph = graph.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAudioGraphResult]
   }
   
-  @scala.inline
-  implicit class CreateAudioGraphResultMutableBuilder[Self <: CreateAudioGraphResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAudioGraphResult](x: Self) {
     
-    @scala.inline
-    def setGraph(value: AudioGraph): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
+    inline def setGraph(value: AudioGraph): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: AudioGraphCreationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: AudioGraphCreationStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

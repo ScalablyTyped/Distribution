@@ -20,19 +20,15 @@ trait ChatRoomsDataReceived
 }
 object ChatRoomsDataReceived {
   
-  @scala.inline
-  def apply(rooms: js.Array[ChatRoom]): ChatRoomsDataReceived = {
+  inline def apply(rooms: js.Array[ChatRoom]): ChatRoomsDataReceived = {
     val __obj = js.Dynamic.literal(rooms = rooms.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChatRoomsDataReceived]
   }
   
-  @scala.inline
-  implicit class ChatRoomsDataReceivedMutableBuilder[Self <: ChatRoomsDataReceived] (val x: Self) extends AnyVal {
+  extension [Self <: ChatRoomsDataReceived](x: Self) {
     
-    @scala.inline
-    def setRooms(value: js.Array[ChatRoom]): Self = StObject.set(x, "rooms", value.asInstanceOf[js.Any])
+    inline def setRooms(value: js.Array[ChatRoom]): Self = StObject.set(x, "rooms", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoomsVarargs(value: ChatRoom*): Self = StObject.set(x, "rooms", js.Array(value :_*))
+    inline def setRoomsVarargs(value: ChatRoom*): Self = StObject.set(x, "rooms", js.Array(value :_*))
   }
 }

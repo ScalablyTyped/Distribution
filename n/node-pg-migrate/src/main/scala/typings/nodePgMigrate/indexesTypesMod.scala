@@ -60,65 +60,46 @@ object indexesTypesMod {
   }
   object CreateIndexOptions {
     
-    @scala.inline
-    def apply(): CreateIndexOptions = {
+    inline def apply(): CreateIndexOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CreateIndexOptions]
     }
     
-    @scala.inline
-    implicit class CreateIndexOptionsMutableBuilder[Self <: CreateIndexOptions] (val x: Self) extends AnyVal {
+    extension [Self <: CreateIndexOptions](x: Self) {
       
-      @scala.inline
-      def setConcurrently(value: Boolean): Self = StObject.set(x, "concurrently", value.asInstanceOf[js.Any])
+      inline def setConcurrently(value: Boolean): Self = StObject.set(x, "concurrently", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcurrentlyUndefined: Self = StObject.set(x, "concurrently", js.undefined)
+      inline def setConcurrentlyUndefined: Self = StObject.set(x, "concurrently", js.undefined)
       
-      @scala.inline
-      def setIfNotExists(value: Boolean): Self = StObject.set(x, "ifNotExists", value.asInstanceOf[js.Any])
+      inline def setIfNotExists(value: Boolean): Self = StObject.set(x, "ifNotExists", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIfNotExistsUndefined: Self = StObject.set(x, "ifNotExists", js.undefined)
+      inline def setIfNotExistsUndefined: Self = StObject.set(x, "ifNotExists", js.undefined)
       
-      @scala.inline
-      def setInclude(value: String | js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+      inline def setInclude(value: String | js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
+      inline def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)
       
-      @scala.inline
-      def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
+      inline def setIncludeVarargs(value: String*): Self = StObject.set(x, "include", js.Array(value :_*))
       
-      @scala.inline
-      def setMethod(value: btree | hash | gist | spgist | gin): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      inline def setMethod(value: btree | hash | gist | spgist | gin): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+      inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setOpclass(value: Name): Self = StObject.set(x, "opclass", value.asInstanceOf[js.Any])
+      inline def setOpclass(value: Name): Self = StObject.set(x, "opclass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpclassUndefined: Self = StObject.set(x, "opclass", js.undefined)
+      inline def setOpclassUndefined: Self = StObject.set(x, "opclass", js.undefined)
       
-      @scala.inline
-      def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
+      inline def setUnique(value: Boolean): Self = StObject.set(x, "unique", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
+      inline def setUniqueUndefined: Self = StObject.set(x, "unique", js.undefined)
       
-      @scala.inline
-      def setWhere(value: String): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
+      inline def setWhere(value: String): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
+      inline def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
     }
   }
   
@@ -139,26 +120,20 @@ object indexesTypesMod {
   }
   object DropIndexOptions {
     
-    @scala.inline
-    def apply(): DropIndexOptions = {
+    inline def apply(): DropIndexOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DropIndexOptions]
     }
     
-    @scala.inline
-    implicit class DropIndexOptionsMutableBuilder[Self <: DropIndexOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DropIndexOptions](x: Self) {
       
-      @scala.inline
-      def setConcurrently(value: Boolean): Self = StObject.set(x, "concurrently", value.asInstanceOf[js.Any])
+      inline def setConcurrently(value: Boolean): Self = StObject.set(x, "concurrently", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConcurrentlyUndefined: Self = StObject.set(x, "concurrently", js.undefined)
+      inline def setConcurrentlyUndefined: Self = StObject.set(x, "concurrently", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     }
   }
   
@@ -172,29 +147,22 @@ object indexesTypesMod {
   }
   object IndexColumn {
     
-    @scala.inline
-    def apply(name: String): IndexColumn = {
+    inline def apply(name: String): IndexColumn = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[IndexColumn]
     }
     
-    @scala.inline
-    implicit class IndexColumnMutableBuilder[Self <: IndexColumn] (val x: Self) extends AnyVal {
+    extension [Self <: IndexColumn](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpclass(value: Name): Self = StObject.set(x, "opclass", value.asInstanceOf[js.Any])
+      inline def setOpclass(value: Name): Self = StObject.set(x, "opclass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpclassUndefined: Self = StObject.set(x, "opclass", js.undefined)
+      inline def setOpclassUndefined: Self = StObject.set(x, "opclass", js.undefined)
       
-      @scala.inline
-      def setSort(value: ASC | DESC): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+      inline def setSort(value: ASC | DESC): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+      inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
     }
   }
 }

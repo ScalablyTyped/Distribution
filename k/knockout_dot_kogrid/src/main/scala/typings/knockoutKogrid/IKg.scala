@@ -29,8 +29,7 @@ trait IKg extends StObject {
 }
 object IKg {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     aggregateTemplate: () => String,
     defaultCellTemplate: () => String,
     defaultGridTemplate: () => String,
@@ -43,28 +42,20 @@ object IKg {
     __obj.asInstanceOf[IKg]
   }
   
-  @scala.inline
-  implicit class IKgMutableBuilder[Self <: IKg] (val x: Self) extends AnyVal {
+  extension [Self <: IKg](x: Self) {
     
-    @scala.inline
-    def setAggregateTemplate(value: () => String): Self = StObject.set(x, "aggregateTemplate", js.Any.fromFunction0(value))
+    inline def setAggregateTemplate(value: () => String): Self = StObject.set(x, "aggregateTemplate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDefaultCellTemplate(value: () => String): Self = StObject.set(x, "defaultCellTemplate", js.Any.fromFunction0(value))
+    inline def setDefaultCellTemplate(value: () => String): Self = StObject.set(x, "defaultCellTemplate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDefaultGridTemplate(value: () => String): Self = StObject.set(x, "defaultGridTemplate", js.Any.fromFunction0(value))
+    inline def setDefaultGridTemplate(value: () => String): Self = StObject.set(x, "defaultGridTemplate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDefaultHeaderCellTemplate(value: () => String): Self = StObject.set(x, "defaultHeaderCellTemplate", js.Any.fromFunction0(value))
+    inline def setDefaultHeaderCellTemplate(value: () => String): Self = StObject.set(x, "defaultHeaderCellTemplate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDefaultHeaderRowTemplate(value: () => String): Self = StObject.set(x, "defaultHeaderRowTemplate", js.Any.fromFunction0(value))
+    inline def setDefaultHeaderRowTemplate(value: () => String): Self = StObject.set(x, "defaultHeaderRowTemplate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDefaultRowTemplate(value: () => String): Self = StObject.set(x, "defaultRowTemplate", js.Any.fromFunction0(value))
+    inline def setDefaultRowTemplate(value: () => String): Self = StObject.set(x, "defaultRowTemplate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDomUtilityService(value: DomUtilityService): Self = StObject.set(x, "domUtilityService", value.asInstanceOf[js.Any])
+    inline def setDomUtilityService(value: DomUtilityService): Self = StObject.set(x, "domUtilityService", value.asInstanceOf[js.Any])
   }
 }

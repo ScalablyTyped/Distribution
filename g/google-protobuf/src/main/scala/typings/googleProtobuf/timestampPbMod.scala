@@ -37,11 +37,9 @@ object timestampPbMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def deserializeBinary(bytes: Uint8Array): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
+    inline def deserializeBinary(bytes: Uint8Array): Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Timestamp]
     
-    @scala.inline
-    def deserializeBinaryFromReader(message: Timestamp, reader: BinaryReader): Timestamp = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Timestamp]
+    inline def deserializeBinaryFromReader(message: Timestamp, reader: BinaryReader): Timestamp = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Timestamp]
     
     @JSImport("google-protobuf/google/protobuf/timestamp_pb", "Timestamp.extensions")
     @js.native
@@ -50,17 +48,13 @@ object timestampPbMod {
     @JSImport("google-protobuf/google/protobuf/timestamp_pb", "Timestamp.extensionsBinary")
     @js.native
     def extensionsBinary: NumberDictionary[ExtensionFieldBinaryInfo[Message]] = js.native
-    @scala.inline
-    def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
+    inline def extensionsBinary_=(x: NumberDictionary[ExtensionFieldBinaryInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensionsBinary")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
+    inline def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def serializeBinaryToWriter(message: Timestamp, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def serializeBinaryToWriter(message: Timestamp, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def toObject(includeInstance: Boolean, msg: Timestamp): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
+    inline def toObject(includeInstance: Boolean, msg: Timestamp): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
     
     trait AsObject extends StObject {
       
@@ -70,20 +64,16 @@ object timestampPbMod {
     }
     object AsObject {
       
-      @scala.inline
-      def apply(nanos: Double, seconds: Double): AsObject = {
+      inline def apply(nanos: Double, seconds: Double): AsObject = {
         val __obj = js.Dynamic.literal(nanos = nanos.asInstanceOf[js.Any], seconds = seconds.asInstanceOf[js.Any])
         __obj.asInstanceOf[AsObject]
       }
       
-      @scala.inline
-      implicit class AsObjectMutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
+      extension [Self <: AsObject](x: Self) {
         
-        @scala.inline
-        def setNanos(value: Double): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
+        inline def setNanos(value: Double): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
+        inline def setSeconds(value: Double): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
       }
     }
   }

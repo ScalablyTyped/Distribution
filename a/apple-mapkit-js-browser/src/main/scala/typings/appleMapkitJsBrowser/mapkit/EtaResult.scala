@@ -32,25 +32,19 @@ trait EtaResult extends StObject {
 }
 object EtaResult {
   
-  @scala.inline
-  def apply(distance: Double, expectedTravelTime: Double, staticTravelTime: Double, transportType: Transport): EtaResult = {
+  inline def apply(distance: Double, expectedTravelTime: Double, staticTravelTime: Double, transportType: Transport): EtaResult = {
     val __obj = js.Dynamic.literal(distance = distance.asInstanceOf[js.Any], expectedTravelTime = expectedTravelTime.asInstanceOf[js.Any], staticTravelTime = staticTravelTime.asInstanceOf[js.Any], transportType = transportType.asInstanceOf[js.Any])
     __obj.asInstanceOf[EtaResult]
   }
   
-  @scala.inline
-  implicit class EtaResultMutableBuilder[Self <: EtaResult] (val x: Self) extends AnyVal {
+  extension [Self <: EtaResult](x: Self) {
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedTravelTime(value: Double): Self = StObject.set(x, "expectedTravelTime", value.asInstanceOf[js.Any])
+    inline def setExpectedTravelTime(value: Double): Self = StObject.set(x, "expectedTravelTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticTravelTime(value: Double): Self = StObject.set(x, "staticTravelTime", value.asInstanceOf[js.Any])
+    inline def setStaticTravelTime(value: Double): Self = StObject.set(x, "staticTravelTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransportType(value: Transport): Self = StObject.set(x, "transportType", value.asInstanceOf[js.Any])
+    inline def setTransportType(value: Transport): Self = StObject.set(x, "transportType", value.asInstanceOf[js.Any])
   }
 }

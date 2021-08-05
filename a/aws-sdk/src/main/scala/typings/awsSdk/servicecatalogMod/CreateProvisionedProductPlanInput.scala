@@ -63,8 +63,7 @@ trait CreateProvisionedProductPlanInput extends StObject {
 }
 object CreateProvisionedProductPlanInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     IdempotencyToken: IdempotencyToken,
     PlanName: ProvisionedProductPlanName,
     PlanType: ProvisionedProductPlanType,
@@ -76,64 +75,44 @@ object CreateProvisionedProductPlanInput {
     __obj.asInstanceOf[CreateProvisionedProductPlanInput]
   }
   
-  @scala.inline
-  implicit class CreateProvisionedProductPlanInputMutableBuilder[Self <: CreateProvisionedProductPlanInput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateProvisionedProductPlanInput](x: Self) {
     
-    @scala.inline
-    def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
+    inline def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
+    inline def setAcceptLanguageUndefined: Self = StObject.set(x, "AcceptLanguage", js.undefined)
     
-    @scala.inline
-    def setIdempotencyToken(value: IdempotencyToken): Self = StObject.set(x, "IdempotencyToken", value.asInstanceOf[js.Any])
+    inline def setIdempotencyToken(value: IdempotencyToken): Self = StObject.set(x, "IdempotencyToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationArns(value: NotificationArns): Self = StObject.set(x, "NotificationArns", value.asInstanceOf[js.Any])
+    inline def setNotificationArns(value: NotificationArns): Self = StObject.set(x, "NotificationArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationArnsUndefined: Self = StObject.set(x, "NotificationArns", js.undefined)
+    inline def setNotificationArnsUndefined: Self = StObject.set(x, "NotificationArns", js.undefined)
     
-    @scala.inline
-    def setNotificationArnsVarargs(value: NotificationArn*): Self = StObject.set(x, "NotificationArns", js.Array(value :_*))
+    inline def setNotificationArnsVarargs(value: NotificationArn*): Self = StObject.set(x, "NotificationArns", js.Array(value :_*))
     
-    @scala.inline
-    def setPathId(value: Id): Self = StObject.set(x, "PathId", value.asInstanceOf[js.Any])
+    inline def setPathId(value: Id): Self = StObject.set(x, "PathId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathIdUndefined: Self = StObject.set(x, "PathId", js.undefined)
+    inline def setPathIdUndefined: Self = StObject.set(x, "PathId", js.undefined)
     
-    @scala.inline
-    def setPlanName(value: ProvisionedProductPlanName): Self = StObject.set(x, "PlanName", value.asInstanceOf[js.Any])
+    inline def setPlanName(value: ProvisionedProductPlanName): Self = StObject.set(x, "PlanName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlanType(value: ProvisionedProductPlanType): Self = StObject.set(x, "PlanType", value.asInstanceOf[js.Any])
+    inline def setPlanType(value: ProvisionedProductPlanType): Self = StObject.set(x, "PlanType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProductId(value: Id): Self = StObject.set(x, "ProductId", value.asInstanceOf[js.Any])
+    inline def setProductId(value: Id): Self = StObject.set(x, "ProductId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionedProductName(value: ProvisionedProductName): Self = StObject.set(x, "ProvisionedProductName", value.asInstanceOf[js.Any])
+    inline def setProvisionedProductName(value: ProvisionedProductName): Self = StObject.set(x, "ProvisionedProductName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisioningArtifactId(value: Id): Self = StObject.set(x, "ProvisioningArtifactId", value.asInstanceOf[js.Any])
+    inline def setProvisioningArtifactId(value: Id): Self = StObject.set(x, "ProvisioningArtifactId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisioningParameters(value: UpdateProvisioningParameters): Self = StObject.set(x, "ProvisioningParameters", value.asInstanceOf[js.Any])
+    inline def setProvisioningParameters(value: UpdateProvisioningParameters): Self = StObject.set(x, "ProvisioningParameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisioningParametersUndefined: Self = StObject.set(x, "ProvisioningParameters", js.undefined)
+    inline def setProvisioningParametersUndefined: Self = StObject.set(x, "ProvisioningParameters", js.undefined)
     
-    @scala.inline
-    def setProvisioningParametersVarargs(value: UpdateProvisioningParameter*): Self = StObject.set(x, "ProvisioningParameters", js.Array(value :_*))
+    inline def setProvisioningParametersVarargs(value: UpdateProvisioningParameter*): Self = StObject.set(x, "ProvisioningParameters", js.Array(value :_*))
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

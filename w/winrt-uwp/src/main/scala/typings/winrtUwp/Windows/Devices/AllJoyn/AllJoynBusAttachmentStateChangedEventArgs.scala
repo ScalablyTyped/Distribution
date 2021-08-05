@@ -15,19 +15,15 @@ trait AllJoynBusAttachmentStateChangedEventArgs extends StObject {
 }
 object AllJoynBusAttachmentStateChangedEventArgs {
   
-  @scala.inline
-  def apply(state: AllJoynBusAttachmentState, status: Double): AllJoynBusAttachmentStateChangedEventArgs = {
+  inline def apply(state: AllJoynBusAttachmentState, status: Double): AllJoynBusAttachmentStateChangedEventArgs = {
     val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[AllJoynBusAttachmentStateChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class AllJoynBusAttachmentStateChangedEventArgsMutableBuilder[Self <: AllJoynBusAttachmentStateChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: AllJoynBusAttachmentStateChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setState(value: AllJoynBusAttachmentState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: AllJoynBusAttachmentState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }
 }

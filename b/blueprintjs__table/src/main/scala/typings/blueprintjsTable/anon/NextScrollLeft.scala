@@ -12,19 +12,15 @@ trait NextScrollLeft extends StObject {
 }
 object NextScrollLeft {
   
-  @scala.inline
-  def apply(nextScrollLeft: Double, nextScrollTop: Double): NextScrollLeft = {
+  inline def apply(nextScrollLeft: Double, nextScrollTop: Double): NextScrollLeft = {
     val __obj = js.Dynamic.literal(nextScrollLeft = nextScrollLeft.asInstanceOf[js.Any], nextScrollTop = nextScrollTop.asInstanceOf[js.Any])
     __obj.asInstanceOf[NextScrollLeft]
   }
   
-  @scala.inline
-  implicit class NextScrollLeftMutableBuilder[Self <: NextScrollLeft] (val x: Self) extends AnyVal {
+  extension [Self <: NextScrollLeft](x: Self) {
     
-    @scala.inline
-    def setNextScrollLeft(value: Double): Self = StObject.set(x, "nextScrollLeft", value.asInstanceOf[js.Any])
+    inline def setNextScrollLeft(value: Double): Self = StObject.set(x, "nextScrollLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextScrollTop(value: Double): Self = StObject.set(x, "nextScrollTop", value.asInstanceOf[js.Any])
+    inline def setNextScrollTop(value: Double): Self = StObject.set(x, "nextScrollTop", value.asInstanceOf[js.Any])
   }
 }

@@ -18,8 +18,7 @@ object remoteProviderInitMod {
   @js.native
   val DEFAULT_TIMEOUT: /* 1000 */ Double = js.native
   
-  @scala.inline
-  def providerConfigFromInit(hasMaxRetriesTimeout: RemoteProviderInit): RemoteProviderConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("providerConfigFromInit")(hasMaxRetriesTimeout.asInstanceOf[js.Any]).asInstanceOf[RemoteProviderConfig]
+  inline def providerConfigFromInit(hasMaxRetriesTimeout: RemoteProviderInit): RemoteProviderConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("providerConfigFromInit")(hasMaxRetriesTimeout.asInstanceOf[js.Any]).asInstanceOf[RemoteProviderConfig]
   
   trait RemoteProviderConfig extends StObject {
     
@@ -35,20 +34,16 @@ object remoteProviderInitMod {
   }
   object RemoteProviderConfig {
     
-    @scala.inline
-    def apply(maxRetries: Double, timeout: Double): RemoteProviderConfig = {
+    inline def apply(maxRetries: Double, timeout: Double): RemoteProviderConfig = {
       val __obj = js.Dynamic.literal(maxRetries = maxRetries.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
       __obj.asInstanceOf[RemoteProviderConfig]
     }
     
-    @scala.inline
-    implicit class RemoteProviderConfigMutableBuilder[Self <: RemoteProviderConfig] (val x: Self) extends AnyVal {
+    extension [Self <: RemoteProviderConfig](x: Self) {
       
-      @scala.inline
-      def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+      inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     }
   }
   
@@ -61,26 +56,20 @@ object remoteProviderInitMod {
   }
   object RemoteProviderInit {
     
-    @scala.inline
-    def apply(): RemoteProviderInit = {
+    inline def apply(): RemoteProviderInit = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RemoteProviderInit]
     }
     
-    @scala.inline
-    implicit class RemoteProviderInitMutableBuilder[Self <: RemoteProviderInit] (val x: Self) extends AnyVal {
+    extension [Self <: RemoteProviderInit](x: Self) {
       
-      @scala.inline
-      def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
+      inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
+      inline def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
       
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+      inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
+      inline def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
 }

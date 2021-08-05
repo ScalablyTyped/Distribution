@@ -13,19 +13,15 @@ trait WorldConfig extends StObject {
 }
 object WorldConfig {
   
-  @scala.inline
-  def apply(): WorldConfig = {
+  inline def apply(): WorldConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorldConfig]
   }
   
-  @scala.inline
-  implicit class WorldConfigMutableBuilder[Self <: WorldConfig] (val x: Self) extends AnyVal {
+  extension [Self <: WorldConfig](x: Self) {
     
-    @scala.inline
-    def setWorld(value: Arn): Self = StObject.set(x, "world", value.asInstanceOf[js.Any])
+    inline def setWorld(value: Arn): Self = StObject.set(x, "world", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorldUndefined: Self = StObject.set(x, "world", js.undefined)
+    inline def setWorldUndefined: Self = StObject.set(x, "world", js.undefined)
   }
 }

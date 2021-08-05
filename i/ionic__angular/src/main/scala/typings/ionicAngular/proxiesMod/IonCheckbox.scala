@@ -29,7 +29,7 @@ class IonCheckbox protected ()
   /* CompleteClass */
   var disabled: Boolean = js.native
   
-  var el: HTMLElement = js.native
+  /* protected */ var el: HTMLElement = js.native
   
   /**
     * If `true`, the checkbox will visually appear as indeterminate.
@@ -55,5 +55,5 @@ class IonCheckbox protected ()
   /* CompleteClass */
   var value: String = js.native
   
-  var z: NgZone = js.native
+  /* protected */ var z: NgZone = js.native
 }

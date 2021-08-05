@@ -24,8 +24,7 @@ trait Actions extends StObject {
 }
 object Actions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     actions: js.Array[js.Any],
     events: js.Array[js.Any],
     failureNotes: String,
@@ -38,49 +37,34 @@ object Actions {
     __obj.asInstanceOf[Actions]
   }
   
-  @scala.inline
-  implicit class ActionsMutableBuilder[Self <: Actions] (val x: Self) extends AnyVal {
+  extension [Self <: Actions](x: Self) {
     
-    @scala.inline
-    def setActions(value: js.Array[js.Any]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
+    inline def setActions(value: js.Array[js.Any]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionsVarargs(value: js.Any*): Self = StObject.set(x, "actions", js.Array(value :_*))
+    inline def setActionsVarargs(value: js.Any*): Self = StObject.set(x, "actions", js.Array(value :_*))
     
-    @scala.inline
-    def setEvents(value: js.Array[js.Any]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: js.Array[js.Any]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsVarargs(value: js.Any*): Self = StObject.set(x, "events", js.Array(value :_*))
+    inline def setEventsVarargs(value: js.Any*): Self = StObject.set(x, "events", js.Array(value :_*))
     
-    @scala.inline
-    def setFailureNotes(value: String): Self = StObject.set(x, "failureNotes", value.asInstanceOf[js.Any])
+    inline def setFailureNotes(value: String): Self = StObject.set(x, "failureNotes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFailureReason(value: String): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
+    inline def setFailureReason(value: String): Self = StObject.set(x, "failureReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstLocation(value: js.Array[js.Any]): Self = StObject.set(x, "firstLocation", value.asInstanceOf[js.Any])
+    inline def setFirstLocation(value: js.Array[js.Any]): Self = StObject.set(x, "firstLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirstLocationVarargs(value: js.Any*): Self = StObject.set(x, "firstLocation", js.Array(value :_*))
+    inline def setFirstLocationVarargs(value: js.Any*): Self = StObject.set(x, "firstLocation", js.Array(value :_*))
     
-    @scala.inline
-    def setLastLocation(value: js.Array[js.Any]): Self = StObject.set(x, "lastLocation", value.asInstanceOf[js.Any])
+    inline def setLastLocation(value: js.Array[js.Any]): Self = StObject.set(x, "lastLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastLocationVarargs(value: js.Any*): Self = StObject.set(x, "lastLocation", js.Array(value :_*))
+    inline def setLastLocationVarargs(value: js.Any*): Self = StObject.set(x, "lastLocation", js.Array(value :_*))
     
-    @scala.inline
-    def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Double): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeNull: Self = StObject.set(x, "time", null)
+    inline def setTimeNull: Self = StObject.set(x, "time", null)
     
-    @scala.inline
-    def setUnavailableAttachments(value: js.Array[js.Any]): Self = StObject.set(x, "unavailableAttachments", value.asInstanceOf[js.Any])
+    inline def setUnavailableAttachments(value: js.Array[js.Any]): Self = StObject.set(x, "unavailableAttachments", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnavailableAttachmentsVarargs(value: js.Any*): Self = StObject.set(x, "unavailableAttachments", js.Array(value :_*))
+    inline def setUnavailableAttachmentsVarargs(value: js.Any*): Self = StObject.set(x, "unavailableAttachments", js.Array(value :_*))
   }
 }

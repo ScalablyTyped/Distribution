@@ -23,31 +23,23 @@ trait SpotPlacement extends StObject {
 }
 object SpotPlacement {
   
-  @scala.inline
-  def apply(): SpotPlacement = {
+  inline def apply(): SpotPlacement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpotPlacement]
   }
   
-  @scala.inline
-  implicit class SpotPlacementMutableBuilder[Self <: SpotPlacement] (val x: Self) extends AnyVal {
+  extension [Self <: SpotPlacement](x: Self) {
     
-    @scala.inline
-    def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
+    inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
+    inline def setAvailabilityZoneUndefined: Self = StObject.set(x, "AvailabilityZone", js.undefined)
     
-    @scala.inline
-    def setGroupName(value: String): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
+    inline def setGroupName(value: String): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
+    inline def setGroupNameUndefined: Self = StObject.set(x, "GroupName", js.undefined)
     
-    @scala.inline
-    def setTenancy(value: Tenancy): Self = StObject.set(x, "Tenancy", value.asInstanceOf[js.Any])
+    inline def setTenancy(value: Tenancy): Self = StObject.set(x, "Tenancy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTenancyUndefined: Self = StObject.set(x, "Tenancy", js.undefined)
+    inline def setTenancyUndefined: Self = StObject.set(x, "Tenancy", js.undefined)
   }
 }

@@ -12,17 +12,14 @@ object storiesInsightsFeedResponseMod {
   }
   object StoriesInsightsFeedResponseBusinessManager {
     
-    @scala.inline
-    def apply(stories_unit: StoriesInsightsFeedResponseStoriesUnit): StoriesInsightsFeedResponseBusinessManager = {
+    inline def apply(stories_unit: StoriesInsightsFeedResponseStoriesUnit): StoriesInsightsFeedResponseBusinessManager = {
       val __obj = js.Dynamic.literal(stories_unit = stories_unit.asInstanceOf[js.Any])
       __obj.asInstanceOf[StoriesInsightsFeedResponseBusinessManager]
     }
     
-    @scala.inline
-    implicit class StoriesInsightsFeedResponseBusinessManagerMutableBuilder[Self <: StoriesInsightsFeedResponseBusinessManager] (val x: Self) extends AnyVal {
+    extension [Self <: StoriesInsightsFeedResponseBusinessManager](x: Self) {
       
-      @scala.inline
-      def setStories_unit(value: StoriesInsightsFeedResponseStoriesUnit): Self = StObject.set(x, "stories_unit", value.asInstanceOf[js.Any])
+      inline def setStories_unit(value: StoriesInsightsFeedResponseStoriesUnit): Self = StObject.set(x, "stories_unit", value.asInstanceOf[js.Any])
     }
   }
   
@@ -32,17 +29,14 @@ object storiesInsightsFeedResponseMod {
   }
   object StoriesInsightsFeedResponseData {
     
-    @scala.inline
-    def apply(user: StoriesInsightsFeedResponseUser): StoriesInsightsFeedResponseData = {
+    inline def apply(user: StoriesInsightsFeedResponseUser): StoriesInsightsFeedResponseData = {
       val __obj = js.Dynamic.literal(user = user.asInstanceOf[js.Any])
       __obj.asInstanceOf[StoriesInsightsFeedResponseData]
     }
     
-    @scala.inline
-    implicit class StoriesInsightsFeedResponseDataMutableBuilder[Self <: StoriesInsightsFeedResponseData] (val x: Self) extends AnyVal {
+    extension [Self <: StoriesInsightsFeedResponseData](x: Self) {
       
-      @scala.inline
-      def setUser(value: StoriesInsightsFeedResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      inline def setUser(value: StoriesInsightsFeedResponseUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
   }
   
@@ -54,20 +48,16 @@ object storiesInsightsFeedResponseMod {
   }
   object StoriesInsightsFeedResponseEdgesItem {
     
-    @scala.inline
-    def apply(cursor: Null, node: StoriesInsightsFeedResponseNode): StoriesInsightsFeedResponseEdgesItem = {
+    inline def apply(cursor: Null, node: StoriesInsightsFeedResponseNode): StoriesInsightsFeedResponseEdgesItem = {
       val __obj = js.Dynamic.literal(cursor = cursor.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
       __obj.asInstanceOf[StoriesInsightsFeedResponseEdgesItem]
     }
     
-    @scala.inline
-    implicit class StoriesInsightsFeedResponseEdgesItemMutableBuilder[Self <: StoriesInsightsFeedResponseEdgesItem] (val x: Self) extends AnyVal {
+    extension [Self <: StoriesInsightsFeedResponseEdgesItem](x: Self) {
       
-      @scala.inline
-      def setCursor(value: Null): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+      inline def setCursor(value: Null): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: StoriesInsightsFeedResponseNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: StoriesInsightsFeedResponseNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }
   }
   
@@ -79,20 +69,16 @@ object storiesInsightsFeedResponseMod {
   }
   object StoriesInsightsFeedResponseInlineInsightsNode {
     
-    @scala.inline
-    def apply(metrics: Null, state: String): StoriesInsightsFeedResponseInlineInsightsNode = {
+    inline def apply(metrics: Null, state: String): StoriesInsightsFeedResponseInlineInsightsNode = {
       val __obj = js.Dynamic.literal(metrics = metrics.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
       __obj.asInstanceOf[StoriesInsightsFeedResponseInlineInsightsNode]
     }
     
-    @scala.inline
-    implicit class StoriesInsightsFeedResponseInlineInsightsNodeMutableBuilder[Self <: StoriesInsightsFeedResponseInlineInsightsNode] (val x: Self) extends AnyVal {
+    extension [Self <: StoriesInsightsFeedResponseInlineInsightsNode](x: Self) {
       
-      @scala.inline
-      def setMetrics(value: Null): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+      inline def setMetrics(value: Null): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+      inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }
   }
   
@@ -124,8 +110,7 @@ object storiesInsightsFeedResponseMod {
   }
   object StoriesInsightsFeedResponseNode {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       __typename: String,
       display_url: String,
       exits_count: Double,
@@ -143,44 +128,31 @@ object storiesInsightsFeedResponseMod {
       __obj.asInstanceOf[StoriesInsightsFeedResponseNode]
     }
     
-    @scala.inline
-    implicit class StoriesInsightsFeedResponseNodeMutableBuilder[Self <: StoriesInsightsFeedResponseNode] (val x: Self) extends AnyVal {
+    extension [Self <: StoriesInsightsFeedResponseNode](x: Self) {
       
-      @scala.inline
-      def setDisplay_url(value: String): Self = StObject.set(x, "display_url", value.asInstanceOf[js.Any])
+      inline def setDisplay_url(value: String): Self = StObject.set(x, "display_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExits_count(value: Double): Self = StObject.set(x, "exits_count", value.asInstanceOf[js.Any])
+      inline def setExits_count(value: Double): Self = StObject.set(x, "exits_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImpression_count(value: Double): Self = StObject.set(x, "impression_count", value.asInstanceOf[js.Any])
+      inline def setImpression_count(value: Double): Self = StObject.set(x, "impression_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInline_insights_node(value: StoriesInsightsFeedResponseInlineInsightsNode): Self = StObject.set(x, "inline_insights_node", value.asInstanceOf[js.Any])
+      inline def setInline_insights_node(value: StoriesInsightsFeedResponseInlineInsightsNode): Self = StObject.set(x, "inline_insights_node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInstagram_media_id(value: String): Self = StObject.set(x, "instagram_media_id", value.asInstanceOf[js.Any])
+      inline def setInstagram_media_id(value: String): Self = StObject.set(x, "instagram_media_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReach_count(value: Double): Self = StObject.set(x, "reach_count", value.asInstanceOf[js.Any])
+      inline def setReach_count(value: Double): Self = StObject.set(x, "reach_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplies_count(value: Double): Self = StObject.set(x, "replies_count", value.asInstanceOf[js.Any])
+      inline def setReplies_count(value: Double): Self = StObject.set(x, "replies_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStory_swipe_away_count(value: Double): Self = StObject.set(x, "story_swipe_away_count", value.asInstanceOf[js.Any])
+      inline def setStory_swipe_away_count(value: Double): Self = StObject.set(x, "story_swipe_away_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaps_back_count(value: Double): Self = StObject.set(x, "taps_back_count", value.asInstanceOf[js.Any])
+      inline def setTaps_back_count(value: Double): Self = StObject.set(x, "taps_back_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTaps_forward_count(value: Double): Self = StObject.set(x, "taps_forward_count", value.asInstanceOf[js.Any])
+      inline def setTaps_forward_count(value: Double): Self = StObject.set(x, "taps_forward_count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set__typename(value: String): Self = StObject.set(x, "__typename", value.asInstanceOf[js.Any])
+      inline def set__typename(value: String): Self = StObject.set(x, "__typename", value.asInstanceOf[js.Any])
     }
   }
   
@@ -192,20 +164,16 @@ object storiesInsightsFeedResponseMod {
   }
   object StoriesInsightsFeedResponsePageInfo {
     
-    @scala.inline
-    def apply(end_cursor: String, has_next_page: Boolean): StoriesInsightsFeedResponsePageInfo = {
+    inline def apply(end_cursor: String, has_next_page: Boolean): StoriesInsightsFeedResponsePageInfo = {
       val __obj = js.Dynamic.literal(end_cursor = end_cursor.asInstanceOf[js.Any], has_next_page = has_next_page.asInstanceOf[js.Any])
       __obj.asInstanceOf[StoriesInsightsFeedResponsePageInfo]
     }
     
-    @scala.inline
-    implicit class StoriesInsightsFeedResponsePageInfoMutableBuilder[Self <: StoriesInsightsFeedResponsePageInfo] (val x: Self) extends AnyVal {
+    extension [Self <: StoriesInsightsFeedResponsePageInfo](x: Self) {
       
-      @scala.inline
-      def setEnd_cursor(value: String): Self = StObject.set(x, "end_cursor", value.asInstanceOf[js.Any])
+      inline def setEnd_cursor(value: String): Self = StObject.set(x, "end_cursor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHas_next_page(value: Boolean): Self = StObject.set(x, "has_next_page", value.asInstanceOf[js.Any])
+      inline def setHas_next_page(value: Boolean): Self = StObject.set(x, "has_next_page", value.asInstanceOf[js.Any])
     }
   }
   
@@ -215,17 +183,14 @@ object storiesInsightsFeedResponseMod {
   }
   object StoriesInsightsFeedResponseRootObject {
     
-    @scala.inline
-    def apply(data: StoriesInsightsFeedResponseData): StoriesInsightsFeedResponseRootObject = {
+    inline def apply(data: StoriesInsightsFeedResponseData): StoriesInsightsFeedResponseRootObject = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
       __obj.asInstanceOf[StoriesInsightsFeedResponseRootObject]
     }
     
-    @scala.inline
-    implicit class StoriesInsightsFeedResponseRootObjectMutableBuilder[Self <: StoriesInsightsFeedResponseRootObject] (val x: Self) extends AnyVal {
+    extension [Self <: StoriesInsightsFeedResponseRootObject](x: Self) {
       
-      @scala.inline
-      def setData(value: StoriesInsightsFeedResponseData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      inline def setData(value: StoriesInsightsFeedResponseData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
   }
   
@@ -237,8 +202,7 @@ object storiesInsightsFeedResponseMod {
   }
   object StoriesInsightsFeedResponseStories {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       edges: js.Array[StoriesInsightsFeedResponseEdgesItem],
       page_info: StoriesInsightsFeedResponsePageInfo
     ): StoriesInsightsFeedResponseStories = {
@@ -246,17 +210,13 @@ object storiesInsightsFeedResponseMod {
       __obj.asInstanceOf[StoriesInsightsFeedResponseStories]
     }
     
-    @scala.inline
-    implicit class StoriesInsightsFeedResponseStoriesMutableBuilder[Self <: StoriesInsightsFeedResponseStories] (val x: Self) extends AnyVal {
+    extension [Self <: StoriesInsightsFeedResponseStories](x: Self) {
       
-      @scala.inline
-      def setEdges(value: js.Array[StoriesInsightsFeedResponseEdgesItem]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
+      inline def setEdges(value: js.Array[StoriesInsightsFeedResponseEdgesItem]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEdgesVarargs(value: StoriesInsightsFeedResponseEdgesItem*): Self = StObject.set(x, "edges", js.Array(value :_*))
+      inline def setEdgesVarargs(value: StoriesInsightsFeedResponseEdgesItem*): Self = StObject.set(x, "edges", js.Array(value :_*))
       
-      @scala.inline
-      def setPage_info(value: StoriesInsightsFeedResponsePageInfo): Self = StObject.set(x, "page_info", value.asInstanceOf[js.Any])
+      inline def setPage_info(value: StoriesInsightsFeedResponsePageInfo): Self = StObject.set(x, "page_info", value.asInstanceOf[js.Any])
     }
   }
   
@@ -266,17 +226,14 @@ object storiesInsightsFeedResponseMod {
   }
   object StoriesInsightsFeedResponseStoriesUnit {
     
-    @scala.inline
-    def apply(stories: StoriesInsightsFeedResponseStories): StoriesInsightsFeedResponseStoriesUnit = {
+    inline def apply(stories: StoriesInsightsFeedResponseStories): StoriesInsightsFeedResponseStoriesUnit = {
       val __obj = js.Dynamic.literal(stories = stories.asInstanceOf[js.Any])
       __obj.asInstanceOf[StoriesInsightsFeedResponseStoriesUnit]
     }
     
-    @scala.inline
-    implicit class StoriesInsightsFeedResponseStoriesUnitMutableBuilder[Self <: StoriesInsightsFeedResponseStoriesUnit] (val x: Self) extends AnyVal {
+    extension [Self <: StoriesInsightsFeedResponseStoriesUnit](x: Self) {
       
-      @scala.inline
-      def setStories(value: StoriesInsightsFeedResponseStories): Self = StObject.set(x, "stories", value.asInstanceOf[js.Any])
+      inline def setStories(value: StoriesInsightsFeedResponseStories): Self = StObject.set(x, "stories", value.asInstanceOf[js.Any])
     }
   }
   
@@ -288,20 +245,16 @@ object storiesInsightsFeedResponseMod {
   }
   object StoriesInsightsFeedResponseUser {
     
-    @scala.inline
-    def apply(business_manager: StoriesInsightsFeedResponseBusinessManager, id: String): StoriesInsightsFeedResponseUser = {
+    inline def apply(business_manager: StoriesInsightsFeedResponseBusinessManager, id: String): StoriesInsightsFeedResponseUser = {
       val __obj = js.Dynamic.literal(business_manager = business_manager.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[StoriesInsightsFeedResponseUser]
     }
     
-    @scala.inline
-    implicit class StoriesInsightsFeedResponseUserMutableBuilder[Self <: StoriesInsightsFeedResponseUser] (val x: Self) extends AnyVal {
+    extension [Self <: StoriesInsightsFeedResponseUser](x: Self) {
       
-      @scala.inline
-      def setBusiness_manager(value: StoriesInsightsFeedResponseBusinessManager): Self = StObject.set(x, "business_manager", value.asInstanceOf[js.Any])
+      inline def setBusiness_manager(value: StoriesInsightsFeedResponseBusinessManager): Self = StObject.set(x, "business_manager", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -37,47 +37,35 @@ trait BuildBazelRemoteExecutionV2ExecuteResponse extends StObject {
 }
 object BuildBazelRemoteExecutionV2ExecuteResponse {
   
-  @scala.inline
-  def apply(): BuildBazelRemoteExecutionV2ExecuteResponse = {
+  inline def apply(): BuildBazelRemoteExecutionV2ExecuteResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BuildBazelRemoteExecutionV2ExecuteResponse]
   }
   
-  @scala.inline
-  implicit class BuildBazelRemoteExecutionV2ExecuteResponseMutableBuilder[Self <: BuildBazelRemoteExecutionV2ExecuteResponse] (val x: Self) extends AnyVal {
+  extension [Self <: BuildBazelRemoteExecutionV2ExecuteResponse](x: Self) {
     
-    @scala.inline
-    def setCachedResult(value: Boolean): Self = StObject.set(x, "cachedResult", value.asInstanceOf[js.Any])
+    inline def setCachedResult(value: Boolean): Self = StObject.set(x, "cachedResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCachedResultUndefined: Self = StObject.set(x, "cachedResult", js.undefined)
+    inline def setCachedResultUndefined: Self = StObject.set(x, "cachedResult", js.undefined)
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setResult(value: BuildBazelRemoteExecutionV2ActionResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: BuildBazelRemoteExecutionV2ActionResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
-    @scala.inline
-    def setServerLogs(
+    inline def setServerLogs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.remotebuildexecution.gapi.client.remotebuildexecution.BuildBazelRemoteExecutionV2LogFile}
       */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.BuildBazelRemoteExecutionV2ExecuteResponse & TopLevel[js.Any]
     ): Self = StObject.set(x, "serverLogs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerLogsUndefined: Self = StObject.set(x, "serverLogs", js.undefined)
+    inline def setServerLogsUndefined: Self = StObject.set(x, "serverLogs", js.undefined)
     
-    @scala.inline
-    def setStatus(value: GoogleRpcStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: GoogleRpcStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

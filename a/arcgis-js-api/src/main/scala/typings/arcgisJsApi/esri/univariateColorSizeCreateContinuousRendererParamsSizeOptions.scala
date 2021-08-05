@@ -26,8 +26,7 @@ trait univariateColorSizeCreateContinuousRendererParamsSizeOptions
 }
 object univariateColorSizeCreateContinuousRendererParamsSizeOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -36,19 +35,14 @@ object univariateColorSizeCreateContinuousRendererParamsSizeOptions {
     __obj.asInstanceOf[univariateColorSizeCreateContinuousRendererParamsSizeOptions]
   }
   
-  @scala.inline
-  implicit class univariateColorSizeCreateContinuousRendererParamsSizeOptionsMutableBuilder[Self <: univariateColorSizeCreateContinuousRendererParamsSizeOptions] (val x: Self) extends AnyVal {
+  extension [Self <: univariateColorSizeCreateContinuousRendererParamsSizeOptions](x: Self) {
     
-    @scala.inline
-    def setLegendOptions(value: univariateColorSizeCreateContinuousRendererParamsSizeOptionsLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
+    inline def setLegendOptions(value: univariateColorSizeCreateContinuousRendererParamsSizeOptionsLegendOptions): Self = StObject.set(x, "legendOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegendOptionsUndefined: Self = StObject.set(x, "legendOptions", js.undefined)
+    inline def setLegendOptionsUndefined: Self = StObject.set(x, "legendOptions", js.undefined)
     
-    @scala.inline
-    def setSizeScheme(value: SizeScheme): Self = StObject.set(x, "sizeScheme", value.asInstanceOf[js.Any])
+    inline def setSizeScheme(value: SizeScheme): Self = StObject.set(x, "sizeScheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeSchemeUndefined: Self = StObject.set(x, "sizeScheme", js.undefined)
+    inline def setSizeSchemeUndefined: Self = StObject.set(x, "sizeScheme", js.undefined)
   }
 }

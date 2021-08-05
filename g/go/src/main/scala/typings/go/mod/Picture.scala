@@ -44,8 +44,6 @@ object Picture {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def clearCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCache")().asInstanceOf[Unit]
-  @scala.inline
-  def clearCache(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCache")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def clearCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCache")().asInstanceOf[Unit]
+  inline def clearCache(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCache")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

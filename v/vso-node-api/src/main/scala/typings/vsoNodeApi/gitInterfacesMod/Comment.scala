@@ -65,8 +65,7 @@ trait Comment extends StObject {
 }
 object Comment {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _links: js.Any,
     author: IdentityRef,
     commentType: CommentType,
@@ -83,43 +82,30 @@ object Comment {
     __obj.asInstanceOf[Comment]
   }
   
-  @scala.inline
-  implicit class CommentMutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
+  extension [Self <: Comment](x: Self) {
     
-    @scala.inline
-    def setAuthor(value: IdentityRef): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: IdentityRef): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentType(value: CommentType): Self = StObject.set(x, "commentType", value.asInstanceOf[js.Any])
+    inline def setCommentType(value: CommentType): Self = StObject.set(x, "commentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsDeleted(value: Boolean): Self = StObject.set(x, "isDeleted", value.asInstanceOf[js.Any])
+    inline def setIsDeleted(value: Boolean): Self = StObject.set(x, "isDeleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastContentUpdatedDate(value: Date): Self = StObject.set(x, "lastContentUpdatedDate", value.asInstanceOf[js.Any])
+    inline def setLastContentUpdatedDate(value: Date): Self = StObject.set(x, "lastContentUpdatedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedDate(value: Date): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedDate(value: Date): Self = StObject.set(x, "lastUpdatedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentCommentId(value: Double): Self = StObject.set(x, "parentCommentId", value.asInstanceOf[js.Any])
+    inline def setParentCommentId(value: Double): Self = StObject.set(x, "parentCommentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublishedDate(value: Date): Self = StObject.set(x, "publishedDate", value.asInstanceOf[js.Any])
+    inline def setPublishedDate(value: Date): Self = StObject.set(x, "publishedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsersLiked(value: js.Array[IdentityRef]): Self = StObject.set(x, "usersLiked", value.asInstanceOf[js.Any])
+    inline def setUsersLiked(value: js.Array[IdentityRef]): Self = StObject.set(x, "usersLiked", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUsersLikedVarargs(value: IdentityRef*): Self = StObject.set(x, "usersLiked", js.Array(value :_*))
+    inline def setUsersLikedVarargs(value: IdentityRef*): Self = StObject.set(x, "usersLiked", js.Array(value :_*))
     
-    @scala.inline
-    def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
+    inline def set_links(value: js.Any): Self = StObject.set(x, "_links", value.asInstanceOf[js.Any])
   }
 }

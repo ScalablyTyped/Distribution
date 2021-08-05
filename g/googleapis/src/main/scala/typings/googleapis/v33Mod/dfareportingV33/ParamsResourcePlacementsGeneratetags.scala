@@ -40,49 +40,35 @@ trait ParamsResourcePlacementsGeneratetags
 }
 object ParamsResourcePlacementsGeneratetags {
   
-  @scala.inline
-  def apply(): ParamsResourcePlacementsGeneratetags = {
+  inline def apply(): ParamsResourcePlacementsGeneratetags = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourcePlacementsGeneratetags]
   }
   
-  @scala.inline
-  implicit class ParamsResourcePlacementsGeneratetagsMutableBuilder[Self <: ParamsResourcePlacementsGeneratetags] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourcePlacementsGeneratetags](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setCampaignId(value: String): Self = StObject.set(x, "campaignId", value.asInstanceOf[js.Any])
+    inline def setCampaignId(value: String): Self = StObject.set(x, "campaignId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCampaignIdUndefined: Self = StObject.set(x, "campaignId", js.undefined)
+    inline def setCampaignIdUndefined: Self = StObject.set(x, "campaignId", js.undefined)
     
-    @scala.inline
-    def setPlacementIds(value: js.Array[String]): Self = StObject.set(x, "placementIds", value.asInstanceOf[js.Any])
+    inline def setPlacementIds(value: js.Array[String]): Self = StObject.set(x, "placementIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacementIdsUndefined: Self = StObject.set(x, "placementIds", js.undefined)
+    inline def setPlacementIdsUndefined: Self = StObject.set(x, "placementIds", js.undefined)
     
-    @scala.inline
-    def setPlacementIdsVarargs(value: String*): Self = StObject.set(x, "placementIds", js.Array(value :_*))
+    inline def setPlacementIdsVarargs(value: String*): Self = StObject.set(x, "placementIds", js.Array(value :_*))
     
-    @scala.inline
-    def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
+    inline def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
+    inline def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
     
-    @scala.inline
-    def setTagFormats(value: js.Array[String]): Self = StObject.set(x, "tagFormats", value.asInstanceOf[js.Any])
+    inline def setTagFormats(value: js.Array[String]): Self = StObject.set(x, "tagFormats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagFormatsUndefined: Self = StObject.set(x, "tagFormats", js.undefined)
+    inline def setTagFormatsUndefined: Self = StObject.set(x, "tagFormats", js.undefined)
     
-    @scala.inline
-    def setTagFormatsVarargs(value: String*): Self = StObject.set(x, "tagFormats", js.Array(value :_*))
+    inline def setTagFormatsVarargs(value: String*): Self = StObject.set(x, "tagFormats", js.Array(value :_*))
   }
 }

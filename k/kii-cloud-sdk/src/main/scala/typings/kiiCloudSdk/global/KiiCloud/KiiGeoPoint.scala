@@ -45,6 +45,5 @@ object KiiGeoPoint {
     *         var point = KiiGeoPoint.geoPoint(35.07, 139.02);
     */
   /* static member */
-  @scala.inline
-  def geoPoint(latitude: Double, longitude: Double): typings.kiiCloudSdk.KiiCloud.KiiGeoPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPoint")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiGeoPoint]
+  inline def geoPoint(latitude: Double, longitude: Double): typings.kiiCloudSdk.KiiCloud.KiiGeoPoint = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPoint")(latitude.asInstanceOf[js.Any], longitude.asInstanceOf[js.Any])).asInstanceOf[typings.kiiCloudSdk.KiiCloud.KiiGeoPoint]
 }

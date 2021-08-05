@@ -13,16 +13,13 @@ trait DescribeHarvestJobRequest extends StObject {
 }
 object DescribeHarvestJobRequest {
   
-  @scala.inline
-  def apply(Id: string): DescribeHarvestJobRequest = {
+  inline def apply(Id: string): DescribeHarvestJobRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeHarvestJobRequest]
   }
   
-  @scala.inline
-  implicit class DescribeHarvestJobRequestMutableBuilder[Self <: DescribeHarvestJobRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeHarvestJobRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: string): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }
 }

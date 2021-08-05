@@ -10,9 +10,7 @@ object maxfwd {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isMaxfwdLt(limit: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("is_maxfwd_lt")(limit.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def isMaxfwdLt(limit: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("is_maxfwd_lt")(limit.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def processMaxfwd(limit: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("process_maxfwd")(limit.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def processMaxfwd(limit: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("process_maxfwd")(limit.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

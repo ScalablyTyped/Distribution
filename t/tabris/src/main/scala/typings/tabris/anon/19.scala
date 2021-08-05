@@ -13,22 +13,17 @@ trait `19`[WidgetType /* <: Widget */] extends StObject {
 }
 object `19` {
   
-  @scala.inline
-  def apply[WidgetType /* <: Widget */](): `19`[WidgetType] = {
+  inline def apply[WidgetType /* <: Widget */](): `19`[WidgetType] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`19`[WidgetType]]
   }
   
-  @scala.inline
-  implicit class `19MutableBuilder`[Self <: `19`[?], WidgetType /* <: Widget */] (val x: Self & `19`[WidgetType]) extends AnyVal {
+  extension [Self <: `19`[?], WidgetType /* <: Widget */](x: Self & `19`[WidgetType]) {
     
-    @scala.inline
-    def setChildren(value: JSXChildren[WidgetType]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: JSXChildren[WidgetType]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setChildrenVarargs(value: (WidgetType | WidgetCollection[WidgetType])*): Self = StObject.set(x, "children", js.Array(value :_*))
+    inline def setChildrenVarargs(value: (WidgetType | WidgetCollection[WidgetType])*): Self = StObject.set(x, "children", js.Array(value :_*))
   }
 }

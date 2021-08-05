@@ -11,6 +11,5 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def netTicksToDate(ticks: Double, timezoneOffsetHours: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("netTicksToDate")(ticks.asInstanceOf[js.Any], timezoneOffsetHours.asInstanceOf[js.Any])).asInstanceOf[Date]
+  inline def netTicksToDate(ticks: Double, timezoneOffsetHours: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("netTicksToDate")(ticks.asInstanceOf[js.Any], timezoneOffsetHours.asInstanceOf[js.Any])).asInstanceOf[Date]
 }

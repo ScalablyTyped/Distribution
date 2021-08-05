@@ -15,19 +15,15 @@ trait UpdateVoiceChannelRequest extends StObject {
 }
 object UpdateVoiceChannelRequest {
   
-  @scala.inline
-  def apply(ApplicationId: string, VoiceChannelRequest: VoiceChannelRequest): UpdateVoiceChannelRequest = {
+  inline def apply(ApplicationId: string, VoiceChannelRequest: VoiceChannelRequest): UpdateVoiceChannelRequest = {
     val __obj = js.Dynamic.literal(ApplicationId = ApplicationId.asInstanceOf[js.Any], VoiceChannelRequest = VoiceChannelRequest.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateVoiceChannelRequest]
   }
   
-  @scala.inline
-  implicit class UpdateVoiceChannelRequestMutableBuilder[Self <: UpdateVoiceChannelRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateVoiceChannelRequest](x: Self) {
     
-    @scala.inline
-    def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
+    inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoiceChannelRequest(value: VoiceChannelRequest): Self = StObject.set(x, "VoiceChannelRequest", value.asInstanceOf[js.Any])
+    inline def setVoiceChannelRequest(value: VoiceChannelRequest): Self = StObject.set(x, "VoiceChannelRequest", value.asInstanceOf[js.Any])
   }
 }

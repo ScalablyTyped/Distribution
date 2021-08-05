@@ -14,8 +14,7 @@ trait ListTagsForResourceInput extends StObject {
 }
 object ListTagsForResourceInput {
   
-  @scala.inline
-  def apply(): ListTagsForResourceInput = {
+  inline def apply(): ListTagsForResourceInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTagsForResourceInput]
   }
@@ -24,16 +23,12 @@ object ListTagsForResourceInput {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def filterSensitiveLog(obj: ListTagsForResourceInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def filterSensitiveLog(obj: ListTagsForResourceInput): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  implicit class ListTagsForResourceInputMutableBuilder[Self <: ListTagsForResourceInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListTagsForResourceInput](x: Self) {
     
-    @scala.inline
-    def setResourceArn(value: String): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
+    inline def setResourceArn(value: String): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceArnUndefined: Self = StObject.set(x, "ResourceArn", js.undefined)
+    inline def setResourceArnUndefined: Self = StObject.set(x, "ResourceArn", js.undefined)
   }
 }

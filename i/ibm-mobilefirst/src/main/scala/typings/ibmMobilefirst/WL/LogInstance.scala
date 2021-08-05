@@ -24,8 +24,7 @@ trait LogInstance extends StObject {
 }
 object LogInstance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     debug: String => Unit,
     error: String => Unit,
     fatal: String => Unit,
@@ -37,25 +36,18 @@ object LogInstance {
     __obj.asInstanceOf[LogInstance]
   }
   
-  @scala.inline
-  implicit class LogInstanceMutableBuilder[Self <: LogInstance] (val x: Self) extends AnyVal {
+  extension [Self <: LogInstance](x: Self) {
     
-    @scala.inline
-    def setDebug(value: String => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+    inline def setDebug(value: String => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setError(value: String => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+    inline def setError(value: String => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFatal(value: String => Unit): Self = StObject.set(x, "fatal", js.Any.fromFunction1(value))
+    inline def setFatal(value: String => Unit): Self = StObject.set(x, "fatal", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInfo(value: String => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
+    inline def setInfo(value: String => Unit): Self = StObject.set(x, "info", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTrace(value: String => Unit): Self = StObject.set(x, "trace", js.Any.fromFunction1(value))
+    inline def setTrace(value: String => Unit): Self = StObject.set(x, "trace", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWarn(value: String => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
+    inline def setWarn(value: String => Unit): Self = StObject.set(x, "warn", js.Any.fromFunction1(value))
   }
 }

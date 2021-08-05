@@ -98,102 +98,71 @@ trait NavigatorOptions extends StObject {
 }
 object NavigatorOptions {
   
-  @scala.inline
-  def apply(): NavigatorOptions = {
+  inline def apply(): NavigatorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigatorOptions]
   }
   
-  @scala.inline
-  implicit class NavigatorOptionsMutableBuilder[Self <: NavigatorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NavigatorOptions](x: Self) {
     
-    @scala.inline
-    def setAdaptToUpdatedData(value: Boolean): Self = StObject.set(x, "adaptToUpdatedData", value.asInstanceOf[js.Any])
+    inline def setAdaptToUpdatedData(value: Boolean): Self = StObject.set(x, "adaptToUpdatedData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdaptToUpdatedDataUndefined: Self = StObject.set(x, "adaptToUpdatedData", js.undefined)
+    inline def setAdaptToUpdatedDataUndefined: Self = StObject.set(x, "adaptToUpdatedData", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setHandles(value: NavigatorHandlesOptions): Self = StObject.set(x, "handles", value.asInstanceOf[js.Any])
+    inline def setHandles(value: NavigatorHandlesOptions): Self = StObject.set(x, "handles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandlesUndefined: Self = StObject.set(x, "handles", js.undefined)
+    inline def setHandlesUndefined: Self = StObject.set(x, "handles", js.undefined)
     
-    @scala.inline
-    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
+    inline def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
-    @scala.inline
-    def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    @scala.inline
-    def setMaskFill(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "maskFill", value.asInstanceOf[js.Any])
+    inline def setMaskFill(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "maskFill", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskFillUndefined: Self = StObject.set(x, "maskFill", js.undefined)
+    inline def setMaskFillUndefined: Self = StObject.set(x, "maskFill", js.undefined)
     
-    @scala.inline
-    def setMaskInside(value: Boolean): Self = StObject.set(x, "maskInside", value.asInstanceOf[js.Any])
+    inline def setMaskInside(value: Boolean): Self = StObject.set(x, "maskInside", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaskInsideUndefined: Self = StObject.set(x, "maskInside", js.undefined)
+    inline def setMaskInsideUndefined: Self = StObject.set(x, "maskInside", js.undefined)
     
-    @scala.inline
-    def setOpposite(value: Boolean): Self = StObject.set(x, "opposite", value.asInstanceOf[js.Any])
+    inline def setOpposite(value: Boolean): Self = StObject.set(x, "opposite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOppositeUndefined: Self = StObject.set(x, "opposite", js.undefined)
+    inline def setOppositeUndefined: Self = StObject.set(x, "opposite", js.undefined)
     
-    @scala.inline
-    def setOutlineColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
+    inline def setOutlineColor(value: ColorString | GradientColorObject | PatternObject): Self = StObject.set(x, "outlineColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlineColorUndefined: Self = StObject.set(x, "outlineColor", js.undefined)
+    inline def setOutlineColorUndefined: Self = StObject.set(x, "outlineColor", js.undefined)
     
-    @scala.inline
-    def setOutlineWidth(value: Double): Self = StObject.set(x, "outlineWidth", value.asInstanceOf[js.Any])
+    inline def setOutlineWidth(value: Double): Self = StObject.set(x, "outlineWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlineWidthUndefined: Self = StObject.set(x, "outlineWidth", js.undefined)
+    inline def setOutlineWidthUndefined: Self = StObject.set(x, "outlineWidth", js.undefined)
     
-    @scala.inline
-    def setSeries(
+    inline def setSeries(
       value: NavigatorSeriesOptions | SeriesOptionsType | (js.Array[NavigatorSeriesOptions | SeriesOptionsType])
     ): Self = StObject.set(x, "series", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
+    inline def setSeriesUndefined: Self = StObject.set(x, "series", js.undefined)
     
-    @scala.inline
-    def setSeriesVarargs(value: (NavigatorSeriesOptions | SeriesOptionsType)*): Self = StObject.set(x, "series", js.Array(value :_*))
+    inline def setSeriesVarargs(value: (NavigatorSeriesOptions | SeriesOptionsType)*): Self = StObject.set(x, "series", js.Array(value :_*))
     
-    @scala.inline
-    def setXAxis(value: NavigatorXAxisOptions | js.Array[NavigatorXAxisOptions]): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
+    inline def setXAxis(value: NavigatorXAxisOptions | js.Array[NavigatorXAxisOptions]): Self = StObject.set(x, "xAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
+    inline def setXAxisUndefined: Self = StObject.set(x, "xAxis", js.undefined)
     
-    @scala.inline
-    def setXAxisVarargs(value: NavigatorXAxisOptions*): Self = StObject.set(x, "xAxis", js.Array(value :_*))
+    inline def setXAxisVarargs(value: NavigatorXAxisOptions*): Self = StObject.set(x, "xAxis", js.Array(value :_*))
     
-    @scala.inline
-    def setYAxis(value: NavigatorYAxisOptions | js.Array[NavigatorYAxisOptions]): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
+    inline def setYAxis(value: NavigatorYAxisOptions | js.Array[NavigatorYAxisOptions]): Self = StObject.set(x, "yAxis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
+    inline def setYAxisUndefined: Self = StObject.set(x, "yAxis", js.undefined)
     
-    @scala.inline
-    def setYAxisVarargs(value: NavigatorYAxisOptions*): Self = StObject.set(x, "yAxis", js.Array(value :_*))
+    inline def setYAxisVarargs(value: NavigatorYAxisOptions*): Self = StObject.set(x, "yAxis", js.Array(value :_*))
   }
 }

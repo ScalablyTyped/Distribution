@@ -29,32 +29,24 @@ object typesEncryptionConfigMod {
   }
   object EncryptionConfig {
     
-    @scala.inline
-    def apply(): EncryptionConfig = {
+    inline def apply(): EncryptionConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EncryptionConfig]
     }
     
-    @scala.inline
-    implicit class EncryptionConfigMutableBuilder[Self <: EncryptionConfig] (val x: Self) extends AnyVal {
+    extension [Self <: EncryptionConfig](x: Self) {
       
-      @scala.inline
-      def setKeyId(value: String): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+      inline def setKeyId(value: String): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
+      inline def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
       
-      @scala.inline
-      def setStatus(value: UPDATING | ACTIVE | String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+      inline def setStatus(value: UPDATING | ACTIVE | String): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+      inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
       
-      @scala.inline
-      def setType(value: NONE | KMS | String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+      inline def setType(value: NONE | KMS | String): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     }
   }
   

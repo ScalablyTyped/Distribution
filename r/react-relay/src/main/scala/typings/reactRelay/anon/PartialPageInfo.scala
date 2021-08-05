@@ -17,43 +17,31 @@ trait PartialPageInfo extends StObject {
 }
 object PartialPageInfo {
   
-  @scala.inline
-  def apply(): PartialPageInfo = {
+  inline def apply(): PartialPageInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialPageInfo]
   }
   
-  @scala.inline
-  implicit class PartialPageInfoMutableBuilder[Self <: PartialPageInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PartialPageInfo](x: Self) {
     
-    @scala.inline
-    def setEndCursor(value: String): Self = StObject.set(x, "endCursor", value.asInstanceOf[js.Any])
+    inline def setEndCursor(value: String): Self = StObject.set(x, "endCursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndCursorNull: Self = StObject.set(x, "endCursor", null)
+    inline def setEndCursorNull: Self = StObject.set(x, "endCursor", null)
     
-    @scala.inline
-    def setEndCursorUndefined: Self = StObject.set(x, "endCursor", js.undefined)
+    inline def setEndCursorUndefined: Self = StObject.set(x, "endCursor", js.undefined)
     
-    @scala.inline
-    def setHasNextPage(value: Boolean): Self = StObject.set(x, "hasNextPage", value.asInstanceOf[js.Any])
+    inline def setHasNextPage(value: Boolean): Self = StObject.set(x, "hasNextPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasNextPageUndefined: Self = StObject.set(x, "hasNextPage", js.undefined)
+    inline def setHasNextPageUndefined: Self = StObject.set(x, "hasNextPage", js.undefined)
     
-    @scala.inline
-    def setHasPreviousPage(value: Boolean): Self = StObject.set(x, "hasPreviousPage", value.asInstanceOf[js.Any])
+    inline def setHasPreviousPage(value: Boolean): Self = StObject.set(x, "hasPreviousPage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHasPreviousPageUndefined: Self = StObject.set(x, "hasPreviousPage", js.undefined)
+    inline def setHasPreviousPageUndefined: Self = StObject.set(x, "hasPreviousPage", js.undefined)
     
-    @scala.inline
-    def setStartCursor(value: String): Self = StObject.set(x, "startCursor", value.asInstanceOf[js.Any])
+    inline def setStartCursor(value: String): Self = StObject.set(x, "startCursor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartCursorNull: Self = StObject.set(x, "startCursor", null)
+    inline def setStartCursorNull: Self = StObject.set(x, "startCursor", null)
     
-    @scala.inline
-    def setStartCursorUndefined: Self = StObject.set(x, "startCursor", js.undefined)
+    inline def setStartCursorUndefined: Self = StObject.set(x, "startCursor", js.undefined)
   }
 }

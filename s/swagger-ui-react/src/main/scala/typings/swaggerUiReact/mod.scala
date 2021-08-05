@@ -50,80 +50,56 @@ object mod {
   }
   object SwaggerUIProps {
     
-    @scala.inline
-    def apply(): SwaggerUIProps = {
+    inline def apply(): SwaggerUIProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SwaggerUIProps]
     }
     
-    @scala.inline
-    implicit class SwaggerUIPropsMutableBuilder[Self <: SwaggerUIProps] (val x: Self) extends AnyVal {
+    extension [Self <: SwaggerUIProps](x: Self) {
       
-      @scala.inline
-      def setDeepLinking(value: Boolean): Self = StObject.set(x, "deepLinking", value.asInstanceOf[js.Any])
+      inline def setDeepLinking(value: Boolean): Self = StObject.set(x, "deepLinking", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeepLinkingUndefined: Self = StObject.set(x, "deepLinking", js.undefined)
+      inline def setDeepLinkingUndefined: Self = StObject.set(x, "deepLinking", js.undefined)
       
-      @scala.inline
-      def setDefaultModelExpandDepth(value: Double): Self = StObject.set(x, "defaultModelExpandDepth", value.asInstanceOf[js.Any])
+      inline def setDefaultModelExpandDepth(value: Double): Self = StObject.set(x, "defaultModelExpandDepth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultModelExpandDepthUndefined: Self = StObject.set(x, "defaultModelExpandDepth", js.undefined)
+      inline def setDefaultModelExpandDepthUndefined: Self = StObject.set(x, "defaultModelExpandDepth", js.undefined)
       
-      @scala.inline
-      def setDocExpansion(value: list | full | none): Self = StObject.set(x, "docExpansion", value.asInstanceOf[js.Any])
+      inline def setDocExpansion(value: list | full | none): Self = StObject.set(x, "docExpansion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDocExpansionUndefined: Self = StObject.set(x, "docExpansion", js.undefined)
+      inline def setDocExpansionUndefined: Self = StObject.set(x, "docExpansion", js.undefined)
       
-      @scala.inline
-      def setOnComplete(value: /* system */ System => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
+      inline def setOnComplete(value: /* system */ System => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
+      inline def setOnCompleteUndefined: Self = StObject.set(x, "onComplete", js.undefined)
       
-      @scala.inline
-      def setPlugins(value: js.Array[Plugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      inline def setPlugins(value: js.Array[Plugin]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
+      inline def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
-      @scala.inline
-      def setPluginsVarargs(value: Plugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      inline def setPluginsVarargs(value: Plugin*): Self = StObject.set(x, "plugins", js.Array(value :_*))
       
-      @scala.inline
-      def setRequestInterceptor(value: /* req */ Request => Request | js.Promise[Request]): Self = StObject.set(x, "requestInterceptor", js.Any.fromFunction1(value))
+      inline def setRequestInterceptor(value: /* req */ Request => Request | js.Promise[Request]): Self = StObject.set(x, "requestInterceptor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRequestInterceptorUndefined: Self = StObject.set(x, "requestInterceptor", js.undefined)
+      inline def setRequestInterceptorUndefined: Self = StObject.set(x, "requestInterceptor", js.undefined)
       
-      @scala.inline
-      def setResponseInterceptor(value: /* res */ Response => Response | js.Promise[Response]): Self = StObject.set(x, "responseInterceptor", js.Any.fromFunction1(value))
+      inline def setResponseInterceptor(value: /* res */ Response => Response | js.Promise[Response]): Self = StObject.set(x, "responseInterceptor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setResponseInterceptorUndefined: Self = StObject.set(x, "responseInterceptor", js.undefined)
+      inline def setResponseInterceptorUndefined: Self = StObject.set(x, "responseInterceptor", js.undefined)
       
-      @scala.inline
-      def setSpec(value: js.Object | String): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
+      inline def setSpec(value: js.Object | String): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
+      inline def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
       
-      @scala.inline
-      def setSupportedSubmitMethods(value: js.Array[String]): Self = StObject.set(x, "supportedSubmitMethods", value.asInstanceOf[js.Any])
+      inline def setSupportedSubmitMethods(value: js.Array[String]): Self = StObject.set(x, "supportedSubmitMethods", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSupportedSubmitMethodsUndefined: Self = StObject.set(x, "supportedSubmitMethods", js.undefined)
+      inline def setSupportedSubmitMethodsUndefined: Self = StObject.set(x, "supportedSubmitMethods", js.undefined)
       
-      @scala.inline
-      def setSupportedSubmitMethodsVarargs(value: String*): Self = StObject.set(x, "supportedSubmitMethods", js.Array(value :_*))
+      inline def setSupportedSubmitMethodsVarargs(value: String*): Self = StObject.set(x, "supportedSubmitMethods", js.Array(value :_*))
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   

@@ -20,8 +20,7 @@ trait XTextSectionsSupplier
 }
 object XTextSectionsSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     TextSections: XNameAccess,
     acquire: () => Unit,
     getTextSections: () => XNameAccess,
@@ -32,13 +31,10 @@ object XTextSectionsSupplier {
     __obj.asInstanceOf[XTextSectionsSupplier]
   }
   
-  @scala.inline
-  implicit class XTextSectionsSupplierMutableBuilder[Self <: XTextSectionsSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XTextSectionsSupplier](x: Self) {
     
-    @scala.inline
-    def setGetTextSections(value: () => XNameAccess): Self = StObject.set(x, "getTextSections", js.Any.fromFunction0(value))
+    inline def setGetTextSections(value: () => XNameAccess): Self = StObject.set(x, "getTextSections", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTextSections(value: XNameAccess): Self = StObject.set(x, "TextSections", value.asInstanceOf[js.Any])
+    inline def setTextSections(value: XNameAccess): Self = StObject.set(x, "TextSections", value.asInstanceOf[js.Any])
   }
 }

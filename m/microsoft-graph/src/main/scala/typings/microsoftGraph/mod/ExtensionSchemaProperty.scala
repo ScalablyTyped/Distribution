@@ -17,31 +17,23 @@ trait ExtensionSchemaProperty extends StObject {
 }
 object ExtensionSchemaProperty {
   
-  @scala.inline
-  def apply(): ExtensionSchemaProperty = {
+  inline def apply(): ExtensionSchemaProperty = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExtensionSchemaProperty]
   }
   
-  @scala.inline
-  implicit class ExtensionSchemaPropertyMutableBuilder[Self <: ExtensionSchemaProperty] (val x: Self) extends AnyVal {
+  extension [Self <: ExtensionSchemaProperty](x: Self) {
     
-    @scala.inline
-    def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: NullableOption[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameNull: Self = StObject.set(x, "name", null)
+    inline def setNameNull: Self = StObject.set(x, "name", null)
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setType(value: NullableOption[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: NullableOption[String]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeNull: Self = StObject.set(x, "type", null)
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -33,49 +33,35 @@ trait Reservation extends StObject {
 }
 object Reservation {
   
-  @scala.inline
-  def apply(): Reservation = {
+  inline def apply(): Reservation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Reservation]
   }
   
-  @scala.inline
-  implicit class ReservationMutableBuilder[Self <: Reservation] (val x: Self) extends AnyVal {
+  extension [Self <: Reservation](x: Self) {
     
-    @scala.inline
-    def setGroups(value: GroupIdentifierList): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
+    inline def setGroups(value: GroupIdentifierList): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
+    inline def setGroupsUndefined: Self = StObject.set(x, "Groups", js.undefined)
     
-    @scala.inline
-    def setGroupsVarargs(value: GroupIdentifier*): Self = StObject.set(x, "Groups", js.Array(value :_*))
+    inline def setGroupsVarargs(value: GroupIdentifier*): Self = StObject.set(x, "Groups", js.Array(value :_*))
     
-    @scala.inline
-    def setInstances(value: InstanceList): Self = StObject.set(x, "Instances", value.asInstanceOf[js.Any])
+    inline def setInstances(value: InstanceList): Self = StObject.set(x, "Instances", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstancesUndefined: Self = StObject.set(x, "Instances", js.undefined)
+    inline def setInstancesUndefined: Self = StObject.set(x, "Instances", js.undefined)
     
-    @scala.inline
-    def setInstancesVarargs(value: Instance*): Self = StObject.set(x, "Instances", js.Array(value :_*))
+    inline def setInstancesVarargs(value: Instance*): Self = StObject.set(x, "Instances", js.Array(value :_*))
     
-    @scala.inline
-    def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
+    inline def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
+    inline def setOwnerIdUndefined: Self = StObject.set(x, "OwnerId", js.undefined)
     
-    @scala.inline
-    def setRequesterId(value: String): Self = StObject.set(x, "RequesterId", value.asInstanceOf[js.Any])
+    inline def setRequesterId(value: String): Self = StObject.set(x, "RequesterId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequesterIdUndefined: Self = StObject.set(x, "RequesterId", js.undefined)
+    inline def setRequesterIdUndefined: Self = StObject.set(x, "RequesterId", js.undefined)
     
-    @scala.inline
-    def setReservationId(value: String): Self = StObject.set(x, "ReservationId", value.asInstanceOf[js.Any])
+    inline def setReservationId(value: String): Self = StObject.set(x, "ReservationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservationIdUndefined: Self = StObject.set(x, "ReservationId", js.undefined)
+    inline def setReservationIdUndefined: Self = StObject.set(x, "ReservationId", js.undefined)
   }
 }

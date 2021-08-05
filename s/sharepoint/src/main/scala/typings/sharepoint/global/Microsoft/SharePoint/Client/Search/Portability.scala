@@ -30,7 +30,6 @@ object Portability {
     @JSGlobal("Microsoft.SharePoint.Client.Search.Portability.SearchConfigurationPortabilityPropertyNames.importWarnings")
     @js.native
     def importWarnings: String = js.native
-    @scala.inline
-    def importWarnings_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("importWarnings")(x.asInstanceOf[js.Any])
+    inline def importWarnings_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("importWarnings")(x.asInstanceOf[js.Any])
   }
 }

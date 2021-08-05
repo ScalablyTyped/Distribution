@@ -17,20 +17,16 @@ object controlsTypesMod {
   }
   object ArrayConfig {
     
-    @scala.inline
-    def apply(): ArrayConfig = {
+    inline def apply(): ArrayConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ArrayConfig]
     }
     
-    @scala.inline
-    implicit class ArrayConfigMutableBuilder[Self <: ArrayConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ArrayConfig](x: Self) {
       
-      @scala.inline
-      def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+      inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
     }
   }
   
@@ -50,23 +46,18 @@ object controlsTypesMod {
   }
   object ColorConfig {
     
-    @scala.inline
-    def apply(): ColorConfig = {
+    inline def apply(): ColorConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ColorConfig]
     }
     
-    @scala.inline
-    implicit class ColorConfigMutableBuilder[Self <: ColorConfig] (val x: Self) extends AnyVal {
+    extension [Self <: ColorConfig](x: Self) {
       
-      @scala.inline
-      def setPresetColors(value: js.Array[String]): Self = StObject.set(x, "presetColors", value.asInstanceOf[js.Any])
+      inline def setPresetColors(value: js.Array[String]): Self = StObject.set(x, "presetColors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPresetColorsUndefined: Self = StObject.set(x, "presetColors", js.undefined)
+      inline def setPresetColorsUndefined: Self = StObject.set(x, "presetColors", js.undefined)
       
-      @scala.inline
-      def setPresetColorsVarargs(value: String*): Self = StObject.set(x, "presetColors", js.Array(value :_*))
+      inline def setPresetColorsVarargs(value: String*): Self = StObject.set(x, "presetColors", js.Array(value :_*))
     }
   }
   
@@ -103,50 +94,36 @@ object controlsTypesMod {
   }
   object ControlProps {
     
-    @scala.inline
-    def apply[T](name: String, onChange: T => T | Unit): ControlProps[T] = {
+    inline def apply[T](name: String, onChange: T => T | Unit): ControlProps[T] = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], onChange = js.Any.fromFunction1(onChange))
       __obj.asInstanceOf[ControlProps[T]]
     }
     
-    @scala.inline
-    implicit class ControlPropsMutableBuilder[Self <: ControlProps[?], T] (val x: Self & ControlProps[T]) extends AnyVal {
+    extension [Self <: ControlProps[?], T](x: Self & ControlProps[T]) {
       
-      @scala.inline
-      def setArgType(value: ArgType): Self = StObject.set(x, "argType", value.asInstanceOf[js.Any])
+      inline def setArgType(value: ArgType): Self = StObject.set(x, "argType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArgTypeUndefined: Self = StObject.set(x, "argType", js.undefined)
+      inline def setArgTypeUndefined: Self = StObject.set(x, "argType", js.undefined)
       
-      @scala.inline
-      def setDefaultValue(value: T): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
+      inline def setDefaultValue(value: T): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
+      inline def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnBlur(value: /* evt */ js.Any => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
+      inline def setOnBlur(value: /* evt */ js.Any => Unit): Self = StObject.set(x, "onBlur", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
+      inline def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
-      @scala.inline
-      def setOnChange(value: T => T | Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: T => T | Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFocus(value: /* evt */ js.Any => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
+      inline def setOnFocus(value: /* evt */ js.Any => Unit): Self = StObject.set(x, "onFocus", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
+      inline def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
-      @scala.inline
-      def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
   
@@ -169,47 +146,33 @@ object controlsTypesMod {
   trait ControlType extends StObject
   object ControlType {
     
-    @scala.inline
-    def array: typings.storybookComponents.storybookComponentsStrings.array = "array".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.array]
+    inline def array: typings.storybookComponents.storybookComponentsStrings.array = "array".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.array]
     
-    @scala.inline
-    def boolean: typings.storybookComponents.storybookComponentsStrings.boolean = "boolean".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.boolean]
+    inline def boolean: typings.storybookComponents.storybookComponentsStrings.boolean = "boolean".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.boolean]
     
-    @scala.inline
-    def check: typings.storybookComponents.storybookComponentsStrings.check = "check".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.check]
+    inline def check: typings.storybookComponents.storybookComponentsStrings.check = "check".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.check]
     
-    @scala.inline
-    def color: typings.storybookComponents.storybookComponentsStrings.color = "color".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.color]
+    inline def color: typings.storybookComponents.storybookComponentsStrings.color = "color".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.color]
     
-    @scala.inline
-    def date: typings.storybookComponents.storybookComponentsStrings.date = "date".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.date]
+    inline def date: typings.storybookComponents.storybookComponentsStrings.date = "date".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.date]
     
-    @scala.inline
-    def `inline-check`: typings.storybookComponents.storybookComponentsStrings.`inline-check` = "inline-check".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.`inline-check`]
+    inline def `inline-check`: typings.storybookComponents.storybookComponentsStrings.`inline-check` = "inline-check".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.`inline-check`]
     
-    @scala.inline
-    def `inline-radio`: typings.storybookComponents.storybookComponentsStrings.`inline-radio` = "inline-radio".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.`inline-radio`]
+    inline def `inline-radio`: typings.storybookComponents.storybookComponentsStrings.`inline-radio` = "inline-radio".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.`inline-radio`]
     
-    @scala.inline
-    def `multi-select`: typings.storybookComponents.storybookComponentsStrings.`multi-select` = "multi-select".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.`multi-select`]
+    inline def `multi-select`: typings.storybookComponents.storybookComponentsStrings.`multi-select` = "multi-select".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.`multi-select`]
     
-    @scala.inline
-    def number: typings.storybookComponents.storybookComponentsStrings.number = "number".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.number]
+    inline def number: typings.storybookComponents.storybookComponentsStrings.number = "number".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.number]
     
-    @scala.inline
-    def `object`: typings.storybookComponents.storybookComponentsStrings.`object` = "object".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.`object`]
+    inline def `object`: typings.storybookComponents.storybookComponentsStrings.`object` = "object".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.`object`]
     
-    @scala.inline
-    def radio: typings.storybookComponents.storybookComponentsStrings.radio = "radio".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.radio]
+    inline def radio: typings.storybookComponents.storybookComponentsStrings.radio = "radio".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.radio]
     
-    @scala.inline
-    def range: typings.storybookComponents.storybookComponentsStrings.range = "range".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.range]
+    inline def range: typings.storybookComponents.storybookComponentsStrings.range = "range".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.range]
     
-    @scala.inline
-    def select: typings.storybookComponents.storybookComponentsStrings.select = "select".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.select]
+    inline def select: typings.storybookComponents.storybookComponentsStrings.select = "select".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.select]
     
-    @scala.inline
-    def text: typings.storybookComponents.storybookComponentsStrings.text = "text".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.text]
+    inline def text: typings.storybookComponents.storybookComponentsStrings.text = "text".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.text]
   }
   
   type Controls = Record[String, Control]
@@ -226,17 +189,14 @@ object controlsTypesMod {
   }
   object NormalizedOptionsConfig {
     
-    @scala.inline
-    def apply(options: OptionsObject): NormalizedOptionsConfig = {
+    inline def apply(options: OptionsObject): NormalizedOptionsConfig = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[NormalizedOptionsConfig]
     }
     
-    @scala.inline
-    implicit class NormalizedOptionsConfigMutableBuilder[Self <: NormalizedOptionsConfig] (val x: Self) extends AnyVal {
+    extension [Self <: NormalizedOptionsConfig](x: Self) {
       
-      @scala.inline
-      def setOptions(value: OptionsObject): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: OptionsObject): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
   }
   
@@ -252,32 +212,24 @@ object controlsTypesMod {
   }
   object NumberConfig {
     
-    @scala.inline
-    def apply(): NumberConfig = {
+    inline def apply(): NumberConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NumberConfig]
     }
     
-    @scala.inline
-    implicit class NumberConfigMutableBuilder[Self <: NumberConfig] (val x: Self) extends AnyVal {
+    extension [Self <: NumberConfig](x: Self) {
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
-      @scala.inline
-      def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+      inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
+      inline def setStepUndefined: Self = StObject.set(x, "step", js.undefined)
     }
   }
   
@@ -303,24 +255,19 @@ object controlsTypesMod {
   }
   object OptionsConfig {
     
-    @scala.inline
-    def apply(options: Options, `type`: OptionsControlType): OptionsConfig = {
+    inline def apply(options: Options, `type`: OptionsControlType): OptionsConfig = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[OptionsConfig]
     }
     
-    @scala.inline
-    implicit class OptionsConfigMutableBuilder[Self <: OptionsConfig] (val x: Self) extends AnyVal {
+    extension [Self <: OptionsConfig](x: Self) {
       
-      @scala.inline
-      def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsVarargs(value: js.Any*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: js.Any*): Self = StObject.set(x, "options", js.Array(value :_*))
       
-      @scala.inline
-      def setType(value: OptionsControlType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: OptionsControlType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -335,23 +282,17 @@ object controlsTypesMod {
   trait OptionsControlType extends StObject
   object OptionsControlType {
     
-    @scala.inline
-    def check: typings.storybookComponents.storybookComponentsStrings.check = "check".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.check]
+    inline def check: typings.storybookComponents.storybookComponentsStrings.check = "check".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.check]
     
-    @scala.inline
-    def `inline-check`: typings.storybookComponents.storybookComponentsStrings.`inline-check` = "inline-check".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.`inline-check`]
+    inline def `inline-check`: typings.storybookComponents.storybookComponentsStrings.`inline-check` = "inline-check".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.`inline-check`]
     
-    @scala.inline
-    def `inline-radio`: typings.storybookComponents.storybookComponentsStrings.`inline-radio` = "inline-radio".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.`inline-radio`]
+    inline def `inline-radio`: typings.storybookComponents.storybookComponentsStrings.`inline-radio` = "inline-radio".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.`inline-radio`]
     
-    @scala.inline
-    def `multi-select`: typings.storybookComponents.storybookComponentsStrings.`multi-select` = "multi-select".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.`multi-select`]
+    inline def `multi-select`: typings.storybookComponents.storybookComponentsStrings.`multi-select` = "multi-select".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.`multi-select`]
     
-    @scala.inline
-    def radio: typings.storybookComponents.storybookComponentsStrings.radio = "radio".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.radio]
+    inline def radio: typings.storybookComponents.storybookComponentsStrings.radio = "radio".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.radio]
     
-    @scala.inline
-    def select: typings.storybookComponents.storybookComponentsStrings.select = "select".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.select]
+    inline def select: typings.storybookComponents.storybookComponentsStrings.select = "select".asInstanceOf[typings.storybookComponents.storybookComponentsStrings.select]
   }
   
   type OptionsMultiSelection = js.Array[js.Any]
@@ -373,26 +314,22 @@ object controlsTypesMod {
   trait _Control extends StObject
   object _Control {
     
-    @scala.inline
-    def ArrayConfig(): typings.storybookComponents.controlsTypesMod.ArrayConfig = {
+    inline def ArrayConfig(): typings.storybookComponents.controlsTypesMod.ArrayConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.storybookComponents.controlsTypesMod.ArrayConfig]
     }
     
-    @scala.inline
-    def ColorConfig(): typings.storybookComponents.controlsTypesMod.ColorConfig = {
+    inline def ColorConfig(): typings.storybookComponents.controlsTypesMod.ColorConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.storybookComponents.controlsTypesMod.ColorConfig]
     }
     
-    @scala.inline
-    def NumberConfig(): typings.storybookComponents.controlsTypesMod.NumberConfig = {
+    inline def NumberConfig(): typings.storybookComponents.controlsTypesMod.NumberConfig = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[typings.storybookComponents.controlsTypesMod.NumberConfig]
     }
     
-    @scala.inline
-    def OptionsConfig(options: Options, `type`: OptionsControlType): typings.storybookComponents.controlsTypesMod.OptionsConfig = {
+    inline def OptionsConfig(options: Options, `type`: OptionsControlType): typings.storybookComponents.controlsTypesMod.OptionsConfig = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.storybookComponents.controlsTypesMod.OptionsConfig]

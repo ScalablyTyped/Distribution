@@ -22,17 +22,14 @@ object typesItemCollectionSizeLimitExceededExceptionMod {
   }
   object ItemCollectionSizeLimitExceededException {
     
-    @scala.inline
-    def apply(): ItemCollectionSizeLimitExceededException = {
+    inline def apply(): ItemCollectionSizeLimitExceededException = {
       val __obj = js.Dynamic.literal(name = "ItemCollectionSizeLimitExceededException")
       __obj.asInstanceOf[ItemCollectionSizeLimitExceededException]
     }
     
-    @scala.inline
-    implicit class ItemCollectionSizeLimitExceededExceptionMutableBuilder[Self <: ItemCollectionSizeLimitExceededException] (val x: Self) extends AnyVal {
+    extension [Self <: ItemCollectionSizeLimitExceededException](x: Self) {
       
-      @scala.inline
-      def setName(
+      inline def setName(
         value: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.ItemCollectionSizeLimitExceededException
       ): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -47,20 +44,16 @@ object typesItemCollectionSizeLimitExceededExceptionMod {
   }
   object ItemCollectionSizeLimitExceededExceptionDetails {
     
-    @scala.inline
-    def apply(): ItemCollectionSizeLimitExceededExceptionDetails = {
+    inline def apply(): ItemCollectionSizeLimitExceededExceptionDetails = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ItemCollectionSizeLimitExceededExceptionDetails]
     }
     
-    @scala.inline
-    implicit class ItemCollectionSizeLimitExceededExceptionDetailsMutableBuilder[Self <: ItemCollectionSizeLimitExceededExceptionDetails] (val x: Self) extends AnyVal {
+    extension [Self <: ItemCollectionSizeLimitExceededExceptionDetails](x: Self) {
       
-      @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+      inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+      inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     }
   }
 }

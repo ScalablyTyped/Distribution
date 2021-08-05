@@ -26,22 +26,17 @@ trait IExternalAccountCreationOptions
 }
 object IExternalAccountCreationOptions {
   
-  @scala.inline
-  def apply(external_account: String): IExternalAccountCreationOptions = {
+  inline def apply(external_account: String): IExternalAccountCreationOptions = {
     val __obj = js.Dynamic.literal(external_account = external_account.asInstanceOf[js.Any])
     __obj.asInstanceOf[IExternalAccountCreationOptions]
   }
   
-  @scala.inline
-  implicit class IExternalAccountCreationOptionsMutableBuilder[Self <: IExternalAccountCreationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IExternalAccountCreationOptions](x: Self) {
     
-    @scala.inline
-    def setDefault_for_currency(value: Boolean): Self = StObject.set(x, "default_for_currency", value.asInstanceOf[js.Any])
+    inline def setDefault_for_currency(value: Boolean): Self = StObject.set(x, "default_for_currency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefault_for_currencyUndefined: Self = StObject.set(x, "default_for_currency", js.undefined)
+    inline def setDefault_for_currencyUndefined: Self = StObject.set(x, "default_for_currency", js.undefined)
     
-    @scala.inline
-    def setExternal_account(value: String): Self = StObject.set(x, "external_account", value.asInstanceOf[js.Any])
+    inline def setExternal_account(value: String): Self = StObject.set(x, "external_account", value.asInstanceOf[js.Any])
   }
 }

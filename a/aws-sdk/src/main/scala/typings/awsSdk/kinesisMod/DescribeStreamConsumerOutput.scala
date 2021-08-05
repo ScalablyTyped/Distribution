@@ -13,16 +13,13 @@ trait DescribeStreamConsumerOutput extends StObject {
 }
 object DescribeStreamConsumerOutput {
   
-  @scala.inline
-  def apply(ConsumerDescription: ConsumerDescription): DescribeStreamConsumerOutput = {
+  inline def apply(ConsumerDescription: ConsumerDescription): DescribeStreamConsumerOutput = {
     val __obj = js.Dynamic.literal(ConsumerDescription = ConsumerDescription.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeStreamConsumerOutput]
   }
   
-  @scala.inline
-  implicit class DescribeStreamConsumerOutputMutableBuilder[Self <: DescribeStreamConsumerOutput] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeStreamConsumerOutput](x: Self) {
     
-    @scala.inline
-    def setConsumerDescription(value: ConsumerDescription): Self = StObject.set(x, "ConsumerDescription", value.asInstanceOf[js.Any])
+    inline def setConsumerDescription(value: ConsumerDescription): Self = StObject.set(x, "ConsumerDescription", value.asInstanceOf[js.Any])
   }
 }

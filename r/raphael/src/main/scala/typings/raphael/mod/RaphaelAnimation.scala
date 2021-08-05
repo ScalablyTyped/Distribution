@@ -23,19 +23,15 @@ trait RaphaelAnimation extends StObject {
 }
 object RaphaelAnimation {
   
-  @scala.inline
-  def apply(delay: Double => RaphaelAnimation, repeat: Double => RaphaelAnimation): RaphaelAnimation = {
+  inline def apply(delay: Double => RaphaelAnimation, repeat: Double => RaphaelAnimation): RaphaelAnimation = {
     val __obj = js.Dynamic.literal(delay = js.Any.fromFunction1(delay), repeat = js.Any.fromFunction1(repeat))
     __obj.asInstanceOf[RaphaelAnimation]
   }
   
-  @scala.inline
-  implicit class RaphaelAnimationMutableBuilder[Self <: RaphaelAnimation] (val x: Self) extends AnyVal {
+  extension [Self <: RaphaelAnimation](x: Self) {
     
-    @scala.inline
-    def setDelay(value: Double => RaphaelAnimation): Self = StObject.set(x, "delay", js.Any.fromFunction1(value))
+    inline def setDelay(value: Double => RaphaelAnimation): Self = StObject.set(x, "delay", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setRepeat(value: Double => RaphaelAnimation): Self = StObject.set(x, "repeat", js.Any.fromFunction1(value))
+    inline def setRepeat(value: Double => RaphaelAnimation): Self = StObject.set(x, "repeat", js.Any.fromFunction1(value))
   }
 }

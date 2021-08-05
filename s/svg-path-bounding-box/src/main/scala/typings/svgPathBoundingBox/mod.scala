@@ -6,8 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(path: String): BoundingBoxView = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[BoundingBoxView]
+  inline def apply(path: String): BoundingBoxView = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[BoundingBoxView]
   
   @JSImport("svg-path-bounding-box", JSImport.Namespace)
   @js.native

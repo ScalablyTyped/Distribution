@@ -15,22 +15,17 @@ trait DOMEventListener extends StObject {
 }
 object DOMEventListener {
   
-  @scala.inline
-  def apply(eventName: String, listener: () => js.Any, target: HTMLElement): DOMEventListener = {
+  inline def apply(eventName: String, listener: () => js.Any, target: HTMLElement): DOMEventListener = {
     val __obj = js.Dynamic.literal(eventName = eventName.asInstanceOf[js.Any], listener = js.Any.fromFunction0(listener), target = target.asInstanceOf[js.Any])
     __obj.asInstanceOf[DOMEventListener]
   }
   
-  @scala.inline
-  implicit class DOMEventListenerMutableBuilder[Self <: DOMEventListener] (val x: Self) extends AnyVal {
+  extension [Self <: DOMEventListener](x: Self) {
     
-    @scala.inline
-    def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
+    inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setListener(value: () => js.Any): Self = StObject.set(x, "listener", js.Any.fromFunction0(value))
+    inline def setListener(value: () => js.Any): Self = StObject.set(x, "listener", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+    inline def setTarget(value: HTMLElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }
 }

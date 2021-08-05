@@ -18,25 +18,19 @@ trait GoogleActionsV2OrdersRejectionInfo extends StObject {
 }
 object GoogleActionsV2OrdersRejectionInfo {
   
-  @scala.inline
-  def apply(): GoogleActionsV2OrdersRejectionInfo = {
+  inline def apply(): GoogleActionsV2OrdersRejectionInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsV2OrdersRejectionInfo]
   }
   
-  @scala.inline
-  implicit class GoogleActionsV2OrdersRejectionInfoMutableBuilder[Self <: GoogleActionsV2OrdersRejectionInfo] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsV2OrdersRejectionInfo](x: Self) {
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
-    @scala.inline
-    def setType(value: GoogleActionsV2OrdersRejectionInfoType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: GoogleActionsV2OrdersRejectionInfoType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

@@ -20,8 +20,7 @@ trait Receiver extends StObject {
 }
 object Receiver {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     capabilities: js.Array[Capability],
     displayStatus: ReceiverDisplayStatus,
     friendlyName: String,
@@ -33,28 +32,20 @@ object Receiver {
     __obj.asInstanceOf[Receiver]
   }
   
-  @scala.inline
-  implicit class ReceiverMutableBuilder[Self <: Receiver] (val x: Self) extends AnyVal {
+  extension [Self <: Receiver](x: Self) {
     
-    @scala.inline
-    def setCapabilities(value: js.Array[Capability]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
+    inline def setCapabilities(value: js.Array[Capability]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapabilitiesVarargs(value: Capability*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
+    inline def setCapabilitiesVarargs(value: Capability*): Self = StObject.set(x, "capabilities", js.Array(value :_*))
     
-    @scala.inline
-    def setDisplayStatus(value: ReceiverDisplayStatus): Self = StObject.set(x, "displayStatus", value.asInstanceOf[js.Any])
+    inline def setDisplayStatus(value: ReceiverDisplayStatus): Self = StObject.set(x, "displayStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
+    inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceiverType(value: ReceiverType): Self = StObject.set(x, "receiverType", value.asInstanceOf[js.Any])
+    inline def setReceiverType(value: ReceiverType): Self = StObject.set(x, "receiverType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolume(value: Volume): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
+    inline def setVolume(value: Volume): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
   }
 }

@@ -14,8 +14,7 @@ trait XLibraryQueryExecutable
 }
 object XLibraryQueryExecutable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     HasExecutableCode: String => Boolean,
     acquire: () => Unit,
     queryInterface: `type` => js.Any,
@@ -25,10 +24,8 @@ object XLibraryQueryExecutable {
     __obj.asInstanceOf[XLibraryQueryExecutable]
   }
   
-  @scala.inline
-  implicit class XLibraryQueryExecutableMutableBuilder[Self <: XLibraryQueryExecutable] (val x: Self) extends AnyVal {
+  extension [Self <: XLibraryQueryExecutable](x: Self) {
     
-    @scala.inline
-    def setHasExecutableCode(value: String => Boolean): Self = StObject.set(x, "HasExecutableCode", js.Any.fromFunction1(value))
+    inline def setHasExecutableCode(value: String => Boolean): Self = StObject.set(x, "HasExecutableCode", js.Any.fromFunction1(value))
   }
 }

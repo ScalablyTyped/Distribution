@@ -17,16 +17,13 @@ trait PieExportOptions extends StObject {
 }
 object PieExportOptions {
   
-  @scala.inline
-  def apply(AutoArrangeContent: Boolean): PieExportOptions = {
+  inline def apply(AutoArrangeContent: Boolean): PieExportOptions = {
     val __obj = js.Dynamic.literal(AutoArrangeContent = AutoArrangeContent.asInstanceOf[js.Any])
     __obj.asInstanceOf[PieExportOptions]
   }
   
-  @scala.inline
-  implicit class PieExportOptionsMutableBuilder[Self <: PieExportOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PieExportOptions](x: Self) {
     
-    @scala.inline
-    def setAutoArrangeContent(value: Boolean): Self = StObject.set(x, "AutoArrangeContent", value.asInstanceOf[js.Any])
+    inline def setAutoArrangeContent(value: Boolean): Self = StObject.set(x, "AutoArrangeContent", value.asInstanceOf[js.Any])
   }
 }

@@ -10,6 +10,5 @@ object isPointMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isPoint(point: js.Object): /* is popmotion.popmotion/lib/types.Point */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPoint")(point.asInstanceOf[js.Any]).asInstanceOf[/* is popmotion.popmotion/lib/types.Point */ Boolean]
+  inline def isPoint(point: js.Object): /* is popmotion.popmotion/lib/types.Point */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPoint")(point.asInstanceOf[js.Any]).asInstanceOf[/* is popmotion.popmotion/lib/types.Point */ Boolean]
 }

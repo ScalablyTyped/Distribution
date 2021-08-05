@@ -13,19 +13,15 @@ trait VotingPolicy extends StObject {
 }
 object VotingPolicy {
   
-  @scala.inline
-  def apply(): VotingPolicy = {
+  inline def apply(): VotingPolicy = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[VotingPolicy]
   }
   
-  @scala.inline
-  implicit class VotingPolicyMutableBuilder[Self <: VotingPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: VotingPolicy](x: Self) {
     
-    @scala.inline
-    def setApprovalThresholdPolicy(value: ApprovalThresholdPolicy): Self = StObject.set(x, "ApprovalThresholdPolicy", value.asInstanceOf[js.Any])
+    inline def setApprovalThresholdPolicy(value: ApprovalThresholdPolicy): Self = StObject.set(x, "ApprovalThresholdPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApprovalThresholdPolicyUndefined: Self = StObject.set(x, "ApprovalThresholdPolicy", js.undefined)
+    inline def setApprovalThresholdPolicyUndefined: Self = StObject.set(x, "ApprovalThresholdPolicy", js.undefined)
   }
 }

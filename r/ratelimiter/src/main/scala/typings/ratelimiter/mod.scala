@@ -41,20 +41,16 @@ object mod {
   }
   object Limiter {
     
-    @scala.inline
-    def apply(get: js.Function2[/* err */ js.Any, /* info */ LimiterInfo, Unit] => Unit, inspect: () => String): Limiter = {
+    inline def apply(get: js.Function2[/* err */ js.Any, /* info */ LimiterInfo, Unit] => Unit, inspect: () => String): Limiter = {
       val __obj = js.Dynamic.literal(get = js.Any.fromFunction1(get), inspect = js.Any.fromFunction0(inspect))
       __obj.asInstanceOf[Limiter]
     }
     
-    @scala.inline
-    implicit class LimiterMutableBuilder[Self <: Limiter] (val x: Self) extends AnyVal {
+    extension [Self <: Limiter](x: Self) {
       
-      @scala.inline
-      def setGet(value: js.Function2[/* err */ js.Any, /* info */ LimiterInfo, Unit] => Unit): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+      inline def setGet(value: js.Function2[/* err */ js.Any, /* info */ LimiterInfo, Unit] => Unit): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInspect(value: () => String): Self = StObject.set(x, "inspect", js.Any.fromFunction0(value))
+      inline def setInspect(value: () => String): Self = StObject.set(x, "inspect", js.Any.fromFunction0(value))
     }
   }
   
@@ -85,26 +81,20 @@ object mod {
   }
   object LimiterInfo {
     
-    @scala.inline
-    def apply(remaining: Double, reset: Double, resetMs: Double, total: Double): LimiterInfo = {
+    inline def apply(remaining: Double, reset: Double, resetMs: Double, total: Double): LimiterInfo = {
       val __obj = js.Dynamic.literal(remaining = remaining.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any], resetMs = resetMs.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
       __obj.asInstanceOf[LimiterInfo]
     }
     
-    @scala.inline
-    implicit class LimiterInfoMutableBuilder[Self <: LimiterInfo] (val x: Self) extends AnyVal {
+    extension [Self <: LimiterInfo](x: Self) {
       
-      @scala.inline
-      def setRemaining(value: Double): Self = StObject.set(x, "remaining", value.asInstanceOf[js.Any])
+      inline def setRemaining(value: Double): Self = StObject.set(x, "remaining", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReset(value: Double): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+      inline def setReset(value: Double): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResetMs(value: Double): Self = StObject.set(x, "resetMs", value.asInstanceOf[js.Any])
+      inline def setResetMs(value: Double): Self = StObject.set(x, "resetMs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
+      inline def setTotal(value: Double): Self = StObject.set(x, "total", value.asInstanceOf[js.Any])
     }
   }
   
@@ -134,32 +124,24 @@ object mod {
   }
   object LimiterOption {
     
-    @scala.inline
-    def apply(db: RedisClient, id: String): LimiterOption = {
+    inline def apply(db: RedisClient, id: String): LimiterOption = {
       val __obj = js.Dynamic.literal(db = db.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[LimiterOption]
     }
     
-    @scala.inline
-    implicit class LimiterOptionMutableBuilder[Self <: LimiterOption] (val x: Self) extends AnyVal {
+    extension [Self <: LimiterOption](x: Self) {
       
-      @scala.inline
-      def setDb(value: RedisClient): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
+      inline def setDb(value: RedisClient): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+      inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+      inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     }
   }
 }

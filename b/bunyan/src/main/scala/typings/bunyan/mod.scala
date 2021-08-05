@@ -91,8 +91,7 @@ object mod {
   @js.native
   val WARN: Double = js.native
   
-  @scala.inline
-  def createLogger(options: LoggerOptions): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("createLogger")(options.asInstanceOf[js.Any]).asInstanceOf[Logger]
+  inline def createLogger(options: LoggerOptions): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("createLogger")(options.asInstanceOf[js.Any]).asInstanceOf[Logger]
   
   /* Inlined {[ name in bunyan.bunyan.LogLevelString ]: number} */
   object levelFromName {
@@ -104,45 +103,37 @@ object mod {
     @JSImport("bunyan", "levelFromName.debug")
     @js.native
     def debug: Double = js.native
-    @scala.inline
-    def debug_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("debug")(x.asInstanceOf[js.Any])
+    inline def debug_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("debug")(x.asInstanceOf[js.Any])
     
     @JSImport("bunyan", "levelFromName.error")
     @js.native
     def error: Double = js.native
-    @scala.inline
-    def error_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("error")(x.asInstanceOf[js.Any])
+    inline def error_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("error")(x.asInstanceOf[js.Any])
     
     @JSImport("bunyan", "levelFromName.fatal")
     @js.native
     def fatal: Double = js.native
-    @scala.inline
-    def fatal_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fatal")(x.asInstanceOf[js.Any])
+    inline def fatal_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fatal")(x.asInstanceOf[js.Any])
     
     @JSImport("bunyan", "levelFromName.info")
     @js.native
     def info: Double = js.native
-    @scala.inline
-    def info_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("info")(x.asInstanceOf[js.Any])
+    inline def info_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("info")(x.asInstanceOf[js.Any])
     
     @JSImport("bunyan", "levelFromName.trace")
     @js.native
     def trace: Double = js.native
-    @scala.inline
-    def trace_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("trace")(x.asInstanceOf[js.Any])
+    inline def trace_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("trace")(x.asInstanceOf[js.Any])
     
     @JSImport("bunyan", "levelFromName.warn")
     @js.native
     def warn: Double = js.native
-    @scala.inline
-    def warn_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warn")(x.asInstanceOf[js.Any])
+    inline def warn_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warn")(x.asInstanceOf[js.Any])
   }
   
-  @scala.inline
-  def resolveLevel(value: LogLevel): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveLevel")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def resolveLevel(value: LogLevel): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveLevel")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @scala.inline
-  def safeCycles(): js.Function2[/* key */ String, /* value */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeCycles")().asInstanceOf[js.Function2[/* key */ String, /* value */ js.Any, js.Any]]
+  inline def safeCycles(): js.Function2[/* key */ String, /* value */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeCycles")().asInstanceOf[js.Function2[/* key */ String, /* value */ js.Any, js.Any]]
   
   @JSImport("bunyan", "stdSerializers")
   @js.native
@@ -161,23 +152,17 @@ object mod {
   trait LogLevelString extends StObject
   object LogLevelString {
     
-    @scala.inline
-    def debug: typings.bunyan.bunyanStrings.debug = "debug".asInstanceOf[typings.bunyan.bunyanStrings.debug]
+    inline def debug: typings.bunyan.bunyanStrings.debug = "debug".asInstanceOf[typings.bunyan.bunyanStrings.debug]
     
-    @scala.inline
-    def error: typings.bunyan.bunyanStrings.error = "error".asInstanceOf[typings.bunyan.bunyanStrings.error]
+    inline def error: typings.bunyan.bunyanStrings.error = "error".asInstanceOf[typings.bunyan.bunyanStrings.error]
     
-    @scala.inline
-    def fatal: typings.bunyan.bunyanStrings.fatal = "fatal".asInstanceOf[typings.bunyan.bunyanStrings.fatal]
+    inline def fatal: typings.bunyan.bunyanStrings.fatal = "fatal".asInstanceOf[typings.bunyan.bunyanStrings.fatal]
     
-    @scala.inline
-    def info: typings.bunyan.bunyanStrings.info = "info".asInstanceOf[typings.bunyan.bunyanStrings.info]
+    inline def info: typings.bunyan.bunyanStrings.info = "info".asInstanceOf[typings.bunyan.bunyanStrings.info]
     
-    @scala.inline
-    def trace: typings.bunyan.bunyanStrings.trace = "trace".asInstanceOf[typings.bunyan.bunyanStrings.trace]
+    inline def trace: typings.bunyan.bunyanStrings.trace = "trace".asInstanceOf[typings.bunyan.bunyanStrings.trace]
     
-    @scala.inline
-    def warn: typings.bunyan.bunyanStrings.warn = "warn".asInstanceOf[typings.bunyan.bunyanStrings.warn]
+    inline def warn: typings.bunyan.bunyanStrings.warn = "warn".asInstanceOf[typings.bunyan.bunyanStrings.warn]
   }
   
   @js.native
@@ -380,50 +365,36 @@ object mod {
   }
   object LoggerOptions {
     
-    @scala.inline
-    def apply(name: String): LoggerOptions = {
+    inline def apply(name: String): LoggerOptions = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[LoggerOptions]
     }
     
-    @scala.inline
-    implicit class LoggerOptionsMutableBuilder[Self <: LoggerOptions] (val x: Self) extends AnyVal {
+    extension [Self <: LoggerOptions](x: Self) {
       
-      @scala.inline
-      def setLevel(value: LogLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: LogLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerializers(value: Serializers): Self = StObject.set(x, "serializers", value.asInstanceOf[js.Any])
+      inline def setSerializers(value: Serializers): Self = StObject.set(x, "serializers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSerializersUndefined: Self = StObject.set(x, "serializers", js.undefined)
+      inline def setSerializersUndefined: Self = StObject.set(x, "serializers", js.undefined)
       
-      @scala.inline
-      def setSrc(value: Boolean): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
+      inline def setSrc(value: Boolean): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
+      inline def setSrcUndefined: Self = StObject.set(x, "src", js.undefined)
       
-      @scala.inline
-      def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+      inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       
-      @scala.inline
-      def setStreams(value: js.Array[Stream]): Self = StObject.set(x, "streams", value.asInstanceOf[js.Any])
+      inline def setStreams(value: js.Array[Stream]): Self = StObject.set(x, "streams", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamsUndefined: Self = StObject.set(x, "streams", js.undefined)
+      inline def setStreamsUndefined: Self = StObject.set(x, "streams", js.undefined)
       
-      @scala.inline
-      def setStreamsVarargs(value: Stream*): Self = StObject.set(x, "streams", js.Array(value :_*))
+      inline def setStreamsVarargs(value: Stream*): Self = StObject.set(x, "streams", js.Array(value :_*))
     }
   }
   
@@ -433,20 +404,16 @@ object mod {
   }
   object RingBufferOptions {
     
-    @scala.inline
-    def apply(): RingBufferOptions = {
+    inline def apply(): RingBufferOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[RingBufferOptions]
     }
     
-    @scala.inline
-    implicit class RingBufferOptionsMutableBuilder[Self <: RingBufferOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RingBufferOptions](x: Self) {
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     }
   }
   
@@ -460,29 +427,22 @@ object mod {
   }
   object RotatingFileStreamOptions {
     
-    @scala.inline
-    def apply(path: String): RotatingFileStreamOptions = {
+    inline def apply(path: String): RotatingFileStreamOptions = {
       val __obj = js.Dynamic.literal(path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[RotatingFileStreamOptions]
     }
     
-    @scala.inline
-    implicit class RotatingFileStreamOptionsMutableBuilder[Self <: RotatingFileStreamOptions] (val x: Self) extends AnyVal {
+    extension [Self <: RotatingFileStreamOptions](x: Self) {
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeriod(value: String): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+      inline def setPeriod(value: String): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+      inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
     }
   }
   
@@ -508,8 +468,7 @@ object mod {
   }
   object StdSerializers_ {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       err: /* input */ js.Any => js.Any,
       req: /* input */ js.Any => js.Any,
       res: /* input */ js.Any => js.Any
@@ -518,17 +477,13 @@ object mod {
       __obj.asInstanceOf[StdSerializers_]
     }
     
-    @scala.inline
-    implicit class StdSerializers_MutableBuilder[Self <: StdSerializers_] (val x: Self) extends AnyVal {
+    extension [Self <: StdSerializers_](x: Self) {
       
-      @scala.inline
-      def setErr(value: /* input */ js.Any => js.Any): Self = StObject.set(x, "err", js.Any.fromFunction1(value))
+      inline def setErr(value: /* input */ js.Any => js.Any): Self = StObject.set(x, "err", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReq(value: /* input */ js.Any => js.Any): Self = StObject.set(x, "req", js.Any.fromFunction1(value))
+      inline def setReq(value: /* input */ js.Any => js.Any): Self = StObject.set(x, "req", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRes(value: /* input */ js.Any => js.Any): Self = StObject.set(x, "res", js.Any.fromFunction1(value))
+      inline def setRes(value: /* input */ js.Any => js.Any): Self = StObject.set(x, "res", js.Any.fromFunction1(value))
     }
   }
   
@@ -554,68 +509,48 @@ object mod {
   }
   object Stream {
     
-    @scala.inline
-    def apply(): Stream = {
+    inline def apply(): Stream = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Stream]
     }
     
-    @scala.inline
-    implicit class StreamMutableBuilder[Self <: Stream] (val x: Self) extends AnyVal {
+    extension [Self <: Stream](x: Self) {
       
-      @scala.inline
-      def setCloseOnExit(value: Boolean): Self = StObject.set(x, "closeOnExit", value.asInstanceOf[js.Any])
+      inline def setCloseOnExit(value: Boolean): Self = StObject.set(x, "closeOnExit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseOnExitUndefined: Self = StObject.set(x, "closeOnExit", js.undefined)
+      inline def setCloseOnExitUndefined: Self = StObject.set(x, "closeOnExit", js.undefined)
       
-      @scala.inline
-      def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      @scala.inline
-      def setLevel(value: LogLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
+      inline def setLevel(value: LogLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
+      inline def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
-      @scala.inline
-      def setPeriod(value: String): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
+      inline def setPeriod(value: String): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
+      inline def setPeriodUndefined: Self = StObject.set(x, "period", js.undefined)
       
-      @scala.inline
-      def setReemitErrorEvents(value: Boolean): Self = StObject.set(x, "reemitErrorEvents", value.asInstanceOf[js.Any])
+      inline def setReemitErrorEvents(value: Boolean): Self = StObject.set(x, "reemitErrorEvents", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReemitErrorEventsUndefined: Self = StObject.set(x, "reemitErrorEvents", js.undefined)
+      inline def setReemitErrorEventsUndefined: Self = StObject.set(x, "reemitErrorEvents", js.undefined)
       
-      @scala.inline
-      def setStream(value: WritableStream | Stream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
+      inline def setStream(value: WritableStream | Stream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
+      inline def setStreamUndefined: Self = StObject.set(x, "stream", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

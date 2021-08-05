@@ -6,6 +6,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Office.Assistant")
 @js.native
-class Assistant protected ()
+/* private */ class Assistant ()
   extends StObject
      with typings.activexOffice.Office.Assistant

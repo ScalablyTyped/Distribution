@@ -96,8 +96,7 @@ object tfjsBindingMod {
   }
   object TFJSBinding {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       TFEOpAttr: Instantiable0[TFEOpAttr],
       TF_ATTR_BOOL: Double,
       TF_ATTR_FLOAT: Double,
@@ -130,89 +129,61 @@ object tfjsBindingMod {
       __obj.asInstanceOf[TFJSBinding]
     }
     
-    @scala.inline
-    implicit class TFJSBindingMutableBuilder[Self <: TFJSBinding] (val x: Self) extends AnyVal {
+    extension [Self <: TFJSBinding](x: Self) {
       
-      @scala.inline
-      def setCreateTensor(value: (js.Array[Double], Double, BackendValues) => Double): Self = StObject.set(x, "createTensor", js.Any.fromFunction3(value))
+      inline def setCreateTensor(value: (js.Array[Double], Double, BackendValues) => Double): Self = StObject.set(x, "createTensor", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDeleteSavedModel(value: Double => Unit): Self = StObject.set(x, "deleteSavedModel", js.Any.fromFunction1(value))
+      inline def setDeleteSavedModel(value: Double => Unit): Self = StObject.set(x, "deleteSavedModel", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDeleteTensor(value: Double => Unit): Self = StObject.set(x, "deleteTensor", js.Any.fromFunction1(value))
+      inline def setDeleteTensor(value: Double => Unit): Self = StObject.set(x, "deleteTensor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExecuteOp(value: (String, js.Array[TFEOpAttr], js.Array[Double], Double) => js.Array[TensorMetadata]): Self = StObject.set(x, "executeOp", js.Any.fromFunction4(value))
+      inline def setExecuteOp(value: (String, js.Array[TFEOpAttr], js.Array[Double], Double) => js.Array[TensorMetadata]): Self = StObject.set(x, "executeOp", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setGetNumOfSavedModels(value: () => Double): Self = StObject.set(x, "getNumOfSavedModels", js.Any.fromFunction0(value))
+      inline def setGetNumOfSavedModels(value: () => Double): Self = StObject.set(x, "getNumOfSavedModels", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsUsingGpuDevice(value: () => Boolean): Self = StObject.set(x, "isUsingGpuDevice", js.Any.fromFunction0(value))
+      inline def setIsUsingGpuDevice(value: () => Boolean): Self = StObject.set(x, "isUsingGpuDevice", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setLoadSavedModel(value: (String, String) => Double): Self = StObject.set(x, "loadSavedModel", js.Any.fromFunction2(value))
+      inline def setLoadSavedModel(value: (String, String) => Double): Self = StObject.set(x, "loadSavedModel", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRunSavedModel(value: (Double, js.Array[Double], String, String) => js.Array[TensorMetadata]): Self = StObject.set(x, "runSavedModel", js.Any.fromFunction4(value))
+      inline def setRunSavedModel(value: (Double, js.Array[Double], String, String) => js.Array[TensorMetadata]): Self = StObject.set(x, "runSavedModel", js.Any.fromFunction4(value))
       
-      @scala.inline
-      def setTFEOpAttr(value: Instantiable0[TFEOpAttr]): Self = StObject.set(x, "TFEOpAttr", value.asInstanceOf[js.Any])
+      inline def setTFEOpAttr(value: Instantiable0[TFEOpAttr]): Self = StObject.set(x, "TFEOpAttr", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTF_ATTR_BOOL(value: Double): Self = StObject.set(x, "TF_ATTR_BOOL", value.asInstanceOf[js.Any])
+      inline def setTF_ATTR_BOOL(value: Double): Self = StObject.set(x, "TF_ATTR_BOOL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTF_ATTR_FLOAT(value: Double): Self = StObject.set(x, "TF_ATTR_FLOAT", value.asInstanceOf[js.Any])
+      inline def setTF_ATTR_FLOAT(value: Double): Self = StObject.set(x, "TF_ATTR_FLOAT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTF_ATTR_INT(value: Double): Self = StObject.set(x, "TF_ATTR_INT", value.asInstanceOf[js.Any])
+      inline def setTF_ATTR_INT(value: Double): Self = StObject.set(x, "TF_ATTR_INT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTF_ATTR_RESOURCE(value: Double): Self = StObject.set(x, "TF_ATTR_RESOURCE", value.asInstanceOf[js.Any])
+      inline def setTF_ATTR_RESOURCE(value: Double): Self = StObject.set(x, "TF_ATTR_RESOURCE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTF_ATTR_SHAPE(value: Double): Self = StObject.set(x, "TF_ATTR_SHAPE", value.asInstanceOf[js.Any])
+      inline def setTF_ATTR_SHAPE(value: Double): Self = StObject.set(x, "TF_ATTR_SHAPE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTF_ATTR_STRING(value: Double): Self = StObject.set(x, "TF_ATTR_STRING", value.asInstanceOf[js.Any])
+      inline def setTF_ATTR_STRING(value: Double): Self = StObject.set(x, "TF_ATTR_STRING", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTF_ATTR_TYPE(value: Double): Self = StObject.set(x, "TF_ATTR_TYPE", value.asInstanceOf[js.Any])
+      inline def setTF_ATTR_TYPE(value: Double): Self = StObject.set(x, "TF_ATTR_TYPE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTF_BOOL(value: Double): Self = StObject.set(x, "TF_BOOL", value.asInstanceOf[js.Any])
+      inline def setTF_BOOL(value: Double): Self = StObject.set(x, "TF_BOOL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTF_COMPLEX64(value: Double): Self = StObject.set(x, "TF_COMPLEX64", value.asInstanceOf[js.Any])
+      inline def setTF_COMPLEX64(value: Double): Self = StObject.set(x, "TF_COMPLEX64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTF_FLOAT(value: Double): Self = StObject.set(x, "TF_FLOAT", value.asInstanceOf[js.Any])
+      inline def setTF_FLOAT(value: Double): Self = StObject.set(x, "TF_FLOAT", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTF_INT32(value: Double): Self = StObject.set(x, "TF_INT32", value.asInstanceOf[js.Any])
+      inline def setTF_INT32(value: Double): Self = StObject.set(x, "TF_INT32", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTF_INT64(value: Double): Self = StObject.set(x, "TF_INT64", value.asInstanceOf[js.Any])
+      inline def setTF_INT64(value: Double): Self = StObject.set(x, "TF_INT64", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTF_RESOURCE(value: Double): Self = StObject.set(x, "TF_RESOURCE", value.asInstanceOf[js.Any])
+      inline def setTF_RESOURCE(value: Double): Self = StObject.set(x, "TF_RESOURCE", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTF_STRING(value: Double): Self = StObject.set(x, "TF_STRING", value.asInstanceOf[js.Any])
+      inline def setTF_STRING(value: Double): Self = StObject.set(x, "TF_STRING", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTF_UINT8(value: Double): Self = StObject.set(x, "TF_UINT8", value.asInstanceOf[js.Any])
+      inline def setTF_UINT8(value: Double): Self = StObject.set(x, "TF_UINT8", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTF_Version(value: String): Self = StObject.set(x, "TF_Version", value.asInstanceOf[js.Any])
+      inline def setTF_Version(value: String): Self = StObject.set(x, "TF_Version", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTensorDataSync(value: Double => Float32Array | Int32Array | Uint8Array): Self = StObject.set(x, "tensorDataSync", js.Any.fromFunction1(value))
+      inline def setTensorDataSync(value: Double => Float32Array | Int32Array | Uint8Array): Self = StObject.set(x, "tensorDataSync", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTensorMetadata(value: Instantiable0[TensorMetadata]): Self = StObject.set(x, "TensorMetadata", value.asInstanceOf[js.Any])
+      inline def setTensorMetadata(value: Instantiable0[TensorMetadata]): Self = StObject.set(x, "TensorMetadata", value.asInstanceOf[js.Any])
     }
   }
 }

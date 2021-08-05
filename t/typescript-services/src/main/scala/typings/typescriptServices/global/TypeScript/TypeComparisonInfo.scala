@@ -22,11 +22,11 @@ class TypeComparisonInfo ()
   /* CompleteClass */
   var flags: typings.typescriptServices.TypeScript.TypeRelationshipFlags = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   var indent: js.Any = js.native
   
-  /* CompleteClass */
-  /* private */ override def indentString(): js.Any = js.native
+  /* private */ /* CompleteClass */
+  override def indentString(): js.Any = js.native
   
   /* CompleteClass */
   var message: String = js.native

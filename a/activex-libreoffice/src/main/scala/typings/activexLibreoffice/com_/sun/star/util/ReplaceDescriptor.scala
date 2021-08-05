@@ -28,8 +28,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 }
 object ReplaceDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     PropertySetInfo: XPropertySetInfo,
     ReplaceString: String,
     SearchBackwards: Boolean,
@@ -63,16 +62,12 @@ object ReplaceDescriptor {
     __obj.asInstanceOf[ReplaceDescriptor]
   }
   
-  @scala.inline
-  implicit class ReplaceDescriptorMutableBuilder[Self <: ReplaceDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: ReplaceDescriptor](x: Self) {
     
-    @scala.inline
-    def setGetReplaceString(value: () => String): Self = StObject.set(x, "getReplaceString", js.Any.fromFunction0(value))
+    inline def setGetReplaceString(value: () => String): Self = StObject.set(x, "getReplaceString", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReplaceString(value: String): Self = StObject.set(x, "ReplaceString", value.asInstanceOf[js.Any])
+    inline def setReplaceString(value: String): Self = StObject.set(x, "ReplaceString", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSetReplaceString(value: String => Unit): Self = StObject.set(x, "setReplaceString", js.Any.fromFunction1(value))
+    inline def setSetReplaceString(value: String => Unit): Self = StObject.set(x, "setReplaceString", js.Any.fromFunction1(value))
   }
 }

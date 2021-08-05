@@ -9,131 +9,107 @@ object xstateStrings {
   
   @js.native
   sealed trait Asterisk extends StObject
-  @scala.inline
-  def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
+  inline def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   
   @js.native
   sealed trait ExcludeType extends StObject
-  @scala.inline
-  def ExcludeType: ExcludeType = "ExcludeType".asInstanceOf[ExcludeType]
+  inline def ExcludeType: ExcludeType = "ExcludeType".asInstanceOf[ExcludeType]
   
   @js.native
   sealed trait ExtractStateValue extends StObject
-  @scala.inline
-  def ExtractStateValue: ExtractStateValue = "ExtractStateValue".asInstanceOf[ExtractStateValue]
+  inline def ExtractStateValue: ExtractStateValue = "ExtractStateValue".asInstanceOf[ExtractStateValue]
   
   @js.native
   sealed trait PropertyAssigner extends StObject
-  @scala.inline
-  def PropertyAssigner: PropertyAssigner = "PropertyAssigner".asInstanceOf[PropertyAssigner]
+  inline def PropertyAssigner: PropertyAssigner = "PropertyAssigner".asInstanceOf[PropertyAssigner]
   
   @js.native
   sealed trait PropertyMapper extends StObject
-  @scala.inline
-  def PropertyMapper: PropertyMapper = "PropertyMapper".asInstanceOf[PropertyMapper]
+  inline def PropertyMapper: PropertyMapper = "PropertyMapper".asInstanceOf[PropertyMapper]
   
   @js.native
   sealed trait StateNodesConfig extends StObject
-  @scala.inline
-  def StateNodesConfig: StateNodesConfig = "StateNodesConfig".asInstanceOf[StateNodesConfig]
+  inline def StateNodesConfig: StateNodesConfig = "StateNodesConfig".asInstanceOf[StateNodesConfig]
   
   @js.native
   sealed trait StatesConfig extends StObject
-  @scala.inline
-  def StatesConfig: StatesConfig = "StatesConfig".asInstanceOf[StatesConfig]
+  inline def StatesConfig: StatesConfig = "StatesConfig".asInstanceOf[StatesConfig]
   
   @js.native
   sealed trait StatesDefinition extends StObject
-  @scala.inline
-  def StatesDefinition: StatesDefinition = "StatesDefinition".asInstanceOf[StatesDefinition]
+  inline def StatesDefinition: StatesDefinition = "StatesDefinition".asInstanceOf[StatesDefinition]
   
   @js.native
   sealed trait TransitionDefinitionMap extends StObject
-  @scala.inline
-  def TransitionDefinitionMap: TransitionDefinitionMap = "TransitionDefinitionMap".asInstanceOf[TransitionDefinitionMap]
+  inline def TransitionDefinitionMap: TransitionDefinitionMap = "TransitionDefinitionMap".asInstanceOf[TransitionDefinitionMap]
   
   @js.native
   sealed trait _empty extends StObject
-  @scala.inline
-  def _empty: _empty = "".asInstanceOf[_empty]
+  inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
   sealed trait atomic
     extends StObject
        with _StateTypes
-  @scala.inline
-  def atomic: atomic = "atomic".asInstanceOf[atomic]
+  inline def atomic: atomic = "atomic".asInstanceOf[atomic]
   
   @js.native
   sealed trait compound
     extends StObject
        with _StateTypes
-  @scala.inline
-  def compound: compound = "compound".asInstanceOf[compound]
+  inline def compound: compound = "compound".asInstanceOf[compound]
   
   @js.native
   sealed trait configuration extends StObject
-  @scala.inline
-  def configuration: configuration = "configuration".asInstanceOf[configuration]
+  inline def configuration: configuration = "configuration".asInstanceOf[configuration]
   
   @js.native
   sealed trait deep extends StObject
-  @scala.inline
-  def deep: deep = "deep".asInstanceOf[deep]
+  inline def deep: deep = "deep".asInstanceOf[deep]
   
   @js.native
   sealed trait external extends StObject
-  @scala.inline
-  def external: external = "external".asInstanceOf[external]
+  inline def external: external = "external".asInstanceOf[external]
   
   @js.native
   sealed trait `final`
     extends StObject
        with _StateTypes
-  @scala.inline
-  def `final`: `final` = "final".asInstanceOf[`final`]
+  inline def `final`: `final` = "final".asInstanceOf[`final`]
   
   @js.native
   sealed trait history
     extends StObject
        with _StateTypes
-  @scala.inline
-  def history: history = "history".asInstanceOf[history]
+  inline def history: history = "history".asInstanceOf[history]
   
   @js.native
   sealed trait internal extends StObject
-  @scala.inline
-  def internal: internal = "internal".asInstanceOf[internal]
+  inline def internal: internal = "internal".asInstanceOf[internal]
   
   @js.native
   sealed trait parallel
     extends StObject
        with _StateTypes
-  @scala.inline
-  def parallel: parallel = "parallel".asInstanceOf[parallel]
+  inline def parallel: parallel = "parallel".asInstanceOf[parallel]
   
   @js.native
   sealed trait platform extends StObject
-  @scala.inline
-  def platform: platform = "platform".asInstanceOf[platform]
+  inline def platform: platform = "platform".asInstanceOf[platform]
   
   @js.native
   sealed trait scxml extends StObject
-  @scala.inline
-  def scxml: scxml = "scxml".asInstanceOf[scxml]
+  inline def scxml: scxml = "scxml".asInstanceOf[scxml]
   
   @js.native
   sealed trait shallow extends StObject
-  @scala.inline
-  def shallow: shallow = "shallow".asInstanceOf[shallow]
+  inline def shallow: shallow = "shallow".asInstanceOf[shallow]
   
   @js.native
   sealed trait transitions extends StObject
-  @scala.inline
-  def transitions: transitions = "transitions".asInstanceOf[transitions]
+  inline def transitions: transitions = "transitions".asInstanceOf[transitions]
   
   @js.native
   sealed trait xstateDotguard extends StObject
-  @scala.inline
-  def xstateDotguard: xstateDotguard = "xstate.guard".asInstanceOf[xstateDotguard]
+  inline def xstateDotguard: xstateDotguard = "xstate.guard".asInstanceOf[xstateDotguard]
 }

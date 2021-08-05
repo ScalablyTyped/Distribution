@@ -28,8 +28,7 @@ trait IMidiOutPort
 }
 object IMidiOutPort {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     close: () => Unit,
     deviceId: String,
     sendBuffer: IBuffer => Unit,
@@ -39,16 +38,12 @@ object IMidiOutPort {
     __obj.asInstanceOf[IMidiOutPort]
   }
   
-  @scala.inline
-  implicit class IMidiOutPortMutableBuilder[Self <: IMidiOutPort] (val x: Self) extends AnyVal {
+  extension [Self <: IMidiOutPort](x: Self) {
     
-    @scala.inline
-    def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
+    inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSendBuffer(value: IBuffer => Unit): Self = StObject.set(x, "sendBuffer", js.Any.fromFunction1(value))
+    inline def setSendBuffer(value: IBuffer => Unit): Self = StObject.set(x, "sendBuffer", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSendMessage(value: IMidiMessage => Unit): Self = StObject.set(x, "sendMessage", js.Any.fromFunction1(value))
+    inline def setSendMessage(value: IMidiMessage => Unit): Self = StObject.set(x, "sendMessage", js.Any.fromFunction1(value))
   }
 }

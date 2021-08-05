@@ -11,6 +11,5 @@ object componentStylesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def ComponentStyles(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ComponentStyles")().asInstanceOf[Element]
+  inline def ComponentStyles(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ComponentStyles")().asInstanceOf[Element]
 }

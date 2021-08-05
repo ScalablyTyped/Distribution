@@ -13,22 +13,17 @@ trait EnvelopeAuditEventResponse extends StObject {
 }
 object EnvelopeAuditEventResponse {
   
-  @scala.inline
-  def apply(): EnvelopeAuditEventResponse = {
+  inline def apply(): EnvelopeAuditEventResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EnvelopeAuditEventResponse]
   }
   
-  @scala.inline
-  implicit class EnvelopeAuditEventResponseMutableBuilder[Self <: EnvelopeAuditEventResponse] (val x: Self) extends AnyVal {
+  extension [Self <: EnvelopeAuditEventResponse](x: Self) {
     
-    @scala.inline
-    def setAuditEvents(value: js.Array[EnvelopeAuditEvent]): Self = StObject.set(x, "auditEvents", value.asInstanceOf[js.Any])
+    inline def setAuditEvents(value: js.Array[EnvelopeAuditEvent]): Self = StObject.set(x, "auditEvents", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuditEventsUndefined: Self = StObject.set(x, "auditEvents", js.undefined)
+    inline def setAuditEventsUndefined: Self = StObject.set(x, "auditEvents", js.undefined)
     
-    @scala.inline
-    def setAuditEventsVarargs(value: EnvelopeAuditEvent*): Self = StObject.set(x, "auditEvents", js.Array(value :_*))
+    inline def setAuditEventsVarargs(value: EnvelopeAuditEvent*): Self = StObject.set(x, "auditEvents", js.Array(value :_*))
   }
 }

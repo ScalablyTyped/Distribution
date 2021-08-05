@@ -16,19 +16,15 @@ trait Value
 }
 object Value {
   
-  @scala.inline
-  def apply(value: typings.wordpressRichText.mod.Value): Value = {
+  inline def apply(value: typings.wordpressRichText.mod.Value): Value = {
     val __obj = js.Dynamic.literal(action = "replace", value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Value]
   }
   
-  @scala.inline
-  implicit class ValueMutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
+  extension [Self <: Value](x: Self) {
     
-    @scala.inline
-    def setAction(value: replace): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: replace): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: typings.wordpressRichText.mod.Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: typings.wordpressRichText.mod.Value): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -149,8 +149,7 @@ trait TextSection
 }
 object TextSection {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Anchor: XTextRange,
     AnchorType: TextContentAnchorType,
     AnchorTypes: SafeArray[TextContentAnchorType],
@@ -217,94 +216,64 @@ object TextSection {
     __obj.asInstanceOf[TextSection]
   }
   
-  @scala.inline
-  implicit class TextSectionMutableBuilder[Self <: TextSection] (val x: Self) extends AnyVal {
+  extension [Self <: TextSection](x: Self) {
     
-    @scala.inline
-    def setBackGraphicFilter(value: String): Self = StObject.set(x, "BackGraphicFilter", value.asInstanceOf[js.Any])
+    inline def setBackGraphicFilter(value: String): Self = StObject.set(x, "BackGraphicFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackGraphicLocation(value: GraphicLocation): Self = StObject.set(x, "BackGraphicLocation", value.asInstanceOf[js.Any])
+    inline def setBackGraphicLocation(value: GraphicLocation): Self = StObject.set(x, "BackGraphicLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackGraphicURL(value: String): Self = StObject.set(x, "BackGraphicURL", value.asInstanceOf[js.Any])
+    inline def setBackGraphicURL(value: String): Self = StObject.set(x, "BackGraphicURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCondition(value: String): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
+    inline def setCondition(value: String): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDDECommandElement(value: String): Self = StObject.set(x, "DDECommandElement", value.asInstanceOf[js.Any])
+    inline def setDDECommandElement(value: String): Self = StObject.set(x, "DDECommandElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDDECommandFile(value: String): Self = StObject.set(x, "DDECommandFile", value.asInstanceOf[js.Any])
+    inline def setDDECommandFile(value: String): Self = StObject.set(x, "DDECommandFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDDECommandType(value: String): Self = StObject.set(x, "DDECommandType", value.asInstanceOf[js.Any])
+    inline def setDDECommandType(value: String): Self = StObject.set(x, "DDECommandType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndnoteIsCollectAtTextEnd(value: Boolean): Self = StObject.set(x, "EndnoteIsCollectAtTextEnd", value.asInstanceOf[js.Any])
+    inline def setEndnoteIsCollectAtTextEnd(value: Boolean): Self = StObject.set(x, "EndnoteIsCollectAtTextEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndnoteIsOwnNumbering(value: Boolean): Self = StObject.set(x, "EndnoteIsOwnNumbering", value.asInstanceOf[js.Any])
+    inline def setEndnoteIsOwnNumbering(value: Boolean): Self = StObject.set(x, "EndnoteIsOwnNumbering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndnoteIsRestartNumbering(value: Boolean): Self = StObject.set(x, "EndnoteIsRestartNumbering", value.asInstanceOf[js.Any])
+    inline def setEndnoteIsRestartNumbering(value: Boolean): Self = StObject.set(x, "EndnoteIsRestartNumbering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndnoteNumberingPrefix(value: String): Self = StObject.set(x, "EndnoteNumberingPrefix", value.asInstanceOf[js.Any])
+    inline def setEndnoteNumberingPrefix(value: String): Self = StObject.set(x, "EndnoteNumberingPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndnoteNumberingSuffix(value: String): Self = StObject.set(x, "EndnoteNumberingSuffix", value.asInstanceOf[js.Any])
+    inline def setEndnoteNumberingSuffix(value: String): Self = StObject.set(x, "EndnoteNumberingSuffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndnoteNumberingType(value: Double): Self = StObject.set(x, "EndnoteNumberingType", value.asInstanceOf[js.Any])
+    inline def setEndnoteNumberingType(value: Double): Self = StObject.set(x, "EndnoteNumberingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndnoteRestartNumberingAt(value: Double): Self = StObject.set(x, "EndnoteRestartNumberingAt", value.asInstanceOf[js.Any])
+    inline def setEndnoteRestartNumberingAt(value: Double): Self = StObject.set(x, "EndnoteRestartNumberingAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileLink(value: SectionFileLink): Self = StObject.set(x, "FileLink", value.asInstanceOf[js.Any])
+    inline def setFileLink(value: SectionFileLink): Self = StObject.set(x, "FileLink", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFootnoteIsCollectAtTextEnd(value: Boolean): Self = StObject.set(x, "FootnoteIsCollectAtTextEnd", value.asInstanceOf[js.Any])
+    inline def setFootnoteIsCollectAtTextEnd(value: Boolean): Self = StObject.set(x, "FootnoteIsCollectAtTextEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFootnoteIsOwnNumbering(value: Boolean): Self = StObject.set(x, "FootnoteIsOwnNumbering", value.asInstanceOf[js.Any])
+    inline def setFootnoteIsOwnNumbering(value: Boolean): Self = StObject.set(x, "FootnoteIsOwnNumbering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFootnoteIsRestartNumbering(value: Boolean): Self = StObject.set(x, "FootnoteIsRestartNumbering", value.asInstanceOf[js.Any])
+    inline def setFootnoteIsRestartNumbering(value: Boolean): Self = StObject.set(x, "FootnoteIsRestartNumbering", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFootnoteNumberingPrefix(value: String): Self = StObject.set(x, "FootnoteNumberingPrefix", value.asInstanceOf[js.Any])
+    inline def setFootnoteNumberingPrefix(value: String): Self = StObject.set(x, "FootnoteNumberingPrefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFootnoteNumberingSuffix(value: String): Self = StObject.set(x, "FootnoteNumberingSuffix", value.asInstanceOf[js.Any])
+    inline def setFootnoteNumberingSuffix(value: String): Self = StObject.set(x, "FootnoteNumberingSuffix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFootnoteNumberingType(value: Double): Self = StObject.set(x, "FootnoteNumberingType", value.asInstanceOf[js.Any])
+    inline def setFootnoteNumberingType(value: Double): Self = StObject.set(x, "FootnoteNumberingType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFootnoteRestartNumberingAt(value: Double): Self = StObject.set(x, "FootnoteRestartNumberingAt", value.asInstanceOf[js.Any])
+    inline def setFootnoteRestartNumberingAt(value: Double): Self = StObject.set(x, "FootnoteRestartNumberingAt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsAutomaticUpdate(value: Boolean): Self = StObject.set(x, "IsAutomaticUpdate", value.asInstanceOf[js.Any])
+    inline def setIsAutomaticUpdate(value: Boolean): Self = StObject.set(x, "IsAutomaticUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsProtected(value: Boolean): Self = StObject.set(x, "IsProtected", value.asInstanceOf[js.Any])
+    inline def setIsProtected(value: Boolean): Self = StObject.set(x, "IsProtected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsVisible(value: Boolean): Self = StObject.set(x, "IsVisible", value.asInstanceOf[js.Any])
+    inline def setIsVisible(value: Boolean): Self = StObject.set(x, "IsVisible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkRegion(value: String): Self = StObject.set(x, "LinkRegion", value.asInstanceOf[js.Any])
+    inline def setLinkRegion(value: String): Self = StObject.set(x, "LinkRegion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionLeftMargin(value: Double): Self = StObject.set(x, "SectionLeftMargin", value.asInstanceOf[js.Any])
+    inline def setSectionLeftMargin(value: Double): Self = StObject.set(x, "SectionLeftMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSectionRightMargin(value: Double): Self = StObject.set(x, "SectionRightMargin", value.asInstanceOf[js.Any])
+    inline def setSectionRightMargin(value: Double): Self = StObject.set(x, "SectionRightMargin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextColumns(value: XTextColumns): Self = StObject.set(x, "TextColumns", value.asInstanceOf[js.Any])
+    inline def setTextColumns(value: XTextColumns): Self = StObject.set(x, "TextColumns", value.asInstanceOf[js.Any])
   }
 }

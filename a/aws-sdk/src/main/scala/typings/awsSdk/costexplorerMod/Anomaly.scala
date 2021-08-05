@@ -53,58 +53,41 @@ trait Anomaly extends StObject {
 }
 object Anomaly {
   
-  @scala.inline
-  def apply(AnomalyId: GenericString, AnomalyScore: AnomalyScore, Impact: Impact, MonitorArn: GenericString): Anomaly = {
+  inline def apply(AnomalyId: GenericString, AnomalyScore: AnomalyScore, Impact: Impact, MonitorArn: GenericString): Anomaly = {
     val __obj = js.Dynamic.literal(AnomalyId = AnomalyId.asInstanceOf[js.Any], AnomalyScore = AnomalyScore.asInstanceOf[js.Any], Impact = Impact.asInstanceOf[js.Any], MonitorArn = MonitorArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[Anomaly]
   }
   
-  @scala.inline
-  implicit class AnomalyMutableBuilder[Self <: Anomaly] (val x: Self) extends AnyVal {
+  extension [Self <: Anomaly](x: Self) {
     
-    @scala.inline
-    def setAnomalyEndDate(value: YearMonthDay): Self = StObject.set(x, "AnomalyEndDate", value.asInstanceOf[js.Any])
+    inline def setAnomalyEndDate(value: YearMonthDay): Self = StObject.set(x, "AnomalyEndDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnomalyEndDateUndefined: Self = StObject.set(x, "AnomalyEndDate", js.undefined)
+    inline def setAnomalyEndDateUndefined: Self = StObject.set(x, "AnomalyEndDate", js.undefined)
     
-    @scala.inline
-    def setAnomalyId(value: GenericString): Self = StObject.set(x, "AnomalyId", value.asInstanceOf[js.Any])
+    inline def setAnomalyId(value: GenericString): Self = StObject.set(x, "AnomalyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnomalyScore(value: AnomalyScore): Self = StObject.set(x, "AnomalyScore", value.asInstanceOf[js.Any])
+    inline def setAnomalyScore(value: AnomalyScore): Self = StObject.set(x, "AnomalyScore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnomalyStartDate(value: YearMonthDay): Self = StObject.set(x, "AnomalyStartDate", value.asInstanceOf[js.Any])
+    inline def setAnomalyStartDate(value: YearMonthDay): Self = StObject.set(x, "AnomalyStartDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnomalyStartDateUndefined: Self = StObject.set(x, "AnomalyStartDate", js.undefined)
+    inline def setAnomalyStartDateUndefined: Self = StObject.set(x, "AnomalyStartDate", js.undefined)
     
-    @scala.inline
-    def setDimensionValue(value: GenericString): Self = StObject.set(x, "DimensionValue", value.asInstanceOf[js.Any])
+    inline def setDimensionValue(value: GenericString): Self = StObject.set(x, "DimensionValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionValueUndefined: Self = StObject.set(x, "DimensionValue", js.undefined)
+    inline def setDimensionValueUndefined: Self = StObject.set(x, "DimensionValue", js.undefined)
     
-    @scala.inline
-    def setFeedback(value: AnomalyFeedbackType): Self = StObject.set(x, "Feedback", value.asInstanceOf[js.Any])
+    inline def setFeedback(value: AnomalyFeedbackType): Self = StObject.set(x, "Feedback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeedbackUndefined: Self = StObject.set(x, "Feedback", js.undefined)
+    inline def setFeedbackUndefined: Self = StObject.set(x, "Feedback", js.undefined)
     
-    @scala.inline
-    def setImpact(value: Impact): Self = StObject.set(x, "Impact", value.asInstanceOf[js.Any])
+    inline def setImpact(value: Impact): Self = StObject.set(x, "Impact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMonitorArn(value: GenericString): Self = StObject.set(x, "MonitorArn", value.asInstanceOf[js.Any])
+    inline def setMonitorArn(value: GenericString): Self = StObject.set(x, "MonitorArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootCauses(value: RootCauses): Self = StObject.set(x, "RootCauses", value.asInstanceOf[js.Any])
+    inline def setRootCauses(value: RootCauses): Self = StObject.set(x, "RootCauses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootCausesUndefined: Self = StObject.set(x, "RootCauses", js.undefined)
+    inline def setRootCausesUndefined: Self = StObject.set(x, "RootCauses", js.undefined)
     
-    @scala.inline
-    def setRootCausesVarargs(value: RootCause*): Self = StObject.set(x, "RootCauses", js.Array(value :_*))
+    inline def setRootCausesVarargs(value: RootCause*): Self = StObject.set(x, "RootCauses", js.Array(value :_*))
   }
 }

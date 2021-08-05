@@ -18,43 +18,31 @@ trait RetryOptions extends StObject {
 }
 object RetryOptions {
   
-  @scala.inline
-  def apply(): RetryOptions = {
+  inline def apply(): RetryOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RetryOptions]
   }
   
-  @scala.inline
-  implicit class RetryOptionsMutableBuilder[Self <: RetryOptions] (val x: Self) extends AnyVal {
+  extension [Self <: RetryOptions](x: Self) {
     
-    @scala.inline
-    def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
+    inline def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
+    inline def setFactorUndefined: Self = StObject.set(x, "factor", js.undefined)
     
-    @scala.inline
-    def setMaxTimeout(value: Double): Self = StObject.set(x, "maxTimeout", value.asInstanceOf[js.Any])
+    inline def setMaxTimeout(value: Double): Self = StObject.set(x, "maxTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxTimeoutUndefined: Self = StObject.set(x, "maxTimeout", js.undefined)
+    inline def setMaxTimeoutUndefined: Self = StObject.set(x, "maxTimeout", js.undefined)
     
-    @scala.inline
-    def setMinTimeout(value: Double): Self = StObject.set(x, "minTimeout", value.asInstanceOf[js.Any])
+    inline def setMinTimeout(value: Double): Self = StObject.set(x, "minTimeout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinTimeoutUndefined: Self = StObject.set(x, "minTimeout", js.undefined)
+    inline def setMinTimeoutUndefined: Self = StObject.set(x, "minTimeout", js.undefined)
     
-    @scala.inline
-    def setRandomize(value: Boolean): Self = StObject.set(x, "randomize", value.asInstanceOf[js.Any])
+    inline def setRandomize(value: Boolean): Self = StObject.set(x, "randomize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRandomizeUndefined: Self = StObject.set(x, "randomize", js.undefined)
+    inline def setRandomizeUndefined: Self = StObject.set(x, "randomize", js.undefined)
     
-    @scala.inline
-    def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
+    inline def setRetries(value: Double): Self = StObject.set(x, "retries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
+    inline def setRetriesUndefined: Self = StObject.set(x, "retries", js.undefined)
   }
 }

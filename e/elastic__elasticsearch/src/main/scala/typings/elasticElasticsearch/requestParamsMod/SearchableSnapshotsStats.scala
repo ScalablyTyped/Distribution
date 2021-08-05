@@ -12,22 +12,17 @@ trait SearchableSnapshotsStats
 }
 object SearchableSnapshotsStats {
   
-  @scala.inline
-  def apply(): SearchableSnapshotsStats = {
+  inline def apply(): SearchableSnapshotsStats = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SearchableSnapshotsStats]
   }
   
-  @scala.inline
-  implicit class SearchableSnapshotsStatsMutableBuilder[Self <: SearchableSnapshotsStats] (val x: Self) extends AnyVal {
+  extension [Self <: SearchableSnapshotsStats](x: Self) {
     
-    @scala.inline
-    def setIndex(value: String | js.Array[String]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: String | js.Array[String]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
+    inline def setIndexVarargs(value: String*): Self = StObject.set(x, "index", js.Array(value :_*))
   }
 }

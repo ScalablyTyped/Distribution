@@ -8,6 +8,5 @@ object procfsStatsStrings {
   
   @js.native
   sealed trait `136524` extends StObject
-  @scala.inline
-  def `136524`: `136524` = "136524".asInstanceOf[`136524`]
+  inline def `136524`: `136524` = "136524".asInstanceOf[`136524`]
 }

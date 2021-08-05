@@ -12,19 +12,15 @@ trait TimeFilterPair extends StObject {
 }
 object TimeFilterPair {
   
-  @scala.inline
-  def apply(Progress: Double, Time: Double): TimeFilterPair = {
+  inline def apply(Progress: Double, Time: Double): TimeFilterPair = {
     val __obj = js.Dynamic.literal(Progress = Progress.asInstanceOf[js.Any], Time = Time.asInstanceOf[js.Any])
     __obj.asInstanceOf[TimeFilterPair]
   }
   
-  @scala.inline
-  implicit class TimeFilterPairMutableBuilder[Self <: TimeFilterPair] (val x: Self) extends AnyVal {
+  extension [Self <: TimeFilterPair](x: Self) {
     
-    @scala.inline
-    def setProgress(value: Double): Self = StObject.set(x, "Progress", value.asInstanceOf[js.Any])
+    inline def setProgress(value: Double): Self = StObject.set(x, "Progress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTime(value: Double): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
+    inline def setTime(value: Double): Self = StObject.set(x, "Time", value.asInstanceOf[js.Any])
   }
 }

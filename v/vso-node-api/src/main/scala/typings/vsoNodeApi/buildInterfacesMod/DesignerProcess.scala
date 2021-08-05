@@ -12,20 +12,16 @@ trait DesignerProcess
 }
 object DesignerProcess {
   
-  @scala.inline
-  def apply(phases: js.Array[Phase], `type`: Double): DesignerProcess = {
+  inline def apply(phases: js.Array[Phase], `type`: Double): DesignerProcess = {
     val __obj = js.Dynamic.literal(phases = phases.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DesignerProcess]
   }
   
-  @scala.inline
-  implicit class DesignerProcessMutableBuilder[Self <: DesignerProcess] (val x: Self) extends AnyVal {
+  extension [Self <: DesignerProcess](x: Self) {
     
-    @scala.inline
-    def setPhases(value: js.Array[Phase]): Self = StObject.set(x, "phases", value.asInstanceOf[js.Any])
+    inline def setPhases(value: js.Array[Phase]): Self = StObject.set(x, "phases", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhasesVarargs(value: Phase*): Self = StObject.set(x, "phases", js.Array(value :_*))
+    inline def setPhasesVarargs(value: Phase*): Self = StObject.set(x, "phases", js.Array(value :_*))
   }
 }

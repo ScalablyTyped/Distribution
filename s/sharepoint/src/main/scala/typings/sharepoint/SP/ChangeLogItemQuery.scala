@@ -38,8 +38,7 @@ trait ChangeLogItemQuery
 }
 object ChangeLogItemQuery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     customFromJson: js.Any => Boolean,
     customWriteToXml: (XmlWriter, SerializationContext) => Boolean,
     fromJson: js.Any => Unit,
@@ -64,49 +63,34 @@ object ChangeLogItemQuery {
     __obj.asInstanceOf[ChangeLogItemQuery]
   }
   
-  @scala.inline
-  implicit class ChangeLogItemQueryMutableBuilder[Self <: ChangeLogItemQuery] (val x: Self) extends AnyVal {
+  extension [Self <: ChangeLogItemQuery](x: Self) {
     
-    @scala.inline
-    def setGet_changeToken(value: () => String): Self = StObject.set(x, "get_changeToken", js.Any.fromFunction0(value))
+    inline def setGet_changeToken(value: () => String): Self = StObject.set(x, "get_changeToken", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_contains(value: () => String): Self = StObject.set(x, "get_contains", js.Any.fromFunction0(value))
+    inline def setGet_contains(value: () => String): Self = StObject.set(x, "get_contains", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_query(value: () => String): Self = StObject.set(x, "get_query", js.Any.fromFunction0(value))
+    inline def setGet_query(value: () => String): Self = StObject.set(x, "get_query", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_queryOptions(value: () => String): Self = StObject.set(x, "get_queryOptions", js.Any.fromFunction0(value))
+    inline def setGet_queryOptions(value: () => String): Self = StObject.set(x, "get_queryOptions", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_rowLimit(value: () => String): Self = StObject.set(x, "get_rowLimit", js.Any.fromFunction0(value))
+    inline def setGet_rowLimit(value: () => String): Self = StObject.set(x, "get_rowLimit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_viewFields(value: () => String): Self = StObject.set(x, "get_viewFields", js.Any.fromFunction0(value))
+    inline def setGet_viewFields(value: () => String): Self = StObject.set(x, "get_viewFields", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGet_viewName(value: () => String): Self = StObject.set(x, "get_viewName", js.Any.fromFunction0(value))
+    inline def setGet_viewName(value: () => String): Self = StObject.set(x, "get_viewName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSet_changeToken(value: String => Unit): Self = StObject.set(x, "set_changeToken", js.Any.fromFunction1(value))
+    inline def setSet_changeToken(value: String => Unit): Self = StObject.set(x, "set_changeToken", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_contains(value: String => Unit): Self = StObject.set(x, "set_contains", js.Any.fromFunction1(value))
+    inline def setSet_contains(value: String => Unit): Self = StObject.set(x, "set_contains", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_query(value: String => Unit): Self = StObject.set(x, "set_query", js.Any.fromFunction1(value))
+    inline def setSet_query(value: String => Unit): Self = StObject.set(x, "set_query", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_queryOptions(value: String => Unit): Self = StObject.set(x, "set_queryOptions", js.Any.fromFunction1(value))
+    inline def setSet_queryOptions(value: String => Unit): Self = StObject.set(x, "set_queryOptions", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_rowLimit(value: String => Unit): Self = StObject.set(x, "set_rowLimit", js.Any.fromFunction1(value))
+    inline def setSet_rowLimit(value: String => Unit): Self = StObject.set(x, "set_rowLimit", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_viewFields(value: String => Unit): Self = StObject.set(x, "set_viewFields", js.Any.fromFunction1(value))
+    inline def setSet_viewFields(value: String => Unit): Self = StObject.set(x, "set_viewFields", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSet_viewName(value: String => Unit): Self = StObject.set(x, "set_viewName", js.Any.fromFunction1(value))
+    inline def setSet_viewName(value: String => Unit): Self = StObject.set(x, "set_viewName", js.Any.fromFunction1(value))
   }
 }

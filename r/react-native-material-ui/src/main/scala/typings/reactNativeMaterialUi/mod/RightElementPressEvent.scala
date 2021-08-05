@@ -14,25 +14,19 @@ trait RightElementPressEvent extends StObject {
 }
 object RightElementPressEvent {
   
-  @scala.inline
-  def apply(action: String, index: Double): RightElementPressEvent = {
+  inline def apply(action: String, index: Double): RightElementPressEvent = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
     __obj.asInstanceOf[RightElementPressEvent]
   }
   
-  @scala.inline
-  implicit class RightElementPressEventMutableBuilder[Self <: RightElementPressEvent] (val x: Self) extends AnyVal {
+  extension [Self <: RightElementPressEvent](x: Self) {
     
-    @scala.inline
-    def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
   }
 }

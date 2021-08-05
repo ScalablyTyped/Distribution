@@ -19,37 +19,27 @@ trait SchedulerResizeEndEvent
 }
 object SchedulerResizeEndEvent {
   
-  @scala.inline
-  def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Scheduler): SchedulerResizeEndEvent = {
+  inline def apply(isDefaultPrevented: () => Boolean, preventDefault: js.Function, sender: Scheduler): SchedulerResizeEndEvent = {
     val __obj = js.Dynamic.literal(isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), preventDefault = preventDefault.asInstanceOf[js.Any], sender = sender.asInstanceOf[js.Any])
     __obj.asInstanceOf[SchedulerResizeEndEvent]
   }
   
-  @scala.inline
-  implicit class SchedulerResizeEndEventMutableBuilder[Self <: SchedulerResizeEndEvent] (val x: Self) extends AnyVal {
+  extension [Self <: SchedulerResizeEndEvent](x: Self) {
     
-    @scala.inline
-    def setEnd(value: Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
+    inline def setEnd(value: Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+    inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
     
-    @scala.inline
-    def setEvent(value: typings.kendoUi.kendo.data.SchedulerEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: typings.kendoUi.kendo.data.SchedulerEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+    inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
-    @scala.inline
-    def setSlot(value: js.Any): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
+    inline def setSlot(value: js.Any): Self = StObject.set(x, "slot", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
+    inline def setSlotUndefined: Self = StObject.set(x, "slot", js.undefined)
     
-    @scala.inline
-    def setStart(value: Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+    inline def setStart(value: Date): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+    inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
   }
 }

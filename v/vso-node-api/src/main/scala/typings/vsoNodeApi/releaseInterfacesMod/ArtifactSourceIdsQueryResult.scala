@@ -10,19 +10,15 @@ trait ArtifactSourceIdsQueryResult extends StObject {
 }
 object ArtifactSourceIdsQueryResult {
   
-  @scala.inline
-  def apply(artifactSourceIds: js.Array[ArtifactSourceId]): ArtifactSourceIdsQueryResult = {
+  inline def apply(artifactSourceIds: js.Array[ArtifactSourceId]): ArtifactSourceIdsQueryResult = {
     val __obj = js.Dynamic.literal(artifactSourceIds = artifactSourceIds.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArtifactSourceIdsQueryResult]
   }
   
-  @scala.inline
-  implicit class ArtifactSourceIdsQueryResultMutableBuilder[Self <: ArtifactSourceIdsQueryResult] (val x: Self) extends AnyVal {
+  extension [Self <: ArtifactSourceIdsQueryResult](x: Self) {
     
-    @scala.inline
-    def setArtifactSourceIds(value: js.Array[ArtifactSourceId]): Self = StObject.set(x, "artifactSourceIds", value.asInstanceOf[js.Any])
+    inline def setArtifactSourceIds(value: js.Array[ArtifactSourceId]): Self = StObject.set(x, "artifactSourceIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArtifactSourceIdsVarargs(value: ArtifactSourceId*): Self = StObject.set(x, "artifactSourceIds", js.Array(value :_*))
+    inline def setArtifactSourceIdsVarargs(value: ArtifactSourceId*): Self = StObject.set(x, "artifactSourceIds", js.Array(value :_*))
   }
 }

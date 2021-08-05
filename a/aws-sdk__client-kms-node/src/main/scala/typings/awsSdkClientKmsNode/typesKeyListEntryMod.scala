@@ -20,26 +20,20 @@ object typesKeyListEntryMod {
   }
   object KeyListEntry {
     
-    @scala.inline
-    def apply(): KeyListEntry = {
+    inline def apply(): KeyListEntry = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[KeyListEntry]
     }
     
-    @scala.inline
-    implicit class KeyListEntryMutableBuilder[Self <: KeyListEntry] (val x: Self) extends AnyVal {
+    extension [Self <: KeyListEntry](x: Self) {
       
-      @scala.inline
-      def setKeyArn(value: String): Self = StObject.set(x, "KeyArn", value.asInstanceOf[js.Any])
+      inline def setKeyArn(value: String): Self = StObject.set(x, "KeyArn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyArnUndefined: Self = StObject.set(x, "KeyArn", js.undefined)
+      inline def setKeyArnUndefined: Self = StObject.set(x, "KeyArn", js.undefined)
       
-      @scala.inline
-      def setKeyId(value: String): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+      inline def setKeyId(value: String): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
+      inline def setKeyIdUndefined: Self = StObject.set(x, "KeyId", js.undefined)
     }
   }
   

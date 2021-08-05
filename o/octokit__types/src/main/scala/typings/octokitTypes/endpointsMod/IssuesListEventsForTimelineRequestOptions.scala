@@ -20,25 +20,19 @@ trait IssuesListEventsForTimelineRequestOptions extends StObject {
 }
 object IssuesListEventsForTimelineRequestOptions {
   
-  @scala.inline
-  def apply(headers: RequestHeaders, request: RequestRequestOptions): IssuesListEventsForTimelineRequestOptions = {
+  inline def apply(headers: RequestHeaders, request: RequestRequestOptions): IssuesListEventsForTimelineRequestOptions = {
     val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = "GET", request = request.asInstanceOf[js.Any], url = "/repos/:owner/:repo/issues/:issue_number/timeline")
     __obj.asInstanceOf[IssuesListEventsForTimelineRequestOptions]
   }
   
-  @scala.inline
-  implicit class IssuesListEventsForTimelineRequestOptionsMutableBuilder[Self <: IssuesListEventsForTimelineRequestOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IssuesListEventsForTimelineRequestOptions](x: Self) {
     
-    @scala.inline
-    def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: RequestHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: GET): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: RequestRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashtimeline): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: SlashreposSlashColonownerSlashColonrepoSlashissuesSlashColonissue_numberSlashtimeline): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

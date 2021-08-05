@@ -20,28 +20,21 @@ trait BatchWriteItemInput extends StObject {
 }
 object BatchWriteItemInput {
   
-  @scala.inline
-  def apply(RequestItems: BatchWriteItemRequestMap): BatchWriteItemInput = {
+  inline def apply(RequestItems: BatchWriteItemRequestMap): BatchWriteItemInput = {
     val __obj = js.Dynamic.literal(RequestItems = RequestItems.asInstanceOf[js.Any])
     __obj.asInstanceOf[BatchWriteItemInput]
   }
   
-  @scala.inline
-  implicit class BatchWriteItemInputMutableBuilder[Self <: BatchWriteItemInput] (val x: Self) extends AnyVal {
+  extension [Self <: BatchWriteItemInput](x: Self) {
     
-    @scala.inline
-    def setRequestItems(value: BatchWriteItemRequestMap): Self = StObject.set(x, "RequestItems", value.asInstanceOf[js.Any])
+    inline def setRequestItems(value: BatchWriteItemRequestMap): Self = StObject.set(x, "RequestItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
+    inline def setReturnConsumedCapacity(value: ReturnConsumedCapacity): Self = StObject.set(x, "ReturnConsumedCapacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
+    inline def setReturnConsumedCapacityUndefined: Self = StObject.set(x, "ReturnConsumedCapacity", js.undefined)
     
-    @scala.inline
-    def setReturnItemCollectionMetrics(value: ReturnItemCollectionMetrics): Self = StObject.set(x, "ReturnItemCollectionMetrics", value.asInstanceOf[js.Any])
+    inline def setReturnItemCollectionMetrics(value: ReturnItemCollectionMetrics): Self = StObject.set(x, "ReturnItemCollectionMetrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturnItemCollectionMetricsUndefined: Self = StObject.set(x, "ReturnItemCollectionMetrics", js.undefined)
+    inline def setReturnItemCollectionMetricsUndefined: Self = StObject.set(x, "ReturnItemCollectionMetrics", js.undefined)
   }
 }

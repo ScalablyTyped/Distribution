@@ -18,28 +18,21 @@ trait ListRootsResponse extends StObject {
 }
 object ListRootsResponse {
   
-  @scala.inline
-  def apply(): ListRootsResponse = {
+  inline def apply(): ListRootsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListRootsResponse]
   }
   
-  @scala.inline
-  implicit class ListRootsResponseMutableBuilder[Self <: ListRootsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListRootsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setRoots(value: Roots): Self = StObject.set(x, "Roots", value.asInstanceOf[js.Any])
+    inline def setRoots(value: Roots): Self = StObject.set(x, "Roots", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootsUndefined: Self = StObject.set(x, "Roots", js.undefined)
+    inline def setRootsUndefined: Self = StObject.set(x, "Roots", js.undefined)
     
-    @scala.inline
-    def setRootsVarargs(value: Root*): Self = StObject.set(x, "Roots", js.Array(value :_*))
+    inline def setRootsVarargs(value: Root*): Self = StObject.set(x, "Roots", js.Array(value :_*))
   }
 }

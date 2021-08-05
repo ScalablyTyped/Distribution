@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait KeyTypeEnum extends StObject
 object KeyTypeEnum {
   
-  @scala.inline
-  def adKeyForeign: `2` = 2.asInstanceOf[`2`]
+  inline def adKeyForeign: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def adKeyPrimary: `1` = 1.asInstanceOf[`1`]
+  inline def adKeyPrimary: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def adKeyUnique: `3` = 3.asInstanceOf[`3`]
+  inline def adKeyUnique: `3` = 3.asInstanceOf[`3`]
 }

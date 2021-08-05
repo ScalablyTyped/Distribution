@@ -14,31 +14,23 @@ trait EmptyUpdate extends StObject {
 }
 object EmptyUpdate {
   
-  @scala.inline
-  def apply(): EmptyUpdate = {
+  inline def apply(): EmptyUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EmptyUpdate]
   }
   
-  @scala.inline
-  implicit class EmptyUpdateMutableBuilder[Self <: EmptyUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: EmptyUpdate](x: Self) {
     
-    @scala.inline
-    def setEmptyUpdate(value: js.Any): Self = StObject.set(x, "emptyUpdate", value.asInstanceOf[js.Any])
+    inline def setEmptyUpdate(value: js.Any): Self = StObject.set(x, "emptyUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmptyUpdateUndefined: Self = StObject.set(x, "emptyUpdate", js.undefined)
+    inline def setEmptyUpdateUndefined: Self = StObject.set(x, "emptyUpdate", js.undefined)
     
-    @scala.inline
-    def setTableAlias(value: String): Self = StObject.set(x, "tableAlias", value.asInstanceOf[js.Any])
+    inline def setTableAlias(value: String): Self = StObject.set(x, "tableAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableAliasUndefined: Self = StObject.set(x, "tableAlias", js.undefined)
+    inline def setTableAliasUndefined: Self = StObject.set(x, "tableAlias", js.undefined)
     
-    @scala.inline
-    def setValueAlias(value: String): Self = StObject.set(x, "valueAlias", value.asInstanceOf[js.Any])
+    inline def setValueAlias(value: String): Self = StObject.set(x, "valueAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueAliasUndefined: Self = StObject.set(x, "valueAlias", js.undefined)
+    inline def setValueAliasUndefined: Self = StObject.set(x, "valueAlias", js.undefined)
   }
 }

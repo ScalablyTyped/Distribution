@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(rules: js.Array[Rule]): js.Function1[/* options */ Options, js.Promise[Record[String, String]]] = ^.asInstanceOf[js.Dynamic].apply(rules.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* options */ Options, js.Promise[Record[String, String]]]]
+  inline def apply(rules: js.Array[Rule]): js.Function1[/* options */ Options, js.Promise[Record[String, String]]] = ^.asInstanceOf[js.Dynamic].apply(rules.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* options */ Options, js.Promise[Record[String, String]]]]
   
   @JSImport("metascraper", JSImport.Namespace)
   @js.native
@@ -24,29 +23,22 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(html: String, url: String): Options = {
+    inline def apply(html: String, url: String): Options = {
       val __obj = js.Dynamic.literal(html = html.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
+      inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRules(value: js.Array[Rule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+      inline def setRules(value: js.Array[Rule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+      inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
       
-      @scala.inline
-      def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value :_*))
+      inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "rules", js.Array(value :_*))
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
   }
   

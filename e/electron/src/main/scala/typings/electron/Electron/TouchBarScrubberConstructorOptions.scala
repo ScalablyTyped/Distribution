@@ -55,61 +55,43 @@ trait TouchBarScrubberConstructorOptions extends StObject {
 }
 object TouchBarScrubberConstructorOptions {
   
-  @scala.inline
-  def apply(items: js.Array[ScrubberItem]): TouchBarScrubberConstructorOptions = {
+  inline def apply(items: js.Array[ScrubberItem]): TouchBarScrubberConstructorOptions = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
     __obj.asInstanceOf[TouchBarScrubberConstructorOptions]
   }
   
-  @scala.inline
-  implicit class TouchBarScrubberConstructorOptionsMutableBuilder[Self <: TouchBarScrubberConstructorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: TouchBarScrubberConstructorOptions](x: Self) {
     
-    @scala.inline
-    def setContinuous(value: Boolean): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
+    inline def setContinuous(value: Boolean): Self = StObject.set(x, "continuous", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContinuousUndefined: Self = StObject.set(x, "continuous", js.undefined)
+    inline def setContinuousUndefined: Self = StObject.set(x, "continuous", js.undefined)
     
-    @scala.inline
-    def setHighlight(value: /* highlightedIndex */ Double => Unit): Self = StObject.set(x, "highlight", js.Any.fromFunction1(value))
+    inline def setHighlight(value: /* highlightedIndex */ Double => Unit): Self = StObject.set(x, "highlight", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
+    inline def setHighlightUndefined: Self = StObject.set(x, "highlight", js.undefined)
     
-    @scala.inline
-    def setItems(value: js.Array[ScrubberItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    inline def setItems(value: js.Array[ScrubberItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItemsVarargs(value: ScrubberItem*): Self = StObject.set(x, "items", js.Array(value :_*))
+    inline def setItemsVarargs(value: ScrubberItem*): Self = StObject.set(x, "items", js.Array(value :_*))
     
-    @scala.inline
-    def setMode(value: fixed | free): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: fixed | free): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setOverlayStyle(value: background | outline | none): Self = StObject.set(x, "overlayStyle", value.asInstanceOf[js.Any])
+    inline def setOverlayStyle(value: background | outline | none): Self = StObject.set(x, "overlayStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverlayStyleUndefined: Self = StObject.set(x, "overlayStyle", js.undefined)
+    inline def setOverlayStyleUndefined: Self = StObject.set(x, "overlayStyle", js.undefined)
     
-    @scala.inline
-    def setSelect(value: /* selectedIndex */ Double => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
+    inline def setSelect(value: /* selectedIndex */ Double => Unit): Self = StObject.set(x, "select", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
+    inline def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
     
-    @scala.inline
-    def setSelectedStyle(value: background | outline | none): Self = StObject.set(x, "selectedStyle", value.asInstanceOf[js.Any])
+    inline def setSelectedStyle(value: background | outline | none): Self = StObject.set(x, "selectedStyle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedStyleUndefined: Self = StObject.set(x, "selectedStyle", js.undefined)
+    inline def setSelectedStyleUndefined: Self = StObject.set(x, "selectedStyle", js.undefined)
     
-    @scala.inline
-    def setShowArrowButtons(value: Boolean): Self = StObject.set(x, "showArrowButtons", value.asInstanceOf[js.Any])
+    inline def setShowArrowButtons(value: Boolean): Self = StObject.set(x, "showArrowButtons", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowArrowButtonsUndefined: Self = StObject.set(x, "showArrowButtons", js.undefined)
+    inline def setShowArrowButtonsUndefined: Self = StObject.set(x, "showArrowButtons", js.undefined)
   }
 }

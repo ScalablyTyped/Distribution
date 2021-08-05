@@ -28,25 +28,19 @@ trait ChooseLocationData extends StObject {
 }
 object ChooseLocationData {
   
-  @scala.inline
-  def apply(address: String, latitude: Double, longitude: Double, name: String): ChooseLocationData = {
+  inline def apply(address: String, latitude: Double, longitude: Double, name: String): ChooseLocationData = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChooseLocationData]
   }
   
-  @scala.inline
-  implicit class ChooseLocationDataMutableBuilder[Self <: ChooseLocationData] (val x: Self) extends AnyVal {
+  extension [Self <: ChooseLocationData](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
+    inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
+    inline def setLongitude(value: Double): Self = StObject.set(x, "longitude", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

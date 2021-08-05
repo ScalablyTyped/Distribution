@@ -30,25 +30,19 @@ trait BinTransform
 }
 object BinTransform {
   
-  @scala.inline
-  def apply(as: FieldName | js.Array[FieldName], bin: `true` | BinParams, field: FieldName): BinTransform = {
+  inline def apply(as: FieldName | js.Array[FieldName], bin: `true` | BinParams, field: FieldName): BinTransform = {
     val __obj = js.Dynamic.literal(as = as.asInstanceOf[js.Any], bin = bin.asInstanceOf[js.Any], field = field.asInstanceOf[js.Any])
     __obj.asInstanceOf[BinTransform]
   }
   
-  @scala.inline
-  implicit class BinTransformMutableBuilder[Self <: BinTransform] (val x: Self) extends AnyVal {
+  extension [Self <: BinTransform](x: Self) {
     
-    @scala.inline
-    def setAs(value: FieldName | js.Array[FieldName]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
+    inline def setAs(value: FieldName | js.Array[FieldName]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsVarargs(value: FieldName*): Self = StObject.set(x, "as", js.Array(value :_*))
+    inline def setAsVarargs(value: FieldName*): Self = StObject.set(x, "as", js.Array(value :_*))
     
-    @scala.inline
-    def setBin(value: `true` | BinParams): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
+    inline def setBin(value: `true` | BinParams): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setField(value: FieldName): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: FieldName): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
   }
 }

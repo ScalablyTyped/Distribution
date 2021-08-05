@@ -13,19 +13,15 @@ trait IJsonArrayStatics extends StObject {
 }
 object IJsonArrayStatics {
   
-  @scala.inline
-  def apply(parse: String => JsonArray, tryParse: String => ResultSucceeded): IJsonArrayStatics = {
+  inline def apply(parse: String => JsonArray, tryParse: String => ResultSucceeded): IJsonArrayStatics = {
     val __obj = js.Dynamic.literal(parse = js.Any.fromFunction1(parse), tryParse = js.Any.fromFunction1(tryParse))
     __obj.asInstanceOf[IJsonArrayStatics]
   }
   
-  @scala.inline
-  implicit class IJsonArrayStaticsMutableBuilder[Self <: IJsonArrayStatics] (val x: Self) extends AnyVal {
+  extension [Self <: IJsonArrayStatics](x: Self) {
     
-    @scala.inline
-    def setParse(value: String => JsonArray): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+    inline def setParse(value: String => JsonArray): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTryParse(value: String => ResultSucceeded): Self = StObject.set(x, "tryParse", js.Any.fromFunction1(value))
+    inline def setTryParse(value: String => ResultSucceeded): Self = StObject.set(x, "tryParse", js.Any.fromFunction1(value))
   }
 }

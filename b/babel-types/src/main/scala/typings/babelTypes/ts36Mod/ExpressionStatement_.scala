@@ -18,20 +18,16 @@ trait ExpressionStatement_
 }
 object ExpressionStatement_ {
   
-  @scala.inline
-  def apply(end: Double, expression: Expression, loc: SourceLocation, start: Double): ExpressionStatement_ = {
+  inline def apply(end: Double, expression: Expression, loc: SourceLocation, start: Double): ExpressionStatement_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ExpressionStatement")
     __obj.asInstanceOf[ExpressionStatement_]
   }
   
-  @scala.inline
-  implicit class ExpressionStatement_MutableBuilder[Self <: ExpressionStatement_] (val x: Self) extends AnyVal {
+  extension [Self <: ExpressionStatement_](x: Self) {
     
-    @scala.inline
-    def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: ExpressionStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: ExpressionStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

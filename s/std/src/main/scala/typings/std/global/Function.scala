@@ -18,6 +18,5 @@ class Function protected ()
 }
 object Function {
   
-  @scala.inline
-  def apply: FunctionConstructor = js.Dynamic.global.selectDynamic("Function").asInstanceOf[FunctionConstructor]
+  inline def apply: FunctionConstructor = js.Dynamic.global.selectDynamic("Function").asInstanceOf[FunctionConstructor]
 }

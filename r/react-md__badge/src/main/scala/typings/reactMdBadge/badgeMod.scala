@@ -39,29 +39,22 @@ object badgeMod {
   }
   object BadgeProps {
     
-    @scala.inline
-    def apply(id: String): BadgeProps = {
+    inline def apply(id: String): BadgeProps = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[BadgeProps]
     }
     
-    @scala.inline
-    implicit class BadgePropsMutableBuilder[Self <: BadgeProps] (val x: Self) extends AnyVal {
+    extension [Self <: BadgeProps](x: Self) {
       
-      @scala.inline
-      def setDisableNullOnZero(value: Boolean): Self = StObject.set(x, "disableNullOnZero", value.asInstanceOf[js.Any])
+      inline def setDisableNullOnZero(value: Boolean): Self = StObject.set(x, "disableNullOnZero", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableNullOnZeroUndefined: Self = StObject.set(x, "disableNullOnZero", js.undefined)
+      inline def setDisableNullOnZeroUndefined: Self = StObject.set(x, "disableNullOnZero", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTheme(value: BadgeTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+      inline def setTheme(value: BadgeTheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+      inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
     }
   }
   
@@ -74,16 +67,12 @@ object badgeMod {
   trait BadgeTheme extends StObject
   object BadgeTheme {
     
-    @scala.inline
-    def default: typings.reactMdBadge.reactMdBadgeStrings.default = "default".asInstanceOf[typings.reactMdBadge.reactMdBadgeStrings.default]
+    inline def default: typings.reactMdBadge.reactMdBadgeStrings.default = "default".asInstanceOf[typings.reactMdBadge.reactMdBadgeStrings.default]
     
-    @scala.inline
-    def clear: typings.reactMdBadge.reactMdBadgeStrings.clear = "clear".asInstanceOf[typings.reactMdBadge.reactMdBadgeStrings.clear]
+    inline def clear: typings.reactMdBadge.reactMdBadgeStrings.clear = "clear".asInstanceOf[typings.reactMdBadge.reactMdBadgeStrings.clear]
     
-    @scala.inline
-    def primary: typings.reactMdBadge.reactMdBadgeStrings.primary = "primary".asInstanceOf[typings.reactMdBadge.reactMdBadgeStrings.primary]
+    inline def primary: typings.reactMdBadge.reactMdBadgeStrings.primary = "primary".asInstanceOf[typings.reactMdBadge.reactMdBadgeStrings.primary]
     
-    @scala.inline
-    def secondary: typings.reactMdBadge.reactMdBadgeStrings.secondary = "secondary".asInstanceOf[typings.reactMdBadge.reactMdBadgeStrings.secondary]
+    inline def secondary: typings.reactMdBadge.reactMdBadgeStrings.secondary = "secondary".asInstanceOf[typings.reactMdBadge.reactMdBadgeStrings.secondary]
   }
 }

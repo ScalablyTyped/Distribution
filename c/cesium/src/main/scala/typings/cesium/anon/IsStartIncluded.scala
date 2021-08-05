@@ -16,34 +16,25 @@ trait IsStartIncluded extends StObject {
 }
 object IsStartIncluded {
   
-  @scala.inline
-  def apply(iso8601: String): IsStartIncluded = {
+  inline def apply(iso8601: String): IsStartIncluded = {
     val __obj = js.Dynamic.literal(iso8601 = iso8601.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsStartIncluded]
   }
   
-  @scala.inline
-  implicit class IsStartIncludedMutableBuilder[Self <: IsStartIncluded] (val x: Self) extends AnyVal {
+  extension [Self <: IsStartIncluded](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setIsStartIncluded(value: Boolean): Self = StObject.set(x, "isStartIncluded", value.asInstanceOf[js.Any])
+    inline def setIsStartIncluded(value: Boolean): Self = StObject.set(x, "isStartIncluded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsStartIncludedUndefined: Self = StObject.set(x, "isStartIncluded", js.undefined)
+    inline def setIsStartIncludedUndefined: Self = StObject.set(x, "isStartIncluded", js.undefined)
     
-    @scala.inline
-    def setIsStopIncluded(value: Boolean): Self = StObject.set(x, "isStopIncluded", value.asInstanceOf[js.Any])
+    inline def setIsStopIncluded(value: Boolean): Self = StObject.set(x, "isStopIncluded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsStopIncludedUndefined: Self = StObject.set(x, "isStopIncluded", js.undefined)
+    inline def setIsStopIncludedUndefined: Self = StObject.set(x, "isStopIncluded", js.undefined)
     
-    @scala.inline
-    def setIso8601(value: String): Self = StObject.set(x, "iso8601", value.asInstanceOf[js.Any])
+    inline def setIso8601(value: String): Self = StObject.set(x, "iso8601", value.asInstanceOf[js.Any])
   }
 }

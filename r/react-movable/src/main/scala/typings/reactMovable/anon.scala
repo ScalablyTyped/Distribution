@@ -21,8 +21,7 @@ object anon {
   }
   object Canceled {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       canceled: Double => String,
       dropped: (Double, Double) => String,
       item: Double => String,
@@ -33,23 +32,17 @@ object anon {
       __obj.asInstanceOf[Canceled]
     }
     
-    @scala.inline
-    implicit class CanceledMutableBuilder[Self <: Canceled] (val x: Self) extends AnyVal {
+    extension [Self <: Canceled](x: Self) {
       
-      @scala.inline
-      def setCanceled(value: Double => String): Self = StObject.set(x, "canceled", js.Any.fromFunction1(value))
+      inline def setCanceled(value: Double => String): Self = StObject.set(x, "canceled", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDropped(value: (Double, Double) => String): Self = StObject.set(x, "dropped", js.Any.fromFunction2(value))
+      inline def setDropped(value: (Double, Double) => String): Self = StObject.set(x, "dropped", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setItem(value: Double => String): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
+      inline def setItem(value: Double => String): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLifted(value: Double => String): Self = StObject.set(x, "lifted", js.Any.fromFunction1(value))
+      inline def setLifted(value: Double => String): Self = StObject.set(x, "lifted", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMoved(value: (Double, Boolean) => String): Self = StObject.set(x, "moved", js.Any.fromFunction2(value))
+      inline def setMoved(value: (Double, Boolean) => String): Self = StObject.set(x, "moved", js.Any.fromFunction2(value))
     }
   }
   
@@ -81,8 +74,7 @@ object anon {
   }
   object InitialX {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       initialX: Double,
       initialY: Double,
       itemDragged: Double,
@@ -100,44 +92,31 @@ object anon {
       __obj.asInstanceOf[InitialX]
     }
     
-    @scala.inline
-    implicit class InitialXMutableBuilder[Self <: InitialX] (val x: Self) extends AnyVal {
+    extension [Self <: InitialX](x: Self) {
       
-      @scala.inline
-      def setInitialX(value: Double): Self = StObject.set(x, "initialX", value.asInstanceOf[js.Any])
+      inline def setInitialX(value: Double): Self = StObject.set(x, "initialX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInitialY(value: Double): Self = StObject.set(x, "initialY", value.asInstanceOf[js.Any])
+      inline def setInitialY(value: Double): Self = StObject.set(x, "initialY", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemDragged(value: Double): Self = StObject.set(x, "itemDragged", value.asInstanceOf[js.Any])
+      inline def setItemDragged(value: Double): Self = StObject.set(x, "itemDragged", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemDraggedOutOfBounds(value: Double): Self = StObject.set(x, "itemDraggedOutOfBounds", value.asInstanceOf[js.Any])
+      inline def setItemDraggedOutOfBounds(value: Double): Self = StObject.set(x, "itemDraggedOutOfBounds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLiveText(value: String): Self = StObject.set(x, "liveText", value.asInstanceOf[js.Any])
+      inline def setLiveText(value: String): Self = StObject.set(x, "liveText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollWindow(value: Boolean): Self = StObject.set(x, "scrollWindow", value.asInstanceOf[js.Any])
+      inline def setScrollWindow(value: Boolean): Self = StObject.set(x, "scrollWindow", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setScrollingSpeed(value: Double): Self = StObject.set(x, "scrollingSpeed", value.asInstanceOf[js.Any])
+      inline def setScrollingSpeed(value: Double): Self = StObject.set(x, "scrollingSpeed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedItem(value: Double): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
+      inline def setSelectedItem(value: Double): Self = StObject.set(x, "selectedItem", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetHeight(value: Double): Self = StObject.set(x, "targetHeight", value.asInstanceOf[js.Any])
+      inline def setTargetHeight(value: Double): Self = StObject.set(x, "targetHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetWidth(value: Double): Self = StObject.set(x, "targetWidth", value.asInstanceOf[js.Any])
+      inline def setTargetWidth(value: Double): Self = StObject.set(x, "targetWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetX(value: Double): Self = StObject.set(x, "targetX", value.asInstanceOf[js.Any])
+      inline def setTargetX(value: Double): Self = StObject.set(x, "targetX", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetY(value: Double): Self = StObject.set(x, "targetY", value.asInstanceOf[js.Any])
+      inline def setTargetY(value: Double): Self = StObject.set(x, "targetY", value.asInstanceOf[js.Any])
     }
   }
   
@@ -147,17 +126,14 @@ object anon {
   }
   object Ref {
     
-    @scala.inline
-    def apply(ref: RefObject[js.Any]): Ref = {
+    inline def apply(ref: RefObject[js.Any]): Ref = {
       val __obj = js.Dynamic.literal(ref = ref.asInstanceOf[js.Any])
       __obj.asInstanceOf[Ref]
     }
     
-    @scala.inline
-    implicit class RefMutableBuilder[Self <: Ref] (val x: Self) extends AnyVal {
+    extension [Self <: Ref](x: Self) {
       
-      @scala.inline
-      def setRef(value: RefObject[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      inline def setRef(value: RefObject[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     }
   }
   
@@ -167,17 +143,14 @@ object anon {
   }
   object ScrollingSpeed {
     
-    @scala.inline
-    def apply(scrollingSpeed: Double): ScrollingSpeed = {
+    inline def apply(scrollingSpeed: Double): ScrollingSpeed = {
       val __obj = js.Dynamic.literal(scrollingSpeed = scrollingSpeed.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScrollingSpeed]
     }
     
-    @scala.inline
-    implicit class ScrollingSpeedMutableBuilder[Self <: ScrollingSpeed] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollingSpeed](x: Self) {
       
-      @scala.inline
-      def setScrollingSpeed(value: Double): Self = StObject.set(x, "scrollingSpeed", value.asInstanceOf[js.Any])
+      inline def setScrollingSpeed(value: Double): Self = StObject.set(x, "scrollingSpeed", value.asInstanceOf[js.Any])
     }
   }
 }

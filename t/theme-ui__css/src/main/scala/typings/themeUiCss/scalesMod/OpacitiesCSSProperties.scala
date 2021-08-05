@@ -23,19 +23,15 @@ trait OpacitiesCSSProperties extends StObject {
 }
 object OpacitiesCSSProperties {
   
-  @scala.inline
-  def apply(): OpacitiesCSSProperties = {
+  inline def apply(): OpacitiesCSSProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OpacitiesCSSProperties]
   }
   
-  @scala.inline
-  implicit class OpacitiesCSSPropertiesMutableBuilder[Self <: OpacitiesCSSProperties] (val x: Self) extends AnyVal {
+  extension [Self <: OpacitiesCSSProperties](x: Self) {
     
-    @scala.inline
-    def setOpacity(value: Opacities): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    inline def setOpacity(value: Opacities): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
+    inline def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
   }
 }

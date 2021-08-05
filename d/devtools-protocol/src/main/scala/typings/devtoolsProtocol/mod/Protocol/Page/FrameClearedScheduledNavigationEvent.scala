@@ -13,16 +13,13 @@ trait FrameClearedScheduledNavigationEvent extends StObject {
 }
 object FrameClearedScheduledNavigationEvent {
   
-  @scala.inline
-  def apply(frameId: FrameId): FrameClearedScheduledNavigationEvent = {
+  inline def apply(frameId: FrameId): FrameClearedScheduledNavigationEvent = {
     val __obj = js.Dynamic.literal(frameId = frameId.asInstanceOf[js.Any])
     __obj.asInstanceOf[FrameClearedScheduledNavigationEvent]
   }
   
-  @scala.inline
-  implicit class FrameClearedScheduledNavigationEventMutableBuilder[Self <: FrameClearedScheduledNavigationEvent] (val x: Self) extends AnyVal {
+  extension [Self <: FrameClearedScheduledNavigationEvent](x: Self) {
     
-    @scala.inline
-    def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
+    inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
   }
 }

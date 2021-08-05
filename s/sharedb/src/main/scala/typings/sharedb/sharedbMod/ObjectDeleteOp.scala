@@ -14,22 +14,17 @@ trait ObjectDeleteOp
 }
 object ObjectDeleteOp {
   
-  @scala.inline
-  def apply(od: js.Any, p: Path): ObjectDeleteOp = {
+  inline def apply(od: js.Any, p: Path): ObjectDeleteOp = {
     val __obj = js.Dynamic.literal(od = od.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any])
     __obj.asInstanceOf[ObjectDeleteOp]
   }
   
-  @scala.inline
-  implicit class ObjectDeleteOpMutableBuilder[Self <: ObjectDeleteOp] (val x: Self) extends AnyVal {
+  extension [Self <: ObjectDeleteOp](x: Self) {
     
-    @scala.inline
-    def setOd(value: js.Any): Self = StObject.set(x, "od", value.asInstanceOf[js.Any])
+    inline def setOd(value: js.Any): Self = StObject.set(x, "od", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setP(value: Path): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+    inline def setP(value: Path): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPVarargs(value: (String | Double)*): Self = StObject.set(x, "p", js.Array(value :_*))
+    inline def setPVarargs(value: (String | Double)*): Self = StObject.set(x, "p", js.Array(value :_*))
   }
 }

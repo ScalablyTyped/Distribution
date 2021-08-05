@@ -13,11 +13,9 @@ object domHookMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def spyElementPrototype(Element: ElementClass, propName: String, property: Property): MockRestore = (^.asInstanceOf[js.Dynamic].applyDynamic("spyElementPrototype")(Element.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[MockRestore]
+  inline def spyElementPrototype(Element: ElementClass, propName: String, property: Property): MockRestore = (^.asInstanceOf[js.Dynamic].applyDynamic("spyElementPrototype")(Element.asInstanceOf[js.Any], propName.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[MockRestore]
   
-  @scala.inline
-  def spyElementPrototypes[T /* <: ElementClass */](elementClass: T, properties: Record[String, Property]): MockRestore = (^.asInstanceOf[js.Dynamic].applyDynamic("spyElementPrototypes")(elementClass.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[MockRestore]
+  inline def spyElementPrototypes[T /* <: ElementClass */](elementClass: T, properties: Record[String, Property]): MockRestore = (^.asInstanceOf[js.Dynamic].applyDynamic("spyElementPrototypes")(elementClass.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[MockRestore]
   
   type ElementClass = js.Function
   

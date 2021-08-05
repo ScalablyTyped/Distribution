@@ -18,8 +18,7 @@ trait MemberFunctionDeclaration
 }
 object MemberFunctionDeclaration {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _postComments: js.Any,
@@ -49,22 +48,16 @@ object MemberFunctionDeclaration {
     __obj.asInstanceOf[MemberFunctionDeclaration]
   }
   
-  @scala.inline
-  implicit class MemberFunctionDeclarationMutableBuilder[Self <: MemberFunctionDeclaration] (val x: Self) extends AnyVal {
+  extension [Self <: MemberFunctionDeclaration](x: Self) {
     
-    @scala.inline
-    def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
+    inline def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallSignature(value: CallSignature): Self = StObject.set(x, "callSignature", value.asInstanceOf[js.Any])
+    inline def setCallSignature(value: CallSignature): Self = StObject.set(x, "callSignature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiers(value: js.Array[PullElementFlags]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
+    inline def setModifiers(value: js.Array[PullElementFlags]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiersVarargs(value: PullElementFlags*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
+    inline def setModifiersVarargs(value: PullElementFlags*): Self = StObject.set(x, "modifiers", js.Array(value :_*))
     
-    @scala.inline
-    def setPropertyName(value: IASTToken): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
+    inline def setPropertyName(value: IASTToken): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
   }
 }

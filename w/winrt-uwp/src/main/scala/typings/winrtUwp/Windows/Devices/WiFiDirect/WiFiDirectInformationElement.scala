@@ -19,22 +19,17 @@ trait WiFiDirectInformationElement extends StObject {
 }
 object WiFiDirectInformationElement {
   
-  @scala.inline
-  def apply(oui: IBuffer, ouiType: Double, value: IBuffer): WiFiDirectInformationElement = {
+  inline def apply(oui: IBuffer, ouiType: Double, value: IBuffer): WiFiDirectInformationElement = {
     val __obj = js.Dynamic.literal(oui = oui.asInstanceOf[js.Any], ouiType = ouiType.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[WiFiDirectInformationElement]
   }
   
-  @scala.inline
-  implicit class WiFiDirectInformationElementMutableBuilder[Self <: WiFiDirectInformationElement] (val x: Self) extends AnyVal {
+  extension [Self <: WiFiDirectInformationElement](x: Self) {
     
-    @scala.inline
-    def setOui(value: IBuffer): Self = StObject.set(x, "oui", value.asInstanceOf[js.Any])
+    inline def setOui(value: IBuffer): Self = StObject.set(x, "oui", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOuiType(value: Double): Self = StObject.set(x, "ouiType", value.asInstanceOf[js.Any])
+    inline def setOuiType(value: Double): Self = StObject.set(x, "ouiType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: IBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: IBuffer): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

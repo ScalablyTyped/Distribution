@@ -11,19 +11,15 @@ trait GoButton extends StObject {
 }
 object GoButton {
   
-  @scala.inline
-  def apply(): GoButton = {
+  inline def apply(): GoButton = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoButton]
   }
   
-  @scala.inline
-  implicit class GoButtonMutableBuilder[Self <: GoButton] (val x: Self) extends AnyVal {
+  extension [Self <: GoButton](x: Self) {
     
-    @scala.inline
-    def setGoButton(value: ReactNode): Self = StObject.set(x, "goButton", value.asInstanceOf[js.Any])
+    inline def setGoButton(value: ReactNode): Self = StObject.set(x, "goButton", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoButtonUndefined: Self = StObject.set(x, "goButton", js.undefined)
+    inline def setGoButtonUndefined: Self = StObject.set(x, "goButton", js.undefined)
   }
 }

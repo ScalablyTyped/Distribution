@@ -10,16 +10,13 @@ trait UIkitAlertElement extends StObject {
 }
 object UIkitAlertElement {
   
-  @scala.inline
-  def apply(close: () => Unit): UIkitAlertElement = {
+  inline def apply(close: () => Unit): UIkitAlertElement = {
     val __obj = js.Dynamic.literal(close = js.Any.fromFunction0(close))
     __obj.asInstanceOf[UIkitAlertElement]
   }
   
-  @scala.inline
-  implicit class UIkitAlertElementMutableBuilder[Self <: UIkitAlertElement] (val x: Self) extends AnyVal {
+  extension [Self <: UIkitAlertElement](x: Self) {
     
-    @scala.inline
-    def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
+    inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
   }
 }

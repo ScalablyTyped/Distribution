@@ -48,61 +48,43 @@ trait DescribeResourceResponse extends StObject {
 }
 object DescribeResourceResponse {
   
-  @scala.inline
-  def apply(): DescribeResourceResponse = {
+  inline def apply(): DescribeResourceResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeResourceResponse]
   }
   
-  @scala.inline
-  implicit class DescribeResourceResponseMutableBuilder[Self <: DescribeResourceResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeResourceResponse](x: Self) {
     
-    @scala.inline
-    def setBookingOptions(value: BookingOptions): Self = StObject.set(x, "BookingOptions", value.asInstanceOf[js.Any])
+    inline def setBookingOptions(value: BookingOptions): Self = StObject.set(x, "BookingOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBookingOptionsUndefined: Self = StObject.set(x, "BookingOptions", js.undefined)
+    inline def setBookingOptionsUndefined: Self = StObject.set(x, "BookingOptions", js.undefined)
     
-    @scala.inline
-    def setDisabledDate(value: Timestamp): Self = StObject.set(x, "DisabledDate", value.asInstanceOf[js.Any])
+    inline def setDisabledDate(value: Timestamp): Self = StObject.set(x, "DisabledDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledDateUndefined: Self = StObject.set(x, "DisabledDate", js.undefined)
+    inline def setDisabledDateUndefined: Self = StObject.set(x, "DisabledDate", js.undefined)
     
-    @scala.inline
-    def setEmail(value: EmailAddress): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: EmailAddress): Self = StObject.set(x, "Email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "Email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "Email", js.undefined)
     
-    @scala.inline
-    def setEnabledDate(value: Timestamp): Self = StObject.set(x, "EnabledDate", value.asInstanceOf[js.Any])
+    inline def setEnabledDate(value: Timestamp): Self = StObject.set(x, "EnabledDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledDateUndefined: Self = StObject.set(x, "EnabledDate", js.undefined)
+    inline def setEnabledDateUndefined: Self = StObject.set(x, "EnabledDate", js.undefined)
     
-    @scala.inline
-    def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setResourceId(value: ResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
+    inline def setResourceIdUndefined: Self = StObject.set(x, "ResourceId", js.undefined)
     
-    @scala.inline
-    def setState(value: EntityState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: EntityState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
-    @scala.inline
-    def setType(value: ResourceType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: ResourceType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
   }
 }

@@ -14,28 +14,21 @@ trait ListScanConfigsResponse extends StObject {
 }
 object ListScanConfigsResponse {
   
-  @scala.inline
-  def apply(): ListScanConfigsResponse = {
+  inline def apply(): ListScanConfigsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListScanConfigsResponse]
   }
   
-  @scala.inline
-  implicit class ListScanConfigsResponseMutableBuilder[Self <: ListScanConfigsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListScanConfigsResponse](x: Self) {
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setScanConfigs(value: js.Array[ScanConfig]): Self = StObject.set(x, "scanConfigs", value.asInstanceOf[js.Any])
+    inline def setScanConfigs(value: js.Array[ScanConfig]): Self = StObject.set(x, "scanConfigs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScanConfigsUndefined: Self = StObject.set(x, "scanConfigs", js.undefined)
+    inline def setScanConfigsUndefined: Self = StObject.set(x, "scanConfigs", js.undefined)
     
-    @scala.inline
-    def setScanConfigsVarargs(value: ScanConfig*): Self = StObject.set(x, "scanConfigs", js.Array(value :_*))
+    inline def setScanConfigsVarargs(value: ScanConfig*): Self = StObject.set(x, "scanConfigs", js.Array(value :_*))
   }
 }

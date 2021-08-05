@@ -14,22 +14,17 @@ trait GameRequestDialogResponse
 }
 object GameRequestDialogResponse {
   
-  @scala.inline
-  def apply(request: String, to: js.Array[String]): GameRequestDialogResponse = {
+  inline def apply(request: String, to: js.Array[String]): GameRequestDialogResponse = {
     val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
     __obj.asInstanceOf[GameRequestDialogResponse]
   }
   
-  @scala.inline
-  implicit class GameRequestDialogResponseMutableBuilder[Self <: GameRequestDialogResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GameRequestDialogResponse](x: Self) {
     
-    @scala.inline
-    def setRequest(value: String): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: String): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTo(value: js.Array[String]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+    inline def setTo(value: js.Array[String]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToVarargs(value: String*): Self = StObject.set(x, "to", js.Array(value :_*))
+    inline def setToVarargs(value: String*): Self = StObject.set(x, "to", js.Array(value :_*))
   }
 }

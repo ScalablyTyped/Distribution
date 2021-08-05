@@ -10,6 +10,5 @@ object applyMixinsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def applyMixins(derivedCtor: js.Any, baseCtors: js.Array[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyMixins")(derivedCtor.asInstanceOf[js.Any], baseCtors.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def applyMixins(derivedCtor: js.Any, baseCtors: js.Array[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyMixins")(derivedCtor.asInstanceOf[js.Any], baseCtors.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

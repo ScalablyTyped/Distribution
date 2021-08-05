@@ -21,22 +21,17 @@ trait ChatMessageChangeTracker extends StObject {
 }
 object ChatMessageChangeTracker {
   
-  @scala.inline
-  def apply(enable: () => Unit, getChangeReader: () => ChatMessageChangeReader, reset: () => Unit): ChatMessageChangeTracker = {
+  inline def apply(enable: () => Unit, getChangeReader: () => ChatMessageChangeReader, reset: () => Unit): ChatMessageChangeTracker = {
     val __obj = js.Dynamic.literal(enable = js.Any.fromFunction0(enable), getChangeReader = js.Any.fromFunction0(getChangeReader), reset = js.Any.fromFunction0(reset))
     __obj.asInstanceOf[ChatMessageChangeTracker]
   }
   
-  @scala.inline
-  implicit class ChatMessageChangeTrackerMutableBuilder[Self <: ChatMessageChangeTracker] (val x: Self) extends AnyVal {
+  extension [Self <: ChatMessageChangeTracker](x: Self) {
     
-    @scala.inline
-    def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
+    inline def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetChangeReader(value: () => ChatMessageChangeReader): Self = StObject.set(x, "getChangeReader", js.Any.fromFunction0(value))
+    inline def setGetChangeReader(value: () => ChatMessageChangeReader): Self = StObject.set(x, "getChangeReader", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
   }
 }

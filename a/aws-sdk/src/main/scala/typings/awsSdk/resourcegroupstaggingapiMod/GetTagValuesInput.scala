@@ -18,22 +18,17 @@ trait GetTagValuesInput extends StObject {
 }
 object GetTagValuesInput {
   
-  @scala.inline
-  def apply(Key: TagKey): GetTagValuesInput = {
+  inline def apply(Key: TagKey): GetTagValuesInput = {
     val __obj = js.Dynamic.literal(Key = Key.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetTagValuesInput]
   }
   
-  @scala.inline
-  implicit class GetTagValuesInputMutableBuilder[Self <: GetTagValuesInput] (val x: Self) extends AnyVal {
+  extension [Self <: GetTagValuesInput](x: Self) {
     
-    @scala.inline
-    def setKey(value: TagKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
+    inline def setKey(value: TagKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaginationToken(value: PaginationToken): Self = StObject.set(x, "PaginationToken", value.asInstanceOf[js.Any])
+    inline def setPaginationToken(value: PaginationToken): Self = StObject.set(x, "PaginationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaginationTokenUndefined: Self = StObject.set(x, "PaginationToken", js.undefined)
+    inline def setPaginationTokenUndefined: Self = StObject.set(x, "PaginationToken", js.undefined)
   }
 }

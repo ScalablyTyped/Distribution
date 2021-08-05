@@ -13,22 +13,17 @@ trait Encrypted extends StObject {
 }
 object Encrypted {
   
-  @scala.inline
-  def apply(encrypted: Boolean, safeBags: js.Array[Bag]): Encrypted = {
+  inline def apply(encrypted: Boolean, safeBags: js.Array[Bag]): Encrypted = {
     val __obj = js.Dynamic.literal(encrypted = encrypted.asInstanceOf[js.Any], safeBags = safeBags.asInstanceOf[js.Any])
     __obj.asInstanceOf[Encrypted]
   }
   
-  @scala.inline
-  implicit class EncryptedMutableBuilder[Self <: Encrypted] (val x: Self) extends AnyVal {
+  extension [Self <: Encrypted](x: Self) {
     
-    @scala.inline
-    def setEncrypted(value: Boolean): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
+    inline def setEncrypted(value: Boolean): Self = StObject.set(x, "encrypted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSafeBags(value: js.Array[Bag]): Self = StObject.set(x, "safeBags", value.asInstanceOf[js.Any])
+    inline def setSafeBags(value: js.Array[Bag]): Self = StObject.set(x, "safeBags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSafeBagsVarargs(value: Bag*): Self = StObject.set(x, "safeBags", js.Array(value :_*))
+    inline def setSafeBagsVarargs(value: Bag*): Self = StObject.set(x, "safeBags", js.Array(value :_*))
   }
 }

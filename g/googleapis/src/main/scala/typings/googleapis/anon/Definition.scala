@@ -12,28 +12,21 @@ trait Definition extends StObject {
 }
 object Definition {
   
-  @scala.inline
-  def apply(): Definition = {
+  inline def apply(): Definition = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Definition]
   }
   
-  @scala.inline
-  implicit class DefinitionMutableBuilder[Self <: Definition] (val x: Self) extends AnyVal {
+  extension [Self <: Definition](x: Self) {
     
-    @scala.inline
-    def setDefinition(value: String): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
+    inline def setDefinition(value: String): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
+    inline def setDefinitionUndefined: Self = StObject.set(x, "definition", js.undefined)
     
-    @scala.inline
-    def setExamples(value: js.Array[Source]): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
+    inline def setExamples(value: js.Array[Source]): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExamplesUndefined: Self = StObject.set(x, "examples", js.undefined)
+    inline def setExamplesUndefined: Self = StObject.set(x, "examples", js.undefined)
     
-    @scala.inline
-    def setExamplesVarargs(value: Source*): Self = StObject.set(x, "examples", js.Array(value :_*))
+    inline def setExamplesVarargs(value: Source*): Self = StObject.set(x, "examples", js.Array(value :_*))
   }
 }

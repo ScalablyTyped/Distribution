@@ -87,26 +87,20 @@ object mod {
   }
   object BundleOptions {
     
-    @scala.inline
-    def apply(): BundleOptions = {
+    inline def apply(): BundleOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BundleOptions]
     }
     
-    @scala.inline
-    implicit class BundleOptionsMutableBuilder[Self <: BundleOptions] (val x: Self) extends AnyVal {
+    extension [Self <: BundleOptions](x: Self) {
       
-      @scala.inline
-      def setIntro(value: String): Self = StObject.set(x, "intro", value.asInstanceOf[js.Any])
+      inline def setIntro(value: String): Self = StObject.set(x, "intro", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIntroUndefined: Self = StObject.set(x, "intro", js.undefined)
+      inline def setIntroUndefined: Self = StObject.set(x, "intro", js.undefined)
       
-      @scala.inline
-      def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
+      inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
+      inline def setSeparatorUndefined: Self = StObject.set(x, "separator", js.undefined)
     }
   }
   
@@ -124,8 +118,7 @@ object mod {
   }
   object DecodedSourceMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       file: String,
       mappings: js.Array[js.Array[SourceMapSegment]],
       names: js.Array[String],
@@ -136,35 +129,25 @@ object mod {
       __obj.asInstanceOf[DecodedSourceMap]
     }
     
-    @scala.inline
-    implicit class DecodedSourceMapMutableBuilder[Self <: DecodedSourceMap] (val x: Self) extends AnyVal {
+    extension [Self <: DecodedSourceMap](x: Self) {
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMappings(value: js.Array[js.Array[SourceMapSegment]]): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
+      inline def setMappings(value: js.Array[js.Array[SourceMapSegment]]): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMappingsVarargs(value: js.Array[SourceMapSegment]*): Self = StObject.set(x, "mappings", js.Array(value :_*))
+      inline def setMappingsVarargs(value: js.Array[SourceMapSegment]*): Self = StObject.set(x, "mappings", js.Array(value :_*))
       
-      @scala.inline
-      def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+      inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+      inline def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
       
-      @scala.inline
-      def setSources(value: js.Array[String]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+      inline def setSources(value: js.Array[String]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourcesContent(value: js.Array[String]): Self = StObject.set(x, "sourcesContent", value.asInstanceOf[js.Any])
+      inline def setSourcesContent(value: js.Array[String]): Self = StObject.set(x, "sourcesContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSourcesContentVarargs(value: String*): Self = StObject.set(x, "sourcesContent", js.Array(value :_*))
+      inline def setSourcesContentVarargs(value: String*): Self = StObject.set(x, "sourcesContent", js.Array(value :_*))
       
-      @scala.inline
-      def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value :_*))
+      inline def setSourcesVarargs(value: String*): Self = StObject.set(x, "sources", js.Array(value :_*))
     }
   }
   
@@ -178,23 +161,18 @@ object mod {
   }
   object IndentOptions {
     
-    @scala.inline
-    def apply(exclude: ExclusionRange | js.Array[ExclusionRange], indentStart: Boolean): IndentOptions = {
+    inline def apply(exclude: ExclusionRange | js.Array[ExclusionRange], indentStart: Boolean): IndentOptions = {
       val __obj = js.Dynamic.literal(exclude = exclude.asInstanceOf[js.Any], indentStart = indentStart.asInstanceOf[js.Any])
       __obj.asInstanceOf[IndentOptions]
     }
     
-    @scala.inline
-    implicit class IndentOptionsMutableBuilder[Self <: IndentOptions] (val x: Self) extends AnyVal {
+    extension [Self <: IndentOptions](x: Self) {
       
-      @scala.inline
-      def setExclude(value: ExclusionRange | js.Array[ExclusionRange]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
+      inline def setExclude(value: ExclusionRange | js.Array[ExclusionRange]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeVarargs(value: ExclusionRange*): Self = StObject.set(x, "exclude", js.Array(value :_*))
+      inline def setExcludeVarargs(value: ExclusionRange*): Self = StObject.set(x, "exclude", js.Array(value :_*))
       
-      @scala.inline
-      def setIndentStart(value: Boolean): Self = StObject.set(x, "indentStart", value.asInstanceOf[js.Any])
+      inline def setIndentStart(value: Boolean): Self = StObject.set(x, "indentStart", value.asInstanceOf[js.Any])
     }
   }
   
@@ -273,23 +251,18 @@ object mod {
   }
   object MagicStringOptions {
     
-    @scala.inline
-    def apply(filename: String, indentExclusionRanges: ExclusionRange | js.Array[ExclusionRange]): MagicStringOptions = {
+    inline def apply(filename: String, indentExclusionRanges: ExclusionRange | js.Array[ExclusionRange]): MagicStringOptions = {
       val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any], indentExclusionRanges = indentExclusionRanges.asInstanceOf[js.Any])
       __obj.asInstanceOf[MagicStringOptions]
     }
     
-    @scala.inline
-    implicit class MagicStringOptionsMutableBuilder[Self <: MagicStringOptions] (val x: Self) extends AnyVal {
+    extension [Self <: MagicStringOptions](x: Self) {
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentExclusionRanges(value: ExclusionRange | js.Array[ExclusionRange]): Self = StObject.set(x, "indentExclusionRanges", value.asInstanceOf[js.Any])
+      inline def setIndentExclusionRanges(value: ExclusionRange | js.Array[ExclusionRange]): Self = StObject.set(x, "indentExclusionRanges", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndentExclusionRangesVarargs(value: ExclusionRange*): Self = StObject.set(x, "indentExclusionRanges", js.Array(value :_*))
+      inline def setIndentExclusionRangesVarargs(value: ExclusionRange*): Self = StObject.set(x, "indentExclusionRanges", js.Array(value :_*))
     }
   }
   
@@ -301,26 +274,20 @@ object mod {
   }
   object OverwriteOptions {
     
-    @scala.inline
-    def apply(): OverwriteOptions = {
+    inline def apply(): OverwriteOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[OverwriteOptions]
     }
     
-    @scala.inline
-    implicit class OverwriteOptionsMutableBuilder[Self <: OverwriteOptions] (val x: Self) extends AnyVal {
+    extension [Self <: OverwriteOptions](x: Self) {
       
-      @scala.inline
-      def setContentOnly(value: Boolean): Self = StObject.set(x, "contentOnly", value.asInstanceOf[js.Any])
+      inline def setContentOnly(value: Boolean): Self = StObject.set(x, "contentOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentOnlyUndefined: Self = StObject.set(x, "contentOnly", js.undefined)
+      inline def setContentOnlyUndefined: Self = StObject.set(x, "contentOnly", js.undefined)
       
-      @scala.inline
-      def setStoreName(value: Boolean): Self = StObject.set(x, "storeName", value.asInstanceOf[js.Any])
+      inline def setStoreName(value: Boolean): Self = StObject.set(x, "storeName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStoreNameUndefined: Self = StObject.set(x, "storeName", js.undefined)
+      inline def setStoreNameUndefined: Self = StObject.set(x, "storeName", js.undefined)
     }
   }
   
@@ -336,26 +303,20 @@ object mod {
   }
   object SourceMapOptions {
     
-    @scala.inline
-    def apply(file: String, hires: Boolean, includeContent: Boolean, source: String): SourceMapOptions = {
+    inline def apply(file: String, hires: Boolean, includeContent: Boolean, source: String): SourceMapOptions = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], hires = hires.asInstanceOf[js.Any], includeContent = includeContent.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
       __obj.asInstanceOf[SourceMapOptions]
     }
     
-    @scala.inline
-    implicit class SourceMapOptionsMutableBuilder[Self <: SourceMapOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SourceMapOptions](x: Self) {
       
-      @scala.inline
-      def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+      inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHires(value: Boolean): Self = StObject.set(x, "hires", value.asInstanceOf[js.Any])
+      inline def setHires(value: Boolean): Self = StObject.set(x, "hires", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIncludeContent(value: Boolean): Self = StObject.set(x, "includeContent", value.asInstanceOf[js.Any])
+      inline def setIncludeContent(value: Boolean): Self = StObject.set(x, "includeContent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+      inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
   }
   

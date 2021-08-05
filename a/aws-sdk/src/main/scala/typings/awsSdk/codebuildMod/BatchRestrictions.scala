@@ -18,28 +18,21 @@ trait BatchRestrictions extends StObject {
 }
 object BatchRestrictions {
   
-  @scala.inline
-  def apply(): BatchRestrictions = {
+  inline def apply(): BatchRestrictions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BatchRestrictions]
   }
   
-  @scala.inline
-  implicit class BatchRestrictionsMutableBuilder[Self <: BatchRestrictions] (val x: Self) extends AnyVal {
+  extension [Self <: BatchRestrictions](x: Self) {
     
-    @scala.inline
-    def setComputeTypesAllowed(value: ComputeTypesAllowed): Self = StObject.set(x, "computeTypesAllowed", value.asInstanceOf[js.Any])
+    inline def setComputeTypesAllowed(value: ComputeTypesAllowed): Self = StObject.set(x, "computeTypesAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComputeTypesAllowedUndefined: Self = StObject.set(x, "computeTypesAllowed", js.undefined)
+    inline def setComputeTypesAllowedUndefined: Self = StObject.set(x, "computeTypesAllowed", js.undefined)
     
-    @scala.inline
-    def setComputeTypesAllowedVarargs(value: NonEmptyString*): Self = StObject.set(x, "computeTypesAllowed", js.Array(value :_*))
+    inline def setComputeTypesAllowedVarargs(value: NonEmptyString*): Self = StObject.set(x, "computeTypesAllowed", js.Array(value :_*))
     
-    @scala.inline
-    def setMaximumBuildsAllowed(value: WrapperInt): Self = StObject.set(x, "maximumBuildsAllowed", value.asInstanceOf[js.Any])
+    inline def setMaximumBuildsAllowed(value: WrapperInt): Self = StObject.set(x, "maximumBuildsAllowed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaximumBuildsAllowedUndefined: Self = StObject.set(x, "maximumBuildsAllowed", js.undefined)
+    inline def setMaximumBuildsAllowedUndefined: Self = StObject.set(x, "maximumBuildsAllowed", js.undefined)
   }
 }

@@ -23,67 +23,47 @@ trait ArcEncodeEntry
 }
 object ArcEncodeEntry {
   
-  @scala.inline
-  def apply(): ArcEncodeEntry = {
+  inline def apply(): ArcEncodeEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ArcEncodeEntry]
   }
   
-  @scala.inline
-  implicit class ArcEncodeEntryMutableBuilder[Self <: ArcEncodeEntry] (val x: Self) extends AnyVal {
+  extension [Self <: ArcEncodeEntry](x: Self) {
     
-    @scala.inline
-    def setCornerRadius(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
+    inline def setCornerRadius(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCornerRadiusUndefined: Self = StObject.set(x, "cornerRadius", js.undefined)
+    inline def setCornerRadiusUndefined: Self = StObject.set(x, "cornerRadius", js.undefined)
     
-    @scala.inline
-    def setCornerRadiusVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "cornerRadius", js.Array(value :_*))
+    inline def setCornerRadiusVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "cornerRadius", js.Array(value :_*))
     
-    @scala.inline
-    def setEndAngle(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
+    inline def setEndAngle(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndAngleUndefined: Self = StObject.set(x, "endAngle", js.undefined)
+    inline def setEndAngleUndefined: Self = StObject.set(x, "endAngle", js.undefined)
     
-    @scala.inline
-    def setEndAngleVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "endAngle", js.Array(value :_*))
+    inline def setEndAngleVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "endAngle", js.Array(value :_*))
     
-    @scala.inline
-    def setInnerRadius(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
+    inline def setInnerRadius(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInnerRadiusUndefined: Self = StObject.set(x, "innerRadius", js.undefined)
+    inline def setInnerRadiusUndefined: Self = StObject.set(x, "innerRadius", js.undefined)
     
-    @scala.inline
-    def setInnerRadiusVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "innerRadius", js.Array(value :_*))
+    inline def setInnerRadiusVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "innerRadius", js.Array(value :_*))
     
-    @scala.inline
-    def setOuterRadius(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "outerRadius", value.asInstanceOf[js.Any])
+    inline def setOuterRadius(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "outerRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOuterRadiusUndefined: Self = StObject.set(x, "outerRadius", js.undefined)
+    inline def setOuterRadiusUndefined: Self = StObject.set(x, "outerRadius", js.undefined)
     
-    @scala.inline
-    def setOuterRadiusVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "outerRadius", js.Array(value :_*))
+    inline def setOuterRadiusVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "outerRadius", js.Array(value :_*))
     
-    @scala.inline
-    def setPadAngle(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "padAngle", value.asInstanceOf[js.Any])
+    inline def setPadAngle(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "padAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPadAngleUndefined: Self = StObject.set(x, "padAngle", js.undefined)
+    inline def setPadAngleUndefined: Self = StObject.set(x, "padAngle", js.undefined)
     
-    @scala.inline
-    def setPadAngleVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "padAngle", js.Array(value :_*))
+    inline def setPadAngleVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "padAngle", js.Array(value :_*))
     
-    @scala.inline
-    def setStartAngle(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
+    inline def setStartAngle(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "startAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
+    inline def setStartAngleUndefined: Self = StObject.set(x, "startAngle", js.undefined)
     
-    @scala.inline
-    def setStartAngleVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "startAngle", js.Array(value :_*))
+    inline def setStartAngleVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "startAngle", js.Array(value :_*))
   }
 }

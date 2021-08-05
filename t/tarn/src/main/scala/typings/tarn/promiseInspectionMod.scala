@@ -32,14 +32,12 @@ object promiseInspectionMod {
   trait PromiseInspectionArgs[T] extends StObject
   object PromiseInspectionArgs {
     
-    @scala.inline
-    def Error[T](value: T): typings.tarn.anon.Error[T] = {
+    inline def Error[T](value: T): typings.tarn.anon.Error[T] = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.tarn.anon.Error[T]]
     }
     
-    @scala.inline
-    def Value[T](error: Error): typings.tarn.anon.Value[T] = {
+    inline def Value[T](error: Error): typings.tarn.anon.Value[T] = {
       val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.tarn.anon.Value[T]]
     }

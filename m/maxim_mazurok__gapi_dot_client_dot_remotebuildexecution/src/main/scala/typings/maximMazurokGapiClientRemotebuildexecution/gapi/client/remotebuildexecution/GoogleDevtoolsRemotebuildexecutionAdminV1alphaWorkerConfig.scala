@@ -58,83 +58,59 @@ trait GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig extends StObjec
 }
 object GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig {
   
-  @scala.inline
-  def apply(): GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig = {
+  inline def apply(): GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig]
   }
   
-  @scala.inline
-  implicit class GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfigMutableBuilder[Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig](x: Self) {
     
-    @scala.inline
-    def setAccelerator(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaAcceleratorConfig): Self = StObject.set(x, "accelerator", value.asInstanceOf[js.Any])
+    inline def setAccelerator(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaAcceleratorConfig): Self = StObject.set(x, "accelerator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceleratorUndefined: Self = StObject.set(x, "accelerator", js.undefined)
+    inline def setAcceleratorUndefined: Self = StObject.set(x, "accelerator", js.undefined)
     
-    @scala.inline
-    def setDiskSizeGb(value: String): Self = StObject.set(x, "diskSizeGb", value.asInstanceOf[js.Any])
+    inline def setDiskSizeGb(value: String): Self = StObject.set(x, "diskSizeGb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskSizeGbUndefined: Self = StObject.set(x, "diskSizeGb", js.undefined)
+    inline def setDiskSizeGbUndefined: Self = StObject.set(x, "diskSizeGb", js.undefined)
     
-    @scala.inline
-    def setDiskType(value: String): Self = StObject.set(x, "diskType", value.asInstanceOf[js.Any])
+    inline def setDiskType(value: String): Self = StObject.set(x, "diskType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDiskTypeUndefined: Self = StObject.set(x, "diskType", js.undefined)
+    inline def setDiskTypeUndefined: Self = StObject.set(x, "diskType", js.undefined)
     
-    @scala.inline
-    def setLabels(
+    inline def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
       */ typings.maximMazurokGapiClientRemotebuildexecution.maximMazurokGapiClientRemotebuildexecutionStrings.GoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
     
-    @scala.inline
-    def setMachineType(value: String): Self = StObject.set(x, "machineType", value.asInstanceOf[js.Any])
+    inline def setMachineType(value: String): Self = StObject.set(x, "machineType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMachineTypeUndefined: Self = StObject.set(x, "machineType", js.undefined)
+    inline def setMachineTypeUndefined: Self = StObject.set(x, "machineType", js.undefined)
     
-    @scala.inline
-    def setMaxConcurrentActions(value: String): Self = StObject.set(x, "maxConcurrentActions", value.asInstanceOf[js.Any])
+    inline def setMaxConcurrentActions(value: String): Self = StObject.set(x, "maxConcurrentActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxConcurrentActionsUndefined: Self = StObject.set(x, "maxConcurrentActions", js.undefined)
+    inline def setMaxConcurrentActionsUndefined: Self = StObject.set(x, "maxConcurrentActions", js.undefined)
     
-    @scala.inline
-    def setMinCpuPlatform(value: String): Self = StObject.set(x, "minCpuPlatform", value.asInstanceOf[js.Any])
+    inline def setMinCpuPlatform(value: String): Self = StObject.set(x, "minCpuPlatform", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinCpuPlatformUndefined: Self = StObject.set(x, "minCpuPlatform", js.undefined)
+    inline def setMinCpuPlatformUndefined: Self = StObject.set(x, "minCpuPlatform", js.undefined)
     
-    @scala.inline
-    def setNetworkAccess(value: String): Self = StObject.set(x, "networkAccess", value.asInstanceOf[js.Any])
+    inline def setNetworkAccess(value: String): Self = StObject.set(x, "networkAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNetworkAccessUndefined: Self = StObject.set(x, "networkAccess", js.undefined)
+    inline def setNetworkAccessUndefined: Self = StObject.set(x, "networkAccess", js.undefined)
     
-    @scala.inline
-    def setReserved(value: Boolean): Self = StObject.set(x, "reserved", value.asInstanceOf[js.Any])
+    inline def setReserved(value: Boolean): Self = StObject.set(x, "reserved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReservedUndefined: Self = StObject.set(x, "reserved", js.undefined)
+    inline def setReservedUndefined: Self = StObject.set(x, "reserved", js.undefined)
     
-    @scala.inline
-    def setSoleTenancy(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaSoleTenancyConfig): Self = StObject.set(x, "soleTenancy", value.asInstanceOf[js.Any])
+    inline def setSoleTenancy(value: GoogleDevtoolsRemotebuildexecutionAdminV1alphaSoleTenancyConfig): Self = StObject.set(x, "soleTenancy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSoleTenancyUndefined: Self = StObject.set(x, "soleTenancy", js.undefined)
+    inline def setSoleTenancyUndefined: Self = StObject.set(x, "soleTenancy", js.undefined)
     
-    @scala.inline
-    def setVmImage(value: String): Self = StObject.set(x, "vmImage", value.asInstanceOf[js.Any])
+    inline def setVmImage(value: String): Self = StObject.set(x, "vmImage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVmImageUndefined: Self = StObject.set(x, "vmImage", js.undefined)
+    inline def setVmImageUndefined: Self = StObject.set(x, "vmImage", js.undefined)
   }
 }

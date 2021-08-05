@@ -23,8 +23,7 @@ trait ElementSelectEvent
 }
 object ElementSelectEvent {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     camera: CameraComponent,
     element: ElementComponent,
     event: MouseEvent | TouchEvent,
@@ -35,10 +34,8 @@ object ElementSelectEvent {
     __obj.asInstanceOf[ElementSelectEvent]
   }
   
-  @scala.inline
-  implicit class ElementSelectEventMutableBuilder[Self <: ElementSelectEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ElementSelectEvent](x: Self) {
     
-    @scala.inline
-    def setInputSource(value: XrInputSource): Self = StObject.set(x, "inputSource", value.asInstanceOf[js.Any])
+    inline def setInputSource(value: XrInputSource): Self = StObject.set(x, "inputSource", value.asInstanceOf[js.Any])
   }
 }

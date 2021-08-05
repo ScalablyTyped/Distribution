@@ -54,62 +54,44 @@ object sizemonitor {
   }
   object IAbstract {
     
-    @scala.inline
-    def apply(): IAbstract = {
+    inline def apply(): IAbstract = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IAbstract]
     }
     
-    @scala.inline
-    implicit class IAbstractMutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
+    extension [Self <: IAbstract](x: Self) {
       
-      @scala.inline
-      def setGetArgs(value: () => Array): Self = StObject.set(x, "getArgs", js.Any.fromFunction0(value))
+      inline def setGetArgs(value: () => Array): Self = StObject.set(x, "getArgs", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetArgsUndefined: Self = StObject.set(x, "getArgs", js.undefined)
+      inline def setGetArgsUndefined: Self = StObject.set(x, "getArgs", js.undefined)
       
-      @scala.inline
-      def setGetCallback(value: () => js.Any): Self = StObject.set(x, "getCallback", js.Any.fromFunction0(value))
+      inline def setGetCallback(value: () => js.Any): Self = StObject.set(x, "getCallback", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetCallbackUndefined: Self = StObject.set(x, "getCallback", js.undefined)
+      inline def setGetCallbackUndefined: Self = StObject.set(x, "getCallback", js.undefined)
       
-      @scala.inline
-      def setGetElement(value: () => js.Any): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+      inline def setGetElement(value: () => js.Any): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetElementUndefined: Self = StObject.set(x, "getElement", js.undefined)
+      inline def setGetElementUndefined: Self = StObject.set(x, "getElement", js.undefined)
       
-      @scala.inline
-      def setGetScope(value: () => js.Any): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
+      inline def setGetScope(value: () => js.Any): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetScopeUndefined: Self = StObject.set(x, "getScope", js.undefined)
+      inline def setGetScopeUndefined: Self = StObject.set(x, "getScope", js.undefined)
       
-      @scala.inline
-      def setSetArgs(value: /* args */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setArgs", js.Any.fromFunction1(value))
+      inline def setSetArgs(value: /* args */ js.UndefOr[Array] => Unit): Self = StObject.set(x, "setArgs", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetArgsUndefined: Self = StObject.set(x, "setArgs", js.undefined)
+      inline def setSetArgsUndefined: Self = StObject.set(x, "setArgs", js.undefined)
       
-      @scala.inline
-      def setSetCallback(value: /* callback */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setCallback", js.Any.fromFunction1(value))
+      inline def setSetCallback(value: /* callback */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setCallback", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetCallbackUndefined: Self = StObject.set(x, "setCallback", js.undefined)
+      inline def setSetCallbackUndefined: Self = StObject.set(x, "setCallback", js.undefined)
       
-      @scala.inline
-      def setSetElement(value: /* element */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setElement", js.Any.fromFunction1(value))
+      inline def setSetElement(value: /* element */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setElement", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetElementUndefined: Self = StObject.set(x, "setElement", js.undefined)
+      inline def setSetElementUndefined: Self = StObject.set(x, "setElement", js.undefined)
       
-      @scala.inline
-      def setSetScope(value: /* scope */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setScope", js.Any.fromFunction1(value))
+      inline def setSetScope(value: /* scope */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setScope", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setSetScopeUndefined: Self = StObject.set(x, "setScope", js.undefined)
+      inline def setSetScopeUndefined: Self = StObject.set(x, "setScope", js.undefined)
     }
   }
   

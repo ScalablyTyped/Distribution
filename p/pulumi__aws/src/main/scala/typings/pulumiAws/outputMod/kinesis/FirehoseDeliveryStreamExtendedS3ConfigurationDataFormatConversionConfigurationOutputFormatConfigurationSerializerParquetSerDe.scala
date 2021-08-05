@@ -38,49 +38,35 @@ trait FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigura
 }
 object FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe {
   
-  @scala.inline
-  def apply(): FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe = {
+  inline def apply(): FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe]
   }
   
-  @scala.inline
-  implicit class FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDeMutableBuilder[Self <: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe] (val x: Self) extends AnyVal {
+  extension [Self <: FirehoseDeliveryStreamExtendedS3ConfigurationDataFormatConversionConfigurationOutputFormatConfigurationSerializerParquetSerDe](x: Self) {
     
-    @scala.inline
-    def setBlockSizeBytes(value: Double): Self = StObject.set(x, "blockSizeBytes", value.asInstanceOf[js.Any])
+    inline def setBlockSizeBytes(value: Double): Self = StObject.set(x, "blockSizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlockSizeBytesUndefined: Self = StObject.set(x, "blockSizeBytes", js.undefined)
+    inline def setBlockSizeBytesUndefined: Self = StObject.set(x, "blockSizeBytes", js.undefined)
     
-    @scala.inline
-    def setCompression(value: String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+    inline def setCompression(value: String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+    inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
     
-    @scala.inline
-    def setEnableDictionaryCompression(value: Boolean): Self = StObject.set(x, "enableDictionaryCompression", value.asInstanceOf[js.Any])
+    inline def setEnableDictionaryCompression(value: Boolean): Self = StObject.set(x, "enableDictionaryCompression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableDictionaryCompressionUndefined: Self = StObject.set(x, "enableDictionaryCompression", js.undefined)
+    inline def setEnableDictionaryCompressionUndefined: Self = StObject.set(x, "enableDictionaryCompression", js.undefined)
     
-    @scala.inline
-    def setMaxPaddingBytes(value: Double): Self = StObject.set(x, "maxPaddingBytes", value.asInstanceOf[js.Any])
+    inline def setMaxPaddingBytes(value: Double): Self = StObject.set(x, "maxPaddingBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxPaddingBytesUndefined: Self = StObject.set(x, "maxPaddingBytes", js.undefined)
+    inline def setMaxPaddingBytesUndefined: Self = StObject.set(x, "maxPaddingBytes", js.undefined)
     
-    @scala.inline
-    def setPageSizeBytes(value: Double): Self = StObject.set(x, "pageSizeBytes", value.asInstanceOf[js.Any])
+    inline def setPageSizeBytes(value: Double): Self = StObject.set(x, "pageSizeBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageSizeBytesUndefined: Self = StObject.set(x, "pageSizeBytes", js.undefined)
+    inline def setPageSizeBytesUndefined: Self = StObject.set(x, "pageSizeBytes", js.undefined)
     
-    @scala.inline
-    def setWriterVersion(value: String): Self = StObject.set(x, "writerVersion", value.asInstanceOf[js.Any])
+    inline def setWriterVersion(value: String): Self = StObject.set(x, "writerVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWriterVersionUndefined: Self = StObject.set(x, "writerVersion", js.undefined)
+    inline def setWriterVersionUndefined: Self = StObject.set(x, "writerVersion", js.undefined)
   }
 }

@@ -33,8 +33,7 @@ trait GeodesicDistanceResult
 }
 object GeodesicDistanceResult {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
     propertyIsEnumerable: PropertyKey => Boolean
@@ -43,25 +42,18 @@ object GeodesicDistanceResult {
     __obj.asInstanceOf[GeodesicDistanceResult]
   }
   
-  @scala.inline
-  implicit class GeodesicDistanceResultMutableBuilder[Self <: GeodesicDistanceResult] (val x: Self) extends AnyVal {
+  extension [Self <: GeodesicDistanceResult](x: Self) {
     
-    @scala.inline
-    def setAzimuth(value: Double): Self = StObject.set(x, "azimuth", value.asInstanceOf[js.Any])
+    inline def setAzimuth(value: Double): Self = StObject.set(x, "azimuth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAzimuthUndefined: Self = StObject.set(x, "azimuth", js.undefined)
+    inline def setAzimuthUndefined: Self = StObject.set(x, "azimuth", js.undefined)
     
-    @scala.inline
-    def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
+    inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
+    inline def setDistanceUndefined: Self = StObject.set(x, "distance", js.undefined)
     
-    @scala.inline
-    def setReverseAzimuth(value: Double): Self = StObject.set(x, "reverseAzimuth", value.asInstanceOf[js.Any])
+    inline def setReverseAzimuth(value: Double): Self = StObject.set(x, "reverseAzimuth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReverseAzimuthUndefined: Self = StObject.set(x, "reverseAzimuth", js.undefined)
+    inline def setReverseAzimuthUndefined: Self = StObject.set(x, "reverseAzimuth", js.undefined)
   }
 }

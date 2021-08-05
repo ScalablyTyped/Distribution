@@ -18,19 +18,15 @@ trait TargetPivotTableTargetRange extends StObject {
 }
 object TargetPivotTableTargetRange {
   
-  @scala.inline
-  def apply(TargetPivotTable: PivotTable, TargetRange: Range): TargetPivotTableTargetRange = {
+  inline def apply(TargetPivotTable: PivotTable, TargetRange: Range): TargetPivotTableTargetRange = {
     val __obj = js.Dynamic.literal(TargetPivotTable = TargetPivotTable.asInstanceOf[js.Any], TargetRange = TargetRange.asInstanceOf[js.Any])
     __obj.asInstanceOf[TargetPivotTableTargetRange]
   }
   
-  @scala.inline
-  implicit class TargetPivotTableTargetRangeMutableBuilder[Self <: TargetPivotTableTargetRange] (val x: Self) extends AnyVal {
+  extension [Self <: TargetPivotTableTargetRange](x: Self) {
     
-    @scala.inline
-    def setTargetPivotTable(value: PivotTable): Self = StObject.set(x, "TargetPivotTable", value.asInstanceOf[js.Any])
+    inline def setTargetPivotTable(value: PivotTable): Self = StObject.set(x, "TargetPivotTable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetRange(value: Range): Self = StObject.set(x, "TargetRange", value.asInstanceOf[js.Any])
+    inline def setTargetRange(value: Range): Self = StObject.set(x, "TargetRange", value.asInstanceOf[js.Any])
   }
 }

@@ -44,64 +44,45 @@ trait Trigger extends StObject {
 }
 object Trigger {
   
-  @scala.inline
-  def apply(): Trigger = {
+  inline def apply(): Trigger = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Trigger]
   }
   
-  @scala.inline
-  implicit class TriggerMutableBuilder[Self <: Trigger] (val x: Self) extends AnyVal {
+  extension [Self <: Trigger](x: Self) {
     
-    @scala.inline
-    def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
+    inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
+    inline def setCreateTimeUndefined: Self = StObject.set(x, "createTime", js.undefined)
     
-    @scala.inline
-    def setDestination(value: Destination): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+    inline def setDestination(value: Destination): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+    inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
     
-    @scala.inline
-    def setMatchingCriteria(value: js.Array[MatchingCriteria]): Self = StObject.set(x, "matchingCriteria", value.asInstanceOf[js.Any])
+    inline def setMatchingCriteria(value: js.Array[MatchingCriteria]): Self = StObject.set(x, "matchingCriteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchingCriteriaUndefined: Self = StObject.set(x, "matchingCriteria", js.undefined)
+    inline def setMatchingCriteriaUndefined: Self = StObject.set(x, "matchingCriteria", js.undefined)
     
-    @scala.inline
-    def setMatchingCriteriaVarargs(value: MatchingCriteria*): Self = StObject.set(x, "matchingCriteria", js.Array(value :_*))
+    inline def setMatchingCriteriaVarargs(value: MatchingCriteria*): Self = StObject.set(x, "matchingCriteria", js.Array(value :_*))
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setServiceAccount(value: String): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
+    inline def setServiceAccount(value: String): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
+    inline def setServiceAccountUndefined: Self = StObject.set(x, "serviceAccount", js.undefined)
     
-    @scala.inline
-    def setTransport(value: Transport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
+    inline def setTransport(value: Transport): Self = StObject.set(x, "transport", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
+    inline def setTransportUndefined: Self = StObject.set(x, "transport", js.undefined)
     
-    @scala.inline
-    def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
+    inline def setUpdateTime(value: String): Self = StObject.set(x, "updateTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
+    inline def setUpdateTimeUndefined: Self = StObject.set(x, "updateTime", js.undefined)
   }
 }

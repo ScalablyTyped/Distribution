@@ -38,50 +38,42 @@ object requestHandlingMod {
     @JSGlobal("activeRequests")
     @js.native
     def activeRequests: js.Array[jqXHR[js.Any]] = js.native
-    @scala.inline
-    def activeRequests_=(x: js.Array[jqXHR[js.Any]]): Unit = js.Dynamic.global.updateDynamic("activeRequests")(x.asInstanceOf[js.Any])
+    inline def activeRequests_=(x: js.Array[jqXHR[js.Any]]): Unit = js.Dynamic.global.updateDynamic("activeRequests")(x.asInstanceOf[js.Any])
     
     /** failed data requests calls */
     @JSGlobal("failedRequestCount")
     @js.native
     def failedRequestCount: Double = js.native
-    @scala.inline
-    def failedRequestCount_=(x: Double): Unit = js.Dynamic.global.updateDynamic("failedRequestCount")(x.asInstanceOf[js.Any])
+    inline def failedRequestCount_=(x: Double): Unit = js.Dynamic.global.updateDynamic("failedRequestCount")(x.asInstanceOf[js.Any])
     
     @JSGlobal("requests")
     @js.native
     def requests: Requests_ = js.native
-    @scala.inline
-    def requests_=(x: Requests_): Unit = js.Dynamic.global.updateDynamic("requests")(x.asInstanceOf[js.Any])
+    inline def requests_=(x: Requests_): Unit = js.Dynamic.global.updateDynamic("requests")(x.asInstanceOf[js.Any])
     
     @JSGlobal("statusCachedMapTiles")
     @js.native
     def statusCachedMapTiles: Double = js.native
-    @scala.inline
-    def statusCachedMapTiles_=(x: Double): Unit = js.Dynamic.global.updateDynamic("statusCachedMapTiles")(x.asInstanceOf[js.Any])
+    inline def statusCachedMapTiles_=(x: Double): Unit = js.Dynamic.global.updateDynamic("statusCachedMapTiles")(x.asInstanceOf[js.Any])
     
     @JSGlobal("statusErrorMapTiles")
     @js.native
     def statusErrorMapTiles: Double = js.native
-    @scala.inline
-    def statusErrorMapTiles_=(x: Double): Unit = js.Dynamic.global.updateDynamic("statusErrorMapTiles")(x.asInstanceOf[js.Any])
+    inline def statusErrorMapTiles_=(x: Double): Unit = js.Dynamic.global.updateDynamic("statusErrorMapTiles")(x.asInstanceOf[js.Any])
     
     @JSGlobal("statusStaleMapTiles")
     @js.native
     def statusStaleMapTiles: Double = js.native
-    @scala.inline
-    def statusStaleMapTiles_=(x: Double): Unit = js.Dynamic.global.updateDynamic("statusStaleMapTiles")(x.asInstanceOf[js.Any])
+    inline def statusStaleMapTiles_=(x: Double): Unit = js.Dynamic.global.updateDynamic("statusStaleMapTiles")(x.asInstanceOf[js.Any])
     
     @JSGlobal("statusSuccessMapTiles")
     @js.native
     def statusSuccessMapTiles: Double = js.native
-    @scala.inline
-    def statusSuccessMapTiles_=(x: Double): Unit = js.Dynamic.global.updateDynamic("statusSuccessMapTiles")(x.asInstanceOf[js.Any])
+    inline def statusSuccessMapTiles_=(x: Double): Unit = js.Dynamic.global.updateDynamic("statusSuccessMapTiles")(x.asInstanceOf[js.Any])
     
     @JSGlobal("statusTotalMapTiles")
     @js.native
     def statusTotalMapTiles: Double = js.native
-    @scala.inline
-    def statusTotalMapTiles_=(x: Double): Unit = js.Dynamic.global.updateDynamic("statusTotalMapTiles")(x.asInstanceOf[js.Any])
+    inline def statusTotalMapTiles_=(x: Double): Unit = js.Dynamic.global.updateDynamic("statusTotalMapTiles")(x.asInstanceOf[js.Any])
   }
 }

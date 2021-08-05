@@ -21,12 +21,9 @@ trait Box
      with _WebkitMaskProperty[js.Any]
 object Box {
   
-  @scala.inline
-  def `border-box`: typings.preact.preactStrings.`border-box` = "border-box".asInstanceOf[typings.preact.preactStrings.`border-box`]
+  inline def `border-box`: typings.preact.preactStrings.`border-box` = "border-box".asInstanceOf[typings.preact.preactStrings.`border-box`]
   
-  @scala.inline
-  def `content-box`: typings.preact.preactStrings.`content-box` = "content-box".asInstanceOf[typings.preact.preactStrings.`content-box`]
+  inline def `content-box`: typings.preact.preactStrings.`content-box` = "content-box".asInstanceOf[typings.preact.preactStrings.`content-box`]
   
-  @scala.inline
-  def `padding-box`: typings.preact.preactStrings.`padding-box` = "padding-box".asInstanceOf[typings.preact.preactStrings.`padding-box`]
+  inline def `padding-box`: typings.preact.preactStrings.`padding-box` = "padding-box".asInstanceOf[typings.preact.preactStrings.`padding-box`]
 }

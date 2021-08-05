@@ -26,52 +26,37 @@ trait ParameterMetadata extends StObject {
 }
 object ParameterMetadata {
   
-  @scala.inline
-  def apply(): ParameterMetadata = {
+  inline def apply(): ParameterMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParameterMetadata]
   }
   
-  @scala.inline
-  implicit class ParameterMetadataMutableBuilder[Self <: ParameterMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: ParameterMetadata](x: Self) {
     
-    @scala.inline
-    def setHelpText(value: String): Self = StObject.set(x, "helpText", value.asInstanceOf[js.Any])
+    inline def setHelpText(value: String): Self = StObject.set(x, "helpText", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHelpTextUndefined: Self = StObject.set(x, "helpText", js.undefined)
+    inline def setHelpTextUndefined: Self = StObject.set(x, "helpText", js.undefined)
     
-    @scala.inline
-    def setIsOptional(value: Boolean): Self = StObject.set(x, "isOptional", value.asInstanceOf[js.Any])
+    inline def setIsOptional(value: Boolean): Self = StObject.set(x, "isOptional", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsOptionalUndefined: Self = StObject.set(x, "isOptional", js.undefined)
+    inline def setIsOptionalUndefined: Self = StObject.set(x, "isOptional", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setParamType(value: String): Self = StObject.set(x, "paramType", value.asInstanceOf[js.Any])
+    inline def setParamType(value: String): Self = StObject.set(x, "paramType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamTypeUndefined: Self = StObject.set(x, "paramType", js.undefined)
+    inline def setParamTypeUndefined: Self = StObject.set(x, "paramType", js.undefined)
     
-    @scala.inline
-    def setRegexes(value: js.Array[String]): Self = StObject.set(x, "regexes", value.asInstanceOf[js.Any])
+    inline def setRegexes(value: js.Array[String]): Self = StObject.set(x, "regexes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegexesUndefined: Self = StObject.set(x, "regexes", js.undefined)
+    inline def setRegexesUndefined: Self = StObject.set(x, "regexes", js.undefined)
     
-    @scala.inline
-    def setRegexesVarargs(value: String*): Self = StObject.set(x, "regexes", js.Array(value :_*))
+    inline def setRegexesVarargs(value: String*): Self = StObject.set(x, "regexes", js.Array(value :_*))
   }
 }

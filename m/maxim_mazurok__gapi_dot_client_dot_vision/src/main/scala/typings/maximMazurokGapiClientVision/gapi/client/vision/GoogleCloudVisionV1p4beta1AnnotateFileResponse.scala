@@ -20,40 +20,29 @@ trait GoogleCloudVisionV1p4beta1AnnotateFileResponse extends StObject {
 }
 object GoogleCloudVisionV1p4beta1AnnotateFileResponse {
   
-  @scala.inline
-  def apply(): GoogleCloudVisionV1p4beta1AnnotateFileResponse = {
+  inline def apply(): GoogleCloudVisionV1p4beta1AnnotateFileResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVisionV1p4beta1AnnotateFileResponse]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVisionV1p4beta1AnnotateFileResponseMutableBuilder[Self <: GoogleCloudVisionV1p4beta1AnnotateFileResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVisionV1p4beta1AnnotateFileResponse](x: Self) {
     
-    @scala.inline
-    def setError(value: Status): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    inline def setError(value: Status): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+    inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
-    @scala.inline
-    def setInputConfig(value: GoogleCloudVisionV1p4beta1InputConfig): Self = StObject.set(x, "inputConfig", value.asInstanceOf[js.Any])
+    inline def setInputConfig(value: GoogleCloudVisionV1p4beta1InputConfig): Self = StObject.set(x, "inputConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputConfigUndefined: Self = StObject.set(x, "inputConfig", js.undefined)
+    inline def setInputConfigUndefined: Self = StObject.set(x, "inputConfig", js.undefined)
     
-    @scala.inline
-    def setResponses(value: js.Array[GoogleCloudVisionV1p4beta1AnnotateImageResponse]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
+    inline def setResponses(value: js.Array[GoogleCloudVisionV1p4beta1AnnotateImageResponse]): Self = StObject.set(x, "responses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
+    inline def setResponsesUndefined: Self = StObject.set(x, "responses", js.undefined)
     
-    @scala.inline
-    def setResponsesVarargs(value: GoogleCloudVisionV1p4beta1AnnotateImageResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
+    inline def setResponsesVarargs(value: GoogleCloudVisionV1p4beta1AnnotateImageResponse*): Self = StObject.set(x, "responses", js.Array(value :_*))
     
-    @scala.inline
-    def setTotalPages(value: Double): Self = StObject.set(x, "totalPages", value.asInstanceOf[js.Any])
+    inline def setTotalPages(value: Double): Self = StObject.set(x, "totalPages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalPagesUndefined: Self = StObject.set(x, "totalPages", js.undefined)
+    inline def setTotalPagesUndefined: Self = StObject.set(x, "totalPages", js.undefined)
   }
 }

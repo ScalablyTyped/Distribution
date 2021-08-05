@@ -23,25 +23,19 @@ trait FinalHyperParameterTuningJobObjectiveMetric extends StObject {
 }
 object FinalHyperParameterTuningJobObjectiveMetric {
   
-  @scala.inline
-  def apply(MetricName: MetricName, Value: MetricValue): FinalHyperParameterTuningJobObjectiveMetric = {
+  inline def apply(MetricName: MetricName, Value: MetricValue): FinalHyperParameterTuningJobObjectiveMetric = {
     val __obj = js.Dynamic.literal(MetricName = MetricName.asInstanceOf[js.Any], Value = Value.asInstanceOf[js.Any])
     __obj.asInstanceOf[FinalHyperParameterTuningJobObjectiveMetric]
   }
   
-  @scala.inline
-  implicit class FinalHyperParameterTuningJobObjectiveMetricMutableBuilder[Self <: FinalHyperParameterTuningJobObjectiveMetric] (val x: Self) extends AnyVal {
+  extension [Self <: FinalHyperParameterTuningJobObjectiveMetric](x: Self) {
     
-    @scala.inline
-    def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: MetricName): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: HyperParameterTuningJobObjectiveType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: HyperParameterTuningJobObjectiveType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "Type", js.undefined)
     
-    @scala.inline
-    def setValue(value: MetricValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: MetricValue): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
   }
 }

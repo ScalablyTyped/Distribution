@@ -19,8 +19,7 @@ trait KnockoutEditable extends StObject {
 }
 object KnockoutEditable {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addEditable: js.Any => js.Any,
     beginEdit: () => Unit,
     commit: () => Unit,
@@ -31,22 +30,16 @@ object KnockoutEditable {
     __obj.asInstanceOf[KnockoutEditable]
   }
   
-  @scala.inline
-  implicit class KnockoutEditableMutableBuilder[Self <: KnockoutEditable] (val x: Self) extends AnyVal {
+  extension [Self <: KnockoutEditable](x: Self) {
     
-    @scala.inline
-    def setAddEditable(value: js.Any => js.Any): Self = StObject.set(x, "addEditable", js.Any.fromFunction1(value))
+    inline def setAddEditable(value: js.Any => js.Any): Self = StObject.set(x, "addEditable", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setBeginEdit(value: () => Unit): Self = StObject.set(x, "beginEdit", js.Any.fromFunction0(value))
+    inline def setBeginEdit(value: () => Unit): Self = StObject.set(x, "beginEdit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCommit(value: () => Unit): Self = StObject.set(x, "commit", js.Any.fromFunction0(value))
+    inline def setCommit(value: () => Unit): Self = StObject.set(x, "commit", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setHasChanges(value: () => Boolean): Self = StObject.set(x, "hasChanges", js.Any.fromFunction0(value))
+    inline def setHasChanges(value: () => Boolean): Self = StObject.set(x, "hasChanges", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRollback(value: () => Unit): Self = StObject.set(x, "rollback", js.Any.fromFunction0(value))
+    inline def setRollback(value: () => Unit): Self = StObject.set(x, "rollback", js.Any.fromFunction0(value))
   }
 }

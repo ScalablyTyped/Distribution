@@ -14,8 +14,7 @@ trait OutgoingWebhooks[T] extends StObject {
 }
 object OutgoingWebhooks {
   
-  @scala.inline
-  def apply[T](
+  inline def apply[T](
     calls: js.Array[OutgoingWebhookCall[T]],
     reset: () => Unit,
     send: (OutgoingWebhookUrl, T) => js.Promise[Unit]
@@ -24,19 +23,14 @@ object OutgoingWebhooks {
     __obj.asInstanceOf[OutgoingWebhooks[T]]
   }
   
-  @scala.inline
-  implicit class OutgoingWebhooksMutableBuilder[Self <: OutgoingWebhooks[?], T] (val x: Self & OutgoingWebhooks[T]) extends AnyVal {
+  extension [Self <: OutgoingWebhooks[?], T](x: Self & OutgoingWebhooks[T]) {
     
-    @scala.inline
-    def setCalls(value: js.Array[OutgoingWebhookCall[T]]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
+    inline def setCalls(value: js.Array[OutgoingWebhookCall[T]]): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallsVarargs(value: OutgoingWebhookCall[T]*): Self = StObject.set(x, "calls", js.Array(value :_*))
+    inline def setCallsVarargs(value: OutgoingWebhookCall[T]*): Self = StObject.set(x, "calls", js.Array(value :_*))
     
-    @scala.inline
-    def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
+    inline def setReset(value: () => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSend(value: (OutgoingWebhookUrl, T) => js.Promise[Unit]): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
+    inline def setSend(value: (OutgoingWebhookUrl, T) => js.Promise[Unit]): Self = StObject.set(x, "send", js.Any.fromFunction2(value))
   }
 }

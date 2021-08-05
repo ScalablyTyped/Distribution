@@ -24,8 +24,7 @@ trait WebAclRuleVisibilityConfig extends StObject {
 }
 object WebAclRuleVisibilityConfig {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cloudwatchMetricsEnabled: Input[Boolean],
     metricName: Input[String],
     sampledRequestsEnabled: Input[Boolean]
@@ -34,16 +33,12 @@ object WebAclRuleVisibilityConfig {
     __obj.asInstanceOf[WebAclRuleVisibilityConfig]
   }
   
-  @scala.inline
-  implicit class WebAclRuleVisibilityConfigMutableBuilder[Self <: WebAclRuleVisibilityConfig] (val x: Self) extends AnyVal {
+  extension [Self <: WebAclRuleVisibilityConfig](x: Self) {
     
-    @scala.inline
-    def setCloudwatchMetricsEnabled(value: Input[Boolean]): Self = StObject.set(x, "cloudwatchMetricsEnabled", value.asInstanceOf[js.Any])
+    inline def setCloudwatchMetricsEnabled(value: Input[Boolean]): Self = StObject.set(x, "cloudwatchMetricsEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricName(value: Input[String]): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
+    inline def setMetricName(value: Input[String]): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampledRequestsEnabled(value: Input[Boolean]): Self = StObject.set(x, "sampledRequestsEnabled", value.asInstanceOf[js.Any])
+    inline def setSampledRequestsEnabled(value: Input[Boolean]): Self = StObject.set(x, "sampledRequestsEnabled", value.asInstanceOf[js.Any])
   }
 }

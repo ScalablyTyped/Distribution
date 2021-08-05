@@ -16,31 +16,23 @@ trait IndicesUpdateAliasesParamsAction extends StObject {
 }
 object IndicesUpdateAliasesParamsAction {
   
-  @scala.inline
-  def apply(): IndicesUpdateAliasesParamsAction = {
+  inline def apply(): IndicesUpdateAliasesParamsAction = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IndicesUpdateAliasesParamsAction]
   }
   
-  @scala.inline
-  implicit class IndicesUpdateAliasesParamsActionMutableBuilder[Self <: IndicesUpdateAliasesParamsAction] (val x: Self) extends AnyVal {
+  extension [Self <: IndicesUpdateAliasesParamsAction](x: Self) {
     
-    @scala.inline
-    def setAdd(value: Alias): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
+    inline def setAdd(value: Alias): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
+    inline def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
     
-    @scala.inline
-    def setRemove(value: typings.elasticsearch.anon.Indices): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+    inline def setRemove(value: typings.elasticsearch.anon.Indices): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
+    inline def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
-    @scala.inline
-    def setRemove_index(value: IndexString): Self = StObject.set(x, "remove_index", value.asInstanceOf[js.Any])
+    inline def setRemove_index(value: IndexString): Self = StObject.set(x, "remove_index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRemove_indexUndefined: Self = StObject.set(x, "remove_index", js.undefined)
+    inline def setRemove_indexUndefined: Self = StObject.set(x, "remove_index", js.undefined)
   }
 }

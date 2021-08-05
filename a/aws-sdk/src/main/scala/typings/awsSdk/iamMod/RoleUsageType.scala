@@ -18,28 +18,21 @@ trait RoleUsageType extends StObject {
 }
 object RoleUsageType {
   
-  @scala.inline
-  def apply(): RoleUsageType = {
+  inline def apply(): RoleUsageType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RoleUsageType]
   }
   
-  @scala.inline
-  implicit class RoleUsageTypeMutableBuilder[Self <: RoleUsageType] (val x: Self) extends AnyVal {
+  extension [Self <: RoleUsageType](x: Self) {
     
-    @scala.inline
-    def setRegion(value: RegionNameType): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: RegionNameType): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
     
-    @scala.inline
-    def setResources(value: ArnListType): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
+    inline def setResources(value: ArnListType): Self = StObject.set(x, "Resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourcesUndefined: Self = StObject.set(x, "Resources", js.undefined)
+    inline def setResourcesUndefined: Self = StObject.set(x, "Resources", js.undefined)
     
-    @scala.inline
-    def setResourcesVarargs(value: arnType*): Self = StObject.set(x, "Resources", js.Array(value :_*))
+    inline def setResourcesVarargs(value: arnType*): Self = StObject.set(x, "Resources", js.Array(value :_*))
   }
 }

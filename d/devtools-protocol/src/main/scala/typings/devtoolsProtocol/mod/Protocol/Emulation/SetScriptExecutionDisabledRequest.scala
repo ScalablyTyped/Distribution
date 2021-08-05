@@ -13,16 +13,13 @@ trait SetScriptExecutionDisabledRequest extends StObject {
 }
 object SetScriptExecutionDisabledRequest {
   
-  @scala.inline
-  def apply(value: Boolean): SetScriptExecutionDisabledRequest = {
+  inline def apply(value: Boolean): SetScriptExecutionDisabledRequest = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[SetScriptExecutionDisabledRequest]
   }
   
-  @scala.inline
-  implicit class SetScriptExecutionDisabledRequestMutableBuilder[Self <: SetScriptExecutionDisabledRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SetScriptExecutionDisabledRequest](x: Self) {
     
-    @scala.inline
-    def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Boolean): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

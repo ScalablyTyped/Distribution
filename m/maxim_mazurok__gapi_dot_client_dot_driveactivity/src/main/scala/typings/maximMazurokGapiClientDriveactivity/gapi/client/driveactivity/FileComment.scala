@@ -23,37 +23,27 @@ trait FileComment extends StObject {
 }
 object FileComment {
   
-  @scala.inline
-  def apply(): FileComment = {
+  inline def apply(): FileComment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileComment]
   }
   
-  @scala.inline
-  implicit class FileCommentMutableBuilder[Self <: FileComment] (val x: Self) extends AnyVal {
+  extension [Self <: FileComment](x: Self) {
     
-    @scala.inline
-    def setLegacyCommentId(value: String): Self = StObject.set(x, "legacyCommentId", value.asInstanceOf[js.Any])
+    inline def setLegacyCommentId(value: String): Self = StObject.set(x, "legacyCommentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegacyCommentIdUndefined: Self = StObject.set(x, "legacyCommentId", js.undefined)
+    inline def setLegacyCommentIdUndefined: Self = StObject.set(x, "legacyCommentId", js.undefined)
     
-    @scala.inline
-    def setLegacyDiscussionId(value: String): Self = StObject.set(x, "legacyDiscussionId", value.asInstanceOf[js.Any])
+    inline def setLegacyDiscussionId(value: String): Self = StObject.set(x, "legacyDiscussionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLegacyDiscussionIdUndefined: Self = StObject.set(x, "legacyDiscussionId", js.undefined)
+    inline def setLegacyDiscussionIdUndefined: Self = StObject.set(x, "legacyDiscussionId", js.undefined)
     
-    @scala.inline
-    def setLinkToDiscussion(value: String): Self = StObject.set(x, "linkToDiscussion", value.asInstanceOf[js.Any])
+    inline def setLinkToDiscussion(value: String): Self = StObject.set(x, "linkToDiscussion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkToDiscussionUndefined: Self = StObject.set(x, "linkToDiscussion", js.undefined)
+    inline def setLinkToDiscussionUndefined: Self = StObject.set(x, "linkToDiscussion", js.undefined)
     
-    @scala.inline
-    def setParent(value: DriveItem): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: DriveItem): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+    inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
   }
 }

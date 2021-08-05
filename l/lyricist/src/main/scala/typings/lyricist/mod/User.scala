@@ -31,8 +31,7 @@ trait User extends StObject {
 }
 object User {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     api_path: String,
     avatar: Avatar,
     current_user_metadata: Features,
@@ -49,40 +48,28 @@ object User {
     __obj.asInstanceOf[User]
   }
   
-  @scala.inline
-  implicit class UserMutableBuilder[Self <: User] (val x: Self) extends AnyVal {
+  extension [Self <: User](x: Self) {
     
-    @scala.inline
-    def setApi_path(value: String): Self = StObject.set(x, "api_path", value.asInstanceOf[js.Any])
+    inline def setApi_path(value: String): Self = StObject.set(x, "api_path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvatar(value: Avatar): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
+    inline def setAvatar(value: Avatar): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrent_user_metadata(value: Features): Self = StObject.set(x, "current_user_metadata", value.asInstanceOf[js.Any])
+    inline def setCurrent_user_metadata(value: Features): Self = StObject.set(x, "current_user_metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeader_image_url(value: String): Self = StObject.set(x, "header_image_url", value.asInstanceOf[js.Any])
+    inline def setHeader_image_url(value: String): Self = StObject.set(x, "header_image_url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHuman_readable_role_for_display(value: String): Self = StObject.set(x, "human_readable_role_for_display", value.asInstanceOf[js.Any])
+    inline def setHuman_readable_role_for_display(value: String): Self = StObject.set(x, "human_readable_role_for_display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIq(value: Double): Self = StObject.set(x, "iq", value.asInstanceOf[js.Any])
+    inline def setIq(value: Double): Self = StObject.set(x, "iq", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
+    inline def setLogin(value: String): Self = StObject.set(x, "login", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRole_for_display(value: String): Self = StObject.set(x, "role_for_display", value.asInstanceOf[js.Any])
+    inline def setRole_for_display(value: String): Self = StObject.set(x, "role_for_display", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

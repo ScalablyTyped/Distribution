@@ -47,37 +47,27 @@ trait SchemaGoogleDevtoolsRemoteexecutionV1testExecuteResponse extends StObject 
 }
 object SchemaGoogleDevtoolsRemoteexecutionV1testExecuteResponse {
   
-  @scala.inline
-  def apply(): SchemaGoogleDevtoolsRemoteexecutionV1testExecuteResponse = {
+  inline def apply(): SchemaGoogleDevtoolsRemoteexecutionV1testExecuteResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleDevtoolsRemoteexecutionV1testExecuteResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleDevtoolsRemoteexecutionV1testExecuteResponseMutableBuilder[Self <: SchemaGoogleDevtoolsRemoteexecutionV1testExecuteResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleDevtoolsRemoteexecutionV1testExecuteResponse](x: Self) {
     
-    @scala.inline
-    def setCachedResult(value: Boolean): Self = StObject.set(x, "cachedResult", value.asInstanceOf[js.Any])
+    inline def setCachedResult(value: Boolean): Self = StObject.set(x, "cachedResult", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCachedResultUndefined: Self = StObject.set(x, "cachedResult", js.undefined)
+    inline def setCachedResultUndefined: Self = StObject.set(x, "cachedResult", js.undefined)
     
-    @scala.inline
-    def setResult(value: SchemaGoogleDevtoolsRemoteexecutionV1testActionResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: SchemaGoogleDevtoolsRemoteexecutionV1testActionResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+    inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
     
-    @scala.inline
-    def setServerLogs(value: StringDictionary[SchemaGoogleDevtoolsRemoteexecutionV1testLogFile]): Self = StObject.set(x, "serverLogs", value.asInstanceOf[js.Any])
+    inline def setServerLogs(value: StringDictionary[SchemaGoogleDevtoolsRemoteexecutionV1testLogFile]): Self = StObject.set(x, "serverLogs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerLogsUndefined: Self = StObject.set(x, "serverLogs", js.undefined)
+    inline def setServerLogsUndefined: Self = StObject.set(x, "serverLogs", js.undefined)
     
-    @scala.inline
-    def setStatus(value: SchemaGoogleRpcStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: SchemaGoogleRpcStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
   }
 }

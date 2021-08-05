@@ -14,11 +14,9 @@ object reporterRpcClientMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def composeReporterRpcClients(clients: js.Array[ReporterRpcClient]): ReporterRpcClient = ^.asInstanceOf[js.Dynamic].applyDynamic("composeReporterRpcClients")(clients.asInstanceOf[js.Any]).asInstanceOf[ReporterRpcClient]
+  inline def composeReporterRpcClients(clients: js.Array[ReporterRpcClient]): ReporterRpcClient = ^.asInstanceOf[js.Dynamic].applyDynamic("composeReporterRpcClients")(clients.asInstanceOf[js.Any]).asInstanceOf[ReporterRpcClient]
   
-  @scala.inline
-  def createReporterRpcClient[TConfiguration /* <: js.Object */](channel: RpcMessageChannel, configuration: TConfiguration): ReporterRpcClient = (^.asInstanceOf[js.Dynamic].applyDynamic("createReporterRpcClient")(channel.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[ReporterRpcClient]
+  inline def createReporterRpcClient[TConfiguration /* <: js.Object */](channel: RpcMessageChannel, configuration: TConfiguration): ReporterRpcClient = (^.asInstanceOf[js.Dynamic].applyDynamic("createReporterRpcClient")(channel.asInstanceOf[js.Any], configuration.asInstanceOf[js.Any])).asInstanceOf[ReporterRpcClient]
   
   trait ReporterRpcClient
     extends StObject
@@ -32,8 +30,7 @@ object reporterRpcClientMod {
   }
   object ReporterRpcClient {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       connect: () => js.Promise[Unit],
       disconnect: () => js.Promise[Unit],
       getReport: FilesChange => js.Promise[Report],
@@ -43,17 +40,13 @@ object reporterRpcClientMod {
       __obj.asInstanceOf[ReporterRpcClient]
     }
     
-    @scala.inline
-    implicit class ReporterRpcClientMutableBuilder[Self <: ReporterRpcClient] (val x: Self) extends AnyVal {
+    extension [Self <: ReporterRpcClient](x: Self) {
       
-      @scala.inline
-      def setConnect(value: () => js.Promise[Unit]): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
+      inline def setConnect(value: () => js.Promise[Unit]): Self = StObject.set(x, "connect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setDisconnect(value: () => js.Promise[Unit]): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
+      inline def setDisconnect(value: () => js.Promise[Unit]): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsConnected(value: () => Boolean): Self = StObject.set(x, "isConnected", js.Any.fromFunction0(value))
+      inline def setIsConnected(value: () => Boolean): Self = StObject.set(x, "isConnected", js.Any.fromFunction0(value))
     }
   }
 }

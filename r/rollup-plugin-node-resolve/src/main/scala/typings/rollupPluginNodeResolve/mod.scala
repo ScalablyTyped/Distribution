@@ -13,10 +13,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Plugin]
-  @scala.inline
-  def default(options: Options): Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
+  inline def default(): Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Plugin]
+  inline def default(options: Options): Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Plugin]
   
   trait Options extends StObject {
     
@@ -113,104 +111,72 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setBrowser(value: Boolean): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+      inline def setBrowser(value: Boolean): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBrowserUndefined: Self = StObject.set(x, "browser", js.undefined)
+      inline def setBrowserUndefined: Self = StObject.set(x, "browser", js.undefined)
       
-      @scala.inline
-      def setCustomResolveOptions(value: AsyncOpts): Self = StObject.set(x, "customResolveOptions", value.asInstanceOf[js.Any])
+      inline def setCustomResolveOptions(value: AsyncOpts): Self = StObject.set(x, "customResolveOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomResolveOptionsUndefined: Self = StObject.set(x, "customResolveOptions", js.undefined)
+      inline def setCustomResolveOptionsUndefined: Self = StObject.set(x, "customResolveOptions", js.undefined)
       
-      @scala.inline
-      def setDedupe(value: js.Array[String] | (js.Function1[/* importee */ String, Boolean])): Self = StObject.set(x, "dedupe", value.asInstanceOf[js.Any])
+      inline def setDedupe(value: js.Array[String] | (js.Function1[/* importee */ String, Boolean])): Self = StObject.set(x, "dedupe", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDedupeFunction1(value: /* importee */ String => Boolean): Self = StObject.set(x, "dedupe", js.Any.fromFunction1(value))
+      inline def setDedupeFunction1(value: /* importee */ String => Boolean): Self = StObject.set(x, "dedupe", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setDedupeUndefined: Self = StObject.set(x, "dedupe", js.undefined)
+      inline def setDedupeUndefined: Self = StObject.set(x, "dedupe", js.undefined)
       
-      @scala.inline
-      def setDedupeVarargs(value: String*): Self = StObject.set(x, "dedupe", js.Array(value :_*))
+      inline def setDedupeVarargs(value: String*): Self = StObject.set(x, "dedupe", js.Array(value :_*))
       
-      @scala.inline
-      def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      @scala.inline
-      def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
       
-      @scala.inline
-      def setJail(value: String): Self = StObject.set(x, "jail", value.asInstanceOf[js.Any])
+      inline def setJail(value: String): Self = StObject.set(x, "jail", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJailUndefined: Self = StObject.set(x, "jail", js.undefined)
+      inline def setJailUndefined: Self = StObject.set(x, "jail", js.undefined)
       
-      @scala.inline
-      def setJsnext(value: Boolean): Self = StObject.set(x, "jsnext", value.asInstanceOf[js.Any])
+      inline def setJsnext(value: Boolean): Self = StObject.set(x, "jsnext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setJsnextUndefined: Self = StObject.set(x, "jsnext", js.undefined)
+      inline def setJsnextUndefined: Self = StObject.set(x, "jsnext", js.undefined)
       
-      @scala.inline
-      def setMain(value: Boolean): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
+      inline def setMain(value: Boolean): Self = StObject.set(x, "main", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMainFields(value: js.Array[String]): Self = StObject.set(x, "mainFields", value.asInstanceOf[js.Any])
+      inline def setMainFields(value: js.Array[String]): Self = StObject.set(x, "mainFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMainFieldsUndefined: Self = StObject.set(x, "mainFields", js.undefined)
+      inline def setMainFieldsUndefined: Self = StObject.set(x, "mainFields", js.undefined)
       
-      @scala.inline
-      def setMainFieldsVarargs(value: String*): Self = StObject.set(x, "mainFields", js.Array(value :_*))
+      inline def setMainFieldsVarargs(value: String*): Self = StObject.set(x, "mainFields", js.Array(value :_*))
       
-      @scala.inline
-      def setMainUndefined: Self = StObject.set(x, "main", js.undefined)
+      inline def setMainUndefined: Self = StObject.set(x, "main", js.undefined)
       
-      @scala.inline
-      def setModule(value: Boolean): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+      inline def setModule(value: Boolean): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
+      inline def setModuleUndefined: Self = StObject.set(x, "module", js.undefined)
       
-      @scala.inline
-      def setModulesOnly(value: Boolean): Self = StObject.set(x, "modulesOnly", value.asInstanceOf[js.Any])
+      inline def setModulesOnly(value: Boolean): Self = StObject.set(x, "modulesOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModulesOnlyUndefined: Self = StObject.set(x, "modulesOnly", js.undefined)
+      inline def setModulesOnlyUndefined: Self = StObject.set(x, "modulesOnly", js.undefined)
       
-      @scala.inline
-      def setOnly(value: js.Array[String | RegExp]): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
+      inline def setOnly(value: js.Array[String | RegExp]): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnlyNull: Self = StObject.set(x, "only", null)
+      inline def setOnlyNull: Self = StObject.set(x, "only", null)
       
-      @scala.inline
-      def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
+      inline def setOnlyUndefined: Self = StObject.set(x, "only", js.undefined)
       
-      @scala.inline
-      def setOnlyVarargs(value: (String | RegExp)*): Self = StObject.set(x, "only", js.Array(value :_*))
+      inline def setOnlyVarargs(value: (String | RegExp)*): Self = StObject.set(x, "only", js.Array(value :_*))
       
-      @scala.inline
-      def setPreferBuiltins(value: Boolean): Self = StObject.set(x, "preferBuiltins", value.asInstanceOf[js.Any])
+      inline def setPreferBuiltins(value: Boolean): Self = StObject.set(x, "preferBuiltins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreferBuiltinsUndefined: Self = StObject.set(x, "preferBuiltins", js.undefined)
+      inline def setPreferBuiltinsUndefined: Self = StObject.set(x, "preferBuiltins", js.undefined)
     }
   }
 }

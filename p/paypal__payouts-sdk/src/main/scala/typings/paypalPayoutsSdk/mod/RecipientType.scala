@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RecipientType extends StObject
 object RecipientType {
   
-  @scala.inline
-  def EMAIL: typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.EMAIL = "EMAIL".asInstanceOf[typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.EMAIL]
+  inline def EMAIL: typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.EMAIL = "EMAIL".asInstanceOf[typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.EMAIL]
   
-  @scala.inline
-  def PAYPAL_ID: typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.PAYPAL_ID = "PAYPAL_ID".asInstanceOf[typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.PAYPAL_ID]
+  inline def PAYPAL_ID: typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.PAYPAL_ID = "PAYPAL_ID".asInstanceOf[typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.PAYPAL_ID]
   
-  @scala.inline
-  def PHONE: typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.PHONE = "PHONE".asInstanceOf[typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.PHONE]
+  inline def PHONE: typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.PHONE = "PHONE".asInstanceOf[typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.PHONE]
 }

@@ -14,18 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait BlockAlignment extends StObject
 object BlockAlignment {
   
-  @scala.inline
-  def center: typings.wordpressBlocks.wordpressBlocksStrings.center = "center".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.center]
+  inline def center: typings.wordpressBlocks.wordpressBlocksStrings.center = "center".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.center]
   
-  @scala.inline
-  def full: typings.wordpressBlocks.wordpressBlocksStrings.full = "full".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.full]
+  inline def full: typings.wordpressBlocks.wordpressBlocksStrings.full = "full".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.full]
   
-  @scala.inline
-  def left: typings.wordpressBlocks.wordpressBlocksStrings.left = "left".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.left]
+  inline def left: typings.wordpressBlocks.wordpressBlocksStrings.left = "left".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.left]
   
-  @scala.inline
-  def right: typings.wordpressBlocks.wordpressBlocksStrings.right = "right".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.right]
+  inline def right: typings.wordpressBlocks.wordpressBlocksStrings.right = "right".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.right]
   
-  @scala.inline
-  def wide: typings.wordpressBlocks.wordpressBlocksStrings.wide = "wide".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.wide]
+  inline def wide: typings.wordpressBlocks.wordpressBlocksStrings.wide = "wide".asInstanceOf[typings.wordpressBlocks.wordpressBlocksStrings.wide]
 }

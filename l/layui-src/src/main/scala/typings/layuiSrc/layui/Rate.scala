@@ -10,16 +10,13 @@ trait Rate extends StObject {
 }
 object Rate {
   
-  @scala.inline
-  def apply(render: RateOption => Rate): Rate = {
+  inline def apply(render: RateOption => Rate): Rate = {
     val __obj = js.Dynamic.literal(render = js.Any.fromFunction1(render))
     __obj.asInstanceOf[Rate]
   }
   
-  @scala.inline
-  implicit class RateMutableBuilder[Self <: Rate] (val x: Self) extends AnyVal {
+  extension [Self <: Rate](x: Self) {
     
-    @scala.inline
-    def setRender(value: RateOption => Rate): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+    inline def setRender(value: RateOption => Rate): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
   }
 }

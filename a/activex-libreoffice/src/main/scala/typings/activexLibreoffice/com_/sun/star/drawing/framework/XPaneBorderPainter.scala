@@ -80,8 +80,7 @@ trait XPaneBorderPainter extends StObject {
 }
 object XPaneBorderPainter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     addBorder: (String, Rectangle, BorderType) => Rectangle,
     getCalloutOffset: String => Point,
     paintBorder: (String, XCanvas, Rectangle, Rectangle, String) => Unit,
@@ -92,22 +91,16 @@ object XPaneBorderPainter {
     __obj.asInstanceOf[XPaneBorderPainter]
   }
   
-  @scala.inline
-  implicit class XPaneBorderPainterMutableBuilder[Self <: XPaneBorderPainter] (val x: Self) extends AnyVal {
+  extension [Self <: XPaneBorderPainter](x: Self) {
     
-    @scala.inline
-    def setAddBorder(value: (String, Rectangle, BorderType) => Rectangle): Self = StObject.set(x, "addBorder", js.Any.fromFunction3(value))
+    inline def setAddBorder(value: (String, Rectangle, BorderType) => Rectangle): Self = StObject.set(x, "addBorder", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setGetCalloutOffset(value: String => Point): Self = StObject.set(x, "getCalloutOffset", js.Any.fromFunction1(value))
+    inline def setGetCalloutOffset(value: String => Point): Self = StObject.set(x, "getCalloutOffset", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPaintBorder(value: (String, XCanvas, Rectangle, Rectangle, String) => Unit): Self = StObject.set(x, "paintBorder", js.Any.fromFunction5(value))
+    inline def setPaintBorder(value: (String, XCanvas, Rectangle, Rectangle, String) => Unit): Self = StObject.set(x, "paintBorder", js.Any.fromFunction5(value))
     
-    @scala.inline
-    def setPaintBorderWithCallout(value: (String, XCanvas, Rectangle, Rectangle, String, Point) => Unit): Self = StObject.set(x, "paintBorderWithCallout", js.Any.fromFunction6(value))
+    inline def setPaintBorderWithCallout(value: (String, XCanvas, Rectangle, Rectangle, String, Point) => Unit): Self = StObject.set(x, "paintBorderWithCallout", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setRemoveBorder(value: (String, Rectangle, BorderType) => Rectangle): Self = StObject.set(x, "removeBorder", js.Any.fromFunction3(value))
+    inline def setRemoveBorder(value: (String, Rectangle, BorderType) => Rectangle): Self = StObject.set(x, "removeBorder", js.Any.fromFunction3(value))
   }
 }

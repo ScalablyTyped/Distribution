@@ -22,30 +22,23 @@ object anon {
   }
   object Amount {
     
-    @scala.inline
-    def apply(amount: Double, bucket: String, date: String, id: String, `type`: Double): Amount = {
+    inline def apply(amount: Double, bucket: String, date: String, id: String, `type`: Double): Amount = {
       val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], bucket = bucket.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Amount]
     }
     
-    @scala.inline
-    implicit class AmountMutableBuilder[Self <: Amount] (val x: Self) extends AnyVal {
+    extension [Self <: Amount](x: Self) {
       
-      @scala.inline
-      def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+      inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
+      inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
+      inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
@@ -436,383 +429,258 @@ object anon {
   }
   object Dictcustomkey {
     
-    @scala.inline
-    def apply(): Dictcustomkey = {
+    inline def apply(): Dictcustomkey = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Dictcustomkey]
     }
     
-    @scala.inline
-    implicit class DictcustomkeyMutableBuilder[Self <: Dictcustomkey] (val x: Self) extends AnyVal {
+    extension [Self <: Dictcustomkey](x: Self) {
       
-      @scala.inline
-      def set$after_click_url(value: String): Self = StObject.set(x, "$after_click_url", value.asInstanceOf[js.Any])
+      inline def set$after_click_url(value: String): Self = StObject.set(x, "$after_click_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$after_click_urlUndefined: Self = StObject.set(x, "$after_click_url", js.undefined)
+      inline def set$after_click_urlUndefined: Self = StObject.set(x, "$after_click_url", js.undefined)
       
-      @scala.inline
-      def set$always_deeplink(value: Boolean): Self = StObject.set(x, "$always_deeplink", value.asInstanceOf[js.Any])
+      inline def set$always_deeplink(value: Boolean): Self = StObject.set(x, "$always_deeplink", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$always_deeplinkUndefined: Self = StObject.set(x, "$always_deeplink", js.undefined)
+      inline def set$always_deeplinkUndefined: Self = StObject.set(x, "$always_deeplink", js.undefined)
       
-      @scala.inline
-      def set$android_deeplink_path(value: String): Self = StObject.set(x, "$android_deeplink_path", value.asInstanceOf[js.Any])
+      inline def set$android_deeplink_path(value: String): Self = StObject.set(x, "$android_deeplink_path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$android_deeplink_pathUndefined: Self = StObject.set(x, "$android_deeplink_path", js.undefined)
+      inline def set$android_deeplink_pathUndefined: Self = StObject.set(x, "$android_deeplink_path", js.undefined)
       
-      @scala.inline
-      def set$android_deepview(value: String): Self = StObject.set(x, "$android_deepview", value.asInstanceOf[js.Any])
+      inline def set$android_deepview(value: String): Self = StObject.set(x, "$android_deepview", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$android_deepviewUndefined: Self = StObject.set(x, "$android_deepview", js.undefined)
+      inline def set$android_deepviewUndefined: Self = StObject.set(x, "$android_deepview", js.undefined)
       
-      @scala.inline
-      def set$android_passive_deepview(value: String): Self = StObject.set(x, "$android_passive_deepview", value.asInstanceOf[js.Any])
+      inline def set$android_passive_deepview(value: String): Self = StObject.set(x, "$android_passive_deepview", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$android_passive_deepviewUndefined: Self = StObject.set(x, "$android_passive_deepview", js.undefined)
+      inline def set$android_passive_deepviewUndefined: Self = StObject.set(x, "$android_passive_deepview", js.undefined)
       
-      @scala.inline
-      def set$android_redirect_timeout(value: Double): Self = StObject.set(x, "$android_redirect_timeout", value.asInstanceOf[js.Any])
+      inline def set$android_redirect_timeout(value: Double): Self = StObject.set(x, "$android_redirect_timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$android_redirect_timeoutUndefined: Self = StObject.set(x, "$android_redirect_timeout", js.undefined)
+      inline def set$android_redirect_timeoutUndefined: Self = StObject.set(x, "$android_redirect_timeout", js.undefined)
       
-      @scala.inline
-      def set$android_url(value: String): Self = StObject.set(x, "$android_url", value.asInstanceOf[js.Any])
+      inline def set$android_url(value: String): Self = StObject.set(x, "$android_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$android_urlUndefined: Self = StObject.set(x, "$android_url", js.undefined)
+      inline def set$android_urlUndefined: Self = StObject.set(x, "$android_url", js.undefined)
       
-      @scala.inline
-      def set$android_wechat_url(value: String): Self = StObject.set(x, "$android_wechat_url", value.asInstanceOf[js.Any])
+      inline def set$android_wechat_url(value: String): Self = StObject.set(x, "$android_wechat_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$android_wechat_urlUndefined: Self = StObject.set(x, "$android_wechat_url", js.undefined)
+      inline def set$android_wechat_urlUndefined: Self = StObject.set(x, "$android_wechat_url", js.undefined)
       
-      @scala.inline
-      def set$blackberry_url(value: String): Self = StObject.set(x, "$blackberry_url", value.asInstanceOf[js.Any])
+      inline def set$blackberry_url(value: String): Self = StObject.set(x, "$blackberry_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$blackberry_urlUndefined: Self = StObject.set(x, "$blackberry_url", js.undefined)
+      inline def set$blackberry_urlUndefined: Self = StObject.set(x, "$blackberry_url", js.undefined)
       
-      @scala.inline
-      def set$canonical_identifier(value: String): Self = StObject.set(x, "$canonical_identifier", value.asInstanceOf[js.Any])
+      inline def set$canonical_identifier(value: String): Self = StObject.set(x, "$canonical_identifier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$canonical_identifierUndefined: Self = StObject.set(x, "$canonical_identifier", js.undefined)
+      inline def set$canonical_identifierUndefined: Self = StObject.set(x, "$canonical_identifier", js.undefined)
       
-      @scala.inline
-      def set$click_conversion_window_days(value: Double): Self = StObject.set(x, "$click_conversion_window_days", value.asInstanceOf[js.Any])
+      inline def set$click_conversion_window_days(value: Double): Self = StObject.set(x, "$click_conversion_window_days", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$click_conversion_window_daysUndefined: Self = StObject.set(x, "$click_conversion_window_days", js.undefined)
+      inline def set$click_conversion_window_daysUndefined: Self = StObject.set(x, "$click_conversion_window_days", js.undefined)
       
-      @scala.inline
-      def set$click_install_window_days(value: Double): Self = StObject.set(x, "$click_install_window_days", value.asInstanceOf[js.Any])
+      inline def set$click_install_window_days(value: Double): Self = StObject.set(x, "$click_install_window_days", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$click_install_window_daysUndefined: Self = StObject.set(x, "$click_install_window_days", js.undefined)
+      inline def set$click_install_window_daysUndefined: Self = StObject.set(x, "$click_install_window_days", js.undefined)
       
-      @scala.inline
-      def set$click_session_start_window_days(value: Double): Self = StObject.set(x, "$click_session_start_window_days", value.asInstanceOf[js.Any])
+      inline def set$click_session_start_window_days(value: Double): Self = StObject.set(x, "$click_session_start_window_days", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$click_session_start_window_daysUndefined: Self = StObject.set(x, "$click_session_start_window_days", js.undefined)
+      inline def set$click_session_start_window_daysUndefined: Self = StObject.set(x, "$click_session_start_window_days", js.undefined)
       
-      @scala.inline
-      def set$content_type(value: String): Self = StObject.set(x, "$content_type", value.asInstanceOf[js.Any])
+      inline def set$content_type(value: String): Self = StObject.set(x, "$content_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$content_typeUndefined: Self = StObject.set(x, "$content_type", js.undefined)
+      inline def set$content_typeUndefined: Self = StObject.set(x, "$content_type", js.undefined)
       
-      @scala.inline
-      def set$custom_meta_tags(value: String): Self = StObject.set(x, "$custom_meta_tags", value.asInstanceOf[js.Any])
+      inline def set$custom_meta_tags(value: String): Self = StObject.set(x, "$custom_meta_tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$custom_meta_tagsUndefined: Self = StObject.set(x, "$custom_meta_tags", js.undefined)
+      inline def set$custom_meta_tagsUndefined: Self = StObject.set(x, "$custom_meta_tags", js.undefined)
       
-      @scala.inline
-      def set$custom_sms_text(value: String): Self = StObject.set(x, "$custom_sms_text", value.asInstanceOf[js.Any])
+      inline def set$custom_sms_text(value: String): Self = StObject.set(x, "$custom_sms_text", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$custom_sms_textUndefined: Self = StObject.set(x, "$custom_sms_text", js.undefined)
+      inline def set$custom_sms_textUndefined: Self = StObject.set(x, "$custom_sms_text", js.undefined)
       
-      @scala.inline
-      def set$deeplink_no_attribution(value: Boolean): Self = StObject.set(x, "$deeplink_no_attribution", value.asInstanceOf[js.Any])
+      inline def set$deeplink_no_attribution(value: Boolean): Self = StObject.set(x, "$deeplink_no_attribution", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$deeplink_no_attributionUndefined: Self = StObject.set(x, "$deeplink_no_attribution", js.undefined)
+      inline def set$deeplink_no_attributionUndefined: Self = StObject.set(x, "$deeplink_no_attribution", js.undefined)
       
-      @scala.inline
-      def set$deeplink_path(value: String): Self = StObject.set(x, "$deeplink_path", value.asInstanceOf[js.Any])
+      inline def set$deeplink_path(value: String): Self = StObject.set(x, "$deeplink_path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$deeplink_pathUndefined: Self = StObject.set(x, "$deeplink_path", js.undefined)
+      inline def set$deeplink_pathUndefined: Self = StObject.set(x, "$deeplink_path", js.undefined)
       
-      @scala.inline
-      def set$desktop_deeplink_path(value: String): Self = StObject.set(x, "$desktop_deeplink_path", value.asInstanceOf[js.Any])
+      inline def set$desktop_deeplink_path(value: String): Self = StObject.set(x, "$desktop_deeplink_path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$desktop_deeplink_pathUndefined: Self = StObject.set(x, "$desktop_deeplink_path", js.undefined)
+      inline def set$desktop_deeplink_pathUndefined: Self = StObject.set(x, "$desktop_deeplink_path", js.undefined)
       
-      @scala.inline
-      def set$desktop_deepview(value: String): Self = StObject.set(x, "$desktop_deepview", value.asInstanceOf[js.Any])
+      inline def set$desktop_deepview(value: String): Self = StObject.set(x, "$desktop_deepview", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$desktop_deepviewUndefined: Self = StObject.set(x, "$desktop_deepview", js.undefined)
+      inline def set$desktop_deepviewUndefined: Self = StObject.set(x, "$desktop_deepview", js.undefined)
       
-      @scala.inline
-      def set$desktop_url(value: String): Self = StObject.set(x, "$desktop_url", value.asInstanceOf[js.Any])
+      inline def set$desktop_url(value: String): Self = StObject.set(x, "$desktop_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$desktop_urlUndefined: Self = StObject.set(x, "$desktop_url", js.undefined)
+      inline def set$desktop_urlUndefined: Self = StObject.set(x, "$desktop_url", js.undefined)
       
-      @scala.inline
-      def set$do_not_process(value: Boolean): Self = StObject.set(x, "$do_not_process", value.asInstanceOf[js.Any])
+      inline def set$do_not_process(value: Boolean): Self = StObject.set(x, "$do_not_process", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$do_not_processUndefined: Self = StObject.set(x, "$do_not_process", js.undefined)
+      inline def set$do_not_processUndefined: Self = StObject.set(x, "$do_not_process", js.undefined)
       
-      @scala.inline
-      def set$fallback_url(value: String): Self = StObject.set(x, "$fallback_url", value.asInstanceOf[js.Any])
+      inline def set$fallback_url(value: String): Self = StObject.set(x, "$fallback_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$fallback_urlUndefined: Self = StObject.set(x, "$fallback_url", js.undefined)
+      inline def set$fallback_urlUndefined: Self = StObject.set(x, "$fallback_url", js.undefined)
       
-      @scala.inline
-      def set$fire_url(value: String): Self = StObject.set(x, "$fire_url", value.asInstanceOf[js.Any])
+      inline def set$fire_url(value: String): Self = StObject.set(x, "$fire_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$fire_urlUndefined: Self = StObject.set(x, "$fire_url", js.undefined)
+      inline def set$fire_urlUndefined: Self = StObject.set(x, "$fire_url", js.undefined)
       
-      @scala.inline
-      def set$impression_conversion_window_days(value: Double): Self = StObject.set(x, "$impression_conversion_window_days", value.asInstanceOf[js.Any])
+      inline def set$impression_conversion_window_days(value: Double): Self = StObject.set(x, "$impression_conversion_window_days", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$impression_conversion_window_daysUndefined: Self = StObject.set(x, "$impression_conversion_window_days", js.undefined)
+      inline def set$impression_conversion_window_daysUndefined: Self = StObject.set(x, "$impression_conversion_window_days", js.undefined)
       
-      @scala.inline
-      def set$impression_install_window_days(value: Double): Self = StObject.set(x, "$impression_install_window_days", value.asInstanceOf[js.Any])
+      inline def set$impression_install_window_days(value: Double): Self = StObject.set(x, "$impression_install_window_days", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$impression_install_window_daysUndefined: Self = StObject.set(x, "$impression_install_window_days", js.undefined)
+      inline def set$impression_install_window_daysUndefined: Self = StObject.set(x, "$impression_install_window_days", js.undefined)
       
-      @scala.inline
-      def set$impression_session_start_window_days(value: Double): Self = StObject.set(x, "$impression_session_start_window_days", value.asInstanceOf[js.Any])
+      inline def set$impression_session_start_window_days(value: Double): Self = StObject.set(x, "$impression_session_start_window_days", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$impression_session_start_window_daysUndefined: Self = StObject.set(x, "$impression_session_start_window_days", js.undefined)
+      inline def set$impression_session_start_window_daysUndefined: Self = StObject.set(x, "$impression_session_start_window_days", js.undefined)
       
-      @scala.inline
-      def set$ios_deeplink_path(value: String): Self = StObject.set(x, "$ios_deeplink_path", value.asInstanceOf[js.Any])
+      inline def set$ios_deeplink_path(value: String): Self = StObject.set(x, "$ios_deeplink_path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$ios_deeplink_pathUndefined: Self = StObject.set(x, "$ios_deeplink_path", js.undefined)
+      inline def set$ios_deeplink_pathUndefined: Self = StObject.set(x, "$ios_deeplink_path", js.undefined)
       
-      @scala.inline
-      def set$ios_deepview(value: String): Self = StObject.set(x, "$ios_deepview", value.asInstanceOf[js.Any])
+      inline def set$ios_deepview(value: String): Self = StObject.set(x, "$ios_deepview", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$ios_deepviewUndefined: Self = StObject.set(x, "$ios_deepview", js.undefined)
+      inline def set$ios_deepviewUndefined: Self = StObject.set(x, "$ios_deepview", js.undefined)
       
-      @scala.inline
-      def set$ios_passive_deepview(value: String): Self = StObject.set(x, "$ios_passive_deepview", value.asInstanceOf[js.Any])
+      inline def set$ios_passive_deepview(value: String): Self = StObject.set(x, "$ios_passive_deepview", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$ios_passive_deepviewUndefined: Self = StObject.set(x, "$ios_passive_deepview", js.undefined)
+      inline def set$ios_passive_deepviewUndefined: Self = StObject.set(x, "$ios_passive_deepview", js.undefined)
       
-      @scala.inline
-      def set$ios_redirect_timeout(value: Double): Self = StObject.set(x, "$ios_redirect_timeout", value.asInstanceOf[js.Any])
+      inline def set$ios_redirect_timeout(value: Double): Self = StObject.set(x, "$ios_redirect_timeout", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$ios_redirect_timeoutUndefined: Self = StObject.set(x, "$ios_redirect_timeout", js.undefined)
+      inline def set$ios_redirect_timeoutUndefined: Self = StObject.set(x, "$ios_redirect_timeout", js.undefined)
       
-      @scala.inline
-      def set$ios_url(value: String): Self = StObject.set(x, "$ios_url", value.asInstanceOf[js.Any])
+      inline def set$ios_url(value: String): Self = StObject.set(x, "$ios_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$ios_urlUndefined: Self = StObject.set(x, "$ios_url", js.undefined)
+      inline def set$ios_urlUndefined: Self = StObject.set(x, "$ios_url", js.undefined)
       
-      @scala.inline
-      def set$ios_wechat_url(value: String): Self = StObject.set(x, "$ios_wechat_url", value.asInstanceOf[js.Any])
+      inline def set$ios_wechat_url(value: String): Self = StObject.set(x, "$ios_wechat_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$ios_wechat_urlUndefined: Self = StObject.set(x, "$ios_wechat_url", js.undefined)
+      inline def set$ios_wechat_urlUndefined: Self = StObject.set(x, "$ios_wechat_url", js.undefined)
       
-      @scala.inline
-      def set$ipad_url(value: String): Self = StObject.set(x, "$ipad_url", value.asInstanceOf[js.Any])
+      inline def set$ipad_url(value: String): Self = StObject.set(x, "$ipad_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$ipad_urlUndefined: Self = StObject.set(x, "$ipad_url", js.undefined)
+      inline def set$ipad_urlUndefined: Self = StObject.set(x, "$ipad_url", js.undefined)
       
-      @scala.inline
-      def set$marketing_title(value: String): Self = StObject.set(x, "$marketing_title", value.asInstanceOf[js.Any])
+      inline def set$marketing_title(value: String): Self = StObject.set(x, "$marketing_title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$marketing_titleUndefined: Self = StObject.set(x, "$marketing_title", js.undefined)
+      inline def set$marketing_titleUndefined: Self = StObject.set(x, "$marketing_title", js.undefined)
       
-      @scala.inline
-      def set$match_duration(value: Double): Self = StObject.set(x, "$match_duration", value.asInstanceOf[js.Any])
+      inline def set$match_duration(value: Double): Self = StObject.set(x, "$match_duration", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$match_durationUndefined: Self = StObject.set(x, "$match_duration", js.undefined)
+      inline def set$match_durationUndefined: Self = StObject.set(x, "$match_duration", js.undefined)
       
-      @scala.inline
-      def set$og_app_id(value: String): Self = StObject.set(x, "$og_app_id", value.asInstanceOf[js.Any])
+      inline def set$og_app_id(value: String): Self = StObject.set(x, "$og_app_id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$og_app_idUndefined: Self = StObject.set(x, "$og_app_id", js.undefined)
+      inline def set$og_app_idUndefined: Self = StObject.set(x, "$og_app_id", js.undefined)
       
-      @scala.inline
-      def set$og_description(value: String): Self = StObject.set(x, "$og_description", value.asInstanceOf[js.Any])
+      inline def set$og_description(value: String): Self = StObject.set(x, "$og_description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$og_descriptionUndefined: Self = StObject.set(x, "$og_description", js.undefined)
+      inline def set$og_descriptionUndefined: Self = StObject.set(x, "$og_description", js.undefined)
       
-      @scala.inline
-      def set$og_image_height(value: Double): Self = StObject.set(x, "$og_image_height", value.asInstanceOf[js.Any])
+      inline def set$og_image_height(value: Double): Self = StObject.set(x, "$og_image_height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$og_image_heightUndefined: Self = StObject.set(x, "$og_image_height", js.undefined)
+      inline def set$og_image_heightUndefined: Self = StObject.set(x, "$og_image_height", js.undefined)
       
-      @scala.inline
-      def set$og_image_url(value: String): Self = StObject.set(x, "$og_image_url", value.asInstanceOf[js.Any])
+      inline def set$og_image_url(value: String): Self = StObject.set(x, "$og_image_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$og_image_urlUndefined: Self = StObject.set(x, "$og_image_url", js.undefined)
+      inline def set$og_image_urlUndefined: Self = StObject.set(x, "$og_image_url", js.undefined)
       
-      @scala.inline
-      def set$og_image_width(value: Double): Self = StObject.set(x, "$og_image_width", value.asInstanceOf[js.Any])
+      inline def set$og_image_width(value: Double): Self = StObject.set(x, "$og_image_width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$og_image_widthUndefined: Self = StObject.set(x, "$og_image_width", js.undefined)
+      inline def set$og_image_widthUndefined: Self = StObject.set(x, "$og_image_width", js.undefined)
       
-      @scala.inline
-      def set$og_redirect(value: String): Self = StObject.set(x, "$og_redirect", value.asInstanceOf[js.Any])
+      inline def set$og_redirect(value: String): Self = StObject.set(x, "$og_redirect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$og_redirectUndefined: Self = StObject.set(x, "$og_redirect", js.undefined)
+      inline def set$og_redirectUndefined: Self = StObject.set(x, "$og_redirect", js.undefined)
       
-      @scala.inline
-      def set$og_title(value: String): Self = StObject.set(x, "$og_title", value.asInstanceOf[js.Any])
+      inline def set$og_title(value: String): Self = StObject.set(x, "$og_title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$og_titleUndefined: Self = StObject.set(x, "$og_title", js.undefined)
+      inline def set$og_titleUndefined: Self = StObject.set(x, "$og_title", js.undefined)
       
-      @scala.inline
-      def set$og_type(value: String): Self = StObject.set(x, "$og_type", value.asInstanceOf[js.Any])
+      inline def set$og_type(value: String): Self = StObject.set(x, "$og_type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$og_typeUndefined: Self = StObject.set(x, "$og_type", js.undefined)
+      inline def set$og_typeUndefined: Self = StObject.set(x, "$og_type", js.undefined)
       
-      @scala.inline
-      def set$og_url(value: String): Self = StObject.set(x, "$og_url", value.asInstanceOf[js.Any])
+      inline def set$og_url(value: String): Self = StObject.set(x, "$og_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$og_urlUndefined: Self = StObject.set(x, "$og_url", js.undefined)
+      inline def set$og_urlUndefined: Self = StObject.set(x, "$og_url", js.undefined)
       
-      @scala.inline
-      def set$og_video(value: String): Self = StObject.set(x, "$og_video", value.asInstanceOf[js.Any])
+      inline def set$og_video(value: String): Self = StObject.set(x, "$og_video", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$og_videoUndefined: Self = StObject.set(x, "$og_video", js.undefined)
+      inline def set$og_videoUndefined: Self = StObject.set(x, "$og_video", js.undefined)
       
-      @scala.inline
-      def set$samsung_url(value: String): Self = StObject.set(x, "$samsung_url", value.asInstanceOf[js.Any])
+      inline def set$samsung_url(value: String): Self = StObject.set(x, "$samsung_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$samsung_urlUndefined: Self = StObject.set(x, "$samsung_url", js.undefined)
+      inline def set$samsung_urlUndefined: Self = StObject.set(x, "$samsung_url", js.undefined)
       
-      @scala.inline
-      def set$twitter_app_country(value: String): Self = StObject.set(x, "$twitter_app_country", value.asInstanceOf[js.Any])
+      inline def set$twitter_app_country(value: String): Self = StObject.set(x, "$twitter_app_country", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$twitter_app_countryUndefined: Self = StObject.set(x, "$twitter_app_country", js.undefined)
+      inline def set$twitter_app_countryUndefined: Self = StObject.set(x, "$twitter_app_country", js.undefined)
       
-      @scala.inline
-      def set$twitter_card(value: String): Self = StObject.set(x, "$twitter_card", value.asInstanceOf[js.Any])
+      inline def set$twitter_card(value: String): Self = StObject.set(x, "$twitter_card", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$twitter_cardUndefined: Self = StObject.set(x, "$twitter_card", js.undefined)
+      inline def set$twitter_cardUndefined: Self = StObject.set(x, "$twitter_card", js.undefined)
       
-      @scala.inline
-      def set$twitter_description(value: String): Self = StObject.set(x, "$twitter_description", value.asInstanceOf[js.Any])
+      inline def set$twitter_description(value: String): Self = StObject.set(x, "$twitter_description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$twitter_descriptionUndefined: Self = StObject.set(x, "$twitter_description", js.undefined)
+      inline def set$twitter_descriptionUndefined: Self = StObject.set(x, "$twitter_description", js.undefined)
       
-      @scala.inline
-      def set$twitter_player(value: String): Self = StObject.set(x, "$twitter_player", value.asInstanceOf[js.Any])
+      inline def set$twitter_player(value: String): Self = StObject.set(x, "$twitter_player", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$twitter_playerUndefined: Self = StObject.set(x, "$twitter_player", js.undefined)
+      inline def set$twitter_playerUndefined: Self = StObject.set(x, "$twitter_player", js.undefined)
       
-      @scala.inline
-      def set$twitter_player_height(value: Double): Self = StObject.set(x, "$twitter_player_height", value.asInstanceOf[js.Any])
+      inline def set$twitter_player_height(value: Double): Self = StObject.set(x, "$twitter_player_height", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$twitter_player_heightUndefined: Self = StObject.set(x, "$twitter_player_height", js.undefined)
+      inline def set$twitter_player_heightUndefined: Self = StObject.set(x, "$twitter_player_height", js.undefined)
       
-      @scala.inline
-      def set$twitter_player_width(value: Double): Self = StObject.set(x, "$twitter_player_width", value.asInstanceOf[js.Any])
+      inline def set$twitter_player_width(value: Double): Self = StObject.set(x, "$twitter_player_width", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$twitter_player_widthUndefined: Self = StObject.set(x, "$twitter_player_width", js.undefined)
+      inline def set$twitter_player_widthUndefined: Self = StObject.set(x, "$twitter_player_width", js.undefined)
       
-      @scala.inline
-      def set$twitter_site(value: String): Self = StObject.set(x, "$twitter_site", value.asInstanceOf[js.Any])
+      inline def set$twitter_site(value: String): Self = StObject.set(x, "$twitter_site", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$twitter_siteUndefined: Self = StObject.set(x, "$twitter_site", js.undefined)
+      inline def set$twitter_siteUndefined: Self = StObject.set(x, "$twitter_site", js.undefined)
       
-      @scala.inline
-      def set$twitter_title(value: String): Self = StObject.set(x, "$twitter_title", value.asInstanceOf[js.Any])
+      inline def set$twitter_title(value: String): Self = StObject.set(x, "$twitter_title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$twitter_titleUndefined: Self = StObject.set(x, "$twitter_title", js.undefined)
+      inline def set$twitter_titleUndefined: Self = StObject.set(x, "$twitter_title", js.undefined)
       
-      @scala.inline
-      def set$uri_redirect_mode(value: UriRedirectMode): Self = StObject.set(x, "$uri_redirect_mode", value.asInstanceOf[js.Any])
+      inline def set$uri_redirect_mode(value: UriRedirectMode): Self = StObject.set(x, "$uri_redirect_mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$uri_redirect_modeUndefined: Self = StObject.set(x, "$uri_redirect_mode", js.undefined)
+      inline def set$uri_redirect_modeUndefined: Self = StObject.set(x, "$uri_redirect_mode", js.undefined)
       
-      @scala.inline
-      def set$web_only(value: Boolean): Self = StObject.set(x, "$web_only", value.asInstanceOf[js.Any])
+      inline def set$web_only(value: Boolean): Self = StObject.set(x, "$web_only", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$web_onlyUndefined: Self = StObject.set(x, "$web_only", js.undefined)
+      inline def set$web_onlyUndefined: Self = StObject.set(x, "$web_only", js.undefined)
       
-      @scala.inline
-      def set$windows_phone_url(value: String): Self = StObject.set(x, "$windows_phone_url", value.asInstanceOf[js.Any])
+      inline def set$windows_phone_url(value: String): Self = StObject.set(x, "$windows_phone_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$windows_phone_urlUndefined: Self = StObject.set(x, "$windows_phone_url", js.undefined)
+      inline def set$windows_phone_urlUndefined: Self = StObject.set(x, "$windows_phone_url", js.undefined)
       
-      @scala.inline
-      def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+      inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
       
-      @scala.inline
-      def setTildekeyword(value: js.Array[String]): Self = StObject.set(x, "~keyword", value.asInstanceOf[js.Any])
+      inline def setTildekeyword(value: js.Array[String]): Self = StObject.set(x, "~keyword", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTildekeywordUndefined: Self = StObject.set(x, "~keyword", js.undefined)
+      inline def setTildekeywordUndefined: Self = StObject.set(x, "~keyword", js.undefined)
       
-      @scala.inline
-      def setTildekeywordVarargs(value: String*): Self = StObject.set(x, "~keyword", js.Array(value :_*))
+      inline def setTildekeywordVarargs(value: String*): Self = StObject.set(x, "~keyword", js.Array(value :_*))
       
-      @scala.inline
-      def setTwitter_image_url(value: String): Self = StObject.set(x, "twitter_image_url", value.asInstanceOf[js.Any])
+      inline def setTwitter_image_url(value: String): Self = StObject.set(x, "twitter_image_url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTwitter_image_urlUndefined: Self = StObject.set(x, "twitter_image_url", js.undefined)
+      inline def setTwitter_image_urlUndefined: Self = StObject.set(x, "twitter_image_url", js.undefined)
     }
   }
   
@@ -822,20 +690,16 @@ object anon {
   }
   object Makenewlink {
     
-    @scala.inline
-    def apply(): Makenewlink = {
+    inline def apply(): Makenewlink = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Makenewlink]
     }
     
-    @scala.inline
-    implicit class MakenewlinkMutableBuilder[Self <: Makenewlink] (val x: Self) extends AnyVal {
+    extension [Self <: Makenewlink](x: Self) {
       
-      @scala.inline
-      def setMake_new_link(value: Boolean): Self = StObject.set(x, "make_new_link", value.asInstanceOf[js.Any])
+      inline def setMake_new_link(value: Boolean): Self = StObject.set(x, "make_new_link", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMake_new_linkUndefined: Self = StObject.set(x, "make_new_link", js.undefined)
+      inline def setMake_new_linkUndefined: Self = StObject.set(x, "make_new_link", js.undefined)
     }
   }
 }

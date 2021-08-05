@@ -20,37 +20,27 @@ trait RowAccessPolicyReference extends StObject {
 }
 object RowAccessPolicyReference {
   
-  @scala.inline
-  def apply(): RowAccessPolicyReference = {
+  inline def apply(): RowAccessPolicyReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RowAccessPolicyReference]
   }
   
-  @scala.inline
-  implicit class RowAccessPolicyReferenceMutableBuilder[Self <: RowAccessPolicyReference] (val x: Self) extends AnyVal {
+  extension [Self <: RowAccessPolicyReference](x: Self) {
     
-    @scala.inline
-    def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
+    inline def setDatasetId(value: String): Self = StObject.set(x, "datasetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDatasetIdUndefined: Self = StObject.set(x, "datasetId", js.undefined)
+    inline def setDatasetIdUndefined: Self = StObject.set(x, "datasetId", js.undefined)
     
-    @scala.inline
-    def setPolicyId(value: String): Self = StObject.set(x, "policyId", value.asInstanceOf[js.Any])
+    inline def setPolicyId(value: String): Self = StObject.set(x, "policyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolicyIdUndefined: Self = StObject.set(x, "policyId", js.undefined)
+    inline def setPolicyIdUndefined: Self = StObject.set(x, "policyId", js.undefined)
     
-    @scala.inline
-    def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
+    inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
+    inline def setProjectIdUndefined: Self = StObject.set(x, "projectId", js.undefined)
     
-    @scala.inline
-    def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
+    inline def setTableId(value: String): Self = StObject.set(x, "tableId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
+    inline def setTableIdUndefined: Self = StObject.set(x, "tableId", js.undefined)
   }
 }

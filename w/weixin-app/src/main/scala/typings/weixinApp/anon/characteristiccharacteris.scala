@@ -15,19 +15,15 @@ trait characteristiccharacteris extends StObject {
 }
 object characteristiccharacteris {
   
-  @scala.inline
-  def apply(characteristic: CharacteristicId, errMsg: ok | String): characteristiccharacteris = {
+  inline def apply(characteristic: CharacteristicId, errMsg: ok | String): characteristiccharacteris = {
     val __obj = js.Dynamic.literal(characteristic = characteristic.asInstanceOf[js.Any], errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[characteristiccharacteris]
   }
   
-  @scala.inline
-  implicit class characteristiccharacterisMutableBuilder[Self <: characteristiccharacteris] (val x: Self) extends AnyVal {
+  extension [Self <: characteristiccharacteris](x: Self) {
     
-    @scala.inline
-    def setCharacteristic(value: CharacteristicId): Self = StObject.set(x, "characteristic", value.asInstanceOf[js.Any])
+    inline def setCharacteristic(value: CharacteristicId): Self = StObject.set(x, "characteristic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrMsg(value: ok | String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    inline def setErrMsg(value: ok | String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
   }
 }

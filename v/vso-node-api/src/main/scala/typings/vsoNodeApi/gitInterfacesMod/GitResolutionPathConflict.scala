@@ -14,19 +14,15 @@ trait GitResolutionPathConflict
 }
 object GitResolutionPathConflict {
   
-  @scala.inline
-  def apply(action: GitResolutionPathConflictAction, renamePath: String): GitResolutionPathConflict = {
+  inline def apply(action: GitResolutionPathConflictAction, renamePath: String): GitResolutionPathConflict = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], renamePath = renamePath.asInstanceOf[js.Any])
     __obj.asInstanceOf[GitResolutionPathConflict]
   }
   
-  @scala.inline
-  implicit class GitResolutionPathConflictMutableBuilder[Self <: GitResolutionPathConflict] (val x: Self) extends AnyVal {
+  extension [Self <: GitResolutionPathConflict](x: Self) {
     
-    @scala.inline
-    def setAction(value: GitResolutionPathConflictAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+    inline def setAction(value: GitResolutionPathConflictAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenamePath(value: String): Self = StObject.set(x, "renamePath", value.asInstanceOf[js.Any])
+    inline def setRenamePath(value: String): Self = StObject.set(x, "renamePath", value.asInstanceOf[js.Any])
   }
 }

@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ECDHKeyFormat extends StObject
 object ECDHKeyFormat {
   
-  @scala.inline
-  def compressed: typings.node.nodeStrings.compressed = "compressed".asInstanceOf[typings.node.nodeStrings.compressed]
+  inline def compressed: typings.node.nodeStrings.compressed = "compressed".asInstanceOf[typings.node.nodeStrings.compressed]
   
-  @scala.inline
-  def hybrid: typings.node.nodeStrings.hybrid = "hybrid".asInstanceOf[typings.node.nodeStrings.hybrid]
+  inline def hybrid: typings.node.nodeStrings.hybrid = "hybrid".asInstanceOf[typings.node.nodeStrings.hybrid]
   
-  @scala.inline
-  def uncompressed: typings.node.nodeStrings.uncompressed = "uncompressed".asInstanceOf[typings.node.nodeStrings.uncompressed]
+  inline def uncompressed: typings.node.nodeStrings.uncompressed = "uncompressed".asInstanceOf[typings.node.nodeStrings.uncompressed]
 }

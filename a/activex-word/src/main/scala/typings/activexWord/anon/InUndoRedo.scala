@@ -12,19 +12,15 @@ trait InUndoRedo extends StObject {
 }
 object InUndoRedo {
   
-  @scala.inline
-  def apply(InUndoRedo: Boolean, NewContentControl: typings.activexWord.Word.ContentControl): InUndoRedo = {
+  inline def apply(InUndoRedo: Boolean, NewContentControl: typings.activexWord.Word.ContentControl): InUndoRedo = {
     val __obj = js.Dynamic.literal(InUndoRedo = InUndoRedo.asInstanceOf[js.Any], NewContentControl = NewContentControl.asInstanceOf[js.Any])
     __obj.asInstanceOf[InUndoRedo]
   }
   
-  @scala.inline
-  implicit class InUndoRedoMutableBuilder[Self <: InUndoRedo] (val x: Self) extends AnyVal {
+  extension [Self <: InUndoRedo](x: Self) {
     
-    @scala.inline
-    def setInUndoRedo(value: Boolean): Self = StObject.set(x, "InUndoRedo", value.asInstanceOf[js.Any])
+    inline def setInUndoRedo(value: Boolean): Self = StObject.set(x, "InUndoRedo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewContentControl(value: typings.activexWord.Word.ContentControl): Self = StObject.set(x, "NewContentControl", value.asInstanceOf[js.Any])
+    inline def setNewContentControl(value: typings.activexWord.Word.ContentControl): Self = StObject.set(x, "NewContentControl", value.asInstanceOf[js.Any])
   }
 }

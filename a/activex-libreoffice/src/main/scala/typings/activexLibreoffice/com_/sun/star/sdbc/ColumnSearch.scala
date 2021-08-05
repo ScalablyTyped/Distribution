@@ -19,16 +19,12 @@ object ColumnSearch {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def BASIC: `2` = 2.asInstanceOf[`2`]
+    inline def BASIC: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def CHAR: `1` = 1.asInstanceOf[`1`]
+    inline def CHAR: `1` = 1.asInstanceOf[`1`]
     
-    @scala.inline
-    def FULL: `3` = 3.asInstanceOf[`3`]
+    inline def FULL: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def NONE: `0` = 0.asInstanceOf[`0`]
+    inline def NONE: `0` = 0.asInstanceOf[`0`]
   }
 }

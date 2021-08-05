@@ -11,19 +11,15 @@ trait IncludeConditions extends StObject {
 }
 object IncludeConditions {
   
-  @scala.inline
-  def apply(): IncludeConditions = {
+  inline def apply(): IncludeConditions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IncludeConditions]
   }
   
-  @scala.inline
-  implicit class IncludeConditionsMutableBuilder[Self <: IncludeConditions] (val x: Self) extends AnyVal {
+  extension [Self <: IncludeConditions](x: Self) {
     
-    @scala.inline
-    def setIncludeConditions(value: typings.maximMazurokGapiClientAnalytics.gapi.client.analytics.IncludeConditions): Self = StObject.set(x, "includeConditions", value.asInstanceOf[js.Any])
+    inline def setIncludeConditions(value: typings.maximMazurokGapiClientAnalytics.gapi.client.analytics.IncludeConditions): Self = StObject.set(x, "includeConditions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeConditionsUndefined: Self = StObject.set(x, "includeConditions", js.undefined)
+    inline def setIncludeConditionsUndefined: Self = StObject.set(x, "includeConditions", js.undefined)
   }
 }

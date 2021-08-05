@@ -14,31 +14,23 @@ trait JMD extends StObject {
 }
 object JMD {
   
-  @scala.inline
-  def apply(JMD: js.Array[String], JPY: js.Array[String], USD: js.Array[String]): JMD = {
+  inline def apply(JMD: js.Array[String], JPY: js.Array[String], USD: js.Array[String]): JMD = {
     val __obj = js.Dynamic.literal(JMD = JMD.asInstanceOf[js.Any], JPY = JPY.asInstanceOf[js.Any], USD = USD.asInstanceOf[js.Any])
     __obj.asInstanceOf[JMD]
   }
   
-  @scala.inline
-  implicit class JMDMutableBuilder[Self <: JMD] (val x: Self) extends AnyVal {
+  extension [Self <: JMD](x: Self) {
     
-    @scala.inline
-    def setJMD(value: js.Array[String]): Self = StObject.set(x, "JMD", value.asInstanceOf[js.Any])
+    inline def setJMD(value: js.Array[String]): Self = StObject.set(x, "JMD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJMDVarargs(value: String*): Self = StObject.set(x, "JMD", js.Array(value :_*))
+    inline def setJMDVarargs(value: String*): Self = StObject.set(x, "JMD", js.Array(value :_*))
     
-    @scala.inline
-    def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
+    inline def setJPY(value: js.Array[String]): Self = StObject.set(x, "JPY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
+    inline def setJPYVarargs(value: String*): Self = StObject.set(x, "JPY", js.Array(value :_*))
     
-    @scala.inline
-    def setUSD(value: js.Array[String]): Self = StObject.set(x, "USD", value.asInstanceOf[js.Any])
+    inline def setUSD(value: js.Array[String]): Self = StObject.set(x, "USD", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value :_*))
+    inline def setUSDVarargs(value: String*): Self = StObject.set(x, "USD", js.Array(value :_*))
   }
 }

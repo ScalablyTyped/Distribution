@@ -17,7 +17,7 @@ object igtvBrowseFeedMod {
     
     var isPrefetch: Boolean = js.native
     
-    var maxId: js.Any = js.native
+    /* private */ var maxId: js.Any = js.native
     
     def request(): js.Promise[IgtvBrowseFeedResponseRootObject] = js.native
     

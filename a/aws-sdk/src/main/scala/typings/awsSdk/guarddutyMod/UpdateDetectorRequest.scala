@@ -28,34 +28,25 @@ trait UpdateDetectorRequest extends StObject {
 }
 object UpdateDetectorRequest {
   
-  @scala.inline
-  def apply(DetectorId: DetectorId): UpdateDetectorRequest = {
+  inline def apply(DetectorId: DetectorId): UpdateDetectorRequest = {
     val __obj = js.Dynamic.literal(DetectorId = DetectorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateDetectorRequest]
   }
   
-  @scala.inline
-  implicit class UpdateDetectorRequestMutableBuilder[Self <: UpdateDetectorRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateDetectorRequest](x: Self) {
     
-    @scala.inline
-    def setDataSources(value: DataSourceConfigurations): Self = StObject.set(x, "DataSources", value.asInstanceOf[js.Any])
+    inline def setDataSources(value: DataSourceConfigurations): Self = StObject.set(x, "DataSources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourcesUndefined: Self = StObject.set(x, "DataSources", js.undefined)
+    inline def setDataSourcesUndefined: Self = StObject.set(x, "DataSources", js.undefined)
     
-    @scala.inline
-    def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
+    inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnable(value: Boolean): Self = StObject.set(x, "Enable", value.asInstanceOf[js.Any])
+    inline def setEnable(value: Boolean): Self = StObject.set(x, "Enable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnableUndefined: Self = StObject.set(x, "Enable", js.undefined)
+    inline def setEnableUndefined: Self = StObject.set(x, "Enable", js.undefined)
     
-    @scala.inline
-    def setFindingPublishingFrequency(value: FindingPublishingFrequency): Self = StObject.set(x, "FindingPublishingFrequency", value.asInstanceOf[js.Any])
+    inline def setFindingPublishingFrequency(value: FindingPublishingFrequency): Self = StObject.set(x, "FindingPublishingFrequency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingPublishingFrequencyUndefined: Self = StObject.set(x, "FindingPublishingFrequency", js.undefined)
+    inline def setFindingPublishingFrequencyUndefined: Self = StObject.set(x, "FindingPublishingFrequency", js.undefined)
   }
 }

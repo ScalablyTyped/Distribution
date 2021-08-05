@@ -14,25 +14,19 @@ trait DerivedSource extends StObject {
 }
 object DerivedSource {
   
-  @scala.inline
-  def apply(): DerivedSource = {
+  inline def apply(): DerivedSource = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DerivedSource]
   }
   
-  @scala.inline
-  implicit class DerivedSourceMutableBuilder[Self <: DerivedSource] (val x: Self) extends AnyVal {
+  extension [Self <: DerivedSource](x: Self) {
     
-    @scala.inline
-    def setDerivationMode(value: String): Self = StObject.set(x, "derivationMode", value.asInstanceOf[js.Any])
+    inline def setDerivationMode(value: String): Self = StObject.set(x, "derivationMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDerivationModeUndefined: Self = StObject.set(x, "derivationMode", js.undefined)
+    inline def setDerivationModeUndefined: Self = StObject.set(x, "derivationMode", js.undefined)
     
-    @scala.inline
-    def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
+    inline def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
   }
 }

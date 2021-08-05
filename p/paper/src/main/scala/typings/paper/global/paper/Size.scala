@@ -52,8 +52,7 @@ object Size {
     * @return the newly created size object
     */
   /* static member */
-  @scala.inline
-  def max(size1: typings.paper.paper.Size, size2: typings.paper.paper.Size): typings.paper.paper.Size = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(size1.asInstanceOf[js.Any], size2.asInstanceOf[js.Any])).asInstanceOf[typings.paper.paper.Size]
+  inline def max(size1: typings.paper.paper.Size, size2: typings.paper.paper.Size): typings.paper.paper.Size = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(size1.asInstanceOf[js.Any], size2.asInstanceOf[js.Any])).asInstanceOf[typings.paper.paper.Size]
   
   /** 
     * Returns a new size object with the smallest {@link #width} and
@@ -62,8 +61,7 @@ object Size {
     * @return the newly created size object
     */
   /* static member */
-  @scala.inline
-  def min(size1: typings.paper.paper.Size, size2: typings.paper.paper.Size): typings.paper.paper.Size = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(size1.asInstanceOf[js.Any], size2.asInstanceOf[js.Any])).asInstanceOf[typings.paper.paper.Size]
+  inline def min(size1: typings.paper.paper.Size, size2: typings.paper.paper.Size): typings.paper.paper.Size = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(size1.asInstanceOf[js.Any], size2.asInstanceOf[js.Any])).asInstanceOf[typings.paper.paper.Size]
   
   /** 
     * Returns a size object with random {@link #width} and {@link #height}
@@ -72,6 +70,5 @@ object Size {
     * @return the newly created size object
     */
   /* static member */
-  @scala.inline
-  def random(): typings.paper.paper.Size = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[typings.paper.paper.Size]
+  inline def random(): typings.paper.paper.Size = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[typings.paper.paper.Size]
 }

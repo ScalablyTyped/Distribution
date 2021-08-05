@@ -11,8 +11,7 @@ trait AnyEventObject
      with /* key */ StringDictionary[js.Any]
 object AnyEventObject {
   
-  @scala.inline
-  def apply(`type`: String): AnyEventObject = {
+  inline def apply(`type`: String): AnyEventObject = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnyEventObject]

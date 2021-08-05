@@ -13,16 +13,13 @@ trait DescribeAlgorithmRequest extends StObject {
 }
 object DescribeAlgorithmRequest {
   
-  @scala.inline
-  def apply(algorithmArn: Arn): DescribeAlgorithmRequest = {
+  inline def apply(algorithmArn: Arn): DescribeAlgorithmRequest = {
     val __obj = js.Dynamic.literal(algorithmArn = algorithmArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeAlgorithmRequest]
   }
   
-  @scala.inline
-  implicit class DescribeAlgorithmRequestMutableBuilder[Self <: DescribeAlgorithmRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeAlgorithmRequest](x: Self) {
     
-    @scala.inline
-    def setAlgorithmArn(value: Arn): Self = StObject.set(x, "algorithmArn", value.asInstanceOf[js.Any])
+    inline def setAlgorithmArn(value: Arn): Self = StObject.set(x, "algorithmArn", value.asInstanceOf[js.Any])
   }
 }

@@ -19,40 +19,29 @@ trait IStateChange extends StObject {
 }
 object IStateChange {
   
-  @scala.inline
-  def apply(): IStateChange = {
+  inline def apply(): IStateChange = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IStateChange]
   }
   
-  @scala.inline
-  implicit class IStateChangeMutableBuilder[Self <: IStateChange] (val x: Self) extends AnyVal {
+  extension [Self <: IStateChange](x: Self) {
     
-    @scala.inline
-    def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+    inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressNull: Self = StObject.set(x, "address", null)
+    inline def setAddressNull: Self = StObject.set(x, "address", null)
     
-    @scala.inline
-    def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
+    inline def setAddressUndefined: Self = StObject.set(x, "address", js.undefined)
     
-    @scala.inline
-    def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeNull: Self = StObject.set(x, "type", null)
+    inline def setTypeNull: Self = StObject.set(x, "type", null)
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setValue(value: Uint8Array): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Uint8Array): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueNull: Self = StObject.set(x, "value", null)
+    inline def setValueNull: Self = StObject.set(x, "value", null)
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

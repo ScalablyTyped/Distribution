@@ -6,12 +6,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[String]
-  @scala.inline
-  def apply(obj: js.Any, opts: Comparator): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(obj: js.Any, opts: Options): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(obj: js.Any, opts: Comparator): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(obj: js.Any, opts: Options): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("json-stable-stringify", JSImport.Namespace)
   @js.native
@@ -27,20 +24,16 @@ object mod {
   }
   object Element {
     
-    @scala.inline
-    def apply(key: String, value: js.Any): Element = {
+    inline def apply(key: String, value: js.Any): Element = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[Element]
     }
     
-    @scala.inline
-    implicit class ElementMutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
+    extension [Self <: Element](x: Self) {
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -54,32 +47,24 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCmp(value: (/* a */ Element, /* b */ Element) => Double): Self = StObject.set(x, "cmp", js.Any.fromFunction2(value))
+      inline def setCmp(value: (/* a */ Element, /* b */ Element) => Double): Self = StObject.set(x, "cmp", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCmpUndefined: Self = StObject.set(x, "cmp", js.undefined)
+      inline def setCmpUndefined: Self = StObject.set(x, "cmp", js.undefined)
       
-      @scala.inline
-      def setReplacer(value: (/* key */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
+      inline def setReplacer(value: (/* key */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
+      inline def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
       
-      @scala.inline
-      def setSpace(value: Double | String): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
+      inline def setSpace(value: Double | String): Self = StObject.set(x, "space", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
+      inline def setSpaceUndefined: Self = StObject.set(x, "space", js.undefined)
     }
   }
   

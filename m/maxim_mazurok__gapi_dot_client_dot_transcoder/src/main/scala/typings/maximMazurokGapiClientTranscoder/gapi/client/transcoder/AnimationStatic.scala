@@ -14,25 +14,19 @@ trait AnimationStatic extends StObject {
 }
 object AnimationStatic {
   
-  @scala.inline
-  def apply(): AnimationStatic = {
+  inline def apply(): AnimationStatic = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnimationStatic]
   }
   
-  @scala.inline
-  implicit class AnimationStaticMutableBuilder[Self <: AnimationStatic] (val x: Self) extends AnyVal {
+  extension [Self <: AnimationStatic](x: Self) {
     
-    @scala.inline
-    def setStartTimeOffset(value: String): Self = StObject.set(x, "startTimeOffset", value.asInstanceOf[js.Any])
+    inline def setStartTimeOffset(value: String): Self = StObject.set(x, "startTimeOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTimeOffsetUndefined: Self = StObject.set(x, "startTimeOffset", js.undefined)
+    inline def setStartTimeOffsetUndefined: Self = StObject.set(x, "startTimeOffset", js.undefined)
     
-    @scala.inline
-    def setXy(value: NormalizedCoordinate): Self = StObject.set(x, "xy", value.asInstanceOf[js.Any])
+    inline def setXy(value: NormalizedCoordinate): Self = StObject.set(x, "xy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXyUndefined: Self = StObject.set(x, "xy", js.undefined)
+    inline def setXyUndefined: Self = StObject.set(x, "xy", js.undefined)
   }
 }

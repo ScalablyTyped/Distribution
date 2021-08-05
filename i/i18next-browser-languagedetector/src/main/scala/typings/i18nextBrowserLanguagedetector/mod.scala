@@ -59,26 +59,20 @@ object mod {
   }
   object CustomDetector {
     
-    @scala.inline
-    def apply(lookup: DetectorOptions => js.UndefOr[String], name: String): CustomDetector = {
+    inline def apply(lookup: DetectorOptions => js.UndefOr[String], name: String): CustomDetector = {
       val __obj = js.Dynamic.literal(lookup = js.Any.fromFunction1(lookup), name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomDetector]
     }
     
-    @scala.inline
-    implicit class CustomDetectorMutableBuilder[Self <: CustomDetector] (val x: Self) extends AnyVal {
+    extension [Self <: CustomDetector](x: Self) {
       
-      @scala.inline
-      def setCacheUserLanguage(value: (/* lng */ String, /* options */ DetectorOptions) => Unit): Self = StObject.set(x, "cacheUserLanguage", js.Any.fromFunction2(value))
+      inline def setCacheUserLanguage(value: (/* lng */ String, /* options */ DetectorOptions) => Unit): Self = StObject.set(x, "cacheUserLanguage", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setCacheUserLanguageUndefined: Self = StObject.set(x, "cacheUserLanguage", js.undefined)
+      inline def setCacheUserLanguageUndefined: Self = StObject.set(x, "cacheUserLanguage", js.undefined)
       
-      @scala.inline
-      def setLookup(value: DetectorOptions => js.UndefOr[String]): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
+      inline def setLookup(value: DetectorOptions => js.UndefOr[String]): Self = StObject.set(x, "lookup", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -134,102 +128,72 @@ object mod {
   }
   object DetectorOptions {
     
-    @scala.inline
-    def apply(): DetectorOptions = {
+    inline def apply(): DetectorOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DetectorOptions]
     }
     
-    @scala.inline
-    implicit class DetectorOptionsMutableBuilder[Self <: DetectorOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DetectorOptions](x: Self) {
       
-      @scala.inline
-      def setCaches(value: js.Array[String]): Self = StObject.set(x, "caches", value.asInstanceOf[js.Any])
+      inline def setCaches(value: js.Array[String]): Self = StObject.set(x, "caches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCachesUndefined: Self = StObject.set(x, "caches", js.undefined)
+      inline def setCachesUndefined: Self = StObject.set(x, "caches", js.undefined)
       
-      @scala.inline
-      def setCachesVarargs(value: String*): Self = StObject.set(x, "caches", js.Array(value :_*))
+      inline def setCachesVarargs(value: String*): Self = StObject.set(x, "caches", js.Array(value :_*))
       
-      @scala.inline
-      def setCookieDomain(value: String): Self = StObject.set(x, "cookieDomain", value.asInstanceOf[js.Any])
+      inline def setCookieDomain(value: String): Self = StObject.set(x, "cookieDomain", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieDomainUndefined: Self = StObject.set(x, "cookieDomain", js.undefined)
+      inline def setCookieDomainUndefined: Self = StObject.set(x, "cookieDomain", js.undefined)
       
-      @scala.inline
-      def setCookieMinutes(value: Double): Self = StObject.set(x, "cookieMinutes", value.asInstanceOf[js.Any])
+      inline def setCookieMinutes(value: Double): Self = StObject.set(x, "cookieMinutes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCookieMinutesUndefined: Self = StObject.set(x, "cookieMinutes", js.undefined)
+      inline def setCookieMinutesUndefined: Self = StObject.set(x, "cookieMinutes", js.undefined)
       
-      @scala.inline
-      def setExcludeCacheFor(value: js.Array[String]): Self = StObject.set(x, "excludeCacheFor", value.asInstanceOf[js.Any])
+      inline def setExcludeCacheFor(value: js.Array[String]): Self = StObject.set(x, "excludeCacheFor", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExcludeCacheForUndefined: Self = StObject.set(x, "excludeCacheFor", js.undefined)
+      inline def setExcludeCacheForUndefined: Self = StObject.set(x, "excludeCacheFor", js.undefined)
       
-      @scala.inline
-      def setExcludeCacheForVarargs(value: String*): Self = StObject.set(x, "excludeCacheFor", js.Array(value :_*))
+      inline def setExcludeCacheForVarargs(value: String*): Self = StObject.set(x, "excludeCacheFor", js.Array(value :_*))
       
-      @scala.inline
-      def setHtmlTag(value: HTMLElement): Self = StObject.set(x, "htmlTag", value.asInstanceOf[js.Any])
+      inline def setHtmlTag(value: HTMLElement): Self = StObject.set(x, "htmlTag", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHtmlTagNull: Self = StObject.set(x, "htmlTag", null)
+      inline def setHtmlTagNull: Self = StObject.set(x, "htmlTag", null)
       
-      @scala.inline
-      def setHtmlTagUndefined: Self = StObject.set(x, "htmlTag", js.undefined)
+      inline def setHtmlTagUndefined: Self = StObject.set(x, "htmlTag", js.undefined)
       
-      @scala.inline
-      def setLookupCookie(value: String): Self = StObject.set(x, "lookupCookie", value.asInstanceOf[js.Any])
+      inline def setLookupCookie(value: String): Self = StObject.set(x, "lookupCookie", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLookupCookieUndefined: Self = StObject.set(x, "lookupCookie", js.undefined)
+      inline def setLookupCookieUndefined: Self = StObject.set(x, "lookupCookie", js.undefined)
       
-      @scala.inline
-      def setLookupFromPathIndex(value: Double): Self = StObject.set(x, "lookupFromPathIndex", value.asInstanceOf[js.Any])
+      inline def setLookupFromPathIndex(value: Double): Self = StObject.set(x, "lookupFromPathIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLookupFromPathIndexUndefined: Self = StObject.set(x, "lookupFromPathIndex", js.undefined)
+      inline def setLookupFromPathIndexUndefined: Self = StObject.set(x, "lookupFromPathIndex", js.undefined)
       
-      @scala.inline
-      def setLookupFromSubdomainIndex(value: Double): Self = StObject.set(x, "lookupFromSubdomainIndex", value.asInstanceOf[js.Any])
+      inline def setLookupFromSubdomainIndex(value: Double): Self = StObject.set(x, "lookupFromSubdomainIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLookupFromSubdomainIndexUndefined: Self = StObject.set(x, "lookupFromSubdomainIndex", js.undefined)
+      inline def setLookupFromSubdomainIndexUndefined: Self = StObject.set(x, "lookupFromSubdomainIndex", js.undefined)
       
-      @scala.inline
-      def setLookupLocalStorage(value: String): Self = StObject.set(x, "lookupLocalStorage", value.asInstanceOf[js.Any])
+      inline def setLookupLocalStorage(value: String): Self = StObject.set(x, "lookupLocalStorage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLookupLocalStorageUndefined: Self = StObject.set(x, "lookupLocalStorage", js.undefined)
+      inline def setLookupLocalStorageUndefined: Self = StObject.set(x, "lookupLocalStorage", js.undefined)
       
-      @scala.inline
-      def setLookupQuerystring(value: String): Self = StObject.set(x, "lookupQuerystring", value.asInstanceOf[js.Any])
+      inline def setLookupQuerystring(value: String): Self = StObject.set(x, "lookupQuerystring", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLookupQuerystringUndefined: Self = StObject.set(x, "lookupQuerystring", js.undefined)
+      inline def setLookupQuerystringUndefined: Self = StObject.set(x, "lookupQuerystring", js.undefined)
       
-      @scala.inline
-      def setLookupSessionStorage(value: String): Self = StObject.set(x, "lookupSessionStorage", value.asInstanceOf[js.Any])
+      inline def setLookupSessionStorage(value: String): Self = StObject.set(x, "lookupSessionStorage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLookupSessionStorageUndefined: Self = StObject.set(x, "lookupSessionStorage", js.undefined)
+      inline def setLookupSessionStorageUndefined: Self = StObject.set(x, "lookupSessionStorage", js.undefined)
       
-      @scala.inline
-      def setOrder(
+      inline def setOrder(
         value: js.Array[
               querystring | cookie | sessionStorage | localStorage | navigator | htmlTag | String
             ]
       ): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+      inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
       
-      @scala.inline
-      def setOrderVarargs(value: (querystring | cookie | sessionStorage | localStorage | navigator | htmlTag | String)*): Self = StObject.set(x, "order", js.Array(value :_*))
+      inline def setOrderVarargs(value: (querystring | cookie | sessionStorage | localStorage | navigator | htmlTag | String)*): Self = StObject.set(x, "order", js.Array(value :_*))
     }
   }
   

@@ -136,8 +136,7 @@ trait ParticleRenderer extends StObject {
 }
 object ParticleRenderer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroy: () => Unit,
     render: ParticleContainer => Unit,
     shader: Shader,
@@ -152,34 +151,24 @@ object ParticleRenderer {
     __obj.asInstanceOf[ParticleRenderer]
   }
   
-  @scala.inline
-  implicit class ParticleRendererMutableBuilder[Self <: ParticleRenderer] (val x: Self) extends AnyVal {
+  extension [Self <: ParticleRenderer](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setRender(value: ParticleContainer => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
+    inline def setRender(value: ParticleContainer => Unit): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShader(value: Shader): Self = StObject.set(x, "shader", value.asInstanceOf[js.Any])
+    inline def setShader(value: Shader): Self = StObject.set(x, "shader", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUploadPosition(value: (js.Array[DisplayObject], Double, Double, js.Array[Double], Double, Double) => Unit): Self = StObject.set(x, "uploadPosition", js.Any.fromFunction6(value))
+    inline def setUploadPosition(value: (js.Array[DisplayObject], Double, Double, js.Array[Double], Double, Double) => Unit): Self = StObject.set(x, "uploadPosition", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setUploadRotation(value: (js.Array[DisplayObject], Double, Double, js.Array[Double], Double, Double) => Unit): Self = StObject.set(x, "uploadRotation", js.Any.fromFunction6(value))
+    inline def setUploadRotation(value: (js.Array[DisplayObject], Double, Double, js.Array[Double], Double, Double) => Unit): Self = StObject.set(x, "uploadRotation", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setUploadTint(value: (js.Array[DisplayObject], Double, Double, js.Array[Double], Double, Double) => Unit): Self = StObject.set(x, "uploadTint", js.Any.fromFunction6(value))
+    inline def setUploadTint(value: (js.Array[DisplayObject], Double, Double, js.Array[Double], Double, Double) => Unit): Self = StObject.set(x, "uploadTint", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setUploadUvs(value: (js.Array[DisplayObject], Double, Double, js.Array[Double], Double, Double) => Unit): Self = StObject.set(x, "uploadUvs", js.Any.fromFunction6(value))
+    inline def setUploadUvs(value: (js.Array[DisplayObject], Double, Double, js.Array[Double], Double, Double) => Unit): Self = StObject.set(x, "uploadUvs", js.Any.fromFunction6(value))
     
-    @scala.inline
-    def setUploadVertices(value: (js.Array[DisplayObject], Double, Double, js.Array[Double], Double, Double) => Unit): Self = StObject.set(x, "uploadVertices", js.Any.fromFunction6(value))
+    inline def setUploadVertices(value: (js.Array[DisplayObject], Double, Double, js.Array[Double], Double, Double) => Unit): Self = StObject.set(x, "uploadVertices", js.Any.fromFunction6(value))
   }
 }

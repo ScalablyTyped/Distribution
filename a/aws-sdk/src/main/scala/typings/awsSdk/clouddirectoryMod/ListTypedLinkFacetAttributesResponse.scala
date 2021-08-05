@@ -18,28 +18,21 @@ trait ListTypedLinkFacetAttributesResponse extends StObject {
 }
 object ListTypedLinkFacetAttributesResponse {
   
-  @scala.inline
-  def apply(): ListTypedLinkFacetAttributesResponse = {
+  inline def apply(): ListTypedLinkFacetAttributesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListTypedLinkFacetAttributesResponse]
   }
   
-  @scala.inline
-  implicit class ListTypedLinkFacetAttributesResponseMutableBuilder[Self <: ListTypedLinkFacetAttributesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListTypedLinkFacetAttributesResponse](x: Self) {
     
-    @scala.inline
-    def setAttributes(value: TypedLinkAttributeDefinitionList): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
+    inline def setAttributes(value: TypedLinkAttributeDefinitionList): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
+    inline def setAttributesUndefined: Self = StObject.set(x, "Attributes", js.undefined)
     
-    @scala.inline
-    def setAttributesVarargs(value: TypedLinkAttributeDefinition*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
+    inline def setAttributesVarargs(value: TypedLinkAttributeDefinition*): Self = StObject.set(x, "Attributes", js.Array(value :_*))
     
-    @scala.inline
-    def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

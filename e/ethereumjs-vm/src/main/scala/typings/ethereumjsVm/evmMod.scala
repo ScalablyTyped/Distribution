@@ -24,8 +24,7 @@ object evmMod {
     def this(vm: js.Any, txContext: typings.ethereumjsVm.txContextMod.default, block: js.Any) = this()
   }
   
-  @scala.inline
-  def OOGResult(gasLimit: typings.bnJs.mod.^): ExecResult = ^.asInstanceOf[js.Dynamic].applyDynamic("OOGResult")(gasLimit.asInstanceOf[js.Any]).asInstanceOf[ExecResult]
+  inline def OOGResult(gasLimit: typings.bnJs.mod.^): ExecResult = ^.asInstanceOf[js.Dynamic].applyDynamic("OOGResult")(gasLimit.asInstanceOf[js.Any]).asInstanceOf[ExecResult]
   
   @js.native
   trait EVM extends StObject {
@@ -102,26 +101,20 @@ object evmMod {
   }
   object EVMResult {
     
-    @scala.inline
-    def apply(execResult: ExecResult, gasUsed: typings.bnJs.mod.^): EVMResult = {
+    inline def apply(execResult: ExecResult, gasUsed: typings.bnJs.mod.^): EVMResult = {
       val __obj = js.Dynamic.literal(execResult = execResult.asInstanceOf[js.Any], gasUsed = gasUsed.asInstanceOf[js.Any])
       __obj.asInstanceOf[EVMResult]
     }
     
-    @scala.inline
-    implicit class EVMResultMutableBuilder[Self <: EVMResult] (val x: Self) extends AnyVal {
+    extension [Self <: EVMResult](x: Self) {
       
-      @scala.inline
-      def setCreatedAddress(value: Buffer): Self = StObject.set(x, "createdAddress", value.asInstanceOf[js.Any])
+      inline def setCreatedAddress(value: Buffer): Self = StObject.set(x, "createdAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCreatedAddressUndefined: Self = StObject.set(x, "createdAddress", js.undefined)
+      inline def setCreatedAddressUndefined: Self = StObject.set(x, "createdAddress", js.undefined)
       
-      @scala.inline
-      def setExecResult(value: ExecResult): Self = StObject.set(x, "execResult", value.asInstanceOf[js.Any])
+      inline def setExecResult(value: ExecResult): Self = StObject.set(x, "execResult", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGasUsed(value: typings.bnJs.mod.^): Self = StObject.set(x, "gasUsed", value.asInstanceOf[js.Any])
+      inline def setGasUsed(value: typings.bnJs.mod.^): Self = StObject.set(x, "gasUsed", value.asInstanceOf[js.Any])
     }
   }
   
@@ -166,59 +159,42 @@ object evmMod {
   }
   object ExecResult {
     
-    @scala.inline
-    def apply(gasUsed: typings.bnJs.mod.^, returnValue: Buffer): ExecResult = {
+    inline def apply(gasUsed: typings.bnJs.mod.^, returnValue: Buffer): ExecResult = {
       val __obj = js.Dynamic.literal(gasUsed = gasUsed.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
       __obj.asInstanceOf[ExecResult]
     }
     
-    @scala.inline
-    implicit class ExecResultMutableBuilder[Self <: ExecResult] (val x: Self) extends AnyVal {
+    extension [Self <: ExecResult](x: Self) {
       
-      @scala.inline
-      def setExceptionError(value: VmError): Self = StObject.set(x, "exceptionError", value.asInstanceOf[js.Any])
+      inline def setExceptionError(value: VmError): Self = StObject.set(x, "exceptionError", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExceptionErrorUndefined: Self = StObject.set(x, "exceptionError", js.undefined)
+      inline def setExceptionErrorUndefined: Self = StObject.set(x, "exceptionError", js.undefined)
       
-      @scala.inline
-      def setGas(value: typings.bnJs.mod.^): Self = StObject.set(x, "gas", value.asInstanceOf[js.Any])
+      inline def setGas(value: typings.bnJs.mod.^): Self = StObject.set(x, "gas", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGasRefund(value: typings.bnJs.mod.^): Self = StObject.set(x, "gasRefund", value.asInstanceOf[js.Any])
+      inline def setGasRefund(value: typings.bnJs.mod.^): Self = StObject.set(x, "gasRefund", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGasRefundUndefined: Self = StObject.set(x, "gasRefund", js.undefined)
+      inline def setGasRefundUndefined: Self = StObject.set(x, "gasRefund", js.undefined)
       
-      @scala.inline
-      def setGasUndefined: Self = StObject.set(x, "gas", js.undefined)
+      inline def setGasUndefined: Self = StObject.set(x, "gas", js.undefined)
       
-      @scala.inline
-      def setGasUsed(value: typings.bnJs.mod.^): Self = StObject.set(x, "gasUsed", value.asInstanceOf[js.Any])
+      inline def setGasUsed(value: typings.bnJs.mod.^): Self = StObject.set(x, "gasUsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogs(value: js.Array[js.Any]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
+      inline def setLogs(value: js.Array[js.Any]): Self = StObject.set(x, "logs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLogsUndefined: Self = StObject.set(x, "logs", js.undefined)
+      inline def setLogsUndefined: Self = StObject.set(x, "logs", js.undefined)
       
-      @scala.inline
-      def setLogsVarargs(value: js.Any*): Self = StObject.set(x, "logs", js.Array(value :_*))
+      inline def setLogsVarargs(value: js.Any*): Self = StObject.set(x, "logs", js.Array(value :_*))
       
-      @scala.inline
-      def setReturnValue(value: Buffer): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
+      inline def setReturnValue(value: Buffer): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRunState(value: RunState): Self = StObject.set(x, "runState", value.asInstanceOf[js.Any])
+      inline def setRunState(value: RunState): Self = StObject.set(x, "runState", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRunStateUndefined: Self = StObject.set(x, "runState", js.undefined)
+      inline def setRunStateUndefined: Self = StObject.set(x, "runState", js.undefined)
       
-      @scala.inline
-      def setSelfdestruct(value: StringDictionary[Buffer]): Self = StObject.set(x, "selfdestruct", value.asInstanceOf[js.Any])
+      inline def setSelfdestruct(value: StringDictionary[Buffer]): Self = StObject.set(x, "selfdestruct", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelfdestructUndefined: Self = StObject.set(x, "selfdestruct", js.undefined)
+      inline def setSelfdestructUndefined: Self = StObject.set(x, "selfdestruct", js.undefined)
     }
   }
   
@@ -230,20 +206,16 @@ object evmMod {
   }
   object NewContractEvent {
     
-    @scala.inline
-    def apply(address: Buffer, code: Buffer): NewContractEvent = {
+    inline def apply(address: Buffer, code: Buffer): NewContractEvent = {
       val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], code = code.asInstanceOf[js.Any])
       __obj.asInstanceOf[NewContractEvent]
     }
     
-    @scala.inline
-    implicit class NewContractEventMutableBuilder[Self <: NewContractEvent] (val x: Self) extends AnyVal {
+    extension [Self <: NewContractEvent](x: Self) {
       
-      @scala.inline
-      def setAddress(value: Buffer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
+      inline def setAddress(value: Buffer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCode(value: Buffer): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+      inline def setCode(value: Buffer): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -11,16 +11,13 @@ trait WIFI extends StObject {
 }
 object WIFI {
   
-  @scala.inline
-  def apply(): WIFI = {
+  inline def apply(): WIFI = {
     val __obj = js.Dynamic.literal(WI_FI = "WiFi")
     __obj.asInstanceOf[WIFI]
   }
   
-  @scala.inline
-  implicit class WIFIMutableBuilder[Self <: WIFI] (val x: Self) extends AnyVal {
+  extension [Self <: WIFI](x: Self) {
     
-    @scala.inline
-    def setWI_FI(value: WiFi): Self = StObject.set(x, "WI_FI", value.asInstanceOf[js.Any])
+    inline def setWI_FI(value: WiFi): Self = StObject.set(x, "WI_FI", value.asInstanceOf[js.Any])
   }
 }

@@ -13,8 +13,7 @@ trait Adapter extends StObject {
 }
 object Adapter {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     open: /* repeated */ js.Any => Adapter,
     write: (Buffer, js.Function1[/* error */ js.UndefOr[js.Any], Unit]) => Adapter
   ): Adapter = {
@@ -22,13 +21,10 @@ object Adapter {
     __obj.asInstanceOf[Adapter]
   }
   
-  @scala.inline
-  implicit class AdapterMutableBuilder[Self <: Adapter] (val x: Self) extends AnyVal {
+  extension [Self <: Adapter](x: Self) {
     
-    @scala.inline
-    def setOpen(value: /* repeated */ js.Any => Adapter): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
+    inline def setOpen(value: /* repeated */ js.Any => Adapter): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setWrite(value: (Buffer, js.Function1[/* error */ js.UndefOr[js.Any], Unit]) => Adapter): Self = StObject.set(x, "write", js.Any.fromFunction2(value))
+    inline def setWrite(value: (Buffer, js.Function1[/* error */ js.UndefOr[js.Any], Unit]) => Adapter): Self = StObject.set(x, "write", js.Any.fromFunction2(value))
   }
 }

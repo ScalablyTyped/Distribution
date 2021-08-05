@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XriSecurity extends StObject
 object XriSecurity {
   
-  @scala.inline
-  def none: typings.ipp.ippStrings.none = "none".asInstanceOf[typings.ipp.ippStrings.none]
+  inline def none: typings.ipp.ippStrings.none = "none".asInstanceOf[typings.ipp.ippStrings.none]
   
-  @scala.inline
-  def ssl3: typings.ipp.ippStrings.ssl3 = "ssl3".asInstanceOf[typings.ipp.ippStrings.ssl3]
+  inline def ssl3: typings.ipp.ippStrings.ssl3 = "ssl3".asInstanceOf[typings.ipp.ippStrings.ssl3]
   
-  @scala.inline
-  def tls: typings.ipp.ippStrings.tls = "tls".asInstanceOf[typings.ipp.ippStrings.tls]
+  inline def tls: typings.ipp.ippStrings.tls = "tls".asInstanceOf[typings.ipp.ippStrings.tls]
 }

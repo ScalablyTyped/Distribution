@@ -14,22 +14,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(): Instance = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Instance]
-  @scala.inline
-  def apply(options: Options): Instance = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Instance]
+  inline def apply(): Instance = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Instance]
+  inline def apply(options: Options): Instance = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Instance]
   
   @JSImport("@koa/multer", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
   
   /* The disk storage engine gives you full control on storing files to disk. */
-  @scala.inline
-  def diskStorage(options: DiskStorageOptions): StorageEngine = ^.asInstanceOf[js.Dynamic].applyDynamic("diskStorage")(options.asInstanceOf[js.Any]).asInstanceOf[StorageEngine]
+  inline def diskStorage(options: DiskStorageOptions): StorageEngine = ^.asInstanceOf[js.Dynamic].applyDynamic("diskStorage")(options.asInstanceOf[js.Any]).asInstanceOf[StorageEngine]
   
   /* The memory storage engine stores the files in memory as Buffer objects. */
-  @scala.inline
-  def memoryStorage(): StorageEngine = ^.asInstanceOf[js.Dynamic].applyDynamic("memoryStorage")().asInstanceOf[StorageEngine]
+  inline def memoryStorage(): StorageEngine = ^.asInstanceOf[js.Dynamic].applyDynamic("memoryStorage")().asInstanceOf[StorageEngine]
   
   trait DiskStorageOptions extends StObject {
     
@@ -55,17 +51,14 @@ object mod {
   }
   object DiskStorageOptions {
     
-    @scala.inline
-    def apply(): DiskStorageOptions = {
+    inline def apply(): DiskStorageOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DiskStorageOptions]
     }
     
-    @scala.inline
-    implicit class DiskStorageOptionsMutableBuilder[Self <: DiskStorageOptions] (val x: Self) extends AnyVal {
+    extension [Self <: DiskStorageOptions](x: Self) {
       
-      @scala.inline
-      def setDestination(
+      inline def setDestination(
         value: String | (js.Function3[
               /* req */ IncomingMessage, 
               /* file */ File, 
@@ -74,21 +67,17 @@ object mod {
             ])
       ): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestinationFunction3(
+      inline def setDestinationFunction3(
         value: (/* req */ IncomingMessage, /* file */ File, /* callback */ js.Function2[/* error */ Error | Null, /* destination */ String, Unit]) => Unit
       ): Self = StObject.set(x, "destination", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
+      inline def setDestinationUndefined: Self = StObject.set(x, "destination", js.undefined)
       
-      @scala.inline
-      def setFilename(
+      inline def setFilename(
         value: (/* req */ IncomingMessage, /* file */ File, /* callback */ js.Function2[/* error */ Error | Null, /* filename */ String, Unit]) => Unit
       ): Self = StObject.set(x, "filename", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
+      inline def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     }
   }
   
@@ -102,23 +91,18 @@ object mod {
   }
   object Field {
     
-    @scala.inline
-    def apply(name: String): Field = {
+    inline def apply(name: String): Field = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[Field]
     }
     
-    @scala.inline
-    implicit class FieldMutableBuilder[Self <: Field] (val x: Self) extends AnyVal {
+    extension [Self <: Field](x: Self) {
       
-      @scala.inline
-      def setMaxCount(value: Double): Self = StObject.set(x, "maxCount", value.asInstanceOf[js.Any])
+      inline def setMaxCount(value: Double): Self = StObject.set(x, "maxCount", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxCountUndefined: Self = StObject.set(x, "maxCount", js.undefined)
+      inline def setMaxCountUndefined: Self = StObject.set(x, "maxCount", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   
@@ -153,8 +137,7 @@ object mod {
   }
   object File {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       buffer: Buffer,
       destination: String,
       encoding: String,
@@ -169,35 +152,25 @@ object mod {
       __obj.asInstanceOf[File]
     }
     
-    @scala.inline
-    implicit class FileMutableBuilder[Self <: File] (val x: Self) extends AnyVal {
+    extension [Self <: File](x: Self) {
       
-      @scala.inline
-      def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
+      inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldname(value: String): Self = StObject.set(x, "fieldname", value.asInstanceOf[js.Any])
+      inline def setFieldname(value: String): Self = StObject.set(x, "fieldname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
+      inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMimetype(value: String): Self = StObject.set(x, "mimetype", value.asInstanceOf[js.Any])
+      inline def setMimetype(value: String): Self = StObject.set(x, "mimetype", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOriginalname(value: String): Self = StObject.set(x, "originalname", value.asInstanceOf[js.Any])
+      inline def setOriginalname(value: String): Self = StObject.set(x, "originalname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
   }
   
@@ -256,40 +229,30 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setDest(value: String): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
+      inline def setDest(value: String): Self = StObject.set(x, "dest", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDestUndefined: Self = StObject.set(x, "dest", js.undefined)
+      inline def setDestUndefined: Self = StObject.set(x, "dest", js.undefined)
       
-      @scala.inline
-      def setFileFilter(
+      inline def setFileFilter(
         value: (/* req */ IncomingMessage, /* file */ File, /* callback */ js.Function2[/* error */ Error | Null, /* acceptFile */ Boolean, Unit]) => Unit
       ): Self = StObject.set(x, "fileFilter", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setFileFilterUndefined: Self = StObject.set(x, "fileFilter", js.undefined)
+      inline def setFileFilterUndefined: Self = StObject.set(x, "fileFilter", js.undefined)
       
-      @scala.inline
-      def setLimits(value: FieldNameSize): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
+      inline def setLimits(value: FieldNameSize): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
+      inline def setLimitsUndefined: Self = StObject.set(x, "limits", js.undefined)
       
-      @scala.inline
-      def setStorage(value: StorageEngine): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
+      inline def setStorage(value: StorageEngine): Self = StObject.set(x, "storage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
+      inline def setStorageUndefined: Self = StObject.set(x, "storage", js.undefined)
     }
   }
   
@@ -305,8 +268,7 @@ object mod {
   }
   object StorageEngine {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       _handleFile: (IncomingMessage, File, js.Function2[/* error */ js.UndefOr[js.Any], /* info */ js.UndefOr[File], Unit]) => Unit,
       _removeFile: (IncomingMessage, File, js.Function1[/* error */ Error, Unit]) => Unit
     ): StorageEngine = {
@@ -314,16 +276,13 @@ object mod {
       __obj.asInstanceOf[StorageEngine]
     }
     
-    @scala.inline
-    implicit class StorageEngineMutableBuilder[Self <: StorageEngine] (val x: Self) extends AnyVal {
+    extension [Self <: StorageEngine](x: Self) {
       
-      @scala.inline
-      def set_handleFile(
+      inline def set_handleFile(
         value: (IncomingMessage, File, js.Function2[/* error */ js.UndefOr[js.Any], /* info */ js.UndefOr[File], Unit]) => Unit
       ): Self = StObject.set(x, "_handleFile", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def set_removeFile(value: (IncomingMessage, File, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "_removeFile", js.Any.fromFunction3(value))
+      inline def set_removeFile(value: (IncomingMessage, File, js.Function1[/* error */ Error, Unit]) => Unit): Self = StObject.set(x, "_removeFile", js.Any.fromFunction3(value))
     }
   }
   
@@ -338,23 +297,18 @@ object mod {
     }
     object DefaultContext {
       
-      @scala.inline
-      def apply(file: typings.std.File, files: js.Array[typings.std.File]): typings.koaMulter.mod.koaAugmentingMod.DefaultContext = {
+      inline def apply(file: typings.std.File, files: js.Array[typings.std.File]): typings.koaMulter.mod.koaAugmentingMod.DefaultContext = {
         val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any])
         __obj.asInstanceOf[typings.koaMulter.mod.koaAugmentingMod.DefaultContext]
       }
       
-      @scala.inline
-      implicit class DefaultContextMutableBuilder[Self <: typings.koaMulter.mod.koaAugmentingMod.DefaultContext] (val x: Self) extends AnyVal {
+      extension [Self <: typings.koaMulter.mod.koaAugmentingMod.DefaultContext](x: Self) {
         
-        @scala.inline
-        def setFile(value: typings.std.File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+        inline def setFile(value: typings.std.File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFiles(value: js.Array[typings.std.File]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+        inline def setFiles(value: js.Array[typings.std.File]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFilesVarargs(value: typings.std.File*): Self = StObject.set(x, "files", js.Array(value :_*))
+        inline def setFilesVarargs(value: typings.std.File*): Self = StObject.set(x, "files", js.Array(value :_*))
       }
     }
     
@@ -366,23 +320,18 @@ object mod {
     }
     object Request {
       
-      @scala.inline
-      def apply(file: typings.std.File, files: js.Array[typings.std.File]): Request = {
+      inline def apply(file: typings.std.File, files: js.Array[typings.std.File]): Request = {
         val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], files = files.asInstanceOf[js.Any])
         __obj.asInstanceOf[Request]
       }
       
-      @scala.inline
-      implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
+      extension [Self <: Request](x: Self) {
         
-        @scala.inline
-        def setFile(value: typings.std.File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+        inline def setFile(value: typings.std.File): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFiles(value: js.Array[typings.std.File]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
+        inline def setFiles(value: js.Array[typings.std.File]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setFilesVarargs(value: typings.std.File*): Self = StObject.set(x, "files", js.Array(value :_*))
+        inline def setFilesVarargs(value: typings.std.File*): Self = StObject.set(x, "files", js.Array(value :_*))
       }
     }
   }

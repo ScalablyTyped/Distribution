@@ -114,8 +114,7 @@ trait Delete extends StObject {
 }
 object Delete {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: (String, /* repeated */ String | Id) => Unit,
     clear: () => Unit,
     delete: String => Unit,
@@ -126,22 +125,16 @@ object Delete {
     __obj.asInstanceOf[Delete]
   }
   
-  @scala.inline
-  implicit class DeleteMutableBuilder[Self <: Delete] (val x: Self) extends AnyVal {
+  extension [Self <: Delete](x: Self) {
     
-    @scala.inline
-    def setAdd(value: (String, /* repeated */ String | Id) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+    inline def setAdd(value: (String, /* repeated */ String | Id) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDelete(value: String => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
+    inline def setDelete(value: String => Unit): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGet(value: String => AudioList | Null): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+    inline def setGet(value: String => AudioList | Null): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
+    inline def setHas(value: String => Boolean): Self = StObject.set(x, "has", js.Any.fromFunction1(value))
   }
 }

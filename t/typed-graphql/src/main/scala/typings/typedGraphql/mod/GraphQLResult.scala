@@ -12,28 +12,21 @@ trait GraphQLResult extends StObject {
 }
 object GraphQLResult {
   
-  @scala.inline
-  def apply(): GraphQLResult = {
+  inline def apply(): GraphQLResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GraphQLResult]
   }
   
-  @scala.inline
-  implicit class GraphQLResultMutableBuilder[Self <: GraphQLResult] (val x: Self) extends AnyVal {
+  extension [Self <: GraphQLResult](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setErrors(value: js.Array[GraphQLError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+    inline def setErrors(value: js.Array[GraphQLError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+    inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
     
-    @scala.inline
-    def setErrorsVarargs(value: GraphQLError*): Self = StObject.set(x, "errors", js.Array(value :_*))
+    inline def setErrorsVarargs(value: GraphQLError*): Self = StObject.set(x, "errors", js.Array(value :_*))
   }
 }

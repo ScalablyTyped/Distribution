@@ -28,20 +28,17 @@ object calendarMod {
     @JSImport("rmc-calendar/lib/Calendar", "default.DefaultHeader")
     @js.native
     def DefaultHeader: TypeofHeader = js.native
-    @scala.inline
-    def DefaultHeader_=(x: TypeofHeader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultHeader")(x.asInstanceOf[js.Any])
+    inline def DefaultHeader_=(x: TypeofHeader): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultHeader")(x.asInstanceOf[js.Any])
     
     @JSImport("rmc-calendar/lib/Calendar", "default.DefaultShortcut")
     @js.native
     def DefaultShortcut: Instantiable0[typings.rmcCalendar.shortcutPanelMod.default] = js.native
-    @scala.inline
-    def DefaultShortcut_=(x: Instantiable0[typings.rmcCalendar.shortcutPanelMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultShortcut")(x.asInstanceOf[js.Any])
+    inline def DefaultShortcut_=(x: Instantiable0[typings.rmcCalendar.shortcutPanelMod.default]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DefaultShortcut")(x.asInstanceOf[js.Any])
     
     @JSImport("rmc-calendar/lib/Calendar", "default.defaultProps")
     @js.native
     def defaultProps: PropsType = js.native
-    @scala.inline
-    def defaultProps_=(x: PropsType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PropsType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("rmc-calendar/lib/Calendar", "StateType")

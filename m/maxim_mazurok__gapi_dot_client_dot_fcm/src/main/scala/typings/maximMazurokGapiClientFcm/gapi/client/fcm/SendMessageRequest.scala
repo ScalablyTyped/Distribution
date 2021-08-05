@@ -14,25 +14,19 @@ trait SendMessageRequest extends StObject {
 }
 object SendMessageRequest {
   
-  @scala.inline
-  def apply(): SendMessageRequest = {
+  inline def apply(): SendMessageRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SendMessageRequest]
   }
   
-  @scala.inline
-  implicit class SendMessageRequestMutableBuilder[Self <: SendMessageRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SendMessageRequest](x: Self) {
     
-    @scala.inline
-    def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
+    inline def setMessageUndefined: Self = StObject.set(x, "message", js.undefined)
     
-    @scala.inline
-    def setValidateOnly(value: Boolean): Self = StObject.set(x, "validateOnly", value.asInstanceOf[js.Any])
+    inline def setValidateOnly(value: Boolean): Self = StObject.set(x, "validateOnly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidateOnlyUndefined: Self = StObject.set(x, "validateOnly", js.undefined)
+    inline def setValidateOnlyUndefined: Self = StObject.set(x, "validateOnly", js.undefined)
   }
 }

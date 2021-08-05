@@ -48,57 +48,41 @@ trait ServerRoute extends StObject {
 }
 object ServerRoute {
   
-  @scala.inline
-  def apply(method: HTTP_METHODS_PARTIAL | (js.Array[HTTP_METHODS_PARTIAL | String]) | String, path: String): ServerRoute = {
+  inline def apply(method: HTTP_METHODS_PARTIAL | (js.Array[HTTP_METHODS_PARTIAL | String]) | String, path: String): ServerRoute = {
     val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
     __obj.asInstanceOf[ServerRoute]
   }
   
-  @scala.inline
-  implicit class ServerRouteMutableBuilder[Self <: ServerRoute] (val x: Self) extends AnyVal {
+  extension [Self <: ServerRoute](x: Self) {
     
-    @scala.inline
-    def setHandler(value: Method | HandlerDecorations): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+    inline def setHandler(value: Method | HandlerDecorations): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandlerFunction3(
+    inline def setHandlerFunction3(
       value: (/* request */ Request, /* h */ ResponseToolkit, /* err */ js.UndefOr[Error]) => ReturnValue
     ): Self = StObject.set(x, "handler", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
+    inline def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
     
-    @scala.inline
-    def setMethod(value: HTTP_METHODS_PARTIAL | (js.Array[HTTP_METHODS_PARTIAL | String]) | String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: HTTP_METHODS_PARTIAL | (js.Array[HTTP_METHODS_PARTIAL | String]) | String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodVarargs(value: (HTTP_METHODS_PARTIAL | String)*): Self = StObject.set(x, "method", js.Array(value :_*))
+    inline def setMethodVarargs(value: (HTTP_METHODS_PARTIAL | String)*): Self = StObject.set(x, "method", js.Array(value :_*))
     
-    @scala.inline
-    def setOptions(value: RouteOptions | (js.Function1[/* server */ Server, RouteOptions])): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: RouteOptions | (js.Function1[/* server */ Server, RouteOptions])): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsFunction1(value: /* server */ Server => RouteOptions): Self = StObject.set(x, "options", js.Any.fromFunction1(value))
+    inline def setOptionsFunction1(value: /* server */ Server => RouteOptions): Self = StObject.set(x, "options", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRules(value: js.Object): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: js.Object): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
+    inline def setRulesUndefined: Self = StObject.set(x, "rules", js.undefined)
     
-    @scala.inline
-    def setVhost(value: String | js.Array[String]): Self = StObject.set(x, "vhost", value.asInstanceOf[js.Any])
+    inline def setVhost(value: String | js.Array[String]): Self = StObject.set(x, "vhost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVhostUndefined: Self = StObject.set(x, "vhost", js.undefined)
+    inline def setVhostUndefined: Self = StObject.set(x, "vhost", js.undefined)
     
-    @scala.inline
-    def setVhostVarargs(value: String*): Self = StObject.set(x, "vhost", js.Array(value :_*))
+    inline def setVhostVarargs(value: String*): Self = StObject.set(x, "vhost", js.Array(value :_*))
   }
 }

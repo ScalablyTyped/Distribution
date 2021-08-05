@@ -29,73 +29,51 @@ trait GridColumnFilterableCell extends StObject {
 }
 object GridColumnFilterableCell {
   
-  @scala.inline
-  def apply(): GridColumnFilterableCell = {
+  inline def apply(): GridColumnFilterableCell = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GridColumnFilterableCell]
   }
   
-  @scala.inline
-  implicit class GridColumnFilterableCellMutableBuilder[Self <: GridColumnFilterableCell] (val x: Self) extends AnyVal {
+  extension [Self <: GridColumnFilterableCell](x: Self) {
     
-    @scala.inline
-    def setDataSource(value: js.Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    inline def setDataSource(value: js.Any | DataSource): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
+    inline def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
     
-    @scala.inline
-    def setDataTextField(value: String): Self = StObject.set(x, "dataTextField", value.asInstanceOf[js.Any])
+    inline def setDataTextField(value: String): Self = StObject.set(x, "dataTextField", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataTextFieldUndefined: Self = StObject.set(x, "dataTextField", js.undefined)
+    inline def setDataTextFieldUndefined: Self = StObject.set(x, "dataTextField", js.undefined)
     
-    @scala.inline
-    def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
+    inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
+    inline def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
     
-    @scala.inline
-    def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+    inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+    inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
     
-    @scala.inline
-    def setInputWidth(value: Double): Self = StObject.set(x, "inputWidth", value.asInstanceOf[js.Any])
+    inline def setInputWidth(value: Double): Self = StObject.set(x, "inputWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputWidthUndefined: Self = StObject.set(x, "inputWidth", js.undefined)
+    inline def setInputWidthUndefined: Self = StObject.set(x, "inputWidth", js.undefined)
     
-    @scala.inline
-    def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
+    inline def setMinLength(value: Double): Self = StObject.set(x, "minLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
+    inline def setMinLengthUndefined: Self = StObject.set(x, "minLength", js.undefined)
     
-    @scala.inline
-    def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
+    inline def setOperatorUndefined: Self = StObject.set(x, "operator", js.undefined)
     
-    @scala.inline
-    def setShowOperators(value: Boolean): Self = StObject.set(x, "showOperators", value.asInstanceOf[js.Any])
+    inline def setShowOperators(value: Boolean): Self = StObject.set(x, "showOperators", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowOperatorsUndefined: Self = StObject.set(x, "showOperators", js.undefined)
+    inline def setShowOperatorsUndefined: Self = StObject.set(x, "showOperators", js.undefined)
     
-    @scala.inline
-    def setSuggestionOperator(value: String): Self = StObject.set(x, "suggestionOperator", value.asInstanceOf[js.Any])
+    inline def setSuggestionOperator(value: String): Self = StObject.set(x, "suggestionOperator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestionOperatorUndefined: Self = StObject.set(x, "suggestionOperator", js.undefined)
+    inline def setSuggestionOperatorUndefined: Self = StObject.set(x, "suggestionOperator", js.undefined)
     
-    @scala.inline
-    def setTemplate(value: js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    inline def setTemplate(value: js.Function): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
+    inline def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)
   }
 }

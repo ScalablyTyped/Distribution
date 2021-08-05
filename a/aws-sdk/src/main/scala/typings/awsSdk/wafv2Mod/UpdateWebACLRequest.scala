@@ -48,8 +48,7 @@ trait UpdateWebACLRequest extends StObject {
 }
 object UpdateWebACLRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DefaultAction: DefaultAction,
     Id: EntityId,
     LockToken: LockToken,
@@ -61,40 +60,28 @@ object UpdateWebACLRequest {
     __obj.asInstanceOf[UpdateWebACLRequest]
   }
   
-  @scala.inline
-  implicit class UpdateWebACLRequestMutableBuilder[Self <: UpdateWebACLRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateWebACLRequest](x: Self) {
     
-    @scala.inline
-    def setDefaultAction(value: DefaultAction): Self = StObject.set(x, "DefaultAction", value.asInstanceOf[js.Any])
+    inline def setDefaultAction(value: DefaultAction): Self = StObject.set(x, "DefaultAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: EntityDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: EntityDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setId(value: EntityId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: EntityId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLockToken(value: LockToken): Self = StObject.set(x, "LockToken", value.asInstanceOf[js.Any])
+    inline def setLockToken(value: LockToken): Self = StObject.set(x, "LockToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: EntityName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: EntityName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRules(value: Rules): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: Rules): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
+    inline def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
     
-    @scala.inline
-    def setRulesVarargs(value: Rule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: Rule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
     
-    @scala.inline
-    def setScope(value: Scope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: Scope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibilityConfig(value: VisibilityConfig): Self = StObject.set(x, "VisibilityConfig", value.asInstanceOf[js.Any])
+    inline def setVisibilityConfig(value: VisibilityConfig): Self = StObject.set(x, "VisibilityConfig", value.asInstanceOf[js.Any])
   }
 }

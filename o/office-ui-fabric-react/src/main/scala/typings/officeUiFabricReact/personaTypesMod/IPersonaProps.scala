@@ -46,63 +46,47 @@ trait IPersonaProps
 }
 object IPersonaProps {
   
-  @scala.inline
-  def apply(): IPersonaProps = {
+  inline def apply(): IPersonaProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IPersonaProps]
   }
   
-  @scala.inline
-  implicit class IPersonaPropsMutableBuilder[Self <: IPersonaProps] (val x: Self) extends AnyVal {
+  extension [Self <: IPersonaProps](x: Self) {
     
-    @scala.inline
-    def setComponentRef(value: IRefObject[IPersona]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+    inline def setComponentRef(value: IRefObject[IPersona]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentRefFunction1(value: /* ref */ IPersona | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+    inline def setComponentRefFunction1(value: /* ref */ IPersona | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+    inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
     
-    @scala.inline
-    def setOnRenderOptionalText(
+    inline def setOnRenderOptionalText(
       value: (/* props */ js.UndefOr[IPersonaProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPersonaProps], Element | Null]]) => Element | Null
     ): Self = StObject.set(x, "onRenderOptionalText", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnRenderOptionalTextUndefined: Self = StObject.set(x, "onRenderOptionalText", js.undefined)
+    inline def setOnRenderOptionalTextUndefined: Self = StObject.set(x, "onRenderOptionalText", js.undefined)
     
-    @scala.inline
-    def setOnRenderPrimaryText(
+    inline def setOnRenderPrimaryText(
       value: (/* props */ js.UndefOr[IPersonaProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPersonaProps], Element | Null]]) => Element | Null
     ): Self = StObject.set(x, "onRenderPrimaryText", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnRenderPrimaryTextUndefined: Self = StObject.set(x, "onRenderPrimaryText", js.undefined)
+    inline def setOnRenderPrimaryTextUndefined: Self = StObject.set(x, "onRenderPrimaryText", js.undefined)
     
-    @scala.inline
-    def setOnRenderSecondaryText(
+    inline def setOnRenderSecondaryText(
       value: (/* props */ js.UndefOr[IPersonaProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPersonaProps], Element | Null]]) => Element | Null
     ): Self = StObject.set(x, "onRenderSecondaryText", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnRenderSecondaryTextUndefined: Self = StObject.set(x, "onRenderSecondaryText", js.undefined)
+    inline def setOnRenderSecondaryTextUndefined: Self = StObject.set(x, "onRenderSecondaryText", js.undefined)
     
-    @scala.inline
-    def setOnRenderTertiaryText(
+    inline def setOnRenderTertiaryText(
       value: (/* props */ js.UndefOr[IPersonaProps], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[IPersonaProps], Element | Null]]) => Element | Null
     ): Self = StObject.set(x, "onRenderTertiaryText", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setOnRenderTertiaryTextUndefined: Self = StObject.set(x, "onRenderTertiaryText", js.undefined)
+    inline def setOnRenderTertiaryTextUndefined: Self = StObject.set(x, "onRenderTertiaryText", js.undefined)
     
-    @scala.inline
-    def setStyles(value: IStyleFunctionOrObject[IPersonaStyleProps, IPersonaStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    inline def setStyles(value: IStyleFunctionOrObject[IPersonaStyleProps, IPersonaStyles]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStylesFunction1(value: IPersonaStyleProps => DeepPartial[IPersonaStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
+    inline def setStylesFunction1(value: IPersonaStyleProps => DeepPartial[IPersonaStyles]): Self = StObject.set(x, "styles", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    inline def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
   }
 }

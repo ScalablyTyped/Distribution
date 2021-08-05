@@ -16,16 +16,13 @@ trait RandomAccessStreamReference extends StObject {
 }
 object RandomAccessStreamReference {
   
-  @scala.inline
-  def apply(openReadAsync: () => IPromiseWithIAsyncOperation[IRandomAccessStreamWithContentType]): RandomAccessStreamReference = {
+  inline def apply(openReadAsync: () => IPromiseWithIAsyncOperation[IRandomAccessStreamWithContentType]): RandomAccessStreamReference = {
     val __obj = js.Dynamic.literal(openReadAsync = js.Any.fromFunction0(openReadAsync))
     __obj.asInstanceOf[RandomAccessStreamReference]
   }
   
-  @scala.inline
-  implicit class RandomAccessStreamReferenceMutableBuilder[Self <: RandomAccessStreamReference] (val x: Self) extends AnyVal {
+  extension [Self <: RandomAccessStreamReference](x: Self) {
     
-    @scala.inline
-    def setOpenReadAsync(value: () => IPromiseWithIAsyncOperation[IRandomAccessStreamWithContentType]): Self = StObject.set(x, "openReadAsync", js.Any.fromFunction0(value))
+    inline def setOpenReadAsync(value: () => IPromiseWithIAsyncOperation[IRandomAccessStreamWithContentType]): Self = StObject.set(x, "openReadAsync", js.Any.fromFunction0(value))
   }
 }

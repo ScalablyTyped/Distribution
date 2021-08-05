@@ -26,25 +26,19 @@ trait SchemaSubscriptionDeferralInfo extends StObject {
 }
 object SchemaSubscriptionDeferralInfo {
   
-  @scala.inline
-  def apply(): SchemaSubscriptionDeferralInfo = {
+  inline def apply(): SchemaSubscriptionDeferralInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaSubscriptionDeferralInfo]
   }
   
-  @scala.inline
-  implicit class SchemaSubscriptionDeferralInfoMutableBuilder[Self <: SchemaSubscriptionDeferralInfo] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaSubscriptionDeferralInfo](x: Self) {
     
-    @scala.inline
-    def setDesiredExpiryTimeMillis(value: String): Self = StObject.set(x, "desiredExpiryTimeMillis", value.asInstanceOf[js.Any])
+    inline def setDesiredExpiryTimeMillis(value: String): Self = StObject.set(x, "desiredExpiryTimeMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDesiredExpiryTimeMillisUndefined: Self = StObject.set(x, "desiredExpiryTimeMillis", js.undefined)
+    inline def setDesiredExpiryTimeMillisUndefined: Self = StObject.set(x, "desiredExpiryTimeMillis", js.undefined)
     
-    @scala.inline
-    def setExpectedExpiryTimeMillis(value: String): Self = StObject.set(x, "expectedExpiryTimeMillis", value.asInstanceOf[js.Any])
+    inline def setExpectedExpiryTimeMillis(value: String): Self = StObject.set(x, "expectedExpiryTimeMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpectedExpiryTimeMillisUndefined: Self = StObject.set(x, "expectedExpiryTimeMillis", js.undefined)
+    inline def setExpectedExpiryTimeMillisUndefined: Self = StObject.set(x, "expectedExpiryTimeMillis", js.undefined)
   }
 }

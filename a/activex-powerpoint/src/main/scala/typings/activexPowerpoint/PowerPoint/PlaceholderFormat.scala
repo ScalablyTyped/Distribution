@@ -15,15 +15,14 @@ trait PlaceholderFormat extends StObject {
   
   val Parent: js.Any
   
-  @JSName("PowerPoint.PlaceholderFormat_typekey")
+  /* private */ @JSName("PowerPoint.PlaceholderFormat_typekey")
   var PowerPointDotPlaceholderFormat_typekey: PlaceholderFormat
   
   val Type: PpPlaceholderType
 }
 object PlaceholderFormat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Application: Application,
     ContainedType: MsoShapeType,
     Name: String,
@@ -36,25 +35,18 @@ object PlaceholderFormat {
     __obj.asInstanceOf[PlaceholderFormat]
   }
   
-  @scala.inline
-  implicit class PlaceholderFormatMutableBuilder[Self <: PlaceholderFormat] (val x: Self) extends AnyVal {
+  extension [Self <: PlaceholderFormat](x: Self) {
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContainedType(value: MsoShapeType): Self = StObject.set(x, "ContainedType", value.asInstanceOf[js.Any])
+    inline def setContainedType(value: MsoShapeType): Self = StObject.set(x, "ContainedType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPowerPointDotPlaceholderFormat_typekey(value: PlaceholderFormat): Self = StObject.set(x, "PowerPoint.PlaceholderFormat_typekey", value.asInstanceOf[js.Any])
+    inline def setPowerPointDotPlaceholderFormat_typekey(value: PlaceholderFormat): Self = StObject.set(x, "PowerPoint.PlaceholderFormat_typekey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: PpPlaceholderType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+    inline def setType(value: PpPlaceholderType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }
 }

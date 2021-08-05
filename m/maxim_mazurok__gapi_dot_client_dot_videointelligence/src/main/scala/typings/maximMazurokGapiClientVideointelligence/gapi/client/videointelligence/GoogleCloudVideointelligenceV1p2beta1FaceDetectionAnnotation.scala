@@ -11,19 +11,15 @@ trait GoogleCloudVideointelligenceV1p2beta1FaceDetectionAnnotation extends StObj
 }
 object GoogleCloudVideointelligenceV1p2beta1FaceDetectionAnnotation {
   
-  @scala.inline
-  def apply(): GoogleCloudVideointelligenceV1p2beta1FaceDetectionAnnotation = {
+  inline def apply(): GoogleCloudVideointelligenceV1p2beta1FaceDetectionAnnotation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1p2beta1FaceDetectionAnnotation]
   }
   
-  @scala.inline
-  implicit class GoogleCloudVideointelligenceV1p2beta1FaceDetectionAnnotationMutableBuilder[Self <: GoogleCloudVideointelligenceV1p2beta1FaceDetectionAnnotation] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudVideointelligenceV1p2beta1FaceDetectionAnnotation](x: Self) {
     
-    @scala.inline
-    def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
+    inline def setVersionUndefined: Self = StObject.set(x, "version", js.undefined)
   }
 }

@@ -12,25 +12,19 @@ trait AdminMessage extends StObject {
 }
 object AdminMessage {
   
-  @scala.inline
-  def apply(): AdminMessage = {
+  inline def apply(): AdminMessage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AdminMessage]
   }
   
-  @scala.inline
-  implicit class AdminMessageMutableBuilder[Self <: AdminMessage] (val x: Self) extends AnyVal {
+  extension [Self <: AdminMessage](x: Self) {
     
-    @scala.inline
-    def setBaseMessage(value: String): Self = StObject.set(x, "baseMessage", value.asInstanceOf[js.Any])
+    inline def setBaseMessage(value: String): Self = StObject.set(x, "baseMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaseMessageUndefined: Self = StObject.set(x, "baseMessage", js.undefined)
+    inline def setBaseMessageUndefined: Self = StObject.set(x, "baseMessage", js.undefined)
     
-    @scala.inline
-    def setMoreInformation(value: String): Self = StObject.set(x, "moreInformation", value.asInstanceOf[js.Any])
+    inline def setMoreInformation(value: String): Self = StObject.set(x, "moreInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMoreInformationUndefined: Self = StObject.set(x, "moreInformation", js.undefined)
+    inline def setMoreInformationUndefined: Self = StObject.set(x, "moreInformation", js.undefined)
   }
 }

@@ -20,25 +20,19 @@ trait AmiFromInstanceEphemeralBlockDevice extends StObject {
 }
 object AmiFromInstanceEphemeralBlockDevice {
   
-  @scala.inline
-  def apply(): AmiFromInstanceEphemeralBlockDevice = {
+  inline def apply(): AmiFromInstanceEphemeralBlockDevice = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AmiFromInstanceEphemeralBlockDevice]
   }
   
-  @scala.inline
-  implicit class AmiFromInstanceEphemeralBlockDeviceMutableBuilder[Self <: AmiFromInstanceEphemeralBlockDevice] (val x: Self) extends AnyVal {
+  extension [Self <: AmiFromInstanceEphemeralBlockDevice](x: Self) {
     
-    @scala.inline
-    def setDeviceName(value: Input[String]): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
+    inline def setDeviceName(value: Input[String]): Self = StObject.set(x, "deviceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
+    inline def setDeviceNameUndefined: Self = StObject.set(x, "deviceName", js.undefined)
     
-    @scala.inline
-    def setVirtualName(value: Input[String]): Self = StObject.set(x, "virtualName", value.asInstanceOf[js.Any])
+    inline def setVirtualName(value: Input[String]): Self = StObject.set(x, "virtualName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVirtualNameUndefined: Self = StObject.set(x, "virtualName", js.undefined)
+    inline def setVirtualNameUndefined: Self = StObject.set(x, "virtualName", js.undefined)
   }
 }

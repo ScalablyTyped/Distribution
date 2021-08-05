@@ -50,53 +50,38 @@ trait PostData extends StObject {
 }
 object PostData {
   
-  @scala.inline
-  def apply(`type`: rawData | file | blob): PostData = {
+  inline def apply(`type`: rawData | file | blob): PostData = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PostData]
   }
   
-  @scala.inline
-  implicit class PostDataMutableBuilder[Self <: PostData] (val x: Self) extends AnyVal {
+  extension [Self <: PostData](x: Self) {
     
-    @scala.inline
-    def setBlobUUID(value: String): Self = StObject.set(x, "blobUUID", value.asInstanceOf[js.Any])
+    inline def setBlobUUID(value: String): Self = StObject.set(x, "blobUUID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBlobUUIDUndefined: Self = StObject.set(x, "blobUUID", js.undefined)
+    inline def setBlobUUIDUndefined: Self = StObject.set(x, "blobUUID", js.undefined)
     
-    @scala.inline
-    def setBytes(value: String): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
+    inline def setBytes(value: String): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesUndefined: Self = StObject.set(x, "bytes", js.undefined)
+    inline def setBytesUndefined: Self = StObject.set(x, "bytes", js.undefined)
     
-    @scala.inline
-    def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
+    inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
+    inline def setFilePathUndefined: Self = StObject.set(x, "filePath", js.undefined)
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
+    inline def setLengthUndefined: Self = StObject.set(x, "length", js.undefined)
     
-    @scala.inline
-    def setModificationTime(value: Double): Self = StObject.set(x, "modificationTime", value.asInstanceOf[js.Any])
+    inline def setModificationTime(value: Double): Self = StObject.set(x, "modificationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModificationTimeUndefined: Self = StObject.set(x, "modificationTime", js.undefined)
+    inline def setModificationTimeUndefined: Self = StObject.set(x, "modificationTime", js.undefined)
     
-    @scala.inline
-    def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+    inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
+    inline def setOffsetUndefined: Self = StObject.set(x, "offset", js.undefined)
     
-    @scala.inline
-    def setType(value: rawData | file | blob): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: rawData | file | blob): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

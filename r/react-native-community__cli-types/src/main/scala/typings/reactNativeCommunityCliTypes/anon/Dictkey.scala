@@ -17,31 +17,23 @@ trait Dictkey
 }
 object Dictkey {
   
-  @scala.inline
-  def apply(): Dictkey = {
+  inline def apply(): Dictkey = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Dictkey]
   }
   
-  @scala.inline
-  implicit class DictkeyMutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
+  extension [Self <: Dictkey](x: Self) {
     
-    @scala.inline
-    def setAndroid(value: AndroidDependencyConfig): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
+    inline def setAndroid(value: AndroidDependencyConfig): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAndroidNull: Self = StObject.set(x, "android", null)
+    inline def setAndroidNull: Self = StObject.set(x, "android", null)
     
-    @scala.inline
-    def setAndroidUndefined: Self = StObject.set(x, "android", js.undefined)
+    inline def setAndroidUndefined: Self = StObject.set(x, "android", js.undefined)
     
-    @scala.inline
-    def setIos(value: IOSDependencyConfig): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
+    inline def setIos(value: IOSDependencyConfig): Self = StObject.set(x, "ios", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIosNull: Self = StObject.set(x, "ios", null)
+    inline def setIosNull: Self = StObject.set(x, "ios", null)
     
-    @scala.inline
-    def setIosUndefined: Self = StObject.set(x, "ios", js.undefined)
+    inline def setIosUndefined: Self = StObject.set(x, "ios", js.undefined)
   }
 }

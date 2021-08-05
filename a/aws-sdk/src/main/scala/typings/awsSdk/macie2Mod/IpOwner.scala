@@ -29,37 +29,27 @@ trait IpOwner extends StObject {
 }
 object IpOwner {
   
-  @scala.inline
-  def apply(): IpOwner = {
+  inline def apply(): IpOwner = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IpOwner]
   }
   
-  @scala.inline
-  implicit class IpOwnerMutableBuilder[Self <: IpOwner] (val x: Self) extends AnyVal {
+  extension [Self <: IpOwner](x: Self) {
     
-    @scala.inline
-    def setAsn(value: string): Self = StObject.set(x, "asn", value.asInstanceOf[js.Any])
+    inline def setAsn(value: string): Self = StObject.set(x, "asn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsnOrg(value: string): Self = StObject.set(x, "asnOrg", value.asInstanceOf[js.Any])
+    inline def setAsnOrg(value: string): Self = StObject.set(x, "asnOrg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsnOrgUndefined: Self = StObject.set(x, "asnOrg", js.undefined)
+    inline def setAsnOrgUndefined: Self = StObject.set(x, "asnOrg", js.undefined)
     
-    @scala.inline
-    def setAsnUndefined: Self = StObject.set(x, "asn", js.undefined)
+    inline def setAsnUndefined: Self = StObject.set(x, "asn", js.undefined)
     
-    @scala.inline
-    def setIsp(value: string): Self = StObject.set(x, "isp", value.asInstanceOf[js.Any])
+    inline def setIsp(value: string): Self = StObject.set(x, "isp", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIspUndefined: Self = StObject.set(x, "isp", js.undefined)
+    inline def setIspUndefined: Self = StObject.set(x, "isp", js.undefined)
     
-    @scala.inline
-    def setOrg_(value: string): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
+    inline def setOrg_(value: string): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrg_Undefined: Self = StObject.set(x, "org", js.undefined)
+    inline def setOrg_Undefined: Self = StObject.set(x, "org", js.undefined)
   }
 }

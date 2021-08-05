@@ -26,8 +26,7 @@ trait Position extends StObject {
 }
 object Position {
   
-  @scala.inline
-  def apply(character: Double, line: Double): Position = {
+  inline def apply(character: Double, line: Double): Position = {
     val __obj = js.Dynamic.literal(character = character.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any])
     __obj.asInstanceOf[Position]
   }
@@ -41,22 +40,17 @@ object Position {
     * @param line The position's line.
     * @param character The position's character.
     */
-  @scala.inline
-  def create(line: Double, character: Double): Position = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(line.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Position]
+  inline def create(line: Double, character: Double): Position = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(line.asInstanceOf[js.Any], character.asInstanceOf[js.Any])).asInstanceOf[Position]
   
   /**
     * Checks whether the given liternal conforms to the [Position](#Position) interface.
     */
-  @scala.inline
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Position */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Position */ Boolean]
+  inline def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Position */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Position */ Boolean]
   
-  @scala.inline
-  implicit class PositionMutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
+  extension [Self <: Position](x: Self) {
     
-    @scala.inline
-    def setCharacter(value: Double): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
+    inline def setCharacter(value: Double): Self = StObject.set(x, "character", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+    inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
   }
 }

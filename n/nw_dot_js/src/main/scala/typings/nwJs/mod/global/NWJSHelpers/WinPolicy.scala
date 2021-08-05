@@ -43,8 +43,7 @@ trait WinPolicy extends StObject {
 }
 object WinPolicy {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     forceCurrent: () => Unit,
     forceDownload: () => Unit,
     forceNewPopup: () => Unit,
@@ -56,25 +55,18 @@ object WinPolicy {
     __obj.asInstanceOf[WinPolicy]
   }
   
-  @scala.inline
-  implicit class WinPolicyMutableBuilder[Self <: WinPolicy] (val x: Self) extends AnyVal {
+  extension [Self <: WinPolicy](x: Self) {
     
-    @scala.inline
-    def setForceCurrent(value: () => Unit): Self = StObject.set(x, "forceCurrent", js.Any.fromFunction0(value))
+    inline def setForceCurrent(value: () => Unit): Self = StObject.set(x, "forceCurrent", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setForceDownload(value: () => Unit): Self = StObject.set(x, "forceDownload", js.Any.fromFunction0(value))
+    inline def setForceDownload(value: () => Unit): Self = StObject.set(x, "forceDownload", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setForceNewPopup(value: () => Unit): Self = StObject.set(x, "forceNewPopup", js.Any.fromFunction0(value))
+    inline def setForceNewPopup(value: () => Unit): Self = StObject.set(x, "forceNewPopup", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setForceNewWindow(value: () => Unit): Self = StObject.set(x, "forceNewWindow", js.Any.fromFunction0(value))
+    inline def setForceNewWindow(value: () => Unit): Self = StObject.set(x, "forceNewWindow", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIgnore(value: () => Unit): Self = StObject.set(x, "ignore", js.Any.fromFunction0(value))
+    inline def setIgnore(value: () => Unit): Self = StObject.set(x, "ignore", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetNewWindowManifest(value: WindowOption => Unit): Self = StObject.set(x, "setNewWindowManifest", js.Any.fromFunction1(value))
+    inline def setSetNewWindowManifest(value: WindowOption => Unit): Self = StObject.set(x, "setNewWindowManifest", js.Any.fromFunction1(value))
   }
 }

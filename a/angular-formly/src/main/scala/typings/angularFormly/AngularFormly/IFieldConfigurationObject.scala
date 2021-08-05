@@ -24,19 +24,15 @@ trait IFieldConfigurationObject
 }
 object IFieldConfigurationObject {
   
-  @scala.inline
-  def apply(value: js.UndefOr[js.Function0[js.Any]] & (js.UndefOr[js.Function1[/* val */ js.Any, Unit]])): IFieldConfigurationObject = {
+  inline def apply(value: js.UndefOr[js.Function0[js.Any]] & (js.UndefOr[js.Function1[/* val */ js.Any, Unit]])): IFieldConfigurationObject = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFieldConfigurationObject]
   }
   
-  @scala.inline
-  implicit class IFieldConfigurationObjectMutableBuilder[Self <: IFieldConfigurationObject] (val x: Self) extends AnyVal {
+  extension [Self <: IFieldConfigurationObject](x: Self) {
     
-    @scala.inline
-    def setModel(value: String | StringDictionary[js.Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: String | StringDictionary[js.Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
   }
 }

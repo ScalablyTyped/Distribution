@@ -16,25 +16,19 @@ trait Mimetype extends StObject {
 }
 object Mimetype {
   
-  @scala.inline
-  def apply(mime_type: String, name: String, size: Double, url: String): Mimetype = {
+  inline def apply(mime_type: String, name: String, size: Double, url: String): Mimetype = {
     val __obj = js.Dynamic.literal(mime_type = mime_type.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mimetype]
   }
   
-  @scala.inline
-  implicit class MimetypeMutableBuilder[Self <: Mimetype] (val x: Self) extends AnyVal {
+  extension [Self <: Mimetype](x: Self) {
     
-    @scala.inline
-    def setMime_type(value: String): Self = StObject.set(x, "mime_type", value.asInstanceOf[js.Any])
+    inline def setMime_type(value: String): Self = StObject.set(x, "mime_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

@@ -40,8 +40,7 @@ trait ActionSheetIOSStatic extends StObject {
 }
 object ActionSheetIOSStatic {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     showActionSheetWithOptions: (ActionSheetIOSOptions, js.Function1[/* buttonIndex */ Double, Unit]) => Unit,
     showShareActionSheetWithOptions: (ShareActionSheetIOSOptions, js.Function1[/* error */ Error, Unit], js.Function2[/* success */ Boolean, /* method */ String, Unit]) => Unit
   ): ActionSheetIOSStatic = {
@@ -49,14 +48,11 @@ object ActionSheetIOSStatic {
     __obj.asInstanceOf[ActionSheetIOSStatic]
   }
   
-  @scala.inline
-  implicit class ActionSheetIOSStaticMutableBuilder[Self <: ActionSheetIOSStatic] (val x: Self) extends AnyVal {
+  extension [Self <: ActionSheetIOSStatic](x: Self) {
     
-    @scala.inline
-    def setShowActionSheetWithOptions(value: (ActionSheetIOSOptions, js.Function1[/* buttonIndex */ Double, Unit]) => Unit): Self = StObject.set(x, "showActionSheetWithOptions", js.Any.fromFunction2(value))
+    inline def setShowActionSheetWithOptions(value: (ActionSheetIOSOptions, js.Function1[/* buttonIndex */ Double, Unit]) => Unit): Self = StObject.set(x, "showActionSheetWithOptions", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setShowShareActionSheetWithOptions(
+    inline def setShowShareActionSheetWithOptions(
       value: (ShareActionSheetIOSOptions, js.Function1[/* error */ Error, Unit], js.Function2[/* success */ Boolean, /* method */ String, Unit]) => Unit
     ): Self = StObject.set(x, "showShareActionSheetWithOptions", js.Any.fromFunction3(value))
   }

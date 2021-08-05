@@ -16,8 +16,7 @@ trait DirectInboxFeedResponseLink extends StObject {
 }
 object DirectInboxFeedResponseLink {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     client_context: String,
     link_context: DirectInboxFeedResponseLinkContext,
     mutation_token: String,
@@ -27,19 +26,14 @@ object DirectInboxFeedResponseLink {
     __obj.asInstanceOf[DirectInboxFeedResponseLink]
   }
   
-  @scala.inline
-  implicit class DirectInboxFeedResponseLinkMutableBuilder[Self <: DirectInboxFeedResponseLink] (val x: Self) extends AnyVal {
+  extension [Self <: DirectInboxFeedResponseLink](x: Self) {
     
-    @scala.inline
-    def setClient_context(value: String): Self = StObject.set(x, "client_context", value.asInstanceOf[js.Any])
+    inline def setClient_context(value: String): Self = StObject.set(x, "client_context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLink_context(value: DirectInboxFeedResponseLinkContext): Self = StObject.set(x, "link_context", value.asInstanceOf[js.Any])
+    inline def setLink_context(value: DirectInboxFeedResponseLinkContext): Self = StObject.set(x, "link_context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMutation_token(value: String): Self = StObject.set(x, "mutation_token", value.asInstanceOf[js.Any])
+    inline def setMutation_token(value: String): Self = StObject.set(x, "mutation_token", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

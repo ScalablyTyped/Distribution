@@ -10,7 +10,7 @@ trait HTMLBaseFontElement extends StObject {
   def FireEvent(bstrEventName: String): Boolean = js.native
   def FireEvent(bstrEventName: String, pvarEventObject: js.Any): Boolean = js.native
   
-  @JSName("MSHTML.HTMLBaseFontElement_typekey")
+  /* private */ @JSName("MSHTML.HTMLBaseFontElement_typekey")
   var MSHTMLDotHTMLBaseFontElement_typekey: HTMLBaseFontElement = js.native
   
   var accessKey: String = js.native

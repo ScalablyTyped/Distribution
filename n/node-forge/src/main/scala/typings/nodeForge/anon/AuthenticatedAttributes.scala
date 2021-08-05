@@ -17,8 +17,7 @@ trait AuthenticatedAttributes extends StObject {
 }
 object AuthenticatedAttributes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authenticatedAttributes: js.Array[Type],
     certificate: Certificate | String,
     digestAlgorithm: String,
@@ -28,22 +27,16 @@ object AuthenticatedAttributes {
     __obj.asInstanceOf[AuthenticatedAttributes]
   }
   
-  @scala.inline
-  implicit class AuthenticatedAttributesMutableBuilder[Self <: AuthenticatedAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: AuthenticatedAttributes](x: Self) {
     
-    @scala.inline
-    def setAuthenticatedAttributes(value: js.Array[Type]): Self = StObject.set(x, "authenticatedAttributes", value.asInstanceOf[js.Any])
+    inline def setAuthenticatedAttributes(value: js.Array[Type]): Self = StObject.set(x, "authenticatedAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthenticatedAttributesVarargs(value: Type*): Self = StObject.set(x, "authenticatedAttributes", js.Array(value :_*))
+    inline def setAuthenticatedAttributesVarargs(value: Type*): Self = StObject.set(x, "authenticatedAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setCertificate(value: Certificate | String): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
+    inline def setCertificate(value: Certificate | String): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDigestAlgorithm(value: String): Self = StObject.set(x, "digestAlgorithm", value.asInstanceOf[js.Any])
+    inline def setDigestAlgorithm(value: String): Self = StObject.set(x, "digestAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

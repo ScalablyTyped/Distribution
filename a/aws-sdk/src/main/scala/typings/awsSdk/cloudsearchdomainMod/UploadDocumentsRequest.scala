@@ -18,19 +18,15 @@ trait UploadDocumentsRequest extends StObject {
 }
 object UploadDocumentsRequest {
   
-  @scala.inline
-  def apply(contentType: ContentType, documents: _Blob): UploadDocumentsRequest = {
+  inline def apply(contentType: ContentType, documents: _Blob): UploadDocumentsRequest = {
     val __obj = js.Dynamic.literal(contentType = contentType.asInstanceOf[js.Any], documents = documents.asInstanceOf[js.Any])
     __obj.asInstanceOf[UploadDocumentsRequest]
   }
   
-  @scala.inline
-  implicit class UploadDocumentsRequestMutableBuilder[Self <: UploadDocumentsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: UploadDocumentsRequest](x: Self) {
     
-    @scala.inline
-    def setContentType(value: ContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: ContentType): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDocuments(value: _Blob): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
+    inline def setDocuments(value: _Blob): Self = StObject.set(x, "documents", value.asInstanceOf[js.Any])
   }
 }

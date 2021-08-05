@@ -18,16 +18,13 @@ trait ASPxClientHtmlEditorTabCancelEventArgs
 }
 object ASPxClientHtmlEditorTabCancelEventArgs {
   
-  @scala.inline
-  def apply(cancel: Boolean, name: String): ASPxClientHtmlEditorTabCancelEventArgs = {
+  inline def apply(cancel: Boolean, name: String): ASPxClientHtmlEditorTabCancelEventArgs = {
     val __obj = js.Dynamic.literal(cancel = cancel.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientHtmlEditorTabCancelEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientHtmlEditorTabCancelEventArgsMutableBuilder[Self <: ASPxClientHtmlEditorTabCancelEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientHtmlEditorTabCancelEventArgs](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
   }
 }

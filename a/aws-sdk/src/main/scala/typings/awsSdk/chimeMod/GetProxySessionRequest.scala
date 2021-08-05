@@ -18,19 +18,15 @@ trait GetProxySessionRequest extends StObject {
 }
 object GetProxySessionRequest {
   
-  @scala.inline
-  def apply(ProxySessionId: NonEmptyString128, VoiceConnectorId: NonEmptyString128): GetProxySessionRequest = {
+  inline def apply(ProxySessionId: NonEmptyString128, VoiceConnectorId: NonEmptyString128): GetProxySessionRequest = {
     val __obj = js.Dynamic.literal(ProxySessionId = ProxySessionId.asInstanceOf[js.Any], VoiceConnectorId = VoiceConnectorId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetProxySessionRequest]
   }
   
-  @scala.inline
-  implicit class GetProxySessionRequestMutableBuilder[Self <: GetProxySessionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetProxySessionRequest](x: Self) {
     
-    @scala.inline
-    def setProxySessionId(value: NonEmptyString128): Self = StObject.set(x, "ProxySessionId", value.asInstanceOf[js.Any])
+    inline def setProxySessionId(value: NonEmptyString128): Self = StObject.set(x, "ProxySessionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVoiceConnectorId(value: NonEmptyString128): Self = StObject.set(x, "VoiceConnectorId", value.asInstanceOf[js.Any])
+    inline def setVoiceConnectorId(value: NonEmptyString128): Self = StObject.set(x, "VoiceConnectorId", value.asInstanceOf[js.Any])
   }
 }

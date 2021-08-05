@@ -12,19 +12,15 @@ trait TopbarTheme extends StObject {
 }
 object TopbarTheme {
   
-  @scala.inline
-  def apply(background: BackgroundProps, color: String): TopbarTheme = {
+  inline def apply(background: BackgroundProps, color: String): TopbarTheme = {
     val __obj = js.Dynamic.literal(background = background.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any])
     __obj.asInstanceOf[TopbarTheme]
   }
   
-  @scala.inline
-  implicit class TopbarThemeMutableBuilder[Self <: TopbarTheme] (val x: Self) extends AnyVal {
+  extension [Self <: TopbarTheme](x: Self) {
     
-    @scala.inline
-    def setBackground(value: BackgroundProps): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: BackgroundProps): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
   }
 }

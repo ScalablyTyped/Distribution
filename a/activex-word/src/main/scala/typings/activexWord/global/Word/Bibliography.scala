@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Word.Bibliography")
 @js.native
-class Bibliography protected ()
+/* private */ class Bibliography ()
   extends StObject
      with typings.activexWord.Word.Bibliography {
   
@@ -28,7 +28,7 @@ class Bibliography protected ()
   /* CompleteClass */
   override val Sources: typings.activexWord.Word.Sources = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Word.Bibliography_typekey")
   var WordDotBibliography_typekey: typings.activexWord.Word.Bibliography = js.native
 }

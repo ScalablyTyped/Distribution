@@ -23,25 +23,19 @@ trait SchemaGoogleCloudDialogflowV2IntentMessageLinkOutSuggestion extends StObje
 }
 object SchemaGoogleCloudDialogflowV2IntentMessageLinkOutSuggestion {
   
-  @scala.inline
-  def apply(): SchemaGoogleCloudDialogflowV2IntentMessageLinkOutSuggestion = {
+  inline def apply(): SchemaGoogleCloudDialogflowV2IntentMessageLinkOutSuggestion = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGoogleCloudDialogflowV2IntentMessageLinkOutSuggestion]
   }
   
-  @scala.inline
-  implicit class SchemaGoogleCloudDialogflowV2IntentMessageLinkOutSuggestionMutableBuilder[Self <: SchemaGoogleCloudDialogflowV2IntentMessageLinkOutSuggestion] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGoogleCloudDialogflowV2IntentMessageLinkOutSuggestion](x: Self) {
     
-    @scala.inline
-    def setDestinationName(value: String): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
+    inline def setDestinationName(value: String): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDestinationNameUndefined: Self = StObject.set(x, "destinationName", js.undefined)
+    inline def setDestinationNameUndefined: Self = StObject.set(x, "destinationName", js.undefined)
     
-    @scala.inline
-    def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
+    inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
+    inline def setUriUndefined: Self = StObject.set(x, "uri", js.undefined)
   }
 }

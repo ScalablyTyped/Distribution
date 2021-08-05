@@ -30,8 +30,7 @@ trait WorkItemTypeFieldInstance
 }
 object WorkItemTypeFieldInstance {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     allowedValues: js.Array[String],
     alwaysRequired: Boolean,
     dependentFields: js.Array[WorkItemFieldReference],
@@ -44,25 +43,18 @@ object WorkItemTypeFieldInstance {
     __obj.asInstanceOf[WorkItemTypeFieldInstance]
   }
   
-  @scala.inline
-  implicit class WorkItemTypeFieldInstanceMutableBuilder[Self <: WorkItemTypeFieldInstance] (val x: Self) extends AnyVal {
+  extension [Self <: WorkItemTypeFieldInstance](x: Self) {
     
-    @scala.inline
-    def setAllowedValues(value: js.Array[String]): Self = StObject.set(x, "allowedValues", value.asInstanceOf[js.Any])
+    inline def setAllowedValues(value: js.Array[String]): Self = StObject.set(x, "allowedValues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowedValuesVarargs(value: String*): Self = StObject.set(x, "allowedValues", js.Array(value :_*))
+    inline def setAllowedValuesVarargs(value: String*): Self = StObject.set(x, "allowedValues", js.Array(value :_*))
     
-    @scala.inline
-    def setAlwaysRequired(value: Boolean): Self = StObject.set(x, "alwaysRequired", value.asInstanceOf[js.Any])
+    inline def setAlwaysRequired(value: Boolean): Self = StObject.set(x, "alwaysRequired", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDependentFields(value: js.Array[WorkItemFieldReference]): Self = StObject.set(x, "dependentFields", value.asInstanceOf[js.Any])
+    inline def setDependentFields(value: js.Array[WorkItemFieldReference]): Self = StObject.set(x, "dependentFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDependentFieldsVarargs(value: WorkItemFieldReference*): Self = StObject.set(x, "dependentFields", js.Array(value :_*))
+    inline def setDependentFieldsVarargs(value: WorkItemFieldReference*): Self = StObject.set(x, "dependentFields", js.Array(value :_*))
     
-    @scala.inline
-    def setHelpText(value: String): Self = StObject.set(x, "helpText", value.asInstanceOf[js.Any])
+    inline def setHelpText(value: String): Self = StObject.set(x, "helpText", value.asInstanceOf[js.Any])
   }
 }

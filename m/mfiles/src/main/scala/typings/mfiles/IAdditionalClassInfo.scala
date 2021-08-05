@@ -17,8 +17,7 @@ trait IAdditionalClassInfo extends StObject {
 }
 object IAdditionalClassInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AssignmentClassInfo: IAssignmentClassInfo,
     Clear: () => Unit,
     Clone: () => IAdditionalClassInfo,
@@ -28,19 +27,14 @@ object IAdditionalClassInfo {
     __obj.asInstanceOf[IAdditionalClassInfo]
   }
   
-  @scala.inline
-  implicit class IAdditionalClassInfoMutableBuilder[Self <: IAdditionalClassInfo] (val x: Self) extends AnyVal {
+  extension [Self <: IAdditionalClassInfo](x: Self) {
     
-    @scala.inline
-    def setAssignmentClassInfo(value: IAssignmentClassInfo): Self = StObject.set(x, "AssignmentClassInfo", value.asInstanceOf[js.Any])
+    inline def setAssignmentClassInfo(value: IAssignmentClassInfo): Self = StObject.set(x, "AssignmentClassInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
+    inline def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setClone(value: () => IAdditionalClassInfo): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IAdditionalClassInfo): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInfoType(value: MFAdditionalClassInfoType): Self = StObject.set(x, "InfoType", value.asInstanceOf[js.Any])
+    inline def setInfoType(value: MFAdditionalClassInfoType): Self = StObject.set(x, "InfoType", value.asInstanceOf[js.Any])
   }
 }

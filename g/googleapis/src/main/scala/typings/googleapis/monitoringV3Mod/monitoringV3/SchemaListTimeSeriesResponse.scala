@@ -29,37 +29,27 @@ trait SchemaListTimeSeriesResponse extends StObject {
 }
 object SchemaListTimeSeriesResponse {
   
-  @scala.inline
-  def apply(): SchemaListTimeSeriesResponse = {
+  inline def apply(): SchemaListTimeSeriesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListTimeSeriesResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListTimeSeriesResponseMutableBuilder[Self <: SchemaListTimeSeriesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListTimeSeriesResponse](x: Self) {
     
-    @scala.inline
-    def setExecutionErrors(value: js.Array[SchemaStatus]): Self = StObject.set(x, "executionErrors", value.asInstanceOf[js.Any])
+    inline def setExecutionErrors(value: js.Array[SchemaStatus]): Self = StObject.set(x, "executionErrors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionErrorsUndefined: Self = StObject.set(x, "executionErrors", js.undefined)
+    inline def setExecutionErrorsUndefined: Self = StObject.set(x, "executionErrors", js.undefined)
     
-    @scala.inline
-    def setExecutionErrorsVarargs(value: SchemaStatus*): Self = StObject.set(x, "executionErrors", js.Array(value :_*))
+    inline def setExecutionErrorsVarargs(value: SchemaStatus*): Self = StObject.set(x, "executionErrors", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
     
-    @scala.inline
-    def setTimeSeries(value: js.Array[SchemaTimeSeries]): Self = StObject.set(x, "timeSeries", value.asInstanceOf[js.Any])
+    inline def setTimeSeries(value: js.Array[SchemaTimeSeries]): Self = StObject.set(x, "timeSeries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeSeriesUndefined: Self = StObject.set(x, "timeSeries", js.undefined)
+    inline def setTimeSeriesUndefined: Self = StObject.set(x, "timeSeries", js.undefined)
     
-    @scala.inline
-    def setTimeSeriesVarargs(value: SchemaTimeSeries*): Self = StObject.set(x, "timeSeries", js.Array(value :_*))
+    inline def setTimeSeriesVarargs(value: SchemaTimeSeries*): Self = StObject.set(x, "timeSeries", js.Array(value :_*))
   }
 }

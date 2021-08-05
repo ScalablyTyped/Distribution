@@ -17,8 +17,7 @@ trait Breadcrumb extends StObject {
 }
 object Breadcrumb {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     breadcrumb: StringDictionary[MenuDataItem],
     breadcrumbMap: Map[String, typings.umijsRouteUtils.typesMod.MenuDataItem],
     menuData: js.Array[typings.umijsRouteUtils.typesMod.MenuDataItem]
@@ -27,19 +26,14 @@ object Breadcrumb {
     __obj.asInstanceOf[Breadcrumb]
   }
   
-  @scala.inline
-  implicit class BreadcrumbMutableBuilder[Self <: Breadcrumb] (val x: Self) extends AnyVal {
+  extension [Self <: Breadcrumb](x: Self) {
     
-    @scala.inline
-    def setBreadcrumb(value: StringDictionary[MenuDataItem]): Self = StObject.set(x, "breadcrumb", value.asInstanceOf[js.Any])
+    inline def setBreadcrumb(value: StringDictionary[MenuDataItem]): Self = StObject.set(x, "breadcrumb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBreadcrumbMap(value: Map[String, typings.umijsRouteUtils.typesMod.MenuDataItem]): Self = StObject.set(x, "breadcrumbMap", value.asInstanceOf[js.Any])
+    inline def setBreadcrumbMap(value: Map[String, typings.umijsRouteUtils.typesMod.MenuDataItem]): Self = StObject.set(x, "breadcrumbMap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuData(value: js.Array[typings.umijsRouteUtils.typesMod.MenuDataItem]): Self = StObject.set(x, "menuData", value.asInstanceOf[js.Any])
+    inline def setMenuData(value: js.Array[typings.umijsRouteUtils.typesMod.MenuDataItem]): Self = StObject.set(x, "menuData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMenuDataVarargs(value: typings.umijsRouteUtils.typesMod.MenuDataItem*): Self = StObject.set(x, "menuData", js.Array(value :_*))
+    inline def setMenuDataVarargs(value: typings.umijsRouteUtils.typesMod.MenuDataItem*): Self = StObject.set(x, "menuData", js.Array(value :_*))
   }
 }

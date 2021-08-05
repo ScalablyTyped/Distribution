@@ -15,16 +15,13 @@ trait CloseFileRequestedEventOptions
 }
 object CloseFileRequestedEventOptions {
   
-  @scala.inline
-  def apply(fileSystemId: String, openRequestId: integer, requestId: integer): CloseFileRequestedEventOptions = {
+  inline def apply(fileSystemId: String, openRequestId: integer, requestId: integer): CloseFileRequestedEventOptions = {
     val __obj = js.Dynamic.literal(fileSystemId = fileSystemId.asInstanceOf[js.Any], openRequestId = openRequestId.asInstanceOf[js.Any], requestId = requestId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CloseFileRequestedEventOptions]
   }
   
-  @scala.inline
-  implicit class CloseFileRequestedEventOptionsMutableBuilder[Self <: CloseFileRequestedEventOptions] (val x: Self) extends AnyVal {
+  extension [Self <: CloseFileRequestedEventOptions](x: Self) {
     
-    @scala.inline
-    def setOpenRequestId(value: integer): Self = StObject.set(x, "openRequestId", value.asInstanceOf[js.Any])
+    inline def setOpenRequestId(value: integer): Self = StObject.set(x, "openRequestId", value.asInstanceOf[js.Any])
   }
 }

@@ -13,22 +13,17 @@ trait GetEntitiesResponse extends StObject {
 }
 object GetEntitiesResponse {
   
-  @scala.inline
-  def apply(): GetEntitiesResponse = {
+  inline def apply(): GetEntitiesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetEntitiesResponse]
   }
   
-  @scala.inline
-  implicit class GetEntitiesResponseMutableBuilder[Self <: GetEntitiesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetEntitiesResponse](x: Self) {
     
-    @scala.inline
-    def setDescriptions(value: EntityDescriptions): Self = StObject.set(x, "descriptions", value.asInstanceOf[js.Any])
+    inline def setDescriptions(value: EntityDescriptions): Self = StObject.set(x, "descriptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionsUndefined: Self = StObject.set(x, "descriptions", js.undefined)
+    inline def setDescriptionsUndefined: Self = StObject.set(x, "descriptions", js.undefined)
     
-    @scala.inline
-    def setDescriptionsVarargs(value: EntityDescription*): Self = StObject.set(x, "descriptions", js.Array(value :_*))
+    inline def setDescriptionsVarargs(value: EntityDescription*): Self = StObject.set(x, "descriptions", js.Array(value :_*))
   }
 }

@@ -49,8 +49,7 @@ trait LocalStreamStats extends StObject {
 }
 object LocalStreamStats {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accessDelay: String,
     audioSendBytes: String,
     audioSendPackets: String,
@@ -64,43 +63,30 @@ object LocalStreamStats {
     __obj.asInstanceOf[LocalStreamStats]
   }
   
-  @scala.inline
-  implicit class LocalStreamStatsMutableBuilder[Self <: LocalStreamStats] (val x: Self) extends AnyVal {
+  extension [Self <: LocalStreamStats](x: Self) {
     
-    @scala.inline
-    def setAccessDelay(value: String): Self = StObject.set(x, "accessDelay", value.asInstanceOf[js.Any])
+    inline def setAccessDelay(value: String): Self = StObject.set(x, "accessDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioSendBytes(value: String): Self = StObject.set(x, "audioSendBytes", value.asInstanceOf[js.Any])
+    inline def setAudioSendBytes(value: String): Self = StObject.set(x, "audioSendBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioSendPackets(value: String): Self = StObject.set(x, "audioSendPackets", value.asInstanceOf[js.Any])
+    inline def setAudioSendPackets(value: String): Self = StObject.set(x, "audioSendPackets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAudioSendPacketsLost(value: String): Self = StObject.set(x, "audioSendPacketsLost", value.asInstanceOf[js.Any])
+    inline def setAudioSendPacketsLost(value: String): Self = StObject.set(x, "audioSendPacketsLost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoSendBytes(value: String): Self = StObject.set(x, "videoSendBytes", value.asInstanceOf[js.Any])
+    inline def setVideoSendBytes(value: String): Self = StObject.set(x, "videoSendBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoSendFrameRate(value: String): Self = StObject.set(x, "videoSendFrameRate", value.asInstanceOf[js.Any])
+    inline def setVideoSendFrameRate(value: String): Self = StObject.set(x, "videoSendFrameRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoSendPackets(value: String): Self = StObject.set(x, "videoSendPackets", value.asInstanceOf[js.Any])
+    inline def setVideoSendPackets(value: String): Self = StObject.set(x, "videoSendPackets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoSendPacketsLost(value: String): Self = StObject.set(x, "videoSendPacketsLost", value.asInstanceOf[js.Any])
+    inline def setVideoSendPacketsLost(value: String): Self = StObject.set(x, "videoSendPacketsLost", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoSendResolutionHeight(value: String): Self = StObject.set(x, "videoSendResolutionHeight", value.asInstanceOf[js.Any])
+    inline def setVideoSendResolutionHeight(value: String): Self = StObject.set(x, "videoSendResolutionHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoSendResolutionHeightUndefined: Self = StObject.set(x, "videoSendResolutionHeight", js.undefined)
+    inline def setVideoSendResolutionHeightUndefined: Self = StObject.set(x, "videoSendResolutionHeight", js.undefined)
     
-    @scala.inline
-    def setVideoSendResolutionWidth(value: String): Self = StObject.set(x, "videoSendResolutionWidth", value.asInstanceOf[js.Any])
+    inline def setVideoSendResolutionWidth(value: String): Self = StObject.set(x, "videoSendResolutionWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoSendResolutionWidthUndefined: Self = StObject.set(x, "videoSendResolutionWidth", js.undefined)
+    inline def setVideoSendResolutionWidthUndefined: Self = StObject.set(x, "videoSendResolutionWidth", js.undefined)
   }
 }

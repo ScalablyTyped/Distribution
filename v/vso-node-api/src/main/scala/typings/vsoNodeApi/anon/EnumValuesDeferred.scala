@@ -10,16 +10,13 @@ trait EnumValuesDeferred extends StObject {
 }
 object EnumValuesDeferred {
   
-  @scala.inline
-  def apply(enumValues: Deferred): EnumValuesDeferred = {
+  inline def apply(enumValues: Deferred): EnumValuesDeferred = {
     val __obj = js.Dynamic.literal(enumValues = enumValues.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnumValuesDeferred]
   }
   
-  @scala.inline
-  implicit class EnumValuesDeferredMutableBuilder[Self <: EnumValuesDeferred] (val x: Self) extends AnyVal {
+  extension [Self <: EnumValuesDeferred](x: Self) {
     
-    @scala.inline
-    def setEnumValues(value: Deferred): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
+    inline def setEnumValues(value: Deferred): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }
 }

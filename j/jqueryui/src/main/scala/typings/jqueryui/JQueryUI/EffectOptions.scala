@@ -17,31 +17,23 @@ trait EffectOptions extends StObject {
 }
 object EffectOptions {
   
-  @scala.inline
-  def apply(complete: js.Function, effect: String): EffectOptions = {
+  inline def apply(complete: js.Function, effect: String): EffectOptions = {
     val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any], effect = effect.asInstanceOf[js.Any])
     __obj.asInstanceOf[EffectOptions]
   }
   
-  @scala.inline
-  implicit class EffectOptionsMutableBuilder[Self <: EffectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: EffectOptions](x: Self) {
     
-    @scala.inline
-    def setComplete(value: js.Function): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+    inline def setComplete(value: js.Function): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+    inline def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
+    inline def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
     
-    @scala.inline
-    def setEffect(value: String): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
+    inline def setEffect(value: String): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
   }
 }

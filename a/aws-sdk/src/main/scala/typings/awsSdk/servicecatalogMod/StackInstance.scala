@@ -23,31 +23,23 @@ trait StackInstance extends StObject {
 }
 object StackInstance {
   
-  @scala.inline
-  def apply(): StackInstance = {
+  inline def apply(): StackInstance = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StackInstance]
   }
   
-  @scala.inline
-  implicit class StackInstanceMutableBuilder[Self <: StackInstance] (val x: Self) extends AnyVal {
+  extension [Self <: StackInstance](x: Self) {
     
-    @scala.inline
-    def setAccount(value: AccountId): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: AccountId): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountUndefined: Self = StObject.set(x, "Account", js.undefined)
+    inline def setAccountUndefined: Self = StObject.set(x, "Account", js.undefined)
     
-    @scala.inline
-    def setRegion(value: Region): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: Region): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
     
-    @scala.inline
-    def setStackInstanceStatus(value: StackInstanceStatus): Self = StObject.set(x, "StackInstanceStatus", value.asInstanceOf[js.Any])
+    inline def setStackInstanceStatus(value: StackInstanceStatus): Self = StObject.set(x, "StackInstanceStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackInstanceStatusUndefined: Self = StObject.set(x, "StackInstanceStatus", js.undefined)
+    inline def setStackInstanceStatusUndefined: Self = StObject.set(x, "StackInstanceStatus", js.undefined)
   }
 }

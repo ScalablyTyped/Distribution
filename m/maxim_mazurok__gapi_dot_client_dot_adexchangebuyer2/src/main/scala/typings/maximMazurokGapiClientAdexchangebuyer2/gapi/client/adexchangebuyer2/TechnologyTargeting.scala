@@ -17,31 +17,23 @@ trait TechnologyTargeting extends StObject {
 }
 object TechnologyTargeting {
   
-  @scala.inline
-  def apply(): TechnologyTargeting = {
+  inline def apply(): TechnologyTargeting = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TechnologyTargeting]
   }
   
-  @scala.inline
-  implicit class TechnologyTargetingMutableBuilder[Self <: TechnologyTargeting] (val x: Self) extends AnyVal {
+  extension [Self <: TechnologyTargeting](x: Self) {
     
-    @scala.inline
-    def setDeviceCapabilityTargeting(value: CriteriaTargeting): Self = StObject.set(x, "deviceCapabilityTargeting", value.asInstanceOf[js.Any])
+    inline def setDeviceCapabilityTargeting(value: CriteriaTargeting): Self = StObject.set(x, "deviceCapabilityTargeting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceCapabilityTargetingUndefined: Self = StObject.set(x, "deviceCapabilityTargeting", js.undefined)
+    inline def setDeviceCapabilityTargetingUndefined: Self = StObject.set(x, "deviceCapabilityTargeting", js.undefined)
     
-    @scala.inline
-    def setDeviceCategoryTargeting(value: CriteriaTargeting): Self = StObject.set(x, "deviceCategoryTargeting", value.asInstanceOf[js.Any])
+    inline def setDeviceCategoryTargeting(value: CriteriaTargeting): Self = StObject.set(x, "deviceCategoryTargeting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceCategoryTargetingUndefined: Self = StObject.set(x, "deviceCategoryTargeting", js.undefined)
+    inline def setDeviceCategoryTargetingUndefined: Self = StObject.set(x, "deviceCategoryTargeting", js.undefined)
     
-    @scala.inline
-    def setOperatingSystemTargeting(value: OperatingSystemTargeting): Self = StObject.set(x, "operatingSystemTargeting", value.asInstanceOf[js.Any])
+    inline def setOperatingSystemTargeting(value: OperatingSystemTargeting): Self = StObject.set(x, "operatingSystemTargeting", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperatingSystemTargetingUndefined: Self = StObject.set(x, "operatingSystemTargeting", js.undefined)
+    inline def setOperatingSystemTargetingUndefined: Self = StObject.set(x, "operatingSystemTargeting", js.undefined)
   }
 }

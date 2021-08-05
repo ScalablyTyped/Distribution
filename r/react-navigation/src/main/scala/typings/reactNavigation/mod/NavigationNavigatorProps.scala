@@ -19,43 +19,31 @@ trait NavigationNavigatorProps[Options, State, ScreenProps] extends StObject {
 }
 object NavigationNavigatorProps {
   
-  @scala.inline
-  def apply[Options, State, ScreenProps](): NavigationNavigatorProps[Options, State, ScreenProps] = {
+  inline def apply[Options, State, ScreenProps](): NavigationNavigatorProps[Options, State, ScreenProps] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigationNavigatorProps[Options, State, ScreenProps]]
   }
   
-  @scala.inline
-  implicit class NavigationNavigatorPropsMutableBuilder[Self <: NavigationNavigatorProps[?, ?, ?], Options, State, ScreenProps] (val x: Self & (NavigationNavigatorProps[Options, State, ScreenProps])) extends AnyVal {
+  extension [Self <: NavigationNavigatorProps[?, ?, ?], Options, State, ScreenProps](x: Self & (NavigationNavigatorProps[Options, State, ScreenProps])) {
     
-    @scala.inline
-    def setDetached(value: Boolean): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
+    inline def setDetached(value: Boolean): Self = StObject.set(x, "detached", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
+    inline def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
     
-    @scala.inline
-    def setNavigation(value: NavigationProp[State]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
+    inline def setNavigation(value: NavigationProp[State]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigationOptions(value: Options): Self = StObject.set(x, "navigationOptions", value.asInstanceOf[js.Any])
+    inline def setNavigationOptions(value: Options): Self = StObject.set(x, "navigationOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNavigationOptionsUndefined: Self = StObject.set(x, "navigationOptions", js.undefined)
+    inline def setNavigationOptionsUndefined: Self = StObject.set(x, "navigationOptions", js.undefined)
     
-    @scala.inline
-    def setNavigationUndefined: Self = StObject.set(x, "navigation", js.undefined)
+    inline def setNavigationUndefined: Self = StObject.set(x, "navigation", js.undefined)
     
-    @scala.inline
-    def setScreenProps(value: ScreenProps): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
+    inline def setScreenProps(value: ScreenProps): Self = StObject.set(x, "screenProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScreenPropsUndefined: Self = StObject.set(x, "screenProps", js.undefined)
+    inline def setScreenPropsUndefined: Self = StObject.set(x, "screenProps", js.undefined)
     
-    @scala.inline
-    def setTheme(value: SupportedThemes | `no-preference`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    inline def setTheme(value: SupportedThemes | `no-preference`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
+    inline def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)
   }
 }

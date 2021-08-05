@@ -63,8 +63,7 @@ trait CommentChangedEventArgs extends StObject {
 }
 object CommentChangedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changeType: CommentChangeType | CommentEdited | CommentResolved | CommentReopened | ReplyAdded | ReplyDeleted | ReplyEdited,
     commentDetails: js.Array[CommentDetail],
     source: EventSource | Local | Remote,
@@ -75,27 +74,20 @@ object CommentChangedEventArgs {
     __obj.asInstanceOf[CommentChangedEventArgs]
   }
   
-  @scala.inline
-  implicit class CommentChangedEventArgsMutableBuilder[Self <: CommentChangedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: CommentChangedEventArgs](x: Self) {
     
-    @scala.inline
-    def setChangeType(
+    inline def setChangeType(
       value: CommentChangeType | CommentEdited | CommentResolved | CommentReopened | ReplyAdded | ReplyDeleted | ReplyEdited
     ): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentDetails(value: js.Array[CommentDetail]): Self = StObject.set(x, "commentDetails", value.asInstanceOf[js.Any])
+    inline def setCommentDetails(value: js.Array[CommentDetail]): Self = StObject.set(x, "commentDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCommentDetailsVarargs(value: CommentDetail*): Self = StObject.set(x, "commentDetails", js.Array(value :_*))
+    inline def setCommentDetailsVarargs(value: CommentDetail*): Self = StObject.set(x, "commentDetails", js.Array(value :_*))
     
-    @scala.inline
-    def setSource(value: EventSource | Local | Remote): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
+    inline def setSource(value: EventSource | Local | Remote): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: CommentChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: CommentChanged): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorksheetId(value: String): Self = StObject.set(x, "worksheetId", value.asInstanceOf[js.Any])
+    inline def setWorksheetId(value: String): Self = StObject.set(x, "worksheetId", value.asInstanceOf[js.Any])
   }
 }

@@ -15,25 +15,19 @@ trait `79`[TState] extends StObject {
 }
 object `79` {
   
-  @scala.inline
-  def apply[TState](): `79`[TState] = {
+  inline def apply[TState](): `79`[TState] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[`79`[TState]]
   }
   
-  @scala.inline
-  implicit class `79MutableBuilder`[Self <: `79`[?], TState] (val x: Self & `79`[TState]) extends AnyVal {
+  extension [Self <: `79`[?], TState](x: Self & `79`[TState]) {
     
-    @scala.inline
-    def setEnter(value: (/* node */ NodeType[JSXSpreadChild], TState) => Unit): Self = StObject.set(x, "enter", js.Any.fromFunction2(value))
+    inline def setEnter(value: (/* node */ NodeType[JSXSpreadChild], TState) => Unit): Self = StObject.set(x, "enter", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
+    inline def setEnterUndefined: Self = StObject.set(x, "enter", js.undefined)
     
-    @scala.inline
-    def setExit(value: (/* node */ NodeType[JSXSpreadChild], TState) => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction2(value))
+    inline def setExit(value: (/* node */ NodeType[JSXSpreadChild], TState) => Unit): Self = StObject.set(x, "exit", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
+    inline def setExitUndefined: Self = StObject.set(x, "exit", js.undefined)
   }
 }

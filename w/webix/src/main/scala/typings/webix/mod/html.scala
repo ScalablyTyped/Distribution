@@ -63,6 +63,5 @@ trait html extends StObject {
 }
 object html {
   
-  @scala.inline
-  def apply: typings.webix.webix.html = ^.asInstanceOf[js.Dynamic].selectDynamic("html").asInstanceOf[typings.webix.webix.html]
+  inline def apply: typings.webix.webix.html = ^.asInstanceOf[js.Dynamic].selectDynamic("html").asInstanceOf[typings.webix.webix.html]
 }

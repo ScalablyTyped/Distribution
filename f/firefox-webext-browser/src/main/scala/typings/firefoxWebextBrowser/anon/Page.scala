@@ -14,22 +14,17 @@ trait Page extends StObject {
 }
 object Page {
   
-  @scala.inline
-  def apply(page: ExtensionURL): Page = {
+  inline def apply(page: ExtensionURL): Page = {
     val __obj = js.Dynamic.literal(page = page.asInstanceOf[js.Any])
     __obj.asInstanceOf[Page]
   }
   
-  @scala.inline
-  implicit class PageMutableBuilder[Self <: Page] (val x: Self) extends AnyVal {
+  extension [Self <: Page](x: Self) {
     
-    @scala.inline
-    def setPage(value: ExtensionURL): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
+    inline def setPage(value: ExtensionURL): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersistent(value: PersistentBackgroundProperty): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
+    inline def setPersistent(value: PersistentBackgroundProperty): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
+    inline def setPersistentUndefined: Self = StObject.set(x, "persistent", js.undefined)
   }
 }

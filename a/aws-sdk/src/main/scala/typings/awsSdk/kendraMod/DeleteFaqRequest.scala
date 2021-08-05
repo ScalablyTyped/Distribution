@@ -18,19 +18,15 @@ trait DeleteFaqRequest extends StObject {
 }
 object DeleteFaqRequest {
   
-  @scala.inline
-  def apply(Id: FaqId, IndexId: IndexId): DeleteFaqRequest = {
+  inline def apply(Id: FaqId, IndexId: IndexId): DeleteFaqRequest = {
     val __obj = js.Dynamic.literal(Id = Id.asInstanceOf[js.Any], IndexId = IndexId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteFaqRequest]
   }
   
-  @scala.inline
-  implicit class DeleteFaqRequestMutableBuilder[Self <: DeleteFaqRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteFaqRequest](x: Self) {
     
-    @scala.inline
-    def setId(value: FaqId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: FaqId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexId(value: IndexId): Self = StObject.set(x, "IndexId", value.asInstanceOf[js.Any])
+    inline def setIndexId(value: IndexId): Self = StObject.set(x, "IndexId", value.asInstanceOf[js.Any])
   }
 }

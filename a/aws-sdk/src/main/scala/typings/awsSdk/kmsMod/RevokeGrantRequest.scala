@@ -18,19 +18,15 @@ trait RevokeGrantRequest extends StObject {
 }
 object RevokeGrantRequest {
   
-  @scala.inline
-  def apply(GrantId: GrantIdType, KeyId: KeyIdType): RevokeGrantRequest = {
+  inline def apply(GrantId: GrantIdType, KeyId: KeyIdType): RevokeGrantRequest = {
     val __obj = js.Dynamic.literal(GrantId = GrantId.asInstanceOf[js.Any], KeyId = KeyId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RevokeGrantRequest]
   }
   
-  @scala.inline
-  implicit class RevokeGrantRequestMutableBuilder[Self <: RevokeGrantRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RevokeGrantRequest](x: Self) {
     
-    @scala.inline
-    def setGrantId(value: GrantIdType): Self = StObject.set(x, "GrantId", value.asInstanceOf[js.Any])
+    inline def setGrantId(value: GrantIdType): Self = StObject.set(x, "GrantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
+    inline def setKeyId(value: KeyIdType): Self = StObject.set(x, "KeyId", value.asInstanceOf[js.Any])
   }
 }

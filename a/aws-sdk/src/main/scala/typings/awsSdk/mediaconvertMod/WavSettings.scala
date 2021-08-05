@@ -28,37 +28,27 @@ trait WavSettings extends StObject {
 }
 object WavSettings {
   
-  @scala.inline
-  def apply(): WavSettings = {
+  inline def apply(): WavSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WavSettings]
   }
   
-  @scala.inline
-  implicit class WavSettingsMutableBuilder[Self <: WavSettings] (val x: Self) extends AnyVal {
+  extension [Self <: WavSettings](x: Self) {
     
-    @scala.inline
-    def setBitDepth(value: integerMin16Max24): Self = StObject.set(x, "BitDepth", value.asInstanceOf[js.Any])
+    inline def setBitDepth(value: integerMin16Max24): Self = StObject.set(x, "BitDepth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBitDepthUndefined: Self = StObject.set(x, "BitDepth", js.undefined)
+    inline def setBitDepthUndefined: Self = StObject.set(x, "BitDepth", js.undefined)
     
-    @scala.inline
-    def setChannels(value: integerMin1Max64): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
+    inline def setChannels(value: integerMin1Max64): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelsUndefined: Self = StObject.set(x, "Channels", js.undefined)
+    inline def setChannelsUndefined: Self = StObject.set(x, "Channels", js.undefined)
     
-    @scala.inline
-    def setFormat(value: WavFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: WavFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "Format", js.undefined)
     
-    @scala.inline
-    def setSampleRate(value: integerMin8000Max192000): Self = StObject.set(x, "SampleRate", value.asInstanceOf[js.Any])
+    inline def setSampleRate(value: integerMin8000Max192000): Self = StObject.set(x, "SampleRate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSampleRateUndefined: Self = StObject.set(x, "SampleRate", js.undefined)
+    inline def setSampleRateUndefined: Self = StObject.set(x, "SampleRate", js.undefined)
   }
 }

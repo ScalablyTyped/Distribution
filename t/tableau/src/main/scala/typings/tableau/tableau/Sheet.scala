@@ -42,8 +42,7 @@ trait Sheet extends StObject {
 }
 object Sheet {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changeSizeAsync: SheetSizeOptions => js.Promise[SheetSizeOptions],
     getIndex: () => Double,
     getIsActive: () => Boolean,
@@ -58,34 +57,24 @@ object Sheet {
     __obj.asInstanceOf[Sheet]
   }
   
-  @scala.inline
-  implicit class SheetMutableBuilder[Self <: Sheet] (val x: Self) extends AnyVal {
+  extension [Self <: Sheet](x: Self) {
     
-    @scala.inline
-    def setChangeSizeAsync(value: SheetSizeOptions => js.Promise[SheetSizeOptions]): Self = StObject.set(x, "changeSizeAsync", js.Any.fromFunction1(value))
+    inline def setChangeSizeAsync(value: SheetSizeOptions => js.Promise[SheetSizeOptions]): Self = StObject.set(x, "changeSizeAsync", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetIndex(value: () => Double): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
+    inline def setGetIndex(value: () => Double): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIsActive(value: () => Boolean): Self = StObject.set(x, "getIsActive", js.Any.fromFunction0(value))
+    inline def setGetIsActive(value: () => Boolean): Self = StObject.set(x, "getIsActive", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIsHidden(value: () => Boolean): Self = StObject.set(x, "getIsHidden", js.Any.fromFunction0(value))
+    inline def setGetIsHidden(value: () => Boolean): Self = StObject.set(x, "getIsHidden", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSheetType(value: () => SheetType): Self = StObject.set(x, "getSheetType", js.Any.fromFunction0(value))
+    inline def setGetSheetType(value: () => SheetType): Self = StObject.set(x, "getSheetType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSize(value: () => SheetSizeOptions): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
+    inline def setGetSize(value: () => SheetSizeOptions): Self = StObject.set(x, "getSize", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUrl(value: () => String): Self = StObject.set(x, "getUrl", js.Any.fromFunction0(value))
+    inline def setGetUrl(value: () => String): Self = StObject.set(x, "getUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWorkbook(value: () => Workbook): Self = StObject.set(x, "getWorkbook", js.Any.fromFunction0(value))
+    inline def setGetWorkbook(value: () => Workbook): Self = StObject.set(x, "getWorkbook", js.Any.fromFunction0(value))
   }
 }

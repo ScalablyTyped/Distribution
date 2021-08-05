@@ -28,8 +28,7 @@ trait WebUIDevicePairingActivatedEventArgs extends StObject {
 }
 object WebUIDevicePairingActivatedEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     activatedOperation: ActivatedOperation,
     deviceInformation: DeviceInformation,
     kind: ActivationKind,
@@ -40,22 +39,16 @@ object WebUIDevicePairingActivatedEventArgs {
     __obj.asInstanceOf[WebUIDevicePairingActivatedEventArgs]
   }
   
-  @scala.inline
-  implicit class WebUIDevicePairingActivatedEventArgsMutableBuilder[Self <: WebUIDevicePairingActivatedEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: WebUIDevicePairingActivatedEventArgs](x: Self) {
     
-    @scala.inline
-    def setActivatedOperation(value: ActivatedOperation): Self = StObject.set(x, "activatedOperation", value.asInstanceOf[js.Any])
+    inline def setActivatedOperation(value: ActivatedOperation): Self = StObject.set(x, "activatedOperation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceInformation(value: DeviceInformation): Self = StObject.set(x, "deviceInformation", value.asInstanceOf[js.Any])
+    inline def setDeviceInformation(value: DeviceInformation): Self = StObject.set(x, "deviceInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
+    inline def setPreviousExecutionState(value: ApplicationExecutionState): Self = StObject.set(x, "previousExecutionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
+    inline def setSplashScreen(value: SplashScreen): Self = StObject.set(x, "splashScreen", value.asInstanceOf[js.Any])
   }
 }

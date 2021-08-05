@@ -17,6 +17,6 @@ object reportingMod {
         js.Tuple10[js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any, js.Any]
       ] = js.native
     
-    var reportEventGenerator: js.Any = js.native
+    /* private */ var reportEventGenerator: js.Any = js.native
   }
 }

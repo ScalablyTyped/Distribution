@@ -18,25 +18,19 @@ trait ComplianceContributorCount extends StObject {
 }
 object ComplianceContributorCount {
   
-  @scala.inline
-  def apply(): ComplianceContributorCount = {
+  inline def apply(): ComplianceContributorCount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComplianceContributorCount]
   }
   
-  @scala.inline
-  implicit class ComplianceContributorCountMutableBuilder[Self <: ComplianceContributorCount] (val x: Self) extends AnyVal {
+  extension [Self <: ComplianceContributorCount](x: Self) {
     
-    @scala.inline
-    def setCapExceeded(value: Boolean): Self = StObject.set(x, "CapExceeded", value.asInstanceOf[js.Any])
+    inline def setCapExceeded(value: Boolean): Self = StObject.set(x, "CapExceeded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCapExceededUndefined: Self = StObject.set(x, "CapExceeded", js.undefined)
+    inline def setCapExceededUndefined: Self = StObject.set(x, "CapExceeded", js.undefined)
     
-    @scala.inline
-    def setCappedCount(value: Integer): Self = StObject.set(x, "CappedCount", value.asInstanceOf[js.Any])
+    inline def setCappedCount(value: Integer): Self = StObject.set(x, "CappedCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCappedCountUndefined: Self = StObject.set(x, "CappedCount", js.undefined)
+    inline def setCappedCountUndefined: Self = StObject.set(x, "CappedCount", js.undefined)
   }
 }

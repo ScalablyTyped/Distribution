@@ -11,6 +11,5 @@ object isValidCoordinateMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(point: GeolibInputCoordinates): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(point.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def default(point: GeolibInputCoordinates): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(point.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

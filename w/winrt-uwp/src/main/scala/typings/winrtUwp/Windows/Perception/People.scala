@@ -18,23 +18,18 @@ object People {
   }
   object HeadPose {
     
-    @scala.inline
-    def apply(forwardDirection: js.Any, position: js.Any, upDirection: js.Any): HeadPose = {
+    inline def apply(forwardDirection: js.Any, position: js.Any, upDirection: js.Any): HeadPose = {
       val __obj = js.Dynamic.literal(forwardDirection = forwardDirection.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], upDirection = upDirection.asInstanceOf[js.Any])
       __obj.asInstanceOf[HeadPose]
     }
     
-    @scala.inline
-    implicit class HeadPoseMutableBuilder[Self <: HeadPose] (val x: Self) extends AnyVal {
+    extension [Self <: HeadPose](x: Self) {
       
-      @scala.inline
-      def setForwardDirection(value: js.Any): Self = StObject.set(x, "forwardDirection", value.asInstanceOf[js.Any])
+      inline def setForwardDirection(value: js.Any): Self = StObject.set(x, "forwardDirection", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+      inline def setPosition(value: js.Any): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpDirection(value: js.Any): Self = StObject.set(x, "upDirection", value.asInstanceOf[js.Any])
+      inline def setUpDirection(value: js.Any): Self = StObject.set(x, "upDirection", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -32,58 +32,42 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setCloseMarker(value: String): Self = StObject.set(x, "closeMarker", value.asInstanceOf[js.Any])
+      inline def setCloseMarker(value: String): Self = StObject.set(x, "closeMarker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseMarkerUndefined: Self = StObject.set(x, "closeMarker", js.undefined)
+      inline def setCloseMarkerUndefined: Self = StObject.set(x, "closeMarker", js.undefined)
       
-      @scala.inline
-      def setDiagramName(value: String): Self = StObject.set(x, "diagramName", value.asInstanceOf[js.Any])
+      inline def setDiagramName(value: String): Self = StObject.set(x, "diagramName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDiagramNameUndefined: Self = StObject.set(x, "diagramName", js.undefined)
+      inline def setDiagramNameUndefined: Self = StObject.set(x, "diagramName", js.undefined)
       
-      @scala.inline
-      def setGenerateSource(value: (/* umlCode */ String, Options) => String): Self = StObject.set(x, "generateSource", js.Any.fromFunction2(value))
+      inline def setGenerateSource(value: (/* umlCode */ String, Options) => String): Self = StObject.set(x, "generateSource", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setGenerateSourceUndefined: Self = StObject.set(x, "generateSource", js.undefined)
+      inline def setGenerateSourceUndefined: Self = StObject.set(x, "generateSource", js.undefined)
       
-      @scala.inline
-      def setImageFormat(value: String): Self = StObject.set(x, "imageFormat", value.asInstanceOf[js.Any])
+      inline def setImageFormat(value: String): Self = StObject.set(x, "imageFormat", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageFormatUndefined: Self = StObject.set(x, "imageFormat", js.undefined)
+      inline def setImageFormatUndefined: Self = StObject.set(x, "imageFormat", js.undefined)
       
-      @scala.inline
-      def setOpenMarker(value: String): Self = StObject.set(x, "openMarker", value.asInstanceOf[js.Any])
+      inline def setOpenMarker(value: String): Self = StObject.set(x, "openMarker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenMarkerUndefined: Self = StObject.set(x, "openMarker", js.undefined)
+      inline def setOpenMarkerUndefined: Self = StObject.set(x, "openMarker", js.undefined)
       
-      @scala.inline
-      def setRender(
+      inline def setRender(
         value: (/* tokens */ js.Array[typings.markdownIt.tokenMod.^], /* idx */ Double, /* options */ typings.markdownIt.libMod.Options, /* env */ js.Any, /* self */ Renderer) => String
       ): Self = StObject.set(x, "render", js.Any.fromFunction5(value))
       
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
+      inline def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
-      @scala.inline
-      def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
+      inline def setServer(value: String): Self = StObject.set(x, "server", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
+      inline def setServerUndefined: Self = StObject.set(x, "server", js.undefined)
     }
   }
   

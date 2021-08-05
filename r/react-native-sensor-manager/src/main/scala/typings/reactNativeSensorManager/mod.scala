@@ -60,8 +60,7 @@ object mod {
   }
   object SensorManager {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       startAccelerometer: Double => Unit,
       startGyroscope: Double => Unit,
       startLightSensor: Double => Unit,
@@ -85,62 +84,43 @@ object mod {
       __obj.asInstanceOf[SensorManager]
     }
     
-    @scala.inline
-    implicit class SensorManagerMutableBuilder[Self <: SensorManager] (val x: Self) extends AnyVal {
+    extension [Self <: SensorManager](x: Self) {
       
-      @scala.inline
-      def setStartAccelerometer(value: Double => Unit): Self = StObject.set(x, "startAccelerometer", js.Any.fromFunction1(value))
+      inline def setStartAccelerometer(value: Double => Unit): Self = StObject.set(x, "startAccelerometer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStartGyroscope(value: Double => Unit): Self = StObject.set(x, "startGyroscope", js.Any.fromFunction1(value))
+      inline def setStartGyroscope(value: Double => Unit): Self = StObject.set(x, "startGyroscope", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStartLightSensor(value: Double => Unit): Self = StObject.set(x, "startLightSensor", js.Any.fromFunction1(value))
+      inline def setStartLightSensor(value: Double => Unit): Self = StObject.set(x, "startLightSensor", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStartMagnetometer(value: Double => Unit): Self = StObject.set(x, "startMagnetometer", js.Any.fromFunction1(value))
+      inline def setStartMagnetometer(value: Double => Unit): Self = StObject.set(x, "startMagnetometer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStartMotionValue(value: Double => Unit): Self = StObject.set(x, "startMotionValue", js.Any.fromFunction1(value))
+      inline def setStartMotionValue(value: Double => Unit): Self = StObject.set(x, "startMotionValue", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStartOrientation(value: Double => Unit): Self = StObject.set(x, "startOrientation", js.Any.fromFunction1(value))
+      inline def setStartOrientation(value: Double => Unit): Self = StObject.set(x, "startOrientation", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStartProximity(value: Double => Unit): Self = StObject.set(x, "startProximity", js.Any.fromFunction1(value))
+      inline def setStartProximity(value: Double => Unit): Self = StObject.set(x, "startProximity", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStartStepCounter(value: Double => Unit): Self = StObject.set(x, "startStepCounter", js.Any.fromFunction1(value))
+      inline def setStartStepCounter(value: Double => Unit): Self = StObject.set(x, "startStepCounter", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStartThermometer(value: Double => Unit): Self = StObject.set(x, "startThermometer", js.Any.fromFunction1(value))
+      inline def setStartThermometer(value: Double => Unit): Self = StObject.set(x, "startThermometer", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStopAccelerometer(value: () => Unit): Self = StObject.set(x, "stopAccelerometer", js.Any.fromFunction0(value))
+      inline def setStopAccelerometer(value: () => Unit): Self = StObject.set(x, "stopAccelerometer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStopGyroscope(value: () => Unit): Self = StObject.set(x, "stopGyroscope", js.Any.fromFunction0(value))
+      inline def setStopGyroscope(value: () => Unit): Self = StObject.set(x, "stopGyroscope", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStopLightSensor(value: () => Unit): Self = StObject.set(x, "stopLightSensor", js.Any.fromFunction0(value))
+      inline def setStopLightSensor(value: () => Unit): Self = StObject.set(x, "stopLightSensor", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStopMagnetometer(value: () => Unit): Self = StObject.set(x, "stopMagnetometer", js.Any.fromFunction0(value))
+      inline def setStopMagnetometer(value: () => Unit): Self = StObject.set(x, "stopMagnetometer", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStopMotionValue(value: () => Unit): Self = StObject.set(x, "stopMotionValue", js.Any.fromFunction0(value))
+      inline def setStopMotionValue(value: () => Unit): Self = StObject.set(x, "stopMotionValue", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStopOrientation(value: () => Unit): Self = StObject.set(x, "stopOrientation", js.Any.fromFunction0(value))
+      inline def setStopOrientation(value: () => Unit): Self = StObject.set(x, "stopOrientation", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStopProximity(value: () => Unit): Self = StObject.set(x, "stopProximity", js.Any.fromFunction0(value))
+      inline def setStopProximity(value: () => Unit): Self = StObject.set(x, "stopProximity", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStopStepCounter(value: () => Unit): Self = StObject.set(x, "stopStepCounter", js.Any.fromFunction0(value))
+      inline def setStopStepCounter(value: () => Unit): Self = StObject.set(x, "stopStepCounter", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStopThermometer(value: () => Unit): Self = StObject.set(x, "stopThermometer", js.Any.fromFunction0(value))
+      inline def setStopThermometer(value: () => Unit): Self = StObject.set(x, "stopThermometer", js.Any.fromFunction0(value))
     }
   }
   
@@ -173,17 +153,14 @@ object mod {
     }
     object NativeModulesStatic {
       
-      @scala.inline
-      def apply(SensorManager: SensorManager): NativeModulesStatic = {
+      inline def apply(SensorManager: SensorManager): NativeModulesStatic = {
         val __obj = js.Dynamic.literal(SensorManager = SensorManager.asInstanceOf[js.Any])
         __obj.asInstanceOf[NativeModulesStatic]
       }
       
-      @scala.inline
-      implicit class NativeModulesStaticMutableBuilder[Self <: NativeModulesStatic] (val x: Self) extends AnyVal {
+      extension [Self <: NativeModulesStatic](x: Self) {
         
-        @scala.inline
-        def setSensorManager(value: SensorManager): Self = StObject.set(x, "SensorManager", value.asInstanceOf[js.Any])
+        inline def setSensorManager(value: SensorManager): Self = StObject.set(x, "SensorManager", value.asInstanceOf[js.Any])
       }
     }
   }

@@ -16,11 +16,11 @@ class Emitter protected () extends StObject {
   
   /* protected */ def beforeEmitNode(node: Node2[SyntaxKind]): Unit = js.native
   
-  var cancelToken: js.Any = js.native
+  /* private */ var cancelToken: js.Any = js.native
   
   /* protected */ def createWriter(options: CompilerOptions): StringWriter = js.native
   
-  var diagnostics: js.Any = js.native
+  /* private */ var diagnostics: js.Any = js.native
   
   /** @deprecated since 2.1.0 - `prex.CancellationToken` may no longer be accepted in future releases. Please use a token that implements `@esfx/cancelable.Cancelable` */
   def emit(
@@ -179,17 +179,17 @@ class Emitter protected () extends StObject {
   
   /* protected */ def encode(text: String): String = js.native
   
-  var `extension`: String = js.native
+  /* protected */ var `extension`: String = js.native
   
   /* protected */ def getOutputFilename(node: SourceFile): String = js.native
   
-  var options: CompilerOptions = js.native
+  /* protected */ var options: CompilerOptions = js.native
   
-  var resolver: Resolver = js.native
+  /* protected */ var resolver: Resolver = js.native
   
-  var sourceFile: js.Any = js.native
+  /* private */ var sourceFile: js.Any = js.native
   
-  var triviaPos: js.Any = js.native
+  /* private */ var triviaPos: js.Any = js.native
   
-  var writer: StringWriter = js.native
+  /* protected */ var writer: StringWriter = js.native
 }

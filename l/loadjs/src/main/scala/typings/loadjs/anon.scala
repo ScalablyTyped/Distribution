@@ -29,47 +29,34 @@ object anon {
   }
   object LoadOptionsreturnPromiset {
     
-    @scala.inline
-    def apply(): LoadOptionsreturnPromiset = {
+    inline def apply(): LoadOptionsreturnPromiset = {
       val __obj = js.Dynamic.literal(returnPromise = true)
       __obj.asInstanceOf[LoadOptionsreturnPromiset]
     }
     
-    @scala.inline
-    implicit class LoadOptionsreturnPromisetMutableBuilder[Self <: LoadOptionsreturnPromiset] (val x: Self) extends AnyVal {
+    extension [Self <: LoadOptionsreturnPromiset](x: Self) {
       
-      @scala.inline
-      def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
+      inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
+      inline def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
-      @scala.inline
-      def setBefore(value: (/* path */ String, /* scriptEl */ HTMLElement) => Unit): Self = StObject.set(x, "before", js.Any.fromFunction2(value))
+      inline def setBefore(value: (/* path */ String, /* scriptEl */ HTMLElement) => Unit): Self = StObject.set(x, "before", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
+      inline def setBeforeUndefined: Self = StObject.set(x, "before", js.undefined)
       
-      @scala.inline
-      def setError(value: /* depsNotFound */ js.Array[String] => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* depsNotFound */ js.Array[String] => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setNumRetries(value: Double): Self = StObject.set(x, "numRetries", value.asInstanceOf[js.Any])
+      inline def setNumRetries(value: Double): Self = StObject.set(x, "numRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumRetriesUndefined: Self = StObject.set(x, "numRetries", js.undefined)
+      inline def setNumRetriesUndefined: Self = StObject.set(x, "numRetries", js.undefined)
       
-      @scala.inline
-      def setReturnPromise(value: `true`): Self = StObject.set(x, "returnPromise", value.asInstanceOf[js.Any])
+      inline def setReturnPromise(value: `true`): Self = StObject.set(x, "returnPromise", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
+      inline def setSuccess(value: () => Unit): Self = StObject.set(x, "success", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
+      inline def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
     }
   }
   

@@ -14,31 +14,23 @@ trait File extends StObject {
 }
 object File {
   
-  @scala.inline
-  def apply(): File = {
+  inline def apply(): File = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[File]
   }
   
-  @scala.inline
-  implicit class FileMutableBuilder[Self <: File] (val x: Self) extends AnyVal {
+  extension [Self <: File](x: Self) {
     
-    @scala.inline
-    def setConfig(value: String): Self = StObject.set(x, "Config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: String): Self = StObject.set(x, "Config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "Config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "Config", js.undefined)
     
-    @scala.inline
-    def setFile(value: String): Self = StObject.set(x, "File", value.asInstanceOf[js.Any])
+    inline def setFile(value: String): Self = StObject.set(x, "File", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileUndefined: Self = StObject.set(x, "File", js.undefined)
+    inline def setFileUndefined: Self = StObject.set(x, "File", js.undefined)
     
-    @scala.inline
-    def setRegistry(value: String): Self = StObject.set(x, "Registry", value.asInstanceOf[js.Any])
+    inline def setRegistry(value: String): Self = StObject.set(x, "Registry", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegistryUndefined: Self = StObject.set(x, "Registry", js.undefined)
+    inline def setRegistryUndefined: Self = StObject.set(x, "Registry", js.undefined)
   }
 }

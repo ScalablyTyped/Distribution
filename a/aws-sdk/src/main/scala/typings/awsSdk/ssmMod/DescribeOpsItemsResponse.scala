@@ -18,28 +18,21 @@ trait DescribeOpsItemsResponse extends StObject {
 }
 object DescribeOpsItemsResponse {
   
-  @scala.inline
-  def apply(): DescribeOpsItemsResponse = {
+  inline def apply(): DescribeOpsItemsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeOpsItemsResponse]
   }
   
-  @scala.inline
-  implicit class DescribeOpsItemsResponseMutableBuilder[Self <: DescribeOpsItemsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeOpsItemsResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setOpsItemSummaries(value: OpsItemSummaries): Self = StObject.set(x, "OpsItemSummaries", value.asInstanceOf[js.Any])
+    inline def setOpsItemSummaries(value: OpsItemSummaries): Self = StObject.set(x, "OpsItemSummaries", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOpsItemSummariesUndefined: Self = StObject.set(x, "OpsItemSummaries", js.undefined)
+    inline def setOpsItemSummariesUndefined: Self = StObject.set(x, "OpsItemSummaries", js.undefined)
     
-    @scala.inline
-    def setOpsItemSummariesVarargs(value: OpsItemSummary*): Self = StObject.set(x, "OpsItemSummaries", js.Array(value :_*))
+    inline def setOpsItemSummariesVarargs(value: OpsItemSummary*): Self = StObject.set(x, "OpsItemSummaries", js.Array(value :_*))
   }
 }

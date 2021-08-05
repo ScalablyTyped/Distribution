@@ -12,22 +12,17 @@ trait UpdateOneOptions
 }
 object UpdateOneOptions {
   
-  @scala.inline
-  def apply(): UpdateOneOptions = {
+  inline def apply(): UpdateOneOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UpdateOneOptions]
   }
   
-  @scala.inline
-  implicit class UpdateOneOptionsMutableBuilder[Self <: UpdateOneOptions] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateOneOptions](x: Self) {
     
-    @scala.inline
-    def setArrayFilters(value: js.Array[js.Object]): Self = StObject.set(x, "arrayFilters", value.asInstanceOf[js.Any])
+    inline def setArrayFilters(value: js.Array[js.Object]): Self = StObject.set(x, "arrayFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setArrayFiltersUndefined: Self = StObject.set(x, "arrayFilters", js.undefined)
+    inline def setArrayFiltersUndefined: Self = StObject.set(x, "arrayFilters", js.undefined)
     
-    @scala.inline
-    def setArrayFiltersVarargs(value: js.Object*): Self = StObject.set(x, "arrayFilters", js.Array(value :_*))
+    inline def setArrayFiltersVarargs(value: js.Object*): Self = StObject.set(x, "arrayFilters", js.Array(value :_*))
   }
 }

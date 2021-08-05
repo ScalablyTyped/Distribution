@@ -18,28 +18,21 @@ trait PivotGroupSortValueBucket extends StObject {
 }
 object PivotGroupSortValueBucket {
   
-  @scala.inline
-  def apply(): PivotGroupSortValueBucket = {
+  inline def apply(): PivotGroupSortValueBucket = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PivotGroupSortValueBucket]
   }
   
-  @scala.inline
-  implicit class PivotGroupSortValueBucketMutableBuilder[Self <: PivotGroupSortValueBucket] (val x: Self) extends AnyVal {
+  extension [Self <: PivotGroupSortValueBucket](x: Self) {
     
-    @scala.inline
-    def setBuckets(value: js.Array[ExtendedValue]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
+    inline def setBuckets(value: js.Array[ExtendedValue]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
+    inline def setBucketsUndefined: Self = StObject.set(x, "buckets", js.undefined)
     
-    @scala.inline
-    def setBucketsVarargs(value: ExtendedValue*): Self = StObject.set(x, "buckets", js.Array(value :_*))
+    inline def setBucketsVarargs(value: ExtendedValue*): Self = StObject.set(x, "buckets", js.Array(value :_*))
     
-    @scala.inline
-    def setValuesIndex(value: Double): Self = StObject.set(x, "valuesIndex", value.asInstanceOf[js.Any])
+    inline def setValuesIndex(value: Double): Self = StObject.set(x, "valuesIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesIndexUndefined: Self = StObject.set(x, "valuesIndex", js.undefined)
+    inline def setValuesIndexUndefined: Self = StObject.set(x, "valuesIndex", js.undefined)
   }
 }

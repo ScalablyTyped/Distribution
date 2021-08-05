@@ -29,8 +29,7 @@ trait ExtButtonsCollectionSettings extends StObject {
 }
 object ExtButtonsCollectionSettings {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     action: (/* e */ js.Any, /* dt */ Api, /* node */ JQuery, /* config */ ButtonSettings) => Unit,
     autoClose: Boolean,
     background: Boolean,
@@ -44,31 +43,22 @@ object ExtButtonsCollectionSettings {
     __obj.asInstanceOf[ExtButtonsCollectionSettings]
   }
   
-  @scala.inline
-  implicit class ExtButtonsCollectionSettingsMutableBuilder[Self <: ExtButtonsCollectionSettings] (val x: Self) extends AnyVal {
+  extension [Self <: ExtButtonsCollectionSettings](x: Self) {
     
-    @scala.inline
-    def setAction(value: (/* e */ js.Any, /* dt */ Api, /* node */ JQuery, /* config */ ButtonSettings) => Unit): Self = StObject.set(x, "action", js.Any.fromFunction4(value))
+    inline def setAction(value: (/* e */ js.Any, /* dt */ Api, /* node */ JQuery, /* config */ ButtonSettings) => Unit): Self = StObject.set(x, "action", js.Any.fromFunction4(value))
     
-    @scala.inline
-    def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
+    inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackground(value: Boolean): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: Boolean): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundClassName(value: String): Self = StObject.set(x, "backgroundClassName", value.asInstanceOf[js.Any])
+    inline def setBackgroundClassName(value: String): Self = StObject.set(x, "backgroundClassName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCollectionLayout(value: String): Self = StObject.set(x, "collectionLayout", value.asInstanceOf[js.Any])
+    inline def setCollectionLayout(value: String): Self = StObject.set(x, "collectionLayout", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFade(value: Double): Self = StObject.set(x, "fade", value.asInstanceOf[js.Any])
+    inline def setFade(value: Double): Self = StObject.set(x, "fade", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: /* a */ js.Any => String): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
+    inline def setText(value: /* a */ js.Any => String): Self = StObject.set(x, "text", js.Any.fromFunction1(value))
   }
 }

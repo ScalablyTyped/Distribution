@@ -40,43 +40,31 @@ trait SchemaCreateJobFromTemplateRequest extends StObject {
 }
 object SchemaCreateJobFromTemplateRequest {
   
-  @scala.inline
-  def apply(): SchemaCreateJobFromTemplateRequest = {
+  inline def apply(): SchemaCreateJobFromTemplateRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaCreateJobFromTemplateRequest]
   }
   
-  @scala.inline
-  implicit class SchemaCreateJobFromTemplateRequestMutableBuilder[Self <: SchemaCreateJobFromTemplateRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaCreateJobFromTemplateRequest](x: Self) {
     
-    @scala.inline
-    def setEnvironment(value: SchemaRuntimeEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: SchemaRuntimeEnvironment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
+    inline def setEnvironmentUndefined: Self = StObject.set(x, "environment", js.undefined)
     
-    @scala.inline
-    def setGcsPath(value: String): Self = StObject.set(x, "gcsPath", value.asInstanceOf[js.Any])
+    inline def setGcsPath(value: String): Self = StObject.set(x, "gcsPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGcsPathUndefined: Self = StObject.set(x, "gcsPath", js.undefined)
+    inline def setGcsPathUndefined: Self = StObject.set(x, "gcsPath", js.undefined)
     
-    @scala.inline
-    def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
+    inline def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobNameUndefined: Self = StObject.set(x, "jobName", js.undefined)
+    inline def setJobNameUndefined: Self = StObject.set(x, "jobName", js.undefined)
     
-    @scala.inline
-    def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
+    inline def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
-    @scala.inline
-    def setParameters(value: StringDictionary[String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: StringDictionary[String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
   }
 }

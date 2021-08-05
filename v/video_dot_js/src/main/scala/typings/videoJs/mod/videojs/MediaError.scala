@@ -80,43 +80,31 @@ trait MediaError extends StObject {
 }
 object MediaError {
   
-  @scala.inline
-  def apply(code: Double, message: String, status: js.Array[js.Any]): MediaError = {
+  inline def apply(code: Double, message: String, status: js.Array[js.Any]): MediaError = {
     val __obj = js.Dynamic.literal(MEDIA_ERR_ABORTED = 1, MEDIA_ERR_CUSTOM = 0, MEDIA_ERR_DECODE = 3, MEDIA_ERR_ENCRYPTED = 5, MEDIA_ERR_NETWORK = 2, MEDIA_ERR_SRC_NOT_SUPPORTED = 4, code = code.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaError]
   }
   
-  @scala.inline
-  implicit class MediaErrorMutableBuilder[Self <: MediaError] (val x: Self) extends AnyVal {
+  extension [Self <: MediaError](x: Self) {
     
-    @scala.inline
-    def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
+    inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMEDIA_ERR_ABORTED(value: `1`): Self = StObject.set(x, "MEDIA_ERR_ABORTED", value.asInstanceOf[js.Any])
+    inline def setMEDIA_ERR_ABORTED(value: `1`): Self = StObject.set(x, "MEDIA_ERR_ABORTED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMEDIA_ERR_CUSTOM(value: `0`): Self = StObject.set(x, "MEDIA_ERR_CUSTOM", value.asInstanceOf[js.Any])
+    inline def setMEDIA_ERR_CUSTOM(value: `0`): Self = StObject.set(x, "MEDIA_ERR_CUSTOM", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMEDIA_ERR_DECODE(value: `3`): Self = StObject.set(x, "MEDIA_ERR_DECODE", value.asInstanceOf[js.Any])
+    inline def setMEDIA_ERR_DECODE(value: `3`): Self = StObject.set(x, "MEDIA_ERR_DECODE", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMEDIA_ERR_ENCRYPTED(value: `5`): Self = StObject.set(x, "MEDIA_ERR_ENCRYPTED", value.asInstanceOf[js.Any])
+    inline def setMEDIA_ERR_ENCRYPTED(value: `5`): Self = StObject.set(x, "MEDIA_ERR_ENCRYPTED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMEDIA_ERR_NETWORK(value: `2`): Self = StObject.set(x, "MEDIA_ERR_NETWORK", value.asInstanceOf[js.Any])
+    inline def setMEDIA_ERR_NETWORK(value: `2`): Self = StObject.set(x, "MEDIA_ERR_NETWORK", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMEDIA_ERR_SRC_NOT_SUPPORTED(value: `4`): Self = StObject.set(x, "MEDIA_ERR_SRC_NOT_SUPPORTED", value.asInstanceOf[js.Any])
+    inline def setMEDIA_ERR_SRC_NOT_SUPPORTED(value: `4`): Self = StObject.set(x, "MEDIA_ERR_SRC_NOT_SUPPORTED", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatus(value: js.Array[js.Any]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: js.Array[js.Any]): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusVarargs(value: js.Any*): Self = StObject.set(x, "status", js.Array(value :_*))
+    inline def setStatusVarargs(value: js.Any*): Self = StObject.set(x, "status", js.Array(value :_*))
   }
 }

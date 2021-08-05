@@ -11,6 +11,5 @@ object containsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(parent: Element, child: Element): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def default(parent: Element, child: Element): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

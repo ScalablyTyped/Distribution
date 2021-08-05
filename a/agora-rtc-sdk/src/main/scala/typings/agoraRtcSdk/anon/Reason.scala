@@ -19,19 +19,15 @@ trait Reason extends StObject {
 }
 object Reason {
   
-  @scala.inline
-  def apply(reason: String, uid: String): Reason = {
+  inline def apply(reason: String, uid: String): Reason = {
     val __obj = js.Dynamic.literal(reason = reason.asInstanceOf[js.Any], uid = uid.asInstanceOf[js.Any])
     __obj.asInstanceOf[Reason]
   }
   
-  @scala.inline
-  implicit class ReasonMutableBuilder[Self <: Reason] (val x: Self) extends AnyVal {
+  extension [Self <: Reason](x: Self) {
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+    inline def setUid(value: String): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
   }
 }

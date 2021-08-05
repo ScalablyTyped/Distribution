@@ -14,22 +14,17 @@ trait ReturnTypeResolveAnimationResponse extends StObject {
 }
 object ReturnTypeResolveAnimationResponse {
   
-  @scala.inline
-  def apply(paramsType: js.Array[ResolveAnimationRequest], returnType: ResolveAnimationResponse): ReturnTypeResolveAnimationResponse = {
+  inline def apply(paramsType: js.Array[ResolveAnimationRequest], returnType: ResolveAnimationResponse): ReturnTypeResolveAnimationResponse = {
     val __obj = js.Dynamic.literal(paramsType = paramsType.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReturnTypeResolveAnimationResponse]
   }
   
-  @scala.inline
-  implicit class ReturnTypeResolveAnimationResponseMutableBuilder[Self <: ReturnTypeResolveAnimationResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ReturnTypeResolveAnimationResponse](x: Self) {
     
-    @scala.inline
-    def setParamsType(value: js.Array[ResolveAnimationRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
+    inline def setParamsType(value: js.Array[ResolveAnimationRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsTypeVarargs(value: ResolveAnimationRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
+    inline def setParamsTypeVarargs(value: ResolveAnimationRequest*): Self = StObject.set(x, "paramsType", js.Array(value :_*))
     
-    @scala.inline
-    def setReturnType(value: ResolveAnimationResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
+    inline def setReturnType(value: ResolveAnimationResponse): Self = StObject.set(x, "returnType", value.asInstanceOf[js.Any])
   }
 }

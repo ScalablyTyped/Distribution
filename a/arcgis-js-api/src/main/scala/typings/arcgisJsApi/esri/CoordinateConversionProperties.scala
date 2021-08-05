@@ -79,73 +79,51 @@ trait CoordinateConversionProperties
 }
 object CoordinateConversionProperties {
   
-  @scala.inline
-  def apply(): CoordinateConversionProperties = {
+  inline def apply(): CoordinateConversionProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CoordinateConversionProperties]
   }
   
-  @scala.inline
-  implicit class CoordinateConversionPropertiesMutableBuilder[Self <: CoordinateConversionProperties] (val x: Self) extends AnyVal {
+  extension [Self <: CoordinateConversionProperties](x: Self) {
     
-    @scala.inline
-    def setConversions(value: CollectionProperties[ConversionProperties]): Self = StObject.set(x, "conversions", value.asInstanceOf[js.Any])
+    inline def setConversions(value: CollectionProperties[ConversionProperties]): Self = StObject.set(x, "conversions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConversionsUndefined: Self = StObject.set(x, "conversions", js.undefined)
+    inline def setConversionsUndefined: Self = StObject.set(x, "conversions", js.undefined)
     
-    @scala.inline
-    def setConversionsVarargs(value: ConversionProperties*): Self = StObject.set(x, "conversions", js.Array(value :_*))
+    inline def setConversionsVarargs(value: ConversionProperties*): Self = StObject.set(x, "conversions", js.Array(value :_*))
     
-    @scala.inline
-    def setCurrentLocation(value: PointProperties): Self = StObject.set(x, "currentLocation", value.asInstanceOf[js.Any])
+    inline def setCurrentLocation(value: PointProperties): Self = StObject.set(x, "currentLocation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCurrentLocationUndefined: Self = StObject.set(x, "currentLocation", js.undefined)
+    inline def setCurrentLocationUndefined: Self = StObject.set(x, "currentLocation", js.undefined)
     
-    @scala.inline
-    def setFormats(value: CollectionProperties[FormatProperties]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+    inline def setFormats(value: CollectionProperties[FormatProperties]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
+    inline def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)
     
-    @scala.inline
-    def setFormatsVarargs(value: FormatProperties*): Self = StObject.set(x, "formats", js.Array(value :_*))
+    inline def setFormatsVarargs(value: FormatProperties*): Self = StObject.set(x, "formats", js.Array(value :_*))
     
-    @scala.inline
-    def setMode(value: live | capture): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+    inline def setMode(value: live | capture): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+    inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
-    @scala.inline
-    def setMultipleConversions(value: Boolean): Self = StObject.set(x, "multipleConversions", value.asInstanceOf[js.Any])
+    inline def setMultipleConversions(value: Boolean): Self = StObject.set(x, "multipleConversions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultipleConversionsUndefined: Self = StObject.set(x, "multipleConversions", js.undefined)
+    inline def setMultipleConversionsUndefined: Self = StObject.set(x, "multipleConversions", js.undefined)
     
-    @scala.inline
-    def setOrientation(value: auto | `expand-up` | `expand-down`): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
+    inline def setOrientation(value: auto | `expand-up` | `expand-down`): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
+    inline def setOrientationUndefined: Self = StObject.set(x, "orientation", js.undefined)
     
-    @scala.inline
-    def setRequestDelay(value: Double): Self = StObject.set(x, "requestDelay", value.asInstanceOf[js.Any])
+    inline def setRequestDelay(value: Double): Self = StObject.set(x, "requestDelay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestDelayUndefined: Self = StObject.set(x, "requestDelay", js.undefined)
+    inline def setRequestDelayUndefined: Self = StObject.set(x, "requestDelay", js.undefined)
     
-    @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModel(value: CoordinateConversionViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
+    inline def setViewModel(value: CoordinateConversionViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
+    inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

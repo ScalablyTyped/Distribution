@@ -68,64 +68,45 @@ trait FeatureFormProperties
 }
 object FeatureFormProperties {
   
-  @scala.inline
-  def apply(): FeatureFormProperties = {
+  inline def apply(): FeatureFormProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FeatureFormProperties]
   }
   
-  @scala.inline
-  implicit class FeatureFormPropertiesMutableBuilder[Self <: FeatureFormProperties] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureFormProperties](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
-    @scala.inline
-    def setFeature(value: GraphicProperties): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+    inline def setFeature(value: GraphicProperties): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeatureUndefined: Self = StObject.set(x, "feature", js.undefined)
+    inline def setFeatureUndefined: Self = StObject.set(x, "feature", js.undefined)
     
-    @scala.inline
-    def setFieldConfig(value: js.Array[FieldConfigProperties | FieldGroupConfigProperties]): Self = StObject.set(x, "fieldConfig", value.asInstanceOf[js.Any])
+    inline def setFieldConfig(value: js.Array[FieldConfigProperties | FieldGroupConfigProperties]): Self = StObject.set(x, "fieldConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldConfigUndefined: Self = StObject.set(x, "fieldConfig", js.undefined)
+    inline def setFieldConfigUndefined: Self = StObject.set(x, "fieldConfig", js.undefined)
     
-    @scala.inline
-    def setFieldConfigVarargs(value: (FieldConfigProperties | FieldGroupConfigProperties)*): Self = StObject.set(x, "fieldConfig", js.Array(value :_*))
+    inline def setFieldConfigVarargs(value: (FieldConfigProperties | FieldGroupConfigProperties)*): Self = StObject.set(x, "fieldConfig", js.Array(value :_*))
     
-    @scala.inline
-    def setFormTemplate(value: FormTemplateProperties): Self = StObject.set(x, "formTemplate", value.asInstanceOf[js.Any])
+    inline def setFormTemplate(value: FormTemplateProperties): Self = StObject.set(x, "formTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormTemplateUndefined: Self = StObject.set(x, "formTemplate", js.undefined)
+    inline def setFormTemplateUndefined: Self = StObject.set(x, "formTemplate", js.undefined)
     
-    @scala.inline
-    def setGroupDisplay(value: all | sequential): Self = StObject.set(x, "groupDisplay", value.asInstanceOf[js.Any])
+    inline def setGroupDisplay(value: all | sequential): Self = StObject.set(x, "groupDisplay", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupDisplayUndefined: Self = StObject.set(x, "groupDisplay", js.undefined)
+    inline def setGroupDisplayUndefined: Self = StObject.set(x, "groupDisplay", js.undefined)
     
-    @scala.inline
-    def setLayer(value: FeatureLayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
+    inline def setLayer(value: FeatureLayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
+    inline def setLayerUndefined: Self = StObject.set(x, "layer", js.undefined)
     
-    @scala.inline
-    def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
-    @scala.inline
-    def setViewModel(value: FeatureFormViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
+    inline def setViewModel(value: FeatureFormViewModelProperties): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
+    inline def setViewModelUndefined: Self = StObject.set(x, "viewModel", js.undefined)
   }
 }

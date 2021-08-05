@@ -12,20 +12,16 @@ object anon {
   }
   object ConsiderBuiltins {
     
-    @scala.inline
-    def apply(): ConsiderBuiltins = {
+    inline def apply(): ConsiderBuiltins = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConsiderBuiltins]
     }
     
-    @scala.inline
-    implicit class ConsiderBuiltinsMutableBuilder[Self <: ConsiderBuiltins] (val x: Self) extends AnyVal {
+    extension [Self <: ConsiderBuiltins](x: Self) {
       
-      @scala.inline
-      def setConsiderBuiltins(value: Boolean): Self = StObject.set(x, "considerBuiltins", value.asInstanceOf[js.Any])
+      inline def setConsiderBuiltins(value: Boolean): Self = StObject.set(x, "considerBuiltins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsiderBuiltinsUndefined: Self = StObject.set(x, "considerBuiltins", js.undefined)
+      inline def setConsiderBuiltinsUndefined: Self = StObject.set(x, "considerBuiltins", js.undefined)
     }
   }
   
@@ -37,29 +33,22 @@ object anon {
   }
   object ConsiderBuiltinsExtensions {
     
-    @scala.inline
-    def apply(): ConsiderBuiltinsExtensions = {
+    inline def apply(): ConsiderBuiltinsExtensions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ConsiderBuiltinsExtensions]
     }
     
-    @scala.inline
-    implicit class ConsiderBuiltinsExtensionsMutableBuilder[Self <: ConsiderBuiltinsExtensions] (val x: Self) extends AnyVal {
+    extension [Self <: ConsiderBuiltinsExtensions](x: Self) {
       
-      @scala.inline
-      def setConsiderBuiltins(value: Boolean): Self = StObject.set(x, "considerBuiltins", value.asInstanceOf[js.Any])
+      inline def setConsiderBuiltins(value: Boolean): Self = StObject.set(x, "considerBuiltins", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsiderBuiltinsUndefined: Self = StObject.set(x, "considerBuiltins", js.undefined)
+      inline def setConsiderBuiltinsUndefined: Self = StObject.set(x, "considerBuiltins", js.undefined)
       
-      @scala.inline
-      def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      @scala.inline
-      def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     }
   }
   
@@ -69,23 +58,18 @@ object anon {
   }
   object Extensions {
     
-    @scala.inline
-    def apply(): Extensions = {
+    inline def apply(): Extensions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Extensions]
     }
     
-    @scala.inline
-    implicit class ExtensionsMutableBuilder[Self <: Extensions] (val x: Self) extends AnyVal {
+    extension [Self <: Extensions](x: Self) {
       
-      @scala.inline
-      def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      @scala.inline
-      def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     }
   }
 }

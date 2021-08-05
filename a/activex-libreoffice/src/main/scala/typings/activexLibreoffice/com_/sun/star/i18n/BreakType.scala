@@ -17,13 +17,10 @@ object BreakType {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def HANGINGPUNCTUATION: `3` = 3.asInstanceOf[`3`]
+    inline def HANGINGPUNCTUATION: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def HYPHENATION: `2` = 2.asInstanceOf[`2`]
+    inline def HYPHENATION: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def WORDBOUNDARY: `1` = 1.asInstanceOf[`1`]
+    inline def WORDBOUNDARY: `1` = 1.asInstanceOf[`1`]
   }
 }

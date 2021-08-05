@@ -22,8 +22,7 @@ trait Boolean extends StObject {
 }
 object Boolean {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     boolean: scala.Double,
     branchFilter: scala.Double,
     multiLine: scala.Double,
@@ -36,28 +35,20 @@ object Boolean {
     __obj.asInstanceOf[Boolean]
   }
   
-  @scala.inline
-  implicit class BooleanMutableBuilder[Self <: Boolean] (val x: Self) extends AnyVal {
+  extension [Self <: Boolean](x: Self) {
     
-    @scala.inline
-    def setBoolean(value: scala.Double): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
+    inline def setBoolean(value: scala.Double): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranchFilter(value: scala.Double): Self = StObject.set(x, "branchFilter", value.asInstanceOf[js.Any])
+    inline def setBranchFilter(value: scala.Double): Self = StObject.set(x, "branchFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiLine(value: scala.Double): Self = StObject.set(x, "multiLine", value.asInstanceOf[js.Any])
+    inline def setMultiLine(value: scala.Double): Self = StObject.set(x, "multiLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPickList(value: scala.Double): Self = StObject.set(x, "pickList", value.asInstanceOf[js.Any])
+    inline def setPickList(value: scala.Double): Self = StObject.set(x, "pickList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRadio(value: scala.Double): Self = StObject.set(x, "radio", value.asInstanceOf[js.Any])
+    inline def setRadio(value: scala.Double): Self = StObject.set(x, "radio", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setString(value: scala.Double): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
+    inline def setString(value: scala.Double): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStringList(value: scala.Double): Self = StObject.set(x, "stringList", value.asInstanceOf[js.Any])
+    inline def setStringList(value: scala.Double): Self = StObject.set(x, "stringList", value.asInstanceOf[js.Any])
   }
 }

@@ -10,12 +10,8 @@ object shadeMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(percentage: String): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(percentage.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
-  @scala.inline
-  def default(percentage: String, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(percentage.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def default(percentage: Double): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(percentage.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
-  @scala.inline
-  def default(percentage: Double, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(percentage.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(percentage: String): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(percentage.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
+  inline def default(percentage: String, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(percentage.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def default(percentage: Double): js.Function1[/* color */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(percentage.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* color */ String, String]]
+  inline def default(percentage: Double, color: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(percentage.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[String]
 }

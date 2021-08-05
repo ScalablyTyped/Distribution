@@ -18,9 +18,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ElementGroup extends StObject
 object ElementGroup {
   
-  @scala.inline
-  def edges: typings.cytoscape.cytoscapeStrings.edges = "edges".asInstanceOf[typings.cytoscape.cytoscapeStrings.edges]
+  inline def edges: typings.cytoscape.cytoscapeStrings.edges = "edges".asInstanceOf[typings.cytoscape.cytoscapeStrings.edges]
   
-  @scala.inline
-  def nodes: typings.cytoscape.cytoscapeStrings.nodes = "nodes".asInstanceOf[typings.cytoscape.cytoscapeStrings.nodes]
+  inline def nodes: typings.cytoscape.cytoscapeStrings.nodes = "nodes".asInstanceOf[typings.cytoscape.cytoscapeStrings.nodes]
 }

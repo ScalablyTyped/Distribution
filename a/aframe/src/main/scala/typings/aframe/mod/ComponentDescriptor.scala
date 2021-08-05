@@ -14,31 +14,23 @@ trait ComponentDescriptor[T /* <: Component[js.Any, System[js.Any]] */] extends 
 }
 object ComponentDescriptor {
   
-  @scala.inline
-  def apply[T /* <: Component[js.Any, System[js.Any]] */](Component: ComponentConstructor[T]): ComponentDescriptor[T] = {
+  inline def apply[T /* <: Component[js.Any, System[js.Any]] */](Component: ComponentConstructor[T]): ComponentDescriptor[T] = {
     val __obj = js.Dynamic.literal(Component = Component.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentDescriptor[T]]
   }
   
-  @scala.inline
-  implicit class ComponentDescriptorMutableBuilder[Self <: ComponentDescriptor[?], T /* <: Component[js.Any, System[js.Any]] */] (val x: Self & ComponentDescriptor[T]) extends AnyVal {
+  extension [Self <: ComponentDescriptor[?], T /* <: Component[js.Any, System[js.Any]] */](x: Self & ComponentDescriptor[T]) {
     
-    @scala.inline
-    def setComponent(value: ComponentConstructor[T]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: ComponentConstructor[T]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDependencies(value: js.Array[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
+    inline def setDependencies(value: js.Array[String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
+    inline def setDependenciesUndefined: Self = StObject.set(x, "dependencies", js.undefined)
     
-    @scala.inline
-    def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
+    inline def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
     
-    @scala.inline
-    def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
+    inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
+    inline def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
   }
 }

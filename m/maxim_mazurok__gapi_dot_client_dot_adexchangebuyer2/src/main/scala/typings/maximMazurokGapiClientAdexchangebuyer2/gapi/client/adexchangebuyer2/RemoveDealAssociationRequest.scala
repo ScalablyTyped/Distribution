@@ -11,19 +11,15 @@ trait RemoveDealAssociationRequest extends StObject {
 }
 object RemoveDealAssociationRequest {
   
-  @scala.inline
-  def apply(): RemoveDealAssociationRequest = {
+  inline def apply(): RemoveDealAssociationRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RemoveDealAssociationRequest]
   }
   
-  @scala.inline
-  implicit class RemoveDealAssociationRequestMutableBuilder[Self <: RemoveDealAssociationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RemoveDealAssociationRequest](x: Self) {
     
-    @scala.inline
-    def setAssociation(value: CreativeDealAssociation): Self = StObject.set(x, "association", value.asInstanceOf[js.Any])
+    inline def setAssociation(value: CreativeDealAssociation): Self = StObject.set(x, "association", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationUndefined: Self = StObject.set(x, "association", js.undefined)
+    inline def setAssociationUndefined: Self = StObject.set(x, "association", js.undefined)
   }
 }

@@ -39,8 +39,7 @@ object MicroflowSource {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): MicroflowSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[MicroflowSource]
+  inline def create(model: IModel): MicroflowSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[MicroflowSource]
   
   /**
     * Creates and returns a new MicroflowSource instance in the SDK and on the server.
@@ -51,8 +50,7 @@ object MicroflowSource {
     *  6.0.0 to 8.2.0
     */
   /* static member */
-  @scala.inline
-  def createIn(container: EntityWidget): MicroflowSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowSource]
+  inline def createIn(container: EntityWidget): MicroflowSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowSource]
   
   /**
     * Creates and returns a new MicroflowSource instance in the SDK and on the server.
@@ -60,8 +58,7 @@ object MicroflowSource {
     * of the parent EntityWidget element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createInEntityWidgetUnderDataSource(container: EntityWidget): MicroflowSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityWidgetUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowSource]
+  inline def createInEntityWidgetUnderDataSource(container: EntityWidget): MicroflowSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityWidgetUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowSource]
   
   /**
     * Creates and returns a new MicroflowSource instance in the SDK and on the server.
@@ -72,20 +69,17 @@ object MicroflowSource {
     *  8.3.0 and higher
     */
   /* static member */
-  @scala.inline
-  def createInWidgetValueUnderDataSource(container: WidgetValue): MicroflowSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowSource]
+  inline def createInWidgetValueUnderDataSource(container: WidgetValue): MicroflowSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[MicroflowSource]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MicroflowSource.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.MicroflowSource.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

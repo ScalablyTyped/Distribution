@@ -7,11 +7,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.XDNetworkState")
 @js.native
-class XDNetworkState protected ()
+/* private */ class XDNetworkState ()
   extends StObject
      with typings.activexInfopath.InfoPath.XDNetworkState {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("InfoPath.XDNetworkState_typekey")
   var InfoPathDotXDNetworkState_typekey: typings.activexInfopath.InfoPath.XDNetworkState = js.native
   

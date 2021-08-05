@@ -14,16 +14,13 @@ trait ProjectSourceGitSubmodulesConfig extends StObject {
 }
 object ProjectSourceGitSubmodulesConfig {
   
-  @scala.inline
-  def apply(fetchSubmodules: Input[Boolean]): ProjectSourceGitSubmodulesConfig = {
+  inline def apply(fetchSubmodules: Input[Boolean]): ProjectSourceGitSubmodulesConfig = {
     val __obj = js.Dynamic.literal(fetchSubmodules = fetchSubmodules.asInstanceOf[js.Any])
     __obj.asInstanceOf[ProjectSourceGitSubmodulesConfig]
   }
   
-  @scala.inline
-  implicit class ProjectSourceGitSubmodulesConfigMutableBuilder[Self <: ProjectSourceGitSubmodulesConfig] (val x: Self) extends AnyVal {
+  extension [Self <: ProjectSourceGitSubmodulesConfig](x: Self) {
     
-    @scala.inline
-    def setFetchSubmodules(value: Input[Boolean]): Self = StObject.set(x, "fetchSubmodules", value.asInstanceOf[js.Any])
+    inline def setFetchSubmodules(value: Input[Boolean]): Self = StObject.set(x, "fetchSubmodules", value.asInstanceOf[js.Any])
   }
 }

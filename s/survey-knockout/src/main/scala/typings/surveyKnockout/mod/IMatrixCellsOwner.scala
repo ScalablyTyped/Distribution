@@ -14,8 +14,7 @@ trait IMatrixCellsOwner
 }
 object IMatrixCellsOwner {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getColumns: () => js.Array[js.Any],
     getLocale: () => String,
     getMarkdownHtml: String => String,
@@ -26,13 +25,10 @@ object IMatrixCellsOwner {
     __obj.asInstanceOf[IMatrixCellsOwner]
   }
   
-  @scala.inline
-  implicit class IMatrixCellsOwnerMutableBuilder[Self <: IMatrixCellsOwner] (val x: Self) extends AnyVal {
+  extension [Self <: IMatrixCellsOwner](x: Self) {
     
-    @scala.inline
-    def setGetColumns(value: () => js.Array[js.Any]): Self = StObject.set(x, "getColumns", js.Any.fromFunction0(value))
+    inline def setGetColumns(value: () => js.Array[js.Any]): Self = StObject.set(x, "getColumns", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRows(value: () => js.Array[js.Any]): Self = StObject.set(x, "getRows", js.Any.fromFunction0(value))
+    inline def setGetRows(value: () => js.Array[js.Any]): Self = StObject.set(x, "getRows", js.Any.fromFunction0(value))
   }
 }

@@ -10,19 +10,15 @@ trait KeyOrderSensitive extends StObject {
 }
 object KeyOrderSensitive {
   
-  @scala.inline
-  def apply(): KeyOrderSensitive = {
+  inline def apply(): KeyOrderSensitive = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[KeyOrderSensitive]
   }
   
-  @scala.inline
-  implicit class KeyOrderSensitiveMutableBuilder[Self <: KeyOrderSensitive] (val x: Self) extends AnyVal {
+  extension [Self <: KeyOrderSensitive](x: Self) {
     
-    @scala.inline
-    def setKeyOrderSensitive(value: Boolean): Self = StObject.set(x, "keyOrderSensitive", value.asInstanceOf[js.Any])
+    inline def setKeyOrderSensitive(value: Boolean): Self = StObject.set(x, "keyOrderSensitive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeyOrderSensitiveUndefined: Self = StObject.set(x, "keyOrderSensitive", js.undefined)
+    inline def setKeyOrderSensitiveUndefined: Self = StObject.set(x, "keyOrderSensitive", js.undefined)
   }
 }

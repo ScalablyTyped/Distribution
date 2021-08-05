@@ -122,39 +122,23 @@ object mod {
     def write(data: js.Any): Boolean = js.native
   }
   
-  @scala.inline
-  def createTerminal(): Terminal = ^.asInstanceOf[js.Dynamic].applyDynamic("createTerminal")().asInstanceOf[Terminal]
-  @scala.inline
-  def createTerminal(file: String): Terminal = ^.asInstanceOf[js.Dynamic].applyDynamic("createTerminal")(file.asInstanceOf[js.Any]).asInstanceOf[Terminal]
-  @scala.inline
-  def createTerminal(file: String, args: js.Array[String]): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("createTerminal")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Terminal]
-  @scala.inline
-  def createTerminal(file: String, args: js.Array[String], opt: TerminalOptions): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("createTerminal")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Terminal]
-  @scala.inline
-  def createTerminal(file: String, args: Unit, opt: TerminalOptions): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("createTerminal")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Terminal]
-  @scala.inline
-  def createTerminal(file: Unit, args: js.Array[String]): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("createTerminal")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Terminal]
-  @scala.inline
-  def createTerminal(file: Unit, args: js.Array[String], opt: TerminalOptions): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("createTerminal")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Terminal]
-  @scala.inline
-  def createTerminal(file: Unit, args: Unit, opt: TerminalOptions): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("createTerminal")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Terminal]
+  inline def createTerminal(): Terminal = ^.asInstanceOf[js.Dynamic].applyDynamic("createTerminal")().asInstanceOf[Terminal]
+  inline def createTerminal(file: String): Terminal = ^.asInstanceOf[js.Dynamic].applyDynamic("createTerminal")(file.asInstanceOf[js.Any]).asInstanceOf[Terminal]
+  inline def createTerminal(file: String, args: js.Array[String]): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("createTerminal")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Terminal]
+  inline def createTerminal(file: String, args: js.Array[String], opt: TerminalOptions): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("createTerminal")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Terminal]
+  inline def createTerminal(file: String, args: Unit, opt: TerminalOptions): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("createTerminal")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Terminal]
+  inline def createTerminal(file: Unit, args: js.Array[String]): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("createTerminal")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Terminal]
+  inline def createTerminal(file: Unit, args: js.Array[String], opt: TerminalOptions): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("createTerminal")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Terminal]
+  inline def createTerminal(file: Unit, args: Unit, opt: TerminalOptions): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("createTerminal")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Terminal]
   
-  @scala.inline
-  def fork(): Terminal = ^.asInstanceOf[js.Dynamic].applyDynamic("fork")().asInstanceOf[Terminal]
-  @scala.inline
-  def fork(file: String): Terminal = ^.asInstanceOf[js.Dynamic].applyDynamic("fork")(file.asInstanceOf[js.Any]).asInstanceOf[Terminal]
-  @scala.inline
-  def fork(file: String, args: js.Array[String]): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Terminal]
-  @scala.inline
-  def fork(file: String, args: js.Array[String], opt: TerminalOptions): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Terminal]
-  @scala.inline
-  def fork(file: String, args: Unit, opt: TerminalOptions): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Terminal]
-  @scala.inline
-  def fork(file: Unit, args: js.Array[String]): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Terminal]
-  @scala.inline
-  def fork(file: Unit, args: js.Array[String], opt: TerminalOptions): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Terminal]
-  @scala.inline
-  def fork(file: Unit, args: Unit, opt: TerminalOptions): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Terminal]
+  inline def fork(): Terminal = ^.asInstanceOf[js.Dynamic].applyDynamic("fork")().asInstanceOf[Terminal]
+  inline def fork(file: String): Terminal = ^.asInstanceOf[js.Dynamic].applyDynamic("fork")(file.asInstanceOf[js.Any]).asInstanceOf[Terminal]
+  inline def fork(file: String, args: js.Array[String]): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Terminal]
+  inline def fork(file: String, args: js.Array[String], opt: TerminalOptions): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Terminal]
+  inline def fork(file: String, args: Unit, opt: TerminalOptions): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Terminal]
+  inline def fork(file: Unit, args: js.Array[String]): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Terminal]
+  inline def fork(file: Unit, args: js.Array[String], opt: TerminalOptions): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Terminal]
+  inline def fork(file: Unit, args: Unit, opt: TerminalOptions): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Terminal]
   
   object native {
     
@@ -162,10 +146,8 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fork(file: String, args: js.Array[String], env: js.Any, cwd: String, cols: Double, rows: Double): Fd = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], env.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any], cols.asInstanceOf[js.Any], rows.asInstanceOf[js.Any])).asInstanceOf[Fd]
-    @scala.inline
-    def fork(
+    inline def fork(file: String, args: js.Array[String], env: js.Any, cwd: String, cols: Double, rows: Double): Fd = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], env.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any], cols.asInstanceOf[js.Any], rows.asInstanceOf[js.Any])).asInstanceOf[Fd]
+    inline def fork(
       file: String,
       args: js.Array[String],
       env: js.Any,
@@ -174,8 +156,7 @@ object mod {
       rows: Double,
       uid: Double
     ): Fd = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], env.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any], cols.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], uid.asInstanceOf[js.Any])).asInstanceOf[Fd]
-    @scala.inline
-    def fork(
+    inline def fork(
       file: String,
       args: js.Array[String],
       env: js.Any,
@@ -185,8 +166,7 @@ object mod {
       uid: Double,
       gid: Double
     ): Fd = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], env.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any], cols.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[Fd]
-    @scala.inline
-    def fork(
+    inline def fork(
       file: String,
       args: js.Array[String],
       env: js.Any,
@@ -197,45 +177,29 @@ object mod {
       gid: Double
     ): Fd = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], env.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any], cols.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[Fd]
     
-    @scala.inline
-    def kill(pid: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def kill(pid: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @scala.inline
-    def open(cols: Double, rows: Double): Master = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(cols.asInstanceOf[js.Any], rows.asInstanceOf[js.Any])).asInstanceOf[Master]
-    @scala.inline
-    def open(dataPipe: String, cols: Double, rows: Double, debug: Boolean): Pid = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(dataPipe.asInstanceOf[js.Any], cols.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], debug.asInstanceOf[js.Any])).asInstanceOf[Pid]
+    inline def open(cols: Double, rows: Double): Master = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(cols.asInstanceOf[js.Any], rows.asInstanceOf[js.Any])).asInstanceOf[Master]
+    inline def open(dataPipe: String, cols: Double, rows: Double, debug: Boolean): Pid = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(dataPipe.asInstanceOf[js.Any], cols.asInstanceOf[js.Any], rows.asInstanceOf[js.Any], debug.asInstanceOf[js.Any])).asInstanceOf[Pid]
     
-    @scala.inline
-    def process(fd: Double, tty: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("process")(fd.asInstanceOf[js.Any], tty.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def process(fd: Double, tty: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("process")(fd.asInstanceOf[js.Any], tty.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @scala.inline
-    def resize(fd: Double, cols: Double, rows: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resize")(fd.asInstanceOf[js.Any], cols.asInstanceOf[js.Any], rows.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def resize(fd: Double, cols: Double, rows: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resize")(fd.asInstanceOf[js.Any], cols.asInstanceOf[js.Any], rows.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @scala.inline
-    def startProcess(pid: Double, file: String, cmdline: String, env: js.Array[String], cwd: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("startProcess")(pid.asInstanceOf[js.Any], file.asInstanceOf[js.Any], cmdline.asInstanceOf[js.Any], env.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def startProcess(pid: Double, file: String, cmdline: String, env: js.Array[String], cwd: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("startProcess")(pid.asInstanceOf[js.Any], file.asInstanceOf[js.Any], cmdline.asInstanceOf[js.Any], env.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  @scala.inline
-  def open(): Terminal = ^.asInstanceOf[js.Dynamic].applyDynamic("open")().asInstanceOf[Terminal]
-  @scala.inline
-  def open(opt: Cols): Terminal = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(opt.asInstanceOf[js.Any]).asInstanceOf[Terminal]
+  inline def open(): Terminal = ^.asInstanceOf[js.Dynamic].applyDynamic("open")().asInstanceOf[Terminal]
+  inline def open(opt: Cols): Terminal = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(opt.asInstanceOf[js.Any]).asInstanceOf[Terminal]
   
-  @scala.inline
-  def spawn(): Terminal = ^.asInstanceOf[js.Dynamic].applyDynamic("spawn")().asInstanceOf[Terminal]
-  @scala.inline
-  def spawn(file: String): Terminal = ^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(file.asInstanceOf[js.Any]).asInstanceOf[Terminal]
-  @scala.inline
-  def spawn(file: String, args: js.Array[String]): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Terminal]
-  @scala.inline
-  def spawn(file: String, args: js.Array[String], opt: TerminalOptions): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Terminal]
-  @scala.inline
-  def spawn(file: String, args: Unit, opt: TerminalOptions): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Terminal]
-  @scala.inline
-  def spawn(file: Unit, args: js.Array[String]): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Terminal]
-  @scala.inline
-  def spawn(file: Unit, args: js.Array[String], opt: TerminalOptions): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Terminal]
-  @scala.inline
-  def spawn(file: Unit, args: Unit, opt: TerminalOptions): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Terminal]
+  inline def spawn(): Terminal = ^.asInstanceOf[js.Dynamic].applyDynamic("spawn")().asInstanceOf[Terminal]
+  inline def spawn(file: String): Terminal = ^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(file.asInstanceOf[js.Any]).asInstanceOf[Terminal]
+  inline def spawn(file: String, args: js.Array[String]): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Terminal]
+  inline def spawn(file: String, args: js.Array[String], opt: TerminalOptions): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Terminal]
+  inline def spawn(file: String, args: Unit, opt: TerminalOptions): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Terminal]
+  inline def spawn(file: Unit, args: js.Array[String]): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Terminal]
+  inline def spawn(file: Unit, args: js.Array[String], opt: TerminalOptions): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Terminal]
+  inline def spawn(file: Unit, args: Unit, opt: TerminalOptions): Terminal = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(file.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[Terminal]
   
   /** Options that can be used when creating a new pseudo-terminal. */
   trait TerminalOptions extends StObject {
@@ -256,56 +220,40 @@ object mod {
   }
   object TerminalOptions {
     
-    @scala.inline
-    def apply(): TerminalOptions = {
+    inline def apply(): TerminalOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TerminalOptions]
     }
     
-    @scala.inline
-    implicit class TerminalOptionsMutableBuilder[Self <: TerminalOptions] (val x: Self) extends AnyVal {
+    extension [Self <: TerminalOptions](x: Self) {
       
-      @scala.inline
-      def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
+      inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
+      inline def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
       
-      @scala.inline
-      def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
+      inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
+      inline def setCwdUndefined: Self = StObject.set(x, "cwd", js.undefined)
       
-      @scala.inline
-      def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
+      inline def setEnv(value: js.Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
+      inline def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
       
-      @scala.inline
-      def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
+      inline def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGidUndefined: Self = StObject.set(x, "gid", js.undefined)
+      inline def setGidUndefined: Self = StObject.set(x, "gid", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      inline def setRows(value: Double): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
+      inline def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
       
-      @scala.inline
-      def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
+      inline def setUid(value: Double): Self = StObject.set(x, "uid", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
+      inline def setUidUndefined: Self = StObject.set(x, "uid", js.undefined)
     }
   }
 }

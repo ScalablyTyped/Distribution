@@ -62,79 +62,55 @@ trait SchemaLiasettingsCustomBatchRequestEntry extends StObject {
 }
 object SchemaLiasettingsCustomBatchRequestEntry {
   
-  @scala.inline
-  def apply(): SchemaLiasettingsCustomBatchRequestEntry = {
+  inline def apply(): SchemaLiasettingsCustomBatchRequestEntry = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaLiasettingsCustomBatchRequestEntry]
   }
   
-  @scala.inline
-  implicit class SchemaLiasettingsCustomBatchRequestEntryMutableBuilder[Self <: SchemaLiasettingsCustomBatchRequestEntry] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaLiasettingsCustomBatchRequestEntry](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
+    inline def setBatchId(value: Double): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
+    inline def setBatchIdUndefined: Self = StObject.set(x, "batchId", js.undefined)
     
-    @scala.inline
-    def setContactEmail(value: String): Self = StObject.set(x, "contactEmail", value.asInstanceOf[js.Any])
+    inline def setContactEmail(value: String): Self = StObject.set(x, "contactEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactEmailUndefined: Self = StObject.set(x, "contactEmail", js.undefined)
+    inline def setContactEmailUndefined: Self = StObject.set(x, "contactEmail", js.undefined)
     
-    @scala.inline
-    def setContactName(value: String): Self = StObject.set(x, "contactName", value.asInstanceOf[js.Any])
+    inline def setContactName(value: String): Self = StObject.set(x, "contactName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContactNameUndefined: Self = StObject.set(x, "contactName", js.undefined)
+    inline def setContactNameUndefined: Self = StObject.set(x, "contactName", js.undefined)
     
-    @scala.inline
-    def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
+    inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
+    inline def setCountryUndefined: Self = StObject.set(x, "country", js.undefined)
     
-    @scala.inline
-    def setGmbEmail(value: String): Self = StObject.set(x, "gmbEmail", value.asInstanceOf[js.Any])
+    inline def setGmbEmail(value: String): Self = StObject.set(x, "gmbEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGmbEmailUndefined: Self = StObject.set(x, "gmbEmail", js.undefined)
+    inline def setGmbEmailUndefined: Self = StObject.set(x, "gmbEmail", js.undefined)
     
-    @scala.inline
-    def setLiaSettings(value: SchemaLiaSettings): Self = StObject.set(x, "liaSettings", value.asInstanceOf[js.Any])
+    inline def setLiaSettings(value: SchemaLiaSettings): Self = StObject.set(x, "liaSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLiaSettingsUndefined: Self = StObject.set(x, "liaSettings", js.undefined)
+    inline def setLiaSettingsUndefined: Self = StObject.set(x, "liaSettings", js.undefined)
     
-    @scala.inline
-    def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
+    inline def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
+    inline def setMerchantIdUndefined: Self = StObject.set(x, "merchantId", js.undefined)
     
-    @scala.inline
-    def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+    inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+    inline def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
     
-    @scala.inline
-    def setPosDataProviderId(value: String): Self = StObject.set(x, "posDataProviderId", value.asInstanceOf[js.Any])
+    inline def setPosDataProviderId(value: String): Self = StObject.set(x, "posDataProviderId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosDataProviderIdUndefined: Self = StObject.set(x, "posDataProviderId", js.undefined)
+    inline def setPosDataProviderIdUndefined: Self = StObject.set(x, "posDataProviderId", js.undefined)
     
-    @scala.inline
-    def setPosExternalAccountId(value: String): Self = StObject.set(x, "posExternalAccountId", value.asInstanceOf[js.Any])
+    inline def setPosExternalAccountId(value: String): Self = StObject.set(x, "posExternalAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosExternalAccountIdUndefined: Self = StObject.set(x, "posExternalAccountId", js.undefined)
+    inline def setPosExternalAccountIdUndefined: Self = StObject.set(x, "posExternalAccountId", js.undefined)
   }
 }

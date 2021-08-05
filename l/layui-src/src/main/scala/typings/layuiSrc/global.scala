@@ -34,110 +34,89 @@ object global {
     @js.native
     def _empty: JQueryStatic = js.native
     
-    @scala.inline
-    def _empty_=(x: JQueryStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$")(x.asInstanceOf[js.Any])
+    inline def _empty_=(x: JQueryStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("$")(x.asInstanceOf[js.Any])
     
     @JSGlobal("layui.carousel")
     @js.native
     def carousel: Carousel = js.native
-    @scala.inline
-    def carousel_=(x: Carousel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("carousel")(x.asInstanceOf[js.Any])
+    inline def carousel_=(x: Carousel): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("carousel")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def code(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("code")().asInstanceOf[Unit]
-    @scala.inline
-    def code(option: CodeOption): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("code")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def code(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("code")().asInstanceOf[Unit]
+    inline def code(option: CodeOption): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("code")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("layui.colorpicker")
     @js.native
     def colorpicker: ColorPicker = js.native
-    @scala.inline
-    def colorpicker_=(x: ColorPicker): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("colorpicker")(x.asInstanceOf[js.Any])
+    inline def colorpicker_=(x: ColorPicker): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("colorpicker")(x.asInstanceOf[js.Any])
     
     @JSGlobal("layui.element")
     @js.native
     def element: Element = js.native
-    @scala.inline
-    def element_=(x: Element): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("element")(x.asInstanceOf[js.Any])
+    inline def element_=(x: Element): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("element")(x.asInstanceOf[js.Any])
     
     @JSGlobal("layui.flow")
     @js.native
     def flow: Flow = js.native
-    @scala.inline
-    def flow_=(x: Flow): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flow")(x.asInstanceOf[js.Any])
+    inline def flow_=(x: Flow): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("flow")(x.asInstanceOf[js.Any])
     
     @JSGlobal("layui.form")
     @js.native
     def form: Form = js.native
-    @scala.inline
-    def form_=(x: Form): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("form")(x.asInstanceOf[js.Any])
+    inline def form_=(x: Form): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("form")(x.asInstanceOf[js.Any])
     
     @JSGlobal("layui.laydate")
     @js.native
     def laydate: Laydate = js.native
-    @scala.inline
-    def laydate_=(x: Laydate): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("laydate")(x.asInstanceOf[js.Any])
+    inline def laydate_=(x: Laydate): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("laydate")(x.asInstanceOf[js.Any])
     
     @JSGlobal("layui.layedit")
     @js.native
     def layedit: Layedit = js.native
-    @scala.inline
-    def layedit_=(x: Layedit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("layedit")(x.asInstanceOf[js.Any])
+    inline def layedit_=(x: Layedit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("layedit")(x.asInstanceOf[js.Any])
     
     @JSGlobal("layui.layer")
     @js.native
     def layer: Layer = js.native
-    @scala.inline
-    def layer_=(x: Layer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("layer")(x.asInstanceOf[js.Any])
+    inline def layer_=(x: Layer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("layer")(x.asInstanceOf[js.Any])
     
     @JSGlobal("layui.laypage")
     @js.native
     def laypage: Laypage = js.native
-    @scala.inline
-    def laypage_=(x: Laypage): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("laypage")(x.asInstanceOf[js.Any])
+    inline def laypage_=(x: Laypage): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("laypage")(x.asInstanceOf[js.Any])
     
     @JSGlobal("layui.laytpl")
     @js.native
     def laytpl: Laytpl = js.native
-    @scala.inline
-    def laytpl_=(x: Laytpl): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("laytpl")(x.asInstanceOf[js.Any])
+    inline def laytpl_=(x: Laytpl): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("laytpl")(x.asInstanceOf[js.Any])
     
     @JSGlobal("layui.rate")
     @js.native
     def rate: Rate = js.native
-    @scala.inline
-    def rate_=(x: Rate): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rate")(x.asInstanceOf[js.Any])
+    inline def rate_=(x: Rate): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("rate")(x.asInstanceOf[js.Any])
     
     @JSGlobal("layui.slider")
     @js.native
     def slider: Slider = js.native
-    @scala.inline
-    def slider_=(x: Slider): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("slider")(x.asInstanceOf[js.Any])
+    inline def slider_=(x: Slider): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("slider")(x.asInstanceOf[js.Any])
     
     @JSGlobal("layui.table")
     @js.native
     def table: Table = js.native
-    @scala.inline
-    def table_=(x: Table): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("table")(x.asInstanceOf[js.Any])
+    inline def table_=(x: Table): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("table")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def tree(option: TreeOption): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("tree")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def tree(option: TreeOption): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("tree")(option.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSGlobal("layui.upload")
     @js.native
     def upload: Upload = js.native
-    @scala.inline
-    def upload_=(x: Upload): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("upload")(x.asInstanceOf[js.Any])
+    inline def upload_=(x: Upload): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("upload")(x.asInstanceOf[js.Any])
     
-    @scala.inline
-    def use(mods: String, callback: js.Function1[/* args */ js.Any, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(mods.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
-    @scala.inline
-    def use(mods: js.Array[String], callback: js.Function1[/* args */ js.Any, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(mods.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def use(mods: String, callback: js.Function1[/* args */ js.Any, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(mods.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    inline def use(mods: js.Array[String], callback: js.Function1[/* args */ js.Any, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(mods.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     @JSGlobal("layui.util")
     @js.native
     def util: Util = js.native
-    @scala.inline
-    def util_=(x: Util): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("util")(x.asInstanceOf[js.Any])
+    inline def util_=(x: Util): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("util")(x.asInstanceOf[js.Any])
   }
 }

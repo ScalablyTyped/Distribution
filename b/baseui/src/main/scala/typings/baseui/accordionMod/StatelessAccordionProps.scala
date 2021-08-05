@@ -26,61 +26,43 @@ trait StatelessAccordionProps extends StObject {
 }
 object StatelessAccordionProps {
   
-  @scala.inline
-  def apply(expanded: js.Array[Key]): StatelessAccordionProps = {
+  inline def apply(expanded: js.Array[Key]): StatelessAccordionProps = {
     val __obj = js.Dynamic.literal(expanded = expanded.asInstanceOf[js.Any])
     __obj.asInstanceOf[StatelessAccordionProps]
   }
   
-  @scala.inline
-  implicit class StatelessAccordionPropsMutableBuilder[Self <: StatelessAccordionProps] (val x: Self) extends AnyVal {
+  extension [Self <: StatelessAccordionProps](x: Self) {
     
-    @scala.inline
-    def setAccordion(value: Boolean): Self = StObject.set(x, "accordion", value.asInstanceOf[js.Any])
+    inline def setAccordion(value: Boolean): Self = StObject.set(x, "accordion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccordionUndefined: Self = StObject.set(x, "accordion", js.undefined)
+    inline def setAccordionUndefined: Self = StObject.set(x, "accordion", js.undefined)
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setExpanded(value: js.Array[Key]): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
+    inline def setExpanded(value: js.Array[Key]): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpandedVarargs(value: Key*): Self = StObject.set(x, "expanded", js.Array(value :_*))
+    inline def setExpandedVarargs(value: Key*): Self = StObject.set(x, "expanded", js.Array(value :_*))
     
-    @scala.inline
-    def setOnChange(value: /* args */ typings.baseui.anon.Key => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    inline def setOnChange(value: /* args */ typings.baseui.anon.Key => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+    inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
-    @scala.inline
-    def setOverrides(value: AccordionOverrides[SharedProps] & PanelOverrides[SharedProps]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
+    inline def setOverrides(value: AccordionOverrides[SharedProps] & PanelOverrides[SharedProps]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
+    inline def setOverridesUndefined: Self = StObject.set(x, "overrides", js.undefined)
     
-    @scala.inline
-    def setRenderAll(value: Boolean): Self = StObject.set(x, "renderAll", value.asInstanceOf[js.Any])
+    inline def setRenderAll(value: Boolean): Self = StObject.set(x, "renderAll", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderAllUndefined: Self = StObject.set(x, "renderAll", js.undefined)
+    inline def setRenderAllUndefined: Self = StObject.set(x, "renderAll", js.undefined)
     
-    @scala.inline
-    def setRenderPanelContent(value: Boolean): Self = StObject.set(x, "renderPanelContent", value.asInstanceOf[js.Any])
+    inline def setRenderPanelContent(value: Boolean): Self = StObject.set(x, "renderPanelContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRenderPanelContentUndefined: Self = StObject.set(x, "renderPanelContent", js.undefined)
+    inline def setRenderPanelContentUndefined: Self = StObject.set(x, "renderPanelContent", js.undefined)
   }
 }

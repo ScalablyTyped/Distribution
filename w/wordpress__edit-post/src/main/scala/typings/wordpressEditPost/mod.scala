@@ -50,8 +50,7 @@ object mod {
     */
   object PluginDocumentSettingPanel {
     
-    @scala.inline
-    def apply(props: typings.wordpressEditPost.pluginDocumentSettingPanelMod.PluginDocumentSettingPanel.Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(props: typings.wordpressEditPost.pluginDocumentSettingPanelMod.PluginDocumentSettingPanel.Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@wordpress/edit-post", "PluginDocumentSettingPanel")
     @js.native
@@ -60,8 +59,7 @@ object mod {
     @JSImport("@wordpress/edit-post", "PluginDocumentSettingPanel.Slot")
     @js.native
     def Slot: FC[OmitPropsname] = js.native
-    @scala.inline
-    def Slot_=(x: FC[OmitPropsname]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Slot")(x.asInstanceOf[js.Any])
+    inline def Slot_=(x: FC[OmitPropsname]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Slot")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@wordpress/edit-post", "PluginMoreMenuItem")
@@ -89,8 +87,7 @@ object mod {
     */
   object PluginPostPublishPanel {
     
-    @scala.inline
-    def apply(props: typings.wordpressEditPost.pluginPostPublishPanelMod.PluginPostPublishPanel.Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(props: typings.wordpressEditPost.pluginPostPublishPanelMod.PluginPostPublishPanel.Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@wordpress/edit-post", "PluginPostPublishPanel")
     @js.native
@@ -99,8 +96,7 @@ object mod {
     @JSImport("@wordpress/edit-post", "PluginPostPublishPanel.Slot")
     @js.native
     def Slot: FC[OmitPropsname] = js.native
-    @scala.inline
-    def Slot_=(x: FC[OmitPropsname]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Slot")(x.asInstanceOf[js.Any])
+    inline def Slot_=(x: FC[OmitPropsname]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Slot")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -121,8 +117,7 @@ object mod {
     */
   object PluginPostStatusInfo {
     
-    @scala.inline
-    def apply(props: typings.wordpressEditPost.pluginPostStatusInfoMod.PluginPostStatusInfo.Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(props: typings.wordpressEditPost.pluginPostStatusInfoMod.PluginPostStatusInfo.Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@wordpress/edit-post", "PluginPostStatusInfo")
     @js.native
@@ -131,8 +126,7 @@ object mod {
     @JSImport("@wordpress/edit-post", "PluginPostStatusInfo.Slot")
     @js.native
     def Slot: FC[OmitPropsname] = js.native
-    @scala.inline
-    def Slot_=(x: FC[OmitPropsname]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Slot")(x.asInstanceOf[js.Any])
+    inline def Slot_=(x: FC[OmitPropsname]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Slot")(x.asInstanceOf[js.Any])
   }
   
   /**
@@ -156,8 +150,7 @@ object mod {
     */
   object PluginPrePublishPanel {
     
-    @scala.inline
-    def apply(props: typings.wordpressEditPost.pluginPrePublishPanelMod.PluginPrePublishPanel.Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    inline def apply(props: typings.wordpressEditPost.pluginPrePublishPanelMod.PluginPrePublishPanel.Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("@wordpress/edit-post", "PluginPrePublishPanel")
     @js.native
@@ -166,8 +159,7 @@ object mod {
     @JSImport("@wordpress/edit-post", "PluginPrePublishPanel.Slot")
     @js.native
     def Slot: FC[OmitPropsname] = js.native
-    @scala.inline
-    def Slot_=(x: FC[OmitPropsname]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Slot")(x.asInstanceOf[js.Any])
+    inline def Slot_=(x: FC[OmitPropsname]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Slot")(x.asInstanceOf[js.Any])
   }
   
   @JSImport("@wordpress/edit-post", "PluginSidebar")
@@ -180,10 +172,8 @@ object mod {
     typings.wordpressEditPost.pluginSidebarMoreMenuItemMod.PluginSidebarMoreMenuItem.Props
   ] = js.native
   
-  @scala.inline
-  def initializeEditor(id: String, postType: String, postId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeEditor")(id.asInstanceOf[js.Any], postType.asInstanceOf[js.Any], postId.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def initializeEditor(
+  inline def initializeEditor(id: String, postType: String, postId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeEditor")(id.asInstanceOf[js.Any], postType.asInstanceOf[js.Any], postId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def initializeEditor(
     id: String,
     postType: String,
     postId: String,
@@ -191,10 +181,8 @@ object mod {
     // FIXME: it is unclear what this is
   initialEdits: js.Object
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeEditor")(id.asInstanceOf[js.Any], postType.asInstanceOf[js.Any], postId.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], initialEdits.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def initializeEditor(id: String, postType: String, postId: String, settings: PartialEditorSettings): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeEditor")(id.asInstanceOf[js.Any], postType.asInstanceOf[js.Any], postId.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def initializeEditor(
+  inline def initializeEditor(id: String, postType: String, postId: String, settings: PartialEditorSettings): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeEditor")(id.asInstanceOf[js.Any], postType.asInstanceOf[js.Any], postId.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def initializeEditor(
     id: String,
     postType: String,
     postId: String,
@@ -202,10 +190,8 @@ object mod {
     // FIXME: it is unclear what this is
   initialEdits: js.Object
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeEditor")(id.asInstanceOf[js.Any], postType.asInstanceOf[js.Any], postId.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], initialEdits.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def initializeEditor(id: String, postType: String, postId: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeEditor")(id.asInstanceOf[js.Any], postType.asInstanceOf[js.Any], postId.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def initializeEditor(
+  inline def initializeEditor(id: String, postType: String, postId: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeEditor")(id.asInstanceOf[js.Any], postType.asInstanceOf[js.Any], postId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def initializeEditor(
     id: String,
     postType: String,
     postId: Double,
@@ -213,10 +199,8 @@ object mod {
     // FIXME: it is unclear what this is
   initialEdits: js.Object
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeEditor")(id.asInstanceOf[js.Any], postType.asInstanceOf[js.Any], postId.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], initialEdits.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def initializeEditor(id: String, postType: String, postId: Double, settings: PartialEditorSettings): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeEditor")(id.asInstanceOf[js.Any], postType.asInstanceOf[js.Any], postId.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def initializeEditor(
+  inline def initializeEditor(id: String, postType: String, postId: Double, settings: PartialEditorSettings): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeEditor")(id.asInstanceOf[js.Any], postType.asInstanceOf[js.Any], postId.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def initializeEditor(
     id: String,
     postType: String,
     postId: Double,
@@ -225,10 +209,8 @@ object mod {
   initialEdits: js.Object
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeEditor")(id.asInstanceOf[js.Any], postType.asInstanceOf[js.Any], postId.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], initialEdits.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def reinitializeEditor(postType: String, postId: String, target: typings.std.Element): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reinitializeEditor")(postType.asInstanceOf[js.Any], postId.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def reinitializeEditor(
+  inline def reinitializeEditor(postType: String, postId: String, target: typings.std.Element): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reinitializeEditor")(postType.asInstanceOf[js.Any], postId.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def reinitializeEditor(
     postType: String,
     postId: String,
     target: typings.std.Element,
@@ -236,10 +218,8 @@ object mod {
     // FIXME: it is unclear what this is
   initialEdits: js.Object
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reinitializeEditor")(postType.asInstanceOf[js.Any], postId.asInstanceOf[js.Any], target.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], initialEdits.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def reinitializeEditor(postType: String, postId: String, target: typings.std.Element, settings: PartialEditorSettings): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reinitializeEditor")(postType.asInstanceOf[js.Any], postId.asInstanceOf[js.Any], target.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def reinitializeEditor(
+  inline def reinitializeEditor(postType: String, postId: String, target: typings.std.Element, settings: PartialEditorSettings): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reinitializeEditor")(postType.asInstanceOf[js.Any], postId.asInstanceOf[js.Any], target.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def reinitializeEditor(
     postType: String,
     postId: String,
     target: typings.std.Element,
@@ -247,10 +227,8 @@ object mod {
     // FIXME: it is unclear what this is
   initialEdits: js.Object
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reinitializeEditor")(postType.asInstanceOf[js.Any], postId.asInstanceOf[js.Any], target.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], initialEdits.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def reinitializeEditor(postType: String, postId: Double, target: typings.std.Element): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reinitializeEditor")(postType.asInstanceOf[js.Any], postId.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def reinitializeEditor(
+  inline def reinitializeEditor(postType: String, postId: Double, target: typings.std.Element): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reinitializeEditor")(postType.asInstanceOf[js.Any], postId.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def reinitializeEditor(
     postType: String,
     postId: Double,
     target: typings.std.Element,
@@ -258,10 +236,8 @@ object mod {
     // FIXME: it is unclear what this is
   initialEdits: js.Object
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reinitializeEditor")(postType.asInstanceOf[js.Any], postId.asInstanceOf[js.Any], target.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], initialEdits.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def reinitializeEditor(postType: String, postId: Double, target: typings.std.Element, settings: PartialEditorSettings): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reinitializeEditor")(postType.asInstanceOf[js.Any], postId.asInstanceOf[js.Any], target.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Unit]
-  @scala.inline
-  def reinitializeEditor(
+  inline def reinitializeEditor(postType: String, postId: Double, target: typings.std.Element, settings: PartialEditorSettings): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reinitializeEditor")(postType.asInstanceOf[js.Any], postId.asInstanceOf[js.Any], target.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def reinitializeEditor(
     postType: String,
     postId: Double,
     target: typings.std.Element,
@@ -277,11 +253,9 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def dispatch_coreeditpost(key: `coreSlashedit-post`): TypeofimportedActions = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(key.asInstanceOf[js.Any]).asInstanceOf[TypeofimportedActions]
+    inline def dispatch_coreeditpost(key: `coreSlashedit-post`): TypeofimportedActions = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(key.asInstanceOf[js.Any]).asInstanceOf[TypeofimportedActions]
     
-    @scala.inline
-    def select_coreeditpost(key: `coreSlashedit-post`): TypeofimportedSelectors = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(key.asInstanceOf[js.Any]).asInstanceOf[TypeofimportedSelectors]
+    inline def select_coreeditpost(key: `coreSlashedit-post`): TypeofimportedSelectors = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(key.asInstanceOf[js.Any]).asInstanceOf[TypeofimportedSelectors]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -291,11 +265,9 @@ object mod {
   trait EditorMode extends StObject
   object EditorMode {
     
-    @scala.inline
-    def text: typings.wordpressEditPost.wordpressEditPostStrings.text = "text".asInstanceOf[typings.wordpressEditPost.wordpressEditPostStrings.text]
+    inline def text: typings.wordpressEditPost.wordpressEditPostStrings.text = "text".asInstanceOf[typings.wordpressEditPost.wordpressEditPostStrings.text]
     
-    @scala.inline
-    def visual: typings.wordpressEditPost.wordpressEditPostStrings.visual = "visual".asInstanceOf[typings.wordpressEditPost.wordpressEditPostStrings.visual]
+    inline def visual: typings.wordpressEditPost.wordpressEditPostStrings.visual = "visual".asInstanceOf[typings.wordpressEditPost.wordpressEditPostStrings.visual]
   }
   
   trait EditorSettings extends StObject {
@@ -422,8 +394,7 @@ object mod {
   }
   object EditorSettings {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       alignWide: Boolean,
       allowedBlockTypes: js.Array[String] | Boolean,
       autosaveInterval: Double,
@@ -454,110 +425,75 @@ object mod {
       __obj.asInstanceOf[EditorSettings]
     }
     
-    @scala.inline
-    implicit class EditorSettingsMutableBuilder[Self <: EditorSettings] (val x: Self) extends AnyVal {
+    extension [Self <: EditorSettings](x: Self) {
       
-      @scala.inline
-      def setAlignWide(value: Boolean): Self = StObject.set(x, "alignWide", value.asInstanceOf[js.Any])
+      inline def setAlignWide(value: Boolean): Self = StObject.set(x, "alignWide", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedBlockTypes(value: js.Array[String] | Boolean): Self = StObject.set(x, "allowedBlockTypes", value.asInstanceOf[js.Any])
+      inline def setAllowedBlockTypes(value: js.Array[String] | Boolean): Self = StObject.set(x, "allowedBlockTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedBlockTypesVarargs(value: String*): Self = StObject.set(x, "allowedBlockTypes", js.Array(value :_*))
+      inline def setAllowedBlockTypesVarargs(value: String*): Self = StObject.set(x, "allowedBlockTypes", js.Array(value :_*))
       
-      @scala.inline
-      def setAllowedMimeTypes(value: Record[String, String]): Self = StObject.set(x, "allowedMimeTypes", value.asInstanceOf[js.Any])
+      inline def setAllowedMimeTypes(value: Record[String, String]): Self = StObject.set(x, "allowedMimeTypes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAllowedMimeTypesNull: Self = StObject.set(x, "allowedMimeTypes", null)
+      inline def setAllowedMimeTypesNull: Self = StObject.set(x, "allowedMimeTypes", null)
       
-      @scala.inline
-      def setAutosaveInterval(value: Double): Self = StObject.set(x, "autosaveInterval", value.asInstanceOf[js.Any])
+      inline def setAutosaveInterval(value: Double): Self = StObject.set(x, "autosaveInterval", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailableLegacyWidgets(value: js.Array[Description]): Self = StObject.set(x, "availableLegacyWidgets", value.asInstanceOf[js.Any])
+      inline def setAvailableLegacyWidgets(value: js.Array[Description]): Self = StObject.set(x, "availableLegacyWidgets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailableLegacyWidgetsVarargs(value: Description*): Self = StObject.set(x, "availableLegacyWidgets", js.Array(value :_*))
+      inline def setAvailableLegacyWidgetsVarargs(value: Description*): Self = StObject.set(x, "availableLegacyWidgets", js.Array(value :_*))
       
-      @scala.inline
-      def setAvailableTemplates(value: js.Array[js.Any]): Self = StObject.set(x, "availableTemplates", value.asInstanceOf[js.Any])
+      inline def setAvailableTemplates(value: js.Array[js.Any]): Self = StObject.set(x, "availableTemplates", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAvailableTemplatesVarargs(value: js.Any*): Self = StObject.set(x, "availableTemplates", js.Array(value :_*))
+      inline def setAvailableTemplatesVarargs(value: js.Any*): Self = StObject.set(x, "availableTemplates", js.Array(value :_*))
       
-      @scala.inline
-      def setBodyPlaceholder(value: String): Self = StObject.set(x, "bodyPlaceholder", value.asInstanceOf[js.Any])
+      inline def setBodyPlaceholder(value: String): Self = StObject.set(x, "bodyPlaceholder", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCodeEditingEnabled(value: Boolean): Self = StObject.set(x, "codeEditingEnabled", value.asInstanceOf[js.Any])
+      inline def setCodeEditingEnabled(value: Boolean): Self = StObject.set(x, "codeEditingEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColors(value: js.Array[Color]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+      inline def setColors(value: js.Array[Color]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorsVarargs(value: Color*): Self = StObject.set(x, "colors", js.Array(value :_*))
+      inline def setColorsVarargs(value: Color*): Self = StObject.set(x, "colors", js.Array(value :_*))
       
-      @scala.inline
-      def setDisableCustomColors(value: Boolean): Self = StObject.set(x, "disableCustomColors", value.asInstanceOf[js.Any])
+      inline def setDisableCustomColors(value: Boolean): Self = StObject.set(x, "disableCustomColors", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableCustomFontSizes(value: Boolean): Self = StObject.set(x, "disableCustomFontSizes", value.asInstanceOf[js.Any])
+      inline def setDisableCustomFontSizes(value: Boolean): Self = StObject.set(x, "disableCustomFontSizes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisablePostFormats(value: Boolean): Self = StObject.set(x, "disablePostFormats", value.asInstanceOf[js.Any])
+      inline def setDisablePostFormats(value: Boolean): Self = StObject.set(x, "disablePostFormats", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnableCustomFields(value: Boolean): Self = StObject.set(x, "enableCustomFields", value.asInstanceOf[js.Any])
+      inline def setEnableCustomFields(value: Boolean): Self = StObject.set(x, "enableCustomFields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFocusMode(value: Boolean): Self = StObject.set(x, "focusMode", value.asInstanceOf[js.Any])
+      inline def setFocusMode(value: Boolean): Self = StObject.set(x, "focusMode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSizes(value: js.Array[Name]): Self = StObject.set(x, "fontSizes", value.asInstanceOf[js.Any])
+      inline def setFontSizes(value: js.Array[Name]): Self = StObject.set(x, "fontSizes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFontSizesVarargs(value: Name*): Self = StObject.set(x, "fontSizes", js.Array(value :_*))
+      inline def setFontSizesVarargs(value: Name*): Self = StObject.set(x, "fontSizes", js.Array(value :_*))
       
-      @scala.inline
-      def setHasFixedToolbar(value: Boolean): Self = StObject.set(x, "hasFixedToolbar", value.asInstanceOf[js.Any])
+      inline def setHasFixedToolbar(value: Boolean): Self = StObject.set(x, "hasFixedToolbar", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHasPermissionsToManageWidgets(value: Boolean): Self = StObject.set(x, "hasPermissionsToManageWidgets", value.asInstanceOf[js.Any])
+      inline def setHasPermissionsToManageWidgets(value: Boolean): Self = StObject.set(x, "hasPermissionsToManageWidgets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageSizes(value: js.Array[Slug]): Self = StObject.set(x, "imageSizes", value.asInstanceOf[js.Any])
+      inline def setImageSizes(value: js.Array[Slug]): Self = StObject.set(x, "imageSizes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImageSizesVarargs(value: Slug*): Self = StObject.set(x, "imageSizes", js.Array(value :_*))
+      inline def setImageSizesVarargs(value: Slug*): Self = StObject.set(x, "imageSizes", js.Array(value :_*))
       
-      @scala.inline
-      def setIsRTL(value: Boolean): Self = StObject.set(x, "isRTL", value.asInstanceOf[js.Any])
+      inline def setIsRTL(value: Boolean): Self = StObject.set(x, "isRTL", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUploadFileSize(value: Double): Self = StObject.set(x, "maxUploadFileSize", value.asInstanceOf[js.Any])
+      inline def setMaxUploadFileSize(value: Double): Self = StObject.set(x, "maxUploadFileSize", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
+      inline def setMaxWidth(value: Double): Self = StObject.set(x, "maxWidth", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostLock(value: IsLocked): Self = StObject.set(x, "postLock", value.asInstanceOf[js.Any])
+      inline def setPostLock(value: IsLocked): Self = StObject.set(x, "postLock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPostLockUtils(value: AjaxUrl): Self = StObject.set(x, "postLockUtils", value.asInstanceOf[js.Any])
+      inline def setPostLockUtils(value: AjaxUrl): Self = StObject.set(x, "postLockUtils", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRichEditingEnabled(value: Boolean): Self = StObject.set(x, "richEditingEnabled", value.asInstanceOf[js.Any])
+      inline def setRichEditingEnabled(value: Boolean): Self = StObject.set(x, "richEditingEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyles(value: js.Array[Css]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+      inline def setStyles(value: js.Array[Css]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStylesVarargs(value: Css*): Self = StObject.set(x, "styles", js.Array(value :_*))
+      inline def setStylesVarargs(value: Css*): Self = StObject.set(x, "styles", js.Array(value :_*))
       
-      @scala.inline
-      def setTitlePlaceholder(value: String): Self = StObject.set(x, "titlePlaceholder", value.asInstanceOf[js.Any])
+      inline def setTitlePlaceholder(value: String): Self = StObject.set(x, "titlePlaceholder", value.asInstanceOf[js.Any])
     }
   }
   
@@ -569,20 +505,16 @@ object mod {
   }
   object MetaboxDescriptor {
     
-    @scala.inline
-    def apply(id: String, title: String): MetaboxDescriptor = {
+    inline def apply(id: String, title: String): MetaboxDescriptor = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[MetaboxDescriptor]
     }
     
-    @scala.inline
-    implicit class MetaboxDescriptorMutableBuilder[Self <: MetaboxDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: MetaboxDescriptor](x: Self) {
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
   }
   
@@ -594,13 +526,10 @@ object mod {
   trait MetaboxLocation extends StObject
   object MetaboxLocation {
     
-    @scala.inline
-    def advanced: typings.wordpressEditPost.wordpressEditPostStrings.advanced = "advanced".asInstanceOf[typings.wordpressEditPost.wordpressEditPostStrings.advanced]
+    inline def advanced: typings.wordpressEditPost.wordpressEditPostStrings.advanced = "advanced".asInstanceOf[typings.wordpressEditPost.wordpressEditPostStrings.advanced]
     
-    @scala.inline
-    def normal: typings.wordpressEditPost.wordpressEditPostStrings.normal = "normal".asInstanceOf[typings.wordpressEditPost.wordpressEditPostStrings.normal]
+    inline def normal: typings.wordpressEditPost.wordpressEditPostStrings.normal = "normal".asInstanceOf[typings.wordpressEditPost.wordpressEditPostStrings.normal]
     
-    @scala.inline
-    def side: typings.wordpressEditPost.wordpressEditPostStrings.side = "side".asInstanceOf[typings.wordpressEditPost.wordpressEditPostStrings.side]
+    inline def side: typings.wordpressEditPost.wordpressEditPostStrings.side = "side".asInstanceOf[typings.wordpressEditPost.wordpressEditPostStrings.side]
   }
 }

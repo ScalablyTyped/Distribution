@@ -28,31 +28,23 @@ trait IotEventsAction extends StObject {
 }
 object IotEventsAction {
   
-  @scala.inline
-  def apply(inputName: InputName, roleArn: AwsArn): IotEventsAction = {
+  inline def apply(inputName: InputName, roleArn: AwsArn): IotEventsAction = {
     val __obj = js.Dynamic.literal(inputName = inputName.asInstanceOf[js.Any], roleArn = roleArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[IotEventsAction]
   }
   
-  @scala.inline
-  implicit class IotEventsActionMutableBuilder[Self <: IotEventsAction] (val x: Self) extends AnyVal {
+  extension [Self <: IotEventsAction](x: Self) {
     
-    @scala.inline
-    def setBatchMode(value: BatchMode): Self = StObject.set(x, "batchMode", value.asInstanceOf[js.Any])
+    inline def setBatchMode(value: BatchMode): Self = StObject.set(x, "batchMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchModeUndefined: Self = StObject.set(x, "batchMode", js.undefined)
+    inline def setBatchModeUndefined: Self = StObject.set(x, "batchMode", js.undefined)
     
-    @scala.inline
-    def setInputName(value: InputName): Self = StObject.set(x, "inputName", value.asInstanceOf[js.Any])
+    inline def setInputName(value: InputName): Self = StObject.set(x, "inputName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageId(value: MessageId): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
+    inline def setMessageId(value: MessageId): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
+    inline def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
   }
 }

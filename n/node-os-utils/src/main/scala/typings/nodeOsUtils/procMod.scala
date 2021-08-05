@@ -27,8 +27,7 @@ object procMod {
   }
   object Proc {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       totalProcesses: () => js.Promise[Double | String],
       zombieProcesses: () => js.Promise[Double | String]
     ): Proc = {
@@ -36,14 +35,11 @@ object procMod {
       __obj.asInstanceOf[Proc]
     }
     
-    @scala.inline
-    implicit class ProcMutableBuilder[Self <: Proc] (val x: Self) extends AnyVal {
+    extension [Self <: Proc](x: Self) {
       
-      @scala.inline
-      def setTotalProcesses(value: () => js.Promise[Double | String]): Self = StObject.set(x, "totalProcesses", js.Any.fromFunction0(value))
+      inline def setTotalProcesses(value: () => js.Promise[Double | String]): Self = StObject.set(x, "totalProcesses", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setZombieProcesses(value: () => js.Promise[Double | String]): Self = StObject.set(x, "zombieProcesses", js.Any.fromFunction0(value))
+      inline def setZombieProcesses(value: () => js.Promise[Double | String]): Self = StObject.set(x, "zombieProcesses", js.Any.fromFunction0(value))
     }
   }
 }

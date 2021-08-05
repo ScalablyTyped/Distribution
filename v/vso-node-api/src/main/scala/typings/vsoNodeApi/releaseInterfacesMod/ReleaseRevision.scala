@@ -24,8 +24,7 @@ trait ReleaseRevision extends StObject {
 }
 object ReleaseRevision {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     changeDetails: String,
     changeType: String,
     changedBy: IdentityRef,
@@ -38,28 +37,20 @@ object ReleaseRevision {
     __obj.asInstanceOf[ReleaseRevision]
   }
   
-  @scala.inline
-  implicit class ReleaseRevisionMutableBuilder[Self <: ReleaseRevision] (val x: Self) extends AnyVal {
+  extension [Self <: ReleaseRevision](x: Self) {
     
-    @scala.inline
-    def setChangeDetails(value: String): Self = StObject.set(x, "changeDetails", value.asInstanceOf[js.Any])
+    inline def setChangeDetails(value: String): Self = StObject.set(x, "changeDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeType(value: String): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
+    inline def setChangeType(value: String): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangedBy(value: IdentityRef): Self = StObject.set(x, "changedBy", value.asInstanceOf[js.Any])
+    inline def setChangedBy(value: IdentityRef): Self = StObject.set(x, "changedBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangedDate(value: Date): Self = StObject.set(x, "changedDate", value.asInstanceOf[js.Any])
+    inline def setChangedDate(value: Date): Self = StObject.set(x, "changedDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
+    inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefinitionSnapshotRevision(value: Double): Self = StObject.set(x, "definitionSnapshotRevision", value.asInstanceOf[js.Any])
+    inline def setDefinitionSnapshotRevision(value: Double): Self = StObject.set(x, "definitionSnapshotRevision", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReleaseId(value: Double): Self = StObject.set(x, "releaseId", value.asInstanceOf[js.Any])
+    inline def setReleaseId(value: Double): Self = StObject.set(x, "releaseId", value.asInstanceOf[js.Any])
   }
 }

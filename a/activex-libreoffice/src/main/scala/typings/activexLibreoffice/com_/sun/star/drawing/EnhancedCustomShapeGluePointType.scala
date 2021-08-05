@@ -19,16 +19,12 @@ object EnhancedCustomShapeGluePointType {
   trait Constants extends StObject
   object Constants {
     
-    @scala.inline
-    def CUSTOM: `2` = 2.asInstanceOf[`2`]
+    inline def CUSTOM: `2` = 2.asInstanceOf[`2`]
     
-    @scala.inline
-    def NONE: `0` = 0.asInstanceOf[`0`]
+    inline def NONE: `0` = 0.asInstanceOf[`0`]
     
-    @scala.inline
-    def RECT: `3` = 3.asInstanceOf[`3`]
+    inline def RECT: `3` = 3.asInstanceOf[`3`]
     
-    @scala.inline
-    def SEGMENTS: `1` = 1.asInstanceOf[`1`]
+    inline def SEGMENTS: `1` = 1.asInstanceOf[`1`]
   }
 }

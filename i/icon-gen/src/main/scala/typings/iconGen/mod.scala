@@ -8,10 +8,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(src: String, dest: String): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
-  @scala.inline
-  def apply(src: String, dest: String, options: Options): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  inline def apply(src: String, dest: String): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  inline def apply(src: String, dest: String, options: Options): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   
   @JSImport("icon-gen", JSImport.Namespace)
   @js.native
@@ -29,38 +27,28 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setFavicon(value: Ico | js.Object): Self = StObject.set(x, "favicon", value.asInstanceOf[js.Any])
+      inline def setFavicon(value: Ico | js.Object): Self = StObject.set(x, "favicon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFaviconUndefined: Self = StObject.set(x, "favicon", js.undefined)
+      inline def setFaviconUndefined: Self = StObject.set(x, "favicon", js.undefined)
       
-      @scala.inline
-      def setIcns(value: Name | js.Object): Self = StObject.set(x, "icns", value.asInstanceOf[js.Any])
+      inline def setIcns(value: Name | js.Object): Self = StObject.set(x, "icns", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIcnsUndefined: Self = StObject.set(x, "icns", js.undefined)
+      inline def setIcnsUndefined: Self = StObject.set(x, "icns", js.undefined)
       
-      @scala.inline
-      def setIco(value: Name | js.Object): Self = StObject.set(x, "ico", value.asInstanceOf[js.Any])
+      inline def setIco(value: Name | js.Object): Self = StObject.set(x, "ico", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIcoUndefined: Self = StObject.set(x, "ico", js.undefined)
+      inline def setIcoUndefined: Self = StObject.set(x, "ico", js.undefined)
       
-      @scala.inline
-      def setReport(value: Boolean): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
+      inline def setReport(value: Boolean): Self = StObject.set(x, "report", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReportUndefined: Self = StObject.set(x, "report", js.undefined)
+      inline def setReportUndefined: Self = StObject.set(x, "report", js.undefined)
     }
   }
 }

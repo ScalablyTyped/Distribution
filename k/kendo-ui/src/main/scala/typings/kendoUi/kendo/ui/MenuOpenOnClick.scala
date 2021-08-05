@@ -12,25 +12,19 @@ trait MenuOpenOnClick extends StObject {
 }
 object MenuOpenOnClick {
   
-  @scala.inline
-  def apply(): MenuOpenOnClick = {
+  inline def apply(): MenuOpenOnClick = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MenuOpenOnClick]
   }
   
-  @scala.inline
-  implicit class MenuOpenOnClickMutableBuilder[Self <: MenuOpenOnClick] (val x: Self) extends AnyVal {
+  extension [Self <: MenuOpenOnClick](x: Self) {
     
-    @scala.inline
-    def setRootMenuItems(value: Boolean): Self = StObject.set(x, "rootMenuItems", value.asInstanceOf[js.Any])
+    inline def setRootMenuItems(value: Boolean): Self = StObject.set(x, "rootMenuItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootMenuItemsUndefined: Self = StObject.set(x, "rootMenuItems", js.undefined)
+    inline def setRootMenuItemsUndefined: Self = StObject.set(x, "rootMenuItems", js.undefined)
     
-    @scala.inline
-    def setSubMenuItems(value: Boolean): Self = StObject.set(x, "subMenuItems", value.asInstanceOf[js.Any])
+    inline def setSubMenuItems(value: Boolean): Self = StObject.set(x, "subMenuItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubMenuItemsUndefined: Self = StObject.set(x, "subMenuItems", js.undefined)
+    inline def setSubMenuItemsUndefined: Self = StObject.set(x, "subMenuItems", js.undefined)
   }
 }

@@ -13,16 +13,13 @@ trait RejectInputDeviceTransferRequest extends StObject {
 }
 object RejectInputDeviceTransferRequest {
   
-  @scala.inline
-  def apply(InputDeviceId: string): RejectInputDeviceTransferRequest = {
+  inline def apply(InputDeviceId: string): RejectInputDeviceTransferRequest = {
     val __obj = js.Dynamic.literal(InputDeviceId = InputDeviceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[RejectInputDeviceTransferRequest]
   }
   
-  @scala.inline
-  implicit class RejectInputDeviceTransferRequestMutableBuilder[Self <: RejectInputDeviceTransferRequest] (val x: Self) extends AnyVal {
+  extension [Self <: RejectInputDeviceTransferRequest](x: Self) {
     
-    @scala.inline
-    def setInputDeviceId(value: string): Self = StObject.set(x, "InputDeviceId", value.asInstanceOf[js.Any])
+    inline def setInputDeviceId(value: string): Self = StObject.set(x, "InputDeviceId", value.asInstanceOf[js.Any])
   }
 }

@@ -11,19 +11,15 @@ trait Jwt extends StObject {
 }
 object Jwt {
   
-  @scala.inline
-  def apply(): Jwt = {
+  inline def apply(): Jwt = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Jwt]
   }
   
-  @scala.inline
-  implicit class JwtMutableBuilder[Self <: Jwt] (val x: Self) extends AnyVal {
+  extension [Self <: Jwt](x: Self) {
     
-    @scala.inline
-    def setCompactJwt(value: String): Self = StObject.set(x, "compactJwt", value.asInstanceOf[js.Any])
+    inline def setCompactJwt(value: String): Self = StObject.set(x, "compactJwt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompactJwtUndefined: Self = StObject.set(x, "compactJwt", js.undefined)
+    inline def setCompactJwtUndefined: Self = StObject.set(x, "compactJwt", js.undefined)
   }
 }

@@ -18,31 +18,23 @@ trait Id extends StObject {
 }
 object Id {
   
-  @scala.inline
-  def apply(id: String, key: String, scope: String, store: String): Id = {
+  inline def apply(id: String, key: String, scope: String, store: String): Id = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], store = store.asInstanceOf[js.Any])
     __obj.asInstanceOf[Id]
   }
   
-  @scala.inline
-  implicit class IdMutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
+  extension [Self <: Id](x: Self) {
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReq(value: js.Object): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
+    inline def setReq(value: js.Object): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
+    inline def setReqUndefined: Self = StObject.set(x, "req", js.undefined)
     
-    @scala.inline
-    def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: String): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStore(value: String): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+    inline def setStore(value: String): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
   }
 }

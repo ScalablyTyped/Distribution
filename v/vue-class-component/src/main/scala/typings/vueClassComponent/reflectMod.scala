@@ -14,9 +14,7 @@ object reflectMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def copyReflectionMetadata(to: VueConstructor[Vue], from: VueClass[Vue]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copyReflectionMetadata")(to.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def copyReflectionMetadata(to: VueConstructor[Vue], from: VueClass[Vue]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copyReflectionMetadata")(to.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @scala.inline
-  def reflectionIsSupported(): `false` | (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Reflect.getOwnMetadataKeys */ js.Any) = ^.asInstanceOf[js.Dynamic].applyDynamic("reflectionIsSupported")().asInstanceOf[`false` | (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Reflect.getOwnMetadataKeys */ js.Any)]
+  inline def reflectionIsSupported(): `false` | (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Reflect.getOwnMetadataKeys */ js.Any) = ^.asInstanceOf[js.Dynamic].applyDynamic("reflectionIsSupported")().asInstanceOf[`false` | (/* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Reflect.getOwnMetadataKeys */ js.Any)]
 }

@@ -57,8 +57,7 @@ trait XLinkageSupport
 }
 object XLinkageSupport {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     LinkURL: String,
     acquire: () => Unit,
     breakLink: (XStorage, String) => Unit,
@@ -74,19 +73,14 @@ object XLinkageSupport {
     __obj.asInstanceOf[XLinkageSupport]
   }
   
-  @scala.inline
-  implicit class XLinkageSupportMutableBuilder[Self <: XLinkageSupport] (val x: Self) extends AnyVal {
+  extension [Self <: XLinkageSupport](x: Self) {
     
-    @scala.inline
-    def setBreakLink(value: (XStorage, String) => Unit): Self = StObject.set(x, "breakLink", js.Any.fromFunction2(value))
+    inline def setBreakLink(value: (XStorage, String) => Unit): Self = StObject.set(x, "breakLink", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetLinkURL(value: () => String): Self = StObject.set(x, "getLinkURL", js.Any.fromFunction0(value))
+    inline def setGetLinkURL(value: () => String): Self = StObject.set(x, "getLinkURL", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setIsLink(value: () => Boolean): Self = StObject.set(x, "isLink", js.Any.fromFunction0(value))
+    inline def setIsLink(value: () => Boolean): Self = StObject.set(x, "isLink", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLinkURL(value: String): Self = StObject.set(x, "LinkURL", value.asInstanceOf[js.Any])
+    inline def setLinkURL(value: String): Self = StObject.set(x, "LinkURL", value.asInstanceOf[js.Any])
   }
 }

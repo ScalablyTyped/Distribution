@@ -17,16 +17,11 @@ object CylinderGeometry {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def createGeometry(cylinderGeometry: CylinderGeometry): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("createGeometry")(cylinderGeometry.asInstanceOf[js.Any]).asInstanceOf[Geometry]
+  inline def createGeometry(cylinderGeometry: CylinderGeometry): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("createGeometry")(cylinderGeometry.asInstanceOf[js.Any]).asInstanceOf[Geometry]
   
   /* static member */
-  @scala.inline
-  def unpack(array: js.Array[Double]): CylinderGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any]).asInstanceOf[CylinderGeometry]
-  @scala.inline
-  def unpack(array: js.Array[Double], startingIndex: Double): CylinderGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[CylinderGeometry]
-  @scala.inline
-  def unpack(array: js.Array[Double], startingIndex: Double, result: CylinderGeometry): CylinderGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[CylinderGeometry]
-  @scala.inline
-  def unpack(array: js.Array[Double], startingIndex: Unit, result: CylinderGeometry): CylinderGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[CylinderGeometry]
+  inline def unpack(array: js.Array[Double]): CylinderGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any]).asInstanceOf[CylinderGeometry]
+  inline def unpack(array: js.Array[Double], startingIndex: Double): CylinderGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[CylinderGeometry]
+  inline def unpack(array: js.Array[Double], startingIndex: Double, result: CylinderGeometry): CylinderGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[CylinderGeometry]
+  inline def unpack(array: js.Array[Double], startingIndex: Unit, result: CylinderGeometry): CylinderGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[CylinderGeometry]
 }

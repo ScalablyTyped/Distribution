@@ -61,12 +61,12 @@ object mod extends Shortcut {
     /**
       * A renderer member for a parser instance
       */
-    var renderer: Renderer[T] = js.native
+    /* protected */ var renderer: Renderer[T] = js.native
     
     /**
       * A tags collection for a parser instance
       */
-    var tags: StringDictionary[Tag[Linkify]] = js.native
+    /* protected */ var tags: StringDictionary[Tag[Linkify]] = js.native
     
     /**
       * Method for converting a bbcode to HTML
@@ -105,7 +105,7 @@ object mod extends Shortcut {
     /**
       * The children of a tag object, with type ReactNode array
       */
-    var children: js.Array[ReactNode] = js.native
+    /* protected */ var children: js.Array[ReactNode] = js.native
     
     /**
       * Getter method of the "children" member of the Tag instance
@@ -124,22 +124,22 @@ object mod extends Shortcut {
     /**
       * Tag name, with type string
       */
-    var name: String = js.native
+    /* protected */ var name: String = js.native
     
     /**
       * A "params" object for inner processing
       */
-    var params: /* import warning: importer.ImportType#apply Failed type conversion: bbcode-to-react.bbcode-to-react.TagType['params'] */ js.Any = js.native
+    /* protected */ var params: /* import warning: importer.ImportType#apply Failed type conversion: bbcode-to-react.bbcode-to-react.TagType['params'] */ js.Any = js.native
     
     /**
       * The parent of a tag object, with type ReactNode
       */
-    var parent: ReactNode = js.native
+    /* protected */ var parent: ReactNode = js.native
     
     /**
       * The inner text of a tag object, with type string
       */
-    var text: String = js.native
+    /* protected */ var text: String = js.native
     
     /**
       * Method for converting a tag instance to HTML
@@ -210,8 +210,7 @@ object mod extends Shortcut {
   }
   object Renderer {
     
-    @scala.inline
-    def apply[optionType](
+    inline def apply[optionType](
       context: (optionType, js.Function0[js.Array[String]]) => js.Function0[js.Array[String]],
       contexts: js.Array[optionType],
       cosmeticReplace: String => String,
@@ -224,32 +223,23 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Renderer[optionType]]
     }
     
-    @scala.inline
-    implicit class RendererMutableBuilder[Self <: Renderer[?], optionType] (val x: Self & Renderer[optionType]) extends AnyVal {
+    extension [Self <: Renderer[?], optionType](x: Self & Renderer[optionType]) {
       
-      @scala.inline
-      def setContext(value: (optionType, js.Function0[js.Array[String]]) => js.Function0[js.Array[String]]): Self = StObject.set(x, "context", js.Any.fromFunction2(value))
+      inline def setContext(value: (optionType, js.Function0[js.Array[String]]) => js.Function0[js.Array[String]]): Self = StObject.set(x, "context", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setContexts(value: js.Array[optionType]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
+      inline def setContexts(value: js.Array[optionType]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContextsVarargs(value: optionType*): Self = StObject.set(x, "contexts", js.Array(value :_*))
+      inline def setContextsVarargs(value: optionType*): Self = StObject.set(x, "contexts", js.Array(value :_*))
       
-      @scala.inline
-      def setCosmeticReplace(value: String => String): Self = StObject.set(x, "cosmeticReplace", js.Any.fromFunction1(value))
+      inline def setCosmeticReplace(value: String => String): Self = StObject.set(x, "cosmeticReplace", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setEscape(value: String => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
+      inline def setEscape(value: String => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLinkify(value: String => String): Self = StObject.set(x, "linkify", js.Any.fromFunction1(value))
+      inline def setLinkify(value: String => String): Self = StObject.set(x, "linkify", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOptions(value: optionType): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: optionType): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStrip(value: String => String): Self = StObject.set(x, "strip", js.Any.fromFunction1(value))
+      inline def setStrip(value: String => String): Self = StObject.set(x, "strip", js.Any.fromFunction1(value))
     }
   }
   
@@ -285,35 +275,26 @@ object mod extends Shortcut {
   }
   object TagType {
     
-    @scala.inline
-    def apply(children: js.Array[ReactNode], name: String, params: js.Object, text: String): TagType = {
+    inline def apply(children: js.Array[ReactNode], name: String, params: js.Object, text: String): TagType = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[TagType]
     }
     
-    @scala.inline
-    implicit class TagTypeMutableBuilder[Self <: TagType] (val x: Self) extends AnyVal {
+    extension [Self <: TagType](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: ReactNode*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      inline def setParams(value: js.Object): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParent(value: ReactNode): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+      inline def setParent(value: ReactNode): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
+      inline def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
       
-      @scala.inline
-      def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+      inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
   }
   

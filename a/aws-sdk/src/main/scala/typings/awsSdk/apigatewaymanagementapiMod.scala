@@ -83,20 +83,16 @@ object apigatewaymanagementapiMod {
   }
   object ClientApiVersions {
     
-    @scala.inline
-    def apply(): ClientApiVersions = {
+    inline def apply(): ClientApiVersions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    @scala.inline
-    implicit class ClientApiVersionsMutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
+    extension [Self <: ClientApiVersions](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
     }
   }
   
@@ -113,17 +109,14 @@ object apigatewaymanagementapiMod {
   }
   object DeleteConnectionRequest {
     
-    @scala.inline
-    def apply(ConnectionId: string): DeleteConnectionRequest = {
+    inline def apply(ConnectionId: string): DeleteConnectionRequest = {
       val __obj = js.Dynamic.literal(ConnectionId = ConnectionId.asInstanceOf[js.Any])
       __obj.asInstanceOf[DeleteConnectionRequest]
     }
     
-    @scala.inline
-    implicit class DeleteConnectionRequestMutableBuilder[Self <: DeleteConnectionRequest] (val x: Self) extends AnyVal {
+    extension [Self <: DeleteConnectionRequest](x: Self) {
       
-      @scala.inline
-      def setConnectionId(value: string): Self = StObject.set(x, "ConnectionId", value.asInstanceOf[js.Any])
+      inline def setConnectionId(value: string): Self = StObject.set(x, "ConnectionId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -133,17 +126,14 @@ object apigatewaymanagementapiMod {
   }
   object GetConnectionRequest {
     
-    @scala.inline
-    def apply(ConnectionId: string): GetConnectionRequest = {
+    inline def apply(ConnectionId: string): GetConnectionRequest = {
       val __obj = js.Dynamic.literal(ConnectionId = ConnectionId.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetConnectionRequest]
     }
     
-    @scala.inline
-    implicit class GetConnectionRequestMutableBuilder[Self <: GetConnectionRequest] (val x: Self) extends AnyVal {
+    extension [Self <: GetConnectionRequest](x: Self) {
       
-      @scala.inline
-      def setConnectionId(value: string): Self = StObject.set(x, "ConnectionId", value.asInstanceOf[js.Any])
+      inline def setConnectionId(value: string): Self = StObject.set(x, "ConnectionId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -163,32 +153,24 @@ object apigatewaymanagementapiMod {
   }
   object GetConnectionResponse {
     
-    @scala.inline
-    def apply(): GetConnectionResponse = {
+    inline def apply(): GetConnectionResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetConnectionResponse]
     }
     
-    @scala.inline
-    implicit class GetConnectionResponseMutableBuilder[Self <: GetConnectionResponse] (val x: Self) extends AnyVal {
+    extension [Self <: GetConnectionResponse](x: Self) {
       
-      @scala.inline
-      def setConnectedAt(value: timestampIso8601): Self = StObject.set(x, "ConnectedAt", value.asInstanceOf[js.Any])
+      inline def setConnectedAt(value: timestampIso8601): Self = StObject.set(x, "ConnectedAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConnectedAtUndefined: Self = StObject.set(x, "ConnectedAt", js.undefined)
+      inline def setConnectedAtUndefined: Self = StObject.set(x, "ConnectedAt", js.undefined)
       
-      @scala.inline
-      def setIdentity(value: Identity): Self = StObject.set(x, "Identity", value.asInstanceOf[js.Any])
+      inline def setIdentity(value: Identity): Self = StObject.set(x, "Identity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIdentityUndefined: Self = StObject.set(x, "Identity", js.undefined)
+      inline def setIdentityUndefined: Self = StObject.set(x, "Identity", js.undefined)
       
-      @scala.inline
-      def setLastActiveAt(value: timestampIso8601): Self = StObject.set(x, "LastActiveAt", value.asInstanceOf[js.Any])
+      inline def setLastActiveAt(value: timestampIso8601): Self = StObject.set(x, "LastActiveAt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLastActiveAtUndefined: Self = StObject.set(x, "LastActiveAt", js.undefined)
+      inline def setLastActiveAtUndefined: Self = StObject.set(x, "LastActiveAt", js.undefined)
     }
   }
   
@@ -206,20 +188,16 @@ object apigatewaymanagementapiMod {
   }
   object Identity {
     
-    @scala.inline
-    def apply(SourceIp: string, UserAgent: string): Identity = {
+    inline def apply(SourceIp: string, UserAgent: string): Identity = {
       val __obj = js.Dynamic.literal(SourceIp = SourceIp.asInstanceOf[js.Any], UserAgent = UserAgent.asInstanceOf[js.Any])
       __obj.asInstanceOf[Identity]
     }
     
-    @scala.inline
-    implicit class IdentityMutableBuilder[Self <: Identity] (val x: Self) extends AnyVal {
+    extension [Self <: Identity](x: Self) {
       
-      @scala.inline
-      def setSourceIp(value: string): Self = StObject.set(x, "SourceIp", value.asInstanceOf[js.Any])
+      inline def setSourceIp(value: string): Self = StObject.set(x, "SourceIp", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserAgent(value: string): Self = StObject.set(x, "UserAgent", value.asInstanceOf[js.Any])
+      inline def setUserAgent(value: string): Self = StObject.set(x, "UserAgent", value.asInstanceOf[js.Any])
     }
   }
   
@@ -237,20 +215,16 @@ object apigatewaymanagementapiMod {
   }
   object PostToConnectionRequest {
     
-    @scala.inline
-    def apply(ConnectionId: string, Data: Data): PostToConnectionRequest = {
+    inline def apply(ConnectionId: string, Data: Data): PostToConnectionRequest = {
       val __obj = js.Dynamic.literal(ConnectionId = ConnectionId.asInstanceOf[js.Any], Data = Data.asInstanceOf[js.Any])
       __obj.asInstanceOf[PostToConnectionRequest]
     }
     
-    @scala.inline
-    implicit class PostToConnectionRequestMutableBuilder[Self <: PostToConnectionRequest] (val x: Self) extends AnyVal {
+    extension [Self <: PostToConnectionRequest](x: Self) {
       
-      @scala.inline
-      def setConnectionId(value: string): Self = StObject.set(x, "ConnectionId", value.asInstanceOf[js.Any])
+      inline def setConnectionId(value: string): Self = StObject.set(x, "ConnectionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setData(value: Data): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
+      inline def setData(value: Data): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     }
   }
   

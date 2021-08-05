@@ -19,34 +19,25 @@ trait X500NameParamcertissuerst extends StObject {
 }
 object X500NameParamcertissuerst {
   
-  @scala.inline
-  def apply(C: String, CN: String, O: String): X500NameParamcertissuerst = {
+  inline def apply(C: String, CN: String, O: String): X500NameParamcertissuerst = {
     val __obj = js.Dynamic.literal(C = C.asInstanceOf[js.Any], CN = CN.asInstanceOf[js.Any], O = O.asInstanceOf[js.Any])
     __obj.asInstanceOf[X500NameParamcertissuerst]
   }
   
-  @scala.inline
-  implicit class X500NameParamcertissuerstMutableBuilder[Self <: X500NameParamcertissuerst] (val x: Self) extends AnyVal {
+  extension [Self <: X500NameParamcertissuerst](x: Self) {
     
-    @scala.inline
-    def setC(value: String): Self = StObject.set(x, "C", value.asInstanceOf[js.Any])
+    inline def setC(value: String): Self = StObject.set(x, "C", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCN(value: String): Self = StObject.set(x, "CN", value.asInstanceOf[js.Any])
+    inline def setCN(value: String): Self = StObject.set(x, "CN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertissuer(value: String): Self = StObject.set(x, "certissuer", value.asInstanceOf[js.Any])
+    inline def setCertissuer(value: String): Self = StObject.set(x, "certissuer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertissuerUndefined: Self = StObject.set(x, "certissuer", js.undefined)
+    inline def setCertissuerUndefined: Self = StObject.set(x, "certissuer", js.undefined)
     
-    @scala.inline
-    def setCertsubject(value: String): Self = StObject.set(x, "certsubject", value.asInstanceOf[js.Any])
+    inline def setCertsubject(value: String): Self = StObject.set(x, "certsubject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertsubjectUndefined: Self = StObject.set(x, "certsubject", js.undefined)
+    inline def setCertsubjectUndefined: Self = StObject.set(x, "certsubject", js.undefined)
     
-    @scala.inline
-    def setO(value: String): Self = StObject.set(x, "O", value.asInstanceOf[js.Any])
+    inline def setO(value: String): Self = StObject.set(x, "O", value.asInstanceOf[js.Any])
   }
 }

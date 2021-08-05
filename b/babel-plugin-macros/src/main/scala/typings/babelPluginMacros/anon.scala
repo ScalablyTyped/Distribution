@@ -6149,20 +6149,16 @@ object anon {
   }
   object defaultArrayNodePathNodeR {
     
-    @scala.inline
-    def apply(default: js.Array[NodePath[typings.babelTypes.mod.Node]]): defaultArrayNodePathNodeR = {
+    inline def apply(default: js.Array[NodePath[typings.babelTypes.mod.Node]]): defaultArrayNodePathNodeR = {
       val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
       __obj.asInstanceOf[defaultArrayNodePathNodeR]
     }
     
-    @scala.inline
-    implicit class defaultArrayNodePathNodeRMutableBuilder[Self <: defaultArrayNodePathNodeR] (val x: Self) extends AnyVal {
+    extension [Self <: defaultArrayNodePathNodeR](x: Self) {
       
-      @scala.inline
-      def setDefault(value: js.Array[NodePath[typings.babelTypes.mod.Node]]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      inline def setDefault(value: js.Array[NodePath[typings.babelTypes.mod.Node]]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultVarargs(value: NodePath[typings.babelTypes.mod.Node]*): Self = StObject.set(x, "default", js.Array(value :_*))
+      inline def setDefaultVarargs(value: NodePath[typings.babelTypes.mod.Node]*): Self = StObject.set(x, "default", js.Array(value :_*))
     }
   }
 }

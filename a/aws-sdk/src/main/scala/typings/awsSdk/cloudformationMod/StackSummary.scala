@@ -63,70 +63,49 @@ trait StackSummary extends StObject {
 }
 object StackSummary {
   
-  @scala.inline
-  def apply(CreationTime: CreationTime, StackName: StackName, StackStatus: StackStatus): StackSummary = {
+  inline def apply(CreationTime: CreationTime, StackName: StackName, StackStatus: StackStatus): StackSummary = {
     val __obj = js.Dynamic.literal(CreationTime = CreationTime.asInstanceOf[js.Any], StackName = StackName.asInstanceOf[js.Any], StackStatus = StackStatus.asInstanceOf[js.Any])
     __obj.asInstanceOf[StackSummary]
   }
   
-  @scala.inline
-  implicit class StackSummaryMutableBuilder[Self <: StackSummary] (val x: Self) extends AnyVal {
+  extension [Self <: StackSummary](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: CreationTime): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletionTime(value: DeletionTime): Self = StObject.set(x, "DeletionTime", value.asInstanceOf[js.Any])
+    inline def setDeletionTime(value: DeletionTime): Self = StObject.set(x, "DeletionTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletionTimeUndefined: Self = StObject.set(x, "DeletionTime", js.undefined)
+    inline def setDeletionTimeUndefined: Self = StObject.set(x, "DeletionTime", js.undefined)
     
-    @scala.inline
-    def setDriftInformation(value: StackDriftInformationSummary): Self = StObject.set(x, "DriftInformation", value.asInstanceOf[js.Any])
+    inline def setDriftInformation(value: StackDriftInformationSummary): Self = StObject.set(x, "DriftInformation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDriftInformationUndefined: Self = StObject.set(x, "DriftInformation", js.undefined)
+    inline def setDriftInformationUndefined: Self = StObject.set(x, "DriftInformation", js.undefined)
     
-    @scala.inline
-    def setLastUpdatedTime(value: LastUpdatedTime): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
+    inline def setLastUpdatedTime(value: LastUpdatedTime): Self = StObject.set(x, "LastUpdatedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
+    inline def setLastUpdatedTimeUndefined: Self = StObject.set(x, "LastUpdatedTime", js.undefined)
     
-    @scala.inline
-    def setParentId(value: StackId): Self = StObject.set(x, "ParentId", value.asInstanceOf[js.Any])
+    inline def setParentId(value: StackId): Self = StObject.set(x, "ParentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentIdUndefined: Self = StObject.set(x, "ParentId", js.undefined)
+    inline def setParentIdUndefined: Self = StObject.set(x, "ParentId", js.undefined)
     
-    @scala.inline
-    def setRootId(value: StackId): Self = StObject.set(x, "RootId", value.asInstanceOf[js.Any])
+    inline def setRootId(value: StackId): Self = StObject.set(x, "RootId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootIdUndefined: Self = StObject.set(x, "RootId", js.undefined)
+    inline def setRootIdUndefined: Self = StObject.set(x, "RootId", js.undefined)
     
-    @scala.inline
-    def setStackId(value: StackId): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
+    inline def setStackId(value: StackId): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
+    inline def setStackIdUndefined: Self = StObject.set(x, "StackId", js.undefined)
     
-    @scala.inline
-    def setStackName(value: StackName): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
+    inline def setStackName(value: StackName): Self = StObject.set(x, "StackName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackStatus(value: StackStatus): Self = StObject.set(x, "StackStatus", value.asInstanceOf[js.Any])
+    inline def setStackStatus(value: StackStatus): Self = StObject.set(x, "StackStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackStatusReason(value: StackStatusReason): Self = StObject.set(x, "StackStatusReason", value.asInstanceOf[js.Any])
+    inline def setStackStatusReason(value: StackStatusReason): Self = StObject.set(x, "StackStatusReason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStackStatusReasonUndefined: Self = StObject.set(x, "StackStatusReason", js.undefined)
+    inline def setStackStatusReasonUndefined: Self = StObject.set(x, "StackStatusReason", js.undefined)
     
-    @scala.inline
-    def setTemplateDescription(value: TemplateDescription): Self = StObject.set(x, "TemplateDescription", value.asInstanceOf[js.Any])
+    inline def setTemplateDescription(value: TemplateDescription): Self = StObject.set(x, "TemplateDescription", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTemplateDescriptionUndefined: Self = StObject.set(x, "TemplateDescription", js.undefined)
+    inline def setTemplateDescriptionUndefined: Self = StObject.set(x, "TemplateDescription", js.undefined)
   }
 }

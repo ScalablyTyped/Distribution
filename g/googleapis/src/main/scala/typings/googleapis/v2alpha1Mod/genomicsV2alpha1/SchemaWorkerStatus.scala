@@ -37,43 +37,31 @@ trait SchemaWorkerStatus extends StObject {
 }
 object SchemaWorkerStatus {
   
-  @scala.inline
-  def apply(): SchemaWorkerStatus = {
+  inline def apply(): SchemaWorkerStatus = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaWorkerStatus]
   }
   
-  @scala.inline
-  implicit class SchemaWorkerStatusMutableBuilder[Self <: SchemaWorkerStatus] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaWorkerStatus](x: Self) {
     
-    @scala.inline
-    def setAttachedDisks(value: StringDictionary[SchemaDiskStatus]): Self = StObject.set(x, "attachedDisks", value.asInstanceOf[js.Any])
+    inline def setAttachedDisks(value: StringDictionary[SchemaDiskStatus]): Self = StObject.set(x, "attachedDisks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttachedDisksUndefined: Self = StObject.set(x, "attachedDisks", js.undefined)
+    inline def setAttachedDisksUndefined: Self = StObject.set(x, "attachedDisks", js.undefined)
     
-    @scala.inline
-    def setBootDisk(value: SchemaDiskStatus): Self = StObject.set(x, "bootDisk", value.asInstanceOf[js.Any])
+    inline def setBootDisk(value: SchemaDiskStatus): Self = StObject.set(x, "bootDisk", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBootDiskUndefined: Self = StObject.set(x, "bootDisk", js.undefined)
+    inline def setBootDiskUndefined: Self = StObject.set(x, "bootDisk", js.undefined)
     
-    @scala.inline
-    def setFreeRamBytes(value: String): Self = StObject.set(x, "freeRamBytes", value.asInstanceOf[js.Any])
+    inline def setFreeRamBytes(value: String): Self = StObject.set(x, "freeRamBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFreeRamBytesUndefined: Self = StObject.set(x, "freeRamBytes", js.undefined)
+    inline def setFreeRamBytesUndefined: Self = StObject.set(x, "freeRamBytes", js.undefined)
     
-    @scala.inline
-    def setTotalRamBytes(value: String): Self = StObject.set(x, "totalRamBytes", value.asInstanceOf[js.Any])
+    inline def setTotalRamBytes(value: String): Self = StObject.set(x, "totalRamBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTotalRamBytesUndefined: Self = StObject.set(x, "totalRamBytes", js.undefined)
+    inline def setTotalRamBytesUndefined: Self = StObject.set(x, "totalRamBytes", js.undefined)
     
-    @scala.inline
-    def setUptimeSeconds(value: String): Self = StObject.set(x, "uptimeSeconds", value.asInstanceOf[js.Any])
+    inline def setUptimeSeconds(value: String): Self = StObject.set(x, "uptimeSeconds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUptimeSecondsUndefined: Self = StObject.set(x, "uptimeSeconds", js.undefined)
+    inline def setUptimeSecondsUndefined: Self = StObject.set(x, "uptimeSeconds", js.undefined)
   }
 }

@@ -19,8 +19,7 @@ trait LIncomingMessages extends StObject {
 }
 object LIncomingMessages {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     lIncomingMessages: Double,
     lOutgoingMessages: Double,
     lQueuedMessages: Double,
@@ -31,22 +30,16 @@ object LIncomingMessages {
     __obj.asInstanceOf[LIncomingMessages]
   }
   
-  @scala.inline
-  implicit class LIncomingMessagesMutableBuilder[Self <: LIncomingMessages] (val x: Self) extends AnyVal {
+  extension [Self <: LIncomingMessages](x: Self) {
     
-    @scala.inline
-    def setLIncomingMessages(value: Double): Self = StObject.set(x, "lIncomingMessages", value.asInstanceOf[js.Any])
+    inline def setLIncomingMessages(value: Double): Self = StObject.set(x, "lIncomingMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLOutgoingMessages(value: Double): Self = StObject.set(x, "lOutgoingMessages", value.asInstanceOf[js.Any])
+    inline def setLOutgoingMessages(value: Double): Self = StObject.set(x, "lOutgoingMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLQueuedMessages(value: Double): Self = StObject.set(x, "lQueuedMessages", value.asInstanceOf[js.Any])
+    inline def setLQueuedMessages(value: Double): Self = StObject.set(x, "lQueuedMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLRoutingMessages(value: Double): Self = StObject.set(x, "lRoutingMessages", value.asInstanceOf[js.Any])
+    inline def setLRoutingMessages(value: Double): Self = StObject.set(x, "lRoutingMessages", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPFaxServer(value: FaxServer): Self = StObject.set(x, "pFaxServer", value.asInstanceOf[js.Any])
+    inline def setPFaxServer(value: FaxServer): Self = StObject.set(x, "pFaxServer", value.asInstanceOf[js.Any])
   }
 }

@@ -17,23 +17,18 @@ trait AssemblyBlock
 }
 object AssemblyBlock {
   
-  @scala.inline
-  def apply(operations: js.Array[AssemblyItem]): AssemblyBlock = {
+  inline def apply(operations: js.Array[AssemblyItem]): AssemblyBlock = {
     val __obj = js.Dynamic.literal(operations = operations.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("AssemblyBlock")
     __obj.asInstanceOf[AssemblyBlock]
   }
   
-  @scala.inline
-  implicit class AssemblyBlockMutableBuilder[Self <: AssemblyBlock] (val x: Self) extends AnyVal {
+  extension [Self <: AssemblyBlock](x: Self) {
     
-    @scala.inline
-    def setOperations(value: js.Array[AssemblyItem]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
+    inline def setOperations(value: js.Array[AssemblyItem]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperationsVarargs(value: AssemblyItem*): Self = StObject.set(x, "operations", js.Array(value :_*))
+    inline def setOperationsVarargs(value: AssemblyItem*): Self = StObject.set(x, "operations", js.Array(value :_*))
     
-    @scala.inline
-    def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyBlock): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyBlock): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

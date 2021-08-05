@@ -41,52 +41,37 @@ trait SettingsMetadata extends StObject {
 }
 object SettingsMetadata {
   
-  @scala.inline
-  def apply(): SettingsMetadata = {
+  inline def apply(): SettingsMetadata = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SettingsMetadata]
   }
   
-  @scala.inline
-  implicit class SettingsMetadataMutableBuilder[Self <: SettingsMetadata] (val x: Self) extends AnyVal {
+  extension [Self <: SettingsMetadata](x: Self) {
     
-    @scala.inline
-    def setIs21CFRPart11(value: String): Self = StObject.set(x, "is21CFRPart11", value.asInstanceOf[js.Any])
+    inline def setIs21CFRPart11(value: String): Self = StObject.set(x, "is21CFRPart11", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs21CFRPart11Undefined: Self = StObject.set(x, "is21CFRPart11", js.undefined)
+    inline def setIs21CFRPart11Undefined: Self = StObject.set(x, "is21CFRPart11", js.undefined)
     
-    @scala.inline
-    def setOptions(value: js.Array[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Array[String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
+    inline def setOptionsVarargs(value: String*): Self = StObject.set(x, "options", js.Array(value :_*))
     
-    @scala.inline
-    def setRights(value: String): Self = StObject.set(x, "rights", value.asInstanceOf[js.Any])
+    inline def setRights(value: String): Self = StObject.set(x, "rights", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightsUndefined: Self = StObject.set(x, "rights", js.undefined)
+    inline def setRightsUndefined: Self = StObject.set(x, "rights", js.undefined)
     
-    @scala.inline
-    def setUiHint(value: String): Self = StObject.set(x, "uiHint", value.asInstanceOf[js.Any])
+    inline def setUiHint(value: String): Self = StObject.set(x, "uiHint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUiHintUndefined: Self = StObject.set(x, "uiHint", js.undefined)
+    inline def setUiHintUndefined: Self = StObject.set(x, "uiHint", js.undefined)
     
-    @scala.inline
-    def setUiOrder(value: String): Self = StObject.set(x, "uiOrder", value.asInstanceOf[js.Any])
+    inline def setUiOrder(value: String): Self = StObject.set(x, "uiOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUiOrderUndefined: Self = StObject.set(x, "uiOrder", js.undefined)
+    inline def setUiOrderUndefined: Self = StObject.set(x, "uiOrder", js.undefined)
     
-    @scala.inline
-    def setUiType(value: String): Self = StObject.set(x, "uiType", value.asInstanceOf[js.Any])
+    inline def setUiType(value: String): Self = StObject.set(x, "uiType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUiTypeUndefined: Self = StObject.set(x, "uiType", js.undefined)
+    inline def setUiTypeUndefined: Self = StObject.set(x, "uiType", js.undefined)
   }
 }

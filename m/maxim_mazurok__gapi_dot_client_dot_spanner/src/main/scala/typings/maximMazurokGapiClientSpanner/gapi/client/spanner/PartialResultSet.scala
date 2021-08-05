@@ -44,46 +44,33 @@ trait PartialResultSet extends StObject {
 }
 object PartialResultSet {
   
-  @scala.inline
-  def apply(): PartialResultSet = {
+  inline def apply(): PartialResultSet = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialResultSet]
   }
   
-  @scala.inline
-  implicit class PartialResultSetMutableBuilder[Self <: PartialResultSet] (val x: Self) extends AnyVal {
+  extension [Self <: PartialResultSet](x: Self) {
     
-    @scala.inline
-    def setChunkedValue(value: Boolean): Self = StObject.set(x, "chunkedValue", value.asInstanceOf[js.Any])
+    inline def setChunkedValue(value: Boolean): Self = StObject.set(x, "chunkedValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChunkedValueUndefined: Self = StObject.set(x, "chunkedValue", js.undefined)
+    inline def setChunkedValueUndefined: Self = StObject.set(x, "chunkedValue", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: ResultSetMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: ResultSetMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setResumeToken(value: String): Self = StObject.set(x, "resumeToken", value.asInstanceOf[js.Any])
+    inline def setResumeToken(value: String): Self = StObject.set(x, "resumeToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResumeTokenUndefined: Self = StObject.set(x, "resumeToken", js.undefined)
+    inline def setResumeTokenUndefined: Self = StObject.set(x, "resumeToken", js.undefined)
     
-    @scala.inline
-    def setStats(value: ResultSetStats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
+    inline def setStats(value: ResultSetStats): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
+    inline def setStatsUndefined: Self = StObject.set(x, "stats", js.undefined)
     
-    @scala.inline
-    def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
+    inline def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
     
-    @scala.inline
-    def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
+    inline def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
   }
 }

@@ -51,52 +51,38 @@ object typesDeregisterStreamConsumerInputMod {
   }
   object DeregisterStreamConsumerInput {
     
-    @scala.inline
-    def apply(): DeregisterStreamConsumerInput = {
+    inline def apply(): DeregisterStreamConsumerInput = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[DeregisterStreamConsumerInput]
     }
     
-    @scala.inline
-    implicit class DeregisterStreamConsumerInputMutableBuilder[Self <: DeregisterStreamConsumerInput] (val x: Self) extends AnyVal {
+    extension [Self <: DeregisterStreamConsumerInput](x: Self) {
       
-      @scala.inline
-      def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
+      inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
+      inline def set$abortSignalUndefined: Self = StObject.set(x, "$abortSignal", js.undefined)
       
-      @scala.inline
-      def set$httpOptions(
+      inline def set$httpOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
       ): Self = StObject.set(x, "$httpOptions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
+      inline def set$httpOptionsUndefined: Self = StObject.set(x, "$httpOptions", js.undefined)
       
-      @scala.inline
-      def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
+      inline def set$maxRetries(value: Double): Self = StObject.set(x, "$maxRetries", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
+      inline def set$maxRetriesUndefined: Self = StObject.set(x, "$maxRetries", js.undefined)
       
-      @scala.inline
-      def setConsumerARN(value: String): Self = StObject.set(x, "ConsumerARN", value.asInstanceOf[js.Any])
+      inline def setConsumerARN(value: String): Self = StObject.set(x, "ConsumerARN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumerARNUndefined: Self = StObject.set(x, "ConsumerARN", js.undefined)
+      inline def setConsumerARNUndefined: Self = StObject.set(x, "ConsumerARN", js.undefined)
       
-      @scala.inline
-      def setConsumerName(value: String): Self = StObject.set(x, "ConsumerName", value.asInstanceOf[js.Any])
+      inline def setConsumerName(value: String): Self = StObject.set(x, "ConsumerName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setConsumerNameUndefined: Self = StObject.set(x, "ConsumerName", js.undefined)
+      inline def setConsumerNameUndefined: Self = StObject.set(x, "ConsumerName", js.undefined)
       
-      @scala.inline
-      def setStreamARN(value: String): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
+      inline def setStreamARN(value: String): Self = StObject.set(x, "StreamARN", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStreamARNUndefined: Self = StObject.set(x, "StreamARN", js.undefined)
+      inline def setStreamARNUndefined: Self = StObject.set(x, "StreamARN", js.undefined)
     }
   }
 }

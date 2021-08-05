@@ -10,16 +10,13 @@ trait IDataWriterFactory extends StObject {
 }
 object IDataWriterFactory {
   
-  @scala.inline
-  def apply(createDataWriter: IOutputStream => DataWriter): IDataWriterFactory = {
+  inline def apply(createDataWriter: IOutputStream => DataWriter): IDataWriterFactory = {
     val __obj = js.Dynamic.literal(createDataWriter = js.Any.fromFunction1(createDataWriter))
     __obj.asInstanceOf[IDataWriterFactory]
   }
   
-  @scala.inline
-  implicit class IDataWriterFactoryMutableBuilder[Self <: IDataWriterFactory] (val x: Self) extends AnyVal {
+  extension [Self <: IDataWriterFactory](x: Self) {
     
-    @scala.inline
-    def setCreateDataWriter(value: IOutputStream => DataWriter): Self = StObject.set(x, "createDataWriter", js.Any.fromFunction1(value))
+    inline def setCreateDataWriter(value: IOutputStream => DataWriter): Self = StObject.set(x, "createDataWriter", js.Any.fromFunction1(value))
   }
 }

@@ -18,10 +18,8 @@ object TSNumberKeyword {
   @js.native
   def apply(): TSNumberKeyword = js.native
   
-  @scala.inline
-  implicit class TSNumberKeywordMutableBuilder[Self <: TSNumberKeyword] (val x: Self) extends AnyVal {
+  extension [Self <: TSNumberKeyword](x: Self) {
     
-    @scala.inline
-    def setType(value: typings.babelTypes.babelTypesStrings.TSNumberKeyword): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.babelTypes.babelTypesStrings.TSNumberKeyword): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

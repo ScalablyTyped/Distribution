@@ -12,19 +12,15 @@ trait Am extends StObject {
 }
 object Am {
   
-  @scala.inline
-  def apply(am: String, pm: String): Am = {
+  inline def apply(am: String, pm: String): Am = {
     val __obj = js.Dynamic.literal(am = am.asInstanceOf[js.Any], pm = pm.asInstanceOf[js.Any])
     __obj.asInstanceOf[Am]
   }
   
-  @scala.inline
-  implicit class AmMutableBuilder[Self <: Am] (val x: Self) extends AnyVal {
+  extension [Self <: Am](x: Self) {
     
-    @scala.inline
-    def setAm(value: String): Self = StObject.set(x, "am", value.asInstanceOf[js.Any])
+    inline def setAm(value: String): Self = StObject.set(x, "am", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPm(value: String): Self = StObject.set(x, "pm", value.asInstanceOf[js.Any])
+    inline def setPm(value: String): Self = StObject.set(x, "pm", value.asInstanceOf[js.Any])
   }
 }

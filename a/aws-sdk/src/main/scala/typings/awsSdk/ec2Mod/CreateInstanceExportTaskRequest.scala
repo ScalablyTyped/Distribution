@@ -33,8 +33,7 @@ trait CreateInstanceExportTaskRequest extends StObject {
 }
 object CreateInstanceExportTaskRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ExportToS3Task: ExportToS3TaskSpecification,
     InstanceId: InstanceId,
     TargetEnvironment: ExportEnvironment
@@ -43,31 +42,22 @@ object CreateInstanceExportTaskRequest {
     __obj.asInstanceOf[CreateInstanceExportTaskRequest]
   }
   
-  @scala.inline
-  implicit class CreateInstanceExportTaskRequestMutableBuilder[Self <: CreateInstanceExportTaskRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateInstanceExportTaskRequest](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setExportToS3Task(value: ExportToS3TaskSpecification): Self = StObject.set(x, "ExportToS3Task", value.asInstanceOf[js.Any])
+    inline def setExportToS3Task(value: ExportToS3TaskSpecification): Self = StObject.set(x, "ExportToS3Task", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
+    inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagSpecifications(value: TagSpecificationList): Self = StObject.set(x, "TagSpecifications", value.asInstanceOf[js.Any])
+    inline def setTagSpecifications(value: TagSpecificationList): Self = StObject.set(x, "TagSpecifications", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
+    inline def setTagSpecificationsUndefined: Self = StObject.set(x, "TagSpecifications", js.undefined)
     
-    @scala.inline
-    def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
+    inline def setTagSpecificationsVarargs(value: TagSpecification*): Self = StObject.set(x, "TagSpecifications", js.Array(value :_*))
     
-    @scala.inline
-    def setTargetEnvironment(value: ExportEnvironment): Self = StObject.set(x, "TargetEnvironment", value.asInstanceOf[js.Any])
+    inline def setTargetEnvironment(value: ExportEnvironment): Self = StObject.set(x, "TargetEnvironment", value.asInstanceOf[js.Any])
   }
 }

@@ -18,8 +18,7 @@ trait AbstractHandshake extends StObject {
 }
 object AbstractHandshake {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     authType: String,
     authVersion: String,
     deploymentId: String,
@@ -30,22 +29,16 @@ object AbstractHandshake {
     __obj.asInstanceOf[AbstractHandshake]
   }
   
-  @scala.inline
-  implicit class AbstractHandshakeMutableBuilder[Self <: AbstractHandshake] (val x: Self) extends AnyVal {
+  extension [Self <: AbstractHandshake](x: Self) {
     
-    @scala.inline
-    def setAuthType(value: String): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
+    inline def setAuthType(value: String): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthVersion(value: String): Self = StObject.set(x, "authVersion", value.asInstanceOf[js.Any])
+    inline def setAuthVersion(value: String): Self = StObject.set(x, "authVersion", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentId(value: String): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
+    inline def setDeploymentId(value: String): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetHandshakeFields(value: Client => HandshakeFields): Self = StObject.set(x, "getHandshakeFields", js.Any.fromFunction1(value))
+    inline def setGetHandshakeFields(value: Client => HandshakeFields): Self = StObject.set(x, "getHandshakeFields", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSandboxId(value: String): Self = StObject.set(x, "sandboxId", value.asInstanceOf[js.Any])
+    inline def setSandboxId(value: String): Self = StObject.set(x, "sandboxId", value.asInstanceOf[js.Any])
   }
 }

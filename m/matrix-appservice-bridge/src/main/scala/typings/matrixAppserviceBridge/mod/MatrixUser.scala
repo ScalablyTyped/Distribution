@@ -35,6 +35,5 @@ object MatrixUser {
   @JSImport("matrix-appservice-bridge", "MatrixUser.ESCAPE_DEFAULT")
   @js.native
   def ESCAPE_DEFAULT: Boolean = js.native
-  @scala.inline
-  def ESCAPE_DEFAULT_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ESCAPE_DEFAULT")(x.asInstanceOf[js.Any])
+  inline def ESCAPE_DEFAULT_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ESCAPE_DEFAULT")(x.asInstanceOf[js.Any])
 }

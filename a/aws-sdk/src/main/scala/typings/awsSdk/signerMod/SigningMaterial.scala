@@ -13,16 +13,13 @@ trait SigningMaterial extends StObject {
 }
 object SigningMaterial {
   
-  @scala.inline
-  def apply(certificateArn: CertificateArn): SigningMaterial = {
+  inline def apply(certificateArn: CertificateArn): SigningMaterial = {
     val __obj = js.Dynamic.literal(certificateArn = certificateArn.asInstanceOf[js.Any])
     __obj.asInstanceOf[SigningMaterial]
   }
   
-  @scala.inline
-  implicit class SigningMaterialMutableBuilder[Self <: SigningMaterial] (val x: Self) extends AnyVal {
+  extension [Self <: SigningMaterial](x: Self) {
     
-    @scala.inline
-    def setCertificateArn(value: CertificateArn): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
+    inline def setCertificateArn(value: CertificateArn): Self = StObject.set(x, "certificateArn", value.asInstanceOf[js.Any])
   }
 }

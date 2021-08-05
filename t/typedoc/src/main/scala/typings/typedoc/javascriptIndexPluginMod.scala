@@ -14,6 +14,6 @@ object javascriptIndexPluginMod {
     def this(owner: js.Symbol) = this()
     def this(owner: Renderer) = this()
     
-    var onRendererBegin: js.Any = js.native
+    /* private */ var onRendererBegin: js.Any = js.native
   }
 }

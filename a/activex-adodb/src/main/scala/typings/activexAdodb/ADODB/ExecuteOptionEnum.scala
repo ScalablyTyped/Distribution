@@ -23,24 +23,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExecuteOptionEnum extends StObject
 object ExecuteOptionEnum {
   
-  @scala.inline
-  def adAsyncExecute: `16` = 16.asInstanceOf[`16`]
+  inline def adAsyncExecute: `16` = 16.asInstanceOf[`16`]
   
-  @scala.inline
-  def adAsyncFetch: `32` = 32.asInstanceOf[`32`]
+  inline def adAsyncFetch: `32` = 32.asInstanceOf[`32`]
   
-  @scala.inline
-  def adAsyncFetchNonBlocking: `64` = 64.asInstanceOf[`64`]
+  inline def adAsyncFetchNonBlocking: `64` = 64.asInstanceOf[`64`]
   
-  @scala.inline
-  def adExecuteNoRecords: `128` = 128.asInstanceOf[`128`]
+  inline def adExecuteNoRecords: `128` = 128.asInstanceOf[`128`]
   
-  @scala.inline
-  def adExecuteRecord: `2048` = 2048.asInstanceOf[`2048`]
+  inline def adExecuteRecord: `2048` = 2048.asInstanceOf[`2048`]
   
-  @scala.inline
-  def adExecuteStream: `1024` = 1024.asInstanceOf[`1024`]
+  inline def adExecuteStream: `1024` = 1024.asInstanceOf[`1024`]
   
-  @scala.inline
-  def adOptionUnspecified: `-1` = -1.asInstanceOf[`-1`]
+  inline def adOptionUnspecified: `-1` = -1.asInstanceOf[`-1`]
 }

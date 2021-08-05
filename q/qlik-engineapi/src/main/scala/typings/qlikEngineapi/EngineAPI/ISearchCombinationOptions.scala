@@ -54,34 +54,25 @@ trait ISearchCombinationOptions extends StObject {
 }
 object ISearchCombinationOptions {
   
-  @scala.inline
-  def apply(qCharEncoding: Utf8 | Utf16, qContext: ContextType, qSearchFields: js.Array[String]): ISearchCombinationOptions = {
+  inline def apply(qCharEncoding: Utf8 | Utf16, qContext: ContextType, qSearchFields: js.Array[String]): ISearchCombinationOptions = {
     val __obj = js.Dynamic.literal(qCharEncoding = qCharEncoding.asInstanceOf[js.Any], qContext = qContext.asInstanceOf[js.Any], qSearchFields = qSearchFields.asInstanceOf[js.Any])
     __obj.asInstanceOf[ISearchCombinationOptions]
   }
   
-  @scala.inline
-  implicit class ISearchCombinationOptionsMutableBuilder[Self <: ISearchCombinationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ISearchCombinationOptions](x: Self) {
     
-    @scala.inline
-    def setQAttributes(value: js.Array[String]): Self = StObject.set(x, "qAttributes", value.asInstanceOf[js.Any])
+    inline def setQAttributes(value: js.Array[String]): Self = StObject.set(x, "qAttributes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQAttributesUndefined: Self = StObject.set(x, "qAttributes", js.undefined)
+    inline def setQAttributesUndefined: Self = StObject.set(x, "qAttributes", js.undefined)
     
-    @scala.inline
-    def setQAttributesVarargs(value: String*): Self = StObject.set(x, "qAttributes", js.Array(value :_*))
+    inline def setQAttributesVarargs(value: String*): Self = StObject.set(x, "qAttributes", js.Array(value :_*))
     
-    @scala.inline
-    def setQCharEncoding(value: Utf8 | Utf16): Self = StObject.set(x, "qCharEncoding", value.asInstanceOf[js.Any])
+    inline def setQCharEncoding(value: Utf8 | Utf16): Self = StObject.set(x, "qCharEncoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQContext(value: ContextType): Self = StObject.set(x, "qContext", value.asInstanceOf[js.Any])
+    inline def setQContext(value: ContextType): Self = StObject.set(x, "qContext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSearchFields(value: js.Array[String]): Self = StObject.set(x, "qSearchFields", value.asInstanceOf[js.Any])
+    inline def setQSearchFields(value: js.Array[String]): Self = StObject.set(x, "qSearchFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQSearchFieldsVarargs(value: String*): Self = StObject.set(x, "qSearchFields", js.Array(value :_*))
+    inline def setQSearchFieldsVarargs(value: String*): Self = StObject.set(x, "qSearchFields", js.Array(value :_*))
   }
 }

@@ -42,37 +42,27 @@ trait ParamsResourceAppsList
 }
 object ParamsResourceAppsList {
   
-  @scala.inline
-  def apply(): ParamsResourceAppsList = {
+  inline def apply(): ParamsResourceAppsList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceAppsList]
   }
   
-  @scala.inline
-  implicit class ParamsResourceAppsListMutableBuilder[Self <: ParamsResourceAppsList] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceAppsList](x: Self) {
     
-    @scala.inline
-    def setAppFilterExtensions(value: String): Self = StObject.set(x, "appFilterExtensions", value.asInstanceOf[js.Any])
+    inline def setAppFilterExtensions(value: String): Self = StObject.set(x, "appFilterExtensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppFilterExtensionsUndefined: Self = StObject.set(x, "appFilterExtensions", js.undefined)
+    inline def setAppFilterExtensionsUndefined: Self = StObject.set(x, "appFilterExtensions", js.undefined)
     
-    @scala.inline
-    def setAppFilterMimeTypes(value: String): Self = StObject.set(x, "appFilterMimeTypes", value.asInstanceOf[js.Any])
+    inline def setAppFilterMimeTypes(value: String): Self = StObject.set(x, "appFilterMimeTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAppFilterMimeTypesUndefined: Self = StObject.set(x, "appFilterMimeTypes", js.undefined)
+    inline def setAppFilterMimeTypesUndefined: Self = StObject.set(x, "appFilterMimeTypes", js.undefined)
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
+    inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
+    inline def setLanguageCodeUndefined: Self = StObject.set(x, "languageCode", js.undefined)
   }
 }

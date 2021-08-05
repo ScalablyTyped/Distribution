@@ -693,271 +693,183 @@ trait SpaceCSSProperties extends StObject {
 }
 object SpaceCSSProperties {
   
-  @scala.inline
-  def apply(): SpaceCSSProperties = {
+  inline def apply(): SpaceCSSProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SpaceCSSProperties]
   }
   
-  @scala.inline
-  implicit class SpaceCSSPropertiesMutableBuilder[Self <: SpaceCSSProperties] (val x: Self) extends AnyVal {
+  extension [Self <: SpaceCSSProperties](x: Self) {
     
-    @scala.inline
-    def setBottom(value: Space): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
+    inline def setBottom(value: Space): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
+    inline def setBottomUndefined: Self = StObject.set(x, "bottom", js.undefined)
     
-    @scala.inline
-    def setColumnGap(value: Space): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
+    inline def setColumnGap(value: Space): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnGapUndefined: Self = StObject.set(x, "columnGap", js.undefined)
+    inline def setColumnGapUndefined: Self = StObject.set(x, "columnGap", js.undefined)
     
-    @scala.inline
-    def setGap(value: Space): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
+    inline def setGap(value: Space): Self = StObject.set(x, "gap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
+    inline def setGapUndefined: Self = StObject.set(x, "gap", js.undefined)
     
-    @scala.inline
-    def setGridColumnGap(value: Space): Self = StObject.set(x, "gridColumnGap", value.asInstanceOf[js.Any])
+    inline def setGridColumnGap(value: Space): Self = StObject.set(x, "gridColumnGap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridColumnGapUndefined: Self = StObject.set(x, "gridColumnGap", js.undefined)
+    inline def setGridColumnGapUndefined: Self = StObject.set(x, "gridColumnGap", js.undefined)
     
-    @scala.inline
-    def setGridGap(value: Space): Self = StObject.set(x, "gridGap", value.asInstanceOf[js.Any])
+    inline def setGridGap(value: Space): Self = StObject.set(x, "gridGap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridGapUndefined: Self = StObject.set(x, "gridGap", js.undefined)
+    inline def setGridGapUndefined: Self = StObject.set(x, "gridGap", js.undefined)
     
-    @scala.inline
-    def setGridRowGap(value: Space): Self = StObject.set(x, "gridRowGap", value.asInstanceOf[js.Any])
+    inline def setGridRowGap(value: Space): Self = StObject.set(x, "gridRowGap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGridRowGapUndefined: Self = StObject.set(x, "gridRowGap", js.undefined)
+    inline def setGridRowGapUndefined: Self = StObject.set(x, "gridRowGap", js.undefined)
     
-    @scala.inline
-    def setInset(value: Space): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
+    inline def setInset(value: Space): Self = StObject.set(x, "inset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsetBlock(value: Space): Self = StObject.set(x, "insetBlock", value.asInstanceOf[js.Any])
+    inline def setInsetBlock(value: Space): Self = StObject.set(x, "insetBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsetBlockEnd(value: Space): Self = StObject.set(x, "insetBlockEnd", value.asInstanceOf[js.Any])
+    inline def setInsetBlockEnd(value: Space): Self = StObject.set(x, "insetBlockEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsetBlockEndUndefined: Self = StObject.set(x, "insetBlockEnd", js.undefined)
+    inline def setInsetBlockEndUndefined: Self = StObject.set(x, "insetBlockEnd", js.undefined)
     
-    @scala.inline
-    def setInsetBlockStart(value: Space): Self = StObject.set(x, "insetBlockStart", value.asInstanceOf[js.Any])
+    inline def setInsetBlockStart(value: Space): Self = StObject.set(x, "insetBlockStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsetBlockStartUndefined: Self = StObject.set(x, "insetBlockStart", js.undefined)
+    inline def setInsetBlockStartUndefined: Self = StObject.set(x, "insetBlockStart", js.undefined)
     
-    @scala.inline
-    def setInsetBlockUndefined: Self = StObject.set(x, "insetBlock", js.undefined)
+    inline def setInsetBlockUndefined: Self = StObject.set(x, "insetBlock", js.undefined)
     
-    @scala.inline
-    def setInsetInline(value: Space): Self = StObject.set(x, "insetInline", value.asInstanceOf[js.Any])
+    inline def setInsetInline(value: Space): Self = StObject.set(x, "insetInline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsetInlineEnd(value: Space): Self = StObject.set(x, "insetInlineEnd", value.asInstanceOf[js.Any])
+    inline def setInsetInlineEnd(value: Space): Self = StObject.set(x, "insetInlineEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsetInlineEndUndefined: Self = StObject.set(x, "insetInlineEnd", js.undefined)
+    inline def setInsetInlineEndUndefined: Self = StObject.set(x, "insetInlineEnd", js.undefined)
     
-    @scala.inline
-    def setInsetInlineStart(value: Space): Self = StObject.set(x, "insetInlineStart", value.asInstanceOf[js.Any])
+    inline def setInsetInlineStart(value: Space): Self = StObject.set(x, "insetInlineStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInsetInlineStartUndefined: Self = StObject.set(x, "insetInlineStart", js.undefined)
+    inline def setInsetInlineStartUndefined: Self = StObject.set(x, "insetInlineStart", js.undefined)
     
-    @scala.inline
-    def setInsetInlineUndefined: Self = StObject.set(x, "insetInline", js.undefined)
+    inline def setInsetInlineUndefined: Self = StObject.set(x, "insetInline", js.undefined)
     
-    @scala.inline
-    def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
+    inline def setInsetUndefined: Self = StObject.set(x, "inset", js.undefined)
     
-    @scala.inline
-    def setLeft(value: Space): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: Space): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
+    inline def setLeftUndefined: Self = StObject.set(x, "left", js.undefined)
     
-    @scala.inline
-    def setMargin(value: Space): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    inline def setMargin(value: Space): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginBlock(value: Space): Self = StObject.set(x, "marginBlock", value.asInstanceOf[js.Any])
+    inline def setMarginBlock(value: Space): Self = StObject.set(x, "marginBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginBlockEnd(value: Space): Self = StObject.set(x, "marginBlockEnd", value.asInstanceOf[js.Any])
+    inline def setMarginBlockEnd(value: Space): Self = StObject.set(x, "marginBlockEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginBlockEndUndefined: Self = StObject.set(x, "marginBlockEnd", js.undefined)
+    inline def setMarginBlockEndUndefined: Self = StObject.set(x, "marginBlockEnd", js.undefined)
     
-    @scala.inline
-    def setMarginBlockStart(value: Space): Self = StObject.set(x, "marginBlockStart", value.asInstanceOf[js.Any])
+    inline def setMarginBlockStart(value: Space): Self = StObject.set(x, "marginBlockStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginBlockStartUndefined: Self = StObject.set(x, "marginBlockStart", js.undefined)
+    inline def setMarginBlockStartUndefined: Self = StObject.set(x, "marginBlockStart", js.undefined)
     
-    @scala.inline
-    def setMarginBlockUndefined: Self = StObject.set(x, "marginBlock", js.undefined)
+    inline def setMarginBlockUndefined: Self = StObject.set(x, "marginBlock", js.undefined)
     
-    @scala.inline
-    def setMarginBottom(value: Space): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+    inline def setMarginBottom(value: Space): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
+    inline def setMarginBottomUndefined: Self = StObject.set(x, "marginBottom", js.undefined)
     
-    @scala.inline
-    def setMarginInline(value: Space): Self = StObject.set(x, "marginInline", value.asInstanceOf[js.Any])
+    inline def setMarginInline(value: Space): Self = StObject.set(x, "marginInline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginInlineEnd(value: Space): Self = StObject.set(x, "marginInlineEnd", value.asInstanceOf[js.Any])
+    inline def setMarginInlineEnd(value: Space): Self = StObject.set(x, "marginInlineEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginInlineEndUndefined: Self = StObject.set(x, "marginInlineEnd", js.undefined)
+    inline def setMarginInlineEndUndefined: Self = StObject.set(x, "marginInlineEnd", js.undefined)
     
-    @scala.inline
-    def setMarginInlineStart(value: Space): Self = StObject.set(x, "marginInlineStart", value.asInstanceOf[js.Any])
+    inline def setMarginInlineStart(value: Space): Self = StObject.set(x, "marginInlineStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginInlineStartUndefined: Self = StObject.set(x, "marginInlineStart", js.undefined)
+    inline def setMarginInlineStartUndefined: Self = StObject.set(x, "marginInlineStart", js.undefined)
     
-    @scala.inline
-    def setMarginInlineUndefined: Self = StObject.set(x, "marginInline", js.undefined)
+    inline def setMarginInlineUndefined: Self = StObject.set(x, "marginInline", js.undefined)
     
-    @scala.inline
-    def setMarginLeft(value: Space): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+    inline def setMarginLeft(value: Space): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
+    inline def setMarginLeftUndefined: Self = StObject.set(x, "marginLeft", js.undefined)
     
-    @scala.inline
-    def setMarginRight(value: Space): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
+    inline def setMarginRight(value: Space): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
+    inline def setMarginRightUndefined: Self = StObject.set(x, "marginRight", js.undefined)
     
-    @scala.inline
-    def setMarginTop(value: Space): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
+    inline def setMarginTop(value: Space): Self = StObject.set(x, "marginTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
+    inline def setMarginTopUndefined: Self = StObject.set(x, "marginTop", js.undefined)
     
-    @scala.inline
-    def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
+    inline def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
     
-    @scala.inline
-    def setMarginX(value: Space): Self = StObject.set(x, "marginX", value.asInstanceOf[js.Any])
+    inline def setMarginX(value: Space): Self = StObject.set(x, "marginX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginXUndefined: Self = StObject.set(x, "marginX", js.undefined)
+    inline def setMarginXUndefined: Self = StObject.set(x, "marginX", js.undefined)
     
-    @scala.inline
-    def setMarginY(value: Space): Self = StObject.set(x, "marginY", value.asInstanceOf[js.Any])
+    inline def setMarginY(value: Space): Self = StObject.set(x, "marginY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMarginYUndefined: Self = StObject.set(x, "marginY", js.undefined)
+    inline def setMarginYUndefined: Self = StObject.set(x, "marginY", js.undefined)
     
-    @scala.inline
-    def setPadding(value: Space): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: Space): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingBlock(value: Space): Self = StObject.set(x, "paddingBlock", value.asInstanceOf[js.Any])
+    inline def setPaddingBlock(value: Space): Self = StObject.set(x, "paddingBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingBlockEnd(value: Space): Self = StObject.set(x, "paddingBlockEnd", value.asInstanceOf[js.Any])
+    inline def setPaddingBlockEnd(value: Space): Self = StObject.set(x, "paddingBlockEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingBlockEndUndefined: Self = StObject.set(x, "paddingBlockEnd", js.undefined)
+    inline def setPaddingBlockEndUndefined: Self = StObject.set(x, "paddingBlockEnd", js.undefined)
     
-    @scala.inline
-    def setPaddingBlockStart(value: Space): Self = StObject.set(x, "paddingBlockStart", value.asInstanceOf[js.Any])
+    inline def setPaddingBlockStart(value: Space): Self = StObject.set(x, "paddingBlockStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingBlockStartUndefined: Self = StObject.set(x, "paddingBlockStart", js.undefined)
+    inline def setPaddingBlockStartUndefined: Self = StObject.set(x, "paddingBlockStart", js.undefined)
     
-    @scala.inline
-    def setPaddingBlockUndefined: Self = StObject.set(x, "paddingBlock", js.undefined)
+    inline def setPaddingBlockUndefined: Self = StObject.set(x, "paddingBlock", js.undefined)
     
-    @scala.inline
-    def setPaddingBottom(value: Space): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
+    inline def setPaddingBottom(value: Space): Self = StObject.set(x, "paddingBottom", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
+    inline def setPaddingBottomUndefined: Self = StObject.set(x, "paddingBottom", js.undefined)
     
-    @scala.inline
-    def setPaddingInline(value: Space): Self = StObject.set(x, "paddingInline", value.asInstanceOf[js.Any])
+    inline def setPaddingInline(value: Space): Self = StObject.set(x, "paddingInline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingInlineEnd(value: Space): Self = StObject.set(x, "paddingInlineEnd", value.asInstanceOf[js.Any])
+    inline def setPaddingInlineEnd(value: Space): Self = StObject.set(x, "paddingInlineEnd", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingInlineEndUndefined: Self = StObject.set(x, "paddingInlineEnd", js.undefined)
+    inline def setPaddingInlineEndUndefined: Self = StObject.set(x, "paddingInlineEnd", js.undefined)
     
-    @scala.inline
-    def setPaddingInlineStart(value: Space): Self = StObject.set(x, "paddingInlineStart", value.asInstanceOf[js.Any])
+    inline def setPaddingInlineStart(value: Space): Self = StObject.set(x, "paddingInlineStart", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingInlineStartUndefined: Self = StObject.set(x, "paddingInlineStart", js.undefined)
+    inline def setPaddingInlineStartUndefined: Self = StObject.set(x, "paddingInlineStart", js.undefined)
     
-    @scala.inline
-    def setPaddingInlineUndefined: Self = StObject.set(x, "paddingInline", js.undefined)
+    inline def setPaddingInlineUndefined: Self = StObject.set(x, "paddingInline", js.undefined)
     
-    @scala.inline
-    def setPaddingLeft(value: Space): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
+    inline def setPaddingLeft(value: Space): Self = StObject.set(x, "paddingLeft", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
+    inline def setPaddingLeftUndefined: Self = StObject.set(x, "paddingLeft", js.undefined)
     
-    @scala.inline
-    def setPaddingRight(value: Space): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
+    inline def setPaddingRight(value: Space): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
+    inline def setPaddingRightUndefined: Self = StObject.set(x, "paddingRight", js.undefined)
     
-    @scala.inline
-    def setPaddingTop(value: Space): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
+    inline def setPaddingTop(value: Space): Self = StObject.set(x, "paddingTop", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
+    inline def setPaddingTopUndefined: Self = StObject.set(x, "paddingTop", js.undefined)
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    @scala.inline
-    def setPaddingX(value: Space): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
+    inline def setPaddingX(value: Space): Self = StObject.set(x, "paddingX", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingXUndefined: Self = StObject.set(x, "paddingX", js.undefined)
+    inline def setPaddingXUndefined: Self = StObject.set(x, "paddingX", js.undefined)
     
-    @scala.inline
-    def setPaddingY(value: Space): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
+    inline def setPaddingY(value: Space): Self = StObject.set(x, "paddingY", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingYUndefined: Self = StObject.set(x, "paddingY", js.undefined)
+    inline def setPaddingYUndefined: Self = StObject.set(x, "paddingY", js.undefined)
     
-    @scala.inline
-    def setRight(value: Space): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: Space): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
+    inline def setRightUndefined: Self = StObject.set(x, "right", js.undefined)
     
-    @scala.inline
-    def setRowGap(value: Space): Self = StObject.set(x, "rowGap", value.asInstanceOf[js.Any])
+    inline def setRowGap(value: Space): Self = StObject.set(x, "rowGap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowGapUndefined: Self = StObject.set(x, "rowGap", js.undefined)
+    inline def setRowGapUndefined: Self = StObject.set(x, "rowGap", js.undefined)
     
-    @scala.inline
-    def setTop(value: Space): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
+    inline def setTop(value: Space): Self = StObject.set(x, "top", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
+    inline def setTopUndefined: Self = StObject.set(x, "top", js.undefined)
   }
 }

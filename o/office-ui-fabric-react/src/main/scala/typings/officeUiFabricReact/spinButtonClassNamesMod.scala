@@ -14,15 +14,13 @@ object spinButtonClassNamesMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getClassNames(
+  inline def getClassNames(
     styles: ISpinButtonStyles,
     disabled: Boolean,
     isFocused: Boolean,
     keyboardSpinDirection: KeyboardSpinDirection
   ): ISpinButtonClassNames = (^.asInstanceOf[js.Dynamic].applyDynamic("getClassNames")(styles.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], isFocused.asInstanceOf[js.Any], keyboardSpinDirection.asInstanceOf[js.Any])).asInstanceOf[ISpinButtonClassNames]
-  @scala.inline
-  def getClassNames(
+  inline def getClassNames(
     styles: ISpinButtonStyles,
     disabled: Boolean,
     isFocused: Boolean,
@@ -30,16 +28,14 @@ object spinButtonClassNamesMod {
     labelPosition: Unit,
     className: String
   ): ISpinButtonClassNames = (^.asInstanceOf[js.Dynamic].applyDynamic("getClassNames")(styles.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], isFocused.asInstanceOf[js.Any], keyboardSpinDirection.asInstanceOf[js.Any], labelPosition.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[ISpinButtonClassNames]
-  @scala.inline
-  def getClassNames(
+  inline def getClassNames(
     styles: ISpinButtonStyles,
     disabled: Boolean,
     isFocused: Boolean,
     keyboardSpinDirection: KeyboardSpinDirection,
     labelPosition: Position
   ): ISpinButtonClassNames = (^.asInstanceOf[js.Dynamic].applyDynamic("getClassNames")(styles.asInstanceOf[js.Any], disabled.asInstanceOf[js.Any], isFocused.asInstanceOf[js.Any], keyboardSpinDirection.asInstanceOf[js.Any], labelPosition.asInstanceOf[js.Any])).asInstanceOf[ISpinButtonClassNames]
-  @scala.inline
-  def getClassNames(
+  inline def getClassNames(
     styles: ISpinButtonStyles,
     disabled: Boolean,
     isFocused: Boolean,

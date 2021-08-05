@@ -17,28 +17,21 @@ trait MapLocalTileProps
 }
 object MapLocalTileProps {
   
-  @scala.inline
-  def apply(pathTemplate: String): MapLocalTileProps = {
+  inline def apply(pathTemplate: String): MapLocalTileProps = {
     val __obj = js.Dynamic.literal(pathTemplate = pathTemplate.asInstanceOf[js.Any])
     __obj.asInstanceOf[MapLocalTileProps]
   }
   
-  @scala.inline
-  implicit class MapLocalTilePropsMutableBuilder[Self <: MapLocalTileProps] (val x: Self) extends AnyVal {
+  extension [Self <: MapLocalTileProps](x: Self) {
     
-    @scala.inline
-    def setPathTemplate(value: String): Self = StObject.set(x, "pathTemplate", value.asInstanceOf[js.Any])
+    inline def setPathTemplate(value: String): Self = StObject.set(x, "pathTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileSize(value: Double): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
+    inline def setTileSize(value: Double): Self = StObject.set(x, "tileSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
+    inline def setTileSizeUndefined: Self = StObject.set(x, "tileSize", js.undefined)
     
-    @scala.inline
-    def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
+    inline def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
+    inline def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
   }
 }

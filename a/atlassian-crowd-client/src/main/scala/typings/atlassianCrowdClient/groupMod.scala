@@ -39,8 +39,7 @@ object groupMod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def fromCrowd(obj: Active): Group = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCrowd")(obj.asInstanceOf[js.Any]).asInstanceOf[Group]
+  inline def fromCrowd(obj: Active): Group = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCrowd")(obj.asInstanceOf[js.Any]).asInstanceOf[Group]
   
   trait Group extends StObject {
     
@@ -56,32 +55,24 @@ object groupMod {
   }
   object Group {
     
-    @scala.inline
-    def apply(active: Boolean, description: String, groupname: String, toCrowd: () => GroupObj): Group = {
+    inline def apply(active: Boolean, description: String, groupname: String, toCrowd: () => GroupObj): Group = {
       val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], groupname = groupname.asInstanceOf[js.Any], toCrowd = js.Any.fromFunction0(toCrowd))
       __obj.asInstanceOf[Group]
     }
     
-    @scala.inline
-    implicit class GroupMutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
+    extension [Self <: Group](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      inline def setAttributes(value: js.Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
+      inline def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setGroupname(value: String): Self = StObject.set(x, "groupname", value.asInstanceOf[js.Any])
+      inline def setGroupname(value: String): Self = StObject.set(x, "groupname", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToCrowd(value: () => GroupObj): Self = StObject.set(x, "toCrowd", js.Any.fromFunction0(value))
+      inline def setToCrowd(value: () => GroupObj): Self = StObject.set(x, "toCrowd", js.Any.fromFunction0(value))
     }
   }
   
@@ -97,27 +88,21 @@ object groupMod {
   }
   object GroupObj {
     
-    @scala.inline
-    def apply(active: Boolean, description: String, name: String): GroupObj = {
+    inline def apply(active: Boolean, description: String, name: String): GroupObj = {
       val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")("GROUP")
       __obj.asInstanceOf[GroupObj]
     }
     
-    @scala.inline
-    implicit class GroupObjMutableBuilder[Self <: GroupObj] (val x: Self) extends AnyVal {
+    extension [Self <: GroupObj](x: Self) {
       
-      @scala.inline
-      def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: GROUP): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: GROUP): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
 }

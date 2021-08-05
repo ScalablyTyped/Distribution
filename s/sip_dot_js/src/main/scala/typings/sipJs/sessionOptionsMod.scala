@@ -13,20 +13,16 @@ object sessionOptionsMod {
   }
   object SessionOptions {
     
-    @scala.inline
-    def apply(): SessionOptions = {
+    inline def apply(): SessionOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SessionOptions]
     }
     
-    @scala.inline
-    implicit class SessionOptionsMutableBuilder[Self <: SessionOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SessionOptions](x: Self) {
       
-      @scala.inline
-      def setDelegate(value: SessionDelegate): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
+      inline def setDelegate(value: SessionDelegate): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDelegateUndefined: Self = StObject.set(x, "delegate", js.undefined)
+      inline def setDelegateUndefined: Self = StObject.set(x, "delegate", js.undefined)
     }
   }
 }

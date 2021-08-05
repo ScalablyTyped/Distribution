@@ -13,19 +13,15 @@ trait ILOGIN extends StObject {
 }
 object ILOGIN {
   
-  @scala.inline
-  def apply(data: js.Object, user: SFSUser): ILOGIN = {
+  inline def apply(data: js.Object, user: SFSUser): ILOGIN = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[ILOGIN]
   }
   
-  @scala.inline
-  implicit class ILOGINMutableBuilder[Self <: ILOGIN] (val x: Self) extends AnyVal {
+  extension [Self <: ILOGIN](x: Self) {
     
-    @scala.inline
-    def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: SFSUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: SFSUser): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

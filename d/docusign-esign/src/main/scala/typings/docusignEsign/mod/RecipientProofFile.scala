@@ -10,19 +10,15 @@ trait RecipientProofFile extends StObject {
 }
 object RecipientProofFile {
   
-  @scala.inline
-  def apply(): RecipientProofFile = {
+  inline def apply(): RecipientProofFile = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RecipientProofFile]
   }
   
-  @scala.inline
-  implicit class RecipientProofFileMutableBuilder[Self <: RecipientProofFile] (val x: Self) extends AnyVal {
+  extension [Self <: RecipientProofFile](x: Self) {
     
-    @scala.inline
-    def setIsInProofFile(value: String): Self = StObject.set(x, "isInProofFile", value.asInstanceOf[js.Any])
+    inline def setIsInProofFile(value: String): Self = StObject.set(x, "isInProofFile", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsInProofFileUndefined: Self = StObject.set(x, "isInProofFile", js.undefined)
+    inline def setIsInProofFileUndefined: Self = StObject.set(x, "isInProofFile", js.undefined)
   }
 }

@@ -38,49 +38,35 @@ trait Summary extends StObject {
 }
 object Summary {
   
-  @scala.inline
-  def apply(): Summary = {
+  inline def apply(): Summary = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Summary]
   }
   
-  @scala.inline
-  implicit class SummaryMutableBuilder[Self <: Summary] (val x: Self) extends AnyVal {
+  extension [Self <: Summary](x: Self) {
     
-    @scala.inline
-    def setLastUpdated(value: LastUpdated): Self = StObject.set(x, "LastUpdated", value.asInstanceOf[js.Any])
+    inline def setLastUpdated(value: LastUpdated): Self = StObject.set(x, "LastUpdated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastUpdatedUndefined: Self = StObject.set(x, "LastUpdated", js.undefined)
+    inline def setLastUpdatedUndefined: Self = StObject.set(x, "LastUpdated", js.undefined)
     
-    @scala.inline
-    def setNonCompliantResources(value: NonCompliantResources): Self = StObject.set(x, "NonCompliantResources", value.asInstanceOf[js.Any])
+    inline def setNonCompliantResources(value: NonCompliantResources): Self = StObject.set(x, "NonCompliantResources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonCompliantResourcesUndefined: Self = StObject.set(x, "NonCompliantResources", js.undefined)
+    inline def setNonCompliantResourcesUndefined: Self = StObject.set(x, "NonCompliantResources", js.undefined)
     
-    @scala.inline
-    def setRegion(value: Region): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
+    inline def setRegion(value: Region): Self = StObject.set(x, "Region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
+    inline def setRegionUndefined: Self = StObject.set(x, "Region", js.undefined)
     
-    @scala.inline
-    def setResourceType(value: AmazonResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
+    inline def setResourceType(value: AmazonResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
+    inline def setResourceTypeUndefined: Self = StObject.set(x, "ResourceType", js.undefined)
     
-    @scala.inline
-    def setTargetId(value: TargetId): Self = StObject.set(x, "TargetId", value.asInstanceOf[js.Any])
+    inline def setTargetId(value: TargetId): Self = StObject.set(x, "TargetId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetIdType(value: TargetIdType): Self = StObject.set(x, "TargetIdType", value.asInstanceOf[js.Any])
+    inline def setTargetIdType(value: TargetIdType): Self = StObject.set(x, "TargetIdType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetIdTypeUndefined: Self = StObject.set(x, "TargetIdType", js.undefined)
+    inline def setTargetIdTypeUndefined: Self = StObject.set(x, "TargetIdType", js.undefined)
     
-    @scala.inline
-    def setTargetIdUndefined: Self = StObject.set(x, "TargetId", js.undefined)
+    inline def setTargetIdUndefined: Self = StObject.set(x, "TargetId", js.undefined)
   }
 }

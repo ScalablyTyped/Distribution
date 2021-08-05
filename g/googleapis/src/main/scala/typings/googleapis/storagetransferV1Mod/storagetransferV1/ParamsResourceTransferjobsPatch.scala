@@ -29,31 +29,23 @@ trait ParamsResourceTransferjobsPatch
 }
 object ParamsResourceTransferjobsPatch {
   
-  @scala.inline
-  def apply(): ParamsResourceTransferjobsPatch = {
+  inline def apply(): ParamsResourceTransferjobsPatch = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceTransferjobsPatch]
   }
   
-  @scala.inline
-  implicit class ParamsResourceTransferjobsPatchMutableBuilder[Self <: ParamsResourceTransferjobsPatch] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceTransferjobsPatch](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
+    inline def setJobName(value: String): Self = StObject.set(x, "jobName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJobNameUndefined: Self = StObject.set(x, "jobName", js.undefined)
+    inline def setJobNameUndefined: Self = StObject.set(x, "jobName", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaUpdateTransferJobRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaUpdateTransferJobRequest): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

@@ -13,19 +13,15 @@ trait BufferInt32Array extends StObject {
 }
 object BufferInt32Array {
   
-  @scala.inline
-  def apply(buffer: Int32Array, bytesRead: Double): BufferInt32Array = {
+  inline def apply(buffer: Int32Array, bytesRead: Double): BufferInt32Array = {
     val __obj = js.Dynamic.literal(buffer = buffer.asInstanceOf[js.Any], bytesRead = bytesRead.asInstanceOf[js.Any])
     __obj.asInstanceOf[BufferInt32Array]
   }
   
-  @scala.inline
-  implicit class BufferInt32ArrayMutableBuilder[Self <: BufferInt32Array] (val x: Self) extends AnyVal {
+  extension [Self <: BufferInt32Array](x: Self) {
     
-    @scala.inline
-    def setBuffer(value: Int32Array): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+    inline def setBuffer(value: Int32Array): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBytesRead(value: Double): Self = StObject.set(x, "bytesRead", value.asInstanceOf[js.Any])
+    inline def setBytesRead(value: Double): Self = StObject.set(x, "bytesRead", value.asInstanceOf[js.Any])
   }
 }

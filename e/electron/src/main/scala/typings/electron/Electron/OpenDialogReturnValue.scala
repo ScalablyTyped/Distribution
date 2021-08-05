@@ -28,31 +28,23 @@ trait OpenDialogReturnValue extends StObject {
 }
 object OpenDialogReturnValue {
   
-  @scala.inline
-  def apply(canceled: Boolean, filePaths: js.Array[String]): OpenDialogReturnValue = {
+  inline def apply(canceled: Boolean, filePaths: js.Array[String]): OpenDialogReturnValue = {
     val __obj = js.Dynamic.literal(canceled = canceled.asInstanceOf[js.Any], filePaths = filePaths.asInstanceOf[js.Any])
     __obj.asInstanceOf[OpenDialogReturnValue]
   }
   
-  @scala.inline
-  implicit class OpenDialogReturnValueMutableBuilder[Self <: OpenDialogReturnValue] (val x: Self) extends AnyVal {
+  extension [Self <: OpenDialogReturnValue](x: Self) {
     
-    @scala.inline
-    def setBookmarks(value: js.Array[String]): Self = StObject.set(x, "bookmarks", value.asInstanceOf[js.Any])
+    inline def setBookmarks(value: js.Array[String]): Self = StObject.set(x, "bookmarks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBookmarksUndefined: Self = StObject.set(x, "bookmarks", js.undefined)
+    inline def setBookmarksUndefined: Self = StObject.set(x, "bookmarks", js.undefined)
     
-    @scala.inline
-    def setBookmarksVarargs(value: String*): Self = StObject.set(x, "bookmarks", js.Array(value :_*))
+    inline def setBookmarksVarargs(value: String*): Self = StObject.set(x, "bookmarks", js.Array(value :_*))
     
-    @scala.inline
-    def setCanceled(value: Boolean): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
+    inline def setCanceled(value: Boolean): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilePaths(value: js.Array[String]): Self = StObject.set(x, "filePaths", value.asInstanceOf[js.Any])
+    inline def setFilePaths(value: js.Array[String]): Self = StObject.set(x, "filePaths", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilePathsVarargs(value: String*): Self = StObject.set(x, "filePaths", js.Array(value :_*))
+    inline def setFilePathsVarargs(value: String*): Self = StObject.set(x, "filePaths", js.Array(value :_*))
   }
 }

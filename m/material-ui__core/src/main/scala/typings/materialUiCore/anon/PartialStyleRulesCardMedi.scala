@@ -14,25 +14,19 @@ trait PartialStyleRulesCardMedi extends StObject {
 }
 object PartialStyleRulesCardMedi {
   
-  @scala.inline
-  def apply(): PartialStyleRulesCardMedi = {
+  inline def apply(): PartialStyleRulesCardMedi = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialStyleRulesCardMedi]
   }
   
-  @scala.inline
-  implicit class PartialStyleRulesCardMediMutableBuilder[Self <: PartialStyleRulesCardMedi] (val x: Self) extends AnyVal {
+  extension [Self <: PartialStyleRulesCardMedi](x: Self) {
     
-    @scala.inline
-    def setMedia(value: CSSProperties): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
+    inline def setMedia(value: CSSProperties): Self = StObject.set(x, "media", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
+    inline def setMediaUndefined: Self = StObject.set(x, "media", js.undefined)
     
-    @scala.inline
-    def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: CSSProperties): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
   }
 }

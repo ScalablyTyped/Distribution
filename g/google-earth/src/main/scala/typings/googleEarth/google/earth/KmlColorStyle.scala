@@ -37,8 +37,7 @@ trait KmlColorStyle
 }
 object KmlColorStyle {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     click: KmlMouseEvent => Unit,
     dblclick: KmlMouseEvent => Unit,
     equals_ : KmlObject => Boolean,
@@ -62,16 +61,12 @@ object KmlColorStyle {
     __obj.asInstanceOf[KmlColorStyle]
   }
   
-  @scala.inline
-  implicit class KmlColorStyleMutableBuilder[Self <: KmlColorStyle] (val x: Self) extends AnyVal {
+  extension [Self <: KmlColorStyle](x: Self) {
     
-    @scala.inline
-    def setGetColor(value: () => KmlColor): Self = StObject.set(x, "getColor", js.Any.fromFunction0(value))
+    inline def setGetColor(value: () => KmlColor): Self = StObject.set(x, "getColor", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetColorMode(value: () => KmlColorModeEnum): Self = StObject.set(x, "getColorMode", js.Any.fromFunction0(value))
+    inline def setGetColorMode(value: () => KmlColorModeEnum): Self = StObject.set(x, "getColorMode", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetColorMode(value: KmlColorModeEnum => Unit): Self = StObject.set(x, "setColorMode", js.Any.fromFunction1(value))
+    inline def setSetColorMode(value: KmlColorModeEnum => Unit): Self = StObject.set(x, "setColorMode", js.Any.fromFunction1(value))
   }
 }

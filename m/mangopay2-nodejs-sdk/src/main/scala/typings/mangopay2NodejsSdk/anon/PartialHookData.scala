@@ -26,55 +26,39 @@ trait PartialHookData extends StObject {
 }
 object PartialHookData {
   
-  @scala.inline
-  def apply(): PartialHookData = {
+  inline def apply(): PartialHookData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialHookData]
   }
   
-  @scala.inline
-  implicit class PartialHookDataMutableBuilder[Self <: PartialHookData] (val x: Self) extends AnyVal {
+  extension [Self <: PartialHookData](x: Self) {
     
-    @scala.inline
-    def setCreationDate(value: Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
+    inline def setCreationDateUndefined: Self = StObject.set(x, "CreationDate", js.undefined)
     
-    @scala.inline
-    def setEventType(value: EventType): Self = StObject.set(x, "EventType", value.asInstanceOf[js.Any])
+    inline def setEventType(value: EventType): Self = StObject.set(x, "EventType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventTypeUndefined: Self = StObject.set(x, "EventType", js.undefined)
+    inline def setEventTypeUndefined: Self = StObject.set(x, "EventType", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "Id", js.undefined)
     
-    @scala.inline
-    def setStatus(value: HookStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: HookStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
     
-    @scala.inline
-    def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
+    inline def setTagUndefined: Self = StObject.set(x, "Tag", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
+    inline def setUrlUndefined: Self = StObject.set(x, "Url", js.undefined)
     
-    @scala.inline
-    def setValidity(value: HookValidity): Self = StObject.set(x, "Validity", value.asInstanceOf[js.Any])
+    inline def setValidity(value: HookValidity): Self = StObject.set(x, "Validity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidityUndefined: Self = StObject.set(x, "Validity", js.undefined)
+    inline def setValidityUndefined: Self = StObject.set(x, "Validity", js.undefined)
   }
 }

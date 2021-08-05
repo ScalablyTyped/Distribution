@@ -21,8 +21,7 @@ trait UserDescriptor
 }
 object UserDescriptor {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Name: String,
     Password: String,
     PropertySetInfo: XPropertySetInfo,
@@ -41,10 +40,8 @@ object UserDescriptor {
     __obj.asInstanceOf[UserDescriptor]
   }
   
-  @scala.inline
-  implicit class UserDescriptorMutableBuilder[Self <: UserDescriptor] (val x: Self) extends AnyVal {
+  extension [Self <: UserDescriptor](x: Self) {
     
-    @scala.inline
-    def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
+    inline def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
   }
 }

@@ -23,55 +23,39 @@ trait OptionalizeOptionsfs extends StObject {
 }
 object OptionalizeOptionsfs {
   
-  @scala.inline
-  def apply(): OptionalizeOptionsfs = {
+  inline def apply(): OptionalizeOptionsfs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[OptionalizeOptionsfs]
   }
   
-  @scala.inline
-  implicit class OptionalizeOptionsfsMutableBuilder[Self <: OptionalizeOptionsfs] (val x: Self) extends AnyVal {
+  extension [Self <: OptionalizeOptionsfs](x: Self) {
     
-    @scala.inline
-    def setDirectories(value: Boolean): Self = StObject.set(x, "directories", value.asInstanceOf[js.Any])
+    inline def setDirectories(value: Boolean): Self = StObject.set(x, "directories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDirectoriesUndefined: Self = StObject.set(x, "directories", js.undefined)
+    inline def setDirectoriesUndefined: Self = StObject.set(x, "directories", js.undefined)
     
-    @scala.inline
-    def setFs(value: TypeoffsNode): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
+    inline def setFs(value: TypeoffsNode): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
+    inline def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
     
-    @scala.inline
-    def setGlobOptions(value: IOptions): Self = StObject.set(x, "globOptions", value.asInstanceOf[js.Any])
+    inline def setGlobOptions(value: IOptions): Self = StObject.set(x, "globOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobOptionsUndefined: Self = StObject.set(x, "globOptions", js.undefined)
+    inline def setGlobOptionsUndefined: Self = StObject.set(x, "globOptions", js.undefined)
     
-    @scala.inline
-    def setGlobs(value: js.Array[String | IMinimatch]): Self = StObject.set(x, "globs", value.asInstanceOf[js.Any])
+    inline def setGlobs(value: js.Array[String | IMinimatch]): Self = StObject.set(x, "globs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobsUndefined: Self = StObject.set(x, "globs", js.undefined)
+    inline def setGlobsUndefined: Self = StObject.set(x, "globs", js.undefined)
     
-    @scala.inline
-    def setGlobsVarargs(value: (String | IMinimatch)*): Self = StObject.set(x, "globs", js.Array(value :_*))
+    inline def setGlobsVarargs(value: (String | IMinimatch)*): Self = StObject.set(x, "globs", js.Array(value :_*))
     
-    @scala.inline
-    def setIgnore(value: js.Array[String | IMinimatch]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
+    inline def setIgnore(value: js.Array[String | IMinimatch]): Self = StObject.set(x, "ignore", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
+    inline def setIgnoreUndefined: Self = StObject.set(x, "ignore", js.undefined)
     
-    @scala.inline
-    def setIgnoreVarargs(value: (String | IMinimatch)*): Self = StObject.set(x, "ignore", js.Array(value :_*))
+    inline def setIgnoreVarargs(value: (String | IMinimatch)*): Self = StObject.set(x, "ignore", js.Array(value :_*))
     
-    @scala.inline
-    def setIncludeBasePath(value: Boolean): Self = StObject.set(x, "includeBasePath", value.asInstanceOf[js.Any])
+    inline def setIncludeBasePath(value: Boolean): Self = StObject.set(x, "includeBasePath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeBasePathUndefined: Self = StObject.set(x, "includeBasePath", js.undefined)
+    inline def setIncludeBasePathUndefined: Self = StObject.set(x, "includeBasePath", js.undefined)
   }
 }

@@ -16,8 +16,7 @@ trait OnFieldClick extends StObject {
 }
 object OnFieldClick {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     knobs: Validator[js.Array[KnobStoreKnob]],
     onFieldChange: Validator[js.Function1[/* changedKnob */ KnobStoreKnob, Unit]],
     onFieldClick: Validator[js.Function1[/* knob */ KnobStoreKnob, Unit]]
@@ -26,16 +25,12 @@ object OnFieldClick {
     __obj.asInstanceOf[OnFieldClick]
   }
   
-  @scala.inline
-  implicit class OnFieldClickMutableBuilder[Self <: OnFieldClick] (val x: Self) extends AnyVal {
+  extension [Self <: OnFieldClick](x: Self) {
     
-    @scala.inline
-    def setKnobs(value: Validator[js.Array[KnobStoreKnob]]): Self = StObject.set(x, "knobs", value.asInstanceOf[js.Any])
+    inline def setKnobs(value: Validator[js.Array[KnobStoreKnob]]): Self = StObject.set(x, "knobs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnFieldChange(value: Validator[js.Function1[/* changedKnob */ KnobStoreKnob, Unit]]): Self = StObject.set(x, "onFieldChange", value.asInstanceOf[js.Any])
+    inline def setOnFieldChange(value: Validator[js.Function1[/* changedKnob */ KnobStoreKnob, Unit]]): Self = StObject.set(x, "onFieldChange", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnFieldClick(value: Validator[js.Function1[/* knob */ KnobStoreKnob, Unit]]): Self = StObject.set(x, "onFieldClick", value.asInstanceOf[js.Any])
+    inline def setOnFieldClick(value: Validator[js.Function1[/* knob */ KnobStoreKnob, Unit]]): Self = StObject.set(x, "onFieldClick", value.asInstanceOf[js.Any])
   }
 }

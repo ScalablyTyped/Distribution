@@ -10,17 +10,14 @@ trait PipelineProcess extends StObject {
 }
 object PipelineProcess {
   
-  @scala.inline
-  def apply(`type`: PipelineProcessTypes): PipelineProcess = {
+  inline def apply(`type`: PipelineProcessTypes): PipelineProcess = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[PipelineProcess]
   }
   
-  @scala.inline
-  implicit class PipelineProcessMutableBuilder[Self <: PipelineProcess] (val x: Self) extends AnyVal {
+  extension [Self <: PipelineProcess](x: Self) {
     
-    @scala.inline
-    def setType(value: PipelineProcessTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: PipelineProcessTypes): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -18,28 +18,21 @@ trait GetConnectionsFilter extends StObject {
 }
 object GetConnectionsFilter {
   
-  @scala.inline
-  def apply(): GetConnectionsFilter = {
+  inline def apply(): GetConnectionsFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetConnectionsFilter]
   }
   
-  @scala.inline
-  implicit class GetConnectionsFilterMutableBuilder[Self <: GetConnectionsFilter] (val x: Self) extends AnyVal {
+  extension [Self <: GetConnectionsFilter](x: Self) {
     
-    @scala.inline
-    def setConnectionType(value: ConnectionType): Self = StObject.set(x, "ConnectionType", value.asInstanceOf[js.Any])
+    inline def setConnectionType(value: ConnectionType): Self = StObject.set(x, "ConnectionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionTypeUndefined: Self = StObject.set(x, "ConnectionType", js.undefined)
+    inline def setConnectionTypeUndefined: Self = StObject.set(x, "ConnectionType", js.undefined)
     
-    @scala.inline
-    def setMatchCriteria(value: MatchCriteria): Self = StObject.set(x, "MatchCriteria", value.asInstanceOf[js.Any])
+    inline def setMatchCriteria(value: MatchCriteria): Self = StObject.set(x, "MatchCriteria", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMatchCriteriaUndefined: Self = StObject.set(x, "MatchCriteria", js.undefined)
+    inline def setMatchCriteriaUndefined: Self = StObject.set(x, "MatchCriteria", js.undefined)
     
-    @scala.inline
-    def setMatchCriteriaVarargs(value: NameString*): Self = StObject.set(x, "MatchCriteria", js.Array(value :_*))
+    inline def setMatchCriteriaVarargs(value: NameString*): Self = StObject.set(x, "MatchCriteria", js.Array(value :_*))
   }
 }

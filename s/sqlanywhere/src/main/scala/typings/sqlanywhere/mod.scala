@@ -11,8 +11,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def createConnection(): SybaseConnection = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")().asInstanceOf[SybaseConnection]
+  inline def createConnection(): SybaseConnection = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")().asInstanceOf[SybaseConnection]
   
   trait ConnectionParameters extends StObject {
     
@@ -30,41 +29,30 @@ object mod {
   }
   object ConnectionParameters {
     
-    @scala.inline
-    def apply(Password: String, Server: String, UserId: String): ConnectionParameters = {
+    inline def apply(Password: String, Server: String, UserId: String): ConnectionParameters = {
       val __obj = js.Dynamic.literal(Password = Password.asInstanceOf[js.Any], Server = Server.asInstanceOf[js.Any], UserId = UserId.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConnectionParameters]
     }
     
-    @scala.inline
-    implicit class ConnectionParametersMutableBuilder[Self <: ConnectionParameters] (val x: Self) extends AnyVal {
+    extension [Self <: ConnectionParameters](x: Self) {
       
-      @scala.inline
-      def setAutoStart(value: String): Self = StObject.set(x, "AutoStart", value.asInstanceOf[js.Any])
+      inline def setAutoStart(value: String): Self = StObject.set(x, "AutoStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAutoStartUndefined: Self = StObject.set(x, "AutoStart", js.undefined)
+      inline def setAutoStartUndefined: Self = StObject.set(x, "AutoStart", js.undefined)
       
-      @scala.inline
-      def setDatabaseFile(value: String): Self = StObject.set(x, "DatabaseFile", value.asInstanceOf[js.Any])
+      inline def setDatabaseFile(value: String): Self = StObject.set(x, "DatabaseFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDatabaseFileUndefined: Self = StObject.set(x, "DatabaseFile", js.undefined)
+      inline def setDatabaseFileUndefined: Self = StObject.set(x, "DatabaseFile", js.undefined)
       
-      @scala.inline
-      def setHost(value: String): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
+      inline def setHost(value: String): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHostUndefined: Self = StObject.set(x, "Host", js.undefined)
+      inline def setHostUndefined: Self = StObject.set(x, "Host", js.undefined)
       
-      @scala.inline
-      def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
+      inline def setPassword(value: String): Self = StObject.set(x, "Password", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setServer(value: String): Self = StObject.set(x, "Server", value.asInstanceOf[js.Any])
+      inline def setServer(value: String): Self = StObject.set(x, "Server", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUserId(value: String): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
+      inline def setUserId(value: String): Self = StObject.set(x, "UserId", value.asInstanceOf[js.Any])
     }
   }
   

@@ -29,8 +29,7 @@ trait AuthenticationSession extends StObject {
 }
 object AuthenticationSession {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     accessToken: String,
     account: AuthenticationSessionAccountInformation,
     id: String,
@@ -40,22 +39,16 @@ object AuthenticationSession {
     __obj.asInstanceOf[AuthenticationSession]
   }
   
-  @scala.inline
-  implicit class AuthenticationSessionMutableBuilder[Self <: AuthenticationSession] (val x: Self) extends AnyVal {
+  extension [Self <: AuthenticationSession](x: Self) {
     
-    @scala.inline
-    def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
+    inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccount(value: AuthenticationSessionAccountInformation): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
+    inline def setAccount(value: AuthenticationSessionAccountInformation): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
+    inline def setScopes(value: js.Array[String]): Self = StObject.set(x, "scopes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
+    inline def setScopesVarargs(value: String*): Self = StObject.set(x, "scopes", js.Array(value :_*))
   }
 }

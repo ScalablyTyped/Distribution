@@ -16,32 +16,24 @@ object anon {
   }
   object N {
     
-    @scala.inline
-    def apply(): N = {
+    inline def apply(): N = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[N]
     }
     
-    @scala.inline
-    implicit class NMutableBuilder[Self <: N] (val x: Self) extends AnyVal {
+    extension [Self <: N](x: Self) {
       
-      @scala.inline
-      def setN(value: Double): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
+      inline def setN(value: Double): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNUndefined: Self = StObject.set(x, "N", js.undefined)
+      inline def setNUndefined: Self = StObject.set(x, "N", js.undefined)
       
-      @scala.inline
-      def setP(value: Double): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+      inline def setP(value: Double): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPUndefined: Self = StObject.set(x, "p", js.undefined)
+      inline def setPUndefined: Self = StObject.set(x, "p", js.undefined)
       
-      @scala.inline
-      def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
+      inline def setR(value: Double): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRUndefined: Self = StObject.set(x, "r", js.undefined)
+      inline def setRUndefined: Self = StObject.set(x, "r", js.undefined)
     }
   }
 }

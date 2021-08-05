@@ -13,7 +13,7 @@ object relayObservableMod {
     extends StObject
        with Subscribable[T] {
     // Use RelayObservable.create(source);
-    protected def this(source: scala.Nothing) = this()
+    /* private */ def this(source: scala.Nothing) = this()
     
     /**
       * Similar to promise.catch(), observable.catch() handles error events, and
@@ -100,15 +100,13 @@ object relayObservableMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create[V](source: Source[V]): RelayObservable[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any]).asInstanceOf[RelayObservable[V]]
+    inline def create[V](source: Source[V]): RelayObservable[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any]).asInstanceOf[RelayObservable[V]]
     
     /**
       * Accepts various kinds of data sources, and always returns a RelayObservable
       * useful for accepting the result of a user-provided FetchFunction.
       */
-    @scala.inline
-    def from[V](obj: ObservableFromValue[V]): RelayObservable[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(obj.asInstanceOf[js.Any]).asInstanceOf[RelayObservable[V]]
+    inline def from[V](obj: ObservableFromValue[V]): RelayObservable[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(obj.asInstanceOf[js.Any]).asInstanceOf[RelayObservable[V]]
     
     /**
       * When an emitted error event is not handled by an Observer, it is reported
@@ -135,8 +133,7 @@ object relayObservableMod {
       *    application flow such as network failure, and may not have useful
       *    stack traces.
       */
-    @scala.inline
-    def onUnhandledError(callback: js.Function2[/* error */ Error, /* isUncaughtThrownError */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onUnhandledError")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    inline def onUnhandledError(callback: js.Function2[/* error */ Error, /* isUncaughtThrownError */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onUnhandledError")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   type ObservableFromValue[T] = Subscribable[T] | js.Promise[T] | T
@@ -155,44 +152,32 @@ object relayObservableMod {
   }
   object Observer {
     
-    @scala.inline
-    def apply[T](): Observer[T] = {
+    inline def apply[T](): Observer[T] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Observer[T]]
     }
     
-    @scala.inline
-    implicit class ObserverMutableBuilder[Self <: Observer[?], T] (val x: Self & Observer[T]) extends AnyVal {
+    extension [Self <: Observer[?], T](x: Self & Observer[T]) {
       
-      @scala.inline
-      def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
+      inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
+      inline def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
       
-      @scala.inline
-      def setError(value: /* error */ Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
+      inline def setError(value: /* error */ Error => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setNext(value: /* value */ T => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
+      inline def setNext(value: /* value */ T => Unit): Self = StObject.set(x, "next", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
+      inline def setNextUndefined: Self = StObject.set(x, "next", js.undefined)
       
-      @scala.inline
-      def setStart(value: /* subscription */ Subscription => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
+      inline def setStart(value: /* subscription */ Subscription => Unit): Self = StObject.set(x, "start", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
+      inline def setStartUndefined: Self = StObject.set(x, "start", js.undefined)
       
-      @scala.inline
-      def setUnsubscribe(value: /* subscription */ Subscription => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction1(value))
+      inline def setUnsubscribe(value: /* subscription */ Subscription => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUnsubscribeUndefined: Self = StObject.set(x, "unsubscribe", js.undefined)
+      inline def setUnsubscribeUndefined: Self = StObject.set(x, "unsubscribe", js.undefined)
     }
   }
   
@@ -226,20 +211,16 @@ object relayObservableMod {
   }
   object Subscription {
     
-    @scala.inline
-    def apply(closed: Boolean, unsubscribe: () => Unit): Subscription = {
+    inline def apply(closed: Boolean, unsubscribe: () => Unit): Subscription = {
       val __obj = js.Dynamic.literal(closed = closed.asInstanceOf[js.Any], unsubscribe = js.Any.fromFunction0(unsubscribe))
       __obj.asInstanceOf[Subscription]
     }
     
-    @scala.inline
-    implicit class SubscriptionMutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
+    extension [Self <: Subscription](x: Self) {
       
-      @scala.inline
-      def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
+      inline def setClosed(value: Boolean): Self = StObject.set(x, "closed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
+      inline def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
     }
   }
 }

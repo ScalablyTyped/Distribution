@@ -30,29 +30,22 @@ object typesListPullRequestsOutputMod {
   }
   object ListPullRequestsOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata, pullRequestIds: js.Array[String]): ListPullRequestsOutput = {
+    inline def apply($metadata: ResponseMetadata, pullRequestIds: js.Array[String]): ListPullRequestsOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any], pullRequestIds = pullRequestIds.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListPullRequestsOutput]
     }
     
-    @scala.inline
-    implicit class ListPullRequestsOutputMutableBuilder[Self <: ListPullRequestsOutput] (val x: Self) extends AnyVal {
+    extension [Self <: ListPullRequestsOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+      inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+      inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
       
-      @scala.inline
-      def setPullRequestIds(value: js.Array[String]): Self = StObject.set(x, "pullRequestIds", value.asInstanceOf[js.Any])
+      inline def setPullRequestIds(value: js.Array[String]): Self = StObject.set(x, "pullRequestIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPullRequestIdsVarargs(value: String*): Self = StObject.set(x, "pullRequestIds", js.Array(value :_*))
+      inline def setPullRequestIdsVarargs(value: String*): Self = StObject.set(x, "pullRequestIds", js.Array(value :_*))
     }
   }
 }

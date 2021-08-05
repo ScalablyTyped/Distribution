@@ -11,19 +11,15 @@ trait SslPolicyReference extends StObject {
 }
 object SslPolicyReference {
   
-  @scala.inline
-  def apply(): SslPolicyReference = {
+  inline def apply(): SslPolicyReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SslPolicyReference]
   }
   
-  @scala.inline
-  implicit class SslPolicyReferenceMutableBuilder[Self <: SslPolicyReference] (val x: Self) extends AnyVal {
+  extension [Self <: SslPolicyReference](x: Self) {
     
-    @scala.inline
-    def setSslPolicy(value: String): Self = StObject.set(x, "sslPolicy", value.asInstanceOf[js.Any])
+    inline def setSslPolicy(value: String): Self = StObject.set(x, "sslPolicy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSslPolicyUndefined: Self = StObject.set(x, "sslPolicy", js.undefined)
+    inline def setSslPolicyUndefined: Self = StObject.set(x, "sslPolicy", js.undefined)
   }
 }

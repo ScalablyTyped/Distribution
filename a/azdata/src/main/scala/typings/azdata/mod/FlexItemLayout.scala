@@ -25,31 +25,23 @@ trait FlexItemLayout extends StObject {
 }
 object FlexItemLayout {
   
-  @scala.inline
-  def apply(): FlexItemLayout = {
+  inline def apply(): FlexItemLayout = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FlexItemLayout]
   }
   
-  @scala.inline
-  implicit class FlexItemLayoutMutableBuilder[Self <: FlexItemLayout] (val x: Self) extends AnyVal {
+  extension [Self <: FlexItemLayout](x: Self) {
     
-    @scala.inline
-    def setCSSStyles(value: StringDictionary[String]): Self = StObject.set(x, "CSSStyles", value.asInstanceOf[js.Any])
+    inline def setCSSStyles(value: StringDictionary[String]): Self = StObject.set(x, "CSSStyles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCSSStylesUndefined: Self = StObject.set(x, "CSSStyles", js.undefined)
+    inline def setCSSStylesUndefined: Self = StObject.set(x, "CSSStyles", js.undefined)
     
-    @scala.inline
-    def setFlex(value: String): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
+    inline def setFlex(value: String): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
+    inline def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
     
-    @scala.inline
-    def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: Double): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
   }
 }

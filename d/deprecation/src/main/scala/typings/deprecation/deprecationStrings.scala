@@ -8,6 +8,5 @@ object deprecationStrings {
   
   @js.native
   sealed trait Deprecation extends StObject
-  @scala.inline
-  def Deprecation: Deprecation = "Deprecation".asInstanceOf[Deprecation]
+  inline def Deprecation: Deprecation = "Deprecation".asInstanceOf[Deprecation]
 }

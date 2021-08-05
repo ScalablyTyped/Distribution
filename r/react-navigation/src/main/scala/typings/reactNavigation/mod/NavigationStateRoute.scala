@@ -11,8 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
      with NavigationLeafRoute[NavigationLeafRouteParams]
 object NavigationStateRoute {
   
-  @scala.inline
-  def apply[NavigationLeafRouteParams](
+  inline def apply[NavigationLeafRouteParams](
     index: Double,
     isTransitioning: Boolean,
     key: String,

@@ -18,25 +18,19 @@ trait Gender extends StObject {
 }
 object Gender {
   
-  @scala.inline
-  def apply(): Gender = {
+  inline def apply(): Gender = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Gender]
   }
   
-  @scala.inline
-  implicit class GenderMutableBuilder[Self <: Gender] (val x: Self) extends AnyVal {
+  extension [Self <: Gender](x: Self) {
     
-    @scala.inline
-    def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
+    inline def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
+    inline def setConfidenceUndefined: Self = StObject.set(x, "Confidence", js.undefined)
     
-    @scala.inline
-    def setValue(value: GenderType): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
+    inline def setValue(value: GenderType): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "Value", js.undefined)
   }
 }

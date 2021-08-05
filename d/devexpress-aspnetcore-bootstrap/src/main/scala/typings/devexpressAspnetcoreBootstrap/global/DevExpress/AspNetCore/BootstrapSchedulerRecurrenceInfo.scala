@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class BootstrapSchedulerRecurrenceInfo protected ()
   extends StObject
      with typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.BootstrapSchedulerRecurrenceInfo {
-  protected def this(instance: js.Any) = this()
+  /* protected */ def this(instance: js.Any) = this()
   
   /* CompleteClass */
   override def getDayNumber(): Double = js.native
@@ -45,7 +45,7 @@ class BootstrapSchedulerRecurrenceInfo protected ()
   /* CompleteClass */
   override def getWeekOfMonth(): typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore.WeekOfMonth = js.native
   
-  /* CompleteClass */
+  /* protected */ /* CompleteClass */
   override val instance: js.Any = js.native
   
   /* CompleteClass */

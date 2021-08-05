@@ -17,21 +17,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait WdGoToDirection extends StObject
 object WdGoToDirection {
   
-  @scala.inline
-  def wdGoToAbsolute: `1` = 1.asInstanceOf[`1`]
+  inline def wdGoToAbsolute: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdGoToFirst: `1` = 1.asInstanceOf[`1`]
+  inline def wdGoToFirst: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def wdGoToLast: `-1` = -1.asInstanceOf[`-1`]
+  inline def wdGoToLast: `-1` = -1.asInstanceOf[`-1`]
   
-  @scala.inline
-  def wdGoToNext: `2` = 2.asInstanceOf[`2`]
+  inline def wdGoToNext: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def wdGoToPrevious: `3` = 3.asInstanceOf[`3`]
+  inline def wdGoToPrevious: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def wdGoToRelative: `2` = 2.asInstanceOf[`2`]
+  inline def wdGoToRelative: `2` = 2.asInstanceOf[`2`]
 }

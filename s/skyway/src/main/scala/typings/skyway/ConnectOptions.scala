@@ -17,37 +17,27 @@ trait ConnectOptions extends StObject {
 }
 object ConnectOptions {
   
-  @scala.inline
-  def apply(): ConnectOptions = {
+  inline def apply(): ConnectOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ConnectOptions]
   }
   
-  @scala.inline
-  implicit class ConnectOptionsMutableBuilder[Self <: ConnectOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ConnectOptions](x: Self) {
     
-    @scala.inline
-    def setDcInit(value: RTCDataChannelInit): Self = StObject.set(x, "dcInit", value.asInstanceOf[js.Any])
+    inline def setDcInit(value: RTCDataChannelInit): Self = StObject.set(x, "dcInit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDcInitUndefined: Self = StObject.set(x, "dcInit", js.undefined)
+    inline def setDcInitUndefined: Self = StObject.set(x, "dcInit", js.undefined)
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+    inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
     
-    @scala.inline
-    def setSerialization(value: String): Self = StObject.set(x, "serialization", value.asInstanceOf[js.Any])
+    inline def setSerialization(value: String): Self = StObject.set(x, "serialization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSerializationUndefined: Self = StObject.set(x, "serialization", js.undefined)
+    inline def setSerializationUndefined: Self = StObject.set(x, "serialization", js.undefined)
   }
 }

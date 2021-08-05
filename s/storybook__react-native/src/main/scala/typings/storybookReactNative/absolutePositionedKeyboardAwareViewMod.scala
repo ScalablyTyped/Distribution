@@ -46,20 +46,16 @@ object absolutePositionedKeyboardAwareViewMod {
   }
   object PreviewDimens {
     
-    @scala.inline
-    def apply(previewHeight: Double, previewWidth: Double): PreviewDimens = {
+    inline def apply(previewHeight: Double, previewWidth: Double): PreviewDimens = {
       val __obj = js.Dynamic.literal(previewHeight = previewHeight.asInstanceOf[js.Any], previewWidth = previewWidth.asInstanceOf[js.Any])
       __obj.asInstanceOf[PreviewDimens]
     }
     
-    @scala.inline
-    implicit class PreviewDimensMutableBuilder[Self <: PreviewDimens] (val x: Self) extends AnyVal {
+    extension [Self <: PreviewDimens](x: Self) {
       
-      @scala.inline
-      def setPreviewHeight(value: Double): Self = StObject.set(x, "previewHeight", value.asInstanceOf[js.Any])
+      inline def setPreviewHeight(value: Double): Self = StObject.set(x, "previewHeight", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreviewWidth(value: Double): Self = StObject.set(x, "previewWidth", value.asInstanceOf[js.Any])
+      inline def setPreviewWidth(value: Double): Self = StObject.set(x, "previewWidth", value.asInstanceOf[js.Any])
     }
   }
   
@@ -71,17 +67,14 @@ object absolutePositionedKeyboardAwareViewMod {
   }
   object Props {
     
-    @scala.inline
-    def apply(onLayout: PreviewDimens => Unit, previewHeight: Double, previewWidth: Double): Props = {
+    inline def apply(onLayout: PreviewDimens => Unit, previewHeight: Double, previewWidth: Double): Props = {
       val __obj = js.Dynamic.literal(onLayout = js.Any.fromFunction1(onLayout), previewHeight = previewHeight.asInstanceOf[js.Any], previewWidth = previewWidth.asInstanceOf[js.Any])
       __obj.asInstanceOf[Props]
     }
     
-    @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
+    extension [Self <: Props](x: Self) {
       
-      @scala.inline
-      def setOnLayout(value: PreviewDimens => Unit): Self = StObject.set(x, "onLayout", js.Any.fromFunction1(value))
+      inline def setOnLayout(value: PreviewDimens => Unit): Self = StObject.set(x, "onLayout", js.Any.fromFunction1(value))
     }
   }
 }

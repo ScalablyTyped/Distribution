@@ -38,17 +38,14 @@ object circleMod {
   }
   object CircleConfig {
     
-    @scala.inline
-    def apply(radius: Double): CircleConfig = {
+    inline def apply(radius: Double): CircleConfig = {
       val __obj = js.Dynamic.literal(radius = radius.asInstanceOf[js.Any])
       __obj.asInstanceOf[CircleConfig]
     }
     
-    @scala.inline
-    implicit class CircleConfigMutableBuilder[Self <: CircleConfig] (val x: Self) extends AnyVal {
+    extension [Self <: CircleConfig](x: Self) {
       
-      @scala.inline
-      def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+      inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     }
   }
 }

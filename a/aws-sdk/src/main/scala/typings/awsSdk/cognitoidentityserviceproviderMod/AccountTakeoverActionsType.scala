@@ -23,31 +23,23 @@ trait AccountTakeoverActionsType extends StObject {
 }
 object AccountTakeoverActionsType {
   
-  @scala.inline
-  def apply(): AccountTakeoverActionsType = {
+  inline def apply(): AccountTakeoverActionsType = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AccountTakeoverActionsType]
   }
   
-  @scala.inline
-  implicit class AccountTakeoverActionsTypeMutableBuilder[Self <: AccountTakeoverActionsType] (val x: Self) extends AnyVal {
+  extension [Self <: AccountTakeoverActionsType](x: Self) {
     
-    @scala.inline
-    def setHighAction(value: AccountTakeoverActionType): Self = StObject.set(x, "HighAction", value.asInstanceOf[js.Any])
+    inline def setHighAction(value: AccountTakeoverActionType): Self = StObject.set(x, "HighAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHighActionUndefined: Self = StObject.set(x, "HighAction", js.undefined)
+    inline def setHighActionUndefined: Self = StObject.set(x, "HighAction", js.undefined)
     
-    @scala.inline
-    def setLowAction(value: AccountTakeoverActionType): Self = StObject.set(x, "LowAction", value.asInstanceOf[js.Any])
+    inline def setLowAction(value: AccountTakeoverActionType): Self = StObject.set(x, "LowAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowActionUndefined: Self = StObject.set(x, "LowAction", js.undefined)
+    inline def setLowActionUndefined: Self = StObject.set(x, "LowAction", js.undefined)
     
-    @scala.inline
-    def setMediumAction(value: AccountTakeoverActionType): Self = StObject.set(x, "MediumAction", value.asInstanceOf[js.Any])
+    inline def setMediumAction(value: AccountTakeoverActionType): Self = StObject.set(x, "MediumAction", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMediumActionUndefined: Self = StObject.set(x, "MediumAction", js.undefined)
+    inline def setMediumActionUndefined: Self = StObject.set(x, "MediumAction", js.undefined)
   }
 }

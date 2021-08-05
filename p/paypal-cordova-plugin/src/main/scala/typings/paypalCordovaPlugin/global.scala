@@ -207,8 +207,7 @@ object global {
   @JSGlobal("PayPalMobile")
   @js.native
   def PayPalMobile: PayPalMobileStatic = js.native
-  @scala.inline
-  def PayPalMobile_=(x: PayPalMobileStatic): Unit = js.Dynamic.global.updateDynamic("PayPalMobile")(x.asInstanceOf[js.Any])
+  inline def PayPalMobile_=(x: PayPalMobileStatic): Unit = js.Dynamic.global.updateDynamic("PayPalMobile")(x.asInstanceOf[js.Any])
   
   /**
     * Convenience constructor. Returns a PayPalPayment with the specified amount, currency code, and short description.

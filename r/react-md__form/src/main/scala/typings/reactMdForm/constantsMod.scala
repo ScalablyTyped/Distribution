@@ -10,8 +10,7 @@ object constantsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def DEFAULT_SLIDER_GET_VALUE_TEXT(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("DEFAULT_SLIDER_GET_VALUE_TEXT")().asInstanceOf[String]
+  inline def DEFAULT_SLIDER_GET_VALUE_TEXT(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("DEFAULT_SLIDER_GET_VALUE_TEXT")().asInstanceOf[String]
   
   @JSImport("@react-md/form/types/slider/constants", "DEFAULT_SLIDER_MAX")
   @js.native

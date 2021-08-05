@@ -18,19 +18,15 @@ trait CreateActivityOutput extends StObject {
 }
 object CreateActivityOutput {
   
-  @scala.inline
-  def apply(activityArn: Arn, creationDate: Timestamp): CreateActivityOutput = {
+  inline def apply(activityArn: Arn, creationDate: Timestamp): CreateActivityOutput = {
     val __obj = js.Dynamic.literal(activityArn = activityArn.asInstanceOf[js.Any], creationDate = creationDate.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateActivityOutput]
   }
   
-  @scala.inline
-  implicit class CreateActivityOutputMutableBuilder[Self <: CreateActivityOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateActivityOutput](x: Self) {
     
-    @scala.inline
-    def setActivityArn(value: Arn): Self = StObject.set(x, "activityArn", value.asInstanceOf[js.Any])
+    inline def setActivityArn(value: Arn): Self = StObject.set(x, "activityArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationDate(value: Timestamp): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
+    inline def setCreationDate(value: Timestamp): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
   }
 }

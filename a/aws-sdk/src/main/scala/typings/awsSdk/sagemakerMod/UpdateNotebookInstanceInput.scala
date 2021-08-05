@@ -73,94 +73,65 @@ trait UpdateNotebookInstanceInput extends StObject {
 }
 object UpdateNotebookInstanceInput {
   
-  @scala.inline
-  def apply(NotebookInstanceName: NotebookInstanceName): UpdateNotebookInstanceInput = {
+  inline def apply(NotebookInstanceName: NotebookInstanceName): UpdateNotebookInstanceInput = {
     val __obj = js.Dynamic.literal(NotebookInstanceName = NotebookInstanceName.asInstanceOf[js.Any])
     __obj.asInstanceOf[UpdateNotebookInstanceInput]
   }
   
-  @scala.inline
-  implicit class UpdateNotebookInstanceInputMutableBuilder[Self <: UpdateNotebookInstanceInput] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateNotebookInstanceInput](x: Self) {
     
-    @scala.inline
-    def setAcceleratorTypes(value: NotebookInstanceAcceleratorTypes): Self = StObject.set(x, "AcceleratorTypes", value.asInstanceOf[js.Any])
+    inline def setAcceleratorTypes(value: NotebookInstanceAcceleratorTypes): Self = StObject.set(x, "AcceleratorTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAcceleratorTypesUndefined: Self = StObject.set(x, "AcceleratorTypes", js.undefined)
+    inline def setAcceleratorTypesUndefined: Self = StObject.set(x, "AcceleratorTypes", js.undefined)
     
-    @scala.inline
-    def setAcceleratorTypesVarargs(value: NotebookInstanceAcceleratorType*): Self = StObject.set(x, "AcceleratorTypes", js.Array(value :_*))
+    inline def setAcceleratorTypesVarargs(value: NotebookInstanceAcceleratorType*): Self = StObject.set(x, "AcceleratorTypes", js.Array(value :_*))
     
-    @scala.inline
-    def setAdditionalCodeRepositories(value: AdditionalCodeRepositoryNamesOrUrls): Self = StObject.set(x, "AdditionalCodeRepositories", value.asInstanceOf[js.Any])
+    inline def setAdditionalCodeRepositories(value: AdditionalCodeRepositoryNamesOrUrls): Self = StObject.set(x, "AdditionalCodeRepositories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalCodeRepositoriesUndefined: Self = StObject.set(x, "AdditionalCodeRepositories", js.undefined)
+    inline def setAdditionalCodeRepositoriesUndefined: Self = StObject.set(x, "AdditionalCodeRepositories", js.undefined)
     
-    @scala.inline
-    def setAdditionalCodeRepositoriesVarargs(value: CodeRepositoryNameOrUrl*): Self = StObject.set(x, "AdditionalCodeRepositories", js.Array(value :_*))
+    inline def setAdditionalCodeRepositoriesVarargs(value: CodeRepositoryNameOrUrl*): Self = StObject.set(x, "AdditionalCodeRepositories", js.Array(value :_*))
     
-    @scala.inline
-    def setDefaultCodeRepository(value: CodeRepositoryNameOrUrl): Self = StObject.set(x, "DefaultCodeRepository", value.asInstanceOf[js.Any])
+    inline def setDefaultCodeRepository(value: CodeRepositoryNameOrUrl): Self = StObject.set(x, "DefaultCodeRepository", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDefaultCodeRepositoryUndefined: Self = StObject.set(x, "DefaultCodeRepository", js.undefined)
+    inline def setDefaultCodeRepositoryUndefined: Self = StObject.set(x, "DefaultCodeRepository", js.undefined)
     
-    @scala.inline
-    def setDisassociateAcceleratorTypes(value: DisassociateNotebookInstanceAcceleratorTypes): Self = StObject.set(x, "DisassociateAcceleratorTypes", value.asInstanceOf[js.Any])
+    inline def setDisassociateAcceleratorTypes(value: DisassociateNotebookInstanceAcceleratorTypes): Self = StObject.set(x, "DisassociateAcceleratorTypes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisassociateAcceleratorTypesUndefined: Self = StObject.set(x, "DisassociateAcceleratorTypes", js.undefined)
+    inline def setDisassociateAcceleratorTypesUndefined: Self = StObject.set(x, "DisassociateAcceleratorTypes", js.undefined)
     
-    @scala.inline
-    def setDisassociateAdditionalCodeRepositories(value: DisassociateAdditionalCodeRepositories): Self = StObject.set(x, "DisassociateAdditionalCodeRepositories", value.asInstanceOf[js.Any])
+    inline def setDisassociateAdditionalCodeRepositories(value: DisassociateAdditionalCodeRepositories): Self = StObject.set(x, "DisassociateAdditionalCodeRepositories", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisassociateAdditionalCodeRepositoriesUndefined: Self = StObject.set(x, "DisassociateAdditionalCodeRepositories", js.undefined)
+    inline def setDisassociateAdditionalCodeRepositoriesUndefined: Self = StObject.set(x, "DisassociateAdditionalCodeRepositories", js.undefined)
     
-    @scala.inline
-    def setDisassociateDefaultCodeRepository(value: DisassociateDefaultCodeRepository): Self = StObject.set(x, "DisassociateDefaultCodeRepository", value.asInstanceOf[js.Any])
+    inline def setDisassociateDefaultCodeRepository(value: DisassociateDefaultCodeRepository): Self = StObject.set(x, "DisassociateDefaultCodeRepository", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisassociateDefaultCodeRepositoryUndefined: Self = StObject.set(x, "DisassociateDefaultCodeRepository", js.undefined)
+    inline def setDisassociateDefaultCodeRepositoryUndefined: Self = StObject.set(x, "DisassociateDefaultCodeRepository", js.undefined)
     
-    @scala.inline
-    def setDisassociateLifecycleConfig(value: DisassociateNotebookInstanceLifecycleConfig): Self = StObject.set(x, "DisassociateLifecycleConfig", value.asInstanceOf[js.Any])
+    inline def setDisassociateLifecycleConfig(value: DisassociateNotebookInstanceLifecycleConfig): Self = StObject.set(x, "DisassociateLifecycleConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisassociateLifecycleConfigUndefined: Self = StObject.set(x, "DisassociateLifecycleConfig", js.undefined)
+    inline def setDisassociateLifecycleConfigUndefined: Self = StObject.set(x, "DisassociateLifecycleConfig", js.undefined)
     
-    @scala.inline
-    def setInstanceType(value: InstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
+    inline def setInstanceType(value: InstanceType): Self = StObject.set(x, "InstanceType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
+    inline def setInstanceTypeUndefined: Self = StObject.set(x, "InstanceType", js.undefined)
     
-    @scala.inline
-    def setLifecycleConfigName(value: NotebookInstanceLifecycleConfigName): Self = StObject.set(x, "LifecycleConfigName", value.asInstanceOf[js.Any])
+    inline def setLifecycleConfigName(value: NotebookInstanceLifecycleConfigName): Self = StObject.set(x, "LifecycleConfigName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifecycleConfigNameUndefined: Self = StObject.set(x, "LifecycleConfigName", js.undefined)
+    inline def setLifecycleConfigNameUndefined: Self = StObject.set(x, "LifecycleConfigName", js.undefined)
     
-    @scala.inline
-    def setNotebookInstanceName(value: NotebookInstanceName): Self = StObject.set(x, "NotebookInstanceName", value.asInstanceOf[js.Any])
+    inline def setNotebookInstanceName(value: NotebookInstanceName): Self = StObject.set(x, "NotebookInstanceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArn(value: RoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: RoleArn): Self = StObject.set(x, "RoleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "RoleArn", js.undefined)
     
-    @scala.inline
-    def setRootAccess(value: RootAccess): Self = StObject.set(x, "RootAccess", value.asInstanceOf[js.Any])
+    inline def setRootAccess(value: RootAccess): Self = StObject.set(x, "RootAccess", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootAccessUndefined: Self = StObject.set(x, "RootAccess", js.undefined)
+    inline def setRootAccessUndefined: Self = StObject.set(x, "RootAccess", js.undefined)
     
-    @scala.inline
-    def setVolumeSizeInGB(value: NotebookInstanceVolumeSizeInGB): Self = StObject.set(x, "VolumeSizeInGB", value.asInstanceOf[js.Any])
+    inline def setVolumeSizeInGB(value: NotebookInstanceVolumeSizeInGB): Self = StObject.set(x, "VolumeSizeInGB", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVolumeSizeInGBUndefined: Self = StObject.set(x, "VolumeSizeInGB", js.undefined)
+    inline def setVolumeSizeInGBUndefined: Self = StObject.set(x, "VolumeSizeInGB", js.undefined)
   }
 }

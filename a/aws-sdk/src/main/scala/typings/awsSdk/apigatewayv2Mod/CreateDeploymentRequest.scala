@@ -23,28 +23,21 @@ trait CreateDeploymentRequest extends StObject {
 }
 object CreateDeploymentRequest {
   
-  @scala.inline
-  def apply(ApiId: string): CreateDeploymentRequest = {
+  inline def apply(ApiId: string): CreateDeploymentRequest = {
     val __obj = js.Dynamic.literal(ApiId = ApiId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateDeploymentRequest]
   }
   
-  @scala.inline
-  implicit class CreateDeploymentRequestMutableBuilder[Self <: CreateDeploymentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateDeploymentRequest](x: Self) {
     
-    @scala.inline
-    def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
+    inline def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescription(value: StringWithLengthBetween0And1024): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: StringWithLengthBetween0And1024): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setStageName(value: StringWithLengthBetween1And128): Self = StObject.set(x, "StageName", value.asInstanceOf[js.Any])
+    inline def setStageName(value: StringWithLengthBetween1And128): Self = StObject.set(x, "StageName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStageNameUndefined: Self = StObject.set(x, "StageName", js.undefined)
+    inline def setStageNameUndefined: Self = StObject.set(x, "StageName", js.undefined)
   }
 }

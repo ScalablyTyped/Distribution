@@ -18,8 +18,7 @@ trait EventEVENTPOWER
 }
 object EventEVENTPOWER {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     data: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_POWER] */ js.Any,
     event: EVENT_POWER,
     objectId: String
@@ -28,18 +27,14 @@ object EventEVENTPOWER {
     __obj.asInstanceOf[EventEVENTPOWER]
   }
   
-  @scala.inline
-  implicit class EventEVENTPOWERMutableBuilder[Self <: EventEVENTPOWER] (val x: Self) extends AnyVal {
+  extension [Self <: EventEVENTPOWER](x: Self) {
     
-    @scala.inline
-    def setData(
+    inline def setData(
       value: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_POWER] */ js.Any
     ): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvent(value: EVENT_POWER): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    inline def setEvent(value: EVENT_POWER): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
+    inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
   }
 }

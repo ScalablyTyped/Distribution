@@ -6,14 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("InfoPath.DataObjectsCollection")
 @js.native
-class DataObjectsCollection protected ()
+/* private */ class DataObjectsCollection ()
   extends StObject
      with typings.activexInfopath.InfoPath.DataObjectsCollection {
   
   /* CompleteClass */
   override val Count: Double = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("InfoPath.DataObjectsCollection_typekey")
   var InfoPathDotDataObjectsCollection_typekey: typings.activexInfopath.InfoPath.DataObjectsCollection = js.native
   

@@ -14,22 +14,17 @@ trait GestureHandlerGestureEventNativeEvent extends StObject {
 }
 object GestureHandlerGestureEventNativeEvent {
   
-  @scala.inline
-  def apply(handlerTag: Double, numberOfPointers: Double, state: State): GestureHandlerGestureEventNativeEvent = {
+  inline def apply(handlerTag: Double, numberOfPointers: Double, state: State): GestureHandlerGestureEventNativeEvent = {
     val __obj = js.Dynamic.literal(handlerTag = handlerTag.asInstanceOf[js.Any], numberOfPointers = numberOfPointers.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
     __obj.asInstanceOf[GestureHandlerGestureEventNativeEvent]
   }
   
-  @scala.inline
-  implicit class GestureHandlerGestureEventNativeEventMutableBuilder[Self <: GestureHandlerGestureEventNativeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: GestureHandlerGestureEventNativeEvent](x: Self) {
     
-    @scala.inline
-    def setHandlerTag(value: Double): Self = StObject.set(x, "handlerTag", value.asInstanceOf[js.Any])
+    inline def setHandlerTag(value: Double): Self = StObject.set(x, "handlerTag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberOfPointers(value: Double): Self = StObject.set(x, "numberOfPointers", value.asInstanceOf[js.Any])
+    inline def setNumberOfPointers(value: Double): Self = StObject.set(x, "numberOfPointers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

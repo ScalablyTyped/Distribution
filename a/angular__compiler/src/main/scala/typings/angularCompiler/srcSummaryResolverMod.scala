@@ -12,7 +12,7 @@ object srcSummaryResolverMod {
   @js.native
   class JitSummaryResolver () extends SummaryResolver[Type] {
     
-    var _summaries: js.Any = js.native
+    /* private */ var _summaries: js.Any = js.native
     
     def fromSummaryFileName(fileName: String): String = js.native
     
@@ -54,26 +54,20 @@ object srcSummaryResolverMod {
   }
   object Summary {
     
-    @scala.inline
-    def apply[T](metadata: js.Any, symbol: T): Summary[T] = {
+    inline def apply[T](metadata: js.Any, symbol: T): Summary[T] = {
       val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
       __obj.asInstanceOf[Summary[T]]
     }
     
-    @scala.inline
-    implicit class SummaryMutableBuilder[Self <: Summary[?], T] (val x: Self & Summary[T]) extends AnyVal {
+    extension [Self <: Summary[?], T](x: Self & Summary[T]) {
       
-      @scala.inline
-      def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: js.Any): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSymbol(value: T): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
+      inline def setSymbol(value: T): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setType(value: CompileTypeSummary): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: CompileTypeSummary): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
 }

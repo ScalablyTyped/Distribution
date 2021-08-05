@@ -43,58 +43,41 @@ trait ExportTask extends StObject {
 }
 object ExportTask {
   
-  @scala.inline
-  def apply(): ExportTask = {
+  inline def apply(): ExportTask = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExportTask]
   }
   
-  @scala.inline
-  implicit class ExportTaskMutableBuilder[Self <: ExportTask] (val x: Self) extends AnyVal {
+  extension [Self <: ExportTask](x: Self) {
     
-    @scala.inline
-    def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
+    inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
+    inline def setDescriptionUndefined: Self = StObject.set(x, "Description", js.undefined)
     
-    @scala.inline
-    def setExportTaskId(value: String): Self = StObject.set(x, "ExportTaskId", value.asInstanceOf[js.Any])
+    inline def setExportTaskId(value: String): Self = StObject.set(x, "ExportTaskId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportTaskIdUndefined: Self = StObject.set(x, "ExportTaskId", js.undefined)
+    inline def setExportTaskIdUndefined: Self = StObject.set(x, "ExportTaskId", js.undefined)
     
-    @scala.inline
-    def setExportToS3Task(value: ExportToS3Task): Self = StObject.set(x, "ExportToS3Task", value.asInstanceOf[js.Any])
+    inline def setExportToS3Task(value: ExportToS3Task): Self = StObject.set(x, "ExportToS3Task", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExportToS3TaskUndefined: Self = StObject.set(x, "ExportToS3Task", js.undefined)
+    inline def setExportToS3TaskUndefined: Self = StObject.set(x, "ExportToS3Task", js.undefined)
     
-    @scala.inline
-    def setInstanceExportDetails(value: InstanceExportDetails): Self = StObject.set(x, "InstanceExportDetails", value.asInstanceOf[js.Any])
+    inline def setInstanceExportDetails(value: InstanceExportDetails): Self = StObject.set(x, "InstanceExportDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstanceExportDetailsUndefined: Self = StObject.set(x, "InstanceExportDetails", js.undefined)
+    inline def setInstanceExportDetailsUndefined: Self = StObject.set(x, "InstanceExportDetails", js.undefined)
     
-    @scala.inline
-    def setState(value: ExportTaskState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: ExportTaskState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
-    @scala.inline
-    def setStatusMessage(value: String): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
+    inline def setStatusMessage(value: String): Self = StObject.set(x, "StatusMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
+    inline def setStatusMessageUndefined: Self = StObject.set(x, "StatusMessage", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

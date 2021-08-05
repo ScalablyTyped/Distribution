@@ -22,40 +22,29 @@ trait CreateTokenizationDictionaryParams extends StObject {
 }
 object CreateTokenizationDictionaryParams {
   
-  @scala.inline
-  def apply(collection_id: String, environment_id: String): CreateTokenizationDictionaryParams = {
+  inline def apply(collection_id: String, environment_id: String): CreateTokenizationDictionaryParams = {
     val __obj = js.Dynamic.literal(collection_id = collection_id.asInstanceOf[js.Any], environment_id = environment_id.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateTokenizationDictionaryParams]
   }
   
-  @scala.inline
-  implicit class CreateTokenizationDictionaryParamsMutableBuilder[Self <: CreateTokenizationDictionaryParams] (val x: Self) extends AnyVal {
+  extension [Self <: CreateTokenizationDictionaryParams](x: Self) {
     
-    @scala.inline
-    def setCollection_id(value: String): Self = StObject.set(x, "collection_id", value.asInstanceOf[js.Any])
+    inline def setCollection_id(value: String): Self = StObject.set(x, "collection_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironment_id(value: String): Self = StObject.set(x, "environment_id", value.asInstanceOf[js.Any])
+    inline def setEnvironment_id(value: String): Self = StObject.set(x, "environment_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
+    inline def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
-    @scala.inline
-    def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
+    inline def setReturn_response(value: Boolean): Self = StObject.set(x, "return_response", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
+    inline def setReturn_responseUndefined: Self = StObject.set(x, "return_response", js.undefined)
     
-    @scala.inline
-    def setTokenization_rules(value: js.Array[TokenDictRule]): Self = StObject.set(x, "tokenization_rules", value.asInstanceOf[js.Any])
+    inline def setTokenization_rules(value: js.Array[TokenDictRule]): Self = StObject.set(x, "tokenization_rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTokenization_rulesUndefined: Self = StObject.set(x, "tokenization_rules", js.undefined)
+    inline def setTokenization_rulesUndefined: Self = StObject.set(x, "tokenization_rules", js.undefined)
     
-    @scala.inline
-    def setTokenization_rulesVarargs(value: TokenDictRule*): Self = StObject.set(x, "tokenization_rules", js.Array(value :_*))
+    inline def setTokenization_rulesVarargs(value: TokenDictRule*): Self = StObject.set(x, "tokenization_rules", js.Array(value :_*))
   }
 }

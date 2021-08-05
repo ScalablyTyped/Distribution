@@ -10,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("Excel.PivotItem")
 @js.native
-class PivotItem protected ()
+/* private */ class PivotItem ()
   extends StObject
      with typings.activexExcel.Excel.PivotItem {
   
@@ -52,7 +52,7 @@ class PivotItem protected ()
   /* CompleteClass */
   var DrilledDown: Boolean = js.native
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("Excel.PivotItem_typekey")
   var ExcelDotPivotItem_typekey: typings.activexExcel.Excel.PivotItem = js.native
   

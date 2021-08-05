@@ -23,31 +23,23 @@ trait ListProjectsInput extends StObject {
 }
 object ListProjectsInput {
   
-  @scala.inline
-  def apply(): ListProjectsInput = {
+  inline def apply(): ListProjectsInput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListProjectsInput]
   }
   
-  @scala.inline
-  implicit class ListProjectsInputMutableBuilder[Self <: ListProjectsInput] (val x: Self) extends AnyVal {
+  extension [Self <: ListProjectsInput](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: NonEmptyString): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: NonEmptyString): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "nextToken", js.undefined)
     
-    @scala.inline
-    def setSortBy(value: ProjectSortByType): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
+    inline def setSortBy(value: ProjectSortByType): Self = StObject.set(x, "sortBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
+    inline def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
     
-    @scala.inline
-    def setSortOrder(value: SortOrderType): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
+    inline def setSortOrder(value: SortOrderType): Self = StObject.set(x, "sortOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
+    inline def setSortOrderUndefined: Self = StObject.set(x, "sortOrder", js.undefined)
   }
 }

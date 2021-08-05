@@ -18,28 +18,21 @@ trait InboxPlacementTrackingOption extends StObject {
 }
 object InboxPlacementTrackingOption {
   
-  @scala.inline
-  def apply(): InboxPlacementTrackingOption = {
+  inline def apply(): InboxPlacementTrackingOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InboxPlacementTrackingOption]
   }
   
-  @scala.inline
-  implicit class InboxPlacementTrackingOptionMutableBuilder[Self <: InboxPlacementTrackingOption] (val x: Self) extends AnyVal {
+  extension [Self <: InboxPlacementTrackingOption](x: Self) {
     
-    @scala.inline
-    def setGlobal(value: Enabled): Self = StObject.set(x, "Global", value.asInstanceOf[js.Any])
+    inline def setGlobal(value: Enabled): Self = StObject.set(x, "Global", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGlobalUndefined: Self = StObject.set(x, "Global", js.undefined)
+    inline def setGlobalUndefined: Self = StObject.set(x, "Global", js.undefined)
     
-    @scala.inline
-    def setTrackedIsps(value: IspNameList): Self = StObject.set(x, "TrackedIsps", value.asInstanceOf[js.Any])
+    inline def setTrackedIsps(value: IspNameList): Self = StObject.set(x, "TrackedIsps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTrackedIspsUndefined: Self = StObject.set(x, "TrackedIsps", js.undefined)
+    inline def setTrackedIspsUndefined: Self = StObject.set(x, "TrackedIsps", js.undefined)
     
-    @scala.inline
-    def setTrackedIspsVarargs(value: IspName*): Self = StObject.set(x, "TrackedIsps", js.Array(value :_*))
+    inline def setTrackedIspsVarargs(value: IspName*): Self = StObject.set(x, "TrackedIsps", js.Array(value :_*))
   }
 }

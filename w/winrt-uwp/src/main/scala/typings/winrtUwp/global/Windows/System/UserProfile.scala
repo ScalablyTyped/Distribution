@@ -55,8 +55,7 @@ object UserProfile {
     @JSGlobal("Windows.System.UserProfile.AdvertisingManager.advertisingId")
     @js.native
     def advertisingId: String = js.native
-    @scala.inline
-    def advertisingId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("advertisingId")(x.asInstanceOf[js.Any])
+    inline def advertisingId_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("advertisingId")(x.asInstanceOf[js.Any])
   }
   
   /** Represents a collection of settings that a user can opt-in to during the first run experience. */
@@ -110,8 +109,7 @@ object UserProfile {
       * @return The default instance of the settings.
       */
     /* static member */
-    @scala.inline
-    def getDefault(): typings.winrtUwp.Windows.System.UserProfile.FirstSignInSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrtUwp.Windows.System.UserProfile.FirstSignInSettings]
+    inline def getDefault(): typings.winrtUwp.Windows.System.UserProfile.FirstSignInSettings = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefault")().asInstanceOf[typings.winrtUwp.Windows.System.UserProfile.FirstSignInSettings]
   }
   
   /** A static class for holding various user globalization preferences. */
@@ -131,48 +129,42 @@ object UserProfile {
     @JSGlobal("Windows.System.UserProfile.GlobalizationPreferences.calendars")
     @js.native
     def calendars: IVectorView[String] = js.native
-    @scala.inline
-    def calendars_=(x: IVectorView[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("calendars")(x.asInstanceOf[js.Any])
+    inline def calendars_=(x: IVectorView[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("calendars")(x.asInstanceOf[js.Any])
     
     /** Gets the set of clocks that are preferred by the user, in order of preference. */
     /* static member */
     @JSGlobal("Windows.System.UserProfile.GlobalizationPreferences.clocks")
     @js.native
     def clocks: IVectorView[String] = js.native
-    @scala.inline
-    def clocks_=(x: IVectorView[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clocks")(x.asInstanceOf[js.Any])
+    inline def clocks_=(x: IVectorView[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("clocks")(x.asInstanceOf[js.Any])
     
     /** Gets the set of currencies that are preferred by the user, in order of preference. */
     /* static member */
     @JSGlobal("Windows.System.UserProfile.GlobalizationPreferences.currencies")
     @js.native
     def currencies: IVectorView[String] = js.native
-    @scala.inline
-    def currencies_=(x: IVectorView[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("currencies")(x.asInstanceOf[js.Any])
+    inline def currencies_=(x: IVectorView[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("currencies")(x.asInstanceOf[js.Any])
     
     /** Gets the user's home geographic region. */
     /* static member */
     @JSGlobal("Windows.System.UserProfile.GlobalizationPreferences.homeGeographicRegion")
     @js.native
     def homeGeographicRegion: String = js.native
-    @scala.inline
-    def homeGeographicRegion_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("homeGeographicRegion")(x.asInstanceOf[js.Any])
+    inline def homeGeographicRegion_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("homeGeographicRegion")(x.asInstanceOf[js.Any])
     
     /** Gets the set of languages that are preferred by the user, in order of preference. */
     /* static member */
     @JSGlobal("Windows.System.UserProfile.GlobalizationPreferences.languages")
     @js.native
     def languages: IVectorView[String] = js.native
-    @scala.inline
-    def languages_=(x: IVectorView[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("languages")(x.asInstanceOf[js.Any])
+    inline def languages_=(x: IVectorView[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("languages")(x.asInstanceOf[js.Any])
     
     /** Gets the day of the week that is considered to be the first day of the week. */
     /* static member */
     @JSGlobal("Windows.System.UserProfile.GlobalizationPreferences.weekStartsOn")
     @js.native
     def weekStartsOn: DayOfWeek = js.native
-    @scala.inline
-    def weekStartsOn_=(x: DayOfWeek): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("weekStartsOn")(x.asInstanceOf[js.Any])
+    inline def weekStartsOn_=(x: DayOfWeek): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("weekStartsOn")(x.asInstanceOf[js.Any])
   }
   
   /** Provides properties and methods to manage the full-screen image used as the lock screen background. */
@@ -192,16 +184,14 @@ object UserProfile {
       * @return The stream that contains the lock screen image data.
       */
     /* static member */
-    @scala.inline
-    def getImageStream(): IRandomAccessStream = ^.asInstanceOf[js.Dynamic].applyDynamic("getImageStream")().asInstanceOf[IRandomAccessStream]
+    inline def getImageStream(): IRandomAccessStream = ^.asInstanceOf[js.Dynamic].applyDynamic("getImageStream")().asInstanceOf[IRandomAccessStream]
     
     /** Gets the current lock screen image. */
     /* static member */
     @JSGlobal("Windows.System.UserProfile.LockScreen.originalImageFile")
     @js.native
     def originalImageFile: Uri = js.native
-    @scala.inline
-    def originalImageFile_=(x: Uri): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("originalImageFile")(x.asInstanceOf[js.Any])
+    inline def originalImageFile_=(x: Uri): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("originalImageFile")(x.asInstanceOf[js.Any])
     
     /**
       * Registers an RSS image feed to be used as a lock screen slideshow. (Windows 8.1 only)
@@ -209,8 +199,7 @@ object UserProfile {
       * @return One of the SetImageFeedResult values.
       */
     /* static member */
-    @scala.inline
-    def requestSetImageFeedAsync(syndicationFeedUri: Uri): IPromiseWithIAsyncOperation[SetImageFeedResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestSetImageFeedAsync")(syndicationFeedUri.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[SetImageFeedResult]]
+    inline def requestSetImageFeedAsync(syndicationFeedUri: Uri): IPromiseWithIAsyncOperation[SetImageFeedResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("requestSetImageFeedAsync")(syndicationFeedUri.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[SetImageFeedResult]]
     
     /**
       * Sets the lock screen image from a StorageFile object.
@@ -218,8 +207,7 @@ object UserProfile {
       * @return The object used to set the image for the lock screen.
       */
     /* static member */
-    @scala.inline
-    def setImageFileAsync(value: IStorageFile): IPromiseWithIAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("setImageFileAsync")(value.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncAction]
+    inline def setImageFileAsync(value: IStorageFile): IPromiseWithIAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("setImageFileAsync")(value.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncAction]
     
     /**
       * Sets the lock screen image from a data stream.
@@ -227,16 +215,14 @@ object UserProfile {
       * @return The object used to set the lock screen image.
       */
     /* static member */
-    @scala.inline
-    def setImageStreamAsync(value: IRandomAccessStream): IPromiseWithIAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("setImageStreamAsync")(value.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncAction]
+    inline def setImageStreamAsync(value: IRandomAccessStream): IPromiseWithIAsyncAction = ^.asInstanceOf[js.Dynamic].applyDynamic("setImageStreamAsync")(value.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncAction]
     
     /**
       * Unregisters the image feed being used in the lock screen slideshow, stopping the slideshow. (Windows 8.1 only)
       * @return true if the image feed was disabled; otherwise, false.
       */
     /* static member */
-    @scala.inline
-    def tryRemoveImageFeed(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("tryRemoveImageFeed")().asInstanceOf[Boolean]
+    inline def tryRemoveImageFeed(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("tryRemoveImageFeed")().asInstanceOf[Boolean]
   }
   
   /** A result that is returned when you try to set the image for a user account. */
@@ -292,16 +278,13 @@ object UserProfile {
     @JSGlobal("Windows.System.UserProfile.UserInformation.accountPictureChangeEnabled")
     @js.native
     def accountPictureChangeEnabled: Boolean = js.native
-    @scala.inline
-    def accountPictureChangeEnabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("accountPictureChangeEnabled")(x.asInstanceOf[js.Any])
+    inline def accountPictureChangeEnabled_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("accountPictureChangeEnabled")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @scala.inline
-    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def addEventListener_accountpicturechanged(`type`: accountpicturechanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def addEventListener_accountpicturechanged(`type`: accountpicturechanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Gets the account picture for the user.
@@ -309,80 +292,69 @@ object UserProfile {
       * @return An object that contains the image.
       */
     /* static member */
-    @scala.inline
-    def getAccountPicture(kind: AccountPictureKind): IStorageFile = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccountPicture")(kind.asInstanceOf[js.Any]).asInstanceOf[IStorageFile]
+    inline def getAccountPicture(kind: AccountPictureKind): IStorageFile = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccountPicture")(kind.asInstanceOf[js.Any]).asInstanceOf[IStorageFile]
     
     /**
       * Gets the display name for the user account.
       * @return The display name for the user account.
       */
     /* static member */
-    @scala.inline
-    def getDisplayNameAsync(): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayNameAsync")().asInstanceOf[IPromiseWithIAsyncOperation[String]]
+    inline def getDisplayNameAsync(): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayNameAsync")().asInstanceOf[IPromiseWithIAsyncOperation[String]]
     
     /**
       * Gets the domain name for the user.
       * @return A string that represents the domain name for the user.
       */
     /* static member */
-    @scala.inline
-    def getDomainNameAsync(): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDomainNameAsync")().asInstanceOf[IPromiseWithIAsyncOperation[String]]
+    inline def getDomainNameAsync(): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDomainNameAsync")().asInstanceOf[IPromiseWithIAsyncOperation[String]]
     
     /**
       * Gets the user's first name.
       * @return The user's first name.
       */
     /* static member */
-    @scala.inline
-    def getFirstNameAsync(): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstNameAsync")().asInstanceOf[IPromiseWithIAsyncOperation[String]]
+    inline def getFirstNameAsync(): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstNameAsync")().asInstanceOf[IPromiseWithIAsyncOperation[String]]
     
     /**
       * Gets the user's last name.
       * @return The user's last name.
       */
     /* static member */
-    @scala.inline
-    def getLastNameAsync(): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLastNameAsync")().asInstanceOf[IPromiseWithIAsyncOperation[String]]
+    inline def getLastNameAsync(): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLastNameAsync")().asInstanceOf[IPromiseWithIAsyncOperation[String]]
     
     /**
       * Gets the principal name for the user. This name is the User Principal Name (typically the user's address, although this is not always true.)
       * @return The user's principal name.
       */
     /* static member */
-    @scala.inline
-    def getPrincipalNameAsync(): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrincipalNameAsync")().asInstanceOf[IPromiseWithIAsyncOperation[String]]
+    inline def getPrincipalNameAsync(): IPromiseWithIAsyncOperation[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPrincipalNameAsync")().asInstanceOf[IPromiseWithIAsyncOperation[String]]
     
     /**
       * Gets the Uniform Resource Identifier (URI) of the session initiation protocol for the user.
       * @return The URI of the session initiation protocol.
       */
     /* static member */
-    @scala.inline
-    def getSessionInitiationProtocolUriAsync(): IPromiseWithIAsyncOperation[Uri] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSessionInitiationProtocolUriAsync")().asInstanceOf[IPromiseWithIAsyncOperation[Uri]]
+    inline def getSessionInitiationProtocolUriAsync(): IPromiseWithIAsyncOperation[Uri] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSessionInitiationProtocolUriAsync")().asInstanceOf[IPromiseWithIAsyncOperation[Uri]]
     
     /** Allows you to see if your app is allowed to access the user's information. */
     /* static member */
     @JSGlobal("Windows.System.UserProfile.UserInformation.nameAccessAllowed")
     @js.native
     def nameAccessAllowed: Boolean = js.native
-    @scala.inline
-    def nameAccessAllowed_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nameAccessAllowed")(x.asInstanceOf[js.Any])
+    inline def nameAccessAllowed_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nameAccessAllowed")(x.asInstanceOf[js.Any])
     
     /** Occurs when the user's image or name changes. */
     /* static member */
     @JSGlobal("Windows.System.UserProfile.UserInformation.onaccountpicturechanged")
     @js.native
     def onaccountpicturechanged: EventHandler[js.Any] = js.native
-    @scala.inline
-    def onaccountpicturechanged_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onaccountpicturechanged")(x.asInstanceOf[js.Any])
+    inline def onaccountpicturechanged_=(x: EventHandler[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onaccountpicturechanged")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @scala.inline
-    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @scala.inline
-    def removeEventListener_accountpicturechanged(`type`: accountpicturechanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    inline def removeEventListener_accountpicturechanged(`type`: accountpicturechanged, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Sets the picture for the user's account using an IStorageFile object.
@@ -390,8 +362,7 @@ object UserProfile {
       * @return A value that indicates the success or failure of the operation.
       */
     /* static member */
-    @scala.inline
-    def setAccountPictureAsync(image: IStorageFile): IPromiseWithIAsyncOperation[SetAccountPictureResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("setAccountPictureAsync")(image.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[SetAccountPictureResult]]
+    inline def setAccountPictureAsync(image: IStorageFile): IPromiseWithIAsyncOperation[SetAccountPictureResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("setAccountPictureAsync")(image.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[SetAccountPictureResult]]
     
     /**
       * Sets the picture for the user's account using an IRandomAccessStream object.
@@ -399,8 +370,7 @@ object UserProfile {
       * @return A value that indicates the success or failure of the operation.
       */
     /* static member */
-    @scala.inline
-    def setAccountPictureFromStreamAsync(image: IRandomAccessStream): IPromiseWithIAsyncOperation[SetAccountPictureResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("setAccountPictureFromStreamAsync")(image.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[SetAccountPictureResult]]
+    inline def setAccountPictureFromStreamAsync(image: IRandomAccessStream): IPromiseWithIAsyncOperation[SetAccountPictureResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("setAccountPictureFromStreamAsync")(image.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[SetAccountPictureResult]]
     
     /**
       * Sets the pictures for the user's account using an IStorageFile object. Supports adding a small image, large image, and video.
@@ -410,8 +380,7 @@ object UserProfile {
       * @return A value that indicates the success or failure of the operation.
       */
     /* static member */
-    @scala.inline
-    def setAccountPicturesAsync(smallImage: IStorageFile, largeImage: IStorageFile, video: IStorageFile): IPromiseWithIAsyncOperation[SetAccountPictureResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("setAccountPicturesAsync")(smallImage.asInstanceOf[js.Any], largeImage.asInstanceOf[js.Any], video.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[SetAccountPictureResult]]
+    inline def setAccountPicturesAsync(smallImage: IStorageFile, largeImage: IStorageFile, video: IStorageFile): IPromiseWithIAsyncOperation[SetAccountPictureResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("setAccountPicturesAsync")(smallImage.asInstanceOf[js.Any], largeImage.asInstanceOf[js.Any], video.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[SetAccountPictureResult]]
     
     /**
       * Sets the pictures for the user's account using an IRandomAccessStream object. Supports adding a small image, large image, and video.
@@ -421,8 +390,7 @@ object UserProfile {
       * @return A value that indicates the success or failure of the operation.
       */
     /* static member */
-    @scala.inline
-    def setAccountPicturesFromStreamsAsync(smallImage: IRandomAccessStream, largeImage: IRandomAccessStream, video: IRandomAccessStream): IPromiseWithIAsyncOperation[SetAccountPictureResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("setAccountPicturesFromStreamsAsync")(smallImage.asInstanceOf[js.Any], largeImage.asInstanceOf[js.Any], video.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[SetAccountPictureResult]]
+    inline def setAccountPicturesFromStreamsAsync(smallImage: IRandomAccessStream, largeImage: IRandomAccessStream, video: IRandomAccessStream): IPromiseWithIAsyncOperation[SetAccountPictureResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("setAccountPicturesFromStreamsAsync")(smallImage.asInstanceOf[js.Any], largeImage.asInstanceOf[js.Any], video.asInstanceOf[js.Any])).asInstanceOf[IPromiseWithIAsyncOperation[SetAccountPictureResult]]
   }
   
   /** Provides properties and methods to manage the user's desktop wallpaper and lock screen background image. */
@@ -459,15 +427,13 @@ object UserProfile {
     @JSGlobal("Windows.System.UserProfile.UserProfilePersonalizationSettings.current")
     @js.native
     def current: typings.winrtUwp.Windows.System.UserProfile.UserProfilePersonalizationSettings = js.native
-    @scala.inline
-    def current_=(x: typings.winrtUwp.Windows.System.UserProfile.UserProfilePersonalizationSettings): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("current")(x.asInstanceOf[js.Any])
+    inline def current_=(x: typings.winrtUwp.Windows.System.UserProfile.UserProfilePersonalizationSettings): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("current")(x.asInstanceOf[js.Any])
     
     /**
       * Gets a value that indicates whether changing the desktop and lock screen images is supported on the current device.
       * @return true if changing the desktop and lock screen images is supported; otherwise, false.
       */
     /* static member */
-    @scala.inline
-    def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
+    inline def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
   }
 }

@@ -14,28 +14,21 @@ trait Isolines extends StObject {
 }
 object Isolines {
   
-  @scala.inline
-  def apply(MetaInfo: Timestamp, View: js.Array[Result], isolines: js.Array[js.Any]): Isolines = {
+  inline def apply(MetaInfo: Timestamp, View: js.Array[Result], isolines: js.Array[js.Any]): Isolines = {
     val __obj = js.Dynamic.literal(MetaInfo = MetaInfo.asInstanceOf[js.Any], View = View.asInstanceOf[js.Any], isolines = isolines.asInstanceOf[js.Any])
     __obj.asInstanceOf[Isolines]
   }
   
-  @scala.inline
-  implicit class IsolinesMutableBuilder[Self <: Isolines] (val x: Self) extends AnyVal {
+  extension [Self <: Isolines](x: Self) {
     
-    @scala.inline
-    def setIsolines(value: js.Array[js.Any]): Self = StObject.set(x, "isolines", value.asInstanceOf[js.Any])
+    inline def setIsolines(value: js.Array[js.Any]): Self = StObject.set(x, "isolines", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsolinesVarargs(value: js.Any*): Self = StObject.set(x, "isolines", js.Array(value :_*))
+    inline def setIsolinesVarargs(value: js.Any*): Self = StObject.set(x, "isolines", js.Array(value :_*))
     
-    @scala.inline
-    def setMetaInfo(value: Timestamp): Self = StObject.set(x, "MetaInfo", value.asInstanceOf[js.Any])
+    inline def setMetaInfo(value: Timestamp): Self = StObject.set(x, "MetaInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setView(value: js.Array[Result]): Self = StObject.set(x, "View", value.asInstanceOf[js.Any])
+    inline def setView(value: js.Array[Result]): Self = StObject.set(x, "View", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewVarargs(value: Result*): Self = StObject.set(x, "View", js.Array(value :_*))
+    inline def setViewVarargs(value: Result*): Self = StObject.set(x, "View", js.Array(value :_*))
   }
 }

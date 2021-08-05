@@ -16,8 +16,7 @@ trait ISortedQuery
 }
 object ISortedQuery {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ThenBy: String => js.Any,
     ThenByDesc: String => js.Any,
     ToCamlQuery: () => js.Any,
@@ -27,13 +26,10 @@ object ISortedQuery {
     __obj.asInstanceOf[ISortedQuery]
   }
   
-  @scala.inline
-  implicit class ISortedQueryMutableBuilder[Self <: ISortedQuery] (val x: Self) extends AnyVal {
+  extension [Self <: ISortedQuery](x: Self) {
     
-    @scala.inline
-    def setThenBy(value: String => js.Any): Self = StObject.set(x, "ThenBy", js.Any.fromFunction1(value))
+    inline def setThenBy(value: String => js.Any): Self = StObject.set(x, "ThenBy", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setThenByDesc(value: String => js.Any): Self = StObject.set(x, "ThenByDesc", js.Any.fromFunction1(value))
+    inline def setThenByDesc(value: String => js.Any): Self = StObject.set(x, "ThenByDesc", js.Any.fromFunction1(value))
   }
 }

@@ -24,58 +24,41 @@ trait MultiTagElement extends StObject {
 }
 object MultiTagElement {
   
-  @scala.inline
-  def apply(): MultiTagElement = {
+  inline def apply(): MultiTagElement = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MultiTagElement]
   }
   
-  @scala.inline
-  implicit class MultiTagElementMutableBuilder[Self <: MultiTagElement] (val x: Self) extends AnyVal {
+  extension [Self <: MultiTagElement](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
+    inline def setCancelUndefined: Self = StObject.set(x, "cancel", js.undefined)
     
-    @scala.inline
-    def setComponent(value: dxTagBox): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    inline def setComponent(value: dxTagBox): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+    inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
     
-    @scala.inline
-    def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    inline def setElement(value: dxElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
+    inline def setElementUndefined: Self = StObject.set(x, "element", js.undefined)
     
-    @scala.inline
-    def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+    inline def setModel(value: js.Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
+    inline def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
-    @scala.inline
-    def setMultiTagElement(value: dxElement): Self = StObject.set(x, "multiTagElement", value.asInstanceOf[js.Any])
+    inline def setMultiTagElement(value: dxElement): Self = StObject.set(x, "multiTagElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMultiTagElementUndefined: Self = StObject.set(x, "multiTagElement", js.undefined)
+    inline def setMultiTagElementUndefined: Self = StObject.set(x, "multiTagElement", js.undefined)
     
-    @scala.inline
-    def setSelectedItems(value: js.Array[String | Double | js.Any]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
+    inline def setSelectedItems(value: js.Array[String | Double | js.Any]): Self = StObject.set(x, "selectedItems", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
+    inline def setSelectedItemsUndefined: Self = StObject.set(x, "selectedItems", js.undefined)
     
-    @scala.inline
-    def setSelectedItemsVarargs(value: (String | Double | js.Any)*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
+    inline def setSelectedItemsVarargs(value: (String | Double | js.Any)*): Self = StObject.set(x, "selectedItems", js.Array(value :_*))
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
   }
 }

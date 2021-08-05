@@ -17,31 +17,23 @@ trait Page
 }
 object Page {
   
-  @scala.inline
-  def apply(): Page = {
+  inline def apply(): Page = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Page]
   }
   
-  @scala.inline
-  implicit class PageMutableBuilder[Self <: Page] (val x: Self) extends AnyVal {
+  extension [Self <: Page](x: Self) {
     
-    @scala.inline
-    def setDeclarations(value: js.Array[Declaration | Comment]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
+    inline def setDeclarations(value: js.Array[Declaration | Comment]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeclarationsUndefined: Self = StObject.set(x, "declarations", js.undefined)
+    inline def setDeclarationsUndefined: Self = StObject.set(x, "declarations", js.undefined)
     
-    @scala.inline
-    def setDeclarationsVarargs(value: (Declaration | Comment)*): Self = StObject.set(x, "declarations", js.Array(value :_*))
+    inline def setDeclarationsVarargs(value: (Declaration | Comment)*): Self = StObject.set(x, "declarations", js.Array(value :_*))
     
-    @scala.inline
-    def setSelectors(value: js.Array[String]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
+    inline def setSelectors(value: js.Array[String]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
+    inline def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
     
-    @scala.inline
-    def setSelectorsVarargs(value: String*): Self = StObject.set(x, "selectors", js.Array(value :_*))
+    inline def setSelectorsVarargs(value: String*): Self = StObject.set(x, "selectors", js.Array(value :_*))
   }
 }

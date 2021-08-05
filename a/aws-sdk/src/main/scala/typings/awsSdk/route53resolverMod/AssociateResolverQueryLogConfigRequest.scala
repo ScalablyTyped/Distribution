@@ -18,19 +18,15 @@ trait AssociateResolverQueryLogConfigRequest extends StObject {
 }
 object AssociateResolverQueryLogConfigRequest {
   
-  @scala.inline
-  def apply(ResolverQueryLogConfigId: ResourceId, ResourceId: ResourceId): AssociateResolverQueryLogConfigRequest = {
+  inline def apply(ResolverQueryLogConfigId: ResourceId, ResourceId: ResourceId): AssociateResolverQueryLogConfigRequest = {
     val __obj = js.Dynamic.literal(ResolverQueryLogConfigId = ResolverQueryLogConfigId.asInstanceOf[js.Any], ResourceId = ResourceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[AssociateResolverQueryLogConfigRequest]
   }
   
-  @scala.inline
-  implicit class AssociateResolverQueryLogConfigRequestMutableBuilder[Self <: AssociateResolverQueryLogConfigRequest] (val x: Self) extends AnyVal {
+  extension [Self <: AssociateResolverQueryLogConfigRequest](x: Self) {
     
-    @scala.inline
-    def setResolverQueryLogConfigId(value: ResourceId): Self = StObject.set(x, "ResolverQueryLogConfigId", value.asInstanceOf[js.Any])
+    inline def setResolverQueryLogConfigId(value: ResourceId): Self = StObject.set(x, "ResolverQueryLogConfigId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceId(value: ResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
+    inline def setResourceId(value: ResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
   }
 }

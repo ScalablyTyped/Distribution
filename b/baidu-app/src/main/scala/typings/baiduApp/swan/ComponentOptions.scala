@@ -85,23 +85,18 @@ trait ComponentOptions[Instance /* <: Component[Data, Props] */, Data, Methods, 
 }
 object ComponentOptions {
   
-  @scala.inline
-  def apply[Instance /* <: Component[Data, Props] */, Data, Methods, Props](): ComponentOptions[Instance, Data, Methods, Props] = {
+  inline def apply[Instance /* <: Component[Data, Props] */, Data, Methods, Props](): ComponentOptions[Instance, Data, Methods, Props] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ComponentOptions[Instance, Data, Methods, Props]]
   }
   
-  @scala.inline
-  implicit class ComponentOptionsMutableBuilder[Self <: ComponentOptions[?, ?, ?, ?], Instance /* <: Component[Data, Props] */, Data, Methods, Props] (val x: Self & (ComponentOptions[Instance, Data, Methods, Props])) extends AnyVal {
+  extension [Self <: ComponentOptions[?, ?, ?, ?], Instance /* <: Component[Data, Props] */, Data, Methods, Props](x: Self & (ComponentOptions[Instance, Data, Methods, Props])) {
     
-    @scala.inline
-    def setAttached(value: () => Unit): Self = StObject.set(x, "attached", js.Any.fromFunction0(value))
+    inline def setAttached(value: () => Unit): Self = StObject.set(x, "attached", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setAttachedUndefined: Self = StObject.set(x, "attached", js.undefined)
+    inline def setAttachedUndefined: Self = StObject.set(x, "attached", js.undefined)
     
-    @scala.inline
-    def setBehaviors(
+    inline def setBehaviors(
       value: js.Array[
           (ComponentOptions[
             Component[js.Object, js.Object], 
@@ -112,11 +107,9 @@ object ComponentOptions {
         ]
     ): Self = StObject.set(x, "behaviors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBehaviorsUndefined: Self = StObject.set(x, "behaviors", js.undefined)
+    inline def setBehaviorsUndefined: Self = StObject.set(x, "behaviors", js.undefined)
     
-    @scala.inline
-    def setBehaviorsVarargs(
+    inline def setBehaviorsVarargs(
       value: ((ComponentOptions[
           Component[js.Object, js.Object], 
           DefaultData[Component[js.Object, js.Object]], 
@@ -125,73 +118,50 @@ object ComponentOptions {
         ]) | String)*
     ): Self = StObject.set(x, "behaviors", js.Array(value :_*))
     
-    @scala.inline
-    def setCreated(value: () => Unit): Self = StObject.set(x, "created", js.Any.fromFunction0(value))
+    inline def setCreated(value: () => Unit): Self = StObject.set(x, "created", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+    inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
-    @scala.inline
-    def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    inline def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
-    @scala.inline
-    def setDetached(value: () => Unit): Self = StObject.set(x, "detached", js.Any.fromFunction0(value))
+    inline def setDetached(value: () => Unit): Self = StObject.set(x, "detached", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
+    inline def setDetachedUndefined: Self = StObject.set(x, "detached", js.undefined)
     
-    @scala.inline
-    def setExternalClasses(value: js.Array[String]): Self = StObject.set(x, "externalClasses", value.asInstanceOf[js.Any])
+    inline def setExternalClasses(value: js.Array[String]): Self = StObject.set(x, "externalClasses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExternalClassesUndefined: Self = StObject.set(x, "externalClasses", js.undefined)
+    inline def setExternalClassesUndefined: Self = StObject.set(x, "externalClasses", js.undefined)
     
-    @scala.inline
-    def setExternalClassesVarargs(value: String*): Self = StObject.set(x, "externalClasses", js.Array(value :_*))
+    inline def setExternalClassesVarargs(value: String*): Self = StObject.set(x, "externalClasses", js.Array(value :_*))
     
-    @scala.inline
-    def setLifetimes(value: PartialLifetimes): Self = StObject.set(x, "lifetimes", value.asInstanceOf[js.Any])
+    inline def setLifetimes(value: PartialLifetimes): Self = StObject.set(x, "lifetimes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLifetimesUndefined: Self = StObject.set(x, "lifetimes", js.undefined)
+    inline def setLifetimesUndefined: Self = StObject.set(x, "lifetimes", js.undefined)
     
-    @scala.inline
-    def setMethods(value: Methods): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+    inline def setMethods(value: Methods): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
+    inline def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
     
-    @scala.inline
-    def setMoved(value: () => Unit): Self = StObject.set(x, "moved", js.Any.fromFunction0(value))
+    inline def setMoved(value: () => Unit): Self = StObject.set(x, "moved", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setMovedUndefined: Self = StObject.set(x, "moved", js.undefined)
+    inline def setMovedUndefined: Self = StObject.set(x, "moved", js.undefined)
     
-    @scala.inline
-    def setOptions(value: PartialaddGlobalClassbool): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: PartialaddGlobalClassbool): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
-    @scala.inline
-    def setPageLifetimes(value: PartialPageLifetimes): Self = StObject.set(x, "pageLifetimes", value.asInstanceOf[js.Any])
+    inline def setPageLifetimes(value: PartialPageLifetimes): Self = StObject.set(x, "pageLifetimes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageLifetimesUndefined: Self = StObject.set(x, "pageLifetimes", js.undefined)
+    inline def setPageLifetimesUndefined: Self = StObject.set(x, "pageLifetimes", js.undefined)
     
-    @scala.inline
-    def setProperties(value: Props): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: Props): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setReady(value: () => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction0(value))
+    inline def setReady(value: () => Unit): Self = StObject.set(x, "ready", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
+    inline def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
   }
 }

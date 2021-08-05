@@ -21,17 +21,14 @@ object typesMod {
   }
   object MDCToolbarEventDetail {
     
-    @scala.inline
-    def apply(flexibleExpansionRatio: Double): MDCToolbarEventDetail = {
+    inline def apply(flexibleExpansionRatio: Double): MDCToolbarEventDetail = {
       val __obj = js.Dynamic.literal(flexibleExpansionRatio = flexibleExpansionRatio.asInstanceOf[js.Any])
       __obj.asInstanceOf[MDCToolbarEventDetail]
     }
     
-    @scala.inline
-    implicit class MDCToolbarEventDetailMutableBuilder[Self <: MDCToolbarEventDetail] (val x: Self) extends AnyVal {
+    extension [Self <: MDCToolbarEventDetail](x: Self) {
       
-      @scala.inline
-      def setFlexibleExpansionRatio(value: Double): Self = StObject.set(x, "flexibleExpansionRatio", value.asInstanceOf[js.Any])
+      inline def setFlexibleExpansionRatio(value: Double): Self = StObject.set(x, "flexibleExpansionRatio", value.asInstanceOf[js.Any])
     }
   }
 }

@@ -10,19 +10,15 @@ trait Contrast extends StObject {
 }
 object Contrast {
   
-  @scala.inline
-  def apply(): Contrast = {
+  inline def apply(): Contrast = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Contrast]
   }
   
-  @scala.inline
-  implicit class ContrastMutableBuilder[Self <: Contrast] (val x: Self) extends AnyVal {
+  extension [Self <: Contrast](x: Self) {
     
-    @scala.inline
-    def setContrast(value: Double): Self = StObject.set(x, "contrast", value.asInstanceOf[js.Any])
+    inline def setContrast(value: Double): Self = StObject.set(x, "contrast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContrastUndefined: Self = StObject.set(x, "contrast", js.undefined)
+    inline def setContrastUndefined: Self = StObject.set(x, "contrast", js.undefined)
   }
 }

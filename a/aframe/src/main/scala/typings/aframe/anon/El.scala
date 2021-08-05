@@ -15,16 +15,13 @@ trait El extends StObject {
 }
 object El {
   
-  @scala.inline
-  def apply(el: Element | (Entity[ObjectMap[Component[js.Any, System[js.Any]]]])): El = {
+  inline def apply(el: Element | (Entity[ObjectMap[Component[js.Any, System[js.Any]]]])): El = {
     val __obj = js.Dynamic.literal(el = el.asInstanceOf[js.Any])
     __obj.asInstanceOf[El]
   }
   
-  @scala.inline
-  implicit class ElMutableBuilder[Self <: El] (val x: Self) extends AnyVal {
+  extension [Self <: El](x: Self) {
     
-    @scala.inline
-    def setEl(value: Element | (Entity[ObjectMap[Component[js.Any, System[js.Any]]]])): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+    inline def setEl(value: Element | (Entity[ObjectMap[Component[js.Any, System[js.Any]]]])): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
   }
 }

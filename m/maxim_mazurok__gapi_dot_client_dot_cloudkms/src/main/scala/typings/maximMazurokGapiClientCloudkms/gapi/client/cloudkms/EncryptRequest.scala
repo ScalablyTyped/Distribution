@@ -40,37 +40,27 @@ trait EncryptRequest extends StObject {
 }
 object EncryptRequest {
   
-  @scala.inline
-  def apply(): EncryptRequest = {
+  inline def apply(): EncryptRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[EncryptRequest]
   }
   
-  @scala.inline
-  implicit class EncryptRequestMutableBuilder[Self <: EncryptRequest] (val x: Self) extends AnyVal {
+  extension [Self <: EncryptRequest](x: Self) {
     
-    @scala.inline
-    def setAdditionalAuthenticatedData(value: String): Self = StObject.set(x, "additionalAuthenticatedData", value.asInstanceOf[js.Any])
+    inline def setAdditionalAuthenticatedData(value: String): Self = StObject.set(x, "additionalAuthenticatedData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalAuthenticatedDataCrc32c(value: String): Self = StObject.set(x, "additionalAuthenticatedDataCrc32c", value.asInstanceOf[js.Any])
+    inline def setAdditionalAuthenticatedDataCrc32c(value: String): Self = StObject.set(x, "additionalAuthenticatedDataCrc32c", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAdditionalAuthenticatedDataCrc32cUndefined: Self = StObject.set(x, "additionalAuthenticatedDataCrc32c", js.undefined)
+    inline def setAdditionalAuthenticatedDataCrc32cUndefined: Self = StObject.set(x, "additionalAuthenticatedDataCrc32c", js.undefined)
     
-    @scala.inline
-    def setAdditionalAuthenticatedDataUndefined: Self = StObject.set(x, "additionalAuthenticatedData", js.undefined)
+    inline def setAdditionalAuthenticatedDataUndefined: Self = StObject.set(x, "additionalAuthenticatedData", js.undefined)
     
-    @scala.inline
-    def setPlaintext(value: String): Self = StObject.set(x, "plaintext", value.asInstanceOf[js.Any])
+    inline def setPlaintext(value: String): Self = StObject.set(x, "plaintext", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaintextCrc32c(value: String): Self = StObject.set(x, "plaintextCrc32c", value.asInstanceOf[js.Any])
+    inline def setPlaintextCrc32c(value: String): Self = StObject.set(x, "plaintextCrc32c", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlaintextCrc32cUndefined: Self = StObject.set(x, "plaintextCrc32c", js.undefined)
+    inline def setPlaintextCrc32cUndefined: Self = StObject.set(x, "plaintextCrc32c", js.undefined)
     
-    @scala.inline
-    def setPlaintextUndefined: Self = StObject.set(x, "plaintext", js.undefined)
+    inline def setPlaintextUndefined: Self = StObject.set(x, "plaintext", js.undefined)
   }
 }

@@ -27,7 +27,7 @@ object tabComponentMod {
     
     var preventDefaultOnClick: Boolean = js.native
     
-    var root_ : HTMLElement = js.native
+    /* protected */ var root_ : HTMLElement = js.native
   }
   /* static members */
   object MDCTab {
@@ -36,8 +36,7 @@ object tabComponentMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def attachTo(root: Element): MDCTab = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCTab]
+    inline def attachTo(root: Element): MDCTab = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCTab]
   }
   
   type MDCTabFactory = js.Function2[/* el */ Element, /* foundation */ js.UndefOr[MDCTabFoundation], MDCTab]
@@ -56,17 +55,14 @@ object tabComponentMod {
   }
   object MDCTabSelectedEventDetail {
     
-    @scala.inline
-    def apply(tab: MDCTab): MDCTabSelectedEventDetail = {
+    inline def apply(tab: MDCTab): MDCTabSelectedEventDetail = {
       val __obj = js.Dynamic.literal(tab = tab.asInstanceOf[js.Any])
       __obj.asInstanceOf[MDCTabSelectedEventDetail]
     }
     
-    @scala.inline
-    implicit class MDCTabSelectedEventDetailMutableBuilder[Self <: MDCTabSelectedEventDetail] (val x: Self) extends AnyVal {
+    extension [Self <: MDCTabSelectedEventDetail](x: Self) {
       
-      @scala.inline
-      def setTab(value: MDCTab): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
+      inline def setTab(value: MDCTab): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
     }
   }
 }

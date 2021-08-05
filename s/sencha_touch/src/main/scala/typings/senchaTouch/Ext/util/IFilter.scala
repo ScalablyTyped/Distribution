@@ -128,175 +128,119 @@ trait IFilter
 }
 object IFilter {
   
-  @scala.inline
-  def apply(): IFilter = {
+  inline def apply(): IFilter = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IFilter]
   }
   
-  @scala.inline
-  implicit class IFilterMutableBuilder[Self <: IFilter] (val x: Self) extends AnyVal {
+  extension [Self <: IFilter](x: Self) {
     
-    @scala.inline
-    def setAnyMatch(value: Boolean): Self = StObject.set(x, "anyMatch", value.asInstanceOf[js.Any])
+    inline def setAnyMatch(value: Boolean): Self = StObject.set(x, "anyMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnyMatchUndefined: Self = StObject.set(x, "anyMatch", js.undefined)
+    inline def setAnyMatchUndefined: Self = StObject.set(x, "anyMatch", js.undefined)
     
-    @scala.inline
-    def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
+    inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
+    inline def setCaseSensitiveUndefined: Self = StObject.set(x, "caseSensitive", js.undefined)
     
-    @scala.inline
-    def setExactMatch(value: Boolean): Self = StObject.set(x, "exactMatch", value.asInstanceOf[js.Any])
+    inline def setExactMatch(value: Boolean): Self = StObject.set(x, "exactMatch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExactMatchUndefined: Self = StObject.set(x, "exactMatch", js.undefined)
+    inline def setExactMatchUndefined: Self = StObject.set(x, "exactMatch", js.undefined)
     
-    @scala.inline
-    def setFilterFn(value: js.Any): Self = StObject.set(x, "filterFn", value.asInstanceOf[js.Any])
+    inline def setFilterFn(value: js.Any): Self = StObject.set(x, "filterFn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterFnUndefined: Self = StObject.set(x, "filterFn", js.undefined)
+    inline def setFilterFnUndefined: Self = StObject.set(x, "filterFn", js.undefined)
     
-    @scala.inline
-    def setGetAnyMatch(value: () => Boolean): Self = StObject.set(x, "getAnyMatch", js.Any.fromFunction0(value))
+    inline def setGetAnyMatch(value: () => Boolean): Self = StObject.set(x, "getAnyMatch", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAnyMatchUndefined: Self = StObject.set(x, "getAnyMatch", js.undefined)
+    inline def setGetAnyMatchUndefined: Self = StObject.set(x, "getAnyMatch", js.undefined)
     
-    @scala.inline
-    def setGetCaseSensitive(value: () => Boolean): Self = StObject.set(x, "getCaseSensitive", js.Any.fromFunction0(value))
+    inline def setGetCaseSensitive(value: () => Boolean): Self = StObject.set(x, "getCaseSensitive", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetCaseSensitiveUndefined: Self = StObject.set(x, "getCaseSensitive", js.undefined)
+    inline def setGetCaseSensitiveUndefined: Self = StObject.set(x, "getCaseSensitive", js.undefined)
     
-    @scala.inline
-    def setGetExactMatch(value: () => Boolean): Self = StObject.set(x, "getExactMatch", js.Any.fromFunction0(value))
+    inline def setGetExactMatch(value: () => Boolean): Self = StObject.set(x, "getExactMatch", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetExactMatchUndefined: Self = StObject.set(x, "getExactMatch", js.undefined)
+    inline def setGetExactMatchUndefined: Self = StObject.set(x, "getExactMatch", js.undefined)
     
-    @scala.inline
-    def setGetFilterFn(value: () => js.Any): Self = StObject.set(x, "getFilterFn", js.Any.fromFunction0(value))
+    inline def setGetFilterFn(value: () => js.Any): Self = StObject.set(x, "getFilterFn", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFilterFnUndefined: Self = StObject.set(x, "getFilterFn", js.undefined)
+    inline def setGetFilterFnUndefined: Self = StObject.set(x, "getFilterFn", js.undefined)
     
-    @scala.inline
-    def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+    inline def setGetId(value: () => String): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetIdUndefined: Self = StObject.set(x, "getId", js.undefined)
+    inline def setGetIdUndefined: Self = StObject.set(x, "getId", js.undefined)
     
-    @scala.inline
-    def setGetProperty(value: () => String): Self = StObject.set(x, "getProperty", js.Any.fromFunction0(value))
+    inline def setGetProperty(value: () => String): Self = StObject.set(x, "getProperty", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetPropertyUndefined: Self = StObject.set(x, "getProperty", js.undefined)
+    inline def setGetPropertyUndefined: Self = StObject.set(x, "getProperty", js.undefined)
     
-    @scala.inline
-    def setGetRoot(value: () => String): Self = StObject.set(x, "getRoot", js.Any.fromFunction0(value))
+    inline def setGetRoot(value: () => String): Self = StObject.set(x, "getRoot", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetRootUndefined: Self = StObject.set(x, "getRoot", js.undefined)
+    inline def setGetRootUndefined: Self = StObject.set(x, "getRoot", js.undefined)
     
-    @scala.inline
-    def setGetScope(value: () => js.Any): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
+    inline def setGetScope(value: () => js.Any): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetScopeUndefined: Self = StObject.set(x, "getScope", js.undefined)
+    inline def setGetScopeUndefined: Self = StObject.set(x, "getScope", js.undefined)
     
-    @scala.inline
-    def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    inline def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
+    inline def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: String): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
+    inline def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
     
-    @scala.inline
-    def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+    inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+    inline def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
     
-    @scala.inline
-    def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    inline def setScope(value: js.Any): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
+    inline def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
     
-    @scala.inline
-    def setSetAnyMatch(value: /* anyMatch */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAnyMatch", js.Any.fromFunction1(value))
+    inline def setSetAnyMatch(value: /* anyMatch */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setAnyMatch", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetAnyMatchUndefined: Self = StObject.set(x, "setAnyMatch", js.undefined)
+    inline def setSetAnyMatchUndefined: Self = StObject.set(x, "setAnyMatch", js.undefined)
     
-    @scala.inline
-    def setSetCaseSensitive(value: /* caseSensitive */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setCaseSensitive", js.Any.fromFunction1(value))
+    inline def setSetCaseSensitive(value: /* caseSensitive */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setCaseSensitive", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetCaseSensitiveUndefined: Self = StObject.set(x, "setCaseSensitive", js.undefined)
+    inline def setSetCaseSensitiveUndefined: Self = StObject.set(x, "setCaseSensitive", js.undefined)
     
-    @scala.inline
-    def setSetExactMatch(value: /* exactMatch */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setExactMatch", js.Any.fromFunction1(value))
+    inline def setSetExactMatch(value: /* exactMatch */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "setExactMatch", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetExactMatchUndefined: Self = StObject.set(x, "setExactMatch", js.undefined)
+    inline def setSetExactMatchUndefined: Self = StObject.set(x, "setExactMatch", js.undefined)
     
-    @scala.inline
-    def setSetFilterFn(value: /* filterFn */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setFilterFn", js.Any.fromFunction1(value))
+    inline def setSetFilterFn(value: /* filterFn */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setFilterFn", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetFilterFnUndefined: Self = StObject.set(x, "setFilterFn", js.undefined)
+    inline def setSetFilterFnUndefined: Self = StObject.set(x, "setFilterFn", js.undefined)
     
-    @scala.inline
-    def setSetId(value: /* id */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setId", js.Any.fromFunction1(value))
+    inline def setSetId(value: /* id */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setId", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetIdUndefined: Self = StObject.set(x, "setId", js.undefined)
+    inline def setSetIdUndefined: Self = StObject.set(x, "setId", js.undefined)
     
-    @scala.inline
-    def setSetProperty(value: /* property */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setProperty", js.Any.fromFunction1(value))
+    inline def setSetProperty(value: /* property */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setProperty", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetPropertyUndefined: Self = StObject.set(x, "setProperty", js.undefined)
+    inline def setSetPropertyUndefined: Self = StObject.set(x, "setProperty", js.undefined)
     
-    @scala.inline
-    def setSetRoot(value: /* root */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setRoot", js.Any.fromFunction1(value))
+    inline def setSetRoot(value: /* root */ js.UndefOr[String] => Unit): Self = StObject.set(x, "setRoot", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetRootUndefined: Self = StObject.set(x, "setRoot", js.undefined)
+    inline def setSetRootUndefined: Self = StObject.set(x, "setRoot", js.undefined)
     
-    @scala.inline
-    def setSetScope(value: /* scope */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setScope", js.Any.fromFunction1(value))
+    inline def setSetScope(value: /* scope */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setScope", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetScopeUndefined: Self = StObject.set(x, "setScope", js.undefined)
+    inline def setSetScopeUndefined: Self = StObject.set(x, "setScope", js.undefined)
     
-    @scala.inline
-    def setSetValue(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
+    inline def setSetValue(value: /* value */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
+    inline def setSetValueUndefined: Self = StObject.set(x, "setValue", js.undefined)
     
-    @scala.inline
-    def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

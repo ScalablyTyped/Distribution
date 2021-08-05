@@ -14,31 +14,23 @@ trait Email extends StObject {
 }
 object Email {
   
-  @scala.inline
-  def apply(): Email = {
+  inline def apply(): Email = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Email]
   }
   
-  @scala.inline
-  implicit class EmailMutableBuilder[Self <: Email] (val x: Self) extends AnyVal {
+  extension [Self <: Email](x: Self) {
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setSegment_id(value: String): Self = StObject.set(x, "segment_id", value.asInstanceOf[js.Any])
+    inline def setSegment_id(value: String): Self = StObject.set(x, "segment_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegment_idUndefined: Self = StObject.set(x, "segment_id", js.undefined)
+    inline def setSegment_idUndefined: Self = StObject.set(x, "segment_id", js.undefined)
     
-    @scala.inline
-    def setTag_id(value: String): Self = StObject.set(x, "tag_id", value.asInstanceOf[js.Any])
+    inline def setTag_id(value: String): Self = StObject.set(x, "tag_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag_idUndefined: Self = StObject.set(x, "tag_id", js.undefined)
+    inline def setTag_idUndefined: Self = StObject.set(x, "tag_id", js.undefined)
   }
 }

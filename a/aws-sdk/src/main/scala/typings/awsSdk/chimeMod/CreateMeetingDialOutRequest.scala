@@ -28,8 +28,7 @@ trait CreateMeetingDialOutRequest extends StObject {
 }
 object CreateMeetingDialOutRequest {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FromPhoneNumber: E164PhoneNumber,
     JoinToken: JoinTokenString,
     MeetingId: GuidString,
@@ -39,19 +38,14 @@ object CreateMeetingDialOutRequest {
     __obj.asInstanceOf[CreateMeetingDialOutRequest]
   }
   
-  @scala.inline
-  implicit class CreateMeetingDialOutRequestMutableBuilder[Self <: CreateMeetingDialOutRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateMeetingDialOutRequest](x: Self) {
     
-    @scala.inline
-    def setFromPhoneNumber(value: E164PhoneNumber): Self = StObject.set(x, "FromPhoneNumber", value.asInstanceOf[js.Any])
+    inline def setFromPhoneNumber(value: E164PhoneNumber): Self = StObject.set(x, "FromPhoneNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setJoinToken(value: JoinTokenString): Self = StObject.set(x, "JoinToken", value.asInstanceOf[js.Any])
+    inline def setJoinToken(value: JoinTokenString): Self = StObject.set(x, "JoinToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMeetingId(value: GuidString): Self = StObject.set(x, "MeetingId", value.asInstanceOf[js.Any])
+    inline def setMeetingId(value: GuidString): Self = StObject.set(x, "MeetingId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToPhoneNumber(value: E164PhoneNumber): Self = StObject.set(x, "ToPhoneNumber", value.asInstanceOf[js.Any])
+    inline def setToPhoneNumber(value: E164PhoneNumber): Self = StObject.set(x, "ToPhoneNumber", value.asInstanceOf[js.Any])
   }
 }

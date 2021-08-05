@@ -38,8 +38,7 @@ trait Encoding extends StObject {
 }
 object Encoding {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     add: scala.Double,
     all: scala.Double,
     branch: scala.Double,
@@ -60,52 +59,36 @@ object Encoding {
     __obj.asInstanceOf[Encoding]
   }
   
-  @scala.inline
-  implicit class EncodingMutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
+  extension [Self <: Encoding](x: Self) {
     
-    @scala.inline
-    def setAdd(value: scala.Double): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
+    inline def setAdd(value: scala.Double): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
+    inline def setAll(value: scala.Double): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBranch(value: scala.Double): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+    inline def setBranch(value: scala.Double): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDelete(value: scala.Double): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
+    inline def setDelete(value: scala.Double): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEdit(value: scala.Double): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
+    inline def setEdit(value: scala.Double): Self = StObject.set(x, "edit", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncoding(value: scala.Double): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: scala.Double): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLock(value: scala.Double): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
+    inline def setLock(value: scala.Double): Self = StObject.set(x, "lock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMerge(value: scala.Double): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
+    inline def setMerge(value: scala.Double): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
+    inline def setNone(value: scala.Double): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperty(value: scala.Double): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: scala.Double): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRename(value: scala.Double): Self = StObject.set(x, "rename", value.asInstanceOf[js.Any])
+    inline def setRename(value: scala.Double): Self = StObject.set(x, "rename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRollback(value: scala.Double): Self = StObject.set(x, "rollback", value.asInstanceOf[js.Any])
+    inline def setRollback(value: scala.Double): Self = StObject.set(x, "rollback", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceRename(value: scala.Double): Self = StObject.set(x, "sourceRename", value.asInstanceOf[js.Any])
+    inline def setSourceRename(value: scala.Double): Self = StObject.set(x, "sourceRename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetRename(value: scala.Double): Self = StObject.set(x, "targetRename", value.asInstanceOf[js.Any])
+    inline def setTargetRename(value: scala.Double): Self = StObject.set(x, "targetRename", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUndelete(value: scala.Double): Self = StObject.set(x, "undelete", value.asInstanceOf[js.Any])
+    inline def setUndelete(value: scala.Double): Self = StObject.set(x, "undelete", value.asInstanceOf[js.Any])
   }
 }

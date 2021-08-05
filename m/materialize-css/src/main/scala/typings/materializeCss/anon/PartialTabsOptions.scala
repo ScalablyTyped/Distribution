@@ -19,37 +19,27 @@ trait PartialTabsOptions extends StObject {
 }
 object PartialTabsOptions {
   
-  @scala.inline
-  def apply(): PartialTabsOptions = {
+  inline def apply(): PartialTabsOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialTabsOptions]
   }
   
-  @scala.inline
-  implicit class PartialTabsOptionsMutableBuilder[Self <: PartialTabsOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartialTabsOptions](x: Self) {
     
-    @scala.inline
-    def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
+    inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
+    inline def setDurationUndefined: Self = StObject.set(x, "duration", js.undefined)
     
-    @scala.inline
-    def setOnShow(value: js.ThisFunction1[/* this */ Tabs, /* newContent */ Element, Unit]): Self = StObject.set(x, "onShow", value.asInstanceOf[js.Any])
+    inline def setOnShow(value: js.ThisFunction1[/* this */ Tabs, /* newContent */ Element, Unit]): Self = StObject.set(x, "onShow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
+    inline def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)
     
-    @scala.inline
-    def setResponsiveThreshold(value: Double): Self = StObject.set(x, "responsiveThreshold", value.asInstanceOf[js.Any])
+    inline def setResponsiveThreshold(value: Double): Self = StObject.set(x, "responsiveThreshold", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponsiveThresholdUndefined: Self = StObject.set(x, "responsiveThreshold", js.undefined)
+    inline def setResponsiveThresholdUndefined: Self = StObject.set(x, "responsiveThreshold", js.undefined)
     
-    @scala.inline
-    def setSwipeable(value: Boolean): Self = StObject.set(x, "swipeable", value.asInstanceOf[js.Any])
+    inline def setSwipeable(value: Boolean): Self = StObject.set(x, "swipeable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSwipeableUndefined: Self = StObject.set(x, "swipeable", js.undefined)
+    inline def setSwipeableUndefined: Self = StObject.set(x, "swipeable", js.undefined)
   }
 }

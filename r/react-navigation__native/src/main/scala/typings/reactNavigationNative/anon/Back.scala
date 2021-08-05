@@ -20,8 +20,7 @@ trait Back extends StObject {
 }
 object Back {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     back: () => Unit,
     forward: () => Unit,
     go: Double => Unit,
@@ -33,25 +32,18 @@ object Back {
     __obj.asInstanceOf[Back]
   }
   
-  @scala.inline
-  implicit class BackMutableBuilder[Self <: Back] (val x: Self) extends AnyVal {
+  extension [Self <: Back](x: Self) {
     
-    @scala.inline
-    def setBack(value: () => Unit): Self = StObject.set(x, "back", js.Any.fromFunction0(value))
+    inline def setBack(value: () => Unit): Self = StObject.set(x, "back", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setForward(value: () => Unit): Self = StObject.set(x, "forward", js.Any.fromFunction0(value))
+    inline def setForward(value: () => Unit): Self = StObject.set(x, "forward", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGo(value: Double => Unit): Self = StObject.set(x, "go", js.Any.fromFunction1(value))
+    inline def setGo(value: Double => Unit): Self = StObject.set(x, "go", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setPushState(value: (js.Any, String, String) => Unit): Self = StObject.set(x, "pushState", js.Any.fromFunction3(value))
+    inline def setPushState(value: (js.Any, String, String) => Unit): Self = StObject.set(x, "pushState", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setReplaceState(value: (js.Any, String, String) => Unit): Self = StObject.set(x, "replaceState", js.Any.fromFunction3(value))
+    inline def setReplaceState(value: (js.Any, String, String) => Unit): Self = StObject.set(x, "replaceState", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: js.Any): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }
 }

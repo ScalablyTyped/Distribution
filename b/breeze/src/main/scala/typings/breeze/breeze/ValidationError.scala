@@ -22,8 +22,7 @@ trait ValidationError extends StObject {
 }
 object ValidationError {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     context: js.Any,
     errorMessage: String,
     getKey: (Validator, String) => String,
@@ -36,28 +35,20 @@ object ValidationError {
     __obj.asInstanceOf[ValidationError]
   }
   
-  @scala.inline
-  implicit class ValidationErrorMutableBuilder[Self <: ValidationError] (val x: Self) extends AnyVal {
+  extension [Self <: ValidationError](x: Self) {
     
-    @scala.inline
-    def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: js.Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+    inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetKey(value: (Validator, String) => String): Self = StObject.set(x, "getKey", js.Any.fromFunction2(value))
+    inline def setGetKey(value: (Validator, String) => String): Self = StObject.set(x, "getKey", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProperty(value: IProperty): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
+    inline def setProperty(value: IProperty): Self = StObject.set(x, "property", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
+    inline def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValidator(value: Validator): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
+    inline def setValidator(value: Validator): Self = StObject.set(x, "validator", value.asInstanceOf[js.Any])
   }
 }

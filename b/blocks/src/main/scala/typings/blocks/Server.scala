@@ -31,37 +31,27 @@ trait Server extends StObject {
 }
 object Server {
   
-  @scala.inline
-  def apply(): Server = {
+  inline def apply(): Server = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Server]
   }
   
-  @scala.inline
-  implicit class ServerMutableBuilder[Self <: Server] (val x: Self) extends AnyVal {
+  extension [Self <: Server](x: Self) {
     
-    @scala.inline
-    def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
+    inline def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
     
-    @scala.inline
-    def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
     
-    @scala.inline
-    def setStatic(value: String): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
+    inline def setStatic(value: String): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStaticUndefined: Self = StObject.set(x, "static", js.undefined)
+    inline def setStaticUndefined: Self = StObject.set(x, "static", js.undefined)
     
-    @scala.inline
-    def setUse(value: js.Any): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
+    inline def setUse(value: js.Any): Self = StObject.set(x, "use", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
+    inline def setUseUndefined: Self = StObject.set(x, "use", js.undefined)
   }
 }

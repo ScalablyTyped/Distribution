@@ -22,8 +22,7 @@ object mod {
   	//=> 2868248295
   	```
   	*/
-  @scala.inline
-  def apply(string: String): Double = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def apply(string: String): Double = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("@sindresorhus/fnv1a", JSImport.Namespace)
   @js.native
@@ -40,10 +39,8 @@ object mod {
   	//=> 13487074350300261116944693128525960095n
   	```
   	*/
-  @scala.inline
-  def bigInt(string: String): js.BigInt = ^.asInstanceOf[js.Dynamic].applyDynamic("bigInt")(string.asInstanceOf[js.Any]).asInstanceOf[js.BigInt]
-  @scala.inline
-  def bigInt(string: String, options: Options): js.BigInt = (^.asInstanceOf[js.Dynamic].applyDynamic("bigInt")(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.BigInt]
+  inline def bigInt(string: String): js.BigInt = ^.asInstanceOf[js.Dynamic].applyDynamic("bigInt")(string.asInstanceOf[js.Any]).asInstanceOf[js.BigInt]
+  inline def bigInt(string: String, options: Options): js.BigInt = (^.asInstanceOf[js.Dynamic].applyDynamic("bigInt")(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.BigInt]
   
   trait Options extends StObject {
     
@@ -55,20 +52,16 @@ object mod {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setSize(value: `32` | `64` | `128` | `256` | `512` | `1024`): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+      inline def setSize(value: `32` | `64` | `128` | `256` | `512` | `1024`): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+      inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     }
   }
 }

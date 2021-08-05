@@ -15,31 +15,23 @@ trait PopupEvents extends StObject {
 }
 object PopupEvents {
   
-  @scala.inline
-  def apply(): PopupEvents = {
+  inline def apply(): PopupEvents = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PopupEvents]
   }
   
-  @scala.inline
-  implicit class PopupEventsMutableBuilder[Self <: PopupEvents] (val x: Self) extends AnyVal {
+  extension [Self <: PopupEvents](x: Self) {
     
-    @scala.inline
-    def setPopupafterclose(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "popupafterclose", js.Any.fromFunction2(value))
+    inline def setPopupafterclose(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "popupafterclose", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPopupaftercloseUndefined: Self = StObject.set(x, "popupafterclose", js.undefined)
+    inline def setPopupaftercloseUndefined: Self = StObject.set(x, "popupafterclose", js.undefined)
     
-    @scala.inline
-    def setPopupafteropen(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "popupafteropen", js.Any.fromFunction2(value))
+    inline def setPopupafteropen(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "popupafteropen", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPopupafteropenUndefined: Self = StObject.set(x, "popupafteropen", js.undefined)
+    inline def setPopupafteropenUndefined: Self = StObject.set(x, "popupafteropen", js.undefined)
     
-    @scala.inline
-    def setPopupbeforeposition(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "popupbeforeposition", js.Any.fromFunction2(value))
+    inline def setPopupbeforeposition(value: (/* event */ Event, /* ui */ js.Any) => Unit): Self = StObject.set(x, "popupbeforeposition", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setPopupbeforepositionUndefined: Self = StObject.set(x, "popupbeforeposition", js.undefined)
+    inline def setPopupbeforepositionUndefined: Self = StObject.set(x, "popupbeforeposition", js.undefined)
   }
 }

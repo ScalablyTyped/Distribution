@@ -97,8 +97,7 @@ trait XFilePreview
 }
 object XFilePreview {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     AvailableHeight: Double,
     AvailableWidth: Double,
     ShowState: Boolean,
@@ -119,43 +118,30 @@ object XFilePreview {
     __obj.asInstanceOf[XFilePreview]
   }
   
-  @scala.inline
-  implicit class XFilePreviewMutableBuilder[Self <: XFilePreview] (val x: Self) extends AnyVal {
+  extension [Self <: XFilePreview](x: Self) {
     
-    @scala.inline
-    def setAvailableHeight(value: Double): Self = StObject.set(x, "AvailableHeight", value.asInstanceOf[js.Any])
+    inline def setAvailableHeight(value: Double): Self = StObject.set(x, "AvailableHeight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAvailableWidth(value: Double): Self = StObject.set(x, "AvailableWidth", value.asInstanceOf[js.Any])
+    inline def setAvailableWidth(value: Double): Self = StObject.set(x, "AvailableWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAvailableHeight(value: () => Double): Self = StObject.set(x, "getAvailableHeight", js.Any.fromFunction0(value))
+    inline def setGetAvailableHeight(value: () => Double): Self = StObject.set(x, "getAvailableHeight", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetAvailableWidth(value: () => Double): Self = StObject.set(x, "getAvailableWidth", js.Any.fromFunction0(value))
+    inline def setGetAvailableWidth(value: () => Double): Self = StObject.set(x, "getAvailableWidth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetShowState(value: () => Boolean): Self = StObject.set(x, "getShowState", js.Any.fromFunction0(value))
+    inline def setGetShowState(value: () => Boolean): Self = StObject.set(x, "getShowState", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetSupportedImageFormats(value: () => SafeArray[Double]): Self = StObject.set(x, "getSupportedImageFormats", js.Any.fromFunction0(value))
+    inline def setGetSupportedImageFormats(value: () => SafeArray[Double]): Self = StObject.set(x, "getSupportedImageFormats", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetTargetColorDepth(value: () => Color): Self = StObject.set(x, "getTargetColorDepth", js.Any.fromFunction0(value))
+    inline def setGetTargetColorDepth(value: () => Color): Self = StObject.set(x, "getTargetColorDepth", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetImage(value: (Double, js.Any) => Unit): Self = StObject.set(x, "setImage", js.Any.fromFunction2(value))
+    inline def setSetImage(value: (Double, js.Any) => Unit): Self = StObject.set(x, "setImage", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setSetShowState(value: Boolean => Boolean): Self = StObject.set(x, "setShowState", js.Any.fromFunction1(value))
+    inline def setSetShowState(value: Boolean => Boolean): Self = StObject.set(x, "setShowState", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setShowState(value: Boolean): Self = StObject.set(x, "ShowState", value.asInstanceOf[js.Any])
+    inline def setShowState(value: Boolean): Self = StObject.set(x, "ShowState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSupportedImageFormats(value: SafeArray[Double]): Self = StObject.set(x, "SupportedImageFormats", value.asInstanceOf[js.Any])
+    inline def setSupportedImageFormats(value: SafeArray[Double]): Self = StObject.set(x, "SupportedImageFormats", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetColorDepth(value: Color): Self = StObject.set(x, "TargetColorDepth", value.asInstanceOf[js.Any])
+    inline def setTargetColorDepth(value: Color): Self = StObject.set(x, "TargetColorDepth", value.asInstanceOf[js.Any])
   }
 }

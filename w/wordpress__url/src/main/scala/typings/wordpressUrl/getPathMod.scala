@@ -10,6 +10,5 @@ object getPathMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getPath(url: String): String | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(url.asInstanceOf[js.Any]).asInstanceOf[String | Unit]
+  inline def getPath(url: String): String | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(url.asInstanceOf[js.Any]).asInstanceOf[String | Unit]
 }

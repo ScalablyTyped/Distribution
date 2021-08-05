@@ -15,19 +15,15 @@ trait NavigationAnnotationsAnimationOptions extends StObject {
 }
 object NavigationAnnotationsAnimationOptions {
   
-  @scala.inline
-  def apply(): NavigationAnnotationsAnimationOptions = {
+  inline def apply(): NavigationAnnotationsAnimationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NavigationAnnotationsAnimationOptions]
   }
   
-  @scala.inline
-  implicit class NavigationAnnotationsAnimationOptionsMutableBuilder[Self <: NavigationAnnotationsAnimationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: NavigationAnnotationsAnimationOptions](x: Self) {
     
-    @scala.inline
-    def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
+    inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
+    inline def setDeferUndefined: Self = StObject.set(x, "defer", js.undefined)
   }
 }

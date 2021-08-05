@@ -13,8 +13,7 @@ trait BeginInstallTypes
 }
 object BeginInstallTypes {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     eventId: Double,
     kind: EventBeginInstallTypes,
     packagesToInstall: js.Array[String],
@@ -25,10 +24,8 @@ object BeginInstallTypes {
     __obj.asInstanceOf[BeginInstallTypes]
   }
   
-  @scala.inline
-  implicit class BeginInstallTypesMutableBuilder[Self <: BeginInstallTypes] (val x: Self) extends AnyVal {
+  extension [Self <: BeginInstallTypes](x: Self) {
     
-    @scala.inline
-    def setKind(value: EventBeginInstallTypes): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: EventBeginInstallTypes): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }
 }

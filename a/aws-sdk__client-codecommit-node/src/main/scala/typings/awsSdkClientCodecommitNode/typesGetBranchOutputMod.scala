@@ -26,23 +26,18 @@ object typesGetBranchOutputMod {
   }
   object GetBranchOutput {
     
-    @scala.inline
-    def apply($metadata: ResponseMetadata): GetBranchOutput = {
+    inline def apply($metadata: ResponseMetadata): GetBranchOutput = {
       val __obj = js.Dynamic.literal($metadata = $metadata.asInstanceOf[js.Any])
       __obj.asInstanceOf[GetBranchOutput]
     }
     
-    @scala.inline
-    implicit class GetBranchOutputMutableBuilder[Self <: GetBranchOutput] (val x: Self) extends AnyVal {
+    extension [Self <: GetBranchOutput](x: Self) {
       
-      @scala.inline
-      def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
+      inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBranch(value: UnmarshalledBranchInfo): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
+      inline def setBranch(value: UnmarshalledBranchInfo): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
+      inline def setBranchUndefined: Self = StObject.set(x, "branch", js.undefined)
     }
   }
 }

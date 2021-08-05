@@ -23,25 +23,19 @@ trait SchemaUserAbout extends StObject {
 }
 object SchemaUserAbout {
   
-  @scala.inline
-  def apply(): SchemaUserAbout = {
+  inline def apply(): SchemaUserAbout = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUserAbout]
   }
   
-  @scala.inline
-  implicit class SchemaUserAboutMutableBuilder[Self <: SchemaUserAbout] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUserAbout](x: Self) {
     
-    @scala.inline
-    def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
+    inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
+    inline def setContentTypeUndefined: Self = StObject.set(x, "contentType", js.undefined)
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+    inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
   }
 }

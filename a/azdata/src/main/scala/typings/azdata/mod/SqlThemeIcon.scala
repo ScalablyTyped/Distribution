@@ -7,7 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("azdata", "SqlThemeIcon")
 @js.native
 class SqlThemeIcon protected () extends StObject {
-  protected def this(id: String) = this()
+  /* private */ def this(id: String) = this()
   
   /**
     * Gets the ID for the theme icon for help in cases where string comparison is needed

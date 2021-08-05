@@ -20,7 +20,6 @@ object queryBuilderUtilsMod {
       * Checks if given value is a string representation of alias property,
       * e.g. "post.category" or "post.id".
       */
-    @scala.inline
-    def isAliasProperty(str: js.Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAliasProperty")(str.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
+    inline def isAliasProperty(str: js.Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAliasProperty")(str.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
   }
 }

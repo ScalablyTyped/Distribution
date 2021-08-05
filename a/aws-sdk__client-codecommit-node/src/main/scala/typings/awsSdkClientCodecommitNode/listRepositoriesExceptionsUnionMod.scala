@@ -14,20 +14,17 @@ object listRepositoriesExceptionsUnionMod {
   trait ListRepositoriesExceptionsUnion extends StObject
   object ListRepositoriesExceptionsUnion {
     
-    @scala.inline
-    def InvalidContinuationTokenException(): typings.awsSdkClientCodecommitNode.typesInvalidContinuationTokenExceptionMod.InvalidContinuationTokenException = {
+    inline def InvalidContinuationTokenException(): typings.awsSdkClientCodecommitNode.typesInvalidContinuationTokenExceptionMod.InvalidContinuationTokenException = {
       val __obj = js.Dynamic.literal(name = "InvalidContinuationTokenException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesInvalidContinuationTokenExceptionMod.InvalidContinuationTokenException]
     }
     
-    @scala.inline
-    def InvalidOrderException(): typings.awsSdkClientCodecommitNode.typesInvalidOrderExceptionMod.InvalidOrderException = {
+    inline def InvalidOrderException(): typings.awsSdkClientCodecommitNode.typesInvalidOrderExceptionMod.InvalidOrderException = {
       val __obj = js.Dynamic.literal(name = "InvalidOrderException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesInvalidOrderExceptionMod.InvalidOrderException]
     }
     
-    @scala.inline
-    def InvalidSortByException(): typings.awsSdkClientCodecommitNode.typesInvalidSortByExceptionMod.InvalidSortByException = {
+    inline def InvalidSortByException(): typings.awsSdkClientCodecommitNode.typesInvalidSortByExceptionMod.InvalidSortByException = {
       val __obj = js.Dynamic.literal(name = "InvalidSortByException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesInvalidSortByExceptionMod.InvalidSortByException]
     }

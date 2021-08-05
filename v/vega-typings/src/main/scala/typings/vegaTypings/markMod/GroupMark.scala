@@ -22,23 +22,18 @@ trait GroupMark
 }
 object GroupMark {
   
-  @scala.inline
-  def apply(): GroupMark = {
+  inline def apply(): GroupMark = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("group")
     __obj.asInstanceOf[GroupMark]
   }
   
-  @scala.inline
-  implicit class GroupMarkMutableBuilder[Self <: GroupMark] (val x: Self) extends AnyVal {
+  extension [Self <: GroupMark](x: Self) {
     
-    @scala.inline
-    def setFrom(value: FromFacet): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
+    inline def setFrom(value: FromFacet): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
+    inline def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
-    @scala.inline
-    def setType(value: group): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: group): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

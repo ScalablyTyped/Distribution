@@ -10,9 +10,7 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def convertHtmlToRtf(html: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertHtmlToRtf")(html.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def convertHtmlToRtf(html: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertHtmlToRtf")(html.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @scala.inline
-  def saveRtfInFile(path: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveRtfInFile")(path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def saveRtfInFile(path: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveRtfInFile")(path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

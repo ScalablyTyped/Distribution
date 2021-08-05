@@ -35,8 +35,7 @@ trait CustomView extends StObject {
 }
 object CustomView {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getAdvertised: () => Boolean,
     getDefault: () => Boolean,
     getName: () => String,
@@ -51,34 +50,24 @@ object CustomView {
     __obj.asInstanceOf[CustomView]
   }
   
-  @scala.inline
-  implicit class CustomViewMutableBuilder[Self <: CustomView] (val x: Self) extends AnyVal {
+  extension [Self <: CustomView](x: Self) {
     
-    @scala.inline
-    def setGetAdvertised(value: () => Boolean): Self = StObject.set(x, "getAdvertised", js.Any.fromFunction0(value))
+    inline def setGetAdvertised(value: () => Boolean): Self = StObject.set(x, "getAdvertised", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDefault(value: () => Boolean): Self = StObject.set(x, "getDefault", js.Any.fromFunction0(value))
+    inline def setGetDefault(value: () => Boolean): Self = StObject.set(x, "getDefault", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
+    inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetOwnerName(value: () => String): Self = StObject.set(x, "getOwnerName", js.Any.fromFunction0(value))
+    inline def setGetOwnerName(value: () => String): Self = StObject.set(x, "getOwnerName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetUrl(value: () => String): Self = StObject.set(x, "getUrl", js.Any.fromFunction0(value))
+    inline def setGetUrl(value: () => String): Self = StObject.set(x, "getUrl", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetWorkbook(value: () => Workbook): Self = StObject.set(x, "getWorkbook", js.Any.fromFunction0(value))
+    inline def setGetWorkbook(value: () => Workbook): Self = StObject.set(x, "getWorkbook", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSaveAsync(value: () => js.Promise[CustomView]): Self = StObject.set(x, "saveAsync", js.Any.fromFunction0(value))
+    inline def setSaveAsync(value: () => js.Promise[CustomView]): Self = StObject.set(x, "saveAsync", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetAdvertised(value: Boolean => Boolean): Self = StObject.set(x, "setAdvertised", js.Any.fromFunction1(value))
+    inline def setSetAdvertised(value: Boolean => Boolean): Self = StObject.set(x, "setAdvertised", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetName(value: String => String): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
+    inline def setSetName(value: String => String): Self = StObject.set(x, "setName", js.Any.fromFunction1(value))
   }
 }

@@ -23,31 +23,23 @@ trait FecOutputSettings extends StObject {
 }
 object FecOutputSettings {
   
-  @scala.inline
-  def apply(): FecOutputSettings = {
+  inline def apply(): FecOutputSettings = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FecOutputSettings]
   }
   
-  @scala.inline
-  implicit class FecOutputSettingsMutableBuilder[Self <: FecOutputSettings] (val x: Self) extends AnyVal {
+  extension [Self <: FecOutputSettings](x: Self) {
     
-    @scala.inline
-    def setColumnDepth(value: integerMin4Max20): Self = StObject.set(x, "ColumnDepth", value.asInstanceOf[js.Any])
+    inline def setColumnDepth(value: integerMin4Max20): Self = StObject.set(x, "ColumnDepth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColumnDepthUndefined: Self = StObject.set(x, "ColumnDepth", js.undefined)
+    inline def setColumnDepthUndefined: Self = StObject.set(x, "ColumnDepth", js.undefined)
     
-    @scala.inline
-    def setIncludeFec(value: FecOutputIncludeFec): Self = StObject.set(x, "IncludeFec", value.asInstanceOf[js.Any])
+    inline def setIncludeFec(value: FecOutputIncludeFec): Self = StObject.set(x, "IncludeFec", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeFecUndefined: Self = StObject.set(x, "IncludeFec", js.undefined)
+    inline def setIncludeFecUndefined: Self = StObject.set(x, "IncludeFec", js.undefined)
     
-    @scala.inline
-    def setRowLength(value: integerMin1Max20): Self = StObject.set(x, "RowLength", value.asInstanceOf[js.Any])
+    inline def setRowLength(value: integerMin1Max20): Self = StObject.set(x, "RowLength", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRowLengthUndefined: Self = StObject.set(x, "RowLength", js.undefined)
+    inline def setRowLengthUndefined: Self = StObject.set(x, "RowLength", js.undefined)
   }
 }

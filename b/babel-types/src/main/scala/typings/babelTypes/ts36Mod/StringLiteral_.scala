@@ -20,20 +20,16 @@ trait StringLiteral_
 }
 object StringLiteral_ {
   
-  @scala.inline
-  def apply(end: Double, loc: SourceLocation, start: Double, value: String): StringLiteral_ = {
+  inline def apply(end: Double, loc: SourceLocation, start: Double, value: String): StringLiteral_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("StringLiteral")
     __obj.asInstanceOf[StringLiteral_]
   }
   
-  @scala.inline
-  implicit class StringLiteral_MutableBuilder[Self <: StringLiteral_] (val x: Self) extends AnyVal {
+  extension [Self <: StringLiteral_](x: Self) {
     
-    @scala.inline
-    def setType(value: StringLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: StringLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

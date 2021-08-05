@@ -23,55 +23,39 @@ trait PathReportCompatibleFields extends StObject {
 }
 object PathReportCompatibleFields {
   
-  @scala.inline
-  def apply(): PathReportCompatibleFields = {
+  inline def apply(): PathReportCompatibleFields = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PathReportCompatibleFields]
   }
   
-  @scala.inline
-  implicit class PathReportCompatibleFieldsMutableBuilder[Self <: PathReportCompatibleFields] (val x: Self) extends AnyVal {
+  extension [Self <: PathReportCompatibleFields](x: Self) {
     
-    @scala.inline
-    def setChannelGroupings(value: js.Array[Dimension]): Self = StObject.set(x, "channelGroupings", value.asInstanceOf[js.Any])
+    inline def setChannelGroupings(value: js.Array[Dimension]): Self = StObject.set(x, "channelGroupings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChannelGroupingsUndefined: Self = StObject.set(x, "channelGroupings", js.undefined)
+    inline def setChannelGroupingsUndefined: Self = StObject.set(x, "channelGroupings", js.undefined)
     
-    @scala.inline
-    def setChannelGroupingsVarargs(value: Dimension*): Self = StObject.set(x, "channelGroupings", js.Array(value :_*))
+    inline def setChannelGroupingsVarargs(value: Dimension*): Self = StObject.set(x, "channelGroupings", js.Array(value :_*))
     
-    @scala.inline
-    def setDimensions(value: js.Array[Dimension]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+    inline def setDimensions(value: js.Array[Dimension]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+    inline def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
     
-    @scala.inline
-    def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
+    inline def setDimensionsVarargs(value: Dimension*): Self = StObject.set(x, "dimensions", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setMetrics(value: js.Array[Metric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
+    inline def setMetrics(value: js.Array[Metric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
+    inline def setMetricsUndefined: Self = StObject.set(x, "metrics", js.undefined)
     
-    @scala.inline
-    def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
+    inline def setMetricsVarargs(value: Metric*): Self = StObject.set(x, "metrics", js.Array(value :_*))
     
-    @scala.inline
-    def setPathFilters(value: js.Array[Dimension]): Self = StObject.set(x, "pathFilters", value.asInstanceOf[js.Any])
+    inline def setPathFilters(value: js.Array[Dimension]): Self = StObject.set(x, "pathFilters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathFiltersUndefined: Self = StObject.set(x, "pathFilters", js.undefined)
+    inline def setPathFiltersUndefined: Self = StObject.set(x, "pathFilters", js.undefined)
     
-    @scala.inline
-    def setPathFiltersVarargs(value: Dimension*): Self = StObject.set(x, "pathFilters", js.Array(value :_*))
+    inline def setPathFiltersVarargs(value: Dimension*): Self = StObject.set(x, "pathFilters", js.Array(value :_*))
   }
 }

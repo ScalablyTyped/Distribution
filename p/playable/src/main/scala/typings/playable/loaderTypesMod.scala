@@ -23,8 +23,7 @@ object loaderTypesMod {
   }
   object ILoader {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       destroy: () => Unit,
       getElement: () => HTMLElement,
       hide: () => Unit,
@@ -36,26 +35,19 @@ object loaderTypesMod {
       __obj.asInstanceOf[ILoader]
     }
     
-    @scala.inline
-    implicit class ILoaderMutableBuilder[Self <: ILoader] (val x: Self) extends AnyVal {
+    extension [Self <: ILoader](x: Self) {
       
-      @scala.inline
-      def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+      inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+      inline def setGetElement(value: () => HTMLElement): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
+      inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setIsDelayedShowScheduled(value: Boolean): Self = StObject.set(x, "isDelayedShowScheduled", value.asInstanceOf[js.Any])
+      inline def setIsDelayedShowScheduled(value: Boolean): Self = StObject.set(x, "isDelayedShowScheduled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
+      inline def setShow(value: () => Unit): Self = StObject.set(x, "show", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStopDelayedShow(value: () => Unit): Self = StObject.set(x, "stopDelayedShow", js.Any.fromFunction0(value))
+      inline def setStopDelayedShow(value: () => Unit): Self = StObject.set(x, "stopDelayedShow", js.Any.fromFunction0(value))
     }
   }
   
@@ -69,23 +61,18 @@ object loaderTypesMod {
   }
   object ILoaderViewStyles {
     
-    @scala.inline
-    def apply(active: String, hidden: String, loader: String): ILoaderViewStyles = {
+    inline def apply(active: String, hidden: String, loader: String): ILoaderViewStyles = {
       val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], hidden = hidden.asInstanceOf[js.Any], loader = loader.asInstanceOf[js.Any])
       __obj.asInstanceOf[ILoaderViewStyles]
     }
     
-    @scala.inline
-    implicit class ILoaderViewStylesMutableBuilder[Self <: ILoaderViewStyles] (val x: Self) extends AnyVal {
+    extension [Self <: ILoaderViewStyles](x: Self) {
       
-      @scala.inline
-      def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
+      inline def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoader(value: String): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
+      inline def setLoader(value: String): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
     }
   }
 }

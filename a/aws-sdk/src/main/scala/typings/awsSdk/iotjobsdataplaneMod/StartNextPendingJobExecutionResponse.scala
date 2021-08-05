@@ -13,19 +13,15 @@ trait StartNextPendingJobExecutionResponse extends StObject {
 }
 object StartNextPendingJobExecutionResponse {
   
-  @scala.inline
-  def apply(): StartNextPendingJobExecutionResponse = {
+  inline def apply(): StartNextPendingJobExecutionResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StartNextPendingJobExecutionResponse]
   }
   
-  @scala.inline
-  implicit class StartNextPendingJobExecutionResponseMutableBuilder[Self <: StartNextPendingJobExecutionResponse] (val x: Self) extends AnyVal {
+  extension [Self <: StartNextPendingJobExecutionResponse](x: Self) {
     
-    @scala.inline
-    def setExecution(value: JobExecution): Self = StObject.set(x, "execution", value.asInstanceOf[js.Any])
+    inline def setExecution(value: JobExecution): Self = StObject.set(x, "execution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExecutionUndefined: Self = StObject.set(x, "execution", js.undefined)
+    inline def setExecutionUndefined: Self = StObject.set(x, "execution", js.undefined)
   }
 }

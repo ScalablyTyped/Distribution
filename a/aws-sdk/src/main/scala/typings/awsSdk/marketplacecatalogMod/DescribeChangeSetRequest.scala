@@ -18,19 +18,15 @@ trait DescribeChangeSetRequest extends StObject {
 }
 object DescribeChangeSetRequest {
   
-  @scala.inline
-  def apply(Catalog: Catalog, ChangeSetId: ResourceId): DescribeChangeSetRequest = {
+  inline def apply(Catalog: Catalog, ChangeSetId: ResourceId): DescribeChangeSetRequest = {
     val __obj = js.Dynamic.literal(Catalog = Catalog.asInstanceOf[js.Any], ChangeSetId = ChangeSetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[DescribeChangeSetRequest]
   }
   
-  @scala.inline
-  implicit class DescribeChangeSetRequestMutableBuilder[Self <: DescribeChangeSetRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeChangeSetRequest](x: Self) {
     
-    @scala.inline
-    def setCatalog(value: Catalog): Self = StObject.set(x, "Catalog", value.asInstanceOf[js.Any])
+    inline def setCatalog(value: Catalog): Self = StObject.set(x, "Catalog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChangeSetId(value: ResourceId): Self = StObject.set(x, "ChangeSetId", value.asInstanceOf[js.Any])
+    inline def setChangeSetId(value: ResourceId): Self = StObject.set(x, "ChangeSetId", value.asInstanceOf[js.Any])
   }
 }

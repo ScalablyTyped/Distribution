@@ -33,43 +33,31 @@ trait NewBGPPeer extends StObject {
 }
 object NewBGPPeer {
   
-  @scala.inline
-  def apply(): NewBGPPeer = {
+  inline def apply(): NewBGPPeer = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[NewBGPPeer]
   }
   
-  @scala.inline
-  implicit class NewBGPPeerMutableBuilder[Self <: NewBGPPeer] (val x: Self) extends AnyVal {
+  extension [Self <: NewBGPPeer](x: Self) {
     
-    @scala.inline
-    def setAddressFamily(value: AddressFamily): Self = StObject.set(x, "addressFamily", value.asInstanceOf[js.Any])
+    inline def setAddressFamily(value: AddressFamily): Self = StObject.set(x, "addressFamily", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAddressFamilyUndefined: Self = StObject.set(x, "addressFamily", js.undefined)
+    inline def setAddressFamilyUndefined: Self = StObject.set(x, "addressFamily", js.undefined)
     
-    @scala.inline
-    def setAmazonAddress(value: AmazonAddress): Self = StObject.set(x, "amazonAddress", value.asInstanceOf[js.Any])
+    inline def setAmazonAddress(value: AmazonAddress): Self = StObject.set(x, "amazonAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAmazonAddressUndefined: Self = StObject.set(x, "amazonAddress", js.undefined)
+    inline def setAmazonAddressUndefined: Self = StObject.set(x, "amazonAddress", js.undefined)
     
-    @scala.inline
-    def setAsn(value: ASN): Self = StObject.set(x, "asn", value.asInstanceOf[js.Any])
+    inline def setAsn(value: ASN): Self = StObject.set(x, "asn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAsnUndefined: Self = StObject.set(x, "asn", js.undefined)
+    inline def setAsnUndefined: Self = StObject.set(x, "asn", js.undefined)
     
-    @scala.inline
-    def setAuthKey(value: BGPAuthKey): Self = StObject.set(x, "authKey", value.asInstanceOf[js.Any])
+    inline def setAuthKey(value: BGPAuthKey): Self = StObject.set(x, "authKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthKeyUndefined: Self = StObject.set(x, "authKey", js.undefined)
+    inline def setAuthKeyUndefined: Self = StObject.set(x, "authKey", js.undefined)
     
-    @scala.inline
-    def setCustomerAddress(value: CustomerAddress): Self = StObject.set(x, "customerAddress", value.asInstanceOf[js.Any])
+    inline def setCustomerAddress(value: CustomerAddress): Self = StObject.set(x, "customerAddress", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerAddressUndefined: Self = StObject.set(x, "customerAddress", js.undefined)
+    inline def setCustomerAddressUndefined: Self = StObject.set(x, "customerAddress", js.undefined)
   }
 }

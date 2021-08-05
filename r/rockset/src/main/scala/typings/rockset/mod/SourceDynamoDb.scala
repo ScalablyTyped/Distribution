@@ -14,22 +14,17 @@ trait SourceDynamoDb extends StObject {
 }
 object SourceDynamoDb {
   
-  @scala.inline
-  def apply(table_name: String): SourceDynamoDb = {
+  inline def apply(table_name: String): SourceDynamoDb = {
     val __obj = js.Dynamic.literal(table_name = table_name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SourceDynamoDb]
   }
   
-  @scala.inline
-  implicit class SourceDynamoDbMutableBuilder[Self <: SourceDynamoDb] (val x: Self) extends AnyVal {
+  extension [Self <: SourceDynamoDb](x: Self) {
     
-    @scala.inline
-    def setAws_region(value: String): Self = StObject.set(x, "aws_region", value.asInstanceOf[js.Any])
+    inline def setAws_region(value: String): Self = StObject.set(x, "aws_region", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAws_regionUndefined: Self = StObject.set(x, "aws_region", js.undefined)
+    inline def setAws_regionUndefined: Self = StObject.set(x, "aws_region", js.undefined)
     
-    @scala.inline
-    def setTable_name(value: String): Self = StObject.set(x, "table_name", value.asInstanceOf[js.Any])
+    inline def setTable_name(value: String): Self = StObject.set(x, "table_name", value.asInstanceOf[js.Any])
   }
 }

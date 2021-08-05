@@ -14,22 +14,17 @@ trait TreeNodeignoreCollapsedbo extends StObject {
 }
 object TreeNodeignoreCollapsedbo {
   
-  @scala.inline
-  def apply(node: TreeItem): TreeNodeignoreCollapsedbo = {
+  inline def apply(node: TreeItem): TreeNodeignoreCollapsedbo = {
     val __obj = js.Dynamic.literal(node = node.asInstanceOf[js.Any])
     __obj.asInstanceOf[TreeNodeignoreCollapsedbo]
   }
   
-  @scala.inline
-  implicit class TreeNodeignoreCollapsedboMutableBuilder[Self <: TreeNodeignoreCollapsedbo] (val x: Self) extends AnyVal {
+  extension [Self <: TreeNodeignoreCollapsedbo](x: Self) {
     
-    @scala.inline
-    def setIgnoreCollapsed(value: Boolean): Self = StObject.set(x, "ignoreCollapsed", value.asInstanceOf[js.Any])
+    inline def setIgnoreCollapsed(value: Boolean): Self = StObject.set(x, "ignoreCollapsed", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIgnoreCollapsedUndefined: Self = StObject.set(x, "ignoreCollapsed", js.undefined)
+    inline def setIgnoreCollapsedUndefined: Self = StObject.set(x, "ignoreCollapsed", js.undefined)
     
-    @scala.inline
-    def setNode(value: TreeItem): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+    inline def setNode(value: TreeItem): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
   }
 }

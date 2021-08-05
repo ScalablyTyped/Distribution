@@ -30,31 +30,23 @@ trait SchemaPlayed extends StObject {
 }
 object SchemaPlayed {
   
-  @scala.inline
-  def apply(): SchemaPlayed = {
+  inline def apply(): SchemaPlayed = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaPlayed]
   }
   
-  @scala.inline
-  implicit class SchemaPlayedMutableBuilder[Self <: SchemaPlayed] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaPlayed](x: Self) {
     
-    @scala.inline
-    def setAutoMatched(value: Boolean): Self = StObject.set(x, "autoMatched", value.asInstanceOf[js.Any])
+    inline def setAutoMatched(value: Boolean): Self = StObject.set(x, "autoMatched", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoMatchedUndefined: Self = StObject.set(x, "autoMatched", js.undefined)
+    inline def setAutoMatchedUndefined: Self = StObject.set(x, "autoMatched", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setTimeMillis(value: String): Self = StObject.set(x, "timeMillis", value.asInstanceOf[js.Any])
+    inline def setTimeMillis(value: String): Self = StObject.set(x, "timeMillis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeMillisUndefined: Self = StObject.set(x, "timeMillis", js.undefined)
+    inline def setTimeMillisUndefined: Self = StObject.set(x, "timeMillis", js.undefined)
   }
 }

@@ -10,16 +10,13 @@ trait StyleSheetChangedEvent extends StObject {
 }
 object StyleSheetChangedEvent {
   
-  @scala.inline
-  def apply(styleSheetId: StyleSheetId): StyleSheetChangedEvent = {
+  inline def apply(styleSheetId: StyleSheetId): StyleSheetChangedEvent = {
     val __obj = js.Dynamic.literal(styleSheetId = styleSheetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[StyleSheetChangedEvent]
   }
   
-  @scala.inline
-  implicit class StyleSheetChangedEventMutableBuilder[Self <: StyleSheetChangedEvent] (val x: Self) extends AnyVal {
+  extension [Self <: StyleSheetChangedEvent](x: Self) {
     
-    @scala.inline
-    def setStyleSheetId(value: StyleSheetId): Self = StObject.set(x, "styleSheetId", value.asInstanceOf[js.Any])
+    inline def setStyleSheetId(value: StyleSheetId): Self = StObject.set(x, "styleSheetId", value.asInstanceOf[js.Any])
   }
 }

@@ -12,25 +12,19 @@ trait SliderStyle extends StObject {
 }
 object SliderStyle {
   
-  @scala.inline
-  def apply(): SliderStyle = {
+  inline def apply(): SliderStyle = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SliderStyle]
   }
   
-  @scala.inline
-  implicit class SliderStyleMutableBuilder[Self <: SliderStyle] (val x: Self) extends AnyVal {
+  extension [Self <: SliderStyle](x: Self) {
     
-    @scala.inline
-    def setLowerTrackColor(value: String): Self = StObject.set(x, "lowerTrackColor", value.asInstanceOf[js.Any])
+    inline def setLowerTrackColor(value: String): Self = StObject.set(x, "lowerTrackColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLowerTrackColorUndefined: Self = StObject.set(x, "lowerTrackColor", js.undefined)
+    inline def setLowerTrackColorUndefined: Self = StObject.set(x, "lowerTrackColor", js.undefined)
     
-    @scala.inline
-    def setUpperTrackColor(value: String): Self = StObject.set(x, "upperTrackColor", value.asInstanceOf[js.Any])
+    inline def setUpperTrackColor(value: String): Self = StObject.set(x, "upperTrackColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpperTrackColorUndefined: Self = StObject.set(x, "upperTrackColor", js.undefined)
+    inline def setUpperTrackColorUndefined: Self = StObject.set(x, "upperTrackColor", js.undefined)
   }
 }

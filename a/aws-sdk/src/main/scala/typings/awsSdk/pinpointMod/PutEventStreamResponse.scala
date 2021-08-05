@@ -10,16 +10,13 @@ trait PutEventStreamResponse extends StObject {
 }
 object PutEventStreamResponse {
   
-  @scala.inline
-  def apply(EventStream: EventStream): PutEventStreamResponse = {
+  inline def apply(EventStream: EventStream): PutEventStreamResponse = {
     val __obj = js.Dynamic.literal(EventStream = EventStream.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutEventStreamResponse]
   }
   
-  @scala.inline
-  implicit class PutEventStreamResponseMutableBuilder[Self <: PutEventStreamResponse] (val x: Self) extends AnyVal {
+  extension [Self <: PutEventStreamResponse](x: Self) {
     
-    @scala.inline
-    def setEventStream(value: EventStream): Self = StObject.set(x, "EventStream", value.asInstanceOf[js.Any])
+    inline def setEventStream(value: EventStream): Self = StObject.set(x, "EventStream", value.asInstanceOf[js.Any])
   }
 }

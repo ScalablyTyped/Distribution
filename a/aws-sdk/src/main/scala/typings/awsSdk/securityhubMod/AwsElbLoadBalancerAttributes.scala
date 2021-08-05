@@ -28,37 +28,27 @@ trait AwsElbLoadBalancerAttributes extends StObject {
 }
 object AwsElbLoadBalancerAttributes {
   
-  @scala.inline
-  def apply(): AwsElbLoadBalancerAttributes = {
+  inline def apply(): AwsElbLoadBalancerAttributes = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AwsElbLoadBalancerAttributes]
   }
   
-  @scala.inline
-  implicit class AwsElbLoadBalancerAttributesMutableBuilder[Self <: AwsElbLoadBalancerAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: AwsElbLoadBalancerAttributes](x: Self) {
     
-    @scala.inline
-    def setAccessLog(value: AwsElbLoadBalancerAccessLog): Self = StObject.set(x, "AccessLog", value.asInstanceOf[js.Any])
+    inline def setAccessLog(value: AwsElbLoadBalancerAccessLog): Self = StObject.set(x, "AccessLog", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccessLogUndefined: Self = StObject.set(x, "AccessLog", js.undefined)
+    inline def setAccessLogUndefined: Self = StObject.set(x, "AccessLog", js.undefined)
     
-    @scala.inline
-    def setConnectionDraining(value: AwsElbLoadBalancerConnectionDraining): Self = StObject.set(x, "ConnectionDraining", value.asInstanceOf[js.Any])
+    inline def setConnectionDraining(value: AwsElbLoadBalancerConnectionDraining): Self = StObject.set(x, "ConnectionDraining", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionDrainingUndefined: Self = StObject.set(x, "ConnectionDraining", js.undefined)
+    inline def setConnectionDrainingUndefined: Self = StObject.set(x, "ConnectionDraining", js.undefined)
     
-    @scala.inline
-    def setConnectionSettings(value: AwsElbLoadBalancerConnectionSettings): Self = StObject.set(x, "ConnectionSettings", value.asInstanceOf[js.Any])
+    inline def setConnectionSettings(value: AwsElbLoadBalancerConnectionSettings): Self = StObject.set(x, "ConnectionSettings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConnectionSettingsUndefined: Self = StObject.set(x, "ConnectionSettings", js.undefined)
+    inline def setConnectionSettingsUndefined: Self = StObject.set(x, "ConnectionSettings", js.undefined)
     
-    @scala.inline
-    def setCrossZoneLoadBalancing(value: AwsElbLoadBalancerCrossZoneLoadBalancing): Self = StObject.set(x, "CrossZoneLoadBalancing", value.asInstanceOf[js.Any])
+    inline def setCrossZoneLoadBalancing(value: AwsElbLoadBalancerCrossZoneLoadBalancing): Self = StObject.set(x, "CrossZoneLoadBalancing", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCrossZoneLoadBalancingUndefined: Self = StObject.set(x, "CrossZoneLoadBalancing", js.undefined)
+    inline def setCrossZoneLoadBalancingUndefined: Self = StObject.set(x, "CrossZoneLoadBalancing", js.undefined)
   }
 }

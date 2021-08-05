@@ -21,7 +21,6 @@ object mod {
     @JSImport("rmc-pull-to-refresh", "default.defaultProps")
     @js.native
     def defaultProps: PropsType = js.native
-    @scala.inline
-    def defaultProps_=(x: PropsType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
+    inline def defaultProps_=(x: PropsType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
 }

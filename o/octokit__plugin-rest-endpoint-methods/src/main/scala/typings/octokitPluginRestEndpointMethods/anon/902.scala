@@ -20,8 +20,7 @@ trait `902` extends StObject {
 }
 object `902` {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: RequestParameters & (Omit[ReposCreateCommitSignatureProtectionEndpoint, baseUrl | headers | mediaType]),
     response: OctokitResponse[ReposCreateCommitSignatureProtectionResponseData]
   ): `902` = {
@@ -29,15 +28,12 @@ object `902` {
     __obj.asInstanceOf[`902`]
   }
   
-  @scala.inline
-  implicit class `902MutableBuilder`[Self <: `902`] (val x: Self) extends AnyVal {
+  extension [Self <: `902`](x: Self) {
     
-    @scala.inline
-    def setParameters(
+    inline def setParameters(
       value: RequestParameters & (Omit[ReposCreateCommitSignatureProtectionEndpoint, baseUrl | headers | mediaType])
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[ReposCreateCommitSignatureProtectionResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[ReposCreateCommitSignatureProtectionResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

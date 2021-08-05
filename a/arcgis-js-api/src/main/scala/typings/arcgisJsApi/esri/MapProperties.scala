@@ -25,25 +25,19 @@ trait MapProperties
 }
 object MapProperties {
   
-  @scala.inline
-  def apply(): MapProperties = {
+  inline def apply(): MapProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapProperties]
   }
   
-  @scala.inline
-  implicit class MapPropertiesMutableBuilder[Self <: MapProperties] (val x: Self) extends AnyVal {
+  extension [Self <: MapProperties](x: Self) {
     
-    @scala.inline
-    def setBasemap(value: BasemapProperties | String): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
+    inline def setBasemap(value: BasemapProperties | String): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
+    inline def setBasemapUndefined: Self = StObject.set(x, "basemap", js.undefined)
     
-    @scala.inline
-    def setGround(value: GroundProperties | String): Self = StObject.set(x, "ground", value.asInstanceOf[js.Any])
+    inline def setGround(value: GroundProperties | String): Self = StObject.set(x, "ground", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroundUndefined: Self = StObject.set(x, "ground", js.undefined)
+    inline def setGroundUndefined: Self = StObject.set(x, "ground", js.undefined)
   }
 }

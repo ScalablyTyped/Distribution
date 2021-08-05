@@ -11,8 +11,7 @@ trait Rules
      with /* ruleName */ StringDictionary[RegExp | Rules]
 object Rules {
   
-  @scala.inline
-  def apply(): Rules = {
+  inline def apply(): Rules = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Rules]
   }

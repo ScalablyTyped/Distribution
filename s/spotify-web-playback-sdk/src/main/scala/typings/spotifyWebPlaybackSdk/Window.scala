@@ -13,19 +13,15 @@ trait Window extends StObject {
 }
 object Window {
   
-  @scala.inline
-  def apply(Spotify: TypeofSpotify, onSpotifyWebPlaybackSDKReady: () => Unit): Window = {
+  inline def apply(Spotify: TypeofSpotify, onSpotifyWebPlaybackSDKReady: () => Unit): Window = {
     val __obj = js.Dynamic.literal(Spotify = Spotify.asInstanceOf[js.Any], onSpotifyWebPlaybackSDKReady = js.Any.fromFunction0(onSpotifyWebPlaybackSDKReady))
     __obj.asInstanceOf[Window]
   }
   
-  @scala.inline
-  implicit class WindowMutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
+  extension [Self <: Window](x: Self) {
     
-    @scala.inline
-    def setOnSpotifyWebPlaybackSDKReady(value: () => Unit): Self = StObject.set(x, "onSpotifyWebPlaybackSDKReady", js.Any.fromFunction0(value))
+    inline def setOnSpotifyWebPlaybackSDKReady(value: () => Unit): Self = StObject.set(x, "onSpotifyWebPlaybackSDKReady", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSpotify(value: TypeofSpotify): Self = StObject.set(x, "Spotify", value.asInstanceOf[js.Any])
+    inline def setSpotify(value: TypeofSpotify): Self = StObject.set(x, "Spotify", value.asInstanceOf[js.Any])
   }
 }

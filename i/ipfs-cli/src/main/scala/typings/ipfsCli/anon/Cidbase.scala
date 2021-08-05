@@ -14,23 +14,18 @@ trait Cidbase extends StObject {
 }
 object Cidbase {
   
-  @scala.inline
-  def apply(`cid-base`: Choices, human: Type, timeout: CoerceType): Cidbase = {
+  inline def apply(`cid-base`: Choices, human: Type, timeout: CoerceType): Cidbase = {
     val __obj = js.Dynamic.literal(human = human.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
     __obj.updateDynamic("cid-base")(`cid-base`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Cidbase]
   }
   
-  @scala.inline
-  implicit class CidbaseMutableBuilder[Self <: Cidbase] (val x: Self) extends AnyVal {
+  extension [Self <: Cidbase](x: Self) {
     
-    @scala.inline
-    def `setCid-base`(value: Choices): Self = StObject.set(x, "cid-base", value.asInstanceOf[js.Any])
+    inline def `setCid-base`(value: Choices): Self = StObject.set(x, "cid-base", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHuman(value: Type): Self = StObject.set(x, "human", value.asInstanceOf[js.Any])
+    inline def setHuman(value: Type): Self = StObject.set(x, "human", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTimeout(value: CoerceType): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
+    inline def setTimeout(value: CoerceType): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
   }
 }

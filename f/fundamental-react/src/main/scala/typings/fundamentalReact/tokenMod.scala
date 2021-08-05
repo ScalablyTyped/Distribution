@@ -33,38 +33,28 @@ object tokenMod extends Shortcut {
   }
   object TokenProps {
     
-    @scala.inline
-    def apply(): TokenProps = {
+    inline def apply(): TokenProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[TokenProps]
     }
     
-    @scala.inline
-    implicit class TokenPropsMutableBuilder[Self <: TokenProps] (val x: Self) extends AnyVal {
+    extension [Self <: TokenProps](x: Self) {
       
-      @scala.inline
-      def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
+      inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
+      inline def setCompactUndefined: Self = StObject.set(x, "compact", js.undefined)
       
-      @scala.inline
-      def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
+      inline def setDisableStyles(value: Boolean): Self = StObject.set(x, "disableStyles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
+      inline def setDisableStylesUndefined: Self = StObject.set(x, "disableStyles", js.undefined)
       
-      @scala.inline
-      def setOnClick(value: /* event */ typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      inline def setOnClick(value: /* event */ typings.react.mod.MouseEvent[HTMLButtonElement, MouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
+      inline def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
-      @scala.inline
-      def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+      inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
+      inline def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)
     }
   }
   

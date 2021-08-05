@@ -16,25 +16,19 @@ trait FileAssessmentRequest
 }
 object FileAssessmentRequest {
   
-  @scala.inline
-  def apply(): FileAssessmentRequest = {
+  inline def apply(): FileAssessmentRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FileAssessmentRequest]
   }
   
-  @scala.inline
-  implicit class FileAssessmentRequestMutableBuilder[Self <: FileAssessmentRequest] (val x: Self) extends AnyVal {
+  extension [Self <: FileAssessmentRequest](x: Self) {
     
-    @scala.inline
-    def setContentData(value: String): Self = StObject.set(x, "contentData", value.asInstanceOf[js.Any])
+    inline def setContentData(value: String): Self = StObject.set(x, "contentData", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentDataUndefined: Self = StObject.set(x, "contentData", js.undefined)
+    inline def setContentDataUndefined: Self = StObject.set(x, "contentData", js.undefined)
     
-    @scala.inline
-    def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
+    inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
+    inline def setFileNameUndefined: Self = StObject.set(x, "fileName", js.undefined)
   }
 }

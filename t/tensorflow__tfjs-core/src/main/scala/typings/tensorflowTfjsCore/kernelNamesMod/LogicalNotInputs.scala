@@ -11,19 +11,15 @@ trait LogicalNotInputs extends StObject {
 }
 object LogicalNotInputs {
   
-  @scala.inline
-  def apply(): LogicalNotInputs = {
+  inline def apply(): LogicalNotInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LogicalNotInputs]
   }
   
-  @scala.inline
-  implicit class LogicalNotInputsMutableBuilder[Self <: LogicalNotInputs] (val x: Self) extends AnyVal {
+  extension [Self <: LogicalNotInputs](x: Self) {
     
-    @scala.inline
-    def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }
 }

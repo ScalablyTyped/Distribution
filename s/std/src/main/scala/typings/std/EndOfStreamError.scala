@@ -11,9 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait EndOfStreamError extends StObject
 object EndOfStreamError {
   
-  @scala.inline
-  def decode: typings.std.stdStrings.decode = "decode".asInstanceOf[typings.std.stdStrings.decode]
+  inline def decode: typings.std.stdStrings.decode = "decode".asInstanceOf[typings.std.stdStrings.decode]
   
-  @scala.inline
-  def network: typings.std.stdStrings.network = "network".asInstanceOf[typings.std.stdStrings.network]
+  inline def network: typings.std.stdStrings.network = "network".asInstanceOf[typings.std.stdStrings.network]
 }

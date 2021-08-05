@@ -22,19 +22,15 @@ trait PlusNativeObjViewStatusbarStyles extends StObject {
 }
 object PlusNativeObjViewStatusbarStyles {
   
-  @scala.inline
-  def apply(): PlusNativeObjViewStatusbarStyles = {
+  inline def apply(): PlusNativeObjViewStatusbarStyles = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PlusNativeObjViewStatusbarStyles]
   }
   
-  @scala.inline
-  implicit class PlusNativeObjViewStatusbarStylesMutableBuilder[Self <: PlusNativeObjViewStatusbarStyles] (val x: Self) extends AnyVal {
+  extension [Self <: PlusNativeObjViewStatusbarStyles](x: Self) {
     
-    @scala.inline
-    def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
+    inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
+    inline def setBackgroundUndefined: Self = StObject.set(x, "background", js.undefined)
   }
 }

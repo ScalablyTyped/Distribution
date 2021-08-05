@@ -61,16 +61,13 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def fromTile(y: Double, z: Double): CheapRuler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromTile")(y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[CheapRuler]
-    @scala.inline
-    def fromTile(y: Double, z: Double, units: String): CheapRuler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromTile")(y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[CheapRuler]
+    inline def fromTile(y: Double, z: Double): CheapRuler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromTile")(y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[CheapRuler]
+    inline def fromTile(y: Double, z: Double, units: String): CheapRuler = (^.asInstanceOf[js.Dynamic].applyDynamic("fromTile")(y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], units.asInstanceOf[js.Any])).asInstanceOf[CheapRuler]
     
     @JSImport("cheap-ruler", "default.units")
     @js.native
     def units: Factors = js.native
-    @scala.inline
-    def units_=(x: Factors): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("units")(x.asInstanceOf[js.Any])
+    inline def units_=(x: Factors): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("units")(x.asInstanceOf[js.Any])
   }
   
   type BBox = js.Tuple4[Double, Double, Double, Double]
@@ -105,8 +102,7 @@ object mod {
   }
   object CheapRuler {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       along: (Line, Double) => Point,
       area: Polygon => Double,
       bearing: (Point, Point) => Double,
@@ -125,47 +121,33 @@ object mod {
       __obj.asInstanceOf[CheapRuler]
     }
     
-    @scala.inline
-    implicit class CheapRulerMutableBuilder[Self <: CheapRuler] (val x: Self) extends AnyVal {
+    extension [Self <: CheapRuler](x: Self) {
       
-      @scala.inline
-      def setAlong(value: (Line, Double) => Point): Self = StObject.set(x, "along", js.Any.fromFunction2(value))
+      inline def setAlong(value: (Line, Double) => Point): Self = StObject.set(x, "along", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setArea(value: Polygon => Double): Self = StObject.set(x, "area", js.Any.fromFunction1(value))
+      inline def setArea(value: Polygon => Double): Self = StObject.set(x, "area", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setBearing(value: (Point, Point) => Double): Self = StObject.set(x, "bearing", js.Any.fromFunction2(value))
+      inline def setBearing(value: (Point, Point) => Double): Self = StObject.set(x, "bearing", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBufferBBox(value: (BBox, Double) => BBox): Self = StObject.set(x, "bufferBBox", js.Any.fromFunction2(value))
+      inline def setBufferBBox(value: (BBox, Double) => BBox): Self = StObject.set(x, "bufferBBox", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setBufferPoint(value: (Point, Double) => BBox): Self = StObject.set(x, "bufferPoint", js.Any.fromFunction2(value))
+      inline def setBufferPoint(value: (Point, Double) => BBox): Self = StObject.set(x, "bufferPoint", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setDestination(value: (Point, Double, Double) => Point): Self = StObject.set(x, "destination", js.Any.fromFunction3(value))
+      inline def setDestination(value: (Point, Double, Double) => Point): Self = StObject.set(x, "destination", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDistance(value: (Point, Point) => Double): Self = StObject.set(x, "distance", js.Any.fromFunction2(value))
+      inline def setDistance(value: (Point, Point) => Double): Self = StObject.set(x, "distance", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setInsideBBox(value: (Point, BBox) => Boolean): Self = StObject.set(x, "insideBBox", js.Any.fromFunction2(value))
+      inline def setInsideBBox(value: (Point, BBox) => Boolean): Self = StObject.set(x, "insideBBox", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setLineDistance(value: Points => Double): Self = StObject.set(x, "lineDistance", js.Any.fromFunction1(value))
+      inline def setLineDistance(value: Points => Double): Self = StObject.set(x, "lineDistance", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setLineSlice(value: (Point, Point, Line) => Line): Self = StObject.set(x, "lineSlice", js.Any.fromFunction3(value))
+      inline def setLineSlice(value: (Point, Point, Line) => Line): Self = StObject.set(x, "lineSlice", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setLineSliceAlong(value: (Double, Double, Line) => Line): Self = StObject.set(x, "lineSliceAlong", js.Any.fromFunction3(value))
+      inline def setLineSliceAlong(value: (Double, Double, Line) => Line): Self = StObject.set(x, "lineSliceAlong", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setOffset(value: (Point, Double, Double) => Point): Self = StObject.set(x, "offset", js.Any.fromFunction3(value))
+      inline def setOffset(value: (Point, Double, Double) => Point): Self = StObject.set(x, "offset", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setPointOnLine(value: (Line, Point) => Index): Self = StObject.set(x, "pointOnLine", js.Any.fromFunction2(value))
+      inline def setPointOnLine(value: (Line, Point) => Index): Self = StObject.set(x, "pointOnLine", js.Any.fromFunction2(value))
     }
   }
   
@@ -189,8 +171,7 @@ object mod {
   }
   object Factors {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       feet: Double,
       inches: Double,
       kilometers: Double,
@@ -204,32 +185,23 @@ object mod {
       __obj.asInstanceOf[Factors]
     }
     
-    @scala.inline
-    implicit class FactorsMutableBuilder[Self <: Factors] (val x: Self) extends AnyVal {
+    extension [Self <: Factors](x: Self) {
       
-      @scala.inline
-      def setFeet(value: Double): Self = StObject.set(x, "feet", value.asInstanceOf[js.Any])
+      inline def setFeet(value: Double): Self = StObject.set(x, "feet", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInches(value: Double): Self = StObject.set(x, "inches", value.asInstanceOf[js.Any])
+      inline def setInches(value: Double): Self = StObject.set(x, "inches", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKilometers(value: Double): Self = StObject.set(x, "kilometers", value.asInstanceOf[js.Any])
+      inline def setKilometers(value: Double): Self = StObject.set(x, "kilometers", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMeters(value: Double): Self = StObject.set(x, "meters", value.asInstanceOf[js.Any])
+      inline def setMeters(value: Double): Self = StObject.set(x, "meters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetres(value: Double): Self = StObject.set(x, "metres", value.asInstanceOf[js.Any])
+      inline def setMetres(value: Double): Self = StObject.set(x, "metres", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMiles(value: Double): Self = StObject.set(x, "miles", value.asInstanceOf[js.Any])
+      inline def setMiles(value: Double): Self = StObject.set(x, "miles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNauticalmiles(value: Double): Self = StObject.set(x, "nauticalmiles", value.asInstanceOf[js.Any])
+      inline def setNauticalmiles(value: Double): Self = StObject.set(x, "nauticalmiles", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setYards(value: Double): Self = StObject.set(x, "yards", value.asInstanceOf[js.Any])
+      inline def setYards(value: Double): Self = StObject.set(x, "yards", value.asInstanceOf[js.Any])
     }
   }
   

@@ -18,23 +18,18 @@ trait TaggedTemplateExpression
 }
 object TaggedTemplateExpression {
   
-  @scala.inline
-  def apply(quasi: TemplateLiteral, tag: Expression): TaggedTemplateExpression = {
+  inline def apply(quasi: TemplateLiteral, tag: Expression): TaggedTemplateExpression = {
     val __obj = js.Dynamic.literal(quasi = quasi.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TaggedTemplateExpression")
     __obj.asInstanceOf[TaggedTemplateExpression]
   }
   
-  @scala.inline
-  implicit class TaggedTemplateExpressionMutableBuilder[Self <: TaggedTemplateExpression] (val x: Self) extends AnyVal {
+  extension [Self <: TaggedTemplateExpression](x: Self) {
     
-    @scala.inline
-    def setQuasi(value: TemplateLiteral): Self = StObject.set(x, "quasi", value.asInstanceOf[js.Any])
+    inline def setQuasi(value: TemplateLiteral): Self = StObject.set(x, "quasi", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTag(value: Expression): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+    inline def setTag(value: Expression): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: typings.estree.estreeStrings.TaggedTemplateExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: typings.estree.estreeStrings.TaggedTemplateExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

@@ -32,61 +32,43 @@ trait ImageProperties extends StObject {
 }
 object ImageProperties {
   
-  @scala.inline
-  def apply(): ImageProperties = {
+  inline def apply(): ImageProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ImageProperties]
   }
   
-  @scala.inline
-  implicit class ImagePropertiesMutableBuilder[Self <: ImageProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ImageProperties](x: Self) {
     
-    @scala.inline
-    def setBrightness(value: Double): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
+    inline def setBrightness(value: Double): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBrightnessUndefined: Self = StObject.set(x, "brightness", js.undefined)
+    inline def setBrightnessUndefined: Self = StObject.set(x, "brightness", js.undefined)
     
-    @scala.inline
-    def setContrast(value: Double): Self = StObject.set(x, "contrast", value.asInstanceOf[js.Any])
+    inline def setContrast(value: Double): Self = StObject.set(x, "contrast", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContrastUndefined: Self = StObject.set(x, "contrast", js.undefined)
+    inline def setContrastUndefined: Self = StObject.set(x, "contrast", js.undefined)
     
-    @scala.inline
-    def setCropProperties(value: CropProperties): Self = StObject.set(x, "cropProperties", value.asInstanceOf[js.Any])
+    inline def setCropProperties(value: CropProperties): Self = StObject.set(x, "cropProperties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCropPropertiesUndefined: Self = StObject.set(x, "cropProperties", js.undefined)
+    inline def setCropPropertiesUndefined: Self = StObject.set(x, "cropProperties", js.undefined)
     
-    @scala.inline
-    def setLink(value: Link): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+    inline def setLink(value: Link): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
+    inline def setLinkUndefined: Self = StObject.set(x, "link", js.undefined)
     
-    @scala.inline
-    def setOutline(value: Outline): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
+    inline def setOutline(value: Outline): Self = StObject.set(x, "outline", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
+    inline def setOutlineUndefined: Self = StObject.set(x, "outline", js.undefined)
     
-    @scala.inline
-    def setRecolor(value: Recolor): Self = StObject.set(x, "recolor", value.asInstanceOf[js.Any])
+    inline def setRecolor(value: Recolor): Self = StObject.set(x, "recolor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecolorUndefined: Self = StObject.set(x, "recolor", js.undefined)
+    inline def setRecolorUndefined: Self = StObject.set(x, "recolor", js.undefined)
     
-    @scala.inline
-    def setShadow(value: Shadow): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
+    inline def setShadow(value: Shadow): Self = StObject.set(x, "shadow", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
+    inline def setShadowUndefined: Self = StObject.set(x, "shadow", js.undefined)
     
-    @scala.inline
-    def setTransparency(value: Double): Self = StObject.set(x, "transparency", value.asInstanceOf[js.Any])
+    inline def setTransparency(value: Double): Self = StObject.set(x, "transparency", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransparencyUndefined: Self = StObject.set(x, "transparency", js.undefined)
+    inline def setTransparencyUndefined: Self = StObject.set(x, "transparency", js.undefined)
   }
 }

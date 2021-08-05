@@ -11,14 +11,10 @@ object createContainerMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(): Container = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Container]
-  @scala.inline
-  def default(options: Unit, __parentContainer: Container): Container = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any], __parentContainer.asInstanceOf[js.Any])).asInstanceOf[Container]
-  @scala.inline
-  def default(options: IOptions): Container = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Container]
-  @scala.inline
-  def default(options: IOptions, __parentContainer: Container): Container = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any], __parentContainer.asInstanceOf[js.Any])).asInstanceOf[Container]
+  inline def default(): Container = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Container]
+  inline def default(options: Unit, __parentContainer: Container): Container = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any], __parentContainer.asInstanceOf[js.Any])).asInstanceOf[Container]
+  inline def default(options: IOptions): Container = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Container]
+  inline def default(options: IOptions, __parentContainer: Container): Container = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any], __parentContainer.asInstanceOf[js.Any])).asInstanceOf[Container]
   
   @JSImport("playable/dist/src/core/dependency-container/createContainer", "Container")
   @js.native
@@ -27,13 +23,13 @@ object createContainerMod {
     def this(options: Unit, _parentContainer: Container) = this()
     def this(options: IOptions, _parentContainer: Container) = this()
     
-    var _parentContainer: js.Any = js.native
+    /* private */ var _parentContainer: js.Any = js.native
     
-    var _registerAs: js.Any = js.native
+    /* private */ var _registerAs: js.Any = js.native
     
-    var _registrations: js.Any = js.native
+    /* private */ var _registrations: js.Any = js.native
     
-    var _resolutionStack: js.Any = js.native
+    /* private */ var _resolutionStack: js.Any = js.native
     
     var cache: js.Any = js.native
     

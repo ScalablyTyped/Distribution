@@ -22,17 +22,14 @@ object typesInvalidCommitExceptionMod {
   }
   object InvalidCommitException {
     
-    @scala.inline
-    def apply(): InvalidCommitException = {
+    inline def apply(): InvalidCommitException = {
       val __obj = js.Dynamic.literal(name = "InvalidCommitException")
       __obj.asInstanceOf[InvalidCommitException]
     }
     
-    @scala.inline
-    implicit class InvalidCommitExceptionMutableBuilder[Self <: InvalidCommitException] (val x: Self) extends AnyVal {
+    extension [Self <: InvalidCommitException](x: Self) {
       
-      @scala.inline
-      def setName(value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidCommitException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidCommitException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
   

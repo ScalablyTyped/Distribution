@@ -24,8 +24,7 @@ trait ContactReader extends StObject {
 }
 object ContactReader {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getMatchingPropertiesWithMatchReason: Contact => IVectorView[ContactMatchReason],
     readBatchAsync: () => IPromiseWithIAsyncOperation[ContactBatch]
   ): ContactReader = {
@@ -33,13 +32,10 @@ object ContactReader {
     __obj.asInstanceOf[ContactReader]
   }
   
-  @scala.inline
-  implicit class ContactReaderMutableBuilder[Self <: ContactReader] (val x: Self) extends AnyVal {
+  extension [Self <: ContactReader](x: Self) {
     
-    @scala.inline
-    def setGetMatchingPropertiesWithMatchReason(value: Contact => IVectorView[ContactMatchReason]): Self = StObject.set(x, "getMatchingPropertiesWithMatchReason", js.Any.fromFunction1(value))
+    inline def setGetMatchingPropertiesWithMatchReason(value: Contact => IVectorView[ContactMatchReason]): Self = StObject.set(x, "getMatchingPropertiesWithMatchReason", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReadBatchAsync(value: () => IPromiseWithIAsyncOperation[ContactBatch]): Self = StObject.set(x, "readBatchAsync", js.Any.fromFunction0(value))
+    inline def setReadBatchAsync(value: () => IPromiseWithIAsyncOperation[ContactBatch]): Self = StObject.set(x, "readBatchAsync", js.Any.fromFunction0(value))
   }
 }

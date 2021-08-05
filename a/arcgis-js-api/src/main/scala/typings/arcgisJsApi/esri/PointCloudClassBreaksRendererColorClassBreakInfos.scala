@@ -40,8 +40,7 @@ trait PointCloudClassBreaksRendererColorClassBreakInfos
 }
 object PointCloudClassBreaksRendererColorClassBreakInfos {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     color: Color_,
     constructor: js.Function,
     hasOwnProperty: PropertyKey => Boolean,
@@ -53,22 +52,16 @@ object PointCloudClassBreaksRendererColorClassBreakInfos {
     __obj.asInstanceOf[PointCloudClassBreaksRendererColorClassBreakInfos]
   }
   
-  @scala.inline
-  implicit class PointCloudClassBreaksRendererColorClassBreakInfosMutableBuilder[Self <: PointCloudClassBreaksRendererColorClassBreakInfos] (val x: Self) extends AnyVal {
+  extension [Self <: PointCloudClassBreaksRendererColorClassBreakInfos](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
+    inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
+    inline def setMinValue(value: Double): Self = StObject.set(x, "minValue", value.asInstanceOf[js.Any])
   }
 }

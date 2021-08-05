@@ -22,8 +22,7 @@ trait StoryChat
 }
 object StoryChat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     end_background_color: String,
     height: Double,
     rotation: Double,
@@ -37,22 +36,16 @@ object StoryChat {
     __obj.asInstanceOf[StoryChat]
   }
   
-  @scala.inline
-  implicit class StoryChatMutableBuilder[Self <: StoryChat] (val x: Self) extends AnyVal {
+  extension [Self <: StoryChat](x: Self) {
     
-    @scala.inline
-    def setEnd_background_color(value: String): Self = StObject.set(x, "end_background_color", value.asInstanceOf[js.Any])
+    inline def setEnd_background_color(value: String): Self = StObject.set(x, "end_background_color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHas_started_chat(value: `false`): Self = StObject.set(x, "has_started_chat", value.asInstanceOf[js.Any])
+    inline def setHas_started_chat(value: `false`): Self = StObject.set(x, "has_started_chat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIs_sticker(value: `true`): Self = StObject.set(x, "is_sticker", value.asInstanceOf[js.Any])
+    inline def setIs_sticker(value: `true`): Self = StObject.set(x, "is_sticker", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStart_background_color(value: String): Self = StObject.set(x, "start_background_color", value.asInstanceOf[js.Any])
+    inline def setStart_background_color(value: String): Self = StObject.set(x, "start_background_color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }
 }

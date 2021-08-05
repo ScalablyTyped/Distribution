@@ -11,19 +11,15 @@ trait SigmoidInputs extends StObject {
 }
 object SigmoidInputs {
   
-  @scala.inline
-  def apply(): SigmoidInputs = {
+  inline def apply(): SigmoidInputs = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SigmoidInputs]
   }
   
-  @scala.inline
-  implicit class SigmoidInputsMutableBuilder[Self <: SigmoidInputs] (val x: Self) extends AnyVal {
+  extension [Self <: SigmoidInputs](x: Self) {
     
-    @scala.inline
-    def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
+    inline def setX(value: js.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
+    inline def setXUndefined: Self = StObject.set(x, "x", js.undefined)
   }
 }

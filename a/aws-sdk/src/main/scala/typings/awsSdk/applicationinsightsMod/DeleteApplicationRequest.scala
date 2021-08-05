@@ -13,16 +13,13 @@ trait DeleteApplicationRequest extends StObject {
 }
 object DeleteApplicationRequest {
   
-  @scala.inline
-  def apply(ResourceGroupName: ResourceGroupName): DeleteApplicationRequest = {
+  inline def apply(ResourceGroupName: ResourceGroupName): DeleteApplicationRequest = {
     val __obj = js.Dynamic.literal(ResourceGroupName = ResourceGroupName.asInstanceOf[js.Any])
     __obj.asInstanceOf[DeleteApplicationRequest]
   }
   
-  @scala.inline
-  implicit class DeleteApplicationRequestMutableBuilder[Self <: DeleteApplicationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteApplicationRequest](x: Self) {
     
-    @scala.inline
-    def setResourceGroupName(value: ResourceGroupName): Self = StObject.set(x, "ResourceGroupName", value.asInstanceOf[js.Any])
+    inline def setResourceGroupName(value: ResourceGroupName): Self = StObject.set(x, "ResourceGroupName", value.asInstanceOf[js.Any])
   }
 }

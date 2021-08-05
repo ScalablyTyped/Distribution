@@ -24,8 +24,7 @@ object FormControl {
   @JSImport("react-bootstrap", "FormControl.Feedback")
   @js.native
   def Feedback: Instantiable0[typings.reactBootstrap.formControlFeedbackMod.^] = js.native
-  @scala.inline
-  def Feedback_=(x: Instantiable0[typings.reactBootstrap.formControlFeedbackMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Feedback")(x.asInstanceOf[js.Any])
+  inline def Feedback_=(x: Instantiable0[typings.reactBootstrap.formControlFeedbackMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Feedback")(x.asInstanceOf[js.Any])
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("react-bootstrap", "FormControl.Static")
@@ -36,6 +35,5 @@ object FormControl {
   @JSImport("react-bootstrap", "FormControl.Static")
   @js.native
   def Static: Instantiable0[typings.reactBootstrap.formControlStaticMod.^] = js.native
-  @scala.inline
-  def Static_=(x: Instantiable0[typings.reactBootstrap.formControlStaticMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Static")(x.asInstanceOf[js.Any])
+  inline def Static_=(x: Instantiable0[typings.reactBootstrap.formControlStaticMod.^]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Static")(x.asInstanceOf[js.Any])
 }

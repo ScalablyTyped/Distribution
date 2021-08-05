@@ -28,22 +28,17 @@ trait ASPxClientCloudControlItemEventArgs
 }
 object ASPxClientCloudControlItemEventArgs {
   
-  @scala.inline
-  def apply(htmlElement: js.Any, htmlEvent: js.Any, name: js.Any, processOnServer: Boolean): ASPxClientCloudControlItemEventArgs = {
+  inline def apply(htmlElement: js.Any, htmlEvent: js.Any, name: js.Any, processOnServer: Boolean): ASPxClientCloudControlItemEventArgs = {
     val __obj = js.Dynamic.literal(htmlElement = htmlElement.asInstanceOf[js.Any], htmlEvent = htmlEvent.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], processOnServer = processOnServer.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientCloudControlItemEventArgs]
   }
   
-  @scala.inline
-  implicit class ASPxClientCloudControlItemEventArgsMutableBuilder[Self <: ASPxClientCloudControlItemEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientCloudControlItemEventArgs](x: Self) {
     
-    @scala.inline
-    def setHtmlElement(value: js.Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
+    inline def setHtmlElement(value: js.Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
+    inline def setHtmlEvent(value: js.Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: js.Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: js.Any): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }
 }

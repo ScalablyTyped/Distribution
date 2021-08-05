@@ -15,8 +15,7 @@ object eventsMod {
     * @param readline
     * The readline-object to observe.
     */
-  @scala.inline
-  def apply(readline: Interface): Events = ^.asInstanceOf[js.Dynamic].apply(readline.asInstanceOf[js.Any]).asInstanceOf[Events]
+  inline def apply(readline: Interface): Events = ^.asInstanceOf[js.Dynamic].apply(readline.asInstanceOf[js.Any]).asInstanceOf[Events]
   
   @JSImport("inquirer/lib/utils/events", JSImport.Namespace)
   @js.native
@@ -69,8 +68,7 @@ object eventsMod {
   }
   object Events {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       aKey: Observable_[KeyDescriptor],
       iKey: Observable_[KeyDescriptor],
       keypress: Observable_[KeyDescriptor],
@@ -84,32 +82,23 @@ object eventsMod {
       __obj.asInstanceOf[Events]
     }
     
-    @scala.inline
-    implicit class EventsMutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
+    extension [Self <: Events](x: Self) {
       
-      @scala.inline
-      def setAKey(value: Observable_[KeyDescriptor]): Self = StObject.set(x, "aKey", value.asInstanceOf[js.Any])
+      inline def setAKey(value: Observable_[KeyDescriptor]): Self = StObject.set(x, "aKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIKey(value: Observable_[KeyDescriptor]): Self = StObject.set(x, "iKey", value.asInstanceOf[js.Any])
+      inline def setIKey(value: Observable_[KeyDescriptor]): Self = StObject.set(x, "iKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeypress(value: Observable_[KeyDescriptor]): Self = StObject.set(x, "keypress", value.asInstanceOf[js.Any])
+      inline def setKeypress(value: Observable_[KeyDescriptor]): Self = StObject.set(x, "keypress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLine(value: Observable_[String]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
+      inline def setLine(value: Observable_[String]): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalizedDownKey(value: Observable_[KeyDescriptor]): Self = StObject.set(x, "normalizedDownKey", value.asInstanceOf[js.Any])
+      inline def setNormalizedDownKey(value: Observable_[KeyDescriptor]): Self = StObject.set(x, "normalizedDownKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNormalizedUpKey(value: Observable_[KeyDescriptor]): Self = StObject.set(x, "normalizedUpKey", value.asInstanceOf[js.Any])
+      inline def setNormalizedUpKey(value: Observable_[KeyDescriptor]): Self = StObject.set(x, "normalizedUpKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberKey(value: Observable_[KeyDescriptor]): Self = StObject.set(x, "numberKey", value.asInstanceOf[js.Any])
+      inline def setNumberKey(value: Observable_[KeyDescriptor]): Self = StObject.set(x, "numberKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpaceKey(value: Observable_[KeyDescriptor]): Self = StObject.set(x, "spaceKey", value.asInstanceOf[js.Any])
+      inline def setSpaceKey(value: Observable_[KeyDescriptor]): Self = StObject.set(x, "spaceKey", value.asInstanceOf[js.Any])
     }
   }
   
@@ -130,20 +119,16 @@ object eventsMod {
   }
   object KeyDescriptor {
     
-    @scala.inline
-    def apply(key: Key, value: String): KeyDescriptor = {
+    inline def apply(key: Key, value: String): KeyDescriptor = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeyDescriptor]
     }
     
-    @scala.inline
-    implicit class KeyDescriptorMutableBuilder[Self <: KeyDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: KeyDescriptor](x: Self) {
       
-      @scala.inline
-      def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
 }

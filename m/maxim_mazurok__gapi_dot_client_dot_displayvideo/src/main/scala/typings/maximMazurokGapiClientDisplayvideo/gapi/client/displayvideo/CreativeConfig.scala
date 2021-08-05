@@ -17,31 +17,23 @@ trait CreativeConfig extends StObject {
 }
 object CreativeConfig {
   
-  @scala.inline
-  def apply(): CreativeConfig = {
+  inline def apply(): CreativeConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreativeConfig]
   }
   
-  @scala.inline
-  implicit class CreativeConfigMutableBuilder[Self <: CreativeConfig] (val x: Self) extends AnyVal {
+  extension [Self <: CreativeConfig](x: Self) {
     
-    @scala.inline
-    def setCreativeType(value: String): Self = StObject.set(x, "creativeType", value.asInstanceOf[js.Any])
+    inline def setCreativeType(value: String): Self = StObject.set(x, "creativeType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreativeTypeUndefined: Self = StObject.set(x, "creativeType", js.undefined)
+    inline def setCreativeTypeUndefined: Self = StObject.set(x, "creativeType", js.undefined)
     
-    @scala.inline
-    def setDisplayCreativeConfig(value: InventorySourceDisplayCreativeConfig): Self = StObject.set(x, "displayCreativeConfig", value.asInstanceOf[js.Any])
+    inline def setDisplayCreativeConfig(value: InventorySourceDisplayCreativeConfig): Self = StObject.set(x, "displayCreativeConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisplayCreativeConfigUndefined: Self = StObject.set(x, "displayCreativeConfig", js.undefined)
+    inline def setDisplayCreativeConfigUndefined: Self = StObject.set(x, "displayCreativeConfig", js.undefined)
     
-    @scala.inline
-    def setVideoCreativeConfig(value: InventorySourceVideoCreativeConfig): Self = StObject.set(x, "videoCreativeConfig", value.asInstanceOf[js.Any])
+    inline def setVideoCreativeConfig(value: InventorySourceVideoCreativeConfig): Self = StObject.set(x, "videoCreativeConfig", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVideoCreativeConfigUndefined: Self = StObject.set(x, "videoCreativeConfig", js.undefined)
+    inline def setVideoCreativeConfigUndefined: Self = StObject.set(x, "videoCreativeConfig", js.undefined)
   }
 }

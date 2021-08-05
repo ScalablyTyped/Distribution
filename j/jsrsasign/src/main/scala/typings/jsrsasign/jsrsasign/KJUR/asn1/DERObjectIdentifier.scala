@@ -49,8 +49,7 @@ trait DERObjectIdentifier
 }
 object DERObjectIdentifier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     getEncodedHex: () => String,
     getFreshValueHex: () => String,
     getLengthHexFromValue: () => String,
@@ -68,16 +67,12 @@ object DERObjectIdentifier {
     __obj.asInstanceOf[DERObjectIdentifier]
   }
   
-  @scala.inline
-  implicit class DERObjectIdentifierMutableBuilder[Self <: DERObjectIdentifier] (val x: Self) extends AnyVal {
+  extension [Self <: DERObjectIdentifier](x: Self) {
     
-    @scala.inline
-    def setSetValueHex(value: String => Unit): Self = StObject.set(x, "setValueHex", js.Any.fromFunction1(value))
+    inline def setSetValueHex(value: String => Unit): Self = StObject.set(x, "setValueHex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValueName(value: String => Unit): Self = StObject.set(x, "setValueName", js.Any.fromFunction1(value))
+    inline def setSetValueName(value: String => Unit): Self = StObject.set(x, "setValueName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setSetValueOidString(value: String => Unit): Self = StObject.set(x, "setValueOidString", js.Any.fromFunction1(value))
+    inline def setSetValueOidString(value: String => Unit): Self = StObject.set(x, "setValueOidString", js.Any.fromFunction1(value))
   }
 }

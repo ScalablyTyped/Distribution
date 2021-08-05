@@ -18,8 +18,7 @@ trait InfiniteCODENAMEERROR[TupleSet /* <: js.Array[js.Array[js.Any]] */] extend
 }
 object InfiniteCODENAMEERROR {
   
-  @scala.inline
-  def apply[TupleSet /* <: js.Array[js.Array[js.Any]] */](
+  inline def apply[TupleSet /* <: js.Array[js.Array[js.Any]] */](
     empty: js.Array[js.Any],
     infinite: CODENAMEERROR,
     nonEmpty: Concat[
@@ -31,20 +30,15 @@ object InfiniteCODENAMEERROR {
     __obj.asInstanceOf[InfiniteCODENAMEERROR[TupleSet]]
   }
   
-  @scala.inline
-  implicit class InfiniteCODENAMEERRORMutableBuilder[Self <: InfiniteCODENAMEERROR[?], TupleSet /* <: js.Array[js.Array[js.Any]] */] (val x: Self & InfiniteCODENAMEERROR[TupleSet]) extends AnyVal {
+  extension [Self <: InfiniteCODENAMEERROR[?], TupleSet /* <: js.Array[js.Array[js.Any]] */](x: Self & InfiniteCODENAMEERROR[TupleSet]) {
     
-    @scala.inline
-    def setEmpty(value: js.Array[js.Any]): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
+    inline def setEmpty(value: js.Array[js.Any]): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmptyVarargs(value: js.Any*): Self = StObject.set(x, "empty", js.Array(value :_*))
+    inline def setEmptyVarargs(value: js.Any*): Self = StObject.set(x, "empty", js.Array(value :_*))
     
-    @scala.inline
-    def setInfinite(value: CODENAMEERROR): Self = StObject.set(x, "infinite", value.asInstanceOf[js.Any])
+    inline def setInfinite(value: CODENAMEERROR): Self = StObject.set(x, "infinite", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNonEmpty(
+    inline def setNonEmpty(
       value: Concat[
           /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias typescript-tuple.typescript-tuple/lib/utils.ConcatMultiple<typescript-tuple.typescript-tuple/lib/utils.Reverse<ReversedRest, []>> */ js.Object, 
           js.Any

@@ -24,9 +24,9 @@ object retroMod {
       */
     def this(source: ArrayLike[T]) = this()
     
-    var _index: js.Any = js.native
+    /* private */ var _index: js.Any = js.native
     
-    var _source: js.Any = js.native
+    /* private */ var _source: js.Any = js.native
     
     /**
       * Get an iterator over the object's values.
@@ -61,8 +61,7 @@ object retroMod {
     override def next(): js.UndefOr[T] = js.native
   }
   
-  @scala.inline
-  def retro[T](`object`: RetroableOrArrayLike[T]): IIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("retro")(`object`.asInstanceOf[js.Any]).asInstanceOf[IIterator[T]]
+  inline def retro[T](`object`: RetroableOrArrayLike[T]): IIterator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("retro")(`object`.asInstanceOf[js.Any]).asInstanceOf[IIterator[T]]
   
   trait IRetroable[T] extends StObject {
     
@@ -75,17 +74,14 @@ object retroMod {
   }
   object IRetroable {
     
-    @scala.inline
-    def apply[T](retro: () => IIterator[T]): IRetroable[T] = {
+    inline def apply[T](retro: () => IIterator[T]): IRetroable[T] = {
       val __obj = js.Dynamic.literal(retro = js.Any.fromFunction0(retro))
       __obj.asInstanceOf[IRetroable[T]]
     }
     
-    @scala.inline
-    implicit class IRetroableMutableBuilder[Self <: IRetroable[?], T] (val x: Self & IRetroable[T]) extends AnyVal {
+    extension [Self <: IRetroable[?], T](x: Self & IRetroable[T]) {
       
-      @scala.inline
-      def setRetro(value: () => IIterator[T]): Self = StObject.set(x, "retro", js.Any.fromFunction0(value))
+      inline def setRetro(value: () => IIterator[T]): Self = StObject.set(x, "retro", js.Any.fromFunction0(value))
     }
   }
   

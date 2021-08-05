@@ -46,43 +46,31 @@ trait RetryConfig extends StObject {
 }
 object RetryConfig {
   
-  @scala.inline
-  def apply(): RetryConfig = {
+  inline def apply(): RetryConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RetryConfig]
   }
   
-  @scala.inline
-  implicit class RetryConfigMutableBuilder[Self <: RetryConfig] (val x: Self) extends AnyVal {
+  extension [Self <: RetryConfig](x: Self) {
     
-    @scala.inline
-    def setMaxAttempts(value: Double): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
+    inline def setMaxAttempts(value: Double): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxAttemptsUndefined: Self = StObject.set(x, "maxAttempts", js.undefined)
+    inline def setMaxAttemptsUndefined: Self = StObject.set(x, "maxAttempts", js.undefined)
     
-    @scala.inline
-    def setMaxBackoff(value: String): Self = StObject.set(x, "maxBackoff", value.asInstanceOf[js.Any])
+    inline def setMaxBackoff(value: String): Self = StObject.set(x, "maxBackoff", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxBackoffUndefined: Self = StObject.set(x, "maxBackoff", js.undefined)
+    inline def setMaxBackoffUndefined: Self = StObject.set(x, "maxBackoff", js.undefined)
     
-    @scala.inline
-    def setMaxDoublings(value: Double): Self = StObject.set(x, "maxDoublings", value.asInstanceOf[js.Any])
+    inline def setMaxDoublings(value: Double): Self = StObject.set(x, "maxDoublings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxDoublingsUndefined: Self = StObject.set(x, "maxDoublings", js.undefined)
+    inline def setMaxDoublingsUndefined: Self = StObject.set(x, "maxDoublings", js.undefined)
     
-    @scala.inline
-    def setMaxRetryDuration(value: String): Self = StObject.set(x, "maxRetryDuration", value.asInstanceOf[js.Any])
+    inline def setMaxRetryDuration(value: String): Self = StObject.set(x, "maxRetryDuration", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxRetryDurationUndefined: Self = StObject.set(x, "maxRetryDuration", js.undefined)
+    inline def setMaxRetryDurationUndefined: Self = StObject.set(x, "maxRetryDuration", js.undefined)
     
-    @scala.inline
-    def setMinBackoff(value: String): Self = StObject.set(x, "minBackoff", value.asInstanceOf[js.Any])
+    inline def setMinBackoff(value: String): Self = StObject.set(x, "minBackoff", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinBackoffUndefined: Self = StObject.set(x, "minBackoff", js.undefined)
+    inline def setMinBackoffUndefined: Self = StObject.set(x, "minBackoff", js.undefined)
   }
 }

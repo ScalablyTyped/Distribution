@@ -11,19 +11,15 @@ trait ThemeProps extends StObject {
 }
 object ThemeProps {
   
-  @scala.inline
-  def apply(): ThemeProps = {
+  inline def apply(): ThemeProps = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ThemeProps]
   }
   
-  @scala.inline
-  implicit class ThemePropsMutableBuilder[Self <: ThemeProps] (val x: Self) extends AnyVal {
+  extension [Self <: ThemeProps](x: Self) {
     
-    @scala.inline
-    def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+    inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
   }
 }

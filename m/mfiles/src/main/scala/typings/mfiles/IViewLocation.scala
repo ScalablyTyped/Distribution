@@ -16,8 +16,7 @@ trait IViewLocation extends StObject {
 }
 object IViewLocation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Clone: () => IViewLocation,
     OverlappedFolder: ITypedValue,
     Overlapping: Boolean,
@@ -27,19 +26,14 @@ object IViewLocation {
     __obj.asInstanceOf[IViewLocation]
   }
   
-  @scala.inline
-  implicit class IViewLocationMutableBuilder[Self <: IViewLocation] (val x: Self) extends AnyVal {
+  extension [Self <: IViewLocation](x: Self) {
     
-    @scala.inline
-    def setClone(value: () => IViewLocation): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IViewLocation): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setOverlappedFolder(value: ITypedValue): Self = StObject.set(x, "OverlappedFolder", value.asInstanceOf[js.Any])
+    inline def setOverlappedFolder(value: ITypedValue): Self = StObject.set(x, "OverlappedFolder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverlapping(value: Boolean): Self = StObject.set(x, "Overlapping", value.asInstanceOf[js.Any])
+    inline def setOverlapping(value: Boolean): Self = StObject.set(x, "Overlapping", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentFolder(value: IFolderDefs): Self = StObject.set(x, "ParentFolder", value.asInstanceOf[js.Any])
+    inline def setParentFolder(value: IFolderDefs): Self = StObject.set(x, "ParentFolder", value.asInstanceOf[js.Any])
   }
 }

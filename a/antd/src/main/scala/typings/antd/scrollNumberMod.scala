@@ -36,71 +36,50 @@ object scrollNumberMod extends Shortcut {
   }
   object ScrollNumberProps {
     
-    @scala.inline
-    def apply(show: Boolean): ScrollNumberProps = {
+    inline def apply(show: Boolean): ScrollNumberProps = {
       val __obj = js.Dynamic.literal(show = show.asInstanceOf[js.Any])
       __obj.asInstanceOf[ScrollNumberProps]
     }
     
-    @scala.inline
-    implicit class ScrollNumberPropsMutableBuilder[Self <: ScrollNumberProps] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollNumberProps](x: Self) {
       
-      @scala.inline
-      def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+      inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
-      @scala.inline
-      def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+      inline def setComponent(value: String): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
+      inline def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
       
-      @scala.inline
-      def setCount(value: String | Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: String | Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountNull: Self = StObject.set(x, "count", null)
+      inline def setCountNull: Self = StObject.set(x, "count", null)
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
       
-      @scala.inline
-      def setOnAnimated(value: js.Function): Self = StObject.set(x, "onAnimated", value.asInstanceOf[js.Any])
+      inline def setOnAnimated(value: js.Function): Self = StObject.set(x, "onAnimated", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnAnimatedUndefined: Self = StObject.set(x, "onAnimated", js.undefined)
+      inline def setOnAnimatedUndefined: Self = StObject.set(x, "onAnimated", js.undefined)
       
-      @scala.inline
-      def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
+      inline def setPrefixCls(value: String): Self = StObject.set(x, "prefixCls", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
+      inline def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
       
-      @scala.inline
-      def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
+      inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String | Double): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String | Double): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleNull: Self = StObject.set(x, "title", null)
+      inline def setTitleNull: Self = StObject.set(x, "title", null)
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     }
   }
   
@@ -112,29 +91,22 @@ object scrollNumberMod extends Shortcut {
   }
   object ScrollNumberState {
     
-    @scala.inline
-    def apply(): ScrollNumberState = {
+    inline def apply(): ScrollNumberState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ScrollNumberState]
     }
     
-    @scala.inline
-    implicit class ScrollNumberStateMutableBuilder[Self <: ScrollNumberState] (val x: Self) extends AnyVal {
+    extension [Self <: ScrollNumberState](x: Self) {
       
-      @scala.inline
-      def setAnimateStarted(value: Boolean): Self = StObject.set(x, "animateStarted", value.asInstanceOf[js.Any])
+      inline def setAnimateStarted(value: Boolean): Self = StObject.set(x, "animateStarted", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAnimateStartedUndefined: Self = StObject.set(x, "animateStarted", js.undefined)
+      inline def setAnimateStartedUndefined: Self = StObject.set(x, "animateStarted", js.undefined)
       
-      @scala.inline
-      def setCount(value: String | Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
+      inline def setCount(value: String | Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCountNull: Self = StObject.set(x, "count", null)
+      inline def setCountNull: Self = StObject.set(x, "count", null)
       
-      @scala.inline
-      def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
+      inline def setCountUndefined: Self = StObject.set(x, "count", js.undefined)
     }
   }
   

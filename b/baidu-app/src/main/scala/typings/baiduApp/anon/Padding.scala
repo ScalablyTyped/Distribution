@@ -13,28 +13,21 @@ trait Padding extends StObject {
 }
 object Padding {
   
-  @scala.inline
-  def apply(points: js.Array[Longitude]): Padding = {
+  inline def apply(points: js.Array[Longitude]): Padding = {
     val __obj = js.Dynamic.literal(points = points.asInstanceOf[js.Any])
     __obj.asInstanceOf[Padding]
   }
   
-  @scala.inline
-  implicit class PaddingMutableBuilder[Self <: Padding] (val x: Self) extends AnyVal {
+  extension [Self <: Padding](x: Self) {
     
-    @scala.inline
-    def setPadding(value: js.Array[Double]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
+    inline def setPadding(value: js.Array[Double]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
+    inline def setPaddingUndefined: Self = StObject.set(x, "padding", js.undefined)
     
-    @scala.inline
-    def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
+    inline def setPaddingVarargs(value: Double*): Self = StObject.set(x, "padding", js.Array(value :_*))
     
-    @scala.inline
-    def setPoints(value: js.Array[Longitude]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
+    inline def setPoints(value: js.Array[Longitude]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPointsVarargs(value: Longitude*): Self = StObject.set(x, "points", js.Array(value :_*))
+    inline def setPointsVarargs(value: Longitude*): Self = StObject.set(x, "points", js.Array(value :_*))
   }
 }

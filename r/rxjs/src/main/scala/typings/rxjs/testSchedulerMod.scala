@@ -53,15 +53,15 @@ object testSchedulerMod {
     
     def expectSubscriptions(actualSubscriptionLogs: js.Array[SubscriptionLog]): ToBeSubscriptionLogsToBeFn = js.native
     
-    var flushTests: js.Any = js.native
+    /* private */ var flushTests: js.Any = js.native
     
     val hotObservables: js.Array[HotObservable[js.Any]] = js.native
     
-    var materializeInnerObservable: js.Any = js.native
+    /* private */ var materializeInnerObservable: js.Any = js.native
     
     def run[T](callback: js.Function1[/* helpers */ RunHelpers, T]): T = js.native
     
-    var runMode: js.Any = js.native
+    /* private */ var runMode: js.Any = js.native
   }
   /* static members */
   object TestScheduler {
@@ -71,80 +71,64 @@ object testSchedulerMod {
     val ^ : js.Any = js.native
     
     /** @nocollapse */
-    @scala.inline
-    def parseMarbles(marbles: String): js.Array[TestMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseMarbles")(marbles.asInstanceOf[js.Any]).asInstanceOf[js.Array[TestMessage]]
-    @scala.inline
-    def parseMarbles(marbles: String, values: js.Any): js.Array[TestMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMarbles")(marbles.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Array[TestMessage]]
-    @scala.inline
-    def parseMarbles(marbles: String, values: js.Any, errorValue: js.Any): js.Array[TestMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMarbles")(marbles.asInstanceOf[js.Any], values.asInstanceOf[js.Any], errorValue.asInstanceOf[js.Any])).asInstanceOf[js.Array[TestMessage]]
-    @scala.inline
-    def parseMarbles(marbles: String, values: js.Any, errorValue: js.Any, materializeInnerObservables: Boolean): js.Array[TestMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMarbles")(marbles.asInstanceOf[js.Any], values.asInstanceOf[js.Any], errorValue.asInstanceOf[js.Any], materializeInnerObservables.asInstanceOf[js.Any])).asInstanceOf[js.Array[TestMessage]]
-    @scala.inline
-    def parseMarbles(
+    inline def parseMarbles(marbles: String): js.Array[TestMessage] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseMarbles")(marbles.asInstanceOf[js.Any]).asInstanceOf[js.Array[TestMessage]]
+    inline def parseMarbles(marbles: String, values: js.Any): js.Array[TestMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMarbles")(marbles.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Array[TestMessage]]
+    inline def parseMarbles(marbles: String, values: js.Any, errorValue: js.Any): js.Array[TestMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMarbles")(marbles.asInstanceOf[js.Any], values.asInstanceOf[js.Any], errorValue.asInstanceOf[js.Any])).asInstanceOf[js.Array[TestMessage]]
+    inline def parseMarbles(marbles: String, values: js.Any, errorValue: js.Any, materializeInnerObservables: Boolean): js.Array[TestMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMarbles")(marbles.asInstanceOf[js.Any], values.asInstanceOf[js.Any], errorValue.asInstanceOf[js.Any], materializeInnerObservables.asInstanceOf[js.Any])).asInstanceOf[js.Array[TestMessage]]
+    inline def parseMarbles(
       marbles: String,
       values: js.Any,
       errorValue: js.Any,
       materializeInnerObservables: Boolean,
       runMode: Boolean
     ): js.Array[TestMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMarbles")(marbles.asInstanceOf[js.Any], values.asInstanceOf[js.Any], errorValue.asInstanceOf[js.Any], materializeInnerObservables.asInstanceOf[js.Any], runMode.asInstanceOf[js.Any])).asInstanceOf[js.Array[TestMessage]]
-    @scala.inline
-    def parseMarbles(
+    inline def parseMarbles(
       marbles: String,
       values: js.Any,
       errorValue: js.Any,
       materializeInnerObservables: Unit,
       runMode: Boolean
     ): js.Array[TestMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMarbles")(marbles.asInstanceOf[js.Any], values.asInstanceOf[js.Any], errorValue.asInstanceOf[js.Any], materializeInnerObservables.asInstanceOf[js.Any], runMode.asInstanceOf[js.Any])).asInstanceOf[js.Array[TestMessage]]
-    @scala.inline
-    def parseMarbles(marbles: String, values: js.Any, errorValue: Unit, materializeInnerObservables: Boolean): js.Array[TestMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMarbles")(marbles.asInstanceOf[js.Any], values.asInstanceOf[js.Any], errorValue.asInstanceOf[js.Any], materializeInnerObservables.asInstanceOf[js.Any])).asInstanceOf[js.Array[TestMessage]]
-    @scala.inline
-    def parseMarbles(
+    inline def parseMarbles(marbles: String, values: js.Any, errorValue: Unit, materializeInnerObservables: Boolean): js.Array[TestMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMarbles")(marbles.asInstanceOf[js.Any], values.asInstanceOf[js.Any], errorValue.asInstanceOf[js.Any], materializeInnerObservables.asInstanceOf[js.Any])).asInstanceOf[js.Array[TestMessage]]
+    inline def parseMarbles(
       marbles: String,
       values: js.Any,
       errorValue: Unit,
       materializeInnerObservables: Boolean,
       runMode: Boolean
     ): js.Array[TestMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMarbles")(marbles.asInstanceOf[js.Any], values.asInstanceOf[js.Any], errorValue.asInstanceOf[js.Any], materializeInnerObservables.asInstanceOf[js.Any], runMode.asInstanceOf[js.Any])).asInstanceOf[js.Array[TestMessage]]
-    @scala.inline
-    def parseMarbles(
+    inline def parseMarbles(
       marbles: String,
       values: js.Any,
       errorValue: Unit,
       materializeInnerObservables: Unit,
       runMode: Boolean
     ): js.Array[TestMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMarbles")(marbles.asInstanceOf[js.Any], values.asInstanceOf[js.Any], errorValue.asInstanceOf[js.Any], materializeInnerObservables.asInstanceOf[js.Any], runMode.asInstanceOf[js.Any])).asInstanceOf[js.Array[TestMessage]]
-    @scala.inline
-    def parseMarbles(marbles: String, values: Unit, errorValue: js.Any): js.Array[TestMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMarbles")(marbles.asInstanceOf[js.Any], values.asInstanceOf[js.Any], errorValue.asInstanceOf[js.Any])).asInstanceOf[js.Array[TestMessage]]
-    @scala.inline
-    def parseMarbles(marbles: String, values: Unit, errorValue: js.Any, materializeInnerObservables: Boolean): js.Array[TestMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMarbles")(marbles.asInstanceOf[js.Any], values.asInstanceOf[js.Any], errorValue.asInstanceOf[js.Any], materializeInnerObservables.asInstanceOf[js.Any])).asInstanceOf[js.Array[TestMessage]]
-    @scala.inline
-    def parseMarbles(
+    inline def parseMarbles(marbles: String, values: Unit, errorValue: js.Any): js.Array[TestMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMarbles")(marbles.asInstanceOf[js.Any], values.asInstanceOf[js.Any], errorValue.asInstanceOf[js.Any])).asInstanceOf[js.Array[TestMessage]]
+    inline def parseMarbles(marbles: String, values: Unit, errorValue: js.Any, materializeInnerObservables: Boolean): js.Array[TestMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMarbles")(marbles.asInstanceOf[js.Any], values.asInstanceOf[js.Any], errorValue.asInstanceOf[js.Any], materializeInnerObservables.asInstanceOf[js.Any])).asInstanceOf[js.Array[TestMessage]]
+    inline def parseMarbles(
       marbles: String,
       values: Unit,
       errorValue: js.Any,
       materializeInnerObservables: Boolean,
       runMode: Boolean
     ): js.Array[TestMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMarbles")(marbles.asInstanceOf[js.Any], values.asInstanceOf[js.Any], errorValue.asInstanceOf[js.Any], materializeInnerObservables.asInstanceOf[js.Any], runMode.asInstanceOf[js.Any])).asInstanceOf[js.Array[TestMessage]]
-    @scala.inline
-    def parseMarbles(
+    inline def parseMarbles(
       marbles: String,
       values: Unit,
       errorValue: js.Any,
       materializeInnerObservables: Unit,
       runMode: Boolean
     ): js.Array[TestMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMarbles")(marbles.asInstanceOf[js.Any], values.asInstanceOf[js.Any], errorValue.asInstanceOf[js.Any], materializeInnerObservables.asInstanceOf[js.Any], runMode.asInstanceOf[js.Any])).asInstanceOf[js.Array[TestMessage]]
-    @scala.inline
-    def parseMarbles(marbles: String, values: Unit, errorValue: Unit, materializeInnerObservables: Boolean): js.Array[TestMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMarbles")(marbles.asInstanceOf[js.Any], values.asInstanceOf[js.Any], errorValue.asInstanceOf[js.Any], materializeInnerObservables.asInstanceOf[js.Any])).asInstanceOf[js.Array[TestMessage]]
-    @scala.inline
-    def parseMarbles(
+    inline def parseMarbles(marbles: String, values: Unit, errorValue: Unit, materializeInnerObservables: Boolean): js.Array[TestMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMarbles")(marbles.asInstanceOf[js.Any], values.asInstanceOf[js.Any], errorValue.asInstanceOf[js.Any], materializeInnerObservables.asInstanceOf[js.Any])).asInstanceOf[js.Array[TestMessage]]
+    inline def parseMarbles(
       marbles: String,
       values: Unit,
       errorValue: Unit,
       materializeInnerObservables: Boolean,
       runMode: Boolean
     ): js.Array[TestMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMarbles")(marbles.asInstanceOf[js.Any], values.asInstanceOf[js.Any], errorValue.asInstanceOf[js.Any], materializeInnerObservables.asInstanceOf[js.Any], runMode.asInstanceOf[js.Any])).asInstanceOf[js.Array[TestMessage]]
-    @scala.inline
-    def parseMarbles(
+    inline def parseMarbles(
       marbles: String,
       values: Unit,
       errorValue: Unit,
@@ -153,10 +137,8 @@ object testSchedulerMod {
     ): js.Array[TestMessage] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMarbles")(marbles.asInstanceOf[js.Any], values.asInstanceOf[js.Any], errorValue.asInstanceOf[js.Any], materializeInnerObservables.asInstanceOf[js.Any], runMode.asInstanceOf[js.Any])).asInstanceOf[js.Array[TestMessage]]
     
     /** @nocollapse */
-    @scala.inline
-    def parseMarblesAsSubscriptions(marbles: String): SubscriptionLog = ^.asInstanceOf[js.Dynamic].applyDynamic("parseMarblesAsSubscriptions")(marbles.asInstanceOf[js.Any]).asInstanceOf[SubscriptionLog]
-    @scala.inline
-    def parseMarblesAsSubscriptions(marbles: String, runMode: Boolean): SubscriptionLog = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMarblesAsSubscriptions")(marbles.asInstanceOf[js.Any], runMode.asInstanceOf[js.Any])).asInstanceOf[SubscriptionLog]
+    inline def parseMarblesAsSubscriptions(marbles: String): SubscriptionLog = ^.asInstanceOf[js.Dynamic].applyDynamic("parseMarblesAsSubscriptions")(marbles.asInstanceOf[js.Any]).asInstanceOf[SubscriptionLog]
+    inline def parseMarblesAsSubscriptions(marbles: String, runMode: Boolean): SubscriptionLog = (^.asInstanceOf[js.Dynamic].applyDynamic("parseMarblesAsSubscriptions")(marbles.asInstanceOf[js.Any], runMode.asInstanceOf[js.Any])).asInstanceOf[SubscriptionLog]
   }
   
   trait RunHelpers extends StObject {
@@ -194,8 +176,7 @@ object testSchedulerMod {
   }
   object RunHelpers {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       cold: FnCallMarblesValuesError,
       expectObservable: (/* observable */ Observable[js.Any], /* subscriptionMarbles */ js.UndefOr[String]) => ToBe,
       expectSubscriptions: /* actualSubscriptionLogs */ js.Array[SubscriptionLog] => ToBeSubscriptionLogsToBeFn,
@@ -206,23 +187,17 @@ object testSchedulerMod {
       __obj.asInstanceOf[RunHelpers]
     }
     
-    @scala.inline
-    implicit class RunHelpersMutableBuilder[Self <: RunHelpers] (val x: Self) extends AnyVal {
+    extension [Self <: RunHelpers](x: Self) {
       
-      @scala.inline
-      def setCold(value: FnCallMarblesValuesError): Self = StObject.set(x, "cold", value.asInstanceOf[js.Any])
+      inline def setCold(value: FnCallMarblesValuesError): Self = StObject.set(x, "cold", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExpectObservable(value: (/* observable */ Observable[js.Any], /* subscriptionMarbles */ js.UndefOr[String]) => ToBe): Self = StObject.set(x, "expectObservable", js.Any.fromFunction2(value))
+      inline def setExpectObservable(value: (/* observable */ Observable[js.Any], /* subscriptionMarbles */ js.UndefOr[String]) => ToBe): Self = StObject.set(x, "expectObservable", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setExpectSubscriptions(value: /* actualSubscriptionLogs */ js.Array[SubscriptionLog] => ToBeSubscriptionLogsToBeFn): Self = StObject.set(x, "expectSubscriptions", js.Any.fromFunction1(value))
+      inline def setExpectSubscriptions(value: /* actualSubscriptionLogs */ js.Array[SubscriptionLog] => ToBeSubscriptionLogsToBeFn): Self = StObject.set(x, "expectSubscriptions", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
+      inline def setFlush(value: () => Unit): Self = StObject.set(x, "flush", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHot(value: Fn0): Self = StObject.set(x, "hot", value.asInstanceOf[js.Any])
+      inline def setHot(value: Fn0): Self = StObject.set(x, "hot", value.asInstanceOf[js.Any])
     }
   }
   

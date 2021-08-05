@@ -29,22 +29,17 @@ trait IDataField extends StObject {
 }
 object IDataField {
   
-  @scala.inline
-  def apply(qIsKey: Boolean, qName: String, qOriginalFieldName: String): IDataField = {
+  inline def apply(qIsKey: Boolean, qName: String, qOriginalFieldName: String): IDataField = {
     val __obj = js.Dynamic.literal(qIsKey = qIsKey.asInstanceOf[js.Any], qName = qName.asInstanceOf[js.Any], qOriginalFieldName = qOriginalFieldName.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDataField]
   }
   
-  @scala.inline
-  implicit class IDataFieldMutableBuilder[Self <: IDataField] (val x: Self) extends AnyVal {
+  extension [Self <: IDataField](x: Self) {
     
-    @scala.inline
-    def setQIsKey(value: Boolean): Self = StObject.set(x, "qIsKey", value.asInstanceOf[js.Any])
+    inline def setQIsKey(value: Boolean): Self = StObject.set(x, "qIsKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
+    inline def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQOriginalFieldName(value: String): Self = StObject.set(x, "qOriginalFieldName", value.asInstanceOf[js.Any])
+    inline def setQOriginalFieldName(value: String): Self = StObject.set(x, "qOriginalFieldName", value.asInstanceOf[js.Any])
   }
 }

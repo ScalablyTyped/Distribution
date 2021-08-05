@@ -42,79 +42,55 @@ trait Border extends StObject {
 }
 object Border {
   
-  @scala.inline
-  def apply(): Border = {
+  inline def apply(): Border = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Border]
   }
   
-  @scala.inline
-  implicit class BorderMutableBuilder[Self <: Border] (val x: Self) extends AnyVal {
+  extension [Self <: Border](x: Self) {
     
-    @scala.inline
-    def setBorder(value: Boolean): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
+    inline def setBorder(value: Boolean): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
+    inline def setBorderUndefined: Self = StObject.set(x, "border", js.undefined)
     
-    @scala.inline
-    def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
+    inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
+    inline def setDataHookUndefined: Self = StObject.set(x, "dataHook", js.undefined)
     
-    @scala.inline
-    def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+    inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+    inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
-    @scala.inline
-    def setLabelEllipsis(value: Boolean): Self = StObject.set(x, "labelEllipsis", value.asInstanceOf[js.Any])
+    inline def setLabelEllipsis(value: Boolean): Self = StObject.set(x, "labelEllipsis", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelEllipsisUndefined: Self = StObject.set(x, "labelEllipsis", js.undefined)
+    inline def setLabelEllipsisUndefined: Self = StObject.set(x, "labelEllipsis", js.undefined)
     
-    @scala.inline
-    def setLabelPlacement(value: tooltip | bottom | end): Self = StObject.set(x, "labelPlacement", value.asInstanceOf[js.Any])
+    inline def setLabelPlacement(value: tooltip | bottom | end): Self = StObject.set(x, "labelPlacement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelPlacementUndefined: Self = StObject.set(x, "labelPlacement", js.undefined)
+    inline def setLabelPlacementUndefined: Self = StObject.set(x, "labelPlacement", js.undefined)
     
-    @scala.inline
-    def setLabelValue(value: ReactNode): Self = StObject.set(x, "labelValue", value.asInstanceOf[js.Any])
+    inline def setLabelValue(value: ReactNode): Self = StObject.set(x, "labelValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelValueUndefined: Self = StObject.set(x, "labelValue", js.undefined)
+    inline def setLabelValueUndefined: Self = StObject.set(x, "labelValue", js.undefined)
     
-    @scala.inline
-    def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+    inline def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
+    inline def setSelectedUndefined: Self = StObject.set(x, "selected", js.undefined)
     
-    @scala.inline
-    def setShape(value: square | round): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
+    inline def setShape(value: square | round): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
+    inline def setShapeUndefined: Self = StObject.set(x, "shape", js.undefined)
     
-    @scala.inline
-    def setSize(value: tiny | small | medium | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: tiny | small | medium | large): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setSkin(value: ToggleButtonSkin): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
+    inline def setSkin(value: ToggleButtonSkin): Self = StObject.set(x, "skin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
+    inline def setSkinUndefined: Self = StObject.set(x, "skin", js.undefined)
     
-    @scala.inline
-    def setTooltipProps(value: TooltipCommonProps): Self = StObject.set(x, "tooltipProps", value.asInstanceOf[js.Any])
+    inline def setTooltipProps(value: TooltipCommonProps): Self = StObject.set(x, "tooltipProps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTooltipPropsUndefined: Self = StObject.set(x, "tooltipProps", js.undefined)
+    inline def setTooltipPropsUndefined: Self = StObject.set(x, "tooltipProps", js.undefined)
   }
 }

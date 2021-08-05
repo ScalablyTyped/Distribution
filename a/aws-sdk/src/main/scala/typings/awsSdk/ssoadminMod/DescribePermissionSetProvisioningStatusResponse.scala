@@ -13,19 +13,15 @@ trait DescribePermissionSetProvisioningStatusResponse extends StObject {
 }
 object DescribePermissionSetProvisioningStatusResponse {
   
-  @scala.inline
-  def apply(): DescribePermissionSetProvisioningStatusResponse = {
+  inline def apply(): DescribePermissionSetProvisioningStatusResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribePermissionSetProvisioningStatusResponse]
   }
   
-  @scala.inline
-  implicit class DescribePermissionSetProvisioningStatusResponseMutableBuilder[Self <: DescribePermissionSetProvisioningStatusResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DescribePermissionSetProvisioningStatusResponse](x: Self) {
     
-    @scala.inline
-    def setPermissionSetProvisioningStatus(value: PermissionSetProvisioningStatus): Self = StObject.set(x, "PermissionSetProvisioningStatus", value.asInstanceOf[js.Any])
+    inline def setPermissionSetProvisioningStatus(value: PermissionSetProvisioningStatus): Self = StObject.set(x, "PermissionSetProvisioningStatus", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPermissionSetProvisioningStatusUndefined: Self = StObject.set(x, "PermissionSetProvisioningStatus", js.undefined)
+    inline def setPermissionSetProvisioningStatusUndefined: Self = StObject.set(x, "PermissionSetProvisioningStatus", js.undefined)
   }
 }

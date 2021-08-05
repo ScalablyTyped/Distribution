@@ -12,16 +12,13 @@ trait Group
 }
 object Group {
   
-  @scala.inline
-  def apply($parent: TypeDerived, $type: ElementType, categoryValueRef: CategoryValue, id: String): Group = {
+  inline def apply($parent: TypeDerived, $type: ElementType, categoryValueRef: CategoryValue, id: String): Group = {
     val __obj = js.Dynamic.literal($parent = $parent.asInstanceOf[js.Any], $type = $type.asInstanceOf[js.Any], categoryValueRef = categoryValueRef.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
     __obj.asInstanceOf[Group]
   }
   
-  @scala.inline
-  implicit class GroupMutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
+  extension [Self <: Group](x: Self) {
     
-    @scala.inline
-    def setCategoryValueRef(value: CategoryValue): Self = StObject.set(x, "categoryValueRef", value.asInstanceOf[js.Any])
+    inline def setCategoryValueRef(value: CategoryValue): Self = StObject.set(x, "categoryValueRef", value.asInstanceOf[js.Any])
   }
 }

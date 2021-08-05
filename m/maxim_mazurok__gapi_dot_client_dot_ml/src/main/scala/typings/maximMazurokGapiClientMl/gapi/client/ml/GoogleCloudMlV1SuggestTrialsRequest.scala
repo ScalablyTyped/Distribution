@@ -17,25 +17,19 @@ trait GoogleCloudMlV1SuggestTrialsRequest extends StObject {
 }
 object GoogleCloudMlV1SuggestTrialsRequest {
   
-  @scala.inline
-  def apply(): GoogleCloudMlV1SuggestTrialsRequest = {
+  inline def apply(): GoogleCloudMlV1SuggestTrialsRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleCloudMlV1SuggestTrialsRequest]
   }
   
-  @scala.inline
-  implicit class GoogleCloudMlV1SuggestTrialsRequestMutableBuilder[Self <: GoogleCloudMlV1SuggestTrialsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleCloudMlV1SuggestTrialsRequest](x: Self) {
     
-    @scala.inline
-    def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
+    inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
+    inline def setClientIdUndefined: Self = StObject.set(x, "clientId", js.undefined)
     
-    @scala.inline
-    def setSuggestionCount(value: Double): Self = StObject.set(x, "suggestionCount", value.asInstanceOf[js.Any])
+    inline def setSuggestionCount(value: Double): Self = StObject.set(x, "suggestionCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuggestionCountUndefined: Self = StObject.set(x, "suggestionCount", js.undefined)
+    inline def setSuggestionCountUndefined: Self = StObject.set(x, "suggestionCount", js.undefined)
   }
 }

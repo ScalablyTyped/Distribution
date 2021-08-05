@@ -27,8 +27,7 @@ trait Table
 }
 object Table {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     ApplyFilter: Boolean,
     CatalogName: String,
     Columns: XNameAccess,
@@ -69,10 +68,8 @@ object Table {
     __obj.asInstanceOf[Table]
   }
   
-  @scala.inline
-  implicit class TableMutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
+  extension [Self <: Table](x: Self) {
     
-    @scala.inline
-    def setPrivileges(value: Double): Self = StObject.set(x, "Privileges", value.asInstanceOf[js.Any])
+    inline def setPrivileges(value: Double): Self = StObject.set(x, "Privileges", value.asInstanceOf[js.Any])
   }
 }

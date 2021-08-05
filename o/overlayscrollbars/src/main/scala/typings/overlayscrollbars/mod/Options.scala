@@ -41,109 +41,75 @@ trait Options extends StObject {
 }
 object Options {
   
-  @scala.inline
-  def apply(): Options = {
+  inline def apply(): Options = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Options]
   }
   
-  @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+  extension [Self <: Options](x: Self) {
     
-    @scala.inline
-    def setAutoUpdate(value: Boolean): Self = StObject.set(x, "autoUpdate", value.asInstanceOf[js.Any])
+    inline def setAutoUpdate(value: Boolean): Self = StObject.set(x, "autoUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoUpdateInterval(value: Double): Self = StObject.set(x, "autoUpdateInterval", value.asInstanceOf[js.Any])
+    inline def setAutoUpdateInterval(value: Double): Self = StObject.set(x, "autoUpdateInterval", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAutoUpdateIntervalUndefined: Self = StObject.set(x, "autoUpdateInterval", js.undefined)
+    inline def setAutoUpdateIntervalUndefined: Self = StObject.set(x, "autoUpdateInterval", js.undefined)
     
-    @scala.inline
-    def setAutoUpdateNull: Self = StObject.set(x, "autoUpdate", null)
+    inline def setAutoUpdateNull: Self = StObject.set(x, "autoUpdate", null)
     
-    @scala.inline
-    def setAutoUpdateUndefined: Self = StObject.set(x, "autoUpdate", js.undefined)
+    inline def setAutoUpdateUndefined: Self = StObject.set(x, "autoUpdate", js.undefined)
     
-    @scala.inline
-    def setCallbacks(value: OnContentSizeChanged): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
+    inline def setCallbacks(value: OnContentSizeChanged): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCallbacksUndefined: Self = StObject.set(x, "callbacks", js.undefined)
+    inline def setCallbacksUndefined: Self = StObject.set(x, "callbacks", js.undefined)
     
-    @scala.inline
-    def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+    inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClassNameNull: Self = StObject.set(x, "className", null)
+    inline def setClassNameNull: Self = StObject.set(x, "className", null)
     
-    @scala.inline
-    def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
+    inline def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
-    @scala.inline
-    def setClipAlways(value: Boolean): Self = StObject.set(x, "clipAlways", value.asInstanceOf[js.Any])
+    inline def setClipAlways(value: Boolean): Self = StObject.set(x, "clipAlways", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClipAlwaysUndefined: Self = StObject.set(x, "clipAlways", js.undefined)
+    inline def setClipAlwaysUndefined: Self = StObject.set(x, "clipAlways", js.undefined)
     
-    @scala.inline
-    def setNativeScrollbarsOverlaid(value: Initialize): Self = StObject.set(x, "nativeScrollbarsOverlaid", value.asInstanceOf[js.Any])
+    inline def setNativeScrollbarsOverlaid(value: Initialize): Self = StObject.set(x, "nativeScrollbarsOverlaid", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNativeScrollbarsOverlaidUndefined: Self = StObject.set(x, "nativeScrollbarsOverlaid", js.undefined)
+    inline def setNativeScrollbarsOverlaidUndefined: Self = StObject.set(x, "nativeScrollbarsOverlaid", js.undefined)
     
-    @scala.inline
-    def setNormalizeRTL(value: Boolean): Self = StObject.set(x, "normalizeRTL", value.asInstanceOf[js.Any])
+    inline def setNormalizeRTL(value: Boolean): Self = StObject.set(x, "normalizeRTL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNormalizeRTLUndefined: Self = StObject.set(x, "normalizeRTL", js.undefined)
+    inline def setNormalizeRTLUndefined: Self = StObject.set(x, "normalizeRTL", js.undefined)
     
-    @scala.inline
-    def setOverflowBehavior(value: `0`): Self = StObject.set(x, "overflowBehavior", value.asInstanceOf[js.Any])
+    inline def setOverflowBehavior(value: `0`): Self = StObject.set(x, "overflowBehavior", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOverflowBehaviorUndefined: Self = StObject.set(x, "overflowBehavior", js.undefined)
+    inline def setOverflowBehaviorUndefined: Self = StObject.set(x, "overflowBehavior", js.undefined)
     
-    @scala.inline
-    def setPaddingAbsolute(value: Boolean): Self = StObject.set(x, "paddingAbsolute", value.asInstanceOf[js.Any])
+    inline def setPaddingAbsolute(value: Boolean): Self = StObject.set(x, "paddingAbsolute", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPaddingAbsoluteUndefined: Self = StObject.set(x, "paddingAbsolute", js.undefined)
+    inline def setPaddingAbsoluteUndefined: Self = StObject.set(x, "paddingAbsolute", js.undefined)
     
-    @scala.inline
-    def setResize(value: ResizeBehavior): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
+    inline def setResize(value: ResizeBehavior): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
+    inline def setResizeUndefined: Self = StObject.set(x, "resize", js.undefined)
     
-    @scala.inline
-    def setScrollbars(value: AutoHide): Self = StObject.set(x, "scrollbars", value.asInstanceOf[js.Any])
+    inline def setScrollbars(value: AutoHide): Self = StObject.set(x, "scrollbars", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScrollbarsUndefined: Self = StObject.set(x, "scrollbars", js.undefined)
+    inline def setScrollbarsUndefined: Self = StObject.set(x, "scrollbars", js.undefined)
     
-    @scala.inline
-    def setSizeAutoCapable(value: Boolean): Self = StObject.set(x, "sizeAutoCapable", value.asInstanceOf[js.Any])
+    inline def setSizeAutoCapable(value: Boolean): Self = StObject.set(x, "sizeAutoCapable", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeAutoCapableUndefined: Self = StObject.set(x, "sizeAutoCapable", js.undefined)
+    inline def setSizeAutoCapableUndefined: Self = StObject.set(x, "sizeAutoCapable", js.undefined)
     
-    @scala.inline
-    def setTextarea(value: DynHeight): Self = StObject.set(x, "textarea", value.asInstanceOf[js.Any])
+    inline def setTextarea(value: DynHeight): Self = StObject.set(x, "textarea", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextareaUndefined: Self = StObject.set(x, "textarea", js.undefined)
+    inline def setTextareaUndefined: Self = StObject.set(x, "textarea", js.undefined)
     
-    @scala.inline
-    def setUpdateOnLoad(value: String | js.Array[String]): Self = StObject.set(x, "updateOnLoad", value.asInstanceOf[js.Any])
+    inline def setUpdateOnLoad(value: String | js.Array[String]): Self = StObject.set(x, "updateOnLoad", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateOnLoadNull: Self = StObject.set(x, "updateOnLoad", null)
+    inline def setUpdateOnLoadNull: Self = StObject.set(x, "updateOnLoad", null)
     
-    @scala.inline
-    def setUpdateOnLoadUndefined: Self = StObject.set(x, "updateOnLoad", js.undefined)
+    inline def setUpdateOnLoadUndefined: Self = StObject.set(x, "updateOnLoad", js.undefined)
     
-    @scala.inline
-    def setUpdateOnLoadVarargs(value: String*): Self = StObject.set(x, "updateOnLoad", js.Array(value :_*))
+    inline def setUpdateOnLoadVarargs(value: String*): Self = StObject.set(x, "updateOnLoad", js.Array(value :_*))
   }
 }

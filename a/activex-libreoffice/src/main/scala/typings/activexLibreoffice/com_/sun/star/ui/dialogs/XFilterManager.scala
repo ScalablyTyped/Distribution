@@ -40,8 +40,7 @@ trait XFilterManager
 }
 object XFilterManager {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CurrentFilter: String,
     acquire: () => Unit,
     appendFilter: (String, String) => Unit,
@@ -54,19 +53,14 @@ object XFilterManager {
     __obj.asInstanceOf[XFilterManager]
   }
   
-  @scala.inline
-  implicit class XFilterManagerMutableBuilder[Self <: XFilterManager] (val x: Self) extends AnyVal {
+  extension [Self <: XFilterManager](x: Self) {
     
-    @scala.inline
-    def setAppendFilter(value: (String, String) => Unit): Self = StObject.set(x, "appendFilter", js.Any.fromFunction2(value))
+    inline def setAppendFilter(value: (String, String) => Unit): Self = StObject.set(x, "appendFilter", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setCurrentFilter(value: String): Self = StObject.set(x, "CurrentFilter", value.asInstanceOf[js.Any])
+    inline def setCurrentFilter(value: String): Self = StObject.set(x, "CurrentFilter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetCurrentFilter(value: () => String): Self = StObject.set(x, "getCurrentFilter", js.Any.fromFunction0(value))
+    inline def setGetCurrentFilter(value: () => String): Self = StObject.set(x, "getCurrentFilter", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetCurrentFilter(value: String => Unit): Self = StObject.set(x, "setCurrentFilter", js.Any.fromFunction1(value))
+    inline def setSetCurrentFilter(value: String => Unit): Self = StObject.set(x, "setCurrentFilter", js.Any.fromFunction1(value))
   }
 }

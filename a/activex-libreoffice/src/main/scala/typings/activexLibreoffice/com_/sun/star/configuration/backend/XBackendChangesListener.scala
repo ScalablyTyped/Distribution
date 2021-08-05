@@ -23,8 +23,7 @@ trait XBackendChangesListener
 }
 object XBackendChangesListener {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     acquire: () => Unit,
     componentDataChanged: ComponentChangeEvent => Unit,
     disposing: EventObject => Unit,
@@ -35,10 +34,8 @@ object XBackendChangesListener {
     __obj.asInstanceOf[XBackendChangesListener]
   }
   
-  @scala.inline
-  implicit class XBackendChangesListenerMutableBuilder[Self <: XBackendChangesListener] (val x: Self) extends AnyVal {
+  extension [Self <: XBackendChangesListener](x: Self) {
     
-    @scala.inline
-    def setComponentDataChanged(value: ComponentChangeEvent => Unit): Self = StObject.set(x, "componentDataChanged", js.Any.fromFunction1(value))
+    inline def setComponentDataChanged(value: ComponentChangeEvent => Unit): Self = StObject.set(x, "componentDataChanged", js.Any.fromFunction1(value))
   }
 }

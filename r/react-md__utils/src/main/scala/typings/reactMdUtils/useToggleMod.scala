@@ -12,10 +12,8 @@ object useToggleMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def useToggle(defaultToggled: js.Function0[Boolean]): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useToggle")(defaultToggled.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
-  @scala.inline
-  def useToggle(defaultToggled: Boolean): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useToggle")(defaultToggled.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
+  inline def useToggle(defaultToggled: js.Function0[Boolean]): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useToggle")(defaultToggled.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
+  inline def useToggle(defaultToggled: Boolean): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useToggle")(defaultToggled.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
   
   type Disable = js.Function0[Unit]
   

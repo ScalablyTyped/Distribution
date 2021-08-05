@@ -31,25 +31,19 @@ trait ASPxClientDashboardItemDataDelta extends StObject {
 }
 object ASPxClientDashboardItemDataDelta {
   
-  @scala.inline
-  def apply(ActualMeasureId: String, Id: String, Name: String, TargetMeasureId: String): ASPxClientDashboardItemDataDelta = {
+  inline def apply(ActualMeasureId: String, Id: String, Name: String, TargetMeasureId: String): ASPxClientDashboardItemDataDelta = {
     val __obj = js.Dynamic.literal(ActualMeasureId = ActualMeasureId.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], TargetMeasureId = TargetMeasureId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ASPxClientDashboardItemDataDelta]
   }
   
-  @scala.inline
-  implicit class ASPxClientDashboardItemDataDeltaMutableBuilder[Self <: ASPxClientDashboardItemDataDelta] (val x: Self) extends AnyVal {
+  extension [Self <: ASPxClientDashboardItemDataDelta](x: Self) {
     
-    @scala.inline
-    def setActualMeasureId(value: String): Self = StObject.set(x, "ActualMeasureId", value.asInstanceOf[js.Any])
+    inline def setActualMeasureId(value: String): Self = StObject.set(x, "ActualMeasureId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetMeasureId(value: String): Self = StObject.set(x, "TargetMeasureId", value.asInstanceOf[js.Any])
+    inline def setTargetMeasureId(value: String): Self = StObject.set(x, "TargetMeasureId", value.asInstanceOf[js.Any])
   }
 }

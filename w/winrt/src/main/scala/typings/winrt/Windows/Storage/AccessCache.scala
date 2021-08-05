@@ -48,20 +48,16 @@ object AccessCache {
   }
   object AccessListEntry {
     
-    @scala.inline
-    def apply(metadata: String, token: String): AccessListEntry = {
+    inline def apply(metadata: String, token: String): AccessListEntry = {
       val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[AccessListEntry]
     }
     
-    @scala.inline
-    implicit class AccessListEntryMutableBuilder[Self <: AccessListEntry] (val x: Self) extends AnyVal {
+    extension [Self <: AccessListEntry](x: Self) {
       
-      @scala.inline
-      def setMetadata(value: String): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: String): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+      inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
   }
   
@@ -76,17 +72,14 @@ object AccessCache {
   }
   object IItemRemovedEventArgs {
     
-    @scala.inline
-    def apply(removedEntry: AccessListEntry): IItemRemovedEventArgs = {
+    inline def apply(removedEntry: AccessListEntry): IItemRemovedEventArgs = {
       val __obj = js.Dynamic.literal(removedEntry = removedEntry.asInstanceOf[js.Any])
       __obj.asInstanceOf[IItemRemovedEventArgs]
     }
     
-    @scala.inline
-    implicit class IItemRemovedEventArgsMutableBuilder[Self <: IItemRemovedEventArgs] (val x: Self) extends AnyVal {
+    extension [Self <: IItemRemovedEventArgs](x: Self) {
       
-      @scala.inline
-      def setRemovedEntry(value: AccessListEntry): Self = StObject.set(x, "removedEntry", value.asInstanceOf[js.Any])
+      inline def setRemovedEntry(value: AccessListEntry): Self = StObject.set(x, "removedEntry", value.asInstanceOf[js.Any])
     }
   }
   
@@ -98,20 +91,16 @@ object AccessCache {
   }
   object IStorageApplicationPermissionsStatics {
     
-    @scala.inline
-    def apply(futureAccessList: StorageItemAccessList, mostRecentlyUsedList: StorageItemMostRecentlyUsedList): IStorageApplicationPermissionsStatics = {
+    inline def apply(futureAccessList: StorageItemAccessList, mostRecentlyUsedList: StorageItemMostRecentlyUsedList): IStorageApplicationPermissionsStatics = {
       val __obj = js.Dynamic.literal(futureAccessList = futureAccessList.asInstanceOf[js.Any], mostRecentlyUsedList = mostRecentlyUsedList.asInstanceOf[js.Any])
       __obj.asInstanceOf[IStorageApplicationPermissionsStatics]
     }
     
-    @scala.inline
-    implicit class IStorageApplicationPermissionsStaticsMutableBuilder[Self <: IStorageApplicationPermissionsStatics] (val x: Self) extends AnyVal {
+    extension [Self <: IStorageApplicationPermissionsStatics](x: Self) {
       
-      @scala.inline
-      def setFutureAccessList(value: StorageItemAccessList): Self = StObject.set(x, "futureAccessList", value.asInstanceOf[js.Any])
+      inline def setFutureAccessList(value: StorageItemAccessList): Self = StObject.set(x, "futureAccessList", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMostRecentlyUsedList(value: StorageItemMostRecentlyUsedList): Self = StObject.set(x, "mostRecentlyUsedList", value.asInstanceOf[js.Any])
+      inline def setMostRecentlyUsedList(value: StorageItemMostRecentlyUsedList): Self = StObject.set(x, "mostRecentlyUsedList", value.asInstanceOf[js.Any])
     }
   }
   
@@ -159,8 +148,7 @@ object AccessCache {
        with IItemRemovedEventArgs
   object ItemRemovedEventArgs {
     
-    @scala.inline
-    def apply(removedEntry: AccessListEntry): ItemRemovedEventArgs = {
+    inline def apply(removedEntry: AccessListEntry): ItemRemovedEventArgs = {
       val __obj = js.Dynamic.literal(removedEntry = removedEntry.asInstanceOf[js.Any])
       __obj.asInstanceOf[ItemRemovedEventArgs]
     }

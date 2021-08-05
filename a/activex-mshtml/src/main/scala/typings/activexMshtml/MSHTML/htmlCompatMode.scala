@@ -15,12 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait htmlCompatMode extends StObject
 object htmlCompatMode {
   
-  @scala.inline
-  def htmlCompatModeBackCompat: `0` = 0.asInstanceOf[`0`]
+  inline def htmlCompatModeBackCompat: `0` = 0.asInstanceOf[`0`]
   
-  @scala.inline
-  def htmlCompatModeCSS1Compat: `1` = 1.asInstanceOf[`1`]
+  inline def htmlCompatModeCSS1Compat: `1` = 1.asInstanceOf[`1`]
   
-  @scala.inline
-  def htmlCompatMode_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
+  inline def htmlCompatMode_Max: `2147483647` = 2147483647.asInstanceOf[`2147483647`]
 }

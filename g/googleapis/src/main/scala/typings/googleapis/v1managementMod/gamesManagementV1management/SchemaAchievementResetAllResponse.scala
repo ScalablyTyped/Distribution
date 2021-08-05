@@ -22,28 +22,21 @@ trait SchemaAchievementResetAllResponse extends StObject {
 }
 object SchemaAchievementResetAllResponse {
   
-  @scala.inline
-  def apply(): SchemaAchievementResetAllResponse = {
+  inline def apply(): SchemaAchievementResetAllResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAchievementResetAllResponse]
   }
   
-  @scala.inline
-  implicit class SchemaAchievementResetAllResponseMutableBuilder[Self <: SchemaAchievementResetAllResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAchievementResetAllResponse](x: Self) {
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setResults(value: js.Array[SchemaAchievementResetResponse]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+    inline def setResults(value: js.Array[SchemaAchievementResetResponse]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
+    inline def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
     
-    @scala.inline
-    def setResultsVarargs(value: SchemaAchievementResetResponse*): Self = StObject.set(x, "results", js.Array(value :_*))
+    inline def setResultsVarargs(value: SchemaAchievementResetResponse*): Self = StObject.set(x, "results", js.Array(value :_*))
   }
 }

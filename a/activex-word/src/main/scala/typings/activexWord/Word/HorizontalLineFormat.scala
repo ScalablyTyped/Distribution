@@ -20,13 +20,12 @@ trait HorizontalLineFormat extends StObject {
   
   var WidthType: WdHorizontalLineWidthType
   
-  @JSName("Word.HorizontalLineFormat_typekey")
+  /* private */ @JSName("Word.HorizontalLineFormat_typekey")
   var WordDotHorizontalLineFormat_typekey: HorizontalLineFormat
 }
 object HorizontalLineFormat {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Alignment: WdHorizontalLineAlignment,
     Application: Application,
     Creator: Double,
@@ -41,31 +40,22 @@ object HorizontalLineFormat {
     __obj.asInstanceOf[HorizontalLineFormat]
   }
   
-  @scala.inline
-  implicit class HorizontalLineFormatMutableBuilder[Self <: HorizontalLineFormat] (val x: Self) extends AnyVal {
+  extension [Self <: HorizontalLineFormat](x: Self) {
     
-    @scala.inline
-    def setAlignment(value: WdHorizontalLineAlignment): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
+    inline def setAlignment(value: WdHorizontalLineAlignment): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    inline def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoShade(value: Boolean): Self = StObject.set(x, "NoShade", value.asInstanceOf[js.Any])
+    inline def setNoShade(value: Boolean): Self = StObject.set(x, "NoShade", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    inline def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPercentWidth(value: Double): Self = StObject.set(x, "PercentWidth", value.asInstanceOf[js.Any])
+    inline def setPercentWidth(value: Double): Self = StObject.set(x, "PercentWidth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWidthType(value: WdHorizontalLineWidthType): Self = StObject.set(x, "WidthType", value.asInstanceOf[js.Any])
+    inline def setWidthType(value: WdHorizontalLineWidthType): Self = StObject.set(x, "WidthType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWordDotHorizontalLineFormat_typekey(value: HorizontalLineFormat): Self = StObject.set(x, "Word.HorizontalLineFormat_typekey", value.asInstanceOf[js.Any])
+    inline def setWordDotHorizontalLineFormat_typekey(value: HorizontalLineFormat): Self = StObject.set(x, "Word.HorizontalLineFormat_typekey", value.asInstanceOf[js.Any])
   }
 }

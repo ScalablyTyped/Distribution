@@ -21,20 +21,16 @@ object typesChannelsResponseMod {
   }
   object ChannelsResponse {
     
-    @scala.inline
-    def apply(): ChannelsResponse = {
+    inline def apply(): ChannelsResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ChannelsResponse]
     }
     
-    @scala.inline
-    implicit class ChannelsResponseMutableBuilder[Self <: ChannelsResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ChannelsResponse](x: Self) {
       
-      @scala.inline
-      def setChannels(value: StringDictionary[ChannelResponse] | (Iterable[js.Tuple2[String, ChannelResponse]])): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
+      inline def setChannels(value: StringDictionary[ChannelResponse] | (Iterable[js.Tuple2[String, ChannelResponse]])): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelsUndefined: Self = StObject.set(x, "Channels", js.undefined)
+      inline def setChannelsUndefined: Self = StObject.set(x, "Channels", js.undefined)
     }
   }
   
@@ -50,20 +46,16 @@ object typesChannelsResponseMod {
   }
   object UnmarshalledChannelsResponse {
     
-    @scala.inline
-    def apply(): UnmarshalledChannelsResponse = {
+    inline def apply(): UnmarshalledChannelsResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnmarshalledChannelsResponse]
     }
     
-    @scala.inline
-    implicit class UnmarshalledChannelsResponseMutableBuilder[Self <: UnmarshalledChannelsResponse] (val x: Self) extends AnyVal {
+    extension [Self <: UnmarshalledChannelsResponse](x: Self) {
       
-      @scala.inline
-      def setChannels(value: StringDictionary[UnmarshalledChannelResponse]): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
+      inline def setChannels(value: StringDictionary[UnmarshalledChannelResponse]): Self = StObject.set(x, "Channels", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChannelsUndefined: Self = StObject.set(x, "Channels", js.undefined)
+      inline def setChannelsUndefined: Self = StObject.set(x, "Channels", js.undefined)
     }
   }
 }

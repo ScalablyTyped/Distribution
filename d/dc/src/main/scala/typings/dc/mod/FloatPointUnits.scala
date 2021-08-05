@@ -10,16 +10,13 @@ trait FloatPointUnits extends StObject {
 }
 object FloatPointUnits {
   
-  @scala.inline
-  def apply(precision: Double => UnitFunction): FloatPointUnits = {
+  inline def apply(precision: Double => UnitFunction): FloatPointUnits = {
     val __obj = js.Dynamic.literal(precision = js.Any.fromFunction1(precision))
     __obj.asInstanceOf[FloatPointUnits]
   }
   
-  @scala.inline
-  implicit class FloatPointUnitsMutableBuilder[Self <: FloatPointUnits] (val x: Self) extends AnyVal {
+  extension [Self <: FloatPointUnits](x: Self) {
     
-    @scala.inline
-    def setPrecision(value: Double => UnitFunction): Self = StObject.set(x, "precision", js.Any.fromFunction1(value))
+    inline def setPrecision(value: Double => UnitFunction): Self = StObject.set(x, "precision", js.Any.fromFunction1(value))
   }
 }

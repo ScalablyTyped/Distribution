@@ -8,7 +8,7 @@ trait BinaryExpression
   extends StObject
      with AST {
   
-  var _nodeType: js.Any
+  /* private */ var _nodeType: js.Any
   
   var left: AST
   
@@ -18,8 +18,7 @@ trait BinaryExpression
 }
 object BinaryExpression {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _astID: js.Any,
     _end: Double,
     _nodeType: js.Any,
@@ -48,19 +47,14 @@ object BinaryExpression {
     __obj.asInstanceOf[BinaryExpression]
   }
   
-  @scala.inline
-  implicit class BinaryExpressionMutableBuilder[Self <: BinaryExpression] (val x: Self) extends AnyVal {
+  extension [Self <: BinaryExpression](x: Self) {
     
-    @scala.inline
-    def setLeft(value: AST): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
+    inline def setLeft(value: AST): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRight(value: AST): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
+    inline def setRight(value: AST): Self = StObject.set(x, "right", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStructuralEquals(value: (BinaryExpression, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
+    inline def setStructuralEquals(value: (BinaryExpression, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def set_nodeType(value: js.Any): Self = StObject.set(x, "_nodeType", value.asInstanceOf[js.Any])
+    inline def set_nodeType(value: js.Any): Self = StObject.set(x, "_nodeType", value.asInstanceOf[js.Any])
   }
 }

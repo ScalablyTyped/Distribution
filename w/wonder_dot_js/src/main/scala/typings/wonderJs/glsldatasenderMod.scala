@@ -67,7 +67,6 @@ object glsldatasenderMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def create(program: Program): GLSLDataSender = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(program.asInstanceOf[js.Any]).asInstanceOf[GLSLDataSender]
+    inline def create(program: Program): GLSLDataSender = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(program.asInstanceOf[js.Any]).asInstanceOf[GLSLDataSender]
   }
 }

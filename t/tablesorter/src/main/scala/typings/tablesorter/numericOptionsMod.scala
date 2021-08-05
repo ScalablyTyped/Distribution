@@ -20,26 +20,20 @@ object numericOptionsMod {
   }
   object NumericOptions {
     
-    @scala.inline
-    def apply(): NumericOptions = {
+    inline def apply(): NumericOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NumericOptions]
     }
     
-    @scala.inline
-    implicit class NumericOptionsMutableBuilder[Self <: NumericOptions] (val x: Self) extends AnyVal {
+    extension [Self <: NumericOptions](x: Self) {
       
-      @scala.inline
-      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
+      inline def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
       
-      @scala.inline
-      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
+      inline def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
     }
   }
 }

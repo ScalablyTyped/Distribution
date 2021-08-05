@@ -12,19 +12,15 @@ trait Typ extends StObject {
 }
 object Typ {
   
-  @scala.inline
-  def apply(alg: String, typ: String): Typ = {
+  inline def apply(alg: String, typ: String): Typ = {
     val __obj = js.Dynamic.literal(alg = alg.asInstanceOf[js.Any], typ = typ.asInstanceOf[js.Any])
     __obj.asInstanceOf[Typ]
   }
   
-  @scala.inline
-  implicit class TypMutableBuilder[Self <: Typ] (val x: Self) extends AnyVal {
+  extension [Self <: Typ](x: Self) {
     
-    @scala.inline
-    def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
+    inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTyp(value: String): Self = StObject.set(x, "typ", value.asInstanceOf[js.Any])
+    inline def setTyp(value: String): Self = StObject.set(x, "typ", value.asInstanceOf[js.Any])
   }
 }

@@ -19,34 +19,25 @@ trait Compression extends StObject {
 }
 object Compression {
   
-  @scala.inline
-  def apply(): Compression = {
+  inline def apply(): Compression = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Compression]
   }
   
-  @scala.inline
-  implicit class CompressionMutableBuilder[Self <: Compression] (val x: Self) extends AnyVal {
+  extension [Self <: Compression](x: Self) {
     
-    @scala.inline
-    def setCompression(value: EnumDWTTIFFCompressionType | Double): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
+    inline def setCompression(value: EnumDWTTIFFCompressionType | Double): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
+    inline def setCompressionUndefined: Self = StObject.set(x, "compression", js.undefined)
     
-    @scala.inline
-    def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
+    inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
+    inline def setQualityUndefined: Self = StObject.set(x, "quality", js.undefined)
     
-    @scala.inline
-    def setTiffTags(value: js.Array[TiffTag]): Self = StObject.set(x, "tiffTags", value.asInstanceOf[js.Any])
+    inline def setTiffTags(value: js.Array[TiffTag]): Self = StObject.set(x, "tiffTags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTiffTagsUndefined: Self = StObject.set(x, "tiffTags", js.undefined)
+    inline def setTiffTagsUndefined: Self = StObject.set(x, "tiffTags", js.undefined)
     
-    @scala.inline
-    def setTiffTagsVarargs(value: TiffTag*): Self = StObject.set(x, "tiffTags", js.Array(value :_*))
+    inline def setTiffTagsVarargs(value: TiffTag*): Self = StObject.set(x, "tiffTags", js.Array(value :_*))
   }
 }

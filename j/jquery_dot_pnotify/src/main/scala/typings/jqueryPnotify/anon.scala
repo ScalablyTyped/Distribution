@@ -16,32 +16,24 @@ object anon {
   }
   object Close {
     
-    @scala.inline
-    def apply(): Close = {
+    inline def apply(): Close = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Close]
     }
     
-    @scala.inline
-    implicit class CloseMutableBuilder[Self <: Close] (val x: Self) extends AnyVal {
+    extension [Self <: Close](x: Self) {
       
-      @scala.inline
-      def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+      inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
+      inline def setCloseUndefined: Self = StObject.set(x, "close", js.undefined)
       
-      @scala.inline
-      def setStick(value: String): Self = StObject.set(x, "stick", value.asInstanceOf[js.Any])
+      inline def setStick(value: String): Self = StObject.set(x, "stick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStickUndefined: Self = StObject.set(x, "stick", js.undefined)
+      inline def setStickUndefined: Self = StObject.set(x, "stick", js.undefined)
       
-      @scala.inline
-      def setUnstick(value: String): Self = StObject.set(x, "unstick", value.asInstanceOf[js.Any])
+      inline def setUnstick(value: String): Self = StObject.set(x, "unstick", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnstickUndefined: Self = StObject.set(x, "unstick", js.undefined)
+      inline def setUnstickUndefined: Self = StObject.set(x, "unstick", js.undefined)
     }
   }
   
@@ -55,32 +47,24 @@ object anon {
   }
   object Closer {
     
-    @scala.inline
-    def apply(): Closer = {
+    inline def apply(): Closer = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Closer]
     }
     
-    @scala.inline
-    implicit class CloserMutableBuilder[Self <: Closer] (val x: Self) extends AnyVal {
+    extension [Self <: Closer](x: Self) {
       
-      @scala.inline
-      def setCloser(value: String): Self = StObject.set(x, "closer", value.asInstanceOf[js.Any])
+      inline def setCloser(value: String): Self = StObject.set(x, "closer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloserUndefined: Self = StObject.set(x, "closer", js.undefined)
+      inline def setCloserUndefined: Self = StObject.set(x, "closer", js.undefined)
       
-      @scala.inline
-      def setPin_down(value: String): Self = StObject.set(x, "pin_down", value.asInstanceOf[js.Any])
+      inline def setPin_down(value: String): Self = StObject.set(x, "pin_down", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPin_downUndefined: Self = StObject.set(x, "pin_down", js.undefined)
+      inline def setPin_downUndefined: Self = StObject.set(x, "pin_down", js.undefined)
       
-      @scala.inline
-      def setPin_up(value: String): Self = StObject.set(x, "pin_up", value.asInstanceOf[js.Any])
+      inline def setPin_up(value: String): Self = StObject.set(x, "pin_up", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPin_upUndefined: Self = StObject.set(x, "pin_up", js.undefined)
+      inline def setPin_upUndefined: Self = StObject.set(x, "pin_up", js.undefined)
     }
   }
   
@@ -108,38 +92,28 @@ object anon {
   }
   object Closerhover {
     
-    @scala.inline
-    def apply(): Closerhover = {
+    inline def apply(): Closerhover = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Closerhover]
     }
     
-    @scala.inline
-    implicit class CloserhoverMutableBuilder[Self <: Closerhover] (val x: Self) extends AnyVal {
+    extension [Self <: Closerhover](x: Self) {
       
-      @scala.inline
-      def setCloser(value: Boolean): Self = StObject.set(x, "closer", value.asInstanceOf[js.Any])
+      inline def setCloser(value: Boolean): Self = StObject.set(x, "closer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloserUndefined: Self = StObject.set(x, "closer", js.undefined)
+      inline def setCloserUndefined: Self = StObject.set(x, "closer", js.undefined)
       
-      @scala.inline
-      def setCloser_hover(value: Boolean): Self = StObject.set(x, "closer_hover", value.asInstanceOf[js.Any])
+      inline def setCloser_hover(value: Boolean): Self = StObject.set(x, "closer_hover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCloser_hoverUndefined: Self = StObject.set(x, "closer_hover", js.undefined)
+      inline def setCloser_hoverUndefined: Self = StObject.set(x, "closer_hover", js.undefined)
       
-      @scala.inline
-      def setSticker(value: Boolean): Self = StObject.set(x, "sticker", value.asInstanceOf[js.Any])
+      inline def setSticker(value: Boolean): Self = StObject.set(x, "sticker", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStickerUndefined: Self = StObject.set(x, "sticker", js.undefined)
+      inline def setStickerUndefined: Self = StObject.set(x, "sticker", js.undefined)
       
-      @scala.inline
-      def setSticker_hover(value: Boolean): Self = StObject.set(x, "sticker_hover", value.asInstanceOf[js.Any])
+      inline def setSticker_hover(value: Boolean): Self = StObject.set(x, "sticker_hover", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSticker_hoverUndefined: Self = StObject.set(x, "sticker_hover", js.undefined)
+      inline def setSticker_hoverUndefined: Self = StObject.set(x, "sticker_hover", js.undefined)
     }
   }
   
@@ -157,26 +131,20 @@ object anon {
   }
   object Nonblock {
     
-    @scala.inline
-    def apply(): Nonblock = {
+    inline def apply(): Nonblock = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Nonblock]
     }
     
-    @scala.inline
-    implicit class NonblockMutableBuilder[Self <: Nonblock] (val x: Self) extends AnyVal {
+    extension [Self <: Nonblock](x: Self) {
       
-      @scala.inline
-      def setNonblock(value: Boolean): Self = StObject.set(x, "nonblock", value.asInstanceOf[js.Any])
+      inline def setNonblock(value: Boolean): Self = StObject.set(x, "nonblock", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonblockUndefined: Self = StObject.set(x, "nonblock", js.undefined)
+      inline def setNonblockUndefined: Self = StObject.set(x, "nonblock", js.undefined)
       
-      @scala.inline
-      def setNonblock_opacity(value: Double): Self = StObject.set(x, "nonblock_opacity", value.asInstanceOf[js.Any])
+      inline def setNonblock_opacity(value: Double): Self = StObject.set(x, "nonblock_opacity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNonblock_opacityUndefined: Self = StObject.set(x, "nonblock_opacity", js.undefined)
+      inline def setNonblock_opacityUndefined: Self = StObject.set(x, "nonblock_opacity", js.undefined)
     }
   }
 }

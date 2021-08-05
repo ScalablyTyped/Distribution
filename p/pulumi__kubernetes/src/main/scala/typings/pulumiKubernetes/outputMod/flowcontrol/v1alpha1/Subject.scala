@@ -22,25 +22,19 @@ trait Subject extends StObject {
 }
 object Subject {
   
-  @scala.inline
-  def apply(group: GroupSubject, kind: String, serviceAccount: ServiceAccountSubject, user: UserSubject): Subject = {
+  inline def apply(group: GroupSubject, kind: String, serviceAccount: ServiceAccountSubject, user: UserSubject): Subject = {
     val __obj = js.Dynamic.literal(group = group.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], serviceAccount = serviceAccount.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any])
     __obj.asInstanceOf[Subject]
   }
   
-  @scala.inline
-  implicit class SubjectMutableBuilder[Self <: Subject] (val x: Self) extends AnyVal {
+  extension [Self <: Subject](x: Self) {
     
-    @scala.inline
-    def setGroup(value: GroupSubject): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+    inline def setGroup(value: GroupSubject): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccount(value: ServiceAccountSubject): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
+    inline def setServiceAccount(value: ServiceAccountSubject): Self = StObject.set(x, "serviceAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUser(value: UserSubject): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+    inline def setUser(value: UserSubject): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
   }
 }

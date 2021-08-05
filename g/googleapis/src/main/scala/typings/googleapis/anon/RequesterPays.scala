@@ -10,19 +10,15 @@ trait RequesterPays extends StObject {
 }
 object RequesterPays {
   
-  @scala.inline
-  def apply(): RequesterPays = {
+  inline def apply(): RequesterPays = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[RequesterPays]
   }
   
-  @scala.inline
-  implicit class RequesterPaysMutableBuilder[Self <: RequesterPays] (val x: Self) extends AnyVal {
+  extension [Self <: RequesterPays](x: Self) {
     
-    @scala.inline
-    def setRequesterPays(value: Boolean): Self = StObject.set(x, "requesterPays", value.asInstanceOf[js.Any])
+    inline def setRequesterPays(value: Boolean): Self = StObject.set(x, "requesterPays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequesterPaysUndefined: Self = StObject.set(x, "requesterPays", js.undefined)
+    inline def setRequesterPaysUndefined: Self = StObject.set(x, "requesterPays", js.undefined)
   }
 }

@@ -22,20 +22,16 @@ object unorderedListUnorderedListMod extends Shortcut {
   }
   object UnorderedListProps {
     
-    @scala.inline
-    def apply(): UnorderedListProps = {
+    inline def apply(): UnorderedListProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[UnorderedListProps]
     }
     
-    @scala.inline
-    implicit class UnorderedListPropsMutableBuilder[Self <: UnorderedListProps] (val x: Self) extends AnyVal {
+    extension [Self <: UnorderedListProps](x: Self) {
       
-      @scala.inline
-      def setNested(value: Boolean): Self = StObject.set(x, "nested", value.asInstanceOf[js.Any])
+      inline def setNested(value: Boolean): Self = StObject.set(x, "nested", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNestedUndefined: Self = StObject.set(x, "nested", js.undefined)
+      inline def setNestedUndefined: Self = StObject.set(x, "nested", js.undefined)
     }
   }
   

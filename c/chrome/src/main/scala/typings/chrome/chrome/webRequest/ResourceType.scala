@@ -22,42 +22,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ResourceType extends StObject
 object ResourceType {
   
-  @scala.inline
-  def csp_report: typings.chrome.chromeStrings.csp_report = "csp_report".asInstanceOf[typings.chrome.chromeStrings.csp_report]
+  inline def csp_report: typings.chrome.chromeStrings.csp_report = "csp_report".asInstanceOf[typings.chrome.chromeStrings.csp_report]
   
-  @scala.inline
-  def font: typings.chrome.chromeStrings.font = "font".asInstanceOf[typings.chrome.chromeStrings.font]
+  inline def font: typings.chrome.chromeStrings.font = "font".asInstanceOf[typings.chrome.chromeStrings.font]
   
-  @scala.inline
-  def image: typings.chrome.chromeStrings.image = "image".asInstanceOf[typings.chrome.chromeStrings.image]
+  inline def image: typings.chrome.chromeStrings.image = "image".asInstanceOf[typings.chrome.chromeStrings.image]
   
-  @scala.inline
-  def main_frame: typings.chrome.chromeStrings.main_frame = "main_frame".asInstanceOf[typings.chrome.chromeStrings.main_frame]
+  inline def main_frame: typings.chrome.chromeStrings.main_frame = "main_frame".asInstanceOf[typings.chrome.chromeStrings.main_frame]
   
-  @scala.inline
-  def media: typings.chrome.chromeStrings.media = "media".asInstanceOf[typings.chrome.chromeStrings.media]
+  inline def media: typings.chrome.chromeStrings.media = "media".asInstanceOf[typings.chrome.chromeStrings.media]
   
-  @scala.inline
-  def `object`: typings.chrome.chromeStrings.`object` = "object".asInstanceOf[typings.chrome.chromeStrings.`object`]
+  inline def `object`: typings.chrome.chromeStrings.`object` = "object".asInstanceOf[typings.chrome.chromeStrings.`object`]
   
-  @scala.inline
-  def other: typings.chrome.chromeStrings.other = "other".asInstanceOf[typings.chrome.chromeStrings.other]
+  inline def other: typings.chrome.chromeStrings.other = "other".asInstanceOf[typings.chrome.chromeStrings.other]
   
-  @scala.inline
-  def ping: typings.chrome.chromeStrings.ping = "ping".asInstanceOf[typings.chrome.chromeStrings.ping]
+  inline def ping: typings.chrome.chromeStrings.ping = "ping".asInstanceOf[typings.chrome.chromeStrings.ping]
   
-  @scala.inline
-  def script: typings.chrome.chromeStrings.script = "script".asInstanceOf[typings.chrome.chromeStrings.script]
+  inline def script: typings.chrome.chromeStrings.script = "script".asInstanceOf[typings.chrome.chromeStrings.script]
   
-  @scala.inline
-  def stylesheet: typings.chrome.chromeStrings.stylesheet = "stylesheet".asInstanceOf[typings.chrome.chromeStrings.stylesheet]
+  inline def stylesheet: typings.chrome.chromeStrings.stylesheet = "stylesheet".asInstanceOf[typings.chrome.chromeStrings.stylesheet]
   
-  @scala.inline
-  def sub_frame: typings.chrome.chromeStrings.sub_frame = "sub_frame".asInstanceOf[typings.chrome.chromeStrings.sub_frame]
+  inline def sub_frame: typings.chrome.chromeStrings.sub_frame = "sub_frame".asInstanceOf[typings.chrome.chromeStrings.sub_frame]
   
-  @scala.inline
-  def websocket: typings.chrome.chromeStrings.websocket = "websocket".asInstanceOf[typings.chrome.chromeStrings.websocket]
+  inline def websocket: typings.chrome.chromeStrings.websocket = "websocket".asInstanceOf[typings.chrome.chromeStrings.websocket]
   
-  @scala.inline
-  def xmlhttprequest: typings.chrome.chromeStrings.xmlhttprequest = "xmlhttprequest".asInstanceOf[typings.chrome.chromeStrings.xmlhttprequest]
+  inline def xmlhttprequest: typings.chrome.chromeStrings.xmlhttprequest = "xmlhttprequest".asInstanceOf[typings.chrome.chromeStrings.xmlhttprequest]
 }

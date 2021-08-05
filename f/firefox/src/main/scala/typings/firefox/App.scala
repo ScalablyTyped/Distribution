@@ -24,8 +24,7 @@ trait App extends StObject {
 }
 object App {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     checkForUpdate: () => DOMRequest[js.Any],
     installOrigin: String,
     installTime: Double,
@@ -39,34 +38,24 @@ object App {
     __obj.asInstanceOf[App]
   }
   
-  @scala.inline
-  implicit class AppMutableBuilder[Self <: App] (val x: Self) extends AnyVal {
+  extension [Self <: App](x: Self) {
     
-    @scala.inline
-    def setCheckForUpdate(value: () => DOMRequest[js.Any]): Self = StObject.set(x, "checkForUpdate", js.Any.fromFunction0(value))
+    inline def setCheckForUpdate(value: () => DOMRequest[js.Any]): Self = StObject.set(x, "checkForUpdate", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setInstallOrigin(value: String): Self = StObject.set(x, "installOrigin", value.asInstanceOf[js.Any])
+    inline def setInstallOrigin(value: String): Self = StObject.set(x, "installOrigin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInstallTime(value: Double): Self = StObject.set(x, "installTime", value.asInstanceOf[js.Any])
+    inline def setInstallTime(value: Double): Self = StObject.set(x, "installTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLaunch(value: () => Unit): Self = StObject.set(x, "launch", js.Any.fromFunction0(value))
+    inline def setLaunch(value: () => Unit): Self = StObject.set(x, "launch", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setManifest(value: js.Any): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
+    inline def setManifest(value: js.Any): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setManifestURL(value: String): Self = StObject.set(x, "manifestURL", value.asInstanceOf[js.Any])
+    inline def setManifestURL(value: String): Self = StObject.set(x, "manifestURL", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
+    inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceipts(value: js.Array[js.Any]): Self = StObject.set(x, "receipts", value.asInstanceOf[js.Any])
+    inline def setReceipts(value: js.Array[js.Any]): Self = StObject.set(x, "receipts", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceiptsVarargs(value: js.Any*): Self = StObject.set(x, "receipts", js.Array(value :_*))
+    inline def setReceiptsVarargs(value: js.Any*): Self = StObject.set(x, "receipts", js.Array(value :_*))
   }
 }

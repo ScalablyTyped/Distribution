@@ -38,8 +38,7 @@ trait ProcessingS3Input extends StObject {
 }
 object ProcessingS3Input {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     LocalPath: ProcessingLocalPath,
     S3DataType: ProcessingS3DataType,
     S3InputMode: ProcessingS3InputMode,
@@ -49,31 +48,22 @@ object ProcessingS3Input {
     __obj.asInstanceOf[ProcessingS3Input]
   }
   
-  @scala.inline
-  implicit class ProcessingS3InputMutableBuilder[Self <: ProcessingS3Input] (val x: Self) extends AnyVal {
+  extension [Self <: ProcessingS3Input](x: Self) {
     
-    @scala.inline
-    def setLocalPath(value: ProcessingLocalPath): Self = StObject.set(x, "LocalPath", value.asInstanceOf[js.Any])
+    inline def setLocalPath(value: ProcessingLocalPath): Self = StObject.set(x, "LocalPath", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3CompressionType(value: ProcessingS3CompressionType): Self = StObject.set(x, "S3CompressionType", value.asInstanceOf[js.Any])
+    inline def setS3CompressionType(value: ProcessingS3CompressionType): Self = StObject.set(x, "S3CompressionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3CompressionTypeUndefined: Self = StObject.set(x, "S3CompressionType", js.undefined)
+    inline def setS3CompressionTypeUndefined: Self = StObject.set(x, "S3CompressionType", js.undefined)
     
-    @scala.inline
-    def setS3DataDistributionType(value: ProcessingS3DataDistributionType): Self = StObject.set(x, "S3DataDistributionType", value.asInstanceOf[js.Any])
+    inline def setS3DataDistributionType(value: ProcessingS3DataDistributionType): Self = StObject.set(x, "S3DataDistributionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3DataDistributionTypeUndefined: Self = StObject.set(x, "S3DataDistributionType", js.undefined)
+    inline def setS3DataDistributionTypeUndefined: Self = StObject.set(x, "S3DataDistributionType", js.undefined)
     
-    @scala.inline
-    def setS3DataType(value: ProcessingS3DataType): Self = StObject.set(x, "S3DataType", value.asInstanceOf[js.Any])
+    inline def setS3DataType(value: ProcessingS3DataType): Self = StObject.set(x, "S3DataType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3InputMode(value: ProcessingS3InputMode): Self = StObject.set(x, "S3InputMode", value.asInstanceOf[js.Any])
+    inline def setS3InputMode(value: ProcessingS3InputMode): Self = StObject.set(x, "S3InputMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
+    inline def setS3Uri(value: S3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
   }
 }

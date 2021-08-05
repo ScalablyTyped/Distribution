@@ -64,7 +64,6 @@ object androidMod {
     @JSGlobal("android")
     @js.native
     def android: Android_ = js.native
-    @scala.inline
-    def android_=(x: Android_): Unit = js.Dynamic.global.updateDynamic("android")(x.asInstanceOf[js.Any])
+    inline def android_=(x: Android_): Unit = js.Dynamic.global.updateDynamic("android")(x.asInstanceOf[js.Any])
   }
 }

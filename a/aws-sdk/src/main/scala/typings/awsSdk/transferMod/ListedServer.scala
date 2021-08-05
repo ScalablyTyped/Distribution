@@ -43,52 +43,37 @@ trait ListedServer extends StObject {
 }
 object ListedServer {
   
-  @scala.inline
-  def apply(Arn: Arn): ListedServer = {
+  inline def apply(Arn: Arn): ListedServer = {
     val __obj = js.Dynamic.literal(Arn = Arn.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListedServer]
   }
   
-  @scala.inline
-  implicit class ListedServerMutableBuilder[Self <: ListedServer] (val x: Self) extends AnyVal {
+  extension [Self <: ListedServer](x: Self) {
     
-    @scala.inline
-    def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
+    inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointType(value: EndpointType): Self = StObject.set(x, "EndpointType", value.asInstanceOf[js.Any])
+    inline def setEndpointType(value: EndpointType): Self = StObject.set(x, "EndpointType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndpointTypeUndefined: Self = StObject.set(x, "EndpointType", js.undefined)
+    inline def setEndpointTypeUndefined: Self = StObject.set(x, "EndpointType", js.undefined)
     
-    @scala.inline
-    def setIdentityProviderType(value: IdentityProviderType): Self = StObject.set(x, "IdentityProviderType", value.asInstanceOf[js.Any])
+    inline def setIdentityProviderType(value: IdentityProviderType): Self = StObject.set(x, "IdentityProviderType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdentityProviderTypeUndefined: Self = StObject.set(x, "IdentityProviderType", js.undefined)
+    inline def setIdentityProviderTypeUndefined: Self = StObject.set(x, "IdentityProviderType", js.undefined)
     
-    @scala.inline
-    def setLoggingRole(value: Role): Self = StObject.set(x, "LoggingRole", value.asInstanceOf[js.Any])
+    inline def setLoggingRole(value: Role): Self = StObject.set(x, "LoggingRole", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLoggingRoleUndefined: Self = StObject.set(x, "LoggingRole", js.undefined)
+    inline def setLoggingRoleUndefined: Self = StObject.set(x, "LoggingRole", js.undefined)
     
-    @scala.inline
-    def setServerId(value: ServerId): Self = StObject.set(x, "ServerId", value.asInstanceOf[js.Any])
+    inline def setServerId(value: ServerId): Self = StObject.set(x, "ServerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServerIdUndefined: Self = StObject.set(x, "ServerId", js.undefined)
+    inline def setServerIdUndefined: Self = StObject.set(x, "ServerId", js.undefined)
     
-    @scala.inline
-    def setState(value: State): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
+    inline def setState(value: State): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "State", js.undefined)
     
-    @scala.inline
-    def setUserCount(value: UserCount): Self = StObject.set(x, "UserCount", value.asInstanceOf[js.Any])
+    inline def setUserCount(value: UserCount): Self = StObject.set(x, "UserCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserCountUndefined: Self = StObject.set(x, "UserCount", js.undefined)
+    inline def setUserCountUndefined: Self = StObject.set(x, "UserCount", js.undefined)
   }
 }

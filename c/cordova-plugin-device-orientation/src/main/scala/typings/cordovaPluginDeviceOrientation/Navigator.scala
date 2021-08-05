@@ -15,16 +15,13 @@ trait Navigator extends StObject {
 }
 object Navigator {
   
-  @scala.inline
-  def apply(compass: Compass): Navigator = {
+  inline def apply(compass: Compass): Navigator = {
     val __obj = js.Dynamic.literal(compass = compass.asInstanceOf[js.Any])
     __obj.asInstanceOf[Navigator]
   }
   
-  @scala.inline
-  implicit class NavigatorMutableBuilder[Self <: Navigator] (val x: Self) extends AnyVal {
+  extension [Self <: Navigator](x: Self) {
     
-    @scala.inline
-    def setCompass(value: Compass): Self = StObject.set(x, "compass", value.asInstanceOf[js.Any])
+    inline def setCompass(value: Compass): Self = StObject.set(x, "compass", value.asInstanceOf[js.Any])
   }
 }

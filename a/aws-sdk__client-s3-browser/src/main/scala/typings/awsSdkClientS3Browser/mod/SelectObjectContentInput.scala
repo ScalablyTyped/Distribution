@@ -12,8 +12,7 @@ trait SelectObjectContentInput
      with typings.awsSdkClientS3Browser.typesSelectObjectContentInputMod.SelectObjectContentInput
 object SelectObjectContentInput {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Bucket: String,
     Expression: String,
     ExpressionType: SQL | String,

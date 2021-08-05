@@ -8,21 +8,17 @@ object tarFsStrings {
   
   @js.native
   sealed trait directory extends StObject
-  @scala.inline
-  def directory: directory = "directory".asInstanceOf[directory]
+  inline def directory: directory = "directory".asInstanceOf[directory]
   
   @js.native
   sealed trait file extends StObject
-  @scala.inline
-  def file: file = "file".asInstanceOf[file]
+  inline def file: file = "file".asInstanceOf[file]
   
   @js.native
   sealed trait link extends StObject
-  @scala.inline
-  def link: link = "link".asInstanceOf[link]
+  inline def link: link = "link".asInstanceOf[link]
   
   @js.native
   sealed trait symlink extends StObject
-  @scala.inline
-  def symlink: symlink = "symlink".asInstanceOf[symlink]
+  inline def symlink: symlink = "symlink".asInstanceOf[symlink]
 }

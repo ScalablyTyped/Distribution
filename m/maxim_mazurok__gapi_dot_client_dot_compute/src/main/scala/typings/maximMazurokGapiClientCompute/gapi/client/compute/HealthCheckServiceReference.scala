@@ -10,19 +10,15 @@ trait HealthCheckServiceReference extends StObject {
 }
 object HealthCheckServiceReference {
   
-  @scala.inline
-  def apply(): HealthCheckServiceReference = {
+  inline def apply(): HealthCheckServiceReference = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[HealthCheckServiceReference]
   }
   
-  @scala.inline
-  implicit class HealthCheckServiceReferenceMutableBuilder[Self <: HealthCheckServiceReference] (val x: Self) extends AnyVal {
+  extension [Self <: HealthCheckServiceReference](x: Self) {
     
-    @scala.inline
-    def setHealthCheckService(value: String): Self = StObject.set(x, "healthCheckService", value.asInstanceOf[js.Any])
+    inline def setHealthCheckService(value: String): Self = StObject.set(x, "healthCheckService", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHealthCheckServiceUndefined: Self = StObject.set(x, "healthCheckService", js.undefined)
+    inline def setHealthCheckServiceUndefined: Self = StObject.set(x, "healthCheckService", js.undefined)
   }
 }

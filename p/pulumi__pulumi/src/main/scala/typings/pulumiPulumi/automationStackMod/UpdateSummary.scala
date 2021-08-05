@@ -31,8 +31,7 @@ trait UpdateSummary extends StObject {
 }
 object UpdateSummary {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     config: ConfigMap,
     endTime: Date,
     environment: StringDictionary[String],
@@ -46,43 +45,30 @@ object UpdateSummary {
     __obj.asInstanceOf[UpdateSummary]
   }
   
-  @scala.inline
-  implicit class UpdateSummaryMutableBuilder[Self <: UpdateSummary] (val x: Self) extends AnyVal {
+  extension [Self <: UpdateSummary](x: Self) {
     
-    @scala.inline
-    def setConfig(value: ConfigMap): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: ConfigMap): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeployment(value: RawJSON): Self = StObject.set(x, "Deployment", value.asInstanceOf[js.Any])
+    inline def setDeployment(value: RawJSON): Self = StObject.set(x, "Deployment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeploymentUndefined: Self = StObject.set(x, "Deployment", js.undefined)
+    inline def setDeploymentUndefined: Self = StObject.set(x, "Deployment", js.undefined)
     
-    @scala.inline
-    def setEndTime(value: Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
+    inline def setEndTime(value: Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEnvironment(value: StringDictionary[String]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
+    inline def setEnvironment(value: StringDictionary[String]): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKind(value: UpdateKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: UpdateKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceChanges(value: OpMap): Self = StObject.set(x, "resourceChanges", value.asInstanceOf[js.Any])
+    inline def setResourceChanges(value: OpMap): Self = StObject.set(x, "resourceChanges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResourceChangesUndefined: Self = StObject.set(x, "resourceChanges", js.undefined)
+    inline def setResourceChangesUndefined: Self = StObject.set(x, "resourceChanges", js.undefined)
     
-    @scala.inline
-    def setResult(value: UpdateResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+    inline def setResult(value: UpdateResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
+    inline def setStartTime(value: Date): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    inline def setVersion(value: Double): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }
 }

@@ -45,88 +45,61 @@ trait Comment extends StObject {
 }
 object Comment {
   
-  @scala.inline
-  def apply(): Comment = {
+  inline def apply(): Comment = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Comment]
   }
   
-  @scala.inline
-  implicit class CommentMutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
+  extension [Self <: Comment](x: Self) {
     
-    @scala.inline
-    def setAnchor(value: String): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
+    inline def setAnchor(value: String): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
+    inline def setAnchorUndefined: Self = StObject.set(x, "anchor", js.undefined)
     
-    @scala.inline
-    def setAuthor(value: User): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+    inline def setAuthor(value: User): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
+    inline def setAuthorUndefined: Self = StObject.set(x, "author", js.undefined)
     
-    @scala.inline
-    def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
+    inline def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
     
-    @scala.inline
-    def setCreatedTime(value: String): Self = StObject.set(x, "createdTime", value.asInstanceOf[js.Any])
+    inline def setCreatedTime(value: String): Self = StObject.set(x, "createdTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedTimeUndefined: Self = StObject.set(x, "createdTime", js.undefined)
+    inline def setCreatedTimeUndefined: Self = StObject.set(x, "createdTime", js.undefined)
     
-    @scala.inline
-    def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
+    inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
+    inline def setDeletedUndefined: Self = StObject.set(x, "deleted", js.undefined)
     
-    @scala.inline
-    def setHtmlContent(value: String): Self = StObject.set(x, "htmlContent", value.asInstanceOf[js.Any])
+    inline def setHtmlContent(value: String): Self = StObject.set(x, "htmlContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHtmlContentUndefined: Self = StObject.set(x, "htmlContent", js.undefined)
+    inline def setHtmlContentUndefined: Self = StObject.set(x, "htmlContent", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setModifiedTime(value: String): Self = StObject.set(x, "modifiedTime", value.asInstanceOf[js.Any])
+    inline def setModifiedTime(value: String): Self = StObject.set(x, "modifiedTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setModifiedTimeUndefined: Self = StObject.set(x, "modifiedTime", js.undefined)
+    inline def setModifiedTimeUndefined: Self = StObject.set(x, "modifiedTime", js.undefined)
     
-    @scala.inline
-    def setQuotedFileContent(value: MimeType): Self = StObject.set(x, "quotedFileContent", value.asInstanceOf[js.Any])
+    inline def setQuotedFileContent(value: MimeType): Self = StObject.set(x, "quotedFileContent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuotedFileContentUndefined: Self = StObject.set(x, "quotedFileContent", js.undefined)
+    inline def setQuotedFileContentUndefined: Self = StObject.set(x, "quotedFileContent", js.undefined)
     
-    @scala.inline
-    def setReplies(value: js.Array[Reply]): Self = StObject.set(x, "replies", value.asInstanceOf[js.Any])
+    inline def setReplies(value: js.Array[Reply]): Self = StObject.set(x, "replies", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepliesUndefined: Self = StObject.set(x, "replies", js.undefined)
+    inline def setRepliesUndefined: Self = StObject.set(x, "replies", js.undefined)
     
-    @scala.inline
-    def setRepliesVarargs(value: Reply*): Self = StObject.set(x, "replies", js.Array(value :_*))
+    inline def setRepliesVarargs(value: Reply*): Self = StObject.set(x, "replies", js.Array(value :_*))
     
-    @scala.inline
-    def setResolved(value: Boolean): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
+    inline def setResolved(value: Boolean): Self = StObject.set(x, "resolved", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResolvedUndefined: Self = StObject.set(x, "resolved", js.undefined)
+    inline def setResolvedUndefined: Self = StObject.set(x, "resolved", js.undefined)
   }
 }

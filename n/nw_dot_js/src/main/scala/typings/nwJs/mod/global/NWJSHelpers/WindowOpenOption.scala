@@ -25,31 +25,23 @@ trait WindowOpenOption
 }
 object WindowOpenOption {
   
-  @scala.inline
-  def apply(): WindowOpenOption = {
+  inline def apply(): WindowOpenOption = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WindowOpenOption]
   }
   
-  @scala.inline
-  implicit class WindowOpenOptionMutableBuilder[Self <: WindowOpenOption] (val x: Self) extends AnyVal {
+  extension [Self <: WindowOpenOption](x: Self) {
     
-    @scala.inline
-    def setInject_js_end(value: String): Self = StObject.set(x, "inject_js_end", value.asInstanceOf[js.Any])
+    inline def setInject_js_end(value: String): Self = StObject.set(x, "inject_js_end", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInject_js_endUndefined: Self = StObject.set(x, "inject_js_end", js.undefined)
+    inline def setInject_js_endUndefined: Self = StObject.set(x, "inject_js_end", js.undefined)
     
-    @scala.inline
-    def setInject_js_start(value: String): Self = StObject.set(x, "inject_js_start", value.asInstanceOf[js.Any])
+    inline def setInject_js_start(value: String): Self = StObject.set(x, "inject_js_start", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInject_js_startUndefined: Self = StObject.set(x, "inject_js_start", js.undefined)
+    inline def setInject_js_startUndefined: Self = StObject.set(x, "inject_js_start", js.undefined)
     
-    @scala.inline
-    def setNew_instance(value: Boolean): Self = StObject.set(x, "new_instance", value.asInstanceOf[js.Any])
+    inline def setNew_instance(value: Boolean): Self = StObject.set(x, "new_instance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNew_instanceUndefined: Self = StObject.set(x, "new_instance", js.undefined)
+    inline def setNew_instanceUndefined: Self = StObject.set(x, "new_instance", js.undefined)
   }
 }

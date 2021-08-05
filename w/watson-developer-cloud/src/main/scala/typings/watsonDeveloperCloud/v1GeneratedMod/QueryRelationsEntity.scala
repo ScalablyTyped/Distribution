@@ -18,31 +18,23 @@ trait QueryRelationsEntity extends StObject {
 }
 object QueryRelationsEntity {
   
-  @scala.inline
-  def apply(): QueryRelationsEntity = {
+  inline def apply(): QueryRelationsEntity = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[QueryRelationsEntity]
   }
   
-  @scala.inline
-  implicit class QueryRelationsEntityMutableBuilder[Self <: QueryRelationsEntity] (val x: Self) extends AnyVal {
+  extension [Self <: QueryRelationsEntity](x: Self) {
     
-    @scala.inline
-    def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
+    inline def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
+    inline def setExactUndefined: Self = StObject.set(x, "exact", js.undefined)
     
-    @scala.inline
-    def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
+    inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
+    inline def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

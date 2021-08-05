@@ -21,8 +21,7 @@ object Keychain {
     * @param key - Key to look up in the keychain.
     * @see https://docs.scriptable.app/keychain/#contains
     */
-  @scala.inline
-  def contains(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("contains")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  inline def contains(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("contains")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * _Reads a value from the keychain._
@@ -31,16 +30,14 @@ object Keychain {
     * @param key - Key to read value for.
     * @see https://docs.scriptable.app/keychain/#get
     */
-  @scala.inline
-  def get(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def get(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * _Remove key from keychain._
     * @param key - Key to remove from the keychain.
     * @see https://docs.scriptable.app/keychain/#remove
     */
-  @scala.inline
-  def remove(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def remove(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * _Add value for a specified key to keychain._
@@ -52,6 +49,5 @@ object Keychain {
     * @param value - Value to assign to the specified key.
     * @see https://docs.scriptable.app/keychain/#set
     */
-  @scala.inline
-  def set(key: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def set(key: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

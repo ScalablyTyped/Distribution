@@ -13,17 +13,14 @@ trait BaseQueryWithFile
 }
 object BaseQueryWithFile {
   
-  @scala.inline
-  def apply(file: String, `type`: String): BaseQueryWithFile = {
+  inline def apply(file: String, `type`: String): BaseQueryWithFile = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseQueryWithFile]
   }
   
-  @scala.inline
-  implicit class BaseQueryWithFileMutableBuilder[Self <: BaseQueryWithFile] (val x: Self) extends AnyVal {
+  extension [Self <: BaseQueryWithFile](x: Self) {
     
-    @scala.inline
-    def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
   }
 }

@@ -8,6 +8,5 @@ object routeParserStrings {
   
   @js.native
   sealed trait Route extends StObject
-  @scala.inline
-  def Route: Route = "Route".asInstanceOf[Route]
+  inline def Route: Route = "Route".asInstanceOf[Route]
 }

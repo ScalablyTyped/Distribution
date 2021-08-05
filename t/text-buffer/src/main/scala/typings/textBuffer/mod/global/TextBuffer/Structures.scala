@@ -28,8 +28,7 @@ object Structures {
   }
   object BufferScanResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       buffer: typings.textBuffer.mod.global.TextBuffer.TextBuffer,
       lineText: String,
       `match`: RegExpExecArray,
@@ -44,32 +43,23 @@ object Structures {
       __obj.asInstanceOf[BufferScanResult]
     }
     
-    @scala.inline
-    implicit class BufferScanResultMutableBuilder[Self <: BufferScanResult] (val x: Self) extends AnyVal {
+    extension [Self <: BufferScanResult](x: Self) {
       
-      @scala.inline
-      def setBuffer(value: typings.textBuffer.mod.global.TextBuffer.TextBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
+      inline def setBuffer(value: typings.textBuffer.mod.global.TextBuffer.TextBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLineText(value: String): Self = StObject.set(x, "lineText", value.asInstanceOf[js.Any])
+      inline def setLineText(value: String): Self = StObject.set(x, "lineText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatch(value: RegExpExecArray): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: RegExpExecArray): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatchText(value: String): Self = StObject.set(x, "matchText", value.asInstanceOf[js.Any])
+      inline def setMatchText(value: String): Self = StObject.set(x, "matchText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+      inline def setRange(value: Range): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplace(value: String => Unit): Self = StObject.set(x, "replace", js.Any.fromFunction1(value))
+      inline def setReplace(value: String => Unit): Self = StObject.set(x, "replace", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
+      inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setStopped(value: Boolean): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
+      inline def setStopped(value: Boolean): Self = StObject.set(x, "stopped", value.asInstanceOf[js.Any])
     }
   }
   
@@ -83,8 +73,7 @@ object Structures {
   }
   object ContextualBufferScanResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       buffer: typings.textBuffer.mod.global.TextBuffer.TextBuffer,
       leadingContextLines: js.Array[String],
       lineText: String,
@@ -101,20 +90,15 @@ object Structures {
       __obj.asInstanceOf[ContextualBufferScanResult]
     }
     
-    @scala.inline
-    implicit class ContextualBufferScanResultMutableBuilder[Self <: ContextualBufferScanResult] (val x: Self) extends AnyVal {
+    extension [Self <: ContextualBufferScanResult](x: Self) {
       
-      @scala.inline
-      def setLeadingContextLines(value: js.Array[String]): Self = StObject.set(x, "leadingContextLines", value.asInstanceOf[js.Any])
+      inline def setLeadingContextLines(value: js.Array[String]): Self = StObject.set(x, "leadingContextLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLeadingContextLinesVarargs(value: String*): Self = StObject.set(x, "leadingContextLines", js.Array(value :_*))
+      inline def setLeadingContextLinesVarargs(value: String*): Self = StObject.set(x, "leadingContextLines", js.Array(value :_*))
       
-      @scala.inline
-      def setTrailingContextLines(value: js.Array[String]): Self = StObject.set(x, "trailingContextLines", value.asInstanceOf[js.Any])
+      inline def setTrailingContextLines(value: js.Array[String]): Self = StObject.set(x, "trailingContextLines", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTrailingContextLinesVarargs(value: String*): Self = StObject.set(x, "trailingContextLines", js.Array(value :_*))
+      inline def setTrailingContextLinesVarargs(value: String*): Self = StObject.set(x, "trailingContextLines", js.Array(value :_*))
     }
   }
   
@@ -136,8 +120,7 @@ object Structures {
   }
   object TextChange {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       newExtent: Point,
       newRange: Range,
       newText: String,
@@ -150,29 +133,21 @@ object Structures {
       __obj.asInstanceOf[TextChange]
     }
     
-    @scala.inline
-    implicit class TextChangeMutableBuilder[Self <: TextChange] (val x: Self) extends AnyVal {
+    extension [Self <: TextChange](x: Self) {
       
-      @scala.inline
-      def setNewExtent(value: Point): Self = StObject.set(x, "newExtent", value.asInstanceOf[js.Any])
+      inline def setNewExtent(value: Point): Self = StObject.set(x, "newExtent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewRange(value: Range): Self = StObject.set(x, "newRange", value.asInstanceOf[js.Any])
+      inline def setNewRange(value: Range): Self = StObject.set(x, "newRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNewText(value: String): Self = StObject.set(x, "newText", value.asInstanceOf[js.Any])
+      inline def setNewText(value: String): Self = StObject.set(x, "newText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldExtent(value: Point): Self = StObject.set(x, "oldExtent", value.asInstanceOf[js.Any])
+      inline def setOldExtent(value: Point): Self = StObject.set(x, "oldExtent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldRange(value: Range): Self = StObject.set(x, "oldRange", value.asInstanceOf[js.Any])
+      inline def setOldRange(value: Range): Self = StObject.set(x, "oldRange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldText(value: String): Self = StObject.set(x, "oldText", value.asInstanceOf[js.Any])
+      inline def setOldText(value: String): Self = StObject.set(x, "oldText", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      inline def setStart(value: Point): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     }
   }
 }

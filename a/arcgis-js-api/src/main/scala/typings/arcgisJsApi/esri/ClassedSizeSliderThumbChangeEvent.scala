@@ -17,26 +17,20 @@ trait ClassedSizeSliderThumbChangeEvent extends StObject {
 }
 object ClassedSizeSliderThumbChangeEvent {
   
-  @scala.inline
-  def apply(index: Double, oldValue: Double, value: Double): ClassedSizeSliderThumbChangeEvent = {
+  inline def apply(index: Double, oldValue: Double, value: Double): ClassedSizeSliderThumbChangeEvent = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], oldValue = oldValue.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("thumb-change")
     __obj.asInstanceOf[ClassedSizeSliderThumbChangeEvent]
   }
   
-  @scala.inline
-  implicit class ClassedSizeSliderThumbChangeEventMutableBuilder[Self <: ClassedSizeSliderThumbChangeEvent] (val x: Self) extends AnyVal {
+  extension [Self <: ClassedSizeSliderThumbChangeEvent](x: Self) {
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldValue(value: Double): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
+    inline def setOldValue(value: Double): Self = StObject.set(x, "oldValue", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: `thumb-change`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `thumb-change`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

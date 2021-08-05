@@ -30,8 +30,7 @@ trait FoldableWithIndexComposition11[F /* <: /* import warning: transforms.Quali
 }
 object FoldableWithIndexComposition11 {
   
-  @scala.inline
-  def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, FI, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, GI](
+  inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, FI, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, GI](
     foldMap: Monoid[js.Any] => js.Function2[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, Kind<G, A>> */ /* fa */ js.Any, 
       /* f */ js.Function1[/* a */ js.Any, js.Any], 
@@ -51,11 +50,9 @@ object FoldableWithIndexComposition11 {
     __obj.asInstanceOf[FoldableWithIndexComposition11[F, FI, G, GI]]
   }
   
-  @scala.inline
-  implicit class FoldableWithIndexComposition11MutableBuilder[Self <: FoldableWithIndexComposition11[?, ?, ?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, FI, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, GI] (val x: Self & (FoldableWithIndexComposition11[F, FI, G, GI])) extends AnyVal {
+  extension [Self <: FoldableWithIndexComposition11[?, ?, ?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, FI, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, GI](x: Self & (FoldableWithIndexComposition11[F, FI, G, GI])) {
     
-    @scala.inline
-    def setFoldMapWithIndex(
+    inline def setFoldMapWithIndex(
       value: Monoid[js.Any] => js.Function2[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, Kind<G, A>> */ /* fga */ js.Any, 
           /* f */ js.Function2[/* i */ js.Tuple2[FI, GI], /* a */ js.Any, js.Any], 
@@ -63,13 +60,11 @@ object FoldableWithIndexComposition11 {
         ]
     ): Self = StObject.set(x, "foldMapWithIndex", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setReduceRightWithIndex(
+    inline def setReduceRightWithIndex(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, Kind<G, A>> */ js.Any, js.Any, js.Function3[/* i */ js.Tuple2[FI, GI], js.Any, js.Any, js.Any]) => js.Any
     ): Self = StObject.set(x, "reduceRightWithIndex", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setReduceWithIndex(
+    inline def setReduceWithIndex(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, Kind<G, A>> */ js.Any, js.Any, js.Function3[/* i */ js.Tuple2[FI, GI], js.Any, js.Any, js.Any]) => js.Any
     ): Self = StObject.set(x, "reduceWithIndex", js.Any.fromFunction3(value))
   }

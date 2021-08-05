@@ -23,23 +23,18 @@ object bookmarks {
   }
   object BookmarkChangeInfo {
     
-    @scala.inline
-    def apply(title: String): BookmarkChangeInfo = {
+    inline def apply(title: String): BookmarkChangeInfo = {
       val __obj = js.Dynamic.literal(title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[BookmarkChangeInfo]
     }
     
-    @scala.inline
-    implicit class BookmarkChangeInfoMutableBuilder[Self <: BookmarkChangeInfo] (val x: Self) extends AnyVal {
+    extension [Self <: BookmarkChangeInfo](x: Self) {
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -59,26 +54,20 @@ object bookmarks {
   }
   object BookmarkChangesArg {
     
-    @scala.inline
-    def apply(): BookmarkChangesArg = {
+    inline def apply(): BookmarkChangesArg = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BookmarkChangesArg]
     }
     
-    @scala.inline
-    implicit class BookmarkChangesArgMutableBuilder[Self <: BookmarkChangesArg] (val x: Self) extends AnyVal {
+    extension [Self <: BookmarkChangesArg](x: Self) {
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -103,38 +92,28 @@ object bookmarks {
   }
   object BookmarkCreateArg {
     
-    @scala.inline
-    def apply(): BookmarkCreateArg = {
+    inline def apply(): BookmarkCreateArg = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BookmarkCreateArg]
     }
     
-    @scala.inline
-    implicit class BookmarkCreateArgMutableBuilder[Self <: BookmarkCreateArg] (val x: Self) extends AnyVal {
+    extension [Self <: BookmarkCreateArg](x: Self) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+      inline def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
+      inline def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -154,26 +133,20 @@ object bookmarks {
   }
   object BookmarkDestinationArg {
     
-    @scala.inline
-    def apply(): BookmarkDestinationArg = {
+    inline def apply(): BookmarkDestinationArg = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BookmarkDestinationArg]
     }
     
-    @scala.inline
-    implicit class BookmarkDestinationArgMutableBuilder[Self <: BookmarkDestinationArg] (val x: Self) extends AnyVal {
+    extension [Self <: BookmarkDestinationArg](x: Self) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+      inline def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
+      inline def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
     }
   }
   
@@ -193,26 +166,20 @@ object bookmarks {
   }
   object BookmarkMoveInfo {
     
-    @scala.inline
-    def apply(index: Double, oldIndex: Double, oldParentId: String, parentId: String): BookmarkMoveInfo = {
+    inline def apply(index: Double, oldIndex: Double, oldParentId: String, parentId: String): BookmarkMoveInfo = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], oldIndex = oldIndex.asInstanceOf[js.Any], oldParentId = oldParentId.asInstanceOf[js.Any], parentId = parentId.asInstanceOf[js.Any])
       __obj.asInstanceOf[BookmarkMoveInfo]
     }
     
-    @scala.inline
-    implicit class BookmarkMoveInfoMutableBuilder[Self <: BookmarkMoveInfo] (val x: Self) extends AnyVal {
+    extension [Self <: BookmarkMoveInfo](x: Self) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
+      inline def setOldIndex(value: Double): Self = StObject.set(x, "oldIndex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOldParentId(value: String): Self = StObject.set(x, "oldParentId", value.asInstanceOf[js.Any])
+      inline def setOldParentId(value: String): Self = StObject.set(x, "oldParentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+      inline def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -234,23 +201,18 @@ object bookmarks {
   }
   object BookmarkRemoveInfo {
     
-    @scala.inline
-    def apply(index: Double, node: typings.chrome.chrome.bookmarks.BookmarkTreeNode, parentId: String): BookmarkRemoveInfo = {
+    inline def apply(index: Double, node: typings.chrome.chrome.bookmarks.BookmarkTreeNode, parentId: String): BookmarkRemoveInfo = {
       val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], parentId = parentId.asInstanceOf[js.Any])
       __obj.asInstanceOf[BookmarkRemoveInfo]
     }
     
-    @scala.inline
-    implicit class BookmarkRemoveInfoMutableBuilder[Self <: BookmarkRemoveInfo] (val x: Self) extends AnyVal {
+    extension [Self <: BookmarkRemoveInfo](x: Self) {
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNode(value: typings.chrome.chrome.bookmarks.BookmarkTreeNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
+      inline def setNode(value: typings.chrome.chrome.bookmarks.BookmarkTreeNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+      inline def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -268,20 +230,16 @@ object bookmarks {
   }
   object BookmarkReorderInfo {
     
-    @scala.inline
-    def apply(childIds: js.Array[String]): BookmarkReorderInfo = {
+    inline def apply(childIds: js.Array[String]): BookmarkReorderInfo = {
       val __obj = js.Dynamic.literal(childIds = childIds.asInstanceOf[js.Any])
       __obj.asInstanceOf[BookmarkReorderInfo]
     }
     
-    @scala.inline
-    implicit class BookmarkReorderInfoMutableBuilder[Self <: BookmarkReorderInfo] (val x: Self) extends AnyVal {
+    extension [Self <: BookmarkReorderInfo](x: Self) {
       
-      @scala.inline
-      def setChildIds(value: js.Array[String]): Self = StObject.set(x, "childIds", value.asInstanceOf[js.Any])
+      inline def setChildIds(value: js.Array[String]): Self = StObject.set(x, "childIds", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildIdsVarargs(value: String*): Self = StObject.set(x, "childIds", js.Array(value :_*))
+      inline def setChildIdsVarargs(value: String*): Self = StObject.set(x, "childIds", js.Array(value :_*))
     }
   }
   
@@ -295,32 +253,24 @@ object bookmarks {
   }
   object BookmarkSearchQuery {
     
-    @scala.inline
-    def apply(): BookmarkSearchQuery = {
+    inline def apply(): BookmarkSearchQuery = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BookmarkSearchQuery]
     }
     
-    @scala.inline
-    implicit class BookmarkSearchQueryMutableBuilder[Self <: BookmarkSearchQuery] (val x: Self) extends AnyVal {
+    extension [Self <: BookmarkSearchQuery](x: Self) {
       
-      @scala.inline
-      def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+      inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+      inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
   
@@ -359,65 +309,46 @@ object bookmarks {
   }
   object BookmarkTreeNode {
     
-    @scala.inline
-    def apply(id: String, title: String): BookmarkTreeNode = {
+    inline def apply(id: String, title: String): BookmarkTreeNode = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[BookmarkTreeNode]
     }
     
-    @scala.inline
-    implicit class BookmarkTreeNodeMutableBuilder[Self <: BookmarkTreeNode] (val x: Self) extends AnyVal {
+    extension [Self <: BookmarkTreeNode](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[typings.chrome.chrome.bookmarks.BookmarkTreeNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[typings.chrome.chrome.bookmarks.BookmarkTreeNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: typings.chrome.chrome.bookmarks.BookmarkTreeNode*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: typings.chrome.chrome.bookmarks.BookmarkTreeNode*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setDateAdded(value: Double): Self = StObject.set(x, "dateAdded", value.asInstanceOf[js.Any])
+      inline def setDateAdded(value: Double): Self = StObject.set(x, "dateAdded", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateAddedUndefined: Self = StObject.set(x, "dateAdded", js.undefined)
+      inline def setDateAddedUndefined: Self = StObject.set(x, "dateAdded", js.undefined)
       
-      @scala.inline
-      def setDateGroupModified(value: Double): Self = StObject.set(x, "dateGroupModified", value.asInstanceOf[js.Any])
+      inline def setDateGroupModified(value: Double): Self = StObject.set(x, "dateGroupModified", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDateGroupModifiedUndefined: Self = StObject.set(x, "dateGroupModified", js.undefined)
+      inline def setDateGroupModifiedUndefined: Self = StObject.set(x, "dateGroupModified", js.undefined)
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+      inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
       
-      @scala.inline
-      def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
+      inline def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
+      inline def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
       
-      @scala.inline
-      def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+      inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnmodifiable(value: js.Any): Self = StObject.set(x, "unmodifiable", value.asInstanceOf[js.Any])
+      inline def setUnmodifiable(value: js.Any): Self = StObject.set(x, "unmodifiable", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUnmodifiableUndefined: Self = StObject.set(x, "unmodifiable", js.undefined)
+      inline def setUnmodifiableUndefined: Self = StObject.set(x, "unmodifiable", js.undefined)
       
-      @scala.inline
-      def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+      inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
+      inline def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     }
   }
 }

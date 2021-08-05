@@ -10,16 +10,13 @@ trait ValueUndefined extends StObject {
 }
 object ValueUndefined {
   
-  @scala.inline
-  def apply(value: Unit): ValueUndefined = {
+  inline def apply(value: Unit): ValueUndefined = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[ValueUndefined]
   }
   
-  @scala.inline
-  implicit class ValueUndefinedMutableBuilder[Self <: ValueUndefined] (val x: Self) extends AnyVal {
+  extension [Self <: ValueUndefined](x: Self) {
     
-    @scala.inline
-    def setValue(value: Unit): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: Unit): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

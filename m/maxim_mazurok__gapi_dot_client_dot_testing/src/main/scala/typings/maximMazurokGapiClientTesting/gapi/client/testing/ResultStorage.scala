@@ -20,37 +20,27 @@ trait ResultStorage extends StObject {
 }
 object ResultStorage {
   
-  @scala.inline
-  def apply(): ResultStorage = {
+  inline def apply(): ResultStorage = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ResultStorage]
   }
   
-  @scala.inline
-  implicit class ResultStorageMutableBuilder[Self <: ResultStorage] (val x: Self) extends AnyVal {
+  extension [Self <: ResultStorage](x: Self) {
     
-    @scala.inline
-    def setGoogleCloudStorage(value: GoogleCloudStorage): Self = StObject.set(x, "googleCloudStorage", value.asInstanceOf[js.Any])
+    inline def setGoogleCloudStorage(value: GoogleCloudStorage): Self = StObject.set(x, "googleCloudStorage", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoogleCloudStorageUndefined: Self = StObject.set(x, "googleCloudStorage", js.undefined)
+    inline def setGoogleCloudStorageUndefined: Self = StObject.set(x, "googleCloudStorage", js.undefined)
     
-    @scala.inline
-    def setResultsUrl(value: String): Self = StObject.set(x, "resultsUrl", value.asInstanceOf[js.Any])
+    inline def setResultsUrl(value: String): Self = StObject.set(x, "resultsUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResultsUrlUndefined: Self = StObject.set(x, "resultsUrl", js.undefined)
+    inline def setResultsUrlUndefined: Self = StObject.set(x, "resultsUrl", js.undefined)
     
-    @scala.inline
-    def setToolResultsExecution(value: ToolResultsExecution): Self = StObject.set(x, "toolResultsExecution", value.asInstanceOf[js.Any])
+    inline def setToolResultsExecution(value: ToolResultsExecution): Self = StObject.set(x, "toolResultsExecution", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolResultsExecutionUndefined: Self = StObject.set(x, "toolResultsExecution", js.undefined)
+    inline def setToolResultsExecutionUndefined: Self = StObject.set(x, "toolResultsExecution", js.undefined)
     
-    @scala.inline
-    def setToolResultsHistory(value: ToolResultsHistory): Self = StObject.set(x, "toolResultsHistory", value.asInstanceOf[js.Any])
+    inline def setToolResultsHistory(value: ToolResultsHistory): Self = StObject.set(x, "toolResultsHistory", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setToolResultsHistoryUndefined: Self = StObject.set(x, "toolResultsHistory", js.undefined)
+    inline def setToolResultsHistoryUndefined: Self = StObject.set(x, "toolResultsHistory", js.undefined)
   }
 }

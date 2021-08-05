@@ -10,8 +10,7 @@ object formatMtimeMod {
     * @param {MTime} mtime
     * @returns {string}
     */
-  @scala.inline
-  def apply(mtime: MTime): String = ^.asInstanceOf[js.Dynamic].apply(mtime.asInstanceOf[js.Any]).asInstanceOf[String]
+  inline def apply(mtime: MTime): String = ^.asInstanceOf[js.Dynamic].apply(mtime.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("ipfs-core-utils/dist/src/files/format-mtime", JSImport.Namespace)
   @js.native
@@ -33,20 +32,16 @@ object formatMtimeMod {
   }
   object MTime {
     
-    @scala.inline
-    def apply(nsecs: Double, secs: Double): MTime = {
+    inline def apply(nsecs: Double, secs: Double): MTime = {
       val __obj = js.Dynamic.literal(nsecs = nsecs.asInstanceOf[js.Any], secs = secs.asInstanceOf[js.Any])
       __obj.asInstanceOf[MTime]
     }
     
-    @scala.inline
-    implicit class MTimeMutableBuilder[Self <: MTime] (val x: Self) extends AnyVal {
+    extension [Self <: MTime](x: Self) {
       
-      @scala.inline
-      def setNsecs(value: Double): Self = StObject.set(x, "nsecs", value.asInstanceOf[js.Any])
+      inline def setNsecs(value: Double): Self = StObject.set(x, "nsecs", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSecs(value: Double): Self = StObject.set(x, "secs", value.asInstanceOf[js.Any])
+      inline def setSecs(value: Double): Self = StObject.set(x, "secs", value.asInstanceOf[js.Any])
     }
   }
 }

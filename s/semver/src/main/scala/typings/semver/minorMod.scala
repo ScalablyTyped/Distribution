@@ -10,18 +10,12 @@ object minorMod {
   /**
     * Return the minor version number.
     */
-  @scala.inline
-  def apply(version: String): Double = ^.asInstanceOf[js.Dynamic].apply(version.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def apply(version: String, optionsOrLoose: Boolean): Double = (^.asInstanceOf[js.Dynamic].apply(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def apply(version: String, optionsOrLoose: Options): Double = (^.asInstanceOf[js.Dynamic].apply(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def apply(version: typings.semver.semverMod.^): Double = ^.asInstanceOf[js.Dynamic].apply(version.asInstanceOf[js.Any]).asInstanceOf[Double]
-  @scala.inline
-  def apply(version: typings.semver.semverMod.^, optionsOrLoose: Boolean): Double = (^.asInstanceOf[js.Dynamic].apply(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Double]
-  @scala.inline
-  def apply(version: typings.semver.semverMod.^, optionsOrLoose: Options): Double = (^.asInstanceOf[js.Dynamic].apply(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def apply(version: String): Double = ^.asInstanceOf[js.Dynamic].apply(version.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def apply(version: String, optionsOrLoose: Boolean): Double = (^.asInstanceOf[js.Dynamic].apply(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def apply(version: String, optionsOrLoose: Options): Double = (^.asInstanceOf[js.Dynamic].apply(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def apply(version: typings.semver.semverMod.^): Double = ^.asInstanceOf[js.Dynamic].apply(version.asInstanceOf[js.Any]).asInstanceOf[Double]
+  inline def apply(version: typings.semver.semverMod.^, optionsOrLoose: Boolean): Double = (^.asInstanceOf[js.Dynamic].apply(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def apply(version: typings.semver.semverMod.^, optionsOrLoose: Options): Double = (^.asInstanceOf[js.Dynamic].apply(version.asInstanceOf[js.Any], optionsOrLoose.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   @JSImport("semver/functions/minor", JSImport.Namespace)
   @js.native

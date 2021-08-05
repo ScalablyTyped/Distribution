@@ -14,19 +14,15 @@ trait FeatureActivations extends StObject {
 }
 object FeatureActivations {
   
-  @scala.inline
-  def apply(): FeatureActivations = {
+  inline def apply(): FeatureActivations = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FeatureActivations]
   }
   
-  @scala.inline
-  implicit class FeatureActivationsMutableBuilder[Self <: FeatureActivations] (val x: Self) extends AnyVal {
+  extension [Self <: FeatureActivations](x: Self) {
     
-    @scala.inline
-    def setInputPrepareScheduleActions(value: FeatureActivationsInputPrepareScheduleActions): Self = StObject.set(x, "InputPrepareScheduleActions", value.asInstanceOf[js.Any])
+    inline def setInputPrepareScheduleActions(value: FeatureActivationsInputPrepareScheduleActions): Self = StObject.set(x, "InputPrepareScheduleActions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInputPrepareScheduleActionsUndefined: Self = StObject.set(x, "InputPrepareScheduleActions", js.undefined)
+    inline def setInputPrepareScheduleActionsUndefined: Self = StObject.set(x, "InputPrepareScheduleActions", js.undefined)
   }
 }

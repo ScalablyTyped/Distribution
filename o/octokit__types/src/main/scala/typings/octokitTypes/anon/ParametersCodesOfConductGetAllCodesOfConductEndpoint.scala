@@ -18,8 +18,7 @@ trait ParametersCodesOfConductGetAllCodesOfConductEndpoint extends StObject {
 }
 object ParametersCodesOfConductGetAllCodesOfConductEndpoint {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     parameters: CodesOfConductGetAllCodesOfConductEndpoint,
     request: CodesOfConductGetAllCodesOfConductRequestOptions,
     response: OctokitResponse[CodesOfConductGetAllCodesOfConductResponseData]
@@ -28,16 +27,12 @@ object ParametersCodesOfConductGetAllCodesOfConductEndpoint {
     __obj.asInstanceOf[ParametersCodesOfConductGetAllCodesOfConductEndpoint]
   }
   
-  @scala.inline
-  implicit class ParametersCodesOfConductGetAllCodesOfConductEndpointMutableBuilder[Self <: ParametersCodesOfConductGetAllCodesOfConductEndpoint] (val x: Self) extends AnyVal {
+  extension [Self <: ParametersCodesOfConductGetAllCodesOfConductEndpoint](x: Self) {
     
-    @scala.inline
-    def setParameters(value: CodesOfConductGetAllCodesOfConductEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: CodesOfConductGetAllCodesOfConductEndpoint): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequest(value: CodesOfConductGetAllCodesOfConductRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    inline def setRequest(value: CodesOfConductGetAllCodesOfConductRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponse(value: OctokitResponse[CodesOfConductGetAllCodesOfConductResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    inline def setResponse(value: OctokitResponse[CodesOfConductGetAllCodesOfConductResponseData]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

@@ -52,41 +52,30 @@ object radioButtonGroupMod {
   }
   object RadioButtonGroupProps {
     
-    @scala.inline
-    def apply(name: String, options: js.Array[String | Double | Boolean | Disabled]): RadioButtonGroupProps = {
+    inline def apply(name: String, options: js.Array[String | Double | Boolean | Disabled]): RadioButtonGroupProps = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
       __obj.asInstanceOf[RadioButtonGroupProps]
     }
     
-    @scala.inline
-    implicit class RadioButtonGroupPropsMutableBuilder[Self <: RadioButtonGroupProps] (val x: Self) extends AnyVal {
+    extension [Self <: RadioButtonGroupProps](x: Self) {
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOnChange(value: /* event */ ChangeEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      inline def setOnChange(value: /* event */ ChangeEvent[HTMLInputElement] => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
+      inline def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
-      @scala.inline
-      def setOptions(value: js.Array[String | Double | Boolean | Disabled]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Array[String | Double | Boolean | Disabled]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsVarargs(value: (String | Double | Boolean | Disabled)*): Self = StObject.set(x, "options", js.Array(value :_*))
+      inline def setOptionsVarargs(value: (String | Double | Boolean | Disabled)*): Self = StObject.set(x, "options", js.Array(value :_*))
       
-      @scala.inline
-      def setValue(value: String | Double | Boolean | js.Object): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: String | Double | Boolean | js.Object): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
+      inline def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
     }
   }
 }

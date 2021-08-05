@@ -23,31 +23,23 @@ trait CidrBlockAssociation extends StObject {
 }
 object CidrBlockAssociation {
   
-  @scala.inline
-  def apply(): CidrBlockAssociation = {
+  inline def apply(): CidrBlockAssociation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CidrBlockAssociation]
   }
   
-  @scala.inline
-  implicit class CidrBlockAssociationMutableBuilder[Self <: CidrBlockAssociation] (val x: Self) extends AnyVal {
+  extension [Self <: CidrBlockAssociation](x: Self) {
     
-    @scala.inline
-    def setAssociationId(value: NonEmptyString): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
+    inline def setAssociationId(value: NonEmptyString): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociationIdUndefined: Self = StObject.set(x, "AssociationId", js.undefined)
+    inline def setAssociationIdUndefined: Self = StObject.set(x, "AssociationId", js.undefined)
     
-    @scala.inline
-    def setCidrBlock(value: NonEmptyString): Self = StObject.set(x, "CidrBlock", value.asInstanceOf[js.Any])
+    inline def setCidrBlock(value: NonEmptyString): Self = StObject.set(x, "CidrBlock", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrBlockState(value: NonEmptyString): Self = StObject.set(x, "CidrBlockState", value.asInstanceOf[js.Any])
+    inline def setCidrBlockState(value: NonEmptyString): Self = StObject.set(x, "CidrBlockState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCidrBlockStateUndefined: Self = StObject.set(x, "CidrBlockState", js.undefined)
+    inline def setCidrBlockStateUndefined: Self = StObject.set(x, "CidrBlockState", js.undefined)
     
-    @scala.inline
-    def setCidrBlockUndefined: Self = StObject.set(x, "CidrBlock", js.undefined)
+    inline def setCidrBlockUndefined: Self = StObject.set(x, "CidrBlock", js.undefined)
   }
 }

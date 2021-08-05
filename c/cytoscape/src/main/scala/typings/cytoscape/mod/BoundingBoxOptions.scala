@@ -29,55 +29,39 @@ trait BoundingBoxOptions extends StObject {
 }
 object BoundingBoxOptions {
   
-  @scala.inline
-  def apply(): BoundingBoxOptions = {
+  inline def apply(): BoundingBoxOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[BoundingBoxOptions]
   }
   
-  @scala.inline
-  implicit class BoundingBoxOptionsMutableBuilder[Self <: BoundingBoxOptions] (val x: Self) extends AnyVal {
+  extension [Self <: BoundingBoxOptions](x: Self) {
     
-    @scala.inline
-    def setIncludeEdges(value: Boolean): Self = StObject.set(x, "includeEdges", value.asInstanceOf[js.Any])
+    inline def setIncludeEdges(value: Boolean): Self = StObject.set(x, "includeEdges", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeEdgesUndefined: Self = StObject.set(x, "includeEdges", js.undefined)
+    inline def setIncludeEdgesUndefined: Self = StObject.set(x, "includeEdges", js.undefined)
     
-    @scala.inline
-    def setIncludeLabels(value: Boolean): Self = StObject.set(x, "includeLabels", value.asInstanceOf[js.Any])
+    inline def setIncludeLabels(value: Boolean): Self = StObject.set(x, "includeLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeLabelsUndefined: Self = StObject.set(x, "includeLabels", js.undefined)
+    inline def setIncludeLabelsUndefined: Self = StObject.set(x, "includeLabels", js.undefined)
     
-    @scala.inline
-    def setIncludeMainLabels(value: Boolean): Self = StObject.set(x, "includeMainLabels", value.asInstanceOf[js.Any])
+    inline def setIncludeMainLabels(value: Boolean): Self = StObject.set(x, "includeMainLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeMainLabelsUndefined: Self = StObject.set(x, "includeMainLabels", js.undefined)
+    inline def setIncludeMainLabelsUndefined: Self = StObject.set(x, "includeMainLabels", js.undefined)
     
-    @scala.inline
-    def setIncludeNodes(value: Boolean): Self = StObject.set(x, "includeNodes", value.asInstanceOf[js.Any])
+    inline def setIncludeNodes(value: Boolean): Self = StObject.set(x, "includeNodes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeNodesUndefined: Self = StObject.set(x, "includeNodes", js.undefined)
+    inline def setIncludeNodesUndefined: Self = StObject.set(x, "includeNodes", js.undefined)
     
-    @scala.inline
-    def setIncludeOverlays(value: Boolean): Self = StObject.set(x, "includeOverlays", value.asInstanceOf[js.Any])
+    inline def setIncludeOverlays(value: Boolean): Self = StObject.set(x, "includeOverlays", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeOverlaysUndefined: Self = StObject.set(x, "includeOverlays", js.undefined)
+    inline def setIncludeOverlaysUndefined: Self = StObject.set(x, "includeOverlays", js.undefined)
     
-    @scala.inline
-    def setIncludeSourceLabels(value: Boolean): Self = StObject.set(x, "includeSourceLabels", value.asInstanceOf[js.Any])
+    inline def setIncludeSourceLabels(value: Boolean): Self = StObject.set(x, "includeSourceLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeSourceLabelsUndefined: Self = StObject.set(x, "includeSourceLabels", js.undefined)
+    inline def setIncludeSourceLabelsUndefined: Self = StObject.set(x, "includeSourceLabels", js.undefined)
     
-    @scala.inline
-    def setIncludeTargetLabels(value: Boolean): Self = StObject.set(x, "includeTargetLabels", value.asInstanceOf[js.Any])
+    inline def setIncludeTargetLabels(value: Boolean): Self = StObject.set(x, "includeTargetLabels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeTargetLabelsUndefined: Self = StObject.set(x, "includeTargetLabels", js.undefined)
+    inline def setIncludeTargetLabelsUndefined: Self = StObject.set(x, "includeTargetLabels", js.undefined)
   }
 }

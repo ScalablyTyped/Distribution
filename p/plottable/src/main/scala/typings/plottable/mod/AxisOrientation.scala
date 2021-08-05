@@ -17,24 +17,20 @@ object AxisOrientation {
   @JSImport("plottable", "AxisOrientation.bottom")
   @js.native
   def bottom: typings.plottable.plottableStrings.bottom = js.native
-  @scala.inline
-  def bottom_=(x: bottom): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottom")(x.asInstanceOf[js.Any])
+  inline def bottom_=(x: bottom): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bottom")(x.asInstanceOf[js.Any])
   
   @JSImport("plottable", "AxisOrientation.left")
   @js.native
   def left: typings.plottable.plottableStrings.left = js.native
-  @scala.inline
-  def left_=(x: left): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("left")(x.asInstanceOf[js.Any])
+  inline def left_=(x: left): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("left")(x.asInstanceOf[js.Any])
   
   @JSImport("plottable", "AxisOrientation.right")
   @js.native
   def right: typings.plottable.plottableStrings.right = js.native
-  @scala.inline
-  def right_=(x: right): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("right")(x.asInstanceOf[js.Any])
+  inline def right_=(x: right): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("right")(x.asInstanceOf[js.Any])
   
   @JSImport("plottable", "AxisOrientation.top")
   @js.native
   def top: typings.plottable.plottableStrings.top = js.native
-  @scala.inline
-  def top_=(x: top): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("top")(x.asInstanceOf[js.Any])
+  inline def top_=(x: top): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("top")(x.asInstanceOf[js.Any])
 }

@@ -11,16 +11,13 @@ trait WorkerOnMessageCallbackResult extends StObject {
 }
 object WorkerOnMessageCallbackResult {
   
-  @scala.inline
-  def apply(message: IAnyObject): WorkerOnMessageCallbackResult = {
+  inline def apply(message: IAnyObject): WorkerOnMessageCallbackResult = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorkerOnMessageCallbackResult]
   }
   
-  @scala.inline
-  implicit class WorkerOnMessageCallbackResultMutableBuilder[Self <: WorkerOnMessageCallbackResult] (val x: Self) extends AnyVal {
+  extension [Self <: WorkerOnMessageCallbackResult](x: Self) {
     
-    @scala.inline
-    def setMessage(value: IAnyObject): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+    inline def setMessage(value: IAnyObject): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }
 }

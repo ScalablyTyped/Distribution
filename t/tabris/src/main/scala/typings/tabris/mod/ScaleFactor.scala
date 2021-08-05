@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ScaleFactor extends StObject
 object ScaleFactor {
   
-  @scala.inline
-  def higher: typings.tabris.tabrisStrings.higher = "higher".asInstanceOf[typings.tabris.tabrisStrings.higher]
+  inline def higher: typings.tabris.tabrisStrings.higher = "higher".asInstanceOf[typings.tabris.tabrisStrings.higher]
   
-  @scala.inline
-  def lower: typings.tabris.tabrisStrings.lower = "lower".asInstanceOf[typings.tabris.tabrisStrings.lower]
+  inline def lower: typings.tabris.tabrisStrings.lower = "lower".asInstanceOf[typings.tabris.tabrisStrings.lower]
   
-  @scala.inline
-  def nearest: typings.tabris.tabrisStrings.nearest = "nearest".asInstanceOf[typings.tabris.tabrisStrings.nearest]
+  inline def nearest: typings.tabris.tabrisStrings.nearest = "nearest".asInstanceOf[typings.tabris.tabrisStrings.nearest]
 }

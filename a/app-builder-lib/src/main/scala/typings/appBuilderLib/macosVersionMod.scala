@@ -10,12 +10,9 @@ object macosVersionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def isMacOsCatalina(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMacOsCatalina")().asInstanceOf[Boolean]
+  inline def isMacOsCatalina(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMacOsCatalina")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def isMacOsHighSierra(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMacOsHighSierra")().asInstanceOf[Boolean]
+  inline def isMacOsHighSierra(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMacOsHighSierra")().asInstanceOf[Boolean]
   
-  @scala.inline
-  def isMacOsSierra(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isMacOsSierra")().asInstanceOf[js.Promise[Boolean]]
+  inline def isMacOsSierra(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isMacOsSierra")().asInstanceOf[js.Promise[Boolean]]
 }

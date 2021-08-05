@@ -115,14 +115,11 @@ object indexMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @scala.inline
-    def entryIsConflict(entry: IndexEntry): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("entryIsConflict")(entry.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    inline def entryIsConflict(entry: IndexEntry): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("entryIsConflict")(entry.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @scala.inline
-    def entryStage(entry: IndexEntry): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("entryStage")(entry.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def entryStage(entry: IndexEntry): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("entryStage")(entry.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @scala.inline
-    def open(indexPath: String): js.Promise[Index] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(indexPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Index]]
+    inline def open(indexPath: String): js.Promise[Index] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(indexPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Index]]
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitNumbers.`0`
@@ -133,17 +130,13 @@ object indexMod {
     trait ADD_OPTION extends StObject
     object ADD_OPTION {
       
-      @scala.inline
-      def ADD_CHECK_PATHSPEC: `4` = 4.asInstanceOf[`4`]
+      inline def ADD_CHECK_PATHSPEC: `4` = 4.asInstanceOf[`4`]
       
-      @scala.inline
-      def ADD_DEFAULT: `0` = 0.asInstanceOf[`0`]
+      inline def ADD_DEFAULT: `0` = 0.asInstanceOf[`0`]
       
-      @scala.inline
-      def ADD_DISABLE_PATHSPEC_MATCH: `2` = 2.asInstanceOf[`2`]
+      inline def ADD_DISABLE_PATHSPEC_MATCH: `2` = 2.asInstanceOf[`2`]
       
-      @scala.inline
-      def ADD_FORCE: `1` = 1.asInstanceOf[`1`]
+      inline def ADD_FORCE: `1` = 1.asInstanceOf[`1`]
     }
     
     /* Rewritten from type alias, can be one of: 
@@ -155,17 +148,13 @@ object indexMod {
     trait CAP extends StObject
     object CAP {
       
-      @scala.inline
-      def FROM_OWNER: `-1` = -1.asInstanceOf[`-1`]
+      inline def FROM_OWNER: `-1` = -1.asInstanceOf[`-1`]
       
-      @scala.inline
-      def IGNORE_CASE: `1` = 1.asInstanceOf[`1`]
+      inline def IGNORE_CASE: `1` = 1.asInstanceOf[`1`]
       
-      @scala.inline
-      def NO_FILEMODE: `2` = 2.asInstanceOf[`2`]
+      inline def NO_FILEMODE: `2` = 2.asInstanceOf[`2`]
       
-      @scala.inline
-      def NO_SYMLINKS: `4` = 4.asInstanceOf[`4`]
+      inline def NO_SYMLINKS: `4` = 4.asInstanceOf[`4`]
     }
   }
 }

@@ -13,22 +13,17 @@ trait Href extends StObject {
 }
 object Href {
   
-  @scala.inline
-  def apply(href: String): Href = {
+  inline def apply(href: String): Href = {
     val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
     __obj.asInstanceOf[Href]
   }
   
-  @scala.inline
-  implicit class HrefMutableBuilder[Self <: Href] (val x: Self) extends AnyVal {
+  extension [Self <: Href](x: Self) {
     
-    @scala.inline
-    def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
+    inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
+    inline def setTitle(value: ReactNode): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
+    inline def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
   }
 }

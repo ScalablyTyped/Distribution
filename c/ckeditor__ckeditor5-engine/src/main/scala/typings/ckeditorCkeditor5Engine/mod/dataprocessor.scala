@@ -42,17 +42,14 @@ object dataprocessor {
   }
   object HtmlWriter {
     
-    @scala.inline
-    def apply(getHtml: DocumentFragment => String): HtmlWriter = {
+    inline def apply(getHtml: DocumentFragment => String): HtmlWriter = {
       val __obj = js.Dynamic.literal(getHtml = js.Any.fromFunction1(getHtml))
       __obj.asInstanceOf[HtmlWriter]
     }
     
-    @scala.inline
-    implicit class HtmlWriterMutableBuilder[Self <: HtmlWriter] (val x: Self) extends AnyVal {
+    extension [Self <: HtmlWriter](x: Self) {
       
-      @scala.inline
-      def setGetHtml(value: DocumentFragment => String): Self = StObject.set(x, "getHtml", js.Any.fromFunction1(value))
+      inline def setGetHtml(value: DocumentFragment => String): Self = StObject.set(x, "getHtml", js.Any.fromFunction1(value))
     }
   }
 }

@@ -49,55 +49,39 @@ trait LogicalLocation extends StObject {
 }
 object LogicalLocation {
   
-  @scala.inline
-  def apply(): LogicalLocation = {
+  inline def apply(): LogicalLocation = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LogicalLocation]
   }
   
-  @scala.inline
-  implicit class LogicalLocationMutableBuilder[Self <: LogicalLocation] (val x: Self) extends AnyVal {
+  extension [Self <: LogicalLocation](x: Self) {
     
-    @scala.inline
-    def setDecoratedName(value: String): Self = StObject.set(x, "decoratedName", value.asInstanceOf[js.Any])
+    inline def setDecoratedName(value: String): Self = StObject.set(x, "decoratedName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDecoratedNameUndefined: Self = StObject.set(x, "decoratedName", js.undefined)
+    inline def setDecoratedNameUndefined: Self = StObject.set(x, "decoratedName", js.undefined)
     
-    @scala.inline
-    def setFullyQualifiedName(value: String): Self = StObject.set(x, "fullyQualifiedName", value.asInstanceOf[js.Any])
+    inline def setFullyQualifiedName(value: String): Self = StObject.set(x, "fullyQualifiedName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFullyQualifiedNameUndefined: Self = StObject.set(x, "fullyQualifiedName", js.undefined)
+    inline def setFullyQualifiedNameUndefined: Self = StObject.set(x, "fullyQualifiedName", js.undefined)
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
+    inline def setIndexUndefined: Self = StObject.set(x, "index", js.undefined)
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setParentIndex(value: Double): Self = StObject.set(x, "parentIndex", value.asInstanceOf[js.Any])
+    inline def setParentIndex(value: Double): Self = StObject.set(x, "parentIndex", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParentIndexUndefined: Self = StObject.set(x, "parentIndex", js.undefined)
+    inline def setParentIndexUndefined: Self = StObject.set(x, "parentIndex", js.undefined)
     
-    @scala.inline
-    def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: PropertyBag): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
   }
 }

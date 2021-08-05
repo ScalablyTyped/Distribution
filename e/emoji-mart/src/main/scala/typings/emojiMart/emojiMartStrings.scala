@@ -10,140 +10,119 @@ object emojiMartStrings {
   
   @js.native
   sealed trait _empty extends StObject
-  @scala.inline
-  def _empty: _empty = "".asInstanceOf[_empty]
+  inline def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
   sealed trait activity
     extends StObject
        with CategoryName
-  @scala.inline
-  def activity: activity = "activity".asInstanceOf[activity]
+  inline def activity: activity = "activity".asInstanceOf[activity]
   
   @js.native
   sealed trait apple
     extends StObject
        with EmojiSet
-  @scala.inline
-  def apple: apple = "apple".asInstanceOf[apple]
+  inline def apple: apple = "apple".asInstanceOf[apple]
   
   @js.native
   sealed trait auto extends StObject
-  @scala.inline
-  def auto: auto = "auto".asInstanceOf[auto]
+  inline def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
   sealed trait custom
     extends StObject
        with CategoryName
-  @scala.inline
-  def custom: custom = "custom".asInstanceOf[custom]
+  inline def custom: custom = "custom".asInstanceOf[custom]
   
   @js.native
   sealed trait dark extends StObject
-  @scala.inline
-  def dark: dark = "dark".asInstanceOf[dark]
+  inline def dark: dark = "dark".asInstanceOf[dark]
   
   @js.native
   sealed trait emojione
     extends StObject
        with EmojiSet
-  @scala.inline
-  def emojione: emojione = "emojione".asInstanceOf[emojione]
+  inline def emojione: emojione = "emojione".asInstanceOf[emojione]
   
   @js.native
   sealed trait facebook
     extends StObject
        with EmojiSet
-  @scala.inline
-  def facebook: facebook = "facebook".asInstanceOf[facebook]
+  inline def facebook: facebook = "facebook".asInstanceOf[facebook]
   
   @js.native
   sealed trait flags
     extends StObject
        with CategoryName
-  @scala.inline
-  def flags: flags = "flags".asInstanceOf[flags]
+  inline def flags: flags = "flags".asInstanceOf[flags]
   
   @js.native
   sealed trait foods
     extends StObject
        with CategoryName
-  @scala.inline
-  def foods: foods = "foods".asInstanceOf[foods]
+  inline def foods: foods = "foods".asInstanceOf[foods]
   
   @js.native
   sealed trait google
     extends StObject
        with EmojiSet
-  @scala.inline
-  def google: google = "google".asInstanceOf[google]
+  inline def google: google = "google".asInstanceOf[google]
   
   @js.native
   sealed trait light extends StObject
-  @scala.inline
-  def light: light = "light".asInstanceOf[light]
+  inline def light: light = "light".asInstanceOf[light]
   
   @js.native
   sealed trait messenger
     extends StObject
        with EmojiSet
-  @scala.inline
-  def messenger: messenger = "messenger".asInstanceOf[messenger]
+  inline def messenger: messenger = "messenger".asInstanceOf[messenger]
   
   @js.native
   sealed trait nature
     extends StObject
        with CategoryName
-  @scala.inline
-  def nature: nature = "nature".asInstanceOf[nature]
+  inline def nature: nature = "nature".asInstanceOf[nature]
   
   @js.native
   sealed trait objects
     extends StObject
        with CategoryName
-  @scala.inline
-  def objects: objects = "objects".asInstanceOf[objects]
+  inline def objects: objects = "objects".asInstanceOf[objects]
   
   @js.native
   sealed trait people
     extends StObject
        with CategoryName
-  @scala.inline
-  def people: people = "people".asInstanceOf[people]
+  inline def people: people = "people".asInstanceOf[people]
   
   @js.native
   sealed trait places
     extends StObject
        with CategoryName
-  @scala.inline
-  def places: places = "places".asInstanceOf[places]
+  inline def places: places = "places".asInstanceOf[places]
   
   @js.native
   sealed trait recent
     extends StObject
        with CategoryName
-  @scala.inline
-  def recent: recent = "recent".asInstanceOf[recent]
+  inline def recent: recent = "recent".asInstanceOf[recent]
   
   @js.native
   sealed trait search
     extends StObject
        with CategoryName
-  @scala.inline
-  def search: search = "search".asInstanceOf[search]
+  inline def search: search = "search".asInstanceOf[search]
   
   @js.native
   sealed trait symbols
     extends StObject
        with CategoryName
-  @scala.inline
-  def symbols: symbols = "symbols".asInstanceOf[symbols]
+  inline def symbols: symbols = "symbols".asInstanceOf[symbols]
   
   @js.native
   sealed trait twitter
     extends StObject
        with EmojiSet
-  @scala.inline
-  def twitter: twitter = "twitter".asInstanceOf[twitter]
+  inline def twitter: twitter = "twitter".asInstanceOf[twitter]
 }

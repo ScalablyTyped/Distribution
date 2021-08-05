@@ -10,8 +10,7 @@ trait PutBucketCorsInput
      with typings.awsSdkClientS3Browser.typesPutBucketCorsInputMod.PutBucketCorsInput
 object PutBucketCorsInput {
   
-  @scala.inline
-  def apply(Bucket: String, CORSConfiguration: CORSConfiguration): PutBucketCorsInput = {
+  inline def apply(Bucket: String, CORSConfiguration: CORSConfiguration): PutBucketCorsInput = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], CORSConfiguration = CORSConfiguration.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutBucketCorsInput]
   }

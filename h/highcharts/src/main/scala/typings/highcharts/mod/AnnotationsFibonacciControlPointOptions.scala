@@ -10,19 +10,15 @@ trait AnnotationsFibonacciControlPointOptions extends StObject {
 }
 object AnnotationsFibonacciControlPointOptions {
   
-  @scala.inline
-  def apply(): AnnotationsFibonacciControlPointOptions = {
+  inline def apply(): AnnotationsFibonacciControlPointOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AnnotationsFibonacciControlPointOptions]
   }
   
-  @scala.inline
-  implicit class AnnotationsFibonacciControlPointOptionsMutableBuilder[Self <: AnnotationsFibonacciControlPointOptions] (val x: Self) extends AnyVal {
+  extension [Self <: AnnotationsFibonacciControlPointOptions](x: Self) {
     
-    @scala.inline
-    def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    inline def setEvents(value: js.Any): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
+    inline def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
   }
 }

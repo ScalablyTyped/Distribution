@@ -20,20 +20,16 @@ object anon {
   }
   object `0` {
     
-    @scala.inline
-    def apply(): `0` = {
+    inline def apply(): `0` = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[`0`]
     }
     
-    @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
+    extension [Self <: `0`](x: Self) {
       
-      @scala.inline
-      def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
+      inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
+      inline def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
     }
   }
   
@@ -53,50 +49,36 @@ object anon {
   }
   object Fields {
     
-    @scala.inline
-    def apply(): Fields = {
+    inline def apply(): Fields = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Fields]
     }
     
-    @scala.inline
-    implicit class FieldsMutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
+    extension [Self <: Fields](x: Self) {
       
-      @scala.inline
-      def setFields(value: FieldSpecifier): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: FieldSpecifier): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      @scala.inline
-      def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
+      inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
+      inline def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
-      @scala.inline
-      def setReactive(value: Boolean): Self = StObject.set(x, "reactive", value.asInstanceOf[js.Any])
+      inline def setReactive(value: Boolean): Self = StObject.set(x, "reactive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReactiveUndefined: Self = StObject.set(x, "reactive", js.undefined)
+      inline def setReactiveUndefined: Self = StObject.set(x, "reactive", js.undefined)
       
-      @scala.inline
-      def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+      inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+      inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
       
-      @scala.inline
-      def setSort(value: SortSpecifier): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+      inline def setSort(value: SortSpecifier): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+      inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
       
-      @scala.inline
-      def setTransform(value: /* doc */ js.Any => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+      inline def setTransform(value: /* doc */ js.Any => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }
   }
   
@@ -138,8 +120,7 @@ object anon {
   }
   object Find {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       find: js.Function3[/* userId */ String, /* selector */ Selector, /* options */ ModifierOptions, Unit] => Unit,
       findOne: js.Function3[/* userId */ String, /* selector */ Selector, /* options */ ModifierOptions, Unit] => Unit,
       insert: js.Function2[/* userId */ String, /* doc */ T, Unit] => Unit,
@@ -165,27 +146,21 @@ object anon {
       __obj.asInstanceOf[Find[T]]
     }
     
-    @scala.inline
-    implicit class FindMutableBuilder[Self <: Find[?], T] (val x: Self & Find[T]) extends AnyVal {
+    extension [Self <: Find[?], T](x: Self & Find[T]) {
       
-      @scala.inline
-      def setFind(
+      inline def setFind(
         value: js.Function3[/* userId */ String, /* selector */ Selector, /* options */ ModifierOptions, Unit] => Unit
       ): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFindOne(
+      inline def setFindOne(
         value: js.Function3[/* userId */ String, /* selector */ Selector, /* options */ ModifierOptions, Unit] => Unit
       ): Self = StObject.set(x, "findOne", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInsert(value: js.Function2[/* userId */ String, /* doc */ T, Unit] => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
+      inline def setInsert(value: js.Function2[/* userId */ String, /* doc */ T, Unit] => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemove(value: js.Function2[/* userId */ String, /* doc */ T, Unit] => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: js.Function2[/* userId */ String, /* doc */ T, Unit] => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdate(
+      inline def setUpdate(
         value: js.Function5[
               /* userId */ String, 
               /* doc */ T, 
@@ -196,8 +171,7 @@ object anon {
             ] => Unit
       ): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpsert(
+      inline def setUpsert(
         value: js.Function5[
               /* userId */ String, 
               /* doc */ T, 
@@ -337,26 +311,20 @@ object anon {
   }
   object InsertedId {
     
-    @scala.inline
-    def apply(): InsertedId = {
+    inline def apply(): InsertedId = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[InsertedId]
     }
     
-    @scala.inline
-    implicit class InsertedIdMutableBuilder[Self <: InsertedId] (val x: Self) extends AnyVal {
+    extension [Self <: InsertedId](x: Self) {
       
-      @scala.inline
-      def setInsertedId(value: String): Self = StObject.set(x, "insertedId", value.asInstanceOf[js.Any])
+      inline def setInsertedId(value: String): Self = StObject.set(x, "insertedId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInsertedIdUndefined: Self = StObject.set(x, "insertedId", js.undefined)
+      inline def setInsertedIdUndefined: Self = StObject.set(x, "insertedId", js.undefined)
       
-      @scala.inline
-      def setNumberAffected(value: Double): Self = StObject.set(x, "numberAffected", value.asInstanceOf[js.Any])
+      inline def setNumberAffected(value: Double): Self = StObject.set(x, "numberAffected", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNumberAffectedUndefined: Self = StObject.set(x, "numberAffected", js.undefined)
+      inline def setNumberAffectedUndefined: Self = StObject.set(x, "numberAffected", js.undefined)
     }
   }
   
@@ -368,26 +336,20 @@ object anon {
   }
   object Multi {
     
-    @scala.inline
-    def apply(): Multi = {
+    inline def apply(): Multi = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Multi]
     }
     
-    @scala.inline
-    implicit class MultiMutableBuilder[Self <: Multi] (val x: Self) extends AnyVal {
+    extension [Self <: Multi](x: Self) {
       
-      @scala.inline
-      def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
+      inline def setMulti(value: Boolean): Self = StObject.set(x, "multi", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
+      inline def setMultiUndefined: Self = StObject.set(x, "multi", js.undefined)
       
-      @scala.inline
-      def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
+      inline def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
+      inline def setUpsertUndefined: Self = StObject.set(x, "upsert", js.undefined)
     }
   }
   
@@ -405,44 +367,32 @@ object anon {
   }
   object Reactive {
     
-    @scala.inline
-    def apply(): Reactive = {
+    inline def apply(): Reactive = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Reactive]
     }
     
-    @scala.inline
-    implicit class ReactiveMutableBuilder[Self <: Reactive] (val x: Self) extends AnyVal {
+    extension [Self <: Reactive](x: Self) {
       
-      @scala.inline
-      def setFields(value: FieldSpecifier): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+      inline def setFields(value: FieldSpecifier): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
+      inline def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
       
-      @scala.inline
-      def setReactive(value: Boolean): Self = StObject.set(x, "reactive", value.asInstanceOf[js.Any])
+      inline def setReactive(value: Boolean): Self = StObject.set(x, "reactive", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReactiveUndefined: Self = StObject.set(x, "reactive", js.undefined)
+      inline def setReactiveUndefined: Self = StObject.set(x, "reactive", js.undefined)
       
-      @scala.inline
-      def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
+      inline def setSkip(value: Double): Self = StObject.set(x, "skip", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
+      inline def setSkipUndefined: Self = StObject.set(x, "skip", js.undefined)
       
-      @scala.inline
-      def setSort(value: SortSpecifier): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
+      inline def setSort(value: SortSpecifier): Self = StObject.set(x, "sort", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
+      inline def setSortUndefined: Self = StObject.set(x, "sort", js.undefined)
       
-      @scala.inline
-      def setTransform(value: /* doc */ js.Any => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+      inline def setTransform(value: /* doc */ js.Any => Unit): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
+      inline def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
     }
   }
   
@@ -494,8 +444,7 @@ object anon {
   }
   object Remove {
     
-    @scala.inline
-    def apply[T](
+    inline def apply[T](
       find: js.Function3[
           /* userId */ String, 
           /* selector */ Selector, 
@@ -531,11 +480,9 @@ object anon {
       __obj.asInstanceOf[Remove[T]]
     }
     
-    @scala.inline
-    implicit class RemoveMutableBuilder[Self <: Remove[?], T] (val x: Self & Remove[T]) extends AnyVal {
+    extension [Self <: Remove[?], T](x: Self & Remove[T]) {
       
-      @scala.inline
-      def setFind(
+      inline def setFind(
         value: js.Function3[
               /* userId */ String, 
               /* selector */ Selector, 
@@ -544,8 +491,7 @@ object anon {
             ] => Unit
       ): Self = StObject.set(x, "find", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFindOne(
+      inline def setFindOne(
         value: js.Function3[
               /* userId */ String, 
               /* selector */ Selector, 
@@ -554,14 +500,11 @@ object anon {
             ] => Unit
       ): Self = StObject.set(x, "findOne", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInsert(value: js.Function2[/* userId */ String, /* doc */ T, Unit] => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
+      inline def setInsert(value: js.Function2[/* userId */ String, /* doc */ T, Unit] => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemove(value: js.Function2[/* userId */ String, /* doc */ T, Unit] => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: js.Function2[/* userId */ String, /* doc */ T, Unit] => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpdate(
+      inline def setUpdate(
         value: js.Function5[
               /* userId */ String, 
               /* doc */ T, 
@@ -572,8 +515,7 @@ object anon {
             ] => Unit
       ): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setUpsert(
+      inline def setUpsert(
         value: js.Function5[
               /* userId */ String, 
               /* doc */ T, 

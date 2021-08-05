@@ -75,8 +75,7 @@ trait PlatformInfo extends StObject {
 }
 object PlatformInfo {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     arch: ToStringLiteral[
       ARM, 
       /* keyof chrome-apps.anon.ARM */ typings.chromeApps.chromeAppsStrings.ARM | X86_32 | X86_64 | MIPS | MIPS64, 
@@ -106,11 +105,9 @@ object PlatformInfo {
     __obj.asInstanceOf[PlatformInfo]
   }
   
-  @scala.inline
-  implicit class PlatformInfoMutableBuilder[Self <: PlatformInfo] (val x: Self) extends AnyVal {
+  extension [Self <: PlatformInfo](x: Self) {
     
-    @scala.inline
-    def setArch(
+    inline def setArch(
       value: ToStringLiteral[
           ARM, 
           /* keyof chrome-apps.anon.ARM */ typings.chromeApps.chromeAppsStrings.ARM | X86_32 | X86_64 | MIPS | MIPS64, 
@@ -121,8 +118,7 @@ object PlatformInfo {
         ]
     ): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNacl_arch(
+    inline def setNacl_arch(
       value: ToStringLiteral[
           ARM, 
           /* keyof chrome-apps.anon.ARM */ typings.chromeApps.chromeAppsStrings.ARM | X86_32 | X86_64 | MIPS | MIPS64, 
@@ -133,8 +129,7 @@ object PlatformInfo {
         ]
     ): Self = StObject.set(x, "nacl_arch", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOs(
+    inline def setOs(
       value: ToStringLiteral[
           ANDROID, 
           /* keyof chrome-apps.anon.ANDROID */ typings.chromeApps.chromeAppsStrings.ANDROID | CROS | LINUX | MAC | OPENBSD | WIN, 

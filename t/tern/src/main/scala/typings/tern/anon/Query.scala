@@ -10,19 +10,15 @@ trait Query[Q /* <: typings.tern.ternMod.Query */] extends StObject {
 }
 object Query {
   
-  @scala.inline
-  def apply[Q /* <: typings.tern.ternMod.Query */](): Query[Q] = {
+  inline def apply[Q /* <: typings.tern.ternMod.Query */](): Query[Q] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Query[Q]]
   }
   
-  @scala.inline
-  implicit class QueryMutableBuilder[Self <: Query[?], Q /* <: typings.tern.ternMod.Query */] (val x: Self & Query[Q]) extends AnyVal {
+  extension [Self <: Query[?], Q /* <: typings.tern.ternMod.Query */](x: Self & Query[Q]) {
     
-    @scala.inline
-    def setQuery(value: Q): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: Q): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
   }
 }

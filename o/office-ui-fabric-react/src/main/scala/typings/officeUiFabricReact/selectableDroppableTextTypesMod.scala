@@ -120,80 +120,56 @@ object selectableDroppableTextTypesMod {
   }
   object ISelectableDroppableTextProps {
     
-    @scala.inline
-    def apply[TComponent, TListenerElement](): ISelectableDroppableTextProps[TComponent, TListenerElement] = {
+    inline def apply[TComponent, TListenerElement](): ISelectableDroppableTextProps[TComponent, TListenerElement] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ISelectableDroppableTextProps[TComponent, TListenerElement]]
     }
     
-    @scala.inline
-    implicit class ISelectableDroppableTextPropsMutableBuilder[Self <: ISelectableDroppableTextProps[?, ?], TComponent, TListenerElement] (val x: Self & (ISelectableDroppableTextProps[TComponent, TListenerElement])) extends AnyVal {
+    extension [Self <: ISelectableDroppableTextProps[?, ?], TComponent, TListenerElement](x: Self & (ISelectableDroppableTextProps[TComponent, TListenerElement])) {
       
-      @scala.inline
-      def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
+      inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
+      inline def setAriaLabelUndefined: Self = StObject.set(x, "ariaLabel", js.undefined)
       
-      @scala.inline
-      def setCalloutProps(value: ICalloutProps): Self = StObject.set(x, "calloutProps", value.asInstanceOf[js.Any])
+      inline def setCalloutProps(value: ICalloutProps): Self = StObject.set(x, "calloutProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCalloutPropsUndefined: Self = StObject.set(x, "calloutProps", js.undefined)
+      inline def setCalloutPropsUndefined: Self = StObject.set(x, "calloutProps", js.undefined)
       
-      @scala.inline
-      def setComponentRef(value: IRefObject[TComponent]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+      inline def setComponentRef(value: IRefObject[TComponent]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComponentRefFunction1(value: /* ref */ TComponent | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+      inline def setComponentRefFunction1(value: /* ref */ TComponent | Null => Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
+      inline def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)
       
-      @scala.inline
-      def setDefaultSelectedKey(value: String | Double | (js.Array[Double | String])): Self = StObject.set(x, "defaultSelectedKey", value.asInstanceOf[js.Any])
+      inline def setDefaultSelectedKey(value: String | Double | (js.Array[Double | String])): Self = StObject.set(x, "defaultSelectedKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultSelectedKeyNull: Self = StObject.set(x, "defaultSelectedKey", null)
+      inline def setDefaultSelectedKeyNull: Self = StObject.set(x, "defaultSelectedKey", null)
       
-      @scala.inline
-      def setDefaultSelectedKeyUndefined: Self = StObject.set(x, "defaultSelectedKey", js.undefined)
+      inline def setDefaultSelectedKeyUndefined: Self = StObject.set(x, "defaultSelectedKey", js.undefined)
       
-      @scala.inline
-      def setDefaultSelectedKeyVarargs(value: (Double | String)*): Self = StObject.set(x, "defaultSelectedKey", js.Array(value :_*))
+      inline def setDefaultSelectedKeyVarargs(value: (Double | String)*): Self = StObject.set(x, "defaultSelectedKey", js.Array(value :_*))
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+      inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+      inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setMultiSelect(value: Boolean): Self = StObject.set(x, "multiSelect", value.asInstanceOf[js.Any])
+      inline def setMultiSelect(value: Boolean): Self = StObject.set(x, "multiSelect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMultiSelectUndefined: Self = StObject.set(x, "multiSelect", js.undefined)
+      inline def setMultiSelectUndefined: Self = StObject.set(x, "multiSelect", js.undefined)
       
-      @scala.inline
-      def setOnDismiss(value: () => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction0(value))
+      inline def setOnDismiss(value: () => Unit): Self = StObject.set(x, "onDismiss", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
+      inline def setOnDismissUndefined: Self = StObject.set(x, "onDismiss", js.undefined)
       
-      @scala.inline
-      def setOnRenderContainer(
+      inline def setOnRenderContainer(
         value: (/* props */ js.UndefOr[ISelectableDroppableTextProps[TComponent, TListenerElement]], /* defaultRender */ js.UndefOr[
               js.Function1[
                 /* props */ js.UndefOr[ISelectableDroppableTextProps[TComponent, TListenerElement]], 
@@ -202,19 +178,15 @@ object selectableDroppableTextTypesMod {
             ]) => Element | Null
       ): Self = StObject.set(x, "onRenderContainer", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRenderContainerUndefined: Self = StObject.set(x, "onRenderContainer", js.undefined)
+      inline def setOnRenderContainerUndefined: Self = StObject.set(x, "onRenderContainer", js.undefined)
       
-      @scala.inline
-      def setOnRenderItem(
+      inline def setOnRenderItem(
         value: (/* props */ js.UndefOr[ISelectableOption], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[ISelectableOption], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderItem", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRenderItemUndefined: Self = StObject.set(x, "onRenderItem", js.undefined)
+      inline def setOnRenderItemUndefined: Self = StObject.set(x, "onRenderItem", js.undefined)
       
-      @scala.inline
-      def setOnRenderList(
+      inline def setOnRenderList(
         value: (/* props */ js.UndefOr[ISelectableDroppableTextProps[TComponent, TListenerElement]], /* defaultRender */ js.UndefOr[
               js.Function1[
                 /* props */ js.UndefOr[ISelectableDroppableTextProps[TComponent, TListenerElement]], 
@@ -223,52 +195,37 @@ object selectableDroppableTextTypesMod {
             ]) => Element | Null
       ): Self = StObject.set(x, "onRenderList", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRenderListUndefined: Self = StObject.set(x, "onRenderList", js.undefined)
+      inline def setOnRenderListUndefined: Self = StObject.set(x, "onRenderList", js.undefined)
       
-      @scala.inline
-      def setOnRenderOption(
+      inline def setOnRenderOption(
         value: (/* props */ js.UndefOr[ISelectableOption], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[ISelectableOption], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderOption", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnRenderOptionUndefined: Self = StObject.set(x, "onRenderOption", js.undefined)
+      inline def setOnRenderOptionUndefined: Self = StObject.set(x, "onRenderOption", js.undefined)
       
-      @scala.inline
-      def setOpenOnKeyboardFocus(value: Boolean): Self = StObject.set(x, "openOnKeyboardFocus", value.asInstanceOf[js.Any])
+      inline def setOpenOnKeyboardFocus(value: Boolean): Self = StObject.set(x, "openOnKeyboardFocus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOpenOnKeyboardFocusUndefined: Self = StObject.set(x, "openOnKeyboardFocus", js.undefined)
+      inline def setOpenOnKeyboardFocusUndefined: Self = StObject.set(x, "openOnKeyboardFocus", js.undefined)
       
-      @scala.inline
-      def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+      inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
-      @scala.inline
-      def setPanelProps(value: IPanelProps): Self = StObject.set(x, "panelProps", value.asInstanceOf[js.Any])
+      inline def setPanelProps(value: IPanelProps): Self = StObject.set(x, "panelProps", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPanelPropsUndefined: Self = StObject.set(x, "panelProps", js.undefined)
+      inline def setPanelPropsUndefined: Self = StObject.set(x, "panelProps", js.undefined)
       
-      @scala.inline
-      def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
+      inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
+      inline def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
-      @scala.inline
-      def setSelectedKey(value: String | Double | (js.Array[Double | String])): Self = StObject.set(x, "selectedKey", value.asInstanceOf[js.Any])
+      inline def setSelectedKey(value: String | Double | (js.Array[Double | String])): Self = StObject.set(x, "selectedKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedKeyNull: Self = StObject.set(x, "selectedKey", null)
+      inline def setSelectedKeyNull: Self = StObject.set(x, "selectedKey", null)
       
-      @scala.inline
-      def setSelectedKeyUndefined: Self = StObject.set(x, "selectedKey", js.undefined)
+      inline def setSelectedKeyUndefined: Self = StObject.set(x, "selectedKey", js.undefined)
       
-      @scala.inline
-      def setSelectedKeyVarargs(value: (Double | String)*): Self = StObject.set(x, "selectedKey", js.Array(value :_*))
+      inline def setSelectedKeyVarargs(value: (Double | String)*): Self = StObject.set(x, "selectedKey", js.Array(value :_*))
     }
   }
 }

@@ -36,8 +36,7 @@ object OperationInfo {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @scala.inline
-  def create(model: IModel): typings.mendixmodelsdk.webservicesMod.webservices.OperationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.webservicesMod.webservices.OperationInfo]
+  inline def create(model: IModel): typings.mendixmodelsdk.webservicesMod.webservices.OperationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.webservicesMod.webservices.OperationInfo]
   
   /**
     * Creates and returns a new OperationInfo instance in the SDK and on the server.
@@ -45,20 +44,17 @@ object OperationInfo {
     * of the parent ServiceInfo element passed as argument.
     */
   /* static member */
-  @scala.inline
-  def createIn(container: typings.mendixmodelsdk.webservicesMod.webservices.ServiceInfo): typings.mendixmodelsdk.webservicesMod.webservices.OperationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.webservicesMod.webservices.OperationInfo]
+  inline def createIn(container: typings.mendixmodelsdk.webservicesMod.webservices.ServiceInfo): typings.mendixmodelsdk.webservicesMod.webservices.OperationInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.webservicesMod.webservices.OperationInfo]
   
   /* static member */
   @JSImport("mendixmodelsdk", "webservices.OperationInfo.structureTypeName")
   @js.native
   def structureTypeName: String = js.native
-  @scala.inline
-  def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
+  inline def structureTypeName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("structureTypeName")(x.asInstanceOf[js.Any])
   
   /* static member */
   @JSImport("mendixmodelsdk", "webservices.OperationInfo.versionInfo")
   @js.native
   def versionInfo: StructureVersionInfo = js.native
-  @scala.inline
-  def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
+  inline def versionInfo_=(x: StructureVersionInfo): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("versionInfo")(x.asInstanceOf[js.Any])
 }

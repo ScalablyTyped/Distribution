@@ -21,28 +21,21 @@ trait SchemaAssetDiscoveryConfig extends StObject {
 }
 object SchemaAssetDiscoveryConfig {
   
-  @scala.inline
-  def apply(): SchemaAssetDiscoveryConfig = {
+  inline def apply(): SchemaAssetDiscoveryConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaAssetDiscoveryConfig]
   }
   
-  @scala.inline
-  implicit class SchemaAssetDiscoveryConfigMutableBuilder[Self <: SchemaAssetDiscoveryConfig] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaAssetDiscoveryConfig](x: Self) {
     
-    @scala.inline
-    def setInclusionMode(value: String): Self = StObject.set(x, "inclusionMode", value.asInstanceOf[js.Any])
+    inline def setInclusionMode(value: String): Self = StObject.set(x, "inclusionMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInclusionModeUndefined: Self = StObject.set(x, "inclusionMode", js.undefined)
+    inline def setInclusionModeUndefined: Self = StObject.set(x, "inclusionMode", js.undefined)
     
-    @scala.inline
-    def setProjectIds(value: js.Array[String]): Self = StObject.set(x, "projectIds", value.asInstanceOf[js.Any])
+    inline def setProjectIds(value: js.Array[String]): Self = StObject.set(x, "projectIds", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectIdsUndefined: Self = StObject.set(x, "projectIds", js.undefined)
+    inline def setProjectIdsUndefined: Self = StObject.set(x, "projectIds", js.undefined)
     
-    @scala.inline
-    def setProjectIdsVarargs(value: String*): Self = StObject.set(x, "projectIds", js.Array(value :_*))
+    inline def setProjectIdsVarargs(value: String*): Self = StObject.set(x, "projectIds", js.Array(value :_*))
   }
 }

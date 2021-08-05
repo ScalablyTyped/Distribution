@@ -22,28 +22,21 @@ trait SchemaDevicesListResponse extends StObject {
 }
 object SchemaDevicesListResponse {
   
-  @scala.inline
-  def apply(): SchemaDevicesListResponse = {
+  inline def apply(): SchemaDevicesListResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaDevicesListResponse]
   }
   
-  @scala.inline
-  implicit class SchemaDevicesListResponseMutableBuilder[Self <: SchemaDevicesListResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaDevicesListResponse](x: Self) {
     
-    @scala.inline
-    def setDevice(value: js.Array[SchemaDevice]): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
+    inline def setDevice(value: js.Array[SchemaDevice]): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
+    inline def setDeviceUndefined: Self = StObject.set(x, "device", js.undefined)
     
-    @scala.inline
-    def setDeviceVarargs(value: SchemaDevice*): Self = StObject.set(x, "device", js.Array(value :_*))
+    inline def setDeviceVarargs(value: SchemaDevice*): Self = StObject.set(x, "device", js.Array(value :_*))
     
-    @scala.inline
-    def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+    inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
   }
 }

@@ -16,37 +16,27 @@ trait ForceApprovalPrompt extends StObject {
 }
 object ForceApprovalPrompt {
   
-  @scala.inline
-  def apply(): ForceApprovalPrompt = {
+  inline def apply(): ForceApprovalPrompt = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ForceApprovalPrompt]
   }
   
-  @scala.inline
-  implicit class ForceApprovalPromptMutableBuilder[Self <: ForceApprovalPrompt] (val x: Self) extends AnyVal {
+  extension [Self <: ForceApprovalPrompt](x: Self) {
     
-    @scala.inline
-    def setForceApprovalPrompt(value: js.Object): Self = StObject.set(x, "forceApprovalPrompt", value.asInstanceOf[js.Any])
+    inline def setForceApprovalPrompt(value: js.Object): Self = StObject.set(x, "forceApprovalPrompt", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForceApprovalPromptUndefined: Self = StObject.set(x, "forceApprovalPrompt", js.undefined)
+    inline def setForceApprovalPromptUndefined: Self = StObject.set(x, "forceApprovalPrompt", js.undefined)
     
-    @scala.inline
-    def setPasswordSignupFields(value: String): Self = StObject.set(x, "passwordSignupFields", value.asInstanceOf[js.Any])
+    inline def setPasswordSignupFields(value: String): Self = StObject.set(x, "passwordSignupFields", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPasswordSignupFieldsUndefined: Self = StObject.set(x, "passwordSignupFields", js.undefined)
+    inline def setPasswordSignupFieldsUndefined: Self = StObject.set(x, "passwordSignupFields", js.undefined)
     
-    @scala.inline
-    def setRequestOfflineToken(value: js.Object): Self = StObject.set(x, "requestOfflineToken", value.asInstanceOf[js.Any])
+    inline def setRequestOfflineToken(value: js.Object): Self = StObject.set(x, "requestOfflineToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestOfflineTokenUndefined: Self = StObject.set(x, "requestOfflineToken", js.undefined)
+    inline def setRequestOfflineTokenUndefined: Self = StObject.set(x, "requestOfflineToken", js.undefined)
     
-    @scala.inline
-    def setRequestPermissions(value: js.Object): Self = StObject.set(x, "requestPermissions", value.asInstanceOf[js.Any])
+    inline def setRequestPermissions(value: js.Object): Self = StObject.set(x, "requestPermissions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestPermissionsUndefined: Self = StObject.set(x, "requestPermissions", js.undefined)
+    inline def setRequestPermissionsUndefined: Self = StObject.set(x, "requestPermissions", js.undefined)
   }
 }

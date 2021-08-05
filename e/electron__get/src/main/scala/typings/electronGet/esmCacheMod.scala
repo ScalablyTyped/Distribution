@@ -11,7 +11,7 @@ object esmCacheMod {
   class Cache () extends StObject {
     def this(cacheRoot: String) = this()
     
-    var cacheRoot: js.Any = js.native
+    /* private */ var cacheRoot: js.Any = js.native
     
     def getCachePath(downloadUrl: String, fileName: String): String = js.native
     

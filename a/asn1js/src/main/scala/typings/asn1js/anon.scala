@@ -18,29 +18,22 @@ object anon {
   }
   object IsIndefiniteForm {
     
-    @scala.inline
-    def apply(length: Double): IsIndefiniteForm = {
+    inline def apply(length: Double): IsIndefiniteForm = {
       val __obj = js.Dynamic.literal(length = length.asInstanceOf[js.Any])
       __obj.asInstanceOf[IsIndefiniteForm]
     }
     
-    @scala.inline
-    implicit class IsIndefiniteFormMutableBuilder[Self <: IsIndefiniteForm] (val x: Self) extends AnyVal {
+    extension [Self <: IsIndefiniteForm](x: Self) {
       
-      @scala.inline
-      def setIsIndefiniteForm(value: Boolean): Self = StObject.set(x, "isIndefiniteForm", value.asInstanceOf[js.Any])
+      inline def setIsIndefiniteForm(value: Boolean): Self = StObject.set(x, "isIndefiniteForm", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsIndefiniteFormUndefined: Self = StObject.set(x, "isIndefiniteForm", js.undefined)
+      inline def setIsIndefiniteFormUndefined: Self = StObject.set(x, "isIndefiniteForm", js.undefined)
       
-      @scala.inline
-      def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+      inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongFormUsed(value: Boolean): Self = StObject.set(x, "longFormUsed", value.asInstanceOf[js.Any])
+      inline def setLongFormUsed(value: Boolean): Self = StObject.set(x, "longFormUsed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLongFormUsedUndefined: Self = StObject.set(x, "longFormUsed", js.undefined)
+      inline def setLongFormUsedUndefined: Self = StObject.set(x, "longFormUsed", js.undefined)
     }
   }
   
@@ -67,71 +60,50 @@ object anon {
   }
   object LocalHexBlockParamsisCons {
     
-    @scala.inline
-    def apply(): LocalHexBlockParamsisCons = {
+    inline def apply(): LocalHexBlockParamsisCons = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LocalHexBlockParamsisCons]
     }
     
-    @scala.inline
-    implicit class LocalHexBlockParamsisConsMutableBuilder[Self <: LocalHexBlockParamsisCons] (val x: Self) extends AnyVal {
+    extension [Self <: LocalHexBlockParamsisCons](x: Self) {
       
-      @scala.inline
-      def setBlockLength(value: Double): Self = StObject.set(x, "blockLength", value.asInstanceOf[js.Any])
+      inline def setBlockLength(value: Double): Self = StObject.set(x, "blockLength", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBlockLengthUndefined: Self = StObject.set(x, "blockLength", js.undefined)
+      inline def setBlockLengthUndefined: Self = StObject.set(x, "blockLength", js.undefined)
       
-      @scala.inline
-      def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
+      inline def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
-      @scala.inline
-      def setIsConstructed(value: Boolean): Self = StObject.set(x, "isConstructed", value.asInstanceOf[js.Any])
+      inline def setIsConstructed(value: Boolean): Self = StObject.set(x, "isConstructed", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsConstructedUndefined: Self = StObject.set(x, "isConstructed", js.undefined)
+      inline def setIsConstructedUndefined: Self = StObject.set(x, "isConstructed", js.undefined)
       
-      @scala.inline
-      def setIsHexOnly(value: Boolean): Self = StObject.set(x, "isHexOnly", value.asInstanceOf[js.Any])
+      inline def setIsHexOnly(value: Boolean): Self = StObject.set(x, "isHexOnly", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIsHexOnlyUndefined: Self = StObject.set(x, "isHexOnly", js.undefined)
+      inline def setIsHexOnlyUndefined: Self = StObject.set(x, "isHexOnly", js.undefined)
       
-      @scala.inline
-      def setTagClass(value: Double): Self = StObject.set(x, "tagClass", value.asInstanceOf[js.Any])
+      inline def setTagClass(value: Double): Self = StObject.set(x, "tagClass", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagClassUndefined: Self = StObject.set(x, "tagClass", js.undefined)
+      inline def setTagClassUndefined: Self = StObject.set(x, "tagClass", js.undefined)
       
-      @scala.inline
-      def setTagNumber(value: Double): Self = StObject.set(x, "tagNumber", value.asInstanceOf[js.Any])
+      inline def setTagNumber(value: Double): Self = StObject.set(x, "tagNumber", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagNumberUndefined: Self = StObject.set(x, "tagNumber", js.undefined)
+      inline def setTagNumberUndefined: Self = StObject.set(x, "tagNumber", js.undefined)
       
-      @scala.inline
-      def setValueBeforeDecode(value: ArrayBuffer): Self = StObject.set(x, "valueBeforeDecode", value.asInstanceOf[js.Any])
+      inline def setValueBeforeDecode(value: ArrayBuffer): Self = StObject.set(x, "valueBeforeDecode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueBeforeDecodeUndefined: Self = StObject.set(x, "valueBeforeDecode", js.undefined)
+      inline def setValueBeforeDecodeUndefined: Self = StObject.set(x, "valueBeforeDecode", js.undefined)
       
-      @scala.inline
-      def setValueHex(value: ArrayBuffer): Self = StObject.set(x, "valueHex", value.asInstanceOf[js.Any])
+      inline def setValueHex(value: ArrayBuffer): Self = StObject.set(x, "valueHex", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValueHexUndefined: Self = StObject.set(x, "valueHex", js.undefined)
+      inline def setValueHexUndefined: Self = StObject.set(x, "valueHex", js.undefined)
       
-      @scala.inline
-      def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
+      inline def setWarnings(value: js.Array[String]): Self = StObject.set(x, "warnings", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
+      inline def setWarningsUndefined: Self = StObject.set(x, "warnings", js.undefined)
       
-      @scala.inline
-      def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
+      inline def setWarningsVarargs(value: String*): Self = StObject.set(x, "warnings", js.Array(value :_*))
     }
   }
   
@@ -143,20 +115,16 @@ object anon {
   }
   object Offset {
     
-    @scala.inline
-    def apply(offset: Double, result: LocalBaseBlock): Offset = {
+    inline def apply(offset: Double, result: LocalBaseBlock): Offset = {
       val __obj = js.Dynamic.literal(offset = offset.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
       __obj.asInstanceOf[Offset]
     }
     
-    @scala.inline
-    implicit class OffsetMutableBuilder[Self <: Offset] (val x: Self) extends AnyVal {
+    extension [Self <: Offset](x: Self) {
       
-      @scala.inline
-      def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
+      inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResult(value: LocalBaseBlock): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: LocalBaseBlock): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }
   }
   
@@ -168,23 +136,18 @@ object anon {
   }
   object Result {
     
-    @scala.inline
-    def apply(verified: Boolean): Result = {
+    inline def apply(verified: Boolean): Result = {
       val __obj = js.Dynamic.literal(verified = verified.asInstanceOf[js.Any])
       __obj.asInstanceOf[Result]
     }
     
-    @scala.inline
-    implicit class ResultMutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
+    extension [Self <: Result](x: Self) {
       
-      @scala.inline
-      def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
+      inline def setResult(value: js.Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
+      inline def setResultUndefined: Self = StObject.set(x, "result", js.undefined)
       
-      @scala.inline
-      def setVerified(value: Boolean): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
+      inline def setVerified(value: Boolean): Self = StObject.set(x, "verified", value.asInstanceOf[js.Any])
     }
   }
 }

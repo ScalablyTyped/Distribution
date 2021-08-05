@@ -36,43 +36,31 @@ trait SchemaUrlCrawlErrorsSample extends StObject {
 }
 object SchemaUrlCrawlErrorsSample {
   
-  @scala.inline
-  def apply(): SchemaUrlCrawlErrorsSample = {
+  inline def apply(): SchemaUrlCrawlErrorsSample = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUrlCrawlErrorsSample]
   }
   
-  @scala.inline
-  implicit class SchemaUrlCrawlErrorsSampleMutableBuilder[Self <: SchemaUrlCrawlErrorsSample] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUrlCrawlErrorsSample](x: Self) {
     
-    @scala.inline
-    def setFirst_detected(value: String): Self = StObject.set(x, "first_detected", value.asInstanceOf[js.Any])
+    inline def setFirst_detected(value: String): Self = StObject.set(x, "first_detected", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirst_detectedUndefined: Self = StObject.set(x, "first_detected", js.undefined)
+    inline def setFirst_detectedUndefined: Self = StObject.set(x, "first_detected", js.undefined)
     
-    @scala.inline
-    def setLast_crawled(value: String): Self = StObject.set(x, "last_crawled", value.asInstanceOf[js.Any])
+    inline def setLast_crawled(value: String): Self = StObject.set(x, "last_crawled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLast_crawledUndefined: Self = StObject.set(x, "last_crawled", js.undefined)
+    inline def setLast_crawledUndefined: Self = StObject.set(x, "last_crawled", js.undefined)
     
-    @scala.inline
-    def setPageUrl(value: String): Self = StObject.set(x, "pageUrl", value.asInstanceOf[js.Any])
+    inline def setPageUrl(value: String): Self = StObject.set(x, "pageUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPageUrlUndefined: Self = StObject.set(x, "pageUrl", js.undefined)
+    inline def setPageUrlUndefined: Self = StObject.set(x, "pageUrl", js.undefined)
     
-    @scala.inline
-    def setResponseCode(value: Double): Self = StObject.set(x, "responseCode", value.asInstanceOf[js.Any])
+    inline def setResponseCode(value: Double): Self = StObject.set(x, "responseCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setResponseCodeUndefined: Self = StObject.set(x, "responseCode", js.undefined)
+    inline def setResponseCodeUndefined: Self = StObject.set(x, "responseCode", js.undefined)
     
-    @scala.inline
-    def setUrlDetails(value: SchemaUrlSampleDetails): Self = StObject.set(x, "urlDetails", value.asInstanceOf[js.Any])
+    inline def setUrlDetails(value: SchemaUrlSampleDetails): Self = StObject.set(x, "urlDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUrlDetailsUndefined: Self = StObject.set(x, "urlDetails", js.undefined)
+    inline def setUrlDetailsUndefined: Self = StObject.set(x, "urlDetails", js.undefined)
   }
 }

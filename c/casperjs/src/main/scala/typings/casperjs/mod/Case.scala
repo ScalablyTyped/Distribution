@@ -18,29 +18,22 @@ trait Case extends StObject {
 }
 object Case {
   
-  @scala.inline
-  def apply(file: String, standard: String, success: Boolean, `type`: String, values: CaseValues): Case = {
+  inline def apply(file: String, standard: String, success: Boolean, `type`: String, values: CaseValues): Case = {
     val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], standard = standard.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Case]
   }
   
-  @scala.inline
-  implicit class CaseMutableBuilder[Self <: Case] (val x: Self) extends AnyVal {
+  extension [Self <: Case](x: Self) {
     
-    @scala.inline
-    def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
+    inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStandard(value: String): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
+    inline def setStandard(value: String): Self = StObject.set(x, "standard", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+    inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValues(value: CaseValues): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    inline def setValues(value: CaseValues): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
   }
 }

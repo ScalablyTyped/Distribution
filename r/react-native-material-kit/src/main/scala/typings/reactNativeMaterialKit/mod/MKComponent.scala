@@ -26,6 +26,5 @@ object MKComponent {
   @JSImport("react-native-material-kit", "MKComponent.Builder")
   @js.native
   def Builder: js.Any = js.native
-  @scala.inline
-  def Builder_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Builder")(x.asInstanceOf[js.Any])
+  inline def Builder_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Builder")(x.asInstanceOf[js.Any])
 }

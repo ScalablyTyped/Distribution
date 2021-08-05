@@ -12,8 +12,7 @@ trait MapNotesLayerProperties
      with BlendLayerProperties
 object MapNotesLayerProperties {
   
-  @scala.inline
-  def apply(): MapNotesLayerProperties = {
+  inline def apply(): MapNotesLayerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MapNotesLayerProperties]
   }

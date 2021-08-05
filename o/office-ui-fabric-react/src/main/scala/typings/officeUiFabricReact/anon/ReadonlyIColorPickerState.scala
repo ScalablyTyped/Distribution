@@ -14,22 +14,17 @@ trait ReadonlyIColorPickerState extends StObject {
 }
 object ReadonlyIColorPickerState {
   
-  @scala.inline
-  def apply(color: IColor): ReadonlyIColorPickerState = {
+  inline def apply(color: IColor): ReadonlyIColorPickerState = {
     val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlyIColorPickerState]
   }
   
-  @scala.inline
-  implicit class ReadonlyIColorPickerStateMutableBuilder[Self <: ReadonlyIColorPickerState] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyIColorPickerState](x: Self) {
     
-    @scala.inline
-    def setColor(value: IColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: IColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditingColor(value: Component): Self = StObject.set(x, "editingColor", value.asInstanceOf[js.Any])
+    inline def setEditingColor(value: Component): Self = StObject.set(x, "editingColor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEditingColorUndefined: Self = StObject.set(x, "editingColor", js.undefined)
+    inline def setEditingColorUndefined: Self = StObject.set(x, "editingColor", js.undefined)
   }
 }

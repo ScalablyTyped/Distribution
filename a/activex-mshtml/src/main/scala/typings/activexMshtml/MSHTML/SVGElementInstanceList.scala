@@ -6,7 +6,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 trait SVGElementInstanceList extends StObject {
   
-  @JSName("MSHTML.SVGElementInstanceList_typekey")
+  /* private */ @JSName("MSHTML.SVGElementInstanceList_typekey")
   var MSHTMLDotSVGElementInstanceList_typekey: SVGElementInstanceList
   
   def item(index: Double): ISVGElementInstance
@@ -15,8 +15,7 @@ trait SVGElementInstanceList extends StObject {
 }
 object SVGElementInstanceList {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     MSHTMLDotSVGElementInstanceList_typekey: SVGElementInstanceList,
     item: Double => ISVGElementInstance,
     length: Double
@@ -26,16 +25,12 @@ object SVGElementInstanceList {
     __obj.asInstanceOf[SVGElementInstanceList]
   }
   
-  @scala.inline
-  implicit class SVGElementInstanceListMutableBuilder[Self <: SVGElementInstanceList] (val x: Self) extends AnyVal {
+  extension [Self <: SVGElementInstanceList](x: Self) {
     
-    @scala.inline
-    def setItem(value: Double => ISVGElementInstance): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
+    inline def setItem(value: Double => ISVGElementInstance): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
+    inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMSHTMLDotSVGElementInstanceList_typekey(value: SVGElementInstanceList): Self = StObject.set(x, "MSHTML.SVGElementInstanceList_typekey", value.asInstanceOf[js.Any])
+    inline def setMSHTMLDotSVGElementInstanceList_typekey(value: SVGElementInstanceList): Self = StObject.set(x, "MSHTML.SVGElementInstanceList_typekey", value.asInstanceOf[js.Any])
   }
 }

@@ -34,10 +34,8 @@ object app {
     * @return The app corresponding to the provided app name.
     *   If no app name is provided, the default app is returned.
     */
-  @scala.inline
-  def apply(): App = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[App]
-  @scala.inline
-  def apply(name: String): App = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[App]
+  inline def apply(): App = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[App]
+  inline def apply(name: String): App = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[App]
   
   @JSImport("firebase", "default.app")
   @js.native

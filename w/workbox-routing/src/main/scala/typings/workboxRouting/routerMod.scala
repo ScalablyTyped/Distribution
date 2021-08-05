@@ -48,17 +48,14 @@ object routerMod {
     }
     object FindMatchingRouteOptions {
       
-      @scala.inline
-      def apply(request: Request, url: URL): FindMatchingRouteOptions = {
+      inline def apply(request: Request, url: URL): FindMatchingRouteOptions = {
         val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
         __obj.asInstanceOf[FindMatchingRouteOptions]
       }
       
-      @scala.inline
-      implicit class FindMatchingRouteOptionsMutableBuilder[Self <: FindMatchingRouteOptions] (val x: Self) extends AnyVal {
+      extension [Self <: FindMatchingRouteOptions](x: Self) {
         
-        @scala.inline
-        def setUrl(value: URL): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+        inline def setUrl(value: URL): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       }
     }
     
@@ -71,20 +68,16 @@ object routerMod {
     }
     object FindMatchingRouteReturn {
       
-      @scala.inline
-      def apply[MatchReturn](params: js.Any, route: Route[MatchReturn]): FindMatchingRouteReturn[MatchReturn] = {
+      inline def apply[MatchReturn](params: js.Any, route: Route[MatchReturn]): FindMatchingRouteReturn[MatchReturn] = {
         val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
         __obj.asInstanceOf[FindMatchingRouteReturn[MatchReturn]]
       }
       
-      @scala.inline
-      implicit class FindMatchingRouteReturnMutableBuilder[Self <: FindMatchingRouteReturn[?], MatchReturn] (val x: Self & FindMatchingRouteReturn[MatchReturn]) extends AnyVal {
+      extension [Self <: FindMatchingRouteReturn[?], MatchReturn](x: Self & FindMatchingRouteReturn[MatchReturn]) {
         
-        @scala.inline
-        def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+        inline def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setRoute(value: Route[MatchReturn]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+        inline def setRoute(value: Route[MatchReturn]): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
       }
     }
     
@@ -98,25 +91,20 @@ object routerMod {
     }
     object HandleRequestOptions {
       
-      @scala.inline
-      def apply(request: Request): HandleRequestOptions = {
+      inline def apply(request: Request): HandleRequestOptions = {
         val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
         __obj.asInstanceOf[HandleRequestOptions]
       }
       
-      @scala.inline
-      implicit class HandleRequestOptionsMutableBuilder[Self <: HandleRequestOptions] (val x: Self) extends AnyVal {
+      extension [Self <: HandleRequestOptions](x: Self) {
         
-        @scala.inline
-        def setEvent(
+        inline def setEvent(
           value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FetchEvent */ js.Any
         ): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
         
-        @scala.inline
-        def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
+        inline def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
         
-        @scala.inline
-        def setRequest(value: Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+        inline def setRequest(value: Request): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       }
     }
   }

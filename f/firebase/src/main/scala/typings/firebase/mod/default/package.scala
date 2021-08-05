@@ -8,18 +8,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * The current SDK version.
   */
-@scala.inline
-def SDK_VERSION: java.lang.String = typings.firebase.mod.default.^.asInstanceOf[js.Dynamic].selectDynamic("SDK_VERSION").asInstanceOf[java.lang.String]
-@scala.inline
-def SDK_VERSION_=(x: java.lang.String): scala.Unit = typings.firebase.mod.default.^.asInstanceOf[js.Dynamic].updateDynamic("SDK_VERSION")(x.asInstanceOf[js.Any])
+inline def SDK_VERSION: java.lang.String = typings.firebase.mod.default.^.asInstanceOf[js.Dynamic].selectDynamic("SDK_VERSION").asInstanceOf[java.lang.String]
+inline def SDK_VERSION_=(x: java.lang.String): scala.Unit = typings.firebase.mod.default.^.asInstanceOf[js.Dynamic].updateDynamic("SDK_VERSION")(x.asInstanceOf[js.Any])
 
 /**
   * A (read-only) array of all initialized apps.
   */
-@scala.inline
-def apps: js.Array[typings.firebase.mod.firebase.app.App] = typings.firebase.mod.default.^.asInstanceOf[js.Dynamic].selectDynamic("apps").asInstanceOf[js.Array[typings.firebase.mod.firebase.app.App]]
-@scala.inline
-def apps_=(x: js.Array[typings.firebase.mod.firebase.app.App]): scala.Unit = typings.firebase.mod.default.^.asInstanceOf[js.Dynamic].updateDynamic("apps")(x.asInstanceOf[js.Any])
+inline def apps: js.Array[typings.firebase.mod.firebase.app.App] = typings.firebase.mod.default.^.asInstanceOf[js.Dynamic].selectDynamic("apps").asInstanceOf[js.Array[typings.firebase.mod.firebase.app.App]]
+inline def apps_=(x: js.Array[typings.firebase.mod.firebase.app.App]): scala.Unit = typings.firebase.mod.default.^.asInstanceOf[js.Dynamic].updateDynamic("apps")(x.asInstanceOf[js.Any])
 
 /**
   * Creates and initializes a Firebase {@link firebase.app.App app} instance.
@@ -69,20 +65,16 @@ def apps_=(x: js.Array[typings.firebase.mod.firebase.app.App]): scala.Unit = typ
   *
   * @return {!firebase.app.App} The initialized app.
   */
-@scala.inline
-def initializeApp(options: js.Object): typings.firebase.mod.firebase.app.App = typings.firebase.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("initializeApp")(options.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.app.App]
-@scala.inline
-def initializeApp(options: js.Object, name: java.lang.String): typings.firebase.mod.firebase.app.App = (typings.firebase.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("initializeApp")(options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.firebase.mod.firebase.app.App]
+inline def initializeApp(options: js.Object): typings.firebase.mod.firebase.app.App = typings.firebase.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("initializeApp")(options.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.app.App]
+inline def initializeApp(options: js.Object, name: java.lang.String): typings.firebase.mod.firebase.app.App = (typings.firebase.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("initializeApp")(options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[typings.firebase.mod.firebase.app.App]
 
 /**
   * Sets log handler for all Firebase packages.
   * @param logCallback An optional custom log handler that executes user code whenever
   * the Firebase SDK makes a logging call.
   */
-@scala.inline
-def onLog(logCallback: js.Function1[/* callbackParams */ typings.firebase.anon.Args, scala.Unit]): scala.Unit = typings.firebase.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("onLog")(logCallback.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
-@scala.inline
-def onLog(
+inline def onLog(logCallback: js.Function1[/* callbackParams */ typings.firebase.anon.Args, scala.Unit]): scala.Unit = typings.firebase.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("onLog")(logCallback.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def onLog(
   logCallback: js.Function1[/* callbackParams */ typings.firebase.anon.Args, scala.Unit],
   options: typings.firebase.anon.Level
 ): scala.Unit = (typings.firebase.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("onLog")(logCallback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
@@ -93,10 +85,8 @@ def onLog(
   * @param version Current version of that library.
   * @param variant Bundle variant, e.g., node, rn, etc.
   */
-@scala.inline
-def registerVersion(library: java.lang.String, version: java.lang.String): scala.Unit = (typings.firebase.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("registerVersion")(library.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
-@scala.inline
-def registerVersion(library: java.lang.String, version: java.lang.String, variant: java.lang.String): scala.Unit = (typings.firebase.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("registerVersion")(library.asInstanceOf[js.Any], version.asInstanceOf[js.Any], variant.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def registerVersion(library: java.lang.String, version: java.lang.String): scala.Unit = (typings.firebase.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("registerVersion")(library.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
+inline def registerVersion(library: java.lang.String, version: java.lang.String, variant: java.lang.String): scala.Unit = (typings.firebase.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("registerVersion")(library.asInstanceOf[js.Any], version.asInstanceOf[js.Any], variant.asInstanceOf[js.Any])).asInstanceOf[scala.Unit]
 
 /**
   * Sets log level for all Firebase packages.
@@ -105,5 +95,4 @@ def registerVersion(library: java.lang.String, version: java.lang.String, varian
   * you set the log level to `info`, errors are logged, but `debug` and
   * `verbose` logs are not).
   */
-@scala.inline
-def setLogLevel(logLevel: typings.firebase.mod.firebase.LogLevel): scala.Unit = typings.firebase.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(logLevel.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]
+inline def setLogLevel(logLevel: typings.firebase.mod.firebase.LogLevel): scala.Unit = typings.firebase.mod.default.^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(logLevel.asInstanceOf[js.Any]).asInstanceOf[scala.Unit]

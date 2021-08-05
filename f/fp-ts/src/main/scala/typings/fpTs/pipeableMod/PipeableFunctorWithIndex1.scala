@@ -15,8 +15,7 @@ trait PipeableFunctorWithIndex1[F /* <: /* import warning: transforms.QualifyRef
 }
 object PipeableFunctorWithIndex1 {
   
-  @scala.inline
-  def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, I](
+  inline def apply[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, I](
     map: js.Function1[js.Any, js.Any] => js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ /* fa */ js.Any, 
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, B> */ js.Any
@@ -30,11 +29,9 @@ object PipeableFunctorWithIndex1 {
     __obj.asInstanceOf[PipeableFunctorWithIndex1[F, I]]
   }
   
-  @scala.inline
-  implicit class PipeableFunctorWithIndex1MutableBuilder[Self <: PipeableFunctorWithIndex1[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, I] (val x: Self & (PipeableFunctorWithIndex1[F, I])) extends AnyVal {
+  extension [Self <: PipeableFunctorWithIndex1[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, I](x: Self & (PipeableFunctorWithIndex1[F, I])) {
     
-    @scala.inline
-    def setMapWithIndex(
+    inline def setMapWithIndex(
       value: js.Function2[/* i */ I, js.Any, js.Any] => js.Function1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, A> */ /* fa */ js.Any, 
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind<F, B> */ js.Any

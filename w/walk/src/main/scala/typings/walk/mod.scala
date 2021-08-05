@@ -21,15 +21,11 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def walk(path: String): Walker = ^.asInstanceOf[js.Dynamic].applyDynamic("walk")(path.asInstanceOf[js.Any]).asInstanceOf[Walker]
-  @scala.inline
-  def walk(path: String, options: WalkOptions): Walker = (^.asInstanceOf[js.Dynamic].applyDynamic("walk")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Walker]
+  inline def walk(path: String): Walker = ^.asInstanceOf[js.Dynamic].applyDynamic("walk")(path.asInstanceOf[js.Any]).asInstanceOf[Walker]
+  inline def walk(path: String, options: WalkOptions): Walker = (^.asInstanceOf[js.Dynamic].applyDynamic("walk")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Walker]
   
-  @scala.inline
-  def walkSync(path: String): Walker = ^.asInstanceOf[js.Dynamic].applyDynamic("walkSync")(path.asInstanceOf[js.Any]).asInstanceOf[Walker]
-  @scala.inline
-  def walkSync(path: String, options: WalkOptions): Walker = (^.asInstanceOf[js.Dynamic].applyDynamic("walkSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Walker]
+  inline def walkSync(path: String): Walker = ^.asInstanceOf[js.Dynamic].applyDynamic("walkSync")(path.asInstanceOf[js.Any]).asInstanceOf[Walker]
+  inline def walkSync(path: String, options: WalkOptions): Walker = (^.asInstanceOf[js.Dynamic].applyDynamic("walkSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Walker]
   
   type WalkNamesEventCallback = js.Function3[/* base */ String, /* names */ js.Array[String], /* next */ WalkNext, Unit]
   
@@ -45,35 +41,26 @@ object mod {
   }
   object WalkOptions {
     
-    @scala.inline
-    def apply(): WalkOptions = {
+    inline def apply(): WalkOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WalkOptions]
     }
     
-    @scala.inline
-    implicit class WalkOptionsMutableBuilder[Self <: WalkOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WalkOptions](x: Self) {
       
-      @scala.inline
-      def setFilters(value: js.Array[String]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+      inline def setFilters(value: js.Array[String]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
+      inline def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)
       
-      @scala.inline
-      def setFiltersVarargs(value: String*): Self = StObject.set(x, "filters", js.Array(value :_*))
+      inline def setFiltersVarargs(value: String*): Self = StObject.set(x, "filters", js.Array(value :_*))
       
-      @scala.inline
-      def setFollowLinks(value: Boolean): Self = StObject.set(x, "followLinks", value.asInstanceOf[js.Any])
+      inline def setFollowLinks(value: Boolean): Self = StObject.set(x, "followLinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFollowLinksUndefined: Self = StObject.set(x, "followLinks", js.undefined)
+      inline def setFollowLinksUndefined: Self = StObject.set(x, "followLinks", js.undefined)
       
-      @scala.inline
-      def setListeners(value: WalkOptionsListeners): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
+      inline def setListeners(value: WalkOptionsListeners): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
+      inline def setListenersUndefined: Self = StObject.set(x, "listeners", js.undefined)
     }
   }
   
@@ -99,68 +86,48 @@ object mod {
   }
   object WalkOptionsListeners {
     
-    @scala.inline
-    def apply(): WalkOptionsListeners = {
+    inline def apply(): WalkOptionsListeners = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WalkOptionsListeners]
     }
     
-    @scala.inline
-    implicit class WalkOptionsListenersMutableBuilder[Self <: WalkOptionsListeners] (val x: Self) extends AnyVal {
+    extension [Self <: WalkOptionsListeners](x: Self) {
       
-      @scala.inline
-      def setDirectories(value: (/* base */ String, /* names */ js.Array[WalkStats], /* next */ WalkNext) => Unit): Self = StObject.set(x, "directories", js.Any.fromFunction3(value))
+      inline def setDirectories(value: (/* base */ String, /* names */ js.Array[WalkStats], /* next */ WalkNext) => Unit): Self = StObject.set(x, "directories", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDirectoriesUndefined: Self = StObject.set(x, "directories", js.undefined)
+      inline def setDirectoriesUndefined: Self = StObject.set(x, "directories", js.undefined)
       
-      @scala.inline
-      def setDirectory(value: (/* base */ String, /* names */ WalkStats, /* next */ WalkNext) => Unit): Self = StObject.set(x, "directory", js.Any.fromFunction3(value))
+      inline def setDirectory(value: (/* base */ String, /* names */ WalkStats, /* next */ WalkNext) => Unit): Self = StObject.set(x, "directory", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDirectoryError(value: (/* base */ String, /* names */ js.Array[WalkStats], /* next */ WalkNext) => Unit): Self = StObject.set(x, "directoryError", js.Any.fromFunction3(value))
+      inline def setDirectoryError(value: (/* base */ String, /* names */ js.Array[WalkStats], /* next */ WalkNext) => Unit): Self = StObject.set(x, "directoryError", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setDirectoryErrorUndefined: Self = StObject.set(x, "directoryError", js.undefined)
+      inline def setDirectoryErrorUndefined: Self = StObject.set(x, "directoryError", js.undefined)
       
-      @scala.inline
-      def setDirectoryUndefined: Self = StObject.set(x, "directory", js.undefined)
+      inline def setDirectoryUndefined: Self = StObject.set(x, "directory", js.undefined)
       
-      @scala.inline
-      def setEnd(value: (/* base */ String, /* names */ js.Array[WalkStats], /* next */ WalkNext) => Unit): Self = StObject.set(x, "end", js.Any.fromFunction3(value))
+      inline def setEnd(value: (/* base */ String, /* names */ js.Array[WalkStats], /* next */ WalkNext) => Unit): Self = StObject.set(x, "end", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
+      inline def setEndUndefined: Self = StObject.set(x, "end", js.undefined)
       
-      @scala.inline
-      def setErrors(value: (/* base */ String, /* names */ js.Array[WalkStats], /* next */ WalkNext) => Unit): Self = StObject.set(x, "errors", js.Any.fromFunction3(value))
+      inline def setErrors(value: (/* base */ String, /* names */ js.Array[WalkStats], /* next */ WalkNext) => Unit): Self = StObject.set(x, "errors", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
+      inline def setErrorsUndefined: Self = StObject.set(x, "errors", js.undefined)
       
-      @scala.inline
-      def setFile(value: (/* base */ String, /* names */ WalkStats, /* next */ WalkNext) => Unit): Self = StObject.set(x, "file", js.Any.fromFunction3(value))
+      inline def setFile(value: (/* base */ String, /* names */ WalkStats, /* next */ WalkNext) => Unit): Self = StObject.set(x, "file", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
+      inline def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
       
-      @scala.inline
-      def setFiles(value: (/* base */ String, /* names */ js.Array[WalkStats], /* next */ WalkNext) => Unit): Self = StObject.set(x, "files", js.Any.fromFunction3(value))
+      inline def setFiles(value: (/* base */ String, /* names */ js.Array[WalkStats], /* next */ WalkNext) => Unit): Self = StObject.set(x, "files", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
+      inline def setFilesUndefined: Self = StObject.set(x, "files", js.undefined)
       
-      @scala.inline
-      def setNames(value: (/* base */ String, /* names */ js.Array[String], /* next */ WalkNext) => Unit): Self = StObject.set(x, "names", js.Any.fromFunction3(value))
+      inline def setNames(value: (/* base */ String, /* names */ js.Array[String], /* next */ WalkNext) => Unit): Self = StObject.set(x, "names", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
+      inline def setNamesUndefined: Self = StObject.set(x, "names", js.undefined)
       
-      @scala.inline
-      def setNodeError(value: (/* base */ String, /* names */ js.Array[WalkStats], /* next */ WalkNext) => Unit): Self = StObject.set(x, "nodeError", js.Any.fromFunction3(value))
+      inline def setNodeError(value: (/* base */ String, /* names */ js.Array[WalkStats], /* next */ WalkNext) => Unit): Self = StObject.set(x, "nodeError", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setNodeErrorUndefined: Self = StObject.set(x, "nodeError", js.undefined)
+      inline def setNodeErrorUndefined: Self = StObject.set(x, "nodeError", js.undefined)
     }
   }
   
@@ -174,20 +141,15 @@ object mod {
   trait WalkStatArrayEvent extends StObject
   object WalkStatArrayEvent {
     
-    @scala.inline
-    def directories: typings.walk.walkStrings.directories = "directories".asInstanceOf[typings.walk.walkStrings.directories]
+    inline def directories: typings.walk.walkStrings.directories = "directories".asInstanceOf[typings.walk.walkStrings.directories]
     
-    @scala.inline
-    def directoryError: typings.walk.walkStrings.directoryError = "directoryError".asInstanceOf[typings.walk.walkStrings.directoryError]
+    inline def directoryError: typings.walk.walkStrings.directoryError = "directoryError".asInstanceOf[typings.walk.walkStrings.directoryError]
     
-    @scala.inline
-    def errors: typings.walk.walkStrings.errors = "errors".asInstanceOf[typings.walk.walkStrings.errors]
+    inline def errors: typings.walk.walkStrings.errors = "errors".asInstanceOf[typings.walk.walkStrings.errors]
     
-    @scala.inline
-    def files: typings.walk.walkStrings.files = "files".asInstanceOf[typings.walk.walkStrings.files]
+    inline def files: typings.walk.walkStrings.files = "files".asInstanceOf[typings.walk.walkStrings.files]
     
-    @scala.inline
-    def nodeError: typings.walk.walkStrings.nodeError = "nodeError".asInstanceOf[typings.walk.walkStrings.nodeError]
+    inline def nodeError: typings.walk.walkStrings.nodeError = "nodeError".asInstanceOf[typings.walk.walkStrings.nodeError]
   }
   
   type WalkStatArrayEventCallback = js.Function3[/* base */ String, /* names */ js.Array[WalkStats], /* next */ WalkNext, Unit]
@@ -199,11 +161,9 @@ object mod {
   trait WalkStatEvent extends StObject
   object WalkStatEvent {
     
-    @scala.inline
-    def directory: typings.walk.walkStrings.directory = "directory".asInstanceOf[typings.walk.walkStrings.directory]
+    inline def directory: typings.walk.walkStrings.directory = "directory".asInstanceOf[typings.walk.walkStrings.directory]
     
-    @scala.inline
-    def file: typings.walk.walkStrings.file = "file".asInstanceOf[typings.walk.walkStrings.file]
+    inline def file: typings.walk.walkStrings.file = "file".asInstanceOf[typings.walk.walkStrings.file]
   }
   
   type WalkStatEventCallback = js.Function3[/* base */ String, /* names */ WalkStats, /* next */ WalkNext, Unit]

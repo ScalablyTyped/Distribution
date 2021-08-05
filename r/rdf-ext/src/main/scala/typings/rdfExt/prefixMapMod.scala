@@ -58,8 +58,7 @@ object prefixMapMod {
   }
   object PrefixMap {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       addAll: PrefixesRecord => PrefixMap,
       `export`: Stream[Quad] => PrefixMap,
       factory: DataFactory[Quad, Quad],
@@ -74,29 +73,21 @@ object prefixMapMod {
       __obj.asInstanceOf[PrefixMap]
     }
     
-    @scala.inline
-    implicit class PrefixMapMutableBuilder[Self <: PrefixMap] (val x: Self) extends AnyVal {
+    extension [Self <: PrefixMap](x: Self) {
       
-      @scala.inline
-      def setAddAll(value: PrefixesRecord => PrefixMap): Self = StObject.set(x, "addAll", js.Any.fromFunction1(value))
+      inline def setAddAll(value: PrefixesRecord => PrefixMap): Self = StObject.set(x, "addAll", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setExport(value: Stream[Quad] => PrefixMap): Self = StObject.set(x, "export", js.Any.fromFunction1(value))
+      inline def setExport(value: Stream[Quad] => PrefixMap): Self = StObject.set(x, "export", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setFactory(value: DataFactory[Quad, Quad]): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
+      inline def setFactory(value: DataFactory[Quad, Quad]): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setImport(value: Stream[Quad] => js.Promise[PrefixMap]): Self = StObject.set(x, "import", js.Any.fromFunction1(value))
+      inline def setImport(value: Stream[Quad] => js.Promise[PrefixMap]): Self = StObject.set(x, "import", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setMap(value: Record[String, NamedNode[String]]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
+      inline def setMap(value: Record[String, NamedNode[String]]): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolve(value: String => NamedNode[String]): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
+      inline def setResolve(value: String => NamedNode[String]): Self = StObject.set(x, "resolve", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setShrink(value: String => NamedNode[String]): Self = StObject.set(x, "shrink", js.Any.fromFunction1(value))
+      inline def setShrink(value: String => NamedNode[String]): Self = StObject.set(x, "shrink", js.Any.fromFunction1(value))
     }
   }
   

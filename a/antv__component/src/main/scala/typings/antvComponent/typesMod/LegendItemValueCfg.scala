@@ -27,31 +27,23 @@ trait LegendItemValueCfg extends StObject {
 }
 object LegendItemValueCfg {
   
-  @scala.inline
-  def apply(): LegendItemValueCfg = {
+  inline def apply(): LegendItemValueCfg = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[LegendItemValueCfg]
   }
   
-  @scala.inline
-  implicit class LegendItemValueCfgMutableBuilder[Self <: LegendItemValueCfg] (val x: Self) extends AnyVal {
+  extension [Self <: LegendItemValueCfg](x: Self) {
     
-    @scala.inline
-    def setAlignRight(value: Boolean): Self = StObject.set(x, "alignRight", value.asInstanceOf[js.Any])
+    inline def setAlignRight(value: Boolean): Self = StObject.set(x, "alignRight", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAlignRightUndefined: Self = StObject.set(x, "alignRight", js.undefined)
+    inline def setAlignRightUndefined: Self = StObject.set(x, "alignRight", js.undefined)
     
-    @scala.inline
-    def setFormatter(value: (/* text */ String, /* item */ ListItem, /* index */ Double) => js.Any): Self = StObject.set(x, "formatter", js.Any.fromFunction3(value))
+    inline def setFormatter(value: (/* text */ String, /* item */ ListItem, /* index */ Double) => js.Any): Self = StObject.set(x, "formatter", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
+    inline def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
     
-    @scala.inline
-    def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: ShapeAttrs): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+    inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
   }
 }

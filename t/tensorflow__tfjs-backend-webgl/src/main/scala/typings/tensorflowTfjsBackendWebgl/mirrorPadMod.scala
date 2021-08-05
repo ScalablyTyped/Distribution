@@ -17,6 +17,5 @@ object mirrorPadMod {
   @js.native
   val mirrorPadConfig: KernelConfig = js.native
   
-  @scala.inline
-  def mirrorPadKernelFunc(params: AttrsMirrorPadAttrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("mirrorPadKernelFunc")(params.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
+  inline def mirrorPadKernelFunc(params: AttrsMirrorPadAttrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("mirrorPadKernelFunc")(params.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
 }

@@ -16,12 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MinecraftDimension extends StObject
 object MinecraftDimension {
   
-  @scala.inline
-  def End: `the end` = ("the end").asInstanceOf[`the end`]
+  inline def End: `the end` = ("the end").asInstanceOf[`the end`]
   
-  @scala.inline
-  def Nether: nether = "nether".asInstanceOf[nether]
+  inline def Nether: nether = "nether".asInstanceOf[nether]
   
-  @scala.inline
-  def Overworld: overworld = "overworld".asInstanceOf[overworld]
+  inline def Overworld: overworld = "overworld".asInstanceOf[overworld]
 }

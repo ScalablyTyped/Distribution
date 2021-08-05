@@ -18,25 +18,19 @@ trait DisassociateS3ResourcesRequest extends StObject {
 }
 object DisassociateS3ResourcesRequest {
   
-  @scala.inline
-  def apply(associatedS3Resources: S3Resources): DisassociateS3ResourcesRequest = {
+  inline def apply(associatedS3Resources: S3Resources): DisassociateS3ResourcesRequest = {
     val __obj = js.Dynamic.literal(associatedS3Resources = associatedS3Resources.asInstanceOf[js.Any])
     __obj.asInstanceOf[DisassociateS3ResourcesRequest]
   }
   
-  @scala.inline
-  implicit class DisassociateS3ResourcesRequestMutableBuilder[Self <: DisassociateS3ResourcesRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DisassociateS3ResourcesRequest](x: Self) {
     
-    @scala.inline
-    def setAssociatedS3Resources(value: S3Resources): Self = StObject.set(x, "associatedS3Resources", value.asInstanceOf[js.Any])
+    inline def setAssociatedS3Resources(value: S3Resources): Self = StObject.set(x, "associatedS3Resources", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAssociatedS3ResourcesVarargs(value: S3Resource*): Self = StObject.set(x, "associatedS3Resources", js.Array(value :_*))
+    inline def setAssociatedS3ResourcesVarargs(value: S3Resource*): Self = StObject.set(x, "associatedS3Resources", js.Array(value :_*))
     
-    @scala.inline
-    def setMemberAccountId(value: AWSAccountId): Self = StObject.set(x, "memberAccountId", value.asInstanceOf[js.Any])
+    inline def setMemberAccountId(value: AWSAccountId): Self = StObject.set(x, "memberAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMemberAccountIdUndefined: Self = StObject.set(x, "memberAccountId", js.undefined)
+    inline def setMemberAccountIdUndefined: Self = StObject.set(x, "memberAccountId", js.undefined)
   }
 }

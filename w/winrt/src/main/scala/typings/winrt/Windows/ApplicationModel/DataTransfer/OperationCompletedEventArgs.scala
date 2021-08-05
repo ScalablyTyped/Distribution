@@ -9,8 +9,7 @@ trait OperationCompletedEventArgs
      with IOperationCompletedEventArgs
 object OperationCompletedEventArgs {
   
-  @scala.inline
-  def apply(operation: DataPackageOperation): OperationCompletedEventArgs = {
+  inline def apply(operation: DataPackageOperation): OperationCompletedEventArgs = {
     val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any])
     __obj.asInstanceOf[OperationCompletedEventArgs]
   }

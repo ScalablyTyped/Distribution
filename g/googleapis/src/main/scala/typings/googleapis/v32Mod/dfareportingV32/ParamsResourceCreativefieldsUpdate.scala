@@ -29,31 +29,23 @@ trait ParamsResourceCreativefieldsUpdate
 }
 object ParamsResourceCreativefieldsUpdate {
   
-  @scala.inline
-  def apply(): ParamsResourceCreativefieldsUpdate = {
+  inline def apply(): ParamsResourceCreativefieldsUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceCreativefieldsUpdate]
   }
   
-  @scala.inline
-  implicit class ParamsResourceCreativefieldsUpdateMutableBuilder[Self <: ParamsResourceCreativefieldsUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceCreativefieldsUpdate](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
+    inline def setProfileId(value: String): Self = StObject.set(x, "profileId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
+    inline def setProfileIdUndefined: Self = StObject.set(x, "profileId", js.undefined)
     
-    @scala.inline
-    def setRequestBody(value: SchemaCreativeField): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
+    inline def setRequestBody(value: SchemaCreativeField): Self = StObject.set(x, "requestBody", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
+    inline def setRequestBodyUndefined: Self = StObject.set(x, "requestBody", js.undefined)
   }
 }

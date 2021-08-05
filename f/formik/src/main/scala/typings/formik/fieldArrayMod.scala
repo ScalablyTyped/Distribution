@@ -18,17 +18,13 @@ object fieldArrayMod {
   @js.native
   val FieldArray: ComponentType[FieldArrayConfig] = js.native
   
-  @scala.inline
-  def insert(arrayLike: ArrayLike[js.Any], index: Double, value: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(arrayLike.asInstanceOf[js.Any], index.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def insert(arrayLike: ArrayLike[js.Any], index: Double, value: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(arrayLike.asInstanceOf[js.Any], index.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @scala.inline
-  def move(array: js.Array[js.Any], from: Double, to: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(array.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def move(array: js.Array[js.Any], from: Double, to: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(array.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @scala.inline
-  def replace(arrayLike: ArrayLike[js.Any], index: Double, value: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(arrayLike.asInstanceOf[js.Any], index.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def replace(arrayLike: ArrayLike[js.Any], index: Double, value: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(arrayLike.asInstanceOf[js.Any], index.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @scala.inline
-  def swap(arrayLike: ArrayLike[js.Any], indexA: Double, indexB: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("swap")(arrayLike.asInstanceOf[js.Any], indexA.asInstanceOf[js.Any], indexB.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  inline def swap(arrayLike: ArrayLike[js.Any], indexA: Double, indexB: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("swap")(arrayLike.asInstanceOf[js.Any], indexA.asInstanceOf[js.Any], indexB.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
   trait ArrayHelpers extends StObject {
     
@@ -82,8 +78,7 @@ object fieldArrayMod {
   }
   object ArrayHelpers {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       handleInsert: (Double, js.Any) => js.Function0[Unit],
       handleMove: (Double, Double) => js.Function0[Unit],
       handlePop: () => js.Function0[Unit],
@@ -105,56 +100,39 @@ object fieldArrayMod {
       __obj.asInstanceOf[ArrayHelpers]
     }
     
-    @scala.inline
-    implicit class ArrayHelpersMutableBuilder[Self <: ArrayHelpers] (val x: Self) extends AnyVal {
+    extension [Self <: ArrayHelpers](x: Self) {
       
-      @scala.inline
-      def setHandleInsert(value: (Double, js.Any) => js.Function0[Unit]): Self = StObject.set(x, "handleInsert", js.Any.fromFunction2(value))
+      inline def setHandleInsert(value: (Double, js.Any) => js.Function0[Unit]): Self = StObject.set(x, "handleInsert", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHandleMove(value: (Double, Double) => js.Function0[Unit]): Self = StObject.set(x, "handleMove", js.Any.fromFunction2(value))
+      inline def setHandleMove(value: (Double, Double) => js.Function0[Unit]): Self = StObject.set(x, "handleMove", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHandlePop(value: () => js.Function0[Unit]): Self = StObject.set(x, "handlePop", js.Any.fromFunction0(value))
+      inline def setHandlePop(value: () => js.Function0[Unit]): Self = StObject.set(x, "handlePop", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setHandlePush(value: js.Any => js.Function0[Unit]): Self = StObject.set(x, "handlePush", js.Any.fromFunction1(value))
+      inline def setHandlePush(value: js.Any => js.Function0[Unit]): Self = StObject.set(x, "handlePush", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHandleRemove(value: Double => js.Function0[Unit]): Self = StObject.set(x, "handleRemove", js.Any.fromFunction1(value))
+      inline def setHandleRemove(value: Double => js.Function0[Unit]): Self = StObject.set(x, "handleRemove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setHandleReplace(value: (Double, js.Any) => js.Function0[Unit]): Self = StObject.set(x, "handleReplace", js.Any.fromFunction2(value))
+      inline def setHandleReplace(value: (Double, js.Any) => js.Function0[Unit]): Self = StObject.set(x, "handleReplace", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHandleSwap(value: (Double, Double) => js.Function0[Unit]): Self = StObject.set(x, "handleSwap", js.Any.fromFunction2(value))
+      inline def setHandleSwap(value: (Double, Double) => js.Function0[Unit]): Self = StObject.set(x, "handleSwap", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setHandleUnshift(value: js.Any => js.Function0[Unit]): Self = StObject.set(x, "handleUnshift", js.Any.fromFunction1(value))
+      inline def setHandleUnshift(value: js.Any => js.Function0[Unit]): Self = StObject.set(x, "handleUnshift", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInsert(value: (Double, js.Any) => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
+      inline def setInsert(value: (Double, js.Any) => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setMove(value: (Double, Double) => Unit): Self = StObject.set(x, "move", js.Any.fromFunction2(value))
+      inline def setMove(value: (Double, Double) => Unit): Self = StObject.set(x, "move", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setPop(value: () => js.UndefOr[js.Any]): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
+      inline def setPop(value: () => js.UndefOr[js.Any]): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setPush(value: js.Any => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
+      inline def setPush(value: js.Any => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setRemove(value: Double => js.UndefOr[js.Any]): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
+      inline def setRemove(value: Double => js.UndefOr[js.Any]): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setReplace(value: (Double, js.Any) => Unit): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
+      inline def setReplace(value: (Double, js.Any) => Unit): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setSwap(value: (Double, Double) => Unit): Self = StObject.set(x, "swap", js.Any.fromFunction2(value))
+      inline def setSwap(value: (Double, Double) => Unit): Self = StObject.set(x, "swap", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setUnshift(value: js.Any => Double): Self = StObject.set(x, "unshift", js.Any.fromFunction1(value))
+      inline def setUnshift(value: js.Any => Double): Self = StObject.set(x, "unshift", js.Any.fromFunction1(value))
     }
   }
   
@@ -170,23 +148,18 @@ object fieldArrayMod {
   }
   object FieldArrayConfig {
     
-    @scala.inline
-    def apply(name: String): FieldArrayConfig = {
+    inline def apply(name: String): FieldArrayConfig = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[FieldArrayConfig]
     }
     
-    @scala.inline
-    implicit class FieldArrayConfigMutableBuilder[Self <: FieldArrayConfig] (val x: Self) extends AnyVal {
+    extension [Self <: FieldArrayConfig](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateOnChange(value: Boolean): Self = StObject.set(x, "validateOnChange", value.asInstanceOf[js.Any])
+      inline def setValidateOnChange(value: Boolean): Self = StObject.set(x, "validateOnChange", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setValidateOnChangeUndefined: Self = StObject.set(x, "validateOnChange", js.undefined)
+      inline def setValidateOnChangeUndefined: Self = StObject.set(x, "validateOnChange", js.undefined)
     }
   }
   
@@ -200,8 +173,7 @@ object fieldArrayMod {
   }
   object FieldArrayRenderProps {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       form: FormikProps[js.Any],
       handleInsert: (Double, js.Any) => js.Function0[Unit],
       handleMove: (Double, Double) => js.Function0[Unit],
@@ -225,14 +197,11 @@ object fieldArrayMod {
       __obj.asInstanceOf[FieldArrayRenderProps]
     }
     
-    @scala.inline
-    implicit class FieldArrayRenderPropsMutableBuilder[Self <: FieldArrayRenderProps] (val x: Self) extends AnyVal {
+    extension [Self <: FieldArrayRenderProps](x: Self) {
       
-      @scala.inline
-      def setForm(value: FormikProps[js.Any]): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
+      inline def setForm(value: FormikProps[js.Any]): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
   }
 }

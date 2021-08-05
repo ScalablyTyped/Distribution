@@ -36,8 +36,7 @@ object gamesMod {
     @JSImport("googleapis/build/src/apis/games", "VERSIONS.v1")
     @js.native
     def v1: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Games] = js.native
-    @scala.inline
-    def v1_=(x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Games]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
+    inline def v1_=(x: Instantiable2[/* options */ GlobalOptions, /* google */ js.UndefOr[GoogleConfigurable], Games]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("v1")(x.asInstanceOf[js.Any])
   }
   
   object auth extends Shortcut {
@@ -73,8 +72,7 @@ object gamesMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -118,9 +116,7 @@ object gamesMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def games(options: Options): Games = ^.asInstanceOf[js.Dynamic].applyDynamic("games")(options.asInstanceOf[js.Any]).asInstanceOf[Games]
+  inline def games(options: Options): Games = ^.asInstanceOf[js.Dynamic].applyDynamic("games")(options.asInstanceOf[js.Any]).asInstanceOf[Games]
   
-  @scala.inline
-  def games_v1(version: v1): Games = ^.asInstanceOf[js.Dynamic].applyDynamic("games")(version.asInstanceOf[js.Any]).asInstanceOf[Games]
+  inline def games_v1(version: v1): Games = ^.asInstanceOf[js.Dynamic].applyDynamic("games")(version.asInstanceOf[js.Any]).asInstanceOf[Games]
 }

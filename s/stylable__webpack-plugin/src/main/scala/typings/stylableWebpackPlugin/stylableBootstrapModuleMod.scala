@@ -289,7 +289,7 @@ object stylableBootstrapModuleMod {
     
     def needRebuild(): Boolean = js.native
     
-    var options: js.Any = js.native
+    /* private */ var options: js.Any = js.native
     
     def readableIdentifier(): String = js.native
     

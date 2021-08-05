@@ -23,28 +23,21 @@ trait PutRecordBatchOutput extends StObject {
 }
 object PutRecordBatchOutput {
   
-  @scala.inline
-  def apply(FailedPutCount: NonNegativeIntegerObject, RequestResponses: PutRecordBatchResponseEntryList): PutRecordBatchOutput = {
+  inline def apply(FailedPutCount: NonNegativeIntegerObject, RequestResponses: PutRecordBatchResponseEntryList): PutRecordBatchOutput = {
     val __obj = js.Dynamic.literal(FailedPutCount = FailedPutCount.asInstanceOf[js.Any], RequestResponses = RequestResponses.asInstanceOf[js.Any])
     __obj.asInstanceOf[PutRecordBatchOutput]
   }
   
-  @scala.inline
-  implicit class PutRecordBatchOutputMutableBuilder[Self <: PutRecordBatchOutput] (val x: Self) extends AnyVal {
+  extension [Self <: PutRecordBatchOutput](x: Self) {
     
-    @scala.inline
-    def setEncrypted(value: BooleanObject): Self = StObject.set(x, "Encrypted", value.asInstanceOf[js.Any])
+    inline def setEncrypted(value: BooleanObject): Self = StObject.set(x, "Encrypted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptedUndefined: Self = StObject.set(x, "Encrypted", js.undefined)
+    inline def setEncryptedUndefined: Self = StObject.set(x, "Encrypted", js.undefined)
     
-    @scala.inline
-    def setFailedPutCount(value: NonNegativeIntegerObject): Self = StObject.set(x, "FailedPutCount", value.asInstanceOf[js.Any])
+    inline def setFailedPutCount(value: NonNegativeIntegerObject): Self = StObject.set(x, "FailedPutCount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestResponses(value: PutRecordBatchResponseEntryList): Self = StObject.set(x, "RequestResponses", value.asInstanceOf[js.Any])
+    inline def setRequestResponses(value: PutRecordBatchResponseEntryList): Self = StObject.set(x, "RequestResponses", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRequestResponsesVarargs(value: PutRecordBatchResponseEntry*): Self = StObject.set(x, "RequestResponses", js.Array(value :_*))
+    inline def setRequestResponsesVarargs(value: PutRecordBatchResponseEntry*): Self = StObject.set(x, "RequestResponses", js.Array(value :_*))
   }
 }

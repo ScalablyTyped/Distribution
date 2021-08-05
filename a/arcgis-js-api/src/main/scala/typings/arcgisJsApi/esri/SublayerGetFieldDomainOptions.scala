@@ -19,8 +19,7 @@ trait SublayerGetFieldDomainOptions
 }
 object SublayerGetFieldDomainOptions {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     constructor: js.Function,
     feature: Graphic,
     hasOwnProperty: PropertyKey => Boolean,
@@ -30,10 +29,8 @@ object SublayerGetFieldDomainOptions {
     __obj.asInstanceOf[SublayerGetFieldDomainOptions]
   }
   
-  @scala.inline
-  implicit class SublayerGetFieldDomainOptionsMutableBuilder[Self <: SublayerGetFieldDomainOptions] (val x: Self) extends AnyVal {
+  extension [Self <: SublayerGetFieldDomainOptions](x: Self) {
     
-    @scala.inline
-    def setFeature(value: Graphic): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+    inline def setFeature(value: Graphic): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
   }
 }

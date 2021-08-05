@@ -18,16 +18,13 @@ trait DeleteCommand
 }
 object DeleteCommand {
   
-  @scala.inline
-  def apply(execute: () => Boolean, getState: () => SimpleCommandState): DeleteCommand = {
+  inline def apply(execute: () => Boolean, getState: () => SimpleCommandState): DeleteCommand = {
     val __obj = js.Dynamic.literal(execute = js.Any.fromFunction0(execute), getState = js.Any.fromFunction0(getState))
     __obj.asInstanceOf[DeleteCommand]
   }
   
-  @scala.inline
-  implicit class DeleteCommandMutableBuilder[Self <: DeleteCommand] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteCommand](x: Self) {
     
-    @scala.inline
-    def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
+    inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }
 }

@@ -82,57 +82,41 @@ trait DataPivotHierarchyData extends StObject {
 }
 object DataPivotHierarchyData {
   
-  @scala.inline
-  def apply(): DataPivotHierarchyData = {
+  inline def apply(): DataPivotHierarchyData = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DataPivotHierarchyData]
   }
   
-  @scala.inline
-  implicit class DataPivotHierarchyDataMutableBuilder[Self <: DataPivotHierarchyData] (val x: Self) extends AnyVal {
+  extension [Self <: DataPivotHierarchyData](x: Self) {
     
-    @scala.inline
-    def setField(value: PivotFieldData): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
+    inline def setField(value: PivotFieldData): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
+    inline def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
-    @scala.inline
-    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    inline def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
-    @scala.inline
-    def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setNumberFormat(value: String): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
+    inline def setNumberFormat(value: String): Self = StObject.set(x, "numberFormat", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
+    inline def setNumberFormatUndefined: Self = StObject.set(x, "numberFormat", js.undefined)
     
-    @scala.inline
-    def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
+    inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
+    inline def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
-    @scala.inline
-    def setShowAs(value: ShowAsRule): Self = StObject.set(x, "showAs", value.asInstanceOf[js.Any])
+    inline def setShowAs(value: ShowAsRule): Self = StObject.set(x, "showAs", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowAsUndefined: Self = StObject.set(x, "showAs", js.undefined)
+    inline def setShowAsUndefined: Self = StObject.set(x, "showAs", js.undefined)
     
-    @scala.inline
-    def setSummarizeBy(
+    inline def setSummarizeBy(
       value: AggregationFunction | Unknown_ | Automatic | Sum | Count | Average | Max | Min | Product | CountNumbers | StandardDeviation | StandardDeviationP | Variance | VarianceP
     ): Self = StObject.set(x, "summarizeBy", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSummarizeByUndefined: Self = StObject.set(x, "summarizeBy", js.undefined)
+    inline def setSummarizeByUndefined: Self = StObject.set(x, "summarizeBy", js.undefined)
   }
 }

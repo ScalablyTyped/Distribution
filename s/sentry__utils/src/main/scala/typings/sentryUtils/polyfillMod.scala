@@ -10,8 +10,6 @@ object polyfillMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def setPrototypeOf(o: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setPrototypeOf")(o.asInstanceOf[js.Any]).asInstanceOf[js.Any]
-  @scala.inline
-  def setPrototypeOf(o: js.Any, proto: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setPrototypeOf")(o.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  inline def setPrototypeOf(o: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setPrototypeOf")(o.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def setPrototypeOf(o: js.Any, proto: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setPrototypeOf")(o.asInstanceOf[js.Any], proto.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

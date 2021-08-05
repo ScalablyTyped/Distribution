@@ -13,11 +13,11 @@ object global {
     
     @JSGlobal("DAO.ComplexType")
     @js.native
-    class ComplexType protected ()
+    /* private */ class ComplexType ()
       extends StObject
          with typings.activexDao.DAO.ComplexType {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("DAO.ComplexType_typekey")
       var DAODotComplexType_typekey: typings.activexDao.DAO.ComplexType = js.native
       
@@ -32,20 +32,20 @@ object global {
     
     @JSGlobal("DAO.Connection")
     @js.native
-    class Connection protected ()
+    /* private */ class Connection ()
       extends StObject
          with typings.activexDao.DAO.Connection
     
     @JSGlobal("DAO.Container")
     @js.native
-    class Container protected ()
+    /* private */ class Container ()
       extends StObject
          with typings.activexDao.DAO.Container {
       
       /* CompleteClass */
       override val AllPermissions: Double = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("DAO.Container_typekey")
       var DAODotContainer_typekey: typings.activexDao.DAO.Container = js.native
       
@@ -83,29 +83,29 @@ object global {
     
     @JSGlobal("DAO.DBEngine")
     @js.native
-    class DBEngine protected ()
+    /* private */ class DBEngine ()
       extends StObject
          with typings.activexDao.DAO.DBEngine
     
     @JSGlobal("DAO.Database")
     @js.native
-    class Database protected ()
+    /* private */ class Database ()
       extends StObject
          with typings.activexDao.DAO.Database
     
     @JSGlobal("DAO.Document")
     @js.native
-    class Document protected ()
+    /* private */ class Document ()
       extends StObject
          with typings.activexDao.DAO.Document
     
     @JSGlobal("DAO.Error")
     @js.native
-    class Error protected ()
+    /* private */ class Error ()
       extends StObject
          with typings.activexDao.DAO.Error {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("DAO.Error_typekey")
       var DAODotError_typekey: typings.activexDao.DAO.Error = js.native
       
@@ -127,29 +127,29 @@ object global {
     
     @JSGlobal("DAO.Field")
     @js.native
-    class Field protected ()
+    /* private */ class Field ()
       extends StObject
          with typings.activexDao.DAO.Field
     
     @JSGlobal("DAO.Group")
     @js.native
-    class Group protected ()
+    /* private */ class Group ()
       extends StObject
          with typings.activexDao.DAO.Group
     
     @JSGlobal("DAO.Index")
     @js.native
-    class Index protected ()
+    /* private */ class Index ()
       extends StObject
          with typings.activexDao.DAO.Index
     
     @JSGlobal("DAO.Parameter")
     @js.native
-    class Parameter protected ()
+    /* private */ class Parameter ()
       extends StObject
          with typings.activexDao.DAO.Parameter {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("DAO.Parameter_typekey")
       var DAODotParameter_typekey: typings.activexDao.DAO.Parameter = js.native
       
@@ -176,11 +176,11 @@ object global {
     
     @JSGlobal("DAO.Property")
     @js.native
-    class Property protected ()
+    /* private */ class Property ()
       extends StObject
          with typings.activexDao.DAO.Property {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("DAO.Property_typekey")
       var DAODotProperty_typekey: typings.activexDao.DAO.Property = js.native
       
@@ -207,31 +207,31 @@ object global {
     
     @JSGlobal("DAO.QueryDef")
     @js.native
-    class QueryDef protected ()
+    /* private */ class QueryDef ()
       extends StObject
          with typings.activexDao.DAO.QueryDef
     
     @JSGlobal("DAO.Relation")
     @js.native
-    class Relation protected ()
+    /* private */ class Relation ()
       extends StObject
          with typings.activexDao.DAO.Relation
     
     @JSGlobal("DAO.TableDef")
     @js.native
-    class TableDef protected ()
+    /* private */ class TableDef ()
       extends StObject
          with typings.activexDao.DAO.TableDef
     
     @JSGlobal("DAO.User")
     @js.native
-    class User protected ()
+    /* private */ class User ()
       extends StObject
          with typings.activexDao.DAO.User
     
     @JSGlobal("DAO.Workspace")
     @js.native
-    class Workspace protected ()
+    /* private */ class Workspace ()
       extends StObject
          with typings.activexDao.DAO.Workspace
   }

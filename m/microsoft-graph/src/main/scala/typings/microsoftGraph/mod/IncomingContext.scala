@@ -20,49 +20,35 @@ trait IncomingContext extends StObject {
 }
 object IncomingContext {
   
-  @scala.inline
-  def apply(): IncomingContext = {
+  inline def apply(): IncomingContext = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IncomingContext]
   }
   
-  @scala.inline
-  implicit class IncomingContextMutableBuilder[Self <: IncomingContext] (val x: Self) extends AnyVal {
+  extension [Self <: IncomingContext](x: Self) {
     
-    @scala.inline
-    def setObservedParticipantId(value: NullableOption[String]): Self = StObject.set(x, "observedParticipantId", value.asInstanceOf[js.Any])
+    inline def setObservedParticipantId(value: NullableOption[String]): Self = StObject.set(x, "observedParticipantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setObservedParticipantIdNull: Self = StObject.set(x, "observedParticipantId", null)
+    inline def setObservedParticipantIdNull: Self = StObject.set(x, "observedParticipantId", null)
     
-    @scala.inline
-    def setObservedParticipantIdUndefined: Self = StObject.set(x, "observedParticipantId", js.undefined)
+    inline def setObservedParticipantIdUndefined: Self = StObject.set(x, "observedParticipantId", js.undefined)
     
-    @scala.inline
-    def setOnBehalfOf(value: NullableOption[IdentitySet]): Self = StObject.set(x, "onBehalfOf", value.asInstanceOf[js.Any])
+    inline def setOnBehalfOf(value: NullableOption[IdentitySet]): Self = StObject.set(x, "onBehalfOf", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOnBehalfOfNull: Self = StObject.set(x, "onBehalfOf", null)
+    inline def setOnBehalfOfNull: Self = StObject.set(x, "onBehalfOf", null)
     
-    @scala.inline
-    def setOnBehalfOfUndefined: Self = StObject.set(x, "onBehalfOf", js.undefined)
+    inline def setOnBehalfOfUndefined: Self = StObject.set(x, "onBehalfOf", js.undefined)
     
-    @scala.inline
-    def setSourceParticipantId(value: NullableOption[String]): Self = StObject.set(x, "sourceParticipantId", value.asInstanceOf[js.Any])
+    inline def setSourceParticipantId(value: NullableOption[String]): Self = StObject.set(x, "sourceParticipantId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSourceParticipantIdNull: Self = StObject.set(x, "sourceParticipantId", null)
+    inline def setSourceParticipantIdNull: Self = StObject.set(x, "sourceParticipantId", null)
     
-    @scala.inline
-    def setSourceParticipantIdUndefined: Self = StObject.set(x, "sourceParticipantId", js.undefined)
+    inline def setSourceParticipantIdUndefined: Self = StObject.set(x, "sourceParticipantId", js.undefined)
     
-    @scala.inline
-    def setTransferor(value: NullableOption[IdentitySet]): Self = StObject.set(x, "transferor", value.asInstanceOf[js.Any])
+    inline def setTransferor(value: NullableOption[IdentitySet]): Self = StObject.set(x, "transferor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTransferorNull: Self = StObject.set(x, "transferor", null)
+    inline def setTransferorNull: Self = StObject.set(x, "transferor", null)
     
-    @scala.inline
-    def setTransferorUndefined: Self = StObject.set(x, "transferor", js.undefined)
+    inline def setTransferorUndefined: Self = StObject.set(x, "transferor", js.undefined)
   }
 }

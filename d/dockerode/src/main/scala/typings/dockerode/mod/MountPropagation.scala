@@ -15,21 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait MountPropagation extends StObject
 object MountPropagation {
   
-  @scala.inline
-  def `private`: typings.dockerode.dockerodeStrings.`private` = "private".asInstanceOf[typings.dockerode.dockerodeStrings.`private`]
+  inline def `private`: typings.dockerode.dockerodeStrings.`private` = "private".asInstanceOf[typings.dockerode.dockerodeStrings.`private`]
   
-  @scala.inline
-  def rprivate: typings.dockerode.dockerodeStrings.rprivate = "rprivate".asInstanceOf[typings.dockerode.dockerodeStrings.rprivate]
+  inline def rprivate: typings.dockerode.dockerodeStrings.rprivate = "rprivate".asInstanceOf[typings.dockerode.dockerodeStrings.rprivate]
   
-  @scala.inline
-  def rshared: typings.dockerode.dockerodeStrings.rshared = "rshared".asInstanceOf[typings.dockerode.dockerodeStrings.rshared]
+  inline def rshared: typings.dockerode.dockerodeStrings.rshared = "rshared".asInstanceOf[typings.dockerode.dockerodeStrings.rshared]
   
-  @scala.inline
-  def rslave: typings.dockerode.dockerodeStrings.rslave = "rslave".asInstanceOf[typings.dockerode.dockerodeStrings.rslave]
+  inline def rslave: typings.dockerode.dockerodeStrings.rslave = "rslave".asInstanceOf[typings.dockerode.dockerodeStrings.rslave]
   
-  @scala.inline
-  def shared: typings.dockerode.dockerodeStrings.shared = "shared".asInstanceOf[typings.dockerode.dockerodeStrings.shared]
+  inline def shared: typings.dockerode.dockerodeStrings.shared = "shared".asInstanceOf[typings.dockerode.dockerodeStrings.shared]
   
-  @scala.inline
-  def slave: typings.dockerode.dockerodeStrings.slave = "slave".asInstanceOf[typings.dockerode.dockerodeStrings.slave]
+  inline def slave: typings.dockerode.dockerodeStrings.slave = "slave".asInstanceOf[typings.dockerode.dockerodeStrings.slave]
 }

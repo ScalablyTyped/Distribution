@@ -24,28 +24,21 @@ trait MediaSource extends StObject {
 }
 object MediaSource {
   
-  @scala.inline
-  def apply(url: String): MediaSource = {
+  inline def apply(url: String): MediaSource = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[MediaSource]
   }
   
-  @scala.inline
-  implicit class MediaSourceMutableBuilder[Self <: MediaSource] (val x: Self) extends AnyVal {
+  extension [Self <: MediaSource](x: Self) {
     
-    @scala.inline
-    def setPoster(value: String): Self = StObject.set(x, "poster", value.asInstanceOf[js.Any])
+    inline def setPoster(value: String): Self = StObject.set(x, "poster", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPosterUndefined: Self = StObject.set(x, "poster", js.undefined)
+    inline def setPosterUndefined: Self = StObject.set(x, "poster", js.undefined)
     
-    @scala.inline
-    def setType(value: image | video): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: image | video): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
+    inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
   }
 }

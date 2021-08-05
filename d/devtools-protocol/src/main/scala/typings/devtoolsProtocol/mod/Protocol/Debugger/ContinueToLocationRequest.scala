@@ -20,22 +20,17 @@ trait ContinueToLocationRequest extends StObject {
 }
 object ContinueToLocationRequest {
   
-  @scala.inline
-  def apply(location: Location): ContinueToLocationRequest = {
+  inline def apply(location: Location): ContinueToLocationRequest = {
     val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContinueToLocationRequest]
   }
   
-  @scala.inline
-  implicit class ContinueToLocationRequestMutableBuilder[Self <: ContinueToLocationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ContinueToLocationRequest](x: Self) {
     
-    @scala.inline
-    def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+    inline def setLocation(value: Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetCallFrames(value: any | current): Self = StObject.set(x, "targetCallFrames", value.asInstanceOf[js.Any])
+    inline def setTargetCallFrames(value: any | current): Self = StObject.set(x, "targetCallFrames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTargetCallFramesUndefined: Self = StObject.set(x, "targetCallFrames", js.undefined)
+    inline def setTargetCallFramesUndefined: Self = StObject.set(x, "targetCallFrames", js.undefined)
   }
 }

@@ -33,46 +33,33 @@ trait KeysAndAttributes extends StObject {
 }
 object KeysAndAttributes {
   
-  @scala.inline
-  def apply(Keys: KeyList): KeysAndAttributes = {
+  inline def apply(Keys: KeyList): KeysAndAttributes = {
     val __obj = js.Dynamic.literal(Keys = Keys.asInstanceOf[js.Any])
     __obj.asInstanceOf[KeysAndAttributes]
   }
   
-  @scala.inline
-  implicit class KeysAndAttributesMutableBuilder[Self <: KeysAndAttributes] (val x: Self) extends AnyVal {
+  extension [Self <: KeysAndAttributes](x: Self) {
     
-    @scala.inline
-    def setAttributesToGet(value: AttributeNameList): Self = StObject.set(x, "AttributesToGet", value.asInstanceOf[js.Any])
+    inline def setAttributesToGet(value: AttributeNameList): Self = StObject.set(x, "AttributesToGet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAttributesToGetUndefined: Self = StObject.set(x, "AttributesToGet", js.undefined)
+    inline def setAttributesToGetUndefined: Self = StObject.set(x, "AttributesToGet", js.undefined)
     
-    @scala.inline
-    def setAttributesToGetVarargs(value: AttributeName*): Self = StObject.set(x, "AttributesToGet", js.Array(value :_*))
+    inline def setAttributesToGetVarargs(value: AttributeName*): Self = StObject.set(x, "AttributesToGet", js.Array(value :_*))
     
-    @scala.inline
-    def setConsistentRead(value: ConsistentRead): Self = StObject.set(x, "ConsistentRead", value.asInstanceOf[js.Any])
+    inline def setConsistentRead(value: ConsistentRead): Self = StObject.set(x, "ConsistentRead", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConsistentReadUndefined: Self = StObject.set(x, "ConsistentRead", js.undefined)
+    inline def setConsistentReadUndefined: Self = StObject.set(x, "ConsistentRead", js.undefined)
     
-    @scala.inline
-    def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
+    inline def setExpressionAttributeNames(value: ExpressionAttributeNameMap): Self = StObject.set(x, "ExpressionAttributeNames", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
+    inline def setExpressionAttributeNamesUndefined: Self = StObject.set(x, "ExpressionAttributeNames", js.undefined)
     
-    @scala.inline
-    def setKeys(value: KeyList): Self = StObject.set(x, "Keys", value.asInstanceOf[js.Any])
+    inline def setKeys(value: KeyList): Self = StObject.set(x, "Keys", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKeysVarargs(value: Key*): Self = StObject.set(x, "Keys", js.Array(value :_*))
+    inline def setKeysVarargs(value: Key*): Self = StObject.set(x, "Keys", js.Array(value :_*))
     
-    @scala.inline
-    def setProjectionExpression(value: ProjectionExpression): Self = StObject.set(x, "ProjectionExpression", value.asInstanceOf[js.Any])
+    inline def setProjectionExpression(value: ProjectionExpression): Self = StObject.set(x, "ProjectionExpression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProjectionExpressionUndefined: Self = StObject.set(x, "ProjectionExpression", js.undefined)
+    inline def setProjectionExpressionUndefined: Self = StObject.set(x, "ProjectionExpression", js.undefined)
   }
 }

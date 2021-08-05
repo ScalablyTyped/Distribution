@@ -22,20 +22,16 @@ trait IShooterComponent extends StObject {
 }
 object IShooterComponent {
   
-  @scala.inline
-  def apply(auxVal: Double, `def`: String): IShooterComponent = {
+  inline def apply(auxVal: Double, `def`: String): IShooterComponent = {
     val __obj = js.Dynamic.literal(auxVal = auxVal.asInstanceOf[js.Any])
     __obj.updateDynamic("def")(`def`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IShooterComponent]
   }
   
-  @scala.inline
-  implicit class IShooterComponentMutableBuilder[Self <: IShooterComponent] (val x: Self) extends AnyVal {
+  extension [Self <: IShooterComponent](x: Self) {
     
-    @scala.inline
-    def setAuxVal(value: Double): Self = StObject.set(x, "auxVal", value.asInstanceOf[js.Any])
+    inline def setAuxVal(value: Double): Self = StObject.set(x, "auxVal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDef(value: String): Self = StObject.set(x, "def", value.asInstanceOf[js.Any])
+    inline def setDef(value: String): Self = StObject.set(x, "def", value.asInstanceOf[js.Any])
   }
 }

@@ -10,19 +10,15 @@ trait SelectQuery extends StObject {
 }
 object SelectQuery {
   
-  @scala.inline
-  def apply(): SelectQuery = {
+  inline def apply(): SelectQuery = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SelectQuery]
   }
   
-  @scala.inline
-  implicit class SelectQueryMutableBuilder[Self <: SelectQuery] (val x: Self) extends AnyVal {
+  extension [Self <: SelectQuery](x: Self) {
     
-    @scala.inline
-    def setSelectQuery(value: String): Self = StObject.set(x, "selectQuery", value.asInstanceOf[js.Any])
+    inline def setSelectQuery(value: String): Self = StObject.set(x, "selectQuery", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectQueryUndefined: Self = StObject.set(x, "selectQuery", js.undefined)
+    inline def setSelectQueryUndefined: Self = StObject.set(x, "selectQuery", js.undefined)
   }
 }

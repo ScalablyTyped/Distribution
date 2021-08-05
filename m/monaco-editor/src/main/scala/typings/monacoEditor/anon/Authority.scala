@@ -18,55 +18,39 @@ trait Authority extends StObject {
 }
 object Authority {
   
-  @scala.inline
-  def apply(): Authority = {
+  inline def apply(): Authority = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Authority]
   }
   
-  @scala.inline
-  implicit class AuthorityMutableBuilder[Self <: Authority] (val x: Self) extends AnyVal {
+  extension [Self <: Authority](x: Self) {
     
-    @scala.inline
-    def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
+    inline def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthorityNull: Self = StObject.set(x, "authority", null)
+    inline def setAuthorityNull: Self = StObject.set(x, "authority", null)
     
-    @scala.inline
-    def setAuthorityUndefined: Self = StObject.set(x, "authority", js.undefined)
+    inline def setAuthorityUndefined: Self = StObject.set(x, "authority", js.undefined)
     
-    @scala.inline
-    def setFragment(value: String): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
+    inline def setFragment(value: String): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFragmentNull: Self = StObject.set(x, "fragment", null)
+    inline def setFragmentNull: Self = StObject.set(x, "fragment", null)
     
-    @scala.inline
-    def setFragmentUndefined: Self = StObject.set(x, "fragment", js.undefined)
+    inline def setFragmentUndefined: Self = StObject.set(x, "fragment", js.undefined)
     
-    @scala.inline
-    def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+    inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPathNull: Self = StObject.set(x, "path", null)
+    inline def setPathNull: Self = StObject.set(x, "path", null)
     
-    @scala.inline
-    def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+    inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     
-    @scala.inline
-    def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryNull: Self = StObject.set(x, "query", null)
+    inline def setQueryNull: Self = StObject.set(x, "query", null)
     
-    @scala.inline
-    def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
+    inline def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
     
-    @scala.inline
-    def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
+    inline def setScheme(value: String): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
+    inline def setSchemeUndefined: Self = StObject.set(x, "scheme", js.undefined)
   }
 }

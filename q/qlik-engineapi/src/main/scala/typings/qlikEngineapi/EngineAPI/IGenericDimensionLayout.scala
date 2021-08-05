@@ -31,8 +31,7 @@ trait IGenericDimensionLayout
 }
 object IGenericDimensionLayout {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     qDim: INxLibraryDimensionDef,
     qDimInfos: js.Array[IGenericDimensionInfo],
     qInfo: INxInfo,
@@ -42,19 +41,14 @@ object IGenericDimensionLayout {
     __obj.asInstanceOf[IGenericDimensionLayout]
   }
   
-  @scala.inline
-  implicit class IGenericDimensionLayoutMutableBuilder[Self <: IGenericDimensionLayout] (val x: Self) extends AnyVal {
+  extension [Self <: IGenericDimensionLayout](x: Self) {
     
-    @scala.inline
-    def setQDim(value: INxLibraryDimensionDef): Self = StObject.set(x, "qDim", value.asInstanceOf[js.Any])
+    inline def setQDim(value: INxLibraryDimensionDef): Self = StObject.set(x, "qDim", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQDimInfos(value: js.Array[IGenericDimensionInfo]): Self = StObject.set(x, "qDimInfos", value.asInstanceOf[js.Any])
+    inline def setQDimInfos(value: js.Array[IGenericDimensionInfo]): Self = StObject.set(x, "qDimInfos", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQDimInfosVarargs(value: IGenericDimensionInfo*): Self = StObject.set(x, "qDimInfos", js.Array(value :_*))
+    inline def setQDimInfosVarargs(value: IGenericDimensionInfo*): Self = StObject.set(x, "qDimInfos", js.Array(value :_*))
     
-    @scala.inline
-    def setQMeta(value: INxMetaTitleDescriptionTag): Self = StObject.set(x, "qMeta", value.asInstanceOf[js.Any])
+    inline def setQMeta(value: INxMetaTitleDescriptionTag): Self = StObject.set(x, "qMeta", value.asInstanceOf[js.Any])
   }
 }

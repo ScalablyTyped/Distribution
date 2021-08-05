@@ -29,31 +29,23 @@ trait ParamsResourceQuestsAccept
 }
 object ParamsResourceQuestsAccept {
   
-  @scala.inline
-  def apply(): ParamsResourceQuestsAccept = {
+  inline def apply(): ParamsResourceQuestsAccept = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParamsResourceQuestsAccept]
   }
   
-  @scala.inline
-  implicit class ParamsResourceQuestsAcceptMutableBuilder[Self <: ParamsResourceQuestsAccept] (val x: Self) extends AnyVal {
+  extension [Self <: ParamsResourceQuestsAccept](x: Self) {
     
-    @scala.inline
-    def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
+    inline def setAuth(value: String | OAuth2Client | JWT | Compute | UserRefreshClient): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
+    inline def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setQuestId(value: String): Self = StObject.set(x, "questId", value.asInstanceOf[js.Any])
+    inline def setQuestId(value: String): Self = StObject.set(x, "questId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQuestIdUndefined: Self = StObject.set(x, "questId", js.undefined)
+    inline def setQuestIdUndefined: Self = StObject.set(x, "questId", js.undefined)
   }
 }

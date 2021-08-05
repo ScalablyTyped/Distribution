@@ -17,8 +17,8 @@ object navigationPluginMod {
     
     var navigation: NavigationItem = js.native
     
-    var onBeginPage: js.Any = js.native
+    /* private */ var onBeginPage: js.Any = js.native
     
-    var onBeginRenderer: js.Any = js.native
+    /* private */ var onBeginRenderer: js.Any = js.native
   }
 }

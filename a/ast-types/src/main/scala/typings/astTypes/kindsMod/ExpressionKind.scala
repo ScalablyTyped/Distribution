@@ -107,22 +107,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ExpressionKind extends StObject
 object ExpressionKind {
   
-  @scala.inline
-  def ArrayExpression(elements: js.Array[ExpressionKind | SpreadElementKind | RestElementKind | Null]): typings.astTypes.namedTypesMod.namedTypes.ArrayExpression = {
+  inline def ArrayExpression(elements: js.Array[ExpressionKind | SpreadElementKind | RestElementKind | Null]): typings.astTypes.namedTypesMod.namedTypes.ArrayExpression = {
     val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ArrayExpression")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.ArrayExpression]
   }
   
-  @scala.inline
-  def ArrowFunctionExpression(body: BlockStatementKind | ExpressionKind, params: js.Array[PatternKind]): typings.astTypes.namedTypesMod.namedTypes.ArrowFunctionExpression = {
+  inline def ArrowFunctionExpression(body: BlockStatementKind | ExpressionKind, params: js.Array[PatternKind]): typings.astTypes.namedTypesMod.namedTypes.ArrowFunctionExpression = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ArrowFunctionExpression")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.ArrowFunctionExpression]
   }
   
-  @scala.inline
-  def AssignmentExpression(
+  inline def AssignmentExpression(
     left: PatternKind | MemberExpressionKind,
     operator: Equalssign | PlussignEqualssign | `-Equalssign` | AsteriskEqualssign | SlashEqualssign | PercentsignEqualssign | LessthansignLessthansignEqualssign | GreaterthansignGreaterthansignEqualssign | GreaterthansignGreaterthansignGreaterthansignEqualssign | VerticallineEqualssign | `^Equalssign` | AmpersandEqualssign | AsteriskAsteriskEqualssign,
     right: ExpressionKind
@@ -132,22 +129,19 @@ object ExpressionKind {
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.AssignmentExpression]
   }
   
-  @scala.inline
-  def AwaitExpression(): typings.astTypes.namedTypesMod.namedTypes.AwaitExpression = {
+  inline def AwaitExpression(): typings.astTypes.namedTypesMod.namedTypes.AwaitExpression = {
     val __obj = js.Dynamic.literal(argument = null)
     __obj.updateDynamic("type")("AwaitExpression")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.AwaitExpression]
   }
   
-  @scala.inline
-  def BigIntLiteral(value: String | Double): typings.astTypes.namedTypesMod.namedTypes.BigIntLiteral = {
+  inline def BigIntLiteral(value: String | Double): typings.astTypes.namedTypesMod.namedTypes.BigIntLiteral = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("BigIntLiteral")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.BigIntLiteral]
   }
   
-  @scala.inline
-  def BinaryExpression(
+  inline def BinaryExpression(
     left: ExpressionKind,
     operator: EqualssignEqualssign | ExclamationmarkEqualssign | EqualssignEqualssignEqualssign | ExclamationmarkEqualssignEqualssign | Lessthansign | LessthansignEqualssign | Greaterthansign | GreaterthansignEqualssign | LessthansignLessthansign | GreaterthansignGreaterthansign | GreaterthansignGreaterthansignGreaterthansign | Plussign | `-_` | Asterisk | Slash | Percentsign | Ampersand | Verticalline | ^ | in | instanceof | AsteriskAsterisk,
     right: ExpressionKind
@@ -157,157 +151,135 @@ object ExpressionKind {
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.BinaryExpression]
   }
   
-  @scala.inline
-  def BindExpression(callee: ExpressionKind): typings.astTypes.namedTypesMod.namedTypes.BindExpression = {
+  inline def BindExpression(callee: ExpressionKind): typings.astTypes.namedTypesMod.namedTypes.BindExpression = {
     val __obj = js.Dynamic.literal(callee = callee.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("BindExpression")
     __obj.updateDynamic("object")(null)
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.BindExpression]
   }
   
-  @scala.inline
-  def BooleanLiteral(value: Boolean): typings.astTypes.namedTypesMod.namedTypes.BooleanLiteral = {
+  inline def BooleanLiteral(value: Boolean): typings.astTypes.namedTypesMod.namedTypes.BooleanLiteral = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("BooleanLiteral")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.BooleanLiteral]
   }
   
-  @scala.inline
-  def CallExpression(arguments: js.Array[ExpressionKind | SpreadElementKind], callee: ExpressionKind): typings.astTypes.namedTypesMod.namedTypes.CallExpression = {
+  inline def CallExpression(arguments: js.Array[ExpressionKind | SpreadElementKind], callee: ExpressionKind): typings.astTypes.namedTypesMod.namedTypes.CallExpression = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("CallExpression")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.CallExpression]
   }
   
-  @scala.inline
-  def ChainExpression(expression: ChainElementKind): typings.astTypes.namedTypesMod.namedTypes.ChainExpression = {
+  inline def ChainExpression(expression: ChainElementKind): typings.astTypes.namedTypesMod.namedTypes.ChainExpression = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ChainExpression")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.ChainExpression]
   }
   
-  @scala.inline
-  def ClassExpression(body: ClassBodyKind): typings.astTypes.namedTypesMod.namedTypes.ClassExpression = {
+  inline def ClassExpression(body: ClassBodyKind): typings.astTypes.namedTypesMod.namedTypes.ClassExpression = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ClassExpression")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.ClassExpression]
   }
   
-  @scala.inline
-  def ComprehensionExpression(blocks: js.Array[ComprehensionBlockKind], body: ExpressionKind): typings.astTypes.namedTypesMod.namedTypes.ComprehensionExpression = {
+  inline def ComprehensionExpression(blocks: js.Array[ComprehensionBlockKind], body: ExpressionKind): typings.astTypes.namedTypesMod.namedTypes.ComprehensionExpression = {
     val __obj = js.Dynamic.literal(blocks = blocks.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], filter = null)
     __obj.updateDynamic("type")("ComprehensionExpression")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.ComprehensionExpression]
   }
   
-  @scala.inline
-  def ConditionalExpression(alternate: ExpressionKind, consequent: ExpressionKind, test: ExpressionKind): typings.astTypes.namedTypesMod.namedTypes.ConditionalExpression = {
+  inline def ConditionalExpression(alternate: ExpressionKind, consequent: ExpressionKind, test: ExpressionKind): typings.astTypes.namedTypesMod.namedTypes.ConditionalExpression = {
     val __obj = js.Dynamic.literal(alternate = alternate.asInstanceOf[js.Any], consequent = consequent.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ConditionalExpression")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.ConditionalExpression]
   }
   
-  @scala.inline
-  def DirectiveLiteral(): typings.astTypes.namedTypesMod.namedTypes.DirectiveLiteral = {
+  inline def DirectiveLiteral(): typings.astTypes.namedTypesMod.namedTypes.DirectiveLiteral = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("DirectiveLiteral")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.DirectiveLiteral]
   }
   
-  @scala.inline
-  def DoExpression(body: js.Array[StatementKind]): typings.astTypes.namedTypesMod.namedTypes.DoExpression = {
+  inline def DoExpression(body: js.Array[StatementKind]): typings.astTypes.namedTypesMod.namedTypes.DoExpression = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("DoExpression")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.DoExpression]
   }
   
-  @scala.inline
-  def FunctionExpression(body: BlockStatementKind, params: js.Array[PatternKind]): typings.astTypes.namedTypesMod.namedTypes.FunctionExpression = {
+  inline def FunctionExpression(body: BlockStatementKind, params: js.Array[PatternKind]): typings.astTypes.namedTypesMod.namedTypes.FunctionExpression = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("FunctionExpression")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.FunctionExpression]
   }
   
-  @scala.inline
-  def GeneratorExpression(blocks: js.Array[ComprehensionBlockKind], body: ExpressionKind): typings.astTypes.namedTypesMod.namedTypes.GeneratorExpression = {
+  inline def GeneratorExpression(blocks: js.Array[ComprehensionBlockKind], body: ExpressionKind): typings.astTypes.namedTypesMod.namedTypes.GeneratorExpression = {
     val __obj = js.Dynamic.literal(blocks = blocks.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], filter = null)
     __obj.updateDynamic("type")("GeneratorExpression")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.GeneratorExpression]
   }
   
-  @scala.inline
-  def Identifier(name: String): typings.astTypes.namedTypesMod.namedTypes.Identifier = {
+  inline def Identifier(name: String): typings.astTypes.namedTypesMod.namedTypes.Identifier = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("Identifier")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.Identifier]
   }
   
-  @scala.inline
-  def Import(): typings.astTypes.namedTypesMod.namedTypes.Import = {
+  inline def Import(): typings.astTypes.namedTypesMod.namedTypes.Import = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("Import")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.Import]
   }
   
-  @scala.inline
-  def ImportExpression(source: ExpressionKind): typings.astTypes.namedTypesMod.namedTypes.ImportExpression = {
+  inline def ImportExpression(source: ExpressionKind): typings.astTypes.namedTypesMod.namedTypes.ImportExpression = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ImportExpression")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.ImportExpression]
   }
   
-  @scala.inline
-  def JSXElement(openingElement: JSXOpeningElementKind): typings.astTypes.namedTypesMod.namedTypes.JSXElement = {
+  inline def JSXElement(openingElement: JSXOpeningElementKind): typings.astTypes.namedTypesMod.namedTypes.JSXElement = {
     val __obj = js.Dynamic.literal(openingElement = openingElement.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("JSXElement")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.JSXElement]
   }
   
-  @scala.inline
-  def JSXExpressionContainer(expression: ExpressionKind | JSXEmptyExpressionKind): typings.astTypes.namedTypesMod.namedTypes.JSXExpressionContainer = {
+  inline def JSXExpressionContainer(expression: ExpressionKind | JSXEmptyExpressionKind): typings.astTypes.namedTypesMod.namedTypes.JSXExpressionContainer = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("JSXExpressionContainer")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.JSXExpressionContainer]
   }
   
-  @scala.inline
-  def JSXFragment(closingFragment: JSXClosingFragmentKind, openingFragment: JSXOpeningFragmentKind): typings.astTypes.namedTypesMod.namedTypes.JSXFragment = {
+  inline def JSXFragment(closingFragment: JSXClosingFragmentKind, openingFragment: JSXOpeningFragmentKind): typings.astTypes.namedTypesMod.namedTypes.JSXFragment = {
     val __obj = js.Dynamic.literal(closingFragment = closingFragment.asInstanceOf[js.Any], openingFragment = openingFragment.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("JSXFragment")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.JSXFragment]
   }
   
-  @scala.inline
-  def JSXIdentifier(name: String): typings.astTypes.namedTypesMod.namedTypes.JSXIdentifier = {
+  inline def JSXIdentifier(name: String): typings.astTypes.namedTypesMod.namedTypes.JSXIdentifier = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("JSXIdentifier")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.JSXIdentifier]
   }
   
-  @scala.inline
-  def JSXMemberExpression(`object`: JSXIdentifierKind | JSXMemberExpressionKind, property: JSXIdentifierKind): typings.astTypes.namedTypesMod.namedTypes.JSXMemberExpression = {
+  inline def JSXMemberExpression(`object`: JSXIdentifierKind | JSXMemberExpressionKind, property: JSXIdentifierKind): typings.astTypes.namedTypesMod.namedTypes.JSXMemberExpression = {
     val __obj = js.Dynamic.literal(property = property.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("JSXMemberExpression")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.JSXMemberExpression]
   }
   
-  @scala.inline
-  def JSXText(value: String): typings.astTypes.namedTypesMod.namedTypes.JSXText = {
+  inline def JSXText(value: String): typings.astTypes.namedTypesMod.namedTypes.JSXText = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("JSXText")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.JSXText]
   }
   
-  @scala.inline
-  def Literal(): typings.astTypes.namedTypesMod.namedTypes.Literal = {
+  inline def Literal(): typings.astTypes.namedTypesMod.namedTypes.Literal = {
     val __obj = js.Dynamic.literal(value = null)
     __obj.updateDynamic("type")("Literal")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.Literal]
   }
   
-  @scala.inline
-  def LogicalExpression(
+  inline def LogicalExpression(
     left: ExpressionKind,
     operator: VerticallineVerticalline | AmpersandAmpersand | QuestionmarkQuestionmark,
     right: ExpressionKind
@@ -317,44 +289,38 @@ object ExpressionKind {
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.LogicalExpression]
   }
   
-  @scala.inline
-  def MemberExpression(`object`: ExpressionKind, property: IdentifierKind | ExpressionKind): typings.astTypes.namedTypesMod.namedTypes.MemberExpression = {
+  inline def MemberExpression(`object`: ExpressionKind, property: IdentifierKind | ExpressionKind): typings.astTypes.namedTypesMod.namedTypes.MemberExpression = {
     val __obj = js.Dynamic.literal(property = property.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("MemberExpression")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.MemberExpression]
   }
   
-  @scala.inline
-  def MetaProperty(meta: IdentifierKind, property: IdentifierKind): typings.astTypes.namedTypesMod.namedTypes.MetaProperty = {
+  inline def MetaProperty(meta: IdentifierKind, property: IdentifierKind): typings.astTypes.namedTypesMod.namedTypes.MetaProperty = {
     val __obj = js.Dynamic.literal(meta = meta.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("MetaProperty")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.MetaProperty]
   }
   
-  @scala.inline
-  def NewExpression(arguments: js.Array[ExpressionKind | SpreadElementKind], callee: ExpressionKind): typings.astTypes.namedTypesMod.namedTypes.NewExpression = {
+  inline def NewExpression(arguments: js.Array[ExpressionKind | SpreadElementKind], callee: ExpressionKind): typings.astTypes.namedTypesMod.namedTypes.NewExpression = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("NewExpression")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.NewExpression]
   }
   
-  @scala.inline
-  def NullLiteral(): typings.astTypes.namedTypesMod.namedTypes.NullLiteral = {
+  inline def NullLiteral(): typings.astTypes.namedTypesMod.namedTypes.NullLiteral = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("NullLiteral")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.NullLiteral]
   }
   
-  @scala.inline
-  def NumericLiteral(value: Double): typings.astTypes.namedTypesMod.namedTypes.NumericLiteral = {
+  inline def NumericLiteral(value: Double): typings.astTypes.namedTypesMod.namedTypes.NumericLiteral = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("NumericLiteral")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.NumericLiteral]
   }
   
-  @scala.inline
-  def ObjectExpression(
+  inline def ObjectExpression(
     properties: js.Array[
       PropertyKind | ObjectMethodKind | ObjectPropertyKind | SpreadPropertyKind | SpreadElementKind
     ]
@@ -364,121 +330,104 @@ object ExpressionKind {
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.ObjectExpression]
   }
   
-  @scala.inline
-  def OptionalCallExpression(arguments: js.Array[ExpressionKind | SpreadElementKind], callee: ExpressionKind): typings.astTypes.namedTypesMod.namedTypes.OptionalCallExpression = {
+  inline def OptionalCallExpression(arguments: js.Array[ExpressionKind | SpreadElementKind], callee: ExpressionKind): typings.astTypes.namedTypesMod.namedTypes.OptionalCallExpression = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("OptionalCallExpression")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.OptionalCallExpression]
   }
   
-  @scala.inline
-  def OptionalMemberExpression(`object`: ExpressionKind, property: IdentifierKind | ExpressionKind): typings.astTypes.namedTypesMod.namedTypes.OptionalMemberExpression = {
+  inline def OptionalMemberExpression(`object`: ExpressionKind, property: IdentifierKind | ExpressionKind): typings.astTypes.namedTypesMod.namedTypes.OptionalMemberExpression = {
     val __obj = js.Dynamic.literal(property = property.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("OptionalMemberExpression")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.OptionalMemberExpression]
   }
   
-  @scala.inline
-  def ParenthesizedExpression(expression: ExpressionKind): typings.astTypes.namedTypesMod.namedTypes.ParenthesizedExpression = {
+  inline def ParenthesizedExpression(expression: ExpressionKind): typings.astTypes.namedTypesMod.namedTypes.ParenthesizedExpression = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("ParenthesizedExpression")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.ParenthesizedExpression]
   }
   
-  @scala.inline
-  def PrivateName(id: IdentifierKind): typings.astTypes.namedTypesMod.namedTypes.PrivateName = {
+  inline def PrivateName(id: IdentifierKind): typings.astTypes.namedTypesMod.namedTypes.PrivateName = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("PrivateName")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.PrivateName]
   }
   
-  @scala.inline
-  def RegExpLiteral(flags: String, pattern: String): typings.astTypes.namedTypesMod.namedTypes.RegExpLiteral = {
+  inline def RegExpLiteral(flags: String, pattern: String): typings.astTypes.namedTypesMod.namedTypes.RegExpLiteral = {
     val __obj = js.Dynamic.literal(flags = flags.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("RegExpLiteral")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.RegExpLiteral]
   }
   
-  @scala.inline
-  def SequenceExpression(expressions: js.Array[ExpressionKind]): typings.astTypes.namedTypesMod.namedTypes.SequenceExpression = {
+  inline def SequenceExpression(expressions: js.Array[ExpressionKind]): typings.astTypes.namedTypesMod.namedTypes.SequenceExpression = {
     val __obj = js.Dynamic.literal(expressions = expressions.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("SequenceExpression")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.SequenceExpression]
   }
   
-  @scala.inline
-  def StringLiteral(value: String): typings.astTypes.namedTypesMod.namedTypes.StringLiteral = {
+  inline def StringLiteral(value: String): typings.astTypes.namedTypesMod.namedTypes.StringLiteral = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("StringLiteral")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.StringLiteral]
   }
   
-  @scala.inline
-  def Super(): typings.astTypes.namedTypesMod.namedTypes.Super = {
+  inline def Super(): typings.astTypes.namedTypesMod.namedTypes.Super = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("Super")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.Super]
   }
   
-  @scala.inline
-  def TSAsExpression(expression: ExpressionKind, typeAnnotation: TSTypeKind): typings.astTypes.namedTypesMod.namedTypes.TSAsExpression = {
+  inline def TSAsExpression(expression: ExpressionKind, typeAnnotation: TSTypeKind): typings.astTypes.namedTypesMod.namedTypes.TSAsExpression = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSAsExpression")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.TSAsExpression]
   }
   
-  @scala.inline
-  def TSNonNullExpression(expression: ExpressionKind): typings.astTypes.namedTypesMod.namedTypes.TSNonNullExpression = {
+  inline def TSNonNullExpression(expression: ExpressionKind): typings.astTypes.namedTypesMod.namedTypes.TSNonNullExpression = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSNonNullExpression")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.TSNonNullExpression]
   }
   
-  @scala.inline
-  def TSTypeAssertion(expression: ExpressionKind, typeAnnotation: TSTypeKind): typings.astTypes.namedTypesMod.namedTypes.TSTypeAssertion = {
+  inline def TSTypeAssertion(expression: ExpressionKind, typeAnnotation: TSTypeKind): typings.astTypes.namedTypesMod.namedTypes.TSTypeAssertion = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSTypeAssertion")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.TSTypeAssertion]
   }
   
-  @scala.inline
-  def TSTypeParameter(name: String): typings.astTypes.namedTypesMod.namedTypes.TSTypeParameter = {
+  inline def TSTypeParameter(name: String): typings.astTypes.namedTypesMod.namedTypes.TSTypeParameter = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TSTypeParameter")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.TSTypeParameter]
   }
   
-  @scala.inline
-  def TaggedTemplateExpression(quasi: TemplateLiteralKind, tag: ExpressionKind): typings.astTypes.namedTypesMod.namedTypes.TaggedTemplateExpression = {
+  inline def TaggedTemplateExpression(quasi: TemplateLiteralKind, tag: ExpressionKind): typings.astTypes.namedTypesMod.namedTypes.TaggedTemplateExpression = {
     val __obj = js.Dynamic.literal(quasi = quasi.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TaggedTemplateExpression")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.TaggedTemplateExpression]
   }
   
-  @scala.inline
-  def TemplateLiteral(expressions: js.Array[ExpressionKind], quasis: js.Array[TemplateElementKind]): typings.astTypes.namedTypesMod.namedTypes.TemplateLiteral = {
+  inline def TemplateLiteral(expressions: js.Array[ExpressionKind], quasis: js.Array[TemplateElementKind]): typings.astTypes.namedTypesMod.namedTypes.TemplateLiteral = {
     val __obj = js.Dynamic.literal(expressions = expressions.asInstanceOf[js.Any], quasis = quasis.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TemplateLiteral")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.TemplateLiteral]
   }
   
-  @scala.inline
-  def ThisExpression(): typings.astTypes.namedTypesMod.namedTypes.ThisExpression = {
+  inline def ThisExpression(): typings.astTypes.namedTypesMod.namedTypes.ThisExpression = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")("ThisExpression")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.ThisExpression]
   }
   
-  @scala.inline
-  def TypeCastExpression(expression: ExpressionKind, typeAnnotation: TypeAnnotationKind): typings.astTypes.namedTypesMod.namedTypes.TypeCastExpression = {
+  inline def TypeCastExpression(expression: ExpressionKind, typeAnnotation: TypeAnnotationKind): typings.astTypes.namedTypesMod.namedTypes.TypeCastExpression = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("TypeCastExpression")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.TypeCastExpression]
   }
   
-  @scala.inline
-  def UnaryExpression(
+  inline def UnaryExpression(
     argument: ExpressionKind,
     operator: `-_` | Plussign | Exclamationmark | Tilde | typeof | void | delete
   ): typings.astTypes.namedTypesMod.namedTypes.UnaryExpression = {
@@ -487,15 +436,13 @@ object ExpressionKind {
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.UnaryExpression]
   }
   
-  @scala.inline
-  def UpdateExpression(argument: ExpressionKind, operator: PlussignPlussign | `--`, prefix: Boolean): typings.astTypes.namedTypesMod.namedTypes.UpdateExpression = {
+  inline def UpdateExpression(argument: ExpressionKind, operator: PlussignPlussign | `--`, prefix: Boolean): typings.astTypes.namedTypesMod.namedTypes.UpdateExpression = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("UpdateExpression")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.UpdateExpression]
   }
   
-  @scala.inline
-  def YieldExpression(): typings.astTypes.namedTypesMod.namedTypes.YieldExpression = {
+  inline def YieldExpression(): typings.astTypes.namedTypesMod.namedTypes.YieldExpression = {
     val __obj = js.Dynamic.literal(argument = null)
     __obj.updateDynamic("type")("YieldExpression")
     __obj.asInstanceOf[typings.astTypes.namedTypesMod.namedTypes.YieldExpression]

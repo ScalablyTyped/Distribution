@@ -16,31 +16,23 @@ trait InitWrapper extends StObject {
 }
 object InitWrapper {
   
-  @scala.inline
-  def apply(): InitWrapper = {
+  inline def apply(): InitWrapper = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[InitWrapper]
   }
   
-  @scala.inline
-  implicit class InitWrapperMutableBuilder[Self <: InitWrapper] (val x: Self) extends AnyVal {
+  extension [Self <: InitWrapper](x: Self) {
     
-    @scala.inline
-    def setInitWrapper(value: /* wrapper */ Wrapper => Wrapper): Self = StObject.set(x, "initWrapper", js.Any.fromFunction1(value))
+    inline def setInitWrapper(value: /* wrapper */ Wrapper => Wrapper): Self = StObject.set(x, "initWrapper", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setInitWrapperUndefined: Self = StObject.set(x, "initWrapper", js.undefined)
+    inline def setInitWrapperUndefined: Self = StObject.set(x, "initWrapper", js.undefined)
     
-    @scala.inline
-    def setOnProcessFinished(value: /* wrapper */ Wrapper => Unit): Self = StObject.set(x, "onProcessFinished", js.Any.fromFunction1(value))
+    inline def setOnProcessFinished(value: /* wrapper */ Wrapper => Unit): Self = StObject.set(x, "onProcessFinished", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnProcessFinishedUndefined: Self = StObject.set(x, "onProcessFinished", js.undefined)
+    inline def setOnProcessFinishedUndefined: Self = StObject.set(x, "onProcessFinished", js.undefined)
     
-    @scala.inline
-    def setProcessEntity(value: (/* entity */ DataEntity, /* wrapper */ Wrapper) => Unit): Self = StObject.set(x, "processEntity", js.Any.fromFunction2(value))
+    inline def setProcessEntity(value: (/* entity */ DataEntity, /* wrapper */ Wrapper) => Unit): Self = StObject.set(x, "processEntity", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setProcessEntityUndefined: Self = StObject.set(x, "processEntity", js.undefined)
+    inline def setProcessEntityUndefined: Self = StObject.set(x, "processEntity", js.undefined)
   }
 }

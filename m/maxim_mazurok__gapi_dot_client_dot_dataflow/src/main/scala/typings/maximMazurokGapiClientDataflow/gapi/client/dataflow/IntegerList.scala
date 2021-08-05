@@ -11,22 +11,17 @@ trait IntegerList extends StObject {
 }
 object IntegerList {
   
-  @scala.inline
-  def apply(): IntegerList = {
+  inline def apply(): IntegerList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IntegerList]
   }
   
-  @scala.inline
-  implicit class IntegerListMutableBuilder[Self <: IntegerList] (val x: Self) extends AnyVal {
+  extension [Self <: IntegerList](x: Self) {
     
-    @scala.inline
-    def setElements(value: js.Array[SplitInt64]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
+    inline def setElements(value: js.Array[SplitInt64]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
+    inline def setElementsUndefined: Self = StObject.set(x, "elements", js.undefined)
     
-    @scala.inline
-    def setElementsVarargs(value: SplitInt64*): Self = StObject.set(x, "elements", js.Array(value :_*))
+    inline def setElementsVarargs(value: SplitInt64*): Self = StObject.set(x, "elements", js.Array(value :_*))
   }
 }

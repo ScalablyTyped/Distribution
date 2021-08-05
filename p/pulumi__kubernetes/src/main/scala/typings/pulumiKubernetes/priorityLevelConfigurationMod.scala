@@ -70,17 +70,14 @@ object priorityLevelConfigurationMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): PriorityLevelConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[PriorityLevelConfiguration]
-    @scala.inline
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): PriorityLevelConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PriorityLevelConfiguration]
+    inline def get(name: String, id: Input[ID]): PriorityLevelConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[PriorityLevelConfiguration]
+    inline def get(name: String, id: Input[ID], opts: CustomResourceOptions): PriorityLevelConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PriorityLevelConfiguration]
     
     /**
       * Returns true if the given object is an instance of PriorityLevelConfiguration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/flowcontrol/v1alpha1/priorityLevelConfiguration.PriorityLevelConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/flowcontrol/v1alpha1/priorityLevelConfiguration.PriorityLevelConfiguration */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/flowcontrol/v1alpha1/priorityLevelConfiguration.PriorityLevelConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/flowcontrol/v1alpha1/priorityLevelConfiguration.PriorityLevelConfiguration */ Boolean]
   }
   
   trait PriorityLevelConfigurationArgs extends StObject {
@@ -113,42 +110,32 @@ object priorityLevelConfigurationMod {
   }
   object PriorityLevelConfigurationArgs {
     
-    @scala.inline
-    def apply(): PriorityLevelConfigurationArgs = {
+    inline def apply(): PriorityLevelConfigurationArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PriorityLevelConfigurationArgs]
     }
     
-    @scala.inline
-    implicit class PriorityLevelConfigurationArgsMutableBuilder[Self <: PriorityLevelConfigurationArgs] (val x: Self) extends AnyVal {
+    extension [Self <: PriorityLevelConfigurationArgs](x: Self) {
       
-      @scala.inline
-      def setApiVersion(value: Input[flowcontrolDotapiserverDotk8sDotioSlashv1alpha1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
+      inline def setApiVersion(value: Input[flowcontrolDotapiserverDotk8sDotioSlashv1alpha1]): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
+      inline def setApiVersionUndefined: Self = StObject.set(x, "apiVersion", js.undefined)
       
-      @scala.inline
-      def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.PriorityLevelConfiguration]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+      inline def setKind(value: Input[typings.pulumiKubernetes.pulumiKubernetesStrings.PriorityLevelConfiguration]): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
+      inline def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
       
-      @scala.inline
-      def setMetadata(value: Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+      inline def setMetadata(value: Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
+      inline def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)
       
-      @scala.inline
-      def setSpec(
+      inline def setSpec(
         value: Input[
               typings.pulumiKubernetes.inputMod.flowcontrol.v1alpha1.PriorityLevelConfigurationSpec
             ]
       ): Self = StObject.set(x, "spec", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
+      inline def setSpecUndefined: Self = StObject.set(x, "spec", js.undefined)
     }
   }
 }

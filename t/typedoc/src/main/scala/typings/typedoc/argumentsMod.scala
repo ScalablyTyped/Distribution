@@ -17,7 +17,7 @@ object argumentsMod {
     def this(priority: Double) = this()
     def this(priority: Double, args: js.Array[String]) = this()
     
-    var args: js.Any = js.native
+    /* private */ var args: js.Any = js.native
     
     /* CompleteClass */
     var name: String = js.native

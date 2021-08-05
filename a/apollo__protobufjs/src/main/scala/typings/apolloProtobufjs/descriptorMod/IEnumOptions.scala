@@ -12,25 +12,19 @@ trait IEnumOptions extends StObject {
 }
 object IEnumOptions {
   
-  @scala.inline
-  def apply(): IEnumOptions = {
+  inline def apply(): IEnumOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IEnumOptions]
   }
   
-  @scala.inline
-  implicit class IEnumOptionsMutableBuilder[Self <: IEnumOptions] (val x: Self) extends AnyVal {
+  extension [Self <: IEnumOptions](x: Self) {
     
-    @scala.inline
-    def setAllowAlias(value: Boolean): Self = StObject.set(x, "allowAlias", value.asInstanceOf[js.Any])
+    inline def setAllowAlias(value: Boolean): Self = StObject.set(x, "allowAlias", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowAliasUndefined: Self = StObject.set(x, "allowAlias", js.undefined)
+    inline def setAllowAliasUndefined: Self = StObject.set(x, "allowAlias", js.undefined)
     
-    @scala.inline
-    def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
+    inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
+    inline def setDeprecatedUndefined: Self = StObject.set(x, "deprecated", js.undefined)
   }
 }

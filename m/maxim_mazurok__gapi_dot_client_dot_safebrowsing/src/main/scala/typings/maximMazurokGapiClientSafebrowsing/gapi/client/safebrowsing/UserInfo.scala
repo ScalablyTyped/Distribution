@@ -14,25 +14,19 @@ trait UserInfo extends StObject {
 }
 object UserInfo {
   
-  @scala.inline
-  def apply(): UserInfo = {
+  inline def apply(): UserInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[UserInfo]
   }
   
-  @scala.inline
-  implicit class UserInfoMutableBuilder[Self <: UserInfo] (val x: Self) extends AnyVal {
+  extension [Self <: UserInfo](x: Self) {
     
-    @scala.inline
-    def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
+    inline def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRegionCodeUndefined: Self = StObject.set(x, "regionCode", js.undefined)
+    inline def setRegionCodeUndefined: Self = StObject.set(x, "regionCode", js.undefined)
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
   }
 }

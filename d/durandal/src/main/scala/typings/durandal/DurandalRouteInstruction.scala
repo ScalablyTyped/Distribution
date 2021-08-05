@@ -19,8 +19,7 @@ trait DurandalRouteInstruction extends StObject {
 }
 object DurandalRouteInstruction {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     config: DurandalRouteConfiguration,
     fragment: String,
     params: js.Array[js.Any],
@@ -31,25 +30,18 @@ object DurandalRouteInstruction {
     __obj.asInstanceOf[DurandalRouteInstruction]
   }
   
-  @scala.inline
-  implicit class DurandalRouteInstructionMutableBuilder[Self <: DurandalRouteInstruction] (val x: Self) extends AnyVal {
+  extension [Self <: DurandalRouteInstruction](x: Self) {
     
-    @scala.inline
-    def setConfig(value: DurandalRouteConfiguration): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: DurandalRouteConfiguration): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFragment(value: String): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
+    inline def setFragment(value: String): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParams(value: js.Array[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+    inline def setParams(value: js.Array[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParamsVarargs(value: js.Any*): Self = StObject.set(x, "params", js.Array(value :_*))
+    inline def setParamsVarargs(value: js.Any*): Self = StObject.set(x, "params", js.Array(value :_*))
     
-    @scala.inline
-    def setQueryParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
+    inline def setQueryParams(value: StringDictionary[js.Any]): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueryString(value: String): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
+    inline def setQueryString(value: String): Self = StObject.set(x, "queryString", value.asInstanceOf[js.Any])
   }
 }

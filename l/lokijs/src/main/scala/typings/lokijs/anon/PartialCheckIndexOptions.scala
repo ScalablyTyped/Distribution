@@ -15,31 +15,23 @@ trait PartialCheckIndexOptions extends StObject {
 }
 object PartialCheckIndexOptions {
   
-  @scala.inline
-  def apply(): PartialCheckIndexOptions = {
+  inline def apply(): PartialCheckIndexOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[PartialCheckIndexOptions]
   }
   
-  @scala.inline
-  implicit class PartialCheckIndexOptionsMutableBuilder[Self <: PartialCheckIndexOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PartialCheckIndexOptions](x: Self) {
     
-    @scala.inline
-    def setRandomSampling(value: Boolean): Self = StObject.set(x, "randomSampling", value.asInstanceOf[js.Any])
+    inline def setRandomSampling(value: Boolean): Self = StObject.set(x, "randomSampling", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRandomSamplingFactor(value: Double): Self = StObject.set(x, "randomSamplingFactor", value.asInstanceOf[js.Any])
+    inline def setRandomSamplingFactor(value: Double): Self = StObject.set(x, "randomSamplingFactor", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRandomSamplingFactorUndefined: Self = StObject.set(x, "randomSamplingFactor", js.undefined)
+    inline def setRandomSamplingFactorUndefined: Self = StObject.set(x, "randomSamplingFactor", js.undefined)
     
-    @scala.inline
-    def setRandomSamplingUndefined: Self = StObject.set(x, "randomSampling", js.undefined)
+    inline def setRandomSamplingUndefined: Self = StObject.set(x, "randomSampling", js.undefined)
     
-    @scala.inline
-    def setRepair(value: Boolean): Self = StObject.set(x, "repair", value.asInstanceOf[js.Any])
+    inline def setRepair(value: Boolean): Self = StObject.set(x, "repair", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRepairUndefined: Self = StObject.set(x, "repair", js.undefined)
+    inline def setRepairUndefined: Self = StObject.set(x, "repair", js.undefined)
   }
 }

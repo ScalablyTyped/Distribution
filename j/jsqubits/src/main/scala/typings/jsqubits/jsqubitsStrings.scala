@@ -11,6 +11,5 @@ object jsqubitsStrings {
   sealed trait ALL
     extends StObject
        with _SingleQubitOperatorTargetQubits
-  @scala.inline
-  def ALL: ALL = "ALL".asInstanceOf[ALL]
+  inline def ALL: ALL = "ALL".asInstanceOf[ALL]
 }

@@ -26,25 +26,19 @@ trait SchemaNamespace extends StObject {
 }
 object SchemaNamespace {
   
-  @scala.inline
-  def apply(): SchemaNamespace = {
+  inline def apply(): SchemaNamespace = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaNamespace]
   }
   
-  @scala.inline
-  implicit class SchemaNamespaceMutableBuilder[Self <: SchemaNamespace] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaNamespace](x: Self) {
     
-    @scala.inline
-    def setNamespaceName(value: String): Self = StObject.set(x, "namespaceName", value.asInstanceOf[js.Any])
+    inline def setNamespaceName(value: String): Self = StObject.set(x, "namespaceName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceNameUndefined: Self = StObject.set(x, "namespaceName", js.undefined)
+    inline def setNamespaceNameUndefined: Self = StObject.set(x, "namespaceName", js.undefined)
     
-    @scala.inline
-    def setServingVisibility(value: String): Self = StObject.set(x, "servingVisibility", value.asInstanceOf[js.Any])
+    inline def setServingVisibility(value: String): Self = StObject.set(x, "servingVisibility", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServingVisibilityUndefined: Self = StObject.set(x, "servingVisibility", js.undefined)
+    inline def setServingVisibilityUndefined: Self = StObject.set(x, "servingVisibility", js.undefined)
   }
 }

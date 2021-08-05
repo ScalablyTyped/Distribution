@@ -28,37 +28,27 @@ trait GetCustomerGatewayAssociationsRequest extends StObject {
 }
 object GetCustomerGatewayAssociationsRequest {
   
-  @scala.inline
-  def apply(GlobalNetworkId: String): GetCustomerGatewayAssociationsRequest = {
+  inline def apply(GlobalNetworkId: String): GetCustomerGatewayAssociationsRequest = {
     val __obj = js.Dynamic.literal(GlobalNetworkId = GlobalNetworkId.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetCustomerGatewayAssociationsRequest]
   }
   
-  @scala.inline
-  implicit class GetCustomerGatewayAssociationsRequestMutableBuilder[Self <: GetCustomerGatewayAssociationsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetCustomerGatewayAssociationsRequest](x: Self) {
     
-    @scala.inline
-    def setCustomerGatewayArns(value: StringList): Self = StObject.set(x, "CustomerGatewayArns", value.asInstanceOf[js.Any])
+    inline def setCustomerGatewayArns(value: StringList): Self = StObject.set(x, "CustomerGatewayArns", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomerGatewayArnsUndefined: Self = StObject.set(x, "CustomerGatewayArns", js.undefined)
+    inline def setCustomerGatewayArnsUndefined: Self = StObject.set(x, "CustomerGatewayArns", js.undefined)
     
-    @scala.inline
-    def setCustomerGatewayArnsVarargs(value: String*): Self = StObject.set(x, "CustomerGatewayArns", js.Array(value :_*))
+    inline def setCustomerGatewayArnsVarargs(value: String*): Self = StObject.set(x, "CustomerGatewayArns", js.Array(value :_*))
     
-    @scala.inline
-    def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
+    inline def setGlobalNetworkId(value: String): Self = StObject.set(x, "GlobalNetworkId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
   }
 }

@@ -15,19 +15,15 @@ trait MonitorAdvertisement
 }
 object MonitorAdvertisement {
   
-  @scala.inline
-  def apply(name: String): MonitorAdvertisement = {
+  inline def apply(name: String): MonitorAdvertisement = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[MonitorAdvertisement]
   }
   
-  @scala.inline
-  implicit class MonitorAdvertisementMutableBuilder[Self <: MonitorAdvertisement] (val x: Self) extends AnyVal {
+  extension [Self <: MonitorAdvertisement](x: Self) {
     
-    @scala.inline
-    def setPort(value: Double | String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+    inline def setPort(value: Double | String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+    inline def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
   }
 }

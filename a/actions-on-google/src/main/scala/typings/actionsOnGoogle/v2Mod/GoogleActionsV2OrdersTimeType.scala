@@ -13,15 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait GoogleActionsV2OrdersTimeType extends StObject
 object GoogleActionsV2OrdersTimeType {
   
-  @scala.inline
-  def DELIVERY_DATE: typings.actionsOnGoogle.actionsOnGoogleStrings.DELIVERY_DATE = "DELIVERY_DATE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.DELIVERY_DATE]
+  inline def DELIVERY_DATE: typings.actionsOnGoogle.actionsOnGoogleStrings.DELIVERY_DATE = "DELIVERY_DATE".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.DELIVERY_DATE]
   
-  @scala.inline
-  def ETA: typings.actionsOnGoogle.actionsOnGoogleStrings.ETA = "ETA".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.ETA]
+  inline def ETA: typings.actionsOnGoogle.actionsOnGoogleStrings.ETA = "ETA".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.ETA]
   
-  @scala.inline
-  def RESERVATION_SLOT: typings.actionsOnGoogle.actionsOnGoogleStrings.RESERVATION_SLOT = "RESERVATION_SLOT".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.RESERVATION_SLOT]
+  inline def RESERVATION_SLOT: typings.actionsOnGoogle.actionsOnGoogleStrings.RESERVATION_SLOT = "RESERVATION_SLOT".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.RESERVATION_SLOT]
   
-  @scala.inline
-  def UNKNOWN: typings.actionsOnGoogle.actionsOnGoogleStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.UNKNOWN]
+  inline def UNKNOWN: typings.actionsOnGoogle.actionsOnGoogleStrings.UNKNOWN = "UNKNOWN".asInstanceOf[typings.actionsOnGoogle.actionsOnGoogleStrings.UNKNOWN]
 }

@@ -20,34 +20,25 @@ trait OnSortEventArgs[T /* <: SlickData */]
 }
 object OnSortEventArgs {
   
-  @scala.inline
-  def apply[T /* <: SlickData */](grid: Grid[T], multiColumnSort: Boolean, sortAsc: Boolean): OnSortEventArgs[T] = {
+  inline def apply[T /* <: SlickData */](grid: Grid[T], multiColumnSort: Boolean, sortAsc: Boolean): OnSortEventArgs[T] = {
     val __obj = js.Dynamic.literal(grid = grid.asInstanceOf[js.Any], multiColumnSort = multiColumnSort.asInstanceOf[js.Any], sortAsc = sortAsc.asInstanceOf[js.Any])
     __obj.asInstanceOf[OnSortEventArgs[T]]
   }
   
-  @scala.inline
-  implicit class OnSortEventArgsMutableBuilder[Self <: OnSortEventArgs[?], T /* <: SlickData */] (val x: Self & OnSortEventArgs[T]) extends AnyVal {
+  extension [Self <: OnSortEventArgs[?], T /* <: SlickData */](x: Self & OnSortEventArgs[T]) {
     
-    @scala.inline
-    def setMultiColumnSort(value: Boolean): Self = StObject.set(x, "multiColumnSort", value.asInstanceOf[js.Any])
+    inline def setMultiColumnSort(value: Boolean): Self = StObject.set(x, "multiColumnSort", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortAsc(value: Boolean): Self = StObject.set(x, "sortAsc", value.asInstanceOf[js.Any])
+    inline def setSortAsc(value: Boolean): Self = StObject.set(x, "sortAsc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortCol(value: Column[T]): Self = StObject.set(x, "sortCol", value.asInstanceOf[js.Any])
+    inline def setSortCol(value: Column[T]): Self = StObject.set(x, "sortCol", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortColUndefined: Self = StObject.set(x, "sortCol", js.undefined)
+    inline def setSortColUndefined: Self = StObject.set(x, "sortCol", js.undefined)
     
-    @scala.inline
-    def setSortCols(value: js.Array[SortColumn[T]]): Self = StObject.set(x, "sortCols", value.asInstanceOf[js.Any])
+    inline def setSortCols(value: js.Array[SortColumn[T]]): Self = StObject.set(x, "sortCols", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSortColsUndefined: Self = StObject.set(x, "sortCols", js.undefined)
+    inline def setSortColsUndefined: Self = StObject.set(x, "sortCols", js.undefined)
     
-    @scala.inline
-    def setSortColsVarargs(value: SortColumn[T]*): Self = StObject.set(x, "sortCols", js.Array(value :_*))
+    inline def setSortColsVarargs(value: SortColumn[T]*): Self = StObject.set(x, "sortCols", js.Array(value :_*))
   }
 }

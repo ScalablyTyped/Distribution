@@ -34,9 +34,9 @@ object contextMod {
       registry: js.Any
     ) = this()
     
-    var _registry: js.Any = js.native
+    /* private */ var _registry: js.Any = js.native
     
-    var _unresolvedCtxCount: js.Any = js.native
+    /* private */ var _unresolvedCtxCount: js.Any = js.native
     
     def appendBinding(binding: AST): Unit = js.native
     
@@ -49,7 +49,7 @@ object contextMod {
     
     def appendProjection(node: I18nMeta, index: Double): Unit = js.native
     
-    var appendTag: js.Any = js.native
+    /* private */ var appendTag: js.Any = js.native
     
     def appendTemplate(node: I18nMeta, index: Double): Unit = js.native
     
@@ -96,7 +96,7 @@ object contextMod {
     
     val ref: ReadVarExpr = js.native
     
-    var registry: js.Any = js.native
+    /* private */ var registry: js.Any = js.native
     
     val templateIndex: Double | Null = js.native
   }

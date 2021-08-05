@@ -48,15 +48,15 @@ object menuContextMod {
     /* CompleteClass */
     override def getUniqueCells(): js.Array[ICellCoordinate] = js.native
     
-    var numCols: js.Any = js.native
+    /* private */ var numCols: js.Any = js.native
     
-    var numRows: js.Any = js.native
+    /* private */ var numRows: js.Any = js.native
     
-    var regions: js.Any = js.native
+    /* private */ var regions: js.Any = js.native
     
-    var selectedRegions: js.Any = js.native
+    /* private */ var selectedRegions: js.Any = js.native
     
-    var target: js.Any = js.native
+    /* private */ var target: js.Any = js.native
   }
   
   type IContextMenuRenderer = js.Function1[/* context */ IMenuContext, Element]
@@ -93,8 +93,7 @@ object menuContextMod {
   }
   object IMenuContext {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       getRegions: () => js.Array[IRegion],
       getSelectedRegions: () => js.Array[IRegion],
       getTarget: () => IRegion,
@@ -104,20 +103,15 @@ object menuContextMod {
       __obj.asInstanceOf[IMenuContext]
     }
     
-    @scala.inline
-    implicit class IMenuContextMutableBuilder[Self <: IMenuContext] (val x: Self) extends AnyVal {
+    extension [Self <: IMenuContext](x: Self) {
       
-      @scala.inline
-      def setGetRegions(value: () => js.Array[IRegion]): Self = StObject.set(x, "getRegions", js.Any.fromFunction0(value))
+      inline def setGetRegions(value: () => js.Array[IRegion]): Self = StObject.set(x, "getRegions", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetSelectedRegions(value: () => js.Array[IRegion]): Self = StObject.set(x, "getSelectedRegions", js.Any.fromFunction0(value))
+      inline def setGetSelectedRegions(value: () => js.Array[IRegion]): Self = StObject.set(x, "getSelectedRegions", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetTarget(value: () => IRegion): Self = StObject.set(x, "getTarget", js.Any.fromFunction0(value))
+      inline def setGetTarget(value: () => IRegion): Self = StObject.set(x, "getTarget", js.Any.fromFunction0(value))
       
-      @scala.inline
-      def setGetUniqueCells(value: () => js.Array[ICellCoordinate]): Self = StObject.set(x, "getUniqueCells", js.Any.fromFunction0(value))
+      inline def setGetUniqueCells(value: () => js.Array[ICellCoordinate]): Self = StObject.set(x, "getUniqueCells", js.Any.fromFunction0(value))
     }
   }
 }

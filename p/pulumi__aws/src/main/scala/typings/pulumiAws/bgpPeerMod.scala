@@ -87,21 +87,16 @@ object bgpPeerMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @scala.inline
-    def get(name: String, id: Input[ID]): BgpPeer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[BgpPeer]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): BgpPeer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BgpPeer]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: BgpPeerState): BgpPeer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[BgpPeer]
-    @scala.inline
-    def get(name: String, id: Input[ID], state: BgpPeerState, opts: CustomResourceOptions): BgpPeer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BgpPeer]
+    inline def get(name: String, id: Input[ID]): BgpPeer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[BgpPeer]
+    inline def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): BgpPeer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BgpPeer]
+    inline def get(name: String, id: Input[ID], state: BgpPeerState): BgpPeer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[BgpPeer]
+    inline def get(name: String, id: Input[ID], state: BgpPeerState, opts: CustomResourceOptions): BgpPeer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BgpPeer]
     
     /**
       * Returns true if the given object is an instance of BgpPeer.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @scala.inline
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/bgpPeer.BgpPeer */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/bgpPeer.BgpPeer */ Boolean]
+    inline def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/bgpPeer.BgpPeer */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/bgpPeer.BgpPeer */ Boolean]
   }
   
   trait BgpPeerArgs extends StObject {
@@ -140,41 +135,30 @@ object bgpPeerMod {
   }
   object BgpPeerArgs {
     
-    @scala.inline
-    def apply(addressFamily: Input[String], bgpAsn: Input[Double], virtualInterfaceId: Input[String]): BgpPeerArgs = {
+    inline def apply(addressFamily: Input[String], bgpAsn: Input[Double], virtualInterfaceId: Input[String]): BgpPeerArgs = {
       val __obj = js.Dynamic.literal(addressFamily = addressFamily.asInstanceOf[js.Any], bgpAsn = bgpAsn.asInstanceOf[js.Any], virtualInterfaceId = virtualInterfaceId.asInstanceOf[js.Any])
       __obj.asInstanceOf[BgpPeerArgs]
     }
     
-    @scala.inline
-    implicit class BgpPeerArgsMutableBuilder[Self <: BgpPeerArgs] (val x: Self) extends AnyVal {
+    extension [Self <: BgpPeerArgs](x: Self) {
       
-      @scala.inline
-      def setAddressFamily(value: Input[String]): Self = StObject.set(x, "addressFamily", value.asInstanceOf[js.Any])
+      inline def setAddressFamily(value: Input[String]): Self = StObject.set(x, "addressFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmazonAddress(value: Input[String]): Self = StObject.set(x, "amazonAddress", value.asInstanceOf[js.Any])
+      inline def setAmazonAddress(value: Input[String]): Self = StObject.set(x, "amazonAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmazonAddressUndefined: Self = StObject.set(x, "amazonAddress", js.undefined)
+      inline def setAmazonAddressUndefined: Self = StObject.set(x, "amazonAddress", js.undefined)
       
-      @scala.inline
-      def setBgpAsn(value: Input[Double]): Self = StObject.set(x, "bgpAsn", value.asInstanceOf[js.Any])
+      inline def setBgpAsn(value: Input[Double]): Self = StObject.set(x, "bgpAsn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgpAuthKey(value: Input[String]): Self = StObject.set(x, "bgpAuthKey", value.asInstanceOf[js.Any])
+      inline def setBgpAuthKey(value: Input[String]): Self = StObject.set(x, "bgpAuthKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgpAuthKeyUndefined: Self = StObject.set(x, "bgpAuthKey", js.undefined)
+      inline def setBgpAuthKeyUndefined: Self = StObject.set(x, "bgpAuthKey", js.undefined)
       
-      @scala.inline
-      def setCustomerAddress(value: Input[String]): Self = StObject.set(x, "customerAddress", value.asInstanceOf[js.Any])
+      inline def setCustomerAddress(value: Input[String]): Self = StObject.set(x, "customerAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomerAddressUndefined: Self = StObject.set(x, "customerAddress", js.undefined)
+      inline def setCustomerAddressUndefined: Self = StObject.set(x, "customerAddress", js.undefined)
       
-      @scala.inline
-      def setVirtualInterfaceId(value: Input[String]): Self = StObject.set(x, "virtualInterfaceId", value.asInstanceOf[js.Any])
+      inline def setVirtualInterfaceId(value: Input[String]): Self = StObject.set(x, "virtualInterfaceId", value.asInstanceOf[js.Any])
     }
   }
   
@@ -229,68 +213,48 @@ object bgpPeerMod {
   }
   object BgpPeerState {
     
-    @scala.inline
-    def apply(): BgpPeerState = {
+    inline def apply(): BgpPeerState = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[BgpPeerState]
     }
     
-    @scala.inline
-    implicit class BgpPeerStateMutableBuilder[Self <: BgpPeerState] (val x: Self) extends AnyVal {
+    extension [Self <: BgpPeerState](x: Self) {
       
-      @scala.inline
-      def setAddressFamily(value: Input[String]): Self = StObject.set(x, "addressFamily", value.asInstanceOf[js.Any])
+      inline def setAddressFamily(value: Input[String]): Self = StObject.set(x, "addressFamily", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAddressFamilyUndefined: Self = StObject.set(x, "addressFamily", js.undefined)
+      inline def setAddressFamilyUndefined: Self = StObject.set(x, "addressFamily", js.undefined)
       
-      @scala.inline
-      def setAmazonAddress(value: Input[String]): Self = StObject.set(x, "amazonAddress", value.asInstanceOf[js.Any])
+      inline def setAmazonAddress(value: Input[String]): Self = StObject.set(x, "amazonAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAmazonAddressUndefined: Self = StObject.set(x, "amazonAddress", js.undefined)
+      inline def setAmazonAddressUndefined: Self = StObject.set(x, "amazonAddress", js.undefined)
       
-      @scala.inline
-      def setAwsDevice(value: Input[String]): Self = StObject.set(x, "awsDevice", value.asInstanceOf[js.Any])
+      inline def setAwsDevice(value: Input[String]): Self = StObject.set(x, "awsDevice", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAwsDeviceUndefined: Self = StObject.set(x, "awsDevice", js.undefined)
+      inline def setAwsDeviceUndefined: Self = StObject.set(x, "awsDevice", js.undefined)
       
-      @scala.inline
-      def setBgpAsn(value: Input[Double]): Self = StObject.set(x, "bgpAsn", value.asInstanceOf[js.Any])
+      inline def setBgpAsn(value: Input[Double]): Self = StObject.set(x, "bgpAsn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgpAsnUndefined: Self = StObject.set(x, "bgpAsn", js.undefined)
+      inline def setBgpAsnUndefined: Self = StObject.set(x, "bgpAsn", js.undefined)
       
-      @scala.inline
-      def setBgpAuthKey(value: Input[String]): Self = StObject.set(x, "bgpAuthKey", value.asInstanceOf[js.Any])
+      inline def setBgpAuthKey(value: Input[String]): Self = StObject.set(x, "bgpAuthKey", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgpAuthKeyUndefined: Self = StObject.set(x, "bgpAuthKey", js.undefined)
+      inline def setBgpAuthKeyUndefined: Self = StObject.set(x, "bgpAuthKey", js.undefined)
       
-      @scala.inline
-      def setBgpPeerId(value: Input[String]): Self = StObject.set(x, "bgpPeerId", value.asInstanceOf[js.Any])
+      inline def setBgpPeerId(value: Input[String]): Self = StObject.set(x, "bgpPeerId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgpPeerIdUndefined: Self = StObject.set(x, "bgpPeerId", js.undefined)
+      inline def setBgpPeerIdUndefined: Self = StObject.set(x, "bgpPeerId", js.undefined)
       
-      @scala.inline
-      def setBgpStatus(value: Input[String]): Self = StObject.set(x, "bgpStatus", value.asInstanceOf[js.Any])
+      inline def setBgpStatus(value: Input[String]): Self = StObject.set(x, "bgpStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBgpStatusUndefined: Self = StObject.set(x, "bgpStatus", js.undefined)
+      inline def setBgpStatusUndefined: Self = StObject.set(x, "bgpStatus", js.undefined)
       
-      @scala.inline
-      def setCustomerAddress(value: Input[String]): Self = StObject.set(x, "customerAddress", value.asInstanceOf[js.Any])
+      inline def setCustomerAddress(value: Input[String]): Self = StObject.set(x, "customerAddress", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomerAddressUndefined: Self = StObject.set(x, "customerAddress", js.undefined)
+      inline def setCustomerAddressUndefined: Self = StObject.set(x, "customerAddress", js.undefined)
       
-      @scala.inline
-      def setVirtualInterfaceId(value: Input[String]): Self = StObject.set(x, "virtualInterfaceId", value.asInstanceOf[js.Any])
+      inline def setVirtualInterfaceId(value: Input[String]): Self = StObject.set(x, "virtualInterfaceId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVirtualInterfaceIdUndefined: Self = StObject.set(x, "virtualInterfaceId", js.undefined)
+      inline def setVirtualInterfaceIdUndefined: Self = StObject.set(x, "virtualInterfaceId", js.undefined)
     }
   }
 }

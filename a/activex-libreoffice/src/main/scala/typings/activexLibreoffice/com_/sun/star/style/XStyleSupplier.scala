@@ -27,8 +27,7 @@ trait XStyleSupplier
 }
 object XStyleSupplier {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Style: XStyle,
     acquire: () => Unit,
     getStyle: () => XStyle,
@@ -40,16 +39,12 @@ object XStyleSupplier {
     __obj.asInstanceOf[XStyleSupplier]
   }
   
-  @scala.inline
-  implicit class XStyleSupplierMutableBuilder[Self <: XStyleSupplier] (val x: Self) extends AnyVal {
+  extension [Self <: XStyleSupplier](x: Self) {
     
-    @scala.inline
-    def setGetStyle(value: () => XStyle): Self = StObject.set(x, "getStyle", js.Any.fromFunction0(value))
+    inline def setGetStyle(value: () => XStyle): Self = StObject.set(x, "getStyle", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetStyle(value: XStyle => Unit): Self = StObject.set(x, "setStyle", js.Any.fromFunction1(value))
+    inline def setSetStyle(value: XStyle => Unit): Self = StObject.set(x, "setStyle", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setStyle(value: XStyle): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
+    inline def setStyle(value: XStyle): Self = StObject.set(x, "Style", value.asInstanceOf[js.Any])
   }
 }

@@ -14,31 +14,23 @@ trait IncludeAccount extends StObject {
 }
 object IncludeAccount {
   
-  @scala.inline
-  def apply(): IncludeAccount = {
+  inline def apply(): IncludeAccount = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[IncludeAccount]
   }
   
-  @scala.inline
-  implicit class IncludeAccountMutableBuilder[Self <: IncludeAccount] (val x: Self) extends AnyVal {
+  extension [Self <: IncludeAccount](x: Self) {
     
-    @scala.inline
-    def setIncludeAccount(value: Boolean): Self = StObject.set(x, "includeAccount", value.asInstanceOf[js.Any])
+    inline def setIncludeAccount(value: Boolean): Self = StObject.set(x, "includeAccount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeAccountUndefined: Self = StObject.set(x, "includeAccount", js.undefined)
+    inline def setIncludeAccountUndefined: Self = StObject.set(x, "includeAccount", js.undefined)
     
-    @scala.inline
-    def setIncludeBusinessLinkedNotebooks(value: Boolean): Self = StObject.set(x, "includeBusinessLinkedNotebooks", value.asInstanceOf[js.Any])
+    inline def setIncludeBusinessLinkedNotebooks(value: Boolean): Self = StObject.set(x, "includeBusinessLinkedNotebooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludeBusinessLinkedNotebooksUndefined: Self = StObject.set(x, "includeBusinessLinkedNotebooks", js.undefined)
+    inline def setIncludeBusinessLinkedNotebooksUndefined: Self = StObject.set(x, "includeBusinessLinkedNotebooks", js.undefined)
     
-    @scala.inline
-    def setIncludePersonalLinkedNotebooks(value: Boolean): Self = StObject.set(x, "includePersonalLinkedNotebooks", value.asInstanceOf[js.Any])
+    inline def setIncludePersonalLinkedNotebooks(value: Boolean): Self = StObject.set(x, "includePersonalLinkedNotebooks", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIncludePersonalLinkedNotebooksUndefined: Self = StObject.set(x, "includePersonalLinkedNotebooks", js.undefined)
+    inline def setIncludePersonalLinkedNotebooksUndefined: Self = StObject.set(x, "includePersonalLinkedNotebooks", js.undefined)
   }
 }

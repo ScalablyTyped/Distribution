@@ -15,15 +15,10 @@ object utilsMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getProductions(grammar: Grammar): Map[String, Production] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProductions")(grammar.asInstanceOf[js.Any]).asInstanceOf[Map[String, Production]]
+  inline def getProductions(grammar: Grammar): Map[String, Production] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProductions")(grammar.asInstanceOf[js.Any]).asInstanceOf[Map[String, Production]]
   
-  @scala.inline
-  def rhsMatches(a: OneOfList, b: OneOfList): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("rhsMatches")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def rhsMatches(a: OneOfList, b: RightHandSide): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("rhsMatches")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def rhsMatches(a: RightHandSide, b: OneOfList): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("rhsMatches")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
-  @scala.inline
-  def rhsMatches(a: RightHandSide, b: RightHandSide): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("rhsMatches")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def rhsMatches(a: OneOfList, b: OneOfList): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("rhsMatches")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def rhsMatches(a: OneOfList, b: RightHandSide): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("rhsMatches")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def rhsMatches(a: RightHandSide, b: OneOfList): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("rhsMatches")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def rhsMatches(a: RightHandSide, b: RightHandSide): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("rhsMatches")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

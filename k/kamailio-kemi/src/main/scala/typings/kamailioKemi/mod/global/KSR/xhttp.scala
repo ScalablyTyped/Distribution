@@ -10,6 +10,5 @@ object xhttp {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def xhttpReply(code: Double, reason: String, ctype: String, body: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("xhttp_reply")(code.asInstanceOf[js.Any], reason.asInstanceOf[js.Any], ctype.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Double]
+  inline def xhttpReply(code: Double, reason: String, ctype: String, body: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("xhttp_reply")(code.asInstanceOf[js.Any], reason.asInstanceOf[js.Any], ctype.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

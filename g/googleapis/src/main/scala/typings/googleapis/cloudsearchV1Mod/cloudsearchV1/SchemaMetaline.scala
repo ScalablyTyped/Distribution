@@ -17,22 +17,17 @@ trait SchemaMetaline extends StObject {
 }
 object SchemaMetaline {
   
-  @scala.inline
-  def apply(): SchemaMetaline = {
+  inline def apply(): SchemaMetaline = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaMetaline]
   }
   
-  @scala.inline
-  implicit class SchemaMetalineMutableBuilder[Self <: SchemaMetaline] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaMetaline](x: Self) {
     
-    @scala.inline
-    def setProperties(value: js.Array[SchemaDisplayedProperty]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
+    inline def setProperties(value: js.Array[SchemaDisplayedProperty]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
+    inline def setPropertiesUndefined: Self = StObject.set(x, "properties", js.undefined)
     
-    @scala.inline
-    def setPropertiesVarargs(value: SchemaDisplayedProperty*): Self = StObject.set(x, "properties", js.Array(value :_*))
+    inline def setPropertiesVarargs(value: SchemaDisplayedProperty*): Self = StObject.set(x, "properties", js.Array(value :_*))
   }
 }

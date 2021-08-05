@@ -74,8 +74,7 @@ trait IndexBuffer extends StObject {
 }
 object IndexBuffer {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     destroy: () => Unit,
     getFormat: () => Double,
     getNumIndices: () => Double,
@@ -86,22 +85,16 @@ object IndexBuffer {
     __obj.asInstanceOf[IndexBuffer]
   }
   
-  @scala.inline
-  implicit class IndexBufferMutableBuilder[Self <: IndexBuffer] (val x: Self) extends AnyVal {
+  extension [Self <: IndexBuffer](x: Self) {
     
-    @scala.inline
-    def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
+    inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetFormat(value: () => Double): Self = StObject.set(x, "getFormat", js.Any.fromFunction0(value))
+    inline def setGetFormat(value: () => Double): Self = StObject.set(x, "getFormat", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetNumIndices(value: () => Double): Self = StObject.set(x, "getNumIndices", js.Any.fromFunction0(value))
+    inline def setGetNumIndices(value: () => Double): Self = StObject.set(x, "getNumIndices", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setLock(value: () => ArrayBuffer): Self = StObject.set(x, "lock", js.Any.fromFunction0(value))
+    inline def setLock(value: () => ArrayBuffer): Self = StObject.set(x, "lock", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setUnlock(value: () => Unit): Self = StObject.set(x, "unlock", js.Any.fromFunction0(value))
+    inline def setUnlock(value: () => Unit): Self = StObject.set(x, "unlock", js.Any.fromFunction0(value))
   }
 }

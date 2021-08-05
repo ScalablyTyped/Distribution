@@ -39,32 +39,24 @@ object policyModelsMod {
   }
   object ErrorResponse {
     
-    @scala.inline
-    def apply(): ErrorResponse = {
+    inline def apply(): ErrorResponse = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[ErrorResponse]
     }
     
-    @scala.inline
-    implicit class ErrorResponseMutableBuilder[Self <: ErrorResponse] (val x: Self) extends AnyVal {
+    extension [Self <: ErrorResponse](x: Self) {
       
-      @scala.inline
-      def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
+      inline def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
+      inline def setErrorCodeUndefined: Self = StObject.set(x, "errorCode", js.undefined)
       
-      @scala.inline
-      def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
+      inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
+      inline def setErrorMessageUndefined: Self = StObject.set(x, "errorMessage", js.undefined)
       
-      @scala.inline
-      def setHttpStatus(value: String): Self = StObject.set(x, "httpStatus", value.asInstanceOf[js.Any])
+      inline def setHttpStatus(value: String): Self = StObject.set(x, "httpStatus", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHttpStatusUndefined: Self = StObject.set(x, "httpStatus", js.undefined)
+      inline def setHttpStatusUndefined: Self = StObject.set(x, "httpStatus", js.undefined)
     }
   }
   
@@ -87,32 +79,24 @@ object policyModelsMod {
   }
   object Identity {
     
-    @scala.inline
-    def apply(): Identity = {
+    inline def apply(): Identity = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Identity]
     }
     
-    @scala.inline
-    implicit class IdentityMutableBuilder[Self <: Identity] (val x: Self) extends AnyVal {
+    extension [Self <: Identity](x: Self) {
       
-      @scala.inline
-      def setPrincipalId(value: String): Self = StObject.set(x, "principalId", value.asInstanceOf[js.Any])
+      inline def setPrincipalId(value: String): Self = StObject.set(x, "principalId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPrincipalIdUndefined: Self = StObject.set(x, "principalId", js.undefined)
+      inline def setPrincipalIdUndefined: Self = StObject.set(x, "principalId", js.undefined)
       
-      @scala.inline
-      def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
+      inline def setTenantId(value: String): Self = StObject.set(x, "tenantId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTenantIdUndefined: Self = StObject.set(x, "tenantId", js.undefined)
+      inline def setTenantIdUndefined: Self = StObject.set(x, "tenantId", js.undefined)
       
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+      inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     }
   }
   
@@ -279,26 +263,20 @@ object policyModelsMod {
   }
   object PolicyDefinitionReference {
     
-    @scala.inline
-    def apply(): PolicyDefinitionReference = {
+    inline def apply(): PolicyDefinitionReference = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PolicyDefinitionReference]
     }
     
-    @scala.inline
-    implicit class PolicyDefinitionReferenceMutableBuilder[Self <: PolicyDefinitionReference] (val x: Self) extends AnyVal {
+    extension [Self <: PolicyDefinitionReference](x: Self) {
       
-      @scala.inline
-      def setParameters(value: js.Any): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      inline def setParameters(value: js.Any): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+      inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
       
-      @scala.inline
-      def setPolicyDefinitionId(value: String): Self = StObject.set(x, "policyDefinitionId", value.asInstanceOf[js.Any])
+      inline def setPolicyDefinitionId(value: String): Self = StObject.set(x, "policyDefinitionId", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPolicyDefinitionIdUndefined: Self = StObject.set(x, "policyDefinitionId", js.undefined)
+      inline def setPolicyDefinitionIdUndefined: Self = StObject.set(x, "policyDefinitionId", js.undefined)
     }
   }
   
@@ -378,23 +356,18 @@ object policyModelsMod {
   }
   object PolicySku {
     
-    @scala.inline
-    def apply(name: String): PolicySku = {
+    inline def apply(name: String): PolicySku = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[PolicySku]
     }
     
-    @scala.inline
-    implicit class PolicySkuMutableBuilder[Self <: PolicySku] (val x: Self) extends AnyVal {
+    extension [Self <: PolicySku](x: Self) {
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTier(value: String): Self = StObject.set(x, "tier", value.asInstanceOf[js.Any])
+      inline def setTier(value: String): Self = StObject.set(x, "tier", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTierUndefined: Self = StObject.set(x, "tier", js.undefined)
+      inline def setTierUndefined: Self = StObject.set(x, "tier", js.undefined)
     }
   }
 }

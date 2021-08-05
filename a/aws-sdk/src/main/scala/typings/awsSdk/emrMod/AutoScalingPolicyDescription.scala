@@ -23,34 +23,25 @@ trait AutoScalingPolicyDescription extends StObject {
 }
 object AutoScalingPolicyDescription {
   
-  @scala.inline
-  def apply(): AutoScalingPolicyDescription = {
+  inline def apply(): AutoScalingPolicyDescription = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AutoScalingPolicyDescription]
   }
   
-  @scala.inline
-  implicit class AutoScalingPolicyDescriptionMutableBuilder[Self <: AutoScalingPolicyDescription] (val x: Self) extends AnyVal {
+  extension [Self <: AutoScalingPolicyDescription](x: Self) {
     
-    @scala.inline
-    def setConstraints(value: ScalingConstraints): Self = StObject.set(x, "Constraints", value.asInstanceOf[js.Any])
+    inline def setConstraints(value: ScalingConstraints): Self = StObject.set(x, "Constraints", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConstraintsUndefined: Self = StObject.set(x, "Constraints", js.undefined)
+    inline def setConstraintsUndefined: Self = StObject.set(x, "Constraints", js.undefined)
     
-    @scala.inline
-    def setRules(value: ScalingRuleList): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
+    inline def setRules(value: ScalingRuleList): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
+    inline def setRulesUndefined: Self = StObject.set(x, "Rules", js.undefined)
     
-    @scala.inline
-    def setRulesVarargs(value: ScalingRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
+    inline def setRulesVarargs(value: ScalingRule*): Self = StObject.set(x, "Rules", js.Array(value :_*))
     
-    @scala.inline
-    def setStatus(value: AutoScalingPolicyStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: AutoScalingPolicyStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

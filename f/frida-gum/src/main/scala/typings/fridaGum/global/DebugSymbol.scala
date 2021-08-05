@@ -53,8 +53,7 @@ object DebugSymbol {
     * @param glob Glob matching functions to resolve the addresses of.
     */
   /* static member */
-  @scala.inline
-  def findFunctionsMatching(glob: String): js.Array[typings.fridaGum.NativePointer] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFunctionsMatching")(glob.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.fridaGum.NativePointer]]
+  inline def findFunctionsMatching(glob: String): js.Array[typings.fridaGum.NativePointer] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFunctionsMatching")(glob.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.fridaGum.NativePointer]]
   
   /**
     * Resolves a function name and returns its addresses.
@@ -62,8 +61,7 @@ object DebugSymbol {
     * @param name Function name to resolve the addresses of.
     */
   /* static member */
-  @scala.inline
-  def findFunctionsNamed(name: String): js.Array[typings.fridaGum.NativePointer] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFunctionsNamed")(name.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.fridaGum.NativePointer]]
+  inline def findFunctionsNamed(name: String): js.Array[typings.fridaGum.NativePointer] = ^.asInstanceOf[js.Dynamic].applyDynamic("findFunctionsNamed")(name.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.fridaGum.NativePointer]]
   
   /**
     * Looks up debug information for `address`.
@@ -71,8 +69,7 @@ object DebugSymbol {
     * @param address Address to look up details for.
     */
   /* static member */
-  @scala.inline
-  def fromAddress(address: NativePointerValue): typings.fridaGum.DebugSymbol = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAddress")(address.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.DebugSymbol]
+  inline def fromAddress(address: NativePointerValue): typings.fridaGum.DebugSymbol = ^.asInstanceOf[js.Dynamic].applyDynamic("fromAddress")(address.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.DebugSymbol]
   
   /**
     * Looks up debug information for `name`.
@@ -80,8 +77,7 @@ object DebugSymbol {
     * @param name Name to look up details for.
     */
   /* static member */
-  @scala.inline
-  def fromName(name: String): typings.fridaGum.DebugSymbol = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(name.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.DebugSymbol]
+  inline def fromName(name: String): typings.fridaGum.DebugSymbol = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(name.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.DebugSymbol]
   
   /**
     * Resolves a function name and returns its address. Returns the first if
@@ -91,8 +87,7 @@ object DebugSymbol {
     * @param name Function name to resolve the address of.
     */
   /* static member */
-  @scala.inline
-  def getFunctionByName(name: String): typings.fridaGum.NativePointer = ^.asInstanceOf[js.Dynamic].applyDynamic("getFunctionByName")(name.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.NativePointer]
+  inline def getFunctionByName(name: String): typings.fridaGum.NativePointer = ^.asInstanceOf[js.Dynamic].applyDynamic("getFunctionByName")(name.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.NativePointer]
   
   /**
     * Loads debug symbols for a specific module.
@@ -100,6 +95,5 @@ object DebugSymbol {
     * @param path Path of module to load symbols for.
     */
   /* static member */
-  @scala.inline
-  def load(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def load(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

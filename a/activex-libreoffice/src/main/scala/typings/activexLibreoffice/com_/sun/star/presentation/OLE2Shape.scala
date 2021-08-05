@@ -35,8 +35,7 @@ trait OLE2Shape
      with typings.activexLibreoffice.com_.sun.star.drawing.OLE2Shape
 object OLE2Shape {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Bookmark: String,
     CLSID: String,
     DimColor: Color,

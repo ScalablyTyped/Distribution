@@ -23,47 +23,34 @@ object webOptionsMod {
   }
   object WebOptions {
     
-    @scala.inline
-    def apply(name: String, uuid: String): WebOptions = {
+    inline def apply(name: String, uuid: String): WebOptions = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
       __obj.asInstanceOf[WebOptions]
     }
     
-    @scala.inline
-    implicit class WebOptionsMutableBuilder[Self <: WebOptions] (val x: Self) extends AnyVal {
+    extension [Self <: WebOptions](x: Self) {
       
-      @scala.inline
-      def setContentRedirect(value: js.Any): Self = StObject.set(x, "contentRedirect", value.asInstanceOf[js.Any])
+      inline def setContentRedirect(value: js.Any): Self = StObject.set(x, "contentRedirect", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setContentRedirectUndefined: Self = StObject.set(x, "contentRedirect", js.undefined)
+      inline def setContentRedirectUndefined: Self = StObject.set(x, "contentRedirect", js.undefined)
       
-      @scala.inline
-      def setCustomContext(value: js.Any): Self = StObject.set(x, "customContext", value.asInstanceOf[js.Any])
+      inline def setCustomContext(value: js.Any): Self = StObject.set(x, "customContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setCustomContextUndefined: Self = StObject.set(x, "customContext", js.undefined)
+      inline def setCustomContextUndefined: Self = StObject.set(x, "customContext", js.undefined)
       
-      @scala.inline
-      def setExperimental(value: js.Any): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
+      inline def setExperimental(value: js.Any): Self = StObject.set(x, "experimental", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExperimentalUndefined: Self = StObject.set(x, "experimental", js.undefined)
+      inline def setExperimentalUndefined: Self = StObject.set(x, "experimental", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreloadScripts(value: js.Array[PreloadScript]): Self = StObject.set(x, "preloadScripts", value.asInstanceOf[js.Any])
+      inline def setPreloadScripts(value: js.Array[PreloadScript]): Self = StObject.set(x, "preloadScripts", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreloadScriptsUndefined: Self = StObject.set(x, "preloadScripts", js.undefined)
+      inline def setPreloadScriptsUndefined: Self = StObject.set(x, "preloadScripts", js.undefined)
       
-      @scala.inline
-      def setPreloadScriptsVarargs(value: PreloadScript*): Self = StObject.set(x, "preloadScripts", js.Array(value :_*))
+      inline def setPreloadScriptsVarargs(value: PreloadScript*): Self = StObject.set(x, "preloadScripts", js.Array(value :_*))
       
-      @scala.inline
-      def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
+      inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     }
   }
 }

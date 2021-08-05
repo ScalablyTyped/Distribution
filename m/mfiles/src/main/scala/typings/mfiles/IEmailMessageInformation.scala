@@ -34,8 +34,7 @@ trait IEmailMessageInformation extends StObject {
 }
 object IEmailMessageInformation {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     Cc: IStrings,
     Clone: () => IEmailMessageInformation,
     CloneFrom: IEmailMessageInformation => Unit,
@@ -53,43 +52,30 @@ object IEmailMessageInformation {
     __obj.asInstanceOf[IEmailMessageInformation]
   }
   
-  @scala.inline
-  implicit class IEmailMessageInformationMutableBuilder[Self <: IEmailMessageInformation] (val x: Self) extends AnyVal {
+  extension [Self <: IEmailMessageInformation](x: Self) {
     
-    @scala.inline
-    def setCc(value: IStrings): Self = StObject.set(x, "Cc", value.asInstanceOf[js.Any])
+    inline def setCc(value: IStrings): Self = StObject.set(x, "Cc", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClone(value: () => IEmailMessageInformation): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
+    inline def setClone(value: () => IEmailMessageInformation): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setCloneFrom(value: IEmailMessageInformation => Unit): Self = StObject.set(x, "CloneFrom", js.Any.fromFunction1(value))
+    inline def setCloneFrom(value: IEmailMessageInformation => Unit): Self = StObject.set(x, "CloneFrom", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setFrom(value: String): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
+    inline def setFrom(value: String): Self = StObject.set(x, "From", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setImportance(value: MFEmailImportance): Self = StObject.set(x, "Importance", value.asInstanceOf[js.Any])
+    inline def setImportance(value: MFEmailImportance): Self = StObject.set(x, "Importance", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInReplyTo(value: String): Self = StObject.set(x, "InReplyTo", value.asInstanceOf[js.Any])
+    inline def setInReplyTo(value: String): Self = StObject.set(x, "InReplyTo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMessageID(value: String): Self = StObject.set(x, "MessageID", value.asInstanceOf[js.Any])
+    inline def setMessageID(value: String): Self = StObject.set(x, "MessageID", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReceived(value: ITimestamp): Self = StObject.set(x, "Received", value.asInstanceOf[js.Any])
+    inline def setReceived(value: ITimestamp): Self = StObject.set(x, "Received", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSensitivity(value: MFEmailSensitivity): Self = StObject.set(x, "Sensitivity", value.asInstanceOf[js.Any])
+    inline def setSensitivity(value: MFEmailSensitivity): Self = StObject.set(x, "Sensitivity", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSent(value: ITimestamp): Self = StObject.set(x, "Sent", value.asInstanceOf[js.Any])
+    inline def setSent(value: ITimestamp): Self = StObject.set(x, "Sent", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
+    inline def setSubject(value: String): Self = StObject.set(x, "Subject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTo(value: IStrings): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
+    inline def setTo(value: IStrings): Self = StObject.set(x, "To", value.asInstanceOf[js.Any])
   }
 }

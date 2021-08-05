@@ -37,28 +37,21 @@ trait IItem[T] extends StObject {
 }
 object IItem {
   
-  @scala.inline
-  def apply[T](data: T, groupKey: String, handle: String, index: Double, key: String): IItem[T] = {
+  inline def apply[T](data: T, groupKey: String, handle: String, index: Double, key: String): IItem[T] = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], groupKey = groupKey.asInstanceOf[js.Any], handle = handle.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
     __obj.asInstanceOf[IItem[T]]
   }
   
-  @scala.inline
-  implicit class IItemMutableBuilder[Self <: IItem[?], T] (val x: Self & IItem[T]) extends AnyVal {
+  extension [Self <: IItem[?], T](x: Self & IItem[T]) {
     
-    @scala.inline
-    def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGroupKey(value: String): Self = StObject.set(x, "groupKey", value.asInstanceOf[js.Any])
+    inline def setGroupKey(value: String): Self = StObject.set(x, "groupKey", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
+    inline def setHandle(value: String): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+    inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+    inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }
 }

@@ -15,22 +15,17 @@ trait ApiResponse extends StObject {
 }
 object ApiResponse {
   
-  @scala.inline
-  def apply(body: js.Any, headers: StringDictionary[String], statusCode: Double): ApiResponse = {
+  inline def apply(body: js.Any, headers: StringDictionary[String], statusCode: Double): ApiResponse = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any])
     __obj.asInstanceOf[ApiResponse]
   }
   
-  @scala.inline
-  implicit class ApiResponseMutableBuilder[Self <: ApiResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ApiResponse](x: Self) {
     
-    @scala.inline
-    def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    inline def setBody(value: js.Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+    inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+    inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
   }
 }

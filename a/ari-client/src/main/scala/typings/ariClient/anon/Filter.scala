@@ -13,22 +13,17 @@ trait Filter extends StObject {
 }
 object Filter {
   
-  @scala.inline
-  def apply(applicationName: String): Filter = {
+  inline def apply(applicationName: String): Filter = {
     val __obj = js.Dynamic.literal(applicationName = applicationName.asInstanceOf[js.Any])
     __obj.asInstanceOf[Filter]
   }
   
-  @scala.inline
-  implicit class FilterMutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
+  extension [Self <: Filter](x: Self) {
     
-    @scala.inline
-    def setApplicationName(value: String): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
+    inline def setApplicationName(value: String): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilter(value: IndexableObject): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    inline def setFilter(value: IndexableObject): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
+    inline def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
   }
 }

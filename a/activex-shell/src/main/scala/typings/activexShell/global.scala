@@ -11,21 +11,21 @@ object global {
     /** FileSearchBand Class */
     @JSGlobal("Shell32.FileSearchBand")
     @js.native
-    class FileSearchBand protected ()
+    /* private */ class FileSearchBand ()
       extends StObject
          with typings.activexShell.Shell32.FileSearchBand
     
     /** Definition of interface Folder version 3 */
     @JSGlobal("Shell32.Folder3")
     @js.native
-    class Folder3 protected ()
+    /* private */ class Folder3 ()
       extends StObject
          with typings.activexShell.Shell32.Folder3
     
     /** Definition of interface FolderItemVerb */
     @JSGlobal("Shell32.FolderItemVerb")
     @js.native
-    class FolderItemVerb protected ()
+    /* private */ class FolderItemVerb ()
       extends StObject
          with typings.activexShell.Shell32.FolderItemVerb {
       
@@ -37,7 +37,7 @@ object global {
       /* CompleteClass */
       override val Name: String = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("Shell32.FolderItemVerb_typekey")
       var Shell32DotFolderItemVerb_typekey: typings.activexShell.Shell32.FolderItemVerb = js.native
     }
@@ -45,32 +45,32 @@ object global {
     /** Definition of interface FolderItemVerbs */
     @JSGlobal("Shell32.FolderItemVerbs")
     @js.native
-    class FolderItemVerbs protected ()
+    /* private */ class FolderItemVerbs ()
       extends StObject
          with typings.activexShell.Shell32.FolderItemVerbs
     
     /** Definition of interface FolderItems3 */
     @JSGlobal("Shell32.FolderItems3")
     @js.native
-    class FolderItems3 protected ()
+    /* private */ class FolderItems3 ()
       extends StObject
          with typings.activexShell.Shell32.FolderItems3
     
     /** Shell Object Type Information */
     @JSGlobal("Shell32.Shell")
     @js.native
-    class Shell protected ()
+    /* private */ class Shell ()
       extends StObject
          with typings.activexShell.Shell32.Shell
     
     /** ShellDispatch Load in Shell Context */
     @JSGlobal("Shell32.ShellDispatchInproc")
     @js.native
-    class ShellDispatchInproc protected ()
+    /* private */ class ShellDispatchInproc ()
       extends StObject
          with typings.activexShell.Shell32.ShellDispatchInproc {
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("Shell32.ShellDispatchInproc_typekey")
       var Shell32DotShellDispatchInproc_typekey: typings.activexShell.Shell32.ShellDispatchInproc = js.native
     }
@@ -78,14 +78,14 @@ object global {
     /** Shell Folder Item */
     @JSGlobal("Shell32.ShellFolderItem")
     @js.native
-    class ShellFolderItem protected ()
+    /* private */ class ShellFolderItem ()
       extends StObject
          with typings.activexShell.Shell32.ShellFolderItem
     
     /** Shell Folder View Object */
     @JSGlobal("Shell32.ShellFolderView")
     @js.native
-    class ShellFolderView protected ()
+    /* private */ class ShellFolderView ()
       extends StObject
          with typings.activexShell.Shell32.ShellFolderView
     
@@ -101,7 +101,7 @@ object global {
       */
     @JSGlobal("Shell32.ShellFolderViewOC")
     @js.native
-    class ShellFolderViewOC protected ()
+    /* private */ class ShellFolderViewOC ()
       extends StObject
          with typings.activexShell.Shell32.ShellFolderViewOC {
       
@@ -109,7 +109,7 @@ object global {
       /* CompleteClass */
       override def SetFolderView(pdisp: typings.activexShell.Shell32.ShellFolderView): Unit = js.native
       
-      /* CompleteClass */
+      /* private */ /* CompleteClass */
       @JSName("Shell32.ShellFolderViewOC_typekey")
       var Shell32DotShellFolderViewOC_typekey: typings.activexShell.Shell32.ShellFolderViewOC = js.native
     }
@@ -117,13 +117,13 @@ object global {
     /** Shell Link object */
     @JSGlobal("Shell32.ShellLinkObject")
     @js.native
-    class ShellLinkObject protected ()
+    /* private */ class ShellLinkObject ()
       extends StObject
          with typings.activexShell.Shell32.ShellLinkObject
     
     @JSGlobal("Shell32.ShellWindows")
     @js.native
-    class ShellWindows protected ()
+    /* private */ class ShellWindows ()
       extends StObject
          with typings.activexShell.Shell32.ShellWindows
   }

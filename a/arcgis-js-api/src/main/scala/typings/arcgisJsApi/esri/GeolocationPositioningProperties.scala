@@ -43,43 +43,31 @@ trait GeolocationPositioningProperties extends StObject {
 }
 object GeolocationPositioningProperties {
   
-  @scala.inline
-  def apply(): GeolocationPositioningProperties = {
+  inline def apply(): GeolocationPositioningProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GeolocationPositioningProperties]
   }
   
-  @scala.inline
-  implicit class GeolocationPositioningPropertiesMutableBuilder[Self <: GeolocationPositioningProperties] (val x: Self) extends AnyVal {
+  extension [Self <: GeolocationPositioningProperties](x: Self) {
     
-    @scala.inline
-    def setGeolocationOptions(value: js.Any): Self = StObject.set(x, "geolocationOptions", value.asInstanceOf[js.Any])
+    inline def setGeolocationOptions(value: js.Any): Self = StObject.set(x, "geolocationOptions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGeolocationOptionsUndefined: Self = StObject.set(x, "geolocationOptions", js.undefined)
+    inline def setGeolocationOptionsUndefined: Self = StObject.set(x, "geolocationOptions", js.undefined)
     
-    @scala.inline
-    def setGoToLocationEnabled(value: Boolean): Self = StObject.set(x, "goToLocationEnabled", value.asInstanceOf[js.Any])
+    inline def setGoToLocationEnabled(value: Boolean): Self = StObject.set(x, "goToLocationEnabled", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGoToLocationEnabledUndefined: Self = StObject.set(x, "goToLocationEnabled", js.undefined)
+    inline def setGoToLocationEnabledUndefined: Self = StObject.set(x, "goToLocationEnabled", js.undefined)
     
-    @scala.inline
-    def setGraphic(value: GraphicProperties): Self = StObject.set(x, "graphic", value.asInstanceOf[js.Any])
+    inline def setGraphic(value: GraphicProperties): Self = StObject.set(x, "graphic", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGraphicUndefined: Self = StObject.set(x, "graphic", js.undefined)
+    inline def setGraphicUndefined: Self = StObject.set(x, "graphic", js.undefined)
     
-    @scala.inline
-    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
+    inline def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
-    @scala.inline
-    def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
+    inline def setView(value: MapViewProperties | SceneViewProperties): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
+    inline def setViewUndefined: Self = StObject.set(x, "view", js.undefined)
   }
 }

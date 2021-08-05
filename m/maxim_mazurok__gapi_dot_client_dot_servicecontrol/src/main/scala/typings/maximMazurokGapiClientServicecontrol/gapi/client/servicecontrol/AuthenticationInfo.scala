@@ -44,56 +44,41 @@ trait AuthenticationInfo extends StObject {
 }
 object AuthenticationInfo {
   
-  @scala.inline
-  def apply(): AuthenticationInfo = {
+  inline def apply(): AuthenticationInfo = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[AuthenticationInfo]
   }
   
-  @scala.inline
-  implicit class AuthenticationInfoMutableBuilder[Self <: AuthenticationInfo] (val x: Self) extends AnyVal {
+  extension [Self <: AuthenticationInfo](x: Self) {
     
-    @scala.inline
-    def setAuthoritySelector(value: String): Self = StObject.set(x, "authoritySelector", value.asInstanceOf[js.Any])
+    inline def setAuthoritySelector(value: String): Self = StObject.set(x, "authoritySelector", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthoritySelectorUndefined: Self = StObject.set(x, "authoritySelector", js.undefined)
+    inline def setAuthoritySelectorUndefined: Self = StObject.set(x, "authoritySelector", js.undefined)
     
-    @scala.inline
-    def setPrincipalEmail(value: String): Self = StObject.set(x, "principalEmail", value.asInstanceOf[js.Any])
+    inline def setPrincipalEmail(value: String): Self = StObject.set(x, "principalEmail", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalEmailUndefined: Self = StObject.set(x, "principalEmail", js.undefined)
+    inline def setPrincipalEmailUndefined: Self = StObject.set(x, "principalEmail", js.undefined)
     
-    @scala.inline
-    def setPrincipalSubject(value: String): Self = StObject.set(x, "principalSubject", value.asInstanceOf[js.Any])
+    inline def setPrincipalSubject(value: String): Self = StObject.set(x, "principalSubject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrincipalSubjectUndefined: Self = StObject.set(x, "principalSubject", js.undefined)
+    inline def setPrincipalSubjectUndefined: Self = StObject.set(x, "principalSubject", js.undefined)
     
-    @scala.inline
-    def setServiceAccountDelegationInfo(value: js.Array[ServiceAccountDelegationInfo]): Self = StObject.set(x, "serviceAccountDelegationInfo", value.asInstanceOf[js.Any])
+    inline def setServiceAccountDelegationInfo(value: js.Array[ServiceAccountDelegationInfo]): Self = StObject.set(x, "serviceAccountDelegationInfo", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccountDelegationInfoUndefined: Self = StObject.set(x, "serviceAccountDelegationInfo", js.undefined)
+    inline def setServiceAccountDelegationInfoUndefined: Self = StObject.set(x, "serviceAccountDelegationInfo", js.undefined)
     
-    @scala.inline
-    def setServiceAccountDelegationInfoVarargs(value: ServiceAccountDelegationInfo*): Self = StObject.set(x, "serviceAccountDelegationInfo", js.Array(value :_*))
+    inline def setServiceAccountDelegationInfoVarargs(value: ServiceAccountDelegationInfo*): Self = StObject.set(x, "serviceAccountDelegationInfo", js.Array(value :_*))
     
-    @scala.inline
-    def setServiceAccountKeyName(value: String): Self = StObject.set(x, "serviceAccountKeyName", value.asInstanceOf[js.Any])
+    inline def setServiceAccountKeyName(value: String): Self = StObject.set(x, "serviceAccountKeyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setServiceAccountKeyNameUndefined: Self = StObject.set(x, "serviceAccountKeyName", js.undefined)
+    inline def setServiceAccountKeyNameUndefined: Self = StObject.set(x, "serviceAccountKeyName", js.undefined)
     
-    @scala.inline
-    def setThirdPartyPrincipal(
+    inline def setThirdPartyPrincipal(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
       */ typings.maximMazurokGapiClientServicecontrol.maximMazurokGapiClientServicecontrolStrings.AuthenticationInfo & TopLevel[js.Any]
     ): Self = StObject.set(x, "thirdPartyPrincipal", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThirdPartyPrincipalUndefined: Self = StObject.set(x, "thirdPartyPrincipal", js.undefined)
+    inline def setThirdPartyPrincipalUndefined: Self = StObject.set(x, "thirdPartyPrincipal", js.undefined)
   }
 }

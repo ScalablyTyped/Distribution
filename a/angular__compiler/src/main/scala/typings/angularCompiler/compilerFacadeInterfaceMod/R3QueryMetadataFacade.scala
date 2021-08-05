@@ -20,8 +20,7 @@ trait R3QueryMetadataFacade extends StObject {
 }
 object R3QueryMetadataFacade {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     descendants: Boolean,
     first: Boolean,
     predicate: js.Any | js.Array[String],
@@ -32,31 +31,22 @@ object R3QueryMetadataFacade {
     __obj.asInstanceOf[R3QueryMetadataFacade]
   }
   
-  @scala.inline
-  implicit class R3QueryMetadataFacadeMutableBuilder[Self <: R3QueryMetadataFacade] (val x: Self) extends AnyVal {
+  extension [Self <: R3QueryMetadataFacade](x: Self) {
     
-    @scala.inline
-    def setDescendants(value: Boolean): Self = StObject.set(x, "descendants", value.asInstanceOf[js.Any])
+    inline def setDescendants(value: Boolean): Self = StObject.set(x, "descendants", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFirst(value: Boolean): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
+    inline def setFirst(value: Boolean): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredicate(value: js.Any | js.Array[String]): Self = StObject.set(x, "predicate", value.asInstanceOf[js.Any])
+    inline def setPredicate(value: js.Any | js.Array[String]): Self = StObject.set(x, "predicate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPredicateVarargs(value: String*): Self = StObject.set(x, "predicate", js.Array(value :_*))
+    inline def setPredicateVarargs(value: String*): Self = StObject.set(x, "predicate", js.Array(value :_*))
     
-    @scala.inline
-    def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
+    inline def setPropertyName(value: String): Self = StObject.set(x, "propertyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRead(value: js.Any): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
+    inline def setRead(value: js.Any): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadNull: Self = StObject.set(x, "read", null)
+    inline def setReadNull: Self = StObject.set(x, "read", null)
     
-    @scala.inline
-    def setStatic(value: Boolean): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
+    inline def setStatic(value: Boolean): Self = StObject.set(x, "static", value.asInstanceOf[js.Any])
   }
 }

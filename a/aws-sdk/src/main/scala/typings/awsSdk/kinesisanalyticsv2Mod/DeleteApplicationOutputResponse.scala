@@ -18,25 +18,19 @@ trait DeleteApplicationOutputResponse extends StObject {
 }
 object DeleteApplicationOutputResponse {
   
-  @scala.inline
-  def apply(): DeleteApplicationOutputResponse = {
+  inline def apply(): DeleteApplicationOutputResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeleteApplicationOutputResponse]
   }
   
-  @scala.inline
-  implicit class DeleteApplicationOutputResponseMutableBuilder[Self <: DeleteApplicationOutputResponse] (val x: Self) extends AnyVal {
+  extension [Self <: DeleteApplicationOutputResponse](x: Self) {
     
-    @scala.inline
-    def setApplicationARN(value: ResourceARN): Self = StObject.set(x, "ApplicationARN", value.asInstanceOf[js.Any])
+    inline def setApplicationARN(value: ResourceARN): Self = StObject.set(x, "ApplicationARN", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationARNUndefined: Self = StObject.set(x, "ApplicationARN", js.undefined)
+    inline def setApplicationARNUndefined: Self = StObject.set(x, "ApplicationARN", js.undefined)
     
-    @scala.inline
-    def setApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "ApplicationVersionId", value.asInstanceOf[js.Any])
+    inline def setApplicationVersionId(value: ApplicationVersionId): Self = StObject.set(x, "ApplicationVersionId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setApplicationVersionIdUndefined: Self = StObject.set(x, "ApplicationVersionId", js.undefined)
+    inline def setApplicationVersionIdUndefined: Self = StObject.set(x, "ApplicationVersionId", js.undefined)
   }
 }

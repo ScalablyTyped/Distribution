@@ -23,49 +23,35 @@ trait PayoutItemDetail extends StObject {
 }
 object PayoutItemDetail {
   
-  @scala.inline
-  def apply(amount: Currency, receiver: String): PayoutItemDetail = {
+  inline def apply(amount: Currency, receiver: String): PayoutItemDetail = {
     val __obj = js.Dynamic.literal(amount = amount.asInstanceOf[js.Any], receiver = receiver.asInstanceOf[js.Any])
     __obj.asInstanceOf[PayoutItemDetail]
   }
   
-  @scala.inline
-  implicit class PayoutItemDetailMutableBuilder[Self <: PayoutItemDetail] (val x: Self) extends AnyVal {
+  extension [Self <: PayoutItemDetail](x: Self) {
     
-    @scala.inline
-    def setAmount(value: Currency): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
+    inline def setAmount(value: Currency): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
+    inline def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
+    inline def setNoteUndefined: Self = StObject.set(x, "note", js.undefined)
     
-    @scala.inline
-    def setReceiver(value: String): Self = StObject.set(x, "receiver", value.asInstanceOf[js.Any])
+    inline def setReceiver(value: String): Self = StObject.set(x, "receiver", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipient_name(value: Alternatefullname): Self = StObject.set(x, "recipient_name", value.asInstanceOf[js.Any])
+    inline def setRecipient_name(value: Alternatefullname): Self = StObject.set(x, "recipient_name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipient_nameUndefined: Self = StObject.set(x, "recipient_name", js.undefined)
+    inline def setRecipient_nameUndefined: Self = StObject.set(x, "recipient_name", js.undefined)
     
-    @scala.inline
-    def setRecipient_type(value: RecipientType): Self = StObject.set(x, "recipient_type", value.asInstanceOf[js.Any])
+    inline def setRecipient_type(value: RecipientType): Self = StObject.set(x, "recipient_type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipient_typeUndefined: Self = StObject.set(x, "recipient_type", js.undefined)
+    inline def setRecipient_typeUndefined: Self = StObject.set(x, "recipient_type", js.undefined)
     
-    @scala.inline
-    def setRecipient_wallet(value: RecipientWallet): Self = StObject.set(x, "recipient_wallet", value.asInstanceOf[js.Any])
+    inline def setRecipient_wallet(value: RecipientWallet): Self = StObject.set(x, "recipient_wallet", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRecipient_walletUndefined: Self = StObject.set(x, "recipient_wallet", js.undefined)
+    inline def setRecipient_walletUndefined: Self = StObject.set(x, "recipient_wallet", js.undefined)
     
-    @scala.inline
-    def setSender_item_id(value: String): Self = StObject.set(x, "sender_item_id", value.asInstanceOf[js.Any])
+    inline def setSender_item_id(value: String): Self = StObject.set(x, "sender_item_id", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSender_item_idUndefined: Self = StObject.set(x, "sender_item_id", js.undefined)
+    inline def setSender_item_idUndefined: Self = StObject.set(x, "sender_item_id", js.undefined)
   }
 }

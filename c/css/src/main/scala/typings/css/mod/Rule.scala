@@ -16,31 +16,23 @@ trait Rule
 }
 object Rule {
   
-  @scala.inline
-  def apply(): Rule = {
+  inline def apply(): Rule = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Rule]
   }
   
-  @scala.inline
-  implicit class RuleMutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
+  extension [Self <: Rule](x: Self) {
     
-    @scala.inline
-    def setDeclarations(value: js.Array[Declaration | Comment]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
+    inline def setDeclarations(value: js.Array[Declaration | Comment]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDeclarationsUndefined: Self = StObject.set(x, "declarations", js.undefined)
+    inline def setDeclarationsUndefined: Self = StObject.set(x, "declarations", js.undefined)
     
-    @scala.inline
-    def setDeclarationsVarargs(value: (Declaration | Comment)*): Self = StObject.set(x, "declarations", js.Array(value :_*))
+    inline def setDeclarationsVarargs(value: (Declaration | Comment)*): Self = StObject.set(x, "declarations", js.Array(value :_*))
     
-    @scala.inline
-    def setSelectors(value: js.Array[String]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
+    inline def setSelectors(value: js.Array[String]): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
+    inline def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
     
-    @scala.inline
-    def setSelectorsVarargs(value: String*): Self = StObject.set(x, "selectors", js.Array(value :_*))
+    inline def setSelectorsVarargs(value: String*): Self = StObject.set(x, "selectors", js.Array(value :_*))
   }
 }

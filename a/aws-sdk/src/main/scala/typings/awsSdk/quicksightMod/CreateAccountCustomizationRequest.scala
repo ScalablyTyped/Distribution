@@ -28,34 +28,25 @@ trait CreateAccountCustomizationRequest extends StObject {
 }
 object CreateAccountCustomizationRequest {
   
-  @scala.inline
-  def apply(AccountCustomization: AccountCustomization, AwsAccountId: AwsAccountId): CreateAccountCustomizationRequest = {
+  inline def apply(AccountCustomization: AccountCustomization, AwsAccountId: AwsAccountId): CreateAccountCustomizationRequest = {
     val __obj = js.Dynamic.literal(AccountCustomization = AccountCustomization.asInstanceOf[js.Any], AwsAccountId = AwsAccountId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateAccountCustomizationRequest]
   }
   
-  @scala.inline
-  implicit class CreateAccountCustomizationRequestMutableBuilder[Self <: CreateAccountCustomizationRequest] (val x: Self) extends AnyVal {
+  extension [Self <: CreateAccountCustomizationRequest](x: Self) {
     
-    @scala.inline
-    def setAccountCustomization(value: AccountCustomization): Self = StObject.set(x, "AccountCustomization", value.asInstanceOf[js.Any])
+    inline def setAccountCustomization(value: AccountCustomization): Self = StObject.set(x, "AccountCustomization", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
+    inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
+    inline def setNamespace(value: Namespace): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNamespaceUndefined: Self = StObject.set(x, "Namespace", js.undefined)
+    inline def setNamespaceUndefined: Self = StObject.set(x, "Namespace", js.undefined)
     
-    @scala.inline
-    def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: TagList): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
+    inline def setTagsUndefined: Self = StObject.set(x, "Tags", js.undefined)
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
   }
 }

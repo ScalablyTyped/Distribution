@@ -96,14 +96,12 @@ object FunctionTypeSyntax {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def create(
+  inline def create(
     parameterList: typings.typescriptServices.TypeScript.ParameterListSyntax,
     equalsGreaterThanToken: ISyntaxToken,
     `type`: ITypeSyntax
   ): typings.typescriptServices.TypeScript.FunctionTypeSyntax = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(parameterList.asInstanceOf[js.Any], equalsGreaterThanToken.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.FunctionTypeSyntax]
   
   /* static member */
-  @scala.inline
-  def create1(`type`: ITypeSyntax): typings.typescriptServices.TypeScript.FunctionTypeSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(`type`.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.FunctionTypeSyntax]
+  inline def create1(`type`: ITypeSyntax): typings.typescriptServices.TypeScript.FunctionTypeSyntax = ^.asInstanceOf[js.Dynamic].applyDynamic("create1")(`type`.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.FunctionTypeSyntax]
 }

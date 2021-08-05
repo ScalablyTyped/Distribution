@@ -34,40 +34,29 @@ trait ExecutionRequest extends StObject {
 }
 object ExecutionRequest {
   
-  @scala.inline
-  def apply(): ExecutionRequest = {
+  inline def apply(): ExecutionRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ExecutionRequest]
   }
   
-  @scala.inline
-  implicit class ExecutionRequestMutableBuilder[Self <: ExecutionRequest] (val x: Self) extends AnyVal {
+  extension [Self <: ExecutionRequest](x: Self) {
     
-    @scala.inline
-    def setDevMode(value: Boolean): Self = StObject.set(x, "devMode", value.asInstanceOf[js.Any])
+    inline def setDevMode(value: Boolean): Self = StObject.set(x, "devMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDevModeUndefined: Self = StObject.set(x, "devMode", js.undefined)
+    inline def setDevModeUndefined: Self = StObject.set(x, "devMode", js.undefined)
     
-    @scala.inline
-    def setFunction(value: String): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
+    inline def setFunction(value: String): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
+    inline def setFunctionUndefined: Self = StObject.set(x, "function", js.undefined)
     
-    @scala.inline
-    def setParameters(value: js.Array[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    inline def setParameters(value: js.Array[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
+    inline def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
-    @scala.inline
-    def setParametersVarargs(value: js.Any*): Self = StObject.set(x, "parameters", js.Array(value :_*))
+    inline def setParametersVarargs(value: js.Any*): Self = StObject.set(x, "parameters", js.Array(value :_*))
     
-    @scala.inline
-    def setSessionState(value: String): Self = StObject.set(x, "sessionState", value.asInstanceOf[js.Any])
+    inline def setSessionState(value: String): Self = StObject.set(x, "sessionState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSessionStateUndefined: Self = StObject.set(x, "sessionState", js.undefined)
+    inline def setSessionStateUndefined: Self = StObject.set(x, "sessionState", js.undefined)
   }
 }

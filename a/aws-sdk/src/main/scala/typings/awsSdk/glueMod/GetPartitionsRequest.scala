@@ -43,49 +43,35 @@ trait GetPartitionsRequest extends StObject {
 }
 object GetPartitionsRequest {
   
-  @scala.inline
-  def apply(DatabaseName: NameString, TableName: NameString): GetPartitionsRequest = {
+  inline def apply(DatabaseName: NameString, TableName: NameString): GetPartitionsRequest = {
     val __obj = js.Dynamic.literal(DatabaseName = DatabaseName.asInstanceOf[js.Any], TableName = TableName.asInstanceOf[js.Any])
     __obj.asInstanceOf[GetPartitionsRequest]
   }
   
-  @scala.inline
-  implicit class GetPartitionsRequestMutableBuilder[Self <: GetPartitionsRequest] (val x: Self) extends AnyVal {
+  extension [Self <: GetPartitionsRequest](x: Self) {
     
-    @scala.inline
-    def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
+    inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
+    inline def setCatalogIdUndefined: Self = StObject.set(x, "CatalogId", js.undefined)
     
-    @scala.inline
-    def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
+    inline def setDatabaseName(value: NameString): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpression(value: PredicateString): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
+    inline def setExpression(value: PredicateString): Self = StObject.set(x, "Expression", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionUndefined: Self = StObject.set(x, "Expression", js.undefined)
+    inline def setExpressionUndefined: Self = StObject.set(x, "Expression", js.undefined)
     
-    @scala.inline
-    def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
+    inline def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
+    inline def setMaxResultsUndefined: Self = StObject.set(x, "MaxResults", js.undefined)
     
-    @scala.inline
-    def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setSegment(value: Segment): Self = StObject.set(x, "Segment", value.asInstanceOf[js.Any])
+    inline def setSegment(value: Segment): Self = StObject.set(x, "Segment", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSegmentUndefined: Self = StObject.set(x, "Segment", js.undefined)
+    inline def setSegmentUndefined: Self = StObject.set(x, "Segment", js.undefined)
     
-    @scala.inline
-    def setTableName(value: NameString): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
+    inline def setTableName(value: NameString): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
   }
 }

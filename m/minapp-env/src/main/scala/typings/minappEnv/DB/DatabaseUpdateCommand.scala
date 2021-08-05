@@ -18,8 +18,7 @@ trait DatabaseUpdateCommand extends StObject {
 }
 object DatabaseUpdateCommand {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     _setFieldName: String => DatabaseUpdateCommand,
     fieldName: String | InternalSymbol,
     operands: Array[js.Any],
@@ -29,19 +28,14 @@ object DatabaseUpdateCommand {
     __obj.asInstanceOf[DatabaseUpdateCommand]
   }
   
-  @scala.inline
-  implicit class DatabaseUpdateCommandMutableBuilder[Self <: DatabaseUpdateCommand] (val x: Self) extends AnyVal {
+  extension [Self <: DatabaseUpdateCommand](x: Self) {
     
-    @scala.inline
-    def setFieldName(value: String | InternalSymbol): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
+    inline def setFieldName(value: String | InternalSymbol): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperands(value: Array[js.Any]): Self = StObject.set(x, "operands", value.asInstanceOf[js.Any])
+    inline def setOperands(value: Array[js.Any]): Self = StObject.set(x, "operands", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOperator(value: UPDATE_COMMANDS_LITERAL): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
+    inline def setOperator(value: UPDATE_COMMANDS_LITERAL): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set_setFieldName(value: String => DatabaseUpdateCommand): Self = StObject.set(x, "_setFieldName", js.Any.fromFunction1(value))
+    inline def set_setFieldName(value: String => DatabaseUpdateCommand): Self = StObject.set(x, "_setFieldName", js.Any.fromFunction1(value))
   }
 }

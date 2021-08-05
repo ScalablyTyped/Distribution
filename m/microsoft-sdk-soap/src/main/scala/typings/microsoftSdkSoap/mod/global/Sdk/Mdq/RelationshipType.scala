@@ -12,12 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait RelationshipType extends StObject
 object RelationshipType {
   
-  @scala.inline
-  def Default: typings.microsoftSdkSoap.microsoftSdkSoapStrings.Default = "Default".asInstanceOf[typings.microsoftSdkSoap.microsoftSdkSoapStrings.Default]
+  inline def Default: typings.microsoftSdkSoap.microsoftSdkSoapStrings.Default = "Default".asInstanceOf[typings.microsoftSdkSoap.microsoftSdkSoapStrings.Default]
   
-  @scala.inline
-  def ManyToManyRelationship: typings.microsoftSdkSoap.microsoftSdkSoapStrings.ManyToManyRelationship = "ManyToManyRelationship".asInstanceOf[typings.microsoftSdkSoap.microsoftSdkSoapStrings.ManyToManyRelationship]
+  inline def ManyToManyRelationship: typings.microsoftSdkSoap.microsoftSdkSoapStrings.ManyToManyRelationship = "ManyToManyRelationship".asInstanceOf[typings.microsoftSdkSoap.microsoftSdkSoapStrings.ManyToManyRelationship]
   
-  @scala.inline
-  def OneToManyRelationship: typings.microsoftSdkSoap.microsoftSdkSoapStrings.OneToManyRelationship = "OneToManyRelationship".asInstanceOf[typings.microsoftSdkSoap.microsoftSdkSoapStrings.OneToManyRelationship]
+  inline def OneToManyRelationship: typings.microsoftSdkSoap.microsoftSdkSoapStrings.OneToManyRelationship = "OneToManyRelationship".asInstanceOf[typings.microsoftSdkSoap.microsoftSdkSoapStrings.OneToManyRelationship]
 }

@@ -14,14 +14,10 @@ object applicationloadbalancingGetTargetGroupMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def getTargetGroup(): js.Promise[GetTargetGroupResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTargetGroup")().asInstanceOf[js.Promise[GetTargetGroupResult]]
-  @scala.inline
-  def getTargetGroup(args: Unit, opts: InvokeOptions): js.Promise[GetTargetGroupResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTargetGroup")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetTargetGroupResult]]
-  @scala.inline
-  def getTargetGroup(args: GetTargetGroupArgs): js.Promise[GetTargetGroupResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTargetGroup")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetTargetGroupResult]]
-  @scala.inline
-  def getTargetGroup(args: GetTargetGroupArgs, opts: InvokeOptions): js.Promise[GetTargetGroupResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTargetGroup")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetTargetGroupResult]]
+  inline def getTargetGroup(): js.Promise[GetTargetGroupResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTargetGroup")().asInstanceOf[js.Promise[GetTargetGroupResult]]
+  inline def getTargetGroup(args: Unit, opts: InvokeOptions): js.Promise[GetTargetGroupResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTargetGroup")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetTargetGroupResult]]
+  inline def getTargetGroup(args: GetTargetGroupArgs): js.Promise[GetTargetGroupResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTargetGroup")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetTargetGroupResult]]
+  inline def getTargetGroup(args: GetTargetGroupArgs, opts: InvokeOptions): js.Promise[GetTargetGroupResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTargetGroup")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetTargetGroupResult]]
   
   trait GetTargetGroupArgs extends StObject {
     
@@ -39,32 +35,24 @@ object applicationloadbalancingGetTargetGroupMod {
   }
   object GetTargetGroupArgs {
     
-    @scala.inline
-    def apply(): GetTargetGroupArgs = {
+    inline def apply(): GetTargetGroupArgs = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[GetTargetGroupArgs]
     }
     
-    @scala.inline
-    implicit class GetTargetGroupArgsMutableBuilder[Self <: GetTargetGroupArgs] (val x: Self) extends AnyVal {
+    extension [Self <: GetTargetGroupArgs](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
+      inline def setArnUndefined: Self = StObject.set(x, "arn", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
+      inline def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
     }
   }
   
@@ -107,8 +95,7 @@ object applicationloadbalancingGetTargetGroupMod {
   }
   object GetTargetGroupResult {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       arn: String,
       arnSuffix: String,
       deregistrationDelay: Double,
@@ -130,56 +117,39 @@ object applicationloadbalancingGetTargetGroupMod {
       __obj.asInstanceOf[GetTargetGroupResult]
     }
     
-    @scala.inline
-    implicit class GetTargetGroupResultMutableBuilder[Self <: GetTargetGroupResult] (val x: Self) extends AnyVal {
+    extension [Self <: GetTargetGroupResult](x: Self) {
       
-      @scala.inline
-      def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
+      inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setArnSuffix(value: String): Self = StObject.set(x, "arnSuffix", value.asInstanceOf[js.Any])
+      inline def setArnSuffix(value: String): Self = StObject.set(x, "arnSuffix", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDeregistrationDelay(value: Double): Self = StObject.set(x, "deregistrationDelay", value.asInstanceOf[js.Any])
+      inline def setDeregistrationDelay(value: Double): Self = StObject.set(x, "deregistrationDelay", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHealthCheck(value: GetTargetGroupHealthCheck): Self = StObject.set(x, "healthCheck", value.asInstanceOf[js.Any])
+      inline def setHealthCheck(value: GetTargetGroupHealthCheck): Self = StObject.set(x, "healthCheck", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLambdaMultiValueHeadersEnabled(value: Boolean): Self = StObject.set(x, "lambdaMultiValueHeadersEnabled", value.asInstanceOf[js.Any])
+      inline def setLambdaMultiValueHeadersEnabled(value: Boolean): Self = StObject.set(x, "lambdaMultiValueHeadersEnabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLoadBalancingAlgorithmType(value: String): Self = StObject.set(x, "loadBalancingAlgorithmType", value.asInstanceOf[js.Any])
+      inline def setLoadBalancingAlgorithmType(value: String): Self = StObject.set(x, "loadBalancingAlgorithmType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setProxyProtocolV2(value: Boolean): Self = StObject.set(x, "proxyProtocolV2", value.asInstanceOf[js.Any])
+      inline def setProxyProtocolV2(value: Boolean): Self = StObject.set(x, "proxyProtocolV2", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSlowStart(value: Double): Self = StObject.set(x, "slowStart", value.asInstanceOf[js.Any])
+      inline def setSlowStart(value: Double): Self = StObject.set(x, "slowStart", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStickiness(value: GetTargetGroupStickiness): Self = StObject.set(x, "stickiness", value.asInstanceOf[js.Any])
+      inline def setStickiness(value: GetTargetGroupStickiness): Self = StObject.set(x, "stickiness", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      inline def setTags(value: StringDictionary[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetType(value: String): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
+      inline def setTargetType(value: String): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
+      inline def setVpcId(value: String): Self = StObject.set(x, "vpcId", value.asInstanceOf[js.Any])
     }
   }
 }

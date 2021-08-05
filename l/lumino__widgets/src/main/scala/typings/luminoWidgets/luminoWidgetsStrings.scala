@@ -23,15 +23,13 @@ object luminoWidgetsStrings {
     extends StObject
        with TabPlacement
        with VerticalAlignment
-  @scala.inline
-  def bottom: bottom = "bottom".asInstanceOf[bottom]
+  inline def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
   sealed trait `bottom-to-top`
     extends StObject
        with Direction
-  @scala.inline
-  def `bottom-to-top`: `bottom-to-top` = "bottom-to-top".asInstanceOf[`bottom-to-top`]
+  inline def `bottom-to-top`: `bottom-to-top` = "bottom-to-top".asInstanceOf[`bottom-to-top`]
   
   @js.native
   sealed trait center
@@ -40,28 +38,24 @@ object luminoWidgetsStrings {
        with typings.luminoWidgets.splitlayoutMod.SplitLayout.Alignment
        with HorizontalAlignment
        with VerticalAlignment
-  @scala.inline
-  def center: center = "center".asInstanceOf[center]
+  inline def center: center = "center".asInstanceOf[center]
   
   @js.native
   sealed trait command
     extends StObject
        with ItemType
-  @scala.inline
-  def command: command = "command".asInstanceOf[command]
+  inline def command: command = "command".asInstanceOf[command]
   
   @js.native
   sealed trait decrement extends StObject
-  @scala.inline
-  def decrement: decrement = "decrement".asInstanceOf[decrement]
+  inline def decrement: decrement = "decrement".asInstanceOf[decrement]
   
   @js.native
   sealed trait end
     extends StObject
        with Alignment
        with typings.luminoWidgets.splitlayoutMod.SplitLayout.Alignment
-  @scala.inline
-  def end: end = "end".asInstanceOf[end]
+  inline def end: end = "end".asInstanceOf[end]
   
   @js.native
   sealed trait horizontal
@@ -69,221 +63,189 @@ object luminoWidgetsStrings {
        with Orientation
        with typings.luminoWidgets.splitlayoutMod.SplitLayout.Orientation
        with typings.luminoWidgets.tabbarMod.TabBar.Orientation
-  @scala.inline
-  def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
+  inline def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
   sealed trait increment extends StObject
-  @scala.inline
-  def increment: increment = "increment".asInstanceOf[increment]
+  inline def increment: increment = "increment".asInstanceOf[increment]
   
   @js.native
   sealed trait justify
     extends StObject
        with Alignment
        with typings.luminoWidgets.splitlayoutMod.SplitLayout.Alignment
-  @scala.inline
-  def justify: justify = "justify".asInstanceOf[justify]
+  inline def justify: justify = "justify".asInstanceOf[justify]
   
   @js.native
   sealed trait left
     extends StObject
        with HorizontalAlignment
        with TabPlacement
-  @scala.inline
-  def left: left = "left".asInstanceOf[left]
+  inline def left: left = "left".asInstanceOf[left]
   
   @js.native
   sealed trait `left-to-right`
     extends StObject
        with Direction
-  @scala.inline
-  def `left-to-right`: `left-to-right` = "left-to-right".asInstanceOf[`left-to-right`]
+  inline def `left-to-right`: `left-to-right` = "left-to-right".asInstanceOf[`left-to-right`]
   
   @js.native
   sealed trait `multiple-document`
     extends StObject
        with Mode
-  @scala.inline
-  def `multiple-document`: `multiple-document` = "multiple-document".asInstanceOf[`multiple-document`]
+  inline def `multiple-document`: `multiple-document` = "multiple-document".asInstanceOf[`multiple-document`]
   
   @js.native
   sealed trait next extends StObject
-  @scala.inline
-  def next: next = "next".asInstanceOf[next]
+  inline def next: next = "next".asInstanceOf[next]
   
   @js.native
   sealed trait none
     extends StObject
        with InsertBehavior
        with RemoveBehavior
-  @scala.inline
-  def none: none = "none".asInstanceOf[none]
+  inline def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait previous extends StObject
-  @scala.inline
-  def previous: previous = "previous".asInstanceOf[previous]
+  inline def previous: previous = "previous".asInstanceOf[previous]
   
   @js.native
   sealed trait right
     extends StObject
        with HorizontalAlignment
        with TabPlacement
-  @scala.inline
-  def right: right = "right".asInstanceOf[right]
+  inline def right: right = "right".asInstanceOf[right]
   
   @js.native
   sealed trait `right-to-left`
     extends StObject
        with Direction
-  @scala.inline
-  def `right-to-left`: `right-to-left` = "right-to-left".asInstanceOf[`right-to-left`]
+  inline def `right-to-left`: `right-to-left` = "right-to-left".asInstanceOf[`right-to-left`]
   
   @js.native
   sealed trait `select-previous-tab`
     extends StObject
        with RemoveBehavior
-  @scala.inline
-  def `select-previous-tab`: `select-previous-tab` = "select-previous-tab".asInstanceOf[`select-previous-tab`]
+  inline def `select-previous-tab`: `select-previous-tab` = "select-previous-tab".asInstanceOf[`select-previous-tab`]
   
   @js.native
   sealed trait `select-tab`
     extends StObject
        with InsertBehavior
-  @scala.inline
-  def `select-tab`: `select-tab` = "select-tab".asInstanceOf[`select-tab`]
+  inline def `select-tab`: `select-tab` = "select-tab".asInstanceOf[`select-tab`]
   
   @js.native
   sealed trait `select-tab-after`
     extends StObject
        with RemoveBehavior
-  @scala.inline
-  def `select-tab-after`: `select-tab-after` = "select-tab-after".asInstanceOf[`select-tab-after`]
+  inline def `select-tab-after`: `select-tab-after` = "select-tab-after".asInstanceOf[`select-tab-after`]
   
   @js.native
   sealed trait `select-tab-before`
     extends StObject
        with RemoveBehavior
-  @scala.inline
-  def `select-tab-before`: `select-tab-before` = "select-tab-before".asInstanceOf[`select-tab-before`]
+  inline def `select-tab-before`: `select-tab-before` = "select-tab-before".asInstanceOf[`select-tab-before`]
   
   @js.native
   sealed trait `select-tab-if-needed`
     extends StObject
        with InsertBehavior
-  @scala.inline
-  def `select-tab-if-needed`: `select-tab-if-needed` = "select-tab-if-needed".asInstanceOf[`select-tab-if-needed`]
+  inline def `select-tab-if-needed`: `select-tab-if-needed` = "select-tab-if-needed".asInstanceOf[`select-tab-if-needed`]
   
   @js.native
   sealed trait separator
     extends StObject
        with ItemType
-  @scala.inline
-  def separator: separator = "separator".asInstanceOf[separator]
+  inline def separator: separator = "separator".asInstanceOf[separator]
   
   @js.native
   sealed trait `set-min-size`
     extends StObject
        with FitPolicy
-  @scala.inline
-  def `set-min-size`: `set-min-size` = "set-min-size".asInstanceOf[`set-min-size`]
+  inline def `set-min-size`: `set-min-size` = "set-min-size".asInstanceOf[`set-min-size`]
   
   @js.native
   sealed trait `set-no-constraint`
     extends StObject
        with FitPolicy
-  @scala.inline
-  def `set-no-constraint`: `set-no-constraint` = "set-no-constraint".asInstanceOf[`set-no-constraint`]
+  inline def `set-no-constraint`: `set-no-constraint` = "set-no-constraint".asInstanceOf[`set-no-constraint`]
   
   @js.native
   sealed trait `single-document`
     extends StObject
        with Mode
-  @scala.inline
-  def `single-document`: `single-document` = "single-document".asInstanceOf[`single-document`]
+  inline def `single-document`: `single-document` = "single-document".asInstanceOf[`single-document`]
   
   @js.native
   sealed trait `split-area` extends StObject
-  @scala.inline
-  def `split-area`: `split-area` = "split-area".asInstanceOf[`split-area`]
+  inline def `split-area`: `split-area` = "split-area".asInstanceOf[`split-area`]
   
   @js.native
   sealed trait `split-bottom`
     extends StObject
        with InsertMode
-  @scala.inline
-  def `split-bottom`: `split-bottom` = "split-bottom".asInstanceOf[`split-bottom`]
+  inline def `split-bottom`: `split-bottom` = "split-bottom".asInstanceOf[`split-bottom`]
   
   @js.native
   sealed trait `split-left`
     extends StObject
        with InsertMode
-  @scala.inline
-  def `split-left`: `split-left` = "split-left".asInstanceOf[`split-left`]
+  inline def `split-left`: `split-left` = "split-left".asInstanceOf[`split-left`]
   
   @js.native
   sealed trait `split-right`
     extends StObject
        with InsertMode
-  @scala.inline
-  def `split-right`: `split-right` = "split-right".asInstanceOf[`split-right`]
+  inline def `split-right`: `split-right` = "split-right".asInstanceOf[`split-right`]
   
   @js.native
   sealed trait `split-top`
     extends StObject
        with InsertMode
-  @scala.inline
-  def `split-top`: `split-top` = "split-top".asInstanceOf[`split-top`]
+  inline def `split-top`: `split-top` = "split-top".asInstanceOf[`split-top`]
   
   @js.native
   sealed trait start
     extends StObject
        with Alignment
        with typings.luminoWidgets.splitlayoutMod.SplitLayout.Alignment
-  @scala.inline
-  def start: start = "start".asInstanceOf[start]
+  inline def start: start = "start".asInstanceOf[start]
   
   @js.native
   sealed trait submenu
     extends StObject
        with ItemType
-  @scala.inline
-  def submenu: submenu = "submenu".asInstanceOf[submenu]
+  inline def submenu: submenu = "submenu".asInstanceOf[submenu]
   
   @js.native
   sealed trait `tab-after`
     extends StObject
        with InsertMode
-  @scala.inline
-  def `tab-after`: `tab-after` = "tab-after".asInstanceOf[`tab-after`]
+  inline def `tab-after`: `tab-after` = "tab-after".asInstanceOf[`tab-after`]
   
   @js.native
   sealed trait `tab-area` extends StObject
-  @scala.inline
-  def `tab-area`: `tab-area` = "tab-area".asInstanceOf[`tab-area`]
+  inline def `tab-area`: `tab-area` = "tab-area".asInstanceOf[`tab-area`]
   
   @js.native
   sealed trait `tab-before`
     extends StObject
        with InsertMode
-  @scala.inline
-  def `tab-before`: `tab-before` = "tab-before".asInstanceOf[`tab-before`]
+  inline def `tab-before`: `tab-before` = "tab-before".asInstanceOf[`tab-before`]
   
   @js.native
   sealed trait top
     extends StObject
        with TabPlacement
        with VerticalAlignment
-  @scala.inline
-  def top: top = "top".asInstanceOf[top]
+  inline def top: top = "top".asInstanceOf[top]
   
   @js.native
   sealed trait `top-to-bottom`
     extends StObject
        with Direction
-  @scala.inline
-  def `top-to-bottom`: `top-to-bottom` = "top-to-bottom".asInstanceOf[`top-to-bottom`]
+  inline def `top-to-bottom`: `top-to-bottom` = "top-to-bottom".asInstanceOf[`top-to-bottom`]
   
   @js.native
   sealed trait vertical
@@ -291,6 +253,5 @@ object luminoWidgetsStrings {
        with Orientation
        with typings.luminoWidgets.splitlayoutMod.SplitLayout.Orientation
        with typings.luminoWidgets.tabbarMod.TabBar.Orientation
-  @scala.inline
-  def vertical: vertical = "vertical".asInstanceOf[vertical]
+  inline def vertical: vertical = "vertical".asInstanceOf[vertical]
 }

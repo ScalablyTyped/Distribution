@@ -11,9 +11,7 @@ object v8Mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def deserialize(value: Buffer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  inline def deserialize(value: Buffer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @scala.inline
-  def serialize(value: js.Any): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(value.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  inline def serialize(value: js.Any): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(value.asInstanceOf[js.Any]).asInstanceOf[Buffer]
 }

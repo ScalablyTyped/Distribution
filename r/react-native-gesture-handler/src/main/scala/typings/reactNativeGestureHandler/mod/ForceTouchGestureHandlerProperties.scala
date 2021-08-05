@@ -20,43 +20,31 @@ trait ForceTouchGestureHandlerProperties
 }
 object ForceTouchGestureHandlerProperties {
   
-  @scala.inline
-  def apply(): ForceTouchGestureHandlerProperties = {
+  inline def apply(): ForceTouchGestureHandlerProperties = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ForceTouchGestureHandlerProperties]
   }
   
-  @scala.inline
-  implicit class ForceTouchGestureHandlerPropertiesMutableBuilder[Self <: ForceTouchGestureHandlerProperties] (val x: Self) extends AnyVal {
+  extension [Self <: ForceTouchGestureHandlerProperties](x: Self) {
     
-    @scala.inline
-    def setFeedbackOnActivation(value: Boolean): Self = StObject.set(x, "feedbackOnActivation", value.asInstanceOf[js.Any])
+    inline def setFeedbackOnActivation(value: Boolean): Self = StObject.set(x, "feedbackOnActivation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFeedbackOnActivationUndefined: Self = StObject.set(x, "feedbackOnActivation", js.undefined)
+    inline def setFeedbackOnActivationUndefined: Self = StObject.set(x, "feedbackOnActivation", js.undefined)
     
-    @scala.inline
-    def setMaxForce(value: Double): Self = StObject.set(x, "maxForce", value.asInstanceOf[js.Any])
+    inline def setMaxForce(value: Double): Self = StObject.set(x, "maxForce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMaxForceUndefined: Self = StObject.set(x, "maxForce", js.undefined)
+    inline def setMaxForceUndefined: Self = StObject.set(x, "maxForce", js.undefined)
     
-    @scala.inline
-    def setMinForce(value: Double): Self = StObject.set(x, "minForce", value.asInstanceOf[js.Any])
+    inline def setMinForce(value: Double): Self = StObject.set(x, "minForce", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMinForceUndefined: Self = StObject.set(x, "minForce", js.undefined)
+    inline def setMinForceUndefined: Self = StObject.set(x, "minForce", js.undefined)
     
-    @scala.inline
-    def setOnGestureEvent(value: /* event */ ForceTouchGestureHandlerGestureEvent => Unit): Self = StObject.set(x, "onGestureEvent", js.Any.fromFunction1(value))
+    inline def setOnGestureEvent(value: /* event */ ForceTouchGestureHandlerGestureEvent => Unit): Self = StObject.set(x, "onGestureEvent", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnGestureEventUndefined: Self = StObject.set(x, "onGestureEvent", js.undefined)
+    inline def setOnGestureEventUndefined: Self = StObject.set(x, "onGestureEvent", js.undefined)
     
-    @scala.inline
-    def setOnHandlerStateChange(value: /* event */ ForceTouchGestureHandlerStateChangeEvent => Unit): Self = StObject.set(x, "onHandlerStateChange", js.Any.fromFunction1(value))
+    inline def setOnHandlerStateChange(value: /* event */ ForceTouchGestureHandlerStateChangeEvent => Unit): Self = StObject.set(x, "onHandlerStateChange", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setOnHandlerStateChangeUndefined: Self = StObject.set(x, "onHandlerStateChange", js.undefined)
+    inline def setOnHandlerStateChangeUndefined: Self = StObject.set(x, "onHandlerStateChange", js.undefined)
   }
 }

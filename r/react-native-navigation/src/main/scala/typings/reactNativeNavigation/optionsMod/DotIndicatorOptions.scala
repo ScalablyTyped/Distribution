@@ -14,31 +14,23 @@ trait DotIndicatorOptions extends StObject {
 }
 object DotIndicatorOptions {
   
-  @scala.inline
-  def apply(): DotIndicatorOptions = {
+  inline def apply(): DotIndicatorOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DotIndicatorOptions]
   }
   
-  @scala.inline
-  implicit class DotIndicatorOptionsMutableBuilder[Self <: DotIndicatorOptions] (val x: Self) extends AnyVal {
+  extension [Self <: DotIndicatorOptions](x: Self) {
     
-    @scala.inline
-    def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+    inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+    inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
-    @scala.inline
-    def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
+    inline def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
     
-    @scala.inline
-    def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
+    inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
+    inline def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
   }
 }

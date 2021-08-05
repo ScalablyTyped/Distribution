@@ -16,19 +16,15 @@ trait SchemaUndeleteRoleRequest extends StObject {
 }
 object SchemaUndeleteRoleRequest {
   
-  @scala.inline
-  def apply(): SchemaUndeleteRoleRequest = {
+  inline def apply(): SchemaUndeleteRoleRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaUndeleteRoleRequest]
   }
   
-  @scala.inline
-  implicit class SchemaUndeleteRoleRequestMutableBuilder[Self <: SchemaUndeleteRoleRequest] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaUndeleteRoleRequest](x: Self) {
     
-    @scala.inline
-    def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
+    inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
+    inline def setEtagUndefined: Self = StObject.set(x, "etag", js.undefined)
   }
 }

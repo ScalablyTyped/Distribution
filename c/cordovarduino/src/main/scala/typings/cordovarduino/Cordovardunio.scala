@@ -60,8 +60,7 @@ object Cordovardunio {
   }
   object Serial {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       close: (js.Function, js.Function) => Unit,
       open: (SerialOptions, js.Function, js.Function) => Unit,
       read: (js.Function, js.Function) => Unit,
@@ -73,26 +72,19 @@ object Cordovardunio {
       __obj.asInstanceOf[Serial]
     }
     
-    @scala.inline
-    implicit class SerialMutableBuilder[Self <: Serial] (val x: Self) extends AnyVal {
+    extension [Self <: Serial](x: Self) {
       
-      @scala.inline
-      def setClose(value: (js.Function, js.Function) => Unit): Self = StObject.set(x, "close", js.Any.fromFunction2(value))
+      inline def setClose(value: (js.Function, js.Function) => Unit): Self = StObject.set(x, "close", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOpen(value: (SerialOptions, js.Function, js.Function) => Unit): Self = StObject.set(x, "open", js.Any.fromFunction3(value))
+      inline def setOpen(value: (SerialOptions, js.Function, js.Function) => Unit): Self = StObject.set(x, "open", js.Any.fromFunction3(value))
       
-      @scala.inline
-      def setRead(value: (js.Function, js.Function) => Unit): Self = StObject.set(x, "read", js.Any.fromFunction2(value))
+      inline def setRead(value: (js.Function, js.Function) => Unit): Self = StObject.set(x, "read", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRegisterReadCallback(value: (js.Function, js.Function) => Unit): Self = StObject.set(x, "registerReadCallback", js.Any.fromFunction2(value))
+      inline def setRegisterReadCallback(value: (js.Function, js.Function) => Unit): Self = StObject.set(x, "registerReadCallback", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setRequestPermission(value: (js.Function, js.Function) => Unit): Self = StObject.set(x, "requestPermission", js.Any.fromFunction2(value))
+      inline def setRequestPermission(value: (js.Function, js.Function) => Unit): Self = StObject.set(x, "requestPermission", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setWrite(value: (String, js.Function, js.Function) => Unit): Self = StObject.set(x, "write", js.Any.fromFunction3(value))
+      inline def setWrite(value: (String, js.Function, js.Function) => Unit): Self = StObject.set(x, "write", js.Any.fromFunction3(value))
     }
   }
   
@@ -120,38 +112,28 @@ object Cordovardunio {
   }
   object SerialOptions {
     
-    @scala.inline
-    def apply(): SerialOptions = {
+    inline def apply(): SerialOptions = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[SerialOptions]
     }
     
-    @scala.inline
-    implicit class SerialOptionsMutableBuilder[Self <: SerialOptions] (val x: Self) extends AnyVal {
+    extension [Self <: SerialOptions](x: Self) {
       
-      @scala.inline
-      def setBaudRate(value: Double): Self = StObject.set(x, "baudRate", value.asInstanceOf[js.Any])
+      inline def setBaudRate(value: Double): Self = StObject.set(x, "baudRate", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBaudRateUndefined: Self = StObject.set(x, "baudRate", js.undefined)
+      inline def setBaudRateUndefined: Self = StObject.set(x, "baudRate", js.undefined)
       
-      @scala.inline
-      def setDataBits(value: Double): Self = StObject.set(x, "dataBits", value.asInstanceOf[js.Any])
+      inline def setDataBits(value: Double): Self = StObject.set(x, "dataBits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDataBitsUndefined: Self = StObject.set(x, "dataBits", js.undefined)
+      inline def setDataBitsUndefined: Self = StObject.set(x, "dataBits", js.undefined)
       
-      @scala.inline
-      def setParity(value: Double): Self = StObject.set(x, "parity", value.asInstanceOf[js.Any])
+      inline def setParity(value: Double): Self = StObject.set(x, "parity", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParityUndefined: Self = StObject.set(x, "parity", js.undefined)
+      inline def setParityUndefined: Self = StObject.set(x, "parity", js.undefined)
       
-      @scala.inline
-      def setStopBits(value: Double): Self = StObject.set(x, "stopBits", value.asInstanceOf[js.Any])
+      inline def setStopBits(value: Double): Self = StObject.set(x, "stopBits", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStopBitsUndefined: Self = StObject.set(x, "stopBits", js.undefined)
+      inline def setStopBitsUndefined: Self = StObject.set(x, "stopBits", js.undefined)
     }
   }
 }

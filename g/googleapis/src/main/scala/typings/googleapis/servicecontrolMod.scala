@@ -40,8 +40,7 @@ object servicecontrolMod {
         /* google */ js.UndefOr[GoogleConfigurable], 
         Servicecontrol
       ] = js.native
-    @scala.inline
-    def v1_=(
+    inline def v1_=(
       x: Instantiable2[
           /* options */ GlobalOptions, 
           /* google */ js.UndefOr[GoogleConfigurable], 
@@ -83,8 +82,7 @@ object servicecontrolMod {
       @js.native
       val ^ : js.Any = js.native
       
-      @scala.inline
-      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
+      inline def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -128,9 +126,7 @@ object servicecontrolMod {
     override def _to: AuthPlus = ^
   }
   
-  @scala.inline
-  def servicecontrol(options: Options): Servicecontrol = ^.asInstanceOf[js.Dynamic].applyDynamic("servicecontrol")(options.asInstanceOf[js.Any]).asInstanceOf[Servicecontrol]
+  inline def servicecontrol(options: Options): Servicecontrol = ^.asInstanceOf[js.Dynamic].applyDynamic("servicecontrol")(options.asInstanceOf[js.Any]).asInstanceOf[Servicecontrol]
   
-  @scala.inline
-  def servicecontrol_v1(version: v1): Servicecontrol = ^.asInstanceOf[js.Dynamic].applyDynamic("servicecontrol")(version.asInstanceOf[js.Any]).asInstanceOf[Servicecontrol]
+  inline def servicecontrol_v1(version: v1): Servicecontrol = ^.asInstanceOf[js.Dynamic].applyDynamic("servicecontrol")(version.asInstanceOf[js.Any]).asInstanceOf[Servicecontrol]
 }

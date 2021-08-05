@@ -23,6 +23,5 @@ object integrationTestMod {
   @js.native
   val STORAGE_BUCKET: js.Any = js.native
   
-  @scala.inline
-  def withTestInstance(fn: js.Function1[/* storage */ FirebaseStorage, Unit | js.Promise[Unit]]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("withTestInstance")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def withTestInstance(fn: js.Function1[/* storage */ FirebaseStorage, Unit | js.Promise[Unit]]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("withTestInstance")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
 }

@@ -108,85 +108,59 @@ trait ChartTrendlineLoadOptions extends StObject {
 }
 object ChartTrendlineLoadOptions {
   
-  @scala.inline
-  def apply(): ChartTrendlineLoadOptions = {
+  inline def apply(): ChartTrendlineLoadOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ChartTrendlineLoadOptions]
   }
   
-  @scala.inline
-  implicit class ChartTrendlineLoadOptionsMutableBuilder[Self <: ChartTrendlineLoadOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ChartTrendlineLoadOptions](x: Self) {
     
-    @scala.inline
-    def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
+    inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
+    inline def set$allUndefined: Self = StObject.set(x, "$all", js.undefined)
     
-    @scala.inline
-    def setBackwardPeriod(value: Boolean): Self = StObject.set(x, "backwardPeriod", value.asInstanceOf[js.Any])
+    inline def setBackwardPeriod(value: Boolean): Self = StObject.set(x, "backwardPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackwardPeriodUndefined: Self = StObject.set(x, "backwardPeriod", js.undefined)
+    inline def setBackwardPeriodUndefined: Self = StObject.set(x, "backwardPeriod", js.undefined)
     
-    @scala.inline
-    def setFormat(value: ChartTrendlineFormatLoadOptions): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: ChartTrendlineFormatLoadOptions): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
+    inline def setFormatUndefined: Self = StObject.set(x, "format", js.undefined)
     
-    @scala.inline
-    def setForwardPeriod(value: Boolean): Self = StObject.set(x, "forwardPeriod", value.asInstanceOf[js.Any])
+    inline def setForwardPeriod(value: Boolean): Self = StObject.set(x, "forwardPeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForwardPeriodUndefined: Self = StObject.set(x, "forwardPeriod", js.undefined)
+    inline def setForwardPeriodUndefined: Self = StObject.set(x, "forwardPeriod", js.undefined)
     
-    @scala.inline
-    def setIntercept(value: Boolean): Self = StObject.set(x, "intercept", value.asInstanceOf[js.Any])
+    inline def setIntercept(value: Boolean): Self = StObject.set(x, "intercept", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInterceptUndefined: Self = StObject.set(x, "intercept", js.undefined)
+    inline def setInterceptUndefined: Self = StObject.set(x, "intercept", js.undefined)
     
-    @scala.inline
-    def setLabel(value: ChartTrendlineLabelLoadOptions): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+    inline def setLabel(value: ChartTrendlineLabelLoadOptions): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+    inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
-    @scala.inline
-    def setMovingAveragePeriod(value: Boolean): Self = StObject.set(x, "movingAveragePeriod", value.asInstanceOf[js.Any])
+    inline def setMovingAveragePeriod(value: Boolean): Self = StObject.set(x, "movingAveragePeriod", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setMovingAveragePeriodUndefined: Self = StObject.set(x, "movingAveragePeriod", js.undefined)
+    inline def setMovingAveragePeriodUndefined: Self = StObject.set(x, "movingAveragePeriod", js.undefined)
     
-    @scala.inline
-    def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+    inline def setName(value: Boolean): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
-    @scala.inline
-    def setPolynomialOrder(value: Boolean): Self = StObject.set(x, "polynomialOrder", value.asInstanceOf[js.Any])
+    inline def setPolynomialOrder(value: Boolean): Self = StObject.set(x, "polynomialOrder", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPolynomialOrderUndefined: Self = StObject.set(x, "polynomialOrder", js.undefined)
+    inline def setPolynomialOrderUndefined: Self = StObject.set(x, "polynomialOrder", js.undefined)
     
-    @scala.inline
-    def setShowEquation(value: Boolean): Self = StObject.set(x, "showEquation", value.asInstanceOf[js.Any])
+    inline def setShowEquation(value: Boolean): Self = StObject.set(x, "showEquation", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowEquationUndefined: Self = StObject.set(x, "showEquation", js.undefined)
+    inline def setShowEquationUndefined: Self = StObject.set(x, "showEquation", js.undefined)
     
-    @scala.inline
-    def setShowRSquared(value: Boolean): Self = StObject.set(x, "showRSquared", value.asInstanceOf[js.Any])
+    inline def setShowRSquared(value: Boolean): Self = StObject.set(x, "showRSquared", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setShowRSquaredUndefined: Self = StObject.set(x, "showRSquared", js.undefined)
+    inline def setShowRSquaredUndefined: Self = StObject.set(x, "showRSquared", js.undefined)
     
-    @scala.inline
-    def setType(value: Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: Boolean): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
   }
 }

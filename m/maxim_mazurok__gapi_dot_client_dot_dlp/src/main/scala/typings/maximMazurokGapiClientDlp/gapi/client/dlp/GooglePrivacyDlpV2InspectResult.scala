@@ -17,28 +17,21 @@ trait GooglePrivacyDlpV2InspectResult extends StObject {
 }
 object GooglePrivacyDlpV2InspectResult {
   
-  @scala.inline
-  def apply(): GooglePrivacyDlpV2InspectResult = {
+  inline def apply(): GooglePrivacyDlpV2InspectResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GooglePrivacyDlpV2InspectResult]
   }
   
-  @scala.inline
-  implicit class GooglePrivacyDlpV2InspectResultMutableBuilder[Self <: GooglePrivacyDlpV2InspectResult] (val x: Self) extends AnyVal {
+  extension [Self <: GooglePrivacyDlpV2InspectResult](x: Self) {
     
-    @scala.inline
-    def setFindings(value: js.Array[GooglePrivacyDlpV2Finding]): Self = StObject.set(x, "findings", value.asInstanceOf[js.Any])
+    inline def setFindings(value: js.Array[GooglePrivacyDlpV2Finding]): Self = StObject.set(x, "findings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingsTruncated(value: Boolean): Self = StObject.set(x, "findingsTruncated", value.asInstanceOf[js.Any])
+    inline def setFindingsTruncated(value: Boolean): Self = StObject.set(x, "findingsTruncated", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFindingsTruncatedUndefined: Self = StObject.set(x, "findingsTruncated", js.undefined)
+    inline def setFindingsTruncatedUndefined: Self = StObject.set(x, "findingsTruncated", js.undefined)
     
-    @scala.inline
-    def setFindingsUndefined: Self = StObject.set(x, "findings", js.undefined)
+    inline def setFindingsUndefined: Self = StObject.set(x, "findings", js.undefined)
     
-    @scala.inline
-    def setFindingsVarargs(value: GooglePrivacyDlpV2Finding*): Self = StObject.set(x, "findings", js.Array(value :_*))
+    inline def setFindingsVarargs(value: GooglePrivacyDlpV2Finding*): Self = StObject.set(x, "findings", js.Array(value :_*))
   }
 }

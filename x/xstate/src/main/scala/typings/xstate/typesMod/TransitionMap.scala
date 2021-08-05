@@ -10,19 +10,15 @@ trait TransitionMap extends StObject {
 }
 object TransitionMap {
   
-  @scala.inline
-  def apply(): TransitionMap = {
+  inline def apply(): TransitionMap = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TransitionMap]
   }
   
-  @scala.inline
-  implicit class TransitionMapMutableBuilder[Self <: TransitionMap] (val x: Self) extends AnyVal {
+  extension [Self <: TransitionMap](x: Self) {
     
-    @scala.inline
-    def setState(value: StateValue): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    inline def setState(value: StateValue): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
+    inline def setStateUndefined: Self = StObject.set(x, "state", js.undefined)
   }
 }

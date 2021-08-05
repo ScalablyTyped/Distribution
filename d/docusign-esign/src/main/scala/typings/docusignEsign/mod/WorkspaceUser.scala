@@ -110,129 +110,89 @@ trait WorkspaceUser extends StObject {
 }
 object WorkspaceUser {
   
-  @scala.inline
-  def apply(): WorkspaceUser = {
+  inline def apply(): WorkspaceUser = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[WorkspaceUser]
   }
   
-  @scala.inline
-  implicit class WorkspaceUserMutableBuilder[Self <: WorkspaceUser] (val x: Self) extends AnyVal {
+  extension [Self <: WorkspaceUser](x: Self) {
     
-    @scala.inline
-    def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
+    inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
+    inline def setAccountIdUndefined: Self = StObject.set(x, "accountId", js.undefined)
     
-    @scala.inline
-    def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
+    inline def setAccountName(value: String): Self = StObject.set(x, "accountName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAccountNameUndefined: Self = StObject.set(x, "accountName", js.undefined)
+    inline def setAccountNameUndefined: Self = StObject.set(x, "accountName", js.undefined)
     
-    @scala.inline
-    def setActiveSince(value: String): Self = StObject.set(x, "activeSince", value.asInstanceOf[js.Any])
+    inline def setActiveSince(value: String): Self = StObject.set(x, "activeSince", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActiveSinceUndefined: Self = StObject.set(x, "activeSince", js.undefined)
+    inline def setActiveSinceUndefined: Self = StObject.set(x, "activeSince", js.undefined)
     
-    @scala.inline
-    def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
+    inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedById(value: String): Self = StObject.set(x, "createdById", value.asInstanceOf[js.Any])
+    inline def setCreatedById(value: String): Self = StObject.set(x, "createdById", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreatedByIdUndefined: Self = StObject.set(x, "createdById", js.undefined)
+    inline def setCreatedByIdUndefined: Self = StObject.set(x, "createdById", js.undefined)
     
-    @scala.inline
-    def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
+    inline def setCreatedUndefined: Self = StObject.set(x, "created", js.undefined)
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setErrorDetails(
+    inline def setErrorDetails(
       value: /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
     ): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
+    inline def setErrorDetailsUndefined: Self = StObject.set(x, "errorDetails", js.undefined)
     
-    @scala.inline
-    def setInvitationEmailBlurb(value: String): Self = StObject.set(x, "invitationEmailBlurb", value.asInstanceOf[js.Any])
+    inline def setInvitationEmailBlurb(value: String): Self = StObject.set(x, "invitationEmailBlurb", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitationEmailBlurbUndefined: Self = StObject.set(x, "invitationEmailBlurb", js.undefined)
+    inline def setInvitationEmailBlurbUndefined: Self = StObject.set(x, "invitationEmailBlurb", js.undefined)
     
-    @scala.inline
-    def setInvitationEmailSubject(value: String): Self = StObject.set(x, "invitationEmailSubject", value.asInstanceOf[js.Any])
+    inline def setInvitationEmailSubject(value: String): Self = StObject.set(x, "invitationEmailSubject", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInvitationEmailSubjectUndefined: Self = StObject.set(x, "invitationEmailSubject", js.undefined)
+    inline def setInvitationEmailSubjectUndefined: Self = StObject.set(x, "invitationEmailSubject", js.undefined)
     
-    @scala.inline
-    def setLastModified(value: String): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
+    inline def setLastModified(value: String): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedById(value: String): Self = StObject.set(x, "lastModifiedById", value.asInstanceOf[js.Any])
+    inline def setLastModifiedById(value: String): Self = StObject.set(x, "lastModifiedById", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLastModifiedByIdUndefined: Self = StObject.set(x, "lastModifiedById", js.undefined)
+    inline def setLastModifiedByIdUndefined: Self = StObject.set(x, "lastModifiedById", js.undefined)
     
-    @scala.inline
-    def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
+    inline def setLastModifiedUndefined: Self = StObject.set(x, "lastModified", js.undefined)
     
-    @scala.inline
-    def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "status", js.undefined)
     
-    @scala.inline
-    def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
+    inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
+    inline def setUserIdUndefined: Self = StObject.set(x, "userId", js.undefined)
     
-    @scala.inline
-    def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
+    inline def setUserName(value: String): Self = StObject.set(x, "userName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
+    inline def setUserNameUndefined: Self = StObject.set(x, "userName", js.undefined)
     
-    @scala.inline
-    def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
+    inline def setWorkspaceId(value: String): Self = StObject.set(x, "workspaceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
+    inline def setWorkspaceIdUndefined: Self = StObject.set(x, "workspaceId", js.undefined)
     
-    @scala.inline
-    def setWorkspaceUserBaseUrl(value: String): Self = StObject.set(x, "workspaceUserBaseUrl", value.asInstanceOf[js.Any])
+    inline def setWorkspaceUserBaseUrl(value: String): Self = StObject.set(x, "workspaceUserBaseUrl", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceUserBaseUrlUndefined: Self = StObject.set(x, "workspaceUserBaseUrl", js.undefined)
+    inline def setWorkspaceUserBaseUrlUndefined: Self = StObject.set(x, "workspaceUserBaseUrl", js.undefined)
     
-    @scala.inline
-    def setWorkspaceUserId(value: String): Self = StObject.set(x, "workspaceUserId", value.asInstanceOf[js.Any])
+    inline def setWorkspaceUserId(value: String): Self = StObject.set(x, "workspaceUserId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceUserIdUndefined: Self = StObject.set(x, "workspaceUserId", js.undefined)
+    inline def setWorkspaceUserIdUndefined: Self = StObject.set(x, "workspaceUserId", js.undefined)
     
-    @scala.inline
-    def setWorkspaceUserUri(value: String): Self = StObject.set(x, "workspaceUserUri", value.asInstanceOf[js.Any])
+    inline def setWorkspaceUserUri(value: String): Self = StObject.set(x, "workspaceUserUri", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWorkspaceUserUriUndefined: Self = StObject.set(x, "workspaceUserUri", js.undefined)
+    inline def setWorkspaceUserUriUndefined: Self = StObject.set(x, "workspaceUserUri", js.undefined)
   }
 }

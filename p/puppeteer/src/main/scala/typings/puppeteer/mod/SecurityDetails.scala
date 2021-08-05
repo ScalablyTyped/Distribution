@@ -23,8 +23,7 @@ trait SecurityDetails extends StObject {
 }
 object SecurityDetails {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     issuer: () => String,
     protocol: () => String,
     subjectName: () => String,
@@ -35,22 +34,16 @@ object SecurityDetails {
     __obj.asInstanceOf[SecurityDetails]
   }
   
-  @scala.inline
-  implicit class SecurityDetailsMutableBuilder[Self <: SecurityDetails] (val x: Self) extends AnyVal {
+  extension [Self <: SecurityDetails](x: Self) {
     
-    @scala.inline
-    def setIssuer(value: () => String): Self = StObject.set(x, "issuer", js.Any.fromFunction0(value))
+    inline def setIssuer(value: () => String): Self = StObject.set(x, "issuer", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setProtocol(value: () => String): Self = StObject.set(x, "protocol", js.Any.fromFunction0(value))
+    inline def setProtocol(value: () => String): Self = StObject.set(x, "protocol", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSubjectName(value: () => String): Self = StObject.set(x, "subjectName", js.Any.fromFunction0(value))
+    inline def setSubjectName(value: () => String): Self = StObject.set(x, "subjectName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setValidFrom(value: () => Double): Self = StObject.set(x, "validFrom", js.Any.fromFunction0(value))
+    inline def setValidFrom(value: () => Double): Self = StObject.set(x, "validFrom", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setValidTo(value: () => Double): Self = StObject.set(x, "validTo", js.Any.fromFunction0(value))
+    inline def setValidTo(value: () => Double): Self = StObject.set(x, "validTo", js.Any.fromFunction0(value))
   }
 }

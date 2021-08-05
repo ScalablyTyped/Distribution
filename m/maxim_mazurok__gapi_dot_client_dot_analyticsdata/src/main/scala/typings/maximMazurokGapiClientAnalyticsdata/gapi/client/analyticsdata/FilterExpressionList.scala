@@ -11,22 +11,17 @@ trait FilterExpressionList extends StObject {
 }
 object FilterExpressionList {
   
-  @scala.inline
-  def apply(): FilterExpressionList = {
+  inline def apply(): FilterExpressionList = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[FilterExpressionList]
   }
   
-  @scala.inline
-  implicit class FilterExpressionListMutableBuilder[Self <: FilterExpressionList] (val x: Self) extends AnyVal {
+  extension [Self <: FilterExpressionList](x: Self) {
     
-    @scala.inline
-    def setExpressions(value: js.Array[FilterExpression]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
+    inline def setExpressions(value: js.Array[FilterExpression]): Self = StObject.set(x, "expressions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setExpressionsUndefined: Self = StObject.set(x, "expressions", js.undefined)
+    inline def setExpressionsUndefined: Self = StObject.set(x, "expressions", js.undefined)
     
-    @scala.inline
-    def setExpressionsVarargs(value: FilterExpression*): Self = StObject.set(x, "expressions", js.Array(value :_*))
+    inline def setExpressionsVarargs(value: FilterExpression*): Self = StObject.set(x, "expressions", js.Array(value :_*))
   }
 }

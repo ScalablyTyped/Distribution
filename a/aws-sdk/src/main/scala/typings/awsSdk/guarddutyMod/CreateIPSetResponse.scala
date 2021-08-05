@@ -13,16 +13,13 @@ trait CreateIPSetResponse extends StObject {
 }
 object CreateIPSetResponse {
   
-  @scala.inline
-  def apply(IpSetId: String): CreateIPSetResponse = {
+  inline def apply(IpSetId: String): CreateIPSetResponse = {
     val __obj = js.Dynamic.literal(IpSetId = IpSetId.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateIPSetResponse]
   }
   
-  @scala.inline
-  implicit class CreateIPSetResponseMutableBuilder[Self <: CreateIPSetResponse] (val x: Self) extends AnyVal {
+  extension [Self <: CreateIPSetResponse](x: Self) {
     
-    @scala.inline
-    def setIpSetId(value: String): Self = StObject.set(x, "IpSetId", value.asInstanceOf[js.Any])
+    inline def setIpSetId(value: String): Self = StObject.set(x, "IpSetId", value.asInstanceOf[js.Any])
   }
 }

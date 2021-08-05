@@ -25,7 +25,7 @@ object bufferTokenizerMod {
     def this(buffer: Buffer) = this()
     def this(buffer: Buffer, fileInfo: IFileInfo) = this()
     
-    var buffer: js.Any = js.native
+    /* private */ var buffer: js.Any = js.native
     
     def peekBuffer(buffer: Uint8Array): js.Promise[Double] = js.native
     def peekBuffer(buffer: Uint8Array, options: IReadChunkOptions): js.Promise[Double] = js.native

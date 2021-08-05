@@ -22,8 +22,7 @@ trait X11DropTarget
      with XComponent
 object X11DropTarget {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     DefaultActions: Double,
     acquire: () => Unit,
     addDropTargetListener: XDropTargetListener => Unit,

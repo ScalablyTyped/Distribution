@@ -25,46 +25,33 @@ trait DeviceComplianceActionItem
 }
 object DeviceComplianceActionItem {
   
-  @scala.inline
-  def apply(): DeviceComplianceActionItem = {
+  inline def apply(): DeviceComplianceActionItem = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DeviceComplianceActionItem]
   }
   
-  @scala.inline
-  implicit class DeviceComplianceActionItemMutableBuilder[Self <: DeviceComplianceActionItem] (val x: Self) extends AnyVal {
+  extension [Self <: DeviceComplianceActionItem](x: Self) {
     
-    @scala.inline
-    def setActionType(value: DeviceComplianceActionType): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
+    inline def setActionType(value: DeviceComplianceActionType): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setActionTypeUndefined: Self = StObject.set(x, "actionType", js.undefined)
+    inline def setActionTypeUndefined: Self = StObject.set(x, "actionType", js.undefined)
     
-    @scala.inline
-    def setGracePeriodHours(value: Double): Self = StObject.set(x, "gracePeriodHours", value.asInstanceOf[js.Any])
+    inline def setGracePeriodHours(value: Double): Self = StObject.set(x, "gracePeriodHours", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGracePeriodHoursUndefined: Self = StObject.set(x, "gracePeriodHours", js.undefined)
+    inline def setGracePeriodHoursUndefined: Self = StObject.set(x, "gracePeriodHours", js.undefined)
     
-    @scala.inline
-    def setNotificationMessageCCList(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "notificationMessageCCList", value.asInstanceOf[js.Any])
+    inline def setNotificationMessageCCList(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "notificationMessageCCList", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationMessageCCListNull: Self = StObject.set(x, "notificationMessageCCList", null)
+    inline def setNotificationMessageCCListNull: Self = StObject.set(x, "notificationMessageCCList", null)
     
-    @scala.inline
-    def setNotificationMessageCCListUndefined: Self = StObject.set(x, "notificationMessageCCList", js.undefined)
+    inline def setNotificationMessageCCListUndefined: Self = StObject.set(x, "notificationMessageCCList", js.undefined)
     
-    @scala.inline
-    def setNotificationMessageCCListVarargs(value: String*): Self = StObject.set(x, "notificationMessageCCList", js.Array(value :_*))
+    inline def setNotificationMessageCCListVarargs(value: String*): Self = StObject.set(x, "notificationMessageCCList", js.Array(value :_*))
     
-    @scala.inline
-    def setNotificationTemplateId(value: NullableOption[String]): Self = StObject.set(x, "notificationTemplateId", value.asInstanceOf[js.Any])
+    inline def setNotificationTemplateId(value: NullableOption[String]): Self = StObject.set(x, "notificationTemplateId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotificationTemplateIdNull: Self = StObject.set(x, "notificationTemplateId", null)
+    inline def setNotificationTemplateIdNull: Self = StObject.set(x, "notificationTemplateId", null)
     
-    @scala.inline
-    def setNotificationTemplateIdUndefined: Self = StObject.set(x, "notificationTemplateId", js.undefined)
+    inline def setNotificationTemplateIdUndefined: Self = StObject.set(x, "notificationTemplateId", js.undefined)
   }
 }

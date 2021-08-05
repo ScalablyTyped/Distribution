@@ -16,8 +16,7 @@ trait ActiveViewChangingEventArgs
 }
 object ActiveViewChangingEventArgs {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     cancel: Boolean,
     newView: BootstrapSchedulerViewType,
     oldView: BootstrapSchedulerViewType,
@@ -27,16 +26,12 @@ object ActiveViewChangingEventArgs {
     __obj.asInstanceOf[ActiveViewChangingEventArgs]
   }
   
-  @scala.inline
-  implicit class ActiveViewChangingEventArgsMutableBuilder[Self <: ActiveViewChangingEventArgs] (val x: Self) extends AnyVal {
+  extension [Self <: ActiveViewChangingEventArgs](x: Self) {
     
-    @scala.inline
-    def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
+    inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNewView(value: BootstrapSchedulerViewType): Self = StObject.set(x, "newView", value.asInstanceOf[js.Any])
+    inline def setNewView(value: BootstrapSchedulerViewType): Self = StObject.set(x, "newView", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOldView(value: BootstrapSchedulerViewType): Self = StObject.set(x, "oldView", value.asInstanceOf[js.Any])
+    inline def setOldView(value: BootstrapSchedulerViewType): Self = StObject.set(x, "oldView", value.asInstanceOf[js.Any])
   }
 }

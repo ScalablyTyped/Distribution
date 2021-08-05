@@ -11,7 +11,7 @@ object childChangeAccumulatorMod {
   @js.native
   class ChildChangeAccumulator () extends StObject {
     
-    val changeMap: js.Any = js.native
+    /* private */ val changeMap: js.Any = js.native
     
     def getChanges(): js.Array[Change] = js.native
     

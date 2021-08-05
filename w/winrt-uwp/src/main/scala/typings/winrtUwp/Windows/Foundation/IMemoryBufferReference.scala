@@ -14,16 +14,13 @@ trait IMemoryBufferReference
 }
 object IMemoryBufferReference {
   
-  @scala.inline
-  def apply(capacity: Double, close: () => Unit): IMemoryBufferReference = {
+  inline def apply(capacity: Double, close: () => Unit): IMemoryBufferReference = {
     val __obj = js.Dynamic.literal(capacity = capacity.asInstanceOf[js.Any], close = js.Any.fromFunction0(close))
     __obj.asInstanceOf[IMemoryBufferReference]
   }
   
-  @scala.inline
-  implicit class IMemoryBufferReferenceMutableBuilder[Self <: IMemoryBufferReference] (val x: Self) extends AnyVal {
+  extension [Self <: IMemoryBufferReference](x: Self) {
     
-    @scala.inline
-    def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
+    inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
   }
 }

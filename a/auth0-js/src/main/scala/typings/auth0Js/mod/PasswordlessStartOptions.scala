@@ -18,37 +18,27 @@ trait PasswordlessStartOptions extends StObject {
 }
 object PasswordlessStartOptions {
   
-  @scala.inline
-  def apply(connection: String, send: String): PasswordlessStartOptions = {
+  inline def apply(connection: String, send: String): PasswordlessStartOptions = {
     val __obj = js.Dynamic.literal(connection = connection.asInstanceOf[js.Any], send = send.asInstanceOf[js.Any])
     __obj.asInstanceOf[PasswordlessStartOptions]
   }
   
-  @scala.inline
-  implicit class PasswordlessStartOptionsMutableBuilder[Self <: PasswordlessStartOptions] (val x: Self) extends AnyVal {
+  extension [Self <: PasswordlessStartOptions](x: Self) {
     
-    @scala.inline
-    def setAuthParams(value: PasswordlessStartAuthParams): Self = StObject.set(x, "authParams", value.asInstanceOf[js.Any])
+    inline def setAuthParams(value: PasswordlessStartAuthParams): Self = StObject.set(x, "authParams", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAuthParamsUndefined: Self = StObject.set(x, "authParams", js.undefined)
+    inline def setAuthParamsUndefined: Self = StObject.set(x, "authParams", js.undefined)
     
-    @scala.inline
-    def setConnection(value: String): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    inline def setConnection(value: String): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
+    inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
+    inline def setEmailUndefined: Self = StObject.set(x, "email", js.undefined)
     
-    @scala.inline
-    def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
+    inline def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
+    inline def setPhoneNumberUndefined: Self = StObject.set(x, "phoneNumber", js.undefined)
     
-    @scala.inline
-    def setSend(value: String): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
+    inline def setSend(value: String): Self = StObject.set(x, "send", value.asInstanceOf[js.Any])
   }
 }

@@ -13,19 +13,15 @@ trait CreateClientVpnRouteResult extends StObject {
 }
 object CreateClientVpnRouteResult {
   
-  @scala.inline
-  def apply(): CreateClientVpnRouteResult = {
+  inline def apply(): CreateClientVpnRouteResult = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateClientVpnRouteResult]
   }
   
-  @scala.inline
-  implicit class CreateClientVpnRouteResultMutableBuilder[Self <: CreateClientVpnRouteResult] (val x: Self) extends AnyVal {
+  extension [Self <: CreateClientVpnRouteResult](x: Self) {
     
-    @scala.inline
-    def setStatus(value: ClientVpnRouteStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
+    inline def setStatus(value: ClientVpnRouteStatus): Self = StObject.set(x, "Status", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
+    inline def setStatusUndefined: Self = StObject.set(x, "Status", js.undefined)
   }
 }

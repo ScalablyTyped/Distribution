@@ -63,14 +63,10 @@ object mod {
   @js.native
   val MenuItemSeparator: ForwardRefExoticComponent[MenuItemSeparatorProps & RefAttributes[DividerElement]] = js.native
   
-  @scala.inline
-  def defaultMenuItemRenderer(item: ValidMenuItem, key: String): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultMenuItemRenderer")(item.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  inline def defaultMenuItemRenderer(item: ValidMenuItem, key: String): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultMenuItemRenderer")(item.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
   
-  @scala.inline
-  def defaultMenuRenderer(hasHorizontalChildrenProps: LabelRequiredForA11y[AllInjectedMenuProps]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultMenuRenderer")(hasHorizontalChildrenProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  inline def defaultMenuRenderer(hasHorizontalChildrenProps: LabelRequiredForA11y[AllInjectedMenuProps]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultMenuRenderer")(hasHorizontalChildrenProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @scala.inline
-  def useContextMenu[CE /* <: HTMLElement */](): ReturnValue[CE] = ^.asInstanceOf[js.Dynamic].applyDynamic("useContextMenu")().asInstanceOf[ReturnValue[CE]]
-  @scala.inline
-  def useContextMenu[CE /* <: HTMLElement */](hasIdPropRefAnchorClassNamesDisableDeselect: Options): ReturnValue[CE] = ^.asInstanceOf[js.Dynamic].applyDynamic("useContextMenu")(hasIdPropRefAnchorClassNamesDisableDeselect.asInstanceOf[js.Any]).asInstanceOf[ReturnValue[CE]]
+  inline def useContextMenu[CE /* <: HTMLElement */](): ReturnValue[CE] = ^.asInstanceOf[js.Dynamic].applyDynamic("useContextMenu")().asInstanceOf[ReturnValue[CE]]
+  inline def useContextMenu[CE /* <: HTMLElement */](hasIdPropRefAnchorClassNamesDisableDeselect: Options): ReturnValue[CE] = ^.asInstanceOf[js.Dynamic].applyDynamic("useContextMenu")(hasIdPropRefAnchorClassNamesDisableDeselect.asInstanceOf[js.Any]).asInstanceOf[ReturnValue[CE]]
 }

@@ -83,8 +83,7 @@ trait FileSystemDescription extends StObject {
 }
 object FileSystemDescription {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CreationTime: Timestamp,
     CreationToken: CreationToken,
     FileSystemId: FileSystemId,
@@ -99,73 +98,50 @@ object FileSystemDescription {
     __obj.asInstanceOf[FileSystemDescription]
   }
   
-  @scala.inline
-  implicit class FileSystemDescriptionMutableBuilder[Self <: FileSystemDescription] (val x: Self) extends AnyVal {
+  extension [Self <: FileSystemDescription](x: Self) {
     
-    @scala.inline
-    def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
+    inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCreationToken(value: CreationToken): Self = StObject.set(x, "CreationToken", value.asInstanceOf[js.Any])
+    inline def setCreationToken(value: CreationToken): Self = StObject.set(x, "CreationToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncrypted(value: Encrypted): Self = StObject.set(x, "Encrypted", value.asInstanceOf[js.Any])
+    inline def setEncrypted(value: Encrypted): Self = StObject.set(x, "Encrypted", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptedUndefined: Self = StObject.set(x, "Encrypted", js.undefined)
+    inline def setEncryptedUndefined: Self = StObject.set(x, "Encrypted", js.undefined)
     
-    @scala.inline
-    def setFileSystemArn(value: FileSystemArn): Self = StObject.set(x, "FileSystemArn", value.asInstanceOf[js.Any])
+    inline def setFileSystemArn(value: FileSystemArn): Self = StObject.set(x, "FileSystemArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFileSystemArnUndefined: Self = StObject.set(x, "FileSystemArn", js.undefined)
+    inline def setFileSystemArnUndefined: Self = StObject.set(x, "FileSystemArn", js.undefined)
     
-    @scala.inline
-    def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
+    inline def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
+    inline def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
+    inline def setKmsKeyIdUndefined: Self = StObject.set(x, "KmsKeyId", js.undefined)
     
-    @scala.inline
-    def setLifeCycleState(value: LifeCycleState): Self = StObject.set(x, "LifeCycleState", value.asInstanceOf[js.Any])
+    inline def setLifeCycleState(value: LifeCycleState): Self = StObject.set(x, "LifeCycleState", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setName(value: TagValue): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    inline def setName(value: TagValue): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
+    inline def setNameUndefined: Self = StObject.set(x, "Name", js.undefined)
     
-    @scala.inline
-    def setNumberOfMountTargets(value: MountTargetCount): Self = StObject.set(x, "NumberOfMountTargets", value.asInstanceOf[js.Any])
+    inline def setNumberOfMountTargets(value: MountTargetCount): Self = StObject.set(x, "NumberOfMountTargets", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOwnerId(value: AwsAccountId): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
+    inline def setOwnerId(value: AwsAccountId): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPerformanceMode(value: PerformanceMode): Self = StObject.set(x, "PerformanceMode", value.asInstanceOf[js.Any])
+    inline def setPerformanceMode(value: PerformanceMode): Self = StObject.set(x, "PerformanceMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionedThroughputInMibps(value: ProvisionedThroughputInMibps): Self = StObject.set(x, "ProvisionedThroughputInMibps", value.asInstanceOf[js.Any])
+    inline def setProvisionedThroughputInMibps(value: ProvisionedThroughputInMibps): Self = StObject.set(x, "ProvisionedThroughputInMibps", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProvisionedThroughputInMibpsUndefined: Self = StObject.set(x, "ProvisionedThroughputInMibps", js.undefined)
+    inline def setProvisionedThroughputInMibpsUndefined: Self = StObject.set(x, "ProvisionedThroughputInMibps", js.undefined)
     
-    @scala.inline
-    def setSizeInBytes(value: FileSystemSize): Self = StObject.set(x, "SizeInBytes", value.asInstanceOf[js.Any])
+    inline def setSizeInBytes(value: FileSystemSize): Self = StObject.set(x, "SizeInBytes", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
+    inline def setTags(value: Tags): Self = StObject.set(x, "Tags", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
+    inline def setTagsVarargs(value: Tag*): Self = StObject.set(x, "Tags", js.Array(value :_*))
     
-    @scala.inline
-    def setThroughputMode(value: ThroughputMode): Self = StObject.set(x, "ThroughputMode", value.asInstanceOf[js.Any])
+    inline def setThroughputMode(value: ThroughputMode): Self = StObject.set(x, "ThroughputMode", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setThroughputModeUndefined: Self = StObject.set(x, "ThroughputMode", js.undefined)
+    inline def setThroughputModeUndefined: Self = StObject.set(x, "ThroughputMode", js.undefined)
   }
 }

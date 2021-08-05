@@ -17,19 +17,15 @@ trait TriggerNameTaskUnassigned
 }
 object TriggerNameTaskUnassigned {
   
-  @scala.inline
-  def apply(triggerName: TaskUnassigned): TriggerNameTaskUnassigned = {
+  inline def apply(triggerName: TaskUnassigned): TriggerNameTaskUnassigned = {
     val __obj = js.Dynamic.literal(triggerId = 10, triggerName = triggerName.asInstanceOf[js.Any])
     __obj.asInstanceOf[TriggerNameTaskUnassigned]
   }
   
-  @scala.inline
-  implicit class TriggerNameTaskUnassignedMutableBuilder[Self <: TriggerNameTaskUnassigned] (val x: Self) extends AnyVal {
+  extension [Self <: TriggerNameTaskUnassigned](x: Self) {
     
-    @scala.inline
-    def setTriggerId(value: `10`): Self = StObject.set(x, "triggerId", value.asInstanceOf[js.Any])
+    inline def setTriggerId(value: `10`): Self = StObject.set(x, "triggerId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTriggerName(value: TaskUnassigned): Self = StObject.set(x, "triggerName", value.asInstanceOf[js.Any])
+    inline def setTriggerName(value: TaskUnassigned): Self = StObject.set(x, "triggerName", value.asInstanceOf[js.Any])
   }
 }

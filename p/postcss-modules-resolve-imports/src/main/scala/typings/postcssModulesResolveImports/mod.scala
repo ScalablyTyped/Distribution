@@ -21,26 +21,20 @@ object mod extends Shortcut {
   }
   object Options {
     
-    @scala.inline
-    def apply(): Options = {
+    inline def apply(): Options = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
-    @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    extension [Self <: Options](x: Self) {
       
-      @scala.inline
-      def setIcssExports(value: Boolean): Self = StObject.set(x, "icssExports", value.asInstanceOf[js.Any])
+      inline def setIcssExports(value: Boolean): Self = StObject.set(x, "icssExports", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIcssExportsUndefined: Self = StObject.set(x, "icssExports", js.undefined)
+      inline def setIcssExportsUndefined: Self = StObject.set(x, "icssExports", js.undefined)
       
-      @scala.inline
-      def setResolve(value: Resolve): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
+      inline def setResolve(value: Resolve): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
+      inline def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
     }
   }
   
@@ -58,50 +52,36 @@ object mod extends Shortcut {
   }
   object Resolve {
     
-    @scala.inline
-    def apply(): Resolve = {
+    inline def apply(): Resolve = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Resolve]
     }
     
-    @scala.inline
-    implicit class ResolveMutableBuilder[Self <: Resolve] (val x: Self) extends AnyVal {
+    extension [Self <: Resolve](x: Self) {
       
-      @scala.inline
-      def setAlias(value: StringDictionary[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
+      inline def setAlias(value: StringDictionary[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
+      inline def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
       
-      @scala.inline
-      def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+      inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
+      inline def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
       
-      @scala.inline
-      def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
+      inline def setExtensionsVarargs(value: String*): Self = StObject.set(x, "extensions", js.Array(value :_*))
       
-      @scala.inline
-      def setMainFile(value: String): Self = StObject.set(x, "mainFile", value.asInstanceOf[js.Any])
+      inline def setMainFile(value: String): Self = StObject.set(x, "mainFile", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMainFileUndefined: Self = StObject.set(x, "mainFile", js.undefined)
+      inline def setMainFileUndefined: Self = StObject.set(x, "mainFile", js.undefined)
       
-      @scala.inline
-      def setModules(value: js.Array[String]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
+      inline def setModules(value: js.Array[String]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
+      inline def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
       
-      @scala.inline
-      def setModulesVarargs(value: String*): Self = StObject.set(x, "modules", js.Array(value :_*))
+      inline def setModulesVarargs(value: String*): Self = StObject.set(x, "modules", js.Array(value :_*))
       
-      @scala.inline
-      def setPreserveSymlinks(value: Boolean): Self = StObject.set(x, "preserveSymlinks", value.asInstanceOf[js.Any])
+      inline def setPreserveSymlinks(value: Boolean): Self = StObject.set(x, "preserveSymlinks", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPreserveSymlinksUndefined: Self = StObject.set(x, "preserveSymlinks", js.undefined)
+      inline def setPreserveSymlinksUndefined: Self = StObject.set(x, "preserveSymlinks", js.undefined)
     }
   }
   

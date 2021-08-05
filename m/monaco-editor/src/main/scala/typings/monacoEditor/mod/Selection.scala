@@ -59,8 +59,7 @@ object Selection {
   /**
     * Create with a direction.
     */
-  @scala.inline
-  def createWithDirection(
+  inline def createWithDirection(
     startLineNumber: Double,
     startColumn: Double,
     endLineNumber: Double,
@@ -71,32 +70,26 @@ object Selection {
   /**
     * Create a `Selection` from one or two positions
     */
-  @scala.inline
-  def fromPositions(start: IPosition): Selection = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPositions")(start.asInstanceOf[js.Any]).asInstanceOf[Selection]
-  @scala.inline
-  def fromPositions(start: IPosition, end: IPosition): Selection = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPositions")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Selection]
+  inline def fromPositions(start: IPosition): Selection = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPositions")(start.asInstanceOf[js.Any]).asInstanceOf[Selection]
+  inline def fromPositions(start: IPosition, end: IPosition): Selection = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPositions")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Selection]
   
   /**
     * Test if `obj` is an `ISelection`.
     */
-  @scala.inline
-  def isISelection(obj: js.Any): /* is monaco-editor.monaco-editor.ISelection */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isISelection")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is monaco-editor.monaco-editor.ISelection */ Boolean]
+  inline def isISelection(obj: js.Any): /* is monaco-editor.monaco-editor.ISelection */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isISelection")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is monaco-editor.monaco-editor.ISelection */ Boolean]
   
   /**
     * Create a `Selection` from an `ISelection`.
     */
-  @scala.inline
-  def liftSelection(sel: ISelection): Selection = ^.asInstanceOf[js.Dynamic].applyDynamic("liftSelection")(sel.asInstanceOf[js.Any]).asInstanceOf[Selection]
+  inline def liftSelection(sel: ISelection): Selection = ^.asInstanceOf[js.Dynamic].applyDynamic("liftSelection")(sel.asInstanceOf[js.Any]).asInstanceOf[Selection]
   
   /**
     * `a` equals `b`.
     */
-  @scala.inline
-  def selectionsArrEqual(a: js.Array[ISelection], b: js.Array[ISelection]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("selectionsArrEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def selectionsArrEqual(a: js.Array[ISelection], b: js.Array[ISelection]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("selectionsArrEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Test if the two selections are equal.
     */
-  @scala.inline
-  def selectionsEqual(a: ISelection, b: ISelection): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("selectionsEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  inline def selectionsEqual(a: ISelection, b: ISelection): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("selectionsEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

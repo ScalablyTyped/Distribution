@@ -36,31 +36,23 @@ trait SchemaManagedCluster extends StObject {
 }
 object SchemaManagedCluster {
   
-  @scala.inline
-  def apply(): SchemaManagedCluster = {
+  inline def apply(): SchemaManagedCluster = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaManagedCluster]
   }
   
-  @scala.inline
-  implicit class SchemaManagedClusterMutableBuilder[Self <: SchemaManagedCluster] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaManagedCluster](x: Self) {
     
-    @scala.inline
-    def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
+    inline def setClusterName(value: String): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
+    inline def setClusterNameUndefined: Self = StObject.set(x, "clusterName", js.undefined)
     
-    @scala.inline
-    def setConfig(value: SchemaClusterConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+    inline def setConfig(value: SchemaClusterConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
+    inline def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
-    @scala.inline
-    def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
+    inline def setLabels(value: StringDictionary[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
+    inline def setLabelsUndefined: Self = StObject.set(x, "labels", js.undefined)
   }
 }

@@ -40,8 +40,7 @@ object mod {
   }
   object DOMWindow {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       Atomics: Atomics,
       BigInt: BigIntConstructor,
       BigInt64Array: BigInt64ArrayConstructor,
@@ -56,35 +55,25 @@ object mod {
       __obj.asInstanceOf[DOMWindow]
     }
     
-    @scala.inline
-    implicit class DOMWindowMutableBuilder[Self <: DOMWindow] (val x: Self) extends AnyVal {
+    extension [Self <: DOMWindow](x: Self) {
       
-      @scala.inline
-      def setAtomics(value: Atomics): Self = StObject.set(x, "Atomics", value.asInstanceOf[js.Any])
+      inline def setAtomics(value: Atomics): Self = StObject.set(x, "Atomics", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBigInt(value: BigIntConstructor): Self = StObject.set(x, "BigInt", value.asInstanceOf[js.Any])
+      inline def setBigInt(value: BigIntConstructor): Self = StObject.set(x, "BigInt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBigInt64Array(value: BigInt64ArrayConstructor): Self = StObject.set(x, "BigInt64Array", value.asInstanceOf[js.Any])
+      inline def setBigInt64Array(value: BigInt64ArrayConstructor): Self = StObject.set(x, "BigInt64Array", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setBigUint64Array(value: BigUint64ArrayConstructor): Self = StObject.set(x, "BigUint64Array", value.asInstanceOf[js.Any])
+      inline def setBigUint64Array(value: BigUint64ArrayConstructor): Self = StObject.set(x, "BigUint64Array", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setExternal(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof External */ js.Any): Self = StObject.set(x, "External", value.asInstanceOf[js.Any])
+      inline def setExternal(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof External */ js.Any): Self = StObject.set(x, "External", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInputEvent(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof InputEvent */ js.Any): Self = StObject.set(x, "InputEvent", value.asInstanceOf[js.Any])
+      inline def setInputEvent(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof InputEvent */ js.Any): Self = StObject.set(x, "InputEvent", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setShadowRoot(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ShadowRoot */ js.Any): Self = StObject.set(x, "ShadowRoot", value.asInstanceOf[js.Any])
+      inline def setShadowRoot(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ShadowRoot */ js.Any): Self = StObject.set(x, "ShadowRoot", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSharedArrayBuffer(value: SharedArrayBufferConstructor): Self = StObject.set(x, "SharedArrayBuffer", value.asInstanceOf[js.Any])
+      inline def setSharedArrayBuffer(value: SharedArrayBufferConstructor): Self = StObject.set(x, "SharedArrayBuffer", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setWebAssembly(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof WebAssembly */ js.Any): Self = StObject.set(x, "WebAssembly", value.asInstanceOf[js.Any])
+      inline def setWebAssembly(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof WebAssembly */ js.Any): Self = StObject.set(x, "WebAssembly", value.asInstanceOf[js.Any])
     }
   }
 }

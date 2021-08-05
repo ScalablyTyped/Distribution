@@ -15,23 +15,18 @@ trait ExtendedAttributeRightHandSideIntegerList
 }
 object ExtendedAttributeRightHandSideIntegerList {
   
-  @scala.inline
-  def apply(value: js.Array[ExtendedAttributeRightHandSideInteger]): ExtendedAttributeRightHandSideIntegerList = {
+  inline def apply(value: js.Array[ExtendedAttributeRightHandSideInteger]): ExtendedAttributeRightHandSideIntegerList = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")("integer-list")
     __obj.asInstanceOf[ExtendedAttributeRightHandSideIntegerList]
   }
   
-  @scala.inline
-  implicit class ExtendedAttributeRightHandSideIntegerListMutableBuilder[Self <: ExtendedAttributeRightHandSideIntegerList] (val x: Self) extends AnyVal {
+  extension [Self <: ExtendedAttributeRightHandSideIntegerList](x: Self) {
     
-    @scala.inline
-    def setType(value: `integer-list`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: `integer-list`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValue(value: js.Array[ExtendedAttributeRightHandSideInteger]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    inline def setValue(value: js.Array[ExtendedAttributeRightHandSideInteger]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueVarargs(value: ExtendedAttributeRightHandSideInteger*): Self = StObject.set(x, "value", js.Array(value :_*))
+    inline def setValueVarargs(value: ExtendedAttributeRightHandSideInteger*): Self = StObject.set(x, "value", js.Array(value :_*))
   }
 }

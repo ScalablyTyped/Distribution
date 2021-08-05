@@ -16,8 +16,7 @@ object injectElementMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def default(
+  inline def default(
     el: NonNullable[ElementType],
     evalScripts: EvalScripts,
     renumerateIRIElements: Boolean,

@@ -31,35 +31,26 @@ object typingsMod {
   }
   object LinkProps {
     
-    @scala.inline
-    def apply(to: LocationDescriptor[LocationState]): LinkProps = {
+    inline def apply(to: LocationDescriptor[LocationState]): LinkProps = {
       val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
       __obj.asInstanceOf[LinkProps]
     }
     
-    @scala.inline
-    implicit class LinkPropsMutableBuilder[Self <: LinkProps] (val x: Self) extends AnyVal {
+    extension [Self <: LinkProps](x: Self) {
       
-      @scala.inline
-      def setInnerRef(value: Ref[HTMLAnchorElement]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      inline def setInnerRef(value: Ref[HTMLAnchorElement]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setInnerRefFunction1(value: /* instance */ HTMLAnchorElement | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      inline def setInnerRefFunction1(value: /* instance */ HTMLAnchorElement | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
-      @scala.inline
-      def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
+      inline def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
       
-      @scala.inline
-      def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
+      inline def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
       
-      @scala.inline
-      def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
+      inline def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
+      inline def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
       
-      @scala.inline
-      def setTo(value: LocationDescriptor[LocationState]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
+      inline def setTo(value: LocationDescriptor[LocationState]): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     }
   }
   
@@ -125,86 +116,60 @@ object typingsMod {
   }
   object MenuDataItem {
     
-    @scala.inline
-    def apply(): MenuDataItem = {
+    inline def apply(): MenuDataItem = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[MenuDataItem]
     }
     
-    @scala.inline
-    implicit class MenuDataItemMutableBuilder[Self <: MenuDataItem] (val x: Self) extends AnyVal {
+    extension [Self <: MenuDataItem](x: Self) {
       
-      @scala.inline
-      def setChildren(value: js.Array[MenuDataItem]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      inline def setChildren(value: js.Array[MenuDataItem]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
+      inline def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
       
-      @scala.inline
-      def setChildrenVarargs(value: MenuDataItem*): Self = StObject.set(x, "children", js.Array(value :_*))
+      inline def setChildrenVarargs(value: MenuDataItem*): Self = StObject.set(x, "children", js.Array(value :_*))
       
-      @scala.inline
-      def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
+      inline def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
-      @scala.inline
-      def setFlatMenu(value: Boolean): Self = StObject.set(x, "flatMenu", value.asInstanceOf[js.Any])
+      inline def setFlatMenu(value: Boolean): Self = StObject.set(x, "flatMenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setFlatMenuUndefined: Self = StObject.set(x, "flatMenu", js.undefined)
+      inline def setFlatMenuUndefined: Self = StObject.set(x, "flatMenu", js.undefined)
       
-      @scala.inline
-      def setHideChildrenInMenu(value: Boolean): Self = StObject.set(x, "hideChildrenInMenu", value.asInstanceOf[js.Any])
+      inline def setHideChildrenInMenu(value: Boolean): Self = StObject.set(x, "hideChildrenInMenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideChildrenInMenuUndefined: Self = StObject.set(x, "hideChildrenInMenu", js.undefined)
+      inline def setHideChildrenInMenuUndefined: Self = StObject.set(x, "hideChildrenInMenu", js.undefined)
       
-      @scala.inline
-      def setHideInMenu(value: Boolean): Self = StObject.set(x, "hideInMenu", value.asInstanceOf[js.Any])
+      inline def setHideInMenu(value: Boolean): Self = StObject.set(x, "hideInMenu", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setHideInMenuUndefined: Self = StObject.set(x, "hideInMenu", js.undefined)
+      inline def setHideInMenuUndefined: Self = StObject.set(x, "hideInMenu", js.undefined)
       
-      @scala.inline
-      def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      inline def setIcon(value: ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
+      inline def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
       
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
+      inline def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
-      @scala.inline
-      def setLocale(value: String | `false`): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
+      inline def setLocale(value: String | `false`): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
+      inline def setLocaleUndefined: Self = StObject.set(x, "locale", js.undefined)
       
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
+      inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
+      inline def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
-      @scala.inline
-      def setParentKeys(value: js.Array[String]): Self = StObject.set(x, "parentKeys", value.asInstanceOf[js.Any])
+      inline def setParentKeys(value: js.Array[String]): Self = StObject.set(x, "parentKeys", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setParentKeysUndefined: Self = StObject.set(x, "parentKeys", js.undefined)
+      inline def setParentKeysUndefined: Self = StObject.set(x, "parentKeys", js.undefined)
       
-      @scala.inline
-      def setParentKeysVarargs(value: String*): Self = StObject.set(x, "parentKeys", js.Array(value :_*))
+      inline def setParentKeysVarargs(value: String*): Self = StObject.set(x, "parentKeys", js.Array(value :_*))
       
-      @scala.inline
-      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      inline def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
     }
   }
   
@@ -218,29 +183,22 @@ object typingsMod {
   }
   object MessageDescriptor {
     
-    @scala.inline
-    def apply(id: js.Any): MessageDescriptor = {
+    inline def apply(id: js.Any): MessageDescriptor = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[MessageDescriptor]
     }
     
-    @scala.inline
-    implicit class MessageDescriptorMutableBuilder[Self <: MessageDescriptor] (val x: Self) extends AnyVal {
+    extension [Self <: MessageDescriptor](x: Self) {
       
-      @scala.inline
-      def setDefaultMessage(value: String): Self = StObject.set(x, "defaultMessage", value.asInstanceOf[js.Any])
+      inline def setDefaultMessage(value: String): Self = StObject.set(x, "defaultMessage", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDefaultMessageUndefined: Self = StObject.set(x, "defaultMessage", js.undefined)
+      inline def setDefaultMessageUndefined: Self = StObject.set(x, "defaultMessage", js.undefined)
       
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
+      inline def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
       
-      @scala.inline
-      def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+      inline def setId(value: js.Any): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
   }
   
@@ -252,23 +210,18 @@ object typingsMod {
   }
   object Route {
     
-    @scala.inline
-    def apply(): Route = {
+    inline def apply(): Route = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Route]
     }
     
-    @scala.inline
-    implicit class RouteMutableBuilder[Self <: Route] (val x: Self) extends AnyVal {
+    extension [Self <: Route](x: Self) {
       
-      @scala.inline
-      def setRoutes(value: js.Array[Route]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+      inline def setRoutes(value: js.Array[Route]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
+      inline def setRoutesUndefined: Self = StObject.set(x, "routes", js.undefined)
       
-      @scala.inline
-      def setRoutesVarargs(value: Route*): Self = StObject.set(x, "routes", js.Array(value :_*))
+      inline def setRoutesVarargs(value: Route*): Self = StObject.set(x, "routes", js.Array(value :_*))
     }
   }
   
@@ -289,8 +242,7 @@ object typingsMod {
   }
   object RouterTypes {
     
-    @scala.inline
-    def apply[P](
+    inline def apply[P](
       history: History[LocationState],
       location: Location[LocationState] | Pathname,
       `match`: `match`[js.Object]
@@ -300,35 +252,25 @@ object typingsMod {
       __obj.asInstanceOf[RouterTypes[P]]
     }
     
-    @scala.inline
-    implicit class RouterTypesMutableBuilder[Self <: RouterTypes[?], P] (val x: Self & RouterTypes[P]) extends AnyVal {
+    extension [Self <: RouterTypes[?], P](x: Self & RouterTypes[P]) {
       
-      @scala.inline
-      def setComputedMatch(value: `match`[P]): Self = StObject.set(x, "computedMatch", value.asInstanceOf[js.Any])
+      inline def setComputedMatch(value: `match`[P]): Self = StObject.set(x, "computedMatch", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setComputedMatchUndefined: Self = StObject.set(x, "computedMatch", js.undefined)
+      inline def setComputedMatchUndefined: Self = StObject.set(x, "computedMatch", js.undefined)
       
-      @scala.inline
-      def setHistory(value: History[LocationState]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      inline def setHistory(value: History[LocationState]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLocation(value: Location[LocationState] | Pathname): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      inline def setLocation(value: Location[LocationState] | Pathname): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setMatch(value: `match`[js.Object]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
+      inline def setMatch(value: `match`[js.Object]): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRoute(value: Route): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+      inline def setRoute(value: Route): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setRouteUndefined: Self = StObject.set(x, "route", js.undefined)
+      inline def setRouteUndefined: Self = StObject.set(x, "route", js.undefined)
       
-      @scala.inline
-      def setStaticContext(value: StaticContext): Self = StObject.set(x, "staticContext", value.asInstanceOf[js.Any])
+      inline def setStaticContext(value: StaticContext): Self = StObject.set(x, "staticContext", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStaticContextUndefined: Self = StObject.set(x, "staticContext", js.undefined)
+      inline def setStaticContextUndefined: Self = StObject.set(x, "staticContext", js.undefined)
     }
   }
   

@@ -15,19 +15,16 @@ object safeConsoleMod {
     @JSImport("@uirouter/core/lib/common/safeConsole", "safeConsole.error")
     @js.native
     def error: js.Any = js.native
-    @scala.inline
-    def error_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("error")(x.asInstanceOf[js.Any])
+    inline def error_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("error")(x.asInstanceOf[js.Any])
     
     @JSImport("@uirouter/core/lib/common/safeConsole", "safeConsole.log")
     @js.native
     def log: js.Any = js.native
-    @scala.inline
-    def log_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("log")(x.asInstanceOf[js.Any])
+    inline def log_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("log")(x.asInstanceOf[js.Any])
     
     @JSImport("@uirouter/core/lib/common/safeConsole", "safeConsole.table")
     @js.native
     def table: js.Any = js.native
-    @scala.inline
-    def table_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("table")(x.asInstanceOf[js.Any])
+    inline def table_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("table")(x.asInstanceOf[js.Any])
   }
 }

@@ -22,7 +22,7 @@ class RouterLink protected ()
     el: ElementRef[js.Any]
   ) = this()
   
-  var commands: js.Any = js.native
+  /* private */ var commands: js.Any = js.native
   
   /**
     * Passed to {@link Router#createUrlTree Router#createUrlTree} as part of the
@@ -45,7 +45,7 @@ class RouterLink protected ()
   /** @nodoc */
   def onClick(): Boolean = js.native
   
-  var preserve: js.Any = js.native
+  /* private */ var preserve: js.Any = js.native
   
   /**
     * Passed to {@link Router#createUrlTree Router#createUrlTree} as part of the
@@ -79,9 +79,9 @@ class RouterLink protected ()
     */
   var replaceUrl: Boolean = js.native
   
-  var route: js.Any = js.native
+  /* private */ var route: js.Any = js.native
   
-  var router: js.Any = js.native
+  /* private */ var router: js.Any = js.native
   
   /**
     * Commands to pass to {@link Router#createUrlTree Router#createUrlTree}.

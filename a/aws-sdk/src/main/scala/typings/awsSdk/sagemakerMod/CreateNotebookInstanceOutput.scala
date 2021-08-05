@@ -13,19 +13,15 @@ trait CreateNotebookInstanceOutput extends StObject {
 }
 object CreateNotebookInstanceOutput {
   
-  @scala.inline
-  def apply(): CreateNotebookInstanceOutput = {
+  inline def apply(): CreateNotebookInstanceOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateNotebookInstanceOutput]
   }
   
-  @scala.inline
-  implicit class CreateNotebookInstanceOutputMutableBuilder[Self <: CreateNotebookInstanceOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateNotebookInstanceOutput](x: Self) {
     
-    @scala.inline
-    def setNotebookInstanceArn(value: NotebookInstanceArn): Self = StObject.set(x, "NotebookInstanceArn", value.asInstanceOf[js.Any])
+    inline def setNotebookInstanceArn(value: NotebookInstanceArn): Self = StObject.set(x, "NotebookInstanceArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNotebookInstanceArnUndefined: Self = StObject.set(x, "NotebookInstanceArn", js.undefined)
+    inline def setNotebookInstanceArnUndefined: Self = StObject.set(x, "NotebookInstanceArn", js.undefined)
   }
 }

@@ -53,8 +53,7 @@ object Vhost {
   @js.native
   val ^ : js.Any = js.native
   
-  @scala.inline
-  def create(
+  inline def create(
     config: VhostConfig,
     next: js.Function2[/* err */ js.UndefOr[Error], /* vhost */ js.UndefOr[this.type], Unit]
   ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]

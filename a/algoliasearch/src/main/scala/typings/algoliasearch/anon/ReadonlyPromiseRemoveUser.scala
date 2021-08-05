@@ -16,8 +16,7 @@ trait ReadonlyPromiseRemoveUser extends StObject {
 }
 object ReadonlyPromiseRemoveUser {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     `catch`: () => js.Promise[RemoveUserIDResponse | js.Any],
     `finally`: () => js.Promise[RemoveUserIDResponse],
     `then`: () => js.Promise[js.Any | js.Any]
@@ -29,16 +28,12 @@ object ReadonlyPromiseRemoveUser {
     __obj.asInstanceOf[ReadonlyPromiseRemoveUser]
   }
   
-  @scala.inline
-  implicit class ReadonlyPromiseRemoveUserMutableBuilder[Self <: ReadonlyPromiseRemoveUser] (val x: Self) extends AnyVal {
+  extension [Self <: ReadonlyPromiseRemoveUser](x: Self) {
     
-    @scala.inline
-    def setCatch(value: () => js.Promise[RemoveUserIDResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
+    inline def setCatch(value: () => js.Promise[RemoveUserIDResponse | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setFinally(value: () => js.Promise[RemoveUserIDResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
+    inline def setFinally(value: () => js.Promise[RemoveUserIDResponse]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
+    inline def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
   }
 }

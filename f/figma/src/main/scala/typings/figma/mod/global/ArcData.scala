@@ -14,22 +14,17 @@ trait ArcData extends StObject {
 }
 object ArcData {
   
-  @scala.inline
-  def apply(endingAngle: Double, innerRadius: Double, startingAngle: Double): ArcData = {
+  inline def apply(endingAngle: Double, innerRadius: Double, startingAngle: Double): ArcData = {
     val __obj = js.Dynamic.literal(endingAngle = endingAngle.asInstanceOf[js.Any], innerRadius = innerRadius.asInstanceOf[js.Any], startingAngle = startingAngle.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArcData]
   }
   
-  @scala.inline
-  implicit class ArcDataMutableBuilder[Self <: ArcData] (val x: Self) extends AnyVal {
+  extension [Self <: ArcData](x: Self) {
     
-    @scala.inline
-    def setEndingAngle(value: Double): Self = StObject.set(x, "endingAngle", value.asInstanceOf[js.Any])
+    inline def setEndingAngle(value: Double): Self = StObject.set(x, "endingAngle", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setInnerRadius(value: Double): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
+    inline def setInnerRadius(value: Double): Self = StObject.set(x, "innerRadius", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStartingAngle(value: Double): Self = StObject.set(x, "startingAngle", value.asInstanceOf[js.Any])
+    inline def setStartingAngle(value: Double): Self = StObject.set(x, "startingAngle", value.asInstanceOf[js.Any])
   }
 }

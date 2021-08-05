@@ -14,26 +14,20 @@ object anon {
   }
   object Modules {
     
-    @scala.inline
-    def apply(): Modules = {
+    inline def apply(): Modules = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Modules]
     }
     
-    @scala.inline
-    implicit class ModulesMutableBuilder[Self <: Modules] (val x: Self) extends AnyVal {
+    extension [Self <: Modules](x: Self) {
       
-      @scala.inline
-      def setModules(value: Boolean): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
+      inline def setModules(value: Boolean): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
+      inline def setModulesUndefined: Self = StObject.set(x, "modules", js.undefined)
       
-      @scala.inline
-      def setTargets(value: String): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
+      inline def setTargets(value: String): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
+      inline def setTargetsUndefined: Self = StObject.set(x, "targets", js.undefined)
     }
   }
 }

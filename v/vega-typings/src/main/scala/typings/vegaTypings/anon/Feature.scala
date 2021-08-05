@@ -10,16 +10,13 @@ trait Feature extends StObject {
 }
 object Feature {
   
-  @scala.inline
-  def apply(feature: String): Feature = {
+  inline def apply(feature: String): Feature = {
     val __obj = js.Dynamic.literal(feature = feature.asInstanceOf[js.Any])
     __obj.asInstanceOf[Feature]
   }
   
-  @scala.inline
-  implicit class FeatureMutableBuilder[Self <: Feature] (val x: Self) extends AnyVal {
+  extension [Self <: Feature](x: Self) {
     
-    @scala.inline
-    def setFeature(value: String): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
+    inline def setFeature(value: String): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
   }
 }

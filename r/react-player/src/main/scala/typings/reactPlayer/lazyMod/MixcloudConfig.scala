@@ -10,19 +10,15 @@ trait MixcloudConfig extends StObject {
 }
 object MixcloudConfig {
   
-  @scala.inline
-  def apply(): MixcloudConfig = {
+  inline def apply(): MixcloudConfig = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[MixcloudConfig]
   }
   
-  @scala.inline
-  implicit class MixcloudConfigMutableBuilder[Self <: MixcloudConfig] (val x: Self) extends AnyVal {
+  extension [Self <: MixcloudConfig](x: Self) {
     
-    @scala.inline
-    def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    inline def setOptions(value: js.Object): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+    inline def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
   }
 }

@@ -142,8 +142,7 @@ object Application {
     * - masterKe
     */
   /* static member */
-  @scala.inline
-  def authenticate(appId: js.Any, key: String, callback: js.Function2[/* err */ Error, /* matched */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(appId.asInstanceOf[js.Any], key.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def authenticate(appId: js.Any, key: String, callback: js.Function2[/* err */ Error, /* matched */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(appId.asInstanceOf[js.Any], key.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Register a new application
@@ -153,8 +152,7 @@ object Application {
     * @param {() => void} callback  Callback function
     */
   /* static member */
-  @scala.inline
-  def register(owner: String, name: String, options: js.Any, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(owner.asInstanceOf[js.Any], name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  inline def register(owner: String, name: String, options: js.Any, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(owner.asInstanceOf[js.Any], name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Reset keys for the application instance
@@ -162,6 +160,5 @@ object Application {
     * @param {Error} err
     */
   /* static member */
-  @scala.inline
-  def resetKeys(callback: js.Function1[/* err */ Error, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetKeys")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  inline def resetKeys(callback: js.Function1[/* err */ Error, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetKeys")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

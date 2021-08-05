@@ -68,79 +68,55 @@ trait SchemaTextStyleSuggestionState extends StObject {
 }
 object SchemaTextStyleSuggestionState {
   
-  @scala.inline
-  def apply(): SchemaTextStyleSuggestionState = {
+  inline def apply(): SchemaTextStyleSuggestionState = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaTextStyleSuggestionState]
   }
   
-  @scala.inline
-  implicit class SchemaTextStyleSuggestionStateMutableBuilder[Self <: SchemaTextStyleSuggestionState] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaTextStyleSuggestionState](x: Self) {
     
-    @scala.inline
-    def setBackgroundColorSuggested(value: Boolean): Self = StObject.set(x, "backgroundColorSuggested", value.asInstanceOf[js.Any])
+    inline def setBackgroundColorSuggested(value: Boolean): Self = StObject.set(x, "backgroundColorSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBackgroundColorSuggestedUndefined: Self = StObject.set(x, "backgroundColorSuggested", js.undefined)
+    inline def setBackgroundColorSuggestedUndefined: Self = StObject.set(x, "backgroundColorSuggested", js.undefined)
     
-    @scala.inline
-    def setBaselineOffsetSuggested(value: Boolean): Self = StObject.set(x, "baselineOffsetSuggested", value.asInstanceOf[js.Any])
+    inline def setBaselineOffsetSuggested(value: Boolean): Self = StObject.set(x, "baselineOffsetSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBaselineOffsetSuggestedUndefined: Self = StObject.set(x, "baselineOffsetSuggested", js.undefined)
+    inline def setBaselineOffsetSuggestedUndefined: Self = StObject.set(x, "baselineOffsetSuggested", js.undefined)
     
-    @scala.inline
-    def setBoldSuggested(value: Boolean): Self = StObject.set(x, "boldSuggested", value.asInstanceOf[js.Any])
+    inline def setBoldSuggested(value: Boolean): Self = StObject.set(x, "boldSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBoldSuggestedUndefined: Self = StObject.set(x, "boldSuggested", js.undefined)
+    inline def setBoldSuggestedUndefined: Self = StObject.set(x, "boldSuggested", js.undefined)
     
-    @scala.inline
-    def setFontSizeSuggested(value: Boolean): Self = StObject.set(x, "fontSizeSuggested", value.asInstanceOf[js.Any])
+    inline def setFontSizeSuggested(value: Boolean): Self = StObject.set(x, "fontSizeSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFontSizeSuggestedUndefined: Self = StObject.set(x, "fontSizeSuggested", js.undefined)
+    inline def setFontSizeSuggestedUndefined: Self = StObject.set(x, "fontSizeSuggested", js.undefined)
     
-    @scala.inline
-    def setForegroundColorSuggested(value: Boolean): Self = StObject.set(x, "foregroundColorSuggested", value.asInstanceOf[js.Any])
+    inline def setForegroundColorSuggested(value: Boolean): Self = StObject.set(x, "foregroundColorSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setForegroundColorSuggestedUndefined: Self = StObject.set(x, "foregroundColorSuggested", js.undefined)
+    inline def setForegroundColorSuggestedUndefined: Self = StObject.set(x, "foregroundColorSuggested", js.undefined)
     
-    @scala.inline
-    def setItalicSuggested(value: Boolean): Self = StObject.set(x, "italicSuggested", value.asInstanceOf[js.Any])
+    inline def setItalicSuggested(value: Boolean): Self = StObject.set(x, "italicSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setItalicSuggestedUndefined: Self = StObject.set(x, "italicSuggested", js.undefined)
+    inline def setItalicSuggestedUndefined: Self = StObject.set(x, "italicSuggested", js.undefined)
     
-    @scala.inline
-    def setLinkSuggested(value: Boolean): Self = StObject.set(x, "linkSuggested", value.asInstanceOf[js.Any])
+    inline def setLinkSuggested(value: Boolean): Self = StObject.set(x, "linkSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLinkSuggestedUndefined: Self = StObject.set(x, "linkSuggested", js.undefined)
+    inline def setLinkSuggestedUndefined: Self = StObject.set(x, "linkSuggested", js.undefined)
     
-    @scala.inline
-    def setSmallCapsSuggested(value: Boolean): Self = StObject.set(x, "smallCapsSuggested", value.asInstanceOf[js.Any])
+    inline def setSmallCapsSuggested(value: Boolean): Self = StObject.set(x, "smallCapsSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSmallCapsSuggestedUndefined: Self = StObject.set(x, "smallCapsSuggested", js.undefined)
+    inline def setSmallCapsSuggestedUndefined: Self = StObject.set(x, "smallCapsSuggested", js.undefined)
     
-    @scala.inline
-    def setStrikethroughSuggested(value: Boolean): Self = StObject.set(x, "strikethroughSuggested", value.asInstanceOf[js.Any])
+    inline def setStrikethroughSuggested(value: Boolean): Self = StObject.set(x, "strikethroughSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStrikethroughSuggestedUndefined: Self = StObject.set(x, "strikethroughSuggested", js.undefined)
+    inline def setStrikethroughSuggestedUndefined: Self = StObject.set(x, "strikethroughSuggested", js.undefined)
     
-    @scala.inline
-    def setUnderlineSuggested(value: Boolean): Self = StObject.set(x, "underlineSuggested", value.asInstanceOf[js.Any])
+    inline def setUnderlineSuggested(value: Boolean): Self = StObject.set(x, "underlineSuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUnderlineSuggestedUndefined: Self = StObject.set(x, "underlineSuggested", js.undefined)
+    inline def setUnderlineSuggestedUndefined: Self = StObject.set(x, "underlineSuggested", js.undefined)
     
-    @scala.inline
-    def setWeightedFontFamilySuggested(value: Boolean): Self = StObject.set(x, "weightedFontFamilySuggested", value.asInstanceOf[js.Any])
+    inline def setWeightedFontFamilySuggested(value: Boolean): Self = StObject.set(x, "weightedFontFamilySuggested", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setWeightedFontFamilySuggestedUndefined: Self = StObject.set(x, "weightedFontFamilySuggested", js.undefined)
+    inline def setWeightedFontFamilySuggestedUndefined: Self = StObject.set(x, "weightedFontFamilySuggested", js.undefined)
   }
 }

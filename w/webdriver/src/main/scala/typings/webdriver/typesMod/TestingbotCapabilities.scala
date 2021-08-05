@@ -10,19 +10,15 @@ trait TestingbotCapabilities extends StObject {
 }
 object TestingbotCapabilities {
   
-  @scala.inline
-  def apply(): TestingbotCapabilities = {
+  inline def apply(): TestingbotCapabilities = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[TestingbotCapabilities]
   }
   
-  @scala.inline
-  implicit class TestingbotCapabilitiesMutableBuilder[Self <: TestingbotCapabilities] (val x: Self) extends AnyVal {
+  extension [Self <: TestingbotCapabilities](x: Self) {
     
-    @scala.inline
-    def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
+    inline def setPublic(value: Boolean): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
+    inline def setPublicUndefined: Self = StObject.set(x, "public", js.undefined)
   }
 }

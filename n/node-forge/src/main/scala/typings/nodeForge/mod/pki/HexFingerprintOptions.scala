@@ -16,16 +16,13 @@ trait HexFingerprintOptions
 }
 object HexFingerprintOptions {
   
-  @scala.inline
-  def apply(): HexFingerprintOptions = {
+  inline def apply(): HexFingerprintOptions = {
     val __obj = js.Dynamic.literal(encoding = "hex")
     __obj.asInstanceOf[HexFingerprintOptions]
   }
   
-  @scala.inline
-  implicit class HexFingerprintOptionsMutableBuilder[Self <: HexFingerprintOptions] (val x: Self) extends AnyVal {
+  extension [Self <: HexFingerprintOptions](x: Self) {
     
-    @scala.inline
-    def setEncoding(value: hex): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    inline def setEncoding(value: hex): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
   }
 }

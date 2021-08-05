@@ -13,22 +13,17 @@ trait SchemaGetPublisherProfilesByAccountIdResponse extends StObject {
 }
 object SchemaGetPublisherProfilesByAccountIdResponse {
   
-  @scala.inline
-  def apply(): SchemaGetPublisherProfilesByAccountIdResponse = {
+  inline def apply(): SchemaGetPublisherProfilesByAccountIdResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaGetPublisherProfilesByAccountIdResponse]
   }
   
-  @scala.inline
-  implicit class SchemaGetPublisherProfilesByAccountIdResponseMutableBuilder[Self <: SchemaGetPublisherProfilesByAccountIdResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaGetPublisherProfilesByAccountIdResponse](x: Self) {
     
-    @scala.inline
-    def setProfiles(value: js.Array[SchemaPublisherProfileApiProto]): Self = StObject.set(x, "profiles", value.asInstanceOf[js.Any])
+    inline def setProfiles(value: js.Array[SchemaPublisherProfileApiProto]): Self = StObject.set(x, "profiles", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setProfilesUndefined: Self = StObject.set(x, "profiles", js.undefined)
+    inline def setProfilesUndefined: Self = StObject.set(x, "profiles", js.undefined)
     
-    @scala.inline
-    def setProfilesVarargs(value: SchemaPublisherProfileApiProto*): Self = StObject.set(x, "profiles", js.Array(value :_*))
+    inline def setProfilesVarargs(value: SchemaPublisherProfileApiProto*): Self = StObject.set(x, "profiles", js.Array(value :_*))
   }
 }

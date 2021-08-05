@@ -27,30 +27,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait XlLocationInTable extends StObject
 object XlLocationInTable {
   
-  @scala.inline
-  def xlColumnHeader: `-4110` = -4110.asInstanceOf[`-4110`]
+  inline def xlColumnHeader: `-4110` = -4110.asInstanceOf[`-4110`]
   
-  @scala.inline
-  def xlColumnItem: `5` = 5.asInstanceOf[`5`]
+  inline def xlColumnItem: `5` = 5.asInstanceOf[`5`]
   
-  @scala.inline
-  def xlDataHeader: `3` = 3.asInstanceOf[`3`]
+  inline def xlDataHeader: `3` = 3.asInstanceOf[`3`]
   
-  @scala.inline
-  def xlDataItem: `7` = 7.asInstanceOf[`7`]
+  inline def xlDataItem: `7` = 7.asInstanceOf[`7`]
   
-  @scala.inline
-  def xlPageHeader: `2` = 2.asInstanceOf[`2`]
+  inline def xlPageHeader: `2` = 2.asInstanceOf[`2`]
   
-  @scala.inline
-  def xlPageItem: `6` = 6.asInstanceOf[`6`]
+  inline def xlPageItem: `6` = 6.asInstanceOf[`6`]
   
-  @scala.inline
-  def xlRowHeader: `-4153` = -4153.asInstanceOf[`-4153`]
+  inline def xlRowHeader: `-4153` = -4153.asInstanceOf[`-4153`]
   
-  @scala.inline
-  def xlRowItem: `4` = 4.asInstanceOf[`4`]
+  inline def xlRowItem: `4` = 4.asInstanceOf[`4`]
   
-  @scala.inline
-  def xlTableBody: `8` = 8.asInstanceOf[`8`]
+  inline def xlTableBody: `8` = 8.asInstanceOf[`8`]
 }

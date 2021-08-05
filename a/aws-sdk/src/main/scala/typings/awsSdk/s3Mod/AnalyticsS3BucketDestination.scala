@@ -28,31 +28,23 @@ trait AnalyticsS3BucketDestination extends StObject {
 }
 object AnalyticsS3BucketDestination {
   
-  @scala.inline
-  def apply(Bucket: BucketName, Format: AnalyticsS3ExportFileFormat): AnalyticsS3BucketDestination = {
+  inline def apply(Bucket: BucketName, Format: AnalyticsS3ExportFileFormat): AnalyticsS3BucketDestination = {
     val __obj = js.Dynamic.literal(Bucket = Bucket.asInstanceOf[js.Any], Format = Format.asInstanceOf[js.Any])
     __obj.asInstanceOf[AnalyticsS3BucketDestination]
   }
   
-  @scala.inline
-  implicit class AnalyticsS3BucketDestinationMutableBuilder[Self <: AnalyticsS3BucketDestination] (val x: Self) extends AnyVal {
+  extension [Self <: AnalyticsS3BucketDestination](x: Self) {
     
-    @scala.inline
-    def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
+    inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketAccountId(value: AccountId): Self = StObject.set(x, "BucketAccountId", value.asInstanceOf[js.Any])
+    inline def setBucketAccountId(value: AccountId): Self = StObject.set(x, "BucketAccountId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBucketAccountIdUndefined: Self = StObject.set(x, "BucketAccountId", js.undefined)
+    inline def setBucketAccountIdUndefined: Self = StObject.set(x, "BucketAccountId", js.undefined)
     
-    @scala.inline
-    def setFormat(value: AnalyticsS3ExportFileFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
+    inline def setFormat(value: AnalyticsS3ExportFileFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefix(value: Prefix): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
+    inline def setPrefix(value: Prefix): Self = StObject.set(x, "Prefix", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
+    inline def setPrefixUndefined: Self = StObject.set(x, "Prefix", js.undefined)
   }
 }

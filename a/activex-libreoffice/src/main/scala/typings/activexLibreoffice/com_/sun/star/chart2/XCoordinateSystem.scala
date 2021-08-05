@@ -47,8 +47,7 @@ trait XCoordinateSystem
 }
 object XCoordinateSystem {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     CoordinateSystemType: String,
     Dimension: Double,
     ViewServiceName: String,
@@ -66,34 +65,24 @@ object XCoordinateSystem {
     __obj.asInstanceOf[XCoordinateSystem]
   }
   
-  @scala.inline
-  implicit class XCoordinateSystemMutableBuilder[Self <: XCoordinateSystem] (val x: Self) extends AnyVal {
+  extension [Self <: XCoordinateSystem](x: Self) {
     
-    @scala.inline
-    def setCoordinateSystemType(value: String): Self = StObject.set(x, "CoordinateSystemType", value.asInstanceOf[js.Any])
+    inline def setCoordinateSystemType(value: String): Self = StObject.set(x, "CoordinateSystemType", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDimension(value: Double): Self = StObject.set(x, "Dimension", value.asInstanceOf[js.Any])
+    inline def setDimension(value: Double): Self = StObject.set(x, "Dimension", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setGetAxisByDimension(value: (Double, Double) => XAxis): Self = StObject.set(x, "getAxisByDimension", js.Any.fromFunction2(value))
+    inline def setGetAxisByDimension(value: (Double, Double) => XAxis): Self = StObject.set(x, "getAxisByDimension", js.Any.fromFunction2(value))
     
-    @scala.inline
-    def setGetCoordinateSystemType(value: () => String): Self = StObject.set(x, "getCoordinateSystemType", js.Any.fromFunction0(value))
+    inline def setGetCoordinateSystemType(value: () => String): Self = StObject.set(x, "getCoordinateSystemType", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetDimension(value: () => Double): Self = StObject.set(x, "getDimension", js.Any.fromFunction0(value))
+    inline def setGetDimension(value: () => Double): Self = StObject.set(x, "getDimension", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setGetMaximumAxisIndexByDimension(value: Double => Double): Self = StObject.set(x, "getMaximumAxisIndexByDimension", js.Any.fromFunction1(value))
+    inline def setGetMaximumAxisIndexByDimension(value: Double => Double): Self = StObject.set(x, "getMaximumAxisIndexByDimension", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setGetViewServiceName(value: () => String): Self = StObject.set(x, "getViewServiceName", js.Any.fromFunction0(value))
+    inline def setGetViewServiceName(value: () => String): Self = StObject.set(x, "getViewServiceName", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setSetAxisByDimension(value: (Double, XAxis, Double) => Unit): Self = StObject.set(x, "setAxisByDimension", js.Any.fromFunction3(value))
+    inline def setSetAxisByDimension(value: (Double, XAxis, Double) => Unit): Self = StObject.set(x, "setAxisByDimension", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setViewServiceName(value: String): Self = StObject.set(x, "ViewServiceName", value.asInstanceOf[js.Any])
+    inline def setViewServiceName(value: String): Self = StObject.set(x, "ViewServiceName", value.asInstanceOf[js.Any])
   }
 }

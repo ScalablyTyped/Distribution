@@ -18,25 +18,19 @@ trait SigningConfigurationOverrides extends StObject {
 }
 object SigningConfigurationOverrides {
   
-  @scala.inline
-  def apply(): SigningConfigurationOverrides = {
+  inline def apply(): SigningConfigurationOverrides = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SigningConfigurationOverrides]
   }
   
-  @scala.inline
-  implicit class SigningConfigurationOverridesMutableBuilder[Self <: SigningConfigurationOverrides] (val x: Self) extends AnyVal {
+  extension [Self <: SigningConfigurationOverrides](x: Self) {
     
-    @scala.inline
-    def setEncryptionAlgorithm(value: EncryptionAlgorithm): Self = StObject.set(x, "encryptionAlgorithm", value.asInstanceOf[js.Any])
+    inline def setEncryptionAlgorithm(value: EncryptionAlgorithm): Self = StObject.set(x, "encryptionAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEncryptionAlgorithmUndefined: Self = StObject.set(x, "encryptionAlgorithm", js.undefined)
+    inline def setEncryptionAlgorithmUndefined: Self = StObject.set(x, "encryptionAlgorithm", js.undefined)
     
-    @scala.inline
-    def setHashAlgorithm(value: HashAlgorithm): Self = StObject.set(x, "hashAlgorithm", value.asInstanceOf[js.Any])
+    inline def setHashAlgorithm(value: HashAlgorithm): Self = StObject.set(x, "hashAlgorithm", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setHashAlgorithmUndefined: Self = StObject.set(x, "hashAlgorithm", js.undefined)
+    inline def setHashAlgorithmUndefined: Self = StObject.set(x, "hashAlgorithm", js.undefined)
   }
 }

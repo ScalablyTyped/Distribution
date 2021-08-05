@@ -19,25 +19,19 @@ trait ListIndexesOptions extends StObject {
 }
 object ListIndexesOptions {
   
-  @scala.inline
-  def apply(): ListIndexesOptions = {
+  inline def apply(): ListIndexesOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListIndexesOptions]
   }
   
-  @scala.inline
-  implicit class ListIndexesOptionsMutableBuilder[Self <: ListIndexesOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ListIndexesOptions](x: Self) {
     
-    @scala.inline
-    def setBatchSize(value: scala.Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
+    inline def setBatchSize(value: scala.Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
+    inline def setBatchSizeUndefined: Self = StObject.set(x, "batchSize", js.undefined)
     
-    @scala.inline
-    def setReadPreference(value: ReadPreference | String): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
+    inline def setReadPreference(value: ReadPreference | String): Self = StObject.set(x, "readPreference", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
+    inline def setReadPreferenceUndefined: Self = StObject.set(x, "readPreference", js.undefined)
   }
 }

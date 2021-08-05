@@ -18,25 +18,19 @@ trait DescribeLunaClientRequest extends StObject {
 }
 object DescribeLunaClientRequest {
   
-  @scala.inline
-  def apply(): DescribeLunaClientRequest = {
+  inline def apply(): DescribeLunaClientRequest = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[DescribeLunaClientRequest]
   }
   
-  @scala.inline
-  implicit class DescribeLunaClientRequestMutableBuilder[Self <: DescribeLunaClientRequest] (val x: Self) extends AnyVal {
+  extension [Self <: DescribeLunaClientRequest](x: Self) {
     
-    @scala.inline
-    def setCertificateFingerprint(value: CertificateFingerprint): Self = StObject.set(x, "CertificateFingerprint", value.asInstanceOf[js.Any])
+    inline def setCertificateFingerprint(value: CertificateFingerprint): Self = StObject.set(x, "CertificateFingerprint", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCertificateFingerprintUndefined: Self = StObject.set(x, "CertificateFingerprint", js.undefined)
+    inline def setCertificateFingerprintUndefined: Self = StObject.set(x, "CertificateFingerprint", js.undefined)
     
-    @scala.inline
-    def setClientArn(value: ClientArn): Self = StObject.set(x, "ClientArn", value.asInstanceOf[js.Any])
+    inline def setClientArn(value: ClientArn): Self = StObject.set(x, "ClientArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setClientArnUndefined: Self = StObject.set(x, "ClientArn", js.undefined)
+    inline def setClientArnUndefined: Self = StObject.set(x, "ClientArn", js.undefined)
   }
 }

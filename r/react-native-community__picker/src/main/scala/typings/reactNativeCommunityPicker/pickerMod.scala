@@ -34,8 +34,7 @@ object pickerMod {
     @JSImport("@react-native-community/picker/typings/Picker", "Picker.Item")
     @js.native
     def Item: ComponentType[PickerItemProps] = js.native
-    @scala.inline
-    def Item_=(x: ComponentType[PickerItemProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
+    inline def Item_=(x: ComponentType[PickerItemProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Item")(x.asInstanceOf[js.Any])
     
     /**
       * On Android, display the options in a dialog.
@@ -44,8 +43,7 @@ object pickerMod {
     @JSImport("@react-native-community/picker/typings/Picker", "Picker.MODE_DIALOG")
     @js.native
     def MODE_DIALOG: String = js.native
-    @scala.inline
-    def MODE_DIALOG_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODE_DIALOG")(x.asInstanceOf[js.Any])
+    inline def MODE_DIALOG_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODE_DIALOG")(x.asInstanceOf[js.Any])
     
     /**
       * On Android, display the options in a dropdown (this is the default).
@@ -54,8 +52,7 @@ object pickerMod {
     @JSImport("@react-native-community/picker/typings/Picker", "Picker.MODE_DROPDOWN")
     @js.native
     def MODE_DROPDOWN: String = js.native
-    @scala.inline
-    def MODE_DROPDOWN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODE_DROPDOWN")(x.asInstanceOf[js.Any])
+    inline def MODE_DROPDOWN_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MODE_DROPDOWN")(x.asInstanceOf[js.Any])
   }
   
   type ItemValue = Double | String
@@ -72,35 +69,26 @@ object pickerMod {
   }
   object PickerItemProps {
     
-    @scala.inline
-    def apply(value: ItemValue): PickerItemProps = {
+    inline def apply(value: ItemValue): PickerItemProps = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickerItemProps]
     }
     
-    @scala.inline
-    implicit class PickerItemPropsMutableBuilder[Self <: PickerItemProps] (val x: Self) extends AnyVal {
+    extension [Self <: PickerItemProps](x: Self) {
       
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+      inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
+      inline def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
-      @scala.inline
-      def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
+      inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
+      inline def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
       
-      @scala.inline
-      def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
+      inline def setTestID(value: String): Self = StObject.set(x, "testID", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
+      inline def setTestIDUndefined: Self = StObject.set(x, "testID", js.undefined)
       
-      @scala.inline
-      def setValue(value: ItemValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      inline def setValue(value: ItemValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
   }
   
@@ -154,62 +142,44 @@ object pickerMod {
   }
   object PickerProps {
     
-    @scala.inline
-    def apply(): PickerProps = {
+    inline def apply(): PickerProps = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[PickerProps]
     }
     
-    @scala.inline
-    implicit class PickerPropsMutableBuilder[Self <: PickerProps] (val x: Self) extends AnyVal {
+    extension [Self <: PickerProps](x: Self) {
       
-      @scala.inline
-      def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
+      inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
+      inline def setEnabledUndefined: Self = StObject.set(x, "enabled", js.undefined)
       
-      @scala.inline
-      def setItemStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
+      inline def setItemStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setItemStyleNull: Self = StObject.set(x, "itemStyle", null)
+      inline def setItemStyleNull: Self = StObject.set(x, "itemStyle", null)
       
-      @scala.inline
-      def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
+      inline def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
       
-      @scala.inline
-      def setMode(value: dialog | dropdown): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      inline def setMode(value: dialog | dropdown): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
+      inline def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
-      @scala.inline
-      def setOnValueChange(value: (/* itemValue */ ItemValue, /* itemIndex */ Double) => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction2(value))
+      inline def setOnValueChange(value: (/* itemValue */ ItemValue, /* itemIndex */ Double) => Unit): Self = StObject.set(x, "onValueChange", js.Any.fromFunction2(value))
       
-      @scala.inline
-      def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
+      inline def setOnValueChangeUndefined: Self = StObject.set(x, "onValueChange", js.undefined)
       
-      @scala.inline
-      def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+      inline def setPrompt(value: String): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
+      inline def setPromptUndefined: Self = StObject.set(x, "prompt", js.undefined)
       
-      @scala.inline
-      def setSelectedValue(value: ItemValue): Self = StObject.set(x, "selectedValue", value.asInstanceOf[js.Any])
+      inline def setSelectedValue(value: ItemValue): Self = StObject.set(x, "selectedValue", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setSelectedValueUndefined: Self = StObject.set(x, "selectedValue", js.undefined)
+      inline def setSelectedValueUndefined: Self = StObject.set(x, "selectedValue", js.undefined)
       
-      @scala.inline
-      def setStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      inline def setStyle(value: StyleProp[TextStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setStyleNull: Self = StObject.set(x, "style", null)
+      inline def setStyleNull: Self = StObject.set(x, "style", null)
       
-      @scala.inline
-      def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
+      inline def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
 }

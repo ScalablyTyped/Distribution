@@ -7,8 +7,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object libraryFnDelayMod {
   
   /* was `typeof core.delay` */
-  @scala.inline
-  def apply(msec: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(msec.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  inline def apply(msec: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(msec.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   @JSImport("core-js/library/fn/delay", JSImport.Namespace)
   @js.native

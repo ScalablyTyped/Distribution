@@ -13,19 +13,15 @@ trait CreateEvaluationOutput extends StObject {
 }
 object CreateEvaluationOutput {
   
-  @scala.inline
-  def apply(): CreateEvaluationOutput = {
+  inline def apply(): CreateEvaluationOutput = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[CreateEvaluationOutput]
   }
   
-  @scala.inline
-  implicit class CreateEvaluationOutputMutableBuilder[Self <: CreateEvaluationOutput] (val x: Self) extends AnyVal {
+  extension [Self <: CreateEvaluationOutput](x: Self) {
     
-    @scala.inline
-    def setEvaluationId(value: EntityId): Self = StObject.set(x, "EvaluationId", value.asInstanceOf[js.Any])
+    inline def setEvaluationId(value: EntityId): Self = StObject.set(x, "EvaluationId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEvaluationIdUndefined: Self = StObject.set(x, "EvaluationId", js.undefined)
+    inline def setEvaluationIdUndefined: Self = StObject.set(x, "EvaluationId", js.undefined)
   }
 }

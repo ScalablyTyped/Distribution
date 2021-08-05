@@ -21,28 +21,21 @@ trait SchemaListAuthorizedDomainsResponse extends StObject {
 }
 object SchemaListAuthorizedDomainsResponse {
   
-  @scala.inline
-  def apply(): SchemaListAuthorizedDomainsResponse = {
+  inline def apply(): SchemaListAuthorizedDomainsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SchemaListAuthorizedDomainsResponse]
   }
   
-  @scala.inline
-  implicit class SchemaListAuthorizedDomainsResponseMutableBuilder[Self <: SchemaListAuthorizedDomainsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: SchemaListAuthorizedDomainsResponse](x: Self) {
     
-    @scala.inline
-    def setDomains(value: js.Array[SchemaAuthorizedDomain]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
+    inline def setDomains(value: js.Array[SchemaAuthorizedDomain]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
+    inline def setDomainsUndefined: Self = StObject.set(x, "domains", js.undefined)
     
-    @scala.inline
-    def setDomainsVarargs(value: SchemaAuthorizedDomain*): Self = StObject.set(x, "domains", js.Array(value :_*))
+    inline def setDomainsVarargs(value: SchemaAuthorizedDomain*): Self = StObject.set(x, "domains", js.Array(value :_*))
     
-    @scala.inline
-    def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
+    inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
+    inline def setNextPageTokenUndefined: Self = StObject.set(x, "nextPageToken", js.undefined)
   }
 }

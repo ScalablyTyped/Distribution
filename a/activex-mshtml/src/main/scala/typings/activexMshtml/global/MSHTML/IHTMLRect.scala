@@ -6,11 +6,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 @JSGlobal("MSHTML.IHTMLRect")
 @js.native
-class IHTMLRect protected ()
+/* private */ class IHTMLRect ()
   extends StObject
      with typings.activexMshtml.MSHTML.IHTMLRect {
   
-  /* CompleteClass */
+  /* private */ /* CompleteClass */
   @JSName("MSHTML.IHTMLRect_typekey")
   var MSHTMLDotIHTMLRect_typekey: typings.activexMshtml.MSHTML.IHTMLRect = js.native
   

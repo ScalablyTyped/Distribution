@@ -24,8 +24,7 @@ trait OIDAsync
 }
 object OIDAsync {
   
-  @scala.inline
-  def apply(
+  inline def apply(
     FriendlyName: (// tslint:disable-line ban-types
   js.Promise[Unpacked[String]]) | PromisifiedFunction[String],
     Name: (// tslint:disable-line ban-types
@@ -37,43 +36,36 @@ object OIDAsync {
     __obj.asInstanceOf[OIDAsync]
   }
   
-  @scala.inline
-  implicit class OIDAsyncMutableBuilder[Self <: OIDAsync] (val x: Self) extends AnyVal {
+  extension [Self <: OIDAsync](x: Self) {
     
-    @scala.inline
-    def setFriendlyName(
+    inline def setFriendlyName(
       value: (// tslint:disable-line ban-types
     js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
     ): Self = StObject.set(x, "FriendlyName", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setFriendlyNameFunction1(
+    inline def setFriendlyNameFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
       */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "FriendlyName", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setName(
+    inline def setName(
       value: (// tslint:disable-line ban-types
     js.Promise[Unpacked[CAPICOM_OID]]) | PromisifiedFunction[CAPICOM_OID]
     ): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNameFunction1(
+    inline def setNameFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
       */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "Name", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setValue(
+    inline def setValue(
       value: (// tslint:disable-line ban-types
     js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
     ): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setValueFunction1(
+    inline def setValueFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
       */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]

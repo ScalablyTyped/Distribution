@@ -25,14 +25,11 @@ object latlonNvectorSphericalMod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def areaOf(polygon: Polygon[LatLonNvectorSpherical]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("areaOf")(polygon.asInstanceOf[js.Any]).asInstanceOf[Double]
-    @scala.inline
-    def areaOf(polygon: Polygon[LatLonNvectorSpherical], radius: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("areaOf")(polygon.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[Double]
+    inline def areaOf(polygon: Polygon[LatLonNvectorSpherical]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("areaOf")(polygon.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def areaOf(polygon: Polygon[LatLonNvectorSpherical], radius: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("areaOf")(polygon.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /* static member */
-    @scala.inline
-    def intersection(
+    inline def intersection(
       path1start: LatLonNvectorSpherical,
       path1brngEnd: PathBrngEnd,
       path2start: LatLonNvectorSpherical,
@@ -40,16 +37,13 @@ object latlonNvectorSphericalMod {
     ): LatLonNvectorSpherical = (^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(path1start.asInstanceOf[js.Any], path1brngEnd.asInstanceOf[js.Any], path2start.asInstanceOf[js.Any], path2brngEnd.asInstanceOf[js.Any])).asInstanceOf[LatLonNvectorSpherical]
     
     /* static member */
-    @scala.inline
-    def meanOf(points: Polygon[LatLonNvectorSpherical]): LatLonNvectorSpherical = ^.asInstanceOf[js.Dynamic].applyDynamic("meanOf")(points.asInstanceOf[js.Any]).asInstanceOf[LatLonNvectorSpherical]
+    inline def meanOf(points: Polygon[LatLonNvectorSpherical]): LatLonNvectorSpherical = ^.asInstanceOf[js.Dynamic].applyDynamic("meanOf")(points.asInstanceOf[js.Any]).asInstanceOf[LatLonNvectorSpherical]
     
     /* static member */
-    @scala.inline
-    def triangulate(point1: LatLonNvectorSpherical, bearing1: Double, point2: LatLonNvectorSpherical, bearing2: Double): LatLonNvectorSpherical = (^.asInstanceOf[js.Dynamic].applyDynamic("triangulate")(point1.asInstanceOf[js.Any], bearing1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any], bearing2.asInstanceOf[js.Any])).asInstanceOf[LatLonNvectorSpherical]
+    inline def triangulate(point1: LatLonNvectorSpherical, bearing1: Double, point2: LatLonNvectorSpherical, bearing2: Double): LatLonNvectorSpherical = (^.asInstanceOf[js.Dynamic].applyDynamic("triangulate")(point1.asInstanceOf[js.Any], bearing1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any], bearing2.asInstanceOf[js.Any])).asInstanceOf[LatLonNvectorSpherical]
     
     /* static member */
-    @scala.inline
-    def trilaterate(
+    inline def trilaterate(
       point1: LatLonNvectorSpherical,
       distance1: Double,
       point2: LatLonNvectorSpherical,
@@ -57,8 +51,7 @@ object latlonNvectorSphericalMod {
       point3: LatLonNvectorSpherical,
       distance3: Double
     ): LatLonNvectorSpherical = (^.asInstanceOf[js.Dynamic].applyDynamic("trilaterate")(point1.asInstanceOf[js.Any], distance1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any], distance2.asInstanceOf[js.Any], point3.asInstanceOf[js.Any], distance3.asInstanceOf[js.Any])).asInstanceOf[LatLonNvectorSpherical]
-    @scala.inline
-    def trilaterate(
+    inline def trilaterate(
       point1: LatLonNvectorSpherical,
       distance1: Double,
       point2: LatLonNvectorSpherical,
@@ -81,72 +74,48 @@ object latlonNvectorSphericalMod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @scala.inline
-    def compassPoint(bearing: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("compassPoint")(bearing.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def compassPoint(bearing: Double, precision: Precision): String = (^.asInstanceOf[js.Dynamic].applyDynamic("compassPoint")(bearing.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def compassPoint(bearing: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("compassPoint")(bearing.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def compassPoint(bearing: Double, precision: Precision): String = (^.asInstanceOf[js.Dynamic].applyDynamic("compassPoint")(bearing.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def fromLocale(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLocale")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def fromLocale(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLocale")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def parse(dms: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dms.asInstanceOf[js.Any]).asInstanceOf[Double]
-    @scala.inline
-    def parse(dms: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dms.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def parse(dms: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dms.asInstanceOf[js.Any]).asInstanceOf[Double]
+    inline def parse(dms: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dms.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /* static member */
-    @scala.inline
-    def toBrng(deg: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toBrng")(deg.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def toBrng(deg: Double, format: Unit, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toBrng")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def toBrng(deg: Double, format: Format): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toBrng")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def toBrng(deg: Double, format: Format, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toBrng")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def toBrng(deg: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toBrng")(deg.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def toBrng(deg: Double, format: Unit, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toBrng")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def toBrng(deg: Double, format: Format): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toBrng")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def toBrng(deg: Double, format: Format, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toBrng")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def toDms(deg: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toDms")(deg.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def toDms(deg: Double, format: Unit, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toDms")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def toDms(deg: Double, format: Format): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toDms")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def toDms(deg: Double, format: Format, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toDms")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def toDms(deg: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toDms")(deg.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def toDms(deg: Double, format: Unit, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toDms")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def toDms(deg: Double, format: Format): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toDms")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def toDms(deg: Double, format: Format, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toDms")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def toLat(deg: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toLat")(deg.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def toLat(deg: Double, format: Unit, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLat")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def toLat(deg: Double, format: Format): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLat")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def toLat(deg: Double, format: Format, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLat")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def toLat(deg: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toLat")(deg.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def toLat(deg: Double, format: Unit, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLat")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def toLat(deg: Double, format: Format): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLat")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def toLat(deg: Double, format: Format, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLat")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def toLocale(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toLocale")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def toLocale(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toLocale")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def toLon(deg: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toLon")(deg.asInstanceOf[js.Any]).asInstanceOf[String]
-    @scala.inline
-    def toLon(deg: Double, format: Unit, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLon")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def toLon(deg: Double, format: Format): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLon")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
-    @scala.inline
-    def toLon(deg: Double, format: Format, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLon")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def toLon(deg: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toLon")(deg.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def toLon(deg: Double, format: Unit, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLon")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def toLon(deg: Double, format: Format): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLon")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+    inline def toLon(deg: Double, format: Format, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLon")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def wrap360(degrees: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap360")(degrees.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def wrap360(degrees: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap360")(degrees.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @scala.inline
-    def wrap90(degrees: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap90")(degrees.asInstanceOf[js.Any]).asInstanceOf[String]
+    inline def wrap90(degrees: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap90")(degrees.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSImport("geodesy/latlon-nvector-spherical", "Nvector")

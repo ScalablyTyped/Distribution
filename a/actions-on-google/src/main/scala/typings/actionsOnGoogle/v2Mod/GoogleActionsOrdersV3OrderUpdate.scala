@@ -44,43 +44,31 @@ trait GoogleActionsOrdersV3OrderUpdate extends StObject {
 }
 object GoogleActionsOrdersV3OrderUpdate {
   
-  @scala.inline
-  def apply(): GoogleActionsOrdersV3OrderUpdate = {
+  inline def apply(): GoogleActionsOrdersV3OrderUpdate = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GoogleActionsOrdersV3OrderUpdate]
   }
   
-  @scala.inline
-  implicit class GoogleActionsOrdersV3OrderUpdateMutableBuilder[Self <: GoogleActionsOrdersV3OrderUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: GoogleActionsOrdersV3OrderUpdate](x: Self) {
     
-    @scala.inline
-    def setOrder(value: GoogleActionsOrdersV3Order): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
+    inline def setOrder(value: GoogleActionsOrdersV3Order): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
+    inline def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
-    @scala.inline
-    def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
+    inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
+    inline def setReasonUndefined: Self = StObject.set(x, "reason", js.undefined)
     
-    @scala.inline
-    def setType(value: GoogleActionsOrdersV3OrderUpdateType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    inline def setType(value: GoogleActionsOrdersV3OrderUpdateType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+    inline def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
-    @scala.inline
-    def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
+    inline def setUpdateMask(value: String): Self = StObject.set(x, "updateMask", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
+    inline def setUpdateMaskUndefined: Self = StObject.set(x, "updateMask", js.undefined)
     
-    @scala.inline
-    def setUserNotification(value: GoogleActionsOrdersV3OrderUpdateUserNotification): Self = StObject.set(x, "userNotification", value.asInstanceOf[js.Any])
+    inline def setUserNotification(value: GoogleActionsOrdersV3OrderUpdateUserNotification): Self = StObject.set(x, "userNotification", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setUserNotificationUndefined: Self = StObject.set(x, "userNotification", js.undefined)
+    inline def setUserNotificationUndefined: Self = StObject.set(x, "userNotification", js.undefined)
   }
 }

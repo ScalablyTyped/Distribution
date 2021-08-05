@@ -17,16 +17,11 @@ object SphereGeometry {
   val ^ : js.Any = js.native
   
   /* static member */
-  @scala.inline
-  def createGeometry(sphereGeometry: SphereGeometry): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("createGeometry")(sphereGeometry.asInstanceOf[js.Any]).asInstanceOf[Geometry]
+  inline def createGeometry(sphereGeometry: SphereGeometry): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("createGeometry")(sphereGeometry.asInstanceOf[js.Any]).asInstanceOf[Geometry]
   
   /* static member */
-  @scala.inline
-  def unpack(array: js.Array[Double]): SphereGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any]).asInstanceOf[SphereGeometry]
-  @scala.inline
-  def unpack(array: js.Array[Double], startingIndex: Double): SphereGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[SphereGeometry]
-  @scala.inline
-  def unpack(array: js.Array[Double], startingIndex: Double, result: SphereGeometry): SphereGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[SphereGeometry]
-  @scala.inline
-  def unpack(array: js.Array[Double], startingIndex: Unit, result: SphereGeometry): SphereGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[SphereGeometry]
+  inline def unpack(array: js.Array[Double]): SphereGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any]).asInstanceOf[SphereGeometry]
+  inline def unpack(array: js.Array[Double], startingIndex: Double): SphereGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[SphereGeometry]
+  inline def unpack(array: js.Array[Double], startingIndex: Double, result: SphereGeometry): SphereGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[SphereGeometry]
+  inline def unpack(array: js.Array[Double], startingIndex: Unit, result: SphereGeometry): SphereGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[SphereGeometry]
 }

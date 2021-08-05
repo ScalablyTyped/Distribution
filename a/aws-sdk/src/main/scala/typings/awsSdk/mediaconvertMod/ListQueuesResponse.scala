@@ -18,28 +18,21 @@ trait ListQueuesResponse extends StObject {
 }
 object ListQueuesResponse {
   
-  @scala.inline
-  def apply(): ListQueuesResponse = {
+  inline def apply(): ListQueuesResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ListQueuesResponse]
   }
   
-  @scala.inline
-  implicit class ListQueuesResponseMutableBuilder[Self <: ListQueuesResponse] (val x: Self) extends AnyVal {
+  extension [Self <: ListQueuesResponse](x: Self) {
     
-    @scala.inline
-    def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
+    inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
+    inline def setNextTokenUndefined: Self = StObject.set(x, "NextToken", js.undefined)
     
-    @scala.inline
-    def setQueues(value: listOfQueue): Self = StObject.set(x, "Queues", value.asInstanceOf[js.Any])
+    inline def setQueues(value: listOfQueue): Self = StObject.set(x, "Queues", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setQueuesUndefined: Self = StObject.set(x, "Queues", js.undefined)
+    inline def setQueuesUndefined: Self = StObject.set(x, "Queues", js.undefined)
     
-    @scala.inline
-    def setQueuesVarargs(value: Queue*): Self = StObject.set(x, "Queues", js.Array(value :_*))
+    inline def setQueuesVarargs(value: Queue*): Self = StObject.set(x, "Queues", js.Array(value :_*))
   }
 }

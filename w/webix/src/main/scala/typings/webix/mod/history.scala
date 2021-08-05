@@ -16,13 +16,10 @@ object history {
   @js.native
   val ^ : typings.webix.webix.history = js.native
   
-  @scala.inline
-  implicit class historyMutableBuilder[Self <: history] (val x: Self) extends AnyVal {
+  extension [Self <: history](x: Self) {
     
-    @scala.inline
-    def setPush(value: (String, String, js.Any) => Unit): Self = StObject.set(x, "push", js.Any.fromFunction3(value))
+    inline def setPush(value: (String, String, js.Any) => Unit): Self = StObject.set(x, "push", js.Any.fromFunction3(value))
     
-    @scala.inline
-    def setTrack(value: (String, String) => Unit): Self = StObject.set(x, "track", js.Any.fromFunction2(value))
+    inline def setTrack(value: (String, String) => Unit): Self = StObject.set(x, "track", js.Any.fromFunction2(value))
   }
 }

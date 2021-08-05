@@ -19,22 +19,17 @@ trait IsBuffer extends StObject {
 }
 object IsBuffer {
   
-  @scala.inline
-  def apply(data: String | ArrayBuffer): IsBuffer = {
+  inline def apply(data: String | ArrayBuffer): IsBuffer = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[IsBuffer]
   }
   
-  @scala.inline
-  implicit class IsBufferMutableBuilder[Self <: IsBuffer] (val x: Self) extends AnyVal {
+  extension [Self <: IsBuffer](x: Self) {
     
-    @scala.inline
-    def setData(value: String | ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    inline def setData(value: String | ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBuffer(value: Boolean): Self = StObject.set(x, "isBuffer", value.asInstanceOf[js.Any])
+    inline def setIsBuffer(value: Boolean): Self = StObject.set(x, "isBuffer", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setIsBufferUndefined: Self = StObject.set(x, "isBuffer", js.undefined)
+    inline def setIsBufferUndefined: Self = StObject.set(x, "isBuffer", js.undefined)
   }
 }

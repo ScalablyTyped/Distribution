@@ -39,51 +39,38 @@ trait CIMMarkerPlacementAlongLine
 }
 object CIMMarkerPlacementAlongLine {
   
-  @scala.inline
-  def apply(`type`: String): CIMMarkerPlacementAlongLine = {
+  inline def apply(`type`: String): CIMMarkerPlacementAlongLine = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CIMMarkerPlacementAlongLine]
   }
   
-  @scala.inline
-  implicit class CIMMarkerPlacementAlongLineMutableBuilder[Self <: CIMMarkerPlacementAlongLine] (val x: Self) extends AnyVal {
+  extension [Self <: CIMMarkerPlacementAlongLine](x: Self) {
     
-    @scala.inline
-    def setControlPointPlacement(
+    inline def setControlPointPlacement(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlacementEndings * / any */ String
     ): Self = StObject.set(x, "controlPointPlacement", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setControlPointPlacementUndefined: Self = StObject.set(x, "controlPointPlacement", js.undefined)
+    inline def setControlPointPlacementUndefined: Self = StObject.set(x, "controlPointPlacement", js.undefined)
     
-    @scala.inline
-    def setCustomEndingOffset(value: Double): Self = StObject.set(x, "customEndingOffset", value.asInstanceOf[js.Any])
+    inline def setCustomEndingOffset(value: Double): Self = StObject.set(x, "customEndingOffset", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setCustomEndingOffsetUndefined: Self = StObject.set(x, "customEndingOffset", js.undefined)
+    inline def setCustomEndingOffsetUndefined: Self = StObject.set(x, "customEndingOffset", js.undefined)
     
-    @scala.inline
-    def setEndings(
+    inline def setEndings(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlacementEndings * / any */ String
     ): Self = StObject.set(x, "endings", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setEndingsUndefined: Self = StObject.set(x, "endings", js.undefined)
+    inline def setEndingsUndefined: Self = StObject.set(x, "endings", js.undefined)
     
-    @scala.inline
-    def setOffsetAlongLine(value: Double): Self = StObject.set(x, "offsetAlongLine", value.asInstanceOf[js.Any])
+    inline def setOffsetAlongLine(value: Double): Self = StObject.set(x, "offsetAlongLine", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setOffsetAlongLineUndefined: Self = StObject.set(x, "offsetAlongLine", js.undefined)
+    inline def setOffsetAlongLineUndefined: Self = StObject.set(x, "offsetAlongLine", js.undefined)
     
-    @scala.inline
-    def setPlacementTemplate(value: js.Array[Double]): Self = StObject.set(x, "placementTemplate", value.asInstanceOf[js.Any])
+    inline def setPlacementTemplate(value: js.Array[Double]): Self = StObject.set(x, "placementTemplate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPlacementTemplateUndefined: Self = StObject.set(x, "placementTemplate", js.undefined)
+    inline def setPlacementTemplateUndefined: Self = StObject.set(x, "placementTemplate", js.undefined)
     
-    @scala.inline
-    def setPlacementTemplateVarargs(value: Double*): Self = StObject.set(x, "placementTemplate", js.Array(value :_*))
+    inline def setPlacementTemplateVarargs(value: Double*): Self = StObject.set(x, "placementTemplate", js.Array(value :_*))
   }
 }

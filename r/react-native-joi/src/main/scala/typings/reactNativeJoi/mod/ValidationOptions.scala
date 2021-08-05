@@ -59,69 +59,49 @@ trait ValidationOptions extends StObject {
 }
 object ValidationOptions {
   
-  @scala.inline
-  def apply(): ValidationOptions = {
+  inline def apply(): ValidationOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ValidationOptions]
   }
   
-  @scala.inline
-  implicit class ValidationOptionsMutableBuilder[Self <: ValidationOptions] (val x: Self) extends AnyVal {
+  extension [Self <: ValidationOptions](x: Self) {
     
-    @scala.inline
-    def setAbortEarly(value: Boolean): Self = StObject.set(x, "abortEarly", value.asInstanceOf[js.Any])
+    inline def setAbortEarly(value: Boolean): Self = StObject.set(x, "abortEarly", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAbortEarlyUndefined: Self = StObject.set(x, "abortEarly", js.undefined)
+    inline def setAbortEarlyUndefined: Self = StObject.set(x, "abortEarly", js.undefined)
     
-    @scala.inline
-    def setAllowUnknown(value: Boolean): Self = StObject.set(x, "allowUnknown", value.asInstanceOf[js.Any])
+    inline def setAllowUnknown(value: Boolean): Self = StObject.set(x, "allowUnknown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setAllowUnknownUndefined: Self = StObject.set(x, "allowUnknown", js.undefined)
+    inline def setAllowUnknownUndefined: Self = StObject.set(x, "allowUnknown", js.undefined)
     
-    @scala.inline
-    def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
+    inline def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
+    inline def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
-    @scala.inline
-    def setConvert(value: Boolean): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
+    inline def setConvert(value: Boolean): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setConvertUndefined: Self = StObject.set(x, "convert", js.undefined)
+    inline def setConvertUndefined: Self = StObject.set(x, "convert", js.undefined)
     
-    @scala.inline
-    def setLanguage(value: LanguageRootOptions): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
+    inline def setLanguage(value: LanguageRootOptions): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
+    inline def setLanguageUndefined: Self = StObject.set(x, "language", js.undefined)
     
-    @scala.inline
-    def setNoDefaults(value: Boolean): Self = StObject.set(x, "noDefaults", value.asInstanceOf[js.Any])
+    inline def setNoDefaults(value: Boolean): Self = StObject.set(x, "noDefaults", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setNoDefaultsUndefined: Self = StObject.set(x, "noDefaults", js.undefined)
+    inline def setNoDefaultsUndefined: Self = StObject.set(x, "noDefaults", js.undefined)
     
-    @scala.inline
-    def setPresence(
+    inline def setPresence(
       value: typings.reactNativeJoi.reactNativeJoiStrings.optional | typings.reactNativeJoi.reactNativeJoiStrings.required | typings.reactNativeJoi.reactNativeJoiStrings.forbidden
     ): Self = StObject.set(x, "presence", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setPresenceUndefined: Self = StObject.set(x, "presence", js.undefined)
+    inline def setPresenceUndefined: Self = StObject.set(x, "presence", js.undefined)
     
-    @scala.inline
-    def setSkipFunctions(value: Boolean): Self = StObject.set(x, "skipFunctions", value.asInstanceOf[js.Any])
+    inline def setSkipFunctions(value: Boolean): Self = StObject.set(x, "skipFunctions", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setSkipFunctionsUndefined: Self = StObject.set(x, "skipFunctions", js.undefined)
+    inline def setSkipFunctionsUndefined: Self = StObject.set(x, "skipFunctions", js.undefined)
     
-    @scala.inline
-    def setStripUnknown(value: Boolean | Arrays): Self = StObject.set(x, "stripUnknown", value.asInstanceOf[js.Any])
+    inline def setStripUnknown(value: Boolean | Arrays): Self = StObject.set(x, "stripUnknown", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setStripUnknownUndefined: Self = StObject.set(x, "stripUnknown", js.undefined)
+    inline def setStripUnknownUndefined: Self = StObject.set(x, "stripUnknown", js.undefined)
   }
 }

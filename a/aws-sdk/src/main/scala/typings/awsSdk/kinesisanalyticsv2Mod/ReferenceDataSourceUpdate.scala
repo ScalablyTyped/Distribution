@@ -28,34 +28,25 @@ trait ReferenceDataSourceUpdate extends StObject {
 }
 object ReferenceDataSourceUpdate {
   
-  @scala.inline
-  def apply(ReferenceId: Id): ReferenceDataSourceUpdate = {
+  inline def apply(ReferenceId: Id): ReferenceDataSourceUpdate = {
     val __obj = js.Dynamic.literal(ReferenceId = ReferenceId.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReferenceDataSourceUpdate]
   }
   
-  @scala.inline
-  implicit class ReferenceDataSourceUpdateMutableBuilder[Self <: ReferenceDataSourceUpdate] (val x: Self) extends AnyVal {
+  extension [Self <: ReferenceDataSourceUpdate](x: Self) {
     
-    @scala.inline
-    def setReferenceId(value: Id): Self = StObject.set(x, "ReferenceId", value.asInstanceOf[js.Any])
+    inline def setReferenceId(value: Id): Self = StObject.set(x, "ReferenceId", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceSchemaUpdate(value: SourceSchema): Self = StObject.set(x, "ReferenceSchemaUpdate", value.asInstanceOf[js.Any])
+    inline def setReferenceSchemaUpdate(value: SourceSchema): Self = StObject.set(x, "ReferenceSchemaUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setReferenceSchemaUpdateUndefined: Self = StObject.set(x, "ReferenceSchemaUpdate", js.undefined)
+    inline def setReferenceSchemaUpdateUndefined: Self = StObject.set(x, "ReferenceSchemaUpdate", js.undefined)
     
-    @scala.inline
-    def setS3ReferenceDataSourceUpdate(value: S3ReferenceDataSourceUpdate): Self = StObject.set(x, "S3ReferenceDataSourceUpdate", value.asInstanceOf[js.Any])
+    inline def setS3ReferenceDataSourceUpdate(value: S3ReferenceDataSourceUpdate): Self = StObject.set(x, "S3ReferenceDataSourceUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setS3ReferenceDataSourceUpdateUndefined: Self = StObject.set(x, "S3ReferenceDataSourceUpdate", js.undefined)
+    inline def setS3ReferenceDataSourceUpdateUndefined: Self = StObject.set(x, "S3ReferenceDataSourceUpdate", js.undefined)
     
-    @scala.inline
-    def setTableNameUpdate(value: InAppTableName): Self = StObject.set(x, "TableNameUpdate", value.asInstanceOf[js.Any])
+    inline def setTableNameUpdate(value: InAppTableName): Self = StObject.set(x, "TableNameUpdate", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setTableNameUpdateUndefined: Self = StObject.set(x, "TableNameUpdate", js.undefined)
+    inline def setTableNameUpdateUndefined: Self = StObject.set(x, "TableNameUpdate", js.undefined)
   }
 }

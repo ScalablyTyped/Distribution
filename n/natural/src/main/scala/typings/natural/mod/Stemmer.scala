@@ -14,22 +14,17 @@ trait Stemmer extends StObject {
 }
 object Stemmer {
   
-  @scala.inline
-  def apply(attach: () => Unit, stem: String => String, tokenizeAndStem: String => js.Array[String]): Stemmer = {
+  inline def apply(attach: () => Unit, stem: String => String, tokenizeAndStem: String => js.Array[String]): Stemmer = {
     val __obj = js.Dynamic.literal(attach = js.Any.fromFunction0(attach), stem = js.Any.fromFunction1(stem), tokenizeAndStem = js.Any.fromFunction1(tokenizeAndStem))
     __obj.asInstanceOf[Stemmer]
   }
   
-  @scala.inline
-  implicit class StemmerMutableBuilder[Self <: Stemmer] (val x: Self) extends AnyVal {
+  extension [Self <: Stemmer](x: Self) {
     
-    @scala.inline
-    def setAttach(value: () => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction0(value))
+    inline def setAttach(value: () => Unit): Self = StObject.set(x, "attach", js.Any.fromFunction0(value))
     
-    @scala.inline
-    def setStem(value: String => String): Self = StObject.set(x, "stem", js.Any.fromFunction1(value))
+    inline def setStem(value: String => String): Self = StObject.set(x, "stem", js.Any.fromFunction1(value))
     
-    @scala.inline
-    def setTokenizeAndStem(value: String => js.Array[String]): Self = StObject.set(x, "tokenizeAndStem", js.Any.fromFunction1(value))
+    inline def setTokenizeAndStem(value: String => js.Array[String]): Self = StObject.set(x, "tokenizeAndStem", js.Any.fromFunction1(value))
   }
 }

@@ -18,25 +18,19 @@ trait GetLoggingOptionsResponse extends StObject {
 }
 object GetLoggingOptionsResponse {
   
-  @scala.inline
-  def apply(): GetLoggingOptionsResponse = {
+  inline def apply(): GetLoggingOptionsResponse = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetLoggingOptionsResponse]
   }
   
-  @scala.inline
-  implicit class GetLoggingOptionsResponseMutableBuilder[Self <: GetLoggingOptionsResponse] (val x: Self) extends AnyVal {
+  extension [Self <: GetLoggingOptionsResponse](x: Self) {
     
-    @scala.inline
-    def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
+    inline def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
+    inline def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
     
-    @scala.inline
-    def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
+    inline def setRoleArn(value: AwsArn): Self = StObject.set(x, "roleArn", value.asInstanceOf[js.Any])
     
-    @scala.inline
-    def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
+    inline def setRoleArnUndefined: Self = StObject.set(x, "roleArn", js.undefined)
   }
 }

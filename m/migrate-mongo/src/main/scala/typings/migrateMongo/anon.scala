@@ -42,20 +42,16 @@ object anon {
   }
   object Client {
     
-    @scala.inline
-    def apply(client: MongoClient, db: DbcloseMongoClientclose): Client = {
+    inline def apply(client: MongoClient, db: DbcloseMongoClientclose): Client = {
       val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], db = db.asInstanceOf[js.Any])
       __obj.asInstanceOf[Client]
     }
     
-    @scala.inline
-    implicit class ClientMutableBuilder[Self <: Client] (val x: Self) extends AnyVal {
+    extension [Self <: Client](x: Self) {
       
-      @scala.inline
-      def setClient(value: MongoClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      inline def setClient(value: MongoClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setDb(value: DbcloseMongoClientclose): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
+      inline def setDb(value: DbcloseMongoClientclose): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
     }
   }
   
@@ -69,8 +65,7 @@ object anon {
   }
   object DatabaseName {
     
-    @scala.inline
-    def apply(
+    inline def apply(
       databaseName: String,
       options: MongoClientOptions,
       url: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<migrate-mongo.anon.FnCallUriOptionsCallback>[0] */ js.Any
@@ -79,17 +74,13 @@ object anon {
       __obj.asInstanceOf[DatabaseName]
     }
     
-    @scala.inline
-    implicit class DatabaseNameMutableBuilder[Self <: DatabaseName] (val x: Self) extends AnyVal {
+    extension [Self <: DatabaseName](x: Self) {
       
-      @scala.inline
-      def setDatabaseName(value: String): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
+      inline def setDatabaseName(value: String): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setOptions(value: MongoClientOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+      inline def setOptions(value: MongoClientOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
-      @scala.inline
-      def setUrl(
+      inline def setUrl(
         value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<migrate-mongo.anon.FnCallUriOptionsCallback>[0] */ js.Any
       ): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }

@@ -6,18 +6,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 
 object mod {
   
-  @scala.inline
-  def apply(src: String, opts: js.Function1[/* repeated */ js.Any, Unit]): String = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(
+  inline def apply(src: String, opts: js.Function1[/* repeated */ js.Any, Unit]): String = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(
     src: String,
     opts: js.Function1[/* repeated */ js.Any, Unit],
     fn: js.Function1[/* repeated */ js.Any, Unit]
   ): String = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(src: String, opts: js.Object): String = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
-  @scala.inline
-  def apply(src: String, opts: js.Object, fn: js.Function1[/* repeated */ js.Any, Unit]): String = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(src: String, opts: js.Object): String = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  inline def apply(src: String, opts: js.Object, fn: js.Function1[/* repeated */ js.Any, Unit]): String = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("falafel", JSImport.Namespace)
   @js.native
